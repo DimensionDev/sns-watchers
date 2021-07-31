@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [106],
+    [108],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -23,7 +23,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var n = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(251).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(256).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function a(e, t, o) {
@@ -163,6 +163,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('i3145aa0', 'Bookmarks'),
           n('eee2ed92', 'Go to user…'),
           n('ee5ccf3d', 'Display settings'),
+          n('ib0cb828', 'React with Hmm'),
+          n('h03c8a83', 'React with Sad'),
+          n('j055356c', 'React with Haha'),
+          n('a849ef88', 'React with Cheer'),
+          n('d442e6e0', 'React with Like'),
           n('b1547095', 'New Tweet'),
           n('j9e025aa', 'Send Tweet'),
           n('e736990a', 'New Direct Message'),
@@ -1088,7 +1093,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('i26425d8', 'Somewhat'),
           n('ac7f9745', 'What was helpful about it?'),
           n('c7751803', 'What was unhelpful about it?'),
-          n('b1925470', 'Anything we can improve about the rating form experience?'),
+          n('e2988ed0', 'How can we improve the note rating experience?'),
           n('c1a50438', 'Let us know'),
           n('f2ceaed4', 'Helpful'),
           n('i7d91dc8', 'Somewhat Helpful'),
@@ -1104,13 +1109,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('de962615', 'Want to join Birdwatch?'),
           n('cbfa448b', 'Help people stay better informed on Twitter.'),
           n('b171d7c4', 'Join'),
-          n('ab23a972', 'Follow the conversation'),
-          n('cd8984b9', 'Birdwatch Values'),
+          n('ab23a972', 'Follow the conversation')
+        n('cd8984b9', 'Birdwatch Values'),
           n('e6ae103e', '1. Contribute to build understanding'),
           n('fd5b7e67', '2. Act in good faith'),
           n('c21adcc9', '3. Be helpful, even to those who disagree'),
-          n('c68f3bcf', 'Learn more about our values')
-        n('dfb1f498', 'Feedback'),
+          n('c68f3bcf', 'Learn more about our values'),
+          n('dfb1f498', 'Feedback'),
           n('b8a36128', 'Send us a DM @birdwatch'),
           n('b7388a56', 'Footer'),
           n('jc292da4', function (e) {
@@ -1366,6 +1371,38 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               e.userOneName + ' ' + e.userTwoName + ' and ' + a(e.othersCount, '1 other', e.othersCount + ' others')
             )
           }),
+          n('e9f8a0eb', function (e) {
+            return '' + e.userName
+          }),
+          n('df7e9fbc', function (e) {
+            return e.replyUserName + ' and ' + e.otherUserName
+          }),
+          n('b45fa505', function (e) {
+            return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
+          }),
+          n('a4383815', function (e) {
+            return (
+              e.userOneName + ' ' + e.userTwoName + ' and ' + a(e.othersCount, '1 other', e.othersCount + ' others')
+            )
+          }),
+          n('ff792e35', function (e) {
+            return '' + e.userName
+          }),
+          n('a18d8f1c', 'Super Followers'),
+          n('g7d5e985', function (e) {
+            return e.replyUserName + ' and ' + e.otherUserName
+          }),
+          n('af82725c', 'Super Followers'),
+          n('fe5a61e9', function (e) {
+            return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
+          }),
+          n('f7126257', 'Super Followers'),
+          n('bc9dd514', function (e) {
+            return (
+              e.userOneName + ' ' + e.userTwoName + ' and ' + a(e.othersCount, '1 other', e.othersCount + ' others')
+            )
+          }),
+          n('de5071ba', 'Super Followers'),
           n('b2e94283', function (e) {
             return 'via @' + e.viaScreenName
           }),
@@ -1406,9 +1443,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('aa95ddc0', 'Sign up with phone or email'),
           n('b50ea616', 'New to Twitter?'),
           n('ie8e1ffc', 'Sign up now to get your own personalized timeline!'),
+          n('ib65b1c6', 'Sign up with Apple'),
+          n('bf5904f3', 'Log in with Apple'),
+          n('g61ed8a4', 'Something went wrong.'),
           n('e0870f25', 'Sign up with Google'),
           n('h57a411d', 'Log in with Google'),
-          n('g61ed8a4', 'Something went wrong.'),
           n('a62c9c33', 'Follow your interests.'),
           n('cf39fca2', 'Hear what people are talking about.'),
           n('j86184fd', 'Join the conversation.'),
@@ -1460,6 +1499,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'By ' + e.name + ' @' + e.screenName
           }),
           n('f05dbeff', 'Loading Tweets'),
+          n('ff0f7429', function (e) {
+            return e.formattedCount + ' member' + a(e.count, '', 's')
+          }),
           n('b8f0483e', 'Compose new Tweet'),
           n('a133d13e', 'Unsent Tweets'),
           n('ed33a3b6', 'Hello, wordsmiths.'),
@@ -2232,16 +2274,22 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return e.location + ', ' + e.country
           }),
           n('a5f32aa2', 'Blocked accounts'),
-          n('b23cdbfe', 'Auto blocked'),
+          n('cf67f6d5', 'Autoblocked'),
           n('eb233865', 'Imported'),
-          n('e554ba82', 'Learn more'),
           n(
             'b90c89c3',
             'When you block someone, that person won’t be able to follow or message you, and you won’t see notifications from them.',
           ),
           n('f587e41e', 'You aren’t blocking anyone'),
           n('ef731b13', 'Loading blocked accounts'),
+          n('e554ba82', 'Learn more'),
+          n('d17ebe1b', 'Remove from autoblock'),
+          n('ae3e9c81', function (e) {
+            return 'Remove @' + e.screenName + ' from Autoblocked accounts list?'
+          }),
+          n('db2f1007', 'They will be able to see your Tweets, follow you, and send you Direct Messages.'),
           n('if594962', 'Blocked'),
+          n('hd7cb7cf', 'When we autoblock an account, it’ll show up here.'),
           n('i3889a1f', 'Find out how you can import a block list.'),
           n('iefef10b', 'You haven’t imported a list of accounts to block'),
           n(
@@ -2264,8 +2312,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('f6e73faa', 'Deactivate'),
           n('c3743327', 'This will deactivate your account'),
           n('a20cd24d', 'What else you should know'),
-          n('g8fb7f85', 'Reactivation period'),
-          n('e93b0aef', 'Complete your deactivation request by entering the password associated with your account.'),
+          n('g8fb7f85', 'Reactivation period')
+        function i(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var n = t[o]
+            ;(n.enumerable = n.enumerable || !1),
+              (n.configurable = !0),
+              'value' in n && (n.writable = !0),
+              Object.defineProperty(e, n.key, n)
+          }
+        }
+        function r(e, t) {
+          return (r =
+            Object.setPrototypeOf ||
+            function (e, t) {
+              return (e.__proto__ = t), e
+            })(e, t)
+        }
+        n('e93b0aef', 'Complete your deactivation request by entering the password associated with your account.'),
           n('b8971cfa', '30 days'),
           n('ce0f88f6', '12 months'),
           n('ae256744', 'Learn more'),
@@ -2291,24 +2355,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('eebff22c', 'Crop photo'),
           n('c119dee8', 'Birth date'),
           n('bbf0afc7', 'Add your date of birth'),
-          n('f98d367e', 'Edit date of birth?')
-        function i(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var n = t[o]
-            ;(n.enumerable = n.enumerable || !1),
-              (n.configurable = !0),
-              'value' in n && (n.writable = !0),
-              Object.defineProperty(e, n.key, n)
-          }
-        }
-        function r(e, t) {
-          return (r =
-            Object.setPrototypeOf ||
-            function (e, t) {
-              return (e.__proto__ = t), e
-            })(e, t)
-        }
-        n('b982a8b4', 'This can only be changed a few times.'),
+          n('f98d367e', 'Edit date of birth?'),
+          n('b982a8b4', 'This can only be changed a few times.'),
           n(
             'cfc38329',
             'This should be your date of birth, whether this account is for your business, event, or even your cat.',
@@ -3471,8 +3519,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('a097f7ba', 'Dates'),
           n('c03f15ca', 'Any language'),
           n('c647aac8', 'To'),
-          n('ac6ce1cf', 'From'),
-          n('cb334136', 'Links'),
+          n('ac6ce1cf', 'From')
+        n('cb334136', 'Links'),
           n('e8f38622', 'Include Tweets with links'),
           n('ie23eef9', 'Only show Tweets with links'),
           n('ge10bfa1', 'Include replies and original Tweets'),
@@ -3495,8 +3543,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('daaf2c71', 'Example: @SFBART @Caltrain · mentions @SFBART or mentions @Caltrain'),
           n('b18366ba', 'Minimum replies'),
           n('a76c9844', 'Example: 280 · Tweets with at least 280 replies'),
-          n('ib3ddbd4', 'Minimum Likes')
-        n('dec3293c', 'Example: 280 · Tweets with at least 280 Likes'),
+          n('ib3ddbd4', 'Minimum Likes'),
+          n('dec3293c', 'Example: 280 · Tweets with at least 280 Likes'),
           n('i6e5440d', 'Minimum Retweets'),
           n('b6dc8434', 'Example: 280 · Tweets with at least 280 Retweets'),
           n('g931a6e4', function (e) {
@@ -4332,6 +4380,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('j1ee4dad', 'Space'),
           n('cc1f75ab', 'Spaces'),
           n('cff0c060', 'Space ended'),
+          n('h5051dd8', 'Canceled'),
+          n('c41ea42e', 'This Space was canceled'),
           n('e03cff1c', function (e) {
             return 'Join a space ' + e.title + ' hosted by ' + e.host + ', with ' + e.count + ' others'
           }),
@@ -5179,6 +5229,54 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
+                key: 'j935bcde',
+                get: function () {
+                  return ['Replying to ', ' in ' + this.props.communityName]
+                },
+              },
+              {
+                key: 'i7bd9c8e',
+                get: function () {
+                  return ['Replying to ', ' in ' + this.props.communityName]
+                },
+              },
+              {
+                key: 'cfa0049d',
+                get: function () {
+                  return ['Replying to ', ' in ' + this.props.communityName]
+                },
+              },
+              {
+                key: 'jfc8e4b4',
+                get: function () {
+                  return ['Replying to ', ' in ' + this.props.communityName]
+                },
+              },
+              {
+                key: 'a4e11010',
+                get: function () {
+                  return ['Replying to ', '. Your reply will be also visible to their ', '.']
+                },
+              },
+              {
+                key: 'cf1b3321',
+                get: function () {
+                  return ['Replying to ', '. Your reply will be also visible to their ', '.']
+                },
+              },
+              {
+                key: 'c83d647e',
+                get: function () {
+                  return ['Replying to ', '. Your reply will be also visible to their ', '.']
+                },
+              },
+              {
+                key: 'fec57cab',
+                get: function () {
+                  return ['Replying to ', '. Your reply will be also visible to their ', '.']
+                },
+              },
+              {
                 key: 'ja6527ba',
                 get: function () {
                   return ['Block ']
@@ -5242,6 +5340,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'c43d1678',
                 get: function () {
                   return ['See more at ']
+                },
+              },
+              {
+                key: 'je0779b7',
+                get: function () {
+                  return ['Reported by ']
                 },
               },
               {

@@ -20,7 +20,9 @@ function wipeDynamic(code) {
     .replace(/("serverDate":\s?)\d+/g, `$1 42`)
     .replace(/("guestId":\s?)('|")\d+\2/g, `$1'${HOLDER}'`)
     .replace(/(\/\/# sourceMappingURL=).*?\.map/, `$1${HOLDER}`) // We don't care about source map
-    .replace(/("country":)"\w\w"/, `$1"${HOLDER}"`)
+    .replace(/("country"):"\w\w"/, `$1:"${HOLDER}"`)
+    .replace(/("settingsVersion"):('|")(.*?)\2/, `$1:'${HOLDER}'`)
+    .replace(/("featureSetToken"):('|")(.*?)\2/, `$1:'${HOLDER}'`)
 }
 /**
  * wrap a wipeDynamic() as a preprocesser inside
