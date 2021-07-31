@@ -14,13 +14,16 @@ const url = 'https://twitter.com/'
  */
 function wipeDynamic(code) {
   const HOLDER = 'WIPED'
+  // NOTE "sha" doesn't look like runtime dynamic
   return code
     .replace(/nonce=".*?"/g, `nonce="${HOLDER}"`)
     .replace(/(decodeURIComponent\(.gt)=\d+(;.*?);/, `$1=42;`)
     .replace(/("serverDate":\s?)\d+/g, `$1 42`)
     .replace(/("guestId":\s?)('|")\d+\2/g, `$1'${HOLDER}'`)
     .replace(/(\/\/# sourceMappingURL=).*?\.map/, `$1${HOLDER}`) // We don't care about source map
-    .replace(/("country":)"\w\w"/, `$1"${HOLDER}"`)
+    .replace(/("country"):"\w\w"/, `$1:"${HOLDER}"`)
+    .replace(/("settingsVersion"):('|")(.*?)\2/, `$1:'${HOLDER}'`)
+    .replace(/("featureSetToken"):('|")(.*?)\2/, `$1:'${HOLDER}'`)
 }
 /**
  * wrap a wipeDynamic() as a preprocesser inside
