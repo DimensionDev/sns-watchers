@@ -1620,7 +1620,7 @@
               responsive_web_sidebar_ttf_enabled: { value: true },
               responsive_web_sign_in_with_apple_enabled: { value: false },
               responsive_web_ssr_graphql_conversations_enabled: { value: true },
-              responsive_web_third_party_sso_buttons_enabled: { value: false },
+              responsive_web_third_party_sso_buttons_enabled: { value: true },
               responsive_web_trends_setting_new_endpoints: { value: true },
               responsive_web_trigger_test_backoff_on_bookmark: { value: false },
               responsive_web_tweet_analytics_migration_enabled: { value: false },
@@ -1733,9 +1733,15 @@
               web_video_prefetch_playlist_autoplay_disabled: { value: false },
               web_video_smart_buffering_enabled: { value: false },
             },
-            impression_pointers: { responsive_web_third_party_sso_buttons_enabled: ['single_sign_on_rweb_12529'] },
+            impression_pointers: {
+              responsive_web_graphql_conversations_enabled: ['rweb_conversation_graphql_migration_logged_out_12512'],
+            },
             impressions: {
-              single_sign_on_rweb_12529: { key: 'single_sign_on_rweb_12529', bucket: 'control', version: 2 },
+              rweb_conversation_graphql_migration_logged_out_12512: {
+                key: 'rweb_conversation_graphql_migration_logged_out_12512',
+                bucket: 'graphql_enabled',
+                version: 1,
+              },
             },
             keysRead: {},
             settingsVersion: 'WIPED',
