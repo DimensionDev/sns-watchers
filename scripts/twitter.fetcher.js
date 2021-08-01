@@ -24,6 +24,8 @@ function wipeDynamic(code) {
     .replace(/("country"):"\w\w"/, `$1:"${HOLDER}"`)
     .replace(/("settingsVersion"):('|")(.*?)\2/, `$1:'${HOLDER}'`)
     .replace(/("featureSetToken"):('|")(.*?)\2/, `$1:'${HOLDER}'`)
+    .replace(/("impression_pointers"):{.*?}/, '$1:{}')
+    .replace(/("impressions"):{"\w+":.*?}}/, '$1:{}')
 }
 /**
  * wrap a wipeDynamic() as a preprocesser inside
