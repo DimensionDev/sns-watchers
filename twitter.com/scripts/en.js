@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [108],
+    [109],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -23,7 +23,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var n = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(256).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(257).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function a(e, t, o) {
@@ -469,6 +469,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('c1eb0fe5', function (e) {
             return 'Check out ' + e.fullName + ' on Twitter.\n' + e.bio
           }),
+          n('c32a3d02', function (e) {
+            return '@' + e.screenName + ' is no longer following you'
+          }),
+          n('a30b63da', 'Something went wrong. Try removing the follower again in a minute.'),
           n('hef5960b', 'Share profile via...'),
           n('ibd0b841', 'Copy link to profile'),
           n('c645618c', 'View Moments'),
@@ -476,6 +480,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('b2e20eab', 'Turn on Retweets'),
           n('b62e432d', 'Turn off Retweets'),
           n('h5ef9bc8', 'View Lists'),
+          n('d17ebe1b', 'Remove from autoblock'),
           n('d78131b8', function (e) {
             return 'Add/remove @' + e.screenName + ' from Lists'
           }),
@@ -489,6 +494,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           n('h129c3c3', function (e) {
             return '@' + e.screenName + ' has been unmuted.'
+          }),
+          n('b3036480', 'Remove this follower'),
+          n('h2f91a90', function (e) {
+            return (
+              '@' + e.screenName + ' will be removed from your followers and won’t be notified that you removed them.'
+            )
           }),
           n('f9e45cfb', function (e) {
             return 'Block @' + e.screenName + '?'
@@ -697,15 +708,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('e49537c1', 'Hmm...this page doesn’t exist. Try searching for something else.'),
           n('b360ac7c', 'Section navigation'),
           n('adc81041', 'Section details'),
-          n('a2288d04', 'Twitter - Space'),
-          n('a324f032', 'Oops, let’s get you to the right place'),
-          n('eba5d942', 'Unable to join this space'),
-          n(
-            'a77e3b5c',
-            'Spaces is only available on iOS and Android for now, but we’re working to bring it to Twitter.com as fast as we can.',
-          ),
-          n('f66f311d', 'Join this space in the Twitter app.'),
-          n('db2b473e', 'Go to the app'),
+          n('b4b4b3b9', 'Article Tweets'),
           n('gaa01f2c', 'Twitter Spaces'),
           n('fec3c1ef', 'Where live audio conversations happen'),
           n('ce447fcb', function (e) {
@@ -730,48 +733,117 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('f6432ce5', function (e) {
             return e.hostSpace + ' · ' + e.descriptionGeneric
           }),
-          n('e4e811fb', 'Connecting...'),
-          n('cc5ab041', 'This space has ended'),
-          n('eadd5677', 'It looks like this space has been closed.'),
-          n('cc8f82bb', 'Join this space'),
-          n('e51df2e6', 'Your mic will be off to start'),
-          n('e0ebeac6', 'people'),
-          n('h9694423', function (e) {
-            return '+' + e.count
+          n('d228a9a0', 'Show more'),
+          n('b8e930fd', 'Trending now'),
+          n('ae05f268', 'Trends are unavailable.'),
+          n('e43138c5', function (e) {
+            return 'Follow ' + e.name
           }),
-          n('d39e8b30', 'Add a note'),
-          n('a91bb144', 'Submit'),
-          n(
-            'hb2bf967',
-            'Your note will be publicly available in the Birdwatch site and may be shown to other participants on Twitter.',
-          ),
-          n(
-            'ifd2c15f',
-            'Please explain the evidence behind your choices, to help others who see this Tweet understand what about it might be misleading.',
-          ),
-          n(
-            'f24ec219',
-            'Please explain the evidence behind your choices, to help others who see this Tweet understand why it is not misleading.',
-          ),
-          n('j679dcda', 'See examples'),
-          n('b7476596', 'Be precise — providing links to outside sources is encouraged.'),
-          n('df6c8291', 'Your explanation'),
-          n(
-            'h0e35524',
-            'Your note was not saved, please make sure that you have not previously written a note on this Tweet and try again later.',
-          ),
-          n('b47b5a16', 'All fields are required. Please make sure you’ve answered all questions.'),
-          n('i0e66c5a', 'Select one'),
-          n('j8e3e3be', 'Select at least one'),
-          n('f1e851ff', 'Enter an explanation'),
-          n('ff5dcac8', 'Your explanation is too long'),
-          n('abdd8d09', 'Edit note'),
-          n('c097608d', 'Your note doesn’t have an explanation'),
-          n('g9cffe15', 'Your note doesn’t include a source'),
-          n('ba25898c', 'Notes that explain their sources have a better chance of being rated helpful.'),
-          n('e764d704', 'Notes that link to trustworthy sources have a better chance of being rated helpful.'),
-          n('gb67e44c', 'Submit without explanation'),
-          n('d6b758a1', 'Submit without source'),
+          n('be65f2e6', function (e) {
+            return 'Unfollow ' + e.name
+          }),
+          n('a649d336', function (e) {
+            return 'Not interested in ' + e.name
+          }),
+          n('e2f2b658', 'We won’t suggest this Topic anymore.'),
+          n('b51f7ede', function (e) {
+            return 'You unfollowed ' + e.name
+          }),
+          n('gac366b2', function (e) {
+            return 'You followed ' + e.name
+          }),
+          n('a7d8afea', 'Don’t show these Tweets in Home'),
+          n('aa6fcee5', 'Show these Tweets in Home'),
+          n('f0caa1a9', 'Don’t show this List in Home'),
+          n('eaf63156', 'Top Tweets from this List will no longer show up in your Home timeline.'),
+          n('d1e92eba', 'Top Tweets from this List will no longer show up in Home.'),
+          n('cf6b3e21', 'Show this List in Home'),
+          n('b7fbb4c0', 'Top Tweets from this List may show up in your Home timeline.'),
+          n('d90efe06', 'Top Tweets from this List may now show up in Home.'),
+          n('a3484d21', 'tie'),
+          n('aab2efa8', function (e) {
+            return 'winner ' + e.winner
+          }),
+          n('ba21c289', function (e) {
+            return (
+              'Score card, ' +
+              e.gameCategory +
+              ', ' +
+              e.gameState +
+              ', ' +
+              e.accessibleGameClockPeriod +
+              ', ' +
+              e.teamOneLabel +
+              ', ' +
+              e.teamTwoLabel
+            )
+          }),
+          n('f178e38c', 'Upcoming'),
+          n('b6da6b01', 'Live'),
+          n('i9f615c8', 'Final'),
+          n('f897267a', 'Postponed'),
+          n('f93c4b69', 'Cancelled'),
+          n('i79ab12a', 'Follow Topic'),
+          n('c0f56044', 'Unfollow'),
+          n('c5f4befa', 'Trends'),
+          n('ccc45ee6', function (e) {
+            return e.team + ' won'
+          }),
+          n('f81a95d7', function (e) {
+            return '' + e.date
+          }),
+          n('ed4bea2e', 'Today'),
+          n('j3e0ae78', function (e) {
+            return '・' + e.formattedTime
+          }),
+          n('cabfdd05', 'Tomorrow'),
+          n('abd0f804', function (e) {
+            return '・' + e.formattedTime
+          }),
+          n('afb4c24a', 'No items'),
+          n('aaf2c6e9', 'Thanks. Twitter will use this to make your timeline better.'),
+          n('d057a7ee', 'Tweet unavailable'),
+          n('c5d23126', 'Pin'),
+          n('j44ec61f', 'Unpin'),
+          n('b01c0d14', 'You’ll need to remove one pinned List before adding another'),
+          n('fa816a0a', 'Reorder List'),
+          n('ac832ae4', 'Pin List'),
+          n('cdb33880', 'Unpin List'),
+          n('add55942', 'Something went wrong. Try subscribing again in a minute.'),
+          n('ib8f5f3b', 'Something went wrong. Try unsubscribing again in a minute.'),
+          n('e20fc755', 'You aren’t allowed to add this member to this List.'),
+          n('j681933d', 'Private List'),
+          n('ca5d0a81', 'Edit List'),
+          n('ec08efe3', function (e) {
+            return '' + e.formattedCount
+          }),
+          n('h9f711f0', function (e) {
+            return 'Follower' + a(e.count, '', 's')
+          }),
+          n('ibd0106d', function (e) {
+            return '' + e.formattedCount
+          }),
+          n('cface2d0', function (e) {
+            return 'Member' + a(e.count, '', 's')
+          }),
+          n('a2a3824a', 'Topic'),
+          n('d9b417c4', 'Set as not interested'),
+          n('c29d6806', 'Stop recommending'),
+          n('ge8f3043', function (e) {
+            return 'Follow ' + e.topicName + ' Topic'
+          }),
+          n('aa576cbf', function (e) {
+            return 'Unfollow ' + e.topicName + ' Topic'
+          }),
+          n('i569ff3e', 'Show this thread'),
+          n('c837fca9', 'Show more replies'),
+          n('i8005e73', 'Loading more Tweets'),
+          n('d6e2f9bd', 'Loading timeline'),
+          n('ee8c6c61', 'Show more Tweets'),
+          n('d6917e0c', function (e) {
+            return 'Show ' + e.count + ' Tweet' + a(e.count, '', 's')
+          }),
+          n('g0b48670', 'This conversation has too many replies to show them all.'),
           n('f5718548', 'You reported this Tweet.'),
           n('e4c6c309', 'This Tweet is unavailable.'),
           n('e29c651e', 'Thanks for learning more'),
@@ -802,7 +874,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('eab9ceb1', 'Sign up for Twitter'),
           n('ee87e71c', 'You can’t mute yourself.'),
           n('ed428a75', 'You are not muting the specified user.'),
-          n('d057a7ee', 'Tweet unavailable'),
           n('d2c7a41c', 'Tweet your reply'),
           n('ee79367a', function (e) {
             return 'Level ' + e.conversationTreeDepth + ':'
@@ -818,18 +889,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('e5d2277e', function (e) {
             return 'Follow ' + e.topicName + ' Topic for more top Tweets, or select x to remove this recommendation.'
           }),
-          n('e2f2b658', 'We won’t suggest this Topic anymore.'),
-          n('a2a3824a', 'Topic'),
-          n('i79ab12a', 'Follow Topic'),
-          n('c0f56044', 'Unfollow'),
           n('fe8a1f7f', 'Compose a reply'),
           n('e349147b', 'What’s happening?'),
-          n('d9b417c4', 'Set as not interested'),
-          n('c29d6806', 'Stop recommending'),
           n('bc2ceaf2', 'Sending Tweet...'),
           n('b23688c7', 'Undo timer'),
           n('e3a24e4b', 'Add another Tweet'),
-          n('i569ff3e', 'Show this thread'),
           n('b4947556', 'Translate Tweet'),
           n('he9c9633', 'Unable to fetch translation'),
           n('ca1e7e77', 'Hide translated Tweet'),
@@ -970,7 +1034,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('ha35a1d2', 'Pin to your profile'),
           n('afac3b9d', 'Pin Tweet to profile?'),
           n('e2d44ce9', 'This will appear at the top of your profile and replace any previously pinned Tweet.'),
-          n('c5d23126', 'Pin'),
           n('aaef1b48', 'Your Tweet was pinned to your profile.'),
           n('f5cdcc2b', 'Not interested in this ad'),
           n('ja66a2b4', function (e) {
@@ -984,7 +1047,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('ic030337', 'Unpin from profile'),
           n('j1b8c867', 'Unpin Tweet from profile?'),
           n('eb2d59f3', 'This will no longer appear automatically at the top of your profile.'),
-          n('j44ec61f', 'Unpin'),
           n('i0086d6b', 'Your Tweet was unpinned from your profile'),
           n('f9478972', 'View hidden replies'),
           n('ff9bd692', 'Report Tweet'),
@@ -993,320 +1055,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('g9425e3f', 'Are you sure you want to remove the photo tag from this Tweet?'),
           n('jfc76958', 'Remove tag from photo'),
           n('fa9ce7f3', 'Undo Retweet'),
-          n('c8a7eee9', 'Given current evidence, I believe this Tweet is: '),
-          n('d4e419f5', 'Potentially misleading'),
-          n('ha9655c2', 'Not misleading'),
-          n('a0cf39fc', 'Why do you believe this Tweet may be misleading?'),
-          n('c33bc7d3', 'It contains a factual error'),
-          n('j6e12b24', 'It contains a digitally altered photo or video'),
-          n('aadb676b', 'It contains outdated information that may be misleading'),
-          n('g21a0ef3', 'It is a misrepresentation or missing important context'),
-          n('daf354dd', 'It presents an unverified claim as a fact'),
-          n('d1d2ef84', 'It is a joke or satire that might be misinterpreted as a fact'),
-          n('c365dcc5', 'Other'),
-          n('ce5fa5d4', 'If this Tweet were widely spread, its message would likely be believed by:'),
-          n('d617b1b9', 'Few'),
-          n('c5be638b', 'Many'),
-          n('cd06cf1a', 'If many believed this Tweet, it might cause:'),
-          n('c23c72e6', 'Little harm'),
-          n('ee822d70', 'Considerable harm'),
-          n('d19bf2bc', 'Finding and understanding the correct information would be:'),
-          n('h25771bb', 'Easy'),
-          n('e0830664', 'Challenging'),
-          n('j206b73d', 'Why do you believe this Tweet is not misleading?'),
-          n('g228df26', 'It expresses a factually correct claim'),
-          n('dd55f821', 'This Tweet was correct when written, but is out of date now'),
-          n('hf607a09', 'It is clearly satirical/joking'),
-          n('j6ac7741', 'It expresses a personal opinion'),
-          n('b1d82aae', 'Did you link to sources you believe most people would consider trustworthy?'),
-          n('b7ec04f3', 'Yes'),
-          n('c3d89aca', 'Continue'),
-          n('h7ad677b', 'A quick reminder of the Birdwatch values:'),
-          n('eac7b6ab', 'Contribute to build understanding'),
-          n('b0381cfb', 'Act in good faith'),
-          n('f0addddc', 'Be helpful, even to those who disagree'),
-          n('a05667aa', 'Your note has been posted to Birdwatch. Other contributors can now read and rate your note. '),
-          n('j5a1d85a', 'See your note'),
-          n('ace99891', 'Your note is live!'),
-          n('h8335712', 'Your note'),
-          n('e1298dd4', 'All notes'),
-          n('c59107c3', 'Tweet with notes'),
-          n('ib73f867', 'No notes on this Tweet'),
-          n('efd14e79', 'Loading notes'),
-          n('d06b723c', 'These notes need you'),
-          n(
-            'j0790071',
-            'Participants like you determine which notes are most helpful. Keep information on Birdwatch reliable by rating notes.',
-          ),
-          n('d4f03f72', 'We’re just starting to test Birdwatch out'),
-          n(
-            'd94e246a',
-            'So, some notes may be helpful, and others, not so much. Birdwatch participants can separate high quality notes from the rest by rating them, which will help us build a better Birdwatch.',
-          ),
-          n('ia596d40', 'See anything you’d like to improve?'),
-          n('deff0bdd', 'Write a note'),
-          n('e272836c', 'Delete note?'),
-          n('fa0d3ee3', 'Once you delete this note, it will be permanently removed from Birdwatch.'),
-          n('e4579709', 'Note Details'),
-          n('df587b98', 'Note ID'),
-          n('h201bdc8', 'Note Author'),
-          n('fe1f6043', 'Timestamp'),
-          n('df321fc3', 'See all notes on this Tweet'),
-          n('b9f18eec', 'Currently rated helpful'),
-          n('d6db34cb', 'Needs more ratings'),
-          n('j2c3f3cf', 'Currently not rated helpful'),
-          n('ca310993', 'Harmfully misleading'),
-          n('ed5156f9', 'There was an error saving your rating, please try again.'),
-          n('a7338bc2', 'Is this note helpful?'),
-          n('d93489e6', 'Do you agree with its conclusion?'),
-          n('j63844f5', 'What about this note was helpful to you?'),
-          n('e0806a48', 'Help us understand why this note was unhelpful'),
-          n('j6aa6172', 'Delete rating?'),
-          n('i411275f', 'This can’t be undone.'),
-          n('d1a479a8', 'Unavailable for legacy ratings'),
-          n('a43beaf2', 'helpful'),
-          n('cb1d0ef3', 'unhelpful'),
-          n('he5f1491', 'agreed'),
-          n('a67e7d91', 'disagreed'),
-          n('c9c4850a', 'helpful'),
-          n('ffa975fd', 'agreed'),
-          n('c9701442', 'helpful'),
-          n('d2be9800', 'disagreed'),
-          n('cf87d556', 'unhelpful'),
-          n('hec80c95', 'agreed'),
-          n('bfa5f565', 'unhelpful'),
-          n('eb1cc800', 'disagreed'),
-          n('dfa44ddd', 'Clear and/or well-written'),
-          n('hc2b6a7e', 'Nonjudgmental and/or empathetic'),
-          n('a7bc3191', 'Cites high-quality sources'),
-          n('f3e6f0a9', 'Informative'),
-          n('c5d55592', 'Offers unique information or context'),
-          n('bbe8b4ac', 'Opinion, speculation, or bias'),
-          n('heb35e12', 'Incorrect information'),
-          n('c34e0b2b', 'Misses key points'),
-          n('a802709f', 'Sources missing or unreliable'),
-          n('dd1f17e9', 'Off topic'),
-          n('if966b54', 'Outdated information'),
-          n('d0ba7db4', 'Argumentative or inflammatory'),
-          n('aa520d31', 'Spam, harassment, or abuse'),
-          n('e25e5ed1', 'Hard to understand'),
-          n('i26425d8', 'Somewhat'),
-          n('ac7f9745', 'What was helpful about it?'),
-          n('c7751803', 'What was unhelpful about it?'),
-          n('e2988ed0', 'How can we improve the note rating experience?'),
-          n('c1a50438', 'Let us know'),
-          n('f2ceaed4', 'Helpful'),
-          n('i7d91dc8', 'Somewhat Helpful'),
-          n('c206a60f', 'Not Helpful'),
-          n('a26f8dc1', 'Easy to understand'),
-          n('d89cfe9e', 'Directly addresses the Tweet’s claim'),
-          n('faa5f9e7', 'Provides important context'),
-          n('ef490ae8', 'Sources not included or unreliable'),
-          n('bf3dc461', 'Sources do not support note'),
-          n('d60c0063', 'Typos or unclear language'),
-          n('d24b99ed', 'Inflammatory language'),
-          n('ib117531', 'Harassment or abuse'),
-          n('de962615', 'Want to join Birdwatch?'),
-          n('cbfa448b', 'Help people stay better informed on Twitter.'),
-          n('b171d7c4', 'Join'),
-          n('ab23a972', 'Follow the conversation')
-        n('cd8984b9', 'Birdwatch Values'),
-          n('e6ae103e', '1. Contribute to build understanding'),
-          n('fd5b7e67', '2. Act in good faith'),
-          n('c21adcc9', '3. Be helpful, even to those who disagree'),
-          n('c68f3bcf', 'Learn more about our values'),
-          n('dfb1f498', 'Feedback'),
-          n('b8a36128', 'Send us a DM @birdwatch'),
-          n('b7388a56', 'Footer'),
-          n('jc292da4', function (e) {
-            return '© ' + e.year + ' Twitter, Inc.'
-          }),
-          n('b721eb37', 'About'),
-          n('hdabc3fb', 'Terms of Service'),
-          n('bc6efc72', 'Privacy Policy'),
-          n('h3161191', 'Cookie Policy'),
-          n('aeede019', 'Imprint'),
-          n('a7de64dd', 'Ads info'),
-          n('jb0a4c35', 'Blog'),
-          n('cf3709d9', 'Status'),
-          n('ce6d095a', 'Careers'),
-          n('e0adec81', 'Brand Resources'),
-          n('a4cf866d', 'Advertising'),
-          n('df1b7550', 'Marketing'),
-          n('b97cd51b', 'Twitter for Business'),
-          n('c6f58084', 'Developers'),
-          n('d83f18d2', 'Directory'),
-          n('de128a2f', 'Turn on Tweet notifications'),
-          n('aa6f3ca4', 'Turn off Tweet notifications'),
-          n('j87c21f4', 'Notify'),
-          n('iebc30ca', 'Turn off notifications'),
-          n(
-            'c2609309',
-            'You will see Tweet notifications from this account in the Notifications timeline. You can also enable push notifications on your device to never miss a Tweet.',
-          ),
-          n('hee41732', 'Push notifications'),
-          n('b813e4db', 'Never miss what’s happening on Twitter by enabling push notifications'),
-          n('e71e09ec', 'Turn on notifications'),
-          n('g4850f43', 'Push notifications enabled'),
-          n('dc397181', 'Customize'),
-          n('d5b2da0a', 'Birdwatch Tab Bar'),
-          n('jaf0d42c', 'Your notes'),
-          n('cb1adfa0', 'Download data'),
-          n('gab492e9', 'Skip to recommended content'),
-          n('a51c1570', 'Skip to secondary content'),
-          n('fe27c1e1', 'Notes'),
-          n(
-            'eae6767a',
-            'Notes you create will show up here. To create a note, select the Birdwatch icon in any Tweet’s menu.',
-          ),
-          n('db08295d', 'Want to join?'),
-          n(
-            'f4d67927',
-            'Looks like you’re not a part of the Birdwatch pilot program. Join now to help people stay better informed on Twitter.',
-          ),
-          n('ff3e0be2', 'Join Birdwatch'),
-          n('b8b34f54', 'Ratings received'),
-          n('b5eb23f9', function (e) {
-            return '' + e.count
-          }),
-          n('ebecb73c', 'Helpful'),
-          n('i1f57cc4', function (e) {
-            return '' + e.count
-          }),
-          n('e8907cd9', 'Somewhat helpful'),
-          n('d551bc31', function (e) {
-            return '' + e.count
-          }),
-          n('c1db7f3a', 'Unhelpful'),
-          n('c87f3cf8', 'Note'),
-          n('a5b19492', 'This note does not exist'),
-          n('a225549d', 'Meet Birdwatch'),
-          n(
-            'bc203ca1',
-            'People want reliable information on what’s happening in the world, and they often come to Twitter to find it. To help our community stay informed, we’re testing out the Birdwatch pilot program, a way for people on Twitter to identify and provide valuable context on misleading information.',
-          ),
-          n(
-            'iea72310',
-            'Contributors to Birdwatch sign up to join the pilot program, then can create notes that explain why they think a Tweet is misleading — and include what they believe the correct information is.',
-          ),
-          n(
-            'c337f3d1',
-            'We hope that by empowering our community with the right tools, everyone can be better informed.',
-          ),
-          n('e72533f5', 'Birdwatch is built on data transparency'),
-          n(
-            'g652cada',
-            'All Birdwatch contributions are published here daily, so our community has free access to analyze data, identify problems, and spot opportunities to make Birdwatch better. We can’t wait to learn with you.',
-          ),
-          n('g4d71b5e', 'Learn how to use and analyze Birdwatch data '),
-          n('b8a27fe1', 'in our guide'),
-          n('j1c99e0f', 'Notes data'),
-          n('i6f69313', 'Ratings data'),
-          n('h786cd79', 'Notes data isn’t available yet'),
-          n('d0fe8052', 'Ratings data isn’t available yet'),
-          n('g0cacb73', 'Twitter Developer Agreement and Policy'),
-          n('e43138c5', function (e) {
-            return 'Follow ' + e.name
-          }),
-          n('be65f2e6', function (e) {
-            return 'Unfollow ' + e.name
-          }),
-          n('a649d336', function (e) {
-            return 'Not interested in ' + e.name
-          }),
-          n('b51f7ede', function (e) {
-            return 'You unfollowed ' + e.name
-          }),
-          n('gac366b2', function (e) {
-            return 'You followed ' + e.name
-          }),
-          n('a7d8afea', 'Don’t show these Tweets in Home'),
-          n('aa6fcee5', 'Show these Tweets in Home'),
-          n('f0caa1a9', 'Don’t show this List in Home'),
-          n('eaf63156', 'Top Tweets from this List will no longer show up in your Home timeline.'),
-          n('d1e92eba', 'Top Tweets from this List will no longer show up in Home.'),
-          n('cf6b3e21', 'Show this List in Home'),
-          n('b7fbb4c0', 'Top Tweets from this List may show up in your Home timeline.'),
-          n('d90efe06', 'Top Tweets from this List may now show up in Home.'),
-          n('afb4c24a', 'No items'),
-          n('aaf2c6e9', 'Thanks. Twitter will use this to make your timeline better.'),
-          n('b01c0d14', 'You’ll need to remove one pinned List before adding another'),
-          n('fa816a0a', 'Reorder List'),
-          n('ac832ae4', 'Pin List'),
-          n('cdb33880', 'Unpin List'),
-          n('add55942', 'Something went wrong. Try subscribing again in a minute.'),
-          n('ib8f5f3b', 'Something went wrong. Try unsubscribing again in a minute.'),
-          n('e20fc755', 'You aren’t allowed to add this member to this List.'),
-          n('j681933d', 'Private List'),
-          n('a3484d21', 'tie'),
-          n('aab2efa8', function (e) {
-            return 'winner ' + e.winner
-          }),
-          n('ba21c289', function (e) {
-            return (
-              'Score card, ' +
-              e.gameCategory +
-              ', ' +
-              e.gameState +
-              ', ' +
-              e.accessibleGameClockPeriod +
-              ', ' +
-              e.teamOneLabel +
-              ', ' +
-              e.teamTwoLabel
-            )
-          }),
-          n('f178e38c', 'Upcoming'),
-          n('b6da6b01', 'Live'),
-          n('i9f615c8', 'Final'),
-          n('f897267a', 'Postponed'),
-          n('f93c4b69', 'Cancelled'),
-          n('ca5d0a81', 'Edit List'),
-          n('ec08efe3', function (e) {
-            return '' + e.formattedCount
-          }),
-          n('h9f711f0', function (e) {
-            return 'Follower' + a(e.count, '', 's')
-          }),
-          n('ibd0106d', function (e) {
-            return '' + e.formattedCount
-          }),
-          n('cface2d0', function (e) {
-            return 'Member' + a(e.count, '', 's')
-          }),
-          n('ge8f3043', function (e) {
-            return 'Follow ' + e.topicName + ' Topic'
-          }),
-          n('aa576cbf', function (e) {
-            return 'Unfollow ' + e.topicName + ' Topic'
-          }),
-          n('c837fca9', 'Show more replies'),
-          n('i8005e73', 'Loading more Tweets'),
-          n('d228a9a0', 'Show more'),
-          n('e25a0c3a', 'Promoted Tweet'),
-          n('b8e930fd', 'Trending now'),
-          n('ae05f268', 'Trends are unavailable.'),
-          n('c5f4befa', 'Trends'),
-          n('ccc45ee6', function (e) {
-            return e.team + ' won'
-          }),
-          n('f81a95d7', function (e) {
-            return '' + e.date
-          }),
-          n('ed4bea2e', 'Today'),
-          n('j3e0ae78', function (e) {
-            return '・' + e.formattedTime
-          }),
-          n('cabfdd05', 'Tomorrow'),
-          n('abd0f804', function (e) {
-            return '・' + e.formattedTime
-          }),
-          n('d6e2f9bd', 'Loading timeline'),
-          n('ee8c6c61', 'Show more Tweets'),
-          n('d6917e0c', function (e) {
-            return 'Show ' + e.count + ' Tweet' + a(e.count, '', 's')
-          }),
-          n('g0b48670', 'This conversation has too many replies to show them all.'),
           n('dad5a4b8', 'Your Tweet was sent.'),
           n('e65aed64', 'Your Tweets were sent.'),
           n('d8222374', 'Discard Tweet?'),
@@ -1437,9 +1185,42 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('d484fca9', 'The Tweet exceeds the number of allowed attachment types.'),
           n('c51ba396', 'Oops! A URL in your Tweet appears to link to a page that has spammy or unsafe content.'),
           n('ef2fa90b', 'The text of your Tweet exceeds the maximum allowed limit.'),
+          n('e25a0c3a', 'Promoted Tweet')
+        n('de128a2f', 'Turn on Tweet notifications'),
+          n('aa6f3ca4', 'Turn off Tweet notifications'),
+          n('j87c21f4', 'Notify'),
+          n('iebc30ca', 'Turn off notifications'),
+          n(
+            'c2609309',
+            'You will see Tweet notifications from this account in the Notifications timeline. You can also enable push notifications on your device to never miss a Tweet.',
+          ),
+          n('hee41732', 'Push notifications'),
+          n('b813e4db', 'Never miss what’s happening on Twitter by enabling push notifications'),
+          n('e71e09ec', 'Turn on notifications'),
+          n('g4850f43', 'Push notifications enabled'),
+          n('dc397181', 'Customize'),
           n('je808a16', function (e) {
             return e.topicName + ' Topic'
           }),
+          n('b7388a56', 'Footer'),
+          n('jc292da4', function (e) {
+            return '© ' + e.year + ' Twitter, Inc.'
+          }),
+          n('b721eb37', 'About'),
+          n('hdabc3fb', 'Terms of Service'),
+          n('bc6efc72', 'Privacy Policy'),
+          n('h3161191', 'Cookie Policy'),
+          n('aeede019', 'Imprint'),
+          n('a7de64dd', 'Ads info'),
+          n('jb0a4c35', 'Blog'),
+          n('cf3709d9', 'Status'),
+          n('ce6d095a', 'Careers'),
+          n('e0adec81', 'Brand Resources'),
+          n('a4cf866d', 'Advertising'),
+          n('df1b7550', 'Marketing'),
+          n('b97cd51b', 'Twitter for Business'),
+          n('c6f58084', 'Developers'),
+          n('d83f18d2', 'Directory'),
           n('aa95ddc0', 'Sign up with phone or email'),
           n('b50ea616', 'New to Twitter?'),
           n('ie8e1ffc', 'Sign up now to get your own personalized timeline!'),
@@ -1469,6 +1250,239 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('a526aa66', 'Who to follow'),
           n('ef62501f', 'You might like'),
           n('f5b426c2', 'Loading Users'),
+          n('gab492e9', 'Skip to recommended content'),
+          n('a51c1570', 'Skip to secondary content'),
+          n('e4e811fb', 'Connecting...'),
+          n('cc8f82bb', 'Join this space'),
+          n('e51df2e6', 'Your mic will be off to start'),
+          n('e0ebeac6', 'people'),
+          n('h9694423', function (e) {
+            return '+' + e.count
+          }),
+          n('ba55e824', 'Ended'),
+          n('j245c654', 'Speakers'),
+          n('cc5ab041', 'This space has ended'),
+          n('eadd5677', 'It looks like this space has been closed.'),
+          n('a2288d04', 'Twitter - Space'),
+          n('a324f032', 'Oops, let’s get you to the right place'),
+          n('eba5d942', 'Unable to join this space'),
+          n(
+            'a77e3b5c',
+            'Spaces is only available on iOS and Android for now, but we’re working to bring it to Twitter.com as fast as we can.',
+          ),
+          n('f66f311d', 'Join this space in the Twitter app.'),
+          n('db2b473e', 'Go to the app'),
+          n('d39e8b30', 'Add a note'),
+          n('a91bb144', 'Submit'),
+          n(
+            'hb2bf967',
+            'Your note will be publicly available in the Birdwatch site and may be shown to other participants on Twitter.',
+          ),
+          n(
+            'ifd2c15f',
+            'Please explain the evidence behind your choices, to help others who see this Tweet understand what about it might be misleading.',
+          ),
+          n(
+            'f24ec219',
+            'Please explain the evidence behind your choices, to help others who see this Tweet understand why it is not misleading.',
+          ),
+          n('j679dcda', 'See examples'),
+          n('b7476596', 'Be precise — providing links to outside sources is encouraged.'),
+          n('df6c8291', 'Your explanation'),
+          n(
+            'h0e35524',
+            'Your note was not saved, please make sure that you have not previously written a note on this Tweet and try again later.',
+          ),
+          n('b47b5a16', 'All fields are required. Please make sure you’ve answered all questions.'),
+          n('i0e66c5a', 'Select one'),
+          n('j8e3e3be', 'Select at least one'),
+          n('f1e851ff', 'Enter an explanation'),
+          n('ff5dcac8', 'Your explanation is too long'),
+          n('abdd8d09', 'Edit note'),
+          n('c097608d', 'Your note doesn’t have an explanation'),
+          n('g9cffe15', 'Your note doesn’t include a source'),
+          n('ba25898c', 'Notes that explain their sources have a better chance of being rated helpful.'),
+          n('e764d704', 'Notes that link to trustworthy sources have a better chance of being rated helpful.'),
+          n('gb67e44c', 'Submit without explanation'),
+          n('d6b758a1', 'Submit without source'),
+          n('c8a7eee9', 'Given current evidence, I believe this Tweet is: '),
+          n('d4e419f5', 'Potentially misleading'),
+          n('ha9655c2', 'Not misleading'),
+          n('a0cf39fc', 'Why do you believe this Tweet may be misleading?'),
+          n('c33bc7d3', 'It contains a factual error'),
+          n('j6e12b24', 'It contains a digitally altered photo or video'),
+          n('aadb676b', 'It contains outdated information that may be misleading'),
+          n('g21a0ef3', 'It is a misrepresentation or missing important context'),
+          n('daf354dd', 'It presents an unverified claim as a fact'),
+          n('d1d2ef84', 'It is a joke or satire that might be misinterpreted as a fact'),
+          n('c365dcc5', 'Other'),
+          n('ce5fa5d4', 'If this Tweet were widely spread, its message would likely be believed by:'),
+          n('d617b1b9', 'Few'),
+          n('c5be638b', 'Many'),
+          n('cd06cf1a', 'If many believed this Tweet, it might cause:'),
+          n('c23c72e6', 'Little harm'),
+          n('ee822d70', 'Considerable harm'),
+          n('d19bf2bc', 'Finding and understanding the correct information would be:'),
+          n('h25771bb', 'Easy'),
+          n('e0830664', 'Challenging'),
+          n('j206b73d', 'Why do you believe this Tweet is not misleading?'),
+          n('g228df26', 'It expresses a factually correct claim'),
+          n('dd55f821', 'This Tweet was correct when written, but is out of date now'),
+          n('hf607a09', 'It is clearly satirical/joking'),
+          n('j6ac7741', 'It expresses a personal opinion'),
+          n('b1d82aae', 'Did you link to sources you believe most people would consider trustworthy?'),
+          n('b7ec04f3', 'Yes'),
+          n('c3d89aca', 'Continue'),
+          n('h7ad677b', 'A quick reminder of the Birdwatch values:'),
+          n('eac7b6ab', 'Contribute to build understanding'),
+          n('b0381cfb', 'Act in good faith'),
+          n('f0addddc', 'Be helpful, even to those who disagree'),
+          n('a05667aa', 'Your note has been posted to Birdwatch. Other contributors can now read and rate your note. '),
+          n('j5a1d85a', 'See your note'),
+          n('ace99891', 'Your note is live!'),
+          n('h8335712', 'Your note'),
+          n('e1298dd4', 'All notes'),
+          n('c59107c3', 'Tweet with notes'),
+          n('ib73f867', 'No notes on this Tweet'),
+          n('efd14e79', 'Loading notes'),
+          n('d06b723c', 'These notes need you'),
+          n(
+            'j0790071',
+            'Participants like you determine which notes are most helpful. Keep information on Birdwatch reliable by rating notes.',
+          ),
+          n('d4f03f72', 'We’re just starting to test Birdwatch out'),
+          n(
+            'd94e246a',
+            'So, some notes may be helpful, and others, not so much. Birdwatch participants can separate high quality notes from the rest by rating them, which will help us build a better Birdwatch.',
+          ),
+          n('ia596d40', 'See anything you’d like to improve?'),
+          n('deff0bdd', 'Write a note'),
+          n('e272836c', 'Delete note?'),
+          n('fa0d3ee3', 'Once you delete this note, it will be permanently removed from Birdwatch.'),
+          n('e4579709', 'Note Details'),
+          n('df587b98', 'Note ID'),
+          n('h201bdc8', 'Note Author'),
+          n('fe1f6043', 'Timestamp'),
+          n('df321fc3', 'See all notes on this Tweet'),
+          n('b9f18eec', 'Currently rated helpful'),
+          n('d6db34cb', 'Needs more ratings'),
+          n('j2c3f3cf', 'Currently not rated helpful'),
+          n('ca310993', 'Harmfully misleading'),
+          n('ed5156f9', 'There was an error saving your rating, please try again.'),
+          n('a7338bc2', 'Is this note helpful?'),
+          n('d93489e6', 'Do you agree with its conclusion?'),
+          n('j63844f5', 'What about this note was helpful to you?'),
+          n('e0806a48', 'Help us understand why this note was unhelpful'),
+          n('j6aa6172', 'Delete rating?'),
+          n('i411275f', 'This can’t be undone.'),
+          n('d1a479a8', 'Unavailable for legacy ratings'),
+          n('a43beaf2', 'helpful'),
+          n('cb1d0ef3', 'unhelpful'),
+          n('he5f1491', 'agreed'),
+          n('a67e7d91', 'disagreed'),
+          n('c9c4850a', 'helpful'),
+          n('ffa975fd', 'agreed'),
+          n('c9701442', 'helpful'),
+          n('d2be9800', 'disagreed'),
+          n('cf87d556', 'unhelpful'),
+          n('hec80c95', 'agreed'),
+          n('bfa5f565', 'unhelpful'),
+          n('eb1cc800', 'disagreed'),
+          n('dfa44ddd', 'Clear and/or well-written'),
+          n('hc2b6a7e', 'Nonjudgmental and/or empathetic'),
+          n('a7bc3191', 'Cites high-quality sources'),
+          n('f3e6f0a9', 'Informative'),
+          n('c5d55592', 'Offers unique information or context'),
+          n('bbe8b4ac', 'Opinion, speculation, or bias'),
+          n('heb35e12', 'Incorrect information'),
+          n('c34e0b2b', 'Misses key points'),
+          n('a802709f', 'Sources missing or unreliable'),
+          n('dd1f17e9', 'Off topic'),
+          n('if966b54', 'Outdated information'),
+          n('d0ba7db4', 'Argumentative or inflammatory'),
+          n('aa520d31', 'Spam, harassment, or abuse'),
+          n('e25e5ed1', 'Hard to understand'),
+          n('i26425d8', 'Somewhat'),
+          n('ac7f9745', 'What was helpful about it?'),
+          n('c7751803', 'What was unhelpful about it?'),
+          n('e2988ed0', 'How can we improve the note rating experience?'),
+          n('c1a50438', 'Let us know'),
+          n('f2ceaed4', 'Helpful'),
+          n('i7d91dc8', 'Somewhat Helpful'),
+          n('c206a60f', 'Not Helpful'),
+          n('a26f8dc1', 'Easy to understand'),
+          n('d89cfe9e', 'Directly addresses the Tweet’s claim'),
+          n('faa5f9e7', 'Provides important context'),
+          n('ef490ae8', 'Sources not included or unreliable'),
+          n('bf3dc461', 'Sources do not support note'),
+          n('d60c0063', 'Typos or unclear language'),
+          n('d24b99ed', 'Inflammatory language'),
+          n('ib117531', 'Harassment or abuse'),
+          n('de962615', 'Want to join Birdwatch?'),
+          n('cbfa448b', 'Help people stay better informed on Twitter.'),
+          n('b171d7c4', 'Join'),
+          n('ab23a972', 'Follow the conversation'),
+          n('cd8984b9', 'Birdwatch Values'),
+          n('e6ae103e', '1. Contribute to build understanding'),
+          n('fd5b7e67', '2. Act in good faith'),
+          n('c21adcc9', '3. Be helpful, even to those who disagree'),
+          n('c68f3bcf', 'Learn more about our values'),
+          n('dfb1f498', 'Feedback'),
+          n('b8a36128', 'Send us a DM @birdwatch'),
+          n('d5b2da0a', 'Birdwatch Tab Bar'),
+          n('jaf0d42c', 'Your notes'),
+          n('cb1adfa0', 'Download data'),
+          n('fe27c1e1', 'Notes'),
+          n(
+            'eae6767a',
+            'Notes you create will show up here. To create a note, select the Birdwatch icon in any Tweet’s menu.',
+          ),
+          n('db08295d', 'Want to join?'),
+          n(
+            'f4d67927',
+            'Looks like you’re not a part of the Birdwatch pilot program. Join now to help people stay better informed on Twitter.',
+          ),
+          n('ff3e0be2', 'Join Birdwatch'),
+          n('b8b34f54', 'Ratings received'),
+          n('b5eb23f9', function (e) {
+            return '' + e.count
+          }),
+          n('ebecb73c', 'Helpful'),
+          n('i1f57cc4', function (e) {
+            return '' + e.count
+          }),
+          n('e8907cd9', 'Somewhat helpful'),
+          n('d551bc31', function (e) {
+            return '' + e.count
+          }),
+          n('c1db7f3a', 'Unhelpful'),
+          n('c87f3cf8', 'Note'),
+          n('a5b19492', 'This note does not exist'),
+          n('a225549d', 'Meet Birdwatch'),
+          n(
+            'bc203ca1',
+            'People want reliable information on what’s happening in the world, and they often come to Twitter to find it. To help our community stay informed, we’re testing out the Birdwatch pilot program, a way for people on Twitter to identify and provide valuable context on misleading information.',
+          ),
+          n(
+            'iea72310',
+            'Contributors to Birdwatch sign up to join the pilot program, then can create notes that explain why they think a Tweet is misleading — and include what they believe the correct information is.',
+          ),
+          n(
+            'c337f3d1',
+            'We hope that by empowering our community with the right tools, everyone can be better informed.',
+          ),
+          n('e72533f5', 'Birdwatch is built on data transparency'),
+          n(
+            'g652cada',
+            'All Birdwatch contributions are published here daily, so our community has free access to analyze data, identify problems, and spot opportunities to make Birdwatch better. We can’t wait to learn with you.',
+          ),
+          n('g4d71b5e', 'Learn how to use and analyze Birdwatch data '),
+          n('b8a27fe1', 'in our guide'),
+          n('j1c99e0f', 'Notes data'),
+          n('i6f69313', 'Ratings data'),
+          n('h786cd79', 'Notes data isn’t available yet'),
+          n('d0fe8052', 'Ratings data isn’t available yet'),
+          n('g0cacb73', 'Twitter Developer Agreement and Policy'),
           n('b1850062', 'Not interested'),
           n('d69b2d90', 'You’re not interested in this Topic.'),
           n('ed88e742', 'Copy link to Topic'),
@@ -1502,6 +1516,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('ff0f7429', function (e) {
             return e.formattedCount + ' member' + a(e.count, '', 's')
           }),
+          n('ad10c66d', 'You hid this Tweet'),
           n('b8f0483e', 'Compose new Tweet'),
           n('a133d13e', 'Unsent Tweets'),
           n('ed33a3b6', 'Hello, wordsmiths.'),
@@ -2283,7 +2298,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('f587e41e', 'You aren’t blocking anyone'),
           n('ef731b13', 'Loading blocked accounts'),
           n('e554ba82', 'Learn more'),
-          n('d17ebe1b', 'Remove from autoblock'),
           n('ae3e9c81', function (e) {
             return 'Remove @' + e.screenName + ' from Autoblocked accounts list?'
           }),
@@ -2295,24 +2309,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n(
             'ic2937a1',
             'You’re about to start the process of deactivating your Twitter account. Your display name, @username, and public profile will no longer be viewable on Twitter.com, Twitter for iOS, or Twitter for Android.',
-          ),
-          n(
-            'd86e6d9a',
-            'You can restore your Twitter account if it was accidentally or wrongfully deactivated for up to 12 months after deactivation.',
-          ),
-          n(
-            'i945795c',
-            'You can restore your Twitter account if it was accidentally or wrongfully deactivated for up to 30 days after deactivation.',
-          ),
-          n(
-            'c3216543',
-            'You can restore your Twitter account if it was accidentally or wrongfully deactivated for some time after deactivation.',
-          ),
-          n('ea989810', 'Deactivate account'),
-          n('f6e73faa', 'Deactivate'),
-          n('c3743327', 'This will deactivate your account'),
-          n('a20cd24d', 'What else you should know'),
-          n('g8fb7f85', 'Reactivation period')
+          )
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var n = t[o]
@@ -2329,7 +2326,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        n('e93b0aef', 'Complete your deactivation request by entering the password associated with your account.'),
+        n(
+          'd86e6d9a',
+          'You can restore your Twitter account if it was accidentally or wrongfully deactivated for up to 12 months after deactivation.',
+        ),
+          n(
+            'i945795c',
+            'You can restore your Twitter account if it was accidentally or wrongfully deactivated for up to 30 days after deactivation.',
+          ),
+          n(
+            'c3216543',
+            'You can restore your Twitter account if it was accidentally or wrongfully deactivated for some time after deactivation.',
+          ),
+          n('ea989810', 'Deactivate account'),
+          n('f6e73faa', 'Deactivate'),
+          n('c3743327', 'This will deactivate your account'),
+          n('a20cd24d', 'What else you should know'),
+          n('g8fb7f85', 'Reactivation period'),
+          n('e93b0aef', 'Complete your deactivation request by entering the password associated with your account.'),
           n('b8971cfa', '30 days'),
           n('ce0f88f6', '12 months'),
           n('ae256744', 'Learn more'),
@@ -3434,6 +3448,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'h1d919eb',
             'Reactions, mentions, Retweets, and a whole lot more — when it comes from other verified people, you’ll find it here.',
           ),
+          n('ib4510fd', 'See new Notifications'),
           n('c380d684', 'Your report'),
           n('c7714935', 'We flagged these Tweets as sensitive content'),
           n('bfaadb2c', function (e) {
@@ -3443,7 +3458,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('ee4dca3c', 'cancel link'),
           n('bb347bbb', 'help center'),
           n('e0876919', 'You weren’t able to give access to the App. Go back and try logging in again.'),
-          n('ccaa527f', 'Your browser does not support security key authentication.'),
           n('fde0fad3', 'Search for more...'),
           n('cea71013', 'We’re loading your contacts...'),
           n('e4ff75a9', 'Something went wrong. Check your connection and try again.'),
@@ -3511,16 +3525,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('h4912b5e', 'Save search'),
           n('b9bc69ca', 'Delete saved search'),
           n('f9d35b98', 'You can only have 25 saved searches. Delete a search to save a new one.'),
-          n('ha925ad3', 'Something went wrong. Try saving your search again in a minute.'),
-          n('h0a9931b', 'Something went wrong. Try deleting your search again in a minute.'),
+          n('ha925ad3', 'Something went wrong. Try saving your search again in a minute.')
+        n('h0a9931b', 'Something went wrong. Try deleting your search again in a minute.'),
           n('d8496336', 'Twitter - Advanced search'),
           n('d3938be7', 'Words'),
           n('e0dded5d', 'Engagement'),
           n('a097f7ba', 'Dates'),
           n('c03f15ca', 'Any language'),
           n('c647aac8', 'To'),
-          n('ac6ce1cf', 'From')
-        n('cb334136', 'Links'),
+          n('ac6ce1cf', 'From'),
+          n('cb334136', 'Links'),
           n('e8f38622', 'Include Tweets with links'),
           n('ie23eef9', 'Only show Tweets with links'),
           n('ge10bfa1', 'Include replies and original Tweets'),
@@ -4996,9 +5010,39 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'c79f144b',
+                key: 'g1e704c3',
                 get: function () {
-                  return ['Check out ', ' to stay up to date.']
+                  return ['Trending with ']
+                },
+              },
+              {
+                key: 'i7bba09d',
+                get: function () {
+                  return ['Trending with ', ', ']
+                },
+              },
+              {
+                key: 'h0d6f2c5',
+                get: function () {
+                  return ['', '']
+                },
+              },
+              {
+                key: 'a492659f',
+                get: function () {
+                  return ['', '']
+                },
+              },
+              {
+                key: 'd2924acb',
+                get: function () {
+                  return ['', ' ']
+                },
+              },
+              {
+                key: 'b38e130b',
+                get: function () {
+                  return ['', ' ']
                 },
               },
               {
@@ -5055,153 +5099,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'e602f705',
                 get: function () {
                   return ['We will show ', ' your reaction to this Tweet']
-                },
-              },
-              {
-                key: 'if77e237',
-                get: function () {
-                  return ['You rated this note as ', '.']
-                },
-              },
-              {
-                key: 'c312ca7d',
-                get: function () {
-                  return ['You rated this note as ', '.']
-                },
-              },
-              {
-                key: 'j575fa79',
-                get: function () {
-                  return ['You ', ' with its conclusion.']
-                },
-              },
-              {
-                key: 'h61f9ad3',
-                get: function () {
-                  return ['You ', ' with its conclusion.']
-                },
-              },
-              {
-                key: 'd570f1d9',
-                get: function () {
-                  return ['You rated this note as ', ' and ', ' with its conclusion.']
-                },
-              },
-              {
-                key: 'c6cb9513',
-                get: function () {
-                  return ['You rated this note as ', ' and ', ' with its conclusion.']
-                },
-              },
-              {
-                key: 'fe957a43',
-                get: function () {
-                  return ['You rated this note as ', ' and ', ' with its conclusion.']
-                },
-              },
-              {
-                key: 'gbfec7fd',
-                get: function () {
-                  return ['You rated this note as ', ' and ', ' with its conclusion.']
-                },
-              },
-              {
-                key: 'had203a8',
-                get: function () {
-                  return ['You rated this note as ', '.']
-                },
-              },
-              {
-                key: 'h42a21df',
-                get: function () {
-                  return ['You rated this note as ', '.']
-                },
-              },
-              {
-                key: 'c3d1a1b0',
-                get: function () {
-                  return ['You rated this note as ', '.']
-                },
-              },
-              {
-                key: 'fdd69021',
-                get: function () {
-                  return ['Ideas or suggestions to improve Birdwatch? ']
-                },
-              },
-              {
-                key: 'g6ea1d54',
-                get: function () {
-                  return ['', ' ']
-                },
-              },
-              {
-                key: 'b93058db',
-                get: function () {
-                  return ['', ' ']
-                },
-              },
-              {
-                key: 'c6726126',
-                get: function () {
-                  return ['', ' ']
-                },
-              },
-              {
-                key: 'ec38eaf7',
-                get: function () {
-                  return [
-                    'Your use of the datasets is governed by the Twitter Developer Agreement and Policy. By clicking on the Download icon, you agree to the ',
-                    '.',
-                  ]
-                },
-              },
-              {
-                key: 'g19fcc5a',
-                get: function () {
-                  return ['File no. ' + this.props.fileIndex + ' of ' + this.props.totalFiles]
-                },
-              },
-              {
-                key: 'g812cfc3',
-                get: function () {
-                  return ['Data includes contributions up until ' + this.props.date]
-                },
-              },
-              {
-                key: 'd2924acb',
-                get: function () {
-                  return ['', ' ']
-                },
-              },
-              {
-                key: 'b38e130b',
-                get: function () {
-                  return ['', ' ']
-                },
-              },
-              {
-                key: 'g1e704c3',
-                get: function () {
-                  return ['Trending with ']
-                },
-              },
-              {
-                key: 'i7bba09d',
-                get: function () {
-                  return ['Trending with ', ', ']
-                },
-              },
-              {
-                key: 'h0d6f2c5',
-                get: function () {
-                  return ['', '']
-                },
-              },
-              {
-                key: 'a492659f',
-                get: function () {
-                  return ['', '']
                 },
               },
               {
@@ -5334,6 +5231,123 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'c4d3d078',
                 get: function () {
                   return ['By signing up, you agree to the ', ' and ', ', including ']
+                },
+              },
+              {
+                key: 'c79f144b',
+                get: function () {
+                  return ['Check out ', ' to stay up to date.']
+                },
+              },
+              {
+                key: 'if77e237',
+                get: function () {
+                  return ['You rated this note as ', '.']
+                },
+              },
+              {
+                key: 'c312ca7d',
+                get: function () {
+                  return ['You rated this note as ', '.']
+                },
+              },
+              {
+                key: 'j575fa79',
+                get: function () {
+                  return ['You ', ' with its conclusion.']
+                },
+              },
+              {
+                key: 'h61f9ad3',
+                get: function () {
+                  return ['You ', ' with its conclusion.']
+                },
+              },
+              {
+                key: 'd570f1d9',
+                get: function () {
+                  return ['You rated this note as ', ' and ', ' with its conclusion.']
+                },
+              },
+              {
+                key: 'c6cb9513',
+                get: function () {
+                  return ['You rated this note as ', ' and ', ' with its conclusion.']
+                },
+              },
+              {
+                key: 'fe957a43',
+                get: function () {
+                  return ['You rated this note as ', ' and ', ' with its conclusion.']
+                },
+              },
+              {
+                key: 'gbfec7fd',
+                get: function () {
+                  return ['You rated this note as ', ' and ', ' with its conclusion.']
+                },
+              },
+              {
+                key: 'had203a8',
+                get: function () {
+                  return ['You rated this note as ', '.']
+                },
+              },
+              {
+                key: 'h42a21df',
+                get: function () {
+                  return ['You rated this note as ', '.']
+                },
+              },
+              {
+                key: 'c3d1a1b0',
+                get: function () {
+                  return ['You rated this note as ', '.']
+                },
+              },
+              {
+                key: 'fdd69021',
+                get: function () {
+                  return ['Ideas or suggestions to improve Birdwatch? ']
+                },
+              },
+              {
+                key: 'g6ea1d54',
+                get: function () {
+                  return ['', ' ']
+                },
+              },
+              {
+                key: 'b93058db',
+                get: function () {
+                  return ['', ' ']
+                },
+              },
+              {
+                key: 'c6726126',
+                get: function () {
+                  return ['', ' ']
+                },
+              },
+              {
+                key: 'ec38eaf7',
+                get: function () {
+                  return [
+                    'Your use of the datasets is governed by the Twitter Developer Agreement and Policy. By clicking on the Download icon, you agree to the ',
+                    '.',
+                  ]
+                },
+              },
+              {
+                key: 'g19fcc5a',
+                get: function () {
+                  return ['File no. ' + this.props.fileIndex + ' of ' + this.props.totalFiles]
+                },
+              },
+              {
+                key: 'g812cfc3',
+                get: function () {
+                  return ['Data includes contributions up until ' + this.props.date]
                 },
               },
               {
