@@ -1669,21 +1669,40 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('fc2a5c92', 'Something went wrong'),
           n('jf4b6f7f', 'There was an issue uploading your ID. Please try uploading it again.'),
           n('abd587d1', 'Add another reference'),
+          n('i0bba81a', 'Add reference of employment'),
           n('a6a76e3c', 'Select notability method'),
           n('e5574f52', 'Account qualifications'),
+          n('ecd2abda', 'Confirm account eligibility'),
           n('cb70b893', 'Go back'),
           n('g8b511fe', 'Google Trends'),
           n('c7d50c96', 'A profile on Google Trends with evidence of recent search activity about you.'),
+          n('a68b43ed', 'Add Google Trends profile'),
+          n('b5e3039f', 'Google Trends profile'),
           n('h146703d', 'Wikipedia article'),
           n('ee38d0f0', 'A Wikipedia article that is about you and meets their notability standards for people.'),
+          n('cb97ee3e', 'Add Wikipedia article'),
           n('hc371f34', 'News coverage'),
           n(
             'b9d0ad9f',
             'At least three links from reputable news organizations that have covered or referenced you within the last six months.',
           ),
-          n('bebae559', 'Public stock exchange'),
-          n('h56476fe', 'A link providing evidence of substantial presence in a public stock exchange'),
+          n(
+            'h2b9a5fd',
+            'At least three articles about your company from qualifying news publications in the last six months.',
+          ),
+          n('feadd98c', 'Add verified news references'),
+          n('j7ae97a9', 'Verified news references'),
+          n('c368aa8d', 'At least three articles from verified news publications that reference you.'),
           n('b333754d', 'News reference'),
+          n('ded0edad', function (e) {
+            return 'Article #' + e.n
+          }),
+          n('bebae559', 'Public stock exchange'),
+          n('c557161f', 'A link providing evidence of substantial presence in a public stock exchange.'),
+          n('e2d42628', 'Add stock exchange reference'),
+          n('jc19b4e7', 'Stock exchange listing'),
+          n('fc3ee695', 'Leadership reference'),
+          n('i3e65eb4', 'The official site of a verified organization that references you in a leadership position.'),
           n('ibfc1a5a', 'You aren’t eligible for verification in this category.'),
           n('e1c78795', 'Official website'),
           n('je403ac5', 'Company, brand, or organization'),
@@ -1693,19 +1712,21 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('f7ff070c', 'News organization or journalist'),
           n('eb7de689', 'Professional sports or gaming entity'),
           n('cc4b66b5', 'Select a category'),
+          n('b37461a4', 'Select an account type'),
           n('c9971763', 'Official leadership website'),
           n('fdb89264', 'An official website of an advocacy organization that references you.'),
-          n('f0271d8a', 'Public presence'),
+          n('ff929feb', 'Prominent organization or affiliate'),
           n(
-            'j36a489b',
-            'Evidence of a substantial presence in public indices, like Google Trends, public stock exchanges, stable Wikipedia articles that meet the encyclopedia’s notability standards, or databases such as GlobalGiving.',
+            'jf537894',
+            'Prominent organizations, and secondary affiliated accounts, including companies, brands, and non-profit organizations.',
           ),
+          n('i3e6aaa5', 'Senior leader or executive'),
           n(
-            'c0397aa3',
-            'Provide a link to evidence of a substantial presence in public indices, like Google Trends, public stock exchanges, stable Wikipedia articles that meet the encyclopedia’s notability standards, or databases such as GlobalGiving.',
+            'bbcbb9e6',
+            'Leaders and other prominent executives of notable companies, brands, and non-profit organizations.',
           ),
-          n('b25cd814', 'Public presence URL'),
-          n('h0de7957', 'Account credibility'),
+          n('j0bc23f3', 'I have confirmed that my organization’s account is already verified.'),
+          n('jd014eba', 'The URL provided links to the specific page referencing applicant.'),
           n('ecb8b9da', 'Entertainment account type'),
           n('aa6228de', 'Entertainment company'),
           n(
@@ -1733,7 +1754,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('bfbdcb0c', 'IMDB'),
           n('b25d3695', 'Link to your IMDB page. The page needs to include at least fifty production credits.'),
           n('gcf4c567', 'An official government, or government-affiliated, website that references you.'),
-          n('b37461a4', 'Select an account type'),
           n('a05b8445', 'Freelance journalist'),
           n('hdad12b1', 'Independent, freelance journalists with notable work in verified publications.'),
           n('a18c6dfb', 'Journalist'),
@@ -1747,7 +1767,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('b107ee5b', 'News organizations must have a public account that links to their official website.'),
           n('e95c44dd', 'Yes, it’s complete'),
           n('fa5e15e1', 'I need to update'),
-          n('ecd2abda', 'Confirm account eligibility'),
           n('e8746826', 'I have confirmed that my employer’s account is already verified.'),
           n('jc09b420', 'Does your profile meet the criteria for a journalist?'),
           n(
@@ -1764,24 +1783,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'ab4eae60',
             'At least three bylines or credits in qualifying publications published within the last six months.',
           ),
-          n('i0bba81a', 'Add reference of employment'),
           n('b3fac982', 'The URL provided links to the specific page referencing me.'),
           n('e26dc9e2', 'Add notable work'),
-          n('ded0edad', function (e) {
-            return 'Article #' + e.n
-          }),
           n('e164df2d', 'Do the articles provided meet the notability criteria?'),
           n(
             'i80ff05e',
             'Only articles published by verified news organizations and publications qualify as evidence of notability.',
           ),
           n('cf7482eb', 'Yes, they do'),
-          n('a68b43ed', 'Add Google Trends profile'),
-          n('b5e3039f', 'Google Trends profile'),
-          n('cb97ee3e', 'Add Wikipedia article'),
-          n('e2d42628', 'Add stock exchange reference'),
-          n('jc19b4e7', 'Stock exchange listing'),
-          n('ie5bccb8', 'Add verified news reference'),
           n('ca90f66e', 'Official sports or esports site'),
           n(
             'j86a8388',
@@ -1790,14 +1799,21 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('j3da4de9', 'You can’t request verification right now'),
           n('j2c21ab7', 'Learn more'),
           n('e492eeb4', 'Learn more'),
+          n('ece0b9bc', 'Learn more'),
           n('cadec49b', 'Learn more'),
           n('hb96cb36', 'Learn more'),
           n('f593e8a7', 'Learn more'),
           n('c3daf2fb', 'Learn more'),
           n('jc282ad8', 'Learn more'),
-          n('d66aa5fe', 'Learn more'),
-          n('daa095b7', 'Learn more'),
-          n('i8c9ec66', 'Learn more'),
+          n('e8e39f94', 'Learn more'),
+          n('e126dd3e', 'Learn more'),
+          n('gbdf1325', 'Learn more'),
+          n('b0abbb16', 'Learn more'),
+          n('g4e815f3', 'Learn more'),
+          n('i560665d', 'Learn more'),
+          n('eb8eeaf0', 'Learn more'),
+          n('h486f753', 'Learn more'),
+          n('a77ed149', 'Learn more'),
           n('b3de162c', 'Learn more'),
           n('j4d2c2fd', 'Learn more'),
           n('iee38816', 'Learn more'),
@@ -1807,7 +1823,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('h8e242fe', 'Learn more'),
           n('f7fb77b2', 'Learn more'),
           n('ed8c22d7', 'Learn more'),
-          n('ece0b9bc', 'Learn more'),
           n('h04c272b', 'Learn more'),
           n('j331c658', 'Learn more'),
           n('h02fe64e', 'Learn more'),
@@ -1837,6 +1852,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('cb7c2e2e', 'A photo of your government issued ID.'),
           n('g253cddf', 'An official email with a domain relevant to the category you chose.'),
           n('ca5fb0d4', 'An official website that directly references your Twitter account.'),
+          n('g40cd2c0', 'Verified reference'),
           n('a7f1cff6', 'Add official website reference'),
           n(
             'ce40e7a5',
@@ -1853,7 +1869,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'ibd16281',
             'Provide a link to the official website of a qualifying news organization or publication that references you and your Twitter account.',
           ),
-          n('e941aa7a', 'Entertainment Company'),
+          n(
+            'd5254e1b',
+            'Provide a link that references your account as the official Twitter account for your organization. The reference must come from the official website of a verified entity.',
+          ),
           n(
             'h45b00d7',
             'Select a method to show that your account is authentic and managed by the entertainment company related to this request.',
@@ -1862,7 +1881,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'b78565a9',
             'The official website of a qualifying entertainment company that references your Twitter account.',
           ),
-          n('fa0c8ee4', 'Content Creator'),
           n(
             'h769feff',
             'Select a method to show that your account is authentic and managed by the content creator related to this request.',
@@ -1871,12 +1889,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'bd9d7f96',
             'The official website of a qualifying organization that references you and your Twitter account.',
           ),
-          n('d1944c1d', 'Individual in Entertainment'),
           n(
             'ic29fd45',
             'Select a method to show that your account is authentic and managed by the individual in entertainment related to this request.',
           ),
-          n('hd93e8b0', 'Production Organization'),
           n(
             'g32c2900',
             'Select a method to show that your account is authentic and managed by the production organization related to this request.',
@@ -1885,13 +1901,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'fae201f0',
             'The official website of a qualifying production organization that references your Twitter account.',
           ),
-          n('dbe279a2', 'Government Official or Affiliate'),
           n(
             'g23e3f96',
             'Select a method to show that your account is authentic and managed by the government official or affiliate related to this request.',
           ),
           n('fb89c256', 'An official email address with the domain of a qualifying government organization.'),
-          n('e6249700', 'Activist or Influential Individual'),
           n(
             'b66ac2a7',
             'Select a method to show that your account is authentic and managed by the activist or influential individual related to this request.',
@@ -1900,12 +1914,27 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'h52f5781',
             'The official website of an advocacy organization that references you and your Twitter account.',
           ),
-          n('ba19e29e', 'Company, Brand, or Non-Profit'),
           n(
             'baf718c3',
             'Select a method to show that your account is authentic and managed by the company, brand, or organization related to this request.',
           ),
+          n(
+            'c65bbbc1',
+            'Select a method to show that your account is authentic and managed by the senior leader or executive related to this request.',
+          ),
           n('i31e3606', 'An official email address with the domain of a qualifying company, brand, or organization.'),
+          n(
+            'd85ef4a7',
+            'A reference to you and your Twitter account on the official website of a qualifying organization.',
+          ),
+          n(
+            'ddb19f72',
+            'Provide a link that references your account as the official Twitter account for your company. The reference must come from the official website of a verified entity.',
+          ),
+          n(
+            'a8d332f2',
+            'Provide a link that references you as a senior leader at your organization and your Twitter account. The reference must come from the official website of a verified entity.',
+          ),
           n(
             'f7afbaeb',
             'Select a method to show that your account is authentic and managed by a journalist for a qualifying news organization or publication.',
@@ -1919,18 +1948,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'e23b92c5',
             'An official website of a news organization or publication that references your Twitter account.',
           ),
-          n('fd4e7bb0', 'Freelancer'),
-          n('b9e1d79e', 'News Organization'),
           n(
             'b03ae068',
             'Select a method to show that your account is authentic and managed by the news organization or publication related to this request.',
           ),
-          n('c036c936', 'Sports & Gaming'),
           n(
             'edaeef9d',
             'Select a method to show that your account is authentic and managed by the sports or gaming entity related to this verification request.',
           ),
-          n('e3fda455', '@twitter-handle'),
+          n('a6278dcb', 'Twitter handle'),
           n('ec6801cb', 'Your request has been sent!'),
           n('i6ef95ec', 'survey'),
           n(
@@ -2296,8 +2322,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'When you block someone, that person won’t be able to follow or message you, and you won’t see notifications from them.',
           ),
           n('f587e41e', 'You aren’t blocking anyone'),
-          n('ef731b13', 'Loading blocked accounts'),
-          n('e554ba82', 'Learn more'),
+          n('ef731b13', 'Loading blocked accounts')
+        function r(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var n = t[o]
+            ;(n.enumerable = n.enumerable || !1),
+              (n.configurable = !0),
+              'value' in n && (n.writable = !0),
+              Object.defineProperty(e, n.key, n)
+          }
+        }
+        function i(e, t) {
+          return (i =
+            Object.setPrototypeOf ||
+            function (e, t) {
+              return (e.__proto__ = t), e
+            })(e, t)
+        }
+        n('e554ba82', 'Learn more'),
           n('ae3e9c81', function (e) {
             return 'Remove @' + e.screenName + ' from Autoblocked accounts list?'
           }),
@@ -2309,27 +2351,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n(
             'ic2937a1',
             'You’re about to start the process of deactivating your Twitter account. Your display name, @username, and public profile will no longer be viewable on Twitter.com, Twitter for iOS, or Twitter for Android.',
-          )
-        function i(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var n = t[o]
-            ;(n.enumerable = n.enumerable || !1),
-              (n.configurable = !0),
-              'value' in n && (n.writable = !0),
-              Object.defineProperty(e, n.key, n)
-          }
-        }
-        function r(e, t) {
-          return (r =
-            Object.setPrototypeOf ||
-            function (e, t) {
-              return (e.__proto__ = t), e
-            })(e, t)
-        }
-        n(
-          'd86e6d9a',
-          'You can restore your Twitter account if it was accidentally or wrongfully deactivated for up to 12 months after deactivation.',
-        ),
+          ),
+          n(
+            'd86e6d9a',
+            'You can restore your Twitter account if it was accidentally or wrongfully deactivated for up to 12 months after deactivation.',
+          ),
           n(
             'i945795c',
             'You can restore your Twitter account if it was accidentally or wrongfully deactivated for up to 30 days after deactivation.',
@@ -3513,8 +3539,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('bb967f9e', 'Videos'),
           n('gfcfbf8b', 'Your search was saved.'),
           n('a4645d91', 'Your saved search was deleted.'),
-          n('j622effd', 'Advanced search'),
-          n('i5045e73', 'Anywhere'),
+          n('j622effd', 'Advanced search')
+        n('i5045e73', 'Anywhere'),
           n('h2388753', 'Near you'),
           n('a8399d5b', function (e) {
             return 'See Tweets about ' + e.query + ' on Twitter. See what people are saying and join the conversation.'
@@ -3525,8 +3551,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('h4912b5e', 'Save search'),
           n('b9bc69ca', 'Delete saved search'),
           n('f9d35b98', 'You can only have 25 saved searches. Delete a search to save a new one.'),
-          n('ha925ad3', 'Something went wrong. Try saving your search again in a minute.')
-        n('h0a9931b', 'Something went wrong. Try deleting your search again in a minute.'),
+          n('ha925ad3', 'Something went wrong. Try saving your search again in a minute.'),
+          n('h0a9931b', 'Something went wrong. Try deleting your search again in a minute.'),
           n('d8496336', 'Twitter - Advanced search'),
           n('d3938be7', 'Words'),
           n('e0dded5d', 'Engagement'),
@@ -4262,6 +4288,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('ec72e2f8', 'Follow'),
           n('c3befdbd', 'Following'),
           n('d3029dbc', 'Unfollow'),
+          n('fb8c0efc', 'Super Following'),
+          n('a7667261', 'Manage subscription'),
           n('jd50570f', 'Autoblocked'),
           n('cd352c22', 'Remove from autoblock'),
           n('hfc90ee9', function (e) {
@@ -4559,7 +4587,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             (o = e),
             ((t = h).prototype = Object.create(o.prototype)),
             (t.prototype.constructor = t),
-            r(t, o),
+            i(t, o),
             (h.prototype.render = function () {
               return s.createElement.apply(s, this[this.props.$i18n].reduce(this.templateReducer, [s.Fragment, null]))
             }),
@@ -5411,6 +5439,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
+                key: 'd454b49e',
+                get: function () {
+                  return ['Pick the option that best describes your account. ']
+                },
+              },
+              {
                 key: 'jef85ba1',
                 get: function () {
                   return [
@@ -5451,26 +5485,74 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'i29482cc',
+                key: 'f774e39d',
                 get: function () {
                   return [
-                    'Pick one method to show that your account qualifies for verification as a company, brand, or organization. ',
+                    'Pick a method to show that your account qualifies for verification as a prominent company, brand, or organization. ',
                   ]
                 },
               },
               {
-                key: 'f6c1888f',
+                key: 'd8510869',
                 get: function () {
                   return [
-                    'Provide a link to evidence of a substantial presence in public indices, like Google Trends, public stock exchanges, stable Wikipedia articles that meet the encyclopedia’s notability standards, or databases such as GlobalGiving. ',
+                    'Provide a link to a Google Trends profile with evidence of recent search activity about your company, brand, or organization. ',
                   ]
                 },
               },
               {
-                key: 'c231f5dd',
+                key: 'h75e3640',
                 get: function () {
                   return [
-                    'You’ll also need to provide at least three links from reputable news organizations that have covered or referenced you or you Twitter account within the last 6 months. ',
+                    'Provide a link to a Wikipedia page about your company, brand, or organization that contains at least three external references. ',
+                  ]
+                },
+              },
+              {
+                key: 'de6d69a1',
+                get: function () {
+                  return [
+                    'Provide a link showing evidence of that your company, brand, or organization is listed on a public stock exchange. ',
+                  ]
+                },
+              },
+              {
+                key: 'be0e8fda',
+                get: function () {
+                  return [
+                    'Provide links to at least three articles about your company in verified news publications in the last six months. ',
+                  ]
+                },
+              },
+              {
+                key: 'baed7213',
+                get: function () {
+                  return [
+                    'You must hold a senior leadership position at a verified organization to be eligible for verification in this category. Add your organization’s account to confirm eligibility. ',
+                  ]
+                },
+              },
+              {
+                key: 'c5d688ce',
+                get: function () {
+                  return [
+                    'Pick a method to show that your account qualifies for verification as a senior leader of a prominent organization. ',
+                  ]
+                },
+              },
+              {
+                key: 'fce3e22d',
+                get: function () {
+                  return [
+                    'Provide links to least three articles published by verified news organizations within the last six months that reference you as a senior leader or executive at your organization. ',
+                  ]
+                },
+              },
+              {
+                key: 'f1b276f0',
+                get: function () {
+                  return [
+                    'Provide a link that references you as a senior leader at your organization. The reference must come from the official site of a verified company, brand, or organization. ',
                   ]
                 },
               },
@@ -5540,12 +5622,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                   return [
                     'Provide a link to an official government, or government-affiliated, website that references you or your Twitter account. ',
                   ]
-                },
-              },
-              {
-                key: 'd454b49e',
-                get: function () {
-                  return ['Pick the option that best describes your account. ']
                 },
               },
               {
@@ -6512,8 +6588,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                   }
                 },
               },
-            ]) && i(n.prototype, f),
-            l && i(n, l),
+            ]) && r(n.prototype, f),
+            l && r(n, l),
             h
           )
         })(o('3XMw')._ActualI18NFormatMessage || s.Component)
