@@ -23,19 +23,19 @@
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/vendors~main.6254e375.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/vendors~main.b841eb35.js"
     nonce="WIPED"
   /><link
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.531aefa5.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.6ad1f325.js"
     nonce="WIPED"
   /><link
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/main.8e8eff05.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/main.796f3745.js"
     nonce="WIPED"
   /><meta property="fb:app_id" content="2231777543" />
   <meta property="og:site_name" content="Twitter" /><meta
@@ -498,15 +498,6 @@
     <script type="text/javascript" charset="utf-8" nonce="WIPED">
       window.__INITIAL_STATE__ = {
         optimist: [],
-        urt: {},
-        toasts: [],
-        entities: {
-          communities: { entities: {}, errors: {}, fetchStatus: {} },
-          users: { entities: {}, errors: {}, fetchStatus: {} },
-          tweets: { entities: {}, errors: {}, fetchStatus: {} },
-          cards: { entities: {}, errors: {}, fetchStatus: {} },
-          userPresence: { entities: {}, errors: {}, fetchStatus: {} },
-        },
         featureSwitch: {
           debug: {},
           defaultConfig: {
@@ -823,7 +814,7 @@
             media_minimal_image_crop_with_max_height_enabled: { value: false },
             moment_annotations_enabled: { value: true },
             network_layer_503_backoff_mode: { value: 'host' },
-            responsive_web_account_search_readability_enabled: { value: false },
+            responsive_web_account_search_readability_enabled: { value: true },
             responsive_web_add_impression_id_to_mute_engagement_enabled: { value: true },
             responsive_web_alt_svc: { value: false },
             responsive_web_alt_text_badge_enabled: { value: false },
@@ -1025,7 +1016,6 @@
             responsive_web_zipkin_api_requests_paths_allowlist: { value: ['/2/timeline/home.json'] },
             rito_safety_mode_blocked_profile_enabled: { value: false },
             rito_safety_mode_features_enabled: { value: false },
-            rito_smart_block_list_enabled: { value: false },
             scribe_api_error_sample_size: { value: 0 },
             scribe_api_sample_size: { value: 100 },
             scribe_cdn_host_list: {
@@ -1097,6 +1087,8 @@
                 'share_tweet_via',
               ],
             },
+            tweet_with_visibility_results_prefer_gql_soft_interventions_enabled: { value: false },
+            tweet_with_visibility_results_prefer_gql_tombstones_enabled: { value: false },
             unified_cards_cta_color_blue_cta: { value: true },
             unified_cards_multi_destination_carousels_convert_to_single_card: { value: false },
             user_display_name_max_limit: { value: 50 },
@@ -1559,7 +1551,7 @@
               responsive_web_live_video_parity_periscope_auth_enabled: { value: false },
               responsive_web_logged_out_gating_aggressive_segments: { value: [] },
               responsive_web_logged_out_gating_less_aggressive_segments: { value: [] },
-              responsive_web_logged_out_gating_non_impressing_member_segments: { value: ['middle', 'high'] },
+              responsive_web_logged_out_gating_non_impressing_member_segments: { value: [] },
               responsive_web_login_input_type_email_enabled: { value: false },
               responsive_web_login_signup_sheet_app_install_cta_enabled: { value: true },
               responsive_web_media_upload_limit_2g: { value: 250 },
@@ -1640,7 +1632,6 @@
               responsive_web_zipkin_api_requests_paths_allowlist: { value: ['/2/timeline/home.json'] },
               rito_safety_mode_blocked_profile_enabled: { value: false },
               rito_safety_mode_features_enabled: { value: false },
-              rito_smart_block_list_enabled: { value: false },
               scribe_api_error_sample_size: { value: 0 },
               scribe_api_sample_size: { value: 100 },
               scribe_cdn_host_list: {
@@ -1712,6 +1703,8 @@
                   'share_tweet_via',
                 ],
               },
+              tweet_with_visibility_results_prefer_gql_soft_interventions_enabled: { value: false },
+              tweet_with_visibility_results_prefer_gql_tombstones_enabled: { value: false },
               unified_cards_cta_color_blue_cta: { value: true },
               unified_cards_multi_destination_carousels_convert_to_single_card: { value: false },
               user_display_name_max_limit: { value: 50 },
@@ -1740,6 +1733,15 @@
             keysRead: {},
             settingsVersion: 'WIPED',
           },
+        },
+        urt: {},
+        toasts: [],
+        entities: {
+          communities: { entities: {}, errors: {}, fetchStatus: {} },
+          users: { entities: {}, errors: {}, fetchStatus: {} },
+          tweets: { entities: {}, errors: {}, fetchStatus: {} },
+          cards: { entities: {}, errors: {}, fetchStatus: {} },
+          userPresence: { entities: {}, errors: {}, fetchStatus: {} },
         },
         educationFlags: {},
         session: {
@@ -1801,11 +1803,11 @@
       }
       window.__META_DATA__ = {
         env: 'prod',
+        sha: '99c09edd256e5db790c81d9438a92c055066f570',
         isLoggedIn: false,
         hasMultiAccountCookie: false,
         uaParserTags: ['m2', 'rweb_unsupported', 'msw'],
         serverDate: 42,
-        sha: '18860332d2c2c8e7ecbd5115b302c5da10f7dc8c',
       }
     </script>
     <script id="nonce-csp" nonce="WIPED"></script>
@@ -1813,10 +1815,10 @@
       window.__SCRIPTS_LOADED__ = {}
       !(function (e) {
         function d(d) {
-          for (var o, r, t = d[0], l = d[1], c = d[2], s = 0, b = []; s < t.length; s++)
-            (r = t[s]), Object.prototype.hasOwnProperty.call(a, r) && a[r] && b.push(a[r][0]), (a[r] = 0)
+          for (var o, r, t = d[0], l = d[1], c = d[2], b = 0, s = []; b < t.length; b++)
+            (r = t[b]), Object.prototype.hasOwnProperty.call(a, r) && a[r] && s.push(a[r][0]), (a[r] = 0)
           for (o in l) Object.prototype.hasOwnProperty.call(l, o) && (e[o] = l[o])
-          for (u && u(d); b.length; ) b.shift()()
+          for (u && u(d); s.length; ) s.shift()()
           return i.push.apply(i, c || []), n()
         }
         function n() {
@@ -2106,10 +2108,10 @@
                     }[e] || e) +
                     '.' +
                     {
-                      0: 'ac20836',
+                      0: '2d5d79a',
                       3: '7302181',
                       4: '22fc60e',
-                      5: '196536d',
+                      5: 'c8195f1',
                       6: '34fe245',
                       7: 'c730c82',
                       8: 'e205b26',
@@ -2127,12 +2129,12 @@
                       20: 'a5418f7',
                       21: '1fa87fa',
                       22: '9ba6d97',
-                      23: '1164cac',
+                      23: '55283b6',
                       24: '87d9448',
                       25: 'a317682',
                       26: 'fff671c',
                       27: 'd3fbb17',
-                      28: '8f0df09',
+                      28: '8becf0c',
                       29: '7761e58',
                       30: '79f3ccc',
                       31: '3ab3546',
@@ -2144,8 +2146,8 @@
                       37: '96da44a',
                       38: 'e45e642',
                       39: '1bfdfec',
-                      40: 'ee8f1f9',
-                      41: '54ac111',
+                      40: '060a894',
+                      41: 'd83d0fb',
                       42: '088f91a',
                       43: '622f2a0',
                       44: '1aa6f67',
@@ -2162,26 +2164,26 @@
                       55: 'c16b49f',
                       56: 'd2e017b',
                       57: 'b91a9a1',
-                      58: '9fb9c8e',
-                      59: 'fae25e1',
+                      58: 'ce0c740',
+                      59: '1055611',
                       60: 'c00af69',
                       61: 'e00d461',
-                      62: 'a6d1dd6',
+                      62: 'cacbbb2',
                       63: '40f2c5e',
                       64: 'de84383',
-                      65: '18de3c2',
+                      65: '7d0a954',
                       66: '9922bf0',
                       67: 'dca46a5',
                       68: 'd37d961',
-                      69: '37fc3e7',
+                      69: 'a85b617',
                       70: '904b0d9',
-                      71: 'ca99195',
+                      71: 'e2834f3',
                       72: '7ee98b5',
-                      73: '35c9cfe',
+                      73: '4dc8d05',
                       74: '062247f',
                       75: 'f5d213f',
-                      76: 'cb2b8e6',
-                      77: '08237be',
+                      76: '0d4d15c',
+                      77: '9d41fb9',
                       78: 'c3e222e',
                       79: '2aa5f6e',
                       80: '0d1de66',
@@ -2191,7 +2193,7 @@
                       84: '7dfaa8b',
                       85: '3f40ba4',
                       86: '4d0c657',
-                      87: '80a3513',
+                      87: '3cdcfef',
                       88: 'a246427',
                       89: '5aa2b00',
                       90: '0a35544',
@@ -2199,10 +2201,10 @@
                       92: '1554cc6',
                       93: '6d668c7',
                       94: '0c81087',
-                      95: '74383ae',
-                      96: '75752ac',
+                      95: 'f12d94e',
+                      96: 'f62f9c1',
                       97: '77688cd',
-                      98: '5b7a0d3',
+                      98: '5faca08',
                       99: '03d1e61',
                       150: '6cae89a',
                       151: '0e19852',
@@ -2217,7 +2219,7 @@
                       160: 'b3e6ded',
                       161: '1ef1c1b',
                       162: '2ee45b2',
-                      163: '9860dda',
+                      163: '56f2d0d',
                       164: '8135e86',
                       165: 'b7d19f6',
                       166: '1433a7d',
@@ -2242,7 +2244,7 @@
                       186: '4afbf39',
                       187: '81a1bb8',
                       188: '96344bf',
-                      189: '5df0f9f',
+                      189: '994133e',
                       190: '565611c',
                       191: 'c85dbca',
                       192: 'ab6f1a1',
@@ -2252,8 +2254,8 @@
                       196: '1380114',
                       197: '36f9188',
                       198: '734c992',
-                      199: 'df4fbf5',
-                      200: '699f28d',
+                      199: '6896ce0',
+                      200: 'c9b2d9e',
                       201: '001f714',
                       202: 'c725412',
                       203: '5933309',
@@ -2448,21 +2450,21 @@
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/vendors~main.6254e375.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/vendors~main.b841eb35.js"
     ></script>
     <script
       type="text/javascript"
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.531aefa5.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.6ad1f325.js"
     ></script>
     <script
       type="text/javascript"
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/main.8e8eff05.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/main.796f3745.js"
     ></script>
     <script nonce="WIPED">
       ;(function () {
