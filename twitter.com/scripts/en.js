@@ -884,7 +884,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('g11ebd34', 'More suggestions'),
           n('g4a69019', 'Browse'),
           n('b1abb17d', 'Browse Tweets'),
-          n('g2de6d7a', 'Preview Topic'),
           n('e71f32d0', 'Recommended for you'),
           n('e5d2277e', function (e) {
             return 'Follow ' + e.topicName + ' Topic for more top Tweets, or select x to remove this recommendation.'
@@ -1185,9 +1184,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('d484fca9', 'The Tweet exceeds the number of allowed attachment types.'),
           n('c51ba396', 'Oops! A URL in your Tweet appears to link to a page that has spammy or unsafe content.'),
           n('ef2fa90b', 'The text of your Tweet exceeds the maximum allowed limit.'),
-          n('e25a0c3a', 'Promoted Tweet')
-        n('de128a2f', 'Turn on Tweet notifications'),
-          n('aa6f3ca4', 'Turn off Tweet notifications'),
+          n('e25a0c3a', 'Promoted Tweet'),
+          n('de128a2f', 'Turn on Tweet notifications')
+        n('aa6f3ca4', 'Turn off Tweet notifications'),
           n('j87c21f4', 'Notify'),
           n('iebc30ca', 'Turn off notifications'),
           n(
@@ -1517,6 +1516,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return e.formattedCount + ' member' + a(e.count, '', 's')
           }),
           n('ad10c66d', 'You hid this Tweet'),
+          n('c6caed9c', 'You kept this Tweet'),
           n('b8f0483e', 'Compose new Tweet'),
           n('a133d13e', 'Unsent Tweets'),
           n('ed33a3b6', 'Hello, wordsmiths.'),
@@ -3587,6 +3587,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('dec3293c', 'Example: 280 · Tweets with at least 280 Likes'),
           n('i6e5440d', 'Minimum Retweets'),
           n('b6dc8434', 'Example: 280 · Tweets with at least 280 Retweets'),
+          n('ge046208', 'Manage subscription'),
+          n('c451b37b', 'Subscription cancellation'),
+          n('df823d51', 'To cancel or manage your subscription, go to your Apple App Store account on an iOS device.'),
+          n('b942f94b', 'Already canceled your subscription?'),
+          n(
+            'adc2c349',
+            'If you have already canceled your subscription, your benefits will automatically expire at the end of the billing cycle.',
+          ),
           n('g931a6e4', function (e) {
             return 'You’re following ' + e.topic
           }),
@@ -3779,6 +3787,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'List memberships for @' + e.screenName
           }),
           n('e24ba7e8', 'You haven’t created any Lists yet.'),
+          n('c0fa683c', 'When you do, you’ll be able to add someone to a List.'),
           n('he062e8a', 'Pick a List'),
           n('c2fb1e94', 'Only 5,000 accounts can be added to a List.'),
           n('f30edc68', 'Make private'),
@@ -5388,6 +5397,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'je0779b7',
                 get: function () {
                   return ['Reported by ']
+                },
+              },
+              {
+                key: 'dfd5760a',
+                get: function () {
+                  return ['You hid @', '’s Tweet']
+                },
+              },
+              {
+                key: 'a6d33440',
+                get: function () {
+                  return ['You kept @', '’s Tweet']
                 },
               },
               {
