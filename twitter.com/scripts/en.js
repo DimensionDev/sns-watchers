@@ -472,7 +472,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('c32a3d02', function (e) {
             return '@' + e.screenName + ' is no longer following you'
           }),
-          n('a30b63da', 'Something went wrong. Try removing the follower again in a minute.'),
           n('hef5960b', 'Share profile via...'),
           n('ibd0b841', 'Copy link to profile'),
           n('c645618c', 'View Moments'),
@@ -519,6 +518,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Unblock @' + e.screenName
           }),
           n('h7f25e2b', 'They will be able to follow you and view your Tweets.'),
+          n('a30b63da', 'Something went wrong. Try removing the follower again in a minute.'),
           n('a2f8105f', 'Messages'),
           n('e839db39', 'Dismiss'),
           n('c64c1883', 'Compose new Message'),
@@ -1088,6 +1088,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('bf4e9d79', 'Upload caption file (.srt)'),
           n('de4669e2', 'Add a comment'),
           n('f7364fa1', 'Ask a question...'),
+          n('g46f363d', 'Check the Community rules before joining the conversation'),
           n('i8ea6d4e', 'Everyone can reply'),
           n('ec5a4a25', 'People you follow can reply'),
           n('b4543009', 'Only people you mention can reply'),
@@ -1184,9 +1185,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('d484fca9', 'The Tweet exceeds the number of allowed attachment types.'),
           n('c51ba396', 'Oops! A URL in your Tweet appears to link to a page that has spammy or unsafe content.'),
           n('ef2fa90b', 'The text of your Tweet exceeds the maximum allowed limit.'),
-          n('e25a0c3a', 'Promoted Tweet'),
-          n('de128a2f', 'Turn on Tweet notifications')
-        n('aa6f3ca4', 'Turn off Tweet notifications'),
+          n('e25a0c3a', 'Promoted Tweet')
+        n('de128a2f', 'Turn on Tweet notifications'),
+          n('aa6f3ca4', 'Turn off Tweet notifications'),
           n('j87c21f4', 'Notify'),
           n('iebc30ca', 'Turn off notifications'),
           n(
@@ -2321,8 +2322,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'b90c89c3',
             'When you block someone, that person won’t be able to follow or message you, and you won’t see notifications from them.',
           ),
-          n('f587e41e', 'You aren’t blocking anyone'),
-          n('ef731b13', 'Loading blocked accounts')
+          n('f587e41e', 'You aren’t blocking anyone')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var n = t[o]
@@ -2339,7 +2339,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        n('e554ba82', 'Learn more'),
+        n('ef731b13', 'Loading blocked accounts'),
+          n('e554ba82', 'Learn more'),
           n('ae3e9c81', function (e) {
             return 'Remove @' + e.screenName + ' from Autoblocked accounts list?'
           }),
@@ -3538,9 +3539,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('ac4fb0f3', 'Photos'),
           n('bb967f9e', 'Videos'),
           n('gfcfbf8b', 'Your search was saved.'),
-          n('a4645d91', 'Your saved search was deleted.'),
-          n('j622effd', 'Advanced search')
-        n('i5045e73', 'Anywhere'),
+          n('a4645d91', 'Your saved search was deleted.')
+        n('j622effd', 'Advanced search'),
+          n('i5045e73', 'Anywhere'),
           n('h2388753', 'Near you'),
           n('a8399d5b', function (e) {
             return 'See Tweets about ' + e.query + ' on Twitter. See what people are saying and join the conversation.'
