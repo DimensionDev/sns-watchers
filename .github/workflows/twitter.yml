@@ -46,7 +46,7 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: ':chore: twitter get updated'
+          commit-message: ':chore: twitter got updated'
           committer: Maskbook maintainer bot <bot@mask.io>
           author: Maskbook maintainer bot <bot@mask.io>
           branch: twitter-snapshot

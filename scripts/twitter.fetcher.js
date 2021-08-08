@@ -26,6 +26,7 @@ function wipeDynamic(code) {
     .replace(/("featureSetToken"):('|")(.*?)\2/, `$1:'${HOLDER}'`)
     .replace(/("impression_pointers"):{.*?}/, '$1:{}')
     .replace(/("impressions"):{"\w+":.*?}}/, '$1:{}')
+    .replace(/("responsive_web_\w+"):{.*?}/g, `$1:{value:'${HOLDER}'}`)
 }
 /**
  * wrap a wipeDynamic() as a preprocesser inside
