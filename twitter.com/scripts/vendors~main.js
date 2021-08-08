@@ -17066,6 +17066,12 @@ object-assign
                       })
                     },
                   },
+                  {
+                    key: 'getListeners',
+                    value: function () {
+                      return this._listeners
+                    },
+                  },
                 ]),
                 e
               )
@@ -25036,6 +25042,9 @@ object-assign
             return z
           }),
           n.d(t, 'i', function () {
+            return F
+          }),
+          n.d(t, 'j', function () {
             return D
           })
         var o = n('ERkP'),
@@ -25338,7 +25347,11 @@ object-assign
         function I() {
           return N(m).location
         }
-        function z(e) {
+        function z() {
+          var e = N(m).match
+          return e ? e.params : {}
+        }
+        function F(e) {
           var t = I(),
             n = N(m).match
           return e ? T(t.pathname, e) : n
