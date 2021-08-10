@@ -473,16 +473,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return '@' + e.screenName + ' is no longer following you'
           }),
           n('hef5960b', 'Share profile via...'),
-          n('ibd0b841', 'Copy link to profile'),
-          n('c645618c', 'View Moments'),
-          n('b9c26480', 'View Topics'),
-          n('b2e20eab', 'Turn on Retweets'),
-          n('b62e432d', 'Turn off Retweets'),
-          n('h5ef9bc8', 'View Lists'),
-          n('d17ebe1b', 'Remove from autoblock'),
-          n('d78131b8', function (e) {
-            return 'Add/remove @' + e.screenName + ' from Lists'
-          }),
           n('hb568af3', 'Mute'),
           n('bb1cbeb5', 'Unmute'),
           n('h2f62205', 'Muting user'),
@@ -493,6 +483,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           n('h129c3c3', function (e) {
             return '@' + e.screenName + ' has been unmuted.'
+          }),
+          n('ibd0b841', 'Copy link to profile'),
+          n('c645618c', 'View Moments'),
+          n('b9c26480', 'View Topics'),
+          n('b2e20eab', 'Turn on Retweets'),
+          n('b62e432d', 'Turn off Retweets'),
+          n('h5ef9bc8', 'View Lists'),
+          n('d17ebe1b', 'Remove from autoblock'),
+          n('d78131b8', function (e) {
+            return 'Add/remove @' + e.screenName + ' from Lists'
           }),
           n('b3036480', 'Remove this follower'),
           n('h2f91a90', function (e) {
@@ -984,6 +984,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           n('h3ab37c7', 'Contribute to Birdwatch'),
           n('bae0cbcf', 'Change who can reply'),
+          n('f8393bda', 'Only Super Followers can reply'),
           n('ae0c5fbe', 'Error changing who can reply'),
           n('g6185a9e', 'Who can reply?'),
           n('g2d04222', 'Choose who can reply to this Tweet. Anyone mentioned can always reply.'),
@@ -1184,9 +1185,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('g30d7ec5', 'The text of your Tweet contains a hashtag that is longer than allowed.'),
           n('d484fca9', 'The Tweet exceeds the number of allowed attachment types.'),
           n('c51ba396', 'Oops! A URL in your Tweet appears to link to a page that has spammy or unsafe content.'),
-          n('ef2fa90b', 'The text of your Tweet exceeds the maximum allowed limit.'),
-          n('e25a0c3a', 'Promoted Tweet')
-        n('de128a2f', 'Turn on Tweet notifications'),
+          n('ef2fa90b', 'The text of your Tweet exceeds the maximum allowed limit.')
+        n('e25a0c3a', 'Promoted Tweet'),
+          n('de128a2f', 'Turn on Tweet notifications'),
           n('aa6f3ca4', 'Turn off Tweet notifications'),
           n('j87c21f4', 'Notify'),
           n('iebc30ca', 'Turn off notifications'),
@@ -1513,6 +1514,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'By ' + e.name + ' @' + e.screenName
           }),
           n('f05dbeff', 'Loading Tweets'),
+          n('b139b549', 'Invite members'),
+          n('dfddd842', 'Sent via Direct Message'),
+          n('cf4898a0', 'Search for people'),
           n('ff0f7429', function (e) {
             return e.formattedCount + ' member' + a(e.count, '', 's')
           }),
@@ -2315,14 +2319,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('d5c9174e', function (e) {
             return e.location + ', ' + e.country
           }),
-          n('a5f32aa2', 'Blocked accounts'),
-          n('cf67f6d5', 'Autoblocked'),
-          n('eb233865', 'Imported'),
-          n(
-            'b90c89c3',
-            'When you block someone, that person won’t be able to follow or message you, and you won’t see notifications from them.',
-          ),
-          n('f587e41e', 'You aren’t blocking anyone')
+          n('a5f32aa2', 'Blocked accounts')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var n = t[o]
@@ -2339,7 +2336,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        n('ef731b13', 'Loading blocked accounts'),
+        n('cf67f6d5', 'Autoblocked'),
+          n('eb233865', 'Imported'),
+          n(
+            'b90c89c3',
+            'When you block someone, that person won’t be able to follow or message you, and you won’t see notifications from them.',
+          ),
+          n('f587e41e', 'You aren’t blocking anyone'),
+          n('ef731b13', 'Loading blocked accounts'),
           n('e554ba82', 'Learn more'),
           n('ae3e9c81', function (e) {
             return 'Remove @' + e.screenName + ' from Autoblocked accounts list?'
@@ -3006,9 +3010,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('c0786021', 'Autoblocked accounts'),
           n('ccafffde', '1 day'),
           n('j2e184d8', '3 days'),
+          n('d94b2246', 'Ends within 1 hour'),
           n('bfea13ab', 'Can’t update Safety Mode settings.'),
-          n('h9a73edd', function (e) {
-            return 'On until ' + e.date
+          n('ee95bb8d', function (e) {
+            return 'Ends on ' + e.date
           }),
           n('i39b01bc', 'What is safety mode?'),
           n('b4006390', 'Allow message requests from everyone'),
@@ -3534,13 +3539,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('cceeb26b', function (e) {
             return e.query + ' - Twitter Search'
           }),
-          n('i66136a9', 'Top'),
-          n('d601fc2f', 'Latest'),
+          n('i66136a9', 'Top')
+        n('d601fc2f', 'Latest'),
           n('ac4fb0f3', 'Photos'),
           n('bb967f9e', 'Videos'),
           n('gfcfbf8b', 'Your search was saved.'),
-          n('a4645d91', 'Your saved search was deleted.')
-        n('j622effd', 'Advanced search'),
+          n('a4645d91', 'Your saved search was deleted.'),
+          n('j622effd', 'Advanced search'),
           n('i5045e73', 'Anywhere'),
           n('h2388753', 'Near you'),
           n('a8399d5b', function (e) {

@@ -29,13 +29,13 @@
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.d1c68f35.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.a16d4665.js"
     nonce="WIPED"
   /><link
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/main.2ba51d25.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/main.e63dfea5.js"
     nonce="WIPED"
   /><meta property="fb:app_id" content="2231777543" />
   <meta property="og:site_name" content="Twitter" /><meta
@@ -750,10 +750,12 @@
             author_moderated_replies_urt_container_enabled: { value: false },
             business_profiles_rweb_onboarding_enabled: { value: false },
             c9s_enabled: { value: false },
+            c9s_invites_enabled: { value: false },
             c9s_moderation_enabled: { value: false },
             c9s_participation_enabled: { value: false },
             content_language_setting_enabled: { value: true },
             conversation_controls_change_enabled: { value: true },
+            conversation_controls_change_tooltip_enabled: { value: false },
             conversation_controls_limited_replies_consumption_configuration: { value: 'no_reply' },
             conversation_controls_limited_replies_creation_enabled: { value: true },
             conversation_controls_notifying_participants_enabled: { value: true },
@@ -776,11 +778,12 @@
             enable_label_appealing_sensitive_content_enabled: { value: false },
             explore_relaunch_enabled: { value: false },
             explore_settings_trends_policy_url: { value: '' },
+            followers_management_remove_follower_from_followers_list: { value: false },
             followers_management_remove_follower_from_profile_screen: { value: false },
             graphql_mutation_destroy_mode: { value: 'rest_only' },
-            graphql_mutation_favorite_mode: { value: 'rest_only' },
+            graphql_mutation_favorite_mode: { value: 'graphql_only' },
             graphql_mutation_retweet_mode: { value: 'rest_only' },
-            graphql_mutation_unfavorite_mode: { value: 'rest_only' },
+            graphql_mutation_unfavorite_mode: { value: 'graphql_only' },
             graphql_mutation_unretweet_mode: { value: 'rest_only' },
             graphql_mutation_update_mode: { value: 'graphql_only' },
             guest_broadcasting_timeline_decorations_enabled: { value: true },
@@ -1331,10 +1334,12 @@
               author_moderated_replies_urt_container_enabled: { value: false },
               business_profiles_rweb_onboarding_enabled: { value: false },
               c9s_enabled: { value: false },
+              c9s_invites_enabled: { value: false },
               c9s_moderation_enabled: { value: false },
               c9s_participation_enabled: { value: false },
               content_language_setting_enabled: { value: true },
               conversation_controls_change_enabled: { value: true },
+              conversation_controls_change_tooltip_enabled: { value: false },
               conversation_controls_limited_replies_consumption_configuration: { value: 'no_reply' },
               conversation_controls_limited_replies_creation_enabled: { value: true },
               conversation_controls_notifying_participants_enabled: { value: true },
@@ -1357,6 +1362,7 @@
               enable_label_appealing_sensitive_content_enabled: { value: false },
               explore_relaunch_enabled: { value: false },
               explore_settings_trends_policy_url: { value: '' },
+              followers_management_remove_follower_from_followers_list: { value: false },
               followers_management_remove_follower_from_profile_screen: { value: false },
               graphql_mutation_destroy_mode: { value: 'rest_only' },
               graphql_mutation_favorite_mode: { value: 'graphql_only' },
@@ -1733,7 +1739,7 @@
       }
       window.__META_DATA__ = {
         env: 'prod',
-        sha: '2a3483804fefc2924eaf1018d93775e96974938f',
+        sha: '08181d6b38769e4ce669590867b6a3c0c36793f5',
         isLoggedIn: false,
         hasMultiAccountCookie: false,
         uaParserTags: ['m2', 'rweb_unsupported', 'msw'],
@@ -1745,11 +1751,11 @@
       window.__SCRIPTS_LOADED__ = {}
       !(function (e) {
         function d(d) {
-          for (var o, r, t = d[0], l = d[1], c = d[2], b = 0, s = []; b < t.length; b++)
+          for (var o, r, t = d[0], l = d[1], u = d[2], b = 0, s = []; b < t.length; b++)
             (r = t[b]), Object.prototype.hasOwnProperty.call(a, r) && a[r] && s.push(a[r][0]), (a[r] = 0)
           for (o in l) Object.prototype.hasOwnProperty.call(l, o) && (e[o] = l[o])
-          for (u && u(d); s.length; ) s.shift()()
-          return i.push.apply(i, c || []), n()
+          for (c && c(d); s.length; ) s.shift()()
+          return i.push.apply(i, u || []), n()
         }
         function n() {
           for (var e, d = 0; d < i.length; d++) {
@@ -1795,16 +1801,16 @@
                       5: 'shared~loader.AudioDock~bundle.AudioSpacePeek~bundle.AudioSpaceLoggedIn~loader.AudioContextSpaceMedia~loader.',
                       6: 'shared~bundle.MultiAccount~bundle.Login~bundle.LoggedOutHome~loader.SignupModule~ondemand.IntentPrompt',
                       7: 'shared~bundle.SettingsRevamp~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Settings~bundle.Settin',
-                      8: 'shared~bundle.ComposeMedia~bundle.SettingsProfile~bundle.Ocf~bundle.UserLists',
-                      9: 'shared~bundle.Compose~bundle.RichTextCompose~ondemand.ComposeScheduling~bundle.PlainTextCompose',
-                      10: 'shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages~ondemand.FleetMediaDetail',
+                      8: 'shared~bundle.Compose~bundle.RichTextCompose~ondemand.ComposeScheduling~bundle.PlainTextCompose',
+                      9: 'shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages~ondemand.FleetMediaDetail',
+                      10: 'shared~loader.Typeahead~bundle.Communities~bundle.Explore~bundle.UserLists',
                       11: 'shared~bundle.Birdwatch~bundle.Explore~bundle.Topics',
-                      12: 'shared~bundle.Place~bundle.Search~bundle.QuoteTweetActivity',
-                      13: 'shared~bundle.SettingsRevamp~bundle.AccountVerification~bundle.BadgeViolationsNotification',
-                      14: 'shared~bundle.SettingsRevamp~bundle.SettingsTransparency~ondemand.SettingsInternals',
-                      15: 'shared~loaders.video.VideoPlayerDefaultUI~loader.MediaPreviewVideoPlayer~loaders.video.VideoPlayerEventsUI',
-                      16: 'shared~bundle.AudioSpacePeek~bundle.AudioSpaceLoggedIn',
-                      17: 'shared~bundle.Explore~loader.ExploreSidebar',
+                      12: 'shared~bundle.ComposeMedia~bundle.SettingsProfile~bundle.Ocf',
+                      13: 'shared~bundle.Place~bundle.Search~bundle.QuoteTweetActivity',
+                      14: 'shared~bundle.SettingsRevamp~bundle.AccountVerification~bundle.BadgeViolationsNotification',
+                      15: 'shared~bundle.SettingsRevamp~bundle.SettingsTransparency~ondemand.SettingsInternals',
+                      16: 'shared~loaders.video.VideoPlayerDefaultUI~loader.MediaPreviewVideoPlayer~loaders.video.VideoPlayerEventsUI',
+                      17: 'shared~bundle.AudioSpacePeek~bundle.AudioSpaceLoggedIn',
                       18: 'shared~bundle.LoggedOutHome~loader.SignupModule',
                       19: 'shared~bundle.Settings~bundle.Display',
                       20: 'shared~bundle.TopicPeek~bundle.Topics',
@@ -2038,28 +2044,28 @@
                     }[e] || e) +
                     '.' +
                     {
-                      0: '5c166b4',
-                      3: '5851b6a',
+                      0: 'f75d1ec',
+                      3: '43de9ad',
                       4: '22fc60e',
                       5: '5cad944',
                       6: '34fe245',
                       7: 'c730c82',
-                      8: 'e205b26',
-                      9: '20be6dd',
-                      10: 'daa6957',
+                      8: '330b3b3',
+                      9: 'd5a9227',
+                      10: '921f258',
                       11: 'a36cced',
-                      12: 'e4653c9',
-                      13: 'e4d7b1c',
-                      14: 'a5dd48b',
-                      15: '5c5b782',
-                      16: 'adc14d2',
-                      17: '7d370d4',
+                      12: 'ee972be',
+                      13: 'ad31122',
+                      14: '6e5b4c3',
+                      15: '37ebd8f',
+                      16: '3890de4',
+                      17: 'a3bb718',
                       18: 'a439408',
                       19: 'f05a6a2',
                       20: 'a5418f7',
                       21: '1fa87fa',
                       22: '9ba6d97',
-                      23: '52f8c7f',
+                      23: 'fd4d575',
                       24: '87d9448',
                       25: 'a317682',
                       26: 'fff671c',
@@ -2073,32 +2079,32 @@
                       34: '3011d4e',
                       35: 'f70213f',
                       36: '405a191',
-                      37: '96da44a',
+                      37: '0a71200',
                       38: 'e45e642',
                       39: '1bfdfec',
-                      40: '82a9d4a',
-                      41: '0d26e40',
-                      42: '282ea78',
+                      40: 'ba14996',
+                      41: '85005ff',
+                      42: '4c84c07',
                       43: '622f2a0',
                       44: '279c4b3',
-                      45: 'a271bea',
+                      45: '48d09be',
                       46: 'aa68ff4',
-                      47: '2e049fd',
+                      47: 'f22b0b3',
                       48: 'df4d07c',
                       49: '334d4e0',
-                      50: '2b55b1e',
+                      50: '68e85f3',
                       51: 'da898cd',
                       52: 'fe9740c',
-                      53: 'a586f2f',
+                      53: '092d05b',
                       54: '07f05d5',
                       55: 'f217562',
-                      56: 'd2e017b',
+                      56: '7704137',
                       57: 'b91a9a1',
-                      58: 'ce0c740',
+                      58: 'a824ceb',
                       59: '1055611',
                       60: 'c00af69',
                       61: 'e00d461',
-                      62: '23b55bd',
+                      62: '9375909',
                       63: '40f2c5e',
                       64: 'de84383',
                       65: '7d0a954',
@@ -2109,11 +2115,11 @@
                       70: '904b0d9',
                       71: 'e2834f3',
                       72: '7ee98b5',
-                      73: '01b61d0',
+                      73: '1e89d24',
                       74: '062247f',
                       75: 'f5d213f',
                       76: '0d4d15c',
-                      77: 'b061d43',
+                      77: 'ca0afe9',
                       78: 'c3e222e',
                       79: '2aa5f6e',
                       80: '0d1de66',
@@ -2123,41 +2129,41 @@
                       84: '7dfaa8b',
                       85: '3f40ba4',
                       86: '4d0c657',
-                      87: '3cdcfef',
+                      87: '5797150',
                       88: 'a246427',
                       89: '5aa2b00',
-                      90: '0a35544',
+                      90: '72e8e44',
                       91: '2c41532',
-                      92: '1554cc6',
+                      92: 'eed38d6',
                       93: '6d668c7',
                       94: '0c81087',
-                      95: 'f12d94e',
-                      96: '0680cb5',
+                      95: 'bd747ea',
+                      96: '92c2b5d',
                       97: '77688cd',
                       98: '3ebae96',
                       99: '03d1e61',
                       150: '2a25a6b',
-                      151: 'a860748',
+                      151: '7e6370c',
                       152: 'd6f8aac',
                       153: '9c5e2c5',
                       154: '4b9e179',
                       155: 'c1e40b0',
-                      156: 'f784f8f',
+                      156: '6a27fdb',
                       157: '74bed51',
-                      158: '0794284',
+                      158: 'c913dd8',
                       159: '77a03fb',
                       160: 'b3e6ded',
                       161: '1ef1c1b',
                       162: '2ee45b2',
                       163: 'ab64538',
-                      164: '8135e86',
+                      164: '30d72db',
                       165: 'b7d19f6',
                       166: '1433a7d',
                       167: '4afa0d4',
                       168: 'eaabf8f',
-                      169: 'be8a504',
+                      169: '47268a5',
                       170: 'ab90531',
-                      171: '3e67776',
+                      171: 'c95999d',
                       172: 'c4c492d',
                       173: '6c07e2d',
                       174: '3b3db20',
@@ -2173,10 +2179,10 @@
                       185: 'a6ac92c',
                       186: '4afbf39',
                       187: '81a1bb8',
-                      188: '96344bf',
+                      188: '7437614',
                       189: '994133e',
                       190: '565611c',
-                      191: 'c85dbca',
+                      191: '0fa42f1',
                       192: '0553a33',
                       193: '2ba0c74',
                       194: 'd6be717',
@@ -2184,8 +2190,8 @@
                       196: '1380114',
                       197: '36f9188',
                       198: '734c992',
-                      199: 'b13ebfe',
-                      200: 'fdbc538',
+                      199: 'ccfc253',
+                      200: 'a8ad1da',
                       201: '9621094',
                       202: 'c725412',
                       203: '5933309',
@@ -2290,7 +2296,7 @@
                 })(e))
               var l = new Error()
               i = function (d) {
-                ;(t.onerror = t.onload = null), clearTimeout(c)
+                ;(t.onerror = t.onload = null), clearTimeout(u)
                 var n = a[e]
                 if (0 !== n) {
                   if (n) {
@@ -2305,7 +2311,7 @@
                   a[e] = void 0
                 }
               }
-              var c = setTimeout(function () {
+              var u = setTimeout(function () {
                 i({ type: 'timeout', target: t })
               }, 12e4)
               ;(t.onerror = t.onload = i), document.head.appendChild(t)
@@ -2361,8 +2367,8 @@
         var t = (window.webpackJsonp = window.webpackJsonp || []),
           l = t.push.bind(t)
         ;(t.push = d), (t = t.slice())
-        for (var c = 0; c < t.length; c++) d(t[c])
-        var u = l
+        for (var u = 0; u < t.length; u++) d(t[u])
+        var c = l
         n()
       })([]),
         (window.__SCRIPTS_LOADED__.runtime = !0)
@@ -2387,14 +2393,14 @@
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.d1c68f35.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.a16d4665.js"
     ></script>
     <script
       type="text/javascript"
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/main.2ba51d25.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/main.e63dfea5.js"
     ></script>
     <script nonce="WIPED">
       ;(function () {
