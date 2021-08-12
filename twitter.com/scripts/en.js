@@ -484,6 +484,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('h129c3c3', function (e) {
             return '@' + e.screenName + ' has been unmuted.'
           }),
+          n('b3036480', 'Remove this follower'),
+          n('h2f91a90', function (e) {
+            return (
+              '@' + e.screenName + ' will be removed from your followers and won’t be notified that you removed them.'
+            )
+          }),
           n('ibd0b841', 'Copy link to profile'),
           n('c645618c', 'View Moments'),
           n('b9c26480', 'View Topics'),
@@ -493,12 +499,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('d17ebe1b', 'Remove from autoblock'),
           n('d78131b8', function (e) {
             return 'Add/remove @' + e.screenName + ' from Lists'
-          }),
-          n('b3036480', 'Remove this follower'),
-          n('h2f91a90', function (e) {
-            return (
-              '@' + e.screenName + ' will be removed from your followers and won’t be notified that you removed them.'
-            )
           }),
           n('f9e45cfb', function (e) {
             return 'Block @' + e.screenName + '?'
@@ -588,6 +588,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('e2eac0c4', 'Primary'),
           n('i5aa4cef', 'More menu items'),
           n('b8533bac', 'Topics'),
+          n('h02a6fe5', 'Communities'),
           n('i5f7b6b8', 'Account'),
           n('c5960556', 'Account info'),
           n('da4691aa', 'View all accounts'),
@@ -734,6 +735,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return e.hostSpace + ' · ' + e.descriptionGeneric
           }),
           n('d228a9a0', 'Show more'),
+          n('b154b059', 'Twitter’s rules'),
+          n('c00c234e', function (e) {
+            return e.communityName + ' Rules'
+          }),
           n('b8e930fd', 'Trending now'),
           n('ae05f268', 'Trends are unavailable.'),
           n('e43138c5', function (e) {
@@ -846,6 +851,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('g0b48670', 'This conversation has too many replies to show them all.'),
           n('f5718548', 'You reported this Tweet.'),
           n('e4c6c309', 'This Tweet is unavailable.'),
+          n('i255e1aa', 'A moderator hid this Tweet for breaking a Community rule.'),
           n('e29c651e', 'Thanks for learning more'),
           n('c150ba67', 'Welcome!'),
           n('f8e2163e', 'Want to log in first?'),
@@ -891,6 +897,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('fe8a1f7f', 'Compose a reply'),
           n('e349147b', 'What’s happening?'),
           n('bc2ceaf2', 'Sending Tweet...'),
+          n('j4c40da3', 'Send now'),
           n('b23688c7', 'Undo timer'),
           n('e3a24e4b', 'Add another Tweet'),
           n('b4947556', 'Translate Tweet'),
@@ -924,9 +931,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('c604dda2', 'Reaction removed'),
           n('f6c7249b', 'Tweet Retweeted'),
           n('f67de45a', 'Tweet Unretweeted'),
-          n('a9953ce2', function (e) {
-            return 'Only @' + e.screenName + '’s Super Followers will be able to see this'
-          }),
+          n('jc4cb6c4', 'Only Super Followers can see this Retweet'),
           n('b5b36724', 'Reply instead?'),
           n('g449dfaa', 'Retweet instead?'),
           n('cf7a1b47', 'Your drafted Tweet will be discarded before you reply.'),
@@ -937,6 +942,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('ae2c8a1e', 'Why can’t you reply to this?'),
           n('jead3bc1', 'Why can’t you share this?'),
           n('ff25aba5', 'Why can’t you view Tweet activity?'),
+          n('i2aeb0d2', 'Only members of the Community can reply to Community content.'),
           n('eb2aba8e', 'Learn more'),
           n('ibd021f1', 'Want to read the article first?'),
           n('ca58508e', 'You’re about to share an article you haven’t opened on Twitter.'),
@@ -1055,6 +1061,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('g9425e3f', 'Are you sure you want to remove the photo tag from this Tweet?'),
           n('jfc76958', 'Remove tag from photo'),
           n('fa9ce7f3', 'Undo Retweet'),
+          n('d28215f0', 'Sorry, polls are not allowed in Communities!'),
+          n('ec909a54', function (e) {
+            return 'Your Tweet' + a(e.numOfTweets, ' was', 's were') + ' sent to ' + e.communityName
+          }),
           n('dad5a4b8', 'Your Tweet was sent.'),
           n('e65aed64', 'Your Tweets were sent.'),
           n('d8222374', 'Discard Tweet?'),
@@ -1087,12 +1097,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           n('d1175c78', 'Tag people'),
           n('bf4e9d79', 'Upload caption file (.srt)'),
+          n('e0342f98', 'Captions'),
           n('de4669e2', 'Add a comment'),
           n('f7364fa1', 'Ask a question...'),
+          n('e815fc33', 'Choose audience'),
+          n('c63602d3', 'My Communities'),
+          n('gfca5254', 'Rules'),
+          n('f510c8b2', 'Community Rules'),
           n('g46f363d', 'Check the Community rules before joining the conversation'),
           n('i8ea6d4e', 'Everyone can reply'),
           n('ec5a4a25', 'People you follow can reply'),
           n('b4543009', 'Only people you mention can reply'),
+          n('i13be5a0', 'Community members can reply'),
           n('g589c2e1', 'Choice 1'),
           n('a1e6c3a1', 'Choice 2'),
           n('a739e006', 'Choice 3 (optional)'),
@@ -1165,11 +1181,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('ib147a39', 'Hiding reply'),
           n('e8ff17e5', 'Revise'),
           n('cd33a61c', 'Why did I get this?'),
-          n('g97558f6', 'What does this mean for your reply?'),
-          n(
-            'cd80d930',
-            'We want to keep Twitter safe and open. If we detect potentially harmful or offensive language in a reply—like insults, name-calling, strong language, or hateful remarks—we’re asking people if they want to revise it. We’re working to better understand and predict when people might want to revise their replies.',
-          ),
+          n('g97558f6', 'What does this mean for your reply?')
+        n(
+          'cd80d930',
+          'We want to keep Twitter safe and open. If we detect potentially harmful or offensive language in a reply—like insults, name-calling, strong language, or hateful remarks—we’re asking people if they want to revise it. We’re working to better understand and predict when people might want to revise their replies.',
+        ),
           n(
             'b0476eb2',
             'Twitter won’t report your reply, and you can still send it without revising it. But replies with potentially harmful or offensive language are more likely to be reported by others.',
@@ -1185,8 +1201,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('g30d7ec5', 'The text of your Tweet contains a hashtag that is longer than allowed.'),
           n('d484fca9', 'The Tweet exceeds the number of allowed attachment types.'),
           n('c51ba396', 'Oops! A URL in your Tweet appears to link to a page that has spammy or unsafe content.'),
-          n('ef2fa90b', 'The text of your Tweet exceeds the maximum allowed limit.')
-        n('e25a0c3a', 'Promoted Tweet'),
+          n('ef2fa90b', 'The text of your Tweet exceeds the maximum allowed limit.'),
+          n('e25a0c3a', 'Promoted Tweet'),
           n('de128a2f', 'Turn on Tweet notifications'),
           n('aa6f3ca4', 'Turn off Tweet notifications'),
           n('j87c21f4', 'Notify'),
@@ -1513,15 +1529,56 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('jb0429b1', function (e) {
             return 'By ' + e.name + ' @' + e.screenName
           }),
+          n('b33e4e4a', 'Loading Communities'),
+          n('a0e3ece4', 'Community Detail'),
+          n('aa7ae3f6', 'Joined'),
+          n('hb9400db', 'See More'),
+          n('a0fbc7da', function (e) {
+            return e.count + ' new tweets to review'
+          }),
+          n('e2429f56', 'Tweets to review'),
+          n('df15d5b7', function (e) {
+            return e.count + ' new Tweet' + a(e.count, '', 's')
+          }),
+          n('ba2e6395', 'Support & resources'),
+          n('c18e3a3e', 'There aren’t any Tweets in this Community'),
+          n('d68146c0', 'When anyone in this Community Tweets, they’ll show up here.'),
+          n('h5245afa', 'Community'),
           n('f05dbeff', 'Loading Tweets'),
+          n('h4fbfa57', 'Agree and join'),
+          n('dc1b14a1', function (e) {
+            return 'Review and agree to ' + e.communityName + ' Rules'
+          }),
+          n('e442bbb4', 'Community Members'),
+          n('e9488b0d', 'Loading Moderators'),
+          n('j43fea20', 'Loading Members'),
           n('b139b549', 'Invite members'),
           n('dfddd842', 'Sent via Direct Message'),
           n('cf4898a0', 'Search for people'),
+          n('a3b3939a', function (e) {
+            return '@' + e.screen_name + ' has already been invited'
+          }),
+          n('ef4602eb', 'Something went wrong. Please try again later.'),
+          n('cd133485', 'Invite'),
+          n('hb1e378e', 'Invited'),
+          n('c045c7b6', 'Reported Tweets'),
+          n('dffb0774', 'Nothing to review right now'),
+          n('cbb2a93c', 'Moderators have taken care of all reported Tweets.'),
+          n('f1d9930c', 'Hide'),
+          n('fa524057', 'Keep'),
+          n('g30bc699', function (e) {
+            return 'View @' + e.screenName + ' profile'
+          }),
+          n('f0306107', 'Report Tweet to Twitter'),
+          n('b99364a5', function (e) {
+            return 'Remove @' + e.screenName + ' from Community'
+          }),
           n('ff0f7429', function (e) {
             return e.formattedCount + ' member' + a(e.count, '', 's')
           }),
           n('ad10c66d', 'You hid this Tweet'),
           n('c6caed9c', 'You kept this Tweet'),
+          n('cb6adb1f', 'Discover Communities'),
           n('b8f0483e', 'Compose new Tweet'),
           n('a133d13e', 'Unsent Tweets'),
           n('ed33a3b6', 'Hello, wordsmiths.'),
@@ -1581,14 +1638,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('e36287c6', 'Description'),
           n('cf565d08', 'What is alt text?'),
           n('c91f83ae', 'Edit video'),
-          n('e0342f98', 'Captions'),
+          n('icbec4ae', 'Upload captions'),
           n('e7048e73', 'Trim media'),
           n(
             'j435467e',
             'Subtitles and captions can be added to your video by uploading a valid subtitle file. Files must be in the SRT format. Subtitles and captions will be unaffected by video edits.',
           ),
           n('a6b267f9', 'Remove captions'),
-          n('icbec4ae', 'Upload captions'),
           n('b25fe02d', 'You don’t have a message selected'),
           n('b81d9b9b', 'Choose one from your existing messages, or start a new one.'),
           n(
@@ -1695,6 +1751,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'h2b9a5fd',
             'At least three articles about your company from qualifying news publications in the last six months.',
           ),
+          n('baccb708', 'Add verified news coverage'),
           n('feadd98c', 'Add verified news references'),
           n('j7ae97a9', 'Verified news references'),
           n('c368aa8d', 'At least three articles from verified news publications that reference you.'),
@@ -1708,6 +1765,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('jc19b4e7', 'Stock exchange listing'),
           n('fc3ee695', 'Leadership reference'),
           n('i3e65eb4', 'The official site of a verified organization that references you in a leadership position.'),
+          n('jd014eba', 'The URL provided links to the specific page referencing applicant.'),
+          n('a96901cb', 'Add leadership reference'),
+          n('cc424a21', 'Advocacy reference'),
           n('ibfc1a5a', 'You aren’t eligible for verification in this category.'),
           n('e1c78795', 'Official website'),
           n('je403ac5', 'Company, brand, or organization'),
@@ -1718,8 +1778,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('eb7de689', 'Professional sports or gaming entity'),
           n('cc4b66b5', 'Select a category'),
           n('b37461a4', 'Select an account type'),
-          n('c9971763', 'Official leadership website'),
-          n('fdb89264', 'An official website of an advocacy organization that references you.'),
+          n('a15326dd', 'At least three articles from qualifying news publications that reference you.'),
+          n(
+            'g704a939',
+            'An official site associated with known advocacy work that references you in a leadership position.',
+          ),
           n('ff929feb', 'Prominent organization or affiliate'),
           n(
             'jf537894',
@@ -1731,7 +1794,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Leaders and other prominent executives of notable companies, brands, and non-profit organizations.',
           ),
           n('j0bc23f3', 'I have confirmed that my organization’s account is already verified.'),
-          n('jd014eba', 'The URL provided links to the specific page referencing applicant.'),
           n('ecb8b9da', 'Entertainment account type'),
           n('aa6228de', 'Entertainment company'),
           n(
@@ -1805,11 +1867,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('j2c21ab7', 'Learn more'),
           n('e492eeb4', 'Learn more'),
           n('ece0b9bc', 'Learn more'),
-          n('cadec49b', 'Learn more'),
+          n('e1a82c8c', 'Learn more'),
           n('hb96cb36', 'Learn more'),
-          n('f593e8a7', 'Learn more'),
-          n('c3daf2fb', 'Learn more'),
-          n('jc282ad8', 'Learn more'),
+          n('j6ef6afa', 'Learn more'),
+          n('d42d1629', 'Learn more'),
+          n('c076e32d', 'Learn more'),
+          n('ccadfc84', 'Learn more'),
           n('e8e39f94', 'Learn more'),
           n('e126dd3e', 'Learn more'),
           n('gbdf1325', 'Learn more'),
@@ -1871,6 +1934,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('fbc023bf', 'Yes, it is'),
           n('e785ce06', 'I’ll use a different option'),
           n(
+            'f848a69d',
+            'We need to confirm that your account is authentic to verify you. If your handle isn’t referenced in the official website provided we cannot confirm account authenticity.',
+          ),
+          n('bfb01c62', 'No, go back'),
+          n(
             'ibd16281',
             'Provide a link to the official website of a qualifying news organization or publication that references you and your Twitter account.',
           ),
@@ -1918,6 +1986,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n(
             'h52f5781',
             'The official website of an advocacy organization that references you and your Twitter account.',
+          ),
+          n(
+            'e4610048',
+            'Provide a link that references you in a leadership position for a Verified advocacy organization and your Twitter account. The reference must come from the official site of a Verified organization.',
           ),
           n(
             'baf718c3',
@@ -2259,8 +2331,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'This removes any contacts you’ve previously uploaded and turns off syncing with Twitter on all devices. Please be aware that this takes a little time, cannot be undone, and you may still notice some suggestions on Twitter (based on your contacts) in the meantime.',
           ),
           n('ca24589e', 'No name'),
-          n('b8dd5e4d', 'Learn more'),
-          n('hccd9dbd', 'Please enter your password in order to get this.'),
+          n('b8dd5e4d', 'Learn more')
+        function r(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var n = t[o]
+            ;(n.enumerable = n.enumerable || !1),
+              (n.configurable = !0),
+              'value' in n && (n.writable = !0),
+              Object.defineProperty(e, n.key, n)
+          }
+        }
+        function i(e, t) {
+          return (i =
+            Object.setPrototypeOf ||
+            function (e, t) {
+              return (e.__proto__ = t), e
+            })(e, t)
+        }
+        n('hccd9dbd', 'Please enter your password in order to get this.'),
           n('jabb9c9a', 'Location information'),
           n('eb029cab', 'Add location information to your Tweets'),
           n(
@@ -2319,24 +2407,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('d5c9174e', function (e) {
             return e.location + ', ' + e.country
           }),
-          n('a5f32aa2', 'Blocked accounts')
-        function r(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var n = t[o]
-            ;(n.enumerable = n.enumerable || !1),
-              (n.configurable = !0),
-              'value' in n && (n.writable = !0),
-              Object.defineProperty(e, n.key, n)
-          }
-        }
-        function i(e, t) {
-          return (i =
-            Object.setPrototypeOf ||
-            function (e, t) {
-              return (e.__proto__ = t), e
-            })(e, t)
-        }
-        n('cf67f6d5', 'Autoblocked'),
+          n('a5f32aa2', 'Blocked accounts'),
+          n('cf67f6d5', 'Autoblocked'),
           n('eb233865', 'Imported'),
           n(
             'b90c89c3',
@@ -2687,13 +2759,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('defb4aa9', 'From anyone'),
           n('e7d47b00', 'From people you don’t follow'),
           n('c67e3fc1', 'Home timeline'),
-          n('bf701a4d', 'Mute timing'),
+          n('d9d6e10e', 'Duration'),
           n('gfa5008d', 'Extend mute time'),
           n('c5595dfe', 'Change mute time'),
-          n('cabeb6c1', 'Forever'),
-          n('b5b3d60d', '24 hours from now'),
-          n('c8bf2620', '7 days from now'),
-          n('b15e4773', '30 days from now'),
+          n('he6804e0', 'Until you unmute the word'),
           n('a268406c', '24 hours'),
           n('fc638aa2', '7 days'),
           n(
@@ -2721,6 +2790,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           n('i0dd9b9d', 'Muted words'),
           n('eb4e810a', 'Expired'),
+          n('cabeb6c1', 'Forever'),
           n('f9bce916', 'Mute words'),
           n('f12c13b5', 'Learn more'),
           n('ba4aaa9d', 'Unmute phrase?'),
@@ -3016,6 +3086,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Ends on ' + e.date
           }),
           n('i39b01bc', 'What is safety mode?'),
+          n('hae5825e', 'Flagged Tweets'),
           n('b4006390', 'Allow message requests from everyone'),
           n(
             'f7da127c',
@@ -3466,8 +3537,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('d1c4aeaf', 'Terms of Service'),
           n('a5d264ec', 'Privacy Policy'),
           n('dbf6d075', 'Your Fleet was removed'),
-          n('bc52028e', 'Your Fleet contained a Tweet from an account owner who limits who can view their Tweets.'),
-          n('daf6f4b1', 'Your Fleet contained a Tweet that was deleted by the Tweet author.'),
+          n('bc52028e', 'Your Fleet contained a Tweet from an account owner who limits who can view their Tweets.')
+        n('daf6f4b1', 'Your Fleet contained a Tweet that was deleted by the Tweet author.'),
           n('a98ba778', 'Notifications timelines'),
           n('f287bb3a', 'From likes to Retweets and a whole lot more, this is where all the action happens.'),
           n('h994ec4f', 'From reactions to Retweets and a whole lot more, this is where all the action happens.'),
@@ -3539,8 +3610,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('cceeb26b', function (e) {
             return e.query + ' - Twitter Search'
           }),
-          n('i66136a9', 'Top')
-        n('d601fc2f', 'Latest'),
+          n('i66136a9', 'Top'),
+          n('d601fc2f', 'Latest'),
           n('ac4fb0f3', 'Photos'),
           n('bb967f9e', 'Videos'),
           n('gfcfbf8b', 'Your search was saved.'),
@@ -3644,7 +3715,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('a3a09d48', 'Your total budget'),
           n('e7eb3683', 'Daily budget'),
           n('d9f6e3cd', 'Daily budget slider'),
-          n('d9d6e10e', 'Duration'),
           n('b3954ec9', 'Duration in days slider'),
           n('e1b48db4', 'Estimated reach is approximate. Actual reach for this promotion can’t be guaranteed.'),
           n('i976aff3', 'Update daily budget info to match your billing currency.'),
@@ -3688,7 +3758,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('ed8bb5af', 'Add payment details'),
           n('be2dc078', 'Sign up and add payment details'),
           n('da2805d1', 'A campaign for this tweet has already been created.'),
-          n('ef4602eb', 'Something went wrong. Please try again later.'),
           n('a4db098b', 'It looks like we couldn’t create your promotion. Please try again later.'),
           n('ef7e3916', 'Something went wrong. Check your promotion details and try again.'),
           n('d56b5ac3', 'Twitter Terms and Advertising Guidelines'),
@@ -3715,7 +3784,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('aac3fad1', 'People in this conversation'),
           n('d132269b', 'Loading Tweet'),
           n('dd657211', 'View Tweet'),
-          n('f1d9930c', 'Hide'),
           n('bd7c039f', 'Quote Tweets'),
           n('b13974f0', 'Loading users who liked this Tweet'),
           n('hfb8fd58', 'Loading users who retweeted this Tweet'),
@@ -4538,13 +4606,29 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('jc9298a8', 'Share Tweet'),
           n('d9fd5570', 'Hidden replies'),
           n('bb7b821a', 'You can reply'),
+          n('h15b020c', function (e) {
+            return 'People following or mentioned by @' + e.screenName + ' can reply'
+          }),
           n('ab105904', 'Who can reply?'),
-          n('e1e7e6e4', 'You can see this'),
-          n('c97b6694', 'Who can see this?'),
+          n('j86de6d0', function (e) {
+            return 'People @' + e.screenName + ' follows or mentioned can reply'
+          }),
+          n('cededc6f', function (e) {
+            return 'People @' + e.screenName + ' mentioned can reply'
+          }),
+          n('dbf9738f', 'Who can see this Tweet?'),
+          n('d95d8f24', 'You and your Super Followers can see this Tweet'),
+          n('ff6895e3', function (e) {
+            return '@' + e.screenName + ' and their Super Followers can see your Tweet'
+          }),
+          n('f1140912', 'You’re seeing Super Follows content'),
+          n('j1a5fd02', function (e) {
+            return 'You can see this and reply because you Super Follow @' + e.screenName
+          }),
           n('b09adb0c', 'See conversation'),
           n('c2637ef5', 'Got it'),
           n('e5dc76d0', 'You can reply to this conversation'),
-          n('h3ff6c0d', 'Interested in the conversation?'),
+          n('fd1cda7a', 'You cannot reply to this conversation'),
           n('aaeb399a', function (e) {
             return 'You can see this Tweet because you Super Follow @' + e.screenName
           }),
@@ -5053,6 +5137,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
+                key: 'i5ba24f4',
+                get: function () {
+                  return ['These are set and enforced by Community admins and are in addition to ', '.']
+                },
+              },
+              {
                 key: 'g1e704c3',
                 get: function () {
                   return ['Trending with ']
@@ -5472,10 +5562,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'jef85ba1',
+                key: 'ff16a8f8',
                 get: function () {
                   return [
-                    'Pick one method to show that your account qualifies for verification as an activist or an influential individual. ',
+                    'Pick a method to show that your account qualifies for verification as an activist, organizer, or influential individual. ',
                   ]
                 },
               },
@@ -5488,26 +5578,34 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'a45f79a0',
+                key: 'efd8f6e7',
                 get: function () {
                   return [
-                    'Provide a link to a profile on Google Trends with evidence of recent search activity about you. ',
+                    'Provide a link to a Google Trends profile with evidence of recent search activity about you. ',
                   ]
                 },
               },
               {
-                key: 'b38195c8',
+                key: 'fe54dcfd',
                 get: function () {
                   return [
-                    'Provide a link to a Wikipedia article that is about you and meets their notability standards for people. ',
+                    'Provide a link to a Wikipedia page about you. It must contain at least three external references. ',
                   ]
                 },
               },
               {
-                key: 'e8491081',
+                key: 'j23c6258',
                 get: function () {
                   return [
-                    'Provide a link to an official website of an advocacy organization that references you or your Twitter account. ',
+                    'Provide links to at least three articles about you in qualifying news publications that have been published within the last six months. ',
+                  ]
+                },
+              },
+              {
+                key: 'ie26d72d',
+                get: function () {
+                  return [
+                    'Provide a link that references you in a leadership position for a Verified advocacy organization. The reference must come from the official site of a Verified organization. ',
                   ]
                 },
               },
@@ -6548,36 +6646,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'c3190d39',
                 get: function () {
                   return ['<FormatMessage />: ']
-                },
-              },
-              {
-                key: 'a4c713f6',
-                get: function () {
-                  return ['People following or mentioned by ', ' can reply.']
-                },
-              },
-              {
-                key: 'afaeafd7',
-                get: function () {
-                  return ['People ', ' follows or mentioned can reply.']
-                },
-              },
-              {
-                key: 'ecf8e732',
-                get: function () {
-                  return ['People ', ' mentioned can reply.']
-                },
-              },
-              {
-                key: 'ba5e367a',
-                get: function () {
-                  return ['Only people that Super Follow ', ' can see this Tweet and any replies.']
-                },
-              },
-              {
-                key: 'jc30b2c4',
-                get: function () {
-                  return ['You can reply because you Super Follow ', '.']
                 },
               },
               {
