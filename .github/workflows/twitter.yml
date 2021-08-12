@@ -51,7 +51,7 @@ jobs:
           author: Maskbook maintainer bot <bot@mask.io>
           branch: twitter-snapshot
           title: ':chore: twitter get updated'
-          body: "## (🤖 I am a robot) updates or error report \n```${{ env.DIFF_STAT }}\n```\n\n```diff\n${{ env.GIT_DIFF }}\n```"
+          body: "## (🤖 I am a robot) updates or error report \n```${{ env.DIFF_STAT }}\n```\n\n"
           assignees: |
             guanbinrui
             unclebill
