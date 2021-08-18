@@ -17,25 +17,25 @@
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/polyfills.36dbf9c5.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/polyfills.8fceaea5.js"
     nonce="WIPED"
   /><link
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/vendors~main.ca8569d5.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/vendors~main.bc2d8bf5.js"
     nonce="WIPED"
   /><link
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.714cf4b5.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.d8d38235.js"
     nonce="WIPED"
   /><link
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/main.0987f595.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/main.3560dee5.js"
     nonce="WIPED"
   /><meta property="fb:app_id" content="2231777543" />
   <meta property="og:site_name" content="Twitter" /><meta
@@ -498,6 +498,14 @@
     <script type="text/javascript" charset="utf-8" nonce="WIPED">
       window.__INITIAL_STATE__ = {
         optimist: [],
+        entities: {
+          communities: { entities: {}, errors: {}, fetchStatus: {} },
+          users: { entities: {}, errors: {}, fetchStatus: {} },
+          tweets: { entities: {}, errors: {}, fetchStatus: {} },
+          cards: { entities: {}, errors: {}, fetchStatus: {} },
+          userPresence: { entities: {}, errors: {}, fetchStatus: {} },
+          userCommunityInviteActionResult: { entities: {}, errors: {}, fetchStatus: {} },
+        },
         featureSwitch: {
           debug: {},
           defaultConfig: {
@@ -889,6 +897,10 @@
             responsive_web_graphql_topic_timeline_enabled: { value: 'WIPED' },
             responsive_web_graphql_tweet_by_rest_id: { value: 'WIPED' },
             responsive_web_graphql_user_results: { value: 'WIPED' },
+            responsive_web_hashflags_api_new: { value: 'WIPED' },
+            responsive_web_hashtag_highlight_is_enabled: { value: 'WIPED' },
+            responsive_web_hashtag_highlight_show_avatar: { value: 'WIPED' },
+            responsive_web_hashtag_highlight_use_small_font: { value: 'WIPED' },
             responsive_web_highlight_details_experiment_bucket: { value: 'WIPED' },
             responsive_web_hoisting_anchor_invalidation_enabled: { value: 'WIPED' },
             responsive_web_inline_login_box_enabled: { value: 'WIPED' },
@@ -940,6 +952,8 @@
             responsive_web_promoted_tweet_param_append_enabled: { value: 'WIPED' },
             responsive_web_promoted_tweet_url_rewrite_enabled: { value: 'WIPED' },
             responsive_web_qp_pa_signup_enabled: { value: 'WIPED' },
+            responsive_web_reactions_darkread_metadata: { value: 'WIPED' },
+            responsive_web_reactions_darkread_perspective: { value: 'WIPED' },
             responsive_web_reactions_enabled: { value: 'WIPED' },
             responsive_web_recent_searches_events_enabled: { value: 'WIPED' },
             responsive_web_recent_searches_topics_enabled: { value: 'WIPED' },
@@ -965,6 +979,7 @@
             responsive_web_settings_timeline_refresh_instant_default: { value: 'WIPED' },
             responsive_web_sidebar_ttf_enabled: { value: 'WIPED' },
             responsive_web_ssr_graphql_conversations_enabled: { value: 'WIPED' },
+            responsive_web_stream_results_refactor_enabled: { value: 'WIPED' },
             responsive_web_third_party_sso_buttons_enabled: { value: 'WIPED' },
             responsive_web_trends_setting_new_endpoints: { value: 'WIPED' },
             responsive_web_trigger_test_backoff_on_bookmark: { value: 'WIPED' },
@@ -985,6 +1000,7 @@
             responsive_web_zipkin_api_requests_paths_allowlist: { value: 'WIPED' },
             rito_safety_mode_blocked_profile_enabled: { value: false },
             rito_safety_mode_features_enabled: { value: false },
+            rito_safety_mode_settings_enabled: { value: false },
             scribe_api_error_sample_size: { value: 0 },
             scribe_api_sample_size: { value: 100 },
             scribe_cdn_host_list: {
@@ -1070,6 +1086,7 @@
             voice_rooms_reactions_enabled: { value: false },
             voice_rooms_recent_search_audiospace_ring_enabled: { value: true },
             voice_rooms_scheduling_enabled: { value: true },
+            voice_rooms_search_results_page_audiospace_ring_enabled: { value: false },
             voice_rooms_share_dock_enabled: { value: false },
             voice_rooms_speaking_enabled: { value: false },
             voice_rooms_typeahead_audiospace_ring_enabled: { value: true },
@@ -1474,6 +1491,10 @@
               responsive_web_graphql_topic_timeline_enabled: { value: 'WIPED' },
               responsive_web_graphql_tweet_by_rest_id: { value: 'WIPED' },
               responsive_web_graphql_user_results: { value: 'WIPED' },
+              responsive_web_hashflags_api_new: { value: 'WIPED' },
+              responsive_web_hashtag_highlight_is_enabled: { value: 'WIPED' },
+              responsive_web_hashtag_highlight_show_avatar: { value: 'WIPED' },
+              responsive_web_hashtag_highlight_use_small_font: { value: 'WIPED' },
               responsive_web_highlight_details_experiment_bucket: { value: 'WIPED' },
               responsive_web_hoisting_anchor_invalidation_enabled: { value: 'WIPED' },
               responsive_web_inline_login_box_enabled: { value: 'WIPED' },
@@ -1525,6 +1546,8 @@
               responsive_web_promoted_tweet_param_append_enabled: { value: 'WIPED' },
               responsive_web_promoted_tweet_url_rewrite_enabled: { value: 'WIPED' },
               responsive_web_qp_pa_signup_enabled: { value: 'WIPED' },
+              responsive_web_reactions_darkread_metadata: { value: 'WIPED' },
+              responsive_web_reactions_darkread_perspective: { value: 'WIPED' },
               responsive_web_reactions_enabled: { value: 'WIPED' },
               responsive_web_recent_searches_events_enabled: { value: 'WIPED' },
               responsive_web_recent_searches_topics_enabled: { value: 'WIPED' },
@@ -1550,6 +1573,7 @@
               responsive_web_settings_timeline_refresh_instant_default: { value: 'WIPED' },
               responsive_web_sidebar_ttf_enabled: { value: 'WIPED' },
               responsive_web_ssr_graphql_conversations_enabled: { value: 'WIPED' },
+              responsive_web_stream_results_refactor_enabled: { value: 'WIPED' },
               responsive_web_third_party_sso_buttons_enabled: { value: 'WIPED' },
               responsive_web_trends_setting_new_endpoints: { value: 'WIPED' },
               responsive_web_trigger_test_backoff_on_bookmark: { value: 'WIPED' },
@@ -1570,6 +1594,7 @@
               responsive_web_zipkin_api_requests_paths_allowlist: { value: 'WIPED' },
               rito_safety_mode_blocked_profile_enabled: { value: false },
               rito_safety_mode_features_enabled: { value: false },
+              rito_safety_mode_settings_enabled: { value: false },
               scribe_api_error_sample_size: { value: 0 },
               scribe_api_sample_size: { value: 100 },
               scribe_cdn_host_list: {
@@ -1655,6 +1680,7 @@
               voice_rooms_reactions_enabled: { value: false },
               voice_rooms_recent_search_audiospace_ring_enabled: { value: true },
               voice_rooms_scheduling_enabled: { value: true },
+              voice_rooms_search_results_page_audiospace_ring_enabled: { value: false },
               voice_rooms_share_dock_enabled: { value: false },
               voice_rooms_speaking_enabled: { value: false },
               voice_rooms_typeahead_audiospace_ring_enabled: { value: true },
@@ -1674,13 +1700,6 @@
         },
         urt: {},
         toasts: [],
-        entities: {
-          communities: { entities: {}, errors: {}, fetchStatus: {} },
-          users: { entities: {}, errors: {}, fetchStatus: {} },
-          tweets: { entities: {}, errors: {}, fetchStatus: {} },
-          cards: { entities: {}, errors: {}, fetchStatus: {} },
-          userPresence: { entities: {}, errors: {}, fetchStatus: {} },
-        },
         educationFlags: {},
         session: {
           country: 'WIPED',
@@ -1741,11 +1760,31 @@
       }
       window.__META_DATA__ = {
         env: 'prod',
-        sha: '632d717bcd780c4fc2f020769b090874c67481a6',
+        sha: '29a10376fe036ddc1fb7e6b862fe2e734308e836',
         isLoggedIn: false,
         hasMultiAccountCookie: false,
         uaParserTags: ['m2', 'rweb_unsupported', 'msw'],
         serverDate: 42,
+        cookies: {
+          fetchedTime: 1629228684490,
+          version: 0,
+          categories: {
+            2: [
+              'tooltip',
+              '_sl',
+              'timezone',
+              'aem-lang-preference',
+              'fontsLoaded',
+              'form-lead-gen',
+              'lang-preference',
+              'ssa-calendar-signup',
+              'language',
+              'user-profile',
+              'cookie_prefs',
+              'tweetdeck_version',
+            ],
+          },
+        },
       }
     </script>
     <script id="nonce-csp" nonce="WIPED"></script>
@@ -1753,11 +1792,11 @@
       window.__SCRIPTS_LOADED__ = {}
       !(function (e) {
         function d(d) {
-          for (var o, r, t = d[0], l = d[1], u = d[2], b = 0, s = []; b < t.length; b++)
+          for (var o, r, t = d[0], l = d[1], c = d[2], b = 0, s = []; b < t.length; b++)
             (r = t[b]), Object.prototype.hasOwnProperty.call(a, r) && a[r] && s.push(a[r][0]), (a[r] = 0)
           for (o in l) Object.prototype.hasOwnProperty.call(l, o) && (e[o] = l[o])
-          for (c && c(d); s.length; ) s.shift()()
-          return i.push.apply(i, u || []), n()
+          for (u && u(d); s.length; ) s.shift()()
+          return i.push.apply(i, c || []), n()
         }
         function n() {
           for (var e, d = 0; d < i.length; d++) {
@@ -2046,113 +2085,113 @@
                     }[e] || e) +
                     '.' +
                     {
-                      0: 'b10429c',
+                      0: '0fdfcfa',
                       3: '8473aba',
-                      4: '22fc60e',
-                      5: 'f943551',
-                      6: '34fe245',
+                      4: '1dc66ed',
+                      5: 'b8c6d68',
+                      6: 'e8fb179',
                       7: 'c730c82',
-                      8: '330b3b3',
+                      8: '04932f3',
                       9: 'd5a9227',
-                      10: '272c73b',
+                      10: '634e034',
                       11: 'a36cced',
-                      12: 'ee972be',
-                      13: 'ad31122',
+                      12: '6337a5b',
+                      13: '651cd0b',
                       14: 'f401e91',
-                      15: '37ebd8f',
-                      16: '3890de4',
-                      17: 'a3bb718',
-                      18: '4babf63',
+                      15: 'a03e704',
+                      16: '6685b37',
+                      17: '44feaed',
+                      18: 'b4601d8',
                       19: 'f05a6a2',
-                      20: 'a5418f7',
-                      21: '1fa87fa',
+                      20: '1121a93',
+                      21: 'b5ea0fa',
                       22: '9ba6d97',
-                      23: 'fd4d575',
+                      23: 'c1e1dbc',
                       24: '87d9448',
                       25: 'a317682',
-                      26: 'fff671c',
+                      26: '25542a8',
                       27: 'd3fbb17',
                       28: 'bbb3c84',
                       29: '7761e58',
                       30: '79f3ccc',
-                      31: '802b1fd',
-                      32: 'ce1e83f',
+                      31: '5ccbc89',
+                      32: '9987e88',
                       33: '2aecbd8',
                       34: '3011d4e',
                       35: 'f70213f',
                       36: '01f6950',
-                      37: '0a71200',
+                      37: 'd33d85f',
                       38: 'e45e642',
                       39: '1bfdfec',
-                      40: '6502767',
-                      41: 'fea9436',
-                      42: '4b081bb',
+                      40: 'aea9a04',
+                      41: '9bb1f1f',
+                      42: 'd4bf24b',
                       43: '622f2a0',
-                      44: '836dbc2',
+                      44: 'bd6be50',
                       45: '48d09be',
-                      46: '6d2ade4',
-                      47: 'e1ffc50',
+                      46: '877ae44',
+                      47: '596c55e',
                       48: 'df4d07c',
                       49: '334d4e0',
-                      50: '68e85f3',
+                      50: 'fbc4409',
                       51: 'da898cd',
                       52: 'fe9740c',
                       53: '092d05b',
                       54: '07f05d5',
                       55: 'f217562',
-                      56: '7704137',
+                      56: '44b0f1f',
                       57: 'b91a9a1',
-                      58: '876df8e',
-                      59: '1055611',
+                      58: '01be2ea',
+                      59: '25575e4',
                       60: 'c00af69',
                       61: 'e00d461',
-                      62: '364036f',
+                      62: 'cc22c67',
                       63: '40f2c5e',
                       64: 'de84383',
                       65: '7d0a954',
-                      66: '9922bf0',
+                      66: '79882f2',
                       67: 'dca46a5',
                       68: 'd37d961',
-                      69: '118747b',
+                      69: '422c11c',
                       70: '904b0d9',
-                      71: 'e893b2e',
+                      71: '4a97d40',
                       72: '7ee98b5',
-                      73: 'f66313a',
+                      73: 'fcb6c9e',
                       74: '062247f',
                       75: 'f5d213f',
                       76: '0d4d15c',
-                      77: 'c936375',
-                      78: 'c3e222e',
+                      77: '1267517',
+                      78: '2c1af31',
                       79: '2aa5f6e',
-                      80: '0d1de66',
+                      80: '4e8a236',
                       81: 'f948458',
                       82: '6502ba4',
                       83: '9e5d91b',
                       84: '7dfaa8b',
-                      85: '3f40ba4',
-                      86: '4d0c657',
-                      87: '5797150',
-                      88: 'a246427',
+                      85: 'a1984d1',
+                      86: 'bf75586',
+                      87: '282fbf5',
+                      88: '550261c',
                       89: '5aa2b00',
                       90: '72e8e44',
                       91: '2c41532',
                       92: 'eed38d6',
                       93: '6d668c7',
                       94: '0c81087',
-                      95: 'bd747ea',
-                      96: '92c2b5d',
+                      95: '4b8d43b',
+                      96: 'e8d7bf2',
                       97: '77688cd',
                       98: 'ecbf517',
                       99: '03d1e61',
                       150: '8ddc6d0',
-                      151: '7e6370c',
+                      151: '5243253',
                       152: 'd6f8aac',
                       153: '9c5e2c5',
                       154: '4b9e179',
                       155: 'c1e40b0',
-                      156: '00e83d8',
+                      156: 'cd2073e',
                       157: '74bed51',
-                      158: 'c913dd8',
+                      158: 'd20043b',
                       159: '77a03fb',
                       160: 'b3e6ded',
                       161: '1ef1c1b',
@@ -2162,20 +2201,20 @@
                       165: 'b7d19f6',
                       166: '1433a7d',
                       167: '32cea4a',
-                      168: 'f64419d',
-                      169: '47268a5',
-                      170: 'ab90531',
+                      168: '708cd04',
+                      169: '4557969',
+                      170: '4f36891',
                       171: 'c95999d',
                       172: 'c4c492d',
                       173: '6c07e2d',
                       174: '3b3db20',
                       175: '099706a',
                       176: '2521681',
-                      177: '33152be',
+                      177: 'b63fb0e',
                       178: 'cd88d2f',
                       180: '8baa171',
                       181: '67986e3',
-                      182: '9d833a4',
+                      182: 'b07f42c',
                       183: 'a8ca194',
                       184: 'ac1debb',
                       185: 'a6ac92c',
@@ -2184,17 +2223,17 @@
                       188: '7437614',
                       189: '994133e',
                       190: '565611c',
-                      191: '0116f63',
+                      191: 'e3797a8',
                       192: '0553a33',
                       193: '2ba0c74',
                       194: 'd6be717',
                       195: '55f2456',
                       196: '1380114',
-                      197: '36f9188',
+                      197: '6cce3ff',
                       198: '734c992',
-                      199: 'f1035f3',
-                      200: 'd4bc56f',
-                      201: '8cfdb09',
+                      199: 'c4cb712',
+                      200: '27e5902',
+                      201: 'bb5471e',
                       202: 'c725412',
                       203: '5933309',
                       204: '3e9b94c',
@@ -2298,7 +2337,7 @@
                 })(e))
               var l = new Error()
               i = function (d) {
-                ;(t.onerror = t.onload = null), clearTimeout(u)
+                ;(t.onerror = t.onload = null), clearTimeout(c)
                 var n = a[e]
                 if (0 !== n) {
                   if (n) {
@@ -2313,7 +2352,7 @@
                   a[e] = void 0
                 }
               }
-              var u = setTimeout(function () {
+              var c = setTimeout(function () {
                 i({ type: 'timeout', target: t })
               }, 12e4)
               ;(t.onerror = t.onload = i), document.head.appendChild(t)
@@ -2369,8 +2408,8 @@
         var t = (window.webpackJsonp = window.webpackJsonp || []),
           l = t.push.bind(t)
         ;(t.push = d), (t = t.slice())
-        for (var u = 0; u < t.length; u++) d(t[u])
-        var c = l
+        for (var c = 0; c < t.length; c++) d(t[c])
+        var u = l
         n()
       })([]),
         (window.__SCRIPTS_LOADED__.runtime = !0)
@@ -2381,28 +2420,28 @@
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/polyfills.36dbf9c5.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/polyfills.8fceaea5.js"
     ></script>
     <script
       type="text/javascript"
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/vendors~main.ca8569d5.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/vendors~main.bc2d8bf5.js"
     ></script>
     <script
       type="text/javascript"
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.714cf4b5.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.d8d38235.js"
     ></script>
     <script
       type="text/javascript"
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/main.0987f595.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/main.3560dee5.js"
     ></script>
     <script nonce="WIPED">
       ;(function () {

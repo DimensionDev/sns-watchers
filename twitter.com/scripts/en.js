@@ -7,7 +7,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         o.r(t)
         o('oTxr')
       },
-      fRV1: function (e, t) {
+      bIdo: function (e, t) {
         var o
         o = (function () {
           return this
@@ -518,6 +518,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Unblock @' + e.screenName
           }),
           n('h7f25e2b', 'They will be able to follow you and view your Tweets.'),
+          n('ae3e9c81', function (e) {
+            return 'Remove @' + e.screenName + ' from Autoblocked accounts list?'
+          }),
+          n('db2f1007', 'They will be able to see your Tweets, follow you, and send you Direct Messages.'),
           n('a30b63da', 'Something went wrong. Try removing the follower again in a minute.'),
           n('a2f8105f', 'Messages'),
           n('e839db39', 'Dismiss'),
@@ -1179,13 +1183,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('h3032750', 'Get more info'),
           n('af250eb6', 'Blocking user'),
           n('ib147a39', 'Hiding reply'),
-          n('e8ff17e5', 'Revise'),
-          n('cd33a61c', 'Why did I get this?'),
-          n('g97558f6', 'What does this mean for your reply?')
-        n(
-          'cd80d930',
-          'We want to keep Twitter safe and open. If we detect potentially harmful or offensive language in a reply—like insults, name-calling, strong language, or hateful remarks—we’re asking people if they want to revise it. We’re working to better understand and predict when people might want to revise their replies.',
-        ),
+          n('e8ff17e5', 'Revise')
+        n('cd33a61c', 'Why did I get this?'),
+          n('g97558f6', 'What does this mean for your reply?'),
+          n(
+            'cd80d930',
+            'We want to keep Twitter safe and open. If we detect potentially harmful or offensive language in a reply—like insults, name-calling, strong language, or hateful remarks—we’re asking people if they want to revise it. We’re working to better understand and predict when people might want to revise their replies.',
+          ),
           n(
             'b0476eb2',
             'Twitter won’t report your reply, and you can still send it without revising it. But replies with potentially harmful or offensive language are more likely to be reported by others.',
@@ -1276,6 +1280,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('h9694423', function (e) {
             return '+' + e.count
           }),
+          n('aadbc746', function (e) {
+            return 'Co-host' + a(e.hostCount, '', 's')
+          }),
           n('ba55e824', 'Ended'),
           n('j245c654', 'Speakers'),
           n('cc5ab041', 'This space has ended'),
@@ -1349,6 +1356,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('j6ac7741', 'It expresses a personal opinion'),
           n('b1d82aae', 'Did you link to sources you believe most people would consider trustworthy?'),
           n('b7ec04f3', 'Yes'),
+          n('gfa725ae', 'Birdwatch values'),
           n('c3d89aca', 'Continue'),
           n('h7ad677b', 'A quick reminder of the Birdwatch values:'),
           n('eac7b6ab', 'Contribute to build understanding'),
@@ -1439,10 +1447,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('cbfa448b', 'Help people stay better informed on Twitter.'),
           n('b171d7c4', 'Join'),
           n('ab23a972', 'Follow the conversation'),
-          n('cd8984b9', 'Birdwatch Values'),
-          n('e6ae103e', '1. Contribute to build understanding'),
-          n('fd5b7e67', '2. Act in good faith'),
-          n('c21adcc9', '3. Be helpful, even to those who disagree'),
           n('c68f3bcf', 'Learn more about our values'),
           n('dfb1f498', 'Feedback'),
           n('b8a36128', 'Send us a DM @birdwatch'),
@@ -1555,12 +1559,22 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('b139b549', 'Invite members'),
           n('dfddd842', 'Sent via Direct Message'),
           n('cf4898a0', 'Search for people'),
-          n('a3b3939a', function (e) {
-            return '@' + e.screen_name + ' has already been invited'
+          n('ecff36cc', function (e) {
+            return '@' + e.screen_name + ' has already been invited by someone else'
           }),
-          n('ef4602eb', 'Something went wrong. Please try again later.'),
+          n('db4f0cc9', function (e) {
+            return '@' + e.screen_name + ' is already in this Community'
+          }),
+          n('a5cd93f9', function (e) {
+            return '@' + e.screen_name + ' can’t be invited right now'
+          }),
+          n('ba5a88e3', 'Suggested'),
+          n('cebebb32', function (e) {
+            return 'You have ' + e.remaining_invite_count + ' invites left'
+          }),
           n('cd133485', 'Invite'),
           n('hb1e378e', 'Invited'),
+          n('bcd6bb0d', 'Member'),
           n('c045c7b6', 'Reported Tweets'),
           n('dffb0774', 'Nothing to review right now'),
           n('cbb2a93c', 'Moderators have taken care of all reported Tweets.'),
@@ -1578,9 +1592,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           n('ad10c66d', 'You hid this Tweet'),
           n('c6caed9c', 'You kept this Tweet'),
+          n('jf99d610', 'Community Feedback'),
+          n('j643a234', 'This Tweet was hidden by a moderator for breaking Community rules'),
+          n('c730a21c', 'Here’s the rule it broke:'),
+          n('a5baa7d1', 'Take a minute to review the rules. They help keep conversations safe and on track'),
           n('cb6adb1f', 'Discover Communities'),
           n('b8f0483e', 'Compose new Tweet'),
           n('a133d13e', 'Unsent Tweets'),
+          n('a1183237', 'Tweeting within a Community'),
+          n(
+            'da2663f5',
+            'While Communities are public and can be seen by anyone, this Tweet will only be shared with others in the Community — not your followers.',
+          ),
           n('ed33a3b6', 'Hello, wordsmiths.'),
           n('jea718ec', 'Learn More'),
           n('c55eed71', 'Replying to'),
@@ -2318,20 +2341,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Decide whether people who have your email address or phone number can find and connect with you on Twitter.',
           ),
           n('ebc41952', 'Let people who have your email address find you on Twitter'),
-          n('f40a6338', 'Let people who have your email address find and connect with you on Twitter.'),
-          n('ac9314aa', 'Let people who have your phone number find you on Twitter'),
-          n('d86a220e', 'Let people who have your phone number find and connect with you on Twitter.'),
-          n('ac77c66c', 'Contacts'),
-          n('bbcafbd9', 'Manage contacts'),
-          n('jadf483e', 'Manage contacts that you have imported from your mobile devices.'),
-          n('b864be79', 'Remove all contacts'),
-          n('g5fa1090', 'Remove all contacts?'),
-          n(
-            'h0d21912',
-            'This removes any contacts you’ve previously uploaded and turns off syncing with Twitter on all devices. Please be aware that this takes a little time, cannot be undone, and you may still notice some suggestions on Twitter (based on your contacts) in the meantime.',
-          ),
-          n('ca24589e', 'No name'),
-          n('b8dd5e4d', 'Learn more')
+          n('f40a6338', 'Let people who have your email address find and connect with you on Twitter.')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var n = t[o]
@@ -2348,7 +2358,20 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        n('hccd9dbd', 'Please enter your password in order to get this.'),
+        n('ac9314aa', 'Let people who have your phone number find you on Twitter'),
+          n('d86a220e', 'Let people who have your phone number find and connect with you on Twitter.'),
+          n('ac77c66c', 'Contacts'),
+          n('bbcafbd9', 'Manage contacts'),
+          n('jadf483e', 'Manage contacts that you have imported from your mobile devices.'),
+          n('b864be79', 'Remove all contacts'),
+          n('g5fa1090', 'Remove all contacts?'),
+          n(
+            'h0d21912',
+            'This removes any contacts you’ve previously uploaded and turns off syncing with Twitter on all devices. Please be aware that this takes a little time, cannot be undone, and you may still notice some suggestions on Twitter (based on your contacts) in the meantime.',
+          ),
+          n('ca24589e', 'No name'),
+          n('b8dd5e4d', 'Learn more'),
+          n('hccd9dbd', 'Please enter your password in order to get this.'),
           n('jabb9c9a', 'Location information'),
           n('eb029cab', 'Add location information to your Tweets'),
           n(
@@ -2417,10 +2440,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('f587e41e', 'You aren’t blocking anyone'),
           n('ef731b13', 'Loading blocked accounts'),
           n('e554ba82', 'Learn more'),
-          n('ae3e9c81', function (e) {
-            return 'Remove @' + e.screenName + ' from Autoblocked accounts list?'
-          }),
-          n('db2f1007', 'They will be able to see your Tweets, follow you, and send you Direct Messages.'),
           n('if594962', 'Blocked'),
           n('hd7cb7cf', 'When we autoblock an account, it’ll show up here.'),
           n('i3889a1f', 'Find out how you can import a block list.'),
@@ -3070,7 +3089,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'bff84f29',
             'Existing replies from autoblocked accounts are moved to the bottom of the conversation, so fewer people see them.',
           ),
-          n('afe739d3', 'Settings'),
           n('da139a0c', 'Safety mode'),
           n(
             'haec9491',
@@ -3530,15 +3548,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('ib1e0888', 'See Privacy Policy'),
           n('a976a91d', 'Start reading on Revue'),
           n('ab0deccf', 'Subscribe'),
-          n('h3281ce9', 'You’re in the loop!'),
-          n('f05df263', 'Check your inbox for the latest issues or read on Revue'),
+          n('h3281ce9', 'You’re in the loop!')
+        n('f05df263', 'Check your inbox for the latest issues or read on Revue'),
           n('c45ea908', 'Or, subscribe through Revue'),
           n('b6f9f574', 'Subscribe to newsletter'),
           n('d1c4aeaf', 'Terms of Service'),
           n('a5d264ec', 'Privacy Policy'),
           n('dbf6d075', 'Your Fleet was removed'),
-          n('bc52028e', 'Your Fleet contained a Tweet from an account owner who limits who can view their Tweets.')
-        n('daf6f4b1', 'Your Fleet contained a Tweet that was deleted by the Tweet author.'),
+          n('bc52028e', 'Your Fleet contained a Tweet from an account owner who limits who can view their Tweets.'),
+          n('daf6f4b1', 'Your Fleet contained a Tweet that was deleted by the Tweet author.'),
           n('a98ba778', 'Notifications timelines'),
           n('f287bb3a', 'From likes to Retweets and a whole lot more, this is where all the action happens.'),
           n('h994ec4f', 'From reactions to Retweets and a whole lot more, this is where all the action happens.'),
@@ -3758,6 +3776,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('ed8bb5af', 'Add payment details'),
           n('be2dc078', 'Sign up and add payment details'),
           n('da2805d1', 'A campaign for this tweet has already been created.'),
+          n('ef4602eb', 'Something went wrong. Please try again later.'),
           n('a4db098b', 'It looks like we couldn’t create your promotion. Please try again later.'),
           n('ef7e3916', 'Something went wrong. Check your promotion details and try again.'),
           n('d56b5ac3', 'Twitter Terms and Advertising Guidelines'),
@@ -3883,7 +3902,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('f0ab07f4', function (e) {
             return 'Members (' + e.memberCount + ')'
           }),
-          n('ba5a88e3', 'Suggested'),
           n('h9ce3405', 'List members'),
           n('dfeaeb26', 'Add to your List'),
           n('dc24ae43', 'When people get added, they’ll show up here.'),
@@ -4088,14 +4106,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('aa4209e8', 'Super Followers'),
           n('i099d32d', 'Followers you know'),
           n('c64974fb', 'Followers'),
-          n('bc856800', 'You don’t have any super followers yet'),
+          n('ed51baba', 'You don’t have any Super Followers yet'),
           n('g65f4bab', 'You don’t have any followers yet'),
           n('f9b11c03', 'You aren’t following anyone yet'),
-          n('ia64fe90', 'When someone super follows you, you’ll see them here.'),
+          n('a1f9e34c', 'You will find a list of everyone who Super Follows you here.'),
           n('j029a4db', 'When someone follows you, you’ll see them here.'),
           n('fdf1390e', 'When you do, they’ll be listed here and you’ll see their Tweets in your timeline.'),
-          n('g81b61a2', function (e) {
-            return '@' + e.screenName + ' doesn’t have any super followers'
+          n('j759a7c2', function (e) {
+            return '@' + e.screenName + ' doesn’t have any Super Followers yet'
           }),
           n('d74ee2e2', function (e) {
             return '@' + e.screenName + ' doesn’t have any followers you know yet'
@@ -4106,7 +4124,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('ae5749c6', function (e) {
             return '@' + e.screenName + ' isn’t following anyone'
           }),
-          n('e810d84d', 'When someone super follows them, they’ll be listed here.'),
+          n('b2f3c46a', 'When someone Super Follows them, they’ll be listed here.'),
           n('ec251f36', 'When someone you know follows them, they’ll be listed here.'),
           n('c0455f4a', 'When someone follows them, they’ll be listed here.'),
           n('ce281ddf', 'You don’t have any follower requests'),
@@ -4190,13 +4208,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('df8cd2af', function (e) {
             return 'Slide ' + e.currentSlide + ' of ' + e.itemCount + ' - Carousel. ' + e.type + '. ' + e.altText
           }),
+          n('gea7aa3c', 'Next'),
+          n('b6462b32', 'Previous'),
           n('d70740d9', 'Next slide'),
           n('c4d53ba2', 'Previous slide'),
           n('h6405c17', function (e) {
             return 'Slide ' + e.currentSlide + ' of ' + e.itemCount + ' - Carousel'
           }),
-          n('gea7aa3c', 'Next'),
-          n('b6462b32', 'Previous'),
           n('hdf426f5', function (e) {
             return 'Topic · ' + e.description
           }),
@@ -5176,6 +5194,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'b38e130b',
                 get: function () {
                   return ['', ' ']
+                },
+              },
+              {
+                key: 'a32e9137',
+                get: function () {
+                  return ['For more reactions, hover over the Like ', ' button']
+                },
+              },
+              {
+                key: 'b75c83d2',
+                get: function () {
+                  return ['For more reactions, press and hold the Like ', ' button']
                 },
               },
               {
@@ -6224,12 +6254,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'i34eeb36',
                 get: function () {
                   return [this.props.infoText + ' ']
-                },
-              },
-              {
-                key: 'g916d45b',
-                get: function () {
-                  return ['You can always manage your preferences in ', '.']
                 },
               },
               {
