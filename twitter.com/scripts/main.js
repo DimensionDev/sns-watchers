@@ -1523,7 +1523,14 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
         var v = 'entities',
           b = { entities: {}, errors: {}, fetchStatus: {} },
-          y = Object.freeze({ communities: b, users: b, tweets: b, cards: b, userPresence: b }),
+          y = Object.freeze({
+            communities: b,
+            users: b,
+            tweets: b,
+            cards: b,
+            userPresence: b,
+            userCommunityInviteActionResult: b,
+          }),
           g = 'rweb/entities/ADD_ENTITIES',
           _ = function (e) {
             return { type: g, payload: e }
@@ -2632,7 +2639,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 return function (e, t, n) {
                   n.api
                   var r = n.featureSwitches
-                  Object(g.j)(t()) &&
+                  Object(g.k)(t()) &&
                     r.isTrue('responsive_web_auto_logout_restrictedauthtoken_enabled') &&
                     e(Object(u.c)()).then(function () {
                       window.location.reload(!0)
@@ -2812,7 +2819,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
       },
       '0Qfu': function (e, t) {
-        e.exports = { queryId: '9tzFQKkqqKPFxlBaLhnP-w', operationName: 'BizProfileFetchUser', operationType: 'query' }
+        e.exports = { queryId: 'o3OXj0LtB6MkqfR7o3_Fig', operationName: 'BizProfileFetchUser', operationType: 'query' }
       },
       '0aqg': function (e, t, n) {
         'use strict'
@@ -3640,6 +3647,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             responsive_web_alt_svc: !0,
             responsive_web_alt_text_badge_enabled: !0,
             responsive_web_api_transition_enabled: !0,
+            responsive_web_app_bar_scroll_enabled: !0,
             responsive_web_article_nudge_enabled: !0,
             responsive_web_articles_enabled: !0,
             responsive_web_auto_logout_multiaccount_enabled: !0,
@@ -4840,12 +4848,19 @@ window.__SCRIPTS_LOADED__.i18n &&
           var t = e.style,
             n = e.iconStyle,
             r = e.type,
-            i = a()(e, ['style', 'iconStyle', 'type']),
-            s = c.createElement(l.a, { style: n }),
-            u = Object(d.a)()
+            i = e.testID,
+            s = a()(e, ['style', 'iconStyle', 'type', 'testID']),
+            u = c.createElement(l.a, { style: n }),
+            f = Object(d.a)()
           return c.createElement(
             p.a,
-            o()({ hoverLabel: { label: h } }, i, { icon: s, pullRight: !0, style: [t, m.button], type: r || u }),
+            o()({ hoverLabel: { label: h } }, s, {
+              icon: u,
+              pullRight: !0,
+              style: [t, m.button],
+              testID: i,
+              type: r || f,
+            }),
           )
         }
       },
@@ -5138,7 +5153,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
               h = function () {
                 var n, r
-                ;(n = Object(c.n)(e.getState())),
+                ;(n = Object(c.o)(e.getState())),
                   (r = l(t)) && (u !== r || (n && n !== r)) && (s.a.flushHTMLCache(), window.location.reload(!0))
               }
             h(),
@@ -8846,6 +8861,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             ModuleCarouselTimeline: 'ui_moduleCarouselTimeline',
             ModuleFooter: 'ui_moduleFooter',
             ModuleGridCarouselTimeline: 'ui_moduleGridCarouselTimeline',
+            ModulePagedCarouselTimeline: 'ui_modulePagedCarouselTimeline',
             ModuleVerticalGridTimelineRow: 'ui_moduleVerticalGridTimelineRow',
             ModuleVerticalGridList: 'ui_moduleVerticalGridTimelineList',
             ModuleHeader: 'ui_moduleHeader',
@@ -10364,6 +10380,12 @@ window.__SCRIPTS_LOADED__.i18n &&
                   },
                 },
                 {
+                  key: 'value',
+                  get: function () {
+                    return this._value
+                  },
+                },
+                {
                   key: 'refresh',
                   value: function () {
                     return (
@@ -10549,11 +10571,11 @@ window.__SCRIPTS_LOADED__.i18n &&
         var Ht = n('Hw0q'),
           Wt = ['/favicon.ico', '/login', '/login/error', '/i/sms_login'],
           zt = function (e) {
-            var t = !_.j(e.getState())
+            var t = !_.k(e.getState())
             if (j.a) {
               var n = function (t) {
                   var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : ''
-                  t && -1 === Wt.indexOf(t) && e.dispatch(_.u(''.concat(t).concat(n)))
+                  t && -1 === Wt.indexOf(t) && e.dispatch(_.v(''.concat(t).concat(n)))
                 },
                 r = j.a.location,
                 o = r.query,
@@ -10852,7 +10874,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           }),
           An = n('rxPX'),
           Mn = Object(An.a)().propsFromState(function () {
-            return { loggedInUserId: _.n }
+            return { loggedInUserId: _.o }
           }),
           Nn = n('wiP2'),
           Bn = n('TnY3'),
@@ -11067,7 +11089,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             }
           }),
           Zn = Object(An.a)().propsFromState(function () {
-            return { scale: Oe.y, themeColor: Oe.C, themeBackground: Oe.B, highContrastEnabled: Oe.p, isLoggedIn: _.j }
+            return { scale: Oe.y, themeColor: Oe.C, themeBackground: Oe.B, highContrastEnabled: Oe.p, isLoggedIn: _.k }
           }),
           $n = n('38/B'),
           er = n('Eqye'),
@@ -11997,7 +12019,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             ),
             so),
           wo = Object(An.a)().propsFromState(function () {
-            return { userCountry: _.t }
+            return { userCountry: _.u }
           })
         function Eo(e) {
           var t = (function () {
@@ -13580,7 +13602,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             .propsFromState(function () {
               return {
                 activeTeam: du.b,
-                loggedInUserId: _.n,
+                loggedInUserId: _.o,
                 momentId: pu,
                 moment: fu,
                 userTeams: du.g,
@@ -14825,8 +14847,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                       }),
                       un.createElement(bn.b, {
                         component: Ei,
-                        key: '/'.concat(Er.E, '/status/').concat(Er.O, '/community_feedback'),
-                        path: '/'.concat(Er.E, '/status/').concat(Er.O, '/community_feedback'),
+                        key: '/'.concat(Er.S, '/status/').concat(Er.O, '/community_feedback'),
+                        path: '/'.concat(Er.S, '/status/').concat(Er.O, '/community_feedback'),
                       }),
                       un.createElement(
                         bn.b,
@@ -15978,7 +16000,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               n = Object(C.c)(t)
             $n.a.setReducedMotion(Object(Oe.x)(t)),
               er.a.set(Object(Oe.k)(t)),
-              gp.c.setLanguage(Object(_.l)(t) || 'en'),
+              gp.c.setLanguage(Object(_.m)(t) || 'en'),
               _p.a.set(ot.a),
               Op.a.setAllowPrerender(n.isTrue('responsive_web_card_preload_mode'))
             wp.a.set(function (e) {
@@ -16694,7 +16716,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 function (e, t) {
                   if (e.host === P.b || e.host === Ft.a) {
                     var n = Zf(),
-                      r = Object(_.l)(n.getState())
+                      r = Object(_.m)(n.getState())
                     r && (e.headers['x-twitter-client-language'] = Object(Ut.b)(r))
                   }
                   return t(e)
@@ -16998,7 +17020,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               b.f(),
                 (function () {
                   if (L.a.isStandaloneApp()) {
-                    var e = _.n(ah.getState()),
+                    var e = _.o(ah.getState()),
                       t = ah.dispatch(Object(Se.d)('APP')({}))
                     Lf &&
                       e &&
@@ -19063,10 +19085,10 @@ window.__SCRIPTS_LOADED__.i18n &&
           v = n('RqPI'),
           b = Object(h.a)()
             .propsFromState(function () {
-              return { loggedInUserId: v.n, isRestrictedSession: v.k }
+              return { loggedInUserId: v.o, isRestrictedSession: v.l }
             })
             .propsFromActions(function () {
-              return { verifyCredentials: v.v, showSuspendToast: m.f }
+              return { verifyCredentials: v.w, showSuspendToast: m.f }
             }),
           y = n('cwOD'),
           g = n('k49u')
@@ -19951,7 +19973,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           he = (de - le) / (pe - fe)
       },
       AseN: function (e, t) {
-        e.exports = { queryId: 'gNKIQ50A64-D4wf_-mlBaQ', operationName: 'TopicsPickerPageById', operationType: 'query' }
+        e.exports = { queryId: 's6LJynmvcS9Y9SQzHnXtqQ', operationName: 'TopicsPickerPageById', operationType: 'query' }
       },
       AtEG: function (e, t, n) {
         'use strict'
@@ -20190,45 +20212,45 @@ window.__SCRIPTS_LOADED__.i18n &&
         var r = n('ERkP'),
           o = n('3XMw'),
           i = n.n(o),
-          a = n('JGUy'),
-          c = n('/yvb'),
-          s = n('rHpw'),
-          u = n('95Se'),
-          l = n('hOZg'),
-          d = 'back',
-          p = i.a.b08821f3,
-          f = i.a.ia5e7487,
-          h = { back: { Icon: u.a, label: p }, close: { Icon: l.a, label: f } },
-          m = s.a.create(function (e) {
+          a = n('xIW0'),
+          c = n('JGUy'),
+          s = n('/yvb'),
+          u = n('rHpw'),
+          l = n('95Se'),
+          d = n('hOZg'),
+          p = 'back',
+          f = i.a.b08821f3,
+          h = i.a.ia5e7487,
+          m = { back: { Icon: l.a, label: f }, close: { Icon: d.a, label: h } },
+          v = u.a.create(function (e) {
             return { button: { marginLeft: e.spaces.space4 } }
           })
         t.a = function (e) {
           var t = e.backButtonType,
-            n = void 0 === t ? d : t,
+            n = void 0 === t ? p : t,
             o = e.onClick,
-            i = e.testID,
-            s = e.autofocus,
-            u = h[n],
+            i = (e.testID, e.autofocus),
+            u = m[n],
             l = u.Icon,
-            p = u.label,
-            f = Object(a.a)(),
-            v = r.useCallback(
+            d = u.label,
+            f = Object(c.a)(),
+            h = r.useCallback(
               function (e) {
-                null !== e && s && e.focus()
+                null !== e && i && e.focus()
               },
-              [s],
+              [i],
             ),
-            b = { viewType: n === d ? 'back_button' : 'close_button' }
-          return r.createElement(c.a, {
-            accessibilityLabel: p,
+            b = { viewType: n === p ? 'back_button' : 'close_button' }
+          return r.createElement(s.a, {
+            accessibilityLabel: d,
             clientEventContext: b,
-            hoverLabel: { label: p },
+            hoverLabel: { label: d },
             icon: r.createElement(l, null),
             onPress: o,
             pullLeft: !0,
-            ref: v,
-            style: m.button,
-            testID: i,
+            ref: h,
+            style: v.button,
+            testID: a.a.appBar(n),
             type: f,
           })
         }
@@ -20958,7 +20980,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       'C0/a': function (e, t) {
         e.exports = {
-          queryId: 'rZNMHXWefWtdRfo5ZeA0Cw',
+          queryId: 'teYb5lvvkDzUA-z0YsQNGg',
           operationName: 'ViewingOtherUsersTopicsPage',
           operationType: 'query',
         }
@@ -23743,7 +23765,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         S.create = function (e) {
           return function (t, n, r) {
             var o = r.api,
-              i = Object(b.n)(n()),
+              i = Object(b.o)(n()),
               a = Object(v.c)(n()),
               c = null == e || !e.hasOwnProperty('isProductionOnly') || e.isProductionOnly
             return u.b(t, {
@@ -23761,7 +23783,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         ;(S.updateMetadata = function (e) {
           return function (t, n, r) {
             var i = r.api,
-              a = Object(b.n)(n()),
+              a = Object(b.o)(n()),
               c = Object(v.c)(n())
             return u.b(t, {
               request: i.Moments.updateMetadata,
@@ -23816,7 +23838,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           (S.promoteTweet = function (e, t) {
             return function (n, r, o) {
               var i = o.api,
-                a = Object(b.n)(r()),
+                a = Object(b.o)(r()),
                 c = Object(v.c)(r())
               return u.b(n, {
                 request: i.Moments.curateTweetMetadata,
@@ -25496,7 +25518,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             return b({ id: e }, t)
           },
           I = function (e, t, n) {
-            return { sourceUserId: Object(f.n)(n) }
+            return { sourceUserId: Object(f.o)(n) }
           },
           C = Object(m.e)({ namespace: 'users', entityIsComplete: w }),
           k = Object(m.b)(C, {
@@ -25836,7 +25858,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               return n ? F.selectFetchStatus(e, n) : F.selectFetchStatus(e, Object(d.a)(t))
             },
             selectLoggedInUser: function (e) {
-              var t = Object(f.n)(e)
+              var t = Object(f.o)(e)
               return t ? F.select(e, t) : void 0
             },
           },
@@ -26446,7 +26468,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 f = O(o)
               return (
                 c && d.b.isDesktopOS() && i === s.a.LOADED && void 0 === f && e(T(p.b.Off)),
-                a.j(o) && i !== s.a.LOADED && i !== s.a.LOADING
+                a.k(o) && i !== s.a.LOADED && i !== s.a.LOADING
                   ? r.SettingsGraphQL.fetchDataUsageSettings({ deviceId: d.b.deviceId() })
                       .then(function (t) {
                         var n = t.dataSaverMode,
@@ -34687,6 +34709,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   t.isTrue('responsive_web_reactions_enabled') ||
                   t.isTrue('responsive_web_reactions_darkread_perspective'),
                 withSuperFollowsTweetFields: t.isTrue('super_follow_tweet_api_enabled'),
+                withSuperFollowsUserFields: t.isTrue('super_follow_user_api_enabled'),
                 semantic_annotation_ids: null != i ? i : [],
                 conversation_control:
                   'community' === e.conversation_control
@@ -36678,16 +36701,16 @@ window.__SCRIPTS_LOADED__.i18n &&
         n.d(t, 'a', function () {
           return M
         }),
-          n.d(t, 'g', function () {
+          n.d(t, 'h', function () {
             return B
           }),
-          n.d(t, 'h', function () {
+          n.d(t, 'i', function () {
             return F
           }),
           n.d(t, 'f', function () {
             return U
           }),
-          n.d(t, 'i', function () {
+          n.d(t, 'g', function () {
             return H
           }),
           n.d(t, 'j', function () {
@@ -36699,16 +36722,16 @@ window.__SCRIPTS_LOADED__.i18n &&
           n.d(t, 'l', function () {
             return V
           }),
-          n.d(t, 'n', function () {
+          n.d(t, 'm', function () {
             return G
           }),
-          n.d(t, 'm', function () {
+          n.d(t, 'o', function () {
             return K
           }),
-          n.d(t, 'o', function () {
+          n.d(t, 'n', function () {
             return q
           }),
-          n.d(t, 'r', function () {
+          n.d(t, 'p', function () {
             return Q
           }),
           n.d(t, 's', function () {
@@ -36717,29 +36740,32 @@ window.__SCRIPTS_LOADED__.i18n &&
           n.d(t, 't', function () {
             return X
           }),
-          n.d(t, 'p', function () {
+          n.d(t, 'u', function () {
             return J
           }),
           n.d(t, 'q', function () {
             return Z
           }),
-          n.d(t, 'u', function () {
-            return oe
+          n.d(t, 'r', function () {
+            return $
           }),
           n.d(t, 'v', function () {
-            return fe
+            return ie
           }),
-          n.d(t, 'e', function () {
+          n.d(t, 'w', function () {
             return he
           }),
-          n.d(t, 'b', function () {
-            return ve
+          n.d(t, 'e', function () {
+            return me
           }),
-          n.d(t, 'c', function () {
+          n.d(t, 'b', function () {
             return be
           }),
-          n.d(t, 'd', function () {
+          n.d(t, 'c', function () {
             return ye
+          }),
+          n.d(t, 'd', function () {
+            return ge
           })
         n('+KXO'), n('1t7P'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
         var r = n('KEM+'),
@@ -36848,29 +36874,29 @@ window.__SCRIPTS_LOADED__.i18n &&
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : A,
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
-            case $:
-              return T(T({}, e), {}, { csrfToken: t.payload })
-            case ue:
-              return T(T({}, e), {}, { emailLiteLoginUserId: t.payload })
-            case le:
-              return T(T({}, e), {}, { isRestrictedSession: t.payload })
-            case pe:
-              return T(T({}, e), {}, { emailUserId: t.payload })
             case ee:
-              return T(T({}, e), {}, { flashMessage: t.payload })
+              return T(T({}, e), {}, { csrfToken: t.payload })
+            case le:
+              return T(T({}, e), {}, { emailLiteLoginUserId: t.payload })
+            case de:
+              return T(T({}, e), {}, { isRestrictedSession: t.payload })
+            case fe:
+              return T(T({}, e), {}, { emailUserId: t.payload })
             case te:
-              return T(T({}, e), {}, { guestId: t.payload })
+              return T(T({}, e), {}, { flashMessage: t.payload })
             case ne:
-              return t.payload ? T(T({}, e), {}, { language: t.payload }) : e
+              return T(T({}, e), {}, { guestId: t.payload })
             case re:
+              return t.payload ? T(T({}, e), {}, { language: t.payload }) : e
+            case oe:
               return T(T({}, e), {}, { loginReturnPath: t.payload })
-            case ie:
-              return T(T({}, e), {}, { country: t.payload })
             case ae:
+              return T(T({}, e), {}, { country: t.payload })
+            case ce:
               return e.user_id && e.user_id !== t.payload
                 ? (Object(s.a)('Unexpected attempt to change user id.'), e)
                 : (f.canUseDOM && E.a.refreshHTMLCache(), T(T({}, e), {}, { user_id: t.payload }))
-            case ce:
+            case se:
               return T(T({}, e), {}, { userFeatures: t.payload })
             case C.FAILURE:
               return T(T({}, e), {}, { user_id: void 0 })
@@ -36911,72 +36937,75 @@ window.__SCRIPTS_LOADED__.i18n &&
             return N(e).guestSegment
           },
           U = function (e) {
-            return N(e).emailUserId
+            return N(e).emailLiteLoginUserId
           },
           H = function (e) {
-            return !!N(e).isActiveCreator
+            return N(e).emailUserId
           },
           W = function (e) {
-            return !!N(e).user_id
+            return !!N(e).isActiveCreator
           },
           z = function (e) {
-            return N(e).isRestrictedSession
+            return !!N(e).user_id
           },
           V = function (e) {
-            return N(e).language
+            return N(e).isRestrictedSession
           },
           G = function (e) {
-            return N(e).user_id
+            return N(e).language
           },
           K = function (e) {
-            return N(e).userFeatures
+            return N(e).user_id
           },
           q = function (e) {
-            return N(e).loginReturnPath
+            return N(e).userFeatures
           },
           Q = function (e) {
-            return e.session.ssoInitTokens
+            return N(e).loginReturnPath
           },
           Y = function (e) {
-            return N(e).superFollowersCount
+            return e.session.ssoInitTokens
           },
           X = function (e) {
-            return N(e).country
+            return N(e).superFollowersCount
           },
           J = function (e) {
-            return N(e).oneFactorLoginEligibility.data
+            return N(e).country
           },
           Z = function (e) {
+            return N(e).oneFactorLoginEligibility.data
+          },
+          $ = function (e) {
             return N(e).oneFactorLoginEligibility.fetchStatus
           },
-          $ = 'rweb/session/SET_CSRF_TOKEN',
-          ee = 'rweb/session/SET_FLASH_MESSAGE',
-          te = 'rweb/session/SET_GUEST_ID',
-          ne = 'rweb/session/SET_LANGUAGE',
-          re = 'rweb/session/SET_LOGIN_RETURN_PATH',
-          oe = function (e) {
-            return { payload: e, type: re }
+          ee = 'rweb/session/SET_CSRF_TOKEN',
+          te = 'rweb/session/SET_FLASH_MESSAGE',
+          ne = 'rweb/session/SET_GUEST_ID',
+          re = 'rweb/session/SET_LANGUAGE',
+          oe = 'rweb/session/SET_LOGIN_RETURN_PATH',
+          ie = function (e) {
+            return { payload: e, type: oe }
           },
-          ie = 'rweb/session/SET_USER_COUNTRY',
-          ae = 'rweb/session/SET_USER_ID',
-          ce = 'rweb/session/SET_USER_FEATURES',
-          se = function (e) {
-            return { payload: e, type: ce }
+          ae = 'rweb/session/SET_USER_COUNTRY',
+          ce = 'rweb/session/SET_USER_ID',
+          se = 'rweb/session/SET_USER_FEATURES',
+          ue = function (e) {
+            return { payload: e, type: se }
           },
-          ue = 'rweb/session/SET_EMAIL_LITE_LOGIN_USER_ID',
-          le = 'rweb/session/SET_IS_RESTRICTED_SESSION',
-          de = function (e) {
-            return { payload: e, type: le }
+          le = 'rweb/session/SET_EMAIL_LITE_LOGIN_USER_ID',
+          de = 'rweb/session/SET_IS_RESTRICTED_SESSION',
+          pe = function (e) {
+            return { payload: e, type: de }
           },
-          pe = 'rweb/session/SET_EMAIL_USER_ID',
-          fe = function (e, t) {
+          fe = 'rweb/session/SET_EMAIL_USER_ID',
+          he = function (e, t) {
             return function (n, r, p) {
               var g = p.api,
                 w = p.userPersistence,
                 E = p.featureSwitches,
                 P = Object(h.b)(n, {
                   apiErrorHandler: function (e, t, n) {
-                    return me(t)
+                    return ve(t)
                   },
                   params: e,
                   headers: t,
@@ -36995,9 +37024,9 @@ window.__SCRIPTS_LOADED__.i18n &&
                     w.setUserId(c.id_str),
                     i && n(Object(O.n)(i)),
                     [
-                      ((s = c.id_str), { payload: s, type: ae }),
-                      de(!!a),
-                      r && se(r),
+                      ((s = c.id_str), { payload: s, type: ce }),
+                      pe(!!a),
+                      r && ue(r),
                       Object(d.c)({
                         users: o()(
                           {},
@@ -37016,7 +37045,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 .catch(function (e) {
                   throw (
                     (f.canUseDOM &&
-                      (W(r()) ||
+                      (z(r()) ||
                         ((function (e, t) {
                           var n = Object(i.a)().hasMultiAccountCookie,
                             r = !!Object(a.getUserIdFromTWID)(e)
@@ -37046,7 +37075,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 })
             }
           },
-          he = function () {
+          me = function () {
             var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
             return function (t, n, r) {
               var o = r.api
@@ -37056,14 +37085,14 @@ window.__SCRIPTS_LOADED__.i18n &&
               })
             }
           },
-          me = function (e) {
+          ve = function (e) {
             var t = e instanceof p.a && Array.isArray(e && e.errors) && Object(j.e)(e.errors)
             return t ? (Object(j.c)(t), Promise.resolve()) : Promise.reject(e)
           },
-          ve = function () {
+          be = function () {
             return function (e, t, n) {
               var r = n.api
-              return W(t())
+              return z(t())
                 ? Promise.resolve()
                 : Object(h.b)(e, { params: {}, request: r.Guest.fetchGuestSegment })({
                     actionTypes: D,
@@ -37071,7 +37100,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   })
             }
           },
-          be = function () {
+          ye = function () {
             var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
             return function (t, n, r) {
               var o = r.api
@@ -37081,7 +37110,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               })
             }
           },
-          ye = function (e) {
+          ge = function (e) {
             return function (t, n, r) {
               var o = r.api
               return Object(h.b)(t, { request: o.Auth.requestSsoInitToken, params: { provider: e } })({
@@ -37307,7 +37336,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               }
             })
             .propsFromActions(function () {
-              return { setLoginPromptShown: x.H, setLoginReturnPath: R.u, updateSettings: x.K }
+              return { setLoginPromptShown: x.H, setLoginReturnPath: R.v, updateSettings: x.K }
             })
             .withAnalytics(),
           L = n('q82E'),
@@ -39616,7 +39645,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                     'signalsReactionPerspective',
                   e.isTrue('voice_consumption_enabled') && 'voiceInfo',
                   e.isTrue('responsive_web_birdwatch_pivots_enabled') && 'birdwatchPivot',
-                  e.isTrue('super_follow_tweet_api_enabled') && 'superFollowMetadata',
+                  (e.isTrue('super_follow_tweet_api_enabled') || e.isTrue('super_follow_user_api_enabled')) &&
+                    'superFollowMetadata',
                 ]),
               ).join(','),
             }
@@ -40026,7 +40056,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               var o = r.userPersistence,
                 i = n(),
                 a = i.typeaheadUsers
-              return Object(p.j)(i)
+              return Object(p.k)(i)
                 ? Date.now() - a.lastUpdated < S || a.fetchStatus === l.a.LOADING || a.fetchStatus === l.a.LOADED
                   ? Promise.resolve()
                   : o.get(P, S).then(
@@ -40298,7 +40328,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           N = function () {
             return function (e, t, n) {
               var r = n.api
-              return a.j(t())
+              return a.k(t())
                 ? i.b(e, { request: r.Settings.fetch })({ actionTypes: m, context: 'FETCH_SETTINGS' })
                 : Promise.resolve()
             }
@@ -40320,7 +40350,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       i =
                         e.screen_name &&
                         t.screen_name &&
-                        h(h({}, d.e.select(r, a.n(r))), {}, { screen_name: t.screen_name })
+                        h(h({}, d.e.select(r, a.o(r))), {}, { screen_name: t.screen_name })
                     return i && [Object(c.c)({ users: o()({}, i.id_str, i) })]
                   }
                 },
@@ -40330,7 +40360,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           U = function (e) {
             return function (t, n, r) {
               var o = r.api,
-                c = { userId: Object(a.n)(n()), dmNsfwMediaFilter: e }
+                c = { userId: Object(a.o)(n()), dmNsfwMediaFilter: e }
               return i.c(t, { params: c, request: o.SettingsGraphQL.updateDmNsfwMediaFilter })({
                 actionTypes: b,
                 context: 'ACTION_UPDATE_DM_NSFW',
@@ -46673,6 +46703,89 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
         })
       },
+      Z08a: function (e, t) {
+        function n(e, t) {
+          'boolean' == typeof t && (t = { forever: t }),
+            (this._originalTimeouts = JSON.parse(JSON.stringify(e))),
+            (this._timeouts = e),
+            (this._options = t || {}),
+            (this._maxRetryTime = (t && t.maxRetryTime) || 1 / 0),
+            (this._fn = null),
+            (this._errors = []),
+            (this._attempts = 1),
+            (this._operationTimeout = null),
+            (this._operationTimeoutCb = null),
+            (this._timeout = null),
+            (this._operationStart = null),
+            this._options.forever && (this._cachedTimeouts = this._timeouts.slice(0))
+        }
+        ;(e.exports = n),
+          (n.prototype.reset = function () {
+            ;(this._attempts = 1), (this._timeouts = this._originalTimeouts)
+          }),
+          (n.prototype.stop = function () {
+            this._timeout && clearTimeout(this._timeout), (this._timeouts = []), (this._cachedTimeouts = null)
+          }),
+          (n.prototype.retry = function (e) {
+            if ((this._timeout && clearTimeout(this._timeout), !e)) return !1
+            var t = new Date().getTime()
+            if (e && t - this._operationStart >= this._maxRetryTime)
+              return this._errors.unshift(new Error('RetryOperation timeout occurred')), !1
+            this._errors.push(e)
+            var n = this._timeouts.shift()
+            if (void 0 === n) {
+              if (!this._cachedTimeouts) return !1
+              this._errors.splice(this._errors.length - 1, this._errors.length),
+                (this._timeouts = this._cachedTimeouts.slice(0)),
+                (n = this._timeouts.shift())
+            }
+            var r = this,
+              o = setTimeout(function () {
+                r._attempts++,
+                  r._operationTimeoutCb &&
+                    ((r._timeout = setTimeout(function () {
+                      r._operationTimeoutCb(r._attempts)
+                    }, r._operationTimeout)),
+                    r._options.unref && r._timeout.unref()),
+                  r._fn(r._attempts)
+              }, n)
+            return this._options.unref && o.unref(), !0
+          }),
+          (n.prototype.attempt = function (e, t) {
+            ;(this._fn = e),
+              t && (t.timeout && (this._operationTimeout = t.timeout), t.cb && (this._operationTimeoutCb = t.cb))
+            var n = this
+            this._operationTimeoutCb &&
+              (this._timeout = setTimeout(function () {
+                n._operationTimeoutCb()
+              }, n._operationTimeout)),
+              (this._operationStart = new Date().getTime()),
+              this._fn(this._attempts)
+          }),
+          (n.prototype.try = function (e) {
+            this.attempt(e)
+          }),
+          (n.prototype.start = function (e) {
+            this.attempt(e)
+          }),
+          (n.prototype.start = n.prototype.try),
+          (n.prototype.errors = function () {
+            return this._errors
+          }),
+          (n.prototype.attempts = function () {
+            return this._attempts
+          }),
+          (n.prototype.mainError = function () {
+            if (0 === this._errors.length) return null
+            for (var e = {}, t = null, n = 0, r = 0; r < this._errors.length; r++) {
+              var o = this._errors[r],
+                i = o.message,
+                a = (e[i] || 0) + 1
+              ;(e[i] = a), a >= n && ((t = o), (n = a))
+            }
+            return t
+          })
+      },
       ZA3S: function (e, t) {
         e.exports = { queryId: 'OpGe6W9JUWxfZQodjAieDw', operationName: 'GetUserClaims', operationType: 'query' }
       },
@@ -46691,46 +46804,44 @@ window.__SCRIPTS_LOADED__.i18n &&
           a = n.n(i),
           c = n('RhWx'),
           s = n.n(c),
-          u = n('ddV6'),
-          l = n.n(u),
-          d =
+          u =
             (n('7x/C'),
             n('lTEL'),
             n('kYxP'),
-            n('LW0h'),
             n('2G9S'),
             n('hBpG'),
+            n('LW0h'),
             n('JtPf'),
             n('IAdD'),
             n('M+/F'),
             n('jwue'),
             n('+oxZ'),
             n('vWJI')),
-          p = n('E6XO'),
-          f = n('eR3e'),
-          h = n('oEOe'),
-          m = n('0KEI'),
-          v = n('hqKg'),
-          b = n('vXCH'),
-          y = n('/kEJ'),
-          g = function (e) {
-            return [Object(y.c)(e)]
+          l = n('E6XO'),
+          d = n('eR3e'),
+          p = n('oEOe'),
+          f = n('0KEI'),
+          h = n('hqKg'),
+          m = n('vXCH'),
+          v = n('/kEJ'),
+          b = function (e) {
+            return [Object(v.c)(e)]
           },
-          _ = n('wrlS'),
-          O = n('MDbM'),
-          w =
+          y = n('wrlS'),
+          g = n('MDbM'),
+          _ =
             (n('87if'),
             function () {
               return n.e(173).then(n.bind(null, 'q1GS'))
             }),
-          E = n('t0aI'),
-          j = n('EIk2'),
-          P = n('SrIh'),
-          S = n('8UdT'),
-          T = n('euJ+'),
-          I = n('F3pd'),
-          C = n('cFuS')
-        function k(e, t) {
+          O = n('t0aI'),
+          w = n('EIk2'),
+          E = n('SrIh'),
+          j = n('8UdT'),
+          P = n('euJ+'),
+          S = n('F3pd'),
+          T = n('cFuS')
+        function I(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -46742,60 +46853,59 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function R(e) {
+        function C(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? k(Object(n), !0).forEach(function (t) {
+              ? I(Object(n), !0).forEach(function (t) {
                   a()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : k(Object(n)).forEach(function (t) {
+              : I(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
-        var x = function (e) {
+        var k = function (e) {
             var t = e.api,
               n = e.feedbackType,
               r = e.feedbackMetadata,
               o = e.undo,
               i = e.endpoint,
               a = { feedback_type: n, feedback_metadata: r, undo: o }
-            return i ? t.URT.postCustomEndpoint(R(R({}, a), {}, { endpoint: i })) : Promise.resolve()
+            return i ? t.URT.postCustomEndpoint(C(C({}, a), {}, { endpoint: i })) : Promise.resolve()
           },
-          D = function (e) {
+          R = function (e) {
             var t = e.api,
               n = e.impressionId,
               r = e.undo,
-              o = { event: C.b.DISMISS, impression_id: n, undo: r }
+              o = { event: T.b.DISMISS, impression_id: n, undo: r }
             return t.PromotedContent.log(o)
           },
-          L = function (e) {
+          x = function (e) {
             switch (e.type) {
-              case S.b.EventSummary:
-              case S.b.Trend:
-              case S.b.Tweet:
-              case S.b.User:
+              case j.b.EventSummary:
+              case j.b.Trend:
+              case j.b.Tweet:
+              case j.b.User:
                 return e.content.promotedMetadata
               default:
                 return
             }
           },
-          A = function (e, t) {
+          D = function (e, t) {
             return e && 'earned' !== (e.disclosureType && e.disclosureType.toLowerCase())
               ? e.impressionId
-              : t && 'earned' !== Object(I.a)(t)
+              : t && 'earned' !== Object(S.a)(t)
               ? t.impression_id
               : void 0
           },
-          M = n('VIKJ'),
-          N = n('Myq3'),
-          B = n('XIog'),
-          F = (n('z84I'), n('zrc3'))
-        function U(e, t) {
+          L = n('Myq3'),
+          A = n('XIog'),
+          M = (n('z84I'), n('zrc3'))
+        function N(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -46807,52 +46917,52 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function H(e) {
+        function B(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? U(Object(n), !0).forEach(function (t) {
+              ? N(Object(n), !0).forEach(function (t) {
                   a()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : U(Object(n)).forEach(function (t) {
+              : N(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
-        var W = function (e, t) {
+        var F = function (e, t) {
             var n, r
-            return e.length < t.length ? ((n = e), (r = t)) : ((n = t), (r = e)), 0 === r.length ? n : z(n, r)
+            return e.length < t.length ? ((n = e), (r = t)) : ((n = t), (r = e)), 0 === r.length ? n : U(n, r)
           },
-          z = function (e, t) {
+          U = function (e, t) {
             for (
               var n = [],
                 r = 0,
                 o = function (o) {
                   var i = e[o],
-                    a = Object(F.a)(
+                    a = Object(M.a)(
                       t,
                       function (e) {
-                        return E.b(i.sortIndex, e.sortIndex)
+                        return O.b(i.sortIndex, e.sortIndex)
                       },
                       r,
                     )
-                  a < 0 && (a = t.length), V(n, t, r, a), (r = a), n.push(i)
+                  a < 0 && (a = t.length), H(n, t, r, a), (r = a), n.push(i)
                 },
                 i = 0;
               i < e.length;
               i++
             )
               o(i)
-            return V(n, t, r, t.length), n
+            return H(n, t, r, t.length), n
           },
-          V = function (e, t, n, r) {
+          H = function (e, t, n, r) {
             for (var o = n; o < r; o++) e.push(t[o])
           },
-          G = n('P1r1')
-        function K(e, t) {
+          W = n('P1r1')
+        function z(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -46864,35 +46974,35 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function q(e) {
+        function V(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? K(Object(n), !0).forEach(function (t) {
+              ? z(Object(n), !0).forEach(function (t) {
                   a()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : K(Object(n)).forEach(function (t) {
+              : z(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
-        var Q = d.a,
-          Y = { performed: !1, empty: !0, cursorType: null },
-          X = [],
-          J = {},
-          Z = function (e, t) {
+        var G = u.a,
+          K = { performed: !1, empty: !0, cursorType: null },
+          q = [],
+          Q = {},
+          Y = function (e, t) {
             return function () {
-              var n = p.d()
+              var n = l.d()
               return t
                 .apply(void 0, arguments)
                 .then(function (t) {
-                  return p.c(''.concat(e, ':success'), n.end()), t
+                  return l.c(''.concat(e, ':success'), n.end()), t
                 })
                 .catch(function (t) {
-                  return p.c(''.concat(e, ':failure'), n.end()), Promise.reject(t)
+                  return l.c(''.concat(e, ':failure'), n.end()), Promise.reject(t)
                 })
             }
           }
@@ -46902,47 +47012,50 @@ window.__SCRIPTS_LOADED__.i18n &&
             r = e.perfKey,
             i = e.timelineId,
             a = e.ingestGlobalObjects,
-            c = void 0 === a ? g : a,
-            u = e.initialFetchCount,
-            p = void 0 === u ? 20 : u,
-            y = e.context,
-            I = e.formatResponse,
-            C = void 0 === I ? b.a : I,
-            k = e.isUserRefreshable,
-            R = void 0 !== k && k,
-            F = e.postFetchAction,
+            c = void 0 === a ? b : a,
+            l = e.initialFetchCount,
+            v = void 0 === l ? 20 : l,
+            S = e.context,
+            T = e.formatResponse,
+            I = void 0 === T ? m.a : T,
+            C = e.isUserRefreshable,
+            M = void 0 !== C && C,
+            N = e.postFetchAction,
             U = e.staleIntervalMs,
-            z = void 0 === U ? 6e4 : U,
-            V = e.darkReadsModule,
-            K = e.timelineType,
-            $ = function (e) {
+            H = void 0 === U ? 6e4 : U,
+            z = e.darkReadsModule,
+            X = e.timelineType,
+            J = function (e) {
               return e.polling ? { 'x-twitter-polling': 'true' } : {}
             },
-            ee = null,
-            te = function (e) {
-              return e[f.a][i] || null
+            Z = null,
+            $ = function (e) {
+              return e[d.a][i] || null
             },
-            ne = function (e, t, n) {
-              var r = Object(v.createSelector)(e, t)
+            ee = function (e, t, n) {
+              var r = Object(h.createSelector)(e, t)
               return function (e) {
-                var t = te(e)
+                var t = $(e)
                 return t ? r(t, e) : n
               }
             },
-            re = function (e) {
+            te = function (e) {
               return e.entries
             },
-            oe = function (e) {
+            ne = function (e) {
               return e.fetchStatus
             },
-            ie = function (e) {
+            re = function (e) {
               return e.unreadEntryIds
             },
-            ae = ne(
+            oe = ee(
               [
-                re,
+                te,
                 function (e) {
                   return e.injections
+                },
+                function (e) {
+                  return e.newTweetsBar
                 },
                 function (e) {
                   return e.timelineModuleInjections
@@ -46950,195 +47063,181 @@ window.__SCRIPTS_LOADED__.i18n &&
                 function (e) {
                   return e.lastRevealedSortIndex
                 },
-                function (e, t) {
-                  return Object(G.h)(t)
-                },
-                function (e, t) {
-                  return Object(G.i)(t)
-                },
               ],
-              function (e, t, n, r, o, i) {
-                var a =
-                    o || i || !R
-                      ? [[], e]
-                      : Object(M.a)(e, function (e) {
-                          return Object(E.b)(e.sortIndex, r)
-                        }),
-                  c = l()(a, 2),
-                  u = c[0],
-                  p = c[1],
-                  f = u.filter(function (e) {
-                    return !d.h(e)
-                  }),
-                  h = (function (e, t) {
-                    return e.map(function (e) {
-                      if (e.type === S.b.TimelineModule) {
-                        var n = t[e.entryId]
-                        if (n) {
-                          var r = W(n, e.content.items)
-                          return H(H({}, e), {}, { content: H(H({}, e.content), {}, { items: r }) })
-                        }
-                        return e
+              function (e, t, n, r, o) {
+                var i = (function (e, t) {
+                  return e.map(function (e) {
+                    if (e.type === j.b.TimelineModule) {
+                      var n = t[e.entryId]
+                      if (n) {
+                        var r = F(n, e.content.items)
+                        return B(B({}, e), {}, { content: B(B({}, e.content), {}, { items: r }) })
                       }
                       return e
-                    })
-                  })(W(p, t), n)
-                return f.length
+                    }
+                    return e
+                  })
+                })(F(e, t), r)
+                return n.instructions.length && n.count
                   ? [
                       {
-                        content: { count: f.length },
+                        content: { count: n.count },
                         entryId: 'newEntriesItem',
                         sortIndex: '-1',
                         itemMetadata: {},
                         type: 'newEntries',
                       },
-                    ].concat(s()(h))
-                  : h
+                    ].concat(s()(i))
+                  : i
               },
-              X,
+              q,
             ),
-            ce = function (e) {
-              var t = te(e)
-              return !t || 0 === re(t).length
+            ie = function (e) {
+              var t = $(e)
+              return !t || 0 === te(t).length
             },
-            se = function (e) {
-              return ue(e, d.b)
+            ae = function (e) {
+              return ce(e, u.b)
             },
-            ue = function (e, t) {
-              var n = te(e)
+            ce = function (e, t) {
+              var n = $(e)
               return n ? n.fetchStatus[t] : void 0
             },
-            le = ne(
+            se = ee(
               [
-                re,
+                te,
                 function (e) {
                   return e.terminatedStatus
                 },
               ],
               function (e, t) {
-                return !t.atTop && !!d.e(e)
+                return !t.atTop && !!u.e(e)
               },
               !1,
             ),
-            de = ne(
-              [re, oe],
+            ue = ee(
+              [te, ne],
               function (e, t) {
                 var n = e.find(function (e) {
-                    return d.i(e, Q.Top) && t.hasOwnProperty(d.g(e))
+                    return u.i(e, G.Top) && t.hasOwnProperty(u.g(e))
                   }),
-                  r = n && d.g(n)
+                  r = n && u.g(n)
                 return n && r ? t[r] : null
               },
               null,
             ),
-            pe = ne(
-              [re, oe],
+            le = ee(
+              [te, ne],
               function (e, t) {
-                var n = Object(N.a)(e, function (e) {
-                    return d.i(e, Q.Bottom) && t.hasOwnProperty(d.g(e))
+                var n = Object(L.a)(e, function (e) {
+                    return u.i(e, G.Bottom) && t.hasOwnProperty(u.g(e))
                   }),
-                  r = n && d.g(n)
+                  r = n && u.g(n)
                 return n && r ? t[r] : null
               },
               null,
             ),
-            fe = {},
-            he = function (e) {
-              var t = te(e)
-              return (null == t ? void 0 : t.responseObjects.feedbackActions) || fe
+            de = {},
+            pe = function (e) {
+              var t = $(e)
+              return (null == t ? void 0 : t.responseObjects.feedbackActions) || de
             },
-            me = ne(
-              [ie],
+            fe = ee(
+              [re],
               function (e) {
                 return e
               },
               {},
             ),
-            ve = ne(
-              [re, ie],
+            he = ee(
+              [te, re],
               function (e, t) {
                 return e.filter(function (e) {
                   return t[e.entryId]
                 })
               },
-              X,
+              q,
             ),
-            be = Object(v.createSelector)(
-              ve,
+            me = Object(h.createSelector)(
+              he,
               function (e) {
-                var t = te(e)
+                var t = $(e)
                 return t ? t.lastSeenSortIndex : null
               },
               function (e, t) {
                 return t
-                  ? Object(B.a)(e, function (e) {
-                      return Object(E.b)(e.sortIndex, t) && !d.h(e)
+                  ? Object(A.a)(e, function (e) {
+                      return Object(O.b)(e.sortIndex, t) && !u.h(e)
                     })
                   : 0
               },
             ),
-            ye = ne(
+            ve = ee(
               [
-                re,
+                te,
                 function (e) {
                   return e.lastSeenSortIndex
                 },
               ],
               function (e, t) {
                 return t
-                  ? Object(B.a)(e, function (e) {
-                      return Object(E.b)(e.sortIndex, t) && !d.h(e)
+                  ? Object(A.a)(e, function (e) {
+                      return Object(O.b)(e.sortIndex, t) && !u.h(e)
                     })
                   : 0
               },
               0,
             ),
-            ge = function (e) {
+            be = function (e) {
               var o = e.sourceEntryId,
                 a = e.cursorValue,
                 s = e.options,
-                u = e.cursorType
-              return function (e, l, p) {
-                var m = p.api,
-                  v = p.featureSwitches,
-                  b = a || d.b
-                if (ue(l(), b) === O.a.LOADING) return Promise.resolve(Y)
-                var g,
-                  _ = q(q({}, s), {}, a ? { cursor: a } : { cursor: void 0 })
-                return Object(h.b)(e, {
-                  headers: $(_),
-                  params: n(_),
-                  request: Z(
-                    'urt:'.concat(r, ':fetch_').concat(u, ':format'),
-                    ((g = Z('urt:'.concat(r, ':fetch_').concat(u), t(m))),
-                    function () {
-                      return g.apply(void 0, arguments).then(function (e) {
-                        return C(e, _)
-                      })
-                    }),
-                  ),
-                })(
+                l = e.cursorType
+              return function (e, f, h) {
+                var m = h.api,
+                  v = h.featureSwitches,
+                  b = a || u.b,
+                  y = f()
+                if (ce(y, b) === g.a.LOADING) return Promise.resolve(K)
+                var O,
+                  w = V(V({}, s), {}, a ? { cursor: a } : { cursor: void 0 }),
+                  E = Object(p.b)(e, {
+                    headers: J(w),
+                    params: n(w),
+                    request: Y(
+                      'urt:'.concat(r, ':fetch_').concat(l, ':format'),
+                      ((O = Y('urt:'.concat(r, ':fetch_').concat(l), t(m))),
+                      function () {
+                        return O.apply(void 0, arguments).then(function (e) {
+                          return I(e, w)
+                        })
+                      }),
+                    ),
+                  }),
+                  j = !Object(W.h)(y) && !Object(W.i)(y) && M
+                return E(
                   {
-                    actionTypes: f.h,
-                    context: y,
+                    actionTypes: d.h,
+                    context: S,
                     meta: {
                       timelineId: i,
                       sourceEntryId: o,
-                      timelineType: K,
+                      timelineType: X,
                       cursorValue: b,
                       timestamp: Date.now(),
                       minimumItemsBetweenAds: v.getNumberValue('ads_spacing_client_fallback_minimum_spacing'),
+                      isNewTweetsBarEnabled: j,
                     },
                   },
                   function (e) {
                     if (e) return c(e.globalObjects)
                   },
                 ).then(function (t) {
-                  if (V && !Object(G.k)(l())) {
+                  if (z && !Object(W.k)(f())) {
                     var n = function () {
-                      return e(V.fetchGraphQLDarkRead({ sourceEntryId: o, cursorValue: a, options: s, cursorType: u }))
+                      return e(z.fetchGraphQLDarkRead({ sourceEntryId: o, cursorValue: a, options: s, cursorType: l }))
                     }
-                    w().then(function (e) {
+                    _().then(function (e) {
                       e.GraphQLDarkRead({
                         name: r,
                         createRequest: n,
@@ -47149,46 +47248,46 @@ window.__SCRIPTS_LOADED__.i18n &&
                     })
                   }
                   return (
-                    F && ee && e(F({ cursorType: u, module: ee })),
-                    { performed: !0, empty: 0 === t.timeline.instructions.length, cursorType: u }
+                    N && Z && e(N({ cursorType: l, module: Z })),
+                    { performed: !0, empty: 0 === t.timeline.instructions.length, cursorType: l }
                   )
                 })
               }
             },
-            _e = function () {
+            ye = function () {
               var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
               return function (t, n) {
                 var r = n()
-                return ce(r)
+                return ie(r)
                   ? t(
-                      ge({
+                      be({
                         sourceEntryId: null,
                         cursorValue: null,
-                        options: q({ count: p }, e),
+                        options: V({ count: v }, e),
                         cursorType: 'Initial',
                       }),
                     )
-                  : Promise.resolve(Y)
+                  : Promise.resolve(K)
               }
             },
-            Oe = function (e, t) {
+            ge = function (e, t) {
               var n = (function (e) {
-                var t = te(e)
+                var t = $(e)
                 return t ? t.lastTopFetchTimestamp : null
               })(e)
-              return n && t - n < z
+              return n && t - n < H
             },
-            we = function (e) {
+            _e = function (e) {
               var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
               return function (n, r) {
                 var o, i
-                return e && d.h(e)
+                return e && u.h(e)
                   ? n(
-                      ge({
+                      be({
                         sourceEntryId: e.entryId,
-                        cursorValue: d.g(e),
-                        options: q(
-                          q({}, t),
+                        cursorValue: u.g(e),
+                        options: V(
+                          V({}, t),
                           {},
                           {
                             indentation:
@@ -47200,36 +47299,36 @@ window.__SCRIPTS_LOADED__.i18n &&
                                 : i.length,
                           },
                         ),
-                        cursorType: d.f(e) || 'Initial',
+                        cursorType: u.f(e) || 'Initial',
                       }),
                     )
-                  : (Se('Tried to call fetchCursor with an invalid cursor'), Promise.resolve(Y))
+                  : (je('Tried to call fetchCursor with an invalid cursor'), Promise.resolve(K))
               }
             },
-            Ee = function () {
+            Oe = function () {
               var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
               return function (t, n) {
-                var r = te(n())
-                if (!r) return Se('fetchTop called on non-existing timeline'), Promise.resolve(Y)
-                if (r.terminatedStatus.atTop) return Promise.resolve(Y)
-                var o = d.e(r.entries)
-                return o ? t(we(o, q({ count: 40 }, e))) : Promise.resolve(Y)
+                var r = $(n())
+                if (!r) return je('fetchTop called on non-existing timeline'), Promise.resolve(K)
+                if (r.terminatedStatus.atTop) return Promise.resolve(K)
+                var o = u.e(r.entries)
+                return o ? t(_e(o, V({ count: 40 }, e))) : Promise.resolve(K)
               }
             },
-            je = function () {
-              return f.n(i)
+            we = function () {
+              return d.n(i)
             },
-            Pe = function (e) {
+            Ee = function (e) {
               var t = e.entry,
                 n = e.feedbackKeys,
                 r = e.undo,
                 o = e.isDismissibleFeedback
               return function (e, a, c) {
                 c.api
-                var s = he(a())[n[0]]
+                var s = pe(a())[n[0]]
                 return r && s && !s.hasUndoAction
-                  ? (Se('updateFeedback-undo called with an invalid feedbackAction'), Promise.resolve())
-                  : (o && e(f.v({ timelineId: i, entryId: t.entryId, feedbackKeys: r ? n.slice(1) : n })),
+                  ? (je('updateFeedback-undo called with an invalid feedbackAction'), Promise.resolve())
+                  : (o && e(d.v({ timelineId: i, entryId: t.entryId, feedbackKeys: r ? n.slice(1) : n })),
                     s
                       ? e(
                           (function (e) {
@@ -47242,15 +47341,15 @@ window.__SCRIPTS_LOADED__.i18n &&
                               var s = c.api,
                                 u = t.itemMetadata.feedbackInfo,
                                 l = u && u.feedbackMetadata,
-                                d = L(t),
+                                d = x(t),
                                 p = t.referringContext && t.referringContext.promotedContent,
-                                f = Object(_.c)(a()).isTrue('responsive_web_graphql_feedback')
+                                f = Object(y.c)(a()).isTrue('responsive_web_graphql_feedback')
                               if (i && f) return s.URT.submitTimelinesFeedback({ encoded_feedback_request: i, undo: r })
                               if (l || o)
-                                return x({ api: s, feedbackType: n, feedbackMetadata: l, undo: r, endpoint: o })
-                              if (t.type === S.b.Tweet && n === T.e.DontLike) {
-                                var h = A(d, p)
-                                if (h) return D({ api: s, impressionId: h, undo: r })
+                                return k({ api: s, feedbackType: n, feedbackMetadata: l, undo: r, endpoint: o })
+                              if (t.type === j.b.Tweet && n === P.e.DontLike) {
+                                var h = D(d, p)
+                                if (h) return R({ api: s, impressionId: h, undo: r })
                               }
                               return Promise.resolve()
                             }
@@ -47265,10 +47364,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                       : Promise.resolve())
               }
             },
-            Se = function (e) {
-              Object(P.a)(''.concat(e, ' (TimelineId: ').concat(i, ')'))
+            je = function (e) {
+              Object(E.a)(''.concat(e, ' (TimelineId: ').concat(i, ')'))
             }
-          return (ee = {
+          return (Z = {
             impressEntry: function (e) {
               var t = e.entryId,
                 n = e.callbacks
@@ -47276,85 +47375,85 @@ window.__SCRIPTS_LOADED__.i18n &&
                 o.api
                 if (
                   !(function (e, t) {
-                    var n = te(e),
+                    var n = $(e),
                       r = n ? n.impressedEntries : {}
                     return r && !!r[t]
                   })(r(), t)
                 ) {
-                  e(f.j({ timelineId: i, entryId: t }))
-                  var a = e(Object(m.d)(''.concat(i, '_TIMELINE_IMPRESSION_CALLBACK'))())
+                  e(d.j({ timelineId: i, entryId: t }))
+                  var a = e(Object(f.d)(''.concat(i, '_TIMELINE_IMPRESSION_CALLBACK'))())
                   n &&
                     n.forEach(function (t) {
-                      return e(Object(j.a)(t)).catch(a)
+                      return e(Object(w.a)(t)).catch(a)
                     })
                 }
               }
             },
-            selectEntries: ae,
-            selectIsEmptyTimeline: ce,
+            selectEntries: oe,
+            selectIsEmptyTimeline: ie,
             selectUnavailableReason: function (e) {
-              var t = te(e)
-              return se(e) === O.a.FAILED && t ? t.unavailableReason : null
+              var t = $(e)
+              return ae(e) === g.a.FAILED && t ? t.unavailableReason : null
             },
-            selectInitialFetchStatus: se,
+            selectInitialFetchStatus: ae,
             selectCursorFetchStatus: function (e, t) {
-              var n = d.g(t)
-              return n ? ue(e, n) : void 0
+              var n = u.g(t)
+              return n ? ce(e, n) : void 0
             },
-            selectTopFetchStatus: de,
-            selectBottomFetchStatus: pe,
-            selectCanRefresh: le,
+            selectTopFetchStatus: ue,
+            selectBottomFetchStatus: le,
+            selectCanRefresh: se,
             selectIsUnread: function (e, t) {
-              return !!me(e)[t]
+              return !!fe(e)[t]
             },
-            selectUnreadEntries: ve,
-            selectUnreadEntriesCount: be,
-            selectTopUnreadCount: ye,
-            selectCursorFetchStatusByValue: ue,
-            selectTimeline: te,
+            selectUnreadEntries: he,
+            selectUnreadEntriesCount: me,
+            selectTopUnreadCount: ve,
+            selectCursorFetchStatusByValue: ce,
+            selectTimeline: $,
             selectDismissedEntries: function (e) {
-              var t = te(e)
+              var t = $(e)
               return t ? t.dismissCause : {}
             },
-            selectFeedbackActions: he,
+            selectFeedbackActions: pe,
             selectPinnedEntry: function (e) {
-              var t = te(e)
+              var t = $(e)
               return t ? t.pinnedEntry : null
             },
             selectAlert: function (e) {
-              var t = te(e)
+              var t = $(e)
               return t && t.alert
             },
             selectActiveCover: function (e) {
-              var t = te(e)
+              var t = $(e)
               return t && t.coverQueue[0]
             },
             selectDroppedAds: function (e) {
-              var t = te(e)
-              return t ? t.droppedAds : X
+              var t = $(e)
+              return t ? t.droppedAds : q
             },
             selectMetadata: function (e) {
-              var t = te(e)
-              return (t && t.metadata) || J
+              var t = $(e)
+              return (t && t.metadata) || Q
             },
             selectPageConfiguration: function (e) {
-              var t = te(e)
+              var t = $(e)
               return (t && t.pageConfiguration) || null
             },
             selectPollingIntervalMs: function (e) {
-              if (R && Object(G.h)(e))
-                return _.b.getNumberValue('responsive_web_settings_timeline_polling_interval_ms', 0)
+              if (M && Object(W.h)(e))
+                return y.b.getNumberValue('responsive_web_settings_timeline_polling_interval_ms', 0)
             },
             applyFeedbackAction: function (e) {
               var t = e.entry,
                 n = e.feedbackKeys,
                 r = e.isDismissibleFeedback
-              return Pe({ entry: t, feedbackKeys: n, undo: !1, isDismissibleFeedback: void 0 === r || r })
+              return Ee({ entry: t, feedbackKeys: n, undo: !1, isDismissibleFeedback: void 0 === r || r })
             },
             applyNewTweetsBarInstructions: function () {
               return function (e, t, n) {
                 var r = n.featureSwitches.getNumberValue('ads_spacing_client_fallback_minimum_spacing')
-                return e(f.c({ timelineId: i, minimumItemsBetweenAds: r }))
+                return e(d.c({ timelineId: i, minimumItemsBetweenAds: r }))
               }
             },
             applyReactionInstructions: function (e) {
@@ -47364,48 +47463,48 @@ window.__SCRIPTS_LOADED__.i18n &&
                 var s = a.api,
                   u = a.featureSwitches,
                   l = o(),
-                  d = t.entryId,
-                  p = t.itemMetadata && t.itemMetadata.reactiveTriggers && t.itemMetadata.reactiveTriggers[n],
+                  f = t.entryId,
+                  h = t.itemMetadata && t.itemMetadata.reactiveTriggers && t.itemMetadata.reactiveTriggers[n],
                   m =
                     (function (e, t) {
-                      var n = te(e)
-                      return (n && n.triggerExecutionCounts && n.triggerExecutionCounts[t]) || J
-                    })(l, d)[n] || 0
-                if (!p || (p.maxExecutionCount && m >= p.maxExecutionCount)) return Promise.resolve()
+                      var n = $(e)
+                      return (n && n.triggerExecutionCounts && n.triggerExecutionCounts[t]) || Q
+                    })(l, f)[n] || 0
+                if (!h || (h.maxExecutionCount && m >= h.maxExecutionCount)) return Promise.resolve()
                 var v,
                   b = u.getNumberValue('ads_spacing_client_fallback_minimum_spacing', 0),
-                  g = p.execution
-                if (g.immediate)
+                  y = h.execution
+                if (y.immediate)
                   e([
-                    f.k({ timelineId: i, entryId: d, triggerName: n }),
-                    f.b({ timelineId: i, immediateReaction: g.immediate.key, minimumItemsBetweenAds: b }),
+                    d.k({ timelineId: i, entryId: f, triggerName: n }),
+                    d.b({ timelineId: i, immediateReaction: y.immediate.key, minimumItemsBetweenAds: b }),
                   ])
-                else if (g.remote) {
-                  var _ = ''.concat(d, '_').concat(n)
-                  if (ue(o(), _) === O.a.LOADING) return Promise.resolve(Y)
-                  var w = q(q({}, g.remote.requestParams), {}, { timeout: 1e3 * (g.remote.timeoutInSeconds || 0) }),
-                    E = Object(h.b)(e, {
-                      params: w,
-                      request: Z(
+                else if (y.remote) {
+                  var _ = ''.concat(f, '_').concat(n)
+                  if (ce(o(), _) === g.a.LOADING) return Promise.resolve(K)
+                  var O = V(V({}, y.remote.requestParams), {}, { timeout: 1e3 * (y.remote.timeoutInSeconds || 0) }),
+                    w = Object(p.b)(e, {
+                      params: O,
+                      request: Y(
                         'urt:'.concat(r, ':fetchReactiveInstructions:format'),
-                        ((v = Z('urt:'.concat(r, ':fetchReactiveInstructions'), s.URT.fetchReactiveInstructions)),
+                        ((v = Y('urt:'.concat(r, ':fetchReactiveInstructions'), s.URT.fetchReactiveInstructions)),
                         function () {
                           return v.apply(void 0, arguments).then(function (e) {
-                            return C(e, {})
+                            return I(e, {})
                           })
                         }),
                       ),
                     })
                   return (
-                    e(f.k({ timelineId: i, entryId: d, triggerName: n })),
-                    E(
+                    e(d.k({ timelineId: i, entryId: f, triggerName: n })),
+                    w(
                       {
-                        actionTypes: f.i,
-                        context: y,
+                        actionTypes: d.i,
+                        context: S,
                         meta: {
                           minimumItemsBetweenAds: b,
                           timelineId: i,
-                          timelineType: K,
+                          timelineType: X,
                           cursorValue: _,
                           timestamp: Date.now(),
                         },
@@ -47427,9 +47526,9 @@ window.__SCRIPTS_LOADED__.i18n &&
               var t = e.entry,
                 n = e.feedbackKeys,
                 r = e.isDismissibleFeedback
-              return Pe({ entry: t, feedbackKeys: n, undo: !0, isDismissibleFeedback: void 0 === r || r })
+              return Ee({ entry: t, feedbackKeys: n, undo: !0, isDismissibleFeedback: void 0 === r || r })
             },
-            fetchInitial: _e,
+            fetchInitial: ye,
             fetchInitialOrTop: function () {
               var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
                 t = e.onlyIfStale,
@@ -47442,29 +47541,29 @@ window.__SCRIPTS_LOADED__.i18n &&
                 u = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Date.now()
               return function (e, t) {
                 var r = t()
-                if (ce(r)) {
+                if (ie(r)) {
                   var o = Object.assign({}, s, c)
-                  return e(_e(o))
+                  return e(ye(o))
                 }
-                var a = n && Oe(r, u),
+                var a = n && ge(r, u),
                   l = !n && !s.polling
                 return a
-                  ? Promise.resolve(Y)
-                  : e(Ee(Object.assign({}, s, i))).then(function (t) {
-                      return l && e(je()), t
+                  ? Promise.resolve(K)
+                  : e(Oe(Object.assign({}, s, i))).then(function (t) {
+                      return l && e(we()), t
                     })
               }
             },
-            fetchCursor: we,
-            fetchTop: Ee,
+            fetchCursor: _e,
+            fetchTop: Oe,
             fetchBottom: function () {
               var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
               return function (t, n) {
-                var r = te(n())
-                if (!r) return Se('fetchBottom called on non-existing timeline'), Promise.resolve(Y)
-                if (r.terminatedStatus.atBottom) return Promise.resolve(Y)
-                var o = d.d(r.entries)
-                return o ? t(we(o, q({ count: 20 }, e))) : Promise.resolve(Y)
+                var r = $(n())
+                if (!r) return je('fetchBottom called on non-existing timeline'), Promise.resolve(K)
+                if (r.terminatedStatus.atBottom) return Promise.resolve(K)
+                var o = u.d(r.entries)
+                return o ? t(_e(o, V({ count: 20 }, e))) : Promise.resolve(K)
               }
             },
             fetchGraphQLDarkRead: function (e) {
@@ -47474,11 +47573,11 @@ window.__SCRIPTS_LOADED__.i18n &&
               e.cursorType
               return function (e, i, a) {
                 var c = a.api,
-                  s = q(q({}, o), {}, r ? { cursor: r } : { cursor: void 0 }),
-                  u = $(s),
+                  s = V(V({}, o), {}, r ? { cursor: r } : { cursor: void 0 }),
+                  u = J(s),
                   l = n(s)
                 return t(c)(l, u).then(function (e) {
-                  return C(e, s)
+                  return I(e, s)
                 })
               }
             },
@@ -47486,49 +47585,49 @@ window.__SCRIPTS_LOADED__.i18n &&
               var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
                 n = t.atTop,
                 r = void 0 === n || n
-              return f.l(i, { entry: e, atTop: r })
+              return d.l(i, { entry: e, atTop: r })
             },
             removeTweets: function (e) {
-              return f.r(i, e)
+              return d.r(i, e)
             },
             removeAlert: function () {
-              return f.p(i)
+              return d.p(i)
             },
             markAllAsRead: function () {
-              return f.f(i)
+              return d.f(i)
             },
             markTopEntrySeen: function () {
-              return f.o(i)
+              return d.o(i)
             },
-            markTopEntryRevealed: je,
+            markTopEntryRevealed: we,
             clearActiveCover: function () {
-              return f.d(i)
+              return d.d(i)
             },
             clearDroppedAds: function (e) {
-              return f.e(i)
+              return d.e(i)
             },
-            processCallback: j.a,
+            processCallback: w.a,
             updateEntry: function (e, t) {
-              return f.w(i, e, t)
+              return d.w(i, e, t)
             },
             removeEntry: function (e, t) {
-              return f.q(i, e, t)
+              return d.q(i, e, t)
             },
             timelineId: i,
             deleteTimeline: function () {
-              return f.g(i)
+              return d.g(i)
             },
             restoreTimeline: function (e) {
-              return f.s(i, e)
+              return d.s(i, e)
             },
             updateDismissCause: function (e) {
               var t = e.entryId,
                 n = e.feedbackKeys
               return function (e) {
-                return e(f.v({ timelineId: i, entryId: t, feedbackKeys: n }))
+                return e(d.v({ timelineId: i, entryId: t, feedbackKeys: n }))
               }
             },
-            timelineType: K,
+            timelineType: X,
           })
         }
       },
@@ -47560,9 +47659,6 @@ window.__SCRIPTS_LOADED__.i18n &&
             function e() {
               var t = this
               o()(this, e),
-                s()(this, '_eligibleForBanner', function () {
-                  return u.canUseDOM && !l.a.isStandaloneApp() && !Object(d.a)(window)
-                }),
                 s()(this, '_onPromptTriggered', function (e) {
                   t.showImmediate ? ((t.event = null), t.onShown && t.onShown(e)) : (e.preventDefault(), (t.event = e))
                 }),
@@ -47589,8 +47685,14 @@ window.__SCRIPTS_LOADED__.i18n &&
                       window.removeEventListener('beforeinstallprompt', f),
                       window.addEventListener(
                         'beforeinstallprompt',
-                        this._eligibleForBanner() ? this._onPromptTriggered : f,
+                        this.eligibleForBanner() ? this._onPromptTriggered : f,
                       ))
+                  },
+                },
+                {
+                  key: 'eligibleForBanner',
+                  value: function () {
+                    return u.canUseDOM && !l.a.isStandaloneApp() && !Object(d.a)(window)
                   },
                 },
               ]),
@@ -48525,7 +48627,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         accessibilityLabel: i({ count: s }),
                         accessibilityLiveRegion: 'polite',
                         color: 'whiteOnColor',
-                        size: r ? 'subtext2' : 'subtext3',
+                        size: r ? 'subtext1' : 'subtext3',
                         style: u,
                         weight: r ? 'bold' : 'normal',
                       },
@@ -48722,7 +48824,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         e.exports = { queryId: 'IXutA6uptIQJ1MHNDYfMiw', operationName: 'Favoriters', operationType: 'query' }
       },
       'a5E+': function (e, t) {
-        e.exports = { queryId: 'C3hSlinTxB7Ik1sGI-v7tw', operationName: 'TopicsManagementPage', operationType: 'query' }
+        e.exports = { queryId: 'ypONwlFq_xUnOsB9P3mr2w', operationName: 'TopicsManagementPage', operationType: 'query' }
       },
       a5gf: function (e, t, n) {
         'use strict'
@@ -49389,12 +49491,10 @@ window.__SCRIPTS_LOADED__.i18n &&
           S = n('6rlp'),
           T = n('vjRr'),
           I = n('/Ikv'),
-          C = n('rxPX'),
-          k = n('0KEI'),
-          R = n('P1r1'),
-          x = (n('yH/f'), n('oEOe')),
-          D = n('/kEJ')
-        function L(e, t) {
+          C = n('P1r1'),
+          k = (n('yH/f'), n('oEOe')),
+          R = n('/kEJ')
+        function x(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -49406,46 +49506,46 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function A(e) {
+        function D(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? L(Object(n), !0).forEach(function (t) {
+              ? x(Object(n), !0).forEach(function (t) {
                   w()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : L(Object(n)).forEach(function (t) {
+              : x(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
         'rweb/'.concat('c')
-        var M = Object.freeze({
+        var L = Object.freeze({
             REQUEST: 'rweb/CREATE_NOTE_/REQUEST',
             SUCCESS: 'rweb/CREATE_NOTE_/SUCCESS',
             FAILURE: 'rweb/CREATE_NOTE_/FAILURE',
           }),
-          N = function (e, t) {
+          A = function (e, t) {
             return function (n, r, o) {
               var i = o.api
-              return x.b(n, { params: { ids: [t] }, request: i.Broadcasts.fetchBroadcast })(
-                { actionTypes: M, context: 'FETCH_BROADCAST', meta: {} },
+              return k.b(n, { params: { ids: [t] }, request: i.Broadcasts.fetchBroadcast })(
+                { actionTypes: L, context: 'FETCH_BROADCAST', meta: {} },
                 function (t) {
                   if (t) {
                     var n = t.result.broadcasts[0],
                       o = t.entities.broadcasts[n],
                       i = T.a.select(r(), e)
                     if (!i) return []
-                    var a = B(o, i)
-                    return [Object(D.c)({ cards: w()({}, e, A({}, a)) })]
+                    var a = M(o, i)
+                    return [Object(R.c)({ cards: w()({}, e, D({}, a)) })]
                   }
                 },
               )
             }
           },
-          B = function (e, t) {
+          M = function (e, t) {
             var n = e.pre_live_slate_url,
               r = e.scheduled_start_ms,
               o = e.state,
@@ -49453,8 +49553,8 @@ window.__SCRIPTS_LOADED__.i18n &&
               a = e.twitter_user_id,
               c = e.user_display_name
             return {
-              binding_values: A(
-                A({}, t.binding_values),
+              binding_values: D(
+                D({}, t.binding_values),
                 {},
                 {
                   broadcast_state: { type: 'STRING', string_value: o },
@@ -49467,6 +49567,8 @@ window.__SCRIPTS_LOADED__.i18n &&
               ),
             }
           },
+          N = n('rxPX'),
+          B = n('0KEI'),
           F = function (e, t) {
             var n
             return t.cardState || (null === (n = P.a(e, t.card.url)) || void 0 === n ? void 0 : n.cardState)
@@ -49480,16 +49582,16 @@ window.__SCRIPTS_LOADED__.i18n &&
           H = function (e, t) {
             return I.a.getBindingValue(t.card.binding_values, 'broadcast_id')
           },
-          W = Object(C.a)()
+          W = Object(N.a)()
             .propsFromState(function () {
-              return { cardState: F, initialCarouselIndex: U, isDataSaverEnabled: R.k, broadcastId: H }
+              return { cardState: F, initialCarouselIndex: U, isDataSaverEnabled: C.k, broadcastId: H }
             })
             .propsFromActions(function () {
               return {
-                createLocalApiErrorHandler: Object(k.d)('CARD_CONTAINER'),
+                createLocalApiErrorHandler: Object(B.d)('CARD_CONTAINER'),
                 requestCardUpdate: T.a.fetchOne,
                 log: S.a,
-                updateBroadcastCard: N,
+                updateBroadcastCard: A,
                 vote: T.a.vote,
                 remindMeButtonSubscribe: T.a.eventSubscribe,
                 remindMeButtonUnsubscribe: T.a.eventUnsubscribe,
@@ -49791,13 +49893,13 @@ window.__SCRIPTS_LOADED__.i18n &&
             var n = Ce(0, t)
             return n ? Ie.a.selectFetchStatus(e, n) : void 0
           },
-          Re = Object(C.a)()
+          Re = Object(N.a)()
             .propsFromState(function () {
               return { videoTweetFetchStatus: ke, videoTweet: Ie.a.createHydratedTweetSelector(Ce) }
             })
             .propsFromActions(function () {
               return {
-                createLocalApiErrorHandler: Object(k.d)('EVENT_CARD_CONTEXT'),
+                createLocalApiErrorHandler: Object(B.d)('EVENT_CARD_CONTEXT'),
                 fetchTweetIfNeeded: Ie.a.fetchOneIfNeeded,
               }
             }),
@@ -49925,9 +50027,8 @@ window.__SCRIPTS_LOADED__.i18n &&
         w()(Ve, 'contextType', He.a)
         var Ge = Re(Ve),
           Ke = n('qqET'),
-          qe = n('bNYH'),
-          Qe = n('bU1N')
-        function Ye(e, t) {
+          qe = n('bU1N')
+        function Qe(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -49939,22 +50040,22 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function Xe(e) {
+        function Ye(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? Ye(Object(n), !0).forEach(function (t) {
+              ? Qe(Object(n), !0).forEach(function (t) {
                   w()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : Ye(Object(n)).forEach(function (t) {
+              : Qe(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
-        function Je(e) {
+        function Xe(e) {
           var t = (function () {
             if ('undefined' == typeof Reflect || !Reflect.construct) return !1
             if (Reflect.construct.sham) return !1
@@ -49975,16 +50076,16 @@ window.__SCRIPTS_LOADED__.i18n &&
             return y()(this, n)
           }
         }
-        var Ze = Y.a.ac4c73d8,
-          $e = { objectFitVideo: 'cover' },
-          et = new RegExp(
+        var Je = Y.a.ac4c73d8,
+          Ze = { objectFitVideo: 'cover' },
+          $e = new RegExp(
             '"type":"video_website"|"type":"image_carousel_website"|"type":"video_carousel_website"|"type":"image_website"',
           ),
-          tt = new RegExp('"type":"video_multi_dest_carousel_website"|"type":"image_multi_dest_carousel_website"'),
-          nt = /"vanity":"/,
-          rt = (function (e) {
+          et = new RegExp('"type":"video_multi_dest_carousel_website"|"type":"image_multi_dest_carousel_website"'),
+          tt = /"vanity":"/,
+          nt = (function (e) {
             v()(n, e)
-            var t = Je(n)
+            var t = Xe(n)
             function n(e, r) {
               var i
               return (
@@ -50087,7 +50188,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       disclosureType: h,
                       itemId: l.tweetId,
                       itemType: Ee.c.TWEET,
-                      params: Xe(
+                      params: Ye(
                         { impression_id: m },
                         q({ action: t, componentType: n, buttonIndex: r, ucPromotedMetadata: a, ucEventData: c }),
                       ),
@@ -50117,16 +50218,16 @@ window.__SCRIPTS_LOADED__.i18n &&
                     if (b !== Ke.a.CLICK_ID_EMBED || g) {
                       var _ = {
                         action: b,
-                        data: Xe(
-                          Xe({}, g && { click_tracking_embed_details: g }),
+                        data: Ye(
+                          Ye({}, g && { click_tracking_embed_details: g }),
                           {},
                           {
                             items: [
-                              Xe(
+                              Ye(
                                 {},
                                 je.a.getHWCardItem(
-                                  Xe(
-                                    Xe(
+                                  Ye(
+                                    Ye(
                                       {
                                         componentType: n,
                                         cardName: r,
@@ -50150,7 +50251,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                           },
                         ),
                       }
-                      f.scribe(s ? Xe({ element: s }, _) : _)
+                      f.scribe(s ? Ye({ element: s }, _) : _)
                     }
                   }
                 }),
@@ -50189,11 +50290,11 @@ window.__SCRIPTS_LOADED__.i18n &&
                   return {
                     pathname: i._transformPromotedUrl(e, null == o ? void 0 : o.click_tracking_info),
                     state: {
-                      referringScribeNamespace: Xe(
-                        Xe(
-                          Xe(
-                            Xe(
-                              Xe(Xe({}, a.contextualScribeNamespace), void 0 !== c ? { page: c } : null),
+                      referringScribeNamespace: Ye(
+                        Ye(
+                          Ye(
+                            Ye(
+                              Ye(Ye({}, a.contextualScribeNamespace), void 0 !== c ? { page: c } : null),
                               void 0 !== s ? { section: s } : null,
                             ),
                             void 0 !== u ? { component: u } : null,
@@ -50218,9 +50319,9 @@ window.__SCRIPTS_LOADED__.i18n &&
                       v = e.poster_image,
                       b = e.timecode
                     return E.createElement(Ae.a, {
-                      accessibilityLabel: Ze,
+                      accessibilityLabel: Je,
                       aspectRatio: n || h,
-                      displayOptions: $e,
+                      displayOptions: Ze,
                       forceFullPreviewImage: 'suboptimal' === t,
                       poster: v,
                       preventPlayback: l,
@@ -50238,14 +50339,14 @@ window.__SCRIPTS_LOADED__.i18n &&
                       g = o()(e, ['type', 'original_info']),
                       _ = Be.a.extractVideoProps(
                         Me.b.forTweet(u || '', p),
-                        Xe(Xe({}, g), {}, { original_info: Xe({}, y), type: 'video' }),
+                        Ye(Ye({}, g), {}, { original_info: Ye({}, y), type: 'video' }),
                       ),
                       O =
                         (_.accessibilityLabel,
                         _.backgroundColor,
                         _.primaryLabel,
                         _.secondaryLabel,
-                        Xe({}, o()(_, ['accessibilityLabel', 'backgroundColor', 'primaryLabel', 'secondaryLabel'])))
+                        Ye({}, o()(_, ['accessibilityLabel', 'backgroundColor', 'primaryLabel', 'secondaryLabel'])))
                     return (
                       n && (O.aspectRatio = n),
                       E.createElement(
@@ -50253,7 +50354,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         a()(
                           { forceFullPreviewImage: 'suboptimal' === t, shouldAutoplayWithoutMuting: r },
                           O,
-                          { accessibilityLabel: Ze, preventPlayback: l, promotedContent: d },
+                          { accessibilityLabel: Je, preventPlayback: l, promotedContent: d },
                           c,
                         ),
                       )
@@ -50274,7 +50375,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       })
                   return u
                     ? E.createElement(Ae.a, {
-                        accessibilityLabel: Ze,
+                        accessibilityLabel: Je,
                         aspectRatio: n || w,
                         durationMs: P,
                         forceFullPreviewImage: 'suboptimal' === t,
@@ -50307,7 +50408,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       void 0 === t
                         ? void 0
                         : t.string_value
-                    return !!r && tt.test(r)
+                    return !!r && et.test(r)
                   },
                 },
                 {
@@ -50325,7 +50426,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       void 0 === t
                         ? void 0
                         : t.string_value
-                    return !!r && et.test(r)
+                    return !!r && $e.test(r)
                   },
                 },
                 {
@@ -50354,7 +50455,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       void 0 === r
                         ? void 0
                         : r.string_value
-                    return !!i && nt.test(i)
+                    return !!i && tt.test(i)
                   },
                 },
                 {
@@ -50372,17 +50473,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                       u = t.nativeID,
                       l = t.initialCarouselIndex,
                       d = t.onCardLinkClick
-                    if (i && qe.a.isAudioSpaceCard(i)) {
-                      var p = qe.a.getAudioSpaceIdFromCard(i)
-                      if (p)
-                        return E.createElement(qe.a, {
-                          audioSpaceId: p,
-                          isInteractive: c,
-                          withSquareBottomBorderRadius: s,
-                        })
-                    }
                     return E.createElement(Pe.a, null, function (t) {
-                      return E.createElement(Qe.a, {
+                      return E.createElement(qe.a, {
                         card: i,
                         cardContext: a,
                         cardState: e._getCardState(),
@@ -50420,9 +50512,9 @@ window.__SCRIPTS_LOADED__.i18n &&
               n
             )
           })(E.Component)
-        w()(rt, 'contextType', He.a)
-        var ot = W(rt)
-        t.a = ot
+        w()(nt, 'contextType', He.a)
+        var rt = W(nt)
+        t.a = rt
       },
       aeN7: function (e, t, n) {
         'use strict'
@@ -51736,7 +51828,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           B =
             ((N = M),
             function (e) {
-              return _.createElement(Ro.Context.Consumer, null, function (t) {
+              return _.createElement(Ao.Context.Consumer, null, function (t) {
                 return _.createElement(N, o()({}, e, t))
               })
             }),
@@ -51776,12 +51868,14 @@ window.__SCRIPTS_LOADED__.i18n &&
                 (e = t.call.apply(t, [this].concat(o))),
                 y()(l()(e), '_renderButton', function (t, n) {
                   var r = e.props,
-                    o = r.buttonSize,
-                    i = r.disabled,
-                    a = r.useBlueButtonForAppDetails,
-                    c = e._getButtonIcon(t.icon) || void 0,
-                    s = n > 0,
-                    u = (a && t.isAppDetails) || t.isSelected ? 'primary' : 'secondary'
+                    o = r.accessibilityRole,
+                    i = r.buttonSize,
+                    a = r.disabled,
+                    c = r.useBlueButtonForAppDetails,
+                    s = e._getButtonIcon(t.icon) || void 0,
+                    u = n > 0,
+                    l = (c && t.isAppDetails) || t.isSelected ? 'primary' : 'secondary',
+                    d = 'radiogroup' === o ? 'radio' : 'button'
                   return _.createElement(
                     B,
                     { buttonData: t, componentType: 'button_group', destinationKey: t.destination, key: t.cta },
@@ -51791,15 +51885,16 @@ window.__SCRIPTS_LOADED__.i18n &&
                       return _.createElement(
                         P.a,
                         {
-                          disabled: i,
+                          accessibilityRole: d,
+                          disabled: a,
                           forceDisableVdl: !0,
-                          icon: c,
+                          icon: s,
                           key: t.cta,
                           link: n,
                           onClick: r,
-                          size: o,
-                          style: [G.button, s && G.buttonTopMargin],
-                          type: u,
+                          size: i,
+                          style: [G.button, !a && G.buttonWithPointer, u && G.buttonTopMargin],
+                          type: l,
                         },
                         t.cta,
                       )
@@ -51815,10 +51910,22 @@ window.__SCRIPTS_LOADED__.i18n &&
                   key: 'render',
                   value: function () {
                     var e = this.props,
-                      t = e.chromeless,
-                      n = e.buttons,
-                      r = e.style
-                    return _.createElement(U.a, { style: [!t && G.wrapperPadding, r] }, n.map(this._renderButton))
+                      t = e.accessibilityDescribedBy,
+                      n = e.accessibilityLabel,
+                      r = e.accessibilityRole,
+                      o = e.chromeless,
+                      i = e.buttons,
+                      a = e.style
+                    return _.createElement(
+                      U.a,
+                      {
+                        accessibilityDescribedBy: t,
+                        accessibilityLabel: n,
+                        accessibilityRole: r,
+                        style: [!o && G.wrapperPadding, a],
+                      },
+                      _.createElement(_.Fragment, null, i.map(this._renderButton)),
+                    )
                   },
                 },
                 {
@@ -51842,6 +51949,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             return {
               wrapperPadding: { padding: e.spaces.space12 },
               button: { flexGrow: 1 },
+              buttonWithPointer: { cursor: 'pointer' },
               buttonTopMargin: { marginTop: e.spaces.space4 },
             }
           }),
@@ -52218,7 +52326,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       h = t.vanity,
                       m = t.withBottomPadding,
                       v = !i
-                    return _.createElement(Ro.Context.Consumer, null, function (t) {
+                    return _.createElement(Ao.Context.Consumer, null, function (t) {
                       var i = t.vanityOnTop,
                         b = t.vanityDisableIcon
                       return _.createElement(
@@ -52477,7 +52585,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     O = _.createElement(
                       _.Fragment,
                       null,
-                      _.createElement(Ro.Context.Consumer, null, function (e) {
+                      _.createElement(Ao.Context.Consumer, null, function (e) {
                         var t = e.isDataSaverEnabled,
                           n = e.isPromoted,
                           r = t ? (n ? 'suboptimal' : 'preview') : void 0
@@ -52595,7 +52703,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   'vine' === u.type ||
                   'tweet_video' === u.type) &&
                 i
-              ? _.createElement(Ro.Context.Consumer, null, function (e) {
+              ? _.createElement(Ao.Context.Consumer, null, function (e) {
                   var t = e.isDataSaverEnabled,
                     n = e.isPromoted
                   return i(u, t ? (n ? 'suboptimal' : 'preview') : void 0)
@@ -52713,13 +52821,17 @@ window.__SCRIPTS_LOADED__.i18n &&
                           }),
                         ),
                       )
-                    return n.map(function (t, n) {
-                      return _.createElement(
-                        U.a,
-                        { key: t.index, style: 0 !== n && et.topMargin },
-                        e._renderChoiceResult(t, r, o),
-                      )
-                    })
+                    return _.createElement(
+                      U.a,
+                      { accessibilityRole: 'list' },
+                      n.map(function (t, n) {
+                        return _.createElement(
+                          U.a,
+                          { accessibilityRole: 'listitem', key: t.index, style: 0 !== n && et.topMargin },
+                          e._renderChoiceResult(t, r, o),
+                        )
+                      }),
+                    )
                   },
                 },
                 {
@@ -52748,17 +52860,20 @@ window.__SCRIPTS_LOADED__.i18n &&
           }),
           tt = $e,
           nt = 'cardPoll',
-          rt = fe.a.a3edf99a,
-          ot = fe.a.c2b81e9c,
-          it = 36e5,
-          at = fe.a.d925a4f8,
-          ct = fe.a.ib15cdda,
-          st = fe.a.db9ed19f,
-          ut = fe.a.ia24dc8c,
-          lt = F.a.create(function (e) {
-            return { pollStatus: { marginTop: e.spaces.space12 } }
+          rt = n('XurV'),
+          ot = fe.a.fe64170b,
+          it = fe.a.g10ace37,
+          at = fe.a.a3edf99a,
+          ct = fe.a.c2b81e9c,
+          st = 36e5,
+          ut = fe.a.d925a4f8,
+          lt = fe.a.ib15cdda,
+          dt = fe.a.db9ed19f,
+          pt = fe.a.ia24dc8c,
+          ft = F.a.create(function (e) {
+            return { pollDescription: { display: 'none' }, pollStatus: { marginTop: e.spaces.space12 } }
           }),
-          dt = function (e) {
+          ht = function (e) {
             var t,
               n = e.choices,
               r = e.endDatetimeUtc,
@@ -52768,56 +52883,64 @@ window.__SCRIPTS_LOADED__.i18n &&
               c = e.resultTextSize,
               s = e.selectedChoice,
               u = e.votingDisabled,
-              l = e.style
+              l = e.style,
+              d = Object(rt.useOpaqueIdentifier)()
             return _.createElement(
               U.a,
               { style: l, testID: nt },
               s || i || o
                 ? _.createElement(tt, { choices: n, isFinal: i, selectedChoice: s, totalVotes: a })
-                : _.createElement(K, {
-                    buttonSize: 'normalCompact',
-                    buttons: n.map(function (e) {
-                      return { cta: e.cta, index: e.index, destination: e.destination }
+                : _.createElement(
+                    _.Fragment,
+                    null,
+                    _.createElement(q.c, { nativeID: d, style: ft.pollDescription }, ot),
+                    _.createElement(K, {
+                      accessibilityDescribedBy: d,
+                      accessibilityLabel: it,
+                      accessibilityRole: 'radiogroup',
+                      buttonSize: 'normalCompact',
+                      buttons: n.map(function (e) {
+                        return { cta: e.cta, index: e.index, destination: e.destination }
+                      }),
+                      chromeless: !0,
+                      disabled: u,
                     }),
-                    chromeless: !0,
-                    disabled: u,
-                  }),
+                  ),
               _.createElement(
                 q.c,
-                { color: 'gray700', size: c, style: lt.pollStatus },
+                { color: 'gray700', size: c, style: ft.pollStatus },
                 _.createElement(
                   Pe.a,
                   null,
-                  _.createElement(q.c, null, ot({ count: (t = a), formattedCount: ut(t) })),
+                  _.createElement(q.c, null, ct({ count: (t = a), formattedCount: pt(t) })),
                   _.createElement(
                     q.c,
                     null,
                     i
-                      ? rt
+                      ? at
                       : (function (e) {
                           var t = new Date(e).getTime() - Date.now(),
                             n = Math.floor(t / 864e5),
-                            r = Math.floor(t / it),
+                            r = Math.floor(t / st),
                             o = Math.floor(t / 6e4)
                           return r >= 24
-                            ? st({ count: n, formattedCount: fe.a.ia24dc8c(n) })
+                            ? dt({ count: n, formattedCount: fe.a.ia24dc8c(n) })
                             : o >= 60
-                            ? ct({ count: r, formattedCount: fe.a.ia24dc8c(r) })
-                            : at({ count: o, formattedCount: fe.a.ia24dc8c(o) })
+                            ? lt({ count: r, formattedCount: fe.a.ia24dc8c(r) })
+                            : ut({ count: o, formattedCount: fe.a.ia24dc8c(o) })
                         })(r),
                   ),
                 ),
               ),
             )
           },
-          pt = n('XurV'),
-          ft = n('htQn'),
-          ht = (n('5BYb'), n('38/B')),
-          mt = n('6iuV'),
-          vt = n('nBUg'),
-          bt = n('ONCy'),
-          yt = n('uavX')
-        function gt(e, t) {
+          mt = n('htQn'),
+          vt = (n('5BYb'), n('38/B')),
+          bt = n('6iuV'),
+          yt = n('nBUg'),
+          gt = n('ONCy'),
+          _t = n('uavX')
+        function Ot(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -52829,22 +52952,22 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function _t(e) {
+        function wt(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? gt(Object(n), !0).forEach(function (t) {
+              ? Ot(Object(n), !0).forEach(function (t) {
                   y()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : gt(Object(n)).forEach(function (t) {
+              : Ot(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
-        function Ot(e) {
+        function Et(e) {
           var t = (function () {
             if ('undefined' == typeof Reflect || !Reflect.construct) return !1
             if (Reflect.construct.sham) return !1
@@ -52865,12 +52988,12 @@ window.__SCRIPTS_LOADED__.i18n &&
             return h()(this, n)
           }
         }
-        var wt = fe.a.b74bf8b7,
-          Et = fe.a.a7cd5cf4,
-          jt = fe.a.df8cd2af,
-          Pt = (function (e) {
+        var jt = fe.a.b74bf8b7,
+          Pt = fe.a.a7cd5cf4,
+          St = fe.a.df8cd2af,
+          Tt = (function (e) {
             p()(n, e)
-            var t = Ot(n)
+            var t = Et(n)
             function n(e) {
               var r
               return (
@@ -52913,9 +53036,9 @@ window.__SCRIPTS_LOADED__.i18n &&
                     })
                   return s
                     ? _.createElement(
-                        mt.a,
+                        bt.a,
                         {
-                          childrenStyle: [St.fullWidth, { marginHorizontal: '3px' }],
+                          childrenStyle: [It.fullWidth, { marginHorizontal: '3px' }],
                           isLocked: h,
                           navButtonStyle: l,
                           onVisibleRangeChange: r._handleSlideChangeV2,
@@ -52925,10 +53048,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                         },
                         v,
                       )
-                    : _.createElement(vt.a.UseProps, null, function (e) {
+                    : _.createElement(yt.a.UseProps, null, function (e) {
                         var o = e.cardCarouselClickableNavArea
                         return _.createElement(
-                          yt.b,
+                          _t.b,
                           {
                             cellSpacing: 5,
                             currentSlide: f,
@@ -52938,7 +53061,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                             onChange: r._handleSlideChange,
                             onRest: r._handleUpdatingLoadedSlide,
                             onSlideProgressChange: d,
-                            receivesFocusOnChange: yt.a.carouselRoot,
+                            receivesFocusOnChange: _t.a.carouselRoot,
                             setParentAspectRatio: c ? r._setAspectRatio : void 0,
                             shouldRenderAll: a,
                             showNavButtonsOnHover: !0,
@@ -53007,12 +53130,12 @@ window.__SCRIPTS_LOADED__.i18n &&
                     o = r.state.currentVideoPlayer,
                     i = 'prev' === t ? e + 1 : e - 1
                   o && o.pause(), r._scribeAndLogEvent({ currentIndex: e, previousIndex: i, scribeAction: n })
-                  var a = ht.a.reducedMotionEnabled,
+                  var a = vt.a.reducedMotionEnabled,
                     c = r._getTransitionA11yLabel(e)
                   r.setState(
-                    _t(
-                      _t({ currentSlide: e }, Object(bt.a)(c ? { transitionAccessibilityLabel: c } : null)),
-                      Object(bt.a)(a ? { loadedSlide: e } : null),
+                    wt(
+                      wt({ currentSlide: e }, Object(gt.a)(c ? { transitionAccessibilityLabel: c } : null)),
+                      Object(gt.a)(a ? { loadedSlide: e } : null),
                     ),
                     function () {
                       return r._storeCarouselIndex(e)
@@ -53037,7 +53160,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     n = t.promotedLogData,
                     o = t.updatePromotedLogState,
                     i = t.getPromotedLogData,
-                    a = _t(_t({}, n), i(e + 1))
+                    a = wt(wt({}, n), i(e + 1))
                   o && o(a)
                 }),
                 y()(l()(r), '_setAspectRatio', function (e) {
@@ -53106,8 +53229,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                         ? _.createElement(U.a, null, o)
                         : _.createElement(
                             ke.a,
-                            { ratio: i, style: St.aspectRatio },
-                            _.createElement(U.a, { style: [St.root] }, o),
+                            { ratio: i, style: It.aspectRatio },
+                            _.createElement(U.a, { style: [It.root] }, o),
                           )
                     },
                   },
@@ -53119,9 +53242,9 @@ window.__SCRIPTS_LOADED__.i18n &&
                         r = t.items,
                         o = n(e)
                       return 'photo' === (null == o ? void 0 : o.type)
-                        ? jt({ currentSlide: e + 1, itemCount: r.length, type: wt, altText: o.altText || '' })
+                        ? St({ currentSlide: e + 1, itemCount: r.length, type: jt, altText: o.altText || '' })
                         : 'uc_video' === (null == o ? void 0 : o.type)
-                        ? jt({ currentSlide: e + 1, itemCount: r.length, type: Et, altText: '' })
+                        ? St({ currentSlide: e + 1, itemCount: r.length, type: Pt, altText: '' })
                         : void 0
                     },
                   },
@@ -53140,7 +53263,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         var u = a(n + 1)
                         c &&
                           c(
-                            _t(
+                            wt(
                               {
                                 action:
                                   t > n ? 'unified_card_carousel_swipe_next' : 'unified_card_carousel_swipe_previous',
@@ -53159,7 +53282,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     key: 'getDerivedStateFromProps',
                     value: function (e, t) {
                       return e.items.length - 1 < t.currentSlide
-                        ? _t(_t({}, t), {}, { currentSlide: e.items.length - 1 })
+                        ? wt(wt({}, t), {}, { currentSlide: e.items.length - 1 })
                         : null
                     },
                   },
@@ -53168,22 +53291,22 @@ window.__SCRIPTS_LOADED__.i18n &&
               n
             )
           })(_.Component)
-        y()(Pt, 'defaultProps', { carouselIndex: 0, shouldUseCarouselV2: !1 })
-        var St = F.a.create(function (e) {
+        y()(Tt, 'defaultProps', { carouselIndex: 0, shouldUseCarouselV2: !1 })
+        var It = F.a.create(function (e) {
             return {
               root: { height: '100%' },
               aspectRatio: { overflow: 'visible' },
               fullWidth: { scrollSnapAlign: 'center', width: '100%' },
             }
           }),
-          Tt = (function (e) {
+          Ct = (function (e) {
             return function (t) {
-              return _.createElement(Ro.Context.Consumer, null, function (n) {
+              return _.createElement(Ao.Context.Consumer, null, function (n) {
                 return _.createElement(e, o()({}, t, n))
               })
             }
-          })(Pt),
-          It = function (e, t) {
+          })(Tt),
+          kt = function (e, t) {
             var n = t.currentSlide,
               r = t.loadedSlide,
               o = t.createBoundRenderVideoPlayer,
@@ -53211,7 +53334,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     accessibilityHidden: !d,
                     key: a.id,
                     onLayout: e(v),
-                    style: [Rt.video, 'first' === c && Rt.firstImage, 'last' === c && Rt.lastImage],
+                    style: [Dt.video, 'first' === c && Dt.firstImage, 'last' === c && Dt.lastImage],
                     testID: 'videoContainer',
                   },
                   y(),
@@ -53229,11 +53352,11 @@ window.__SCRIPTS_LOADED__.i18n &&
                 overlay: a.overlay,
                 playOverlaySize: s,
                 ratio: u ? Math.max(h / m, 1) : void 0,
-                style: [Rt.video, 'first' === c && Rt.firstImage, 'last' === c && Rt.lastImage],
+                style: [Dt.video, 'first' === c && Dt.firstImage, 'last' === c && Dt.lastImage],
               }),
             )
           }
-        function Ct(e, t) {
+        function Rt(e, t) {
           var n, r, o, i, a, c
           if (e.length <= 1)
             return null === (a = ce(null === (c = e[0]) || void 0 === c ? void 0 : c.media_entity)) || void 0 === a
@@ -53270,7 +53393,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               })(d, p, l - s)
             : void 0
         }
-        var kt = function (e) {
+        var xt = function (e) {
             var t,
               n = e.swipeableMedia,
               r = e.playOverlaySize,
@@ -53289,7 +53412,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               d = _.useCallback(
                 function (e) {
                   if (i) {
-                    var t = Ct(n, e)
+                    var t = Rt(n, e)
                     t && i(t)
                   }
                 },
@@ -53312,7 +53435,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               v = n.some(function (e) {
                 return 'uc_video' === e.media_entity.type
               })
-            return _.createElement(Tt, {
+            return _.createElement(Ct, {
               aspectRatio: m,
               getClientEventData: function (e) {
                 return { currentMediaIndex: e.currentIndex + 1, previousMediaIndex: e.previousIndex + 1 }
@@ -53331,42 +53454,42 @@ window.__SCRIPTS_LOADED__.i18n &&
               playOverlaySize: r,
               renderSlide: function () {
                 for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++) t[n] = arguments[n]
-                return It.apply(void 0, [l].concat(t))
+                return kt.apply(void 0, [l].concat(t))
               },
               renderVideoPlayer: o,
               withReducedNavButtonClickArea: v,
             })
           },
-          Rt = F.a.create(function (e) {
+          Dt = F.a.create(function (e) {
             return {
               video: { overflow: 'hidden', maxHeight: '100%' },
               firstImage: { borderTopLeftRadius: e.borderRadii.xLarge },
               lastImage: { borderTopRightRadius: e.borderRadii.xLarge },
             }
           }),
-          xt = (n('kH1Z'), n('6U7i'), n('U7kY')),
-          Dt = 450,
-          Lt = 400,
-          At = Object.freeze({
+          Lt = (n('kH1Z'), n('6U7i'), n('U7kY')),
+          At = 450,
+          Mt = 400,
+          Nt = Object.freeze({
             large: { title: 1, description: 2 },
             medium: { title: 2, description: 1 },
             small: { title: 2, description: 0 },
           }),
-          Mt = Object.freeze({
+          Bt = Object.freeze({
             large: { title: 1, description: 2 },
             medium: { title: 2, description: 1 },
             small: { title: 2, description: 0 },
           }),
-          Nt = Object.freeze({ large: 5, medium: 4, small: 3 }),
-          Bt = Object.freeze({ large: 'normal', medium: 'normalCompact', small: 'normalCompact' }),
-          Ft = function (e, t, n) {
+          Ft = Object.freeze({ large: 5, medium: 4, small: 3 }),
+          Ut = Object.freeze({ large: 'normal', medium: 'normalCompact', small: 'normalCompact' }),
+          Ht = function (e, t, n) {
             var r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {},
-              o = { large: Mt, small: At }[e],
+              o = { large: Bt, small: Nt }[e],
               i = r.alwaysShowDescription,
               a = void 0 !== i && i,
               c = r.capMaxTitleLines,
               s = void 0 === c ? Number.MAX_SAFE_INTEGER : c,
-              u = t >= Dt ? o.large : t >= Lt ? o.medium : o.small,
+              u = t >= At ? o.large : t >= Mt ? o.medium : o.small,
               l = [n.category || null, n.attribution || null, n.footer || null, n.vanity || null],
               d = n.description,
               p = n.title,
@@ -53377,7 +53500,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               ? { titleMaxLines: h, descriptionMaxLines: m }
               : { titleMaxLines: Math.min(2, h), descriptionMaxLines: m }
           },
-          Ut = function (e, t) {
+          Wt = function (e, t) {
             var n = [
                 t.category || null,
                 t.attribution || null,
@@ -53386,13 +53509,13 @@ window.__SCRIPTS_LOADED__.i18n &&
                 t.title,
                 t.description,
               ].filter(Boolean).length,
-              r = e >= Dt ? Nt.large : e >= Lt ? Nt.medium : Nt.small
-            return Wt(r, n)
+              r = e >= At ? Ft.large : e >= Mt ? Ft.medium : Ft.small
+            return Vt(r, n)
           },
-          Ht = function (e) {
-            return e >= Dt ? Bt.large : e >= Lt ? Bt.medium : Bt.small
+          zt = function (e) {
+            return e >= At ? Ut.large : e >= Mt ? Ut.medium : Ut.small
           },
-          Wt = function (e, t) {
+          Vt = function (e, t) {
             var n = F.a.theme,
               r = n.borderWidths,
               o = n.lineHeights,
@@ -53403,13 +53526,13 @@ window.__SCRIPTS_LOADED__.i18n &&
               u = ''.concat(i.space2, ' * ').concat(t - 1)
             return 'calc('.concat(a, ' + ').concat(c, ' + ').concat(s, ' + ').concat(u, ')')
           },
-          zt = function (e, t) {
+          Gt = function (e, t) {
             var n = e ? Math.abs(e - t) : 1 / 0,
-              r = xt.a.getScrollbarWidth()
+              r = Lt.a.getScrollbarWidth()
             return void 0 === e || n > r
           },
-          Vt = n('+d3d')
-        function Gt(e, t) {
+          Kt = n('+d3d')
+        function qt(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -53421,22 +53544,22 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function Kt(e) {
+        function Qt(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? Gt(Object(n), !0).forEach(function (t) {
+              ? qt(Object(n), !0).forEach(function (t) {
                   y()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : Gt(Object(n)).forEach(function (t) {
+              : qt(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
-        function qt(e) {
+        function Yt(e) {
           var t = (function () {
             if ('undefined' == typeof Reflect || !Reflect.construct) return !1
             if (Reflect.construct.sham) return !1
@@ -53457,21 +53580,21 @@ window.__SCRIPTS_LOADED__.i18n &&
             return h()(this, n)
           }
         }
-        var Qt = Object.freeze({
+        var Xt = Object.freeze({
             CONTROL: 'control',
             GRAY_DETAILS: 'gray_details',
             HIGHLIGHT_DETAILS: 'highlight_details',
           }),
-          Yt = (function (e) {
+          Jt = (function (e) {
             p()(n, e)
-            var t = qt(n)
+            var t = Yt(n)
             function n(e) {
               var r, o
               a()(this, n),
                 (o = t.call(this, e)),
                 y()(l()(o), '_mounted', !0),
-                y()(l()(o), 'cardDetailNativeId', Object(pt.createOpaqueIdentifier)()),
-                y()(l()(o), 'cardMediaNativeId', Object(pt.createOpaqueIdentifier)()),
+                y()(l()(o), 'cardDetailNativeId', Object(rt.createOpaqueIdentifier)()),
+                y()(l()(o), 'cardMediaNativeId', Object(rt.createOpaqueIdentifier)()),
                 y()(l()(o), '_getHighlightColor', function () {
                   var e = o.props,
                     t = e.media,
@@ -53479,15 +53602,15 @@ window.__SCRIPTS_LOADED__.i18n &&
                     r = o.state.swipeableMediaHighlightColor
                   if (t) {
                     var i = ce(t.mediaEntity)
-                    return i ? Object(xe.g)(Kt(Kt({}, i.rgb), {}, { alpha: 0.9 })) : void 0
+                    return i ? Object(xe.g)(Qt(Qt({}, i.rgb), {}, { alpha: 0.9 })) : void 0
                   }
-                  if (n && n.length > 0) return r ? Object(xe.g)(Kt(Kt({}, r), {}, { alpha: 0.9 })) : void 0
+                  if (n && n.length > 0) return r ? Object(xe.g)(Qt(Qt({}, r), {}, { alpha: 0.9 })) : void 0
                 }),
                 y()(l()(o), '_isHighlightDetailsEnabled', function () {
-                  return o.props.highlightDetailsExperimentBucket === Qt.HIGHLIGHT_DETAILS
+                  return o.props.highlightDetailsExperimentBucket === Xt.HIGHLIGHT_DETAILS
                 }),
                 y()(l()(o), '_updateSizes', function (e) {
-                  if (o._mounted && zt(o._previousWidth, e)) {
+                  if (o._mounted && Gt(o._previousWidth, e)) {
                     o._previousWidth = e
                     var t = o.props,
                       n = t.details,
@@ -53504,8 +53627,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                           i = e.playOverlaySize,
                           a = e.buttonSize,
                           c = e.width,
-                          s = n ? Ft('large', c, n) : { titleMaxLines: void 0, descriptionMaxLines: void 0 },
-                          u = t ? Ht(c) : void 0,
+                          s = n ? Ht('large', c, n) : { titleMaxLines: void 0, descriptionMaxLines: void 0 },
+                          u = t ? zt(c) : void 0,
                           l = c < 175 ? 'small' : 'normal',
                           d = s.titleMaxLines,
                           p = s.descriptionMaxLines
@@ -53526,7 +53649,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 y()(
                   l()(o),
                   '_handleDominantColorUpdate',
-                  Object(Vt.a)(
+                  Object(Kt.a)(
                     function (e) {
                       o.setState({ swipeableMediaHighlightColor: e })
                     },
@@ -53543,12 +53666,12 @@ window.__SCRIPTS_LOADED__.i18n &&
                 })
               var i = e.initialCarouselIndex || 0
               return (
-                (o.state = Kt(
-                  Kt(
-                    Kt({}, Object(bt.a)(e.details ? Ft('large', 500, e.details) : null)),
-                    Object(bt.a)(e.buttons ? { buttonSize: Ht(500) } : null),
+                (o.state = Qt(
+                  Qt(
+                    Qt({}, Object(gt.a)(e.details ? Ht('large', 500, e.details) : null)),
+                    Object(gt.a)(e.buttons ? { buttonSize: zt(500) } : null),
                   ),
-                  Object(bt.a)(
+                  Object(gt.a)(
                     e.swipeableMedia
                       ? {
                           swipeableMediaHighlightColor:
@@ -53590,16 +53713,16 @@ window.__SCRIPTS_LOADED__.i18n &&
                       v = !n && !f,
                       b = n && !f,
                       y = !!(u || t || r) && !f && !this._isHighlightDetailsEnabled(),
-                      g = i === Qt.GRAY_DETAILS
+                      g = i === Xt.GRAY_DETAILS
                     return _.createElement(
-                      ft.a,
+                      mt.a,
                       {
                         accessibilityLabelledBy: [this.cardMediaNativeId, this.cardDetailNativeId],
                         nativeID: c,
                         onHoverIn: s,
                         onLayout: this._handleLayout,
                         onPressIn: s,
-                        style: [o && Jt[o], v && Jt.border, p && Xt[p], f && Jt.rootWithCarousel, g && Jt.grayDetails],
+                        style: [o && $t[o], v && $t.border, p && Zt[p], f && $t.rootWithCarousel, g && $t.grayDetails],
                         testID: null == l ? void 0 : l.wrapper,
                         viewRef: this._setRootNode,
                         withFocusWithinFocusRing: !0,
@@ -53613,11 +53736,11 @@ window.__SCRIPTS_LOADED__.i18n &&
                               accessibilityHidden: !0,
                               nativeID: this.cardMediaNativeId,
                               style: [
-                                Jt.media,
-                                b && Jt.border,
-                                y && Jt.mediaBottomBorder,
-                                m && Jt.mediaBottomSpace,
-                                !!r && Xt.both,
+                                $t.media,
+                                b && $t.border,
+                                y && $t.mediaBottomBorder,
+                                m && $t.mediaBottomSpace,
+                                !!r && Zt.both,
                               ],
                               testID: null == l ? void 0 : l.layoutLarge.media,
                             },
@@ -53628,7 +53751,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         U.a,
                         {
                           nativeID: this.cardDetailNativeId,
-                          style: [f && !this._isHighlightDetailsEnabled() && Jt.carouselBottomContent],
+                          style: [f && !this._isHighlightDetailsEnabled() && $t.carouselBottomContent],
                         },
                         this._renderDetail(),
                         this._renderCommunityDetail(),
@@ -53731,7 +53854,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   key: '_renderPoll',
                   value: function () {
                     var e = this.props.poll
-                    return e ? _.createElement(dt, e) : null
+                    return e ? _.createElement(ht, e) : null
                   },
                 },
                 {
@@ -53742,7 +53865,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       n = e.swipeableMedia,
                       r = this._isHighlightDetailsEnabled() ? this._handleDominantColorUpdate : void 0
                     return n
-                      ? _.createElement(kt, {
+                      ? _.createElement(xt, {
                           onDominantColorUpdate: r,
                           playOverlaySize: this.state.playOverlaySize,
                           renderVideoPlayer: t,
@@ -53766,20 +53889,20 @@ window.__SCRIPTS_LOADED__.i18n &&
               n
             )
           })(_.Component)
-        y()(Yt, 'defaultProps', {
-          highlightDetailsExperimentBucket: Qt.CONTROL,
+        y()(Jt, 'defaultProps', {
+          highlightDetailsExperimentBucket: Xt.CONTROL,
           isPromoted: !1,
           withInteractiveStyling: !0,
         }),
-          (Yt.propTypes = {})
-        var Xt = F.a.create(function (e) {
+          (Jt.propTypes = {})
+        var Zt = F.a.create(function (e) {
             return {
               both: { borderBottomRightRadius: e.borderRadii.none, borderBottomLeftRadius: e.borderRadii.none },
               left: { borderBottomLeftRadius: e.borderRadii.none },
               right: { borderBottomRightRadius: e.borderRadii.none },
             }
           }),
-          Jt = F.a.create(function (e) {
+          $t = F.a.create(function (e) {
             return {
               grayDetails: { backgroundColor: e.colors.gray50 },
               media: { display: 'block' },
@@ -53809,8 +53932,8 @@ window.__SCRIPTS_LOADED__.i18n &&
               received: { borderColor: e.colors.gray200 },
             }
           }),
-          Zt = Yt
-        function $t(e, t) {
+          en = Jt
+        function tn(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -53822,7 +53945,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function en(e) {
+        function nn(e) {
           var t = (function () {
             if ('undefined' == typeof Reflect || !Reflect.construct) return !1
             if (Reflect.construct.sham) return !1
@@ -53843,35 +53966,35 @@ window.__SCRIPTS_LOADED__.i18n &&
             return h()(this, n)
           }
         }
-        var tn = fe.a.hdf426f5,
-          nn = fe.a.a3efd2c3,
-          rn = fe.a.b91c8e53,
-          on = fe.a.b3826294,
-          an = (function (e) {
+        var rn = fe.a.hdf426f5,
+          on = fe.a.a3efd2c3,
+          an = fe.a.b91c8e53,
+          cn = fe.a.b3826294,
+          sn = (function (e) {
             p()(n, e)
-            var t = en(n)
+            var t = nn(n)
             function n(e) {
               var r
               a()(this, n),
                 (r = t.call(this, e)),
                 y()(l()(r), '_mounted', !0),
-                y()(l()(r), 'cardDetailNativeId', Object(pt.createOpaqueIdentifier)()),
-                y()(l()(r), 'cardMediaNativeId', Object(pt.createOpaqueIdentifier)()),
+                y()(l()(r), 'cardDetailNativeId', Object(rt.createOpaqueIdentifier)()),
+                y()(l()(r), 'cardMediaNativeId', Object(rt.createOpaqueIdentifier)()),
                 y()(l()(r), '_composeTopicCardAccessibilityLabel', function (e, t) {
                   return t && t.content && t.content.length > 0
-                    ? on({ title: e.content, description: t.content })
-                    : rn({ title: e.content })
+                    ? cn({ title: e.content, description: t.content })
+                    : an({ title: e.content })
                 }),
                 y()(l()(r), '_updateSizes', function (e) {
-                  if (r._mounted && zt(r._previousWidth, e)) {
+                  if (r._mounted && Gt(r._previousWidth, e)) {
                     r._previousWidth = e
                     var t = r.state,
                       n = t.titleMaxLines,
                       o = t.descriptionMaxLines,
                       i = t.imageWidthStyle,
                       a = r.props.details,
-                      c = Ft('small', e, a, r._getLinesForWidthOptions()),
-                      s = Ut(e, a),
+                      c = Ht('small', e, a, r._getLinesForWidthOptions()),
+                      s = Wt(e, a),
                       u = c.titleMaxLines,
                       l = c.descriptionMaxLines
                     ;(s === i && u === n && l === o) ||
@@ -53891,12 +54014,12 @@ window.__SCRIPTS_LOADED__.i18n &&
                     for (var t = 1; t < arguments.length; t++) {
                       var n = null != arguments[t] ? arguments[t] : {}
                       t % 2
-                        ? $t(Object(n), !0).forEach(function (t) {
+                        ? tn(Object(n), !0).forEach(function (t) {
                             y()(e, t, n[t])
                           })
                         : Object.getOwnPropertyDescriptors
                         ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-                        : $t(Object(n)).forEach(function (t) {
+                        : tn(Object(n)).forEach(function (t) {
                             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                           })
                     }
@@ -53904,10 +54027,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                   })({ alwaysShowDescription: e }, e ? { capMaxTitleLines: 2 } : null)
                 })
               var o = e.details,
-                i = Ft('small', 500, o, r._getLinesForWidthOptions()),
+                i = Ht('small', 500, o, r._getLinesForWidthOptions()),
                 c = i.titleMaxLines,
                 s = i.descriptionMaxLines
-              return (r.state = { descriptionMaxLines: s, titleMaxLines: c, imageWidthStyle: Ut(500, o) }), r
+              return (r.state = { descriptionMaxLines: s, titleMaxLines: c, imageWidthStyle: Wt(500, o) }), r
             }
             return (
               s()(n, [
@@ -53932,7 +54055,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       u = this.state.imageWidthStyle,
                       l = _.createElement(
                         U.a,
-                        { key: 'details', style: sn.details },
+                        { key: 'details', style: ln.details },
                         s ? this._renderTopicDetail() : this._renderDetail(),
                       ),
                       d = _.createElement(
@@ -53941,20 +54064,20 @@ window.__SCRIPTS_LOADED__.i18n &&
                           accessibilityHidden: !0,
                           key: 'media',
                           nativeID: this.cardMediaNativeId,
-                          style: [sn.media, { width: u }, c && cn[c], o ? sn.mediaLeftBorder : sn.mediaRightBorder],
+                          style: [ln.media, { width: u }, c && un[c], o ? ln.mediaLeftBorder : ln.mediaRightBorder],
                           testID: null == i ? void 0 : i.layoutSmall.media,
                         },
                         this._renderMedia(),
                       )
                     return _.createElement(
-                      ft.a,
+                      mt.a,
                       {
                         accessibilityLabelledBy: [this.cardMediaNativeId, this.cardDetailNativeId],
                         nativeID: n,
                         onHoverIn: r,
                         onLayout: this._handleLayout,
                         onPressIn: r,
-                        style: [sn.root, c && cn[c], t && sn[t]],
+                        style: [ln.root, c && un[c], t && ln[t]],
                         testID: null == i ? void 0 : i.wrapper,
                         viewRef: this._setRootNode,
                         withFocusWithinFocusRing: !0,
@@ -54003,7 +54126,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       a = r.destination,
                       c = {
                         is_rtl: (null == o ? void 0 : o.is_rtl) || (null == i ? void 0 : i.is_rtl),
-                        content: o && o.content ? tn({ description: o.content }) : nn,
+                        content: o && o.content ? rn({ description: o.content }) : on,
                       }
                     return _.createElement(Ee, {
                       accessibilityLabel: i ? this._composeTopicCardAccessibilityLabel(i, o) : void 0,
@@ -54027,7 +54150,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       i = n.overlay
                     return r && 'photo' !== r.type
                       ? null
-                      : _.createElement(Ro.Context.Consumer, null, function (e) {
+                      : _.createElement(Ao.Context.Consumer, null, function (e) {
                           var n = e.isDataSaverEnabled,
                             a = e.isPromoted,
                             c = n && !a
@@ -54046,15 +54169,15 @@ window.__SCRIPTS_LOADED__.i18n &&
               n
             )
           })(_.Component)
-        y()(an, 'defaultProps', { withInteractiveStyling: !0 }), (an.propTypes = {})
-        var cn = F.a.create(function (e) {
+        y()(sn, 'defaultProps', { withInteractiveStyling: !0 }), (sn.propTypes = {})
+        var un = F.a.create(function (e) {
             return {
               both: { borderBottomRightRadius: e.borderRadii.none, borderBottomLeftRadius: e.borderRadii.none },
               left: { borderBottomLeftRadius: e.borderRadii.none },
               right: { borderBottomRightRadius: e.borderRadii.none },
             }
           }),
-          sn = F.a.create(function (e) {
+          ln = F.a.create(function (e) {
             return {
               root: {
                 borderColor: e.colors.nestedBorderColor,
@@ -54085,35 +54208,8 @@ window.__SCRIPTS_LOADED__.i18n &&
               received: { borderColor: e.colors.gray200 },
             }
           }),
-          un = an
+          dn = sn
         n('Blm6')
-        function ln(e, t) {
-          var n = Object.keys(e)
-          if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e)
-            t &&
-              (r = r.filter(function (t) {
-                return Object.getOwnPropertyDescriptor(e, t).enumerable
-              })),
-              n.push.apply(n, r)
-          }
-          return n
-        }
-        function dn(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {}
-            t % 2
-              ? ln(Object(n), !0).forEach(function (t) {
-                  y()(e, t, n[t])
-                })
-              : Object.getOwnPropertyDescriptors
-              ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : ln(Object(n)).forEach(function (t) {
-                  Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-                })
-          }
-          return e
-        }
         function pn(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
@@ -54195,9 +54291,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return e
         }
-        var yn = { url: 'https://pbs.twimg.com/lex/placeholder_live_nomargin.png', width: 1920, height: 1080 },
-          gn = 'NOT_STARTED'
-        function _n(e, t) {
+        function yn(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -54209,21 +54303,23 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function On(e) {
+        function gn(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? _n(Object(n), !0).forEach(function (t) {
+              ? yn(Object(n), !0).forEach(function (t) {
                   y()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : _n(Object(n)).forEach(function (t) {
+              : yn(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
+        var _n = { url: 'https://pbs.twimg.com/lex/placeholder_live_nomargin.png', width: 1920, height: 1080 },
+          On = 'NOT_STARTED'
         function wn(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
@@ -54278,9 +54374,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return e
         }
-        var Sn = fe.a.db44ff5b,
-          Tn = fe.a.c600045f
-        function In(e, t) {
+        function Sn(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -54292,21 +54386,23 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function Cn(e) {
+        function Tn(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? In(Object(n), !0).forEach(function (t) {
+              ? Sn(Object(n), !0).forEach(function (t) {
                   y()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : In(Object(n)).forEach(function (t) {
+              : Sn(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
+        var In = fe.a.db44ff5b,
+          Cn = fe.a.c600045f
         function kn(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
@@ -54334,8 +54430,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return e
         }
-        var xn = n('/Ikv')
-        function Dn(e, t) {
+        function xn(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -54347,22 +54442,50 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function Ln(e) {
+        function Dn(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? Dn(Object(n), !0).forEach(function (t) {
+              ? xn(Object(n), !0).forEach(function (t) {
                   y()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : Dn(Object(n)).forEach(function (t) {
+              : xn(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
-        var An = function (e, t, n, r) {
+        var Ln = n('/Ikv')
+        function An(e, t) {
+          var n = Object.keys(e)
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e)
+            t &&
+              (r = r.filter(function (t) {
+                return Object.getOwnPropertyDescriptor(e, t).enumerable
+              })),
+              n.push.apply(n, r)
+          }
+          return n
+        }
+        function Mn(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {}
+            t % 2
+              ? An(Object(n), !0).forEach(function (t) {
+                  y()(e, t, n[t])
+                })
+              : Object.getOwnPropertyDescriptors
+              ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+              : An(Object(n)).forEach(function (t) {
+                  Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+                })
+          }
+          return e
+        }
+        var Nn = function (e, t, n, r) {
             var o,
               i = {}
             return (
@@ -54377,7 +54500,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               i
             )
           },
-          Mn = function (e) {
+          Bn = function (e) {
             var t,
               n,
               r,
@@ -54441,8 +54564,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                   }),
                   y()(o, x.b.DETAILS, {
                     type: x.d.DETAILS,
-                    data: Ln(
-                      Ln({ destination: x.b.DESTINATION }, l ? { description: { content: l } } : null),
+                    data: Mn(
+                      Mn({ destination: x.b.DESTINATION }, l ? { description: { content: l } } : null),
                       {},
                       { title: { content: te(c, 'string_value', 'title') } },
                     ),
@@ -54452,33 +54575,6 @@ window.__SCRIPTS_LOADED__.i18n &&
             }
           }
         n('KOtZ')
-        function Nn(e, t) {
-          var n = Object.keys(e)
-          if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e)
-            t &&
-              (r = r.filter(function (t) {
-                return Object.getOwnPropertyDescriptor(e, t).enumerable
-              })),
-              n.push.apply(n, r)
-          }
-          return n
-        }
-        function Bn(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {}
-            t % 2
-              ? Nn(Object(n), !0).forEach(function (t) {
-                  y()(e, t, n[t])
-                })
-              : Object.getOwnPropertyDescriptors
-              ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : Nn(Object(n)).forEach(function (t) {
-                  Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-                })
-          }
-          return e
-        }
         function Fn(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
@@ -54614,10 +54710,37 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return e
         }
-        var Yn = n('m3Bd'),
-          Xn = n.n(Yn),
-          Jn = (n('DfhM'), n('jQ3i'), n('w6IS')),
-          Zn = Object.freeze({
+        function Yn(e, t) {
+          var n = Object.keys(e)
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e)
+            t &&
+              (r = r.filter(function (t) {
+                return Object.getOwnPropertyDescriptor(e, t).enumerable
+              })),
+              n.push.apply(n, r)
+          }
+          return n
+        }
+        function Xn(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {}
+            t % 2
+              ? Yn(Object(n), !0).forEach(function (t) {
+                  y()(e, t, n[t])
+                })
+              : Object.getOwnPropertyDescriptors
+              ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+              : Yn(Object(n)).forEach(function (t) {
+                  Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+                })
+          }
+          return e
+        }
+        var Jn = n('m3Bd'),
+          Zn = n.n(Jn),
+          $n = (n('DfhM'), n('jQ3i'), n('w6IS')),
+          er = Object.freeze({
             IMAGE_CAROUSEL_WEBSITE: 'image_carousel_website',
             VIDEO_CAROUSEL_WEBSITE: 'video_carousel_website',
             VIDEO_WEBSITE: 'video_website',
@@ -54628,19 +54751,19 @@ window.__SCRIPTS_LOADED__.i18n &&
             VIDEO_CAROUSEL_APP: 'video_carousel_app',
             INVALID: 'INVALID',
           }),
-          $n = n('aITJ')
-        function er(e, t) {
+          tr = n('aITJ')
+        function nr(e, t) {
           var n
           if ('undefined' == typeof Symbol || null == e[Symbol.iterator]) {
             if (
               Array.isArray(e) ||
               (n = (function (e, t) {
                 if (!e) return
-                if ('string' == typeof e) return tr(e, t)
+                if ('string' == typeof e) return rr(e, t)
                 var n = Object.prototype.toString.call(e).slice(8, -1)
                 'Object' === n && e.constructor && (n = e.constructor.name)
                 if ('Map' === n || 'Set' === n) return Array.from(e)
-                if ('Arguments' === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return tr(e, t)
+                if ('Arguments' === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return rr(e, t)
               })(e)) ||
               (t && e && 'number' == typeof e.length)
             ) {
@@ -54685,12 +54808,12 @@ window.__SCRIPTS_LOADED__.i18n &&
             },
           }
         }
-        function tr(e, t) {
+        function rr(e, t) {
           ;(null == t || t > e.length) && (t = e.length)
           for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n]
           return r
         }
-        function nr(e, t) {
+        function or(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -54702,22 +54825,22 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function rr(e) {
+        function ir(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? nr(Object(n), !0).forEach(function (t) {
+              ? or(Object(n), !0).forEach(function (t) {
                   y()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : nr(Object(n)).forEach(function (t) {
+              : or(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
-        var or = rr(
+        var ar = ir(
             {
               media: !0,
               details: !0,
@@ -54729,7 +54852,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             },
             { media_with_details_horizontal: !0 },
           ),
-          ir = function (e) {
+          cr = function (e) {
             var t = function (t) {
                 return t
                   .map(function (t) {
@@ -54753,21 +54876,21 @@ window.__SCRIPTS_LOADED__.i18n &&
                     : (function (e) {
                         return 'https://itunes.apple.com/app/id'.concat(e)
                       })(n.id)
-              return (n.url = $n.b.isMobileOS() ? { pathname: o, external: !0, openInSameFrame: !0 } : o), n
+              return (n.url = tr.b.isMobileOS() ? { pathname: o, external: !0, openInSameFrame: !0 } : o), n
             }
           },
-          ar = function (e, t) {
+          sr = function (e, t) {
             var n,
               r,
               o = e ? e.data.destination : void 0
             if (e) {
               var i = e.data.app_id,
-                a = ir(t[i]) || {}
+                a = cr(t[i]) || {}
               ;(n = a.title), (r = a.category ? a.category.content : void 0)
             }
             return { type: 'app_store_details', data: { title: n, footer: r, destination: o } }
           },
-          cr = function (e, t) {
+          ur = function (e, t) {
             var n = e.data,
               r = n.destination,
               o = n.name,
@@ -54779,9 +54902,9 @@ window.__SCRIPTS_LOADED__.i18n &&
               data: { title: o, memberCount: a, destination: r, theme: i, facepileUserIds: c, facepileUsers: t },
             }
           },
-          sr = function (e, t) {
+          lr = function (e, t) {
             var n = e.data.destination,
-              r = rr({}, e.data.name),
+              r = ir({}, e.data.name),
               o = t[e.data.user_id],
               i = e.data.member_count
             return {
@@ -54789,7 +54912,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               data: { title: r, destination: n, memberCount: i, attribution: o },
             }
           },
-          ur = function (e, t) {
+          dr = function (e, t) {
             return {
               type: x.d.BUTTON_GROUP,
               data: {
@@ -54807,7 +54930,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             }
           }
-        function lr(e, t, n, r, o, i, a) {
+        function pr(e, t, n, r, o, i, a) {
           var c,
             s,
             u = e.data,
@@ -54818,10 +54941,10 @@ window.__SCRIPTS_LOADED__.i18n &&
             h = u.media_id,
             m = Object.keys(t).reduce(function (e, n) {
               return (
-                (e[n] = rr(
-                  rr({}, t[n]),
+                (e[n] = ir(
+                  ir({}, t[n]),
                   {},
-                  { data: rr(rr({}, t[n].data), {}, { scribe_element: 'uc_media_with_details_horizontal' }) },
+                  { data: ir(ir({}, t[n].data), {}, { scribe_element: 'uc_media_with_details_horizontal' }) },
                 )),
                 e
               )
@@ -54836,14 +54959,14 @@ window.__SCRIPTS_LOADED__.i18n &&
               id: r,
               components: y()({}, x.c.DEFAULT, [x.b.MEDIA, x.b.TOPIC_DETAILS]),
               destinations: m,
-              media_entities: rr({}, i),
+              media_entities: ir({}, i),
               components_data:
                 ((s = {}),
                 y()(s, x.b.MEDIA, { type: x.d.MEDIA, data: { id: h, aspect_ratio: 1, destination: l } }),
                 y()(s, x.b.TOPIC_DETAILS, {
                   type: x.d.TOPIC_DETAILS,
-                  data: rr(
-                    rr({ destination: l }, f && f.content ? { description: rr({}, f) } : null),
+                  data: ir(
+                    ir({ destination: l }, f && f.content ? { description: ir({}, f) } : null),
                     {},
                     { title: p },
                   ),
@@ -54853,7 +54976,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             },
           }
         }
-        var dr = function (e) {
+        var fr = function (e) {
             var t
             if ('string' == typeof (null === (t = e.unified_card) || void 0 === t ? void 0 : t.string_value))
               try {
@@ -54861,10 +54984,10 @@ window.__SCRIPTS_LOADED__.i18n &&
               } catch (n) {}
             return null
           },
-          pr = function (e) {
+          hr = function (e) {
             return ''.concat(e, '_static')
           }
-        function fr(e, t) {
+        function mr(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -54876,24 +54999,24 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function hr(e) {
+        function vr(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? fr(Object(n), !0).forEach(function (t) {
+              ? mr(Object(n), !0).forEach(function (t) {
                   y()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : fr(Object(n)).forEach(function (t) {
+              : mr(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
-        var mr,
-          vr,
-          br = function (e) {
+        var br,
+          yr,
+          gr = function (e) {
             var t,
               n,
               r,
@@ -54936,8 +55059,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                   y()(
                     r,
                     x.b.VIDEO_ENTITY,
-                    dn(
-                      dn(
+                    fn(
+                      fn(
                         { type: 'video', aspect_ratio: l, content_id: te(c, 'string_value', 'amplify_content_id') },
                         d ? { duration_ms: 1e3 * parseInt(d, 10) } : null,
                       ),
@@ -54974,7 +55097,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             }
           },
-          yr = function (e) {
+          _r = function (e) {
             var t,
               n = e.cardId,
               r = e.cardType,
@@ -54997,12 +55120,12 @@ window.__SCRIPTS_LOADED__.i18n &&
                 destinations: y()({}, x.b.DESTINATION, {
                   type: x.f.BROWSER,
                   data: {
-                    url_data: fn({ url: te(o, 'string_value', 'card_url') }, u ? null : { vanity: l }),
+                    url_data: mn({ url: te(o, 'string_value', 'card_url') }, u ? null : { vanity: l }),
                     scribe: 'open_link',
                     promoted_log: 'card_url_click',
                   },
                 }),
-                media_entities: fn({}, i ? y()({}, x.b.IMAGE_ENTITY, ae(i)) : null),
+                media_entities: mn({}, i ? y()({}, x.b.IMAGE_ENTITY, ae(i)) : null),
                 components_data:
                   ((t = {}),
                   y()(t, x.b.MEDIA, {
@@ -55022,7 +55145,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             }
           },
-          gr = function (e) {
+          Or = function (e) {
             var t,
               n,
               r,
@@ -55063,8 +55186,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                   y()(
                     r,
                     x.b.VIDEO_ENTITY,
-                    mn(
-                      mn(
+                    bn(
+                      bn(
                         {
                           type: 'video',
                           aspect_ratio: l,
@@ -55101,7 +55224,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             }
           },
-          _r = function (e) {
+          wr = function (e) {
             var t,
               n,
               r,
@@ -55113,9 +55236,9 @@ window.__SCRIPTS_LOADED__.i18n &&
               u = s && c[s.id_str],
               l = te(a, 'string_value', 'broadcaster_display_name'),
               d = te(a, 'string_value', 'broadcast_state'),
-              p = d === gn,
+              p = d === On,
               f = oe(a, 'image_value', 'broadcast_thumbnail_original'),
-              h = oe(a, 'image_value', 'broadcast_pre_live_slate') || yn,
+              h = oe(a, 'image_value', 'broadcast_pre_live_slate') || _n,
               m = p ? h : f,
               v = te(a, 'string_value', 'broadcast_scheduled_start_time'),
               b = p && v ? I.a.renderStartingTimeLabel(v) : void 0,
@@ -55137,7 +55260,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 card_url: te(a, 'string_value', 'card_url'),
                 get_fetch_interval_for_updates: y()({}, x.c.DEFAULT, function () {
                   return 'NOT_STARTED' === d && parseInt(v, 10) <= Date.now()
-                    ? bn(bn({}, w), {}, { initialPoll: !0 })
+                    ? gn(gn({}, w), {}, { initialPoll: !0 })
                     : w
                 }),
                 on_visibility: { scribe: 'show' },
@@ -55155,14 +55278,14 @@ window.__SCRIPTS_LOADED__.i18n &&
                     promoted_log: 'card_url_click',
                   },
                 }),
-                media_entities: bn(
-                  bn({}, m ? y()({}, x.b.IMAGE_ENTITY, ae(m)) : null),
+                media_entities: gn(
+                  gn({}, m ? y()({}, x.b.IMAGE_ENTITY, ae(m)) : null),
                   {},
                   y()(
                     {},
                     x.b.VIDEO_ENTITY,
-                    bn(
-                      bn(
+                    gn(
+                      gn(
                         {
                           type: 'live_broadcast',
                           aspect_ratio: _,
@@ -55195,8 +55318,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                   }),
                   y()(r, x.b.DETAILS, {
                     type: x.d.DETAILS,
-                    data: bn(
-                      bn({ destination: x.b.DESTINATION }, u ? { attribution: u } : { category: { content: l } }),
+                    data: gn(
+                      gn({ destination: x.b.DESTINATION }, u ? { attribution: u } : { category: { content: l } }),
                       {},
                       { title: { content: te(a, 'string_value', 'broadcast_title') } },
                     ),
@@ -55205,7 +55328,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             }
           },
-          Or = function (e) {
+          Er = function (e) {
             var t,
               n = e.cardId,
               r = e.cardType,
@@ -55228,12 +55351,12 @@ window.__SCRIPTS_LOADED__.i18n &&
                 destinations: y()({}, x.b.DESTINATION, {
                   type: x.f.BROWSER,
                   data: {
-                    url_data: On({ url: te(o, 'string_value', 'card_url') }, u ? null : { vanity: l }),
+                    url_data: En({ url: te(o, 'string_value', 'card_url') }, u ? null : { vanity: l }),
                     scribe: 'open_link',
                     promoted_log: 'card_url_click',
                   },
                 }),
-                media_entities: On({}, i ? y()({}, x.b.IMAGE_ENTITY, ae(i)) : null),
+                media_entities: En({}, i ? y()({}, x.b.IMAGE_ENTITY, ae(i)) : null),
                 components_data:
                   ((t = {}),
                   y()(t, x.b.MEDIA, {
@@ -55253,7 +55376,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             }
           },
-          wr = function (e) {
+          jr = function (e) {
             var t,
               n,
               r,
@@ -55316,8 +55439,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                   }),
                   n),
                 media_entities: y()({}, x.b.IMAGE_ENTITY, ae(l)),
-                components_data: En(
-                  En(
+                components_data: Pn(
+                  Pn(
                     ((r = {}),
                     y()(r, x.b.MEDIA, { type: x.d.MEDIA, data: { id: x.b.IMAGE_ENTITY } }),
                     y()(r, x.b.MEDIA_STATIC, {
@@ -55336,7 +55459,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             }
           },
-          Er = function (e) {
+          Pr = function (e) {
             var t,
               n,
               r,
@@ -55378,7 +55501,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               I = te(u, 'string_value', 'remind_me_notification_id'),
               C = ne(u, 'boolean_value', 'remind_me_toggle_visible') && !!I,
               k = ne(u, 'boolean_value', 'remind_me_subscribed'),
-              R = k ? Tn : Sn
+              R = k ? Cn : In
             return {
               state: x.c.DEFAULT,
               layout:
@@ -55425,8 +55548,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                     },
                   }),
                   o),
-                media_entities: Pn(
-                  Pn({}, S ? y()({}, x.b.IMAGE_ENTITY, ae(S, T)) : null),
+                media_entities: Tn(
+                  Tn({}, S ? y()({}, x.b.IMAGE_ENTITY, ae(S, T)) : null),
                   {},
                   y()(
                     {},
@@ -55466,7 +55589,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   }),
                   y()(i, x.b.BUTTON_GROUP, {
                     type: x.d.BUTTON_GROUP,
-                    data: Pn(
+                    data: Tn(
                       {},
                       C
                         ? {
@@ -55486,7 +55609,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   }),
                   y()(i, x.b.BUTTON_GROUP_STATIC, {
                     type: x.d.BUTTON_GROUP,
-                    data: Pn(
+                    data: Tn(
                       {},
                       C
                         ? {
@@ -55506,8 +55629,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                   }),
                   y()(i, x.b.DETAILS, {
                     type: x.d.DETAILS,
-                    data: Pn(
-                      Pn(
+                    data: Tn(
+                      Tn(
                         { destination: x.b.DESTINATION },
                         p ? { attribution: p } : h ? { category: { content: h } } : null,
                       ),
@@ -55519,7 +55642,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             }
           },
-          jr = function (e) {
+          Sr = function (e) {
             var t,
               n,
               r,
@@ -55577,17 +55700,17 @@ window.__SCRIPTS_LOADED__.i18n &&
                   ((o = {}),
                   y()(o, x.b.BUTTON_GROUP, {
                     type: x.d.BUTTON_GROUP,
-                    data: { buttons: [Cn(Cn({}, d), {}, { destination: x.b.DESTINATION })] },
+                    data: { buttons: [Rn(Rn({}, d), {}, { destination: x.b.DESTINATION })] },
                   }),
                   y()(o, x.b.BUTTON_GROUP_STATIC, {
                     type: x.d.BUTTON_GROUP,
-                    data: { buttons: [Cn(Cn({}, d), {}, { destination: x.b.DESTINATION_STATIC })] },
+                    data: { buttons: [Rn(Rn({}, d), {}, { destination: x.b.DESTINATION_STATIC })] },
                   }),
                   o),
               },
             }
           },
-          Pr = function (e) {
+          Tr = function (e) {
             var t,
               n = e.cardId,
               r = e.cardType,
@@ -55646,7 +55769,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             }
           },
-          Sr = function (e) {
+          Ir = function (e) {
             var t,
               n,
               r,
@@ -55691,14 +55814,14 @@ window.__SCRIPTS_LOADED__.i18n &&
                     promoted_log: 'card_url_click',
                   },
                 }),
-                media_entities: Rn(
-                  Rn({}, s ? y()({}, x.b.IMAGE_ENTITY, ae(s)) : null),
+                media_entities: Dn(
+                  Dn({}, s ? y()({}, x.b.IMAGE_ENTITY, ae(s)) : null),
                   {},
                   y()(
                     {},
                     x.b.VIDEO_ENTITY,
-                    Rn(
-                      Rn(
+                    Dn(
+                      Dn(
                         {
                           type: 'live_broadcast',
                           aspect_ratio: u,
@@ -55740,7 +55863,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             }
           },
-          Tr = function (e) {
+          Cr = function (e) {
             var t,
               n,
               r,
@@ -55758,8 +55881,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                 parseInt(te(c, 'string_value', 'player_height'), 10),
               h = [x.b.MEDIA, x.b.DETAILS],
               m = [x.b.MEDIA_STATIC, x.b.DETAILS_SECONDARY]
-            return xn.a.isVineCard({ name: a, binding_values: c })
-              ? Mn({ cardId: i, cardType: a, data: c, cardContext: s, users: u })
+            return Ln.a.isVineCard({ name: a, binding_values: c })
+              ? Bn({ cardId: i, cardType: a, data: c, cardContext: s, users: u })
               : {
                   state: x.c.DEFAULT,
                   layout:
@@ -55807,7 +55930,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         },
                       }),
                       r),
-                    media_entities: An(l, p, s, f),
+                    media_entities: Nn(l, p, s, f),
                     components_data:
                       ((o = {}),
                       y()(o, x.b.MEDIA, {
@@ -55834,8 +55957,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                       }),
                       y()(o, x.b.DETAILS, {
                         type: x.d.DETAILS,
-                        data: Ln(
-                          Ln(
+                        data: Mn(
+                          Mn(
                             { destination: p ? x.b.DESTINATION : x.b.DESTINATION_SECONDARY },
                             d ? { description: { content: d } } : null,
                           ),
@@ -55845,8 +55968,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                       }),
                       y()(o, x.b.DETAILS_SECONDARY, {
                         type: x.d.DETAILS,
-                        data: Ln(
-                          Ln({ destination: x.b.DESTINATION_SECONDARY }, d ? { description: { content: d } } : null),
+                        data: Mn(
+                          Mn({ destination: x.b.DESTINATION_SECONDARY }, d ? { description: { content: d } } : null),
                           {},
                           { title: { content: te(c, 'string_value', 'title') } },
                         ),
@@ -55855,7 +55978,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   },
                 }
           },
-          Ir = function (e) {
+          kr = function (e) {
             var t,
               n,
               r,
@@ -55900,8 +56023,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                 .filter(Boolean)
               return {
                 type: 'poll',
-                data: Bn(
-                  Bn(
+                data: Un(
+                  Un(
                     { choices: t, isAuthor: g, isFinal: m, resultTextSize: 'body', endDatetimeUtc: b },
                     v ? { selectedChoice: parseInt(v, 10) } : null,
                   ),
@@ -55931,7 +56054,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   y()(t, x.c.DEFAULT, l || d ? [x.b.POLL, x.b.MEDIA] : [x.b.POLL]),
                   y()(t, x.c.STATIC, l || d ? [x.b.POLL_STATIC, x.b.MEDIA_STATIC] : [x.b.POLL_STATIC]),
                   t),
-                components_data: Bn(
+                components_data: Un(
                   ((n = {}),
                   y()(n, x.b.POLL, O(x.b.DESTINATION)),
                   y()(n, x.b.POLL_STATIC, O(x.b.DESTINATION_STATIC)),
@@ -55972,7 +56095,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             }
           },
-          Cr = function (e) {
+          Rr = function (e) {
             var t,
               n = e.cardId,
               r = e.cardType,
@@ -56023,7 +56146,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             }
           },
-          kr = function (e) {
+          xr = function (e) {
             var t,
               n,
               r,
@@ -56061,8 +56184,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                   secondary: [x.b.MEDIA_SECONDARY, x.b.DETAILS_SECONDARY],
                   static: [x.b.MEDIA_STATIC, x.b.DETAILS_STATIC, x.b.BUTTON_GROUP_STATIC],
                 },
-                destinations: Un(
-                  Un(
+                destinations: Wn(
+                  Wn(
                     y()({}, x.b.DESTINATION, {
                       type: x.f.ACTION,
                       data: {
@@ -56113,22 +56236,22 @@ window.__SCRIPTS_LOADED__.i18n &&
                     type: x.d.MEDIA,
                     data: { id: x.b.IMAGE_ENTITY, destination: x.b.DESTINATION_STATIC },
                   }),
-                  y()(r, x.b.DETAILS, { type: x.d.DETAILS, data: Un({}, d ? { title: { content: d } } : null) }),
+                  y()(r, x.b.DETAILS, { type: x.d.DETAILS, data: Wn({}, d ? { title: { content: d } } : null) }),
                   y()(r, x.b.DETAILS_SECONDARY, {
                     type: x.d.DETAILS,
-                    data: Un(
+                    data: Wn(
                       { title: { content: te(a, 'string_value', 'thank_you_text') } },
                       s ? { destination: x.b.DESTINATION_SECONDARY } : null,
                     ),
                   }),
-                  y()(r, x.b.DETAILS_STATIC, { type: x.d.DETAILS, data: Un({}, d ? { title: { content: d } } : null) }),
+                  y()(r, x.b.DETAILS_STATIC, { type: x.d.DETAILS, data: Wn({}, d ? { title: { content: d } } : null) }),
                   y()(r, x.b.BUTTON_GROUP, { type: x.d.BUTTON_GROUP, data: { buttons: f } }),
                   y()(r, x.b.BUTTON_GROUP_STATIC, { type: x.d.BUTTON_GROUP, data: { buttons: h } }),
                   r),
               },
             }
           },
-          Rr = function (e) {
+          Dr = function (e) {
             var t,
               n,
               r,
@@ -56184,8 +56307,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                   secondary: [x.b.MEDIA_SECONDARY, x.b.DETAILS_SECONDARY],
                   static: [x.b.MEDIA_STATIC, x.b.DETAILS_STATIC, x.b.BUTTON_GROUP_STATIC],
                 },
-                destinations: Wn(
-                  Wn(
+                destinations: Vn(
+                  Vn(
                     y()({}, x.b.DESTINATION, {
                       type: x.f.ACTION,
                       data: {
@@ -56223,15 +56346,15 @@ window.__SCRIPTS_LOADED__.i18n &&
                     },
                   }),
                 ),
-                media_entities: Wn(
-                  Wn(
+                media_entities: Vn(
+                  Vn(
                     {},
                     g
                       ? y()(
                           {},
                           x.b.VIDEO_ENTITY,
-                          Wn(
-                            Wn(
+                          Vn(
+                            Vn(
                               { type: 'video', aspect_ratio: f, content_id: ue(g) },
                               j ? { duration_ms: 1e3 * parseInt(j, 10) } : null,
                             ),
@@ -56246,7 +56369,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   y()(
                     n,
                     x.b.VIDEO_ENTITY_SECONDARY,
-                    Wn(
+                    Vn(
                       {
                         type: 'video',
                         aspect_ratio: h,
@@ -56278,22 +56401,22 @@ window.__SCRIPTS_LOADED__.i18n &&
                       aspect_ratio: l ? void 0 : 1.91,
                     },
                   }),
-                  y()(r, x.b.DETAILS, { type: x.d.DETAILS, data: Wn({}, p ? { title: { content: p } } : null) }),
+                  y()(r, x.b.DETAILS, { type: x.d.DETAILS, data: Vn({}, p ? { title: { content: p } } : null) }),
                   y()(r, x.b.DETAILS_SECONDARY, {
                     type: x.d.DETAILS,
-                    data: Wn(
+                    data: Vn(
                       { title: { content: te(a, 'string_value', 'thank_you_text') } },
                       s ? { destination: x.b.DESTINATION_SECONDARY } : null,
                     ),
                   }),
-                  y()(r, x.b.DETAILS_STATIC, { type: x.d.DETAILS, data: Wn({}, p ? { title: { content: p } } : null) }),
+                  y()(r, x.b.DETAILS_STATIC, { type: x.d.DETAILS, data: Vn({}, p ? { title: { content: p } } : null) }),
                   y()(r, x.b.BUTTON_GROUP, { type: x.d.BUTTON_GROUP, data: { buttons: v } }),
                   y()(r, x.b.BUTTON_GROUP_STATIC, { type: x.d.BUTTON_GROUP, data: { buttons: b } }),
                   r),
               },
             }
           },
-          xr = function (e) {
+          Lr = function (e) {
             var t,
               n,
               r,
@@ -56339,7 +56462,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   y()(
                     r,
                     x.b.VIDEO_ENTITY,
-                    Vn(
+                    Kn(
                       {
                         type: 'video',
                         aspect_ratio: d,
@@ -56368,7 +56491,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             }
           },
-          Dr = function (e) {
+          Ar = function (e) {
             var t,
               n = e.cardId,
               r = e.cardType,
@@ -56407,7 +56530,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             }
           },
-          Lr = function (e) {
+          Mr = function (e) {
             var t,
               n = e.cardId,
               r = e.cardType,
@@ -56435,7 +56558,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     promoted_log: 'card_url_click',
                   },
                 }),
-                media_entities: Kn({}, i ? y()({}, x.b.IMAGE_ENTITY, ae(i)) : null),
+                media_entities: Qn({}, i ? y()({}, x.b.IMAGE_ENTITY, ae(i)) : null),
                 components_data:
                   ((t = {}),
                   y()(t, x.b.MEDIA, {
@@ -56444,8 +56567,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                   }),
                   y()(t, x.b.DETAILS, {
                     type: x.d.DETAILS,
-                    data: Kn(
-                      Kn({ destination: x.b.DESTINATION }, a ? { description: { content: a } } : null),
+                    data: Qn(
+                      Qn({ destination: x.b.DESTINATION }, a ? { description: { content: a } } : null),
                       {},
                       { title: { content: te(o, 'string_value', 'title') } },
                     ),
@@ -56454,7 +56577,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             }
           },
-          Ar = function (e) {
+          Nr = function (e) {
             var t,
               n = e.cardId,
               r = e.cardType,
@@ -56482,7 +56605,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     promoted_log: 'card_url_click',
                   },
                 }),
-                media_entities: Qn({}, i ? y()({}, x.b.IMAGE_ENTITY, ae(i)) : null),
+                media_entities: Xn({}, i ? y()({}, x.b.IMAGE_ENTITY, ae(i)) : null),
                 components_data:
                   ((t = {}),
                   y()(t, x.b.MEDIA, {
@@ -56491,8 +56614,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                   }),
                   y()(t, x.b.DETAILS, {
                     type: x.d.DETAILS,
-                    data: Qn(
-                      Qn({ destination: x.b.DESTINATION }, a ? { description: { content: a } } : null),
+                    data: Xn(
+                      Xn({ destination: x.b.DESTINATION }, a ? { description: { content: a } } : null),
                       {},
                       { title: { content: te(o, 'string_value', 'title') } },
                     ),
@@ -56501,7 +56624,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             }
           },
-          Mr = function (e) {
+          Br = function (e) {
             var t,
               n,
               r,
@@ -56513,7 +56636,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               u = e.cardContext,
               l = u.shouldConvertCarouselsToSingleMedia,
               d = u.shouldConvertMDCtoSingleCard,
-              p = dr(s)
+              p = fr(s)
             if (!p)
               return {
                 state: x.c.DEFAULT,
@@ -56538,7 +56661,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     r,
                     o = e.components,
                     i = e.component_objects,
-                    a = er(o)
+                    a = nr(o)
                   try {
                     for (a.s(); !(r = a.n()).done; ) {
                       var c = r.value,
@@ -56561,8 +56684,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                   o.forEach(function (e) {
                     e === n ? ((d.media_1 = l), p.push(u)) : (p.push(e), (d[e] = i[e]))
                   })
-                  var f = e.type === Zn.IMAGE_CAROUSEL_WEBSITE ? Zn.IMAGE_WEBSITE : Zn.VIDEO_WEBSITE
-                  return rr(rr({}, e), {}, { type: f, components: p, component_objects: d })
+                  var f = e.type === er.IMAGE_CAROUSEL_WEBSITE ? er.IMAGE_WEBSITE : er.VIDEO_WEBSITE
+                  return ir(ir({}, e), {}, { type: f, components: p, component_objects: d })
                 })(p))
               : d &&
                 (f = (function (e) {
@@ -56592,7 +56715,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 Object.keys(h).reduce(function (e, t) {
                   var n = h[t]
                   if ('app_store_with_docked_media' === n.type || 'app_store' === n.type) {
-                    var r = ir(m[n.data.app_id])
+                    var r = cr(m[n.data.app_id])
                     e[t] = {
                       type: 'browser',
                       data: {
@@ -56601,7 +56724,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         promoted_log: 'unified_card_component_app_store_click',
                       },
                     }
-                  } else e[t] = rr(rr({}, n), {}, { data: rr(rr({}, n.data), {}, { scribe: 'open_link', promoted_log: 'unified_card_component_url_click' }) })
+                  } else e[t] = ir(ir({}, n), {}, { data: ir(ir({}, n.data), {}, { scribe: 'open_link', promoted_log: 'unified_card_component_url_click' }) })
                   return e
                 }, {})),
               D = (function (e) {
@@ -56611,7 +56734,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   var o = e[r]
                   if (
                     ((t[r] = o),
-                    (n[pr(r)] = { media_url_https: o.media_url_https, type: 'photo', original_info: o.original_info }),
+                    (n[hr(r)] = { media_url_https: o.media_url_https, type: 'photo', original_info: o.original_info }),
                     'photo' === o.type)
                   ) {
                     var i,
@@ -56621,7 +56744,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       u,
                       l,
                       d = o.ext,
-                      p = Xn()(o, ['ext'])
+                      p = Zn()(o, ['ext'])
                     p.altText =
                       (null == d ||
                       null === (i = d.altText) ||
@@ -56649,7 +56772,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       m,
                       v,
                       b = o.ext,
-                      y = Xn()(o, ['ext'])
+                      y = Zn()(o, ['ext'])
                     y.type = 'uc_video'
                     var g =
                       null == b ||
@@ -56668,11 +56791,11 @@ window.__SCRIPTS_LOADED__.i18n &&
               })(I),
               L = D.mediaEntities,
               A = D.photoEntitiesFromVideo,
-              M = 'swipeable' === (null == k ? void 0 : k.type) ? Object(Jn.a)(k.data.slides) : P,
+              M = 'swipeable' === (null == k ? void 0 : k.type) ? Object($n.a)(k.data.slides) : P,
               N = {},
               B = [],
               F = [],
-              U = er(M)
+              U = nr(M)
             try {
               for (U.s(); !(g = U.n()).done; ) {
                 var H = g.value,
@@ -56680,26 +56803,26 @@ window.__SCRIPTS_LOADED__.i18n &&
                 if (W)
                   switch (W.type) {
                     case 'media_with_details_horizontal':
-                      return lr(W, R, c, a, s, L, k)
+                      return pr(W, R, c, a, s, L, k)
                     case 'details':
                       N[H] =
                         ((O = void 0),
                         (w = void 0),
                         (w = (_ = W) ? _.data.destination : void 0),
-                        _ && (O = rr({}, _.data.title)),
+                        _ && (O = ir({}, _.data.title)),
                         { type: 'details', data: { title: O, footer: void 0, destination: w } })
                       break
                     case 'community_details':
-                      N[H] = cr(W, C)
+                      N[H] = ur(W, C)
                       break
                     case 'twitter_list_details':
-                      N[H] = sr(W, C)
+                      N[H] = lr(W, C)
                       break
                     case 'app_store_details':
-                      N[H] = ar(W, j)
+                      N[H] = sr(W, j)
                       break
                     case 'button_group':
-                      N[H] = ur(W, T)
+                      N[H] = dr(W, T)
                       break
                     case 'swipeable_media':
                       ;(N[H] = W), (v = H), (b = W)
@@ -56708,7 +56831,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       N[H] = W
                       var z = L[W.data.id],
                         V = z && 'uc_video' === z.type,
-                        G = pr(H)
+                        G = hr(H)
                       if ((V && (B.push(G), F.push(H)), V)) {
                         var K = z ? z.original_info.width / z.original_info.height : null
                         N[G] = {
@@ -56716,7 +56839,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                           data: {
                             aspect_ratio: K || void 0,
                             destination: W.data.destination,
-                            id: pr(W.data.id),
+                            id: hr(W.data.id),
                             overlay: { type: x.g.PLAY },
                           },
                         }
@@ -56743,7 +56866,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 type: x.d.SWIPEABLE_MEDIA,
                 data: {
                   media_list: b.data.media_list.map(function (e) {
-                    return { destination: e.destination, id: pr(e.id), overlay: { type: x.g.PLAY } }
+                    return { destination: e.destination, id: hr(e.id), overlay: { type: x.g.PLAY } }
                   }),
                 },
               })
@@ -56766,13 +56889,13 @@ window.__SCRIPTS_LOADED__.i18n &&
                 id: a,
                 components: ((r = {}), y()(r, x.c.DEFAULT, M), y()(r, x.c.STATIC, Q), r),
                 destinations: R,
-                media_entities: rr(rr({}, L), A),
+                media_entities: ir(ir({}, L), A),
                 components_data: N,
                 ucLayout: k,
               },
             }
           },
-          Nr = function (e) {
+          Fr = function (e) {
             var t,
               n,
               r,
@@ -56847,8 +56970,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                   y()(
                     o,
                     x.b.VIDEO_ENTITY,
-                    hr(
-                      hr(
+                    vr(
+                      vr(
                         {
                           type: 'video',
                           aspect_ratio: h,
@@ -56866,8 +56989,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                     ),
                   ),
                   o),
-                components_data: hr(
-                  hr(
+                components_data: vr(
+                  vr(
                     ((i = {}),
                     y()(i, x.b.MEDIA, { type: x.d.MEDIA, data: { id: x.b.VIDEO_ENTITY } }),
                     y()(i, x.b.MEDIA_STATIC, {
@@ -56886,17 +57009,17 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             }
           },
-          Br = function (e) {
+          Ur = function (e) {
             return ie(e, function (e) {
               return e('player_width').and('player_height').and('amplify_url_vmap').and('amplify_content_id')
             })
           },
-          Fr = function (e) {
+          Hr = function (e) {
             return ie(e, function (e) {
               return e('card_url').and('title')
             })
           },
-          Ur = function (e) {
+          Wr = function (e) {
             return ie(e, function (e) {
               return e('card_url')
                 .and('title')
@@ -56906,25 +57029,25 @@ window.__SCRIPTS_LOADED__.i18n &&
                 .and('player_stream_url')
             })
           },
-          Hr = function () {
+          zr = function () {
             return !1
           },
-          Wr = function (e) {
+          Vr = function (e) {
             return ie(e, function (e) {
               return e('card_url').and('broadcast_id').and('broadcast_title')
             })
           },
-          zr = function (e) {
+          Gr = function (e) {
             return ie(e, function (e) {
               return e('card_url').and('title')
             })
           },
-          Vr = function (e) {
+          Kr = function (e) {
             return ie(e, function (e) {
               return e('recipient').and('cta1').and('cta1_wm_id').and('image_original')
             })
           },
-          Gr = function (e) {
+          qr = function (e) {
             return ie(e, function (e) {
               return e('card_url')
                 .and('event_id')
@@ -56933,14 +57056,14 @@ window.__SCRIPTS_LOADED__.i18n &&
                 })
             })
           },
-          Kr = function (e, t) {
+          Qr = function (e, t) {
             return (
               ie(e, function (e) {
                 return e('recipient').and('cta')
               }) && t.tweetUserId === re(e, 'user_value', 'recipient').id_str
             )
           },
-          qr = function (e) {
+          Yr = function (e) {
             return ie(e, function (e) {
               return e('card_url')
                 .and(function (e) {
@@ -56952,7 +57075,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 })
             })
           },
-          Qr = function (e) {
+          Xr = function (e) {
             return ie(e, function (e) {
               return e('card_url')
                 .and('broadcast_width')
@@ -56963,8 +57086,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                 })
             })
           },
-          Yr = function (e) {
-            return xn.a.isVineCard({ name: 'player', binding_values: e })
+          Jr = function (e) {
+            return Ln.a.isVineCard({ name: 'player', binding_values: e })
               ? ie(e, function (e) {
                   return e('card_url')
                     .and('title')
@@ -56978,7 +57101,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   return e('card_url').and('player_url').and('player_height').and('player_width').and('title')
                 })
           },
-          Xr = function (e) {
+          Zr = function (e) {
             return ie(e, function (e) {
               return e('choice1_label')
                 .and('choice2_label')
@@ -56988,12 +57111,12 @@ window.__SCRIPTS_LOADED__.i18n &&
                 .and('card_url')
             })
           },
-          Jr = function (e) {
+          $r = function (e) {
             return ie(e, function (e) {
               return e('card_url').and('title').and('promo_image_original').and('cta_key')
             })
           },
-          Zr = function (e) {
+          eo = function (e) {
             return ie(e, function (e) {
               return e('card_url')
                 .and('thank_you_text')
@@ -57003,7 +57126,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 .and('cta_one_tweet')
             })
           },
-          $r = function (e) {
+          to = function (e) {
             return ie(e, function (e) {
               return e('card_url')
                 .and('thank_you_text')
@@ -57015,7 +57138,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 .and('player_stream_url')
             })
           },
-          eo = function (e) {
+          no = function (e) {
             return ie(e, function (e) {
               return e('card_url')
                 .and('title')
@@ -57025,39 +57148,39 @@ window.__SCRIPTS_LOADED__.i18n &&
                 .and('player_stream_url')
             })
           },
-          to = function (e) {
+          ro = function (e) {
             return ie(e, function (e) {
               return e('card_url').and('title').and('promo_image_original')
             })
           },
-          no = function (e) {
-            return ie(e, function (e) {
-              return e('card_url').and('title')
-            })
-          },
-          ro = function (e) {
-            return ie(e, function (e) {
-              return e('card_url').and('title')
-            })
-          },
           oo = function (e) {
+            return ie(e, function (e) {
+              return e('card_url').and('title')
+            })
+          },
+          io = function (e) {
+            return ie(e, function (e) {
+              return e('card_url').and('title')
+            })
+          },
+          ao = function (e) {
             var t,
-              n = dr(e)
+              n = fr(e)
             if (null == n || !n.component_objects) return !1
             var r = n.components
             return (
               'swipeable' === (null === (t = n.layout) || void 0 === t ? void 0 : t.type) &&
-                (r = Object(Jn.a)(n.layout.data.slides)),
+                (r = Object($n.a)(n.layout.data.slides)),
               !!(
                 r &&
                 r.length > 0 &&
                 r.every(function (e) {
-                  return n.component_objects[e] && n.component_objects[e].type in or
+                  return n.component_objects[e] && n.component_objects[e].type in ar
                 })
               )
             )
           },
-          io = function (e) {
+          co = function (e) {
             return ie(e, function (e) {
               return e('recipient')
                 .and('cta1')
@@ -57067,86 +57190,86 @@ window.__SCRIPTS_LOADED__.i18n &&
                 .and('player_stream_url')
             })
           },
-          ao =
-            ((mr = {}),
-            y()(mr, x.a.AMPLIFY, Br),
-            y()(mr, x.a.APP, Fr),
-            y()(mr, x.a.APPPLAYER, Ur),
-            y()(mr, x.a.AUDIOSPACE, Hr),
-            y()(mr, x.a.BROADCAST, Wr),
-            y()(mr, x.a.DIRECT_STORE_LINK_APP, zr),
-            y()(mr, x.a.IMAGE_DIRECT_MESSAGE, Vr),
-            y()(mr, x.a.LIVE_EVENT, Gr),
-            y()(mr, x.a.MESSAGE_ME, Kr),
-            y()(mr, x.a.MOMENT, qr),
-            y()(mr, x.a.PERISCOPE_BROADCAST, Qr),
-            y()(mr, x.a.PLAYER, Yr),
-            y()(mr, x.a.POLL_2_CHOICE_TEXT, Xr),
-            y()(mr, x.a.POLL_3_CHOICE_TEXT, Xr),
-            y()(mr, x.a.POLL_4_CHOICE_TEXT, Xr),
-            y()(mr, x.a.POLL_2_CHOICE_IMAGE, Xr),
-            y()(mr, x.a.POLL_3_CHOICE_IMAGE, Xr),
-            y()(mr, x.a.POLL_4_CHOICE_IMAGE, Xr),
-            y()(mr, x.a.POLL_2_CHOICE_VIDEO, Xr),
-            y()(mr, x.a.POLL_3_CHOICE_VIDEO, Xr),
-            y()(mr, x.a.POLL_4_CHOICE_VIDEO, Xr),
-            y()(mr, x.a.PROMO_IMAGE_APP, Jr),
-            y()(mr, x.a.PROMO_IMAGE_CONVO, Zr),
-            y()(mr, x.a.PROMO_VIDEO_CONVO, $r),
-            y()(mr, x.a.PROMO_VIDEO_WEBSITE, eo),
-            y()(mr, x.a.PROMO_WEBSITE, to),
-            y()(mr, x.a.SUMMARY, no),
-            y()(mr, x.a.SUMMARY_LARGE_IMAGE, ro),
-            y()(mr, x.a.UNIFIED_CARD, oo),
-            y()(mr, x.a.VIDEO_DIRECT_MESSAGE, io),
-            mr),
-          co = function (e, t, n) {
-            var r = ao[e]
+          so =
+            ((br = {}),
+            y()(br, x.a.AMPLIFY, Ur),
+            y()(br, x.a.APP, Hr),
+            y()(br, x.a.APPPLAYER, Wr),
+            y()(br, x.a.AUDIOSPACE, zr),
+            y()(br, x.a.BROADCAST, Vr),
+            y()(br, x.a.DIRECT_STORE_LINK_APP, Gr),
+            y()(br, x.a.IMAGE_DIRECT_MESSAGE, Kr),
+            y()(br, x.a.LIVE_EVENT, qr),
+            y()(br, x.a.MESSAGE_ME, Qr),
+            y()(br, x.a.MOMENT, Yr),
+            y()(br, x.a.PERISCOPE_BROADCAST, Xr),
+            y()(br, x.a.PLAYER, Jr),
+            y()(br, x.a.POLL_2_CHOICE_TEXT, Zr),
+            y()(br, x.a.POLL_3_CHOICE_TEXT, Zr),
+            y()(br, x.a.POLL_4_CHOICE_TEXT, Zr),
+            y()(br, x.a.POLL_2_CHOICE_IMAGE, Zr),
+            y()(br, x.a.POLL_3_CHOICE_IMAGE, Zr),
+            y()(br, x.a.POLL_4_CHOICE_IMAGE, Zr),
+            y()(br, x.a.POLL_2_CHOICE_VIDEO, Zr),
+            y()(br, x.a.POLL_3_CHOICE_VIDEO, Zr),
+            y()(br, x.a.POLL_4_CHOICE_VIDEO, Zr),
+            y()(br, x.a.PROMO_IMAGE_APP, $r),
+            y()(br, x.a.PROMO_IMAGE_CONVO, eo),
+            y()(br, x.a.PROMO_VIDEO_CONVO, to),
+            y()(br, x.a.PROMO_VIDEO_WEBSITE, no),
+            y()(br, x.a.PROMO_WEBSITE, ro),
+            y()(br, x.a.SUMMARY, oo),
+            y()(br, x.a.SUMMARY_LARGE_IMAGE, io),
+            y()(br, x.a.UNIFIED_CARD, ao),
+            y()(br, x.a.VIDEO_DIRECT_MESSAGE, co),
+            br),
+          uo = function (e, t, n) {
+            var r = so[e]
             return !!r && r(t, n)
           },
-          so =
-            ((vr = {}),
-            y()(vr, x.a.AMPLIFY, br),
-            y()(vr, x.a.APP, yr),
-            y()(vr, x.a.APPPLAYER, gr),
-            y()(vr, x.a.BROADCAST, _r),
-            y()(vr, x.a.DIRECT_STORE_LINK_APP, Or),
-            y()(vr, x.a.IMAGE_DIRECT_MESSAGE, wr),
-            y()(vr, x.a.LIVE_EVENT, Er),
-            y()(vr, x.a.MESSAGE_ME, jr),
-            y()(vr, x.a.MOMENT, Pr),
-            y()(vr, x.a.PERISCOPE_BROADCAST, Sr),
-            y()(vr, x.a.PLAYER, Tr),
-            y()(vr, x.a.POLL_2_CHOICE_TEXT, Ir),
-            y()(vr, x.a.POLL_3_CHOICE_TEXT, Ir),
-            y()(vr, x.a.POLL_4_CHOICE_TEXT, Ir),
-            y()(vr, x.a.POLL_2_CHOICE_IMAGE, Ir),
-            y()(vr, x.a.POLL_3_CHOICE_IMAGE, Ir),
-            y()(vr, x.a.POLL_4_CHOICE_IMAGE, Ir),
-            y()(vr, x.a.POLL_2_CHOICE_VIDEO, Ir),
-            y()(vr, x.a.POLL_3_CHOICE_VIDEO, Ir),
-            y()(vr, x.a.POLL_4_CHOICE_VIDEO, Ir),
-            y()(vr, x.a.PROMO_IMAGE_APP, Cr),
-            y()(vr, x.a.PROMO_IMAGE_CONVO, kr),
-            y()(vr, x.a.PROMO_VIDEO_CONVO, Rr),
-            y()(vr, x.a.PROMO_VIDEO_WEBSITE, xr),
-            y()(vr, x.a.PROMO_WEBSITE, Dr),
-            y()(vr, x.a.SUMMARY, Lr),
-            y()(vr, x.a.SUMMARY_LARGE_IMAGE, Ar),
-            y()(vr, x.a.UNIFIED_CARD, Mr),
-            y()(vr, x.a.VIDEO_DIRECT_MESSAGE, Nr),
-            vr),
-          uo = function (e, t) {
+          lo =
+            ((yr = {}),
+            y()(yr, x.a.AMPLIFY, gr),
+            y()(yr, x.a.APP, _r),
+            y()(yr, x.a.APPPLAYER, Or),
+            y()(yr, x.a.BROADCAST, wr),
+            y()(yr, x.a.DIRECT_STORE_LINK_APP, Er),
+            y()(yr, x.a.IMAGE_DIRECT_MESSAGE, jr),
+            y()(yr, x.a.LIVE_EVENT, Pr),
+            y()(yr, x.a.MESSAGE_ME, Sr),
+            y()(yr, x.a.MOMENT, Tr),
+            y()(yr, x.a.PERISCOPE_BROADCAST, Ir),
+            y()(yr, x.a.PLAYER, Cr),
+            y()(yr, x.a.POLL_2_CHOICE_TEXT, kr),
+            y()(yr, x.a.POLL_3_CHOICE_TEXT, kr),
+            y()(yr, x.a.POLL_4_CHOICE_TEXT, kr),
+            y()(yr, x.a.POLL_2_CHOICE_IMAGE, kr),
+            y()(yr, x.a.POLL_3_CHOICE_IMAGE, kr),
+            y()(yr, x.a.POLL_4_CHOICE_IMAGE, kr),
+            y()(yr, x.a.POLL_2_CHOICE_VIDEO, kr),
+            y()(yr, x.a.POLL_3_CHOICE_VIDEO, kr),
+            y()(yr, x.a.POLL_4_CHOICE_VIDEO, kr),
+            y()(yr, x.a.PROMO_IMAGE_APP, Rr),
+            y()(yr, x.a.PROMO_IMAGE_CONVO, xr),
+            y()(yr, x.a.PROMO_VIDEO_CONVO, Dr),
+            y()(yr, x.a.PROMO_VIDEO_WEBSITE, Lr),
+            y()(yr, x.a.PROMO_WEBSITE, Ar),
+            y()(yr, x.a.SUMMARY, Mr),
+            y()(yr, x.a.SUMMARY_LARGE_IMAGE, Nr),
+            y()(yr, x.a.UNIFIED_CARD, Br),
+            y()(yr, x.a.VIDEO_DIRECT_MESSAGE, Fr),
+            yr),
+          po = function (e, t) {
             var n = e.binding_values,
               r = e.name,
               o = e.url,
               i = e.users,
               a = void 0 === i ? {} : i,
-              c = so[r]
-            return co(r, n, t) && c ? c({ cardId: o, cardType: r, data: n, cardContext: t, users: a }) : null
+              c = lo[r]
+            return uo(r, n, t) && c ? c({ cardId: o, cardType: r, data: n, cardContext: t, users: a }) : null
           },
-          lo = (n('7xRU'), n('Qyxo'))
-        function po(e, t) {
+          fo = (n('7xRU'), n('Qyxo'))
+        function ho(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -57158,22 +57281,22 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function fo(e) {
+        function mo(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? po(Object(n), !0).forEach(function (t) {
+              ? ho(Object(n), !0).forEach(function (t) {
                   y()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : po(Object(n)).forEach(function (t) {
+              : ho(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
-        var ho = function (e) {
+        var vo = function (e) {
             switch (e.type) {
               case x.f.BROWSER:
               case x.f.BROWSER_WITH_DOCKED_MEDIA:
@@ -57185,18 +57308,18 @@ window.__SCRIPTS_LOADED__.i18n &&
                 return
             }
           },
-          mo = function (e, t) {
-            var n = fo({}, e),
+          bo = function (e, t) {
+            var n = mo({}, e),
               r = n.destination && t[n.destination]
-            return r ? ((n.vanity = ho(r)), n) : n
+            return r ? ((n.vanity = vo(r)), n) : n
           },
-          vo = function (e, t) {
-            return Object(lo.a)(e, function (e) {
+          yo = function (e, t) {
+            return Object(fo.a)(e, function (e) {
               var n = e && e.id && t[e.id]
-              if (n) return n ? fo(fo({}, e), {}, { media_entity: n }) : void 0
+              if (n) return n ? mo(mo({}, e), {}, { media_entity: n }) : void 0
             })
           },
-          bo = F.a.create(function (e) {
+          go = F.a.create(function (e) {
             return {
               media: { display: 'block' },
               mediaBottomSpace: { marginBottom: e.spaces.space12 },
@@ -57212,7 +57335,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               overflowHidden: { overflow: 'hidden' },
             }
           }),
-          yo = function (e) {
+          _o = function (e) {
             var t = e.accessibilityHidden,
               n = e.card,
               r = e.cardWidth,
@@ -57237,10 +57360,10 @@ window.__SCRIPTS_LOADED__.i18n &&
               E = f ? n.components_data[f].type : void 0,
               j = 'media' === O.type,
               P = [
-                s && (!j || c) && bo.roundedTopLeft,
-                s && (!j || u) && bo.roundedTopRight,
-                l && (!j || c) && bo.roundedBottomLeft,
-                l && (!j || u) && bo.roundedBottomRight,
+                s && (!j || c) && go.roundedTopLeft,
+                s && (!j || u) && go.roundedTopRight,
+                l && (!j || c) && go.roundedBottomLeft,
+                l && (!j || u) && go.roundedBottomRight,
               ],
               S = n.media_entities,
               T = n.destinations,
@@ -57248,14 +57371,14 @@ window.__SCRIPTS_LOADED__.i18n &&
             if ('details' === O.type || 'topic_details' === O.type || 'app_store_details' === O.type) {
               var C = O.data,
                 k = (function (e, t, n) {
-                  var r = Ft('large', e, n),
+                  var r = Ht('large', e, n),
                     o = r.titleMaxLines,
                     i = r.descriptionMaxLines,
                     a = n.destination && t[n.destination]
                   return {
                     titleMaxLines: o,
                     descriptionMaxLines: i,
-                    vanity: a && ho(a),
+                    vanity: a && vo(a),
                     description: 0 !== i ? n.description : void 0,
                   }
                 })(r, T, C)
@@ -57272,13 +57395,13 @@ window.__SCRIPTS_LOADED__.i18n &&
             }
             if ('twitter_list_details' === O.type) {
               var R = O.data,
-                D = Ft('large', r, R).titleMaxLines
+                D = Ht('large', r, R).titleMaxLines
               return _.createElement(Ce, o()({}, R, { style: P, titleMaxLines: D }))
             }
             if ('swipeable_media' === O.type) {
               if (!g) return null
-              var L = vo(O.data.media_list, S)
-              w = _.createElement(kt, { playOverlaySize: I, renderVideoPlayer: h, swipeableMedia: L })
+              var L = yo(O.data.media_list, S)
+              w = _.createElement(xt, { playOverlaySize: I, renderVideoPlayer: h, swipeableMedia: L })
             } else if ('media' === O.type) {
               var A,
                 M = O.data,
@@ -57288,7 +57411,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 H = M.id && S[M.id],
                 W = !0
               if (!m && 'uc_video' === (null === (A = H) || void 0 === A ? void 0 : A.type) && M.id)
-                (H = S[pr(M.id)]), (W = !1)
+                (H = S[hr(M.id)]), (W = !1)
               if (!H) return null
               w = _.createElement(ze, {
                 accessibilityHidden: t,
@@ -57306,7 +57429,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 {
                   accessibilityHidden: !0,
                   nativeID: p,
-                  style: [bo.media, P, !z && bo.border, bo.overflowHidden, 'poll' === E && bo.mediaBottomSpace],
+                  style: [go.media, P, !z && go.border, go.overflowHidden, 'poll' === E && go.mediaBottomSpace],
                   testID: null == v ? void 0 : v.layoutLarge.media,
                 },
                 w,
@@ -57315,7 +57438,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             if ('button_group' === O.type) {
               var V = O.data.buttons
               if (!V) return null
-              var G = Ht(r)
+              var G = zt(r)
               return _.createElement(K, {
                 buttonSize: G,
                 buttons: V,
@@ -57326,14 +57449,14 @@ window.__SCRIPTS_LOADED__.i18n &&
             }
             if ('poll' === O.type) {
               var q = O.data
-              return _.createElement(dt, o()({}, q, { style: P }))
+              return _.createElement(ht, o()({}, q, { style: P }))
             }
             return null
           },
-          go = function (e, t) {
-            return zt(e, t) ? t : e
+          Oo = function (e, t) {
+            return Gt(e, t) ? t : e
           },
-          _o = F.a.create(function (e) {
+          wo = F.a.create(function (e) {
             return {
               container: { flexGrow: 1, alignItems: 'space-between' },
               containerWithChrome: {
@@ -57342,7 +57465,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             }
           }),
-          Oo = function (e) {
+          Eo = function (e) {
             var t,
               n = e.componentNames,
               r = e.onLikelyInteraction,
@@ -57352,7 +57475,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               s = e.nativeID,
               u = e.shouldRenderSwipeableMedia,
               l = e.withInteractiveStyling,
-              d = Xn()(e, [
+              d = Zn()(e, [
                 'componentNames',
                 'onLikelyInteraction',
                 'isCurrentSlide',
@@ -57362,7 +57485,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 'shouldRenderSwipeableMedia',
                 'withInteractiveStyling',
               ]),
-              p = _.useReducer(go, 0),
+              p = _.useReducer(Oo, 0),
               f = T()(p, 2),
               h = f[0],
               m = f[1],
@@ -57376,13 +57499,13 @@ window.__SCRIPTS_LOADED__.i18n &&
               g = _.useMemo(
                 function () {
                   return Array.from({ length: y }, function () {
-                    return Object(pt.createOpaqueIdentifier)()
+                    return Object(rt.createOpaqueIdentifier)()
                   })
                 },
                 [y],
               )
             return _.createElement(
-              ft.a,
+              mt.a,
               {
                 accessibilityHidden: !i,
                 accessibilityLabelledBy: g,
@@ -57390,7 +57513,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 onHoverIn: r,
                 onLayout: v,
                 onPressIn: r,
-                style: [!d.chromeless && _o.containerWithChrome, _o.container],
+                style: [!d.chromeless && wo.containerWithChrome, wo.container],
                 testID: null === (t = d.testIDs) || void 0 === t ? void 0 : t.wrapper,
                 viewRef: b,
                 withFocusWithinFocusRing: !0,
@@ -57399,7 +57522,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
               n.map(function (e, t) {
                 return _.createElement(
-                  yo,
+                  _o,
                   o()({}, d, {
                     accessibilityHidden: !i,
                     cardWidth: h,
@@ -57417,18 +57540,18 @@ window.__SCRIPTS_LOADED__.i18n &&
               }),
             )
           }
-        function wo(e, t) {
+        function jo(e, t) {
           var n
           if ('undefined' == typeof Symbol || null == e[Symbol.iterator]) {
             if (
               Array.isArray(e) ||
               (n = (function (e, t) {
                 if (!e) return
-                if ('string' == typeof e) return Eo(e, t)
+                if ('string' == typeof e) return Po(e, t)
                 var n = Object.prototype.toString.call(e).slice(8, -1)
                 'Object' === n && e.constructor && (n = e.constructor.name)
                 if ('Map' === n || 'Set' === n) return Array.from(e)
-                if ('Arguments' === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Eo(e, t)
+                if ('Arguments' === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Po(e, t)
               })(e)) ||
               (t && e && 'number' == typeof e.length)
             ) {
@@ -57473,15 +57596,138 @@ window.__SCRIPTS_LOADED__.i18n &&
             },
           }
         }
-        function Eo(e, t) {
+        function Po(e, t) {
           ;(null == t || t > e.length) && (t = e.length)
           for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n]
           return r
         }
-        var jo = F.a.create(function (e) {
-          return { stackContainer: { flexGrow: 1 } }
-        })
-        function Po(e, t) {
+        var So = F.a.create(function (e) {
+            return { stackContainer: { flexGrow: 1 } }
+          }),
+          To = function (e) {
+            var t = e.card,
+              n = e.playOverlaySize,
+              r = e.renderVideoPlayer,
+              i = e.shouldRenderVideo,
+              a = e.layoutData,
+              c = Zn()(e, ['card', 'playOverlaySize', 'renderVideoPlayer', 'shouldRenderVideo', 'layoutData']),
+              s = _.useState(0),
+              u = T()(s, 2),
+              l = u[0],
+              d = u[1],
+              p = function (e) {
+                return function (t) {
+                  var n = t.nativeEvent.layout.width
+                  d(n / e / 2)
+                }
+              },
+              f = _.useMemo(
+                function () {
+                  return a.slides.map(function (e, n) {
+                    var r,
+                      o,
+                      i,
+                      a = jo(e)
+                    try {
+                      for (a.s(); !(i = a.n()).done; ) {
+                        var c = i.value,
+                          s = t.components_data[c]
+                        if ('media' === s.type) {
+                          o = s
+                          break
+                        }
+                      }
+                    } catch (u) {
+                      a.e(u)
+                    } finally {
+                      a.f()
+                    }
+                    return (
+                      o && o.data.id && (r = t.media_entities[o.data.id]),
+                      { key: ''.concat(n, '_').concat(e.join()), componentNames: e, mediaEntity: r }
+                    )
+                  })
+                },
+                [t, a],
+              )
+            if (1 === f.length)
+              return _.createElement(
+                Eo,
+                o()({}, c, {
+                  card: t,
+                  componentNames: a.slides[0],
+                  isFirst: !0,
+                  isLast: !0,
+                  renderVideoPlayer: r,
+                  shouldRenderSwipeableMedia: !1,
+                  shouldRenderVideo: i,
+                }),
+              )
+            var h = f.some(function (e) {
+              var t
+              return 'uc_video' === (null === (t = e.mediaEntity) || void 0 === t ? void 0 : t.type)
+            })
+            return _.createElement(Ct, {
+              fullHeightSlides: !0,
+              getClientEventData: function (e) {
+                return { currentSlideIndex: e.currentIndex + 1, previousSlideIndex: e.previousIndex + 1 }
+              },
+              getMediaEntityForSlide: function (e) {
+                return f[e].mediaEntity
+              },
+              getPromotedLogData: function (e) {
+                return { ucEventData: { slide_index: e } }
+              },
+              items: f,
+              navButtonStyle: { top: ''.concat(l, 'px'), transform: 'translateY(-50%)' },
+              navigationOffsetValue: l,
+              playOverlaySize: n,
+              renderSlide: function (e) {
+                var n = e.currentSlide,
+                  r = e.loadedSlide,
+                  a = e.createBoundRenderVideoPlayer,
+                  s = e.index,
+                  u = e.item,
+                  l = e.position,
+                  d = (e.playOverlaySize, 'first' === l),
+                  f = u.mediaEntity,
+                  h = d && f && ('photo' === f.type || 'uc_video' === f.type),
+                  m = 0
+                if (f && ('photo' === f.type || 'uc_video' === f.type)) {
+                  var v = f.original_info
+                  m = v.width / v.height
+                }
+                return _.createElement(
+                  U.a,
+                  {
+                    key: u.key,
+                    onLayout: h ? p(m) : void 0,
+                    style: So.stackContainer,
+                    testID: 'LayoutCardCarousel-slide',
+                  },
+                  _.createElement(
+                    Eo,
+                    o()({}, c, {
+                      card: t,
+                      componentNames: u.componentNames,
+                      isCurrentSlide: n === s,
+                      isFirst: d,
+                      isLast: 'last' === l,
+                      renderVideoPlayer: u.mediaEntity && a && a(u.mediaEntity),
+                      shouldRenderSwipeableMedia: !1,
+                      shouldRenderVideo: i && r === s,
+                    }),
+                  ),
+                )
+              },
+              renderVideoPlayer: r,
+              shouldRenderAll: !0,
+              shouldSetAspectRatio: !0,
+              withReducedNavButtonClickArea: h,
+            })
+          },
+          Io = n('bNYH')
+        function Co(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -57493,22 +57739,22 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function So(e) {
+        function ko(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? Po(Object(n), !0).forEach(function (t) {
+              ? Co(Object(n), !0).forEach(function (t) {
                   y()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : Po(Object(n)).forEach(function (t) {
+              : Co(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
-        function To(e) {
+        function Ro(e) {
           var t = (function () {
             if ('undefined' == typeof Reflect || !Reflect.construct) return !1
             if (Reflect.construct.sham) return !1
@@ -57529,134 +57775,11 @@ window.__SCRIPTS_LOADED__.i18n &&
             return h()(this, n)
           }
         }
-        var Io = !1,
-          Co = {
-            swipeable: function (e) {
-              var t = e.card,
-                n = e.playOverlaySize,
-                r = e.renderVideoPlayer,
-                i = e.shouldRenderVideo,
-                a = e.layoutData,
-                c = Xn()(e, ['card', 'playOverlaySize', 'renderVideoPlayer', 'shouldRenderVideo', 'layoutData']),
-                s = _.useState(0),
-                u = T()(s, 2),
-                l = u[0],
-                d = u[1],
-                p = function (e) {
-                  return function (t) {
-                    var n = t.nativeEvent.layout.width
-                    d(n / e / 2)
-                  }
-                },
-                f = _.useMemo(
-                  function () {
-                    return a.slides.map(function (e, n) {
-                      var r,
-                        o,
-                        i,
-                        a = wo(e)
-                      try {
-                        for (a.s(); !(i = a.n()).done; ) {
-                          var c = i.value,
-                            s = t.components_data[c]
-                          if ('media' === s.type) {
-                            o = s
-                            break
-                          }
-                        }
-                      } catch (u) {
-                        a.e(u)
-                      } finally {
-                        a.f()
-                      }
-                      return (
-                        o && o.data.id && (r = t.media_entities[o.data.id]),
-                        { key: ''.concat(n, '_').concat(e.join()), componentNames: e, mediaEntity: r }
-                      )
-                    })
-                  },
-                  [t, a],
-                )
-              if (1 === f.length)
-                return _.createElement(
-                  Oo,
-                  o()({}, c, {
-                    card: t,
-                    componentNames: a.slides[0],
-                    isFirst: !0,
-                    isLast: !0,
-                    renderVideoPlayer: r,
-                    shouldRenderSwipeableMedia: !1,
-                    shouldRenderVideo: i,
-                  }),
-                )
-              var h = f.some(function (e) {
-                var t
-                return 'uc_video' === (null === (t = e.mediaEntity) || void 0 === t ? void 0 : t.type)
-              })
-              return _.createElement(Tt, {
-                fullHeightSlides: !0,
-                getClientEventData: function (e) {
-                  return { currentSlideIndex: e.currentIndex + 1, previousSlideIndex: e.previousIndex + 1 }
-                },
-                getMediaEntityForSlide: function (e) {
-                  return f[e].mediaEntity
-                },
-                getPromotedLogData: function (e) {
-                  return { ucEventData: { slide_index: e } }
-                },
-                items: f,
-                navButtonStyle: { top: ''.concat(l, 'px'), transform: 'translateY(-50%)' },
-                navigationOffsetValue: l,
-                playOverlaySize: n,
-                renderSlide: function (e) {
-                  var n = e.currentSlide,
-                    r = e.loadedSlide,
-                    a = e.createBoundRenderVideoPlayer,
-                    s = e.index,
-                    u = e.item,
-                    l = e.position,
-                    d = (e.playOverlaySize, 'first' === l),
-                    f = u.mediaEntity,
-                    h = d && f && ('photo' === f.type || 'uc_video' === f.type),
-                    m = 0
-                  if (f && ('photo' === f.type || 'uc_video' === f.type)) {
-                    var v = f.original_info
-                    m = v.width / v.height
-                  }
-                  return _.createElement(
-                    U.a,
-                    {
-                      key: u.key,
-                      onLayout: h ? p(m) : void 0,
-                      style: jo.stackContainer,
-                      testID: 'LayoutCardCarousel-slide',
-                    },
-                    _.createElement(
-                      Oo,
-                      o()({}, c, {
-                        card: t,
-                        componentNames: u.componentNames,
-                        isCurrentSlide: n === s,
-                        isFirst: d,
-                        isLast: 'last' === l,
-                        renderVideoPlayer: u.mediaEntity && a && a(u.mediaEntity),
-                        shouldRenderSwipeableMedia: !1,
-                        shouldRenderVideo: i && r === s,
-                      }),
-                    ),
-                  )
-                },
-                renderVideoPlayer: r,
-                shouldRenderAll: !0,
-                shouldSetAspectRatio: !0,
-                withReducedNavButtonClickArea: h,
-              })
-            },
-          },
-          ko = (function (e) {
+        var xo = !1,
+          Do = { swipeable: To },
+          Lo = (function (e) {
             p()(n, e)
-            var t = To(n)
+            var t = Ro(n)
             function n(e) {
               var r
               a()(this, n),
@@ -57698,7 +57821,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 y()(l()(r), '_onPromotedLogEvent', function (e) {
                   var t = r.props.onPromotedLogEvent,
                     n = r.state.promotedLogData
-                  t && t(So(So({}, Object(bt.a)(n || null)), e))
+                  t && t(ko(ko({}, Object(gt.a)(n || null)), e))
                 }),
                 y()(l()(r), '_requestCardUpdate', function () {
                   var e = r.props.requestCardUpdate,
@@ -57706,7 +57829,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   e && t && e([t.id], { name: t.card_name })
                 })
               var o = r._convertCard(e)
-              return (r.state = o ? So({}, o) : {}), r
+              return (r.state = o ? ko({}, o) : {}), r
             }
             return (
               s()(
@@ -57717,7 +57840,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     value: function (e, t) {
                       if (e !== this.props) {
                         var n = this._convertCard(this.props)
-                        n && this.setState(So(So({}, this.state), n))
+                        n && this.setState(ko(ko({}, this.state), n))
                       }
                     },
                   },
@@ -57758,50 +57881,59 @@ window.__SCRIPTS_LOADED__.i18n &&
                         C = s.vanityDisableIcon,
                         k = s.vanityOnTop,
                         R = s.withSquareBottomBorderRadius
+                      if (this.props.card && Io.a.isAudioSpaceCard(this.props.card)) {
+                        var x = Io.a.getAudioSpaceIdFromCard(this.props.card)
+                        if (x)
+                          return _.createElement(Io.a, {
+                            audioSpaceId: x,
+                            isInteractive: f,
+                            withSquareBottomBorderRadius: R,
+                          })
+                      }
                       if (!r) return null
-                      var x = this._getCurrentLayout(),
-                        D = this._getDetailData() || this._getAppStoreDetailData(),
-                        L = this._getTwitterListDetailsData(),
-                        A = this._getCommunityDetailsData(),
-                        M = this._getTopicDetailsData(),
-                        N = this._getMediaData(),
-                        B = this._getPollData(),
-                        F = this._getButtonsData(),
-                        U = this._getSwipeableMediaData(),
-                        H = r.get_fetch_interval_for_updates,
-                        W =
+                      var D = this._getCurrentLayout(),
+                        L = this._getDetailData() || this._getAppStoreDetailData(),
+                        A = this._getTwitterListDetailsData(),
+                        M = this._getCommunityDetailsData(),
+                        N = this._getTopicDetailsData(),
+                        B = this._getMediaData(),
+                        F = this._getPollData(),
+                        U = this._getButtonsData(),
+                        H = this._getSwipeableMediaData(),
+                        W = r.get_fetch_interval_for_updates,
+                        z =
                           this.props.withInteractiveStyling &&
                           !!(
-                            (D && D.destination) ||
                             (L && L.destination) ||
-                            (M && M.destination) ||
-                            (A && A.destination)
+                            (A && A.destination) ||
+                            (N && N.destination) ||
+                            (M && M.destination)
                           ),
-                        z = {
+                        V = {
                           dmSentOrReceived: l,
                           locationKey: u.locationKey,
                           onLikelyInteraction: this._handleLikelyInteraction,
                           nativeID: w,
                           testIDs: S,
-                          withInteractiveStyling: W,
+                          withInteractiveStyling: z,
                           withSquareBottomBorderRadius: R,
                         },
-                        V = E && (null == H || null === (e = H[i]) || void 0 === e ? void 0 : e.call(H)),
-                        G = N && N.mediaEntity && 'photo' === N.mediaEntity.type,
-                        K = M || D,
-                        q = null
-                      if ('small' === x.size || (p && D && !F && G && !h))
-                        K &&
-                          N &&
-                          (q = _.createElement(
-                            un,
-                            o()({}, z, { details: K, isTopicCard: !!M, media: N, reverse: x.reverse }),
+                        G = E && (null == W || null === (e = W[i]) || void 0 === e ? void 0 : e.call(W)),
+                        K = B && B.mediaEntity && 'photo' === B.mediaEntity.type,
+                        q = N || L,
+                        Q = null
+                      if ('small' === D.size || (p && L && !U && K && !h))
+                        q &&
+                          B &&
+                          (Q = _.createElement(
+                            dn,
+                            o()({}, V, { details: q, isTopicCard: !!N, media: B, reverse: D.reverse }),
                           ))
-                      else if (r.ucLayout && Co.hasOwnProperty(r.ucLayout.type)) {
-                        var Q = Co[r.ucLayout.type]
-                        q = _.createElement(Q, {
+                      else if (r.ucLayout && Do.hasOwnProperty(r.ucLayout.type)) {
+                        var Y = Do[r.ucLayout.type]
+                        Q = _.createElement(Y, {
                           card: r,
-                          chromeless: x.chromeless,
+                          chromeless: D.chromeless,
                           layoutData: r.ucLayout.data,
                           locationKey: u.locationKey,
                           nativeID: w,
@@ -57810,23 +57942,23 @@ window.__SCRIPTS_LOADED__.i18n &&
                           shouldRenderVideo: 'static' !== i,
                           testIDs: S,
                           useBlueButtonForAppDetails: I,
-                          withInteractiveStyling: W,
+                          withInteractiveStyling: z,
                         })
                       } else
-                        q = _.createElement(
-                          Zt,
-                          o()({}, z, {
-                            buttons: F || void 0,
-                            chromeless: x.chromeless,
-                            communityDetails: A || void 0,
-                            details: D,
+                        Q = _.createElement(
+                          en,
+                          o()({}, V, {
+                            buttons: U || void 0,
+                            chromeless: D.chromeless,
+                            communityDetails: M || void 0,
+                            details: L,
                             highlightDetailsExperimentBucket: d,
                             initialCarouselIndex: c,
-                            listDetails: L || void 0,
-                            media: N,
-                            poll: B || void 0,
+                            listDetails: A || void 0,
+                            media: B,
+                            poll: F || void 0,
                             renderVideoPlayer: this.props.renderVideoPlayer,
-                            swipeableMedia: U,
+                            swipeableMedia: H,
                             useBlueButtonForAppDetails: I,
                           }),
                         )
@@ -57842,7 +57974,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                               isDataSaverEnabled: p,
                               isInteractive: f,
                               isPromoted: h,
-                              media: N,
+                              media: B,
                               promotedContent: O,
                               onEventReminderClick: v,
                               onCardLinkClick: m,
@@ -57860,10 +57992,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                             },
                           },
                           this._renderPreconnectTags(),
-                          V
-                            ? _.createElement(j, { fetchIntervalConfig: V, requestCardUpdate: this._requestCardUpdate })
+                          G
+                            ? _.createElement(j, { fetchIntervalConfig: G, requestCardUpdate: this._requestCardUpdate })
                             : null,
-                          q,
+                          Q,
                         ),
                       )
                     },
@@ -57897,7 +58029,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         r = t.state,
                         o = se(x.d.SWIPEABLE_MEDIA, n, r),
                         i = null == o || null === (e = o.data) || void 0 === e ? void 0 : e.media_list
-                      if (i) return vo(i, n.media_entities)
+                      if (i) return yo(i, n.media_entities)
                     },
                   },
                   {
@@ -57908,7 +58040,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         n = e.state,
                         r = se(x.d.DETAILS, t, n),
                         o = null == r ? void 0 : r.data
-                      return o ? mo(o, t.destinations) : null
+                      return o ? bo(o, t.destinations) : null
                     },
                   },
                   {
@@ -57919,7 +58051,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         n = e.state,
                         r = se(x.d.APP_STORE_DETAILS, t, n),
                         o = null == r ? void 0 : r.data
-                      return o ? mo(o, t.destinations) : null
+                      return o ? bo(o, t.destinations) : null
                     },
                   },
                   {
@@ -58000,7 +58132,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         c = i.data.url_data.domain || i.data.url_data.vanity
                       if (!c) return null
                       var s = r || o,
-                        u = r && o && Io
+                        u = r && o && xo
                       return s
                         ? _.createElement(
                             _.Fragment,
@@ -58021,16 +58153,16 @@ window.__SCRIPTS_LOADED__.i18n &&
                         o = e.shouldConvertCarouselsToSingleMedia,
                         i = e.shouldConvertMDCtoSingleCard,
                         a = e.initialCarouselIndex,
-                        c = uo(
+                        c = po(
                           t,
-                          So(
-                            So({}, r),
+                          ko(
+                            ko({}, r),
                             {},
                             { shouldConvertCarouselsToSingleMedia: o, shouldConvertMDCtoSingleCard: i },
                           ),
                         ),
                         s = n || (!!this.state && this.state.state) || (c && c.state) || void 0
-                      return c && s ? So(So({}, c), {}, { state: s, carouselIndex: a }) : null
+                      return c && s ? ko(ko({}, c), {}, { state: s, carouselIndex: a }) : null
                     },
                   },
                 ],
@@ -58038,7 +58170,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   {
                     key: 'setAllowPrerender',
                     value: function (e) {
-                      Io = e
+                      xo = e
                     },
                   },
                 ],
@@ -58046,15 +58178,15 @@ window.__SCRIPTS_LOADED__.i18n &&
               n
             )
           })(_.Component)
-        y()(ko, 'defaultProps', {
+        y()(Lo, 'defaultProps', {
           isDataSaverEnabled: !1,
           isInteractive: !0,
           isPromoted: !1,
           withInteractiveStyling: !0,
         }),
-          y()(ko, 'Context', _.createContext(Object.freeze({}))),
-          (ko.propTypes = {})
-        var Ro = (t.a = ko)
+          y()(Lo, 'Context', _.createContext(Object.freeze({}))),
+          (Lo.propTypes = {})
+        var Ao = (t.a = Lo)
       },
       boJV: function (e, t, n) {
         'use strict'
@@ -58560,11 +58692,11 @@ window.__SCRIPTS_LOADED__.i18n &&
       c0YY: function (e, t, n) {
         'use strict'
         var r = n('Nsgw'),
-          o = (n('ERkP'), n('rxPX')),
-          i = n('XOJV')
-        t.a = Object(o.a)()
+          o = (n('ERkP'), n('XOJV')),
+          i = n('rxPX')
+        t.a = Object(i.a)()
           .propsFromState(function () {
-            return { audio: r.d, selectTweet: i.a.createHydratedSelector }
+            return { audio: r.d, selectTweet: o.a.createHydratedSelector }
           })
           .propsFromActions(function () {
             return { hydrateVoiceTweetTrack: r.b }
@@ -59967,6 +60099,52 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
         }.call(this, n('bIdo')))
       },
+      csOR: function (e, t, n) {
+        var r = n('Z08a')
+        ;(t.operation = function (e) {
+          var n = t.timeouts(e)
+          return new r(n, { forever: e && e.forever, unref: e && e.unref, maxRetryTime: e && e.maxRetryTime })
+        }),
+          (t.timeouts = function (e) {
+            if (e instanceof Array) return [].concat(e)
+            var t = { retries: 10, factor: 2, minTimeout: 1e3, maxTimeout: 1 / 0, randomize: !1 }
+            for (var n in e) t[n] = e[n]
+            if (t.minTimeout > t.maxTimeout) throw new Error('minTimeout is greater than maxTimeout')
+            for (var r = [], o = 0; o < t.retries; o++) r.push(this.createTimeout(o, t))
+            return (
+              e && e.forever && !r.length && r.push(this.createTimeout(o, t)),
+              r.sort(function (e, t) {
+                return e - t
+              }),
+              r
+            )
+          }),
+          (t.createTimeout = function (e, t) {
+            var n = t.randomize ? Math.random() + 1 : 1,
+              r = Math.round(n * t.minTimeout * Math.pow(t.factor, e))
+            return (r = Math.min(r, t.maxTimeout))
+          }),
+          (t.wrap = function (e, n, r) {
+            if ((n instanceof Array && ((r = n), (n = null)), !r))
+              for (var o in ((r = []), e)) 'function' == typeof e[o] && r.push(o)
+            for (var i = 0; i < r.length; i++) {
+              var a = r[i],
+                c = e[a]
+              ;(e[a] = function (r) {
+                var o = t.operation(n),
+                  i = Array.prototype.slice.call(arguments, 1),
+                  a = i.pop()
+                i.push(function (e) {
+                  o.retry(e) || (e && (arguments[0] = o.mainError()), a.apply(this, arguments))
+                }),
+                  o.attempt(function () {
+                    r.apply(e, i)
+                  })
+              }.bind(e, c)),
+                (e[a].options = n)
+            }
+          })
+      },
       cwOD: function (e, t, n) {
         'use strict'
         n.d(t, 'b', function () {
@@ -60066,7 +60244,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         t.a = o
       },
       dFJg: function (e, t) {
-        e.exports = { queryId: 'D8A6UWyMTD9V6OWuOtNZ4g', operationName: 'TopicLandingPage', operationType: 'query' }
+        e.exports = { queryId: 'CDPB1i2syzt8sN-NloC9_Q', operationName: 'TopicLandingPage', operationType: 'query' }
       },
       dJgD: function (e, t, n) {
         'use strict'
@@ -61164,94 +61342,96 @@ window.__SCRIPTS_LOADED__.i18n &&
                   d = e.lastTopFetchTimestamp,
                   p = e.timelineModuleInjections,
                   m = t.meta,
-                  v = m.minimumItemsBetweenAds,
-                  y = m.sourceEntryId,
-                  g = m.cursorValue,
-                  _ = m.timestamp,
+                  v = m.cursorValue,
+                  y = m.minimumItemsBetweenAds,
+                  g = m.isNewTweetsBarEnabled,
+                  _ = m.sourceEntryId,
                   w = m.timelineType,
-                  E = t.payload,
-                  j = E.pageConfiguration,
-                  P = E.timeline,
-                  S = Pt({
+                  E = m.timestamp,
+                  j = t.payload,
+                  P = j.pageConfiguration,
+                  S = j.timeline,
+                  T = St(n, _),
+                  I = T && g,
+                  C = Pt({
                     state: e,
-                    sourceEntryId: y,
-                    instructions: P.instructions,
-                    minimumItemsBetweenAds: v,
-                    saveInstructionsForNewTweetsBar: !1,
+                    sourceEntryId: _,
+                    instructions: S.instructions,
+                    minimumItemsBetweenAds: y,
+                    saveInstructionsForNewTweetsBar: I,
                   }),
-                  T = Tt(r, P.responseObjects),
-                  I = Fe(i, g, G.a.LOADED),
-                  C = St(n, y),
-                  k = (C || g === c.b) && _ ? _ : d,
-                  R = It({ newState: S, prevInjections: u, prevTimelineModuleInjections: p }),
-                  x = Ae(S.entries),
-                  D = 0 === n.length && x ? x.sortIndex : e.lastRevealedSortIndex
+                  k = Tt(r, S.responseObjects),
+                  R = Fe(i, v, G.a.LOADED),
+                  x = (T || v === c.b) && E ? E : d,
+                  D = It({ newState: C, prevInjections: u, prevTimelineModuleInjections: p }),
+                  L = Ae(C.entries),
+                  A = 0 === n.length && L ? L.sortIndex : e.lastRevealedSortIndex
                 return ke(
-                  ke(ke(ke({}, e), S), R),
+                  ke(ke(ke({}, e), C), D),
                   {},
                   {
-                    pageConfiguration: j,
-                    responseObjects: T,
-                    fetchStatus: I,
-                    lastTopFetchTimestamp: k,
+                    pageConfiguration: P,
+                    responseObjects: k,
+                    fetchStatus: R,
+                    lastTopFetchTimestamp: x,
                     unavailableReason: null,
-                    metadata: P.metadata,
+                    metadata: S.metadata,
                     timelineType: w,
-                    lastRevealedSortIndex: D,
+                    lastRevealedSortIndex: A,
                   },
                 )
               case De.REQUEST:
               case Le.REQUEST:
-                var L = t.meta.cursorValue
-                return ke(ke({}, e), {}, { fetchStatus: Fe(e.fetchStatus, L, G.a.LOADING), unavailableReason: null })
+                var M = t.meta.cursorValue
+                return ke(ke({}, e), {}, { fetchStatus: Fe(e.fetchStatus, M, G.a.LOADING), unavailableReason: null })
               case De.FAILURE:
               case Le.FAILURE:
-                var A = t.meta.cursorValue,
-                  M = A === c.b ? Object(Te.b)(t.payload) : null
-                return ke(ke({}, e), {}, { fetchStatus: Fe(e.fetchStatus, A, G.a.FAILED), unavailableReason: M })
+                var N = t.meta.cursorValue,
+                  B = N === c.b ? Object(Te.b)(t.payload) : null
+                return ke(ke({}, e), {}, { fetchStatus: Fe(e.fetchStatus, N, G.a.FAILED), unavailableReason: B })
               case Ot:
-                var N = e.injections,
-                  B = e.timelineModuleInjections,
-                  F = e.responseObjects,
-                  U = t.payload.immediateReaction,
-                  H = t.meta.minimumItemsBetweenAds,
-                  W = (F.immediateReactions && F.immediateReactions[U]) || [],
-                  z = Pt({ state: e, sourceEntryId: void 0, instructions: W, minimumItemsBetweenAds: H }),
-                  V = It({ newState: z, prevInjections: N, prevTimelineModuleInjections: B })
-                return ke(ke(ke({}, e), z), V)
+                var F = e.injections,
+                  U = e.timelineModuleInjections,
+                  H = e.responseObjects,
+                  W = t.payload.immediateReaction,
+                  z = t.meta.minimumItemsBetweenAds,
+                  V = (H.immediateReactions && H.immediateReactions[W]) || [],
+                  K = Pt({ state: e, sourceEntryId: void 0, instructions: V, minimumItemsBetweenAds: z }),
+                  Q = It({ newState: K, prevInjections: F, prevTimelineModuleInjections: U })
+                return ke(ke(ke({}, e), K), Q)
               case Et:
-                var K = e.injections,
-                  Q = e.newTweetsBar,
-                  Y = e.timelineModuleInjections,
-                  X = t.meta.minimumItemsBetweenAds
-                if (!Q.instructions.length) return e
-                var J = Pt({
+                var Y = e.injections,
+                  X = e.newTweetsBar,
+                  J = e.timelineModuleInjections,
+                  Z = t.meta.minimumItemsBetweenAds
+                if (!X.instructions.length) return e
+                var $ = Pt({
                     state: e,
                     sourceEntryId: void 0,
-                    instructions: Q.instructions,
-                    minimumItemsBetweenAds: X,
+                    instructions: X.instructions,
+                    minimumItemsBetweenAds: Z,
                     saveInstructionsForNewTweetsBar: !1,
                   }),
-                  Z = It({ newState: J, prevInjections: K, prevTimelineModuleInjections: Y })
-                return ke(ke(ke(ke({}, e), J), Z), {}, { newTweetsBar: { instructions: [], count: 0 } })
+                  ee = It({ newState: $, prevInjections: Y, prevTimelineModuleInjections: J })
+                return ke(ke(ke(ke({}, e), $), ee), {}, { newTweetsBar: { instructions: [], count: 0 } })
               case We:
-                var $ = e.entries,
-                  ee = e.injections,
-                  te = e.pinnedEntry,
-                  ne = e.timelineModuleInjections,
-                  re = {}
+                var te = e.entries,
+                  ne = e.injections,
+                  re = e.pinnedEntry,
+                  oe = e.timelineModuleInjections,
+                  ie = {}
                 return (
-                  Object.keys(ne).forEach(function (e) {
-                    re[e] = b(ne[e], t.payload)
+                  Object.keys(oe).forEach(function (e) {
+                    ie[e] = b(oe[e], t.payload)
                   }),
                   ke(
                     ke({}, e),
                     {},
                     {
-                      entries: b($, t.payload),
-                      injections: b(ee, t.payload),
-                      timelineModuleInjections: re,
-                      pinnedEntry: te && s.f(te) && t.payload[te.content.id] ? null : e.pinnedEntry,
+                      entries: b(te, t.payload),
+                      injections: b(ne, t.payload),
+                      timelineModuleInjections: ie,
+                      pinnedEntry: re && s.f(re) && t.payload[re.content.id] ? null : e.pinnedEntry,
                     },
                   )
                 )
@@ -61260,80 +61440,80 @@ window.__SCRIPTS_LOADED__.i18n &&
               case Ve:
                 return ke(ke({}, e), {}, { alert: null })
               case ct:
-                var oe = e.entries,
-                  ie = e.injections,
-                  se = e.pinnedEntry,
-                  ue = e.timelineModuleInjections,
-                  le = t.meta.shouldShowEmptyModule,
-                  de = Object(ae.a)([t.payload]),
-                  pe = {}
+                var se = e.entries,
+                  ue = e.injections,
+                  le = e.pinnedEntry,
+                  de = e.timelineModuleInjections,
+                  pe = t.meta.shouldShowEmptyModule,
+                  fe = Object(ae.a)([t.payload]),
+                  he = {}
                 return (
-                  Object.keys(ue).forEach(function (e) {
-                    pe[e] = ce(ue[e], de, le)
+                  Object.keys(de).forEach(function (e) {
+                    he[e] = ce(de[e], fe, pe)
                   }),
                   ke(
                     ke({}, e),
                     {},
                     {
-                      entries: ce(oe, de, le),
-                      injections: ce(ie, de, le),
-                      timelineModuleInjections: pe,
-                      pinnedEntry: se && se.entryId === t.payload ? null : se,
+                      entries: ce(se, fe, pe),
+                      injections: ce(ue, fe, pe),
+                      timelineModuleInjections: he,
+                      pinnedEntry: le && le.entryId === t.payload ? null : le,
                     },
                   )
                 )
               case Qe:
-                var fe,
-                  he = e.injections,
-                  me = e.entries,
-                  ve = t.payload,
-                  be = ve.entry,
-                  ye = ve.atTop
-                if (ye) {
-                  var ge = me.length > 0 ? me[0].sortIndex : '0',
-                    _e = he.length > 0 ? he[0].sortIndex : '0',
-                    Oe = l.b(ge, _e) ? ge : _e
-                  fe = ke(ke({}, be), {}, { sortIndex: O.b(Oe) })
-                } else fe = be
-                var we = [fe].concat(o()(he))
-                return f(we), ke(ke({}, e), {}, { injections: we })
+                var me,
+                  ve = e.injections,
+                  be = e.entries,
+                  ye = t.payload,
+                  ge = ye.entry,
+                  _e = ye.atTop
+                if (_e) {
+                  var Oe = be.length > 0 ? be[0].sortIndex : '0',
+                    we = ve.length > 0 ? ve[0].sortIndex : '0',
+                    Ee = l.b(Oe, we) ? Oe : we
+                  me = ke(ke({}, ge), {}, { sortIndex: O.b(Ee) })
+                } else me = ge
+                var je = [me].concat(o()(ve))
+                return f(je), ke(ke({}, e), {}, { injections: je })
               case Xe:
-                var Ee = e.timelineModuleInjections,
-                  je = e.entries,
-                  Pe = t.meta,
-                  Se = Pe.moduleId,
-                  Ie = Pe.atTop,
-                  Ce = t.payload.item,
-                  Re = je.find(function (e) {
-                    return e.entryId === Se
+                var Pe = e.timelineModuleInjections,
+                  Se = e.entries,
+                  Ie = t.meta,
+                  Ce = Ie.moduleId,
+                  Re = Ie.atTop,
+                  xe = t.payload.item,
+                  Me = Se.find(function (e) {
+                    return e.entryId === Ce
                   })
-                if (Re && Ie) {
-                  var xe,
-                    Me = null == Re || null === (xe = Re.content) || void 0 === xe ? void 0 : xe.items,
-                    Ne = Me.length > 0 ? Me[0].sortIndex : '0'
-                  Ce.sortIndex = O.b(Ne)
+                if (Me && Re) {
+                  var Ne,
+                    Be = null == Me || null === (Ne = Me.content) || void 0 === Ne ? void 0 : Ne.items,
+                    Ue = Be.length > 0 ? Be[0].sortIndex : '0'
+                  xe.sortIndex = O.b(Ue)
                 }
-                var Be = Ee[Se] || [],
-                  Ue = Be.some(function (e) {
-                    return e.entryId === Ce.entryId
+                var He = Pe[Ce] || [],
+                  ze = He.some(function (e) {
+                    return e.entryId === xe.entryId
                   })
-                if (Ue) return e
-                var He = Ie ? [Ce].concat(o()(Be)) : [].concat(o()(Be), [Ce])
-                return ke(ke({}, e), {}, { timelineModuleInjections: ke(ke({}, Ee), {}, a()({}, Se, He)) })
+                if (ze) return e
+                var Ge = Re ? [xe].concat(o()(He)) : [].concat(o()(He), [xe])
+                return ke(ke({}, e), {}, { timelineModuleInjections: ke(ke({}, Pe), {}, a()({}, Ce, Ge)) })
               case Ze:
-                var ze = e.entries,
-                  Ge = e.injections,
-                  qe = e.timelineModuleInjections,
-                  Ye = t.meta,
-                  Je = Ye.entryId,
-                  et = Ye.itemId,
-                  nt = function (e, n) {
-                    return e.entryId === et ? ke(ke({}, e), t.payload) : e
+                var qe = e.entries,
+                  Ye = e.injections,
+                  Je = e.timelineModuleInjections,
+                  et = t.meta,
+                  nt = et.entryId,
+                  ot = et.itemId,
+                  at = function (e, n) {
+                    return e.entryId === ot ? ke(ke({}, e), t.payload) : e
                   },
-                  ot = qe
+                  st = Je
                 return (
-                  qe[Je] && (ot = ke(ke({}, qe), {}, a()({}, Je, qe[Je].map(nt)))),
-                  ke(ke({}, e), {}, { entries: h(ze, nt), injections: h(Ge, nt), timelineModuleInjections: ot })
+                  Je[nt] && (st = ke(ke({}, Je), {}, a()({}, nt, Je[nt].map(at)))),
+                  ke(ke({}, e), {}, { entries: h(qe, at), injections: h(Ye, at), timelineModuleInjections: st })
                 )
               case ut:
                 return ke(
@@ -61360,32 +61540,32 @@ window.__SCRIPTS_LOADED__.i18n &&
                   { impressedEntries: ke(ke({}, e.impressedEntries), {}, a()({}, t.payload.entryId, !0)) },
                 )
               case gt:
-                var at = t.payload,
-                  st = at.entryId,
-                  lt = at.triggerName,
-                  pt = e.triggerExecutionCounts,
-                  ft = (pt && pt[st] && pt[st][lt]) || 0
+                var lt = t.payload,
+                  pt = lt.entryId,
+                  ft = lt.triggerName,
+                  ht = e.triggerExecutionCounts,
+                  mt = (ht && ht[pt] && ht[pt][ft]) || 0
                 return ke(
                   ke({}, e),
                   {},
                   {
                     triggerExecutionCounts: ke(
-                      ke({}, pt),
+                      ke({}, ht),
                       {},
-                      a()({}, st, ke(ke({}, pt && pt[st]), {}, a()({}, lt, ft + 1))),
+                      a()({}, pt, ke(ke({}, ht && ht[pt]), {}, a()({}, ft, mt + 1))),
                     ),
                   },
                 )
               case $e:
-                var ht = e.entries,
-                  mt = Ae(ht)
-                return ke(ke({}, e), {}, { lastSeenSortIndex: mt ? mt.sortIndex : null })
+                var vt = e.entries,
+                  yt = Ae(vt)
+                return ke(ke({}, e), {}, { lastSeenSortIndex: yt ? yt.sortIndex : null })
               case rt:
                 return ke(ke({}, e), {}, { unreadEntryIds: {} })
               case tt:
-                var vt = e.entries,
-                  yt = Ae(vt)
-                return ke(ke({}, e), {}, { lastRevealedSortIndex: yt ? yt.sortIndex : null })
+                var _t = e.entries,
+                  wt = Ae(_t)
+                return ke(ke({}, e), {}, { lastRevealedSortIndex: wt ? wt.sortIndex : null })
               case it:
                 return ke(ke({}, e), {}, { coverQueue: e.coverQueue.slice(1) })
               default:
@@ -61763,8 +61943,9 @@ window.__SCRIPTS_LOADED__.i18n &&
           j = n('Wd7d'),
           P = n('sgih'),
           S = n('rHpw'),
-          T = n('MWbm')
-        function I(e) {
+          T = 'confirmationSheetDialog',
+          I = n('MWbm')
+        function C(e) {
           var t = (function () {
             if ('undefined' == typeof Reflect || !Reflect.construct) return !1
             if (Reflect.construct.sham) return !1
@@ -61785,12 +61966,12 @@ window.__SCRIPTS_LOADED__.i18n &&
             return p()(this, n)
           }
         }
-        var C = w.a.e23b20af,
-          k = w.a.bb5d8cd1,
-          R = { viewType: 'cancel' },
-          x = (function (e) {
+        var k = w.a.e23b20af,
+          R = w.a.bb5d8cd1,
+          x = { viewType: 'cancel' },
+          D = (function (e) {
             l()(n, e)
-            var t = I(n)
+            var t = C(n)
             function n() {
               var e
               o()(this, n)
@@ -61839,8 +62020,9 @@ window.__SCRIPTS_LOADED__.i18n &&
                       m = t.withCancelButton,
                       v = t.text,
                       O = t.confirmationClientEventViewType,
-                      w = this._renderLearnMoreLink(),
-                      I = { viewType: null != O ? O : 'confirm' }
+                      w = t.testID,
+                      C = this._renderLearnMoreLink(),
+                      k = { viewType: null != O ? O : 'confirm' }
                     return b.createElement(E.a, null, function (t) {
                       var O = t.screenWidth
                       return b.createElement(
@@ -61852,13 +62034,14 @@ window.__SCRIPTS_LOADED__.i18n &&
                           onMaskClick: f || d,
                           style: S.a.isVdlRefreshEnabled()
                             ? j.a.isNarrowScreenWidth(O)
-                              ? D.vdlNarrowScreenContainer
-                              : D.vdlContainer
-                            : D.container,
+                              ? L.vdlNarrowScreenContainer
+                              : L.vdlContainer
+                            : L.container,
+                          testID: w || T,
                           type: 'center',
                           withMask: !0,
                         },
-                        u ? b.createElement(u, { style: [D.icon, l] }) : null,
+                        u ? b.createElement(u, { style: [L.icon, l] }) : null,
                         s &&
                           b.createElement(
                             y.c,
@@ -61866,37 +62049,37 @@ window.__SCRIPTS_LOADED__.i18n &&
                               align: S.a.isVdlRefreshEnabled() ? 'left' : 'center',
                               color: 'normal',
                               size: 'headline1',
-                              style: (v || w) && S.a.isVdlRefreshEnabled ? D.vdlBottomMargin : D.bottomMargin,
+                              style: (v || C) && S.a.isVdlRefreshEnabled ? L.vdlBottomMargin : L.bottomMargin,
                               weight: 'bold',
                             },
                             s,
                           ),
-                        v || w
+                        v || C
                           ? b.createElement(
                               y.c,
                               {
                                 align: S.a.isVdlRefreshEnabled() ? 'left' : 'center',
                                 color: 'gray700',
                                 size: S.a.isVdlRefreshEnabled() ? 'body' : void 0,
-                                style: D.labelText,
+                                style: L.labelText,
                               },
                               v,
                               ' ',
-                              w,
+                              C,
                             )
                           : null,
                         b.createElement(
-                          T.a,
-                          { style: S.a.isVdlRefreshEnabled ? D.vdlButtons : D.buttons },
+                          I.a,
+                          { style: m ? L.stackedButtons : S.a.isVdlRefreshEnabled ? L.vdlButtons : L.buttons },
                           m &&
                             b.createElement(
                               g.a,
                               {
-                                clientEventContext: R,
+                                clientEventContext: x,
                                 link: i,
                                 onPress: d,
                                 size: S.a.isVdlRefreshEnabled() ? 'experimentalLarge' : void 0,
-                                style: S.a.isVdlRefreshEnabled ? D.vdlButton : D.button,
+                                style: m ? L.stackedButton : S.a.isVdlRefreshEnabled ? L.vdlButton : L.button,
                                 testID: n.testIDs.cancel,
                                 type: S.a.isVdlRefreshEnabled() ? 'experimentalSecondary' : 'neutral',
                               },
@@ -61907,12 +62090,12 @@ window.__SCRIPTS_LOADED__.i18n &&
                             return b.createElement(
                               g.a,
                               {
-                                clientEventContext: I,
+                                clientEventContext: k,
                                 link: p,
                                 onPress: e._handleConfirmPress(r),
                                 ref: e._handleButtonRefUpdate,
                                 size: S.a.isVdlRefreshEnabled() ? 'experimentalLarge' : void 0,
-                                style: S.a.isVdlRefreshEnabled ? D.vdlButton : D.button,
+                                style: m ? L.stackedButton : S.a.isVdlRefreshEnabled ? L.vdlButton : L.button,
                                 testID: n.testIDs.confirm,
                                 type: S.a.isVdlRefreshEnabled() && 'destructive' !== h ? 'experimentalPrimary' : h,
                               },
@@ -61928,16 +62111,16 @@ window.__SCRIPTS_LOADED__.i18n &&
               n
             )
           })(b.Component)
-        v()(x, 'defaultProps', {
-          cancelButtonLabel: C,
-          confirmButtonLabel: k,
+        v()(D, 'defaultProps', {
+          cancelButtonLabel: k,
+          confirmButtonLabel: R,
           confirmButtonType: 'primary',
           enableMaskForDismiss: !0,
           withCancelButton: !0,
           withForwardFocusOnConfirm: !1,
         }),
-          v()(x, 'testIDs', { confirm: 'confirmationSheetConfirm', cancel: 'confirmationSheetCancel' })
-        var D = S.a.create(function (e) {
+          v()(D, 'testIDs', { confirm: 'confirmationSheetConfirm', cancel: 'confirmationSheetCancel' })
+        var L = S.a.create(function (e) {
           return {
             container: { alignItems: 'center', paddingVertical: e.spaces.space32, paddingHorizontal: e.spaces.space20 },
             vdlContainer: { alignItems: 'left', padding: e.spaces.space32 },
@@ -61962,6 +62145,13 @@ window.__SCRIPTS_LOADED__.i18n &&
               marginRight: 'calc('.concat(e.spaces.space12, ' * -1)'),
               width: '100%',
             },
+            stackedButtons: {
+              flexDirection: 'column-reverse',
+              marginBottom: 'calc('.concat(e.spaces.space12, ' * -1)'),
+              marginTop: e.spaces.space24,
+              marginRight: 'calc('.concat(e.spaces.space12, ' * -1)'),
+              width: '100%',
+            },
             button: {
               flexGrow: 1,
               overflow: 'hidden',
@@ -61980,9 +62170,16 @@ window.__SCRIPTS_LOADED__.i18n &&
               width: e.spaces.space80,
               whiteSpace: 'nowrap',
             },
+            stackedButton: {
+              flexGrow: 1,
+              marginBottom: e.spaces.space12,
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+              whiteSpace: 'nowrap',
+            },
           }
         })
-        t.a = x
+        t.a = D
       },
       ebf4: function (e, t) {
         e.exports = { queryId: 'U0iG79iCvCFraHdvuxIqHQ', operationName: 'FollowersYouKnow', operationType: 'query' }
@@ -67591,7 +67788,9 @@ window.__SCRIPTS_LOADED__.i18n &&
                         a,
                         c,
                         s,
-                        u =
+                        u,
+                        l,
+                        d =
                           null !== (t = e.user_result_by_rest_id) &&
                           void 0 !== t &&
                           null !== (n = t.result) &&
@@ -67618,7 +67817,14 @@ window.__SCRIPTS_LOADED__.i18n &&
                           void 0 === s
                             ? void 0
                             : s.business) || void 0,
-                        profileModules: u,
+                        professional:
+                          (null === (u = e.user_result_by_rest_id) ||
+                          void 0 === u ||
+                          null === (l = u.result) ||
+                          void 0 === l
+                            ? void 0
+                            : l.professional) || void 0,
+                        profileModules: d,
                       }
                     })
                   },
@@ -74489,7 +74695,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 o = function () {
                   return Promise.resolve()
                 },
-                i = Object(u.k)(t())
+                i = Object(u.l)(t())
               return (
                 r.isTrue('responsive_web_use_badge_counts_for_ntab') || i || (o = l.a),
                 o().then(function () {
@@ -77823,7 +78029,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       pG5d: function (e, t) {
         e.exports = {
-          queryId: 'VQZF8wfaUsb6IBScwKU1pw',
+          queryId: 'XUNuxHVrwMj2MpWgB2QQ0Q',
           operationName: 'BirdwatchFetchGlobalTimeline',
           operationType: 'query',
         }
@@ -79968,6 +80174,35 @@ window.__SCRIPTS_LOADED__.i18n &&
               Text: 'text',
             })),
           y = Object.freeze({ ResendSms: 'resend_sms', ResendVoice: 'resend_voice', ResendEmail: 'resend_email' })
+      },
+      q83S: function (e, t, n) {
+        var r = n('treY')
+        e.exports = function (e, t) {
+          return new Promise(function (n, o) {
+            var i = t || {}
+            'randomize' in i || (i.randomize = !0)
+            var a = r.operation(i)
+            function c(e) {
+              o(e || new Error('Aborted'))
+            }
+            function s(e, t) {
+              e.bail ? c(e) : a.retry(e) ? i.onRetry && i.onRetry(e, t) : o(a.mainError())
+            }
+            a.attempt(function (t) {
+              var r
+              try {
+                r = e(c, t)
+              } catch (o) {
+                return void s(o, t)
+              }
+              Promise.resolve(r)
+                .then(n)
+                .catch(function (e) {
+                  s(e, t)
+                })
+            })
+          })
+        }
       },
       q9Zt: function (e, t, n) {
         'use strict'
@@ -82921,7 +83156,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       sgih: function (e, t, n) {
         'use strict'
         n.d(t, 'a', function () {
-          return I
+          return C
         })
         n('OZaJ')
         var r = n('97Jx'),
@@ -82947,8 +83182,9 @@ window.__SCRIPTS_LOADED__.i18n &&
           E = n('0FVZ'),
           j = n('pf9B'),
           P = n('cHvH'),
-          S = n('rHpw')
-        function T(e) {
+          S = n('rHpw'),
+          T = 'sheetDialog'
+        function I(e) {
           var t = (function () {
             if ('undefined' == typeof Reflect || !Reflect.construct) return !1
             if (Reflect.construct.sham) return !1
@@ -82969,9 +83205,9 @@ window.__SCRIPTS_LOADED__.i18n &&
             return v()(this, n)
           }
         }
-        var I = (function (e) {
+        var C = (function (e) {
           h()(n, e)
-          var t = T(n)
+          var t = I(n)
           function n() {
             var e
             s()(this, n)
@@ -82984,32 +83220,33 @@ window.__SCRIPTS_LOADED__.i18n &&
                   i = r.style,
                   c = r.children,
                   s = r.type,
-                  u = a()(r, ['style', 'children', 'type']),
-                  l = n > S.a.theme.breakpoints.medium,
-                  d = [
-                    'bottom' === s && [C.alignBottom, C.alignLeft],
-                    'center' === s && [C.alignCenter, C.widthSmall],
-                    'full' === s && C.alignFull,
-                  ],
+                  u = r.testID,
+                  l = a()(r, ['style', 'children', 'type', 'testID']),
+                  d = n > S.a.theme.breakpoints.medium,
                   p = [
-                    'bottom' === s && C.alignCenter,
-                    'center' === s && [C.alignCenter, C.widthSmall],
-                    'full' === s && C.alignCenter,
+                    'bottom' === s && [k.alignBottom, k.alignLeft],
+                    'center' === s && [k.alignCenter, k.widthSmall],
+                    'full' === s && k.alignFull,
                   ],
                   f = [
-                    C.container,
+                    'bottom' === s && k.alignCenter,
+                    'center' === s && [k.alignCenter, k.widthSmall],
+                    'full' === s && k.alignCenter,
+                  ],
+                  h = [
+                    k.container,
                     'bottom' === s &&
-                      (S.a.isVdlRefreshEnabled() ? C.containerBottomVdlRefreshEnabled : C.containerBottom),
-                    'center' === s && C.containerCenter,
+                      (S.a.isVdlRefreshEnabled() ? k.containerBottomVdlRefreshEnabled : k.containerBottom),
+                    'center' === s && k.containerCenter,
                     i,
                   ],
-                  h = [C.container, C.containerCenter, i],
-                  m = O.createElement(
+                  m = [k.container, k.containerCenter, i],
+                  v = O.createElement(
                     j.a,
-                    o()({}, u, { style: [C.root, l ? p : d] }),
-                    O.createElement(w.a, { style: l ? h : f }, c),
+                    o()({}, l, { style: [k.root, d ? f : p] }),
+                    O.createElement(w.a, { style: d ? m : h, testID: u || T }, c),
                   )
-                return 'full' === s ? O.createElement(E.a.FullSheet, null, m) : O.createElement(E.a.HalfSheet, null, m)
+                return 'full' === s ? O.createElement(E.a.FullSheet, null, v) : O.createElement(E.a.HalfSheet, null, v)
               }),
               e
             )
@@ -83026,8 +83263,8 @@ window.__SCRIPTS_LOADED__.i18n &&
             n
           )
         })(O.Component)
-        _()(I, 'defaultProps', j.a.defaultProps)
-        var C = S.a.create(function (e) {
+        _()(C, 'defaultProps', j.a.defaultProps)
+        var k = S.a.create(function (e) {
           return {
             root: { minHeight: 'calc('.concat(e.spaces.space64, ' * 3)'), alignSelf: 'center' },
             container: { maxHeight: '100%', overflowY: 'auto', backgroundColor: e.colors.cellBackground },
@@ -84102,6 +84339,9 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return r.createElement(r.Fragment, null, t)
         }
+      },
+      treY: function (e, t, n) {
+        e.exports = n('csOR')
       },
       tufc: function (e, t) {
         e.exports = {
@@ -85465,10 +85705,10 @@ window.__SCRIPTS_LOADED__.i18n &&
       v6aA: function (e, t, n) {
         'use strict'
         n.d(t, 'c', function () {
-          return ee
+          return ne
         }),
           n.d(t, 'a', function () {
-            return te
+            return re
           })
         n('OZaJ')
         var r,
@@ -85510,7 +85750,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           I = n('RqPI'),
           C = Object(_.a)()
             .propsFromState(function () {
-              return { activeTeamId: P.c, hashflags: T.c, isRestrictedSession: I.k, loggedInUserId: I.n }
+              return { activeTeamId: P.c, hashflags: T.c, isRestrictedSession: I.l, loggedInUserId: I.o }
             })
             .propsFromActions(function () {
               return {
@@ -85571,16 +85811,18 @@ window.__SCRIPTS_LOADED__.i18n &&
             },
             linkFromUrtUrl: M.b,
           },
-          H = n('7JQg'),
-          W = n('B5iK'),
-          z = n('oi7R'),
-          V = n('/NU0'),
-          G = n('FiRh'),
-          K = n('nBUg'),
-          q = n('PbQQ'),
-          Q = n('lHOd'),
-          Y = n('ZgDt')
-        function X(e) {
+          H = n('q83S'),
+          W = n.n(H),
+          z = n('7JQg'),
+          V = n('B5iK'),
+          G = n('oi7R'),
+          K = n('/NU0'),
+          q = n('FiRh'),
+          Q = n('nBUg'),
+          Y = n('PbQQ'),
+          X = n('lHOd'),
+          J = n('ZgDt')
+        function Z(e) {
           var t = (function () {
             if ('undefined' == typeof Reflect || !Reflect.construct) return !1
             if (Reflect.construct.sham) return !1
@@ -85601,19 +85843,19 @@ window.__SCRIPTS_LOADED__.i18n &&
             return f()(this, n)
           }
         }
-        var J = function (e) {
-            return e && (Object(V.a)(e.status) || 'SecurityError: The operation is insecure.' === e.message)
+        var $ = function (e) {
+            return e && (Object(K.a)(e.status) || 'SecurityError: The operation is insecure.' === e.message)
               ? Promise.resolve()
               : Promise.reject(e)
           },
-          Z = new Y.a(function () {
+          ee = new J.a(function () {
             return null
           }),
-          $ = { page: 'app' },
-          ee = {
+          te = { page: 'app' },
+          ne = {
             isRestrictedSession: !1,
             loggedInUserId: void 0,
-            teamsFeatureSwitches: Z,
+            teamsFeatureSwitches: ee,
             verifiedCrawlerName: null,
             get userClaims() {
               throw new Error('userClaims must be provided')
@@ -85631,13 +85873,13 @@ window.__SCRIPTS_LOADED__.i18n &&
               throw new Error('viewport must be provided')
             },
           },
-          te = y.createContext(ee),
-          ne =
+          re = y.createContext(ne),
+          oe =
             (new WeakMap(),
             C(
               (function (e) {
                 d()(n, e)
-                var t = X(n)
+                var t = Z(n)
                 function n(e) {
                   var r
                   return (
@@ -85658,7 +85900,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       '_enableSuperFollowsViewerFields',
                       r.props.featureSwitches.isTrue('super_follow_user_api_enabled'),
                     ),
-                    b()(u()(r), '_viewport', z.a.root()),
+                    b()(u()(r), '_viewport', G.a.root()),
                     b()(u()(r), '_scrollManager', R()),
                     b()(u()(r), '_fetchUserClaims', function (e) {
                       return r.props.fetchUserClaims({}).catch(e)
@@ -85667,7 +85909,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       return r.props.fetchViewerSuperFollowsFields().catch(e)
                     }),
                     b()(u()(r), '_startClaimTimer', function (e) {
-                      ;(r._userClaimTimer = new W.b(24e4).timeout(function () {
+                      ;(r._userClaimTimer = new V.b(24e4).timeout(function () {
                         r._fetchUserClaims(e).finally(function () {
                           r._startClaimTimer(e)
                         })
@@ -85696,7 +85938,18 @@ window.__SCRIPTS_LOADED__.i18n &&
                         r.props.featureSwitches.isTrue('responsive_web_feature_gating_enabled')
                       )
                     }),
-                    (r._teamsFeatureSwitches = new Y.a(r._getTeamsFeatureSwitch)),
+                    b()(u()(r), '_fetchHashflagsAndRetryOnFailure', function () {
+                      var e = r.props.fetchHashflags
+                      return W()(
+                        function () {
+                          return e().catch(function (e) {
+                            if (503 === e.status) throw new Error('Received 503 response, retrying')
+                          })
+                        },
+                        { retries: 3, factor: 3, minTimeout: 3e3 },
+                      )
+                    }),
+                    (r._teamsFeatureSwitches = new J.a(r._getTeamsFeatureSwitch)),
                     f()(r)
                   )
                 }
@@ -85711,7 +85964,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                           o = t.hashflags,
                           i = o !== e.hashflags,
                           a = n !== e.activeTeamId
-                        i && Object(G.d)(o), a && (r(), this._handleFetchTeamsFeatureSwitches())
+                        i && Object(q.d)(o), a && (r(), this._handleFetchTeamsFeatureSwitches())
                       },
                     },
                     {
@@ -85724,16 +85977,18 @@ window.__SCRIPTS_LOADED__.i18n &&
                           o = t.fetchHashflags,
                           i = n({})
                         this._handleFetchTeamsFeatureSwitches(),
-                          (this._featureSwitchTimer = new W.b(18e5).interval(function () {
+                          (this._featureSwitchTimer = new V.b(18e5).interval(function () {
                             r({}).catch(i), e._handleFetchTeamsFeatureSwitches()
                           })),
                           this._featureSwitchTimer.start()
                         var a = this._useNewHashflagsAPI ? 18e5 : 288e5
-                        ;(this._hashflagTimer = new W.b(a).interval(function () {
-                          o().catch(J)
+                        ;(this._hashflagTimer = new V.b(a).interval(function () {
+                          e._useNewHashflagsAPI ? e._fetchHashflagsAndRetryOnFailure().catch($) : o().catch($)
                         })),
                           this._enableHashflags &&
-                            (o().catch(J), this._hashflagTimer.start(), Object(G.d)(this.props.hashflags)),
+                            (this._useNewHashflagsAPI ? this._fetchHashflagsAndRetryOnFailure().catch($) : o().catch($),
+                            this._hashflagTimer.start(),
+                            Object(q.d)(this.props.hashflags)),
                           this._userClaimsEnabled() &&
                             this.props.loggedInUserId &&
                             (this._fetchUserClaims(i), this._startClaimTimer(i)),
@@ -85767,7 +86022,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                           x.b,
                           { context: s },
                           y.createElement(
-                            te.Provider,
+                            re.Provider,
                             {
                               value: {
                                 userClaims: o,
@@ -85782,7 +86037,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                               },
                             },
                             y.createElement(
-                              K.a.Provider,
+                              Q.a.Provider,
                               {
                                 value: {
                                   cardCarouselClickableNavArea: function () {
@@ -85794,12 +86049,12 @@ window.__SCRIPTS_LOADED__.i18n &&
                                 D.b,
                                 null,
                                 y.createElement(
-                                  q.c.Provider,
+                                  Y.c.Provider,
                                   U,
                                   y.createElement(
-                                    H.b,
-                                    { namespace: $, scribeMethod: c },
-                                    y.createElement(Q.a.Provider, { value: n }, y.createElement(g.b, null, t)),
+                                    z.b,
+                                    { namespace: te, scribeMethod: c },
+                                    y.createElement(X.a.Provider, { value: n }, y.createElement(g.b, null, t)),
                                   ),
                                 ),
                               ),
@@ -85813,7 +86068,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 )
               })(y.Component),
             ))
-        t.b = ne
+        t.b = oe
       },
       vCAy: function (e, t, n) {
         'use strict'
@@ -86200,7 +86455,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 var i = o.api,
                   a = r(),
                   s = Y(a, e),
-                  u = Object(L.b)(D.l(a)),
+                  u = Object(L.b)(D.m(a)),
                   l = t && t.doLogin ? 'getNotificationSettingsLogin' : 'getNotificationSettings'
                 return c
                   .b(n, {
@@ -86227,7 +86482,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 var i = o.api,
                   a = r(),
                   s = Y(a, e),
-                  u = Object(L.b)(D.l(a)),
+                  u = Object(L.b)(D.m(a)),
                   l = function (r) {
                     return c.c(n, {
                       params: N(
@@ -86721,7 +86976,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
       },
       vLWf: function (e, t) {
-        e.exports = { queryId: 'UCmSbmTQXu1krT_zbv4T3w', operationName: 'TopicsPickerPage', operationType: 'query' }
+        e.exports = { queryId: 'Vy7V2z6RbfBVsq9IFRIPAg', operationName: 'TopicsPickerPage', operationType: 'query' }
       },
       vSDp: function (e, t) {
         e.exports = {
@@ -86811,6 +87066,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               case a.Top:
                 return !0
               case a.Bottom:
+                return !t
               case a.Gap:
               case a.ShowMore:
               case a.ShowMoreThreads:
@@ -88094,12 +88350,12 @@ window.__SCRIPTS_LOADED__.i18n &&
           x = 'settings',
           D = n('xQWt'),
           L = n('wM4e'),
-          A = n('rxPX'),
-          M = n('auX9'),
-          N = n('G6rE'),
+          A = n('auX9'),
+          M = n('G6rE'),
+          N = n('rxPX'),
           B = n('z2Pn'),
           F = n('l0YN'),
-          U = Object(A.a)()
+          U = Object(N.a)()
             .propsFromState(function () {
               return {
                 homeHasUnread: L.b,
@@ -88107,8 +88363,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                 notificationsUnreadCount: F.b,
                 notificationsType: B.e,
                 directMessagesPath: B.c,
-                loggedInUser: N.e.selectLoggedInUser,
-                hasMultiAccountBadges: M.h,
+                loggedInUser: M.e.selectLoggedInUser,
+                hasMultiAccountBadges: A.h,
               }
             })
             .adjustStateProps(function (e) {
@@ -88784,9 +89040,9 @@ window.__SCRIPTS_LOADED__.i18n &&
           Ot = n('BDX3'),
           wt =
             (n('ho0z'),
-            Object(A.a)()
+            Object(N.a)()
               .propsFromState(function () {
-                return { loggedInUser: N.e.selectLoggedInUser, hasMultiAccountBadges: M.h }
+                return { loggedInUser: M.e.selectLoggedInUser, hasMultiAccountBadges: A.h }
               })
               .adjustStateProps(function (e) {
                 var t = e.loggedInUser,
@@ -90296,6 +90552,15 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       xAAW: function (e, t) {
         e.exports = { queryId: 'Wlmlj2-xzyS1GN3a6cj-mQ', operationName: 'DeleteBookmark', operationType: 'mutation' }
+      },
+      xIW0: function (e, t, n) {
+        'use strict'
+        t.a = {
+          settingsAppBar: 'settingsAppBar',
+          appBar: function (e) {
+            return 'app-bar-'.concat(e)
+          },
+        }
       },
       xJf9: function (e, t, n) {
         'use strict'
@@ -93197,7 +93462,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         var h = u(function (e) {
             return function (t, n, r) {
               var o = r.featureSwitches,
-                a = i.j(n())
+                a = i.k(n())
               d.pageView(o, e, a)
             }
           }),

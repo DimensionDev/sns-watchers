@@ -10412,19 +10412,6 @@ window.__SCRIPTS_LOADED__.polyfills &&
           return arguments.length < 2 ? o(r[e]) || o(u[e]) : (r[e] && r[e][t]) || (u[e] && u[e][t])
         }
       },
-      VIKJ: function (e, t, n) {
-        'use strict'
-        n('KOtZ')
-        t.a = function (e, t) {
-          return e.reduce(
-            function (n, r, u) {
-              var o = t ? t(r, u, e) : !!r
-              return o && n[0].push(r), !o && n[1].push(r), n
-            },
-            [[], []],
-          )
-        }
-      },
       VPAj: function (e, t, n) {
         'use strict'
         t.a = function (e) {
