@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "unclebill <billbill290@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "fetch:twitter": "node scripts/twitter.fetcher.js"
+  },
   "dependencies": {
     "@types/node": "^16.4.6",
     "cheerio": "^1.0.0-rc.10",

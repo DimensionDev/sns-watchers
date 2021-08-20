@@ -27,7 +27,7 @@ jobs:
 
       - name: Execute Fetcher
         run: |
-          node scripts/twitter.fetcher.js
+          yarn fetch:twitter
 
       - name: Git Diff
         id: git-diff

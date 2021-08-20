@@ -27,6 +27,7 @@ function wipeDynamic(code) {
     .replace(/("impression_pointers"):{.*?}/, '$1:{}')
     .replace(/("impressions"):{"\w+":.*?}}/, '$1:{}')
     .replace(/("responsive_web_\w+"):{.*?}/g, `$1:{value:'${HOLDER}'}`)
+    .replace(/("fetchedTime"):\d+/, `$1:42`)
 }
 /**
  * wrap a wipeDynamic() as a preprocesser inside
