@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [109],
+    [107],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -23,7 +23,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var n = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(257).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(255).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function a(e, t, o) {
@@ -946,7 +946,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('ae2c8a1e', 'Why can’t you reply to this?'),
           n('jead3bc1', 'Why can’t you share this?'),
           n('ff25aba5', 'Why can’t you view Tweet activity?'),
+          n('jf9c38df', 'React button'),
+          n('c5dc88fc', 'Choose from more options to express how you feel.'),
           n('i2aeb0d2', 'Only members of the Community can reply to Community content.'),
+          n('a407151c', 'Only members of the Community can Like Community content.'),
+          n('g4617e47', 'Only members of the Community can react to Community content.'),
+          n('c72c18b0', 'Only members of the Community can share Community content.'),
+          n('a6838d8d', 'Only members of the Community can view Tweet activity on Community content.'),
           n('eb2aba8e', 'Learn more'),
           n('ibd021f1', 'Want to read the article first?'),
           n('ca58508e', 'You’re about to share an article you haven’t opened on Twitter.'),
@@ -1177,14 +1183,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'via @' + e.viaScreenName
           }),
           n('f70a36d0', 'Tweet all'),
-          n('ic011119', 'Want to revise this or mute them instead?'),
-          n('f6b7745a', 'Want to revise this or block them instead?'),
+          n('ic011119', 'Want to revise this or mute them instead?')
+        n('f6b7745a', 'Want to revise this or block them instead?'),
           n('a75cc0f8', 'Want to revise this or hide their reply instead?'),
           n('i2b9632d', 'Successfully unblocked.'),
           n('h3032750', 'Get more info'),
           n('af250eb6', 'Blocking user'),
-          n('ib147a39', 'Hiding reply')
-        n('e8ff17e5', 'Revise'),
+          n('ib147a39', 'Hiding reply'),
+          n('e8ff17e5', 'Revise'),
           n('cd33a61c', 'Why did I get this?'),
           n('g97558f6', 'What does this mean for your reply?'),
           n(
@@ -1550,6 +1556,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('d68146c0', 'When anyone in this Community Tweets, they’ll show up here.'),
           n('h5245afa', 'Community'),
           n('f05dbeff', 'Loading Tweets'),
+          n('b60e4f77', 'Check it out'),
+          n('f0fc827d', 'Welcome to Twitter Communities'),
+          n('c8e93b51', 'Communities are moderated discussion groups where people on Twitter can connect and share.'),
+          n('fc5c6913', 'Meet others with your interests'),
+          n('ad211086', 'Talk to people who care about the same things you do.'),
+          n('gf803ba1', 'Tweet directly to a Community'),
+          n('e92fe01b', 'Your Tweets are shared with other Community members — not your followers.'),
+          n('h3bb8068', 'Get backup when you need it'),
+          n('a709f8f8', 'Admins and moderators help manage Communities and keep conversations on track.'),
           n('h4fbfa57', 'Agree and join'),
           n('dc1b14a1', function (e) {
             return 'Review and agree to ' + e.communityName + ' Rules'
@@ -2318,8 +2333,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('f2c3c31c', 'Copy code'),
           n('e8016b64', 'Loading backup code'),
           n('c4ca22bc', 'If you ever lose access to your device, you can use this code to verify your identity.'),
-          n('ecb6fccf', 'Learn more'),
-          n('j2327f80', 'Temporary Password'),
+          n('ecb6fccf', 'Learn more')
+        function i(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var n = t[o]
+            ;(n.enumerable = n.enumerable || !1),
+              (n.configurable = !0),
+              'value' in n && (n.writable = !0),
+              Object.defineProperty(e, n.key, n)
+          }
+        }
+        function r(e, t) {
+          return (r =
+            Object.setPrototypeOf ||
+            function (e, t) {
+              return (e.__proto__ = t), e
+            })(e, t)
+        }
+        n('j2327f80', 'Temporary Password'),
           n('fbfeaf8e', 'Generate a new password'),
           n('h4a8bd11', 'Copy password'),
           n('g247dc1b', 'Loading temporary password'),
@@ -2341,24 +2372,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n(
             'a904e0ee',
             'Decide whether people who have your email address or phone number can find and connect with you on Twitter.',
-          )
-        function i(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var n = t[o]
-            ;(n.enumerable = n.enumerable || !1),
-              (n.configurable = !0),
-              'value' in n && (n.writable = !0),
-              Object.defineProperty(e, n.key, n)
-          }
-        }
-        function r(e, t) {
-          return (r =
-            Object.setPrototypeOf ||
-            function (e, t) {
-              return (e.__proto__ = t), e
-            })(e, t)
-        }
-        n('ebc41952', 'Let people who have your email address find you on Twitter'),
+          ),
+          n('ebc41952', 'Let people who have your email address find you on Twitter'),
           n('f40a6338', 'Let people who have your email address find and connect with you on Twitter.'),
           n('ac9314aa', 'Let people who have your phone number find you on Twitter'),
           n('d86a220e', 'Let people who have your phone number find and connect with you on Twitter.'),
@@ -3524,8 +3539,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           n('i31dcd22', 'Article'),
           n('e217e03c', 'Start a newsletter for free'),
-          n('fadf0f86', 'Compose and schedule newsletters'),
-          n('f8df10b9', 'Embed Tweets'),
+          n('fadf0f86', 'Compose and schedule newsletters')
+        n('f8df10b9', 'Embed Tweets'),
           n('hb47d72b', 'Import email lists'),
           n('dcbba9e7', 'Analyze engagement'),
           n('bf916530', 'Earn money from paid subscribers'),
@@ -3548,8 +3563,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('fcd1fdda', 'Read a sample issue'),
           n('ib1e0888', 'See Privacy Policy'),
           n('a976a91d', 'Start reading on Revue'),
-          n('ab0deccf', 'Subscribe')
-        n('h3281ce9', 'You’re in the loop!'),
+          n('ab0deccf', 'Subscribe'),
+          n('h3281ce9', 'You’re in the loop!'),
           n('f05df263', 'Check your inbox for the latest issues or read on Revue'),
           n('c45ea908', 'Or, subscribe through Revue'),
           n('b6f9f574', 'Subscribe to newsletter'),
@@ -4471,6 +4486,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'bdcdeb3e',
             'Even if you unfollow this Topic, you could still see Tweets about it depending on which accounts you’re following.',
           ),
+          n('ddac1f1d', function (e) {
+            return 'Are you sure you want to leave ' + e.communityName + '?'
+          }),
+          n(
+            'aaac4f55',
+            'You’ll lose access to the Community and will no longer be able to participate, but your previous Tweets will still be visible.',
+          ),
           n('f305840e', 'Pending'),
           n('fe04d899', 'Discard'),
           n('i036327c', 'Discard follow request?'),
@@ -5200,18 +5222,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'a32e9137',
-                get: function () {
-                  return ['For more reactions, hover over the Like ', ' button']
-                },
-              },
-              {
-                key: 'b75c83d2',
-                get: function () {
-                  return ['For more reactions, press and hold the Like ', ' button']
-                },
-              },
-              {
                 key: 'be5322c7',
                 get: function () {
                   return ['', ' ']
@@ -5229,6 +5239,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                   return [
                     'We try to prevent a Tweet like this that otherwise breaks the Twitter Rules from reaching more people, so we have disabled most of the ways to engage with it. If you want to talk about it, you can still Quote Tweet. ',
                   ]
+                },
+              },
+              {
+                key: 'f62df26d',
+                get: function () {
+                  return ['Hover over ', ' to pick a reaction']
+                },
+              },
+              {
+                key: 'gcdc0fd5',
+                get: function () {
+                  return ['Press and hold ', ' to pick a reaction']
                 },
               },
               {
