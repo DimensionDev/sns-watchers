@@ -23,7 +23,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var n = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(255).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(254).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function a(e, t, o) {
@@ -1540,12 +1540,32 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('jb0429b1', function (e) {
             return 'By ' + e.name + ' @' + e.screenName
           }),
+          n('d7346631', 'You haven’t joined any Communities yet'),
+          n('b162e49d', 'When you do, their Tweets will show up here.'),
+          n('c5390c17', 'When you do, they will show up here.'),
           n('b33e4e4a', 'Loading Communities'),
+          n('cc683fb9', 'About Community'),
+          n('af7c11a9', 'Community Info'),
+          n('aacf0488', 'Only members can Tweet and Reply'),
+          n('gef661b2', 'Everyone can view, Like, Quote-Tweet, and share Tweets within any community on Twitter.'),
           n('a0e3ece4', 'Community Detail'),
-          n('aa7ae3f6', 'Joined'),
           n('hb9400db', 'See More'),
-          n('ec745ce5', function (e) {
-            return e.count + ' new Tweets to review'
+          n('aa7ae3f6', 'Joined'),
+          n('hafa07f2', 'Participation is limited'),
+          n(
+            'd06a18d1',
+            'Communities are public, so you can read the Tweets — but right now, particiption is invite-only.',
+          ),
+          n('f58d2d3b', 'You can’t rejoin'),
+          n('d98a4ab6', 'Members who’ve been previously removed by a moderator can’t rejoin.'),
+          n('i859676b', 'Your Tweets are protected'),
+          n('fc2a5c92', 'Something went wrong'),
+          n('bf7bdb60', 'It’s not you, it’s us (really). Please try again later.'),
+          n('h27d695f', 'You can’t leave just yet'),
+          n('b02360f5', 'The last admin or moderator can’t leave unless the Community is empty.'),
+          n('e77dfaf0', 'make your Tweets public'),
+          n('e3f04700', function (e) {
+            return e.count + ' new Tweet' + a(e.count, '', 's') + ' to review'
           }),
           n('e2429f56', 'Tweets to review'),
           n('df15d5b7', function (e) {
@@ -1569,6 +1589,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('dc1b14a1', function (e) {
             return 'Review and agree to ' + e.communityName + ' Rules'
           }),
+          n('dc6ce7b4', 'Members'),
+          n('ga2aa43c', 'Moderators'),
+          n('df52b95e', 'There aren’t any Members in this Community'),
+          n('dc24ae43', 'When people get added, they’ll show up here.'),
           n('e442bbb4', 'Community Members'),
           n('e9488b0d', 'Loading Moderators'),
           n('j43fea20', 'Loading Members'),
@@ -1589,6 +1613,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('i6568549', function (e) {
             return 'You have ' + e.remaining_invite_count + ' invite' + a(e.remaining_invite_count, '', 's') + ' left'
           }),
+          n(
+            'ja1387a7',
+            'Search results will include only your followers and people who allow Direct Messages from everyone.',
+          ),
+          n(
+            'ae85768c',
+            'Search results include only your followers and people who allow Direct Messages from everyone.',
+          ),
           n('cd133485', 'Invite'),
           n('hb1e378e', 'Invited'),
           n('bcd6bb0d', 'Member'),
@@ -1767,7 +1799,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('b679ff69', 'Invalid URL'),
           n('h2d4ba55', 'Checking your ID...'),
           n('i2051842', 'We’re making sure your ID meets our standards. This might take up to 30 seconds.'),
-          n('fc2a5c92', 'Something went wrong'),
           n('jf4b6f7f', 'There was an issue uploading your ID. Please try uploading it again.'),
           n('abd587d1', 'Add another reference'),
           n('i0bba81a', 'Add reference of employment'),
@@ -2300,11 +2331,27 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('b1686800', 'Manage security keys'),
           n('a1860ee7', 'Temporary password'),
           n('j45a2856', 'Create a one-time temporary password to use with third-party services.'),
-          n('d8612d9c', 'Turn on Text message or Authentication app first'),
-          n(
-            'e13d4467',
-            'Before you can set up a security key, you need to first turn on either Text message or Authentication app as one of your two-factor authentication methods.',
-          ),
+          n('d8612d9c', 'Turn on Text message or Authentication app first')
+        function i(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var n = t[o]
+            ;(n.enumerable = n.enumerable || !1),
+              (n.configurable = !0),
+              'value' in n && (n.writable = !0),
+              Object.defineProperty(e, n.key, n)
+          }
+        }
+        function r(e, t) {
+          return (r =
+            Object.setPrototypeOf ||
+            function (e, t) {
+              return (e.__proto__ = t), e
+            })(e, t)
+        }
+        n(
+          'e13d4467',
+          'Before you can set up a security key, you need to first turn on either Text message or Authentication app as one of your two-factor authentication methods.',
+        ),
           n('c1d96d6a', 'You’ve added the maximum number of keys'),
           n('gf91694d', 'You’ll need to delete a key before adding another.'),
           n('j265ddb6', 'Confirm your email'),
@@ -2333,24 +2380,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('f2c3c31c', 'Copy code'),
           n('e8016b64', 'Loading backup code'),
           n('c4ca22bc', 'If you ever lose access to your device, you can use this code to verify your identity.'),
-          n('ecb6fccf', 'Learn more')
-        function i(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var n = t[o]
-            ;(n.enumerable = n.enumerable || !1),
-              (n.configurable = !0),
-              'value' in n && (n.writable = !0),
-              Object.defineProperty(e, n.key, n)
-          }
-        }
-        function r(e, t) {
-          return (r =
-            Object.setPrototypeOf ||
-            function (e, t) {
-              return (e.__proto__ = t), e
-            })(e, t)
-        }
-        n('j2327f80', 'Temporary Password'),
+          n('ecb6fccf', 'Learn more'),
+          n('j2327f80', 'Temporary Password'),
           n('fbfeaf8e', 'Generate a new password'),
           n('h4a8bd11', 'Copy password'),
           n('g247dc1b', 'Loading temporary password'),
@@ -3499,8 +3530,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('ae7600c8', 'Moment is up to date'),
           n('fea74b66', function (e) {
             return '@' + e.screenName + '’s Moments'
-          }),
-          n('e14206c3', 'You haven’t created any Moments'),
+          })
+        n('e14206c3', 'You haven’t created any Moments'),
           n('d1e5e327', 'When you do, it’ll show up here.'),
           n('ee75768c', function (e) {
             return '@' + e.screenName + ' hasn’t created any Moments'
@@ -3539,8 +3570,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           n('i31dcd22', 'Article'),
           n('e217e03c', 'Start a newsletter for free'),
-          n('fadf0f86', 'Compose and schedule newsletters')
-        n('f8df10b9', 'Embed Tweets'),
+          n('fadf0f86', 'Compose and schedule newsletters'),
+          n('f8df10b9', 'Embed Tweets'),
           n('hb47d72b', 'Import email lists'),
           n('dcbba9e7', 'Analyze engagement'),
           n('bf916530', 'Earn money from paid subscribers'),
@@ -3920,7 +3951,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           n('h9ce3405', 'List members'),
           n('dfeaeb26', 'Add to your List'),
-          n('dc24ae43', 'When people get added, they’ll show up here.'),
           n('efb6f61d', 'There isn’t anyone in this List'),
           n('d113ddf6', 'There aren’t any suggested members'),
           n('be9cf1da', 'To see suggestions to add to this List, try searching for accounts.'),
@@ -5542,6 +5572,21 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'c43d1678',
                 get: function () {
                   return ['See more at ']
+                },
+              },
+              {
+                key: 'a346641a',
+                get: function () {
+                  return ['Created ' + this.props.date + ' by ']
+                },
+              },
+              {
+                key: 'd8d8fcba',
+                get: function () {
+                  return [
+                    'Communities are public, so protected accounts can’t join right now. You can read the Tweets, but to participate, ',
+                    '.',
+                  ]
                 },
               },
               {
