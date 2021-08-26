@@ -1663,9 +1663,9 @@ window.__SCRIPTS_LOADED__.i18n &&
             invertedSecondary: { backgroundColor: 'transparent', borderColor: 'white', color: 'white' },
             text: { backgroundColor: 'transparent', borderColor: 'transparent', color: 'primary' },
             invertedText: { backgroundColor: 'transparent', borderColor: 'transparent', color: 'white' },
-            destructive: { backgroundColor: 'red500', borderColor: 'transparent', color: 'whiteOnColor' },
-            destructiveSecondary: { backgroundColor: 'transparent', borderColor: 'red500', color: 'red500' },
-            destructiveText: { backgroundColor: 'transparent', borderColor: 'transparent', color: 'red500' },
+            destructive: { backgroundColor: 'magenta500', borderColor: 'transparent', color: 'whiteOnColor' },
+            destructiveSecondary: { backgroundColor: 'transparent', borderColor: 'magenta500', color: 'magenta500' },
+            destructiveText: { backgroundColor: 'transparent', borderColor: 'transparent', color: 'magenta500' },
             invertedOnMedia: { backgroundColor: 'white', borderColor: 'transparent', color: 'gray1100' },
             onMedia: {
               backgroundColor: 'translucentBlack77',
@@ -1941,8 +1941,8 @@ window.__SCRIPTS_LOADED__.i18n &&
               gray200: { borderColor: e.colors.gray200 },
               gray700: { borderColor: e.colors.gray700 },
               gray1100: { borderColor: e.colors.gray1100 },
-              red100: { borderColor: e.colors.experimentalRed100 },
-              red500: { borderColor: e.colors.red500 },
+              magenta100: { borderColor: e.colors.experimentalRed100 },
+              magenta500: { borderColor: e.colors.magenta500 },
               plum500: { borderColor: e.colors.plum500 },
               primary: { borderColor: e.colors.primary },
               primaryOnWhite: { borderColor: e.colors.primaryOnWhite },
@@ -1970,7 +1970,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               gray1100: { color: e.colors.gray1100 },
               primary: { color: e.colors.primary },
               primaryOnWhite: { color: e.colors.primaryOnWhite },
-              red500: { color: e.colors.red500 },
+              magenta500: { color: e.colors.magenta500 },
               plum500: { color: e.colors.plum500 },
               whiteOnColor: { color: e.colors.whiteOnColor },
               text: { color: e.colors.text },
@@ -23933,7 +23933,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       CKsB: function (e, t, n) {
         'use strict'
         n.d(t, 'a', function () {
-          return C
+          return I
         })
         n('OZaJ')
         var r = n('VrFO'),
@@ -23955,13 +23955,12 @@ window.__SCRIPTS_LOADED__.i18n &&
           g = n('TIdA'),
           _ = n('t62R'),
           O = n('A91F'),
-          w = n('GIK7'),
-          E = n('IMYl'),
-          j = n('htQn'),
-          P = n('rHpw'),
-          S = n('j7Bv'),
-          T = n('MWbm')
-        function I(e) {
+          w = n('IMYl'),
+          E = n('htQn'),
+          j = n('rHpw'),
+          P = n('j7Bv'),
+          S = n('MWbm')
+        function T(e) {
           var t = (function () {
             if ('undefined' == typeof Reflect || !Reflect.construct) return !1
             if (Reflect.construct.sham) return !1
@@ -23982,9 +23981,9 @@ window.__SCRIPTS_LOADED__.i18n &&
             return p()(this, n)
           }
         }
-        var C = (function (e) {
+        var I = (function (e) {
           l()(n, e)
-          var t = I(n)
+          var t = T(n)
           function n() {
             var e
             o()(this, n)
@@ -23998,9 +23997,9 @@ window.__SCRIPTS_LOADED__.i18n &&
                   r = t.isSelected
                 return n
                   ? y.createElement(
-                      T.a,
-                      { style: k.checkmarkContainer },
-                      r ? y.createElement(E.a, { style: k.iconCheckmark }) : null,
+                      S.a,
+                      { style: C.checkmarkContainer },
+                      r ? y.createElement(w.a, { style: C.iconCheckmark }) : null,
                     )
                   : null
               }),
@@ -24015,12 +24014,12 @@ window.__SCRIPTS_LOADED__.i18n &&
                   ? a
                     ? null
                     : y.createElement(
-                        T.a,
-                        { style: k.image },
+                        S.a,
+                        { style: C.image },
                         y.createElement(g.a, {
                           accessibilityLabel: '',
                           aspectMode: O.a.SQUARE,
-                          backgroundColor: P.a.theme.colors.gray300,
+                          backgroundColor: j.a.theme.colors.gray300,
                           cropCandidates: null == o ? void 0 : o.crop,
                           image: null == o ? void 0 : o.image,
                           onError: e._handleImageError,
@@ -24028,16 +24027,11 @@ window.__SCRIPTS_LOADED__.i18n &&
                       )
                   : n
                   ? r
-                    ? y.createElement(S.a, { Icon: n, size: 'xLarge', style: k.thumbnail })
+                    ? y.createElement(P.a, { Icon: n, size: 'xLarge', style: C.thumbnail })
                     : y.createElement(
-                        T.a,
-                        { style: k.centered },
-                        y.createElement(n, {
-                          style: [
-                            k.icon,
-                            'red500' === i && (P.a.isVdlRefreshEnabled() ? k.iconExperimentalRed : k.iconRed),
-                          ],
-                        }),
+                        S.a,
+                        { style: C.centered },
+                        y.createElement(n, { style: [C.icon, 'red500' === i && C.iconRed] }),
                       )
                   : null
               }),
@@ -24072,21 +24066,21 @@ window.__SCRIPTS_LOADED__.i18n &&
                       viewType: null !== (e = null == o ? void 0 : o.viewType) && void 0 !== e ? e : 'menu_item',
                     },
                     y.createElement(
-                      j.a,
+                      E.a,
                       {
                         accessibilityRole: 'menuitem',
                         disabled: i,
                         link: a,
                         onPress: c,
-                        style: [k.root, d && k.bottomBorder, s],
+                        style: [C.root, d && C.bottomBorder, s],
                         testID: u,
                       },
                       this._renderMediaOrIcon(),
                       y.createElement(
-                        T.a,
-                        { style: k.content },
-                        y.createElement(_.c, { color: Object(w.a)(l) }, n),
-                        r ? y.createElement(_.c, { color: 'gray700', size: 'subtext2', style: k.subText }, r) : null,
+                        S.a,
+                        { style: C.content },
+                        y.createElement(_.c, { color: l }, n),
+                        r ? y.createElement(_.c, { color: 'gray700', size: 'subtext2', style: C.subText }, r) : null,
                       ),
                       this._renderCheckmark(),
                     ),
@@ -24097,8 +24091,8 @@ window.__SCRIPTS_LOADED__.i18n &&
             n
           )
         })(y.PureComponent)
-        b()(C, 'defaultProps', { withBottomBorder: !1 })
-        var k = P.a.create(function (e) {
+        b()(I, 'defaultProps', { withBottomBorder: !1 })
+        var C = j.a.create(function (e) {
           return {
             root: {
               cursor: 'pointer',
@@ -24130,7 +24124,6 @@ window.__SCRIPTS_LOADED__.i18n &&
             },
             iconCheckmark: { color: e.colors.primary },
             iconRed: { color: e.colors.red500 },
-            iconExperimentalRed: { color: e.colors.experimentalRed500 },
             content: { flexShrink: 1, flexGrow: 1 },
             subText: { marginTop: e.spaces.space4 },
             centered: { justifyContent: 'center' },
@@ -28668,17 +28661,6 @@ window.__SCRIPTS_LOADED__.i18n &&
           },
           F = v(v(v(v(v(v({}, C), k), R), N), B), L)
         t.e = u.a.register(F)
-      },
-      GIK7: function (e, t, n) {
-        'use strict'
-        n.d(t, 'a', function () {
-          return i
-        })
-        var r = n('t62R'),
-          o = n('rHpw')
-        function i(e) {
-          return o.a.isVdlRefreshEnabled() && e === r.a.red500 ? r.a.experimentalRed500 : e
-        }
       },
       GKOv: function (e, t, n) {
         'use strict'
@@ -33981,7 +33963,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             return I
           }),
           n.d(t, 'd', function () {
-            return D
+            return L
           })
         n('1t7P'), n('daRM'), n('FtHn')
         var r = n('m3Bd'),
@@ -34050,6 +34032,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             isLoaded: !1,
             isLoading: !1,
             team: void 0,
+            useEventAllowlist: !1,
             user: { config: {}, impression_pointers: {}, impressions: {}, keysRead: {}, settingsVersion: null },
           },
           g = !1
@@ -34069,7 +34052,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 r = t.payload,
                 i = f(f({}, n), {}, { isLoaded: !0, isLoading: !1 })
               if (r) {
-                var c = M(n.defaultConfig, r)
+                var c = N(n.defaultConfig, r)
                 i.user = f(f({}, n.user), c)
               }
               return i
@@ -34080,7 +34063,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 l = f(f({}, s), {}, { isLoaded: !0, isLoading: !1 })
               if (u) {
                 var d,
-                  p = M(s.defaultConfig, u),
+                  p = N(s.defaultConfig, u),
                   h = (null === (d = s.team) || void 0 === d ? void 0 : d.keysRead) || {}
                 l.team = f(f(f({}, s.team), p), {}, { keysRead: h })
               }
@@ -34108,12 +34091,16 @@ window.__SCRIPTS_LOADED__.i18n &&
               if (I) return f(f({}, e), {}, { defaultConfig: I })
               break
             case R:
-              var x = t.payload
-              if (x) return f(f({}, e), {}, { debug: x })
+              var D = t.payload
+              if (D) return f(f({}, e), {}, { debug: D })
+              break
+            case x:
+              var L = t.payload
+              if (L) return f(f({}, e), {}, { useEventAllowlist: L })
               break
             case C:
-              var D = t.payload
-              if (D) return f(f({}, e), {}, { featureSetToken: D })
+              var A = t.payload
+              if (A) return f(f({}, e), {}, { featureSetToken: A })
               break
             default:
               return e
@@ -34158,6 +34145,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                   : (function (e) {
                       return e.featureSwitch.user.settingsVersion
                     })(e)) || void 0,
+              allowlist_format:
+                (function (e) {
+                  return e.featureSwitch.useEventAllowlist ? 'JSON' : void 0
+                })(e) || void 0,
               teamUserId: t,
             }
           },
@@ -34169,7 +34160,8 @@ window.__SCRIPTS_LOADED__.i18n &&
           C = 'rweb/featureSwitch/SET_FEATURE_SET_TOKEN',
           k = 'rweb/featureSwitch/SET_DEFAULT_CONFIG',
           R = 'rweb/featureSwitch/SET_DEBUG',
-          x = function (e, t, n) {
+          x = 'rweb/featureSwitch/SET_CLIENT_EVENT_ALLOWLIST',
+          D = function (e, t, n) {
             return function (r, i) {
               e.forEach(function (e) {
                 t[e.key] ||
@@ -34194,7 +34186,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               })
             }
           },
-          D = function (e) {
+          L = function (e) {
             var t = e.key,
               n = e.shouldScribeImpression,
               r = void 0 === n || n,
@@ -34224,7 +34216,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     return v[e]
                   })
                   .filter(Boolean)
-                if ((E.length > 0 && e(x(E, b, p ? a : null)), s)) {
+                if ((E.length > 0 && e(D(E, b, p ? a : null)), s)) {
                   var P = !!t.match(h),
                     S = (m[t] || {}).value
                   void 0 !== S && (!P || E.length > 0) && s.addFeatureSwitch(t, String(S) || JSON.stringify(S))
@@ -34233,15 +34225,15 @@ window.__SCRIPTS_LOADED__.i18n &&
               return m[t]
             }
           },
-          L = {},
-          A = [],
-          M = function (e, t) {
+          A = {},
+          M = [],
+          N = function (e, t) {
             var n,
               r = (function (e) {
                 var t = e.impressions,
-                  n = void 0 === t ? A : t,
+                  n = void 0 === t ? M : t,
                   r = e.impression_pointers,
-                  o = Object.keys(e.config || L).reduce(function (t, n) {
+                  o = Object.keys(e.config || A).reduce(function (t, n) {
                     return (t[n] = e.config[n]), t
                   }, {})
                 return n.reduce(
@@ -34600,29 +34592,33 @@ window.__SCRIPTS_LOADED__.i18n &&
       OiMc: function (e, t, n) {
         'use strict'
         n.d(t, 'a', function () {
-          return E
+          return T
         })
         n('OZaJ')
-        var r = n('VrFO'),
+        var r = n('97Jx'),
           o = n.n(r),
-          i = n('Y9Ll'),
+          i = n('m3Bd'),
           a = n.n(i),
-          c = n('1Pcy'),
+          c = n('VrFO'),
           s = n.n(c),
-          u = n('5Yy7'),
+          u = n('Y9Ll'),
           l = n.n(u),
-          d = n('N+ot'),
+          d = n('1Pcy'),
           p = n.n(d),
-          f = n('AuHH'),
+          f = n('5Yy7'),
           h = n.n(f),
-          m = n('KEM+'),
+          m = n('N+ot'),
           b = n.n(m),
-          v = (n('2G9S'), n('ERkP')),
-          y = n('oaLm'),
-          g = n('rHpw'),
-          _ = n('MWbm'),
-          O = n('3dyc')
-        function w(e) {
+          v = n('AuHH'),
+          y = n.n(v),
+          g = n('KEM+'),
+          _ = n.n(g),
+          O = (n('2G9S'), n('ERkP')),
+          w = n('oaLm'),
+          E = n('rHpw'),
+          j = n('MWbm'),
+          P = n('3dyc')
+        function S(e) {
           var t = (function () {
             if ('undefined' == typeof Reflect || !Reflect.construct) return !1
             if (Reflect.construct.sham) return !1
@@ -34635,75 +34631,46 @@ window.__SCRIPTS_LOADED__.i18n &&
           })()
           return function () {
             var n,
-              r = h()(e)
+              r = y()(e)
             if (t) {
-              var o = h()(this).constructor
+              var o = y()(this).constructor
               n = Reflect.construct(r, arguments, o)
             } else n = r.apply(this, arguments)
-            return p()(this, n)
+            return b()(this, n)
           }
         }
-        var E = (function (e) {
-          l()(n, e)
-          var t = w(n)
+        var T = (function (e) {
+          h()(n, e)
+          var t = S(n)
           function n() {
             var e
-            o()(this, n)
-            for (var r = arguments.length, i = new Array(r), a = 0; a < r; a++) i[a] = arguments[a]
+            s()(this, n)
+            for (var r = arguments.length, o = new Array(r), i = 0; i < r; i++) o[i] = arguments[i]
             return (
-              (e = t.call.apply(t, [this].concat(i))),
-              b()(s()(e), '_renderContent', function (t) {
+              (e = t.call.apply(t, [this].concat(o))),
+              _()(p()(e), '_renderContent', function (t) {
                 var n = e.props.contentStyle
-                return v.createElement(_.a, { style: [j.contentRoot, n] }, e.props.renderContent(t))
+                return O.createElement(j.a, { style: [I.contentRoot, n] }, e.props.renderContent(t))
               }),
               e
             )
           }
           return (
-            a()(n, [
+            l()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.children,
-                    n = e.disabled,
-                    r = e.enableEnterKeyToggle,
-                    o = e.enableHover,
-                    i = e.enableLongPress,
-                    a = e.visibilityBehavior,
-                    c = e.onAnimateComplete,
-                    s = e.onDismiss,
-                    u = e.onHoverCardUnmount,
-                    l = e.onOpen,
-                    d = e.preferredVerticalOrientation,
-                    p = e.withArrow,
-                    f = e.withFixedPosition,
-                    h = e.withMask,
-                    m = e.withRoundedSides
+                    n = (e.contentStyle, e.disabled),
+                    r = a()(e, ['children', 'contentStyle', 'disabled'])
                   return n
                     ? 'function' == typeof t
                       ? t({ dismissPopover: function () {} })
                       : t
-                    : v.createElement(
-                        y.a,
-                        {
-                          enableClick: !0,
-                          enableEnterKeyToggle: r,
-                          enableHover: o,
-                          enableLongPress: i,
-                          enableNestedHoverCard: !0,
-                          onAnimateComplete: c,
-                          onDismiss: s,
-                          onHoverCardUnmount: u,
-                          onOpen: l,
-                          preferredVerticalOrientation: d,
-                          renderContent: this._renderContent,
-                          visibilityBehavior: a,
-                          withArrow: p,
-                          withFixedPosition: f,
-                          withMask: h,
-                          withRoundedSides: m,
-                        },
+                    : O.createElement(
+                        w.a,
+                        o()({}, r, { enableClick: !0, enableNestedHoverCard: !0, renderContent: this._renderContent }),
                         t,
                       )
                 },
@@ -34711,9 +34678,9 @@ window.__SCRIPTS_LOADED__.i18n &&
             ]),
             n
           )
-        })(v.Component)
-        b()(E, 'defaultProps', { enableHover: !1, enableLongPress: !1 }), b()(E, 'VISIBILITY_BEHAVIOR', O.b)
-        var j = g.a.create(function (e) {
+        })(O.Component)
+        _()(T, 'defaultProps', { enableHover: !1, enableLongPress: !1 }), _()(T, 'VISIBILITY_BEHAVIOR', P.b)
+        var I = E.a.create(function (e) {
           return { contentRoot: { maxHeight: 480, minHeight: 30, maxWidth: 360, minWidth: 260, overflow: 'auto' } }
         })
       },
@@ -36572,57 +36539,59 @@ window.__SCRIPTS_LOADED__.i18n &&
         function B(e, t, n, r) {
           var o = (r && r.baseUrl) || '',
             i = r && r.useHashtagUrl,
-            a = [],
-            c = s()(t, 2),
-            l = c[0],
-            d = c[1],
-            p = e.slice(l, d)
+            a = r && r.renderUnicodeEmojis,
+            c = [],
+            l = s()(t, 2),
+            d = l[0],
+            p = l[1],
+            f = e.slice(d, p)
           if (n && n.length) {
-            var f = 0
+            var h = 0
             N(n).forEach(function (e) {
               var t = e.indices.map(function (e) {
-                  return e - l
+                  return e - d
                 }),
                 n = s()(t, 2),
                 r = n[0],
-                c = n[1],
-                d = r < 0 || c > p.length
-              if ((c !== f && r > f && a.push(A(p.substring(f, r))), !d))
+                l = n[1],
+                p = r < 0 || l > f.length
+              if ((l !== h && r > h && c.push(A(f.substring(h, r))), !p))
                 switch (e.type) {
                   case u.a.MEDIA:
-                    a.push(L(e))
+                    c.push(L(e))
                     break
                   case u.a.EMOJI:
-                    a.push(M(e))
+                    c.push(a ? A(e.text) : M(e))
                     break
                   case u.a.URL:
-                    a.push(D(e))
+                    c.push(D(e))
                     break
                   case u.a.HASHTAG:
-                    a.push(R(e, o, i))
+                    c.push(R(e, o, i))
                     break
                   case u.a.MENTION:
-                    a.push(k(e, p.substring(r, c), o))
+                    c.push(k(e, f.substring(r, l), o))
                     break
                   case u.a.CASHTAG:
-                    a.push(x(e, o))
+                    c.push(x(e, o))
                 }
-              f = c
+              h = l
             })
-            var h = p.length
-            f < h && a.push(A(p.substring(f)))
-          } else a.push(A(p))
-          return a.filter(Boolean)
+            var m = f.length
+            h < m && c.push(A(f.substring(h)))
+          } else c.push(A(f))
+          return c.filter(Boolean)
         }
         function F(e, t, n, r) {
           var o = (r && r.baseUrl) || '',
             i = r && r.useHashtagUrl,
-            a = [],
-            c = s()(t, 2),
-            l = c[0],
-            d = c[1],
-            p = e.slice(l, d),
-            f = (function (e) {
+            a = r && r.renderUnicodeEmojis,
+            c = [],
+            l = s()(t, 2),
+            d = l[0],
+            p = l[1],
+            f = e.slice(d, p),
+            h = (function (e) {
               return e.sort(function (e, t) {
                 return e.indices[0] - t.indices[0]
               })
@@ -36633,61 +36602,61 @@ window.__SCRIPTS_LOADED__.i18n &&
                     r = e.endIndex
                   return { indices: w()(t, n, r) }
                 })
-              })((r && r.hitHighlights) || [], p),
+              })((r && r.hitHighlights) || [], f),
             )
           if (n && n.length) {
-            var h = 0
+            var m = 0
             N(n).forEach(function (e) {
               var t = e.indices.map(function (e) {
-                  return e - l
+                  return e - d
                 }),
                 n = s()(t, 2),
                 r = n[0],
-                c = n[1],
-                d = r < 0 || c > p.length
-              if (c !== h && r > h) {
-                var m = C(h, r, 0, f, l)
-                a.push(A(p.substring(h, r), m))
+                l = n[1],
+                p = r < 0 || l > f.length
+              if (l !== m && r > m) {
+                var b = C(m, r, 0, h, d)
+                c.push(A(f.substring(m, r), b))
               }
-              if (!d) {
-                var b = (function (e, t, n, r, o) {
+              if (!p) {
+                var v = (function (e, t, n, r, o) {
                   return C(e, t, 0, r, o).map(function (e) {
                     var t = s()(e, 2)
                     return [t[0] - 1, t[1] - 1]
                   })
-                })(r, c, 0, f, l)
+                })(r, l, 0, h, d)
                 switch (e.type) {
                   case u.a.MEDIA:
-                    a.push(L(e))
+                    c.push(L(e))
                     break
                   case u.a.EMOJI:
-                    a.push(M(e))
+                    c.push(a ? A(e.text) : M(e))
                     break
                   case u.a.URL:
-                    a.push(D(e))
+                    c.push(D(e))
                     break
                   case u.a.HASHTAG:
-                    a.push(R(e, o, i, b))
+                    c.push(R(e, o, i, v))
                     break
                   case u.a.MENTION:
-                    a.push(k(e, p.substring(r, c), o, b))
+                    c.push(k(e, f.substring(r, l), o, v))
                     break
                   case u.a.CASHTAG:
-                    a.push(x(e, o, b))
+                    c.push(x(e, o, v))
                 }
               }
-              h = c
+              m = l
             })
-            var m = p.length
-            if (h < m) {
-              var b = C(h, m, 0, f, l)
-              a.push(A(p.substring(h), b))
+            var b = f.length
+            if (m < b) {
+              var v = C(m, b, 0, h, d)
+              c.push(A(f.substring(m), v))
             }
           } else {
-            var v = C(0, p.length, 0, f, l)
-            a.push(A(p, v))
+            var y = C(0, f.length, 0, h, d)
+            c.push(A(f, y))
           }
-          return a.filter(Boolean)
+          return c.filter(Boolean)
         }
         function U(e, t) {
           return (e && Array.isArray(e) ? e : []).reduce(function (e, n) {
@@ -39206,7 +39175,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   level3a: {
                     Icon: N,
                     headerText: M,
-                    iconColor: p.a.theme.colors.red500,
+                    iconColor: p.a.theme.colors.magenta500,
                     arrowColor: void 0,
                     arrowHoverColor: void 0,
                     backgroundColor: void 0,
@@ -39217,7 +39186,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   level3b: {
                     Icon: N,
                     headerText: M,
-                    iconColor: p.a.theme.colors.red500,
+                    iconColor: p.a.theme.colors.magenta500,
                     arrowColor: p.a.theme.colors.experimentalRed200,
                     backgroundColor: p.a.theme.colors.experimentalRed0,
                     backgroundHoverColor: p.a.theme.colors.experimentalRed50,
@@ -41469,7 +41438,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
         var E,
           j = /^\/\/+/,
-          P = 'initialLocationKey',
+          P = 'initialRwebLocationKey',
           S = 'RichHistory',
           T = (function () {
             function e(t) {
@@ -41587,7 +41556,6 @@ window.__SCRIPTS_LOADED__.i18n &&
                 p()(this, 'listen', function (e) {
                   return n._browserHistory.listen(e)
                 }),
-                (t.location.key = t.location.key || P),
                 (this._browserHistory = t)
               var r = this._readSessionStorage()
               t.location.key !== P && r && r.locationKeys && r.currentLocationIndex
@@ -41680,10 +41648,10 @@ window.__SCRIPTS_LOADED__.i18n &&
           k = function (e, t) {
             return Object(y.a)(C(e), C(t))
           }
-        t.a =
-          (f.canUseDOM || (E = new g.a('/', 'twitter.com')),
-          E ||
-            ((function (e, t) {
+        t.a = (function () {
+          var e
+          ;(f.canUseDOM || (E = new g.a('/', 'twitter.com')), E) ||
+            (!(function (e, t) {
               var n = t.pathname,
                 r = t.search,
                 o = t.hash
@@ -41692,8 +41660,11 @@ window.__SCRIPTS_LOADED__.i18n &&
                 e.replaceState({}, '', i)
               }
             })(window.history, window.location),
-            (E = new T(Object(h.a)()))),
-          E)
+            (null !== (e = window.history.state) && void 0 !== e && e.key) ||
+              window.history.replaceState({ key: P }, ''),
+            (E = new T(Object(h.a)())))
+          return E
+        })()
       },
       SrIh: function (e, t, n) {
         'use strict'
@@ -43036,8 +43007,8 @@ window.__SCRIPTS_LOADED__.i18n &&
           W = i.a.create(function (e) {
             return {
               iconOther: { color: e.colors.blue500 },
-              iconLike: { color: e.colors.red500 },
-              iconReact: { color: e.colors.red500 },
+              iconLike: { color: e.colors.magenta500 },
+              iconReact: { color: e.colors.magenta500 },
               iconTwitter: { color: e.colors.brandColor },
               iconRetweet: { color: e.colors.green500 },
               iconTopics: { color: e.colors.blue500 },
@@ -44693,8 +44664,8 @@ window.__SCRIPTS_LOADED__.i18n &&
             W = Math.max(0, M - H),
             z = 0
           if (P) {
-            var V = Math.floor(W) % w.audiowaveValues.length
-            z = w.audiowaveValues[V] / 100
+            var V = w.audiowaveValues
+            if (Array.isArray(V)) z = V[Math.floor(W) % V.length] / 100
           }
           var G = r ? N.mobile : N.desktop,
             K = r ? 'subtext2' : 'body',
@@ -45028,29 +44999,64 @@ window.__SCRIPTS_LOADED__.i18n &&
         n('yH/f'), n('1Iuc'), n('uFXj')
         var r = n('ERkP'),
           o = n('t62R'),
-          i = n('rHpw'),
-          a = n('MWbm'),
-          c = Object.freeze({ live: { backgroundColor: 'red500', bold: !0, color: 'whiteOnColor' } }),
-          s = function (e) {
+          i = n('3XMw'),
+          a = n.n(i),
+          c = n('rHpw'),
+          s = n('MWbm'),
+          u = a.a.j190bf19,
+          l = { backgroundColor: 'gray1100', bold: !0, color: 'white', opacity: 0.75 },
+          d = Object.freeze({
+            live: { backgroundColor: 'magenta500', bold: !0, color: 'whiteOnColor' },
+            alt: l,
+            gif: l,
+          }),
+          p = function (e) {
+            var t = e.bold,
+              n = e.children,
+              i = e.background,
+              a = void 0 === i ? 'translucentBlack' : i,
+              c = e.type,
+              s = c ? d[c] : {},
+              u = s.color || m(a),
+              l = s.bold || t
+            return r.createElement(
+              o.c,
+              { align: 'center', color: u, selectable: !1, size: 'subtext2', weight: l ? 'bold' : void 0 },
+              f(c, n),
+            )
+          },
+          f = function (e, t) {
             switch (e) {
-              case 'red500':
-                return l.bgRed
-              case 'primary':
-                return l.bgPrimary
-              case 'gray700':
-                return l.bgDeepGray
-              case 'maskColor':
-                return l.bgMaskColor
-              case 'green500':
-                return l.bgGreen
-              case 'orange500':
-                return l.bgOrange
-              case 'translucentBlack77':
+              case 'alt':
+                return 'ALT'
+              case 'gif':
+                return 'GIF'
+              case 'live':
+                return u
               default:
-                return l.bgTranslucentBlack
+                return t
             }
           },
-          u = function (e) {
+          h = function (e) {
+            switch (e) {
+              case 'magenta500':
+                return b.bgRed
+              case 'primary':
+                return b.bgPrimary
+              case 'gray700':
+                return b.bgDeepGray
+              case 'maskColor':
+                return b.bgMaskColor
+              case 'green500':
+                return b.bgGreen
+              case 'orange500':
+                return b.bgOrange
+              case 'translucentBlack77':
+              default:
+                return b.bgTranslucentBlack
+            }
+          },
+          m = function (e) {
             switch (e) {
               case 'translucentBlack77':
               case 'maskColor':
@@ -45059,7 +45065,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 return 'whiteOnColor'
             }
           },
-          l = i.a.create(function (e) {
+          b = c.a.create(function (e) {
             return {
               badge: {
                 alignSelf: 'flex-start',
@@ -45071,7 +45077,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
               badgeSquare: { width: e.spaces.space20, paddingHorizontal: 0, overflow: 'hidden' },
               bgPrimary: { backgroundColor: e.colors.primary },
-              bgRed: { backgroundColor: e.colors.red500 },
+              bgRed: { backgroundColor: e.colors.magenta500 },
               bgMaskColor: { backgroundColor: e.colors.maskColor },
               bgTranslucentBlack: { backgroundColor: e.colors.translucentBlack77 },
               bgDeepGray: { backgroundColor: e.colors.gray700 },
@@ -45080,22 +45086,14 @@ window.__SCRIPTS_LOADED__.i18n &&
             }
           })
         t.a = function (e) {
-          var t = e.bold,
-            n = e.children,
-            i = e.background,
-            d = void 0 === i ? 'translucentBlack77' : i,
-            p = e.square,
-            f = e.style,
-            h = e.type,
-            m = h ? c[h] : {},
-            b = s(m.backgroundColor || d),
-            v = m.color || u(d),
-            y = m.bold || t
-          return r.createElement(
-            a.a,
-            { pointerEvents: 'none', style: [l.badge, p ? l.badgeSquare : null, b, f] },
-            r.createElement(o.c, { align: 'center', color: v, size: 'subtext2', weight: y ? 'bold' : void 0 }, n),
-          )
+          var t = e.background,
+            n = void 0 === t ? 'translucentBlack77' : t,
+            o = e.style,
+            i = e.square,
+            a = e.type,
+            c = a ? d[a] : {},
+            u = h(c.backgroundColor || n)
+          return r.createElement(s.a, { pointerEvents: 'none', style: [b.badge, i ? b.badgeSquare : null, u, o] }, p(e))
         }
       },
       WpDa: function (e, t, n) {
@@ -45625,8 +45623,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     (null == u || null === (s = u.tombstoneInfo) || void 0 === s ? void 0 : s.displayType)
                 if (!u || p) {
                   var f, h, m
-                  if (p)
-                    m = { displayType: 'EntireTweet', tombstoneInfo: null == u ? void 0 : u.tombstoneInfo, tweet: u }
+                  if (p) m = { displayType: 'Inline', tombstoneInfo: null == u ? void 0 : u.tombstoneInfo, tweet: u }
                   else if (
                     'TweetTombstone' ===
                     (null == a ||
@@ -52332,19 +52329,60 @@ window.__SCRIPTS_LOADED__.i18n &&
           i = n('m3Bd'),
           a = n.n(i),
           c = n('ERkP'),
-          s = n('Wms4'),
-          u = n('rHpw').a.create(function (e) {
+          s = n('t62R'),
+          u = n('/yvb'),
+          l = n('3XMw'),
+          d = n.n(l),
+          p = n('GWvE'),
+          f = n('Wms4'),
+          h = n('efqG'),
+          m = n('rHpw'),
+          b = n('MWbm'),
+          v = d.a.e3fcbdba,
+          y = function (e) {
+            var t = e.align,
+              n = (e.altLabel, e.style),
+              r = a()(e, ['align', 'altLabel', 'style'])
+            return c.createElement(f.a, o()({ style: [n, _.root, 'right' === t ? _.alignRight : _.alignLeft] }, r))
+          },
+          g = function (e) {
+            var t = e.altLabel
+            return c.createElement(
+              h.a,
+              {
+                enableHover: !0,
+                renderContent: function (e, n) {
+                  return c.createElement(
+                    b.a,
+                    { style: 'sheet' === n ? _.altSheet : _.altPopover },
+                    c.createElement(s.c, { style: _.altText }, t),
+                    'sheet' === n && c.createElement(u.a, { onPress: e, type: 'destructiveSecondary' }, v),
+                  )
+                },
+                withArrow: !1,
+              },
+              y(e),
+            )
+          },
+          _ = m.a.create(function (e) {
             return {
               root: { position: 'absolute', bottom: e.spaces.space12 },
               alignRight: { right: e.spaces.space12 },
               alignLeft: { left: e.spaces.space12 },
+              altPopover: { padding: e.spaces.space12 },
+              altSheet: { padding: e.spaces.space20 },
+              altText: { paddingVertical: e.spaces.space12 },
             }
           })
         t.a = function (e) {
-          var t = e.align,
-            n = e.style,
-            r = a()(e, ['align', 'style'])
-          return c.createElement(s.a, o()({ style: [n, u.root, 'right' === t ? u.alignRight : u.alignLeft] }, r))
+          var t = e.altLabel,
+            n = e.type,
+            r = a()(e, ['altLabel', 'type']),
+            i = void 0 === t || Object(p.a)(t) ? n : 'alt'
+          return (
+            (i = 'alt' === i && 'gif' === n ? 'gif' : i),
+            void 0 === t || Object(p.a)(t) ? y(e) : c.createElement(g, o()({ altLabel: t, type: i }, r))
+          )
         }
       },
       a9ls: function (e, t, n) {
@@ -62501,23 +62539,26 @@ window.__SCRIPTS_LOADED__.i18n &&
                   n = t.children,
                   r = t.contentStyle,
                   o = t.disabled,
-                  i = t.onDismiss,
-                  a = t.renderContent,
-                  c = t.visibilityBehavior,
-                  s = t.withFixedPosition
+                  i = t.enableHover,
+                  a = t.onDismiss,
+                  c = t.renderContent,
+                  s = t.visibilityBehavior,
+                  u = t.withArrow,
+                  l = t.withFixedPosition
                 return v.createElement(
                   g.a,
                   {
                     contentStyle: r,
                     disabled: o,
                     enableEnterKeyToggle: !0,
-                    onDismiss: i,
+                    enableHover: i,
+                    onDismiss: a,
                     renderContent: function (e) {
-                      return a(e, 'popover')
+                      return c(e, 'popover')
                     },
-                    visibilityBehavior: c,
-                    withArrow: !0,
-                    withFixedPosition: s,
+                    visibilityBehavior: s,
+                    withArrow: u,
+                    withFixedPosition: l,
                   },
                   n,
                 )
@@ -73032,7 +73073,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               primary: { backgroundColor: e.colors.primary },
               neutral: { backgroundColor: e.colors.gray50 },
               exclusive: { backgroundImage: _.getBackgroundImage() },
-              danger: { backgroundColor: v.a.isVdlRefreshEnabled() ? e.colors.experimentalRed500 : e.colors.red500 },
+              danger: { backgroundColor: e.colors.red500 },
             }
           }),
           P = v.a.create(function (e) {
@@ -75278,7 +75319,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             green500: 'green500',
             yellow500: 'yellow500',
             orange500: 'orange500',
-            red500: 'red500',
+            magenta500: 'magenta500',
           }),
           l = Object.freeze({
             blue600: 'blue600',
@@ -75296,9 +75337,9 @@ window.__SCRIPTS_LOADED__.i18n &&
             orange600: 'orange600',
             orange300: 'orange300',
             orange200: 'orange200',
-            red600: 'red600',
-            red300: 'red300',
-            red200: 'red200',
+            magenta600: 'magenta600',
+            magenta300: 'magenta300',
+            magenta200: 'magenta200',
           }),
           d = Object.freeze({
             gray0: 'gray0',
@@ -75354,13 +75395,13 @@ window.__SCRIPTS_LOADED__.i18n &&
               case 'FadedGreen':
                 return l.green200
               case 'DeepRed':
-                return l.red600
+                return l.magenta600
               case 'MediumRed':
-                return u.red500
+                return u.magenta500
               case 'LightRed':
-                return l.red300
+                return l.magenta300
               case 'FadedRed':
-                return l.red200
+                return l.magenta200
               case 'DeepBlue':
                 return l.blue600
               case 'MediumBlue':
@@ -77151,6 +77192,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           n.d(t, 'f', function () {
             return d
           })
+        n('ERkP')
         var r = n('uDfI'),
           o = n('9OUN')
         function i(e, t, n, o) {
@@ -77603,7 +77645,6 @@ window.__SCRIPTS_LOADED__.i18n &&
           aspectRatio: 1,
           backgroundColor: j.a.theme.colors.gray300,
           circle: !0,
-          focusable: !0,
           hasAdaptiveImage: !0,
           isDownloadable: !1,
           size: 'jumbo',
@@ -80480,55 +80521,55 @@ window.__SCRIPTS_LOADED__.i18n &&
       qlwE: function (e, t, n) {
         'use strict'
         n.d(t, 'a', function () {
-          return h
+          return m
         }),
           n.d(t, 'b', function () {
-            return g
-          }),
-          n.d(t, 'k', function () {
             return _
           }),
-          n.d(t, 'o', function () {
+          n.d(t, 'k', function () {
             return O
           }),
-          n.d(t, 'n', function () {
+          n.d(t, 'o', function () {
             return w
           }),
-          n.d(t, 'f', function () {
+          n.d(t, 'n', function () {
             return E
           }),
-          n.d(t, 'd', function () {
+          n.d(t, 'f', function () {
             return j
           }),
-          n.d(t, 'e', function () {
+          n.d(t, 'd', function () {
             return P
           }),
-          n.d(t, 'h', function () {
+          n.d(t, 'e', function () {
             return S
           }),
-          n.d(t, 'g', function () {
+          n.d(t, 'h', function () {
             return T
           }),
-          n.d(t, 'l', function () {
+          n.d(t, 'g', function () {
             return I
           }),
-          n.d(t, 'j', function () {
+          n.d(t, 'l', function () {
             return C
           }),
-          n.d(t, 'm', function () {
+          n.d(t, 'j', function () {
             return k
           }),
-          n.d(t, 'i', function () {
+          n.d(t, 'm', function () {
             return R
           }),
-          n.d(t, 'p', function () {
+          n.d(t, 'i', function () {
             return x
           }),
+          n.d(t, 'p', function () {
+            return D
+          }),
           n.d(t, 'q', function () {
-            return A
+            return M
           }),
           n.d(t, 'c', function () {
-            return M
+            return N
           })
         var r = n('KEM+'),
           o = n.n(r),
@@ -80575,25 +80616,26 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return e
         }
-        var f = u.f.ThemeScaleNames,
-          h = 'local',
-          m = 'rweb.settings',
-          b = i.canUseDOM ? window.getComputedStyle(document.querySelector('html')).fontSize : '16px',
-          v = function (e) {
+        var f = u.f.ThemePrimaryColorNames,
+          h = u.f.ThemeScaleNames,
+          m = 'local',
+          b = 'rweb.settings',
+          v = i.canUseDOM ? window.getComputedStyle(document.querySelector('html')).fontSize : '16px',
+          y = function (e) {
             return '16px' === e
               ? c.a.get('screen').width > l.a.theme.breakpoints.medium
-                ? f.normal
-                : f.small
+                ? h.normal
+                : h.small
               : parseInt(e, 10) >= 24
-              ? f.xLarge
+              ? h.xLarge
               : parseInt(e, 10) >= 20
-              ? f.large
-              : f.normal
+              ? h.large
+              : h.normal
           },
-          y = {
+          g = {
             nextPushCheckin: 0,
             shouldAutoPlayGif: !1,
-            scale: f.normal,
+            scale: h.normal,
             themeColor: 'blue500',
             highContrastEnabled: !1,
             themeBackground: 'light',
@@ -80605,84 +80647,84 @@ window.__SCRIPTS_LOADED__.i18n &&
             preciseLocationEnabled: !1,
             undoTweet: { original: !0, reply: !1, quote: !1, thread: !1 },
           }
-        function g() {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : y,
+        function _() {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : g,
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
-            case D:
+            case L:
               return p(p({}, e), t.payload)
             default:
               return e
           }
         }
-        var _ = function (e) {
-            return e[s.a][h].scale
-          },
-          O = function (e) {
-            var t = u.f.ThemePrimaryColorNames,
-              n = e[s.a][h].themeColor
-            if (t[n]) return n
-            var r = ''.concat(n, '500')
-            return t[r] ? r : 'blue500'
+        var O = function (e) {
+            return e[s.a][m].scale
           },
           w = function (e) {
-            return e[s.a][h].themeBackground
+            var t = e[s.a][m].themeColor
+            if ('red' === t || 'red500' === t) return 'magenta500'
+            if (f[t]) return t
+            var n = ''.concat(t, '500')
+            return f[n] ? n : 'blue500'
           },
           E = function (e) {
-            return e[s.a][h].highContrastEnabled
+            return e[s.a][m].themeBackground
           },
           j = function (e) {
-            return e[s.a][h].autoPollNewTweets
+            return e[s.a][m].highContrastEnabled
           },
           P = function (e) {
-            var t = e[s.a][h].autoShowNewTweets
-            return void 0 === t ? a.b.isTrue('responsive_web_settings_timeline_refresh_instant_default') : t
+            return e[s.a][m].autoPollNewTweets
           },
           S = function (e) {
-            return e[s.a][h].nextPushCheckin
+            var t = e[s.a][m].autoShowNewTweets
+            return void 0 === t ? a.b.isTrue('responsive_web_settings_timeline_refresh_instant_default') : t
           },
           T = function (e) {
-            return e[s.a][h].loginPromptLastShown
+            return e[s.a][m].nextPushCheckin
           },
           I = function (e) {
-            return e[s.a][h]
+            return e[s.a][m].loginPromptLastShown
           },
           C = function (e) {
-            return !!(
-              (i.canUseDOM && window.matchMedia && window.matchMedia('(prefers-reduced-motion)').matches) ||
-              e[s.a][h].reducedMotionEnabled
-            )
+            return e[s.a][m]
           },
           k = function (e) {
-            return e[s.a][h].showTweetMediaDetailDrawer
+            return !!(
+              (i.canUseDOM && window.matchMedia && window.matchMedia('(prefers-reduced-motion)').matches) ||
+              e[s.a][m].reducedMotionEnabled
+            )
           },
           R = function (e) {
-            return e[s.a][h].preciseLocationEnabled
+            return e[s.a][m].showTweetMediaDetailDrawer
           },
           x = function (e) {
-            return e[s.a][h].undoTweet
+            return e[s.a][m].preciseLocationEnabled
           },
-          D = 'rweb/settings/SET_LOCAL',
-          L = function (e) {
-            return { payload: e, type: D }
+          D = function (e) {
+            return e[s.a][m].undoTweet
           },
+          L = 'rweb/settings/SET_LOCAL',
           A = function (e) {
+            return { payload: e, type: L }
+          },
+          M = function (e) {
             return function (t, n, r) {
               var o = r.devicePersistence
-              t(L(e))
-              var i = I(n())
-              return o.set(m, { local: i })
+              t(A(e))
+              var i = C(n())
+              return o.set(b, { local: i })
             }
           },
-          M = function () {
+          N = function () {
             return function (e, t, n) {
-              return n.devicePersistence.get(m).then(function (n) {
+              return n.devicePersistence.get(b).then(function (n) {
                 if (n) {
                   var r = p({}, n.local)
-                  e(L(r))
+                  e(A(r))
                 } else {
-                  var o = p(p({}, I(t())), {}, { scale: v(b) })
-                  e(L(o))
+                  var o = p(p({}, C(t())), {}, { scale: y(v) })
+                  e(A(o))
                 }
               })
             }
@@ -81682,9 +81724,9 @@ window.__SCRIPTS_LOADED__.i18n &&
               green500: '#096633',
               yellow500: '#79500B',
               orange500: '#99350D',
-              red500: '#9F0C3A',
+              magenta500: '#9F0C3A',
               link: '#264A9D',
-              experimentalDestructionButtonOutlinedBorder: a.a.color.baseColor.red600,
+              experimentalDestructionButtonOutlinedBorder: a.a.color.baseColor.magenta600,
             },
             dark: {
               blue500: '#70C8FF',
@@ -81692,10 +81734,10 @@ window.__SCRIPTS_LOADED__.i18n &&
               green500: '#66D397',
               plum500: a.a.color.baseColor.plum300,
               purple500: '#BEA8E2',
-              red500: '#F098B3',
+              magenta500: '#F098B3',
               orange500: '#F89A75',
               link: '#70C8FF',
-              experimentalDestructionButtonOutlinedBorder: a.a.color.baseColor.red600,
+              experimentalDestructionButtonOutlinedBorder: a.a.color.baseColor.magenta600,
               experimentalLightButtonText: a.a.color.baseColor.gray1100,
             },
           },
@@ -81708,7 +81750,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               {},
               {
                 text: a.a.color.baseColor.gray1100,
-                textOverflowBackground: a.a.color.baseColor.red200,
+                textOverflowBackground: a.a.color.baseColor.magenta200,
                 gray700: a.a.color.baseColor.gray700,
                 gray300: a.a.color.baseColor.gray300,
                 gray200: a.a.color.baseColor.gray200,
@@ -81733,7 +81775,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 experimentalButtonWhite: f,
                 experimentalButtonGray: a.a.color.baseColor.gray200,
                 experimentalButtonOutlinedBorder: a.a.color.baseColor.gray200,
-                experimentalDestructionButtonOutlinedBorder: a.a.color.baseColor.red50,
+                experimentalDestructionButtonOutlinedBorder: a.a.color.baseColor.magenta50,
                 experimentalBlue200: a.a.color.baseColor.blue200,
                 experimentalBlue100: a.a.color.baseColor.blue100,
                 experimentalBlue50: a.a.color.baseColor.blue50,
@@ -81742,11 +81784,11 @@ window.__SCRIPTS_LOADED__.i18n &&
                 experimentalOrange100: a.a.color.baseColor.orange100,
                 experimentalOrange50: a.a.color.baseColor.orange50,
                 experimentalOrange0: a.a.color.baseColor.orange0,
-                experimentalRed500: a.a.color.baseColor.red500,
-                experimentalRed200: a.a.color.baseColor.red200,
-                experimentalRed100: a.a.color.baseColor.red100,
-                experimentalRed50: a.a.color.baseColor.red50,
-                experimentalRed0: a.a.color.baseColor.red0,
+                experimentalRed500: a.a.color.baseColor.magenta500,
+                experimentalRed200: a.a.color.baseColor.magenta200,
+                experimentalRed100: a.a.color.baseColor.magenta100,
+                experimentalRed50: a.a.color.baseColor.magenta50,
+                experimentalRed0: a.a.color.baseColor.magenta0,
               },
             ),
           ),
@@ -81778,7 +81820,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               {},
               {
                 text: f,
-                textOverflowBackground: a.a.color.baseColor.red500,
+                textOverflowBackground: a.a.color.baseColor.magenta500,
                 gray700: '#8899A6',
                 gray300: '#6B7D8C',
                 gray200: '#3D5466',
@@ -81847,7 +81889,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               {},
               {
                 text: '#D9D9D9',
-                textOverflowBackground: a.a.color.baseColor.red500,
+                textOverflowBackground: a.a.color.baseColor.magenta500,
                 gray700: '#6E767D',
                 gray300: '#3D4145',
                 gray200: '#2F3336',
@@ -81920,7 +81962,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             blue500: a.a.color.baseColor.blue300,
             green500: a.a.color.baseColor.green300,
             orange500: a.a.color.baseColor.orange300,
-            red500: a.a.color.baseColor.red300,
+            magenta500: a.a.color.baseColor.magenta300,
             plum500: a.a.color.baseColor.plum300,
             purple500: a.a.color.baseColor.purple300,
             yellow500: a.a.color.baseColor.yellow300,
@@ -81930,7 +81972,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               blue500: '#70C8FF',
               green500: '#66D397',
               orange500: '#F89A75',
-              red500: '#F098B3',
+              magenta500: '#F098B3',
               plum500: a.a.color.baseColor.plum300,
               purple500: '#BEA8E2',
               yellow500: '#FFCB70',
@@ -81939,7 +81981,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               blue500: a.a.color.baseColor.blue200,
               green500: a.a.color.baseColor.green200,
               orange500: a.a.color.baseColor.orange200,
-              red500: a.a.color.baseColor.red200,
+              magenta500: a.a.color.baseColor.magenta200,
               plum500: a.a.color.baseColor.plum200,
               purple500: a.a.color.baseColor.purple200,
               yellow500: a.a.color.baseColor.yellow200,
@@ -83947,10 +83989,11 @@ window.__SCRIPTS_LOADED__.i18n &&
           F = Object.freeze({
             black: 'black',
             blue500: 'blue500',
-            gray700: 'gray700',
             gray1100: 'gray1100',
+            gray700: 'gray700',
             green500: 'green500',
             link: 'link',
+            magenta500: 'magenta500',
             normal: 'normal',
             plum500: 'plum500',
             primary: 'primary',
@@ -84236,6 +84279,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               plum500: { color: e.colors.plum500 },
               primary: { color: e.colors.primary },
               primaryOnWhite: { color: e.colors.primaryOnWhite },
+              magenta500: { color: e.colors.magenta500 },
               red500: { color: e.colors.red500 },
               white: { color: e.colors.white },
               whiteOnColor: { color: e.colors.whiteOnColor },
