@@ -877,6 +877,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('b141cbff', 'You have been blocked from liking this user’s Tweets at their request.'),
           n('e902fd9d', 'Something went wrong. Try liking your Tweet again in a minute.'),
           n('bbbfc827', 'Can’t like Tweets of protected users you aren’t following.'),
+          n('ja03b44d', 'Something went wrong. Try reacting to the Tweet again in a minute.'),
+          n('da5c438f', 'Can’t react to Tweets of protected users you aren’t following.'),
+          n('f03dab29', 'You have been blocked from reacting to this user’s Tweets at their request.'),
           n('c730cd08', 'You have been blocked from Retweeting this user’s Tweets at their request.'),
           n('f1d600ab', 'Something went wrong. Try Retweet again in a minute.'),
           n('d80d33c5', 'Retweet is not permissible for this Tweet.'),
@@ -965,9 +968,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('b657101c', 'Something went wrong. Try bookmarking that Tweet again in a minute.'),
           n('e86cb37f', 'We put a warning on this Tweet because it might have sensitive content.'),
           n('f1824804', 'Appeal this warning'),
-          n('ja03b44d', 'Something went wrong. Try reacting to the Tweet again in a minute.'),
-          n('da5c438f', 'Can’t react to Tweets of protected users you aren’t following.'),
-          n('f03dab29', 'You have been blocked from reacting to this user’s Tweets at their request.'),
           n('fda78a70', 'Something went wrong. Try removing that Tweet from your bookmarks again in a minute.'),
           n('j10ec2a0', 'Try unliking your Tweet again in a minute.'),
           n('ccdeb32e', 'Try unreacting to your Tweet again in a minute.'),
@@ -1390,11 +1390,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('ia596d40', 'See anything you’d like to improve?'),
           n('deff0bdd', 'Write a note'),
           n('e272836c', 'Delete note?'),
-          n('fa0d3ee3', 'Once you delete this note, it will be permanently removed from Birdwatch.'),
           n('e4579709', 'Note Details'),
-          n('df587b98', 'Note ID'),
-          n('h201bdc8', 'Note Author'),
-          n('fe1f6043', 'Timestamp'),
+          n('fa0d3ee3', 'Once you delete this note, it will be permanently removed from Birdwatch.'),
           n('df321fc3', 'See all notes on this Tweet'),
           n('b9f18eec', 'Currently rated helpful'),
           n('d6db34cb', 'Needs more ratings'),
@@ -1450,6 +1447,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('d60c0063', 'Typos or unclear language'),
           n('d24b99ed', 'Inflammatory language'),
           n('ib117531', 'Harassment or abuse'),
+          n('df587b98', 'Note ID'),
+          n('ac08a218', 'Awards'),
+          n('h201bdc8', 'Note Author'),
+          n('fe1f6043', 'Timestamp'),
+          n('c57760e9', 'Helpful authors'),
+          n('c45ef9c1', 'Helpful raters'),
+          n('g29805f5', 'Top 10%'),
+          n('b1056323', 'Top 25%'),
           n('de962615', 'Want to join Birdwatch?'),
           n('cbfa448b', 'Help people stay better informed on Twitter.'),
           n('b171d7c4', 'Join'),
@@ -1818,6 +1823,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'b9d0ad9f',
             'At least three links from reputable news organizations that have covered or referenced you within the last six months.',
           ),
+          n('ge137dce', 'At least three articles about you from qualifying news publications in the last six months.'),
           n(
             'h2b9a5fd',
             'At least three articles about your company from qualifying news publications in the last six months.',
@@ -1865,17 +1871,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Leaders and other prominent executives of notable companies, brands, and non-profit organizations.',
           ),
           n('j0bc23f3', 'I have confirmed that my organization’s account is already verified.'),
-          n('ecb8b9da', 'Entertainment account type'),
           n('aa6228de', 'Entertainment company'),
           n(
             'd3adfe8e',
             'Major entertainment companies, such as film studios, TV networks, and music studios and labels.',
           ),
           n('b27325f6', 'Content creator'),
-          n(
-            'ff60d6c2',
-            'Influential digital content creators that consistently publish engaging, original content (regardless of platform).',
-          ),
+          n('a5a6affb', 'Influential digital content creators that consistently publish engaging, original content.'),
           n('b5a3e590', 'Individual in entertainment'),
           n(
             'e484f794',
@@ -1887,6 +1889,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Official accounts of productions associated with entertainment entities, like films, events/festivals, TV shows and more.',
           ),
           n('c680b5b7', 'Company website'),
+          n('c0e57cb2', 'Add your creator profile'),
           n('f3c605b6', 'Creator profile'),
           n('ed1144f6', 'Individual website'),
           n('bfbdcb0c', 'IMDB'),
@@ -1953,10 +1956,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('eb8eeaf0', 'Learn more'),
           n('h486f753', 'Learn more'),
           n('a77ed149', 'Learn more'),
-          n('b3de162c', 'Learn more'),
           n('j4d2c2fd', 'Learn more'),
-          n('iee38816', 'Learn more'),
+          n('bd70d5d0', 'Learn more'),
+          n('h9ec0778', 'Learn more'),
           n('eadd29ff', 'Learn more'),
+          n('f7998564', 'Learn more'),
           n('f925ebda', 'Learn more'),
           n('h0212626', 'Learn more'),
           n('h8e242fe', 'Learn more'),
@@ -2008,6 +2012,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'f848a69d',
             'We need to confirm that your account is authentic to verify you. If your handle isn’t referenced in the official website provided we cannot confirm account authenticity.',
           ),
+          n(
+            'd59b5365',
+            'We need to confirm that your account is authentic to verify you. If your handle isn’t referenced on the page you linked, we cannot reliably link your account to a notable content creator.',
+          ),
           n('bfb01c62', 'No, go back'),
           n(
             'ibd16281',
@@ -2024,10 +2032,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n(
             'b78565a9',
             'The official website of a qualifying entertainment company that references your Twitter account.',
-          ),
-          n(
-            'h769feff',
-            'Select a method to show that your account is authentic and managed by the content creator related to this request.',
           ),
           n(
             'bd9d7f96',
@@ -2318,20 +2322,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'h4787492',
             'Use a mobile authentication app to get a verification code to enter every time you log in to Twitter.',
           ),
-          n('h6d0d89c', 'Security key'),
-          n(
-            'f57be1cc',
-            'Use a physical security key that inserts into your computer or syncs to your mobile device when you log in to twitter.com using a supported web browser. Currently, you can’t use a security key to log in to the Twitter app.',
-          ),
-          n(
-            'e2b81a1f',
-            'Use a security key that inserts into your computer or syncs to your mobile device when you log in to Twitter. You’ll need to use a supported mobile device or web browser.',
-          ),
-          n('cd195528', 'Add new security key'),
-          n('b1686800', 'Manage security keys'),
-          n('a1860ee7', 'Temporary password'),
-          n('j45a2856', 'Create a one-time temporary password to use with third-party services.'),
-          n('d8612d9c', 'Turn on Text message or Authentication app first')
+          n('h6d0d89c', 'Security key')
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var n = t[o]
@@ -2349,9 +2340,22 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             })(e, t)
         }
         n(
-          'e13d4467',
-          'Before you can set up a security key, you need to first turn on either Text message or Authentication app as one of your two-factor authentication methods.',
+          'f57be1cc',
+          'Use a physical security key that inserts into your computer or syncs to your mobile device when you log in to twitter.com using a supported web browser. Currently, you can’t use a security key to log in to the Twitter app.',
         ),
+          n(
+            'e2b81a1f',
+            'Use a security key that inserts into your computer or syncs to your mobile device when you log in to Twitter. You’ll need to use a supported mobile device or web browser.',
+          ),
+          n('cd195528', 'Add new security key'),
+          n('b1686800', 'Manage security keys'),
+          n('a1860ee7', 'Temporary password'),
+          n('j45a2856', 'Create a one-time temporary password to use with third-party services.'),
+          n('d8612d9c', 'Turn on Text message or Authentication app first'),
+          n(
+            'e13d4467',
+            'Before you can set up a security key, you need to first turn on either Text message or Authentication app as one of your two-factor authentication methods.',
+          ),
           n('c1d96d6a', 'You’ve added the maximum number of keys'),
           n('gf91694d', 'You’ll need to delete a key before adding another.'),
           n('j265ddb6', 'Confirm your email'),
@@ -3191,6 +3195,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('e5fff0c7', 'Your subscription is active.'),
           n('b6ab9962', 'Original Tweets'),
           n('jdceda6f', 'Replies'),
+          n('j905e6fe', 'Tweet Undo period'),
           n('e7172d70', 'Additional messages'),
           n('bef0039f', 'You don’t have any message requests'),
           n('eb7de4a9', 'Show additional messages, including those that may contain offensive content.'),
@@ -3520,8 +3525,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('c371fb99', 'End'),
           n('b5210d57', 'Enter Collection ID'),
           n('a536fff6', 'Invalid Collection ID'),
-          n('c63d84a3', 'Search for Twitter account'),
-          n('b367953c', 'Tweets by'),
+          n('c63d84a3', 'Search for Twitter account')
+        n('b367953c', 'Tweets by'),
           n('f12858d3', 'Liked by'),
           n('e2a098dc', 'Sort by'),
           n('d497b854', 'Retweets'),
@@ -3530,8 +3535,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('ae7600c8', 'Moment is up to date'),
           n('fea74b66', function (e) {
             return '@' + e.screenName + '’s Moments'
-          })
-        n('e14206c3', 'You haven’t created any Moments'),
+          }),
+          n('e14206c3', 'You haven’t created any Moments'),
           n('d1e5e327', 'When you do, it’ll show up here.'),
           n('ee75768c', function (e) {
             return '@' + e.screenName + ' hasn’t created any Moments'
@@ -3576,28 +3581,22 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('dcbba9e7', 'Analyze engagement'),
           n('bf916530', 'Earn money from paid subscribers'),
           n('h8041a49', '@Revue'),
-          n('a98d8361', 'Add email to Twitter'),
-          n('a4800ded', function (e) {
-            return (
-              'To subscribe to this newsletter, ' +
-              e.newsletterTitle +
-              ' needs your email. You can add it to your Twitter account or subscribe through Revue.'
-            )
-          }),
           n('jdfb861a', 'Confirm your subscription'),
           n(
             'b6e3edd8',
             'An email was sent to you with a link to confirm your subscription. Click the link to finish subscribing to this newsletter.',
           ),
-          n('j9681f2d', 'Email needed to subscribe'),
-          n('c6e88e82', 'Go to Revue'),
+          n('cd9a90aa', 'Let’s get you set up'),
+          n(
+            'g30241f5',
+            'Twitter couldn’t find an email address linked to your profile. Subscribe through Revue, Twitter’s newsletter service.',
+          ),
           n('fcd1fdda', 'Read a sample issue'),
-          n('ib1e0888', 'See Privacy Policy'),
           n('a976a91d', 'Start reading on Revue'),
           n('ab0deccf', 'Subscribe'),
           n('h3281ce9', 'You’re in the loop!'),
           n('f05df263', 'Check your inbox for the latest issues or read on Revue'),
-          n('c45ea908', 'Or, subscribe through Revue'),
+          n('d1bc4330', 'Subscribe through Revue'),
           n('b6f9f574', 'Subscribe to newsletter'),
           n('d1c4aeaf', 'Terms of Service'),
           n('a5d264ec', 'Privacy Policy'),
@@ -3811,12 +3810,20 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('ce309bed', 'Metro'),
           n('c6c16a51', 'City'),
           n('cc49d03f', 'Postcode'),
+          n('dbe9353d', 'Engagements'),
+          n('c64974fb', 'Followers'),
+          n('i638f89c', 'Website visits'),
           n('e1bca506', 'Your promoted Tweet is under review'),
           n('e4a4c608', 'Check back soon.'),
           n('db841200', 'Boost engagement, reach more people, and spread the word about your page.'),
           n('hc67be9d', 'Get Started'),
+          n('fcc839b5', 'What’s your goal?'),
+          n('c3fca124', 'Boost engagement'),
+          n('eaf67a47', 'Gain more followers'),
+          n('i96f1aa4', 'Increase website visits'),
           n('c3c57e3e', 'Review promotion'),
           n('h06724b4', 'Once started, you can pause spending on this Tweet at any time.'),
+          n('f668d4f3', 'Promotion objective'),
           n('b069d89c', 'Audience'),
           n('e36bce63', 'Payment method'),
           n('i41612d9', 'Create promotion'),
@@ -4152,7 +4159,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           n('aa4209e8', 'Super Followers'),
           n('i099d32d', 'Followers you know'),
-          n('c64974fb', 'Followers'),
           n('ed51baba', 'You don’t have any Super Followers yet'),
           n('g65f4bab', 'You don’t have any followers yet'),
           n('f9b11c03', 'You aren’t following anyone yet'),
@@ -4643,9 +4649,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('e089b42d', function (e) {
             return e.likeCount + ' like' + a(e.likeCount, '', 's')
           }),
+          n('d8320937', function (e) {
+            return e.reactionCount + ' reaction' + a(e.reactionCount, '', 's')
+          }),
           n('a0af935b', 'Liked'),
+          n('fbaa28ef', 'Reacted'),
           n('g23ce6f0', 'Retweeted'),
-          n('h55c15c3', 'Slide finger across to choose a reaction'),
+          n('b75196a4', 'Slide finger to pick a reaction'),
           n('f2849136', 'Analytics'),
           n('dedf22f3', 'View Tweet activity'),
           n('eb3a8b0b', 'Unlike'),
@@ -4657,12 +4667,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return e.count + ' Like' + a(e.count, '', 's') + '. Liked'
           }),
           n('e3469988', 'React'),
-          n('fbaa28ef', 'Reacted'),
-          n('cd5b3676', function (e) {
-            return e.count + ' Reaction' + a(e.count, '', 's') + '. React'
+          n('c46f0fce', 'Unreact'),
+          n('ga9c2b52', 'Select more reactions'),
+          n('hb755a53', function (e) {
+            return e.count + ' Reaction' + a(e.count, '', 's') + '. Like'
           }),
-          n('j43c3ef6', function (e) {
-            return e.count + ' Reaction' + a(e.count, '', 's') + '. Reacted'
+          n('cff26b89', function (e) {
+            return e.count + ' Reaction' + a(e.count, '', 's') + '. Unreact'
           }),
           n('hdf72269', 'Reply'),
           n('c9940954', function (e) {
@@ -5783,22 +5794,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'h230794f',
-                get: function () {
-                  return ['Pick one category which best describes your entertainment account. ']
-                },
-              },
-              {
                 key: 'ifa23d48',
                 get: function () {
                   return ['Provide a link to your entertainment company’s website. ']
                 },
               },
               {
-                key: 'j9e6227d',
+                key: 'c2b8fb3c',
                 get: function () {
                   return [
-                    'You’ll need to provide a link to your content creator profile, which can be on any digital platform (YouTube, TikTok, Twitter, etc.). ',
+                    'Pick a method to show that your account qualifies for verification as an influential digital content creator. ',
+                  ]
+                },
+              },
+              {
+                key: 'da6e5b18',
+                get: function () {
+                  return [
+                    'Provide a link to your content creator profile. Your creator profile can be on any digital platform but it must reference your Twitter handle. ',
                   ]
                 },
               },
@@ -5807,6 +5820,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 get: function () {
                   return [
                     'You have not met the minimum follower or mention threshold for your region that is required to be verified as a content creator. ',
+                  ]
+                },
+              },
+              {
+                key: 'bb47d2b9',
+                get: function () {
+                  return [
+                    'Provide a link to a Wikipedia page about you that contains at least three external references. ',
                   ]
                 },
               },

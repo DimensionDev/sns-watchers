@@ -629,7 +629,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '+xaK': function (e, t) {
         e.exports = {
-          queryId: '3DUNKburyxjoZmXixXjzOA',
+          queryId: 'TTNVPzXzsayOjUTWF7Pe8Q',
           operationName: 'UsersByRestIdsWithoutResults',
           operationType: 'query',
         }
@@ -1663,9 +1663,9 @@ window.__SCRIPTS_LOADED__.i18n &&
             invertedSecondary: { backgroundColor: 'transparent', borderColor: 'white', color: 'white' },
             text: { backgroundColor: 'transparent', borderColor: 'transparent', color: 'primary' },
             invertedText: { backgroundColor: 'transparent', borderColor: 'transparent', color: 'white' },
-            destructive: { backgroundColor: 'magenta500', borderColor: 'transparent', color: 'whiteOnColor' },
-            destructiveSecondary: { backgroundColor: 'transparent', borderColor: 'magenta500', color: 'magenta500' },
-            destructiveText: { backgroundColor: 'transparent', borderColor: 'transparent', color: 'magenta500' },
+            destructive: { backgroundColor: 'red500', borderColor: 'transparent', color: 'whiteOnColor' },
+            destructiveSecondary: { backgroundColor: 'transparent', borderColor: 'red500', color: 'red500' },
+            destructiveText: { backgroundColor: 'transparent', borderColor: 'transparent', color: 'red500' },
             invertedOnMedia: { backgroundColor: 'white', borderColor: 'transparent', color: 'gray1100' },
             onMedia: {
               backgroundColor: 'translucentBlack77',
@@ -1716,19 +1716,19 @@ window.__SCRIPTS_LOADED__.i18n &&
               color: 'experimentalButtonBlack',
             },
             experimentalDestructiveFilled: {
-              backgroundColor: 'experimentalRed500',
+              backgroundColor: 'red500',
               borderColor: 'transparent',
               color: 'experimentalLightButtonText',
             },
             experimentalDestructiveOutlined: {
               backgroundColor: 'transparent',
               borderColor: 'experimentalDestructionButtonOutlinedBorder',
-              color: 'experimentalRed500',
+              color: 'red500',
             },
             experimentalDestructiveText: {
               backgroundColor: 'transparent',
               borderColor: 'transparent',
-              color: 'experimentalRed500',
+              color: 'red500',
             },
             experimentalOnMediaDominantColorFilled: {
               backgroundColor: 'gray1100',
@@ -1941,7 +1941,8 @@ window.__SCRIPTS_LOADED__.i18n &&
               gray200: { borderColor: e.colors.gray200 },
               gray700: { borderColor: e.colors.gray700 },
               gray1100: { borderColor: e.colors.gray1100 },
-              magenta100: { borderColor: e.colors.experimentalRed100 },
+              red100: { borderColor: e.colors.red100 },
+              red500: { borderColor: e.colors.red500 },
               magenta500: { borderColor: e.colors.magenta500 },
               plum500: { borderColor: e.colors.plum500 },
               primary: { borderColor: e.colors.primary },
@@ -1952,8 +1953,6 @@ window.__SCRIPTS_LOADED__.i18n &&
               experimentalButtonGray: { borderColor: e.colors.experimentalButtonGray },
               experimentalButtonWhite: { borderColor: e.colors.experimentalButtonWhite },
               experimentalButtonBlack: { borderColor: e.colors.experimentalButtonBlack },
-              experimentalRed100: { borderColor: e.colors.experimentalRed100 },
-              experimentalRed500: { borderColor: e.colors.experimentalRed500 },
               experimentalAlphaWhite35: { borderColor: Object(O.a)(e.colors.white, 0.35) },
               experimentalButtonOutlinedBorder: { borderColor: e.colors.experimentalButtonOutlinedBorder },
               experimentalDestructionButtonOutlinedBorder: {
@@ -1971,13 +1970,13 @@ window.__SCRIPTS_LOADED__.i18n &&
               primary: { color: e.colors.primary },
               primaryOnWhite: { color: e.colors.primaryOnWhite },
               magenta500: { color: e.colors.magenta500 },
+              red500: { color: e.colors.red500 },
               plum500: { color: e.colors.plum500 },
               whiteOnColor: { color: e.colors.whiteOnColor },
               text: { color: e.colors.text },
               white: { color: e.colors.white },
               experimentalButtonBlack: { color: e.colors.experimentalButtonBlack },
               experimentalButtonWhite: { color: e.colors.experimentalButtonWhite },
-              experimentalRed500: { color: e.colors.experimentalRed500 },
               experimentalButtonAlwaysBlack: { color: e.colors.experimentalButtonAlwaysBlack },
               experimentalLightButtonText: { color: e.colors.experimentalLightButtonText },
             }
@@ -2812,11 +2811,11 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
       },
       '0L0B': function (e, t) {
-        e.exports = { queryId: 'w15E5GSQhXsOTPZ7tZdbQg', operationName: 'ListSubscriptions', operationType: 'query' }
+        e.exports = { queryId: 'I4OiVuhgbJBzm7wkiqtI-g', operationName: 'ListSubscriptions', operationType: 'query' }
       },
       '0Mjh': function (e, t) {
         e.exports = {
-          queryId: 'RneetG8b925gUJaYQnTwYA',
+          queryId: 'TnHDSbBNs8ke2IVQiZqleA',
           operationName: 'CommunityModeratorsTimeline',
           operationType: 'query',
         }
@@ -6266,6 +6265,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             responsive_web_birdwatch_ratings_v2_enabled: !0,
             responsive_web_birdwatch_site_enabled: !0,
             responsive_web_birdwatch_traffic_lights_enabled: !0,
+            responsive_web_birdwatch_note_awards_enabled: !0,
             responsive_web_branch_cpid_enabled: !0,
             responsive_web_branch_sdk_enabled: !0,
             responsive_web_captions_upload_enabled: !0,
@@ -6361,7 +6361,6 @@ window.__SCRIPTS_LOADED__.i18n &&
             responsive_web_moment_maker_enabled: !0,
             responsive_web_moment_maker_promoted_tweets_enabled: !0,
             responsive_web_multiple_account_limit: !0,
-            responsive_web_nav_visual_refresh_enabled: !0,
             responsive_web_new_client_events_enabled: !0,
             responsive_web_new_client_events_communities_enabled: !0,
             responsive_web_new_copy_security_key_2fa_enabled: !0,
@@ -6389,7 +6388,6 @@ window.__SCRIPTS_LOADED__.i18n &&
             responsive_web_recent_searches_users_enabled: !0,
             responsive_web_recent_searches_topics_enabled: !0,
             responsive_web_recent_searches_events_enabled: !0,
-            responsive_web_remove_withhighlightedlabel: !0,
             responsive_web_report_page_not_found: !0,
             responsive_web_rich_tweet_landing_enabled: !0,
             responsive_web_scroll_links: !0,
@@ -7450,11 +7448,10 @@ window.__SCRIPTS_LOADED__.i18n &&
           s = n('3XMw'),
           u = n.n(s),
           l = n('ACHU'),
-          d = n('JGUy'),
-          p = n('/yvb'),
-          f = n('rHpw'),
-          h = u.a.h63a5c3b,
-          m = f.a.create(function (e) {
+          d = n('/yvb'),
+          p = n('rHpw'),
+          f = u.a.h63a5c3b,
+          h = p.a.create(function (e) {
             return { button: { marginRight: e.spaces.space4 } }
           })
         t.a = function (e) {
@@ -7463,16 +7460,15 @@ window.__SCRIPTS_LOADED__.i18n &&
             r = e.type,
             i = e.testID,
             s = a()(e, ['style', 'iconStyle', 'type', 'testID']),
-            u = c.createElement(l.a, { style: n }),
-            f = Object(d.a)()
+            u = c.createElement(l.a, { style: n })
           return c.createElement(
-            p.a,
-            o()({ hoverLabel: { label: h } }, s, {
+            d.a,
+            o()({ hoverLabel: { label: f } }, s, {
               icon: u,
               pullRight: !0,
-              style: [t, m.button],
+              style: [t, h.button],
               testID: i,
-              type: r || f,
+              type: r || 'experimentalText',
             }),
           )
         }
@@ -7916,7 +7912,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
       },
       '3WSQ': function (e, t) {
-        e.exports = { queryId: 'MizyTtWoz4_nbd48I7SV-g', operationName: 'ListsDiscovery', operationType: 'query' }
+        e.exports = { queryId: 'rZAW3CO1RpsKDaOgHGGzIQ', operationName: 'ListsDiscovery', operationType: 'query' }
       },
       '3Wr5': function (e, t, n) {
         'use strict'
@@ -7992,10 +7988,16 @@ window.__SCRIPTS_LOADED__.i18n &&
           })
         n('yH/f')
         var r = Object.freeze({ interactive: 'interactive', forceVisible: 'forceVisible', forceHidden: 'forceHidden' }),
-          o = Object.freeze({ longPress: 'long press', keyboard: 'keyboard', hover: 'hover', click: 'click' })
+          o = Object.freeze({
+            longPress: 'long press',
+            keyboard: 'keyboard',
+            hover: 'hover',
+            click: 'click',
+            force: 'force',
+          })
       },
       '3hxR': function (e, t) {
-        e.exports = { queryId: 'pHVnZ-6F7LcXJZ2Y_CS-Hg', operationName: 'HomeTimeline', operationType: 'query' }
+        e.exports = { queryId: 'Wn5voW9NbXLSxZjxnETdFw', operationName: 'HomeTimeline', operationType: 'query' }
       },
       '3xLC': function (e, t, n) {
         'use strict'
@@ -8602,7 +8604,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '45/a': function (e, t) {
         e.exports = {
-          queryId: 'CWu81NovJuTgU0Fmaub9sw',
+          queryId: 'TbIauZQjN2boXdv71lyoEg',
           operationName: 'CommunityModerationTweetCasesSlice',
           operationType: 'query',
         }
@@ -10467,7 +10469,8 @@ window.__SCRIPTS_LOADED__.i18n &&
             l = e.style,
             d = e.updateObserverWithChildren,
             p = e.visibleItemIndex,
-            f = e.withOffscreenItems
+            f = e.withOffscreenItems,
+            h = e.withWraparound
           return r.createElement(
             o.a,
             {
@@ -10482,6 +10485,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               viewType: 'carousel',
               visibleItemIndex: p,
               withOffscreenItems: f,
+              withWraparound: h,
             },
             t,
           )
@@ -10631,7 +10635,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '711x': function (e, t) {
         e.exports = {
-          queryId: 'Z6rXVbYUX-x07kdjPejlPA',
+          queryId: 'iQWDGcs_QAWyyStiB9tTuQ',
           operationName: 'CommunityTweetsTimeline',
           operationType: 'query',
         }
@@ -10940,13 +10944,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '7qmc': function (e, t) {
         e.exports = {
-          queryId: 'JEha0C-sLAQsBDyaudktBQ',
+          queryId: 'WmlUPQy-GBhLjTV7WSwzQw',
           operationName: 'CommunitiesMembershipsRecent',
           operationType: 'query',
         }
       },
       '7sDX': function (e, t) {
-        e.exports = { queryId: '4P8_bf1EbPrV-yuZJGmO7A', operationName: 'GenericTimelineById', operationType: 'query' }
+        e.exports = { queryId: 'l5Qbiz249zsZQpvZKHYZog', operationName: 'GenericTimelineById', operationType: 'query' }
       },
       '7st9': function (e, t, n) {
         'use strict'
@@ -11428,13 +11432,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '8T6S': function (e, t) {
         e.exports = {
-          queryId: 'FDowR5AnCkEp575gk_fbYg',
+          queryId: 'oCSlEhrDPABoZbS-ChiL2Q',
           operationName: 'CommunityMembersTimeline',
           operationType: 'query',
         }
       },
       '8Tvx': function (e, t) {
-        e.exports = { queryId: 'CwN-K12_IuGz67RwobetpA', operationName: 'ListByRestId', operationType: 'query' }
+        e.exports = { queryId: 'nFEax_gskEkzQd29fOLH2A', operationName: 'ListByRestId', operationType: 'query' }
       },
       '8UdT': function (e, t, n) {
         'use strict'
@@ -11948,7 +11952,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         t.b = v
       },
       '8igc': function (e, t) {
-        e.exports = { queryId: 'PJY6hABxpERBktQpASLGNw', operationName: 'ListOwnerships', operationType: 'query' }
+        e.exports = { queryId: 'UMAqz3V11K0Li9xrXYe7WA', operationName: 'ListOwnerships', operationType: 'query' }
       },
       '8jkQ': function (e, t, n) {
         'use strict'
@@ -21389,7 +21393,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '9jzZ': function (e, t) {
         e.exports = {
-          queryId: '4IK3b5eMx8kcw4NTg41EMQ',
+          queryId: 'GYsL4_Ope5-Rrypc1N-fFg',
           operationName: 'BirdwatchCreateNote',
           operationType: 'mutation',
         }
@@ -22027,7 +22031,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       AFas: function (e, t) {
         e.exports = {
-          queryId: 'RyEHbNh8CPRrIpOb3U76LQ',
+          queryId: 'TMOps5YlBciBF3JmarVz-g',
           operationName: 'BlockedAccountsImported',
           operationType: 'query',
         }
@@ -22041,7 +22045,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
       },
       AMCR: function (e, t) {
-        e.exports = { queryId: 'tZ0afm_11j0RUXdldBXlVQ', operationName: 'ListMembers', operationType: 'query' }
+        e.exports = { queryId: 'zGHlPuFg3ToTtBKv5GpTIw', operationName: 'ListMembers', operationType: 'query' }
       },
       AooF: function (e, t, n) {
         'use strict'
@@ -22774,7 +22778,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           he = (de - le) / (pe - fe)
       },
       AseN: function (e, t) {
-        e.exports = { queryId: 'gNKIQ50A64-D4wf_-mlBaQ', operationName: 'TopicsPickerPageById', operationType: 'query' }
+        e.exports = { queryId: 'C7dKbHj_WcS-MSsohI7r6g', operationName: 'TopicsPickerPageById', operationType: 'query' }
       },
       AtEG: function (e, t, n) {
         'use strict'
@@ -23014,45 +23018,43 @@ window.__SCRIPTS_LOADED__.i18n &&
           o = n('3XMw'),
           i = n.n(o),
           a = n('xIW0'),
-          c = n('JGUy'),
-          s = n('/yvb'),
-          u = n('rHpw'),
-          l = n('95Se'),
-          d = n('hOZg'),
-          p = 'back',
-          f = i.a.b08821f3,
-          h = i.a.ia5e7487,
-          m = { back: { Icon: l.a, label: f }, close: { Icon: d.a, label: h } },
-          b = u.a.create(function (e) {
+          c = n('/yvb'),
+          s = n('rHpw'),
+          u = n('95Se'),
+          l = n('hOZg'),
+          d = 'back',
+          p = i.a.b08821f3,
+          f = i.a.ia5e7487,
+          h = { back: { Icon: u.a, label: p }, close: { Icon: l.a, label: f } },
+          m = s.a.create(function (e) {
             return { button: { marginLeft: e.spaces.space4 } }
           })
         t.a = function (e) {
           var t = e.backButtonType,
-            n = void 0 === t ? p : t,
+            n = void 0 === t ? d : t,
             o = e.onClick,
             i = (e.testID, e.autofocus),
-            u = m[n],
-            l = u.Icon,
-            d = u.label,
-            f = Object(c.a)(),
-            h = r.useCallback(
+            s = h[n],
+            u = s.Icon,
+            l = s.label,
+            p = r.useCallback(
               function (e) {
                 null !== e && i && e.focus()
               },
               [i],
             ),
-            v = { viewType: n === p ? 'back_button' : 'close_button' }
-          return r.createElement(s.a, {
-            accessibilityLabel: d,
-            clientEventContext: v,
-            hoverLabel: { label: d },
-            icon: r.createElement(l, null),
+            f = { viewType: n === d ? 'back_button' : 'close_button' }
+          return r.createElement(c.a, {
+            accessibilityLabel: l,
+            clientEventContext: f,
+            hoverLabel: { label: l },
+            icon: r.createElement(u, null),
             onPress: o,
             pullLeft: !0,
-            ref: h,
-            style: b.button,
+            ref: p,
+            style: m.button,
             testID: a.a.appBar(n),
-            type: f,
+            type: 'experimentalText',
           })
         }
       },
@@ -23569,7 +23571,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           a = n('Tp1h'),
           c = n('prCu'),
           s = n.n(c),
-          u = Object.freeze({ useAppPrompt: 'USE_APP_PROMPT' }),
+          u = Object.freeze({ useAppPrompt: 'USE_APP_PROMPT', loGating: 'LO_GATING' }),
           l = function (e) {
             var t = e.displayMode,
               n = e.startLocation,
@@ -23613,9 +23615,14 @@ window.__SCRIPTS_LOADED__.i18n &&
               d = 'https://twitter.app.link/banner_switch_to_app'
               var h = c && c.rweb_use_app_prompt_10556
               l.experiments = h ? '10556^'.concat(h.bucket, '^').concat(h.version) : void 0
+            } else if (i === u.loGating) {
+              var m = c && c.rweb_logged_out_segmentation_12611,
+                b = c && c.customer_journey_loggedout_incremental_holdback_2022h1_12422
+              ;(l.experiments = m ? '12611^'.concat(m.bucket, '^').concat(m.version) : void 0),
+                (l.experiments = l.experiments || (b ? '12422^'.concat(b.bucket, '^').concat(b.version) : void 0))
             }
-            var m = s.a.stringify(l, '&', '=', { encodeURIComponent: encodeURI })
-            return ''.concat(d, '?').concat(m)
+            var v = s.a.stringify(l, '&', '=', { encodeURIComponent: encodeURI })
+            return ''.concat(d, '?').concat(v)
           },
           d = function () {
             var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
@@ -23784,7 +23791,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       'C0/a': function (e, t) {
         e.exports = {
-          queryId: 'rZNMHXWefWtdRfo5ZeA0Cw',
+          queryId: '8pk_VNENEc9SPKR5Kw_1Wg',
           operationName: 'ViewingOtherUsersTopicsPage',
           operationType: 'query',
         }
@@ -23809,12 +23816,9 @@ window.__SCRIPTS_LOADED__.i18n &&
               a = o.isPressed,
               c = o.isHovered,
               s = o.isFocused,
-              u = o.visualRefreshEnabled,
-              l = i || c || a || s,
-              d = i && t ? t : e,
-              f = u ? p.activeVisualRefresh : p.active,
-              h = u && 'horizontal' === n ? 'horizontalVisualRefresh' : n
-            return r.createElement(d, { style: [p[h], l && f] })
+              u = i || c || a || s,
+              l = i && t ? t : e
+            return r.createElement(l, { style: [p[n], u && p.active] })
           }
         }
         t.b = function (e) {
@@ -23849,11 +23853,9 @@ window.__SCRIPTS_LOADED__.i18n &&
           d = '3.5rem',
           p = s.a.create(function (e) {
             return {
-              horizontal: { color: e.colors.gray700, height: l },
-              horizontalVisualRefresh: { color: e.colors.text, height: l },
+              horizontal: { color: e.colors.text, height: l },
               vertical: { color: e.colors.text, height: l },
-              active: { color: e.colors.primary },
-              activeVisualRefresh: { color: e.colors.text },
+              active: { color: e.colors.text },
             }
           }),
           f = s.a.create(function (e) {
@@ -23872,7 +23874,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           })
       },
       C8rX: function (e, t) {
-        e.exports = { queryId: 'buMHbtVaaPG9IP_TBvsmnw', operationName: 'NotInterestedTopics', operationType: 'query' }
+        e.exports = { queryId: 'RElT0e-lUak1StbaIJxS6A', operationName: 'NotInterestedTopics', operationType: 'query' }
       },
       CEs6: function (e, t, n) {
         'use strict'
@@ -24786,7 +24788,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
       },
       Ds5I: function (e, t) {
-        e.exports = { queryId: 'tHzC-ixHT1uNR_uaSjL6rg', operationName: 'JoinCommunity', operationType: 'mutation' }
+        e.exports = { queryId: 'UB24c7Tdh6DQx8RCj7_A8Q', operationName: 'JoinCommunity', operationType: 'mutation' }
       },
       Dtul: function (e, t, n) {
         'use strict'
@@ -25286,7 +25288,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       ELjp: function (e, t) {
         e.exports = {
-          queryId: '0BGjRFkOJvVDyxdXWu-9WA',
+          queryId: 'FM0AMKiAwZelW0pGTtoFGQ',
           operationName: 'ListsManagementPageTimeline',
           operationType: 'query',
         }
@@ -25362,7 +25364,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       ETkL: function (e, t) {
         e.exports = {
-          queryId: '57DY_VOy8b2wxjuq9E3Zew',
+          queryId: 'jFF2Q9NMnP4d0JIWd2p2VA',
           operationName: 'CommunitiesMembershipsTimeline',
           operationType: 'query',
         }
@@ -27499,7 +27501,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       FzU8: function (e, t) {
         e.exports = {
-          queryId: 'SQxkaCqk61Ih_XKU6dwNtw',
+          queryId: 'dkbV9INV4VaVRqldJ9FbKw',
           operationName: 'ListRankedTweetsTimeline',
           operationType: 'query',
         }
@@ -27640,17 +27642,26 @@ window.__SCRIPTS_LOADED__.i18n &&
                     r = e._focusedTabIndex,
                     o = e.props,
                     i = o.children,
-                    a = o.isLocked
+                    a = o.isLocked,
+                    c = o.withWraparound
                   if (!((n !== S.a.ArrowLeft && n !== S.a.ArrowRight) || a)) {
                     t.preventDefault()
-                    var c = r
-                    ;((!R.a.getConstants().isRTL && n === S.a.ArrowLeft) ||
-                      (R.a.getConstants().isRTL && n === S.a.ArrowRight)) &&
-                      (c = 0 === r ? i.length - 1 : r - 1),
-                      ((!R.a.getConstants().isRTL && n === S.a.ArrowRight) ||
-                        (R.a.getConstants().isRTL && n === S.a.ArrowLeft)) &&
-                        (c = r === i.length - 1 ? 0 : r + 1),
-                      e._focusItem(c)
+                    var s = r
+                    if (
+                      (!R.a.getConstants().isRTL && n === S.a.ArrowLeft) ||
+                      (R.a.getConstants().isRTL && n === S.a.ArrowRight)
+                    ) {
+                      var u = c ? i.length - 1 : 0
+                      s = 0 === r ? u : r - 1
+                    }
+                    if (
+                      (!R.a.getConstants().isRTL && n === S.a.ArrowRight) ||
+                      (R.a.getConstants().isRTL && n === S.a.ArrowLeft)
+                    ) {
+                      var l = c ? 0 : i.length - 1
+                      s = r === i.length - 1 ? l : r + 1
+                    }
+                    e._focusItem(s)
                   }
                 }),
                 v()(u()(e), '_setupIntersectionObserver', function () {
@@ -27967,6 +27978,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           scrollToCenter: !1,
           showNavButtonsOnHover: !0,
           withOffscreenItems: !1,
+          withWraparound: !0,
         })
         var W = T.a.create(function (e) {
           return {
@@ -28927,10 +28939,10 @@ window.__SCRIPTS_LOADED__.i18n &&
         ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
       },
       GdVu: function (e, t) {
-        e.exports = { queryId: 'YeGVriIJpj4U9XqfTGLeIQ', operationName: 'FollowedTopics', operationType: 'query' }
+        e.exports = { queryId: 'I_2Ov0WQ0_vOHZzhAc_MzQ', operationName: 'FollowedTopics', operationType: 'query' }
       },
       Gg1x: function (e, t) {
-        e.exports = { queryId: 'RZuSevunVOgYYOuTTom33A', operationName: 'ListSubscribe', operationType: 'mutation' }
+        e.exports = { queryId: '0NERgWjrTGFOetPseu86Iw', operationName: 'ListSubscribe', operationType: 'mutation' }
       },
       GjuJ: function (e, t, n) {
         'use strict'
@@ -29295,7 +29307,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       HDd8: function (e, t) {
         e.exports = {
-          queryId: 'CGuW74KrxCqD2pdKpdNY8A',
+          queryId: 'O0JuVWG2Q1mHYr16h3axMA',
           operationName: 'CommunityDiscoveryTimeline',
           operationType: 'query',
         }
@@ -30358,24 +30370,10 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
       },
       JAMG: function (e, t) {
-        e.exports = { queryId: 'Mb5bAhyWjTrftGeT_HYhkQ', operationName: 'Likes', operationType: 'query' }
-      },
-      JGUy: function (e, t, n) {
-        'use strict'
-        n.d(t, 'b', function () {
-          return i
-        })
-        var r = n('ERkP'),
-          o = n('v6aA')
-        function i(e) {
-          return e.isTrue('responsive_web_nav_visual_refresh_enabled') ? 'experimentalText' : 'text'
-        }
-        t.a = function () {
-          return i(r.useContext(o.a).featureSwitches)
-        }
+        e.exports = { queryId: 'S1QwPUz17wsWpsyjyL-DkQ', operationName: 'Likes', operationType: 'query' }
       },
       JMnv: function (e, t) {
-        e.exports = { queryId: 'nKAmDBDWNFIPeEmQ-on0Eg', operationName: 'TopicTimeline', operationType: 'query' }
+        e.exports = { queryId: 'jtAjbgl00HE8R0t_VJ7ufw', operationName: 'TopicTimeline', operationType: 'query' }
       },
       JRfl: function (e, t, n) {
         'use strict'
@@ -31502,7 +31500,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         t.a = r
       },
       KP9X: function (e, t) {
-        e.exports = { queryId: 'jAPOHF7OrQmm-hHrQS6wKQ', operationName: 'ListPinOne', operationType: 'mutation' }
+        e.exports = { queryId: 'rqaIxYVpABmE4x2lN-vF5Q', operationName: 'ListPinOne', operationType: 'mutation' }
       },
       KQfC: function (e, t, n) {
         'use strict'
@@ -31713,7 +31711,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       KlJi: function (e, t) {
         e.exports = {
-          queryId: 'ytdQsigKn4W4Cx9beibaew',
+          queryId: 'vRJuZn10HtLJoCN_27N5og',
           operationName: 'CommunitiesMainPageTimeline',
           operationType: 'query',
         }
@@ -33629,7 +33627,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
       },
       NOIf: function (e, t) {
-        e.exports = { queryId: '6GKQzEPHKx6iK3MxXSp25w', operationName: 'ListSubscribers', operationType: 'query' }
+        e.exports = { queryId: '-Xx1ANRO6QWQqK2ER02I4Q', operationName: 'ListSubscribers', operationType: 'query' }
       },
       NbBL: function (e, t, n) {
         'use strict'
@@ -33940,7 +33938,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
       },
       Nuln: function (e, t) {
-        e.exports = { queryId: 'sk-uxn0nUO5959TMpJqgSw', operationName: 'UsersByRestIds', operationType: 'query' }
+        e.exports = { queryId: 'wQC4NGBrlLNUmbL84LDitQ', operationName: 'UsersByRestIds', operationType: 'query' }
       },
       O0uF: function (e, t, n) {
         'use strict'
@@ -34418,7 +34416,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         t.a = { DuplicateRequest: 1002, GenericRequestFailed: 1003, Offline: 1004 }
       },
       'OY+N': function (e, t) {
-        e.exports = { queryId: '5xKSu8b3qGuq7scVW8YWdw', operationName: 'BirdwatchFetchNotes', operationType: 'query' }
+        e.exports = { queryId: 'EgxWHuCsevGR8U-3CDszyw', operationName: 'BirdwatchFetchNotes', operationType: 'query' }
       },
       Oe3h: function (e, t, n) {
         'use strict'
@@ -34592,7 +34590,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       OiMc: function (e, t, n) {
         'use strict'
         n.d(t, 'a', function () {
-          return T
+          return I
         })
         n('OZaJ')
         var r = n('97Jx'),
@@ -34615,10 +34613,11 @@ window.__SCRIPTS_LOADED__.i18n &&
           _ = n.n(g),
           O = (n('2G9S'), n('ERkP')),
           w = n('oaLm'),
-          E = n('rHpw'),
-          j = n('MWbm'),
-          P = n('3dyc')
-        function S(e) {
+          E = n('fs1G'),
+          j = n('rHpw'),
+          P = n('MWbm'),
+          S = n('3dyc')
+        function T(e) {
           var t = (function () {
             if ('undefined' == typeof Reflect || !Reflect.construct) return !1
             if (Reflect.construct.sham) return !1
@@ -34639,9 +34638,9 @@ window.__SCRIPTS_LOADED__.i18n &&
             return b()(this, n)
           }
         }
-        var T = (function (e) {
+        var I = (function (e) {
           h()(n, e)
-          var t = S(n)
+          var t = T(n)
           function n() {
             var e
             s()(this, n)
@@ -34650,7 +34649,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               (e = t.call.apply(t, [this].concat(o))),
               _()(p()(e), '_renderContent', function (t) {
                 var n = e.props.contentStyle
-                return O.createElement(j.a, { style: [I.contentRoot, n] }, e.props.renderContent(t))
+                return O.createElement(P.a, { style: [C.contentRoot, n] }, e.props.renderContent(t))
               }),
               e
             )
@@ -34666,7 +34665,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     r = a()(e, ['children', 'contentStyle', 'disabled'])
                   return n
                     ? 'function' == typeof t
-                      ? t({ dismissPopover: function () {} })
+                      ? t({ dismissPopover: E.a, forceOpen: E.a })
                       : t
                     : O.createElement(
                         w.a,
@@ -34679,8 +34678,8 @@ window.__SCRIPTS_LOADED__.i18n &&
             n
           )
         })(O.Component)
-        _()(T, 'defaultProps', { enableHover: !1, enableLongPress: !1 }), _()(T, 'VISIBILITY_BEHAVIOR', P.b)
-        var I = E.a.create(function (e) {
+        _()(I, 'defaultProps', { enableHover: !1, enableLongPress: !1 }), _()(I, 'VISIBILITY_BEHAVIOR', S.b)
+        var C = j.a.create(function (e) {
           return { contentRoot: { maxHeight: 480, minHeight: 30, maxWidth: 360, minWidth: 260, overflow: 'auto' } }
         })
       },
@@ -34745,7 +34744,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       Ok6G: function (e, t) {
         e.exports = {
-          queryId: 'mJoB0F2Yy8cJfmU8rGIH9Q',
+          queryId: 'ubj33vBZ6N0OL8yQcp5LMw',
           operationName: 'RitoActionedTweetsTimeline',
           operationType: 'query',
         }
@@ -36773,7 +36772,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
       },
       Q6XB: function (e, t) {
-        e.exports = { queryId: 'gSQc4jwMcy8HtrK7KN9qjA', operationName: 'UserTweetsAndReplies', operationType: 'query' }
+        e.exports = { queryId: 'uptpfFimno82E4zJ3HvBtw', operationName: 'UserTweetsAndReplies', operationType: 'query' }
       },
       Q6z5: function (e, t, n) {
         'use strict'
@@ -37757,7 +37756,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
       },
       QK8Q: function (e, t) {
-        e.exports = { queryId: 'Jwi2bjrPbl0Wi5AlNXSWaQ', operationName: 'Followers', operationType: 'query' }
+        e.exports = { queryId: 'i9zp4xFRL1Srhw3D2IpAZg', operationName: 'Followers', operationType: 'query' }
       },
       QX9J: function (e, t, n) {
         'use strict'
@@ -37828,7 +37827,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
       },
       Qawl: function (e, t) {
-        e.exports = { queryId: '1Ff666pL7WjsaEss9tzSHQ', operationName: 'ListUnsubscribe', operationType: 'mutation' }
+        e.exports = { queryId: 'MVTEE-ikllLKXz-jbvVZ0w', operationName: 'ListUnsubscribe', operationType: 'mutation' }
       },
       Qfne: function (e, t, n) {
         'use strict'
@@ -38838,7 +38837,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
       },
       Qo8z: function (e, t) {
-        e.exports = { queryId: 'bJkcWLtDO0SHV4exXQhQiw', operationName: 'UserByRestId', operationType: 'query' }
+        e.exports = { queryId: 'LZJOyNOVaPuPWpcITgEEKA', operationName: 'UserByRestId', operationType: 'query' }
       },
       QqIv: function (e, t, n) {
         'use strict'
@@ -39517,7 +39516,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
       },
       RgYM: function (e, t) {
-        e.exports = { queryId: 'PKRfQuRQ-8yeffuPgYkO0w', operationName: 'ListMemberships', operationType: 'query' }
+        e.exports = { queryId: 'sLonD7d7-ohmWP7DSqlIqg', operationName: 'ListMemberships', operationType: 'query' }
       },
       Rp9C: function (e, t, n) {
         'use strict'
@@ -40795,14 +40794,15 @@ window.__SCRIPTS_LOADED__.i18n &&
                   var t = i.props,
                     n = t.displayMode,
                     r = t.featureSwitchImpressions,
-                    o = t.startLocation,
-                    a = t.useBottomBanner
+                    o = t.isLoGating,
+                    a = t.startLocation,
+                    c = t.useBottomBanner
                   e.preventDefault(),
                     i._scribeAction('download'),
                     Object(U.b)({
                       displayMode: n,
-                      startLocation: o,
-                      experiment: a ? U.a.useAppPrompt : void 0,
+                      startLocation: a,
+                      experiment: o ? U.a.loGating : c ? U.a.useAppPrompt : void 0,
                       featureSwitchImpressions: r,
                     })
                 }),
@@ -40934,7 +40934,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         t.a = Q
       },
       RzgE: function (e, t) {
-        e.exports = { queryId: '944vQPTPSYiOSmiQcvcChw', operationName: 'AudienceEstimate', operationType: 'query' }
+        e.exports = { queryId: '1LYVUabJBYkPlUAWRabB3g', operationName: 'AudienceEstimate', operationType: 'query' }
       },
       S4UJ: function (e, t, n) {
         'use strict'
@@ -42044,7 +42044,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         t.a = (m || (m = new b()), m)
       },
       SvfM: function (e, t) {
-        e.exports = { queryId: 'UFtu7Bya3LWeWBEI72KVWw', operationName: 'LeaveCommunity', operationType: 'mutation' }
+        e.exports = { queryId: 'xX1I2Pw3cNfbml31_IgFbQ', operationName: 'LeaveCommunity', operationType: 'mutation' }
       },
       SyIi: function (e, t, n) {
         'use strict'
@@ -43874,7 +43874,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
       },
       UuZj: function (e, t) {
-        e.exports = { queryId: '-pSy1e61Qj-dMr5BF_ifhA', operationName: 'Bookmarks', operationType: 'query' }
+        e.exports = { queryId: 'x1HqZI5JmU9uuiUYEJuyqw', operationName: 'Bookmarks', operationType: 'query' }
       },
       UweJ: function (e, t, n) {
         'use strict'
@@ -46380,13 +46380,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       Wz8X: function (e, t) {
         e.exports = {
-          queryId: 'TBFfz33_YYZPh-T8S5NJig',
+          queryId: 'PAdK7SsXZMmOPWPKABNFuQ',
           operationName: 'CreateQuickPromotion',
           operationType: 'mutation',
         }
       },
       'X+Rn': function (e, t) {
-        e.exports = { queryId: '7ayqm9RBIUDhS6Ou-soIuA', operationName: 'ListAddMember', operationType: 'mutation' }
+        e.exports = { queryId: 'K4ylQVedhybC9v4XKJhdNA', operationName: 'ListAddMember', operationType: 'mutation' }
       },
       'X/SR': function (e, t) {
         for (var n = [], r = 0; r < 256; ++r) n[r] = (r + 256).toString(16).substr(1)
@@ -46631,7 +46631,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         b()(R, 'contextType', E.a), b()(R, 'defaultProps', { children: null, modalSize: C.fixed }), (t.b = R)
       },
       XFcC: function (e, t) {
-        e.exports = { queryId: 'E8PhumykxCToNGIFM8QOgw', operationName: 'ListPins', operationType: 'query' }
+        e.exports = { queryId: 'LWioZznYBvKWPBB8GAfeVQ', operationName: 'ListPins', operationType: 'query' }
       },
       XIXT: function (e, t, n) {
         'use strict'
@@ -46916,7 +46916,6 @@ window.__SCRIPTS_LOADED__.i18n &&
                 r.dispatch(Object(m.b)(n, B.e)),
                 (this.liveAdDomainRegex = /t.lv.twimg.com$|ton.twitter.com$/),
                 (this.logger = i),
-                (this.onLoadedMetadata = this.onLoadedMetadata.bind(this)),
                 (this.onTimeUpdate = this.onTimeUpdate.bind(this)),
                 (this.onCanPlay = this.onCanPlay.bind(this)),
                 (this.onPlay = this.onPlay.bind(this)),
@@ -46969,7 +46968,6 @@ window.__SCRIPTS_LOADED__.i18n &&
                     if (this.videoTag) {
                       if (
                         (this.stopListeningForId3Tags(),
-                        this.videoTag.removeEventListener('loadedmetadata', this.onLoadedMetadata),
                         this.videoTag.removeEventListener('timeupdate', this.onTimeUpdate),
                         this.videoTag.removeEventListener('canplay', this.onCanPlay),
                         this.videoTag.removeEventListener('play', this.onPlay),
@@ -47034,7 +47032,6 @@ window.__SCRIPTS_LOADED__.i18n &&
                       (this.videoTag.style.position = 'absolute'),
                       (this.videoTag.style.backgroundColor = 'black'),
                       this.videoTag.addEventListener('loadstart', this.onLoadStart, !1),
-                      this.videoTag.addEventListener('loadedmetadata', this.onLoadedMetadata),
                       this.videoTag.addEventListener('timeupdate', this.onTimeUpdate),
                       this.videoTag.addEventListener('play', this.onPlay),
                       this.videoTag.addEventListener('pause', this.onPause),
@@ -47052,12 +47049,6 @@ window.__SCRIPTS_LOADED__.i18n &&
                       this.videoTag.textTracks &&
                         (this.videoTag.textTracks.onaddtrack = this.handleTrackAdded.bind(this)),
                       (this.hasEndedOnce = !1)
-                  },
-                },
-                {
-                  key: 'onLoadedMetadata',
-                  value: function () {
-                    this.checkInitialSeek()
                   },
                 },
                 {
@@ -48870,7 +48861,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         t.a = o
       },
       XPiK: function (e, t) {
-        e.exports = { queryId: 'g52q955dIRYSbIwGKJ8xqw', operationName: 'EditListBanner', operationType: 'mutation' }
+        e.exports = { queryId: '88WB-MtSpeu2PtpYY7jtTw', operationName: 'EditListBanner', operationType: 'mutation' }
       },
       XS8g: function (e, t, n) {
         'use strict'
@@ -49746,7 +49737,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
       },
       Y9iu: function (e, t) {
-        e.exports = { queryId: '2PJDjrjvYewQuV6pbvJZig', operationName: 'HomeLatestTimeline', operationType: 'query' }
+        e.exports = { queryId: 'jyqTIETYiYOpxJLkx27Nmw', operationName: 'HomeLatestTimeline', operationType: 'query' }
       },
       YKqM: function (e, t, n) {
         'use strict'
@@ -51068,7 +51059,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         t.a = Object(o.a)(r.a)
       },
       'ZOA/': function (e, t) {
-        e.exports = { queryId: 'I7bEQWHCywD8-dj8-aS8rw', operationName: 'Retweeters', operationType: 'query' }
+        e.exports = { queryId: '9ifEHEZUCTv8AlrOU3_n8g', operationName: 'Retweeters', operationType: 'query' }
       },
       ZS3b: function (e, t, n) {
         'use strict'
@@ -52251,10 +52242,10 @@ window.__SCRIPTS_LOADED__.i18n &&
           })
       },
       a4I6: function (e, t) {
-        e.exports = { queryId: 'IXutA6uptIQJ1MHNDYfMiw', operationName: 'Favoriters', operationType: 'query' }
+        e.exports = { queryId: 'frHHcHPe_pHMhRxX8oxDOw', operationName: 'Favoriters', operationType: 'query' }
       },
       'a5E+': function (e, t) {
-        e.exports = { queryId: 'C3hSlinTxB7Ik1sGI-v7tw', operationName: 'TopicsManagementPage', operationType: 'query' }
+        e.exports = { queryId: '9WNiDiYsoVGLGt9TPCZsAg', operationName: 'TopicsManagementPage', operationType: 'query' }
       },
       a5gf: function (e, t, n) {
         'use strict'
@@ -54093,7 +54084,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         p.canUseDOM || (T(), I(), (m = !1), (b = !1))
       },
       'af/2': function (e, t) {
-        e.exports = { queryId: 'PIt4K9PnUM5DP9KW_rAr0Q', operationName: 'UserTweets', operationType: 'query' }
+        e.exports = { queryId: 'w1kgAzd5SRbB1I61tMB1dg', operationName: 'UserTweets', operationType: 'query' }
       },
       aklp: function (e, t, n) {
         'use strict'
@@ -54257,7 +54248,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
       },
       amUk: function (e, t) {
-        e.exports = { queryId: 'qOZ2uW-Bc8d7NC1gA0BFmw', operationName: 'BlockedAccountsAll', operationType: 'query' }
+        e.exports = { queryId: '06nVkvflUw8Xe4gvllD7zg', operationName: 'BlockedAccountsAll', operationType: 'query' }
       },
       amba: function (e, t, n) {
         'use strict'
@@ -56309,6 +56300,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                           scrollToCenter: !0,
                           visibleItemIndex: f,
                           withOffscreenItems: !0,
+                          withWraparound: !1,
                         },
                         b,
                       )
@@ -58877,19 +58869,17 @@ window.__SCRIPTS_LOADED__.i18n &&
           i = n('3XMw'),
           a = n.n(i),
           c = n('cyLo'),
-          s = n('JGUy'),
-          u = a.a.a0cc15fc,
-          l = a.a.ja49bfd6
+          s = a.a.a0cc15fc,
+          u = a.a.ja49bfd6
         t.a = function (e) {
-          var t = e.onPress,
-            n = Object(s.a)()
+          var t = e.onPress
           return r.createElement(o.a, {
-            accessibilityLabel: u,
-            hoverLabel: { label: l },
+            accessibilityLabel: s,
+            hoverLabel: { label: u },
             icon: r.createElement(c.a, null),
             onPress: t,
             pullRight: !0,
-            type: n,
+            type: 'experimentalText',
           })
         }
       },
@@ -58908,14 +58898,14 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       c6or: function (e, t) {
         e.exports = {
-          queryId: 'IGer882XMNcP_XR9QPIq4A',
+          queryId: 'QnjMeLFzZGB30IXNQe-3tA',
           operationName: 'UserByRestIdWithoutResults',
           operationType: 'query',
         }
       },
       cD5x: function (e, t) {
         e.exports = {
-          queryId: 'pon0FsFBq3BIXd_MM_YojA',
+          queryId: '0EoBU2IAbMlrDQGFyRUBSg',
           operationName: 'ListEditRecommendedUsers',
           operationType: 'query',
         }
@@ -59308,7 +59298,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
       },
       cYmA: function (e, t) {
-        e.exports = { queryId: 'lNusqSgXMFwz_Wd3UUCXCw', operationName: 'ListBySlug', operationType: 'query' }
+        e.exports = { queryId: 'UzI4Qimp5izxICANdgMTTg', operationName: 'ListBySlug', operationType: 'query' }
       },
       caTy: function (e, t, n) {
         'use strict'
@@ -59544,7 +59534,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
       },
       ceEH: function (e, t) {
-        e.exports = { queryId: 'kS6_LcCzXkd9rnuKV78pRw', operationName: 'ListsPinMany', operationType: 'mutation' }
+        e.exports = { queryId: '7rz7rV1GqcFbFSt0pIrF7Q', operationName: 'ListsPinMany', operationType: 'mutation' }
       },
       ceqv: function (e, t) {
         e.exports = { queryId: 'sbiA0CxBnxEVukswofbv3A', operationName: 'TopicUnfollow', operationType: 'mutation' }
@@ -60452,7 +60442,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         t.a = o
       },
       dFJg: function (e, t) {
-        e.exports = { queryId: 'D8A6UWyMTD9V6OWuOtNZ4g', operationName: 'TopicLandingPage', operationType: 'query' }
+        e.exports = { queryId: 'YlCLBveC5Aon8nP9ejEGCA', operationName: 'TopicLandingPage', operationType: 'query' }
       },
       dJgD: function (e, t, n) {
         'use strict'
@@ -60665,7 +60655,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         e.exports = { queryId: 'VaenaVgh5q5ih7kvyVjgtg', operationName: 'DeleteTweet', operationType: 'mutation' }
       },
       eM7a: function (e, t) {
-        e.exports = { queryId: 'VBvYhh2qwSXQI7JMK4r7pQ', operationName: 'CreateList', operationType: 'mutation' }
+        e.exports = { queryId: 'pyUpJiUWnKH6bnW7XOcpKg', operationName: 'CreateList', operationType: 'mutation' }
       },
       eR3e: function (e, t, n) {
         'use strict'
@@ -62390,7 +62380,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         t.a = D
       },
       ebf4: function (e, t) {
-        e.exports = { queryId: 'U0iG79iCvCFraHdvuxIqHQ', operationName: 'FollowersYouKnow', operationType: 'query' }
+        e.exports = { queryId: 'dBJMhWtKovhxBPf51RE_fw', operationName: 'FollowersYouKnow', operationType: 'query' }
       },
       edt3: function (e, t, n) {
         'use strict'
@@ -62931,14 +62921,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           }, {}),
           f = function (e, t) {
             var n = d[e],
-              r = Object(s.a)({
-                cookieName: a.o,
-                cookieValue: n,
-                maxAge: 31536e3,
-                path: '/',
-                domain: '.twitter.com',
-                secure: !0,
-              })
+              r = Object(s.a)(a.o, n)
             Object(s.c)({ cookie: r, featureSwitches: t })
           }
         var h = function (e) {
@@ -62961,10 +62944,10 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
       },
       f8pP: function (e, t) {
-        e.exports = { queryId: '6T1kczZHer6JyvwUjJNQMQ', operationName: 'TweetResultByRestId', operationType: 'query' }
+        e.exports = { queryId: 'yGB49zEfQRAsddr2MuymyA', operationName: 'TweetResultByRestId', operationType: 'query' }
       },
       fDBV: function (e, t) {
-        e.exports = { queryId: 'LPilCJ5f-bs3MjJJNcuuOw', operationName: 'UserByScreenName', operationType: 'query' }
+        e.exports = { queryId: '7Nq5D__f8BexrPzKopK0qQ', operationName: 'UserByScreenName', operationType: 'query' }
       },
       fEA7: function (e, t, n) {
         for (var r = n('nJ7D'), o = [], i = {}, a = 0; a < 256; a++)
@@ -63072,7 +63055,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
       },
       'fT+L': function (e, t) {
-        e.exports = { queryId: 'Cuvuaw0gm_iE7VsWWyl6Lg', operationName: 'AudioSpaceById', operationType: 'query' }
+        e.exports = { queryId: 'O-cwNhuh6TPrZS2j_nOz0w', operationName: 'AudioSpaceById', operationType: 'query' }
       },
       fUT7: function (e, t, n) {
         'use strict'
@@ -63300,7 +63283,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
       },
       fvDo: function (e, t) {
-        e.exports = { queryId: 'ThLrah07FO-eNQQpUH-FwA', operationName: 'CommunityByRestId', operationType: 'query' }
+        e.exports = { queryId: 'i69JVRtWflswrBPwuLxczA', operationName: 'CommunityByRestId', operationType: 'query' }
       },
       fz3c: function (e, t, n) {
         'use strict'
@@ -63415,11 +63398,6 @@ window.__SCRIPTS_LOADED__.i18n &&
               for (var r = arguments.length, i = new Array(r), a = 0; a < r; a++) i[a] = arguments[a]
               return (
                 (e = t.call.apply(t, [this].concat(i))),
-                b()(
-                  s()(e),
-                  '_navVisualRefreshEnabled',
-                  e.context.featureSwitches.isTrue('responsive_web_nav_visual_refresh_enabled'),
-                ),
                 b()(s()(e), '_renderItemContent', function (t, n) {
                   var r = e.props,
                     o = r.accessibilityLabel,
@@ -63433,10 +63411,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     p = r.withLabel,
                     f = r.label,
                     h = r.viewType,
-                    m = j.a.generate({
-                      backgroundColor: 'transparent',
-                      color: e._navVisualRefreshEnabled ? P.a.theme.colors.text : P.a.theme.colors.primary,
-                    })
+                    m = j.a.generate({ backgroundColor: 'transparent', color: P.a.theme.colors.text })
                   return i && 'xShort' === n
                     ? null
                     : v.createElement(
@@ -63472,13 +63447,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                               v.createElement(
                                 E.a,
                                 null,
-                                l({
-                                  routeIsActive: t,
-                                  isPressed: r,
-                                  isHovered: o,
-                                  isFocused: i,
-                                  visualRefreshEnabled: e._navVisualRefreshEnabled,
-                                }),
+                                l({ routeIsActive: t, isPressed: r, isHovered: o, isFocused: i }),
                                 e._renderBadge(),
                               ),
                               e._renderLabel(t, o, r, i),
@@ -63540,8 +63509,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                       i = this.props,
                       a = i.label,
                       c = i.withLabel,
-                      s = this._navVisualRefreshEnabled ? N.activeColorVisualRefresh : N.activeColor,
-                      u = this._navVisualRefreshEnabled ? (e ? 'bold' : 'normal') : 'bold'
+                      s = N.activeColor,
+                      u = e ? 'bold' : 'normal'
                     return c
                       ? v.createElement(
                           I.c,
@@ -63585,8 +63554,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           N = P.a.create(function (e) {
             return {
               label: { marginLeft: e.spaces.space20, marginRight: e.spaces.space16 },
-              activeColor: { color: e.colors.primary },
-              activeColorVisualRefresh: { color: e.colors.text },
+              activeColor: { color: e.colors.text },
               pip: { right: e.spacesPx.space1, top: -e.spacesPx.space4 },
             }
           })
@@ -64251,16 +64219,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                             })
                       }
                       return e
-                    })(
-                      {
-                        count: r,
-                        cursor: o,
-                        withHighlightedLabel: t.isTrue('responsive_web_remove_withhighlightedlabel'),
-                        withTweetQuoteCount: !1,
-                        includePromotedContent: !0,
-                      },
-                      Object(O.a)(t),
-                    ),
+                    })({ count: r, cursor: o, withTweetQuoteCount: !1, includePromotedContent: !0 }, Object(O.a)(t)),
                     function (e, t) {
                       var n
                       return !(null != t && null !== (n = t.bookmark_timeline) && void 0 !== n && n.timeline)
@@ -64606,16 +64565,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 .graphQL(
                   r,
                   jn(
-                    jn(
-                      {
-                        count: a,
-                        cursor: c,
-                        withHighlightedLabel: n.isTrue('responsive_web_remove_withhighlightedlabel'),
-                        withTweetQuoteCount: !1,
-                        includePromotedContent: !1,
-                      },
-                      Object(O.a)(n),
-                    ),
+                    jn({ count: a, cursor: c, withTweetQuoteCount: !1, includePromotedContent: !1 }, Object(O.a)(n)),
                     {},
                     { withSafetyModeUserFields: n.isTrue('rito_safety_mode_features_enabled') },
                   ),
@@ -65290,16 +65240,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                             })
                       }
                       return e
-                    })(
-                      {
-                        count: r,
-                        cursor: o,
-                        withHighlightedLabel: t.isTrue('responsive_web_remove_withhighlightedlabel'),
-                        withTweetQuoteCount: !1,
-                        includePromotedContent: !1,
-                      },
-                      Object(O.a)(t),
-                    ),
+                    })({ count: r, cursor: o, withTweetQuoteCount: !1, includePromotedContent: !1 }, Object(O.a)(t)),
                     Qr,
                   )
                   .then(function (e) {
@@ -67036,11 +66977,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 return e
                   .graphQL(
                     Fu.a,
-                    {
-                      tweetId: r,
-                      withHighlightedLabel: t.isTrue('responsive_web_remove_withhighlightedlabel'),
-                      withSuperFollowsUserFields: t.isTrue('super_follow_user_api_enabled'),
-                    },
+                    { tweetId: r, withSuperFollowsUserFields: t.isTrue('super_follow_user_api_enabled') },
                     function (e, t) {
                       var n, r
                       return (
@@ -67096,14 +67033,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   .graphQL(
                     Du.a,
                     Hu(
-                      {
-                        tweetId: r,
-                        count: o,
-                        cursor: i,
-                        withHighlightedLabel: t.isTrue('responsive_web_remove_withhighlightedlabel'),
-                        withTweetQuoteCount: !1,
-                        includePromotedContent: !0,
-                      },
+                      { tweetId: r, count: o, cursor: i, withTweetQuoteCount: !1, includePromotedContent: !0 },
                       Object(O.a)(t),
                     ),
                     function (e, t) {
@@ -67126,14 +67056,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   .graphQL(
                     Nu.a,
                     Hu(
-                      {
-                        tweetId: r,
-                        count: o,
-                        cursor: i,
-                        withHighlightedLabel: t.isTrue('responsive_web_remove_withhighlightedlabel'),
-                        withTweetQuoteCount: !1,
-                        includePromotedContent: !0,
-                      },
+                      { tweetId: r, count: o, cursor: i, withTweetQuoteCount: !1, includePromotedContent: !0 },
                       Object(O.a)(t),
                     ),
                     function (e, t) {
@@ -68837,14 +68760,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       .graphQL(
                         tn.a,
                         jn(
-                          {
-                            userId: r,
-                            count: o,
-                            cursor: i,
-                            withHighlightedLabel: t.isTrue('responsive_web_remove_withhighlightedlabel'),
-                            withTweetQuoteCount: !1,
-                            includePromotedContent: !1,
-                          },
+                          { userId: r, count: o, cursor: i, withTweetQuoteCount: !1, includePromotedContent: !1 },
                           Object(O.a)(t),
                         ),
                         In,
@@ -68859,14 +68775,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       .graphQL(
                         rn.a,
                         jn(
-                          {
-                            userId: r,
-                            count: o,
-                            cursor: i,
-                            withHighlightedLabel: t.isTrue('responsive_web_remove_withhighlightedlabel'),
-                            withTweetQuoteCount: !1,
-                            includePromotedContent: !1,
-                          },
+                          { userId: r, count: o, cursor: i, withTweetQuoteCount: !1, includePromotedContent: !1 },
                           Object(O.a)(t),
                         ),
                         In,
@@ -68881,14 +68790,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       .graphQL(
                         an.a,
                         jn(
-                          {
-                            userId: r,
-                            count: o,
-                            cursor: i,
-                            withHighlightedLabel: t.isTrue('responsive_web_remove_withhighlightedlabel'),
-                            withTweetQuoteCount: !1,
-                            includePromotedContent: !1,
-                          },
+                          { userId: r, count: o, cursor: i, withTweetQuoteCount: !1, includePromotedContent: !1 },
                           Object(O.a)(t),
                         ),
                         In,
@@ -68902,13 +68804,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       .graphQL(
                         hn.a,
                         jn(
-                          {
-                            count: r,
-                            cursor: o,
-                            withHighlightedLabel: t.isTrue('responsive_web_remove_withhighlightedlabel'),
-                            withTweetQuoteCount: !1,
-                            includePromotedContent: !1,
-                          },
+                          { count: r, cursor: o, withTweetQuoteCount: !1, includePromotedContent: !1 },
                           Object(O.a)(t),
                         ),
                         Cn,
@@ -68917,14 +68813,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   },
                   fetchViewerTeams: function () {
                     return e
-                      .graphQLFullResponse(
-                        _n.a,
-                        jn(
-                          { withHighlightedLabel: t.isTrue('responsive_web_remove_withhighlightedlabel') },
-                          Object(O.b)(t),
-                        ),
-                        Tn,
-                      )
+                      .graphQLFullResponse(_n.a, jn({}, Object(O.b)(t)), Tn)
                       .then(function (e) {
                         var t = e.data,
                           n = e.errors,
@@ -68976,13 +68865,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       .graphQL(
                         pn.a,
                         jn(
-                          {
-                            count: r,
-                            cursor: o,
-                            withHighlightedLabel: t.isTrue('responsive_web_remove_withhighlightedlabel'),
-                            withTweetQuoteCount: !1,
-                            includePromotedContent: !1,
-                          },
+                          { count: r, cursor: o, withTweetQuoteCount: !1, includePromotedContent: !1 },
                           Object(O.a)(t),
                         ),
                         kn,
@@ -69817,14 +69700,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         dc.a,
                         Oc(
                           Oc(
-                            {
-                              userId: r,
-                              count: o,
-                              cursor: i,
-                              withHighlightedLabel: t.isTrue('responsive_web_remove_withhighlightedlabel'),
-                              withTweetQuoteCount: !1,
-                              includePromotedContent: !1,
-                            },
+                            { userId: r, count: o, cursor: i, withTweetQuoteCount: !1, includePromotedContent: !1 },
                             Object(O.a)(t),
                           ),
                           {},
@@ -69861,14 +69737,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         fc.a,
                         Oc(
                           Oc(
-                            {
-                              userId: r,
-                              count: o,
-                              cursor: i,
-                              withHighlightedLabel: t.isTrue('responsive_web_remove_withhighlightedlabel'),
-                              withTweetQuoteCount: !1,
-                              includePromotedContent: !1,
-                            },
+                            { userId: r, count: o, cursor: i, withTweetQuoteCount: !1, includePromotedContent: !1 },
                             Object(O.a)(t),
                           ),
                           {},
@@ -70447,11 +70316,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 return {
                   fetchViewer: function () {
                     return e
-                      .graphQL(
-                        dl.a,
-                        { withHighlightedLabel: !1, withUserResults: !1, withSuperFollowsUserFields: !1 },
-                        gl,
-                      )
+                      .graphQL(dl.a, { withUserResults: !1, withSuperFollowsUserFields: !1 }, gl)
                       .then(function (e) {
                         var t, n
                         if (e.viewer) {
@@ -70698,14 +70563,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     return e
                       .graphQL(
                         Ds.a,
-                        Ms(
-                          {
-                            withHighlightedLabel: t.isTrue('responsive_web_remove_withhighlightedlabel'),
-                            withTweetQuoteCount: !1,
-                            includePromotedContent: !0,
-                          },
-                          Object(O.a)(t),
-                        ),
+                        Ms({ withTweetQuoteCount: !1, includePromotedContent: !0 }, Object(O.a)(t)),
                         function (e, t) {
                           var n, r
                           return !(
@@ -71586,7 +71444,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           })()
       },
       hcTZ: function (e, t) {
-        e.exports = { queryId: '-NBuxvkPQOClf6OLe3kiBQ', operationName: 'TopicToFollowSidebar', operationType: 'query' }
+        e.exports = { queryId: '-geIHVZI-_uld1XD0EANrw', operationName: 'TopicToFollowSidebar', operationType: 'query' }
       },
       hf2P: function (e, t, n) {
         'use strict'
@@ -72568,7 +72426,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
       },
       iWfu: function (e, t) {
-        e.exports = { queryId: 'sTKvLj_2FBZtaGNE54H0hw', operationName: 'UpdateList', operationType: 'mutation' }
+        e.exports = { queryId: '_kPD7GD1IzYDp3txHGYPrw', operationName: 'UpdateList', operationType: 'mutation' }
       },
       iX4X: function (e, t, n) {
         'use strict'
@@ -72754,7 +72612,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       iYqo: function (e, t) {
         e.exports = {
-          queryId: 'vDtX9ags3hWbdPJOfuIN_Q',
+          queryId: 'I2VSSVh-6d2RfqxhdJ66dA',
           operationName: 'CommunitiesMembershipsSlice',
           operationType: 'query',
         }
@@ -73119,7 +72977,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       jEKL: function (e, t) {
         e.exports = {
-          queryId: 'H9mhDd7308ocagv3I2mEwA',
+          queryId: 'oPI1bDSe3aCu2qU-kefHNA',
           operationName: 'BirdwatchFetchUserNotes',
           operationType: 'query',
         }
@@ -73534,7 +73392,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
       },
       jUmP: function (e, t) {
-        e.exports = { queryId: 'JlIHVRUnyhZtsFqK7wbFUA', operationName: 'MutedAccounts', operationType: 'query' }
+        e.exports = { queryId: 'U3QR1ygjEoumtHlMH2I_qA', operationName: 'MutedAccounts', operationType: 'query' }
       },
       'jV+4': function (e, t, n) {
         'use strict'
@@ -74589,7 +74447,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         t.a = r
       },
       kJ4C: function (e, t) {
-        e.exports = { queryId: 'tlMLQ-XInVYfhROrW0iE4g', operationName: 'ListUnpinOne', operationType: 'mutation' }
+        e.exports = { queryId: 'TSvPXvDvK5NOII5bUjM3QA', operationName: 'ListUnpinOne', operationType: 'mutation' }
       },
       kLu5: function (e, t, n) {
         'use strict'
@@ -74824,7 +74682,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         t.a = l
       },
       kzpb: function (e, t) {
-        e.exports = { queryId: 'oCKafEKG-pDK4_zP94A0WA', operationName: 'SuperFollowers', operationType: 'query' }
+        e.exports = { queryId: 'N81NbABBTZsS4_J5aaVySw', operationName: 'SuperFollowers', operationType: 'query' }
       },
       l0YN: function (e, t, n) {
         'use strict'
@@ -75021,7 +74879,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         t.a = new d()
       },
       lMsn: function (e, t) {
-        e.exports = { queryId: 'C8xQdmtOgqqDUPH0l76pAA', operationName: 'ForYouExplore', operationType: 'query' }
+        e.exports = { queryId: 'aKPj57_AlkwPPbvXeepv3A', operationName: 'ForYouExplore', operationType: 'query' }
       },
       lPpt: function (e, t, n) {
         'use strict'
@@ -75163,7 +75021,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       lSTV: function (e, t) {
         e.exports = {
-          queryId: 'RTFKwac--BDIAi9aVdooEA',
+          queryId: 'D1M1MhKGxqktzbK_wkN1xw',
           operationName: 'BirdwatchFetchOneNote',
           operationType: 'query',
         }
@@ -75547,14 +75405,14 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       mDm2: function (e, t) {
         e.exports = {
-          queryId: 'KLb1n-cmI_UUKEwltZcjAA',
+          queryId: '931ZpNloYB16Tq0bFvRL5Q',
           operationName: 'CommunityModerationKeepTweet',
           operationType: 'mutation',
         }
       },
       mGYQ: function (e, t) {
         e.exports = {
-          queryId: 'Ca9U28gnyhsvlQSOdYs-yQ',
+          queryId: 'Fddn7mGYaC_wwqC-lkSLag',
           operationName: 'CommunityAboutTimeline',
           operationType: 'query',
         }
@@ -75575,7 +75433,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
       },
       mRBj: function (e, t) {
-        e.exports = { queryId: 'Q61uO-wgapYSjbqq6U1cxg', operationName: 'CombinedLists', operationType: 'query' }
+        e.exports = { queryId: 'IgKIsV4EBbcDgmsIibUT_g', operationName: 'CombinedLists', operationType: 'query' }
       },
       'mXq/': function (e, t, n) {
         'use strict'
@@ -76050,35 +75908,68 @@ window.__SCRIPTS_LOADED__.i18n &&
       mrHL: function (e, t, n) {
         'use strict'
         n.d(t, 'c', function () {
-          return a
+          return l
         }),
           n.d(t, 'b', function () {
-            return c
+            return d
           }),
           n.d(t, 'a', function () {
-            return s
+            return h
           })
-        var r = n('6/RC'),
-          o = n('s9SB'),
-          i = n.n(o),
-          a = function (e) {
+        n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
+        var r = n('KEM+'),
+          o = n.n(r),
+          i = n('6/RC'),
+          a = n('s9SB'),
+          c = n.n(a)
+        function s(e, t) {
+          var n = Object.keys(e)
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e)
+            t &&
+              (r = r.filter(function (t) {
+                return Object.getOwnPropertyDescriptor(e, t).enumerable
+              })),
+              n.push.apply(n, r)
+          }
+          return n
+        }
+        function u(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {}
+            t % 2
+              ? s(Object(n), !0).forEach(function (t) {
+                  o()(e, t, n[t])
+                })
+              : Object.getOwnPropertyDescriptors
+              ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+              : s(Object(n)).forEach(function (t) {
+                  Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+                })
+          }
+          return e
+        }
+        var l = function (e) {
             e.featureSwitches
             var t = e.cookie
-            r.canUseDOM && (document.cookie = t)
+            i.canUseDOM && (document.cookie = t)
           },
-          c = function (e) {
+          d = function (e) {
             e.featureSwitches
             var t = e.cookieName
-            if (r.canUseDOM) return i.a.parse(document.cookie)[t]
+            if (i.canUseDOM) return c.a.parse(document.cookie)[t]
           },
-          s = function (e) {
-            return i.a.serialize(e.cookieName, e.cookieValue, {
-              maxAge: e.maxAge,
-              path: e.path,
-              domain: e.domain,
-              secure: e.secure,
-              encode: e.encode,
-            })
+          p = 31536e3,
+          f = { domain: '.twitter.com', path: '/', secure: !0 },
+          h = function (e, t) {
+            var n,
+              r,
+              o = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : f
+            return (
+              void 0 !== o.expires ? (r = o.expires) : void 0 === o.maxAge && (n = p),
+              void 0 !== o.maxAge && (n = Math.min(o.maxAge, p)),
+              c.a.serialize(e, t, u(u(u({}, f), o), {}, { maxAge: n, expires: r }))
+            )
           }
       },
       mw9i: function (e, t, n) {
@@ -77876,6 +77767,11 @@ window.__SCRIPTS_LOADED__.i18n &&
                   t = i.props.onOpen
                 i.setState({ isAnchorActive: !0 }), e || (t && t(T.a.longPress))
               }),
+              b()(s()(i), '_handleForceOpen', function () {
+                var e = i.state.isAnchorActive,
+                  t = i.props.onOpen
+                i.setState({ isAnchorActive: !0 }), e || (t && t(T.a.force))
+              }),
               b()(s()(i), '_setAnchorNode', function (e) {
                 i._anchorNode = e || void 0
               }),
@@ -77921,7 +77817,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                     R = O || E
                   d === T.b.forceVisible ? (R = !0) : d === T.b.forceHidden && (R = !1)
                   var x = C && (R || S) && !l(),
-                    D = 'function' == typeof n ? n({ dismissPopover: this._handleDismiss }) : n
+                    D =
+                      'function' == typeof n
+                        ? n({ dismissPopover: this._handleDismiss, forceOpen: this._handleForceOpen })
+                        : n
                   return v.createElement(
                     w.a,
                     { disabled: !o, onHoverIn: this._handleAnchorHoverIn, onHoverOut: this._handleAnchorHoverOut },
@@ -78263,11 +78162,11 @@ window.__SCRIPTS_LOADED__.i18n &&
         ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
       },
       pFPO: function (e, t) {
-        e.exports = { queryId: 'JWaFyG5p4-UvSyxGMe15-g', operationName: 'UserMedia', operationType: 'query' }
+        e.exports = { queryId: '7Nh8bOedI3f4aQD1EdLR-w', operationName: 'UserMedia', operationType: 'query' }
       },
       pG5d: function (e, t) {
         e.exports = {
-          queryId: 'VQZF8wfaUsb6IBScwKU1pw',
+          queryId: 'a3aHdg2hnJxDi0qk3a6_zQ',
           operationName: 'BirdwatchFetchGlobalTimeline',
           operationType: 'query',
         }
@@ -78333,7 +78232,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       pKwR: function (e, t) {
         e.exports = {
-          queryId: 'K5haX8WKHIcQWaamB3zThQ',
+          queryId: 'tMKhvQg5vnvQaZvQe9VAog',
           operationName: 'UserSuperFollowTweets',
           operationType: 'query',
         }
@@ -78889,7 +78788,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         })
       },
       po7o: function (e, t) {
-        e.exports = { queryId: 'DlgwL3uYwMXwGdtK-YiKyQ', operationName: 'ListRemoveMember', operationType: 'mutation' }
+        e.exports = { queryId: '0mAu6ughzjnU_w6SuV5vvA', operationName: 'ListRemoveMember', operationType: 'mutation' }
       },
       psMd: function (e, t) {
         e.exports = { queryId: 'aoDbu3RHznuiSkQ9aNM67Q', operationName: 'CreateBookmark', operationType: 'mutation' }
@@ -80516,7 +80415,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
       },
       qe59: function (e, t) {
-        e.exports = { queryId: 'qMPXLUNVkgvU3dcjZUJMIw', operationName: 'DeleteListBanner', operationType: 'mutation' }
+        e.exports = { queryId: 'FtaCd2o4C3ZLvGHU7JNzLw', operationName: 'DeleteListBanner', operationType: 'mutation' }
       },
       qlwE: function (e, t, n) {
         'use strict'
@@ -80645,7 +80544,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             autoPollNewTweets: !1,
             autoShowNewTweets: void 0,
             preciseLocationEnabled: !1,
-            undoTweet: { original: !0, reply: !1, quote: !1, thread: !1 },
+            undoTweet: { original: !0, reply: !0, quote: !0, thread: !0, durationSecs: 20 },
           }
         function _() {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : g,
@@ -80731,7 +80630,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
       },
       qpTX: function (e, t) {
-        e.exports = { queryId: 'v85SnPUpiGviqiVy4E4XGw', operationName: 'CreateTweet', operationType: 'mutation' }
+        e.exports = { queryId: 'xOIfPjeSXZc6RA9aNrG4lw', operationName: 'CreateTweet', operationType: 'mutation' }
       },
       qqET: function (e, t, n) {
         'use strict'
@@ -81577,7 +81476,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           })
       },
       r5Aa: function (e, t) {
-        e.exports = { queryId: 'cM87XSpogEFtklQphzZGQw', operationName: 'ModeratedTimeline', operationType: 'query' }
+        e.exports = { queryId: '5MJ1Ihvhm1F8Oe3GxLX--w', operationName: 'ModeratedTimeline', operationType: 'query' }
       },
       r7ya: function (e, t, n) {
         'use strict'
@@ -81784,11 +81683,11 @@ window.__SCRIPTS_LOADED__.i18n &&
                 experimentalOrange100: a.a.color.baseColor.orange100,
                 experimentalOrange50: a.a.color.baseColor.orange50,
                 experimentalOrange0: a.a.color.baseColor.orange0,
-                experimentalRed500: a.a.color.baseColor.magenta500,
-                experimentalRed200: a.a.color.baseColor.magenta200,
-                experimentalRed100: a.a.color.baseColor.magenta100,
-                experimentalRed50: a.a.color.baseColor.magenta50,
-                experimentalRed0: a.a.color.baseColor.magenta0,
+                experimentalRed500: a.a.color.baseColor.red500,
+                experimentalRed200: a.a.color.baseColor.red200,
+                experimentalRed100: a.a.color.baseColor.red100,
+                experimentalRed50: a.a.color.baseColor.red50,
+                experimentalRed0: a.a.color.baseColor.red0,
               },
             ),
           ),
@@ -82026,7 +81925,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
       },
       rEPq: function (e, t) {
-        e.exports = { queryId: 'jRpxYGal-Y2PaixY0CJsYw', operationName: 'UrtFixtures', operationType: 'query' }
+        e.exports = { queryId: 'izJ16-HikeYzU64y2453aQ', operationName: 'UrtFixtures', operationType: 'query' }
       },
       rHpw: function (e, t, n) {
         'use strict'
@@ -84337,7 +84236,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       t8Fd: function (e, t) {
         e.exports = {
-          queryId: 'ZiLd5AitEMwj9iX2Bjj8Wg',
+          queryId: 'QOEBUbjm1TZkETr93Pfyvg',
           operationName: 'ListLatestTweetsTimeline',
           operationType: 'query',
         }
@@ -84756,7 +84655,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       uHpp: function (e, t) {
         e.exports = {
-          queryId: 'VBHqxvRCn95R1GFxGItNKw',
+          queryId: 'xF85ARiDZ2Gml3GFzjYx5A',
           operationName: 'GetTweetReactionTimeline',
           operationType: 'query',
         }
@@ -84823,7 +84722,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       uVFi: function (e, t) {
         e.exports = {
-          queryId: 'Ac6uRtJPOa4PyOHiKaHJNg',
+          queryId: 'DexM91cwNLbADLe5MgVECA',
           operationName: 'UserByScreenNameWithoutResults',
           operationType: 'query',
         }
@@ -87238,11 +87137,11 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
       },
       vLWf: function (e, t) {
-        e.exports = { queryId: 'UCmSbmTQXu1krT_zbv4T3w', operationName: 'TopicsPickerPage', operationType: 'query' }
+        e.exports = { queryId: 'pGc_NRQHg_lf3exxDpIDhw', operationName: 'TopicsPickerPage', operationType: 'query' }
       },
       vSDp: function (e, t) {
         e.exports = {
-          queryId: 'w-OA7_WeJKBxOQBPBS1AiQ',
+          queryId: '70UF9sE4gekjjLKDrONQLg',
           operationName: 'ListCreationRecommendedUsers',
           operationType: 'query',
         }
@@ -91944,10 +91843,10 @@ window.__SCRIPTS_LOADED__.i18n &&
         )
       },
       xc7e: function (e, t) {
-        e.exports = { queryId: 'SChLaEpdCEdweO_QP3KYgw', operationName: 'Viewer', operationType: 'query' }
+        e.exports = { queryId: 'ziKccg7Mg4bH8cIZF-_93A', operationName: 'Viewer', operationType: 'query' }
       },
       xdo5: function (e, t) {
-        e.exports = { queryId: 'wjWBY-nWcqRsx3s9A0ezvw', operationName: 'Following', operationType: 'query' }
+        e.exports = { queryId: 'HPULgIz7BZdLt7ywAayeaw', operationName: 'Following', operationType: 'query' }
       },
       xjVt: function (e, t, n) {
         'use strict'
@@ -91965,7 +91864,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       xlqx: function (e, t) {
         e.exports = {
-          queryId: 'Jic-X1i2-xTfdZFs2h9CLg',
+          queryId: 'CVHu4t9ftJJHgBkoKcRH1w',
           operationName: 'BlockedAccountsAutoBlock',
           operationType: 'query',
         }
@@ -92085,7 +91984,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         t.a = j
       },
       y1NS: function (e, t) {
-        e.exports = { queryId: '8fMi-RvcushZdqFfapxhPg', operationName: 'DmMutedTimeline', operationType: 'query' }
+        e.exports = { queryId: 'bK_2sQK0WEqklyHPfrmpsw', operationName: 'DmMutedTimeline', operationType: 'query' }
       },
       yDX5: function (e, t, n) {
         'use strict'
@@ -92691,7 +92590,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         )
       },
       ydqi: function (e, t) {
-        e.exports = { queryId: 'QG7fj7ELUAcuEjc18HhWEA', operationName: 'TweetDetail', operationType: 'query' }
+        e.exports = { queryId: 'JGio_vNkF-aMIBM_m6s5VQ', operationName: 'TweetDetail', operationType: 'query' }
       },
       ylrv: function (e, t, n) {
         'use strict'
@@ -92752,7 +92651,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
       },
       ymtx: function (e, t) {
-        e.exports = { queryId: 'F0v3A1pUPMzKJvuwR7ordg', operationName: 'ViewerTeams', operationType: 'query' }
+        e.exports = { queryId: 'sGxuoAgA5xBuF_Gd155wvQ', operationName: 'ViewerTeams', operationType: 'query' }
       },
       ymux: function (e, t, n) {
         'use strict'
