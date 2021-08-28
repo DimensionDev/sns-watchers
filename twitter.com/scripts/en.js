@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [107],
+    [108],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -23,7 +23,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var n = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(254).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(255).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function a(e, t, o) {
@@ -1287,11 +1287,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('h9694423', function (e) {
             return '+' + e.count
           }),
+          n('ba55e824', 'Ended'),
           n('aadbc746', function (e) {
             return 'Co-host' + a(e.hostCount, '', 's')
           }),
-          n('ba55e824', 'Ended'),
-          n('j245c654', 'Speakers'),
+          n('hbd6035f', function (e) {
+            return 'Speaker' + a(e.speakerCount, '', 's')
+          }),
           n('cc5ab041', 'This space has ended'),
           n('eadd5677', 'It looks like this space has been closed.'),
           n('a2288d04', 'Twitter - Space'),
