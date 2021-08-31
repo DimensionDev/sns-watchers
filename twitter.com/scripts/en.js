@@ -891,16 +891,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('ee79367a', function (e) {
             return 'Level ' + e.conversationTreeDepth + ':'
           }),
-          n('ffd9cfe6', 'See more'),
-          n('d172116a', 'Discover more'),
-          n('iac074c3', 'More Tweets'),
-          n('g11ebd34', 'More suggestions'),
-          n('g4a69019', 'Browse'),
-          n('b1abb17d', 'Browse Tweets'),
-          n('e71f32d0', 'Recommended for you'),
-          n('e5d2277e', function (e) {
-            return 'Follow ' + e.topicName + ' Topic for more top Tweets, or select x to remove this recommendation.'
-          }),
           n('fe8a1f7f', 'Compose a reply'),
           n('e349147b', 'What’s happening?'),
           n('bc2ceaf2', 'Sending Tweet...'),
@@ -998,6 +988,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('e2414184', function (e) {
             return 'Quote Tweet' + a(e.count, '', 's')
           }),
+          n('ffd9cfe6', 'See more'),
+          n('d172116a', 'Discover more'),
+          n('iac074c3', 'More Tweets'),
+          n('g11ebd34', 'More suggestions'),
+          n('g4a69019', 'Browse'),
+          n('b1abb17d', 'Browse Tweets'),
           n('h3ab37c7', 'Contribute to Birdwatch'),
           n('bae0cbcf', 'Change who can reply'),
           n('f8393bda', 'Only Super Followers can reply'),
@@ -1183,10 +1179,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'via @' + e.viaScreenName
           }),
           n('f70a36d0', 'Tweet all'),
-          n('ic011119', 'Want to revise this or mute them instead?')
-        n('f6b7745a', 'Want to revise this or block them instead?'),
-          n('a75cc0f8', 'Want to revise this or hide their reply instead?'),
-          n('i2b9632d', 'Successfully unblocked.'),
+          n('ic011119', 'Want to revise this or mute them instead?'),
+          n('f6b7745a', 'Want to revise this or block them instead?'),
+          n('a75cc0f8', 'Want to revise this or hide their reply instead?')
+        n('i2b9632d', 'Successfully unblocked.'),
           n('h3032750', 'Get more info'),
           n('af250eb6', 'Blocking user'),
           n('ib147a39', 'Hiding reply'),
@@ -1574,6 +1570,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('e3f04700', function (e) {
             return e.count + ' new Tweet' + a(e.count, '', 's') + ' to review'
           }),
+          n('b139b549', 'Invite members'),
           n('e2429f56', 'Tweets to review'),
           n('df15d5b7', function (e) {
             return e.count + ' new Tweet' + a(e.count, '', 's')
@@ -1603,7 +1600,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('e442bbb4', 'Community Members'),
           n('e9488b0d', 'Loading Moderators'),
           n('j43fea20', 'Loading Members'),
-          n('b139b549', 'Invite members'),
           n('dfddd842', 'Sent via Direct Message'),
           n('cf4898a0', 'Search for people'),
           n('a3b3939a', function (e) {
@@ -2324,7 +2320,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'h4787492',
             'Use a mobile authentication app to get a verification code to enter every time you log in to Twitter.',
           ),
-          n('h6d0d89c', 'Security key')
+          n('h6d0d89c', 'Security key'),
+          n(
+            'f57be1cc',
+            'Use a physical security key that inserts into your computer or syncs to your mobile device when you log in to twitter.com using a supported web browser. Currently, you can’t use a security key to log in to the Twitter app.',
+          ),
+          n(
+            'e2b81a1f',
+            'Use a security key that inserts into your computer or syncs to your mobile device when you log in to Twitter. You’ll need to use a supported mobile device or web browser.',
+          )
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var n = t[o]
@@ -2341,15 +2345,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        n(
-          'f57be1cc',
-          'Use a physical security key that inserts into your computer or syncs to your mobile device when you log in to twitter.com using a supported web browser. Currently, you can’t use a security key to log in to the Twitter app.',
-        ),
-          n(
-            'e2b81a1f',
-            'Use a security key that inserts into your computer or syncs to your mobile device when you log in to Twitter. You’ll need to use a supported mobile device or web browser.',
-          ),
-          n('cd195528', 'Add new security key'),
+        n('cd195528', 'Add new security key'),
           n('b1686800', 'Manage security keys'),
           n('a1860ee7', 'Temporary password'),
           n('j45a2856', 'Create a one-time temporary password to use with third-party services.'),
@@ -3066,6 +3062,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('j8bf07ab', 'Protect your Tweets?'),
           n('ca8034b3', 'This will make them visible only to your Twitter followers.'),
           n('c5d4192a', 'Protect'),
+          n('gea6cc19', 'Are you sure?'),
+          n(
+            'j7fc0afc',
+            'Communities are public, so protecting your account will hide your previous Tweets. You also won’t be able to Tweet in the Community until your account is public again.',
+          ),
+          n('f527b322', 'Protect my account'),
           n('h6ce12ed', 'Receive messages from anyone'),
           n(
             'ebcb68ae',
@@ -3511,7 +3513,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('i693139c', 'Contains sensitive content'),
           n('b198b98f', 'Your Moment’s visibility settings were updated.'),
           n('ed26ca65', 'Add Tweets'),
-          n('gea6cc19', 'Are you sure?'),
           n(
             'c78fafa3',
             'Leaving this page will cause you to lose selected Tweets that have not yet been added to your Moment.',
@@ -4243,6 +4244,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('efb17190', 'Follows you'),
           n('a7c3a6ef', 'Super Follows you'),
           n('a3df6df8', 'Super Follower'),
+          n('b74bf8b7', 'Image'),
+          n('df8cd2af', function (e) {
+            return 'Slide ' + e.currentSlide + ' of ' + e.itemCount + ' - Carousel. ' + e.type + '. ' + e.altText
+          }),
+          n('gea7aa3c', 'Next'),
+          n('b6462b32', 'Previous'),
+          n('d70740d9', 'Next slide'),
+          n('c4d53ba2', 'Previous slide'),
+          n('h6405c17', function (e) {
+            return 'Slide ' + e.currentSlide + ' of ' + e.itemCount + ' - Carousel'
+          }),
           n('c5954d30', 'List'),
           n('e3fcbdba', 'Dismiss'),
           n('j190bf19', 'LIVE'),
@@ -4263,17 +4275,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return e.formattedCount + ' day' + a(e.count, '', 's') + ' left'
           }),
           n('e86732e3', 'Selected'),
-          n('b74bf8b7', 'Image'),
-          n('df8cd2af', function (e) {
-            return 'Slide ' + e.currentSlide + ' of ' + e.itemCount + ' - Carousel. ' + e.type + '. ' + e.altText
-          }),
-          n('gea7aa3c', 'Next'),
-          n('b6462b32', 'Previous'),
-          n('d70740d9', 'Next slide'),
-          n('c4d53ba2', 'Previous slide'),
-          n('h6405c17', function (e) {
-            return 'Slide ' + e.currentSlide + ' of ' + e.itemCount + ' - Carousel'
-          }),
           n('hdf426f5', function (e) {
             return 'Topic · ' + e.description
           }),
