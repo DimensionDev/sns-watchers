@@ -29,13 +29,13 @@
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.76de67c5.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.a43cce35.js"
     nonce="WIPED"
   /><link
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/main.b221d065.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/main.df1429e5.js"
     nonce="WIPED"
   /><meta property="fb:app_id" content="2231777543" />
   <meta property="og:site_name" content="Twitter" /><meta
@@ -794,7 +794,7 @@
             graphql_mutation_retweet_mode: { value: 'rest_only' },
             graphql_mutation_unfavorite_mode: { value: 'graphql_only' },
             graphql_mutation_unretweet_mode: { value: 'rest_only' },
-            graphql_mutation_update_mode: { value: 'rest_only' },
+            graphql_mutation_update_mode: { value: 'graphql_only' },
             guest_broadcasting_timeline_decorations_enabled: { value: true },
             hashflags_animation_like_button_enabled: { value: true },
             home_timeline_latest_timeline_switch_enabled: { value: true },
@@ -840,9 +840,12 @@
             responsive_web_birdwatch_consumption_enabled: { value: 'WIPED' },
             responsive_web_birdwatch_contribution_enabled: { value: 'WIPED' },
             responsive_web_birdwatch_hcomp_user: { value: 'WIPED' },
+            responsive_web_birdwatch_history_enabled: { value: 'WIPED' },
             responsive_web_birdwatch_note_awards_enabled: { value: 'WIPED' },
+            responsive_web_birdwatch_note_writing_enabled: { value: 'WIPED' },
             responsive_web_birdwatch_pivots_enabled: { value: 'WIPED' },
             responsive_web_birdwatch_rating_mini_survey_enabled: { value: 'WIPED' },
+            responsive_web_birdwatch_rating_participant_enabled: { value: 'WIPED' },
             responsive_web_birdwatch_ratings_v2_enabled: { value: 'WIPED' },
             responsive_web_birdwatch_site_enabled: { value: 'WIPED' },
             responsive_web_birdwatch_traffic_lights_enabled: { value: 'WIPED' },
@@ -911,6 +914,8 @@
             responsive_web_hashtag_highlight_use_small_font: { value: 'WIPED' },
             responsive_web_highlight_details_experiment_bucket: { value: 'WIPED' },
             responsive_web_hoisting_anchor_invalidation_enabled: { value: 'WIPED' },
+            responsive_web_home_refocus_fetch_interval_change_enabled: { value: 'WIPED' },
+            responsive_web_home_refocus_fetch_interval_seconds: { value: 'WIPED' },
             responsive_web_home_revisit_fetch_disabled: { value: 'WIPED' },
             responsive_web_inline_login_box_enabled: { value: 'WIPED' },
             responsive_web_inline_reply_enabled: { value: 'WIPED' },
@@ -1068,7 +1073,6 @@
             topics_context_controls_inline_prompt_enabled: { value: false },
             topics_discovery_page_enabled: { value: false },
             topics_discovery_topic_picker_page_enabled: { value: true },
-            topics_management_page_urp_migration_enabled: { value: true },
             traffic_rewrite_map: { value: [] },
             tweet_limited_actions_config_community_tweet_hidden: {
               value: [
@@ -1126,7 +1130,6 @@
             unified_cards_cta_color_blue_cta: { value: true },
             unified_cards_multi_destination_carousels_convert_to_single_card: { value: false },
             user_display_name_max_limit: { value: 50 },
-            viewing_other_users_topics_page_urp_migration_enabled: { value: true },
             voice_consumption_enabled: { value: true },
             voice_rooms_consumption_enabled: { value: true },
             voice_rooms_end_screen_participants: { value: false },
@@ -1485,9 +1488,12 @@
               responsive_web_birdwatch_consumption_enabled: { value: 'WIPED' },
               responsive_web_birdwatch_contribution_enabled: { value: 'WIPED' },
               responsive_web_birdwatch_hcomp_user: { value: 'WIPED' },
+              responsive_web_birdwatch_history_enabled: { value: 'WIPED' },
               responsive_web_birdwatch_note_awards_enabled: { value: 'WIPED' },
+              responsive_web_birdwatch_note_writing_enabled: { value: 'WIPED' },
               responsive_web_birdwatch_pivots_enabled: { value: 'WIPED' },
               responsive_web_birdwatch_rating_mini_survey_enabled: { value: 'WIPED' },
+              responsive_web_birdwatch_rating_participant_enabled: { value: 'WIPED' },
               responsive_web_birdwatch_ratings_v2_enabled: { value: 'WIPED' },
               responsive_web_birdwatch_site_enabled: { value: 'WIPED' },
               responsive_web_birdwatch_traffic_lights_enabled: { value: 'WIPED' },
@@ -1556,6 +1562,8 @@
               responsive_web_hashtag_highlight_use_small_font: { value: 'WIPED' },
               responsive_web_highlight_details_experiment_bucket: { value: 'WIPED' },
               responsive_web_hoisting_anchor_invalidation_enabled: { value: 'WIPED' },
+              responsive_web_home_refocus_fetch_interval_change_enabled: { value: 'WIPED' },
+              responsive_web_home_refocus_fetch_interval_seconds: { value: 'WIPED' },
               responsive_web_home_revisit_fetch_disabled: { value: 'WIPED' },
               responsive_web_inline_login_box_enabled: { value: 'WIPED' },
               responsive_web_inline_reply_enabled: { value: 'WIPED' },
@@ -1697,7 +1705,7 @@
               soft_interventions_nudge_backend_control_enabled: { value: true },
               soft_interventions_retweet_nudge_enabled: { value: true },
               soft_interventions_share_nudge_enabled: { value: true },
-              stateful_login_enabled: { value: true },
+              stateful_login_enabled: { value: false },
               subscriptions_enabled: { value: false },
               subscriptions_feature_1003: { value: false },
               subscriptions_settings_item_enabled: { value: false },
@@ -1713,7 +1721,6 @@
               topics_context_controls_inline_prompt_enabled: { value: false },
               topics_discovery_page_enabled: { value: false },
               topics_discovery_topic_picker_page_enabled: { value: true },
-              topics_management_page_urp_migration_enabled: { value: true },
               traffic_rewrite_map: { value: [] },
               tweet_limited_actions_config_community_tweet_hidden: {
                 value: [
@@ -1737,21 +1744,7 @@
                 ],
               },
               tweet_limited_actions_config_community_tweet_member: { value: ['retweet'] },
-              tweet_limited_actions_config_community_tweet_non_member: {
-                value: [
-                  'reply',
-                  'retweet',
-                  'quote_tweet',
-                  'like',
-                  'react',
-                  'send_via_dm',
-                  'add_to_bookmarks',
-                  'add_to_moment',
-                  'pin_to_profile',
-                  'view_tweet_activity',
-                  'share_tweet_via',
-                ],
-              },
+              tweet_limited_actions_config_community_tweet_non_member: { value: ['reply', 'retweet', 'like', 'react'] },
               tweet_limited_actions_config_enabled: { value: true },
               tweet_limited_actions_config_non_compliant: {
                 value: [
@@ -1771,7 +1764,6 @@
               unified_cards_cta_color_blue_cta: { value: true },
               unified_cards_multi_destination_carousels_convert_to_single_card: { value: false },
               user_display_name_max_limit: { value: 50 },
-              viewing_other_users_topics_page_urp_migration_enabled: { value: true },
               voice_consumption_enabled: { value: true },
               voice_rooms_consumption_enabled: { value: true },
               voice_rooms_end_screen_participants: { value: false },
@@ -1814,7 +1806,7 @@
             showTweetMediaDetailDrawer: true,
             autoPollNewTweets: false,
             preciseLocationEnabled: false,
-            undoTweet: { original: true, reply: true, quote: true, thread: true, durationSecs: 20 },
+            undoPreview: {},
           },
           remote: { settings: { display_sensitive_media: false }, fetchStatus: 'none' },
           dataSaver: { dataSaverMode: false },
@@ -1862,7 +1854,7 @@
       }
       window.__META_DATA__ = {
         env: 'prod',
-        sha: '7646c4beef82d4e1b222982a3af1f6da5f1436f3',
+        sha: '31b0910e0f9ef556bb41468af1865cf545854a5d',
         isLoggedIn: false,
         hasMultiAccountCookie: false,
         uaParserTags: ['m2', 'rweb_unsupported', 'msw'],
@@ -1874,11 +1866,11 @@
       window.__SCRIPTS_LOADED__ = {}
       !(function (e) {
         function d(d) {
-          for (var o, r, t = d[0], l = d[1], u = d[2], b = 0, s = []; b < t.length; b++)
+          for (var o, r, t = d[0], l = d[1], c = d[2], b = 0, s = []; b < t.length; b++)
             (r = t[b]), Object.prototype.hasOwnProperty.call(a, r) && a[r] && s.push(a[r][0]), (a[r] = 0)
           for (o in l) Object.prototype.hasOwnProperty.call(l, o) && (e[o] = l[o])
-          for (c && c(d); s.length; ) s.shift()()
-          return i.push.apply(i, u || []), n()
+          for (u && u(d); s.length; ) s.shift()()
+          return i.push.apply(i, c || []), n()
         }
         function n() {
           for (var e, d = 0; d < i.length; d++) {
@@ -2165,8 +2157,8 @@
                     }[e] || e) +
                     '.' +
                     {
-                      0: '3dac2bd',
-                      3: '817e475',
+                      0: 'f2ab689',
+                      3: 'a971ed8',
                       4: 'af76076',
                       5: '307d25e',
                       6: '1411d16',
@@ -2174,18 +2166,18 @@
                       8: 'e584080',
                       9: '3bcf2ab',
                       10: 'c42a62d',
-                      11: 'fb70619',
+                      11: '93502f1',
                       12: 'd6abe09',
                       13: '67ac83a',
-                      14: '86877a9',
+                      14: 'fffa598',
                       15: '2c364b5',
                       16: '1c088fc',
                       17: '55786bf',
                       18: '8553957',
-                      19: '1979bf8',
+                      19: 'c9ea2d2',
                       20: 'd2b19a7',
                       21: 'b5ea0fa',
-                      22: '4cdac0f',
+                      22: '8c2130f',
                       23: '14f4d80',
                       24: 'c3b8f59',
                       25: 'a317682',
@@ -2193,38 +2185,38 @@
                       27: 'c992ae0',
                       28: 'ddca9db',
                       29: 'c0cb1b3',
-                      30: '6c6465c',
+                      30: '0e69d64',
                       31: '799967b',
                       32: 'f1cbfaf',
                       33: 'ee3b9ea',
                       34: 'e622dad',
                       35: '1f6e3e3',
-                      36: '8b448d3',
+                      36: 'be06136',
                       37: '9d6abd4',
                       38: '7ac9b38',
-                      39: '3e31b39',
-                      40: '743ed01',
-                      41: 'b34f6a3',
+                      39: 'b83a117',
+                      40: '4e96fb6',
+                      41: 'e87d7d5',
                       42: '33aabfe',
-                      43: '4f9bdda',
+                      43: '6d6b109',
                       44: 'cb6e75c',
-                      45: '9bcfa6e',
-                      46: 'ea0718b',
+                      45: 'fc0aaac',
+                      46: '9eaacca',
                       47: '7b0912b',
                       48: 'ee7ab27',
                       49: '06a3830',
-                      50: '232a457',
+                      50: 'be90cb1',
                       51: '4c88743',
                       52: '36e4549',
                       53: '5f7c2eb',
                       54: '008cd2c',
-                      55: '43e5ccf',
+                      55: '7f74f70',
                       56: '066febd',
-                      57: '9343a32',
+                      57: 'ce4b168',
                       58: '96fa45b',
                       59: '5d027af',
                       60: '1911323',
-                      61: 'ec34b27',
+                      61: 'ef6ecc4',
                       62: '585b592',
                       63: '7079a8f',
                       64: '88080c4',
@@ -2232,56 +2224,56 @@
                       66: '4425956',
                       67: 'd0fe84c',
                       68: '08f50b0',
-                      69: '12205a2',
-                      70: '65ee010',
+                      69: '10a89a2',
+                      70: 'd4856c8',
                       71: 'b47cc9e',
-                      72: '2ef80ff',
+                      72: '95378cc',
                       73: 'a76ed9c',
                       74: '1b9ef06',
                       75: '9e92db4',
                       76: '254b478',
-                      77: 'c698e8a',
-                      78: 'e25a6b7',
-                      79: 'efffe85',
+                      77: 'a22027f',
+                      78: '80bb875',
+                      79: '2fdc706',
                       80: 'b6643b8',
                       81: '411c747',
-                      82: 'd04891b',
-                      83: 'f8cb5e8',
+                      82: 'ba5004b',
+                      83: 'acd0e76',
                       84: '065bee0',
                       85: '79da4bf',
-                      86: '280e7e8',
+                      86: 'cb5a548',
                       87: 'e9d7a86',
                       88: 'fd12f0d',
-                      89: '624dad6',
+                      89: '20ed0fd',
                       90: 'bd108ec',
                       91: 'e4159f5',
                       92: 'bccf691',
                       93: 'ecac07e',
                       94: 'b24d2bd',
-                      95: '6d348c8',
+                      95: '63972f7',
                       96: '4290450',
-                      97: 'b635bcd',
+                      97: '9fec160',
                       98: 'b8c8e44',
-                      149: 'b8297a9',
-                      150: '86c5d5d',
+                      149: 'ec9ab6a',
+                      150: 'a4f8bce',
                       151: '570d4c0',
                       152: '175b0ba',
                       153: '367a542',
                       154: 'f699e9b',
-                      155: '17405bc',
-                      156: 'd87ad07',
+                      155: 'c8deed8',
+                      156: '32ccc71',
                       157: '80a7ac2',
                       158: '338b244',
                       159: '7da416f',
                       160: 'e33b40d',
                       161: 'ff6f039',
-                      162: '1987dea',
+                      162: 'f4db890',
                       163: 'd5c6501',
                       164: '0f77695',
-                      165: '92cbe8b',
+                      165: 'f9423cc',
                       166: '07c67e8',
                       167: '86e5562',
-                      168: 'd5b1721',
+                      168: '95df5ee',
                       169: 'e3e2516',
                       170: 'eb6ffba',
                       171: '58ddc52',
@@ -2294,23 +2286,23 @@
                       179: 'df16f26',
                       180: '2bafc29',
                       181: '73dd894',
-                      182: '658f54e',
+                      182: 'd69e210',
                       183: '111c14a',
                       184: 'bf96f1a',
                       185: 'd67fdc6',
                       186: 'f8613de',
                       187: '390486b',
                       188: '8a5f7ff',
-                      189: 'fb7ec9a',
+                      189: 'b5c96d7',
                       190: 'c66a59c',
                       191: 'b1947ba',
                       192: '886ae36',
-                      193: '4fbae7e',
+                      193: 'c5f75ef',
                       194: '7b75faf',
                       195: '7a4ea47',
-                      196: 'bf95e5e',
-                      197: 'bd2076c',
-                      198: 'bf2a0a2',
+                      196: '0179399',
+                      197: '5d8d4c6',
+                      198: '473d92d',
                       199: '7cb7551',
                       200: '245af67',
                       201: '0edaaeb',
@@ -2415,7 +2407,7 @@
                 })(e))
               var l = new Error()
               i = function (d) {
-                ;(t.onerror = t.onload = null), clearTimeout(u)
+                ;(t.onerror = t.onload = null), clearTimeout(c)
                 var n = a[e]
                 if (0 !== n) {
                   if (n) {
@@ -2430,7 +2422,7 @@
                   a[e] = void 0
                 }
               }
-              var u = setTimeout(function () {
+              var c = setTimeout(function () {
                 i({ type: 'timeout', target: t })
               }, 12e4)
               ;(t.onerror = t.onload = i), document.head.appendChild(t)
@@ -2486,8 +2478,8 @@
         var t = (window.webpackJsonp = window.webpackJsonp || []),
           l = t.push.bind(t)
         ;(t.push = d), (t = t.slice())
-        for (var u = 0; u < t.length; u++) d(t[u])
-        var c = l
+        for (var c = 0; c < t.length; c++) d(t[c])
+        var u = l
         n()
       })([]),
         (window.__SCRIPTS_LOADED__.runtime = !0)
@@ -2512,14 +2504,14 @@
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.76de67c5.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.a43cce35.js"
     ></script>
     <script
       type="text/javascript"
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/main.b221d065.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/main.df1429e5.js"
     ></script>
     <script nonce="WIPED">
       ;(function () {

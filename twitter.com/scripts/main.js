@@ -6267,8 +6267,11 @@ window.__SCRIPTS_LOADED__.i18n &&
             responsive_web_birdwatch_consumption_enabled: !0,
             responsive_web_birdwatch_contribution_enabled: !0,
             responsive_web_birdwatch_hcomp_user: !0,
+            responsive_web_birdwatch_history_enabled: !0,
+            responsive_web_birdwatch_note_writing_enabled: !0,
             responsive_web_birdwatch_pivots_enabled: !0,
             responsive_web_birdwatch_rating_mini_survey_enabled: !0,
+            responsive_web_birdwatch_rating_participant_enabled: !0,
             responsive_web_birdwatch_ratings_v2_enabled: !0,
             responsive_web_birdwatch_site_enabled: !0,
             responsive_web_birdwatch_traffic_lights_enabled: !0,
@@ -6344,6 +6347,8 @@ window.__SCRIPTS_LOADED__.i18n &&
             responsive_web_highlight_details_experiment_bucket: !0,
             responsive_web_hoisting_anchor_invalidation_enabled: !0,
             responsive_web_home_revisit_fetch_disabled: !0,
+            responsive_web_home_refocus_fetch_interval_change_enabled: !0,
+            responsive_web_home_refocus_fetch_interval_seconds: !0,
             responsive_web_hw_cards_in_dms_enabled: !0,
             responsive_web_inline_login_box_enabled: !0,
             responsive_web_inline_reply_enabled: !0,
@@ -6474,7 +6479,6 @@ window.__SCRIPTS_LOADED__.i18n &&
             topics_context_controls_implicit_variation: !0,
             topics_discovery_page_enabled: !0,
             topics_discovery_topic_picker_page_enabled: !0,
-            topics_management_page_urp_migration_enabled: !0,
             traffic_rewrite_map: !0,
             tweet_limited_actions_config_enabled: !0,
             tweet_limited_actions_config_non_compliant: !0,
@@ -6486,7 +6490,6 @@ window.__SCRIPTS_LOADED__.i18n &&
             unified_cards_cta_color_blue_cta: !0,
             unified_cards_multi_destination_carousels_convert_to_single_card: !0,
             user_display_name_max_limit: !0,
-            viewing_other_users_topics_page_urp_migration_enabled: !0,
             voice_consumption_enabled: !0,
             voice_rooms_consumption_enabled: !0,
             voice_rooms_end_screen_participants: !0,
@@ -15225,7 +15228,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           Ao = function (e) {
             return cn.createElement(
               zr,
-              Pn()({}, e, { component: Po, featureSwitchName: 'responsive_web_birdwatch_contribution_enabled' }),
+              Pn()({}, e, { component: Po, featureSwitchName: 'responsive_web_birdwatch_note_writing_enabled' }),
             )
           },
           Mo = function (e) {
@@ -15237,7 +15240,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           No = function (e) {
             return cn.createElement(
               zr,
-              Pn()({}, e, { component: So, featureSwitchName: 'responsive_web_birdwatch_contribution_enabled' }),
+              Pn()({}, e, { component: So, featureSwitchName: 'responsive_web_birdwatch_note_writing_enabled' }),
             )
           },
           Bo = function (e) {
@@ -16842,10 +16845,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                 paddingRight: e.spaces.space32,
                 fontSize: e.fontSizes.headline1,
                 lineHeight: e.lineHeights.headline1,
+                marginTop: '-'.concat(e.spaces.space36),
+                alignSelf: 'flex-start',
               },
-              buttonNormal: { marginTop: '-'.concat(e.spaces.space28), marginHorizontal: 'auto' },
-              buttonVdl: { marginTop: '-'.concat(e.spaces.space36), alignSelf: 'flex-start' },
-              buttonContainerVdl: {
+              buttonContainer: {
                 width: 'calc(400px + 2 * '.concat(e.spaces.space32, ')'),
                 maxWidth: '100%',
                 paddingHorizontal: e.spaces.space32,
@@ -16862,11 +16865,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                 cn.createElement(Lr.a, { header: gu, message: _u }),
                 cn.createElement(
                   dn.a,
-                  { style: zn.a.isVdlRefreshEnabled() && Ou.buttonContainerVdl },
-                  cn.createElement(bu.a, {
-                    style: [Ou.button, zn.a.isVdlRefreshEnabled() ? Ou.buttonVdl : Ou.buttonNormal],
-                    type: vu.a.Text,
-                  }),
+                  { style: Ou.buttonContainer },
+                  cn.createElement(bu.a, { style: [Ou.button], type: vu.a.Text }),
                 ),
               )
             },
@@ -23926,9 +23926,16 @@ window.__SCRIPTS_LOADED__.i18n &&
                   )
                 }),
                 s()(this, 'playPreview', function () {
+                  var e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0]
                   return (
                     r.playerReadyPromise.then(function () {
-                      r._dispatch(Object(C.f)(r.id)), r.initiallyMuted && (r.initiallyMuted = !1)
+                      var t = O.a.getState(),
+                        n = (t && t.players && t.players[r.id]) || {},
+                        o = n.isPreview,
+                        i = n.hasPlaybackStarted
+                      ;(!o && i) || e
+                        ? r._dispatch(u.Y(r.id))
+                        : (r._dispatch(Object(C.f)(r.id)), r.initiallyMuted && (r.initiallyMuted = !1))
                     }),
                     r
                   )
@@ -23936,7 +23943,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                 s()(this, 'pausePreview', function () {
                   return (
                     r.playerReadyPromise.then(function () {
-                      r._dispatch(Object(C.e)(r.id))
+                      var e = O.a.getState()
+                      ;((e && e.players && e.players[r.id]) || {}).isPreview
+                        ? r._dispatch(Object(C.e)(r.id))
+                        : r._dispatch(u.V(r.id))
                     }),
                     r
                   )
@@ -77746,16 +77756,23 @@ window.__SCRIPTS_LOADED__.i18n &&
           E = n('UVub'),
           j = function (e) {
             var t = e.children,
-              n = e.onLongPress
+              n = e.onLongPress,
+              r = v.useCallback(function (e) {
+                return e.preventDefault()
+              }, [])
             return v.createElement(
               E.a,
               {
                 onLongPress: n,
                 onPressIn: function () {
-                  ;(document.body.style.userSelect = 'none'), (document.body.style.webkitUserSelect = 'none')
+                  ;(document.body.style.userSelect = 'none'),
+                    (document.body.style.webkitUserSelect = 'none'),
+                    document.body.addEventListener('contextmenu', r)
                 },
                 onPressOut: function () {
-                  ;(document.body.style.userSelect = ''), (document.body.style.webkitUserSelect = '')
+                  ;(document.body.style.userSelect = ''),
+                    (document.body.style.webkitUserSelect = ''),
+                    document.body.removeEventListener('contextmenu', r)
                 },
               },
               t,
@@ -80633,7 +80650,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             autoPollNewTweets: !1,
             autoShowNewTweets: void 0,
             preciseLocationEnabled: !1,
-            undoTweet: { original: !0, reply: !0, quote: !0, thread: !0, durationSecs: 20 },
+            undoPreview: { original: void 0, reply: void 0, quote: void 0, thread: void 0, durationSecs: void 0 },
           }
         function _() {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : g,
@@ -80690,7 +80707,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             return e[s.a][m].preciseLocationEnabled
           },
           D = function (e) {
-            return e[s.a][m].undoTweet
+            return e[s.a][m].undoPreview
           },
           L = 'rweb/settings/SET_LOCAL',
           A = function (e) {

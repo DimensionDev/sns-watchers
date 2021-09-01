@@ -912,6 +912,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('b6f822b9', 'Copy link to Tweet'),
           n('f14df406', 'Copy link to ad'),
           n('d9837138', 'Remove Tweet from Bookmarks'),
+          n('jf9c38df', 'React button'),
+          n('c5dc88fc', 'Choose from more options to express how you feel.'),
           n('ff9348b8', 'Share ad via …'),
           n('ebad846b', 'Share Tweet via …'),
           n('h438b014', function (e) {
@@ -933,20 +935,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('g449dfaa', 'Retweet instead?'),
           n('cf7a1b47', 'Your drafted Tweet will be discarded before you reply.'),
           n('aec89ef0', 'Your drafted Tweet will be discarded before you Quote Tweet.'),
-          n('f755f71f', 'Got It'),
-          n('afe7ba26', 'Why can’t you Like this?'),
-          n('ddb7acf0', 'Why can’t you react to this?'),
-          n('ae2c8a1e', 'Why can’t you reply to this?'),
-          n('jead3bc1', 'Why can’t you share this?'),
-          n('ff25aba5', 'Why can’t you view Tweet activity?'),
-          n('jf9c38df', 'React button'),
-          n('c5dc88fc', 'Choose from more options to express how you feel.'),
-          n('i2aeb0d2', 'Only members of the Community can reply to Community content.'),
-          n('a407151c', 'Only members of the Community can Like Community content.'),
-          n('g4617e47', 'Only members of the Community can react to Community content.'),
-          n('c72c18b0', 'Only members of the Community can share Community content.'),
-          n('a6838d8d', 'Only members of the Community can view Tweet activity on Community content.'),
-          n('eb2aba8e', 'Learn more'),
           n('ibd021f1', 'Want to read the article first?'),
           n('ca58508e', 'You’re about to share an article you haven’t opened on Twitter.'),
           n('g5092765', 'Read article'),
@@ -956,6 +944,28 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('ae5c603c', 'You can’t add Tweets from protected accounts to your Bookmarks — yet.'),
           n('h5634a0b', 'Tweet is already in your Bookmarks'),
           n('b657101c', 'Something went wrong. Try bookmarking that Tweet again in a minute.'),
+          n('f755f71f', 'Got It'),
+          n('d0270ae1', 'This Tweet is hidden'),
+          n('ba352986', 'You can’t reply … yet'),
+          n('cb18be31', 'You can’t do that … yet'),
+          n('ae2c8a1e', 'Why can’t you reply to this?'),
+          n('afe7ba26', 'Why can’t you Like this?'),
+          n('ddb7acf0', 'Why can’t you react to this?'),
+          n('jead3bc1', 'Why can’t you share this?'),
+          n('ff25aba5', 'Why can’t you view Tweet activity?'),
+          n(
+            'c8b72f50',
+            'Only the Tweet author and Community moderation team can see it, and engagements are disabled.',
+          ),
+          n(
+            'fa94c9da',
+            'Communities are public, so you can read the Tweets — but right now, participation is invite-only.',
+          ),
+          n(
+            'if9bcebd',
+            'Communities are public, so you can read the Tweets — but only members can interact with them.',
+          ),
+          n('eb2aba8e', 'Learn more'),
           n('e86cb37f', 'We put a warning on this Tweet because it might have sensitive content.'),
           n('f1824804', 'Appeal this warning'),
           n('fda78a70', 'Something went wrong. Try removing that Tweet from your bookmarks again in a minute.'),
@@ -1126,6 +1136,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('g93586be', 'Days'),
           n('d073b644', 'Hours'),
           n('a2f0728e', 'Minutes'),
+          n('i859676b', 'Your Tweets are protected'),
+          n('c9a48d3f', 'make your Tweets public'),
           n('bfb895b1', function (e) {
             return 'Will send on ' + e.date + ' at ' + e.time
           }),
@@ -1178,11 +1190,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('b2e94283', function (e) {
             return 'via @' + e.viaScreenName
           }),
-          n('f70a36d0', 'Tweet all'),
-          n('ic011119', 'Want to revise this or mute them instead?'),
+          n('f70a36d0', 'Tweet all')
+        n('ic011119', 'Want to revise this or mute them instead?'),
           n('f6b7745a', 'Want to revise this or block them instead?'),
-          n('a75cc0f8', 'Want to revise this or hide their reply instead?')
-        n('i2b9632d', 'Successfully unblocked.'),
+          n('a75cc0f8', 'Want to revise this or hide their reply instead?'),
+          n('i2b9632d', 'Successfully unblocked.'),
           n('h3032750', 'Get more info'),
           n('af250eb6', 'Blocking user'),
           n('ib147a39', 'Hiding reply'),
@@ -1561,7 +1573,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           n('f58d2d3b', 'You can’t rejoin'),
           n('d98a4ab6', 'Members who’ve been previously removed by a moderator can’t rejoin.'),
-          n('i859676b', 'Your Tweets are protected'),
           n('fc2a5c92', 'Something went wrong'),
           n('bf7bdb60', 'It’s not you, it’s us (really). Please try again later.'),
           n('h27d695f', 'You can’t leave just yet'),
@@ -1954,6 +1965,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('eb8eeaf0', 'Learn more'),
           n('h486f753', 'Learn more'),
           n('a77ed149', 'Learn more'),
+          n('jc7215cd', 'Learn more'),
+          n('gdb5ae61', 'Learn more'),
+          n('icb5913e', 'Learn more'),
+          n('af819831', 'Learn more'),
+          n('d35525bf', 'Learn more'),
           n('j4d2c2fd', 'Learn more'),
           n('bd70d5d0', 'Learn more'),
           n('h9ec0778', 'Learn more'),
@@ -1961,7 +1977,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('f7998564', 'Learn more'),
           n('f925ebda', 'Learn more'),
           n('h0212626', 'Learn more'),
-          n('h8e242fe', 'Learn more'),
           n('f7fb77b2', 'Learn more'),
           n('ed8c22d7', 'Learn more'),
           n('h04c272b', 'Learn more'),
@@ -2044,8 +2059,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Select a method to show that your account is authentic and managed by the production organization related to this request.',
           ),
           n(
-            'fae201f0',
-            'The official website of a qualifying production organization that references your Twitter account.',
+            'e6327f3b',
+            'Provide a link that references your account as the official Twitter account for your production. The reference must come from the official website of a Verified entity.',
+          ),
+          n(
+            'c7f75eab',
+            'An official website of a Verified organization or publication that references your Twitter account.',
           ),
           n(
             'g23e3f96',
@@ -2309,8 +2328,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'You have just one security key linked to your account. To make sure you don’t get locked out if you lose it, add another key, and save a two-factor authentication backup code.',
           ),
           n('ja6bbfa0', 'Loading login verification data'),
-          n('dd703318', 'Two-factor authentication'),
-          n('c2570921', 'Text message'),
+          n('dd703318', 'Two-factor authentication')
+        function i(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var n = t[o]
+            ;(n.enumerable = n.enumerable || !1),
+              (n.configurable = !0),
+              'value' in n && (n.writable = !0),
+              Object.defineProperty(e, n.key, n)
+          }
+        }
+        function r(e, t) {
+          return (r =
+            Object.setPrototypeOf ||
+            function (e, t) {
+              return (e.__proto__ = t), e
+            })(e, t)
+        }
+        n('c2570921', 'Text message'),
           n(
             'f3820211',
             'Use your mobile phone to receive a text message with an authentication code to enter when you log in to Twitter.',
@@ -2328,24 +2363,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n(
             'e2b81a1f',
             'Use a security key that inserts into your computer or syncs to your mobile device when you log in to Twitter. You’ll need to use a supported mobile device or web browser.',
-          )
-        function i(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var n = t[o]
-            ;(n.enumerable = n.enumerable || !1),
-              (n.configurable = !0),
-              'value' in n && (n.writable = !0),
-              Object.defineProperty(e, n.key, n)
-          }
-        }
-        function r(e, t) {
-          return (r =
-            Object.setPrototypeOf ||
-            function (e, t) {
-              return (e.__proto__ = t), e
-            })(e, t)
-        }
-        n('cd195528', 'Add new security key'),
+          ),
+          n('cd195528', 'Add new security key'),
           n('b1686800', 'Manage security keys'),
           n('a1860ee7', 'Temporary password'),
           n('j45a2856', 'Create a one-time temporary password to use with third-party services.'),
@@ -3517,10 +3536,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'c78fafa3',
             'Leaving this page will cause you to lose selected Tweets that have not yet been added to your Moment.',
           ),
-          n('e16e8170', 'Position'),
-          n('a2bb5115', function (e) {
-            return e.count + ' Tweet' + a(e.count, '', 's')
-          }),
+          n('e16e8170', 'Position')
+        n('a2bb5115', function (e) {
+          return e.count + ' Tweet' + a(e.count, '', 's')
+        }),
           n('j5602a96', function (e) {
             return 'You’ve reached the ' + e.maxTweets + ' Tweet maximum'
           }),
@@ -3528,8 +3547,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('c371fb99', 'End'),
           n('b5210d57', 'Enter Collection ID'),
           n('a536fff6', 'Invalid Collection ID'),
-          n('c63d84a3', 'Search for Twitter account')
-        n('b367953c', 'Tweets by'),
+          n('c63d84a3', 'Search for Twitter account'),
+          n('b367953c', 'Tweets by'),
           n('f12858d3', 'Liked by'),
           n('e2a098dc', 'Sort by'),
           n('d497b854', 'Retweets'),
@@ -3749,15 +3768,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('e241095e', 'Your Topics'),
           n('f8bc75e2', 'your Topics'),
           n('ed827af6', 'Topic is unavailable.'),
-          n('d3855c7f', function (e) {
-            return '@' + e.screenName + ' isn’t following any Topics'
-          }),
-          n('i8bd07a9', 'When they do, they’ll be listed here.'),
-          n('i89d8b4f', 'You haven’t told us any Topics you would like us to stop recommending'),
-          n(
-            'j1078f92',
-            'When you mark that you’re not interested in a given Topic, it will show up here and we will not recommend that you follow that Topic in your Home timeline.',
-          ),
           n('d094c720', 'All Topics'),
           n('ea831526', 'Tweet with replies'),
           n('a90e1e67', function (e) {
@@ -4183,6 +4193,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('b2f3c46a', 'When someone Super Follows them, they’ll be listed here.'),
           n('ec251f36', 'When someone you know follows them, they’ll be listed here.'),
           n('c0455f4a', 'When someone follows them, they’ll be listed here.'),
+          n('i8bd07a9', 'When they do, they’ll be listed here.'),
           n('ce281ddf', 'You don’t have any follower requests'),
           n('d441fe05', 'When someone requests to follow you, it’ll show up here.'),
           n('j85d8d9f', 'No follow request pending for that user.'),
@@ -5279,14 +5290,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'caf3fb60',
-                get: function () {
-                  return [
-                    'We try to prevent a Tweet like this that otherwise breaks the Twitter Rules from reaching more people, so we have disabled most of the ways to engage with it. If you want to talk about it, you can still Quote Tweet. ',
-                  ]
-                },
-              },
-              {
                 key: 'f62df26d',
                 get: function () {
                   return ['Hover over ', ' to pick a reaction']
@@ -5296,6 +5299,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'gcdc0fd5',
                 get: function () {
                   return ['Press and hold ', ' to pick a reaction']
+                },
+              },
+              {
+                key: 'caf3fb60',
+                get: function () {
+                  return [
+                    'We try to prevent a Tweet like this that otherwise breaks the Twitter Rules from reaching more people, so we have disabled most of the ways to engage with it. If you want to talk about it, you can still Quote Tweet. ',
+                  ]
                 },
               },
               {
@@ -5332,6 +5343,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'e602f705',
                 get: function () {
                   return ['We will show ', ' your reaction to this Tweet']
+                },
+              },
+              {
+                key: 'a02c8d74',
+                get: function () {
+                  return [
+                    'Communities are public, so protected accounts can’t join the conversation. You can read and like the Tweets, but to do more, you’ll need to ',
+                    '.',
+                  ]
                 },
               },
               {
@@ -5797,6 +5817,46 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
+                key: 'e2465096',
+                get: function () {
+                  return [
+                    'Provide a link to a Google Trends profile with evidence of recent search activity about your production. ',
+                  ]
+                },
+              },
+              {
+                key: 'g83bcecc',
+                get: function () {
+                  return [
+                    'Provide links to at least three articles about your production in qualifying news publications in the last six months. ',
+                  ]
+                },
+              },
+              {
+                key: 'f3016c6f',
+                get: function () {
+                  return [
+                    'Pick a method to show that your account qualifies for Verification as the official account of a major production. ',
+                  ]
+                },
+              },
+              {
+                key: 'h74144bd',
+                get: function () {
+                  return [
+                    'Provide a link showing evidence that your production organization is listed on a public stock exchange. ',
+                  ]
+                },
+              },
+              {
+                key: 'jef5dfc5',
+                get: function () {
+                  return [
+                    'Provide a link to a Wikipedia page about your production that contains at least three external references. ',
+                  ]
+                },
+              },
+              {
                 key: 'ifa23d48',
                 get: function () {
                   return ['Provide a link to your entertainment company’s website. ']
@@ -5847,14 +5907,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 get: function () {
                   return [
                     'Provide a link to your IMDB page. The page needs to include at least fifty production credits. ',
-                  ]
-                },
-              },
-              {
-                key: 'i390ab80',
-                get: function () {
-                  return [
-                    'Provide a link to an official website associated with the production of films, events/festivals, TV shows or other entertainment entities. ',
                   ]
                 },
               },
