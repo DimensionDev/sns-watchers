@@ -492,7 +492,7 @@ window.__SCRIPTS_LOADED__.polyfills &&
             (e.exports.polyfill = function (e) {
               e || (e = u), (e.requestAnimationFrame = a), (e.cancelAnimationFrame = c)
             })
-        }.call(this, n('bIdo')))
+        }.call(this, n('yLpj')))
       },
       '0yig': function (e, t, n) {
         var r = n('9JhN'),
@@ -2580,7 +2580,7 @@ window.__SCRIPTS_LOADED__.polyfills &&
               return this
             })() ||
             Function('return this')()
-        }.call(this, n('bIdo')))
+        }.call(this, n('yLpj')))
       },
       '9MNk': function (e, t, n) {
         'use strict'
