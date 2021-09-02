@@ -7,18 +7,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         o.r(t)
         o('oTxr')
       },
-      bIdo: function (e, t) {
-        var o
-        o = (function () {
-          return this
-        })()
-        try {
-          o = o || new Function('return this')()
-        } catch (n) {
-          'object' == typeof window && (o = window)
-        }
-        e.exports = o
-      },
       oTxr: function (e, t, o) {
         'use strict'
         var n = o('3XMw')._register('en', {
@@ -1261,15 +1249,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('b50ea616', 'New to Twitter?'),
           n('ie8e1ffc', 'Sign up now to get your own personalized timeline!'),
           n('ib65b1c6', 'Sign up with Apple'),
-          n('bf5904f3', 'Log in with Apple'),
+          n('f55cebb7', 'Sign in with Apple'),
           n('g61ed8a4', 'Something went wrong.'),
-          n('e0870f25', 'Sign up with Google'),
-          n('h57a411d', 'Log in with Google'),
           n('a62c9c33', 'Follow your interests.'),
           n('cf39fca2', 'Hear what people are talking about.'),
           n('j86184fd', 'Join the conversation.'),
           n('d9e109ae', 'Join Twitter today.'),
-          n('g2b8acd4', 'Log in to Twitter'),
+          n('f86f23b5', 'Sign in to Twitter'),
           n('eba1b197', 'Happening now'),
           n('b0dbe914', 'Use phone, email or username'),
           n('h0ff39da', 'Twitter. It’s what’s happening'),
@@ -1278,7 +1264,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'From breaking news and entertainment to sports and politics, get the full story with all the live commentary.',
           ),
           n('ie4dd8d6', 'Sign up'),
-          n('cb29db8a', 'Log in'),
+          n('fb9dd9b0', 'Sign in'),
           n('c8c5faad', 'Terms of Service'),
           n('ba5b7ecb', 'Privacy Policy'),
           n('f4fe46c3', 'Cookie Use.'),
@@ -1563,6 +1549,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('af7c11a9', 'Community Info'),
           n('d3af208a', 'Only members can Tweet and reply'),
           n('c5a16890', 'Everyone can view, Like, Quote Tweet, and share Tweets within any Community on Twitter.'),
+          n('e3f04700', function (e) {
+            return e.count + ' new Tweet' + a(e.count, '', 's') + ' to review'
+          }),
+          n('b139b549', 'Invite members'),
+          n('e2429f56', 'Tweets to review'),
+          n('df15d5b7', function (e) {
+            return e.count + ' new Tweet' + a(e.count, '', 's')
+          }),
+          n('ba2e6395', 'Support & resources'),
           n('a0e3ece4', 'Community Detail'),
           n('hb9400db', 'See More'),
           n('aa7ae3f6', 'Joined'),
@@ -1578,15 +1573,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('h27d695f', 'You can’t leave just yet'),
           n('b02360f5', 'The last admin or moderator can’t leave unless the Community is empty.'),
           n('e77dfaf0', 'make your Tweets public'),
-          n('e3f04700', function (e) {
-            return e.count + ' new Tweet' + a(e.count, '', 's') + ' to review'
-          }),
-          n('b139b549', 'Invite members'),
-          n('e2429f56', 'Tweets to review'),
-          n('df15d5b7', function (e) {
-            return e.count + ' new Tweet' + a(e.count, '', 's')
-          }),
-          n('ba2e6395', 'Support & resources'),
           n('c18e3a3e', 'There aren’t any Tweets in this Community'),
           n('d68146c0', 'When anyone in this Community Tweets, they’ll show up here.'),
           n('h5245afa', 'Community'),
@@ -1627,6 +1613,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('i6568549', function (e) {
             return 'You have ' + e.remaining_invite_count + ' invite' + a(e.remaining_invite_count, '', 's') + ' left'
           }),
+          n('b4f16d00', 'Search for people to invite'),
           n(
             'ja1387a7',
             'Search results will include only your followers and people who allow Direct Messages from everyone.',
@@ -1668,7 +1655,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'While Communities are public and can be seen by anyone, this Tweet will only be shared with others in the Community — not your followers.',
           ),
           n('ed33a3b6', 'Hello, wordsmiths.'),
-          n('jea718ec', 'Learn More'),
+          n('d5bda8b3', 'We now have a newsletter tool.'),
           n('c55eed71', 'Replying to'),
           n('caca3101', 'Others in this conversation'),
           n('c6a6dc2f', function (e) {
@@ -2328,7 +2315,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'You have just one security key linked to your account. To make sure you don’t get locked out if you lose it, add another key, and save a two-factor authentication backup code.',
           ),
           n('ja6bbfa0', 'Loading login verification data'),
-          n('dd703318', 'Two-factor authentication')
+          n('dd703318', 'Two-factor authentication'),
+          n('c2570921', 'Text message')
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var n = t[o]
@@ -2345,11 +2333,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        n('c2570921', 'Text message'),
-          n(
-            'f3820211',
-            'Use your mobile phone to receive a text message with an authentication code to enter when you log in to Twitter.',
-          ),
+        n(
+          'f3820211',
+          'Use your mobile phone to receive a text message with an authentication code to enter when you log in to Twitter.',
+        ),
           n('ab61b41a', 'Authentication app'),
           n(
             'h4787492',
@@ -3392,6 +3379,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'This is the best place to see what’s happening in your world. Find some people and topics to follow now.',
           ),
           n('bf17ded9', 'Let’s go!'),
+          n('g2b8acd4', 'Log in to Twitter'),
           n('bdc9d8a2', 'Login on Twitter'),
           n(
             'c2ab20ab',
@@ -5475,7 +5463,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'bc88e539',
+                key: 'c83ef3f5',
                 get: function () {
                   return ['Already have an account? ']
                 },
@@ -5640,12 +5628,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'a6d33440',
                 get: function () {
                   return ['You kept @', '’s Tweet']
-                },
-              },
-              {
-                key: 'dd9ea7de',
-                get: function () {
-                  return ['We now have a newsletter tool. ']
                 },
               },
               {
@@ -7675,6 +7657,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
       },
       rwV7: function (e, t) {
         e.exports = !1
+      },
+      yLpj: function (e, t) {
+        var o
+        o = (function () {
+          return this
+        })()
+        try {
+          o = o || new Function('return this')()
+        } catch (n) {
+          'object' == typeof window && (o = window)
+        }
+        e.exports = o
       },
     },
     [['9lJ4', 1, 2]],
