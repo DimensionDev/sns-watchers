@@ -473,9 +473,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return '@' + e.screenName + ' has been unmuted.'
           }),
           n('b3036480', 'Remove this follower'),
-          n('h2f91a90', function (e) {
+          n('ia9103ec', function (e) {
             return (
-              '@' + e.screenName + ' will be removed from your followers and won’t be notified that you removed them.'
+              '@' +
+              e.screenName +
+              ' will be removed from your followers and won’t be notified by Twitter. They can follow you again in the future.'
             )
           }),
           n('ibd0b841', 'Copy link to profile'),
@@ -1473,6 +1475,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           n('ff3e0be2', 'Join Birdwatch'),
           n('b8b34f54', 'Ratings received'),
+          n('fd284b08', 'Current Standing'),
+          n('ff746f63', 'You can earn badges for writing notes and for rating notes from other contributors.'),
           n('b5eb23f9', function (e) {
             return '' + e.count
           }),
@@ -1547,8 +1551,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('b33e4e4a', 'Loading Communities'),
           n('cc683fb9', 'About Community'),
           n('af7c11a9', 'Community Info'),
-          n('d3af208a', 'Only members can Tweet and reply'),
-          n('c5a16890', 'Everyone can view, Like, Quote Tweet, and share Tweets within any Community on Twitter.'),
+          n('db1b9462', 'Only members can Tweet, like, or reply.'),
+          n('ea49402d', 'Everyone can view Tweets within any Community on Twitter.'),
           n('e3f04700', function (e) {
             return e.count + ' new Tweet' + a(e.count, '', 's') + ' to review'
           }),
@@ -2314,9 +2318,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'e0d79de8',
             'You have just one security key linked to your account. To make sure you don’t get locked out if you lose it, add another key, and save a two-factor authentication backup code.',
           ),
-          n('ja6bbfa0', 'Loading login verification data'),
-          n('dd703318', 'Two-factor authentication'),
-          n('c2570921', 'Text message')
+          n('ja6bbfa0', 'Loading login verification data')
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var n = t[o]
@@ -2333,10 +2335,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        n(
-          'f3820211',
-          'Use your mobile phone to receive a text message with an authentication code to enter when you log in to Twitter.',
-        ),
+        n('dd703318', 'Two-factor authentication'),
+          n('c2570921', 'Text message'),
+          n(
+            'f3820211',
+            'Use your mobile phone to receive a text message with an authentication code to enter when you log in to Twitter.',
+          ),
           n('ab61b41a', 'Authentication app'),
           n(
             'h4787492',
@@ -2433,6 +2437,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n(
             'j5267913',
             'Location labels you’ve added to your Tweets will no longer be visible on Twitter.com, Twitter for iOS, and Twitter for Android. These updates may take some time to go into effect.',
+          ),
+          n(
+            'ed7fa034',
+            'Your location services are not currently enabled on this device. You can turn them on in your device settings.',
           ),
           n('b15788db', 'Delete all location information'),
           n('h83e5c06', 'Remove all location information attached to your Tweets'),
@@ -2538,6 +2546,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('j94599ec', 'Add avatar photo'),
           n('df31d76a', 'Add banner photo'),
           n('c01a0e19', 'Confirm date of birth?'),
+          n('df2c469a', 'Switch to professional'),
+          n('e1f76977', 'Edit professional profile'),
           n(
             'addbe8e7',
             'Consider using a name without special characters so it’s accessible to even more people, including people who are blind or have low vision.',
@@ -3315,15 +3325,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('dfef5ab8', 'Twitter - Keyboard shortcuts'),
           n('aefd89c7', 'Navigation'),
           n('cafdefb1', 'Actions'),
-          n('ea316760', 'Next Tweet in editing panel'),
-          n('a83b4b7d', 'Previous Tweet in editing panel'),
-          n('b01d4de8', 'Next Tweet in center panel'),
-          n('d2710c09', 'Previous Tweet in center panel'),
-          n('a0419190', 'Select or drop a Tweet for dragging'),
-          n('i4283392', 'Cancel drag'),
-          n('daf7a07d', 'Right editing and preview panel'),
-          n('g40aba2f', 'Left navigation menu panel'),
-          n('a63bf02f', 'Center Tweet or Moments panel'),
+          n('e814ed10', 'Next Tweet in editing pane'),
+          n('c1250b41', 'Previous Tweet in editing pane'),
+          n('ddd4bf24', 'Next Tweet in center pane'),
+          n('ia2742f9', 'Previous Tweet in center pane'),
+          n('a8b6f61a', 'Drag and drop Tweet'),
+          n('dfe59ab8', 'Cancel drag-and-drop'),
+          n('c602967d', 'Focus editing or preview pane'),
+          n('g42208cb', 'Focus navigation menu pane'),
+          n('gf73b335', 'Focus Tweet or Moments pane'),
           n('c08e7935', 'Event Tweets'),
           n('j32d345d', 'The following may contain sensitive material'),
           n('a01d5a7c', 'This is not available because it was created by someone you blocked'),
@@ -3516,18 +3526,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'd6352bf7',
             'Only those with the URL can see this Moment. Use caution — while unlikely, the URL is guessable.',
           ),
-          n('b81437d2', 'Select visibility mode'),
-          n('i693139c', 'Contains sensitive content'),
+          n('b81437d2', 'Select visibility mode')
+        n('i693139c', 'Contains sensitive content'),
           n('b198b98f', 'Your Moment’s visibility settings were updated.'),
           n('ed26ca65', 'Add Tweets'),
           n(
             'c78fafa3',
             'Leaving this page will cause you to lose selected Tweets that have not yet been added to your Moment.',
           ),
-          n('e16e8170', 'Position')
-        n('a2bb5115', function (e) {
-          return e.count + ' Tweet' + a(e.count, '', 's')
-        }),
+          n('e16e8170', 'Position'),
+          n('a2bb5115', function (e) {
+            return e.count + ' Tweet' + a(e.count, '', 's')
+          }),
           n('j5602a96', function (e) {
             return 'You’ve reached the ' + e.maxTweets + ' Tweet maximum'
           }),
@@ -3774,6 +3784,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('d35d74e3', 'Conversation'),
           n('g9079b93', 'You may only view analytics about your own Tweets.'),
           n('a57daeb1', 'Tweet Analytics'),
+          n('ib1f8491', function (e) {
+            return e.likeCount + ' like' + a(e.likeCount, '', 's')
+          }),
+          n('fbdb85f4', function (e) {
+            return e.retweetCount + ' Retweet' + a(e.retweetCount, '', 's')
+          }),
+          n('d0eeb126', function (e) {
+            return e.replyCount + ' repl' + a(e.replyCount, 'y', 'ies')
+          }),
           n('a065172e', 'You may only promote your own Tweets.'),
           n('cfcdb4a1', 'Something went wrong. Make sure you’ve disabled any ad blockers.'),
           n('dcfb0332', 'Promote your Tweet'),
@@ -4703,6 +4722,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('cededc6f', function (e) {
             return 'People @' + e.screenName + ' mentioned can reply'
           }),
+          n('g7ea1122', 'Only the author and moderators can see this Tweet'),
+          n('f9560709', 'It was hidden by the mods for breaking Community rules.'),
           n('dbf9738f', 'Who can see this Tweet?'),
           n('d95d8f24', 'You and your Super Followers can see this Tweet'),
           n('ff6895e3', function (e) {
