@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [108],
+    [110],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -11,7 +11,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var n = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(255).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(257).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function a(e, t, o) {
@@ -583,6 +583,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('i5aa4cef', 'More menu items'),
           n('b8533bac', 'Topics'),
           n('h02a6fe5', 'Communities'),
+          n('ded416bf', 'Spaces'),
           n('i5f7b6b8', 'Account'),
           n('c5960556', 'Account info'),
           n('da4691aa', 'View all accounts'),
@@ -1179,9 +1180,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('de5071ba', 'Super Followers'),
           n('b2e94283', function (e) {
             return 'via @' + e.viaScreenName
-          }),
-          n('f70a36d0', 'Tweet all')
-        n('ic011119', 'Want to revise this or mute them instead?'),
+          })
+        n('f70a36d0', 'Tweet all'),
+          n('ic011119', 'Want to revise this or mute them instead?'),
           n('f6b7745a', 'Want to revise this or block them instead?'),
           n('a75cc0f8', 'Want to revise this or hide their reply instead?'),
           n('i2b9632d', 'Successfully unblocked.'),
@@ -2317,8 +2318,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n(
             'e0d79de8',
             'You have just one security key linked to your account. To make sure you don’t get locked out if you lose it, add another key, and save a two-factor authentication backup code.',
-          ),
-          n('ja6bbfa0', 'Loading login verification data')
+          )
         function i(e, t) {
           for (var o = 0; o < t.length; o++) {
             var n = t[o]
@@ -2335,7 +2335,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        n('dd703318', 'Two-factor authentication'),
+        n('ja6bbfa0', 'Loading login verification data'),
+          n('dd703318', 'Two-factor authentication'),
           n('c2570921', 'Text message'),
           n(
             'f3820211',
@@ -2579,6 +2580,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('c7905f88', function (e) {
             return 'Born ' + e.year
           }),
+          n('cd9102d4', 'Choose category'),
+          n('d93271e2', 'Show category'),
+          n('h26379fe', 'If enabled, the category will be visible in your profile.'),
           n('f8bd75d4', 'Advanced filters'),
           n('aaafffd9', 'Muted notifications'),
           n('j29ab12f', 'Mute notifications from people:'),
@@ -3519,15 +3523,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('bf615cf9', 'Go to Moment'),
           n('d8438441', 'Visibility settings'),
           n('a1d5303c', 'Private'),
-          n('a787e494', 'Only owners can see this Moment.'),
-          n('effa6f11', 'Everyone can discover this Moment.'),
+          n('a787e494', 'Only owners can see this Moment.')
+        n('effa6f11', 'Everyone can discover this Moment.'),
           n('cc8f8a8f', 'Unlisted'),
           n(
             'd6352bf7',
             'Only those with the URL can see this Moment. Use caution — while unlikely, the URL is guessable.',
           ),
-          n('b81437d2', 'Select visibility mode')
-        n('i693139c', 'Contains sensitive content'),
+          n('b81437d2', 'Select visibility mode'),
+          n('i693139c', 'Contains sensitive content'),
           n('b198b98f', 'Your Moment’s visibility settings were updated.'),
           n('ed26ca65', 'Add Tweets'),
           n(
