@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [110],
+    [109],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -11,7 +11,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var n = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(257).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(256).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function a(e, t, o) {
@@ -3624,9 +3624,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('b6f9f574', 'Subscribe to newsletter'),
           n('d1c4aeaf', 'Terms of Service'),
           n('a5d264ec', 'Privacy Policy'),
-          n('dbf6d075', 'Your Fleet was removed'),
-          n('bc52028e', 'Your Fleet contained a Tweet from an account owner who limits who can view their Tweets.'),
-          n('daf6f4b1', 'Your Fleet contained a Tweet that was deleted by the Tweet author.'),
           n('a98ba778', 'Notifications timelines'),
           n('f287bb3a', 'From likes to Retweets and a whole lot more, this is where all the action happens.'),
           n('h994ec4f', 'From reactions to Retweets and a whole lot more, this is where all the action happens.'),
@@ -4279,6 +4276,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           n('c5954d30', 'List'),
           n('e3fcbdba', 'Dismiss'),
+          n('bed2945c', 'read image description'),
           n('j190bf19', 'LIVE'),
           n('f17dfdb5', 'Play'),
           n('fe64170b', 'When you make a selection it cannot be changed'),
