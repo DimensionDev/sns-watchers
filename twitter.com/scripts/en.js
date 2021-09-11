@@ -9,7 +9,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
       },
       oTxr: function (e, t, o) {
         'use strict'
-        var n = o('3XMw')._register('en', {
+        var n = o('k/n2')._register('en', {
           get emoji() {
             return o.e(256).then(o.t.bind(null, 'oFUs', 7))
           },
@@ -316,14 +316,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('d7a0722f', function (e) {
             return e.othersCount + ' other' + a(e.othersCount, '', 's')
           }),
-          n('d9e524a7', 'Reacted to your Fleet'),
-          n('b3d08517', 'You reacted to their Fleet'),
-          n('ab1dd773', 'Responded to your Fleet'),
-          n('f483af99', 'You responded to their Fleet'),
           n('f720438f', 'This Fleet has expired'),
-          n('f9a364da', 'Go to Fleet'),
-          n('h59a1759', 'This Fleet has been flagged.'),
-          n('e51ddecb', 'Fleet image'),
           n('d9de7b57', 'This media is hidden because it’s from someone you don’t follow.'),
           n('f2879f4d', 'This message might include graphic media.'),
           n('b518221e', 'Open image'),
@@ -609,6 +602,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('d0a51fb1', 'Newsletters'),
           n('fd442790', 'Settings and privacy'),
           n('ab38b896', 'Twitter Ads'),
+          n('c9d41313', 'Twitter for Professionals'),
           n('a5d4fda0', 'Something went wrong, but don’t fret — let’s give it another shot.'),
           n('b20a3893', 'The account you are trying to switch to has been deleted.'),
           n('cdc1bff7', function (e) {
@@ -918,6 +912,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('ba370e34', 'Tweet liked'),
           n('d9034c72', 'Tweet unliked'),
           n('e518bc7a', 'Reaction added'),
+          n('f46ba415', 'Reaction added. Open the reaction picker for more options to express how you feel.'),
           n('c604dda2', 'Reaction removed'),
           n('f6c7249b', 'Tweet Retweeted'),
           n('f67de45a', 'Tweet Unretweeted'),
@@ -1180,13 +1175,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('de5071ba', 'Super Followers'),
           n('b2e94283', function (e) {
             return 'via @' + e.viaScreenName
-          })
-        n('f70a36d0', 'Tweet all'),
+          }),
+          n('f70a36d0', 'Tweet all'),
           n('ic011119', 'Want to revise this or mute them instead?'),
           n('f6b7745a', 'Want to revise this or block them instead?'),
           n('a75cc0f8', 'Want to revise this or hide their reply instead?'),
-          n('i2b9632d', 'Successfully unblocked.'),
-          n('h3032750', 'Get more info'),
+          n('i2b9632d', 'Successfully unblocked.')
+        n('h3032750', 'Get more info'),
           n('af250eb6', 'Blocking user'),
           n('ib147a39', 'Hiding reply'),
           n('e8ff17e5', 'Revise'),
@@ -1848,6 +1843,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('cc424a21', 'Advocacy reference'),
           n('ibfc1a5a', 'You aren’t eligible for verification in this category.'),
           n('e1c78795', 'Official website'),
+          n('a7f1cff6', 'Add official website reference'),
           n('je403ac5', 'Company, brand, or organization'),
           n('ff8c97fb', 'Entertainer or entertainment group'),
           n('h4d652fb', 'Government official or affiliate'),
@@ -1892,9 +1888,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('c680b5b7', 'Company website'),
           n('c0e57cb2', 'Add your creator profile'),
           n('f3c605b6', 'Creator profile'),
-          n('ed1144f6', 'Individual website'),
-          n('bfbdcb0c', 'IMDB'),
-          n('b25d3695', 'Link to your IMDB page. The page needs to include at least fifty production credits.'),
+          n('h042d1a5', 'IMDB profile'),
+          n('d2310f0b', 'A profile on IMDB that includes at least 50 production credits.'),
+          n('ba04b4c1', 'Add IMDB Profile'),
           n('gcf4c567', 'An official government, or government-affiliated, website that references you.'),
           n('a05b8445', 'Freelance journalist'),
           n('hdad12b1', 'Independent, freelance journalists with notable work in verified publications.'),
@@ -1939,6 +1935,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'An official website of a professional sports or esports organization that references you as a league, team, player, or coach.',
           ),
           n('j3da4de9', 'You can’t request verification right now'),
+          n('c076e32d', 'Learn more'),
           n('j2c21ab7', 'Learn more'),
           n('e492eeb4', 'Learn more'),
           n('ece0b9bc', 'Learn more'),
@@ -1946,7 +1943,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('hb96cb36', 'Learn more'),
           n('j6ef6afa', 'Learn more'),
           n('d42d1629', 'Learn more'),
-          n('c076e32d', 'Learn more'),
           n('ccadfc84', 'Learn more'),
           n('e8e39f94', 'Learn more'),
           n('e126dd3e', 'Learn more'),
@@ -1967,8 +1963,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('h9ec0778', 'Learn more'),
           n('eadd29ff', 'Learn more'),
           n('f7998564', 'Learn more'),
-          n('f925ebda', 'Learn more'),
-          n('h0212626', 'Learn more'),
+          n('b4e93970', 'Learn more'),
+          n('jb3e663d', 'Learn more'),
+          n('a7a51b91', 'Learn more'),
           n('f7fb77b2', 'Learn more'),
           n('ed8c22d7', 'Learn more'),
           n('h04c272b', 'Learn more'),
@@ -2001,7 +1998,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('g253cddf', 'An official email with a domain relevant to the category you chose.'),
           n('ca5fb0d4', 'An official website that directly references your Twitter account.'),
           n('g40cd2c0', 'Verified reference'),
-          n('a7f1cff6', 'Add official website reference'),
           n(
             'ce40e7a5',
             'Enter an official website which references your Twitter account and is associated with your verification request.',
@@ -2041,10 +2037,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n(
             'bd9d7f96',
             'The official website of a qualifying organization that references you and your Twitter account.',
-          ),
-          n(
-            'ic29fd45',
-            'Select a method to show that your account is authentic and managed by the individual in entertainment related to this request.',
           ),
           n(
             'g32c2900',
@@ -2318,8 +2310,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n(
             'e0d79de8',
             'You have just one security key linked to your account. To make sure you don’t get locked out if you lose it, add another key, and save a two-factor authentication backup code.',
-          )
-        function i(e, t) {
+          ),
+          n('ja6bbfa0', 'Loading login verification data'),
+          n('dd703318', 'Two-factor authentication'),
+          n('c2570921', 'Text message'),
+          n(
+            'f3820211',
+            'Use your mobile phone to receive a text message with an authentication code to enter when you log in to Twitter.',
+          ),
+          n('ab61b41a', 'Authentication app')
+        function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var n = t[o]
             ;(n.enumerable = n.enumerable || !1),
@@ -2328,25 +2328,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               Object.defineProperty(e, n.key, n)
           }
         }
-        function r(e, t) {
-          return (r =
+        function i(e, t) {
+          return (i =
             Object.setPrototypeOf ||
             function (e, t) {
               return (e.__proto__ = t), e
             })(e, t)
         }
-        n('ja6bbfa0', 'Loading login verification data'),
-          n('dd703318', 'Two-factor authentication'),
-          n('c2570921', 'Text message'),
-          n(
-            'f3820211',
-            'Use your mobile phone to receive a text message with an authentication code to enter when you log in to Twitter.',
-          ),
-          n('ab61b41a', 'Authentication app'),
-          n(
-            'h4787492',
-            'Use a mobile authentication app to get a verification code to enter every time you log in to Twitter.',
-          ),
+        n(
+          'h4787492',
+          'Use a mobile authentication app to get a verification code to enter every time you log in to Twitter.',
+        ),
           n('h6d0d89c', 'Security key'),
           n(
             'f57be1cc',
@@ -2583,6 +2575,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('cd9102d4', 'Choose category'),
           n('d93271e2', 'Show category'),
           n('h26379fe', 'If enabled, the category will be visible in your profile.'),
+          n('d3ad8902', 'You cannot access this page because you do not own a professional account.'),
           n('f8bd75d4', 'Advanced filters'),
           n('aaafffd9', 'Muted notifications'),
           n('j29ab12f', 'Mute notifications from people:'),
@@ -3308,12 +3301,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           n('ead349a7', 'The latest stories on Twitter - as told by Tweets.'),
           n('a19ce06f', 'Explore is unavailable.'),
-          n('bb037219', 'Fleet is loading'),
-          n('h34c5d39', 'We could not find that Fleet.'),
-          n('g434e603', 'Fleet video'),
-          n('g2fb3771', 'Report Fleet'),
-          n('i248de61', 'Next Fleet'),
-          n('a0599e21', 'Previous Fleet'),
           n('a50ba821', 'Search for GIFs'),
           n('c6f5ac52', 'Categories — GIF Search'),
           n('ab468378', function (e) {
@@ -3523,8 +3510,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('bf615cf9', 'Go to Moment'),
           n('d8438441', 'Visibility settings'),
           n('a1d5303c', 'Private'),
-          n('a787e494', 'Only owners can see this Moment.')
-        n('effa6f11', 'Everyone can discover this Moment.'),
+          n('a787e494', 'Only owners can see this Moment.'),
+          n('effa6f11', 'Everyone can discover this Moment.'),
           n('cc8f8a8f', 'Unlisted'),
           n(
             'd6352bf7',
@@ -3541,10 +3528,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('e16e8170', 'Position'),
           n('a2bb5115', function (e) {
             return e.count + ' Tweet' + a(e.count, '', 's')
-          }),
-          n('j5602a96', function (e) {
-            return 'You’ve reached the ' + e.maxTweets + ' Tweet maximum'
-          }),
+          })
+        n('j5602a96', function (e) {
+          return 'You’ve reached the ' + e.maxTweets + ' Tweet maximum'
+        }),
           n('j15abc53', 'Beginning'),
           n('c371fb99', 'End'),
           n('b5210d57', 'Enter Collection ID'),
@@ -3690,6 +3677,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Showing results for "' + e.suggestion + '"'
           }),
           n('i1801686', 'This is an invalid search query. Please try a different one.'),
+          n('d5270434', 'Exit'),
           n('h030c24b', 'Report an issue'),
           n('eb0ecd1d', 'Twitter Search'),
           n('cceeb26b', function (e) {
@@ -4796,7 +4784,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             (o = e),
             ((t = h).prototype = Object.create(o.prototype)),
             (t.prototype.constructor = t),
-            r(t, o),
+            i(t, o),
             (h.prototype.render = function () {
               return s.createElement.apply(s, this[this.props.$i18n].reduce(this.templateReducer, [s.Fragment, null]))
             }),
@@ -5680,6 +5668,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
+                key: 'j23c6258',
+                get: function () {
+                  return [
+                    'Provide links to at least three articles about you in qualifying news publications that have been published within the last six months. ',
+                  ]
+                },
+              },
+              {
                 key: 'fcafaaa1',
                 get: function () {
                   return [
@@ -5730,14 +5726,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 get: function () {
                   return [
                     'Provide a link to a Wikipedia page about you. It must contain at least three external references. ',
-                  ]
-                },
-              },
-              {
-                key: 'j23c6258',
-                get: function () {
-                  return [
-                    'Provide links to at least three articles about you in qualifying news publications that have been published within the last six months. ',
                   ]
                 },
               },
@@ -5900,18 +5888,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'ia0ddd64',
+                key: 'db930fb2',
                 get: function () {
                   return [
-                    'Pick one method to show that your account qualifies for verification as an individual in entertainment. ',
+                    'Pick a method to show that your account qualifies for verification as an individual in entertainment. ',
                   ]
                 },
               },
               {
-                key: 'c5335e9d',
+                key: 'dc263ec0',
+                get: function () {
+                  return ['Provide a link to your IMDB profile that includes at least 50 production credits. ']
+                },
+              },
+              {
+                key: 'd8b21ebb',
                 get: function () {
                   return [
-                    'Provide a link to your IMDB page. The page needs to include at least fifty production credits. ',
+                    'Provide a link that references you as an individual in entertainment and your Twitter account. The reference must come from the official website of a Verified entity. ',
                   ]
                 },
               },
@@ -6859,8 +6853,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                   }
                 },
               },
-            ]) && i(n.prototype, f),
-            l && i(n, l),
+            ]) && r(n.prototype, f),
+            l && r(n, l),
             h
           )
         })(o('3XMw')._ActualI18NFormatMessage || s.Component)
