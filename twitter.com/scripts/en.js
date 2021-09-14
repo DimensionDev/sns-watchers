@@ -11,7 +11,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var n = o('k/n2')._register('en', {
           get emoji() {
-            return o.e(256).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(257).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function a(e, t, o) {
@@ -1869,10 +1869,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           n('j0bc23f3', 'I have confirmed that my organization’s account is already verified.'),
           n('aa6228de', 'Entertainment company'),
-          n(
-            'd3adfe8e',
-            'Major entertainment companies, such as film studios, TV networks, and music studios and labels.',
-          ),
+          n('d5b3cbc9', 'Major entertainment companies, such as television networks, film studios, and music labels.'),
           n('b27325f6', 'Content creator'),
           n('a5a6affb', 'Influential digital content creators that consistently publish engaging, original content.'),
           n('b5a3e590', 'Individual in entertainment'),
@@ -1885,7 +1882,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'ff27db3c',
             'Official accounts of productions associated with entertainment entities, like films, events/festivals, TV shows and more.',
           ),
-          n('c680b5b7', 'Company website'),
           n('c0e57cb2', 'Add your creator profile'),
           n('f3c605b6', 'Creator profile'),
           n('h042d1a5', 'IMDB profile'),
@@ -1958,7 +1954,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('icb5913e', 'Learn more'),
           n('af819831', 'Learn more'),
           n('d35525bf', 'Learn more'),
-          n('j4d2c2fd', 'Learn more'),
+          n('cb181ed0', 'Learn more'),
+          n('f6c3d3ff', 'Learn more'),
+          n('bad6af53', 'Learn more'),
+          n('af0cb1b5', 'Learn more'),
+          n('h84f1fe0', 'Learn more'),
           n('bd70d5d0', 'Learn more'),
           n('h9ec0778', 'Learn more'),
           n('eadd29ff', 'Learn more'),
@@ -2029,10 +2029,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n(
             'h45b00d7',
             'Select a method to show that your account is authentic and managed by the entertainment company related to this request.',
-          ),
-          n(
-            'b78565a9',
-            'The official website of a qualifying entertainment company that references your Twitter account.',
           ),
           n(
             'bd9d7f96',
@@ -2313,12 +2309,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           n('ja6bbfa0', 'Loading login verification data'),
           n('dd703318', 'Two-factor authentication'),
-          n('c2570921', 'Text message'),
-          n(
-            'f3820211',
-            'Use your mobile phone to receive a text message with an authentication code to enter when you log in to Twitter.',
-          ),
-          n('ab61b41a', 'Authentication app')
+          n('c2570921', 'Text message')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var n = t[o]
@@ -2336,9 +2327,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             })(e, t)
         }
         n(
-          'h4787492',
-          'Use a mobile authentication app to get a verification code to enter every time you log in to Twitter.',
+          'f3820211',
+          'Use your mobile phone to receive a text message with an authentication code to enter when you log in to Twitter.',
         ),
+          n('ab61b41a', 'Authentication app'),
+          n(
+            'h4787492',
+            'Use a mobile authentication app to get a verification code to enter every time you log in to Twitter.',
+          ),
           n('h6d0d89c', 'Security key'),
           n(
             'f57be1cc',
@@ -3524,14 +3520,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n(
             'c78fafa3',
             'Leaving this page will cause you to lose selected Tweets that have not yet been added to your Moment.',
-          ),
-          n('e16e8170', 'Position'),
+          )
+        n('e16e8170', 'Position'),
           n('a2bb5115', function (e) {
             return e.count + ' Tweet' + a(e.count, '', 's')
-          })
-        n('j5602a96', function (e) {
-          return 'You’ve reached the ' + e.maxTweets + ' Tweet maximum'
-        }),
+          }),
+          n('j5602a96', function (e) {
+            return 'You’ve reached the ' + e.maxTweets + ' Tweet maximum'
+          }),
           n('j15abc53', 'Beginning'),
           n('c371fb99', 'End'),
           n('b5210d57', 'Enter Collection ID'),
@@ -3638,6 +3634,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('e4ff75a9', 'Something went wrong. Check your connection and try again.'),
           n('e4f6bd9e', 'Oops, something went wrong. Please try again later.'),
           n('hc72e1fc', 'Please enter a valid email.'),
+          n('fa69a1ca', 'Reveal password'),
+          n('aacf5085', 'Hide password'),
           n('c52be451', 'Yes, remove'),
           n(
             'i769e50a',
@@ -3646,8 +3644,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('ec129eb6', 'You have successfully removed your contacts.'),
           n('f1b50489', 'There was an error removing your contacts.'),
           n('deaf5b15', 'Retry'),
-          n('fa69a1ca', 'Reveal password'),
-          n('aacf5085', 'Hide password'),
           n('gf8388fe', 'Country code'),
           n('d44efc66', 'What’s your name?'),
           n('b4867a17', 'Your full name can’t include the word “Twitter”.'),
@@ -5850,9 +5846,43 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'ifa23d48',
+                key: 'gf5a4309',
                 get: function () {
-                  return ['Provide a link to your entertainment company’s website. ']
+                  return [
+                    'Pick a method to show that your account qualifies for verification as a prominent entertainment company. ',
+                  ]
+                },
+              },
+              {
+                key: 'g2e175b1',
+                get: function () {
+                  return [
+                    'Provide a link to a Google Trends profile with evidence of recent search activity about your entertainment company. ',
+                  ]
+                },
+              },
+              {
+                key: 'efc369c2',
+                get: function () {
+                  return [
+                    'Provide links to at least three articles about your company in qualifying news publications in the last six months. ',
+                  ]
+                },
+              },
+              {
+                key: 'ff03f07c',
+                get: function () {
+                  return [
+                    'Provide a link showing evidence that your entertainment company is listed on a public stock exchange. ',
+                  ]
+                },
+              },
+              {
+                key: 'a3e9dde2',
+                get: function () {
+                  return [
+                    'Provide a link to a Wikipedia page about your entertainment company that contains at least three external references. ',
+                  ]
                 },
               },
               {
