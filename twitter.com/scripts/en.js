@@ -201,6 +201,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('d2a34320', 'Child Safety'),
           n('a9ba3e27', 'Private Information'),
           n('d5519f4a', 'Abusive Behavior'),
+          n('i7f853ea', 'Share with people outside of Twitter'),
+          n('g646959f', 'Learn more'),
           n('if23a251', 'Share via...'),
           n('f61c4bbf', 'Send via Direct Message'),
           n('fcc684a9', 'Tweet this'),
@@ -599,6 +601,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           n('deaf7e0a', 'Media Studio'),
           n('b4af8c6a', 'Moments'),
+          n('ed21f885', 'Twitter Blue'),
           n('d0a51fb1', 'Newsletters'),
           n('fd442790', 'Settings and privacy'),
           n('ab38b896', 'Twitter Ads'),
@@ -1177,11 +1180,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'via @' + e.viaScreenName
           }),
           n('f70a36d0', 'Tweet all'),
-          n('ic011119', 'Want to revise this or mute them instead?'),
-          n('f6b7745a', 'Want to revise this or block them instead?'),
+          n('ic011119', 'Want to revise this or mute them instead?')
+        n('f6b7745a', 'Want to revise this or block them instead?'),
           n('a75cc0f8', 'Want to revise this or hide their reply instead?'),
-          n('i2b9632d', 'Successfully unblocked.')
-        n('h3032750', 'Get more info'),
+          n('i2b9632d', 'Successfully unblocked.'),
+          n('h3032750', 'Get more info'),
           n('af250eb6', 'Blocking user'),
           n('ib147a39', 'Hiding reply'),
           n('e8ff17e5', 'Revise'),
@@ -1275,10 +1278,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('e4e811fb', 'Connecting...'),
           n('cc8f82bb', 'Join this space'),
           n('e51df2e6', 'Your mic will be off to start'),
-          n('e0ebeac6', 'people'),
-          n('h9694423', function (e) {
-            return '+' + e.count
-          }),
           n('ba55e824', 'Ended'),
           n('aadbc746', function (e) {
             return 'Co-host' + a(e.hostCount, '', 's')
@@ -1741,7 +1740,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('cf9b1669', 'Accessibility, display, and languages'),
           n('bdfa2b8c', 'Additional resources'),
           n('df483b47', 'Feature switches'),
-          n('ed21f885', 'Twitter Blue'),
           n('dae57a41', 'Allow all'),
           n('i7cbc154', 'Allow some'),
           n('e3a761ee', 'Off'),
@@ -2603,19 +2601,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'It looks like you’ve disabled push notifications on your device. Before we can update your settings, you’ll need to enable them on your device settings.',
           ),
           n(
-            'g8f8fd07',
-            'When you turn on Tweet notifications from people you follow, you’ll get notifications about their Tweets or live videos. These will be push or SMS notifications, depending on your settings.',
+            'b40d0145',
+            'When you turn on Tweet notifications from people you follow, you’ll get push notifications about their Tweets or live videos.',
           ),
           n('b68050dc', 'View users'),
-          n('b96cf52d', 'SMS notifications'),
-          n('c7d36299', 'Phone number'),
-          n('bdc43b51', 'SMS not available'),
-          n(
-            'df086319',
-            'You need to update your account by adding a phone number that can receive text messages first.',
-          ),
-          n('ca1c1d59', 'Update number'),
-          n('ad273880', 'Learn more'),
           n('e75f25a8', 'Email notifications'),
           n('b2c4ab0a', 'Related to you and your Tweets'),
           n('ic2ea6b5', 'From Twitter'),
@@ -3520,8 +3509,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n(
             'c78fafa3',
             'Leaving this page will cause you to lose selected Tweets that have not yet been added to your Moment.',
-          )
-        n('e16e8170', 'Position'),
+          ),
+          n('e16e8170', 'Position'),
           n('a2bb5115', function (e) {
             return e.count + ' Tweet' + a(e.count, '', 's')
           }),
@@ -3530,8 +3519,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           n('j15abc53', 'Beginning'),
           n('c371fb99', 'End'),
-          n('b5210d57', 'Enter Collection ID'),
-          n('a536fff6', 'Invalid Collection ID'),
+          n('b5210d57', 'Enter Collection ID')
+        n('a536fff6', 'Invalid Collection ID'),
           n('c63d84a3', 'Search for Twitter account'),
           n('b367953c', 'Tweets by'),
           n('f12858d3', 'Liked by'),
@@ -3674,6 +3663,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           n('i1801686', 'This is an invalid search query. Please try a different one.'),
           n('d5270434', 'Exit'),
+          n('af9c8a3d', 'Open app'),
+          n('c299a6cf', 'Thread'),
+          n('i9a4ca8a', 'Tweet status page'),
           n('h030c24b', 'Report an issue'),
           n('eb0ecd1d', 'Twitter Search'),
           n('cceeb26b', function (e) {
@@ -3756,7 +3748,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('a90e1e67', function (e) {
             return 'Tweet' + e.noun
           }),
-          n('c299a6cf', 'Thread'),
           n('ad666301', function (e) {
             return e.fullName + ' on Twitter'
           }),
@@ -3765,7 +3756,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           n('e20404df', 'New reply'),
           n('j88f27d8', 'Relevant people'),
-          n('af9c8a3d', 'Open app'),
           n('d35d74e3', 'Conversation'),
           n('g9079b93', 'You may only view analytics about your own Tweets.'),
           n('a57daeb1', 'Tweet Analytics'),
@@ -4629,6 +4619,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('gfe2830e', function (e) {
             return e.count + ' other' + a(e.count, '', 's')
           }),
+          n('f70a6835', function (e) {
+            return '+' + e.count + ' other listener' + a(e.count, '', 's')
+          }),
           n('bfb44f89', function (e) {
             return e.count + ' here'
           }),
@@ -4849,6 +4842,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                   return [
                     'By using Twitter’s services you agree to our ',
                     '. We and our partners operate globally and use cookies, including for analytics, personalisation, and ads.',
+                  ]
+                },
+              },
+              {
+                key: 'b9c4cfcb',
+                get: function () {
+                  return [
+                    'Only the top 1k guests can be shown. There might be people listening who aren’t logged in to Twitter. ',
+                    '.',
                   ]
                 },
               },
@@ -6233,12 +6235,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'b2de2130',
-                get: function () {
-                  return ['Only the account linked to this phone number most recently can receive SMS notifications. ']
-                },
-              },
-              {
                 key: 'bf82b0a6',
                 get: function () {
                   return [
@@ -7148,6 +7144,88 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'NaN',
             { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
           ])),
+          (l.a71710728 = b([
+            '',
+            ,
+            1,
+            0,
+            0,
+            ,
+            ,
+            ,
+            3,
+            ,
+            '',
+            '#,##0.###',
+            '-#,##0.###',
+            '-',
+            '',
+            h(),
+            '∞',
+            'NaN',
+            { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
+          ])),
+          (l.b1982794438 = b([
+            '',
+            ,
+            1,
+            0,
+            0,
+            ,
+            ,
+            ,
+            3,
+            ,
+            '%',
+            '#,##0%',
+            '-#,##0%%',
+            '-',
+            '%',
+            h('round'),
+            '∞',
+            'NaN',
+            { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
+          ])),
+          (l.a50325677 = b(
+            [
+              '',
+              ,
+              1,
+              0,
+              2,
+              ,
+              ,
+              ,
+              3,
+              ,
+              '',
+              '#,##0.###',
+              '-#,##0.###',
+              '-',
+              '',
+              h(),
+              '∞',
+              'NaN',
+              { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
+              ,
+              {
+                3: { one: '0K', other: '0K' },
+                4: { one: '00K', other: '00K' },
+                5: { one: '000K', other: '000K' },
+                6: { one: '0M', other: '0M' },
+                7: { one: '00M', other: '00M' },
+                8: { one: '000M', other: '000M' },
+                9: { one: '0B', other: '0B' },
+                10: { one: '00B', other: '00B' },
+                11: { one: '000B', other: '000B' },
+                12: { one: '0T', other: '0T' },
+                13: { one: '00T', other: '00T' },
+                14: { one: '000T', other: '000T' },
+                maxExponent: 14,
+              },
+            ],
+            l('en').pluralGenerator({}),
+          )),
           (l.b1158699306 = b(
             [
               '',
@@ -7700,6 +7778,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('d0a77c9a', l.b1998581093),
           n('g8d1b99b', l.a1830739137),
           n('h3629782', l.a1286203598),
+          n('ja781451', l.a71710728),
+          n('i2785008', l.b1982794438),
+          n('eefcd267', l.a50325677),
           n('cf8abf58', l.b1158699306)
       },
       rwV7: function (e, t) {

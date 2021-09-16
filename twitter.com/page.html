@@ -23,19 +23,19 @@
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/vendors~main.e35bab05.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/vendors~main.d85af515.js"
     nonce="WIPED"
   /><link
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.ce688dc5.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.dabe1ed5.js"
     nonce="WIPED"
   /><link
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/main.c28d0195.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/main.30e88375.js"
     nonce="WIPED"
   /><meta property="fb:app_id" content="2231777543" />
   <meta property="og:site_name" content="Twitter" /><meta
@@ -827,6 +827,12 @@
             media_minimal_image_crop_with_max_height_enabled: { value: false },
             moment_annotations_enabled: { value: true },
             network_layer_503_backoff_mode: { value: 'host' },
+            responsive_web_3rd_party_category_branch: { value: 'WIPED' },
+            responsive_web_3rd_party_category_double_click: { value: 'WIPED' },
+            responsive_web_3rd_party_category_external_referer: { value: 'WIPED' },
+            responsive_web_3rd_party_category_ga: { value: 'WIPED' },
+            responsive_web_3rd_party_category_player_card: { value: 'WIPED' },
+            responsive_web_3rd_party_category_sentry: { value: 'WIPED' },
             responsive_web_account_search_readability_enabled: { value: 'WIPED' },
             responsive_web_add_impression_id_to_mute_engagement_enabled: { value: 'WIPED' },
             responsive_web_alt_svc: { value: 'WIPED' },
@@ -869,6 +875,7 @@
             responsive_web_cookie_compliance_gingersnap_enabled: { value: 'WIPED' },
             responsive_web_csrf_clientside_enabled: { value: 'WIPED' },
             responsive_web_dcm_2_enabled: { value: 'WIPED' },
+            responsive_web_deamplification_replies_dropdown_selector_enabled: { value: 'WIPED' },
             responsive_web_deamplification_transparent_cursors_enabled: { value: 'WIPED' },
             responsive_web_disconnect_third_party_sso_enabled: { value: 'WIPED' },
             responsive_web_dm_quick_access_with_close_enabled: { value: 'WIPED' },
@@ -876,11 +883,6 @@
             responsive_web_dockable_autoplay_policy_enabled: { value: 'WIPED' },
             responsive_web_edit_professional_profile_enabled: { value: 'WIPED' },
             responsive_web_element_size_impression_scribe_enabled: { value: 'WIPED' },
-            responsive_web_eu_compliance_double_click_disabled: { value: 'WIPED' },
-            responsive_web_eu_compliance_external_referer_disabled: { value: 'WIPED' },
-            responsive_web_eu_compliance_ga_disabled: { value: 'WIPED' },
-            responsive_web_eu_compliance_player_card_disabled: { value: 'WIPED' },
-            responsive_web_eu_compliance_sentry_disabled: { value: 'WIPED' },
             responsive_web_eu_countries: { value: 'WIPED' },
             responsive_web_extension_compatibility_hide: { value: 'WIPED' },
             responsive_web_extension_compatibility_impression_guard: { value: 'WIPED' },
@@ -907,7 +909,6 @@
             responsive_web_graphql_media_timeline: { value: 'WIPED' },
             responsive_web_graphql_mutation_bookmarks: { value: 'WIPED' },
             responsive_web_graphql_profile_timeline: { value: 'WIPED' },
-            responsive_web_graphql_rux_landing_enabled: { value: 'WIPED' },
             responsive_web_graphql_topic_timeline_enabled: { value: 'WIPED' },
             responsive_web_graphql_tweet_by_rest_id: { value: 'WIPED' },
             responsive_web_graphql_user_results: { value: 'WIPED' },
@@ -978,7 +979,6 @@
             responsive_web_recent_searches_topics_enabled: { value: 'WIPED' },
             responsive_web_recent_searches_users_enabled: { value: 'WIPED' },
             responsive_web_report_page_not_found: { value: 'WIPED' },
-            responsive_web_rich_tweet_landing_enabled: { value: 'WIPED' },
             responsive_web_scroll_links: { value: 'WIPED' },
             responsive_web_scroller_autopoll_enabled: { value: 'WIPED' },
             responsive_web_search_delay_prefetch_typeahead_results_enabled: { value: 'WIPED' },
@@ -1063,6 +1063,7 @@
             subscriptions_feature_1003: { value: false },
             subscriptions_feature_1005: { value: false },
             subscriptions_settings_item_enabled: { value: false },
+            subscriptions_sign_up_enabled: { value: false },
             super_follow_tweet_api_enabled: { value: false },
             super_follow_user_api_enabled: { value: false },
             topic_icons_enabled: { value: false },
@@ -1097,8 +1098,10 @@
                 'hide_community_tweet',
               ],
             },
-            tweet_limited_actions_config_community_tweet_member: { value: ['retweet'] },
-            tweet_limited_actions_config_community_tweet_non_member: { value: ['reply', 'retweet', 'like', 'react'] },
+            tweet_limited_actions_config_community_tweet_member: { value: ['retweet', 'embed'] },
+            tweet_limited_actions_config_community_tweet_non_member: {
+              value: ['reply', 'retweet', 'like', 'react', 'embed'],
+            },
             tweet_limited_actions_config_enabled: { value: true },
             tweet_limited_actions_config_non_compliant: {
               value: [
@@ -1142,7 +1145,7 @@
           featureSetToken: 'WIPED',
           isLoaded: true,
           isLoading: false,
-          useEventAllowlist: false,
+          useEventAllowlist: true,
           user: {
             config: {
               account_2fa_standalone_security_key_enabled: { value: true },
@@ -1463,6 +1466,12 @@
               media_minimal_image_crop_with_max_height_enabled: { value: false },
               moment_annotations_enabled: { value: true },
               network_layer_503_backoff_mode: { value: 'host' },
+              responsive_web_3rd_party_category_branch: { value: 'WIPED' },
+              responsive_web_3rd_party_category_double_click: { value: 'WIPED' },
+              responsive_web_3rd_party_category_external_referer: { value: 'WIPED' },
+              responsive_web_3rd_party_category_ga: { value: 'WIPED' },
+              responsive_web_3rd_party_category_player_card: { value: 'WIPED' },
+              responsive_web_3rd_party_category_sentry: { value: 'WIPED' },
               responsive_web_account_search_readability_enabled: { value: 'WIPED' },
               responsive_web_add_impression_id_to_mute_engagement_enabled: { value: 'WIPED' },
               responsive_web_alt_svc: { value: 'WIPED' },
@@ -1505,6 +1514,7 @@
               responsive_web_cookie_compliance_gingersnap_enabled: { value: 'WIPED' },
               responsive_web_csrf_clientside_enabled: { value: 'WIPED' },
               responsive_web_dcm_2_enabled: { value: 'WIPED' },
+              responsive_web_deamplification_replies_dropdown_selector_enabled: { value: 'WIPED' },
               responsive_web_deamplification_transparent_cursors_enabled: { value: 'WIPED' },
               responsive_web_disconnect_third_party_sso_enabled: { value: 'WIPED' },
               responsive_web_dm_quick_access_with_close_enabled: { value: 'WIPED' },
@@ -1512,11 +1522,6 @@
               responsive_web_dockable_autoplay_policy_enabled: { value: 'WIPED' },
               responsive_web_edit_professional_profile_enabled: { value: 'WIPED' },
               responsive_web_element_size_impression_scribe_enabled: { value: 'WIPED' },
-              responsive_web_eu_compliance_double_click_disabled: { value: 'WIPED' },
-              responsive_web_eu_compliance_external_referer_disabled: { value: 'WIPED' },
-              responsive_web_eu_compliance_ga_disabled: { value: 'WIPED' },
-              responsive_web_eu_compliance_player_card_disabled: { value: 'WIPED' },
-              responsive_web_eu_compliance_sentry_disabled: { value: 'WIPED' },
               responsive_web_eu_countries: { value: 'WIPED' },
               responsive_web_extension_compatibility_hide: { value: 'WIPED' },
               responsive_web_extension_compatibility_impression_guard: { value: 'WIPED' },
@@ -1543,7 +1548,6 @@
               responsive_web_graphql_media_timeline: { value: 'WIPED' },
               responsive_web_graphql_mutation_bookmarks: { value: 'WIPED' },
               responsive_web_graphql_profile_timeline: { value: 'WIPED' },
-              responsive_web_graphql_rux_landing_enabled: { value: 'WIPED' },
               responsive_web_graphql_topic_timeline_enabled: { value: 'WIPED' },
               responsive_web_graphql_tweet_by_rest_id: { value: 'WIPED' },
               responsive_web_graphql_user_results: { value: 'WIPED' },
@@ -1614,7 +1618,6 @@
               responsive_web_recent_searches_topics_enabled: { value: 'WIPED' },
               responsive_web_recent_searches_users_enabled: { value: 'WIPED' },
               responsive_web_report_page_not_found: { value: 'WIPED' },
-              responsive_web_rich_tweet_landing_enabled: { value: 'WIPED' },
               responsive_web_scroll_links: { value: 'WIPED' },
               responsive_web_scroller_autopoll_enabled: { value: 'WIPED' },
               responsive_web_search_delay_prefetch_typeahead_results_enabled: { value: 'WIPED' },
@@ -1699,6 +1702,7 @@
               subscriptions_feature_1003: { value: false },
               subscriptions_feature_1005: { value: false },
               subscriptions_settings_item_enabled: { value: false },
+              subscriptions_sign_up_enabled: { value: false },
               super_follow_tweet_api_enabled: { value: true },
               super_follow_user_api_enabled: { value: true },
               topic_icons_enabled: { value: false },
@@ -1781,7 +1785,86 @@
             impressions: {},
             keysRead: {},
             settingsVersion: 'WIPED',
-            clientEventAllowlist: {},
+            clientEventAllowlist: {
+              children: {
+                messages: {
+                  children: {
+                    message: {
+                      children: {
+                        card: {
+                          children: { community_card: { children: { '*': { isTerminal: 1 } }, isTerminal: 0 } },
+                          isTerminal: 0,
+                        },
+                      },
+                      isTerminal: 0,
+                    },
+                  },
+                  isTerminal: 0,
+                },
+                community: { children: { '**': { isTerminal: 1 } }, isTerminal: 0 },
+                compose: {
+                  children: { '**': { children: { click: { isTerminal: 1 } }, isTerminal: 0 } },
+                  isTerminal: 0,
+                },
+                guide: {
+                  children: {
+                    timeline: {
+                      children: { event_summary: { children: { click: { isTerminal: 1 } }, isTerminal: 0 } },
+                      isTerminal: 0,
+                    },
+                    tab_bar: {
+                      children: {
+                        timeline: {
+                          children: {
+                            scrollable_content: {
+                              children: { event_summary: { children: { tap: { isTerminal: 1 } }, isTerminal: 0 } },
+                              isTerminal: 0,
+                            },
+                          },
+                          isTerminal: 0,
+                        },
+                      },
+                      isTerminal: 0,
+                    },
+                    '**': {
+                      children: {
+                        tweet: {
+                          children: {
+                            '*': { children: { tap: { isTerminal: 1 }, click: { isTerminal: 1 } }, isTerminal: 0 },
+                          },
+                          isTerminal: 0,
+                        },
+                      },
+                      isTerminal: 1,
+                    },
+                  },
+                  isTerminal: 0,
+                },
+                '**': {
+                  children: {
+                    some: {
+                      children: { pattern: { children: { '**': { isTerminal: 1 } }, isTerminal: 0 } },
+                      isTerminal: 0,
+                    },
+                  },
+                  isTerminal: 0,
+                },
+                app: {
+                  children: {
+                    top_nav: { children: { '**': { isTerminal: 1 } }, isTerminal: 0 },
+                    side_nav: { children: { '**': { isTerminal: 1 } }, isTerminal: 0 },
+                    '**': {
+                      children: { toast: { children: { '**': { isTerminal: 1 } }, isTerminal: 0 } },
+                      isTerminal: 0,
+                    },
+                    bottom_nav: { children: { '**': { isTerminal: 1 } }, isTerminal: 0 },
+                  },
+                  isTerminal: 0,
+                },
+                communities: { children: { '**': { isTerminal: 1 } }, isTerminal: 0 },
+                some: { children: { pattern: { children: { '*': { isTerminal: 1 } }, isTerminal: 0 } }, isTerminal: 0 },
+              },
+            },
           },
         },
         visibilityResults: { tweets: {} },
@@ -1821,15 +1904,12 @@
           notificationSettings: {
             push_settings: { error: null, fetchStatus: 'none' },
             push_settings_template: { template: { settings: [] } },
-            sms_settings: { error: null, fetchStatus: 'none' },
-            sms_settings_template: { template: { settings: [] } },
             checkin_time: null,
           },
         },
         educationFlags: {},
         session: {
           country: 'WIPED',
-          emailLiteLoginEligibility: { fetchStatus: 'none' },
           isActiveCreator: false,
           isRestrictedSession: false,
           guestId: 'WIPED',
@@ -1847,13 +1927,13 @@
       }
       window.__META_DATA__ = {
         env: 'prod',
-        sha: 'adac449c7789dea057f20be3672591eac7ff17c8',
+        sha: '585b42dfc374a9ab8c682a7e37d3885cf06b3009',
         isLoggedIn: false,
         hasMultiAccountCookie: false,
         uaParserTags: ['m2', 'rweb_unsupported', 'msw'],
         serverDate: 42,
         cookies: {
-          version: '1631214044009',
+          version: '1631750647225',
           fetchedTime: 42,
           categories: {
             2: [
@@ -1869,7 +1949,6 @@
               'csrftoken',
               'ssa-calendar-signup',
               'lastOwnerId',
-              'geo_recent',
               'twid',
               'muc',
               'ads_manager_opt_out',
@@ -1910,7 +1989,6 @@
               'csrf_same_site_set',
               'messages',
               'bouncer_reset_cookie',
-              'geo_webclient',
               'eu_cn',
               '_ep_sess',
               'timezone',
@@ -1990,13 +2068,13 @@
                       6: 'shared~bundle.MultiAccount~bundle.Login~bundle.LoggedOutHome~loader.SignupModule~ondemand.IntentPrompt',
                       7: 'shared~bundle.SettingsRevamp~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Settings~bundle.Settin',
                       8: 'shared~bundle.Compose~bundle.RichTextCompose~ondemand.ComposeScheduling~bundle.PlainTextCompose',
-                      9: 'shared~loader.DMDrawer~bundle.DirectMessages~bundle.DMRichTextCompose~bundle.Report',
-                      10: 'shared~loader.Typeahead~bundle.Communities~bundle.Explore~bundle.UserLists',
-                      11: 'shared~bundle.Birdwatch~bundle.Explore~bundle.Topics',
-                      12: 'shared~bundle.ComposeMedia~bundle.SettingsProfile~bundle.Ocf',
-                      13: 'shared~bundle.Place~bundle.Search~bundle.QuoteTweetActivity',
-                      14: 'shared~bundle.SettingsRevamp~bundle.AccountVerification~bundle.BadgeViolationsNotification',
-                      15: 'shared~bundle.SettingsRevamp~bundle.SettingsTransparency~ondemand.SettingsInternals',
+                      9: 'shared~loader.Typeahead~bundle.Communities~bundle.Explore~bundle.UserLists',
+                      10: 'shared~bundle.Birdwatch~bundle.Explore~bundle.Topics',
+                      11: 'shared~bundle.ComposeMedia~bundle.SettingsProfile~bundle.Ocf',
+                      12: 'shared~bundle.Place~bundle.Search~bundle.QuoteTweetActivity',
+                      13: 'shared~bundle.SettingsRevamp~bundle.AccountVerification~bundle.BadgeViolationsNotification',
+                      14: 'shared~bundle.SettingsRevamp~bundle.SettingsTransparency~ondemand.SettingsInternals',
+                      15: 'shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages',
                       16: 'shared~loaders.video.VideoPlayerDefaultUI~loader.MediaPreviewVideoPlayer~loaders.video.VideoPlayerEventsUI',
                       17: 'relay-vendor~vendorFS',
                       18: 'shared~bundle.AudioSpacePeek~bundle.AudioSpaceLoggedIn',
@@ -2232,27 +2310,27 @@
                     }[e] || e) +
                     '.' +
                     {
-                      0: '755880c',
+                      0: 'a163dc2',
                       3: 'afeea2c',
                       4: '027d8ac',
-                      5: '2fa4508',
+                      5: '1bcdd8c',
                       6: 'cadd06b',
                       7: '2be5c6f',
                       8: '4bbb113',
-                      9: 'a8e03a8',
-                      10: '3a34981',
-                      11: 'ec624b2',
-                      12: 'cd29f5e',
-                      13: 'f80e984',
-                      14: '76cd077',
-                      15: 'aeae3ac',
+                      9: '5564eee',
+                      10: 'b82999c',
+                      11: 'd92aa05',
+                      12: 'e2c1b00',
+                      13: '697a15d',
+                      14: 'c5c2382',
+                      15: 'a416d50',
                       16: 'f1beb72',
                       17: '5cc5b2c',
-                      18: '61c962e',
+                      18: 'd393dd6',
                       19: '1ac3c0e',
                       20: 'c828972',
                       21: 'f5c64d4',
-                      22: 'a2f0cc8',
+                      22: '12887fe',
                       23: '81e606b',
                       24: '092a063',
                       25: '7a812d4',
@@ -2260,62 +2338,62 @@
                       27: 'e246500',
                       28: '912f4a4',
                       29: '1e96546',
-                      30: 'bbc4932',
-                      31: '5c1a1b1',
+                      30: '9821c34',
+                      31: '35059c7',
                       32: 'c4e3359',
-                      33: 'f68bc73',
+                      33: 'a974dfd',
                       34: 'e68c676',
                       35: '63370de',
                       36: '941ed50',
-                      37: '61a3e84',
+                      37: 'd3ebefe',
                       38: '7acb045',
                       39: '7a8949a',
-                      40: 'e0e67fe',
+                      40: '732f6cd',
                       41: '59a1d92',
                       42: '35e1e6a',
                       43: 'c3c9ec1',
-                      44: 'f461301',
+                      44: '2b010db',
                       45: 'c52fd1c',
-                      46: 'd1ac5ec',
-                      47: 'da4d2cf',
+                      46: 'ba0cccb',
+                      47: '9c1fdf3',
                       48: 'ce46515',
-                      49: 'c022d31',
-                      50: '6610170',
+                      49: 'b01f318',
+                      50: 'd0c7425',
                       51: '1c6ea34',
                       52: '0cb6637',
                       53: '1c9d5b2',
                       54: '610523d',
                       55: '37dc09c',
-                      56: '6512a3b',
-                      57: 'fa1285a',
+                      56: 'e1be2e8',
+                      57: '84c918f',
                       58: '0d13efb',
                       59: 'a9a9dc8',
-                      60: 'df83e61',
-                      61: '1b419da',
+                      60: '3a4c4c1',
+                      61: '31dae25',
                       62: '4d4e29e',
                       63: '2cf1814',
                       64: '3edbf9b',
-                      65: 'd43c201',
+                      65: 'd787b91',
                       66: 'ee38a59',
                       67: '2b9bfbd',
                       68: '1448a39',
                       69: '2892727',
-                      70: '004721e',
+                      70: 'd3a6b9e',
                       71: '1b24c2c',
                       72: 'efb2abf',
                       73: 'd3f680f',
                       74: '081b832',
-                      75: '14101ea',
-                      76: 'd5e7f74',
+                      75: 'f16cb00',
+                      76: '70b6503',
                       77: 'a2b1051',
-                      78: 'c366988',
+                      78: '4dae646',
                       79: 'eb3bcd8',
-                      80: '0a3c373',
+                      80: 'ef28592',
                       81: 'b88bd81',
-                      82: 'e9d9d71',
-                      83: 'aa4c04b',
-                      84: 'b2f2585',
-                      85: 'efe40cd',
+                      82: '840b983',
+                      83: '25c3a52',
+                      84: '13f0cec',
+                      85: '1017ce1',
                       86: '94e5370',
                       87: '95993b1',
                       88: '1375049',
@@ -2325,25 +2403,25 @@
                       92: 'e5fe580',
                       93: '07a8461',
                       94: '5e1763e',
-                      95: '9503749',
-                      96: 'f9662d9',
+                      95: '87a263d',
+                      96: '616c866',
                       97: '18c35b7',
-                      98: '2a4d40f',
+                      98: '3443cf5',
                       99: '32a4262',
-                      150: 'c0a760a',
-                      151: '7a31d9a',
+                      150: '534897b',
+                      151: 'c652788',
                       152: '5e9eba3',
                       153: '79090e6',
                       154: '7704773',
                       155: 'b1871e4',
-                      156: '4fb819c',
+                      156: '76585ee',
                       157: 'd1b394b',
-                      158: '3690f07',
+                      158: 'b188897',
                       159: '543cac6',
                       160: '7932b00',
                       161: 'e118f21',
                       162: 'd203a18',
-                      163: '348eb3c',
+                      163: '423ac45',
                       164: 'f063c85',
                       165: 'bd726a2',
                       166: '42502f0',
@@ -2362,11 +2440,11 @@
                       179: 'eb296fd',
                       180: '2429bd4',
                       182: 'f7d065f',
-                      183: '9d70d00',
+                      183: '9dc40d4',
                       184: '25c9dd9',
-                      185: '705396b',
+                      185: '3af238c',
                       186: '7cedf9d',
-                      187: '15ce2db',
+                      187: 'b3c5595',
                       188: 'a3e7553',
                       189: '7ab9d4e',
                       190: '64d0c22',
@@ -2375,12 +2453,12 @@
                       193: '6629b43',
                       194: 'db5a9f6',
                       195: 'b8b2181',
-                      196: '1834d7b',
+                      196: 'cf80e5e',
                       197: '2687790',
                       198: 'b857f90',
-                      199: '10a4f67',
-                      200: '6b16233',
-                      201: '54dd022',
+                      199: '1d3fb45',
+                      200: '635af24',
+                      201: 'c3445b6',
                       202: '1f5785a',
                       203: '2ddebd5',
                       204: '4b498d0',
@@ -2574,21 +2652,21 @@
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/vendors~main.e35bab05.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/vendors~main.d85af515.js"
     ></script>
     <script
       type="text/javascript"
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.ce688dc5.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.dabe1ed5.js"
     ></script>
     <script
       type="text/javascript"
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/main.c28d0195.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/main.30e88375.js"
     ></script>
     <script nonce="WIPED">
       ;(function () {
