@@ -23,19 +23,19 @@
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/vendors~main.d85af515.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/vendors~main.bb381615.js"
     nonce="WIPED"
   /><link
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.dabe1ed5.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.b6b1e2c5.js"
     nonce="WIPED"
   /><link
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/main.30e88375.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/main.0c26b385.js"
     nonce="WIPED"
   /><meta property="fb:app_id" content="2231777543" />
   <meta property="og:site_name" content="Twitter" /><meta
@@ -1428,11 +1428,11 @@
               explore_settings_trends_policy_url: { value: '' },
               followers_management_remove_follower_from_followers_list: { value: false },
               followers_management_remove_follower_from_profile_screen: { value: false },
-              graphql_mutation_destroy_mode: { value: 'rest_only' },
+              graphql_mutation_destroy_mode: { value: 'graphql_only' },
               graphql_mutation_favorite_mode: { value: 'graphql_only' },
               graphql_mutation_retweet_mode: { value: 'graphql_only' },
               graphql_mutation_unfavorite_mode: { value: 'graphql_only' },
-              graphql_mutation_unretweet_mode: { value: 'rest_only' },
+              graphql_mutation_unretweet_mode: { value: 'graphql_only' },
               graphql_mutation_update_mode: { value: 'graphql_only' },
               guest_broadcasting_timeline_decorations_enabled: { value: true },
               hashflags_animation_like_button_enabled: { value: true },
@@ -1735,11 +1735,12 @@
                   'embed',
                   'view_hidden_replies',
                   'hide_community_tweet',
+                  'copy_link',
                 ],
               },
               tweet_limited_actions_config_community_tweet_member: { value: ['retweet', 'embed'] },
               tweet_limited_actions_config_community_tweet_non_member: {
-                value: ['reply', 'retweet', 'like', 'react', 'embed'],
+                value: ['reply', 'retweet', 'like', 'react', 'embed', 'share_tweet_via'],
               },
               tweet_limited_actions_config_enabled: { value: true },
               tweet_limited_actions_config_non_compliant: {
@@ -1753,6 +1754,7 @@
                   'pin_to_profile',
                   'view_tweet_activity',
                   'share_tweet_via',
+                  'copy_link',
                 ],
               },
               tweet_with_visibility_results_prefer_gql_soft_interventions_enabled: { value: false },
@@ -1927,7 +1929,7 @@
       }
       window.__META_DATA__ = {
         env: 'prod',
-        sha: '585b42dfc374a9ab8c682a7e37d3885cf06b3009',
+        sha: '747d33124993dc15c385112c4664974e943e319f',
         isLoggedIn: false,
         hasMultiAccountCookie: false,
         uaParserTags: ['m2', 'rweb_unsupported', 'msw'],
@@ -2310,7 +2312,7 @@
                     }[e] || e) +
                     '.' +
                     {
-                      0: 'a163dc2',
+                      0: '5196a67',
                       3: 'afeea2c',
                       4: '027d8ac',
                       5: '1bcdd8c',
@@ -2349,10 +2351,10 @@
                       38: '7acb045',
                       39: '7a8949a',
                       40: '732f6cd',
-                      41: '59a1d92',
+                      41: 'cef194b',
                       42: '35e1e6a',
                       43: 'c3c9ec1',
-                      44: '2b010db',
+                      44: '7bdf526',
                       45: 'c52fd1c',
                       46: 'ba0cccb',
                       47: '9c1fdf3',
@@ -2369,7 +2371,7 @@
                       58: '0d13efb',
                       59: 'a9a9dc8',
                       60: '3a4c4c1',
-                      61: '31dae25',
+                      61: '3128096',
                       62: '4d4e29e',
                       63: '2cf1814',
                       64: '3edbf9b',
@@ -2378,20 +2380,20 @@
                       67: '2b9bfbd',
                       68: '1448a39',
                       69: '2892727',
-                      70: 'd3a6b9e',
+                      70: '855119e',
                       71: '1b24c2c',
-                      72: 'efb2abf',
+                      72: '8807046',
                       73: 'd3f680f',
                       74: '081b832',
                       75: 'f16cb00',
                       76: '70b6503',
-                      77: 'a2b1051',
+                      77: '3d451c0',
                       78: '4dae646',
                       79: 'eb3bcd8',
                       80: 'ef28592',
                       81: 'b88bd81',
-                      82: '840b983',
-                      83: '25c3a52',
+                      82: 'f66ad32',
+                      83: 'afbb888',
                       84: '13f0cec',
                       85: '1017ce1',
                       86: '94e5370',
@@ -2406,7 +2408,7 @@
                       95: '87a263d',
                       96: '616c866',
                       97: '18c35b7',
-                      98: '3443cf5',
+                      98: '6b8b9cd',
                       99: '32a4262',
                       150: '534897b',
                       151: 'c652788',
@@ -2422,12 +2424,12 @@
                       161: 'e118f21',
                       162: 'd203a18',
                       163: '423ac45',
-                      164: 'f063c85',
+                      164: 'b794045',
                       165: 'bd726a2',
                       166: '42502f0',
                       167: '30b445c',
                       168: 'e7976c3',
-                      169: '9f731f3',
+                      169: 'd41aa70',
                       170: '4d0f0ac',
                       171: 'ab1d5bb',
                       172: 'd93fe3e',
@@ -2436,7 +2438,7 @@
                       175: 'deb923a',
                       176: '21d0cac',
                       177: '8c9f590',
-                      178: '5ef9766',
+                      178: 'c53244b',
                       179: 'eb296fd',
                       180: '2429bd4',
                       182: 'f7d065f',
@@ -2456,8 +2458,8 @@
                       196: 'cf80e5e',
                       197: '2687790',
                       198: 'b857f90',
-                      199: '1d3fb45',
-                      200: '635af24',
+                      199: 'fbd6bc7',
+                      200: '2c708d2',
                       201: 'c3445b6',
                       202: '1f5785a',
                       203: '2ddebd5',
@@ -2652,21 +2654,21 @@
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/vendors~main.d85af515.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/vendors~main.bb381615.js"
     ></script>
     <script
       type="text/javascript"
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.dabe1ed5.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.b6b1e2c5.js"
     ></script>
     <script
       type="text/javascript"
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/main.30e88375.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/main.0c26b385.js"
     ></script>
     <script nonce="WIPED">
       ;(function () {

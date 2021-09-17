@@ -9861,40 +9861,54 @@ window.__SCRIPTS_LOADED__.i18n &&
       '5oBF': function (e, t, n) {
         'use strict'
         n.d(t, 'a', function () {
-          return y
+          return g
         }),
           n.d(t, 'e', function () {
-            return w
-          }),
-          n.d(t, 'd', function () {
             return E
           }),
-          n.d(t, 'g', function () {
+          n.d(t, 'd', function () {
             return j
           }),
-          n.d(t, 'c', function () {
+          n.d(t, 'h', function () {
             return P
           }),
-          n.d(t, 'b', function () {
+          n.d(t, 'c', function () {
             return T
           }),
-          n.d(t, 'f', function () {
+          n.d(t, 'b', function () {
             return S
+          }),
+          n.d(t, 'g', function () {
+            return I
+          }),
+          n.d(t, 'f', function () {
+            return C
           })
         n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('FtHn')
         var r = n('KEM+'),
           o = n.n(r),
-          i = (n('yH/f'), n('JtPf'), n('7x/C'), n('Qavd'), n('jwue'), n('+oxZ'), n('zh9S')),
+          i =
+            (n('yH/f'),
+            n('JtPf'),
+            n('7x/C'),
+            n('Qavd'),
+            n('jwue'),
+            n('+oxZ'),
+            n('87if'),
+            n('lTEL'),
+            n('kYxP'),
+            n('zh9S')),
           a = n('xVN5'),
           c = n('FzXo'),
-          s = n('Ssj5'),
-          u = n('AspN'),
-          l = n('RqPI'),
-          d = n('qlwE'),
-          p = n('XOJV'),
-          f = n('SRyb'),
-          h = n('WA1W')
-        function m(e, t) {
+          s = n('tn7R'),
+          u = n('Ssj5'),
+          l = n('AspN'),
+          d = n('RqPI'),
+          p = n('qlwE'),
+          f = n('XOJV'),
+          h = n('SRyb'),
+          m = n('WA1W')
+        function v(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -9906,42 +9920,42 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function v(e) {
+        function b(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? m(Object(n), !0).forEach(function (t) {
+              ? v(Object(n), !0).forEach(function (t) {
                   o()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : m(Object(n)).forEach(function (t) {
+              : v(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
-        var b = 'previews',
-          y = 20,
-          g = Object.freeze({}),
-          _ = 'rweb/previews/STORE_PREVIEW',
-          O = 'rweb/previews/REMOVE_PREVIEW_TWEET'
-        s.a.register(
-          o()({}, b, function () {
-            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : g,
+        var y = 'previews',
+          g = 20,
+          _ = Object.freeze({}),
+          O = 'rweb/previews/STORE_PREVIEW',
+          w = 'rweb/previews/REMOVE_PREVIEW_TWEET'
+        u.a.register(
+          o()({}, y, function () {
+            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _,
               t = arguments.length > 1 ? arguments[1] : void 0
             switch (t.type) {
-              case _:
+              case O:
                 var n
                 return null != t && null !== (n = t.payload) && void 0 !== n && n.id
-                  ? v(v({}, e), {}, o()({}, t.payload.id, t.payload))
+                  ? b(b({}, e), {}, o()({}, t.payload.id, t.payload))
                   : e
-              case O:
+              case w:
                 if (t.payload) {
                   var r,
                     i = null === (r = e[t.payload]) || void 0 === r ? void 0 : r.timeoutId
                   i && clearTimeout(i)
-                  var a = v({}, e)
+                  var a = b({}, e)
                   return delete a[t.payload], a
                 }
                 return e
@@ -9950,67 +9964,67 @@ window.__SCRIPTS_LOADED__.i18n &&
             }
           }),
         )
-        var w = function (e) {
+        var E = function (e) {
             return e.previews
           },
-          E = function (e, t) {
+          j = function (e, t) {
             var n = t.previewTweetId
-            return w(e)[n]
-          },
-          j = function (e) {
-            return function (t, n, r) {
-              r.featureSwitches
-              var o = E(n(), { previewTweetId: e })
-              t(a.j(o.composerData, 'modal')), t(P(e))
-            }
+            return E(e)[n]
           },
           P = function (e) {
             return function (t, n, r) {
-              var i = r.featureSwitches,
-                a = Object(l.p)(n())
-              return void 0 === a
-                ? Promise.resolve()
-                : (t(p.a.deletePreview(e)),
-                  t({ payload: e, type: O }),
-                  Promise.resolve(
-                    t([
-                      Object(h.e)(i).removeEntry(e),
-                      Object(h.f)(i).removeEntry(e),
-                      Object(f.a)(i, a, 'default').removeTweets(o()({}, e, !0)),
-                    ]),
-                  ))
+              r.featureSwitches
+              var o = j(n(), { previewTweetId: e })
+              t(a.j(o.composerData, 'modal')), t(T(e))
             }
           },
           T = function (e) {
             return function (t, n, r) {
+              var i = r.featureSwitches,
+                a = Object(d.p)(n())
+              return void 0 === a
+                ? Promise.resolve()
+                : (t(f.a.deletePreview(e)),
+                  t({ payload: e, type: w }),
+                  Promise.resolve(
+                    t([
+                      Object(m.e)(i).removeEntry(e),
+                      Object(m.f)(i).removeEntry(e),
+                      Object(h.a)(i, a, 'default').removeTweets(o()({}, e, !0)),
+                    ]),
+                  ))
+            }
+          },
+          S = function (e) {
+            return function (t, n, r) {
               r.api, r.featureSwitches
-              var o = 1e3 * (Object(d.p)(n()).durationSecs || y),
+              var o = 1e3 * (Object(p.p)(n()).durationSecs || g),
                 s = e.previewData,
                 u = e.id,
                 l = Date.now() + o,
-                p = n().tweetComposer.activeParentKey,
-                f = Object(c.b)(a.n(n(), p), 0, {}),
+                d = n().tweetComposer.activeParentKey,
+                f = Object(c.b)(a.n(n(), d), 0, {}),
                 h = { subscription_details: { draft_id: u, undo_period: o / 1e3 } },
                 m = setTimeout(function () {
                   t(i.c({ section: 'composition', element: 'undo_tweet', page: 'home', action: 'timer_elapsed' }, h)),
-                    t(S(u))
+                    t(I(u))
                 }, o)
               t(i.c({ section: 'composition', element: 'undo_tweet', page: 'home', action: 'queued' }, h)),
                 t(
                   (function (e) {
-                    return { payload: e, type: _ }
+                    return { payload: e, type: O }
                   })({ timeToSend: l, id: u, composerData: f, timeoutId: m, previewData: s }),
                 )
             }
           },
-          S = function (e) {
+          I = function (e) {
             return function (t, n) {
-              var r = 1e3 * (Object(d.p)(n()).durationSecs || y),
-                o = E(n(), { previewTweetId: e }),
+              var r = 1e3 * (Object(p.p)(n()).durationSecs || g),
+                o = j(n(), { previewTweetId: e }),
                 c = o.previewData,
                 s = o.id,
-                l = o.composerData
-              t(a.t(v(v({}, c), {}, { isPreview: !1, isSendPreview: !0 })))
+                u = o.composerData
+              t(a.t(b(b({}, c), {}, { isPreview: !1, isSendPreview: !0 })))
                 .then(function () {
                   var e = { subscription_details: { draft_id: s, undo_period: r / 1e3 } }
                   t(i.c({ section: 'composition', element: 'undo_tweet', page: 'app', action: 'sent' }, e))
@@ -10019,10 +10033,30 @@ window.__SCRIPTS_LOADED__.i18n &&
                   return e
                 })
                 .finally(function () {
-                  l.forEach(function (e) {
-                    e.mediaIds.length && t(Object(u.h)(e.mediaIds))
+                  u.forEach(function (e) {
+                    e.mediaIds.length && t(Object(l.h)(e.mediaIds))
                   }),
-                    t(P(s))
+                    t(T(s))
+                })
+            }
+          },
+          C = function () {
+            return function (e, t) {
+              var n = E(t()),
+                r = Object(s.a)(n),
+                o = []
+              for (var i in n) {
+                var c = n[i].previewData
+                o.push(e(a.t(b(b({}, c), {}, { isPreview: !1, isSendPreview: !0 }))))
+              }
+              return Promise.all(o)
+                .catch(function (e) {
+                  return e
+                })
+                .finally(function () {
+                  r.forEach(function (t) {
+                    e(T(t.id))
+                  })
                 })
             }
           }
@@ -56474,31 +56508,31 @@ window.__SCRIPTS_LOADED__.i18n &&
                   getMobileOS: function () {
                     return ge
                   },
-                  renderImage: function (e, t, n, r, o, i) {
-                    var a = e.uri,
-                      c = e.width,
-                      s = e.height,
-                      u = r
+                  renderImage: function (e, t, n, r, o, i, a) {
+                    var c = e.uri,
+                      s = e.width,
+                      u = e.height,
+                      l = r
                         ? (function (e) {
                             if (_e[e]) return _e[e]
                             var t = Z.a.createLayoutCache()
                             return (_e[e] = t), t
                           })(r)
                         : void 0,
-                      l = function (e) {
+                      d = function (e) {
                         var n = e.useMinimumData
                         return E.createElement(Z.a, {
                           accessibilityLabel: i,
                           aspectMode: ee.a.exact(t || 1),
                           cropCandidates: o,
-                          image: { url: a, width: c || 1e3, height: s || 1e3 },
-                          layoutCache: u,
+                          image: { url: c, width: s || 1e3, height: u || 1e3 },
+                          layoutCache: l,
                           previewMode: n,
                         })
                       }
                     return 'preview' === n
-                      ? E.createElement(X.a, { acceptLabel: be, renderContent: l, resourceId: a })
-                      : l({ useMinimumData: !1 })
+                      ? E.createElement(X.a, { acceptLabel: be, hideAcceptOverlay: a, renderContent: d, resourceId: c })
+                      : d({ useMinimumData: !1 })
                   },
                   renderTwemojiText: function (e) {
                     return E.createElement(te.c, null, e)
@@ -57498,40 +57532,40 @@ window.__SCRIPTS_LOADED__.i18n &&
       auX9: function (e, t, n) {
         'use strict'
         n.d(t, 'j', function () {
-          return j
+          return P
         }),
           n.d(t, 'k', function () {
-            return P
-          }),
-          n.d(t, 'g', function () {
             return T
           }),
-          n.d(t, 'h', function () {
+          n.d(t, 'g', function () {
             return S
           }),
-          n.d(t, 'i', function () {
+          n.d(t, 'h', function () {
             return I
           }),
-          n.d(t, 'f', function () {
+          n.d(t, 'i', function () {
             return C
           }),
-          n.d(t, 'c', function () {
-            return A
+          n.d(t, 'f', function () {
+            return k
           }),
-          n.d(t, 'd', function () {
+          n.d(t, 'c', function () {
             return L
           }),
-          n.d(t, 'a', function () {
-            return N
+          n.d(t, 'd', function () {
+            return M
           }),
-          n.d(t, 'e', function () {
+          n.d(t, 'a', function () {
             return F
           }),
-          n.d(t, 'l', function () {
+          n.d(t, 'e', function () {
             return B
           }),
-          n.d(t, 'b', function () {
+          n.d(t, 'l', function () {
             return U
+          }),
+          n.d(t, 'b', function () {
+            return H
           })
         n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
         var r = n('KEM+'),
@@ -57539,9 +57573,10 @@ window.__SCRIPTS_LOADED__.i18n &&
           i = (n('KOtZ'), n('z84I'), n('M+/F'), n('JtPf'), n('7x/C'), n('hqKg')),
           a = n('kGix'),
           c = n('Ssj5'),
-          s = n('4+NY'),
-          u = n('oEOe')
-        function l(e, t) {
+          s = n('5oBF'),
+          u = n('4+NY'),
+          l = n('oEOe')
+        function d(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -57553,40 +57588,40 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function d(e) {
+        function p(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? l(Object(n), !0).forEach(function (t) {
+              ? d(Object(n), !0).forEach(function (t) {
                   o()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : l(Object(n)).forEach(function (t) {
+              : d(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
-        var p = 'multiAccount',
-          f = 'rweb/multiAccount/REQUEST',
-          h = 'rweb/multiAccount/SUCCESS',
-          m = 'rweb/multiAccount/FAILURE',
-          v = 'rweb/multiAccount/ADD_REQUEST',
-          b = 'rweb/multiAccount/ADD_SUCCESS',
-          y = 'rweb/multiAccount/ADD_FAILURE',
-          g = 'rweb/multiAccount/ADD_RESET',
-          _ = 'rweb/multiAccount/BADGE_COUNT_SUCCESS',
-          O = { fetchStatus: a.a.NONE, users: [], badgeCounts: {}, addAccountFetchStatus: a.a.NONE }
-        var w = function (e, t) {
+        var f = 'multiAccount',
+          h = 'rweb/multiAccount/REQUEST',
+          m = 'rweb/multiAccount/SUCCESS',
+          v = 'rweb/multiAccount/FAILURE',
+          b = 'rweb/multiAccount/ADD_REQUEST',
+          y = 'rweb/multiAccount/ADD_SUCCESS',
+          g = 'rweb/multiAccount/ADD_FAILURE',
+          _ = 'rweb/multiAccount/ADD_RESET',
+          O = 'rweb/multiAccount/BADGE_COUNT_SUCCESS',
+          w = { fetchStatus: a.a.NONE, users: [], badgeCounts: {}, addAccountFetchStatus: a.a.NONE }
+        var E = function (e, t) {
             return t.reduce(function (t, n) {
-              return t + E(e, n.user_id)
+              return t + j(e, n.user_id)
             }, 0)
           },
-          E = function (e, t) {
+          j = function (e, t) {
             return e.multiAccount.badgeCounts[t] || 0
           },
-          j = Object(i.createSelector)(
+          P = Object(i.createSelector)(
             function (e) {
               return e.multiAccount.users
             },
@@ -57595,60 +57630,60 @@ window.__SCRIPTS_LOADED__.i18n &&
             },
             function (e, t) {
               return e.map(function (e) {
-                return d(d({}, e), {}, { badgeCount: t[e.user_id] || 0 })
+                return p(p({}, e), {}, { badgeCount: t[e.user_id] || 0 })
               })
             },
           ),
-          P = function (e) {
-            return j(e).slice(1, 3)
-          },
           T = function (e) {
-            return e.multiAccount.fetchStatus
+            return P(e).slice(1, 3)
           },
           S = function (e) {
-            return w(e, e.multiAccount.users) > 0
+            return e.multiAccount.fetchStatus
           },
           I = function (e) {
-            return w(e, e.multiAccount.users.slice(3)) > 0
+            return E(e, e.multiAccount.users) > 0
           },
           C = function (e) {
+            return E(e, e.multiAccount.users.slice(3)) > 0
+          },
+          k = function (e) {
             return e.multiAccount.addAccountError
           },
-          k = { REQUEST: f, SUCCESS: h, FAILURE: m },
-          R = { REQUEST: v, SUCCESS: b, FAILURE: y },
-          x = {
+          R = { REQUEST: h, SUCCESS: m, FAILURE: v },
+          x = { REQUEST: b, SUCCESS: y, FAILURE: g },
+          D = {
             REQUEST: 'rweb/multiAccount/SWITCH_REQUEST',
             SUCCESS: 'rweb/multiAccount/SWITCH_SUCCESS',
             FAILURE: 'rweb/multiAccount/SWITCH_FAILURE',
           },
-          D = {
+          A = {
             REQUEST: 'rweb/multiAccount/BADGE_COUNT_REQUEST',
-            SUCCESS: _,
+            SUCCESS: O,
             FAILURE: 'rweb/multiAccount/BADGE_COUNT_FAILURE',
           },
-          A = function () {
+          L = function () {
             var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
             return function (t, n, r) {
               var o = r.api
-              return Object(u.b)(t, { request: o.Auth.list, params: e })({
-                actionTypes: k,
+              return Object(l.b)(t, { request: o.Auth.list, params: e })({
+                actionTypes: R,
                 context: 'FETCH_MULTI_LIST',
               })
             }
           },
-          L = function () {
+          M = function () {
             return function (e, t) {
               var n = t().multiAccount
-              return n.fetchStatus === a.a.NONE || n.fetchStatus === a.a.FAILED ? e(A()) : Promise.resolve()
+              return n.fetchStatus === a.a.NONE || n.fetchStatus === a.a.FAILED ? e(L()) : Promise.resolve()
             }
           },
-          M = function () {
+          N = function () {
             window.location.assign('/home')
           },
-          N = function (e) {
+          F = function (e) {
             return function (t, n, r) {
               var o = r.api,
-                i = Object(u.b)(t, {
+                i = Object(l.b)(t, {
                   request: o.Auth.add,
                   params: {
                     'session[username_or_email]': e.username,
@@ -57657,11 +57692,11 @@ window.__SCRIPTS_LOADED__.i18n &&
                     ui_metrics: e.uiMetrics,
                   },
                 })
-              return t(Object(s.a)()).then(function () {
-                return i({ actionTypes: R, context: 'ADD' }).then(function (e) {
+              return t(Object(u.a)()).then(function () {
+                return i({ actionTypes: x, context: 'ADD' }).then(function (e) {
                   return (
                     e && '200' === e.response_code
-                      ? M()
+                      ? N()
                       : e && '302' === e.response_code && (window.location.href = e.redirect_url),
                     e
                   )
@@ -57669,48 +57704,50 @@ window.__SCRIPTS_LOADED__.i18n &&
               })
             }
           },
-          F = function () {
+          B = function () {
             return function (e, t) {
-              return e({ type: g })
-            }
-          },
-          B = function (e) {
-            return function (t, n, r) {
-              var o = r.api,
-                i = Object(u.b)(t, { request: o.Auth.switch, params: e })
-              return t(Object(s.b)()).then(function () {
-                return i({ actionTypes: x, context: 'SWITCH' }).then(M)
-              })
+              return e({ type: _ })
             }
           },
           U = function (e) {
-            return j(e)
+            return function (t, n, r) {
+              var o = r.api,
+                i = Object(l.b)(t, { request: o.Auth.switch, params: e })
+              return t(Object(s.f)()).then(function () {
+                return t(Object(u.b)()).then(function () {
+                  return i({ actionTypes: D, context: 'SWITCH' }).then(N)
+                })
+              })
+            }
+          },
+          H = function (e) {
+            return P(e)
               .slice(1)
               .map(function (e) {
                 return (
                   (t = e.user_id),
                   function (e, n, r) {
                     var o = r.api
-                    return Object(u.b)(e, {
+                    return Object(l.b)(e, {
                       request: o.BadgeCount.fetchBadgeCount,
                       headers: { 'x-web-auth-multi-user-id': t },
-                    })({ actionTypes: D, meta: { userId: t }, context: 'BADGE_COUNT' })
+                    })({ actionTypes: A, meta: { userId: t }, context: 'BADGE_COUNT' })
                   }
                 )
                 var t
               })
           }
         c.a.register(
-          o()({}, p, function () {
+          o()({}, f, function () {
             var e,
-              t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : O,
+              t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : w,
               n = arguments.length > 1 ? arguments[1] : void 0
             switch (n.type) {
-              case f:
-                return d(d({}, t), {}, { fetchStatus: a.a.LOADING })
               case h:
-                return d(
-                  d({}, t),
+                return p(p({}, t), {}, { fetchStatus: a.a.LOADING })
+              case m:
+                return p(
+                  p({}, t),
                   {},
                   {
                     fetchStatus: a.a.LOADED,
@@ -57719,25 +57756,25 @@ window.__SCRIPTS_LOADED__.i18n &&
                       : [],
                   },
                 )
-              case m:
-                return d(d({}, t), {}, { fetchStatus: a.a.FAILED })
               case v:
-                return d(d({}, t), {}, { addAccountError: void 0, addAccountFetchStatus: a.a.LOADING })
+                return p(p({}, t), {}, { fetchStatus: a.a.FAILED })
               case b:
-                return n.payload && n.payload.error_message && '400' === n.payload.response_code
-                  ? d(d({}, t), {}, { addAccountError: n.payload.error_message, addAccountFetchStatus: a.a.FAILED })
-                  : d(d({}, t), {}, { addAccountError: void 0, addAccountFetchStatus: a.a.LOADED })
+                return p(p({}, t), {}, { addAccountError: void 0, addAccountFetchStatus: a.a.LOADING })
               case y:
-                return d(d({}, t), {}, { addAccountError: void 0, addAccountFetchStatus: a.a.FAILED })
+                return n.payload && n.payload.error_message && '400' === n.payload.response_code
+                  ? p(p({}, t), {}, { addAccountError: n.payload.error_message, addAccountFetchStatus: a.a.FAILED })
+                  : p(p({}, t), {}, { addAccountError: void 0, addAccountFetchStatus: a.a.LOADED })
               case g:
-                return d(d({}, t), {}, { addAccountError: void 0, addAccountFetchStatus: a.a.NONE })
+                return p(p({}, t), {}, { addAccountError: void 0, addAccountFetchStatus: a.a.FAILED })
               case _:
+                return p(p({}, t), {}, { addAccountError: void 0, addAccountFetchStatus: a.a.NONE })
+              case O:
                 return n.meta && n.payload && n.payload.total_unread_count !== t.badgeCounts[n.meta.userId]
-                  ? d(
-                      d({}, t),
+                  ? p(
+                      p({}, t),
                       {},
                       {
-                        badgeCounts: d(d({}, t.badgeCounts), {}, o()({}, n.meta.userId, n.payload.total_unread_count)),
+                        badgeCounts: p(p({}, t.badgeCounts), {}, o()({}, n.meta.userId, n.payload.total_unread_count)),
                       },
                     )
                   : t
@@ -58563,22 +58600,23 @@ window.__SCRIPTS_LOADED__.i18n &&
                     var t = e.isDataSaverEnabled,
                       n = e.isPromoted,
                       r = this.props,
-                      o = r.locationKey,
-                      i = r.mediaEntity,
-                      a = r.ratio,
-                      c = i || {},
-                      s = c.media_url_https,
-                      u = c.cropCandidates,
-                      l = c.altText,
-                      d = void 0 === l ? '' : l,
-                      p = (null == i ? void 0 : i.original_info) || {},
-                      f = p.width,
-                      h = p.height,
-                      m = t ? (n ? 'suboptimal' : 'preview') : void 0
+                      o = r.hideImageDataSaverOverlay,
+                      i = r.locationKey,
+                      a = r.mediaEntity,
+                      c = r.ratio,
+                      s = a || {},
+                      u = s.media_url_https,
+                      l = s.cropCandidates,
+                      d = s.altText,
+                      p = void 0 === d ? '' : d,
+                      f = (null == a ? void 0 : a.original_info) || {},
+                      h = f.width,
+                      m = f.height,
+                      v = t ? (n ? 'suboptimal' : 'preview') : void 0
                     return _.createElement(
                       _.Fragment,
                       null,
-                      A.a.renderImage({ uri: s, width: f, height: h }, a, m, o, u, d),
+                      A.a.renderImage({ uri: u, width: h, height: m }, c, v, i, l, p, o),
                       this._renderOverlay(),
                     )
                   },
@@ -58654,45 +58692,47 @@ window.__SCRIPTS_LOADED__.i18n &&
               i = e.media,
               a = e.playOverlaySize,
               c = e.renderVideoPlayer,
-              s = e.useDestination,
-              u = void 0 === s || s
+              s = e.hideImageDataSaverOverlay,
+              u = e.useDestination,
+              l = void 0 === u || u
             if (!i || !i.mediaEntity) return null
-            var l = i.aspect_ratio,
-              d = i.mediaEntity,
-              p = i.destination,
-              f = i.overlay
-            if ('photo' === d.type) {
-              var h = d.original_info,
-                m = h.width,
-                v = h.height,
-                b = r || l || (d ? Math.max(m / v, 1) : void 0)
+            var d = i.aspect_ratio,
+              p = i.mediaEntity,
+              f = i.destination,
+              h = i.overlay
+            if ('photo' === p.type) {
+              var m = p.original_info,
+                v = m.width,
+                b = m.height,
+                y = r || d || (p ? Math.max(v / b, 1) : void 0)
               return _.createElement(de, {
                 accessibilityHidden: t,
-                destination: u ? p : void 0,
+                destination: l ? f : void 0,
                 enableFallbackUrl: n,
+                hideImageDataSaverOverlay: s,
                 locationKey: o && ''.concat(o, '-largeCard'),
-                mediaEntity: d,
-                overlay: f,
+                mediaEntity: p,
+                overlay: h,
                 playOverlaySize: a,
-                ratio: b,
+                ratio: y,
               })
             }
-            return 'iframe' === d.type
+            return 'iframe' === p.type
               ? _.createElement(
                   Z.a,
-                  { ratio: Math.max(d.aspect_ratio, 1) },
-                  _.createElement(pe.a, { src: d.url, style: he.iframe }),
+                  { ratio: Math.max(p.aspect_ratio, 1) },
+                  _.createElement(pe.a, { src: p.url, style: he.iframe }),
                 )
-              : ('video' === d.type ||
-                  'uc_video' === d.type ||
-                  'live_broadcast' === d.type ||
-                  'vine' === d.type ||
-                  'tweet_video' === d.type) &&
+              : ('video' === p.type ||
+                  'uc_video' === p.type ||
+                  'live_broadcast' === p.type ||
+                  'vine' === p.type ||
+                  'tweet_video' === p.type) &&
                 c
               ? _.createElement(Dt.Context.Consumer, null, function (e) {
                   var t = e.isDataSaverEnabled,
                     n = e.isPromoted
-                  return c(d, t ? (n ? 'suboptimal' : 'preview') : void 0)
+                  return c(p, t ? (n ? 'suboptimal' : 'preview') : void 0)
                 })
               : null
           },
@@ -58933,38 +58973,40 @@ window.__SCRIPTS_LOADED__.i18n &&
               c = t.position,
               s = t.playOverlaySize,
               u = t.forcedMediaAspectRatio,
-              l = a.media_entity
+              l = a.media_entity,
+              d = !1
             if ('uc_video' !== l.type && 'photo' !== l.type) return null
-            var d = a.destination,
-              p = n === i,
-              f = !0,
-              h = l.original_info,
-              m = h.width / h.height
+            var p = a.destination,
+              f = n === i,
+              h = !0,
+              m = l.original_info,
+              v = m.width / m.height
             if ('uc_video' === l.type) {
-              var v = r === i
-              v || (f = !1)
-              var b = o && o(a.media_entity)
-              if (v && b)
+              var b = r === i
+              b || (h = !1)
+              var y = o && o(a.media_entity)
+              if (b && y)
                 return _.createElement(
                   P.a,
                   {
-                    accessibilityHidden: !p,
+                    accessibilityHidden: !f,
                     key: a.id,
-                    onLayout: e(m),
+                    onLayout: e(v),
                     style: [Ge.video, 'first' === c && Ge.firstImage, 'last' === c && Ge.lastImage],
                     testID: 'videoContainer',
                   },
-                  b(),
+                  y(),
                 )
-              l = { media_url_https: l.media_url_https, type: 'photo', original_info: l.original_info }
+              ;(d = !0), (l = { media_url_https: l.media_url_https, type: 'photo', original_info: l.original_info })
             }
             return _.createElement(
               P.a,
-              { key: a.id, onLayout: e(m) },
+              { key: a.id, onLayout: e(v) },
               _.createElement(de, {
-                accessibilityHidden: !p,
+                accessibilityHidden: !f,
                 componentType: 'swipeable_media',
-                destination: f ? d : void 0,
+                destination: h ? p : void 0,
+                hideImageDataSaverOverlay: d,
                 mediaEntity: l,
                 overlay: a.overlay,
                 playOverlaySize: s,
@@ -59832,18 +59874,19 @@ window.__SCRIPTS_LOADED__.i18n &&
                 H = B.destination,
                 W = B.overlay,
                 z = B.id && I[B.id],
-                G = !0
+                G = !1
               if (!v && 'uc_video' === (null === (F = z) || void 0 === F ? void 0 : F.type) && B.id)
-                (z = I[Object(vt.b)(B.id)]), (G = !1)
+                (z = I[Object(vt.b)(B.id)]), (G = !0)
               if (!z) return null
               E = _.createElement(fe, {
                 accessibilityHidden: t,
                 forcedMediaAspectRatio: p,
+                hideImageDataSaverOverlay: G,
                 locationKey: d,
                 media: { aspect_ratio: U, destination: H, mediaEntity: z, overlay: W },
                 playOverlaySize: k,
                 renderVideoPlayer: m,
-                useDestination: G,
+                useDestination: !G,
               })
             }
             if (E) {
@@ -70887,7 +70930,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                       i = n.referrer,
                       a = n.controller_data,
                       c = n.rux_context,
-                      s = n.with_rux_injections
+                      s = n.with_rux_injections,
+                      u = n.isReaderMode
                     return e
                       .graphQL(
                         yr.a,
@@ -70908,7 +70952,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                             Object(O.a)(t),
                           ),
                           {},
-                          { withVoice: t.isTrue('voice_consumption_enabled') },
+                          { withVoice: t.isTrue('voice_consumption_enabled'), isReaderMode: u },
                         ),
                         Or,
                       )
@@ -84505,65 +84549,36 @@ window.__SCRIPTS_LOADED__.i18n &&
       r7ya: function (e, t, n) {
         'use strict'
         n.d(t, 'c', function () {
-          return y
+          return S
         }),
           n.d(t, 'a', function () {
-            return _
+            return C
           }),
           n.d(t, 'b', function () {
-            return w
+            return R
           }),
           n.d(t, 'd', function () {
-            return x
+            return D
           })
         n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
         var r = n('KEM+'),
           o = n.n(r),
-          i = (n('yH/f'), n('M+/F'), n('hBvt'), n('8WKW')),
+          i = (n('M+/F'), n('hBvt'), n('yH/f'), n('8WKW')),
           a = n('SCUc'),
-          c = n('lzTJ')
-        function s(e, t) {
-          var n = Object.keys(e)
-          if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e)
-            t &&
-              (r = r.filter(function (t) {
-                return Object.getOwnPropertyDescriptor(e, t).enumerable
-              })),
-              n.push.apply(n, r)
-          }
-          return n
-        }
-        function u(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {}
-            t % 2
-              ? s(Object(n), !0).forEach(function (t) {
-                  o()(e, t, n[t])
-                })
-              : Object.getOwnPropertyDescriptors
-              ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : s(Object(n)).forEach(function (t) {
-                  Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-                })
-          }
-          return e
-        }
-        var l = function (e) {
+          c = '#FFFFFF',
+          s = function (e) {
             return 'rgba(255,255,255,'.concat(e, ')')
           },
-          d = function (e) {
+          u = function (e) {
             return 'rgba(0,0,0,'.concat(e, ')')
           },
-          p = function (e) {
+          l = function (e) {
             return 'rgba(21, 32, 43,'.concat(e, ')')
           },
-          f = function (e) {
+          d = function (e) {
             return 'rgba(91,112,131,'.concat(e, ')')
           },
-          h = '#FFFFFF',
-          m = {
-            transparent: 'transparent',
+          p = {
             blue600: a.a.color.baseColor.blue600,
             blue500: a.a.color.baseColor.blue500,
             blue300: a.a.color.baseColor.blue300,
@@ -84571,20 +84586,6 @@ window.__SCRIPTS_LOADED__.i18n &&
             blue100: a.a.color.baseColor.blue100,
             blue50: a.a.color.baseColor.blue50,
             blue0: a.a.color.baseColor.blue0,
-            plum600: a.a.color.baseColor.plum600,
-            plum500: a.a.color.baseColor.plum500,
-            plum300: a.a.color.baseColor.plum300,
-            plum200: a.a.color.baseColor.plum200,
-            plum100: a.a.color.baseColor.plum100,
-            plum50: a.a.color.baseColor.plum50,
-            plum0: a.a.color.baseColor.plum0,
-            purple600: a.a.color.baseColor.purple600,
-            purple500: a.a.color.baseColor.purple500,
-            purple300: a.a.color.baseColor.purple300,
-            purple200: a.a.color.baseColor.purple200,
-            purple100: a.a.color.baseColor.purple100,
-            purple50: a.a.color.baseColor.purple50,
-            purple0: a.a.color.baseColor.purple0,
             green600: a.a.color.baseColor.green600,
             green500: a.a.color.baseColor.green500,
             green300: a.a.color.baseColor.green300,
@@ -84592,13 +84593,6 @@ window.__SCRIPTS_LOADED__.i18n &&
             green100: a.a.color.baseColor.green100,
             green50: a.a.color.baseColor.green50,
             green0: a.a.color.baseColor.green0,
-            yellow600: a.a.color.baseColor.yellow600,
-            yellow500: a.a.color.baseColor.yellow500,
-            yellow300: a.a.color.baseColor.yellow300,
-            yellow200: a.a.color.baseColor.yellow200,
-            yellow100: a.a.color.baseColor.yellow100,
-            yellow50: a.a.color.baseColor.yellow50,
-            yellow0: a.a.color.baseColor.yellow0,
             magenta600: a.a.color.baseColor.magenta600,
             magenta500: a.a.color.baseColor.magenta500,
             magenta300: a.a.color.baseColor.magenta300,
@@ -84613,6 +84607,20 @@ window.__SCRIPTS_LOADED__.i18n &&
             orange100: a.a.color.baseColor.orange100,
             orange50: a.a.color.baseColor.orange50,
             orange0: a.a.color.baseColor.orange0,
+            plum600: a.a.color.baseColor.plum600,
+            plum500: a.a.color.baseColor.plum500,
+            plum300: a.a.color.baseColor.plum300,
+            plum200: a.a.color.baseColor.plum200,
+            plum100: a.a.color.baseColor.plum100,
+            plum50: a.a.color.baseColor.plum50,
+            plum0: a.a.color.baseColor.plum0,
+            purple600: a.a.color.baseColor.purple600,
+            purple500: a.a.color.baseColor.purple500,
+            purple300: a.a.color.baseColor.purple300,
+            purple200: a.a.color.baseColor.purple200,
+            purple100: a.a.color.baseColor.purple100,
+            purple50: a.a.color.baseColor.purple50,
+            purple0: a.a.color.baseColor.purple0,
             red600: a.a.color.baseColor.red600,
             red500: a.a.color.baseColor.red500,
             red300: a.a.color.baseColor.red300,
@@ -84627,11 +84635,20 @@ window.__SCRIPTS_LOADED__.i18n &&
             teal100: a.a.color.baseColor.teal100,
             teal50: a.a.color.baseColor.teal50,
             teal0: a.a.color.baseColor.teal0,
-            gray1100: a.a.color.baseColor.gray1100,
-            translucentBlack77: d(0.77),
-            translucentBlack30: d(0.3),
-            translucentBlack15: d(0.15),
-            white: h,
+            yellow600: a.a.color.baseColor.yellow600,
+            yellow500: a.a.color.baseColor.yellow500,
+            yellow300: a.a.color.baseColor.yellow300,
+            yellow200: a.a.color.baseColor.yellow200,
+            yellow100: a.a.color.baseColor.yellow100,
+            yellow50: a.a.color.baseColor.yellow50,
+            yellow0: a.a.color.baseColor.yellow0,
+          },
+          f = {
+            transparent: 'transparent',
+            translucentBlack77: 'rgba(0,0,0,.77)',
+            translucentBlack30: 'rgba(0,0,0,.3)',
+            translucentBlack15: 'rgba(0,0,0,.15)',
+            white: c,
             primary: a.a.color.baseColor.blue500,
             primaryOnWhite: a.a.color.baseColor.blue500,
             lightPrimary: a.a.color.baseColor.blue300,
@@ -84639,12 +84656,18 @@ window.__SCRIPTS_LOADED__.i18n &&
             primary50: a.a.color.baseColor.blue50,
             link: '#1B95E0',
             unreadCellBackground: a.a.color.baseColor.blue0,
+            gray1100: a.a.color.baseColor.gray1100,
+            gray700: a.a.color.baseColor.gray700,
+            gray300: a.a.color.baseColor.gray300,
+            gray200: a.a.color.baseColor.gray200,
+            gray50: a.a.color.baseColor.gray50,
+            gray0: a.a.color.baseColor.gray0,
             experimentalButtonAlwaysBlack: a.a.color.baseColor.gray1100,
             experimentalButtonAlwaysWhite: a.a.color.baseColor.gray50,
-            experimentalLightButtonText: h,
+            experimentalLightButtonText: c,
             legacyPink: '#E0245E',
           },
-          v = {
+          h = {
             light: {
               blue500: '#264A9D',
               plum500: '#8D2090',
@@ -84669,227 +84692,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               experimentalLightButtonText: a.a.color.baseColor.gray1100,
             },
           },
-          b = function (e, t) {
-            return t ? (e === c.b.light ? u(u({}, m), v.light) : u(u({}, m), v.dark)) : m
-          },
-          y = Object.freeze(
-            u(
-              u({}, b(c.b.light)),
-              {},
-              {
-                text: a.a.color.baseColor.gray1100,
-                textOverflowBackground: a.a.color.baseColor.magenta200,
-                gray700: a.a.color.baseColor.gray700,
-                gray300: a.a.color.baseColor.gray300,
-                gray200: a.a.color.baseColor.gray200,
-                gray50: a.a.color.baseColor.gray50,
-                gray0: a.a.color.baseColor.gray0,
-                activeFaintGray: 'rgba(230, 236, 240, 0.7)',
-                activeBlack: d(0.07),
-                hoverBlack: d(0.03),
-                navigationBackground: h,
-                navigationBackground95: l(0.95),
-                cellBackground: h,
-                borderColor: a.a.color.baseColor.gray50,
-                nestedBorderColor: a.a.color.baseColor.gray200,
-                dmReceivedBubbleBackground: a.a.color.baseColor.gray50,
-                badgeColor: a.a.color.baseColor.blue500,
-                maskColor: d(0.4),
-                hoverLabelColor: d(0.6),
-                elevatedBackground: h,
-                brandColor: a.a.color.baseColor.blue500,
-                whiteOnColor: h,
-                experimentalButtonBlack: a.a.color.baseColor.gray1100,
-                experimentalButtonWhite: h,
-                experimentalButtonGray: a.a.color.baseColor.gray200,
-                experimentalButtonOutlinedBorder: a.a.color.baseColor.gray200,
-                experimentalDestructionButtonOutlinedBorder: a.a.color.baseColor.magenta50,
-                experimentalBlue200: a.a.color.baseColor.blue200,
-                experimentalBlue100: a.a.color.baseColor.blue100,
-                experimentalBlue50: a.a.color.baseColor.blue50,
-                experimentalBlue0: a.a.color.baseColor.blue0,
-                experimentalOrange200: a.a.color.baseColor.orange200,
-                experimentalOrange100: a.a.color.baseColor.orange100,
-                experimentalOrange50: a.a.color.baseColor.orange50,
-                experimentalOrange0: a.a.color.baseColor.orange0,
-                experimentalRed500: a.a.color.baseColor.red500,
-                experimentalRed200: a.a.color.baseColor.red200,
-                experimentalRed100: a.a.color.baseColor.red100,
-                experimentalRed50: a.a.color.baseColor.red50,
-                experimentalRed0: a.a.color.baseColor.red0,
-                appBarBackground: l(0.85),
-              },
-            ),
-          ),
-          g = Object.freeze(
-            u(
-              u(u({}, y), b(c.b.light, !0)),
-              {},
-              {
-                text: '#141D26',
-                gray700: '#3B4C5C',
-                gray300: '#697987',
-                gray200: '#697987',
-                gray50: a.a.color.baseColor.gray200,
-                gray0: a.a.color.baseColor.gray50,
-                navigationBackground95: h,
-                borderColor: a.a.color.baseColor.gray300,
-                nestedBorderColor: a.a.color.baseColor.gray300,
-                dmReceivedBubbleBackground: a.a.color.baseColor.gray200,
-                badgeColor: '#264A9D',
-                experimentalButtonGray: '#697987',
-                experimentalRed500: '#AE1425',
-                experimentalButtonOutlinedBorder: a.a.color.baseColor.gray700,
-              },
-            ),
-          ),
-          _ = Object.freeze(
-            u(
-              u({}, b(c.b.dark)),
-              {},
-              {
-                text: h,
-                textOverflowBackground: a.a.color.baseColor.magenta500,
-                gray700: '#8899A6',
-                gray300: '#6B7D8C',
-                gray200: '#3D5466',
-                gray50: '#253341',
-                gray0: '#192734',
-                activeFaintGray: 'rgba(20, 29, 38, 0.7)',
-                activeBlack: l(0.07),
-                hoverBlack: l(0.03),
-                navigationBackground: '#15202B',
-                navigationBackground95: 'rgba(21, 32, 43, 0.95)',
-                cellBackground: '#15202B',
-                borderColor: '#38444D',
-                nestedBorderColor: '#38444D',
-                dmReceivedBubbleBackground: '#3D5466',
-                badgeColor: h,
-                maskColor: f(0.4),
-                hoverLabelColor: f(0.8),
-                elevatedBackground: '#1C2C3C',
-                brandColor: h,
-                whiteOnColor: h,
-                experimentalButtonBlack: a.a.color.baseColor.gray50,
-                experimentalButtonWhite: a.a.color.baseColor.gray1100,
-                experimentalButtonGray: a.a.color.baseColor.gray200,
-                experimentalButtonOutlinedBorder: a.a.color.baseColor.gray700,
-                experimentalDestructionButtonOutlinedBorder: '#67070F',
-                experimentalBlue200: '#005AC2',
-                experimentalBlue100: '#003886',
-                experimentalBlue50: '#00154A',
-                experimentalBlue0: '#020F34',
-                experimentalOrange200: '#892B00',
-                experimentalOrange100: '#692100',
-                experimentalOrange50: '#491600',
-                experimentalOrange0: '#381101',
-                experimentalRed500: '#F4212E',
-                experimentalRed200: '#8A0D20',
-                experimentalRed100: '#67070F',
-                experimentalRed50: '#440004',
-                experimentalRed0: '#330104',
-                appBarBackground: p(0.75),
-              },
-            ),
-          ),
-          O = Object.freeze(
-            u(
-              u(u({}, _), b(c.b.dark, !0)),
-              {},
-              {
-                textOverflowBackground: '#9F0C3A',
-                gray700: '#B8CBD9',
-                gray300: '#92A4B3',
-                gray200: '#697987',
-                gray50: '#10171E',
-                gray0: '#182430',
-                navigationBackground95: '#15202B',
-                unreadCellBackground: '#325D7D',
-                dmReceivedBubbleBackground: '#B8CBD9',
-                badgeColor: '#70C8FF',
-                whiteOnColor: a.a.color.baseColor.gray1100,
-                experimentalRed500: '#F87580',
-                experimentalButtonOutlinedBorder: a.a.color.baseColor.gray300,
-              },
-            ),
-          ),
-          w = Object.freeze(
-            u(
-              u({}, b(c.b.darker)),
-              {},
-              {
-                text: '#D9D9D9',
-                textOverflowBackground: a.a.color.baseColor.magenta500,
-                gray700: '#6E767D',
-                gray300: '#3D4145',
-                gray200: '#2F3336',
-                gray50: '#202327',
-                gray0: '#15181C',
-                activeFaintGray: 'rgba(18, 21, 23, 0.7)',
-                activeBlack: l(0.07),
-                hoverBlack: l(0.03),
-                navigationBackground: '#000000',
-                navigationBackground95: d(0.95),
-                cellBackground: '#000000',
-                unreadCellBackground: '#041722',
-                borderColor: '#2F3336',
-                nestedBorderColor: '#2F3336',
-                dmReceivedBubbleBackground: '#2F3336',
-                badgeColor: '#D9D9D9',
-                maskColor: f(0.4),
-                hoverLabelColor: f(0.8),
-                elevatedBackground: '#1B2023',
-                brandColor: '#D9D9D9',
-                whiteOnColor: h,
-                experimentalButtonBlack: a.a.color.baseColor.gray50,
-                experimentalButtonWhite: a.a.color.baseColor.gray1100,
-                experimentalButtonGray: a.a.color.baseColor.gray200,
-                experimentalButtonOutlinedBorder: a.a.color.baseColor.gray700,
-                experimentalDestructionButtonOutlinedBorder: '#67070F',
-                experimentalBlue200: '#005AC2',
-                experimentalBlue100: '#003886',
-                experimentalBlue50: '#00154A',
-                experimentalBlue0: '#020F34',
-                experimentalOrange200: '#892B00',
-                experimentalOrange100: '#692100',
-                experimentalOrange50: '#491600',
-                experimentalOrange0: '#381101',
-                experimentalRed500: '#F4212E',
-                experimentalRed200: '#8A0D20',
-                experimentalRed100: '#67070F',
-                experimentalRed50: '#440004',
-                experimentalRed0: '#330104',
-                appBarBackground: d(0.65),
-              },
-            ),
-          ),
-          E = Object.freeze(
-            u(
-              u(u({}, w), b(c.b.darker, !0)),
-              {},
-              {
-                textOverflowBackground: '#9F0C3A',
-                gray700: '#929ca6',
-                gray300: '#6e767d',
-                gray200: '#3D4145',
-                gray50: '#121517',
-                gray0: '#0E1012',
-                text: h,
-                navigationBackground: '#050505',
-                navigationBackground95: '#050505',
-                cellBackground: '#050505',
-                unreadCellBackground: '#244052',
-                borderColor: '#3D4145',
-                nestedBorderColor: '#3D4145',
-                dmReceivedBubbleBackground: '#929CA6',
-                badgeColor: '#70C8FF',
-                whiteOnColor: a.a.color.baseColor.gray1100,
-                experimentalRed500: '#F87580',
-                experimentalButtonOutlinedBorder: a.a.color.baseColor.gray300,
-              },
-            ),
-          ),
-          j = {
+          m = {
             blue500: a.a.color.baseColor.blue300,
             green500: a.a.color.baseColor.green300,
             orange500: a.a.color.baseColor.orange300,
@@ -84898,7 +84701,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             purple500: a.a.color.baseColor.purple300,
             yellow500: a.a.color.baseColor.yellow300,
           },
-          P = {
+          v = {
             light: {
               blue500: '#70C8FF',
               green500: '#66D397',
@@ -84918,40 +84721,284 @@ window.__SCRIPTS_LOADED__.i18n &&
               yellow500: a.a.color.baseColor.yellow200,
             },
           },
+          b = n('lzTJ')
+        function y(e, t) {
+          var n = Object.keys(e)
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e)
+            t &&
+              (r = r.filter(function (t) {
+                return Object.getOwnPropertyDescriptor(e, t).enumerable
+              })),
+              n.push.apply(n, r)
+          }
+          return n
+        }
+        function g(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {}
+            t % 2
+              ? y(Object(n), !0).forEach(function (t) {
+                  o()(e, t, n[t])
+                })
+              : Object.getOwnPropertyDescriptors
+              ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+              : y(Object(n)).forEach(function (t) {
+                  Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+                })
+          }
+          return e
+        }
+        var _ = function (e, t) {
+            var n = e === b.b.light ? h.light : h.dark
+            return g(g(g({}, p), f), t && n)
+          },
+          O = function (e, t, n) {
+            return _(t, n)[e]
+          },
+          w = function (e, t, n) {
+            return n && t !== b.b.light ? '#141D26' : O(e, t, n)
+          },
+          E = function (e, t, n) {
+            return n ? (t === b.b.light ? v.light[e] : v.dark[e]) : m[e]
+          },
+          j = function (e, t, n) {
+            return n ? (t === b.b.light ? v.light[e] : v.dark[e]) : p[''.concat(e.slice(0, -1))]
+          },
+          P = function (e, t, n) {
+            var r = _(t, n)
+            return e === b.c.blue500 ? r.link : r[e]
+          },
           T = function (e, t, n) {
-            return b(t, n)[e]
-          },
-          S = function (e, t, n) {
-            return n && t !== c.b.light ? '#141D26' : T(e, t, n)
-          },
-          I = function (e, t, n) {
-            return n ? (t === c.b.light ? P.light[e] : P.dark[e]) : j[e]
-          },
-          C = function (e, t, n) {
-            return n ? (t === c.b.light ? P.light[e] : P.dark[e]) : m[''.concat(e.slice(0, -1))]
-          },
-          k = function (e, t, n) {
-            var r = b(t, n)
-            return e === c.c.blue500 ? r.link : r[e]
-          },
-          R = function (e, t, n) {
-            var r = b(t, n),
-              o = t === c.b.light ? 0.1 : t === c.b.darker ? 0.14 : 0.12
+            var r = _(t, n),
+              o = t === b.b.light ? 0.1 : t === b.b.darker ? 0.14 : 0.12
             return Object(i.a)(r[e], o)
           },
-          x = function (e, t, n) {
-            var r
-            return u(
-              u({}, t === c.b.light ? (n ? g : y) : t === c.b.dark ? (n ? O : _) : n ? E : w),
+          S = Object.freeze(
+            g(
+              g({}, _(b.b.light)),
               {},
               {
-                primary: T(e, t, n),
-                primaryOnWhite: S(e, t, n),
-                lightPrimary: I(e, t, n),
-                lightPrimaryWithOpacity: ((r = e), Object(i.a)(m[r], 0.58)),
-                primary50: C(e, t, n),
-                link: k(e, t, n),
-                unreadCellBackground: R(e, t, n),
+                text: a.a.color.baseColor.gray1100,
+                textOverflowBackground: a.a.color.baseColor.magenta200,
+                activeFaintGray: 'rgba(230, 236, 240, 0.7)',
+                activeBlack: u(0.07),
+                hoverBlack: u(0.03),
+                navigationBackground: c,
+                navigationBackground95: s(0.95),
+                cellBackground: c,
+                borderColor: a.a.color.baseColor.gray50,
+                nestedBorderColor: a.a.color.baseColor.gray200,
+                dmReceivedBubbleBackground: a.a.color.baseColor.gray50,
+                badgeColor: a.a.color.baseColor.blue500,
+                maskColor: u(0.4),
+                hoverLabelColor: u(0.6),
+                elevatedBackground: c,
+                brandColor: a.a.color.baseColor.blue500,
+                whiteOnColor: c,
+                experimentalButtonBlack: a.a.color.baseColor.gray1100,
+                experimentalButtonWhite: c,
+                experimentalButtonGray: a.a.color.baseColor.gray200,
+                experimentalButtonOutlinedBorder: a.a.color.baseColor.gray200,
+                experimentalDestructionButtonOutlinedBorder: a.a.color.baseColor.magenta50,
+                experimentalBlue200: a.a.color.baseColor.blue200,
+                experimentalBlue100: a.a.color.baseColor.blue100,
+                experimentalBlue50: a.a.color.baseColor.blue50,
+                experimentalBlue0: a.a.color.baseColor.blue0,
+                experimentalOrange200: a.a.color.baseColor.orange200,
+                experimentalOrange100: a.a.color.baseColor.orange100,
+                experimentalOrange50: a.a.color.baseColor.orange50,
+                experimentalOrange0: a.a.color.baseColor.orange0,
+                experimentalRed500: a.a.color.baseColor.red500,
+                experimentalRed200: a.a.color.baseColor.red200,
+                experimentalRed100: a.a.color.baseColor.red100,
+                experimentalRed50: a.a.color.baseColor.red50,
+                experimentalRed0: a.a.color.baseColor.red0,
+                appBarBackground: s(0.85),
+              },
+            ),
+          ),
+          I = Object.freeze(
+            g(
+              g(g({}, S), _(b.b.light, !0)),
+              {},
+              {
+                text: '#141D26',
+                gray700: '#3B4C5C',
+                gray300: '#697987',
+                gray200: '#697987',
+                gray50: a.a.color.baseColor.gray200,
+                gray0: a.a.color.baseColor.gray50,
+                navigationBackground95: c,
+                borderColor: a.a.color.baseColor.gray300,
+                nestedBorderColor: a.a.color.baseColor.gray300,
+                dmReceivedBubbleBackground: a.a.color.baseColor.gray200,
+                badgeColor: '#264A9D',
+                experimentalButtonGray: '#697987',
+                experimentalRed500: '#AE1425',
+                experimentalButtonOutlinedBorder: a.a.color.baseColor.gray700,
+              },
+            ),
+          ),
+          C = Object.freeze(
+            g(
+              g({}, _(b.b.dark)),
+              {},
+              {
+                text: c,
+                textOverflowBackground: a.a.color.baseColor.magenta500,
+                gray700: '#8899A6',
+                gray300: '#6B7D8C',
+                gray200: '#3D5466',
+                gray50: '#253341',
+                gray0: '#192734',
+                activeFaintGray: 'rgba(20, 29, 38, 0.7)',
+                activeBlack: s(0.07),
+                hoverBlack: s(0.03),
+                navigationBackground: '#15202B',
+                navigationBackground95: 'rgba(21, 32, 43, 0.95)',
+                cellBackground: '#15202B',
+                borderColor: '#38444D',
+                nestedBorderColor: '#38444D',
+                dmReceivedBubbleBackground: '#3D5466',
+                badgeColor: c,
+                maskColor: d(0.4),
+                hoverLabelColor: d(0.8),
+                elevatedBackground: '#1C2C3C',
+                brandColor: c,
+                whiteOnColor: c,
+                experimentalButtonBlack: a.a.color.baseColor.gray50,
+                experimentalButtonWhite: a.a.color.baseColor.gray1100,
+                experimentalButtonGray: a.a.color.baseColor.gray200,
+                experimentalButtonOutlinedBorder: a.a.color.baseColor.gray700,
+                experimentalDestructionButtonOutlinedBorder: '#67070F',
+                experimentalBlue200: '#005AC2',
+                experimentalBlue100: '#003886',
+                experimentalBlue50: '#00154A',
+                experimentalBlue0: '#020F34',
+                experimentalOrange200: '#892B00',
+                experimentalOrange100: '#692100',
+                experimentalOrange50: '#491600',
+                experimentalOrange0: '#381101',
+                experimentalRed500: '#F4212E',
+                experimentalRed200: '#8A0D20',
+                experimentalRed100: '#67070F',
+                experimentalRed50: '#440004',
+                experimentalRed0: '#330104',
+                appBarBackground: l(0.75),
+              },
+            ),
+          ),
+          k = Object.freeze(
+            g(
+              g(g({}, C), _(b.b.dark, !0)),
+              {},
+              {
+                textOverflowBackground: '#9F0C3A',
+                gray700: '#B8CBD9',
+                gray300: '#92A4B3',
+                gray200: '#697987',
+                gray50: '#10171E',
+                gray0: '#182430',
+                navigationBackground95: '#15202B',
+                unreadCellBackground: '#325D7D',
+                dmReceivedBubbleBackground: '#B8CBD9',
+                badgeColor: '#70C8FF',
+                whiteOnColor: a.a.color.baseColor.gray1100,
+                experimentalRed500: '#F87580',
+                experimentalButtonOutlinedBorder: a.a.color.baseColor.gray300,
+              },
+            ),
+          ),
+          R = Object.freeze(
+            g(
+              g({}, _(b.b.darker)),
+              {},
+              {
+                text: '#D9D9D9',
+                textOverflowBackground: a.a.color.baseColor.magenta500,
+                gray700: '#6E767D',
+                gray300: '#3D4145',
+                gray200: '#2F3336',
+                gray50: '#202327',
+                gray0: '#15181C',
+                activeFaintGray: 'rgba(18, 21, 23, 0.7)',
+                activeBlack: s(0.07),
+                hoverBlack: s(0.03),
+                navigationBackground: '#000000',
+                navigationBackground95: u(0.95),
+                cellBackground: '#000000',
+                unreadCellBackground: '#041722',
+                borderColor: '#2F3336',
+                nestedBorderColor: '#2F3336',
+                dmReceivedBubbleBackground: '#2F3336',
+                badgeColor: '#D9D9D9',
+                maskColor: d(0.4),
+                hoverLabelColor: d(0.8),
+                elevatedBackground: '#1B2023',
+                brandColor: '#D9D9D9',
+                whiteOnColor: c,
+                experimentalButtonBlack: a.a.color.baseColor.gray50,
+                experimentalButtonWhite: a.a.color.baseColor.gray1100,
+                experimentalButtonGray: a.a.color.baseColor.gray200,
+                experimentalButtonOutlinedBorder: a.a.color.baseColor.gray700,
+                experimentalDestructionButtonOutlinedBorder: '#67070F',
+                experimentalBlue200: '#005AC2',
+                experimentalBlue100: '#003886',
+                experimentalBlue50: '#00154A',
+                experimentalBlue0: '#020F34',
+                experimentalOrange200: '#892B00',
+                experimentalOrange100: '#692100',
+                experimentalOrange50: '#491600',
+                experimentalOrange0: '#381101',
+                experimentalRed500: '#F4212E',
+                experimentalRed200: '#8A0D20',
+                experimentalRed100: '#67070F',
+                experimentalRed50: '#440004',
+                experimentalRed0: '#330104',
+                appBarBackground: u(0.65),
+              },
+            ),
+          ),
+          x = Object.freeze(
+            g(
+              g(g({}, R), _(b.b.darker, !0)),
+              {},
+              {
+                textOverflowBackground: '#9F0C3A',
+                gray700: '#929ca6',
+                gray300: '#6e767d',
+                gray200: '#3D4145',
+                gray50: '#121517',
+                gray0: '#0E1012',
+                text: c,
+                navigationBackground: '#050505',
+                navigationBackground95: '#050505',
+                cellBackground: '#050505',
+                unreadCellBackground: '#244052',
+                borderColor: '#3D4145',
+                nestedBorderColor: '#3D4145',
+                dmReceivedBubbleBackground: '#929CA6',
+                badgeColor: '#70C8FF',
+                whiteOnColor: a.a.color.baseColor.gray1100,
+                experimentalRed500: '#F87580',
+                experimentalButtonOutlinedBorder: a.a.color.baseColor.gray300,
+              },
+            ),
+          ),
+          D = function (e, t, n) {
+            var r
+            return g(
+              g({}, t === b.b.light ? (n ? I : S) : t === b.b.dark ? (n ? k : C) : n ? x : R),
+              {},
+              {
+                primary: O(e, t, n),
+                primaryOnWhite: w(e, t, n),
+                lightPrimary: E(e, t, n),
+                lightPrimaryWithOpacity: ((r = e), Object(i.a)(p[r], 0.58)),
+                primary50: j(e, t, n),
+                link: P(e, t, n),
+                unreadCellBackground: T(e, t, n),
               },
             )
           }
@@ -97298,7 +97345,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         )
       },
       ydqi: function (e, t) {
-        e.exports = { queryId: 'RsosU1U-FtbUc-hg7_ewBw', operationName: 'TweetDetail', operationType: 'query' }
+        e.exports = { queryId: 'Cfvo5Robs2Cs9d1RSoudRg', operationName: 'TweetDetail', operationType: 'query' }
       },
       ylrv: function (e, t, n) {
         'use strict'
