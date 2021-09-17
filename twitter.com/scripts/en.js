@@ -2862,7 +2862,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('ba4aaa9d', 'Unmute phrase?'),
           n('f837ed7d', 'This phrase will now be allowed in your notifications and Home timeline.'),
           n('a6194d10', 'Loading muted accounts'),
-          n('ge4fe171', 'Tweets and Fleets'),
+          n('bab1f8b0', 'Tweets'),
           n('ga3ef87d', 'You aren’t muting anyone'),
           n('cd9701d3', 'When you mute accounts, you won’t see their Tweets in your timeline.'),
           n(
@@ -3051,7 +3051,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('h667fc02', 'You’ve ended your active Twitter session.'),
           n('ddcd3d26', 'Loading session data'),
           n('d2f0f3fd', 'We can not find this session'),
-          n('bab1f8b0', 'Tweets'),
           n('f5e59e90', 'Protect your Tweets'),
           n(
             'i0310b4e',
@@ -3519,9 +3518,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           n('j15abc53', 'Beginning'),
           n('c371fb99', 'End'),
-          n('b5210d57', 'Enter Collection ID')
-        n('a536fff6', 'Invalid Collection ID'),
-          n('c63d84a3', 'Search for Twitter account'),
+          n('b5210d57', 'Enter Collection ID'),
+          n('a536fff6', 'Invalid Collection ID')
+        n('c63d84a3', 'Search for Twitter account'),
           n('b367953c', 'Tweets by'),
           n('f12858d3', 'Liked by'),
           n('e2a098dc', 'Sort by'),

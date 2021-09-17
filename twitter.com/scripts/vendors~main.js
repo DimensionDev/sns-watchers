@@ -1218,6 +1218,7 @@ window.__SCRIPTS_LOADED__.polyfills &&
         }
       },
       '3XMw': function (e, t, n) {
+        'use strict'
         e.exports = n('k/n2')
       },
       '3csz': function (e, t, n) {
