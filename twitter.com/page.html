@@ -23,19 +23,19 @@
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/vendors~main.bb381615.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/vendors~main.e63d7dc5.js"
     nonce="WIPED"
   /><link
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.b6b1e2c5.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.81a43a65.js"
     nonce="WIPED"
   /><link
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/main.0c26b385.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/main.d8b076d5.js"
     nonce="WIPED"
   /><meta property="fb:app_id" content="2231777543" />
   <meta property="og:site_name" content="Twitter" /><meta
@@ -789,11 +789,11 @@
             explore_settings_trends_policy_url: { value: '' },
             followers_management_remove_follower_from_followers_list: { value: false },
             followers_management_remove_follower_from_profile_screen: { value: false },
-            graphql_mutation_destroy_mode: { value: 'rest_only' },
+            graphql_mutation_destroy_mode: { value: 'graphql_only' },
             graphql_mutation_favorite_mode: { value: 'graphql_only' },
             graphql_mutation_retweet_mode: { value: 'graphql_only' },
             graphql_mutation_unfavorite_mode: { value: 'graphql_only' },
-            graphql_mutation_unretweet_mode: { value: 'rest_only' },
+            graphql_mutation_unretweet_mode: { value: 'graphql_only' },
             graphql_mutation_update_mode: { value: 'graphql_only' },
             guest_broadcasting_timeline_decorations_enabled: { value: true },
             hashflags_animation_like_button_enabled: { value: true },
@@ -1096,11 +1096,12 @@
                 'embed',
                 'view_hidden_replies',
                 'hide_community_tweet',
+                'copy_link',
               ],
             },
             tweet_limited_actions_config_community_tweet_member: { value: ['retweet', 'embed'] },
             tweet_limited_actions_config_community_tweet_non_member: {
-              value: ['reply', 'retweet', 'like', 'react', 'embed'],
+              value: ['reply', 'retweet', 'like', 'react', 'embed', 'share_tweet_via'],
             },
             tweet_limited_actions_config_enabled: { value: true },
             tweet_limited_actions_config_non_compliant: {
@@ -1114,6 +1115,7 @@
                 'pin_to_profile',
                 'view_tweet_activity',
                 'share_tweet_via',
+                'copy_link',
               ],
             },
             tweet_with_visibility_results_prefer_gql_soft_interventions_enabled: { value: false },
@@ -1697,7 +1699,7 @@
               soft_interventions_nudge_backend_control_enabled: { value: true },
               soft_interventions_retweet_nudge_enabled: { value: true },
               soft_interventions_share_nudge_enabled: { value: true },
-              stateful_login_enabled: { value: true },
+              stateful_login_enabled: { value: false },
               subscriptions_enabled: { value: false },
               subscriptions_feature_1003: { value: false },
               subscriptions_feature_1005: { value: false },
@@ -1883,7 +1885,6 @@
             reducedMotionEnabled: false,
             showTweetMediaDetailDrawer: true,
             autoPollNewTweets: false,
-            preciseLocationEnabled: false,
             undoPreview: {},
           },
           remote: { settings: { display_sensitive_media: false }, fetchStatus: 'none' },
@@ -1929,7 +1930,7 @@
       }
       window.__META_DATA__ = {
         env: 'prod',
-        sha: '747d33124993dc15c385112c4664974e943e319f',
+        sha: 'd92ee9c69c924dacd17bfb57fc38f8e4efa32407',
         isLoggedIn: false,
         hasMultiAccountCookie: false,
         uaParserTags: ['m2', 'rweb_unsupported', 'msw'],
@@ -2312,27 +2313,27 @@
                     }[e] || e) +
                     '.' +
                     {
-                      0: '5196a67',
+                      0: '9b932d2',
                       3: 'afeea2c',
-                      4: '027d8ac',
-                      5: '1bcdd8c',
+                      4: '748ec06',
+                      5: '4c7eec7',
                       6: 'cadd06b',
-                      7: '2be5c6f',
+                      7: 'd563c6b',
                       8: '4bbb113',
                       9: '5564eee',
                       10: 'b82999c',
                       11: 'd92aa05',
-                      12: 'e2c1b00',
+                      12: '68e58bd',
                       13: '697a15d',
                       14: 'c5c2382',
-                      15: 'a416d50',
+                      15: '5cb1fb9',
                       16: 'f1beb72',
-                      17: '5cc5b2c',
+                      17: '34a0de7',
                       18: 'd393dd6',
-                      19: '1ac3c0e',
-                      20: 'c828972',
+                      19: '43073c7',
+                      20: 'f06cf80',
                       21: 'f5c64d4',
-                      22: '12887fe',
+                      22: '5414c54',
                       23: '81e606b',
                       24: '092a063',
                       25: '7a812d4',
@@ -2343,80 +2344,80 @@
                       30: '9821c34',
                       31: '35059c7',
                       32: 'c4e3359',
-                      33: 'a974dfd',
+                      33: '0f10cdc',
                       34: 'e68c676',
                       35: '63370de',
                       36: '941ed50',
                       37: 'd3ebefe',
                       38: '7acb045',
                       39: '7a8949a',
-                      40: '732f6cd',
-                      41: 'cef194b',
-                      42: '35e1e6a',
+                      40: '1e98cb3',
+                      41: 'ad76d25',
+                      42: '9df75e8',
                       43: 'c3c9ec1',
                       44: '7bdf526',
                       45: 'c52fd1c',
                       46: 'ba0cccb',
-                      47: '9c1fdf3',
+                      47: 'ffb0742',
                       48: 'ce46515',
-                      49: 'b01f318',
-                      50: 'd0c7425',
-                      51: '1c6ea34',
+                      49: '74567f4',
+                      50: '63e514e',
+                      51: '736338c',
                       52: '0cb6637',
-                      53: '1c9d5b2',
-                      54: '610523d',
-                      55: '37dc09c',
+                      53: '43d9709',
+                      54: '083ad62',
+                      55: 'e640d1d',
                       56: 'e1be2e8',
                       57: '84c918f',
                       58: '0d13efb',
                       59: 'a9a9dc8',
                       60: '3a4c4c1',
-                      61: '3128096',
+                      61: '3c2bf5e',
                       62: '4d4e29e',
                       63: '2cf1814',
-                      64: '3edbf9b',
+                      64: '4ed98cd',
                       65: 'd787b91',
                       66: 'ee38a59',
                       67: '2b9bfbd',
                       68: '1448a39',
                       69: '2892727',
-                      70: '855119e',
+                      70: '679e43d',
                       71: '1b24c2c',
-                      72: '8807046',
+                      72: '663f15a',
                       73: 'd3f680f',
                       74: '081b832',
                       75: 'f16cb00',
-                      76: '70b6503',
-                      77: '3d451c0',
+                      76: '5d8f216',
+                      77: '9cffd09',
                       78: '4dae646',
-                      79: 'eb3bcd8',
+                      79: '5bb9ea9',
                       80: 'ef28592',
-                      81: 'b88bd81',
+                      81: 'b825d82',
                       82: 'f66ad32',
                       83: 'afbb888',
-                      84: '13f0cec',
+                      84: '7b0403c',
                       85: '1017ce1',
-                      86: '94e5370',
+                      86: '047d280',
                       87: '95993b1',
                       88: '1375049',
                       89: '0c05592',
                       90: '85a5a95',
-                      91: 'c413346',
+                      91: 'cf6df1c',
                       92: 'e5fe580',
                       93: '07a8461',
                       94: '5e1763e',
                       95: '87a263d',
                       96: '616c866',
                       97: '18c35b7',
-                      98: '6b8b9cd',
+                      98: '9606cbf',
                       99: '32a4262',
                       150: '534897b',
-                      151: 'c652788',
-                      152: '5e9eba3',
+                      151: 'cb8ea1b',
+                      152: '64380fa',
                       153: '79090e6',
                       154: '7704773',
-                      155: 'b1871e4',
-                      156: '76585ee',
+                      155: '55c2134',
+                      156: '8bfe87d',
                       157: 'd1b394b',
                       158: 'b188897',
                       159: '543cac6',
@@ -2424,7 +2425,7 @@
                       161: 'e118f21',
                       162: 'd203a18',
                       163: '423ac45',
-                      164: 'b794045',
+                      164: '2ec8a17',
                       165: 'bd726a2',
                       166: '42502f0',
                       167: '30b445c',
@@ -2433,9 +2434,9 @@
                       170: '4d0f0ac',
                       171: 'ab1d5bb',
                       172: 'd93fe3e',
-                      173: '6b594ec',
+                      173: '7bcccc4',
                       174: '45dc7bd',
-                      175: 'deb923a',
+                      175: '2230dca',
                       176: '21d0cac',
                       177: '8c9f590',
                       178: 'c53244b',
@@ -2443,24 +2444,24 @@
                       180: '2429bd4',
                       182: 'f7d065f',
                       183: '9dc40d4',
-                      184: '25c9dd9',
+                      184: 'e588378',
                       185: '3af238c',
                       186: '7cedf9d',
                       187: 'b3c5595',
-                      188: 'a3e7553',
+                      188: '3724bf3',
                       189: '7ab9d4e',
-                      190: '64d0c22',
-                      191: '4339717',
+                      190: '7432afd',
+                      191: '16eab80',
                       192: 'b6efd24',
                       193: '6629b43',
                       194: 'db5a9f6',
-                      195: 'b8b2181',
+                      195: 'd8adc70',
                       196: 'cf80e5e',
                       197: '2687790',
                       198: 'b857f90',
-                      199: 'fbd6bc7',
-                      200: '2c708d2',
-                      201: 'c3445b6',
+                      199: 'c3636f6',
+                      200: 'a9b9219',
+                      201: 'ad3481a',
                       202: '1f5785a',
                       203: '2ddebd5',
                       204: '4b498d0',
@@ -2654,21 +2655,21 @@
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/vendors~main.bb381615.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/vendors~main.e63d7dc5.js"
     ></script>
     <script
       type="text/javascript"
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.b6b1e2c5.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.81a43a65.js"
     ></script>
     <script
       type="text/javascript"
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/main.0c26b385.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/main.d8b076d5.js"
     ></script>
     <script nonce="WIPED">
       ;(function () {
