@@ -1442,7 +1442,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('d24b99ed', 'Inflammatory language'),
           n('ib117531', 'Harassment or abuse'),
           n('df587b98', 'Note ID'),
-          n('ac08a218', 'Awards'),
+          n('fd284b08', 'Current Standing'),
           n('h201bdc8', 'Note Author'),
           n('fe1f6043', 'Timestamp'),
           n('c57760e9', 'Helpful authors'),
@@ -1471,8 +1471,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           n('ff3e0be2', 'Join Birdwatch'),
           n('b8b34f54', 'Ratings received'),
-          n('fd284b08', 'Current Standing'),
           n('ff746f63', 'You can earn badges for writing notes and for rating notes from other contributors.'),
+          n('hc19704b', 'Learn more about standings'),
           n('b5eb23f9', function (e) {
             return '' + e.count
           }),
@@ -4367,6 +4367,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('c3c147cf', function (e) {
             return 'Skip ' + e.seconds
           }),
+          n('h9b3104d', 'Video Settings'),
+          n('ccc97152', 'Playback speed'),
+          n('cd6e0e5f', 'Press the speed you would like to watch the video in.'),
+          n('if8ee0cd', '0.5x speed'),
+          n('h1db3dc5', 'Normal'),
+          n('j2476269', '1.5x speed'),
+          n('e2457653', '2x speed'),
           n('b3160a69', function (e) {
             return e.volumePercent + ' percent'
           }),
@@ -4412,6 +4419,34 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('db11b27f', function (e) {
             return e.count + ' character' + a(e.count, '', 's') + ' remaining'
           }),
+          n('bb7b821a', 'You can reply'),
+          n('h15b020c', function (e) {
+            return 'People following or mentioned by @' + e.screenName + ' can reply'
+          }),
+          n('e5dc76d0', 'You can reply to this conversation'),
+          n('ab105904', 'Who can reply?'),
+          n('fd1cda7a', 'You cannot reply to this conversation'),
+          n('j86de6d0', function (e) {
+            return 'People @' + e.screenName + ' follows or mentioned can reply'
+          }),
+          n('cededc6f', function (e) {
+            return 'People @' + e.screenName + ' mentioned can reply'
+          }),
+          n('g7ea1122', 'Only the author and moderators can see this Tweet'),
+          n('f9560709', 'It was hidden by the mods for breaking Community rules.'),
+          n('dbf9738f', 'Who can see this Tweet?'),
+          n('d95d8f24', 'You and your Super Followers can see this Tweet'),
+          n('ff6895e3', function (e) {
+            return '@' + e.screenName + ' and their Super Followers can see your Tweet'
+          }),
+          n('f1140912', 'You’re seeing Super Follows content'),
+          n('j1a5fd02', function (e) {
+            return 'You can see this and reply because you Super Follow @' + e.screenName
+          }),
+          n('aaeb399a', function (e) {
+            return 'You can see this Tweet because you Super Follow @' + e.screenName
+          }),
+          n('af8fa2ad', 'Close'),
           n('jf83d091', 'Day'),
           n('af4abf2f', 'Month'),
           n('b871f28f', 'Year'),
@@ -4427,7 +4462,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('f40a0cbe', 'October'),
           n('ac74a31c', 'November'),
           n('i6c1e4b2', 'December'),
-          n('af8fa2ad', 'Close'),
           n('ff3dd27b', 'Default'),
           n('b554fcf3', 'Light'),
           n('j590b148', 'Medium light'),
@@ -4694,35 +4728,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           n('dc63da15', 'Share'),
           n('jc9298a8', 'Share Tweet'),
           n('d9fd5570', 'Hidden replies'),
-          n('bb7b821a', 'You can reply'),
-          n('h15b020c', function (e) {
-            return 'People following or mentioned by @' + e.screenName + ' can reply'
-          }),
-          n('ab105904', 'Who can reply?'),
-          n('j86de6d0', function (e) {
-            return 'People @' + e.screenName + ' follows or mentioned can reply'
-          }),
-          n('cededc6f', function (e) {
-            return 'People @' + e.screenName + ' mentioned can reply'
-          }),
-          n('g7ea1122', 'Only the author and moderators can see this Tweet'),
-          n('f9560709', 'It was hidden by the mods for breaking Community rules.'),
-          n('dbf9738f', 'Who can see this Tweet?'),
-          n('d95d8f24', 'You and your Super Followers can see this Tweet'),
-          n('ff6895e3', function (e) {
-            return '@' + e.screenName + ' and their Super Followers can see your Tweet'
-          }),
-          n('f1140912', 'You’re seeing Super Follows content'),
-          n('j1a5fd02', function (e) {
-            return 'You can see this and reply because you Super Follow @' + e.screenName
-          }),
           n('b09adb0c', 'See conversation'),
           n('c2637ef5', 'Got it'),
-          n('e5dc76d0', 'You can reply to this conversation'),
-          n('fd1cda7a', 'You cannot reply to this conversation'),
-          n('aaeb399a', function (e) {
-            return 'You can see this Tweet because you Super Follow @' + e.screenName
-          }),
           n('e9c24489', function (e) {
             return '' + e.date
           }),

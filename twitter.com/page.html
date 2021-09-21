@@ -29,13 +29,13 @@
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.81a43a65.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.96d2fff5.js"
     nonce="WIPED"
   /><link
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/main.d8b076d5.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/main.4edc5ef5.js"
     nonce="WIPED"
   /><meta property="fb:app_id" content="2231777543" />
   <meta property="og:site_name" content="Twitter" /><meta
@@ -831,8 +831,10 @@
             responsive_web_3rd_party_category_double_click: { value: 'WIPED' },
             responsive_web_3rd_party_category_external_referer: { value: 'WIPED' },
             responsive_web_3rd_party_category_ga: { value: 'WIPED' },
+            responsive_web_3rd_party_category_google_platform: { value: 'WIPED' },
             responsive_web_3rd_party_category_player_card: { value: 'WIPED' },
             responsive_web_3rd_party_category_sentry: { value: 'WIPED' },
+            responsive_web_3rd_party_category_sign_in_with_apple: { value: 'WIPED' },
             responsive_web_account_search_readability_enabled: { value: 'WIPED' },
             responsive_web_add_impression_id_to_mute_engagement_enabled: { value: 'WIPED' },
             responsive_web_alt_svc: { value: 'WIPED' },
@@ -971,6 +973,7 @@
             responsive_web_promoted_tweet_url_rewrite_enabled: { value: 'WIPED' },
             responsive_web_qp_objective_picker_enabled: { value: 'WIPED' },
             responsive_web_qp_pa_signup_enabled: { value: 'WIPED' },
+            responsive_web_reactions_api_test: { value: 'WIPED' },
             responsive_web_reactions_darkread_metadata: { value: 'WIPED' },
             responsive_web_reactions_darkread_perspective: { value: 'WIPED' },
             responsive_web_reactions_enabled: { value: 'WIPED' },
@@ -1472,8 +1475,10 @@
               responsive_web_3rd_party_category_double_click: { value: 'WIPED' },
               responsive_web_3rd_party_category_external_referer: { value: 'WIPED' },
               responsive_web_3rd_party_category_ga: { value: 'WIPED' },
+              responsive_web_3rd_party_category_google_platform: { value: 'WIPED' },
               responsive_web_3rd_party_category_player_card: { value: 'WIPED' },
               responsive_web_3rd_party_category_sentry: { value: 'WIPED' },
+              responsive_web_3rd_party_category_sign_in_with_apple: { value: 'WIPED' },
               responsive_web_account_search_readability_enabled: { value: 'WIPED' },
               responsive_web_add_impression_id_to_mute_engagement_enabled: { value: 'WIPED' },
               responsive_web_alt_svc: { value: 'WIPED' },
@@ -1612,6 +1617,7 @@
               responsive_web_promoted_tweet_url_rewrite_enabled: { value: 'WIPED' },
               responsive_web_qp_objective_picker_enabled: { value: 'WIPED' },
               responsive_web_qp_pa_signup_enabled: { value: 'WIPED' },
+              responsive_web_reactions_api_test: { value: 'WIPED' },
               responsive_web_reactions_darkread_metadata: { value: 'WIPED' },
               responsive_web_reactions_darkread_perspective: { value: 'WIPED' },
               responsive_web_reactions_enabled: { value: 'WIPED' },
@@ -1699,7 +1705,7 @@
               soft_interventions_nudge_backend_control_enabled: { value: true },
               soft_interventions_retweet_nudge_enabled: { value: true },
               soft_interventions_share_nudge_enabled: { value: true },
-              stateful_login_enabled: { value: false },
+              stateful_login_enabled: { value: true },
               subscriptions_enabled: { value: false },
               subscriptions_feature_1003: { value: false },
               subscriptions_feature_1005: { value: false },
@@ -1784,6 +1790,7 @@
               web_video_playback_rate_enabled: { value: false },
               web_video_prefetch_playlist_autoplay_disabled: { value: false },
               web_video_smart_buffering_enabled: { value: false },
+              web_video_player_size_cap_disabled: { value: false },
             },
             impression_pointers: {},
             impressions: {},
@@ -1930,7 +1937,7 @@
       }
       window.__META_DATA__ = {
         env: 'prod',
-        sha: 'd92ee9c69c924dacd17bfb57fc38f8e4efa32407',
+        sha: '27ec768e1e22afa7ae3363e6fe826350e2a3b877',
         isLoggedIn: false,
         hasMultiAccountCookie: false,
         uaParserTags: ['m2', 'rweb_unsupported', 'msw'],
@@ -2020,10 +2027,10 @@
       window.__SCRIPTS_LOADED__ = {}
       !(function (e) {
         function d(d) {
-          for (var o, i, t = d[0], l = d[1], c = d[2], b = 0, s = []; b < t.length; b++)
-            (i = t[b]), Object.prototype.hasOwnProperty.call(a, i) && a[i] && s.push(a[i][0]), (a[i] = 0)
+          for (var o, i, t = d[0], l = d[1], c = d[2], s = 0, b = []; s < t.length; s++)
+            (i = t[s]), Object.prototype.hasOwnProperty.call(a, i) && a[i] && b.push(a[i][0]), (a[i] = 0)
           for (o in l) Object.prototype.hasOwnProperty.call(l, o) && (e[o] = l[o])
-          for (u && u(d); s.length; ) s.shift()()
+          for (u && u(d); b.length; ) b.shift()()
           return r.push.apply(r, c || []), n()
         }
         function n() {
@@ -2313,7 +2320,7 @@
                     }[e] || e) +
                     '.' +
                     {
-                      0: '9b932d2',
+                      0: 'a4fc88c',
                       3: 'afeea2c',
                       4: '748ec06',
                       5: '4c7eec7',
@@ -2323,14 +2330,14 @@
                       9: '5564eee',
                       10: 'b82999c',
                       11: 'd92aa05',
-                      12: '68e58bd',
+                      12: '301b46e',
                       13: '697a15d',
                       14: 'c5c2382',
-                      15: '5cb1fb9',
-                      16: 'f1beb72',
+                      15: '6acb0b3',
+                      16: '99940b5',
                       17: '34a0de7',
                       18: 'd393dd6',
-                      19: '43073c7',
+                      19: 'c72358a',
                       20: 'f06cf80',
                       21: 'f5c64d4',
                       22: '5414c54',
@@ -2348,10 +2355,10 @@
                       34: 'e68c676',
                       35: '63370de',
                       36: '941ed50',
-                      37: 'd3ebefe',
+                      37: 'fe360c5',
                       38: '7acb045',
                       39: '7a8949a',
-                      40: '1e98cb3',
+                      40: '5143e31',
                       41: 'ad76d25',
                       42: '9df75e8',
                       43: 'c3c9ec1',
@@ -2361,7 +2368,7 @@
                       47: 'ffb0742',
                       48: 'ce46515',
                       49: '74567f4',
-                      50: '63e514e',
+                      50: 'cacee43',
                       51: '736338c',
                       52: '0cb6637',
                       53: '43d9709',
@@ -2372,14 +2379,14 @@
                       58: '0d13efb',
                       59: 'a9a9dc8',
                       60: '3a4c4c1',
-                      61: '3c2bf5e',
+                      61: '42c6814',
                       62: '4d4e29e',
                       63: '2cf1814',
                       64: '4ed98cd',
                       65: 'd787b91',
                       66: 'ee38a59',
                       67: '2b9bfbd',
-                      68: '1448a39',
+                      68: '353e43b',
                       69: '2892727',
                       70: '679e43d',
                       71: '1b24c2c',
@@ -2394,12 +2401,12 @@
                       80: 'ef28592',
                       81: 'b825d82',
                       82: 'f66ad32',
-                      83: 'afbb888',
+                      83: '37e6d1d',
                       84: '7b0403c',
                       85: '1017ce1',
                       86: '047d280',
                       87: '95993b1',
-                      88: '1375049',
+                      88: '406454f',
                       89: '0c05592',
                       90: '85a5a95',
                       91: 'cf6df1c',
@@ -2407,7 +2414,7 @@
                       93: '07a8461',
                       94: '5e1763e',
                       95: '87a263d',
-                      96: '616c866',
+                      96: '43d3c18',
                       97: '18c35b7',
                       98: '9606cbf',
                       99: '32a4262',
@@ -2417,12 +2424,12 @@
                       153: '79090e6',
                       154: '7704773',
                       155: '55c2134',
-                      156: '8bfe87d',
+                      156: '49ad6b7',
                       157: 'd1b394b',
-                      158: 'b188897',
+                      158: '23394a1',
                       159: '543cac6',
                       160: '7932b00',
-                      161: 'e118f21',
+                      161: '4d7dca8',
                       162: 'd203a18',
                       163: '423ac45',
                       164: '2ec8a17',
@@ -2439,7 +2446,7 @@
                       175: '2230dca',
                       176: '21d0cac',
                       177: '8c9f590',
-                      178: 'c53244b',
+                      178: '457f86a',
                       179: 'eb296fd',
                       180: '2429bd4',
                       182: 'f7d065f',
@@ -2452,14 +2459,14 @@
                       189: '7ab9d4e',
                       190: '7432afd',
                       191: '16eab80',
-                      192: 'b6efd24',
-                      193: '6629b43',
+                      192: 'c2d439f',
+                      193: '3fed06c',
                       194: 'db5a9f6',
                       195: 'd8adc70',
                       196: 'cf80e5e',
                       197: '2687790',
                       198: 'b857f90',
-                      199: 'c3636f6',
+                      199: '4f516e6',
                       200: 'a9b9219',
                       201: 'ad3481a',
                       202: '1f5785a',
@@ -2662,14 +2669,14 @@
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.81a43a65.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.96d2fff5.js"
     ></script>
     <script
       type="text/javascript"
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/main.d8b076d5.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/main.4edc5ef5.js"
     ></script>
     <script nonce="WIPED">
       ;(function () {
