@@ -2,7 +2,8 @@ name: Take snapshot of twitter
 
 on:
   schedule:
-    - cron: '0 10 * * *'
+    # checking hourly
+    - cron: '0 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -33,30 +34,15 @@ jobs:
         id: git-diff
         if: success()
         run: |
-          echo "DIFF_STAT<<EOF" >> $GITHUB_ENV
-          git diff --stat >> $GITHUB_ENV
-          echo 'EOF' >> $GITHUB_ENV
-
           echo "GIT_DIFF<<EOF" >> $GITHUB_ENV
-          git diff | head -n 2000 >> $GITHUB_ENV
+          git diff | head -n 200 >> $GITHUB_ENV
           echo 'EOF' >> $GITHUB_ENV
 
-      - name: Create Pull Request
-        id: cpr
-        uses: peter-evans/create-pull-request@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: ':chore: twitter got updated'
-          committer: Maskbook maintainer bot <bot@mask.io>
-          author: Maskbook maintainer bot <bot@mask.io>
-          branch: twitter-snapshot
-          title: ':chore: twitter get updated'
-          body: "## (🤖 I am a robot) updates or error report \n```${{ env.DIFF_STAT }}\n```\n\n"
-          assignees: |
-            guanbinrui
-            unclebill
-          draft: false
-
-      - name: Check output
+      - name: Commit changes
+        if: ${{ env.GIT_DIFF != '' }}
         run: |
-          echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
+          git add .
+          git config --local user.email "bot@mask.io"
+          git config --local user.name "commit bot"
+          git commit -m "`date '+twitter: snapshot at %Y-%m-%d %H:%M'`"
+          git push origin master

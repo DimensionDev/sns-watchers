@@ -1,0 +1,48 @@
+name: Report changes daily
+
+on:
+  schedule:
+    # report daily
+    - cron: '0 10 * * *'
+  workflow_dispatch:
+
+jobs:
+  report-changes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 100
+          ref: master
+
+      - name: Get Title
+        id: get-title
+        run: |
+          echo "TITLE<<EOF" >> $GITHUB_ENV
+          date '+Changes of today %Y-%m-%d' >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
+      - name: Get Content
+        id: get-content
+        run: |
+          BASE=`git rev-list -1 --before 1.days.ago origin/master`
+          HEAD=`git rev-parse HEAD`
+
+          echo "CONTENT<<EOF" >> $GITHUB_ENV
+          echo "## (🤖 I am a robot) Updates or error report " >> $GITHUB_ENV
+          echo "" >> $GITHUB_ENV
+          echo "\`\`\`" >> $GITHUB_ENV
+          git diff --stat $BASE $HEAD >> $GITHUB_ENV
+          echo "\`\`\`" >> $GITHUB_ENV
+          echo "" >> $GITHUB_ENV
+          echo "https://github.com/${{ github.repository }}/compare/${BASE}..${HEAD}" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
+      - uses: actions-ecosystem/action-create-issue@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          title: ${{ env.TITLE }}
+          body: ${{ env.CONTENT }}
+          assignees: |
+            guanbinrui
+            unclebill
