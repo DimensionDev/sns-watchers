@@ -28,6 +28,9 @@ function wipeDynamic(code) {
     .replace(/("impressions"):{"\w+":.*?}}/, '$1:{}')
     .replace(/("responsive_web_\w+"):{.*?}/g, `$1:{value:'${HOLDER}'}`)
     .replace(/("fetchedTime"):\d+/, `$1:42`)
+    .replace(/("super_follow_tweet_api_enabled"):(true|false)/, `$1:false`)
+    .replace(/("super_follow_user_api_enabled"):(true|false)/, `$1:false`)
+    .replace(/("stateful_login_enabled"):{.*?}/g, `$1:{value:false}`)
 }
 /**
  * wrap a wipeDynamic() as a preprocesser inside

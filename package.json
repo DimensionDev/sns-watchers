@@ -6,6 +6,7 @@
   "author": "unclebill <billbill290@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "start": "yarn fetch:twitter",
     "fetch:twitter": "node scripts/twitter.fetcher.js"
   },
   "dependencies": {
