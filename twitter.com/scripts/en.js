@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [110],
+    [111],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -15,7 +15,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('Y1K4')._register('en', {
           get emoji() {
-            return o.e(258).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(259).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -274,6 +274,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i8ecae5b', 'You can no longer send messages to this person.'),
           a('cf249088', function (e) {
             return 'Joined ' + e.joinDate
+          }),
+          a('fd48249b', function (e) {
+            return e.count + ' people'
           }),
           a('c1d4ac83', 'You changed the group photo'),
           a('abc7b032', 'The group photo was changed'),
@@ -771,7 +774,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f14df406', 'Copy link to ad'),
           a('d9837138', 'Remove Tweet from Bookmarks'),
           a('jf9c38df', 'React button'),
-          a('c5dc88fc', 'Choose from more options to express how you feel.'),
           a('ff9348b8', 'Share ad via …'),
           a('ebad846b', 'Share Tweet via …'),
           a('h438b014', function (e) {
@@ -1548,6 +1550,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('jf748f4f', 'Clear all Bookmarks?'),
           a('cc0f2f4f', 'This can’t be undone and you’ll remove all Tweets you’ve added to your Bookmarks.'),
           a('ee8589ad', 'Compose a Tweet'),
+          a('j45c642d', 'Folders aren’t loading right now'),
+          a('f8fc0b47', 'Create a Folder'),
+          a('bcc7e8cf', 'All Bookmarks'),
           a('e39b368e', 'Broadcast'),
           a('f2382014', 'LIVE'),
           a('e3aac82a', 'Loading Broadcast'),
@@ -2298,11 +2303,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c8f85960', 'Lights out'),
           a('aefc5b20', 'Color options'),
           a('a52d0fdd', 'Blue'),
-          a('d818cdd5', 'Yellow'),
-          a('fee1cd64', 'Pink'),
+          a('d818cdd5', 'Yellow')
+        a('fee1cd64', 'Pink'),
           a('cbed7fb2', 'Purple'),
-          a('g697ec02', 'Orange')
-        a('a7c22049', 'Green'),
+          a('g697ec02', 'Orange'),
+          a('a7c22049', 'Green'),
           a('ea1c87a5', function (e) {
             return (
               'At the heart of Twitter are short messages called Tweets — just like this one — which can include photos, videos, links, text, hashtags, and mentions like @' +
@@ -3285,6 +3290,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j905e6fe', 'Tweet Undo period'),
           a('e7172d70', 'Additional messages'),
           a('bef0039f', 'You don’t have any message requests'),
+          a('a74e7c76', function (e) {
+            return e.count + ' unread request' + n(e.count, '', 's')
+          }),
           a('eb7de4a9', 'Show additional messages, including those that may contain offensive content.'),
           a('a0e81a2e', 'Show'),
           a('f5dc353c', 'Now filtering graphic media'),
@@ -3518,11 +3526,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ffaf4649', 'Create anyway'),
           a('a0cc15fc', 'Create new Moment'),
           a('ja49bfd6', 'New Moment'),
-          a('e63ff1d5', 'Tweets I’ve liked'),
-          a('a42f33ba', 'Tweets by account'),
-          a('e8177e5d', 'Tweet search'),
-          a('dbaa0bee', 'Tweets from protected accounts can’t be used in Moments'),
-          a('e2c85754', 'Quote Tweets of a deleted Tweet can’t be used in Moments')
+          a('e63ff1d5', 'Tweets I’ve liked')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3539,7 +3543,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('d8047cc7', 'Publish'),
+        a('a42f33ba', 'Tweets by account'),
+          a('e8177e5d', 'Tweet search'),
+          a('dbaa0bee', 'Tweets from protected accounts can’t be used in Moments'),
+          a('e2c85754', 'Quote Tweets of a deleted Tweet can’t be used in Moments'),
+          a('d8047cc7', 'Publish'),
           a('g57d6f17', 'Condensed view'),
           a('jd8462a5', 'Protected accounts can only create private Moments'),
           a('a5e756d7', 'No pending changes'),
@@ -4764,12 +4772,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('efce3d9a', function (e) {
             return e.hours + ' ' + e.minutes + ' ' + e.seconds
           }),
-          a('d636ebc6', 'Like'),
-          a('bd83592a', 'Haha'),
+          a('d636ebc6', 'Like')
+        a('bd83592a', 'Haha'),
           a('f84f0fa8', 'Hmm'),
           a('g47ce0e4', 'Sad'),
-          a('fc8a13c5', 'Cheer')
-        a('jbc5f47a', 'Spaces dock'),
+          a('fc8a13c5', 'Cheer'),
+          a('jbc5f47a', 'Spaces dock'),
           a('gfe2830e', function (e) {
             return e.count + ' other' + n(e.count, '', 's')
           }),
@@ -5373,15 +5381,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'f62df26d',
+                key: 'ad2ab554',
                 get: function () {
-                  return ['Hover over ', ' to pick a reaction']
+                  return ['You can also hover over ', ' to pick a reaction']
                 },
               },
               {
-                key: 'gcdc0fd5',
+                key: 'g6a7d832',
                 get: function () {
-                  return ['Press and hold ', ' to pick a reaction']
+                  return ['You can also press and hold ', ' to pick a reaction']
                 },
               },
               {
