@@ -28,9 +28,12 @@ function wipeDynamic(code) {
     .replace(/("impressions"):{"\w+":.*?}}/, '$1:{}')
     .replace(/("responsive_web_\w+"):{.*?}/g, `$1:{value:'${HOLDER}'}`)
     .replace(/("fetchedTime"):\d+/, `$1:42`)
-    .replace(/("super_follow_tweet_api_enabled"):(true|false)/, `$1:false`)
-    .replace(/("super_follow_user_api_enabled"):(true|false)/, `$1:false`)
-    .replace(/("stateful_login_enabled"):{.*?}/g, `$1:{value:false}`)
+    .replace(/("\w+"):{\s*"value":\s*(true|false)\s*}/g, (full, m1) => {
+      if (['super_follow_tweet_api_enabled', 'super_follow_user_api_enabled', 'stateful_login_enabled'].includes(m1)) {
+        return `${m1}:{value:false}`
+      }
+      return full
+    })
 }
 /**
  * wrap a wipeDynamic() as a preprocesser inside
@@ -60,7 +63,7 @@ function getAllScriptUrls(html) {
 }
 
 async function start() {
-  const html = await download(url, dest('page.html'))
+  const html = await download(url, null)
   const scriptUrls = getAllScriptUrls(html)
   const tasks = scriptUrls.map(async (url) => {
     const fileName = url

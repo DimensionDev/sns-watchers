@@ -16,7 +16,7 @@ async function fetchFile(url) {
  * download file, and save it
  *
  * @param {string} url
- * @param {string} saveAs
+ * @param {string | null} saveAs
  * @param {(code: string) => string} [preprocesser]
  * @returns Promise<string>
  */
@@ -26,7 +26,9 @@ async function download(url, saveAs, preprocesser = (code) => code) {
     let content = await fetchFile(url)
     content = preprocesser(content)
     content = await format(content, saveAs)
-    await fs.writeFile(saveAs, content)
+    if (saveAs) {
+      await fs.writeFile(saveAs, content)
+    }
     return content
   } catch (err) {
     console.info('fails to download', url, err)

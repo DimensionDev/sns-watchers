@@ -25,7 +25,7 @@ jobs:
       - name: Get Content
         id: get-content
         run: |
-          BASE=`git rev-list -1 --before 1.days.ago origin/master`
+          BASE=`git rev-list -1 --before 24.hours.ago origin/master`
           HEAD=`git rev-parse HEAD`
 
           echo "CONTENT<<EOF" >> $GITHUB_ENV
