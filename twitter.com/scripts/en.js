@@ -3769,6 +3769,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c299a6cf', 'Thread'),
           a('i9a4ca8a', 'Tweet status page'),
           a('h030c24b', 'Report an issue'),
+          a('c3e6226a', 'Remove member'),
           a('eb0ecd1d', 'Twitter Search'),
           a('cceeb26b', function (e) {
             return e.query + ' - Twitter Search'
@@ -4773,9 +4774,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ga629a8b', 'View people in conversation'),
           a('h13ffc87', 'Voice'),
           a('f5d461f7', 'Voice Tweet'),
-          a('de8c5eb2', 'Play audio'),
-          a('ec286028', 'Pause audio')
-        a('ad77feb5', 'Captions unavailable'),
+          a('de8c5eb2', 'Play audio')
+        a('ec286028', 'Pause audio'),
+          a('ad77feb5', 'Captions unavailable'),
           a('ebe41366', function (e) {
             return 'Time ' + e.time
           }),

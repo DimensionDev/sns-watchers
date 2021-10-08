@@ -29,13 +29,13 @@
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.7298af45.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.c72960f5.js"
     nonce="WIPED"
   /><link
     rel="preload"
     as="script"
     crossorigin="anonymous"
-    href="https://abs.twimg.com/responsive-web/client-web-legacy/main.91a5e155.js"
+    href="https://abs.twimg.com/responsive-web/client-web-legacy/main.a2aa8e05.js"
     nonce="WIPED"
   /><meta property="fb:app_id" content="2231777543" />
   <meta property="og:site_name" content="Twitter" /><meta
@@ -937,6 +937,7 @@
             responsive_web_linger_refactor_enabled: { value: 'WIPED' },
             responsive_web_live_commerce_enabled: { value: 'WIPED' },
             responsive_web_live_video_parity_periscope_auth_enabled: { value: 'WIPED' },
+            responsive_web_livepipeline_hide_likes: { value: 'WIPED' },
             responsive_web_logged_out_gating_aggressive_segments: { value: 'WIPED' },
             responsive_web_logged_out_gating_less_aggressive_segments: { value: 'WIPED' },
             responsive_web_logged_out_gating_non_impressing_member_segments: { value: 'WIPED' },
@@ -1105,11 +1106,12 @@
                 'view_hidden_replies',
                 'hide_community_tweet',
                 'copy_link',
+                'vote_on_poll',
               ],
             },
             tweet_limited_actions_config_community_tweet_member: { value: ['retweet', 'embed'] },
             tweet_limited_actions_config_community_tweet_non_member: {
-              value: ['reply', 'retweet', 'like', 'react', 'embed', 'share_tweet_via'],
+              value: ['reply', 'retweet', 'like', 'react', 'embed', 'share_tweet_via', 'vote_on_poll'],
             },
             tweet_limited_actions_config_enabled: { value: true },
             tweet_limited_actions_config_non_compliant: {
@@ -1132,6 +1134,7 @@
             unified_cards_multi_destination_carousels_convert_to_single_card: { value: false },
             user_display_name_max_limit: { value: 50 },
             voice_consumption_enabled: { value: true },
+            voice_rooms_card_version: { value: 1 },
             voice_rooms_consumption_enabled: { value: true },
             voice_rooms_end_screen_participants: { value: true },
             voice_rooms_expanded_dock: { value: true },
@@ -1588,6 +1591,7 @@
               responsive_web_linger_refactor_enabled: { value: 'WIPED' },
               responsive_web_live_commerce_enabled: { value: 'WIPED' },
               responsive_web_live_video_parity_periscope_auth_enabled: { value: 'WIPED' },
+              responsive_web_livepipeline_hide_likes: { value: 'WIPED' },
               responsive_web_logged_out_gating_aggressive_segments: { value: 'WIPED' },
               responsive_web_logged_out_gating_less_aggressive_segments: { value: 'WIPED' },
               responsive_web_logged_out_gating_non_impressing_member_segments: { value: 'WIPED' },
@@ -1784,6 +1788,7 @@
               unified_cards_multi_destination_carousels_convert_to_single_card: { value: false },
               user_display_name_max_limit: { value: 50 },
               voice_consumption_enabled: { value: true },
+              voice_rooms_card_version: { value: 1 },
               voice_rooms_consumption_enabled: { value: true },
               voice_rooms_end_screen_participants: { value: true },
               voice_rooms_expanded_dock: { value: true },
@@ -1908,6 +1913,7 @@
             showTweetMediaDetailDrawer: true,
             altTextNudgeType: null,
             autoPollNewTweets: false,
+            shouldAutoTagLocation: false,
             undoPreview: {},
           },
           remote: { settings: { display_sensitive_media: false }, fetchStatus: 'none' },
@@ -1954,7 +1960,7 @@
       window.__META_DATA__ = {
         env: 'prod',
         isCanary: false,
-        sha: '0567b91f65662a0dc4938137c27c997bb8b0911b',
+        sha: '3b23305e5f0f6410de0ac5dc1cafa362f34f7bb2',
         isLoggedIn: false,
         hasMultiAccountCookie: false,
         uaParserTags: ['m2', 'rweb_unsupported', 'msw'],
@@ -2042,10 +2048,10 @@
       window.__SCRIPTS_LOADED__ = {}
       !(function (e) {
         function d(d) {
-          for (var o, r, t = d[0], l = d[1], c = d[2], s = 0, m = []; s < t.length; s++)
-            (r = t[s]), Object.prototype.hasOwnProperty.call(a, r) && a[r] && m.push(a[r][0]), (a[r] = 0)
+          for (var o, r, t = d[0], l = d[1], c = d[2], s = 0, b = []; s < t.length; s++)
+            (r = t[s]), Object.prototype.hasOwnProperty.call(a, r) && a[r] && b.push(a[r][0]), (a[r] = 0)
           for (o in l) Object.prototype.hasOwnProperty.call(l, o) && (e[o] = l[o])
-          for (u && u(d); m.length; ) m.shift()()
+          for (u && u(d); b.length; ) b.shift()()
           return i.push.apply(i, c || []), n()
         }
         function n() {
@@ -2338,13 +2344,13 @@
                     }[e] || e) +
                     '.' +
                     {
-                      0: 'd28f6d1',
+                      0: 'bc669a2',
                       3: 'ab17abd',
                       4: '190e0d0',
-                      5: 'd90361f',
-                      6: '6e0737c',
+                      5: '1016f69',
+                      6: 'ac3f3fb',
                       7: 'a09be24',
-                      8: 'c66a822',
+                      8: '988b532',
                       9: '83a88e8',
                       10: '7a7ca6e',
                       11: 'c28f5e7',
@@ -2356,7 +2362,7 @@
                       17: '3d4aaa6',
                       18: '24e0a39',
                       19: '85a7aad',
-                      20: '4907717',
+                      20: 'db644b7',
                       21: 'd726aa0',
                       22: '8ebb6af',
                       23: 'bd775a1',
@@ -2370,7 +2376,7 @@
                       31: '6858853',
                       32: '805bf6b',
                       33: 'b113f9f',
-                      34: '6ab129d',
+                      34: 'f4bcabb',
                       35: '829e641',
                       36: 'e752265',
                       37: 'd8774e2',
@@ -2378,14 +2384,14 @@
                       39: '4f736aa',
                       40: '393ab35',
                       41: 'a7a1a2d',
-                      42: '0ac1e84',
-                      43: 'a97e4ee',
+                      42: 'ba0ca2a',
+                      43: 'd213a1e',
                       44: '0993fea',
                       45: 'dbdbc32',
                       46: '067c188',
                       47: '9eee9f5',
                       48: 'ffc9a4f',
-                      49: '252e30c',
+                      49: '96dbb9d',
                       50: '2e147a7',
                       51: '906901f',
                       52: '9c6524c',
@@ -2396,10 +2402,10 @@
                       57: 'a787f78',
                       58: '876afe3',
                       59: 'f952ac9',
-                      60: '321a159',
+                      60: 'a67d165',
                       61: '7e0b3a7',
                       62: 'cfc8083',
-                      63: '086e651',
+                      63: 'f41e6f5',
                       64: '3a84c06',
                       65: '395ae67',
                       66: 'd240084',
@@ -2408,23 +2414,23 @@
                       69: '67e6557',
                       70: '6a40ca2',
                       71: '33c951c',
-                      72: 'bb8331b',
+                      72: 'a05001b',
                       73: '077f0e1',
-                      74: 'af54788',
+                      74: 'b9e70d6',
                       75: 'a2bd49e',
                       76: '9c232e8',
                       77: '4102cd1',
-                      78: 'e02a997',
-                      79: 'a92d191',
+                      78: '9dc1696',
+                      79: '0a4cb3f',
                       80: '68f13df',
                       81: 'ddfd618',
                       82: 'f0d043a',
                       83: '52952d9',
                       84: '8a0be86',
-                      85: '55c2395',
+                      85: '9f73848',
                       86: 'bfdfe3a',
                       87: 'cdf94f1',
-                      88: 'a3a8e26',
+                      88: '14863e7',
                       89: '4d5d04c',
                       90: '47efa99',
                       91: 'cbde84c',
@@ -2439,12 +2445,12 @@
                       100: '6ce85c7',
                       101: '4731aa4',
                       152: '44654dd',
-                      153: '49f79f1',
-                      154: 'b301b3a',
+                      153: '65be58f',
+                      154: '639af10',
                       155: '4002cff',
                       156: '2b7e5b5',
                       157: '1c6cf50',
-                      158: '3f9904b',
+                      158: 'b8f4480',
                       159: '3541da6',
                       160: '0659565',
                       161: '709b0f2',
@@ -2452,13 +2458,13 @@
                       163: '7fefd35',
                       164: '11e9e04',
                       165: 'a27951a',
-                      166: '36a9672',
+                      166: 'ebf4c19',
                       167: '2deaa62',
                       168: '168c4d1',
                       169: 'a32cbe8',
                       170: '8eaa729',
-                      171: '5548e7f',
-                      172: 'b6c9639',
+                      171: '1a30699',
+                      172: '3a20dbf',
                       173: '003aed8',
                       174: '33a022e',
                       175: '1a4b9a6',
@@ -2486,8 +2492,8 @@
                       198: '4a96e58',
                       199: '54698f9',
                       200: '96766ab',
-                      201: '654aa57',
-                      202: '249270f',
+                      201: 'fa8aeb4',
+                      202: '447857e',
                       203: 'ae0b79b',
                       204: 'fc39474',
                       205: '5605fa6',
@@ -2690,14 +2696,14 @@
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.7298af45.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/i18n/en.c72960f5.js"
     ></script>
     <script
       type="text/javascript"
       charset="utf-8"
       nonce="WIPED"
       crossorigin="anonymous"
-      src="https://abs.twimg.com/responsive-web/client-web-legacy/main.91a5e155.js"
+      src="https://abs.twimg.com/responsive-web/client-web-legacy/main.a2aa8e05.js"
     ></script>
     <script nonce="WIPED">
       ;(function () {
