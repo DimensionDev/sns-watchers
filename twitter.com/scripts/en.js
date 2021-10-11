@@ -178,6 +178,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b47e760d', 'To view keyboard shortcuts, press question mark'),
           a('fd2c7b43', 'View keyboard shortcuts'),
           a('d2fb334b', 'Twitter'),
+          a('e674c120', 'Show captions'),
+          a('f45bace3', 'Hide captions'),
+          a('ce96f1db', 'Captions unavailable'),
           a('b6d3e0ee', function (e) {
             return e.name + '’s space'
           }),
@@ -704,12 +707,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a5a30af0', 'Articles'),
           a('e9f1fbcb', 'Nothing to see here — yet'),
           a('hb49cdb7', 'Choose an article to see Tweets about it.'),
+          a('b360ac7c', 'Section navigation'),
+          a('adc81041', 'Section details'),
           a('ba929da7', 'Page not found'),
           a('d203e241', 'Not found'),
           a('e49537c1', 'Hmm...this page doesn’t exist. Try searching for something else.'),
-          a('b360ac7c', 'Section navigation'),
-          a('adc81041', 'Section details'),
-          a('b4b4b3b9', 'Article Tweets'),
+          a('d35d74e3', 'Conversation'),
           a('f5718548', 'You reported this Tweet.'),
           a('e4c6c309', 'This Tweet is unavailable.'),
           a('i255e1aa', 'A moderator hid this Tweet for breaking a Community rule.'),
@@ -766,7 +769,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Translated from ' + e.originLanguage + ' by'
           }),
           a('b7cb4fa9', 'Translated by'),
-          a('dc356a23', 'Add Tweet to Bookmarks'),
+          a('de2d83d5', 'Bookmark to Folder'),
           a('b6f822b9', 'Copy link to Tweet'),
           a('f14df406', 'Copy link to ad'),
           a('d9837138', 'Remove Tweet from Bookmarks'),
@@ -789,6 +792,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f6c7249b', 'Tweet Retweeted'),
           a('f67de45a', 'Tweet Unretweeted'),
           a('jc4cb6c4', 'Only Super Followers can see this Retweet'),
+          a('c2453317', 'Add to Folder'),
           a('b5b36724', 'Reply instead?'),
           a('g449dfaa', 'Retweet instead?'),
           a('cf7a1b47', 'Your drafted Tweet will be discarded before you reply.'),
@@ -1092,6 +1096,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ec5a4a25', 'People you follow can reply'),
           a('b4543009', 'Only people you mention can reply'),
           a('i13be5a0', 'Community members can reply'),
+          a('aa65a449', 'We’ll remember your choice on this device'),
           a('bdbcdd93', 'Add photos'),
           a('a809609f', 'Add video'),
           a('g589c2e1', 'Choice 1'),
@@ -1159,13 +1164,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'via @' + e.viaScreenName
           }),
           a('f70a36d0', 'Tweet all'),
-          a('a7478929', 'You are over the daily limit for sending Tweets.'),
-          a('adf527d2', 'Something went wrong. Try sending your Tweet again in a minute.'),
+          a('a7478929', 'You are over the daily limit for sending Tweets.')
+        a('adf527d2', 'Something went wrong. Try sending your Tweet again in a minute.'),
           a('cc85b9f5', 'Your account is suspended and is not permitted to send Tweets.'),
           a('a3f10d61', 'The Tweet you are trying to reply to has been deleted or is not visible to you.'),
           a('d74da9b8', 'The text of your Tweet exceeds the number of allowed @mentions.'),
-          a('c3ebec63', 'The text of your Tweet exceeds the number of allowed URLs.')
-        a('b6266b34', 'The text of your Tweet exceeds the number of allowed hashtags.'),
+          a('c3ebec63', 'The text of your Tweet exceeds the number of allowed URLs.'),
+          a('b6266b34', 'The text of your Tweet exceeds the number of allowed hashtags.'),
           a('a59566d7', 'The text of your Tweet exceeds the number of allowed cashtags.'),
           a('g30d7ec5', 'The text of your Tweet contains a hashtag that is longer than allowed.'),
           a('d484fca9', 'The Tweet exceeds the number of allowed attachment types.'),
@@ -1190,6 +1195,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return e.topicName + ' Topic'
           }),
           a('d6e2f9bd', 'Loading timeline'),
+          a('b7fa0cfd', 'Top Articles'),
+          a('e2462db4', 'Most shared in your network · Last 24 hours'),
           a('gaa01f2c', 'Twitter Spaces'),
           a('fec3c1ef', 'Where live audio conversations happen'),
           a('ce447fcb', function (e) {
@@ -1641,6 +1648,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('dffb0774', 'Nothing to review right now'),
           a('cbb2a93c', 'Moderators have taken care of all reported Tweets.'),
           a('f1d9930c', 'Hide'),
+          a('a219e217', 'OK'),
           a('fa524057', 'Keep'),
           a('g30bc699', function (e) {
             return 'View @' + e.screenName + ' profile'
@@ -2285,8 +2293,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a52d0fdd', 'Blue'),
           a('d818cdd5', 'Yellow'),
           a('fee1cd64', 'Pink'),
-          a('cbed7fb2', 'Purple'),
-          a('g697ec02', 'Orange'),
+          a('cbed7fb2', 'Purple')
+        a('g697ec02', 'Orange'),
           a('a7c22049', 'Green'),
           a('ea1c87a5', function (e) {
             return (
@@ -2299,8 +2307,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e7efe72a', 'Login and security'),
           a('f70cd5ed', 'Phone'),
           a('j95edf76', 'Security'),
-          a('a4b69cbb', 'Display language')
-        a('c21037d0', 'Country'),
+          a('a4b69cbb', 'Display language'),
+          a('c21037d0', 'Country'),
           a('d1f6d336', 'Username'),
           a('ae72d4c4', 'Apps and sessions'),
           a('hfb92b14', 'Deactivate your account'),
@@ -2371,7 +2379,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'i0d4f09e',
             'After you log in, Twitter will send a push notification to the Twitter app that you’ll need to approve to access your account.',
           ),
-          a('a219e217', 'OK'),
           a(
             'e0d79de8',
             'You have just one security key linked to your account. To make sure you don’t get locked out if you lose it, add another key, and save a two-factor authentication backup code.',
@@ -3515,14 +3522,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'e1c6a886',
             'Protected accounts can only create private Moments. You can publish your Moments if you change your account to Public.',
           ),
-          a('ffaf4649', 'Create anyway'),
-          a('a0cc15fc', 'Create new Moment'),
-          a('ja49bfd6', 'New Moment'),
-          a('e63ff1d5', 'Tweets I’ve liked'),
-          a('a42f33ba', 'Tweets by account'),
-          a('e8177e5d', 'Tweet search'),
-          a('dbaa0bee', 'Tweets from protected accounts can’t be used in Moments'),
-          a('e2c85754', 'Quote Tweets of a deleted Tweet can’t be used in Moments')
+          a('ffaf4649', 'Create anyway')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3539,7 +3539,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('d8047cc7', 'Publish'),
+        a('a0cc15fc', 'Create new Moment'),
+          a('ja49bfd6', 'New Moment'),
+          a('e63ff1d5', 'Tweets I’ve liked'),
+          a('a42f33ba', 'Tweets by account'),
+          a('e8177e5d', 'Tweet search'),
+          a('dbaa0bee', 'Tweets from protected accounts can’t be used in Moments'),
+          a('e2c85754', 'Quote Tweets of a deleted Tweet can’t be used in Moments'),
+          a('d8047cc7', 'Publish'),
           a('g57d6f17', 'Condensed view'),
           a('jd8462a5', 'Protected accounts can only create private Moments'),
           a('a5e756d7', 'No pending changes'),
@@ -3694,10 +3701,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ab0deccf', 'Subscribe'),
           a('h3281ce9', 'You’re in the loop!'),
           a('f05df263', 'Check your inbox for the latest issues or read on Revue'),
+          a('b78d403f', 'Thank you for subscribing'),
           a('d1bc4330', 'Subscribe through Revue'),
           a('b6f9f574', 'Subscribe to newsletter'),
-          a('d1c4aeaf', 'Terms of Service'),
-          a('a5d264ec', 'Privacy Policy'),
+          a('deb7887d', 'Terms of Service'),
+          a('j5e59565', 'Privacy Policy'),
           a('a98ba778', 'Notifications timelines'),
           a('f287bb3a', 'From likes to Retweets and a whole lot more, this is where all the action happens.'),
           a('h994ec4f', 'From reactions to Retweets and a whole lot more, this is where all the action happens.'),
@@ -3859,7 +3867,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('e20404df', 'New reply'),
           a('j88f27d8', 'Relevant people'),
-          a('d35d74e3', 'Conversation'),
           a('g9079b93', 'You may only view analytics about your own Tweets.'),
           a('a57daeb1', 'Tweet Analytics'),
           a('ib1f8491', function (e) {
@@ -3992,6 +3999,41 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b9238e88', function (e) {
             return 'Subscribe for ' + e.price + '/mo'
           }),
+          a('db04e329', 'more'),
+          a('a5b241cc', 'your'),
+          a('ae3f4564', 'Get news without the noise'),
+          a(
+            'i58b7cdf',
+            'See the most shared articles in your network over the last 24 hours and catch up on the conversations.',
+          ),
+          a('fd04982d', 'Article Reader'),
+          a('ec6be80f', 'Enjoy a fast-loading, ad-free reading experience across a network of leading publishers.'),
+          a('c18e1b7c', 'Thread Mode'),
+          a('e9113acc', 'Unroll Tweetstorms and threads into a single flow.'),
+          a('hdc87500', 'Bookmark Folders'),
+          a('d0f0d45d', 'Organize bookmarks into folders.'),
+          a('c370c7f5', 'Customize how Twitter looks'),
+          a('i9223e6f', 'Custom navigation'),
+          a('c1935a33', 'Set your most used pages right on your tab bar.'),
+          a('h7128f2e', 'Custom app icons'),
+          a('eab57a9f', 'On your Apple or Android device, get access to custom app icons.'),
+          a('a34e2259', 'Theming'),
+          a(
+            'a7764ff0',
+            'Change the color theme for all of your Twitter accounts on each device. This is only visible to you.',
+          ),
+          a('e39a77a3', 'Tweet better'),
+          a(
+            'ad45ffb7',
+            'Typo? Forgot to tag someone? Give yourself time to make changes to your Tweet before it goes live.',
+          ),
+          a('bef77530', 'Longer video uploads'),
+          a('bcc13060', 'Early access'),
+          a('i0ca5c61', 'T1 Labs'),
+          a(
+            'e7484be1',
+            'Get early access to the new features we’re testing before they’re available to everyone else.',
+          ),
           a('a25a2e76', 'Edit order'),
           a('fa884025', 'List'),
           a('eb7b54bd', 'Loading Lists'),
@@ -4716,8 +4758,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d85bc1b8', 'Zoom in or out on your image.'),
           a('f596ace8', 'Aspect ratio: original'),
           a('df031fca', 'Aspect ratio: wide'),
-          a('b40332c5', 'Aspect ratio: square'),
-          a('e547b368', 'Original'),
+          a('b40332c5', 'Aspect ratio: square')
+        a('e547b368', 'Original'),
           a('f7571204', 'Wide'),
           a('e6e16811', 'Square'),
           a('d7e50a66', 'Learn more'),
@@ -4774,8 +4816,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ga629a8b', 'View people in conversation'),
           a('h13ffc87', 'Voice'),
           a('f5d461f7', 'Voice Tweet'),
-          a('de8c5eb2', 'Play audio')
-        a('ec286028', 'Pause audio'),
+          a('de8c5eb2', 'Play audio'),
+          a('ec286028', 'Pause audio'),
           a('ad77feb5', 'Captions unavailable'),
           a('ebe41366', function (e) {
             return 'Time ' + e.time
@@ -6660,9 +6702,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'efdeb336',
+                key: 'a430c70b',
                 get: function () {
-                  return ['By subscribing you agree to Revue’s ', ' and ', '.']
+                  return ['By subscribing you agree to Revue’s ', ' and ', '', '.']
                 },
               },
               {
@@ -6722,6 +6764,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                   return [
                     'If replies are hidden, you can view them here. Don’t see a reply? Protected Tweets might be filtered out. ',
                   ]
+                },
+              },
+              {
+                key: 'c8a16536',
+                get: function () {
+                  return ['By clicking Subscribe you agree to the ', '. Auto-renews monthly. Cancel anytime.']
+                },
+              },
+              {
+                key: 'c6bde8e9',
+                get: function () {
+                  return ['A subscription to ', ' Twitter to make it ', ' Twitter']
                 },
               },
               {
