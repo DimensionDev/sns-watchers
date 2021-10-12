@@ -713,6 +713,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d203e241', 'Not found'),
           a('e49537c1', 'Hmm...this page doesn’t exist. Try searching for something else.'),
           a('d35d74e3', 'Conversation'),
+          a('afb7e8f7', 'Read Article'),
           a('f5718548', 'You reported this Tweet.'),
           a('e4c6c309', 'This Tweet is unavailable.'),
           a('i255e1aa', 'A moderator hid this Tweet for breaking a Community rule.'),
@@ -1163,9 +1164,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b2e94283', function (e) {
             return 'via @' + e.viaScreenName
           }),
-          a('f70a36d0', 'Tweet all'),
-          a('a7478929', 'You are over the daily limit for sending Tweets.')
-        a('adf527d2', 'Something went wrong. Try sending your Tweet again in a minute.'),
+          a('f70a36d0', 'Tweet all')
+        a('a7478929', 'You are over the daily limit for sending Tweets.'),
+          a('adf527d2', 'Something went wrong. Try sending your Tweet again in a minute.'),
           a('cc85b9f5', 'Your account is suspended and is not permitted to send Tweets.'),
           a('a3f10d61', 'The Tweet you are trying to reply to has been deleted or is not visible to you.'),
           a('d74da9b8', 'The text of your Tweet exceeds the number of allowed @mentions.'),
@@ -2292,9 +2293,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('aefc5b20', 'Color options'),
           a('a52d0fdd', 'Blue'),
           a('d818cdd5', 'Yellow'),
-          a('fee1cd64', 'Pink'),
-          a('cbed7fb2', 'Purple')
-        a('g697ec02', 'Orange'),
+          a('fee1cd64', 'Pink')
+        a('cbed7fb2', 'Purple'),
+          a('g697ec02', 'Orange'),
           a('a7c22049', 'Green'),
           a('ea1c87a5', function (e) {
             return (
@@ -2959,6 +2960,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i8385a2c', 'Android'),
           a('h201c4c1', 'iOS'),
           a('d383acfc', 'Windows Phone'),
+          a('ffeb836a', 'Settings are unavailable'),
+          a(
+            'f2fb9746',
+            'These settings aren’t available because they apply to non-essential cookies. Since you’ve already opted out of those, we’re only using cookies that collect necessary data from your device.',
+          ),
           a('hc73f03f', 'Your Account'),
           a(
             'd3a2bde7',
@@ -3516,13 +3522,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i783ca9b', 'Choose an existing Moment, or create a new one.'),
           a('ef90c7ae', 'Create new'),
           a('da0ea383', 'Creating Moment'),
-          a('i6e7e298', 'Create'),
-          a('ha4a78a5', 'Publishing not available'),
-          a(
-            'e1c6a886',
-            'Protected accounts can only create private Moments. You can publish your Moments if you change your account to Public.',
-          ),
-          a('ffaf4649', 'Create anyway')
+          a('i6e7e298', 'Create')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3539,7 +3539,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('a0cc15fc', 'Create new Moment'),
+        a('ha4a78a5', 'Publishing not available'),
+          a(
+            'e1c6a886',
+            'Protected accounts can only create private Moments. You can publish your Moments if you change your account to Public.',
+          ),
+          a('ffaf4649', 'Create anyway'),
+          a('a0cc15fc', 'Create new Moment'),
           a('ja49bfd6', 'New Moment'),
           a('e63ff1d5', 'Tweets I’ve liked'),
           a('a42f33ba', 'Tweets by account'),
@@ -4755,11 +4761,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d1386940', 'Stay informed'),
           a('ecda5f9d', 'Misleading'),
           a('ec3ddf09', 'This Tweet can’t be replied to, reacted to, or shared.'),
-          a('d85bc1b8', 'Zoom in or out on your image.'),
-          a('f596ace8', 'Aspect ratio: original'),
+          a('d85bc1b8', 'Zoom in or out on your image.')
+        a('f596ace8', 'Aspect ratio: original'),
           a('df031fca', 'Aspect ratio: wide'),
-          a('b40332c5', 'Aspect ratio: square')
-        a('e547b368', 'Original'),
+          a('b40332c5', 'Aspect ratio: square'),
+          a('e547b368', 'Original'),
           a('f7571204', 'Wide'),
           a('e6e16811', 'Square'),
           a('d7e50a66', 'Learn more'),
