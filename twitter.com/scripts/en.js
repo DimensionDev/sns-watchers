@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [111],
+    [113],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -11,7 +11,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(259).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(261).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -757,6 +757,35 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b23688c7', 'Undo timer'),
           a('i79ab12a', 'Follow Topic'),
           a('c0f56044', 'Unfollow'),
+          a('fcf51fe6', 'Star'),
+          a('e9a90d71', 'Starred'),
+          a('bf403715', 'Unstar'),
+          a('c9f08e28', function (e) {
+            return 'Unstar ' + e.title + '?'
+          }),
+          a(
+            'abc600f3',
+            'Even if you unstar this Topic, you may still see Tweets about it depending on which accounts you’re following.',
+          ),
+          a('cd876e01', 'Favorite'),
+          a('f2816e02', 'Favorited'),
+          a('f5b04fbb', 'Unfavorite'),
+          a('c481ae3f', function (e) {
+            return 'Unfavorite ' + e.title + '?'
+          }),
+          a(
+            'aa3ba123',
+            'Even if you unfavorite this Topic, you may still see Tweets about it depending on which accounts you’re following.',
+          ),
+          a('e0e730b0', 'Interested'),
+          a('f8d0e665', 'Not Interested'),
+          a('gd3f996f', function (e) {
+            return 'Not interested in ' + e.title + '?'
+          }),
+          a(
+            'i36c403c',
+            'Even if you are not interested in this Topic, you may still see Tweets about it depending on which accounts you’re following.',
+          ),
           a('e3a24e4b', 'Add another Tweet'),
           a('i569ff3e', 'Show this thread'),
           a('b4947556', 'Translate Tweet'),
@@ -1128,10 +1157,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return (
               e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
             )
-          }),
-          a('e9f8a0eb', function (e) {
-            return '' + e.userName
-          }),
+          })
+        a('e9f8a0eb', function (e) {
+          return '' + e.userName
+        }),
           a('df7e9fbc', function (e) {
             return e.replyUserName + ' and ' + e.otherUserName
           }),
@@ -1164,8 +1193,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b2e94283', function (e) {
             return 'via @' + e.viaScreenName
           }),
-          a('f70a36d0', 'Tweet all')
-        a('a7478929', 'You are over the daily limit for sending Tweets.'),
+          a('f70a36d0', 'Tweet all'),
+          a('a7478929', 'You are over the daily limit for sending Tweets.'),
           a('adf527d2', 'Something went wrong. Try sending your Tweet again in a minute.'),
           a('cc85b9f5', 'Your account is suspended and is not permitted to send Tweets.'),
           a('a3f10d61', 'The Tweet you are trying to reply to has been deleted or is not visible to you.'),
@@ -1576,13 +1605,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e3f04700', function (e) {
             return e.count + ' new Tweet' + n(e.count, '', 's') + ' to review'
           }),
-          a('b139b549', 'Invite members'),
           a('e2429f56', 'Tweets to review'),
           a('df15d5b7', function (e) {
             return e.count + ' new Tweet' + n(e.count, '', 's')
           }),
           a('ba2e6395', 'Support & resources'),
           a('a0e3ece4', 'Community Detail'),
+          a('b139b549', 'Invite members'),
           a('hb9400db', 'See More'),
           a('aa7ae3f6', 'Joined'),
           a('hafa07f2', 'Participation is limited'),
@@ -2279,8 +2308,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('ce494bb3', 'Font size'),
           a('c783d45e', 'Color'),
-          a('h306a357', 'Background'),
-          a('d8680056', 'Extra small'),
+          a('h306a357', 'Background')
+        a('d8680056', 'Extra small'),
           a('eed02405', 'Small'),
           a('j59f0b93', 'Default'),
           a('b81aaad8', 'Large'),
@@ -2293,8 +2322,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('aefc5b20', 'Color options'),
           a('a52d0fdd', 'Blue'),
           a('d818cdd5', 'Yellow'),
-          a('fee1cd64', 'Pink')
-        a('cbed7fb2', 'Purple'),
+          a('fee1cd64', 'Pink'),
+          a('cbed7fb2', 'Purple'),
           a('g697ec02', 'Orange'),
           a('a7c22049', 'Green'),
           a('ea1c87a5', function (e) {
@@ -3501,8 +3530,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f9c558ae', function (e) {
             return 'Want to login with your phone, @' + e.userScreenName + '?'
           }),
-          a('haa104f0', 'Send code'),
-          a('h25bc383', 'Use your password instead'),
+          a('haa104f0', 'Send code')
+        function r(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var a = t[o]
+            ;(a.enumerable = a.enumerable || !1),
+              (a.configurable = !0),
+              'value' in a && (a.writable = !0),
+              Object.defineProperty(e, a.key, a)
+          }
+        }
+        function i(e, t) {
+          return (i =
+            Object.setPrototypeOf ||
+            function (e, t) {
+              return (e.__proto__ = t), e
+            })(e, t)
+        }
+        a('h25bc383', 'Use your password instead'),
           a('ecde12c1', function (e) {
             return 'You’ll get a code sent to ' + e.phoneNumber + ' to enter on the next screen.'
           }),
@@ -3522,24 +3567,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i783ca9b', 'Choose an existing Moment, or create a new one.'),
           a('ef90c7ae', 'Create new'),
           a('da0ea383', 'Creating Moment'),
-          a('i6e7e298', 'Create')
-        function r(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var a = t[o]
-            ;(a.enumerable = a.enumerable || !1),
-              (a.configurable = !0),
-              'value' in a && (a.writable = !0),
-              Object.defineProperty(e, a.key, a)
-          }
-        }
-        function i(e, t) {
-          return (i =
-            Object.setPrototypeOf ||
-            function (e, t) {
-              return (e.__proto__ = t), e
-            })(e, t)
-        }
-        a('ha4a78a5', 'Publishing not available'),
+          a('i6e7e298', 'Create'),
+          a('ha4a78a5', 'Publishing not available'),
           a(
             'e1c6a886',
             'Protected accounts can only create private Moments. You can publish your Moments if you change your account to Public.',
@@ -4428,6 +4457,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('c5954d30', 'List'),
           a('e3fcbdba', 'Dismiss'),
+          a('jc0b3a8b', 'Image description'),
           a('bed2945c', 'read image description'),
           a('j190bf19', 'LIVE'),
           a('f17dfdb5', 'Play'),
@@ -4733,11 +4763,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('i4bb9ef6', function (e) {
             return 'Unfollow ' + e.title + '?'
-          }),
-          a(
-            'ad2be9fb',
-            'Their Tweets will no longer show up in your home timeline. You can still view their profile, unless their Tweets are protected.',
-          ),
+          })
+        a(
+          'ad2be9fb',
+          'Their Tweets will no longer show up in your home timeline. You can still view their profile, unless their Tweets are protected.',
+        ),
           a(
             'bdcdeb3e',
             'Even if you unfollow this Topic, you could still see Tweets about it depending on which accounts you’re following.',
@@ -4761,8 +4791,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d1386940', 'Stay informed'),
           a('ecda5f9d', 'Misleading'),
           a('ec3ddf09', 'This Tweet can’t be replied to, reacted to, or shared.'),
-          a('d85bc1b8', 'Zoom in or out on your image.')
-        a('f596ace8', 'Aspect ratio: original'),
+          a('d85bc1b8', 'Zoom in or out on your image.'),
+          a('f596ace8', 'Aspect ratio: original'),
           a('df031fca', 'Aspect ratio: wide'),
           a('b40332c5', 'Aspect ratio: square'),
           a('e547b368', 'Original'),
@@ -4861,7 +4891,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c8891d06', 'Tomorrow'),
           a('d6b930d3', 'Try again'),
           a('aafa48c2', 'Something went wrong.'),
-          a('ce97544c', 'Tweet unavailable'),
           a('b03835c7', function (e) {
             return e.replyCount + ' repl' + n(e.replyCount, 'y', 'ies')
           }),
@@ -4920,6 +4949,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a16de8a4', function (e) {
             return '' + e.place
           }),
+          a('ce97544c', 'Tweet unavailable'),
           a('ffeb2fc6', 'Up next'),
           a('g6520dde', function (e) {
             return '@' + e.screenName + ' is currently in an active Space, Click to join'
