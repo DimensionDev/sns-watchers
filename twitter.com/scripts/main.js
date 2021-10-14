@@ -1842,7 +1842,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           k = function (e) {
             switch (e) {
               case 'xSmall':
-              case 'experimentalSmall':
+              case 'small':
                 return 'subtext1'
               case 'experimentalMedium':
               case 'experimentalLarge':
@@ -1852,7 +1852,6 @@ window.__SCRIPTS_LOADED__.i18n &&
               case 'smallCompact':
                 return 'subtext2'
               case 'normal':
-              case 'normalCompact':
               default:
                 return 'body'
             }
@@ -2074,12 +2073,11 @@ window.__SCRIPTS_LOADED__.i18n &&
               o = ''.concat(n.space16 + n.space4 + n.space2, 'px')
             return {
               xSmall: { width: t.space16, height: t.space16 },
-              experimentalSmall: { width: r, height: r },
+              small: { width: r, height: r },
               experimentalMedium: { width: t.space20, height: t.space20 },
               experimentalLarge: { width: o, height: o },
               xLarge: { width: t.space24, height: t.space24 },
               smallCompact: { height: o, width: o },
-              normalCompact: { width: o, height: o },
               DEPRECATED_normalCompact: { width: o, height: o },
               normal: { width: o, height: o },
               DEPRECATED_normal: { width: o, height: o },
@@ -2089,12 +2087,11 @@ window.__SCRIPTS_LOADED__.i18n &&
             var t = e.spaces
             return {
               xSmall: { paddingHorizontal: t.space12 },
-              experimentalSmall: { paddingHorizontal: t.space16 },
+              small: { paddingHorizontal: t.space16 },
               experimentalMedium: { paddingHorizontal: t.space16 },
               experimentalLarge: { paddingHorizontal: t.space24 },
               xLarge: { paddingHorizontal: t.space32 },
               smallCompact: { paddingHorizontal: t.space4 },
-              normalCompact: { paddingHorizontal: '1em' },
               DEPRECATED_normalCompact: { paddingHorizontal: '1em' },
               normal: { paddingHorizontal: '1em' },
               DEPRECATED_normal: { paddingHorizontal: '1em' },
@@ -2104,12 +2101,11 @@ window.__SCRIPTS_LOADED__.i18n &&
             var t = e.spaces
             return {
               xSmall: { marginRight: t.space4 },
-              experimentalSmall: { marginRight: t.space4 },
+              small: { marginRight: t.space4 },
               experimentalMedium: { marginRight: t.space4 },
               experimentalLarge: { marginRight: t.space8 },
               xLarge: { marginRight: t.space8 },
               smallCompact: { marginRight: '0.5em' },
-              normalCompact: { marginRight: '0.5em' },
               DEPRECATED_normalCompact: { marginRight: '0.5em' },
               normal: { marginRight: '0.5em' },
               DEPRECATED_normal: { marginRight: '0.5em' },
@@ -2123,12 +2119,11 @@ window.__SCRIPTS_LOADED__.i18n &&
             i = ''.concat(n.space12 + n.space40, 'px')
           return {
             xSmall: { minWidth: t.space24, minHeight: t.space24 },
-            experimentalSmall: { minWidth: t.space32, minHeight: t.space32 },
+            small: { minWidth: t.space32, minHeight: t.space32 },
             experimentalMedium: { minWidth: t.space36, minHeight: t.space36 },
             experimentalLarge: { minWidth: o, minHeight: o },
             xLarge: { minWidth: i, minHeight: i },
             smallCompact: { minHeight: r, minWidth: r },
-            normalCompact: { minHeight: t.space32, minWidth: t.space32 },
             DEPRECATED_normalCompact: { minHeight: t.space32, minWidth: t.space32 },
             normal: { minHeight: t.space40, minWidth: t.space40 },
             DEPRECATED_normal: { minHeight: t.space40, minWidth: t.space40 },
@@ -2440,25 +2435,25 @@ window.__SCRIPTS_LOADED__.i18n &&
       '0KEI': function (e, t, n) {
         'use strict'
         n.d(t, 'a', function () {
-          return K
+          return q
         }),
           n.d(t, 'b', function () {
-            return q
+            return Y
           }),
           n.d(t, 'e', function () {
-            return de
-          }),
-          n.d(t, 'c', function () {
             return pe
           }),
+          n.d(t, 'c', function () {
+            return fe
+          }),
           n.d(t, 'f', function () {
-            return ve
+            return be
           }),
           n.d(t, 'd', function () {
-            return we
+            return Ee
           }),
           n.d(t, 'g', function () {
-            return Ee
+            return je
           })
         var r = n('m3Bd'),
           o = n.n(r),
@@ -2481,28 +2476,29 @@ window.__SCRIPTS_LOADED__.i18n &&
             n('1t7P'),
             n('daRM'),
             n('FtHn'),
-            n('pXBW')),
-          s = n('6/RC'),
-          u = n('4+NY'),
-          l = n('OIs+'),
-          d = n('LVU8'),
-          p = n('3XMw'),
-          f = n.n(p),
-          h = n('8jkQ'),
-          m = n('prCu'),
-          v = n.n(m),
-          b = n('SrIh'),
-          y = n('Sp5X'),
-          g = n('RqPI'),
-          _ = n('csM1'),
-          O = n('uDfI'),
-          w = n('G6rE'),
-          E = n('1YZw'),
-          j = n('k49u'),
-          P = n('fs1G'),
-          T = n('w6IS'),
-          S = n('/Dbh')
-        function I(e, t) {
+            n('ERkP')),
+          s = n('pXBW'),
+          u = n('6/RC'),
+          l = n('4+NY'),
+          d = n('OIs+'),
+          p = n('LVU8'),
+          f = n('3XMw'),
+          h = n.n(f),
+          m = n('8jkQ'),
+          v = n('prCu'),
+          b = n.n(v),
+          y = n('SrIh'),
+          g = n('Sp5X'),
+          _ = n('RqPI'),
+          O = n('csM1'),
+          w = n('uDfI'),
+          E = n('G6rE'),
+          j = n('1YZw'),
+          P = n('k49u'),
+          T = n('fs1G'),
+          S = n('w6IS'),
+          I = n('/Dbh')
+        function C(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -2514,307 +2510,307 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function C(e) {
+        function k(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? I(Object(n), !0).forEach(function (t) {
+              ? C(Object(n), !0).forEach(function (t) {
                   a()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : I(Object(n)).forEach(function (t) {
+              : C(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
-        var k = f.a.ac0d27be,
-          R = f.a.bcee7443,
-          x = f.a.e0cbf779,
-          D = f.a.dec5a5cd,
-          A = f.a.d67f9455,
-          L = f.a.e0ece1b5,
-          M = f.a.b09f1ab4,
-          N = f.a.a4039fd1,
-          F = f.a.g75fec73,
-          B = f.a.abb8b6ef,
-          U = f.a.f30bd1fc,
-          H = f.a.i54e550c,
-          W = f.a.a6fb9f96,
-          z = f.a.c8cb0b4c,
-          V = f.a.b1b54f9e,
-          G = f.a.i859a9d3,
-          K = f.a.d6e72ce0({ count: S.a }),
-          q = f.a.a34dccd7({ count: S.b }),
-          Y = f.a.jea2ff04,
-          Q = f.a.ce482c35,
-          X = f.a.db626d87,
-          Z = f.a.i3ee2550,
-          J = f.a.cf18a257,
-          $ = f.a.h7ffa648,
-          ee = f.a.b87ceb1b,
-          te = f.a.f87e2faa,
-          ne = f.a.cdaf8221,
-          re = f.a.c1b0e710,
-          oe = f.a.f15d7a4a,
-          ie = f.a.bbcaab10,
-          ae = f.a.bb558892,
-          ce = f.a.hae1c933,
-          se = /Account update failed: (.*)\./
-        function ue(e) {
-          return Object(E.b)({ text: e, action: { label: x, link: '/settings/phone' } })
+        var R = h.a.ac0d27be,
+          x = h.a.bcee7443,
+          D = h.a.e0cbf779,
+          A = h.a.dec5a5cd,
+          L = h.a.d67f9455,
+          M = h.a.e0ece1b5,
+          N = h.a.b09f1ab4,
+          F = h.a.a4039fd1,
+          B = h.a.g75fec73,
+          U = h.a.abb8b6ef,
+          H = h.a.f30bd1fc,
+          W = h.a.i54e550c,
+          z = h.a.a6fb9f96,
+          V = h.a.c8cb0b4c,
+          G = h.a.b1b54f9e,
+          K = h.a.i859a9d3,
+          q = h.a.d6e72ce0({ count: I.a }),
+          Y = h.a.a34dccd7({ count: I.b }),
+          Q = h.a.jea2ff04,
+          X = h.a.ce482c35,
+          Z = h.a.db626d87,
+          J = h.a.i3ee2550,
+          $ = h.a.cf18a257,
+          ee = h.a.h7ffa648,
+          te = h.a.b87ceb1b,
+          ne = h.a.f87e2faa,
+          re = h.a.cdaf8221,
+          oe = h.a.c1b0e710,
+          ie = h.a.f15d7a4a,
+          ae = h.a.bbcaab10,
+          ce = h.a.bb558892,
+          se = h.a.hae1c933,
+          ue = /Account update failed: (.*)\./
+        function le(e) {
+          return Object(j.b)({ text: e, action: { label: D, link: '/settings/phone' } })
         }
-        function le() {
+        function de() {
           return function (e, t, n) {
             n.api
             var r = n.featureSwitches
-            Object(g.l)(t()) &&
+            Object(_.l)(t()) &&
               r.isTrue('responsive_web_auto_logout_restrictedauthtoken_enabled') &&
-              e(Object(u.c)()).then(function () {
+              e(Object(l.c)()).then(function () {
                 window.location.reload(!0)
               })
           }
         }
-        var de = function (e) {
+        var pe = function (e) {
           return e.find(function (e) {
-            return e && e.code === j.a.AccessDeniedByBouncer
+            return e && e.code === P.a.AccessDeniedByBouncer
           })
         }
-        function pe(e) {
+        function fe(e) {
           var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
             n = e.bounce_location || e.bounceDeeplink || '/account/access'
           0 !== n.indexOf('https://') && '/' !== n.charAt(0) && (n = '/'.concat(n))
-          var r = s.canUseDOM ? window.location.pathname : null,
-            o = h.b.parseInternalUrl(n)
+          var r = u.canUseDOM ? window.location.pathname : null,
+            o = m.b.parseInternalUrl(n)
           if (!r || o !== r) {
-            var i = v.a.stringify(t)
+            var i = b.a.stringify(t)
             if (
               (i && (n = -1 !== n.indexOf('?') ? ''.concat(n, '&').concat(i) : ''.concat(n, '?').concat(i)),
-              !s.canUseDOM || !o || 0 !== o.indexOf('/i/flow/'))
+              !u.canUseDOM || !o || 0 !== o.indexOf('/i/flow/'))
             )
-              return h.b.navigateTo(n)
-            y.a.push(o)
+              return m.b.navigateTo(n)
+            g.a.push(o)
           }
         }
-        function fe(e) {
-          return Object(E.b)({ text: e, action: { label: G, link: 'https://support.twitter.com/articles/18311' } })
-        }
-        function he() {
-          return Object(E.b)({ text: ce })
+        function he(e) {
+          return Object(j.b)({ text: e, action: { label: K, link: 'https://support.twitter.com/articles/18311' } })
         }
         function me() {
-          return Object(E.b)({ text: J })
+          return Object(j.b)({ text: se })
         }
         function ve() {
+          return Object(j.b)({ text: $ })
+        }
+        function be() {
           return function (e, t) {
-            var n = w.e.selectLoggedInUser(t())
-            if (n && n.needs_phone_verification) return e(ue(X))
+            var n = E.e.selectLoggedInUser(t())
+            if (n && n.needs_phone_verification) return e(le(Z))
             return e(
-              Object(E.b)({ text: re, action: { label: G, link: 'https://support.twitter.com/articles/15790' } }),
+              Object(j.b)({ text: oe, action: { label: K, link: 'https://support.twitter.com/articles/15790' } }),
             )
           }
         }
-        var be = /failed validation: (.*)\./
-        function ye(e) {
-          var t = (e.message || '').match(be)
-          return t && t.length > 1 ? t[1] : Z
+        var ye = /failed validation: (.*)\./
+        function ge(e) {
+          var t = (e.message || '').match(ye)
+          return t && t.length > 1 ? t[1] : J
         }
-        function ge(e, t, n) {
+        function _e(e, t, n) {
           var r,
             o =
               ((r = {}),
-              a()(r, j.a.AccountUpdateFailure, function () {
+              a()(r, P.a.AccountUpdateFailure, function () {
                 return (function (e) {
-                  var t = (e.message || '').match(se)
-                  return t && t.length > 1 ? Object(E.b)({ text: t[1] }) : Object(E.b)({ text: R })
+                  var t = (e.message || '').match(ue)
+                  return t && t.length > 1 ? Object(j.b)({ text: t[1] }) : Object(j.b)({ text: x })
                 })(t)
               }),
-              a()(r, j.a.AddressBookLookupNotFound, function () {
-                return Object(E.b)({ text: te })
+              a()(r, P.a.AddressBookLookupNotFound, function () {
+                return Object(j.b)({ text: ne })
               }),
-              a()(r, j.a.BadOauthToken, function () {
-                return le()
+              a()(r, P.a.BadOauthToken, function () {
+                return de()
               }),
-              a()(r, j.a.BlockedUserError, function () {
-                return Object(E.b)({ text: A })
+              a()(r, P.a.BlockedUserError, function () {
+                return Object(j.b)({ text: L })
               }),
-              a()(r, j.a.ClientNotPermitted, function () {
+              a()(r, P.a.ClientNotPermitted, function () {
                 return (function (e, t) {
-                  return _e(e, t), Object(d.b)()
+                  return Oe(e, t), Object(p.b)()
                 })(e, t)
               }),
-              a()(r, j.a.CurrentUserSuspended, function () {
+              a()(r, P.a.CurrentUserSuspended, function () {
+                return be()
+              }),
+              a()(r, P.a.DeactivatedUser, function () {
+                return Object(j.b)({ text: ne })
+              }),
+              a()(r, P.a.DefaultApiError, function () {
+                return n || me()
+              }),
+              a()(r, P.a.DeniedByApiCsrfProtection, T.a),
+              a()(r, P.a.DeviceAlreadyRegistered, function () {
+                return Object(j.b)({ text: U })
+              }),
+              a()(r, P.a.DeviceOperatorUnsupported, function () {
+                return Object(j.b)({ text: H })
+              }),
+              a()(r, P.a.DeviceRegistrationGeneralError, function () {
+                return Object(j.b)({ text: W })
+              }),
+              a()(r, P.a.DuplicateFavorite, T.a),
+              a()(r, P.a.ForbiddenMissingParameter, function () {
+                return Object(p.b)()
+              }),
+              a()(r, P.a.GenericAccessDenied, function () {
+                return Object(p.b)()
+              }),
+              a()(r, P.a.GenericBadRequest, function () {
+                return me()
+              }),
+              a()(r, P.a.GenericForbidden, function () {
+                return Object(p.b)()
+              }),
+              a()(r, P.a.GenericNotFound, function () {
+                return me()
+              }),
+              a()(r, P.a.GenericSuspended, function () {
+                return Object(j.b)({ text: R })
+              }),
+              a()(r, P.a.GenericUserNotFound, function () {
+                return Object(j.b)({ text: ne })
+              }),
+              a()(r, P.a.HarmfulLink, function () {
+                return Object(j.b)({ text: z })
+              }),
+              a()(r, P.a.InactiveUser, function () {
+                return be()
+              }),
+              a()(r, P.a.InternalError, function () {
+                return me()
+              }),
+              a()(r, P.a.InvalidCredentials, function () {
+                return Object(p.b)()
+              }),
+              a()(r, P.a.InvalidCurrentPassword, function () {
+                return Object(j.b)({ text: V })
+              }),
+              a()(r, P.a.InvalidId, function () {
+                return n || me()
+              }),
+              a()(r, P.a.InvalidMediaId, function () {
+                return Object(j.b)({ text: G })
+              }),
+              a()(r, P.a.InvalidParameter, function () {
+                return n || Object(j.b)({ text: X })
+              }),
+              a()(r, P.a.InvalidRequestUrlForbidden, function () {
+                return Object(j.b)({ text: M })
+              }),
+              a()(r, P.a.MobileSettingsNoDevicesFound, function () {
+                return n || me()
+              }),
+              a()(r, P.a.NewPasswordLong, function () {
+                return Object(j.b)({ text: q })
+              }),
+              a()(r, P.a.NewPasswordShort, function () {
+                return Object(j.b)({ text: Y })
+              }),
+              a()(r, P.a.NewPasswordWeak, function () {
+                return Object(j.b)({ text: Q })
+              }),
+              a()(r, P.a.NoTwoFactorAuthMethodFound, function () {
+                return n || me()
+              }),
+              a()(r, P.a.OtherUserSuspended, function () {
+                return T.a
+              }),
+              a()(r, P.a.OverCapacity, function () {
+                return Object(j.b)({ text: A })
+              }),
+              a()(r, P.a.PasswordVerificationRequired, function () {
+                return T.a
+              }),
+              a()(r, P.a.RateLimitExceeded, function () {
+                return Object(j.b)({ text: re })
+              }),
+              a()(r, P.a.RestrictedAuthToken, function () {
+                return de()
+              }),
+              a()(r, P.a.SmsVerifyInvalidPin, function () {
+                return Object(j.b)({ text: te })
+              }),
+              a()(r, P.a.SmsVerifyRateLimitExceeded, function () {
+                return Object(j.b)({ text: ee })
+              }),
+              a()(r, P.a.StatusNotFound, function () {
+                return Object(j.b)({ text: ie })
+              }),
+              a()(r, P.a.TieredActionChallengeCaptcha, function () {
                 return ve()
               }),
-              a()(r, j.a.DeactivatedUser, function () {
-                return Object(E.b)({ text: te })
-              }),
-              a()(r, j.a.DefaultApiError, function () {
-                return n || he()
-              }),
-              a()(r, j.a.DeniedByApiCsrfProtection, P.a),
-              a()(r, j.a.DeviceAlreadyRegistered, function () {
-                return Object(E.b)({ text: B })
-              }),
-              a()(r, j.a.DeviceOperatorUnsupported, function () {
-                return Object(E.b)({ text: U })
-              }),
-              a()(r, j.a.DeviceRegistrationGeneralError, function () {
-                return Object(E.b)({ text: H })
-              }),
-              a()(r, j.a.DuplicateFavorite, P.a),
-              a()(r, j.a.ForbiddenMissingParameter, function () {
-                return Object(d.b)()
-              }),
-              a()(r, j.a.GenericAccessDenied, function () {
-                return Object(d.b)()
-              }),
-              a()(r, j.a.GenericBadRequest, function () {
-                return he()
-              }),
-              a()(r, j.a.GenericForbidden, function () {
-                return Object(d.b)()
-              }),
-              a()(r, j.a.GenericNotFound, function () {
-                return he()
-              }),
-              a()(r, j.a.GenericSuspended, function () {
-                return Object(E.b)({ text: k })
-              }),
-              a()(r, j.a.GenericUserNotFound, function () {
-                return Object(E.b)({ text: te })
-              }),
-              a()(r, j.a.HarmfulLink, function () {
-                return Object(E.b)({ text: W })
-              }),
-              a()(r, j.a.InactiveUser, function () {
+              a()(r, P.a.TieredActionConversationSpammer, function () {
                 return ve()
               }),
-              a()(r, j.a.InternalError, function () {
-                return he()
+              a()(r, P.a.TieredActionFavoriteSpammer, function () {
+                return ve()
               }),
-              a()(r, j.a.InvalidCredentials, function () {
-                return Object(d.b)()
+              a()(r, P.a.TieredActionFollowCreeper, function () {
+                return he(N)
               }),
-              a()(r, j.a.InvalidCurrentPassword, function () {
-                return Object(E.b)({ text: z })
+              a()(r, P.a.TieredActionFollowSpammer, function () {
+                return ve()
               }),
-              a()(r, j.a.InvalidId, function () {
-                return n || he()
+              a()(r, P.a.TieredActionTweetCreeper, function () {
+                return he(F)
               }),
-              a()(r, j.a.InvalidMediaId, function () {
-                return Object(E.b)({ text: V })
+              a()(r, P.a.TieredActionTweetSpammer, function () {
+                return ve()
               }),
-              a()(r, j.a.InvalidParameter, function () {
-                return n || Object(E.b)({ text: Q })
+              a()(r, P.a.TimeOut, function () {
+                return T.a
               }),
-              a()(r, j.a.InvalidRequestUrlForbidden, function () {
-                return Object(E.b)({ text: L })
+              a()(r, P.a.TweetEngagementsLimited, function () {
+                return Object(j.b)({ text: ae })
               }),
-              a()(r, j.a.MobileSettingsNoDevicesFound, function () {
-                return n || he()
+              a()(r, P.a.UserActionRateLimitExceeded, function () {
+                return le(B)
               }),
-              a()(r, j.a.NewPasswordLong, function () {
-                return Object(E.b)({ text: K })
+              a()(r, P.a.UserAlreadyHasVerifiedPhone, function () {
+                return Object(j.b)({ text: ce })
               }),
-              a()(r, j.a.NewPasswordShort, function () {
-                return Object(E.b)({ text: q })
+              a()(r, P.a.ValidationFailure, function () {
+                return Object(j.b)({ text: ge(t) })
               }),
-              a()(r, j.a.NewPasswordWeak, function () {
-                return Object(E.b)({ text: Y })
+              a()(r, P.a.AccessDeniedByBouncer, function () {
+                return fe(t)
               }),
-              a()(r, j.a.NoTwoFactorAuthMethodFound, function () {
-                return n || he()
+              a()(r, P.a.RestrictedSession, function () {
+                return fe(t)
               }),
-              a()(r, j.a.OtherUserSuspended, function () {
-                return P.a
-              }),
-              a()(r, j.a.OverCapacity, function () {
-                return Object(E.b)({ text: D })
-              }),
-              a()(r, j.a.PasswordVerificationRequired, function () {
-                return P.a
-              }),
-              a()(r, j.a.RateLimitExceeded, function () {
-                return Object(E.b)({ text: ne })
-              }),
-              a()(r, j.a.RestrictedAuthToken, function () {
-                return le()
-              }),
-              a()(r, j.a.SmsVerifyInvalidPin, function () {
-                return Object(E.b)({ text: ee })
-              }),
-              a()(r, j.a.SmsVerifyRateLimitExceeded, function () {
-                return Object(E.b)({ text: $ })
-              }),
-              a()(r, j.a.StatusNotFound, function () {
-                return Object(E.b)({ text: oe })
-              }),
-              a()(r, j.a.TieredActionChallengeCaptcha, function () {
-                return me()
-              }),
-              a()(r, j.a.TieredActionConversationSpammer, function () {
-                return me()
-              }),
-              a()(r, j.a.TieredActionFavoriteSpammer, function () {
-                return me()
-              }),
-              a()(r, j.a.TieredActionFollowCreeper, function () {
-                return fe(M)
-              }),
-              a()(r, j.a.TieredActionFollowSpammer, function () {
-                return me()
-              }),
-              a()(r, j.a.TieredActionTweetCreeper, function () {
-                return fe(N)
-              }),
-              a()(r, j.a.TieredActionTweetSpammer, function () {
-                return me()
-              }),
-              a()(r, j.a.TimeOut, function () {
-                return P.a
-              }),
-              a()(r, j.a.TweetEngagementsLimited, function () {
-                return Object(E.b)({ text: ie })
-              }),
-              a()(r, j.a.UserActionRateLimitExceeded, function () {
-                return ue(F)
-              }),
-              a()(r, j.a.UserAlreadyHasVerifiedPhone, function () {
-                return Object(E.b)({ text: ae })
-              }),
-              a()(r, j.a.ValidationFailure, function () {
-                return Object(E.b)({ text: ye(t) })
-              }),
-              a()(r, j.a.AccessDeniedByBouncer, function () {
-                return pe(t)
-              }),
-              a()(r, j.a.RestrictedSession, function () {
-                return pe(t)
-              }),
-              a()(r, l.a.DuplicateRequest, P.a),
-              a()(r, l.a.GenericRequestFailed, P.a),
-              a()(r, l.a.Offline, P.a),
+              a()(r, d.a.DuplicateRequest, T.a),
+              a()(r, d.a.GenericRequestFailed, T.a),
+              a()(r, d.a.Offline, T.a),
               r),
             i =
               (void 0 !== t.code && o[t.code]) ||
               (t.retryable &&
                 function () {
-                  return he()
+                  return me()
                 })
-          return i ? i() : (_e(e, t), n || he())
+          return i ? i() : (Oe(e, t), n || me())
         }
-        function _e(e, t) {
-          var n = Object(j.b)(t.code),
+        function Oe(e, t) {
+          var n = Object(P.b)(t.code),
             r = e.context
           ;(e.message = 'Unhandled API error from '
             .concat(r.id, ': ')
             .concat(n, ' ')
             .concat(t.code || 'Error code undefined')),
-            Object(b.a)(e, { extra: { context: r, message: t.message } })
+            Object(y.a)(e, { extra: { context: r, message: t.message } })
         }
-        var Oe = function (e) {
+        var we = function (e) {
             var t,
               n = e.customErrorHandler,
               r = e.defaultToast,
@@ -2834,7 +2830,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               if (!Array.isArray(d)) return Promise.reject(a)
               !(function (e) {
                 e.forEach(function (e) {
-                  return Object(_.b)({
+                  return Object(O.b)({
                     level: 'warning',
                     category: 'api',
                     data: Object.keys(e).reduce(function (t, n) {
@@ -2843,32 +2839,32 @@ window.__SCRIPTS_LOADED__.i18n &&
                   })
                 })
               })(d),
-                (t = Object(T.a)(
+                (t = Object(S.a)(
                   d.map(function (e) {
                     if (e.hasOwnProperty('code') || e.hasOwnProperty('retryable')) {
                       if (e.code && u[e.code]) {
                         var t = u[e.code],
                           n = t.customAction,
                           o = t.toast
-                        return o ? Object(E.b)(o) : n(e)
+                        return o ? Object(j.b)(o) : n(e)
                       }
-                      var i = r ? Object(E.b)(r) : void 0
-                      return ge(a, e, i)
+                      var i = r ? Object(j.b)(r) : void 0
+                      return _e(a, e, i)
                     }
                     !(function (e, t) {
                       var n = e.context
-                      Object(b.a)(e, { extra: { error: t, context: n } })
+                      Object(y.a)(e, { extra: { error: t, context: n } })
                     })(a, e)
                   }),
                 )
                   .filter(Boolean)
                   .filter(function (e) {
-                    return s || e.type !== E.a
+                    return s || e.type !== j.a
                   }))
             }
             return t.length > 0 && i(t), Promise.resolve()
           },
-          we = function (e) {
+          Ee = function (e) {
             return function (t) {
               return function (n) {
                 return (function (e) {
@@ -2877,20 +2873,23 @@ window.__SCRIPTS_LOADED__.i18n &&
                       r = e.showToast,
                       i = void 0 !== r && r,
                       a = o()(e, ['localContextId', 'showToast'])
-                    return t instanceof c.a
-                      ? ((t.context.id = n || 'Unknown'), Oe(C(C({}, a), {}, { error: t, showToast: i })))
+                    return t instanceof s.a
+                      ? ((t.context.id = n || 'Unknown'), we(k(k({}, a), {}, { error: t, showToast: i })))
                       : Promise.reject(t)
                   }
-                })(C(C({}, t), {}, { dispatch: n, localContextId: e }))
+                })(k(k({}, t), {}, { dispatch: n, localContextId: e }))
               }
             }
           },
-          Ee = function (e) {
-            var t = we(e),
-              n = Object(O.c)()
-            return function (e) {
-              return n(t(e))
-            }
+          je = function (e) {
+            var t = Object(w.c)()
+            return c.useCallback(
+              function (n) {
+                var r = Ee(e)
+                return t(r(n))
+              },
+              [t, e],
+            )
           }
       },
       '0Mjh': function (e, t) {
@@ -5945,12 +5944,11 @@ window.__SCRIPTS_LOADED__.i18n &&
             i.createElement(
               'g',
               null,
-              i.createElement('circle', { cx: '12.025', cy: '16.437', r: '1.281' }),
               i.createElement('path', {
-                d: 'M14.39 7.194c-.094-.127-.242-.2-.4-.2h-3.928c-.158 0-.307.073-.4.2-.096.126-.125.29-.08.442l1.814 6.098c.063.212.258.357.48.357h.298c.222 0 .416-.145.48-.356l1.813-6.098c.047-.152.017-.316-.077-.442z',
+                d: 'M12 1.25C6.07 1.25 1.25 6.07 1.25 12S6.07 22.75 12 22.75 22.75 17.93 22.75 12 17.93 1.25 12 1.25zm0 20c-5.1 0-9.25-4.15-9.25-9.25S6.9 2.75 12 2.75 21.25 6.9 21.25 12 17.1 21.25 12 21.25z',
               }),
               i.createElement('path', {
-                d: 'M12 22.75C6.072 22.75 1.25 17.928 1.25 12S6.072 1.25 12 1.25 22.75 6.072 22.75 12 17.928 22.75 12 22.75zm0-20C6.9 2.75 2.75 6.9 2.75 12S6.9 21.25 12 21.25s9.25-4.15 9.25-9.25S17.1 2.75 12 2.75z',
+                d: 'M13.37 16.19c0 .76-.61 1.37-1.37 1.37s-1.38-.61-1.38-1.37.62-1.38 1.38-1.38 1.37.62 1.37 1.38zm.35-7.66l-.93 4.39c-.07.38-.4.64-.79.64s-.71-.26-.8-.64l-.93-4.39c-.1-.52.03-1.06.36-1.47.67-.83 2.07-.83 2.74 0 .33.41.46.95.35 1.47z',
               }),
             ),
           )
@@ -6730,7 +6728,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             responsive_web_disconnect_third_party_sso_enabled: !0,
             responsive_web_dm_quick_access_with_close_enabled: !0,
             responsive_web_dm_server_side_search: !0,
-            responsive_web_do_no_launch_me_reverse_home_timeline_enabled: !0,
+            responsive_web_do_not_launch_me_reverse_home_timeline_enabled: !0,
             responsive_web_dockable_autoplay_policy_enabled: !0,
             responsive_web_edit_professional_profile_enabled: !0,
             responsive_web_element_size_impression_scribe_enabled: !0,
@@ -14253,11 +14251,12 @@ window.__SCRIPTS_LOADED__.i18n &&
           jt = n('5S/X'),
           Pt = n('wDe2'),
           Tt = (function () {
-            function e(t, n, r) {
+            function e(t, n, r, o) {
               x()(this, e),
                 (this.provider = t),
                 (this._dirty = !1),
                 (this._featureSwitches = n),
+                (this._statsReceiver = o),
                 (this._value = U.canUseDOM
                   ? Object(pt.d)({ cookieName: dt.n, featureSwitches: n })
                   : null == r
@@ -14347,7 +14346,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                         )
                       })
                       .catch(function (e) {
-                        jt.b && Object(at.a)(e)
+                        if (jt.b) {
+                          var n = t._statsReceiver
+                          n && 429 === e.status ? n.counter('rweb/ssr_rate_limited_request').inc() : Object(at.a)(e)
+                        }
                       })
                   },
                 },
@@ -15854,8 +15856,9 @@ window.__SCRIPTS_LOADED__.i18n &&
                       t = e.detailColumn,
                       n = e.perColumnScroll,
                       r = e.rootColumn,
-                      o = [bo.containerTwoColumn, bo.textSelectEnabled, n && Gn.a.absoluteFill],
-                      i = un.createElement(
+                      o = e.withWideRoot,
+                      i = [bo.containerTwoColumn, bo.textSelectEnabled, n && Gn.a.absoluteFill],
+                      a = un.createElement(
                         un.Fragment,
                         null,
                         un.createElement(
@@ -15864,7 +15867,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                             accessibilityLabel: ho,
                             accessibilityLabelledBy: lo.c,
                             accessibilityRole: 'region',
-                            style: bo.root,
+                            style: [bo.root, !o && bo.narrow],
                           },
                           r,
                         ),
@@ -15874,14 +15877,14 @@ window.__SCRIPTS_LOADED__.i18n &&
                             accessibilityLabel: mo,
                             accessibilityLabelledBy: lo.a,
                             accessibilityRole: 'region',
-                            style: bo.detail,
+                            style: [bo.detail, o && bo.narrow],
                           },
                           t,
                         ),
                       )
                     return Object(Wn.a)()
-                      ? un.createElement(fn.a, { style: o }, i)
-                      : un.createElement(xr.a, { isLarge: !0, style: o }, i)
+                      ? un.createElement(fn.a, { style: i }, a)
+                      : un.createElement(xr.a, { isLarge: !0, style: i }, a)
                   },
                 },
                 {
@@ -15923,9 +15926,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 borderLeftWidth: e.borderWidths.small,
                 borderRightWidth: e.borderWidths.small,
                 borderStyle: 'solid',
-                flex: 1,
                 overflow: 'hidden',
-                width: Cn.a.columnWidths.secondary.normal,
               },
               detail: {
                 borderColor: e.colors.borderColor,
@@ -15933,6 +15934,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 borderRightWidth: e.borderWidths.small,
                 overflow: 'hidden',
               },
+              narrow: { flex: 1, width: Cn.a.columnWidths.secondary.normal },
             }
           }),
           yo = function (e) {
@@ -15944,14 +15946,16 @@ window.__SCRIPTS_LOADED__.i18n &&
               a = e.rootComponent,
               c = e.rootDetailContent,
               s = e.switchComponent,
-              u = o.isExact,
-              l = s || uo,
-              d = u ? un.createElement(c, { history: n, location: r, match: o }) : un.createElement(l, null, t)
+              u = e.withWideRoot,
+              l = o.isExact,
+              d = s || uo,
+              p = l ? un.createElement(c, { history: n, location: r, match: o }) : un.createElement(d, null, t)
             return un.createElement(vo, {
-              detailColumn: d,
+              detailColumn: p,
               perColumnScroll: i,
-              renderRootWhenNarrow: !!u,
+              renderRootWhenNarrow: !!l,
               rootColumn: un.createElement(a, { history: n, location: r, match: o }),
+              withWideRoot: u,
             })
           }
         yo.defaultProps = { perColumnScroll: !1 }
@@ -15988,12 +15992,16 @@ window.__SCRIPTS_LOADED__.i18n &&
             return un.createElement(no, null)
           },
           So = function (e) {
-            return un.createElement(bn.d, null, un.createElement(bn.b, { component: Po, path: '/i/articles' }))
+            return un.createElement(
+              bn.d,
+              null,
+              un.createElement(bn.b, { component: Po, path: ['/i/articles/'.concat(Pr.d), '/i/articles'] }),
+            )
           },
           Io = function () {
             return un.createElement(
               go,
-              { perColumnScroll: !0, rootComponent: So, rootDetailContent: To },
+              { perColumnScroll: !0, rootComponent: So, rootDetailContent: To, withWideRoot: !0 },
               un.createElement(bn.b, { component: jo, key: '/i/articles', path: '/i/articles/'.concat(Pr.d) }),
             )
           },
@@ -26897,9 +26905,6 @@ window.__SCRIPTS_LOADED__.i18n &&
             }
           })
       },
-      C8rX: function (e, t) {
-        e.exports = { queryId: 'CgwIVheDVfPSh7u1_IrX3Q', operationName: 'NotInterestedTopics', operationType: 'query' }
-      },
       CEs6: function (e, t, n) {
         'use strict'
         n.d(t, 'a', function () {
@@ -32224,9 +32229,6 @@ window.__SCRIPTS_LOADED__.i18n &&
           )
         }
         ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
-      },
-      GdVu: function (e, t) {
-        e.exports = { queryId: 'Q6vOMQuIS3YdtZhFbQk8lg', operationName: 'FollowedTopics', operationType: 'query' }
       },
       Gg1x: function (e, t) {
         e.exports = { queryId: 'NuuNKc33iH4tGCcMMpBhZA', operationName: 'ListSubscribe', operationType: 'mutation' }
@@ -38618,7 +38620,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               'g',
               null,
               i.createElement('path', {
-                d: 'M12 1.25C6.072 1.25 1.25 6.072 1.25 12S6.072 22.75 12 22.75 22.75 17.928 22.75 12 17.928 1.25 12 1.25zm.025 16.468c-.708 0-1.28-.574-1.28-1.28 0-.71.572-1.282 1.28-1.282.708 0 1.28.573 1.28 1.28.002.708-.57 1.282-1.28 1.282zM14.47 7.636l-1.815 6.098c-.063.212-.258.357-.48.357h-.298c-.222 0-.416-.145-.48-.356L9.583 7.636c-.045-.152-.016-.316.08-.442.093-.127.24-.2.4-.2h3.927c.157 0 .306.073.4.2.094.126.124.29.08.442z',
+                d: 'M12 1.25C6.07 1.25 1.25 6.07 1.25 12S6.07 22.75 12 22.75 22.75 17.93 22.75 12 17.93 1.25 12 1.25zm0 16.31c-.76 0-1.38-.61-1.38-1.37s.62-1.38 1.38-1.38 1.37.62 1.37 1.38-.61 1.37-1.37 1.37zm1.72-9.03l-.93 4.39c-.07.38-.4.64-.78.64-.39 0-.72-.26-.8-.64l-.93-4.39c-.11-.52.02-1.06.35-1.47.67-.83 2.07-.83 2.74 0 .33.41.46.95.35 1.47z',
               }),
             ),
           )
@@ -43154,7 +43156,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               'g',
               null,
               i.createElement('path', {
-                d: 'M23.897 20.87L12.647 1.62c-.27-.458-1.025-.458-1.295 0L.102 20.87c-.136.233-.137.52-.003.753.133.233.38.377.65.377h22.5c.27 0 .517-.144.65-.377.134-.232.133-.52-.003-.752zm-11.872-1.308c-.708 0-1.28-.574-1.28-1.28 0-.71.572-1.282 1.28-1.282.708 0 1.28.573 1.28 1.28.002.708-.57 1.282-1.28 1.282zM14.47 9.48l-1.815 6.098c-.063.212-.258.357-.48.357h-.298c-.222 0-.416-.146-.48-.357L9.583 9.48c-.045-.15-.016-.315.08-.44.093-.128.24-.202.4-.202h3.927c.157 0 .306.074.4.2.094.127.124.29.08.442z',
+                d: 'M23.098 17.97l-8.62-14.93c-.54-.94-1.51-1.5-2.6-1.5h-.02c-1.09 0-2.06.58-2.6 1.53L.888 18c-.53.94-.52 2.06.03 2.99.54.92 1.49 1.47 2.55 1.47h17.07c1.06 0 2.02-.55 2.56-1.48.54-.94.54-2.07 0-3.01zm-11.1.92c-.76 0-1.38-.62-1.38-1.38s.62-1.37 1.38-1.37 1.37.61 1.37 1.37-.61 1.38-1.37 1.38zm1.72-9.03l-.93 4.39c-.07.38-.4.64-.79.64s-.71-.26-.8-.64l-.93-4.39c-.1-.52.03-1.06.36-1.47.67-.83 2.07-.83 2.74 0 .33.41.46.95.35 1.47z',
               }),
             ),
           )
@@ -68440,7 +68442,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       gFSH: function (e, t, n) {
         'use strict'
         n.d(t, 'a', function () {
-          return fd
+          return sd
         })
         var r = n('VrFO'),
           o = n.n(r),
@@ -71432,36 +71434,32 @@ window.__SCRIPTS_LOADED__.i18n &&
               su(t),
             )
           },
-          lu = n('GdVu'),
+          lu = n('44iQ'),
           du = n.n(lu),
-          pu = n('44iQ'),
+          pu = n('dFJg'),
           fu = n.n(pu),
-          hu = n('dFJg'),
+          hu = n('O9MC'),
           mu = n.n(hu),
-          vu = n('O9MC'),
+          vu = n('yN8W'),
           bu = n.n(vu),
-          yu = n('C8rX'),
-          gu = n.n(yu),
-          _u = n('yN8W'),
-          Ou = n.n(_u),
-          wu = n('d3TH'),
-          Eu = n('a5E+'),
+          yu = n('d3TH'),
+          gu = n('a5E+'),
+          _u = n.n(gu),
+          Ou = n('AseN'),
+          wu = n.n(Ou),
+          Eu = n('vLWf'),
           ju = n.n(Eu),
-          Pu = n('AseN'),
+          Pu = n('JMnv'),
           Tu = n.n(Pu),
-          Su = n('vLWf'),
+          Su = n('hcTZ'),
           Iu = n.n(Su),
-          Cu = n('JMnv'),
+          Cu = n('GyQr'),
           ku = n.n(Cu),
-          Ru = n('hcTZ'),
+          Ru = n('ceqv'),
           xu = n.n(Ru),
-          Du = n('GyQr'),
-          Au = n.n(Du),
-          Lu = n('ceqv'),
-          Mu = n.n(Lu),
-          Nu = n('C0/a'),
-          Fu = n.n(Nu)
-        function Bu(e, t) {
+          Du = n('C0/a'),
+          Au = n.n(Du)
+        function Lu(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -71473,49 +71471,36 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function Uu(e) {
+        function Mu(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? Bu(Object(n), !0).forEach(function (t) {
+              ? Lu(Object(n), !0).forEach(function (t) {
                   a()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : Bu(Object(n)).forEach(function (t) {
+              : Lu(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
-        var Hu = function (e, t) {
+        var Nu = function (e, t) {
             var n,
               r = null == t || null === (n = t.topic) || void 0 === n ? void 0 : n.id
             return r || Object(T.a)('GQL Topic: Failed to set not_interested'), !r && Object(_e.c)(e)
           },
-          Wu = function (e, t) {
+          Fu = function (e, t) {
             var n,
               r = null == t || null === (n = t.topic) || void 0 === n ? void 0 : n.id
             return r || Object(T.a)('GQL Topic: Failed to undo not_interested'), !r && Object(_e.c)(e)
           },
-          zu = function (e, t) {
-            var n,
-              r,
-              o =
-                null == t ||
-                null === (n = t.viewer) ||
-                void 0 === n ||
-                null === (r = n.not_interested_topics_timeline) ||
-                void 0 === r
-                  ? void 0
-                  : r.timeline
-            return o || Object(T.a)('GQL Topic: Failed to query for Not Interested timeline'), !o && Object(_e.c)(e)
-          },
-          Vu = function (e, t) {
+          Bu = function (e, t) {
             var n = null == t ? void 0 : t.topic
             return n || Object(T.a)('GQL Topic: Failed to fetch Topic'), !n && Object(_e.c)(e)
           },
-          Gu = function (e, t) {
+          Uu = function (e, t) {
             var n,
               r,
               o =
@@ -71531,7 +71516,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 ((null == o ? void 0 : o.initialTimeline) && (null == o ? void 0 : o.initialTimeline.timeline.timeline))
             return i || Object(T.a)('GQL Topic: Failed to query for Topics Management page'), !i && Object(_e.c)(e)
           },
-          Ku = function (e, t) {
+          Hu = function (e, t) {
             var n,
               r,
               o =
@@ -71547,7 +71532,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 ((null == o ? void 0 : o.initialTimeline) && (null == o ? void 0 : o.initialTimeline.timeline.timeline))
             return i || Object(T.a)('GQL Topic: Failed to query for Topics Picker page'), !i && Object(_e.c)(e)
           },
-          qu = function (e, t) {
+          Wu = function (e, t) {
             var n,
               r,
               o =
@@ -71563,7 +71548,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 ((null == o ? void 0 : o.initialTimeline) && (null == o ? void 0 : o.initialTimeline.timeline.timeline))
             return i || Object(T.a)('GQL Topic: Failed to query for Topics Picker page'), !i && Object(_e.c)(e)
           },
-          Yu = function (e, t) {
+          zu = function (e, t) {
             var n,
               r,
               o =
@@ -71579,7 +71564,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 ((null == o ? void 0 : o.initialTimeline) && (null == o ? void 0 : o.initialTimeline.timeline.timeline))
             return i || Object(T.a)('GQL Topic: Failed to query for Topics Landing page'), !i && Object(_e.c)(e)
           },
-          Qu = function (e, t) {
+          Vu = function (e, t) {
             var n,
               r,
               o =
@@ -71589,17 +71574,17 @@ window.__SCRIPTS_LOADED__.i18n &&
                     : r.__typename) && t.user.result.viewing_other_users_topics_page
             return o || Object(T.a)('GQL Topic: Failed to query for other users Topics Page'), !o && Object(_e.c)(e)
           },
-          Xu = function (e, t) {
+          Gu = function (e, t) {
             var n,
               r = null == t || null === (n = t.topic) || void 0 === n ? void 0 : n.id
             return r || Object(T.a)('GQL Topic: Failed to follow'), !r && Object(_e.c)(e)
           },
-          Zu = function (e, t) {
+          Ku = function (e, t) {
             var n,
               r = null == t || null === (n = t.topic) || void 0 === n ? void 0 : n.id
             return r || Object(T.a)('GQL Topic: Failed to unfollow'), !r && Object(_e.c)(e)
           },
-          Ju = function (e, t) {
+          qu = function (e, t) {
             var n,
               r = t && t.user && t.user.result && 'User' === t.user.result.__typename && t.user.result.timeline
             r ||
@@ -71608,7 +71593,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               })
             return !r && Object(_e.c)(e)
           },
-          $u = function (e, t) {
+          Yu = function (e, t) {
             var n,
               r,
               o =
@@ -71621,10 +71606,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                   : r.timeline
             return o || Object(T.a)('GQL Topic: Failed to query for Topics timeline'), !o && Object(_e.c)(e)
           },
-          el = n('a4I6'),
-          tl = n.n(el),
-          nl = n('mJtw'),
-          rl = function (e) {
+          Qu = n('a4I6'),
+          Xu = n.n(Qu),
+          Zu = n('mJtw'),
+          Ju = function (e) {
             switch (e) {
               case 'Like':
               case 'Haha':
@@ -71633,14 +71618,14 @@ window.__SCRIPTS_LOADED__.i18n &&
               case 'Cheer':
                 return e
               default:
-                return nl.a.Like
+                return Zu.a.Like
             }
           },
-          ol = n('ZOA/'),
-          il = n.n(ol),
-          al = n('uHpp'),
-          cl = n.n(al)
-        function sl(e, t) {
+          $u = n('ZOA/'),
+          el = n.n($u),
+          tl = n('uHpp'),
+          nl = n.n(tl)
+        function rl(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -71652,28 +71637,28 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function ul(e) {
+        function ol(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? sl(Object(n), !0).forEach(function (t) {
+              ? rl(Object(n), !0).forEach(function (t) {
                   a()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : sl(Object(n)).forEach(function (t) {
+              : rl(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
-        var ll = function (e, t) {
+        var il = function (e, t) {
             return {
               fetchReactedBy: function (n) {
                 var r = n.tweetId
                 return e
                   .graphQL(
-                    cl.a,
+                    nl.a,
                     { tweetId: r, withSuperFollowsUserFields: t.isTrue('super_follow_user_api_enabled') },
                     function (e, t) {
                       var n, r
@@ -71705,7 +71690,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                                       var t = Object(we.b)(e.user_results.result, cr.a)
                                       return (
                                         (i[t.result] = t.entities.users[t.result]),
-                                        { user: t.result, reactionType: rl(e.reaction_type) }
+                                        { user: t.result, reactionType: Ju(e.reaction_type) }
                                       )
                                     }
                                   })
@@ -71714,7 +71699,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                             null === (o = n.reaction_timeline) || void 0 === o
                               ? void 0
                               : o.reactionTypeMap.map(function (e) {
-                                  return { count: e.count, type: rl(e.type) }
+                                  return { count: e.count, type: Ju(e.type) }
                                 }),
                           userEntities: i,
                         }
@@ -71728,8 +71713,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                   i = n.tweetId
                 return e
                   .graphQL(
-                    tl.a,
-                    ul(
+                    Xu.a,
+                    ol(
                       { tweetId: i, count: r, cursor: o, withTweetQuoteCount: !1, includePromotedContent: !0 },
                       Object(P.a)(t),
                     ),
@@ -71751,8 +71736,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                   i = n.tweetId
                 return e
                   .graphQL(
-                    il.a,
-                    ul(
+                    el.a,
+                    ol(
                       { tweetId: i, count: r, cursor: o, withTweetQuoteCount: !1, includePromotedContent: !0 },
                       Object(P.a)(t),
                     ),
@@ -71770,9 +71755,9 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             }
           },
-          dl = n('pYwk'),
-          pl = n.n(dl)
-        function fl(e, t) {
+          al = n('pYwk'),
+          cl = n.n(al)
+        function sl(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -71784,22 +71769,22 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function hl(e) {
+        function ul(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? fl(Object(n), !0).forEach(function (t) {
+              ? sl(Object(n), !0).forEach(function (t) {
                   a()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : fl(Object(n)).forEach(function (t) {
+              : sl(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
-        function ml(e, t) {
+        function ll(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -71811,47 +71796,47 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function vl(e) {
+        function dl(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? ml(Object(n), !0).forEach(function (t) {
+              ? ll(Object(n), !0).forEach(function (t) {
                   a()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : ml(Object(n)).forEach(function (t) {
+              : ll(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
-        var bl = n('0KEI'),
-          yl = n('3B6f'),
-          gl = n.n(yl),
-          _l = n('Qo8z'),
-          Ol = n.n(_l),
-          wl = n('c6or'),
-          El = n.n(wl),
-          jl = n('fDBV'),
-          Pl = n.n(jl),
-          Tl = n('uVFi'),
-          Sl = n.n(Tl),
-          Il = n('Nuln'),
-          Cl = n.n(Il),
-          kl = n('+xaK'),
-          Rl = n.n(kl),
-          xl = n('xc7e'),
-          Dl = n.n(xl),
-          Al = n('tufc'),
-          Ll = n.n(Al),
-          Ml = n('jat/'),
-          Nl = n('Qyxo'),
-          Fl = Object(Yn.a)(['affiliates_highlighted_label', 'is_profile_translatable']),
-          Bl = function (e) {
-            return Array.isArray(e.path) && e.path.length > 0 && Fl.has(Object(Ml.a)(e.path))
+        var pl = n('0KEI'),
+          fl = n('3B6f'),
+          hl = n.n(fl),
+          ml = n('Qo8z'),
+          vl = n.n(ml),
+          bl = n('c6or'),
+          yl = n.n(bl),
+          gl = n('fDBV'),
+          _l = n.n(gl),
+          Ol = n('uVFi'),
+          wl = n.n(Ol),
+          El = n('Nuln'),
+          jl = n.n(El),
+          Pl = n('+xaK'),
+          Tl = n.n(Pl),
+          Sl = n('xc7e'),
+          Il = n.n(Sl),
+          Cl = n('tufc'),
+          kl = n.n(Cl),
+          Rl = n('jat/'),
+          xl = n('Qyxo'),
+          Dl = Object(Yn.a)(['affiliates_highlighted_label', 'is_profile_translatable']),
+          Al = function (e) {
+            return Array.isArray(e.path) && e.path.length > 0 && Dl.has(Object(Rl.a)(e.path))
           },
-          Ul = function (e) {
+          Ll = function (e) {
             var t, n, r, o
             if (
               'User' ===
@@ -71876,15 +71861,15 @@ window.__SCRIPTS_LOADED__.i18n &&
             var s = new g.a('userByRestId', 401, {}, [{ code: gt.a.GenericUserNotFound }])
             return Promise.reject(s)
           },
-          Hl = function (e, t) {
+          Ml = function (e, t) {
             var n = t && t.viewer && t.viewer.user && t.viewer.user.legacy,
-              r = Array.isArray(e) && Object(bl.e)(e)
-            return (!n || !r) && Array.isArray(e) && !Object(qn.a)(e, Bl)
+              r = Array.isArray(e) && Object(pl.e)(e)
+            return (!n || !r) && Array.isArray(e) && !Object(qn.a)(e, Al)
           },
-          Wl = function (e, t) {
-            return !(t && t.viewer) && Array.isArray(e) && !Object(qn.a)(e, Bl)
+          Nl = function (e, t) {
+            return !(t && t.viewer) && Array.isArray(e) && !Object(qn.a)(e, Al)
           },
-          zl = function (e, t) {
+          Fl = function (e, t) {
             var n, r
             return (
               !(
@@ -71894,13 +71879,13 @@ window.__SCRIPTS_LOADED__.i18n &&
                     : r.__typename) && t.user.result.legacy
               ) &&
               Array.isArray(e) &&
-              !Object(qn.a)(e, Bl)
+              !Object(qn.a)(e, Al)
             )
           },
-          Vl = function (e, t) {
-            return !(t && t.user && t.user.legacy) && Array.isArray(e) && !Object(qn.a)(e, Bl)
+          Bl = function (e, t) {
+            return !(t && t.user && t.user.legacy) && Array.isArray(e) && !Object(qn.a)(e, Al)
           },
-          Gl = function (e, t) {
+          Ul = function (e, t) {
             return (
               !(
                 (null == t
@@ -71911,10 +71896,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                     })) || []
               ).length &&
               Array.isArray(e) &&
-              !Object(qn.a)(e, Bl)
+              !Object(qn.a)(e, Al)
             )
           },
-          Kl = function (e, t) {
+          Hl = function (e, t) {
             return (
               !(
                 (null == t
@@ -71924,10 +71909,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                     })) || []
               ).length &&
               Array.isArray(e) &&
-              !Object(qn.a)(e, Bl)
+              !Object(qn.a)(e, Al)
             )
           },
-          ql = function (e, t) {
+          Wl = function (e, t) {
             var n, r
             return (
               !(
@@ -71937,12 +71922,12 @@ window.__SCRIPTS_LOADED__.i18n &&
               ) && Object(_e.c)(e)
             )
           },
-          Yl = n('3XMw'),
-          Ql = n.n(Yl),
-          Xl = Ql.a.d5568440,
-          Zl = Ql.a.d0511fe5,
-          Jl = Ql.a.cd24fe6f,
-          $l = new we.c.Entity(
+          zl = n('3XMw'),
+          Vl = n.n(zl),
+          Gl = Vl.a.d5568440,
+          Kl = Vl.a.d0511fe5,
+          ql = Vl.a.cd24fe6f,
+          Yl = new we.c.Entity(
             'emailValidity',
             {},
             {
@@ -71951,25 +71936,25 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             },
           ),
-          ed = new we.c.Entity(
+          Ql = new we.c.Entity(
             'passwordValidity',
             {},
             {
               processStrategy: function (e) {
-                return { valid: e.pass, errorMessage: e.pass ? '' : Xl }
+                return { valid: e.pass, errorMessage: e.pass ? '' : Gl }
               },
             },
           ),
-          td = new we.c.Entity(
+          Xl = new we.c.Entity(
             'phoneNumberValidity',
             {},
             {
               processStrategy: function (e) {
-                return { valid: e.valid && e.available, errorMessage: e.valid ? (e.available ? '' : Zl) : Jl }
+                return { valid: e.valid && e.available, errorMessage: e.valid ? (e.available ? '' : Kl) : ql }
               },
             },
           )
-        function nd(e, t) {
+        function Zl(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -71981,47 +71966,47 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function rd(e) {
+        function Jl(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? nd(Object(n), !0).forEach(function (t) {
+              ? Zl(Object(n), !0).forEach(function (t) {
                   a()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : nd(Object(n)).forEach(function (t) {
+              : Zl(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
-        var od = function (e, t) {
+        var $l = function (e, t) {
             return {
               fetchPasswordStrength: function (t, n) {
                 return e.post('account/password_strength', t, n).then(function (e) {
                   return (function (e) {
-                    return Object(we.b)(e, ed)
-                  })(rd(rd({}, e), {}, { id: t.password }))
+                    return Object(we.b)(e, Ql)
+                  })(Jl(Jl({}, e), {}, { id: t.password }))
                 })
               },
               isPhoneNumberAvailable: function (t, n) {
                 return e.get('users/phone_number_available', t, n).then(function (e) {
                   return (function (e) {
-                    return Object(we.b)(e, td)
-                  })(rd(rd({}, e), {}, { id: t.raw_phone_number }))
+                    return Object(we.b)(e, Xl)
+                  })(Jl(Jl({}, e), {}, { id: t.raw_phone_number }))
                 })
               },
               isEmailAvailable: function (t, n) {
                 return e.getI('users/email_available', t, n).then(function (e) {
                   return (function (e) {
-                    return Object(we.b)(e, $l)
-                  })(rd(rd({}, e), {}, { id: t.email }))
+                    return Object(we.b)(e, Yl)
+                  })(Jl(Jl({}, e), {}, { id: t.email }))
                 })
               },
             }
           },
-          id = Object(Yn.a)([
+          ed = Object(Yn.a)([
             'US',
             'IE',
             'GB',
@@ -72240,8 +72225,8 @@ window.__SCRIPTS_LOADED__.i18n &&
             'ZM',
             'ZW',
           ]),
-          ad = n('06wh')
-        function cd(e, t) {
+          td = n('06wh')
+        function nd(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -72253,45 +72238,45 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function sd(e) {
+        function rd(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? cd(Object(n), !0).forEach(function (t) {
+              ? nd(Object(n), !0).forEach(function (t) {
                   a()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : cd(Object(n)).forEach(function (t) {
+              : nd(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
-        var ud = '9',
-          ld = function (e) {
+        var od = '9',
+          id = function (e) {
             return function (t, n) {
               return {
                 createLocalId: function (n) {
-                  return t.postUnversioned('/'.concat(ud, '/measurement/dcm_local_id'), n, {}, e).then(function (e) {
+                  return t.postUnversioned('/'.concat(od, '/measurement/dcm_local_id'), n, {}, e).then(function (e) {
                     return e.data
                   })
                 },
                 getAccounts: function () {
-                  return t.getUnversioned('/'.concat(ud, '/accounts'), {}, {}, e).then(function (e) {
+                  return t.getUnversioned('/'.concat(od, '/accounts'), {}, {}, e).then(function (e) {
                     return e.data
                   })
                 },
                 getPromoteableUsers: function (n) {
                   return t
-                    .getUnversioned('/'.concat(ud, '/accounts/').concat(n, '/promotable_users'), {}, {}, e)
+                    .getUnversioned('/'.concat(od, '/accounts/').concat(n, '/promotable_users'), {}, {}, e)
                     .then(function (e) {
                       return e.data
                     })
                 },
                 getFundingInstruments: function (n) {
                   return t
-                    .getUnversioned('/'.concat(ud, '/accounts/').concat(n, '/funding_instruments'), {}, {}, e)
+                    .getUnversioned('/'.concat(od, '/accounts/').concat(n, '/funding_instruments'), {}, {}, e)
                     .then(function (e) {
                       return e.data
                     })
@@ -72302,8 +72287,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                     i = n.locationType
                   return t
                     .getUnversioned(
-                      '/'.concat(ud, '/targeting_criteria/locations'),
-                      { location_type: i, lang: Object(ad.b)(o), country_code: r },
+                      '/'.concat(od, '/targeting_criteria/locations'),
+                      { location_type: i, lang: Object(td.b)(o), country_code: r },
                       {},
                       e,
                     )
@@ -72312,7 +72297,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     })
                     .then(function (e) {
                       return e.filter(function (e) {
-                        return id.has(e.country_code)
+                        return ed.has(e.country_code)
                       })
                     })
                 },
@@ -72323,8 +72308,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                     a = n.query
                   return t
                     .getUnversioned(
-                      '/'.concat(ud, '/targeting_criteria/locations'),
-                      { q: a, location_type: i, lang: Object(ad.b)(o), country_code: r },
+                      '/'.concat(od, '/targeting_criteria/locations'),
+                      { q: a, location_type: i, lang: Object(td.b)(o), country_code: r },
                       {},
                       e,
                     )
@@ -72334,12 +72319,12 @@ window.__SCRIPTS_LOADED__.i18n &&
                     .then(function (e) {
                       var t = y()(e, 1)[0]
                       return [
-                        sd(
-                          sd({}, t),
+                        rd(
+                          rd({}, t),
                           {},
                           {
                             locations: t.locations.filter(function (e) {
-                              return id.has(e.country_code)
+                              return ed.has(e.country_code)
                             }),
                           },
                         ),
@@ -72349,9 +72334,9 @@ window.__SCRIPTS_LOADED__.i18n &&
               }
             }
           },
-          dd = ld('https://ads-api.twitter.com'),
-          pd = ld('https://aa.twitter.com'),
-          fd = function e(t, n) {
+          ad = id('https://ads-api.twitter.com'),
+          cd = id('https://aa.twitter.com'),
+          sd = function e(t, n) {
             o()(this, e),
               (this.apiClient = t),
               (this.Account = (function (e, t) {
@@ -72434,8 +72419,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                   },
                 }
               })(t)),
-              (this.Ads = dd(t, n)),
-              (this.AaProxy = pd(t, n)),
+              (this.Ads = ad(t, n)),
+              (this.AaProxy = cd(t, n)),
               (this.AdFreeArticleDomains = (function (e, t) {
                 return {
                   fetchAdFreeArticleDomainsGraphQL: function () {
@@ -75241,7 +75226,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
                       r = t.data_lookup_id,
                       o = t.topicId
-                    return e.getURT('topics/'.concat(o, '/timeline'), Uu(Uu({}, iu), {}, { data_lookup_id: r }), n)
+                    return e.getURT('topics/'.concat(o, '/timeline'), Mu(Mu({}, iu), {}, { data_lookup_id: r }), n)
                   },
                   fetchTopicTimelineGraphQl: function (n, r) {
                     var o = n.cursor,
@@ -75249,13 +75234,13 @@ window.__SCRIPTS_LOADED__.i18n &&
                       a = n.topicId
                     return e
                       .graphQL(
-                        ku.a,
-                        Uu(
-                          Uu({ rest_id: a, cursor: o, context: JSON.stringify({ data_lookup_id: i }) }, Object(P.a)(t)),
+                        Tu.a,
+                        Mu(
+                          Mu({ rest_id: a, cursor: o, context: JSON.stringify({ data_lookup_id: i }) }, Object(P.a)(t)),
                           {},
                           { withUserResults: !1 },
                         ),
-                        $u,
+                        Yu,
                       )
                       .then(function (e) {
                         var t, n
@@ -75276,13 +75261,13 @@ window.__SCRIPTS_LOADED__.i18n &&
                       a = n.topicId
                     return e
                       .graphQL(
-                        mu.a,
-                        Uu(
-                          Uu({ rest_id: a, cursor: o, context: JSON.stringify({ data_lookup_id: i }) }, Object(P.a)(t)),
+                        fu.a,
+                        Mu(
+                          Mu({ rest_id: a, cursor: o, context: JSON.stringify({ data_lookup_id: i }) }, Object(P.a)(t)),
                           {},
                           { withUserResults: !1 },
                         ),
-                        Yu,
+                        zu,
                       )
                       .then(function (e) {
                         var t,
@@ -75292,33 +75277,27 @@ window.__SCRIPTS_LOADED__.i18n &&
                   },
                   fetchTopicsManagementPage: function (n) {
                     var r = n.cursor
-                    return e.graphQL(ju.a, Uu({ cursor: r }, Object(P.a)(t)), Gu).then(function (e) {
+                    return e.graphQL(_u.a, Mu({ cursor: r }, Object(P.a)(t)), Uu).then(function (e) {
                       var t,
                         n = null == e || null === (t = e.viewer) || void 0 === t ? void 0 : t.topics_management_page
                       return null != n && n.body ? n : Oe.a
                     })
                   },
-                  fetchUserTopics: function (n, r) {
-                    var o = n.count,
-                      i = n.cursor,
-                      a = n.userId
-                    return e.graphQL(du.a, Uu({ userId: a, count: o, cursor: i }, Object(P.a)(t)), Ju).then(Zn)
-                  },
                   fetchOneTopic: function (t) {
                     var n = t.topicId
-                    return e.graphQL(Ou.a, { topicId: n }, Vu).then(function (e) {
-                      return Object(we.b)(e.topic, wu.a)
+                    return e.graphQL(bu.a, { topicId: n }, Bu).then(function (e) {
+                      return Object(we.b)(e.topic, yu.a)
                     })
                   },
                   fetchTopicsPickerPage: function (n) {
                     var r = n.topicId
                     return r && 'home' !== r
-                      ? e.graphQL(Tu.a, Uu({ topicId: r }, Object(P.a)(t)), qu).then(function (e) {
+                      ? e.graphQL(wu.a, Mu({ topicId: r }, Object(P.a)(t)), Wu).then(function (e) {
                           var t,
                             n = null == e || null === (t = e.topic) || void 0 === t ? void 0 : t.topics_picker_page
                           return null != n && n.body ? n : Oe.a
                         })
-                      : e.graphQL(Iu.a, Uu({}, Object(P.a)(t)), Ku).then(function (e) {
+                      : e.graphQL(ju.a, Mu({}, Object(P.a)(t)), Hu).then(function (e) {
                           var t,
                             n = null == e || null === (t = e.viewer) || void 0 === t ? void 0 : t.topics_picker_page
                           return null != n && n.body ? n : Oe.a
@@ -75329,7 +75308,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       o = n.cursor,
                       i = n.userId
                     return e
-                      .graphQL(Fu.a, Uu({ userId: i, cursor: o, context: r }, Object(P.a)(t)), Qu)
+                      .graphQL(Au.a, Mu({ userId: i, cursor: o, context: r }, Object(P.a)(t)), Vu)
                       .then(function (e) {
                         var t, n, r
                         return 'User' ===
@@ -75346,40 +75325,27 @@ window.__SCRIPTS_LOADED__.i18n &&
                   },
                   follow: function (t) {
                     var n = t.topicId
-                    return e.graphQL(fu.a, { topicId: n }, Xu)
+                    return e.graphQL(du.a, { topicId: n }, Gu)
                   },
                   unfollow: function (t) {
                     var n = t.topicId
-                    return e.graphQL(Mu.a, { topicId: n }, Zu)
-                  },
-                  fetchNotInterestedTopics: function (n, r) {
-                    return e.graphQL(gu.a, Uu({}, Object(P.a)(t)), zu).then(function (e) {
-                      var t, n
-                      return (
-                        (null === (t = e.viewer) ||
-                        void 0 === t ||
-                        null === (n = t.not_interested_topics_timeline) ||
-                        void 0 === n
-                          ? void 0
-                          : n.timeline) || Oe.b
-                      )
-                    })
+                    return e.graphQL(xu.a, { topicId: n }, Ku)
                   },
                   notInterested: function (t) {
                     var n = t.topicId
-                    return e.graphQL(bu.a, { topicId: n }, Hu)
+                    return e.graphQL(mu.a, { topicId: n }, Nu)
                   },
                   undoNotInterested: function (t) {
                     var n = t.topicId
-                    return e.graphQL(Au.a, { topicId: n }, Wu)
+                    return e.graphQL(ku.a, { topicId: n }, Fu)
                   },
                   fetchTopicsToFollowSidebar: function (n) {
                     var r = n.userId
-                    return e.graphQL(xu.a, Uu({ userId: r }, Object(P.a)(t)), Ju).then(Zn)
+                    return e.graphQL(Iu.a, Mu({ userId: r }, Object(P.a)(t)), qu).then(Zn)
                   },
                 }
               })(t, n)),
-              (this.TweetActivity = ll(t, n)),
+              (this.TweetActivity = il(t, n)),
               (this.Tweets = Object(St.b)(t, n)),
               (this.Typeahead = (function (e, t) {
                 return {
@@ -75388,7 +75354,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     return e.get('search/typeahead', t, n)
                   },
                   fetchCommunityInviteUsers: function (t) {
-                    return e.graphQL(pl.a, { communityId: t.communityId, prefix: t.prefix }).then(function (e) {
+                    return e.graphQL(cl.a, { communityId: t.communityId, prefix: t.prefix }).then(function (e) {
                       var t = e.community.user_relationship_typeahead,
                         n = t
                           .map(function (e) {
@@ -75420,7 +75386,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   },
                   prefetchUsers: function (t) {
                     var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-                      r = hl({ prefetch: !0, media_tagging_in_prefetch: !0, result_type: 'users' }, t)
+                      r = ul({ prefetch: !0, media_tagging_in_prefetch: !0, result_type: 'users' }, t)
                     return e.get('search/typeahead', r, n)
                   },
                 }
@@ -75431,10 +75397,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                     return e.get('account/user_twitter_data', t, n, '')
                   },
                   createDataDownload: function (t, n) {
-                    return e.post('account/user_twitter_data', t, {}, vl({ 'content-type': 'application/json' }, n), '')
+                    return e.post('account/user_twitter_data', t, {}, dl({ 'content-type': 'application/json' }, n), '')
                   },
                   markDataAsDownloaded: function (t, n) {
-                    return e.put('account/user_twitter_data', t, vl({ 'content-type': 'application/json' }, n), '')
+                    return e.put('account/user_twitter_data', t, dl({ 'content-type': 'application/json' }, n), '')
                   },
                 }
               })(t)),
@@ -75443,12 +75409,12 @@ window.__SCRIPTS_LOADED__.i18n &&
                   fetchViewer: function () {
                     return e
                       .graphQL(
-                        Dl.a,
+                        Il.a,
                         {
                           withUserResults: t.isTrue('responsive_web_graphql_user_results'),
                           withSuperFollowsUserFields: t.isTrue('super_follow_user_api_enabled'),
                         },
-                        Hl,
+                        Ml,
                       )
                       .then(function (e) {
                         var t, n
@@ -75483,7 +75449,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       })
                   },
                   fetchViewerSuperFollowsFields: function () {
-                    return e.graphQL(Ll.a, {}, Wl).then(function (e) {
+                    return e.graphQL(kl.a, {}, Nl).then(function (e) {
                       var t = e.viewer
                       return {
                         isActiveCreator: !(null == t || !t.is_active_creator),
@@ -75495,25 +75461,25 @@ window.__SCRIPTS_LOADED__.i18n &&
                     var r = n.screen_name
                     return e
                       .graphQL(
-                        Pl.a,
+                        _l.a,
                         {
                           screen_name: r,
                           withSafetyModeUserFields: t.isTrue('rito_safety_mode_blocked_profile_enabled'),
                           withSuperFollowsUserFields: t.isTrue('super_follow_user_api_enabled'),
                         },
-                        zl,
+                        Fl,
                       )
                       .then(function (e) {
-                        return Ul(e)
+                        return Ll(e)
                       })
                   },
                   fetchOneUserByScreenNameWithoutResults: function (n) {
                     var r = n.screen_name
                     return e
                       .graphQL(
-                        Sl.a,
+                        wl.a,
                         { screen_name: r, withSuperFollowsUserFields: t.isTrue('super_follow_user_api_enabled') },
-                        Vl,
+                        Bl,
                       )
                       .then(function (e) {
                         return e.user && Object(we.b)(e.user, cr.a)
@@ -75523,25 +75489,25 @@ window.__SCRIPTS_LOADED__.i18n &&
                     var r = n.user_id
                     return e
                       .graphQL(
-                        Ol.a,
+                        vl.a,
                         {
                           userId: r,
                           withSafetyModeUserFields: t.isTrue('rito_safety_mode_blocked_profile_enabled'),
                           withSuperFollowsUserFields: t.isTrue('super_follow_user_api_enabled'),
                         },
-                        zl,
+                        Fl,
                       )
                       .then(function (e) {
-                        return Ul(e)
+                        return Ll(e)
                       })
                   },
                   fetchOneUserWithoutResults: function (n) {
                     var r = n.user_id
                     return e
                       .graphQL(
-                        El.a,
+                        yl.a,
                         { userId: r, withSuperFollowsUserFields: t.isTrue('super_follow_user_api_enabled') },
-                        Vl,
+                        Bl,
                       )
                       .then(function (e) {
                         return e.user && Object(we.b)(e.user, cr.a)
@@ -75551,15 +75517,15 @@ window.__SCRIPTS_LOADED__.i18n &&
                     var r = n.user_id
                     return e
                       .graphQL(
-                        Cl.a,
+                        jl.a,
                         {
                           userIds: r.split(','),
                           withSuperFollowsUserFields: t.isTrue('super_follow_user_api_enabled'),
                         },
-                        Gl,
+                        Ul,
                       )
                       .then(function (e) {
-                        var t = Object(Nl.a)(e.users.filter(Boolean), function (e) {
+                        var t = Object(xl.a)(e.users.filter(Boolean), function (e) {
                           return e.result && 'User' === e.result.__typename && e.result.legacy ? e.result : void 0
                         })
                         return Object(we.b)(t, [cr.a])
@@ -75569,12 +75535,12 @@ window.__SCRIPTS_LOADED__.i18n &&
                     var r = n.user_id
                     return e
                       .graphQL(
-                        Rl.a,
+                        Tl.a,
                         {
                           userIds: r.split(','),
                           withSuperFollowsUserFields: t.isTrue('super_follow_user_api_enabled'),
                         },
-                        Kl,
+                        Hl,
                       )
                       .then(function (e) {
                         var t = e.users.filter(function (e) {
@@ -75585,7 +75551,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   },
                   removeFollower: function (t) {
                     var n = t.target_user_id
-                    return e.graphQL(gl.a, { target_user_id: n }, ql)
+                    return e.graphQL(hl.a, { target_user_id: n }, Wl)
                   },
                 }
               })(t, n)),
@@ -75787,7 +75753,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   },
                 }
               })(t, n)),
-              (this.Validity = od(t))
+              (this.Validity = $l(t))
           }
       },
       gK2g: function (e, t, n) {
@@ -80881,11 +80847,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           return 'onMedia' === e || 'experimentalOnMediaDominantColorFilled' === e
         }
         function a(e) {
-          return (
-            (
-              r || ((r = new Map()).set('normalCompact', 'experimentalSmall'), r.set('normal', 'experimentalMedium'), r)
-            ).get(e) || e
-          )
+          return (r || ((r = new Map()).set('normal', 'experimentalMedium'), r)).get(e) || e
         }
         function c(e, t) {
           return t
@@ -82098,6 +82060,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 avatarURIForHashtagHighlight: void 0,
                 c9sEnabled: !1,
                 cardCarouselClickableNavArea: 'control',
+                edgeToEdgeEnabled: !1,
                 highlightedHashtag: void 0,
                 isDMDrawer: !1,
                 shouldUseSmallFontForHashtagHighlight: !1,
@@ -82654,7 +82617,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               b.createElement(
                 j.a,
                 { interactive: !1, onPress: o, style: R.root },
-                b.createElement(P.a, { onPress: o, size: 'normalCompact', type: 'onMedia' }, n),
+                b.createElement(P.a, { onPress: o, size: 'small', type: 'onMedia' }, n),
                 t ? b.createElement(T.a, { align: 'left' }, t) : null,
               ),
             )
@@ -92293,13 +92256,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   { style: [u.button, t] },
                   r.createElement(
                     i.a,
-                    {
-                      borderColor: 'transparent',
-                      link: n,
-                      onPress: f,
-                      size: 'normalCompact',
-                      style: u.spacingHorizontal,
-                    },
+                    { borderColor: 'transparent', link: n, onPress: f, size: 'small', style: u.spacingHorizontal },
                     a,
                   ),
                 )
@@ -96118,11 +96075,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               n
             )
           })(b.PureComponent)
-        v()(rn, 'defaultProps', {
-          buttonSize: 'normalCompact',
-          loginButtonType: 'secondary',
-          signupButtonType: 'primary',
-        })
+        v()(rn, 'defaultProps', { buttonSize: 'small', loginButtonType: 'secondary', signupButtonType: 'primary' })
         var on = Je.a.create(function (e) {
             return {
               root: { alignItems: 'center', alignSelf: 'stretch', flexDirection: 'row', flexGrow: 1 },
