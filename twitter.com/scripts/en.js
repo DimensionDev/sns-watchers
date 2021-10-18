@@ -1194,10 +1194,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'via @' + e.viaScreenName
           }),
           a('f70a36d0', 'Tweet all'),
-          a('df01d067', 'Want to review this before tweeting?'),
-          a('ge52d1de', 'We’re asking people to review replies with potentially harmful or offensive language.'),
-          a('h11e5910', 'Did we get this wrong?'),
-          a('bea869b3', 'Tweet'),
           a('a7478929', 'You are over the daily limit for sending Tweets.'),
           a('adf527d2', 'Something went wrong. Try sending your Tweet again in a minute.'),
           a('cc85b9f5', 'Your account is suspended and is not permitted to send Tweets.'),
@@ -1211,6 +1207,20 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c51ba396', 'Oops! A URL in your Tweet appears to link to a page that has spammy or unsafe content.'),
           a('ef2fa90b', 'The text of your Tweet exceeds the maximum allowed limit.'),
           a('f10f1cfb', 'The content of your Tweet is invalid.'),
+          a('cb7c0987', 'Why did you get this?'),
+          a(
+            'de3bcf27',
+            'We want to keep Twitter a place for meaningful conversations. So when we detect potentially harmful or offensive language in a reply — like insults, strong language, or hateful remarks — we might ask people if they want to review it before sending.',
+          ),
+          a(
+            'e710ce75',
+            'We’re working to better understand and predict when people might want to review their replies. Your feedback helps with this.',
+          ),
+          a('h11e5910', 'Did we get this wrong?'),
+          a('b7ec04f3', 'Yes'),
+          a('f3a7a80c', 'Want to review this before Tweeting?'),
+          a('ge52d1de', 'We’re asking people to review replies with potentially harmful or offensive language.'),
+          a('bea869b3', 'Tweet'),
           a('e25a0c3a', 'Promoted Tweet'),
           a('de128a2f', 'Turn on Tweet notifications'),
           a('aa6f3ca4', 'Turn off Tweet notifications'),
@@ -1231,6 +1241,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d6e2f9bd', 'Loading timeline'),
           a('b7fa0cfd', 'Top Articles'),
           a('e2462db4', 'Most shared in your network · Last 24 hours'),
+          a('e950f6ef', 'No articles have been shared in your network.'),
+          a('e7dcfb8f', 'more accounts'),
           a('gaa01f2c', 'Twitter Spaces'),
           a('fec3c1ef', 'Where live audio conversations happen'),
           a('ce447fcb', function (e) {
@@ -1407,7 +1419,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hf607a09', 'It is clearly satirical/joking'),
           a('j6ac7741', 'It expresses a personal opinion'),
           a('b1d82aae', 'Did you link to sources you believe most people would consider trustworthy?'),
-          a('b7ec04f3', 'Yes'),
           a('gfa725ae', 'Birdwatch values'),
           a('c3d89aca', 'Continue'),
           a('h7ad677b', 'A quick reminder of the Birdwatch values:'),
@@ -1655,6 +1666,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e9488b0d', 'Loading Moderators'),
           a('j43fea20', 'Loading Members'),
           a('dce5e1b3', 'Admin tools'),
+          a('c8c7f9fc', 'Review needed'),
+          a('c045c7b6', 'Reported Tweets'),
+          a('a87df2ee', 'Community management'),
           a('fd67f7c8', 'Edit Community name, purpose, and more'),
           a('h3e55b40', 'Community name'),
           a('d5f01115', 'Purpose'),
@@ -1691,7 +1705,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cd133485', 'Invite'),
           a('hb1e378e', 'Invited'),
           a('bcd6bb0d', 'Member'),
-          a('c045c7b6', 'Reported Tweets'),
           a('dffb0774', 'Nothing to review right now'),
           a('cbb2a93c', 'Moderators have taken care of all reported Tweets.'),
           a('f1d9930c', 'Hide'),
@@ -2305,18 +2318,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('aab67626', 'Your verification request is being reviewed'),
           a('d3c1e25e', 'No, it wasn’t a dream. Yes, you’re really verified.'),
-          a('g0bfb17a', 'Twitter Rules'),
-          a(
-            'affce770',
-            'We and our trusted third parties will use the information related to your account and any additional information that you provide to us in order to determine your authenticity and eligibility for verification.',
-          ),
+          a('g0bfb17a', 'Twitter Rules')
+        a(
+          'affce770',
+          'We and our trusted third parties will use the information related to your account and any additional information that you provide to us in order to determine your authenticity and eligibility for verification.',
+        ),
           a('i0864917', 'Category'),
           a('d247ca7f', 'Review the details of your verification request below. Once confirmed, hit submit.'),
           a('h65d1aac', 'Identification method'),
           a('cc8f73dd', 'Issuing country'),
           a('cc87b01c', 'Review and submit'),
-          a('d9d293b8', 'Website')
-        a('b11af0b9', 'ID document'),
+          a('d9d293b8', 'Website'),
+          a('b11af0b9', 'ID document'),
           a('a3841918', 'Email'),
           a('h1abfbcd', 'Connected accounts'),
           a(
@@ -3370,6 +3383,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('je84decd', 'Feature Settings'),
           a('de43eaf2', 'Undo Tweet'),
+          a('i65802df', 'Ad-free Articles'),
+          a('a21b8ad2', 'Ad-free Sites'),
+          a('hd885aef', 'See your impact'),
+          a('je4ccd3a', 'Ad-free Articles Help Center'),
           a('f6e88161', 'Labs'),
           a(
             'e4972a1a',
@@ -3534,18 +3551,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('g66c8347', 'REPLAY'),
           a('i3f7ff0f', 'Media thumbnail'),
-          a('j1d352d7', 'Reminder set'),
-          a('d18909d4', 'Set reminder'),
-          a('eaaca5db', 'Score'),
-          a('b0b38773', 'Header media'),
-          a('a7a119ec', 'Undock'),
-          a('e8dff578', 'Edit this'),
-          a('fcc64f01', 'Report this'),
-          a('ea193d66', 'Delete this'),
-          a('e5227fe0', 'View on Twitter'),
-          a('d0df844c', 'View Analytics'),
-          a('fd61ab81', 'Delete Moment?'),
-          a('aaae5e7f', 'This can’t be undone and you’ll lose your Moment.')
+          a('j1d352d7', 'Reminder set')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3562,7 +3568,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('e7718461', 'Your Moment was deleted.'),
+        a('d18909d4', 'Set reminder'),
+          a('eaaca5db', 'Score'),
+          a('b0b38773', 'Header media'),
+          a('a7a119ec', 'Undock'),
+          a('e8dff578', 'Edit this'),
+          a('fcc64f01', 'Report this'),
+          a('ea193d66', 'Delete this'),
+          a('e5227fe0', 'View on Twitter'),
+          a('d0df844c', 'View Analytics'),
+          a('fd61ab81', 'Delete Moment?'),
+          a('aaae5e7f', 'This can’t be undone and you’ll lose your Moment.'),
+          a('e7718461', 'Your Moment was deleted.'),
           a('d126cb7c', 'Latest Tweets'),
           a('e4c6d14c', 'You’re back Home, seeing top Tweets first'),
           a('bffa2da7', 'You’re seeing latest Tweets as they happen'),
@@ -4009,6 +4026,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d0eeb126', function (e) {
             return e.replyCount + ' repl' + n(e.replyCount, 'y', 'ies')
           }),
+          a('a63a89fe', 'Your promotion is complete'),
+          a('b97ed5ab', function (e) {
+            return 'This Tweet reached ' + e.numAccountsReached + ' new account' + n(e.numAccountsReached, '', 's')
+          }),
+          a('e8adeec8', 'Promote again'),
           a('dcfb0332', 'Promote your Tweet'),
           a('b5559e57', function (e) {
             return (
@@ -4021,18 +4043,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('f96eec3c', 'Get more impressions and grow your brand. Promote this Tweet and broaden your reach.'),
           a('e9891f7c', 'Promote this Tweet'),
-          a('jede3014', 'Your promotion is under review'),
-          a('i094e43b', 'Once it’s approved, your Tweet will be promoted to the audience you selected.'),
-          a('f638d3e0', 'Review Twitter’s Ads Policy'),
           a('db6efeb8', 'Your promotion is running'),
           a('hf9ed10f', function (e) {
             return e.endTimeString + ' · ' + e.endDateString
           }),
-          a('a63a89fe', 'Your promotion is complete'),
-          a('b97ed5ab', function (e) {
-            return 'This Tweet reached ' + e.numAccountsReached + ' new account' + n(e.numAccountsReached, '', 's')
-          }),
-          a('e8adeec8', 'Promote again'),
+          a('jede3014', 'Your promotion is under review'),
+          a('i094e43b', 'Once it’s approved, your Tweet will be promoted to the audience you selected.'),
+          a('f638d3e0', 'Review Twitter’s Ads Policy'),
           a('a065172e', 'You may only promote your own Tweets.'),
           a('cfcdb4a1', 'Something went wrong. Make sure you’ve disabled any ad blockers.'),
           a('a3a09d48', 'Your total budget'),
@@ -4146,39 +4163,31 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('db04e329', 'more'),
           a('a5b241cc', 'your'),
+          a('c4debbdf', 'Upgrade your content'),
+          a(
+            'g52ab673',
+            'Typo? Forgot to tag someone? Give yourself time to preview and make changes to your Tweet before it goes live.',
+          ),
           a('ae3f4564', 'Get news without the noise'),
           a(
-            'i58b7cdf',
-            'See the most shared articles in your network over the last 24 hours and catch up on the conversations.',
+            'h0f8563b',
+            'Enjoy an ad-free reading experience, across a network of US-based popular publishers - not including paywall access.',
           ),
-          a('fd04982d', 'Article Reader'),
-          a('ec6be80f', 'Enjoy a fast-loading, ad-free reading experience across a network of leading publishers.'),
-          a('c18e1b7c', 'Thread Mode'),
-          a('e9113acc', 'Unroll Tweetstorms and threads into a single flow.'),
+          a('a7f3dfc9', 'Easily see the most-shared articles in your network over the last 24 hours.'),
+          a('i8cb08a0', 'Thread Viewer'),
+          a('a24965fb', 'Turn long threads into a more beautiful reading experience.'),
+          a('cd2b9647', 'Customize your Twitter experience'),
           a('hdc87500', 'Bookmark Folders'),
-          a('d0f0d45d', 'Organize bookmarks into folders.'),
-          a('c370c7f5', 'Customize how Twitter looks'),
+          a('gaf181e0', 'Organize your Bookmarks into folders and avoid endless scrolling.'),
           a('i9223e6f', 'Custom navigation'),
           a('c1935a33', 'Set your most used pages right on your tab bar.'),
-          a('h7128f2e', 'Custom app icons'),
-          a('eab57a9f', 'On your Apple or Android device, get access to custom app icons.'),
-          a('a34e2259', 'Theming'),
-          a(
-            'a7764ff0',
-            'Change the color theme for all of your Twitter accounts on each device. This is only visible to you.',
-          ),
-          a('e39a77a3', 'Tweet better'),
-          a(
-            'ad45ffb7',
-            'Typo? Forgot to tag someone? Give yourself time to make changes to your Tweet before it goes live.',
-          ),
-          a('bef77530', 'Longer video uploads'),
-          a('bcc13060', 'Early access'),
-          a('i0ca5c61', 'T1 Labs'),
-          a(
-            'e7484be1',
-            'Get early access to the new features we’re testing before they’re available to everyone else.',
-          ),
+          a('gc8d916e', 'App icons'),
+          a('a353aeee', 'Get access to exclusive app icons for your device.'),
+          a('f39aef7b', 'App Theme'),
+          a('b4a97be8', 'Choose a new theme color for your Twitter experience that can only be seen by you.'),
+          a('h52ee955', 'Get early access'),
+          a('gdd8144c', 'For when you have more to share, upload and Tweet videos up to 10-minutes long.'),
+          a('h73af45f', 'Swipe to pin your favorite conversations to the top of your Direct Message inbox.'),
           a('a25a2e76', 'Edit order'),
           a('fa884025', 'List'),
           a('eb7b54bd', 'Loading Lists'),
@@ -4762,8 +4771,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h15b020c', function (e) {
             return 'People following or mentioned by @' + e.screenName + ' can reply'
           }),
-          a('e5dc76d0', 'You can reply to this conversation'),
-          a('ab105904', 'Who can reply?'),
+          a('e5dc76d0', 'You can reply to this conversation')
+        a('ab105904', 'Who can reply?'),
           a('fd1cda7a', 'You cannot reply to this conversation'),
           a('j86de6d0', function (e) {
             return 'People @' + e.screenName + ' follows or mentioned can reply'
@@ -4777,8 +4786,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d95d8f24', 'You and your Super Followers can see this Tweet'),
           a('ff6895e3', function (e) {
             return '@' + e.screenName + ' and their Super Followers can see your Tweet'
-          })
-        a('f1140912', 'You’re seeing Super Follows content'),
+          }),
+          a('f1140912', 'You’re seeing Super Follows content'),
           a('j1a5fd02', function (e) {
             return 'You can see this and reply because you Super Follow @' + e.screenName
           }),
@@ -5742,6 +5751,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'fec57cab',
                 get: function () {
                   return ['Replying to ', '. Your reply will be also visible to their ', '.']
+                },
+              },
+              {
+                key: 'd9cb9d0b',
+                get: function () {
+                  return ['Try following ', ' to get the most out of Top Articles.']
                 },
               },
               {
