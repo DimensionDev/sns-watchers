@@ -1232,6 +1232,17 @@ window.__SCRIPTS_LOADED__.polyfills &&
           return u.call(e, t)
         }
       },
+      '3A2y': function (e, t, n) {
+        'use strict'
+        n('KOtZ'), n('+KXO')
+        var r = n('zrOZ')
+        t.a = function (e, t) {
+          var n = Object(r.a)(Array.isArray(t) ? t : [t])
+          return Object.keys(e).reduce(function (t, r) {
+            return n.has(r) || (t[r] = e[r]), t
+          }, {})
+        }
+      },
       '3XMw': function (e, t, n) {
         'use strict'
         e.exports = n('k/n2')
