@@ -884,6 +884,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ccdeb32e', 'Try unreacting to your Tweet again in a minute.'),
           a('e639775e', 'Try undoing your Retweet again in a minute.'),
           a('g1fa869c', 'View Tweet activity'),
+          a('g6237a1e', 'Promotion running'),
           a('fd80ffbf', 'View Quote Tweets'),
           a('b4a4e4aa', function (e) {
             return '' + e.displayCountAll
@@ -1146,9 +1147,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b154b059', 'Twitter’s rules'),
           a('g46f363d', 'Check the Community rules before joining the conversation'),
           a('i8ea6d4e', 'Everyone can reply'),
-          a('ec5a4a25', 'People you follow can reply'),
-          a('b4543009', 'Only people you mention can reply')
-        a('i13be5a0', 'Community members can reply'),
+          a('ec5a4a25', 'People you follow can reply')
+        a('b4543009', 'Only people you mention can reply'),
+          a('i13be5a0', 'Community members can reply'),
           a('aa65a449', 'We’ll remember your choice on this device'),
           a('bdbcdd93', 'Add photos'),
           a('a809609f', 'Add video'),
@@ -2282,15 +2283,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'c65bbbc1',
             'Select a method to show that your account is authentic and managed by the senior leader or executive related to this request.',
           ),
-          a('i31e3606', 'An official email address with the domain of a qualifying company, brand, or organization.'),
-          a(
-            'd85ef4a7',
-            'A reference to you and your Twitter account on the official website of a qualifying organization.',
-          )
+          a('i31e3606', 'An official email address with the domain of a qualifying company, brand, or organization.')
         a(
-          'ddb19f72',
-          'Provide a link that references your account as the official Twitter account for your company. The reference must come from the official website of a verified entity.',
+          'd85ef4a7',
+          'A reference to you and your Twitter account on the official website of a qualifying organization.',
         ),
+          a(
+            'ddb19f72',
+            'Provide a link that references your account as the official Twitter account for your company. The reference must come from the official website of a verified entity.',
+          ),
           a(
             'a8d332f2',
             'Provide a link that references you as a senior leader at your organization and your Twitter account. The reference must come from the official website of a verified entity.',
@@ -3447,6 +3448,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('a99d8e60', 'Upload longer videos'),
           a('fb00a8ee', 'From your desktop, you can upload and Tweet videos that are up to 10-minutes long.'),
+          a('baf97715', 'Your features will be available for the remainder of your billing period.'),
           a('fff413dc', 'Manage payment and subscription info'),
           a('h80834de', 'other'),
           a('ib8ebf3b', function (e) {
@@ -3560,9 +3562,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return e.category + ' — GIF Search'
           }),
           a('dfef5ab8', 'Twitter - Keyboard shortcuts'),
-          a('aefd89c7', 'Navigation'),
-          a('cafdefb1', 'Actions'),
-          a('e814ed10', 'Next Tweet in editing pane')
+          a('aefd89c7', 'Navigation')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3579,7 +3579,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('c1250b41', 'Previous Tweet in editing pane'),
+        a('cafdefb1', 'Actions'),
+          a('e814ed10', 'Next Tweet in editing pane'),
+          a('c1250b41', 'Previous Tweet in editing pane'),
           a('ddd4bf24', 'Next Tweet in center pane'),
           a('ia2742f9', 'Previous Tweet in center pane'),
           a('a8b6f61a', 'Drag and drop Tweet'),
@@ -3607,7 +3609,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b103771f', 'Share your thoughts'),
           a('bb980dbf', 'Event Timeline'),
           a('dfd7bbaf', 'Check back later to see Tweets about this.'),
-          a('a328e54c', 'Check back later to see commerce products.'),
+          a('c9b302f8', 'Check back later to see the latest products.'),
           a('cfe836d1', function (e) {
             return e.percent + '% off'
           }),
@@ -4159,6 +4161,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c3fca124', 'Boost engagement'),
           a('eaf67a47', 'Gain more followers'),
           a('i96f1aa4', 'Increase website visits'),
+          a('c1a1817b', 'Your Tweet includes media'),
+          a('efc9b3fe', 'The media included in this Tweet won’t display with this goal selected.'),
+          a('h277a2e8', 'Add a link to your Tweet'),
+          a('f567674f', 'For this goal, make sure your Tweet includes a link.'),
           a('c3c57e3e', 'Review promotion'),
           a('h06724b4', 'Once started, you can pause spending on this Tweet at any time.'),
           a('f668d4f3', 'Promotion objective'),
@@ -4250,6 +4256,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h52ee955', 'Get early access'),
           a('gdd8144c', 'For when you have more to share, upload and Tweet videos up to 10-minutes long.'),
           a('h73af45f', 'Swipe to pin your favorite conversations to the top of your Direct Message inbox.'),
+          a('fce91ab4', 'Hmmm - that didn’t work.'),
+          a(
+            'gc7637d3',
+            'There was a problem with processing your Twitter Blue subscription. Please check your payment information and try again.',
+          ),
+          a('f0e32de5', 'Welcome to Twitter Blue'),
+          a('gc6e8c17', 'Customize your settings and start getting the most out of your Twitter Blue subscription.'),
           a('a25a2e76', 'Edit order'),
           a('fa884025', 'List'),
           a('eb7b54bd', 'Loading Lists'),
@@ -4775,8 +4788,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b0b22805', function (e) {
             return 'Visit ' + e.advertiserName
           }),
-          a('c67e71aa', 'Watch now'),
-          a('a6ada13d', 'Shop now'),
+          a('c67e71aa', 'Watch now')
+        a('a6ada13d', 'Shop now'),
           a('j0f12222', 'See more'),
           a('f569f7c7', 'Go to website'),
           a('j0c67729', 'Visit website'),
@@ -4789,8 +4802,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c3c147cf', function (e) {
             return 'Skip ' + e.seconds
           }),
-          a('h9b3104d', 'Video Settings')
-        a('ccc97152', 'Playback speed'),
+          a('h9b3104d', 'Video Settings'),
+          a('ccc97152', 'Playback speed'),
           a('cd6e0e5f', 'Press the speed you would like to watch the video in.'),
           a('if8ee0cd', '0.5x speed'),
           a('h1db3dc5', 'Normal'),
@@ -4993,10 +5006,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('e9f1af39', 'Find out more'),
           a('a7e943ef', 'This Tweet can’t be replied to, shared or liked.'),
+          a('ec3ddf09', 'This Tweet can’t be replied to, reacted to, or shared.'),
           a('e461d0ee', 'Get the latest'),
           a('d1386940', 'Stay informed'),
           a('ecda5f9d', 'Misleading'),
-          a('ec3ddf09', 'This Tweet can’t be replied to, reacted to, or shared.'),
           a('d85bc1b8', 'Zoom in or out on your image.'),
           a('f596ace8', 'Aspect ratio: original'),
           a('df031fca', 'Aspect ratio: wide'),
@@ -5154,6 +5167,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b09adb0c', 'See conversation'),
           a('c2637ef5', 'Got it'),
           a('d9fd5570', 'Hidden replies'),
+          a('b05a39b2', 'View'),
           a('e9c24489', function (e) {
             return '' + e.date
           }),
