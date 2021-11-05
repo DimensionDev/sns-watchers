@@ -38,7 +38,14 @@ jobs:
           echo "https://github.com/${{ github.repository }}/compare/${BASE}..${HEAD}" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
 
+
+          # Issue creation will be skipped if no diff
+          echo "GIT_DIFF<<EOF" >> $GITHUB_ENV
+          git diff --stat $BASE $HEAD >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
       - uses: actions-ecosystem/action-create-issue@v1
+        if: ${{ env.GIT_DIFF != '' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           title: ${{ env.TITLE }}
