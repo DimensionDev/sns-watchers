@@ -25,8 +25,8 @@ async function download(url, saveAs, preprocesser = (code) => code) {
   try {
     let content = await fetchFile(url)
     content = preprocesser(content)
-    content = await format(content, saveAs)
     if (saveAs) {
+      content = await format(content, saveAs)
       await fs.writeFile(saveAs, content)
     }
     return content
