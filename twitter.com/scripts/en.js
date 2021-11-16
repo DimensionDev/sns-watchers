@@ -221,6 +221,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d2a34320', 'Child Safety'),
           a('a9ba3e27', 'Private Information'),
           a('d5519f4a', 'Abusive Behavior'),
+          a('a3e6bb1b', 'Twitter Spaces for the Web'),
+          a('d82f214f', 'Tune into live audio conversations'),
+          a('gf029868', 'Listen live'),
+          a('icc1ba70', 'Spaces are public'),
+          a('bcf241be', 'Manage your experience'),
+          a('b0bc833f', 'You can also block and report people in a Space.'),
+          a('fd1d03b8', 'iOS'),
+          a('eb4e17b4', 'Android'),
+          a('c220921d', 'Learn more'),
+          a('j5485ede', 'Adjust settings'),
+          a('cdffdeb1', 'Learn more'),
           a('h63a5c3b', 'More'),
           a('jf9f3e53', 'Skip forward 15 seconds'),
           a('ic1e826e', 'Play'),
@@ -1134,8 +1145,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('f026a7fa', 'You can add more Tweets to this thread after sending these.'),
           a('ib067d6a', 'Please choose either 1 GIF or up to 4 photos.'),
-          a('f0afcc0e', 'Add poll'),
-          a('ha5e2e79', 'Schedule Tweet'),
+          a('f0afcc0e', 'Add poll')
+        a('ha5e2e79', 'Schedule Tweet'),
           a('a3de3b68', 'Tweet text'),
           a('cc2b28fc', 'You can only have 1 type of attachment'),
           a('g45af04e', 'Add Tweet'),
@@ -1149,8 +1160,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('b7d8e3f0', function (e) {
             return e.numberOfAltTextEntries + ' image description' + n(e.numberOfAltTextEntries, '', 's')
-          })
-        a('d1175c78', 'Tag people'),
+          }),
+          a('d1175c78', 'Tag people'),
           a('bf4e9d79', 'Upload caption file (.srt)'),
           a('e0342f98', 'Captions'),
           a('e349147b', 'What’s happening?'),
@@ -1573,6 +1584,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fd284b08', 'Current Standing'),
           a('h201bdc8', 'Note Author'),
           a('fe1f6043', 'Timestamp'),
+          a('j58e7b00', 'View profile'),
           a('c57760e9', 'Helpful authors'),
           a('c45ef9c1', 'Helpful raters'),
           a('g29805f5', 'Top 10%'),
@@ -1659,8 +1671,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c8c1fa6d', 'Clear all Bookmarks'),
           a('jf748f4f', 'Clear all Bookmarks?'),
           a('cc0f2f4f', 'This can’t be undone and you’ll remove all Tweets you’ve added to your Bookmarks.'),
-          a('ae68f555', 'Start saving'),
-          a('jfb33803', 'Save Tweets to your Folder'),
+          a('e38b760f', 'You haven’t added any Tweets to your Bookmarks yet'),
+          a('ea1715cf', 'When you do, they’ll show up here.'),
           a('ee8589ad', 'Compose a Tweet'),
           a('f075b0e8', 'Edit Folder'),
           a('beba2a0d', 'Create a new Bookmark Folder'),
@@ -1696,6 +1708,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('jb0429b1', function (e) {
             return 'By ' + e.name + ' @' + e.screenName
           }),
+          a('a226497c', 'Create a new Community'),
           a('d7346631', 'You haven’t joined any Communities yet'),
           a('fbd12fea', 'When you do, you’ll see their Tweets here.'),
           a('hb01fe46', 'When you do, you’ll see them here.'),
@@ -1754,7 +1767,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e442bbb4', 'Community Members'),
           a('e9488b0d', 'Loading Moderators'),
           a('j43fea20', 'Loading Members'),
-          a('a226497c', 'Create a new Community'),
           a('dce5e1b3', 'Admin tools'),
           a('c5d8c93d', 'Moderator tools'),
           a('c8c7f9fc', 'Review needed'),
@@ -1807,6 +1819,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('j560c8ea', 'Add rule'),
           a('gaa3239a', 'Looks like we’re having trouble saving your new rule. Please try again later.'),
+          a('a67445d5', 'You’re maxed out'),
+          a('fcbe0992', function (e) {
+            return (
+              'Communities can have up to ' +
+              e.maxRuleCount +
+              ' rules. To add a new one, you’ll need to delete a rule you already have.'
+            )
+          }),
           a('c66769a3', 'Rule'),
           a('ef02695a', function (e) {
             return 'Rule names must be between ' + e.minCharacterCount + ' and ' + e.maxCharacterCount + ' characters'
@@ -2253,8 +2273,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c8ee31da', 'News'),
           a('bb51cd79', 'Sports and gaming'),
           a('g0c3c8b4', 'Influential Individual'),
-          a('c076e32d', 'Learn more'),
-          a('e492eeb4', 'Learn more'),
+          a('c076e32d', 'Learn more')
+        a('e492eeb4', 'Learn more'),
           a('ece0b9bc', 'Learn more'),
           a('e1a82c8c', 'Learn more'),
           a('hb96cb36', 'Learn more'),
@@ -2267,8 +2287,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b0abbb16', 'Learn more'),
           a('g4e815f3', 'Learn more'),
           a('i560665d', 'Learn more'),
-          a('eb8eeaf0', 'Learn more')
-        a('h486f753', 'Learn more'),
+          a('eb8eeaf0', 'Learn more'),
+          a('h486f753', 'Learn more'),
           a('a77ed149', 'Learn more'),
           a('jc7215cd', 'Learn more'),
           a('gdb5ae61', 'Learn more'),
@@ -3520,10 +3540,26 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hae5825e', 'Flagged Tweets'),
           a('cd702bc3', 'Report account'),
           a('f2f4d0e7', 'Remove from flagged accounts'),
-          a('jcba15d2', 'Remove autoblock'),
-          a('hc676c4a', function (e) {
-            return 'You blocked @' + e.screenName
-          }),
+          a('jcba15d2', 'Remove autoblock')
+        function r(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var a = t[o]
+            ;(a.enumerable = a.enumerable || !1),
+              (a.configurable = !0),
+              'value' in a && (a.writable = !0),
+              Object.defineProperty(e, a.key, a)
+          }
+        }
+        function i(e, t) {
+          return (i =
+            Object.setPrototypeOf ||
+            function (e, t) {
+              return (e.__proto__ = t), e
+            })(e, t)
+        }
+        a('hc676c4a', function (e) {
+          return 'You blocked @' + e.screenName
+        }),
           a('badf3f34', function (e) {
             return 'You removed @' + e.screenName + ' from flagged accounts'
           }),
@@ -3555,24 +3591,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Keep in mind that even with this setting turned off you will be visible to everyone when you’re in a Space. Your followers can always see what Spaces you’re hosting, co-hosting or speaking in.',
           ),
           a('f80a33af', 'Allow use of where you see Twitter content across the Web'),
-          a('dc20d917', 'Personalize based on places you’ve been')
-        function r(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var a = t[o]
-            ;(a.enumerable = a.enumerable || !1),
-              (a.configurable = !0),
-              'value' in a && (a.writable = !0),
-              Object.defineProperty(e, a.key, a)
-          }
-        }
-        function i(e, t) {
-          return (i =
-            Object.setPrototypeOf ||
-            function (e, t) {
-              return (e.__proto__ = t), e
-            })(e, t)
-        }
-        a('f2b23061', 'Accessibility, display and languages'),
+          a('dc20d917', 'Personalize based on places you’ve been'),
+          a('f2b23061', 'Accessibility, display and languages'),
           a('jf907f5b', 'Manage how Twitter content is displayed to you.'),
           a('f371a361', 'Manage aspects of your Twitter experience such as limiting color contrast and motion.'),
           a('f9c98140', 'Manage which languages are used to personalize your Twitter experience.'),
@@ -4596,7 +4616,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d09e12c4', 'These Tweets are protected'),
           a('gbf342a4', 'Account Withheld'),
           a('c4d31f09', 'View flagged Tweets'),
-          a('j58e7b00', 'View profile'),
           a('d834ab9c', 'Yes, view profile'),
           a('g7ddd636', function (e) {
             return '@' + e.screenName
@@ -4744,10 +4763,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('fa9e827f', function (e) {
             return 'People following ' + e.fullName + ' (@' + e.screenName + ')'
-          }),
-          a('ha979be5', function (e) {
-            return 'People followed by ' + e.fullName + ' (@' + e.screenName + ')'
-          }),
+          })
+        a('ha979be5', function (e) {
+          return 'People followed by ' + e.fullName + ' (@' + e.screenName + ')'
+        }),
           a('i099d32d', 'Followers you know'),
           a('ed51baba', 'You don’t have any Super Followers yet'),
           a('g65f4bab', 'You don’t have any followers yet'),
@@ -4767,8 +4786,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ae5749c6', function (e) {
             return '@' + e.screenName + ' isn’t following anyone'
           }),
-          a('b2f3c46a', 'When someone Super Follows them, they’ll be listed here.')
-        a('ec251f36', 'When someone you know follows them, they’ll be listed here.'),
+          a('b2f3c46a', 'When someone Super Follows them, they’ll be listed here.'),
+          a('ec251f36', 'When someone you know follows them, they’ll be listed here.'),
           a('c0455f4a', 'When someone follows them, they’ll be listed here.'),
           a('i8bd07a9', 'When they do, they’ll be listed here.'),
           a('ce281ddf', 'You don’t have any follower requests'),
@@ -4914,6 +4933,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c600045f', 'Reminder set'),
           a('aeb6f0a0', 'Subscribe'),
           a('bf162f1e', 'Subscribe to this newsletter'),
+          a('gd42ccca', function (e) {
+            return 'Issue ' + e.issueNumber
+          }),
           a('e68a6c62', 'Read the latest'),
           a('fae82d22', 'Read the latest issue of this newsletter. Opens in a new window'),
           a('c9aa7c7b', 'Newsletter'),
@@ -4959,6 +4981,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('dcbcaa23', function (e) {
             return 'Play recording of ' + e.title
           }),
+          a('fb236727', 'Pause'),
           a('j2d460c0', function (e) {
             return e.count + ' in this Space'
           }),
@@ -5053,7 +5076,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b3160a69', function (e) {
             return e.volumePercent + ' percent'
           }),
-          a('fb236727', 'Pause'),
           a('e9bd453e', 'Replay'),
           a('ec8ab8b4', 'Mute'),
           a('b8b6344a', 'Unmute'),
@@ -5515,6 +5537,34 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'aab35604',
                 get: function () {
                   return ['Twitter always keeps a copy of a Space for review. ', '.']
+                },
+              },
+              {
+                key: 'fc9fe08e',
+                get: function () {
+                  return [
+                    'Spaces on web are listen-only. For the full experience, download the Twitter app for ',
+                    ' or ',
+                    '.',
+                  ]
+                },
+              },
+              {
+                key: 'a8170308',
+                get: function () {
+                  return ['Anyone can listen, including people not logged in to Twitter. ']
+                },
+              },
+              {
+                key: 'ib602fd8',
+                get: function () {
+                  return ['You can control how your followers see the Spaces you’re listening to. ']
+                },
+              },
+              {
+                key: 'i6164a47',
+                get: function () {
+                  return ['Twitter will keep a recording of Spaces for at least 30 days to review reports. ']
                 },
               },
               {
