@@ -32694,22 +32694,22 @@ object-assign
       zCf4: function (e, t, n) {
         'use strict'
         n.d(t, 'a', function () {
-          return S
+          return y
         }),
           n.d(t, 'b', function () {
-            return O
+            return w
           }),
           n.d(t, 'c', function () {
-            return m
+            return T
           }),
           n.d(t, 'd', function () {
-            return D
+            return m
           }),
           n.d(t, 'e', function () {
-            return k
+            return C
           }),
           n.d(t, 'f', function () {
-            return N
+            return O
           }),
           n.d(t, 'g', function () {
             return j
@@ -32721,7 +32721,10 @@ object-assign
             return F
           }),
           n.d(t, 'j', function () {
-            return C
+            return z
+          }),
+          n.d(t, 'k', function () {
+            return M
           })
         var r = n('BFfR'),
           i = n('ERkP'),
@@ -32786,8 +32789,20 @@ object-assign
               t
             )
           })(a.a.Component)
-        a.a.Component
         var y = (function (e) {
+          function t() {
+            for (var t, n = arguments.length, r = new Array(n), i = 0; i < n; i++) r[i] = arguments[i]
+            return ((t = e.call.apply(e, [this].concat(r)) || this).history = Object(o.c)(t.props)), t
+          }
+          return (
+            Object(r.a)(t, e),
+            (t.prototype.render = function () {
+              return a.a.createElement(m, { history: this.history, children: this.props.children })
+            }),
+            t
+          )
+        })(a.a.Component)
+        var b = (function (e) {
           function t() {
             return e.apply(this, arguments) || this
           }
@@ -32809,22 +32824,22 @@ object-assign
             t
           )
         })(a.a.Component)
-        var b = {},
-          _ = 0
-        function E(e, t) {
+        var _ = {},
+          E = 0
+        function S(e, t) {
           return (
             void 0 === e && (e = '/'),
             void 0 === t && (t = {}),
             '/' === e
               ? e
               : (function (e) {
-                  if (b[e]) return b[e]
+                  if (_[e]) return _[e]
                   var t = f.a.compile(e)
-                  return _ < 1e4 && ((b[e] = t), _++), t
+                  return E < 1e4 && ((_[e] = t), E++), t
                 })(e)(t, { pretty: !0 })
           )
         }
-        function S(e) {
+        function w(e) {
           var t = e.computedMatch,
             n = e.to,
             r = e.push,
@@ -32837,13 +32852,13 @@ object-assign
               f = Object(o.b)(
                 t
                   ? 'string' == typeof n
-                    ? E(n, t.params)
-                    : Object(l.a)({}, n, { pathname: E(n.pathname, t.params) })
+                    ? S(n, t.params)
+                    : Object(l.a)({}, n, { pathname: S(n.pathname, t.params) })
                   : n,
               )
             return u
               ? (c(f), null)
-              : a.a.createElement(y, {
+              : a.a.createElement(b, {
                   onMount: function () {
                     c(f)
                   },
@@ -32855,9 +32870,9 @@ object-assign
                 })
           })
         }
-        var w = {},
-          x = 0
-        function k(e, t) {
+        var x = {},
+          k = 0
+        function O(e, t) {
           void 0 === t && (t = {}), ('string' == typeof t || Array.isArray(t)) && (t = { path: t })
           var n = t,
             r = n.path,
@@ -32872,11 +32887,11 @@ object-assign
             if (t) return t
             var r = (function (e, t) {
                 var n = '' + t.end + t.strict + t.sensitive,
-                  r = w[n] || (w[n] = {})
+                  r = x[n] || (x[n] = {})
                 if (r[e]) return r[e]
                 var i = [],
                   a = { regexp: f()(e, i, t), keys: i }
-                return x < 1e4 && ((r[e] = a), x++), a
+                return k < 1e4 && ((r[e] = a), k++), a
               })(n, { end: a, strict: u, sensitive: l }),
               i = r.regexp,
               o = r.keys,
@@ -32897,7 +32912,7 @@ object-assign
                 }
           }, null)
         }
-        var O = (function (e) {
+        var T = (function (e) {
           function t() {
             return e.apply(this, arguments) || this
           }
@@ -32908,7 +32923,7 @@ object-assign
               return a.a.createElement(g.Consumer, null, function (t) {
                 t || Object(s.a)(!1)
                 var n = e.props.location || t.location,
-                  r = e.props.computedMatch ? e.props.computedMatch : e.props.path ? k(n.pathname, e.props) : t.match,
+                  r = e.props.computedMatch ? e.props.computedMatch : e.props.path ? O(n.pathname, e.props) : t.match,
                   i = Object(l.a)({}, t, { location: n, match: r }),
                   o = e.props,
                   u = o.children,
@@ -32939,25 +32954,25 @@ object-assign
             t
           )
         })(a.a.Component)
-        function T(e) {
+        function R(e) {
           return '/' === e.charAt(0) ? e : '/' + e
         }
-        function R(e, t) {
+        function P(e, t) {
           if (!e) return t
-          var n = T(e)
+          var n = R(e)
           return 0 !== t.pathname.indexOf(n) ? t : Object(l.a)({}, t, { pathname: t.pathname.substr(n.length) })
         }
-        function P(e) {
+        function I(e) {
           return 'string' == typeof e ? e : Object(o.d)(e)
         }
-        function I(e) {
+        function A(e) {
           return function () {
             Object(s.a)(!1)
           }
         }
-        function A() {}
+        function D() {}
         a.a.Component
-        var D = (function (e) {
+        var C = (function (e) {
           function t() {
             return e.apply(this, arguments) || this
           }
@@ -32975,7 +32990,7 @@ object-assign
                     if (null == r && a.a.isValidElement(e)) {
                       n = e
                       var o = e.props.path || e.props.from
-                      r = o ? k(i.pathname, Object(l.a)({}, e.props, { path: o })) : t.match
+                      r = o ? O(i.pathname, Object(l.a)({}, e.props, { path: o })) : t.match
                     }
                   }),
                   r ? a.a.cloneElement(n, { location: i, computedMatch: r }) : null
@@ -32985,7 +33000,7 @@ object-assign
             t
           )
         })(a.a.Component)
-        function C(e) {
+        function M(e) {
           var t = 'withRouter(' + (e.displayName || e.name) + ')',
             n = function (t) {
               var n = t.wrappedComponentRef,
@@ -32996,21 +33011,21 @@ object-assign
             }
           return (n.displayName = t), (n.WrappedComponent = e), h()(n, e)
         }
-        var M = a.a.useContext
-        function N() {
-          return M(v)
-        }
+        var N = a.a.useContext
         function j() {
-          return M(g).location
+          return N(v)
         }
         function L() {
-          var e = M(g).match
+          return N(g).location
+        }
+        function F() {
+          var e = N(g).match
           return e ? e.params : {}
         }
-        function F(e) {
-          var t = j(),
-            n = M(g).match
-          return e ? k(t.pathname, e) : n
+        function z(e) {
+          var t = L(),
+            n = N(g).match
+          return e ? O(t.pathname, e) : n
         }
       },
       zCvs: function (e, t, n) {
