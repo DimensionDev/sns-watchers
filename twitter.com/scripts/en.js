@@ -1690,6 +1690,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h9a5daa1', 'Delete Folder?'),
           a('ga2edf67', 'Your Tweets will still be saved in the "All Bookmarks" folder'),
           a('i6e7e298', 'Create'),
+          a('a0ea2fa5', 'Name field cannot be empty'),
+          a('eec37eab', 'Bookmark Folder with that name already exists'),
           a('e39b368e', 'Broadcast'),
           a('f2382014', 'LIVE'),
           a('e3aac82a', 'Loading Broadcast'),
@@ -1840,7 +1842,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('h99020ef', 'Edit rule'),
           a('a1c93d73', 'Looks like we’re having trouble saving your changes. Please try again later.'),
+          a(
+            'f74a5adb',
+            'Communities need at least one rule. You can edit what you have, or add another rule and then delete this one.',
+          ),
           a('fbb0ed91', 'Delete this rule'),
+          a('gea6cc19', 'Are you sure?'),
+          a('hed35471', 'Deleting a rule is permanent and can’t be undone.'),
+          a('c8677445', 'Delete rule'),
+          a('c3a0d44e', 'Cancel and edit rule instead'),
           a('dfddd842', 'Sent via Direct Message'),
           a('cf4898a0', 'Search for people'),
           a('a3b3939a', function (e) {
@@ -2266,15 +2276,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'hbe2e65b',
             'An official site associated with a verified esports league or event that references you as an individual in gaming.',
           ),
-          a('j3da4de9', 'You can’t request verification right now'),
-          a('af39265e', 'Companies, Brands, and Organizations'),
+          a('j3da4de9', 'You can’t request verification right now')
+        a('af39265e', 'Companies, Brands, and Organizations'),
           a('hc61adfb', 'Entertainment'),
           a('d2042392', 'Government'),
           a('e5cbc249', 'Activists and influential individuals'),
           a('c8ee31da', 'News'),
           a('bb51cd79', 'Sports and gaming'),
-          a('g0c3c8b4', 'Influential Individual')
-        a('c076e32d', 'Learn more'),
+          a('g0c3c8b4', 'Influential Individual'),
+          a('c076e32d', 'Learn more'),
           a('e492eeb4', 'Learn more'),
           a('ece0b9bc', 'Learn more'),
           a('e1a82c8c', 'Learn more'),
@@ -3438,7 +3448,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j8bf07ab', 'Protect your Tweets?'),
           a('ca8034b3', 'This will make them visible only to your Twitter followers.'),
           a('c5d4192a', 'Protect'),
-          a('gea6cc19', 'Are you sure?'),
           a(
             'j7fc0afc',
             'Communities are public, so protecting your account will hide your previous Tweets. You also won’t be able to Tweet in the Community until your account is public again.',
@@ -3532,15 +3541,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Autoblock accounts for 7 days that may use harmful language or send repetitive, uninvited replies. Accounts you follow or often interact with aren’t autoblocked.',
           ),
           a('ccafffde', '1 day'),
-          a('j2e184d8', '3 days'),
-          a('d94b2246', 'Ends within 1 hour'),
-          a('bfea13ab', 'Can’t update Safety Mode settings.'),
-          a('ee95bb8d', function (e) {
-            return 'Ends on ' + e.date
-          }),
-          a('hae5825e', 'Flagged Tweets'),
-          a('cd702bc3', 'Report account'),
-          a('f2f4d0e7', 'Remove from flagged accounts')
+          a('j2e184d8', '3 days')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3557,7 +3558,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('jcba15d2', 'Remove autoblock'),
+        a('d94b2246', 'Ends within 1 hour'),
+          a('bfea13ab', 'Can’t update Safety Mode settings.'),
+          a('ee95bb8d', function (e) {
+            return 'Ends on ' + e.date
+          }),
+          a('hae5825e', 'Flagged Tweets'),
+          a('cd702bc3', 'Report account'),
+          a('f2f4d0e7', 'Remove from flagged accounts'),
+          a('jcba15d2', 'Remove autoblock'),
           a('hc676c4a', function (e) {
             return 'You blocked @' + e.screenName
           }),
@@ -4713,16 +4722,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a9ca06d2', 'Information'),
           a('b689c7ef', 'You’re seeing top Tweets first'),
           a('f9bef353', 'See latest Tweets'),
-          a('f22b6ad5', 'You’re seeing top Tweets first. Latest Tweets will show up as they happen.'),
-          a('g03a6be4', 'See top Tweets'),
+          a('f22b6ad5', 'You’re seeing top Tweets first. Latest Tweets will show up as they happen.')
+        a('g03a6be4', 'See top Tweets'),
           a('gf89e0a2', 'You’re seeing latest Tweets first. Top Tweets show you the best Tweets.'),
           a('c7294983', 'Report List'),
           a('g6340998', 'This won’t automatically add you back to their Lists.'),
           a('i6da4f79', 'Share List'),
-          a('a062ff80', 'Copy link to List')
-        a('dcdc75a3', function (e) {
-          return '@' + e.screenName + '/' + e.listName
-        }),
+          a('a062ff80', 'Copy link to List'),
+          a('dcdc75a3', function (e) {
+            return '@' + e.screenName + '/' + e.listName
+          }),
           a('h2b32b90', 'There aren’t any Tweets in this List'),
           a('de8ba957', 'When anyone in this List Tweets, they’ll show up here.'),
           a('eeab4adf', 'View Tweets'),
