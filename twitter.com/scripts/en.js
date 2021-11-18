@@ -11,7 +11,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(260).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(264).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -861,6 +861,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('b59d8d10', 'Tweet added to your Bookmarks'),
           a('h5d6c720', 'Tweet removed from your Bookmarks'),
+          a('f1fcb2eb', 'Remove Tweet from Folder'),
+          a('a2e7377e', function (e) {
+            return 'Removed from ' + e.bookmarkFolderName
+          }),
           a('ba370e34', 'Tweet liked'),
           a('d9034c72', 'Tweet unliked'),
           a('e518bc7a', 'Reaction added'),
@@ -1143,10 +1147,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b551cd22', function (e) {
             return 'Your Tweet will be sent on ' + e.scheduleDate + ' at ' + e.scheduleTime
           }),
-          a('f026a7fa', 'You can add more Tweets to this thread after sending these.'),
-          a('ib067d6a', 'Please choose either 1 GIF or up to 4 photos.'),
-          a('f0afcc0e', 'Add poll')
-        a('ha5e2e79', 'Schedule Tweet'),
+          a('f026a7fa', 'You can add more Tweets to this thread after sending these.')
+        a('ib067d6a', 'Please choose either 1 GIF or up to 4 photos.'),
+          a('f0afcc0e', 'Add poll'),
+          a('ha5e2e79', 'Schedule Tweet'),
           a('a3de3b68', 'Tweet text'),
           a('cc2b28fc', 'You can only have 1 type of attachment'),
           a('g45af04e', 'Add Tweet'),
@@ -1416,8 +1420,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'hb2bf967',
             'Your note will be publicly available in the Birdwatch site and may be shown to other participants on Twitter.',
           ),
-          a('b199696e', function (e) {
-            return 'Writing as ' + e.userAlias
+          a('dc7a6625', function (e) {
+            return 'Writing as ' + e.displayAlias
           }),
           a(
             'af778d9e',
@@ -1769,6 +1773,26 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e442bbb4', 'Community Members'),
           a('e9488b0d', 'Loading Moderators'),
           a('j43fea20', 'Loading Members'),
+          a('c9d56b71', 'Tell us a little about your Community. You can always change these details later.'),
+          a('h3e55b40', 'Community name'),
+          a('dd71d9c9', function (e) {
+            return (
+              'Name must be between ' +
+              e.minCharacterCount +
+              ' and ' +
+              e.maxCharacterCount +
+              ' characters and can’t include hashtags or @usernames'
+            )
+          }),
+          a('cf65e56a', function (e) {
+            return 'Name must be between ' + e.minCharacterCount + ' and ' + e.maxCharacterCount + ' characters'
+          }),
+          a('d936eeca', 'Names can’t include hashtags or @usernames.'),
+          a('e2df7cf1', 'Community purpose'),
+          a('be9bb312', 'A strong purpose describes your Community and lets people know what to expect'),
+          a('e988475f', function (e) {
+            return 'Purpose must be between ' + e.minCharacterCount + ' and ' + e.maxCharacterCount + ' characters'
+          }),
           a('dce5e1b3', 'Admin tools'),
           a('c5d8c93d', 'Moderator tools'),
           a('c8c7f9fc', 'Review needed'),
@@ -1782,44 +1806,28 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fd67f7c8', 'Edit Community name, purpose, and more'),
           a('gc00d212', 'Support and resources'),
           a('a997eca0', 'Help when you need it'),
-          a('h3e55b40', 'Community name'),
           a('j8af8ea9', 'Membership type'),
           a('d5f01115', 'Purpose'),
           a('ce0523a8', 'Restricted'),
           a('f4a98e9e', 'Community information'),
           a('f713fbd1', 'Membership'),
+          a('b87ca51a', 'Remove photo'),
+          a('eebff22c', 'Crop photo'),
           a('d0784408', 'Everyone can discover, join, and Tweet in your Community.'),
           a(
             'ccfafe8c',
             'Everyone can discover your Community. To join, people must be invited by a member or moderator.',
           ),
           a('h3c0f1a2', 'Edit Community name'),
-          a('dd71d9c9', function (e) {
-            return (
-              'Name must be between ' +
-              e.minCharacterCount +
-              ' and ' +
-              e.maxCharacterCount +
-              ' characters and can’t include hashtags or @usernames'
-            )
-          }),
-          a('cf65e56a', function (e) {
-            return 'Name must be between ' + e.minCharacterCount + ' and ' + e.maxCharacterCount + ' characters'
-          }),
           a('cb5e6510', 'Looks like we’re having trouble saving your new name. Please try again later.'),
-          a('d936eeca', 'Names can’t include hashtags or @usernames.'),
           a('a895549f', 'Edit purpose'),
-          a('e2df7cf1', 'Community purpose'),
-          a('be9bb312', 'A strong purpose describes your Community and lets people know what to expect'),
-          a('e988475f', function (e) {
-            return 'Purpose must be between ' + e.minCharacterCount + ' and ' + e.maxCharacterCount + ' characters'
-          }),
           a('ced22929', 'Looks like we’re having trouble saving your purpose description. Please try again later.'),
           a(
             'd94edeb4',
             'Your Community can have up to 10 rules. Clear rules can encourage respectful participation and help keep conversations on track.',
           ),
           a('j560c8ea', 'Add rule'),
+          a('ab8089ea', 'Reorder'),
           a('gaa3239a', 'Looks like we’re having trouble saving your new rule. Please try again later.'),
           a('a67445d5', 'You’re maxed out'),
           a('fcbe0992', function (e) {
@@ -1840,6 +1848,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f8fa00c7', function (e) {
             return 'Descriptions can’t exceed ' + e.maxCharacterCount + ' characters'
           }),
+          a('d45ae5e0', 'Don’t forget to tell the Community'),
+          a('c1631260', 'Keeping everyone updated about rule changes helps build trust.'),
+          a('d3190bdd', 'Save rule'),
+          a('ifd6e91b', 'Cancel and edit rule'),
           a('h99020ef', 'Edit rule'),
           a('a1c93d73', 'Looks like we’re having trouble saving your changes. Please try again later.'),
           a(
@@ -2245,11 +2257,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'ddc7d64a',
             'Professional sports athletes, coaches, managers, as well as athletes participating in global competitions (e.g. Olympics, Paralympics, etc.).',
           ),
-          a('c4e0d346', 'Professional sports entity'),
-          a(
-            'e3ce81fa',
-            'Professional sports leagues, teams, and global competitions (e.g. Olympics, Paralympics, etc.).',
-          ),
+          a('c4e0d346', 'Professional sports entity')
+        a(
+          'e3ce81fa',
+          'Professional sports leagues, teams, and global competitions (e.g. Olympics, Paralympics, etc.).',
+        ),
           a('b2808f47', 'Individual in gaming'),
           a('jaa90f86', 'Professional esports rostered team members, coaches, and management.'),
           a(
@@ -2276,8 +2288,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'hbe2e65b',
             'An official site associated with a verified esports league or event that references you as an individual in gaming.',
           ),
-          a('j3da4de9', 'You can’t request verification right now')
-        a('af39265e', 'Companies, Brands, and Organizations'),
+          a('j3da4de9', 'You can’t request verification right now'),
+          a('af39265e', 'Companies, Brands, and Organizations'),
           a('hc61adfb', 'Entertainment'),
           a('d2042392', 'Government'),
           a('e5cbc249', 'Activists and influential individuals'),
@@ -2911,8 +2923,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Consider using a name without special characters so it’s accessible to even more people, including people who are blind or have low vision.',
           ),
           a('a753a87f', 'Apply'),
-          a('b87ca51a', 'Remove photo'),
-          a('eebff22c', 'Crop photo'),
           a('c119dee8', 'Birth date'),
           a('bbf0afc7', 'Add your date of birth'),
           a('f98d367e', 'Edit date of birth?'),
@@ -3527,21 +3537,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'h19673a7',
             'Autoblocked accounts, just like manually blocked accounts, can’t see your Tweets, follow you, or send you Direct Messages. If they view your profile, we let them know Twitter blocked them, and not you.',
           ),
-          a('ebfb2dbb', 'Fewer people see their replies'),
-          a(
-            'bff84f29',
-            'Existing replies from autoblocked accounts are moved to the bottom of the conversation, so fewer people see them.',
-          ),
-          a('c6cb90eb', 'Safety Mode'),
-          a('fabe1397', 'Autoblocks'),
-          a('c0786021', 'Autoblocked accounts'),
-          a('i88b0fe0', 'What is Safety Mode?'),
-          a(
-            'haec9491',
-            'Autoblock accounts for 7 days that may use harmful language or send repetitive, uninvited replies. Accounts you follow or often interact with aren’t autoblocked.',
-          ),
-          a('ccafffde', '1 day'),
-          a('j2e184d8', '3 days')
+          a('ebfb2dbb', 'Fewer people see their replies')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3558,12 +3554,26 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('d94b2246', 'Ends within 1 hour'),
+        a(
+          'bff84f29',
+          'Existing replies from autoblocked accounts are moved to the bottom of the conversation, so fewer people see them.',
+        ),
+          a('c6cb90eb', 'Safety Mode'),
+          a('fabe1397', 'Autoblocks'),
+          a('c0786021', 'Autoblocked accounts'),
+          a('i88b0fe0', 'What is Safety Mode?'),
+          a(
+            'haec9491',
+            'Autoblock accounts for 7 days that may use harmful language or send repetitive, uninvited replies. Accounts you follow or often interact with aren’t autoblocked.',
+          ),
+          a('ccafffde', '1 day'),
+          a('j2e184d8', '3 days'),
+          a('d94b2246', 'Ends within 1 hour'),
           a('bfea13ab', 'Can’t update Safety Mode settings.'),
           a('ee95bb8d', function (e) {
             return 'Ends on ' + e.date
           }),
-          a('hae5825e', 'Flagged Tweets'),
+          a('b1d61d71', 'Autoblocked account Tweets'),
           a('cd702bc3', 'Report account'),
           a('f2f4d0e7', 'Remove from flagged accounts'),
           a('jcba15d2', 'Remove autoblock'),
@@ -4714,16 +4724,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'gc7637d3',
             'There was a problem with processing your Twitter Blue subscription. Please check your payment information and try again.',
           ),
-          a('f0e32de5', 'Welcome to Twitter Blue'),
-          a('gc6e8c17', 'Customize your settings and start getting the most out of your Twitter Blue subscription.'),
+          a('f0e32de5', 'Welcome to Twitter Blue')
+        a('gc6e8c17', 'Customize your settings and start getting the most out of your Twitter Blue subscription.'),
           a('a25a2e76', 'Edit order'),
           a('fa884025', 'List'),
           a('eb7b54bd', 'Loading Lists'),
           a('a9ca06d2', 'Information'),
           a('b689c7ef', 'You’re seeing top Tweets first'),
           a('f9bef353', 'See latest Tweets'),
-          a('f22b6ad5', 'You’re seeing top Tweets first. Latest Tweets will show up as they happen.')
-        a('g03a6be4', 'See top Tweets'),
+          a('f22b6ad5', 'You’re seeing top Tweets first. Latest Tweets will show up as they happen.'),
+          a('g03a6be4', 'See top Tweets'),
           a('gf89e0a2', 'You’re seeing latest Tweets first. Top Tweets show you the best Tweets.'),
           a('c7294983', 'Report List'),
           a('g6340998', 'This won’t automatically add you back to their Lists.'),
@@ -4852,7 +4862,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e7b201dd', 'Try searching for another.'),
           a('d09e12c4', 'These Tweets are protected'),
           a('gbf342a4', 'Account Withheld'),
-          a('c4d31f09', 'View flagged Tweets'),
+          a('b6b63300', 'View autoblocked account Tweets'),
           a('d834ab9c', 'Yes, view profile'),
           a('g7ddd636', function (e) {
             return '@' + e.screenName
@@ -5203,6 +5213,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return e.action + ' for a space, ' + e.scheduledStart
           }),
           a('bd08d1b1', 'Details not available'),
+          a('g519ec2a', 'Play recording'),
+          a('dcbcaa23', function (e) {
+            return 'Play recording of ' + e.title
+          }),
+          a('f5b51d69', 'Now playing'),
           a('d2543d97', function (e) {
             return '+' + e.count
           }),
@@ -5212,12 +5227,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b4349cbb', function (e) {
             return '' + e.relativeDay
           }),
+          a('ebe41366', function (e) {
+            return 'Time ' + e.time
+          }),
+          a('efce3d9a', function (e) {
+            return e.hours + ' ' + e.minutes + ' ' + e.seconds
+          }),
           a('b03e1629', 'Listen live'),
           a('f89a5d6f', 'Host'),
-          a('g519ec2a', 'Play recording'),
-          a('dcbcaa23', function (e) {
-            return 'Play recording of ' + e.title
-          }),
           a('fb236727', 'Pause'),
           a('j2d460c0', function (e) {
             return e.count + ' in this Space'
@@ -5246,12 +5263,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('dc718e53', function (e) {
             return '+' + e.count + ' other' + n(e.count, '', 's')
-          }),
-          a('ebe41366', function (e) {
-            return 'Time ' + e.time
-          }),
-          a('efce3d9a', function (e) {
-            return e.hours + ' ' + e.minutes + ' ' + e.seconds
           }),
           a('fc45ccc5', 'Embedded video'),
           a('a9edea48', 'Reload'),
@@ -8041,67 +8052,67 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           w = (l._dateFormat, l._dateFormatterFn),
           g = l._relativeTimeFormatterFn,
           T = l._unitFormatterFn
-        ;(l.b468386326 = h([
-          '',
-          ,
-          1,
-          0,
-          3,
-          ,
-          ,
-          ,
-          3,
-          ,
-          '',
-          '#,##0.###',
-          '-#,##0.###',
-          '-',
-          '',
-          b(),
-          '∞',
-          'NaN',
-          { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
-        ])),
-          (l.a527220190 = h(
-            [
-              '',
-              ,
-              1,
-              0,
-              1,
-              ,
-              ,
-              ,
-              3,
-              ,
-              '',
-              '#,##0.###',
-              '-#,##0.###',
-              '-',
-              '',
-              b('truncate'),
-              '∞',
-              'NaN',
-              { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
-              ,
-              {
-                3: { one: '0K', other: '0K' },
-                4: { one: '00K', other: '00K' },
-                5: { one: '000K', other: '000K' },
-                6: { one: '0M', other: '0M' },
-                7: { one: '00M', other: '00M' },
-                8: { one: '000M', other: '000M' },
-                9: { one: '0B', other: '0B' },
-                10: { one: '00B', other: '00B' },
-                11: { one: '000B', other: '000B' },
-                12: { one: '0T', other: '0T' },
-                13: { one: '00T', other: '00T' },
-                14: { one: '000T', other: '000T' },
-                maxExponent: 14,
-              },
-            ],
-            l('en').pluralGenerator({}),
-          )),
+        ;(l.a527220190 = h(
+          [
+            '',
+            ,
+            1,
+            0,
+            1,
+            ,
+            ,
+            ,
+            3,
+            ,
+            '',
+            '#,##0.###',
+            '-#,##0.###',
+            '-',
+            '',
+            b('truncate'),
+            '∞',
+            'NaN',
+            { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
+            ,
+            {
+              3: { one: '0K', other: '0K' },
+              4: { one: '00K', other: '00K' },
+              5: { one: '000K', other: '000K' },
+              6: { one: '0M', other: '0M' },
+              7: { one: '00M', other: '00M' },
+              8: { one: '000M', other: '000M' },
+              9: { one: '0B', other: '0B' },
+              10: { one: '00B', other: '00B' },
+              11: { one: '000B', other: '000B' },
+              12: { one: '0T', other: '0T' },
+              13: { one: '00T', other: '00T' },
+              14: { one: '000T', other: '000T' },
+              maxExponent: 14,
+            },
+          ],
+          l('en').pluralGenerator({}),
+        )),
+          (l.b468386326 = h([
+            '',
+            ,
+            1,
+            0,
+            3,
+            ,
+            ,
+            ,
+            3,
+            ,
+            '',
+            '#,##0.###',
+            '-#,##0.###',
+            '-',
+            '',
+            b(),
+            '∞',
+            'NaN',
+            { '.': '.', ',': ',', '%': '%', '+': '+', '-': '-', E: 'E', '‰': '‰' },
+          ])),
           (l.b385502835 = h([
             '',
             ,
@@ -9953,18 +9964,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           (l.a1608008627 = y(l('en').numberFormatter({ round: 'ceil', raw: "'CA$'#,##0.00" }))),
           (l.a1321204873 = y(l('en').numberFormatter({ round: 'ceil', raw: "'A$'#,##0.00" }))),
           (l.a1653031457 = y(l('en').numberFormatter({ round: 'ceil', raw: "'NZ$'#,##0.00" }))),
-          (l.b129255162 = p(
-            { 1: l('en').numberFormatter({ raw: '0' }), 2: l('en').numberFormatter({ raw: '00' }) },
-            { pattern: 'h:mm a', timeSeparator: ':', dayPeriods: { am: 'AM', pm: 'PM' } },
-          )),
-          (l.a683162061 = p(
+          (l.a1269826356 = p(
             { 1: l('en').numberFormatter({ raw: '0' }) },
             {
-              pattern: 'E, MMM d',
+              pattern: 'MMM d',
               timeSeparator: ':',
-              days: {
-                E: { 1: { sun: 'Sun', mon: 'Mon', tue: 'Tue', wed: 'Wed', thu: 'Thu', fri: 'Fri', sat: 'Sat' } },
-              },
               months: {
                 M: {
                   3: {
@@ -9985,11 +9989,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               },
             },
           )),
-          (l.a1269826356 = p(
+          (l.b129255162 = p(
+            { 1: l('en').numberFormatter({ raw: '0' }), 2: l('en').numberFormatter({ raw: '00' }) },
+            { pattern: 'h:mm a', timeSeparator: ':', dayPeriods: { am: 'AM', pm: 'PM' } },
+          )),
+          (l.a683162061 = p(
             { 1: l('en').numberFormatter({ raw: '0' }) },
             {
-              pattern: 'MMM d',
+              pattern: 'E, MMM d',
               timeSeparator: ':',
+              days: {
+                E: { 1: { sun: 'Sun', mon: 'Mon', tue: 'Tue', wed: 'Wed', thu: 'Thu', fri: 'Fri', sat: 'Sat' } },
+              },
               months: {
                 M: {
                   3: {
@@ -10303,9 +10314,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               },
             },
           )),
+          (l.a878419275 = w(l('en').dateToPartsFormatter({ skeleton: 'MMMd' }))),
           (l.b965415715 = w(l('en').dateToPartsFormatter({ skeleton: 'hm' }))),
           (l.a1434444438 = w(l('en').dateToPartsFormatter({ skeleton: 'MMMEd' }))),
-          (l.a878419275 = w(l('en').dateToPartsFormatter({ skeleton: 'MMMd' }))),
           (l.a816076018 = w(l('en').dateToPartsFormatter({ skeleton: 'yMMMd' }))),
           (l.b498196529 = w(l('en').dateToPartsFormatter({ skeleton: 'yMMMEd' }))),
           (l.a837317001 = w(l('en').dateToPartsFormatter({ skeleton: 'yMMdd' }))),
@@ -10426,20 +10437,20 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               unitProperties: { displayName: 'sec', one: '{0}s', other: '{0}s', perUnitPattern: '{0}/s' },
             },
           )),
-          a('ia24dc8c', l.b468386326),
           a('d58baa7e', l.a527220190),
+          a('ia24dc8c', l.b468386326),
           a('i3b7a017', l.a2110709659),
           a('ie5d110e', l.a223746363),
           a('df5f11b3', l.b2116965749),
           a('f668e928', l.b385502835),
+          a('ccaa970e', l.a878419275),
           a('c333da63', l.b687161418),
           a('d725a288', l.b965415715),
           a('h8054d90', l.a1434444438),
-          a('ccaa970e', l.a878419275),
-          a('g08cbaba', l.b1729690817),
           a('i61fef37', l.b1554153647),
           a('ba705e26', l.a79526321),
           a('j86b0d8c', l.a531894881),
+          a('g08cbaba', l.b1729690817),
           a('e8733ed8', l.b1436183524),
           a('i2785008', l.b1982794438),
           a('e8d93005', l.a1259667653),
