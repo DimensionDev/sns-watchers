@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [112],
+    [113],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -11,7 +11,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(266).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(264).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -1610,7 +1610,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hc19704b', 'Learn more about standings'),
           a('j44125ee', 'This contributor hasn’t written any notes yet.'),
           a('da55067b', 'Check this space later!'),
-          a('j1a30557', 'Learn more'),
           a('b5eb23f9', function (e) {
             return '' + e.count
           }),
@@ -2257,12 +2256,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'ddc7d64a',
             'Professional sports athletes, coaches, managers, as well as athletes participating in global competitions (e.g. Olympics, Paralympics, etc.).',
-          )
-        a('c4e0d346', 'Professional sports entity'),
-          a(
-            'e3ce81fa',
-            'Professional sports leagues, teams, and global competitions (e.g. Olympics, Paralympics, etc.).',
           ),
+          a('c4e0d346', 'Professional sports entity')
+        a(
+          'e3ce81fa',
+          'Professional sports leagues, teams, and global competitions (e.g. Olympics, Paralympics, etc.).',
+        ),
           a('b2808f47', 'Individual in gaming'),
           a('jaa90f86', 'Professional esports rostered team members, coaches, and management.'),
           a(
@@ -3537,7 +3536,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'h19673a7',
             'Autoblocked accounts, just like manually blocked accounts, can’t see your Tweets, follow you, or send you Direct Messages. If they view your profile, we let them know Twitter blocked them, and not you.',
-          )
+          ),
+          a('ebfb2dbb', 'Fewer people see their replies')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3554,11 +3554,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('ebfb2dbb', 'Fewer people see their replies'),
-          a(
-            'bff84f29',
-            'Existing replies from autoblocked accounts are moved to the bottom of the conversation, so fewer people see them.',
-          ),
+        a(
+          'bff84f29',
+          'Existing replies from autoblocked accounts are moved to the bottom of the conversation, so fewer people see them.',
+        ),
           a('c6cb90eb', 'Safety Mode'),
           a('fabe1397', 'Autoblocks'),
           a('c0786021', 'Autoblocked accounts'),
@@ -4724,9 +4723,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'gc7637d3',
             'There was a problem with processing your Twitter Blue subscription. Please check your payment information and try again.',
-          )
-        a('f0e32de5', 'Welcome to Twitter Blue'),
-          a('gc6e8c17', 'Customize your settings and start getting the most out of your Twitter Blue subscription.'),
+          ),
+          a('f0e32de5', 'Welcome to Twitter Blue')
+        a('gc6e8c17', 'Customize your settings and start getting the most out of your Twitter Blue subscription.'),
           a('a25a2e76', 'Edit order'),
           a('fa884025', 'List'),
           a('eb7b54bd', 'Loading Lists'),
@@ -5688,9 +5687,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('af2a65d8', function (e) {
             return e.timestamp + ' selected'
           }),
-          a('j3d49e93', function (e) {
-            return e.timestamp + 'm'
-          }),
           a('a394f904', function (e) {
             return e.seconds + ' seconds'
           }),
@@ -6497,12 +6493,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'fdd69021',
                 get: function () {
                   return ['Ideas or suggestions to improve Birdwatch? ']
-                },
-              },
-              {
-                key: 'bc62b131',
-                get: function () {
-                  return ['Birdwatch contributors use aliases · ']
                 },
               },
               {
