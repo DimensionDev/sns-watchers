@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [113],
+    [115],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -11,7 +11,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(264).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(268).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -1355,23 +1355,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ie8e1ffc', 'Sign up now to get your own personalized timeline!'),
           a('ib65b1c6', 'Sign up with Apple'),
           a('f55cebb7', 'Sign in with Apple'),
-          a('a62c9c33', 'Follow your interests.'),
-          a('cf39fca2', 'Hear what people are talking about.'),
-          a('j86184fd', 'Join the conversation.'),
-          a('d9e109ae', 'Join Twitter today.'),
-          a('f86f23b5', 'Sign in to Twitter'),
-          a('eba1b197', 'Happening now'),
-          a('fa811c30', 'Already have an account?'),
-          a('b0dbe914', 'Use phone, email or username'),
-          a('e5b0e543', 'Sign in'),
-          a('h0ff39da', 'Twitter. It’s what’s happening'),
-          a(
-            'j3f49ff6',
-            'From breaking news and entertainment to sports and politics, get the full story with all the live commentary.',
-          ),
-          a('ca86b62c', 'or'),
-          a('ie4dd8d6', 'Sign up'),
-          a('fb9dd9b0', 'Sign in'),
           a('c8c5faad', 'Terms of Service'),
           a('ba5b7ecb', 'Privacy Policy'),
           a('f4fe46c3', 'Cookie Use.'),
@@ -1610,6 +1593,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hc19704b', 'Learn more about standings'),
           a('j44125ee', 'This contributor hasn’t written any notes yet.'),
           a('da55067b', 'Check this space later!'),
+          a('j1a30557', 'Learn more'),
           a('b5eb23f9', function (e) {
             return '' + e.count
           }),
@@ -2257,11 +2241,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'ddc7d64a',
             'Professional sports athletes, coaches, managers, as well as athletes participating in global competitions (e.g. Olympics, Paralympics, etc.).',
           ),
-          a('c4e0d346', 'Professional sports entity')
-        a(
-          'e3ce81fa',
-          'Professional sports leagues, teams, and global competitions (e.g. Olympics, Paralympics, etc.).',
-        ),
+          a('c4e0d346', 'Professional sports entity'),
+          a(
+            'e3ce81fa',
+            'Professional sports leagues, teams, and global competitions (e.g. Olympics, Paralympics, etc.).',
+          ),
           a('b2808f47', 'Individual in gaming'),
           a('jaa90f86', 'Professional esports rostered team members, coaches, and management.'),
           a(
@@ -2291,8 +2275,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j3da4de9', 'You can’t request verification right now'),
           a('af39265e', 'Companies, Brands, and Organizations'),
           a('hc61adfb', 'Entertainment'),
-          a('d2042392', 'Government'),
-          a('e5cbc249', 'Activists and influential individuals'),
+          a('d2042392', 'Government')
+        a('e5cbc249', 'Activists and influential individuals'),
           a('c8ee31da', 'News'),
           a('bb51cd79', 'Sports and gaming'),
           a('g0c3c8b4', 'Influential Individual'),
@@ -2539,6 +2523,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d247ca7f', 'Review the details of your verification request below. Once confirmed, hit submit.'),
           a('b51afbb2', 'Authenticity Method'),
           a('cc87b01c', 'Review and submit'),
+          a('d12d42db', 'Automation'),
+          a('ja854816', 'Manage your automated account'),
+          a('a2981062', 'Managing account'),
+          a('aff4540e', 'Change managing account'),
+          a('b8b9d10f', 'Set up account automation'),
+          a(
+            'f21474bc',
+            'Connect a managing account so your automated account receives an automated account label. All automated accounts must be connected to a managing account.',
+          ),
+          a('e0bc51f5', 'Turn off account automation'),
           a('h1abfbcd', 'Connected accounts'),
           a(
             'a45d71b8',
@@ -3295,7 +3289,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i203df96', 'Find out how you can deactivate your account.'),
           a('ib6f1694', 'Account creation'),
           a('h3290871', 'Verified'),
-          a('d12d42db', 'Automation'),
           a('hbd12156', 'Request Verification'),
           a('f70d5780', 'Yes.'),
           a('dc62d3c6', 'No.'),
@@ -3537,7 +3530,20 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'h19673a7',
             'Autoblocked accounts, just like manually blocked accounts, can’t see your Tweets, follow you, or send you Direct Messages. If they view your profile, we let them know Twitter blocked them, and not you.',
           ),
-          a('ebfb2dbb', 'Fewer people see their replies')
+          a('ebfb2dbb', 'Fewer people see their replies'),
+          a(
+            'bff84f29',
+            'Existing replies from autoblocked accounts are moved to the bottom of the conversation, so fewer people see them.',
+          ),
+          a('c6cb90eb', 'Safety Mode'),
+          a('fabe1397', 'Autoblocks'),
+          a('c0786021', 'Autoblocked accounts'),
+          a('i88b0fe0', 'What is Safety Mode?'),
+          a(
+            'haec9491',
+            'Autoblock accounts for 7 days that may use harmful language or send repetitive, uninvited replies. Accounts you follow or often interact with aren’t autoblocked.',
+          ),
+          a('ccafffde', '1 day')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3554,26 +3560,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a(
-          'bff84f29',
-          'Existing replies from autoblocked accounts are moved to the bottom of the conversation, so fewer people see them.',
-        ),
-          a('c6cb90eb', 'Safety Mode'),
-          a('fabe1397', 'Autoblocks'),
-          a('c0786021', 'Autoblocked accounts'),
-          a('i88b0fe0', 'What is Safety Mode?'),
-          a(
-            'haec9491',
-            'Autoblock accounts for 7 days that may use harmful language or send repetitive, uninvited replies. Accounts you follow or often interact with aren’t autoblocked.',
-          ),
-          a('ccafffde', '1 day'),
-          a('j2e184d8', '3 days'),
+        a('j2e184d8', '3 days'),
           a('d94b2246', 'Ends within 1 hour'),
           a('bfea13ab', 'Can’t update Safety Mode settings.'),
           a('ee95bb8d', function (e) {
             return 'Ends on ' + e.date
           }),
           a('b1d61d71', 'Autoblocked account Tweets'),
+          a('de9b6641', 'If we autoblock an account, it’ll show up here.'),
           a('cd702bc3', 'Report account'),
           a('f2f4d0e7', 'Remove from flagged accounts'),
           a('jcba15d2', 'Remove autoblock'),
@@ -4363,6 +4357,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ec129eb6', 'You have successfully removed your contacts.'),
           a('f1b50489', 'There was an error removing your contacts.'),
           a('deaf5b15', 'Retry'),
+          a('ca86b62c', 'or'),
           a('gf8388fe', 'Country code'),
           a('d44efc66', 'What’s your name?'),
           a('b4867a17', 'Your full name can’t include the word “Twitter”.'),
@@ -4398,6 +4393,22 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d5270434', 'Exit'),
           a('h030c24b', 'Report an issue'),
           a('c3e6226a', 'Remove member'),
+          a('a62c9c33', 'Follow your interests.'),
+          a('cf39fca2', 'Hear what people are talking about.'),
+          a('j86184fd', 'Join the conversation.'),
+          a('d9e109ae', 'Join Twitter today.'),
+          a('f86f23b5', 'Sign in to Twitter'),
+          a('eba1b197', 'Happening now'),
+          a('fa811c30', 'Already have an account?'),
+          a('b0dbe914', 'Use phone, email or username'),
+          a('e5b0e543', 'Sign in'),
+          a('h0ff39da', 'Twitter. It’s what’s happening'),
+          a(
+            'j3f49ff6',
+            'From breaking news and entertainment to sports and politics, get the full story with all the live commentary.',
+          ),
+          a('ie4dd8d6', 'Sign up'),
+          a('fb9dd9b0', 'Sign in'),
           a('d1cc8c05', 'Limit unwelcome interactions'),
           a('c7b4a180', 'Safety Mode image'),
           a('effdd904', function (e) {
@@ -4713,8 +4724,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i9223e6f', 'Custom navigation'),
           a('c1935a33', 'Set your most used pages right on your tab bar.'),
           a('gc8d916e', 'App icons'),
-          a('a353aeee', 'Get access to exclusive app icons for your device.'),
-          a('f39aef7b', 'App Theme'),
+          a('a353aeee', 'Get access to exclusive app icons for your device.')
+        a('f39aef7b', 'App Theme'),
           a('b4a97be8', 'Choose a new theme color for your Twitter experience that can only be seen by you.'),
           a('h52ee955', 'Get early access'),
           a('gdd8144c', 'For when you have more to share, upload and Tweet videos up to 10-minutes long.'),
@@ -4724,8 +4735,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'gc7637d3',
             'There was a problem with processing your Twitter Blue subscription. Please check your payment information and try again.',
           ),
-          a('f0e32de5', 'Welcome to Twitter Blue')
-        a('gc6e8c17', 'Customize your settings and start getting the most out of your Twitter Blue subscription.'),
+          a('f0e32de5', 'Welcome to Twitter Blue'),
+          a('gc6e8c17', 'Customize your settings and start getting the most out of your Twitter Blue subscription.'),
           a('a25a2e76', 'Edit order'),
           a('fa884025', 'List'),
           a('eb7b54bd', 'Loading Lists'),
@@ -5564,6 +5575,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('dc716ec8', function (e) {
             return 'Recommended Topic: ' + e.topicName
           }),
+          a('j2eea179', 'The following media includes potentially sensitive content.'),
+          a('b05a39b2', 'View'),
           a('f34e6516', 'and'),
           a('ff31714c', function (e) {
             return 'and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
@@ -5652,7 +5665,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('jc9298a8', 'Share Tweet'),
           a('b09adb0c', 'See conversation'),
           a('c2637ef5', 'Got it'),
-          a('b05a39b2', 'View'),
           a('d9fd5570', 'Hidden replies'),
           a('e9c24489', function (e) {
             return '' + e.date
@@ -5687,6 +5699,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('af2a65d8', function (e) {
             return e.timestamp + ' selected'
           }),
+          a('j3d49e93', function (e) {
+            return e.timestamp + 'm'
+          }),
           a('a394f904', function (e) {
             return e.seconds + ' seconds'
           }),
@@ -5696,8 +5711,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cfd13f46', 'Voice Dock')
         var c = o('ERkP'),
           s = [],
-          d = {}
-        function u(e) {
+          u = {}
+        function d(e) {
           return e
         }
         var f = (function (e) {
@@ -6400,18 +6415,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'i89d7b70',
-                get: function () {
-                  return ['Don’t have an account? ']
-                },
-              },
-              {
-                key: 'c83ef3f5',
-                get: function () {
-                  return ['Already have an account? ']
-                },
-              },
-              {
                 key: 'c4d3d078',
                 get: function () {
                   return ['By signing up, you agree to the ', ' and ', ', including ']
@@ -6493,6 +6496,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'fdd69021',
                 get: function () {
                   return ['Ideas or suggestions to improve Birdwatch? ']
+                },
+              },
+              {
+                key: 'bc62b131',
+                get: function () {
+                  return ['Birdwatch contributors use aliases · ']
                 },
               },
               {
@@ -7661,6 +7670,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
+                key: 'i89d7b70',
+                get: function () {
+                  return ['Don’t have an account? ']
+                },
+              },
+              {
+                key: 'c83ef3f5',
+                get: function () {
+                  return ['Already have an account? ']
+                },
+              },
+              {
                 key: 'f81ca1f4',
                 get: function () {
                   return ['']
@@ -8026,7 +8047,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 get: function () {
                   var e,
                     t = c.Children.toArray(this.props.children),
-                    o = ((e = this.props.$i18n), s[d[e]] || u)
+                    o = ((e = this.props.$i18n), s[u[e]] || d)
                   return function (e, a, n) {
                     return e.concat(a, t[o(n)])
                   }
