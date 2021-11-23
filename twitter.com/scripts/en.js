@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [115],
+    [116],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -11,7 +11,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(268).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(269).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -248,15 +248,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ce96f1db', 'Captions unavailable'),
           a('ifea3114', 'Share'),
           a('c63dd2cb', 'Join this live conversation with me!'),
-          a('if23a251', 'Share via...'),
-          a('f61c4bbf', 'Send via Direct Message'),
           a('fcc684a9', 'Tweet this'),
+          a('f61c4bbf', 'Send via Direct Message'),
           a('e05c00b4', 'Copy link'),
+          a('if23a251', 'Share via...'),
+          a('c0530da5', 'Share Menu'),
           a('f88553c8', 'Copied to clipboard'),
           a('gb5851d7', function (e) {
             return e.prefix + ' ' + e.url
           }),
-          a('c0530da5', 'Share Menu'),
           a('bb1d57b6', 'Leave'),
           a('i7f853ea', 'Share with people outside of Twitter'),
           a('g646959f', 'Learn more'),
@@ -568,6 +568,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('db2f1007', 'They will be able to see your Tweets, follow you, and send you Direct Messages.'),
           a('a30b63da', 'Something went wrong. Try removing the follower again in a minute.'),
+          a('f2f4d0e7', 'Remove from flagged accounts'),
           a('a2f8105f', 'Messages'),
           a('e839db39', 'Dismiss'),
           a('c64c1883', 'Compose new Message'),
@@ -1146,9 +1147,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bf9b89e4', 'Your draft was saved.'),
           a('b551cd22', function (e) {
             return 'Your Tweet will be sent on ' + e.scheduleDate + ' at ' + e.scheduleTime
-          }),
-          a('f026a7fa', 'You can add more Tweets to this thread after sending these.')
-        a('ib067d6a', 'Please choose either 1 GIF or up to 4 photos.'),
+          })
+        a('f026a7fa', 'You can add more Tweets to this thread after sending these.'),
+          a('ib067d6a', 'Please choose either 1 GIF or up to 4 photos.'),
           a('f0afcc0e', 'Add poll'),
           a('ha5e2e79', 'Schedule Tweet'),
           a('a3de3b68', 'Tweet text'),
@@ -1701,6 +1702,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a226497c', 'Create a new Community'),
           a('d7346631', 'You haven’t joined any Communities yet'),
           a('fbd12fea', 'When you do, you’ll see their Tweets here.'),
+          a('b60e4f77', 'Check it out'),
+          a('f0fc827d', 'Welcome to Twitter Communities'),
+          a('c8e93b51', 'Communities are moderated discussion groups where people on Twitter can connect and share.'),
+          a('fc5c6913', 'Meet others with your interests'),
+          a('ad211086', 'Talk to people who care about the same things you do.'),
+          a('gf803ba1', 'Tweet directly to a Community'),
+          a('e92fe01b', 'Your Tweets are shared with other Community members — not your followers.'),
+          a('h3bb8068', 'Get backup when you need it'),
+          a('a709f8f8', 'Admins and moderators help manage Communities and keep conversations on track.'),
           a('hb01fe46', 'When you do, you’ll see them here.'),
           a('a7c2e06c', function (e) {
             return e.communityName + ' Community'
@@ -1737,15 +1747,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d68146c0', 'When anyone in this Community Tweets, they’ll show up here.'),
           a('h5245afa', 'Community'),
           a('f05dbeff', 'Loading Tweets'),
-          a('b60e4f77', 'Check it out'),
-          a('f0fc827d', 'Welcome to Twitter Communities'),
-          a('c8e93b51', 'Communities are moderated discussion groups where people on Twitter can connect and share.'),
-          a('fc5c6913', 'Meet others with your interests'),
-          a('ad211086', 'Talk to people who care about the same things you do.'),
-          a('gf803ba1', 'Tweet directly to a Community'),
-          a('e92fe01b', 'Your Tweets are shared with other Community members — not your followers.'),
-          a('h3bb8068', 'Get backup when you need it'),
-          a('a709f8f8', 'Admins and moderators help manage Communities and keep conversations on track.'),
           a('h4fbfa57', 'Agree and join'),
           a('dc1b14a1', function (e) {
             return 'Review and agree to ' + e.communityName + ' Rules'
@@ -1795,6 +1796,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ce0523a8', 'Restricted'),
           a('f4a98e9e', 'Community information'),
           a('f713fbd1', 'Membership'),
+          a('a49f884d', 'Community Banner'),
+          a('ea965b81', 'Edit Community Banner'),
+          a('c1ca95bd', 'Crop Banner'),
+          a('e71cdf4d', 'Crop Thumbnail'),
+          a('a753a87f', 'Apply'),
           a('b87ca51a', 'Remove photo'),
           a('eebff22c', 'Crop photo'),
           a('d0784408', 'Everyone can discover, join, and Tweet in your Community.'),
@@ -2263,11 +2269,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'e241d35d',
             'At least three articles from verified news organization or publications that reference you as a professional athlete, manager, or coach.',
-          ),
-          a(
-            'ad456030',
-            'At least three articles from verified news organization or publications that reference you as an individual in gaming.',
-          ),
+          )
+        a(
+          'ad456030',
+          'At least three articles from verified news organization or publications that reference you as an individual in gaming.',
+        ),
           a(
             'hbe2e65b',
             'An official site associated with a verified esports league or event that references you as an individual in gaming.',
@@ -2275,8 +2281,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j3da4de9', 'You can’t request verification right now'),
           a('af39265e', 'Companies, Brands, and Organizations'),
           a('hc61adfb', 'Entertainment'),
-          a('d2042392', 'Government')
-        a('e5cbc249', 'Activists and influential individuals'),
+          a('d2042392', 'Government'),
+          a('e5cbc249', 'Activists and influential individuals'),
           a('c8ee31da', 'News'),
           a('bb51cd79', 'Sports and gaming'),
           a('g0c3c8b4', 'Influential Individual'),
@@ -2916,7 +2922,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'addbe8e7',
             'Consider using a name without special characters so it’s accessible to even more people, including people who are blind or have low vision.',
           ),
-          a('a753a87f', 'Apply'),
           a('c119dee8', 'Birth date'),
           a('bbf0afc7', 'Add your date of birth'),
           a('f98d367e', 'Edit date of birth?'),
@@ -3535,15 +3540,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'bff84f29',
             'Existing replies from autoblocked accounts are moved to the bottom of the conversation, so fewer people see them.',
           ),
-          a('c6cb90eb', 'Safety Mode'),
-          a('fabe1397', 'Autoblocks'),
-          a('c0786021', 'Autoblocked accounts'),
-          a('i88b0fe0', 'What is Safety Mode?'),
-          a(
-            'haec9491',
-            'Autoblock accounts for 7 days that may use harmful language or send repetitive, uninvited replies. Accounts you follow or often interact with aren’t autoblocked.',
-          ),
-          a('ccafffde', '1 day')
+          a('f2351b97', 'Flagged accounts')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3560,16 +3557,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('j2e184d8', '3 days'),
+        a('de9b6641', 'If we autoblock an account, it’ll show up here.'),
+          a('c6cb90eb', 'Safety Mode'),
+          a('fabe1397', 'Autoblocks'),
+          a('c0786021', 'Autoblocked accounts'),
+          a('i88b0fe0', 'What is Safety Mode?'),
+          a(
+            'haec9491',
+            'Autoblock accounts for 7 days that may use harmful language or send repetitive, uninvited replies. Accounts you follow or often interact with aren’t autoblocked.',
+          ),
+          a('ccafffde', '1 day'),
+          a('j2e184d8', '3 days'),
           a('d94b2246', 'Ends within 1 hour'),
           a('bfea13ab', 'Can’t update Safety Mode settings.'),
           a('ee95bb8d', function (e) {
             return 'Ends on ' + e.date
           }),
           a('b1d61d71', 'Autoblocked account Tweets'),
-          a('de9b6641', 'If we autoblock an account, it’ll show up here.'),
           a('cd702bc3', 'Report account'),
-          a('f2f4d0e7', 'Remove from flagged accounts'),
           a('jcba15d2', 'Remove autoblock'),
           a('hc676c4a', function (e) {
             return 'You blocked @' + e.screenName
@@ -4497,6 +4502,23 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f8bc75e2', 'your Topics'),
           a('ed827af6', 'Topic is unavailable.'),
           a('d094c720', 'All Topics'),
+          a('f68f0fc7', 'Twitter Topics'),
+          a('ieb6f5c1', function (e) {
+            return e.topicName + ' | Twitter Topics'
+          }),
+          a(
+            'd848d612',
+            'Follow Topics on Twitter. Topics let you see Tweets from a number of accounts that are experts or just fans of different topics on Twitter.',
+          ),
+          a('j70f0f35', function (e) {
+            return (
+              'Follow the ' +
+              e.topicName +
+              ' Topic on Twitter. You’ll see top Tweets from a number of accounts that are experts, fans or just tend to talk about ' +
+              e.topicName +
+              ' on Twitter.'
+            )
+          }),
           a('ea831526', 'Tweet with replies'),
           a('a90e1e67', function (e) {
             return 'Tweet' + e.noun
@@ -4715,8 +4737,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'h0f8563b',
             'Enjoy an ad-free reading experience, across a network of US-based popular publishers - not including paywall access.',
           ),
-          a('a7f3dfc9', 'Easily see the most-shared articles in your network over the last 24 hours.'),
-          a('b62d6e4c', 'Reader'),
+          a('a7f3dfc9', 'Easily see the most-shared articles in your network over the last 24 hours.')
+        a('b62d6e4c', 'Reader'),
           a('a24965fb', 'Turn long threads into a more beautiful reading experience.'),
           a('cd2b9647', 'Customize your Twitter experience'),
           a('hdc87500', 'Bookmark Folders'),
@@ -4724,8 +4746,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i9223e6f', 'Custom navigation'),
           a('c1935a33', 'Set your most used pages right on your tab bar.'),
           a('gc8d916e', 'App icons'),
-          a('a353aeee', 'Get access to exclusive app icons for your device.')
-        a('f39aef7b', 'App Theme'),
+          a('a353aeee', 'Get access to exclusive app icons for your device.'),
+          a('f39aef7b', 'App Theme'),
           a('b4a97be8', 'Choose a new theme color for your Twitter experience that can only be seen by you.'),
           a('h52ee955', 'Get early access'),
           a('gdd8144c', 'For when you have more to share, upload and Tweet videos up to 10-minutes long.'),
@@ -4791,8 +4813,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('he062e8a', 'Pick a List'),
           a('c2fb1e94', 'Only 5,000 accounts can be added to a List.'),
           a('f30edc68', 'Make private'),
-          a('c1ca95bd', 'Crop Banner'),
-          a('e71cdf4d', 'Crop Thumbnail'),
           a('h51a2cf5', 'Something went wrong. Try deleting your Banner again in a minute.'),
           a('bb10280e', 'Something went wrong. Try saving your List again in a minute.'),
           a('h8885a22', 'List names cannot exceed 25 characters'),
