@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [116],
+    [115],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -296,6 +296,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i3ea806a', 'Order'),
           a('fd00a769', 'Open'),
           a('e0aa5848', 'Install'),
+          a('g33f3050', 'Web'),
           a('d3f6b1a6', 'Message us'),
           a('b0e322cc', 'Send us a private message'),
           a('cb8bddc7', 'Send me a private message'),
@@ -394,6 +395,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e4df0ad7', 'This Tweet is hidden because it’s from someone you don’t follow.'),
           a('b5b91d58', 'This Tweet might include graphic media.'),
           a('bb594d7b', 'Open Tweet'),
+          a('a52d0fdd', 'Blue'),
+          a('i1526fe1', 'Plum'),
+          a('cbed7fb2', 'Purple'),
+          a('a7c22049', 'Green'),
+          a('d818cdd5', 'Yellow'),
+          a('i50b6537', 'Magenta'),
+          a('g697ec02', 'Orange'),
+          a('jffeb663', 'Red'),
+          a('h6525f89', 'Teal'),
+          a('dad93f5e', 'Dark Gray'),
           a('adcf07b5', 'Change settings'),
           a('c94b7d89', 'Play voice message'),
           a('eb6f9582', 'Pause voice message'),
@@ -1134,8 +1145,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c1bf53b0', function (e) {
             return 'Add ' + n(e.numOfDescriptions, 'a description', 'descriptions')
           }),
-          a('bb8170da', 'Not this time'),
-          a('dad5a4b8', 'Your Tweet was sent.'),
+          a('bb8170da', 'Not this time')
+        a('dad5a4b8', 'Your Tweet was sent.'),
           a('e65aed64', 'Your Tweets were sent.'),
           a('d8222374', 'Discard Tweet?'),
           a('j890123a', 'Discard thread?'),
@@ -1147,8 +1158,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bf9b89e4', 'Your draft was saved.'),
           a('b551cd22', function (e) {
             return 'Your Tweet will be sent on ' + e.scheduleDate + ' at ' + e.scheduleTime
-          })
-        a('f026a7fa', 'You can add more Tweets to this thread after sending these.'),
+          }),
+          a('f026a7fa', 'You can add more Tweets to this thread after sending these.'),
           a('ib067d6a', 'Please choose either 1 GIF or up to 4 photos.'),
           a('f0afcc0e', 'Add poll'),
           a('ha5e2e79', 'Schedule Tweet'),
@@ -1793,6 +1804,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a997eca0', 'Help when you need it'),
           a('j8af8ea9', 'Membership type'),
           a('d5f01115', 'Purpose'),
+          a('c3c04b70', 'Color theme'),
           a('ce0523a8', 'Restricted'),
           a('f4a98e9e', 'Community information'),
           a('f713fbd1', 'Membership'),
@@ -1812,6 +1824,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cb5e6510', 'Looks like we’re having trouble saving your new name. Please try again later.'),
           a('a895549f', 'Edit purpose'),
           a('ced22929', 'Looks like we’re having trouble saving your purpose description. Please try again later.'),
+          a('dbda7beb', 'Change theme'),
+          a('hcf35d0c', function (e) {
+            return 'Save theme as ' + e.themeName
+          }),
           a(
             'd94edeb4',
             'Your Community can have up to 10 rules. Clear rules can encourage respectful participation and help keep conversations on track.',
@@ -2234,8 +2250,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'ab4eae60',
             'At least three bylines or credits in qualifying publications published within the last six months.',
           ),
-          a('b3fac982', 'The URL provided links to the specific page referencing me.'),
-          a('e26dc9e2', 'Add notable work'),
+          a('b3fac982', 'The URL provided links to the specific page referencing me.')
+        a('e26dc9e2', 'Add notable work'),
           a('e164df2d', 'Do the articles provided meet the notability criteria?'),
           a(
             'i80ff05e',
@@ -2269,11 +2285,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'e241d35d',
             'At least three articles from verified news organization or publications that reference you as a professional athlete, manager, or coach.',
-          )
-        a(
-          'ad456030',
-          'At least three articles from verified news organization or publications that reference you as an individual in gaming.',
-        ),
+          ),
+          a(
+            'ad456030',
+            'At least three articles from verified news organization or publications that reference you as an individual in gaming.',
+          ),
           a(
             'hbe2e65b',
             'An official site associated with a verified esports league or event that references you as an individual in gaming.',
@@ -2613,12 +2629,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i76f67ed', 'Dim'),
           a('c8f85960', 'Lights out'),
           a('aefc5b20', 'Color options'),
-          a('a52d0fdd', 'Blue'),
-          a('d818cdd5', 'Yellow'),
           a('fee1cd64', 'Pink'),
-          a('cbed7fb2', 'Purple'),
-          a('g697ec02', 'Orange'),
-          a('a7c22049', 'Green'),
           a('ea1c87a5', function (e) {
             return (
               'At the heart of Twitter are short messages called Tweets — just like this one — which can include photos, videos, links, text, hashtags, and mentions like @' +
@@ -3519,28 +3530,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'e860ff84',
             'When selected, your Tweets and other account information are only visible to people who follow you.',
           ),
-          a('c0a55f4a', 'Mark media you Tweet as having material that may be sensitive'),
-          a(
-            'ea28ca63',
-            'When enabled, pictures and videos you Tweet will be marked as sensitive for people who don’t want to see sensitive content.',
-          ),
-          a('c58de5b1', 'When Safety Mode is on, here’s what happens'),
-          a('b92fa3be', 'Twitter does the work, so you don’t have to'),
-          a(
-            'b3a7895e',
-            'Autoblocks are temporary, unlike manual blocks which last until you remove them. To ensure you always have the final say over blocks, we remove autoblocks after 7 days.',
-          ),
-          a('e83ecbf6', 'You get a break'),
-          a(
-            'h19673a7',
-            'Autoblocked accounts, just like manually blocked accounts, can’t see your Tweets, follow you, or send you Direct Messages. If they view your profile, we let them know Twitter blocked them, and not you.',
-          ),
-          a('ebfb2dbb', 'Fewer people see their replies'),
-          a(
-            'bff84f29',
-            'Existing replies from autoblocked accounts are moved to the bottom of the conversation, so fewer people see them.',
-          ),
-          a('f2351b97', 'Flagged accounts')
+          a('c0a55f4a', 'Mark media you Tweet as having material that may be sensitive')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3557,7 +3547,28 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('de9b6641', 'If we autoblock an account, it’ll show up here.'),
+        a(
+          'ea28ca63',
+          'When enabled, pictures and videos you Tweet will be marked as sensitive for people who don’t want to see sensitive content.',
+        ),
+          a('c58de5b1', 'When Safety Mode is on, here’s what happens'),
+          a('b92fa3be', 'Twitter does the work, so you don’t have to'),
+          a(
+            'b3a7895e',
+            'Autoblocks are temporary, unlike manual blocks which last until you remove them. To ensure you always have the final say over blocks, we remove autoblocks after 7 days.',
+          ),
+          a('e83ecbf6', 'You get a break'),
+          a(
+            'h19673a7',
+            'Autoblocked accounts, just like manually blocked accounts, can’t see your Tweets, follow you, or send you Direct Messages. If they view your profile, we let them know Twitter blocked them, and not you.',
+          ),
+          a('ebfb2dbb', 'Fewer people see their replies'),
+          a(
+            'bff84f29',
+            'Existing replies from autoblocked accounts are moved to the bottom of the conversation, so fewer people see them.',
+          ),
+          a('f2351b97', 'Flagged accounts'),
+          a('de9b6641', 'If we autoblock an account, it’ll show up here.'),
           a('c6cb90eb', 'Safety Mode'),
           a('fabe1397', 'Autoblocks'),
           a('c0786021', 'Autoblocked accounts'),
@@ -4530,7 +4541,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f0c37ddb', function (e) {
             return e.fullName + ' on Twitter: "' + e.tweetText + '"'
           }),
-          a('e20404df', 'New reply'),
+          a('cf433585', 'Introducing'),
+          a('a603e958', 'Reply downvotes'),
+          a('f2be4e37', 'Tap to downvote'),
+          a('ib0b227c', 'See a reply that doesn’t seem relevant to the conversation? Let us know by downvoting.'),
+          a('fd961b0b', 'Downvotes are private'),
+          a(
+            'f4507358',
+            'Your votes aren’t public and won’t be shared with the Tweet author or others on the timeline.',
+          ),
+          a('df15f9c2', 'Help make Twitter better'),
+          a('a521859e', 'Your feedback helps us prioritize higher quality content for you — and everyone on Twitter.'),
           a('j88f27d8', 'Relevant people'),
           a('g9079b93', 'You may only view analytics about your own Tweets.'),
           a('a57daeb1', 'Tweet Analytics'),
@@ -4636,28 +4657,22 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('db841200', 'Boost engagement, reach more people, and spread the word about your page.'),
           a('hc67be9d', 'Get Started'),
           a('fcc839b5', 'What’s your goal?'),
-          a('c3fca124', 'Boost engagement'),
-          a('eaf67a47', 'Gain more followers'),
-          a('i96f1aa4', 'Increase website visits'),
+          a('d80964aa', 'Increase engagement'),
+          a('d4f57cce', 'Grow your followers'),
+          a('g06d6bf8', 'More link clicks'),
           a('c1a1817b', 'Your Tweet includes media'),
           a('efc9b3fe', 'The media included in this Tweet won’t display with this goal selected.'),
           a('h277a2e8', 'Add a link to your Tweet'),
-          a('f567674f', 'For this goal, make sure your Tweet includes a link.'),
+          a('gd429fea', 'Make sure your Tweet includes a link.'),
           a('icb22cdd', 'Help me choose the right goal.'),
           a(
-            'f7aa864c',
-            'Choose this option if you want to focus on getting more engagement (clicks, Retweets, comments etc) on a particular Tweet.',
+            'e974b2d4',
+            'Choose this if you want to focus on getting more clicks, Retweets, comments etc., on a particular Tweet.',
           ),
-          a(
-            'daac06fd',
-            'Choose this option if you want to focus on growing your follower base and reaching those who don’t currently follow you.',
-          ),
-          a(
-            'cd1cab05',
-            'Choose this option if your focus is getting people to follow a link you’ve included in your Tweet. ',
-          ),
-          a('c3f683e7', '#Promotiongoals'),
-          a('a0abfe26', 'Do you need help in choosing the right goal for your promotion? Read the options below.'),
+          a('b9c9b214', 'Choose this if you want to focus on reaching those who don’t currently follow you.'),
+          a('i0e569bf', 'Choose this if your focus is getting people to follow a link you’ve included in your Tweet.'),
+          a('d7d55f3b', '#PromotionGoals'),
+          a('b25fd3d6', 'What results are you looking for from this promotion?'),
           a('bf214f47', 'Okay'),
           a('c3c57e3e', 'Review promotion'),
           a('h06724b4', 'Once started, you can pause spending on this Tweet at any time.'),
@@ -4698,8 +4713,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bd7c039f', 'Quote Tweets'),
           a('b13974f0', 'Loading users who liked this Tweet'),
           a('hfb8fd58', 'Loading users who retweeted this Tweet'),
-          a('d25289b4', 'Retweeted by'),
-          a('aca3184d', 'Loading users who reacted to this Tweet'),
+          a('d25289b4', 'Retweeted by')
+        a('aca3184d', 'Loading users who reacted to this Tweet'),
           a('h7f7183f', function (e) {
             return 'All ' + e.count
           }),
@@ -4737,8 +4752,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'h0f8563b',
             'Enjoy an ad-free reading experience, across a network of US-based popular publishers - not including paywall access.',
           ),
-          a('a7f3dfc9', 'Easily see the most-shared articles in your network over the last 24 hours.')
-        a('b62d6e4c', 'Reader'),
+          a('a7f3dfc9', 'Easily see the most-shared articles in your network over the last 24 hours.'),
+          a('b62d6e4c', 'Reader'),
           a('a24965fb', 'Turn long threads into a more beautiful reading experience.'),
           a('cd2b9647', 'Customize your Twitter experience'),
           a('hdc87500', 'Bookmark Folders'),
@@ -4838,13 +4853,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e3deb125', 'List suggestions'),
           a('h421e74c', 'Suggested Lists'),
           a('e5e4d3a9', 'Check back later to see suggested Lists.'),
+          a('c1a40fd4', 'View NFT details'),
+          a('b5e39690', 'Verified on OpenSea'),
+          a('h369923d', 'On OpenSea'),
           a('dcbace0b', 'NFT Details'),
           a('d4741cb3', 'Blockchain'),
           a('b748db08', 'Contract Address'),
           a('accae48c', 'Token ID'),
           a('h8fe11ab', 'Token Standard'),
-          a('b5e39690', 'Verified on OpenSea'),
-          a('h369923d', 'On OpenSea'),
           a('e6aa52a9', 'Creator'),
           a('eb023c93', 'What is an NFT?'),
           a(
@@ -5348,9 +5364,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h9b3104d', 'Video Settings'),
           a('ccc97152', 'Playback speed'),
           a('cd6e0e5f', 'Press the speed you would like to watch the video in.'),
+          a('a0551d36', '0.25x speed'),
           a('if8ee0cd', '0.5x speed'),
-          a('h1db3dc5', 'Normal'),
+          a('e4347df3', '0.75x speed'),
+          a('e14d60ca', '1x speed'),
+          a('bf7aa0dd', '1.25x speed'),
           a('j2476269', '1.5x speed'),
+          a('d6a09fad', '1.75x speed'),
           a('e2457653', '2x speed'),
           a('b3160a69', function (e) {
             return e.volumePercent + ' percent'
@@ -5731,8 +5751,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cfd13f46', 'Voice Dock')
         var c = o('ERkP'),
           s = [],
-          u = {}
-        function d(e) {
+          d = {}
+        function u(e) {
           return e
         }
         var f = (function (e) {
@@ -8067,7 +8087,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 get: function () {
                   var e,
                     t = c.Children.toArray(this.props.children),
-                    o = ((e = this.props.$i18n), s[u[e]] || d)
+                    o = ((e = this.props.$i18n), s[d[e]] || u)
                   return function (e, a, n) {
                     return e.concat(a, t[o(n)])
                   }
