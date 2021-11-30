@@ -260,6 +260,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bb1d57b6', 'Leave'),
           a('i7f853ea', 'Share with people outside of Twitter'),
           a('g646959f', 'Learn more'),
+          a('a5bf5489', 'Tweeps only'),
           a('cc53ae41', 'Recording ended'),
           a('cededf29', 'Host'),
           a('f77997bf', 'Co-host'),
@@ -637,7 +638,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e5b0063d', function (e) {
             return 'Timeline: ' + e.title
           }),
-          a('dabdea6b', 'Compose a Direct Message'),
+          a('h845f281', 'Direct Message'),
           a('f325afc3', 'Compose a DM'),
           a('ga169e1b', function (e) {
             return 'Direct Messages (' + e.count + ' unread conversation' + n(e.count, '', 's') + ')'
@@ -1112,7 +1113,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cface2d0', function (e) {
             return 'Member' + n(e.count, '', 's')
           }),
-          a('g3598a77', 'Show new Tweets'),
           a('d6917e0c', function (e) {
             return 'Show ' + e.count + ' Tweet' + n(e.count, '', 's')
           }),
@@ -1828,6 +1828,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hcf35d0c', function (e) {
             return 'Save theme as ' + e.themeName
           }),
+          a('aefc5b20', 'Color options'),
           a(
             'd94edeb4',
             'Your Community can have up to 10 rules. Clear rules can encourage respectful participation and help keep conversations on track.',
@@ -2015,10 +2016,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cce30dcc', 'Tag location'),
           a('b25fe02d', 'You don’t have a message selected'),
           a('b81d9b9b', 'Choose one from your existing messages, or start a new one.'),
-          a(
-            'a5359aac',
-            'This is where you’ll see messages from people you don’t follow. They won’t know you’ve seen the request until you accept it.',
-          ),
+          a('f37a6f73', 'Learn more'),
           a('e3719c15', 'Accessibility'),
           a('cad53943', 'Privacy and safety'),
           a('e95b9448', 'General'),
@@ -2249,9 +2247,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'ab4eae60',
             'At least three bylines or credits in qualifying publications published within the last six months.',
-          ),
-          a('b3fac982', 'The URL provided links to the specific page referencing me.')
-        a('e26dc9e2', 'Add notable work'),
+          )
+        a('b3fac982', 'The URL provided links to the specific page referencing me.'),
+          a('e26dc9e2', 'Add notable work'),
           a('e164df2d', 'Do the articles provided meet the notability criteria?'),
           a(
             'i80ff05e',
@@ -2628,7 +2626,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d3d48f39', 'Light'),
           a('i76f67ed', 'Dim'),
           a('c8f85960', 'Lights out'),
-          a('aefc5b20', 'Color options'),
           a('fee1cd64', 'Pink'),
           a('ea1c87a5', function (e) {
             return (
@@ -6626,6 +6623,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'a6d33440',
                 get: function () {
                   return ['You kept @', '’s Tweet']
+                },
+              },
+              {
+                key: 'i38f9270',
+                get: function () {
+                  return [
+                    'This is where you’ll see message requests from people you don’t follow. To reply to their messages, you need to accept the request. ',
+                  ]
                 },
               },
               {
