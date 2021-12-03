@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [116],
+    [117],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -11,7 +11,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(273).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(274).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -1299,6 +1299,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e2462db4', 'Most shared in your network · Last 24 hours'),
           a('e950f6ef', 'No articles have been shared in your network.'),
           a('e7dcfb8f', 'more accounts'),
+          a('c249ef57', 'from Twitter Blue'),
           a('gaa01f2c', 'Twitter Spaces'),
           a('fec3c1ef', 'Where live audio conversations happen'),
           a('ce447fcb', function (e) {
@@ -2239,12 +2240,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a05b8445', 'Freelance journalist'),
           a('hdad12b1', 'Independent, freelance journalists with notable work in verified publications.'),
           a('a18c6dfb', 'Journalist'),
-          a('h0b46533', 'Individual journalists employed by verified news organizations or publications.'),
-          a('d2d7af4b', 'News organization or publication')
-        a(
-          'd83e51db',
-          'Print and digital publications; broadcast, cable, satellite, and streaming TV and radio news networks, stations and programs; podcasts; and other similar media.',
-        ),
+          a('h0b46533', 'Individual journalists employed by verified news organizations or publications.')
+        a('d2d7af4b', 'News organization or publication'),
+          a(
+            'd83e51db',
+            'Print and digital publications; broadcast, cable, satellite, and streaming TV and radio news networks, stations and programs; podcasts; and other similar media.',
+          ),
           a('g708cbdb', 'Does your profile meet the verification requirements?'),
           a('b107ee5b', 'News organizations must have a public account that links to their official website.'),
           a('e8746826', 'I have confirmed that my employer’s account is already verified.'),
@@ -3525,8 +3526,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cc950d94', 'Manage who can message you directly.'),
           a('fe37f854', 'Manage who can see your Spaces listening activity'),
           a('d3d319d5', 'Data sharing and off-Twitter activity'),
-          a('d035a8d0', 'Ads preferences'),
-          a('f9ff2201', 'Manage your ads experience on Twitter.')
+          a('d035a8d0', 'Ads preferences')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3543,7 +3543,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('bcae496c', 'Off-Twitter activity'),
+        a('f9ff2201', 'Manage your ads experience on Twitter.'),
+          a('bcae496c', 'Off-Twitter activity'),
           a(
             'acc60551',
             'Manage how Twitter uses your online activity outside of Twitter, such as the websites you visit, to personalize your experience.',
@@ -3931,11 +3932,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               ' device. You’ll need to manage or cancel your subscription from that platform.'
             )
           }),
-          a('e7172d70', 'Additional messages'),
-          a('bef0039f', 'You don’t have any message requests'),
           a('a74e7c76', function (e) {
             return e.count + ' unread request' + n(e.count, '', 's')
           }),
+          a('bef0039f', 'You don’t have any message requests'),
           a('eb7de4a9', 'Show additional messages, including those that may contain offensive content.'),
           a('f5dc353c', 'Now filtering graphic media'),
           a(
@@ -3943,6 +3943,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Warnings will now be displayed over messages detected to contain potentially graphic media (like nudity, sexual content, or violence). You can always turn this off later in Settings.',
           ),
           a('daeda053', 'Go to Settings'),
+          a('e7172d70', 'Additional messages'),
           a('ff599111', 'Create a group'),
           a('c6026009', 'Add people'),
           a('a7013cb6', 'Send Tweet separately'),
@@ -4717,9 +4718,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d80c77dc', 'You hid these replies'),
           a('ef939f4b', function (e) {
             return 'Replies hidden by @' + e.screenName
-          }),
-          a('f7f2db4f', 'This Tweet doesn’t have hidden replies')
-        a('a7511618', 'Learn more'),
+          })
+        a('f7f2db4f', 'This Tweet doesn’t have hidden replies'),
+          a('a7511618', 'Learn more'),
           a('b98764b1', 'There are no tagged users in this Tweet.'),
           a('cb2054fa', 'Loading users'),
           a('e4ad6bda', 'In this photo'),
