@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [115],
+    [116],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -11,7 +11,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(269).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(273).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -232,6 +232,25 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c220921d', 'Learn more'),
           a('j5485ede', 'Adjust settings'),
           a('cdffdeb1', 'Learn more'),
+          a('bb1d57b6', 'Leave'),
+          a('ifea3114', 'Share'),
+          a('i7f853ea', 'Share with people outside of Twitter'),
+          a('g646959f', 'Learn more'),
+          a('c63dd2cb', 'Join this live conversation with me!'),
+          a('fcc684a9', 'Tweet this'),
+          a('f61c4bbf', 'Send via Direct Message'),
+          a('e05c00b4', 'Copy link'),
+          a('if23a251', 'Share via...'),
+          a('c0530da5', 'Share Menu'),
+          a('f88553c8', 'Copied to clipboard'),
+          a('gb5851d7', function (e) {
+            return e.prefix + ' ' + e.url
+          }),
+          a('e674c120', 'Show captions'),
+          a('f45bace3', 'Hide captions'),
+          a('ce96f1db', 'Captions unavailable'),
+          a('a5bf5489', 'Tweeps only'),
+          a('cc53ae41', 'Recording ended'),
           a('h63a5c3b', 'More'),
           a('jf9f3e53', 'Skip forward 15 seconds'),
           a('ic1e826e', 'Play'),
@@ -243,25 +262,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f03848b8', 'Normal'),
           a('j0e5c2cd', '1.5x speed'),
           a('b3f2318d', '2x speed'),
-          a('e674c120', 'Show captions'),
-          a('f45bace3', 'Hide captions'),
-          a('ce96f1db', 'Captions unavailable'),
-          a('ifea3114', 'Share'),
-          a('c63dd2cb', 'Join this live conversation with me!'),
-          a('fcc684a9', 'Tweet this'),
-          a('f61c4bbf', 'Send via Direct Message'),
-          a('e05c00b4', 'Copy link'),
-          a('if23a251', 'Share via...'),
-          a('c0530da5', 'Share Menu'),
-          a('f88553c8', 'Copied to clipboard'),
-          a('gb5851d7', function (e) {
-            return e.prefix + ' ' + e.url
-          }),
-          a('bb1d57b6', 'Leave'),
-          a('i7f853ea', 'Share with people outside of Twitter'),
-          a('g646959f', 'Learn more'),
-          a('a5bf5489', 'Tweeps only'),
-          a('cc53ae41', 'Recording ended'),
           a('cededf29', 'Host'),
           a('f77997bf', 'Co-host'),
           a('i48f4ed8', 'Speaker'),
@@ -1659,8 +1659,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ed88e742', 'Copy link to Topic'),
           a('e96677aa', 'Unfortunately, Birdwatch is not available to you at this time.'),
           a('f026d2ee', 'Birdwatch is currently only available in the U.S.'),
-          a('j45c642d', 'Folders aren’t loading right now'),
           a('f8fc0b47', 'Create a Folder'),
+          a('j45c642d', 'Folders aren’t loading right now'),
           a('adad5408', 'New folder'),
           a('be329aab', 'Bookmark Tweets to save them for later'),
           a(
@@ -1726,7 +1726,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a7c2e06c', function (e) {
             return e.communityName + ' Community'
           }),
-          a('b33e4e4a', 'Loading Communities'),
           a('cc683fb9', 'About Community'),
           a('af7c11a9', 'Community Info'),
           a('db1b9462', 'Only members can Tweet, like, or reply.'),
@@ -1740,6 +1739,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('ba2e6395', 'Support & resources'),
           a('a0e3ece4', 'Community Detail'),
+          a('d601fc2f', 'Latest'),
           a('b139b549', 'Invite members'),
           a('hb9400db', 'See More'),
           a('aa7ae3f6', 'Joined'),
@@ -1758,6 +1758,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d68146c0', 'When anyone in this Community Tweets, they’ll show up here.'),
           a('h5245afa', 'Community'),
           a('f05dbeff', 'Loading Tweets'),
+          a('bf359e0d', 'About your new Community'),
+          a(
+            'e8fcdd3a',
+            'We start you out with some basic settings, but your Community is completely customizable. We’ll get into that next.',
+          ),
+          a('h54d99da', 'Your Community is invite-only'),
+          a('f30c8202', 'Everyone can discover your Community. To join, people must be invited.'),
+          a('ca7eeabf', 'Your starter Community rules are'),
+          a('a55eca58', function (e) {
+            return 'Your theme is ' + e.title
+          }),
+          a('e97cf2bc', 'Not feeling it? No problem. It’s easy enough to change.'),
           a('h4fbfa57', 'Agree and join'),
           a('dc1b14a1', function (e) {
             return 'Review and agree to ' + e.communityName + ' Rules'
@@ -1812,6 +1824,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ea965b81', 'Edit Community Banner'),
           a('c1ca95bd', 'Crop Banner'),
           a('e71cdf4d', 'Crop Thumbnail'),
+          a('gea6cc19', 'Are you sure?'),
+          a('j35d3ad6', 'Remove and replace'),
+          a('f1e8fb21', 'Your banner will be removed and replaced with the default banner.'),
+          a('e405ec21', 'Looks like we’re having trouble saving your banner image. Please try again later.'),
           a('a753a87f', 'Apply'),
           a('b87ca51a', 'Remove photo'),
           a('eebff22c', 'Crop photo'),
@@ -1828,7 +1844,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hcf35d0c', function (e) {
             return 'Save theme as ' + e.themeName
           }),
-          a('aefc5b20', 'Color options'),
+          a('da48b72c', 'Theme options'),
           a(
             'd94edeb4',
             'Your Community can have up to 10 rules. Clear rules can encourage respectful participation and help keep conversations on track.',
@@ -1866,7 +1882,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Communities need at least one rule. You can edit what you have, or add another rule and then delete this one.',
           ),
           a('fbb0ed91', 'Delete this rule'),
-          a('gea6cc19', 'Are you sure?'),
           a('hed35471', 'Deleting a rule is permanent and can’t be undone.'),
           a('c8677445', 'Delete rule'),
           a('c3a0d44e', 'Cancel and edit rule instead'),
@@ -2225,11 +2240,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hdad12b1', 'Independent, freelance journalists with notable work in verified publications.'),
           a('a18c6dfb', 'Journalist'),
           a('h0b46533', 'Individual journalists employed by verified news organizations or publications.'),
-          a('d2d7af4b', 'News organization or publication'),
-          a(
-            'd83e51db',
-            'Print and digital publications; broadcast, cable, satellite, and streaming TV and radio news networks, stations and programs; podcasts; and other similar media.',
-          ),
+          a('d2d7af4b', 'News organization or publication')
+        a(
+          'd83e51db',
+          'Print and digital publications; broadcast, cable, satellite, and streaming TV and radio news networks, stations and programs; podcasts; and other similar media.',
+        ),
           a('g708cbdb', 'Does your profile meet the verification requirements?'),
           a('b107ee5b', 'News organizations must have a public account that links to their official website.'),
           a('e8746826', 'I have confirmed that my employer’s account is already verified.'),
@@ -2247,8 +2262,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'ab4eae60',
             'At least three bylines or credits in qualifying publications published within the last six months.',
-          )
-        a('b3fac982', 'The URL provided links to the specific page referencing me.'),
+          ),
+          a('b3fac982', 'The URL provided links to the specific page referencing me.'),
           a('e26dc9e2', 'Add notable work'),
           a('e164df2d', 'Do the articles provided meet the notability criteria?'),
           a(
@@ -2626,6 +2641,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d3d48f39', 'Light'),
           a('i76f67ed', 'Dim'),
           a('c8f85960', 'Lights out'),
+          a('aefc5b20', 'Color options'),
           a('fee1cd64', 'Pink'),
           a('ea1c87a5', function (e) {
             return (
@@ -3510,24 +3526,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fe37f854', 'Manage who can see your Spaces listening activity'),
           a('d3d319d5', 'Data sharing and off-Twitter activity'),
           a('d035a8d0', 'Ads preferences'),
-          a('f9ff2201', 'Manage your ads experience on Twitter.'),
-          a('bcae496c', 'Off-Twitter activity'),
-          a(
-            'acc60551',
-            'Manage how Twitter uses your online activity outside of Twitter, such as the websites you visit, to personalize your experience.',
-          ),
-          a('h14ba864', 'Data sharing with business partners'),
-          a('d7fcc4fa', 'Allow sharing of additional information with Twitter’s business partners.'),
-          a('a686c489', 'Manage the location information Twitter uses to personalize your experience.'),
-          a('cdcef7b6', 'Learn more about privacy on Twitter'),
-          a('a607862a', 'Privacy policy'),
-          a('g5925628', 'Contact us'),
-          a('dd6012f7', 'Privacy center'),
-          a(
-            'e860ff84',
-            'When selected, your Tweets and other account information are only visible to people who follow you.',
-          ),
-          a('c0a55f4a', 'Mark media you Tweet as having material that may be sensitive')
+          a('f9ff2201', 'Manage your ads experience on Twitter.')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3544,10 +3543,27 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a(
-          'ea28ca63',
-          'When enabled, pictures and videos you Tweet will be marked as sensitive for people who don’t want to see sensitive content.',
-        ),
+        a('bcae496c', 'Off-Twitter activity'),
+          a(
+            'acc60551',
+            'Manage how Twitter uses your online activity outside of Twitter, such as the websites you visit, to personalize your experience.',
+          ),
+          a('h14ba864', 'Data sharing with business partners'),
+          a('d7fcc4fa', 'Allow sharing of additional information with Twitter’s business partners.'),
+          a('a686c489', 'Manage the location information Twitter uses to personalize your experience.'),
+          a('cdcef7b6', 'Learn more about privacy on Twitter'),
+          a('a607862a', 'Privacy policy'),
+          a('g5925628', 'Contact us'),
+          a('dd6012f7', 'Privacy center'),
+          a(
+            'e860ff84',
+            'When selected, your Tweets and other account information are only visible to people who follow you.',
+          ),
+          a('c0a55f4a', 'Mark media you Tweet as having material that may be sensitive'),
+          a(
+            'ea28ca63',
+            'When enabled, pictures and videos you Tweet will be marked as sensitive for people who don’t want to see sensitive content.',
+          ),
           a('c58de5b1', 'When Safety Mode is on, here’s what happens'),
           a('b92fa3be', 'Twitter does the work, so you don’t have to'),
           a(
@@ -3883,7 +3899,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'ccfdbb86',
             'Select which types of Tweets you want to undo before they’re public, plus the length of your undo period.',
           ),
-          a('c1e72952', 'Check out which sites are on our growing network of Twitter Blue Publishers.'),
+          a(
+            'd15f6d3d',
+            'Check out which sites are on our growing network of Twitter Blue Publishers. Doesn’t include paywall access right now.',
+          ),
           a('jc8487c1', 'You’re supporting journalism each time you read ad-free with Twitter Blue.'),
           a('ad45e9b2', 'View your subscription details or cancel.'),
           a('db529452', 'Subscription'),
@@ -4438,7 +4457,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return e.query + ' - Twitter Search'
           }),
           a('i66136a9', 'Top'),
-          a('d601fc2f', 'Latest'),
           a('ac4fb0f3', 'Photos'),
           a('bb967f9e', 'Videos'),
           a('gfcfbf8b', 'Your search was saved.'),
@@ -4578,6 +4596,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d0eeb126', function (e) {
             return e.replyCount + ' repl' + n(e.replyCount, 'y', 'ies')
           }),
+          a('db6efeb8', 'Your promotion is running'),
+          a('j6daea85', 'Your promotion is paused'),
+          a('hf9ed10f', function (e) {
+            return e.endTimeString + ' · ' + e.endDateString
+          }),
           a('a63a89fe', 'Your promotion is complete'),
           a('f4e13456', function (e) {
             return 'This Tweet has earned ' + e.impressions + ' new impression' + n(e.impressions, '', 's')
@@ -4594,10 +4617,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('f96eec3c', 'Get more impressions and grow your brand. Promote this Tweet and broaden your reach.'),
           a('e9891f7c', 'Promote this Tweet'),
-          a('db6efeb8', 'Your promotion is running'),
-          a('hf9ed10f', function (e) {
-            return e.endTimeString + ' · ' + e.endDateString
-          }),
           a('jede3014', 'Your promotion is under review'),
           a('i094e43b', 'Once it’s approved, your Tweet will be promoted to the audience you selected.'),
           a('f638d3e0', 'Review Twitter’s Ads Policy'),
@@ -4673,10 +4692,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bf214f47', 'Okay'),
           a('c3c57e3e', 'Review promotion'),
           a('h06724b4', 'Once started, you can pause spending on this Tweet at any time.'),
-          a('f668d4f3', 'Promotion objective'),
+          a('a96f811e', 'Promotion goal'),
           a('b069d89c', 'Audience'),
           a('e36bce63', 'Payment method'),
           a('i41612d9', 'Create promotion'),
+          a('cdae1af0', 'Add tax information'),
           a('ed8bb5af', 'Add payment details'),
           a('be2dc078', 'Sign up and add payment details'),
           a('da2805d1', 'A campaign for this tweet has already been created.'),
@@ -4698,8 +4718,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ef939f4b', function (e) {
             return 'Replies hidden by @' + e.screenName
           }),
-          a('f7f2db4f', 'This Tweet doesn’t have hidden replies'),
-          a('a7511618', 'Learn more'),
+          a('f7f2db4f', 'This Tweet doesn’t have hidden replies')
+        a('a7511618', 'Learn more'),
           a('b98764b1', 'There are no tagged users in this Tweet.'),
           a('cb2054fa', 'Loading users'),
           a('e4ad6bda', 'In this photo'),
@@ -4710,8 +4730,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bd7c039f', 'Quote Tweets'),
           a('b13974f0', 'Loading users who liked this Tweet'),
           a('hfb8fd58', 'Loading users who retweeted this Tweet'),
-          a('d25289b4', 'Retweeted by')
-        a('aca3184d', 'Loading users who reacted to this Tweet'),
+          a('d25289b4', 'Retweeted by'),
+          a('aca3184d', 'Loading users who reacted to this Tweet'),
           a('h7f7183f', function (e) {
             return 'All ' + e.count
           }),
@@ -4851,8 +4871,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h421e74c', 'Suggested Lists'),
           a('e5e4d3a9', 'Check back later to see suggested Lists.'),
           a('c1a40fd4', 'View NFT details'),
-          a('b5e39690', 'Verified on OpenSea'),
-          a('h369923d', 'On OpenSea'),
+          a('e83b141e', 'Verified collection by OpenSea'),
           a('dcbace0b', 'NFT Details'),
           a('d4741cb3', 'Blockchain'),
           a('b748db08', 'Contract Address'),
@@ -4861,8 +4880,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e6aa52a9', 'Creator'),
           a('eb023c93', 'What is an NFT?'),
           a(
-            'c10b4998',
-            'NFTs (short for Non Fungible Tokens) are digital items that you own. Proof of ownership is stored on a blockchain, a digital database that is publicly accessible.',
+            'ad5dfe8f',
+            'NFTs (short for Non-Fungible Tokens) are digital items that you own. Proof of ownership is stored on a blockchain, a digital database that is publicly accessible.',
           ),
           a('hb7d1bb4', 'More on Opensea'),
           a('c6000492', 'Owner'),
@@ -4968,6 +4987,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'i622ef86',
             'You’re seeing this warning because they may have potentially violated the Twitter Rules. Do you still want to view it?',
           ),
+          a('ebf5ec25', 'Coming soon'),
+          a('c405ac8d', 'Introducing NFT profile pictures'),
+          a('gc65c0a9', 'So what does this mean?'),
+          a('d17e8aa3', 'To choose an NFT as your profile picture you must connect your crypto wallet'),
+          a('ff9c6943', 'NFT profile pictures are displayed in a special hexagonal shape'),
           a('h6ed267b', function (e) {
             return 'Loading Super Follows Tweets by @' + e.screenName
           }),
@@ -5647,6 +5671,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c8891d06', 'Tomorrow'),
           a('d6b930d3', 'Try again'),
           a('aafa48c2', 'Something went wrong.'),
+          a('a0af935b', 'Liked'),
+          a('fbaa28ef', 'Reacted'),
+          a('f9be84f0', 'Downvoted'),
+          a('g23ce6f0', 'Retweeted'),
+          a('b75196a4', 'Slide finger to pick a reaction'),
           a('b03835c7', function (e) {
             return e.replyCount + ' repl' + n(e.replyCount, 'y', 'ies')
           }),
@@ -5659,11 +5688,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d8320937', function (e) {
             return e.reactionCount + ' reaction' + n(e.reactionCount, '', 's')
           }),
-          a('a0af935b', 'Liked'),
-          a('fbaa28ef', 'Reacted'),
-          a('f9be84f0', 'Downvoted'),
-          a('g23ce6f0', 'Retweeted'),
-          a('b75196a4', 'Slide finger to pick a reaction'),
           a('f2849136', 'Analytics'),
           a('dedf22f3', 'View Tweet activity'),
           a('d2b2b8e5', 'Downvote'),
@@ -5748,8 +5772,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cfd13f46', 'Voice Dock')
         var c = o('ERkP'),
           s = [],
-          d = {}
-        function u(e) {
+          u = {}
+        function d(e) {
           return e
         }
         var f = (function (e) {
@@ -8092,7 +8116,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 get: function () {
                   var e,
                     t = c.Children.toArray(this.props.children),
-                    o = ((e = this.props.$i18n), s[d[e]] || u)
+                    o = ((e = this.props.$i18n), s[u[e]] || d)
                   return function (e, a, n) {
                     return e.concat(a, t[o(n)])
                   }
