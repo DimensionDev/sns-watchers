@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [117],
+    [118],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -11,7 +11,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(274).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(277).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -887,6 +887,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f67de45a', 'Tweet Unretweeted'),
           a('e0be2c22', 'Tweet downvoted'),
           a('e32e0d92', 'Downvote removed'),
+          a('bd7d377e', 'Thanks, your feedback helps us make Twitter better for everyone.'),
+          a('ae768646', 'Thanks for your feedback. Want to tell us why you downvoted this reply?'),
+          a('c1a50438', 'Let us know'),
+          a('fd961b0b', 'Downvotes are private'),
+          a(
+            'f4507358',
+            'Your votes aren’t public and won’t be shared with the Tweet author or others on the timeline.',
+          ),
           a('jc4cb6c4', 'Only Super Followers can see this Retweet'),
           a('c2453317', 'Add to Folder'),
           a('b5b36724', 'Reply instead?'),
@@ -1138,15 +1146,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('edae65de', 'Your image doesn’t have a description.'),
           a('a859846a', 'Your images don’t have descriptions.'),
           a('e90118f5', 'One of your images doesn’t have a description.'),
-          a('c211dcb1', 'Some of your images don’t have descriptions.'),
-          a('d7c26bfb', 'Describe what’s in the image and why it’s important here.'),
+          a('c211dcb1', 'Some of your images don’t have descriptions.')
+        a('d7c26bfb', 'Describe what’s in the image and why it’s important here.'),
           a('a75e3ccc', 'Describe what’s in the images and why they’re important here.'),
           a('dcb7e3a0', 'Write out text, summarize longer text, and try to keep it short.'),
           a('c1bf53b0', function (e) {
             return 'Add ' + n(e.numOfDescriptions, 'a description', 'descriptions')
           }),
-          a('bb8170da', 'Not this time')
-        a('dad5a4b8', 'Your Tweet was sent.'),
+          a('bb8170da', 'Not this time'),
+          a('dad5a4b8', 'Your Tweet was sent.'),
           a('e65aed64', 'Your Tweets were sent.'),
           a('d8222374', 'Discard Tweet?'),
           a('j890123a', 'Discard thread?'),
@@ -1568,7 +1576,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ac7f9745', 'What was helpful about it?'),
           a('c7751803', 'What was unhelpful about it?'),
           a('e2988ed0', 'How can we improve the note rating experience?'),
-          a('c1a50438', 'Let us know'),
           a('f2ceaed4', 'Helpful'),
           a('i7d91dc8', 'Somewhat Helpful'),
           a('c206a60f', 'Not Helpful'),
@@ -2152,18 +2159,26 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e1c78795', 'Official website'),
           a('cf93bcbf', 'Official website reference'),
           a('a7f1cff6', 'Add official website reference'),
+          a('c6bd60ec', 'Activist or organizer'),
           a('je403ac5', 'Company, brand, or organization'),
           a('ff8c97fb', 'Entertainer or entertainment group'),
           a('h4d652fb', 'Government official or affiliate'),
-          a('g945ea3f', 'Activist or influential individual'),
+          a('c5b72ac5', 'Content creator or influential individual'),
           a('f7ff070c', 'News organization or journalist'),
           a('eb7de689', 'Professional sports or gaming entity'),
           a('cc4b66b5', 'Select a category'),
           a('b37461a4', 'Select an account type'),
+          a('b27325f6', 'Content creator'),
+          a('a5a6affb', 'Influential digital content creators that consistently publish engaging, original content.'),
           a('a15326dd', 'At least three articles from qualifying news publications that reference you.'),
           a(
             'g704a939',
             'An official site associated with known advocacy work that references you in a leadership position.',
+          ),
+          a('d2ea2049', 'Other influential individual'),
+          a(
+            'h753ddd2',
+            'Individuals with a significant presence on and off the Twitter platform that do not fall into other categories.',
           ),
           a('ff929feb', 'Prominent organization or affiliate'),
           a(
@@ -2178,8 +2193,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j0bc23f3', 'I have confirmed that my organization’s account is already verified.'),
           a('aa6228de', 'Entertainment company'),
           a('d5b3cbc9', 'Major entertainment companies, such as television networks, film studios, and music labels.'),
-          a('b27325f6', 'Content creator'),
-          a('a5a6affb', 'Influential digital content creators that consistently publish engaging, original content.'),
           a('b5a3e590', 'Individual in entertainment'),
           a(
             'e484f794',
@@ -2233,15 +2246,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('e95c44dd', 'Yes, it’s complete'),
           a('fa5e15e1', 'I need to update'),
-          a('jdf47e8d', 'Campaign website'),
-          a('eeec7315', 'Add campaign website'),
+          a('jdf47e8d', 'Campaign website')
+        a('eeec7315', 'Add campaign website'),
           a('b163b653', 'Government reference'),
           a('d2378d34', 'Add government reference'),
           a('a05b8445', 'Freelance journalist'),
           a('hdad12b1', 'Independent, freelance journalists with notable work in verified publications.'),
           a('a18c6dfb', 'Journalist'),
-          a('h0b46533', 'Individual journalists employed by verified news organizations or publications.')
-        a('d2d7af4b', 'News organization or publication'),
+          a('h0b46533', 'Individual journalists employed by verified news organizations or publications.'),
+          a('d2d7af4b', 'News organization or publication'),
           a(
             'd83e51db',
             'Print and digital publications; broadcast, cable, satellite, and streaming TV and radio news networks, stations and programs; podcasts; and other similar media.',
@@ -2309,21 +2322,22 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'An official site associated with a verified esports league or event that references you as an individual in gaming.',
           ),
           a('j3da4de9', 'You can’t request verification right now'),
+          a('ff2ee0c1', 'Activism'),
           a('af39265e', 'Companies, Brands, and Organizations'),
           a('hc61adfb', 'Entertainment'),
           a('d2042392', 'Government'),
-          a('e5cbc249', 'Activists and influential individuals'),
           a('c8ee31da', 'News'),
           a('bb51cd79', 'Sports and gaming'),
-          a('g0c3c8b4', 'Influential Individual'),
           a('c076e32d', 'Learn more'),
           a('e492eeb4', 'Learn more'),
           a('ece0b9bc', 'Learn more'),
-          a('e1a82c8c', 'Learn more'),
-          a('hb96cb36', 'Learn more'),
+          a('db252639', 'Learn more'),
+          a('b25b02c1', 'Learn more'),
           a('j6ef6afa', 'Learn more'),
           a('d42d1629', 'Learn more'),
           a('ccadfc84', 'Learn more'),
+          a('ddb47f56', 'Learn more'),
+          a('bf9e181a', 'Learn more'),
           a('e8e39f94', 'Learn more'),
           a('e126dd3e', 'Learn more'),
           a('gbdf1325', 'Learn more'),
@@ -2345,7 +2359,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h84f1fe0', 'Learn more'),
           a('bd70d5d0', 'Learn more'),
           a('h9ec0778', 'Learn more'),
-          a('eadd29ff', 'Learn more'),
           a('f7998564', 'Learn more'),
           a('b4e93970', 'Learn more'),
           a('jb3e663d', 'Learn more'),
@@ -2454,16 +2467,25 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Provide a link that references your account as the official Twitter account of the candidate for office related to this request. The reference must come from the official website of a Verified entity.',
           ),
           a(
-            'b66ac2a7',
-            'Select a method to show that your account is authentic and managed by the activist or influential individual related to this request.',
+            'dcc23261',
+            'Select a method to show that your account is authentic and managed by the activist or organizer related to this request.',
           ),
           a(
-            'h52f5781',
-            'The official website of an advocacy organization that references you and your Twitter account.',
+            'h96ba9b6',
+            'An official website of an advocacy organization that references you and your Twitter account.',
           ),
           a(
             'e4610048',
             'Provide a link that references you in a leadership position for a Verified advocacy organization and your Twitter account. The reference must come from the official site of a Verified organization.',
+          ),
+          a(
+            'dedf41f1',
+            'Select a method to show that your account is authentic and managed by the influential individual related to this request.',
+          ),
+          a('c78e091a', 'An official website of a verified organization that references you and your Twitter account.'),
+          a(
+            'g5657ec3',
+            'Provide a link that references you and your Twitter account. The reference must come from the official site of a Verified organization.',
           ),
           a(
             'baf718c3',
@@ -3516,17 +3538,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e908903a', 'Audience and tagging'),
           a('h7a0dfbe', 'Manage what information you allow other people on Twitter to see.'),
           a('b38d81ae', 'Your Tweets'),
-          a('f8d4746b', 'Manage the information associated with your Tweets.'),
-          a('f2bd9c47', 'Content you see'),
-          a('b2810ee7', 'Decide what you see on Twitter based on your preferences like Topics and interests'),
-          a('f01fd982', 'Safety Mode (Beta)'),
-          a('dcc5aa06', 'Manage autoblocks and preferences.'),
-          a('cbd449af', 'Mute and block'),
-          a('ab125232', 'Manage the accounts, words, and notifications that you’ve muted or blocked.'),
-          a('cc950d94', 'Manage who can message you directly.'),
-          a('fe37f854', 'Manage who can see your Spaces listening activity'),
-          a('d3d319d5', 'Data sharing and off-Twitter activity'),
-          a('d035a8d0', 'Ads preferences')
+          a('f8d4746b', 'Manage the information associated with your Tweets.')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3543,7 +3555,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('f9ff2201', 'Manage your ads experience on Twitter.'),
+        a('f2bd9c47', 'Content you see'),
+          a('b2810ee7', 'Decide what you see on Twitter based on your preferences like Topics and interests'),
+          a('f01fd982', 'Safety Mode (Beta)'),
+          a('dcc5aa06', 'Manage autoblocks and preferences.'),
+          a('cbd449af', 'Mute and block'),
+          a('ab125232', 'Manage the accounts, words, and notifications that you’ve muted or blocked.'),
+          a('cc950d94', 'Manage who can message you directly.'),
+          a('fe37f854', 'Manage who can see your Spaces listening activity'),
+          a('d3d319d5', 'Data sharing and off-Twitter activity'),
+          a('d035a8d0', 'Ads preferences'),
+          a('f9ff2201', 'Manage your ads experience on Twitter.'),
           a('bcae496c', 'Off-Twitter activity'),
           a(
             'acc60551',
@@ -4561,11 +4583,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a603e958', 'Reply downvotes'),
           a('f2be4e37', 'Tap to downvote'),
           a('ib0b227c', 'See a reply that doesn’t seem relevant to the conversation? Let us know by downvoting.'),
-          a('fd961b0b', 'Downvotes are private'),
-          a(
-            'f4507358',
-            'Your votes aren’t public and won’t be shared with the Tweet author or others on the timeline.',
-          ),
           a('df15f9c2', 'Help make Twitter better'),
           a('a521859e', 'Your feedback helps us prioritize higher quality content for you — and everyone on Twitter.'),
           a('j88f27d8', 'Relevant people'),
@@ -4708,8 +4725,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cc642518', 'Search Locations'),
           a('i0e8c3c6', 'Location results'),
           a('f69ad048', 'Choose a location'),
-          a('hba1d105', 'Customize your audience'),
-          a('cba0133d', 'Choose the best audience for this Tweet.'),
+          a('hba1d105', 'Customize your audience')
+        a('cba0133d', 'Choose the best audience for this Tweet.'),
           a('e1efbead', 'Age range'),
           a('c6ff7c1f', 'Age range minimum'),
           a('b555fb45', 'Age range maximum'),
@@ -4718,8 +4735,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d80c77dc', 'You hid these replies'),
           a('ef939f4b', function (e) {
             return 'Replies hidden by @' + e.screenName
-          })
-        a('f7f2db4f', 'This Tweet doesn’t have hidden replies'),
+          }),
+          a('f7f2db4f', 'This Tweet doesn’t have hidden replies'),
           a('a7511618', 'Learn more'),
           a('b98764b1', 'There are no tagged users in this Tweet.'),
           a('cb2054fa', 'Loading users'),
@@ -5773,8 +5790,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cfd13f46', 'Voice Dock')
         var c = o('ERkP'),
           s = [],
-          u = {}
-        function d(e) {
+          d = {}
+        function u(e) {
           return e
         }
         var f = (function (e) {
@@ -6707,18 +6724,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'ff16a8f8',
+                key: 'hd977dd9',
                 get: function () {
                   return [
-                    'Pick a method to show that your account qualifies for verification as an activist, organizer, or influential individual. ',
+                    'Pick a method to show that your account qualifies for verification as an activist or organizer.',
                   ]
                 },
               },
               {
-                key: 'd9fedc53',
+                key: 'e3432573',
                 get: function () {
                   return [
-                    'You have not met the minimum follower or mention threshold for your region that is required to be verified as an activist or influential individual. ',
+                    'You have not met the minimum follower or mention threshold for your region that is required to be verified as an activist. ',
                   ]
                 },
               },
@@ -6743,6 +6760,22 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 get: function () {
                   return [
                     'Provide a link that references you in a leadership position for a Verified advocacy organization. The reference must come from the official site of a Verified organization. ',
+                  ]
+                },
+              },
+              {
+                key: 'af3fe861',
+                get: function () {
+                  return [
+                    'Pick a method to show that your account qualifies for verification as an influential individual. ',
+                  ]
+                },
+              },
+              {
+                key: 'a08d6af3',
+                get: function () {
+                  return [
+                    'You have not met the minimum follower or mention threshold for your region that is required to be verified as a content creator or influential individual. ',
                   ]
                 },
               },
@@ -6911,14 +6944,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 get: function () {
                   return [
                     'Provide a link to your content creator profile. Your creator profile can be on any digital platform but it must reference your Twitter handle. ',
-                  ]
-                },
-              },
-              {
-                key: 'c7f5bdf1',
-                get: function () {
-                  return [
-                    'You have not met the minimum follower or mention threshold for your region that is required to be verified as a content creator. ',
                   ]
                 },
               },
@@ -8117,7 +8142,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 get: function () {
                   var e,
                     t = c.Children.toArray(this.props.children),
-                    o = ((e = this.props.$i18n), s[u[e]] || d)
+                    o = ((e = this.props.$i18n), s[d[e]] || u)
                   return function (e, a, n) {
                     return e.concat(a, t[o(n)])
                   }
