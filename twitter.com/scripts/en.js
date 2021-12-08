@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [118],
+    [119],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -11,7 +11,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(277).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(282).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -1137,7 +1137,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('c837fca9', 'Show more replies'),
           a('d228a9a0', 'Show more'),
-          a('g0b48670', 'This conversation has too many replies to show them all.'),
           a('d28215f0', 'Sorry, polls are not allowed in Communities!'),
           a('ec909a54', function (e) {
             return 'Your Tweet' + n(e.numOfTweets, ' was', 's were') + ' sent to ' + e.communityName
@@ -1146,9 +1145,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('edae65de', 'Your image doesn’t have a description.'),
           a('a859846a', 'Your images don’t have descriptions.'),
           a('e90118f5', 'One of your images doesn’t have a description.'),
-          a('c211dcb1', 'Some of your images don’t have descriptions.')
-        a('d7c26bfb', 'Describe what’s in the image and why it’s important here.'),
-          a('a75e3ccc', 'Describe what’s in the images and why they’re important here.'),
+          a('c211dcb1', 'Some of your images don’t have descriptions.'),
+          a('d7c26bfb', 'Describe what’s in the image and why it’s important here.')
+        a('a75e3ccc', 'Describe what’s in the images and why they’re important here.'),
           a('dcb7e3a0', 'Write out text, summarize longer text, and try to keep it short.'),
           a('c1bf53b0', function (e) {
             return 'Add ' + n(e.numOfDescriptions, 'a description', 'descriptions')
@@ -1286,6 +1285,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ge52d1de', 'We’re asking people to review replies with potentially harmful or offensive language.'),
           a('bea869b3', 'Tweet'),
           a('d3145da8', 'Thanks for letting us know.'),
+          a('g0b48670', 'This conversation has too many replies to show them all.'),
           a('e25a0c3a', 'Promoted Tweet'),
           a('de128a2f', 'Turn on Tweet notifications'),
           a('aa6f3ca4', 'Turn off Tweet notifications'),
@@ -1408,7 +1408,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('db2b473e', 'Go to the app'),
           a('f5774e3a', 'Spaces Discovery'),
           a('e9f1fbcb', 'Nothing to see here — yet'),
-          a('f2c85e92', 'Search Spaces'),
           a('e67af8ef', function (e) {
             return 'Currently no Spaces matching "' + e.searchQuery + '"'
           }),
@@ -1416,6 +1415,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e8fe1eca', function (e) {
             return 'There are no ' + e.section + ' Spaces matching "' + e.searchQuery + '"'
           }),
+          a('f2c85e92', 'Search Spaces'),
           a('e0197a30', 'Happening Now'),
           a('g88e2a29', 'Coming Up'),
           a('d39e8b30', 'Add a note'),
@@ -1790,6 +1790,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e9488b0d', 'Loading Moderators'),
           a('j43fea20', 'Loading Members'),
           a('c9d56b71', 'Tell us a little about your Community. You can always change these details later.'),
+          a('c1ad5a11', 'Looks like we’re having trouble creating your new Community. Please try again later.'),
           a('h3e55b40', 'Community name'),
           a('dd71d9c9', function (e) {
             return (
@@ -2041,6 +2042,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b81d9b9b', 'Choose one from your existing messages, or start a new one.'),
           a('f37a6f73', 'Learn more'),
           a('e3719c15', 'Accessibility'),
+          a('d299431b', 'Monetization'),
           a('cad53943', 'Privacy and safety'),
           a('e95b9448', 'General'),
           a('eafe3287', 'Data usage'),
@@ -2056,7 +2058,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cf9b1669', 'Accessibility, display, and languages'),
           a('bdfa2b8c', 'Additional resources'),
           a('df483b47', 'Feature switches'),
-          a('d299431b', 'Monetization'),
           a('dae57a41', 'Allow all'),
           a('i7cbc154', 'Allow some'),
           a('e3a761ee', 'Off'),
@@ -2245,9 +2246,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Government officials must have a public account that both references their current government position and links to the official website of their office.',
           ),
           a('e95c44dd', 'Yes, it’s complete'),
-          a('fa5e15e1', 'I need to update'),
-          a('jdf47e8d', 'Campaign website')
-        a('eeec7315', 'Add campaign website'),
+          a('fa5e15e1', 'I need to update')
+        a('jdf47e8d', 'Campaign website'),
+          a('eeec7315', 'Add campaign website'),
           a('b163b653', 'Government reference'),
           a('d2378d34', 'Add government reference'),
           a('a05b8445', 'Freelance journalist'),
@@ -3537,8 +3538,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a244ed50', 'Your Twitter activity'),
           a('e908903a', 'Audience and tagging'),
           a('h7a0dfbe', 'Manage what information you allow other people on Twitter to see.'),
-          a('b38d81ae', 'Your Tweets'),
-          a('f8d4746b', 'Manage the information associated with your Tweets.')
+          a('b38d81ae', 'Your Tweets')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3555,7 +3555,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('f2bd9c47', 'Content you see'),
+        a('f8d4746b', 'Manage the information associated with your Tweets.'),
+          a('f2bd9c47', 'Content you see'),
           a('b2810ee7', 'Decide what you see on Twitter based on your preferences like Topics and interests'),
           a('f01fd982', 'Safety Mode (Beta)'),
           a('dcc5aa06', 'Manage autoblocks and preferences.'),
@@ -3838,6 +3839,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'j8ba99b3',
             'Give people a taste of what they’re in for each month with a quick summary of the bonus content you’ll share.',
           ),
+          a('a329ce87', 'Add a description...'),
+          a('be76dc33', 'Add description'),
           a('ebfb897c', 'Examples'),
           a('dc4feb19', 'Not sure what to say?'),
           a(
@@ -3856,6 +3859,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ef08a890', '1 of 3'),
           a('j3253319', 'Take a minute to say hello'),
           a('h1e80993', 'Make a good first impression with a quick intro message for your potential Super Followers.'),
+          a('a4ed9071', 'Add an introduction...'),
           a('b16680ff', 'Add intro'),
           a(
             'a0bb2076',
@@ -4721,12 +4725,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ef4602eb', 'Something went wrong. Please try again later.'),
           a('a4db098b', 'It looks like we couldn’t create your promotion. Please try again later.'),
           a('ef7e3916', 'Something went wrong. Check your promotion details and try again.'),
-          a('d56b5ac3', 'Twitter Terms and Advertising Guidelines'),
-          a('cc642518', 'Search Locations'),
+          a('d56b5ac3', 'Twitter Terms and Advertising Guidelines')
+        a('cc642518', 'Search Locations'),
           a('i0e8c3c6', 'Location results'),
           a('f69ad048', 'Choose a location'),
-          a('hba1d105', 'Customize your audience')
-        a('cba0133d', 'Choose the best audience for this Tweet.'),
+          a('hba1d105', 'Customize your audience'),
+          a('cba0133d', 'Choose the best audience for this Tweet.'),
           a('e1efbead', 'Age range'),
           a('c6ff7c1f', 'Age range minimum'),
           a('b555fb45', 'Age range maximum'),
@@ -5753,6 +5757,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('ce97544c', 'Tweet unavailable'),
           a('ffeb2fc6', 'Up next'),
+          a('b4cb0be1', 'This user is currently in an active Space, Click to join'),
           a('g6520dde', function (e) {
             return '@' + e.screenName + ' is currently in an active Space, Click to join'
           }),
