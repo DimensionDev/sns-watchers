@@ -7374,6 +7374,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             scribe_cdn_sample_size: !0,
             scribe_web_nav_sample_size: !0,
             sensitive_tweet_warnings_enabled: !0,
+            settings_revamp_search_bar_enabled: !0,
             soft_interventions_like_nudge_enabled: !0,
             soft_interventions_nudge_backend_control_enabled: !0,
             soft_interventions_retweet_nudge_enabled: !0,
@@ -29135,16 +29136,6 @@ window.__SCRIPTS_LOADED__.i18n &&
                   },
                 }
               })(t)),
-              (this.Prompts = (function (e, t) {
-                return {
-                  fetch: function (t, n) {
-                    return e.get('prompts/suggest', t, n)
-                  },
-                  recordEvent: function (t, n) {
-                    return e.post('prompts/record_event', t, {}, n)
-                  },
-                }
-              })(t)),
               (this.QuickPromote = (function (e, t) {
                 return {
                   getProfessionalEligibility: function (t) {
@@ -30715,6 +30706,9 @@ window.__SCRIPTS_LOADED__.i18n &&
             function e(t, n) {
               o()(this, e),
                 s()(this, 'setIsModalRouteForLocation', function (e, t) {
+                  return Object(f.a)()
+                }),
+                s()(this, 'setHistoryBreakpoint', function (e) {
                   return Object(f.a)()
                 }),
                 s()(this, 'getLastNonModalLocationPathname', function () {
@@ -32897,7 +32891,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           },
           d = function (e) {
             var t = u(e)
-            return 'content' === t.displayType && 'gif' !== t.contentType && !t.isLive && !e.impressionId
+            return !!t && 'content' === t.displayType && 'gif' !== t.contentType && !t.isLive && !e.impressionId
           },
           f = new RegExp(/^https:\/\/[\w-]+.twimg.com\/.+\.m3u8/),
           p = function () {
@@ -41822,9 +41816,10 @@ window.__SCRIPTS_LOADED__.i18n &&
             DMConversation: 'dm_conversation',
             Event: 'event',
             Hashtag: 'hashtag',
+            NavigationLink: 'navigation_link',
+            NoResult: 'no_result',
             Topic: 'topic',
             User: 'user',
-            NoResult: 'no_result',
           }),
           l = Object.freeze({
             All: 'all',
@@ -44400,27 +44395,28 @@ window.__SCRIPTS_LOADED__.i18n &&
               r,
               i,
               c,
-              h = e.cardContext,
-              v = e.cardId,
-              y = e.cardType,
-              _ = e.data,
-              j = h.shouldConvertCarouselsToSingleMedia,
-              R = h.shouldConvertMDCtoSingleCard,
-              D = C(_)
-            if (!D)
+              h,
+              v = e.cardContext,
+              y = e.cardId,
+              _ = e.cardType,
+              j = e.data,
+              R = v.shouldConvertCarouselsToSingleMedia,
+              D = v.shouldConvertMDCtoSingleCard,
+              A = C(j)
+            if (!A)
               return {
                 state: m.c.DEFAULT,
                 layout:
-                  ((i = {}),
-                  s()(i, m.c.DEFAULT, { size: 'large' }),
-                  s()(i, m.c.CONDENSED, { size: 'small' }),
-                  s()(i, m.c.STATIC, { size: 'large' }),
-                  i),
+                  ((c = {}),
+                  s()(c, m.c.DEFAULT, { size: 'large' }),
+                  s()(c, m.c.CONDENSED, { size: 'small' }),
+                  s()(c, m.c.STATIC, { size: 'large' }),
+                  c),
                 card: {
-                  id: v,
-                  card_name: y,
+                  id: y,
+                  card_name: _,
                   card_url: void 0,
-                  components: ((c = {}), s()(c, m.c.DEFAULT, []), s()(c, m.c.STATIC, []), c),
+                  components: ((h = {}), s()(h, m.c.DEFAULT, []), s()(h, m.c.STATIC, []), h),
                   components_data: {},
                   destinations: {},
                   media_entities: {},
@@ -44428,9 +44424,9 @@ window.__SCRIPTS_LOADED__.i18n &&
                   ucLayout: void 0,
                 },
               }
-            var A = D
-            j
-              ? (A = (function (e) {
+            var x = A
+            R
+              ? (x = (function (e) {
                   var t,
                     n,
                     r,
@@ -44462,36 +44458,36 @@ window.__SCRIPTS_LOADED__.i18n &&
                   })
                   var v = e.type === p.IMAGE_CAROUSEL_WEBSITE ? p.IMAGE_WEBSITE : p.VIDEO_WEBSITE
                   return g(g({}, e), {}, { type: v, components: h, component_objects: f })
-                })(D))
-              : R &&
-                (A = (function (e) {
+                })(A))
+              : D &&
+                (x = (function (e) {
                   if (!e.layout) return e
                   var t = e.layout.data.slides[0]
                   return delete e.layout, (e.components = t), e
-                })(D))
-            var x,
-              L,
+                })(A))
+            var L,
               M,
               N,
               F,
               U,
               B,
               H,
-              W = A,
-              z = W.app_store_data,
-              V = W.component_objects,
-              G = W.components,
-              q = W.destination_objects,
-              K = W.layout,
-              Q = W.media_entities,
-              Y = W.users,
-              X =
-                ((x = q),
-                (L = z),
-                Object.keys(x).reduce(function (e, t) {
-                  var n = x[t]
+              W,
+              z = x,
+              V = z.app_store_data,
+              G = z.component_objects,
+              q = z.components,
+              K = z.destination_objects,
+              Q = z.layout,
+              Y = z.media_entities,
+              X = z.users,
+              Z =
+                ((L = K),
+                (M = V),
+                Object.keys(L).reduce(function (e, t) {
+                  var n = L[t]
                   if ('app_store_with_docked_media' === n.type || 'app_store' === n.type) {
-                    var r = O(L[n.data.app_id])
+                    var r = O(M[n.data.app_id])
                     e[t] = {
                       type: 'browser',
                       data: {
@@ -44503,7 +44499,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   } else e[t] = g(g({}, n), {}, { data: g(g({}, n.data), {}, { url_data: g({ vanity: u.a.getDefaultVanityUrl() }, n.data.url_data), scribe: 'open_link', promoted_log: f.a.UNIFIED_CARD_COMPONENT_URL_CLICK }) })
                   return e
                 }, {})),
-              Z = (function (e) {
+              J = (function (e) {
                 var t = {},
                   n = {}
                 for (var r in e) {
@@ -44511,7 +44507,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   if (
                     ((t[r] = o),
                     (n[k(r)] = { media_url_https: o.media_url_https, type: 'photo', original_info: o.original_info }),
-                    'photo' === o.type)
+                    'photo' === o.type || 'model3d' === o.type)
                   ) {
                     var i,
                       c,
@@ -44542,8 +44538,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         ? void 0
                         : d.palette
                     h && (p.ext_media_color = { palette: h }), (t[r] = p)
-                  }
-                  if ('video' === o.type) {
+                  } else if ('video' === o.type) {
                     var m,
                       b,
                       v,
@@ -44564,58 +44559,58 @@ window.__SCRIPTS_LOADED__.i18n &&
                   }
                 }
                 return { mediaEntities: t, photoEntitiesFromVideo: n }
-              })(Q),
-              J = Z.mediaEntities,
-              $ = Z.photoEntitiesFromVideo,
-              ee = 'swipeable' === (null == K ? void 0 : K.type) ? Object(l.a)(K.data.slides) : G,
-              te = {},
-              ne = [],
+              })(Y),
+              $ = J.mediaEntities,
+              ee = J.photoEntitiesFromVideo,
+              te = null != Q && null !== (t = Q.data) && void 0 !== t && t.slides ? Object(l.a)(Q.data.slides) : q,
+              ne = {},
               re = [],
-              oe = b(ee)
+              oe = [],
+              ie = b(te)
             try {
-              for (oe.s(); !(F = oe.n()).done; ) {
-                var ie = F.value,
-                  ae = V[ie]
-                if (ae)
-                  switch (ae.type) {
+              for (ie.s(); !(U = ie.n()).done; ) {
+                var ae = U.value,
+                  ce = G[ae]
+                if (ce)
+                  switch (ce.type) {
                     case 'media_with_details_horizontal':
-                      return I(ae, X, y, v, _, J, K)
+                      return I(ce, Z, _, y, j, $, Q)
                     case 'details':
-                      te[ie] =
-                        ((B = void 0),
-                        (H = void 0),
-                        (H = (U = ae) ? U.data.destination : void 0),
-                        U && (B = g({}, U.data.title)),
-                        { type: 'details', data: { title: B, footer: void 0, destination: H } })
+                      ne[ae] =
+                        ((H = void 0),
+                        (W = void 0),
+                        (W = (B = ce) ? B.data.destination : void 0),
+                        B && (H = g({}, B.data.title)),
+                        { type: 'details', data: { title: H, footer: void 0, destination: W } })
                       break
                     case 'community_details':
-                      te[ie] = E(ae, Y)
+                      ne[ae] = E(ce, X)
                       break
                     case 'twitter_list_details':
-                      te[ie] = S(ae, Y)
+                      ne[ae] = S(ce, X)
                       break
                     case 'app_store_details':
-                      te[ie] = w(ae, z)
+                      ne[ae] = w(ce, V)
                       break
                     case 'button_group':
-                      te[ie] = T(ae, q)
+                      ne[ae] = T(ce, K)
                       break
                     case 'swipeable_media':
-                      ;(te[ie] = ae), (M = ie), (N = ae)
+                      ;(ne[ae] = ce), (N = ae), (F = ce)
                       break
                     case 'media':
-                      te[ie] = ae
-                      var ce = J[ae.data.id],
-                        se = ce && 'uc_video' === ce.type,
-                        ue = k(ie)
-                      if ((se && (ne.push(ue), re.push(ie)), se)) {
-                        var le = ce ? ce.original_info.width / ce.original_info.height : null
-                        te[ue] = {
+                      ne[ae] = ce
+                      var se = $[ce.data.id],
+                        ue = se && 'uc_video' === se.type,
+                        le = k(ae)
+                      if ((ue && (re.push(le), oe.push(ae)), ue)) {
+                        var de = se ? se.original_info.width / se.original_info.height : null
+                        ne[le] = {
                           type: m.d.MEDIA,
                           data: {
-                            aspect_ratio: le || void 0,
-                            destination: ae.data.destination || void 0,
-                            id: k(ae.data.id),
+                            aspect_ratio: de || void 0,
+                            destination: ce.data.destination || void 0,
+                            id: k(ce.data.id),
                             overlay: { type: m.g.PLAY },
                           },
                         }
@@ -44625,55 +44620,55 @@ window.__SCRIPTS_LOADED__.i18n &&
                       continue
                   }
               }
-            } catch (pe) {
-              oe.e(pe)
+            } catch (he) {
+              ie.e(he)
             } finally {
-              oe.f()
+              ie.f()
             }
-            var de =
-              null === (t = N) || void 0 === t
+            var fe =
+              null === (n = F) || void 0 === n
                 ? void 0
-                : t.data.media_list.some(function (e) {
-                    return e.id && 'uc_video' === J[e.id].type
+                : n.data.media_list.some(function (e) {
+                    return e.id && 'uc_video' === $[e.id].type
                   })
-            de &&
-              N &&
-              (te[m.b.SWIPEABLE_MEDIA_STATIC] = {
+            fe &&
+              F &&
+              (ne[m.b.SWIPEABLE_MEDIA_STATIC] = {
                 type: m.d.SWIPEABLE_MEDIA,
                 data: {
-                  media_list: N.data.media_list.map(function (e) {
+                  media_list: F.data.media_list.map(function (e) {
                     return { destination: e.destination, id: k(e.id), overlay: { type: m.g.PLAY } }
                   }),
                 },
               })
-            var fe = [].concat(
-              o()(ne.length ? ne : []),
-              o()(de ? [m.b.SWIPEABLE_MEDIA_STATIC] : []),
+            var pe = [].concat(
+              o()(re.length ? re : []),
+              o()(fe ? [m.b.SWIPEABLE_MEDIA_STATIC] : []),
               o()(
-                ee.filter(function (e) {
-                  return !(re.includes(e) || (de && e === M))
+                te.filter(function (e) {
+                  return !(oe.includes(e) || (fe && e === N))
                 }),
               ),
             )
             return {
               state: m.c.DEFAULT,
               layout:
-                ((n = {}),
-                s()(n, m.c.DEFAULT, { size: 'large' }),
-                s()(n, m.c.CONDENSED, { size: 'large' }),
-                s()(n, m.c.STATIC, { size: 'large' }),
-                n),
+                ((r = {}),
+                s()(r, m.c.DEFAULT, { size: 'large' }),
+                s()(r, m.c.CONDENSED, { size: 'large' }),
+                s()(r, m.c.STATIC, { size: 'large' }),
+                r),
               card: {
-                card_name: y,
-                card_url: Object(d.o)(_, 'string_value', 'card_url'),
-                displayOptions: { shouldAutoAdvance: P(A) },
+                card_name: _,
+                card_url: Object(d.o)(j, 'string_value', 'card_url'),
+                displayOptions: { shouldAutoAdvance: P(x) },
                 on_visibility: { scribe: 'show' },
-                id: v,
-                components: ((r = {}), s()(r, m.c.DEFAULT, ee), s()(r, m.c.STATIC, fe), r),
-                destinations: X,
-                media_entities: g(g({}, J), $),
-                components_data: te,
-                ucLayout: K,
+                id: y,
+                components: ((i = {}), s()(i, m.c.DEFAULT, te), s()(i, m.c.STATIC, pe), i),
+                destinations: Z,
+                media_entities: g(g({}, $), ee),
+                components_data: ne,
+                ucLayout: Q,
               },
             }
           }
@@ -53507,7 +53502,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             switch (e) {
               case '0.13.2':
                 t = o(function () {
-                  return n.e(331).then(n.bind(null, 'JYyA'))
+                  return n.e(333).then(n.bind(null, 'JYyA'))
                 })
               case '0.14.17':
               default:
@@ -57045,7 +57040,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   key: '_findIndexOfLastNonModalRoute',
                   value: function () {
                     for (var e = this._currentLocationIndex; e >= 0; e -= 1)
-                      if (!1 === Boolean(this._locationsHistory[e].isModalRoute)) return e
+                      if (!1 !== this._locationsHistory[e].isBreakpoint) return e
                     return -1
                   },
                 },
@@ -57055,7 +57050,16 @@ window.__SCRIPTS_LOADED__.i18n &&
                     var n = this._locationsHistory.find(function (t) {
                       return t.locationKey === e.key
                     })
-                    n && (n.isModalRoute = t)
+                    n && (n.isBreakpoint = !t)
+                  },
+                },
+                {
+                  key: 'setHistoryBreakpoint',
+                  value: function (e) {
+                    var t = this._locationsHistory.find(function (t) {
+                      return t.locationKey === e.key
+                    })
+                    t && (t.isBreakpoint = !0)
                   },
                 },
                 {
@@ -58347,7 +58351,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         }
         var l = 'cardState',
           d = 'rweb.cardState',
-          f = ['cardState'],
+          f = ['cardState', 'carouselIndex'],
           p = {}
         var h = function (e, t) {
             return e.cardState[t]
@@ -58605,6 +58609,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 [].concat(o()(t), [
                   'mediaStats',
                   'highlightedLabel',
+                  'hasNftAvatar',
                   e.isTrue('responsive_web_reactions_enabled') && 'signalsReactionMetadata',
                   e.isTrue('responsive_web_reactions_enabled') && 'signalsReactionPerspective',
                   e.isTrue('rweb_reply_downvote_enabled') && 'replyvotingDownvotePerspective',
@@ -106700,26 +106705,26 @@ window.__SCRIPTS_LOADED__.i18n &&
             n('kYxP'),
             n('DfhM'),
             n('hCOa'),
-            n('ho0z'),
             n('7xRU'),
             n('oEOe')),
           R = n('PiaM'),
           k = n('/kEJ'),
           D = n('5oBF'),
           A = n('Qfne'),
-          x = n('vjRr'),
-          L = n('LI/a'),
-          M = n('H7Rt'),
-          N = n('rU/Q'),
-          F = n('wrlS'),
+          x = n('LI/a'),
+          L = n('H7Rt'),
+          M = n('rU/Q'),
+          N = n('wrlS'),
+          F = (n('ho0z'), n('vjRr')),
           U = n('SrIh'),
-          B = n('XOJV'),
-          H = n('SRyb'),
-          W = n('ymux'),
-          z = n('WA1W'),
-          V = n('iChn'),
-          G = n('ONCy')
-        function q(e, t) {
+          B = 'CREATE_POLL_ERROR'
+        var H = n('XOJV'),
+          W = n('SRyb'),
+          z = n('ymux'),
+          V = n('WA1W'),
+          G = n('iChn'),
+          q = n('ONCy')
+        function K(e, t) {
           var n = Object.keys(e)
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e)
@@ -106731,22 +106736,22 @@ window.__SCRIPTS_LOADED__.i18n &&
           }
           return n
         }
-        function K(e) {
+        function Q(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {}
             t % 2
-              ? q(Object(n), !0).forEach(function (t) {
+              ? K(Object(n), !0).forEach(function (t) {
                   a()(e, t, n[t])
                 })
               : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-              : q(Object(n)).forEach(function (t) {
+              : K(Object(n)).forEach(function (t) {
                   Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                 })
           }
           return e
         }
-        function Q(e) {
+        function Y(e) {
           var t = (function () {
             if ('undefined' == typeof Reflect || !Reflect.construct) return !1
             if (Reflect.construct.sham) return !1
@@ -106767,17 +106772,16 @@ window.__SCRIPTS_LOADED__.i18n &&
             return j()(this, n)
           }
         }
-        var Y = 'CREATE_POLL_ERROR',
-          X = (function (e) {
+        var X = (function (e) {
             w()(n, e)
-            var t = Q(n)
+            var t = Y(n)
             function n() {
               return _()(this, n), t.apply(this, arguments)
             }
             return n
           })(I()(Error)),
           Z = function (e, t, n, r) {
-            var o = Object(F.d)(t)
+            var o = Object(N.d)(t)
             if (n && n.length) {
               var i
               if (n.length > 1) {
@@ -106795,9 +106799,9 @@ window.__SCRIPTS_LOADED__.i18n &&
               }
               var s = n[0].in_reply_to_status_id_str
               if (s) {
-                var u = Object(W.a)({ focalTweetId: s, featureSwitches: o })
+                var u = Object(z.a)({ focalTweetId: s, featureSwitches: o })
                 e(
-                  Object(W.c)(
+                  Object(z.c)(
                     u,
                     s,
                     n.map(function (e) {
@@ -106807,10 +106811,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                 )
               }
               return r
-                ? [Object(L.a)(r).injectEntry(i)]
+                ? [Object(x.a)(r).injectEntry(i)]
                 : [
-                    Object(z.f)(o.isTrue('responsive_web_graphql_home_enabled')).injectEntry(i),
-                    Object(z.e)(o.isTrue('responsive_web_graphql_home_latest_enabled')).injectEntry(i),
+                    Object(V.f)(o.isTrue('responsive_web_graphql_home_enabled')).injectEntry(i),
+                    Object(V.e)(o.isTrue('responsive_web_graphql_home_latest_enabled')).injectEntry(i),
                   ]
             }
           }
@@ -106869,7 +106873,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     .filter(function (e) {
                       return '' !== e
                     }),
-                  a = Object(V.a)(
+                  a = Object(G.a)(
                     i,
                     function (e) {
                       return e
@@ -106900,12 +106904,12 @@ window.__SCRIPTS_LOADED__.i18n &&
                         t.uploadId &&
                         p.push(
                           Object(d.m)(
-                            K(
-                              K(
+                            Q(
+                              Q(
                                 { found_media_origin: s, media_id: t.uploadId },
-                                Object(G.a)(l ? { alt_text: { text: l } } : null),
+                                Object(q.a)(l ? { alt_text: { text: l } } : null),
                               ),
-                              Object(G.a)(null != f && f.size ? { sensitive_media_warning: Array.from(f) } : null),
+                              Object(q.a)(null != f && f.size ? { sensitive_media_warning: Array.from(f) } : null),
                             ),
                           ),
                         ),
@@ -106931,21 +106935,21 @@ window.__SCRIPTS_LOADED__.i18n &&
               })
             })(e, { gifMetadata: t.gifMetadata, media: t.media, mediaTags: t.mediaTags }),
             w =
-              t.pollDuration && t.pollChoices
+              t.pollDuration && t.pollChoices && t.pollActive
                 ? (function (e, t) {
                     var n = t.pollChoices,
                       r = t.pollDuration,
                       o = Object(f.c)(r)
-                    return e(x.a.createPoll(null, { choices: n, durationMinutes: o })).then(
+                    return e(F.a.createPoll(null, { choices: n, durationMinutes: o })).then(
                       function (e) {
                         if ('OK' !== e.status || !e.card_uri) {
                           var t = new Error('Poll create response was not OK')
-                          throw ((t.name = Y), Object(U.a)(t, { extra: e }), t)
+                          throw ((t.name = B), Object(U.a)(t, { extra: e }), t)
                         }
                         return e
                       },
                       function (e) {
-                        throw ((e.name = Y), Object(U.a)(e), e)
+                        throw ((e.name = B), Object(U.a)(e), e)
                       },
                     )
                   })(e, { pollDuration: t.pollDuration, pollChoices: t.pollChoices })
@@ -107010,7 +107014,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                             var d = new X('Invalid `scheduledFor`')
                             return (d.scheduledFor = c), Promise.reject(d)
                           }
-                          return J(n, K({}, e), K({}, t)).then(function (e) {
+                          return J(n, Q({}, e), Q({}, t)).then(function (e) {
                             var t = e.attachment_url,
                               n = e.auto_populate_reply_metadata,
                               r = e.exclude_reply_user_ids,
@@ -107028,14 +107032,14 @@ window.__SCRIPTS_LOADED__.i18n &&
                                 executeAt: l,
                               }
                             return d
-                              ? i.Scheduling.editScheduledTweet(K(K({}, f), {}, { scheduledTweetId: d }))
+                              ? i.Scheduling.editScheduledTweet(Q(Q({}, f), {}, { scheduledTweetId: d }))
                               : i.Scheduling.scheduleTweet(f)
                           })
                         }
                       })(i, { excludedRecipients: n, inReplyToStatusIdStr: o.id_str }),
                     ).then(
                       function (e) {
-                        return K(K({}, i), {}, { scheduled_id_str: e })
+                        return Q(Q({}, i), {}, { scheduled_id_str: e })
                       },
                       function (e) {
                         return (e.scheduledTweet = i), Promise.reject(e)
@@ -107067,7 +107071,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         return function (n, r, o) {
                           var i = o.api,
                             a = e.draftTweetId
-                          return J(n, K({}, e), K({}, t)).then(function (e) {
+                          return J(n, Q({}, e), Q({}, t)).then(function (e) {
                             var t = {
                               attachment_url: e.attachment_url,
                               auto_populate_reply_metadata: e.auto_populate_reply_metadata,
@@ -107077,14 +107081,14 @@ window.__SCRIPTS_LOADED__.i18n &&
                               status: e.status,
                             }
                             return a
-                              ? i.Drafts.editDraftTweet(K(K({}, t), {}, { draftTweetId: a }))
+                              ? i.Drafts.editDraftTweet(Q(Q({}, t), {}, { draftTweetId: a }))
                               : i.Drafts.createDraftTweet(t)
                           })
                         }
                       })(i, { excludedRecipients: n, inReplyToStatusIdStr: o.id_str }),
                     ).then(
                       function (e) {
-                        return K(K({}, i), {}, { draft_id_str: e })
+                        return Q(Q({}, i), {}, { draft_id_str: e })
                       },
                       function (e) {
                         return (e.draftTweet = i), Promise.reject(e)
@@ -107126,14 +107130,14 @@ window.__SCRIPTS_LOADED__.i18n &&
                         r = e.isSelfThreadReply,
                         o =
                           !0 ===
-                          F.c.getValueWithoutScribeImpression('conversation_controls_limited_replies_creation_enabled'),
+                          N.c.getValueWithoutScribeImpression('conversation_controls_limited_replies_creation_enabled'),
                         i = !!n.id_str || r
                       if (o && !i && 'all' !== t) return t
                     })({ conversationControlsValue: r, inReplyToStatus: p, isSelfThreadReply: m })
                   return (
                     i.isTrue('conversation_controls_persistence_enabled') &&
-                      g !== M.a.community_members &&
-                      a.set('rweb.savedConversationControl', { conversationControl: g || M.a.all }),
+                      g !== L.a.community_members &&
+                      a.set('rweb.savedConversationControl', { conversationControl: g || L.a.all }),
                     u.reduce(function (r, i, a) {
                       var s = 0 === a
                       return r.then(function (r) {
@@ -107176,11 +107180,11 @@ window.__SCRIPTS_LOADED__.i18n &&
                                         i.entities &&
                                           r([
                                             Object(k.c)(i.entities),
-                                            Object(H.a)(c, a.user, u ? 'with_replies' : 'default').injectEntry(s),
+                                            Object(W.a)(c, a.user, u ? 'with_replies' : 'default').injectEntry(s),
                                           ]),
                                           r(Object(D.b)({ previewData: t, id: a.id_str })),
-                                          e.draftTweetId && r(Object(N.a)(e.draftTweetId))
-                                        var l = B.a.selectHydrated(o(), a.id_str)
+                                          e.draftTweetId && r(Object(M.a)(e.draftTweetId))
+                                        var l = H.a.selectHydrated(o(), a.id_str)
                                         if (!l)
                                           throw new Error(
                                             'No hydratedTweet found in redux store for Tweet ID after sending',
@@ -107211,11 +107215,11 @@ window.__SCRIPTS_LOADED__.i18n &&
                                         u.push(Object(k.c)(o.entities)),
                                           l ||
                                             u.push(
-                                              Object(H.a)(a, i.user, s ? 'with_replies' : 'default').injectEntry(c),
+                                              Object(W.a)(a, i.user, s ? 'with_replies' : 'default').injectEntry(c),
                                             )
                                       }
-                                      n(u), e.draftTweetId && n(Object(N.a)(e.draftTweetId))
-                                      var d = B.a.selectHydrated(r(), i.id_str)
+                                      n(u), e.draftTweetId && n(Object(M.a)(e.draftTweetId))
+                                      var d = H.a.selectHydrated(r(), i.id_str)
                                       if (!d)
                                         throw new Error(
                                           'No hydratedTweet found in redux store for Tweet ID after sending',
@@ -107286,8 +107290,8 @@ window.__SCRIPTS_LOADED__.i18n &&
             mediaTags: [],
             gifMetadata: void 0,
             pollActive: !1,
-            initialPollChoices: void 0,
-            initialPollDuration: void 0,
+            pollChoices: void 0,
+            pollDuration: void 0,
             pollValid: !1,
             scheduledFor: void 0,
             scheduledTweetId: void 0,

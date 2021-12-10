@@ -11,7 +11,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(283).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(285).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -146,6 +146,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c51ba396', 'Oops! A URL in your Tweet appears to link to a page that has spammy or unsafe content.'),
           a('ef2fa90b', 'The text of your Tweet exceeds the maximum allowed limit.'),
           a('f10f1cfb', 'The content of your Tweet is invalid.'),
+          a('d8817e36', 'Accept all cookies'),
+          a('b9288ee6', 'Refuse non-essential cookies'),
+          a('d0b74a5a', 'Cookie preferences'),
+          a('id7ef73f', 'help center'),
+          a('gfb2ba0f', 'Show more about your choices.'),
           a('ia5e7487', 'Close'),
           a('fd0ff73b', 'Cookies Use'),
           a('b7fa0cfd', 'Top Articles'),
@@ -214,13 +219,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b4f91a89', 'Recording active'),
           a('b3481ffd', 'Report this space'),
           a('d0aebc27', 'Describe the issue'),
-          a('cfd2f35d', 'Cancel'),
           a('g971a4e8', 'Self-Harm'),
           a('b96e6682', 'Violence'),
           a('e5bf9b39', 'Sexual Content'),
           a('d2a34320', 'Child Safety'),
           a('a9ba3e27', 'Private Information'),
           a('d5519f4a', 'Abusive Behavior'),
+          a('cfd2f35d', 'Cancel'),
+          a('eb55363b', 'This Space has been reported'),
           a('a3e6bb1b', 'Twitter Spaces for the Web'),
           a('d82f214f', 'Tune into live audio conversations'),
           a('gf029868', 'Listen live'),
@@ -1140,14 +1146,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d28215f0', 'Sorry, polls are not allowed in Communities!'),
           a('ec909a54', function (e) {
             return 'Your Tweet' + n(e.numOfTweets, ' was', 's were') + ' sent to ' + e.communityName
-          }),
-          a('jd53409d', 'Don’t forget to add descriptions'),
+          })
+        a('jd53409d', 'Don’t forget to add descriptions'),
           a('edae65de', 'Your image doesn’t have a description.'),
           a('a859846a', 'Your images don’t have descriptions.'),
           a('e90118f5', 'One of your images doesn’t have a description.'),
           a('c211dcb1', 'Some of your images don’t have descriptions.'),
-          a('d7c26bfb', 'Describe what’s in the image and why it’s important here.')
-        a('a75e3ccc', 'Describe what’s in the images and why they’re important here.'),
+          a('d7c26bfb', 'Describe what’s in the image and why it’s important here.'),
+          a('a75e3ccc', 'Describe what’s in the images and why they’re important here.'),
           a('dcb7e3a0', 'Write out text, summarize longer text, and try to keep it short.'),
           a('c1bf53b0', function (e) {
             return 'Add ' + n(e.numOfDescriptions, 'a description', 'descriptions')
@@ -1307,7 +1313,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e2462db4', 'Most shared in your network · Last 24 hours'),
           a('e950f6ef', 'No articles have been shared in your network.'),
           a('e7dcfb8f', 'more accounts'),
-          a('c249ef57', 'from Twitter Blue'),
+          a('g4782c0a', 'with Twitter Blue'),
           a('gaa01f2c', 'Twitter Spaces'),
           a('fec3c1ef', 'Where live audio conversations happen'),
           a('ce447fcb', function (e) {
@@ -2065,6 +2071,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'ja94f34d',
             'These settings apply to this browser or device while you’re logged out. They don’t have any effect when you’re logged in.',
           ),
+          a('gd4302ec', 'Manage your cookie experience on Twitter.'),
           a('bdc6f5b7', 'Your account'),
           a('f8645654', 'Security and account access'),
           a('cf9b1669', 'Accessibility, display, and languages'),
@@ -2235,11 +2242,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'f54ba6e6',
             'You must be a current candidate for office at the state- or national-level to qualify for verification in this category.',
           ),
-          a('dd85d0af', 'Are you an official at the state- or national-level?'),
-          a(
-            'f0058c60',
-            'You must be a current government official at the state- or national-level to qualify for verification in this category.',
-          ),
+          a('dd85d0af', 'Are you an official at the state- or national-level?')
+        a(
+          'f0058c60',
+          'You must be a current government official at the state- or national-level to qualify for verification in this category.',
+        ),
           a('f420a711', 'Yes, I am'),
           a('fb97d22b', 'No, I’m not'),
           a('e16b1cc8', 'Does your profile meet the criteria for a candidate?'),
@@ -2251,8 +2258,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'bd0b4542',
             'Government offices and institutional entities must have a public account that links to their official website.',
-          )
-        a('i45b224c', 'Does your profile meet the criteria for an official?'),
+          ),
+          a('i45b224c', 'Does your profile meet the criteria for an official?'),
           a(
             'fba1dd66',
             'Government officials must have a public account that both references their current government position and links to the official website of their office.',
@@ -2620,6 +2627,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'To disconnect from ' + e.ssoProvider + ', please confirm your password'
           }),
           a('fe36fe1f', 'Confirm your password'),
+          a(
+            'i9c8698d',
+            'Twitter and its partners use cookies to provide you with a better, safer, and faster service and to support our business. Some cookies are necessary to use our services, improve our services, and make sure they work properly.',
+          ),
+          a(
+            'ad881a6b',
+            'Allow Twitter and its partners to use cookies to provide you with ads and communications tailored to your interests.',
+          ),
+          a(
+            'd9c5161f',
+            'Don’t allow Twitter to use cookies to gather additional data for tailored ads and communications.',
+          ),
           a(
             'd76fe4fc',
             'Limit how Twitter uses some of your network data. These settings affect all the Twitter accounts on this browser.',
@@ -3132,6 +3151,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'jdaf84e3',
             'Twitter always shares information with business partners as a way to run and improve its products. When enabled, this allows Twitter to share additional information with those partners to help support running Twitter’s business, including making Twitter’s marketing activities on other sites and apps more relevant for you.',
           ),
+          a('ffeb836a', 'Settings are unavailable'),
+          a(
+            'f2fb9746',
+            'These settings aren’t available because they apply to non-essential cookies. Since you’ve already opted out of those, we’re only using cookies that collect necessary data from your device.',
+          ),
           a('bf96fda4', 'Age'),
           a('ie40dc4a', 'Not right? You can add your date of birth to your profile without sharing it publicly.'),
           a('fe1fc83e', 'These are the age ranges associated with you.'),
@@ -3528,22 +3552,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'e84e1c41',
             'When someone sends you a message, people in the conversation will know when you’ve seen it. If you turn off this setting, you won’t be able to see read receipts from others.',
           ),
-          a('hefdc08f', 'Live video'),
-          a('b608c1a0', 'Connect to Periscope'),
-          a(
-            'j2c3033a',
-            'If selected, you can comment and send hearts on Periscope broadcasts, and people will be able to see when you’re watching. If this setting is off, people won’t be able to see you’re watching, and you won’t be able to comment or send hearts on broadcasts.',
-          ),
-          a('fc1d217b', 'Display media that may contain sensitive content'),
-          a('acdcc101', 'Mark media you Tweet as containing material that may be sensitive'),
-          a('aea62567', 'Search filters'),
-          a('b59540c2', 'Twitter for teams'),
-          a('bd34d8f8', 'Anyone can add you to their team'),
-          a('d22dad9e', 'Only people you follow can add you to their team'),
-          a('ad41e8b3', 'No one can add you to their team'),
-          a('df5fa1d0', 'Manage what information you see and share on Twitter.'),
-          a('a244ed50', 'Your Twitter activity'),
-          a('e908903a', 'Audience and tagging')
+          a('hefdc08f', 'Live video')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3560,7 +3569,22 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('h7a0dfbe', 'Manage what information you allow other people on Twitter to see.'),
+        a('b608c1a0', 'Connect to Periscope'),
+          a(
+            'j2c3033a',
+            'If selected, you can comment and send hearts on Periscope broadcasts, and people will be able to see when you’re watching. If this setting is off, people won’t be able to see you’re watching, and you won’t be able to comment or send hearts on broadcasts.',
+          ),
+          a('fc1d217b', 'Display media that may contain sensitive content'),
+          a('acdcc101', 'Mark media you Tweet as containing material that may be sensitive'),
+          a('aea62567', 'Search filters'),
+          a('b59540c2', 'Twitter for teams'),
+          a('bd34d8f8', 'Anyone can add you to their team'),
+          a('d22dad9e', 'Only people you follow can add you to their team'),
+          a('ad41e8b3', 'No one can add you to their team'),
+          a('df5fa1d0', 'Manage what information you see and share on Twitter.'),
+          a('a244ed50', 'Your Twitter activity'),
+          a('e908903a', 'Audience and tagging'),
+          a('h7a0dfbe', 'Manage what information you allow other people on Twitter to see.'),
           a('b38d81ae', 'Your Tweets'),
           a('f8d4746b', 'Manage the information associated with your Tweets.'),
           a('f2bd9c47', 'Content you see'),
@@ -3866,8 +3890,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ef08a890', '1 of 3'),
           a('j3253319', 'Take a minute to say hello'),
           a('h1e80993', 'Make a good first impression with a quick intro message for your potential Super Followers.'),
-          a('a4ed9071', 'Add an introduction...'),
           a('b16680ff', 'Add intro'),
+          a('dc71aee7', 'Support your favorite people on Twitter for bonus content and extra perks.'),
+          a('a4ed9071', 'Add an introduction...'),
           a(
             'a0bb2076',
             'Keep your intro short and sweet, you’ll be able to describe your content later. Here are a few examples to help get you started.',
@@ -4717,8 +4742,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i0e569bf', 'Choose this if your focus is getting people to follow a link you’ve included in your Tweet.'),
           a('d7d55f3b', '#PromotionGoals'),
           a('b25fd3d6', 'What results are you looking for from this promotion?'),
-          a('bf214f47', 'Okay'),
-          a('c3c57e3e', 'Review promotion'),
+          a('bf214f47', 'Okay')
+        a('c3c57e3e', 'Review promotion'),
           a('h06724b4', 'Once started, you can pause spending on this Tweet at any time.'),
           a('a96f811e', 'Promotion goal'),
           a('b069d89c', 'Audience'),
@@ -4730,8 +4755,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('da2805d1', 'A campaign for this tweet has already been created.'),
           a('ef4602eb', 'Something went wrong. Please try again later.'),
           a('a4db098b', 'It looks like we couldn’t create your promotion. Please try again later.'),
-          a('ef7e3916', 'Something went wrong. Check your promotion details and try again.')
-        a('d56b5ac3', 'Twitter Terms and Advertising Guidelines'),
+          a('ef7e3916', 'Something went wrong. Check your promotion details and try again.'),
+          a('d56b5ac3', 'Twitter Terms and Advertising Guidelines'),
           a('cc642518', 'Search Locations'),
           a('i0e8c3c6', 'Location results'),
           a('f69ad048', 'Choose a location'),
@@ -5152,7 +5177,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('fa70c77f', 'Only Super Followers can see this Tweet'),
           a('d822ae43', 'Twitter Purchaser Terms'),
-          a('dc71aee7', 'Support your favorite people on Twitter for bonus content and extra perks.'),
           a('f0c99eff', function (e) {
             return '- @' + e.screenName
           }),
@@ -5874,6 +5898,23 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                   return [
                     'Join Twitter now to discover new and interesting conversations about the things that matter most to you, like ',
                     '.',
+                  ]
+                },
+              },
+              {
+                key: 'ad048ab9',
+                get: function () {
+                  return [
+                    'Twitter and its partners use cookies to provide you with a better, safer and faster service and to support our business. Some cookies are necessary to use our services, improve our services, and make sure they work properly. If you click "Accept all cookies," you also allow Twitter and its partners to use cookies to provide you with ads and communications tailored to your interests. If you click “Refuse non-essential cookies,” we won’t use cookies to gather additional data for tailored ads and communications. To learn more, including how to change your choice, visit the cookie page of our ',
+                    '.',
+                  ]
+                },
+              },
+              {
+                key: 'bc8736af',
+                get: function () {
+                  return [
+                    'Twitter and its partners use cookies to provide you with a better, safer and faster service and to support our business. Some cookies are necessary to use our services, improve our services, and make sure they work properly. ',
                   ]
                 },
               },
