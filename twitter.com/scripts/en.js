@@ -562,7 +562,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b2e20eab', 'Turn on Retweets'),
           a('b62e432d', 'Turn off Retweets'),
           a('h5ef9bc8', 'View Lists'),
-          a('d17ebe1b', 'Remove from autoblock'),
+          a('jcba15d2', 'Remove autoblock'),
           a('d78131b8', function (e) {
             return 'Add/remove @' + e.screenName + ' from Lists'
           }),
@@ -1587,8 +1587,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('aa520d31', 'Spam, harassment, or abuse'),
           a('e25e5ed1', 'Hard to understand'),
           a('i26425d8', 'Somewhat'),
-          a('ac7f9745', 'What was helpful about it?'),
-          a('c7751803', 'What was unhelpful about it?'),
           a('e2988ed0', 'How can we improve the note rating experience?'),
           a('d2ae3d42', 'About Birdwatch ratings'),
           a('c01f8d12', 'Ok, I understand'),
@@ -1598,6 +1596,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'b165ae7b',
             'By rating, you’re part of making sure that notes shown on Tweets are helpful to people with varying points of view.',
           ),
+          a('ac7f9745', 'What was helpful about it?'),
+          a('c7751803', 'What was unhelpful about it?'),
           a('e0440086', 'Ratings are anonymous but publicly available, '),
           a('e30eecce', 'how Birdwatch shares data.'),
           a('f2ceaed4', 'Helpful'),
@@ -1606,11 +1606,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a26f8dc1', 'Easy to understand'),
           a('d89cfe9e', 'Directly addresses the Tweet’s claim'),
           a('faa5f9e7', 'Provides important context'),
+          a('gf3b38f4', 'Neutral or unbiased language'),
           a('ef490ae8', 'Sources not included or unreliable'),
           a('bf3dc461', 'Sources do not support note'),
-          a('d60c0063', 'Typos or unclear language'),
-          a('d24b99ed', 'Inflammatory language'),
           a('ib117531', 'Harassment or abuse'),
+          a('h7c59ea2', 'Opinion or speculation'),
+          a('d60c0063', 'Typos or unclear language'),
+          a('e06416c9', 'Misses key points or irrelevant'),
+          a('cff1aa8b', 'Argumentative or biased language'),
+          a('cc443e25', 'Note not needed on this Tweet'),
+          a('d24b99ed', 'Inflammatory language'),
           a('df587b98', 'Note ID'),
           a('fd284b08', 'Current Standing'),
           a('h201bdc8', 'Note Author'),
@@ -2235,16 +2240,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'e484f794',
             'Influential individuals in the entertainment industry like actors, musicians, directors, screenwriters, comedians, and more.',
-          ),
-          a('b8d8ea64', 'Production organization'),
+          )
+        a('b8d8ea64', 'Production organization'),
           a(
             'ff27db3c',
             'Official accounts of productions associated with entertainment entities, like films, events/festivals, TV shows and more.',
           ),
           a('c0e57cb2', 'Add your creator profile'),
           a('f3c605b6', 'Creator profile'),
-          a('h042d1a5', 'IMDB profile')
-        a('d2310f0b', 'A profile on IMDB that includes at least 50 production credits.'),
+          a('h042d1a5', 'IMDB profile'),
+          a('d2310f0b', 'A profile on IMDB that includes at least 50 production credits.'),
           a('ba04b4c1', 'Add IMDB Profile'),
           a('i9b124b6', 'Government official'),
           a(
@@ -3542,15 +3547,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'This will end your active Twitter session, and you’ll need to log in again to start a new one.',
           ),
           a('e04ba39c', 'Date and time'),
-          a('h667fc02', 'You’ve ended your active Twitter session.'),
-          a('ddcd3d26', 'Loading session data'),
-          a('d2f0f3fd', 'We can not find this session'),
-          a('f5e59e90', 'Protect your Tweets'),
-          a(
-            'i0310b4e',
-            'Only show your Tweets to people who follow you. If selected, you will need to approve each new follower.',
-          ),
-          a('j8bf07ab', 'Protect your Tweets?')
+          a('h667fc02', 'You’ve ended your active Twitter session.')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3567,7 +3564,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('ca8034b3', 'This will make them visible only to your Twitter followers.'),
+        a('ddcd3d26', 'Loading session data'),
+          a('d2f0f3fd', 'We can not find this session'),
+          a('f5e59e90', 'Protect your Tweets'),
+          a(
+            'i0310b4e',
+            'Only show your Tweets to people who follow you. If selected, you will need to approve each new follower.',
+          ),
+          a('j8bf07ab', 'Protect your Tweets?'),
+          a('ca8034b3', 'This will make them visible only to your Twitter followers.'),
           a('c5d4192a', 'Protect'),
           a(
             'j7fc0afc',
@@ -3637,10 +3642,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'ea28ca63',
             'When enabled, pictures and videos you Tweet will be marked as sensitive for people who don’t want to see sensitive content.',
           ),
-          a('b1d61d71', 'Autoblocked account Tweets'),
+          a('f154bd64', 'Autoblocked Tweets'),
           a('de9b6641', 'If we autoblock an account, it’ll show up here.'),
           a('cd702bc3', 'Report account'),
-          a('c93c8022', 'Remove from autoblocked accounts'),
           a('hc676c4a', function (e) {
             return 'You blocked @' + e.screenName
           }),
@@ -3650,18 +3654,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bbe47125', 'They’ll be able to see your Tweets, follow you, and send you Direct Messages.'),
           a('f2351b97', 'Flagged accounts'),
           a('hae5825e', 'Flagged Tweets'),
-          a('c58de5b1', 'When Safety Mode is on, here’s what happens'),
+          a('g0cba83f', 'Here’s what happens when Safety Mode is on'),
           a('b92fa3be', 'Twitter does the work, so you don’t have to'),
           a(
-            'b3a7895e',
-            'Autoblocks are temporary, unlike manual blocks which last until you remove them. To ensure you always have the final say over blocks, we remove autoblocks after 7 days.',
+            'd45866f3',
+            'When we detect potentially abusive or spammy replies, mentions, or Quote Tweets, we temporarily autoblock those accounts. Unlike manual blocks, autoblocks only last for a week.',
           ),
           a('e83ecbf6', 'You get a break'),
           a(
-            'h19673a7',
-            'Autoblocked accounts, just like manually blocked accounts, can’t see your Tweets, follow you, or send you Direct Messages. If they view your profile, we let them know Twitter blocked them, and not you.',
+            'ha597018',
+            'Autoblocked accounts, just like manually blocked accounts, can’t see your Tweets, follow you, or message you. If they view your profile, we let them know Twitter autoblocked them, and not you.',
           ),
-          a('ebfb2dbb', 'Fewer people see their replies'),
+          a('bcb2afc3', 'Fewer people see replies from autoblocked accounts'),
           a(
             'bff84f29',
             'Existing replies from autoblocked accounts are moved to the bottom of the conversation, so fewer people see them.',
@@ -3669,10 +3673,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c6cb90eb', 'Safety Mode'),
           a('fabe1397', 'Autoblocks'),
           a('c0786021', 'Autoblocked accounts'),
-          a('i88b0fe0', 'What is Safety Mode?'),
+          a('db89884f', 'What’s Safety Mode?'),
           a(
-            'haec9491',
-            'Autoblock accounts for 7 days that may use harmful language or send repetitive, uninvited replies. Accounts you follow or often interact with aren’t autoblocked.',
+            'a37e9b09',
+            'Autoblock accounts for a week that might be acting abusive or spammy. Accounts you follow or message with aren’t autoblocked.',
           ),
           a('ccafffde', '1 day'),
           a('j2e184d8', '3 days'),
@@ -4498,6 +4502,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c299a6cf', 'Thread'),
           a('i9a4ca8a', 'Tweet status page'),
           a('d5270434', 'Exit'),
+          a('ba5256b1', 'Text Size'),
           a('h030c24b', 'Report an issue'),
           a('c3e6226a', 'Remove member'),
           a('a62c9c33', 'Follow your interests.'),
@@ -4518,9 +4523,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fb9dd9b0', 'Sign in'),
           a('d1cc8c05', 'Limit unwelcome interactions'),
           a('c7b4a180', 'Safety Mode image'),
-          a('effdd904', function (e) {
+          a('ca614405', function (e) {
             return (
-              'We flagged ' + e.count + ' account' + n(e.count, '', 's') + ' that might be acting abusive or spammy.'
+              'We flagged ' +
+              n(e.count, '', 'more than ') +
+              e.count +
+              ' potentially abusive or spammy account' +
+              n(e.count, '', 's') +
+              '.'
             )
           }),
           a('ga7fce66', 'Turn on Safety Mode'),
@@ -4739,13 +4749,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c64974fb', 'Followers'),
           a('i638f89c', 'Website visits'),
           a('e1bca506', 'Your promoted Tweet is under review'),
-          a('e4a4c608', 'Check back soon.'),
-          a('db841200', 'Boost engagement, reach more people, and spread the word about your page.'),
+          a('e4a4c608', 'Check back soon.')
+        a('db841200', 'Boost engagement, reach more people, and spread the word about your page.'),
           a('hc67be9d', 'Get Started'),
           a('fcc839b5', 'What’s your goal?'),
           a('d80964aa', 'Increase engagement'),
-          a('d4f57cce', 'Grow your followers')
-        a('g06d6bf8', 'More link clicks'),
+          a('d4f57cce', 'Grow your followers'),
+          a('g06d6bf8', 'More link clicks'),
           a('c1a1817b', 'Your Tweet includes media'),
           a('efc9b3fe', 'The media included in this Tweet won’t display with this goal selected.'),
           a('h277a2e8', 'Add a link to your Tweet'),
@@ -4995,23 +5005,23 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e7b201dd', 'Try searching for another.'),
           a('d09e12c4', 'These Tweets are protected'),
           a('gbf342a4', 'Account Withheld'),
-          a('b6b63300', 'View autoblocked account Tweets'),
+          a('i144ee20', 'View autoblocked Tweets'),
           a('d834ab9c', 'Yes, view profile'),
-          a('g7ddd636', function (e) {
+          a('g6645d94', function (e) {
             return '@' + e.screenName
           }),
-          a('f760c9c7', function (e) {
+          a('g08eceae', function (e) {
             return '@' + e.screenName
           }),
           a('de078c23', 'Learn more'),
-          a('c090049a', function (e) {
+          a('e8bc24ae', function (e) {
             return '@' + e.screenName
           }),
           a(
             'ff050532',
             'We know we don’t get autoblocks right all the time, so we’re working to improve our detection.',
           ),
-          a('je9b49fb', 'What is Safety Mode?'),
+          a('b48bd8bf', 'What’s Safety Mode?'),
           a('ia457a19', 'Here are ways to keep your conversations healthy — and avoid getting autoblocked.'),
           a('f5531a44', 'Remember the human'),
           a('h173a610', 'There’s a person on the other end of your Tweet with feelings.'),
@@ -5574,7 +5584,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fb8c0efc', 'Super Following'),
           a('a7667261', 'Manage subscription'),
           a('jd50570f', 'Autoblocked'),
-          a('cd352c22', 'Remove from autoblock'),
+          a('e024ee92', 'Remove autoblock'),
           a('hfc90ee9', function (e) {
             return 'Block @' + e.screenName
           }),
@@ -5988,9 +5998,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'j4c02ead',
+                key: 'f0e84608',
                 get: function () {
-                  return ['', 'ago']
+                  return ['', ' ago']
                 },
               },
               {
@@ -7658,9 +7668,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'ia6c9ddf',
+                key: 'b8437d64',
                 get: function () {
-                  return ['Manage preferences that help limit unwelcome interactions. ']
+                  return ['Manage settings that help limit unwelcome interactions. ']
                 },
               },
               {
@@ -7909,19 +7919,19 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'ff854e1d',
+                key: 'dd7d4939',
                 get: function () {
                   return [
                     'You turned on Safety Mode, so we autoblocked ',
-                    ' for 7 days. ' + this.props.smartBlockEndTimeSentence,
+                    ' for a week. ' + this.props.smartBlockEndTimeSentence,
                   ]
                 },
               },
               {
-                key: 'bb1761f3',
+                key: 'ef0a76ab',
                 get: function () {
                   return [
-                    'You can view their profile to learn more about them, or go to their flagged Tweets to see why we autoblocked them. Neither one of these actions will unblock ',
+                    'You can view their profile to learn more about them, or go to their autoblocked Tweets to see why we autoblocked them. Neither one of these actions will remove the autoblock from ',
                     '.',
                   ]
                 },
@@ -7933,11 +7943,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'db4df693',
+                key: 'a496f1c8',
                 get: function () {
                   return [
                     'You’re temporarily autoblocked from viewing and interacting with ',
-                    '’s Tweets. This happened when they were in Safety Mode and we detected potentially harmful language or repetitive, uninvited replies.',
+                    '’s Tweets. This happened when they were in Safety Mode, and we flagged your interactions as potentially abusive or spammy.',
                   ]
                 },
               },
@@ -7948,7 +7958,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'e5285333',
+                key: 'ed219b4a',
                 get: function () {
                   return ['']
                 },
