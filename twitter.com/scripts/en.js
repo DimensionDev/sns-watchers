@@ -11,7 +11,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(285).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(286).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -148,7 +148,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ge9eaa86', 'People on Twitter are the first to know.'),
           a('d8817e36', 'Accept all cookies'),
           a('b9288ee6', 'Refuse non-essential cookies'),
-          a('d0b74a5a', 'Cookie preferences'),
+          a('i1390ec2', 'Did someone say … cookies?'),
           a('id7ef73f', 'help center'),
           a('gfb2ba0f', 'Show more about your choices.'),
           a('ia5e7487', 'Close'),
@@ -256,7 +256,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f45bace3', 'Hide captions'),
           a('ce96f1db', 'Captions unavailable'),
           a('a5bf5489', 'Tweeps only'),
-          a('cc53ae41', 'Recording ended'),
+          a('h140746e', function (e) {
+            return e.count + ' tuned in'
+          }),
           a('h63a5c3b', 'More'),
           a('jf9f3e53', 'Skip forward 15 seconds'),
           a('ic1e826e', 'Play'),
@@ -1774,7 +1776,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('df15d5b7', function (e) {
             return e.count + ' new Tweet' + n(e.count, '', 's')
           }),
-          a('ba2e6395', 'Support & resources'),
+          a('e48fbb01', 'Report Community'),
+          a('c8c6c4e9', 'Learn more about Communities'),
           a('a0e3ece4', 'Community Detail'),
           a('d601fc2f', 'Latest'),
           a('b139b549', 'Invite members'),
@@ -2094,6 +2097,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'ja94f34d',
             'These settings apply to this browser or device while you’re logged out. They don’t have any effect when you’re logged in.',
           ),
+          a('d0b74a5a', 'Cookie preferences'),
           a('gd4302ec', 'Manage your cookie experience on Twitter.'),
           a('bdc6f5b7', 'Your account'),
           a('f8645654', 'Security and account access'),
@@ -2235,13 +2239,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('j0bc23f3', 'I have confirmed that my organization’s account is already verified.'),
           a('aa6228de', 'Entertainment company'),
-          a('d5b3cbc9', 'Major entertainment companies, such as television networks, film studios, and music labels.'),
-          a('b5a3e590', 'Individual in entertainment'),
+          a('d5b3cbc9', 'Major entertainment companies, such as television networks, film studios, and music labels.')
+        a('b5a3e590', 'Individual in entertainment'),
           a(
             'e484f794',
             'Influential individuals in the entertainment industry like actors, musicians, directors, screenwriters, comedians, and more.',
-          )
-        a('b8d8ea64', 'Production organization'),
+          ),
+          a('b8d8ea64', 'Production organization'),
           a(
             'ff27db3c',
             'Official accounts of productions associated with entertainment entities, like films, events/festivals, TV shows and more.',
@@ -3545,9 +3549,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'd4cca0f7',
             'This will end your active Twitter session, and you’ll need to log in again to start a new one.',
-          ),
-          a('e04ba39c', 'Date and time'),
-          a('h667fc02', 'You’ve ended your active Twitter session.')
+          )
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3564,7 +3566,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('ddcd3d26', 'Loading session data'),
+        a('e04ba39c', 'Date and time'),
+          a('h667fc02', 'You’ve ended your active Twitter session.'),
+          a('ddcd3d26', 'Loading session data'),
           a('d2f0f3fd', 'We can not find this session'),
           a('f5e59e90', 'Protect your Tweets'),
           a(
@@ -4747,10 +4751,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cc49d03f', 'Postcode'),
           a('dbe9353d', 'Engagements'),
           a('c64974fb', 'Followers'),
-          a('i638f89c', 'Website visits'),
-          a('e1bca506', 'Your promoted Tweet is under review'),
-          a('e4a4c608', 'Check back soon.')
-        a('db841200', 'Boost engagement, reach more people, and spread the word about your page.'),
+          a('i638f89c', 'Website visits')
+        a('e1bca506', 'Your promoted Tweet is under review'),
+          a('e4a4c608', 'Check back soon.'),
+          a('db841200', 'Boost engagement, reach more people, and spread the word about your page.'),
           a('hc67be9d', 'Get Started'),
           a('fcc839b5', 'What’s your goal?'),
           a('d80964aa', 'Increase engagement'),
