@@ -482,26 +482,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('gdf4b79f', 'Leave conversation?'),
           a('bbf83d83', 'This can’t be undone and the conversation history will be deleted from your inbox.'),
-          a('e067c8bd', 'Accept and unmute?'),
-          a(
-            'ddaeefd7',
-            'If you accept and unmute this account their message request will no longer be filtered and will be sent to your primary inbox.',
-          ),
           a('b6878b09', 'Something went wrong. Try blocking that user again in a minute.'),
           a('ccf2f24e', 'Report'),
           a('ib3fe8a9', 'Block or report'),
-          a('a5e50981', 'Mute, block, or report'),
-          a('e67b2d65', function (e) {
-            return 'Mute @' + e.screenName
-          }),
-          a(
-            'jd44c4e4',
-            'Muting means their messages will be filtered and sent to the bottom of your message request list.',
-          ),
-          a('f05597b2', function (e) {
-            return 'Unmute @' + e.screenName
-          }),
-          a('g9c74283', 'Unmuted messages will not be filtered and sent to the bottom of your message request list.'),
           a('fcd4d489', function (e) {
             return 'Block @' + e.screenName
           }),
@@ -542,6 +525,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hb568af3', 'Mute'),
           a('bb1cbeb5', 'Unmute'),
           a('h2f62205', 'Muting user'),
+          a('e67b2d65', function (e) {
+            return 'Mute @' + e.screenName
+          }),
+          a('f05597b2', function (e) {
+            return 'Unmute @' + e.screenName
+          }),
           a('h59f52ee', 'Successfully muted.'),
           a('eea0cbed', 'Successfully unmuted.'),
           a('i29533b2', function (e) {
@@ -1150,15 +1139,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Dismiss ' + e.topicName + ' Topic'
           }),
           a('c837fca9', 'Show more replies'),
-          a('d228a9a0', 'Show more')
-        a('d28215f0', 'Sorry, polls are not allowed in Communities!'),
+          a('d228a9a0', 'Show more'),
+          a('d28215f0', 'Sorry, polls are not allowed in Communities!'),
           a('ec909a54', function (e) {
             return 'Your Tweet' + n(e.numOfTweets, ' was', 's were') + ' sent to ' + e.communityName
           }),
           a('jd53409d', 'Don’t forget to add descriptions'),
           a('edae65de', 'Your image doesn’t have a description.'),
-          a('a859846a', 'Your images don’t have descriptions.'),
-          a('e90118f5', 'One of your images doesn’t have a description.'),
+          a('a859846a', 'Your images don’t have descriptions.')
+        a('e90118f5', 'One of your images doesn’t have a description.'),
           a('c211dcb1', 'Some of your images don’t have descriptions.'),
           a('d7c26bfb', 'Describe what’s in the image and why it’s important here.'),
           a('a75e3ccc', 'Describe what’s in the images and why they’re important here.'),
@@ -2239,8 +2228,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('j0bc23f3', 'I have confirmed that my organization’s account is already verified.'),
           a('aa6228de', 'Entertainment company'),
-          a('d5b3cbc9', 'Major entertainment companies, such as television networks, film studios, and music labels.')
-        a('b5a3e590', 'Individual in entertainment'),
+          a('d5b3cbc9', 'Major entertainment companies, such as television networks, film studios, and music labels.'),
+          a('b5a3e590', 'Individual in entertainment'),
           a(
             'e484f794',
             'Influential individuals in the entertainment industry like actors, musicians, directors, screenwriters, comedians, and more.',
@@ -2250,8 +2239,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'ff27db3c',
             'Official accounts of productions associated with entertainment entities, like films, events/festivals, TV shows and more.',
           ),
-          a('c0e57cb2', 'Add your creator profile'),
-          a('f3c605b6', 'Creator profile'),
+          a('c0e57cb2', 'Add your creator profile')
+        a('f3c605b6', 'Creator profile'),
           a('h042d1a5', 'IMDB profile'),
           a('d2310f0b', 'A profile on IMDB that includes at least 50 production credits.'),
           a('ba04b4c1', 'Add IMDB Profile'),
@@ -3549,7 +3538,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'd4cca0f7',
             'This will end your active Twitter session, and you’ll need to log in again to start a new one.',
-          )
+          ),
+          a('e04ba39c', 'Date and time'),
+          a('h667fc02', 'You’ve ended your active Twitter session.'),
+          a('ddcd3d26', 'Loading session data'),
+          a('d2f0f3fd', 'We can not find this session'),
+          a('f5e59e90', 'Protect your Tweets')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3566,15 +3560,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('e04ba39c', 'Date and time'),
-          a('h667fc02', 'You’ve ended your active Twitter session.'),
-          a('ddcd3d26', 'Loading session data'),
-          a('d2f0f3fd', 'We can not find this session'),
-          a('f5e59e90', 'Protect your Tweets'),
-          a(
-            'i0310b4e',
-            'Only show your Tweets to people who follow you. If selected, you will need to approve each new follower.',
-          ),
+        a(
+          'i0310b4e',
+          'Only show your Tweets to people who follow you. If selected, you will need to approve each new follower.',
+        ),
           a('j8bf07ab', 'Protect your Tweets?'),
           a('ca8034b3', 'This will make them visible only to your Twitter followers.'),
           a('c5d4192a', 'Protect'),
@@ -4505,6 +4494,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('af9c8a3d', 'Open app'),
           a('c299a6cf', 'Thread'),
           a('i9a4ca8a', 'Tweet status page'),
+          a('d6d9aab6', 'Add Bookmark'),
+          a('bb89cf45', 'Remove Bookmark'),
+          a('a739d4ba', 'Add to Bookmark Folder'),
           a('d5270434', 'Exit'),
           a('ba5256b1', 'Text Size'),
           a('h030c24b', 'Report an issue'),
@@ -4751,10 +4743,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cc49d03f', 'Postcode'),
           a('dbe9353d', 'Engagements'),
           a('c64974fb', 'Followers'),
-          a('i638f89c', 'Website visits')
-        a('e1bca506', 'Your promoted Tweet is under review'),
-          a('e4a4c608', 'Check back soon.'),
-          a('db841200', 'Boost engagement, reach more people, and spread the word about your page.'),
+          a('i638f89c', 'Website visits'),
+          a('e1bca506', 'Your promoted Tweet is under review'),
+          a('e4a4c608', 'Check back soon.')
+        a('db841200', 'Boost engagement, reach more people, and spread the word about your page.'),
           a('hc67be9d', 'Get Started'),
           a('fcc839b5', 'What’s your goal?'),
           a('d80964aa', 'Increase engagement'),
