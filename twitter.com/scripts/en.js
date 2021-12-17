@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [119],
+    [117],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -11,7 +11,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(286).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(285).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -585,7 +585,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Remove @' + e.screenName + ' from Flagged accounts list?'
           }),
           a('a2f8105f', 'Messages'),
-          a('e839db39', 'Dismiss'),
           a('c64c1883', 'Compose new Message'),
           a('j7d0e835', 'Expand'),
           a('b08821f3', 'Back'),
@@ -643,6 +642,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('h845f281', 'Direct Message'),
           a('f325afc3', 'Compose a DM'),
+          a('f37a6f73', 'Learn more'),
           a('ga169e1b', function (e) {
             return 'Direct Messages (' + e.count + ' unread conversation' + n(e.count, '', 's') + ')'
           }),
@@ -978,6 +978,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b1abb17d', 'Browse Tweets'),
           a('d9b417c4', 'Set as not interested'),
           a('c29d6806', 'Stop recommending'),
+          a('e839db39', 'Dismiss'),
           a('h3ab37c7', 'Contribute to Birdwatch'),
           a('bae0cbcf', 'Change who can reply'),
           a('f8393bda', 'Only Super Followers can reply'),
@@ -1145,9 +1146,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Your Tweet' + n(e.numOfTweets, ' was', 's were') + ' sent to ' + e.communityName
           }),
           a('jd53409d', 'Don’t forget to add descriptions'),
-          a('edae65de', 'Your image doesn’t have a description.'),
-          a('a859846a', 'Your images don’t have descriptions.')
-        a('e90118f5', 'One of your images doesn’t have a description.'),
+          a('edae65de', 'Your image doesn’t have a description.')
+        a('a859846a', 'Your images don’t have descriptions.'),
+          a('e90118f5', 'One of your images doesn’t have a description.'),
           a('c211dcb1', 'Some of your images don’t have descriptions.'),
           a('d7c26bfb', 'Describe what’s in the image and why it’s important here.'),
           a('a75e3ccc', 'Describe what’s in the images and why they’re important here.'),
@@ -1364,6 +1365,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bc6efc72', 'Privacy Policy'),
           a('h3161191', 'Cookie Policy'),
           a('aeede019', 'Imprint'),
+          a('e3719c15', 'Accessibility'),
           a('a7de64dd', 'Ads info'),
           a('jb0a4c35', 'Blog'),
           a('cf3709d9', 'Status'),
@@ -2073,8 +2075,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('b25fe02d', 'You don’t have a message selected'),
           a('b81d9b9b', 'Choose one from your existing messages, or start a new one.'),
-          a('f37a6f73', 'Learn more'),
-          a('e3719c15', 'Accessibility'),
           a('d299431b', 'Monetization'),
           a('cad53943', 'Privacy and safety'),
           a('e95b9448', 'General'),
@@ -2093,6 +2093,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cf9b1669', 'Accessibility, display, and languages'),
           a('bdfa2b8c', 'Additional resources'),
           a('df483b47', 'Feature switches'),
+          a('e435cdff', 'Try searching for password reset, notifications, etc'),
+          a('ae3d6086', 'No settings found'),
+          a('ba8f6f81', 'Search Settings'),
           a('dae57a41', 'Allow all'),
           a('i7cbc154', 'Allow some'),
           a('e3a761ee', 'Off'),
@@ -2233,14 +2236,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'e484f794',
             'Influential individuals in the entertainment industry like actors, musicians, directors, screenwriters, comedians, and more.',
-          ),
-          a('b8d8ea64', 'Production organization'),
+          )
+        a('b8d8ea64', 'Production organization'),
           a(
             'ff27db3c',
             'Official accounts of productions associated with entertainment entities, like films, events/festivals, TV shows and more.',
           ),
-          a('c0e57cb2', 'Add your creator profile')
-        a('f3c605b6', 'Creator profile'),
+          a('c0e57cb2', 'Add your creator profile'),
+          a('f3c605b6', 'Creator profile'),
           a('h042d1a5', 'IMDB profile'),
           a('d2310f0b', 'A profile on IMDB that includes at least 50 production credits.'),
           a('ba04b4c1', 'Add IMDB Profile'),
@@ -3358,7 +3361,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ba4aaa9d', 'Unmute phrase?'),
           a('f837ed7d', 'This phrase will now be allowed in your notifications and Home timeline.'),
           a('a6194d10', 'Loading muted accounts'),
-          a('bab1f8b0', 'Tweets'),
           a('ga3ef87d', 'You aren’t muting anyone'),
           a('cd9701d3', 'When you mute accounts, you won’t see their Tweets in your timeline.'),
           a(
@@ -3541,9 +3543,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('e04ba39c', 'Date and time'),
           a('h667fc02', 'You’ve ended your active Twitter session.'),
-          a('ddcd3d26', 'Loading session data'),
-          a('d2f0f3fd', 'We can not find this session'),
-          a('f5e59e90', 'Protect your Tweets')
+          a('ddcd3d26', 'Loading session data')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3560,10 +3560,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a(
-          'i0310b4e',
-          'Only show your Tweets to people who follow you. If selected, you will need to approve each new follower.',
-        ),
+        a('d2f0f3fd', 'We can not find this session'),
+          a('bab1f8b0', 'Tweets'),
+          a('f5e59e90', 'Protect your Tweets'),
+          a(
+            'i0310b4e',
+            'Only show your Tweets to people who follow you. If selected, you will need to approve each new follower.',
+          ),
           a('j8bf07ab', 'Protect your Tweets?'),
           a('ca8034b3', 'This will make them visible only to your Twitter followers.'),
           a('c5d4192a', 'Protect'),
@@ -3847,7 +3850,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d4d74bb3', 'Patreon'),
           a('fc738909', 'Substack'),
           a('d8552c1a', 'Twitch'),
-          a('hbb0bb46', 'Youtube'),
+          a('ca07aa46', 'YouTube'),
           a('d7081f91', 'What platforms do you use?'),
           a('j349548f', 'Tell us about the platforms you use to share your content.'),
           a('b422cb62', 'Get started with Super Follows'),
@@ -4027,9 +4030,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('e3e58b6d', 'Conversation info'),
           a('a9ddbb94', 'Group info'),
-          a('fa91f351', 'This conversation is docked'),
-          a('b999caa8', 'Close the docked conversation to see it here.'),
-          a('de2c3337', 'See it here'),
           a('h810143c', 'Details'),
           a('e62d3c10', 'There’s no account with that name. Please try again.'),
           a('f17f716a', 'You can’t send this to a person who’s not following you.'),
@@ -6329,6 +6329,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
+                key: 'i38f9270',
+                get: function () {
+                  return [
+                    'This is where you’ll see message requests from people you don’t follow. To reply to their messages, you need to accept the request. ',
+                  ]
+                },
+              },
+              {
                 key: 'i9bec47a',
                 get: function () {
                   return ['Log out ']
@@ -6746,14 +6754,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'a6d33440',
                 get: function () {
                   return ['You kept @', '’s Tweet']
-                },
-              },
-              {
-                key: 'i38f9270',
-                get: function () {
-                  return [
-                    'This is where you’ll see message requests from people you don’t follow. To reply to their messages, you need to accept the request. ',
-                  ]
                 },
               },
               {
