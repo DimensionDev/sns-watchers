@@ -59,6 +59,22 @@ function getAllScriptUrls(html) {
   scripts.each((_, script) => {
     urls.push($(script).attr('href'))
   })
+
+  let match = html.match(/{\d+:".*?}/m)
+  if (match) {
+    const scriptsMap = eval(`(${match[0]})`)
+    match = html.match(/{\d+:"[0-9a-z]{7}",.*?}/m)
+    if (match) {
+      const hashMap = eval(`(${match[0]})`)
+      debugger
+      Object.keys(scriptsMap)
+        .filter((id) => hashMap[id])
+        .forEach((id) => {
+          const name = `${scriptsMap[id]}.${hashMap[id]}5.js`
+          urls.push(`https://abs.twimg.com/responsive-web/client-web-legacy/${name}`)
+        })
+    }
+  }
   return urls
 }
 
@@ -69,10 +85,12 @@ async function start() {
     const fileName = url
       .split('/')
       .pop()
-      .replace(/(\w+)\.\w+\.js/, '$1')
+      .replace(/(.*?)\.\w+\.js/, '$1')
     await download(url, dest(`scripts/${fileName}.js`))
   })
-  await Promise.allSettled(tasks)
+  while (tasks.length) {
+    await Promise.allSettled(tasks.splice(0, 10))
+  }
 }
 
 start()

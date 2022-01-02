@@ -26,12 +26,16 @@ async function download(url, saveAs, preprocesser = (code) => code) {
     let content = await fetchFile(url)
     content = preprocesser(content)
     if (saveAs) {
-      content = await format(content, saveAs)
-      await fs.writeFile(saveAs, content)
+      try {
+        content = await format(content, saveAs)
+        await fs.writeFile(saveAs, content)
+      } catch (e) {
+        console.log('Fails to format', url)
+      }
     }
     return content
   } catch (err) {
-    console.info('fails to download', url, err)
+    console.info('fails to download', url)
   }
 }
 /**
@@ -49,7 +53,7 @@ async function format(code, filepath) {
     })
     return prettied
   } catch (err) {
-    console.info('fails to format', filepath, err)
+    console.info('Fails to format', filepath)
   }
 }
 
