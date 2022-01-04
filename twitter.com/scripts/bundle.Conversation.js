@@ -657,8 +657,8 @@
             null
           )
         },
-        q = n('iOFy'),
-        H = n('Gpeq'),
+        q = n('Gpeq'),
+        H = n('tevE'),
         z = function (e) {
           var t = e.primaryLabel,
             n = e.subtitle,
@@ -686,7 +686,7 @@
             y.createElement(
               x.a,
               { style: U.subtitleContainer },
-              y.createElement(q.a, { align: 'center', color: 'gray700' }, n),
+              y.createElement(H.a, { align: 'center', color: 'gray700' }, n),
             ),
           )
         },
@@ -777,7 +777,7 @@
         var t = e.currency,
           n = e.durationDays,
           r = e.lang,
-          a = e.totalBudgetNum.toLocaleString(Object(H.a)(r), {
+          a = e.totalBudgetNum.toLocaleString(Object(q.a)(r), {
             currency: t,
             style: 'currency',
             maximumFractionDigits: 0,
@@ -899,13 +899,13 @@
                     s = o.durationDays,
                     d = o.errorMessage,
                     f = o.lang,
-                    p = u.toLocaleString(Object(H.a)(f), {
+                    p = u.toLocaleString(Object(q.a)(f), {
                       currency: l,
                       style: 'currency',
                       maximumFractionDigits: 0,
                       minimumFractionDigits: 0,
                     }),
-                    m = i[0].toLocaleString(Object(H.a)(f), {
+                    m = i[0].toLocaleString(Object(q.a)(f), {
                       currency: l,
                       style: 'currency',
                       maximumFractionDigits: 0,
@@ -913,7 +913,7 @@
                     }),
                     g = i
                       .slice(-1)[0]
-                      .toLocaleString(Object(H.a)(f), {
+                      .toLocaleString(Object(q.a)(f), {
                         currency: l,
                         style: 'currency',
                         maximumFractionDigits: 0,
@@ -975,7 +975,7 @@
                     y.createElement(
                       x.a,
                       { style: Xe.disclaimer },
-                      y.createElement(q.a, { align: 'center', color: 'gray700', size: 'subtext2' }, Ve),
+                      y.createElement(H.a, { align: 'center', color: 'gray700', size: 'subtext2' }, Ve),
                     ),
                   )
                 },
@@ -2042,7 +2042,7 @@
                         gr,
                       ),
                       y.createElement(
-                        q.a,
+                        H.a,
                         { style: Ir.terms },
                         ((r = c),
                         y.createElement(

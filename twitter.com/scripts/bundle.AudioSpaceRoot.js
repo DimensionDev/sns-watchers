@@ -24,9 +24,9 @@
         f = Object(m.a)().propsFromState(function () {
           return { broadcastId: g, loggedInUserId: b.p }
         }),
-        v = t('iOFy'),
-        h = t('jHSc'),
-        I = t('aITJ'),
+        v = t('jHSc'),
+        h = t('aITJ'),
+        I = t('tevE'),
         p = t('t62R'),
         E = t('yrzJ'),
         w = t('FIs5'),
@@ -34,11 +34,11 @@
         U = t('i4Oy'),
         k = t('MWbm'),
         A = t('3XMw'),
-        y = t.n(A)
-      function x(e) {
+        x = t.n(A)
+      function y(e) {
         var a = e.broadcastId,
           t = e.history,
-          n = (e.match, I.b.isIPhone() || I.b.isAndroid()),
+          n = (e.match, h.b.isIPhone() || h.b.isAndroid()),
           r = n ? _.buttonAvailable : _.buttonUnavailable,
           l = n ? 'twitter://spaces/'.concat(a) : void 0,
           i = n
@@ -46,22 +46,22 @@
             : function () {
                 return t.goBack()
               },
-          o = c.createElement(v.a, { align: 'left', size: 'title1' }, n ? _.headerAvailable : _.headerUnavailable),
+          o = c.createElement(I.a, { align: 'left', size: 'title1' }, n ? _.headerAvailable : _.headerUnavailable),
           s = n
-            ? c.createElement(v.a, { align: 'left', size: 'headline1' }, _.messageAvailable)
+            ? c.createElement(I.a, { align: 'left', size: 'headline1' }, _.messageAvailable)
             : c.createElement(
                 k.a,
                 null,
-                c.createElement(v.a, { align: 'left', size: 'headline1' }, _.messageUnavailable),
+                c.createElement(I.a, { align: 'left', size: 'headline1' }, _.messageUnavailable),
                 c.createElement(k.a, { style: S.messageGap }),
                 c.createElement(
-                  v.a,
+                  I.a,
                   { align: 'left', size: 'headline1' },
                   c.createElement(
                     'span',
                     null,
                     c.createElement(
-                      y.a.I18NFormatMessage,
+                      x.a.I18NFormatMessage,
                       { $i18n: 'c79f144b' },
                       c.createElement(
                         p.b,
@@ -74,7 +74,7 @@
               ),
           d = U.a.get('window').width
         return c.createElement(
-          h.b,
+          v.b,
           {
             backLocation: '/home',
             documentTitle: _.documentTitle,
@@ -95,14 +95,14 @@
         )
       }
       var _ = {
-          documentTitle: y.a.a2288d04,
-          title: y.a.ab4fc8bb,
-          headerAvailable: y.a.a324f032,
-          headerUnavailable: y.a.eba5d942,
-          messageUnavailable: y.a.a77e3b5c,
-          messageAvailable: y.a.f66f311d,
-          buttonAvailable: y.a.db2b473e,
-          buttonUnavailable: y.a.e839db39,
+          documentTitle: x.a.a2288d04,
+          title: x.a.ab4fc8bb,
+          headerAvailable: x.a.a324f032,
+          headerUnavailable: x.a.eba5d942,
+          messageUnavailable: x.a.a77e3b5c,
+          messageAvailable: x.a.f66f311d,
+          buttonAvailable: x.a.db2b473e,
+          buttonUnavailable: x.a.e839db39,
         },
         S = T.a.create(function (e) {
           return {
@@ -133,7 +133,7 @@
             b = !n && a.isTrue('voice_rooms_logged_out_listening')
           if (s || b) return c.createElement(o.default.Content, l)
         }
-        return c.createElement(x, r()({}, l, { broadcastId: t }))
+        return c.createElement(y, r()({}, l, { broadcastId: t }))
       }
       var z = f(function (e) {
         e.broadcastId, e.loggedInUserId

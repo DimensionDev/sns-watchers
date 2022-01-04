@@ -5157,16 +5157,15 @@
             ),
           )
         },
-        bo = n('iOFy'),
-        _o = n('cm6r'),
-        Co = A.a.create(function (e) {
+        bo = n('cm6r'),
+        _o = A.a.create(function (e) {
           return { button: { width: e.spaces.space72, height: e.spaces.space72, marginBottom: e.spaces.space12 } }
         }),
-        wo = function (e) {
+        Co = function (e) {
           var t = e.icon,
             n = e.label,
             r = e.onPress
-          return C.createElement(_o.a, { interactiveStyles: null, onPress: r }, function (e) {
+          return C.createElement(bo.a, { interactiveStyles: null, onPress: r }, function (e) {
             return C.createElement(
               C.Fragment,
               null,
@@ -5174,15 +5173,16 @@
                 icon: t,
                 interactivityState: e,
                 size: 'xLarge',
-                style: Co.button,
+                style: _o.button,
                 type: 'primaryOutlined',
               }),
               C.createElement(P.b, { color: 'gray700' }, n),
             )
           })
         },
-        Eo = n('sjK1'),
-        To = n('FDY4'),
+        wo = n('sjK1'),
+        Eo = n('FDY4'),
+        To = n('tevE'),
         So = n('jV+4'),
         xo = n('UgB4'),
         Oo = n('TW8A'),
@@ -5309,7 +5309,7 @@
                 showActionButton: f > A.a.theme.breakpoints.medium,
               },
               C.createElement(Mo, { style: [zo.profanityIcon, zo.itemPadding] }),
-              C.createElement(bo.a, { size: 'title4', style: zo.itemPadding, weight: 'heavy' }, Lo),
+              C.createElement(To.a, { size: 'title4', style: zo.itemPadding, weight: 'heavy' }, Lo),
               C.createElement(P.b, { color: 'gray700', style: zo.itemPadding }, Bo),
               C.createElement(
                 R.a,
@@ -5329,7 +5329,7 @@
                           r,
                           a = ''
                         if (e.externalMediaDetails) a = e.externalMediaDetails.stillMediaUrl
-                        else if (e.mediaFile instanceof Eo.c) a = e.mediaFile.thumbnail
+                        else if (e.mediaFile instanceof wo.c) a = e.mediaFile.thumbnail
                         else if (null !== (t = e.mediaFile) && void 0 !== t && t.url) {
                           var o
                           a = null === (o = e.mediaFile) || void 0 === o ? void 0 : o.url
@@ -5346,7 +5346,7 @@
                       return C.createElement(
                         R.a,
                         { style: zo.photos },
-                        C.createElement(To.a, {
+                        C.createElement(Eo.a, {
                           containerAspectRatio: 1,
                           images: e,
                           previewMode: !1,
@@ -5383,9 +5383,9 @@
                   C.createElement(
                     R.a,
                     { style: zo.mobileButtonContainer },
-                    C.createElement(wo, { icon: p, label: Ho, onPress: i }),
-                    C.createElement(wo, { icon: m, label: No, onPress: o }),
-                    C.createElement(wo, { icon: h, label: Vo, onPress: r }),
+                    C.createElement(Co, { icon: p, label: Ho, onPress: i }),
+                    C.createElement(Co, { icon: m, label: No, onPress: o }),
+                    C.createElement(Co, { icon: h, label: Vo, onPress: r }),
                   )),
             )
           })
