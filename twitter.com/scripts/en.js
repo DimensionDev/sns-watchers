@@ -116,6 +116,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hd50e063', 'Not now'),
           a('a565833d', 'Sign up'),
           a('e919c3bc', 'Log in'),
+          a('h7a9e4e1', 'NFT profile picture'),
           a('g61ed8a4', 'Something went wrong.'),
           a('a7478929', 'You are over the daily limit for sending Tweets.'),
           a('adf527d2', 'Something went wrong. Try sending your Tweet again in a minute.'),
@@ -1145,9 +1146,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d28215f0', 'Sorry, polls are not allowed in Communities!'),
           a('ec909a54', function (e) {
             return 'Your Tweet' + n(e.numOfTweets, ' was', 's were') + ' sent to ' + e.communityName
-          }),
-          a('jd53409d', 'Don’t forget to add descriptions')
-        a('edae65de', 'Your image doesn’t have a description.'),
+          })
+        a('jd53409d', 'Don’t forget to add descriptions'),
+          a('edae65de', 'Your image doesn’t have a description.'),
           a('a859846a', 'Your images don’t have descriptions.'),
           a('e90118f5', 'One of your images doesn’t have a description.'),
           a('c211dcb1', 'Some of your images don’t have descriptions.'),
@@ -2076,12 +2077,29 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('b25fe02d', 'You don’t have a message selected'),
           a('b81d9b9b', 'Choose one from your existing messages, or start a new one.'),
+          a('a5f32aa2', 'Blocked accounts'),
+          a('ea989810', 'Deactivate account'),
+          a('e8f57e07', 'Personalization and data'),
+          a('ae72d4c4', 'Apps and sessions'),
+          a('fd4d9068', 'Discoverability and contacts'),
+          a('bbcafbd9', 'Manage contacts'),
+          a('aeddb289', 'Content preferences'),
+          a('c21037d0', 'Country'),
+          a('eafe3287', 'Data usage'),
+          a('afcad7f2', 'Download the app'),
+          a('a3841918', 'Email'),
+          a('f953f53a', 'Change display language'),
+          a('eb029cab', 'Add location information to your Tweets'),
+          a('dd703318', 'Two-factor authentication'),
+          a('b1686800', 'Manage security keys'),
+          a('f56af9cc', 'Download an archive of your data'),
+          a('cbd449af', 'Mute and block'),
+          a('daef29b7', 'Muted accounts'),
+          a('i0dd9b9d', 'Muted words'),
           a('d299431b', 'Monetization'),
           a('cad53943', 'Privacy and safety'),
           a('e95b9448', 'General'),
-          a('eafe3287', 'Data usage'),
           a('f458a3b1', 'Privacy'),
-          a('e8f57e07', 'Personalization and data'),
           a('b7fde2b8', 'Your Twitter data'),
           a(
             'ja94f34d',
@@ -2203,8 +2221,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('je403ac5', 'Company, brand, or organization'),
           a('ff8c97fb', 'Entertainer or entertainment group'),
           a('h4d652fb', 'Government official or affiliate'),
-          a('c5b72ac5', 'Content creator or influential individual'),
-          a('f7ff070c', 'News organization or journalist'),
+          a('c5b72ac5', 'Content creator or influential individual')
+        a('f7ff070c', 'News organization or journalist'),
           a('eb7de689', 'Professional sports or gaming entity'),
           a('cc4b66b5', 'Select a category'),
           a('b37461a4', 'Select an account type'),
@@ -2233,11 +2251,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j0bc23f3', 'I have confirmed that my organization’s account is already verified.'),
           a('aa6228de', 'Entertainment company'),
           a('d5b3cbc9', 'Major entertainment companies, such as television networks, film studios, and music labels.'),
-          a('b5a3e590', 'Individual in entertainment')
-        a(
-          'e484f794',
-          'Influential individuals in the entertainment industry like actors, musicians, directors, screenwriters, comedians, and more.',
-        ),
+          a('b5a3e590', 'Individual in entertainment'),
+          a(
+            'e484f794',
+            'Influential individuals in the entertainment industry like actors, musicians, directors, screenwriters, comedians, and more.',
+          ),
           a('b8d8ea64', 'Production organization'),
           a(
             'ff27db3c',
@@ -2664,7 +2682,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Limit how Twitter uses some of your network data. These settings affect all the Twitter accounts on this browser.',
           ),
           a('d88102cf', 'If selected, Twitter will use less network data.'),
-          a('f56af9cc', 'Download an archive of your data'),
           a('b2ed92c3', 'Requesting archive'),
           a('ce5d2c46', 'Temporarily unavailable'),
           a('dd9ec81f', 'Your Twitter data link is expired'),
@@ -2727,13 +2744,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('cd32dbfd', 'Data and permissions'),
           a('e7efe72a', 'Login and security'),
-          a('a3841918', 'Email'),
           a('f70cd5ed', 'Phone'),
           a('j95edf76', 'Security'),
           a('a4b69cbb', 'Display language'),
-          a('c21037d0', 'Country'),
           a('d1f6d336', 'Username'),
-          a('ae72d4c4', 'Apps and sessions'),
           a('hfb92b14', 'Deactivate your account'),
           a('bc38469e', 'Personal information'),
           a('hd0765e3', 'Request verification'),
@@ -2807,7 +2821,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'You have just one security key linked to your account. To make sure you don’t get locked out if you lose it, add another key, and save a two-factor authentication backup code.',
           ),
           a('ja6bbfa0', 'Loading login verification data'),
-          a('dd703318', 'Two-factor authentication'),
           a('c2570921', 'Text message'),
           a(
             'f3820211',
@@ -2828,7 +2841,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Use a security key that inserts into your computer or syncs to your mobile device when you log in to Twitter. You’ll need to use a supported mobile device or web browser.',
           ),
           a('cd195528', 'Add new security key'),
-          a('b1686800', 'Manage security keys'),
           a('a1860ee7', 'Temporary password'),
           a('j45a2856', 'Create a one-time temporary password to use with third-party services.'),
           a('d8612d9c', 'Turn on Text message or Authentication app first'),
@@ -2872,7 +2884,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d70fceac', 'This password will expire in one hour.'),
           a('j924d222', 'Change country'),
           a('ia15900d', 'Learn more'),
-          a('f953f53a', 'Change display language'),
           a(
             'b67e1fc0',
             'Select your preferred language for headlines, buttons, and other text from Twitter on this account. This does not change the language of the content you see in your timeline.',
@@ -2880,7 +2891,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cef33711', function (e) {
             return e.languageName + ' (beta)'
           }),
-          a('fd4d9068', 'Discoverability and contacts'),
           a('ab987f3b', 'Control your discoverability settings and manage contacts you’ve imported.'),
           a('b033248c', 'Discoverability'),
           a(
@@ -2892,7 +2902,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ac9314aa', 'Let people who have your phone number find you on Twitter'),
           a('d86a220e', 'Let people who have your phone number find and connect with you on Twitter.'),
           a('ac77c66c', 'Contacts'),
-          a('bbcafbd9', 'Manage contacts'),
           a('jadf483e', 'Manage contacts that you have imported from your mobile devices.'),
           a('b864be79', 'Remove all contacts'),
           a('g5fa1090', 'Remove all contacts?'),
@@ -2903,7 +2912,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ca24589e', 'No name'),
           a('b8dd5e4d', 'Learn more'),
           a('hccd9dbd', 'Please enter your password in order to get this.'),
-          a('eb029cab', 'Add location information to your Tweets'),
           a(
             'j5267913',
             'Location labels you’ve added to your Tweets will no longer be visible on Twitter.com, Twitter for iOS, and Twitter for Android. These updates may take some time to go into effect.',
@@ -2959,7 +2967,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d5c9174e', function (e) {
             return e.location + ', ' + e.country
           }),
-          a('a5f32aa2', 'Blocked accounts'),
           a('cf67f6d5', 'Autoblocked'),
           a('eb233865', 'Imported'),
           a(
@@ -2990,7 +2997,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'c3216543',
             'You can restore your Twitter account if it was accidentally or wrongfully deactivated for some time after deactivation.',
           ),
-          a('ea989810', 'Deactivate account'),
           a('f6e73faa', 'Deactivate'),
           a('c3743327', 'This will deactivate your account'),
           a('a20cd24d', 'What else you should know'),
@@ -3192,7 +3198,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return e.count + ' location' + n(e.count, '', 's')
           }),
           a('j9d10268', 'Account activity'),
-          a('daef29b7', 'Muted accounts'),
           a('gbde3534', 'Interests and ads data'),
           a('a54826c5', 'Inferred interests from partners'),
           a('fdb55209', 'Interests from Twitter'),
@@ -3354,7 +3359,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cbd04965', function (e) {
             return 'Unmuted "' + e.keyword + '"'
           }),
-          a('i0dd9b9d', 'Muted words'),
           a('eb4e810a', 'Expired'),
           a('cabeb6c1', 'Forever'),
           a('f9bce916', 'Mute words'),
@@ -3369,13 +3373,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'When you mute accounts, their messages will be filtered and sent to the bottom of your message request list.',
           ),
           a('e565cad5', 'Learn more'),
-          a('aeddb289', 'Content preferences'),
           a('hfb77cf5', 'Safety'),
           a('d495680d', 'Languages'),
           a('f350f0c0', 'Recommendations'),
           a('cb9bb63f', 'Select which languages you want recommended Tweets, people, and trends to include.'),
           a('hfc86556', 'Muted'),
-          a('afcad7f2', 'Download the app'),
           a('hc762e4a', 'Get the Twitter app on your mobile phone. It’s free.'),
           a('i8385a2c', 'Android'),
           a('h201c4c1', 'iOS'),
@@ -3541,9 +3543,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'd4cca0f7',
             'This will end your active Twitter session, and you’ll need to log in again to start a new one.',
-          ),
-          a('e04ba39c', 'Date and time'),
-          a('h667fc02', 'You’ve ended your active Twitter session.')
+          )
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3560,7 +3560,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('ddcd3d26', 'Loading session data'),
+        a('e04ba39c', 'Date and time'),
+          a('h667fc02', 'You’ve ended your active Twitter session.'),
+          a('ddcd3d26', 'Loading session data'),
           a('d2f0f3fd', 'We can not find this session'),
           a('bab1f8b0', 'Tweets'),
           a('f5e59e90', 'Protect your Tweets'),
@@ -3611,7 +3613,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b2810ee7', 'Decide what you see on Twitter based on your preferences like Topics and interests'),
           a('f01fd982', 'Safety Mode (Beta)'),
           a('dcc5aa06', 'Manage autoblocks and preferences.'),
-          a('cbd449af', 'Mute and block'),
           a('ab125232', 'Manage the accounts, words, and notifications that you’ve muted or blocked.'),
           a('cc950d94', 'Manage who can message you directly.'),
           a('fe37f854', 'Manage who can see your Spaces listening activity'),
@@ -4744,9 +4745,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cc49d03f', 'Postcode'),
           a('dbe9353d', 'Engagements'),
           a('c64974fb', 'Followers'),
-          a('i638f89c', 'Website visits'),
-          a('e1bca506', 'Your promoted Tweet is under review')
-        a('e4a4c608', 'Check back soon.'),
+          a('i638f89c', 'Website visits')
+        a('e1bca506', 'Your promoted Tweet is under review'),
+          a('e4a4c608', 'Check back soon.'),
           a('db841200', 'Boost engagement, reach more people, and spread the word about your page.'),
           a('hc67be9d', 'Get Started'),
           a('fcc839b5', 'What’s your goal?'),
@@ -5028,6 +5029,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('dbb6ccd4', 'Even if they seem playful to you, others might find them hurtful.'),
           a('f3b1bdc1', 'Twitter Rules'),
           a('a58c8a4e', 'Learn more'),
+          a('f30795df', 'Opens profile photo'),
+          a('a270100c', 'Opens NFT details'),
           a('gd7acb84', 'Set up profile'),
           a('b7636014', 'Message'),
           a('a1ea2f12', 'Happy Birthday!'),
@@ -5069,6 +5072,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('gc65c0a9', 'So what does this mean?'),
           a('d17e8aa3', 'To choose an NFT as your profile picture you must connect your crypto wallet'),
           a('ff9c6943', 'NFT profile pictures are displayed in a special hexagonal shape'),
+          a('d8af538e', 'Learn more'),
           a('h6ed267b', function (e) {
             return 'Loading Super Follows Tweets by @' + e.screenName
           }),
@@ -8022,6 +8026,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'ee512b37',
                 get: function () {
                   return [this.props.formattedCount + ' Subscriber' + n(this.props.count, '', 's')]
+                },
+              },
+              {
+                key: 'fa13e739',
+                get: function () {
+                  return [
+                    'NFTs (short for Non-Fungible Tokens) are digital items that you own. Proof of ownership is stored on a blockchain, a digital database that is publicly accessible. ',
+                  ]
                 },
               },
               {

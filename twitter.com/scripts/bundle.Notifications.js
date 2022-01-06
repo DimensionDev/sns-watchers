@@ -67,8 +67,8 @@
         j = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('ezF+')),
         A = n('xZXe'),
         I = n('QIgh'),
-        C = n('8UdT'),
-        _ = n('AP4B'),
+        _ = n('8UdT'),
+        C = n('AP4B'),
         L =
           (n('JtPf'),
           n('7x/C'),
@@ -116,10 +116,10 @@
       }
       var U =
           ((o = {}),
-          v()(o, C.b.Notification, R),
+          v()(o, _.b.Notification, R),
           v()(
             o,
-            C.b.Tweet,
+            _.b.Tweet,
             j.c({
               selectDisplayType: function (e) {
                 return e.content.displayType
@@ -161,7 +161,7 @@
             }),
           ),
           o),
-        B = D(D(D({}, Object(I.a)({ tweetDismissable: !0, withMuteConversation: !0 })), U), _.a),
+        B = D(D(D({}, Object(I.a)({ tweetDismissable: !0, withMuteConversation: !0 })), U), C.a),
         F = x.a.create(function (e) {
           return {
             quotedTweet: {
@@ -371,15 +371,15 @@
         v = n('7JQg'),
         O = n('mw9i'),
         w = n('k/OQ'),
-        g = n('zCf4'),
+        g = n('Ty5D'),
         E = p.a.eb75875d,
         P = p.a.f8321d82,
         T = p.a.cdb53d79,
         j = p.a.h3290871,
         A = p.a.a98ba778,
         I = '/notifications',
-        C = '/notifications/mentions',
-        _ = '/notifications/verified',
+        _ = '/notifications/mentions',
+        C = '/notifications/verified',
         L = r.createElement(m.a, { pullRight: !0, to: '/settings/notifications' }),
         R = p.a.eb75875d,
         k = Object(s.a)(
@@ -399,9 +399,9 @@
         ),
         M = [
           { to: I, key: P, label: P, retainScrollPosition: !1 },
-          { to: C, key: T, label: T, retainScrollPosition: !1 },
+          { to: _, key: T, label: T, retainScrollPosition: !1 },
         ],
-        N = [].concat(M, [{ to: _, key: j, label: j, retainScrollPosition: !1 }]),
+        N = [].concat(M, [{ to: C, key: j, label: j, retainScrollPosition: !1 }]),
         D = function (e) {
           var t,
             n,
@@ -414,10 +414,10 @@
               g.e,
               null,
               r.createElement(g.c, { component: k, exact: !0, path: I }),
-              r.createElement(g.c, { component: x, exact: !0, path: C }),
-              r.createElement(g.c, { component: S, exact: !0, path: _ }),
+              r.createElement(g.c, { component: x, exact: !0, path: _ }),
+              r.createElement(g.c, { component: S, exact: !0, path: C }),
             )
-          return s.pathname !== _ || d
+          return s.pathname !== C || d
             ? r.createElement(h.a, {
                 documentTitle: E,
                 history: c,

@@ -11151,43 +11151,45 @@
           var t = w.useContext(R.a).featureSwitches,
             n = e.analytics,
             r = e.avatarRef,
-            o = e.onClick,
-            i = e.onHoverCardScreenNameClick,
-            c = e.promotedContent,
-            s = e.screenName,
-            l = e.uri,
-            u = e.userSpace,
-            d = e.withHoverCard,
-            p = void 0 === d || d,
-            f = e.withLink,
-            h = void 0 === f || f,
-            m = e.withNftAvatar,
-            v = e.withUserPresence,
-            b = void 0 !== v && v,
-            y = {
+            o = e.nativeID,
+            i = e.onClick,
+            c = e.onHoverCardScreenNameClick,
+            s = e.promotedContent,
+            l = e.screenName,
+            u = e.uri,
+            d = e.userSpace,
+            p = e.withHoverCard,
+            f = void 0 === p || p,
+            h = e.withLink,
+            m = void 0 === h || h,
+            v = e.withNftAvatar,
+            b = e.withUserPresence,
+            y = void 0 !== b && b,
+            g = {
               avatarRef: r,
               imageLayoutCache: Vt,
-              onClick: o,
-              onHoverCardScreenNameClick: i,
-              promotedContent: c,
-              screenName: s,
+              nativeID: o,
+              onClick: i,
+              onHoverCardScreenNameClick: c,
+              promotedContent: s,
+              screenName: l,
               style: Wt.avatar,
-              uri: l,
-              withHoverCard: p,
-              withLink: h,
+              uri: u,
+              withHoverCard: f,
+              withLink: m,
             }
           return (
             w.useEffect(function () {
-              m && t.isTrue('responsive_web_nft_avatar') && n.scribe({ element: 'nft_avatar', action: 'impression' })
+              v && t.isTrue('responsive_web_nft_avatar') && n.scribe({ element: 'nft_avatar', action: 'impression' })
             }, []),
             w.createElement(
               k.a,
               { style: Wt.avatarWrapper },
               w.createElement(Ht.a.Consumer, null, function (e) {
                 var t = e.avatarSize
-                return b && u
-                  ? w.createElement(Ut.a, a()({}, y, { size: t }, u))
-                  : w.createElement(zt.a, a()({ size: t }, y))
+                return y && d
+                  ? w.createElement(Ut.a, a()({}, g, { size: t }, d))
+                  : w.createElement(zt.a, a()({ size: t }, g))
               }),
             )
           )
@@ -11838,12 +11840,13 @@
                             renderTombstone: function (t) {
                               return e._renderTombstoneHWTweet(t)
                             },
-                            renderUserAvatar: function () {
-                              return e._renderAvatar()
+                            renderUserAvatar: function (t) {
+                              return e._renderAvatar(t.nativeID)
                             },
                             renderUserName: function (t) {
                               return e._renderUserNameHWTweet(t)
                             },
+                            staticLinkConfig: null,
                             testID: Se,
                             tweet: g,
                             withBottomLine: W,
@@ -11910,7 +11913,7 @@
                               {
                                 a11yDomIds: y,
                                 actionMenu: v && $.canUseDOM ? v() : null,
-                                avatar: e._renderAvatar(),
+                                avatar: e._renderAvatar(h.avatar),
                                 footer: e._renderFooter(),
                                 header: e._renderHeader(h),
                                 indents: z,
@@ -12562,31 +12565,32 @@
               },
               {
                 key: '_renderAvatar',
-                value: function () {
-                  var e = this.props,
-                    t = e.onAvatarClick,
-                    n = e.onScreenNameClick,
-                    r = e.promotedContent,
-                    o = e.tweet,
-                    i = e.withAvatarLink,
-                    a = e.withUserAvatar,
-                    c = e.withUserHoverCard,
-                    s = e.withUserPresence,
-                    l = qt.a.getOriginalTweet(o).user,
-                    u = qt.a.getOriginalTweet(o).user.id_str
-                  return a
+                value: function (e) {
+                  var t = this.props,
+                    n = t.onAvatarClick,
+                    r = t.onScreenNameClick,
+                    o = t.promotedContent,
+                    i = t.tweet,
+                    a = t.withAvatarLink,
+                    c = t.withUserAvatar,
+                    s = t.withUserHoverCard,
+                    l = t.withUserPresence,
+                    u = qt.a.getOriginalTweet(i).user,
+                    d = qt.a.getOriginalTweet(i).user.id_str
+                  return c
                     ? w.createElement(Kt, {
                         avatarRef: this._defaultInlinePromptRef,
-                        onClick: t,
-                        onHoverCardScreenNameClick: n,
-                        promotedContent: r,
-                        screenName: l.screen_name,
-                        uri: l.profile_image_url_https,
-                        userId: u,
-                        withHoverCard: c && !l.blocking,
-                        withLink: i,
-                        withNftAvatar: l.has_nft_avatar,
-                        withUserPresence: s,
+                        nativeID: e,
+                        onClick: n,
+                        onHoverCardScreenNameClick: r,
+                        promotedContent: o,
+                        screenName: u.screen_name,
+                        uri: u.profile_image_url_https,
+                        userId: d,
+                        withHoverCard: s && !u.blocking,
+                        withLink: a,
+                        withNftAvatar: u.has_nft_avatar,
+                        withUserPresence: l,
                       })
                     : null
                 },
@@ -21546,7 +21550,7 @@
         y = n('LtQU'),
         g = n('rHpw'),
         _ = g.a.create(function (e) {
-          return { icon: { color: e.colors.gray300 } }
+          return { icon: { color: e.colors.gray300, flexShrink: 0, paddingLeft: e.spaces.space12 } }
         }),
         w = function (e) {
           var t = e.badge,
@@ -22834,25 +22838,27 @@
         i = n('jhWN'),
         a = o.a.createLayoutCache()
       function c(e) {
-        var t = e.onClick,
-          n = e.onHoverCardScreenNameClick,
-          o = e.promotedContent,
-          c = e.screenName,
-          s = e.uri,
-          l = e.withHoverCard,
-          u = void 0 === l || l,
-          d = e.withLink,
-          p = void 0 === d || d
+        var t = e.nativeID,
+          n = e.onClick,
+          o = e.onHoverCardScreenNameClick,
+          c = e.promotedContent,
+          s = e.screenName,
+          l = e.uri,
+          u = e.withHoverCard,
+          d = void 0 === u || u,
+          p = e.withLink,
+          f = void 0 === p || p
         return r.createElement(i.a, {
           imageLayoutCache: a,
-          onClick: t,
-          onHoverCardScreenNameClick: n,
-          promotedContent: o,
-          screenName: c,
+          nativeID: t,
+          onClick: n,
+          onHoverCardScreenNameClick: o,
+          promotedContent: c,
+          screenName: s,
           size: 'xxLarge',
-          uri: s,
-          withHoverCard: u,
-          withLink: p,
+          uri: l,
+          withHoverCard: d,
+          withLink: f,
         })
       }
     },
@@ -34495,7 +34501,7 @@
             return { updateSettings: ye.L }
           }),
         we = n('RxYA'),
-        Oe = n('zCf4'),
+        Oe = n('Ty5D'),
         Ee = _e(function (e) {
           var t = e.guestSegment,
             n = e.isLoggedIn,
@@ -42191,6 +42197,7 @@
                   return I(
                     A(
                       {
+                        nativeID: le.avatar,
                         promotedContent: $,
                         screenName: ae.user.screen_name,
                         uri: ae.user.profile_image_url_https,
@@ -44199,7 +44206,7 @@
         },
         i = {
           loader: function () {
-            return n.e(335).then(n.bind(null, '1Tet'))
+            return n.e(336).then(n.bind(null, '1Tet'))
           },
           loaderKey: 'tweetUnavailableTombstoneLoader',
           strategy: r.a.Critical,

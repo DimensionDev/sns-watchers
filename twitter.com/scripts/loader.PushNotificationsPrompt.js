@@ -87,7 +87,7 @@
     PnKw: function (t, e, n) {
       'use strict'
       n.d(e, 'a', function () {
-        return T
+        return O
       })
       n('OZaJ')
       var r = n('VrFO'),
@@ -112,9 +112,10 @@
         C = n('rHpw'),
         x = 'inlinePrompt',
         A = 'inlinePrompt-primaryAction',
-        R = 'inlinePrompt-secondaryAction',
-        E = n('MWbm')
-      function k(t) {
+        E = 'inlinePrompt-secondaryAction',
+        R = 'inlinePrompt-centeredImageContainer',
+        k = n('MWbm')
+      function T(t) {
         var e = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -135,15 +136,34 @@
           return f()(this, n)
         }
       }
-      var T = (function (t) {
+      var O = (function (t) {
         u()(n, t)
-        var e = k(n)
+        var e = T(n)
         function n() {
           var t
           o()(this, n)
           for (var r = arguments.length, i = new Array(r), c = 0; c < r; c++) i[c] = arguments[c]
           return (
             (t = e.call.apply(e, [this].concat(i))),
+            y()(s()(t), '_renderImage', function (t) {
+              var e = b.createElement(g.a, {
+                accessibilityLabel: '',
+                aspectMode: P.a.exact(t.width / t.height),
+                backgroundColor: t.backgroundColor,
+                image: t,
+              })
+              return t.isCentered
+                ? b.createElement(
+                    k.a,
+                    { style: _.centeredImage, testID: R },
+                    b.createElement(
+                      k.a,
+                      { style: { width: ''.concat(t.width, 'px'), height: ''.concat(t.height, 'px') } },
+                      e,
+                    ),
+                  )
+                : e
+            }),
             y()(s()(t), '_renderTitle', function () {
               var e = t.props.headline
               return e
@@ -153,7 +173,7 @@
                       accessibilityRole: 'heading',
                       align: 'left',
                       size: 'title4',
-                      style: O.flexGrow,
+                      style: _.flexGrow,
                       weight: 'bold',
                       withHashflags: !0,
                     },
@@ -178,7 +198,7 @@
                 l = n.onClick,
                 u = n.text
               return b.createElement(
-                E.a,
+                k.a,
                 { style: [t.styles.actionContainer, i, { justifyContent: 'flex-start' }], testID: c },
                 b.createElement(
                   w.a,
@@ -202,21 +222,14 @@
                   o = t.secondaryAction,
                   i = t.shouldRenderBorder
                 return b.createElement(
-                  E.a,
-                  { style: i ? [_.root, _.rootMargin] : O.root },
+                  k.a,
+                  { style: i ? [S.root, S.rootMargin] : _.root },
                   b.createElement(
                     b.Fragment,
                     null,
-                    e
-                      ? b.createElement(g.a, {
-                          accessibilityLabel: '',
-                          aspectMode: P.a.exact(e.width / e.height),
-                          backgroundColor: e.backgroundColor,
-                          image: e,
-                        })
-                      : null,
+                    e ? this._renderImage(e) : null,
                     b.createElement(
-                      E.a,
+                      k.a,
                       { style: this.styles.rootPadding, testID: x },
                       this._renderTitle(),
                       this._renderBodyText(),
@@ -235,30 +248,31 @@
                             buttonType: 'primaryOutlined',
                             style: this.styles.secondaryAction,
                             buttonSize: 'large',
-                            testID: R,
+                            testID: E,
                           })
                         : null,
                     ),
                   ),
-                  r ? b.createElement(E.a, { style: O.rightControl }, r) : null,
+                  r ? b.createElement(k.a, { style: _.rightControl }, r) : null,
                 )
               },
             },
             {
               key: 'styles',
               get: function () {
-                return this.props.isCompact ? D : S
+                return this.props.isCompact ? I : D
               },
             },
           ]),
           n
         )
       })(b.Component)
-      y()(T, 'defaultProps', { shouldRenderBorder: !1 })
-      var O = C.a.create(function (t) {
+      y()(O, 'defaultProps', { shouldRenderBorder: !1 })
+      var _ = C.a.create(function (t) {
           return {
             root: { backgroundColor: t.colors.cellBackground },
             flexGrow: { flexGrow: 1 },
+            centeredImage: { display: 'flex', flexDirection: 'row', justifyContent: 'center' },
             rightControl: {
               paddingHorizontal: t.componentDimensions.gutterHorizontal,
               paddingVertical: t.componentDimensions.gutterVertical,
@@ -268,7 +282,7 @@
             },
           }
         }),
-        _ = C.a.create(function (t) {
+        S = C.a.create(function (t) {
           return {
             root: {
               borderColor: t.colors.nestedBorderColor,
@@ -279,7 +293,7 @@
             rootMargin: { marginLeft: t.spaces.space16, marginRight: t.spaces.space16 },
           }
         }),
-        S = C.a.create(function (t) {
+        D = C.a.create(function (t) {
           return {
             rootPadding: { padding: t.spaces.space32 },
             body: { marginTop: t.spaces.space8 },
@@ -288,7 +302,7 @@
             secondaryAction: { marginTop: t.spaces.space16 },
           }
         }),
-        D = C.a.create(function (t) {
+        I = C.a.create(function (t) {
           return {
             rootPadding: { padding: t.spaces.space16 },
             body: { marginTop: t.spaces.space2 },
@@ -356,7 +370,7 @@
       }
       var x = P.a.ia5e7487,
         A = { viewType: 'close_button' },
-        R = (function (t) {
+        E = (function (t) {
           u()(n, t)
           var e = C(n)
           function n() {
@@ -396,8 +410,8 @@
             n
           )
         })(b.PureComponent)
-      y()(R, 'defaultProps', { color: 'white', disabled: !1, size: 'medium' })
-      var E = R,
+      y()(E, 'defaultProps', { color: 'white', disabled: !1, size: 'medium' })
+      var R = E,
         k = n('vEo5'),
         T = n('1YZw'),
         O = n('rxPX'),
@@ -415,9 +429,9 @@
           .withAnalytics({ component: 'soft_permission_prompt', element: 'push_notifications' }),
         S = n('5pef'),
         D = n('feu+'),
-        j = n('fs1G'),
-        B = n('Lz2T')
-      function I(t) {
+        I = n('fs1G'),
+        j = n('Lz2T')
+      function B(t) {
         var e = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -447,14 +461,14 @@
         G = P.a.dc397181,
         K = (function (t) {
           u()(n, t)
-          var e = I(n)
+          var e = B(n)
           function n(t, r) {
             var i
             return (
               o()(this, n),
               (i = e.call(this, t, r)),
               y()(s()(i), '_messageRightControl', function () {
-                return b.createElement(E, { color: 'gray700', onClose: i._handleCancel })
+                return b.createElement(R, { color: 'gray700', onClose: i._handleCancel })
               }),
               y()(s()(i), '_handleConfirm', function () {
                 var t = i.props,
@@ -516,7 +530,7 @@
                           subtext: n,
                           tertiaryActionLabel: H,
                         })
-                      : b.createElement(B.a, {
+                      : b.createElement(j.a, {
                           bodyText: n,
                           primaryAction: { onClick: this._handleConfirm, text: F },
                           rightControl: this._messageRightControl(),
@@ -535,7 +549,7 @@
             n
           )
         })(b.Component)
-      y()(K, 'defaultProps', { fullScreen: !1, message: L, onDismiss: j.a })
+      y()(K, 'defaultProps', { fullScreen: !1, message: L, onDismiss: I.a })
       var X = _(K)
       e.default = X
     },

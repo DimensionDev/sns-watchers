@@ -150,12 +150,7 @@
         },
         _ = w.a.create(function (e) {
           return {
-            root: {
-              backgroundColor: e.colors.cellBackground,
-              flexGrow: 1,
-              overflow: 'auto',
-              paddingVertical: e.spaces.space12,
-            },
+            root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, paddingVertical: e.spaces.space12 },
             centeredContent: { width: '100%', flexGrow: 1, alignItems: 'center', justifyContent: 'center' },
             content: { margin: e.spaces.space16 },
             button: { marginTop: e.spaces.space16, marginHorizontal: e.spaces.space16 },

@@ -479,8 +479,8 @@
       }
       var M = E.a.b47e760d,
         V = E.a.fd2c7b43,
-        z = new C.a(),
-        N = function (e) {
+        N = new C.a(),
+        z = function (e) {
           if (e.target instanceof HTMLInputElement) {
             var t = e.target.tagName.toLowerCase()
             return 'input' === t || 'textarea' === t
@@ -488,7 +488,7 @@
           return !1
         },
         X = function (e) {
-          return g.canUseDOM ? z.subscribe(e).unsubscribe : L.a
+          return g.canUseDOM ? N.subscribe(e).unsubscribe : L.a
         },
         q = (function (e) {
           l()(n, e)
@@ -508,8 +508,8 @@
                   c = function (e) {
                     return function (t) {
                       t.preventDefault(),
-                        z.getListeners().length
-                          ? z.notify(e)
+                        N.getListeners().length
+                          ? N.notify(e)
                           : o.push({ pathname: '/explore', state: { searchFocused: !0, searchPrefill: e } })
                     }
                   },
@@ -593,12 +593,12 @@
                 e._unbindKeyboardShortcuts = Object(v.a)(f)
               }),
               b()(s()(e), '_handleKeyDown', function (t) {
-                N(t) ||
+                z(t) ||
                   'Backspace' !== t.key ||
                   ((e._backspaceDown = Date.now()), t.preventDefault(), t.stopPropagation())
               }),
               b()(s()(e), '_handleKeyUp', function (t) {
-                if (!N(t) && 'Backspace' === t.key) {
+                if (!z(t) && 'Backspace' === t.key) {
                   t.preventDefault(), t.stopPropagation()
                   var n = e._backspaceDown,
                     r = !!Object(H.a)(n) && Date.now() - n < 500,
@@ -776,7 +776,7 @@
       n('tVqn')
       var I = n('Hw0q'),
         R = n('3IPs'),
-        C = n('zCf4'),
+        C = n('Ty5D'),
         L = n('djnE')
       function H() {
         var e,
@@ -819,13 +819,13 @@
           var n = [''.concat(e ? 'f='.concat(e) : ''), ''.concat(t ? 'q='.concat(t) : '')].filter(Boolean)
           return 'twitter://spaces/search'.concat(n.length ? '?'.concat(n.join('&')) : '')
         }
-      var z = S.a.create(function (e) {
+      var N = S.a.create(function (e) {
           return {
             root: { paddingVertical: e.componentDimensions.gutterVertical, paddingBottom: e.spaces.space64 },
             loading: { paddingTop: e.spaces.space36 },
           }
         }),
-        N = function (e) {
+        z = function (e) {
           var t = H(),
             n = t.searchFilter,
             a = t.searchQuery,
@@ -892,7 +892,7 @@
               r.Fragment,
               null,
               r.createElement(o.a, { deepLink: V(n, a) }),
-              r.createElement(m.a, { style: z.root }, d || y),
+              r.createElement(m.a, { style: N.root }, d || y),
             ),
           )
         },
@@ -1060,7 +1060,7 @@
           r.createElement(W.a, {
             customSearchBox: r.createElement(ue, null),
             history: t,
-            primaryContent: r.createElement(N, null),
+            primaryContent: r.createElement(z, null),
             secondaryBar: ve,
             sidebarContent: me,
             title: ge,

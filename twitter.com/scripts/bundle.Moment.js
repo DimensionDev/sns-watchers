@@ -49,8 +49,8 @@
         S = r('k49u'),
         P = r('LVU8'),
         w = r('jHSc'),
-        C = r('MWbm'),
-        j = r('t62R'),
+        j = r('MWbm'),
+        C = r('t62R'),
         R = r('MtXG'),
         U = r('855f'),
         _ = r('rHpw'),
@@ -146,21 +146,21 @@
                         w.b,
                         { backButtonType: 'close', backLocation: g, documentTitle: h, history: t, title: h },
                         f.createElement(
-                          C.a,
+                          j.a,
                           { style: B.container },
                           f.createElement(
-                            C.a,
+                            j.a,
                             { style: B.titleTextContainer },
-                            f.createElement(j.b, { style: B.titleText, weight: 'bold' }, o),
+                            f.createElement(C.b, { style: B.titleText, weight: 'bold' }, o),
                           ),
                           f.createElement(
                             R.a.Group,
                             null,
                             f.createElement(
-                              C.a,
+                              j.a,
                               null,
                               f.createElement(
-                                C.a,
+                                j.a,
                                 { style: B.analytic },
                                 f.createElement(
                                   R.a,
@@ -176,10 +176,10 @@
                                     f.createElement(R.a.Value, null, D.a.c71523ef({ count: s })),
                                   ),
                                 ),
-                                f.createElement(j.b, { color: 'gray700' }, k),
+                                f.createElement(C.b, { color: 'gray700' }, k),
                               ),
                               f.createElement(
-                                C.a,
+                                j.a,
                                 { style: B.analytic },
                                 f.createElement(
                                   R.a,
@@ -195,10 +195,10 @@
                                     f.createElement(R.a.Value, null, D.a.a77bd6f4({ count: p })),
                                   ),
                                 ),
-                                f.createElement(j.b, { color: 'gray700' }, A),
+                                f.createElement(C.b, { color: 'gray700' }, A),
                               ),
                               f.createElement(
-                                C.a,
+                                j.a,
                                 { style: B.analytic },
                                 f.createElement(
                                   R.a,
@@ -214,10 +214,10 @@
                                     f.createElement(R.a.Value, null, D.a.a30d7c4d({ count: y })),
                                   ),
                                 ),
-                                f.createElement(j.b, { color: 'gray700' }, F),
+                                f.createElement(C.b, { color: 'gray700' }, F),
                               ),
                               f.createElement(
-                                C.a,
+                                j.a,
                                 { style: B.analytic },
                                 f.createElement(
                                   R.a,
@@ -233,7 +233,7 @@
                                     f.createElement(R.a.Value, null, D.a.j20f66ed({ count: b })),
                                   ),
                                 ),
-                                f.createElement(j.b, { color: 'gray700' }, x),
+                                f.createElement(C.b, { color: 'gray700' }, x),
                               ),
                             ),
                           ),
@@ -263,7 +263,7 @@
         a = r('3XMw'),
         c = r.n(a),
         o = r('hOZg'),
-        i = r('zCf4'),
+        i = r('Ty5D'),
         l = r('aITJ'),
         s = r('MWbm'),
         u = r('sgih'),
@@ -395,7 +395,7 @@
         }
         return e
       }
-      var C = function () {
+      var j = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
         return Object(S.a)(
           'svg',
@@ -414,8 +414,8 @@
           ),
         )
       }
-      C.metadata = { width: 24, height: 24 }
-      var j = C,
+      j.metadata = { width: 24, height: 24 }
+      var C = j,
         R = r('ShJ/'),
         U = r('hBoh'),
         _ = r('vFjZ')
@@ -517,7 +517,7 @@
               features: [
                 [
                   {
-                    icon: j,
+                    icon: C,
                     heading: f.a.hdc87500,
                     description: f.a.gaf181e0,
                     platformAvailabilityLabel: t ? ['iOS', 'Android', 'Web'] : ['iOS', 'Android'],
@@ -553,7 +553,7 @@
         W = r('hOZg'),
         K = r('lUZE'),
         X = r('tH6R'),
-        Q = r('zCf4'),
+        Q = r('Ty5D'),
         Z = f.a.b9238e88,
         J = f.a.a0b7009f,
         G = {
@@ -626,10 +626,10 @@
                 }
               )
             }, [])
-          var C = function () {
+          var j = function () {
               return h.goBack()
             },
-            j = function () {
+            C = function () {
               if ((P(!0), t.scribe({ action: 'click', element: 'subscribe', data: { referring_page: $(O) } }), u)) {
                 var e,
                   r = null != u && null !== (e = u.prices) && void 0 !== e && e.length ? u.prices[0] : null,
@@ -710,7 +710,7 @@
             {
               allowBackNavigation: !0,
               enableMaskForDismiss: !0,
-              onMaskClick: C,
+              onMaskClick: j,
               style: te.root,
               type: 'full',
               withMask: !0,
@@ -725,7 +725,7 @@
                   borderColor: 'transparent',
                   hoverLabel: { label: q },
                   icon: c.createElement(W.a, { style: te.topIcons }),
-                  onPress: C,
+                  onPress: j,
                   pullLeft: !0,
                   size: 'medium',
                 }),
@@ -791,7 +791,7 @@
                     {
                       accessibilityLabel: o,
                       disabled: !u || 'loading' === n,
-                      onPress: j,
+                      onPress: C,
                       style: te.button,
                       type: 'primaryFilled',
                     },
@@ -1096,10 +1096,10 @@
           return w
         }),
         r.d(t, 'b', function () {
-          return C
+          return j
         }),
         r.d(t, 'a', function () {
-          return j
+          return C
         }),
         r.d(t, 'c', function () {
           return R
@@ -1209,7 +1209,7 @@
               : o({ actionTypes: p, context: 'FETCH_SUBSCRIPTION_PRODUCT_DETAILS', meta: { id: e } })
           }
         },
-        C = function (e, t, r, n) {
+        j = function (e, t, r, n) {
           return function (a, o, l) {
             var s = l.api,
               u = Object(c.b)(a, {
@@ -1222,7 +1222,7 @@
               : u({ actionTypes: d, context: 'FETCH_SUBSCRIPTION_PRODUCT_CHECKOUT_URL', meta: { id: e } })
           }
         },
-        j = function () {
+        C = function () {
           return function (e, t, r) {
             var n = r.api,
               a = Object(c.b)(e, { params: {}, request: n.SubscriptionPayments.fetchProductSubscriptions }),
@@ -1476,7 +1476,7 @@
         d = r.n(p),
         f = r('hOZg'),
         b = r.p + 'twitter-blue-welcome.f64637a5.png',
-        m = r('zCf4'),
+        m = r('Ty5D'),
         y = r('aITJ'),
         g = r('t62R'),
         h = r('/yvb'),
@@ -1486,8 +1486,8 @@
         S = r('MWbm'),
         P = d.a.ia5e7487,
         w = d.a.a893d601,
-        C = d.a.f0e32de5,
-        j = d.a.gc6e8c17
+        j = d.a.f0e32de5,
+        C = d.a.gc6e8c17
       function R(e) {
         var t = e.analytics,
           r = e.fetchUserClaims,
@@ -1512,8 +1512,8 @@
           return c.createElement(
             c.Fragment,
             null,
-            c.createElement(g.b, { size: 'title2', style: U.title, weight: 'heavy' }, C),
-            c.createElement(g.b, { style: U.subtitle }, j),
+            c.createElement(g.b, { size: 'title2', style: U.title, weight: 'heavy' }, j),
+            c.createElement(g.b, { style: U.subtitle }, C),
             c.createElement(h.a, { onPress: R, size: 'xLarge', type: 'primaryFilled' }, w),
           )
         }

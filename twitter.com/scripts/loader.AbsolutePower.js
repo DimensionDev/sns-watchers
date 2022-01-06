@@ -198,8 +198,8 @@
           n('KOtZ'),
           n('zrc3')),
         B = n('7nmT'),
-        V = n.n(B),
-        M = function (e) {
+        M = n.n(B),
+        V = function (e) {
           var t
           return null ===
             (t = e.find(function (e) {
@@ -847,9 +847,11 @@
                   r = Object(Ie.a)(e)
                 if (!r) return (i._currentHeadroom = 0), i._currentHeadroom
                 var o = i._getRenderedItemRectInViewport(r),
-                  s = o.getBottom() - (n ? i._getRenderedItemRectInViewport(n).getTop() : o.getTop()),
-                  a = i._getDocumentViewportHeight() - t.getHeight()
-                return (i._currentHeadroom = Math.max(0, t.getHeight() - s - a)), i._currentHeadroom
+                  s = o.getBottom() - (n ? i._getRenderedItemRectInViewport(n).getTop() : o.getTop())
+                return (
+                  (i._currentHeadroom = Math.max(0, t.getHeight() - s + i._viewport.getOffsetBottom())),
+                  i._currentHeadroom
+                )
               }),
               v()(d()(i), '_calculateTopHeadroom', function (e, t) {
                 var n = Object(ye.a)(e, function (e) {
@@ -917,9 +919,11 @@
                   },
                   s = i._getAnchorItemCandidates(),
                   a = Se(s, function (e, t) {
-                    var n = new K(e.item.id, e.offset, e.visible, !0).getRectInViewport(),
-                      s = new K(t.item.id, t.offset, t.visible, !0).getRectInViewport()
-                    return i.props.hasNewContentAtBottom ? r(n) - r(s) || o(n) - o(s) : r(n) - r(s) || o(s) - o(n)
+                    var n = new K(e.item.id, e.offset, e.visible, !0, i._getHeight(e.item)).getRectInViewport(),
+                      s = new K(t.item.id, t.offset, t.visible, !0, i._getHeight(t.item)).getRectInViewport()
+                    return i.props.hasNewContentAtBottom
+                      ? r(n) - r(s) || Math.abs(o(n)) - Math.abs(o(s))
+                      : r(n) - r(s) || Math.abs(o(s)) - Math.abs(o(n))
                   })
                 if (a) return { itemId: a.item.id, offset: a.offset }
                 var c = Object(ve.a)(s)
@@ -1052,9 +1056,9 @@
                           })
                           n = i ? i.id : void 0
                         }
-                        return n || M(t)
+                        return n || V(t)
                       })(r, t)
-                    : M(t)
+                    : V(t)
                 }
                 n && i._updateFocusToItem(n)
               }),
@@ -1069,7 +1073,7 @@
                     ((i._activeEntryId = e),
                     o &&
                       (function (e, t, n) {
-                        var r = V.a.findDOMNode(e),
+                        var r = M.a.findDOMNode(e),
                           i = r && r instanceof window.HTMLElement && r.querySelector("a, [tabindex='0']")
                         if (i) {
                           i.scrollIntoView(n), i.focus()
@@ -1088,7 +1092,7 @@
                     (i._update(),
                     J()(function () {
                       var e = i._getRenderedItemsWithFocusability(),
-                        t = M(e)
+                        t = V(e)
                       t && i._updateFocusToItem(t, { block: 'nearest' })
                     }))
               }),

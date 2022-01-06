@@ -566,7 +566,7 @@
         i = (n('jQ3i'), n('ERkP')),
         c = n('Hde2'),
         a = n('H1k/'),
-        s = n('zCf4'),
+        s = n('Ty5D'),
         u = n('496R')
       function l(e) {
         return !['/i/flow/login'].includes(e)
@@ -2853,7 +2853,7 @@
         },
         it = n('O6Yq'),
         ct = n('muX9'),
-        at = n('zCf4')
+        at = n('Ty5D')
       var st = function () {
           Object(at.h)()
           var e,

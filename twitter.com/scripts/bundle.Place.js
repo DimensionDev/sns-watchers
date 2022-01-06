@@ -24,7 +24,7 @@
       'use strict'
       r.r(t),
         r.d(t, 'PlaceScreen', function () {
-          return N
+          return V
         })
       r('uFXj')
       var n = r('ERkP'),
@@ -56,7 +56,7 @@
         }
         return r
       }
-      function p(e) {
+      function d(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
@@ -71,65 +71,65 @@
         }
         return e
       }
-      var f = Object(s.f)({ namespace: 'places' }),
-        d = Object(s.b)(f, {
+      var p = Object(s.f)({ namespace: 'places' }),
+        h = Object(s.b)(p, {
           context: 'FETCH_PLACE',
           endpoint: function (e) {
             return e.Places.fetchPlace
           },
         }),
-        h = p(p({}, f), d),
-        m = l.a.register(h),
+        f = d(d({}, p), h),
+        m = l.a.register(f),
         y = r('rxPX'),
-        b = r('0KEI'),
-        g = function (e, t) {
+        v = r('0KEI'),
+        b = function (e, t) {
           return t.match.params.placeId
         },
-        v = function (e, t) {
-          return m.select(e, g(0, t))
+        g = function (e, t) {
+          return m.select(e, b(0, t))
         },
         O = function (e, t) {
-          return m.selectFetchStatus(e, g(0, t))
+          return m.selectFetchStatus(e, b(0, t))
         },
         E = Object(y.a)()
           .propsFromState(function () {
-            return { place: v, placeFetchStatus: O, placeId: g }
+            return { place: g, placeFetchStatus: O, placeId: b }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(b.createLocalApiErrorHandlerWithContextFactory)('PLACE_SCREEN'),
+              createLocalApiErrorHandler: Object(v.createLocalApiErrorHandlerWithContextFactory)('PLACE_SCREEN'),
               fetchPlaceIfNeeded: m.fetchOneIfNeeded,
             }
           }),
-        P = r('v//M'),
-        w = r('3XMw'),
-        _ = r.n(w),
-        C = r('JFx8'),
-        S = r('yoO3'),
+        w = r('v//M'),
+        P = r('3XMw'),
+        _ = r.n(P),
+        S = r('JFx8'),
+        C = r('yoO3'),
         j = r('h2mu'),
-        k = r('3IPs'),
-        T = r('VS6U'),
+        T = r('3IPs'),
+        k = r('VS6U'),
         x = r('MWbm'),
         I = r('G8HL'),
-        R = r('/yvb'),
-        M = r('t62R'),
-        D = r('k/OQ'),
-        H = r('cHvH'),
-        q = r('rHpw'),
+        M = r('/yvb'),
+        R = r('t62R'),
+        H = r('k/OQ'),
+        L = r('cHvH'),
+        D = r('rHpw'),
         F = r('7JQg'),
         z = _.a.jaaa8984,
-        L = _.a.bab1f8b0,
+        q = _.a.bab1f8b0,
         A = _.a.add55c97,
-        V = _.a.f4a654a3,
+        K = _.a.f4a654a3,
         B = function (e) {
           var t = {}
           'foursquare' === e.vendor &&
             (t = (function (e) {
               var t = e.data.venue_id
               return {
-                attributionDetails: n.createElement(C.a, { style: K.icon }),
+                attributionDetails: n.createElement(S.a, { style: X.icon }),
                 href: 'https://foursquare.com/v/'.concat(t),
-                buttonText: V,
+                buttonText: K,
               }
             })(e))
           var r = t,
@@ -138,12 +138,12 @@
             o = r.href
           return n.createElement(
             x.a,
-            { style: K.attribution },
-            n.createElement(x.a, { style: K.attributionDetails }, c),
-            n.createElement(R.a, { link: o, size: 'xSmall', type: 'brandOutlined' }, a),
+            { style: X.attribution },
+            n.createElement(x.a, { style: X.attributionDetails }, c),
+            n.createElement(M.a, { link: o, size: 'xSmall', type: 'brandOutlined' }, a),
           )
         },
-        N = function (e) {
+        V = function (e) {
           var t = e.createLocalApiErrorHandler,
             r = e.fetchPlaceIfNeeded,
             o = e.history,
@@ -151,63 +151,63 @@
             l = e.place,
             s = e.placeFetchStatus,
             u = e.placeId,
-            p = l ? l.full_name : z
+            d = l ? l.full_name : z
           n.useEffect(
             function () {
               r(u).catch(t())
             },
             [t, r, u],
           )
-          var f = function () {
+          var p = function () {
               if (!l) return null
               var e = l.attributes,
                 t = l.vendor_info,
                 r = e.street_address
               return n.createElement(
                 x.a,
-                { style: K.locationDetails },
-                n.createElement(M.b, { size: 'headline1', weight: 'bold' }, l.full_name),
-                r ? n.createElement(M.b, { color: 'gray700', size: 'body' }, r) : null,
+                { style: X.locationDetails },
+                n.createElement(R.b, { size: 'headline1', weight: 'bold' }, l.full_name),
+                r ? n.createElement(R.b, { color: 'gray700', size: 'body' }, r) : null,
                 t ? B(t) : null,
               )
             },
-            d = function () {
+            h = function () {
               return 'media' === (i.query && i.query.f)
             },
-            h = function () {
+            f = function () {
               var e = [
-                { isActive: y, key: L, retainScrollPosition: !1, to: i.pathname, label: L },
+                { isActive: y, key: q, retainScrollPosition: !1, to: i.pathname, label: q },
                 {
-                  isActive: d,
+                  isActive: h,
                   key: A,
                   retainScrollPosition: !1,
                   to: { query: { f: 'media' }, pathname: i.pathname },
                   label: A,
                 },
               ]
-              return n.createElement(D.a, { links: e })
+              return n.createElement(H.a, { links: e })
             },
             m = function () {
-              var e = d() ? 'place:'.concat(u, ' filter:media') : 'place:'.concat(u)
-              return n.createElement(j.a, { query: e, searchMode: k.c.Top })
+              var e = h() ? 'place:'.concat(u, ' filter:media') : 'place:'.concat(u)
+              return n.createElement(j.a, { query: e, searchMode: T.c.Top })
             },
             y = function () {
               return 'media' !== (i.query && i.query.f)
             }
           return n.createElement(
-            S.a,
+            C.a,
             null,
-            n.createElement(H.a, null, function (e) {
+            n.createElement(L.a, null, function (e) {
               var t = e.windowWidth,
                 r = c.a.isTwoColumnLayout(t)
-              return n.createElement(T.a, {
+              return n.createElement(k.a, {
                 backLocation: r ? void 0 : '/home',
-                documentTitle: p,
+                documentTitle: d,
                 history: o,
                 primaryContent: n.createElement(
                   n.Fragment,
                   null,
-                  n.createElement(x.a, { style: K.header }, n.createElement(P.a, { fetchStatus: s, render: f }), h()),
+                  n.createElement(x.a, { style: X.header }, n.createElement(w.a, { fetchStatus: s, render: p }), f()),
                   m(),
                 ),
                 sidebarContent: n.createElement(a.a, null),
@@ -216,7 +216,7 @@
             }),
           )
         },
-        K = q.a.create(function (e) {
+        X = D.a.create(function (e) {
           return {
             header: { backgroundColor: e.colors.cellBackground, zIndex: e.componentZIndices.appBarZIndex },
             locationDetails: {
@@ -237,7 +237,7 @@
             attributionDetails: { flexShrink: 1, marginRight: e.spaces.space12 },
           }
         })
-      t.default = Object(F.c)({ page: 'place' })(E(Object(I.a)(N)))
+      t.default = Object(F.c)({ page: 'place' })(E(Object(I.a)(V)))
     },
     JFx8: function (e, t, r) {
       'use strict'
@@ -326,289 +326,66 @@
     h2mu: function (e, t, r) {
       'use strict'
       r('OZaJ')
-      var n = r('VrFO'),
-        c = r.n(n),
-        a = r('Y9Ll'),
-        o = r.n(a),
-        i = r('1Pcy'),
-        l = r.n(i),
-        s = r('5Yy7'),
-        u = r.n(s),
+      var n,
+        c = r('VrFO'),
+        a = r.n(c),
+        o = r('Y9Ll'),
+        i = r.n(o),
+        l = r('1Pcy'),
+        s = r.n(l),
+        u = r('5Yy7'),
+        d = r.n(u),
         p = r('N+ot'),
-        f = r.n(p),
-        d = r('AuHH'),
-        h = r.n(d),
-        m = r('KEM+'),
-        y = r.n(m),
+        h = r.n(p),
+        f = r('AuHH'),
+        m = r.n(f),
+        y = r('KEM+'),
+        v = r.n(y),
         b = (r('2G9S'), r('ERkP')),
         g = (r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('ezF+')),
-        v = r('QIgh'),
-        O = r('8UdT'),
-        E = r('iu0J'),
+        O = r('QIgh'),
+        E = r('8UdT'),
+        w = r('iu0J'),
         P = r('zgaL'),
-        w = r('PH3B'),
-        _ =
-          (r('JtPf'),
-          r('7x/C'),
-          r('87if'),
-          r('lTEL'),
-          r('kYxP'),
-          {
-            loader: function () {
-              return r.e(217).then(r.bind(null, 'sc5C'))
-            },
-            loaderKey: 'relatedSearchDefaultLoader',
-            strategy: r('XBtf').a.Critical,
-          }),
-        C = g.e(_),
-        S = (r('yH/f'), Object.freeze({ Expand: 'Expand', Replace: 'Replace', Suggest: 'Suggest' })),
-        j = r('VPAj'),
-        k = r('zh9S'),
-        T = r('X04g'),
-        x = r('u3ZE'),
-        I = r('MWbm'),
-        R = r('t62R'),
-        M = r('rHpw'),
-        D = r('3XMw'),
-        H = r.n(D)
-      function q(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var r,
-            n = h()(e)
-          if (t) {
-            var c = h()(this).constructor
-            r = Reflect.construct(n, arguments, c)
-          } else r = n.apply(this, arguments)
-          return f()(this, r)
-        }
-      }
-      var F = H.a.je5502ea,
-        z = H.a.bc4628a0,
-        L = function (e) {
-          return b.createElement(R.b, { weight: 'bold' }, e)
+        _ = r('PH3B'),
+        S = (r('JtPf'), r('7x/C'), r('87if'), r('lTEL'), r('kYxP'), r('XBtf')),
+        C = {
+          loader: function () {
+            return r.e(217).then(r.bind(null, 'sc5C'))
+          },
+          loaderKey: 'relatedSearchDefaultLoader',
+          strategy: S.a.Critical,
         },
-        A = (function (e) {
-          u()(r, e)
-          var t = q(r)
-          function r() {
-            return c()(this, r), t.apply(this, arguments)
-          }
-          return (
-            o()(r, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props.suggestion,
-                    t = { pathname: '/search', query: { q: e, src: x.a.SpellingSuggestionClick } }
-                  return b.createElement(
-                    R.b,
-                    { link: t, style: N.root },
-                    b.createElement(H.a.I18NFormatMessage, { $i18n: 'hce48b8a' }, L(e)),
-                  )
-                },
-              },
-            ]),
-            r
-          )
-        })(b.PureComponent),
-        V = (function (e) {
-          u()(r, e)
-          var t = q(r)
-          function r() {
-            return c()(this, r), t.apply(this, arguments)
-          }
-          return (
-            o()(r, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.onClick,
-                    r = e.original,
-                    n = e.suggestion,
-                    c = { pathname: '/search', query: { q: n, src: x.a.SpellingCorrectionClick } }
-                  return b.createElement(
-                    I.a,
-                    { style: N.root },
-                    b.createElement(R.b, { weight: 'bold' }, z({ suggestion: n })),
-                    b.createElement(
-                      R.b,
-                      { link: c, onClick: t },
-                      b.createElement(H.a.I18NFormatMessage, { $i18n: 'h36fe5c9' }, L(r)),
-                    ),
-                  )
-                },
-              },
-            ]),
-            r
-          )
-        })(b.PureComponent),
-        B = (function (e) {
-          u()(r, e)
-          var t = q(r)
-          function r() {
-            return c()(this, r), t.apply(this, arguments)
-          }
-          return (
-            o()(r, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.onClick,
-                    r = e.original,
-                    n = e.suggestion,
-                    c = { pathname: '/search', query: { q: r, src: x.a.SpellingExpansionRevertClick } }
-                  return b.createElement(
-                    I.a,
-                    { style: N.root },
-                    b.createElement(R.b, { weight: 'bold' }, F({ suggestion: n })),
-                    b.createElement(
-                      R.b,
-                      { link: c, onClick: t },
-                      b.createElement(H.a.I18NFormatMessage, { $i18n: 'h36fe5c9' }, L(r)),
-                    ),
-                  )
-                },
-              },
-            ]),
-            r
-          )
-        })(b.PureComponent),
-        N = M.a.create(function (e) {
-          return {
-            root: {
-              paddingHorizontal: e.componentDimensions.gutterHorizontal,
-              paddingVertical: e.componentDimensions.gutterVertical,
-            },
-          }
-        })
-      function K(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
-        }
-        return r
-      }
-      function X(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? K(Object(r), !0).forEach(function (t) {
-                y()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : K(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
-        }
-        return e
-      }
-      var U,
-        W = function (e) {
-          return function (t) {
-            return {
-              item_type: T.a.ItemType.SEARCH,
-              name: 'spelling_'.concat(e),
-              description: t.content.spellingResult.text,
-              position: 0,
-            }
-          }
+        j = g.e(C),
+        T = (r('yH/f'), Object.freeze({ Expand: 'Expand', Replace: 'Replace', Suggest: 'Suggest' })),
+        k = {
+          loader: function () {
+            return r.e(335).then(r.bind(null, '5aND'))
+          },
+          loaderKey: 'spellingExpandLoader',
+          strategy: S.a.Critical,
         },
-        J = function (e) {
-          return {
-            items: [
-              {
-                search_details: { query: e.content.originalQuery },
-                query_details: { query_item: e.content.spellingResult.text },
-              },
-            ],
-          }
+        x = {
+          loader: function () {
+            return r.e(335).then(r.bind(null, '77Dd'))
+          },
+          loaderKey: 'spellingReplaceLoader',
+          strategy: S.a.Critical,
         },
-        Q = function (e) {
-          var t = e.actions.scribe,
-            r = e.scribeData
-          return t(X(X({}, e.scribeNamespace), {}, { action: 'impression' }), r)
+        I = {
+          loader: function () {
+            return r.e(335).then(r.bind(null, 'D4Iv'))
+          },
+          loaderKey: 'spellingSuggestLoader',
+          strategy: S.a.Critical,
         },
-        Z = g.g({
-          bindActions: function () {
-            return { scribe: k.c }
-          },
-          component: B,
-          divider: { top: !0, bottom: !0 },
-          getScribeDataItem: W('expansion'),
-          selectData: Object(j.a)({}),
-          createProps: function (e) {
-            var t = e.actions.scribe,
-              r = e.entry,
-              n = e.scribeNamespace,
-              c = r.content
-            return {
-              onClick: function () {
-                return t(X(X({}, n), {}, { element: 'expansion_revert', action: 'search' }), J(r))
-              },
-              original: c.originalQuery,
-              suggestion: c.spellingResult.text,
-            }
-          },
-          onImpression: Q,
-        }),
-        Y = g.g({
-          bindActions: function () {
-            return { scribe: k.c }
-          },
-          component: V,
-          divider: { top: !0, bottom: !0 },
-          getScribeDataItem: W('replacement'),
-          selectData: Object(j.a)({}),
-          createProps: function (e) {
-            var t = e.actions.scribe,
-              r = e.entry,
-              n = e.scribeNamespace,
-              c = r.content
-            return {
-              onClick: function () {
-                return t(X(X({}, n), {}, { element: 'replacement_revert', action: 'search' }), J(r))
-              },
-              original: c.originalQuery,
-              suggestion: c.spellingResult.text,
-            }
-          },
-          onImpression: Q,
-        }),
-        G = g.g({
-          component: A,
-          divider: { top: !0, bottom: !0 },
-          getScribeDataItem: W('suggestion'),
-          selectData: Object(j.a)({}),
-          createProps: function (e) {
-            return { suggestion: e.entry.content.spellingResult.text }
-          },
-          onImpression: Q,
-        }),
-        $ = g.c({
+        M = g.c({
           selectDisplayType: function (e) {
             return e.content.spellingAction
           },
-          handlers: ((U = {}), y()(U, S.Expand, Z), y()(U, S.Replace, Y), y()(U, S.Suggest, G), U),
+          handlers: ((n = {}), v()(n, T.Expand, k), v()(n, T.Replace, x), v()(n, T.Suggest, I), n),
         })
-      function ee(e, t) {
+      function R(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -620,28 +397,28 @@
         }
         return r
       }
-      function te(e) {
+      function H(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? ee(Object(r), !0).forEach(function (t) {
-                y()(e, t, r[t])
+            ? R(Object(r), !0).forEach(function (t) {
+                v()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : ee(Object(r)).forEach(function (t) {
+            : R(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var re = function (e) {
+      var L = function (e) {
           var t = e.shouldStoreTypeaheadItem,
             r = e.withUserPresence
-          return te(
-            te(
+          return H(
+            H(
               {},
-              Object(v.a)({
+              Object(O.a)({
                 tweetDismissable: !0,
                 displayBlocked: !0,
                 shouldStoreTypeaheadItem: t,
@@ -653,28 +430,32 @@
                 r = e.shouldStoreTypeaheadItem
               return (
                 (t = {}),
-                y()(t, O.b.News, w.a),
-                y()(t, O.b.EventSummary, Object(E.a)({ errorContext: 'SEARCH_SCREEN', shouldStoreTypeaheadItem: r })),
-                y()(t, O.b.RelatedSearch, C),
-                y()(t, O.b.FollowSearch, g.e(g.a())),
-                y()(t, O.b.FollowSearchAction, g.e(g.a())),
-                y()(t, O.b.Place, g.e(g.a())),
-                y()(t, O.b.MomentAnnotation, P.a),
-                y()(t, O.b.Spelling, $),
+                v()(t, E.b.News, _.a),
+                v()(t, E.b.EventSummary, Object(w.a)({ errorContext: 'SEARCH_SCREEN', shouldStoreTypeaheadItem: r })),
+                v()(t, E.b.RelatedSearch, j),
+                v()(t, E.b.FollowSearch, g.e(g.a())),
+                v()(t, E.b.FollowSearchAction, g.e(g.a())),
+                v()(t, E.b.Place, g.e(g.a())),
+                v()(t, E.b.MomentAnnotation, P.a),
+                v()(t, E.b.Spelling, M),
                 t
               )
             })({ shouldStoreTypeaheadItem: t }),
           )
         },
-        ne = r('3X8/'),
-        ce = r('oQhu'),
-        ae = r('EUHl'),
-        oe = r('7BdX'),
-        ie = r('fTQJ'),
-        le = r('i6OR'),
-        se = r('FIs5'),
-        ue = r('v6aA')
-      function pe(e) {
+        D = r('3X8/'),
+        F = r('oQhu'),
+        z = r('EUHl'),
+        q = r('7BdX'),
+        A = r('fTQJ'),
+        K = r('i6OR'),
+        B = r('X04g'),
+        V = r('t62R'),
+        X = r('FIs5'),
+        N = r('v6aA'),
+        U = r('3XMw'),
+        J = r.n(U)
+      function W(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -687,43 +468,43 @@
         })()
         return function () {
           var r,
-            n = h()(e)
+            n = m()(e)
           if (t) {
-            var c = h()(this).constructor
+            var c = m()(this).constructor
             r = Reflect.construct(n, arguments, c)
           } else r = n.apply(this, arguments)
-          return f()(this, r)
+          return h()(this, r)
         }
       }
-      var fe = H.a.c09de2d4,
-        de = b.createElement(
-          H.a.I18NFormatMessage,
+      var Z = J.a.c09de2d4,
+        Q = b.createElement(
+          J.a.I18NFormatMessage,
           { $i18n: 'f0089e9c' },
-          b.createElement(R.b, { link: '/settings/search' }, H.a.d2918e88),
+          b.createElement(V.b, { link: '/settings/search' }, J.a.d2918e88),
         ),
-        he = H.a.ae111c99,
-        me = (function (e) {
-          u()(r, e)
-          var t = pe(r)
+        Y = J.a.ae111c99,
+        G = (function (e) {
+          d()(r, e)
+          var t = W(r)
           function r() {
             var e
-            c()(this, r)
-            for (var n = arguments.length, a = new Array(n), o = 0; o < n; o++) a[o] = arguments[o]
+            a()(this, r)
+            for (var n = arguments.length, c = new Array(n), o = 0; o < n; o++) c[o] = arguments[o]
             return (
-              (e = t.call.apply(t, [this].concat(a))),
-              y()(l()(e), '_shouldStoreTypeaheadItem', function (t) {
+              (e = t.call.apply(t, [this].concat(c))),
+              v()(s()(e), '_shouldStoreTypeaheadItem', function (t) {
                 switch (t) {
-                  case T.a.ItemType.USER:
+                  case B.a.ItemType.USER:
                     return e.context.featureSwitches.isTrue('responsive_web_recent_searches_users_enabled')
-                  case T.a.ItemType.TOPIC:
+                  case B.a.ItemType.TOPIC:
                     return e.context.featureSwitches.isTrue('responsive_web_recent_searches_topics_enabled')
-                  case T.a.ItemType.EVENT:
+                  case B.a.ItemType.EVENT:
                     return e.context.featureSwitches.isTrue('responsive_web_recent_searches_events_enabled')
                   default:
                     return !1
                 }
               }),
-              y()(l()(e), '_getModule', function () {
+              v()(s()(e), '_getModule', function () {
                 var t = e.props,
                   r = t.query,
                   n = t.querySrc,
@@ -733,17 +514,17 @@
                   i = t.vertical
                 return e._getMemoizedModule(r, n, a, c, i, o)
               }),
-              y()(l()(e), '_renderEmptyTimeline', function () {
+              v()(s()(e), '_renderEmptyTimeline', function () {
                 var t = e.props,
                   r = t.emptyStateComponent,
                   n = t.query
-                return r || b.createElement(se.a, { header: he({ query: n }), message: de })
+                return r || b.createElement(X.a, { header: Y({ query: n }), message: Q })
               }),
-              y()(
-                l()(e),
+              v()(
+                s()(e),
                 '_getMemoizedModule',
-                Object(ce.a)(function (e, t, r, n, c, a) {
-                  return Object(le.b)({
+                Object(F.a)(function (e, t, r, n, c, a) {
+                  return Object(K.b)({
                     query: e,
                     searchMode: r,
                     querySource: t,
@@ -753,30 +534,30 @@
                   })
                 }),
               ),
-              y()(
-                l()(e),
+              v()(
+                s()(e),
                 '_getMemoizedEntryConfiguration',
-                Object(ce.a)(function (t) {
-                  return re({ shouldStoreTypeaheadItem: e._shouldStoreTypeaheadItem, withUserPresence: t })
+                Object(F.a)(function (t) {
+                  return L({ shouldStoreTypeaheadItem: e._shouldStoreTypeaheadItem, withUserPresence: t })
                 }),
               ),
               e
             )
           }
           return (
-            o()(r, [
+            i()(r, [
               {
                 key: 'render',
                 value: function () {
-                  return b.createElement(ie.a, {
-                    apiErrorHandlerMap: ne.a,
+                  return b.createElement(A.a, {
+                    apiErrorHandlerMap: D.a,
                     entryConfiguration: this._getMemoizedEntryConfiguration(this.props.withUserPresence),
                     fetchOptions: this.props.fetchOptions,
                     module: this._getModule(),
-                    newTweetsPillMode: ae.a.CLIENT,
-                    prerollDisplayLocation: oe.c.SEARCH_TWEETS,
+                    newTweetsPillMode: z.a.CLIENT,
+                    prerollDisplayLocation: q.c.SEARCH_TWEETS,
                     renderEmptyState: this._renderEmptyTimeline,
-                    title: fe,
+                    title: Z,
                     withUserPresence: this.props.withUserPresence,
                   })
                 },
@@ -785,13 +566,13 @@
             r
           )
         })(b.Component)
-      y()(me, 'contextType', ue.a)
-      t.a = me
+      v()(G, 'contextType', N.a)
+      t.a = G
     },
     i6OR: function (e, t, r) {
       'use strict'
       r.d(t, 'a', function () {
-        return h
+        return f
       })
       var n,
         c = r('KEM+'),
@@ -801,8 +582,8 @@
         l = r('ZNT5'),
         s = r('eR3e'),
         u = 'search-',
-        p = ' near:me',
-        f =
+        d = ' near:me',
+        p =
           ((n = {}),
           a()(n, i.c.Top, {}),
           a()(n, i.c.Live, { tweet_search_mode: i.c.Live }),
@@ -810,14 +591,14 @@
           a()(n, i.c.Image, { result_filter: i.c.Image }),
           a()(n, i.c.Video, { result_filter: i.c.Video }),
           n),
-        d = function (e) {
+        h = function (e) {
           return (function (e) {
             return e === o.a.SpellingCorrectionRevertClick || e === o.a.SpellingExpansionRevertClick
           })(e)
             ? '-revert'
             : ''
         },
-        h = function () {
+        f = function () {
           return function (e, t) {
             e(
               Object(s.t)(t())
@@ -838,13 +619,13 @@
           a = e.searchFilters,
           o = e.vertical,
           s = e.urtEndpointOptions,
-          h = d(c),
+          f = h(c),
           m = a && a.peopleFilter ? 'searcher_follows' : void 0,
           y = m ? '-pf' : '',
-          b = a && a.locationFilter && !t.includes(p) ? ''.concat(t).concat(p) : t,
-          g = ''.concat(u).concat(b, '-').concat(n).concat(h).concat(y)
+          v = a && a.locationFilter && !t.includes(d) ? ''.concat(t).concat(d) : t,
+          b = ''.concat(u).concat(v, '-').concat(n).concat(f).concat(y)
         return Object(l.a)({
-          timelineId: g,
+          timelineId: b,
           getEndpoint: function (e) {
             return e.URT.fetchSearch
           },
@@ -852,8 +633,8 @@
             return Object.assign(
               {},
               null == s ? void 0 : s.requestParams,
-              { q: b, social_filter: m, vertical: o },
-              f[n],
+              { q: v, social_filter: m, vertical: o },
+              p[n],
               e,
             )
           },

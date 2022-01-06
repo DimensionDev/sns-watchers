@@ -4,29 +4,29 @@
     '3X8/': function (e, t, r) {
       'use strict'
       r.d(t, 'a', function () {
-        return l
+        return u
       })
       var n,
-        c = r('KEM+'),
-        i = r.n(c),
-        o = r('k49u'),
-        a = r('LVU8'),
-        s = r('3XMw'),
-        u = r.n(s).a.i1801686,
-        l =
+        a = r('KEM+'),
+        c = r.n(a),
+        i = r('k49u'),
+        o = r('LVU8'),
+        l = r('3XMw'),
+        s = r.n(l).a.i1801686,
+        u =
           ((n = {}),
-          i()(n, o.a.GenericForbidden, { toast: Object(a.a)() }),
-          i()(n, o.a.InvalidRequestUrl, { toast: { text: u, withClearButton: !0 } }),
-          i()(n, 'showToast', !0),
+          c()(n, i.a.GenericForbidden, { toast: Object(o.a)() }),
+          c()(n, i.a.InvalidRequestUrl, { toast: { text: s, withClearButton: !0 } }),
+          c()(n, 'showToast', !0),
           n)
     },
     '6M1P': function (e, t, r) {
       'use strict'
       var n = r('WpDa'),
-        c = r('rJrz'),
-        i = r('ZNT5')
+        a = r('rJrz'),
+        c = r('ZNT5')
       t.a = function (e) {
-        return Object(i.a)({
+        return Object(c.a)({
           timelineId: 'retweetersGraphQL-'.concat(e),
           getEndpoint: function (e) {
             return e.TweetActivity.fetchRetweetedBy
@@ -39,94 +39,94 @@
           formatResponse: n.a,
           context: 'FETCH_TWEET_ACTIVITY_RETWEETS',
           perfKey: 'retweetersGraphQL',
-          staleIntervalMs: c.a,
+          staleIntervalMs: a.a,
         })
       }
     },
     PH3B: function (e, t, r) {
       'use strict'
       var n,
-        c = r('KEM+'),
-        i = r.n(c),
-        o = r('ezF+'),
-        a = (r('yH/f'), Object.freeze({ Cell: 'Cell', PreviewCard: 'PreviewCard' })),
-        s = (r('JtPf'), r('7x/C'), r('87if'), r('lTEL'), r('kYxP'), r('XBtf')),
-        u = {
+        a = r('KEM+'),
+        c = r.n(a),
+        i = r('ezF+'),
+        o = (r('yH/f'), Object.freeze({ Cell: 'Cell', PreviewCard: 'PreviewCard' })),
+        l = (r('JtPf'), r('7x/C'), r('87if'), r('lTEL'), r('kYxP'), r('XBtf')),
+        s = {
           loader: function () {
             return Promise.all([r.e(0), r.e(330)]).then(r.bind(null, 'a+ad'))
           },
           loaderKey: 'newsCellLoader',
-          strategy: s.a.Critical,
+          strategy: l.a.Critical,
         },
-        l = {
+        u = {
           loader: function () {
             return Promise.all([r.e(0), r.e(332)]).then(r.bind(null, 'hX2d'))
           },
           loaderKey: 'newsPreviewCardLoader',
-          strategy: s.a.Critical,
+          strategy: l.a.Critical,
         }
-      t.a = o.c({
+      t.a = i.c({
         selectDisplayType: function (e) {
           return e.content.newsDisplayType
         },
-        handlers: ((n = {}), i()(n, a.Cell, u), i()(n, a.PreviewCard, l), n),
+        handlers: ((n = {}), c()(n, o.Cell, s), c()(n, o.PreviewCard, u), n),
       })
     },
     SCGq: function (e, t, r) {
       'use strict'
       r.r(t),
         r.d(t, 'QuoteTweetActivityScreen', function () {
-          return N
+          return K
         })
       r('OZaJ')
       var n = r('VrFO'),
-        c = r.n(n),
-        i = r('Y9Ll'),
-        o = r.n(i),
-        a = r('1Pcy'),
-        s = r.n(a),
-        u = r('5Yy7'),
-        l = r.n(u),
-        p = r('N+ot'),
-        f = r.n(p),
-        d = r('AuHH'),
-        h = r.n(d),
+        a = r.n(n),
+        c = r('Y9Ll'),
+        i = r.n(c),
+        o = r('1Pcy'),
+        l = r.n(o),
+        s = r('5Yy7'),
+        u = r.n(s),
+        d = r('N+ot'),
+        p = r.n(d),
+        f = r('AuHH'),
+        h = r.n(f),
         y = r('KEM+'),
-        m = r.n(y),
-        g = (r('2G9S'), r('ERkP')),
+        g = r.n(y),
+        m = (r('2G9S'), r('ERkP')),
         v = r('es0u'),
-        b = (r('WNMA'), r('KqXw'), r('6M1P')),
+        _ = (r('WNMA'), r('KqXw'), r('6M1P')),
         w = r('XOJV'),
-        _ = r('rxPX'),
-        E = function (e, t) {
+        E = r('rxPX'),
+        T = function (e, t) {
           return t.match.params.statusId
         },
-        O = function (e, t) {
+        b = function (e, t) {
           return t.match.params.screenName
         },
         S = function (e, t) {
-          return w.a.selectHydrated(e, E(0, t))
+          return w.a.selectHydrated(e, T(0, t))
         },
-        C = Object(_.a)()
+        C = Object(E.a)()
           .propsFromState(function () {
-            return { screenName: O, statusId: E, tweet: S }
+            return { screenName: b, statusId: T, tweet: S }
           })
           .adjustStateProps(function (e) {
             var t = e.screenName,
               r = e.statusId
-            return { screenName: t, statusId: r, tweet: e.tweet, usersUrtModule: Object(b.a)(r) }
+            return { screenName: t, statusId: r, tweet: e.tweet, usersUrtModule: Object(_.a)(r) }
           })
           .withAnalytics({ page: 'quote_tweets_timeline' }),
-        T = r('FIs5'),
+        O = r('FIs5'),
         P = r('3XMw'),
         k = r.n(P),
-        R = r('yoO3'),
-        I = r('u3ZE'),
-        j = r('h2mu'),
-        x = r('3IPs'),
-        M = r('VS6U'),
-        q = r('Irs7')
-      function D(e) {
+        I = r('yoO3'),
+        R = r('u3ZE'),
+        M = r('h2mu'),
+        j = r('3IPs'),
+        x = r('VS6U'),
+        L = r('Irs7')
+      function q(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -141,54 +141,54 @@
           var r,
             n = h()(e)
           if (t) {
-            var c = h()(this).constructor
-            r = Reflect.construct(n, arguments, c)
+            var a = h()(this).constructor
+            r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
-          return f()(this, r)
+          return p()(this, r)
         }
       }
       var F = k.a.bd7c039f,
         A = k.a.e9f1fbcb,
-        L = { vertical: 'tweet_detail_quote' },
-        H = g.createElement(T.a, { message: A }),
-        N = (function (e) {
-          l()(r, e)
-          var t = D(r)
+        H = { vertical: 'tweet_detail_quote' },
+        D = m.createElement(O.a, { message: A }),
+        K = (function (e) {
+          u()(r, e)
+          var t = q(r)
           function r() {
             var e
-            c()(this, r)
-            for (var n = arguments.length, i = new Array(n), o = 0; o < n; o++) i[o] = arguments[o]
+            a()(this, r)
+            for (var n = arguments.length, c = new Array(n), i = 0; i < n; i++) c[i] = arguments[i]
             return (
-              (e = t.call.apply(t, [this].concat(i))),
-              m()(s()(e), '_quoteTweetSearchQueryString', 'quoted_tweet_id:'.concat(e.props.statusId)),
-              m()(s()(e), '_renderQuoteTweetTimeline', function () {
-                return g.createElement(j.a, {
-                  emptyStateComponent: H,
-                  fetchOptions: L,
+              (e = t.call.apply(t, [this].concat(c))),
+              g()(l()(e), '_quoteTweetSearchQueryString', 'quoted_tweet_id:'.concat(e.props.statusId)),
+              g()(l()(e), '_renderQuoteTweetTimeline', function () {
+                return m.createElement(M.a, {
+                  emptyStateComponent: D,
+                  fetchOptions: H,
                   query: e._quoteTweetSearchQueryString,
-                  querySrc: I.a.TweetDetailQuoteTweet,
-                  searchMode: x.c.Top,
+                  querySrc: R.a.TweetDetailQuoteTweet,
+                  searchMode: j.c.Top,
                 })
               }),
               e
             )
           }
           return (
-            o()(r, [
+            i()(r, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.history,
                     r = e.tweet
-                  return g.createElement(
-                    R.a,
+                  return m.createElement(
+                    I.a,
                     null,
-                    g.createElement(M.a, {
+                    m.createElement(x.a, {
                       backLocation: r ? r.permalink : '/',
                       history: t,
                       primaryContent: this._renderQuoteTweetTimeline(),
-                      sidebarContent: g.createElement(v.a, { withWhoToFollow: !1 }),
+                      sidebarContent: m.createElement(v.a, { withWhoToFollow: !1 }),
                       title: F,
                     }),
                   )
@@ -197,295 +197,72 @@
             ]),
             r
           )
-        })(g.Component)
-      t.default = Object(q.a)(C(N))
+        })(m.Component)
+      t.default = Object(L.a)(C(K))
     },
     h2mu: function (e, t, r) {
       'use strict'
       r('OZaJ')
-      var n = r('VrFO'),
-        c = r.n(n),
+      var n,
+        a = r('VrFO'),
+        c = r.n(a),
         i = r('Y9Ll'),
         o = r.n(i),
-        a = r('1Pcy'),
-        s = r.n(a),
+        l = r('1Pcy'),
+        s = r.n(l),
         u = r('5Yy7'),
-        l = r.n(u),
+        d = r.n(u),
         p = r('N+ot'),
         f = r.n(p),
-        d = r('AuHH'),
-        h = r.n(d),
-        y = r('KEM+'),
-        m = r.n(y),
-        g = (r('2G9S'), r('ERkP')),
-        v = (r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('ezF+')),
-        b = r('QIgh'),
-        w = r('8UdT'),
-        _ = r('iu0J'),
-        E = r('zgaL'),
-        O = r('PH3B'),
-        S =
-          (r('JtPf'),
-          r('7x/C'),
-          r('87if'),
-          r('lTEL'),
-          r('kYxP'),
-          {
-            loader: function () {
-              return r.e(217).then(r.bind(null, 'sc5C'))
-            },
-            loaderKey: 'relatedSearchDefaultLoader',
-            strategy: r('XBtf').a.Critical,
-          }),
-        C = v.e(S),
-        T = (r('yH/f'), Object.freeze({ Expand: 'Expand', Replace: 'Replace', Suggest: 'Suggest' })),
-        P = r('VPAj'),
-        k = r('zh9S'),
-        R = r('X04g'),
-        I = r('u3ZE'),
-        j = r('MWbm'),
-        x = r('t62R'),
-        M = r('rHpw'),
-        q = r('3XMw'),
-        D = r.n(q)
-      function F(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var r,
-            n = h()(e)
-          if (t) {
-            var c = h()(this).constructor
-            r = Reflect.construct(n, arguments, c)
-          } else r = n.apply(this, arguments)
-          return f()(this, r)
-        }
-      }
-      var A = D.a.je5502ea,
-        L = D.a.bc4628a0,
-        H = function (e) {
-          return g.createElement(x.b, { weight: 'bold' }, e)
+        h = r('AuHH'),
+        y = r.n(h),
+        g = r('KEM+'),
+        m = r.n(g),
+        v = (r('2G9S'), r('ERkP')),
+        _ = (r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('ezF+')),
+        w = r('QIgh'),
+        E = r('8UdT'),
+        T = r('iu0J'),
+        b = r('zgaL'),
+        S = r('PH3B'),
+        C = (r('JtPf'), r('7x/C'), r('87if'), r('lTEL'), r('kYxP'), r('XBtf')),
+        O = {
+          loader: function () {
+            return r.e(217).then(r.bind(null, 'sc5C'))
+          },
+          loaderKey: 'relatedSearchDefaultLoader',
+          strategy: C.a.Critical,
         },
-        N = (function (e) {
-          l()(r, e)
-          var t = F(r)
-          function r() {
-            return c()(this, r), t.apply(this, arguments)
-          }
-          return (
-            o()(r, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props.suggestion,
-                    t = { pathname: '/search', query: { q: e, src: I.a.SpellingSuggestionClick } }
-                  return g.createElement(
-                    x.b,
-                    { link: t, style: U.root },
-                    g.createElement(D.a.I18NFormatMessage, { $i18n: 'hce48b8a' }, H(e)),
-                  )
-                },
-              },
-            ]),
-            r
-          )
-        })(g.PureComponent),
-        z = (function (e) {
-          l()(r, e)
-          var t = F(r)
-          function r() {
-            return c()(this, r), t.apply(this, arguments)
-          }
-          return (
-            o()(r, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.onClick,
-                    r = e.original,
-                    n = e.suggestion,
-                    c = { pathname: '/search', query: { q: n, src: I.a.SpellingCorrectionClick } }
-                  return g.createElement(
-                    j.a,
-                    { style: U.root },
-                    g.createElement(x.b, { weight: 'bold' }, L({ suggestion: n })),
-                    g.createElement(
-                      x.b,
-                      { link: c, onClick: t },
-                      g.createElement(D.a.I18NFormatMessage, { $i18n: 'h36fe5c9' }, H(r)),
-                    ),
-                  )
-                },
-              },
-            ]),
-            r
-          )
-        })(g.PureComponent),
-        Q = (function (e) {
-          l()(r, e)
-          var t = F(r)
-          function r() {
-            return c()(this, r), t.apply(this, arguments)
-          }
-          return (
-            o()(r, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.onClick,
-                    r = e.original,
-                    n = e.suggestion,
-                    c = { pathname: '/search', query: { q: r, src: I.a.SpellingExpansionRevertClick } }
-                  return g.createElement(
-                    j.a,
-                    { style: U.root },
-                    g.createElement(x.b, { weight: 'bold' }, A({ suggestion: n })),
-                    g.createElement(
-                      x.b,
-                      { link: c, onClick: t },
-                      g.createElement(D.a.I18NFormatMessage, { $i18n: 'h36fe5c9' }, H(r)),
-                    ),
-                  )
-                },
-              },
-            ]),
-            r
-          )
-        })(g.PureComponent),
-        U = M.a.create(function (e) {
-          return {
-            root: {
-              paddingHorizontal: e.componentDimensions.gutterHorizontal,
-              paddingVertical: e.componentDimensions.gutterVertical,
-            },
-          }
-        })
-      function B(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
-        }
-        return r
-      }
-      function X(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? B(Object(r), !0).forEach(function (t) {
-                m()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : B(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
-        }
-        return e
-      }
-      var K,
-        V = function (e) {
-          return function (t) {
-            return {
-              item_type: R.a.ItemType.SEARCH,
-              name: 'spelling_'.concat(e),
-              description: t.content.spellingResult.text,
-              position: 0,
-            }
-          }
+        P = _.e(O),
+        k = (r('yH/f'), Object.freeze({ Expand: 'Expand', Replace: 'Replace', Suggest: 'Suggest' })),
+        I = {
+          loader: function () {
+            return r.e(335).then(r.bind(null, '5aND'))
+          },
+          loaderKey: 'spellingExpandLoader',
+          strategy: C.a.Critical,
         },
-        J = function (e) {
-          return {
-            items: [
-              {
-                search_details: { query: e.content.originalQuery },
-                query_details: { query_item: e.content.spellingResult.text },
-              },
-            ],
-          }
+        R = {
+          loader: function () {
+            return r.e(335).then(r.bind(null, '77Dd'))
+          },
+          loaderKey: 'spellingReplaceLoader',
+          strategy: C.a.Critical,
         },
-        W = function (e) {
-          var t = e.actions.scribe,
-            r = e.scribeData
-          return t(X(X({}, e.scribeNamespace), {}, { action: 'impression' }), r)
+        M = {
+          loader: function () {
+            return r.e(335).then(r.bind(null, 'D4Iv'))
+          },
+          loaderKey: 'spellingSuggestLoader',
+          strategy: C.a.Critical,
         },
-        Z = v.g({
-          bindActions: function () {
-            return { scribe: k.c }
-          },
-          component: Q,
-          divider: { top: !0, bottom: !0 },
-          getScribeDataItem: V('expansion'),
-          selectData: Object(P.a)({}),
-          createProps: function (e) {
-            var t = e.actions.scribe,
-              r = e.entry,
-              n = e.scribeNamespace,
-              c = r.content
-            return {
-              onClick: function () {
-                return t(X(X({}, n), {}, { element: 'expansion_revert', action: 'search' }), J(r))
-              },
-              original: c.originalQuery,
-              suggestion: c.spellingResult.text,
-            }
-          },
-          onImpression: W,
-        }),
-        Y = v.g({
-          bindActions: function () {
-            return { scribe: k.c }
-          },
-          component: z,
-          divider: { top: !0, bottom: !0 },
-          getScribeDataItem: V('replacement'),
-          selectData: Object(P.a)({}),
-          createProps: function (e) {
-            var t = e.actions.scribe,
-              r = e.entry,
-              n = e.scribeNamespace,
-              c = r.content
-            return {
-              onClick: function () {
-                return t(X(X({}, n), {}, { element: 'replacement_revert', action: 'search' }), J(r))
-              },
-              original: c.originalQuery,
-              suggestion: c.spellingResult.text,
-            }
-          },
-          onImpression: W,
-        }),
-        G = v.g({
-          component: N,
-          divider: { top: !0, bottom: !0 },
-          getScribeDataItem: V('suggestion'),
-          selectData: Object(P.a)({}),
-          createProps: function (e) {
-            return { suggestion: e.entry.content.spellingResult.text }
-          },
-          onImpression: W,
-        }),
-        $ = v.c({
+        j = _.c({
           selectDisplayType: function (e) {
             return e.content.spellingAction
           },
-          handlers: ((K = {}), m()(K, T.Expand, Z), m()(K, T.Replace, Y), m()(K, T.Suggest, G), K),
+          handlers: ((n = {}), m()(n, k.Expand, I), m()(n, k.Replace, R), m()(n, k.Suggest, M), n),
         })
-      function ee(e, t) {
+      function x(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -497,28 +274,28 @@
         }
         return r
       }
-      function te(e) {
+      function L(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? ee(Object(r), !0).forEach(function (t) {
+            ? x(Object(r), !0).forEach(function (t) {
                 m()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : ee(Object(r)).forEach(function (t) {
+            : x(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var re = function (e) {
+      var q = function (e) {
           var t = e.shouldStoreTypeaheadItem,
             r = e.withUserPresence
-          return te(
-            te(
+          return L(
+            L(
               {},
-              Object(b.a)({
+              Object(w.a)({
                 tweetDismissable: !0,
                 displayBlocked: !0,
                 shouldStoreTypeaheadItem: t,
@@ -530,28 +307,32 @@
                 r = e.shouldStoreTypeaheadItem
               return (
                 (t = {}),
-                m()(t, w.b.News, O.a),
-                m()(t, w.b.EventSummary, Object(_.a)({ errorContext: 'SEARCH_SCREEN', shouldStoreTypeaheadItem: r })),
-                m()(t, w.b.RelatedSearch, C),
-                m()(t, w.b.FollowSearch, v.e(v.a())),
-                m()(t, w.b.FollowSearchAction, v.e(v.a())),
-                m()(t, w.b.Place, v.e(v.a())),
-                m()(t, w.b.MomentAnnotation, E.a),
-                m()(t, w.b.Spelling, $),
+                m()(t, E.b.News, S.a),
+                m()(t, E.b.EventSummary, Object(T.a)({ errorContext: 'SEARCH_SCREEN', shouldStoreTypeaheadItem: r })),
+                m()(t, E.b.RelatedSearch, P),
+                m()(t, E.b.FollowSearch, _.e(_.a())),
+                m()(t, E.b.FollowSearchAction, _.e(_.a())),
+                m()(t, E.b.Place, _.e(_.a())),
+                m()(t, E.b.MomentAnnotation, b.a),
+                m()(t, E.b.Spelling, j),
                 t
               )
             })({ shouldStoreTypeaheadItem: t }),
           )
         },
-        ne = r('3X8/'),
-        ce = r('oQhu'),
-        ie = r('EUHl'),
-        oe = r('7BdX'),
-        ae = r('fTQJ'),
-        se = r('i6OR'),
-        ue = r('FIs5'),
-        le = r('v6aA')
-      function pe(e) {
+        F = r('3X8/'),
+        A = r('oQhu'),
+        H = r('EUHl'),
+        D = r('7BdX'),
+        K = r('fTQJ'),
+        N = r('i6OR'),
+        U = r('X04g'),
+        X = r('t62R'),
+        z = r('FIs5'),
+        Q = r('v6aA'),
+        B = r('3XMw'),
+        J = r.n(B)
+      function V(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -564,37 +345,37 @@
         })()
         return function () {
           var r,
-            n = h()(e)
+            n = y()(e)
           if (t) {
-            var c = h()(this).constructor
-            r = Reflect.construct(n, arguments, c)
+            var a = y()(this).constructor
+            r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
           return f()(this, r)
         }
       }
-      var fe = D.a.c09de2d4,
-        de = g.createElement(
-          D.a.I18NFormatMessage,
+      var W = J.a.c09de2d4,
+        Y = v.createElement(
+          J.a.I18NFormatMessage,
           { $i18n: 'f0089e9c' },
-          g.createElement(x.b, { link: '/settings/search' }, D.a.d2918e88),
+          v.createElement(X.b, { link: '/settings/search' }, J.a.d2918e88),
         ),
-        he = D.a.ae111c99,
-        ye = (function (e) {
-          l()(r, e)
-          var t = pe(r)
+        Z = J.a.ae111c99,
+        G = (function (e) {
+          d()(r, e)
+          var t = V(r)
           function r() {
             var e
             c()(this, r)
-            for (var n = arguments.length, i = new Array(n), o = 0; o < n; o++) i[o] = arguments[o]
+            for (var n = arguments.length, a = new Array(n), i = 0; i < n; i++) a[i] = arguments[i]
             return (
-              (e = t.call.apply(t, [this].concat(i))),
+              (e = t.call.apply(t, [this].concat(a))),
               m()(s()(e), '_shouldStoreTypeaheadItem', function (t) {
                 switch (t) {
-                  case R.a.ItemType.USER:
+                  case U.a.ItemType.USER:
                     return e.context.featureSwitches.isTrue('responsive_web_recent_searches_users_enabled')
-                  case R.a.ItemType.TOPIC:
+                  case U.a.ItemType.TOPIC:
                     return e.context.featureSwitches.isTrue('responsive_web_recent_searches_topics_enabled')
-                  case R.a.ItemType.EVENT:
+                  case U.a.ItemType.EVENT:
                     return e.context.featureSwitches.isTrue('responsive_web_recent_searches_events_enabled')
                   default:
                     return !1
@@ -604,37 +385,37 @@
                 var t = e.props,
                   r = t.query,
                   n = t.querySrc,
-                  c = t.searchFilters,
-                  i = t.searchMode,
-                  o = t.urtEndpointOptions,
-                  a = t.vertical
-                return e._getMemoizedModule(r, n, i, c, a, o)
+                  a = t.searchFilters,
+                  c = t.searchMode,
+                  i = t.urtEndpointOptions,
+                  o = t.vertical
+                return e._getMemoizedModule(r, n, c, a, o, i)
               }),
               m()(s()(e), '_renderEmptyTimeline', function () {
                 var t = e.props,
                   r = t.emptyStateComponent,
                   n = t.query
-                return r || g.createElement(ue.a, { header: he({ query: n }), message: de })
+                return r || v.createElement(z.a, { header: Z({ query: n }), message: Y })
               }),
               m()(
                 s()(e),
                 '_getMemoizedModule',
-                Object(ce.a)(function (e, t, r, n, c, i) {
-                  return Object(se.b)({
+                Object(A.a)(function (e, t, r, n, a, c) {
+                  return Object(N.b)({
                     query: e,
                     searchMode: r,
                     querySource: t,
                     searchFilters: n,
-                    vertical: c,
-                    urtEndpointOptions: i,
+                    vertical: a,
+                    urtEndpointOptions: c,
                   })
                 }),
               ),
               m()(
                 s()(e),
                 '_getMemoizedEntryConfiguration',
-                Object(ce.a)(function (t) {
-                  return re({ shouldStoreTypeaheadItem: e._shouldStoreTypeaheadItem, withUserPresence: t })
+                Object(A.a)(function (t) {
+                  return q({ shouldStoreTypeaheadItem: e._shouldStoreTypeaheadItem, withUserPresence: t })
                 }),
               ),
               e
@@ -645,15 +426,15 @@
               {
                 key: 'render',
                 value: function () {
-                  return g.createElement(ae.a, {
-                    apiErrorHandlerMap: ne.a,
+                  return v.createElement(K.a, {
+                    apiErrorHandlerMap: F.a,
                     entryConfiguration: this._getMemoizedEntryConfiguration(this.props.withUserPresence),
                     fetchOptions: this.props.fetchOptions,
                     module: this._getModule(),
-                    newTweetsPillMode: ie.a.CLIENT,
-                    prerollDisplayLocation: oe.c.SEARCH_TWEETS,
+                    newTweetsPillMode: H.a.CLIENT,
+                    prerollDisplayLocation: D.c.SEARCH_TWEETS,
                     renderEmptyState: this._renderEmptyTimeline,
-                    title: fe,
+                    title: W,
                     withUserPresence: this.props.withUserPresence,
                   })
                 },
@@ -661,9 +442,9 @@
             ]),
             r
           )
-        })(g.Component)
-      m()(ye, 'contextType', le.a)
-      t.a = ye
+        })(v.Component)
+      m()(G, 'contextType', Q.a)
+      t.a = G
     },
     i6OR: function (e, t, r) {
       'use strict'
@@ -671,25 +452,25 @@
         return h
       })
       var n,
-        c = r('KEM+'),
-        i = r.n(c),
-        o = (r('jQ3i'), r('x4t0'), r('2G9S'), r('IAdD'), r('LW0h'), r('vrRf'), r('z84I'), r('u3ZE')),
-        a = r('3IPs'),
-        s = r('ZNT5'),
-        u = r('eR3e'),
-        l = 'search-',
-        p = ' near:me',
-        f =
+        a = r('KEM+'),
+        c = r.n(a),
+        i = (r('jQ3i'), r('x4t0'), r('2G9S'), r('IAdD'), r('LW0h'), r('vrRf'), r('z84I'), r('u3ZE')),
+        o = r('3IPs'),
+        l = r('ZNT5'),
+        s = r('eR3e'),
+        u = 'search-',
+        d = ' near:me',
+        p =
           ((n = {}),
-          i()(n, a.c.Top, {}),
-          i()(n, a.c.Live, { tweet_search_mode: a.c.Live }),
-          i()(n, a.c.User, { result_filter: a.c.User }),
-          i()(n, a.c.Image, { result_filter: a.c.Image }),
-          i()(n, a.c.Video, { result_filter: a.c.Video }),
+          c()(n, o.c.Top, {}),
+          c()(n, o.c.Live, { tweet_search_mode: o.c.Live }),
+          c()(n, o.c.User, { result_filter: o.c.User }),
+          c()(n, o.c.Image, { result_filter: o.c.Image }),
+          c()(n, o.c.Video, { result_filter: o.c.Video }),
           n),
-        d = function (e) {
+        f = function (e) {
           return (function (e) {
-            return e === o.a.SpellingCorrectionRevertClick || e === o.a.SpellingExpansionRevertClick
+            return e === i.a.SpellingCorrectionRevertClick || e === i.a.SpellingExpansionRevertClick
           })(e)
             ? '-revert'
             : ''
@@ -697,12 +478,12 @@
         h = function () {
           return function (e, t) {
             e(
-              Object(u.t)(t())
+              Object(s.t)(t())
                 .filter(function (e) {
-                  return 0 === e.indexOf(l)
+                  return 0 === e.indexOf(u)
                 })
                 .map(function (e) {
-                  return Object(u.g)(e)
+                  return Object(s.g)(e)
                 }),
             )
           }
@@ -710,17 +491,17 @@
       t.b = function (e) {
         var t = e.query,
           r = e.searchMode,
-          n = void 0 === r ? a.c.Top : r,
-          c = e.querySource,
-          i = e.searchFilters,
-          o = e.vertical,
-          u = e.urtEndpointOptions,
-          h = d(c),
-          y = i && i.peopleFilter ? 'searcher_follows' : void 0,
-          m = y ? '-pf' : '',
-          g = i && i.locationFilter && !t.includes(p) ? ''.concat(t).concat(p) : t,
-          v = ''.concat(l).concat(g, '-').concat(n).concat(h).concat(m)
-        return Object(s.a)({
+          n = void 0 === r ? o.c.Top : r,
+          a = e.querySource,
+          c = e.searchFilters,
+          i = e.vertical,
+          s = e.urtEndpointOptions,
+          h = f(a),
+          y = c && c.peopleFilter ? 'searcher_follows' : void 0,
+          g = y ? '-pf' : '',
+          m = c && c.locationFilter && !t.includes(d) ? ''.concat(t).concat(d) : t,
+          v = ''.concat(u).concat(m, '-').concat(n).concat(h).concat(g)
+        return Object(l.a)({
           timelineId: v,
           getEndpoint: function (e) {
             return e.URT.fetchSearch
@@ -728,15 +509,15 @@
           getEndpointParams: function (e) {
             return Object.assign(
               {},
-              null == u ? void 0 : u.requestParams,
-              { q: g, social_filter: y, vertical: o },
-              f[n],
+              null == s ? void 0 : s.requestParams,
+              { q: m, social_filter: y, vertical: i },
+              p[n],
               e,
             )
           },
           context: 'FETCH_SEARCH_TIMELINE',
           perfKey: 'search',
-          staleIntervalMs: n === a.c.Live ? 5e3 : void 0,
+          staleIntervalMs: n === o.c.Live ? 5e3 : void 0,
           timelineType: 'search',
         })
       }
@@ -773,7 +554,7 @@
     zgaL: function (e, t, r) {
       'use strict'
       var n = r('ezF+'),
-        c =
+        a =
           (r('JtPf'),
           r('7x/C'),
           r('87if'),
@@ -786,7 +567,7 @@
             loaderKey: 'momentAnnoationLoader',
             strategy: r('XBtf').a.Critical,
           })
-      t.a = n.e(c)
+      t.a = n.e(a)
     },
   },
 ])

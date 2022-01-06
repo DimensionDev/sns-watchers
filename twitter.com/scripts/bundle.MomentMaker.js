@@ -870,7 +870,7 @@
           .withAnalytics(),
         I = n('3XMw'),
         j = n.n(I),
-        x = n('zCf4'),
+        x = n('Ty5D'),
         R = n('gASw'),
         D = n('C6f5'),
         L = n('Y8cF'),
@@ -5214,7 +5214,7 @@
         h = n.n(f),
         m = n('KEM+'),
         v = n.n(m),
-        y = (n('uFXj'), n('LW0h'), n('8t44'), n('3EFP')),
+        y = (n('uFXj'), n('LW0h'), n('3EFP')),
         b = n('ERkP'),
         g = n('ZUOq'),
         _ = n('+Kfv'),
@@ -11605,261 +11605,6 @@
       })
       t.a = U
     },
-    '8t44': function (e, t, n) {
-      'use strict'
-      var r = n('ddV6'),
-        o = n.n(r),
-        i = (n('uFXj'), n('3EFP')),
-        a = n('ERkP'),
-        c = n('woHV'),
-        s = n('3XMw'),
-        l = n.n(s),
-        u = n('VwDm'),
-        d = n('tAeL'),
-        p = n('MWbm'),
-        f = n('pf9B'),
-        h = n('xoZN'),
-        m = n('6OUF'),
-        v = n('rHpw'),
-        y = n('oEoC'),
-        b = l.a.f065ba8c,
-        g = v.a.create(function (e) {
-          return {
-            root: { flex: 1, flexDirection: 'column', position: 'relative' },
-            typeaheadContainer: { flex: 1, position: 'relative' },
-            keydownInputListener: { flexShrink: 1 },
-            dropdown: {
-              backgroundColor: e.colors.cellBackground,
-              left: 0,
-              right: 0,
-              overflowY: 'auto',
-              overscrollBehavior: 'contain',
-              position: 'absolute',
-              top: 0,
-              WebkitOverflowScrolling: 'touch',
-            },
-            modalDropdown: {
-              backgroundColor: e.colors.cellBackground,
-              flex: 1,
-              minHeight: 300,
-              position: 'relative',
-              overflowY: 'auto',
-              overscrollBehavior: 'auto',
-              WebkitOverflowScrolling: 'touch',
-            },
-            wideModeDropdown: {
-              borderRadius: e.borderRadii.medium,
-              boxShadow: e.boxShadows.medium,
-              minHeight: 100,
-              maxHeight: 'calc(80vh - '.concat(e.componentDimensions.appBarHeight, ')'),
-            },
-            wrapper: { alignItems: 'stretch', flex: 1 },
-            topBorder: {
-              borderTopColor: e.colors.gray200,
-              borderTopStyle: 'solid',
-              borderTopWidth: e.borderWidths.small,
-            },
-          }
-        })
-      t.a = function (e) {
-        var t = e.alwaysOpen,
-          n = e.disableClearButton,
-          r = void 0 !== n && n,
-          s = e.dropdownStyle,
-          l = e.inputStyle,
-          v = e.isCompact,
-          _ = e.isModal,
-          w = e.items,
-          O = e.onDismiss,
-          E = e.onFocus,
-          C = e.onItemClick,
-          P = e.onQueryChange,
-          k = e.onSubmit,
-          T = e.placeholder,
-          S = e.renderEmptyState,
-          I = e.renderInSearchField,
-          j = e.rounded,
-          x = e.shouldAutoFocus,
-          R = e.shouldClearOnSelect,
-          D = e.shouldFocusOnClear,
-          L = e.shouldRenderEmptyState,
-          M = e.source,
-          A = e.style,
-          B = e.testID,
-          F = e.withFixedPositioning,
-          N = a.useRef(null),
-          H = a.useRef(null),
-          U = a.useRef(null),
-          V = a.useRef(null),
-          z = a.useState(!1),
-          W = o()(z, 2),
-          K = W[0],
-          G = W[1],
-          X = a.useState(null),
-          q = o()(X, 2),
-          Y = q[0],
-          Z = q[1],
-          Q = a.useState(Object(y.b)()),
-          J = o()(Q, 2),
-          $ = J[0],
-          ee = J[1],
-          te = a.useState(function () {
-            return Object(y.f)()
-          }),
-          ne = o()(te, 1)[0],
-          re = a.useState(''),
-          oe = o()(re, 2),
-          ie = oe[0],
-          ae = oe[1],
-          ce = function (e) {
-            var t,
-              n = f.a.getCount() > 0
-            ;(null != N && null !== (t = N.current) && void 0 !== t && t.contains(e.target)) || n || (K && ue())
-          }
-        a.useEffect(function () {
-          return (
-            window.document.addEventListener('click', ce, !0),
-            function () {
-              window.document.removeEventListener('click', ce, !0)
-            }
-          )
-        })
-        var se = function () {
-            if (null != H && H.current) {
-              var e = H.current.getBoundingClientRect().bottom
-              e !== Y && Z(e)
-            }
-          },
-          le = function (e) {
-            ae(e), null == P || P(e)
-          },
-          ue = function () {
-            G(!1), null == O || O()
-          },
-          de = function () {
-            var e
-            ue(), null == U || null === (e = U.current) || void 0 === e || e.blur()
-          },
-          pe = function (e, t) {
-            var n,
-              r,
-              o = R ? '' : ie
-            ;(G(!1), U.current) &&
-              (R && D
-                ? U.current.focus()
-                : (R && (null === (n = U.current.textInput) || void 0 === n || n.clear()),
-                  null === (r = U.current) || void 0 === r || r.blur()))
-            le(o), null == O || O(), null == C || C(e, t)
-          },
-          fe = function () {
-            ee(Object(y.b)())
-          },
-          he = K || t
-        return a.createElement(
-          p.a,
-          { onLayout: se, ref: N, style: [g.root, A] },
-          a.createElement(
-            h.a,
-            {
-              onKeyDown: function (e) {
-                var t,
-                  n = e.key
-                if (Object(y.g)(e)) {
-                  var r, o
-                  if (n === i.a)
-                    return null === (r = V.current) || void 0 === r || r.focusNext(), void e.preventDefault()
-                  if (n === i.b)
-                    return null === (o = V.current) || void 0 === o || o.focusPrevious(), void e.preventDefault()
-                  if (n === i.d) return ue(), void e.preventDefault()
-                  if (n !== i.f) {
-                    var a
-                    if (n === i.c && null !== (t = V.current) && void 0 !== t && t.hasFocusedItem())
-                      return null === (a = V.current) || void 0 === a || a.selectFocusedItem(), void e.preventDefault()
-                    K || G(!0)
-                  } else ue()
-                }
-              },
-              style: g.keydownInputListener,
-            },
-            a.createElement(
-              c.a,
-              {
-                accessibilityLabel: T,
-                accessibilityRole: 'search',
-                onSubmit: function (e) {
-                  var t
-                  e.preventDefault(),
-                    e.stopPropagation(),
-                    null == U || null === (t = U.current) || void 0 === t || t.blur(),
-                    G(!1),
-                    null == O || O(),
-                    null == k || k()
-                },
-                style: g.wrapper,
-              },
-              a.createElement(
-                p.a,
-                { ref: H, style: l },
-                a.createElement(m.a, {
-                  Icon: u.a,
-                  ariaActiveDescendant: $,
-                  ariaAutocomplete: 'list',
-                  ariaExpanded: he,
-                  ariaLabel: b,
-                  ariaOwns: ne,
-                  ariaRole: 'combobox',
-                  autoComplete: 'off',
-                  autoCorrect: !1,
-                  autoFocus: x,
-                  contentBelow: null == I ? void 0 : I(),
-                  focusOnClear: D,
-                  isCompact: v,
-                  onChange: function (e) {
-                    le(e.target.value), se()
-                  },
-                  onClear: function () {
-                    le('')
-                  },
-                  onFocus: function () {
-                    G(!0), se(), null == E || E()
-                  },
-                  onLayout: se,
-                  placeholder: T,
-                  ref: U,
-                  returnKeyType: 'search',
-                  spellCheck: 'false',
-                  styleType: j ? 'pill' : 'selection',
-                  testID: B,
-                  value: ie,
-                  withClearButton: !r && K,
-                }),
-              ),
-              a.createElement(
-                p.a,
-                { style: [g.typeaheadContainer, !j && g.topBorder] },
-                he
-                  ? (function () {
-                      var e = _ ? [g.modalDropdown, s] : [g.dropdown, F && Y ? Object(y.d)(Y) : g.wideModeDropdown, s]
-                      return S && L
-                        ? S({ ariaDescendantId: $, domId: ne, onDismiss: de, onItemFocusChanged: fe, ref: V, style: e })
-                        : a.createElement(d.a, {
-                            ariaDescendantId: $,
-                            domId: ne,
-                            items: w,
-                            onItemClick: pe,
-                            onItemFocusChanged: fe,
-                            ref: V,
-                            source: M,
-                            style: e,
-                          })
-                    })()
-                  : null,
-              ),
-            ),
-          ),
-        )
-      }
-    },
     '91Nr': function (e, t, n) {
       'use strict'
       var r,
@@ -15118,43 +14863,45 @@
           var t = w.useContext(R.a).featureSwitches,
             n = e.analytics,
             r = e.avatarRef,
-            o = e.onClick,
-            i = e.onHoverCardScreenNameClick,
-            c = e.promotedContent,
-            s = e.screenName,
-            l = e.uri,
-            u = e.userSpace,
-            d = e.withHoverCard,
-            p = void 0 === d || d,
-            f = e.withLink,
-            h = void 0 === f || f,
-            m = e.withNftAvatar,
-            v = e.withUserPresence,
-            y = void 0 !== v && v,
-            b = {
+            o = e.nativeID,
+            i = e.onClick,
+            c = e.onHoverCardScreenNameClick,
+            s = e.promotedContent,
+            l = e.screenName,
+            u = e.uri,
+            d = e.userSpace,
+            p = e.withHoverCard,
+            f = void 0 === p || p,
+            h = e.withLink,
+            m = void 0 === h || h,
+            v = e.withNftAvatar,
+            y = e.withUserPresence,
+            b = void 0 !== y && y,
+            g = {
               avatarRef: r,
               imageLayoutCache: zt,
-              onClick: o,
-              onHoverCardScreenNameClick: i,
-              promotedContent: c,
-              screenName: s,
+              nativeID: o,
+              onClick: i,
+              onHoverCardScreenNameClick: c,
+              promotedContent: s,
+              screenName: l,
               style: Wt.avatar,
-              uri: l,
-              withHoverCard: p,
-              withLink: h,
+              uri: u,
+              withHoverCard: f,
+              withLink: m,
             }
           return (
             w.useEffect(function () {
-              m && t.isTrue('responsive_web_nft_avatar') && n.scribe({ element: 'nft_avatar', action: 'impression' })
+              v && t.isTrue('responsive_web_nft_avatar') && n.scribe({ element: 'nft_avatar', action: 'impression' })
             }, []),
             w.createElement(
               P.a,
               { style: Wt.avatarWrapper },
               w.createElement(Ht.a.Consumer, null, function (e) {
                 var t = e.avatarSize
-                return y && u
-                  ? w.createElement(Ut.a, a()({}, b, { size: t }, u))
-                  : w.createElement(Vt.a, a()({ size: t }, b))
+                return b && d
+                  ? w.createElement(Ut.a, a()({}, g, { size: t }, d))
+                  : w.createElement(Vt.a, a()({ size: t }, g))
               }),
             )
           )
@@ -15805,12 +15552,13 @@
                             renderTombstone: function (t) {
                               return e._renderTombstoneHWTweet(t)
                             },
-                            renderUserAvatar: function () {
-                              return e._renderAvatar()
+                            renderUserAvatar: function (t) {
+                              return e._renderAvatar(t.nativeID)
                             },
                             renderUserName: function (t) {
                               return e._renderUserNameHWTweet(t)
                             },
+                            staticLinkConfig: null,
                             testID: Se,
                             tweet: g,
                             withBottomLine: W,
@@ -15877,7 +15625,7 @@
                               {
                                 a11yDomIds: b,
                                 actionMenu: v && $.canUseDOM ? v() : null,
-                                avatar: e._renderAvatar(),
+                                avatar: e._renderAvatar(h.avatar),
                                 footer: e._renderFooter(),
                                 header: e._renderHeader(h),
                                 indents: V,
@@ -16529,31 +16277,32 @@
               },
               {
                 key: '_renderAvatar',
-                value: function () {
-                  var e = this.props,
-                    t = e.onAvatarClick,
-                    n = e.onScreenNameClick,
-                    r = e.promotedContent,
-                    o = e.tweet,
-                    i = e.withAvatarLink,
-                    a = e.withUserAvatar,
-                    c = e.withUserHoverCard,
-                    s = e.withUserPresence,
-                    l = Xt.a.getOriginalTweet(o).user,
-                    u = Xt.a.getOriginalTweet(o).user.id_str
-                  return a
+                value: function (e) {
+                  var t = this.props,
+                    n = t.onAvatarClick,
+                    r = t.onScreenNameClick,
+                    o = t.promotedContent,
+                    i = t.tweet,
+                    a = t.withAvatarLink,
+                    c = t.withUserAvatar,
+                    s = t.withUserHoverCard,
+                    l = t.withUserPresence,
+                    u = Xt.a.getOriginalTweet(i).user,
+                    d = Xt.a.getOriginalTweet(i).user.id_str
+                  return c
                     ? w.createElement(Kt, {
                         avatarRef: this._defaultInlinePromptRef,
-                        onClick: t,
-                        onHoverCardScreenNameClick: n,
-                        promotedContent: r,
-                        screenName: l.screen_name,
-                        uri: l.profile_image_url_https,
-                        userId: u,
-                        withHoverCard: c && !l.blocking,
-                        withLink: i,
-                        withNftAvatar: l.has_nft_avatar,
-                        withUserPresence: s,
+                        nativeID: e,
+                        onClick: n,
+                        onHoverCardScreenNameClick: r,
+                        promotedContent: o,
+                        screenName: u.screen_name,
+                        uri: u.profile_image_url_https,
+                        userId: d,
+                        withHoverCard: s && !u.blocking,
+                        withLink: a,
+                        withNftAvatar: u.has_nft_avatar,
+                        withUserPresence: l,
                       })
                     : null
                 },
@@ -25950,25 +25699,27 @@
         i = n('jhWN'),
         a = o.a.createLayoutCache()
       function c(e) {
-        var t = e.onClick,
-          n = e.onHoverCardScreenNameClick,
-          o = e.promotedContent,
-          c = e.screenName,
-          s = e.uri,
-          l = e.withHoverCard,
-          u = void 0 === l || l,
-          d = e.withLink,
-          p = void 0 === d || d
+        var t = e.nativeID,
+          n = e.onClick,
+          o = e.onHoverCardScreenNameClick,
+          c = e.promotedContent,
+          s = e.screenName,
+          l = e.uri,
+          u = e.withHoverCard,
+          d = void 0 === u || u,
+          p = e.withLink,
+          f = void 0 === p || p
         return r.createElement(i.a, {
           imageLayoutCache: a,
-          onClick: t,
-          onHoverCardScreenNameClick: n,
-          promotedContent: o,
-          screenName: c,
+          nativeID: t,
+          onClick: n,
+          onHoverCardScreenNameClick: o,
+          promotedContent: c,
+          screenName: s,
           size: 'xxLarge',
-          uri: s,
-          withHoverCard: u,
-          withLink: p,
+          uri: l,
+          withHoverCard: d,
+          withLink: f,
         })
       }
     },
@@ -42352,7 +42103,7 @@
             return { updateSettings: be.L }
           }),
         we = n('RxYA'),
-        Oe = n('zCf4'),
+        Oe = n('Ty5D'),
         Ee = _e(function (e) {
           var t = e.guestSegment,
             n = e.isLoggedIn,
@@ -52061,6 +51812,7 @@
                   return j(
                     M(
                       {
+                        nativeID: le.avatar,
                         promotedContent: $,
                         screenName: ae.user.screen_name,
                         uri: ae.user.profile_image_url_https,
@@ -54329,7 +54081,7 @@
         },
         i = {
           loader: function () {
-            return n.e(335).then(n.bind(null, '1Tet'))
+            return n.e(336).then(n.bind(null, '1Tet'))
           },
           loaderKey: 'tweetUnavailableTombstoneLoader',
           strategy: r.a.Critical,

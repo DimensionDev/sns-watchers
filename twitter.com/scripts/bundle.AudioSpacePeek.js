@@ -161,8 +161,8 @@
             alt: D.twitterSpaces,
           },
         },
-        z = n('G8HL')
-      function L(e) {
+        L = n('G8HL')
+      function z(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -185,7 +185,7 @@
       }
       var I = (function (e) {
         u()(n, e)
-        var t = L(n)
+        var t = z(n)
         function n() {
           var e
           r()(this, n)
@@ -231,7 +231,7 @@
           e.children
         )
       }
-      var F = P(Object(z.a)(I))
+      var F = P(Object(L.a)(I))
     },
     UUFr: function (e, t, n) {
       'use strict'
@@ -271,21 +271,21 @@
         P = n.n(C),
         O = n('hOZg'),
         j = n('RqPI')
-      var x = n('zCf4'),
+      var x = n('Ty5D'),
         H = n('uDfI'),
         k = n('dgjd'),
         _ = n('mjJ+'),
         D = n('/yvb'),
         R = n('FXw/'),
-        z = n('GCOQ')
-      function L(e) {
+        L = n('GCOQ')
+      function z(e) {
         var t = (function (e) {
             var t = Object(x.g)(),
               n = Object(k.a)(e).utils,
               a = Object(H.d)(j.l),
               r = [],
               i = {
-                Icon: z.a,
+                Icon: L.a,
                 isEmphasized: !0,
                 onClick: function () {
                   n.scribe(':audiospace::caret:report:click'),
@@ -425,7 +425,7 @@
               { style: q.headerRightItem },
               i.createElement(B.a, { audioSpaceId: a, type: 'icon-borderless' }),
             ),
-            i.createElement(m.a, { style: q.headerRightItem }, i.createElement(L, { audioSpaceId: a, pullRight: !0 })),
+            i.createElement(m.a, { style: q.headerRightItem }, i.createElement(z, { audioSpaceId: a, pullRight: !0 })),
           ),
         )
       }
@@ -873,8 +873,8 @@
           }
         }),
         Re = n('21zW'),
-        ze = n('MH+I')
-      function Le(e) {
+        Le = n('MH+I')
+      function ze(e) {
         var t,
           n,
           a = null === (t = e.space) || void 0 === t ? void 0 : t.ended_at,
@@ -901,7 +901,7 @@
                     ' ',
                     i.createElement(Re.a, null),
                   ),
-                  i.createElement(ze.a, {
+                  i.createElement(Le.a, {
                     color: 'gray700',
                     short: !0,
                     size: 'subtext1',
@@ -1001,7 +1001,7 @@
           ? a.isTrue('voice_rooms_end_screen_participants')
             ? i.createElement(
                 T,
-                r()({}, l, { Content: ke, CustomHeader: Le, withoutDescription: !0, withoutPadding: !0 }),
+                r()({}, l, { Content: ke, CustomHeader: ze, withoutDescription: !0, withoutPadding: !0 }),
               )
             : i.createElement(T, r()({}, l, { Content: ge }))
           : i.createElement(T, r()({}, l, { Content: g }))

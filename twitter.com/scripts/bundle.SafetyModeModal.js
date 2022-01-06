@@ -498,9 +498,9 @@
           ((t.default = se),
           K.a.create(function (e) {
             return {
-              wideScreen: { marginBottom: e.spaces.space32, marginHorizontal: e.spaces.space80 },
+              wideScreen: { marginBottom: e.spaces.space48, marginHorizontal: e.spaces.space80 },
               narrowScreen: {
-                paddingBottom: 'calc('.concat(e.spaces.space32, ' + ').concat(K.a.iPhoneOffsetBottom, ')'),
+                paddingBottom: 'calc('.concat(e.spaces.space48, ' + ').concat(K.a.iPhoneOffsetBottom, ')'),
                 marginHorizontal: e.spaces.space32,
               },
               header: { marginTop: e.spaces.space48, marginBottom: e.spaces.space16 },

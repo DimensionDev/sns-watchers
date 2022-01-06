@@ -72,7 +72,7 @@
           .withAnalytics({ page: 'undo_tweet_details', section: 'timeline' }),
         l = n('3XMw'),
         d = n.n(l)
-      var p = n('zCf4'),
+      var p = n('Ty5D'),
         m = n('MWbm'),
         w = n('t62R'),
         f = n('aRdY'),
@@ -97,8 +97,8 @@
             W = y[1],
             x = a.useState(),
             _ = i()(x, 2),
-            C = _[0],
-            R = _[1]
+            R = _[0],
+            C = _[1]
           a.useEffect(
             function () {
               'number' == typeof u && W(Math.round(u - Date.now()))
@@ -138,7 +138,7 @@
                 {
                   onLayout: function (e) {
                     var t, n
-                    R(
+                    C(
                       (null == e ||
                       null === (t = e.nativeEvent) ||
                       void 0 === t ||
@@ -158,7 +158,7 @@
                     { style: S.timerWrapper },
                     a.createElement(f.a, { accessibilityLabel: T, count: j, maxCount: 1 }),
                   ),
-                  !C || C < 470 ? null : a.createElement(w.b, { style: S.sendingLabel, weight: 'bold' }, v),
+                  !R || R < 470 ? null : a.createElement(w.b, { style: S.sendingLabel, weight: 'bold' }, v),
                 ),
                 a.createElement(
                   m.a,

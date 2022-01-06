@@ -11574,7 +11574,7 @@
     PnKw: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return x
+        return P
       })
       n('OZaJ')
       var r = n('VrFO'),
@@ -11600,8 +11600,9 @@
         S = 'inlinePrompt',
         C = 'inlinePrompt-primaryAction',
         w = 'inlinePrompt-secondaryAction',
-        R = n('MWbm')
-      function I(e) {
+        R = 'inlinePrompt-centeredImageContainer',
+        I = n('MWbm')
+      function x(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -11622,15 +11623,34 @@
           return p()(this, n)
         }
       }
-      var x = (function (e) {
+      var P = (function (e) {
         u()(n, e)
-        var t = I(n)
+        var t = x(n)
         function n() {
           var e
           a()(this, n)
           for (var r = arguments.length, o = new Array(r), i = 0; i < r; i++) o[i] = arguments[i]
           return (
             (e = t.call.apply(t, [this].concat(o))),
+            v()(s()(e), '_renderImage', function (e) {
+              var t = b.createElement(y.a, {
+                accessibilityLabel: '',
+                aspectMode: _.a.exact(e.width / e.height),
+                backgroundColor: e.backgroundColor,
+                image: e,
+              })
+              return e.isCentered
+                ? b.createElement(
+                    I.a,
+                    { style: k.centeredImage, testID: R },
+                    b.createElement(
+                      I.a,
+                      { style: { width: ''.concat(e.width, 'px'), height: ''.concat(e.height, 'px') } },
+                      t,
+                    ),
+                  )
+                : t
+            }),
             v()(s()(e), '_renderTitle', function () {
               var t = e.props.headline
               return t
@@ -11640,7 +11660,7 @@
                       accessibilityRole: 'heading',
                       align: 'left',
                       size: 'title4',
-                      style: P.flexGrow,
+                      style: k.flexGrow,
                       weight: 'bold',
                       withHashflags: !0,
                     },
@@ -11665,7 +11685,7 @@
                 l = n.onClick,
                 u = n.text
               return b.createElement(
-                R.a,
+                I.a,
                 { style: [e.styles.actionContainer, o, { justifyContent: 'flex-start' }], testID: i },
                 b.createElement(
                   E.a,
@@ -11689,21 +11709,14 @@
                   a = e.secondaryAction,
                   o = e.shouldRenderBorder
                 return b.createElement(
-                  R.a,
-                  { style: o ? [k.root, k.rootMargin] : P.root },
+                  I.a,
+                  { style: o ? [A.root, A.rootMargin] : k.root },
                   b.createElement(
                     b.Fragment,
                     null,
-                    t
-                      ? b.createElement(y.a, {
-                          accessibilityLabel: '',
-                          aspectMode: _.a.exact(t.width / t.height),
-                          backgroundColor: t.backgroundColor,
-                          image: t,
-                        })
-                      : null,
+                    t ? this._renderImage(t) : null,
                     b.createElement(
-                      R.a,
+                      I.a,
                       { style: this.styles.rootPadding, testID: S },
                       this._renderTitle(),
                       this._renderBodyText(),
@@ -11727,25 +11740,26 @@
                         : null,
                     ),
                   ),
-                  r ? b.createElement(R.a, { style: P.rightControl }, r) : null,
+                  r ? b.createElement(I.a, { style: k.rightControl }, r) : null,
                 )
               },
             },
             {
               key: 'styles',
               get: function () {
-                return this.props.isCompact ? T : A
+                return this.props.isCompact ? j : T
               },
             },
           ]),
           n
         )
       })(b.Component)
-      v()(x, 'defaultProps', { shouldRenderBorder: !1 })
-      var P = O.a.create(function (e) {
+      v()(P, 'defaultProps', { shouldRenderBorder: !1 })
+      var k = O.a.create(function (e) {
           return {
             root: { backgroundColor: e.colors.cellBackground },
             flexGrow: { flexGrow: 1 },
+            centeredImage: { display: 'flex', flexDirection: 'row', justifyContent: 'center' },
             rightControl: {
               paddingHorizontal: e.componentDimensions.gutterHorizontal,
               paddingVertical: e.componentDimensions.gutterVertical,
@@ -11755,7 +11769,7 @@
             },
           }
         }),
-        k = O.a.create(function (e) {
+        A = O.a.create(function (e) {
           return {
             root: {
               borderColor: e.colors.nestedBorderColor,
@@ -11766,7 +11780,7 @@
             rootMargin: { marginLeft: e.spaces.space16, marginRight: e.spaces.space16 },
           }
         }),
-        A = O.a.create(function (e) {
+        T = O.a.create(function (e) {
           return {
             rootPadding: { padding: e.spaces.space32 },
             body: { marginTop: e.spaces.space8 },
@@ -11775,7 +11789,7 @@
             secondaryAction: { marginTop: e.spaces.space16 },
           }
         }),
-        T = O.a.create(function (e) {
+        j = O.a.create(function (e) {
           return {
             rootPadding: { padding: e.spaces.space16 },
             body: { marginTop: e.spaces.space2 },
@@ -14569,7 +14583,7 @@
         a = n.n(r),
         o = n('ERkP'),
         i = n('Y6L+'),
-        c = n('zCf4'),
+        c = n('Ty5D'),
         s = n('MMRb'),
         l = n('rxPX'),
         u = function (e, t) {

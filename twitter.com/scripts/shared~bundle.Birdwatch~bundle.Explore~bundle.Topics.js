@@ -64,7 +64,7 @@
       var j = n('SrIh'),
         P = n('Irs7'),
         C = n('uDfI'),
-        I = n('zCf4'),
+        I = n('Ty5D'),
         T = n('jwTb'),
         S = n('SOvA'),
         x = n('I/9y'),
@@ -472,8 +472,8 @@
         J = n('yoO3'),
         X = (n('OZaJ'), n('VrFO')),
         q = n.n(X),
-        z = n('Y9Ll'),
-        Y = n.n(z),
+        Y = n('Y9Ll'),
+        z = n.n(Y),
         $ = n('1Pcy'),
         ee = n.n($),
         te = n('5Yy7'),
@@ -590,7 +590,7 @@
               )
             }
             return (
-              Y()(n, [
+              z()(n, [
                 {
                   key: 'render',
                   value: function () {
@@ -788,7 +788,7 @@
             )
           }
           return (
-            Y()(n, [
+            z()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -906,8 +906,8 @@
             V = W.navBar,
             X = W.subtitle,
             q = W.title,
-            z = b === f.a.LOADED ? q || D : '',
-            Y = (function (e, t, n) {
+            Y = b === f.a.LOADED ? q || D : '',
+            z = (function (e, t, n) {
               var r = (null == t ? void 0 : t.scribeConfig) || {},
                 a = (r.entityToken, o()(r, ['entityToken'])),
                 i = null == t ? void 0 : t.tabs,
@@ -927,7 +927,7 @@
               ? u.createElement(Z, {
                   isHeaderOffscreen: !U,
                   navBar: V,
-                  pageNamespace: Y,
+                  pageNamespace: z,
                   withAppLinks: A,
                   withOpenGraphMeta: _,
                 })
@@ -959,7 +959,7 @@
             ae = l && s ? u.createElement(ke, { getTabLink: l, module: v, selectedTabId: x }) : void 0
           return u.createElement(
             w.b,
-            { namespace: Y },
+            { namespace: z },
             u.createElement(
               J.a,
               { behavioralEventViewType: r },
@@ -975,7 +975,7 @@
                 secondaryBar: ae,
                 sidebarContent: k,
                 subtitle: X,
-                title: $ && U ? D : z,
+                title: $ && U ? D : Y,
                 withBottomLoginSignupBar: B,
                 withSearchBox: N,
                 withTweetButton: F,
