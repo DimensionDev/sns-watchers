@@ -4,7 +4,7 @@
     '0kTQ': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return u
+        return l
       })
       var r,
         a = n('KEM+'),
@@ -12,11 +12,11 @@
         o = n('k49u'),
         i = n('LVU8'),
         s = n('3XMw'),
-        l = n.n(s).a.b20a3893,
-        u =
+        u = n.n(s).a.b20a3893,
+        l =
           ((r = {}),
           c()(r, o.a.AppInReadOnlyMode, { customAction: i.b }),
-          c()(r, o.a.TargetUserNotFound, { toast: { text: l } }),
+          c()(r, o.a.TargetUserNotFound, { toast: { text: u } }),
           c()(r, 'showToast', !0),
           r)
     },
@@ -29,8 +29,8 @@
         o = n.n(c),
         i = n('1Pcy'),
         s = n.n(i),
-        l = n('5Yy7'),
-        u = n.n(l),
+        u = n('5Yy7'),
+        l = n.n(u),
         d = n('N+ot'),
         p = n.n(d),
         f = n('AuHH'),
@@ -45,14 +45,14 @@
         A = n('fs1G'),
         b = n('MWbm'),
         C = n('Irs7'),
-        I = n('OOKO'),
-        S = n('CKsB'),
+        S = n('OOKO'),
+        I = n('CKsB'),
         M = n('t62R'),
         k = n('IMA+'),
         B = n('Znyr'),
-        x = n('G1WX'),
-        R = n('rHpw')
-      function T(e) {
+        T = n('G1WX'),
+        U = n('rHpw')
+      function x(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -73,12 +73,12 @@
           return p()(this, n)
         }
       }
-      var U = w.a.d86bbf0f,
+      var R = w.a.d86bbf0f,
         L = w.a.h6beb5fa,
         H = w.a.b7dc3884,
         O = (function (e) {
-          u()(n, e)
-          var t = T(n)
+          l()(n, e)
+          var t = x(n)
           function n() {
             var e
             a()(this, n)
@@ -90,8 +90,8 @@
                   return y.createElement(
                     y.Fragment,
                     { key: n },
-                    0 === n ? y.createElement(I.a, null) : null,
-                    y.createElement(S.a, {
+                    0 === n ? y.createElement(S.a, null) : null,
+                    y.createElement(I.a, {
                       Icon: t.Icon,
                       actionText: t.actionText,
                       isSelected: t.isSelected,
@@ -168,7 +168,7 @@
                       standalone: !0,
                       style: P.userDecoration,
                       truncatedCountFormatter: L,
-                      unreadCountLabel: U,
+                      unreadCountLabel: R,
                     })
                   : void 0
               }),
@@ -212,7 +212,7 @@
                     { style: P.menuContainer },
                     this._renderTitle(),
                     n
-                      ? y.createElement(x.a, {
+                      ? y.createElement(T.a, {
                           fetchStatus: t,
                           onRequestRetry: this._handleFetch,
                           render: this._renderUserAccounts,
@@ -226,7 +226,7 @@
             n
           )
         })(y.Component),
-        P = R.a.create(function (e) {
+        P = U.a.create(function (e) {
           return {
             iconCheckMark: { color: e.colors.primary, flexShrink: 0 },
             menuContainer: { paddingVertical: e.spaces.space12 },
@@ -243,7 +243,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'default', function () {
-          return re
+          return ae
         })
       n('OZaJ')
       var r = n('VrFO'),
@@ -252,8 +252,8 @@
         o = n.n(c),
         i = n('5Yy7'),
         s = n.n(i),
-        l = n('N+ot'),
-        u = n.n(l),
+        u = n('N+ot'),
+        l = n.n(u),
         d = n('AuHH'),
         p = n.n(d),
         f = n('KEM+'),
@@ -261,30 +261,31 @@
         m = n('ERkP'),
         g = n('1Pcy'),
         y = n.n(g),
-        v = (n('2G9S'), n('G6rE')),
-        _ = n('rxPX'),
-        w = n('0KEI'),
-        E = n('auX9'),
-        A = n('kGix'),
-        b = Object(_.a)()
+        v = (n('2G9S'), n('qtu+')),
+        _ = n('G6rE'),
+        w = n('rxPX'),
+        E = n('0KEI'),
+        A = n('auX9'),
+        b = n('kGix'),
+        C = Object(w.a)()
           .propsFromState(function () {
             return {
-              fetchStatus: E.g,
-              loggedInUser: v.e.selectLoggedInUser,
-              multiAccountUsers: E.j,
-              hasMultiAccountBadges: E.h,
+              fetchStatus: A.g,
+              loggedInUser: _.e.selectLoggedInUser,
+              multiAccountUsers: A.j,
+              hasMultiAccountBadges: A.h,
             }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandlerAccountSwitch: Object(w.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandlerAccountSwitch: Object(E.createLocalApiErrorHandlerWithContextFactory)(
                 'ACCOUNT_SWITCHER_ACCOUNT_SWITCH',
               ),
-              createLocalApiErrorHandlerMultiListFetch: Object(w.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandlerMultiListFetch: Object(E.createLocalApiErrorHandlerWithContextFactory)(
                 'ACCOUNT_SWITCHER_MULTI_LIST_FETCH',
               ),
-              fetchMultiAccountList: E.c,
-              switchAccount: E.m,
+              fetchMultiAccountList: A.c,
+              switchAccount: v.a,
             }
           })
           .adjustStateProps(function (e) {
@@ -293,26 +294,26 @@
               r = e.loggedInUser,
               a = e.multiAccountUsers
             return {
-              fetchStatus: t === A.a.NONE ? A.a.LOADING : t,
+              fetchStatus: t === b.a.NONE ? b.a.LOADING : t,
               hasMultiAccountBadges: !!r && n,
               loggedInUser: r,
               multiAccountUsers: a,
             }
           })
           .withAnalytics({ page: 'nav', section: 'account_switcher' }),
-        C = n('3Wr5'),
+        S = n('3Wr5'),
         I = n('55jz'),
-        S = n('0kTQ'),
-        M = 'SideNav_AccountSwitcher_Button',
-        k = 'AccountSwitcher_AddAccount_Button',
-        B = 'AccountSwitcher_Logout_Button',
-        x = 'AccountSwitcher_ManageAccounts_Button',
-        R = n('yrzJ'),
-        T = n('y8wG'),
-        U = n('v6aA'),
-        L = n('3XMw'),
-        H = n.n(L)
-      function O(e) {
+        M = n('0kTQ'),
+        k = 'SideNav_AccountSwitcher_Button',
+        B = 'AccountSwitcher_AddAccount_Button',
+        T = 'AccountSwitcher_Logout_Button',
+        U = 'AccountSwitcher_ManageAccounts_Button',
+        x = n('yrzJ'),
+        R = n('y8wG'),
+        L = n('v6aA'),
+        H = n('3XMw'),
+        O = n.n(H)
+      function P(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -330,21 +331,21 @@
             var a = p()(this).constructor
             n = Reflect.construct(r, arguments, a)
           } else n = r.apply(this, arguments)
-          return u()(this, n)
+          return l()(this, n)
         }
       }
-      var P = H.a.j0a8da6e,
-        N = H.a.c6f2bf00,
-        F = function (e) {
+      var F = O.a.j0a8da6e,
+        N = O.a.c6f2bf00,
+        D = function (e) {
           return m.createElement(
-            H.a.I18NFormatMessage,
+            O.a.I18NFormatMessage,
             { $i18n: 'i9bec47a' },
-            m.createElement(R.a, { color: 'normal', screenName: e }),
+            m.createElement(x.a, { color: 'normal', screenName: e }),
           )
         },
-        D = (function (e) {
+        W = (function (e) {
           s()(n, e)
-          var t = O(n)
+          var t = P(n)
           function n() {
             var e
             a()(this, n)
@@ -386,7 +387,7 @@
                   element: n ? 'account_badged' : 'account',
                   action: 'click',
                 }),
-                  s({ user_id: a }).catch(i(S.a))
+                  s({ user_id: a }).catch(i(M.a))
               }),
               h()(y()(e), '_getAdditionalAccountMenuItems', function () {
                 var t = e.props,
@@ -397,15 +398,15 @@
                 return (
                   r.length >= 5 ||
                     c.push({
-                      actionText: P,
+                      actionText: F,
                       link: e.context.featureSwitches.isTrue('stateful_login_enabled')
                         ? '/i/flow/login'
                         : '/account/add',
                       scribeElement: 'add_existing_account',
-                      testID: k,
+                      testID: B,
                     }),
-                  a && c.push({ actionText: N, link: '/account/switch', scribeElement: 'manage_accounts', testID: x }),
-                  n && c.push({ actionText: F(n.screen_name), link: '/logout', scribeElement: 'log_out', testID: B }),
+                  a && c.push({ actionText: N, link: '/account/switch', scribeElement: 'manage_accounts', testID: U }),
+                  n && c.push({ actionText: D(n.screen_name), link: '/logout', scribeElement: 'log_out', testID: T }),
                   c
                 )
               }),
@@ -413,7 +414,7 @@
                 e.props.analytics.scribe({ action: 'click' })
               }),
               h()(y()(e), '_hasMultiAccountCookie', function () {
-                return Object(C.a)().hasMultiAccountCookie
+                return Object(S.a)().hasMultiAccountCookie
               }),
               e
             )
@@ -428,11 +429,11 @@
                     n = e.hasMultiAccountBadges,
                     r = e.isExpanded,
                     a = e.loggedInUser
-                  return m.createElement(T.a, {
+                  return m.createElement(R.a, {
                     analytics: t,
                     currentUser: a,
                     hasMultiAccountBadges: n,
-                    interactiveViewTestId: M,
+                    interactiveViewTestId: k,
                     isExpanded: r,
                     renderMenuSheet: this._renderMenuSheet,
                   })
@@ -442,13 +443,13 @@
             n
           )
         })(m.Component)
-      h()(D, 'contextType', U.a)
-      var z = b(D),
-        W = n('1eTX'),
+      h()(W, 'contextType', L.a)
+      var z = C(W),
+        j = n('1eTX'),
         V = n('jwTb'),
-        j = n('Irs7'),
-        G = n('eqgg')
-      function X(e) {
+        G = n('Irs7'),
+        X = n('eqgg')
+      function Y(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -466,13 +467,13 @@
             var a = p()(this).constructor
             n = Reflect.construct(r, arguments, a)
           } else n = r.apply(this, arguments)
-          return u()(this, n)
+          return l()(this, n)
         }
       }
-      var K = H.a.g34f2c63({ verb: '' }),
-        Y = (function (e) {
+      var K = O.a.g34f2c63({ verb: '' }),
+        q = (function (e) {
           s()(n, e)
-          var t = X(n)
+          var t = Y(n)
           function n() {
             var e
             a()(this, n)
@@ -494,7 +495,7 @@
                     t = e.composeOptions,
                     n = e.isExpanded,
                     r = e.testID
-                  return m.createElement(G.a, {
+                  return m.createElement(X.a, {
                     icon: J,
                     isExpanded: n,
                     label: K,
@@ -509,13 +510,13 @@
           )
         })(m.Component),
         J = m.createElement(V.a, null),
-        Z = Object(j.a)(Y),
-        q = n('N5qz'),
-        Q = 'SideNav_NewTweet_Button',
-        $ = n('MWbm'),
-        ee = n('cHvH'),
-        te = n('rHpw')
-      function ne(e) {
+        Z = Object(G.a)(q),
+        Q = n('N5qz'),
+        $ = 'SideNav_NewTweet_Button',
+        ee = n('MWbm'),
+        te = n('cHvH'),
+        ne = n('rHpw')
+      function re(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -533,12 +534,12 @@
             var a = p()(this).constructor
             n = Reflect.construct(r, arguments, a)
           } else n = r.apply(this, arguments)
-          return u()(this, n)
+          return l()(this, n)
         }
       }
-      var re = (function (e) {
+      var ae = (function (e) {
         s()(n, e)
-        var t = ne(n)
+        var t = re(n)
         function n() {
           return a()(this, n), t.apply(this, arguments)
         }
@@ -556,32 +557,32 @@
                   o = t.isCollapsedSmall,
                   i = t.isExpanded,
                   s = t.isLoggedIn,
-                  l = t.isTwoColumn,
-                  u = t.location,
+                  u = t.isTwoColumn,
+                  l = t.location,
                   d = t.logoButton,
                   p = t.onTabRefresh,
                   f = t.widthStyle,
                   h = t.withTweetButton,
-                  g = [ae.root, f, o ? ae.rootPaddingSmall : ae.rootPaddingNormal],
-                  y = d || m.createElement(W.a, { onClick: p, pullLeft: !1, size: 'large' })
-                return m.createElement(ee.a, null, function (t) {
+                  g = [ce.root, f, o ? ce.rootPaddingSmall : ce.rootPaddingNormal],
+                  y = d || m.createElement(j.a, { onClick: p, pullLeft: !1, size: 'large' })
+                return m.createElement(te.a, null, function (t) {
                   var o = t.windowHeight
                   return m.createElement(
-                    $.a,
+                    ee.a,
                     { style: g },
                     m.createElement(
-                      $.a,
-                      { style: [ae.topSection, !i && ae.alignItemsCenter] },
-                      m.createElement($.a, { style: ae.topControl }, y),
+                      ee.a,
+                      { style: [ce.topSection, !i && ce.alignItemsCenter] },
+                      m.createElement(ee.a, { style: ce.topControl }, y),
                       m.createElement(
-                        $.a,
-                        { style: [ae.appTabBar, !i && ae.alignItemsCenter] },
+                        ee.a,
+                        { style: [ce.appTabBar, !i && ce.alignItemsCenter] },
                         m.createElement(r, {
                           history: c,
                           layout: 'vertical',
-                          location: u,
+                          location: l,
                           onTabRefresh: p,
-                          wideMode: l,
+                          wideMode: u,
                           withExtendedItems: !0,
                           withLabel: i,
                         }),
@@ -590,8 +591,8 @@
                     ),
                     s
                       ? m.createElement(
-                          $.a,
-                          { style: [ae.footerContainer, !i && ae.alignItemsCenter] },
+                          ee.a,
+                          { style: [ce.footerContainer, !i && ce.alignItemsCenter] },
                           m.createElement(z, { isExpanded: i }),
                           a ? m.createElement(a, { isExpanded: i }) : null,
                         )
@@ -608,13 +609,13 @@
                   r = t.composeOptions,
                   a = t.isExpanded
                 return m.createElement(
-                  $.a,
+                  ee.a,
                   {
-                    style: [ae.button, !a && ae.alignItemsCenter, 'tall' === q.a.getHeightMode(e) && ae.withTallHeight],
+                    style: [ce.button, !a && ce.alignItemsCenter, 'tall' === Q.a.getHeightMode(e) && ce.withTallHeight],
                   },
                   n
                     ? m.createElement(n, { isExpanded: a })
-                    : m.createElement(Z, { composeOptions: r, isExpanded: a, testID: Q }),
+                    : m.createElement(Z, { composeOptions: r, isExpanded: a, testID: $ }),
                 )
               },
             },
@@ -622,8 +623,8 @@
           n
         )
       })(m.Component)
-      h()(re, 'defaultProps', { withTweetButton: !0 })
-      var ae = te.a.create(function (e) {
+      h()(ae, 'defaultProps', { withTweetButton: !0 })
+      var ce = ne.a.create(function (e) {
         return {
           root: { height: '100%', overflowY: 'auto', justifyContent: 'space-between' },
           rootPaddingNormal: { paddingHorizontal: e.spaces.space12 },
@@ -639,6 +640,33 @@
         }
       })
     },
+    'qtu+': function (e, t, n) {
+      'use strict'
+      n.d(t, 'a', function () {
+        return i
+      })
+      var r = n('4+NY'),
+        a = n('oEOe'),
+        c = n('5oBF'),
+        o = {
+          REQUEST: 'rweb/multiAccount/SWITCH_REQUEST',
+          SUCCESS: 'rweb/multiAccount/SWITCH_SUCCESS',
+          FAILURE: 'rweb/multiAccount/SWITCH_FAILURE',
+        },
+        i = function (e) {
+          return function (t, n, i) {
+            var s = i.api,
+              u = Object(a.b)(t, { request: s.Auth.switch, params: e })
+            return t(Object(c.f)()).then(function () {
+              return t(Object(r.b)()).then(function () {
+                return u({ actionTypes: o, context: 'SWITCH' }).then(function () {
+                  window.location.assign('/home')
+                })
+              })
+            })
+          }
+        }
+    },
     y8wG: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
@@ -651,8 +679,8 @@
         o = n.n(c),
         i = n('1Pcy'),
         s = n.n(i),
-        l = n('5Yy7'),
-        u = n.n(l),
+        u = n('5Yy7'),
+        l = n.n(u),
         d = n('N+ot'),
         p = n.n(d),
         f = n('AuHH'),
@@ -667,13 +695,13 @@
         A = n('aWzz'),
         b = n('MWbm'),
         C = n('I4+6'),
-        I = n('rHpw'),
-        S = n('XP29'),
+        S = n('rHpw'),
+        I = n('XP29'),
         M = n('jV+4'),
         k = n('Znyr'),
         B = n('OiMc'),
-        x = n('cm6r')
-      function R(e) {
+        T = n('cm6r')
+      function U(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -694,13 +722,13 @@
           return p()(this, n)
         }
       }
-      var T = w.a.d86bbf0f,
-        U = w.a.h6beb5fa,
+      var x = w.a.d86bbf0f,
+        R = w.a.h6beb5fa,
         L = w.a.b8e1d524,
         H = w.a.gef27c4c,
         O = (function (e) {
-          u()(n, e)
-          var t = R(n)
+          l()(n, e)
+          var t = U(n)
           function n() {
             var e
             a()(this, n)
@@ -720,7 +748,7 @@
                   y.createElement(
                     b.a,
                     null,
-                    y.createElement(S.a, { accessibilityLabel: r, screenName: o, size: 'xLarge', uri: a }),
+                    y.createElement(I.a, { accessibilityLabel: r, screenName: o, size: 'xLarge', uri: a }),
                     n ? null : e._renderBadge(),
                   ),
                   n
@@ -757,8 +785,8 @@
                   ? y.createElement(k.a, {
                       pip: !0,
                       style: r && P.pip,
-                      truncatedCountFormatter: U,
-                      unreadCountLabel: T,
+                      truncatedCountFormatter: R,
+                      unreadCountLabel: x,
                     })
                   : null
               }),
@@ -792,14 +820,14 @@
                           withFixedPosition: !0,
                         },
                         y.createElement(
-                          x.a,
+                          T.a,
                           {
                             accessibilityLabel: t || H,
                             accessibilityRole: 'button',
                             hoverLabel: c ? void 0 : { label: r || L },
                             interactiveStyles: C.a.generate({
                               backgroundColor: 'transparent',
-                              color: I.a.theme.colors.text,
+                              color: S.a.theme.colors.text,
                             }),
                             onClick: this._handleAccountSwitcherClick,
                             style: P.anchorContainer,
@@ -816,7 +844,7 @@
           )
         })(y.Component)
       g()(O, 'contextTypes', { featureSwitches: A.object })
-      var P = I.a.create(function (e) {
+      var P = S.a.create(function (e) {
         return {
           anchorContainer: {
             alignItems: 'center',

@@ -500,7 +500,7 @@
             ),
             z = function () {
               var e = W()
-              C.goBackThroughModals({ fallbackPath: e, location: j })
+              C.goBackThroughModals({ fallbackPath: e })
             },
             V = i.useCallback(
               function () {

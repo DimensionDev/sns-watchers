@@ -1537,8 +1537,14 @@
       }
       var x = O.a.create(function (e) {
           return {
-            activeSpeakerIndicatorContainer: { flexDirection: 'row', alignItems: 'center' },
-            activeSpeakerIndicatorName: { color: e.colors.purple500, marginLeft: e.spacesPx.space4 },
+            activeSpeakerIndicatorContainer: { flexDirection: 'row', alignItems: 'center', width: '100%' },
+            activeSpeakerIndicatorName: {
+              color: e.colors.purple500,
+              marginLeft: e.spacesPx.space4,
+              whiteSpace: 'nowrap',
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+            },
             activeSpeakerIndicatorNameInactive: { opacity: 0.6 },
           }
         }),
@@ -5082,7 +5088,7 @@
         f = Object(d.a)({
           loader: function () {
             return u.a.emoji.then(function () {
-              return Promise.all([n.e(15), n.e(214)]).then(n.bind(null, '4AX5'))
+              return Promise.all([n.e(15), n.e(215)]).then(n.bind(null, '4AX5'))
             })
           },
           renderPlaceholder: function (e, t) {

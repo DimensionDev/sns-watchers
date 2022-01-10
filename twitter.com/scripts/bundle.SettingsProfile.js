@@ -1888,7 +1888,7 @@
       t.a = function (e) {
         return r.createElement(
           k.b,
-          { clickMaskToClose: !1, location: e.location, modalSize: 'fitChildren', style: x.modal },
+          { clickMaskToClose: !1, modalSize: 'fitChildren', style: x.modal },
           r.createElement(T, e),
         )
       }
@@ -2318,11 +2318,10 @@
               b()(d()(a), '_handleDismiss', function () {
                 var e = a.props,
                   t = e.history,
-                  n = e.location,
-                  r = e.loggedInUser
+                  n = e.loggedInUser
                 ;(0, e.resetPersistedProfileSettings)(),
-                  r || t.goBack({ backLocation: '/login' }),
-                  t.goBackThroughModals({ location: n })
+                  n || t.goBack({ backLocation: '/login' }),
+                  t.goBackThroughModals()
               }),
               b()(d()(a), '_handleCancel', function () {
                 a._shouldShowDiscardConfirmation() ? a.setState({ showDiscardConfirmation: !0 }) : a._handleDismiss()
@@ -2553,32 +2552,31 @@
                     n = t.avatarMedia,
                     r = t.bannerMedia,
                     a = t.history,
-                    i = t.location,
-                    o = this.state,
-                    c = o.displayNameMaxLength,
-                    s = o.errors,
-                    l = o.profileSettings,
-                    u = l.description,
-                    d = l.location,
-                    p = l.name,
-                    h = l.shouldDeleteBanner,
-                    f = l.url,
-                    m = o.showAvatarCropper,
-                    v = o.showBannerCropper,
-                    y = o.showDiscardConfirmation,
-                    g = P.createElement(fe.a, { size: 'custom', uri: e.profile_image_url_https }),
-                    b = r || (e.profile_banner_url && !h),
-                    _ = P.createElement(
+                    i = this.state,
+                    o = i.displayNameMaxLength,
+                    c = i.errors,
+                    s = i.profileSettings,
+                    l = s.description,
+                    u = s.location,
+                    d = s.name,
+                    p = s.shouldDeleteBanner,
+                    h = s.url,
+                    f = i.showAvatarCropper,
+                    m = i.showBannerCropper,
+                    v = i.showDiscardConfirmation,
+                    y = P.createElement(fe.a, { size: 'custom', uri: e.profile_image_url_https }),
+                    g = r || (e.profile_banner_url && !p),
+                    b = P.createElement(
                       me.a,
                       { ratio: ne.a.theme.aspectRatios.profileBanner },
-                      b ? P.createElement(Ce.a, { source: { uri: e.profile_banner_url }, style: Ge.banner }) : null,
+                      g ? P.createElement(Ce.a, { source: { uri: e.profile_banner_url }, style: Ge.banner }) : null,
                     ),
-                    S = void 0 !== p && Object(ve.a)(p),
-                    C = !!((n && !n.uploader) || (r && !r.uploader)) || !!Object.keys(s).length || S,
-                    O = P.createElement(
+                    _ = void 0 !== d && Object(ve.a)(d),
+                    S = !!((n && !n.uploader) || (r && !r.uploader)) || !!Object.keys(c).length || _,
+                    C = P.createElement(
                       ye.a,
                       {
-                        disabled: C,
+                        disabled: S,
                         onPress: this._handleSubmit,
                         size: 'small',
                         testID: J.a.save,
@@ -2588,25 +2586,25 @@
                     )
                   return P.createElement(
                     N.b,
-                    { history: a, onBackClick: this._handleCancel, rightControl: O, title: Re },
+                    { history: a, onBackClick: this._handleCancel, rightControl: C, title: Re },
                     P.createElement(
                       Q.a,
                       { style: Ge.container },
                       P.createElement(z.default, {
                         accessibilityLabel: Ue,
                         aspectRatio: 3,
-                        currentContent: _,
+                        currentContent: b,
                         location: W.d.ProfileBanner,
                         mediaItem: r,
                         onChange: this._handleBannerMediaChange,
                         onFailure: this._handleBannerMediaFailure,
-                        onRemove: b ? this._handleBannerMediaRemove : void 0,
+                        onRemove: g ? this._handleBannerMediaRemove : void 0,
                         rootStyle: Ge.bannerContainer,
                       }),
                       P.createElement(z.default, {
                         accessibilityLabel: xe,
                         borderRadius: E.a.INFINITE,
-                        currentContent: g,
+                        currentContent: y,
                         location: W.d.Avatar,
                         mediaItem: n,
                         onChange: this._handleAvatarMediaChange,
@@ -2615,17 +2613,17 @@
                       }),
                       P.createElement(ge.a, {
                         autoComplete: 'off',
-                        defaultValue: p,
+                        defaultValue: d,
                         errorText: Ie,
                         helperText: this._renderInputHelperText(),
-                        invalid: S,
+                        invalid: _,
                         label: Be,
-                        maxLength: c,
+                        maxLength: o,
                         name: 'displayName',
                         onChange: this._handleChangeDisplayName,
                       }),
                       P.createElement(ge.a, {
-                        defaultValue: u,
+                        defaultValue: l,
                         label: je,
                         maxLength: 160,
                         multiline: !0,
@@ -2634,14 +2632,14 @@
                         onChange: this._handleChangeDescription,
                       }),
                       P.createElement(ge.a, {
-                        defaultValue: d,
+                        defaultValue: u,
                         label: Ae,
                         maxLength: 30,
                         name: 'location',
                         onChange: this._handleChangeLocation,
                       }),
                       P.createElement(ge.a, {
-                        defaultValue: f || '',
+                        defaultValue: h || '',
                         label: De,
                         maxLength: 100,
                         name: 'url',
@@ -2651,26 +2649,24 @@
                       this._renderBirthdateConfirmationModal(),
                       this._renderProfessionalProfilesButton(),
                     ),
-                    m
+                    f
                       ? P.createElement(H.a, {
                           circle: !0,
                           defaultAspectRatio: 1,
-                          location: i,
                           media: n,
                           onCancel: this._handleAvatarCropCancel,
                           onDone: this._handleAvatarCropDone,
                         })
                       : null,
-                    v
+                    m
                       ? P.createElement(H.a, {
                           defaultAspectRatio: 3,
-                          location: i,
                           media: r,
                           onCancel: this._handleBannerCropCancel,
                           onDone: this._handleBannerCropDone,
                         })
                       : null,
-                    y
+                    v
                       ? P.createElement(te.a, {
                           confirmButtonLabel: He.confirmLabel,
                           confirmButtonType: 'destructiveFilled',

@@ -5671,7 +5671,7 @@
       t.a = function (e) {
         return r.createElement(
           D.b,
-          { clickMaskToClose: !1, location: e.location, modalSize: 'fitChildren', style: H.modal },
+          { clickMaskToClose: !1, modalSize: 'fitChildren', style: H.modal },
           r.createElement(L, e),
         )
       }
@@ -9123,121 +9123,118 @@
             i = e.hasCustomMedia,
             c = e.localMedia,
             l = e.localMediaId,
-            u = e.location,
-            d = e.media,
-            p = e.removeBanner,
-            f = e.removeLocalMediaId,
-            y = r.useState(!1),
-            h = s()(y, 2),
-            b = h[0],
-            v = h[1],
-            O = r.useState(!1),
-            M = s()(O, 2),
-            W = M[0],
-            V = M[1],
-            K = r.useState(!1),
-            X = s()(K, 2),
-            Y = X[0],
-            G = X[1],
-            Q = r.useState(!1),
-            Z = s()(Q, 2),
-            q = Z[0],
-            J = Z[1],
-            $ = r.useState(!1),
-            ee = s()($, 2),
-            te = ee[0],
-            ne = ee[1],
-            re = null == d ? void 0 : d.image,
-            ae = S.a.theme.aspectRatios.communityBanner,
-            oe = a({
+            u = e.media,
+            d = e.removeBanner,
+            p = e.removeLocalMediaId,
+            f = r.useState(!1),
+            y = s()(f, 2),
+            h = y[0],
+            b = y[1],
+            v = r.useState(!1),
+            O = s()(v, 2),
+            M = O[0],
+            W = O[1],
+            V = r.useState(!1),
+            K = s()(V, 2),
+            X = K[0],
+            Y = K[1],
+            G = r.useState(!1),
+            Q = s()(G, 2),
+            Z = Q[0],
+            q = Q[1],
+            J = r.useState(!1),
+            $ = s()(J, 2),
+            ee = $[0],
+            te = $[1],
+            ne = null == u ? void 0 : u.image,
+            re = S.a.theme.aspectRatios.communityBanner,
+            ae = a({
               customErrorHandler: function (e) {
-                return J(z), []
+                return q(z), []
               },
             }),
-            ie = function (e) {
-              return ne(!1), e ? t(n, e) : f(n)
+            oe = function (e) {
+              return te(!1), e ? t(n, e) : p(n)
             },
-            ce = c
+            ie = c
               ? x(x({}, c), {}, { id: Number.MAX_SAFE_INTEGER, originalMediaFile: c.mediaFile, cropData: void 0 })
               : void 0,
-            le = re ? r.createElement(j.a, { accessibilityLabel: T, aspectMode: P.a.exact(ae), image: re }) : null
+            ce = ne ? r.createElement(j.a, { accessibilityLabel: T, aspectMode: P.a.exact(re), image: ne }) : null
           return r.createElement(
             r.Fragment,
             null,
-            q
+            Z
               ? r.createElement(
                   _.a,
                   { style: U.error },
-                  r.createElement(I.a, { Icon: g.a, headline: N, text: q, type: 'danger' }),
+                  r.createElement(I.a, { Icon: g.a, headline: N, text: Z, type: 'danger' }),
                 )
               : null,
             r.createElement(w, {
               accessibilityLabel: k,
-              aspectRatio: ae,
-              currentContent: le,
+              aspectRatio: re,
+              currentContent: ce,
               location: C.d.CommunityBanner,
-              mediaItem: te ? c : void 0,
+              mediaItem: ee ? c : void 0,
               onChange: function (e) {
                 var t = s()(e, 1)[0]
-                J(!1), ie(t), v(!0)
+                q(!1), oe(t), b(!0)
               },
               onFailure: function () {
-                J(z), f(n)
+                q(z), p(n)
               },
               onRemove:
-                i || te
+                i || ee
                   ? function () {
-                      ie(), G(!0)
+                      oe(), Y(!0)
                     }
                   : void 0,
             }),
-            b && c
+            h && c
               ? r.createElement(E.a, {
-                  defaultAspectRatio: ae,
-                  location: u,
+                  defaultAspectRatio: re,
                   media: c,
                   onCancel: function () {
-                    v(!1), f(n)
+                    b(!1), p(n)
                   },
                   onDone: function () {
-                    v(!1), V(!0)
+                    b(!1), W(!0)
                   },
                   title: A,
                 })
               : null,
-            W && ce && l
+            M && ie && l
               ? r.createElement(E.a, {
                   defaultAspectRatio: 1,
-                  location: u,
-                  media: ce,
+                  media: ie,
                   onCancel: function () {
-                    V(!1), v(!0)
+                    W(!1), b(!0)
                   },
                   onCropDone: function (e) {
                     !(function (e, t) {
-                      ne(!0),
+                      te(!0),
                         o(n, { mediaId: e, cropData: t }).catch(function (e) {
-                          ie(), Object(m.a)(e) ? J(z) : oe(e)
+                          oe(), Object(m.a)(e) ? q(z) : ae(e)
                         })
                     })(l, e)
                   },
                   onDone: function () {
-                    V(!1)
+                    W(!1)
                   },
                   title: L,
                 })
               : null,
-            Y
+            X
               ? r.createElement(R.a, {
                   cancelButtonLabel: H,
                   confirmButtonLabel: F,
                   confirmButtonType: 'destructiveFilled',
                   headline: D,
                   onCancel: function () {
-                    G(!1)
+                    Y(!1)
                   },
                   onConfirm: function () {
-                    p(n).catch(oe), G(!1)
+                    d(n).catch(ae), Y(!1)
                   },
                   text: B,
                 })
@@ -9479,99 +9476,96 @@
         Me = function (e) {
           var t = e.community,
             n = e.history,
-            o = e.location,
-            i = e.match,
-            c = t.access,
-            l = t.description,
-            u = t.hasCustomMedia,
-            s = t.id_str,
-            m = t.localMediaId,
-            d = t.media,
-            p = t.name,
-            f = t.theme,
-            y = r.useContext(a.a).featureSwitches,
-            h = y.isTrue('c9s_edit_community_name_enabled'),
-            b = y.isTrue('c9s_edit_community_description_enabled'),
-            v = y.isTrue('c9s_edit_community_membership_settings_enabled'),
-            g = y.isTrue('c9s_edit_community_banner_enabled'),
-            E = y.isTrue('c9s_edit_community_theme_enabled'),
-            O = i.url,
-            w = je[t.access],
-            C = Object(ge.e)(t),
-            _ = Object(ge.d)(C),
-            j = S.a.theme.colors[f.backgroundColor]
+            o = e.match,
+            i = t.access,
+            c = t.description,
+            l = t.hasCustomMedia,
+            u = t.id_str,
+            s = t.localMediaId,
+            m = t.media,
+            d = t.name,
+            p = t.theme,
+            f = r.useContext(a.a).featureSwitches,
+            y = f.isTrue('c9s_edit_community_name_enabled'),
+            h = f.isTrue('c9s_edit_community_description_enabled'),
+            b = f.isTrue('c9s_edit_community_membership_settings_enabled'),
+            v = f.isTrue('c9s_edit_community_banner_enabled'),
+            g = f.isTrue('c9s_edit_community_theme_enabled'),
+            E = o.url,
+            O = je[t.access],
+            w = Object(ge.e)(t),
+            C = Object(ge.d)(w),
+            _ = S.a.theme.colors[p.backgroundColor]
           return r.createElement(
             Ee.e,
             null,
+            y
+              ? r.createElement(
+                  Ee.c,
+                  { exact: !0, path: ''.concat(E, '/name') },
+                  r.createElement(oe, { community: t, history: n }),
+                )
+              : null,
             h
               ? r.createElement(
                   Ee.c,
-                  { exact: !0, path: ''.concat(O, '/name') },
-                  r.createElement(oe, { community: t, history: n }),
+                  { exact: !0, path: ''.concat(E, '/purpose') },
+                  r.createElement(de, { community: t, history: n }),
                 )
               : null,
             b
               ? r.createElement(
                   Ee.c,
-                  { exact: !0, path: ''.concat(O, '/purpose') },
-                  r.createElement(de, { community: t, history: n }),
-                )
-              : null,
-            v
-              ? r.createElement(
-                  Ee.c,
-                  { exact: !0, path: ''.concat(O, '/membership') },
+                  { exact: !0, path: ''.concat(E, '/membership') },
                   r.createElement(Q, { community: t, history: n }),
                 )
               : null,
             r.createElement(
               Ee.c,
-              { exact: !0, path: ''.concat(O, '/') },
+              { exact: !0, path: ''.concat(E, '/') },
               r.createElement(
                 K.a,
-                { communityId: s, screenType: 'primaryDetail', title: Oe },
-                g
-                  ? r.createElement(W, { communityId: s, hasCustomMedia: u, localMediaId: m, location: o, media: d })
-                  : null,
+                { communityId: u, screenType: 'primaryDetail', title: Oe },
+                v ? r.createElement(W, { communityId: u, hasCustomMedia: l, localMediaId: s, media: m }) : null,
                 r.createElement(he.b, { text: Pe }),
                 r.createElement(be.a, {
-                  description: r.createElement(Re, null, p),
+                  description: r.createElement(Re, null, d),
                   label: we,
-                  link: h ? ''.concat(O, '/name') : void 0,
+                  link: y ? ''.concat(E, '/name') : void 0,
                 }),
-                l
+                c
                   ? r.createElement(be.a, {
-                      description: r.createElement(Re, null, l),
+                      description: r.createElement(Re, null, c),
                       label: _e,
-                      link: b ? ''.concat(O, '/purpose') : void 0,
+                      link: h ? ''.concat(E, '/purpose') : void 0,
                     })
                   : null,
-                E
+                g
                   ? r.createElement(be.a, {
-                      description: r.createElement(Re, null, _),
+                      description: r.createElement(Re, null, C),
                       label: Se,
-                      link: E ? ''.concat(O, '/theme') : void 0,
+                      link: g ? ''.concat(E, '/theme') : void 0,
                       renderRightContent: function () {
-                        return r.createElement(pe.a, { style: [{ color: j }, xe.themeIcon] })
+                        return r.createElement(pe.a, { style: [{ color: _ }, xe.themeIcon] })
                       },
                     })
                   : null,
-                v && c
+                b && i
                   ? r.createElement(
                       r.Fragment,
                       null,
                       r.createElement(ve.a, null),
                       r.createElement(he.b, { text: Ie }),
                       r.createElement(be.a, {
-                        description: r.createElement(Re, null, w),
+                        description: r.createElement(Re, null, O),
                         label: Ce,
-                        link: ''.concat(O, '/membership'),
+                        link: ''.concat(E, '/membership'),
                       }),
                     )
                   : null,
               ),
             ),
-            r.createElement(Ee.c, null, r.createElement(fe.a, { to: ''.concat(O, '/') })),
+            r.createElement(Ee.c, null, r.createElement(fe.a, { to: ''.concat(E, '/') })),
           )
         },
         xe =

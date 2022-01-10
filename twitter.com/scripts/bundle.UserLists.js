@@ -3393,24 +3393,21 @@
               }),
               _()(f()(o), '_renderIconCropper', function () {
                 var e = o.state.showIconCropper,
-                  t = o.props,
-                  n = t.location,
-                  r = t.uploadedMedia
-                if (!r) return null
-                r.cropData, r.id
-                var a = r.mediaFile,
-                  c =
-                    (r.originalMediaFile,
+                  t = o.props.uploadedMedia
+                if (!t) return null
+                t.cropData, t.id
+                var n = t.mediaFile,
+                  r =
+                    (t.originalMediaFile,
                     $(
-                      $({}, i()(r, ['cropData', 'id', 'mediaFile', 'originalMediaFile'])),
+                      $({}, i()(t, ['cropData', 'id', 'mediaFile', 'originalMediaFile'])),
                       {},
-                      { id: Number.MAX_SAFE_INTEGER, originalMediaFile: a, mediaFile: a },
+                      { id: Number.MAX_SAFE_INTEGER, originalMediaFile: n, mediaFile: n },
                     ))
                 return e
                   ? E.createElement(F.a, {
                       defaultAspectRatio: 1,
-                      location: n,
-                      media: c,
+                      media: r,
                       onCancel: o._handleIconCropCancel,
                       onCropDone: o._handleIconCropData,
                       onDone: o._handleIconCropDone,
@@ -3540,21 +3537,20 @@
                   var e = this.props,
                     t = e.customMedia,
                     n = e.defaultMedia,
-                    r = e.location,
-                    a = e.uploadedMedia,
-                    o = this.state,
-                    i = o.description,
-                    c = o.isPrivate,
-                    s = o.name,
-                    l = o.nameError,
-                    u = o.shouldDeleteBanner,
-                    d = o.showBannerCropper,
-                    f = !Object(U.a)(null == t ? void 0 : t.image),
-                    p = u || !f ? (null == n ? void 0 : n.image) : null == t ? void 0 : t.image,
-                    h = E.createElement(
+                    r = e.uploadedMedia,
+                    a = this.state,
+                    o = a.description,
+                    i = a.isPrivate,
+                    c = a.name,
+                    s = a.nameError,
+                    l = a.shouldDeleteBanner,
+                    u = a.showBannerCropper,
+                    d = !Object(U.a)(null == t ? void 0 : t.image),
+                    f = l || !d ? (null == n ? void 0 : n.image) : null == t ? void 0 : t.image,
+                    p = E.createElement(
                       G.a,
                       { ratio: X.a.theme.aspectRatios.profileBanner },
-                      p ? E.createElement(z.a, { accessibilityLabel: '', aspectMode: K.a.exact(3), image: p }) : null,
+                      f ? E.createElement(z.a, { accessibilityLabel: '', aspectMode: K.a.exact(3), image: f }) : null,
                     )
                   return E.createElement(
                     W.a,
@@ -3562,21 +3558,21 @@
                     E.createElement(B.default, {
                       accessibilityLabel: ie,
                       aspectRatio: 3,
-                      currentContent: h,
+                      currentContent: p,
                       location: H.d.ListBanner,
-                      mediaItem: a,
+                      mediaItem: r,
                       onChange: this._handleBannerMediaChange,
                       onFailure: this._handleBannerMediaFailure,
-                      onRemove: f || a ? this._handleBannerMediaRemove : void 0,
+                      onRemove: d || r ? this._handleBannerMediaRemove : void 0,
                     }),
                     E.createElement(Y.a, {
-                      errorText: l,
-                      invalid: !!l,
+                      errorText: s,
+                      invalid: !!s,
                       label: re,
                       maxLength: 25,
                       name: 'name',
                       onChange: this._handleNameChange,
-                      value: s,
+                      value: c,
                     }),
                     E.createElement(Y.a, {
                       label: ae,
@@ -3585,21 +3581,20 @@
                       name: 'description',
                       numberOfLines: 3,
                       onChange: this._handleDescriptionChange,
-                      value: i,
+                      value: o,
                     }),
-                    d
+                    u
                       ? E.createElement(F.a, {
                           defaultAspectRatio: 3,
-                          location: r,
-                          media: a,
+                          media: r,
                           onCancel: this._handleBannerCropCancel,
                           onDone: this._handleBannerCropDone,
                           title: ce,
                         })
                       : null,
-                    a ? this._renderIconCropper() : null,
+                    r ? this._renderIconCropper() : null,
                     E.createElement(q.a, {
-                      checked: c,
+                      checked: i,
                       helpText: fe,
                       label: oe,
                       name: 'isPrivate',
@@ -5887,6 +5882,7 @@
         j = x.a.create(function (e) {
           return {
             root: {
+              cursor: 'pointer',
               paddingHorizontal: e.componentDimensions.gutterHorizontal,
               paddingVertical: e.componentDimensions.gutterVertical,
               width: '100%',
@@ -7263,7 +7259,7 @@
       t.a = function (e) {
         return r.createElement(
           A.b,
-          { clickMaskToClose: !1, location: e.location, modalSize: 'fitChildren', style: F.modal },
+          { clickMaskToClose: !1, modalSize: 'fitChildren', style: F.modal },
           r.createElement(D, e),
         )
       }

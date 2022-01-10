@@ -346,7 +346,7 @@
         w = r('3XMw'),
         C = r.n(w),
         x = r('TEoO')
-      function R(e) {
+      function P(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -367,7 +367,7 @@
           return p()(this, r)
         }
       }
-      var P = C.a.i9028824,
+      var R = C.a.i9028824,
         j = 'sliceTimeline',
         D = function (e) {
           return e
@@ -375,7 +375,7 @@
         T = { viewType: 'timeline' },
         k = (function (e) {
           u()(r, e)
-          var t = R(r)
+          var t = P(r)
           function r() {
             var e
             a()(this, r)
@@ -453,7 +453,7 @@
                     n = e.retryMessage
                   return r
                     ? y.createElement(S.a, {
-                        accessibilityLabel: P,
+                        accessibilityLabel: R,
                         behavioralEventContext: T,
                         fetchStatus: t,
                         onRequestRetry: this._handleFetch,
@@ -552,8 +552,8 @@
           r('lTEL'),
           r('kYxP'),
           r('CDB5')),
-        R = r('1YZw'),
-        P = r('hqKg'),
+        P = r('1YZw'),
+        R = r('hqKg'),
         j = r('X/yg'),
         D = r('AQOc'),
         T = r('UhuB'),
@@ -590,7 +590,7 @@
       var B = function (e, t) {
           return t.conversationId
         },
-        N = Object(P.createSelector)(
+        N = Object(R.createSelector)(
           function (e, t) {
             return _.selectEntriesForConversation(e, B(0, t))
           },
@@ -686,7 +686,7 @@
             var t = e.conversationId
             return {
               addMedia: U(t),
-              addToast: R.b,
+              addToast: P.b,
               createLocalApiErrorHandler: Object(I.createLocalApiErrorHandlerWithContextFactory)(
                 'DIRECT_MESSAGES_CONVERSATION',
               ),
@@ -858,8 +858,8 @@
         we = Z.a.c64c1883,
         Ce = Z.a.j7d0e835,
         xe = Z.a.b08821f3,
-        Re = Z.a.e736990a,
-        Pe = Z.a.cdcebd22,
+        Pe = Z.a.e736990a,
+        Re = Z.a.cdcebd22,
         je = (function (e) {
           p()(r, e)
           var t = Oe(r)
@@ -919,7 +919,7 @@
                     ? null
                     : g.createElement(ne.a, {
                         accessibilityLabel: we,
-                        hoverLabel: { label: Pe },
+                        hoverLabel: { label: Re },
                         icon: g.createElement(ue.a, null),
                         onPress: e._handleNewMessage,
                         type: n,
@@ -980,7 +980,7 @@
                         re.a,
                         { style: De.newMessageDotContainer },
                         g.createElement(_e.a, {
-                          accessibilityLabel: Re,
+                          accessibilityLabel: Pe,
                           style: [De.newMessageDotRoot, a ? De.newMessageDotHighlighted : De.newMessageDotRegular],
                         }),
                       )
@@ -1088,7 +1088,7 @@
         ke = (r('JtPf'), r('87if'), r('zb92')),
         Me = Object(ke.a)({
           loader: function () {
-            return r.e(218).then(r.bind(null, 'Rk1B'))
+            return r.e(219).then(r.bind(null, 'Rk1B'))
           },
         }),
         He = r('aWzz'),
@@ -1910,8 +1910,8 @@
         w = r('feu+'),
         C = r('3XMw'),
         x = r.n(C),
-        R = x.a.fd6150fc,
-        P = y.createElement(
+        P = x.a.fd6150fc,
+        R = y.createElement(
           x.a.I18NFormatMessage,
           { $i18n: 'iac7f92a' },
           y.createElement(I.b, { link: '/privacy' }, x.a.d42d239f),
@@ -1927,12 +1927,12 @@
             r.scribeAction('impression'),
             y.createElement(w.a, {
               actionLabel: j,
-              headline: R,
+              headline: P,
               onAction: function () {
                 r.scribeAction('click'), t(E.j)
               },
               onClose: S.a,
-              subtext: P,
+              subtext: R,
               withCloseButton: !1,
             })
           )
@@ -2466,8 +2466,8 @@
             : null
         },
         xe = r('Myq3'),
-        Re = r('3wZR'),
-        Pe = r('XnpN'),
+        Pe = r('3wZR'),
+        Re = r('XnpN'),
         je = r('AQ79'),
         De = 'conversation',
         Te = r('u0B7'),
@@ -2634,7 +2634,7 @@
               m()(l()(e), '_renderConversationLabel', function (e) {
                 var t = e.convo_label
                 if (null == t || !t.text) return null
-                var r = Object(Re.b)(t.icon)
+                var r = Object(Pe.b)(t.icon)
                 return y.createElement(
                   I.b,
                   { color: 'gray700', size: 'subtext2' },
@@ -2677,7 +2677,7 @@
                   r = t.conversation,
                   n = t.perspective,
                   a = t.searchQuery,
-                  o = r ? Object(Pe.a)(r, n) : [],
+                  o = r ? Object(Re.a)(r, n) : [],
                   c = [],
                   i = function (e, t) {
                     return e.localeCompare(t)
@@ -3035,46 +3035,76 @@
           r('JtPf'),
           r('uFXj'),
           r('M+/F'),
+          r('hBpG'),
           function (e, t) {
             return t.module.selectItems(e)
           }),
         pt = function (e, t) {
-          return t.module.selectItems(e).map(function (t) {
-            return T.selectConversation(e, t)
-          })
-        },
-        ft = function (e, t) {
           return t.module.selectFetchStatus(e)
         },
-        ht = Object(_.a)()
+        ft = Object(_.a)()
           .propsFromState(function () {
-            return { conversations: pt, fetchStatus: ft, sliceItems: dt }
+            return { fetchStatus: pt, sliceItems: dt }
           })
           .adjustStateProps(function (e) {
-            var t = e.conversations,
-              r = e.fetchStatus,
-              n = e.sliceItems
+            var t = e.fetchStatus,
+              r = e.sliceItems,
+              n = (function (e) {
+                var t
+                return (
+                  (null ===
+                    (t = e.find(function (e) {
+                      return e.groupData
+                    })) || void 0 === t
+                    ? void 0
+                    : t.groupData) || []
+                )
+              })(r),
+              a = (function (e) {
+                var t
+                return (
+                  (null ===
+                    (t = e.find(function (e) {
+                      return e.peopleData
+                    })) || void 0 === t
+                    ? void 0
+                    : t.peopleData) || []
+                )
+              })(r),
+              o = (function (e) {
+                var t, r
+                return (
+                  (null ===
+                    (t = e.find(function (e) {
+                      return e.messageData
+                    })) ||
+                  void 0 === t ||
+                  null === (r = t.messageData) ||
+                  void 0 === r
+                    ? void 0
+                    : r.conversationIds) || []
+                )
+              })(r)
             return {
-              fetchStatus: r,
-              groupConversationIds: t
-                .filter(function (e) {
-                  return (null == e ? void 0 : e.data) && e.data.type === Ye.a.GROUP
-                })
-                .map(function (e) {
-                  var t
-                  return null == e || null === (t = e.data) || void 0 === t ? void 0 : t.conversation_id
-                }),
-              oneToOneConversationIds: (function (e) {
-                return e
-                  .filter(function (e) {
-                    return (null == e ? void 0 : e.data) && e.data.type === Ye.a.ONE_TO_ONE
-                  })
-                  .map(function (e) {
-                    var t
-                    return null == e || null === (t = e.data) || void 0 === t ? void 0 : t.conversation_id
-                  })
-              })(t),
-              sliceItems: n,
+              entryIds: (function (e) {
+                var t, r
+                return (
+                  (null ===
+                    (t = e.find(function (e) {
+                      return e.messageData
+                    })) ||
+                  void 0 === t ||
+                  null === (r = t.messageData) ||
+                  void 0 === r
+                    ? void 0
+                    : r.entryIds) || []
+                )
+              })(r),
+              fetchStatus: t,
+              groupConversationIds: n,
+              messageConversationIds: o,
+              peopleSearchConversationIds: a,
+              sliceItems: r,
             }
           })
           .propsFromActions(function (e) {
@@ -3086,9 +3116,9 @@
               fetchSearchIfNeeded: t.fetchIfNeeded,
             }
           }),
-        bt = x.a.b08821f3,
-        mt = x.a.e047b8fa,
-        yt = qe.a.create(function (e) {
+        ht = x.a.b08821f3,
+        bt = x.a.e047b8fa,
+        mt = qe.a.create(function (e) {
           return {
             root: {
               backgroundColor: e.colors.cellBackground,
@@ -3112,7 +3142,7 @@
             labelHeader: { borderBottomStyle: 'none', paddingVertical: e.spaces.space12 },
           }
         }),
-        vt = function (e) {
+        yt = function (e) {
           var t = Object(Me.b)(),
             r = e.clearRecentSearches,
             n = e.headerText,
@@ -3126,31 +3156,31 @@
             [t],
           )
           var i,
-            l = [yt.root, o && yt.labelHeader]
+            l = [mt.root, o && mt.labelHeader]
           return y.createElement(
             ke.a,
             { style: l },
             y.createElement(
               ke.a,
-              { style: yt.iconContainer },
-              (i = a) ? y.createElement(i, { style: yt.icon }) : null,
+              { style: mt.iconContainer },
+              (i = a) ? y.createElement(i, { style: mt.icon }) : null,
               y.createElement(I.b, { size: 'headline1', weight: 'heavy' }, n),
             ),
             c
               ? y.createElement(
                   Ue.a,
-                  { accessibilityLabel: bt, onPress: r, style: yt.backButton, type: 'onMediaWhiteFilled' },
-                  mt,
+                  { accessibilityLabel: ht, onPress: r, style: mt.backButton, type: 'onMediaWhiteFilled' },
+                  bt,
                 )
               : null,
           )
         },
-        gt = r('MDbM'),
-        Et = r('v//M'),
-        _t = r('0yYu'),
-        Ot = r('lBmi'),
-        St = r('6ZHn')
-      function It(e) {
+        vt = r('MDbM'),
+        gt = r('v//M'),
+        Et = r('0yYu'),
+        _t = r('lBmi'),
+        Ot = r('6ZHn')
+      function St(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -3171,12 +3201,12 @@
           return p()(this, r)
         }
       }
-      var wt = x.a.g2fd3205,
-        Ct = x.a.c94ac69d,
-        xt = x.a.ffd9cfe6,
-        Rt = (function (e) {
+      var It = x.a.g2fd3205,
+        wt = x.a.c94ac69d,
+        Ct = x.a.ffd9cfe6,
+        xt = (function (e) {
           u()(r, e)
-          var t = It(r)
+          var t = St(r)
           function r() {
             var e
             a()(this, r)
@@ -3196,21 +3226,20 @@
               m()(l()(e), '_renderSearchResults', function () {
                 var t = e.props,
                   r = t.groupConversationIds,
-                  n = t.oneToOneConversationIds,
+                  n = t.peopleSearchConversationIds,
                   a = t.renderEmptyState,
-                  o = t.sliceItems,
-                  c = n.length && r.length,
-                  i = e._groupBucketSize < r.length,
-                  l = e._peopleBucketSize < n.length
-                return o.length
+                  o = n.length && r.length,
+                  c = e._groupBucketSize < r.length,
+                  i = e._peopleBucketSize < n.length
+                return (null == r ? void 0 : r.length) || n.length
                   ? y.createElement(
                       y.Fragment,
                       null,
                       n.length ? e._renderPeopleSection() : null,
-                      c && !l ? y.createElement(_t.a, null) : null,
-                      l ? e._renderDMSearchFooter('People') : null,
+                      o && !i ? y.createElement(Et.a, null) : null,
+                      i ? e._renderDMSearchFooter('People') : null,
                       r.length ? e._renderGroupsSection() : null,
-                      i ? e._renderDMSearchFooter('Groups') : null,
+                      c ? e._renderDMSearchFooter('Groups') : null,
                     )
                   : a()
               }),
@@ -3224,42 +3253,40 @@
                 return y.createElement(
                   ke.a,
                   { style: Pt.header },
-                  y.createElement(I.b, { link: { pathname: r.pathname, state: { tab: t } } }, xt),
+                  y.createElement(I.b, { link: { pathname: r.pathname, state: { tab: t } } }, Ct),
                 )
               }),
               m()(l()(e), '_renderDMHeader', function (e) {
                 var t = e.headerText,
                   r = e.icon
-                return y.createElement(vt, { headerText: t, icon: r })
+                return y.createElement(yt, { headerText: t, icon: r })
               }),
               m()(l()(e), '_renderGroupsSection', function () {
                 var t = e.props,
                   r = t.groupConversationIds,
-                  n = t.renderInboxItem,
-                  a = t.sliceItems
+                  n = t.renderInboxItem
                 return y.createElement(
                   y.Fragment,
                   null,
-                  e._renderDMHeader({ icon: Ot.a, headerText: Ct }),
+                  e._renderDMHeader({ icon: _t.a, headerText: wt }),
                   r
                     .map(function (e) {
-                      return e ? n(a)(e) : null
+                      return e ? n(r)(e) : null
                     })
                     .slice(0, e._groupBucketSize),
                 )
               }),
               m()(l()(e), '_renderPeopleSection', function () {
                 var t = e.props,
-                  r = t.oneToOneConversationIds,
-                  n = t.renderInboxItem,
-                  a = t.sliceItems
+                  r = t.peopleSearchConversationIds,
+                  n = t.renderInboxItem
                 return y.createElement(
                   y.Fragment,
                   null,
-                  e._renderDMHeader({ icon: St.a, headerText: wt }),
+                  e._renderDMHeader({ icon: Ot.a, headerText: It }),
                   r
                     .map(function (e) {
-                      return e ? n(a)(e) : null
+                      return e ? n(r)(e) : null
                     })
                     .slice(0, e._peopleBucketSize),
                 )
@@ -3275,7 +3302,7 @@
                   var t = this.props,
                     r = t.fetchStatus,
                     n = t.module
-                  e.module !== n && r !== gt.a.FAILED && this._handleFetch()
+                  e.module !== n && r !== vt.a.FAILED && this._handleFetch()
                 },
               },
               {
@@ -3290,7 +3317,7 @@
                   var e = this.props,
                     t = e.fetchStatus,
                     r = e.loadingLabel
-                  return y.createElement(Et.a, {
+                  return y.createElement(gt.a, {
                     accessibilityLabel: r,
                     fetchStatus: t,
                     onRequestRetry: this._handleFetch,
@@ -3302,7 +3329,7 @@
             r
           )
         })(y.Component)
-      m()(Rt, 'contextType', g.a)
+      m()(xt, 'contextType', g.a)
       var Pt = qe.a.create(function (e) {
           return {
             header: {
@@ -3321,22 +3348,10 @@
             },
           }
         }),
-        jt = ht(Rt),
-        Dt = r('wAC9'),
-        Tt = (r('1IsZ'), r('IAdD'), r('xPna')),
-        kt = function (e) {
-          var t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1],
-            r = {}
-          return (
-            e &&
-              e.conversations &&
-              Object.values(e.conversations).forEach(function (e) {
-                e && e.users && Object.assign(r, e.users), t && (e.isSearchResult = !0)
-              }),
-            Object(Tt.a)({ conversations: null == e ? void 0 : e.conversations, users: r })
-          )
-        }
-      function Mt(e, t) {
+        Rt = ft(xt),
+        jt = r('wAC9'),
+        Dt = (r('1IsZ'), r('IAdD'), r('xPna'))
+      function Tt(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -3348,41 +3363,83 @@
         }
         return r
       }
-      function Ht(e) {
+      function kt(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Mt(Object(r), !0).forEach(function (t) {
+            ? Tt(Object(r), !0).forEach(function (t) {
                 m()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : Mt(Object(r)).forEach(function (t) {
+            : Tt(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var Lt = function (e) {
-          return Object(Dt.a)({
+      var Mt = function (e) {
+        var t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1],
+          r = {},
+          n = {}
+        return (
+          null != e &&
+            e.conversations &&
+            (Object.values(e.conversations).forEach(function (e) {
+              e && e.users && Object.assign(r, e.users), t && (e.isSearchResult = !0)
+            }),
+            (n = { conversations: null == e ? void 0 : e.conversations, users: r })),
+          null != e && e.entries && (n = kt(kt({}, n), {}, { entries: null == e ? void 0 : e.entries })),
+          Object(Dt.a)(n)
+        )
+      }
+      function Ht(e, t) {
+        var r = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var n = Object.getOwnPropertySymbols(e)
+          t &&
+            (n = n.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            r.push.apply(r, n)
+        }
+        return r
+      }
+      function Lt(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var r = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? Ht(Object(r), !0).forEach(function (t) {
+                m()(e, t, r[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
+            : Ht(Object(r)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+              })
+        }
+        return e
+      }
+      var At = function (e) {
+          return Object(jt.a)({
             contextSuffix: 'DM_SEARCH_SLICE',
             getFetchApiEndpoint: function (e) {
               return e.DirectMessagesGraphQL.fetchDMAllSearch
             },
             sliceKey: ''.concat(Qe.e, '-').concat(e),
             getEndpointParams: function (t) {
-              return Ht(Ht({}, t), {}, { query: e })
+              return Lt(Lt({}, t), {}, { query: e })
             },
-            mapEntitiesToActions: kt,
+            mapEntitiesToActions: Mt,
           })
         },
-        At = function (e, t) {
+        Bt = function (e, t) {
           return t.query
         },
-        Bt = Object(_.a)().propsFromState(function () {
+        Nt = Object(_.a)().propsFromState(function () {
           return {
-            sliceModule: Object(U.createSelector)(At, function (e) {
-              return e ? Lt(e) : void 0
+            sliceModule: Object(U.createSelector)(Bt, function (e) {
+              return e ? At(e) : void 0
             }),
           }
         })(function (e) {
@@ -3393,7 +3450,7 @@
             o = e.renderInboxItem,
             c = e.sliceModule
           return c
-            ? y.createElement(jt, {
+            ? y.createElement(Rt, {
                 loadingLabel: t,
                 location: r,
                 module: c,
@@ -3403,26 +3460,26 @@
               })
             : a()
         }),
-        Nt = T.selectRecentSearches,
-        Ft = function (e, t) {
+        Ft = T.selectRecentSearches,
+        Ut = function (e, t) {
           return t.query ? T.selectSearchConversations(e, t.query) : []
         },
-        Ut = function (e, t) {
+        Vt = function (e, t) {
           return t.query ? T.selectSearchFetchStatus(e, t.query) : k.a.LOADED
         },
-        Vt = function (e, t) {
+        Gt = function (e, t) {
           return t.conversationIds || []
         },
-        Gt = function (e, t) {
+        Wt = function (e, t) {
           return null != e && e.length
             ? t.filter(function (t) {
                 return e.indexOf(t) > -1
               })
             : e
         },
-        Wt = Object(_.a)()
+        qt = Object(_.a)()
           .propsFromState(function () {
-            return { conversationIds: Vt, recentSearches: Nt, searchFetchStatus: Ut, searchConversationIds: Ft }
+            return { conversationIds: Gt, recentSearches: Ft, searchFetchStatus: Vt, searchConversationIds: Ut }
           })
           .adjustStateProps(function (e) {
             var t = e.conversationIds,
@@ -3432,7 +3489,7 @@
               conversationIds: t,
               recentSearches: r,
               searchFetchStatus: e.searchFetchStatus,
-              searchConversationIds: Gt(n, t),
+              searchConversationIds: Wt(n, t),
             }
           })
           .propsFromActions(function () {
@@ -3446,12 +3503,12 @@
               clearRecentSearches: T.clearRecentSearches,
             }
           }),
-        qt = r('VY6S'),
-        zt = r('s14A'),
-        Qt = r('j7Bv'),
-        Yt = r('VwDm'),
-        Kt = r('hOZg')
-      function Xt(e) {
+        zt = r('VY6S'),
+        Qt = r('s14A'),
+        Yt = r('j7Bv'),
+        Kt = r('VwDm'),
+        Xt = r('hOZg')
+      function $t(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -3472,10 +3529,10 @@
           return p()(this, r)
         }
       }
-      var $t = x.a.dbd5d40f,
-        Zt = (function (e) {
+      var Zt = x.a.dbd5d40f,
+        Jt = (function (e) {
           u()(r, e)
-          var t = Xt(r)
+          var t = $t(r)
           function r() {
             return a()(this, r), t.apply(this, arguments)
           }
@@ -3488,8 +3545,8 @@
                     t = e.clearRecentSearch,
                     r = e.handleRecentSearchClick,
                     n = e.recentSearch,
-                    a = y.createElement(Qt.a, { Icon: Yt.a, color: 'neutral', size: 'xLarge', style: Jt.searchIcon }),
-                    o = [Jt.listItemView, Jt.bottomBorder]
+                    a = y.createElement(Yt.a, { Icon: Kt.a, color: 'neutral', size: 'xLarge', style: er.searchIcon }),
+                    o = [er.listItemView, er.bottomBorder]
                   return y.createElement(
                     Ge.a,
                     { onPress: r, style: o },
@@ -3498,15 +3555,15 @@
                       null,
                       y.createElement(
                         We.a,
-                        { avatarCell: a, avatarSize: 'xLarge', cellStyle: Jt.avatarColumn },
+                        { avatarCell: a, avatarSize: 'xLarge', cellStyle: er.avatarColumn },
                         y.createElement(
                           ke.a,
-                          { style: Jt.container },
+                          { style: er.container },
                           y.createElement(I.b, { numberOfLines: 1 }, n),
                           y.createElement(Ue.a, {
-                            accessibilityLabel: $t,
+                            accessibilityLabel: Zt,
                             borderColor: 'transparent',
-                            icon: y.createElement(Kt.a, null),
+                            icon: y.createElement(Xt.a, null),
                             onPress: t,
                             type: 'brandText',
                           }),
@@ -3520,7 +3577,7 @@
             r
           )
         })(y.PureComponent),
-        Jt = qe.a.create(function (e) {
+        er = qe.a.create(function (e) {
           return {
             container: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
             searchIcon: { marginRight: e.spaces.space12, padding: e.spaces.space4 },
@@ -3538,8 +3595,8 @@
             },
           }
         }),
-        er = Zt
-      function tr(e, t) {
+        tr = Jt
+      function rr(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -3551,35 +3608,35 @@
         }
         return r
       }
-      function rr(e) {
+      function nr(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? tr(Object(r), !0).forEach(function (t) {
+            ? rr(Object(r), !0).forEach(function (t) {
                 m()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : tr(Object(r)).forEach(function (t) {
+            : rr(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var nr = function (e) {
-        return Object(Dt.a)({
+      var ar = function (e) {
+        return Object(jt.a)({
           contextSuffix: 'DM_GROUP_SEARCH_SLICE',
           getFetchApiEndpoint: function (e) {
             return e.DirectMessagesGraphQL.fetchDMGroupSearch
           },
           sliceKey: ''.concat(Qe.e, '-groups-').concat(e),
           getEndpointParams: function (t) {
-            return rr(rr({}, t), {}, { query: e })
+            return nr(nr({}, t), {}, { query: e })
           },
-          mapEntitiesToActions: kt,
+          mapEntitiesToActions: Mt,
         })
       }
-      function ar(e, t) {
+      function or(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -3591,57 +3648,57 @@
         }
         return r
       }
-      function or(e) {
+      function cr(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? ar(Object(r), !0).forEach(function (t) {
+            ? or(Object(r), !0).forEach(function (t) {
                 m()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : ar(Object(r)).forEach(function (t) {
+            : or(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var cr = function (e) {
-          return Object(Dt.a)({
+      var ir = function (e) {
+          return Object(jt.a)({
             contextSuffix: 'DM_PEOPLE_SEARCH_SLICE',
             getFetchApiEndpoint: function (e) {
               return e.DirectMessagesGraphQL.fetchDMPeopleSearch
             },
             sliceKey: ''.concat(Qe.e, '-people-').concat(e),
             getEndpointParams: function (t) {
-              return or(or({}, t), {}, { query: e })
+              return cr(cr({}, t), {}, { query: e })
             },
-            mapEntitiesToActions: kt,
+            mapEntitiesToActions: Mt,
           })
         },
-        ir = function (e, t) {
+        lr = function (e, t) {
           return t.query
         },
-        lr = function (e, t) {
+        sr = function (e, t) {
           return t.tabType
         },
-        sr = Object(_.a)().propsFromState(function () {
+        ur = Object(_.a)().propsFromState(function () {
           return {
-            sliceModule: Object(U.createSelector)(lr, ir, function (e, t) {
+            sliceModule: Object(U.createSelector)(sr, lr, function (e, t) {
               var r = t && e === Qe.f.PEOPLE
-              return t && e === Qe.f.GROUPS ? nr(t) : r ? cr(t) : void 0
+              return t && e === Qe.f.GROUPS ? ar(t) : r ? ir(t) : void 0
             }),
           }
         }),
-        ur = r('FS1z'),
-        dr = sr(function (e) {
+        dr = r('FS1z'),
+        pr = ur(function (e) {
           var t = e.footer,
             r = e.onScrollEnd,
             n = e.renderEmptyState,
             a = e.renderInboxItem,
             o = e.sliceModule
           return o
-            ? y.createElement(ur.a, {
+            ? y.createElement(dr.a, {
                 footer: t,
                 module: o,
                 noItemsRenderer: n,
@@ -3651,8 +3708,8 @@
               })
             : n()
         }),
-        pr = r('VPAj')
-      function fr(e, t) {
+        fr = r('VPAj')
+      function hr(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -3664,36 +3721,36 @@
         }
         return r
       }
-      function hr(e) {
+      function br(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? fr(Object(r), !0).forEach(function (t) {
+            ? hr(Object(r), !0).forEach(function (t) {
                 m()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : fr(Object(r)).forEach(function (t) {
+            : hr(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var br = hr(
-          hr({}, r('7n04').a),
+      var mr = br(
+          br({}, r('7n04').a),
           {},
-          { initialScrollHeadroom: Object(pr.a)(0), scrollHeadroom: Object(pr.a)(0), pinToNewestWhenAtNewest: !0 },
+          { initialScrollHeadroom: Object(fr.a)(0), scrollHeadroom: Object(fr.a)(0), pinToNewestWhenAtNewest: !0 },
         ),
-        mr = r('TEoO'),
-        yr = r('IG4P'),
-        vr = r('RJrc'),
-        gr = r('TnY3'),
-        Er = r('FIs5'),
-        _r = r('cm6r'),
-        Or = r('6OUF'),
-        Sr = r('k/OQ'),
-        Ir = r('95Se')
-      function wr(e, t) {
+        yr = r('TEoO'),
+        vr = r('IG4P'),
+        gr = r('RJrc'),
+        Er = r('TnY3'),
+        _r = r('FIs5'),
+        Or = r('cm6r'),
+        Sr = r('6OUF'),
+        Ir = r('k/OQ'),
+        wr = r('95Se')
+      function Cr(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -3704,23 +3761,23 @@
             r.push.apply(r, n)
         }
         return r
-      }
-      function Cr(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? wr(Object(r), !0).forEach(function (t) {
-                m()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : wr(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
-        }
-        return e
       }
       function xr(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var r = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? Cr(Object(r), !0).forEach(function (t) {
+                m()(e, t, r[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
+            : Cr(Object(r)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+              })
+        }
+        return e
+      }
+      function Pr(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -3742,25 +3799,25 @@
         }
       }
       var Rr = 'dmSearchInbox',
-        Pr = function (e) {
+        jr = function (e) {
           return e
         },
-        jr = x.a.b08821f3,
-        Dr = x.a.a66ac766,
-        Tr = x.a.fe61929d,
-        kr = x.a.b9dae4f4,
-        Mr = x.a.e7fb2027,
-        Hr = x.a.b92a21d8,
-        Lr = x.a.jdc67c42,
-        Ar = x.a.f08940ab,
-        Br = x.a.gaae1fd5,
-        Nr = x.a.f8321d82,
-        Fr = x.a.g2fd3205,
-        Ur = x.a.c94ac69d,
-        Vr = x.a.fb3c8e74,
-        Gr = (function (e) {
+        Dr = x.a.b08821f3,
+        Tr = x.a.a66ac766,
+        kr = x.a.fe61929d,
+        Mr = x.a.b9dae4f4,
+        Hr = x.a.e7fb2027,
+        Lr = x.a.b92a21d8,
+        Ar = x.a.jdc67c42,
+        Br = x.a.f08940ab,
+        Nr = x.a.gaae1fd5,
+        Fr = x.a.f8321d82,
+        Ur = x.a.g2fd3205,
+        Vr = x.a.c94ac69d,
+        Gr = x.a.fb3c8e74,
+        Wr = (function (e) {
           u()(r, e)
-          var t = xr(r)
+          var t = Pr(r)
           function r() {
             var e
             a()(this, r)
@@ -3783,17 +3840,17 @@
                   a = e.state.debouncedQuery
                 return a && n
                   ? (r.scribe({ component: 'search', element: 'results', action: 'empty' }),
-                    y.createElement(Er.a, {
+                    y.createElement(_r.a, {
                       buttonLink: '/messages/compose',
-                      buttonText: Ar,
-                      header: Hr({ query: a }),
-                      message: Lr,
+                      buttonText: Br,
+                      header: Lr({ query: a }),
+                      message: Ar,
                       onButtonPress: e._handleComposeButtonPress,
                     }))
                   : y.createElement(
                       ke.a,
-                      { style: Wr.emptyState },
-                      y.createElement(I.b, { align: 'center', color: 'gray700' }, Br),
+                      { style: qr.emptyState },
+                      y.createElement(I.b, { align: 'center', color: 'gray700' }, Nr),
                     )
               }),
               m()(l()(e), '_renderRecentSearches', function () {
@@ -3805,14 +3862,14 @@
                   ? y.createElement(
                       y.Fragment,
                       null,
-                      y.createElement(vt, {
+                      y.createElement(yt, {
                         analytics: r,
                         clearRecentSearches: e._clearRecentSearches,
-                        headerText: Vr,
+                        headerText: Gr,
                         withClearButton: !0,
                       }),
                       a.map(function (t) {
-                        return y.createElement(er, {
+                        return y.createElement(tr, {
                           clearRecentSearch: function (r) {
                             return e._handleClearRecentSearch(r, t)
                           },
@@ -3832,8 +3889,8 @@
                   n = t.renderInboxItem,
                   a = e.state.debouncedQuery
                 return a
-                  ? y.createElement(Bt, {
-                      loadingLabel: Dr,
+                  ? y.createElement(Nt, {
+                      loadingLabel: Tr,
                       location: r,
                       query: a,
                       renderEmptyState: e._renderEmptyDMSearchInbox,
@@ -3844,7 +3901,7 @@
               m()(l()(e), '_renderConversationsTab', function (t) {
                 var r = e.props.renderInboxItem,
                   n = e.state.debouncedQuery
-                return y.createElement(dr, {
+                return y.createElement(pr, {
                   footer: e._renderFooter(),
                   onScrollEnd: e._handleScrollEnd,
                   query: n,
@@ -3856,9 +3913,9 @@
               m()(l()(e), '_renderTabContent', function () {
                 var t = e.props.location,
                   r = ((null == t ? void 0 : t.state) || {}).tab
-                return r === Fr
+                return r === Ur
                   ? e._renderConversationsTab(!1)
-                  : r === Ur
+                  : r === Vr
                   ? e._renderConversationsTab(!0)
                   : e._renderAllDMSearchResultsTab()
               }),
@@ -3869,19 +3926,19 @@
                   a = t.searchConversationIds,
                   o = e.state.isRefreshing
                 return y.createElement(
-                  zt.a,
+                  Qt.a,
                   null,
                   y.createElement(
-                    yr.a,
+                    vr.a,
                     { isRefreshing: o, onRefresh: e._handlePullToRefresh },
-                    y.createElement(mr.a, {
+                    y.createElement(yr.a, {
                       accessibilityRole: 'tablist',
                       accessibilityTitle: r,
-                      anchoring: br,
+                      anchoring: mr,
                       assumedItemHeight: 100,
                       cacheKey: Rr,
                       footer: e._renderFooter(),
-                      identityFunction: Pr,
+                      identityFunction: jr,
                       items: a,
                       noItemsRenderer: e._renderRecentSearches,
                       onNearEnd: e._handleNearEnd,
@@ -3894,13 +3951,13 @@
               }),
               m()(l()(e), '_renderFooter', function () {
                 return e.state.isLoadingMore
-                  ? y.createElement(vr.a, null)
+                  ? y.createElement(gr.a, null)
                   : y.createElement(
                       ke.a,
-                      { style: Wr.footerContainer },
-                      y.createElement(I.b, { align: 'center', size: 'body', weight: 'bold' }, Mr),
+                      { style: qr.footerContainer },
+                      y.createElement(I.b, { align: 'center', size: 'body', weight: 'bold' }, Hr),
                       y.createElement(
-                        _r.a,
+                        Or.a,
                         { interactiveStyles: null },
                         y.createElement(
                           I.b,
@@ -3911,7 +3968,7 @@
                             size: 'subtext2',
                             withInteractiveStyling: !0,
                           },
-                          kr,
+                          Mr,
                         ),
                       ),
                     )
@@ -3975,7 +4032,7 @@
                     !e._modularSearchEnabled &&
                     o({ query: t, preserveResults: !1, fetchNextPage: !1 }).catch(n())
               }),
-              m()(l()(e), '_handleSearchChangeDebounced', Object(qt.a)(e._handleSearchChangeInner, 200)),
+              m()(l()(e), '_handleSearchChangeDebounced', Object(zt.a)(e._handleSearchChangeInner, 200)),
               m()(l()(e), '_handleSearchChange', function (t) {
                 var r = t.currentTarget.value,
                   n = e.props.onQueryChange
@@ -4062,16 +4119,16 @@
                         this.context.featureSwitches.isTrue('dm_vdl_inbox_p0_enabled')) ||
                       (this._modularSearchEnabled && r)
                     ),
-                    o = [Wr.searchInput, a ? Wr.searchInputBorder : void 0],
+                    o = [qr.searchInput, a ? qr.searchInputBorder : void 0],
                     c = ((null == t ? void 0 : t.state) || {}).tab,
-                    i = [Nr, Fr, Ur].map(function (e) {
+                    i = [Fr, Ur, Vr].map(function (e) {
                       return {
                         key: e,
                         label: e,
                         isActive: function () {
-                          return c === e || (!c && e === Nr)
+                          return c === e || (!c && e === Fr)
                         },
-                        to: Cr(Cr({}, t), {}, { state: Cr(Cr({}, t.state), {}, { tab: e }) }),
+                        to: xr(xr({}, t), {}, { state: xr(xr({}, t.state), {}, { tab: e }) }),
                       }
                     })
                   return y.createElement(
@@ -4081,28 +4138,28 @@
                       ke.a,
                       { style: o },
                       y.createElement(Ue.a, {
-                        accessibilityLabel: jr,
-                        icon: y.createElement(Ir.a, null),
+                        accessibilityLabel: Dr,
+                        icon: y.createElement(wr.a, null),
                         onPress: this._handleHideRecentSearches,
                         pullLeft: !0,
                         type: 'primaryText',
                       }),
-                      y.createElement(Or.a, {
-                        Icon: Yt.a,
+                      y.createElement(Sr.a, {
+                        Icon: Kt.a,
                         autoComplete: 'off',
                         onChange: this._handleSearchChange,
                         onClear: this._handleSearchClear,
                         onSubmitEditing: this._handleAddRecentSearch,
-                        placeholder: Tr,
+                        placeholder: kr,
                         ref: this._setInputRef,
                         value: r,
                         withClearButton: !0,
                       }),
                     ),
-                    this._modularSearchEnabled && (r || c === Fr || c === Ur)
-                      ? y.createElement(y.Fragment, null, y.createElement(Sr.a, { links: i }), this._renderTabContent())
-                      : y.createElement(Et.a, {
-                          accessibilityLabel: Dr,
+                    this._modularSearchEnabled && (r || c === Ur || c === Vr)
+                      ? y.createElement(y.Fragment, null, y.createElement(Ir.a, { links: i }), this._renderTabContent())
+                      : y.createElement(gt.a, {
+                          accessibilityLabel: Tr,
                           fetchStatus: n,
                           onRequestRetry: this._handleRefetchSearch,
                           render: this._renderSearchResults,
@@ -4114,8 +4171,8 @@
             r
           )
         })(y.Component)
-      m()(Gr, 'contextType', g.a), m()(Gr, 'defaultProps', { recentSearches: [], searchConversationIds: [], query: '' })
-      var Wr = qe.a.create(function (e) {
+      m()(Wr, 'contextType', g.a), m()(Wr, 'defaultProps', { recentSearches: [], searchConversationIds: [], query: '' })
+      var qr = qe.a.create(function (e) {
           return {
             emptyState: { marginTop: e.spaces.space32 },
             searchInput: {
@@ -4133,12 +4190,12 @@
             footerContainer: { marginVertical: e.spaces.space32 },
           }
         }),
-        qr = Object(gr.a)(Wt(Gr)),
-        zr = r('dwig'),
-        Qr = r('QB0K'),
-        Yr = r('Avzu'),
-        Kr = r('FRNI')
-      function Xr(e) {
+        zr = Object(Er.a)(qt(Wr)),
+        Qr = r('dwig'),
+        Yr = r('QB0K'),
+        Kr = r('Avzu'),
+        Xr = r('FRNI')
+      function $r(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -4159,11 +4216,11 @@
           return p()(this, r)
         }
       }
-      var $r = x.a.h845f281,
-        Zr = x.a.f325afc3,
-        Jr = (function (e) {
+      var Zr = x.a.h845f281,
+        Jr = x.a.f325afc3,
+        en = (function (e) {
           u()(r, e)
-          var t = Xr(r)
+          var t = $r(r)
           function r() {
             return a()(this, r), t.apply(this, arguments)
           }
@@ -4172,14 +4229,14 @@
               {
                 key: 'render',
                 value: function () {
-                  return y.createElement(Qr.a, {
-                    accessibilityLabel: $r,
+                  return y.createElement(Yr.a, {
+                    accessibilityLabel: Zr,
                     href: '/messages/compose',
-                    icon: y.createElement(Yr.a, null),
-                    label: $r,
+                    icon: y.createElement(Kr.a, null),
+                    label: Zr,
                     scribeComponent: 'floating_dm_button',
-                    shortLabel: Zr,
-                    testID: Kr.a.message,
+                    shortLabel: Jr,
+                    testID: Xr.a.message,
                   })
                 },
               },
@@ -4187,16 +4244,16 @@
             r
           )
         })(y.PureComponent),
-        en = r('tI3i'),
-        tn = r.n(en),
-        rn = r('883S'),
-        nn = r('yoO3'),
-        an = r('GSsg'),
-        on = r('2g+p'),
-        cn = r('mw9i'),
-        ln = r('BcsE'),
-        sn = r('+d3d')
-      function un(e) {
+        tn = r('tI3i'),
+        rn = r.n(tn),
+        nn = r('883S'),
+        an = r('yoO3'),
+        on = r('GSsg'),
+        cn = r('2g+p'),
+        ln = r('mw9i'),
+        sn = r('BcsE'),
+        un = r('+d3d')
+      function dn(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -4217,14 +4274,14 @@
           return p()(this, r)
         }
       }
-      var dn = function (e) {
+      var pn = function (e) {
           return e
         },
-        pn = x.a.a66ac766,
-        fn = x.a.fe61929d,
-        hn = (function (e) {
+        fn = x.a.a66ac766,
+        hn = x.a.fe61929d,
+        bn = (function (e) {
           u()(r, e)
-          var t = un(r)
+          var t = dn(r)
           function r(e, n) {
             var o
             return (
@@ -4245,7 +4302,7 @@
                   r = e.analytics,
                   n = e.conversationIds,
                   a = o.state.searchQuery
-                return y.createElement(qr, {
+                return y.createElement(zr, {
                   accessibilityTitle: t,
                   analytics: r,
                   conversationIds: n,
@@ -4269,7 +4326,7 @@
                   d =
                     o.context.featureSwitches.isTrue('dm_vdl_enabled') &&
                     o.context.featureSwitches.isTrue('dm_vdl_inbox_p0_enabled'),
-                  p = [bn.searchInput, d ? void 0 : bn.searchInputBorder],
+                  p = [mn.searchInput, d ? void 0 : mn.searchInputBorder],
                   f = y.createElement(
                     y.Fragment,
                     null,
@@ -4277,12 +4334,12 @@
                       ? y.createElement(
                           ke.a,
                           { onClick: o._handleSearchClick, style: p },
-                          y.createElement(Or.a, {
-                            Icon: Yt.a,
+                          y.createElement(Sr.a, {
+                            Icon: Kt.a,
                             autoComplete: 'off',
                             isCompact: !0,
                             onChange: o._handleSearchChange,
-                            placeholder: fn,
+                            placeholder: hn,
                             withClearButton: !0,
                           }),
                         )
@@ -4290,18 +4347,18 @@
                     l ? l() : null,
                   )
                 return y.createElement(
-                  yr.a,
+                  vr.a,
                   { isRefreshing: c, onRefresh: o._handlePullToRefresh },
                   s && r
-                    ? y.createElement(mr.a, {
+                    ? y.createElement(yr.a, {
                         accessibilityRole: 'tablist',
                         accessibilityTitle: t,
-                        anchoring: br,
+                        anchoring: mr,
                         assumedItemHeight: 100,
                         cacheKey: s,
                         footer: n,
                         header: f,
-                        identityFunction: dn,
+                        identityFunction: pn,
                         items: r,
                         noItemsRenderer: i,
                         onNearEnd: o._handleNearEnd,
@@ -4335,9 +4392,9 @@
                     c = o.state.searchQuery,
                     i = { pathname: '/messages/'.concat(t), state: null == a ? void 0 : a.state },
                     l = t && null != e && e.length ? e.indexOf(t) : null,
-                    s = Object(ln.a)(l) ? l + 1 : 0
+                    s = Object(sn.a)(l) ? l + 1 : 0
                   return (
-                    tn()(!!n, 'loggedInUserId must be defined'),
+                    rn()(!!n, 'loggedInUserId must be defined'),
                     r && r(!0),
                     y.createElement(v.a, { exact: !1, path: i.pathname }, function (e) {
                       return y.createElement(ut, {
@@ -4400,14 +4457,14 @@
                 ;(0, e.fetchInbox)().then(o._updateLastSeenEventId, t())
               }),
               m()(l()(o), '_updateLastSeenEventIdIfActive', function () {
-                if ('background' !== on.a.currentState) return o._updateLastSeenEventId()
+                if ('background' !== cn.a.currentState) return o._updateLastSeenEventId()
               }),
               m()(l()(o), '_updateLastSeenEventId', function () {
                 var e = o.props,
                   t = e.createLocalApiErrorHandler
                 return (0, e.updateLastSeenEventId)().catch(t())
               }),
-              (o._fab = y.createElement(Jr, null)),
+              (o._fab = y.createElement(en, null)),
               o
             )
           }
@@ -4422,13 +4479,13 @@
                     n = t.fetchInboxHistory,
                     a = t.fetchUpdates
                   return (
-                    (this._updatePolling = new an.a(
+                    (this._updatePolling = new on.a(
                       function () {
-                        a().then(e._updateLastSeenEventIdIfActive, r(rn.a))
+                        a().then(e._updateLastSeenEventIdIfActive, r(nn.a))
                       },
                       { interval: 8e3 },
                     )),
-                    (this._handleHistoryRequest = Object(sn.a)(function () {
+                    (this._handleHistoryRequest = Object(un.a)(function () {
                       n.apply(void 0, arguments).catch(r())
                     }, 1e3)),
                     this._handleFetchInitial()
@@ -4445,14 +4502,14 @@
                 key: 'render',
                 value: function () {
                   return y.createElement(
-                    nn.a,
+                    an.a,
                     null,
                     y.createElement(D, null),
                     y.createElement(
-                      zr.a,
-                      { component: cn.a, fab: this._fab, style: bn.root },
-                      y.createElement(Et.a, {
-                        accessibilityLabel: pn,
+                      Qr.a,
+                      { component: ln.a, fab: this._fab, style: mn.root },
+                      y.createElement(gt.a, {
+                        accessibilityLabel: fn,
                         fetchStatus: this.props.fetchStatus,
                         onRequestRetry: this._handleFetchInitialWrapper,
                         render: this._render,
@@ -4465,9 +4522,9 @@
             r
           )
         })(y.Component)
-      m()(hn, 'contextType', g.a),
-        m()(hn, 'defaultProps', { conversationIds: [], inboxType: je.c.PRIMARY, isDrawer: !1, withDmSearch: !1 })
-      var bn = qe.a.create(function (e) {
+      m()(bn, 'contextType', g.a),
+        m()(bn, 'defaultProps', { conversationIds: [], inboxType: je.c.PRIMARY, isDrawer: !1, withDmSearch: !1 })
+      var mn = qe.a.create(function (e) {
         return {
           root: { backgroundColor: e.colors.cellBackground, flexGrow: 1 },
           searchInput: { backgroundColor: e.colors.cellBackground, padding: e.spaces.space12, zIndex: 1 },
@@ -4478,7 +4535,7 @@
           },
         }
       })
-      t.a = Object(gr.a)(H(hn))
+      t.a = Object(Er.a)(H(bn))
     },
   },
 ])

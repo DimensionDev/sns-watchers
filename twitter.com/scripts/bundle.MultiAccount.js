@@ -24,7 +24,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'MultiAccountScreen', function () {
-          return de
+          return fe
         })
       n('OZaJ'), n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var r = n('VrFO'),
@@ -46,45 +46,46 @@
         _ = n('hqKg'),
         v = n('zh9S'),
         w = n('5oBF'),
-        S = n('G6rE'),
-        E = n('0KEI'),
-        C = n('oEGd'),
+        S = n('qtu+'),
+        E = n('G6rE'),
+        C = n('0KEI'),
+        A = n('oEGd'),
         k = n('auX9'),
-        A = n('KkUe'),
-        L = Object(_.createSelector)(S.e.selectLoggedInUser, k.g, k.j, function (e, t, n) {
+        L = n('KkUe'),
+        B = Object(_.createSelector)(E.e.selectLoggedInUser, k.g, k.j, function (e, t, n) {
           return { loggedInUser: e, fetchStatus: t, users: n }
         }),
-        B = {
+        O = {
           fetchMultiAccountListIfNeeded: k.d,
-          createLocalApiErrorHandler: Object(E.createLocalApiErrorHandlerWithContextFactory)(
+          createLocalApiErrorHandler: Object(C.createLocalApiErrorHandlerWithContextFactory)(
             'ACCOUNT_SWITCHER_MULTI_LIST_FETCH',
           ),
-          logout: A.a,
-          logoutAll: A.b,
+          logout: L.a,
+          logoutAll: L.b,
           scribeAction: v.c,
           sendAllPreviews: w.f,
-          switchAccount: k.m,
+          switchAccount: S.a,
         },
-        O = Object(C.g)(L, B),
-        M = n('kGix'),
-        F = n('v//M'),
-        P = n('jHSc'),
-        R = n('3XMw'),
-        T = n.n(R),
+        F = Object(A.g)(B, O),
+        T = n('kGix'),
+        M = n('v//M'),
+        R = n('jHSc'),
+        I = n('3XMw'),
+        P = n.n(I),
         j = n('IMYl'),
-        I = n('0kTQ'),
-        H = 'AccountSwitcher_Add_Button',
+        H = n('0kTQ'),
+        U = 'AccountSwitcher_Add_Button',
         x = 'AccountSwitcher_Switch_Button',
         D = n('MWbm'),
-        U = n('jtO7'),
-        V = n('t62R'),
+        V = n('jtO7'),
+        N = n('t62R'),
         z = n('0yYu'),
-        N = n('IMA+'),
+        W = n('IMA+'),
         J = n('Znyr'),
         K = n('rHpw'),
         X = n('v6aA'),
         Y = n('7JQg')
-      function W(e, t) {
+      function q(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -100,18 +101,18 @@
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? W(Object(n), !0).forEach(function (t) {
+            ? q(Object(n), !0).forEach(function (t) {
                 b()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : W(Object(n)).forEach(function (t) {
+            : q(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      function q(e) {
+      function Q(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -132,23 +133,23 @@
           return f()(this, n)
         }
       }
-      var Z = T.a.b8e1d524,
-        Q = T.a.j0a8da6e,
-        $ = T.a.b6bd6ae3,
-        ee = T.a.d2b8e92b,
-        te = T.a.dc65b3e4,
-        ne = T.a.i859a9d3,
-        re = 'https://help.twitter.com/managing-your-account/managing-multiple-twitter-accounts',
-        ae = T.a.ae1bbb26,
-        oe = T.a.bade139e,
-        ie = T.a.ae33b982,
-        ce = T.a.fa07bf68,
-        ue = T.a.d86bbf0f,
-        se = T.a.h6beb5fa,
-        le = { page: 'account_switcher' },
-        de = (function (e) {
+      var Z = P.a.b8e1d524,
+        $ = P.a.j0a8da6e,
+        ee = P.a.b6bd6ae3,
+        te = P.a.d2b8e92b,
+        ne = P.a.dc65b3e4,
+        re = P.a.i859a9d3,
+        ae = 'https://help.twitter.com/managing-your-account/managing-multiple-twitter-accounts',
+        oe = P.a.ae1bbb26,
+        ie = P.a.bade139e,
+        ce = P.a.ae33b982,
+        ue = P.a.fa07bf68,
+        se = P.a.d86bbf0f,
+        le = P.a.h6beb5fa,
+        de = { page: 'account_switcher' },
+        fe = (function (e) {
           l()(n, e)
-          var t = q(n)
+          var t = Q(n)
           function n() {
             var e
             a()(this, n)
@@ -163,34 +164,34 @@
                   g.Fragment,
                   null,
                   e._renderUsers(),
-                  g.createElement(U.a, {
+                  g.createElement(V.a, {
                     align: 'left',
                     color: 'primary',
                     disabled: n,
-                    label: Q,
+                    label: $,
                     onPress: e._handleAddAccount,
-                    testID: H,
+                    testID: U,
                   }),
                   g.createElement(
                     D.a,
-                    { style: [fe.whiteBackground, fe.infoText] },
+                    { style: [me.whiteBackground, me.infoText] },
                     g.createElement(
-                      V.b,
+                      N.b,
                       { color: 'gray700' },
-                      (n ? te : ee)({ maxAccounts: t }),
+                      (n ? ne : te)({ maxAccounts: t }),
                       ' ',
-                      g.createElement(V.b, { link: re }, ne),
+                      g.createElement(N.b, { link: ae }, re),
                     ),
                   ),
                   g.createElement(z.a, null),
                   g.createElement(y.a, {
                     color: 'red500',
-                    confirmationSheetConfirmButtonLabel: ae,
+                    confirmationSheetConfirmButtonLabel: oe,
                     confirmationSheetConfirmButtonType: 'primary',
-                    confirmationSheetHeadline: ie,
-                    confirmationSheetText: ce,
+                    confirmationSheetHeadline: ce,
+                    confirmationSheetText: ue,
                     key: 'logoutAllButton',
-                    label: oe,
+                    label: ie,
                     onConfirmationSheetConfirm: e._handleLogoutAll,
                     withBottomBorder: !1,
                   }),
@@ -205,7 +206,7 @@
                   null,
                   r.map(function (t) {
                     var r = n && t.user_id === n.id_str
-                    return g.createElement(N.a, {
+                    return g.createElement(W.a, {
                       avatarUri: t.avatar_image_url,
                       badgeContext: 'account',
                       decoration: r ? e._renderCurrentUserCheckmark() : e._renderBadge(t.badgeCount),
@@ -216,7 +217,7 @@
                       name: t.name,
                       onCellClick: r ? void 0 : e._handleSwitchAccount(t.user_id, !!t.badgeCount),
                       screenName: t.screen_name,
-                      style: fe.whiteBackground,
+                      style: me.whiteBackground,
                       testID: x,
                       userId: t.user_id,
                       withLink: !1,
@@ -225,7 +226,7 @@
                 )
               }),
               b()(u()(e), '_renderCurrentUserCheckmark', function () {
-                return g.createElement(j.a, { accessibilityLabel: $, style: fe.iconCheckMark })
+                return g.createElement(j.a, { accessibilityLabel: ee, style: me.iconCheckMark })
               }),
               b()(u()(e), '_renderBadge', function (e) {
                 return e
@@ -235,8 +236,8 @@
                       g.createElement(J.a, {
                         count: e,
                         standalone: !0,
-                        truncatedCountFormatter: se,
-                        unreadCountLabel: ue,
+                        truncatedCountFormatter: le,
+                        unreadCountLabel: se,
                       }),
                     )
                   : null
@@ -249,7 +250,7 @@
               b()(u()(e), '_handleAddAccount', function () {
                 var t = e.props,
                   n = t.history
-                ;(0, t.scribeAction)(G(G({}, le), {}, { element: 'sign_in', action: 'click' })),
+                ;(0, t.scribeAction)(G(G({}, de), {}, { element: 'sign_in', action: 'click' })),
                   e.context.featureSwitches.isTrue('stateful_login_enabled')
                     ? n.push('/i/flow/login')
                     : n.push('/account/add')
@@ -261,9 +262,9 @@
                     o = r.scribeAction,
                     i = r.switchAccount
                   e.setState({ spinner: !0 }),
-                    o(G(G({}, le), {}, { element: n ? 'account_bubble_badged' : 'account_bubble', action: 'click' })),
+                    o(G(G({}, de), {}, { element: n ? 'account_bubble_badged' : 'account_bubble', action: 'click' })),
                     i({ user_id: t }).catch(function (t) {
-                      return e.setState({ spinner: !1 }), a(I.a)(t)
+                      return e.setState({ spinner: !1 }), a(H.a)(t)
                     })
                 }
               }),
@@ -274,7 +275,7 @@
                   a = t.scribeAction,
                   o = t.sendAllPreviews
                 e.setState({ spinner: !0 }),
-                  a(G(G({}, le), {}, { element: 'logout_all', action: 'click' })),
+                  a(G(G({}, de), {}, { element: 'logout_all', action: 'click' })),
                   o().finally(function () {
                     r().catch(function (t) {
                       return e.setState({ spinner: !1 }), n()(t)
@@ -300,10 +301,10 @@
                     n = e.history,
                     r = this.state.spinner
                   return g.createElement(
-                    P.b,
+                    R.b,
                     { history: n, title: Z },
-                    g.createElement(F.a, {
-                      fetchStatus: r ? M.a.LOADING : t,
+                    g.createElement(M.a, {
+                      fetchStatus: r ? T.a.LOADING : t,
                       onRequestRetry: this._handleFetch,
                       render: this._render,
                     }),
@@ -314,15 +315,15 @@
             n
           )
         })(g.Component)
-      b()(de, 'contextType', X.a)
-      var fe = K.a.create(function (e) {
+      b()(fe, 'contextType', X.a)
+      var me = K.a.create(function (e) {
         return {
           iconCheckMark: { color: e.colors.primary, fontSize: '1.2em' },
           infoText: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space16 },
           whiteBackground: { backgroundColor: e.colors.cellBackground },
         }
       })
-      t.default = Object(Y.c)(le)(O(de))
+      t.default = Object(Y.c)(de)(F(fe))
     },
     '6oVL': function (e, t, n) {
       'use strict'
@@ -349,16 +350,16 @@
         S = n('cnVF'),
         E = n('Ukpf'),
         C = n('BTou'),
-        k = n('mrHL'),
-        A = 'LoginForm_Login_Button',
+        A = n('mrHL'),
+        k = 'LoginForm_Login_Button',
         L = n('fEA7'),
         B = n.n(L),
         O = n('MWbm'),
-        M = n('Irs7'),
-        F = n('v6aA'),
-        P = n('/yvb'),
+        F = n('Irs7'),
+        T = n('v6aA'),
+        M = n('/yvb'),
         R = n('rHpw')
-      function T(e) {
+      function I(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -379,10 +380,10 @@
           return h()(this, n)
         }
       }
-      var j = w.a.e919c3bc,
-        I = (function (e) {
+      var P = w.a.e919c3bc,
+        j = (function (e) {
           f()(n, e)
-          var t = T(n)
+          var t = I(n)
           function n() {
             var e
             i()(this, n)
@@ -406,7 +407,7 @@
               y()(l()(e), '_setLoginCookie', function () {
                 var t = new Date(Date.now())
                 t.setTime(t.getTime() + 3e5),
-                  Object(k.e)(S.q, e._mobileLoginToken, {
+                  Object(A.e)(S.q, e._mobileLoginToken, {
                     featureSwitches: e.context.featureSwitches,
                     cookieOptions: { domain: void 0, expires: t },
                   })
@@ -468,13 +469,13 @@
                             O.a,
                             { style: o && H.loginButtonContainer },
                             _.createElement(
-                              P.a,
+                              M.a,
                               {
                                 disabled: c,
                                 onPress: this._handleSubmitButtonClick,
                                 size: s,
                                 style: l,
-                                testID: A,
+                                testID: k,
                                 type: d,
                               },
                               u,
@@ -499,13 +500,13 @@
             n
           )
         })(_.Component)
-      y()(I, 'contextType', F.a),
-        y()(I, 'defaultProps', {
+      y()(j, 'contextType', T.a),
+        y()(j, 'defaultProps', {
           autoSubmit: !1,
           formActionUrl: '/sessions',
           hideSubmitButton: !1,
           submitButtonDisabled: !1,
-          submitButtonLabel: j,
+          submitButtonLabel: P,
           submitButtonType: 'brandFilled',
         })
       var H = R.a.create(function (e) {
@@ -515,7 +516,7 @@
           loginButtonContainer: { flexDirection: 'column', justifyContent: 'center' },
         }
       })
-      t.a = Object(M.a)(I, { element: 'inline_login_form' })
+      t.a = Object(F.a)(j, { element: 'inline_login_form' })
     },
     EPsT: function (e, t, n) {
       'use strict'
@@ -622,7 +623,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'MultiAccountLoginScreen', function () {
-          return U
+          return D
         })
       n('OZaJ')
       var r = n('VrFO'),
@@ -656,18 +657,18 @@
           resetErrorMessages: v.e,
         },
         C = Object(_.g)(S, E),
-        k = n('jHSc'),
-        A = n('3Wr5'),
+        A = n('jHSc'),
+        k = n('3Wr5'),
         L = n('3XMw'),
         B = n.n(L),
         O = n('6oVL'),
-        M = n('5FtR'),
-        F = n('t62R'),
-        P = n('G1WX'),
+        F = n('5FtR'),
+        T = n('t62R'),
+        M = n('G1WX'),
         R = n('rHpw'),
-        T = n('v6aA'),
-        j = n('7JQg'),
-        I = n('XJCT')
+        I = n('v6aA'),
+        P = n('7JQg'),
+        j = n('XJCT')
       function H(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -689,9 +690,9 @@
           return f()(this, n)
         }
       }
-      var x = B.a.b8e1d524,
-        D = B.a.j0a8da6e,
-        U = (function (e) {
+      var U = B.a.b8e1d524,
+        x = B.a.j0a8da6e,
+        D = (function (e) {
           l()(n, e)
           var t = H(n)
           function n() {
@@ -714,12 +715,12 @@
                   a = e.state.autoSubmit,
                   o = e.context.featureSwitches.getNumberValue('responsive_web_multiple_account_limit', 5)
                 return r && r >= o
-                  ? g.createElement(M.a, { to: '/account/switch' })
+                  ? g.createElement(F.a, { to: '/account/switch' })
                   : g.createElement(
                       g.Fragment,
                       null,
                       g.createElement(
-                        F.b,
+                        T.b,
                         {
                           accessibilityRole: 'heading',
                           align: 'center',
@@ -727,9 +728,9 @@
                           style: V.heading,
                           weight: 'bold',
                         },
-                        D,
+                        x,
                       ),
-                      n ? g.createElement(F.b, { color: 'magenta500', style: V.errorMessage }, n) : null,
+                      n ? g.createElement(T.b, { color: 'magenta500', style: V.errorMessage }, n) : null,
                       g.createElement(
                         O.a,
                         {
@@ -741,12 +742,12 @@
                           submitButtonSize: 'xLarge',
                           submitButtonStyle: V.submitButton,
                         },
-                        g.createElement(I.b, {
+                        g.createElement(j.b, {
                           onChange: e._handleUsernameFieldChange,
                           onSubmitEditing: e._handleSubmitEditing,
                           value: e.state.usernameValue,
                         }),
-                        g.createElement(I.a, {
+                        g.createElement(j.a, {
                           onChange: e._handlePasswordFieldChange,
                           onSubmitEditing: e._handleSubmitEditing,
                           value: e.state.passwordValue,
@@ -814,12 +815,12 @@
                   var e = this.props,
                     t = e.fetchStatus,
                     n = e.history,
-                    r = Object(A.a)().hasMultiAccountCookie
+                    r = Object(k.a)().hasMultiAccountCookie
                   return g.createElement(
-                    k.b,
-                    { backLocation: '/account/switch', history: n, title: x },
+                    A.b,
+                    { backLocation: '/account/switch', history: n, title: U },
                     r
-                      ? g.createElement(P.a, {
+                      ? g.createElement(M.a, {
                           fetchStatus: t,
                           onRequestRetry: this._handleFetch,
                           render: this._render,
@@ -832,7 +833,7 @@
             n
           )
         })(g.Component)
-      b()(U, 'contextType', T.a)
+      b()(D, 'contextType', I.a)
       var V = R.a.create(function (e) {
         return {
           submitButton: { marginHorizontal: e.spaces.space12 },
@@ -840,7 +841,7 @@
           errorMessage: { marginHorizontal: e.spaces.space12 },
         }
       })
-      t.default = Object(j.c)({ page: 'account_switcher', section: 'login' })(C(U))
+      t.default = Object(P.c)({ page: 'account_switcher', section: 'login' })(C(D))
     },
     Ukpf: function (e, t, n) {
       'use strict'
@@ -880,7 +881,7 @@
         return y
       }),
         n.d(t, 'b', function () {
-          return A
+          return k
         })
       var r = n('97Jx'),
         a = n.n(r),
@@ -927,7 +928,7 @@
         S = l.a.d0a750f2,
         E = l.a.e2dd29b5,
         C = l.a.jb4eb245,
-        k = function (e) {
+        A = function (e) {
           var t = e.autoFocus,
             n = e.label,
             r = e.withEmailDisabled,
@@ -941,8 +942,35 @@
             c.createElement(m, a()({}, s, { autoFocus: t, label: n || d, name: f.username, type: v(l) }))
           )
         }
-      k.defaultProps = { autoFocus: !0, withUsernameDisabled: !1, withPhoneDisabled: !1, withEmailDisabled: !1 }
-      var A = k
+      A.defaultProps = { autoFocus: !0, withUsernameDisabled: !1, withPhoneDisabled: !1, withEmailDisabled: !1 }
+      var k = A
+    },
+    'qtu+': function (e, t, n) {
+      'use strict'
+      n.d(t, 'a', function () {
+        return c
+      })
+      var r = n('4+NY'),
+        a = n('oEOe'),
+        o = n('5oBF'),
+        i = {
+          REQUEST: 'rweb/multiAccount/SWITCH_REQUEST',
+          SUCCESS: 'rweb/multiAccount/SWITCH_SUCCESS',
+          FAILURE: 'rweb/multiAccount/SWITCH_FAILURE',
+        },
+        c = function (e) {
+          return function (t, n, c) {
+            var u = c.api,
+              s = Object(a.b)(t, { request: u.Auth.switch, params: e })
+            return t(Object(o.f)()).then(function () {
+              return t(Object(r.b)()).then(function () {
+                return s({ actionTypes: i, context: 'SWITCH' }).then(function () {
+                  window.location.assign('/home')
+                })
+              })
+            })
+          }
+        }
     },
   },
 ])
