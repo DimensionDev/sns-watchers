@@ -377,44 +377,45 @@
             n = e.createLocalApiErrorHandler,
             a = e.fetchNotes,
             o = e.history,
-            i = e.ownNoteData,
-            c = e.tweetId,
-            l = c ? '/i/birdwatch/'.concat(c, '/contribute_complete') : '/'
+            i = e.location,
+            c = e.ownNoteData,
+            l = e.tweetId,
+            s = l ? '/i/birdwatch/'.concat(l, '/contribute_complete') : '/'
           r.useEffect(
             function () {
-              c && a(c).catch(n())
+              l && a(l).catch(n())
             },
-            [n, a, c],
+            [n, a, l],
           )
-          var s = function (e) {
+          var u = function (e) {
               t.scribeAction('click_'.concat(e))
             },
-            u = function (e) {
+            d = function (e) {
               return r.createElement(b.a, { style: A.valueItem }, r.createElement(m.b, { color: 'gray700' }, e))
             },
-            d = {
+            y = {
               accessibilityLabel: O,
               items: [
-                { label: '', decoration: r.createElement(g.a, null), description: u(C) },
-                { label: '', decoration: r.createElement(w.a, null), description: u(j) },
-                { label: '', decoration: r.createElement(E.a, null), description: u(T) },
+                { label: '', decoration: r.createElement(g.a, null), description: d(C) },
+                { label: '', decoration: r.createElement(w.a, null), description: d(j) },
+                { label: '', decoration: r.createElement(E.a, null), description: d(T) },
               ],
             },
-            y = r.createElement(b.a, { style: A.values }, r.createElement(h.a, d))
-          return i
-            ? r.createElement(f.a, { to: l })
+            I = r.createElement(b.a, { style: A.values }, r.createElement(h.a, y))
+          return c
+            ? r.createElement(f.a, { to: s })
             : r.createElement(v.a, {
                 actionLabel: S,
                 graphicDisplayMode: 'none',
                 headline: _,
                 isFullHeightOnMobile: !0,
                 onAction: function () {
-                  s('continue'), c && o.replace('/i/birdwatch/contribute_form/'.concat(c))
+                  u('continue'), l && o.replace('/i/birdwatch/contribute_form/'.concat(l))
                 },
                 onClose: function () {
-                  s('close'), c && o.goBackThroughModals({ fallbackPath: '/i/status/'.concat(c) })
+                  u('close'), l && o.goBackThroughModals({ fallbackPath: '/i/status/'.concat(l), location: i })
                 },
-                subtext: y,
+                subtext: I,
                 withCloseButton: !p.b.isTwitterApp(),
               })
         },

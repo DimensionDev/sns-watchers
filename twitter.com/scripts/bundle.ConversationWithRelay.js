@@ -1240,7 +1240,10 @@
                 e._appBarRef = t
               }),
               h()(u()(e), '_handleGoBack', function () {
-                e.props.history.goBackThroughModals()
+                var t = e.props,
+                  n = t.history,
+                  r = t.location
+                n.goBackThroughModals({ location: r })
               }),
               h()(u()(e), '_scribeDwellTime', function () {
                 var t = e.props,

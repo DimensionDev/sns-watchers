@@ -205,14 +205,14 @@
         l = (n('JtPf'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP'), n('XBtf')),
         u = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(331)]).then(n.bind(null, 'a+ad'))
+            return Promise.all([n.e(0), n.e(330)]).then(n.bind(null, 'a+ad'))
           },
           loaderKey: 'newsCellLoader',
           strategy: l.a.Critical,
         },
         s = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(333)]).then(n.bind(null, 'hX2d'))
+            return Promise.all([n.e(0), n.e(332)]).then(n.bind(null, 'hX2d'))
           },
           loaderKey: 'newsPreviewCardLoader',
           strategy: l.a.Critical,

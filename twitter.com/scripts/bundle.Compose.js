@@ -3571,23 +3571,22 @@
                   h = t.onTextInputBlur,
                   f = t.positionCursorAtBeginning,
                   v = t.richTextInputContext,
-                  y = o.state.isFocused,
-                  g = r.text,
-                  b = 0 === c && p,
-                  _ = !!v,
-                  w = v || {},
-                  E = w.dismissComposerCommandName,
-                  T = w.element,
-                  S = w.sendTweetCommandName,
-                  x = d && !v && !l,
-                  O = v
+                  y = r.text,
+                  g = 0 === c && p,
+                  b = !!v,
+                  _ = v || {},
+                  w = _.dismissComposerCommandName,
+                  E = _.element,
+                  T = _.sendTweetCommandName,
+                  S = d && !v && !l,
+                  x = v
                     ? {
                         onChange: o._getHandleRichTextChange(e),
                         richTextInputContext: {
-                          dismissComposerCommandName: E,
+                          dismissComposerCommandName: w,
                           editorState: o.state.editorState,
-                          element: T,
-                          sendTweetCommandName: S,
+                          element: E,
+                          sendTweetCommandName: T,
                         },
                       }
                     : { onChange: o._getHandlePlainTextChange(e) }
@@ -3599,14 +3598,14 @@
                       ariaLabel: cr,
                       autoFocus: n || (s && !u),
                       closeButton:
-                        s && (o._deleteNonemptyTweetstormComposerEnabled || o._isEmpty()) && !b
+                        s && (o._deleteNonemptyTweetstormComposerEnabled || o._isEmpty()) && !g
                           ? o._renderCloseButton()
                           : void 0,
                       contentBelow: o._renderTweetAttachment(),
                       editable: i,
-                      inputStyle: [ft.textInputStyle, x && ft.textInputMobileCollapsed],
+                      inputStyle: [ft.textInputStyle, S && ft.textInputMobileCollapsed],
                       keyCommandHandlers: m,
-                      maxNumberOfLines: _ ? 30 : 10,
+                      maxNumberOfLines: b ? 30 : 10,
                       multiline: !0,
                       numberOfLines: o._calcNumberOfLines(),
                       onBlur: h,
@@ -3617,10 +3616,9 @@
                       ref: o._setTextInputRef,
                       styleType: 'selection',
                       testID: ''.concat(wn).concat(c),
-                      useCacheForDOMMeasurements: y,
-                      value: g,
+                      value: y,
                     },
-                    O,
+                    x,
                   ),
                 )
               }),
@@ -5080,16 +5078,17 @@
         qa = n('lsKC'),
         Ga = n('Drq4'),
         Ka = n('I8M8'),
-        Xa = n('7myi'),
-        Za = n('7nmT'),
-        Ya = n.n(Za),
-        Qa = n('vbWy'),
-        Ja = n('Rp9C'),
-        $a = n('Q5Mu'),
-        eo = n('N5qz'),
-        to = 'tweetButton',
-        no = 'tweetButtonInline',
-        ro = Object(Q.a)()
+        Xa = n('eyty'),
+        Za = n('7myi'),
+        Ya = n('7nmT'),
+        Qa = n.n(Ya),
+        Ja = n('vbWy'),
+        $a = n('Rp9C'),
+        eo = n('Q5Mu'),
+        to = n('N5qz'),
+        no = 'tweetButton',
+        ro = 'tweetButtonInline',
+        ao = Object(Q.a)()
           .propsFromState(function () {
             return { loggedInUser: oa.e.selectLoggedInUser }
           })
@@ -5102,11 +5101,11 @@
             }
           })
           .withAnalytics(),
-        ao = n('cHvH'),
-        oo = n('sgih'),
-        io = n('xKuM'),
-        co = n('5Vk4'),
-        so = A.a.create(function (e) {
+        oo = n('cHvH'),
+        io = n('sgih'),
+        co = n('xKuM'),
+        so = n('5Vk4'),
+        lo = A.a.create(function (e) {
           return {
             mainCard: {
               marginHorizontal: 'auto',
@@ -5119,45 +5118,45 @@
             sheetStyle: { justifyContent: 'center' },
           }
         }),
-        lo = function (e) {
+        uo = function (e) {
           var t = e.actionButtonType,
             n = e.children,
             r = e.onActionButtonClick,
             a = e.onMaskClick,
             o = e.sheetType,
             i = e.showActionButton
-          return C.createElement(ao.a, null, function (e) {
+          return C.createElement(oo.a, null, function (e) {
             var c = e.windowWidth > A.a.theme.breakpoints.small
             return C.createElement(
-              oo.a,
-              { onMaskClick: a, style: so.sheetStyle, type: o, withMask: !0 },
+              io.a,
+              { onMaskClick: a, style: lo.sheetStyle, type: o, withMask: !0 },
               i &&
-                C.createElement(io.a, {
-                  leftControl: C.createElement(co.a, { backButtonType: t, onClick: r }),
+                C.createElement(co.a, {
+                  leftControl: C.createElement(so.a, { backButtonType: t, onClick: r }),
                   position: 'absolute',
                 }),
-              C.createElement(R.a, { style: [so.mainCard, c ? so.largeScreenCard : so.smallScreenCard] }, n),
+              C.createElement(R.a, { style: [lo.mainCard, c ? lo.largeScreenCard : lo.smallScreenCard] }, n),
             )
           })
         },
-        uo = M.a.cb7c0987,
-        po = M.a.de3bcf27,
-        mo = M.a.e710ce75,
-        ho = M.a.h11e5910,
-        fo = M.a.b7ec04f3,
-        vo = M.a.i62a03aa,
-        yo = A.a.create(function (e) {
+        po = M.a.cb7c0987,
+        mo = M.a.de3bcf27,
+        ho = M.a.e710ce75,
+        fo = M.a.h11e5910,
+        vo = M.a.b7ec04f3,
+        yo = M.a.i62a03aa,
+        go = A.a.create(function (e) {
           return {
             itemPadding: { marginVertical: e.spaces.space8 },
             buttonContainer: { paddingHorizontal: e.spaces.space20, width: '100%' },
           }
         }),
-        go = function (e) {
+        bo = function (e) {
           var t = e.onBack,
             n = e.onNo,
             r = e.onYes
           return C.createElement(
-            lo,
+            uo,
             {
               actionButtonType: 'back',
               onActionButtonClick: t,
@@ -5165,27 +5164,27 @@
               sheetType: 'full',
               showActionButton: !0,
             },
-            C.createElement(P.b, { size: 'title4', style: yo.itemPadding, weight: 'heavy' }, uo),
-            C.createElement(P.b, { color: 'gray700', style: yo.itemPadding }, po),
-            C.createElement(P.b, { color: 'gray700', style: yo.itemPadding }, mo),
+            C.createElement(P.b, { size: 'title4', style: go.itemPadding, weight: 'heavy' }, po),
+            C.createElement(P.b, { color: 'gray700', style: go.itemPadding }, mo),
+            C.createElement(P.b, { color: 'gray700', style: go.itemPadding }, ho),
             C.createElement(
               R.a,
-              { style: yo.buttonContainer },
-              C.createElement(P.b, { size: 'title4', style: yo.itemPadding, weight: 'heavy' }, ho),
-              C.createElement(se.a, { onPress: r, style: yo.itemPadding, type: 'brandOutlined' }, fo),
-              C.createElement(se.a, { onPress: n, style: yo.itemPadding, type: 'brandOutlined' }, vo),
+              { style: go.buttonContainer },
+              C.createElement(P.b, { size: 'title4', style: go.itemPadding, weight: 'heavy' }, fo),
+              C.createElement(se.a, { onPress: r, style: go.itemPadding, type: 'brandOutlined' }, vo),
+              C.createElement(se.a, { onPress: n, style: go.itemPadding, type: 'brandOutlined' }, yo),
             ),
           )
         },
-        bo = n('cm6r'),
-        _o = A.a.create(function (e) {
+        _o = n('cm6r'),
+        Co = A.a.create(function (e) {
           return { button: { width: e.spaces.space72, height: e.spaces.space72, marginBottom: e.spaces.space12 } }
         }),
-        Co = function (e) {
+        wo = function (e) {
           var t = e.icon,
             n = e.label,
             r = e.onPress
-          return C.createElement(bo.a, { interactiveStyles: null, onPress: r }, function (e) {
+          return C.createElement(_o.a, { interactiveStyles: null, onPress: r }, function (e) {
             return C.createElement(
               C.Fragment,
               null,
@@ -5193,24 +5192,24 @@
                 icon: t,
                 interactivityState: e,
                 size: 'xLarge',
-                style: _o.button,
+                style: Co.button,
                 type: 'primaryOutlined',
               }),
               C.createElement(P.b, { color: 'gray700' }, n),
             )
           })
         },
-        wo = n('sjK1'),
-        Eo = n('FDY4'),
-        To = n('tevE'),
-        So = n('jV+4'),
-        xo = n('UgB4'),
-        Oo = n('TW8A'),
-        Ro = n('hiGS'),
-        Io = n('WtWS'),
-        Po = n('Lsrn'),
-        ko = n('k/Ka')
-      function Ao(e, t) {
+        Eo = n('sjK1'),
+        To = n('FDY4'),
+        So = n('tevE'),
+        xo = n('jV+4'),
+        Oo = n('UgB4'),
+        Ro = n('TW8A'),
+        Io = n('hiGS'),
+        Po = n('WtWS'),
+        ko = n('Lsrn'),
+        Ao = n('k/Ka')
+      function Do(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -5222,29 +5221,29 @@
         }
         return n
       }
-      function Do(e) {
+      function jo(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Ao(Object(n), !0).forEach(function (t) {
+            ? Do(Object(n), !0).forEach(function (t) {
                 _()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : Ao(Object(n)).forEach(function (t) {
+            : Do(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var jo = function () {
+      var Mo = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(ko.a)(
+        return Object(Ao.a)(
           'svg',
-          Do(
-            Do({}, e),
+          jo(
+            jo({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [Po.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [ko.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           C.createElement(
             'g',
@@ -5255,16 +5254,16 @@
           ),
         )
       }
-      jo.metadata = { width: 24, height: 24 }
-      var Mo = jo,
-        Lo = M.a.f3a7a80c,
-        Bo = M.a.ge52d1de,
-        Fo = M.a.h11e5910,
-        No = M.a.abd845fd,
-        Ho = M.a.bea869b3,
-        Vo = M.a.d96cf7cd,
-        Uo = M.a.d3145da8,
-        zo = A.a.create(function (e) {
+      Mo.metadata = { width: 24, height: 24 }
+      var Lo = Mo,
+        Bo = M.a.f3a7a80c,
+        Fo = M.a.ge52d1de,
+        No = M.a.h11e5910,
+        Ho = M.a.abd845fd,
+        Vo = M.a.bea869b3,
+        Uo = M.a.d96cf7cd,
+        zo = M.a.d3145da8,
+        Wo = A.a.create(function (e) {
           return {
             itemPadding: { marginVertical: e.spaces.space8 },
             buttonContainer: { paddingHorizontal: e.spaces.space20, width: '100%' },
@@ -5302,7 +5301,7 @@
             textStyle: { flex: '8 1 0%' },
           }
         }),
-        Wo = function (e) {
+        qo = function (e) {
           var t = e.hasSentFeedback,
             n = e.media,
             r = e.onDeleteTweet,
@@ -5314,13 +5313,13 @@
             l = e.userName,
             u = e.userProfileImageUrl,
             d = e.userScreenName
-          return C.createElement(ao.a, null, function (e) {
+          return C.createElement(oo.a, null, function (e) {
             var p,
               m,
               h,
               f = e.windowWidth
             return C.createElement(
-              lo,
+              uo,
               {
                 actionButtonType: 'close',
                 onActionButtonClick: a,
@@ -5328,19 +5327,19 @@
                 sheetType: 'full',
                 showActionButton: f > A.a.theme.breakpoints.medium,
               },
-              C.createElement(Mo, { style: [zo.profanityIcon, zo.itemPadding] }),
-              C.createElement(To.a, { size: 'title4', style: zo.itemPadding, weight: 'heavy' }, Lo),
-              C.createElement(P.b, { color: 'gray700', style: zo.itemPadding }, Bo),
+              C.createElement(Lo, { style: [Wo.profanityIcon, Wo.itemPadding] }),
+              C.createElement(So.a, { size: 'title4', style: Wo.itemPadding, weight: 'heavy' }, Bo),
+              C.createElement(P.b, { color: 'gray700', style: Wo.itemPadding }, Fo),
               C.createElement(
                 R.a,
-                { style: [zo.tweetContainer, zo.itemPadding] },
+                { style: [Wo.tweetContainer, Wo.itemPadding] },
                 C.createElement(
                   R.a,
-                  { style: zo.tweetContent },
-                  C.createElement(So.a, { name: l, profileImageUrl: u, screenName: d, style: zo.userName }),
+                  { style: Wo.tweetContent },
+                  C.createElement(xo.a, { name: l, profileImageUrl: u, screenName: d, style: Wo.userName }),
                   C.createElement(
                     R.a,
-                    { style: zo.tweetBody },
+                    { style: Wo.tweetBody },
                     (function () {
                       if (0 === n.length) return null
                       var e = n.map(function (e) {
@@ -5349,7 +5348,7 @@
                           r,
                           a = ''
                         if (e.externalMediaDetails) a = e.externalMediaDetails.stillMediaUrl
-                        else if (e.mediaFile instanceof wo.c) a = e.mediaFile.thumbnail
+                        else if (e.mediaFile instanceof Eo.c) a = e.mediaFile.thumbnail
                         else if (null !== (t = e.mediaFile) && void 0 !== t && t.url) {
                           var o
                           a = null === (o = e.mediaFile) || void 0 === o ? void 0 : o.url
@@ -5365,8 +5364,8 @@
                       })
                       return C.createElement(
                         R.a,
-                        { style: zo.photos },
-                        C.createElement(Eo.a, {
+                        { style: Wo.photos },
+                        C.createElement(To.a, {
                           containerAspectRatio: 1,
                           images: e,
                           previewMode: !1,
@@ -5377,40 +5376,40 @@
                         }),
                       )
                     })(),
-                    C.createElement(P.b, { style: zo.textStyle }, s),
+                    C.createElement(P.b, { style: Wo.textStyle }, s),
                   ),
                 ),
               ),
               t
                 ? C.createElement(
                     R.a,
-                    { style: zo.thanksContainer },
-                    C.createElement(Io.a, { style: zo.thanksCheckMark }),
-                    C.createElement(P.b, { align: 'center', style: zo.itemPadding }, Uo),
+                    { style: Wo.thanksContainer },
+                    C.createElement(Po.a, { style: Wo.thanksCheckMark }),
+                    C.createElement(P.b, { align: 'center', style: Wo.itemPadding }, zo),
                   )
-                : C.createElement(P.b, { align: 'center', onPress: c, style: zo.itemPadding, withUnderline: !0 }, Fo),
+                : C.createElement(P.b, { align: 'center', onPress: c, style: Wo.itemPadding, withUnderline: !0 }, No),
               f > A.a.theme.breakpoints.small
                 ? C.createElement(
                     R.a,
-                    { style: zo.buttonContainer },
-                    C.createElement(se.a, { onPress: o, style: zo.itemPadding, type: 'brandFilled' }, No),
-                    C.createElement(se.a, { onPress: i, style: zo.itemPadding, type: 'brandOutlined' }, Ho),
-                    C.createElement(se.a, { onPress: r, style: zo.itemPadding, type: 'destructiveText' }, Vo),
+                    { style: Wo.buttonContainer },
+                    C.createElement(se.a, { onPress: o, style: Wo.itemPadding, type: 'brandFilled' }, Ho),
+                    C.createElement(se.a, { onPress: i, style: Wo.itemPadding, type: 'brandOutlined' }, Vo),
+                    C.createElement(se.a, { onPress: r, style: Wo.itemPadding, type: 'destructiveText' }, Uo),
                   )
-                : ((p = C.createElement(xo.a, { style: { color: A.a.theme.colors.text } })),
-                  (m = C.createElement(Oo.a, { style: { color: A.a.theme.colors.primary } })),
-                  (h = C.createElement(Ro.a, { style: { color: A.a.theme.colors.red500 } })),
+                : ((p = C.createElement(Oo.a, { style: { color: A.a.theme.colors.text } })),
+                  (m = C.createElement(Ro.a, { style: { color: A.a.theme.colors.primary } })),
+                  (h = C.createElement(Io.a, { style: { color: A.a.theme.colors.red500 } })),
                   C.createElement(
                     R.a,
-                    { style: zo.mobileButtonContainer },
-                    C.createElement(Co, { icon: p, label: Ho, onPress: i }),
-                    C.createElement(Co, { icon: m, label: No, onPress: o }),
-                    C.createElement(Co, { icon: h, label: Vo, onPress: r }),
+                    { style: Wo.mobileButtonContainer },
+                    C.createElement(wo, { icon: p, label: Vo, onPress: i }),
+                    C.createElement(wo, { icon: m, label: Ho, onPress: o }),
+                    C.createElement(wo, { icon: h, label: Uo, onPress: r }),
                   )),
             )
           })
         },
-        qo = ro(function (e) {
+        Go = ao(function (e) {
           var t = e.analytics,
             n = e.media,
             r = e.nudgeId,
@@ -5437,7 +5436,7 @@
               t.scribe({ action: n, data: { nudge_id: r }, element: a, page: o, section: 'dialog' })
             }
           return h
-            ? C.createElement(go, {
+            ? C.createElement(bo, {
                 onBack: function () {
                   _({ action: 'back', element: 'action', page: 'nudge_more_info' }), f(!1)
                 },
@@ -5448,7 +5447,7 @@
                   _({ action: 'got_it_wrong_yes', element: 'action', page: 'nudge_more_info' }), b(!0), f(!1)
                 },
               })
-            : C.createElement(Wo, {
+            : C.createElement(qo, {
                 hasSentFeedback: g,
                 media: n,
                 onDeleteTweet: function () {
@@ -5474,15 +5473,14 @@
                 userScreenName: d,
               })
         }),
-        Go = n('eb3s'),
-        Ko = n('JYMr'),
-        Xo = n('sCk0'),
-        Zo = n('3A2y'),
-        Yo = n('zrOZ'),
-        Qo = n('s1N3'),
-        Jo = n('4FGy'),
-        $o = n('mN6z'),
-        ei = n('eyty'),
+        Ko = n('eb3s'),
+        Xo = n('JYMr'),
+        Zo = n('sCk0'),
+        Yo = n('3A2y'),
+        Qo = n('zrOZ'),
+        Jo = n('s1N3'),
+        $o = n('4FGy'),
+        ei = n('mN6z'),
         ti = n('rziq'),
         ni = n('jTgF')
       function ri(e, t) {
@@ -5583,34 +5581,35 @@
           h()(n, e)
           var t = oi(n)
           function n(e, r) {
-            var a, o, c
-            s()(this, n),
-              (c = t.call(this, e, r)),
-              _()(p()(c), '_getParentKey', function () {
-                var e = c.props,
+            var a, o
+            return (
+              s()(this, n),
+              (o = t.call(this, e, r)),
+              _()(p()(o), '_getParentKey', function () {
+                var e = o.props,
                   t = e.isInline
                 return e.parentTweetId || (t ? ta.a.homeTimeline : ta.a.modal)
               }),
-              _()(p()(c), '_updateSingleComposer', function (e, t) {
-                return (0, c.props.updateSingleComposer)({ updates: e, index: t, parentKey: c._getParentKey() })
+              _()(p()(o), '_updateSingleComposer', function (e, t) {
+                return (0, o.props.updateSingleComposer)({ updates: e, index: t, parentKey: o._getParentKey() })
               }),
-              _()(p()(c), '_resetDraft', function () {
-                ;(0, c.props.resetDraft)({ parentKey: c._getParentKey(), isPreview: c.isPreview })
+              _()(p()(o), '_resetDraft', function () {
+                ;(0, o.props.resetDraft)({ parentKey: o._getParentKey(), isPreview: o.isPreview })
               }),
-              _()(p()(c), '_fetchAutotaggedLocationIfNeeded', function () {
-                var e = c.props,
+              _()(p()(o), '_fetchAutotaggedLocationIfNeeded', function () {
+                var e = o.props,
                   t = e.createLocalApiErrorHandler
                 return (0, e.fetchAutotaggedLocationIfNeeded)().catch(t())
               }),
-              _()(p()(c), '_syncTexts', function () {
-                var e = c.props.composerData,
-                  t = c.state.textMap
+              _()(p()(o), '_syncTexts', function () {
+                var e = o.props.composerData,
+                  t = o.state.textMap
                 e.forEach(function (e, n) {
                   var r = t[e.key]
-                  'string' == typeof r && r !== e.text && c._updateSingleComposer({ text: r }, n)
+                  'string' == typeof r && r !== e.text && o._updateSingleComposer({ text: r }, n)
                 })
               }),
-              _()(p()(c), '_hasGif', function (e) {
+              _()(p()(o), '_hasGif', function (e) {
                 return (
                   e.gifMetadata ||
                   e.media.some(function (e) {
@@ -5618,7 +5617,7 @@
                   })
                 )
               }),
-              _()(p()(c), '_hasPhoto', function (e) {
+              _()(p()(o), '_hasPhoto', function (e) {
                 return (
                   e.media &&
                   e.media.some(function (e) {
@@ -5626,7 +5625,7 @@
                   })
                 )
               }),
-              _()(p()(c), '_hasVideo', function (e) {
+              _()(p()(o), '_hasVideo', function (e) {
                 return (
                   e.media &&
                   e.media.some(function (e) {
@@ -5634,23 +5633,23 @@
                   })
                 )
               }),
-              _()(p()(c), '_handleDeletePreviewTweet', function () {
-                var e = c.props,
+              _()(p()(o), '_handleDeletePreviewTweet', function () {
+                var e = o.props,
                   t = e.deletePreviewTweet,
                   n = e.previewTweetId
                 n && t(n)
               }),
-              _()(p()(c), '_handleAnimateComplete', function () {
-                var e = c.props,
+              _()(p()(o), '_handleAnimateComplete', function () {
+                var e = o.props,
                   t = e.activeComposerIndex,
                   n = e.onHandleAppBarHeight,
-                  r = Ya.a.findDOMNode(c._composerRefs[t])
+                  r = Qa.a.findDOMNode(o._composerRefs[t])
                 if (r instanceof window.Element) {
                   var a = r.getBoundingClientRect(),
-                    o = a.bottom,
-                    i = a.top,
-                    s = Math.max(i, window.scrollY)
-                  if (s < window.pageYOffset || o > window.innerHeight) {
+                    i = a.bottom,
+                    c = a.top,
+                    s = Math.max(c, window.scrollY)
+                  if (s < window.pageYOffset || i > window.innerHeight) {
                     var l = n ? s - n() - 14 : s - 14,
                       u = Math.max(l, 0)
                     window.requestAnimationFrame(function () {
@@ -5659,188 +5658,188 @@
                   }
                 }
               }),
-              _()(p()(c), '_handleFetchTweetIfNeeded', function () {
-                var e = c.props,
+              _()(p()(o), '_handleFetchTweetIfNeeded', function () {
+                var e = o.props,
                   t = e.createLocalApiErrorHandler,
                   n = e.fetchTweetIfNeeded,
                   r = e.inReplyToStatus,
                   a = e.inReplyToStatusId,
-                  o = e.quotedStatus,
-                  i = e.quotedStatusId
-                !r && a && n(a).catch(t(Wa.a)), !o && i && n(i).catch(t(Wa.a))
+                  i = e.quotedStatus,
+                  c = e.quotedStatusId
+                !r && a && n(a).catch(t(Wa.a)), !i && c && n(c).catch(t(Wa.a))
               }),
-              _()(p()(c), '_blockHistory', function (e, t) {
-                var n = c.props,
+              _()(p()(o), '_blockHistory', function (e, t) {
+                var n = o.props,
                   r = n.audienceControlsValue,
                   a = n.isInline,
-                  o = !a && /unsent/.test(e.pathname),
-                  i = !a && !/\/compose\/tweet\/?$/.test(e.pathname)
-                return c.shouldShowDiscardConfirmation && 'POP' === t && i
-                  ? (c.setState({ showDiscardTweetConfirmation: !0 }), !1)
-                  : c._canSaveDraft && o && 'PUSH' === t
-                  ? c.shouldShowDiscardConfirmation
-                    ? (c.setState({ showDiscardTweetConfirmation: !0, navigatingToOutbox: o }), !1)
-                    : (c._resetDraft(), !0)
-                  : c.shouldShowBackgroundSendConfirmation && 'POP' === t && i
-                  ? (c._cancelAllMediaUploads(), !1)
-                  : !('POP' === t && i && c._areComposersEmptyOrUnchanged && !Object(ut.a)(r)) || (c._resetDraft(), !0)
+                  i = !a && /unsent/.test(e.pathname),
+                  c = !a && !/\/compose\/tweet\/?$/.test(e.pathname)
+                return o.shouldShowDiscardConfirmation && 'POP' === t && c
+                  ? (o.setState({ showDiscardTweetConfirmation: !0 }), !1)
+                  : o._canSaveDraft && i && 'PUSH' === t
+                  ? o.shouldShowDiscardConfirmation
+                    ? (o.setState({ showDiscardTweetConfirmation: !0, navigatingToOutbox: i }), !1)
+                    : (o._resetDraft(), !0)
+                  : o.shouldShowBackgroundSendConfirmation && 'POP' === t && c
+                  ? (o._cancelAllMediaUploads(), !1)
+                  : !('POP' === t && c && o._areComposersEmptyOrUnchanged && !Object(ut.a)(r)) || (o._resetDraft(), !0)
               }),
-              _()(p()(c), '_getKeyCommandHandlers', function () {
-                return c.state.typeaheadActive ? c._keyCommandHandlersForActiveTypeahead : c._keyCommandHandlers
+              _()(p()(o), '_getKeyCommandHandlers', function () {
+                return o.state.typeaheadActive ? o._keyCommandHandlersForActiveTypeahead : o._keyCommandHandlers
               }),
-              _()(p()(c), 'handleTweetOrRetweet', function () {
+              _()(p()(o), 'handleTweetOrRetweet', function () {
                 if (
-                  (c._scribe({ section: 'composition', element: 'send_tweet', action: 'click' }),
-                  c._areComposersValid())
+                  (o._scribe({ section: 'composition', element: 'send_tweet', action: 'click' }),
+                  o._areComposersValid())
                 )
-                  return c.shouldShowAltTextPrompt
-                    ? (c.setState({ showAltTextPrompt: !0 }), void c._scribe(ai(ai({}, Ai), {}, { action: 'show' })))
-                    : c._handleTweetOrRetweet()
+                  return o.shouldShowAltTextPrompt
+                    ? (o.setState({ showAltTextPrompt: !0 }), void o._scribe(ai(ai({}, Ai), {}, { action: 'show' })))
+                    : o._handleTweetOrRetweet()
               }),
-              _()(p()(c), '_handleTweetOrRetweet', function () {
-                return c.isRetweet ? c._handleRetweet() : c._handleTweet()
+              _()(p()(o), '_handleTweetOrRetweet', function () {
+                return o.isRetweet ? o._handleRetweet() : o._handleTweet()
               }),
-              _()(p()(c), '_renderReplyContext', function () {
-                var e = c.props,
+              _()(p()(o), '_renderReplyContext', function () {
+                var e = o.props,
                   t = e.activeUser,
                   n = e.excludedRecipients,
                   r = e.inReplyToStatus,
                   a = e.isInline,
-                  o = e.isSelfThreadReply,
-                  i = e.selectedCommunityName
-                if (r && c._shouldBeExpanded())
+                  i = e.isSelfThreadReply,
+                  c = e.selectedCommunityName
+                if (r && o._shouldBeExpanded())
                   return C.createElement(Yr, {
-                    communityName: i,
+                    communityName: c,
                     excludedRecipients: n,
                     inReplyToStatus: r,
                     key: n.join(),
                     loggedInUserId: t ? t.id_str : void 0,
-                    onPress: c._handleViewRecipients,
-                    shouldDisplayRepliesText: !o,
+                    onPress: o._handleViewRecipients,
+                    shouldDisplayRepliesText: !i,
                     showParentTweet: !a,
                   })
               }),
-              _()(p()(c), '_renderAltTextPrompt', function () {
-                var e = c._getAltTextMetadata(),
+              _()(p()(o), '_renderAltTextPrompt', function () {
+                var e = o._getAltTextMetadata(),
                   t = e.numberOfDescriptionsMissing,
                   n = e.numberOfImages
-                return C.createElement(Go.a, {
+                return C.createElement(Ko.a, {
                   Icon: Ga.a,
                   cancelButtonLabel: hi,
                   confirmButtonLabel: mi({ numOfDescriptions: t }),
                   headline: si,
-                  onCancel: c._handleIgnoreAltTextPrompt,
-                  onConfirm: c._handleAcceptAltTextPrompt,
-                  onMaskClick: c._handleCancelAltTextPrompt,
+                  onCancel: o._handleIgnoreAltTextPrompt,
+                  onConfirm: o._handleAcceptAltTextPrompt,
+                  onMaskClick: o._handleCancelAltTextPrompt,
                   text: pi({ numberOfDescriptionsMissing: t, numberOfImages: n }),
                 })
               }),
-              _()(p()(c), '_renderToxicReplyNudge', function () {
-                var e = c._getSingleComposerDataWithLatestText(c.props.composerData[0]),
+              _()(p()(o), '_renderToxicReplyNudge', function () {
+                var e = o._getSingleComposerDataWithLatestText(o.props.composerData[0]),
                   t = e.text,
                   n = e.media
-                return C.createElement(qo, {
+                return C.createElement(Go, {
                   media: n,
-                  nudgeId: c.state.nudgeId,
-                  onDeleteTweet: c._handleReplyNudgeDeleteTweet,
-                  onDismiss: c._handleReplyNudgeDismiss,
-                  onEditTweet: c._handleReplyNudgeEditTweet,
-                  onSendTweet: c._handleReplyNudgeSendTweet,
+                  nudgeId: o.state.nudgeId,
+                  onDeleteTweet: o._handleReplyNudgeDeleteTweet,
+                  onDismiss: o._handleReplyNudgeDismiss,
+                  onEditTweet: o._handleReplyNudgeEditTweet,
+                  onSendTweet: o._handleReplyNudgeSendTweet,
                   tweetText: t,
                 })
               }),
-              _()(p()(c), '_handleReplyNudgeDeleteTweet', function () {
-                c._hideToxicReplyNudge(), c._handleConfirmDiscardTweet()
+              _()(p()(o), '_handleReplyNudgeDeleteTweet', function () {
+                o._hideToxicReplyNudge(), o._handleConfirmDiscardTweet()
               }),
-              _()(p()(c), '_handleReplyNudgeDismiss', function () {
-                c._hideToxicReplyNudge()
+              _()(p()(o), '_handleReplyNudgeDismiss', function () {
+                o._hideToxicReplyNudge()
               }),
-              _()(p()(c), '_handleReplyNudgeEditTweet', function () {
-                c._hideToxicReplyNudge()
+              _()(p()(o), '_handleReplyNudgeEditTweet', function () {
+                o._hideToxicReplyNudge()
               }),
-              _()(p()(c), '_handleReplyNudgeSendTweet', function () {
-                c._hideToxicReplyNudge(), c._handleSendTweet()
+              _()(p()(o), '_handleReplyNudgeSendTweet', function () {
+                o._hideToxicReplyNudge(), o._handleSendTweet()
               }),
-              _()(p()(c), '_setRootRef', function (e) {
-                e && (c._root = e)
+              _()(p()(o), '_setRootRef', function (e) {
+                e && (o._root = e)
               }),
-              _()(p()(c), '_handleTweet', function () {
-                var e = c.props.composerData[0].scheduledFor
-                c.setState({ errorMessage: void 0 }),
-                  e ? Object(dt.h)(e) && c._handleScheduleTweet() : c._checkToxicReplyAndSendTweet()
+              _()(p()(o), '_handleTweet', function () {
+                var e = o.props.composerData[0].scheduledFor
+                o.setState({ errorMessage: void 0 }),
+                  e ? Object(dt.h)(e) && o._handleScheduleTweet() : o._checkToxicReplyAndSendTweet()
               }),
-              _()(p()(c), '_handleTweetError', function (e, t) {
+              _()(p()(o), '_handleTweetError', function (e, t) {
                 return function (n) {
-                  var r = c.props,
+                  var r = o.props,
                     a = r.analytics,
-                    o = r.createLocalApiErrorHandler
+                    i = r.createLocalApiErrorHandler
                   if (Object(ni.d)(n) && n.code === Ka.b.CANCELED) return a.scribeAction(e), Promise.resolve()
-                  var i = Object(ni.b)(n)
-                  if (i) return c.setState({ errorMessage: i }), Promise.resolve()
-                  o(ai({}, t || Object(Ua.a)(void 0, !1)))(n)
+                  var c = Object(ni.b)(n)
+                  if (c) return o.setState({ errorMessage: c }), Promise.resolve()
+                  i(ai({}, t || Object(Ua.a)(void 0, !1)))(n)
                   var s = n instanceof E.a && (null == t ? void 0 : t[n.errors[0].code])
-                  c.setState({ errorMessage: { text: s ? s.toast.text : Ii } })
+                  o.setState({ errorMessage: { text: s ? s.toast.text : Ii } })
                 }
               }),
-              _()(p()(c), '_handleScheduleTweet', function () {
-                var e = c.props,
+              _()(p()(o), '_handleScheduleTweet', function () {
+                var e = o.props,
                   t = e.addToast,
                   n = e.composerData,
                   r = e.excludedRecipients,
                   a = e.inReplyToStatus,
-                  o = e.schedule,
-                  i = c._getSingleComposerDataWithLatestText(n[0])
-                o({ excludedRecipients: r, inReplyToStatus: a, scheduleData: i })
+                  i = e.schedule,
+                  c = o._getSingleComposerDataWithLatestText(n[0])
+                i({ excludedRecipients: r, inReplyToStatus: a, scheduleData: c })
                   .then(function (e) {
-                    c.setState({ tweetsSentOrScheduled: !0 })
-                    var r = Object(dt.c)(i.scheduledFor)
+                    o.setState({ tweetsSentOrScheduled: !0 })
+                    var r = Object(dt.c)(c.scheduledFor)
                     if (r) {
                       var a = Object(dt.b)(r),
-                        o = Object(dt.i)(r),
-                        s = Oi({ scheduleDate: a, scheduleTime: o })
+                        i = Object(dt.i)(r),
+                        s = Oi({ scheduleDate: a, scheduleTime: i })
                       t({ text: s, action: { label: xi, link: '/compose/tweet/unsent/scheduled' } }),
-                        c._scribeTweetSent(n[0], ai(ai({}, e), {}, { id_str: e.scheduled_id_str }), { isScheduled: !0 })
+                        o._scribeTweetSent(n[0], ai(ai({}, e), {}, { id_str: e.scheduled_id_str }), { isScheduled: !0 })
                     }
-                    c._updateConvoCardState(), c._close()
+                    o._updateConvoCardState(), o._close()
                   })
-                  .catch(c._handleTweetError('schedule_tweet_cancel'))
+                  .catch(o._handleTweetError('schedule_tweet_cancel'))
               }),
-              _()(p()(c), '_handleDraftTweet', function () {
-                var e = c.props,
+              _()(p()(o), '_handleDraftTweet', function () {
+                var e = o.props,
                   t = e.addToast,
                   n = e.composerData
                 ;(0, e.draftTweet)({
                   excludedRecipients: e.excludedRecipients,
                   inReplyToStatus: e.inReplyToStatus,
-                  draftData: c._getSingleComposerDataWithLatestText(n[0]),
+                  draftData: o._getSingleComposerDataWithLatestText(n[0]),
                 })
                   .then(function (e) {
-                    c.setState({ showDiscardTweetConfirmation: !1 }),
+                    o.setState({ showDiscardTweetConfirmation: !1 }),
                       t({ text: Si, action: { label: xi, link: '/compose/tweet/unsent/drafts' } }),
-                      c._scribeTweetSent(n[0], ai(ai({}, e), {}, { id_str: e.draft_id_str }), { isDraftTweet: !0 }),
-                      c._updateConvoCardState(),
-                      c._close()
+                      o._scribeTweetSent(n[0], ai(ai({}, e), {}, { id_str: e.draft_id_str }), { isDraftTweet: !0 }),
+                      o._updateConvoCardState(),
+                      o._close()
                   })
-                  .catch(c._handleTweetError('draft_tweet_cancel', $a.a))
+                  .catch(o._handleTweetError('draft_tweet_cancel', eo.a))
               }),
-              _()(p()(c), '_checkToxicReply', function () {
-                var e = c.props,
+              _()(p()(o), '_checkToxicReply', function () {
+                var e = o.props,
                   t = e.checkTweetForNudge,
                   n = e.composerData,
                   r = e.inReplyToStatus,
                   a = e.inReplyToStatusId,
-                  o = e.parentTweetId,
-                  i = t(
-                    c._getSingleComposerDataWithLatestText(n[0]).text,
-                    o || a,
+                  i = e.parentTweetId,
+                  c = t(
+                    o._getSingleComposerDataWithLatestText(n[0]).text,
+                    i || a,
                     null == r ? void 0 : r.conversation_id_str,
                   ).then(function (e) {
                     var t,
                       n,
                       r,
                       a,
-                      o,
-                      i =
+                      i,
+                      c =
                         null == e ||
                         null === (t = e.create_nudge) ||
                         void 0 === t ||
@@ -5854,52 +5853,52 @@
                         null == e ||
                         null === (a = e.create_nudge) ||
                         void 0 === a ||
-                        null === (o = a.nudge) ||
-                        void 0 === o
+                        null === (i = a.nudge) ||
+                        void 0 === i
                           ? void 0
-                          : o.id
-                    return s && c.setState({ nudgeId: s }), !!i
+                          : i.id
+                    return s && o.setState({ nudgeId: s }), !!c
                   }),
                   s = new Promise(function (e, t) {
                     return setTimeout(e, 1e3, !1)
                   })
-                return Promise.race([i, s])
+                return Promise.race([c, s])
               }),
-              _()(p()(c), '_showToxicReplyNudge', function () {
-                c._scribe({ page: 'nudge', section: 'dialog', action: 'impression' }, { nudge_id: c.state.nudgeId }),
-                  c.setState({ showToxicReplyNudge: !0 })
+              _()(p()(o), '_showToxicReplyNudge', function () {
+                o._scribe({ page: 'nudge', section: 'dialog', action: 'impression' }, { nudge_id: o.state.nudgeId }),
+                  o.setState({ showToxicReplyNudge: !0 })
               }),
-              _()(p()(c), '_hideToxicReplyNudge', function () {
-                return c.setState({ showToxicReplyNudge: !1 })
+              _()(p()(o), '_hideToxicReplyNudge', function () {
+                return o.setState({ showToxicReplyNudge: !1 })
               }),
-              _()(p()(c), '_checkToxicReplyAndSendTweet', function () {
-                var e = c.props,
+              _()(p()(o), '_checkToxicReplyAndSendTweet', function () {
+                var e = o.props,
                   t = e.composerData,
                   n = e.isSelfThreadReply,
-                  r = c.state.nudgeId
+                  r = o.state.nudgeId
                 if (
                   !(
-                    !c._getSingleComposerDataWithLatestText(t[0]).scheduledFor &&
-                    c.isReply &&
+                    !o._getSingleComposerDataWithLatestText(t[0]).scheduledFor &&
+                    o.isReply &&
                     !n &&
-                    c.context.featureSwitches.isTrue('responsive_web_reply_nudge_enabled') &&
+                    o.context.featureSwitches.isTrue('responsive_web_reply_nudge_enabled') &&
                     !r
                   )
                 )
-                  return c._handleSendTweet()
-                c._checkToxicReply().then(function (e) {
-                  if (!e) return c._handleSendTweet()
-                  c._showToxicReplyNudge()
+                  return o._handleSendTweet()
+                o._checkToxicReply().then(function (e) {
+                  if (!e) return o._handleSendTweet()
+                  o._showToxicReplyNudge()
                 })
               }),
-              _()(p()(c), '_handleSendTweet', function () {
-                var e = c.props,
+              _()(p()(o), '_handleSendTweet', function () {
+                var e = o.props,
                   t = e.activeUser,
                   n = e.addToast,
                   r = e.analytics,
                   a = e.audienceControlsValue,
-                  o = e.composeSemanticCoreId,
-                  i = e.excludedRecipients,
+                  i = e.composeSemanticCoreId,
+                  c = e.excludedRecipients,
                   s = e.hasArticleNudge,
                   l = e.history,
                   u = e.inReplyToStatus,
@@ -5911,24 +5910,24 @@
                   v = a.conversationControlsValue,
                   y = a.exclusivityControlValue,
                   g = void 0 === y ? void 0 : y,
-                  b = c.isPreview,
-                  _ = c.props.composerData.map(function (e) {
-                    return c._getSingleComposerDataWithLatestText(e)
+                  b = o.isPreview,
+                  _ = o.props.composerData.map(function (e) {
+                    return o._getSingleComposerDataWithLatestText(e)
                   }),
                   C = Object(dt.c)(_[0].scheduledFor)
                 if (C) {
                   var w = Object(dt.b)(C),
                     E = Object(dt.i)(C),
                     T = Oi({ scheduleDate: w, scheduleTime: E })
-                  return n({ text: T, action: { label: xi, link: '' } }), void c._close()
+                  return n({ text: T, action: { label: xi, link: '' } }), void o._close()
                 }
                 if (
-                  (i.length > 0 && r.scribe({ element: 'mentions', action: 'edited' }),
-                  c._conversationControlsCreationEnabled)
+                  (c.length > 0 && r.scribe({ element: 'mentions', action: 'edited' }),
+                  o._conversationControlsCreationEnabled)
                 )
                   if ('community' === v) r.scribe({ action: 'send_community_tweet' })
                   else if ('by_invitation' === v) {
-                    var x = c._getSingleComposerDataWithLatestText(_[0]).text,
+                    var x = o._getSingleComposerDataWithLatestText(_[0]).text,
                       O = Object(S.d)(x)
                     r.scribe({
                       action: O ? 'send_mentioned_tweet_with_mentions' : 'send_mentioned_tweet_without_mentions',
@@ -5936,12 +5935,12 @@
                   } else 'followers' === v && r.scribe({ action: 'send_my_followers_tweet' })
                 var R = (null == u ? void 0 : u.community_id_str) || a.communityIdValue || void 0,
                   I = R ? '8.31.'.concat(R) : '',
-                  P = o ? (R ? [o, I].join(',') : o) : I
+                  P = i ? (R ? [i, I].join(',') : i) : I
                 f({
                   sendData: _,
                   communityIdValue: R,
                   conversationControlsValue: v,
-                  excludedRecipients: i,
+                  excludedRecipients: c,
                   exclusivityControlValue: g,
                   inReplyToStatus: u,
                   isSelfThreadReply: d,
@@ -5950,50 +5949,50 @@
                   isPreview: b,
                 })
                   .then(function (e) {
-                    b || c.setState({ tweetsSentOrScheduled: !0 }),
+                    b || o.setState({ tweetsSentOrScheduled: !0 }),
                       e.map(function (e, t) {
-                        return c._scribeTweetSent(_[t], e, { hasArticleNudge: s })
+                        return o._scribeTweetSent(_[t], e, { hasArticleNudge: s })
                       }),
-                      e.length > 1 && c._scribeThreadSent(_, e, 'thread_send_success')
+                      e.length > 1 && o._scribeThreadSent(_, e, 'thread_send_success')
                     var r = e.length > 1 ? vi : fi
                     if (R && h) {
                       var a = h,
-                        o = e.length
-                      r = ci({ numOfTweets: o, communityName: a })
+                        i = e.length
+                      r = ci({ numOfTweets: i, communityName: a })
                     }
-                    var i = b && c.isReply
-                    if (i || !b) {
-                      var l = i ? e[0].in_reply_to_status_id_str : e[0].id_str
+                    var c = b && o.isReply
+                    if (c || !b) {
+                      var l = c ? e[0].in_reply_to_status_id_str : e[0].id_str
                       n({
-                        text: i ? yi : r,
+                        text: c ? yi : r,
                         action: { label: xi, link: '/'.concat(t ? t.screen_name : 'i', '/status/').concat(l || '') },
                       })
                     }
-                    c.isInlineReply && c.setState({ focused: !1 }), c._updateConvoCardState(), c._close()
+                    o.isInlineReply && o.setState({ focused: !1 }), o._updateConvoCardState(), o._close()
                   })
                   .catch(function (e) {
                     var t,
                       n = e.sentTweets,
                       a = void 0 === n ? [] : n,
-                      o = Array.isArray(e.errors) && (null === (t = e.errors[0]) || void 0 === t ? void 0 : t.code),
-                      i = null == e ? void 0 : e.url,
+                      i = Array.isArray(e.errors) && (null === (t = e.errors[0]) || void 0 === t ? void 0 : t.code),
+                      c = null == e ? void 0 : e.url,
                       u = null == e ? void 0 : e.status,
-                      d = { message: e.type, event_info: o ? ''.concat(o) : void 0, status_code: u, url: i }
+                      d = { message: e.type, event_info: i ? ''.concat(i) : void 0, status_code: u, url: c }
                     throw (
                       (a.map(
                         function (e, t) {
-                          return c._scribeTweetSent(_[t], e)
+                          return o._scribeTweetSent(_[t], e)
                         },
                         { hasArticleNudge: s },
                       ),
                       (Object(ni.d)(e) && e.code === Ka.b.CANCELED) ||
                         r.scribe({ action: 'send_tweet_failure', data: d }),
-                      _.length > 1 && c._scribeThreadSent(_, a, 'thread_send_failure'),
+                      _.length > 1 && o._scribeThreadSent(_, a, 'thread_send_failure'),
                       a.length &&
                         l.replace({
                           pathname: p.pathname,
                           state: ai(
-                            ai({}, Object(Zo.a)(p.state || {}, 'quotedStatus')),
+                            ai({}, Object(Yo.a)(p.state || {}, 'quotedStatus')),
                             {},
                             { inReplyToStatusId: a[a.length - 1].id_str, isSelfThreadReply: !0 },
                           ),
@@ -6001,30 +6000,30 @@
                       e)
                     )
                   })
-                  .catch(c._handleTweetError('send_tweet_cancel', $a.a))
+                  .catch(o._handleTweetError('send_tweet_cancel', eo.a))
               }),
-              _()(p()(c), '_setActiveParentKey', function () {
-                ;(0, c.props.setActiveParentKey)(c._getParentKey())
+              _()(p()(o), '_setActiveParentKey', function () {
+                ;(0, o.props.setActiveParentKey)(o._getParentKey())
               }),
-              _()(p()(c), '_scribeTweetSent', function (e, t) {
+              _()(p()(o), '_scribeTweetSent', function (e, t) {
                 var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
                   r = n.hasArticleNudge,
                   a = void 0 !== r && r,
-                  o = n.isDraftTweet,
-                  i = void 0 !== o && o,
+                  i = n.isDraftTweet,
+                  c = void 0 !== i && i,
                   s = n.isScheduled,
                   l = void 0 !== s && s,
-                  u = c.state.nudgeId,
+                  u = o.state.nudgeId,
                   d = e.scheduledTweetId ? 'schedule_edit_' : 'schedule_',
                   p = e.draftTweetId ? 'draft_edit_' : 'draft_',
-                  m = i ? p : l ? d : 'send_',
-                  h = { items: [Ja.a.getTweetItem(t)] },
+                  m = c ? p : l ? d : 'send_',
+                  h = { items: [$a.a.getTweetItem(t)] },
                   f = e.pollActive && e.pollValid,
                   v = e.media.some(function (e) {
                     var t
                     return !(null === (t = e.mediaMetadata) || void 0 === t || !t.altText)
                   }),
-                  y = Object(Yo.a)(
+                  y = Object(Qo.a)(
                     e.media
                       .map(function (e) {
                         var t,
@@ -6034,240 +6033,240 @@
                       .filter(Boolean)
                       .flat(),
                   ),
-                  g = c.props.isInline ? 'inline_reply' : 'tweet_box_dialog'
+                  g = o.props.isInline ? 'inline_reply' : 'tweet_box_dialog'
                 if (
-                  (c._scribe({ action: ''.concat(m, 'tweet') }, h),
-                  i || !e.draftTweetId || e.scheduledTweetId || c._scribe({ action: ''.concat(m, 'draft_tweet') }, h),
-                  c.isQuoteTweet &&
-                    (c._scribe({ action: 'retweet_with_comment' }, h),
-                    a && c._scribe(ai(ai({}, Di), {}, { element: 'result', action: 'retweet_with_comment' }), h)),
-                  c.isReply && c._scribe({ component: g, action: ''.concat(m, 'reply') }, h),
-                  f && c._scribe({ action: ''.concat(m, 'poll_tweet') }, h),
-                  c._hasPhoto(e) &&
-                    (c._scribe({ action: ''.concat(m, 'photo_tweet') }, h),
-                    v && c._scribe({ action: ''.concat(m, 'photo_tweet_with_alt_text') }, h)),
-                  c._hasVideo(e) && c._scribe({ action: ''.concat(m, 'video_tweet') }, h),
+                  (o._scribe({ action: ''.concat(m, 'tweet') }, h),
+                  c || !e.draftTweetId || e.scheduledTweetId || o._scribe({ action: ''.concat(m, 'draft_tweet') }, h),
+                  o.isQuoteTweet &&
+                    (o._scribe({ action: 'retweet_with_comment' }, h),
+                    a && o._scribe(ai(ai({}, Di), {}, { element: 'result', action: 'retweet_with_comment' }), h)),
+                  o.isReply && o._scribe({ component: g, action: ''.concat(m, 'reply') }, h),
+                  f && o._scribe({ action: ''.concat(m, 'poll_tweet') }, h),
+                  o._hasPhoto(e) &&
+                    (o._scribe({ action: ''.concat(m, 'photo_tweet') }, h),
+                    v && o._scribe({ action: ''.concat(m, 'photo_tweet_with_alt_text') }, h)),
+                  o._hasVideo(e) && o._scribe({ action: ''.concat(m, 'video_tweet') }, h),
                   y.size)
                 ) {
-                  var b = c._hasPhoto(e) ? 'photo' : 'video'
+                  var b = o._hasPhoto(e) ? 'photo' : 'video'
                   y.forEach(function (e) {
-                    c._scribe({ action: ''.concat(m).concat(b, '_tweet_with_').concat(e, '_warning') }, h)
+                    o._scribe({ action: ''.concat(m).concat(b, '_tweet_with_').concat(e, '_warning') }, h)
                   })
                 }
                 var _ = { page: 'nudge', section: 'dialog', element: 'result' }
                 if (
                   (u &&
-                    c.isReply &&
+                    o.isReply &&
                     !l &&
-                    (i
-                      ? c._scribe(ai(ai({}, _), {}, { action: 'save' }), { nudge_id: u })
-                      : c._scribe(ai(ai({}, _), {}, { action: 'sent' }), { nudge_id: u })),
-                  u || i || !c.isReply || l || c._scribe(ai(ai({}, _), {}, { action: 'sent_no_nudge' })),
+                    (c
+                      ? o._scribe(ai(ai({}, _), {}, { action: 'save' }), { nudge_id: u })
+                      : o._scribe(ai(ai({}, _), {}, { action: 'sent' }), { nudge_id: u })),
+                  u || c || !o.isReply || l || o._scribe(ai(ai({}, _), {}, { action: 'sent_no_nudge' })),
                   e.gifMetadata)
                 ) {
-                  var C = t.id_str && Ja.a.getGifSearchItemForTweet(t.id_str, e.gifMetadata)
-                  c._scribe({ element: 'remote', action: ''.concat(m, 'gif_tweet') }, { items: C ? [C] : [] })
+                  var C = t.id_str && $a.a.getGifSearchItemForTweet(t.id_str, e.gifMetadata)
+                  o._scribe({ element: 'remote', action: ''.concat(m, 'gif_tweet') }, { items: C ? [C] : [] })
                   var w = e.media.some(function (e) {
                     var t
                     return !(null === (t = e.mediaMetadata) || void 0 === t || !t.defaultAltText)
                   })
                   ;(v || w) &&
-                    c._scribe(
+                    o._scribe(
                       { element: 'remote', action: ''.concat(m, 'gif_tweet_with_alt_text') },
                       { event_info: v ? 'user_entered' : 'from_provider', items: C ? [C] : [] },
                     )
-                } else c._hasGif(e) && (c._scribe({ element: 'local', action: ''.concat(m, 'gif_tweet') }, h), v && c._scribe({ element: 'local', action: ''.concat(m, 'gif_tweet_with_alt_text') }, h))
+                } else o._hasGif(e) && (o._scribe({ element: 'local', action: ''.concat(m, 'gif_tweet') }, h), v && o._scribe({ element: 'local', action: ''.concat(m, 'gif_tweet_with_alt_text') }, h))
               }),
-              _()(p()(c), '_scribeThreadSent', function (e, t, n) {
-                var r = c.props.inReplyToStatus,
-                  a = { items: [Ja.a.getSendThreadItem(e, t.length, !!r)] }
-                c._scribe({ action: n }, a)
+              _()(p()(o), '_scribeThreadSent', function (e, t, n) {
+                var r = o.props.inReplyToStatus,
+                  a = { items: [$a.a.getSendThreadItem(e, t.length, !!r)] }
+                o._scribe({ action: n }, a)
               }),
-              _()(p()(c), '_scribeRetweet', function (e) {
-                var t = c.props.hasArticleNudge,
-                  n = { items: [Ja.a.getTweetItem(e)] }
-                c._scribe({ action: 'retweet' }, n),
-                  t && c._scribe(ai(ai({}, Di), {}, { element: 'result', action: 'retweet' }), n)
+              _()(p()(o), '_scribeRetweet', function (e) {
+                var t = o.props.hasArticleNudge,
+                  n = { items: [$a.a.getTweetItem(e)] }
+                o._scribe({ action: 'retweet' }, n),
+                  t && o._scribe(ai(ai({}, Di), {}, { element: 'result', action: 'retweet' }), n)
               }),
-              _()(p()(c), '_handleRetweet', function () {
-                var e = c.props,
+              _()(p()(o), '_handleRetweet', function () {
+                var e = o.props,
                   t = e.composerData,
                   n = e.createLocalApiErrorHandler,
                   r = e.retweet,
                   a = t[0].quotedStatus
                 a &&
-                  (c._scribeRetweet(a),
+                  (o._scribeRetweet(a),
                   r(a.id_str, {}).then(function (e) {
-                    c.setState({ tweetsSentOrScheduled: !0 }), c._close()
-                  }, n(Qa.a)))
+                    o.setState({ tweetsSentOrScheduled: !0 }), o._close()
+                  }, n(Ja.a)))
               }),
-              _()(p()(c), 'handleDismissComposer', function () {
-                c.shouldShowDiscardConfirmation
-                  ? c.setState({ showDiscardTweetConfirmation: !0 })
-                  : c.shouldShowBackgroundSendConfirmation
-                  ? c._cancelAllMediaUploads()
-                  : c._close()
+              _()(p()(o), 'handleDismissComposer', function () {
+                o.shouldShowDiscardConfirmation
+                  ? o.setState({ showDiscardTweetConfirmation: !0 })
+                  : o.shouldShowBackgroundSendConfirmation
+                  ? o._cancelAllMediaUploads()
+                  : o._close()
               }),
-              _()(p()(c), '_cancelAllMediaUploads', function () {
-                c.props.composerData.forEach(function (e) {
+              _()(p()(o), '_cancelAllMediaUploads', function () {
+                o.props.composerData.forEach(function (e) {
                   return e.media.forEach(function (e) {
                     return e.uploading && e.uploader && e.uploader.cancel()
                   })
                 })
               }),
-              _()(p()(c), '_handleConfirmDiscardTweet', function () {
-                var e = c.props,
+              _()(p()(o), '_handleConfirmDiscardTweet', function () {
+                var e = o.props,
                   t = e.analytics,
                   n = e.hasArticleNudge,
-                  r = c._canSaveDraft ? 'draft' : 'send'
-                c.setState({ showDiscardTweetConfirmation: !1 }),
-                  c._close(),
+                  r = o._canSaveDraft ? 'draft' : 'send'
+                o.setState({ showDiscardTweetConfirmation: !1 }),
+                  o._close(),
                   t.scribeAction(''.concat(r, '_tweet_discard')),
-                  n && c._scribe(ai(ai({}, Di), {}, { element: 'result', action: 'cancel' })),
-                  c.state.nudgeId &&
-                    c._scribe(
+                  n && o._scribe(ai(ai({}, Di), {}, { element: 'result', action: 'cancel' })),
+                  o.state.nudgeId &&
+                    o._scribe(
                       { page: 'nudge', section: 'dialog', element: 'result', action: 'cancel' },
-                      { nudge_id: c.state.nudgeId },
+                      { nudge_id: o.state.nudgeId },
                     )
               }),
-              _()(p()(c), '_handleCancelDiscardTweet', function () {
-                c.setState({ showDiscardTweetConfirmation: !1 }, function () {
-                  c._restoreFocusToActiveComposer()
+              _()(p()(o), '_handleCancelDiscardTweet', function () {
+                o.setState({ showDiscardTweetConfirmation: !1 }, function () {
+                  o._restoreFocusToActiveComposer()
                 })
               }),
-              _()(p()(c), '_handleAcceptAltTextPrompt', function () {
-                c.setState({ showAltTextPrompt: !1 })
-                var e = c.props.history,
-                  t = c._getAltTextMetadata().noDescriptionImageIDs
+              _()(p()(o), '_handleAcceptAltTextPrompt', function () {
+                o.setState({ showAltTextPrompt: !1 })
+                var e = o.props.history,
+                  t = o._getAltTextMetadata().noDescriptionImageIDs
                 t[0] &&
-                  (c._scribe(ai(ai({}, Ai), {}, { action: 'accepted' })),
+                  (o._scribe(ai(ai({}, Ai), {}, { action: 'accepted' })),
                   e.push('/compose/tweet/media', { mediaId: t[0], cropTabEnabled: !1, showAllMedia: !0 }))
               }),
-              _()(p()(c), '_handleIgnoreAltTextPrompt', function () {
-                c._scribe(ai(ai({}, Ai), {}, { action: 'declined' })),
-                  c.setState({ showAltTextPrompt: !1 }),
-                  c._handleTweetOrRetweet()
+              _()(p()(o), '_handleIgnoreAltTextPrompt', function () {
+                o._scribe(ai(ai({}, Ai), {}, { action: 'declined' })),
+                  o.setState({ showAltTextPrompt: !1 }),
+                  o._handleTweetOrRetweet()
               }),
-              _()(p()(c), '_handleCancelAltTextPrompt', function () {
-                c._scribe(ai(ai({}, Ai), {}, { action: 'cancel' })),
-                  c.setState({ showAltTextPrompt: !1 }, function () {
-                    c._restoreFocusToActiveComposer()
+              _()(p()(o), '_handleCancelAltTextPrompt', function () {
+                o._scribe(ai(ai({}, Ai), {}, { action: 'cancel' })),
+                  o.setState({ showAltTextPrompt: !1 }, function () {
+                    o._restoreFocusToActiveComposer()
                   })
               }),
-              _()(p()(c), '_restoreFocusToActiveComposer', function () {
-                var e = c.props.activeComposerIndex
-                void 0 !== e && c._composerRefs[e] && c._composerRefs[e].focus()
+              _()(p()(o), '_restoreFocusToActiveComposer', function () {
+                var e = o.props.activeComposerIndex
+                void 0 !== e && o._composerRefs[e] && o._composerRefs[e].focus()
               }),
-              _()(p()(c), '_close', function () {
-                var e = c.props,
+              _()(p()(o), '_close', function () {
+                var e = o.props,
                   t = e.history,
                   n = e.isSending,
                   r = e.onCloseComposer
-                n || c._resetDraft(),
-                  c.state.navigatingToOutbox
-                    ? c._canSaveDraft
+                n || o._resetDraft(),
+                  o.state.navigatingToOutbox
+                    ? o._canSaveDraft
                       ? t.push('/compose/tweet/unsent/drafts')
                       : t.push('/compose/tweet/unsent/scheduled')
                     : r && r()
               }),
-              _()(p()(c), '_handleComposerFocus', function (e) {
-                c._composerRefs[e]
-                  ? c.props.updateActiveComposerIndex(e)
+              _()(p()(o), '_handleComposerFocus', function (e) {
+                o._composerRefs[e]
+                  ? o.props.updateActiveComposerIndex(e)
                   : setTimeout(function () {
-                      c._restoreFocusToActiveComposer()
+                      o._restoreFocusToActiveComposer()
                     }, 0)
               }),
-              _()(p()(c), '_handleFocus', function () {
-                c.state.focused ||
-                  (c.isInlineReply && c._scribe({ element: 'inline_reply', action: 'reply' }),
-                  c.setState({ focused: !0 }))
+              _()(p()(o), '_handleFocus', function () {
+                o.state.focused ||
+                  (o.isInlineReply && o._scribe({ element: 'inline_reply', action: 'reply' }),
+                  o.setState({ focused: !0 }))
               }),
-              _()(p()(c), '_handleTypeaheadStateChange', function (e) {
-                c.setState({ typeaheadActive: e })
+              _()(p()(o), '_handleTypeaheadStateChange', function (e) {
+                o.setState({ typeaheadActive: e })
               }),
-              _()(p()(c), '_handleRemoveComposer', function () {
-                var e = c.props,
+              _()(p()(o), '_handleRemoveComposer', function () {
+                var e = o.props,
                   t = e.activeComposerIndex,
                   n = e.composerData,
                   r = e.history,
                   a = e.location,
-                  o = e.removeComposer
+                  i = e.removeComposer
                 0 === t &&
                   n[0].quotedStatus &&
-                  r.replace({ pathname: a.pathname, state: Object(Zo.a)(a.state || {}, 'quotedStatus') }),
-                  o(),
-                  setTimeout(c._restoreFocusToActiveComposer)
+                  r.replace({ pathname: a.pathname, state: Object(Yo.a)(a.state || {}, 'quotedStatus') }),
+                  i(),
+                  setTimeout(o._restoreFocusToActiveComposer)
               }),
-              _()(p()(c), '_handleViewRecipients', function () {
-                var e = c.props,
+              _()(p()(o), '_handleViewRecipients', function () {
+                var e = o.props,
                   t = e.excludedRecipients,
                   n = e.history,
                   r = e.inReplyToStatus
-                c._setActiveParentKey(),
+                o._setActiveParentKey(),
                   n.push({
                     pathname: '/compose/tweet/recipients',
                     state: { excludedRecipients: t, inReplyToStatus: r },
                   })
               }),
-              _()(p()(c), '_handleTextChange', function (e, t) {
-                var n = c.state.textMap,
-                  r = c.props,
+              _()(p()(o), '_handleTextChange', function (e, t) {
+                var n = o.state.textMap,
+                  r = o.props,
                   a = r.activeComposerIndex,
-                  o = r.isInline,
-                  i = r.setValidity
+                  i = r.isInline,
+                  c = r.setValidity
                 if (
-                  (c.setState({ textMap: ai(ai({}, n), {}, _()({}, t, e)) }, function () {
-                    i && i(c._areComposersValid())
+                  (o.setState({ textMap: ai(ai({}, n), {}, _()({}, t, e)) }, function () {
+                    c && c(o._areComposersValid())
                   }),
-                  c.setState({ errorMessage: void 0 }),
+                  o.setState({ errorMessage: void 0 }),
                   vt.b.isIOS())
                 ) {
-                  var s = o ? 0 : a
-                  c._updateSingleComposer({ text: e }, s)
+                  var s = i ? 0 : a
+                  o._updateSingleComposer({ text: e }, s)
                 }
               }),
               _()(
-                p()(c),
+                p()(o),
                 '_handleTextOnBlur',
                 Object(Jn.a)(function (e, t) {
                   return function () {
-                    var n = c.state,
+                    var n = o.state,
                       r = n.textMap,
                       a = n.tweetsSentOrScheduled,
-                      o = c.props.composerData,
-                      i = r[e],
-                      s = o.some(function (t) {
+                      i = o.props.composerData,
+                      c = r[e],
+                      s = i.some(function (t) {
                         return t.key === e
                       })
-                    'string' == typeof i && !a && s && c._updateSingleComposer({ text: i }, t)
+                    'string' == typeof c && !a && s && o._updateSingleComposer({ text: c }, t)
                   }
                 }),
               ),
-              _()(p()(c), '_updateAudienceControlsValue', function (e) {
-                var t = c.props,
+              _()(p()(o), '_updateAudienceControlsValue', function (e) {
+                var t = o.props,
                   n = t.composerData,
                   r = t.updateAudienceControlsValue,
-                  a = c.state.errorMessage
+                  a = o.state.errorMessage
                 switch (e._type) {
                   case 'conversation_controls':
-                    if (!c._conversationControlsCreationEnabled) return
+                    if (!o._conversationControlsCreationEnabled) return
                     break
                   case 'community_members':
-                    if (!c._isCommunitiesEnabled) return
+                    if (!o._isCommunitiesEnabled) return
                     n[0].pollActive &&
-                      (c._updateSingleComposer({ pollActive: !1 }, 0), c.setState({ errorMessage: { text: ii } })),
-                      (null == a ? void 0 : a.text) === ii && c.setState({ errorMessage: void 0 })
+                      (o._updateSingleComposer({ pollActive: !1 }, 0), o.setState({ errorMessage: { text: ii } })),
+                      (null == a ? void 0 : a.text) === ii && o.setState({ errorMessage: void 0 })
                 }
-                r(e, c._getParentKey())
+                r(e, o._getParentKey())
               }),
-              _()(p()(c), '_renderProgressBar', function () {
-                var e = c.props,
+              _()(p()(o), '_renderProgressBar', function () {
+                var e = o.props,
                   t = e.isSending,
                   n = e.sendingProgress
-                return C.createElement(Ko.a, { progress: t ? Math.max(n, 0.02) : 0, style: Bi.progressBar })
+                return C.createElement(Xo.a, { progress: t ? Math.max(n, 0.02) : 0, style: Bi.progressBar })
               }),
-              _()(p()(c), '_updateConvoCardState', function () {
-                var e = c.props,
+              _()(p()(o), '_updateConvoCardState', function () {
+                var e = o.props,
                   t = e.convoCardData,
                   n = e.updateConvoCardState
                 if (t) {
@@ -6276,45 +6275,46 @@
                   a && r && n(r, { cardState: a })
                 }
               }),
-              _()(p()(c), '_attachExternalMedia', function (e) {
+              _()(p()(o), '_attachExternalMedia', function (e) {
                 return function (t) {
                   return Promise.all(
                     t.map(function (e) {
                       return Object(za.a)(e)
                     }),
-                  ).then(c._handleAddMediaFiles(e))
+                  ).then(o._handleAddMediaFiles(e))
                 }
               }),
-              _()(p()(c), '_handleAddMediaFiles', function (e) {
+              _()(p()(o), '_handleAddMediaFiles', function (e) {
                 return function (t) {
                   var r,
                     a,
-                    o = c.props,
-                    i = o.addMedia,
-                    s = o.addToast,
-                    l = o.composerData,
-                    u = o.dataSaverMode,
-                    d = o.preUploadMedia,
-                    m = o.processMultipleMedia,
-                    h = o.removeMediaUpload,
-                    f = l[e],
-                    v = f.pollActive,
-                    y = Object(ei.e)(
-                      null === (r = p()(c)) || void 0 === r || null === (a = r.context) || void 0 === a
+                    i = o.props,
+                    c = i.addMedia,
+                    s = i.addToast,
+                    l = i.composerData,
+                    u = i.dataSaverMode,
+                    d = i.preUploadMedia,
+                    p = i.processMultipleMedia,
+                    m = i.removeMediaUpload,
+                    h = l[e],
+                    f = h.pollActive,
+                    v =
+                      ((null === (r = o.context) || void 0 === r || null === (a = r.userClaims) || void 0 === a
                         ? void 0
-                        : a.userClaims,
-                    )
-                  v ||
-                    i(t, { location: ei.d.Tweet, canUploadLongVideo: y }).then(function (t) {
+                        : a.isTrueAndEnabled('subscriptions_long_video_upload')) &&
+                        vt.b.isDesktopOS()) ||
+                      !1
+                  f ||
+                    c(t, { location: Xa.d.Tweet, canUploadLongVideo: v }).then(function (t) {
                       var r = t.map(function (e) {
                         return e.id
                       })
-                      if (n._validateMedia(f, t)) {
-                        var a = f.media.map(function (e) {
+                      if (n._validateMedia(h, t)) {
+                        var a = h.media.map(function (e) {
                           return e.id
                         })
-                        c._updateSingleComposer({ mediaIds: Object(Qo.a)(a.concat(r)) }, e),
-                          m(t, { onFailure: c._handleMediaRemoveFactory(e) }).then(function (e) {
+                        o._updateSingleComposer({ mediaIds: Object(Jo.a)(a.concat(r)) }, e),
+                          p(t, { onFailure: o._handleMediaRemoveFactory(e) }).then(function (e) {
                             u ||
                               d(
                                 e.map(function (e) {
@@ -6322,74 +6322,74 @@
                                 }),
                               )
                           })
-                      } else s({ text: Pi }), h(r)
+                      } else s({ text: Pi }), m(r)
                     })
                 }
               }),
-              _()(p()(c), '_handleMediaRemoveFactory', function (e) {
+              _()(p()(o), '_handleMediaRemoveFactory', function (e) {
                 return function (t) {
-                  return c._handleMediaRemove(e, t)
+                  return o._handleMediaRemove(e, t)
                 }
               }),
-              _()(p()(c), '_handleMediaRemove', function (e, t) {
-                var n = c.props,
+              _()(p()(o), '_handleMediaRemove', function (e, t) {
+                var n = o.props,
                   r = n.composerData,
                   a = n.removeMediaUpload,
-                  o = r[e],
-                  i = o.media,
-                  s = o.mediaTags,
+                  i = r[e],
+                  c = i.media,
+                  s = i.mediaTags,
                   l = (function (e) {
                     for (var t = arguments.length, n = new Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++)
                       n[r - 1] = arguments[r]
-                    return Object(Jo.a)(e, n)
+                    return Object($o.a)(e, n)
                   })(
-                    i.map(function (e) {
+                    c.map(function (e) {
                       return e.id
                     }),
                     t,
                   ),
                   u = l.length > 0 ? s : []
-                c._updateSingleComposer({ mediaIds: l, gifMetadata: void 0, mediaTags: u }, e),
+                o._updateSingleComposer({ mediaIds: l, gifMetadata: void 0, mediaTags: u }, e),
                   a(t),
-                  c.setState({ errorMessage: void 0 })
+                  o.setState({ errorMessage: void 0 })
               }),
-              _()(p()(c), '_setComposerRef', function (e) {
+              _()(p()(o), '_setComposerRef', function (e) {
                 return function (t) {
-                  c._composerRefs[e] = t
+                  o._composerRefs[e] = t
                 }
               }),
-              _()(p()(c), '_shouldBeExpanded', function () {
-                var e = c.props,
+              _()(p()(o), '_shouldBeExpanded', function () {
+                var e = o.props,
                   t = e.composerData,
                   n = e.parentTweetId
-                if (c.state.focused) return !0
-                var r = !Object(ut.c)(c._getSingleComposerDataWithLatestText(t[0]))
+                if (o.state.focused) return !0
+                var r = !Object(ut.c)(o._getSingleComposerDataWithLatestText(t[0]))
                 return !n || r
               }),
-              _()(p()(c), '_areComposersValid', function () {
-                var e = c.props,
+              _()(p()(o), '_areComposersValid', function () {
+                var e = o.props,
                   t = e.audienceControlsValue._type,
                   n = e.composerData,
                   r = n[0].quotedStatus,
                   a = null == r ? void 0 : r.community_id_str,
-                  o = 'community_members' === t
+                  i = 'community_members' === t
                 return (
-                  (c.isRetweet && !a && !o) ||
+                  (o.isRetweet && !a && !i) ||
                   n.every(function (e) {
-                    return Object(ut.e)(c._getSingleComposerDataWithLatestText(e))
+                    return Object(ut.e)(o._getSingleComposerDataWithLatestText(e))
                   })
                 )
               }),
-              _()(p()(c), '_areComposersEmptyOrUnchanged', function () {
-                var e = c.props,
+              _()(p()(o), '_areComposersEmptyOrUnchanged', function () {
+                var e = o.props,
                   t = e.composerData,
                   n = e.prepopulatedText
                 return t.every(function (e) {
-                  return Object(ut.d)(c._getSingleComposerDataWithLatestText(e), n)
+                  return Object(ut.d)(o._getSingleComposerDataWithLatestText(e), n)
                 })
               }),
-              _()(p()(c), '_getAltTextMetadata', function () {
-                var e = c.props.composerData,
+              _()(p()(o), '_getAltTextMetadata', function () {
+                var e = o.props.composerData,
                   t = { numberOfDescriptionsMissing: 0, numberOfImages: 0, noDescriptionImageIDs: [] }
                 return (
                   e.forEach(function (e) {
@@ -6412,14 +6412,12 @@
                   t
                 )
               }),
-              _()(p()(c), '_getSingleComposerDataWithLatestText', function (e) {
-                var t = c.state.textMap
+              _()(p()(o), '_getSingleComposerDataWithLatestText', function (e) {
+                var t = o.state.textMap
                 return 'string' == typeof t[e.key] ? ai(ai({}, e), {}, { text: t[e.key] }) : e
-              })
-            var l = !(null === (a = e.location.state) || void 0 === a || !a.focusComposer)
-            return (
-              (c.state = {
-                focused: l,
+              }),
+              (o.state = {
+                focused: !1,
                 showAltTextPrompt: !1,
                 showDiscardTweetConfirmation: !1,
                 showToxicReplyNudge: !1,
@@ -6428,21 +6426,21 @@
                 typeaheadActive: !1,
                 shouldDisableButton: !1,
               }),
-              (c._composerRefs = {}),
-              (c._conversationControlsCreationEnabled =
+              (o._composerRefs = {}),
+              (o._conversationControlsCreationEnabled =
                 !0 ===
-                c.context.featureSwitches.getValueWithoutScribeImpression(
+                o.context.featureSwitches.getValueWithoutScribeImpression(
                   'conversation_controls_limited_replies_creation_enabled',
                 )),
-              (c._throttledSyncTexts = Object($n.a)(c._syncTexts, 1e3, { leading: !0, trailing: !1 })),
-              (c._keyCommandHandlers =
-                ((o = {}), _()(o, ti.b, c.handleTweetOrRetweet), _()(o, ti.a, c.handleDismissComposer), o)),
-              (c._keyCommandHandlersForActiveTypeahead = _()({}, ti.b, c.handleTweetOrRetweet)),
-              (c._isAltTextNudgeEnabled =
+              (o._throttledSyncTexts = Object($n.a)(o._syncTexts, 1e3, { leading: !0, trailing: !1 })),
+              (o._keyCommandHandlers =
+                ((a = {}), _()(a, ti.b, o.handleTweetOrRetweet), _()(a, ti.a, o.handleDismissComposer), a)),
+              (o._keyCommandHandlersForActiveTypeahead = _()({}, ti.b, o.handleTweetOrRetweet)),
+              (o._isAltTextNudgeEnabled =
                 !0 ===
-                c.context.featureSwitches.getValueWithoutScribeImpression('responsive_web_alt_text_nudges_enabled')),
-              (c._isCommunitiesEnabled = c.context.featureSwitches.isTrue('c9s_enabled')),
-              c
+                o.context.featureSwitches.getValueWithoutScribeImpression('responsive_web_alt_text_nudges_enabled')),
+              (o._isCommunitiesEnabled = o.context.featureSwitches.isTrue('c9s_enabled')),
+              o
             )
           }
           return (
@@ -6484,7 +6482,7 @@
                       query: Object($r.b)(c.query),
                       search: '',
                       pathname: c.pathname,
-                      state: Object(Zo.a)(Object($r.b)(c.state || {}), [
+                      state: Object(Yo.a)(Object($r.b)(c.state || {}), [
                         'defaultText',
                         'externalMedia',
                         'externalMediaFiles',
@@ -6515,7 +6513,7 @@
                     i.length > 0 && i !== e.externalMedia
                       ? this._attachExternalMedia(0)(i)
                       : c.length > 0 && c !== e.externalMediaFiles && this._handleAddMediaFiles(0)(c),
-                    d && !Object($o.a)(a, e.composerData) && d && d(this._areComposersValid()),
+                    d && !Object(ei.a)(a, e.composerData) && d && d(this._areComposersValid()),
                     u !== e.replyPressToggle && o(l)
                 },
               },
@@ -6569,11 +6567,11 @@
                     H = F || v ? [u[N]] : u,
                     V = this._areComposersValid(),
                     U = this.hasNonCompliantQuote && this.isRetweet,
-                    z = v ? R.a : Xo.a,
+                    z = v ? R.a : Zo.a,
                     W = v ? {} : { onAnimateComplete: y ? void 0 : this._handleAnimateComplete },
                     q = D || !V || U || this.isCommunityTweetFromProtectedUser,
-                    G = (v && eo.a.isOneColumnSquishedLayout(I)) || this.isCommunityTweet,
-                    K = (v && eo.a.isOneColumnSquishedLayout(I)) || this.isCommunityTweet || this.isExclusiveTweet
+                    G = (v && to.a.isOneColumnSquishedLayout(I)) || this.isCommunityTweet,
+                    K = (v && to.a.isOneColumnSquishedLayout(I)) || this.isCommunityTweet || this.isExclusiveTweet
                   return C.createElement(
                     R.a,
                     { ref: this._setRootRef, style: !w && Bi.root },
@@ -6621,7 +6619,7 @@
                                       onPress: n.handleTweetOrRetweet,
                                       size: 'medium',
                                       style: Bi.inlineSendButton,
-                                      testID: y ? to : no,
+                                      testID: y ? no : ro,
                                       type: 'brandFilled',
                                     },
                                     Object(qa.a)({
@@ -6695,7 +6693,7 @@
                       ),
                       M
                         ? this._canSaveDraft
-                          ? C.createElement(Go.a, {
+                          ? C.createElement(Ko.a, {
                               cancelButtonLabel: Ci,
                               confirmButtonLabel: Ti,
                               headline: wi,
@@ -6704,7 +6702,7 @@
                               onMaskClick: this._handleCancelDiscardTweet,
                               text: Ei,
                             })
-                          : C.createElement(Go.a, {
+                          : C.createElement(Ko.a, {
                               confirmButtonLabel: Ci,
                               confirmButtonType: 'destructiveFilled',
                               headline: this.isThread ? bi : gi,
@@ -6899,7 +6897,7 @@
         positionCursorAtBeginning: !1,
         prepopulatedText: '',
         setValidity: function () {},
-        typeaheadWrapper: Xa.a,
+        typeaheadWrapper: Za.a,
       }),
         _()(Li, 'contextType', oe.a),
         _()(Li, '_validateMedia', function (e, t) {

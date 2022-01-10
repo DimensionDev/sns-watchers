@@ -11,14 +11,14 @@
         u = (r('JtPf'), r('7x/C'), r('87if'), r('lTEL'), r('kYxP'), r('XBtf')),
         l = {
           loader: function () {
-            return Promise.all([r.e(0), r.e(331)]).then(r.bind(null, 'a+ad'))
+            return Promise.all([r.e(0), r.e(330)]).then(r.bind(null, 'a+ad'))
           },
           loaderKey: 'newsCellLoader',
           strategy: u.a.Critical,
         },
         s = {
           loader: function () {
-            return Promise.all([r.e(0), r.e(333)]).then(r.bind(null, 'hX2d'))
+            return Promise.all([r.e(0), r.e(332)]).then(r.bind(null, 'hX2d'))
           },
           loaderKey: 'newsPreviewCardLoader',
           strategy: u.a.Critical,

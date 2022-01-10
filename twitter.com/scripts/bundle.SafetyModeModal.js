@@ -40,16 +40,16 @@
         S = n('mjJ+'),
         E = n('t62R'),
         b = n('CK8+'),
-        g = n('rHpw'),
-        y = l.a.c6cb90eb,
+        y = n('rHpw'),
+        g = l.a.c6cb90eb,
         h = l.a.a37e9b09,
         m = l.a.ccafffde,
         v = l.a.j2e184d8,
         O = l.a.fc638aa2,
         T = l.a.d94b2246,
         _ = l.a.bfea13ab,
-        w = l.a.fc209bb7,
-        A = l.a.ee95bb8d,
+        A = l.a.fc209bb7,
+        w = l.a.ee95bb8d,
         F = [
           { label: m, value: 'OneDay' },
           { label: v, value: 'ThreeDays' },
@@ -77,15 +77,15 @@
             },
             [l],
           )
-          var g = e.analytics
+          var y = e.analytics
           r.useEffect(
             function () {
-              g.scribe({ action: 'impression' })
+              y.scribe({ action: 'impression' })
             },
-            [g],
+            [y],
           )
           var m = function () {
-              g.scribe({ action: 'click', element: 'disabled' }),
+              y.scribe({ action: 'click', element: 'disabled' }),
                 i('none')
                   .then(function () {
                     return l()
@@ -101,9 +101,9 @@
                     text: e.label,
                     onClick: function () {
                       return (function (e) {
-                        g.scribe({ action: 'click', element: 'enabled' }),
+                        y.scribe({ action: 'click', element: 'enabled' }),
                           ('OneDay' !== e.value && 'ThreeDays' !== e.value && 'SevenDays' !== e.value) ||
-                            (g.scribe({ action: 'click', component: 'duration', element: e.value }),
+                            (y.scribe({ action: 'click', component: 'duration', element: e.value }),
                             i(e.value)
                               .then(function () {
                                 return l()
@@ -129,12 +129,12 @@
                 r.createElement(
                   p.a,
                   { style: M.safetyModeToggleContainer },
-                  r.createElement(E.b, { color: 'normal' }, y),
+                  r.createElement(E.b, { color: 'normal' }, g),
                   n
                     ? r.createElement(b.a, { onValueChange: m, value: n })
                     : r.createElement(
                         d.a,
-                        { accessibilityLabel: y, renderMenu: v() },
+                        { accessibilityLabel: g, renderMenu: v() },
                         r.createElement(b.a, { onValueChange: f.a, value: n }),
                       ),
                 ),
@@ -149,7 +149,7 @@
                           return Math.floor(Math.abs((t || Date.now()) - e) / 36e5) <= 1
                         })(e)
                           ? T
-                          : A({ date: w(e) }),
+                          : w({ date: A(e) }),
                       )
                     : null,
                   r.createElement(E.b, { color: 'gray700', size: 'subtext2', style: M.settingDescription }, h),
@@ -160,7 +160,7 @@
         }),
         M =
           ((t.a = C),
-          g.a.create(function (e) {
+          y.a.create(function (e) {
             return {
               border: {
                 borderStyle: 'solid',
@@ -192,7 +192,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'SafetyModeModal', function () {
-          return ce
+          return ie
         })
       n('OZaJ')
       var r = n('VrFO'),
@@ -209,14 +209,14 @@
         S = n.n(p),
         E = n('KEM+'),
         b = n.n(E),
-        g = (n('2G9S'), n('1t7P'), n('jQ/y'), n('hBvt'), n('ERkP')),
-        y = n('oEOe'),
+        y = (n('2G9S'), n('1t7P'), n('jQ/y'), n('hBvt'), n('ERkP')),
+        g = n('oEOe'),
         h = 'rweb/'.concat('convertRitoSuggestedActions'),
-        m = Object(y.a)(h, 'CALL_CONVERT_RITO_SUGGESTED_ACTIONS'),
+        m = Object(g.a)(h, 'CALL_CONVERT_RITO_SUGGESTED_ACTIONS'),
         v = function (e) {
           return function (t, n, r) {
             var a = r.api
-            return Object(y.b)(t, {
+            return Object(g.b)(t, {
               request: a.ConvertRitoSuggestedActions.callConvertRitoSuggestedActions,
               params: { userId: e },
             })({ actionTypes: m, context: 'CALL_CONVERT_RITO_SUGGESTED_ACTIONS', meta: { userId: e } })
@@ -250,12 +250,12 @@
         }
         return e
       }
-      var w = 'ritoSuggestedActionsFacePile',
-        A = 'rweb/'.concat(w),
-        F = Object(y.a)(A, 'FETCH_RITO_SUGGESTED_ACTIONS_FACEPILE'),
+      var A = 'ritoSuggestedActionsFacePile',
+        w = 'rweb/'.concat(A),
+        F = Object(g.a)(w, 'FETCH_RITO_SUGGESTED_ACTIONS_FACEPILE'),
         C = {}
       O.a.register(
-        b()({}, w, function () {
+        b()({}, A, function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : C,
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
@@ -277,7 +277,7 @@
         I = function (e) {
           return function (t, n, r) {
             var a = r.api
-            return Object(y.b)(t, {
+            return Object(g.b)(t, {
               request: a.RitoSuggestedActionsFacePile.fetchRitoSuggestedActionsFacePile,
               params: { userId: e },
             })({ actionTypes: F, context: 'FETCH_RITO_SUGGESTED_ACTIONS_FACEPILE', meta: { userId: e } })
@@ -337,7 +337,7 @@
           .withAnalytics({ page: 'safety_mode_modal' }),
         H = n('jHSc'),
         k = n('iySH'),
-        G = n.p + 'safety-mode-cone.b7ef2f95.png',
+        G = n.p + 'safety-mode-modal.2151c335.png',
         N = n('OsOl'),
         B = n('t62R'),
         z = n('cHvH'),
@@ -346,8 +346,8 @@
         Q = n('855f'),
         q = n('/yvb'),
         K = n('rHpw'),
-        V = n('3XMw'),
-        X = n.n(V),
+        X = n('3XMw'),
+        V = n.n(X),
         J = n('U+bB'),
         Z = n('MWbm')
       function $(e) {
@@ -371,25 +371,26 @@
           return f()(this, n)
         }
       }
-      var ee = X.a.d1cc8c05,
-        te = X.a.b772cd65,
-        ne = X.a.ca614405,
-        re = X.a.ga7fce66,
-        ae = X.a.g42fd3ad,
-        oe = g.createElement(
+      var ee = V.a.d1cc8c05,
+        te = V.a.b772cd65,
+        ne = V.a.c7b4a180,
+        re = V.a.ca614405,
+        ae = V.a.ga7fce66,
+        oe = V.a.g42fd3ad,
+        ce = y.createElement(
           B.b,
           null,
-          g.createElement(
-            X.a.I18NFormatMessage,
+          y.createElement(
+            V.a.I18NFormatMessage,
             { $i18n: 'j449c95b' },
-            g.createElement(
+            y.createElement(
               B.b,
               { color: 'normal', link: '/settings/safety_mode/about', size: 'subtext1', withUnderline: !0 },
-              X.a.ed5457da,
+              V.a.ed5457da,
             ),
           ),
         ),
-        ce = (function (e) {
+        ie = (function (e) {
           l()(n, e)
           var t = $(n)
           function n() {
@@ -430,59 +431,59 @@
                     n = t.count,
                     r = t.facepileUrls,
                     a = t.history
-                  return g.createElement(z.a, null, function (t) {
+                  return y.createElement(z.a, null, function (t) {
                     var o = t.screenWidth
-                    return g.createElement(
+                    return y.createElement(
                       H.b,
                       { history: a, onBackClick: e._handleBackClick, withBottomBorder: !1 },
-                      g.createElement(
+                      y.createElement(
                         Z.a,
-                        { style: W.a.isNarrowScreenWidth(o) ? se.narrowScreen : se.wideScreen },
-                        g.createElement(J.a, { accessibilityLabel: '', source: G, style: se.image }),
-                        g.createElement(
+                        { style: W.a.isNarrowScreenWidth(o) ? ue.narrowScreen : ue.wideScreen },
+                        y.createElement(J.a, { accessibilityLabel: ne, source: G, style: ue.image }),
+                        y.createElement(
                           Z.a,
-                          { style: se.header },
-                          g.createElement(B.b, { size: 'title2', weight: 'heavy' }, ee),
+                          { style: ue.header },
+                          y.createElement(B.b, { size: 'title2', weight: 'heavy' }, ee),
                         ),
                         r && n
-                          ? g.createElement(
-                              g.Fragment,
+                          ? y.createElement(
+                              y.Fragment,
                               null,
-                              g.createElement(Y.a, { style: se.facepile, userAvatarSize: 'large', userAvatarUrls: r }),
-                              g.createElement(B.b, { style: se.description }, ne({ count: Q.a.getFormattedCount(n) })),
-                              g.createElement(
+                              y.createElement(Y.a, { style: ue.facepile, userAvatarSize: 'large', userAvatarUrls: r }),
+                              y.createElement(B.b, { style: ue.description }, re({ count: Q.a.getFormattedCount(n) })),
+                              y.createElement(
                                 B.b,
                                 null,
-                                g.createElement(
-                                  X.a.I18NFormatMessage,
+                                y.createElement(
+                                  V.a.I18NFormatMessage,
                                   { $i18n: 'f81ca1f4' },
-                                  g.createElement(
+                                  y.createElement(
                                     B.b,
                                     { link: '/i/safety_mode/flagged_accounts', size: 'body', weight: 'bold' },
-                                    X.a.ac9bde9a,
+                                    V.a.ac9bde9a,
                                   ),
                                 ),
-                                g.createElement(k.a, { style: se.chevronIcon }),
+                                y.createElement(k.a, { style: ue.chevronIcon }),
                               ),
                             )
                           : null,
-                        g.createElement(
+                        y.createElement(
                           Z.a,
-                          { style: se.header },
-                          g.createElement(B.b, { size: 'title3', weight: 'heavy' }, re),
+                          { style: ue.header },
+                          y.createElement(B.b, { size: 'title3', weight: 'heavy' }, ae),
                         ),
-                        g.createElement(N.a, { withBorder: !0 }),
-                        g.createElement(Z.a, { style: se.link }, oe),
-                        g.createElement(
+                        y.createElement(N.a, { withBorder: !0 }),
+                        y.createElement(Z.a, { style: ue.link }, ce),
+                        y.createElement(
                           Z.a,
                           null,
-                          g.createElement(
+                          y.createElement(
                             q.a,
-                            { onPress: e._handleBackClick, style: se.button, type: 'primaryFilled' },
+                            { onPress: e._handleBackClick, style: ue.button, type: 'primaryFilled' },
                             te,
                           ),
                         ),
-                        g.createElement(B.b, { style: se.description }, ae),
+                        y.createElement(B.b, { style: ue.description }, oe),
                       ),
                     )
                   })
@@ -491,10 +492,10 @@
             ]),
             n
           )
-        })(g.Component),
-        ie = x(ce),
-        se =
-          ((t.default = ie),
+        })(y.Component),
+        se = x(ie),
+        ue =
+          ((t.default = se),
           K.a.create(function (e) {
             return {
               wideScreen: { marginBottom: e.spaces.space48, marginHorizontal: e.spaces.space80 },
@@ -518,7 +519,7 @@
                 marginBottom: e.spaces.space8,
                 textAlign: 'left',
               },
-              image: { height: 170, width: 154, marginVertical: e.spaces.space12, margin: 'auto' },
+              image: { minHeight: 200 },
               button: { marginTop: e.spaces.space48, marginBottom: e.spaces.space32 },
             }
           }))
@@ -529,10 +530,10 @@
         return b
       }),
         n.d(t, 'b', function () {
-          return g
+          return y
         }),
         n.d(t, 'd', function () {
-          return y
+          return g
         }),
         n.d(t, 'a', function () {
           return h
@@ -614,10 +615,10 @@
       var b = function (e) {
           return e.safetyMode || {}
         },
-        g = function (e) {
+        y = function (e) {
           return e.safetyMode.fetchSettingsFetchStatus
         },
-        y = function (e) {
+        g = function (e) {
           return e.safetyMode.updateSettingsFetchStatus
         },
         h = function () {

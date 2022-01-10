@@ -52,8 +52,8 @@
         d = n.n(f),
         p = n('N+ot'),
         y = n.n(p),
-        m = n('AuHH'),
-        b = n.n(m),
+        b = n('AuHH'),
+        m = n.n(b),
         h = n('KEM+'),
         v = n.n(h),
         O = (n('2G9S'), n('ERkP')),
@@ -77,7 +77,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return Promise.all([n.e(6), n.e(213)]).then(n.bind(null, 'RfPh'))
+              return Promise.all([n.e(6), n.e(212)]).then(n.bind(null, 'RfPh'))
             },
             loaderKey: 'defaultNotificationLoader',
             strategy: n('XBtf').a.Critical,
@@ -193,9 +193,9 @@
         })()
         return function () {
           var n,
-            r = b()(e)
+            r = m()(e)
           if (t) {
-            var o = b()(this).constructor
+            var o = m()(this).constructor
             n = Reflect.construct(r, arguments, o)
           } else n = r.apply(this, arguments)
           return y()(this, n)
@@ -238,14 +238,7 @@
                 }
               }),
               v()(l()(e), '_renderEmptyTimeline', function () {
-                return O.createElement(T.a, {
-                  header: q,
-                  message: e._getEmptyMessageBody(),
-                  onImpression: e._handleEmptyTimelineImpression,
-                })
-              }),
-              v()(l()(e), '_handleEmptyTimelineImpression', function () {
-                e.props.analytics.scribe({ component: 'empty_message', action: 'impression' })
+                return O.createElement(T.a, { header: q, message: e._getEmptyMessageBody() })
               }),
               v()(l()(e), '_handleAtTop', function () {
                 e._updateLastReadIfNeeded()
@@ -372,8 +365,8 @@
         d = n('3XMw'),
         p = n.n(d),
         y = n('5FtR'),
-        m = n('wytG'),
-        b = n('+Bsv'),
+        b = n('wytG'),
+        m = n('+Bsv'),
         h = n('VS6U'),
         v = n('7JQg'),
         O = n('mw9i'),
@@ -387,20 +380,20 @@
         I = '/notifications',
         _ = '/notifications/mentions',
         C = '/notifications/verified',
-        L = r.createElement(b.a, { pullRight: !0, to: '/settings/notifications' }),
+        L = r.createElement(m.a, { pullRight: !0, to: '/settings/notifications' }),
         R = p.a.eb75875d,
         k = Object(s.a)(
-          Object(m.a)(function () {
+          Object(b.a)(function () {
             return Promise.resolve().then(n.bind(null, 'hCg+'))
           }),
         ),
         x = Object(s.a)(
-          Object(m.a)(function () {
+          Object(b.a)(function () {
             return Promise.resolve().then(n.bind(null, 'lGAB'))
           }),
         ),
         S = Object(s.a)(
-          Object(m.a)(function () {
+          Object(b.a)(function () {
             return Promise.resolve().then(n.bind(null, 'srGC'))
           }),
         ),
@@ -459,7 +452,7 @@
             r = n && s.a.select(e, n)
           return r ? Object(l.f)(e, r) : void 0
         },
-        m = Object(f.a)()
+        b = Object(f.a)()
           .propsFromState(function () {
             return { community: y, hydratedTweet: s.a.createHydratedTweetSelector(p) }
           })
@@ -471,10 +464,10 @@
               fetchCommunityIfNeeded: l.b.fetchOneIfNeeded,
             }
           }),
-        b = n('YeIG'),
+        m = n('YeIG'),
         h = n('uCxL'),
         v = n('x5Pi'),
-        O = m(function (e) {
+        O = b(function (e) {
           var t = e.community,
             n = e.createLocalApiErrorHandler,
             r = e.fetchCommunityIfNeeded,
@@ -494,13 +487,13 @@
             p = null == a ? void 0 : a.community_id_str
           c.useEffect(
             function () {
-              p && Object(b.a)(t) && r(p).catch(n())
+              p && Object(m.a)(t) && r(p).catch(n())
             },
             [t, p, n, r],
           )
           var y = f.isTrue('responsive_web_alt_text_badge_enabled'),
-            m = a && Object(v.f)(a, d, t),
-            O = m && Object(v.e)(m),
+            b = a && Object(v.f)(a, d, t),
+            O = b && Object(v.e)(b),
             w = f.isTrue('responsive_web_reactions_enabled')
           return c.createElement(
             h.a,
@@ -533,8 +526,8 @@
         d = n.n(f),
         p = n('N+ot'),
         y = n.n(p),
-        m = n('AuHH'),
-        b = n.n(m),
+        b = n('AuHH'),
+        m = n.n(b),
         h = n('KEM+'),
         v = n.n(h),
         O =
@@ -552,9 +545,9 @@
         })()
         return function () {
           var n,
-            r = b()(e)
+            r = m()(e)
           if (t) {
-            var o = b()(this).constructor
+            var o = m()(this).constructor
             n = Reflect.construct(r, arguments, o)
           } else n = r.apply(this, arguments)
           return y()(this, n)
@@ -678,7 +671,7 @@
         }
         return n
       }
-      function m(e) {
+      function b(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
@@ -693,7 +686,7 @@
         }
         return e
       }
-      var b = 'APP_UPDATE_NOTIFICATION_LAST_READ',
+      var m = 'APP_UPDATE_NOTIFICATION_LAST_READ',
         h = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : d.a.All
           return Object(p.a)({
@@ -704,7 +697,7 @@
             getEndpointParams: function (t) {
               t.polling
               var n = i()(t, ['polling'])
-              return m({ type: e }, n)
+              return b({ type: e }, n)
             },
             context: 'FETCH_NOTIFICATIONS_TIMELINE',
             perfKey: 'notifications',
@@ -721,7 +714,7 @@
             if (l) {
               var d = { cursor: c.g(l), type: e },
                 p = t(
-                  Object(s.createLocalApiErrorHandlerWithContextFactory)(b)(
+                  Object(s.createLocalApiErrorHandlerWithContextFactory)(m)(
                     o()({}, u.a.AppInReadOnlyMode, { customAction: f.a }),
                   ),
                 )

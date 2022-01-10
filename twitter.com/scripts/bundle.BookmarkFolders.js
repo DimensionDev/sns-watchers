@@ -717,7 +717,8 @@
             {
               onPress: function () {
                 var t = e.addToast,
-                  r = e.history
+                  r = e.history,
+                  n = e.location
                 f
                   ? i(m, { tweetId: l }).then(
                       function () {
@@ -738,7 +739,7 @@
                         s.scribe({ component: 'bookmark_folder', element: 'add', action: 'error' })
                       },
                     ),
-                  r.goBackThroughModals()
+                  r.goBackThroughModals({ location: n })
               },
               style: [x.root, x.paddingHorizontal, x.contentContainer],
             },
@@ -855,8 +856,9 @@
               p()(l()(e), '_renderBookmarkFolder', function (t) {
                 var r = e.props,
                   n = r.history,
-                  o = r.tweetId
-                return k.createElement(H, { bookmarkFolderId: t, history: n, key: t, tweetId: o })
+                  o = r.location,
+                  a = r.tweetId
+                return k.createElement(H, { bookmarkFolderId: t, history: n, key: t, location: o, tweetId: a })
               }),
               e
             )
@@ -1319,27 +1321,28 @@
             n = e.createBookmarkFolder,
             a = e.createLocalApiErrorHandler,
             s = e.history,
-            u = e.tweetId,
-            d = i.useState(''),
-            m = c()(d, 2),
-            f = m[0],
-            b = m[1],
-            p = Object(v.a)()
+            u = e.location,
+            d = e.tweetId,
+            m = i.useState(''),
+            f = c()(m, 2),
+            b = f[0],
+            p = f[1],
+            k = Object(v.a)()
           i.useEffect(function () {
-            p.scribePageImpression({ component: 'bookmark_folders_create', action: 'show' })
+            k.scribePageImpression({ component: 'bookmark_folders_create', action: 'show' })
           }, [])
-          var k = function (e) {
-              p.scribe({ component: 'bookmark_folders_create', element: 'done', action: 'click' })
-              var o = f.trim()
+          var C = function (e) {
+              k.scribe({ component: 'bookmark_folders_create', element: 'done', action: 'click' })
+              var o = b.trim()
               o &&
                 (n(o)
                   .then(function (e) {
-                    if (u) {
+                    if (d) {
                       var n,
                         o = null == e || null === (n = e.bookmark_collection_create) || void 0 === n ? void 0 : n.id
                       if (o) {
                         var a
-                        r(o, { tweetId: u })
+                        r(o, { tweetId: d })
                         var c = _({
                           bookmarkFolderName:
                             (null == e || null === (a = e.bookmark_collection_create) || void 0 === a
@@ -1351,13 +1354,13 @@
                     }
                   })
                   .catch(function (e) {
-                    return C(e)
+                    return P(e)
                   }),
-                s.goBackThroughModals())
+                s.goBackThroughModals({ location: u }))
             },
-            C = function (e) {
+            P = function (e) {
               var t
-              p.scribe({ component: 'bookmark_folders_create', action: 'error' }),
+              k.scribe({ component: 'bookmark_folders_create', action: 'error' }),
                 a(((t = {}), o()(t, l.a.GenericBadRequest, { toast: { text: j } }), o()(t, 'showToast', !0), t))(e)
             }
           return i.createElement(
@@ -1366,11 +1369,11 @@
               backButtonType: 'back',
               documentTitle: w,
               onBackClick: function () {
-                p.scribe({ component: 'bookmark_folders_create', element: 'cancel', action: 'click' }), s.goBack()
+                k.scribe({ component: 'bookmark_folders_create', element: 'cancel', action: 'click' }), s.goBack()
               },
               rightControl: i.createElement(
                 g.a,
-                { disabled: '' === f.trim(), onPress: k, size: 'small', type: 'primaryFilled' },
+                { disabled: '' === b.trim(), onPress: C, size: 'small', type: 'primaryFilled' },
                 O,
               ),
               title: w,
@@ -1379,14 +1382,14 @@
               accessibilityLabel: F,
               autoFocus: !0,
               errorText: B,
-              invalid: f.length > 0 && '' === f.trim(),
+              invalid: b.length > 0 && '' === b.trim(),
               label: F,
               maxLength: 25,
               name: 'name',
               onChange: function (e) {
-                b(e.target.value)
+                p(e.target.value)
               },
-              onSubmitEditing: k,
+              onSubmitEditing: C,
             }),
           )
         },

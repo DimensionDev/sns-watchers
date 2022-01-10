@@ -6432,7 +6432,7 @@
       t.a = function (e) {
         return r.createElement(
           B.b,
-          { clickMaskToClose: !1, modalSize: 'fitChildren', style: N.modal },
+          { clickMaskToClose: !1, location: e.location, modalSize: 'fitChildren', style: N.modal },
           r.createElement(F, e),
         )
       }
@@ -13317,54 +13317,55 @@
                 value: function () {
                   var e = this.props,
                     t = e.errorDialog,
-                    n = e.onNavigate,
-                    r = e.passthroughOcfScreenProps,
-                    o = e.subtask,
-                    i = e.subtaskInputs,
-                    s = o.next_link,
-                    c = o.primary_text,
-                    l = o.secondary_text,
-                    u = o.skip_link,
-                    d = _.createElement(
+                    n = e.location,
+                    r = e.onNavigate,
+                    o = e.passthroughOcfScreenProps,
+                    i = e.subtask,
+                    s = e.subtaskInputs,
+                    c = i.next_link,
+                    l = i.primary_text,
+                    u = i.secondary_text,
+                    d = i.skip_link,
+                    p = _.createElement(
                       S.a,
                       {
-                        disabled: !u && !this.state.mediaId,
+                        disabled: !d && !this.state.mediaId,
                         onPress: this._handleDoneButtonClick,
                         size: 'large',
                         type: 'primaryFilled',
                       },
-                      s.label,
+                      c.label,
                     ),
-                    p =
-                      u &&
+                    f =
+                      d &&
                       _.createElement(
                         S.a,
                         { onPress: this._handleSkipButtonClick, size: 'large', testID: ti, type: 'primaryText' },
-                        u.label,
+                        d.label,
                       )
                   return _.createElement(
                     le.a,
-                    a()({}, r, { rightControl: this.state.done || !u ? d : p }),
+                    a()({}, o, { rightControl: this.state.done || !d ? p : f }),
                     _.createElement(
                       J.a,
                       { style: ne.contentArea },
-                      c
+                      l
                         ? _.createElement(
                             Z,
-                            a()({}, c, {
+                            a()({}, l, {
                               nativeID: g.b,
-                              onNavigate: n,
+                              onNavigate: r,
                               size: 'title4',
                               style: ne.headline,
-                              subtaskInputs: i,
+                              subtaskInputs: s,
                               weight: 'bold',
                             }),
                           )
                         : null,
-                      l
+                      u
                         ? _.createElement(
                             Z,
-                            a()({}, o.secondary_text, { color: 'gray700', onNavigate: n, subtaskInputs: i }),
+                            a()({}, i.secondary_text, { color: 'gray700', onNavigate: r, subtaskInputs: s }),
                           )
                         : null,
                       this._renderMediaPickerWithPreview(),
@@ -13373,6 +13374,7 @@
                       ? _.createElement(Qo.a, {
                           circle: !0,
                           defaultAspectRatio: 1,
+                          location: n,
                           mediaId: this.state.mediaId,
                           onCancel: this._handleCropCancel,
                           onDone: this._handleCropDone,
@@ -13519,54 +13521,55 @@
                 value: function () {
                   var e = this.props,
                     t = e.errorDialog,
-                    n = e.onNavigate,
-                    r = e.passthroughOcfScreenProps,
-                    o = e.subtask,
-                    i = e.subtaskInputs,
-                    s = o.next_link,
-                    c = o.primary_text,
-                    l = o.secondary_text,
-                    u = o.skip_link,
-                    d = _.createElement(
+                    n = e.location,
+                    r = e.onNavigate,
+                    o = e.passthroughOcfScreenProps,
+                    i = e.subtask,
+                    s = e.subtaskInputs,
+                    c = i.next_link,
+                    l = i.primary_text,
+                    u = i.secondary_text,
+                    d = i.skip_link,
+                    p = _.createElement(
                       S.a,
                       {
-                        disabled: !u && !this.state.media_id,
+                        disabled: !d && !this.state.media_id,
                         onPress: this._handleDoneButtonClick,
                         size: 'large',
                         type: 'primaryFilled',
                       },
-                      s.label,
+                      c.label,
                     ),
-                    p =
-                      u &&
+                    f =
+                      d &&
                       _.createElement(
                         S.a,
                         { onPress: this._handleSkipButtonClick, size: 'large', testID: ui, type: 'primaryText' },
-                        u.label,
+                        d.label,
                       )
                   return _.createElement(
                     le.a,
-                    a()({}, r, { rightControl: this.state.done || !u ? d : p }),
+                    a()({}, o, { rightControl: this.state.done || !d ? p : f }),
                     _.createElement(
                       J.a,
                       { style: ne.contentArea },
-                      c
+                      l
                         ? _.createElement(
                             Z,
-                            a()({}, c, {
+                            a()({}, l, {
                               nativeID: g.b,
-                              onNavigate: n,
+                              onNavigate: r,
                               size: 'title4',
                               style: ne.headline,
-                              subtaskInputs: i,
+                              subtaskInputs: s,
                               weight: 'bold',
                             }),
                           )
                         : null,
-                      l
+                      u
                         ? _.createElement(
                             Z,
-                            a()({}, o.secondary_text, { color: 'gray700', onNavigate: n, subtaskInputs: i }),
+                            a()({}, i.secondary_text, { color: 'gray700', onNavigate: r, subtaskInputs: s }),
                           )
                         : null,
                       _.createElement(
@@ -13579,6 +13582,7 @@
                       this.state.showCropper && void 0 !== this.state.media_id
                         ? _.createElement(Qo.a, {
                             defaultAspectRatio: 3,
+                            location: n,
                             mediaId: this.state.media_id,
                             onCancel: this._handleCropCancel,
                             onDone: this._handleCropDone,
@@ -14256,7 +14260,7 @@
           }
         }),
         Fi = function () {
-          return n.e(334).then(n.t.bind(null, '0FX9', 7))
+          return n.e(333).then(n.t.bind(null, '0FX9', 7))
         }
       function Bi(e) {
         var t = e.errorDialog,
@@ -17385,9 +17389,15 @@
                       a()({ errorDialog: w, location: u, subtask: e.email_contacts_sync, subtaskInputs: b }, O),
                     )
                   : e.select_avatar
-                  ? _.createElement(oi, a()({ errorDialog: w, subtask: e.select_avatar, subtaskInputs: b }, O))
+                  ? _.createElement(
+                      oi,
+                      a()({ errorDialog: w, location: u, subtask: e.select_avatar, subtaskInputs: b }, O),
+                    )
                   : e.select_banner
-                  ? _.createElement(vi, a()({ errorDialog: w, subtask: e.select_banner, subtaskInputs: b }, O))
+                  ? _.createElement(
+                      vi,
+                      a()({ errorDialog: w, location: u, subtask: e.select_banner, subtaskInputs: b }, O),
+                    )
                   : e.security_key
                   ? _.createElement(Yo, a()({ errorDialog: w, subtask: e.security_key, subtaskInputs: b }, O))
                   : e.enter_date

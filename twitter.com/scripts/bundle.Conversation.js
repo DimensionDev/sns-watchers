@@ -147,7 +147,10 @@
                 e._appBarRef = t
               }),
               h()(l()(e), '_handleGoBack', function () {
-                e.props.history.goBackThroughModals()
+                var t = e.props,
+                  n = t.history,
+                  r = t.location
+                n.goBackThroughModals({ location: r })
               }),
               h()(l()(e), '_handleIFrameMessage', function (t) {
                 if (t && 'quick_promote' === t.name)
@@ -1098,7 +1101,10 @@
                 Object(Ne.k)(n)(o, c, a)
               }),
               h()(l()(e), '_handleClose', function () {
-                e.props.history.goBackThroughModals()
+                var t = e.props,
+                  n = t.history,
+                  r = t.location
+                n.goBackThroughModals({ location: r })
               }),
               e
             )
@@ -1224,7 +1230,10 @@
                 n.push(Object(Ne.i)(o, c, a, i ? Ne.c.Objective : Ne.c.Targeting))
               }),
               h()(l()(e), '_handleClose', function () {
-                e.props.history.goBackThroughModals()
+                var t = e.props,
+                  n = t.history,
+                  r = t.location
+                n.goBackThroughModals({ location: r })
               }),
               e
             )

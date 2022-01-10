@@ -977,7 +977,8 @@
         var c = o.space
         if (!c) return null
         function s() {
-          e.history.goBackThroughModals()
+          var t = e.location
+          e.history.goBackThroughModals({ location: t })
         }
         var l = We(
           We({}, e),
