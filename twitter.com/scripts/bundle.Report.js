@@ -29,7 +29,7 @@
           return x
         }),
         r.d(t, 'e', function () {
-          return N
+          return L
         }),
         r.d(t, 'i', function () {
           return H
@@ -38,10 +38,10 @@
           return F
         }),
         r.d(t, 'k', function () {
-          return G
+          return B
         }),
         r.d(t, 'h', function () {
-          return q
+          return G
         }),
         r.d(t, 'a', function () {
           return W
@@ -75,13 +75,13 @@
         p = r('xPna'),
         m = r('oEOe'),
         f = r('xCUF'),
-        v = r('ude7'),
-        _ = r('07FG'),
+        _ = r('ude7'),
+        v = r('07FG'),
         b = r('Ssj5'),
         h = r('fEA7'),
         y = r.n(h),
-        w = r('uKEd'),
-        g = r('lnti'),
+        g = r('uKEd'),
+        w = r('lnti'),
         E = r('/NU0')
       function O(e, t) {
         var r = Object.keys(e)
@@ -160,31 +160,31 @@
               ])
             t(J(b))
             var D = r(),
-              S = h || L(r(), b),
+              S = h || N(r(), b),
               x = l.k(D, S),
               P = i()(x, 1)[0] || {},
-              N = P.mediaFile,
+              L = P.mediaFile,
               H = P.mediaMetadata,
               F = C.length > 0 && C.join(','),
-              G = {}
-            N && N.isGif
-              ? (G.extraInitParams = '&media_category=dm_gif')
-              : N && N.isVideo && (G.extraInitParams = '&media_category=dm_video')
-            var B = l.p(S, G),
-              W = [t(B)],
-              V = (q(D, b) || {}).found_media_origin
+              B = {}
+            L && L.isGif
+              ? (B.extraInitParams = '&media_category=dm_gif')
+              : L && L.isVideo && (B.extraInitParams = '&media_category=dm_video')
+            var q = l.p(S, B),
+              W = [t(q)],
+              V = (G(D, b) || {}).found_media_origin
             return (
-              N && N.isGif && W.push(Object(v.a)(N)),
+              L && L.isGif && W.push(Object(_.a)(L)),
               Promise.all(W).then(
                 function (r) {
                   var n = i()(r, 2),
                     c = i()(n[0], 1)[0],
                     s = n[1],
-                    v = (null == H ? void 0 : H.altText) || (null == H ? void 0 : H.defaultAltText),
-                    h = !!v
+                    _ = (null == H ? void 0 : H.altText) || (null == H ? void 0 : H.defaultAltText),
+                    h = !!_
                   return (
                     c && (V || h)
-                      ? t(l.m(T({ media_id: c.uploadId, found_media_origin: V }, !!h && { alt_text: { text: v } })))
+                      ? t(l.m(T({ media_id: c.uploadId, found_media_origin: V }, !!h && { alt_text: { text: _ } })))
                       : Promise.resolve()
                   ).then(
                     function () {
@@ -193,15 +193,15 @@
                       if (c) {
                         var i = c.mediaFile,
                           l = void 0 === i ? {} : i,
-                          v = {
+                          _ = {
                             original_info: { width: l.width, height: l.height },
                             sizes: [{ h: l.height, w: l.width, resize: 'fit' }],
                           }
                         l.isImage
-                          ? (n.photo = T(T({}, v), {}, { media_url_https: l.url }))
+                          ? (n.photo = T(T({}, _), {}, { media_url_https: l.url }))
                           : l.isGif
-                          ? (n.animated_gif = T(T({}, v), {}, { media_url_https: s, type: 'animated_gif' }))
-                          : l.isVideo && (n.video = T(T({}, v), {}, { media_url_https: l.url, type: 'video' }))
+                          ? (n.animated_gif = T(T({}, _), {}, { media_url_https: s, type: 'animated_gif' }))
+                          : l.isVideo && (n.video = T(T({}, _), {}, { media_url_https: l.url, type: 'video' }))
                       } else I && (n.tweet = { status: r })
                       var h = (c || {}).uploadId,
                         y = M({
@@ -214,7 +214,7 @@
                         }),
                         O = T(
                           T(
-                            T(T({}, k), Object(_.a)(d) && { card_uri: d }),
+                            T(T({}, k), Object(v.a)(d) && { card_uri: d }),
                             {},
                             { conversation_id: b },
                             !r && { media_id: h },
@@ -225,11 +225,11 @@
                       U &&
                         ((O['quick_reply_response[options][id]'] = U.id),
                         (O['quick_reply_response[options][selected_id]'] = U.selected_id))
-                      var C = Object(g.a)([
+                      var C = Object(w.a)([
                         $(b),
                         { type: f.c.REQUEST },
                         { type: 'rweb/dmComposer/SEND_MESSAGE_REQUEST' },
-                        b && Object(w.b)(b, R, y),
+                        b && Object(g.b)(b, R, y),
                       ])
                       return (
                         t(C),
@@ -242,10 +242,10 @@
                               s = n.users,
                               u = r.result.conversations
                             Object(E.a)(S) && t(K(b, S))
-                            var d = Object(g.a)(
+                            var d = Object(w.a)(
                               [{ type: f.c.SUCCESS }].concat(
                                 o()(Object(p.a)({ conversations: u, entries: i, users: s, tweets: c, cards: a })),
-                                [{ type: 'rweb/dmComposer/SEND_MESSAGE_SUCCESS' }, b && Object(w.j)(b, R, e), j(b)],
+                                [{ type: 'rweb/dmComposer/SEND_MESSAGE_SUCCESS' }, b && Object(g.j)(b, R, e), j(b)],
                               ),
                             )
                             return t(d), Promise.resolve(Object.values(r.entities.entries)[0].conversation_id)
@@ -261,10 +261,10 @@
                                 sender_id: u,
                                 text: e.text,
                               }),
-                              a = Object(g.a)([
+                              a = Object(w.a)([
                                 { type: f.c.SUCCESS },
                                 { type: 'rweb/dmComposer/SEND_MESSAGE_FAILURE' },
-                                b && Object(w.b)(b, R, o),
+                                b && Object(g.b)(b, R, o),
                               ])
                             return t(a), Object(m.e)(t, r, 'ACTION_SEND_DM')
                           },
@@ -277,7 +277,7 @@
                   )
                 },
                 function (e) {
-                  return t(Object(g.a)([Object(E.a)(S) && K(b, S), te(b)])), Promise.reject(e)
+                  return t(Object(w.a)([Object(E.a)(S) && K(b, S), te(b)])), Promise.reject(e)
                 },
               )
             )
@@ -303,31 +303,31 @@
           return r ? r.cardUrl : null
         },
         P = 'rweb/dmComposer/SAVE_CARD_URL',
-        N = function (e, t) {
+        L = function (e, t) {
           return { type: P, conversationId: e, cardUrl: t }
         },
-        L = function (e, t) {
+        N = function (e, t) {
           var r = I(e, t)
           return r ? r.mediaId : null
         },
         H = function (e, t) {
-          var r = l.k(e, L(e, t))
+          var r = l.k(e, N(e, t))
           return r.length > 0 ? r[0] : null
         },
         F = function (e, t) {
           var r = I(e, t)
           return !!r && r.isUploading
         },
-        G = function (e, t) {
-          return l.l(e, L(e, t))
+        B = function (e, t) {
+          return l.l(e, N(e, t))
         },
-        q = function (e, t) {
+        G = function (e, t) {
           var r = I(e, t)
           return r ? r.gifMetadata : null
         },
-        B = 'rweb/dmComposer/ADD_MEDIA',
+        q = 'rweb/dmComposer/ADD_MEDIA',
         W = function (e, t, r) {
-          return { payload: { isUploading: !1, mediaId: i()(t, 1)[0], gifMetadata: r }, type: B, conversationId: e }
+          return { payload: { isUploading: !1, mediaId: i()(t, 1)[0], gifMetadata: r }, type: q, conversationId: e }
         },
         V = 'rweb/dmComposer/CANCEL_UPLOAD',
         X = function (e) {
@@ -360,7 +360,7 @@
             t = arguments.length > 1 ? arguments[1] : void 0,
             r = t.conversationId || 'new_group'
           switch (t.type) {
-            case B:
+            case q:
               var n = e[r] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
               return T(T({}, e), {}, d()({}, r, T(T({}, n), t.payload)))
             case z:
@@ -397,7 +397,7 @@
       'use strict'
       r.r(t),
         r.d(t, 'ReportScreen', function () {
-          return Ie
+          return Re
         })
       r('OZaJ'), r('1t7P'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
       var n = r('VrFO'),
@@ -412,13 +412,13 @@
         p = r.n(l),
         m = r('AuHH'),
         f = r.n(m),
-        v = r('KEM+'),
-        _ = r.n(v),
+        _ = r('KEM+'),
+        v = r.n(_),
         b = (r('MvUL'), r('KqXw'), r('hBpG'), r('7xRU'), r('z84I'), r('LW0h'), r('+KXO'), r('2G9S'), r('ERkP')),
         h = r('EbOo'),
         y = (r('WNMA'), r('RqPI')),
-        w = r('1YZw'),
-        g = r('aWyx'),
+        g = r('1YZw'),
+        w = r('aWyx'),
         E = r('MMRb'),
         O = r('kHBp'),
         T = r('lPpt'),
@@ -436,38 +436,32 @@
           return t.location && t.location.state && t.location.state.clientReferer
         },
         P = function (e, t) {
-          var r, n
-          return null === (r = t.location) || void 0 === r || null === (n = r.state) || void 0 === n
-            ? void 0
-            : n.previousPath
-        },
-        N = function (e, t) {
           return t.location && t.location.state && t.location.state.inboxType
         },
         L = function (e, t) {
           return t.location && t.location.state && t.location.state.scribeNamespace
         },
-        H = function (e, t) {
+        N = function (e, t) {
           return !!(t.location && t.location.state && t.location.state.isMedia) || !1
         },
-        F = function (e, t) {
+        H = function (e, t) {
           return t.location && t.location.state && t.location.state.promotedContent
         },
-        G = function (e, t) {
+        F = function (e, t) {
           return t.location && t.location.state && t.location.state.conversationSection
         },
-        q = function (e, t) {
-          return Object(j.e)(B(e, t))
-        },
         B = function (e, t) {
+          return Object(j.e)(G(e, t))
+        },
+        G = function (e, t) {
           return t.match.params.reportType
         },
-        W = function (e, t) {
+        q = function (e, t) {
           return t.match.params.reportedId
         },
-        V = function (e, t) {
-          var r = B(e, t),
-            n = W(0, t)
+        W = function (e, t) {
+          var r = G(e, t),
+            n = q(0, t)
           switch (r) {
             case j.a.Tweet:
             case j.a.AppealTweetWarning:
@@ -478,31 +472,31 @@
               return
           }
         },
-        X = function (e, t) {
-          var r = B(e, t) === j.a.User ? W(0, t) : void 0
+        V = function (e, t) {
+          var r = G(e, t) === j.a.User ? q(0, t) : void 0
           return r ? k.e.select(e, r) : void 0
         },
-        Q = function (e, t) {
+        X = function (e, t) {
           var r,
-            n = B(e, t)
+            n = G(e, t)
           if (
             ((n !== j.a.DMConversation && n !== j.a.DMMessage) ||
-              (r = n === j.a.DMConversation ? W(0, t) : t.location.state ? t.location.state.conversationId : void 0),
+              (r = n === j.a.DMConversation ? q(0, t) : t.location.state ? t.location.state.conversationId : void 0),
             r)
           ) {
             var o = Object(I.a)(e, r),
               a = (function (e, t) {
                 return y.p(e)
               })(e)
-            return Y(o, a)
+            return Q(o, a)
           }
         },
-        Y = function (e, t) {
+        Q = function (e, t) {
           var r
           if (e && e.data)
             return (
               (r =
-                e.data.type === g.a.GROUP
+                e.data.type === w.a.GROUP
                   ? '0'
                   : e.data.participants.filter(function (e) {
                       return e.user_id !== t
@@ -510,43 +504,42 @@
               { conversationId: e.data.conversation_id, reportedUserId: r }
             )
         },
-        K = function (e, t) {
-          return B(e, t) === j.a.Moment ? C.a.select(e, W(0, t)) : void 0
+        Y = function (e, t) {
+          return G(e, t) === j.a.Moment ? C.a.select(e, q(0, t)) : void 0
         },
-        z = function (e, t) {
-          var r = B(e, t) === j.a.List ? W(0, t) : void 0
+        K = function (e, t) {
+          var r = G(e, t) === j.a.List ? q(0, t) : void 0
           return r ? O.a.select(e, r) : void 0
         },
-        J = function (e, t) {
-          var r = B(e, t) === j.a.Moment ? W(0, t) : void 0
+        z = function (e, t) {
+          var r = G(e, t) === j.a.Moment ? q(0, t) : void 0
           return r ? T.a.select(e, r) : void 0
         },
-        Z = Object(D.a)()
+        J = Object(D.a)()
           .propsFromState(function () {
             return {
               canGoBack: R.a,
               clientReferer: x,
-              previousPath: P,
-              dmConversation: Q,
-              reportedId: W,
-              inboxType: N,
-              isMedia: H,
+              dmConversation: X,
+              reportedId: q,
+              inboxType: P,
+              isMedia: N,
               lang: y.n,
-              liveEvent: J,
-              moment: K,
-              list: z,
-              promotedContent: F,
-              conversationSection: G,
-              reportType: B,
-              reportSource: q,
+              liveEvent: z,
+              moment: Y,
+              list: K,
+              promotedContent: H,
+              conversationSection: F,
+              reportType: G,
+              reportSource: B,
               scribeNamespace: L,
-              tweet: V,
-              user: X,
+              tweet: W,
+              user: V,
             }
           })
           .propsFromActions(function () {
             return {
-              addToast: w.b,
+              addToast: g.b,
               block: k.e.block,
               createLocalApiErrorHandler: Object(S.createLocalApiErrorHandlerWithContextFactory)('REPORT_SCREEN'),
               fetchUpdates: E.fetchUpdates,
@@ -559,14 +552,14 @@
               unmute: k.e.unmute,
             }
           }),
-        $ = r('jHSc'),
-        ee = r('qzfk'),
-        te = r('X/yg'),
-        re = r('3XMw'),
-        ne = r.n(re),
-        oe = r('tn7R'),
-        ae = r('SrIh'),
-        ie =
+        Z = r('jHSc'),
+        $ = r('qzfk'),
+        ee = r('X/yg'),
+        te = r('3XMw'),
+        re = r.n(te),
+        ne = r('tn7R'),
+        oe = r('SrIh'),
+        ae =
           (r('yH/f'),
           Object.freeze({
             AppealTweetWarning: 'appealtweet',
@@ -579,19 +572,19 @@
             List: 'reportlist',
             User: 'reportprofile',
           })),
-        ce = r('Rp9C'),
-        se = r('X04g'),
-        ue = r('u0B7'),
-        de = r('1bnC'),
-        le = r('tJZD'),
-        pe = r('fEA7'),
-        me = r.n(pe),
-        fe = r('v6aA'),
-        ve = r('/yvb'),
+        ie = r('Rp9C'),
+        ce = r('X04g'),
+        se = r('u0B7'),
+        ue = r('1bnC'),
+        de = r('tJZD'),
+        le = r('fEA7'),
+        pe = r.n(le),
+        me = r('v6aA'),
+        fe = r('/yvb'),
         _e = r('bPFD'),
-        be = r('rHpw'),
-        he = r('P2xQ')
-      function ye(e, t) {
+        ve = r('rHpw'),
+        be = r('P2xQ')
+      function he(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -603,16 +596,16 @@
         }
         return r
       }
-      function we(e) {
+      function ye(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? ye(Object(r), !0).forEach(function (t) {
-                _()(e, t, r[t])
+            ? he(Object(r), !0).forEach(function (t) {
+                v()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : ye(Object(r)).forEach(function (t) {
+            : he(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
@@ -639,14 +632,14 @@
           return p()(this, r)
         }
       }
-      var Ee = ne.a.f1824804,
-        Oe = ne.a.h030c24b,
-        Te = ne.a.c3e6226a,
-        Ce = ne.a.a9fd20be,
-        Ae = ne.a.i2b9632d,
-        Me = ne.a.b772cd65,
-        Re = 'https://twitter.com',
-        Ie = (function (e) {
+      var we = re.a.f1824804,
+        Ee = re.a.h030c24b,
+        Oe = re.a.c3e6226a,
+        Te = re.a.a9fd20be,
+        Ce = re.a.i2b9632d,
+        Ae = re.a.b772cd65,
+        Me = 'https://twitter.com',
+        Re = (function (e) {
           d()(r, e)
           var t = ge(r)
           function r(e, n) {
@@ -654,69 +647,70 @@
             return (
               o()(this, r),
               (a = t.call(this, e, n)),
-              _()(s()(a), '_renderDoneButton', function () {
+              v()(s()(a), '_renderDoneButton', function () {
                 return a.state.isDone
-                  ? b.createElement(ve.a, { onPress: a._handleDone, size: 'xSmall', type: 'primaryFilled' }, Me)
+                  ? b.createElement(fe.a, { onPress: a._handleDone, size: 'xSmall', type: 'primaryFilled' }, Ae)
                   : void 0
               }),
-              _()(s()(a), '_handleDone', function () {
+              v()(s()(a), '_handleDone', function () {
                 var e = a.props,
                   t = e.createLocalApiErrorHandler,
                   r = e.fetchUpdates,
                   n = e.history,
                   o = e.inboxType,
-                  i = e.previousPath,
-                  c = e.reportType
-                switch ((a._scribeAction('done'), c)) {
+                  i = e.reportType
+                switch ((a._scribeAction('done'), i)) {
                   case j.a.DMConversation:
                   case j.a.DMMessage:
-                    n.replace(Object(te.e)(o)), r().catch(t({}))
+                    n.replace(Object(ee.e)(o)), r().catch(t({}))
                     break
                   default:
-                    n.replace(i || '')
+                    a._goBack()
                 }
               }),
-              _()(s()(a), '_handleBack', function () {
+              v()(s()(a), '_goBack', function () {
+                var e = a.props.history,
+                  t = Math.min(-1, a._initialHistoryLength - window.history.length - 1)
+                e.go(t)
+              }),
+              v()(s()(a), '_handleBack', function () {
                 a.props.history.goBack()
               }),
-              _()(s()(a), '_handleCancel', function () {
-                var e = a.props,
-                  t = e.history,
-                  r = e.previousPath
-                t.replace(r || '')
+              v()(s()(a), '_handleCancel', function () {
+                a._goBack()
               }),
-              _()(s()(a), '_handleUndoBlock', function (e) {
+              v()(s()(a), '_handleUndoBlock', function (e) {
                 return function () {
                   var t = a.props,
                     r = t.addToast,
                     n = t.createLocalApiErrorHandler,
                     o = t.promotedContent
                   ;(0, t.unblock)(e, { promotedContent: o }).then(function () {
-                    r({ text: Ae })
-                  }, n(ue.a))
+                    r({ text: Ce })
+                  }, n(se.a))
                 }
               }),
-              _()(s()(a), '_handleUndoMute', function (e, t) {
+              v()(s()(a), '_handleUndoMute', function (e, t) {
                 return function () {
                   var r = a.props,
                     n = r.addToast,
                     o = r.createLocalApiErrorHandler
                   ;(0, r.unmute)(e).then(function () {
-                    n({ text: Object(he.d)(t) })
+                    n({ text: Object(be.d)(t) })
                   }, o({ showToast: !0 }))
                 }
               }),
-              _()(s()(a), '_getReportTitle', function () {
+              v()(s()(a), '_getReportTitle', function () {
                 switch (a.props.reportType) {
                   case j.a.AppealTweetWarning:
-                    return Ee
+                    return we
                   case j.a.RemoveCommunityMember:
-                    return Te
-                  default:
                     return Oe
+                  default:
+                    return Ee
                 }
               }),
-              _()(s()(a), '_getReportedTweetId', function () {
+              v()(s()(a), '_getReportedTweetId', function () {
                 var e = a.props,
                   t = e.liveEvent,
                   r = e.moment,
@@ -724,7 +718,7 @@
                   o = e.tweet
                 switch (n) {
                   case j.a.Moment:
-                    var i = (t ? Object(oe.a)(t.slates) : []).find(function (e) {
+                    var i = (t ? Object(ne.a)(t.slates) : []).find(function (e) {
                       return e.tweet_id
                     })
                     return i ? i.tweet_id : r && r.cover_media && r.cover_media.tweet_id
@@ -737,7 +731,7 @@
                     return
                 }
               }),
-              _()(s()(a), '_getReportedUserId', function (e) {
+              v()(s()(a), '_getReportedUserId', function (e) {
                 var t = a.props,
                   r = t.dmConversation,
                   n = t.list,
@@ -764,10 +758,10 @@
                   case j.a.Tweet:
                     return s && s.user.id_str
                   default:
-                    return void Object(ae.a)('Unknown report type '.concat(c))
+                    return void Object(oe.a)('Unknown report type '.concat(c))
                 }
               }),
-              _()(s()(a), '_getReportedUserScreenName', function (e) {
+              v()(s()(a), '_getReportedUserScreenName', function (e) {
                 var t = a.props,
                   r = t.liveEvent,
                   n = t.moment,
@@ -788,7 +782,7 @@
                     return null == c ? void 0 : c.screen_name
                 }
               }),
-              _()(s()(a), '_getCommunityId', function () {
+              v()(s()(a), '_getCommunityId', function () {
                 var e = a.props,
                   t = e.reportType,
                   r = e.tweet
@@ -797,7 +791,7 @@
                     return null == r ? void 0 : r.community_id_str
                 }
               }),
-              _()(s()(a), '_getReportUrl', function () {
+              v()(s()(a), '_getReportUrl', function () {
                 var e = a.props,
                   t = e.clientReferer,
                   r = e.conversationSection,
@@ -812,26 +806,26 @@
                   p = e.reportType,
                   m = e.reportedId,
                   f = e.scribeNamespace,
-                  v = p === j.a.DMConversation,
-                  _ = p === j.a.DMMessage,
+                  _ = p === j.a.DMConversation,
+                  v = p === j.a.DMMessage,
                   b = p === j.a.Moment,
                   h = p === j.a.List,
                   y = a.context.featureSwitches.isTrue('responsive_web_add_impression_id_to_mute_engagement_enabled'),
-                  w = {
+                  g = {
                     client_location: [
                       null == f ? void 0 : f.page,
                       null == f ? void 0 : f.section,
                       null == f ? void 0 : f.component,
                     ].join(':'),
                     client_referer: t,
-                    client_app_id: Object(ee.a)().clientAppId,
+                    client_app_id: Object($.a)().clientAppId,
                     conversation_section: r,
                     source: l,
                     report_flow_id: a._reportFlowId,
                     reported_user_id: a._getReportedUserId(),
                     reported_tweet_id: a._getReportedTweetId(),
-                    reported_direct_message_conversation_id: (_ || v) && n && n.conversationId,
-                    reported_direct_message_id: _ && m,
+                    reported_direct_message_conversation_id: (v || _) && n && n.conversationId,
+                    reported_direct_message_id: v && m,
                     reported_moment_id: b ? (s && s.liveEventDetails.id) || (u && u.id_str) : void 0,
                     reported_list_id: h ? c && c.id_str : void 0,
                     is_promoted: !!d,
@@ -841,23 +835,23 @@
                     lang: i,
                     community_id: a._getCommunityId(),
                   },
-                  g = Object.keys(w)
+                  w = Object.keys(g)
                     .filter(function (e) {
-                      return !!w[e]
+                      return !!g[e]
                     })
                     .map(function (e) {
-                      return ''.concat(encodeURIComponent(e), '=').concat(encodeURIComponent(w[e]))
+                      return ''.concat(encodeURIComponent(e), '=').concat(encodeURIComponent(g[e]))
                     })
                     .join('&')
-                return ''.concat(Re, '/i/safety/report_story?').concat(g)
+                return ''.concat(Me, '/i/safety/report_story?').concat(w)
               }),
-              _()(s()(a), '_messageHandler', function (e) {
+              v()(s()(a), '_messageHandler', function (e) {
                 var t = a.props,
                   r = t.addToast,
                   n = t.markTweetAsReported,
                   o = t.markTweetsAsRemovedFromCommunity,
                   i = t.reportSource
-                if (e.origin === Re && 'ReportAction' === e.data.type) {
+                if (e.origin === Me && 'ReportAction' === e.data.type) {
                   var c = a.props,
                     s = c.block,
                     u = c.createLocalApiErrorHandler,
@@ -869,26 +863,26 @@
                     case 'block':
                       m &&
                         s(m, { promotedContent: l }).then(function () {
-                          r({ action: { label: de.a, onAction: a._handleUndoBlock(m) }, text: Ce })
+                          r({ action: { label: ue.a, onAction: a._handleUndoBlock(m) }, text: Te })
                         }, u(h.a))
                       break
                     case 'unfollow':
-                      m && p(m, { promotedContent: l }).catch(u(le.a))
+                      m && p(m, { promotedContent: l }).catch(u(de.a))
                       break
                     case 'mute':
                       m &&
                         d(m).then(function () {
                           var t = a._getReportedUserScreenName(e)
-                          r({ action: { label: de.a, onAction: a._handleUndoMute(m, t) }, text: Object(he.b)(t) })
+                          r({ action: { label: ue.a, onAction: a._handleUndoMute(m, t) }, text: Object(be.b)(t) })
                         }, u({ showToast: !0 }))
                       break
                     case 'complete':
                       a.setState({ isDone: !0 })
                       var f = a._getReportedTweetId()
                       f &&
-                        (i === ie.Tweet && n(f, j.b.Tombstone),
-                        i === ie.HideCommunityTweet && n(f, j.b.HiddenCommunityTweet),
-                        i === ie.RemoveCommunityMember && o(f))
+                        (i === ae.Tweet && n(f, j.b.Tombstone),
+                        i === ae.HideCommunityTweet && n(f, j.b.HiddenCommunityTweet),
+                        i === ae.RemoveCommunityMember && o(f))
                       break
                     case 'error':
                       a.setState({ isDone: !0 })
@@ -900,8 +894,9 @@
               }),
               (a.state = { isDone: !1 }),
               (a._accessedDirectly = a._wasAccessedDirectly()),
-              (a._reportFlowId = me.a.v4()),
+              (a._reportFlowId = pe.a.v4()),
               (a._reportUrl = a._accessedDirectly ? '' : a._getReportUrl()),
+              (a._initialHistoryLength = window.history.length),
               a
             )
           }
@@ -932,7 +927,7 @@
                   return this._accessedDirectly
                     ? null
                     : b.createElement(
-                        $.b,
+                        Z.b,
                         {
                           backButtonType: t ? 'close' : 'back',
                           history: e,
@@ -940,7 +935,7 @@
                           rightControl: this._renderDoneButton(),
                           title: this._getReportTitle(),
                         },
-                        b.createElement(_e.a, { allowForms: !0, src: this._reportUrl, style: be.a.absoluteFill }),
+                        b.createElement(_e.a, { allowForms: !0, src: this._reportUrl, style: ve.a.absoluteFill }),
                       )
                 },
               },
@@ -998,7 +993,7 @@
                     case j.a.User:
                       e = 'report_user'
                   }
-                  return (this._scribeNamespace = we(we({}, n), {}, { element: e })), this._scribeNamespace
+                  return (this._scribeNamespace = ye(ye({}, n), {}, { element: e })), this._scribeNamespace
                 },
               },
               {
@@ -1013,17 +1008,17 @@
                     a = e.user
                   if (r === j.a.Tweet || r === j.a.AppealTweetWarning)
                     this._scribeData = {
-                      associations: _()({}, se.a.AssociationType.ASSOCIATED_TWEET, {
+                      associations: v()({}, ce.a.AssociationType.ASSOCIATED_TWEET, {
                         association_id: o && o.id_str,
                         association_namespace: { page: null == n ? void 0 : n.page },
                       }),
                       promoted: !!t,
-                      items: o ? [ce.a.forTweet(o)] : [],
+                      items: o ? [ie.a.forTweet(o)] : [],
                     }
                   else if (r === j.a.User) {
-                    var i = a ? [ce.a.forUser(a.id_str)] : []
+                    var i = a ? [ie.a.forUser(a.id_str)] : []
                     this._scribeData = {
-                      associations: _()({}, se.a.AssociationType.ASSOCIATED_USER, { association_id: a && a.id_str }),
+                      associations: v()({}, ce.a.AssociationType.ASSOCIATED_USER, { association_id: a && a.id_str }),
                       items: i,
                       targets: i,
                     }
@@ -1035,19 +1030,19 @@
                 key: '_scribeAction',
                 value: function (e) {
                   var t = this.props.richScribeAction,
-                    r = we(
-                      we({}, this._getScribeData()),
+                    r = ye(
+                      ye({}, this._getScribeData()),
                       {},
                       { report_details: { report_flow_id: this._reportFlowId } },
                     )
-                  t(we(we({}, this._getScribeNamespace()), {}, { action: e }), r)
+                  t(ye(ye({}, this._getScribeNamespace()), {}, { action: e }), r)
                 },
               },
             ]),
             r
           )
         })(b.Component)
-      _()(Ie, 'defaultProps', {
+      v()(Re, 'defaultProps', {
         addMessageListener: function (e) {
           return window.addEventListener('message', e)
         },
@@ -1056,9 +1051,9 @@
           return window.removeEventListener('message', e)
         },
       }),
-        _()(Ie, 'contextType', fe.a)
-      var Ue = Z(Ie)
-      t.default = Ue
+        v()(Re, 'contextType', me.a)
+      var Ie = J(Re)
+      t.default = Ie
     },
     LqVV: function (e, t, r) {
       'use strict'
@@ -1101,13 +1096,13 @@
               unmute: s.e.unmute,
             }
           }),
-        v = r('kGix'),
-        _ = r('v//M'),
+        _ = r('kGix'),
+        v = r('v//M'),
         b = r('3XMw'),
         h = r.n(b),
         y = r('fs1G'),
-        w = r('rHpw'),
-        g = r('u0B7'),
+        g = r('rHpw'),
+        w = r('u0B7'),
         E = r('1bnC'),
         O = r('MWbm'),
         T = r('P2xQ'),
@@ -1125,20 +1120,19 @@
               a = e.canGoBack,
               i = e.createLocalApiErrorHandler,
               c = e.history,
-              s = e.location,
-              u = e.mute,
-              d = e.reportedScreenName,
-              l = e.reportedUserId
+              s = e.mute,
+              u = e.reportedScreenName,
+              d = e.reportedUserId
             a
-              ? (l && 'mute' === t
-                  ? u(l).then(function () {
+              ? (d && 'mute' === t
+                  ? s(d).then(function () {
                       var t, n
                       r({
                         action: {
                           label: E.a,
                           onAction:
-                            ((t = l),
-                            (n = d),
+                            ((t = d),
+                            (n = u),
                             function () {
                               var r = e.addToast,
                                 o = e.createLocalApiErrorHandler
@@ -1147,40 +1141,40 @@
                               }, o({ showToast: !0 }))
                             }),
                         },
-                        text: Object(T.b)(d),
+                        text: Object(T.b)(u),
                       })
                     }, i({ showToast: !0 }))
-                  : l &&
+                  : d &&
                     'block' === t &&
-                    n(l).then(function () {
+                    n(d).then(function () {
                       var t
                       r({
                         action: {
                           label: E.a,
                           onAction:
-                            ((t = l),
+                            ((t = d),
                             function () {
                               var r = e.addToast,
                                 n = e.createLocalApiErrorHandler
                               ;(0, e.unblock)(t).then(function () {
                                 r({ text: M })
-                              }, n(g.a))
+                              }, n(w.a))
                             }),
                         },
                         text: A,
                       })
                     }, i(o.a)),
-                c.goBackThroughModals({ location: s }))
+                c.goBackThroughModals())
               : c.push('/')
           }, []),
           n.createElement(
             O.a,
             { style: I.root },
-            n.createElement(_.a, { fetchStatus: v.a.LOADING, onRequestRetry: y.a, render: C, retryable: !1 }),
+            n.createElement(v.a, { fetchStatus: _.a.LOADING, onRequestRetry: y.a, render: C, retryable: !1 }),
           )
         )
       }
-      var I = w.a.create(function (e) {
+      var I = g.a.create(function (e) {
           return { root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, flexShrink: 1 } }
         }),
         U = f(R)
@@ -1220,10 +1214,10 @@
           return f
         }),
         r.d(t, 'f', function () {
-          return v
+          return _
         }),
         r.d(t, 'i', function () {
-          return _
+          return v
         }),
         r.d(t, 'g', function () {
           return b
@@ -1235,10 +1229,10 @@
           return y
         }),
         r.d(t, 'b', function () {
-          return w
+          return g
         }),
         r.d(t, 'd', function () {
-          return g
+          return w
         })
       r('z84I'), r('ho0z')
       var n = r('CDB5'),
@@ -1283,13 +1277,13 @@
       function f(e, t) {
         return !!(e && e.video && m(t)) && !!e.video.audio_only
       }
-      function v(e, t, r, n) {
+      function _(e, t, r, n) {
         return {
           pathname: '/i/report/dm_conversation/'.concat(e),
           state: { clientReferer: t, inboxType: n, scribeNamespace: r },
         }
       }
-      function _(e, t) {
+      function v(e, t) {
         if (!e) return { name: '', screenName: '', idStr: '' }
         var r = Object(a.a)(e, t).map(function (e) {
             return e.user
@@ -1316,12 +1310,12 @@
             return n.b(e)
           }
         },
-        w = function (e) {
+        g = function (e) {
           return function (t) {
             return n.c(e, t)
           }
         },
-        g = function (e, t) {
+        w = function (e, t) {
           var r = Object(o.a)(e, function (e) {
             return !!e.message_data && e.message_data && e.message_data.recipient_id === t
           })
@@ -1399,8 +1393,8 @@
           }),
           d = i()(u, 2),
           l = d[0],
-          v = d[1]
-        return v.length ? (a === c.a.GROUP && 1 === v.length ? [].concat(o()(l), o()(v)) : r ? v.sort(p(r)) : v) : l
+          _ = d[1]
+        return _.length ? (a === c.a.GROUP && 1 === _.length ? [].concat(o()(l), o()(_)) : r ? _.sort(p(r)) : _) : l
       }
     },
   },

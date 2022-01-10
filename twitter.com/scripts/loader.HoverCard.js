@@ -112,42 +112,43 @@
                   n = e.onAnimateComplete,
                   o = e.onDismiss,
                   a = e.show,
-                  c = e.withContentOverflow,
-                  s = e.withFixedPosition,
-                  u = e.withFocusContainer,
-                  d = e.withMask,
-                  l = e.withRoundedSides,
-                  p = e.withoutLayer,
-                  f = i.state,
-                  h = f.bottom,
-                  w = f.left,
-                  m = f.right,
-                  b = f.top,
-                  y = void 0 === b && void 0 === h,
-                  g = y || !u ? v.Fragment : R.a,
-                  _ = { top: b, bottom: h, left: w, right: m },
-                  C = [y ? z.initialRenderWrapper : s ? z.contentWrapperFixed : z.contentWrapperAbsolute, _],
-                  P = l ? z.infiniteCornerRadius : z.defaultCornerRadius,
-                  j = [z.contentRoot, P, !c && z.overflowHidden]
+                  c = e.withArrow,
+                  s = e.withContentOverflow,
+                  u = e.withFixedPosition,
+                  d = e.withFocusContainer,
+                  l = e.withMask,
+                  p = e.withRoundedSides,
+                  f = e.withoutLayer,
+                  h = i.state,
+                  w = h.bottom,
+                  m = h.left,
+                  b = h.right,
+                  y = h.top,
+                  g = void 0 === y && void 0 === w,
+                  _ = g || !d ? v.Fragment : R.a,
+                  C = { top: y, bottom: w, left: m, right: b },
+                  P = [g ? z.initialRenderWrapper : u ? z.contentWrapperFixed : z.contentWrapperAbsolute, C],
+                  j = p ? z.infiniteCornerRadius : z.defaultCornerRadius,
+                  E = [z.contentRoot, j, !s && !c && z.overflowHidden]
                 return v.createElement(
                   k.a.Provider,
                   { value: { isInHoverCard: !0 } },
-                  t ? v.createElement(D.a, { onClick: o, style: [z.mask, d && z.withMask] }) : null,
+                  t ? v.createElement(D.a, { onClick: o, style: [z.mask, l && z.withMask] }) : null,
                   v.createElement(
                     D.a,
-                    { onKeyUp: i._handleEsc, ref: i._setContentNode, style: C },
+                    { onKeyUp: i._handleEsc, ref: i._setContentNode, style: P },
                     v.createElement(
-                      g,
+                      _,
                       null,
                       v.createElement(
                         O.b,
                         { animateMount: !0, duration: 'long', onAnimateComplete: n, show: a, type: 'fade' },
                         function (e) {
                           var t = e.isAnimating
-                          return d || p
-                            ? v.createElement(D.a, { style: j }, i._renderInnerBody())
+                          return l || f
+                            ? v.createElement(D.a, { style: E }, i._renderInnerBody())
                             : v.createElement(x.a, { id: 'HoverCard', minimizeReporting: t }, function (e, t) {
-                                return v.createElement(D.a, r()({ ref: e() }, t({ style: j })), i._renderInnerBody())
+                                return v.createElement(D.a, r()({ ref: e() }, t({ style: E })), i._renderInnerBody())
                               })
                         },
                       ),

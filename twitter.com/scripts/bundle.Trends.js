@@ -216,7 +216,7 @@
           a = void 0 !== i && i
         return r.e({
           loader: function () {
-            return n.e(225).then(n.bind(null, '+92Z'))
+            return n.e(226).then(n.bind(null, '+92Z'))
           },
           loaderKey: 'trendDefaultLoader',
           loaderOptions: { withThirdPartyCards: a, errorContext: t },

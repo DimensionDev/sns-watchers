@@ -406,6 +406,7 @@
         D = P.a.create(function (e) {
           return {
             root: {
+              cursor: 'pointer',
               paddingHorizontal: e.componentDimensions.gutterHorizontal,
               paddingVertical: e.componentDimensions.gutterVertical,
               width: '100%',
