@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [53],
+  [52],
   {
     '+Bsv': function (e, t, n) {
       'use strict'
@@ -8,15 +8,15 @@
         i = n.n(a),
         o = n('M2x3'),
         c = 'settingsAppBar',
-        l = n('/yvb'),
-        u = n('rHpw'),
+        u = n('/yvb'),
+        l = n('rHpw'),
         s = i.a.bb081ea1,
         f = { viewType: 'settings_button' },
         d = r.memo(function (e) {
           var t = e.onPress,
             n = e.pullRight,
             a = e.to
-          return r.createElement(l.a, {
+          return r.createElement(u.a, {
             accessibilityLabel: s,
             behavioralEventContext: f,
             hoverLabel: { label: s },
@@ -29,7 +29,7 @@
             type: 'primaryText',
           })
         }),
-        p = u.a.create(function (e) {
+        p = l.a.create(function (e) {
           return { button: { marginVertical: 'calc(-'.concat(e.spaces.space12, ')') } }
         })
       t.a = d
@@ -89,8 +89,8 @@
         i = (n('yH/f'), n('2G9S'), n('z84I'), n('LW0h'), n('vrRf'), n('vXCH')),
         o = n('oQhu'),
         c = n('ZNT5'),
-        l = n('eR3e')
-      function u(e, t) {
+        u = n('eR3e')
+      function l(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -106,12 +106,12 @@
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? u(Object(n), !0).forEach(function (t) {
+            ? l(Object(n), !0).forEach(function (t) {
                 a()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : u(Object(n)).forEach(function (t) {
+            : l(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
@@ -129,13 +129,13 @@
             a = e.focalTweetId,
             i = e.includePageConfiguration,
             o = void 0 !== i && i,
-            l = e.initialTabId,
-            u = e.profileUserId,
+            u = e.initialTabId,
+            l = e.profileUserId,
             f = t || n || 'main',
             d = a
               ? ''.concat(p).concat(f, '-tweet-').concat(a)
-              : u
-              ? ''.concat(p).concat(f, '-user-').concat(u)
+              : l
+              ? ''.concat(p).concat(f, '-user-').concat(l)
               : ''.concat(p).concat(f),
             h = r.isTrue('responsive_web_new_client_events_enabled')
           return Object(c.a)({
@@ -153,8 +153,8 @@
                   display_location: n,
                   focal_tweet_id: a,
                   include_page_configuration: o,
-                  initial_tab_id: l,
-                  profile_user_id: u,
+                  initial_tab_id: u,
+                  profile_user_id: l,
                   entity_tokens: h,
                 },
               )
@@ -221,12 +221,12 @@
         v = function () {
           return function (e, t) {
             return e(
-              Object(l.t)(t())
+              Object(u.t)(t())
                 .filter(function (e) {
                   return 0 === e.indexOf(p)
                 })
                 .map(function (e) {
-                  return Object(l.g)(e)
+                  return Object(u.g)(e)
                 }),
             )
           }
@@ -239,26 +239,26 @@
         i = n.n(a),
         o = n('ezF+'),
         c = (n('yH/f'), Object.freeze({ Cell: 'Cell', PreviewCard: 'PreviewCard' })),
-        l = (n('JtPf'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP'), n('XBtf')),
-        u = {
+        u = (n('JtPf'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP'), n('XBtf')),
+        l = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(331)]).then(n.bind(null, 'a+ad'))
+            return n.e(332).then(n.bind(null, 'a+ad'))
           },
           loaderKey: 'newsCellLoader',
-          strategy: l.a.Critical,
+          strategy: u.a.Critical,
         },
         s = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(333)]).then(n.bind(null, 'hX2d'))
+            return n.e(334).then(n.bind(null, 'hX2d'))
           },
           loaderKey: 'newsPreviewCardLoader',
-          strategy: l.a.Critical,
+          strategy: u.a.Critical,
         }
       t.a = o.c({
         selectDisplayType: function (e) {
           return e.content.newsDisplayType
         },
-        handlers: ((r = {}), i()(r, c.Cell, u), i()(r, c.PreviewCard, s), r),
+        handlers: ((r = {}), i()(r, c.Cell, l), i()(r, c.PreviewCard, s), r),
       })
     },
     XtkE: function (e, t, n) {
@@ -271,7 +271,7 @@
           o = void 0 !== i && i
         return r.e({
           loader: function () {
-            return n.e(226).then(n.bind(null, '+92Z'))
+            return n.e(227).then(n.bind(null, '+92Z'))
           },
           loaderKey: 'trendDefaultLoader',
           loaderOptions: { withThirdPartyCards: o, errorContext: t },
@@ -291,8 +291,8 @@
         i = n.n(a),
         o = n('Y9Ll'),
         c = n.n(o),
-        l = n('1Pcy'),
-        u = n.n(l),
+        u = n('1Pcy'),
+        l = n.n(u),
         s = n('5Yy7'),
         f = n.n(s),
         d = n('N+ot'),
@@ -442,19 +442,19 @@
             for (var r = arguments.length, a = new Array(r), o = 0; o < r; o++) a[o] = arguments[o]
             return (
               (e = t.call.apply(t, [this].concat(a))),
-              m()(u()(e), '_getTabLink', function (e) {
+              m()(l()(e), '_getTabLink', function (e) {
                 return { pathname: '/explore/tabs/'.concat(e) }
               }),
-              m()(u()(e), '_handleSettingsClick', function (t) {
+              m()(l()(e), '_handleSettingsClick', function (t) {
                 e.props.analytics.scribe({ element: 'settings_button', action: 'click' })
               }),
-              m()(u()(e), '_handleBackClick', function () {
+              m()(l()(e), '_handleBackClick', function () {
                 e.props.history.goBack()
               }),
-              m()(u()(e), '_setSearchBoxRef', function (t) {
+              m()(l()(e), '_setSearchBoxRef', function (t) {
                 e._searchBoxRef = t
               }),
-              m()(u()(e), '_handleSoftLeftClick', function () {
+              m()(l()(e), '_handleSoftLeftClick', function () {
                 var t = Y.a.findDOMNode(e._searchBoxRef)
                 t && t instanceof window.HTMLElement && t.querySelector('input').focus()
               }),
@@ -476,8 +476,8 @@
                     c = this.context.featureSwitches.isTrue('responsive_web_trends_setting_new_endpoints')
                       ? '/settings/explore'
                       : '/settings/trends',
-                    l = g.createElement(z.a, { onPress: this._handleSettingsClick, pullRight: !0, to: c }),
-                    u = a.state && a.state.searchFocused,
+                    u = g.createElement(z.a, { onPress: this._handleSettingsClick, pullRight: !0, to: c }),
+                    l = a.state && a.state.searchFocused,
                     s = g.createElement(O.a, { withSearchBox: !1, withTrends: !1 })
                   return g.createElement(
                     g.Fragment,
@@ -499,11 +499,11 @@
                       history: n,
                       initialPageNamespace: t.contextualScribeNamespace,
                       module: r,
-                      onBackClick: u ? this._handleBackClick : void 0,
+                      onBackClick: l ? this._handleBackClick : void 0,
                       prerollDisplayLocation: A.c.OTHER,
                       renderEmptyState: ne,
                       renderUnavailable: re,
-                      rightControl: l,
+                      rightControl: u,
                       searchBoxRef: this._setSearchBoxRef,
                       selectedTabId: i,
                       sidebarContent: s,
@@ -538,8 +538,8 @@
         i = n('ERkP'),
         o = n('v6aA'),
         c = n('es0u'),
-        l = n('mw9i'),
-        u = n('s14A'),
+        u = n('mw9i'),
+        l = n('s14A'),
         s = n('dwig'),
         f = n('0+qk'),
         d = n('WpDa'),
@@ -654,8 +654,8 @@
                 onBackClick: p ? O : void 0,
                 primaryContent: i.createElement(
                   s.a,
-                  { component: l.a, fab: x },
-                  i.createElement(u.a, null, i.createElement(w.a, { module: b, title: S })),
+                  { component: u.a, fab: x },
+                  i.createElement(l.a, null, i.createElement(w.a, { module: b, title: S })),
                 ),
                 rightControl: M,
                 searchBoxRef: function (e) {

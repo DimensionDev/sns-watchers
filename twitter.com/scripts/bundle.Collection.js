@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [40],
+  [39],
   {
     '3L7q': function (e, t, r) {
       'use strict'
@@ -20,7 +20,7 @@
           r('kYxP'),
           {
             loader: function () {
-              return r.e(231).then(r.bind(null, 'U0EQ'))
+              return r.e(232).then(r.bind(null, 'U0EQ'))
             },
             loaderKey: 'collectionHeaderLoader',
             strategy: r('XBtf').a.Critical,

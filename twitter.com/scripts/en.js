@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [117],
+    [116],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -11,7 +11,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(288).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(289).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -273,7 +273,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ee230734', 'Show more options'),
           a('ca0ce0e4', 'Start a new message'),
           a('cdcebd22', 'New message'),
-          a('e3275464', 'Send'),
           a('ic8c615d', 'Choose and send a quick reply option'),
           a('a04077c4', 'Please choose 1 photo, video or GIF.'),
           a('d4a4842d', 'Add emoji'),
@@ -337,6 +336,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d3ac405c', 'Load video'),
           a('g97a046c', 'Play this video'),
           a('badb01a0', 'Compose'),
+          a('e3275464', 'Send'),
           a('d6b11d9c', 'Your direct message failed to send because some media didn’t upload.'),
           a('i7ca1446', 'Info'),
           a('i8ecae5b', 'You can no longer send messages to this person.'),
@@ -608,6 +608,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fd6150fc', 'Keeping you safer in Direct Messages'),
           a('d42d239f', 'Privacy Policy'),
           a('d88d0790', 'Options menu'),
+          a('e3cfff7c', 'Snooze conversation'),
+          a('a8ed0eca', 'Take conversation off snooze'),
           a('dedfd265', 'Sent a voice message'),
           a('h7033cac', 'You sent a voice message'),
           a('j7d81019', 'You sent a video'),
@@ -1142,12 +1144,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Dismiss ' + e.topicName + ' Topic'
           }),
           a('c837fca9', 'Show more replies'),
-          a('d228a9a0', 'Show more'),
-          a('d28215f0', 'Sorry, polls are not allowed in Communities!'),
+          a('d228a9a0', 'Show more')
+        a('d28215f0', 'Sorry, polls are not allowed in Communities!'),
           a('ec909a54', function (e) {
             return 'Your Tweet' + n(e.numOfTweets, ' was', 's were') + ' sent to ' + e.communityName
-          })
-        a('jd53409d', 'Don’t forget to add descriptions'),
+          }),
+          a('jd53409d', 'Don’t forget to add descriptions'),
           a('edae65de', 'Your image doesn’t have a description.'),
           a('a859846a', 'Your images don’t have descriptions.'),
           a('e90118f5', 'One of your images doesn’t have a description.'),
@@ -2219,10 +2221,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a7f1cff6', 'Add official website reference'),
           a('c6bd60ec', 'Activist or organizer'),
           a('je403ac5', 'Company, brand, or organization'),
-          a('ff8c97fb', 'Entertainer or entertainment group'),
-          a('h4d652fb', 'Government official or affiliate'),
-          a('c5b72ac5', 'Content creator or influential individual')
-        a('f7ff070c', 'News organization or journalist'),
+          a('ff8c97fb', 'Entertainer or entertainment group')
+        a('h4d652fb', 'Government official or affiliate'),
+          a('c5b72ac5', 'Content creator or influential individual'),
+          a('f7ff070c', 'News organization or journalist'),
           a('eb7de689', 'Professional sports or gaming entity'),
           a('cc4b66b5', 'Select a category'),
           a('b37461a4', 'Select an account type'),
@@ -3538,12 +3540,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a39075ff', function (e) {
             return e.n + ' more'
           }),
-          a('d64e29c5', 'Log out the device shown'),
-          a('idfa01cb', 'Log out of the device shown?'),
-          a(
-            'd4cca0f7',
-            'This will end your active Twitter session, and you’ll need to log in again to start a new one.',
-          )
+          a('d64e29c5', 'Log out the device shown')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3560,7 +3557,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('e04ba39c', 'Date and time'),
+        a('idfa01cb', 'Log out of the device shown?'),
+          a(
+            'd4cca0f7',
+            'This will end your active Twitter session, and you’ll need to log in again to start a new one.',
+          ),
+          a('e04ba39c', 'Date and time'),
           a('h667fc02', 'You’ve ended your active Twitter session.'),
           a('ddcd3d26', 'Loading session data'),
           a('d2f0f3fd', 'We can not find this session'),
@@ -3724,9 +3726,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('h93824cc', 'Monetization options'),
           a('a6777c1b', 'Super Follows'),
-          a('b255df58', 'Application submitted · Waiting for review'),
+          a('c1b71878', 'Accepting subscribers'),
           a('e939cc53', 'Application accepted · Build your subscription'),
           a('ibb5e1c8', 'Application declined'),
+          a('b255df58', 'Application submitted · Waiting for review'),
           a('b3f834c7', 'Application waitlisted'),
           a('i724fb49', 'Get help'),
           a('g92a2343', 'Complete profile'),
@@ -4519,6 +4522,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('ie4dd8d6', 'Sign up'),
           a('fb9dd9b0', 'Sign in'),
+          a('jae84f3a', 'Currently Trending in your location'),
           a('d1cc8c05', 'Limit unwelcome interactions'),
           a('ca614405', function (e) {
             return (
@@ -4641,7 +4645,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cf433585', 'Introducing'),
           a('a603e958', 'Reply downvotes'),
           a('f2be4e37', 'Tap to downvote'),
-          a('ib0b227c', 'See a reply that doesn’t seem relevant to the conversation? Let us know by downvoting.'),
+          a('aa4b7c32', 'See a reply that isn’t adding to the conversation? Let us know by downvoting.'),
           a('df15f9c2', 'Help make Twitter better'),
           a('a521859e', 'Your feedback helps us prioritize higher quality content for you — and everyone on Twitter.'),
           a('j88f27d8', 'Relevant people'),
@@ -4741,12 +4745,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b07cc9f1', 'Region'),
           a('ce309bed', 'Metro'),
           a('c6c16a51', 'City'),
-          a('cc49d03f', 'Postcode'),
-          a('dbe9353d', 'Engagements'),
+          a('cc49d03f', 'Postcode')
+        a('dbe9353d', 'Engagements'),
           a('c64974fb', 'Followers'),
           a('i638f89c', 'Website visits'),
-          a('e1bca506', 'Your promoted Tweet is under review')
-        a('e4a4c608', 'Check back soon.'),
+          a('e1bca506', 'Your promoted Tweet is under review'),
+          a('e4a4c608', 'Check back soon.'),
           a('db841200', 'Boost engagement, reach more people, and spread the word about your page.'),
           a('hc67be9d', 'Get Started'),
           a('fcc839b5', 'What’s your goal?'),
@@ -5203,10 +5207,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Click below to try again.',
           ),
           a('fa70c77f', 'Only Super Followers can see this Tweet'),
-          a('d822ae43', 'Twitter Purchaser Terms'),
           a('f0c99eff', function (e) {
             return '- @' + e.screenName
           }),
+          a('d822ae43', 'Twitter Purchaser Terms'),
           a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter'),
           a('h85446cd', 'This browser is no longer supported.'),
           a(

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [9],
+  [8],
   {
     '3EFP': function (e, t, n) {
       'use strict'
@@ -257,8 +257,8 @@
               })
             return E && !r ? i.createElement(d.a, null, S, R) : S
           }
-          var j = t.participants,
-            P = Object.keys(j).length
+          var T = t.participants,
+            j = Object.keys(T).length
           if (r)
             return i.createElement(
               d.a,
@@ -266,14 +266,14 @@
               i.createElement(f.b, { color: g, numberOfLines: 1, style: y.title, weight: w }, Object(m.a)(t, l, r)),
               E
                 ? null
-                : i.createElement(f.b, { color: 'gray700', numberOfLines: 1, weight: 'normal' }, h({ peopleCount: P })),
+                : i.createElement(f.b, { color: 'gray700', numberOfLines: 1, weight: 'normal' }, h({ peopleCount: j })),
               E && !r ? R : null,
             )
           var D = i.createElement(f.b, { color: g, numberOfLines: 1, weight: w }, Object(m.a)(t, l, r))
           return E && !r ? i.createElement(d.a, null, D, R) : D
         }
-        var T = v(s)
-        return i.createElement(f.b, { color: g, numberOfLines: 1, weight: w }, Object(m.b)(T, l))
+        var P = v(s)
+        return i.createElement(f.b, { color: g, numberOfLines: 1, weight: w }, Object(m.b)(P, l))
       }
     },
     V5Qi: function (e, t, n) {
@@ -358,7 +358,7 @@
     ZcYN: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return be
+        return ge
       })
       n('OZaJ')
       var r = n('VrFO'),
@@ -401,9 +401,9 @@
           }),
         k = n('aA19'),
         S = n('OhSZ'),
-        j = n('5mJL'),
-        P = n('rHpw'),
-        D = P.a.create(function (e) {
+        T = n('5mJL'),
+        j = n('rHpw'),
+        D = j.a.create(function (e) {
           return {
             root: {
               cursor: 'pointer',
@@ -416,14 +416,14 @@
             disabled: { opacity: 0.6, backgroundColor: e.colors.gray0 },
           }
         }),
-        T = C(function (e) {
+        P = C(function (e) {
           var t = e.conversation,
             n = e.isDisabled,
             r = e.isSelected,
             a = e.perspective
           return t
             ? y.createElement(
-                j.a,
+                T.a,
                 {
                   avatarCell: y.createElement(k.a, { conversation: t, perspective: a, size: 'xLarge' }),
                   avatarCellStyle: D.avatarColumn,
@@ -432,7 +432,7 @@
                   style: [D.root, !r && n && D.disabled],
                 },
                 y.createElement(S.b, { conversation: t, perspective: a }),
-                be({ isSelected: r }),
+                ge({ isSelected: r }),
               )
             : null
         }),
@@ -480,20 +480,20 @@
                     r = e.supportText
                   return y.createElement(
                     F.a,
-                    { style: V.root },
+                    { style: W.root },
                     y.createElement(
                       L.a,
                       { withGutter: !0 },
                       y.createElement(
                         F.a,
-                        { style: V.bodyColumn },
+                        { style: W.bodyColumn },
                         r ? y.createElement(M.b, { color: 'gray700', size: 'subtext2' }, r) : null,
                         y.createElement(M.b, { numberOfLines: 1 }, t),
                       ),
                       n
                         ? y.createElement(
                             F.a,
-                            { style: V.coverContainer },
+                            { style: W.coverContainer },
                             y.createElement(
                               A.a,
                               { ratio: 1 },
@@ -509,8 +509,8 @@
             n
           )
         })(y.PureComponent),
-        B = '100px',
-        V = P.a.create(function (e) {
+        V = '100px',
+        W = j.a.create(function (e) {
           return {
             root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space16 },
             bodyColumn: { flexGrow: 7, justifyContent: 'center' },
@@ -519,81 +519,31 @@
               borderRadius: e.borderRadii.small,
               flexGrow: 1,
               justifyContent: 'flex-end',
-              maxHeight: B,
-              maxWidth: B,
+              maxHeight: V,
+              maxWidth: V,
               overflow: 'hidden',
               width: '25%',
             },
           }
         }),
-        W = H,
+        B = H,
         G = n('5T6p'),
-        X = n('EHV7')
-      function K(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var n,
-            r = m()(e)
-          if (t) {
-            var a = m()(this).constructor
-            n = Reflect.construct(r, arguments, a)
-          } else n = r.apply(this, arguments)
-          return f()(this, n)
-        }
-      }
-      var Z = (function (e) {
-          u()(n, e)
-          var t = K(n)
-          function n() {
-            return a()(this, n), t.apply(this, arguments)
-          }
-          return (
-            o()(n, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.isDisabled,
-                    n = e.resultContext,
-                    r = e.topic
-                  return y.createElement(
-                    F.a,
-                    { style: [Q.root, t && Q.disabled] },
-                    y.createElement(M.b, { weight: 'bold', withHashflags: !0 }, r),
-                    n
-                      ? y.createElement(
-                          F.a,
-                          { style: Q.context },
-                          this._renderIcon(),
-                          y.createElement(M.b, { color: 'gray700' }, n.display_string),
-                        )
-                      : null,
-                  )
-                },
-              },
-              {
-                key: '_renderIcon',
-                value: function () {
-                  var e = this.props.resultContext
-                  return e && e.types[0] && 'followable_topic' === e.types[0].type
-                    ? y.createElement(X.a, { style: Q.icon })
-                    : null
-                },
-              },
-            ]),
-            n
-          )
-        })(y.PureComponent),
-        Q = P.a.create(function (e) {
+        X =
+          (n('z84I'),
+          n('2G9S'),
+          n('vrRf'),
+          n('kFen'),
+          n('qd3W'),
+          n('M+/F'),
+          n('jQ3i'),
+          n('x4t0'),
+          n('MvUL'),
+          n('KqXw'),
+          n('yyPN')),
+        K = n.n(X)
+      var Q = n('EHV7'),
+        Z = n('FiRh')
+      var Y = j.a.create(function (e) {
           return {
             root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space16 },
             context: { alignItems: 'center', flexDirection: 'row' },
@@ -606,22 +556,95 @@
             disabled: { backgroundColor: e.colors.gray0 },
           }
         }),
-        Y = Z,
-        J = (n('yH/f'), n('2G9S'), n('M0jS')),
-        q = function (e, t) {
+        q = function (e) {
+          var t = e.isDisabled,
+            n = e.query,
+            r = e.resultContext,
+            a = (function (e, t) {
+              var n,
+                r = K()(e),
+                a = e.toLowerCase().indexOf(t.toLowerCase()),
+                i = a + t.length
+              if (0 === r.length)
+                n = [{ highlights: -1 !== a ? [[a, i]] : void 0, text: e, entityType: 'text', prefix: '' }]
+              else {
+                var o = r.flatMap(function (t, n, r) {
+                    var a = t.indices,
+                      i = 0 === n ? 0 : r[n - 1].indices[1],
+                      o = n === r.length - 1,
+                      c = []
+                    return (
+                      i !== a[0] && c.push(e.slice(i, a[0])),
+                      c.push(e.substring(a[0], a[1])),
+                      o && e.length !== a[1] && c.push(e.slice(a[1])),
+                      c
+                    )
+                  }),
+                  c = 0,
+                  s = o.map(function (e, t, n) {
+                    c += t > 0 ? n[t - 1].length : 0
+                    var r = e.length
+                    return { runningTotal: c, containsQuery: -1 !== a && c + r >= a && c < i }
+                  })
+                n = o.map(function (e, t) {
+                  var n,
+                    r = s[t],
+                    o = r.containsQuery,
+                    c = r.runningTotal,
+                    l = e.includes('#')
+                  if (o) {
+                    var u = c < a ? a - c : 0,
+                      d = c + e.length < i ? e.length : i - c
+                    n = [[l ? u - 1 : u, l ? d - 1 : d]]
+                  }
+                  return {
+                    highlights: n,
+                    text: l ? ''.concat(null == e ? void 0 : e.replace('#', '')) : e,
+                    entityType: l ? 'hashtag' : 'text',
+                    prefix: l ? '#' : '',
+                  }
+                })
+              }
+              return n
+            })(e.topic, n),
+            i = y.createElement(
+              M.b,
+              null,
+              a.map(function (e, t) {
+                return y.createElement(Z.b, { key: ''.concat(e.text).concat(t), part: e })
+              }),
+            )
+          return y.createElement(
+            F.a,
+            { style: [Y.root, t && Y.disabled] },
+            i,
+            r
+              ? y.createElement(
+                  F.a,
+                  { style: Y.context },
+                  r && r.types[0] && 'followable_topic' === r.types[0].type
+                    ? y.createElement(Q.a, { style: Y.icon })
+                    : null,
+                  y.createElement(M.b, { color: 'gray700' }, r.display_string),
+                )
+              : null,
+          )
+        },
+        J = (n('yH/f'), n('M0jS')),
+        $ = function (e, t) {
           return Object(J.d)(e, t.userId)
         },
-        $ = Object(O.a)().propsFromState(function () {
-          return { userSpace: q }
+        ee = Object(O.a)().propsFromState(function () {
+          return { userSpace: $ }
         }),
-        ee = n('3XMw'),
-        te = n.n(ee),
-        ne = n('tocL'),
-        re = 'TypeaheadUser',
-        ae = n('GZwR'),
-        ie = n('IMA+'),
-        oe = n('v6aA')
-      function ce(e) {
+        te = n('3XMw'),
+        ne = n.n(te),
+        re = n('tocL'),
+        ae = 'TypeaheadUser',
+        ie = n('GZwR'),
+        oe = n('IMA+'),
+        ce = n('v6aA')
+      function se(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -642,24 +665,24 @@
           return f()(this, n)
         }
       }
-      var se = te.a.ae2205d1,
-        le = te.a.d960b55b,
-        ue = te.a.fd06b02f,
-        de = Object.freeze({
-          num_of_followers: ne.a.Follow,
-          bio: ne.a.TextOnly,
-          location: ne.a.Location,
-          num_tweets: ne.a.NewTweets,
-          follow_relationship: ne.a.Follow,
-          followers_follow: ne.a.Follow,
-          social_proof: ne.a.SocialProof,
-          follow_relationship_mutual_follow: ne.a.FollowMutual,
-          follow_relationship_followed: ne.a.FollowFollowed,
-          follow_relationship_following: ne.a.FollowFollowing,
+      var le = ne.a.ae2205d1,
+        ue = ne.a.d960b55b,
+        de = ne.a.fd06b02f,
+        fe = Object.freeze({
+          num_of_followers: re.a.Follow,
+          bio: re.a.TextOnly,
+          location: re.a.Location,
+          num_tweets: re.a.NewTweets,
+          follow_relationship: re.a.Follow,
+          followers_follow: re.a.Follow,
+          social_proof: re.a.SocialProof,
+          follow_relationship_mutual_follow: re.a.FollowMutual,
+          follow_relationship_followed: re.a.FollowFollowed,
+          follow_relationship_following: re.a.FollowFollowing,
         }),
-        fe = (function (e) {
+        pe = (function (e) {
           u()(n, e)
-          var t = ce(n)
+          var t = se(n)
           function n() {
             var e
             a()(this, n)
@@ -700,11 +723,11 @@
                     p = this.context.featureSwitches,
                     m = this._getSocialContext(),
                     h = this._getResultContext() || m,
-                    v = l === ae.d.SearchBox,
+                    v = l === ie.d.SearchBox,
                     b = d && p.isTrue('voice_rooms_typeahead_audiospace_ring_enabled') ? d : void 0
                   return (
-                    b && (b.accessibilityLabel = ue({ screenName: s })),
-                    y.createElement(ie.a, {
+                    b && (b.accessibilityLabel = de({ screenName: s })),
+                    y.createElement(oe.a, {
                       avatarSize: 'xLarge',
                       avatarUri: t,
                       decoration: n,
@@ -719,7 +742,7 @@
                       presenceIndicator: v ? b : void 0,
                       screenName: s,
                       socialContext: h,
-                      testID: re,
+                      testID: ae,
                       userId: u,
                       withLink: !1,
                     })
@@ -731,8 +754,8 @@
                 value: function () {
                   var e = this.props.socialContext
                   if (e && e.following) {
-                    var t = e.followed_by ? se : le
-                    return { contextType: ne.a.Follow, text: t }
+                    var t = e.followed_by ? le : ue
+                    return { contextType: re.a.Follow, text: t }
                   }
                 },
               },
@@ -742,9 +765,9 @@
                   var e = this.props,
                     t = e.resultContext,
                     n = e.source
-                  if (t && t.display_string && t.types && n === ae.d.SearchBox)
+                  if (t && t.display_string && t.types && n === ie.d.SearchBox)
                     return {
-                      contextType: (t.types.length ? de[t.types[0].type] : void 0) || ne.a.TextOnly,
+                      contextType: (t.types.length ? fe[t.types[0].type] : void 0) || re.a.TextOnly,
                       text: t.display_string,
                     }
                 },
@@ -753,10 +776,10 @@
             n
           )
         })(y.PureComponent)
-      v()(fe, 'contextType', oe.a), v()(fe, 'defaultProps', { withNewTypeaheadUI: !1 })
-      var pe = $.forwardRef(fe),
-        me = n('htQn')
-      function he(e) {
+      v()(pe, 'contextType', ce.a), v()(pe, 'defaultProps', { withNewTypeaheadUI: !1 })
+      var me = ee.forwardRef(pe),
+        he = n('htQn')
+      function ve(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -777,9 +800,9 @@
           return f()(this, n)
         }
       }
-      var ve = (function (e) {
+      var ye = (function (e) {
         u()(n, e)
-        var t = he(n)
+        var t = ve(n)
         function n(e, r) {
           var i
           return (
@@ -792,11 +815,11 @@
             }),
             v()(s()(i), '_handleClick', function () {
               var e = i.props.item
-              e.type !== ae.b.User && i.props.onClick && i.props.onClick(e, i.isDisabled)
+              e.type !== ie.b.User && i.props.onClick && i.props.onClick(e, i.isDisabled)
             }),
             (i._withNewTypeaheadUI =
               i.context.featureSwitches.isTrue('responsive_web_account_search_readability_enabled') &&
-              e.source === ae.d.SearchBox),
+              e.source === ie.d.SearchBox),
             i
           )
         }
@@ -851,13 +874,13 @@
                       testID: _,
                     },
                     y.createElement(
-                      me.a,
+                      he.a,
                       {
                         accessibilityRole: a ? 'checkbox' : 'button',
                         disabled: n,
                         focusable: !0,
                         onPress: this._handleClick,
-                        style: [r && ye.focused, ye.transitionStyles, this._loaded && ye.loaded, o],
+                        style: [r && be.focused, be.transitionStyles, this._loaded && be.loaded, o],
                         viewRef: this._onViewRef,
                       },
                       this._renderResult(),
@@ -878,10 +901,10 @@
                   o = e.renderUserDecoration,
                   c = e.source
                 switch (a.type) {
-                  case ae.b.User:
+                  case ie.b.User:
                     var s = a.data,
                       l = o ? o({ userId: s.id_str, isSelected: r }) : void 0
-                    return y.createElement(pe, {
+                    return y.createElement(me, {
                       avatarUri: s.profile_image_url_https,
                       canDm: !!s.can_dm,
                       canMediaTag: !!s.can_media_tag,
@@ -900,41 +923,47 @@
                       userId: s.id_str,
                       withNewTypeaheadUI: this._withNewTypeaheadUI,
                     })
-                  case ae.b.Event:
+                  case ie.b.Event:
                     var u = a.data
                     return this._withNewTypeaheadUI
                       ? y.createElement(G.a, {
                           image: u.primary_image && u.primary_image.original_info,
-                          style: ye.itemPadding,
+                          style: be.itemPadding,
                           supportText: u.supporting_text,
                           title: u.topic,
                           withNewTypeaheadUI: !0,
                         })
-                      : y.createElement(W, {
+                      : y.createElement(B, {
                           event: u.topic,
                           image: u.primary_image && u.primary_image.original_info,
                           supportText: u.supporting_text,
                         })
-                  case ae.b.Hashtag:
-                  case ae.b.Topic:
-                    var d = a.data
-                    return y.createElement(Y, { isDisabled: n, resultContext: d.result_context, topic: d.topic })
-                  case ae.b.DMConversation:
+                  case ie.b.Hashtag:
+                  case ie.b.Topic:
+                    var d = this.props.query,
+                      f = a.data
+                    return y.createElement(q, {
+                      isDisabled: n,
+                      query: d || '',
+                      resultContext: f.result_context,
+                      topic: f.topic,
+                    })
+                  case ie.b.DMConversation:
                     return (
                       !!this.context.loggedInUserId &&
-                      y.createElement(T, {
+                      y.createElement(P, {
                         conversationId: a.id,
                         isDisabled: n,
                         isSelected: r,
                         perspective: this.context.loggedInUserId,
                       })
                     )
-                  case ae.b.NavigationLink:
-                    var f = a.data.text
-                    return y.createElement(M.b, { style: ye.navigationLink }, f)
-                  case ae.b.NoResult:
+                  case ie.b.NavigationLink:
                     var p = a.data.text
-                    return y.createElement(M.b, { style: ye.noResult }, p)
+                    return y.createElement(M.b, { style: be.navigationLink }, p)
+                  case ie.b.NoResult:
+                    var m = a.data.text
+                    return y.createElement(M.b, { style: be.noResult }, m)
                   default:
                     return null
                 }
@@ -950,8 +979,8 @@
           n
         )
       })(y.Component)
-      v()(ve, 'contextType', oe.a)
-      var ye = P.a.create(function (e) {
+      v()(ye, 'contextType', ce.a)
+      var be = j.a.create(function (e) {
           return {
             checkIcon: { color: e.colors.primary },
             navigationLink: {
@@ -968,10 +997,10 @@
             transitionStyles: { transitionProperty: 'opacity', transitionDuration: '250ms', opacity: 0 },
           }
         }),
-        be = function (e) {
-          return e.isSelected ? y.createElement(g.a, { accessibilityHidden: !0, style: ye.checkIcon }) : null
+        ge = function (e) {
+          return e.isSelected ? y.createElement(g.a, { accessibilityHidden: !0, style: be.checkIcon }) : null
         }
-      t.b = ve
+      t.b = ye
     },
     aA19: function (e, t, n) {
       'use strict'
@@ -1232,10 +1261,10 @@
         C = n('JYMr'),
         k = n('rHpw'),
         S = E.a.f2b3fe06,
-        j = k.a.create(function (e) {
+        T = k.a.create(function (e) {
           return { hidden: { visibility: 'hidden' } }
         }),
-        P = function (e) {
+        j = function (e) {
           var t = e.isLoading,
             n = y.useState(!1),
             r = I()(n, 2),
@@ -1258,11 +1287,11 @@
               },
               [t],
             ),
-            y.createElement(C.a, { ariaValueText: a ? S : '', indeterminate: a, style: !a && j.hidden })
+            y.createElement(C.a, { ariaValueText: a ? S : '', indeterminate: a, style: !a && T.hidden })
           )
         },
         D = n('ZcYN'),
-        T = n('MWbm'),
+        P = n('MWbm'),
         F = n('oQhu'),
         L = n('w6IS'),
         M = n('MXDK')
@@ -1415,9 +1444,9 @@
                       b.a,
                       { viewType: 'typeahead_dropdown' },
                       y.createElement(
-                        T.a,
+                        P.a,
                         { accessibilityMultiSelectable: d, accessibilityRole: 'listbox', nativeID: n, style: s },
-                        y.createElement(P, { isLoading: !!r }),
+                        y.createElement(j, { isLoading: !!r }),
                         i ? i() : null,
                         a.length
                           ? a.map(function (t, n) {
@@ -1459,28 +1488,30 @@
                   r = n.ariaDescendantId,
                   a = n.getItemDisabledMessage,
                   i = n.getItemIsDisabled,
-                  o = n.renderUserDecoration,
-                  c = n.selectedItems,
-                  s = n.source,
-                  l = this.state.focusIndex,
-                  u = !(!c || !e.id) && c.indexOf(e.id) >= 0,
-                  d = !!c,
-                  f = l === t,
-                  p = i && i(e, e.data),
-                  m = a && a(e, e.data)
+                  o = n.query,
+                  c = n.renderUserDecoration,
+                  s = n.selectedItems,
+                  l = n.source,
+                  u = this.state.focusIndex,
+                  d = !(!s || !e.id) && s.indexOf(e.id) >= 0,
+                  f = !!s,
+                  p = u === t,
+                  m = i && i(e, e.data),
+                  h = a && a(e, e.data)
                 return y.createElement(D.b, {
-                  disabledMessage: m,
-                  domId: f ? r : void 0,
-                  isDisabled: p,
-                  isFocused: f,
-                  isInMultiSelect: d,
-                  isSelected: u,
+                  disabledMessage: h,
+                  domId: p ? r : void 0,
+                  isDisabled: m,
+                  isFocused: p,
+                  isInMultiSelect: f,
+                  isSelected: d,
                   item: e,
                   key: 'typeaheadItem-'.concat(t, '-').concat(e.id || ''),
                   onClick: this._handleItemClick,
-                  onRef: f ? this._setFocusedItemRef : void 0,
-                  renderUserDecoration: o,
-                  source: s,
+                  onRef: p ? this._setFocusedItemRef : void 0,
+                  query: o,
+                  renderUserDecoration: c,
+                  source: l,
                 })
               },
             },

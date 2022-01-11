@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [166],
+  [165],
   {
     '+Bsv': function (e, t, n) {
       'use strict'
@@ -616,7 +616,7 @@
           c = void 0 !== i && i
         return r.e({
           loader: function () {
-            return n.e(226).then(n.bind(null, '+92Z'))
+            return n.e(227).then(n.bind(null, '+92Z'))
           },
           loaderKey: 'trendDefaultLoader',
           loaderOptions: { withThirdPartyCards: c, errorContext: t },

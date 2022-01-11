@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [106],
+  [105],
   {
     'll/Q': function (e, t, r) {
       'use strict'
@@ -114,9 +114,9 @@
         I = r('N+ot'),
         F = r.n(I),
         x = r('AuHH'),
-        T = r.n(x),
-        B = r('KEM+'),
-        N = r.n(B),
+        B = r.n(x),
+        T = r('KEM+'),
+        N = r.n(T),
         j =
           (r('JtPf'),
           r('7x/C'),
@@ -325,9 +325,9 @@
         })()
         return function () {
           var r,
-            n = T()(e)
+            n = B()(e)
           if (t) {
-            var a = T()(this).constructor
+            var a = B()(this).constructor
             r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
           return F()(this, r)
@@ -378,8 +378,8 @@
         Ie = Y.a.g7088266,
         Fe = Y.a.gd7acb84,
         xe = Y.a.b7636014,
-        Te = o.createElement(he.a, null),
-        Be = Q.a.create(function (e) {
+        Be = o.createElement(he.a, null),
+        Te = Q.a.create(function (e) {
           return {
             buttons: {
               maxWidth: '100%',
@@ -410,25 +410,26 @@
             b = s.default_profile_image && !s.description && !s.profile_banner_url
           return o.createElement(
             oe.a,
-            { style: Be.buttons },
+            { style: Te.buttons },
             n && c
               ? o.createElement(
                   _e.a,
                   {
                     link: b ? '/i/flow/setup_profile' : '/settings/profile',
-                    style: Be.lastButton,
+                    style: Te.lastButton,
+                    testID: ye.a.editProfileButton,
                     type: 'primaryOutlined',
                   },
                   b ? Fe : Ie,
                 )
               : null,
-            m && o.createElement(Ce, { buttonStyle: Be.button, promotedContent: i, user: s }),
+            m && o.createElement(Ce, { buttonStyle: Te.button, promotedContent: i, user: s }),
             !c &&
               f &&
               o.createElement(_e.a, {
                 accessibilityLabel: xe,
                 hoverLabel: { label: xe },
-                icon: Te,
+                icon: Be,
                 onPress: function () {
                   if (n) {
                     var e = Object(pe.a)(s.id_str, n)
@@ -445,7 +446,7 @@
                       t.push('/messages/'.concat(e))
                   }
                 },
-                style: Be.button,
+                style: Te.button,
                 testID: ye.a.sendDMFromProfile,
                 type: 'primaryOutlined',
               }),
@@ -454,7 +455,7 @@
               o.createElement(fe.a, {
                 allowPromptForPush: !0,
                 isFollowing: s.notifications,
-                style: Be.button,
+                style: Te.button,
                 userId: s.id_str,
               }),
             !c &&
@@ -463,7 +464,7 @@
               o.createElement(
                 be.a,
                 { onOffscreenChange: a },
-                o.createElement(me.a, { promotedContent: i, style: Be.lastButton, userId: s.id_str }),
+                o.createElement(me.a, { promotedContent: i, style: Te.lastButton, userId: s.id_str }),
               ),
           )
         },
@@ -774,7 +775,7 @@
             text: { marginTop: e.spaces.space12, textAlign: 'center' },
           }
         }),
-        Tt = function (e) {
+        Bt = function (e) {
           var t = e.dismiss,
             r = e.type,
             n = Object(ge.b)()
@@ -809,7 +810,7 @@
             'sheet' === r ? o.createElement(_e.a, { onClick: t, style: xt.button, type: 'primaryOutlined' }, Ct) : null,
           )
         },
-        Bt = r('jV+4'),
+        Tt = r('jV+4'),
         Nt = r('ir4X')
       function jt(e, t) {
         var r = Object.keys(e)
@@ -850,7 +851,7 @@
             d = s.name && s.screen_name && !(n && !r),
             p = d ? s.name : '@'.concat(s.screen_name),
             f = o.useCallback(function (e, t) {
-              return o.createElement(Tt, { dismiss: e, type: t })
+              return o.createElement(Bt, { dismiss: e, type: t })
             }, []),
             m = c.isTrue('identity_verification_educational_prompt_enabled'),
             h = c.isTrue('account_taxonomy_automated_label_enabled'),
@@ -880,7 +881,7 @@
             oe.a,
             { style: H.a.names, testID: Ot },
             o.createElement(
-              Bt.a,
+              Tt.a,
               a()({}, u, {
                 badgeContext: 'account',
                 name: p,
@@ -1286,9 +1287,9 @@
         })()
         return function () {
           var r,
-            n = T()(e)
+            n = B()(e)
           if (t) {
-            var a = T()(this).constructor
+            var a = B()(this).constructor
             r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
           return F()(this, r)
@@ -1495,8 +1496,8 @@
         )
       }
       xr.metadata = { width: 24, height: 24 }
-      var Tr = xr
-      function Br(e, t) {
+      var Br = xr
+      function Tr(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -1512,12 +1513,12 @@
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Br(Object(r), !0).forEach(function (t) {
+            ? Tr(Object(r), !0).forEach(function (t) {
                 N()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : Br(Object(r)).forEach(function (t) {
+            : Tr(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
@@ -1653,7 +1654,7 @@
                     o.createElement(
                       oe.a,
                       { style: zr.iconContainer },
-                      o.createElement(Tr, { style: zr.icon }),
+                      o.createElement(Br, { style: zr.icon }),
                       o.createElement(He.b, null, Wr),
                     ),
                     o.createElement(
@@ -1698,9 +1699,9 @@
         })()
         return function () {
           var r,
-            n = T()(e)
+            n = B()(e)
           if (t) {
-            var a = T()(this).constructor
+            var a = B()(this).constructor
             r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
           return F()(this, r)
@@ -1786,7 +1787,7 @@
                   return o.createElement(
                     oe.a,
                     { style: H.a.names },
-                    o.createElement(Bt.a, {
+                    o.createElement(Tt.a, {
                       name: i,
                       nameSize: 'headline1',
                       screenName: a ? n.screen_name : void 0,
@@ -1888,9 +1889,9 @@
         })()
         return function () {
           var r,
-            n = T()(e)
+            n = B()(e)
           if (t) {
-            var a = T()(this).constructor
+            var a = B()(this).constructor
             r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
           return F()(this, r)
@@ -1908,8 +1909,8 @@
         In = Y.a.d7b8eba9,
         Fn = Y.a.c0098d49,
         xn = Y.a.c4af3561,
-        Tn = Y.a.dbcaaab5,
-        Bn = Y.a.hf162fb6,
+        Bn = Y.a.dbcaaab5,
+        Tn = Y.a.hf162fb6,
         Nn = Y.a.ad7b2b38,
         jn = Y.a.f19b4073,
         Ln = Y.a.ha62da97,
@@ -1926,13 +1927,13 @@
         Gn = Y.a.d834ab9c,
         $n = { section: 'profile_interstitial' },
         Yn = Object(Xr.a)(function () {
-          return Promise.all([r.e(0), r.e(106)]).then(r.bind(null, '8KtR'))
+          return Promise.all([r.e(0), r.e(105)]).then(r.bind(null, '8KtR'))
         }),
         Jn = Object(Xr.a)(function () {
-          return Promise.all([r.e(0), r.e(106)]).then(r.bind(null, 'ivpD'))
+          return Promise.all([r.e(0), r.e(105)]).then(r.bind(null, 'ivpD'))
         }),
         Kn = Object(Xr.a)(function () {
-          return Promise.all([r.e(0), r.e(106)]).then(r.bind(null, 'ylAD'))
+          return Promise.all([r.e(0), r.e(105)]).then(r.bind(null, 'ylAD'))
         }),
         Qn = 'likes',
         Xn = 'media',
@@ -2134,7 +2135,7 @@
                   var t = Date.now(),
                     r = parseInt(e.smart_blocking_expiration, 10),
                     n = r > t ? r - t : 0
-                  if (n <= 72e5) return Tn
+                  if (n <= 72e5) return Bn
                   var o = Math.floor(n / ra),
                     i = Math.floor(o / 24),
                     s = o % 24
@@ -2142,7 +2143,7 @@
                     ? jn({ hourCount: s })
                     : 0 === s
                     ? Nn({ dayCount: i })
-                    : Bn({ dayCount: i, hourCount: s })
+                    : Tn({ dayCount: i, hourCount: s })
                 }
                 return ''
               }),
@@ -2276,7 +2277,7 @@
                     y = m ? null : o.createElement(br.a, { getLocationState: na(b), history: n }),
                     g =
                       d && !m
-                        ? o.createElement(Bt.a, {
+                        ? o.createElement(Tt.a, {
                             isProtected: d.protected,
                             isVerified: d.verified,
                             name: d.name,

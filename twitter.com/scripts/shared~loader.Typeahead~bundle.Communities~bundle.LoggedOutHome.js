@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [12],
+  [11],
   {
     '4e/K': function (e, t, n) {
       'use strict'
@@ -979,7 +979,7 @@
                   d = u && !this.state.shouldShowPrefetchResults ? o : a
                 return b.createElement(
                   le.a,
-                  r()({}, c, { isLoading: !!u, items: d, onItemClick: this._handleItemClick, ref: t }),
+                  r()({}, c, { isLoading: !!u, items: d, onItemClick: this._handleItemClick, query: i, ref: t }),
                 )
               },
             },

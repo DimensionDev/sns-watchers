@@ -10845,7 +10845,7 @@
         l = Object(a.a)({
           loader: function () {
             return c.a.emoji.then(function () {
-              return Promise.all([r.e(0), r.e(15), r.e(200)]).then(r.bind(null, '5RdJ'))
+              return Promise.all([r.e(0), r.e(14), r.e(199)]).then(r.bind(null, '5RdJ'))
             })
           },
           renderPlaceholder: function (t, e) {
@@ -12829,14 +12829,15 @@
           u = t.history,
           d = t.onPress,
           h = t.style,
-          g = Object(s.b)(),
-          y = n.useCallback(
+          g = t.testID,
+          y = Object(s.b)(),
+          v = n.useCallback(
             function () {
               d && d(),
-                g.scribe({ element: 'found_media_button', action: 'click' }),
+                y.scribe({ element: 'found_media_button', action: 'click' }),
                 u.push({ pathname: '/i/foundmedia/search', state: { gifSearchKeySource: a, dmConversationId: e } })
             },
-            [e, g, a, u, d],
+            [e, y, a, u, d],
           )
         return n.createElement(i.a, {
           accessibilityLabel: c,
@@ -12844,9 +12845,10 @@
           disabled: !o,
           hoverLabel: { label: f },
           icon: l,
-          onPress: y,
+          onPress: v,
           size: 'medium',
           style: h,
+          testID: g,
           type: 'brandText',
         })
       }

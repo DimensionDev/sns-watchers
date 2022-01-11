@@ -1,133 +1,133 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [46],
+  [45],
   {
-    gLwk: function (t, e, n) {
+    gLwk: function (e, t, r) {
       'use strict'
-      n.r(e),
-        n.d(e, 'ConversationParticipantsScreen', function () {
-          return x
+      r.r(t),
+        r.d(t, 'ConversationParticipantsScreen', function () {
+          return g
         })
-      n('OZaJ')
-      var r = n('VrFO'),
-        c = n.n(r),
-        a = n('Y9Ll'),
-        o = n.n(a),
-        i = n('1Pcy'),
-        s = n.n(i),
-        u = n('5Yy7'),
-        f = n.n(u),
-        d = n('N+ot'),
-        l = n.n(d),
-        h = n('AuHH'),
-        p = n.n(h),
-        y = n('KEM+'),
-        m = n.n(y),
-        v = (n('2G9S'), n('ERkP')),
-        I = n('RhWx'),
-        _ = n.n(I),
-        b = (n('WNMA'), n('KqXw'), n('LW0h'), n('z84I'), n('hqKg')),
-        w = n('XOJV'),
-        O = n('lnti'),
-        E = n('s1N3'),
-        N = n('0KEI'),
-        R = n('oEGd'),
-        S = function (t) {
-          return function (e, n) {
-            return n.match.params[t]
-          }
+      r('OZaJ')
+      var n = r('VrFO'),
+        a = r.n(n),
+        c = r('Y9Ll'),
+        s = r.n(c),
+        o = r('1Pcy'),
+        i = r.n(o),
+        u = r('5Yy7'),
+        l = r.n(u),
+        f = r('N+ot'),
+        d = r.n(f),
+        h = r('AuHH'),
+        p = r.n(h),
+        I = r('KEM+'),
+        v = r.n(I),
+        y = (r('2G9S'), r('ERkP')),
+        m = r('RhWx'),
+        b = r.n(m),
+        E = (r('WNMA'), r('KqXw'), r('LW0h'), r('z84I'), r('hqKg')),
+        N = r('XOJV'),
+        O = r('lnti'),
+        A = r('s1N3'),
+        S = r('rxPX'),
+        _ = r('0KEI'),
+        U = function (e, t) {
+          return t.match.params.screenName
         },
-        L = Object(b.createSelector)(
-          function (t, e) {
-            return w.a.selectHydrated(t, e.match.params.statusId)
-          },
-          function (t) {
-            if (!t) return []
-            var e = (t.entities || {}).user_mentions,
-              n = void 0 === e ? [] : e,
-              r = { id_str: t.in_reply_to_user_id_str },
-              c = n.filter(function (e) {
-                return e.indices[0] < t.display_text_range[0]
+        L = function (e, t) {
+          return t.match.params.statusId
+        },
+        R = function (e, t) {
+          return N.a.selectHydrated(e, t.match.params.statusId)
+        },
+        w = function (e, t) {
+          return N.a.selectFetchStatus(e, t.match.params.statusId)
+        },
+        F = Object(S.a)()
+          .propsFromState(function () {
+            return {
+              fetchStatus: w,
+              screenName: U,
+              statusId: L,
+              participantIds: Object(E.createSelector)(R, function (e) {
+                if (!e) return []
+                var t = (e.entities || {}).user_mentions,
+                  r = void 0 === t ? [] : t,
+                  n = { id_str: e.in_reply_to_user_id_str },
+                  a = r.filter(function (t) {
+                    return t.indices[0] < e.display_text_range[0]
+                  }),
+                  c = [n].concat(b()(a))
+                return Object(O.a)(
+                  Object(A.a)(
+                    c.map(function (e) {
+                      return e.id_str
+                    }),
+                  ),
+                )
               }),
-              a = [r].concat(_()(c))
-            return Object(O.a)(
-              Object(E.a)(
-                a.map(function (t) {
-                  return t.id_str
-                }),
+            }
+          })
+          .propsFromActions(function () {
+            return {
+              createLocalApiErrorHandler: Object(_.createLocalApiErrorHandlerWithContextFactory)(
+                'CONVERSATION_PARTICIPANTS_SCREEN',
               ),
-            )
-          },
-        ),
-        A = Object(b.createSelector)(
-          function (t, e) {
-            return w.a.selectFetchStatus(t, e.match.params.statusId)
-          },
-          S('screenName'),
-          S('statusId'),
-          L,
-          function (t, e, n, r) {
-            return { fetchStatus: t, screenName: e, statusId: n, participantIds: r }
-          },
-        ),
-        j = {
-          createLocalApiErrorHandler: Object(N.createLocalApiErrorHandlerWithContextFactory)(
-            'CONVERSATION_PARTICIPANTS_SCREEN',
-          ),
-          fetchTweetIfNeeded: w.a.fetchOneIfNeeded,
-        },
-        g = Object(R.g)(A, j),
-        k = n('v//M'),
-        C = n('W5XZ'),
-        H = n('jHSc'),
-        F = n('3XMw'),
-        P = n.n(F),
-        J = n('hqDb'),
-        M = n('7JQg')
-      function T(t) {
-        var e = (function () {
+              fetchTweetIfNeeded: N.a.fetchOneIfNeeded,
+            }
+          })
+          .withAnalytics({ page: 'conversation_participants' }),
+        k = r('v//M'),
+        D = r('W5XZ'),
+        C = r('jHSc'),
+        H = r('3XMw'),
+        M = r.n(H),
+        x = r('hqDb')
+      function P(e) {
+        var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
           if ('function' == typeof Proxy) return !0
           try {
             return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (t) {
+          } catch (e) {
             return !1
           }
         })()
         return function () {
-          var n,
-            r = p()(t)
-          if (e) {
-            var c = p()(this).constructor
-            n = Reflect.construct(r, arguments, c)
-          } else n = r.apply(this, arguments)
-          return l()(this, n)
+          var r,
+            n = p()(e)
+          if (t) {
+            var a = p()(this).constructor
+            r = Reflect.construct(n, arguments, a)
+          } else r = n.apply(this, arguments)
+          return d()(this, r)
         }
       }
-      var W = P.a.cdd4aafe,
-        q = P.a.aac3fad1,
-        x = (function (t) {
-          f()(n, t)
-          var e = T(n)
-          function n() {
-            var t
-            c()(this, n)
-            for (var r = arguments.length, a = new Array(r), o = 0; o < r; o++) a[o] = arguments[o]
+      var B = M.a.cdd4aafe,
+        j = M.a.aac3fad1,
+        g = (function (e) {
+          l()(r, e)
+          var t = P(r)
+          function r() {
+            var e
+            a()(this, r)
+            for (var n = arguments.length, c = new Array(n), s = 0; s < n; s++) c[s] = arguments[s]
             return (
-              (t = e.call.apply(e, [this].concat(a))),
-              m()(s()(t), '_renderList', function () {
-                return v.createElement(J.a, { userIds: t.props.participantIds, withItemBorder: !0 })
+              (e = t.call.apply(t, [this].concat(c))),
+              v()(i()(e), '_renderList', function () {
+                return y.createElement(x.a, { userIds: e.props.participantIds, withItemBorder: !0 })
               }),
-              m()(s()(t), '_handleFetch', function () {
-                var e = t.props,
-                  n = e.createLocalApiErrorHandler
-                ;(0, e.fetchTweetIfNeeded)(e.statusId).catch(n(C.a))
+              v()(i()(e), '_handleFetch', function () {
+                var t = e.props,
+                  r = t.createLocalApiErrorHandler
+                ;(0, t.fetchTweetIfNeeded)(t.statusId).catch(r(D.a))
               }),
-              t
+              e
             )
           }
           return (
-            o()(n, [
+            s()(r, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -137,17 +137,17 @@
               {
                 key: 'render',
                 value: function () {
-                  var t = this.props,
-                    e = t.fetchStatus,
-                    n = t.history,
-                    r = t.screenName,
-                    c = t.statusId
-                  return v.createElement(
-                    H.b,
-                    { backLocation: '/'.concat(r.toLowerCase(), '/status/').concat(c), history: n, title: q },
-                    v.createElement(k.a, {
-                      accessibilityLabel: W,
-                      fetchStatus: e,
+                  var e = this.props,
+                    t = e.fetchStatus,
+                    r = e.history,
+                    n = e.screenName,
+                    a = e.statusId
+                  return y.createElement(
+                    C.b,
+                    { backLocation: '/'.concat(n.toLowerCase(), '/status/').concat(a), history: r, title: j },
+                    y.createElement(k.a, {
+                      accessibilityLabel: B,
+                      fetchStatus: t,
                       onRequestRetry: this._handleFetch,
                       render: this._renderList,
                     }),
@@ -155,10 +155,233 @@
                 },
               },
             ]),
-            n
+            r
           )
-        })(v.Component)
-      e.default = Object(M.c)({ page: 'conversation_participants' })(g(x))
+        })(y.Component),
+        T = F(g)
+      t.default = T
+    },
+    hqDb: function (e, t, r) {
+      'use strict'
+      r('OZaJ')
+      var n = r('97Jx'),
+        a = r.n(n),
+        c = r('m3Bd'),
+        s = r.n(c),
+        o = r('VrFO'),
+        i = r.n(o),
+        u = r('Y9Ll'),
+        l = r.n(u),
+        f = r('1Pcy'),
+        d = r.n(f),
+        h = r('5Yy7'),
+        p = r.n(h),
+        I = r('N+ot'),
+        v = r.n(I),
+        y = r('AuHH'),
+        m = r.n(y),
+        b = r('KEM+'),
+        E = r.n(b),
+        N = (r('2G9S'), r('ERkP')),
+        O = r('k49u'),
+        A = (r('LW0h'), r('KOtZ'), r('vrRf'), r('6xIQ')),
+        S = r('kGix'),
+        _ = r('G6rE'),
+        U = r('rxPX'),
+        L = r('0KEI'),
+        R = function (e, t) {
+          return t.userIds
+        },
+        w = function (e, t) {
+          return t.userIds.filter(function (t) {
+            return !!_.e.select(e, t)
+          })
+        },
+        F = function (e, t) {
+          return t.userIds.reduce(function (t, r) {
+            var n = _.e.selectFetchStatus(e, r)
+            return (t[r] = n === S.a.NONE ? S.a.LOADING : n), t
+          }, {})
+        },
+        k = Object(U.a)()
+          .propsFromState(function () {
+            return {
+              availableUserIds: Object(A.a)(w, function (e) {
+                return e
+              }),
+              fetchStatus: Object(A.a)(w, F, R, function (e, t, r) {
+                for (var n = S.a.LOADED, a = 0; a < r.length; a++) {
+                  var c = r[a]
+                  if (-1 === e.indexOf(c)) {
+                    var s = t[c] || S.a.LOADING
+                    n = n === S.a.LOADED ? s : n
+                  }
+                  if (n === S.a.LOADED) break
+                }
+                return n
+              }),
+            }
+          })
+          .propsFromActions(function () {
+            return {
+              createLocalApiErrorHandler: Object(L.createLocalApiErrorHandlerWithContextFactory)(
+                'USERS_LIST_CONTAINER',
+              ),
+              fetchUsersIfNeeded: _.e.fetchManyIfNeeded,
+            }
+          }),
+        D = r('v//M'),
+        C = r('3XMw'),
+        H = r.n(C),
+        M = r('pQ3Z'),
+        x = r.n(M),
+        P = (r('z84I'), r('cFuS')),
+        B = r('Re5t'),
+        j = r('MWbm'),
+        g = r('88ay'),
+        T = function (e) {
+          var t = e.displayMode,
+            r = e.renderUserCell,
+            n = e.userIds
+          e.withFinalItemBorder, e.withItemBorder
+          return N.createElement(
+            j.a,
+            null,
+            n.map(function (e, n) {
+              return r
+                ? r(e)
+                : N.createElement(g.b, {
+                    decoration: g.e,
+                    displayMode: t,
+                    key: e,
+                    promotedItemType: P.c.USER,
+                    userId: e,
+                    withFollowsYou: !0,
+                  })
+            }),
+          )
+        }
+      T.defaultProps = { displayMode: B.a.UserDetailed, withFinalItemBorder: !0, withItemBorder: !1 }
+      var W = T
+      function K(e) {
+        var t = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (e) {
+            return !1
+          }
+        })()
+        return function () {
+          var r,
+            n = m()(e)
+          if (t) {
+            var a = m()(this).constructor
+            r = Reflect.construct(n, arguments, a)
+          } else r = n.apply(this, arguments)
+          return v()(this, r)
+        }
+      }
+      var X = H.a.f5b426c2,
+        q = { viewType: 'user_list' },
+        G = k(
+          (function (e) {
+            p()(r, e)
+            var t = K(r)
+            function r() {
+              var e
+              i()(this, r)
+              for (var n = arguments.length, c = new Array(n), o = 0; o < n; o++) c[o] = arguments[o]
+              return (
+                (e = t.call.apply(t, [this].concat(c))),
+                E()(d()(e), 'state', { allUsersUnavailable: !1 }),
+                E()(d()(e), '_renderContent', function () {
+                  var t = e.props,
+                    r = t.availableUserIds,
+                    n =
+                      (t.createLocalApiErrorHandler,
+                      t.fetchStatus,
+                      t.fetchUsersIfNeeded,
+                      t.userIds,
+                      s()(t, [
+                        'availableUserIds',
+                        'createLocalApiErrorHandler',
+                        'fetchStatus',
+                        'fetchUsersIfNeeded',
+                        'userIds',
+                      ]))
+                  return N.createElement(W, a()({}, n, { userIds: r }))
+                }),
+                E()(d()(e), '_handleFetch', function () {
+                  e._fetchUsersIfNeeded()
+                }),
+                e
+              )
+            }
+            return (
+              l()(r, [
+                {
+                  key: 'componentDidMount',
+                  value: function () {
+                    this._fetchUsersIfNeeded()
+                  },
+                },
+                {
+                  key: 'componentDidUpdate',
+                  value: function (e) {
+                    x()(e.userIds, this.props.userIds) || this._fetchUsersIfNeeded()
+                  },
+                },
+                {
+                  key: 'render',
+                  value: function () {
+                    return N.createElement(D.a, {
+                      accessibilityLabel: X,
+                      behavioralEventContext: q,
+                      fetchStatus: this.state.allUsersUnavailable ? S.a.LOADED : this.props.fetchStatus,
+                      onRequestRetry: this._handleFetch,
+                      render: this._renderContent,
+                      retryable: !1,
+                    })
+                  },
+                },
+                {
+                  key: '_fetchUsersIfNeeded',
+                  value: function () {
+                    var e,
+                      t = this,
+                      r = this.props,
+                      n = r.availableUserIds,
+                      a = r.createLocalApiErrorHandler
+                    ;(0, r.fetchUsersIfNeeded)(r.userIds).then(
+                      function () {
+                        t.setState({ allUsersUnavailable: !1 })
+                      },
+                      a(
+                        ((e = {}),
+                        E()(e, O.a.AddressBookLookupNotFound, {
+                          customAction: function () {
+                            0 === n.length && t.setState({ allUsersUnavailable: !0 })
+                          },
+                        }),
+                        E()(e, O.a.OtherUserSuspended, {
+                          customAction: function () {
+                            0 === n.length && t.setState({ allUsersUnavailable: !0 })
+                          },
+                        }),
+                        e),
+                      ),
+                    )
+                  },
+                },
+              ]),
+              r
+            )
+          })(N.Component),
+        )
+      t.a = G
     },
   },
 ])

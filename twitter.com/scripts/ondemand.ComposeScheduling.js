@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [195],
+  [194],
   {
     '+/sI': function (e, t, n) {
       'use strict'
@@ -164,10 +164,10 @@
       var P = v.forwardRef(function (e, t) {
           return Object(O.a)('select', j(j({}, e), {}, { ref: t }))
         }),
-        F = function (e) {
+        I = function (e) {
           return Object(O.a)('option', e)
         },
-        I = 1,
+        F = 1,
         k = (function (e) {
           f()(n, e)
           var t = x(n)
@@ -195,11 +195,11 @@
                 var t = r.props.onFocus
                 r.setState({ isFocused: !0 }), t && t()
               }),
-              (r._id = 'SELECTOR_'.concat(I)),
+              (r._id = 'SELECTOR_'.concat(F)),
               (r._errorID = ''.concat(r._id, '_ERROR')),
               (r._helperID = ''.concat(r._id, '_HELP')),
               (r._labelID = ''.concat(r._id, '_LABEL')),
-              (I += 1),
+              (F += 1),
               r
             )
           }
@@ -270,13 +270,13 @@
                           testID: l || '',
                           value: u,
                         },
-                        d ? v.createElement(F, { disabled: !0, style: L.option, value: '' }) : null,
+                        d ? v.createElement(I, { disabled: !0, style: L.option, value: '' }) : null,
                         c.map(function (e) {
                           var t = e.disabled,
                             n = e.label,
                             r = e.value
                           return v.createElement(
-                            F,
+                            I,
                             { disabled: t, key: ''.concat(n, '-').concat(r), style: L.option, value: r },
                             n,
                           )
@@ -458,14 +458,14 @@
             }
             return r[t]
           }),
-        F = function (e) {
+        I = function (e) {
           var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 2,
             n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : '0',
             r = n.repeat(t),
             a = 'number' == typeof e ? ''.concat(e) : ''
           return a.length >= t ? a : ''.concat(r).concat(a).slice(-t)
         }
-      function I(e) {
+      function F(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -491,7 +491,7 @@
         B = w()(Array(60).keys()),
         M = (function (e) {
           h()(n, e)
-          var t = I(n)
+          var t = F(n)
           function n() {
             var e
             c()(this, n)
@@ -606,7 +606,7 @@
                     g.push({
                       label: r,
                       options: p.map(function (e) {
-                        return { label: F(e, y), value: ''.concat(e) }
+                        return { label: I(e, y), value: ''.concat(e) }
                       }),
                       onChange: this._handleHourChange,
                       value: 'number' == typeof c ? ''.concat(f ? c : c % 12 || 12) : '',
@@ -615,7 +615,7 @@
                     g.push({
                       label: o,
                       options: m.map(function (e) {
-                        return { label: F(e, b), value: ''.concat(e) }
+                        return { label: I(e, b), value: ''.concat(e) }
                       }),
                       onChange: this._handleMinuteChange,
                       value: 'number' == typeof s ? ''.concat(s) : '',
@@ -734,7 +734,7 @@
                   value: function () {
                     var e = 'number' == typeof this.hour,
                       t = 'number' == typeof this.minute
-                    return e && t ? ''.concat(F(this.hour), ':').concat(F(this.minute)) : ''
+                    return e && t ? ''.concat(I(this.hour), ':').concat(I(this.minute)) : ''
                   },
                 },
               ],
@@ -844,9 +844,9 @@
         R = n('JYYi'),
         j = n('c0ZR'),
         P = n('v//M'),
-        F = n('jHSc'),
-        I = n('3XMw'),
-        k = n.n(I),
+        I = n('jHSc'),
+        F = n('3XMw'),
+        k = n.n(F),
         L = n('Y6L+'),
         B = (n('ho0z'), n('vrRf'), n('QbaN')),
         M = n('Oib4'),
@@ -1290,8 +1290,8 @@
       }
       var je = k.a.c5b77cf0,
         Pe = k.a.i26eed05,
-        Fe = k.a.db99d355,
-        Ie = k.a.cd0ae176,
+        Ie = k.a.db99d355,
+        Fe = k.a.cd0ae176,
         ke = k.a.g29f1100,
         Le = k.a.f26ece11,
         Be = k.a.g700c084,
@@ -1363,7 +1363,7 @@
                   : !e.isDraftsTab && r.length
                   ? e._renderUnsentTweets(r)
                   : e.isDraftsTab || 0 !== r.length
-                  ? e._renderPlaceholder(Ie)
+                  ? e._renderPlaceholder(Fe)
                   : e._renderPlaceholder(ke)
               }),
               l()(c()(e), '_renderSegmentedControl', function () {
@@ -1624,7 +1624,7 @@
                     r = e.scheduledFetchStatus,
                     a = ge.b.isMobileOS()
                   return _.createElement(
-                    F.b,
+                    I.b,
                     {
                       backButtonType: 'back',
                       bottomBar: this.isEditing ? this._renderBottomBar() : null,
@@ -1638,7 +1638,7 @@
                       ie.a,
                       { style: $e.root },
                       _.createElement(P.a, {
-                        accessibilityLabel: Fe,
+                        accessibilityLabel: Ie,
                         fetchStatus: this.isDraftsTab ? t : r,
                         onRequestRetry: this._handleFetchUnsentTweets,
                         render: this._renderContent,
@@ -1832,8 +1832,8 @@
       }
       var j = E.a.jf83d091,
         P = E.a.af4abf2f,
-        F = E.a.b871f28f,
-        I = 1,
+        I = E.a.b871f28f,
+        F = 1,
         k = (function (e) {
           u()(n, e)
           var t = R(n)
@@ -1866,12 +1866,12 @@
               l = e.month,
               u = e.year
             return (
-              (r._errorID = 'DATE_INPUT_'.concat(I, '_ERROR')),
+              (r._errorID = 'DATE_INPUT_'.concat(F, '_ERROR')),
               (r._monthOptions = g.c()),
               (r._nativeDefaultValue = g.e(o, l, u)),
               (r._nativeMaxDate = g.e(31, 12, i)),
               (r._nativeMinDate = g.e(1, 1, c)),
-              (I += 1),
+              (F += 1),
               r
             )
           }
@@ -1957,7 +1957,7 @@
                     b.createElement(T.a, {
                       accessibilityDescribedBy: o.year ? this._errorID : void 0,
                       hasError: o.year,
-                      label: F,
+                      label: I,
                       onChange: this._handleYearChange,
                       options: m,
                       style: L.yearSelector,
@@ -2147,10 +2147,10 @@
       'use strict'
       n.r(t),
         n.d(t, 'FIVE_DAYS_IN_MS', function () {
-          return ie
+          return ce
         }),
         n.d(t, 'Schedule', function () {
-          return ce
+          return se
         })
       n('OZaJ'), n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var r = n('VrFO'),
@@ -2192,17 +2192,18 @@
         R = n('Gpeq'),
         j = n('3XMw'),
         P = n.n(j),
-        F = n('/NU0'),
-        I = n('zmS9'),
-        k = n('MWbm'),
-        L = n('/yvb'),
-        B = n('t62R'),
-        M = n('S8sr'),
-        H = n('77Ml'),
-        A = n('rHpw'),
-        z = n('7JQg'),
-        U = n('QbaN')
-      function Y(e, t) {
+        I = n('/NU0'),
+        F = n('zmS9'),
+        k = 'scheduledConfirmationPrimaryAction',
+        L = n('MWbm'),
+        B = n('/yvb'),
+        M = n('t62R'),
+        H = n('S8sr'),
+        A = n('77Ml'),
+        z = n('rHpw'),
+        U = n('7JQg'),
+        Y = n('QbaN')
+      function W(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -2214,22 +2215,22 @@
         }
         return n
       }
-      function W(e) {
+      function N(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Y(Object(n), !0).forEach(function (t) {
+            ? W(Object(n), !0).forEach(function (t) {
                 y()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : Y(Object(n)).forEach(function (t) {
+            : W(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      function N(e) {
+      function V(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -2250,25 +2251,25 @@
           return f()(this, n)
         }
       }
-      var V = P.a.b1ab9c26,
-        q = P.a.e4e4e50a,
-        K = P.a.h735a98d,
-        X = P.a.dbd5d40f,
-        G = P.a.g9677c6d,
-        Z = P.a.h3701ffd,
-        J = P.a.c5dd0190,
-        Q = P.a.edeff231,
-        $ = P.a.c2b358ce,
-        ee = P.a.b43679d2,
-        te = P.a.f1fce85d,
-        ne = P.a.fddf24b4,
-        re = P.a.a0368088,
-        ae = P.a.h9833726,
-        oe = { page: 'schedule' },
-        ie = 432e6,
-        ce = (function (e) {
+      var q = P.a.b1ab9c26,
+        K = P.a.e4e4e50a,
+        X = P.a.h735a98d,
+        G = P.a.dbd5d40f,
+        Z = P.a.g9677c6d,
+        J = P.a.h3701ffd,
+        Q = P.a.c5dd0190,
+        $ = P.a.edeff231,
+        ee = P.a.c2b358ce,
+        te = P.a.b43679d2,
+        ne = P.a.f1fce85d,
+        re = P.a.fddf24b4,
+        ae = P.a.a0368088,
+        oe = P.a.h9833726,
+        ie = { page: 'schedule' },
+        ce = 432e6,
+        se = (function (e) {
           u()(n, e)
-          var t = N(n)
+          var t = V(n)
           function n(e) {
             var r
             a()(this, n),
@@ -2292,10 +2293,10 @@
                         i({ updates: { scheduledFor: void 0, scheduledTweetId: void 0 } }), r._goBack()
                       })
                       .catch(function () {
-                        t({ text: V })
+                        t({ text: q })
                       })
                   : (i({ updates: { scheduledFor: void 0 } }), r._goBack()),
-                  o(W(W({}, oe), {}, { action: 'clear' }))
+                  o(N(N({}, ie), {}, { action: 'clear' }))
               }),
               y()(s()(r), '_handleAdd', function () {
                 var e = r.props,
@@ -2305,13 +2306,13 @@
                   o = r.state,
                   i = { date: o.scheduleDate, time: o.scheduleTime },
                   c = !!t,
-                  s = Object(U.c)(i)
+                  s = Object(Y.c)(i)
                 s &&
                   s > Date.now() &&
-                  !Object(U.g)(s) &&
+                  !Object(Y.g)(s) &&
                   (a({ updates: { scheduledFor: i } }),
                   r._appBarRef && r._appBarRef.goBack(),
-                  n(W(W({}, oe), {}, { action: c ? 'update' : 'add' })))
+                  n(N(N({}, ie), {}, { action: c ? 'update' : 'add' })))
               }),
               y()(s()(r), '_handleTimeChange', function (e) {
                 r.setState({ scheduleTime: e }, r._validateDateTime)
@@ -2323,7 +2324,7 @@
                 var e = r.state,
                   t = e.scheduleDate,
                   n = e.scheduleTime,
-                  a = Object(U.c)({ date: t, time: n }),
+                  a = Object(Y.c)({ date: t, time: n }),
                   o = new Date(Date.now()),
                   i = !1,
                   c = !1,
@@ -2333,12 +2334,12 @@
                   ? o.getFullYear() === t.year && o.getMonth() + 1 === t.month && o.getDate() === t.day
                     ? (c = !0)
                     : (i = !0)
-                  : a && Object(U.g)(a) && ((i = !0), (s = !0)),
-                  (Object(F.a)(t.year) &&
-                    Object(F.a)(t.month) &&
-                    Object(F.a)(t.day) &&
-                    Object(F.a)(n.hour) &&
-                    Object(F.a)(n.minute)) ||
+                  : a && Object(Y.g)(a) && ((i = !0), (s = !0)),
+                  (Object(I.a)(t.year) &&
+                    Object(I.a)(t.month) &&
+                    Object(I.a)(t.day) &&
+                    Object(I.a)(n.hour) &&
+                    Object(I.a)(n.minute)) ||
                     (l = !0),
                   r.setState({ timeError: c, tooFarInFuture: s, dateError: i, invalidDateTime: l })
               }),
@@ -2347,7 +2348,7 @@
                   n = t.scheduleDate,
                   a = t.scheduleTime
                 try {
-                  var o = Object(U.c)({ date: n, time: a }) || new Date(),
+                  var o = Object(Y.c)({ date: n, time: a }) || new Date(),
                     i = Object(R.a)(e || 'en'),
                     c = o.toLocaleDateString(i),
                     s = o.toLocaleDateString(i, { timeZoneName: 'long' }),
@@ -2364,13 +2365,13 @@
               }),
               y()(s()(r), '_renderBottomBar', function () {
                 return b.createElement(
-                  k.a,
-                  { style: se.bottomBar },
-                  b.createElement(L.a, { onPress: r._handleButtonPress, size: 'xSmall', type: 'brandText' }, q),
+                  L.a,
+                  { style: le.bottomBar },
+                  b.createElement(B.a, { onPress: r._handleButtonPress, size: 'xSmall', type: 'brandText' }, K),
                 )
               }),
-              (r._scheduledForDate = Object(U.c)(e.scheduledFor))
-            var o = r._scheduledForDate ? r._scheduledForDate : new Date(Date.now() + ie)
+              (r._scheduledForDate = Object(Y.c)(e.scheduledFor))
+            var o = r._scheduledForDate ? r._scheduledForDate : new Date(Date.now() + ce)
             return (
               (r.state = {
                 scheduleDate: { year: o.getFullYear(), month: o.getMonth() + 1, day: o.getDate() },
@@ -2409,86 +2410,87 @@
                     v = !!r,
                     _ = this._getTimeZone(n),
                     w = { date: c, time: s },
-                    E = u ? ae : re
+                    E = u ? oe : ae
                   return b.createElement(
                     x.b,
                     {
                       appBarRef: this._setAppBarRef,
                       backButtonType: 'close',
                       bottomBar: this._renderBottomBar(),
-                      documentTitle: K,
+                      documentTitle: X,
                       history: t,
                       rightControl: b.createElement(
-                        k.a,
-                        { style: se.actionButtonContainer },
+                        L.a,
+                        { style: le.actionButtonContainer },
                         this._scheduledForDate
                           ? b.createElement(
-                              L.a,
+                              B.a,
                               {
                                 onPress: this._handleClear,
                                 size: 'small',
-                                style: se.actionButton,
+                                style: le.actionButton,
                                 type: 'primaryText',
                               },
-                              X,
+                              G,
                             )
                           : null,
                         b.createElement(
-                          L.a,
+                          B.a,
                           {
                             disabled: o || l || i,
                             onPress: this._handleAdd,
                             size: 'small',
-                            style: se.actionButton,
+                            style: le.actionButton,
+                            testID: k,
                             type: 'primaryFilled',
                           },
-                          v ? Z : G,
+                          v ? J : Z,
                         ),
                       ),
-                      title: K,
+                      title: X,
                     },
                     b.createElement(
-                      k.a,
-                      { style: se.form },
-                      b.createElement(k.a, { style: se.formItem }, b.createElement(I.a, { scheduledFor: w })),
+                      L.a,
+                      { style: le.form },
+                      b.createElement(L.a, { style: le.formItem }, b.createElement(F.a, { scheduledFor: w })),
                       b.createElement(
-                        k.a,
-                        { style: se.formItem },
-                        b.createElement(B.b, { color: 'gray700' }, Q),
-                        b.createElement(M.a, {
+                        L.a,
+                        { style: le.formItem },
+                        b.createElement(M.b, { color: 'gray700' }, $),
+                        b.createElement(H.a, {
                           day: h,
                           errorMessage: o ? E : '',
                           errors: o ? { year: !0, month: !0, day: !0 } : {},
-                          label: Q,
+                          label: $,
                           maxSelectableYear: g,
                           minSelectableYear: y,
                           month: p,
                           onChange: this._handleDateChange,
-                          style: se.date,
+                          style: le.date,
                           year: m,
                         }),
                       ),
                       b.createElement(
-                        k.a,
-                        { style: se.formItem },
-                        b.createElement(H.a, {
-                          amPmLabel: $,
-                          errorText: l ? re : '',
+                        L.a,
+                        { style: le.formItem },
+                        b.createElement(A.a, {
+                          amPmLabel: ee,
+                          errorText: l ? ae : '',
                           hour: d,
-                          hourLabel: ee,
+                          hourLabel: te,
                           invalid: l,
-                          label: J,
+                          label: Q,
                           minute: f,
-                          minuteLabel: te,
+                          minuteLabel: ne,
                           onChange: this._handleTimeChange,
                         }),
                       ),
                       _ &&
                         b.createElement(
-                          k.a,
-                          { style: se.formItem },
-                          b.createElement(B.b, { color: 'gray700' }, ne),
-                          b.createElement(B.b, { size: 'headline1' }, _),
+                          L.a,
+                          { style: le.formItem },
+                          b.createElement(M.b, { color: 'gray700' }, re),
+                          b.createElement(M.b, { size: 'headline1' }, _),
                         ),
                     ),
                   )
@@ -2498,7 +2500,7 @@
             n
           )
         })(b.Component),
-        se = A.a.create(function (e) {
+        le = z.a.create(function (e) {
           return {
             actionButtonContainer: { flexDirection: 'row' },
             actionButton: { marginLeft: e.spaces.space12 },
@@ -2517,7 +2519,7 @@
             date: { marginVertical: 0, marginTop: e.spaces.space2 },
           }
         })
-      t.default = Object(z.c)(oe)(C(ce))
+      t.default = Object(U.c)(ie)(C(se))
     },
     nS1w: function (e, t, n) {
       'use strict'
@@ -2622,15 +2624,16 @@
       t.a = function (e) {
         var t = e.onPress,
           n = e.scheduledFor,
-          a = Object(l.c)(n),
-          o = !!a && Object(l.h)(n) && !Object(l.g)(a) && !Object(l.f)(a),
-          s = Boolean(t)
-        return a && o
+          a = e.testID,
+          o = Object(l.c)(n),
+          s = !!o && Object(l.h)(n) && !Object(l.g)(o) && !Object(l.f)(o),
+          f = Boolean(t)
+        return o && s
           ? r.createElement(
               c.b,
-              { color: 'gray700', onPress: t, size: 'subtext2', withInteractiveStyling: s },
+              { color: 'gray700', onPress: t, size: 'subtext2', testID: a, withInteractiveStyling: f },
               r.createElement(i.a, { style: d.icon }),
-              u({ date: Object(l.b)(a), time: Object(l.i)(a) }),
+              u({ date: Object(l.b)(o), time: Object(l.i)(o) }),
             )
           : null
       }

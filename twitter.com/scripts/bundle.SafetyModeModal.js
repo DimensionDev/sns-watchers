@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [82],
+  [81],
   {
     OsOl: function (e, t, n) {
       'use strict'
@@ -40,8 +40,8 @@
         S = n('mjJ+'),
         E = n('t62R'),
         b = n('CK8+'),
-        g = n('rHpw'),
-        y = l.a.c6cb90eb,
+        y = n('rHpw'),
+        g = l.a.c6cb90eb,
         h = l.a.a37e9b09,
         m = l.a.ccafffde,
         v = l.a.j2e184d8,
@@ -50,12 +50,12 @@
         _ = l.a.bfea13ab,
         w = l.a.fc209bb7,
         A = l.a.ee95bb8d,
-        F = [
+        C = [
           { label: m, value: 'OneDay' },
           { label: v, value: 'ThreeDays' },
           { label: O, value: 'SevenDays' },
         ]
-      var C = i(function (e) {
+      var F = i(function (e) {
           var t = e.createLocalApiErrorHandler,
             n = e.enabled,
             a = e.expiration,
@@ -77,15 +77,15 @@
             },
             [l],
           )
-          var g = e.analytics
+          var y = e.analytics
           r.useEffect(
             function () {
-              g.scribe({ action: 'impression' })
+              y.scribe({ action: 'impression' })
             },
-            [g],
+            [y],
           )
           var m = function () {
-              g.scribe({ action: 'click', element: 'disabled' }),
+              y.scribe({ action: 'click', element: 'disabled' }),
                 i('none')
                   .then(function () {
                     return l()
@@ -96,14 +96,14 @@
             },
             v = function () {
               return function (e) {
-                var n = F.map(function (e) {
+                var n = C.map(function (e) {
                   return {
                     text: e.label,
                     onClick: function () {
                       return (function (e) {
-                        g.scribe({ action: 'click', element: 'enabled' }),
+                        y.scribe({ action: 'click', element: 'enabled' }),
                           ('OneDay' !== e.value && 'ThreeDays' !== e.value && 'SevenDays' !== e.value) ||
-                            (g.scribe({ action: 'click', component: 'duration', element: e.value }),
+                            (y.scribe({ action: 'click', component: 'duration', element: e.value }),
                             i(e.value)
                               .then(function () {
                                 return l()
@@ -129,12 +129,12 @@
                 r.createElement(
                   p.a,
                   { style: M.safetyModeToggleContainer },
-                  r.createElement(E.b, { color: 'normal' }, y),
+                  r.createElement(E.b, { color: 'normal' }, g),
                   n
                     ? r.createElement(b.a, { onValueChange: m, value: n })
                     : r.createElement(
                         d.a,
-                        { accessibilityLabel: y, renderMenu: v() },
+                        { accessibilityLabel: g, renderMenu: v() },
                         r.createElement(b.a, { onValueChange: f.a, value: n }),
                       ),
                 ),
@@ -159,8 +159,8 @@
           })
         }),
         M =
-          ((t.a = C),
-          g.a.create(function (e) {
+          ((t.a = F),
+          y.a.create(function (e) {
             return {
               border: {
                 borderStyle: 'solid',
@@ -192,7 +192,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'SafetyModeModal', function () {
-          return ce
+          return oe
         })
       n('OZaJ')
       var r = n('VrFO'),
@@ -209,14 +209,14 @@
         S = n.n(p),
         E = n('KEM+'),
         b = n.n(E),
-        g = (n('2G9S'), n('1t7P'), n('jQ/y'), n('hBvt'), n('ERkP')),
-        y = n('oEOe'),
+        y = (n('2G9S'), n('1t7P'), n('jQ/y'), n('hBvt'), n('ERkP')),
+        g = n('oEOe'),
         h = 'rweb/'.concat('convertRitoSuggestedActions'),
-        m = Object(y.a)(h, 'CALL_CONVERT_RITO_SUGGESTED_ACTIONS'),
+        m = Object(g.a)(h, 'CALL_CONVERT_RITO_SUGGESTED_ACTIONS'),
         v = function (e) {
           return function (t, n, r) {
             var a = r.api
-            return Object(y.b)(t, {
+            return Object(g.b)(t, {
               request: a.ConvertRitoSuggestedActions.callConvertRitoSuggestedActions,
               params: { userId: e },
             })({ actionTypes: m, context: 'CALL_CONVERT_RITO_SUGGESTED_ACTIONS', meta: { userId: e } })
@@ -252,14 +252,14 @@
       }
       var w = 'ritoSuggestedActionsFacePile',
         A = 'rweb/'.concat(w),
-        F = Object(y.a)(A, 'FETCH_RITO_SUGGESTED_ACTIONS_FACEPILE'),
-        C = {}
+        C = Object(g.a)(A, 'FETCH_RITO_SUGGESTED_ACTIONS_FACEPILE'),
+        F = {}
       O.a.register(
         b()({}, w, function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : C,
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : F,
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
-            case F.SUCCESS:
+            case C.SUCCESS:
               var n = t.payload || {},
                 r = n.count,
                 a = n.users_results,
@@ -277,10 +277,10 @@
         I = function (e) {
           return function (t, n, r) {
             var a = r.api
-            return Object(y.b)(t, {
+            return Object(g.b)(t, {
               request: a.RitoSuggestedActionsFacePile.fetchRitoSuggestedActionsFacePile,
               params: { userId: e },
-            })({ actionTypes: F, context: 'FETCH_RITO_SUGGESTED_ACTIONS_FACEPILE', meta: { userId: e } })
+            })({ actionTypes: C, context: 'FETCH_RITO_SUGGESTED_ACTIONS_FACEPILE', meta: { userId: e } })
           }
         },
         j = n('wsOx'),
@@ -334,9 +334,9 @@
               callConvertRitoSuggestedActions: v,
             }
           })
-          .withAnalytics({ page: 'safety_mode_modal' }),
-        H = n('jHSc'),
-        k = n('iySH'),
+          .withAnalytics({ section: 'safety_mode_prompt' }),
+        k = n('jHSc'),
+        H = n('iySH'),
         G = n.p + 'safety-mode-cone.b7ef2f95.png',
         N = n('OsOl'),
         B = n('t62R'),
@@ -376,20 +376,7 @@
         ne = X.a.ca614405,
         re = X.a.ga7fce66,
         ae = X.a.g42fd3ad,
-        oe = g.createElement(
-          B.b,
-          null,
-          g.createElement(
-            X.a.I18NFormatMessage,
-            { $i18n: 'j449c95b' },
-            g.createElement(
-              B.b,
-              { color: 'normal', link: '/settings/safety_mode/about', size: 'subtext1', withUnderline: !0 },
-              X.a.ed5457da,
-            ),
-          ),
-        ),
-        ce = (function (e) {
+        oe = (function (e) {
           l()(n, e)
           var t = $(n)
           function n() {
@@ -406,6 +393,13 @@
                   o = t.history,
                   c = t.userId
                 c && a && n(c).catch(r()), o.goBack()
+              }),
+              b()(s()(e), '_handleScribeOnClick', function () {
+                e.props.analytics.scribe({
+                  section: 'safety_mode_prompt',
+                  component: 'education_sheet',
+                  action: 'click',
+                })
               }),
               e
             )
@@ -430,59 +424,83 @@
                     n = t.count,
                     r = t.facepileUrls,
                     a = t.history
-                  return g.createElement(z.a, null, function (t) {
-                    var o = t.screenWidth
-                    return g.createElement(
-                      H.b,
+                  return y.createElement(z.a, null, function (t) {
+                    var o,
+                      c = t.screenWidth
+                    return y.createElement(
+                      k.b,
                       { history: a, onBackClick: e._handleBackClick, withBottomBorder: !1 },
-                      g.createElement(
+                      y.createElement(
                         Z.a,
-                        { style: W.a.isNarrowScreenWidth(o) ? se.narrowScreen : se.wideScreen },
-                        g.createElement(J.a, { accessibilityLabel: '', source: G, style: se.image }),
-                        g.createElement(
+                        { style: W.a.isNarrowScreenWidth(c) ? ie.narrowScreen : ie.wideScreen },
+                        y.createElement(J.a, { accessibilityLabel: '', source: G, style: ie.image }),
+                        y.createElement(
                           Z.a,
-                          { style: se.header },
-                          g.createElement(B.b, { size: 'title2', weight: 'heavy' }, ee),
+                          { style: ie.header },
+                          y.createElement(B.b, { size: 'title2', weight: 'heavy' }, ee),
                         ),
                         r && n
-                          ? g.createElement(
-                              g.Fragment,
+                          ? y.createElement(
+                              y.Fragment,
                               null,
-                              g.createElement(Y.a, { style: se.facepile, userAvatarSize: 'large', userAvatarUrls: r }),
-                              g.createElement(B.b, { style: se.description }, ne({ count: Q.a.getFormattedCount(n) })),
-                              g.createElement(
+                              y.createElement(Y.a, { style: ie.facepile, userAvatarSize: 'large', userAvatarUrls: r }),
+                              y.createElement(B.b, { style: ie.description }, ne({ count: Q.a.getFormattedCount(n) })),
+                              y.createElement(
                                 B.b,
                                 null,
-                                g.createElement(
+                                y.createElement(
                                   X.a.I18NFormatMessage,
                                   { $i18n: 'f81ca1f4' },
-                                  g.createElement(
+                                  y.createElement(
                                     B.b,
                                     { link: '/i/safety_mode/flagged_accounts', size: 'body', weight: 'bold' },
                                     X.a.ac9bde9a,
                                   ),
                                 ),
-                                g.createElement(k.a, { style: se.chevronIcon }),
+                                y.createElement(H.a, { style: ie.chevronIcon }),
                               ),
                             )
                           : null,
-                        g.createElement(
+                        y.createElement(
                           Z.a,
-                          { style: se.header },
-                          g.createElement(B.b, { size: 'title3', weight: 'heavy' }, re),
+                          { style: ie.header },
+                          y.createElement(B.b, { size: 'title3', weight: 'heavy' }, re),
                         ),
-                        g.createElement(N.a, { withBorder: !0 }),
-                        g.createElement(Z.a, { style: se.link }, oe),
-                        g.createElement(
+                        y.createElement(N.a, { withBorder: !0 }),
+                        y.createElement(
+                          Z.a,
+                          { style: ie.link },
+                          ((o = e._handleScribeOnClick),
+                          y.createElement(
+                            B.b,
+                            null,
+                            y.createElement(
+                              X.a.I18NFormatMessage,
+                              { $i18n: 'j449c95b' },
+                              y.createElement(
+                                B.b,
+                                {
+                                  color: 'normal',
+                                  link: '/settings/safety_mode/about',
+                                  onPress: o,
+                                  size: 'subtext1',
+                                  withUnderline: !0,
+                                },
+                                X.a.ed5457da,
+                              ),
+                            ),
+                          )),
+                        ),
+                        y.createElement(
                           Z.a,
                           null,
-                          g.createElement(
+                          y.createElement(
                             q.a,
-                            { onPress: e._handleBackClick, style: se.button, type: 'primaryFilled' },
+                            { onPress: e._handleBackClick, style: ie.button, type: 'primaryFilled' },
                             te,
                           ),
                         ),
-                        g.createElement(B.b, { style: se.description }, ae),
+                        y.createElement(B.b, { style: ie.description }, ae),
                       ),
                     )
                   })
@@ -491,10 +509,10 @@
             ]),
             n
           )
-        })(g.Component),
-        ie = x(ce),
-        se =
-          ((t.default = ie),
+        })(y.Component),
+        ce = x(oe),
+        ie =
+          ((t.default = ce),
           K.a.create(function (e) {
             return {
               wideScreen: { marginBottom: e.spaces.space48, marginHorizontal: e.spaces.space80 },
@@ -529,10 +547,10 @@
         return b
       }),
         n.d(t, 'b', function () {
-          return g
+          return y
         }),
         n.d(t, 'd', function () {
-          return y
+          return g
         }),
         n.d(t, 'a', function () {
           return h
@@ -614,10 +632,10 @@
       var b = function (e) {
           return e.safetyMode || {}
         },
-        g = function (e) {
+        y = function (e) {
           return e.safetyMode.fetchSettingsFetchStatus
         },
-        y = function (e) {
+        g = function (e) {
           return e.safetyMode.updateSettingsFetchStatus
         },
         h = function () {

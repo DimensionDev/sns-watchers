@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [57],
+  [56],
   {
     '3GUV': function (e, t, r) {
       'use strict'
@@ -263,9 +263,10 @@
         M = r('v//M'),
         A = r('x5W0'),
         D = r('U+bB'),
-        G = r('cm6r'),
-        F = r('rHpw')
-      function T(e) {
+        G = r('XOY5'),
+        F = r('cm6r'),
+        T = r('rHpw')
+      function B(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -286,9 +287,9 @@
           return h()(this, r)
         }
       }
-      var B = (function (e) {
+      var L = (function (e) {
           s()(r, e)
-          var t = T(r)
+          var t = B(r)
           function r() {
             return a()(this, r), t.apply(this, arguments)
           }
@@ -303,8 +304,8 @@
                     n = e.onClick,
                     a = e.width
                   return b.createElement(
-                    G.a,
-                    { onPress: n, style: [K.imageContainer, L(t, r, a).background] },
+                    F.a,
+                    { onPress: n, style: [q.imageContainer, K(t, r, a).background] },
                     this._renderPreview(),
                   )
                 },
@@ -319,32 +320,32 @@
                     a = e.shouldAutoPlayGif,
                     o = e.stillMediaUrl,
                     c = { height: n, width: e.width, uri: a ? r : o }
-                  return b.createElement(D.a, { accessibilityLabel: t, source: c })
+                  return b.createElement(D.a, { accessibilityLabel: t, source: c, testID: G.a.gifSearchGifImage })
                 },
               },
             ]),
             r
           )
         })(b.Component),
-        L = function (e, t, r) {
-          return F.a.create(function (n) {
+        K = function (e, t, r) {
+          return T.a.create(function (n) {
             return { background: { backgroundColor: e, height: t, width: r } }
           })
         },
-        K = F.a.create(function (e) {
+        q = T.a.create(function (e) {
           return { imageContainer: { marginHorizontal: '1px', overflow: 'hidden', flexShrink: 1 } }
         }),
-        q = B,
-        H = r('MLl7'),
-        U = r('3XMw'),
-        V = r.n(U),
-        Y = r('TEoO'),
-        Q = r('eyty'),
-        W = r('7nmT'),
-        X = r.n(W),
-        z = r('MWbm')
+        H = L,
+        U = r('MLl7'),
+        V = r('3XMw'),
+        Y = r.n(V),
+        Q = r('TEoO'),
+        W = r('eyty'),
+        X = r('7nmT'),
+        z = r.n(X),
+        J = r('MWbm')
       r('KOtZ')
-      function J(e, t) {
+      function Z(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -356,35 +357,35 @@
         }
         return r
       }
-      function Z(e) {
+      function $(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? J(Object(r), !0).forEach(function (t) {
+            ? Z(Object(r), !0).forEach(function (t) {
                 g()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : J(Object(r)).forEach(function (t) {
+            : Z(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var $ = function (e, t) {
+      var ee = function (e, t) {
         var r = e.reduce(function (e, t) {
           var r = t.original_image
           return e + r.width / r.height
         }, 0)
         return Math.ceil(t / r)
       }
-      function ee(e, t, r) {
+      function te(e, t, r) {
         return e
           .reduce(
             function (e, n, a) {
               return (
-                e[e.length - 1].push(Z(Z({}, n), {}, { index: a })),
-                e[e.length - 1].length > 0 && $(e[e.length - 1], r) < t && e.push([]),
+                e[e.length - 1].push($($({}, n), {}, { index: a })),
+                e[e.length - 1].length > 0 && ee(e[e.length - 1], r) < t && e.push([]),
                 e
               )
             },
@@ -394,10 +395,10 @@
             return e.length > 0
           })
       }
-      var te = r('VPAj'),
-        re = r('oQhu'),
-        ne = r('FIs5')
-      function ae(e) {
+      var re = r('VPAj'),
+        ne = r('oQhu'),
+        ae = r('FIs5')
+      function oe(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -418,26 +419,26 @@
           return h()(this, r)
         }
       }
-      var oe = V.a.a66b7760,
-        ce = V.a.b719e223,
-        ie = V.a.aed71818,
-        ue = function (e) {
+      var ce = Y.a.a66b7760,
+        ie = Y.a.b719e223,
+        ue = Y.a.aed71818,
+        le = function (e) {
           return e
             .map(function (e) {
               return e.id
             })
             .join('-')
         },
-        le = Object(te.a)(null),
-        se = [],
-        fe = Object(re.a)(function (e, t, r) {
+        se = Object(re.a)(null),
+        fe = [],
+        he = Object(ne.a)(function (e, t, r) {
           return function (n) {
-            var a = $(n, t),
+            var a = ee(n, t),
               o = t - 2 * n.length - 1,
               c = 0
             return b.createElement(
-              z.a,
-              { style: [ye.imageRow, { height: a }] },
+              J.a,
+              { style: [pe.imageRow, { height: a }] },
               n.map(function (t, i) {
                 var u = v()(t.thumbnail_images, 1)[0],
                   l = a / u.height,
@@ -446,8 +447,8 @@
                   h = u.url
                 return (
                   (c += s),
-                  b.createElement(q, {
-                    altText: t.alt_text || oe,
+                  b.createElement(H, {
+                    altText: t.alt_text || ce,
                     animatedMediaUrl: h,
                     backgroundColor: Object(A.a)(t.index),
                     height: a,
@@ -462,12 +463,12 @@
             )
           }
         }),
-        he = Object(re.a)(function (e, t) {
-          return b.createElement(M.a, { fetchStatus: e, onRequestRetry: t, render: le })
+        de = Object(ne.a)(function (e, t) {
+          return b.createElement(M.a, { fetchStatus: e, onRequestRetry: t, render: se })
         }),
-        de = (function (e) {
+        ye = (function (e) {
           s()(r, e)
-          var t = ae(r)
+          var t = oe(r)
           function r(e, n) {
             var o
             return (
@@ -479,13 +480,13 @@
                   t = e.items,
                   r = e.query,
                   n = o.state.width,
-                  a = t ? o._brickLayout(t, 150, n) : se
+                  a = t ? o._brickLayout(t, 150, n) : fe
                 return n > 0
-                  ? b.createElement(Y.a, {
+                  ? b.createElement(Q.a, {
                       assumedItemHeight: 150,
                       cacheKey: 'gifSearchCategory/'.concat(r),
                       footer: o._getRenderFooter(),
-                      identityFunction: ue,
+                      identityFunction: le,
                       items: a,
                       noItemsRenderer: o._renderEmptyItem,
                       onNearEnd: o._handleFetchNext,
@@ -496,7 +497,7 @@
               g()(u()(o), '_getRowRenderer', function () {
                 var e = o.props.shouldAutoPlayGif,
                   t = o.state.width
-                return fe(e, t, o._handleClickFactory)
+                return he(e, t, o._handleClickFactory)
               }),
               g()(u()(o), '_handleClickFactory', function (e) {
                 return function () {
@@ -520,7 +521,7 @@
                     O = v()(e.thumbnail_images, 1)[0],
                     S = e.url,
                     w = r({
-                      mediaCategory: c === H.a.Composition ? Q.b.TweetGif : Q.b.DMGif,
+                      mediaCategory: c === U.a.Composition ? W.b.TweetGif : W.b.DMGif,
                       mediaType: 'image/gif',
                       previewMediaType: 'video/mp4',
                       previewUrl: m,
@@ -533,19 +534,19 @@
                     }),
                     E = { found_media_origin: h, provider: d, url: S }
                   f && l(w[0], { defaultAltText: f }),
-                    c === H.a.Composition
+                    c === U.a.Composition
                       ? s({ updates: { mediaIds: w, gifMetadata: E } })
-                      : c === H.a.DMComposition && n(w, E),
+                      : c === U.a.DMComposition && n(w, E),
                     u({ page: c, section: 'gif_search', element: 'category', action: a ? 'search' : 'select' }),
                     i.go(-2)
                 }
               }),
               g()(u()(o), '_renderEmptyItem', function () {
-                return b.createElement(ne.a, { header: ce, message: ie })
+                return b.createElement(ae.a, { header: ie, message: ue })
               }),
               g()(u()(o), '_getRenderFooter', function () {
                 var e = o.props.nextFetchStatus
-                return he(e, o._handleFetchNext)
+                return de(e, o._handleFetchNext)
               }),
               g()(u()(o), '_handleFetch', function () {
                 var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : o.props.query,
@@ -559,9 +560,9 @@
               g()(u()(o), '_handleResize', function () {
                 o._rootNode && o._rootNode instanceof Element && o.setState({ width: o._rootNode.clientWidth })
               }),
-              g()(u()(o), '_brickLayout', Object(re.a)(ee)),
+              g()(u()(o), '_brickLayout', Object(ne.a)(te)),
               g()(u()(o), '_setRootNode', function (e) {
-                o._rootNode = X.a.findDOMNode(e)
+                o._rootNode = z.a.findDOMNode(e)
               }),
               (o.state = { width: 0 }),
               o
@@ -607,8 +608,8 @@
             r
           )
         })(b.Component)
-      g()(de, 'defaultProps', { fromSearch: !1 })
-      var ye = F.a.create(function (e) {
+      g()(ye, 'defaultProps', { fromSearch: !1 })
+      var pe = T.a.create(function (e) {
         return {
           emptyItem: {
             display: 'inline-block',
@@ -618,7 +619,7 @@
           imageRow: { flexDirection: 'row', marginBottom: 2 },
         }
       })
-      t.a = k(de)
+      t.a = k(ye)
     },
     TEoO: function (e, t, r) {
       'use strict'
@@ -636,6 +637,10 @@
           return t ? o.createElement(c.a, { title: t }, n) : n
         }
       ;(s.defaultProps = { footer: l }), (t.a = s)
+    },
+    XOY5: function (e, t, r) {
+      'use strict'
+      t.a = { gifSearchSearchInput: 'gifSearchSearchInput', gifSearchGifImage: 'gifSearchGifImage' }
     },
     XYn1: function (e, t, r) {
       'use strict'
@@ -1068,10 +1073,10 @@
       'use strict'
       r.r(t),
         r.d(t, 'GifSearchPaths', function () {
-          return Q
+          return W
         }),
         r.d(t, 'GifSearchScreen', function () {
-          return W
+          return X
         })
       r('OZaJ')
       var n = r('VrFO'),
@@ -1121,14 +1126,15 @@
         k = r('5FtR'),
         M = r('wytG'),
         A = r('7JQg'),
-        D = r('MWbm'),
-        G = r('6OUF'),
-        F = r('/yvb'),
-        T = r('rHpw'),
-        B = r('oQhu'),
-        L = r('VY6S'),
-        K = r('Ty5D')
-      function q(e) {
+        D = r('XOY5'),
+        G = r('MWbm'),
+        F = r('6OUF'),
+        T = r('/yvb'),
+        B = r('rHpw'),
+        L = r('oQhu'),
+        K = r('VY6S'),
+        q = r('Ty5D')
+      function H(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -1149,18 +1155,18 @@
           return h()(this, r)
         }
       }
-      var H = x.a.a50ba821,
-        U = x.a.a9ae1e78,
-        V = Object(M.a)(function () {
+      var U = x.a.a50ba821,
+        V = x.a.a9ae1e78,
+        Y = Object(M.a)(function () {
           return Promise.resolve().then(r.bind(null, 'XYn1'))
         }),
-        Y = Object(M.a)(function () {
+        Q = Object(M.a)(function () {
           return Promise.resolve().then(r.bind(null, 'k5pS'))
         }),
-        Q = { category: '/i/foundmedia/category', search: '/i/foundmedia/search' },
-        W = (function (e) {
+        W = { category: '/i/foundmedia/category', search: '/i/foundmedia/search' },
+        X = (function (e) {
           s()(r, e)
-          var t = q(r)
+          var t = H(r)
           function r(e) {
             var n
             return (
@@ -1171,7 +1177,7 @@
               g()(
                 u()(n),
                 '_getScribeNamespace',
-                Object(B.a)(function (e) {
+                Object(L.a)(function (e) {
                   return { page: e, section: 'gif_search' }
                 }),
               ),
@@ -1187,8 +1193,8 @@
                   t = e.history,
                   r = e.isDataSaverEnabled,
                   a = e.location,
-                  o = a.pathname.startsWith(Q.category),
-                  c = a.pathname === Q.search && a.state && a.state.query
+                  o = a.pathname.startsWith(W.category),
+                  c = a.pathname === W.search && a.state && a.state.query
                 !r && (o || c) ? t.goBack() : r && n.setState({ searchDisabled: !0 })
               }),
               g()(u()(n), '_handleSubmit', function () {
@@ -1205,15 +1211,15 @@
                   a = t.isDataSaverEnabled,
                   o = t.location,
                   c = {}
-                c.pathname = Q.search
+                c.pathname = W.search
                 var i = o.state && o.state.query,
-                  u = o.pathname === Q.search && !i,
-                  l = o.pathname.startsWith(Q.category) || (o.pathname === Q.search && i),
+                  u = o.pathname === W.search && !i,
+                  l = o.pathname.startsWith(W.category) || (o.pathname === W.search && i),
                   s = !a && l,
                   f = o.state && o.state.dmConversationId
                 e ? ((c.state = { dmConversationId: f, query: e }), u ? r.push(c) : r.replace(c)) : s && r.goBack()
               }),
-              (n._goToQueryDebounced = Object(L.a)(function () {
+              (n._goToQueryDebounced = Object(K.a)(function () {
                 var e
                 return (e = n)._goToQuery.apply(e, arguments)
               }, 500)),
@@ -1243,15 +1249,15 @@
                         A.b,
                         { namespace: this._getScribeNamespace(o) },
                         m.createElement(
-                          K.e,
+                          q.e,
                           null,
-                          m.createElement(K.c, { exact: !0, path: Q.search }, m.createElement(V, a)),
+                          m.createElement(q.c, { exact: !0, path: W.search }, m.createElement(Y, a)),
                           m.createElement(
-                            K.c,
-                            { exact: !0, path: ''.concat(Q.category, '/').concat(j.o) },
-                            m.createElement(Y, a),
+                            q.c,
+                            { exact: !0, path: ''.concat(W.category, '/').concat(j.o) },
+                            m.createElement(Q, a),
                           ),
-                          m.createElement(K.c, { component: N.b }),
+                          m.createElement(q.c, { component: N.b }),
                         ),
                       )
                     : m.createElement(k.a, { to: '/' })
@@ -1281,9 +1287,9 @@
                   var e = this.state.searchDisabled,
                     t = this._getQueryOrCategory()
                   return m.createElement(
-                    D.a,
-                    { style: X.searchContainer },
-                    m.createElement(G.a, {
+                    G.a,
+                    { style: z.searchContainer },
+                    m.createElement(F.a, {
                       Icon: C.a,
                       autoFocus: !0,
                       defaultValue: t,
@@ -1291,23 +1297,24 @@
                       onChange: this._handleChange,
                       onClear: this._handleClear,
                       onSubmitEditing: this._handleSearch,
-                      placeholder: H,
+                      placeholder: U,
                       ref: this._setTextInputRef,
-                      style: X.searchInput,
+                      style: z.searchInput,
+                      testID: D.a.gifSearchSearchInput,
                       withClearButton: !0,
                     }),
                     this._shouldRenderResultsOnChange
                       ? null
                       : m.createElement(
-                          F.a,
+                          T.a,
                           {
                             disabled: e,
                             onPress: this._handleSubmit,
                             size: 'small',
-                            style: X.searchButton,
+                            style: z.searchButton,
                             type: 'brandFilled',
                           },
-                          U,
+                          V,
                         ),
                   )
                 },
@@ -1316,14 +1323,14 @@
             r
           )
         })(m.Component),
-        X = T.a.create(function (e) {
+        z = B.a.create(function (e) {
           return {
             searchContainer: { alignItems: 'center', flex: 1, flexDirection: 'row', marginVertical: e.spaces.space8 },
             searchInput: { height: '100%' },
             searchButton: { marginStart: e.spaces.space12 },
           }
         })
-      t.default = _(W)
+      t.default = _(X)
     },
     k5pS: function (e, t, r) {
       'use strict'

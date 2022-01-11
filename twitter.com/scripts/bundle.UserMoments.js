@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [104],
+  [103],
   {
     DghG: function (e, t, n) {
       'use strict'
@@ -56,9 +56,9 @@
           .withAnalytics({ page: 'profile', section: 'moments' }),
         A = n('c+OQ'),
         U = n('7wqI'),
-        P = n('3XMw'),
-        S = n.n(P),
-        _ = n('yoO3'),
+        S = n('3XMw'),
+        _ = n.n(S),
+        P = n('yoO3'),
         L = n('5FtR'),
         R = n('VS6U'),
         T = n('gbni'),
@@ -85,7 +85,7 @@
           return f()(this, n)
         }
       }
-      var j = S.a.b4af8c6a,
+      var j = _.a.b4af8c6a,
         H = (function (e) {
           l()(n, e)
           var t = x(n)
@@ -138,7 +138,7 @@
                     a = this._isOwnMoments() ? E.createElement(A.a, { onPress: this._handleCreateMoment }) : void 0
                   return o
                     ? E.createElement(
-                        _.a,
+                        P.a,
                         null,
                         E.createElement(R.a, {
                           backLocation: '/'.concat(n),
@@ -183,7 +183,7 @@
         d = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(212)]).then(n.bind(null, 'Pb8P'))
+              return n.e(212).then(n.bind(null, 'Pb8P'))
             },
             loaderOptions: e,
             loaderKey: 'momentSummaryLoader',

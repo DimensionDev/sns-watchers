@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [88, 170],
+  [87, 169],
   {
     '+0pD': function (e, t) {
       var n =
@@ -1118,6 +1118,7 @@
         monthSelector: 'ProfileBirthdate_Month_Selector',
         remove: 'ProfileBirthdate_Remove_Button',
         save: 'Profile_Save_Button',
+        bio: 'Profile_Bio',
         switchToProfessional: 'ProfessionalButton_Switch_To_Professional',
         yearSelector: 'ProfileBirthdate_Year_Selector',
         yearVisibility: 'ProfileBirthdate_Year_Visibility',
@@ -1759,9 +1760,10 @@
         O = n('3XMw'),
         M = n.n(O),
         w = n('EeFI'),
-        R = n('/yvb'),
-        B = n('rHpw')
-      function D(e) {
+        R = 'applyButton',
+        B = n('/yvb'),
+        D = n('rHpw')
+      function j(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -1782,11 +1784,11 @@
           return h()(this, n)
         }
       }
-      var j = M.a.gd80afba,
-        A = M.a.a753a87f,
-        L = (function (e) {
+      var A = M.a.gd80afba,
+        L = M.a.a753a87f,
+        I = (function (e) {
           d()(n, e)
-          var t = D(n)
+          var t = j(n)
           function n(e) {
             var a
             return (
@@ -1799,9 +1801,9 @@
               y()(l()(a), '_renderAppBarRightControl', function () {
                 var e = a.state.isProcessing
                 return r.createElement(
-                  R.a,
-                  { disabled: e, onPress: a._handleApplyButtonClick, size: 'small', type: 'primaryFilled' },
-                  A,
+                  B.a,
+                  { disabled: e, onPress: a._handleApplyButtonClick, size: 'small', testID: R, type: 'primaryFilled' },
+                  L,
                 )
               }),
               y()(l()(a), '_handleBackClick', function () {
@@ -1856,12 +1858,12 @@
                     C.b,
                     {
                       backButtonType: 'back',
-                      containerStyle: I.root,
-                      documentTitle: a || j,
+                      containerStyle: T.root,
+                      documentTitle: a || A,
                       history: n,
                       onBackClick: this._handleBackClick,
                       rightControl: this._renderAppBarRightControl(),
-                      title: a || j,
+                      title: a || A,
                     },
                     r.createElement(w.a, {
                       defaultAspectRatio: t,
@@ -1877,19 +1879,19 @@
             n
           )
         })(r.Component),
-        I = B.a.create(function (e) {
+        T = D.a.create(function (e) {
           return { root: { flexShrink: 1, height: 650 } }
         }),
-        T = S(L),
-        k = n('X8FW'),
-        x = B.a.create(function (e) {
+        k = S(I),
+        x = n('X8FW'),
+        U = D.a.create(function (e) {
           return { modal: { width: 600, maxWidth: '90vw' } }
         })
       t.a = function (e) {
         return r.createElement(
-          k.b,
-          { clickMaskToClose: !1, modalSize: 'fitChildren', style: x.modal },
-          r.createElement(T, e),
+          x.b,
+          { clickMaskToClose: !1, modalSize: 'fitChildren', style: U.modal },
+          r.createElement(k, e),
         )
       }
     },
@@ -2071,7 +2073,7 @@
         G = n('RuTB'),
         Y = Object(X.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(198)]).then(n.bind(null, 'it2P'))
+            return Promise.all([n.e(0), n.e(197)]).then(n.bind(null, 'it2P'))
           },
           renderPlaceholder: function (e, t) {
             return P.createElement(G.a, { hasError: e, onRetry: t })

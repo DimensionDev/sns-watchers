@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [56],
+  [55],
   {
     '180P': function (e, t, r) {
       'use strict'
@@ -67,22 +67,22 @@
         }
         return e
       }
-      var m =
+      var v =
           ((n = {}),
           u()(n, s.b.EventSummary, Object(f.a)({ errorContext: 'GENERIC_TIMELINE_SCREEN' })),
           u()(n, s.b.Label, b),
           u()(n, s.b.News, y.a),
           u()(n, s.b.TwitterList, Object(O.a)({})),
           n),
-        v = P(P({}, Object(l.a)({ withMuteConversation: !0 })), m),
-        w = r('3XMw'),
-        j = r.n(w),
-        E = r('yoO3'),
+        w = P(P({}, Object(l.a)({ withMuteConversation: !0 })), v),
+        j = r('3XMw'),
+        E = r.n(j),
+        m = r('yoO3'),
         h = r('5FtR'),
         C = r('fTQJ'),
         I = r('VS6U'),
         T = r('7JQg'),
-        L = j.a.a6d5b010,
+        L = E.a.a6d5b010,
         D = function (e) {
           var t = e.history,
             r = (function (e) {
@@ -99,12 +99,12 @@
             )
           return l
             ? i.createElement(
-                E.a,
+                m.a,
                 null,
                 i.createElement(I.a, {
                   backLocation: '/',
                   history: t,
-                  primaryContent: i.createElement(C.a, { entryConfiguration: v, module: l, title: a }),
+                  primaryContent: i.createElement(C.a, { entryConfiguration: w, module: l, title: a }),
                   sidebarContent: i.createElement(c.a, { withWhoToFollow: !1 }),
                   subtitle: u,
                   title: a,
@@ -124,14 +124,14 @@
         u = (r('JtPf'), r('7x/C'), r('87if'), r('lTEL'), r('kYxP'), r('XBtf')),
         l = {
           loader: function () {
-            return Promise.all([r.e(0), r.e(331)]).then(r.bind(null, 'a+ad'))
+            return r.e(332).then(r.bind(null, 'a+ad'))
           },
           loaderKey: 'newsCellLoader',
           strategy: u.a.Critical,
         },
         s = {
           loader: function () {
-            return Promise.all([r.e(0), r.e(333)]).then(r.bind(null, 'hX2d'))
+            return r.e(334).then(r.bind(null, 'hX2d'))
           },
           loaderKey: 'newsPreviewCardLoader',
           strategy: u.a.Critical,

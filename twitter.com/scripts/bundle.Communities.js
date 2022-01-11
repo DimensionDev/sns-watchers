@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [41],
+  [40],
   {
     '21U8': function (e, t, n) {
       'use strict'
@@ -2675,7 +2675,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return n.e(194).then(n.bind(null, 'V5fj'))
+              return n.e(193).then(n.bind(null, 'V5fj'))
             },
             loaderKey: 'communityDefaultLoader',
             strategy: n('XBtf').a.Critical,
@@ -5542,9 +5542,10 @@
         S = n('3XMw'),
         j = n.n(S),
         P = n('EeFI'),
-        I = n('/yvb'),
-        R = n('rHpw')
-      function M(e) {
+        I = 'applyButton',
+        R = n('/yvb'),
+        M = n('rHpw')
+      function x(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -5565,11 +5566,11 @@
           return p()(this, n)
         }
       }
-      var x = j.a.gd80afba,
-        T = j.a.a753a87f,
-        k = (function (e) {
+      var T = j.a.gd80afba,
+        k = j.a.a753a87f,
+        A = (function (e) {
           m()(n, e)
-          var t = M(n)
+          var t = x(n)
           function n(e) {
             var a
             return (
@@ -5582,9 +5583,9 @@
               b()(u()(a), '_renderAppBarRightControl', function () {
                 var e = a.state.isProcessing
                 return r.createElement(
-                  I.a,
-                  { disabled: e, onPress: a._handleApplyButtonClick, size: 'small', type: 'primaryFilled' },
-                  T,
+                  R.a,
+                  { disabled: e, onPress: a._handleApplyButtonClick, size: 'small', testID: I, type: 'primaryFilled' },
+                  k,
                 )
               }),
               b()(u()(a), '_handleBackClick', function () {
@@ -5639,12 +5640,12 @@
                     _.b,
                     {
                       backButtonType: 'back',
-                      containerStyle: A.root,
-                      documentTitle: a || x,
+                      containerStyle: L.root,
+                      documentTitle: a || T,
                       history: n,
                       onBackClick: this._handleBackClick,
                       rightControl: this._renderAppBarRightControl(),
-                      title: a || x,
+                      title: a || T,
                     },
                     r.createElement(P.a, {
                       defaultAspectRatio: t,
@@ -5660,19 +5661,19 @@
             n
           )
         })(r.Component),
-        A = R.a.create(function (e) {
+        L = M.a.create(function (e) {
           return { root: { flexShrink: 1, height: 650 } }
         }),
-        L = C(k),
-        D = n('X8FW'),
-        H = R.a.create(function (e) {
+        D = C(A),
+        H = n('X8FW'),
+        F = M.a.create(function (e) {
           return { modal: { width: 600, maxWidth: '90vw' } }
         })
       t.a = function (e) {
         return r.createElement(
-          D.b,
-          { clickMaskToClose: !1, modalSize: 'fitChildren', style: H.modal },
-          r.createElement(L, e),
+          H.b,
+          { clickMaskToClose: !1, modalSize: 'fitChildren', style: F.modal },
+          r.createElement(D, e),
         )
       }
     },
@@ -9065,7 +9066,7 @@
         O = (n('JtPf'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP'), n('zb92')),
         w = Object(O.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(4), n.e(5), n.e(170)]).then(n.bind(null, 'P68U'))
+            return Promise.all([n.e(0), n.e(4), n.e(5), n.e(169)]).then(n.bind(null, 'P68U'))
           },
         }),
         C = n('eyty'),

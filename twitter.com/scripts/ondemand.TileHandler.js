@@ -257,6 +257,50 @@
           return l({ gameCategory: d, gameState: f, accessibleGameClockPeriod: v, teamOneLabel: m, teamTwoLabel: b })
         }
     },
+    IJsT: function (e, t, r) {
+      'use strict'
+      r('hBvt')
+      var n = r('ERkP'),
+        a = r('cm6r'),
+        c = r('rHpw'),
+        o = r('MWbm'),
+        i = function (e) {
+          var t = e.accessibilityLabel,
+            r = e.containerStyle,
+            c = e.isCompact,
+            i = e.link,
+            l = e.lower,
+            u = e.onClick,
+            p = e.stackLayoutLowerStyle,
+            f = e.stackLayoutUpperStyle,
+            d = e.upper,
+            m = e.withInteractiveStyling,
+            b = n.createElement(
+              n.Fragment,
+              null,
+              n.createElement(o.a, { style: [s.defaultUpperContainerStyle, f, c && { height: 'auto' }] }, d),
+              l ? n.createElement(o.a, { style: [s.defaultLowerContainerStyle, p] }, l) : null,
+            )
+          return n.createElement(
+            a.a,
+            { accessibilityLabel: t, interactive: m, link: i, onClick: u, style: [s.root, r] },
+            b,
+          )
+        }
+      i.defaultProps = { withInteractiveStyling: !1 }
+      var s = c.a.create(function (e) {
+        return {
+          root: { padding: e.spaces.space12, borderRadius: e.borderRadii.large },
+          defaultLowerContainerStyle: { marginTop: e.spaces.space12, justifyContent: 'flex-end' },
+          defaultUpperContainerStyle: {
+            height: 'calc('.concat(e.spaces.space48, '*2)'),
+            overflow: 'hidden',
+            borderRadius: e.borderRadii.large,
+          },
+        }
+      })
+      t.a = i
+    },
     Nxr7: function (e, t, r) {
       'use strict'
       r.d(t, 'a', function () {
@@ -288,8 +332,8 @@
         w = r('3XMw'),
         S = r.n(w),
         C = r('pjBI'),
-        j = r('gmfB')
-      function E(e) {
+        E = r('gmfB')
+      function j(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -314,15 +358,15 @@
         k = S.a.d725a288,
         R = S.a.db355331,
         _ = S.a.a8428d5e,
-        D = S.a.a7aad8b9,
+        L = S.a.a7aad8b9,
         I = S.a.e431f1aa,
-        T = S.a.a7391707,
-        x = S.a.d2dbfa91,
-        L = S.a.cd734f65,
+        D = S.a.a7391707,
+        T = S.a.d2dbfa91,
+        x = S.a.cd734f65,
         N = S.a.c8891d06,
         z = (function (e) {
           u()(r, e)
-          var t = E(r)
+          var t = j(r)
           function r() {
             var e
             a()(this, r)
@@ -349,7 +393,7 @@
                 return g.createElement(
                   C.a,
                   null,
-                  g.createElement(v.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }, 0 === e ? L : N),
+                  g.createElement(v.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }, 0 === e ? x : N),
                   g.createElement(v.b, { color: 'gray700', size: 'subtext2' }, r),
                 )
               }),
@@ -391,9 +435,9 @@
                   var e = this.props,
                     t = e.gameState,
                     r = e.withCategory,
-                    n = t === j.a.Scheduled,
-                    a = t === j.a.InProgress,
-                    c = t === j.a.Completed
+                    n = t === E.a.Scheduled,
+                    a = t === E.a.InProgress,
+                    c = t === E.a.Completed
                   return g.createElement(
                     g.Fragment,
                     null,
@@ -407,16 +451,16 @@
                             { color: a ? 'magenta500' : 'gray700', numberOfLines: 1, size: 'subtext2', weight: 'bold' },
                             (function (e) {
                               switch (e) {
-                                case j.a.Scheduled:
+                                case E.a.Scheduled:
                                   return _
-                                case j.a.InProgress:
-                                  return D
-                                case j.a.Completed:
+                                case E.a.InProgress:
+                                  return L
+                                case E.a.Completed:
                                   return I
-                                case j.a.Postponed:
+                                case E.a.Postponed:
+                                  return D
+                                case E.a.Cancelled:
                                   return T
-                                case j.a.Cancelled:
-                                  return x
                                 default:
                                   return null
                               }
@@ -501,8 +545,8 @@
         w = r('IJsT'),
         S = r('a6qo'),
         C = r('rHpw'),
-        j = r('jhWN'),
-        E = r('jV+4'),
+        E = r('jhWN'),
+        j = r('jV+4'),
         P = r('MWbm')
       function k(e) {
         var t = (function () {
@@ -562,7 +606,7 @@
                       g.createElement(
                         P.a,
                         { style: _.avatarContainer },
-                        g.createElement(j.a, {
+                        g.createElement(E.a, {
                           accessibilityHidden: !0,
                           focusable: !1,
                           size: 'xLarge',
@@ -573,7 +617,7 @@
                       g.createElement(
                         P.a,
                         { style: _.groupContainer },
-                        g.createElement(E.a, {
+                        g.createElement(j.a, {
                           isVerified: t.verified,
                           name: t.name,
                           nameSize: 'subtext2',
@@ -646,7 +690,7 @@
     jUPy: function (e, t, r) {
       'use strict'
       r.d(t, 'a', function () {
-        return T
+        return D
       })
       r('OZaJ')
       var n = r('VrFO'),
@@ -670,8 +714,8 @@
         w = r('t62R'),
         S = r('A91F'),
         C = r('gmfB'),
-        j = r('rHpw'),
-        E = r('MWbm')
+        E = r('rHpw'),
+        j = r('MWbm')
       function P(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -707,7 +751,7 @@
               y()(s()(e), '_renderTeamName', function () {
                 var t = e.props.team.shortName
                 return g.createElement(
-                  E.a,
+                  j.a,
                   { style: _.teamNameContainer },
                   g.createElement(w.b, { color: 'white', numberOfLines: 1, weight: 'heavy' }, t),
                 )
@@ -722,7 +766,7 @@
                   i = (!c && !a) || o ? _.translucent : {},
                   s = c ? S.a.exact(c.width / c.height) : S.a.SQUARE
                 return g.createElement(
-                  E.a,
+                  j.a,
                   { style: [_.imageContainer, i, r && _.compactImageContainer] },
                   g.createElement(O.a, {
                     accessibilityLabel: '',
@@ -752,7 +796,7 @@
                   d = i ? e._getTeamScoreSize(k.SECONDARY_SCORE) : void 0
                 return p
                   ? g.createElement(
-                      E.a,
+                      j.a,
                       { style: [_.teamScore, u && _.losingTeamScore] },
                       g.createElement(w.b, { color: 'white', numberOfLines: 1, size: f, weight: 'heavy' }, o),
                       i ? g.createElement(w.b, { color: 'white', numberOfLines: 1, size: d, weight: 'bold' }, i) : null,
@@ -791,12 +835,12 @@
                     a = {
                       backgroundColor:
                         (n && 'rgb('.concat(n.red, ', ').concat(n.green, ', ').concat(n.blue, ')')) ||
-                        j.a.theme.colors[t],
+                        E.a.theme.colors[t],
                     },
                     c = this._shouldRenderScore(),
                     o = !r || !c
                   return g.createElement(
-                    E.a,
+                    j.a,
                     { style: [_.root, a, r && _.compactRoot] },
                     this._renderImage(),
                     o ? this._renderTeamName() : null,
@@ -809,7 +853,7 @@
           )
         })(g.Component)
       y()(R, 'defaultProps', { isCompact: !1 })
-      var _ = j.a.create(function (e) {
+      var _ = E.a.create(function (e) {
           return {
             root: { flexDirection: 'row', height: e.spaces.space48, paddingHorizontal: e.spaces.space12 },
             imageContainer: { alignSelf: 'center', width: e.spaces.space32, marginRight: e.spaces.space12 },
@@ -817,8 +861,8 @@
             compactRoot: {
               height: 'calc('
                 .concat(e.spaces.space48, ' - (')
-                .concat(j.a.theme.spaces.space1, ' + ')
-                .concat(j.a.theme.spaces.space2, '))'),
+                .concat(E.a.theme.spaces.space1, ' + ')
+                .concat(E.a.theme.spaces.space2, '))'),
             },
             losingTeamScore: { opacity: 0.5 },
             teamNameContainer: { alignSelf: 'center' },
@@ -826,7 +870,7 @@
             translucent: { borderRadius: e.borderRadii.infinite, backgroundColor: e.colors.white, opacity: 0.4 },
           }
         }),
-        D = R
+        L = R
       function I(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -848,7 +892,7 @@
           return f()(this, r)
         }
       }
-      var T = (function (e) {
+      var D = (function (e) {
         u()(r, e)
         var t = I(r)
         function r() {
@@ -884,7 +928,7 @@
                 c = n.isCompact,
                 o = n.winnerId,
                 i = t.id
-              return g.createElement(D, {
+              return g.createElement(L, {
                 fallbackColor: r % 2 == 0 ? 'gray300' : 'gray700',
                 gameState: a,
                 isCompact: c,
@@ -928,7 +972,7 @@
           r
         )
       })(g.Component)
-      y()(T, 'defaultProps', { isCompact: !1 })
+      y()(D, 'defaultProps', { isCompact: !1 })
     },
     kthL: function (e, t, r) {
       'use strict'

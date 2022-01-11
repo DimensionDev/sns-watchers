@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [68],
+  [67],
   {
     '0rgK': function (e, t, n) {
       'use strict'
@@ -25,8 +25,8 @@
         w = n.n(b),
         h = n('QIgh'),
         g = n('8UdT'),
-        m = n('PH3B')
-      function P(e, t) {
+        v = n('PH3B')
+      function j(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -38,23 +38,23 @@
         }
         return n
       }
-      function v(e) {
+      function m(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? P(Object(n), !0).forEach(function (t) {
+            ? j(Object(n), !0).forEach(function (t) {
                 w()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : P(Object(n)).forEach(function (t) {
+            : j(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var j = w()({}, g.b.News, m.a),
-        E = v(v({}, h.b), j),
+      var P = w()({}, g.b.News, v.a),
+        E = m(m({}, h.b), P),
         C = n('Hw0q'),
         T = n('dwig'),
         x = n('0+qk'),
@@ -205,14 +205,14 @@
         l = (n('JtPf'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP'), n('XBtf')),
         u = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(331)]).then(n.bind(null, 'a+ad'))
+            return n.e(332).then(n.bind(null, 'a+ad'))
           },
           loaderKey: 'newsCellLoader',
           strategy: l.a.Critical,
         },
         s = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(333)]).then(n.bind(null, 'hX2d'))
+            return n.e(334).then(n.bind(null, 'hX2d'))
           },
           loaderKey: 'newsPreviewCardLoader',
           strategy: l.a.Critical,
