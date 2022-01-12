@@ -1775,7 +1775,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c8c6c4e9', 'Learn more about Communities'),
           a('a0e3ece4', 'Community Detail'),
           a('d601fc2f', 'Latest'),
-          a('b139b549', 'Invite members'),
           a('hb9400db', 'See More'),
           a('aa7ae3f6', 'Joined'),
           a('hafa07f2', 'Participation is limited'),
@@ -1789,6 +1788,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a0e0a52b', function (e) {
             return '' + e.offendingRule
           }),
+          a('b139b549', 'Invite members'),
           a('c18e3a3e', 'There aren’t any Tweets in this Community'),
           a('d68146c0', 'When anyone in this Community Tweets, they’ll show up here.'),
           a('h5245afa', 'Community'),
@@ -4188,7 +4188,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j7d0cac5', 'The latest Tweets from people you follow will be one tab away from Home.'),
           a('eeab4419', 'Unpin your Latest timeline'),
           a('cae804f9', 'You’ll still see Home, where Top Tweets show up first.'),
-          a('gf85d8c5', 'Timeline options'),
           a('f089620b', 'Your Home Timeline'),
           a('d2c66f1f', 'Welcome to Twitter!'),
           a(
@@ -4524,14 +4523,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fb9dd9b0', 'Sign in'),
           a('jae84f3a', 'Currently Trending in your location'),
           a('d1cc8c05', 'Limit unwelcome interactions'),
-          a('ca614405', function (e) {
+          a('c1da34c2', function (e) {
+            return 'We flagged ' + e.count + ' potentially abusive or spammy account' + n(e.count, '', 's') + '.'
+          }),
+          a('j85176c1', function (e) {
             return (
-              'We flagged ' +
-              n(e.count, '', 'more than ') +
-              e.count +
-              ' potentially abusive or spammy account' +
-              n(e.count, '', 's') +
-              '.'
+              'We flagged more than ' + e.count + ' potentially abusive or spammy account' + n(e.count, '', 's') + '.'
             )
           }),
           a('ga7fce66', 'Turn on Safety Mode'),

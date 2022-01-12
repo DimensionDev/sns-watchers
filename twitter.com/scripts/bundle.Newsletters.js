@@ -695,7 +695,7 @@
         I = m.a.bf916530,
         y = m.a.af5cd00d,
         T = function (e) {
-          var t = n.useContext(o.a).isModal
+          var t = n.useContext(o.b).isModal
           return n.createElement(
             a.b,
             { documentTitle: f, history: e.history, withBottomBorder: !1 },

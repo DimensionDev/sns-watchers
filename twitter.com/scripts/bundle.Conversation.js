@@ -1750,7 +1750,7 @@
       })(y.PureComponent)
       h()(zn, 'contextType', fe.a)
       var Un = R.a.create(function (e) {
-          return { iframe: { flexGrow: 1 } }
+          return { iframe: { flexGrow: 1, paddingTop: 0 } }
         }),
         Gn = Bn(zn)
       function Vn(e) {

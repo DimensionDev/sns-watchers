@@ -60,7 +60,7 @@
             l = s.useContext(i.a),
             d = l.featureSwitches,
             u = l.userClaims,
-            b = s.useContext(h.a).isModal,
+            b = s.useContext(h.b).isModal,
             y =
               null === (t = o.state) || void 0 === t || null === (a = t.previousPath) || void 0 === a
                 ? void 0

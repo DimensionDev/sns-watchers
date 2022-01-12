@@ -752,7 +752,7 @@
                       S.a.Dropdown,
                       null,
                       b.createElement(R.a.Consumer, null, function (t) {
-                        return b.createElement(L.a.Consumer, null, function (a) {
+                        return b.createElement(L.b.Consumer, null, function (a) {
                           var u = a.isModal
                           return b.createElement(
                             I.a,

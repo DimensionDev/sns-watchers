@@ -48,9 +48,9 @@
         O = l.a.fc638aa2,
         T = l.a.d94b2246,
         _ = l.a.bfea13ab,
-        w = l.a.fc209bb7,
-        A = l.a.ee95bb8d,
-        C = [
+        C = l.a.fc209bb7,
+        w = l.a.ee95bb8d,
+        A = [
           { label: m, value: 'OneDay' },
           { label: v, value: 'ThreeDays' },
           { label: O, value: 'SevenDays' },
@@ -96,7 +96,7 @@
             },
             v = function () {
               return function (e) {
-                var n = C.map(function (e) {
+                var n = A.map(function (e) {
                   return {
                     text: e.label,
                     onClick: function () {
@@ -149,7 +149,7 @@
                           return Math.floor(Math.abs((t || Date.now()) - e) / 36e5) <= 1
                         })(e)
                           ? T
-                          : A({ date: w(e) }),
+                          : w({ date: C(e) }),
                       )
                     : null,
                   r.createElement(E.b, { color: 'gray700', size: 'subtext2', style: M.settingDescription }, h),
@@ -192,7 +192,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'SafetyModeModal', function () {
-          return oe
+          return ce
         })
       n('OZaJ')
       var r = n('VrFO'),
@@ -250,16 +250,16 @@
         }
         return e
       }
-      var w = 'ritoSuggestedActionsFacePile',
-        A = 'rweb/'.concat(w),
-        C = Object(g.a)(A, 'FETCH_RITO_SUGGESTED_ACTIONS_FACEPILE'),
+      var C = 'ritoSuggestedActionsFacePile',
+        w = 'rweb/'.concat(C),
+        A = Object(g.a)(w, 'FETCH_RITO_SUGGESTED_ACTIONS_FACEPILE'),
         F = {}
       O.a.register(
-        b()({}, w, function () {
+        b()({}, C, function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : F,
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
-            case C.SUCCESS:
+            case A.SUCCESS:
               var n = t.payload || {},
                 r = n.count,
                 a = n.users_results,
@@ -280,7 +280,7 @@
             return Object(g.b)(t, {
               request: a.RitoSuggestedActionsFacePile.fetchRitoSuggestedActionsFacePile,
               params: { userId: e },
-            })({ actionTypes: C, context: 'FETCH_RITO_SUGGESTED_ACTIONS_FACEPILE', meta: { userId: e } })
+            })({ actionTypes: A, context: 'FETCH_RITO_SUGGESTED_ACTIONS_FACEPILE', meta: { userId: e } })
           }
         },
         j = n('wsOx'),
@@ -339,11 +339,11 @@
         H = n('iySH'),
         G = n.p + 'safety-mode-cone.b7ef2f95.png',
         N = n('OsOl'),
-        B = n('t62R'),
-        z = n('cHvH'),
-        W = n('Wd7d'),
-        Y = n('MAI/'),
-        Q = n('855f'),
+        B = n('855f'),
+        z = n('t62R'),
+        W = n('cHvH'),
+        Y = n('Wd7d'),
+        Q = n('MAI/'),
         q = n('/yvb'),
         K = n('rHpw'),
         V = n('3XMw'),
@@ -373,10 +373,11 @@
       }
       var ee = X.a.d1cc8c05,
         te = X.a.b772cd65,
-        ne = X.a.ca614405,
-        re = X.a.ga7fce66,
-        ae = X.a.g42fd3ad,
-        oe = (function (e) {
+        ne = X.a.c1da34c2,
+        re = X.a.j85176c1,
+        ae = X.a.ga7fce66,
+        oe = X.a.g42fd3ad,
+        ce = (function (e) {
           l()(n, e)
           var t = $(n)
           function n() {
@@ -424,7 +425,7 @@
                     n = t.count,
                     r = t.facepileUrls,
                     a = t.history
-                  return y.createElement(z.a, null, function (t) {
+                  return y.createElement(W.a, null, function (t) {
                     var o,
                       c = t.screenWidth
                     return y.createElement(
@@ -432,53 +433,61 @@
                       { history: a, onBackClick: e._handleBackClick, withBottomBorder: !1 },
                       y.createElement(
                         Z.a,
-                        { style: W.a.isNarrowScreenWidth(c) ? ie.narrowScreen : ie.wideScreen },
-                        y.createElement(J.a, { accessibilityLabel: '', source: G, style: ie.image }),
+                        { style: Y.a.isNarrowScreenWidth(c) ? se.narrowScreen : se.wideScreen },
+                        y.createElement(J.a, { accessibilityLabel: '', source: G, style: se.image }),
                         y.createElement(
                           Z.a,
-                          { style: ie.header },
-                          y.createElement(B.b, { size: 'title2', weight: 'heavy' }, ee),
+                          { style: se.header },
+                          y.createElement(z.b, { size: 'title2', weight: 'heavy' }, ee),
                         ),
                         r && n
                           ? y.createElement(
                               y.Fragment,
                               null,
-                              y.createElement(Y.a, { style: ie.facepile, userAvatarSize: 'large', userAvatarUrls: r }),
-                              y.createElement(B.b, { style: ie.description }, ne({ count: Q.a.getFormattedCount(n) })),
+                              y.createElement(Q.a, { style: se.facepile, userAvatarSize: 'large', userAvatarUrls: r }),
                               y.createElement(
-                                B.b,
+                                z.b,
+                                { style: se.description },
+                                (function (e) {
+                                  return e <= 10
+                                    ? ne({ count: B.a.getFormattedCount(e) })
+                                    : re({ count: B.a.getFormattedCount(e) })
+                                })(n),
+                              ),
+                              y.createElement(
+                                z.b,
                                 null,
                                 y.createElement(
                                   X.a.I18NFormatMessage,
                                   { $i18n: 'f81ca1f4' },
                                   y.createElement(
-                                    B.b,
+                                    z.b,
                                     { link: '/i/safety_mode/flagged_accounts', size: 'body', weight: 'bold' },
                                     X.a.ac9bde9a,
                                   ),
                                 ),
-                                y.createElement(H.a, { style: ie.chevronIcon }),
+                                y.createElement(H.a, { style: se.chevronIcon }),
                               ),
                             )
                           : null,
                         y.createElement(
                           Z.a,
-                          { style: ie.header },
-                          y.createElement(B.b, { size: 'title3', weight: 'heavy' }, re),
+                          { style: se.header },
+                          y.createElement(z.b, { size: 'title3', weight: 'heavy' }, ae),
                         ),
                         y.createElement(N.a, { withBorder: !0 }),
                         y.createElement(
                           Z.a,
-                          { style: ie.link },
+                          { style: se.link },
                           ((o = e._handleScribeOnClick),
                           y.createElement(
-                            B.b,
+                            z.b,
                             null,
                             y.createElement(
                               X.a.I18NFormatMessage,
                               { $i18n: 'j449c95b' },
                               y.createElement(
-                                B.b,
+                                z.b,
                                 {
                                   color: 'normal',
                                   link: '/settings/safety_mode/about',
@@ -496,11 +505,11 @@
                           null,
                           y.createElement(
                             q.a,
-                            { onPress: e._handleBackClick, style: ie.button, type: 'primaryFilled' },
+                            { onPress: e._handleBackClick, style: se.button, type: 'primaryFilled' },
                             te,
                           ),
                         ),
-                        y.createElement(B.b, { style: ie.description }, ae),
+                        y.createElement(z.b, { style: se.description }, oe),
                       ),
                     )
                   })
@@ -510,9 +519,9 @@
             n
           )
         })(y.Component),
-        ce = x(oe),
-        ie =
-          ((t.default = ce),
+        ie = x(ce),
+        se =
+          ((t.default = ie),
           K.a.create(function (e) {
             return {
               wideScreen: { marginBottom: e.spaces.space48, marginHorizontal: e.spaces.space80 },

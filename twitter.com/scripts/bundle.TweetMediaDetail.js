@@ -383,7 +383,7 @@
           return e - F.a < F.b
         },
         We = function (e) {
-          var t = i.useContext(se.a).isModal,
+          var t = i.useContext(se.b).isModal,
             r = Object(we.h)(),
             n = r.handleMediaDetailZoomed,
             o = r.handleMediaItemTapped,

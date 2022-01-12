@@ -3020,7 +3020,7 @@
     TnO6: function (e, t, r) {
       'use strict'
       r.d(t, 'a', function () {
-        return L
+        return F
       })
       var n = r('KEM+'),
         a = r.n(n),
@@ -3033,23 +3033,23 @@
         d = r('rxPX'),
         f = r('0KEI'),
         p = function (e, t) {
-          return u.e.select(
-            e,
-            (function (e, t) {
-              var r
-              return null === (r = t.match) || void 0 === r ? void 0 : r.params.userId
-            })(0, t),
-          )
+          var r
+          return null === (r = t.match) || void 0 === r ? void 0 : r.params.userId
         },
-        b = Object(d.a)()
+        b = function (e, t) {
+          return u.e.select(e, p(0, t))
+        },
+        m = Object(d.a)()
           .propsFromState(function () {
-            return { user: p }
+            return { user: b, userId: p }
           })
           .adjustStateProps(function (e) {
-            var t = e.user
+            var t = e.user,
+              r = e.userId
             return {
               violatorScreenName: (null == t ? void 0 : t.screen_name) || '',
               violatorUserId: (null == t ? void 0 : t.id_str) || '',
+              userId: r || '',
             }
           })
           .propsFromActions(function () {
@@ -3059,36 +3059,37 @@
               createLocalApiErrorHandler: Object(f.createLocalApiErrorHandlerWithContextFactory)(
                 'RITO_TIMELINE_ACTION_BUTTONS_CONTEXT',
               ),
+              fetchOneUserIfNeeded: u.e.fetchOneIfNeeded,
               dismissRitoSuggestedAction: l.b,
               unblock: u.e.unblock,
             }
           })
           .withAnalytics({ component: 'safety_mode_timeline_action_buttons' }),
-        m = r('3XMw'),
-        y = r.n(m),
-        h = r('u0B7'),
-        O = r('0yYu'),
-        g = r('jtO7'),
-        E = r('24HD'),
-        v = y.a.cd702bc3,
-        w = y.a.ebd2abb2,
-        S = y.a.f2f4d0e7,
-        P = y.a.jcba15d2,
-        j = y.a.e1f2f8bd,
-        _ = y.a.e68b09b4,
-        T = y.a.hc676c4a,
-        k = y.a.badf3f34,
-        C = y.a.ca95bd23,
-        D = y.a.bbe47125,
-        R = '/settings/safety_mode/autoblocked',
-        A = '/i/safety_mode/flagged_accounts',
-        L = Object.freeze({ ActionedTweets: 'actioned_tweets', PreviewFlaggedTweets: 'preview_flagged_tweets' }),
-        F = Object.freeze({
+        y = r('3XMw'),
+        h = r.n(y),
+        O = r('u0B7'),
+        g = r('0yYu'),
+        E = r('jtO7'),
+        v = r('24HD'),
+        w = h.a.cd702bc3,
+        S = h.a.ebd2abb2,
+        P = h.a.f2f4d0e7,
+        j = h.a.jcba15d2,
+        _ = h.a.e1f2f8bd,
+        T = h.a.e68b09b4,
+        k = h.a.hc676c4a,
+        C = h.a.badf3f34,
+        D = h.a.ca95bd23,
+        R = h.a.bbe47125,
+        A = '/settings/safety_mode/autoblocked',
+        L = '/i/safety_mode/flagged_accounts',
+        F = Object.freeze({ ActionedTweets: 'actioned_tweets', PreviewFlaggedTweets: 'preview_flagged_tweets' }),
+        I = Object.freeze({
           report: { component: 'user_action', action: 'report' },
           block: { action: 'block' },
           unblock: { action: 'unblock' },
         })
-      function I(e) {
+      function M(e) {
         var t,
           r = e.addToast,
           n = e.analytics,
@@ -3101,59 +3102,59 @@
           p = e.violatorUserId,
           b = Object.freeze(
             ((t = {}),
-            a()(t, L.ActionedTweets, {
-              backLocation: R,
-              confirmationSheetHeadline: Object(E.e)({ screenName: f }),
+            a()(t, F.ActionedTweets, {
+              backLocation: A,
+              confirmationSheetHeadline: Object(v.e)({ screenName: f }),
+              label: j,
+              toastLabel: D({ screenName: f }),
+            }),
+            a()(t, F.PreviewFlaggedTweets, {
+              backLocation: L,
+              confirmationSheetHeadline: _({ screenName: f }),
               label: P,
               toastLabel: C({ screenName: f }),
-            }),
-            a()(t, L.PreviewFlaggedTweets, {
-              backLocation: A,
-              confirmationSheetHeadline: j({ screenName: f }),
-              label: S,
-              toastLabel: k({ screenName: f }),
             }),
             t),
           )
         return c.createElement(i.a, {
           color: 'primary',
-          confirmationSheetConfirmButtonLabel: _,
+          confirmationSheetConfirmButtonLabel: T,
           confirmationSheetHeadline: b[u].confirmationSheetHeadline,
-          confirmationSheetText: D,
+          confirmationSheetText: R,
           label: b[u].label,
           onConfirmationSheetConfirm: function () {
-            u === L.ActionedTweets
+            u === F.ActionedTweets
               ? d(p)
                   .then(function () {
-                    n.scribe(F.unblock), r({ text: b[u].toastLabel }), l.goBack({ backLocation: b[u].backLocation })
+                    n.scribe(I.unblock), r({ text: b[u].toastLabel }), l.goBack({ backLocation: b[u].backLocation })
                   })
-                  .catch(o(h.a))
+                  .catch(o(O.a))
               : s(p)
                   .then(function () {
-                    n.scribe(F.unblock), r({ text: b[u].toastLabel }), l.goBack({ backLocation: b[u].backLocation })
+                    n.scribe(I.unblock), r({ text: b[u].toastLabel }), l.goBack({ backLocation: b[u].backLocation })
                   })
-                  .catch(o(h.a))
+                  .catch(o(O.a))
           },
           withBottomBorder: !0,
         })
       }
-      function M(e) {
+      function x(e) {
         var t = e.analytics,
           r = e.violatorUserId,
           n = {
             pathname: '/i/report/user/'.concat(r),
             state: { clientReferer: window.location.pathname, scribeNamespace: t.contextualScribeNamespace },
           }
-        return c.createElement(g.a, {
+        return c.createElement(E.a, {
           color: 'primary',
-          label: v,
+          label: w,
           link: n,
           onPress: function () {
-            t.scribe(F.report)
+            t.scribe(I.report)
           },
         })
       }
-      function x(e) {
+      function H(e) {
         var t = e.addToast,
           r = e.analytics,
           n = e.block,
@@ -3163,39 +3164,52 @@
           u = e.unblock,
           d = e.violatorScreenName,
           f = e.violatorUserId,
-          p = l === L.ActionedTweets ? R : A,
+          p = l === F.ActionedTweets ? A : L,
           b = function () {
-            u(f).catch(a(h.a)), r.scribe(F.unblock)
+            u(f).catch(a(O.a)), r.scribe(I.unblock)
           }
         return c.createElement(i.a, {
           color: 'red500',
-          confirmationSheetConfirmButtonLabel: E.a,
+          confirmationSheetConfirmButtonLabel: v.a,
           confirmationSheetConfirmButtonType: 'destructiveFilled',
-          confirmationSheetHeadline: Object(E.c)({ screenName: d }),
-          confirmationSheetText: Object(E.b)({ screenName: d }),
-          label: w,
+          confirmationSheetHeadline: Object(v.c)({ screenName: d }),
+          confirmationSheetText: Object(v.b)({ screenName: d }),
+          label: S,
           onConfirmationSheetConfirm: function () {
             n(f)
               .then(function () {
-                r.scribe(F.block),
-                  t({ action: { label: E.l, onAction: b }, text: T({ screenName: d }) }),
+                r.scribe(I.block),
+                  t({ action: { label: v.l, onAction: b }, text: k({ screenName: d }) }),
                   s.goBack({ backLocation: p })
               })
               .catch(a(o.a))
           },
         })
       }
-      t.b = b(function (e) {
-        return '' === e.violatorScreenName || '' === e.violatorUserId
-          ? null
-          : c.createElement(
-              c.Fragment,
-              null,
-              c.createElement(O.a, null),
-              c.createElement(M, e),
-              c.createElement(I, e),
-              c.createElement(x, e),
-            )
+      t.b = m(function (e) {
+        var t = e.createLocalApiErrorHandler,
+          r = e.fetchOneUserIfNeeded,
+          n = e.userId,
+          a = e.violatorScreenName,
+          o = e.violatorUserId
+        return (
+          c.useEffect(
+            function () {
+              n && r(n).catch(t())
+            },
+            [n, r, t],
+          ),
+          '' === a || '' === o
+            ? null
+            : c.createElement(
+                c.Fragment,
+                null,
+                c.createElement(g.a, null),
+                c.createElement(x, e),
+                c.createElement(M, e),
+                c.createElement(H, e),
+              )
+        )
       })
     },
     UQuz: function (e, t, r) {

@@ -167,7 +167,7 @@
             n
           )
         })(b.Component)
-      y()(N, 'contextType', P.a), (t.default = Object(_.c)({ page: 'display' })(N))
+      y()(N, 'contextType', P.b), (t.default = Object(_.c)({ page: 'display' })(N))
       var V = R.a.create(function (e) {
         return {
           root: { paddingBottom: e.spaces.space32, paddingHorizontal: e.spaces.space32 },

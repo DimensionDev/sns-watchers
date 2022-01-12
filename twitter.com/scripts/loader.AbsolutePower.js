@@ -1489,7 +1489,7 @@
                   var e = this.props,
                     t = e.items,
                     n = e.noItemsRenderer
-                  return t.length ? I.createElement(T.a.Consumer, null, this._render) : n()
+                  return t.length ? I.createElement(T.b.Consumer, null, this._render) : n()
                 },
               },
               {

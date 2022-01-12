@@ -756,7 +756,7 @@
             p = O()(f, 2),
             m = p[0],
             y = p[1],
-            g = v.useContext(te.a).isModal,
+            g = v.useContext(te.b).isModal,
             b = o.original_info || {},
             P = b.height,
             C = b.width,
@@ -1182,7 +1182,7 @@
             n
           )
         })(v.Component)
-      y()(M, 'contextType', S.a), y()(M, 'defaultProps', { hideButtons: !1 })
+      y()(M, 'contextType', S.b), y()(M, 'defaultProps', { hideButtons: !1 })
       var R = x.a.create(function (e) {
         return {
           root: { overflowX: 'hidden', overflowY: 'hidden', height: '100%', width: '100%' },

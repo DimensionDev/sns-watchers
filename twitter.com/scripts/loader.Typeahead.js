@@ -2029,7 +2029,7 @@
             r
           )
         })(v.Component)
-      m()(L, 'contextType', D.a), m()(L, 'defaultProps', { source: x.d.Compose })
+      m()(L, 'contextType', D.b), m()(L, 'defaultProps', { source: x.d.Compose })
       var H = k.a.create(function (e) {
         return {
           dropdownStyle: {

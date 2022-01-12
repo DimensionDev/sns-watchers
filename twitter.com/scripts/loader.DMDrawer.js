@@ -1,29 +1,29 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
   [163],
   {
-    '+Bsv': function (e, t, r) {
+    '+Bsv': function (e, t, n) {
       'use strict'
-      var n = r('ERkP'),
-        a = r('3XMw'),
-        o = r.n(a),
-        c = r('M2x3'),
+      var r = n('ERkP'),
+        a = n('3XMw'),
+        o = n.n(a),
+        c = n('M2x3'),
         i = 'settingsAppBar',
-        l = r('/yvb'),
-        s = r('rHpw'),
+        l = n('/yvb'),
+        s = n('rHpw'),
         u = o.a.bb081ea1,
         d = { viewType: 'settings_button' },
-        p = n.memo(function (e) {
+        p = r.memo(function (e) {
           var t = e.onPress,
-            r = e.pullRight,
+            n = e.pullRight,
             a = e.to
-          return n.createElement(l.a, {
+          return r.createElement(l.a, {
             accessibilityLabel: u,
             behavioralEventContext: d,
             hoverLabel: { label: u },
-            icon: n.createElement(c.a, null),
+            icon: r.createElement(c.a, null),
             link: a,
             onPress: t,
-            pullRight: r,
+            pullRight: n,
             style: f.button,
             testID: i,
             type: 'primaryText',
@@ -34,22 +34,22 @@
         })
       t.a = p
     },
-    '3GUV': function (e, t, r) {
+    '3GUV': function (e, t, n) {
       'use strict'
-      r('OZaJ')
-      var n = r('VrFO'),
-        a = r.n(n),
-        o = r('Y9Ll'),
-        c = r.n(o),
-        i = r('5Yy7'),
-        l = r.n(i),
-        s = r('N+ot'),
-        u = r.n(s),
-        d = r('AuHH'),
-        p = r.n(d),
-        f = r('ERkP'),
-        h = r('rHpw'),
-        b = r('MWbm')
+      n('OZaJ')
+      var r = n('VrFO'),
+        a = n.n(r),
+        o = n('Y9Ll'),
+        c = n.n(o),
+        i = n('5Yy7'),
+        l = n.n(i),
+        s = n('N+ot'),
+        u = n.n(s),
+        d = n('AuHH'),
+        p = n.n(d),
+        f = n('ERkP'),
+        h = n('rHpw'),
+        b = n('MWbm')
       function m(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -62,23 +62,23 @@
           }
         })()
         return function () {
-          var r,
-            n = p()(e)
+          var n,
+            r = p()(e)
           if (t) {
             var a = p()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return u()(this, r)
+            n = Reflect.construct(r, arguments, a)
+          } else n = r.apply(this, arguments)
+          return u()(this, n)
         }
       }
       var y = (function (e) {
-          l()(r, e)
-          var t = m(r)
-          function r() {
-            return a()(this, r), t.apply(this, arguments)
+          l()(n, e)
+          var t = m(n)
+          function n() {
+            return a()(this, n), t.apply(this, arguments)
           }
           return (
-            c()(r, [
+            c()(n, [
               {
                 key: 'shouldComponentUpdate',
                 value: function () {
@@ -92,7 +92,7 @@
                 },
               },
             ]),
-            r
+            n
           )
         })(f.Component),
         v = h.a.create(function (e) {
@@ -100,25 +100,25 @@
         })
       t.a = y
     },
-    '5UID': function (e, t, r) {
+    '5UID': function (e, t, n) {
       'use strict'
-      r('OZaJ')
-      var n = r('VrFO'),
-        a = r.n(n),
-        o = r('Y9Ll'),
-        c = r.n(o),
-        i = r('5Yy7'),
-        l = r.n(i),
-        s = r('N+ot'),
-        u = r.n(s),
-        d = r('AuHH'),
-        p = r.n(d),
-        f = r('ERkP'),
-        h = r('3XMw'),
-        b = r.n(h),
-        m = r('rHpw'),
-        y = r('+/1j'),
-        v = r('MWbm')
+      n('OZaJ')
+      var r = n('VrFO'),
+        a = n.n(r),
+        o = n('Y9Ll'),
+        c = n.n(o),
+        i = n('5Yy7'),
+        l = n.n(i),
+        s = n('N+ot'),
+        u = n.n(s),
+        d = n('AuHH'),
+        p = n.n(d),
+        f = n('ERkP'),
+        h = n('3XMw'),
+        b = n.n(h),
+        m = n('rHpw'),
+        y = n('+/1j'),
+        v = n('MWbm')
       function g(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -131,33 +131,33 @@
           }
         })()
         return function () {
-          var r,
-            n = p()(e)
+          var n,
+            r = p()(e)
           if (t) {
             var a = p()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return u()(this, r)
+            n = Reflect.construct(r, arguments, a)
+          } else n = r.apply(this, arguments)
+          return u()(this, n)
         }
       }
       var E = b.a.e5b0063d,
         _ = 0,
         O = (function (e) {
-          l()(r, e)
-          var t = g(r)
-          function r() {
+          l()(n, e)
+          var t = g(n)
+          function n() {
             var e
-            return a()(this, r), ((e = t.call(this))._listDomId = 'accessible-list-'.concat(_)), (_ += 1), e
+            return a()(this, n), ((e = t.call(this))._listDomId = 'accessible-list-'.concat(_)), (_ += 1), e
           }
           return (
-            c()(r, [
+            c()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.children,
-                    r = e.title,
-                    n = E({ title: r })
+                    n = e.title,
+                    r = E({ title: n })
                   return f.createElement(
                     v.a,
                     { accessibilityLabelledBy: this._listDomId, accessibilityRole: 'region' },
@@ -169,49 +169,49 @@
                         nativeID: this._listDomId,
                         style: m.a.visuallyHidden,
                       },
-                      r,
+                      n,
                     ),
-                    f.createElement(v.a, { accessibilityLabel: n }, t),
+                    f.createElement(v.a, { accessibilityLabel: r }, t),
                   )
                 },
               },
             ]),
-            r
+            n
           )
         })(f.Component)
       t.a = O
     },
-    Avzu: function (e, t, r) {
+    Avzu: function (e, t, n) {
       'use strict'
-      r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
-      var n = r('KEM+'),
-        a = r.n(n),
-        o = r('ERkP'),
-        c = r('Lsrn'),
-        i = r('k/Ka')
+      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
+      var r = n('KEM+'),
+        a = n.n(r),
+        o = n('ERkP'),
+        c = n('Lsrn'),
+        i = n('k/Ka')
       function l(e, t) {
-        var r = Object.keys(e)
+        var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
+          var r = Object.getOwnPropertySymbols(e)
           t &&
-            (n = n.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            r.push.apply(r, n)
+            n.push.apply(n, r)
         }
-        return r
+        return n
       }
       function s(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
+          var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? l(Object(r), !0).forEach(function (t) {
-                a()(e, t, r[t])
+            ? l(Object(n), !0).forEach(function (t) {
+                a()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : l(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : l(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
@@ -236,40 +236,40 @@
       }
       ;(u.metadata = { width: 24, height: 24 }), (t.a = u)
     },
-    BUB3: function (e, t, r) {
+    BUB3: function (e, t, n) {
       'use strict'
-      r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
-      var n = r('KEM+'),
-        a = r.n(n),
-        o = r('m3Bd'),
-        c = r.n(o),
-        i = r('ERkP'),
-        l = r('sNn6'),
-        s = r('rHpw'),
-        u = r('MWbm')
+      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
+      var r = n('KEM+'),
+        a = n.n(r),
+        o = n('m3Bd'),
+        c = n.n(o),
+        i = n('ERkP'),
+        l = n('sNn6'),
+        s = n('rHpw'),
+        u = n('MWbm')
       function d(e, t) {
-        var r = Object.keys(e)
+        var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
+          var r = Object.getOwnPropertySymbols(e)
           t &&
-            (n = n.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            r.push.apply(r, n)
+            n.push.apply(n, r)
         }
-        return r
+        return n
       }
       function p(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
+          var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? d(Object(r), !0).forEach(function (t) {
-                a()(e, t, r[t])
+            ? d(Object(n), !0).forEach(function (t) {
+                a()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : d(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : d(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
@@ -291,8 +291,8 @@
       })
       t.a = function (e) {
         var t = e.children,
-          r = c()(e, ['children'])
-        return i.createElement(l.a, r, function (e) {
+          n = c()(e, ['children'])
+        return i.createElement(l.a, n, function (e) {
           return i.createElement(
             u.a,
             { style: e && f.activeRoot },
@@ -302,26 +302,26 @@
         })
       }
     },
-    FS1z: function (e, t, r) {
+    FS1z: function (e, t, n) {
       'use strict'
-      r('OZaJ')
-      var n = r('VrFO'),
-        a = r.n(n),
-        o = r('Y9Ll'),
-        c = r.n(o),
-        i = r('1Pcy'),
-        l = r.n(i),
-        s = r('5Yy7'),
-        u = r.n(s),
-        d = r('N+ot'),
-        p = r.n(d),
-        f = r('AuHH'),
-        h = r.n(f),
-        b = r('KEM+'),
-        m = r.n(b),
-        y = (r('2G9S'), r('ERkP')),
-        v = r('rxPX'),
-        g = r('0KEI'),
+      n('OZaJ')
+      var r = n('VrFO'),
+        a = n.n(r),
+        o = n('Y9Ll'),
+        c = n.n(o),
+        i = n('1Pcy'),
+        l = n.n(i),
+        s = n('5Yy7'),
+        u = n.n(s),
+        d = n('N+ot'),
+        p = n.n(d),
+        f = n('AuHH'),
+        h = n.n(f),
+        b = n('KEM+'),
+        m = n.n(b),
+        y = (n('2G9S'), n('ERkP')),
+        v = n('rxPX'),
+        g = n('0KEI'),
         E = function (e, t) {
           return t.module.selectFetchStatus(e)
         },
@@ -341,11 +341,11 @@
               fetchBottom: t.fetchBottom,
             }
           }),
-        S = r('v//M'),
-        I = r('sIe2'),
-        w = r('3XMw'),
-        C = r.n(w),
-        x = r('TEoO')
+        S = n('v//M'),
+        I = n('sIe2'),
+        w = n('3XMw'),
+        C = n.n(w),
+        x = n('TEoO')
       function P(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -358,13 +358,13 @@
           }
         })()
         return function () {
-          var r,
-            n = h()(e)
+          var n,
+            r = h()(e)
           if (t) {
             var a = h()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return p()(this, r)
+            n = Reflect.construct(r, arguments, a)
+          } else n = r.apply(this, arguments)
+          return p()(this, n)
         }
       }
       var R = C.a.i9028824,
@@ -374,31 +374,31 @@
         },
         M = { viewType: 'timeline' },
         T = (function (e) {
-          u()(r, e)
-          var t = P(r)
-          function r() {
+          u()(n, e)
+          var t = P(n)
+          function n() {
             var e
-            a()(this, r)
-            for (var n = arguments.length, o = new Array(n), c = 0; c < n; c++) o[c] = arguments[c]
+            a()(this, n)
+            for (var r = arguments.length, o = new Array(r), c = 0; c < r; c++) o[c] = arguments[c]
             return (
               (e = t.call.apply(t, [this].concat(o))),
               m()(l()(e), '_render', function () {
                 var t = e.props,
-                  r = t.footer,
-                  n = t.items,
+                  n = t.footer,
+                  r = t.items,
                   a = t.noItemsRenderer,
                   o = t.numColumns,
                   c = t.onScrollEnd,
                   i = t.renderer,
                   l = t.withoutHeadroom
-                return !n || o < 1
+                return !r || o < 1
                   ? null
                   : 1 === o
                   ? y.createElement(x.a, {
                       cacheKey: j,
-                      footer: r,
+                      footer: n,
                       identityFunction: D,
-                      items: n,
+                      items: r,
                       noItemsRenderer: a,
                       onNearEnd: e._handleNearEnd,
                       onScrollEnd: c,
@@ -407,7 +407,7 @@
                     })
                   : y.createElement(I.a, {
                       ListEmptyComponent: a,
-                      data: n,
+                      data: r,
                       keyExtractor: D,
                       numColumns: o,
                       renderItem: i,
@@ -415,22 +415,22 @@
               }),
               m()(l()(e), '_handleNearEnd', function () {
                 var t = e.props,
-                  r = t.createLocalApiErrorHandler
-                ;(0, t.fetchBottom)().catch(r())
+                  n = t.createLocalApiErrorHandler
+                ;(0, t.fetchBottom)().catch(n())
               }),
               m()(l()(e), '_handleFetch', function () {
                 var t = e.props,
-                  r = t.alwaysFetch,
-                  n = t.createLocalApiErrorHandler,
+                  n = t.alwaysFetch,
+                  r = t.createLocalApiErrorHandler,
                   a = t.fetch,
                   o = t.fetchIfNeeded
-                ;(r ? a : o)().catch(n())
+                ;(n ? a : o)().catch(r())
               }),
               e
             )
           }
           return (
-            c()(r, [
+            c()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -449,75 +449,75 @@
                 value: function () {
                   var e = this.props,
                     t = e.fetchStatus,
-                    r = e.module,
-                    n = e.retryMessage
-                  return r
+                    n = e.module,
+                    r = e.retryMessage
+                  return n
                     ? y.createElement(S.a, {
                         accessibilityLabel: R,
                         behavioralEventContext: M,
                         fetchStatus: t,
                         onRequestRetry: this._handleFetch,
                         render: this._render,
-                        retryMessage: n,
+                        retryMessage: r,
                         retryable: !0,
                       })
                     : null
                 },
               },
             ]),
-            r
+            n
           )
         })(y.Component)
       m()(T, 'defaultProps', { numColumns: 1, alwaysFetch: !1 })
       var k = O(T)
       t.a = k
     },
-    TEoO: function (e, t, r) {
+    TEoO: function (e, t, n) {
       'use strict'
-      var n = r('m3Bd'),
-        a = r.n(n),
-        o = r('ERkP'),
-        c = r('5UID'),
-        i = r('3GUV'),
-        l = r('iBK2'),
+      var r = n('m3Bd'),
+        a = n.n(r),
+        o = n('ERkP'),
+        c = n('5UID'),
+        i = n('3GUV'),
+        l = n('iBK2'),
         s = o.createElement(i.a, null),
         u = function (e) {
           var t = e.accessibilityTitle,
-            r = a()(e, ['accessibilityTitle']),
-            n = o.createElement(l.b, r)
-          return t ? o.createElement(c.a, { title: t }, n) : n
+            n = a()(e, ['accessibilityTitle']),
+            r = o.createElement(l.b, n)
+          return t ? o.createElement(c.a, { title: t }, r) : r
         }
       ;(u.defaultProps = { footer: s }), (t.a = u)
     },
-    fuhe: function (e, t, r) {
+    fuhe: function (e, t, n) {
       'use strict'
-      r.r(t),
-        r.d(t, 'DMDrawer', function () {
+      n.r(t),
+        n.d(t, 'DMDrawer', function () {
           return wt
         })
-      r('OZaJ')
-      var n = r('97Jx'),
-        a = r.n(n),
-        o = r('VrFO'),
-        c = r.n(o),
-        i = r('Y9Ll'),
-        l = r.n(i),
-        s = r('1Pcy'),
-        u = r.n(s),
-        d = r('5Yy7'),
-        p = r.n(d),
-        f = r('N+ot'),
-        h = r.n(f),
-        b = r('AuHH'),
-        m = r.n(b),
-        y = r('KEM+'),
-        v = r.n(y),
-        g = (r('2G9S'), r('3voH'), r('ERkP')),
-        E = r('ZUOq'),
-        _ = r('MMRb'),
-        O = r('RqPI'),
-        S = r('rxPX'),
-        I = r('0KEI'),
+      n('OZaJ')
+      var r = n('97Jx'),
+        a = n.n(r),
+        o = n('VrFO'),
+        c = n.n(o),
+        i = n('Y9Ll'),
+        l = n.n(i),
+        s = n('1Pcy'),
+        u = n.n(s),
+        d = n('5Yy7'),
+        p = n.n(d),
+        f = n('N+ot'),
+        h = n.n(f),
+        b = n('AuHH'),
+        m = n.n(b),
+        y = n('KEM+'),
+        v = n.n(y),
+        g = (n('2G9S'), n('3voH'), n('ERkP')),
+        E = n('ZUOq'),
+        _ = n('MMRb'),
+        O = n('RqPI'),
+        S = n('rxPX'),
+        I = n('0KEI'),
         w = Object(S.a)()
           .propsFromState(function () {
             return {
@@ -538,51 +538,51 @@
               setDrawerVisibility: _.setDrawerVisibility,
             }
           }),
-        C = r('V/6K'),
+        C = n('V/6K'),
         x =
-          (r('z84I'),
-          r('+KXO'),
-          r('1t7P'),
-          r('LW0h'),
-          r('daRM'),
-          r('jwue'),
-          r('+oxZ'),
-          r('FtHn'),
-          r('7x/C'),
-          r('lTEL'),
-          r('kYxP'),
-          r('CDB5')),
-        P = r('1YZw'),
-        R = r('hqKg'),
-        j = r('X/yg'),
-        D = r('AQOc'),
-        M = r('UhuB'),
-        T = r('l0YN'),
-        k = r('G6rE'),
-        L = r('P1r1')
+          (n('z84I'),
+          n('+KXO'),
+          n('1t7P'),
+          n('LW0h'),
+          n('daRM'),
+          n('jwue'),
+          n('+oxZ'),
+          n('FtHn'),
+          n('7x/C'),
+          n('lTEL'),
+          n('kYxP'),
+          n('CDB5')),
+        P = n('1YZw'),
+        R = n('hqKg'),
+        j = n('X/yg'),
+        D = n('AQOc'),
+        M = n('UhuB'),
+        T = n('l0YN'),
+        k = n('G6rE'),
+        L = n('P1r1')
       function H(e, t) {
-        var r = Object.keys(e)
+        var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
+          var r = Object.getOwnPropertySymbols(e)
           t &&
-            (n = n.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            r.push.apply(r, n)
+            n.push.apply(n, r)
         }
-        return r
+        return n
       }
       function A(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
+          var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? H(Object(r), !0).forEach(function (t) {
-                v()(e, t, r[t])
+            ? H(Object(n), !0).forEach(function (t) {
+                v()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : H(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : H(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
@@ -590,7 +590,7 @@
       var B = function (e, t) {
           return t.conversationId
         },
-        N = Object(R.createSelector)(
+        F = Object(R.createSelector)(
           function (e, t) {
             return _.selectEntriesForConversation(e, B(0, t))
           },
@@ -599,14 +599,14 @@
             return t ? Object(j.d)(e, t) : void 0
           },
         ),
-        F = function (e) {
+        N = function (e) {
           return function (t) {
             return x.c(e, t)
           }
         },
         U = function (e) {
-          return function (t, r) {
-            return x.a(e, t, r)
+          return function (t, n) {
+            return x.a(e, t, n)
           }
         },
         V = {
@@ -618,7 +618,7 @@
           users: k.e.selectAll,
           dataSaverMode: L.k,
           dtabBarInfo: L.n,
-          quickReplyOptions: N,
+          quickReplyOptions: F,
           visibility: _.selectDrawerVisibility,
           inboxUnreadCount: T.a,
           isUnread: function (e, t) {
@@ -649,8 +649,8 @@
           })
           .adjustStateProps(function (e) {
             var t = e.conversation,
-              r = e.dataSaverMode,
-              n = e.draftText,
+              n = e.dataSaverMode,
+              r = e.draftText,
               a = e.dtabBarInfo,
               o = e.entries,
               c = e.gifMetadata,
@@ -668,8 +668,8 @@
             return {
               conversation: y && Object(D.a)(y, o, b),
               perspective: f,
-              dataSaverMode: r,
-              draftText: n,
+              dataSaverMode: n,
+              draftText: r,
               dtabBarInfo: a,
               gifMetadata: c,
               inboxUnreadCount: i,
@@ -691,7 +691,7 @@
                 'DIRECT_MESSAGES_CONVERSATION',
               ),
               fetchConversationHistory: _.fetchConversationHistory,
-              removeMedia: F(t),
+              removeMedia: N(t),
               saveText: x.f,
               sendMessage: x.m,
               updateConversationReadState: _.updateConversationReadState,
@@ -700,12 +700,12 @@
             }
           })
           .withAnalytics({ page: 'messages', section: 'thread_drawer' }),
-        W = r('aWyx'),
-        q = r('qz2E'),
-        Q = r('Oi4X'),
-        Y = r('OhSZ'),
-        K =
-          (r('uFXj'),
+        W = n('aWyx'),
+        q = n('qz2E'),
+        Q = n('Oi4X'),
+        Y = n('OhSZ'),
+        X =
+          (n('uFXj'),
           Object(S.a)()
             .propsFromState(function () {
               return { visibility: _.selectDrawerVisibility }
@@ -714,46 +714,46 @@
               return { popOutConversation: _.popOutConversation, setDrawerVisibility: _.setDrawerVisibility }
             })
             .withAnalytics()),
-        X = r('AQ79'),
-        $ = r('3XMw'),
-        Z = r.n($),
-        J = r('OrGc'),
-        ee = r('hACr'),
-        te = r('fs1G'),
-        re = r('MWbm'),
-        ne = r('/yvb'),
-        ae = r('Znyr'),
-        oe = r('t62R'),
-        ce = r('xKuM'),
-        ie = r('rHpw'),
-        le = r('v6aA'),
-        se = r('95Se'),
-        ue = r('Avzu'),
-        de = r('Lsrn'),
-        pe = r('k/Ka')
+        K = n('AQ79'),
+        $ = n('3XMw'),
+        Z = n.n($),
+        J = n('OrGc'),
+        ee = n('hACr'),
+        te = n('fs1G'),
+        ne = n('MWbm'),
+        re = n('/yvb'),
+        ae = n('Znyr'),
+        oe = n('t62R'),
+        ce = n('xKuM'),
+        ie = n('rHpw'),
+        le = n('v6aA'),
+        se = n('95Se'),
+        ue = n('Avzu'),
+        de = n('Lsrn'),
+        pe = n('k/Ka')
       function fe(e, t) {
-        var r = Object.keys(e)
+        var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
+          var r = Object.getOwnPropertySymbols(e)
           t &&
-            (n = n.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            r.push.apply(r, n)
+            n.push.apply(n, r)
         }
-        return r
+        return n
       }
       function he(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
+          var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? fe(Object(r), !0).forEach(function (t) {
-                v()(e, t, r[t])
+            ? fe(Object(n), !0).forEach(function (t) {
+                v()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : fe(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : fe(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
@@ -782,28 +782,28 @@
       be.metadata = { width: 24, height: 24 }
       var me = be
       function ye(e, t) {
-        var r = Object.keys(e)
+        var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
+          var r = Object.getOwnPropertySymbols(e)
           t &&
-            (n = n.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            r.push.apply(r, n)
+            n.push.apply(n, r)
         }
-        return r
+        return n
       }
       function ve(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
+          var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? ye(Object(r), !0).forEach(function (t) {
-                v()(e, t, r[t])
+            ? ye(Object(n), !0).forEach(function (t) {
+                v()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : ye(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : ye(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
@@ -831,7 +831,7 @@
       }
       ge.metadata = { width: 24, height: 24 }
       var Ee = ge,
-        _e = r('x0mb')
+        _e = n('x0mb')
       function Oe(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -844,13 +844,13 @@
           }
         })()
         return function () {
-          var r,
-            n = m()(e)
+          var n,
+            r = m()(e)
           if (t) {
             var a = m()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return h()(this, r)
+            n = Reflect.construct(r, arguments, a)
+          } else n = r.apply(this, arguments)
+          return h()(this, n)
         }
       }
       var Se = Z.a.a2f8105f,
@@ -861,12 +861,12 @@
         Pe = Z.a.e736990a,
         Re = Z.a.cdcebd22,
         je = (function (e) {
-          p()(r, e)
-          var t = Oe(r)
-          function r() {
+          p()(n, e)
+          var t = Oe(n)
+          function n() {
             var e
-            c()(this, r)
-            for (var n = arguments.length, a = new Array(n), o = 0; o < n; o++) a[o] = arguments[o]
+            c()(this, n)
+            for (var r = arguments.length, a = new Array(r), o = 0; o < r; o++) a[o] = arguments[o]
             return (
               (e = t.call.apply(t, [this].concat(a))),
               v()(u()(e), '_headerBar', g.createRef()),
@@ -876,14 +876,14 @@
                 e.context.featureSwitches.isTrue('responsive_web_app_bar_scroll_enabled'),
               ),
               v()(u()(e), '_isExpanded', function () {
-                return e.props.visibility === X.a.EXPANDED
+                return e.props.visibility === K.a.EXPANDED
               }),
               v()(u()(e), '_renderLeftControl', function () {
                 var t = e.props.inboxUnreadCount
                 return g.createElement(
-                  re.a,
+                  ne.a,
                   null,
-                  g.createElement(ne.a, {
+                  g.createElement(re.a, {
                     accessibilityLabel: xe,
                     icon: g.createElement(se.a, null),
                     onPress: e._handleUnpopConvo,
@@ -905,39 +905,39 @@
               }),
               v()(u()(e), '_getButtonType', function () {
                 var t = e.props,
-                  r = t.hasNewMessages
-                return t.isHighlighted && r ? 'onMediaText' : 'primaryText'
+                  n = t.hasNewMessages
+                return t.isHighlighted && n ? 'onMediaText' : 'primaryText'
               }),
               v()(u()(e), '_renderRightControl', function () {
                 var t = e.props.conversationTitle,
-                  r = e._isExpanded(),
-                  n = e._getButtonType()
+                  n = e._isExpanded(),
+                  r = e._getButtonType()
                 return g.createElement(
-                  re.a,
+                  ne.a,
                   { style: De.rightControls },
                   t
                     ? null
-                    : g.createElement(ne.a, {
+                    : g.createElement(re.a, {
                         accessibilityLabel: we,
                         hoverLabel: { label: Re },
                         icon: g.createElement(ue.a, null),
                         onPress: e._handleNewMessage,
-                        type: n,
+                        type: r,
                       }),
-                  r
-                    ? g.createElement(ne.a, {
+                  n
+                    ? g.createElement(re.a, {
                         accessibilityLabel: Ie,
                         hoverLabel: { label: Ie },
                         icon: g.createElement(me, null),
                         onPress: e._handleToggleVisibility,
-                        type: n,
+                        type: r,
                       })
-                    : g.createElement(ne.a, {
+                    : g.createElement(re.a, {
                         accessibilityLabel: Ce,
                         hoverLabel: { label: Ce },
                         icon: g.createElement(Ee, null),
                         onPress: e._handleToggleVisibility,
-                        type: n,
+                        type: r,
                       }),
                 )
               }),
@@ -946,13 +946,13 @@
               }),
               v()(u()(e), '_handleToggleVisibility', function () {
                 var t = e.props,
-                  r = t.analytics,
-                  n = t.onDrawerOpen,
+                  n = t.analytics,
+                  r = t.onDrawerOpen,
                   a = t.setDrawerVisibility,
-                  o = e._isExpanded() ? X.a.COLLAPSED : X.a.EXPANDED
-                o === X.a.COLLAPSED
-                  ? r.scribe({ action: 'collapse' })
-                  : o === X.a.EXPANDED && (r.scribe({ action: 'expand' }), n && n()),
+                  o = e._isExpanded() ? K.a.COLLAPSED : K.a.EXPANDED
+                o === K.a.COLLAPSED
+                  ? n.scribe({ action: 'collapse' })
+                  : o === K.a.EXPANDED && (n.scribe({ action: 'expand' }), r && r()),
                   a(o)
               }),
               v()(u()(e), '_handleToggleVisibilityKeyboard', function () {
@@ -960,24 +960,24 @@
               }),
               v()(u()(e), '_handleNewMessage', function () {
                 var t = e.props,
-                  r = t.analytics,
-                  n = t.history
-                r.scribe({ section: 'compose_drawer', component: 'dm', action: 'show' }),
-                  n.push({ pathname: '/messages/compose', state: { source: 'drawer' } })
+                  n = t.analytics,
+                  r = t.history
+                n.scribe({ section: 'compose_drawer', component: 'dm', action: 'show' }),
+                  r.push({ pathname: '/messages/compose', state: { source: 'drawer' } })
               }),
               v()(u()(e), '_renderTitle', function () {
                 var t = e.props,
-                  r = t.conversationTitle,
-                  n = t.hasNewMessages,
+                  n = t.conversationTitle,
+                  r = t.hasNewMessages,
                   a = t.isHighlighted,
-                  o = r || g.createElement(oe.b, null, Se)
+                  o = n || g.createElement(oe.b, null, Se)
                 return g.createElement(
-                  re.a,
+                  ne.a,
                   { style: De.titleContainer },
-                  g.createElement(re.a, { style: [De.titleTextRoot, a && n ? De.titleTextHighlighted : null] }, o),
-                  n
+                  g.createElement(ne.a, { style: [De.titleTextRoot, a && r ? De.titleTextHighlighted : null] }, o),
+                  r
                     ? g.createElement(
-                        re.a,
+                        ne.a,
                         { style: De.newMessageDotContainer },
                         g.createElement(_e.a, {
                           accessibilityLabel: Pe,
@@ -991,15 +991,15 @@
             )
           }
           return (
-            l()(r, [
+            l()(n, [
               {
                 key: 'componentDidUpdate',
                 value: function (e) {
                   var t = this.props,
-                    r = t.hasNewMessages,
-                    n = t.isHighlighted,
+                    n = t.hasNewMessages,
+                    r = t.isHighlighted,
                     a = t.triggerHighlight
-                  e.isHighlighted || n || e.hasNewMessages || !r || (a && a())
+                  e.isHighlighted || r || e.hasNewMessages || !n || (a && a())
                 },
               },
               {
@@ -1007,8 +1007,8 @@
                 value: function () {
                   var e,
                     t = this.props,
-                    r = t.conversationSubtitle,
-                    n = t.conversationTitle,
+                    n = t.conversationSubtitle,
+                    r = t.conversationTitle,
                     a = t.hasNewMessages,
                     o = t.isHighlighted,
                     c = a ? (o ? [De.headerHighlighted] : [De.headerActive]) : [],
@@ -1025,17 +1025,17 @@
                         e),
                     },
                     g.createElement(
-                      re.a,
+                      ne.a,
                       {
                         ref: this._headerBar,
                         style: [De.headerRoot, !i && De.headerBorderClosed].concat(c, [De.cursor]),
                       },
                       g.createElement(ce.a, {
-                        leftControl: n && this._isExpanded() ? this._renderLeftControl() : null,
+                        leftControl: r && this._isExpanded() ? this._renderLeftControl() : null,
                         onMiddleControlClick: this._handleToggleVisibility,
                         rightControl: this._renderRightControl(),
                         style: this._appBarScrollEnabled ? De.roundedAppBarCorners : null,
-                        subtitle: r,
+                        subtitle: n,
                         title: this._renderTitle(),
                         withBackground: l,
                         withBottomBorder: !0,
@@ -1045,7 +1045,7 @@
                 },
               },
             ]),
-            r
+            n
           )
         })(g.Component)
       v()(je, 'contextType', le.a)
@@ -1084,19 +1084,19 @@
             rightControls: { flexDirection: 'row' },
           }
         }),
-        Me = K(je),
-        Te = (r('JtPf'), r('87if'), r('zb92')),
+        Me = X(je),
+        Te = (n('JtPf'), n('87if'), n('zb92')),
         ke = Object(Te.a)({
           loader: function () {
-            return r.e(219).then(r.bind(null, 'Rk1B'))
+            return n.e(219).then(n.bind(null, 'Rk1B'))
           },
         }),
-        Le = r('aWzz'),
-        He = r('XnpN'),
-        Ae = r('GSsg'),
-        Be = r('aITJ'),
-        Ne = r('yrzJ')
-      function Fe(e) {
+        Le = n('aWzz'),
+        He = n('XnpN'),
+        Ae = n('GSsg'),
+        Be = n('aITJ'),
+        Fe = n('yrzJ')
+      function Ne(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -1108,23 +1108,23 @@
           }
         })()
         return function () {
-          var r,
-            n = m()(e)
+          var n,
+            r = m()(e)
           if (t) {
             var a = m()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return h()(this, r)
+            n = Reflect.construct(r, arguments, a)
+          } else n = r.apply(this, arguments)
+          return h()(this, n)
         }
       }
       var Ue = (function (e) {
-        p()(r, e)
-        var t = Fe(r)
-        function r(e, n) {
+        p()(n, e)
+        var t = Ne(n)
+        function n(e, r) {
           var a
           return (
-            c()(this, r),
-            (a = t.call(this, e, n)),
+            c()(this, n),
+            (a = t.call(this, e, r)),
             v()(
               u()(a),
               '_appBarScrollEnabled',
@@ -1132,12 +1132,12 @@
             ),
             v()(u()(a), '_composer', g.createRef()),
             v()(u()(a), '_renderConversation', function (e, t) {
-              var r = a.props,
-                n = r.conversationId,
-                o = r.history,
-                c = r.location
+              var n = a.props,
+                r = n.conversationId,
+                o = n.history,
+                c = n.location
               return g.createElement(Q.a, {
-                conversationId: n,
+                conversationId: r,
                 drawerHeader: a._appBarScrollEnabled ? a._renderHeader() : void 0,
                 history: o,
                 isWide: !1,
@@ -1147,22 +1147,22 @@
               })
             }),
             v()(u()(a), '_isExpanded', function () {
-              return a.props.visibility === X.a.EXPANDED
+              return a.props.visibility === K.a.EXPANDED
             }),
             v()(u()(a), '_fetchUpdatesIfNeeded', function () {
               var e = a.props,
                 t = e.conversationId,
-                r = e.createLocalApiErrorHandler
+                n = e.createLocalApiErrorHandler
               ;(0, e.fetchUpdatesIfNeeded)(
                 e.isDmReceiptSettingEnabled ? { active_conversation_id: t, dm_users: !0 } : {},
-              ).catch(r())
+              ).catch(n())
             }),
             Object(q.a)(),
             a
           )
         }
         return (
-          l()(r, [
+          l()(n, [
             {
               key: 'componentDidMount',
               value: function () {
@@ -1187,9 +1187,9 @@
                   t
                     ? Be.b.isDesktopOS()
                       ? g.createElement(ke, null, function (t) {
-                          var r = t.richTextInputContext,
-                            n = t.typeaheadWrapper
-                          return e._renderConversation(r, n)
+                          var n = t.richTextInputContext,
+                            r = t.typeaheadWrapper
+                          return e._renderConversation(n, r)
                         })
                       : this._renderConversation()
                     : null,
@@ -1201,8 +1201,8 @@
               value: function () {
                 var e = this.props,
                   t = e.conversation,
-                  r = e.history,
-                  n = e.inboxUnreadCount,
+                  n = e.history,
+                  r = e.inboxUnreadCount,
                   a = e.isHeaderHighlighted,
                   o = e.isUnread,
                   c = e.onDrawerOpen,
@@ -1217,9 +1217,9 @@
                     Object(He.a)(t, i).map(function (e) {
                       return e.user.screen_name
                     }),
-                  p = d ? g.createElement(Ne.a, { color: u, screenName: d[0] }) : void 0
+                  p = d ? g.createElement(Fe.a, { color: u, screenName: d[0] }) : void 0
                 return g.createElement(
-                  re.a,
+                  ne.a,
                   { style: this._appBarScrollEnabled ? [Ve.headerRoot, Ve.appBarZIndex] : Ve.appBarZIndex },
                   g.createElement(Me, {
                     conversationSubtitle: p,
@@ -1230,8 +1230,8 @@
                       withScreenName: !1,
                     }),
                     hasNewMessages: o,
-                    history: r,
-                    inboxUnreadCount: n,
+                    history: n,
+                    inboxUnreadCount: r,
                     isHighlighted: a,
                     onDrawerOpen: c,
                     triggerHighlight: l,
@@ -1243,7 +1243,7 @@
               key: '_updatePolling',
               value: function () {
                 this._pollingTimer && this._pollingTimer.stop(),
-                  this.props.visibility === X.a.COLLAPSED &&
+                  this.props.visibility === K.a.COLLAPSED &&
                     ((this._pollingTimer = new Ae.a(this._fetchUpdatesIfNeeded, { interval: 3e3 })),
                     this._pollingTimer.start())
               },
@@ -1255,7 +1255,7 @@
               },
             },
           ]),
-          r
+          n
         )
       })(g.Component)
       v()(Ue, 'contextType', le.a), v()(Ue, 'childContextTypes', { getCustomLocation: Le.func })
@@ -1266,30 +1266,30 @@
           }
         }),
         Ge = z(Ue),
-        ze = (r('i4UL'), r('tQbP'), r('M+/F'), r('ho0z'), r('hCOa'), r('jQ/y'), r('aLgo'), r('4q8G')),
-        We = r('tn7R')
+        ze = (n('i4UL'), n('tQbP'), n('M+/F'), n('ho0z'), n('hCOa'), n('jQ/y'), n('aLgo'), n('4q8G')),
+        We = n('tn7R')
       function qe(e, t) {
-        var r
+        var n
         if ('undefined' == typeof Symbol || null == e[Symbol.iterator]) {
           if (
             Array.isArray(e) ||
-            (r = (function (e, t) {
+            (n = (function (e, t) {
               if (!e) return
               if ('string' == typeof e) return Qe(e, t)
-              var r = Object.prototype.toString.call(e).slice(8, -1)
-              'Object' === r && e.constructor && (r = e.constructor.name)
-              if ('Map' === r || 'Set' === r) return Array.from(e)
-              if ('Arguments' === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return Qe(e, t)
+              var n = Object.prototype.toString.call(e).slice(8, -1)
+              'Object' === n && e.constructor && (n = e.constructor.name)
+              if ('Map' === n || 'Set' === n) return Array.from(e)
+              if ('Arguments' === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Qe(e, t)
             })(e)) ||
             (t && e && 'number' == typeof e.length)
           ) {
-            r && (e = r)
-            var n = 0,
+            n && (e = n)
+            var r = 0,
               a = function () {}
             return {
               s: a,
               n: function () {
-                return n >= e.length ? { done: !0 } : { done: !1, value: e[n++] }
+                return r >= e.length ? { done: !0 } : { done: !1, value: e[r++] }
               },
               e: function (e) {
                 throw e
@@ -1306,10 +1306,10 @@
           i = !1
         return {
           s: function () {
-            r = e[Symbol.iterator]()
+            n = e[Symbol.iterator]()
           },
           n: function () {
-            var e = r.next()
+            var e = n.next()
             return (c = e.done), e
           },
           e: function (e) {
@@ -1317,7 +1317,7 @@
           },
           f: function () {
             try {
-              c || null == r.return || r.return()
+              c || null == n.return || n.return()
             } finally {
               if (i) throw o
             }
@@ -1326,8 +1326,8 @@
       }
       function Qe(e, t) {
         ;(null == t || t > e.length) && (t = e.length)
-        for (var r = 0, n = new Array(t); r < t; r++) n[r] = e[r]
-        return n
+        for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n]
+        return r
       }
       var Ye = Object(S.a)()
           .propsFromState(function () {
@@ -1342,14 +1342,14 @@
           })
           .adjustStateProps(function (e) {
             var t,
-              r = e.conversations,
-              n = e.settings,
+              n = e.conversations,
+              r = e.settings,
               a = e.unreadCount,
               o = e.untrustedConversationCount,
               c = e.untrustedUnreadCount,
               i = e.visibility,
               l = [],
-              s = qe(Object(We.a)(r))
+              s = qe(Object(We.a)(n))
             try {
               for (s.s(); !(t = s.n()).done; ) {
                 var u,
@@ -1364,7 +1364,7 @@
             l.sort(ze.a)
             var p = a > 0
             return {
-              allowUntrustedInbox: 'all' === n.allow_dms_from || o > 0,
+              allowUntrustedInbox: 'all' === r.allow_dms_from || o > 0,
               conversationIds: l.map(function (e) {
                 return e.conversation_id
               }),
@@ -1387,40 +1387,40 @@
             }
           })
           .withAnalytics({ page: 'messages', section: 'inbox_drawer' }),
-        Ke = r('cFyg'),
-        Xe = r('pXKu'),
-        $e = r('nySH'),
-        Ze = r('yw4N'),
-        Je = r('FIs5'),
-        et = r('csss')
+        Xe = n('cFyg'),
+        Ke = n('pXKu'),
+        $e = n('nySH'),
+        Ze = n('yw4N'),
+        Je = n('FIs5'),
+        et = n('csss')
       function tt(e, t) {
-        var r = Object.keys(e)
+        var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
+          var r = Object.getOwnPropertySymbols(e)
           t &&
-            (n = n.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            r.push.apply(r, n)
+            n.push.apply(n, r)
         }
-        return r
+        return n
       }
-      function rt(e) {
+      function nt(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
+          var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? tt(Object(r), !0).forEach(function (t) {
-                v()(e, t, r[t])
+            ? tt(Object(n), !0).forEach(function (t) {
+                v()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : tt(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : tt(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      function nt(e) {
+      function rt(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -1432,13 +1432,13 @@
           }
         })()
         return function () {
-          var r,
-            n = m()(e)
+          var n,
+            r = m()(e)
           if (t) {
             var a = m()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return h()(this, r)
+            n = Reflect.construct(r, arguments, a)
+          } else n = r.apply(this, arguments)
+          return h()(this, n)
         }
       }
       var at = 'dmDrawerInbox',
@@ -1450,12 +1450,12 @@
         ut = Z.a.da2f9224,
         dt = Z.a.h6beb5fa,
         pt = (function (e) {
-          p()(r, e)
-          var t = nt(r)
-          function r() {
+          p()(n, e)
+          var t = rt(n)
+          function n() {
             var e
-            c()(this, r)
-            for (var n = arguments.length, a = new Array(n), o = 0; o < n; o++) a[o] = arguments[o]
+            c()(this, n)
+            for (var r = arguments.length, a = new Array(r), o = 0; o < r; o++) a[o] = arguments[o]
             return (
               (e = t.call.apply(t, [this].concat(a))),
               v()(
@@ -1465,18 +1465,18 @@
               ),
               v()(u()(e), '_renderHeader', function () {
                 var t = e.props,
-                  r = t.history,
-                  n = t.isHeaderHighlighted,
+                  n = t.history,
+                  r = t.isHeaderHighlighted,
                   a = t.isUnread,
                   o = t.onDrawerOpen,
                   c = t.triggerHeaderHighlight
                 return g.createElement(
-                  re.a,
+                  ne.a,
                   { style: e._appBarScrollEnabled ? [ft.headerRoot, ft.appBarZIndex] : ft.appBarZIndex },
                   g.createElement(Me, {
                     hasNewMessages: a,
-                    history: r,
-                    isHighlighted: n,
+                    history: n,
+                    isHighlighted: r,
                     onDrawerOpen: o,
                     triggerHighlight: c,
                   }),
@@ -1484,24 +1484,24 @@
               }),
               v()(u()(e), '_renderExpandedInbox', function () {
                 var t = e.props,
-                  r = t.analytics,
-                  n = t.conversationIds,
+                  n = t.analytics,
+                  r = t.conversationIds,
                   a = t.fetchInboxHistory,
                   o = t.updateLastSeenEventId
                 return g.createElement(
-                  re.a,
+                  ne.a,
                   { style: ft.fill },
                   g.createElement(
-                    re.a,
-                    { style: [ft.viewportView, e._appBarScrollEnabled && Ke.b.drawerHeaderRadius] },
+                    ne.a,
+                    { style: [ft.viewportView, e._appBarScrollEnabled && Xe.b.drawerHeaderRadius] },
                     g.createElement(
                       Ze.a,
-                      { style: [ft.viewportView, e._appBarScrollEnabled && Ke.b.drawerHeaderRadius] },
+                      { style: [ft.viewportView, e._appBarScrollEnabled && Xe.b.drawerHeaderRadius] },
                       e._appBarScrollEnabled && e._renderHeader(),
-                      g.createElement(Xe.a, {
+                      g.createElement(Ke.a, {
                         accessibilityTitle: ot,
-                        analytics: r,
-                        conversationIds: n,
+                        analytics: n,
+                        conversationIds: r,
                         customCellClick: e._dmDrawerOnClick,
                         fetchInboxHistory: a,
                         isDrawer: !0,
@@ -1529,10 +1529,10 @@
                 )
               }),
               v()(u()(e), '_isExpanded', function () {
-                return e.props.visibility === X.a.EXPANDED
+                return e.props.visibility === K.a.EXPANDED
               }),
-              v()(u()(e), '_dmDrawerOnClick', function (t, r) {
-                ;(0, e.props.popOutConversation)(r), t.preventDefault()
+              v()(u()(e), '_dmDrawerOnClick', function (t, n) {
+                ;(0, e.props.popOutConversation)(n), t.preventDefault()
               }),
               v()(u()(e), '_handleEmptyDMInboxImpression', function () {
                 e.props.analytics.scribe({ component: 'empty_message', action: 'impression' })
@@ -1543,11 +1543,11 @@
               v()(u()(e), '_renderPivot', function () {
                 return e.props.allowUntrustedInbox
                   ? g.createElement(
-                      re.a,
+                      ne.a,
                       { style: ft.requestPivotContainer },
                       g.createElement(et.a, {
                         label: st,
-                        link: Object($e.a)(X.c.SECONDARY),
+                        link: Object($e.a)(K.c.SECONDARY),
                         onPress: e._handleRequestsPivotClick,
                         renderRightContent: e._renderPivotBadge,
                       }),
@@ -1569,7 +1569,7 @@
             )
           }
           return (
-            l()(r, [
+            l()(n, [
               {
                 key: 'componentDidUpdate',
                 value: function () {
@@ -1589,7 +1589,7 @@
                 },
               },
             ]),
-            r
+            n
           )
         })(g.Component)
       v()(pt, 'contextType', le.a)
@@ -1605,17 +1605,17 @@
               borderBottomColor: e.colors.borderColor,
               zIndex: 2,
             },
-            viewportView: rt(rt({}, ie.a.absoluteFillObject), {}, { overflowY: 'auto' }),
+            viewportView: nt(nt({}, ie.a.absoluteFillObject), {}, { overflowY: 'auto' }),
           }
         }),
         ht = Ye(pt),
-        bt = r('YeIG'),
-        mt = r('A69o'),
+        bt = n('YeIG'),
+        mt = n('A69o'),
         yt = 'DMDrawer',
-        vt = r('TnY3'),
-        gt = r('0FVZ'),
-        Et = r('Oe3h'),
-        _t = r('nBUg')
+        vt = n('TnY3'),
+        gt = n('0FVZ'),
+        Et = n('Oe3h'),
+        _t = n('nBUg')
       function Ot(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -1628,40 +1628,40 @@
           }
         })()
         return function () {
-          var r,
-            n = m()(e)
+          var n,
+            r = m()(e)
           if (t) {
             var a = m()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return h()(this, r)
+            n = Reflect.construct(r, arguments, a)
+          } else n = r.apply(this, arguments)
+          return h()(this, n)
         }
       }
       var St = { isGlobal: !0, isSticky: !0 },
         It = { isGlobal: !0, isSticky: !1 },
         wt = (function (e) {
-          p()(r, e)
-          var t = Ot(r)
-          function r() {
+          p()(n, e)
+          var t = Ot(n)
+          function n() {
             var e
-            c()(this, r)
-            for (var n = arguments.length, a = new Array(n), o = 0; o < n; o++) a[o] = arguments[o]
+            c()(this, n)
+            for (var r = arguments.length, a = new Array(r), o = 0; o < r; o++) a[o] = arguments[o]
             return (
               (e = t.call.apply(t, [this].concat(a))),
               v()(u()(e), 'state', { isHeaderHighlighted: !1, hasStartedInitialFetch: !1, unexpandedHeight: void 0 }),
               v()(u()(e), '_handleLayout', function (t) {
-                var r = t.nativeEvent.layout.height,
-                  n = e.state.unexpandedHeight
-                e._isExpanded() || void 0 !== n || e.setState({ unexpandedHeight: r })
+                var n = t.nativeEvent.layout.height,
+                  r = e.state.unexpandedHeight
+                e._isExpanded() || void 0 !== r || e.setState({ unexpandedHeight: n })
               }),
               v()(u()(e), '_showDMDrawer', function () {
                 var t = e.props,
-                  r = t.conversations,
-                  n = t.visibility === X.a.CLOSED
-                return !e._isHideDMDrawerPath() && !Object(bt.a)(r) && !n
+                  n = t.conversations,
+                  r = t.visibility === K.a.CLOSED
+                return !e._isHideDMDrawerPath() && !Object(bt.a)(n) && !r
               }),
               v()(u()(e), '_isExpanded', function () {
-                return e.props.visibility === X.a.EXPANDED
+                return e.props.visibility === K.a.EXPANDED
               }),
               v()(u()(e), '_triggerHeaderHighlight', function () {
                 var t = e.state.isHeaderHighlighted
@@ -1692,7 +1692,7 @@
             )
           }
           return (
-            l()(r, [
+            l()(n, [
               {
                 key: 'componentWillUnmount',
                 value: function () {
@@ -1716,8 +1716,8 @@
                 value: function () {
                   var e = this,
                     t = this.props,
-                    r = t.history,
-                    n = t.location,
+                    n = t.history,
+                    r = t.location,
                     o = t.perspective,
                     c = t.poppedOutConversationId,
                     i = t.width,
@@ -1743,13 +1743,13 @@
                                 },
                               },
                               g.createElement(
-                                re.a,
-                                a()({ ref: t() }, l({ style: [Ke.b.root, { width: i }], testID: yt })),
+                                ne.a,
+                                a()({ ref: t() }, l({ style: [Xe.b.root, { width: i }], testID: yt })),
                                 g.createElement(
-                                  re.a,
+                                  ne.a,
                                   {
                                     onLayout: u ? void 0 : e._handleLayout,
-                                    style: [Ke.b.expandable, { height: u, maxHeight: u }, d && Ke.b.expanded],
+                                    style: [Xe.b.expandable, { height: u, maxHeight: u }, d && Xe.b.expanded],
                                   },
                                   c
                                     ? g.createElement(
@@ -1757,9 +1757,9 @@
                                         { value: It },
                                         g.createElement(Ge, {
                                           conversationId: c,
-                                          history: r,
+                                          history: n,
                                           isHeaderHighlighted: s,
-                                          location: n,
+                                          location: r,
                                           onDrawerOpen: e._handleDrawerOpen,
                                           perspective: o,
                                           triggerHeaderHighlight: e._triggerHeaderHighlight,
@@ -1769,7 +1769,7 @@
                                         mt.a.Provider,
                                         { value: St },
                                         g.createElement(ht, {
-                                          history: r,
+                                          history: n,
                                           isHeaderHighlighted: s,
                                           onDrawerOpen: e._handleDrawerOpen,
                                           triggerHeaderHighlight: e._triggerHeaderHighlight,
@@ -1789,44 +1789,44 @@
                 value: function () {
                   var e = this.props,
                     t = e.createLocalApiErrorHandler,
-                    r = e.fetchInboxIfNeeded,
-                    n = e.loadDrawerVisibilityFromPersistence,
+                    n = e.fetchInboxIfNeeded,
+                    r = e.loadDrawerVisibilityFromPersistence,
                     a = this.state.hasStartedInitialFetch
                   this._isHideDMDrawerPath() ||
                     a ||
-                    (n(), r().catch(t()), this.setState({ hasStartedInitialFetch: !0 }))
+                    (r(), n().catch(t()), this.setState({ hasStartedInitialFetch: !0 }))
                 },
               },
             ]),
-            r
+            n
           )
         })(g.PureComponent)
       v()(wt, 'defaultProps', { width: E.a.dmDrawerWidth.max })
       var Ct = w(wt)
       t.default = Object(vt.a)(Ct)
     },
-    nySH: function (e, t, r) {
+    nySH: function (e, t, n) {
       'use strict'
-      r.d(t, 'a', function () {
+      n.d(t, 'a', function () {
         return f
       }),
-        r.d(t, 'b', function () {
+        n.d(t, 'b', function () {
           return h
         }),
-        r.d(t, 'c', function () {
+        n.d(t, 'c', function () {
           return b
         })
-      r('uFXj')
-      var n = r('ERkP'),
-        a = r('HPNB'),
-        o = r('v6aA'),
-        c = r('jYSG'),
-        i = r('AQ79'),
-        l = r('+Bsv'),
-        s = r('MWbm'),
-        u = r('cHvH'),
-        d = r('t62R'),
-        p = r('rHpw'),
+      n('uFXj')
+      var r = n('ERkP'),
+        a = n('HPNB'),
+        o = n('v6aA'),
+        c = n('jYSG'),
+        i = n('AQ79'),
+        l = n('+Bsv'),
+        s = n('MWbm'),
+        u = n('cHvH'),
+        d = n('t62R'),
+        p = n('rHpw'),
         f = function (e) {
           switch (e) {
             case i.c.SECONDARY:
@@ -1839,22 +1839,22 @@
           }
         },
         h = function (e, t) {
-          return n.createElement(o.a.Consumer, null, function (r) {
-            var a = r.featureSwitches.isTrue('responsive_web_settings_revamp_enabled') ? e : '/settings/safety'
-            return n.createElement(l.a, { pullRight: t, to: a })
+          return r.createElement(o.a.Consumer, null, function (n) {
+            var a = n.featureSwitches.isTrue('responsive_web_settings_revamp_enabled') ? e : '/settings/safety'
+            return r.createElement(l.a, { pullRight: t, to: a })
           })
         },
         b = function (e) {
-          return n.createElement(u.a, null, function (t) {
-            var r = t.windowWidth,
-              o = a.a.isTwoColumnLayout(r),
+          return r.createElement(u.a, null, function (t) {
+            var n = t.windowWidth,
+              o = a.a.isTwoColumnLayout(n),
               i = 0 === e.length
             return o || i
               ? null
-              : n.createElement(
+              : r.createElement(
                   s.a,
                   { style: m.stickyCopyContainer },
-                  n.createElement(d.b, { style: m.stickyCopy }, c.a),
+                  r.createElement(d.b, { style: m.stickyCopy }, c.a),
                 )
           })
         },
@@ -1871,28 +1871,28 @@
           }
         })
     },
-    pXKu: function (e, t, r) {
+    pXKu: function (e, t, n) {
       'use strict'
-      r('OZaJ')
-      var n = r('VrFO'),
-        a = r.n(n),
-        o = r('Y9Ll'),
-        c = r.n(o),
-        i = r('1Pcy'),
-        l = r.n(i),
-        s = r('5Yy7'),
-        u = r.n(s),
-        d = r('N+ot'),
-        p = r.n(d),
-        f = r('AuHH'),
-        h = r.n(f),
-        b = r('KEM+'),
-        m = r.n(b),
-        y = (r('vrRf'), r('+KXO'), r('ERkP')),
-        v = r('BUB3'),
-        g = r('v6aA'),
-        E = r('xZGM'),
-        _ = r('rxPX'),
+      n('OZaJ')
+      var r = n('VrFO'),
+        a = n.n(r),
+        o = n('Y9Ll'),
+        c = n.n(o),
+        i = n('1Pcy'),
+        l = n.n(i),
+        s = n('5Yy7'),
+        u = n.n(s),
+        d = n('N+ot'),
+        p = n.n(d),
+        f = n('AuHH'),
+        h = n.n(f),
+        b = n('KEM+'),
+        m = n.n(b),
+        y = (n('vrRf'), n('+KXO'), n('ERkP')),
+        v = n('BUB3'),
+        g = n('v6aA'),
+        E = n('xZGM'),
+        _ = n('rxPX'),
         O = Object(_.a)()
           .propsFromState(function () {
             return {
@@ -1905,11 +1905,11 @@
             return { addFlag: E.v }
           })
           .withAnalytics({ component: 'dm_education_flags_prompt' }),
-        S = r('fs1G'),
-        I = r('t62R'),
-        w = r('feu+'),
-        C = r('3XMw'),
-        x = r.n(C),
+        S = n('fs1G'),
+        I = n('t62R'),
+        w = n('feu+'),
+        C = n('3XMw'),
+        x = n.n(C),
         P = x.a.fd6150fc,
         R = y.createElement(
           x.a.I18NFormatMessage,
@@ -1919,17 +1919,17 @@
         j = x.a.j24c37b2,
         D = O(function (e) {
           var t = e.addFlag,
-            r = e.analytics,
-            n = e.shouldShowPrompt,
+            n = e.analytics,
+            r = e.shouldShowPrompt,
             a = y.useContext(g.a).featureSwitches
-          if (!(n && a.isTrue('dm_education_flags_prompt'))) return !1
+          if (!(r && a.isTrue('dm_education_flags_prompt'))) return !1
           return (
-            r.scribeAction('impression'),
+            n.scribeAction('impression'),
             y.createElement(w.a, {
               actionLabel: j,
               headline: P,
               onAction: function () {
-                r.scribeAction('click'), t(E.j)
+                n.scribeAction('click'), t(E.j)
               },
               onClose: S.a,
               subtext: R,
@@ -1937,9 +1937,9 @@
             })
           )
         }),
-        M = r('MMRb'),
-        T = r('kGix'),
-        k = r('0KEI'),
+        M = n('MMRb'),
+        T = n('kGix'),
+        k = n('0KEI'),
         L = Object(_.a)()
           .propsFromState(function () {
             return {
@@ -1950,9 +1950,9 @@
           })
           .adjustStateProps(function (e) {
             var t = e.fetchStatus,
-              r = e.hasConversations,
-              n = e.isLoadingTop
-            return { fetchStatus: r ? T.a.LOADED : t, isRefreshing: r && n }
+              n = e.hasConversations,
+              r = e.isLoadingTop
+            return { fetchStatus: n ? T.a.LOADED : t, isRefreshing: n && r }
           })
           .propsFromActions(function () {
             return {
@@ -1964,30 +1964,30 @@
               fetchUpdates: M.fetchUpdatesIfNeeded,
             }
           }),
-        H = (r('1t7P'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('ddV6')),
-        A = r.n(H),
+        H = (n('1t7P'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('ddV6')),
+        A = n.n(H),
         B =
-          (r('2G9S'),
-          r('z84I'),
-          r('ho0z'),
-          r('tQbP'),
-          r('LW0h'),
-          r('jQ3i'),
-          r('x4t0'),
-          r('6U7i'),
-          r('MvUL'),
-          r('KqXw'),
-          r('hBvt'),
-          r('7x/C'),
-          r('lTEL'),
-          r('kYxP'),
-          r('EbOo')),
-        N = r('tZH3'),
-        F = r('1YZw'),
-        U = r('hqKg'),
-        V = r('AQOc'),
-        G = r('G6rE'),
-        z = r('oEGd'),
+          (n('2G9S'),
+          n('z84I'),
+          n('ho0z'),
+          n('tQbP'),
+          n('LW0h'),
+          n('jQ3i'),
+          n('x4t0'),
+          n('6U7i'),
+          n('MvUL'),
+          n('KqXw'),
+          n('hBvt'),
+          n('7x/C'),
+          n('lTEL'),
+          n('kYxP'),
+          n('EbOo')),
+        F = n('tZH3'),
+        N = n('1YZw'),
+        U = n('hqKg'),
+        V = n('AQOc'),
+        G = n('G6rE'),
+        z = n('oEGd'),
         W = function (e, t) {
           return t.conversationId
         },
@@ -2002,12 +2002,12 @@
             return !M.selectConversationIsRead(e, W(0, t))
           },
           function (e, t) {
-            var r = W(0, t)
-            return Object(M.selectInboxTypeByConversation)(e, r)
+            var n = W(0, t)
+            return Object(M.selectInboxTypeByConversation)(e, n)
           },
-          function (e, t, r, n, a, o) {
+          function (e, t, n, r, a, o) {
             return {
-              conversation: (null == t ? void 0 : t.data) && Object(V.a)(t.data, r, n),
+              conversation: (null == t ? void 0 : t.data) && Object(V.a)(t.data, n, r),
               conversationId: e,
               unread: a,
               inboxType: o,
@@ -2016,7 +2016,7 @@
         ),
         Q = {
           addRecentSearch: M.addRecentSearches,
-          addToast: F.b,
+          addToast: N.b,
           block: G.e.block,
           createLocalApiErrorHandler: Object(k.createLocalApiErrorHandlerWithContextFactory)(
             'DIRECT_MESSAGES_INBOX_ITEM',
@@ -2029,20 +2029,20 @@
           unblock: G.e.unblock,
         },
         Y = Object(z.g)(q, Q),
-        K = r('aA19'),
-        X = r('OhSZ'),
-        $ = r('g54k')
+        X = n('aA19'),
+        K = n('OhSZ'),
+        $ = n('g54k')
       function Z(e, t) {
-        var r = Object.keys(e)
+        var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
+          var r = Object.getOwnPropertySymbols(e)
           t &&
-            (n = n.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            r.push.apply(r, n)
+            n.push.apply(n, r)
         }
-        return r
+        return n
       }
       var J = function (e, t) {
           return t.entry
@@ -2054,30 +2054,30 @@
           .adjustStateProps(function (e) {
             return (function (e) {
               for (var t = 1; t < arguments.length; t++) {
-                var r = null != arguments[t] ? arguments[t] : {}
+                var n = null != arguments[t] ? arguments[t] : {}
                 t % 2
-                  ? Z(Object(r), !0).forEach(function (t) {
-                      m()(e, t, r[t])
+                  ? Z(Object(n), !0).forEach(function (t) {
+                      m()(e, t, n[t])
                     })
                   : Object.getOwnPropertyDescriptors
-                  ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-                  : Z(Object(r)).forEach(function (t) {
-                      Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+                  ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+                  : Z(Object(n)).forEach(function (t) {
+                      Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     })
               }
               return e
             })({}, e.users)
           }),
-        te = r('zQEV'),
-        re = ee(function (e) {
+        te = n('zQEV'),
+        ne = ee(function (e) {
           var t = e.entry,
-            r = e.entryType,
-            n = e.perspective,
+            n = e.entryType,
+            r = e.perspective,
             a = e.users,
-            o = Object(te.a)(t, r, n, a)
+            o = Object(te.a)(t, n, r, a)
           return y.createElement(I.b, { color: 'gray700' }, o)
         }),
-        ne = Object(U.createSelector)(
+        re = Object(U.createSelector)(
           function (e, t) {
             return G.e.select(e, t.senderId)
           },
@@ -2088,9 +2088,9 @@
             return { user: e, recipient: t }
           },
         ),
-        ae = Object(z.c)(ne),
-        oe = r('X/yg'),
-        ce = r('cTG8'),
+        ae = Object(z.c)(re),
+        oe = n('X/yg'),
+        ce = n('cTG8'),
         ie = function (e) {
           return y.createElement(x.a.I18NFormatMessage, { $i18n: 'b3a2b11c' }, y.createElement(I.b, null, e))
         },
@@ -2103,8 +2103,8 @@
         he = x.a.b1a614fe,
         be = ae(function (e) {
           var t = e.entry,
-            r = e.perspective,
-            n = e.isGroupDM,
+            n = e.perspective,
+            r = e.isGroupDM,
             a = e.user,
             o = void 0 === a ? {} : a,
             c = e.recipient,
@@ -2114,8 +2114,8 @@
           if (!s) return null
           var u = s.attachment,
             d = u && !!(u.video || u.photo || u.animated_gif || u.tweet || u.fleet || u.sticker || u.card),
-            p = r === o.id_str,
-            f = !(!d || !p) || !(!n || p),
+            p = n === o.id_str,
+            f = !(!d || !p) || !(!r || p),
             h = o.name,
             b = i.name,
             m = [
@@ -2141,18 +2141,18 @@
                       })(p, h)
                     : he)
                 : u.fleet
-                ? (m = (function (e, t, r) {
+                ? (m = (function (e, t, n) {
                     return e
                       ? y.createElement(
                           x.a.I18NFormatMessage,
                           { $i18n: 'i005f1fd' },
                           y.createElement(I.b, null, t),
-                          y.createElement(I.b, null, r || ''),
+                          y.createElement(I.b, null, n || ''),
                         )
                       : y.createElement(
                           x.a.I18NFormatMessage,
                           { $i18n: 'b35cee40' },
-                          y.createElement(I.b, null, r || ''),
+                          y.createElement(I.b, null, n || ''),
                         )
                   })(p, b, s.text))
                 : u.video
@@ -2210,7 +2210,7 @@
             y.createElement(I.b, { color: 'gray700', numberOfLines: 1 }, m)
           )
         }),
-        me = r('uKEd'),
+        me = n('uKEd'),
         ye = function (e, t) {
           return t.senderId ? G.e.select(e, t.senderId) : void 0
         },
@@ -2218,19 +2218,19 @@
           return Object(me.n)(e, t.reactionEntry.message_id)
         },
         ge = function (e, t) {
-          var r = ve(e, t)
-          return r && r.message_data && G.e.select(e, r.message_data.sender_id)
+          var n = ve(e, t)
+          return n && n.message_data && G.e.select(e, n.message_data.sender_id)
         },
         Ee = Object(z.e)(function () {
-          return Object(U.createSelector)(ye, ve, ge, function (e, t, r) {
-            return { reactedMessageEntry: t, reactingUser: e, messageUser: r }
+          return Object(U.createSelector)(ye, ve, ge, function (e, t, n) {
+            return { reactedMessageEntry: t, reactingUser: e, messageUser: n }
           })
         }, {}),
-        _e = r('33Kz'),
+        _e = n('33Kz'),
         Oe = Ee(function (e) {
           var t,
-            r = e.isGroupDM,
-            n = e.messageUser,
+            n = e.isGroupDM,
+            r = e.messageUser,
             a = e.perspective,
             o = e.reactedMessageEntry,
             c = e.reactingUser,
@@ -2239,286 +2239,286 @@
             s = o && o.message_data,
             u = s && s.attachment,
             d = s && s.text,
-            p = n && n.screen_name,
+            p = r && r.screen_name,
             f = a === (c && c.id_str),
             h = c && c.name,
             b = Object(_e.b)(i.reaction_key || '', l)
           return (
             (t =
               u && u.tweet
-                ? r
-                  ? (function (e, t, r, n) {
+                ? n
+                  ? (function (e, t, n, r) {
                       return e
                         ? y.createElement(
                             x.a.I18NFormatMessage,
                             { $i18n: 'c4202784' },
-                            y.createElement(I.b, null, r),
                             y.createElement(I.b, null, n),
+                            y.createElement(I.b, null, r),
                           )
                         : y.createElement(
                             x.a.I18NFormatMessage,
                             { $i18n: 'b493a890' },
                             y.createElement(I.b, null, t),
-                            y.createElement(I.b, null, r),
                             y.createElement(I.b, null, n),
+                            y.createElement(I.b, null, r),
                           )
                     })(f, h, p, b)
-                  : (function (e, t, r) {
+                  : (function (e, t, n) {
                       return e
-                        ? y.createElement(x.a.I18NFormatMessage, { $i18n: 'ca684bf5' }, y.createElement(I.b, null, r))
+                        ? y.createElement(x.a.I18NFormatMessage, { $i18n: 'ca684bf5' }, y.createElement(I.b, null, n))
                         : y.createElement(
                             x.a.I18NFormatMessage,
                             { $i18n: 'h5797be5' },
                             y.createElement(I.b, null, t),
-                            y.createElement(I.b, null, r),
+                            y.createElement(I.b, null, n),
                           )
                     })(f, h, b)
                 : u && u.video
-                ? r
-                  ? (function (e, t, r, n) {
+                ? n
+                  ? (function (e, t, n, r) {
                       return e
                         ? y.createElement(
                             x.a.I18NFormatMessage,
                             { $i18n: 'd1f8bdd9' },
-                            y.createElement(I.b, null, r),
                             y.createElement(I.b, null, n),
+                            y.createElement(I.b, null, r),
                           )
                         : y.createElement(
                             x.a.I18NFormatMessage,
                             { $i18n: 'd764af97' },
                             y.createElement(I.b, null, t),
-                            y.createElement(I.b, null, r),
                             y.createElement(I.b, null, n),
+                            y.createElement(I.b, null, r),
                           )
                     })(f, h, p, b)
-                  : (function (e, t, r) {
+                  : (function (e, t, n) {
                       return e
-                        ? y.createElement(x.a.I18NFormatMessage, { $i18n: 'ab1cdfe2' }, y.createElement(I.b, null, r))
+                        ? y.createElement(x.a.I18NFormatMessage, { $i18n: 'ab1cdfe2' }, y.createElement(I.b, null, n))
                         : y.createElement(
                             x.a.I18NFormatMessage,
                             { $i18n: 'f0cf1699' },
                             y.createElement(I.b, null, t),
-                            y.createElement(I.b, null, r),
+                            y.createElement(I.b, null, n),
                           )
                     })(f, h, b)
                 : u && u.photo
-                ? r
-                  ? (function (e, t, r, n) {
+                ? n
+                  ? (function (e, t, n, r) {
                       return e
                         ? y.createElement(
                             x.a.I18NFormatMessage,
                             { $i18n: 'hec0fd4d' },
-                            y.createElement(I.b, null, r),
                             y.createElement(I.b, null, n),
+                            y.createElement(I.b, null, r),
                           )
                         : y.createElement(
                             x.a.I18NFormatMessage,
                             { $i18n: 'j55320de' },
                             y.createElement(I.b, null, t),
-                            y.createElement(I.b, null, r),
                             y.createElement(I.b, null, n),
+                            y.createElement(I.b, null, r),
                           )
                     })(f, h, p, b)
-                  : (function (e, t, r) {
+                  : (function (e, t, n) {
                       return e
-                        ? y.createElement(x.a.I18NFormatMessage, { $i18n: 'jf27606a' }, y.createElement(I.b, null, r))
+                        ? y.createElement(x.a.I18NFormatMessage, { $i18n: 'jf27606a' }, y.createElement(I.b, null, n))
                         : y.createElement(
                             x.a.I18NFormatMessage,
                             { $i18n: 'cd110359' },
                             y.createElement(I.b, null, t),
-                            y.createElement(I.b, null, r),
+                            y.createElement(I.b, null, n),
                           )
                     })(f, h, b)
                 : u && u.animated_gif
-                ? r
-                  ? (function (e, t, r, n) {
+                ? n
+                  ? (function (e, t, n, r) {
                       return e
                         ? y.createElement(
                             x.a.I18NFormatMessage,
                             { $i18n: 'e70dcc35' },
-                            y.createElement(I.b, null, r),
                             y.createElement(I.b, null, n),
+                            y.createElement(I.b, null, r),
                           )
                         : y.createElement(
                             x.a.I18NFormatMessage,
                             { $i18n: 'g1bf440b' },
                             y.createElement(I.b, null, t),
-                            y.createElement(I.b, null, r),
                             y.createElement(I.b, null, n),
+                            y.createElement(I.b, null, r),
                           )
                     })(f, h, p, b)
-                  : (function (e, t, r) {
+                  : (function (e, t, n) {
                       return e
-                        ? y.createElement(x.a.I18NFormatMessage, { $i18n: 'b2da1bf8' }, y.createElement(I.b, null, r))
+                        ? y.createElement(x.a.I18NFormatMessage, { $i18n: 'b2da1bf8' }, y.createElement(I.b, null, n))
                         : y.createElement(
                             x.a.I18NFormatMessage,
                             { $i18n: 'g84c0421' },
                             y.createElement(I.b, null, t),
-                            y.createElement(I.b, null, r),
+                            y.createElement(I.b, null, n),
                           )
                     })(f, h, b)
                 : u && u.card
-                ? r
-                  ? (function (e, t, r, n) {
+                ? n
+                  ? (function (e, t, n, r) {
                       return e
                         ? y.createElement(
                             x.a.I18NFormatMessage,
                             { $i18n: 'cd2e7c18' },
-                            y.createElement(I.b, null, r),
                             y.createElement(I.b, null, n),
+                            y.createElement(I.b, null, r),
                           )
                         : y.createElement(
                             x.a.I18NFormatMessage,
                             { $i18n: 'aee9e7fa' },
                             y.createElement(I.b, null, t),
-                            y.createElement(I.b, null, r),
                             y.createElement(I.b, null, n),
+                            y.createElement(I.b, null, r),
                           )
                     })(f, h, p, b)
-                  : (function (e, t, r) {
+                  : (function (e, t, n) {
                       return e
-                        ? y.createElement(x.a.I18NFormatMessage, { $i18n: 'f9fb1cf6' }, y.createElement(I.b, null, r))
+                        ? y.createElement(x.a.I18NFormatMessage, { $i18n: 'f9fb1cf6' }, y.createElement(I.b, null, n))
                         : y.createElement(
                             x.a.I18NFormatMessage,
                             { $i18n: 'f2bf910e' },
                             y.createElement(I.b, null, t),
-                            y.createElement(I.b, null, r),
+                            y.createElement(I.b, null, n),
                           )
                     })(f, h, b)
                 : d
-                ? r
-                  ? (function (e, t, r, n, a) {
+                ? n
+                  ? (function (e, t, n, r, a) {
                       return e
                         ? y.createElement(
                             x.a.I18NFormatMessage,
                             { $i18n: 'i6cec545' },
-                            y.createElement(I.b, null, n),
                             y.createElement(I.b, null, r),
+                            y.createElement(I.b, null, n),
                             y.createElement(I.b, null, a),
                           )
                         : y.createElement(
                             x.a.I18NFormatMessage,
                             { $i18n: 'd6998baa' },
                             y.createElement(I.b, null, t),
-                            y.createElement(I.b, null, n),
                             y.createElement(I.b, null, r),
+                            y.createElement(I.b, null, n),
                             y.createElement(I.b, null, a),
                           )
                     })(f, h, b, p, d)
-                  : (function (e, t, r, n) {
+                  : (function (e, t, n, r) {
                       return e
                         ? y.createElement(
                             x.a.I18NFormatMessage,
                             { $i18n: 'cec676f3' },
-                            y.createElement(I.b, null, r),
                             y.createElement(I.b, null, n),
+                            y.createElement(I.b, null, r),
                           )
                         : y.createElement(
                             x.a.I18NFormatMessage,
                             { $i18n: 'a2706f9a' },
                             y.createElement(I.b, null, t),
-                            y.createElement(I.b, null, r),
                             y.createElement(I.b, null, n),
+                            y.createElement(I.b, null, r),
                           )
                     })(f, h, b, d)
-                : (function (e, t, r) {
+                : (function (e, t, n) {
                     return e
-                      ? y.createElement(x.a.I18NFormatMessage, { $i18n: 'd6b15bbf' }, y.createElement(I.b, null, r))
+                      ? y.createElement(x.a.I18NFormatMessage, { $i18n: 'd6b15bbf' }, y.createElement(I.b, null, n))
                       : y.createElement(
                           x.a.I18NFormatMessage,
                           { $i18n: 'ac0d4bc7' },
                           y.createElement(I.b, null, t),
-                          y.createElement(I.b, null, r),
+                          y.createElement(I.b, null, n),
                         )
                   })(f, h, b)),
             y.createElement(I.b, { color: 'gray700', numberOfLines: 1 }, t)
           )
         }),
-        Se = r('H4nC'),
-        Ie = r('b9JY'),
+        Se = n('H4nC'),
+        Ie = n('b9JY'),
         we = x.a.fb3ccb55,
         Ce = function (e) {
           var t = e.conversationType,
-            r = e.entry,
-            n = e.perspective
-          if (r.marked_as_spam) return y.createElement(I.b, { color: 'gray700', numberOfLines: 1 }, we)
-          if (Object(Ie.b)(r)) {
-            var a = r.message_data,
+            n = e.entry,
+            r = e.perspective
+          if (n.marked_as_spam) return y.createElement(I.b, { color: 'gray700', numberOfLines: 1 }, we)
+          if (Object(Ie.b)(n)) {
+            var a = n.message_data,
               o = (a = void 0 === a ? {} : a).recipient_id,
               c = a.sender_id
             return y.createElement(be, {
-              entry: r,
+              entry: n,
               isGroupDM: t === M.CONVERSATION_TYPE.GROUP,
-              perspective: n,
+              perspective: r,
               recipientId: o,
               senderId: c,
             })
           }
-          return Object(Ie.c)(r)
+          return Object(Ie.c)(n)
             ? y.createElement(Oe, {
                 isGroupDM: t === M.CONVERSATION_TYPE.GROUP,
-                perspective: n,
-                reactionEntry: r,
-                senderId: r.sender_id,
+                perspective: r,
+                reactionEntry: n,
+                senderId: n.sender_id,
               })
-            : Object(Ie.a)(r)
-            ? y.createElement(re, { entry: r, entryType: r.type, perspective: n })
-            : Object(Ie.d)(r)
-            ? y.createElement(Se.a, { entry: r, isCompact: !0 })
+            : Object(Ie.a)(n)
+            ? y.createElement(ne, { entry: n, entryType: n.type, perspective: r })
+            : Object(Ie.d)(n)
+            ? y.createElement(Se.a, { entry: n, isCompact: !0 })
             : null
         },
-        xe = r('Myq3'),
-        Pe = r('3wZR'),
-        Re = r('XnpN'),
-        je = r('AQ79'),
+        xe = n('Myq3'),
+        Pe = n('3wZR'),
+        Re = n('XnpN'),
+        je = n('AQ79'),
         De = 'conversation',
-        Me = r('u0B7'),
-        Te = r('MWbm'),
-        ke = r('Irs7'),
-        Le = r('eb3s'),
-        He = r('ZToW'),
-        Ae = r('lHOd'),
-        Be = r('IG7M'),
-        Ne = r('mjJ+'),
-        Fe = r('Znyr'),
-        Ue = r('0PHd'),
-        Ve = r('yrzJ'),
-        Ge = r('Xrkv'),
-        ze = r('efqG'),
-        We = r('/yvb'),
-        qe = r('GBcw'),
-        Qe = r('cm6r'),
-        Ye = r('htQn'),
-        Ke = r('5mJL'),
-        Xe = r('rHpw'),
-        $e = r('vMjK'),
-        Ze = r('pHkl'),
-        Je = r('aWyx'),
-        et = r('Lsrn'),
-        tt = r('k/Ka')
-      function rt(e, t) {
-        var r = Object.keys(e)
+        Me = n('u0B7'),
+        Te = n('MWbm'),
+        ke = n('Irs7'),
+        Le = n('eb3s'),
+        He = n('ZToW'),
+        Ae = n('lHOd'),
+        Be = n('IG7M'),
+        Fe = n('mjJ+'),
+        Ne = n('Znyr'),
+        Ue = n('0PHd'),
+        Ve = n('yrzJ'),
+        Ge = n('Xrkv'),
+        ze = n('efqG'),
+        We = n('/yvb'),
+        qe = n('GBcw'),
+        Qe = n('cm6r'),
+        Ye = n('htQn'),
+        Xe = n('5mJL'),
+        Ke = n('rHpw'),
+        $e = n('vMjK'),
+        Ze = n('pHkl'),
+        Je = n('aWyx'),
+        et = n('Lsrn'),
+        tt = n('k/Ka')
+      function nt(e, t) {
+        var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
+          var r = Object.getOwnPropertySymbols(e)
           t &&
-            (n = n.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            r.push.apply(r, n)
+            n.push.apply(n, r)
         }
-        return r
+        return n
       }
-      function nt(e) {
+      function rt(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
+          var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? rt(Object(r), !0).forEach(function (t) {
-                m()(e, t, r[t])
+            ? nt(Object(n), !0).forEach(function (t) {
+                m()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : rt(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : nt(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
@@ -2527,8 +2527,8 @@
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
         return Object(tt.a)(
           'svg',
-          nt(
-            nt({}, e),
+          rt(
+            rt({}, e),
             {},
             { accessibilityHidden: void 0 === e.accessibilityLabel, style: [et.a.root, e.style], viewBox: '0 0 32 32' },
           ),
@@ -2546,31 +2546,31 @@
       }
       at.metadata = { width: 32, height: 32 }
       var ot = at,
-        ct = r('zIWA'),
-        it = r('5pef')
+        ct = n('zIWA'),
+        it = n('5pef')
       function lt(e, t) {
-        var r = Object.keys(e)
+        var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
+          var r = Object.getOwnPropertySymbols(e)
           t &&
-            (n = n.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            r.push.apply(r, n)
+            n.push.apply(n, r)
         }
-        return r
+        return n
       }
       function st(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
+          var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? lt(Object(r), !0).forEach(function (t) {
-                m()(e, t, r[t])
+            ? lt(Object(n), !0).forEach(function (t) {
+                m()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : lt(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : lt(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
@@ -2595,30 +2595,30 @@
       }
       ut.metadata = { width: 24, height: 24 }
       var dt = ut,
-        pt = r('5oT/')
+        pt = n('5oT/')
       function ft(e, t) {
-        var r = Object.keys(e)
+        var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
+          var r = Object.getOwnPropertySymbols(e)
           t &&
-            (n = n.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            r.push.apply(r, n)
+            n.push.apply(n, r)
         }
-        return r
+        return n
       }
       function ht(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
+          var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? ft(Object(r), !0).forEach(function (t) {
-                m()(e, t, r[t])
+            ? ft(Object(n), !0).forEach(function (t) {
+                m()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : ft(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : ft(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
@@ -2635,13 +2635,13 @@
           }
         })()
         return function () {
-          var r,
-            n = h()(e)
+          var n,
+            r = h()(e)
           if (t) {
             var a = h()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return p()(this, r)
+            n = Reflect.construct(r, arguments, a)
+          } else n = r.apply(this, arguments)
+          return p()(this, n)
         }
       }
       var mt = x.a.d88d0790,
@@ -2661,15 +2661,20 @@
           return y.createElement(Te.a, { style: wt.socialProofContainer }, t)
         },
         It = (function (e) {
-          u()(r, e)
-          var t = bt(r)
-          function r() {
+          u()(n, e)
+          var t = bt(n)
+          function n() {
             var e
-            a()(this, r)
-            for (var n = arguments.length, o = new Array(n), c = 0; c < n; c++) o[c] = arguments[c]
+            a()(this, n)
+            for (var r = arguments.length, o = new Array(r), c = 0; c < r; c++) o[c] = arguments[c]
             return (
               (e = t.call.apply(t, [this].concat(o))),
-              m()(l()(e), '_isPinnedInboxEnabled', e.context.featureSwitches.isTrue('dm_pinned_conversations_enabled')),
+              m()(
+                l()(e),
+                '_isPinnedInboxEnabled',
+                e.context.featureSwitches.isTrue('dm_conversation_labels_pinned_enabled') &&
+                  e.context.featureSwitches.isTrue('direct_messages_incremental_holdback_2022h1'),
+              ),
               m()(
                 l()(e),
                 '_isVDLEnabled',
@@ -2689,14 +2694,14 @@
                 })
               }),
               m()(l()(e), '_renderMenu', function (t) {
-                var r = t.isFocused,
-                  n = t.isFocusedWithin,
+                var n = t.isFocused,
+                  r = t.isFocusedWithin,
                   a = t.isHovered,
                   o = e.state.showActionMenu,
                   c = function () {
                     e.setState({ showActionMenu: !0 })
                   },
-                  i = !He.a.isEnabled || r || n || a || o
+                  i = !He.a.isEnabled || n || r || a || o
                 return y.createElement(Ae.a.Consumer, null, function (t) {
                   return y.createElement(Be.a, {
                     onClick: c,
@@ -2706,11 +2711,11 @@
                 })
               }),
               m()(l()(e), '_renderActionMenu', function (t) {
-                var r = e.props,
-                  n = r.conversation,
-                  a = r.conversationId,
+                var n = e.props,
+                  r = n.conversation,
+                  a = n.conversationId,
                   o = e.context.history,
-                  c = null == n ? void 0 : n.notifications_disabled,
+                  c = null == r ? void 0 : r.notifications_disabled,
                   i = {
                     Icon: ot,
                     isEmphasized: !0,
@@ -2737,18 +2742,34 @@
                     },
                     i,
                   ]
-                return y.createElement(Ne.a, {
+                return y.createElement(Fe.a, {
                   items: l,
                   onCloseRequested: e._handleHideMenu(t),
                   shouldCloseOnClick: !0,
                 })
               }),
+              m()(l()(e), '_renderConversationActions', function (t) {
+                var n = t.isFocused,
+                  r = t.isFocusedWithin,
+                  a = t.isHovered
+                switch (e.props.inboxType) {
+                  case je.c.PRIMARY:
+                    return e._isPinnedInboxEnabled
+                      ? e._renderMenu({ isFocused: n, isFocusedWithin: r, isHovered: a })
+                      : null
+                  case je.c.SECONDARY:
+                  case je.c.TERTIARY:
+                    return e._renderX()
+                  default:
+                    return null
+                }
+              }),
               m()(l()(e), '_renderConversationEndCell', function () {
                 var t = e.props,
-                  r = t.inboxType,
-                  n = t.searchQuery,
+                  n = t.inboxType,
+                  r = t.searchQuery,
                   a = t.unread
-                    ? y.createElement(Fe.a, {
+                    ? y.createElement(Ne.a, {
                         pip: !0,
                         style: wt.unreadMessagePip,
                         truncatedCountFormatter: function () {
@@ -2759,12 +2780,11 @@
                         },
                       })
                     : null
-                switch (r) {
+                switch (n) {
                   case je.c.PRIMARY:
-                    return e._isVDLEnabled ? a : n ? null : e._renderTimestamp()
+                    return e._isVDLEnabled ? a : r ? null : e._renderTimestamp()
                   case je.c.SECONDARY:
-                  case je.c.TERTIARY:
-                    return e._renderX()
+                    return e._isVDLEnabled ? a : null
                   default:
                     return null
                 }
@@ -2772,25 +2792,25 @@
               m()(l()(e), '_renderConversationLabel', function (e) {
                 var t = e.convo_label
                 if (null == t || !t.text) return null
-                var r = Object(Pe.b)(t.icon)
+                var n = Object(Pe.b)(t.icon)
                 return y.createElement(
                   I.b,
                   { color: 'gray700', size: 'subtext2' },
-                  r ? y.createElement(r, { style: wt.convoLabelIcon }) : null,
+                  n ? y.createElement(n, { style: wt.convoLabelIcon }) : null,
                   t.text,
                 )
               }),
               m()(l()(e), '_renderSocialProof', function (t) {
-                var r = t.social_proof
-                if (!r || 0 === r.length) return null
-                var n = r[0]
-                switch (n.proof_type) {
+                var n = t.social_proof
+                if (!n || 0 === n.length) return null
+                var r = n[0]
+                switch (r.proof_type) {
                   case Je.d.MUTUAL_FRIENDS:
-                    if (0 === n.total) return null
-                    var a = n.users.map(function (e) {
+                    if (0 === r.total) return null
+                    var a = r.users.map(function (e) {
                         return e.profile_image_url_https
                       }),
-                      o = n.users.map(function (e) {
+                      o = r.users.map(function (e) {
                         return e.name
                       }),
                       c = e._isVDLEnabled ? { marginLeft: 0 } : null
@@ -2800,7 +2820,7 @@
                       y.createElement(Ue.a, {
                         displayFacepileInline: !0,
                         knownFollowersAvatarUrls: a,
-                        knownFollowersCount: n.total,
+                        knownFollowersCount: r.total,
                         knownFollowersNames: o,
                         textStyle: c,
                         withFacepile: !e._isVDLEnabled,
@@ -2812,10 +2832,10 @@
               }),
               m()(l()(e), '_renderSearchConversationPreview', function () {
                 var t = e.props,
-                  r = t.conversation,
-                  n = t.perspective,
+                  n = t.conversation,
+                  r = t.perspective,
                   a = t.searchQuery,
-                  o = r ? Object(Re.a)(r, n) : [],
+                  o = n ? Object(Re.a)(n, r) : [],
                   c = [],
                   i = function (e, t) {
                     return e.localeCompare(t)
@@ -2826,16 +2846,16 @@
                     })
                     .filter(function (e) {
                       var t,
-                        r = null === (t = e.name) || void 0 === t ? void 0 : t.toLowerCase().includes(a)
-                      return e.id_str !== n && (r && c.push(e.name), !r)
+                        n = null === (t = e.name) || void 0 === t ? void 0 : t.toLowerCase().includes(a)
+                      return e.id_str !== r && (n && c.push(e.name), !n)
                     })
                     .map(function (e) {
                       return e.name
                     })
                     .sort(i),
                   s = c.sort(i).concat(l)
-                if (r) {
-                  if (r.type === M.CONVERSATION_TYPE.ONE_TO_ONE) {
+                if (n) {
+                  if (n.type === M.CONVERSATION_TYPE.ONE_TO_ONE) {
                     var u = o.map(function (e) {
                         return e.user
                       }),
@@ -2848,22 +2868,22 @@
               }),
               m()(l()(e), '_renderX', function () {
                 var t = e.props,
-                  r = t.conversation,
-                  n = t.conversationId,
+                  n = t.conversation,
+                  r = t.conversationId,
                   a = e.context.loggedInUserId,
-                  o = Object(oe.i)(r, a),
-                  c = (null == r ? void 0 : r.type) === M.CONVERSATION_TYPE.GROUP
+                  o = Object(oe.i)(n, a),
+                  c = (null == n ? void 0 : n.type) === M.CONVERSATION_TYPE.GROUP
                 return y.createElement(Ae.a.Consumer, null, function (t) {
                   return y.createElement(
                     ze.a,
                     {
-                      renderContent: function (r, a) {
-                        return y.createElement(N.a, {
-                          dismiss: r,
+                      renderContent: function (n, a) {
+                        return y.createElement(F.a, {
+                          dismiss: n,
                           flatBorders: 'sheet' === a,
                           isGroup: c,
                           onBlockClick: e._blockUser(o.idStr),
-                          onDeleteClick: e._deleteConversation(n),
+                          onDeleteClick: e._deleteConversation(r),
                           onReportClick: e._handleReportMenuItemClick(t),
                           requestorScreenName: o.screenName,
                           showBlock: !c,
@@ -2874,10 +2894,10 @@
                     },
                     y.createElement(We.a, {
                       accessibilityLabel: mt,
-                      icon: y.createElement(pt.a, null),
+                      icon: y.createElement(pt.a, { style: e._isVDLEnabled ? wt.xIcon : void 0 }),
                       onPress: e._handleXPress,
-                      style: wt.xButton,
-                      type: 'destructiveText',
+                      style: e._isVDLEnabled ? wt.vdlXButton : wt.xButton,
+                      type: e._isVDLEnabled ? void 0 : 'destructiveText',
                     }),
                   )
                 })
@@ -2892,53 +2912,53 @@
               }),
               m()(l()(e), '_handleReportMenuItemClick', function (t) {
                 return function () {
-                  var r = e.props,
-                    n = r.analytics,
-                    a = r.conversationId,
-                    o = r.inboxType
+                  var n = e.props,
+                    r = n.analytics,
+                    a = n.conversationId,
+                    o = n.inboxType
                   if (a) {
-                    n.scribeAction('report')
-                    var c = Object(oe.f)(a, window.location.pathname, n.contextualScribeNamespace, o)
+                    r.scribeAction('report')
+                    var c = Object(oe.f)(a, window.location.pathname, r.contextualScribeNamespace, o)
                     t.push(c)
                   }
                 }
               }),
               m()(l()(e), '_handleSnoozeMenuItemClick', function (t) {
-                var r = e.props,
-                  n = r.conversation,
-                  a = r.disableNotifications,
-                  o = r.enableNotifications
-                ;(null == n ? void 0 : n.notifications_disabled) ? o({ conversationId: t }) : a({ conversationId: t })
+                var n = e.props,
+                  r = n.conversation,
+                  a = n.disableNotifications,
+                  o = n.enableNotifications
+                ;(null == r ? void 0 : r.notifications_disabled) ? o({ conversationId: t }) : a({ conversationId: t })
               }),
               m()(l()(e), '_handleXPress', function (e) {
                 e.preventDefault()
               }),
               m()(l()(e), '_renderTimestamp', function () {
                 var t = e.props.conversation,
-                  r =
+                  n =
                     e.context.featureSwitches.isTrue('dm_vdl_enabled') &&
                     e.context.featureSwitches.isTrue('dm_vdl_inbox_p0_enabled'),
-                  n = [r ? wt.inlineNotificationsDisabledIcon : wt.notificationsDisabledIcon]
+                  r = [n ? wt.inlineNotificationsDisabledIcon : wt.notificationsDisabledIcon]
                 return y.createElement(
                   y.Fragment,
                   null,
                   y.createElement(
                     Te.a,
-                    { style: r && wt.inlineTimestamp },
+                    { style: n && wt.inlineTimestamp },
                     t ? y.createElement(qe.a, { timestamp: Number(t.sort_timestamp) }) : null,
-                    null != t && t.notifications_disabled ? y.createElement(dt, { style: n }) : null,
+                    null != t && t.notifications_disabled ? y.createElement(dt, { style: r }) : null,
                   ),
                 )
               }),
               m()(l()(e), '_deleteConversation', function (t) {
                 return function () {
-                  var r = e.props,
-                    n = r.analytics,
-                    a = r.conversation,
-                    o = r.createLocalApiErrorHandler,
-                    c = r.inboxType,
-                    i = r.leaveConversation,
-                    l = r.position,
+                  var n = e.props,
+                    r = n.analytics,
+                    a = n.conversation,
+                    o = n.createLocalApiErrorHandler,
+                    c = n.inboxType,
+                    i = n.leaveConversation,
+                    l = n.position,
                     s = e.context.history,
                     u = null != a && a.participants ? Object.keys(a.participants).length : 0,
                     d = a && a.type === M.CONVERSATION_TYPE.GROUP ? 'leave_group' : 'delete_thread',
@@ -2951,44 +2971,44 @@
                       entry_point: Ze.b.CELL_X_BUTTON,
                     }
                   e._handleHideConfirmation(),
-                    n.scribe({ element: 'thread', action: d, data: p }),
+                    r.scribe({ element: 'thread', action: d, data: p }),
                     i({ conversationId: t }).catch(o({ showToast: !0 })),
                     s.replace(Object(oe.e)(c))
                 }
               }),
               m()(l()(e), '_blockUser', function (t) {
                 return function () {
-                  var r = e.props,
-                    n = r.addToast,
-                    a = r.analytics,
-                    o = r.block,
-                    c = r.createLocalApiErrorHandler
+                  var n = e.props,
+                    r = n.addToast,
+                    a = n.analytics,
+                    o = n.block,
+                    c = n.createLocalApiErrorHandler
                   o(t).then(function () {
-                    n({ action: { label: $e.c, onAction: e._createUnblockUserHandler(t) }, text: $e.a })
+                    r({ action: { label: $e.c, onAction: e._createUnblockUserHandler(t) }, text: $e.a })
                   }, c(B.a)),
                     a.scribeAction('block')
                 }
               }),
               m()(l()(e), '_createUnblockUserHandler', function (t) {
                 return function () {
-                  var r = e.props,
-                    n = r.analytics,
-                    a = r.createLocalApiErrorHandler
-                  ;(0, r.unblock)(t).catch(a(Me.a)), n.scribeAction('unblock')
+                  var n = e.props,
+                    r = n.analytics,
+                    a = n.createLocalApiErrorHandler
+                  ;(0, n.unblock)(t).catch(a(Me.a)), r.scribeAction('unblock')
                 }
               }),
               m()(l()(e), '_handleHideConfirmation', function () {
                 e.setState({ showConfirmation: !1 })
               }),
               m()(l()(e), '_handleOnClick', function (t) {
-                var r = e.props,
-                  n = r.addRecentSearch,
-                  a = r.analytics,
-                  o = r.conversation,
-                  c = r.conversationId,
-                  i = r.onClick,
-                  l = r.position,
-                  s = r.searchQuery,
+                var n = e.props,
+                  r = n.addRecentSearch,
+                  a = n.analytics,
+                  o = n.conversation,
+                  c = n.conversationId,
+                  i = n.onClick,
+                  l = n.position,
+                  s = n.searchQuery,
                   u = null != o && o.participants ? Object.keys(o.participants).length : 0,
                   d = (null == o ? void 0 : o.type) === M.CONVERSATION_TYPE.GROUP
                 s &&
@@ -3008,30 +3028,30 @@
                     },
                   }),
                   a.scribe({ component: 'recent_search', action: 'add' }),
-                  n(s)),
+                  r(s)),
                   i(t, c, o, l)
               }),
               m()(l()(e), '_handleShowConfirmation', function (t) {
-                var r = e.props.analytics
+                var n = e.props.analytics
                 t.stopPropagation(),
-                  r.scribe(ht(ht({}, Ot), {}, { element: 'accessory_trashcan', action: 'click' })),
+                  n.scribe(ht(ht({}, Ot), {}, { element: 'accessory_trashcan', action: 'click' })),
                   e.setState({ showConfirmation: !0 })
               }),
               e
             )
           }
           return (
-            c()(r, [
+            c()(n, [
               {
                 key: 'shouldComponentUpdate',
                 value: function (e, t) {
-                  var r = this.props.conversation,
-                    n = null == r ? void 0 : r.conversation_id,
-                    a = null == r ? void 0 : r.notifications_disabled,
-                    o = null == r ? void 0 : r.last_read_event_id,
-                    c = null == r ? void 0 : r.sort_event_id,
-                    i = null == r ? void 0 : r.max_entry_id,
-                    l = null == r ? void 0 : r.convo_label,
+                  var n = this.props.conversation,
+                    r = null == n ? void 0 : n.conversation_id,
+                    a = null == n ? void 0 : n.notifications_disabled,
+                    o = null == n ? void 0 : n.last_read_event_id,
+                    c = null == n ? void 0 : n.sort_event_id,
+                    i = null == n ? void 0 : n.max_entry_id,
+                    l = null == n ? void 0 : n.convo_label,
                     s = e.conversation,
                     u = null == s ? void 0 : s.conversation_id,
                     d = null == s ? void 0 : s.notifications_disabled,
@@ -3046,7 +3066,7 @@
                     E = e.isActive,
                     _ = this.state.showConfirmation,
                     O = t.showConfirmation
-                  return n !== u || a !== d || o !== p || c !== f || i !== h || v !== E || _ !== O || y !== g || l !== b
+                  return r !== u || a !== d || o !== p || c !== f || i !== h || v !== E || _ !== O || y !== g || l !== b
                 },
               },
               {
@@ -3054,18 +3074,17 @@
                 value: function () {
                   var e = this,
                     t = this.props,
-                    r = t.conversation,
-                    n = t.filter,
-                    a = t.inboxType,
-                    o = t.isActive,
-                    c = t.link,
-                    i = t.perspective,
-                    l = t.position,
-                    s = t.searchQuery,
-                    u = t.unread,
-                    d = this.state.showConfirmation,
-                    p = (null == r ? void 0 : r.entries) || [],
-                    f = Object(xe.a)(p, function (e) {
+                    n = t.conversation,
+                    r = t.filter,
+                    a = t.isActive,
+                    o = t.link,
+                    c = t.perspective,
+                    i = t.position,
+                    l = t.searchQuery,
+                    s = t.unread,
+                    u = this.state.showConfirmation,
+                    d = (null == n ? void 0 : n.entries) || [],
+                    p = Object(xe.a)(d, function (e) {
                       return ![
                         Je.b.MESSAGE_DELETE,
                         Je.b.REACTION_DELETE,
@@ -3076,49 +3095,49 @@
                         Je.b.ENABLE_NOTIFICATIONS,
                       ].includes(e.type)
                     }),
-                    h = [wt.root, u && !this._isVDLEnabled && wt.unread],
-                    b = r && n && n(r),
-                    m = (null == r ? void 0 : r.type) === M.CONVERSATION_TYPE.GROUP,
-                    v = this._isVDLEnabled && m
-                  if (!r || !b) return null
-                  var g = !!r.convo_label,
-                    E = !r.trusted && !g,
-                    _ = this._isVDLEnabled ? 'xxxLarge' : 'xxLarge',
-                    O = this._renderConversationEndCell()
-                  return !r || (!s && r.isSearchResultOnly)
+                    f = [wt.root, s && !this._isVDLEnabled && wt.unread],
+                    h = n && r && r(n),
+                    b = (null == n ? void 0 : n.type) === M.CONVERSATION_TYPE.GROUP,
+                    m = this._isVDLEnabled && b
+                  if (!n || !h) return null
+                  var v = !!n.convo_label,
+                    g = !n.trusted && !v,
+                    E = this._isVDLEnabled ? 'xxxLarge' : 'xxLarge',
+                    _ = this._renderConversationEndCell()
+                  return !n || (!l && n.isSearchResultOnly)
                     ? null
                     : y.createElement(
                         y.Fragment,
                         null,
-                        d ? this._renderConfirmationSheet() : null,
+                        u ? this._renderConfirmationSheet() : null,
                         y.createElement(Qe.a, null, function (t) {
-                          var n = t.isFocused,
-                            u = t.isFocusedWithin,
-                            d = t.isHovered
+                          var r = t.isFocused,
+                            s = t.isFocusedWithin,
+                            u = t.isHovered
                           return y.createElement(
                             Ye.a,
                             {
                               accessibilityRole: 'tab',
-                              accessibilityState: { selected: o },
+                              accessibilityState: { selected: a },
                               link: {
-                                pathname: null == c ? void 0 : c.pathname,
+                                pathname: null == o ? void 0 : o.pathname,
                                 anchorless: !0,
-                                state: ht(ht({}, null == c ? void 0 : c.state), {}, { position: l }),
+                                state: ht(ht({}, null == o ? void 0 : o.state), {}, { position: i }),
                               },
                               onPress: e._handleOnClick,
-                              style: h,
+                              style: f,
                               testID: De,
                             },
                             y.createElement(
-                              Ke.a,
+                              Xe.a,
                               {
-                                avatarCell: y.createElement(K.a, {
-                                  conversation: r,
-                                  perspective: i,
-                                  withBadge: v,
+                                avatarCell: y.createElement(X.a, {
+                                  conversation: n,
+                                  perspective: c,
+                                  withBadge: m,
                                   withVDLRefresh: e._isVDLEnabled,
                                 }),
-                                avatarSize: _,
+                                avatarSize: E,
                               },
                               y.createElement(
                                 Te.a,
@@ -3126,30 +3145,28 @@
                                 y.createElement(
                                   Te.a,
                                   { style: wt.titleContainer },
-                                  y.createElement(X.b, {
-                                    conversation: r,
-                                    isSearchTitle: !!s,
-                                    perspective: i,
+                                  y.createElement(K.b, {
+                                    conversation: n,
+                                    isSearchTitle: !!l,
+                                    perspective: c,
                                     renderTimestamp: e._renderTimestamp,
-                                    withScreenName: !s,
+                                    withScreenName: !l,
                                     withVDLRefresh: e._isVDLEnabled,
                                   }),
                                   y.createElement(
                                     Te.a,
                                     { style: wt.snippet },
-                                    f && !s
-                                      ? y.createElement(Ce, { conversationType: r.type, entry: f, perspective: i })
-                                      : s
+                                    p && !l
+                                      ? y.createElement(Ce, { conversationType: n.type, entry: p, perspective: c })
+                                      : l
                                       ? e._renderSearchConversationPreview()
                                       : null,
                                   ),
-                                  g ? e._renderConversationLabel(r) : null,
-                                  E ? e._renderSocialProof(r) : null,
+                                  v ? e._renderConversationLabel(n) : null,
+                                  g ? e._renderSocialProof(n) : null,
                                 ),
-                                O ? y.createElement(Te.a, { style: wt.endCell }, O) : null,
-                                e._isPinnedInboxEnabled && a === je.c.PRIMARY
-                                  ? e._renderMenu({ isFocused: n, isFocusedWithin: u, isHovered: d })
-                                  : null,
+                                _ ? y.createElement(Te.a, { style: wt.endCell }, _) : null,
+                                e._renderConversationActions({ isFocused: r, isFocusedWithin: s, isHovered: u }),
                               ),
                             ),
                           )
@@ -3158,7 +3175,7 @@
                 },
               },
             ]),
-            r
+            n
           )
         })(y.Component)
       m()(It, 'contextType', g.a),
@@ -3170,7 +3187,7 @@
             return !0
           },
         })
-      var wt = Xe.a.create(function (e) {
+      var wt = Ke.a.create(function (e) {
           return {
             root: {
               backgroundColor: e.colors.cellBackground,
@@ -3191,9 +3208,21 @@
               marginLeft: 'calc('.concat(e.spaces.space8, ' + ').concat(e.spaces.space2, ')'),
             },
             notificationsDisabledIcon: { alignSelf: 'flex-end', color: e.colors.gray700, paddingTop: e.spaces.space4 },
-            unreadMessagePip: { backgroundColor: e.colors.blue500, marginTop: '7px' },
+            unreadMessagePip: {
+              backgroundColor: e.colors.blue500,
+              marginTop: 'calc('.concat(e.spaces.space8, ' - ').concat(e.spaces.space1, ')'),
+            },
+            vdlXButton: {
+              border: 'none',
+              marginLeft: 'calc('.concat(e.spaces.space8, ' + ').concat(e.spaces.space2, ')'),
+              marginRight: 'calc(-1 * '.concat(e.spaces.space4, ')'),
+              marginTop: 'calc(-1 * ('.concat(e.spaces.space8, ' - ').concat(e.spaces.space1, '))'),
+            },
             xButton: { alignSelf: 'center', marginRight: 'calc(-1 * '.concat(e.spaces.space4, ')') },
-            xIcon: { color: e.colors.magenta500 },
+            xIcon: {
+              height: 'calc('.concat(e.spaces.space28, ' - ').concat(e.spaces.space1, ')'),
+              width: 'calc('.concat(e.spaces.space28, ' - ').concat(e.spaces.space1, ')'),
+            },
             trashcanIcon: { color: e.colors.gray700 },
             snippet: { maxHeight: e.spaces.space40, overflow: 'hidden' },
             unread: { backgroundColor: e.colors.unreadCellBackground },
@@ -3204,13 +3233,13 @@
         }),
         Ct = Object(ke.a)(Y(It), { page: 'messages', section: 'inbox' }),
         xt =
-          (r('LJOr'),
-          r('tVqn'),
-          r('Qavd'),
-          r('JtPf'),
-          r('uFXj'),
-          r('M+/F'),
-          r('hBpG'),
+          (n('LJOr'),
+          n('tVqn'),
+          n('Qavd'),
+          n('JtPf'),
+          n('uFXj'),
+          n('M+/F'),
+          n('hBpG'),
           function (e, t) {
             return t.module.selectItems(e)
           }),
@@ -3223,8 +3252,8 @@
           })
           .adjustStateProps(function (e) {
             var t = e.fetchStatus,
-              r = e.sliceItems,
-              n = (function (e) {
+              n = e.sliceItems,
+              r = (function (e) {
                 var t
                 return (
                   (null ===
@@ -3234,7 +3263,7 @@
                     ? void 0
                     : t.groupData) || []
                 )
-              })(r),
+              })(n),
               a = (function (e) {
                 var t
                 return (
@@ -3245,41 +3274,41 @@
                     ? void 0
                     : t.peopleData) || []
                 )
-              })(r),
+              })(n),
               o = (function (e) {
-                var t, r
+                var t, n
                 return (
                   (null ===
                     (t = e.find(function (e) {
                       return e.messageData
                     })) ||
                   void 0 === t ||
-                  null === (r = t.messageData) ||
-                  void 0 === r
+                  null === (n = t.messageData) ||
+                  void 0 === n
                     ? void 0
-                    : r.conversationIds) || []
+                    : n.conversationIds) || []
                 )
-              })(r)
+              })(n)
             return {
               entryIds: (function (e) {
-                var t, r
+                var t, n
                 return (
                   (null ===
                     (t = e.find(function (e) {
                       return e.messageData
                     })) ||
                   void 0 === t ||
-                  null === (r = t.messageData) ||
-                  void 0 === r
+                  null === (n = t.messageData) ||
+                  void 0 === n
                     ? void 0
-                    : r.entryIds) || []
+                    : n.entryIds) || []
                 )
-              })(r),
+              })(n),
               fetchStatus: t,
-              groupConversationIds: n,
+              groupConversationIds: r,
               messageConversationIds: o,
               peopleSearchConversationIds: a,
-              sliceItems: r,
+              sliceItems: n,
             }
           })
           .propsFromActions(function (e) {
@@ -3293,7 +3322,7 @@
           }),
         jt = x.a.b08821f3,
         Dt = x.a.e047b8fa,
-        Mt = Xe.a.create(function (e) {
+        Mt = Ke.a.create(function (e) {
           return {
             root: {
               backgroundColor: e.colors.cellBackground,
@@ -3319,8 +3348,8 @@
         }),
         Tt = function (e) {
           var t = Object(ke.b)(),
-            r = e.clearRecentSearches,
-            n = e.headerText,
+            n = e.clearRecentSearches,
+            r = e.headerText,
             a = e.icon,
             o = e.isInboxLabelHeader,
             c = e.withClearButton
@@ -3339,23 +3368,23 @@
               Te.a,
               { style: Mt.iconContainer },
               (i = a) ? y.createElement(i, { style: Mt.icon }) : null,
-              y.createElement(I.b, { size: 'headline1', weight: 'heavy' }, n),
+              y.createElement(I.b, { size: 'headline1', weight: 'heavy' }, r),
             ),
             c
               ? y.createElement(
                   We.a,
-                  { accessibilityLabel: jt, onPress: r, style: Mt.backButton, type: 'onMediaWhiteFilled' },
+                  { accessibilityLabel: jt, onPress: n, style: Mt.backButton, type: 'onMediaWhiteFilled' },
                   Dt,
                 )
               : null,
           )
         },
-        kt = r('MDbM'),
-        Lt = r('v//M'),
-        Ht = r('0yYu'),
-        At = r('lBmi'),
-        Bt = r('6ZHn')
-      function Nt(e) {
+        kt = n('MDbM'),
+        Lt = n('v//M'),
+        Ht = n('0yYu'),
+        At = n('lBmi'),
+        Bt = n('6ZHn')
+      function Ft(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -3367,25 +3396,25 @@
           }
         })()
         return function () {
-          var r,
-            n = h()(e)
+          var n,
+            r = h()(e)
           if (t) {
             var a = h()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return p()(this, r)
+            n = Reflect.construct(r, arguments, a)
+          } else n = r.apply(this, arguments)
+          return p()(this, n)
         }
       }
-      var Ft = x.a.g2fd3205,
+      var Nt = x.a.g2fd3205,
         Ut = x.a.c94ac69d,
         Vt = x.a.ffd9cfe6,
         Gt = (function (e) {
-          u()(r, e)
-          var t = Nt(r)
-          function r() {
+          u()(n, e)
+          var t = Ft(n)
+          function n() {
             var e
-            a()(this, r)
-            for (var n = arguments.length, o = new Array(n), c = 0; c < n; c++) o[c] = arguments[c]
+            a()(this, n)
+            for (var r = arguments.length, o = new Array(r), c = 0; c < r; c++) o[c] = arguments[c]
             return (
               (e = t.call.apply(t, [this].concat(o))),
               m()(
@@ -3400,68 +3429,68 @@
               ),
               m()(l()(e), '_renderSearchResults', function () {
                 var t = e.props,
-                  r = t.groupConversationIds,
-                  n = t.peopleSearchConversationIds,
+                  n = t.groupConversationIds,
+                  r = t.peopleSearchConversationIds,
                   a = t.renderEmptyState,
-                  o = n.length && r.length,
-                  c = e._groupBucketSize < r.length,
-                  i = e._peopleBucketSize < n.length
-                return (null == r ? void 0 : r.length) || n.length
+                  o = r.length && n.length,
+                  c = e._groupBucketSize < n.length,
+                  i = e._peopleBucketSize < r.length
+                return (null == n ? void 0 : n.length) || r.length
                   ? y.createElement(
                       y.Fragment,
                       null,
-                      n.length ? e._renderPeopleSection() : null,
+                      r.length ? e._renderPeopleSection() : null,
                       o && !i ? y.createElement(Ht.a, null) : null,
                       i ? e._renderDMSearchFooter('People') : null,
-                      r.length ? e._renderGroupsSection() : null,
+                      n.length ? e._renderGroupsSection() : null,
                       c ? e._renderDMSearchFooter('Groups') : null,
                     )
                   : a()
               }),
               m()(l()(e), '_handleFetch', function () {
                 var t = e.props,
-                  r = t.createLocalApiErrorHandler
-                ;(0, t.fetchSearchIfNeeded)().catch(r())
+                  n = t.createLocalApiErrorHandler
+                ;(0, t.fetchSearchIfNeeded)().catch(n())
               }),
               m()(l()(e), '_renderDMSearchFooter', function (t) {
-                var r = e.props.location
+                var n = e.props.location
                 return y.createElement(
                   Te.a,
                   { style: zt.header },
-                  y.createElement(I.b, { link: { pathname: r.pathname, state: { tab: t } } }, Vt),
+                  y.createElement(I.b, { link: { pathname: n.pathname, state: { tab: t } } }, Vt),
                 )
               }),
               m()(l()(e), '_renderDMHeader', function (e) {
                 var t = e.headerText,
-                  r = e.icon
-                return y.createElement(Tt, { headerText: t, icon: r })
+                  n = e.icon
+                return y.createElement(Tt, { headerText: t, icon: n })
               }),
               m()(l()(e), '_renderGroupsSection', function () {
                 var t = e.props,
-                  r = t.groupConversationIds,
-                  n = t.renderInboxItem
+                  n = t.groupConversationIds,
+                  r = t.renderInboxItem
                 return y.createElement(
                   y.Fragment,
                   null,
                   e._renderDMHeader({ icon: At.a, headerText: Ut }),
-                  r
+                  n
                     .map(function (e) {
-                      return e ? n(r)(e) : null
+                      return e ? r(n)(e) : null
                     })
                     .slice(0, e._groupBucketSize),
                 )
               }),
               m()(l()(e), '_renderPeopleSection', function () {
                 var t = e.props,
-                  r = t.peopleSearchConversationIds,
-                  n = t.renderInboxItem
+                  n = t.peopleSearchConversationIds,
+                  r = t.renderInboxItem
                 return y.createElement(
                   y.Fragment,
                   null,
-                  e._renderDMHeader({ icon: Bt.a, headerText: Ft }),
-                  r
+                  e._renderDMHeader({ icon: Bt.a, headerText: Nt }),
+                  n
                     .map(function (e) {
-                      return e ? n(r)(e) : null
+                      return e ? r(n)(e) : null
                     })
                     .slice(0, e._peopleBucketSize),
                 )
@@ -3470,14 +3499,14 @@
             )
           }
           return (
-            c()(r, [
+            c()(n, [
               {
                 key: 'componentDidUpdate',
                 value: function (e) {
                   var t = this.props,
-                    r = t.fetchStatus,
-                    n = t.module
-                  e.module !== n && r !== kt.a.FAILED && this._handleFetch()
+                    n = t.fetchStatus,
+                    r = t.module
+                  e.module !== r && n !== kt.a.FAILED && this._handleFetch()
                 },
               },
               {
@@ -3491,9 +3520,9 @@
                 value: function () {
                   var e = this.props,
                     t = e.fetchStatus,
-                    r = e.loadingLabel
+                    n = e.loadingLabel
                   return y.createElement(Lt.a, {
-                    accessibilityLabel: r,
+                    accessibilityLabel: n,
                     fetchStatus: t,
                     onRequestRetry: this._handleFetch,
                     render: this._renderSearchResults,
@@ -3501,11 +3530,11 @@
                 },
               },
             ]),
-            r
+            n
           )
         })(y.Component)
       m()(Gt, 'contextType', g.a)
-      var zt = Xe.a.create(function (e) {
+      var zt = Ke.a.create(function (e) {
           return {
             header: {
               backgroundColor: e.colors.cellBackground,
@@ -3524,73 +3553,73 @@
           }
         }),
         Wt = Rt(Gt),
-        qt = r('wAC9'),
-        Qt = (r('1IsZ'), r('IAdD'), r('xPna'))
+        qt = n('wAC9'),
+        Qt = (n('1IsZ'), n('IAdD'), n('xPna'))
       function Yt(e, t) {
-        var r = Object.keys(e)
+        var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
+          var r = Object.getOwnPropertySymbols(e)
           t &&
-            (n = n.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            r.push.apply(r, n)
+            n.push.apply(n, r)
         }
-        return r
+        return n
       }
-      function Kt(e) {
+      function Xt(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
+          var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Yt(Object(r), !0).forEach(function (t) {
-                m()(e, t, r[t])
+            ? Yt(Object(n), !0).forEach(function (t) {
+                m()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : Yt(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : Yt(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var Xt = function (e) {
+      var Kt = function (e) {
         var t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1],
-          r = {},
-          n = {}
+          n = {},
+          r = {}
         return (
           null != e &&
             e.conversations &&
             (Object.values(e.conversations).forEach(function (e) {
-              e && e.users && Object.assign(r, e.users), t && (e.isSearchResult = !0)
+              e && e.users && Object.assign(n, e.users), t && (e.isSearchResult = !0)
             }),
-            (n = { conversations: null == e ? void 0 : e.conversations, users: r })),
-          null != e && e.entries && (n = Kt(Kt({}, n), {}, { entries: null == e ? void 0 : e.entries })),
-          Object(Qt.a)(n)
+            (r = { conversations: null == e ? void 0 : e.conversations, users: n })),
+          null != e && e.entries && (r = Xt(Xt({}, r), {}, { entries: null == e ? void 0 : e.entries })),
+          Object(Qt.a)(r)
         )
       }
       function $t(e, t) {
-        var r = Object.keys(e)
+        var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
+          var r = Object.getOwnPropertySymbols(e)
           t &&
-            (n = n.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            r.push.apply(r, n)
+            n.push.apply(n, r)
         }
-        return r
+        return n
       }
       function Zt(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
+          var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? $t(Object(r), !0).forEach(function (t) {
-                m()(e, t, r[t])
+            ? $t(Object(n), !0).forEach(function (t) {
+                m()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : $t(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : $t(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
@@ -3605,66 +3634,66 @@
             getEndpointParams: function (t) {
               return Zt(Zt({}, t), {}, { query: e })
             },
-            mapEntitiesToActions: Xt,
+            mapEntitiesToActions: Kt,
           })
         },
-        er = function (e, t) {
+        en = function (e, t) {
           return t.query
         },
-        tr = Object(_.a)().propsFromState(function () {
+        tn = Object(_.a)().propsFromState(function () {
           return {
-            sliceModule: Object(U.createSelector)(er, function (e) {
+            sliceModule: Object(U.createSelector)(en, function (e) {
               return e ? Jt(e) : void 0
             }),
           }
         })(function (e) {
           var t = e.loadingLabel,
-            r = e.location,
-            n = e.query,
+            n = e.location,
+            r = e.query,
             a = e.renderEmptyState,
             o = e.renderInboxItem,
             c = e.sliceModule
           return c
             ? y.createElement(Wt, {
                 loadingLabel: t,
-                location: r,
+                location: n,
                 module: c,
-                query: n,
+                query: r,
                 renderEmptyState: a,
                 renderInboxItem: o,
               })
             : a()
         }),
-        rr = M.selectRecentSearches,
-        nr = function (e, t) {
+        nn = M.selectRecentSearches,
+        rn = function (e, t) {
           return t.query ? M.selectSearchConversations(e, t.query) : []
         },
-        ar = function (e, t) {
+        an = function (e, t) {
           return t.query ? M.selectSearchFetchStatus(e, t.query) : T.a.LOADED
         },
-        or = function (e, t) {
+        on = function (e, t) {
           return t.conversationIds || []
         },
-        cr = function (e, t) {
+        cn = function (e, t) {
           return null != e && e.length
             ? t.filter(function (t) {
                 return e.indexOf(t) > -1
               })
             : e
         },
-        ir = Object(_.a)()
+        ln = Object(_.a)()
           .propsFromState(function () {
-            return { conversationIds: or, recentSearches: rr, searchFetchStatus: ar, searchConversationIds: nr }
+            return { conversationIds: on, recentSearches: nn, searchFetchStatus: an, searchConversationIds: rn }
           })
           .adjustStateProps(function (e) {
             var t = e.conversationIds,
-              r = e.recentSearches,
-              n = e.searchConversationIds
+              n = e.recentSearches,
+              r = e.searchConversationIds
             return {
               conversationIds: t,
-              recentSearches: r,
+              recentSearches: n,
               searchFetchStatus: e.searchFetchStatus,
-              searchConversationIds: cr(n, t),
+              searchConversationIds: cn(r, t),
             }
           })
           .propsFromActions(function () {
@@ -3678,12 +3707,12 @@
               clearRecentSearches: M.clearRecentSearches,
             }
           }),
-        lr = r('VY6S'),
-        sr = r('s14A'),
-        ur = r('j7Bv'),
-        dr = r('VwDm'),
-        pr = r('hOZg')
-      function fr(e) {
+        sn = n('VY6S'),
+        un = n('s14A'),
+        dn = n('j7Bv'),
+        pn = n('VwDm'),
+        fn = n('hOZg')
+      function hn(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -3695,50 +3724,50 @@
           }
         })()
         return function () {
-          var r,
-            n = h()(e)
+          var n,
+            r = h()(e)
           if (t) {
             var a = h()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return p()(this, r)
+            n = Reflect.construct(r, arguments, a)
+          } else n = r.apply(this, arguments)
+          return p()(this, n)
         }
       }
-      var hr = x.a.dbd5d40f,
-        br = (function (e) {
-          u()(r, e)
-          var t = fr(r)
-          function r() {
-            return a()(this, r), t.apply(this, arguments)
+      var bn = x.a.dbd5d40f,
+        mn = (function (e) {
+          u()(n, e)
+          var t = hn(n)
+          function n() {
+            return a()(this, n), t.apply(this, arguments)
           }
           return (
-            c()(r, [
+            c()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.clearRecentSearch,
-                    r = e.handleRecentSearchClick,
-                    n = e.recentSearch,
-                    a = y.createElement(ur.a, { Icon: dr.a, color: 'neutral', size: 'xLarge', style: mr.searchIcon }),
-                    o = [mr.listItemView, mr.bottomBorder]
+                    n = e.handleRecentSearchClick,
+                    r = e.recentSearch,
+                    a = y.createElement(dn.a, { Icon: pn.a, color: 'neutral', size: 'xLarge', style: yn.searchIcon }),
+                    o = [yn.listItemView, yn.bottomBorder]
                   return y.createElement(
                     Ye.a,
-                    { onPress: r, style: o },
+                    { onPress: n, style: o },
                     y.createElement(
                       Te.a,
                       null,
                       y.createElement(
-                        Ke.a,
-                        { avatarCell: a, avatarSize: 'xLarge', cellStyle: mr.avatarColumn },
+                        Xe.a,
+                        { avatarCell: a, avatarSize: 'xLarge', cellStyle: yn.avatarColumn },
                         y.createElement(
                           Te.a,
-                          { style: mr.container },
-                          y.createElement(I.b, { numberOfLines: 1 }, n),
+                          { style: yn.container },
+                          y.createElement(I.b, { numberOfLines: 1 }, r),
                           y.createElement(We.a, {
-                            accessibilityLabel: hr,
+                            accessibilityLabel: bn,
                             borderColor: 'transparent',
-                            icon: y.createElement(pr.a, null),
+                            icon: y.createElement(fn.a, null),
                             onPress: t,
                             type: 'brandText',
                           }),
@@ -3749,10 +3778,10 @@
                 },
               },
             ]),
-            r
+            n
           )
         })(y.PureComponent),
-        mr = Xe.a.create(function (e) {
+        yn = Ke.a.create(function (e) {
           return {
             container: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
             searchIcon: { marginRight: e.spaces.space12, padding: e.spaces.space4 },
@@ -3770,35 +3799,35 @@
             },
           }
         }),
-        yr = br
-      function vr(e, t) {
-        var r = Object.keys(e)
+        vn = mn
+      function gn(e, t) {
+        var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
+          var r = Object.getOwnPropertySymbols(e)
           t &&
-            (n = n.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            r.push.apply(r, n)
+            n.push.apply(n, r)
         }
-        return r
+        return n
       }
-      function gr(e) {
+      function En(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
+          var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? vr(Object(r), !0).forEach(function (t) {
-                m()(e, t, r[t])
+            ? gn(Object(n), !0).forEach(function (t) {
+                m()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : vr(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : gn(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var Er = function (e) {
+      var _n = function (e) {
         return Object(qt.a)({
           contextSuffix: 'DM_GROUP_SEARCH_SLICE',
           getFetchApiEndpoint: function (e) {
@@ -3806,39 +3835,39 @@
           },
           sliceKey: ''.concat(Ze.e, '-groups-').concat(e),
           getEndpointParams: function (t) {
-            return gr(gr({}, t), {}, { query: e })
+            return En(En({}, t), {}, { query: e })
           },
-          mapEntitiesToActions: Xt,
+          mapEntitiesToActions: Kt,
         })
       }
-      function _r(e, t) {
-        var r = Object.keys(e)
+      function On(e, t) {
+        var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
+          var r = Object.getOwnPropertySymbols(e)
           t &&
-            (n = n.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            r.push.apply(r, n)
+            n.push.apply(n, r)
         }
-        return r
+        return n
       }
-      function Or(e) {
+      function Sn(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
+          var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? _r(Object(r), !0).forEach(function (t) {
-                m()(e, t, r[t])
+            ? On(Object(n), !0).forEach(function (t) {
+                m()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : _r(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : On(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var Sr = function (e) {
+      var In = function (e) {
           return Object(qt.a)({
             contextSuffix: 'DM_PEOPLE_SEARCH_SLICE',
             getFetchApiEndpoint: function (e) {
@@ -3846,112 +3875,112 @@
             },
             sliceKey: ''.concat(Ze.e, '-people-').concat(e),
             getEndpointParams: function (t) {
-              return Or(Or({}, t), {}, { query: e })
+              return Sn(Sn({}, t), {}, { query: e })
             },
-            mapEntitiesToActions: Xt,
+            mapEntitiesToActions: Kt,
           })
         },
-        Ir = function (e, t) {
+        wn = function (e, t) {
           return t.query
         },
-        wr = function (e, t) {
+        Cn = function (e, t) {
           return t.tabType
         },
-        Cr = Object(_.a)().propsFromState(function () {
+        xn = Object(_.a)().propsFromState(function () {
           return {
-            sliceModule: Object(U.createSelector)(wr, Ir, function (e, t) {
-              var r = t && e === Ze.f.PEOPLE
-              return t && e === Ze.f.GROUPS ? Er(t) : r ? Sr(t) : void 0
+            sliceModule: Object(U.createSelector)(Cn, wn, function (e, t) {
+              var n = t && e === Ze.f.PEOPLE
+              return t && e === Ze.f.GROUPS ? _n(t) : n ? In(t) : void 0
             }),
           }
         }),
-        xr = r('FS1z'),
-        Pr = Cr(function (e) {
+        Pn = n('FS1z'),
+        Rn = xn(function (e) {
           var t = e.footer,
-            r = e.onScrollEnd,
-            n = e.renderEmptyState,
+            n = e.onScrollEnd,
+            r = e.renderEmptyState,
             a = e.renderInboxItem,
             o = e.sliceModule
           return o
-            ? y.createElement(xr.a, {
+            ? y.createElement(Pn.a, {
                 footer: t,
                 module: o,
-                noItemsRenderer: n,
-                onScrollEnd: r,
+                noItemsRenderer: r,
+                onScrollEnd: n,
                 renderer: a([]),
                 withoutHeadroom: !0,
               })
-            : n()
+            : r()
         }),
-        Rr = r('VPAj')
-      function jr(e, t) {
-        var r = Object.keys(e)
+        jn = n('VPAj')
+      function Dn(e, t) {
+        var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
+          var r = Object.getOwnPropertySymbols(e)
           t &&
-            (n = n.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            r.push.apply(r, n)
+            n.push.apply(n, r)
         }
-        return r
+        return n
       }
-      function Dr(e) {
+      function Mn(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
+          var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? jr(Object(r), !0).forEach(function (t) {
-                m()(e, t, r[t])
+            ? Dn(Object(n), !0).forEach(function (t) {
+                m()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : jr(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : Dn(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var Mr = Dr(
-          Dr({}, r('7n04').a),
+      var Tn = Mn(
+          Mn({}, n('7n04').a),
           {},
-          { initialScrollHeadroom: Object(Rr.a)(0), scrollHeadroom: Object(Rr.a)(0), pinToNewestWhenAtNewest: !0 },
+          { initialScrollHeadroom: Object(jn.a)(0), scrollHeadroom: Object(jn.a)(0), pinToNewestWhenAtNewest: !0 },
         ),
-        Tr = r('TEoO'),
-        kr = r('IG4P'),
-        Lr = r('RJrc'),
-        Hr = r('TnY3'),
-        Ar = r('FIs5'),
-        Br = r('6OUF'),
-        Nr = r('k/OQ'),
-        Fr = r('95Se')
-      function Ur(e, t) {
-        var r = Object.keys(e)
+        kn = n('TEoO'),
+        Ln = n('IG4P'),
+        Hn = n('RJrc'),
+        An = n('TnY3'),
+        Bn = n('FIs5'),
+        Fn = n('6OUF'),
+        Nn = n('k/OQ'),
+        Un = n('95Se')
+      function Vn(e, t) {
+        var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
+          var r = Object.getOwnPropertySymbols(e)
           t &&
-            (n = n.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            r.push.apply(r, n)
+            n.push.apply(n, r)
         }
-        return r
+        return n
       }
-      function Vr(e) {
+      function Gn(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
+          var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Ur(Object(r), !0).forEach(function (t) {
-                m()(e, t, r[t])
+            ? Vn(Object(n), !0).forEach(function (t) {
+                m()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : Ur(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : Vn(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      function Gr(e) {
+      function zn(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -3963,39 +3992,39 @@
           }
         })()
         return function () {
-          var r,
-            n = h()(e)
+          var n,
+            r = h()(e)
           if (t) {
             var a = h()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return p()(this, r)
+            n = Reflect.construct(r, arguments, a)
+          } else n = r.apply(this, arguments)
+          return p()(this, n)
         }
       }
-      var zr = 'dmSearchInbox',
-        Wr = function (e) {
+      var Wn = 'dmSearchInbox',
+        qn = function (e) {
           return e
         },
-        qr = x.a.b08821f3,
-        Qr = x.a.a66ac766,
-        Yr = x.a.fe61929d,
-        Kr = x.a.b9dae4f4,
-        Xr = x.a.e7fb2027,
-        $r = x.a.b92a21d8,
-        Zr = x.a.jdc67c42,
-        Jr = x.a.f08940ab,
-        en = x.a.gaae1fd5,
-        tn = x.a.f8321d82,
-        rn = x.a.g2fd3205,
-        nn = x.a.c94ac69d,
-        an = x.a.fb3c8e74,
-        on = (function (e) {
-          u()(r, e)
-          var t = Gr(r)
-          function r() {
+        Qn = x.a.b08821f3,
+        Yn = x.a.a66ac766,
+        Xn = x.a.fe61929d,
+        Kn = x.a.b9dae4f4,
+        $n = x.a.e7fb2027,
+        Zn = x.a.b92a21d8,
+        Jn = x.a.jdc67c42,
+        er = x.a.f08940ab,
+        tr = x.a.gaae1fd5,
+        nr = x.a.f8321d82,
+        rr = x.a.g2fd3205,
+        ar = x.a.c94ac69d,
+        or = x.a.fb3c8e74,
+        cr = (function (e) {
+          u()(n, e)
+          var t = zn(n)
+          function n() {
             var e
-            a()(this, r)
-            for (var n = arguments.length, o = new Array(n), c = 0; c < n; c++) o[c] = arguments[c]
+            a()(this, n)
+            for (var r = arguments.length, o = new Array(r), c = 0; c < r; c++) o[c] = arguments[c]
             return (
               (e = t.call.apply(t, [this].concat(o))),
               m()(l()(e), 'state', { debouncedQuery: '', isLoadingMore: !1, isRefreshing: !1 }),
@@ -4009,43 +4038,43 @@
               }),
               m()(l()(e), '_renderEmptyDMSearchInbox', function () {
                 var t = e.props,
-                  r = t.analytics,
-                  n = t.query,
+                  n = t.analytics,
+                  r = t.query,
                   a = e.state.debouncedQuery
-                return a && n
-                  ? (r.scribe({ component: 'search', element: 'results', action: 'empty' }),
-                    y.createElement(Ar.a, {
+                return a && r
+                  ? (n.scribe({ component: 'search', element: 'results', action: 'empty' }),
+                    y.createElement(Bn.a, {
                       buttonLink: '/messages/compose',
-                      buttonText: Jr,
-                      header: $r({ query: a }),
-                      message: Zr,
+                      buttonText: er,
+                      header: Zn({ query: a }),
+                      message: Jn,
                       onButtonPress: e._handleComposeButtonPress,
                     }))
                   : y.createElement(
                       Te.a,
-                      { style: cn.emptyState },
-                      y.createElement(I.b, { align: 'center', color: 'gray700' }, en),
+                      { style: ir.emptyState },
+                      y.createElement(I.b, { align: 'center', color: 'gray700' }, tr),
                     )
               }),
               m()(l()(e), '_renderRecentSearches', function () {
                 var t = e.props,
-                  r = t.analytics,
-                  n = t.query,
+                  n = t.analytics,
+                  r = t.query,
                   a = t.recentSearches
-                return a.length && !n
+                return a.length && !r
                   ? y.createElement(
                       y.Fragment,
                       null,
                       y.createElement(Tt, {
-                        analytics: r,
+                        analytics: n,
                         clearRecentSearches: e._clearRecentSearches,
-                        headerText: an,
+                        headerText: or,
                         withClearButton: !0,
                       }),
                       a.map(function (t) {
-                        return y.createElement(yr, {
-                          clearRecentSearch: function (r) {
-                            return e._handleClearRecentSearch(r, t)
+                        return y.createElement(vn, {
+                          clearRecentSearch: function (n) {
+                            return e._handleClearRecentSearch(n, t)
                           },
                           handleRecentSearchClick: function () {
                             return e._handleRecentSearchClick(t)
@@ -4059,65 +4088,65 @@
               }),
               m()(l()(e), '_renderAllDMSearchResultsTab', function () {
                 var t = e.props,
-                  r = t.location,
-                  n = t.renderInboxItem,
+                  n = t.location,
+                  r = t.renderInboxItem,
                   a = e.state.debouncedQuery
                 return a
-                  ? y.createElement(tr, {
-                      loadingLabel: Qr,
-                      location: r,
+                  ? y.createElement(tn, {
+                      loadingLabel: Yn,
+                      location: n,
                       query: a,
                       renderEmptyState: e._renderEmptyDMSearchInbox,
-                      renderInboxItem: n,
+                      renderInboxItem: r,
                     })
                   : e._renderEmptyDMSearchInbox()
               }),
               m()(l()(e), '_renderConversationsTab', function (t) {
-                var r = e.props.renderInboxItem,
-                  n = e.state.debouncedQuery
-                return y.createElement(Pr, {
+                var n = e.props.renderInboxItem,
+                  r = e.state.debouncedQuery
+                return y.createElement(Rn, {
                   footer: e._renderFooter(),
                   onScrollEnd: e._handleScrollEnd,
-                  query: n,
+                  query: r,
                   renderEmptyState: e._renderEmptyDMSearchInbox,
-                  renderInboxItem: r,
+                  renderInboxItem: n,
                   tabType: t ? Ze.f.GROUPS : Ze.f.PEOPLE,
                 })
               }),
               m()(l()(e), '_renderTabContent', function () {
                 var t = e.props.location,
-                  r = ((null == t ? void 0 : t.state) || {}).tab
-                return r === rn
+                  n = ((null == t ? void 0 : t.state) || {}).tab
+                return n === rr
                   ? e._renderConversationsTab(!1)
-                  : r === nn
+                  : n === ar
                   ? e._renderConversationsTab(!0)
                   : e._renderAllDMSearchResultsTab()
               }),
               m()(l()(e), '_renderSearchResults', function () {
                 var t = e.props,
-                  r = t.accessibilityTitle,
-                  n = t.renderInboxItem,
+                  n = t.accessibilityTitle,
+                  r = t.renderInboxItem,
                   a = t.searchConversationIds,
                   o = e.state.isRefreshing
                 return y.createElement(
-                  sr.a,
+                  un.a,
                   null,
                   y.createElement(
-                    kr.a,
+                    Ln.a,
                     { isRefreshing: o, onRefresh: e._handlePullToRefresh },
-                    y.createElement(Tr.a, {
+                    y.createElement(kn.a, {
                       accessibilityRole: 'tablist',
-                      accessibilityTitle: r,
-                      anchoring: Mr,
+                      accessibilityTitle: n,
+                      anchoring: Tn,
                       assumedItemHeight: 100,
-                      cacheKey: zr,
+                      cacheKey: Wn,
                       footer: e._renderFooter(),
-                      identityFunction: Wr,
+                      identityFunction: qn,
                       items: a,
                       noItemsRenderer: e._renderRecentSearches,
                       onNearEnd: e._handleNearEnd,
                       onScrollEnd: e._handleScrollEnd,
-                      renderer: n(a),
+                      renderer: r(a),
                       withoutHeadroom: !0,
                     }),
                   ),
@@ -4125,11 +4154,11 @@
               }),
               m()(l()(e), '_renderFooter', function () {
                 return e.state.isLoadingMore
-                  ? y.createElement(Lr.a, null)
+                  ? y.createElement(Hn.a, null)
                   : y.createElement(
                       Te.a,
-                      { style: cn.footerContainer },
-                      y.createElement(I.b, { align: 'center', size: 'body', weight: 'bold' }, Xr),
+                      { style: ir.footerContainer },
+                      y.createElement(I.b, { align: 'center', size: 'body', weight: 'bold' }, $n),
                       y.createElement(
                         Qe.a,
                         { interactiveStyles: null },
@@ -4142,94 +4171,94 @@
                             size: 'subtext2',
                             withInteractiveStyling: !0,
                           },
-                          Kr,
+                          Kn,
                         ),
                       ),
                     )
               }),
               m()(l()(e), '_clearRecentSearches', function () {
                 var t = e.props,
-                  r = t.analytics,
-                  n = t.clearRecentSearches
-                r.scribe({ component: 'recent_search', action: 'clear' }), n()
+                  n = t.analytics,
+                  r = t.clearRecentSearches
+                n.scribe({ component: 'recent_search', action: 'clear' }), r()
               }),
               m()(l()(e), '_handleComposeButtonPress', function () {
                 e.props.analytics.scribe({ component: 'search', element: 'empty_results', action: 'compose' })
               }),
               m()(l()(e), '_handleFooterClick', function () {
-                var t, r, n
+                var t, n, r
                 e._textInputRef && e._textInputRef.focus(),
                   null === (t = e._textInputRef) ||
                     void 0 === t ||
-                    null === (r = t.textInput) ||
-                    void 0 === r ||
-                    null === (n = r.textInputNode) ||
+                    null === (n = t.textInput) ||
                     void 0 === n ||
-                    n.select()
+                    null === (r = n.textInputNode) ||
+                    void 0 === r ||
+                    r.select()
               }),
               m()(l()(e), '_handleRefetchSearch', function () {
                 var t = e.props,
-                  r = t.analytics,
-                  n = t.createLocalApiErrorHandler,
+                  n = t.analytics,
+                  r = t.createLocalApiErrorHandler,
                   a = t.search,
                   o = e.state.debouncedQuery
                 a &&
                   o &&
-                  (r.scribe({ component: 'search', element: 'retry', action: 'click' }),
-                  a({ query: o.toLowerCase(), preserveResults: !1, fetchNextPage: !1 }).catch(n()))
+                  (n.scribe({ component: 'search', element: 'retry', action: 'click' }),
+                  a({ query: o.toLowerCase(), preserveResults: !1, fetchNextPage: !1 }).catch(r()))
               }),
               m()(l()(e), '_handlePullToRefresh', function () {
                 var t = e.props,
-                  r = t.createLocalApiErrorHandler,
-                  n = t.search,
+                  n = t.createLocalApiErrorHandler,
+                  r = t.search,
                   a = e.state.debouncedQuery
                 e.setState({ isRefreshing: !0 }),
-                  n &&
+                  r &&
                     a &&
-                    n({ query: a.toLowerCase(), preserveResults: !0, fetchNextPage: !1 })
+                    r({ query: a.toLowerCase(), preserveResults: !0, fetchNextPage: !1 })
                       .then(function () {
                         return e.setState({ isRefreshing: !1 })
                       })
                       .catch(function (t) {
-                        return e.setState({ isRefreshing: !1 }), r()(t)
+                        return e.setState({ isRefreshing: !1 }), n()(t)
                       })
               }),
               m()(l()(e), '_handleSearchChangeInner', function (t) {
-                var r = e.props,
-                  n = r.createLocalApiErrorHandler,
-                  a = r.onQueryChange,
-                  o = r.search
+                var n = e.props,
+                  r = n.createLocalApiErrorHandler,
+                  a = n.onQueryChange,
+                  o = n.search
                 a(t),
                   e.setState({ debouncedQuery: t }),
                   o &&
                     t &&
                     !e._modularSearchEnabled &&
-                    o({ query: t, preserveResults: !1, fetchNextPage: !1 }).catch(n())
+                    o({ query: t, preserveResults: !1, fetchNextPage: !1 }).catch(r())
               }),
-              m()(l()(e), '_handleSearchChangeDebounced', Object(lr.a)(e._handleSearchChangeInner, 200)),
+              m()(l()(e), '_handleSearchChangeDebounced', Object(sn.a)(e._handleSearchChangeInner, 200)),
               m()(l()(e), '_handleSearchChange', function (t) {
-                var r = t.currentTarget.value,
-                  n = e.props.onQueryChange
-                ;((r && r.trim()) || !r) && (n(r), e._handleSearchChangeDebounced(r))
+                var n = t.currentTarget.value,
+                  r = e.props.onQueryChange
+                ;((n && n.trim()) || !n) && (r(n), e._handleSearchChangeDebounced(n))
               }),
               m()(l()(e), '_handleNearEnd', function () {
                 var t = e.props,
-                  r = t.analytics,
-                  n = t.search,
+                  n = t.analytics,
+                  r = t.search,
                   a = e.state.debouncedQuery
                 e.setState({ isLoadingMore: !0 }),
                   a &&
-                    (r.scribe({ component: 'search', element: 'results', action: 'get_older' }),
-                    n({ query: a, preserveResults: !1, fetchNextPage: !0 }).finally(function () {
+                    (n.scribe({ component: 'search', element: 'results', action: 'get_older' }),
+                    r({ query: a, preserveResults: !1, fetchNextPage: !0 }).finally(function () {
                       return e.setState({ isLoadingMore: !1 })
                     }))
               }),
               m()(l()(e), '_handleScrollEnd', function () {
                 var t = e.props,
-                  r = t.addRecentSearch,
-                  n = t.analytics,
+                  n = t.addRecentSearch,
+                  r = t.analytics,
                   a = t.query
-                e.state.debouncedQuery && a && (r(a), n.scribe({ component: 'recent_search', action: 'add' }))
+                e.state.debouncedQuery && a && (n(a), r.scribe({ component: 'recent_search', action: 'add' }))
               }),
               m()(l()(e), '_handleSearchClear', function () {
                 return e._handleSearchChangeInner('')
@@ -4238,33 +4267,33 @@
                 ;(0, e.props.hideRecentSearches)()
               }),
               m()(l()(e), '_handleAddRecentSearch', function (t) {
-                var r = t.currentTarget.value,
-                  n = e.props,
-                  a = n.addRecentSearch,
-                  o = n.analytics
-                r &&
-                  (a(r),
+                var n = t.currentTarget.value,
+                  r = e.props,
+                  a = r.addRecentSearch,
+                  o = r.analytics
+                n &&
+                  (a(n),
                   o.scribe({ component: 'recent_search', action: 'add' }),
                   e._textInputRef && e._textInputRef.blur())
               }),
               m()(l()(e), '_handleRecentSearchClick', function (t) {
-                var r = e.props,
-                  n = r.analytics
-                ;(0, r.onQueryChange)(t),
-                  n.scribe({ component: 'recent_search', action: 'click' }),
+                var n = e.props,
+                  r = n.analytics
+                ;(0, n.onQueryChange)(t),
+                  r.scribe({ component: 'recent_search', action: 'click' }),
                   e._handleSearchChangeInner(t)
               }),
-              m()(l()(e), '_handleClearRecentSearch', function (t, r) {
-                var n = e.props,
-                  a = n.analytics,
-                  o = n.clearRecentSearch
-                t.stopPropagation(), t.preventDefault(), a.scribe({ component: 'recent_search', action: 'clear' }), o(r)
+              m()(l()(e), '_handleClearRecentSearch', function (t, n) {
+                var r = e.props,
+                  a = r.analytics,
+                  o = r.clearRecentSearch
+                t.stopPropagation(), t.preventDefault(), a.scribe({ component: 'recent_search', action: 'clear' }), o(n)
               }),
               e
             )
           }
           return (
-            c()(r, [
+            c()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -4275,10 +4304,10 @@
                 key: 'componentDidUpdate',
                 value: function (e) {
                   var t = this.props,
-                    r = t.analytics,
-                    n = t.query,
+                    n = t.analytics,
+                    r = t.query,
                     a = t.recentSearches
-                  e.query || !n || a.includes(n) || r.scribe({ component: 'search', action: 'began_typing' })
+                  e.query || !r || a.includes(r) || n.scribe({ component: 'search', action: 'began_typing' })
                 },
               },
               {
@@ -4286,23 +4315,23 @@
                 value: function () {
                   var e = this.props,
                     t = e.location,
-                    r = e.query,
-                    n = e.searchFetchStatus,
+                    n = e.query,
+                    r = e.searchFetchStatus,
                     a = !(
                       (this.context.featureSwitches.isTrue('dm_vdl_enabled') &&
                         this.context.featureSwitches.isTrue('dm_vdl_inbox_p0_enabled')) ||
-                      (this._modularSearchEnabled && r)
+                      (this._modularSearchEnabled && n)
                     ),
-                    o = [cn.searchInput, a ? cn.searchInputBorder : void 0],
+                    o = [ir.searchInput, a ? ir.searchInputBorder : void 0],
                     c = ((null == t ? void 0 : t.state) || {}).tab,
-                    i = [tn, rn, nn].map(function (e) {
+                    i = [nr, rr, ar].map(function (e) {
                       return {
                         key: e,
                         label: e,
                         isActive: function () {
-                          return c === e || (!c && e === tn)
+                          return c === e || (!c && e === nr)
                         },
-                        to: Vr(Vr({}, t), {}, { state: Vr(Vr({}, t.state), {}, { tab: e }) }),
+                        to: Gn(Gn({}, t), {}, { state: Gn(Gn({}, t.state), {}, { tab: e }) }),
                       }
                     })
                   return y.createElement(
@@ -4312,29 +4341,29 @@
                       Te.a,
                       { style: o },
                       y.createElement(We.a, {
-                        accessibilityLabel: qr,
-                        icon: y.createElement(Fr.a, null),
+                        accessibilityLabel: Qn,
+                        icon: y.createElement(Un.a, null),
                         onPress: this._handleHideRecentSearches,
                         pullLeft: !0,
                         type: 'primaryText',
                       }),
-                      y.createElement(Br.a, {
-                        Icon: dr.a,
+                      y.createElement(Fn.a, {
+                        Icon: pn.a,
                         autoComplete: 'off',
                         onChange: this._handleSearchChange,
                         onClear: this._handleSearchClear,
                         onSubmitEditing: this._handleAddRecentSearch,
-                        placeholder: Yr,
+                        placeholder: Xn,
                         ref: this._setInputRef,
-                        value: r,
+                        value: n,
                         withClearButton: !0,
                       }),
                     ),
-                    this._modularSearchEnabled && (r || c === rn || c === nn)
-                      ? y.createElement(y.Fragment, null, y.createElement(Nr.a, { links: i }), this._renderTabContent())
+                    this._modularSearchEnabled && (n || c === rr || c === ar)
+                      ? y.createElement(y.Fragment, null, y.createElement(Nn.a, { links: i }), this._renderTabContent())
                       : y.createElement(Lt.a, {
-                          accessibilityLabel: Qr,
-                          fetchStatus: n,
+                          accessibilityLabel: Yn,
+                          fetchStatus: r,
                           onRequestRetry: this._handleRefetchSearch,
                           render: this._renderSearchResults,
                         }),
@@ -4342,11 +4371,11 @@
                 },
               },
             ]),
-            r
+            n
           )
         })(y.Component)
-      m()(on, 'contextType', g.a), m()(on, 'defaultProps', { recentSearches: [], searchConversationIds: [], query: '' })
-      var cn = Xe.a.create(function (e) {
+      m()(cr, 'contextType', g.a), m()(cr, 'defaultProps', { recentSearches: [], searchConversationIds: [], query: '' })
+      var ir = Ke.a.create(function (e) {
           return {
             emptyState: { marginTop: e.spaces.space32 },
             searchInput: {
@@ -4364,12 +4393,12 @@
             footerContainer: { marginVertical: e.spaces.space32 },
           }
         }),
-        ln = Object(Hr.a)(ir(on)),
-        sn = r('dwig'),
-        un = r('QB0K'),
-        dn = r('Avzu'),
-        pn = r('FRNI')
-      function fn(e) {
+        lr = Object(An.a)(ln(cr)),
+        sr = n('dwig'),
+        ur = n('QB0K'),
+        dr = n('Avzu'),
+        pr = n('FRNI')
+      function fr(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -4381,53 +4410,53 @@
           }
         })()
         return function () {
-          var r,
-            n = h()(e)
+          var n,
+            r = h()(e)
           if (t) {
             var a = h()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return p()(this, r)
+            n = Reflect.construct(r, arguments, a)
+          } else n = r.apply(this, arguments)
+          return p()(this, n)
         }
       }
-      var hn = x.a.h845f281,
-        bn = x.a.f325afc3,
-        mn = (function (e) {
-          u()(r, e)
-          var t = fn(r)
-          function r() {
-            return a()(this, r), t.apply(this, arguments)
+      var hr = x.a.h845f281,
+        br = x.a.f325afc3,
+        mr = (function (e) {
+          u()(n, e)
+          var t = fr(n)
+          function n() {
+            return a()(this, n), t.apply(this, arguments)
           }
           return (
-            c()(r, [
+            c()(n, [
               {
                 key: 'render',
                 value: function () {
-                  return y.createElement(un.a, {
-                    accessibilityLabel: hn,
+                  return y.createElement(ur.a, {
+                    accessibilityLabel: hr,
                     href: '/messages/compose',
-                    icon: y.createElement(dn.a, null),
-                    label: hn,
+                    icon: y.createElement(dr.a, null),
+                    label: hr,
                     scribeComponent: 'floating_dm_button',
-                    shortLabel: bn,
-                    testID: pn.a.message,
+                    shortLabel: br,
+                    testID: pr.a.message,
                   })
                 },
               },
             ]),
-            r
+            n
           )
         })(y.PureComponent),
-        yn = r('tI3i'),
-        vn = r.n(yn),
-        gn = r('883S'),
-        En = r('yoO3'),
-        _n = r('GSsg'),
-        On = r('2g+p'),
-        Sn = r('mw9i'),
-        In = r('BcsE'),
-        wn = r('+d3d')
-      function Cn(e) {
+        yr = n('tI3i'),
+        vr = n.n(yr),
+        gr = n('883S'),
+        Er = n('yoO3'),
+        _r = n('GSsg'),
+        Or = n('2g+p'),
+        Sr = n('mw9i'),
+        Ir = n('BcsE'),
+        wr = n('+d3d')
+      function Cr(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -4439,28 +4468,28 @@
           }
         })()
         return function () {
-          var r,
-            n = h()(e)
+          var n,
+            r = h()(e)
           if (t) {
             var a = h()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return p()(this, r)
+            n = Reflect.construct(r, arguments, a)
+          } else n = r.apply(this, arguments)
+          return p()(this, n)
         }
       }
-      var xn = function (e) {
+      var xr = function (e) {
           return e
         },
-        Pn = x.a.a66ac766,
-        Rn = x.a.fe61929d,
-        jn = (function (e) {
-          u()(r, e)
-          var t = Cn(r)
-          function r(e, n) {
+        Pr = x.a.a66ac766,
+        Rr = x.a.fe61929d,
+        jr = (function (e) {
+          u()(n, e)
+          var t = Cr(n)
+          function n(e, r) {
             var o
             return (
-              a()(this, r),
-              (o = t.call(this, e, n)),
+              a()(this, n),
+              (o = t.call(this, e, r)),
               m()(l()(o), 'state', { showSearchView: !1, searchQuery: '' }),
               m()(
                 l()(o),
@@ -4473,13 +4502,13 @@
               m()(l()(o), '_renderFocusedSearch', function () {
                 var e = o.props,
                   t = e.accessibilityTitle,
-                  r = e.analytics,
-                  n = e.conversationIds,
+                  n = e.analytics,
+                  r = e.conversationIds,
                   a = o.state.searchQuery
-                return y.createElement(ln, {
+                return y.createElement(lr, {
                   accessibilityTitle: t,
-                  analytics: r,
-                  conversationIds: n,
+                  analytics: n,
+                  conversationIds: r,
                   hideRecentSearches: o._hideRecentSearches,
                   onQueryChange: o._handleQueryChange,
                   query: a,
@@ -4489,8 +4518,8 @@
               m()(l()(o), '_renderInbox', function () {
                 var e = o.props,
                   t = e.accessibilityTitle,
-                  r = e.conversationIds,
-                  n = e.footer,
+                  n = e.conversationIds,
+                  r = e.footer,
                   a = e.isDrawer,
                   c = e.isRefreshing,
                   i = e.renderEmptyDMInbox,
@@ -4500,7 +4529,7 @@
                   d =
                     o.context.featureSwitches.isTrue('dm_vdl_enabled') &&
                     o.context.featureSwitches.isTrue('dm_vdl_inbox_p0_enabled'),
-                  p = [Dn.searchInput, d ? void 0 : Dn.searchInputBorder],
+                  p = [Dr.searchInput, d ? void 0 : Dr.searchInputBorder],
                   f = y.createElement(
                     y.Fragment,
                     null,
@@ -4508,12 +4537,12 @@
                       ? y.createElement(
                           Te.a,
                           { onClick: o._handleSearchClick, style: p },
-                          y.createElement(Br.a, {
-                            Icon: dr.a,
+                          y.createElement(Fn.a, {
+                            Icon: pn.a,
                             autoComplete: 'off',
                             isCompact: !0,
                             onChange: o._handleSearchChange,
-                            placeholder: Rn,
+                            placeholder: Rr,
                             withClearButton: !0,
                           }),
                         )
@@ -4521,22 +4550,22 @@
                     l ? l() : null,
                   )
                 return y.createElement(
-                  kr.a,
+                  Ln.a,
                   { isRefreshing: c, onRefresh: o._handlePullToRefresh },
-                  s && r
-                    ? y.createElement(Tr.a, {
+                  s && n
+                    ? y.createElement(kn.a, {
                         accessibilityRole: 'tablist',
                         accessibilityTitle: t,
-                        anchoring: Mr,
+                        anchoring: Tn,
                         assumedItemHeight: 100,
                         cacheKey: s,
-                        footer: n,
+                        footer: r,
                         header: f,
-                        identityFunction: xn,
-                        items: r,
+                        identityFunction: xr,
+                        items: n,
                         noItemsRenderer: i,
                         onNearEnd: o._handleNearEnd,
-                        renderer: o._renderInboxItem(r),
+                        renderer: o._renderInboxItem(n),
                         withKeyboardShortcuts: !a,
                         withoutHeadroom: !0,
                       })
@@ -4560,16 +4589,16 @@
                 o.setState({ showSearchView: !1, searchQuery: '' })
               }),
               m()(l()(o), '_renderInboxItem', function (e) {
-                return function (t, r) {
-                  var n = o.context.loggedInUserId,
+                return function (t, n) {
+                  var r = o.context.loggedInUserId,
                     a = o.props.location,
                     c = o.state.searchQuery,
                     i = { pathname: '/messages/'.concat(t), state: null == a ? void 0 : a.state },
                     l = t && null != e && e.length ? e.indexOf(t) : null,
-                    s = Object(In.a)(l) ? l + 1 : 0
+                    s = Object(Ir.a)(l) ? l + 1 : 0
                   return (
-                    vn()(!!n, 'loggedInUserId must be defined'),
-                    r && r(!0),
+                    vr()(!!r, 'loggedInUserId must be defined'),
+                    n && n(!0),
                     y.createElement(v.a, { exact: !1, path: i.pathname }, function (e) {
                       return y.createElement(Ct, {
                         conversationId: t,
@@ -4578,7 +4607,7 @@
                         key: t,
                         link: i,
                         onClick: o._handleConversationClick,
-                        perspective: n,
+                        perspective: r,
                         position: s,
                         searchQuery: c,
                       })
@@ -4592,23 +4621,23 @@
               m()(l()(o), '_handleFetchInitial', function () {
                 var e = o.props,
                   t = e.createLocalApiErrorHandler,
-                  r = e.fetchInboxIfNeeded,
-                  n = e.fetchUpdates
-                return r()
+                  n = e.fetchInboxIfNeeded,
+                  r = e.fetchUpdates
+                return n()
                   .then(o._updateLastSeenEventId, t())
                   .then(function () {
                     o._updatePolling.start()
                   })
                   .then(function () {
-                    return n().catch(t())
+                    return r().catch(t())
                   })
               }),
-              m()(l()(o), '_handleConversationClick', function (e, t, r, n) {
+              m()(l()(o), '_handleConversationClick', function (e, t, n, r) {
                 var a = o.props,
                   c = a.analytics,
                   i = a.customCellClick,
-                  l = null != r && r.participants ? Object.keys(r.participants).length : 0,
-                  s = (null == r ? void 0 : r.type) === M.CONVERSATION_TYPE.GROUP
+                  l = null != n && n.participants ? Object.keys(n.participants).length : 0,
+                  s = (null == n ? void 0 : n.type) === M.CONVERSATION_TYPE.GROUP
                 c.scribe({
                   element: 'thread',
                   action: 'click',
@@ -4617,7 +4646,7 @@
                     conversation_id: t,
                     conversation_participant_count: l,
                     conversation_type: s ? Ze.g.GROUP : Ze.g.ONE_TO_ONE,
-                    position: n,
+                    position: r,
                   },
                 }),
                   i && i(e, t)
@@ -4631,36 +4660,36 @@
                 ;(0, e.fetchInbox)().then(o._updateLastSeenEventId, t())
               }),
               m()(l()(o), '_updateLastSeenEventIdIfActive', function () {
-                if ('background' !== On.a.currentState) return o._updateLastSeenEventId()
+                if ('background' !== Or.a.currentState) return o._updateLastSeenEventId()
               }),
               m()(l()(o), '_updateLastSeenEventId', function () {
                 var e = o.props,
                   t = e.createLocalApiErrorHandler
                 return (0, e.updateLastSeenEventId)().catch(t())
               }),
-              (o._fab = y.createElement(mn, null)),
+              (o._fab = y.createElement(mr, null)),
               o
             )
           }
           return (
-            c()(r, [
+            c()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
                   var e = this,
                     t = this.props,
-                    r = t.createLocalApiErrorHandler,
-                    n = t.fetchInboxHistory,
+                    n = t.createLocalApiErrorHandler,
+                    r = t.fetchInboxHistory,
                     a = t.fetchUpdates
                   return (
-                    (this._updatePolling = new _n.a(
+                    (this._updatePolling = new _r.a(
                       function () {
-                        a().then(e._updateLastSeenEventIdIfActive, r(gn.a))
+                        a().then(e._updateLastSeenEventIdIfActive, n(gr.a))
                       },
                       { interval: 8e3 },
                     )),
-                    (this._handleHistoryRequest = Object(wn.a)(function () {
-                      n.apply(void 0, arguments).catch(r())
+                    (this._handleHistoryRequest = Object(wr.a)(function () {
+                      r.apply(void 0, arguments).catch(n())
                     }, 1e3)),
                     this._handleFetchInitial()
                   )
@@ -4676,14 +4705,14 @@
                 key: 'render',
                 value: function () {
                   return y.createElement(
-                    En.a,
+                    Er.a,
                     null,
                     y.createElement(D, null),
                     y.createElement(
-                      sn.a,
-                      { component: Sn.a, fab: this._fab, style: Dn.root },
+                      sr.a,
+                      { component: Sr.a, fab: this._fab, style: Dr.root },
                       y.createElement(Lt.a, {
-                        accessibilityLabel: Pn,
+                        accessibilityLabel: Pr,
                         fetchStatus: this.props.fetchStatus,
                         onRequestRetry: this._handleFetchInitialWrapper,
                         render: this._render,
@@ -4693,12 +4722,12 @@
                 },
               },
             ]),
-            r
+            n
           )
         })(y.Component)
-      m()(jn, 'contextType', g.a),
-        m()(jn, 'defaultProps', { conversationIds: [], inboxType: je.c.PRIMARY, isDrawer: !1, withDmSearch: !1 })
-      var Dn = Xe.a.create(function (e) {
+      m()(jr, 'contextType', g.a),
+        m()(jr, 'defaultProps', { conversationIds: [], inboxType: je.c.PRIMARY, isDrawer: !1, withDmSearch: !1 })
+      var Dr = Ke.a.create(function (e) {
         return {
           root: { backgroundColor: e.colors.cellBackground, flexGrow: 1 },
           searchInput: { backgroundColor: e.colors.cellBackground, padding: e.spaces.space12, zIndex: 1 },
@@ -4709,7 +4738,7 @@
           },
         }
       })
-      t.a = Object(Hr.a)(L(jn))
+      t.a = Object(An.a)(L(jr))
     },
   },
 ])
