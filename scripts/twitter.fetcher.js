@@ -60,19 +60,22 @@ function getAllScriptUrls(html) {
     urls.push($(script).attr('href'))
   })
 
-  let match = html.match(/{\d+:".*?}/m)
-  if (match) {
-    const scriptsMap = eval(`(${match[0]})`)
-    match = html.match(/{\d+:"[0-9a-z]{7}",.*?}/m)
+  // get splited bundle urls
+  {
+    let match = html.match(/{\d+:".*?}/m)
     if (match) {
-      const hashMap = eval(`(${match[0]})`)
-      debugger
-      Object.keys(scriptsMap)
-        .filter((id) => hashMap[id])
-        .forEach((id) => {
-          const name = `${scriptsMap[id]}.${hashMap[id]}5.js`
-          urls.push(`https://abs.twimg.com/responsive-web/client-web-legacy/${name}`)
-        })
+      const scriptsMap = eval(`(${match[0]})`)
+      match = html.match(/{\d+:"[0-9a-z]{7}",.*?}/m)
+      if (match) {
+        const hashMap = eval(`(${match[0]})`)
+        debugger
+        Object.keys(scriptsMap)
+          .filter((id) => hashMap[id])
+          .forEach((id) => {
+            const name = `${scriptsMap[id]}.${hashMap[id]}5.js`
+            urls.push(`https://abs.twimg.com/responsive-web/client-web-legacy/${name}`)
+          })
+      }
     }
   }
   return urls

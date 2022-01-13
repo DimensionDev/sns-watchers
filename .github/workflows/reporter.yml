@@ -40,6 +40,16 @@ jobs:
           echo "\`\`\`" >> $GITHUB_ENV
           echo "" >> $GITHUB_ENV
           echo "https://github.com/${{ github.repository }}/compare/${BASE}..${HEAD}" >> $GITHUB_ENV
+
+          echo "\`\`\`"
+          echo opensea >> $GITHUB_ENV
+          grep --ignore-case opensea twitter.com/**/*.js | wc > $GITHUB_ENV
+          echo looksrare >> $GITHUB_ENV
+          grep --ignore-case looksrare twitter.com/**/*.js | wc > $GITHUB_ENV
+          echo rarible >> $GITHUB_ENV
+          grep --ignore-case rarible twitter.com/**/*.js | wc > $GITHUB_ENV
+          echo "\`\`\`"
+
           echo "EOF" >> $GITHUB_ENV
 
 
