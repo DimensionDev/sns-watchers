@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [52],
+  [53],
   {
     '+Bsv': function (e, t, n) {
       'use strict'
@@ -48,7 +48,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return n.e(220).then(n.bind(null, 'QPD4'))
+              return n.e(223).then(n.bind(null, 'QPD4'))
             },
             loaderKey: 'defaultScoreEventSummaryLoader',
             strategy: n('XBtf').a.Critical,
@@ -242,14 +242,14 @@
         u = (n('JtPf'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP'), n('XBtf')),
         l = {
           loader: function () {
-            return n.e(332).then(n.bind(null, 'a+ad'))
+            return n.e(336).then(n.bind(null, 'a+ad'))
           },
           loaderKey: 'newsCellLoader',
           strategy: u.a.Critical,
         },
         s = {
           loader: function () {
-            return n.e(334).then(n.bind(null, 'hX2d'))
+            return n.e(338).then(n.bind(null, 'hX2d'))
           },
           loaderKey: 'newsPreviewCardLoader',
           strategy: u.a.Critical,
@@ -271,7 +271,7 @@
           o = void 0 !== i && i
         return r.e({
           loader: function () {
-            return n.e(227).then(n.bind(null, '+92Z'))
+            return n.e(231).then(n.bind(null, '+92Z'))
           },
           loaderKey: 'trendDefaultLoader',
           loaderOptions: { withThirdPartyCards: o, errorContext: t },

@@ -10749,6 +10749,51 @@
       }
       t.exports = u
     },
+    jtO7: function (t, e, r) {
+      'use strict'
+      var n = r('97Jx'),
+        i = r.n(n),
+        o = r('m3Bd'),
+        a = r.n(o),
+        u = r('ERkP'),
+        s = r('t62R'),
+        c = r('I4+6'),
+        l = r('cm6r'),
+        f = r('rHpw'),
+        p = r('MWbm'),
+        d = f.a.create(function (t) {
+          return {
+            container: { backgroundColor: t.colors.cellBackground },
+            root: {
+              justifyContent: 'center',
+              minHeight: t.spaces.space48,
+              paddingHorizontal: t.componentDimensions.gutterHorizontal,
+              paddingVertical: t.spaces.space16,
+            },
+          }
+        })
+      e.a = function (t) {
+        var e = t.align,
+          r = void 0 === e ? 'center' : e,
+          n = t.color,
+          o = t.label,
+          h = a()(t, ['align', 'color', 'label']),
+          g = c.a.generate({
+            backgroundColor: f.a.theme.colors.transparent,
+            color: f.a.theme.colors[n],
+            insetFocusRing: !0,
+          })
+        return u.createElement(
+          p.a,
+          { style: d.container },
+          u.createElement(
+            l.a,
+            i()({}, h, { interactiveStyles: g, style: d.root }),
+            u.createElement(s.b, { align: r, color: n }, o),
+          ),
+        )
+      }
+    },
     k5bp: function (t, e, r) {
       'use strict'
       var n = r('7002'),
@@ -10845,7 +10890,7 @@
         l = Object(a.a)({
           loader: function () {
             return c.a.emoji.then(function () {
-              return Promise.all([r.e(0), r.e(14), r.e(199)]).then(r.bind(null, '5RdJ'))
+              return Promise.all([r.e(0), r.e(14), r.e(200)]).then(r.bind(null, '5RdJ'))
             })
           },
           renderPlaceholder: function (t, e) {

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [36],
+  [37],
   {
     '1kbl': function (e, t, r) {
       'use strict'
@@ -103,54 +103,54 @@
             return { loggedInUserScreenName: null == t ? void 0 : t.screen_name, sliceModule: r, isLoggedInUser: !!t }
           })
           .withAnalytics({ page: 'bookmark_folders' }),
-        _ = r('97Jx'),
-        C = r.n(_),
-        P = r('m3Bd'),
-        R = r.n(P),
+        C = r('97Jx'),
+        _ = r.n(C),
+        R = r('m3Bd'),
+        P = r.n(R),
         I = r('ZGdk'),
-        S = r('/yvb'),
-        H = l.a.create(function (e) {
+        H = r('/yvb'),
+        S = l.a.create(function (e) {
           return {
             button: { marginRight: e.spaces.space4 },
             icon: { width: l.a.theme.fontSizes.title3, height: l.a.theme.fontSizes.title3 },
           }
         }),
         x = a.a.f8fc0b47,
-        T = n.createElement(I.a, { style: H.icon }),
-        L = function (e) {
+        T = n.createElement(I.a, { style: S.icon }),
+        M = function (e) {
           var t = e.history,
             r = e.onCreateButtonClick,
             o = e.style,
             a = e.testID,
             c = e.type,
-            i = R()(e, ['history', 'onCreateButtonClick', 'style', 'testID', 'type'])
+            i = P()(e, ['history', 'onCreateButtonClick', 'style', 'testID', 'type'])
           return n.createElement(
-            S.a,
-            C()({ accessibilityLabel: x, hoverLabel: { label: x } }, i, {
+            H.a,
+            _()({ accessibilityLabel: x, hoverLabel: { label: x } }, i, {
               icon: T,
               onPress: function () {
                 r(), t.push({ pathname: '/i/bookmarks/create_folder' })
               },
               pullRight: !0,
-              style: [H.button, o],
+              style: [S.button, o],
               testID: a,
               type: c || 'primaryText',
             }),
           )
         },
-        M = r('yoO3'),
+        L = r('yoO3'),
         D = r('VS6U'),
         A = r('FS1z'),
         z = r('HQ0t'),
         K = r('FIs5'),
-        N = r('yrzJ'),
-        U = a.a.i3145aa0,
-        V = a.a.f8fc0b47,
+        V = r('yrzJ'),
+        N = a.a.i3145aa0,
+        U = a.a.f8fc0b47,
         W = a.a.j45c642d,
         X = a.a.adad5408,
         G = a.a.be329aab,
-        Y = a.a.j0a47c9c,
-        J = j(function (e) {
+        J = a.a.j0a47c9c,
+        Y = j(function (e) {
           var t = e.analytics,
             r = e.history,
             o = e.isLoggedInUser,
@@ -166,7 +166,7 @@
               function () {
                 return (
                   t.scribePageImpression({ component: 'empty', action: 'impression' }),
-                  o ? n.createElement(K.a, { buttonText: X, header: G, message: Y, onButtonPress: i }) : null
+                  o ? n.createElement(K.a, { buttonText: X, header: G, message: J, onButtonPress: i }) : null
                 )
               },
               [t, i, o],
@@ -196,15 +196,15 @@
               },
               [c, l, t],
             ),
-            d = n.createElement(L, {
-              accessibilityLabel: V,
+            d = n.createElement(M, {
+              accessibilityLabel: U,
               history: r,
               onCreateButtonClick: function () {
                 return t.scribe({ element: 'create', action: 'click' })
               },
             })
           return n.createElement(
-            M.a,
+            L.a,
             null,
             n.createElement(D.a, {
               backLocation: '/home',
@@ -212,13 +212,13 @@
               primaryContent: u(),
               rightControl: d,
               sidebarContent: n.createElement(E.a, null),
-              subtitle: a ? n.createElement(N.a, { screenName: a }) : null,
-              title: n.createElement(z.a, { text: U }),
+              subtitle: a ? n.createElement(V.a, { screenName: a }) : null,
+              title: n.createElement(z.a, { text: N }),
               withBackButton: !1,
             }),
           )
         })
-      t.default = J
+      t.default = Y
     },
     '3GUV': function (e, t, r) {
       'use strict'
@@ -476,8 +476,8 @@
         F = r('sIe2'),
         B = r('3XMw'),
         j = r.n(B),
-        _ = r('TEoO')
-      function C(e) {
+        C = r('TEoO')
+      function _(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -498,15 +498,15 @@
           return m()(this, r)
         }
       }
-      var P = j.a.i9028824,
-        R = 'sliceTimeline',
+      var R = j.a.i9028824,
+        P = 'sliceTimeline',
         I = function (e) {
           return e
         },
-        S = { viewType: 'timeline' },
-        H = (function (e) {
+        H = { viewType: 'timeline' },
+        S = (function (e) {
           u()(r, e)
-          var t = C(r)
+          var t = _(r)
           function r() {
             var e
             o()(this, r)
@@ -525,8 +525,8 @@
                 return !n || a < 1
                   ? null
                   : 1 === a
-                  ? k.createElement(_.a, {
-                      cacheKey: R,
+                  ? k.createElement(C.a, {
+                      cacheKey: P,
                       footer: r,
                       identityFunction: I,
                       items: n,
@@ -584,8 +584,8 @@
                     n = e.retryMessage
                   return r
                     ? k.createElement(O.a, {
-                        accessibilityLabel: P,
-                        behavioralEventContext: S,
+                        accessibilityLabel: R,
+                        behavioralEventContext: H,
                         fetchStatus: t,
                         onRequestRetry: this._handleFetch,
                         render: this._render,
@@ -599,8 +599,8 @@
             r
           )
         })(k.Component)
-      p()(H, 'defaultProps', { numColumns: 1, alwaysFetch: !1 })
-      var x = w(H)
+      p()(S, 'defaultProps', { numColumns: 1, alwaysFetch: !1 })
+      var x = w(S)
       t.a = x
     },
     HQ0t: function (e, t, r) {
@@ -679,13 +679,13 @@
         F = r.n(O),
         B = r('IMYl'),
         j = r('U+bB'),
-        _ = r('Irs7'),
-        C = r('htQn'),
-        P = r('t62R'),
-        R = r('rHpw'),
+        C = r('Irs7'),
+        _ = r('htQn'),
+        R = r('t62R'),
+        P = r('rHpw'),
         I = F.a.e41c9b4f,
-        S = F.a.a2e7377e,
-        H = w(function (e) {
+        H = F.a.a2e7377e,
+        S = w(function (e) {
           var t,
             r,
             n,
@@ -694,7 +694,7 @@
             c = e.bookmarkFolder,
             i = e.removeTweetFromBookmarkFolder,
             l = e.tweetId,
-            s = Object(_.b)()
+            s = Object(C.b)()
           if (
             null == c ||
             null === (t = c.media) ||
@@ -713,7 +713,7 @@
             f = c.contains_requested_tweet
           if (!m || !l) return null
           return k.createElement(
-            C.a,
+            _.a,
             {
               onPress: function () {
                 var t = e.addToast,
@@ -721,7 +721,7 @@
                 f
                   ? i(m, { tweetId: l }).then(
                       function () {
-                        t({ text: S({ bookmarkFolderName: u }) }),
+                        t({ text: H({ bookmarkFolderName: u }) }),
                           s.scribe({ component: 'bookmark_folder', element: 'remove', action: 'success' })
                       },
                       function () {
@@ -743,11 +743,11 @@
               style: [x.root, x.paddingHorizontal, x.contentContainer],
             },
             d ? k.createElement(j.a, { source: d, style: x.thumbnailContainer }) : null,
-            k.createElement(P.b, { style: x.content }, u),
+            k.createElement(R.b, { style: x.content }, u),
             f ? k.createElement(B.a, { style: x.icon }) : null,
           )
         }),
-        x = R.a.create(function (e) {
+        x = P.a.create(function (e) {
           return {
             root: {
               justifyContent: 'space-between',
@@ -756,7 +756,7 @@
               borderBottomStyle: 'solid',
               borderBottomColor: e.colors.borderColor,
               minHeight: 'calc('
-                .concat(R.a.theme.lineHeights.headline1, ' + 2 * ')
+                .concat(P.a.theme.lineHeights.headline1, ' + 2 * ')
                 .concat(e.componentDimensions.gutterVertical, ')'),
             },
             contentContainer: { alignItems: 'center', flexDirection: 'row', flexGrow: 1 },
@@ -774,8 +774,8 @@
           }
         }),
         T = r('48TD'),
-        L = r('hqKg'),
-        M = r('G6rE'),
+        M = r('hqKg'),
+        L = r('G6rE'),
         D = function (e, t) {
           var r, n
           return null === (r = t.location) || void 0 === r || null === (n = r.state) || void 0 === n
@@ -784,7 +784,7 @@
         },
         A = Object(g.a)().propsFromState(function () {
           return {
-            sliceModule: Object(L.createSelector)(M.e.selectLoggedInUser, D, function (e, t) {
+            sliceModule: Object(M.createSelector)(L.e.selectLoggedInUser, D, function (e, t) {
               return null != e && e.id_str ? Object(T.a)(e.id_str, t) : void 0
             }),
             tweetId: D,
@@ -792,13 +792,13 @@
         }),
         z = r('jHSc'),
         K = r('FS1z'),
-        N = r('HQ0t'),
-        U = r('MWbm'),
-        V = r('FIs5'),
+        V = r('HQ0t'),
+        N = r('MWbm'),
+        U = r('FIs5'),
         W = r('jtO7'),
         X = r('cm6r'),
         G = r('ggE+')
-      function Y(e) {
+      function J(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -819,7 +819,7 @@
           return m()(this, r)
         }
       }
-      var J = F.a.c2453317,
+      var Y = F.a.c2453317,
         Z = F.a.bcc7e8cf,
         Q = F.a.adad5408,
         q = F.a.be329aab,
@@ -828,7 +828,7 @@
         te = F.a.j45c642d,
         re = (function (e) {
           u()(r, e)
-          var t = Y(r)
+          var t = J(r)
           function r() {
             var e
             o()(this, r)
@@ -845,7 +845,7 @@
                 e.props.history.goBack()
               }),
               p()(l()(e), '_renderEmptyState', function () {
-                return k.createElement(V.a, {
+                return k.createElement(U.a, {
                   buttonText: Q,
                   header: q,
                   message: $,
@@ -856,7 +856,7 @@
                 var r = e.props,
                   n = r.history,
                   o = r.tweetId
-                return k.createElement(H, { bookmarkFolderId: t, history: n, key: t, tweetId: o })
+                return k.createElement(S, { bookmarkFolderId: t, history: n, key: t, tweetId: o })
               }),
               e
             )
@@ -872,9 +872,9 @@
                         z.b,
                         {
                           backButtonType: 'close',
-                          documentTitle: J,
+                          documentTitle: Y,
                           onBackClick: this._handleBackClick,
-                          title: k.createElement(N.a, { text: J }),
+                          title: k.createElement(V.a, { text: Y }),
                         },
                         k.createElement(W.a, {
                           align: 'left',
@@ -886,11 +886,11 @@
                           X.a,
                           { style: [oe.root, oe.paddingHorizontal, oe.contentContainer] },
                           k.createElement(
-                            U.a,
+                            N.a,
                             { style: oe.thumbnail },
                             k.createElement(G.a, { style: oe.allBookmarks }),
                           ),
-                          k.createElement(P.b, { style: oe.content }, Z),
+                          k.createElement(R.b, { style: oe.content }, Z),
                           k.createElement(B.a, { style: oe.checkmark }),
                         ),
                         k.createElement(K.a, {
@@ -911,7 +911,7 @@
         ne = A(re),
         oe =
           ((t.default = ne),
-          R.a.create(function (e) {
+          P.a.create(function (e) {
             return {
               root: {
                 justifyContent: 'space-between',
@@ -950,7 +950,7 @@
       'use strict'
       r.r(t),
         r.d(t, 'EditOrDeleteBookmarkFolderModalScreen', function () {
-          return H
+          return S
         })
       var n = r('KEM+'),
         o = r.n(n),
@@ -994,13 +994,13 @@
         F = k.a.i2209530,
         B = k.a.h18f86a4,
         j = k.a.f4ea9679,
-        _ = k.a.b670aa62,
-        C = k.a.aece5462,
-        P = k.a.e3299b93,
-        R = k.a.c09ea713,
+        C = k.a.b670aa62,
+        _ = k.a.aece5462,
+        R = k.a.e3299b93,
+        P = k.a.c09ea713,
         I = k.a.gee78815,
-        S = { confirmButtonLabel: k.a.d96cf7cd, headline: k.a.h9a5daa1, text: k.a.ga2edf67 },
-        H = function (e, t) {
+        H = { confirmButtonLabel: k.a.d96cf7cd, headline: k.a.h9a5daa1, text: k.a.ga2edf67 },
+        S = function (e, t) {
           var r = e.addToast,
             n = e.analytics,
             a = e.bookmarkFolderName,
@@ -1012,23 +1012,23 @@
             b = i.useState(a || ''),
             p = c()(b, 2),
             k = p[0],
-            H = p[1],
+            S = p[1],
             x = i.useState(''),
             T = c()(x, 2),
-            L = T[0],
-            M = T[1],
+            M = T[0],
+            L = T[1],
             D = i.useState(!0),
             A = c()(D, 2),
             z = A[0],
             K = A[1],
-            N = i.useState(!1),
-            U = c()(N, 2),
-            V = U[0],
-            W = U[1],
+            V = i.useState(!1),
+            N = c()(V, 2),
+            U = N[0],
+            W = N[1],
             X = f.params.bookmarkFolderId,
             G = '/i/bookmarks/'.concat(X),
-            Y = function (e) {
-              M(e.message || I)
+            J = function (e) {
+              L(e.message || I)
             }
           return i.createElement(
             h.b,
@@ -1049,12 +1049,12 @@
                       K(!0),
                       d(X, { name: k })
                         .then(function () {
-                          r({ text: C }), m.goBack()
+                          r({ text: _ }), m.goBack()
                         })
                         .catch(function (e) {
                           s(
-                            o()({ defaultToast: { text: P }, showToast: !0 }, l.a.ValidationFailure, {
-                              customAction: Y,
+                            o()({ defaultToast: { text: R }, showToast: !0 }, l.a.ValidationFailure, {
+                              customAction: J,
                             }),
                           )(e),
                             n.scribe({ element: 'delete', action: 'error', data: e })
@@ -1071,14 +1071,14 @@
             },
             i.createElement(v.a, {
               autoFocus: !0,
-              errorText: L,
-              invalid: !!L,
+              errorText: M,
+              invalid: !!M,
               label: O,
               maxLength: 25,
-              name: _,
+              name: C,
               onChange: function (e) {
                 var t = e.target.value
-                H(t), K('' === t.trim() || t.trim() === a)
+                S(t), K('' === t.trim() || t.trim() === a)
               },
               value: k,
             }),
@@ -1089,11 +1089,11 @@
                 W(!0)
               },
             }),
-            V &&
+            U &&
               i.createElement(E.a, {
-                confirmButtonLabel: S.confirmButtonLabel,
+                confirmButtonLabel: H.confirmButtonLabel,
                 confirmButtonType: 'destructiveFilled',
-                headline: S.headline,
+                headline: H.headline,
                 onCancel: function () {
                   n.scribe({ element: 'delete', action: 'cancel' }), W(!1)
                 },
@@ -1104,15 +1104,15 @@
                         W(!1), r({ text: j }), m.replace('/i/bookmarks')
                       })
                       .catch(function (e) {
-                        s({ defaultToast: { text: R }, showToast: !0 })(e),
+                        s({ defaultToast: { text: P }, showToast: !0 })(e),
                           n.scribe({ element: 'delete', action: 'error', data: e })
                       })
                 },
-                text: S.text,
+                text: H.text,
               }),
           )
         },
-        x = b(H)
+        x = b(S)
       t.default = x
     },
     KQzH: function (e, t, r) {
@@ -1262,11 +1262,56 @@
       }
       ;(u.metadata = { width: 24, height: 24 }), (t.a = u)
     },
+    jtO7: function (e, t, r) {
+      'use strict'
+      var n = r('97Jx'),
+        o = r.n(n),
+        a = r('m3Bd'),
+        c = r.n(a),
+        i = r('ERkP'),
+        l = r('t62R'),
+        s = r('I4+6'),
+        u = r('cm6r'),
+        d = r('rHpw'),
+        m = r('MWbm'),
+        f = d.a.create(function (e) {
+          return {
+            container: { backgroundColor: e.colors.cellBackground },
+            root: {
+              justifyContent: 'center',
+              minHeight: e.spaces.space48,
+              paddingHorizontal: e.componentDimensions.gutterHorizontal,
+              paddingVertical: e.spaces.space16,
+            },
+          }
+        })
+      t.a = function (e) {
+        var t = e.align,
+          r = void 0 === t ? 'center' : t,
+          n = e.color,
+          a = e.label,
+          b = c()(e, ['align', 'color', 'label']),
+          h = s.a.generate({
+            backgroundColor: d.a.theme.colors.transparent,
+            color: d.a.theme.colors[n],
+            insetFocusRing: !0,
+          })
+        return i.createElement(
+          m.a,
+          { style: f.container },
+          i.createElement(
+            u.a,
+            o()({}, b, { interactiveStyles: h, style: f.root }),
+            i.createElement(l.b, { align: r, color: n }, a),
+          ),
+        )
+      }
+    },
     sMuS: function (e, t, r) {
       'use strict'
       r.r(t),
         r.d(t, 'CreateBookmarkFolderModal', function () {
-          return C
+          return _
         })
       var n = r('KEM+'),
         o = r.n(n),
@@ -1312,8 +1357,8 @@
         F = k.a.d4e220b3,
         B = k.a.a0ea2fa5,
         j = k.a.eec37eab,
-        _ = k.a.e41c9b4f,
-        C = function (e) {
+        C = k.a.e41c9b4f,
+        _ = function (e) {
           var t = e.addToast,
             r = e.addTweetToBookmarkFolder,
             n = e.createBookmarkFolder,
@@ -1340,7 +1385,7 @@
                       if (o) {
                         var a
                         r(o, { tweetId: u })
-                        var c = _({
+                        var c = C({
                           bookmarkFolderName:
                             (null == e || null === (a = e.bookmark_collection_create) || void 0 === a
                               ? void 0
@@ -1351,11 +1396,11 @@
                     }
                   })
                   .catch(function (e) {
-                    return C(e)
+                    return _(e)
                   }),
                 s.goBackThroughModals())
             },
-            C = function (e) {
+            _ = function (e) {
               var t
               p.scribe({ component: 'bookmark_folders_create', action: 'error' }),
                 a(((t = {}), o()(t, l.a.GenericBadRequest, { toast: { text: j } }), o()(t, 'showToast', !0), t))(e)
@@ -1390,8 +1435,8 @@
             }),
           )
         },
-        P = b(C)
-      t.default = P
+        R = b(_)
+      t.default = R
     },
   },
 ])

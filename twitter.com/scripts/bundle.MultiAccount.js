@@ -1,10 +1,10 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [65],
+  [66],
   {
     '0kTQ': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return l
+        return s
       })
       var r,
         a = n('KEM+'),
@@ -12,11 +12,11 @@
         i = n('k49u'),
         c = n('LVU8'),
         u = n('3XMw'),
-        s = n.n(u).a.b20a3893,
-        l =
+        l = n.n(u).a.b20a3893,
+        s =
           ((r = {}),
           o()(r, i.a.AppInReadOnlyMode, { customAction: c.b }),
-          o()(r, i.a.TargetUserNotFound, { toast: { text: s } }),
+          o()(r, i.a.TargetUserNotFound, { toast: { text: l } }),
           o()(r, 'showToast', !0),
           r)
     },
@@ -33,8 +33,8 @@
         i = n.n(o),
         c = n('1Pcy'),
         u = n.n(c),
-        s = n('5Yy7'),
-        l = n.n(s),
+        l = n('5Yy7'),
+        s = n.n(l),
         d = n('N+ot'),
         f = n.n(d),
         m = n('AuHH'),
@@ -67,9 +67,9 @@
           switchAccount: S.a,
         },
         F = Object(A.g)(B, O),
-        T = n('kGix'),
-        M = n('v//M'),
-        R = n('jHSc'),
+        R = n('kGix'),
+        T = n('v//M'),
+        M = n('jHSc'),
         I = n('3XMw'),
         P = n.n(I),
         j = n('IMYl'),
@@ -78,8 +78,8 @@
         x = 'AccountSwitcher_Switch_Button',
         D = n('MWbm'),
         V = n('jtO7'),
-        N = n('t62R'),
-        z = n('0yYu'),
+        z = n('t62R'),
+        N = n('0yYu'),
         W = n('IMA+'),
         J = n('Znyr'),
         K = n('rHpw'),
@@ -144,11 +144,11 @@
         ie = P.a.bade139e,
         ce = P.a.ae33b982,
         ue = P.a.fa07bf68,
-        se = P.a.d86bbf0f,
-        le = P.a.h6beb5fa,
+        le = P.a.d86bbf0f,
+        se = P.a.h6beb5fa,
         de = { page: 'account_switcher' },
         fe = (function (e) {
-          l()(n, e)
+          s()(n, e)
           var t = Q(n)
           function n() {
             var e
@@ -176,14 +176,14 @@
                     D.a,
                     { style: [me.whiteBackground, me.infoText] },
                     g.createElement(
-                      N.b,
+                      z.b,
                       { color: 'gray700' },
                       (n ? ne : te)({ maxAccounts: t }),
                       ' ',
-                      g.createElement(N.b, { link: ae }, re),
+                      g.createElement(z.b, { link: ae }, re),
                     ),
                   ),
-                  g.createElement(z.a, null),
+                  g.createElement(N.a, null),
                   g.createElement(y.a, {
                     color: 'red500',
                     confirmationSheetConfirmButtonLabel: oe,
@@ -236,8 +236,8 @@
                       g.createElement(J.a, {
                         count: e,
                         standalone: !0,
-                        truncatedCountFormatter: le,
-                        unreadCountLabel: se,
+                        truncatedCountFormatter: se,
+                        unreadCountLabel: le,
                       }),
                     )
                   : null
@@ -301,10 +301,10 @@
                     n = e.history,
                     r = this.state.spinner
                   return g.createElement(
-                    R.b,
+                    M.b,
                     { history: n, title: Z },
-                    g.createElement(M.a, {
-                      fetchStatus: r ? T.a.LOADING : t,
+                    g.createElement(T.a, {
+                      fetchStatus: r ? R.a.LOADING : t,
                       onRequestRetry: this._handleFetch,
                       render: this._render,
                     }),
@@ -334,8 +334,8 @@
         i = n.n(o),
         c = n('Y9Ll'),
         u = n.n(c),
-        s = n('1Pcy'),
-        l = n.n(s),
+        l = n('1Pcy'),
+        s = n.n(l),
         d = n('5Yy7'),
         f = n.n(d),
         m = n('N+ot'),
@@ -356,9 +356,9 @@
         B = n.n(L),
         O = n('MWbm'),
         F = n('Irs7'),
-        T = n('v6aA'),
-        M = n('/yvb'),
-        R = n('rHpw')
+        R = n('v6aA'),
+        T = n('/yvb'),
+        M = n('rHpw')
       function I(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -390,21 +390,21 @@
             for (var r = arguments.length, a = new Array(r), o = 0; o < r; o++) a[o] = arguments[o]
             return (
               (e = t.call.apply(t, [this].concat(a))),
-              y()(l()(e), '_mobileLoginToken', B.a.v1().replace(/-/g, '')),
-              y()(l()(e), '_handleSubmit', function () {
+              y()(s()(e), '_mobileLoginToken', B.a.v1().replace(/-/g, '')),
+              y()(s()(e), '_handleSubmit', function () {
                 var t = e.props,
                   n = t.analytics,
                   r = t.onSubmit
                 if ((n.scribe({ action: 'submit' }), C.a.flushHTMLCache(), e._setLoginCookie(), r))
                   return r(e._form.elements), !1
               }),
-              y()(l()(e), '_handleSubmitButtonClick', function () {
+              y()(s()(e), '_handleSubmitButtonClick', function () {
                 !1 !== e._handleSubmit() && e._form.submit()
               }),
-              y()(l()(e), '_setFormRef', function (t) {
+              y()(s()(e), '_setFormRef', function (t) {
                 t && (e._form = t)
               }),
-              y()(l()(e), '_setLoginCookie', function () {
+              y()(s()(e), '_setLoginCookie', function () {
                 var t = new Date(Date.now())
                 t.setTime(t.getTime() + 3e5),
                   Object(A.e)(S.q, e._mobileLoginToken, {
@@ -440,8 +440,8 @@
                     i = e.loginReturnPath,
                     c = e.submitButtonDisabled,
                     u = e.submitButtonLabel,
-                    s = e.submitButtonSize,
-                    l = e.submitButtonStyle,
+                    l = e.submitButtonSize,
+                    s = e.submitButtonStyle,
                     d = e.submitButtonType,
                     f = 'string' == typeof i ? i.split('?') : [],
                     m = a()(f, 2),
@@ -469,12 +469,12 @@
                             O.a,
                             { style: o && H.loginButtonContainer },
                             _.createElement(
-                              M.a,
+                              T.a,
                               {
                                 disabled: c,
                                 onPress: this._handleSubmitButtonClick,
-                                size: s,
-                                style: l,
+                                size: l,
+                                style: s,
                                 testID: k,
                                 type: d,
                               },
@@ -500,7 +500,7 @@
             n
           )
         })(_.Component)
-      y()(j, 'contextType', T.a),
+      y()(j, 'contextType', R.a),
         y()(j, 'defaultProps', {
           autoSubmit: !1,
           formActionUrl: '/sessions',
@@ -509,7 +509,7 @@
           submitButtonLabel: P,
           submitButtonType: 'brandFilled',
         })
-      var H = R.a.create(function (e) {
+      var H = M.a.create(function (e) {
         return {
           horizontalFields: { flexDirection: 'row', justifyContent: 'center', alignItems: 'stretch' },
           loginForm: { width: '100%' },
@@ -530,8 +530,8 @@
         i = n.n(o),
         c = n('1Pcy'),
         u = n.n(c),
-        s = n('5Yy7'),
-        l = n.n(s),
+        l = n('5Yy7'),
+        s = n.n(l),
         d = n('N+ot'),
         f = n.n(d),
         m = n('AuHH'),
@@ -563,7 +563,7 @@
         }
       }
       var w = (function (e) {
-        l()(n, e)
+        s()(n, e)
         var t = v(n)
         function n(e) {
           var r
@@ -632,8 +632,8 @@
         i = n.n(o),
         c = n('1Pcy'),
         u = n.n(c),
-        s = n('5Yy7'),
-        l = n.n(s),
+        l = n('5Yy7'),
+        s = n.n(l),
         d = n('N+ot'),
         f = n.n(d),
         m = n('AuHH'),
@@ -663,9 +663,9 @@
         B = n.n(L),
         O = n('6oVL'),
         F = n('5FtR'),
-        T = n('t62R'),
-        M = n('G1WX'),
-        R = n('rHpw'),
+        R = n('t62R'),
+        T = n('G1WX'),
+        M = n('rHpw'),
         I = n('v6aA'),
         P = n('7JQg'),
         j = n('XJCT')
@@ -693,7 +693,7 @@
       var U = B.a.b8e1d524,
         x = B.a.j0a8da6e,
         D = (function (e) {
-          l()(n, e)
+          s()(n, e)
           var t = H(n)
           function n() {
             var e
@@ -720,7 +720,7 @@
                       g.Fragment,
                       null,
                       g.createElement(
-                        T.b,
+                        R.b,
                         {
                           accessibilityRole: 'heading',
                           align: 'center',
@@ -730,7 +730,7 @@
                         },
                         x,
                       ),
-                      n ? g.createElement(T.b, { color: 'magenta500', style: V.errorMessage }, n) : null,
+                      n ? g.createElement(R.b, { color: 'magenta500', style: V.errorMessage }, n) : null,
                       g.createElement(
                         O.a,
                         {
@@ -820,7 +820,7 @@
                     A.b,
                     { backLocation: '/account/switch', history: n, title: U },
                     r
-                      ? g.createElement(M.a, {
+                      ? g.createElement(T.a, {
                           fetchStatus: t,
                           onRequestRetry: this._handleFetch,
                           render: this._render,
@@ -834,7 +834,7 @@
           )
         })(g.Component)
       b()(D, 'contextType', I.a)
-      var V = R.a.create(function (e) {
+      var V = M.a.create(function (e) {
         return {
           submitButton: { marginHorizontal: e.spaces.space12 },
           heading: { marginVertical: e.spaces.space40 },
@@ -889,8 +889,8 @@
         i = n.n(o),
         c = n('ERkP'),
         u = n('t62R'),
-        s = n('3XMw'),
-        l = n.n(s),
+        l = n('3XMw'),
+        s = n.n(l),
         d = (n('yH/f'), n('ho0z'), n('p+r5')),
         f = Object.freeze({ password: 'password', username: 'username_or_email' }),
         m = function (e) {
@@ -901,13 +901,13 @@
             a()({ autoCapitalize: 'none', autoCorrect: !1, name: 'session['.concat(t, ']'), spellCheck: 'false' }, n),
           )
         },
-        h = l.a.d1091f50,
+        h = s.a.d1091f50,
         p = c.createElement(
           u.b,
           { link: { external: !0, pathname: 'https://twitter.com/account/begin_password_reset', openInSameFrame: !0 } },
           h,
         ),
-        b = l.a.dec3c9b8,
+        b = s.a.dec3c9b8,
         g = function (e) {
           var t = e.helperText,
             n = e.label,
@@ -924,26 +924,71 @@
         v = function (e) {
           return e.isTrue('responsive_web_login_input_type_email_enabled') ? 'email' : void 0
         },
-        w = l.a.e1ec8c17,
-        S = l.a.d0a750f2,
-        E = l.a.e2dd29b5,
-        C = l.a.jb4eb245,
+        w = s.a.e1ec8c17,
+        S = s.a.d0a750f2,
+        E = s.a.e2dd29b5,
+        C = s.a.jb4eb245,
         A = function (e) {
           var t = e.autoFocus,
             n = e.label,
             r = e.withEmailDisabled,
             o = e.withPhoneDisabled,
             u = e.withUsernameDisabled,
-            s = i()(e, ['autoFocus', 'label', 'withEmailDisabled', 'withPhoneDisabled', 'withUsernameDisabled']),
-            l = c.useContext(_.a).featureSwitches,
+            l = i()(e, ['autoFocus', 'label', 'withEmailDisabled', 'withPhoneDisabled', 'withUsernameDisabled']),
+            s = c.useContext(_.a).featureSwitches,
             d = w
           return (
             u ? (d = S) : o ? (d = C) : r && (d = E),
-            c.createElement(m, a()({}, s, { autoFocus: t, label: n || d, name: f.username, type: v(l) }))
+            c.createElement(m, a()({}, l, { autoFocus: t, label: n || d, name: f.username, type: v(s) }))
           )
         }
       A.defaultProps = { autoFocus: !0, withUsernameDisabled: !1, withPhoneDisabled: !1, withEmailDisabled: !1 }
       var k = A
+    },
+    jtO7: function (e, t, n) {
+      'use strict'
+      var r = n('97Jx'),
+        a = n.n(r),
+        o = n('m3Bd'),
+        i = n.n(o),
+        c = n('ERkP'),
+        u = n('t62R'),
+        l = n('I4+6'),
+        s = n('cm6r'),
+        d = n('rHpw'),
+        f = n('MWbm'),
+        m = d.a.create(function (e) {
+          return {
+            container: { backgroundColor: e.colors.cellBackground },
+            root: {
+              justifyContent: 'center',
+              minHeight: e.spaces.space48,
+              paddingHorizontal: e.componentDimensions.gutterHorizontal,
+              paddingVertical: e.spaces.space16,
+            },
+          }
+        })
+      t.a = function (e) {
+        var t = e.align,
+          n = void 0 === t ? 'center' : t,
+          r = e.color,
+          o = e.label,
+          h = i()(e, ['align', 'color', 'label']),
+          p = l.a.generate({
+            backgroundColor: d.a.theme.colors.transparent,
+            color: d.a.theme.colors[r],
+            insetFocusRing: !0,
+          })
+        return c.createElement(
+          f.a,
+          { style: m.container },
+          c.createElement(
+            s.a,
+            a()({}, h, { interactiveStyles: p, style: m.root }),
+            c.createElement(u.b, { align: n, color: r }, o),
+          ),
+        )
+      }
     },
     'qtu+': function (e, t, n) {
       'use strict'
@@ -961,10 +1006,10 @@
         c = function (e) {
           return function (t, n, c) {
             var u = c.api,
-              s = Object(a.b)(t, { request: u.Auth.switch, params: e })
+              l = Object(a.b)(t, { request: u.Auth.switch, params: e })
             return t(Object(o.f)()).then(function () {
               return t(Object(r.b)()).then(function () {
-                return s({ actionTypes: i, context: 'SWITCH' }).then(function () {
+                return l({ actionTypes: i, context: 'SWITCH' }).then(function () {
                   window.location.assign('/home')
                 })
               })

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [89],
+  [90],
   {
     '/1nx': function (e, t, n) {
       'use strict'
@@ -3136,6 +3136,51 @@
         })(y.Component)
       g()(B, 'contextType', I.a)
       t.default = _(B)
+    },
+    jtO7: function (e, t, n) {
+      'use strict'
+      var r = n('97Jx'),
+        a = n.n(r),
+        c = n('m3Bd'),
+        o = n.n(c),
+        i = n('ERkP'),
+        l = n('t62R'),
+        s = n('I4+6'),
+        u = n('cm6r'),
+        f = n('rHpw'),
+        d = n('MWbm'),
+        p = f.a.create(function (e) {
+          return {
+            container: { backgroundColor: e.colors.cellBackground },
+            root: {
+              justifyContent: 'center',
+              minHeight: e.spaces.space48,
+              paddingHorizontal: e.componentDimensions.gutterHorizontal,
+              paddingVertical: e.spaces.space16,
+            },
+          }
+        })
+      t.a = function (e) {
+        var t = e.align,
+          n = void 0 === t ? 'center' : t,
+          r = e.color,
+          c = e.label,
+          h = o()(e, ['align', 'color', 'label']),
+          m = s.a.generate({
+            backgroundColor: f.a.theme.colors.transparent,
+            color: f.a.theme.colors[r],
+            insetFocusRing: !0,
+          })
+        return i.createElement(
+          d.a,
+          { style: p.container },
+          i.createElement(
+            u.a,
+            a()({}, h, { interactiveStyles: m, style: p.root }),
+            i.createElement(l.b, { align: n, color: r }, c),
+          ),
+        )
+      }
     },
     lFNj: function (e, t, n) {
       'use strict'

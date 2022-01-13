@@ -22,8 +22,8 @@
         b = n('KEM+'),
         v = n.n(b),
         y = n('ERkP'),
-        O = n('jtO7'),
-        m = n('eb3s')
+        m = n('jtO7'),
+        O = n('eb3s')
       function g(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -82,9 +82,9 @@
                 return y.createElement(
                   y.Fragment,
                   null,
-                  y.createElement(O.a, { align: t, color: n, label: i, onPress: this._handleClick }),
+                  y.createElement(m.a, { align: t, color: n, label: i, onPress: this._handleClick }),
                   this.state.showConfirmation
-                    ? y.createElement(m.a, {
+                    ? y.createElement(O.a, {
                         confirmButtonLabel: r,
                         confirmButtonType: o,
                         headline: c,
@@ -108,10 +108,10 @@
         return y
       }),
         n.d(t, 'b', function () {
-          return O
+          return m
         }),
         n.d(t, 'a', function () {
-          return m
+          return O
         })
       n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var r = n('KEM+'),
@@ -177,14 +177,14 @@
       var y = function (e) {
           return e[p].languages
         },
-        O = function (e, t) {
+        m = function (e, t) {
           var n = Object(i.c)(t).toLowerCase(),
             r = e[p].languages.find(function (e) {
               return e.code === n
             })
           return r ? r.name : null
         },
-        m = function () {
+        O = function () {
           return function (e, t) {
             return t()[p].fetchStatus === a.a.LOADED ? Promise.resolve() : e(g())
           }
@@ -307,97 +307,97 @@
                 (function (e) {
                   switch (e) {
                     case 'ar':
-                      return n.e(233).then(n.t.bind(null, 'heBS', 3))
+                      return n.e(237).then(n.t.bind(null, 'heBS', 3))
                     case 'bg':
-                      return n.e(234).then(n.t.bind(null, '9kpF', 3))
+                      return n.e(238).then(n.t.bind(null, '9kpF', 3))
                     case 'bn':
-                      return n.e(235).then(n.t.bind(null, 'GG9y', 3))
+                      return n.e(239).then(n.t.bind(null, 'GG9y', 3))
                     case 'ca':
-                      return n.e(236).then(n.t.bind(null, 'icrD', 3))
+                      return n.e(240).then(n.t.bind(null, 'icrD', 3))
                     case 'cs':
-                      return n.e(237).then(n.t.bind(null, 'rxOR', 3))
+                      return n.e(241).then(n.t.bind(null, 'rxOR', 3))
                     case 'da':
-                      return n.e(238).then(n.t.bind(null, '6Nxr', 3))
+                      return n.e(242).then(n.t.bind(null, '6Nxr', 3))
                     case 'de':
-                      return n.e(239).then(n.t.bind(null, 'zSOo', 3))
+                      return n.e(243).then(n.t.bind(null, 'zSOo', 3))
                     case 'el':
-                      return n.e(240).then(n.t.bind(null, 'MOmn', 3))
+                      return n.e(244).then(n.t.bind(null, 'MOmn', 3))
                     case 'en-GB':
-                      return n.e(242).then(n.t.bind(null, 'vzeG', 3))
+                      return n.e(246).then(n.t.bind(null, 'vzeG', 3))
                     case 'en':
-                      return n.e(241).then(n.t.bind(null, 'WqZ6', 3))
+                      return n.e(245).then(n.t.bind(null, 'WqZ6', 3))
                     case 'es':
-                      return n.e(243).then(n.t.bind(null, 'v4/g', 3))
+                      return n.e(247).then(n.t.bind(null, 'v4/g', 3))
                     case 'eu':
-                      return n.e(244).then(n.t.bind(null, 'KXIK', 3))
+                      return n.e(248).then(n.t.bind(null, 'KXIK', 3))
                     case 'fa':
-                      return n.e(245).then(n.t.bind(null, 'vzCi', 3))
+                      return n.e(249).then(n.t.bind(null, 'vzCi', 3))
                     case 'fi':
-                      return n.e(246).then(n.t.bind(null, 'YthM', 3))
+                      return n.e(250).then(n.t.bind(null, 'YthM', 3))
                     case 'fil':
-                      return n.e(247).then(n.t.bind(null, 'AcRS', 3))
+                      return n.e(251).then(n.t.bind(null, 'AcRS', 3))
                     case 'fr':
-                      return n.e(248).then(n.t.bind(null, 'PuNY', 3))
+                      return n.e(252).then(n.t.bind(null, 'PuNY', 3))
                     case 'ga':
-                      return n.e(249).then(n.t.bind(null, 'FSy8', 3))
+                      return n.e(253).then(n.t.bind(null, 'FSy8', 3))
                     case 'gl':
-                      return n.e(250).then(n.t.bind(null, 'igcB', 3))
+                      return n.e(254).then(n.t.bind(null, 'igcB', 3))
                     case 'gu':
-                      return n.e(251).then(n.t.bind(null, 'DaQw', 3))
+                      return n.e(255).then(n.t.bind(null, 'DaQw', 3))
                     case 'he':
-                      return n.e(252).then(n.t.bind(null, '8mgg', 3))
+                      return n.e(256).then(n.t.bind(null, '8mgg', 3))
                     case 'hi':
-                      return n.e(253).then(n.t.bind(null, 'w88S', 3))
+                      return n.e(257).then(n.t.bind(null, 'w88S', 3))
                     case 'hr':
-                      return n.e(254).then(n.t.bind(null, 'dvLs', 3))
+                      return n.e(258).then(n.t.bind(null, 'dvLs', 3))
                     case 'hu':
-                      return n.e(255).then(n.t.bind(null, '9fGX', 3))
+                      return n.e(259).then(n.t.bind(null, '9fGX', 3))
                     case 'id':
-                      return n.e(256).then(n.t.bind(null, 'elf3', 3))
+                      return n.e(260).then(n.t.bind(null, 'elf3', 3))
                     case 'it':
-                      return n.e(257).then(n.t.bind(null, 'sxFK', 3))
+                      return n.e(261).then(n.t.bind(null, 'sxFK', 3))
                     case 'ja':
-                      return n.e(258).then(n.t.bind(null, '1/Dg', 3))
+                      return n.e(262).then(n.t.bind(null, '1/Dg', 3))
                     case 'kn':
-                      return n.e(259).then(n.t.bind(null, 'nFOI', 3))
+                      return n.e(263).then(n.t.bind(null, 'nFOI', 3))
                     case 'ko':
-                      return n.e(260).then(n.t.bind(null, 'RRUG', 3))
+                      return n.e(264).then(n.t.bind(null, 'RRUG', 3))
                     case 'mr':
-                      return n.e(261).then(n.t.bind(null, 'EpxJ', 3))
+                      return n.e(265).then(n.t.bind(null, 'EpxJ', 3))
                     case 'ms':
-                      return n.e(262).then(n.t.bind(null, 'cSS2', 3))
+                      return n.e(266).then(n.t.bind(null, 'cSS2', 3))
                     case 'nb':
-                      return n.e(263).then(n.t.bind(null, 'bg3k', 3))
+                      return n.e(267).then(n.t.bind(null, 'bg3k', 3))
                     case 'nl':
-                      return n.e(264).then(n.t.bind(null, 'eXnI', 3))
+                      return n.e(268).then(n.t.bind(null, 'eXnI', 3))
                     case 'pl':
-                      return n.e(265).then(n.t.bind(null, 'ACpo', 3))
+                      return n.e(269).then(n.t.bind(null, 'ACpo', 3))
                     case 'pt':
-                      return n.e(266).then(n.t.bind(null, 'J0At', 3))
+                      return n.e(270).then(n.t.bind(null, 'J0At', 3))
                     case 'ro':
-                      return n.e(267).then(n.t.bind(null, 'hxXa', 3))
+                      return n.e(271).then(n.t.bind(null, 'hxXa', 3))
                     case 'ru':
-                      return n.e(268).then(n.t.bind(null, 'gXfs', 3))
+                      return n.e(272).then(n.t.bind(null, 'gXfs', 3))
                     case 'sk':
-                      return n.e(269).then(n.t.bind(null, 'fy2h', 3))
+                      return n.e(273).then(n.t.bind(null, 'fy2h', 3))
                     case 'sr':
-                      return n.e(270).then(n.t.bind(null, 'FmvU', 3))
+                      return n.e(274).then(n.t.bind(null, 'FmvU', 3))
                     case 'sv':
-                      return n.e(271).then(n.t.bind(null, 'prb2', 3))
+                      return n.e(275).then(n.t.bind(null, 'prb2', 3))
                     case 'ta':
-                      return n.e(272).then(n.t.bind(null, '8KkY', 3))
+                      return n.e(276).then(n.t.bind(null, '8KkY', 3))
                     case 'th':
-                      return n.e(273).then(n.t.bind(null, 'g4c5', 3))
+                      return n.e(277).then(n.t.bind(null, 'g4c5', 3))
                     case 'tr':
-                      return n.e(274).then(n.t.bind(null, 'NngR', 3))
+                      return n.e(278).then(n.t.bind(null, 'NngR', 3))
                     case 'uk':
-                      return n.e(275).then(n.t.bind(null, '62bs', 3))
+                      return n.e(279).then(n.t.bind(null, '62bs', 3))
                     case 'ur':
-                      return n.e(276).then(n.t.bind(null, 'aKQ3', 3))
+                      return n.e(280).then(n.t.bind(null, 'aKQ3', 3))
                     case 'zh-Hant':
-                      return n.e(278).then(n.t.bind(null, 'Wk8C', 3))
+                      return n.e(282).then(n.t.bind(null, 'Wk8C', 3))
                     case 'zh':
-                      return n.e(277).then(n.t.bind(null, 'YXaK', 3))
+                      return n.e(281).then(n.t.bind(null, 'YXaK', 3))
                     default:
                       return Promise.reject(
                         new Error('Tried to import country names for unknown language key: '.concat(e)),
@@ -436,7 +436,7 @@
     ZvNX: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return K
+        return V
       })
       n('OZaJ')
       var r = n('VrFO'),
@@ -454,8 +454,8 @@
         b = n('hBoh'),
         v = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('KEM+')),
         y = n.n(v),
-        O = n('Lsrn'),
-        m = n('k/Ka')
+        m = n('Lsrn'),
+        O = n('k/Ka')
       function g(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
@@ -485,12 +485,12 @@
       }
       var S = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(m.a)(
+        return Object(O.a)(
           'svg',
           E(
             E({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [O.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [m.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           h.createElement(
             'g',
@@ -532,12 +532,12 @@
       }
       var k = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(m.a)(
+        return Object(O.a)(
           'svg',
           P(
             P({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [O.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [m.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           h.createElement(
             'g',
@@ -582,12 +582,12 @@
       }
       var R = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(m.a)(
+        return Object(O.a)(
           'svg',
           L(
             L({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [O.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [m.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           h.createElement(
             'g',
@@ -652,8 +652,8 @@
             n
           )
         })(h.PureComponent),
-        I = n('3XMw'),
-        H = n.n(I),
+        H = n('3XMw'),
+        I = n.n(H),
         B = n('GBcw'),
         M = n('Wms4'),
         N = n('pjBI'),
@@ -680,8 +680,8 @@
           return l()(this, n)
         }
       }
-      var U = H.a.ed5ab169,
-        K = (function (e) {
+      var U = I.a.ed5ab169,
+        V = (function (e) {
           u()(n, e)
           var t = T(n)
           function n() {
@@ -792,14 +792,14 @@
                 key: 'render',
                 value: function () {
                   var e = this.props.children
-                  return h.createElement(b.a, { style: O.root }, e)
+                  return h.createElement(b.a, { style: m.root }, e)
                 },
               },
             ]),
             n
           )
         })(h.PureComponent),
-        O = d.a.create(function (e) {
+        m = d.a.create(function (e) {
           return {
             root: {
               paddingHorizontal: e.componentDimensions.gutterHorizontal,
@@ -864,17 +864,17 @@
       }
       var v = ''.concat(f.a, '/applications'),
         y = 'rweb/'.concat(v),
-        O = c.a(y, 'FETCH_APPLICATIONS'),
-        m = { fetchStatus: l.a.NONE }
+        m = c.a(y, 'FETCH_APPLICATIONS'),
+        O = { fetchStatus: l.a.NONE }
       function g() {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : m,
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : O,
           t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
         switch (t.type) {
-          case O.REQUEST:
+          case m.REQUEST:
             return b(b({}, e), {}, { fetchStatus: l.a.LOADING })
-          case O.FAILURE:
+          case m.FAILURE:
             return b(b({}, e), {}, { error: t.payload, fetchStatus: l.a.FAILED })
-          case O.SUCCESS:
+          case m.SUCCESS:
             return b(b({}, e), {}, { error: null, fetchStatus: l.a.LOADED })
           default:
             return e
@@ -965,7 +965,7 @@
           return function (t, n, r) {
             var o = r.api
             return c.b(t, { params: e, request: o.Settings.fetchApplications })(
-              { actionTypes: O, context: 'FETCH_APPLICATIONS' },
+              { actionTypes: m, context: 'FETCH_APPLICATIONS' },
               function (e, t) {
                 if (e) return [Object(a.c)(e.entities)]
               },
@@ -1067,6 +1067,51 @@
       }
       ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
     },
+    jtO7: function (e, t, n) {
+      'use strict'
+      var r = n('97Jx'),
+        o = n.n(r),
+        c = n('m3Bd'),
+        a = n.n(c),
+        i = n('ERkP'),
+        u = n('t62R'),
+        s = n('I4+6'),
+        l = n('cm6r'),
+        f = n('rHpw'),
+        p = n('MWbm'),
+        h = f.a.create(function (e) {
+          return {
+            container: { backgroundColor: e.colors.cellBackground },
+            root: {
+              justifyContent: 'center',
+              minHeight: e.spaces.space48,
+              paddingHorizontal: e.componentDimensions.gutterHorizontal,
+              paddingVertical: e.spaces.space16,
+            },
+          }
+        })
+      t.a = function (e) {
+        var t = e.align,
+          n = void 0 === t ? 'center' : t,
+          r = e.color,
+          c = e.label,
+          d = a()(e, ['align', 'color', 'label']),
+          b = s.a.generate({
+            backgroundColor: f.a.theme.colors.transparent,
+            color: f.a.theme.colors[r],
+            insetFocusRing: !0,
+          })
+        return i.createElement(
+          p.a,
+          { style: h.container },
+          i.createElement(
+            l.a,
+            o()({}, d, { interactiveStyles: b, style: h.root }),
+            i.createElement(u.b, { align: n, color: r }, c),
+          ),
+        )
+      }
+    },
     o1YB: function (e, t, n) {
       'use strict'
       n('OZaJ')
@@ -1085,8 +1130,8 @@
         b = n('KEM+'),
         v = n.n(b),
         y = (n('2G9S'), n('uFXj'), n('ERkP')),
-        O = n('t62R'),
-        m = n('rHpw'),
+        m = n('t62R'),
+        O = n('rHpw'),
         g = n('MWbm')
       function E(e) {
         var t = (function () {
@@ -1120,13 +1165,13 @@
             (e = t.call.apply(t, [this].concat(c))),
             v()(u()(e), '_renderSubtextAndLink', function () {
               var t = e.props.subtext
-              return y.createElement(O.b, { color: 'gray700', size: 'subtext2' }, t, ' ', e._renderLearnMore())
+              return y.createElement(m.b, { color: 'gray700', size: 'subtext2' }, t, ' ', e._renderLearnMore())
             }),
             v()(u()(e), '_renderLearnMore', function () {
               var t = e.props,
                 n = t.learnMoreLabel,
                 r = t.learnMoreLink
-              return r && n ? y.createElement(O.b, { link: r, size: 'subtext2' }, n) : null
+              return r && n ? y.createElement(m.b, { link: r, size: 'subtext2' }, n) : null
             }),
             e
           )
@@ -1145,11 +1190,11 @@
                 return y.createElement(
                   g.a,
                   { style: [j.root, c && j.bottomBorder] },
-                  y.createElement(O.b, null, t),
+                  y.createElement(m.b, null, t),
                   o
                     ? n && r
                       ? this._renderSubtextAndLink()
-                      : y.createElement(O.b, { color: 'gray700', size: 'subtext2' }, o)
+                      : y.createElement(m.b, { color: 'gray700', size: 'subtext2' }, o)
                     : null,
                 )
               },
@@ -1159,7 +1204,7 @@
         )
       })(y.Component)
       v()(S, 'defaultProps', { withBottomBorder: !0 })
-      var j = m.a.create(function (e) {
+      var j = O.a.create(function (e) {
         return {
           root: {
             backgroundColor: e.colors.cellBackground,
@@ -1236,10 +1281,10 @@
         b = 'rweb/'.concat(d),
         v = c.a(b, 'FETCH_SESSIONS'),
         y = c.a(b, 'REVOKE_SESSION'),
-        O = c.a(b, 'REVOKE_ALL_SESSIONS'),
-        m = { fetchStatus: i.a.NONE, sessions: {} }
+        m = c.a(b, 'REVOKE_ALL_SESSIONS'),
+        O = { fetchStatus: i.a.NONE, sessions: {} }
       function g() {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : m,
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : O,
           t = arguments.length > 1 ? arguments[1] : void 0
         switch (t.type) {
           case v.REQUEST:
@@ -1335,7 +1380,7 @@
             var o = r.api
             return c
               .b(t, { params: e, request: o.Settings.revokeAllSessions })({
-                actionTypes: O,
+                actionTypes: m,
                 context: 'REVOKE_ALL_SESSIONS',
               })
               .then(function () {

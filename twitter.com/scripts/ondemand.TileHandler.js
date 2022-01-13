@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [224],
+  [228],
   {
     CdHO: function (e, t, r) {
       'use strict'
@@ -304,7 +304,7 @@
     Nxr7: function (e, t, r) {
       'use strict'
       r.d(t, 'a', function () {
-        return z
+        return M
       })
       r('OZaJ')
       var n = r('VrFO'),
@@ -357,14 +357,14 @@
       var P = S.a.ccaa970e,
         k = S.a.d725a288,
         R = S.a.db355331,
-        _ = S.a.a8428d5e,
+        I = S.a.a8428d5e,
         L = S.a.a7aad8b9,
-        I = S.a.e431f1aa,
+        _ = S.a.e431f1aa,
         D = S.a.a7391707,
         T = S.a.d2dbfa91,
         x = S.a.cd734f65,
         N = S.a.c8891d06,
-        z = (function (e) {
+        M = (function (e) {
           u()(r, e)
           var t = j(r)
           function r() {
@@ -452,11 +452,11 @@
                             (function (e) {
                               switch (e) {
                                 case E.a.Scheduled:
-                                  return _
+                                  return I
                                 case E.a.InProgress:
                                   return L
                                 case E.a.Completed:
-                                  return I
+                                  return _
                                 case E.a.Postponed:
                                   return D
                                 case E.a.Cancelled:
@@ -476,7 +476,43 @@
             r
           )
         })(g.Component)
-      y()(z, 'defaultProps', { withCategory: !0 })
+      y()(M, 'defaultProps', { withCategory: !0 })
+    },
+    RoyM: function (e, t, r) {
+      'use strict'
+      var n = r('ERkP'),
+        a = (r('JtPf'), r('7x/C'), r('87if'), r('lTEL'), r('kYxP'), r('zb92')),
+        c = Object(a.a)({
+          loader: function () {
+            return r.e(167).then(r.bind(null, 'ACNv'))
+          },
+        }),
+        o = r('4bW+'),
+        i = r('IG7M'),
+        s = r('rHpw'),
+        l = r('Irs7'),
+        u = s.a.create(function (e) {
+          return { curationControl: { marginStart: e.spaces.space20 } }
+        })
+      t.a = Object(l.a)(function (e) {
+        var t = e.analytics,
+          r = e.feedbackItems,
+          a = e.isDisplayedOnMedia
+        if (r && r.length > 0) {
+          return n.createElement(i.a, {
+            onClick: function () {
+              return t.scribe({ element: 'caret', action: 'click' })
+            },
+            renderActionMenu: function (e) {
+              return n.createElement(c, { actionItems: r, onClose: e })
+            },
+            style: u.curationControl,
+            testID: o.a.caret,
+            withDarkBackground: a,
+          })
+        }
+        return null
+      })
     },
     ajvb: function (e, t, r) {
       'use strict'
@@ -602,10 +638,10 @@
                 return t
                   ? g.createElement(
                       P.a,
-                      { style: _.accountContainer },
+                      { style: I.accountContainer },
                       g.createElement(
                         P.a,
-                        { style: _.avatarContainer },
+                        { style: I.avatarContainer },
                         g.createElement(E.a, {
                           accessibilityHidden: !0,
                           focusable: !1,
@@ -616,7 +652,7 @@
                       ),
                       g.createElement(
                         P.a,
-                        { style: _.groupContainer },
+                        { style: I.groupContainer },
                         g.createElement(j.a, {
                           isVerified: t.verified,
                           name: t.name,
@@ -638,13 +674,13 @@
                 return r
                   ? g.createElement(
                       P.a,
-                      { style: _.eventDescription },
+                      { style: I.eventDescription },
                       g.createElement(
                         h.b,
                         { numberOfLines: 2, size: 'subtext2', style: { width: '100%' }, weight: 'bold' },
                         r,
                       ),
-                      g.createElement(P.a, { style: _.rightControl }, n || null),
+                      g.createElement(P.a, { style: I.rightControl }, n || null),
                     )
                   : null
               }),
@@ -676,7 +712,7 @@
             r
           )
         })(g.Component),
-        _ = C.a.create(function (e) {
+        I = C.a.create(function (e) {
           return {
             accountContainer: { flexDirection: 'row' },
             avatarContainer: { marginRight: e.spaces.space4 },
@@ -752,7 +788,7 @@
                 var t = e.props.team.shortName
                 return g.createElement(
                   j.a,
-                  { style: _.teamNameContainer },
+                  { style: I.teamNameContainer },
                   g.createElement(w.b, { color: 'white', numberOfLines: 1, weight: 'heavy' }, t),
                 )
               }),
@@ -763,11 +799,11 @@
                   a = n.imageUrl,
                   c = n.logo,
                   o = e.state.imageError,
-                  i = (!c && !a) || o ? _.translucent : {},
+                  i = (!c && !a) || o ? I.translucent : {},
                   s = c ? S.a.exact(c.width / c.height) : S.a.SQUARE
                 return g.createElement(
                   j.a,
-                  { style: [_.imageContainer, i, r && _.compactImageContainer] },
+                  { style: [I.imageContainer, i, r && I.compactImageContainer] },
                   g.createElement(O.a, {
                     accessibilityLabel: '',
                     aspectMode: s,
@@ -797,7 +833,7 @@
                 return p
                   ? g.createElement(
                       j.a,
-                      { style: [_.teamScore, u && _.losingTeamScore] },
+                      { style: [I.teamScore, u && I.losingTeamScore] },
                       g.createElement(w.b, { color: 'white', numberOfLines: 1, size: f, weight: 'heavy' }, o),
                       i ? g.createElement(w.b, { color: 'white', numberOfLines: 1, size: d, weight: 'bold' }, i) : null,
                     )
@@ -841,7 +877,7 @@
                     o = !r || !c
                   return g.createElement(
                     j.a,
-                    { style: [_.root, a, r && _.compactRoot] },
+                    { style: [I.root, a, r && I.compactRoot] },
                     this._renderImage(),
                     o ? this._renderTeamName() : null,
                     this._renderScore(),
@@ -853,7 +889,7 @@
           )
         })(g.Component)
       y()(R, 'defaultProps', { isCompact: !1 })
-      var _ = E.a.create(function (e) {
+      var I = E.a.create(function (e) {
           return {
             root: { flexDirection: 'row', height: e.spaces.space48, paddingHorizontal: e.spaces.space12 },
             imageContainer: { alignSelf: 'center', width: e.spaces.space32, marginRight: e.spaces.space12 },
@@ -871,7 +907,7 @@
           }
         }),
         L = R
-      function I(e) {
+      function _(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -894,7 +930,7 @@
       }
       var D = (function (e) {
         u()(r, e)
-        var t = I(r)
+        var t = _(r)
         function r() {
           var e
           a()(this, r)

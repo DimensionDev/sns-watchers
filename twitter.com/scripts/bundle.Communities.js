@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [40],
+  [41],
   {
     '21U8': function (e, t, n) {
       'use strict'
@@ -2676,7 +2676,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return n.e(193).then(n.bind(null, 'V5fj'))
+              return n.e(194).then(n.bind(null, 'V5fj'))
             },
             loaderKey: 'communityDefaultLoader',
             strategy: n('XBtf').a.Critical,
@@ -5687,6 +5687,51 @@
           H.b,
           { clickMaskToClose: !1, modalSize: 'fitChildren', style: F.modal },
           r.createElement(D, e),
+        )
+      }
+    },
+    jtO7: function (e, t, n) {
+      'use strict'
+      var r = n('97Jx'),
+        a = n.n(r),
+        o = n('m3Bd'),
+        c = n.n(o),
+        i = n('ERkP'),
+        l = n('t62R'),
+        u = n('I4+6'),
+        s = n('cm6r'),
+        m = n('rHpw'),
+        d = n('MWbm'),
+        p = m.a.create(function (e) {
+          return {
+            container: { backgroundColor: e.colors.cellBackground },
+            root: {
+              justifyContent: 'center',
+              minHeight: e.spaces.space48,
+              paddingHorizontal: e.componentDimensions.gutterHorizontal,
+              paddingVertical: e.spaces.space16,
+            },
+          }
+        })
+      t.a = function (e) {
+        var t = e.align,
+          n = void 0 === t ? 'center' : t,
+          r = e.color,
+          o = e.label,
+          f = c()(e, ['align', 'color', 'label']),
+          y = u.a.generate({
+            backgroundColor: m.a.theme.colors.transparent,
+            color: m.a.theme.colors[r],
+            insetFocusRing: !0,
+          })
+        return i.createElement(
+          d.a,
+          { style: p.container },
+          i.createElement(
+            s.a,
+            a()({}, f, { interactiveStyles: y, style: p.root }),
+            i.createElement(l.b, { align: n, color: r }, o),
+          ),
         )
       }
     },
@@ -9068,7 +9113,7 @@
         O = (n('JtPf'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP'), n('zb92')),
         w = Object(O.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(4), n.e(5), n.e(169)]).then(n.bind(null, 'P68U'))
+            return Promise.all([n.e(0), n.e(4), n.e(5), n.e(170)]).then(n.bind(null, 'P68U'))
           },
         }),
         C = n('eyty'),

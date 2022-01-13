@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [86],
+  [87],
   {
     '6kA7': function (e, n, t) {
       'use strict'
@@ -9,20 +9,20 @@
         })
       var o = t('ddV6'),
         a = t.n(o),
-        i = (t('ho0z'), t('mC9n')),
-        r = t('ERkP'),
+        r = (t('ho0z'), t('mC9n')),
+        i = t('ERkP'),
         s = t('1YZw'),
         c = t('G6rE'),
         l = t('rxPX'),
-        p = t('0KEI'),
-        u = Object(l.a)()
+        u = t('0KEI'),
+        p = Object(l.a)()
           .propsFromState(function () {
             return { loggedInUser: c.e.selectLoggedInUser }
           })
           .propsFromActions(function () {
             return {
               addToast: s.b,
-              createLocalApiErrorHandler: Object(p.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(u.createLocalApiErrorHandlerWithContextFactory)(
                 'SETTINGS_PROFESSIONAL_PROFILE_SCREEN',
               ),
               switchToNonProfessional: c.e.switchToNonProfessional,
@@ -31,55 +31,55 @@
             }
           })
           .withAnalytics({ page: 'professional_settings' }),
-        f = t('jHSc'),
-        d = t('3XMw'),
-        b = t.n(d),
-        m = t('tI3i'),
-        y = t.n(m),
+        d = t('jHSc'),
+        f = t('3XMw'),
+        m = t.n(f),
+        b = t('tI3i'),
+        y = t.n(b),
         g = t('MWbm'),
         h = t('feu+'),
         L = t('cHvH'),
         w = t('rHpw'),
         C = t('sgih'),
         E = t('/yvb'),
-        T = b.a.cfd2f35d,
-        D = { actionLabel: b.a.ia492079, secondaryActionLabel: b.a.a9b5e3a9 },
+        T = m.a.cfd2f35d,
+        D = { actionLabel: m.a.ia492079, secondaryActionLabel: m.a.a9b5e3a9 },
+        k = {
+          menuItemLabel: m.a.cb55eccd,
+          confirmationTitleLabel: m.a.f6c453fb,
+          confirmationDescriptionLabel: m.a.a8be809d,
+        },
         P = {
-          menuItemLabel: b.a.cb55eccd,
-          confirmationTitleLabel: b.a.f6c453fb,
-          confirmationDescriptionLabel: b.a.a8be809d,
+          menuItemLabel: m.a.hbb1af08,
+          confirmationTitleLabel: m.a.g3f74901,
+          confirmationDescriptionLabel: m.a.f3bcfacf,
         },
         S = {
-          menuItemLabel: b.a.hbb1af08,
-          confirmationTitleLabel: b.a.g3f74901,
-          confirmationDescriptionLabel: b.a.f3bcfacf,
+          menuItemLabel: m.a.d0c3f02d,
+          confirmationTitleLabel: m.a.a01e84ef,
+          confirmationDescriptionLabel: m.a.e8af8ef3,
         },
-        I = {
-          menuItemLabel: b.a.d0c3f02d,
-          confirmationTitleLabel: b.a.a01e84ef,
-          confirmationDescriptionLabel: b.a.e8af8ef3,
-        },
-        k = function (e) {
+        v = function (e) {
           var n = e.analytics,
             t = e.onClose,
             o = e.onSwitchToBusinessAccountConfirm,
             s = e.onSwitchToCreatorAccountConfirm,
             c = e.onSwitchToNonProfessionalConfirm,
             l = e.professionalType,
-            p = r.useState(!1),
-            u = a()(p, 2),
-            f = u[0],
-            d = u[1],
-            b = r.useState(!1),
-            m = a()(b, 2),
-            y = m[0],
-            k = m[1],
-            v = r.useState(!1),
-            x = a()(v, 2),
-            A = x[0],
-            H = x[1],
+            u = i.useState(!1),
+            p = a()(u, 2),
+            d = p[0],
+            f = p[1],
+            m = i.useState(!1),
+            b = a()(m, 2),
+            y = b[0],
+            v = b[1],
+            _ = i.useState(!1),
+            H = a()(_, 2),
+            x = H[0],
+            A = H[1],
             B = function (e, n, o) {
-              return r.createElement(h.a, {
+              return i.createElement(h.a, {
                 actionLabel: D.actionLabel,
                 graphicDisplayMode: 'none',
                 headline: e,
@@ -93,62 +93,62 @@
               })
             },
             z = function () {
-              n.scribe(i.j('personal')), d(!0)
-            },
-            F = function () {
-              n.scribe(i.j('creator')), H(!0)
+              n.scribe(r.j('personal')), f(!0)
             },
             j = function () {
-              n.scribe(i.j('business')), k(!0)
+              n.scribe(r.j('creator')), A(!0)
+            },
+            F = function () {
+              n.scribe(r.j('business')), v(!0)
             }
-          return r.createElement(L.a, null, function (e) {
+          return i.createElement(L.a, null, function (e) {
             e.windowHeight
             var n = e.windowWidth > w.a.theme.breakpoints.medium
-            return r.createElement(
+            return i.createElement(
               C.a,
               {
                 enableMaskForDismiss: !0,
                 onMaskClick: t,
-                style: n && _.roundedBorders,
+                style: n && I.roundedBorders,
                 type: n ? 'center' : 'bottom',
                 withMask: !0,
               },
-              r.createElement(
+              i.createElement(
                 g.a,
                 {
                   accessibilityRole: 'dialog',
                   accessibilityState: { modal: !0 },
-                  style: [_.root, n && _.centeredContent],
+                  style: [I.root, n && I.centeredContent],
                 },
-                r.createElement(
+                i.createElement(
                   g.a,
-                  { style: _.content },
-                  r.createElement(
+                  { style: I.content },
+                  i.createElement(
                     E.a,
-                    { onPress: z, size: 'xLarge', style: _.button, type: 'primaryFilled' },
-                    P.menuItemLabel,
+                    { onPress: z, size: 'xLarge', style: I.button, type: 'primaryFilled' },
+                    k.menuItemLabel,
                   ),
                   'Business' === l
-                    ? r.createElement(
+                    ? i.createElement(
                         E.a,
-                        { onPress: F, size: 'xLarge', style: _.button, type: 'primaryFilled' },
-                        I.menuItemLabel,
-                      )
-                    : r.createElement(
-                        E.a,
-                        { onPress: j, size: 'xLarge', style: _.button, type: 'primaryFilled' },
+                        { onPress: j, size: 'xLarge', style: I.button, type: 'primaryFilled' },
                         S.menuItemLabel,
+                      )
+                    : i.createElement(
+                        E.a,
+                        { onPress: F, size: 'xLarge', style: I.button, type: 'primaryFilled' },
+                        P.menuItemLabel,
                       ),
-                  r.createElement(E.a, { onPress: t, size: 'xLarge', style: _.button, type: 'primaryOutlined' }, T),
+                  i.createElement(E.a, { onPress: t, size: 'xLarge', style: I.button, type: 'primaryOutlined' }, T),
                 ),
               ),
-              f ? B(P.confirmationTitleLabel, P.confirmationDescriptionLabel, c) : null,
-              y ? B(S.confirmationTitleLabel, S.confirmationDescriptionLabel, o) : null,
-              A ? B(I.confirmationTitleLabel, I.confirmationDescriptionLabel, s) : null,
+              d ? B(k.confirmationTitleLabel, k.confirmationDescriptionLabel, c) : null,
+              y ? B(P.confirmationTitleLabel, P.confirmationDescriptionLabel, o) : null,
+              x ? B(S.confirmationTitleLabel, S.confirmationDescriptionLabel, s) : null,
             )
           })
         },
-        _ = w.a.create(function (e) {
+        I = w.a.create(function (e) {
           return {
             root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, paddingVertical: e.spaces.space12 },
             centeredContent: { width: '100%', flexGrow: 1, alignItems: 'center', justifyContent: 'center' },
@@ -157,20 +157,20 @@
             roundedBorders: { borderRadius: e.borderRadii.xLarge },
           }
         }),
-        v = 'category_label',
-        x = 'category_display',
-        A = 'switch_account_type',
-        H = t('csss'),
+        _ = 'category_label',
+        H = 'category_display',
+        x = 'switch_account_type',
+        A = t('csss'),
         B = t('t62R'),
         z = t('CK8+'),
-        F = t('jtO7'),
-        j = b.a.e1f76977,
-        N = b.a.i0864917,
-        O = b.a.cd9102d4,
-        R = b.a.d93271e2,
-        M = b.a.h26379fe,
-        G = b.a.f386777a,
-        U = { personal: b.a.db48309f, business: b.a.c701200b, creator: b.a.acd8da09 },
+        j = t('jtO7'),
+        F = m.a.e1f76977,
+        R = m.a.i0864917,
+        O = m.a.cd9102d4,
+        M = m.a.d93271e2,
+        N = m.a.h26379fe,
+        G = m.a.f386777a,
+        U = { personal: m.a.db48309f, business: m.a.c701200b, creator: m.a.acd8da09 },
         V = function (e) {
           var n,
             t,
@@ -178,43 +178,43 @@
             s = e.analytics,
             c = e.createLocalApiErrorHandler,
             l = e.history,
-            p = e.loggedInUser,
-            u = e.switchToNonProfessional,
-            d = e.updateProfessionalCategoryDisplay,
-            b = e.updateProfessionalType,
-            m = r.useState(!1),
-            h = a()(m, 2),
+            u = e.loggedInUser,
+            p = e.switchToNonProfessional,
+            f = e.updateProfessionalCategoryDisplay,
+            m = e.updateProfessionalType,
+            b = i.useState(!1),
+            h = a()(b, 2),
             L = h[0],
             w = h[1],
             C = function (e) {
-              e.preventDefault(), s.scribe(i.h()), w(!0)
+              e.preventDefault(), s.scribe(r.h()), w(!0)
             }
           if (
-            (r.useEffect(function () {
-              null != p && p.professional && s.scribe(i.e())
+            (i.useEffect(function () {
+              null != u && u.professional && s.scribe(r.e())
             }, []),
-            !p)
+            !u)
           )
             return l.push('/login'), null
-          if (!p.professional || !p.professional.professional_type)
+          if (!u.professional || !u.professional.professional_type)
             return l.goBack({ backLocation: '/settings/profile' }), null
           var E,
-            T = null === (n = p.professional.category) || void 0 === n ? void 0 : n[0],
+            T = null === (n = u.professional.category) || void 0 === n ? void 0 : n[0],
             D = null === (t = null == T ? void 0 : T.display) || void 0 === t || t,
+            k = function () {
+              s.scribe(r.a())
+            },
             P = function () {
-              s.scribe(i.a())
+              y()(!(null == u || !u.id_str), 'loggedInUser.id_str must be defined'),
+                s.scribe(r.d()),
+                f(u.id_str, { displayCategory: !D }).catch(c())
             },
             S = function () {
-              y()(!(null == p || !p.id_str), 'loggedInUser.id_str must be defined'),
-                s.scribe(i.d()),
-                d(p.id_str, { displayCategory: !D }).catch(c())
-            },
-            I = function () {
               w(!1)
             },
-            _ = function () {
-              s.scribe(i.i('personal')),
-                u(p.id_str)
+            I = function () {
+              s.scribe(r.i('personal')),
+                p(u.id_str)
                   .then(function () {
                     return o({ text: U.personal })
                   })
@@ -222,8 +222,8 @@
                 w(!1)
             },
             V = function () {
-              s.scribe(i.i('business')),
-                b(p.id_str, { professionalType: 'Business' })
+              s.scribe(r.i('business')),
+                m(u.id_str, { professionalType: 'Business' })
                   .then(function () {
                     return o({ text: U.business })
                   })
@@ -231,16 +231,16 @@
                 w(!1)
             },
             J = function () {
-              s.scribe(i.i('creator')),
-                b(p.id_str, { professionalType: 'Creator' })
+              s.scribe(r.i('creator')),
+                m(u.id_str, { professionalType: 'Creator' })
                   .then(function () {
                     return o({ text: U.creator })
                   })
                   .catch(c()),
                 w(!1)
             }
-          return r.createElement(
-            f.b,
+          return i.createElement(
+            d.b,
             {
               accessibilityHidden: L,
               backButtonType: 'back',
@@ -248,48 +248,48 @@
               onBackClick: function () {
                 l.goBack({ backLocation: '/settings/profile' })
               },
-              title: j,
+              title: F,
             },
-            r.createElement(
+            i.createElement(
               g.a,
               { style: W.container },
-              r.createElement(H.a, {
+              i.createElement(A.a, {
                 description: null !== (E = null == T ? void 0 : T.name) && void 0 !== E ? E : O,
-                label: N,
+                label: R,
                 link: '/i/flow/update_professional_category',
-                onPress: P,
-                testID: v,
+                onPress: k,
+                testID: _,
               }),
-              r.createElement(
+              i.createElement(
                 g.a,
-                { testID: x },
-                r.createElement(
+                { testID: H },
+                i.createElement(
                   g.a,
                   { style: W.categoryDisplaySwitchContainer },
-                  r.createElement(B.b, { color: 'normal' }, R),
-                  r.createElement(z.a, { onValueChange: S, value: D }),
+                  i.createElement(B.b, { color: 'normal' }, M),
+                  i.createElement(z.a, { onValueChange: P, value: D }),
                 ),
-                r.createElement(
+                i.createElement(
                   g.a,
                   { style: W.categoryDisplayDescriptionContainer },
-                  r.createElement(B.b, { color: 'gray700', size: 'subtext2' }, M),
+                  i.createElement(B.b, { color: 'gray700', size: 'subtext2' }, N),
                 ),
               ),
-              r.createElement(F.a, { align: 'left', color: 'primary', label: G, onPress: C, testID: A }),
+              i.createElement(j.a, { align: 'left', color: 'primary', label: G, onPress: C, testID: x }),
               (function () {
                 var e
                 y()(
-                  !(null == p || null === (e = p.professional) || void 0 === e || !e.professional_type),
+                  !(null == u || null === (e = u.professional) || void 0 === e || !e.professional_type),
                   'loggedInUser.professional.professional_type must be defined',
                 )
-                var n = p.professional.professional_type
+                var n = u.professional.professional_type
                 return L
-                  ? r.createElement(k, {
+                  ? i.createElement(v, {
                       analytics: s,
-                      onClose: I,
+                      onClose: S,
                       onSwitchToBusinessAccountConfirm: V,
                       onSwitchToCreatorAccountConfirm: J,
-                      onSwitchToNonProfessionalConfirm: _,
+                      onSwitchToNonProfessionalConfirm: I,
                       professionalType: n,
                     })
                   : null
@@ -315,8 +315,53 @@
             },
           }
         }),
-        J = u(V)
+        J = p(V)
       n.default = J
+    },
+    jtO7: function (e, n, t) {
+      'use strict'
+      var o = t('97Jx'),
+        a = t.n(o),
+        r = t('m3Bd'),
+        i = t.n(r),
+        s = t('ERkP'),
+        c = t('t62R'),
+        l = t('I4+6'),
+        u = t('cm6r'),
+        p = t('rHpw'),
+        d = t('MWbm'),
+        f = p.a.create(function (e) {
+          return {
+            container: { backgroundColor: e.colors.cellBackground },
+            root: {
+              justifyContent: 'center',
+              minHeight: e.spaces.space48,
+              paddingHorizontal: e.componentDimensions.gutterHorizontal,
+              paddingVertical: e.spaces.space16,
+            },
+          }
+        })
+      n.a = function (e) {
+        var n = e.align,
+          t = void 0 === n ? 'center' : n,
+          o = e.color,
+          r = e.label,
+          m = i()(e, ['align', 'color', 'label']),
+          b = l.a.generate({
+            backgroundColor: p.a.theme.colors.transparent,
+            color: p.a.theme.colors[o],
+            insetFocusRing: !0,
+          })
+        return s.createElement(
+          d.a,
+          { style: f.container },
+          s.createElement(
+            u.a,
+            a()({}, m, { interactiveStyles: b, style: f.root }),
+            s.createElement(c.b, { align: t, color: o }, r),
+          ),
+        )
+      }
     },
   },
 ])

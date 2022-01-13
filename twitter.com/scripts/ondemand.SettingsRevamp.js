@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [222, 183],
+  [225, 184],
   {
     '1Uii': function (e, t, r) {
       'use strict'
@@ -996,10 +996,10 @@
           M = Object(g.useCreateLocalApiErrorHandler)('UNDO_TWEET_SCREEN_CONTEXT'),
           x = _.isTrueAndEnabled('subscriptions_feature_1003'),
           H = m.a.i3b7a017,
-          U = [5, 10, 20, 30, 60].map(function (e) {
+          N = [5, 10, 20, 30, 60].map(function (e) {
             return { label: H(e), value: e.toString() }
           })
-        function N(e, n) {
+        function U(e, n) {
           if ('period' !== e) {
             var c = { undoPreview: T(T({}, t), {}, a()({}, e, !t[e])) }
             r(c).catch(M({}))
@@ -1017,12 +1017,12 @@
                     O.a,
                     { location: b, title: k },
                     c.createElement(w.a, { description: L }),
-                    c.createElement(S.a, { checked: void 0 === s || s, label: C, name: 'original', onChange: N }),
-                    c.createElement(S.a, { checked: void 0 === l || l, label: D, name: 'reply', onChange: N }),
+                    c.createElement(S.a, { checked: void 0 === s || s, label: C, name: 'original', onChange: U }),
+                    c.createElement(S.a, { checked: void 0 === l || l, label: D, name: 'reply', onChange: U }),
                     c.createElement(
                       v.a,
                       { style: I.radioGroup },
-                      c.createElement(P.a, { label: A, name: 'period', onChange: N, options: U, value: F }),
+                      c.createElement(P.a, { label: A, name: 'period', onChange: U, options: N, value: F }),
                     ),
                   ),
                 )
@@ -1215,7 +1215,7 @@
       M.metadata = { width: 24, height: 24 }
       var x = M,
         H = r('4BrD')
-      function U(e, t) {
+      function N(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -1227,16 +1227,16 @@
         }
         return r
       }
-      function N(e) {
+      function U(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? U(Object(r), !0).forEach(function (t) {
+            ? N(Object(r), !0).forEach(function (t) {
                 E()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : U(Object(r)).forEach(function (t) {
+            : N(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
@@ -1246,8 +1246,8 @@
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
         return Object(w.a)(
           'svg',
-          N(
-            N({}, e),
+          U(
+            U({}, e),
             {},
             { accessibilityHidden: void 0 === e.accessibilityLabel, style: [v.a.root, e.style], viewBox: '0 0 24 24' },
           ),
@@ -2042,15 +2042,15 @@
                   M = 'secondaryRoot' === y,
                   x = 'primaryDetail' === y,
                   H = (x && w) || (I && v),
-                  U = I || (x && n),
-                  N = I ? g.c : x ? g.a : void 0,
+                  N = I || (x && n),
+                  U = I ? g.c : x ? g.a : void 0,
                   z = E.createElement(
                     D.a,
                     { style: r ? [C.appBarContainer, C.appBarZindex] : C.appBarZindex },
                     E.createElement(S.a, {
                       backLocation: s,
                       fixed: !1,
-                      hideBackButton: U,
+                      hideBackButton: N,
                       history: d,
                       leftControl: f,
                       middleControl: p,
@@ -2059,7 +2059,7 @@
                       secondaryBar: r ? O : null,
                       subtitle: H ? j : void 0,
                       title: _,
-                      titleDomId: N,
+                      titleDomId: U,
                       titleIconCell: T,
                       titleIconCellSize: k,
                       withBottomBorder: R,
@@ -2123,10 +2123,10 @@
           return H
         }),
         r.d(t, 'selectHasExactAge', function () {
-          return U
+          return N
         }),
         r.d(t, 'selectGender', function () {
-          return N
+          return U
         }),
         r.d(t, 'selectLanguage', function () {
           return z
@@ -2376,10 +2376,10 @@
         H = function (e) {
           return e.personalization.data.data.birth_date ? e.personalization.data.data.birth_date : ''
         },
-        U = function (e) {
+        N = function (e) {
           return !!e.personalization.data.data.has_exact_age
         },
-        N = function (e) {
+        U = function (e) {
           var t = L(e),
             r = A(e),
             n = r.gender_preferences && r.gender_preferences.gender_override
@@ -4147,8 +4147,8 @@
         }
       }
       var H = F.a.jc02ae67,
-        U = F.a.e5e8a899,
-        N = F.a.ge06310e,
+        N = F.a.e5e8a899,
+        U = F.a.ge06310e,
         z = F.a.dd1b86f9,
         B = F.a.ee4b16f8,
         K = 'https://help.twitter.com/managing-your-account/connect-or-revoke-access-to-third-party-apps',
@@ -4182,7 +4182,7 @@
                       h.createElement(C.b, { link: K }, F.a.b63b0b1c),
                     ),
                   }),
-                  t.length ? null : h.createElement(D.a, { header: N, message: B }),
+                  t.length ? null : h.createElement(D.a, { header: U, message: B }),
                   t.map(function (e, t) {
                     var r = '/settings/applications/'.concat(e.app_id)
                     return h.createElement(R.a, {
@@ -4222,7 +4222,7 @@
                         T.a,
                         { location: r, title: H },
                         h.createElement(P.a, {
-                          accessibilityLabel: U,
+                          accessibilityLabel: N,
                           fetchStatus: t,
                           onRequestRetry: this._handleRetry,
                           render: this._render,
@@ -4487,8 +4487,8 @@
         M = r('6vad'),
         x = r('0yYu'),
         H = r('t62R'),
-        U = r('3XMw'),
-        N = r.n(U)
+        N = r('3XMw'),
+        U = r.n(N)
       function z(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -4510,20 +4510,20 @@
           return b()(this, r)
         }
       }
-      var B = N.a.dd823129,
-        K = N.a.c2cb5560,
-        W = N.a.bca43fd0,
-        X = N.a.bef6fc56,
-        Q = N.a.bbe9579b,
-        G = N.a.b850cbd0,
-        Z = N.a.ae1bbb26,
-        q = N.a.i859a9d3,
-        V = N.a.e5e8a899,
-        Y = N.a.cf3e3164,
-        J = N.a.f810f279,
-        $ = N.a.a19f4b20,
-        ee = N.a.e25e40f0,
-        te = N.a.d1baa458,
+      var B = U.a.dd823129,
+        K = U.a.c2cb5560,
+        W = U.a.bca43fd0,
+        X = U.a.bef6fc56,
+        Q = U.a.bbe9579b,
+        G = U.a.b850cbd0,
+        Z = U.a.ae1bbb26,
+        q = U.a.i859a9d3,
+        V = U.a.e5e8a899,
+        Y = U.a.cf3e3164,
+        J = U.a.f810f279,
+        $ = U.a.a19f4b20,
+        ee = U.a.e25e40f0,
+        te = U.a.d1baa458,
         re = { page: 'settings', section: 'sessions' },
         ne = (function (e) {
           f()(r, e)
@@ -4624,7 +4624,7 @@
                           A.a,
                           null,
                           g.createElement(
-                            N.a.I18NFormatMessage,
+                            U.a.I18NFormatMessage,
                             { $i18n: 'i34eeb36', infoText: r > 1 ? $({ num: r - 1 }) : ee },
                             g.createElement(
                               H.b,
@@ -4632,7 +4632,7 @@
                                 link: 'https://help.twitter.com/managing-your-account/connect-or-revoke-access-to-third-party-apps',
                                 withInteractiveStyling: !1,
                               },
-                              N.a.j3223a5b({ learnMoreLabel: q }),
+                              U.a.j3223a5b({ learnMoreLabel: q }),
                             ),
                           ),
                         ),
@@ -4663,7 +4663,7 @@
     n0Rl: function (e, t, r) {
       'use strict'
       r.d(t, 'b', function () {
-        return U
+        return N
       })
       r('OZaJ')
       var n = r('ddV6'),
@@ -4771,7 +4771,7 @@
             a = D()(t, r)
           return n({ fetchStatus: P.a.LOADED, data: a, error: null, retry: j.a })
         },
-        U = function (e, t) {
+        N = function (e, t) {
           if (v.canUseDOM)
             return function (r) {
               var n = r.fetchPolicy,
@@ -4966,8 +4966,8 @@
         M = r('OySi'),
         x = f.a.ed21f885,
         H = f.a.je84decd,
-        U = f.a.de43eaf2,
-        N = f.a.i65802df,
+        N = f.a.de43eaf2,
+        U = f.a.i65802df,
         z = f.a.a21b8ad2,
         B = f.a.hd885aef,
         K = f.a.je4ccd3a,
@@ -5004,7 +5004,7 @@
           D = _.isTrueAndEnabled('subscriptions_feature_1006'),
           R = S.isTrue('subscriptions_management_enabled'),
           A = [
-            { label: U, description: q, link: '/settings/undo_tweet', Icon: j.a, shouldRender: k },
+            { label: N, description: q, link: '/settings/undo_tweet', Icon: j.a, shouldRender: k },
             { label: W, description: X, link: '/settings/t1_labs', Icon: L, shouldRender: C },
           ],
           ce = function () {
@@ -5048,7 +5048,7 @@
                       n.createElement(
                         n.Fragment,
                         null,
-                        n.createElement(g.b, { testID: y, text: N }),
+                        n.createElement(g.b, { testID: y, text: U }),
                         n.createElement(M.a, {
                           description: V,
                           label: z,
@@ -5783,7 +5783,7 @@
       'use strict'
       r.r(t),
         r.d(t, 'default', function () {
-          return U
+          return N
         })
       var n = r('97Jx'),
         a = r.n(n),
@@ -5913,7 +5913,7 @@
         M = s.a.h1abfbcd,
         x = s.a.j748604a,
         H = { page: 'settings', section: 'security_and_account_access' }
-      function U(e) {
+      function N(e) {
         var t = e.location,
           r = (function (e) {
             return [
@@ -6201,14 +6201,13 @@
             return { userId: (null == t ? void 0 : t.id_str) || '' }
           })
           .withAnalytics({ component: 'safety_mode_modal_flagged_accounts' }),
-        i = r('FIs5'),
-        s = (r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('KEM+')),
-        l = r.n(s),
-        u = r('QIgh'),
-        d = r('8UdT'),
-        f = r('88ay'),
-        p = r('Ka9G')
-      function b(e, t) {
+        i = (r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('KEM+')),
+        s = r.n(i),
+        l = r('QIgh'),
+        u = r('8UdT'),
+        d = r('88ay'),
+        f = r('Ka9G')
+      function p(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -6220,53 +6219,74 @@
         }
         return r
       }
-      function m(e) {
+      function b(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? b(Object(r), !0).forEach(function (t) {
-                l()(e, t, r[t])
+            ? p(Object(r), !0).forEach(function (t) {
+                s()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : b(Object(r)).forEach(function (t) {
+            : p(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var y = m(m({}, u.b), {}, l()({}, d.b.User, Object(p.a)({ decoration: f.d }))),
-        h = r('jHSc'),
-        O = r('3XMw'),
-        g = r.n(O),
-        E = r('fTQJ'),
-        v = r('118N'),
-        w = g.a.f2351b97,
-        S = g.a.e9f1fbcb,
-        P = function () {
-          return n.createElement(i.a, { header: S })
+      var m = b(b({}, l.b), {}, s()({}, u.b.User, Object(f.a)({ decoration: d.d }))),
+        y = r('jHSc'),
+        h = r('fTQJ'),
+        O = r('118N'),
+        g = r('t62R'),
+        E = r('rHpw'),
+        v = r('FIs5'),
+        w = r('3XMw'),
+        S = r.n(w),
+        P = S.a.f2351b97,
+        j = S.a.e9f1fbcb,
+        _ = n.createElement(
+          n.Fragment,
+          null,
+          n.createElement(
+            S.a.I18NFormatMessage,
+            { $i18n: 'd724f426' },
+            n.createElement(
+              g.b,
+              { style: { display: 'block', paddingBottom: E.a.theme.spaces.space20 } },
+              S.a.c51dcdfc,
+            ),
+          ),
+          n.createElement(
+            S.a.I18NFormatMessage,
+            { $i18n: 'h3d97f03' },
+            n.createElement(g.b, { link: '/settings/blocked/all' }, S.a.bd0a88c1),
+          ),
+        ),
+        T = function () {
+          return n.createElement(v.a, { header: j, message: _ })
         }
       t.default = o(function (e) {
         var t = e.history,
           r = e.userId,
           a = n.useMemo(
             function () {
-              return Object(v.a)(r)
+              return Object(O.a)(r)
             },
             [r],
           )
         return n.createElement(
-          h.b,
+          y.b,
           {
             backButtonType: 'back',
             history: t,
             onBackClick: function () {
               t.goBack()
             },
-            title: w,
+            title: P,
             withBottomBorder: !1,
           },
-          n.createElement(E.a, { entryConfiguration: y, module: a, renderEmptyState: P, title: w }),
+          n.createElement(h.a, { entryConfiguration: m, module: a, renderEmptyState: T, title: P }),
         )
       })
     },

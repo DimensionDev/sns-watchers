@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [213],
+  [216],
   {
     RfPh: function (e, t, r) {
       'use strict'
@@ -14,8 +14,8 @@
         s = r('ddV6'),
         u = r.n(s),
         p = (r('hBvt'), r('z84I'), r('7xRU'), r('v6aA')),
-        y = r('caTy'),
-        f = r('rcen'),
+        f = r('caTy'),
+        y = r('rcen'),
         b = r('t62R'),
         m = r('rHpw'),
         O = function (e) {
@@ -39,7 +39,7 @@
         h = function (e) {
           var t = e.focused,
             r = e.text
-          return i.createElement(f.a, {
+          return i.createElement(y.a, {
             alignment: r.alignment,
             color: 'gray700',
             entities: r.entities,
@@ -123,11 +123,11 @@
         B = r('5mJL'),
         H = r('xrkw'),
         S = r('RLww'),
-        F = r('2qZs'),
-        A = r('cOhU'),
+        A = r('2qZs'),
+        F = r('cOhU'),
         L = r('GCOQ'),
-        R = r('uCrx'),
-        I = r('Lsrn'),
+        I = r('uCrx'),
+        R = r('Lsrn'),
         V = r('k/Ka')
       function T(e, t) {
         var r = Object.keys(e)
@@ -163,7 +163,7 @@
           U(
             U({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [I.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [R.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           i.createElement(
             'g',
@@ -182,8 +182,8 @@
         K = r('wpLu'),
         Q = r('GcQN'),
         W = r('a5gf'),
-        Z = r('YI7k')
-      function q(e, t) {
+        J = r('YI7k')
+      function Z(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -195,16 +195,16 @@
         }
         return r
       }
-      function J(e) {
+      function q(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? q(Object(r), !0).forEach(function (t) {
+            ? Z(Object(r), !0).forEach(function (t) {
                 c()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : q(Object(r)).forEach(function (t) {
+            : Z(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
@@ -214,10 +214,10 @@
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
         return Object(V.a)(
           'svg',
-          J(
-            J({}, e),
+          q(
+            q({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [I.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [R.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           i.createElement(
             'g',
@@ -288,7 +288,7 @@
           re(
             re({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [I.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [R.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           i.createElement(
             'g',
@@ -336,7 +336,7 @@
           ae(
             ae({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [I.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [R.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           i.createElement(
             'g',
@@ -377,14 +377,14 @@
         }
         return e
       }
-      var ye = function () {
+      var fe = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
         return Object(V.a)(
           'svg',
           pe(
             pe({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [I.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [R.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           i.createElement(
             'g',
@@ -400,8 +400,8 @@
           ),
         )
       }
-      ye.metadata = { width: 24, height: 24 }
-      var fe = ye,
+      fe.metadata = { width: 24, height: 24 }
+      var ye = fe,
         be = r('EHV7'),
         me = r('lUZE'),
         Oe = r('Hp3u')
@@ -439,7 +439,7 @@
           de(
             de({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [I.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [R.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           i.createElement(
             'g',
@@ -489,7 +489,7 @@
           we(
             we({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [I.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [R.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           i.createElement(
             'g',
@@ -541,7 +541,7 @@
           xe(
             xe({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [I.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [R.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           i.createElement(
             'g',
@@ -595,7 +595,7 @@
           Be(
             Be({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [I.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [R.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           i.createElement(
             'g',
@@ -611,11 +611,11 @@
       }
       He.metadata = { width: 24, height: 24 }
       var Se = He,
-        Fe = r('A7Fw'),
-        Ae = 'notification-message-text',
+        Ae = r('A7Fw'),
+        Fe = 'notification-message-text',
         Le = 'notification-tweet-text',
-        Re = 'notification-show-more-text',
-        Ie = 'notification-additional-context',
+        Ie = 'notification-show-more-text',
+        Re = 'notification-additional-context',
         Ve = m.a.create(function (e) {
           return {
             root: {
@@ -651,22 +651,22 @@
         }),
         Te = i.createElement(H.a, { style: [Ve.colorPurple, Ve.icon] }),
         Ue = i.createElement(S.a, { style: [Ve.colorBlue, Ve.icon] }),
-        Ge = i.createElement(F.a, { style: [Ve.colorBlue, Ve.icon] }),
-        Ne = i.createElement(A.a, { style: [Ve.colorBlue, Ve.icon] }),
+        Ge = i.createElement(A.a, { style: [Ve.colorBlue, Ve.icon] }),
+        Ne = i.createElement(F.a, { style: [Ve.colorBlue, Ve.icon] }),
         Ke = i.createElement(L.a, { style: [Ve.colorRed, Ve.icon] }),
-        Qe = i.createElement(R.a, { style: [Ve.colorRed, Ve.icon] }),
+        Qe = i.createElement(I.a, { style: [Ve.colorRed, Ve.icon] }),
         We = i.createElement(N, { style: [Ve.colorRed, Ve.icon] }),
-        Ze = i.createElement(K.a, { style: [Ve.colorDeepGray, Ve.icon] }),
-        qe = i.createElement(Q.a, { style: [Ve.colorBlue, Ve.icon] }),
-        Je = i.createElement(W.a, { style: [Ve.colorDeepGray, Ve.icon] }),
-        Xe = i.createElement(Z.a, { style: [Ve.colorDeepGray, Ve.icon] }),
+        Je = i.createElement(K.a, { style: [Ve.colorDeepGray, Ve.icon] }),
+        Ze = i.createElement(Q.a, { style: [Ve.colorBlue, Ve.icon] }),
+        qe = i.createElement(W.a, { style: [Ve.colorDeepGray, Ve.icon] }),
+        Xe = i.createElement(J.a, { style: [Ve.colorDeepGray, Ve.icon] }),
         Ye = i.createElement(Y, { style: Ve.icon }),
         $e = i.createElement($.a, { style: [Ve.colorBlue, Ve.icon] }),
         et = i.createElement(ee.a, { style: [Ve.colorBlue, Ve.icon] }),
         tt = i.createElement(ce, { style: [Ve.colorDeepGray, Ve.icon] }),
         rt = i.createElement(oe.a, { style: [Ve.colorGreen, Ve.icon] }),
         nt = i.createElement(se, { style: Ve.icon }),
-        ct = i.createElement(fe, { style: Ve.icon }),
+        ct = i.createElement(ye, { style: Ve.icon }),
         ot = i.createElement(v.a, { style: Ve.icon }),
         it = i.createElement(be.a, { style: [Ve.colorPrimary, Ve.icon] }),
         at = i.createElement(me.a, { style: [Ve.twitterIcon, Ve.icon] }),
@@ -674,10 +674,10 @@
         st = i.createElement(he, { style: [Ve.colorOrange, Ve.icon] }),
         ut = i.createElement(Pe, { style: Ve.icon }),
         pt = i.createElement(ke, { style: Ve.icon }),
-        yt = i.createElement(Ce.a, { style: [Ve.colorPlum, Ve.icon] }),
-        ft = i.createElement(ze.a, { style: [Ve.colorRed, Ve.icon] }),
+        ft = i.createElement(Ce.a, { style: [Ve.colorPlum, Ve.icon] }),
+        yt = i.createElement(ze.a, { style: [Ve.colorRed, Ve.icon] }),
         bt = i.createElement(Se, { style: [Ve.colorBlue, Ve.icon] }),
-        mt = i.createElement(Fe.a, { style: [Ve.colorBlue, Ve.icon] }),
+        mt = i.createElement(Ae.a, { style: [Ve.colorBlue, Ve.icon] }),
         Ot = {
           alert_bell_icon: Ue,
           bar_chart_icon: Te,
@@ -689,9 +689,9 @@
           heart_icon: Qe,
           heart_plus_icon: We,
           histogram_icon: tt,
-          lightning_bolt_icon: qe,
-          list_icon: Ze,
-          lock_icon: Je,
+          lightning_bolt_icon: Ze,
+          list_icon: Je,
+          lock_icon: qe,
           magic_rec_icon: at,
           milestone_icon: Ye,
           news_icon: Xe,
@@ -707,8 +707,8 @@
           shield_icon: st,
           spaces_icon: ot,
           stacked_cards_icon: at,
-          super_follows_icon: yt,
-          super_follows_error_icon: ft,
+          super_follows_icon: ft,
+          super_follows_error_icon: yt,
           topic_icon: it,
           trending_icon: at,
           verified_general_icon: bt,
@@ -756,15 +756,15 @@
                 })
               : void 0,
             S = t && !x.length && !b,
-            F = o && o.id && Ot[o.id] ? Ot[o.id] : at,
-            A = n && ('string' == typeof n ? { pathname: n } : n)
+            A = o && o.id && Ot[o.id] ? Ot[o.id] : at,
+            F = n && ('string' == typeof n ? { pathname: n } : n)
           return i.createElement(z.a.Consumer, null, function (e) {
             return i.createElement(
               M.a,
               {
-                accessibilityLabelledBy: h ? [Ae, Le, Re, Ie].join(' ') : void 0,
+                accessibilityLabelledBy: h ? [Fe, Le, Ie, Re].join(' ') : void 0,
                 accessibilityRole: 'article',
-                link: A ? e.withAnchorless(A) : void 0,
+                link: F ? e.withAnchorless(F) : void 0,
                 onBlur: D,
                 onClick: s,
                 onFocus: P,
@@ -773,7 +773,7 @@
               b
                 ? i.createElement(d.a, {
                     contextType: b.contextType,
-                    link: b.landingUrl ? Object(y.b)(b.landingUrl) : void 0,
+                    link: b.landingUrl ? Object(f.b)(b.landingUrl) : void 0,
                     style: Ve.socialContext,
                     text: b.text,
                   })
@@ -781,7 +781,7 @@
               i.createElement(
                 B.a,
                 {
-                  avatarCell: F,
+                  avatarCell: A,
                   avatarCellStyle: Ve.itemIcon,
                   cellStyle: [Ve.itemContent, Ve.timelineRowText, S && Ve.curationPadding],
                 },
@@ -792,10 +792,10 @@
                       i.createElement(k, { userDecorations: H, users: x }),
                     )
                   : null,
-                i.createElement(f.a, {
+                i.createElement(y.a, {
                   alignment: a.alignment,
                   entities: a.entities,
-                  nativeID: h ? Ae : void 0,
+                  nativeID: h ? Fe : void 0,
                   rtl: a.rtl,
                   text: a.text,
                 }),
@@ -894,17 +894,17 @@
             s = (e.module.selectFeedbackActions, e.scribeData),
             u = e.scribeNamespace,
             p = o.content,
-            f = p.socialContext,
+            y = p.socialContext,
             b = p.url
           return {
             isUnread: n,
-            link: b && Object(y.b)(b),
+            link: b && Object(f.b)(b),
             notification: c,
             curationControl: i.createElement(l.a, { feedbackItems: a }),
             onClick: function () {
               return t(Bt(Bt({}, u), {}, { action: 'navigate' }), s)
             },
-            socialContext: f && f.generalContext,
+            socialContext: y && y.generalContext,
           }
         },
         getScribeDataItem: function (e) {
@@ -913,6 +913,42 @@
         },
       })
       t.default = Ht
+    },
+    RoyM: function (e, t, r) {
+      'use strict'
+      var n = r('ERkP'),
+        c = (r('JtPf'), r('7x/C'), r('87if'), r('lTEL'), r('kYxP'), r('zb92')),
+        o = Object(c.a)({
+          loader: function () {
+            return r.e(167).then(r.bind(null, 'ACNv'))
+          },
+        }),
+        i = r('4bW+'),
+        a = r('IG7M'),
+        l = r('rHpw'),
+        s = r('Irs7'),
+        u = l.a.create(function (e) {
+          return { curationControl: { marginStart: e.spaces.space20 } }
+        })
+      t.a = Object(s.a)(function (e) {
+        var t = e.analytics,
+          r = e.feedbackItems,
+          c = e.isDisplayedOnMedia
+        if (r && r.length > 0) {
+          return n.createElement(a.a, {
+            onClick: function () {
+              return t.scribe({ element: 'caret', action: 'click' })
+            },
+            renderActionMenu: function (e) {
+              return n.createElement(o, { actionItems: r, onClose: e })
+            },
+            style: u.curationControl,
+            testID: i.a.caret,
+            withDarkBackground: c,
+          })
+        }
+        return null
+      })
     },
     YI7k: function (e, t, r) {
       'use strict'

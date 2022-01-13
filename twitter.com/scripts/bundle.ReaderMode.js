@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [78, 196],
+  [79, 197],
   {
     HQ0t: function (e, t, n) {
       'use strict'
@@ -105,7 +105,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'ReaderModeScreen', function () {
-          return qe
+          return $e
         })
       var r = n('ddV6'),
         o = n.n(r),
@@ -169,9 +169,9 @@
         C = n.n(k),
         _ = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('KEM+')),
         j = n.n(_),
-        R = n('Lsrn'),
-        x = n('k/Ka')
-      function H(e, t) {
+        x = n('Lsrn'),
+        R = n('k/Ka')
+      function S(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -183,29 +183,29 @@
         }
         return n
       }
-      function P(e) {
+      function H(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? H(Object(n), !0).forEach(function (t) {
+            ? S(Object(n), !0).forEach(function (t) {
                 j()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : H(Object(n)).forEach(function (t) {
+            : S(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var L = function () {
+      var P = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(x.a)(
+        return Object(R.a)(
           'svg',
-          P(
-            P({}, e),
+          H(
+            H({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [R.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [x.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           a.createElement(
             'g',
@@ -216,24 +216,24 @@
           ),
         )
       }
-      L.metadata = { width: 24, height: 24 }
-      var M = L,
-        S = n('hACr'),
-        D = n('lOQR'),
-        B = n('yoO3'),
-        T = n('wiP2'),
-        I = n('fs1G'),
-        N = n('MWbm'),
-        A = n('rHpw'),
-        F = n('I4+6'),
-        z = n('fyKl'),
-        W = n('CKsB'),
-        U = n('cm6r'),
-        K = n('t62R'),
-        V = n('/yvb'),
-        q = n('ML2/'),
-        X = n('C25v'),
-        Z = n('ZGdk'),
+      P.metadata = { width: 24, height: 24 }
+      var T = P,
+        L = n('hACr'),
+        M = n('lOQR'),
+        D = n('yoO3'),
+        I = n('wiP2'),
+        B = n('MWbm'),
+        F = n('rHpw'),
+        N = n('I4+6'),
+        A = n('fyKl'),
+        z = n('CKsB'),
+        W = n('cm6r'),
+        U = n('t62R'),
+        K = n('/yvb'),
+        V = n('ML2/'),
+        q = n('C25v'),
+        X = n('ZGdk'),
+        Z = n('IMYl'),
         Q = n('witV'),
         J = n('2lds')
       function G(e, t) {
@@ -265,12 +265,12 @@
       }
       var $ = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(x.a)(
+        return Object(R.a)(
           'svg',
           Y(
             Y({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [R.a.root, e.style], viewBox: '0 0 39 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [x.a.root, e.style], viewBox: '0 0 39 24' },
           ),
           a.createElement(
             'g',
@@ -289,126 +289,170 @@
         oe = C.a.bb89cf45,
         ae = C.a.a739d4ba,
         ie = C.a.d5270434,
-        ce = C.a.ba5256b1,
-        le = A.a.isDarkMode() ? A.a.theme.colors.gray50 : A.a.theme.colors.gray0,
-        se = F.a.generate({
-          backgroundColor: A.a.theme.colors.primary,
-          color: A.a.theme.colors.cellBackground,
-          customFocusBackgroundColor: le,
-          customHoverBackgroundColor: le,
-          customPressedBackgroundColor: le,
+        ce = C.a.jcf3ff56,
+        le = C.a.f1252ac7,
+        se = C.a.daa0da04,
+        ue = C.a.ba5256b1,
+        de = F.a.isDarkMode() ? F.a.theme.colors.gray50 : F.a.theme.colors.gray0,
+        pe = 'body',
+        me = 'headline1',
+        fe = 'title3',
+        he = N.a.generate({
+          backgroundColor: F.a.theme.colors.primary,
+          color: F.a.theme.colors.cellBackground,
+          customFocusBackgroundColor: de,
+          customHoverBackgroundColor: de,
+          customPressedBackgroundColor: de,
         }),
-        ue = function (e) {
+        be = function (e) {
           var t = e.isBookmarked,
             n = e.isMobileLayout,
             r = e.onAddBookmark,
             c = e.onAddBookmarkFolder,
             l = e.onClose,
-            s = e.onRemoveBookmark,
-            u = a.useContext(i.a).featureSwitches.isTrue('responsive_web_reader_extended_menu'),
-            d = a.useState(!1),
-            p = o()(d, 2),
-            m = p[0],
-            f = p[1],
-            h = function () {
-              f(!m)
+            s = e.onFontSizeChange,
+            u = e.onRemoveBookmark,
+            d = e.tweetTextSize,
+            p = a.useContext(i.a).featureSwitches.isTrue('responsive_web_reader_extended_menu'),
+            m = a.useState(!1),
+            f = o()(m, 2),
+            h = f[0],
+            b = f[1],
+            g = a.useState(!1),
+            y = o()(g, 2),
+            w = y[0],
+            v = y[1],
+            O = function () {
+              b(!h)
             },
-            b = function () {
-              r(), f(!1)
+            E = function () {
+              v(!w)
             },
-            g = function () {
-              c(), f(!1)
+            k = function () {
+              r(), b(!1)
             },
-            y = function () {
-              s(), f(!1)
+            C = function () {
+              c(), b(!1)
             },
-            w = function () {
-              return m
+            _ = function () {
+              u(), b(!1)
+            },
+            j = function (e) {
+              return function () {
+                s(e), v(!1)
+              }
+            },
+            x = function () {
+              return h
                 ? a.createElement(
-                    z.default,
+                    A.default,
                     {
                       isFixed: !0,
-                      onDismiss: h,
+                      onDismiss: O,
                       preferredHorizontalOrientation: 'right',
                       preferredVerticalOrientation: 'up',
                     },
                     t
-                      ? a.createElement(W.a, { Icon: q.a, actionText: oe, onClick: y })
-                      : a.createElement(W.a, { Icon: X.a, actionText: re, onClick: b }),
-                    a.createElement(W.a, { Icon: Z.a, actionText: ae, onClick: g }),
+                      ? a.createElement(z.a, { Icon: V.a, actionText: oe, onClick: _ })
+                      : a.createElement(z.a, { Icon: q.a, actionText: re, onClick: k }),
+                    a.createElement(z.a, { Icon: X.a, actionText: ae, onClick: C }),
                   )
                 : null
             },
-            v = function () {
+            R = function (e) {
+              return e === d
+            },
+            S = function () {
+              return a.createElement(B.a, { style: ge.emptyIconSpacer })
+            },
+            H = function () {
+              return w
+                ? a.createElement(
+                    A.default,
+                    {
+                      isFixed: !0,
+                      onDismiss: E,
+                      preferredHorizontalOrientation: 'right',
+                      preferredVerticalOrientation: 'up',
+                    },
+                    a.createElement(z.a, { Icon: R(pe) ? Z.a : S, actionText: se, onClick: j(pe) }),
+                    a.createElement(z.a, { Icon: R(me) ? Z.a : S, actionText: le, onClick: j(me) }),
+                    a.createElement(z.a, { Icon: R(fe) ? Z.a : S, actionText: ce, onClick: j(fe) }),
+                  )
+                : null
+            },
+            P = function () {
               return t
-                ? a.createElement(Q.a, { style: n ? de.iconMobile : de.icon })
-                : a.createElement(J.a, { style: n ? de.iconMobile : de.icon })
+                ? a.createElement(Q.a, { style: n ? ge.iconMobile : ge.icon })
+                : a.createElement(J.a, { style: n ? ge.iconMobile : ge.icon })
             }
           return a.createElement(
-            N.a,
-            { style: [de.actionBarWrapper, n ? de.actionBarWrapperMobile : void 0] },
+            B.a,
+            { style: [ge.actionBarWrapper, n ? ge.actionBarWrapperMobile : void 0] },
             a.createElement(
-              N.a,
+              B.a,
               {
                 onClick: function (e) {
                   e.stopPropagation()
                 },
-                style: n ? de.outerContainer : void 0,
+                style: n ? ge.outerContainer : void 0,
               },
               a.createElement(
-                N.a,
-                { style: n ? de.actionBarMobile : de.actionBar },
-                n && u
+                B.a,
+                { style: n ? ge.actionBarMobile : ge.actionBar },
+                n && p
                   ? a.createElement(
                       a.Fragment,
                       null,
                       a.createElement(
-                        U.a,
-                        { accessibilityLabel: ie, interactiveStyles: se, onPress: l, style: de.actionItem },
-                        a.createElement(K.b, { color: 'gray700' }, ie),
+                        W.a,
+                        { accessibilityLabel: ie, interactiveStyles: he, onPress: l, style: ge.actionItem },
+                        a.createElement(U.b, { color: 'gray700' }, ie),
                       ),
                       a.createElement(
-                        U.a,
-                        { accessibilityLabel: ne, interactiveStyles: se, onPress: h, style: de.actionItem },
-                        v(),
+                        W.a,
+                        { accessibilityLabel: ne, interactiveStyles: he, onPress: O, style: ge.actionItem },
+                        P(),
                       ),
-                      w(),
+                      x(),
                       a.createElement(
-                        U.a,
-                        { accessibilityLabel: ce, interactiveStyles: se, onPress: I.a, style: de.actionItem },
-                        a.createElement(ee, { style: n ? de.iconMobile : de.icon }),
+                        W.a,
+                        { accessibilityLabel: ue, interactiveStyles: he, onPress: E, style: ge.actionItem },
+                        a.createElement(ee, { style: n ? ge.iconMobile : ge.icon }),
                       ),
+                      H(),
                     )
                   : a.createElement(
                       a.Fragment,
                       null,
                       a.createElement(
-                        N.a,
-                        { style: de.buttonContainer },
-                        a.createElement(V.a, {
-                          icon: a.createElement(te.a, { style: n ? de.iconMobile : de.icon }),
+                        B.a,
+                        { style: ge.buttonContainer },
+                        a.createElement(K.a, {
+                          icon: a.createElement(te.a, { style: n ? ge.iconMobile : ge.icon }),
                           onClick: l,
                           type: 'brandText',
                         }),
                       ),
-                      u
+                      p
                         ? a.createElement(
                             a.Fragment,
                             null,
                             a.createElement(
-                              N.a,
-                              { style: de.buttonContainer },
-                              a.createElement(V.a, { icon: v(), onClick: h, type: 'brandText' }),
-                              w(),
+                              B.a,
+                              { style: ge.buttonContainer },
+                              a.createElement(K.a, { icon: P(), onClick: O, type: 'brandText' }),
+                              x(),
                             ),
                             a.createElement(
-                              N.a,
+                              B.a,
                               null,
-                              a.createElement(V.a, {
-                                icon: a.createElement(ee, { style: n ? de.iconMobile : de.icon }),
-                                onClick: I.a,
+                              a.createElement(K.a, {
+                                icon: a.createElement(ee, { style: n ? ge.iconMobile : ge.icon }),
+                                onClick: E,
                                 type: 'brandText',
                               }),
+                              H(),
                             ),
                           )
                         : null,
@@ -417,7 +461,7 @@
             ),
           )
         },
-        de = A.a.create(function (e) {
+        ge = F.a.create(function (e) {
           return {
             actionBarWrapper: {
               backfaceVisibility: 'hidden',
@@ -459,6 +503,7 @@
               paddingHorizontal: e.spaces.space16,
             },
             buttonContainer: { marginRight: e.spaces.space4 },
+            emptyIconSpacer: { marginRight: 'calc('.concat(e.spaces.space32, ' - ').concat(e.spaces.space1, ')') },
             icon: { color: e.colors.gray700, fontSize: e.spaces.space20, weight: 'bold' },
             iconMobile: { color: e.colors.gray700, weight: 'bold' },
             outerContainer: {
@@ -473,92 +518,96 @@
             },
           }
         }),
-        pe = n('Qwev'),
-        me = function (e, t) {
+        ye = n('Qwev'),
+        we = function (e, t) {
           return t.module.selectInitialFetchStatus(e)
         },
-        fe = function (e, t) {
+        ve = function (e, t) {
           return t.module.selectTopFetchStatus(e)
         },
-        he = Object(p.a)().propsFromState(function () {
-          return { moduleInitialFetchStatus: me, moduleTopFetchStatus: fe }
+        Oe = Object(p.a)().propsFromState(function () {
+          return { moduleInitialFetchStatus: we, moduleTopFetchStatus: ve }
         }),
-        be = n('yhJW'),
-        ge = n('MDbM'),
-        ye = n('BV3T'),
-        we = n('VTxf'),
-        ve = n('SrIh'),
-        Oe = n('fTQJ'),
-        Ee = n('7n04'),
-        ke = n('wgnn'),
-        Ce = C.a.c299a6cf,
-        _e = function (e) {
+        Ee = n('yhJW'),
+        ke = n('MDbM'),
+        Ce = n('BV3T'),
+        _e = n('VTxf'),
+        je = n('SrIh'),
+        xe = n('fTQJ'),
+        Re = n('7n04'),
+        Se = n('wgnn'),
+        He = C.a.c299a6cf,
+        Pe = function (e) {
           return function (t, n) {
             return t && t.content && !!t.content.id && t.content.id === e
           }
         },
-        je = he(function (e) {
+        Te = Oe(function (e) {
           var t = e.focalTweetId,
             n = e.module,
             r = e.moduleInitialFetchStatus,
             o = e.moduleTopFetchStatus,
             i = e.rootTweetId,
-            c = Object(be.a)({
+            c = e.tweetTextSize,
+            l = Object(Ee.a)({
               isCurrentUserRootAuthor: !0,
               withFocalTweetMedia: !0,
               isTransparentCursorsEnabled: !0,
               isReaderMode: !0,
+              tweetTextSize: c,
             }),
-            l = (i !== t && r === ge.a.LOADING) || o === ge.a.LOADING
-          return a.createElement(Oe.a, {
-            anchoring: Ee.a,
-            entryConfiguration: c,
-            header: l ? a.createElement(pe.a, null) : void 0,
-            isInitialFocusEntry: i !== t ? _e(t) : void 0,
+            s = (i !== t && r === ke.a.LOADING) || o === ke.a.LOADING
+          return a.createElement(xe.a, {
+            anchoring: Re.a,
+            entryConfiguration: l,
+            header: s ? a.createElement(ye.a, null) : void 0,
+            isInitialFocusEntry: i !== t ? Pe(t) : void 0,
+            key: c,
             module: n,
             olderAtTop: !0,
             renderEmptyState: function () {
-              return a.createElement(we.a, null)
+              return a.createElement(_e.a, null)
             },
             renderUnavailable: function (e) {
               switch (e) {
-                case ke.a.NOT_FOUND:
-                  return a.createElement(we.a, null)
-                case ke.a.NOT_ALLOWED:
-                  return a.createElement(ye.a, null)
+                case Se.a.NOT_FOUND:
+                  return a.createElement(_e.a, null)
+                case Se.a.NOT_ALLOWED:
+                  return a.createElement(Ce.a, null)
                 default:
-                  return Object(ve.a)('Unhandled timeline unavailable reason: '.concat(e)), null
+                  return Object(je.a)('Unhandled timeline unavailable reason: '.concat(e)), null
               }
             },
-            title: Ce,
+            title: He,
           })
         }),
-        Re = n('Rp9C'),
-        xe = n('7JQg'),
-        He = n('N5qz'),
-        Pe = n('Es6L'),
-        Le = n('HQ0t'),
-        Me = n('k89r'),
-        Se = n('aITJ'),
-        De = n('yw4N'),
-        Be = n('0FVZ'),
-        Te = n('cHvH'),
-        Ie = n('oQhu'),
-        Ne = C.a.b59d8d10,
-        Ae = C.a.h5d6c720,
-        Fe = C.a.af9c8a3d,
-        ze = C.a.c299a6cf,
-        We = C.a.i9a4ca8a,
-        Ue = { page: 'thread', section: 'reader_mode' },
-        Ke = Object(Ie.a)(function (e, t, n) {
+        Le = n('Rp9C'),
+        Me = n('7JQg'),
+        De = n('N5qz'),
+        Ie = n('Es6L'),
+        Be = n('HQ0t'),
+        Fe = n('k89r'),
+        Ne = n('aITJ'),
+        Ae = n('yw4N'),
+        ze = n('0FVZ'),
+        We = n('cHvH'),
+        Ue = n('oQhu'),
+        Ke = n('fs1G'),
+        Ve = C.a.b59d8d10,
+        qe = C.a.h5d6c720,
+        Xe = C.a.af9c8a3d,
+        Ze = C.a.c299a6cf,
+        Qe = C.a.i9a4ca8a,
+        Je = { page: 'thread', section: 'reader_mode' },
+        Ge = Object(Ue.a)(function (e, t, n) {
           return Object(O.a)({ focalTweetId: e, fetchOptions: t, featureSwitches: n, timelineIdPrefix: 'reader' })
         }),
-        Ve = Object(Ie.a)(function (e, t) {
-          var n = (t ? Re.a.getUserItem(t) : {}).is_viewer_follows_user,
+        Ye = Object(Ue.a)(function (e, t) {
+          var n = (t ? Le.a.getUserItem(t) : {}).is_viewer_follows_user,
             r = void 0 !== n && n
-          return { items: [Re.a.forThread(e, r)], tweet_id: e }
+          return { items: [Le.a.forThread(e, r)], tweet_id: e }
         }),
-        qe = function (e) {
+        $e = function (e) {
           var t = e.addToast,
             n = e.authorScreenName,
             r = e.bookmark,
@@ -573,10 +622,14 @@
             b = e.unbookmark,
             g = e.user,
             y = a.useContext(i.a).featureSwitches,
-            w = Object(Me.a)(),
-            v = a.useCallback(
+            w = Object(Fe.a)(),
+            v = a.useState('headline1'),
+            O = o()(v, 2),
+            k = O[0],
+            C = O[1],
+            _ = a.useCallback(
               function () {
-                var e = Ve(s, g)
+                var e = Ye(s, g)
                 g &&
                   s &&
                   w.scribe({
@@ -591,9 +644,9 @@
             )
           a.useEffect(
             function () {
-              v()
+              _()
             },
-            [v],
+            [_],
           ),
             a.useEffect(
               function () {
@@ -601,10 +654,10 @@
               },
               [h],
             )
-          var O = function () {
+          var j = function () {
               u.goBack()
             },
-            k = function () {
+            x = function () {
               w.scribe({
                 action: 'click',
                 element: 'reader_mode_menu_exit_button',
@@ -613,95 +666,98 @@
               }),
                 u.goBack()
             },
-            C = function (e) {
+            R = function (e) {
               e.stopPropagation()
             },
-            _ = a.useCallback(
+            S = a.useCallback(
               function () {
                 return !(!f || !n) && f.toLowerCase() !== n.toLowerCase()
               },
               [n, f],
             ),
-            j = a.useCallback(
+            H = a.useCallback(
               function () {
                 var e = n && s ? '/'.concat(n, '/thread/').concat(s) : '/'
                 u.replace({ pathname: e, query: p.query, state: p.state })
               },
               [n, s, u, p.query, p.state],
             ),
-            R = function () {
+            P = function () {
               w.scribe({
                 action: 'click',
                 element: 'reader_mode_header_icon_disable',
                 page: 'thread',
                 section: 'reader_mode',
               }),
-                u.push({ pathname: x(), query: p.query, state: p.state })
+                u.push({ pathname: T(), query: p.query, state: p.state })
             },
-            x = function () {
+            T = function () {
               return n && s ? '/'.concat(n, '/status/').concat(s) : '/'
             }
           a.useEffect(
             function () {
-              s && n && _() && j()
+              s && n && S() && H()
             },
-            [n, s, j, _],
+            [n, s, H, S],
           )
-          var H = function () {
+          var F = function () {
               u.push({ pathname: '/i/bookmarks/add/', state: { tweet_id: s } })
             },
-            P = function () {
+            N = function () {
               r(s).then(
                 function () {
-                  t({ text: Ne })
+                  t({ text: Ve })
                 },
                 function (e) {
                   l(c.a)(e)
                 },
               )
             },
-            L = function () {
+            A = function () {
               b(s).then(
                 function () {
-                  t({ text: Ae })
+                  t({ text: qe })
                 },
                 function (e) {
                   l(c.a)(e)
                 },
               )
             },
-            M = function (e, t) {
+            z = function (e, t) {
               var n,
-                r = Object(Pe.a)()
-              e && r ? (n = Xe.containerOneCol) : e && (n = Xe.containerOneColSmall)
-              var o = a.createElement(ue, {
+                r = Object(Ie.a)()
+              e && r ? (n = et.containerOneCol) : e && (n = et.containerOneColSmall)
+              var o = a.createElement(be, {
                 isBookmarked: d,
                 isMobileLayout: t,
-                onAddBookmark: P,
-                onAddBookmarkFolder: H,
-                onClose: k,
-                onRemoveBookmark: L,
+                onAddBookmark: N,
+                onAddBookmarkFolder: F,
+                onClose: x,
+                onFontSizeChange: C,
+                onRemoveBookmark: A,
+                tweetTextSize: k,
               })
               return a.createElement(
-                N.a,
-                { onClick: O, style: Xe.pageWrapper },
+                B.a,
+                { onClick: j, style: et.pageWrapper },
                 a.createElement(
-                  De.a,
-                  { accessibilityExpanded: !0, style: Xe.viewport },
+                  Ae.a,
+                  { accessibilityExpanded: !0, style: et.viewport },
                   a.createElement(
-                    N.a,
-                    { style: [Xe.root, e ? Xe.rootMobile : void 0] },
+                    B.a,
+                    { style: [et.root, e ? et.rootMobile : void 0] },
                     e ? null : o,
                     a.createElement(
-                      N.a,
-                      { onClick: C, style: [Xe.container, n] },
+                      B.a,
+                      { onClick: R, style: [et.container, n] },
                       a.createElement(
-                        N.a,
-                        { style: Xe.innerWrapper },
-                        a.createElement(je, {
+                        B.a,
+                        { style: et.innerWrapper },
+                        a.createElement(Te, {
                           focalTweetId: s,
-                          module: Ke(s, { isReaderMode: !0 }, y),
+                          module: Ge(s, { isReaderMode: !0 }, y),
                           rootTweetId: m,
+                          tweetTextSize: k,
                         }),
                         e ? o : null,
                       ),
@@ -710,50 +766,50 @@
                 ),
               )
             },
-            A = function () {
-              return D.a.openApp('twitter://thread/'.concat(s))
+            W = function () {
+              return M.a.openApp('twitter://thread/'.concat(s))
             },
-            F = function () {
-              var e = Se.b.isMobileOS()
+            U = function () {
+              var e = Ne.b.isMobileOS()
               return a.createElement(
-                N.a,
-                { style: Xe.mobileAppBarRightControl },
-                e ? a.createElement(V.a, { onClick: A }, Fe) : null,
-                a.createElement(V.a, { accessibilityLabel: We, icon: Ze, onClick: R, type: 'brandText' }),
+                B.a,
+                { style: et.mobileAppBarRightControl },
+                e ? a.createElement(K.a, { onClick: W }, Xe) : null,
+                a.createElement(K.a, { accessibilityLabel: Qe, icon: tt, onClick: P, type: 'brandText' }),
               )
             }
-          return a.createElement(Te.a, null, function (e) {
+          return a.createElement(We.a, null, function (e) {
             return (function (e) {
               var t,
-                n = He.a.isOneColumnSquishedLayout(e),
-                r = n || He.a.isOneColumnLayout(e)
+                n = De.a.isOneColumnSquishedLayout(e),
+                r = n || De.a.isOneColumnLayout(e)
               return a.createElement(
                 a.Fragment,
                 null,
-                a.createElement(T.a.Configure, {
-                  onBackClick: k,
-                  rightControl: F(),
+                a.createElement(I.a.Configure, {
+                  onBackClick: x,
+                  rightControl: U(),
                   sideNav: a.createElement(a.Fragment, null),
-                  title: a.createElement(Le.a, { style: Xe.titleIcon, text: ze }),
+                  title: a.createElement(Be.a, { style: et.titleIcon, text: Ze }),
                   withForceTopNav: n,
                 }),
                 a.createElement(
-                  xe.b,
-                  { data: { tweet_id: s }, namespace: Ue },
-                  a.createElement(B.a, null, n ? M(r, n) : a.createElement(Be.a.Modal, null, M(r, n))),
+                  Me.b,
+                  { data: { tweet_id: s }, namespace: Je },
+                  a.createElement(D.a, null, n ? z(r, n) : a.createElement(ze.a.Modal, null, z(r, n))),
                 ),
-                a.createElement(S.a, {
+                a.createElement(L.a, {
                   handlers: {
                     esc:
                       ((t = window.location.pathname.match(/\/@?([_\w+]+)\/thread\/([\d]+)\/?/) || []),
-                      o()(t, 1)[0] ? O : I.a),
+                      o()(t, 1)[0] ? j : Ke.a),
                   },
                 }),
               )
             })(e.windowWidth)
           })
         },
-        Xe = A.a.create(function (e) {
+        et = F.a.create(function (e) {
           return {
             actionItem: {
               alignItems: 'center',
@@ -796,15 +852,15 @@
             viewport: { backgroundColor: e.colors.cellBackground, overflow: 'auto', width: '100%', maxHeight: '100%' },
           }
         }),
-        Ze = a.createElement(M, { style: Xe.icon }),
-        Qe = v(qe)
-      t.default = Qe
+        tt = a.createElement(T, { style: et.icon }),
+        nt = v($e)
+      t.default = nt
     },
     fyKl: function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'default', function () {
-          return N
+          return F
         })
       n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('OZaJ')
       var r = n('97Jx'),
@@ -831,14 +887,14 @@
         C = n('//dC'),
         _ = n('lHOd'),
         j = n('Oe3h'),
-        R = n('0FVZ'),
-        x = n('7N4s'),
-        H = n('cHvH'),
-        P = n('rHpw'),
-        L = n('i4Oy'),
-        M = n('shC7'),
-        S = n('MWbm')
-      function D(e) {
+        x = n('0FVZ'),
+        R = n('7N4s'),
+        S = n('cHvH'),
+        H = n('rHpw'),
+        P = n('i4Oy'),
+        T = n('shC7'),
+        L = n('MWbm')
+      function M(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -859,7 +915,7 @@
           return f()(this, n)
         }
       }
-      function B(e, t) {
+      function D(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -871,28 +927,28 @@
         }
         return n
       }
-      function T(e) {
+      function I(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? B(Object(n), !0).forEach(function (t) {
+            ? D(Object(n), !0).forEach(function (t) {
                 y()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : B(Object(n)).forEach(function (t) {
+            : D(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var I = P.a.create(function (e) {
+      var B = H.a.create(function (e) {
           return {
             rootNarrow: { maxWidth: '75%' },
             rootWide: { maxWidth: 'calc('.concat(e.spaces.space64, ' * 6)') },
-            anchor: P.a.absoluteFillObject,
-            mask: T(T({}, P.a.absoluteFillObject), {}, { position: 'fixed' }),
-            bodyRectHelper: T(T({}, P.a.absoluteFillObject), {}, { bottom: void 0 }),
+            anchor: H.a.absoluteFillObject,
+            mask: I(I({}, H.a.absoluteFillObject), {}, { position: 'fixed' }),
+            bodyRectHelper: I(I({}, H.a.absoluteFillObject), {}, { bottom: void 0 }),
             content: {
               borderRadius: e.borderRadii.small,
               position: 'absolute',
@@ -904,9 +960,9 @@
             contentFixed: { position: 'fixed', overflowY: 'auto', overscrollBehavior: 'contain' },
           }
         }),
-        N = (function (e) {
+        F = (function (e) {
           p()(n, e)
-          var t = D(n)
+          var t = M(n)
           function n(e, r) {
             var o
             return (
@@ -948,12 +1004,12 @@
                     r = n.left,
                     a = n.top,
                     i = n.width,
-                    c = L.a.get('window'),
+                    c = P.a.get('window'),
                     l = c.height,
                     s = c.width,
                     u = { left: 0, top: 0, height: 0, width: 0 }
                   o.props.position
-                    ? (u = T(T({}, u), o.props.position))
+                    ? (u = I(I({}, u), o.props.position))
                     : o._anchorNode &&
                       o._anchorNode instanceof window.HTMLElement &&
                       (u = o._anchorNode.getBoundingClientRect())
@@ -971,7 +1027,7 @@
                     E = l - f >= e,
                     k = o.props.preferredVerticalOrientation,
                     C = (function (e) {
-                      return M.a.getConstants().isRTL ? ('left' === e ? 'right' : 'left') : e
+                      return T.a.getConstants().isRTL ? ('left' === e ? 'right' : 'left') : e
                     })(o.props.preferredHorizontalOrientation),
                     _ =
                       o.state.verticalOrientation ||
@@ -989,11 +1045,11 @@
                           r = e.horizontalPreference
                         return !t || ('left' !== r && n) ? 'right' : 'left'
                       })({ horizontalPreference: C, canOrientLeft: w, canOrientRight: O }),
-                    R = o.props.isFixed ? m : g,
-                    x = o.props.isFixed ? f : y,
-                    H = 'up' === _ ? x + p - e : x,
-                    P = 'left' === j ? s - R - h - b : s - R - t - b
-                  o.setState({ top: Math.max(H, 0), right: P, verticalOrientation: _, horizontalOrientation: j })
+                    x = o.props.isFixed ? m : g,
+                    R = o.props.isFixed ? f : y,
+                    S = 'up' === _ ? R + p - e : R,
+                    H = 'left' === j ? s - x - h - b : s - x - t - b
+                  o.setState({ top: Math.max(S, 0), right: H, verticalOrientation: _, horizontalOrientation: j })
                 }
               }),
               (o.state = Object.freeze({})),
@@ -1007,13 +1063,13 @@
               {
                 key: 'componentDidMount',
                 value: function () {
-                  ;(this._mounted = !0), L.a.addEventListener('change', this._scheduleDebouncedUpdate)
+                  ;(this._mounted = !0), P.a.addEventListener('change', this._scheduleDebouncedUpdate)
                 },
               },
               {
                 key: 'componentWillUnmount',
                 value: function () {
-                  ;(this._mounted = !1), L.a.removeEventListener('change', this._scheduleDebouncedUpdate)
+                  ;(this._mounted = !1), P.a.removeEventListener('change', this._scheduleDebouncedUpdate)
                 },
               },
               {
@@ -1034,23 +1090,23 @@
                     m = void 0 === d,
                     f = 'calc(100vh - '.concat(d || 0, 'px)'),
                     h = [
-                      I.content,
-                      m && I.contentInitialRender,
-                      i && [I.contentFixed, { maxHeight: f }],
+                      B.content,
+                      m && B.contentInitialRender,
+                      i && [B.contentFixed, { maxHeight: f }],
                       {
                         top: d,
-                        right: M.a.getConstants().isRTL ? void 0 : u,
-                        left: M.a.getConstants().isRTL ? u : void 0,
+                        right: T.a.getConstants().isRTL ? void 0 : u,
+                        left: T.a.getConstants().isRTL ? u : void 0,
                       },
                     ]
                   return w.createElement(
-                    S.a,
-                    { ref: this._receiveAnchorRef, style: I.anchor },
+                    L.a,
+                    { ref: this._receiveAnchorRef, style: B.anchor },
                     w.createElement(
-                      R.a.Dropdown,
+                      x.a.Dropdown,
                       null,
                       w.createElement(_.a.Consumer, null, function (t) {
-                        return w.createElement(x.b.Consumer, null, function (i) {
+                        return w.createElement(R.b.Consumer, null, function (i) {
                           var s = i.isModal
                           return w.createElement(
                             C.a,
@@ -1058,17 +1114,17 @@
                             w.createElement(
                               k.a,
                               { withKeyboardNavigation: l },
-                              w.createElement(S.a, { onClick: c, style: I.mask }),
-                              w.createElement(S.a, { ref: e._receiveBodyRectHelperRef, style: I.bodyRectHelper }),
-                              w.createElement(H.a, null, function (t) {
+                              w.createElement(L.a, { onClick: c, style: B.mask }),
+                              w.createElement(L.a, { ref: e._receiveBodyRectHelperRef, style: B.bodyRectHelper }),
+                              w.createElement(S.a, null, function (t) {
                                 var i = t.windowWidth
                                 return w.createElement(
-                                  S.a,
+                                  L.a,
                                   {
                                     accessibilityRole: 'menu',
                                     onKeyUp: e._handleEsc,
                                     ref: e._receiveContentRef,
-                                    style: [i < P.a.theme.breakpoints.medium ? I.rootNarrow : I.rootWide, h],
+                                    style: [i < H.a.theme.breakpoints.medium ? B.rootNarrow : B.rootWide, h],
                                   },
                                   m && 'slide' === r
                                     ? a
@@ -1087,7 +1143,7 @@
                                             j.a,
                                             { id: 'Dropdown', minimizeReporting: t },
                                             function (e, t) {
-                                              return w.createElement(S.a, o()({ ref: e() }, t({})), a)
+                                              return w.createElement(L.a, o()({ ref: e() }, t({})), a)
                                             },
                                           )
                                         },
@@ -1106,7 +1162,7 @@
             n
           )
         })(w.Component)
-      y()(N, 'defaultProps', {
+      y()(F, 'defaultProps', {
         preferredHorizontalOrientation: 'left',
         preferredVerticalOrientation: 'down',
         animateType: 'slide',

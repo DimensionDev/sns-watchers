@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [49, 10, 18, 169],
+  [50, 10, 18, 170],
   {
     '+0pD': function (e, t) {
       var n =
@@ -1667,7 +1667,7 @@
       var r = n('zb92')
       t.a = Object(r.a)({
         loader: function () {
-          return Promise.all([n.e(22), n.e(162)])
+          return Promise.all([n.e(22), n.e(163)])
             .then(n.bind(null, 'u2Vg'))
             .then(function (e) {
               return { default: e.__DANGEROUS_IMPORT__ }
@@ -7111,7 +7111,6 @@
               onPress: function () {
                 r ? (o ? (r.pause(), e.onPause()) : (r.play(), e.onPlay())) : e.onPlayRequest()
               },
-              size: 'medium',
               type: 'onMediaText',
             }),
             b.createElement(ye.a, { style: To.durationSpacer }),
