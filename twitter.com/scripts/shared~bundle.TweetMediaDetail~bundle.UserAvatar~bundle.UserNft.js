@@ -986,7 +986,6 @@
                         locked: i,
                         onChange: a,
                         shouldAlwaysEnableKeyboardNavigation: !0,
-                        withReducedNavButtonClickArea: s,
                       },
                       e,
                     )

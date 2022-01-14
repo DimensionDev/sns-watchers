@@ -4,7 +4,7 @@
     '++ci': function (e, a, n) {
       'use strict'
       n.r(a)
-      var l = {
+      var t = {
         argumentDefinitions: [],
         kind: 'Fragment',
         metadata: null,
@@ -14,13 +14,13 @@
         abstractKey: null,
         hash: 'cdefa7c1e3e5ea2b06f5a3ebf4c77640',
       }
-      a.default = l
+      a.default = t
     },
     '1Oiz': function (e, a, n) {
       'use strict'
       n.r(a)
-      var l,
-        t = {
+      var t,
+        l = {
           argumentDefinitions: [],
           kind: 'Fragment',
           metadata: null,
@@ -29,21 +29,21 @@
             { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null },
             {
               kind: 'InlineFragment',
-              selections: (l = [{ alias: null, args: null, kind: 'ScalarField', name: 'address', storageKey: null }]),
+              selections: (t = [{ alias: null, args: null, kind: 'ScalarField', name: 'address', storageKey: null }]),
               type: 'ERC721',
               abstractKey: null,
             },
-            { kind: 'InlineFragment', selections: l, type: 'ERC1155', abstractKey: null },
+            { kind: 'InlineFragment', selections: t, type: 'ERC1155', abstractKey: null },
           ],
           type: 'SmartContract',
           abstractKey: '__isSmartContract',
         }
-      ;(t.hash = 'd6b701feecbeb528e41c1ca6ab7e67f7'), (a.default = t)
+      ;(l.hash = 'd6b701feecbeb528e41c1ca6ab7e67f7'), (a.default = l)
     },
     '21nk': function (e, a, n) {
       'use strict'
-      var l = n('I9iR'),
-        t = n('3KVO'),
+      var t = n('I9iR'),
+        l = n('3KVO'),
         r = n('yLYC'),
         i = n('Ud88'),
         s = (n('/2Cm'), n('aQQo').useTrackLoadQueryInRender),
@@ -61,7 +61,7 @@
           y = a.networkCacheConfig,
           k = r(e, p, y)
         if ('PreloadedQuery_DEPRECATED' === a.kind)
-          k.request.node.params.name !== a.name && l(!1),
+          k.request.node.params.name !== a.name && t(!1),
             (o = {
               componentDisplayName: 'usePreloadedQuery()',
               fetchKey: m,
@@ -75,28 +75,28 @@
               renderPolicy: null == n ? void 0 : n.UNSTABLE_renderPolicy,
             })
         else {
-          var _ = c(d, k)
+          var v = c(d, k)
           o = {
             componentDisplayName: 'usePreloadedQuery()',
-            fetchObservable: null != g && d === a.environment ? g.ifEmpty(_) : (a.environment, _),
+            fetchObservable: null != g && d === a.environment ? g.ifEmpty(v) : (a.environment, v),
             fetchKey: m,
             fetchPolicy: f,
             query: k,
             renderPolicy: null == n ? void 0 : n.UNSTABLE_renderPolicy,
           }
         }
-        return t(o)
+        return l(o)
       }
     },
     '23An': function (e, a, n) {
       'use strict'
-      var l = n('ERkP'),
-        t = l.useEffect,
-        r = l.useRef
+      var t = n('ERkP'),
+        l = t.useEffect,
+        r = t.useRef
       e.exports = function () {
         var e = r(!0)
         return (
-          t(function () {
+          l(function () {
             return (
               (e.current = !0),
               function () {
@@ -112,13 +112,13 @@
       'use strict'
       n.r(a),
         n.d(a, 'userNftContainerQuery', function () {
-          return sa
+          return fa
         }),
         n.d(a, 'UserNftScreenContainer', function () {
-          return ua
+          return pa
         })
-      var l,
-        t = n('ERkP'),
+      var t,
+        l = n('ERkP'),
         r = n('GOQE'),
         i = (n('enFi'), n('rZeG')),
         s = n('yoO3'),
@@ -132,37 +132,37 @@
         p = n.n(g),
         y = (n('z84I'), n('ho0z'), n('i4Oy')),
         k = n('v//M'),
-        _ = n('3XMw'),
-        v = n.n(_),
-        b = n('2doW'),
-        F = n('UPvq'),
-        h = (n('uFXj'), n('t62R')),
+        v = n('3XMw'),
+        b = n.n(v),
+        _ = n('2doW'),
+        h = n('UPvq'),
+        F = (n('uFXj'), n('t62R')),
         E = n('pjBI'),
         K = n('rHpw'),
         S = n('jAXQ'),
         C = n.n(S),
-        N = n('U+bB'),
-        T = n('MWbm'),
-        w = v.a.e83b141e,
-        D = void 0 !== l ? l : (l = n('PfIX')),
-        O = function (e) {
+        O = n('U+bB'),
+        w = n('MWbm'),
+        N = b.a.e83b141e,
+        T = void 0 !== t ? t : (t = n('PfIX')),
+        D = function (e) {
           var a,
             n,
-            l,
+            t,
             r,
             i,
             s = e.color,
             o = void 0 === s ? 'normal' : s,
             u = e.isCondensed,
             c = e.openseaNftMetadataData,
-            d = C()(D, c)
+            d = C()(T, c)
           if (
             !(
               (null != d && null !== (a = d.collection) && void 0 !== a && a.name) ||
               (null != d && null !== (n = d.collection) && void 0 !== n && n.metadata)
             ) ||
             'OpenseaCollectionMetadata' !==
-              (null == d || null === (l = d.collection) || void 0 === l || null === (r = l.metadata) || void 0 === r
+              (null == d || null === (t = d.collection) || void 0 === t || null === (r = t.metadata) || void 0 === r
                 ? void 0
                 : r.__typename)
           )
@@ -173,30 +173,30 @@
             p = g.image_url,
             y = g.verified,
             k = u || !y,
-            _ = k ? 'subtext1' : 'body',
-            b = k ? M.collectionImageInline : M.collectionImage,
-            F =
+            v = k ? 'subtext1' : 'body',
+            _ = k ? M.collectionImageInline : M.collectionImage,
+            h =
               ((m = null === (i = d.collection) || void 0 === i ? void 0 : i.name),
               (f = d.creator_username),
               m && f
-                ? t.createElement(
-                    h.b,
-                    { color: o, size: _, weight: 'bold' },
-                    t.createElement(v.a.I18NFormatMessage, { $i18n: 'fbe06ae0' }, m, f),
+                ? l.createElement(
+                    F.b,
+                    { color: o, size: v, weight: 'bold' },
+                    l.createElement(b.a.I18NFormatMessage, { $i18n: 'fbe06ae0' }, m, f),
                   )
                 : m
-                ? t.createElement(h.b, { color: o, size: _ }, m)
+                ? l.createElement(F.b, { color: o, size: v }, m)
                 : null)
-          return t.createElement(
-            T.a,
+          return l.createElement(
+            w.a,
             { style: M.collectionTitle },
-            p && t.createElement(N.a, { alt: '', source: p, style: b }),
-            t.createElement(
-              T.a,
+            p && l.createElement(O.a, { alt: '', source: p, style: _ }),
+            l.createElement(
+              w.a,
               null,
               k
-                ? t.createElement(E.a, { color: o }, F, y ? t.createElement(h.b, { color: o, size: _ }, w) : null)
-                : t.createElement(t.Fragment, null, F, y ? t.createElement(h.b, { color: 'gray700' }, w) : null),
+                ? l.createElement(E.a, { color: o }, h, y ? l.createElement(F.b, { color: o, size: v }, N) : null)
+                : l.createElement(l.Fragment, null, h, y ? l.createElement(F.b, { color: 'gray700' }, N) : null),
             ),
           )
         },
@@ -217,16 +217,16 @@
             collectionTitle: { display: 'flex', flexDirection: 'row', marginBottom: e.spaces.space12 },
           }
         }),
-        L = n('iyiT'),
-        P = n('Wc+h')
+        P = n('iyiT'),
+        L = n('Wc+h')
       function R(e) {
         var a = e.text
-        return t.createElement(h.b, { size: 'headline2', style: x.heading, weight: 'bold' }, a)
+        return l.createElement(F.b, { size: 'headline2', style: x.heading, weight: 'bold' }, a)
       }
       var x = K.a.create(function (e) {
           return { heading: { marginTop: e.spaces.space24, marginBottom: e.spaces.space12 } }
         }),
-        I =
+        j =
           (n('2G9S'),
           function (e) {
             if (e.length > 11) {
@@ -236,58 +236,58 @@
             }
             return e
           }),
-        A = n('Irs7')
+        I = n('Irs7')
+      function A(e) {
+        var a = e.children
+        return l.createElement(w.a, { style: z.list }, a)
+      }
       function Q(e) {
         var a = e.children
-        return t.createElement(T.a, { style: G.list }, a)
+        return l.createElement(w.a, { style: z.item }, a)
       }
       function U(e) {
-        var a = e.children
-        return t.createElement(T.a, { style: G.item }, a)
-      }
-      function j(e) {
         var a = e.children,
           n = e.style
-        return t.createElement(h.b, { style: [n, G.itemTitle] }, a)
+        return l.createElement(F.b, { style: [n, z.itemTitle] }, a)
       }
       var B,
         W,
-        G = K.a.create(function (e) {
+        z = K.a.create(function (e) {
           return {
             list: { display: 'flex', flexWrap: 'wrap', flexDirection: 'row', justifyContent: 'space-between' },
             item: { width: '40%', marginBottom: e.spaces.space16 },
             itemTitle: { color: e.colors.gray700 },
           }
         }),
-        q = v.a.dcbace0b,
-        z = v.a.d4741cb3,
-        H = v.a.b748db08,
-        V = v.a.accae48c,
-        Y = v.a.h8fe11ab,
-        Z = void 0 !== B ? B : (B = n('EPqq')),
-        X = void 0 !== W ? W : (W = n('EWGL')),
+        G = b.a.dcbace0b,
+        q = b.a.d4741cb3,
+        H = b.a.b748db08,
+        V = b.a.accae48c,
+        Z = b.a.h8fe11ab,
+        X = void 0 !== B ? B : (B = n('EPqq')),
+        Y = void 0 !== W ? W : (W = n('EWGL')),
         J = function (e) {
-          var a = Object(A.b)(),
-            n = C()(Z, e.nft),
-            l = C()(X, e.smartContract),
+          var a = Object(I.b)(),
+            n = C()(X, e.nft),
+            t = C()(Y, e.smartContract),
             r =
-              'ERC721' === (null == l ? void 0 : l.__typename) || 'ERC1155' === (null == l ? void 0 : l.__typename)
-                ? l
+              'ERC721' === (null == t ? void 0 : t.__typename) || 'ERC1155' === (null == t ? void 0 : t.__typename)
+                ? t
                 : void 0
           return r
-            ? t.createElement(
-                T.a,
+            ? l.createElement(
+                w.a,
                 null,
-                t.createElement(R, { text: q }),
-                t.createElement(
-                  Q,
+                l.createElement(R, { text: G }),
+                l.createElement(
+                  A,
                   null,
-                  t.createElement(
-                    U,
+                  l.createElement(
+                    Q,
                     null,
-                    t.createElement(j, null, H),
-                    t.createElement(
-                      h.b,
+                    l.createElement(U, null, H),
+                    l.createElement(
+                      F.b,
                       {
                         color: 'normal',
                         link: 'https://etherscan.io/address/'.concat(r.address),
@@ -296,41 +296,41 @@
                         },
                         weight: 'medium',
                       },
-                      I(r.address),
-                      t.createElement(P.a, null),
+                      j(r.address),
+                      l.createElement(L.a, null),
                     ),
                   ),
-                  t.createElement(
-                    U,
+                  l.createElement(
+                    Q,
                     null,
-                    t.createElement(j, null, V),
-                    t.createElement(h.b, { weight: 'medium' }, I(n.token_id)),
+                    l.createElement(U, null, V),
+                    l.createElement(F.b, { weight: 'medium' }, j(n.token_id)),
                   ),
-                  t.createElement(
-                    U,
+                  l.createElement(
+                    Q,
                     null,
-                    t.createElement(j, null, z),
-                    t.createElement(h.b, { weight: 'medium' }, r.network),
+                    l.createElement(U, null, q),
+                    l.createElement(F.b, { weight: 'medium' }, r.network),
                   ),
-                  t.createElement(
-                    U,
+                  l.createElement(
+                    Q,
                     null,
-                    t.createElement(j, null, Y),
-                    t.createElement(h.b, { weight: 'medium' }, r.__typename),
+                    l.createElement(U, null, Z),
+                    l.createElement(F.b, { weight: 'medium' }, r.__typename),
                   ),
                 ),
               )
             : null
         },
-        $ = (n('jQ/y'), n('hBvt'), v.a.ffd9cfe6)
+        $ = (n('jQ/y'), n('hBvt'), b.a.ffd9cfe6)
       function ee(e) {
         var a = e.onPress
-        return t.createElement(h.b, { color: 'link', onPress: a, style: fe.link, weight: 'bold' }, $)
+        return l.createElement(F.b, { color: 'link', onPress: a, style: fe.link, weight: 'bold' }, $)
       }
       var ae,
         ne,
-        le,
         te,
+        le,
         re,
         ie,
         se,
@@ -342,19 +342,19 @@
         fe = K.a.create(function (e) {
           return { link: { marginVertical: e.spaces.space12 } }
         }),
-        ge = v.a.ddf0ba7e,
+        ge = b.a.ddf0ba7e,
         pe = void 0 !== ae ? ae : (ae = n('rZgY')),
         ye = function (e) {
           var a,
             n,
-            l,
+            t,
             r,
             i = C()(pe, e.openseaNftMetadataData),
-            s = t.useState(!1),
+            s = l.useState(!1),
             o = p()(s, 2),
             u = o[0],
             c = o[1],
-            d = t.useState(!1),
+            d = l.useState(!1),
             m = p()(d, 2),
             f = m[0],
             g = m[1]
@@ -364,20 +364,20 @@
               (null != i && null !== (n = i.collection) && void 0 !== n && n.metadata)
             ) ||
             'OpenseaCollectionMetadata' !==
-              (null == i || null === (l = i.collection) || void 0 === l || null === (r = l.metadata) || void 0 === r
+              (null == i || null === (t = i.collection) || void 0 === t || null === (r = t.metadata) || void 0 === r
                 ? void 0
                 : r.__typename)
           )
             return null
           var y = i.collection.metadata.description
-          return t.createElement(
-            T.a,
+          return l.createElement(
+            w.a,
             null,
-            t.createElement(R, { text: ge }),
-            t.createElement(O, { openseaNftMetadataData: i }),
-            y ? t.createElement(h.b, { getTextOverflow: c, numberOfLines: f ? void 0 : 4 }, y) : null,
+            l.createElement(R, { text: ge }),
+            l.createElement(D, { openseaNftMetadataData: i }),
+            y ? l.createElement(F.b, { getTextOverflow: c, numberOfLines: f ? void 0 : 4 }, y) : null,
             y && u && !f
-              ? t.createElement(ee, {
+              ? l.createElement(ee, {
                   onPress: function () {
                     g(!f)
                   },
@@ -385,30 +385,30 @@
               : null,
           )
         },
-        ke = v.a.e6aa52a9,
-        _e = void 0 !== ne ? ne : (ne = n('Gaii')),
-        ve = void 0 !== le ? le : (le = n('6o1g')),
-        be = function (e) {
-          var a = Object(A.b)(),
-            n = C()(_e, e.openseaNftMetadataData),
-            l = C()(ve, e.smartContractData),
+        ke = b.a.e6aa52a9,
+        ve = void 0 !== ne ? ne : (ne = n('Gaii')),
+        be = void 0 !== te ? te : (te = n('6o1g')),
+        _e = function (e) {
+          var a = Object(I.b)(),
+            n = C()(ve, e.openseaNftMetadataData),
+            t = C()(be, e.smartContractData),
             r = n.creator_address,
             i = n.creator_username,
             s =
-              'ERC721' === (null == l ? void 0 : l.__typename) || 'ERC1155' === (null == l ? void 0 : l.__typename)
-                ? null == l
+              'ERC721' === (null == t ? void 0 : t.__typename) || 'ERC1155' === (null == t ? void 0 : t.__typename)
+                ? null == t
                   ? void 0
-                  : l.network
+                  : t.network
                 : '',
             o = i ? 'https://opensea.io/'.concat(i) : r ? 'https://opensea.io/'.concat(r) : ''
           return r || (i && s)
-            ? t.createElement(
-                T.a,
+            ? l.createElement(
+                w.a,
                 null,
-                t.createElement(R, { text: ke }),
+                l.createElement(R, { text: ke }),
                 r
-                  ? t.createElement(
-                      h.b,
+                  ? l.createElement(
+                      F.b,
                       {
                         color: 'normal',
                         link: o,
@@ -417,39 +417,39 @@
                         },
                         weight: 'bold',
                       },
-                      I(r),
-                      o ? t.createElement(P.a, null) : null,
+                      j(r),
+                      o ? l.createElement(L.a, null) : null,
                     )
                   : null,
                 s && i
-                  ? t.createElement(E.a, null, t.createElement(h.b, null, i), t.createElement(h.b, null, s))
+                  ? l.createElement(E.a, null, l.createElement(F.b, null, i), l.createElement(F.b, null, s))
                   : null,
               )
             : null
         },
-        Fe = v.a.e36287c6,
-        he = function (e) {
-          var a = C()(void 0 !== te ? te : (te = n('++ci')), e.openseaNftMetadataData),
-            l = t.useState(!1),
-            r = p()(l, 2),
+        he = b.a.e36287c6,
+        Fe = function (e) {
+          var a = C()(void 0 !== le ? le : (le = n('++ci')), e.openseaNftMetadataData),
+            t = l.useState(!1),
+            r = p()(t, 2),
             i = r[0],
             s = r[1],
-            o = t.useState(!1),
+            o = l.useState(!1),
             u = p()(o, 2),
             c = u[0],
             d = u[1]
           return null != a && a.description
-            ? t.createElement(
-                T.a,
+            ? l.createElement(
+                w.a,
                 null,
-                t.createElement(R, { text: Fe }),
-                t.createElement(
-                  h.b,
+                l.createElement(R, { text: he }),
+                l.createElement(
+                  F.b,
                   { getTextOverflow: s, numberOfLines: c ? void 0 : 4 },
                   null == a ? void 0 : a.description,
                 ),
                 i && !c
-                  ? t.createElement(ee, {
+                  ? l.createElement(ee, {
                       onPress: function () {
                         d(!c)
                       },
@@ -458,24 +458,24 @@
               )
             : null
         },
-        Ee = v.a.eb023c93,
-        Ke = v.a.ad5dfe8f,
-        Se = v.a.hb7d1bb4,
-        Ce = v.a.i859a9d3,
-        Ne = void 0 !== re ? re : (re = n('R+uT')),
-        Te = void 0 !== ie ? ie : (ie = n('1Oiz')),
-        we = function (e) {
-          var a = Object(A.b)(),
-            n = t.useState(!1),
-            l = p()(n, 2),
-            r = l[0],
-            i = l[1],
-            s = t.useState(!1),
+        Ee = b.a.eb023c93,
+        Ke = b.a.ad5dfe8f,
+        Se = b.a.hb7d1bb4,
+        Ce = b.a.i859a9d3,
+        Oe = void 0 !== re ? re : (re = n('R+uT')),
+        we = void 0 !== ie ? ie : (ie = n('1Oiz')),
+        Ne = function (e) {
+          var a = Object(I.b)(),
+            n = l.useState(!1),
+            t = p()(n, 2),
+            r = t[0],
+            i = t[1],
+            s = l.useState(!1),
             o = p()(s, 2),
             u = o[0],
             c = o[1],
-            d = C()(Ne, e.nft),
-            m = C()(Te, e.smartContract),
+            d = C()(Oe, e.nft),
+            m = C()(we, e.smartContract),
             f =
               'ERC721' === (null == m ? void 0 : m.__typename) || 'ERC1155' === (null == m ? void 0 : m.__typename)
                 ? m
@@ -484,32 +484,32 @@
               null != f && f.address && d.token_id
                 ? 'https://opensea.io/assets/'.concat(f.address, '/').concat(d.token_id)
                 : 'https://opensea.io/'
-          return t.createElement(
-            T.a,
+          return l.createElement(
+            w.a,
             null,
-            t.createElement(R, { text: Ee }),
-            t.createElement(h.b, { getTextOverflow: i, numberOfLines: u ? void 0 : 4 }, Ke),
-            t.createElement(
-              h.b,
+            l.createElement(R, { text: Ee }),
+            l.createElement(F.b, { getTextOverflow: i, numberOfLines: u ? void 0 : 4 }, Ke),
+            l.createElement(
+              F.b,
               {
                 link: 'https://help.twitter.com/en/using-twitter/twitter-blue-labs#nft',
-                style: De.helpLink,
+                style: Te.helpLink,
                 weight: 'bold',
               },
               Ce,
             ),
             r && !u
-              ? t.createElement(ee, {
+              ? l.createElement(ee, {
                   onPress: function () {
                     c(!u)
                   },
                 })
               : null,
-            t.createElement(
-              T.a,
-              { style: De.topBorder },
-              t.createElement(
-                h.b,
+            l.createElement(
+              w.a,
+              { style: Te.topBorder },
+              l.createElement(
+                F.b,
                 {
                   align: 'center',
                   color: 'normal',
@@ -520,12 +520,12 @@
                   weight: 'bold',
                 },
                 Se,
-                t.createElement(P.a, null),
+                l.createElement(L.a, null),
               ),
             ),
           )
         },
-        De = K.a.create(function (e) {
+        Te = K.a.create(function (e) {
           return {
             helpLink: { marginVertical: e.spaces.space16 },
             topBorder: {
@@ -537,26 +537,26 @@
             },
           }
         }),
-        Oe = n('v6aA'),
+        De = n('v6aA'),
         Me = n('cFuS'),
-        Le = n('88ay'),
-        Pe = n('IMA+'),
+        Pe = n('88ay'),
+        Le = n('IMA+'),
         Re = void 0 !== se ? se : (se = n('M2DF')),
-        xe = v.a.c6000492,
-        Ie = function (e) {
+        xe = b.a.c6000492,
+        je = function (e) {
           var a = C()(Re, e.user).legacy,
-            n = t.useContext(Oe.a).loggedInUserId,
-            l = null == a ? void 0 : a.profile_image_url_https,
+            n = l.useContext(De.a).loggedInUserId,
+            t = null == a ? void 0 : a.profile_image_url_https,
             r = a.name,
             i = a.screen_name,
-            s = a && n ? Object(Le.e)({ loggedInUserId: n, userId: null == a ? void 0 : a.id_str }) : null
-          return l && r && i
-            ? t.createElement(
-                T.a,
+            s = a && n ? Object(Pe.e)({ loggedInUserId: n, userId: null == a ? void 0 : a.id_str }) : null
+          return t && r && i
+            ? l.createElement(
+                w.a,
                 null,
-                t.createElement(R, { text: xe }),
-                t.createElement(Pe.a, {
-                  avatarUri: l,
+                l.createElement(R, { text: xe }),
+                l.createElement(Le.a, {
+                  avatarUri: t,
                   decoration: s,
                   displayMode: 'UserDetailed',
                   isFollowedBy: a.followed_by,
@@ -565,60 +565,60 @@
                   name: r,
                   promotedItemType: Me.c.USER,
                   screenName: i,
-                  style: Ae.userCell,
+                  style: Ie.userCell,
                   userId: a.id_str,
                   withFollowsYou: !0,
                 }),
               )
             : null
         },
-        Ae = K.a.create(function (e) {
+        Ie = K.a.create(function (e) {
           return { userCell: { marginHorizontal: -1 * K.a.theme.spacesPx.space16 } }
         }),
-        Qe = v.a.e83b141e,
-        Ue = void 0 !== oe ? oe : (oe = n('QKWn')),
-        je = void 0 !== ue ? ue : (ue = n('H2N0')),
+        Ae = b.a.e83b141e,
+        Qe = void 0 !== oe ? oe : (oe = n('QKWn')),
+        Ue = void 0 !== ue ? ue : (ue = n('H2N0')),
         Be = function (e) {
           var a,
             n,
-            l,
+            t,
             r,
-            i = C()(je, e.openseaNftMetadataData),
-            s = C()(Ue, e.nft).token_id
-          return t.createElement(
-            T.a,
+            i = C()(Ue, e.openseaNftMetadataData),
+            s = C()(Qe, e.nft).token_id
+          return l.createElement(
+            w.a,
             null,
-            t.createElement(
+            l.createElement(
               E.a,
               null,
-              t.createElement(
-                h.b,
+              l.createElement(
+                F.b,
                 { size: 'subtext1', weight: 'bold' },
                 (null == i || null === (a = i.collection) || void 0 === a || null === (n = a.metadata) || void 0 === n
                   ? void 0
                   : n.name) || '',
               ),
               null != i &&
-                null !== (l = i.collection) &&
-                void 0 !== l &&
-                null !== (r = l.metadata) &&
+                null !== (t = i.collection) &&
+                void 0 !== t &&
+                null !== (r = t.metadata) &&
                 void 0 !== r &&
                 r.verified
-                ? t.createElement(h.b, { color: 'gray700', size: 'subtext1' }, Qe)
+                ? l.createElement(F.b, { color: 'gray700', size: 'subtext1' }, Ae)
                 : null,
             ),
-            t.createElement(h.b, { size: 'title3', weight: 'bold' }, (null == i ? void 0 : i.name) || '#'.concat(s)),
+            l.createElement(F.b, { size: 'title3', weight: 'bold' }, (null == i ? void 0 : i.name) || '#'.concat(s)),
           )
         },
         We = (n('M+/F'), void 0 !== ce ? ce : (ce = n('TP6m'))),
-        Ge = v.a.eadbd438,
-        qe = function (e) {
+        ze = b.a.eadbd438,
+        Ge = function (e) {
           var a = C()(We, e.openseaNftMetadataData),
-            n = t.useState(!1),
-            l = p()(n, 2),
-            r = l[0],
-            i = l[1]
-          t.useEffect(
+            n = l.useState(!1),
+            t = p()(n, 2),
+            r = t[0],
+            i = t[1]
+          l.useEffect(
             function () {
               var e
               null !== (e = a.traits) && void 0 !== e && e.length && i(a.traits.length > 6)
@@ -627,24 +627,24 @@
           )
           if (null == a || !a.traits || null == a || !a.traits.length) return null
           var s = r ? a.traits.slice(0, 6) : a.traits
-          return t.createElement(
-            T.a,
+          return l.createElement(
+            w.a,
             null,
-            t.createElement(R, { text: Ge }),
-            t.createElement(
-              Q,
+            l.createElement(R, { text: ze }),
+            l.createElement(
+              A,
               null,
               s.map(function (e) {
-                return t.createElement(
-                  U,
+                return l.createElement(
+                  Q,
                   { key: e.trait_type },
-                  e.trait_type ? t.createElement(j, { style: ze.uppercase }, e.trait_type) : null,
-                  t.createElement(h.b, { weight: 'medium' }, e.value),
+                  e.trait_type ? l.createElement(U, { style: qe.uppercase }, e.trait_type) : null,
+                  l.createElement(F.b, { weight: 'medium' }, e.value),
                 )
               }),
             ),
             r
-              ? t.createElement(ee, {
+              ? l.createElement(ee, {
                   onPress: function () {
                     i(!r)
                   },
@@ -652,7 +652,7 @@
               : null,
           )
         },
-        ze = K.a.create(function (e) {
+        qe = K.a.create(function (e) {
           return { uppercase: { textTransform: 'uppercase' } }
         }),
         He = void 0 !== de ? de : (de = n('4k/N')),
@@ -665,7 +665,7 @@
               paddingHorizontal: e.spaces.space24,
             },
             sideDrawer: {
-              width: L.a + 100,
+              width: P.a + 100,
               borderLeftWidth: e.borderWidths.small,
               borderColor: e.colors.borderColor,
               borderStyle: 'solid',
@@ -674,15 +674,15 @@
             bottomDrawer: { width: '100%', padding: e.spaces.space16, display: 'flex' },
           }
         }),
-        Ye = function (e) {
+        Ze = function (e) {
           var a,
             n,
-            l = C()(He, e.user),
+            t = C()(He, e.user),
             r = e.isBottomDrawer
           if (
             'OpenseaNFTMetadata' !==
-            (null == l ||
-            null === (a = l.nft_avatar_metadata) ||
+            (null == t ||
+            null === (a = t.nft_avatar_metadata) ||
             void 0 === a ||
             null === (n = a.metadata) ||
             void 0 === n
@@ -691,56 +691,62 @@
           )
             return null
           var i = r ? Ve.bottomDrawer : Ve.sideDrawer
-          return t.createElement(
-            T.a,
+          return l.createElement(
+            w.a,
             { style: [Ve.root, i] },
-            t.createElement(Be, { nft: l.nft_avatar_metadata, openseaNftMetadataData: l.nft_avatar_metadata.metadata }),
-            t.createElement(be, {
-              openseaNftMetadataData: l.nft_avatar_metadata.metadata,
-              smartContractData: l.nft_avatar_metadata.smart_contract,
+            l.createElement(Be, { nft: t.nft_avatar_metadata, openseaNftMetadataData: t.nft_avatar_metadata.metadata }),
+            l.createElement(_e, {
+              openseaNftMetadataData: t.nft_avatar_metadata.metadata,
+              smartContractData: t.nft_avatar_metadata.smart_contract,
             }),
-            t.createElement(Ie, { user: l }),
-            t.createElement(he, { openseaNftMetadataData: l.nft_avatar_metadata.metadata }),
-            t.createElement(ye, { openseaNftMetadataData: l.nft_avatar_metadata.metadata }),
-            t.createElement(qe, { openseaNftMetadataData: l.nft_avatar_metadata.metadata }),
-            t.createElement(J, { nft: l.nft_avatar_metadata, smartContract: l.nft_avatar_metadata.smart_contract }),
-            t.createElement(we, { nft: l.nft_avatar_metadata, smartContract: l.nft_avatar_metadata.smart_contract }),
+            l.createElement(je, { user: t }),
+            l.createElement(Fe, { openseaNftMetadataData: t.nft_avatar_metadata.metadata }),
+            l.createElement(ye, { openseaNftMetadataData: t.nft_avatar_metadata.metadata }),
+            l.createElement(Ge, { openseaNftMetadataData: t.nft_avatar_metadata.metadata }),
+            l.createElement(J, { nft: t.nft_avatar_metadata, smartContract: t.nft_avatar_metadata.smart_contract }),
+            l.createElement(Ne, { nft: t.nft_avatar_metadata, smartContract: t.nft_avatar_metadata.smart_contract }),
           )
         },
-        Ze = n('wiP2'),
-        Xe = n('/yvb'),
-        Je = n('RCZO')
-      function $e(e, a) {
+        Xe = n('wiP2'),
+        Ye = n('/yvb'),
+        Je = n('RCZO'),
+        $e = n('mpWK'),
+        ea = n('NP4V')
+      function aa(e, a) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var l = Object.getOwnPropertySymbols(e)
+          var t = Object.getOwnPropertySymbols(e)
           a &&
-            (l = l.filter(function (a) {
+            (t = t.filter(function (a) {
               return Object.getOwnPropertyDescriptor(e, a).enumerable
             })),
-            n.push.apply(n, l)
+            n.push.apply(n, t)
         }
         return n
       }
-      function ea(e) {
+      function na(e) {
         for (var a = 1; a < arguments.length; a++) {
           var n = null != arguments[a] ? arguments[a] : {}
           a % 2
-            ? $e(Object(n), !0).forEach(function (a) {
+            ? aa(Object(n), !0).forEach(function (a) {
                 f()(e, a, n[a])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : $e(Object(n)).forEach(function (a) {
+            : aa(Object(n)).forEach(function (a) {
                 Object.defineProperty(e, a, Object.getOwnPropertyDescriptor(n, a))
               })
         }
         return e
       }
-      var aa,
-        na = v.a.c1a40fd4,
-        la = void 0 !== me ? me : (me = n('FklY')),
-        ta = K.a.create(function (e) {
+      var ta,
+        la = b.a.c1a40fd4,
+        ra = b.a.ef1c2c77,
+        ia = b.a.gd912af1,
+        sa = b.a.f1d9930c,
+        oa = b.a.a0e81a2e,
+        ua = void 0 !== me ? me : (me = n('FklY')),
+        ca = K.a.create(function (e) {
           return {
             actionsBar: { height: e.spaces.space48, maxWidth: 'none', paddingHorizontal: e.spaces.space12 },
             container: {
@@ -758,10 +764,10 @@
             footerTitle: { marginVertical: e.spaces.space8 },
           }
         }),
-        ra = function (e) {
+        da = function (e) {
           var a,
             n,
-            l,
+            t,
             r,
             i,
             s,
@@ -770,49 +776,53 @@
             m,
             f,
             g,
-            _ = Object(A.b)(),
-            v = e.fetchStatus,
+            v = Object(I.b)(),
+            b = e.fetchStatus,
             E = e.screenName,
             K = e.user,
-            S = t.useState(!1),
-            N = p()(S, 2),
-            w = N[0],
-            D = N[1],
-            M = Object(Je.h)(),
-            P = M.handleMediaDetailZoomed,
-            R = M.handleMediaItemTapped,
-            x = M.hideButtons,
-            I = Object(d.g)(),
-            Q = C()(la, K),
-            U = y.a.get('window').width - L.a > L.b
-          if (null == Q || null === (a = Q.legacy) || void 0 === a || !a.profile_image_url_https) return null
-          var j = {
-              id_str: null == Q || null === (n = Q.legacy) || void 0 === n ? void 0 : n.id_str,
-              expanded_url: null == Q || null === (l = Q.legacy) || void 0 === l ? void 0 : l.profile_image_url_https,
+            S = l.useState(!1),
+            O = p()(S, 2),
+            N = O[0],
+            T = O[1],
+            M = l.useState(!0),
+            L = p()(M, 2),
+            R = L[0],
+            x = L[1],
+            j = Object(Je.h)(),
+            A = j.handleMediaDetailZoomed,
+            Q = j.handleMediaItemTapped,
+            U = j.hideButtons,
+            B = Object(d.g)(),
+            W = C()(ua, K),
+            z = y.a.get('window').width - P.a > P.b
+          if (null == W || null === (a = W.legacy) || void 0 === a || !a.profile_image_url_https) return null
+          var G = {
+              id_str: null == W || null === (n = W.legacy) || void 0 === n ? void 0 : n.id_str,
+              expanded_url: null == W || null === (t = W.legacy) || void 0 === t ? void 0 : t.profile_image_url_https,
               media_url_https:
-                null == Q || null === (r = Q.legacy) || void 0 === r ? void 0 : r.profile_image_url_https,
+                null == W || null === (r = W.legacy) || void 0 === r ? void 0 : r.profile_image_url_https,
               ext_alt_text: '',
               type: 'photo',
               original_info: { width: 400, height: 400 },
             },
-            B =
+            q =
               'ApiMediaExtensions' ===
-              (null == Q ||
-              null === (i = Q.legacy) ||
+              (null == W ||
+              null === (i = W.legacy) ||
               void 0 === i ||
               null === (s = i.profile_image_extensions) ||
               void 0 === s
                 ? void 0
                 : s.__typename)
-                ? null == Q || null === (u = Q.legacy) || void 0 === u
+                ? null == W || null === (u = W.legacy) || void 0 === u
                   ? void 0
                   : u.profile_image_extensions
                 : {},
-            W =
+            H =
               ('ApiMediaColorExtension' ===
-                (null == B || null === (c = B.mediaColor) || void 0 === c ? void 0 : c.__typename) &&
-                (null == B ||
-                null === (m = B.mediaColor) ||
+                (null == q || null === (c = q.mediaColor) || void 0 === c ? void 0 : c.__typename) &&
+                (null == q ||
+                null === (m = q.mediaColor) ||
                 void 0 === m ||
                 null === (f = m.r) ||
                 void 0 === f ||
@@ -821,126 +831,142 @@
                   ? void 0
                   : g.palette)) ||
               [],
-            G = W.map(function (e) {
-              return ea(ea({}, e), {}, { rgb: { blue: e.rgb.blue, red: e.rgb.red, green: e.rgb.green } })
+            V = H.map(function (e) {
+              return na(na({}, e), {}, { rgb: { blue: e.rgb.blue, red: e.rgb.red, green: e.rgb.green } })
             }),
-            q = W && Object(Je.e)(G),
-            z = function () {
-              I.goBack({ backLocation: '/'.concat(E) })
+            Z = H && Object(Je.e)(V),
+            X = function () {
+              B.goBack({ backLocation: '/'.concat(E) })
             },
-            H = function (e) {
-              _.scribe({ element: 'details_button', action: 'click' }), e.stopPropagation(), e.preventDefault(), D(!0)
+            Y = function (e) {
+              v.scribe({ element: 'details_button', action: 'click' }), e.stopPropagation(), e.preventDefault(), T(!0)
             },
-            V = function () {
-              return t.createElement(b.a, {
+            J = function () {
+              return l.createElement(_.a, {
                 dataSaver: !1,
-                dominantColor: q.rgb,
+                dominantColor: Z.rgb,
                 mediaIndex: 0,
-                mediaItems: [j],
-                onDismiss: z,
-                onMediaDetailZoomed: P,
-                onTap: R,
+                mediaItems: [G],
+                onDismiss: X,
+                onMediaDetailZoomed: A,
+                onTap: Q,
               })
             },
-            Y = function () {
-              return t.createElement(o.a, { to: '/'.concat(E) })
+            $ = function () {
+              return l.createElement(o.a, { to: '/'.concat(E) })
             },
-            Z = function (e) {
+            ee = function () {
+              x(!R)
+            },
+            ae = function (e) {
+              return e
+                ? null
+                : l.createElement(Ye.a, {
+                    accessibilityLabel: R ? ia : ra,
+                    dominantColor: Z.rgb,
+                    hoverLabel: { label: R ? sa : oa },
+                    icon: R ? l.createElement($e.a, null) : l.createElement(ea.a, null),
+                    onClick: ee,
+                    type: 'onMediaDominantColorFilled',
+                  })
+            },
+            ne = function (e) {
               var a,
                 n,
-                l,
+                t,
                 r,
                 i =
-                  null != Q && null !== (a = Q.legacy) && void 0 !== a && a.profile_image_url_https
-                    ? Q.legacy.profile_image_url_https
+                  null != W && null !== (a = W.legacy) && void 0 !== a && a.profile_image_url_https
+                    ? W.legacy.profile_image_url_https
                     : void 0
-              return t.createElement(
-                F.a,
+              return l.createElement(
+                h.a,
                 {
-                  backgroundColor: q,
+                  backgroundColor: Z,
                   footerButtons:
-                    !w &&
+                    !N &&
                     e &&
                     ('OpenseaNFTMetadata' ===
-                    (null === (n = Q.nft_avatar_metadata) || void 0 === n || null === (l = n.metadata) || void 0 === l
+                    (null === (n = W.nft_avatar_metadata) || void 0 === n || null === (t = n.metadata) || void 0 === t
                       ? void 0
-                      : l.__typename)
-                      ? t.createElement(
-                          T.a,
-                          { style: ta.footer },
-                          t.createElement(
-                            h.b,
-                            { color: 'whiteOnColor', size: 'title4', style: ta.footerTitle },
-                            Q.nft_avatar_metadata.metadata.name,
+                      : t.__typename)
+                      ? l.createElement(
+                          w.a,
+                          { style: ca.footer },
+                          l.createElement(
+                            F.b,
+                            { color: 'whiteOnColor', size: 'title4', style: ca.footerTitle },
+                            W.nft_avatar_metadata.metadata.name,
                           ),
-                          t.createElement(O, {
+                          l.createElement(D, {
                             color: 'whiteOnColor',
                             isCondensed: !0,
                             openseaNftMetadataData:
-                              null === (r = Q.nft_avatar_metadata) || void 0 === r ? void 0 : r.metadata,
+                              null === (r = W.nft_avatar_metadata) || void 0 === r ? void 0 : r.metadata,
                           }),
-                          t.createElement(Xe.a, { onPress: H, type: 'onMediaOutlined' }, na),
+                          l.createElement(Ye.a, { onPress: Y, type: 'onMediaOutlined' }, la),
                         )
                       : null),
                   forceModalStyle: !0,
-                  hideButtons: x,
+                  hideButtons: U,
                   mediaUrl: i,
-                  onCloseButtonPress: z,
+                  onCloseButtonPress: X,
+                  topRightButton: ae(e),
                 },
-                t.createElement(k.a, { fetchStatus: v, render: V, renderFailure: Y, retryable: !1 }),
+                l.createElement(k.a, { fetchStatus: b, render: J, renderFailure: $, retryable: !1 }),
               )
             }
-          return t.createElement(
-            Ze.a.Configure,
+          return l.createElement(
+            Xe.a.Configure,
             { headerless: !0 },
-            U
-              ? t.createElement(
-                  T.a,
-                  { style: ta.container },
-                  t.createElement(T.a, { style: ta.media }, Z()),
-                  t.createElement(Ye, { user: Q }),
+            z
+              ? l.createElement(
+                  w.a,
+                  { style: ca.container },
+                  l.createElement(w.a, { style: ca.media }, ne()),
+                  R ? l.createElement(Ze, { user: W }) : null,
                 )
-              : t.createElement(
-                  T.a,
-                  { style: [ta.container, ta.verticalLayout] },
-                  t.createElement(T.a, { style: ta.media }, Z(!0)),
-                  w
-                    ? t.createElement(
-                        T.a,
-                        { style: ta.bottomDrawerContainer },
-                        t.createElement(Ye, { isBottomDrawer: !0, user: Q }),
+              : l.createElement(
+                  w.a,
+                  { style: [ca.container, ca.verticalLayout] },
+                  l.createElement(w.a, { style: ca.media }, ne(!0)),
+                  N
+                    ? l.createElement(
+                        w.a,
+                        { style: ca.bottomDrawerContainer },
+                        l.createElement(Ze, { isBottomDrawer: !0, user: W }),
                       )
                     : null,
                 ),
           )
         },
-        ia = n('n0Rl'),
-        sa = void 0 !== aa ? aa : (aa = n('2agG')),
-        oa = Object(ia.b)(sa, { errorConfig: { options: r.a, context: 'USER_NFT_SCREEN_CONTEXT' } }),
-        ua = function () {
+        ma = n('n0Rl'),
+        fa = void 0 !== ta ? ta : (ta = n('2agG')),
+        ga = Object(ma.b)(fa, { errorConfig: { options: r.a, context: 'USER_NFT_SCREEN_CONTEXT' } }),
+        pa = function () {
           var e = Object(d.i)().screenName || '',
-            a = t.useMemo(
+            a = l.useMemo(
               function () {
                 return { screenName: Object(i.a)(e) }
               },
               [e],
             )
-          return t.createElement(oa, {
+          return l.createElement(ga, {
             render: function (a) {
               var n,
-                l = a.data,
+                t = a.data,
                 r = a.fetchStatus,
                 d = a.retry,
-                m = null == l || null === (n = l.user) || void 0 === n ? void 0 : n.result
+                m = null == t || null === (n = t.user) || void 0 === n ? void 0 : n.result
               return m && 'User' === m.__typename && !m.has_nft_avatar
-                ? t.createElement(o.a, { to: '/'.concat(Object(i.a)(e), '/photo') })
-                : t.createElement(
+                ? l.createElement(o.a, { to: '/'.concat(Object(i.a)(e), '/photo') })
+                : l.createElement(
                     c.b,
                     { namespace: { page: 'nft', section: 'avatar' } },
-                    t.createElement(
+                    l.createElement(
                       s.a,
                       null,
-                      t.createElement(ra, {
+                      l.createElement(da, {
                         fetchStatus: Object(u.b)(r, 'User' === (null == m ? void 0 : m.__typename)),
                         onRetry: d,
                         screenName: e,
@@ -952,13 +978,13 @@
             variables: a,
           })
         }
-      a.default = ua
+      a.default = pa
     },
     '2agG': function (e, a, n) {
       'use strict'
       n.r(a)
-      var l,
-        t,
+      var t,
+        l,
         r,
         i,
         s,
@@ -967,15 +993,15 @@
         c,
         d = {
           fragment: {
-            argumentDefinitions: (l = [{ defaultValue: null, kind: 'LocalArgument', name: 'screenName' }]),
+            argumentDefinitions: (t = [{ defaultValue: null, kind: 'LocalArgument', name: 'screenName' }]),
             kind: 'Fragment',
             metadata: null,
             name: 'userNftContainer_Query',
             selections: [
               {
                 alias: 'user',
-                args: (t = [
-                  { kind: 'Literal', name: 's', value: 44 },
+                args: (l = [
+                  { kind: 'Literal', name: 's', value: 45 },
                   { kind: 'Variable', name: 'screen_name', variableName: 'screenName' },
                 ]),
                 concreteType: 'UserResults',
@@ -1019,13 +1045,13 @@
           },
           kind: 'Request',
           operation: {
-            argumentDefinitions: l,
+            argumentDefinitions: t,
             kind: 'Operation',
             name: 'userNftContainer_Query',
             selections: [
               {
                 alias: 'user',
-                args: t,
+                args: l,
                 concreteType: 'UserResults',
                 kind: 'LinkedField',
                 name: 'user_result_by_screen_name',
@@ -1366,8 +1392,8 @@
     '4k/N': function (e, a, n) {
       'use strict'
       n.r(a)
-      var l,
-        t = {
+      var t,
+        l = {
           argumentDefinitions: [],
           kind: 'Fragment',
           metadata: null,
@@ -1381,7 +1407,7 @@
               name: 'nft_avatar_metadata',
               plural: !1,
               selections: [
-                (l = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
+                (t = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
                 {
                   alias: null,
                   args: null,
@@ -1404,7 +1430,7 @@
                   name: 'metadata',
                   plural: !1,
                   selections: [
-                    l,
+                    t,
                     {
                       kind: 'InlineFragment',
                       selections: [
@@ -1431,13 +1457,13 @@
           type: 'User',
           abstractKey: null,
         }
-      ;(t.hash = '3c57cab07c96dda515d5ff5c7c8ecdcc'), (a.default = t)
+      ;(l.hash = '3c57cab07c96dda515d5ff5c7c8ecdcc'), (a.default = l)
     },
     '6o1g': function (e, a, n) {
       'use strict'
       n.r(a)
-      var l,
-        t = {
+      var t,
+        l = {
           argumentDefinitions: [],
           kind: 'Fragment',
           metadata: null,
@@ -1446,21 +1472,21 @@
             { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null },
             {
               kind: 'InlineFragment',
-              selections: (l = [{ alias: null, args: null, kind: 'ScalarField', name: 'network', storageKey: null }]),
+              selections: (t = [{ alias: null, args: null, kind: 'ScalarField', name: 'network', storageKey: null }]),
               type: 'ERC721',
               abstractKey: null,
             },
-            { kind: 'InlineFragment', selections: l, type: 'ERC1155', abstractKey: null },
+            { kind: 'InlineFragment', selections: t, type: 'ERC1155', abstractKey: null },
           ],
           type: 'SmartContract',
           abstractKey: '__isSmartContract',
         }
-      ;(t.hash = '50ce0f26cdfdc0fa27fca888982f423c'), (a.default = t)
+      ;(l.hash = '50ce0f26cdfdc0fa27fca888982f423c'), (a.default = l)
     },
     EPqq: function (e, a, n) {
       'use strict'
       n.r(a)
-      var l = {
+      var t = {
         argumentDefinitions: [],
         kind: 'Fragment',
         metadata: null,
@@ -1470,13 +1496,13 @@
         abstractKey: null,
         hash: 'f51c840dab06d215cf417abf6f70875f',
       }
-      a.default = l
+      a.default = t
     },
     EWGL: function (e, a, n) {
       'use strict'
       n.r(a)
-      var l,
-        t = {
+      var t,
+        l = {
           argumentDefinitions: [],
           kind: 'Fragment',
           metadata: null,
@@ -1485,25 +1511,25 @@
             { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null },
             {
               kind: 'InlineFragment',
-              selections: (l = [
+              selections: (t = [
                 { alias: null, args: null, kind: 'ScalarField', name: 'address', storageKey: null },
                 { alias: null, args: null, kind: 'ScalarField', name: 'network', storageKey: null },
               ]),
               type: 'ERC721',
               abstractKey: null,
             },
-            { kind: 'InlineFragment', selections: l, type: 'ERC1155', abstractKey: null },
+            { kind: 'InlineFragment', selections: t, type: 'ERC1155', abstractKey: null },
           ],
           type: 'SmartContract',
           abstractKey: '__isSmartContract',
         }
-      ;(t.hash = 'c0b484be450a7f9903a3de229b0b577a'), (a.default = t)
+      ;(l.hash = 'c0b484be450a7f9903a3de229b0b577a'), (a.default = l)
     },
     FklY: function (e, a, n) {
       'use strict'
       n.r(a)
-      var l,
-        t = {
+      var t,
+        l = {
           argumentDefinitions: [],
           kind: 'Fragment',
           metadata: null,
@@ -1525,7 +1551,7 @@
                   name: 'metadata',
                   plural: !1,
                   selections: [
-                    (l = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
+                    (t = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
                     {
                       kind: 'InlineFragment',
                       selections: [{ alias: null, args: null, kind: 'ScalarField', name: 'name', storageKey: null }],
@@ -1558,7 +1584,7 @@
                   name: 'profile_image_extensions',
                   plural: !1,
                   selections: [
-                    l,
+                    t,
                     {
                       alias: null,
                       args: null,
@@ -1567,7 +1593,7 @@
                       name: 'mediaColor',
                       plural: !1,
                       selections: [
-                        l,
+                        t,
                         {
                           alias: null,
                           args: null,
@@ -1648,12 +1674,12 @@
           type: 'User',
           abstractKey: null,
         }
-      ;(t.hash = '938148f2be1375463d7f4d7a663b8351'), (a.default = t)
+      ;(l.hash = '938148f2be1375463d7f4d7a663b8351'), (a.default = l)
     },
     Gaii: function (e, a, n) {
       'use strict'
       n.r(a)
-      var l = {
+      var t = {
         argumentDefinitions: [],
         kind: 'Fragment',
         metadata: null,
@@ -1666,19 +1692,19 @@
         abstractKey: null,
         hash: '39deafa470ce306ddf113a741f4f4ff5',
       }
-      a.default = l
+      a.default = t
     },
     H2N0: function (e, a, n) {
       'use strict'
       n.r(a)
-      var l,
-        t = {
+      var t,
+        l = {
           argumentDefinitions: [],
           kind: 'Fragment',
           metadata: null,
           name: 'NftTitle_openseaNftMetadata',
           selections: [
-            (l = { alias: null, args: null, kind: 'ScalarField', name: 'name', storageKey: null }),
+            (t = { alias: null, args: null, kind: 'ScalarField', name: 'name', storageKey: null }),
             {
               alias: null,
               args: null,
@@ -1687,7 +1713,7 @@
               name: 'collection',
               plural: !1,
               selections: [
-                l,
+                t,
                 {
                   alias: null,
                   args: null,
@@ -1702,7 +1728,7 @@
                       selections: [
                         { alias: null, args: null, kind: 'ScalarField', name: 'description', storageKey: null },
                         { alias: null, args: null, kind: 'ScalarField', name: 'image_url', storageKey: null },
-                        l,
+                        t,
                         { alias: null, args: null, kind: 'ScalarField', name: 'verified', storageKey: null },
                       ],
                       type: 'OpenseaCollectionMetadata',
@@ -1718,12 +1744,12 @@
           type: 'OpenseaNFTMetadata',
           abstractKey: null,
         }
-      ;(t.hash = '9c7c85c01c5673e23e86c751b663a656'), (a.default = t)
+      ;(l.hash = '9c7c85c01c5673e23e86c751b663a656'), (a.default = l)
     },
     M2DF: function (e, a, n) {
       'use strict'
       n.r(a)
-      var l = {
+      var t = {
         argumentDefinitions: [],
         kind: 'Fragment',
         metadata: null,
@@ -1752,12 +1778,75 @@
         abstractKey: null,
         hash: '7d230d7d65eb53bd5eb651214723c7dc',
       }
-      a.default = l
+      a.default = t
+    },
+    NP4V: function (e, a, n) {
+      'use strict'
+      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
+      var t = n('KEM+'),
+        l = n.n(t),
+        r = n('ERkP'),
+        i = n('Lsrn'),
+        s = n('shC7'),
+        o = n('k/Ka')
+      function u(e, a) {
+        var n = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var t = Object.getOwnPropertySymbols(e)
+          a &&
+            (t = t.filter(function (a) {
+              return Object.getOwnPropertyDescriptor(e, a).enumerable
+            })),
+            n.push.apply(n, t)
+        }
+        return n
+      }
+      function c(e) {
+        for (var a = 1; a < arguments.length; a++) {
+          var n = null != arguments[a] ? arguments[a] : {}
+          a % 2
+            ? u(Object(n), !0).forEach(function (a) {
+                l()(e, a, n[a])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : u(Object(n)).forEach(function (a) {
+                Object.defineProperty(e, a, Object.getOwnPropertyDescriptor(n, a))
+              })
+        }
+        return e
+      }
+      var d = function () {
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+        return Object(o.a)(
+          'svg',
+          c(
+            c({}, e),
+            {},
+            {
+              accessibilityHidden: void 0 === e.accessibilityLabel,
+              style: [i.a.root, e.style, s.a.getConstants().isRTL && i.a.iconRTL],
+              viewBox: '0 0 24 24',
+            },
+          ),
+          r.createElement(
+            'g',
+            null,
+            r.createElement('path', {
+              d: 'M4.656 12l8.72-8.72c.293-.293.293-.768 0-1.06s-.768-.294-1.06 0l-9.25 9.25c-.294.292-.294.767 0 1.06l9.25 9.25c.145.146.337.22.53.22s.383-.073.53-.22c.292-.293.292-.768 0-1.06L4.655 12z',
+            }),
+            r.createElement('path', {
+              d: 'M12.465 12l8.72-8.72c.293-.293.293-.768 0-1.06s-.768-.294-1.06 0l-9.25 9.25c-.294.292-.294.767 0 1.06l9.25 9.25c.145.146.337.22.53.22s.383-.073.53-.22c.292-.293.292-.768 0-1.06L12.464 12z',
+            }),
+          ),
+        )
+      }
+      ;(d.metadata = { width: 24, height: 24 }), (a.a = d)
     },
     PfIX: function (e, a, n) {
       'use strict'
       n.r(a)
-      var l = {
+      var t = {
         argumentDefinitions: [],
         kind: 'Fragment',
         metadata: null,
@@ -1802,12 +1891,12 @@
         abstractKey: null,
         hash: '14ee6884aa5d3afb92f61bef7b0478a6',
       }
-      a.default = l
+      a.default = t
     },
     QKWn: function (e, a, n) {
       'use strict'
       n.r(a)
-      var l = {
+      var t = {
         argumentDefinitions: [],
         kind: 'Fragment',
         metadata: null,
@@ -1817,12 +1906,12 @@
         abstractKey: null,
         hash: 'b419b873de79c7fe02a42a775e0c9068',
       }
-      a.default = l
+      a.default = t
     },
     'R+uT': function (e, a, n) {
       'use strict'
       n.r(a)
-      var l = {
+      var t = {
         argumentDefinitions: [],
         kind: 'Fragment',
         metadata: null,
@@ -1832,12 +1921,12 @@
         abstractKey: null,
         hash: '8acfc167a7015edf7fc99406f2fea09d',
       }
-      a.default = l
+      a.default = t
     },
     TP6m: function (e, a, n) {
       'use strict'
       n.r(a)
-      var l = {
+      var t = {
         argumentDefinitions: [],
         kind: 'Fragment',
         metadata: null,
@@ -1863,12 +1952,12 @@
         abstractKey: null,
         hash: 'f1e94ab35a398e5668e6f750f5e00118',
       }
-      a.default = l
+      a.default = t
     },
     bCEw: function (e, a, n) {
       'use strict'
-      var l = n('IGGJ')(n('K1iM')),
-        t = n('23An'),
+      var t = n('IGGJ')(n('K1iM')),
+        l = n('23An'),
         r = n('Ud88'),
         i = n('aQQo'),
         s = i.loadQuery,
@@ -1889,28 +1978,28 @@
         var n = null != a ? a : p,
           i = r()
         o()
-        var u = t(),
+        var u = l(),
           g = m(new Set([n])),
           k = f(function () {
             return n
           }),
-          _ = k[0],
-          v = k[1],
-          b = f(function () {
+          v = k[0],
+          b = k[1],
+          _ = f(function () {
             return n
           }),
-          F = b[0],
-          h = b[1]
-        n !== F && (g.current.add(n), h(n), v(n))
+          h = _[0],
+          F = _[1]
+        n !== h && (g.current.add(n), F(n), b(n))
         var E = c(
             function () {
-              u.current && (g.current.add(p), v(p))
+              u.current && (g.current.add(p), b(p))
             },
             [u],
           ),
           K = c(
             function (a, n) {
-              var l =
+              var t =
                 null != n && n.hasOwnProperty('__environment')
                   ? {
                       fetchPolicy: n.fetchPolicy,
@@ -1919,12 +2008,12 @@
                     }
                   : n
               if (u.current) {
-                var t,
-                  r = s(null !== (t = null == n ? void 0 : n.__environment) && void 0 !== t ? t : i, e, a, l)
-                g.current.add(r), v(r)
+                var l,
+                  r = s(null !== (l = null == n ? void 0 : n.__environment) && void 0 !== l ? l : i, e, a, t)
+                g.current.add(r), b(r)
               }
             },
-            [i, e, v, u],
+            [i, e, b, u],
           ),
           S = m(!1)
         return (
@@ -1939,41 +2028,41 @@
                 return (
                   (S.current = !1),
                   void (
-                    'NullQueryReference' !== _.kind &&
-                    K(_.variables, { fetchPolicy: _.fetchPolicy, networkCacheConfig: _.networkCacheConfig })
+                    'NullQueryReference' !== v.kind &&
+                    K(v.variables, { fetchPolicy: v.fetchPolicy, networkCacheConfig: v.networkCacheConfig })
                   )
                 )
               var a = g.current
               if (u.current) {
                 var n,
-                  t = (0, l.default)(a)
+                  l = (0, t.default)(a)
                 try {
-                  for (t.s(); !(n = t.n()).done; ) {
+                  for (l.s(); !(n = l.n()).done; ) {
                     var r = n.value
-                    if (r === _) break
+                    if (r === v) break
                     a.delete(r),
                       'NullQueryReference' !== r.kind &&
                         (y(e) ? r.dispose && r.dispose() : r.releaseQuery && r.releaseQuery())
                   }
                 } catch (i) {
-                  t.e(i)
+                  l.e(i)
                 } finally {
-                  t.f()
+                  l.f()
                 }
               }
             },
-            [_, u, K, e],
+            [v, u, K, e],
           ),
           d(
             function () {
               return function () {
                 var a,
-                  n = (0, l.default)(g.current)
+                  n = (0, t.default)(g.current)
                 try {
                   for (n.s(); !(a = n.n()).done; ) {
-                    var t = a.value
-                    'NullQueryReference' !== t.kind &&
-                      (y(e) ? t.dispose && t.dispose() : t.releaseQuery && t.releaseQuery())
+                    var l = a.value
+                    'NullQueryReference' !== l.kind &&
+                      (y(e) ? l.dispose && l.dispose() : l.releaseQuery && l.releaseQuery())
                   }
                 } catch (r) {
                   n.e(r)
@@ -1984,30 +2073,93 @@
             },
             [e],
           ),
-          ['NullQueryReference' === _.kind ? null : _, K, E]
+          ['NullQueryReference' === v.kind ? null : v, K, E]
         )
       }
     },
     iyiT: function (e, a, n) {
       'use strict'
       n.d(a, 'a', function () {
-        return t
+        return l
       }),
         n.d(a, 'b', function () {
           return r
         })
-      var l = n('ZUOq'),
-        t = l.a.columnWidths.secondary.normal,
-        r = l.a.columnWidths.primary
+      var t = n('ZUOq'),
+        l = t.a.columnWidths.secondary.normal,
+        r = t.a.columnWidths.primary
+    },
+    mpWK: function (e, a, n) {
+      'use strict'
+      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
+      var t = n('KEM+'),
+        l = n.n(t),
+        r = n('ERkP'),
+        i = n('Lsrn'),
+        s = n('shC7'),
+        o = n('k/Ka')
+      function u(e, a) {
+        var n = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var t = Object.getOwnPropertySymbols(e)
+          a &&
+            (t = t.filter(function (a) {
+              return Object.getOwnPropertyDescriptor(e, a).enumerable
+            })),
+            n.push.apply(n, t)
+        }
+        return n
+      }
+      function c(e) {
+        for (var a = 1; a < arguments.length; a++) {
+          var n = null != arguments[a] ? arguments[a] : {}
+          a % 2
+            ? u(Object(n), !0).forEach(function (a) {
+                l()(e, a, n[a])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : u(Object(n)).forEach(function (a) {
+                Object.defineProperty(e, a, Object.getOwnPropertyDescriptor(n, a))
+              })
+        }
+        return e
+      }
+      var d = function () {
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+        return Object(o.a)(
+          'svg',
+          c(
+            c({}, e),
+            {},
+            {
+              accessibilityHidden: void 0 === e.accessibilityLabel,
+              style: [i.a.root, e.style, s.a.getConstants().isRTL && i.a.iconRTL],
+              viewBox: '0 0 24 24',
+            },
+          ),
+          r.createElement(
+            'g',
+            null,
+            r.createElement('path', {
+              d: 'M21.185 11.47l-9.25-9.25c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l8.72 8.72-8.72 8.72c-.294.294-.294.77 0 1.062.145.146.337.22.53.22s.383-.073.53-.22l9.25-9.25c.293-.295.293-.77 0-1.062z',
+            }),
+            r.createElement('path', {
+              d: 'M13.376 11.47l-9.25-9.25c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l8.72 8.72-8.72 8.72c-.294.294-.294.77 0 1.062.146.145.337.218.53.218s.384-.073.53-.22l9.25-9.25c.293-.293.293-.767 0-1.06z',
+            }),
+          ),
+        )
+      }
+      ;(d.metadata = { width: 24, height: 24 }), (a.a = d)
     },
     n0Rl: function (e, a, n) {
       'use strict'
       n.d(a, 'b', function () {
-        return Q
+        return A
       })
       n('OZaJ')
-      var l = n('ddV6'),
-        t = n.n(l),
+      var t = n('ddV6'),
+        l = n.n(t),
         r = n('VrFO'),
         i = n.n(r),
         s = n('Y9Ll'),
@@ -2021,26 +2173,26 @@
         p = n('AuHH'),
         y = n.n(p),
         k = n('KEM+'),
-        _ = n.n(k),
-        v = (n('2G9S'), n('ZUdG'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP'), n('ERkP')),
-        b = n('pXBW'),
-        F = n('6/RC'),
-        h = n('UIzd'),
-        E = n.n(h),
+        v = n.n(k),
+        b = (n('2G9S'), n('ZUdG'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP'), n('ERkP')),
+        _ = n('pXBW'),
+        h = n('6/RC'),
+        F = n('UIzd'),
+        E = n.n(F),
         K = n('kGix')
       n.d(a, 'a', function () {
         return K.a
       })
       var S = n('fs1G'),
         C = n('0KEI'),
-        N = n('lU4h'),
+        O = n('lU4h'),
+        w = n.n(O),
+        N = n('21nk'),
         T = n.n(N),
-        w = n('21nk'),
-        D = n.n(w),
-        O = n('bCEw'),
-        M = n.n(O),
-        L = n('Ud88'),
-        P = n.n(L)
+        D = n('bCEw'),
+        M = n.n(D),
+        P = n('Ud88'),
+        L = n.n(P)
       function R(e) {
         var a = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -2054,25 +2206,25 @@
         })()
         return function () {
           var n,
-            l = y()(e)
+            t = y()(e)
           if (a) {
-            var t = y()(this).constructor
-            n = Reflect.construct(l, arguments, t)
-          } else n = l.apply(this, arguments)
+            var l = y()(this).constructor
+            n = Reflect.construct(t, arguments, l)
+          } else n = t.apply(this, arguments)
           return g()(this, n)
         }
       }
       var x = function (e) {
           return (0, e.render)({ fetchStatus: K.a.LOADING, data: null, error: null, retry: S.a })
         },
-        I = (function (e) {
+        j = (function (e) {
           m()(n, e)
           var a = R(n)
           function n() {
             var e
             i()(this, n)
-            for (var l = arguments.length, t = new Array(l), r = 0; r < l; r++) t[r] = arguments[r]
-            return (e = a.call.apply(a, [this].concat(t))), _()(c()(e), 'state', { error: null }), e
+            for (var t = arguments.length, l = new Array(t), r = 0; r < t; r++) l[r] = arguments[r]
+            return (e = a.call.apply(a, [this].concat(l))), v()(c()(e), 'state', { error: null }), e
           }
           return (
             o()(
@@ -2081,7 +2233,7 @@
                 {
                   key: 'componentDidCatch',
                   value: function (e, a) {
-                    if (!(e instanceof b.a)) throw e
+                    if (!(e instanceof _.a)) throw e
                     this.props.errorHandler(e)
                   },
                 },
@@ -2103,52 +2255,52 @@
             ),
             n
           )
-        })(v.Component),
-        A = function (e) {
+        })(b.Component),
+        I = function (e) {
           var a = e.query,
             n = e.queryRef,
-            l = e.render,
-            t = D()(a, n)
-          return l({ fetchStatus: K.a.LOADED, data: t, error: null, retry: S.a })
+            t = e.render,
+            l = T()(a, n)
+          return t({ fetchStatus: K.a.LOADED, data: l, error: null, retry: S.a })
         },
-        Q = function (e, a) {
-          if (F.canUseDOM)
+        A = function (e, a) {
+          if (h.canUseDOM)
             return function (n) {
-              var l = n.fetchPolicy,
-                r = void 0 === l ? 'store-or-network' : l,
+              var t = n.fetchPolicy,
+                r = void 0 === t ? 'store-or-network' : t,
                 i = n.render,
                 s = n.variables,
                 o = M()(e),
-                u = t()(o, 2),
+                u = l()(o, 2),
                 c = u[0],
                 d = u[1],
                 m = Object(C.useCreateLocalApiErrorHandler)(a.errorConfig.context),
-                f = T()(s),
-                g = t()(f, 1)[0],
-                p = v.useCallback(
+                f = w()(s),
+                g = l()(f, 1)[0],
+                p = b.useCallback(
                   function () {
                     d(g, { fetchPolicy: 'network-only' })
                   },
                   [d, g],
                 )
               return (
-                v.useLayoutEffect(
+                b.useLayoutEffect(
                   function () {
                     d(g, { fetchPolicy: r })
                   },
                   [r, d, g],
                 ),
                 c
-                  ? v.createElement(
-                      v.Suspense,
-                      { fallback: v.createElement(x, { render: i }) },
-                      v.createElement(
-                        I,
+                  ? b.createElement(
+                      b.Suspense,
+                      { fallback: b.createElement(x, { render: i }) },
+                      b.createElement(
+                        j,
                         { errorHandler: m(a.errorConfig.options || {}), key: c.fetchKey, retry: p },
                         function (a, n) {
                           return a
                             ? i({ fetchStatus: K.a.FAILED, error: a, data: null, retry: n })
-                            : v.createElement(A, { query: e, queryRef: c, render: i })
+                            : b.createElement(I, { query: e, queryRef: c, render: i })
                         },
                       ),
                     )
@@ -2156,17 +2308,17 @@
               )
             }
           var n = new WeakMap()
-          return function (l) {
-            l.fetchPolicy
-            var r = l.render,
-              i = l.variables,
-              s = P()(),
+          return function (t) {
+            t.fetchPolicy
+            var r = t.render,
+              i = t.variables,
+              s = L()(),
               o = Object(C.useCreateLocalApiErrorHandler)(a.errorConfig.context),
-              u = T()(i),
-              c = t()(u, 1)[0],
+              u = w()(i),
+              c = l()(u, 1)[0],
               d = n.get(s)
             if (d) return d
-            var m = v.lazy(function () {
+            var m = b.lazy(function () {
               return E()(s, e, c)
                 .toPromise()
                 .then(
@@ -2174,10 +2326,10 @@
                     return r({ fetchStatus: K.a.LOADED, data: e, error: null, retry: S.a })
                   },
                   function (e) {
-                    return e instanceof b.a
+                    return e instanceof _.a
                       ? (o(a.errorConfig.options || {})(e),
                         r({ fetchStatus: K.a.FAILED, data: null, error: e, retry: S.a }))
-                      : v.createElement(function () {
+                      : b.createElement(function () {
                           throw e
                         })
                   },
@@ -2186,14 +2338,14 @@
                   return { default: n.set(s, e).get.bind(n, s) }
                 })
             })
-            return v.createElement(v.Suspense, null, v.createElement(m, null))
+            return b.createElement(b.Suspense, null, b.createElement(m, null))
           }
         }
     },
     rZgY: function (e, a, n) {
       'use strict'
       n.r(a)
-      var l = {
+      var t = {
         argumentDefinitions: [],
         kind: 'Fragment',
         metadata: null,
@@ -2238,7 +2390,7 @@
         abstractKey: null,
         hash: '4eadd236a5ad089f275c79212a53b8a9',
       }
-      a.default = l
+      a.default = t
     },
   },
 ])

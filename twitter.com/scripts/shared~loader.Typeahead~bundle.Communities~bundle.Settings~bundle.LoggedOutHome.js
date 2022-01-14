@@ -225,55 +225,56 @@
         }
       t.b = function (e) {
         var t = e.conversation,
-          n = e.isSearchTitle,
+          n = e.isConversationSearchTitle,
           r = void 0 !== n && n,
-          s = e.newConversationParticipants,
-          l = e.perspective,
-          p = e.renderTimestamp,
-          b = e.textColor,
-          g = void 0 === b ? 'normal' : b,
-          _ = e.titleWeight,
-          w = void 0 === _ ? 'bold' : _,
-          x = e.withScreenName,
-          I = void 0 === x || x,
-          O = e.withVDLRefresh,
-          E = void 0 !== O && O
+          s = e.isMessageSearchTitle,
+          l = void 0 !== s && s,
+          p = e.newConversationParticipants,
+          b = e.perspective,
+          g = e.renderTimestamp,
+          _ = e.textColor,
+          w = void 0 === _ ? 'normal' : _,
+          x = e.titleWeight,
+          I = void 0 === x ? 'bold' : x,
+          O = e.withScreenName,
+          E = void 0 === O || O,
+          R = e.withVDLRefresh,
+          C = void 0 !== R && R
         if (t) {
-          var R = p ? p() : null
+          var k = g ? g() : null
           if (t.type === o.a.ONE_TO_ONE) {
-            var C = Object(c.a)(t, l).map(function (e) {
+            var S = Object(c.a)(t, b).map(function (e) {
                 return e.user
               }),
-              k = a()(C, 1)[0],
-              S = i.createElement(u.a, {
-                color: g,
-                isProtected: k.protected,
-                isVerified: k.verified,
-                name: k.name,
-                screenName: k.screen_name,
-                weight: w,
+              T = a()(S, 1)[0],
+              j = i.createElement(u.a, {
+                color: w,
+                isProtected: T.protected,
+                isVerified: T.verified,
+                name: T.name,
+                screenName: T.screen_name,
+                weight: I,
                 withLink: !1,
-                withScreenName: I,
+                withScreenName: E,
               })
-            return E && !r ? i.createElement(d.a, null, S, R) : S
+            return (C && !r) || l ? i.createElement(d.a, null, j, k) : j
           }
-          var T = t.participants,
-            j = Object.keys(T).length
+          var D = t.participants,
+            P = Object.keys(D).length
           if (r)
             return i.createElement(
               d.a,
-              { color: g },
-              i.createElement(f.b, { color: g, numberOfLines: 1, style: y.title, weight: w }, Object(m.a)(t, l, r)),
-              E
+              { color: w },
+              i.createElement(f.b, { color: w, numberOfLines: 1, style: y.title, weight: I }, Object(m.a)(t, b, r)),
+              C
                 ? null
-                : i.createElement(f.b, { color: 'gray700', numberOfLines: 1, weight: 'normal' }, h({ peopleCount: j })),
-              E && !r ? R : null,
+                : i.createElement(f.b, { color: 'gray700', numberOfLines: 1, weight: 'normal' }, h({ peopleCount: P })),
             )
-          var D = i.createElement(f.b, { color: g, numberOfLines: 1, weight: w }, Object(m.a)(t, l, r))
-          return E && !r ? i.createElement(d.a, null, D, R) : D
+          var F = i.createElement(f.b, { color: w, numberOfLines: 1, weight: I }, Object(m.a)(t, b, r))
+          return (C && !r) || l ? i.createElement(d.a, null, F, k) : F
         }
-        var P = v(s)
-        return i.createElement(f.b, { color: g, numberOfLines: 1, weight: w }, Object(m.b)(P, l))
+        var L = v(p)
+        return i.createElement(f.b, { color: w, numberOfLines: 1, weight: I }, Object(m.b)(L, b))
       }
     },
     V5Qi: function (e, t, n) {

@@ -13,16 +13,6 @@
         return i.createElement(c.a, o()({}, e, { emojiInfo: a.default }))
       }
     },
-    LlZX: function (e, t, n) {
-      'use strict'
-      n('M+/F')
-      t.a = function (e, t) {
-        var n = null == e ? 0 : e.length
-        if (!n || t < 1) return []
-        for (var r = 0, o = 0, i = new Array(Math.ceil(n / t)); r < n; ) (i[o] = e.slice(r, (r += t))), (o += 1)
-        return i
-      }
-    },
     VbCG: function (e, t, n) {
       'use strict'
       n.d(t, 'd', function () {
@@ -583,14 +573,14 @@
                           nativeID: n,
                           onClick: e._handleClick,
                           style: [
-                            Y.container,
-                            Z.transitionStyle,
-                            c && Z.hoverStyle,
-                            s && Z.pressedStyle,
-                            (i || n) && Z.focusedStyle,
+                            Z.container,
+                            Y.transitionStyle,
+                            c && Y.hoverStyle,
+                            s && Y.pressedStyle,
+                            (i || n) && Y.focusedStyle,
                           ],
                         },
-                        R.createElement(P.a, { style: [a, Y.emoji] }),
+                        R.createElement(P.a, { style: [a, Z.emoji] }),
                       )
                     },
                   )
@@ -600,8 +590,8 @@
             n
           )
         })(R.PureComponent),
-        Z = b.a.generate({ backgroundColor: E.a.theme.colors.transparent, color: E.a.theme.colors.gray700 }),
-        Y = E.a.create(function (e) {
+        Y = b.a.generate({ backgroundColor: E.a.theme.colors.transparent, color: E.a.theme.colors.gray700 }),
+        Z = E.a.create(function (e) {
           return {
             container: {
               alignItems: 'center',
@@ -612,8 +602,8 @@
             emoji: { display: 'inline-block', outlineStyle: 'none', height: W.c.EmojiHeight, width: W.c.EmojiWidth },
           }
         }),
-        X = J,
-        q = n('FIs5'),
+        q = J,
+        X = n('FIs5'),
         Q = n('mtvn'),
         $ = n('7nmT'),
         ee = n.n($)
@@ -675,7 +665,12 @@
         ie = n('m3Bd'),
         ae = n.n(ie),
         ce = n('faxe'),
-        se = n('LlZX'),
+        se = function (e, t) {
+          var n = null == e ? 0 : e.length
+          if (!n || t < 1) return []
+          for (var r = 0, o = 0, i = new Array(Math.ceil(n / t)); r < n; ) (i[o] = e.slice(r, (r += t))), (o += 1)
+          return i
+        },
         ue = n('OiMc')
       function le(e, t) {
         var n = Object.keys(e)
@@ -749,7 +744,7 @@
                   c = o.skin_variations,
                   u = [
                     R.createElement(
-                      X,
+                      q,
                       s()({}, i, {
                         emoji: fe({}, o),
                         key: 'none',
@@ -765,7 +760,7 @@
                       h = f.unified
                     u.push(
                       R.createElement(
-                        X,
+                        q,
                         s()({}, i, {
                           emoji: fe(fe({}, o), {}, { text: h }),
                           key: l,
@@ -778,7 +773,7 @@
                 return u
               }),
               S()(p()(e), 'renderEmojis', function (t) {
-                var n = Object(se.a)(e._getEmojisForActiveSkinTone(t), 10)
+                var n = se(e._getEmojisForActiveSkinTone(t), 10)
                 return R.createElement(
                   P.a,
                   { style: pe.emojisContainer },
@@ -801,7 +796,7 @@
                   return R.createElement(
                     ue.a,
                     { contentStyle: pe.contentStyle, renderContent: this.renderEmojis, withArrow: !0 },
-                    R.createElement(X, s()({}, n, { emoji: t, spritePosition: t.sprite_position })),
+                    R.createElement(q, s()({}, n, { emoji: t, spritePosition: t.sprite_position })),
                   )
                 },
               },
@@ -859,9 +854,9 @@
                   c = i && o && o[i]
                 return 0 !== a || c
                   ? 1 === a && c
-                    ? R.createElement(X, s()({}, n, { spritePosition: c.sprite_position }))
+                    ? R.createElement(q, s()({}, n, { spritePosition: c.sprite_position }))
                     : R.createElement(ve, s()({}, n, { activeSkinTone: t }))
-                  : R.createElement(X, s()({}, n, { spritePosition: r.sprite_position }))
+                  : R.createElement(q, s()({}, n, { spritePosition: r.sprite_position }))
               },
             },
           ]),
@@ -949,7 +944,7 @@
               S()(p()(r), '_renderEmptyState', function () {
                 var e = W.f.notFoundHeader,
                   t = W.f.notFoundMessage
-                return R.createElement(q.a, { header: e, message: t })
+                return R.createElement(X.a, { header: e, message: t })
               }),
               S()(p()(r), 'updatePosition', function () {
                 var e = ee.a.findDOMNode(r._containerRef.current),
@@ -1092,7 +1087,7 @@
                     return R.createElement(
                       P.a,
                       { key: h.unified, ref: f === i ? u : void 0, style: ke.rowItem },
-                      p ? R.createElement(ye, s()({}, y, { activeSkinTone: n })) : R.createElement(X, y),
+                      p ? R.createElement(ye, s()({}, y, { activeSkinTone: n })) : R.createElement(q, y),
                     )
                   })
                 },
@@ -1611,7 +1606,7 @@
           return g()(this, n)
         }
       }
-      var Ze = (function (e) {
+      var Ye = (function (e) {
           m()(n, e)
           var t = Je(n)
           function n() {
@@ -1625,7 +1620,7 @@
                 var t = e.props.activeSkinTone
                 return R.createElement(
                   P.a,
-                  { accessibilityRole: 'radiogroup', style: Ye.palette },
+                  { accessibilityRole: 'radiogroup', style: Ze.palette },
                   Object(Pe.a)(W.e).map(function (n) {
                     var r = n === t
                     return R.createElement(Ge, {
@@ -1639,7 +1634,7 @@
                       onHoverLeave: e._handleSkinToneHoverLeave,
                       onSelect: e._handleSkinToneSelectionClick,
                       skinTone: n,
-                      style: Ye.skinToneOption,
+                      style: Ze.skinToneOption,
                     })
                   }),
                 )
@@ -1692,11 +1687,11 @@
             n
           )
         })(R.Component),
-        Ye = E.a.create(function (e) {
+        Ze = E.a.create(function (e) {
           return { palette: { flexDirection: 'row' }, skinToneOption: { paddingHorizontal: e.spaces.space2 } }
         }),
-        Xe = Ze,
-        qe = n('r728'),
+        qe = Ye,
+        Xe = n('r728'),
         Qe = n('Qyxo'),
         $e = n('Iok7')
       function et(e, t) {
@@ -1914,7 +1909,7 @@
                   { style: ct.footer },
                   r._renderPreview(),
                   e ? r._renderEmojiDescription() : null,
-                  R.createElement(Xe, {
+                  R.createElement(qe, {
                     activeSkinTone: r.state.activeSkinTone,
                     onPreview: r._handleSkinTonePreview,
                     onSelect: r._handleSkinToneSelect,
@@ -2055,7 +2050,7 @@
               })
             var o = r.props.emojiInfo
             return (
-              (r._uncompressedData = Object(qe.a)(o || {})),
+              (r._uncompressedData = Object(Xe.a)(o || {})),
               (r._categories = r._uncompressedData.categories),
               (r._searchCategoryInitialValue = {
                 anchorless: !0,

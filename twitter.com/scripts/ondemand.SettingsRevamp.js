@@ -2640,7 +2640,7 @@
               updateSafetyModeSettings: a.e,
             }
           })
-          .withAnalytics({ component: 'safety_mode_settings_control' }),
+          .withAnalytics(),
         s = r('v//M'),
         l = r('3XMw'),
         u = r.n(l),

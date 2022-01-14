@@ -1,26 +1,28 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
   [234],
   {
-    VzRj: function (e, t, s) {
+    VzRj: function (e, t, n) {
       'use strict'
-      s.r(t)
-      var i = s('ezF+'),
-        n = (s('ERkP'), s('MWbm')),
-        a = s('VPAj'),
-        c = s('fs1G'),
-        o = i.g({
-          component: n.a,
-          createProps: function (e) {
-            var t = e.entry,
-              s = t.content.accessibilityOwns
-            t.entryId
-            return { accessibilityRole: 'list', accessibilityOwns: s }
-          },
-          isFocusable: Object(a.a)(!1),
-          getBehavioralEventContextOverride: c.a,
-          shouldDisplayBorder: Object(a.a)(!1),
-        })
-      t.default = o
+      n.r(t)
+      var i = n('ezF+'),
+        s = n('ERkP'),
+        a = n('MWbm'),
+        c = function (e) {
+          var t = e.entry
+          return s.createElement(a.a, { accessibilityOwns: t.content.accessibilityOwns, accessibilityRole: 'list' })
+        },
+        o = s.memo(c),
+        r = n('VPAj'),
+        l = n('fs1G'),
+        b = i
+          .b({
+            component: o,
+            isFocusable: Object(r.a)(!1),
+            getBehavioralEventContextOverride: l.a,
+            shouldDisplayBorder: Object(r.a)(!1),
+          })
+          .getHandler()
+      t.default = b
     },
   },
 ])

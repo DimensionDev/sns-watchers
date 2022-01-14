@@ -605,6 +605,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('a66ac766', 'Loading Direct Messages'),
           a('fe61929d', 'Search for people and groups'),
+          a('a846382a', 'Search Direct Messages'),
           a('fd6150fc', 'Keeping you safer in Direct Messages'),
           a('d42d239f', 'Privacy Policy'),
           a('d88d0790', 'Options menu'),
@@ -633,17 +634,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'jdc67c42',
             'The term you entered did not bring up any results. Currently only people and groups are searchable.',
           ),
+          a('e8581ccd', 'The term you entered did not bring up any results'),
           a('f08940ab', 'Start new message'),
           a('gaae1fd5', 'Try searching for people or groups'),
           a('f8321d82', 'All'),
-          a('g2fd3205', 'People'),
           a('c94ac69d', 'Groups'),
+          a('g2fd3205', 'People'),
           a('fb3c8e74', 'Recent searches'),
           a('ffd9cfe6', 'See more'),
-          a('i9028824', 'Loading'),
           a('e5b0063d', function (e) {
             return 'Timeline: ' + e.title
           }),
+          a('i9028824', 'Loading'),
           a('h845f281', 'Direct Message'),
           a('f325afc3', 'Compose a DM'),
           a('f37a6f73', 'Learn more'),
@@ -1142,10 +1144,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('i77347d0', function (e) {
             return 'Dismiss ' + e.topicName + ' Topic'
-          }),
-          a('c837fca9', 'Show more replies'),
-          a('d228a9a0', 'Show more')
-        a('cf433585', 'Introducing'),
+          })
+        a('c837fca9', 'Show more replies'),
+          a('d228a9a0', 'Show more'),
+          a('cf433585', 'Introducing'),
           a('a603e958', 'Reply downvotes'),
           a('f2be4e37', 'Tap to downvote'),
           a('aa4b7c32', 'See a reply that isn’t adding to the conversation? Let us know by downvoting.'),
@@ -1781,6 +1783,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('e48fbb01', 'Report Community'),
           a('c8c6c4e9', 'Learn more about Communities'),
+          a('dce5e1b3', 'Admin tools'),
+          a('c5d8c93d', 'Moderator tools'),
           a('a0e3ece4', 'Community Detail'),
           a('d601fc2f', 'Latest'),
           a('hb9400db', 'See More'),
@@ -1845,8 +1849,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e988475f', function (e) {
             return 'Purpose must be between ' + e.minCharacterCount + ' and ' + e.maxCharacterCount + ' characters'
           }),
-          a('dce5e1b3', 'Admin tools'),
-          a('c5d8c93d', 'Moderator tools'),
           a('c8c7f9fc', 'Review needed'),
           a('c045c7b6', 'Reported Tweets'),
           a('a87df2ee', 'Community management'),
@@ -1879,6 +1881,20 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'ccfafe8c',
             'Everyone can discover your Community. To join, people must be invited by a member or moderator.',
+          ),
+          a('bccd6510', 'Everyone can discover your Community. To join, people must be invited by a moderator.'),
+          a('f5b4f127', 'Also enable requests'),
+          a('d2a2687c', 'Anyone can ask to join. Moderators approve or deny those requests.'),
+          a('d1070fd8', 'Also enable member invites'),
+          a('id6cb134', 'Each member gets 5 invitations. Anyone who gets an invite can join without further approval.'),
+          a('c5d1634d', 'Okay, I understand'),
+          a('b983f9e0', 'Heads up'),
+          a('h4c8d3da', 'An invitation from a moderator will be the only way someone can join your Community.'),
+          a('f9ca1622', 'All pending requests to join will be removed, and membership will be by invitation only.'),
+          a('d2a327a5', 'This will allow anyone to join your Community.'),
+          a(
+            'daedd9fa',
+            'This will allow anyone to join your Community. All pending requests to join will be automatically approved.',
           ),
           a('h3c0f1a2', 'Edit Community name'),
           a('cb5e6510', 'Looks like we’re having trouble saving your new name. Please try again later.'),
@@ -2206,8 +2222,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'h2b9a5fd',
             'At least three articles about your company from qualifying news publications in the last six months.',
-          ),
-          a('baccb708', 'Add verified news coverage'),
+          )
+        a('baccb708', 'Add verified news coverage'),
           a('feadd98c', 'Add verified news references'),
           a('j7ae97a9', 'Verified news references'),
           a('c368aa8d', 'At least three articles from verified news publications that reference you.'),
@@ -2221,8 +2237,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fc3ee695', 'Leadership reference'),
           a('i3e65eb4', 'The official site of a verified organization that references you in a leadership position.'),
           a('jd014eba', 'The URL provided links to the specific page referencing applicant.'),
-          a('a96901cb', 'Add leadership reference')
-        a('cc424a21', 'Advocacy reference'),
+          a('a96901cb', 'Add leadership reference'),
+          a('cc424a21', 'Advocacy reference'),
           a('ibfc1a5a', 'You aren’t eligible for verification in this category.'),
           a('e1c78795', 'Official website'),
           a('cf93bcbf', 'Official website reference'),
@@ -3516,8 +3532,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return '' + e.learnMoreLabel
           }),
           a('ed5ab169', 'Active now'),
-          a('i23e2807', 'Apps'),
-          a('hb12114e', 'Log out all other sessions'),
+          a('i23e2807', 'Apps')
+        function r(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var a = t[o]
+            ;(a.enumerable = a.enumerable || !1),
+              (a.configurable = !0),
+              'value' in a && (a.writable = !0),
+              Object.defineProperty(e, a.key, a)
+          }
+        }
+        function i(e, t) {
+          return (i =
+            Object.setPrototypeOf ||
+            function (e, t) {
+              return (e.__proto__ = t), e
+            })(e, t)
+        }
+        a('hb12114e', 'Log out all other sessions'),
           a('gf673efb', function (e) {
             return (
               'This will end ' + e.num + ' of your other active Twitter sessions. It won’t affect your current session.'
@@ -3538,24 +3570,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g6dc09af', 'Permissions'),
           a('a6e6e897', 'Read-only'),
           a('cde3b9ae', 'Read and write'),
-          a('g0d78139', 'Read, write, and direct messages')
-        function r(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var a = t[o]
-            ;(a.enumerable = a.enumerable || !1),
-              (a.configurable = !0),
-              'value' in a && (a.writable = !0),
-              Object.defineProperty(e, a.key, a)
-          }
-        }
-        function i(e, t) {
-          return (i =
-            Object.setPrototypeOf ||
-            function (e, t) {
-              return (e.__proto__ = t), e
-            })(e, t)
-        }
-        a('c9b35b9e', 'Read your advertising data'),
+          a('g0d78139', 'Read, write, and direct messages'),
+          a('c9b35b9e', 'Read your advertising data'),
           a('e0191264', 'Read, create, and manage your advertising data'),
           a('b73e1e89', 'Learn how to revoke access'),
           a('da6cdba7', 'Revoke app permissions'),
@@ -4699,10 +4715,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b1b4d57d', 'Video views'),
           a('i680442e', 'Number of clicks on any video in this Tweet'),
           a('d5f1e553', 'Link clicks'),
-          a('d24b7811', 'Number of clicks on any URL in this Tweet'),
-          a('g33fd6b0', function (e) {
-            return e.percentage + ' from promotion'
-          }),
+          a('d24b7811', 'Number of clicks on any URL in this Tweet')
+        a('g33fd6b0', function (e) {
+          return e.percentage + ' from promotion'
+        }),
           a('b71059c3', function (e) {
             return e.percentage + ' from non followers'
           }),
@@ -4734,8 +4750,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               ' so far. Switch to a professional account to broaden your reach.'
             )
           }),
-          a('f96eec3c', 'Get more impressions and grow your brand. Promote this Tweet and broaden your reach.')
-        a('e9891f7c', 'Promote this Tweet'),
+          a('f96eec3c', 'Get more impressions and grow your brand. Promote this Tweet and broaden your reach.'),
+          a('e9891f7c', 'Promote this Tweet'),
           a('jede3014', 'Your promotion is under review'),
           a('i094e43b', 'Once it’s approved, your Tweet will be promoted to the audience you selected.'),
           a('f638d3e0', 'Review Twitter’s Ads Policy'),
@@ -4990,6 +5006,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h421e74c', 'Suggested Lists'),
           a('e5e4d3a9', 'Check back later to see suggested Lists.'),
           a('c1a40fd4', 'View NFT details'),
+          a('ef1c2c77', 'Show NFT details'),
+          a('gd912af1', 'Hide NFT details'),
           a('e83b141e', 'Verified collection by OpenSea'),
           a('dcbace0b', 'NFT Details'),
           a('d4741cb3', 'Blockchain'),
@@ -5422,6 +5440,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b03e1629', 'Listen live'),
           a('f89a5d6f', 'Host'),
           a('fb236727', 'Pause'),
+          a('jf7853f6', function (e) {
+            return 'Space ' + e.title + ' hosted by ' + e.host + ' has ended'
+          }),
+          a('i1a29920', 'Space has ended'),
+          a('j8b01b27', function (e) {
+            return 'Space ' + e.title + ' hosted by ' + e.host + ' has been canceled'
+          }),
+          a('fda9f48b', 'Space has been canceled'),
           a('j2d460c0', function (e) {
             return e.count + ' in this Space'
           }),

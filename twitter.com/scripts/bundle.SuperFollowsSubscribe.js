@@ -590,7 +590,7 @@
               {
                 alias: 'user',
                 args: (n = [
-                  { kind: 'Literal', name: 's', value: 44 },
+                  { kind: 'Literal', name: 's', value: 45 },
                   { kind: 'Variable', name: 'screen_name', variableName: 'screenName' },
                 ]),
                 concreteType: 'UserResults',

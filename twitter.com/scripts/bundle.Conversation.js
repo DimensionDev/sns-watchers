@@ -1034,7 +1034,7 @@
               fetchCurrentTargetingLocationIfNeeded: P.e,
               fetchAvailableBudgetsIfNeeded: P.c,
               fetchAdsAccountDataIfNeeded: P.b,
-              fetchProfessionalEligibilityIfNeeded: P.h,
+              fetchQuickPromoteEligibilityIfNeeded: P.i,
               fetchCouponsIfNeeded: P.d,
               handleFirstLoad: function () {
                 return (function (e) {
@@ -1808,7 +1808,7 @@
               dailyBudget: Zn,
               durationDays: Yn,
               lang: w.n,
-              country: P.n,
+              country: P.l,
               currency: $n,
               fundingInstrument: er,
               vatInfo: tr,
@@ -2840,7 +2840,7 @@
                     o = t.fetchAvailableBudgetsIfNeeded,
                     c = t.fetchCouponsIfNeeded,
                     i = t.fetchCurrentTargetingLocationIfNeeded,
-                    l = t.fetchProfessionalEligibilityIfNeeded,
+                    l = t.fetchQuickPromoteEligibilityIfNeeded,
                     u = t.fetchTweetIfNeeded,
                     s = t.match,
                     d = t.promoteFetchStatus,
@@ -2852,7 +2852,7 @@
                     ? (Ze.a.LOADED === d && m !== Ne.c.Done && f(Ze.a.NONE),
                       Object(N.b)(
                         'initial-load',
-                        Promise.all([u(p), i(), a(g), l(), c()])
+                        Promise.all([u(p), i(), a(g), c(), l({ statusId: p })])
                           .then(function () {
                             return o()
                           })
@@ -2990,7 +2990,7 @@
         T = n('QK5w'),
         C = n('eSoz'),
         k = n('RqPI'),
-        S = n('If64'),
+        S = n('9D1O'),
         j = n('pNZL'),
         L = n('XOJV'),
         x = n('G6rE'),
@@ -3094,7 +3094,7 @@
               screenName: q,
               selectedTweetId: M,
               socialContext: H,
-              startLocation: S.a,
+              startLocation: S.t,
               statusId: N,
               topicFollowPrompt: z,
               tweetDetailNav: j.a,

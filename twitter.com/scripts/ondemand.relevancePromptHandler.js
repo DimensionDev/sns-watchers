@@ -25,8 +25,8 @@
         m = n('Irs7'),
         b = n('MWbm'),
         d = n('PbQQ'),
-        f = n('/yvb'),
-        y = n('t62R'),
+        y = n('/yvb'),
+        f = n('t62R'),
         v = n('rHpw').a.create(function (e) {
           return {
             button: { margin: '1ex' },
@@ -52,7 +52,7 @@
             icon: { marginLeft: e.spaces.space12 },
           }
         }),
-        O = function (e) {
+        C = function (e) {
           var t = e.confirmation,
             n = e.displayType,
             r = e.isRelevantIcon,
@@ -61,61 +61,61 @@
             i = e.notRelevantIcon,
             l = e.notRelevantOnClick,
             s = e.notRelevantText,
-            O = e.onIsRelevant,
+            C = e.onIsRelevant,
             R = e.showConfirmation,
-            E = e.title,
-            C = Object(m.b)(),
-            g = n === u.ThumbsUpAndDown,
-            I = g,
-            h = d.b.useOpaqueIdentifier(),
-            w = function () {
-              C.scribe({ element: 'is_relevant', action: 'click' }), O && O(), o()
+            g = e.title,
+            E = Object(m.b)(),
+            O = n === u.ThumbsUpAndDown,
+            h = O,
+            w = d.b.useOpaqueIdentifier(),
+            I = function () {
+              E.scribe({ element: 'is_relevant', action: 'click' }), C && C(), o()
             },
             k = function () {
-              C.scribe({ element: 'not_relevant', action: 'click' }), l()
+              E.scribe({ element: 'not_relevant', action: 'click' }), l()
             },
             j = function (e, t, n) {
               return c.createElement(
-                f.a,
+                y.a,
                 {
                   accessibilityLabel: t,
                   icon: n ? p(n) : void 0,
                   onPress: e,
                   size: n ? 'medium' : 'xSmall',
                   style: n ? v.icon : v.button,
-                  type: g ? 'primaryOutlined' : 'brandFilled',
+                  type: O ? 'primaryOutlined' : 'brandFilled',
                 },
                 n ? null : t,
               )
             }
           return c.createElement(
             b.a,
-            { accessibilityLabelledBy: h, accessibilityRole: 'group', style: v.promptContainer },
+            { accessibilityLabelledBy: w, accessibilityRole: 'group', style: v.promptContainer },
             R
-              ? c.createElement(b.a, { accessibilityRole: 'alert' }, c.createElement(y.b, { style: g && v.survey }, t))
+              ? c.createElement(b.a, { accessibilityRole: 'alert' }, c.createElement(f.b, { style: O && v.survey }, t))
               : c.createElement(
                   b.a,
-                  { style: [v.root, g && v.survey] },
-                  c.createElement(b.a, { style: v.firstHalf }, c.createElement(y.b, { nativeID: h }, E)),
+                  { style: [v.root, O && v.survey] },
+                  c.createElement(b.a, { style: v.firstHalf }, c.createElement(f.b, { nativeID: w }, g)),
                   c.createElement(
                     b.a,
                     { style: v.secondHalf },
                     c.createElement(
                       b.a,
                       { style: v.buttonContainer },
-                      I
-                        ? c.createElement(c.Fragment, null, j(w, a, r), j(k, s, i))
-                        : c.createElement(c.Fragment, null, j(k, s, i), j(w, a, r)),
+                      h
+                        ? c.createElement(c.Fragment, null, j(I, a, r), j(k, s, i))
+                        : c.createElement(c.Fragment, null, j(k, s, i), j(I, a, r)),
                     ),
                   ),
                 ),
           )
         },
         R = n('zh9S'),
-        E = n('Rp9C'),
-        C = n('pbku'),
-        g = n('0KEI')
-      function I(e, t) {
+        g = n('Rp9C'),
+        E = n('pbku'),
+        O = n('0KEI')
+      function h(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -127,30 +127,30 @@
         }
         return n
       }
-      function h(e) {
+      function w(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? I(Object(n), !0).forEach(function (t) {
+            ? h(Object(n), !0).forEach(function (t) {
                 o()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : I(Object(n)).forEach(function (t) {
+            : h(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var w = function (e, t) {
+      var I = function (e, t) {
           if (e && e === u.ThumbsUpAndDown) return t ? 'IconCheckmark' : 'IconClose'
         },
         k = a.g({
-          component: O,
+          component: C,
           bindActions: function (e) {
             var t = e.module
             return {
-              createLocalApiErrorHandler: Object(g.createLocalApiErrorHandlerWithContextFactory)('RELEVANCE_PROMPT'),
+              createLocalApiErrorHandler: Object(O.createLocalApiErrorHandlerWithContextFactory)('RELEVANCE_PROMPT'),
               scribe: R.c,
               processCallback: i.a,
               applyReactionInstructions: t.applyReactionInstructions,
@@ -169,20 +169,20 @@
             if (!l) return null
             return {
               onIsRelevant: function () {
-                n({ entry: i, triggerName: C.a.ON_IS_RELEVANT })
+                n({ entry: i, triggerName: E.a.ON_IS_RELEVANT })
               },
               title: l.title,
               confirmation: l.confirmation,
               isRelevantText: l.isRelevantText,
               notRelevantText: l.notRelevantText,
-              isRelevantIcon: w(l.displayType, !0),
-              notRelevantIcon: w(l.displayType, !1),
+              isRelevantIcon: I(l.displayType, !0),
+              notRelevantIcon: I(l.displayType, !1),
               isRelevantOnClick: function () {
-                a(i.entryId, { relevancePrompt: h(h({}, l), {}, { showConfirmation: !0 }) }),
+                a(i.entryId, { relevancePrompt: w(w({}, l), {}, { showConfirmation: !0 }) }),
                   o(l.isRelevantCallback).catch(r())
               },
               notRelevantOnClick: function () {
-                a(i.entryId, { relevancePrompt: h(h({}, l), {}, { showConfirmation: !0 }) }),
+                a(i.entryId, { relevancePrompt: w(w({}, l), {}, { showConfirmation: !0 }) }),
                   o(l.notRelevantCallback).catch(r())
               },
               displayType: l.displayType,
@@ -190,23 +190,15 @@
             }
           },
           getScribeDataItem: function (e) {
-            return E.a.forRelevancePrompt(e.itemMetadata.clientEventInfo)
+            return g.a.forRelevancePrompt(e.itemMetadata.clientEventInfo)
           },
           onImpression: function (e) {
             var t = e.actions.scribe,
               n = e.scribeData
-            t(h(h({}, e.scribeNamespace), {}, { element: 'relevance_prompt', action: 'impression' }), n)
+            t(w(w({}, e.scribeNamespace), {}, { element: 'relevance_prompt', action: 'impression' }), n)
           },
         })
       t.default = k
-    },
-    pbku: function (e, t, n) {
-      'use strict'
-      n.d(t, 'a', function () {
-        return r
-      })
-      n('yH/f')
-      var r = Object.freeze({ ON_LINGER: 'onLinger', ON_IS_RELEVANT: 'onIsRelevant', ON_SHOW_MORE: 'onShowMore' })
     },
   },
 ])
