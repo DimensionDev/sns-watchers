@@ -4,7 +4,7 @@
     '0mK8': function (e, t, r) {
       'use strict'
       r.d(t, 'a', function () {
-        return d
+        return u
       }),
         r.d(t, 'b', function () {
           return m
@@ -20,8 +20,8 @@
         c = r('/WPq'),
         l = r('78ol'),
         s = r('jV+4'),
-        u = r('rHpw'),
-        d = function (e) {
+        d = r('rHpw'),
+        u = function (e) {
           var t = e.author,
             r = e.color,
             o = void 0 === r ? 'normal' : r,
@@ -29,11 +29,11 @@
             i = void 0 === a ? 'subtext2' : a,
             c = e.style,
             l = e.withHoverCard,
-            u = void 0 === l || l,
-            d = e.withLink,
-            m = void 0 !== d && d,
+            d = void 0 === l || l,
+            u = e.withLink,
+            m = void 0 !== u && u,
             g = e.withScreenName,
-            f = void 0 !== g && g
+            h = void 0 !== g && g
           return n.createElement(s.a, {
             avatarSize: { subtext2: 'small', body: 'medium', headline1: 'large' }[i],
             color: o,
@@ -44,33 +44,33 @@
             profileImageUrl: t.profile_image_url_https,
             screenName: t.screen_name,
             screenNameSize: i,
-            style: [h.authorUserName, c],
-            withHoverCard: u,
+            style: [b.authorUserName, c],
+            withHoverCard: d,
             withLink: m,
-            withScreenName: f,
+            withScreenName: h,
           })
         },
         m = function (e) {
           var t = e.style
           return n.createElement(
             o.a,
-            { style: [h.lightningBadge, t] },
-            n.createElement(a.a, { style: h.lightningIcon }),
+            { style: [b.lightningBadge, t] },
+            n.createElement(a.a, { style: b.lightningIcon }),
           )
         },
         g = function (e) {
           var t = e.icon
           return n.createElement(
             o.a,
-            { style: h.placeholderIconContainer },
+            { style: b.placeholderIconContainer },
             'news' === t
-              ? n.createElement(i.a, { style: h.placeholderIcon })
+              ? n.createElement(i.a, { style: b.placeholderIcon })
               : 'lists' === t
-              ? n.createElement(c.a, { style: h.placeholderIcon })
-              : n.createElement(l.a, { style: h.placeholderIcon }),
+              ? n.createElement(c.a, { style: b.placeholderIcon })
+              : n.createElement(l.a, { style: b.placeholderIcon }),
           )
         },
-        h = u.a.create(function (e) {
+        b = d.a.create(function (e) {
           return {
             authorUserName: { alignItems: 'center' },
             lightningBadge: {
@@ -106,17 +106,16 @@
       var n = r('tPQo'),
         o = (r('hBvt'), r('0mK8')),
         a = r('ERkP'),
-        i = r('zOwA'),
-        c = r('MWbm'),
-        l = r('htQn'),
-        s = r('t62R'),
-        u = r('9Xij'),
+        i = r('MWbm'),
+        c = r('htQn'),
+        l = r('t62R'),
+        s = r('9Xij'),
         d = r('TIdA'),
-        m = r('A91F'),
-        g = r('rHpw'),
-        h = '100px',
-        f = '70px',
-        b = g.a.create(function (e) {
+        u = r('A91F'),
+        m = r('rHpw'),
+        g = '100px',
+        b = '70px',
+        h = m.a.create(function (e) {
           return {
             root: {
               flexDirection: 'row',
@@ -128,10 +127,10 @@
               backgroundColor: e.colors.gray200,
               borderRadius: e.borderRadii.xLarge,
               height: '15%',
-              maxHeight: h,
-              maxWidth: h,
-              minHeight: f,
-              minWidth: f,
+              maxHeight: g,
+              maxWidth: g,
+              minHeight: b,
+              minWidth: b,
               overflow: 'hidden',
               width: '15%',
             },
@@ -141,40 +140,33 @@
         }),
         p = function (e) {
           var t = e.author,
-            r = e.contextImage,
-            n = e.contextLabel,
-            g = e.link,
-            h = e.onClick,
-            f = e.originalImage,
-            p = e.title
+            r = e.link,
+            n = e.onClick,
+            m = e.originalImage,
+            g = e.title
           return a.createElement(
-            l.a,
-            { link: g, onClick: h, style: b.root },
+            c.a,
+            { link: r, onClick: n, style: h.root },
             a.createElement(
-              c.a,
-              { style: b.details },
-              a.createElement(s.b, { color: 'gray700', size: 'subtext2' }, t),
-              a.createElement(s.b, { style: b.title, weight: 'bold' }, p),
-              n ? a.createElement(i.a, { image: r, label: n, textSize: 'subtext2' }) : null,
+              i.a,
+              { style: h.details },
+              a.createElement(l.b, { color: 'gray700', size: 'subtext2' }, t),
+              a.createElement(l.b, { style: h.title, weight: 'bold' }, g),
             ),
             a.createElement(
-              c.a,
-              { style: b.coverContainer },
+              i.a,
+              { style: h.coverContainer },
               a.createElement(
-                u.a,
+                s.a,
                 { ratio: 1 },
-                f
-                  ? a.createElement(d.a, { accessibilityLabel: '', aspectMode: m.a.SQUARE, image: f })
+                m
+                  ? a.createElement(d.a, { accessibilityLabel: '', aspectMode: u.a.SQUARE, image: m })
                   : a.createElement(o.c, { icon: 'news' }),
               ),
             ),
           )
         }
-      t.default = Object(n.a)(p, function (e) {
-        var t = e.content.socialProof,
-          r = (t && t.generalContext) || void 0
-        return { contextImage: r && r.contextImageUrls && r.contextImageUrls[0], contextLabel: r && r.text }
-      })
+      t.default = Object(n.a)(p, function () {})
     },
     tPQo: function (e, t, r) {
       'use strict'
@@ -186,7 +178,7 @@
         c = r('caTy'),
         l = r('zh9S'),
         s = r('P1r1')
-      function u(e, t) {
+      function d(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -198,16 +190,16 @@
         }
         return r
       }
-      function d(e) {
+      function u(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? u(Object(r), !0).forEach(function (t) {
+            ? d(Object(r), !0).forEach(function (t) {
                 o()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : u(Object(r)).forEach(function (t) {
+            : d(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
@@ -229,115 +221,19 @@
               i = o.content,
               l = i.landingUrl && Object(c.b)(i.landingUrl),
               s = t({ content: i }),
-              u = {
+              d = {
                 author: i.author,
                 link: l,
                 originalImage: n ? void 0 : i.originalImage,
                 onClick: function () {
-                  r(d(d({}, a), {}, { action: 'click' }), void 0)
+                  r(u(u({}, a), {}, { action: 'click' }), void 0)
                 },
                 title: i.title,
               }
-            return d(d({}, u), s)
+            return u(u({}, d), s)
           },
         })
       }
-    },
-    zOwA: function (e, t, r) {
-      'use strict'
-      r.d(t, 'a', function () {
-        return E
-      })
-      r('OZaJ')
-      var n = r('VrFO'),
-        o = r.n(n),
-        a = r('Y9Ll'),
-        i = r.n(a),
-        c = r('5Yy7'),
-        l = r.n(c),
-        s = r('N+ot'),
-        u = r.n(s),
-        d = r('AuHH'),
-        m = r.n(d),
-        g = r('KEM+'),
-        h = r.n(g),
-        f = r('ERkP'),
-        b = r('9Xij'),
-        p = r('t62R'),
-        y = r('rHpw'),
-        v = r('U+bB'),
-        w = r('MWbm')
-      function x(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var r,
-            n = m()(e)
-          if (t) {
-            var o = m()(this).constructor
-            r = Reflect.construct(n, arguments, o)
-          } else r = n.apply(this, arguments)
-          return u()(this, r)
-        }
-      }
-      var E = (function (e) {
-        l()(r, e)
-        var t = x(r)
-        function r() {
-          return o()(this, r), t.apply(this, arguments)
-        }
-        return (
-          i()(r, [
-            {
-              key: 'render',
-              value: function () {
-                var e = this.props,
-                  t = e.color,
-                  r = e.image,
-                  n = e.label,
-                  o = e.textSize
-                return f.createElement(
-                  w.a,
-                  { style: O.root },
-                  r
-                    ? f.createElement(
-                        w.a,
-                        { style: O.imageContainer },
-                        f.createElement(b.a, { ratio: 1 }, f.createElement(v.a, { source: r, style: O.image })),
-                      )
-                    : null,
-                  f.createElement(p.b, { color: t, size: o }, n),
-                )
-              },
-            },
-          ]),
-          r
-        )
-      })(f.PureComponent)
-      h()(E, 'defaultProps', { color: 'gray700', textSize: 'body' })
-      var O = y.a.create(function (e) {
-        return {
-          root: { alignItems: 'center', flexDirection: 'row' },
-          imageContainer: {
-            alignSelf: 'flex-start',
-            backgroundColor: e.colors.gray200,
-            flexShrink: 0,
-            height: e.fontSizes.headline1,
-            marginRight: e.spaces.space4,
-            width: e.fontSizes.headline1,
-            borderRadius: e.borderRadii.infinite,
-          },
-          image: { height: '100%', width: '100%', borderRadius: e.borderRadii.infinite },
-        }
-      })
     },
   },
 ])

@@ -389,7 +389,7 @@
           return L.e.select(e, t.id)
         },
         be = function (e, t) {
-          return Object(F.d)(e, t.id)
+          return Object(F.c)(e, t.id)
         },
         _e = Object(O.a)().propsFromState(function () {
           return { user: Se, userSpace: be }

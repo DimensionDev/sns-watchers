@@ -6109,7 +6109,7 @@
         },
         J = (n('yH/f'), n('M0jS')),
         $ = function (e, t) {
-          return Object(J.d)(e, t.userId)
+          return Object(J.c)(e, t.userId)
         },
         ee = Object(I.a)().propsFromState(function () {
           return { userSpace: $ }

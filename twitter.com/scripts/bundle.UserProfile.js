@@ -142,7 +142,7 @@
         W = r('rxPX'),
         z = r('M0jS'),
         V = function (e, t) {
-          return Object(z.d)(e, t.user.id_str)
+          return Object(z.c)(e, t.user.id_str)
         },
         q = function (e, t) {
           var r = z.b.select(e, t.user.id_str)

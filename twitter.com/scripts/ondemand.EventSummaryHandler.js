@@ -16,9 +16,9 @@
         p = r('k+3s'),
         m = r('x5Pi'),
         f = r('Fg8X'),
-        h = r('caTy'),
-        v = r('cFuS'),
-        g = r('zh9S'),
+        v = r('caTy'),
+        g = r('cFuS'),
+        h = r('zh9S'),
         y = r('Rp9C'),
         b = r('P1r1'),
         C = r('X04g'),
@@ -65,7 +65,7 @@
             return {
               logTrend: i.c,
               saveAsRecentSearch: l.a,
-              scribe: g.c,
+              scribe: h.c,
               createLocalApiErrorHandler: Object(u.createLocalApiErrorHandlerWithContextFactory)(r),
             }
           },
@@ -124,7 +124,7 @@
               s = e.data,
               u = s.advertiser,
               f = s.dataSaverMode,
-              g = s.moment,
+              h = s.moment,
               y = s.publisher,
               b = s.topic,
               C = s.tweet,
@@ -136,11 +136,11 @@
               I = O.groupedTrends,
               k = O.promotedMetadata,
               P = O.richContext,
-              M = O.url && Object(h.b)(O.url),
-              R = O.displayType === p.a.CellWithProminentSocialContext,
-              j = Object(m.d)({ isCellWithProminentSocialContext: R, socialContext: O.socialContext, topic: b }),
-              D = (I || []).map(function (e) {
-                return { name: e.name, link: Object(h.b)(e.url) }
+              M = O.url && Object(v.b)(O.url),
+              j = O.displayType === p.a.CellWithProminentSocialContext,
+              R = Object(m.d)({ isCellWithProminentSocialContext: j, socialContext: O.socialContext, topic: b }),
+              _ = (I || []).map(function (e) {
+                return { name: e.name, link: Object(v.b)(e.url) }
               })
             return T(
               T(
@@ -148,7 +148,7 @@
                 n({
                   eventSummary: O,
                   tweet: C,
-                  moment: g,
+                  moment: h,
                   scribe: l,
                   scribeNamespace: S,
                   entry: x,
@@ -160,7 +160,7 @@
               {},
               {
                 badge: O.badge,
-                groupedTrends: D,
+                groupedTrends: _,
                 promotedContent: k
                   ? {
                       advertiser: { id_str: k.advertiserId },
@@ -171,7 +171,7 @@
                   : void 0,
                 promotedTrendDescription: k ? k.promotedTrendDescription : void 0,
                 publisher: y,
-                socialContext: j,
+                socialContext: R,
                 supportingText: O.supportingText,
                 timeString: O.timeString,
                 link: M,
@@ -186,7 +186,7 @@
                       a({
                         promoted_trend_id: k.promotedTrendId,
                         impression_id: k.impressionId,
-                        event: v.d.SPOTLIGHT_CLICK,
+                        event: g.d.SPOTLIGHT_CLICK,
                       }).catch(r())
                 },
                 title: O.title,
@@ -221,7 +221,7 @@
                 n({
                   promoted_trend_id: l.promotedTrendId,
                   impression_id: l.impressionId,
-                  event: v.d.SPOTLIGHT_IMPRESSION,
+                  event: g.d.SPOTLIGHT_IMPRESSION,
                 }).catch(r())
           },
         })
@@ -243,9 +243,9 @@
         p = r('8bWS'),
         m = r('caTy'),
         f = r('3IPs'),
-        h = r('qbku'),
-        v = r('X04g'),
-        g = r('MWbm'),
+        v = r('qbku'),
+        g = r('X04g'),
+        h = r('MWbm'),
         y = r('hxu0'),
         b = r('PbQQ'),
         C = r('htQn'),
@@ -268,7 +268,7 @@
                 i.createElement(E.a, { style: T.topicMiddot }),
                 i.createElement(u.a, { isTransparent: !0, size: 'smallCompact', textMode: s.a.FollowTopic, topic: r }),
               )
-          return i.createElement(h.a, {
+          return i.createElement(v.a, {
             contextType: n,
             link: o ? Object(m.b)(o) : void 0,
             rightControl: l ? f : void 0,
@@ -301,7 +301,7 @@
             d = e.isInSidebar,
             p = e.link,
             m = e.onClick,
-            h = e.publisher,
+            v = e.publisher,
             y = e.richContext,
             E = e.saveAsRecentSearch,
             w = e.scoreEvent,
@@ -310,12 +310,12 @@
             k = e.supportingText,
             P = e.timeString,
             M = e.title,
-            R = e.topic,
-            j = function () {
+            j = e.topic,
+            R = function () {
               m(),
                 E &&
                   O &&
-                  O(v.a.ItemType.EVENT) &&
+                  O(g.a.ItemType.EVENT) &&
                   E({
                     event: {
                       id: s,
@@ -329,25 +329,24 @@
           return i.createElement(b.a.Consumer, null, function (e) {
             return i.createElement(
               C.a,
-              { link: e.withAnchorless(p), onClick: j, style: T.rootLink, withDarkerInteractiveBackground: d },
+              { link: e.withAnchorless(p), onClick: R, style: T.rootLink, withDarkerInteractiveBackground: d },
               a && I
                 ? i.createElement(
                     x.a,
                     { rightControl: r || null, style: T.socialContextRow },
-                    S({ socialContext: I, topic: R }),
+                    S({ socialContext: I, topic: j }),
                   )
                 : null,
               i.createElement(
-                g.a,
+                h.a,
                 { style: T.row },
                 i.createElement(l.a, {
                   badge: t,
                   groupedTrends: o,
                   hasProminentSocialContext: a,
-                  publisher: h,
+                  publisher: v,
                   richContext: y,
                   scoreEvent: w,
-                  socialContext: I,
                   style: T.details,
                   supportingText: k,
                   timeString: P,
@@ -531,9 +530,9 @@
         p = r('AuHH'),
         m = r.n(p),
         f = (r('hBvt'), r('ERkP')),
-        h = r('rH47'),
-        v = r('97Jx'),
-        g = r.n(v),
+        v = r('rH47'),
+        g = r('97Jx'),
+        h = r.n(g),
         y = (r('2G9S'), r('prG5')),
         b = r('Modb'),
         C = r('lklz'),
@@ -601,7 +600,7 @@
                     var a = S.a.extractVideoProps(C.b.forTweet(o), t)
                     return f.createElement(
                       b.a,
-                      g()({}, a, {
+                      h()({}, a, {
                         aspectRatio: E.a.theme.aspectRatios.landscape,
                         displayOptions: { objectFitVideo: 'cover', hideLeftBadges: !0, hidePosterImage: !0 },
                         forceLoop: !0,
@@ -681,10 +680,10 @@
         M = E.a.create(function (e) {
           return { maxHeightWidth: { height: '100%', width: '100%' } }
         }),
-        R = 'eventHero',
-        j = r('PbQQ'),
-        D = r('cm6r')
-      function _(e) {
+        j = 'eventHero',
+        R = r('PbQQ'),
+        _ = r('cm6r')
+      function D(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -706,9 +705,9 @@
         }
       }
       var F = 'white',
-        A = (function (e) {
+        L = (function (e) {
           s()(r, e)
-          var t = _(r)
+          var t = D(r)
           function r() {
             return a()(this, r), t.apply(this, arguments)
           }
@@ -737,30 +736,29 @@
                     u = e.promotedTrendDescription,
                     d = e.publisher,
                     p = e.richContext,
-                    m = e.socialContext,
-                    v = e.supportingText,
+                    m = e.supportingText,
                     g = e.timeString,
-                    y = e.title,
-                    b = e.tweetId,
-                    C = y.length > 80 ? 'headline1' : 'title4'
-                  return f.createElement(j.a.Consumer, null, function (e) {
+                    h = e.title,
+                    y = e.tweetId,
+                    b = h.length > 80 ? 'headline1' : 'title4'
+                  return f.createElement(R.a.Consumer, null, function (e) {
                     return f.createElement(
                       f.Fragment,
                       null,
                       f.createElement(
-                        D.a,
-                        { link: e.withAnchorless(i), onClick: l, testID: R },
+                        _.a,
+                        { link: e.withAnchorless(i), onClick: l, testID: j },
                         f.createElement(P, {
                           coverMediaFromTweet: r,
                           image: a,
                           manualCrops: c,
                           promotedContent: s,
-                          tweetId: b,
+                          tweetId: y,
                         }),
                         f.createElement(
                           x.a,
-                          { style: [E.a.absoluteFill, L.details] },
-                          f.createElement(h.a, {
+                          { style: [E.a.absoluteFill, A.details] },
+                          f.createElement(v.a, {
                             badge: t,
                             groupedTrends: o,
                             linkColor: F,
@@ -770,17 +768,16 @@
                             publisherTitleColor: F,
                             richContext: p,
                             shouldTruncateTitle: !0,
-                            socialContext: m,
-                            supportingText: v,
+                            supportingText: m,
                             textColor: F,
                             timeString: g,
-                            title: y,
-                            titleFontSize: C,
+                            title: h,
+                            titleFontSize: b,
                             titleWeight: 'heavy',
                           }),
                         ),
                       ),
-                      n ? f.createElement(x.a, { style: L.menuContainer }, n) : null,
+                      n ? f.createElement(x.a, { style: A.menuContainer }, n) : null,
                     )
                   })
                 },
@@ -789,7 +786,7 @@
             r
           )
         })(f.Component),
-        L = E.a.create(function (e) {
+        A = E.a.create(function (e) {
           return {
             coverContainer: { width: '100%' },
             menuContainer: { position: 'absolute', top: e.spaces.space12, right: e.spaces.space16 },
@@ -800,7 +797,7 @@
             },
           }
         }),
-        H = A,
+        H = L,
         z = r('29/U'),
         B = function (e) {
           var t = e.eventSummary,
@@ -854,10 +851,10 @@
         p = r.n(d),
         m = r('5Yy7'),
         f = r.n(m),
-        h = r('N+ot'),
-        v = r.n(h),
-        g = r('AuHH'),
-        y = r.n(g),
+        v = r('N+ot'),
+        g = r.n(v),
+        h = r('AuHH'),
+        y = r.n(h),
         b = r('KEM+'),
         C = r.n(b),
         x = (r('2G9S'), r('ERkP')),
@@ -885,7 +882,7 @@
             var o = y()(this).constructor
             r = Reflect.construct(n, arguments, o)
           } else r = n.apply(this, arguments)
-          return v()(this, r)
+          return g()(this, r)
         }
       }
       var P = S.a.f93bb3ee,
@@ -946,31 +943,30 @@
         o = r('ERkP'),
         a = r('i7AQ'),
         i = r('rcen'),
-        c = r('zOwA'),
-        l = r('MWbm'),
-        s = r('pjBI'),
-        u = r('t62R'),
-        d = r('e5HP'),
-        p = r('jV+4'),
-        m = r('Nxr7'),
-        f = r('Wms4'),
-        h = r('rHpw'),
+        c = r('MWbm'),
+        l = r('pjBI'),
+        s = r('t62R'),
+        u = r('e5HP'),
+        d = r('jV+4'),
+        p = r('Nxr7'),
+        m = r('Wms4'),
+        f = r('rHpw'),
         v = /[\u0600-\u06FF]|[\u0750-\u077F]|[\u0590-\u05FF]|[\uFE70-\uFEFF]/gm,
         g = function (e) {
           var t = e.badge,
             r = e.publisher,
             n = e.textColor,
             a = e.timeString,
-            i = o.createElement(p.a, {
+            i = o.createElement(d.a, {
               isProtected: r.protected,
               isVerified: r.verified,
               name: r.name,
               nameSize: 'subtext2',
               profileImageUrl: r.profile_image_url_https,
             })
-          return o.createElement(s.a, { style: C.publisherRow }, i, b(a, t, n))
+          return o.createElement(l.a, { style: b.publisherRow }, i, y(a, t, n))
         },
-        y = function (e) {
+        h = function (e) {
           var t = e.category,
             r = e.eventState,
             n = e.gameClock,
@@ -978,7 +974,7 @@
             i = e.participants,
             c = e.startTimeMillis,
             l = e.winnerId
-          return o.createElement(m.a, {
+          return o.createElement(p.a, {
             category: t,
             gameClock: n,
             gameClockPeriod: a,
@@ -989,18 +985,18 @@
             withCategory: !1,
           })
         },
-        b = function (e, t, r) {
+        y = function (e, t, r) {
           return t && t.text
-            ? o.createElement(f.a, { type: 'live' }, t.text)
+            ? o.createElement(m.a, { type: 'live' }, t.text)
             : e
             ? o.createElement(
-                l.a,
-                { style: C.timestamp },
-                o.createElement(u.b, { color: r, numberOfLines: 1, size: 'subtext2' }, e),
+                c.a,
+                { style: b.timestamp },
+                o.createElement(s.b, { color: r, numberOfLines: 1, size: 'subtext2' }, e),
               )
             : null
         },
-        C = h.a.create(function (e) {
+        b = f.a.create(function (e) {
           return {
             aboveTitle: { alignItems: 'center', flexDirection: 'row' },
             belowTitle: { marginTop: e.spaces.space4 },
@@ -1013,171 +1009,70 @@
       t.a = function (e) {
         var t = e.badge,
           r = e.groupedTrends,
-          p = e.hasProminentSocialContext,
-          m = e.linkColor,
-          f = e.promotedContent,
-          h = e.promotedTrendDescription,
-          x = e.publisher,
-          E = e.publisherTitleColor,
-          w = void 0 === E ? 'normal' : E,
-          S = e.richContext,
-          T = e.scoreEvent,
-          O = e.shouldTruncateTitle,
-          I = e.socialContext,
-          k = e.style,
-          P = e.supportingText,
-          M = e.textColor,
-          R = void 0 === M ? 'gray700' : M,
-          j = e.timeString,
-          D = e.title,
-          _ = e.titleFontSize,
-          F = void 0 === _ ? 'body' : _,
-          A = e.titleWeight,
-          L = void 0 === A ? 'bold' : A,
-          H = D.replace('#', '').charAt(0).match(v) ? 'rtl' : 'ltr',
-          z = p ? void 0 : C.title,
-          B = (I || {}).contextImageUrls,
-          W = B && B[0]
+          d = e.hasProminentSocialContext,
+          p = e.linkColor,
+          m = e.promotedContent,
+          f = e.promotedTrendDescription,
+          C = e.publisher,
+          x = e.publisherTitleColor,
+          E = void 0 === x ? 'normal' : x,
+          w = e.richContext,
+          S = e.scoreEvent,
+          T = e.shouldTruncateTitle,
+          O = e.style,
+          I = e.supportingText,
+          k = e.textColor,
+          P = void 0 === k ? 'gray700' : k,
+          M = e.timeString,
+          j = e.title,
+          R = e.titleFontSize,
+          _ = void 0 === R ? 'body' : R,
+          D = e.titleWeight,
+          F = void 0 === D ? 'bold' : D,
+          L = j.replace('#', '').charAt(0).match(v) ? 'rtl' : 'ltr',
+          A = d ? void 0 : b.title
         return o.createElement(
-          l.a,
-          { style: k },
-          p
+          c.a,
+          { style: O },
+          d
             ? null
             : o.createElement(
-                s.a,
-                { color: R, style: C.aboveTitle },
-                P ? o.createElement(u.b, { color: R, numberOfLines: 1, size: 'subtext2' }, P) : null,
-                x ? o.createElement(n.a, { author: x, color: w, size: 'subtext2' }) : null,
-                t || j ? b(j, t, R) : null,
+                l.a,
+                { color: P, style: b.aboveTitle },
+                I ? o.createElement(s.b, { color: P, numberOfLines: 1, size: 'subtext2' }, I) : null,
+                C ? o.createElement(n.a, { author: C, color: E, size: 'subtext2' }) : null,
+                t || M ? y(M, t, P) : null,
               ),
           o.createElement(
-            u.b,
-            { color: w, dir: H, numberOfLines: O ? 3 : void 0, size: F, style: z, weight: L, withHashflags: !0 },
-            D,
+            s.b,
+            { color: E, dir: L, numberOfLines: T ? 3 : void 0, size: _, style: A, weight: F, withHashflags: !0 },
+            j,
           ),
-          o.createElement(a.a, { groupedTrends: r, linkColor: m, textColor: R }),
-          p
+          o.createElement(a.a, { groupedTrends: r, linkColor: p, textColor: P }),
+          d
             ? o.createElement(
-                l.a,
-                { style: C.belowTitle },
-                T
-                  ? y(T)
-                  : (t || j) && x
-                  ? g({ badge: t, publisher: x, textColor: R, timeString: j }) || b(j, t, R)
+                c.a,
+                { style: b.belowTitle },
+                S
+                  ? h(S)
+                  : (t || M) && C
+                  ? g({ badge: t, publisher: C, textColor: P, timeString: M }) || y(M, t, P)
                   : null,
               )
             : null,
-          f && f.advertiser
+          m && m.advertiser
             ? o.createElement(
                 o.Fragment,
                 null,
-                o.createElement(u.b, { color: R }, h),
-                o.createElement(d.a, { color: 'white', promotedContent: f, style: C.promotedIndicator }),
+                o.createElement(s.b, { color: P }, f),
+                o.createElement(u.a, { color: 'white', promotedContent: m, style: b.promotedIndicator }),
               )
             : null,
-          S
-            ? o.createElement(i.a, { color: R, entities: S.entities, rtl: S.rtl, size: 'subtext2', text: S.text })
-            : I && I.text && !p
-            ? o.createElement(c.a, { color: R, image: W, label: I.text, textSize: 'subtext2' })
+          w
+            ? o.createElement(i.a, { color: P, entities: w.entities, rtl: w.rtl, size: 'subtext2', text: w.text })
             : null,
         )
       }
-    },
-    zOwA: function (e, t, r) {
-      'use strict'
-      r.d(t, 'a', function () {
-        return E
-      })
-      r('OZaJ')
-      var n = r('VrFO'),
-        o = r.n(n),
-        a = r('Y9Ll'),
-        i = r.n(a),
-        c = r('5Yy7'),
-        l = r.n(c),
-        s = r('N+ot'),
-        u = r.n(s),
-        d = r('AuHH'),
-        p = r.n(d),
-        m = r('KEM+'),
-        f = r.n(m),
-        h = r('ERkP'),
-        v = r('9Xij'),
-        g = r('t62R'),
-        y = r('rHpw'),
-        b = r('U+bB'),
-        C = r('MWbm')
-      function x(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var r,
-            n = p()(e)
-          if (t) {
-            var o = p()(this).constructor
-            r = Reflect.construct(n, arguments, o)
-          } else r = n.apply(this, arguments)
-          return u()(this, r)
-        }
-      }
-      var E = (function (e) {
-        l()(r, e)
-        var t = x(r)
-        function r() {
-          return o()(this, r), t.apply(this, arguments)
-        }
-        return (
-          i()(r, [
-            {
-              key: 'render',
-              value: function () {
-                var e = this.props,
-                  t = e.color,
-                  r = e.image,
-                  n = e.label,
-                  o = e.textSize
-                return h.createElement(
-                  C.a,
-                  { style: w.root },
-                  r
-                    ? h.createElement(
-                        C.a,
-                        { style: w.imageContainer },
-                        h.createElement(v.a, { ratio: 1 }, h.createElement(b.a, { source: r, style: w.image })),
-                      )
-                    : null,
-                  h.createElement(g.b, { color: t, size: o }, n),
-                )
-              },
-            },
-          ]),
-          r
-        )
-      })(h.PureComponent)
-      f()(E, 'defaultProps', { color: 'gray700', textSize: 'body' })
-      var w = y.a.create(function (e) {
-        return {
-          root: { alignItems: 'center', flexDirection: 'row' },
-          imageContainer: {
-            alignSelf: 'flex-start',
-            backgroundColor: e.colors.gray200,
-            flexShrink: 0,
-            height: e.fontSizes.headline1,
-            marginRight: e.spaces.space4,
-            width: e.fontSizes.headline1,
-            borderRadius: e.borderRadii.infinite,
-          },
-          image: { height: '100%', width: '100%', borderRadius: e.borderRadii.infinite },
-        }
-      })
     },
   },
 ])

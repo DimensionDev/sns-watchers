@@ -1865,67 +1865,70 @@
       'use strict'
       n.r(t),
         n.d(t, 'inputDetect', function () {
-          return Lt
-        }),
-        n.d(t, 'BottomCookieBannerPicker', function () {
           return Bt
         }),
-        n.d(t, 'DtabBar', function () {
+        n.d(t, 'BottomCookieBannerPicker', function () {
           return Mt
         }),
-        n.d(t, 'GlobalKeyboardShortcuts', function () {
+        n.d(t, 'DtabBar', function () {
           return Nt
         }),
-        n.d(t, 'LivePipeline', function () {
+        n.d(t, 'GlobalKeyboardShortcuts', function () {
           return Ut
         }),
-        n.d(t, 'ModalSheet', function () {
+        n.d(t, 'LivePipeline', function () {
           return Ft
         }),
-        n.d(t, 'SmartLockPrompt', function () {
+        n.d(t, 'ModalSheet', function () {
           return Ht
         }),
-        n.d(t, 'Seo', function () {
+        n.d(t, 'SmartLockPrompt', function () {
           return Kt
         }),
-        n.d(t, 'Toast', function () {
+        n.d(t, 'Seo', function () {
           return zt
         }),
-        n.d(t, 'appReloader', function () {
+        n.d(t, 'Toast', function () {
           return Wt
         }),
-        n.d(t, 'badgeTimers', function () {
+        n.d(t, 'appReloader', function () {
           return Vt
         }),
-        n.d(t, 'bindKeyboardShortcuts', function () {
+        n.d(t, 'badgeTimers', function () {
           return Xt
         }),
-        n.d(t, 'ie11Reflower', function () {
+        n.d(t, 'bindKeyboardShortcuts', function () {
           return qt
         }),
-        n.d(t, 'multiAccountListFetcher', function () {
+        n.d(t, 'ie11Reflower', function () {
           return Yt
         }),
-        n.d(t, 'redirectEmailUser', function () {
+        n.d(t, 'multiAccountListFetcher', function () {
           return Gt
         }),
-        n.d(t, 'scribeExternalReferer', function () {
+        n.d(t, 'redirectEmailUser', function () {
           return Jt
         }),
-        n.d(t, 'getScreenReaderShortcutsDataAttribute', function () {
+        n.d(t, 'scribeExternalReferer', function () {
           return Zt
         }),
-        n.d(t, 'altSvc', function () {
+        n.d(t, 'getScreenReaderShortcutsDataAttribute', function () {
           return Qt
         }),
-        n.d(t, 'AppInstallOnLandingPrompt', function () {
+        n.d(t, 'altSvc', function () {
           return $t
         }),
-        n.d(t, 'AudioModule', function () {
+        n.d(t, 'AppInstallOnLandingPrompt', function () {
           return en
         }),
-        n.d(t, 'initGeoLocation', function () {
+        n.d(t, 'AudioModule', function () {
           return tn
+        }),
+        n.d(t, 'initGeoLocation', function () {
+          return nn
+        }),
+        n.d(t, 'userPresence', function () {
+          return rn
         })
       var r = {}
       n.r(r),
@@ -2815,21 +2818,22 @@
             })
           })
         },
-        Ye = (n('MvUL'), n('KqXw'), n('Sp5X')),
-        Ge = ['/login/error', '/i/sms_login', '/i/flow/lite_login', '/i/flow/login', '/i/flow/signup'],
-        Je = function (e, t) {
+        Ye = n('Sksh'),
+        Ge = (n('MvUL'), n('KqXw'), n('Sp5X')),
+        Je = ['/login/error', '/i/sms_login', '/i/flow/lite_login', '/i/flow/login', '/i/flow/signup'],
+        Ze = function (e, t) {
           var n = !ee.l(t),
             r = ee.g(t),
             o = ee.f(t),
-            i = Ye.a.location.pathname
-          ;-1 === Ge.indexOf(i) &&
-            (n && r ? Ye.a.replace('/i/sms_login') : n && o && Ye.a.replace('/i/flow/lite_login'))
+            i = Ge.a.location.pathname
+          ;-1 === Je.indexOf(i) &&
+            (n && r ? Ge.a.replace('/i/sms_login') : n && o && Ge.a.replace('/i/flow/lite_login'))
         },
-        Ze = (n('1t7P'), n('daRM'), n('FtHn'), n('Mx3A')),
-        Qe = n('qzfk'),
-        $e = n('YeIG'),
-        et = n('TpKd')
-      function tt(e, t) {
+        Qe = (n('1t7P'), n('daRM'), n('FtHn'), n('Mx3A')),
+        $e = n('qzfk'),
+        et = n('YeIG'),
+        tt = n('TpKd')
+      function nt(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -2841,38 +2845,38 @@
         }
         return n
       }
-      function nt(e) {
+      function rt(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? tt(Object(n), !0).forEach(function (t) {
+            ? nt(Object(n), !0).forEach(function (t) {
                 l()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : tt(Object(n)).forEach(function (t) {
+            : nt(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var rt = { page: 'external', action: 'referred' },
-        ot = function (e, t, n, r) {
+      var ot = { page: 'external', action: 'referred' },
+        it = function (e, t, n, r) {
           var o = function (e) {
               return r.dispatch(Object(j.createLocalApiErrorHandlerWithContextFactory)(e)({}))
             },
-            i = Ye.a && Ye.a.location.query,
-            c = Ze.b({ query: i, httpReferer: document.referrer || '', requestUrl: window.location.href })
-          if (Object($e.a)(c)) return Promise.resolve()
+            i = Ge.a && Ge.a.location.query,
+            c = Qe.b({ query: i, httpReferer: document.referrer || '', requestUrl: window.location.href })
+          if (Object(et.a)(c)) return Promise.resolve()
           if (c.referer && !me.b.isExternalUrl(c.referer) && !me.b.isInternalRedirect(c.referer))
             return Promise.resolve()
           c.referer || (c.referer = ''),
             c.referral_details_str || (c.referral_details_str = ''),
             c.referral_type || (c.referral_type = 0)
-          var a = Object(et.a)(t)
+          var a = Object(tt.a)(t)
           a && (c.external_referer_cookie_value = a)
-          var s = c.referral_type === Ze.a.Access,
-            u = nt(nt({}, rt), {}, { client: Object(Qe.a)().clientName })
+          var s = c.referral_type === Qe.a.Access,
+            u = rt(rt({}, ot), {}, { client: Object($e.a)().clientName })
           a && s && (u.action = 'set_access_referer_cookie')
           var l,
             f,
@@ -2894,38 +2898,38 @@
               : Promise.resolve())
           var h = e.Jot.externalReferer(d)
             .then(function (e) {
-              e && Object(et.c)(t, e[0])
+              e && Object(tt.c)(t, e[0])
             })
             .catch(function () {
               return o('SCRIBE_EXTERNAL_REFERER')
             })
           return Promise.all([h, l, f])
         },
-        it = n('O6Yq'),
-        ct = n('muX9'),
-        at = n('Ty5D')
-      var st = function () {
-          Object(at.h)()
+        ct = n('O6Yq'),
+        at = n('muX9'),
+        st = n('Ty5D')
+      var ut = function () {
+          Object(st.h)()
           var e,
-            t = (Ce.canUseDOM && (e = window.location.href), e ? Object(it.a)(e) : null)
-          return t ? H.createElement(ct.a, null, H.createElement('link', { href: t, rel: 'canonical' })) : null
+            t = (Ce.canUseDOM && (e = window.location.href), e ? Object(ct.a)(e) : null)
+          return t ? H.createElement(at.a, null, H.createElement('link', { href: t, rel: 'canonical' })) : null
         },
-        ut =
+        lt =
           (n('ho0z'),
           Object(z.a)()
             .propsFromState(function () {
               return { loginReturnPath: ee.q }
             })
             .withAnalytics({ component: 'smartlock_prompt' })),
-        lt = n('6oVL'),
-        ft = n('SrIh'),
-        pt = n('BnI0'),
-        dt = n('pQ3Z'),
-        ht = n.n(dt),
-        mt = n('cnVF'),
-        vt = n('MWbm'),
-        bt = n('mrHL')
-      function yt(e, t) {
+        ft = n('6oVL'),
+        pt = n('SrIh'),
+        dt = n('BnI0'),
+        ht = n('pQ3Z'),
+        mt = n.n(ht),
+        vt = n('cnVF'),
+        bt = n('MWbm'),
+        yt = n('mrHL')
+      function gt(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -2937,22 +2941,22 @@
         }
         return n
       }
-      function gt(e) {
+      function _t(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? yt(Object(n), !0).forEach(function (t) {
+            ? gt(Object(n), !0).forEach(function (t) {
                 l()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : yt(Object(n)).forEach(function (t) {
+            : gt(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      function _t(e) {
+      function wt(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -2973,10 +2977,10 @@
           return N()(this, n)
         }
       }
-      var wt = ['/settings', '/signup', '/login/error', '/i/flow/signup', '/login/check'],
-        St = (function (e) {
+      var St = ['/settings', '/signup', '/login/error', '/i/flow/signup', '/login/check'],
+        kt = (function (e) {
           B()(n, e)
-          var t = _t(n)
+          var t = wt(n)
           function n(e, r) {
             var o
             return (
@@ -2986,7 +2990,7 @@
                 !!(window.PasswordCredential && navigator.credentials && navigator.credentials.get) &&
                 !r.loggedInUserId),
               (o._isSmartLockDisabledFromCookie =
-                '1' === e.getCookie({ featureSwitches: r.featureSwitches, cookieName: mt.y })),
+                '1' === e.getCookie({ featureSwitches: r.featureSwitches, cookieName: vt.y })),
               o
             )
           }
@@ -2996,14 +3000,14 @@
                 key: 'componentDidMount',
                 value: function () {
                   '/login/error' === this.props.location.pathname
-                    ? Object(pt.a)(this.context.featureSwitches)
+                    ? Object(dt.a)(this.context.featureSwitches)
                     : this._checkShouldDisplayPrompt()
                 },
               },
               {
                 key: 'componentDidUpdate',
                 value: function (e) {
-                  ht()(e.location, this.props.location) || this._checkShouldDisplayPrompt()
+                  mt()(e.location, this.props.location) || this._checkShouldDisplayPrompt()
                 },
               },
               {
@@ -3016,10 +3020,10 @@
                     o = t.userName
                   return this._shouldDisplaySmartLockPrompt()
                     ? H.createElement(
-                        vt.a,
-                        { style: kt.hidden },
+                        bt.a,
+                        { style: Et.hidden },
                         H.createElement(
-                          lt.a,
+                          ft.a,
                           { autoSubmit: n, loginReturnPath: e },
                           H.createElement('input', { name: 'session[username_or_email]', type: 'hidden', value: o }),
                           H.createElement('input', { name: 'session[password]', type: 'hidden', value: r }),
@@ -3031,7 +3035,7 @@
               {
                 key: '_scribeAction',
                 value: function (e, t) {
-                  this.props.analytics.scribe(gt(gt({}, t), {}, { action: e }))
+                  this.props.analytics.scribe(_t(_t({}, t), {}, { action: e }))
                 },
               },
               {
@@ -3059,7 +3063,7 @@
                           } else
                             e._smartLockSupported &&
                               e.setState({ smartLockDisabled: !0 }, function () {
-                                return Object(pt.a)(e.context.featureSwitches)
+                                return Object(dt.a)(e.context.featureSwitches)
                               }),
                               o
                                 ? e._scribeAction('cancel', { element: 'no_credentials' })
@@ -3070,7 +3074,7 @@
                             'NotSupportedError' !== e.name &&
                             'NotAllowedError' !== e.name &&
                             'InvalidStateError' !== e.name &&
-                            Object(ft.a)(e)
+                            Object(pt.a)(e)
                         },
                       )
                   }
@@ -3087,7 +3091,7 @@
                       '/login' === n ||
                       (!this._isSmartLockDisabledFromCookie &&
                         !r &&
-                        !wt.some(function (e) {
+                        !St.some(function (e) {
                           return e === n
                         }) &&
                         !this.context.featureSwitches.isTrue('stateful_login_enabled'))
@@ -3098,39 +3102,39 @@
             n
           )
         })(H.Component)
-      l()(St, 'contextType', G.a), l()(St, 'defaultProps', { getCookie: bt.d })
-      var kt = ge.a.create(function (e) {
+      l()(kt, 'contextType', G.a), l()(kt, 'defaultProps', { getCookie: yt.d })
+      var Et = ge.a.create(function (e) {
           return { hidden: { display: 'none' } }
         }),
-        Et = Object(Y.a)(ut(St)),
-        Ot = n('HPNB'),
-        Tt = n('+Kfv'),
-        Pt = n('1YZw'),
-        Ct = Object(z.a)()
+        Ot = Object(Y.a)(lt(kt)),
+        Tt = n('HPNB'),
+        Pt = n('+Kfv'),
+        Ct = n('1YZw'),
+        jt = Object(z.a)()
           .propsFromState(function () {
-            return { toast: Pt.d }
+            return { toast: Ct.d }
           })
           .propsFromActions(function () {
-            return { onClose: Pt.c }
+            return { onClose: Ct.c }
           }),
-        jt = n('ZB2A'),
-        At = 'toast',
-        It = n('cHvH'),
-        Rt = n('0FVZ'),
-        xt = n('XTym'),
-        Dt = Ct(function (e) {
+        At = n('ZB2A'),
+        It = 'toast',
+        Rt = n('cHvH'),
+        xt = n('0FVZ'),
+        Dt = n('XTym'),
+        Lt = jt(function (e) {
           var t = e.onClose,
             n = e.toast,
-            r = Object(at.h)(),
-            o = Object(jt.b)(r)
+            r = Object(st.h)(),
+            o = Object(At.b)(r)
           return n
-            ? H.createElement(It.a, null, function (e) {
+            ? H.createElement(Rt.a, null, function (e) {
                 var r = e.windowWidth,
-                  i = Ot.a.shouldRenderAsModal(r) ? Rt.a.ModalToasts : Rt.a.Toasts
+                  i = Tt.a.shouldRenderAsModal(r) ? xt.a.ModalToasts : xt.a.Toasts
                 return H.createElement(
-                  Tt.a,
+                  Pt.a,
                   { viewType: o },
-                  H.createElement(xt.a, {
+                  H.createElement(Dt.a, {
                     LayerComponent: i,
                     action: n.action,
                     ariaOnly: n.ariaOnly,
@@ -3138,7 +3142,7 @@
                     behavioralEventEntityToken: n.behavioralEventEntityToken,
                     key: n.id,
                     onClose: t,
-                    testID: At,
+                    testID: It,
                     text: n.text,
                     withAutoDismiss: n.withAutoDismiss,
                     withClearButton: n.withClearButton,
@@ -3147,18 +3151,18 @@
               })
             : null
         }),
-        Lt = r,
-        Bt = fe.a,
-        Mt = ke,
-        Nt = Oe.a,
-        Ut = Ve,
-        Ft = Xe.a,
-        Ht = Et,
-        Kt = st,
-        zt = Dt,
-        Wt = c,
-        Vt = se,
-        Xt = function (e, t) {
+        Bt = r,
+        Mt = fe.a,
+        Nt = ke,
+        Ut = Oe.a,
+        Ft = Ve,
+        Ht = Xe.a,
+        Kt = Ot,
+        zt = ut,
+        Wt = Lt,
+        Vt = c,
+        Xt = se,
+        qt = function (e, t) {
           var n,
             r = Object.keys(e),
             o = !1,
@@ -3183,15 +3187,16 @@
             }
           )
         },
-        qt = Pe,
-        Yt = qe,
-        Gt = Je,
-        Jt = ot,
-        Zt = Ee.d,
-        Qt = A,
-        $t = Q,
-        en = $.a,
-        tn = Ie
+        Yt = Pe,
+        Gt = qe,
+        Jt = Ze,
+        Zt = it,
+        Qt = Ee.d,
+        $t = A,
+        en = Q,
+        tn = $.a,
+        nn = Ie,
+        rn = Ye.a
     },
     rRIm: function (e, t, n) {
       'use strict'

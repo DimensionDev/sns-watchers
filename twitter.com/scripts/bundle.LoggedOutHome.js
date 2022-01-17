@@ -700,7 +700,7 @@
           return F.e.select(e, t.id)
         },
         ve = function (e, t) {
-          return Object(B.d)(e, t.id)
+          return Object(B.c)(e, t.id)
         },
         Se = Object(O.a)().propsFromState(function () {
           return { user: ge, userSpace: ve }
