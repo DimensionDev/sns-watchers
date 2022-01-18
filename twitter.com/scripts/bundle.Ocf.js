@@ -117,19 +117,23 @@
     },
     '1zbE': function (e, t, n) {
       'use strict'
-      n.d(t, 'a', function () {
+      n.d(t, 'b', function () {
         return s
       }),
-        n.d(t, 'b', function () {
+        n.d(t, 'a', function () {
           return c
+        }),
+        n.d(t, 'c', function () {
+          return l
         })
       n('yH/f')
       var r = n('ERkP'),
         a = n('t62R'),
         o = n('3XMw'),
         i = n.n(o),
-        s = Object.freeze({ LogIn: 'login', SignUp: 'signup' }),
-        c = r.createElement(
+        s = 'phone_email',
+        c = Object.freeze({ LogIn: 'login', SignUp: 'signup' }),
+        l = r.createElement(
           i.a.I18NFormatMessage,
           { $i18n: 'c4d3d078' },
           r.createElement(a.b, { link: 'https://twitter.com/tos' }, i.a.c8c5faad),
@@ -12178,7 +12182,7 @@
                       : null,
                     s.header ? y.createElement(ce, { header: s.header, onNavigate: o, subtaskInputs: l }) : null,
                     this._renderSettingsList(s.settings),
-                    v ? y.createElement(K.b, { color: 'gray700', size: 'subtext2' }, P.b) : null,
+                    v ? y.createElement(K.b, { color: 'gray700', size: 'subtext2' }, P.c) : null,
                     s.detail_text
                       ? y.createElement(
                           Z,

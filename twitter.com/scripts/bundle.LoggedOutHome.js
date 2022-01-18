@@ -31,19 +31,23 @@
     },
     '1zbE': function (e, t, n) {
       'use strict'
-      n.d(t, 'a', function () {
+      n.d(t, 'b', function () {
         return i
       }),
-        n.d(t, 'b', function () {
+        n.d(t, 'a', function () {
           return s
+        }),
+        n.d(t, 'c', function () {
+          return u
         })
       n('yH/f')
       var r = n('ERkP'),
         a = n('t62R'),
         o = n('3XMw'),
         c = n.n(o),
-        i = Object.freeze({ LogIn: 'login', SignUp: 'signup' }),
-        s = r.createElement(
+        i = 'phone_email',
+        s = Object.freeze({ LogIn: 'login', SignUp: 'signup' }),
+        u = r.createElement(
           c.a.I18NFormatMessage,
           { $i18n: 'c4d3d078' },
           r.createElement(a.b, { link: 'https://twitter.com/tos' }, c.a.c8c5faad),
@@ -381,8 +385,8 @@
         A = n('3IPs'),
         B = n('M0jS'),
         F = n('G6rE'),
-        z = n('k49u'),
-        N = n('J4ZH'),
+        N = n('k49u'),
+        z = n('J4ZH'),
         U = n('0KEI'),
         H = n('v4XE'),
         M = n('kGix')
@@ -415,9 +419,9 @@
       }
       var V = function (e) {
           return (
-            Object(z.c)(e, z.a.GenericUserNotFound) ||
-            Object(z.c)(e, z.a.OtherUserSuspended) ||
-            Object(z.c)(e, z.a.AddressBookLookupNotFound)
+            Object(N.c)(e, N.a.GenericUserNotFound) ||
+            Object(N.c)(e, N.a.OtherUserSuspended) ||
+            Object(N.c)(e, N.a.AddressBookLookupNotFound)
           )
         },
         K = Object(O.a)()
@@ -430,7 +434,7 @@
                     return r && t[r] ? { id: r, fetchStatus: t[r] } : void 0
                   }),
                 )
-                return Object(N.a)(n, function (e) {
+                return Object(z.a)(n, function (e) {
                   return e.fetchStatus
                 })
               }),
@@ -876,10 +880,10 @@
                     t = e.onRemove,
                     n = e.query,
                     r = e.withNewTypeaheadUI ? 'xxxLarge' : 'xLarge',
-                    a = v.createElement(ue.a, { Icon: xe.a, color: 'neutral', size: r, style: ze.searchIcon })
+                    a = v.createElement(ue.a, { Icon: xe.a, color: 'neutral', size: r, style: Ne.searchIcon })
                   return v.createElement(
                     le.a,
-                    { avatarCell: a, avatarSize: r, cellStyle: ze.bodyColumn },
+                    { avatarCell: a, avatarSize: r, cellStyle: Ne.bodyColumn },
                     v.createElement(de.b, { numberOfLines: 1, withHashflags: !0 }, n),
                     v.createElement(ne.a, {
                       accessibilityLabel: '',
@@ -907,13 +911,13 @@
             n
           )
         })(v.Component),
-        ze = re.a.create(function (e) {
+        Ne = re.a.create(function (e) {
           return {
             bodyColumn: { alignItems: 'center', flexDirection: 'row', justifyContent: 'space-between' },
             searchIcon: { marginRight: e.spaces.space12 },
           }
         }),
-        Ne = Fe,
+        ze = Fe,
         Ue = n('htQn')
       function He(e) {
         var t = (function () {
@@ -950,7 +954,7 @@
                 n = e.item,
                 r = e.onItemClick
               return n.keyword
-                ? v.createElement(Ne, {
+                ? v.createElement(ze, {
                     category: n.category,
                     onRemove: a._handleOnRemove,
                     query: n.keyword.query,
@@ -2199,8 +2203,8 @@
         A = n.n(L),
         B = n('1Pcy'),
         F = n.n(B),
-        z = n('5Yy7'),
-        N = n.n(z),
+        N = n('5Yy7'),
+        z = n.n(N),
         U = n('N+ot'),
         H = n.n(U),
         M = n('AuHH'),
@@ -2240,7 +2244,7 @@
       }
       var J = g.a.ia5e7487,
         Y = (function (e) {
-          N()(n, e)
+          z()(n, e)
           var t = Z(n)
           function n(e, a) {
             var o
@@ -2412,10 +2416,10 @@
           return F
         }),
         n.d(t, 'selectBirthdate', function () {
-          return z
+          return N
         }),
         n.d(t, 'selectHasExactAge', function () {
-          return N
+          return z
         }),
         n.d(t, 'selectGender', function () {
           return U
@@ -2665,10 +2669,10 @@
         F = function (e) {
           return e.personalization.data.data.age ? e.personalization.data.data.age : []
         },
-        z = function (e) {
+        N = function (e) {
           return e.personalization.data.data.birth_date ? e.personalization.data.data.birth_date : ''
         },
-        N = function (e) {
+        z = function (e) {
           return !!e.personalization.data.data.has_exact_age
         },
         U = function (e) {
@@ -3018,7 +3022,7 @@
         A = _.a.f55cebb7,
         B = _.a.g61ed8a4,
         F = { clientId: C.a, scope: 'name email', usePopup: !0 },
-        z = (function (e) {
+        N = (function (e) {
           l()(n, e)
           var t = T(n)
           function n() {
@@ -3137,9 +3141,9 @@
             n
           )
         })(y.PureComponent)
-      b()(z, 'contextType', R.a),
-        b()(z, 'defaultProps', { buttonSize: 'xLarge', buttonState: 'signup' }),
-        (t.a = Object(P.a)(Object(v.a)(z)))
+      b()(N, 'contextType', R.a),
+        b()(N, 'defaultProps', { buttonSize: 'xLarge', buttonState: 'signup' }),
+        (t.a = Object(P.a)(Object(v.a)(N)))
     },
     XJCT: function (e, t, n) {
       'use strict'
@@ -3382,9 +3386,9 @@
         A = (n('M+/F'), n('uFXj'), n('n0Rl')),
         B = n('RgK2'),
         F = n.n(B),
-        z = n('kGix'),
-        N = (n('enFi'), n('3XMw')),
-        U = n.n(N),
+        N = n('kGix'),
+        z = (n('enFi'), n('3XMw')),
+        U = n.n(z),
         H = n('lUZE'),
         M = n('iCMz'),
         q = n('Rp9C'),
@@ -3556,7 +3560,7 @@
                     o =
                       (e.retry,
                       null == r || null === (n = r.logged_out_trends_list) || void 0 === n ? void 0 : n.trends)
-                  return a === z.a.LOADED && o ? S.createElement(ae, { deviceSize: t, trendResults: o }) : null
+                  return a === N.a.LOADED && o ? S.createElement(ae, { deviceSize: t, trendResults: o }) : null
                 },
                 variables: F.a,
               }),
@@ -3643,8 +3647,8 @@
         ],
         Be = U.a.d1091f50,
         Fe = U.a.d9e109ae,
-        ze = U.a.f86f23b5,
-        Ne = U.a.eba1b197,
+        Ne = U.a.f86f23b5,
+        ze = U.a.eba1b197,
         Ue = U.a.a565833d,
         He = U.a.aa95ddc0,
         Me = U.a.fa811c30,
@@ -3788,7 +3792,10 @@
                 S.createElement(
                   he.a,
                   {
-                    link: '/i/flow/signup',
+                    link: {
+                      pathname: '/i/flow/signup',
+                      state: { input: { requested_variant: JSON.stringify({ signup_type: je.b }) } },
+                    },
                     onPress: a._handleSignupButton,
                     size: 'medium',
                     style: [t, 'tablet' === e && Ye.ctaButtonSplitSpacing, Ye.ssoButtonStyles],
@@ -3797,7 +3804,7 @@
                   },
                   He,
                 ),
-                S.createElement(G.b, { color: 'gray700', size: 'subtext3', style: [t, { width: D.b }] }, je.b),
+                S.createElement(G.b, { color: 'gray700', size: 'subtext3', style: [t, { width: D.b }] }, je.c),
                 S.createElement(
                   K.a,
                   { style: Ye.signInButtonContainer },
@@ -3841,7 +3848,7 @@
                   },
                   c,
                 ),
-                t === je.a.SignUp ? S.createElement(G.b, { color: 'gray700', size: 'subtext2', style: n }, je.b) : null,
+                t === je.a.SignUp ? S.createElement(G.b, { color: 'gray700', size: 'subtext2', style: n }, je.c) : null,
                 S.createElement(G.b, { testID: fe }, a._getLoginSignupFooter()),
               )
             }),
@@ -3880,7 +3887,10 @@
                 case je.a.SignUp:
                   return {
                     loginSignUpButtonLabel: He,
-                    loginSignUpButtonLink: '/i/flow/signup',
+                    loginSignUpButtonLink: {
+                      pathname: '/i/flow/signup',
+                      state: { input: { requested_variant: JSON.stringify({ signup_type: je.b }) } },
+                    },
                     handleLoginSignUpButton: a._handleSignupButton,
                   }
                 case je.a.LogIn:
@@ -4114,7 +4124,7 @@
                     S.createElement(
                       G.b,
                       { extendedWidth: !0, style: t ? Ye.ctaTitleLarge : Ye.ctaTitle, weight: 'bold' },
-                      Ne,
+                      ze,
                     ),
                     S.createElement(
                       G.b,
@@ -4124,7 +4134,7 @@
                         style: t ? Ye.ctaTextLarge : Ye.ctaText,
                         weight: 'bold',
                       },
-                      this._thirdPartySsoButtonsEnabled ? (r === je.a.SignUp ? Fe : ze) : Fe,
+                      this._thirdPartySsoButtonsEnabled ? (r === je.a.SignUp ? Fe : Ne) : Fe,
                     ),
                     this._renderLoginSignupButtons(t),
                   ),
@@ -4770,7 +4780,7 @@
     n0Rl: function (e, t, n) {
       'use strict'
       n.d(t, 'b', function () {
-        return N
+        return z
       })
       n('OZaJ')
       var r = n('ddV6'),
@@ -4871,14 +4881,14 @@
             n
           )
         })(v.Component),
-        z = function (e) {
+        N = function (e) {
           var t = e.query,
             n = e.queryRef,
             r = e.render,
             a = j()(t, n)
           return r({ fetchStatus: E.a.LOADED, data: a, error: null, retry: k.a })
         },
-        N = function (e, t) {
+        z = function (e, t) {
           if (_.canUseDOM)
             return function (n) {
               var r = n.fetchPolicy,
@@ -4915,7 +4925,7 @@
                         function (t, n) {
                           return t
                             ? c({ fetchStatus: E.a.FAILED, error: t, data: null, retry: n })
-                            : v.createElement(z, { query: e, queryRef: l, render: c })
+                            : v.createElement(N, { query: e, queryRef: l, render: c })
                         },
                       ),
                     )
@@ -5132,7 +5142,7 @@
         A = n('fs1G'),
         B = n('BcsE'),
         F = n('VPAj')
-      function z(e, t) {
+      function N(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -5144,16 +5154,16 @@
         }
         return n
       }
-      function N(e) {
+      function z(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? z(Object(n), !0).forEach(function (t) {
+            ? N(Object(n), !0).forEach(function (t) {
                 b()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : z(Object(n)).forEach(function (t) {
+            : N(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
@@ -5249,8 +5259,8 @@
                   u = e.context.userClaims.isTrueAndEnabled('subscriptions_feature_1007'),
                   l =
                     o && u
-                      ? N(
-                          N({}, s(o)),
+                      ? z(
+                          z({}, s(o)),
                           {},
                           b()({}, I.e.goTopArticles, function () {
                             return a.push('/i/articles')
@@ -5259,8 +5269,8 @@
                       : o
                       ? s(o)
                       : {},
-                  d = N(
-                    N(N({}, i), l),
+                  d = z(
+                    z(z({}, i), l),
                     {},
                     ((n = {}),
                     b()(n, I.e.goHome, function () {

@@ -2106,7 +2106,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a5f32aa2', 'Blocked accounts'),
           a('ea989810', 'Deactivate account'),
           a('e8f57e07', 'Personalization and data'),
-          a('ae72d4c4', 'Apps and sessions'),
           a('fd4d9068', 'Discoverability and contacts'),
           a('bbcafbd9', 'Manage contacts'),
           a('aeddb289', 'Content preferences'),
@@ -2119,11 +2118,27 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('dd703318', 'Two-factor authentication'),
           a('b1686800', 'Manage security keys'),
           a('f56af9cc', 'Download an archive of your data'),
-          a('cbd449af', 'Mute and block'),
           a('daef29b7', 'Muted accounts'),
           a('i0dd9b9d', 'Muted words'),
           a('d299431b', 'Monetization'),
+          a('ab1f7eef', 'Change your password'),
+          a('j95edf76', 'Security'),
+          a('f8645654', 'Security and account access'),
+          a('ae72d4c4', 'Apps and sessions'),
+          a('h1abfbcd', 'Connected accounts'),
           a('cad53943', 'Privacy and safety'),
+          a('e908903a', 'Audience and tagging'),
+          a('b38d81ae', 'Your Tweets'),
+          a('f2bd9c47', 'Content you see'),
+          a('c6cb90eb', 'Safety Mode'),
+          a('cbd449af', 'Mute and block'),
+          a('i58a274b', 'Direct messages'),
+          a('d035a8d0', 'Ads preferences'),
+          a('d0b74a5a', 'Cookie preferences'),
+          a('bcae496c', 'Off-Twitter activity'),
+          a('h14ba864', 'Data sharing with business partners'),
+          a('jabb9c9a', 'Location information'),
+          a('cf9b1669', 'Accessibility, display, and languages'),
           a('e95b9448', 'General'),
           a('f458a3b1', 'Privacy'),
           a('b7fde2b8', 'Your Twitter data'),
@@ -2131,11 +2146,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'ja94f34d',
             'These settings apply to this browser or device while you’re logged out. They don’t have any effect when you’re logged in.',
           ),
-          a('d0b74a5a', 'Cookie preferences'),
           a('gd4302ec', 'Manage your cookie experience on Twitter.'),
           a('bdc6f5b7', 'Your account'),
-          a('f8645654', 'Security and account access'),
-          a('cf9b1669', 'Accessibility, display, and languages'),
           a('bdfa2b8c', 'Additional resources'),
           a('df483b47', 'Feature switches'),
           a('e435cdff', 'Try searching for password reset, notifications, etc'),
@@ -2204,8 +2216,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('abd587d1', 'Add another reference'),
           a('i0bba81a', 'Add reference of employment'),
           a('a6a76e3c', 'Select notability method'),
-          a('ecd2abda', 'Confirm account eligibility'),
-          a('cb70b893', 'Go back'),
+          a('ecd2abda', 'Confirm account eligibility')
+        a('cb70b893', 'Go back'),
           a('g8b511fe', 'Google Trends'),
           a('c7d50c96', 'A profile on Google Trends with evidence of recent search activity about you.'),
           a('a68b43ed', 'Add Google Trends profile'),
@@ -2222,8 +2234,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'h2b9a5fd',
             'At least three articles about your company from qualifying news publications in the last six months.',
-          )
-        a('baccb708', 'Add verified news coverage'),
+          ),
+          a('baccb708', 'Add verified news coverage'),
           a('feadd98c', 'Add verified news references'),
           a('j7ae97a9', 'Verified news references'),
           a('c368aa8d', 'At least three articles from verified news publications that reference you.'),
@@ -2675,7 +2687,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Connect a managing account so your automated account receives an automated account label. All automated accounts must be connected to a managing account.',
           ),
           a('e0bc51f5', 'Turn off account automation'),
-          a('h1abfbcd', 'Connected accounts'),
           a(
             'a45d71b8',
             'These are the social accounts you connected to your Twitter account to log in. You can disable access here.',
@@ -2771,7 +2782,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cd32dbfd', 'Data and permissions'),
           a('e7efe72a', 'Login and security'),
           a('f70cd5ed', 'Phone'),
-          a('j95edf76', 'Security'),
           a('a4b69cbb', 'Display language'),
           a('d1f6d336', 'Username'),
           a('hfb92b14', 'Deactivate your account'),
@@ -2789,7 +2799,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h021352e', function (e) {
             return '' + e.resendConfirmationLabel
           }),
-          a('ab1f7eef', 'Change your password'),
           a('d241169c', 'Current password'),
           a('a9bc3043', 'New password'),
           a('b8c03cfb', 'Confirm password'),
@@ -3142,7 +3151,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('e8eb54af', 'Weekly reports for your account'),
           a('ib80b0f1', 'New notifications'),
-          a('i58a274b', 'Direct messages'),
           a('b109e307', 'Tweets emailed to you'),
           a('ddd34fa1', 'Top Tweets and Stories'),
           a('b7ea9501', 'Updates about the performance of your Tweets'),
@@ -3513,8 +3521,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Sessions are the devices you are using or that have used your Twitter account. These are the sessions where your account is currently logged in. You can log out of each session.',
           ),
           a('bbe9579b', 'You’re logged into this Twitter account on this device and are currently using it.'),
-          a('b850cbd0', 'You’re logged into these accounts on these devices and aren’t currently using them. '),
-          a('cf3e3164', 'Log out of all other sessions'),
+          a('b850cbd0', 'You’re logged into these accounts on these devices and aren’t currently using them. ')
+        function r(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var a = t[o]
+            ;(a.enumerable = a.enumerable || !1),
+              (a.configurable = !0),
+              'value' in a && (a.writable = !0),
+              Object.defineProperty(e, a.key, a)
+          }
+        }
+        function i(e, t) {
+          return (i =
+            Object.setPrototypeOf ||
+            function (e, t) {
+              return (e.__proto__ = t), e
+            })(e, t)
+        }
+        a('cf3e3164', 'Log out of all other sessions'),
           a('f810f279', 'Do you want to end your other sessions?'),
           a('a19f4b20', function (e) {
             return (
@@ -3532,24 +3556,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return '' + e.learnMoreLabel
           }),
           a('ed5ab169', 'Active now'),
-          a('i23e2807', 'Apps')
-        function r(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var a = t[o]
-            ;(a.enumerable = a.enumerable || !1),
-              (a.configurable = !0),
-              'value' in a && (a.writable = !0),
-              Object.defineProperty(e, a.key, a)
-          }
-        }
-        function i(e, t) {
-          return (i =
-            Object.setPrototypeOf ||
-            function (e, t) {
-              return (e.__proto__ = t), e
-            })(e, t)
-        }
-        a('hb12114e', 'Log out all other sessions'),
+          a('i23e2807', 'Apps'),
+          a('hb12114e', 'Log out all other sessions'),
           a('gf673efb', function (e) {
             return (
               'This will end ' + e.num + ' of your other active Twitter sessions. It won’t affect your current session.'
@@ -3604,7 +3612,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Communities are public, so protecting your account will hide your previous Tweets. You also won’t be able to Tweet in the Community until your account is public again.',
           ),
           a('f527b322', 'Protect my account'),
-          a('jabb9c9a', 'Location information'),
           a('h6ce12ed', 'Receive messages from anyone'),
           a(
             'ebcb68ae',
@@ -3631,11 +3638,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ad41e8b3', 'No one can add you to their team'),
           a('df5fa1d0', 'Manage what information you see and share on Twitter.'),
           a('a244ed50', 'Your Twitter activity'),
-          a('e908903a', 'Audience and tagging'),
           a('h7a0dfbe', 'Manage what information you allow other people on Twitter to see.'),
-          a('b38d81ae', 'Your Tweets'),
           a('f8d4746b', 'Manage the information associated with your Tweets.'),
-          a('f2bd9c47', 'Content you see'),
           a('b2810ee7', 'Decide what you see on Twitter based on your preferences like Topics and interests'),
           a('f01fd982', 'Safety Mode (Beta)'),
           a('dcc5aa06', 'Manage autoblocks and preferences.'),
@@ -3643,14 +3647,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cc950d94', 'Manage who can message you directly.'),
           a('fe37f854', 'Manage who can see your Spaces listening activity'),
           a('d3d319d5', 'Data sharing and off-Twitter activity'),
-          a('d035a8d0', 'Ads preferences'),
           a('f9ff2201', 'Manage your ads experience on Twitter.'),
-          a('bcae496c', 'Off-Twitter activity'),
           a(
             'acc60551',
             'Manage how Twitter uses your online activity outside of Twitter, such as the websites you visit, to personalize your experience.',
           ),
-          a('h14ba864', 'Data sharing with business partners'),
           a('d7fcc4fa', 'Allow sharing of additional information with Twitter’s business partners.'),
           a('a686c489', 'Manage the location information Twitter uses to personalize your experience.'),
           a('cdcef7b6', 'Learn more about privacy on Twitter'),
@@ -3699,7 +3700,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'bff84f29',
             'Existing replies from autoblocked accounts are moved to the bottom of the conversation, so fewer people see them.',
           ),
-          a('c6cb90eb', 'Safety Mode'),
           a('fabe1397', 'Autoblocks'),
           a('c0786021', 'Autoblocked accounts'),
           a('db89884f', 'What’s Safety Mode?'),

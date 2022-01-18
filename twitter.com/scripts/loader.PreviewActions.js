@@ -45,7 +45,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'PreviewActions', function () {
-          return E
+          return S
         })
       var r = n('ddV6'),
         i = n.n(r),
@@ -82,7 +82,7 @@
         g = d.a.gf5e9ea6,
         h = d.a.j4c40da3,
         T = d.a.b23688c7,
-        E = function (e) {
+        S = function (e) {
           var t = Object(p.g)(),
             n = e.analytics,
             r = e.inReplyToStatusId,
@@ -93,19 +93,23 @@
             l = e.undoTweet,
             d = a.useState(0),
             y = i()(d, 2),
-            E = y[0],
+            S = y[0],
             W = y[1],
             x = a.useState(),
             _ = i()(x, 2),
             R = _[0],
-            C = _[1]
+            C = _[1],
+            j = a.useState(!1),
+            k = i()(j, 2),
+            D = k[0],
+            F = k[1]
           a.useEffect(
             function () {
               'number' == typeof u && W(Math.round(u - Date.now()))
             },
             [u],
           )
-          var j = (function (e) {
+          var L = (function (e) {
             var t = a.useState(0),
               n = i()(t, 2),
               r = n[0],
@@ -129,8 +133,8 @@
               ),
               r
             )
-          })(E)
-          if (E <= 0 || !E) return null
+          })(S)
+          if (S <= 0 || !S) return null
           return 'number' != typeof u
             ? null
             : a.createElement(
@@ -148,26 +152,28 @@
                         : n.width) || 0,
                     )
                   },
-                  style: S.root,
+                  style: E.root,
                 },
                 a.createElement(
                   m.a,
-                  { style: S.timer },
+                  { style: E.timer },
                   a.createElement(
                     m.a,
-                    { style: S.timerWrapper },
-                    a.createElement(f.a, { accessibilityLabel: T, count: j, maxCount: 1 }),
+                    { style: E.timerWrapper },
+                    a.createElement(f.a, { accessibilityLabel: T, count: L, maxCount: 1 }),
                   ),
-                  !R || R < 470 ? null : a.createElement(w.b, { style: S.sendingLabel, weight: 'bold' }, v),
+                  !R || R < 470 ? null : a.createElement(w.b, { style: E.sendingLabel, weight: 'bold' }, v),
                 ),
                 a.createElement(
                   m.a,
-                  { style: S.buttonWrapper },
+                  { style: E.buttonWrapper },
                   a.createElement(
                     b.a,
                     {
+                      disabled: D,
                       onClick: function () {
                         s(o),
+                          F(!0),
                           n.scribe({
                             element: 'send_now',
                             action: 'send_now',
@@ -200,7 +206,7 @@
                 ),
               )
         },
-        S = y.a.create(function (e) {
+        E = y.a.create(function (e) {
           return {
             root: {
               marginTop: e.spaces.space12,
@@ -217,7 +223,7 @@
             buttonWrapper: { display: 'flex', flexDirection: 'row' },
           }
         }),
-        W = c(E)
+        W = c(S)
       t.default = W
     },
   },
