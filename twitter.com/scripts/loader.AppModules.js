@@ -1809,21 +1809,18 @@
         },
         m = 'rweb/geoLocation/SET_POSITION',
         v = function () {
-          return function (e, t, n) {
-            return n.featureSwitches.isTrue('responsive_web_precise_location_setting_enabled')
-              ? y()
-                  .then(function (t) {
-                    return e({ payload: t, type: m })
-                  })
-                  .catch(function (t) {
-                    return e(h(i.b.denied)), Promise.reject(t)
-                  })
-              : Promise.resolve()
+          return function (e, t) {
+            return y()
+              .then(function (t) {
+                return e({ payload: t, type: m })
+              })
+              .catch(function (t) {
+                return e(h(i.b.denied)), Promise.reject(t)
+              })
           }
         },
         b = function () {
-          return function (e, t, n) {
-            n.featureSwitches
+          return function (e, t) {
             return p(t()) ? Promise.resolve() : e(v())
           }
         },

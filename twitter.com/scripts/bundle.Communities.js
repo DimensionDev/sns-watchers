@@ -3628,10 +3628,10 @@
       'use strict'
       n.r(t),
         n.d(t, 'CommunityTimelineType', function () {
-          return qn
+          return Jn
         }),
         n.d(t, 'CommunityScreen', function () {
-          return $n
+          return er
         })
       n('OZaJ'), n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var r,
@@ -4714,7 +4714,7 @@
             a = e.isCommunityMember,
             o = e.rankedTweetsModule,
             i = e.tweetsModule,
-            c = e.type === qn.Home ? { module: o, scribeNamespace: fn } : { module: i, scribeNamespace: yn },
+            c = e.type === Jn.Home ? { module: o, scribeNamespace: fn } : { module: i, scribeNamespace: yn },
             l = t ? c : { module: i, scribeNamespace: hn },
             u = l.module,
             s = l.scribeNamespace
@@ -4744,8 +4744,9 @@
               }),
             ),
           )
-        })
-      function vn(e, t) {
+        }),
+        vn = n('o3oN')
+      function gn(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -4757,13 +4758,14 @@
         }
         return n
       }
-      var gn = Object(S.a)()
+      var En = Object(S.a)()
           .propsFromState(function () {
             return {
               communityId: O.c,
               community: O.a,
               communityTheme: O.f,
               fetchStatus: O.b,
+              membershipsFetchStatus: vn.d,
               isCommunityMember: O.h,
               joinActionResultType: O.i,
               loggedInUser: jt.e.selectLoggedInUser,
@@ -4776,12 +4778,12 @@
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {}
                 t % 2
-                  ? vn(Object(n), !0).forEach(function (t) {
+                  ? gn(Object(n), !0).forEach(function (t) {
                       v()(e, t, n[t])
                     })
                   : Object.getOwnPropertyDescriptors
                   ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-                  : vn(Object(n)).forEach(function (t) {
+                  : gn(Object(n)).forEach(function (t) {
                       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     })
               }
@@ -4792,11 +4794,12 @@
             return {
               createLocalApiErrorHandler: Object(Oe.createLocalApiErrorHandlerWithContextFactory)('COMMUNITIES_SCREEN'),
               fetchCommunityIfNeeded: $t.b.fetchOneIfNeeded,
+              fetchCommunityMemberships: vn.a,
             }
           })
           .withAnalytics({ page: 'community' }),
-        En = (n('MvUL'), n('Ty5D'))
-      function On(e, t) {
+        On = (n('MvUL'), n('Ty5D'))
+      function wn(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -4808,27 +4811,27 @@
         }
         return n
       }
-      function wn(e) {
+      function Cn(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? On(Object(n), !0).forEach(function (t) {
+            ? wn(Object(n), !0).forEach(function (t) {
                 v()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : On(Object(n)).forEach(function (t) {
+            : wn(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var Cn = function () {
+      var _n = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
         return Object(Le.a)(
           'svg',
-          wn(
-            wn({}, e),
+          Cn(
+            Cn({}, e),
             {},
             { accessibilityHidden: void 0 === e.accessibilityLabel, style: [Ae.a.root, e.style], viewBox: '0 0 24 24' },
           ),
@@ -4844,22 +4847,22 @@
           ),
         )
       }
-      Cn.metadata = { width: 24, height: 24 }
-      var _n = Cn,
-        Sn = n('wpLu'),
-        jn = n('vFjZ'),
-        Pn = L.a.bf359e0d,
-        In = L.a.e8fcdd3a,
-        Rn = L.a.h54d99da,
-        Mn = L.a.f30c8202,
-        kn = L.a.ca7eeabf,
-        xn = L.a.a55eca58,
-        Tn = L.a.e97cf2bc,
-        An = L.a.j24c37b2,
-        Ln = g.memo(function (e) {
+      _n.metadata = { width: 24, height: 24 }
+      var Sn = _n,
+        jn = n('wpLu'),
+        Pn = n('vFjZ'),
+        In = L.a.bf359e0d,
+        Rn = L.a.e8fcdd3a,
+        Mn = L.a.h54d99da,
+        kn = L.a.f30c8202,
+        xn = L.a.ca7eeabf,
+        Tn = L.a.a55eca58,
+        An = L.a.e97cf2bc,
+        Ln = L.a.j24c37b2,
+        Dn = g.memo(function (e) {
           var t = e.community,
             n = t.id_str,
-            r = Object(En.g)(),
+            r = Object(On.g)(),
             a = g.useCallback(
               function () {
                 r.replace('/i/communities/'.concat(n, '/'))
@@ -4869,11 +4872,11 @@
             o = Object(R.d)(Object(R.e)(t)),
             i = g.createElement(
               Ie.a,
-              { accessibilityRole: 'list', style: Dn.rulesContainer },
+              { accessibilityRole: 'list', style: Fn.rulesContainer },
               t.rules.map(function (e) {
                 return g.createElement(
                   Z.b,
-                  { accessibilityRole: 'listitem', color: 'gray700', key: e.rest_id, style: Dn.rule },
+                  { accessibilityRole: 'listitem', color: 'gray700', key: e.rest_id, style: Fn.rule },
                   e.name,
                 )
               }),
@@ -4881,33 +4884,33 @@
           return g.createElement(
             rt.a,
             {
-              actionLabel: An,
+              actionLabel: Ln,
               graphicDisplayMode: 'none',
-              headline: Pn,
+              headline: In,
               onAction: a,
               onClose: a,
-              subtext: In,
+              subtext: Rn,
               withCloseButton: !0,
             },
             g.createElement(
               Ie.a,
-              { style: Dn.infoItemsContainer },
+              { style: Fn.infoItemsContainer },
               g.createElement(J.a, {
-                containerStyle: Dn.itemContainer,
+                containerStyle: Fn.itemContainer,
                 items: [
-                  { label: Rn, description: Mn, decoration: g.createElement(_n, { style: Dn.decorationContainer }) },
-                  { label: kn, decoration: g.createElement(Sn.a, { style: Dn.decorationContainer }), description: i },
+                  { label: Mn, description: kn, decoration: g.createElement(Sn, { style: Fn.decorationContainer }) },
+                  { label: xn, decoration: g.createElement(jn.a, { style: Fn.decorationContainer }), description: i },
                   {
-                    label: xn({ title: o }),
-                    description: Tn,
-                    decoration: g.createElement(jn.a, { style: Dn.decorationContainer }),
+                    label: Tn({ title: o }),
+                    description: An,
+                    decoration: g.createElement(Pn.a, { style: Fn.decorationContainer }),
                   },
                 ],
               }),
             ),
           )
         }),
-        Dn = B.a.create(function (e) {
+        Fn = B.a.create(function (e) {
           return {
             infoItemsContainer: { marginBottom: e.spaces.space32 },
             itemContainer: { paddingHorizontal: 0 },
@@ -4921,17 +4924,17 @@
             rule: { display: 'list-item', listStyleType: 'disc', listStylePosition: 'inside' },
           }
         }),
-        Fn = Ln,
-        Hn = n('dwig'),
-        Bn = n('MDbM'),
-        Nn = n('0+qk'),
-        zn = n('oQhu'),
-        Un = n('/de5'),
-        Kn = n('VS6U'),
-        Wn = n('QRqA'),
-        Vn = n('Qwev'),
-        Xn = n('mw9i')
-      function Yn(e, t) {
+        Hn = Dn,
+        Bn = n('dwig'),
+        Nn = n('MDbM'),
+        zn = n('0+qk'),
+        Un = n('oQhu'),
+        Kn = n('/de5'),
+        Wn = n('VS6U'),
+        Vn = n('QRqA'),
+        Xn = n('Qwev'),
+        Yn = n('mw9i')
+      function Gn(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -4943,22 +4946,22 @@
         }
         return n
       }
-      function Gn(e) {
+      function Qn(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Yn(Object(n), !0).forEach(function (t) {
+            ? Gn(Object(n), !0).forEach(function (t) {
                 v()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : Yn(Object(n)).forEach(function (t) {
+            : Gn(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      function Qn(e) {
+      function Zn(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -4979,12 +4982,12 @@
           return f()(this, n)
         }
       }
-      var Zn = { type: 'serversideContextKey', serversideContextType: 'community' },
-        qn = Object.freeze({ Home: 'home', Latest: 'latest' }),
-        Jn = L.a.a7c2e06c,
-        $n = (function (e) {
+      var qn = { type: 'serversideContextKey', serversideContextType: 'community' },
+        Jn = Object.freeze({ Home: 'home', Latest: 'latest' }),
+        $n = L.a.a7c2e06c,
+        er = (function (e) {
           d()(n, e)
-          var t = Qn(n)
+          var t = Zn(n)
           function n() {
             var e
             i()(this, n)
@@ -4997,14 +5000,14 @@
               v()(
                 s()(e),
                 '_getClientEntity',
-                Object(zn.a)(function (e) {
-                  return Gn(Gn({}, Zn), {}, { serversideContextId: e })
+                Object(Un.a)(function (e) {
+                  return Qn(Qn({}, qn), {}, { serversideContextId: e })
                 }),
               ),
               v()(
                 s()(e),
                 '_getWelcomeEducationParams',
-                Object(zn.a)(function (e, t) {
+                Object(Un.a)(function (e, t) {
                   return { forSingleCommunity: { canJoinCommunity: 'CommunityJoinAction' === t, theme: e.theme } }
                 }),
               ),
@@ -5019,38 +5022,38 @@
                   l = t.match,
                   u = (null == n ? void 0 : n.role) === R.a.Admin && void 0 !== c.query.show_creation_summary,
                   s = e._isAllowedToTweet
-                    ? g.createElement(Nn.a, { getLocationState: e._getTweetButtonLocationState, history: o })
+                    ? g.createElement(zn.a, { getLocationState: e._getTweetButtonLocationState, history: o })
                     : null
-                return r && a === Bn.a.LOADING
-                  ? g.createElement(Vn.a, { style: er.topMargin })
-                  : r && null != n && n.name && a === Bn.a.LOADED
+                return r && a === Nn.a.LOADING
+                  ? g.createElement(Xn.a, { style: tr.topMargin })
+                  : r && null != n && n.name && a === Nn.a.LOADED
                   ? g.createElement(
-                      Hn.a,
-                      { component: Xn.a, fab: s },
-                      g.createElement(Wn.a, e._getWelcomeEducationParams(n, i)),
-                      u && g.createElement(Fn, { community: n }),
+                      Bn.a,
+                      { component: Yn.a, fab: s },
+                      g.createElement(Vn.a, e._getWelcomeEducationParams(n, i)),
+                      u && g.createElement(Hn, { community: n }),
                       e._renderCommunityDetail(),
                       g.createElement(
-                        En.c,
+                        On.c,
                         { exact: !0, path: '/i/communities/'.concat(r, '/about') },
                         g.createElement(ve, { communityId: r, match: l }),
                       ),
                       g.createElement(
-                        En.e,
+                        On.e,
                         null,
                         g.createElement(
-                          En.c,
+                          On.c,
                           { exact: !0, path: '/i/communities/'.concat(r, '/') },
-                          g.createElement(bn, { communityId: r, location: c, match: l, type: qn.Home }),
+                          g.createElement(bn, { communityId: r, location: c, match: l, type: Jn.Home }),
                         ),
                         g.createElement(
-                          En.c,
+                          On.c,
                           { path: '/i/communities/'.concat(r, '/latest') },
-                          g.createElement(bn, { communityId: r, location: c, match: l, type: qn.Latest }),
+                          g.createElement(bn, { communityId: r, location: c, match: l, type: Jn.Latest }),
                         ),
                       ),
                     )
-                  : g.createElement(Un.b, { history: o, location: c, match: l })
+                  : g.createElement(Kn.b, { history: o, location: c, match: l })
               }),
               v()(s()(e), '_renderCommunityDetail', function () {
                 var t = e.props,
@@ -5063,8 +5066,10 @@
                 var t = e.props,
                   n = t.communityId,
                   r = t.createLocalApiErrorHandler,
-                  a = t.fetchCommunityIfNeeded
-                n && a(n).catch(r({}))
+                  a = t.fetchCommunityIfNeeded,
+                  o = t.fetchCommunityMemberships,
+                  i = t.membershipsFetchStatus
+                n && a(n).catch(r({})), i === je.a.NONE && o().catch(r())
               }),
               e
             )
@@ -5104,10 +5109,10 @@
                   return g.createElement(
                     ge.a,
                     { clientEntity: this._getClientEntity(n || ''), viewType: 'community' },
-                    g.createElement(Kn.a, {
+                    g.createElement(Wn.a, {
                       backLocation: a && '/'.concat(a, '/communities'),
                       composeOptions: this._getTweetButtonLocationState(),
-                      documentTitle: i ? Jn({ communityName: i }) : '',
+                      documentTitle: i ? $n({ communityName: i }) : '',
                       history: r,
                       primaryContent: this._renderPrimaryContent(),
                       rightControl: c,
@@ -5122,12 +5127,12 @@
             n
           )
         })(g.Component)
-      v()($n, 'contextType', ee.a)
-      var er = B.a.create(function (e) {
+      v()(er, 'contextType', ee.a)
+      var tr = B.a.create(function (e) {
           return { topMargin: { marginTop: e.spaces.space64 } }
         }),
-        tr = gn($n)
-      t.default = tr
+        nr = En(er)
+      t.default = nr
     },
     U0Qk: function (e, t, n) {
       'use strict'

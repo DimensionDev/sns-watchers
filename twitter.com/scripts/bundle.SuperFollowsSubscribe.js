@@ -98,12 +98,12 @@
         T = l('9Xij'),
         x = l('jAXQ'),
         K = l.n(x),
-        C = {
+        R = {
           backgroundBottomTweet: [12, 8, 6, 12],
           backgroundTopTweet: [13, 8, 5, 19, 8, 6],
           focalPointTweet: [12, 8, 5, 19, 17, 14],
         },
-        R = void 0 !== h ? h : (h = l('ahKC'))
+        C = void 0 !== h ? h : (h = l('ahKC'))
       function L(e) {
         var a = e.wordWidths
         return t.createElement(
@@ -209,7 +209,7 @@
         I = function (e) {
           var a = e.style,
             l = e.viewer,
-            n = K()(R, l),
+            n = K()(C, l),
             r = (null == n ? void 0 : n.legacy) || {},
             i = r.name,
             s = r.profile_image_url_https,
@@ -223,8 +223,8 @@
                 t.createElement(
                   d.a,
                   { style: D.mockBackgroundTweets },
-                  t.createElement(L, { wordWidths: C.backgroundTopTweet }),
-                  t.createElement(L, { wordWidths: C.backgroundBottomTweet }),
+                  t.createElement(L, { wordWidths: R.backgroundTopTweet }),
+                  t.createElement(L, { wordWidths: R.backgroundBottomTweet }),
                 ),
                 t.createElement(
                   d.a,
@@ -252,7 +252,7 @@
                       t.createElement(g.a, {
                         style: D.mockBodyCopy,
                         withBorderRadius: !0,
-                        wordPercentWidths: C.focalPointTweet,
+                        wordPercentWidths: R.focalPointTweet,
                       }),
                     ),
                   ),
@@ -261,8 +261,9 @@
             : null
         },
         N = l('v//M'),
-        j = l('9VLy'),
-        H = function (e) {
+        j = l('VTDR'),
+        H = l('9VLy'),
+        z = function (e) {
           var a = e.style
           return t.createElement(
             m.b,
@@ -278,8 +279,7 @@
             ),
           )
         },
-        z = l('FEMQ'),
-        M = l('ID86'),
+        M = l('FEMQ'),
         V = function (e) {
           var a = e.description,
             l = e.style,
@@ -380,13 +380,13 @@
               return t.createElement(
                 t.Fragment,
                 null,
-                t.createElement(z.a, { creatorIntro: y, image: u, name: i }),
+                t.createElement(M.a, { creatorIntro: y, image: u, name: i }),
                 t.createElement(V, { description: f || void 0, style: ne.titleDescription, title: k || q }),
-                t.createElement(j.a, { style: ne.signature, user: o }),
+                t.createElement(H.a, { style: ne.signature, user: o }),
                 t.createElement(F, { style: ne.demoTweet }),
                 t.createElement(V, { description: J, style: ne.titleDescription, title: $ }),
                 c ? t.createElement(I, { style: [ne.demoTweet, ne.demoVIPTweetMarginTop], viewer: c }) : null,
-                t.createElement(H, { style: ne.disclaimer }),
+                t.createElement(z, { style: ne.disclaimer }),
                 t.createElement(
                   d.a,
                   { style: ne.subscribeButtonContainer },
@@ -425,7 +425,7 @@
                 type: 'full',
                 withMask: !0,
               },
-              t.createElement(M.a, null),
+              t.createElement(j.a, null),
               t.createElement(N.a, { fetchStatus: a, onRequestRetry: l, render: g, renderFailure: y, retryable: !1 }),
             )
           })

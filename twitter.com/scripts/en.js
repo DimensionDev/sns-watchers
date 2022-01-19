@@ -4762,6 +4762,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d9f6e3cd', 'Daily budget slider'),
           a('b3954ec9', 'Duration in days slider'),
           a('e1b48db4', 'Estimated reach is approximate. Actual reach for this promotion can’t be guaranteed.'),
+          a('c4d0434a', function (e) {
+            return e.dailyBudget + ' per day for ' + e.durationLabel
+          }),
           a('dc4a9413', function (e) {
             return e.totalBudget + ' over ' + e.durationLabel
           }),
@@ -4829,15 +4832,25 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h06724b4', 'Once started, you can pause spending on this Tweet at any time.'),
           a('a96f811e', 'Promotion goal'),
           a('b069d89c', 'Audience'),
+          a('fbd44e96', 'Your budget'),
           a('e36bce63', 'Payment method'),
+          a('c602f5b8', 'Total'),
+          a('ia83756b', 'Subtotal'),
+          a('cc217a04', 'Coupon balance'),
+          a('g4f2b588', 'Remaining coupon balance'),
           a('i41612d9', 'Create promotion'),
           a('cdae1af0', 'Add tax information'),
           a('ed8bb5af', 'Add payment details'),
+          a('fc640c20', 'Add payment details to claim your coupon'),
           a('be2dc078', 'Sign up and add payment details'),
+          a('iaefd4de', 'Sign up and add payment details to claim your coupon'),
+          a('e5e42640', 'Hmmm... your coupon didn’t load. Please try again later.'),
           a('da2805d1', 'A campaign for this tweet has already been created.'),
           a('ef4602eb', 'Something went wrong. Please try again later.'),
           a('a4db098b', 'It looks like we couldn’t create your promotion. Please try again later.'),
           a('ef7e3916', 'Something went wrong. Check your promotion details and try again.'),
+          a('acff74af', 'Twitter Terms and Advertising Guidelines'),
+          a('cb8d4ace', 'Twitter Coupon Terms'),
           a('d56b5ac3', 'Twitter Terms and Advertising Guidelines'),
           a('cc642518', 'Search Locations'),
           a('i0e8c3c6', 'Location results'),
@@ -5871,6 +5884,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b09adb0c', 'See conversation'),
           a('c2637ef5', 'Got it'),
           a('d9fd5570', 'Hidden replies'),
+          a('c566d3a5', 'Hide'),
           a('e9c24489', function (e) {
             return '' + e.date
           }),
@@ -7954,6 +7968,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'e1d95725',
                 get: function () {
                   return ['You can always unfollow from ', '.']
+                },
+              },
+              {
+                key: 'cace9784',
+                get: function () {
+                  return [
+                    'By clicking Create Promotion, you’re indicating that you have read and agree to the ',
+                    ' and ',
+                    '.',
+                  ]
                 },
               },
               {

@@ -349,13 +349,13 @@
           return w.a.selectHydrated(e, O(0, t))
         },
         T = function (e, t) {
-          return Object(I.n)(e, O(0, t))
+          return Object(I.p)(e, O(0, t))
         },
         x = function (e, t) {
           return w.a.selectFetchStatus(e, O(0, t))
         },
         L = function (e, t) {
-          return Object(I.m)(e, O(0, t))
+          return Object(I.o)(e, O(0, t))
         },
         R = Object(E.a)()
           .propsFromState(function () {
@@ -371,7 +371,7 @@
             return {
               createLocalApiErrorHandler: Object(k.createLocalApiErrorHandlerWithContextFactory)(P),
               fetchTweetIfNeeded: w.a.fetchOneIfNeeded,
-              fetchQuickPromoteEligibilityIfNeeded: I.i,
+              fetchQuickPromoteEligibilityIfNeeded: I.j,
             }
           })
           .withAnalytics({ page: 'tweet', section: 'analytics', component: 'RwebConversationAnalytics' }),

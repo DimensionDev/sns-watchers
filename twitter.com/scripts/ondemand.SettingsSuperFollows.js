@@ -1303,7 +1303,7 @@
       'use strict'
       n.r(a),
         n.d(a, 'superFollowsSettingsQuery', function () {
-          return zi
+          return Vi
         })
       var t = {}
       n.r(t),
@@ -1525,7 +1525,7 @@
             label: { flex: 1 },
           }
         }),
-        M = function () {
+        V = function () {
           return o.createElement(
             D.b,
             { align: 'center', color: 'gray700' },
@@ -1540,8 +1540,8 @@
             ),
           )
         },
-        V = n('ddV6'),
-        U = n.n(V),
+        M = n('ddV6'),
+        U = n.n(M),
         H =
           (n('Qavd'),
           n('JtPf'),
@@ -1706,8 +1706,8 @@
         Ie = k.a.create(function (e) {
           return { headline: { marginTop: e.spaces.space48 }, subtext: { marginVertical: e.spaces.space12 } }
         }),
-        Me = b.a.feb54b4f,
-        Ve = b.a.bac156a6,
+        Ve = b.a.feb54b4f,
+        Me = b.a.bac156a6,
         Ue = b.a.a3a20a10,
         He = b.a.b26ae507,
         We = b.a.a753a87f,
@@ -1754,8 +1754,8 @@
             n = q()(Xe, a),
             t = 0 === ((null == n ? void 0 : n.super_following_eligibility) || []).length,
             l = t ? Pe.Arrow : Pe.TrafficLight,
-            r = t ? Me : Ue,
-            i = t ? Ve : He,
+            r = t ? Ve : Ue,
+            i = t ? Me : He,
             c = Je.map(function (e) {
               return { label: e.label, checked: (0, e.test)(n) }
             }),
@@ -1765,7 +1765,7 @@
             { appBar: s },
             o.createElement(ze, { headline: r, illustration: l, subtext: i }),
             o.createElement(z, { items: c }),
-            t && o.createElement(M, null),
+            t && o.createElement(V, null),
             o.createElement(H, { disabled: !t, label: We, path: '/application/one_more_thing' }),
             o.createElement(H, { label: qe, path: '/application/one_more_thing' }),
           )
@@ -2005,19 +2005,19 @@
         ja = n.n(Aa),
         za = 'super_follows_application_draft',
         Ia = 'super_follows_onboarding_draft',
-        Ma = function (e) {
+        Va = function (e) {
           return ja()(void 0 !== i ? i : (i = n('PlkH')), e).__id
         },
-        Va = function (e, a) {
-          var n = Ma(a),
+        Ma = function (e, a) {
+          var n = Va(a),
             t = e.get(n)
           return s()(t, 'viewer must be defined'), t
         },
         Ua = function (e, a) {
-          return Va(e, a).getLinkedRecord(za)
+          return Ma(e, a).getLinkedRecord(za)
         },
         Ha = function (e, a) {
-          return Va(e, a).getLinkedRecord(Ia)
+          return Ma(e, a).getLinkedRecord(Ia)
         },
         Wa = n('HG4m'),
         qa = n.n(Wa),
@@ -2045,8 +2045,8 @@
                     g = void 0 === m ? [] : m,
                     f = n.purpose,
                     b = void 0 === f ? null : f,
-                    y = Ma(a),
-                    h = Va(e, a)
+                    y = Va(a),
+                    h = Ma(e, a)
                   if (!Ua(e, a)) {
                     var _ = e.create(''.concat(y, ':').concat(za), 'SuperFollowsApplicationDraft')
                     _.setValue(l, 'content_category'),
@@ -2078,8 +2078,8 @@
                     i = void 0 === r ? null : r,
                     o = n.selected_price,
                     c = void 0 === o ? null : o,
-                    s = Ma(a),
-                    u = Va(e, a)
+                    s = Va(a),
+                    u = Ma(e, a)
                   if (!Ha(e, a)) {
                     var d = e.create(''.concat(s, ':').concat(Ia), 'SuperFollowsOnboardingDraft')
                     d.setValue(l, 'creator_intro'),
@@ -2164,8 +2164,8 @@
         jn = b.a.d94a9a17,
         zn = b.a.a8d0108d,
         In = b.a.gfc80842,
-        Mn = void 0 !== $a ? $a : ($a = n('pLb/')),
-        Vn = void 0 !== Ya ? Ya : (Ya = n('3qCL')),
+        Vn = void 0 !== $a ? $a : ($a = n('pLb/')),
+        Mn = void 0 !== Ya ? Ya : (Ya = n('3qCL')),
         Un = void 0 !== en ? en : (en = n('AyUU')),
         Hn = function (e) {
           var a,
@@ -2178,9 +2178,9 @@
             s = e.user,
             u = e.viewer,
             d = Ga()(),
-            p = q()(Mn, s),
+            p = q()(Vn, s),
             m = null == p ? void 0 : p.legacy.screen_name,
-            g = q()(Vn, u),
+            g = q()(Mn, u),
             f = g.super_follows_application_draft,
             b = (null !== (a = null == f ? void 0 : f.content_category) && void 0 !== a ? a : []).concat(
               null !== (n = null == f ? void 0 : f.content_category_other) && void 0 !== n ? n : [],
@@ -2229,7 +2229,7 @@
               path: '/application/submit_ethnicities',
             }),
             o.createElement(Ta, { description: Object(vn.a)(v, !0), label: zn, path: '/application/submit_genders' }),
-            o.createElement(M, null),
+            o.createElement(V, null),
             o.createElement(H, {
               disabled: !w,
               label: In,
@@ -2580,8 +2580,8 @@
         jt = b.a.b4a93a91,
         zt = b.a.c0348963,
         It = b.a.d08d0bb2,
-        Mt = b.a.ea4c3496,
-        Vt = b.a.ea92cfe3,
+        Vt = b.a.ea4c3496,
+        Mt = b.a.ea92cfe3,
         Ut = b.a.ia9c37c4,
         Ht = b.a.hc2c5a8b,
         Wt = b.a.be54a312,
@@ -2645,9 +2645,9 @@
             o.createElement(
               D.b,
               { accessibilityLevel: 3, accessibilityRole: 'heading', size: 'headline1', weight: 'heavy' },
-              Mt,
+              Vt,
             ),
-            o.createElement(D.b, { color: 'gray700' }, Vt),
+            o.createElement(D.b, { color: 'gray700' }, Mt),
             o.createElement(Pt.a, null),
             o.createElement(
               D.b,
@@ -2854,8 +2854,8 @@
             o.createElement(H, { label: zl, path: '/onboarding/pricing' }),
           )
         },
-        Ml = b.a.cd5cae15,
-        Vl = b.a.d80af370,
+        Vl = b.a.cd5cae15,
+        Ml = b.a.d80af370,
         Ul = b.a.gf32cca1,
         Hl = b.a.j8ba99b3,
         Wl = b.a.j679dcda,
@@ -2875,7 +2875,7 @@
                 ? a
                 : '',
             i = Za(l, 'description'),
-            c = o.createElement(E, { rightControl: o.createElement(P, null), subtitle: Vl, title: Ml })
+            c = o.createElement(E, { rightControl: o.createElement(P, null), subtitle: Ml, title: Vl })
           return o.createElement(
             x,
             { appBar: c },
@@ -2973,6 +2973,7 @@
               backgroundColor: e.colors.cellBackground,
               borderRadius: e.borderRadii.large,
               flex: 1,
+              minHeight: 400,
               overflow: 'hidden',
               padding: e.spaces.space32,
             },
@@ -3001,45 +3002,51 @@
                   o.createElement(F.a, { style: or.browserBarUrlInput }),
                 ),
               ),
-              o.createElement(F.a, { style: [or.content, n && or.contentWideMargins] }, a),
+              o.createElement(
+                F.a,
+                { style: [or.content, n && or.contentWideMargins] },
+                o.createElement(F.a, { style: or.mockSubscribeModal }, a),
+              ),
             )
           })
         },
-        sr = n('FEMQ'),
-        ur = n('ID86'),
-        dr = b.a.cd5cae15,
-        pr = b.a.ef08a890,
-        mr = b.a.j3253319,
-        gr = b.a.h1e80993,
-        fr = b.a.j679dcda,
-        br = b.a.b16680ff,
-        yr = b.a.abd845fd,
-        hr = b.a.c1df579e,
-        _r = void 0 !== rr ? rr : (rr = n('02qo')),
-        vr = void 0 !== ir ? ir : (ir = n('TXsE')),
-        wr = k.a.create(function (e) {
+        sr = n('VTDR'),
+        ur = n('FEMQ'),
+        dr = function (e) {
+          return o.createElement(
+            cr,
+            { style: pr.mockBrowserWindow },
+            o.createElement(o.Fragment, null, o.createElement(sr.a, null), o.createElement(ur.a, e)),
+          )
+        },
+        pr = k.a.create(function (e) {
+          return { mockBrowserWindow: { marginVertical: e.spaces.space24, maxWidth: '600px' } }
+        }),
+        mr = b.a.cd5cae15,
+        gr = b.a.ef08a890,
+        fr = b.a.j3253319,
+        br = b.a.h1e80993,
+        yr = b.a.j679dcda,
+        hr = b.a.b16680ff,
+        _r = b.a.abd845fd,
+        vr = b.a.c1df579e,
+        wr = void 0 !== rr ? rr : (rr = n('02qo')),
+        Sr = void 0 !== ir ? ir : (ir = n('TXsE')),
+        Er = k.a.create(function (e) {
           return {
             button: { cursor: 'pointer', flex: 1 },
             buttonsWrapper: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: e.spaces.space16 },
             examplesLink: { alignSelf: 'center', marginBottom: e.spaces.space12, width: 200 },
-            mockSubscribeModal: {
-              backgroundColor: e.colors.cellBackground,
-              borderRadius: e.borderRadii.large,
-              flex: 1,
-              minHeight: 400,
-              overflow: 'hidden',
-              padding: e.spaces.space32,
-            },
           }
         }),
-        Sr = function (e) {
+        kr = function (e) {
           var a,
             n,
             t = e.user,
             l = e.viewer,
             r = o.useRef(null),
-            i = q()(_r, t),
-            c = q()(vr, l),
+            i = q()(wr, t),
+            c = q()(Sr, l),
             u = i.legacy,
             d = u.name,
             p = u.profile_image_url_https,
@@ -3050,42 +3057,33 @@
                 ? a
                 : '',
             g = Za(c, 'creator_intro'),
-            f = o.createElement(E, { subtitle: pr, title: dr })
+            f = o.createElement(E, { subtitle: gr, title: mr })
           s()('string' == typeof d, 'name must be defined'), s()('string' == typeof p, 'image must be defined')
           var b = !!m
           return o.createElement(
             x,
             { appBar: f },
-            o.createElement(ze, { headline: mr, subtext: gr }),
+            o.createElement(ze, { headline: fr, subtext: br }),
             o.createElement(H, {
-              label: fr,
+              label: yr,
               path: '/onboarding/perks_intro_examples',
-              style: wr.examplesLink,
+              style: Er.examplesLink,
               type: 'primaryText',
             }),
             o.createElement(Ol, null),
-            o.createElement(
-              cr,
-              null,
-              o.createElement(
-                F.a,
-                { style: wr.mockSubscribeModal },
-                o.createElement(ur.a, null),
-                o.createElement(sr.a, {
-                  creatorIntroInputRef: r,
-                  creatorIntroInputValue: m,
-                  image: p,
-                  name: d,
-                  onInputChange: function (e) {
-                    g(e.currentTarget.value)
-                  },
-                  withInput: !0,
-                }),
-              ),
-            ),
+            o.createElement(dr, {
+              creatorIntroInputRef: r,
+              creatorIntroInputValue: m,
+              image: p,
+              name: d,
+              onInputChange: function (e) {
+                g(e.currentTarget.value)
+              },
+              withInput: !0,
+            }),
             o.createElement(
               F.a,
-              { style: wr.buttonsWrapper },
+              { style: Er.buttonsWrapper },
               o.createElement(
                 _.a,
                 {
@@ -3094,21 +3092,21 @@
                     null == r || null === (e = r.current) || void 0 === e || e.focus()
                   },
                   size: 'large',
-                  style: wr.button,
+                  style: Er.button,
                   type: 'primaryOutlined',
                 },
-                b ? yr : br,
+                b ? _r : hr,
               ),
-              o.createElement(H, { disabled: !b, label: hr, path: '/onboarding/perks_description', size: 'large' }),
+              o.createElement(H, { disabled: !b, label: vr, path: '/onboarding/perks_description', size: 'large' }),
             ),
           )
         },
-        Er = n('JWc1'),
-        kr = (n('+KXO'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('KEM+')),
-        Fr = n.n(kr),
-        xr = n('Lsrn'),
-        Cr = n('k/Ka')
-      function Or(e, a) {
+        Fr = n('JWc1'),
+        xr = (n('+KXO'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('KEM+')),
+        Cr = n.n(xr),
+        Or = n('Lsrn'),
+        Kr = n('k/Ka')
+      function Lr(e, a) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var t = Object.getOwnPropertySymbols(e)
@@ -3120,29 +3118,29 @@
         }
         return n
       }
-      function Kr(e) {
+      function Tr(e) {
         for (var a = 1; a < arguments.length; a++) {
           var n = null != arguments[a] ? arguments[a] : {}
           a % 2
-            ? Or(Object(n), !0).forEach(function (a) {
-                Fr()(e, a, n[a])
+            ? Lr(Object(n), !0).forEach(function (a) {
+                Cr()(e, a, n[a])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : Or(Object(n)).forEach(function (a) {
+            : Lr(Object(n)).forEach(function (a) {
                 Object.defineProperty(e, a, Object.getOwnPropertyDescriptor(n, a))
               })
         }
         return e
       }
-      var Lr = function () {
+      var Br = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(Cr.a)(
+        return Object(Kr.a)(
           'svg',
-          Kr(
-            Kr({}, e),
+          Tr(
+            Tr({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [xr.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [Or.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           o.createElement(
             'g',
@@ -3153,24 +3151,24 @@
           ),
         )
       }
-      Lr.metadata = { width: 24, height: 24 }
-      var Tr,
-        Br,
-        Rr,
+      Br.metadata = { width: 24, height: 24 }
+      var Rr,
         Pr,
         Dr,
         Ar,
         jr,
         zr,
-        Ir = Lr,
-        Mr = n('lUZE'),
-        Vr = b.a.ebfb897c,
-        Ur = b.a.dc4feb19,
-        Hr = b.a.a0bb2076,
-        Wr = b.a.ace46d40,
-        qr = b.a.h2c4511f,
-        Nr = b.a.hbe4f99e,
-        Gr = k.a.create(function (e) {
+        Ir,
+        Vr,
+        Mr = Br,
+        Ur = n('lUZE'),
+        Hr = b.a.ebfb897c,
+        Wr = b.a.dc4feb19,
+        qr = b.a.a0bb2076,
+        Nr = b.a.ace46d40,
+        Gr = b.a.h2c4511f,
+        Qr = b.a.hbe4f99e,
+        Jr = k.a.create(function (e) {
           return {
             exampleIntros: { marginLeft: e.spaces.space36 },
             headlineWrapper: { flexDirection: 'row', marginBottom: e.spaces.space12 },
@@ -3178,79 +3176,79 @@
             subtext: { marginLeft: e.spaces.space36 },
           }
         }),
-        Qr = function () {
-          var e = o.createElement(E, { title: Vr })
+        Xr = function () {
+          var e = o.createElement(E, { title: Hr })
           return o.createElement(
             x,
             { appBar: e },
             o.createElement(
               F.a,
-              { style: Gr.headlineWrapper },
-              o.createElement(ra.a, { Icon: Ir, color: 'neutral', size: 'large' }),
+              { style: Jr.headlineWrapper },
+              o.createElement(ra.a, { Icon: Mr, color: 'neutral', size: 'large' }),
               o.createElement(
                 D.b,
                 {
                   accessibilityLevel: 2,
                   accessibilityRole: 'heading',
                   size: 'title4',
-                  style: Gr.headline,
+                  style: Jr.headline,
                   weight: 'heavy',
                 },
-                Ur,
+                Wr,
               ),
             ),
-            o.createElement(D.b, { color: 'gray700', style: Gr.subtext }, Hr),
+            o.createElement(D.b, { color: 'gray700', style: Jr.subtext }, qr),
             o.createElement(
               F.a,
-              { style: Gr.exampleIntros },
-              o.createElement(Er.a, { Icon: Mr.a, creatorIntro: Wr }),
-              o.createElement(Er.a, { Icon: Mr.a, creatorIntro: qr }),
-              o.createElement(Er.a, { Icon: Mr.a, creatorIntro: Nr }),
+              { style: Jr.exampleIntros },
+              o.createElement(Fr.a, { Icon: Ur.a, creatorIntro: Nr }),
+              o.createElement(Fr.a, { Icon: Ur.a, creatorIntro: Gr }),
+              o.createElement(Fr.a, { Icon: Ur.a, creatorIntro: Qr }),
             ),
           )
         },
-        Jr = (n('7xRU'), n('hznd')),
-        Xr = b.a.ea8a3d2d,
-        Zr = b.a.ic9124bf,
-        $r = b.a.g5923869,
-        Yr = {
+        Zr = (n('7xRU'), n('hznd')),
+        $r = b.a.ea8a3d2d,
+        Yr = b.a.ic9124bf,
+        ei = b.a.g5923869,
+        ai = {
           offer1: [b.a.f025ab39, b.a.c5602dfd],
           offer2: [b.a.ib075804, b.a.j8a72f06],
           offer3: [b.a.c246656e, b.a.a92ab16c],
         },
-        ei = b.a.c1df579e,
-        ai = void 0 !== Tr ? Tr : (Tr = n('5jO1')),
-        ni = void 0 !== Br ? Br : (Br = n('mKqc')),
-        ti = void 0 !== Rr ? Rr : (Rr = n('p785')),
-        li = function (e) {
+        ni = b.a.c1df579e,
+        ti = void 0 !== Rr ? Rr : (Rr = n('5jO1')),
+        li = void 0 !== Pr ? Pr : (Pr = n('mKqc')),
+        ri = void 0 !== Dr ? Dr : (Dr = n('p785')),
+        ii = function (e) {
           var a,
             n,
             t = e.priceOfferings,
             l = e.viewer,
             r = Ga()(),
-            i = q()(ai, t),
+            i = q()(ti, t),
             c = (i.$refType, Tt()(i, ['$refType'])),
-            s = q()(ni, l),
+            s = q()(li, l),
             u = s.super_follows_onboarding_draft,
             d = null !== (a = null == u ? void 0 : u.creator_intro) && void 0 !== a ? a : '',
             p = null !== (n = null == u ? void 0 : u.description) && void 0 !== n ? n : '',
             m = null == u ? void 0 : u.selected_price,
             g = Za(s, 'selected_price'),
-            f = o.createElement(E, { rightControl: o.createElement(P, null), title: Xr }),
+            f = o.createElement(E, { rightControl: o.createElement(P, null), title: $r }),
             y = o.createElement(
               b.a.I18NFormatMessage,
               { $i18n: 'geee69de' },
               o.createElement(D.b, { link: B }, b.a.c336b06a),
             ),
             h = Object.keys(c).map(function (e) {
-              return { label: $r({ price: c[e] }), value: e, helpText: Yr[e].join(' ') }
+              return { label: ei({ price: c[e] }), value: e, helpText: ai[e].join(' ') }
             })
           return o.createElement(
             x,
             { appBar: f },
-            o.createElement(ze, { headline: Zr, subtext: y }),
-            o.createElement(Jr.a, {
-              label: Zr,
+            o.createElement(ze, { headline: Yr, subtext: y }),
+            o.createElement(Zr.a, {
+              label: Yr,
               name: 'selectedPrice',
               onChange: function (e, a) {
                 g(a)
@@ -3260,12 +3258,12 @@
             }),
             o.createElement(H, {
               disabled: !m,
-              label: ei,
+              label: ni,
               onPress: function () {
                 return new Promise(function (e, a) {
                   if (!m) return a(new Error('No price selected'))
                   Ka()(r, {
-                    mutation: ti,
+                    mutation: ri,
                     variables: {
                       creator_intro: d,
                       benefits_data: [{ benefit_type: 'ExclusiveContent', title: '', description: p }],
@@ -3282,41 +3280,41 @@
             }),
           )
         },
-        ri = b.a.e20f6661,
-        ii = b.a.a9ee1ecc,
-        oi = b.a.j24c37b2,
-        ci = function () {
+        oi = b.a.e20f6661,
+        ci = b.a.a9ee1ecc,
+        si = b.a.j24c37b2,
+        ui = function () {
           var e = m(),
             a = o.createElement(E, { leftControlShouldClose: !0, rightControl: o.createElement(P, null) })
           return o.createElement(
             x,
             { appBar: a },
-            o.createElement(ze, { headline: ri, illustration: Pe.Thumbsup, subtext: ii }),
-            o.createElement(H, { history: e, label: oi, path: '/settings/monetization' }),
+            o.createElement(ze, { headline: oi, illustration: Pe.Thumbsup, subtext: ci }),
+            o.createElement(H, { history: e, label: si, path: '/settings/monetization' }),
           )
         },
-        si = b.a.e2cd700f,
-        ui = b.a.d6bfb60c,
-        di = b.a.b9cbb370,
-        pi = function () {
+        di = b.a.e2cd700f,
+        pi = b.a.d6bfb60c,
+        mi = b.a.b9cbb370,
+        gi = function () {
           var e = o.createElement(E, { rightControl: o.createElement(P, null) })
           return o.createElement(
             x,
             { appBar: e },
-            o.createElement(ze, { headline: si, illustration: Pe.Puzzle, subtext: ui }),
-            o.createElement(H, { label: di, path: '/onboarding/stripe_setup' }),
+            o.createElement(ze, { headline: di, illustration: Pe.Puzzle, subtext: pi }),
+            o.createElement(H, { label: mi, path: '/onboarding/stripe_setup' }),
           )
         },
-        mi = n('8jkQ'),
-        gi = n('9SqB'),
-        fi = n.n(gi),
-        bi = b.a.ja884230,
-        yi = b.a.af1b808d,
-        hi = b.a.fe339750,
-        _i = b.a.j912510a,
-        vi = void 0 !== Pr ? Pr : (Pr = n('xHLM')),
-        wi = function () {
-          var e = fi()(vi),
+        fi = n('8jkQ'),
+        bi = n('9SqB'),
+        yi = n.n(bi),
+        hi = b.a.ja884230,
+        _i = b.a.af1b808d,
+        vi = b.a.fe339750,
+        wi = b.a.j912510a,
+        Si = void 0 !== Ar ? Ar : (Ar = n('xHLM')),
+        Ei = function () {
+          var e = yi()(Si),
             a = U()(e, 2),
             n = a[0],
             t = a[1],
@@ -3325,7 +3323,7 @@
                 variables: {},
                 onCompleted: function (e, a) {
                   var n = e.stripe_account_create_onboarding_url
-                  n && mi.b.navigateTo(n)
+                  n && fi.b.navigateTo(n)
                 },
               })
             },
@@ -3333,23 +3331,23 @@
           return o.createElement(
             x,
             { appBar: r },
-            o.createElement(ze, { headline: bi, illustration: Pe.CoinStairs, subtext: yi }),
-            o.createElement(_.a, { disabled: t, onPress: l, type: 'primaryFilled' }, hi),
-            o.createElement(_.a, { disabled: t, onPress: l, type: 'primaryOutlined' }, _i),
+            o.createElement(ze, { headline: hi, illustration: Pe.CoinStairs, subtext: _i }),
+            o.createElement(_.a, { disabled: t, onPress: l, type: 'primaryFilled' }, vi),
+            o.createElement(_.a, { disabled: t, onPress: l, type: 'primaryOutlined' }, wi),
           )
         },
-        Si = void 0 !== Dr ? Dr : (Dr = n('UNVS')),
-        Ei = void 0 !== Ar ? Ar : (Ar = n('6byF')),
-        ki = void 0 !== jr ? jr : (jr = n('dNhZ')),
-        Fi = function (e) {
+        ki = void 0 !== jr ? jr : (jr = n('UNVS')),
+        Fi = void 0 !== zr ? zr : (zr = n('6byF')),
+        xi = void 0 !== Ir ? Ir : (Ir = n('dNhZ')),
+        Ci = function (e) {
           var a,
             n,
             t = e.priceOfferings,
             l = e.user,
             r = e.viewer,
-            i = q()(Si, t),
-            c = q()(Ei, l),
-            s = q()(ki, r),
+            i = q()(ki, t),
+            c = q()(Fi, l),
+            s = q()(xi, r),
             d = null !== (a = c.super_follow_creator_benefits) && void 0 !== a ? a : {},
             p = d.benefits_data,
             m = null != p ? p : [{}]
@@ -3366,9 +3364,9 @@
               o.createElement(
                 u.c,
                 { exact: !0, path: '/onboarding/perks_intro' },
-                o.createElement(Sr, { user: c, viewer: s }),
+                o.createElement(kr, { user: c, viewer: s }),
               ),
-              o.createElement(u.c, { exact: !0, path: '/onboarding/perks_intro_examples' }, o.createElement(Qr, null)),
+              o.createElement(u.c, { exact: !0, path: '/onboarding/perks_intro_examples' }, o.createElement(Xr, null)),
               o.createElement(
                 u.c,
                 { exact: !0, path: '/onboarding/perks_description' },
@@ -3384,55 +3382,55 @@
               o.createElement(
                 u.c,
                 { exact: !0, path: '/onboarding/pricing' },
-                o.createElement(li, { priceOfferings: i, viewer: s }),
+                o.createElement(ii, { priceOfferings: i, viewer: s }),
               ),
-              o.createElement(u.c, { exact: !0, path: '/onboarding/stripe_setup' }, o.createElement(wi, null)),
-              o.createElement(u.c, { exact: !0, path: '/onboarding/stripe_incomplete' }, o.createElement(pi, null)),
-              o.createElement(u.c, { exact: !0, path: '/onboarding/stripe_completed' }, o.createElement(ci, null)),
+              o.createElement(u.c, { exact: !0, path: '/onboarding/stripe_setup' }, o.createElement(Ei, null)),
+              o.createElement(u.c, { exact: !0, path: '/onboarding/stripe_incomplete' }, o.createElement(gi, null)),
+              o.createElement(u.c, { exact: !0, path: '/onboarding/stripe_completed' }, o.createElement(ui, null)),
               o.createElement(u.c, { path: '/onboarding' }, o.createElement(vl, { user: c, viewer: s })),
             )
           )
         },
-        xi = b.a.aa7e35ed,
-        Ci = b.a.f67e69bf,
-        Oi = function () {
+        Oi = b.a.aa7e35ed,
+        Ki = b.a.f67e69bf,
+        Li = function () {
           var e = o.createElement(E, { leftControlShouldClose: !0, rightControl: o.createElement(P, null) })
           return o.createElement(
             x,
             { appBar: e },
-            o.createElement(ze, { headline: xi, illustration: Pe.Uturn, subtext: Ci }),
+            o.createElement(ze, { headline: Oi, illustration: Pe.Uturn, subtext: Ki }),
           )
         },
-        Ki = b.a.d3d6c52c,
-        Li = b.a.c53e9129,
-        Ti = function () {
+        Ti = b.a.d3d6c52c,
+        Bi = b.a.c53e9129,
+        Ri = function () {
           var e = o.createElement(E, { leftControlShouldClose: !0, rightControl: o.createElement(P, null) })
           return o.createElement(
             x,
             { appBar: e },
-            o.createElement(ze, { headline: Ki, illustration: Pe.PaperAirplane, subtext: Li }),
+            o.createElement(ze, { headline: Ti, illustration: Pe.PaperAirplane, subtext: Bi }),
           )
         },
-        Bi = b.a.j274e6aa,
-        Ri = b.a.d7f65127,
-        Pi = function () {
+        Pi = b.a.j274e6aa,
+        Di = b.a.d7f65127,
+        Ai = function () {
           var e = o.createElement(E, { leftControlShouldClose: !0, rightControl: o.createElement(P, null) })
           return o.createElement(
             x,
             { appBar: e },
-            o.createElement(ze, { headline: Bi, illustration: Pe.Bench, subtext: Ri }),
+            o.createElement(ze, { headline: Pi, illustration: Pe.Bench, subtext: Di }),
           )
         },
-        Di = n('n0Rl'),
-        Ai = n('q9Zt'),
-        ji = b.a.hae1c933,
-        zi = void 0 !== zr ? zr : (zr = n('G8I5')),
-        Ii = Object(Di.b)(zi, { errorConfig: { context: 'SUPER_FOLLOWS_SETTINGS' } }),
-        Mi = k.a.create(function (e) {
+        ji = n('n0Rl'),
+        zi = n('q9Zt'),
+        Ii = b.a.hae1c933,
+        Vi = void 0 !== Vr ? Vr : (Vr = n('G8I5')),
+        Mi = Object(ji.b)(Vi, { errorConfig: { context: 'SUPER_FOLLOWS_SETTINGS' } }),
+        Ui = k.a.create(function (e) {
           return { error: { marginHorizontal: e.spaces.space32 } }
         })
       a.default = function () {
-        return o.createElement(Ii, {
+        return o.createElement(Mi, {
           render: function (e) {
             var a,
               n,
@@ -3495,13 +3493,13 @@
                             u.e,
                             null,
                             o.createElement(u.c, { path: '/application' }, o.createElement(Kt, { user: s, viewer: d })),
-                            o.createElement(u.c, { exact: !0, path: '/submitted' }, o.createElement(Ti, null)),
-                            o.createElement(u.c, { exact: !0, path: '/waitlisted' }, o.createElement(Pi, null)),
-                            o.createElement(u.c, { exact: !0, path: '/rejected' }, o.createElement(Oi, null)),
+                            o.createElement(u.c, { exact: !0, path: '/submitted' }, o.createElement(Ri, null)),
+                            o.createElement(u.c, { exact: !0, path: '/waitlisted' }, o.createElement(Ai, null)),
+                            o.createElement(u.c, { exact: !0, path: '/rejected' }, o.createElement(Li, null)),
                             o.createElement(
                               u.c,
                               { path: '/onboarding' },
-                              o.createElement(Fi, { priceOfferings: c, user: s, viewer: d }),
+                              o.createElement(Ci, { priceOfferings: c, user: s, viewer: d }),
                             ),
                             o.createElement(
                               u.c,
@@ -3514,7 +3512,7 @@
                     )
               },
               renderFailure: function () {
-                return o.createElement(Ai.a, { onRetry: i, style: Mi.error, title: ji })
+                return o.createElement(zi.a, { onRetry: i, style: Ui.error, title: Ii })
               },
               retryable: !1,
             })

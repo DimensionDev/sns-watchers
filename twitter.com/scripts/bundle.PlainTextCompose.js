@@ -1118,21 +1118,18 @@
         },
         f = 'rweb/geoLocation/SET_POSITION',
         g = function () {
-          return function (e, t, n) {
-            return n.featureSwitches.isTrue('responsive_web_precise_location_setting_enabled')
-              ? v()
-                  .then(function (t) {
-                    return e({ payload: t, type: f })
-                  })
-                  .catch(function (t) {
-                    return e(h(o.b.denied)), Promise.reject(t)
-                  })
-              : Promise.resolve()
+          return function (e, t) {
+            return v()
+              .then(function (t) {
+                return e({ payload: t, type: f })
+              })
+              .catch(function (t) {
+                return e(h(o.b.denied)), Promise.reject(t)
+              })
           }
         },
         y = function () {
-          return function (e, t, n) {
-            n.featureSwitches
+          return function (e, t) {
             return p(t()) ? Promise.resolve() : e(g())
           }
         },
@@ -3358,8 +3355,7 @@
                   p = !!u,
                   m = !c && !r,
                   h = !c && !i,
-                  f = o.context.featureSwitches.isTrue('responsive_web_precise_location_setting_enabled'),
-                  g = o.context.featureSwitches.isTrue('responsive_web_video_picker')
+                  f = o.context.featureSwitches.isTrue('responsive_web_video_picker')
                 return w.createElement(
                   H.a,
                   { style: bt.toolBar, testID: Rn },
@@ -3371,13 +3367,13 @@
                       mediaAttachDisabled: o.mediaAttachDisabled,
                       onFilesAdded: o._handleFilesAdded,
                       setActiveParentKey: d,
-                      videoPickerEnabled: g,
+                      videoPickerEnabled: f,
                     }),
                     o._renderGifButton(),
                     m ? o._renderPollButton() : null,
                     p ? o._renderEmojiPicker() : null,
                     h ? o._renderSchedulingButton() : null,
-                    f ? o._renderGeoButton() : null,
+                    o._renderGeoButton(),
                   ),
                   w.createElement(
                     H.a,

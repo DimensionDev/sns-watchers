@@ -4821,7 +4821,7 @@
       var c = 425,
         s = o.a.create(function (e) {
           return {
-            container: { columnGap: e.spaces.space8, flexDirection: 'row' },
+            container: { columnGap: e.spacesPx.space8, flexDirection: 'row' },
             inlineContainer: { justifyContent: 'space-between', maxWidth: c },
             blockContainer: {
               alignItems: 'stretch',
@@ -15820,6 +15820,7 @@
                       })
                     : w.createElement(We.a, {
                         displayTextRange: f.display_text_range,
+                        enrichments: f.enrichments,
                         entities: f.entities,
                         excludeCardUrl: r,
                         hitHighlights: o,
@@ -16100,6 +16101,7 @@
                                 userName: e._renderUserName(h.username, h.timestamp),
                                 withBottomLine: K,
                                 withElbow: z ? 'side' === V : void 0,
+                                withFooterGap: !s,
                                 withFullWidthChildren: s || e._isEdgeToEdgeEnabled,
                                 withTopLine: W,
                                 withUnreadStyles: S,
@@ -20409,6 +20411,18 @@
               var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
               return { entityId: e, name: t.name }
             },
+            mapResponseToActions: function (e, t, n) {
+              return function (t) {
+                if (t) {
+                  var r = null == t ? void 0 : t.bookmark_collection_update,
+                    o = Object(d.p)(n())
+                  if (o && e) {
+                    var i = _(o)
+                    return r ? [i.injectItems([r.id])] : null
+                  }
+                }
+              }
+            },
             reducer: function (e, t) {
               var n = t.meta,
                 r = n.entityId,
@@ -20499,7 +20513,7 @@
           }
         },
         C = function (e, t) {
-          return function (n, r) {
+          return function (n) {
             return Promise.resolve(n(Object(s.a)(e).removeTweets(o()({}, t, !0))))
           }
         },
@@ -40225,7 +40239,9 @@
         I = function (e) {
           var t = e.reactionType,
             n = a.b.get(T[t])
-          return o.createElement(S.a, { animation: n || T[t], autoplay: !0, loop: !0 })
+          return (
+            (n && 'boolean' != typeof n) || (n = T[t]), o.createElement(S.a, { animation: n, autoplay: !0, loop: !0 })
+          )
         },
         x = function () {
           var e = window.navigator.deviceMemory
@@ -57271,7 +57287,7 @@
         E = n('cm6r'),
         C = n('DQLs'),
         P = n('rHpw'),
-        k = n('3XMw'),
+        k = (n('uFXj'), n('3XMw')),
         S = n.n(k),
         T = n('cHvH'),
         I = n('wTX1'),
@@ -57279,18 +57295,34 @@
         j = S.a.e8d93005,
         R = P.a.create(function (e) {
           return {
-            count: { paddingHorizontal: e.spaces.space12, minWidth: 'calc(1em + 2 * '.concat(e.spaces.space12, ')') },
+            count: { paddingHorizontal: e.spacesPx.space12, minWidth: 'calc(1em + 2 * '.concat(e.spaces.space12, ')') },
+            narrowCount: {
+              paddingHorizontal: e.spacesPx.space8,
+              minWidth: 'calc(1em + 2 * '.concat(e.spaces.space8, ')'),
+            },
           }
         }),
         D = function (e) {
           var t = e.color,
             n = e.count
           return b.createElement(T.a, null, function (e) {
-            var r = e.windowWidth
+            var r,
+              o = e.windowWidth
             return b.createElement(
               I.a,
-              { color: t, count: n, size: 'subtext2', style: R.count },
-              n > 0 ? (r < 320 ? j(n) : x(n)) : void 0,
+              {
+                color: t,
+                count: n,
+                size: 'subtext2',
+                style: [R.count, ((r = o), r < P.a.theme.breakpoints.small && R.narrowCount)],
+              },
+              n > 0
+                ? (function (e) {
+                    return e < 320
+                  })(o)
+                  ? j(n)
+                  : x(n)
+                : void 0,
             )
           })
         },
@@ -59177,6 +59209,7 @@
                               'https://abs.twimg.com/sticky/animations/reply.downvote.1.json',
                             isFaded: U,
                             onPress: U ? e._handleOpenEducationPrompt(Se.a.Downvote) : e._handleDownvote,
+                            style: (m.likeCount || L.favorite_count || 0) > 0 && P ? En.reduceDownvotePadding : void 0,
                             testIDs: { downvote: Ue.a.downvote, undownvote: Ue.a.undownvote },
                           }),
                         )
@@ -59468,6 +59501,7 @@
         return {
           conversationControlsAnchor: { justifyContent: 'center' },
           inlineCallout: { marginTop: e.spaces.space12 },
+          reduceDownvotePadding: { marginRight: -1 * e.spacesPx.space8 },
         }
       })
     },

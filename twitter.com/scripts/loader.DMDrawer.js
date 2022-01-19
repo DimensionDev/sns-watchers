@@ -3515,7 +3515,7 @@
                   e._renderDMHeader({ icon: At.a, headerText: Kt }),
                   n
                     .map(function (e) {
-                      return e ? r(n)(e) : null
+                      return e ? r({ conversationIds: n })(e) : null
                     })
                     .slice(0, e._groupBucketSize),
                 )
@@ -3531,7 +3531,11 @@
                   e._renderDMHeader({ icon: Ht.a, headerText: Ut }),
                   n
                     .map(function (e) {
-                      return e ? a(r, !0, n)(e) : null
+                      return e
+                        ? (function (e) {
+                            return a({ conversationIds: r, isMessageItem: !0, messageIds: n })(e)
+                          })(e)
+                        : null
                     })
                     .slice(0, e._messagesBucketSize),
                 )
@@ -3546,7 +3550,7 @@
                   e._renderDMHeader({ icon: Bt.a, headerText: Vt }),
                   n
                     .map(function (e) {
-                      return e ? r(n)(e) : null
+                      return e ? r({ conversationIds: n })(e) : null
                     })
                     .slice(0, e._peopleBucketSize),
                 )
@@ -3866,7 +3870,11 @@
               noItemsRenderer: i,
               onNearEnd: h,
               onScrollEnd: c,
-              renderer: s(null == v ? void 0 : v.result, !0, null == _ ? void 0 : _.result),
+              renderer: s({
+                conversationIds: null == v ? void 0 : v.result,
+                isMessageItem: !0,
+                messageIds: null == _ ? void 0 : _.result,
+              }),
               withoutHeadroom: !0,
             })
           )
@@ -4083,7 +4091,7 @@
                 module: o,
                 noItemsRenderer: r,
                 onScrollEnd: n,
-                renderer: a([]),
+                renderer: a({ conversationIds: [] }),
                 withoutHeadroom: !0,
               })
             : r()
@@ -4346,7 +4354,7 @@
                       noItemsRenderer: e._renderRecentSearches,
                       onNearEnd: e._handleNearEnd,
                       onScrollEnd: e._handleScrollEnd,
-                      renderer: r(a),
+                      renderer: r({ conversationIds: a }),
                       withoutHeadroom: !0,
                     }),
                   ),
@@ -4773,7 +4781,7 @@
                         items: n,
                         noItemsRenderer: i,
                         onNearEnd: o._handleNearEnd,
-                        renderer: o._renderInboxItem(n),
+                        renderer: o._renderInboxItem({ conversationIds: n }),
                         withKeyboardShortcuts: !a,
                         withoutHeadroom: !0,
                       })
@@ -4796,27 +4804,31 @@
               b()(c()(o), '_hideRecentSearches', function () {
                 o.setState({ showSearchView: !1, searchQuery: '' })
               }),
-              b()(c()(o), '_renderInboxItem', function (e, t, n) {
-                return function (r, a) {
+              b()(c()(o), '_renderInboxItem', function (e) {
+                var t = e.conversationIds,
+                  n = e.isMessageItem,
+                  r = void 0 !== n && n,
+                  a = e.messageIds
+                return function (e, n) {
                   var l = o.context.loggedInUserId,
                     i = o.props.location,
                     c = o.state.searchQuery,
-                    s = t ? (n || []).indexOf(r) : -1,
-                    u = -1 !== s && null != e && e.length ? e[s] : null,
-                    d = u ? r : '',
-                    p = u || r,
+                    s = r ? (a || []).indexOf(e) : -1,
+                    u = -1 !== s && null != t && t.length ? t[s] : null,
+                    d = u ? e : '',
+                    p = u || e,
                     f = { pathname: '/messages/'.concat(p), state: null == i ? void 0 : i.state },
-                    h = p && null != e && e.length ? e.indexOf(p) : null,
+                    h = p && null != t && t.length ? t.indexOf(p) : null,
                     m = Object(qr.a)(h) ? h + 1 : 0
                   return (
                     Nr()(!!l, 'loggedInUserId must be defined'),
-                    a && a(!0),
+                    n && n(!0),
                     y.createElement(g.a, { exact: !1, path: f.pathname }, function (e) {
                       return y.createElement(kt, {
                         conversationId: p,
                         inboxType: o.props.inboxType,
                         isActive: e,
-                        isMessageItem: t,
+                        isMessageItem: r,
                         key: p,
                         link: f,
                         messageId: d,
