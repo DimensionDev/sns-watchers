@@ -1059,8 +1059,9 @@
                     hoverLabel: { label: j },
                     icon: b.createElement(S.a, null),
                     onPress: e,
+                    size: 'large',
                     style: A.rightButton,
-                    type: 'onMediaText',
+                    type: 'onMediaDominantColorFilled',
                   })
                 },
               },
@@ -1074,8 +1075,9 @@
                     accessibilityLabel: R,
                     icon: b.createElement(I.a, null),
                     onPress: t,
+                    size: 'large',
                     style: n ? A.middleButton : A.rightButton,
-                    type: 'onMediaText',
+                    type: 'onMediaDominantColorFilled',
                   })
                 },
               },
@@ -1096,14 +1098,16 @@
                         accessibilityLabel: r,
                         icon: i,
                         onChange: a,
-                        type: 'onMediaText',
+                        size: 'large',
+                        type: 'onMediaDominantColorFilled',
                       })
                     : b.createElement(O.a, {
                         accessibilityLabel: r,
                         icon: i,
                         onPress: o,
+                        size: 'large',
                         style: A.edit,
-                        type: 'onMediaText',
+                        type: 'onMediaDominantColorFilled',
                       })
                 },
               },
@@ -1636,7 +1640,8 @@
           r = e.location,
           i = r.query,
           s = r.state
-        return null != s && null !== (t = s.input) && void 0 !== t && t.requested_variant
+        return !(null == i || !i.input_flow_data) ||
+          (null != s && null !== (t = s.input) && void 0 !== t && t.requested_variant)
           ? o.createElement(l.a, a()({}, e, { flowName: 'report-flow', ocfModule: c }))
           : (n.replace(location.pathname, { input: { requested_variant: JSON.stringify(f(i)) } }), null)
       }
@@ -2341,7 +2346,7 @@
         _ = n('RqPI'),
         y = n('rxPX'),
         g = Object(y.a)().propsFromState(function () {
-          return { language: _.n }
+          return { language: _.o }
         }),
         k = n('3XMw'),
         w = n.n(k),
@@ -3201,7 +3206,7 @@
         T = function (e) {
           return e.personalization.data.data
         },
-        A = Object(u.createSelector)(s.l, D, c.g, function (e, t, n) {
+        A = Object(u.createSelector)(s.m, D, c.g, function (e, t, n) {
           var r = e ? [x, n] : [j, t],
             o = a()(r, 2),
             i = o[0],
@@ -3344,7 +3349,7 @@
               o = r.featureSwitches
             if (Object(p.a)(e)) return Promise.resolve()
             var u = n(),
-              d = s.l(u),
+              d = s.m(u),
               f = d ? x : j,
               h = Object.keys(e).reduce(function (t, n) {
                 n in f && (t[f[n]] = e[n])
@@ -6162,7 +6167,7 @@
           startLocation: ft.t,
           submitFailed: ft.u,
           targetUserId: St,
-          loginReturnPath: _t.q,
+          loginReturnPath: _t.r,
         }),
         xt = Object(mt.d)(Pt, function (e) {
           var t = e.ocfModule
@@ -8324,34 +8329,86 @@
                   style: Pr.emailTextField,
                 })
               }),
-              _()(u()(r), '_renderDiscoverabilitySetting', function () {
-                var e = r.props,
-                  t = e.onNavigate,
-                  n = e.subtask,
-                  a = e.subtaskId,
-                  o = e.subtaskInputs
-                return n.discoverability_setting
-                  ? y.createElement(Er, {
-                      onNavigate: t,
-                      onSettingToggle: r._handleDiscoverabilitySettingToggle,
-                      settingValue: n.discoverability_setting,
-                      subtaskId: a,
-                      subtaskInputs: o,
+              _()(u()(r), '_getInitialSettingValues', function (e, t, n) {
+                var r
+                return null === (r = e.settings) || void 0 === r
+                  ? void 0
+                  : r.map(function (e) {
+                      var r,
+                        a,
+                        o,
+                        i,
+                        s = e.value_identifier
+                      if (void 0 === s) return {}
+                      var c =
+                        null !==
+                          (r =
+                            null === (a = e.value_data) || void 0 === a || null === (o = a.boolean_data) || void 0 === o
+                              ? void 0
+                              : o.initial_value) &&
+                        void 0 !== r &&
+                        r
+                      return {
+                        valueIdentifier: s,
+                        value: null !== (i = Object(X.e)(n, { key: s, subtask_id: t }, void 0)) && void 0 !== i ? i : c,
+                      }
                     })
-                  : null
               }),
-              _()(u()(r), '_handleDiscoverabilitySettingToggle', function (e) {
-                var t = r.state.discoverabilityValue
-                r.setState({ discoverabilityValue: !t })
+              _()(u()(r), '_toggleSettingValue', function (e) {
+                var t = r.state.settingValues,
+                  n =
+                    null == t
+                      ? void 0
+                      : t.map(function (t) {
+                          return t.valueIdentifier === e ? { valueIdentifier: e, value: !t.value } : t
+                        })
+                r.setState({ settingValues: n })
+              }),
+              _()(u()(r), '_renderSettings', function () {
+                var e,
+                  t,
+                  n = r.props,
+                  a = n.onNavigate,
+                  o = n.subtask,
+                  i = n.subtaskId,
+                  s = n.subtaskInputs
+                return null !==
+                  (e =
+                    null === (t = o.settings) || void 0 === t
+                      ? void 0
+                      : t.map(function (e) {
+                          var t = e.value_identifier
+                          return void 0 === t
+                            ? null
+                            : y.createElement(Er, {
+                                key: t,
+                                onNavigate: a,
+                                onSettingToggle: function () {
+                                  return r._toggleSettingValue(t)
+                                },
+                                settingValue: e,
+                                subtaskId: i,
+                                subtaskInputs: s,
+                              })
+                        })) && void 0 !== e
+                  ? e
+                  : null
               }),
               _()(u()(r), '_handleDoneButtonClick', function () {
                 var e = r.props.subtask,
-                  t = {
-                    discoverability_value: r.state.discoverabilityValue,
+                  t = r.state.settingValues,
+                  n = {
+                    setting_responses:
+                      null == t
+                        ? void 0
+                        : t.map(function (e) {
+                            var t = e.value
+                            return { key: e.valueIdentifier, response_data: { boolean_data: { result: t } } }
+                          }),
                     email: r._getIdentifierValue(),
                     link: e.next_link.link_id,
                   }
-                r._handleButtonClick(e.next_link, t)
+                r._handleButtonClick(e.next_link, n)
               }),
               _()(u()(r), '_handleSkipButtonClick', function () {
                 var e = r.props.subtask
@@ -8376,14 +8433,9 @@
             var a = e.subtask,
               o = e.subtaskId,
               s = e.subtaskInputs,
-              c =
-                a.discoverability_setting &&
-                a.discoverability_setting.value_data &&
-                a.discoverability_setting.value_data.boolean_data &&
-                a.discoverability_setting.value_data.boolean_data.initial_value,
-              l = Object(X.e)(s, { key: 'discoverability_value', subtask_id: o }, void 0) || c,
-              d = Object(X.e)(s, { key: 'email', subtask_id: o }, '') || void 0
-            return (r.state = { discoverabilityValue: l, email: d, isValid: !!d }), r
+              c = Object(X.e)(s, { key: 'email', subtask_id: o }, '') || void 0,
+              l = r._getInitialSettingValues(a, o, s)
+            return (r.state = { email: c, isValid: !!c, settingValues: l }), r
           }
           return (
             c()(n, [
@@ -8440,7 +8492,7 @@
                           ),
                         l && y.createElement(Z, a()({}, l, { color: 'gray700', onNavigate: t, subtaskInputs: i })),
                         y.createElement(J.a, { style: Pr.textFieldArea }, this._renderEmailTextField()),
-                        this._renderDiscoverabilitySetting(),
+                        this._renderSettings(),
                       ),
                     ),
                     this.props.errorDialog,
@@ -8964,36 +9016,90 @@
                   style: Zr.phoneTextField,
                 })
               }),
-              _()(u()(r), '_renderDiscoverabilitySetting', function () {
-                var e = r.props,
-                  t = e.onNavigate,
-                  n = e.subtask,
-                  a = e.subtaskId,
-                  o = e.subtaskInputs
-                return n.discoverability_setting
-                  ? y.createElement(Er, {
-                      onNavigate: t,
-                      onSettingToggle: r._handleDiscoverabilitySettingToggle,
-                      settingValue: n.discoverability_setting,
-                      subtaskId: a,
-                      subtaskInputs: o,
+              _()(u()(r), '_getInitialSettingValues', function (e, t, n) {
+                var r
+                return null === (r = e.settings) || void 0 === r
+                  ? void 0
+                  : r.map(function (e) {
+                      var r,
+                        a,
+                        o,
+                        i,
+                        s = e.value_identifier
+                      if (void 0 === s) return {}
+                      var c =
+                        null !==
+                          (r =
+                            null === (a = e.value_data) || void 0 === a || null === (o = a.boolean_data) || void 0 === o
+                              ? void 0
+                              : o.initial_value) &&
+                        void 0 !== r &&
+                        r
+                      return {
+                        valueIdentifier: s,
+                        value: null !== (i = Object(X.e)(n, { key: s, subtask_id: t }, void 0)) && void 0 !== i ? i : c,
+                      }
                     })
-                  : null
               }),
-              _()(u()(r), '_handleDiscoverabilitySettingToggle', function (e) {
-                var t = r.state.discoverabilityValue
-                r.setState({ discoverabilityValue: !t })
+              _()(u()(r), '_toggleSettingValue', function (e) {
+                var t = r.state.settingValues,
+                  n =
+                    null == t
+                      ? void 0
+                      : t.map(function (t) {
+                          return t.valueIdentifier === e ? { valueIdentifier: e, value: !t.value } : t
+                        })
+                r.setState({ settingValues: n })
+              }),
+              _()(u()(r), '_renderSettings', function () {
+                var e,
+                  t,
+                  n = r.props,
+                  a = n.onNavigate,
+                  o = n.subtask,
+                  i = n.subtaskId,
+                  s = n.subtaskInputs
+                return null !==
+                  (e =
+                    null === (t = o.settings) || void 0 === t
+                      ? void 0
+                      : t.map(function (e) {
+                          var t = e.value_identifier
+                          return void 0 === t
+                            ? null
+                            : y.createElement(Er, {
+                                key: t,
+                                onNavigate: a,
+                                onSettingToggle: function () {
+                                  return r._toggleSettingValue(t)
+                                },
+                                settingValue: e,
+                                subtaskId: i,
+                                subtaskInputs: s,
+                              })
+                        })) && void 0 !== e
+                  ? e
+                  : null
               }),
               _()(u()(r), '_handleDoneButtonClick', function () {
                 var e = r.props.subtask,
                   t = r.state,
-                  n = {
-                    country_code: t.countryCode,
-                    discoverability_value: t.discoverabilityValue,
+                  n = t.countryCode,
+                  a = t.settingValues,
+                  o =
+                    null == a
+                      ? void 0
+                      : a.map(function (e) {
+                          var t = e.value
+                          return { key: e.valueIdentifier, response_data: { boolean_data: { result: t } } }
+                        }),
+                  i = {
+                    country_code: n,
                     phone_number: r._getIdentifierValue(),
+                    setting_responses: o,
                     link: e.next_link.link_id,
                   }
-                r._handleButtonClick(e.next_link, n)
+                r._handleButtonClick(e.next_link, i)
               }),
               _()(u()(r), '_handleSkipButtonClick', function () {
                 var e = r.props.subtask
@@ -9018,15 +9124,10 @@
             var a = e.subtask,
               o = e.subtaskId,
               s = e.subtaskInputs,
-              c =
-                a.discoverability_setting &&
-                a.discoverability_setting.value_data &&
-                a.discoverability_setting.value_data.boolean_data &&
-                a.discoverability_setting.value_data.boolean_data.initial_value,
-              l = Object(X.e)(s, { key: 'country_code', subtask_id: o }, a.default_country_code) || void 0,
-              d = Object(X.e)(s, { key: 'discoverability_value', subtask_id: o }, void 0) || c,
-              p = Object(X.e)(s, { key: 'phone_number', subtask_id: o }, '') || void 0
-            return (r.state = { countryCode: l, discoverabilityValue: d, phoneNumber: p, isValid: !!p }), r
+              c = Object(X.e)(s, { key: 'country_code', subtask_id: o }, a.default_country_code) || void 0,
+              l = Object(X.e)(s, { key: 'phone_number', subtask_id: o }, '') || void 0,
+              d = r._getInitialSettingValues(a, o, s)
+            return (r.state = { countryCode: c, phoneNumber: l, isValid: !!l, settingValues: d }), r
           }
           return (
             c()(n, [
@@ -9088,7 +9189,7 @@
                           this._renderCountryCodes(),
                           this._renderPhoneTextField(),
                         ),
-                        this._renderDiscoverabilitySetting(),
+                        this._renderSettings(),
                       ),
                     ),
                     this.props.errorDialog,
@@ -12420,12 +12521,9 @@
                   { style: zi.qrCode },
                   y.createElement('canvas', {
                     ref: function (t) {
-                      var n,
-                        r = e.subtask,
-                        a = (null === (n = r.header.user_caption) || void 0 === n ? void 0 : n.text) || '',
-                        o = 'otpauth://totp/Twitter:'.concat(a, '?secret=').concat(r.code, '&issuer=Twitter')
+                      var n = e.subtask.code
                       Mi().then(function (e) {
-                        t && e.toCanvas(t, o, { margin: 0, scale: 5 })
+                        t && e.toCanvas(t, n, { margin: 5, scale: 5 })
                       })
                     },
                   }),
@@ -15717,8 +15815,8 @@
           return {
             personalizationPreferences: r.selectPreferences,
             personalizationSettings: r.selectUserPreferences,
-            ssoInitTokens: i.t,
-            userLanguage: i.n,
+            ssoInitTokens: i.u,
+            userLanguage: i.o,
           }
         })
         .adjustStateProps(function (e) {
@@ -15734,7 +15832,7 @@
           }
         })
         .propsFromActions(function () {
-          return { addToast: a.b, fetchSsoInitToken: i.d }
+          return { addToast: a.b, fetchSsoInitToken: i.e }
         })
         .withAnalytics()
     },

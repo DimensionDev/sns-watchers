@@ -284,7 +284,7 @@
       })
       var r = n('AQ79'),
         a = function (e, t) {
-          return e[r.b] ? e[r.b].conversations[t] : null
+          return e[r.c] ? e[r.c].conversations[t] : null
         }
     },
     XnpN: function (e, t, n) {

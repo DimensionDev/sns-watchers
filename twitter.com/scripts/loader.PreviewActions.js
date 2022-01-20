@@ -3,21 +3,21 @@
   {
     WOwf: function (e, t, n) {
       'use strict'
-      function r(e, t) {
+      function i(e, t) {
         return Math.min(1, 1 - e / t)
       }
       n.d(t, 'a', function () {
-        return r
+        return i
       })
     },
     aRdY: function (e, t, n) {
       'use strict'
-      var r = n('ERkP'),
-        i = n('WOwf'),
+      var i = n('ERkP'),
+        r = n('WOwf'),
         a = n('k6Ei'),
         o = n('rHpw'),
-        s = n('MWbm'),
-        u = o.a.create(function (e) {
+        u = n('MWbm'),
+        s = o.a.create(function (e) {
           e.colors
           return {
             root: { alignItems: 'flex-start', minHeight: 30, minWidth: 30, justifyContent: 'center', margin: 'auto' },
@@ -28,17 +28,17 @@
         var t = e.accessibilityLabel,
           n = e.count,
           o = e.maxCount,
-          c = o - n,
-          l = Object(i.a)(c, o),
-          d = r.createElement(a.a, {
+          l = o - n,
+          c = Object(r.a)(l, o),
+          d = i.createElement(a.a, {
             accessibilityLabel: t,
             color: 'primary',
-            progress: l,
+            progress: c,
             size: 20,
             strokeWidth: 'thick',
-            style: u.progressCircle,
+            style: s.progressCircle,
           })
-        return r.createElement(s.a, { style: u.root }, d)
+        return i.createElement(u.a, { style: s.root }, d)
       }
     },
     mL9d: function (e, t, n) {
@@ -47,37 +47,44 @@
         n.d(t, 'PreviewActions', function () {
           return S
         })
-      var r = n('ddV6'),
-        i = n.n(r),
+      var i = n('ddV6'),
+        r = n.n(i),
         a = (n('uFXj'), n('ERkP')),
         o = n('qlwE'),
-        s = n('rxPX'),
-        u = n('5oBF'),
-        c = Object(s.a)()
+        u = n('rxPX'),
+        s = n('5oBF'),
+        l = Object(u.a)()
           .propsFromState(function () {
-            return { previewTweet: u.d, undoTweetSettings: o.p }
+            return { previewTweet: s.d, undoTweetSettings: o.p }
           })
           .adjustStateProps(function (e) {
             var t,
-              n = e.previewTweet,
+              n,
+              i = e.previewTweet,
               r = e.undoTweetSettings,
-              i = null == n ? void 0 : n.timeToSend,
-              a = null == n || null === (t = n.previewData) || void 0 === t ? void 0 : t.inReplyToStatus,
-              o = r.durationSecs || u.a
-            return { timeToSend: i, inReplyToStatusId: null == a ? void 0 : a.id_str, undoPeriod: o }
+              a = null == i ? void 0 : i.timeToSend,
+              o = null == i || null === (t = i.previewData) || void 0 === t ? void 0 : t.communityIdValue,
+              u = null == i || null === (n = i.previewData) || void 0 === n ? void 0 : n.inReplyToStatus,
+              l = r.durationSecs || s.a
+            return {
+              timeToSend: a,
+              inReplyToStatusId: null == u ? void 0 : u.id_str,
+              undoPeriod: l,
+              communityIdValue: o,
+            }
           })
           .propsFromActions(function () {
-            return { undoTweet: u.h, sendNow: u.g }
+            return { undoTweet: s.h, sendNow: s.g }
           })
           .withAnalytics({ page: 'undo_tweet_details', section: 'timeline' }),
-        l = n('3XMw'),
-        d = n.n(l)
+        c = n('3XMw'),
+        d = n.n(c)
       var p = n('Ty5D'),
         m = n('MWbm'),
         w = n('t62R'),
         f = n('aRdY'),
-        b = n('/yvb'),
-        y = n('rHpw'),
+        y = n('/yvb'),
+        b = n('rHpw'),
         v = d.a.bc2ceaf2,
         g = d.a.gf5e9ea6,
         h = d.a.j4c40da3,
@@ -85,64 +92,65 @@
         S = function (e) {
           var t = Object(p.g)(),
             n = e.analytics,
-            r = e.inReplyToStatusId,
-            o = e.previewTweetId,
+            i = e.communityIdValue,
+            o = e.inReplyToStatusId,
+            u = e.previewTweetId,
             s = e.sendNow,
-            u = e.timeToSend,
+            l = e.timeToSend,
             c = e.undoPeriod,
-            l = e.undoTweet,
-            d = a.useState(0),
-            y = i()(d, 2),
-            S = y[0],
-            W = y[1],
-            x = a.useState(),
-            _ = i()(x, 2),
-            R = _[0],
-            C = _[1],
-            j = a.useState(!1),
-            k = i()(j, 2),
-            D = k[0],
-            F = k[1]
+            d = e.undoTweet,
+            b = a.useState(0),
+            S = r()(b, 2),
+            W = S[0],
+            x = S[1],
+            _ = a.useState(),
+            C = r()(_, 2),
+            I = C[0],
+            R = C[1],
+            D = a.useState(!1),
+            j = r()(D, 2),
+            k = j[0],
+            F = j[1]
           a.useEffect(
             function () {
-              'number' == typeof u && W(Math.round(u - Date.now()))
+              'number' == typeof l && x(Math.round(l - Date.now()))
             },
-            [u],
+            [l],
           )
           var L = (function (e) {
             var t = a.useState(0),
-              n = i()(t, 2),
-              r = n[0],
+              n = r()(t, 2),
+              i = n[0],
               o = n[1],
-              s = a.useRef()
+              u = a.useRef()
             return (
               a.useEffect(
                 function () {
                   var t = Date.now()
                   return (
-                    (s.current = window.requestAnimationFrame(function n() {
-                      var r = Math.min(1, (Date.now() - t) / e)
-                      r < 1 && (o(r), (s.current = window.requestAnimationFrame(n)))
+                    (u.current = window.requestAnimationFrame(function n() {
+                      var i = Math.min(1, (Date.now() - t) / e)
+                      i < 1 && (o(i), (u.current = window.requestAnimationFrame(n)))
                     })),
                     function () {
-                      window.cancelAnimationFrame(s.current)
+                      window.cancelAnimationFrame(u.current)
                     }
                   )
                 },
                 [e],
               ),
-              r
+              i
             )
-          })(S)
-          if (S <= 0 || !S) return null
-          return 'number' != typeof u
+          })(W)
+          if (W <= 0 || !W) return null
+          return 'number' != typeof l
             ? null
             : a.createElement(
                 m.a,
                 {
                   onLayout: function (e) {
                     var t, n
-                    C(
+                    R(
                       (null == e ||
                       null === (t = e.nativeEvent) ||
                       void 0 === t ||
@@ -162,22 +170,22 @@
                     { style: E.timerWrapper },
                     a.createElement(f.a, { accessibilityLabel: T, count: L, maxCount: 1 }),
                   ),
-                  !R || R < 470 ? null : a.createElement(w.b, { style: E.sendingLabel, weight: 'bold' }, v),
+                  !I || I < 470 ? null : a.createElement(w.b, { style: E.sendingLabel, weight: 'bold' }, v),
                 ),
                 a.createElement(
                   m.a,
                   { style: E.buttonWrapper },
                   a.createElement(
-                    b.a,
+                    y.a,
                     {
-                      disabled: D,
+                      disabled: k,
                       onClick: function () {
-                        s(o),
+                        s(u),
                           F(!0),
                           n.scribe({
                             element: 'send_now',
                             action: 'send_now',
-                            data: { subscription_details: { draft_id: o, undo_period: c } },
+                            data: { subscription_details: { draft_id: u, undo_period: c } },
                           })
                       },
                       size: 'xSmall',
@@ -187,16 +195,19 @@
                     h,
                   ),
                   a.createElement(
-                    b.a,
+                    y.a,
                     {
                       onClick: function () {
                         n.scribe({
                           element: 'undo_tweet',
                           action: 'undo',
-                          data: { subscription_details: { draft_id: o, undo_period: c } },
+                          data: { subscription_details: { draft_id: u, undo_period: c } },
                         }),
-                          l(o),
-                          t.push({ pathname: '/compose/tweet', state: { previewTweetId: o, inReplyToStatusId: r } })
+                          d(u),
+                          t.push({
+                            pathname: '/compose/tweet',
+                            state: { previewTweetId: u, inReplyToStatusId: o, selectedCommunityId: i },
+                          })
                       },
                       size: 'xSmall',
                       type: 'brandFilled',
@@ -206,7 +217,7 @@
                 ),
               )
         },
-        E = y.a.create(function (e) {
+        E = b.a.create(function (e) {
           return {
             root: {
               marginTop: e.spaces.space12,
@@ -223,7 +234,7 @@
             buttonWrapper: { display: 'flex', flexDirection: 'row' },
           }
         }),
-        W = c(S)
+        W = l(S)
       t.default = W
     },
   },

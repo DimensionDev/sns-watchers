@@ -38,7 +38,7 @@
         },
         g = Object(N.a)()
           .propsFromState(function () {
-            return { screenName: I, user: C, loggedInUserId: M.p }
+            return { screenName: I, user: C, loggedInUserId: M.q }
           })
           .adjustStateProps(function (e) {
             var t = e.loggedInUserId,

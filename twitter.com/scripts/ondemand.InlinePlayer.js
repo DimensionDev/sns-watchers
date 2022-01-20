@@ -52,7 +52,7 @@
         },
         j = Object(R.a)()
           .propsFromState(function () {
-            return { dataSaverMode: w.c, language: C.n, sourceTweet: O.a.createHydratedTweetSelector(T) }
+            return { dataSaverMode: w.c, language: C.o, sourceTweet: O.a.createHydratedTweetSelector(T) }
           })
           .adjustStateProps(function (e) {
             var t = e.dataSaverMode,

@@ -108,18 +108,18 @@
         var a = e.wordWidths
         return t.createElement(
           d.a,
-          { style: U.root },
-          t.createElement(T.a, { ratio: 1, style: U.mockUserAvatar }),
+          { style: D.root },
+          t.createElement(T.a, { ratio: 1, style: D.mockUserAvatar }),
           t.createElement(
             d.a,
-            { style: U.mockTweetContent },
+            { style: D.mockTweetContent },
             t.createElement(
               d.a,
-              { style: U.mockUserNameContainer },
+              { style: D.mockUserNameContainer },
               t.createElement(g.a, {
                 color: 'text',
                 maxWidthPx: 18,
-                style: U.mockUserNameMarginRight,
+                style: D.mockUserNameMarginRight,
                 wordHeightPx: 3,
                 wordPercentWidths: [100],
               }),
@@ -138,7 +138,7 @@
       var B,
         P,
         W,
-        D = p.a.create(function (e) {
+        U = p.a.create(function (e) {
           return {
             root: {
               alignItems: 'center',
@@ -186,7 +186,7 @@
             },
           }
         }),
-        U = p.a.create(function (e) {
+        D = p.a.create(function (e) {
           return {
             root: { flexDirection: 'row', marginBottom: e.spaces.space8, padding: e.spaces.space16, width: '100%' },
             mockUserAvatar: {
@@ -206,7 +206,7 @@
             mockUserNameMarginRight: { marginRight: e.spaces.space4 },
           }
         }),
-        I = function (e) {
+        N = function (e) {
           var a = e.style,
             l = e.viewer,
             n = K()(C, l),
@@ -219,23 +219,23 @@
           return i && c && s
             ? t.createElement(
                 d.a,
-                { style: [D.root, a] },
+                { style: [U.root, a] },
                 t.createElement(
                   d.a,
-                  { style: D.mockBackgroundTweets },
+                  { style: U.mockBackgroundTweets },
                   t.createElement(L, { wordWidths: R.backgroundTopTweet }),
                   t.createElement(L, { wordWidths: R.backgroundBottomTweet }),
                 ),
                 t.createElement(
                   d.a,
-                  { style: D.mockFocalTweetContainer },
+                  { style: U.mockFocalTweetContainer },
                   t.createElement(
                     d.a,
-                    { style: D.mockFocalTweet },
+                    { style: U.mockFocalTweet },
                     t.createElement(d.a, null, t.createElement(_.a, { focusable: !1, size: 'xLarge', uri: s })),
                     t.createElement(
                       d.a,
-                      { style: D.mockFocalTweetContent },
+                      { style: U.mockFocalTweetContent },
                       t.createElement(E.a, {
                         isProtected: o,
                         isVerified: u,
@@ -246,11 +246,11 @@
                       }),
                       t.createElement(
                         d.a,
-                        { style: D.superFollowIndicatorContainer },
+                        { style: U.superFollowIndicatorContainer },
                         t.createElement(S.a, { type: 'superFollower' }),
                       ),
                       t.createElement(g.a, {
-                        style: D.mockBodyCopy,
+                        style: U.mockBodyCopy,
                         withBorderRadius: !0,
                         wordPercentWidths: R.focalPointTweet,
                       }),
@@ -260,8 +260,8 @@
               )
             : null
         },
-        N = l('v//M'),
-        j = l('VTDR'),
+        j = l('v//M'),
+        I = l('VTDR'),
         H = l('9VLy'),
         z = function (e) {
           var a = e.style
@@ -380,12 +380,12 @@
               return t.createElement(
                 t.Fragment,
                 null,
-                t.createElement(M.a, { creatorIntro: y, image: u, name: i }),
+                t.createElement(M.a, { imageUrl: u, name: i, value: y }),
                 t.createElement(V, { description: f || void 0, style: ne.titleDescription, title: k || q }),
                 t.createElement(H.a, { style: ne.signature, user: o }),
                 t.createElement(F, { style: ne.demoTweet }),
                 t.createElement(V, { description: J, style: ne.titleDescription, title: $ }),
-                c ? t.createElement(I, { style: [ne.demoTweet, ne.demoVIPTweetMarginTop], viewer: c }) : null,
+                c ? t.createElement(N, { style: [ne.demoTweet, ne.demoVIPTweetMarginTop], viewer: c }) : null,
                 t.createElement(z, { style: ne.disclaimer }),
                 t.createElement(
                   d.a,
@@ -425,8 +425,8 @@
                 type: 'full',
                 withMask: !0,
               },
-              t.createElement(j.a, null),
-              t.createElement(N.a, { fetchStatus: a, onRequestRetry: l, render: g, renderFailure: y, retryable: !1 }),
+              t.createElement(I.a, null),
+              t.createElement(j.a, { fetchStatus: a, onRequestRetry: l, render: g, renderFailure: y, retryable: !1 }),
             )
           })
         },

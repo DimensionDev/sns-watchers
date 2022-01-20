@@ -237,7 +237,7 @@
             ? t.map(function (e, t) {
                 return r.createElement(
                   l.a,
-                  { accessibilityLabel: e.accessibilityLabel, key: t, style: _.subTextListItem },
+                  { accessibilityLabel: e.accessibilityLabel, key: t, style: [_.subTextListItem, e.style] },
                   e.icon,
                   r.createElement(
                     c.b,

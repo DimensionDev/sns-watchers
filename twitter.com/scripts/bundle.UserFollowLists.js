@@ -51,7 +51,7 @@
           function (e, o) {
             return O.e.selectFetchStatusByScreenName(e, S(0, o))
           },
-          N.k,
+          N.l,
           function (e, o) {
             return o.match.params.followersSubroute
           },
@@ -59,7 +59,7 @@
           function (e, o) {
             return O.e.selectByScreenName(e, S(0, o))
           },
-          N.p,
+          N.q,
           k,
           function (e, o, r, t, n, l, a) {
             return {
@@ -109,10 +109,10 @@
         Q = r('7wqI'),
         T = r('GOQE'),
         W = r('v//M'),
-        x = r('oQhu'),
-        H = r('yoO3'),
-        M = r('txMZ'),
-        q = r('5FtR'),
+        q = r('oQhu'),
+        x = r('yoO3'),
+        H = r('txMZ'),
+        M = r('5FtR'),
         B = r('fTQJ'),
         Y = r('VS6U'),
         J = r('v6aA'),
@@ -245,10 +245,10 @@
             })
           },
         },
-        se = Object(x.a)(function (e, o) {
+        se = Object(q.a)(function (e, o) {
           return e && ce[o](e)
         }),
-        ue = Object(x.a)(function (e, o, r, t) {
+        ue = Object(q.a)(function (e, o, r, t) {
           return function () {
             var n = o === e,
               l = n && 'following' === t ? ee : void 0,
@@ -351,10 +351,10 @@
                     ]
                   return w
                     ? y.createElement(
-                        M.a,
+                        H.a,
                         { scribeSection: a, userId: s && s.id_str },
                         y.createElement(
-                          H.a,
+                          x.a,
                           null,
                           y.createElement(Y.a, {
                             backLocation: '/'.concat(c),
@@ -373,7 +373,7 @@
                           }),
                         ),
                       )
-                    : y.createElement(q.a, { to: '/'.concat(c) })
+                    : y.createElement(M.a, { to: '/'.concat(c) })
                 },
               },
               {

@@ -288,7 +288,7 @@
         P = n('rxPX'),
         R = n('0KEI'),
         U = function (e) {
-          var t = Object(D.p)(e)
+          var t = Object(D.q)(e)
           return t
             ? (function (e, t) {
                 var n,
@@ -306,7 +306,7 @@
             : void 0
         },
         L = function (e) {
-          var t = Object(D.p)(e)
+          var t = Object(D.q)(e)
           return t
             ? (function (e, t) {
                 var n
@@ -316,7 +316,7 @@
         },
         x = Object(P.a)()
           .propsFromState(function () {
-            return { facepileUrls: U, count: L, userId: D.p, safetyModeSettings: j.c }
+            return { facepileUrls: U, count: L, userId: D.q, safetyModeSettings: j.c }
           })
           .adjustStateProps(function (e) {
             var t = e.count,
@@ -341,10 +341,10 @@
         N = n('OsOl'),
         B = n('7JQg'),
         z = n('855f'),
-        W = n('t62R'),
-        Q = n('cHvH'),
-        Y = n('Wd7d'),
-        q = n('MAI/'),
+        q = n('t62R'),
+        W = n('cHvH'),
+        Q = n('Wd7d'),
+        Y = n('MAI/'),
         K = n('/yvb'),
         V = n('rHpw'),
         X = n('3XMw'),
@@ -423,7 +423,7 @@
                     n = t.count,
                     r = t.facepileUrls,
                     a = t.history
-                  return g.createElement(Q.a, null, function (t) {
+                  return g.createElement(W.a, null, function (t) {
                     var o,
                       c = t.screenWidth
                     return g.createElement(
@@ -434,24 +434,24 @@
                         { history: a, onBackClick: e._handleBackClick, withBottomBorder: !1 },
                         g.createElement(
                           $.a,
-                          { style: Y.a.isNarrowScreenWidth(c) ? le.narrowScreen : le.wideScreen },
+                          { style: Q.a.isNarrowScreenWidth(c) ? le.narrowScreen : le.wideScreen },
                           g.createElement(Z.a, { accessibilityLabel: '', source: G, style: le.image }),
                           g.createElement(
                             $.a,
                             { style: le.header },
-                            g.createElement(W.b, { size: 'title2', weight: 'heavy' }, ne),
+                            g.createElement(q.b, { size: 'title2', weight: 'heavy' }, ne),
                           ),
                           r && n
                             ? g.createElement(
                                 g.Fragment,
                                 null,
-                                g.createElement(q.a, {
+                                g.createElement(Y.a, {
                                   style: le.facepile,
                                   userAvatarSize: 'large',
                                   userAvatarUrls: r,
                                 }),
                                 g.createElement(
-                                  W.b,
+                                  q.b,
                                   { style: le.description },
                                   (function (e) {
                                     return e <= 10
@@ -460,13 +460,13 @@
                                   })(n),
                                 ),
                                 g.createElement(
-                                  W.b,
+                                  q.b,
                                   null,
                                   g.createElement(
                                     J.a.I18NFormatMessage,
                                     { $i18n: 'f81ca1f4' },
                                     g.createElement(
-                                      W.b,
+                                      q.b,
                                       { link: '/i/safety_mode/flagged_accounts', size: 'body', weight: 'bold' },
                                       J.a.ac9bde9a,
                                     ),
@@ -478,7 +478,7 @@
                           g.createElement(
                             $.a,
                             { style: le.header },
-                            g.createElement(W.b, { size: 'title3', weight: 'heavy' }, ce),
+                            g.createElement(q.b, { size: 'title3', weight: 'heavy' }, ce),
                           ),
                           g.createElement(N.a, { withBorder: !0 }),
                           g.createElement(
@@ -486,13 +486,13 @@
                             { style: le.link },
                             ((o = e._handleScribeOnClick),
                             g.createElement(
-                              W.b,
+                              q.b,
                               null,
                               g.createElement(
                                 J.a.I18NFormatMessage,
                                 { $i18n: 'j449c95b' },
                                 g.createElement(
-                                  W.b,
+                                  q.b,
                                   {
                                     color: 'normal',
                                     link: '/settings/safety_mode/about',
@@ -514,7 +514,7 @@
                               re,
                             ),
                           ),
-                          g.createElement(W.b, { style: le.description }, ie),
+                          g.createElement(q.b, { style: le.description }, ie),
                         ),
                       ),
                     )
@@ -666,7 +666,7 @@
           return function (t, n, r) {
             var a = r.api,
               o = n(),
-              c = { userId: Object(i.p)(o) || '', duration: e }
+              c = { userId: Object(i.q)(o) || '', duration: e }
             return Object(s.c)(t, { params: c, request: a.SettingsGraphQL.updateSafetyModeSettings })({
               actionTypes: f,
               context: 'UPDATE_SAFETY_MODE_SETTINGS',

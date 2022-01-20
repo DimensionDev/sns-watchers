@@ -23,7 +23,7 @@
           .propsFromState(function () {
             return {
               settings: s.selectUserPreferences,
-              isEUUser: Object(d.createSelector)(l.l, u.g, s.selectPreferences, function (e, t, r) {
+              isEUUser: Object(d.createSelector)(l.m, u.g, s.selectPreferences, function (e, t, r) {
                 return !(!t.settings_metadata || !t.settings_metadata.is_eu) || r.is_eu_country
               }),
             }
@@ -426,12 +426,12 @@
         i = r('0KEI'),
         s = r('FDFL'),
         l = function (e) {
-          var t = Object(c.n)(e)
+          var t = Object(c.o)(e)
           return t && Object(s.b)(e, t)
         },
         u = Object(o.a)()
           .propsFromState(function () {
-            return { languageName: l, languageCode: c.n }
+            return { languageName: l, languageCode: c.o }
           })
           .propsFromActions(function () {
             return {
@@ -2354,7 +2354,7 @@
         L = function (e) {
           return e.personalization.data.data
         },
-        F = Object(u.createSelector)(i.l, A, s.g, function (e, t, r) {
+        F = Object(u.createSelector)(i.m, A, s.g, function (e, t, r) {
           var n = e ? [C, r] : [D, t],
             c = a()(n, 2),
             o = c[0],
@@ -2497,7 +2497,7 @@
               c = n.featureSwitches
             if (Object(f.a)(e)) return Promise.resolve()
             var u = r(),
-              d = i.l(u),
+              d = i.m(u),
               p = d ? C : D,
               b = Object.keys(e).reduce(function (t, r) {
                 r in p && (t[p[r]] = e[r])
@@ -2812,13 +2812,13 @@
         i = r('ERkP'),
         s = r('v6aA'),
         l = r('P1r1'),
-        u = r('RqPI'),
+        u = r('li/m'),
         d = r('G6rE'),
         f = r('rxPX'),
         p = r('0KEI'),
         b = Object(f.a)()
           .propsFromState(function () {
-            return { settings: l.g, hasCommunityMemberships: u.j }
+            return { settings: l.g, hasCommunityMemberships: u.d }
           })
           .adjustStateProps(function (e) {
             var t = e.hasCommunityMemberships,
@@ -6122,7 +6122,7 @@
           return function (t, r, n) {
             var a = n.api,
               c = r(),
-              o = { userId: Object(i.p)(c) || '', duration: e }
+              o = { userId: Object(i.q)(c) || '', duration: e }
             return Object(s.c)(t, { params: o, request: a.SettingsGraphQL.updateSafetyModeSettings })({
               actionTypes: f,
               context: 'UPDATE_SAFETY_MODE_SETTINGS',

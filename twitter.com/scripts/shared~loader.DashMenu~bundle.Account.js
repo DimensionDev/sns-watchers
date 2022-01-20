@@ -337,17 +337,18 @@
         v = r('xQWt'),
         y = r('RqPI'),
         O = r('P1r1'),
-        w = r('G6rE'),
-        g = r('rxPX'),
-        k = r('0KEI'),
-        j = Object(g.a)()
+        w = r('li/m'),
+        g = r('G6rE'),
+        k = r('rxPX'),
+        j = r('0KEI'),
+        C = Object(k.a)()
           .propsFromState(function () {
             return {
-              communitiesActions: y.e,
-              hasCommunityMemberships: y.j,
+              communitiesActions: y.f,
+              hasCommunityMemberships: w.d,
               pendingFollowersInfo: v.f,
-              loggedInUser: w.e.selectLoggedInUser,
-              userFeatures: y.o,
+              loggedInUser: g.e.selectLoggedInUser,
+              userFeatures: y.p,
               settings: O.g,
             }
           })
@@ -372,23 +373,23 @@
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(k.createLocalApiErrorHandlerWithContextFactory)('DASH_MENU_CONTAINER'),
+              createLocalApiErrorHandler: Object(j.createLocalApiErrorHandlerWithContextFactory)('DASH_MENU_CONTAINER'),
               fetchPendingFollowersIfNeeded: v.d,
               updateDataSaverMode: O.J,
             }
           })
           .withAnalytics(),
-        C = r('45mF'),
-        E = (r('hBvt'), r('3XMw')),
-        P = r.n(E),
-        I = r('45lU'),
-        S = r('MWbm'),
-        M = r('htQn'),
-        D = r('t62R'),
-        x = r('Znyr'),
-        L = P.a.d86bbf0f,
-        z = P.a.h6beb5fa,
-        H = function (e) {
+        E = r('45mF'),
+        P = (r('hBvt'), r('3XMw')),
+        I = r.n(P),
+        S = r('45lU'),
+        M = r('MWbm'),
+        D = r('htQn'),
+        x = r('t62R'),
+        L = r('Znyr'),
+        z = I.a.d86bbf0f,
+        H = I.a.h6beb5fa,
+        T = function (e) {
           var t = e.badgeCount,
             r = e.icon,
             n = e.iconColor,
@@ -398,25 +399,25 @@
             a = e.rightControl,
             l = e.testID
           return _.createElement(
-            S.a,
-            { style: I.a.dashMenuItem },
+            M.a,
+            { style: S.a.dashMenuItem },
             _.createElement(
-              M.a,
-              { link: i, onClick: o, style: I.a.link, testID: l },
+              D.a,
+              { link: i, onClick: o, style: S.a.link, testID: l },
               _.createElement(
-                S.a,
-                { style: I.a.item },
-                r ? _.createElement(r, { style: n ? [I.a.icon, { color: n }] : I.a.icon }) : null,
-                _.createElement(D.b, { color: 'normal', numberOfLines: 1, style: I.a.itemLabel }, c),
+                M.a,
+                { style: S.a.item },
+                r ? _.createElement(r, { style: n ? [S.a.icon, { color: n }] : S.a.icon }) : null,
+                _.createElement(x.b, { color: 'normal', numberOfLines: 1, style: S.a.itemLabel }, c),
                 t
                   ? _.createElement(
-                      S.a,
-                      { style: I.a.itemAccessory },
-                      _.createElement(x.a, {
+                      M.a,
+                      { style: S.a.itemAccessory },
+                      _.createElement(L.a, {
                         count: t,
                         standalone: !0,
-                        truncatedCountFormatter: z,
-                        unreadCountLabel: L,
+                        truncatedCountFormatter: H,
+                        unreadCountLabel: z,
                       }),
                     )
                   : null,
@@ -425,12 +426,12 @@
             a,
           )
         },
-        T = r('3Wr5'),
-        B = r('Ig1G'),
-        F = r('rHpw'),
-        A = r('Lsrn'),
-        R = r('k/Ka')
-      function N(e, t) {
+        B = r('3Wr5'),
+        F = r('Ig1G'),
+        A = r('rHpw'),
+        R = r('Lsrn'),
+        N = r('k/Ka')
+      function K(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -442,29 +443,29 @@
         }
         return r
       }
-      function K(e) {
+      function V(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? N(Object(r), !0).forEach(function (t) {
+            ? K(Object(r), !0).forEach(function (t) {
                 f()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : N(Object(r)).forEach(function (t) {
+            : K(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var V = function () {
+      var W = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(R.a)(
+        return Object(N.a)(
           'svg',
-          K(
-            K({}, e),
+          V(
+            V({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [A.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [R.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           _.createElement(
             'g',
@@ -478,9 +479,9 @@
           ),
         )
       }
-      V.metadata = { width: 24, height: 24 }
-      var W = V
-      function q(e, t) {
+      W.metadata = { width: 24, height: 24 }
+      var q = W
+      function U(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -492,29 +493,29 @@
         }
         return r
       }
-      function U(e) {
+      function G(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? q(Object(r), !0).forEach(function (t) {
+            ? U(Object(r), !0).forEach(function (t) {
                 f()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : q(Object(r)).forEach(function (t) {
+            : U(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var G = function () {
+      var Z = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(R.a)(
+        return Object(N.a)(
           'svg',
-          U(
-            U({}, e),
+          G(
+            G({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [A.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [R.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           _.createElement(
             'g',
@@ -525,40 +526,40 @@
           ),
         )
       }
-      G.metadata = { width: 24, height: 24 }
-      var Z = G,
-        X = F.a.create(function (e) {
+      Z.metadata = { width: 24, height: 24 }
+      var X = Z,
+        J = A.a.create(function (e) {
           return { bristles: { color: e.colors.primary, position: 'absolute', top: 0, left: 0 } }
         }),
-        J = function (e) {
+        Y = function (e) {
           var t = e.style
           return _.createElement(
-            S.a,
+            M.a,
             { accessibilityRole: 'none' },
-            _.createElement(W, { style: t }),
-            _.createElement(Z, { style: [t, X.bristles] }),
+            _.createElement(q, { style: t }),
+            _.createElement(X, { style: [t, J.bristles] }),
           )
         },
-        Y = r('fs1G'),
-        Q = r('Es6L'),
-        $ = r('9qNn'),
-        ee = r('aITJ'),
-        te = r('TnY3'),
-        re = r('v6aA'),
-        ne = r('CK8+'),
-        ce = r('OOKO'),
-        ie = r('boUI'),
-        oe = r('+1/s'),
-        ae = r('EweD'),
-        le = r('sUoZ'),
-        se = r('/WPq'),
-        ue = r('OGrp'),
-        de = r('5VjN'),
-        he = r('2lds'),
-        me = r('78ol'),
-        be = r('Q3sg'),
-        pe = r('PU7B')
-      function fe(e, t) {
+        Q = r('fs1G'),
+        $ = r('Es6L'),
+        ee = r('9qNn'),
+        te = r('aITJ'),
+        re = r('TnY3'),
+        ne = r('v6aA'),
+        ce = r('CK8+'),
+        ie = r('OOKO'),
+        oe = r('boUI'),
+        ae = r('+1/s'),
+        le = r('EweD'),
+        se = r('sUoZ'),
+        ue = r('/WPq'),
+        de = r('OGrp'),
+        he = r('5VjN'),
+        me = r('2lds'),
+        be = r('78ol'),
+        pe = r('Q3sg'),
+        fe = r('PU7B')
+      function _e(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -570,29 +571,29 @@
         }
         return r
       }
-      function _e(e) {
+      function ve(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? fe(Object(r), !0).forEach(function (t) {
+            ? _e(Object(r), !0).forEach(function (t) {
                 f()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : fe(Object(r)).forEach(function (t) {
+            : _e(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var ve = function () {
+      var ye = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(R.a)(
+        return Object(N.a)(
           'svg',
-          _e(
-            _e({}, e),
+          ve(
+            ve({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [A.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [R.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           _.createElement(
             'g',
@@ -609,10 +610,10 @@
           ),
         )
       }
-      ve.metadata = { width: 24, height: 24 }
-      var ye = ve,
-        Oe = r('2qZs')
-      function we(e, t) {
+      ye.metadata = { width: 24, height: 24 }
+      var Oe = ye,
+        we = r('2qZs')
+      function ge(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -624,29 +625,29 @@
         }
         return r
       }
-      function ge(e) {
+      function ke(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? we(Object(r), !0).forEach(function (t) {
+            ? ge(Object(r), !0).forEach(function (t) {
                 f()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : we(Object(r)).forEach(function (t) {
+            : ge(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var ke = function () {
+      var je = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(R.a)(
+        return Object(N.a)(
           'svg',
-          ge(
-            ge({}, e),
+          ke(
+            ke({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [A.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [R.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           _.createElement(
             'g',
@@ -657,15 +658,15 @@
           ),
         )
       }
-      ke.metadata = { width: 24, height: 24 }
-      var je = ke,
-        Ce = r('4BrD'),
-        Ee = r('xrkw'),
-        Pe = r('nV1z'),
-        Ie = r('M2x3'),
-        Se = r('SNyS'),
-        Me = r('Drq4')
-      function De(e, t) {
+      je.metadata = { width: 24, height: 24 }
+      var Ce = je,
+        Ee = r('4BrD'),
+        Pe = r('xrkw'),
+        Ie = r('nV1z'),
+        Se = r('M2x3'),
+        Me = r('SNyS'),
+        De = r('Drq4')
+      function xe(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -677,29 +678,29 @@
         }
         return r
       }
-      function xe(e) {
+      function Le(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? De(Object(r), !0).forEach(function (t) {
+            ? xe(Object(r), !0).forEach(function (t) {
                 f()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : De(Object(r)).forEach(function (t) {
+            : xe(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var Le = function () {
+      var ze = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(R.a)(
+        return Object(N.a)(
           'svg',
-          xe(
-            xe({}, e),
+          Le(
+            Le({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [A.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [R.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           _.createElement(
             'g',
@@ -710,9 +711,9 @@
           ),
         )
       }
-      Le.metadata = { width: 24, height: 24 }
-      var ze = Le
-      function He(e, t) {
+      ze.metadata = { width: 24, height: 24 }
+      var He = ze
+      function Te(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -724,29 +725,29 @@
         }
         return r
       }
-      function Te(e) {
+      function Be(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? He(Object(r), !0).forEach(function (t) {
+            ? Te(Object(r), !0).forEach(function (t) {
                 f()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : He(Object(r)).forEach(function (t) {
+            : Te(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var Be = function () {
+      var Fe = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(R.a)(
+        return Object(N.a)(
           'svg',
-          Te(
-            Te({}, e),
+          Be(
+            Be({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [A.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [R.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           _.createElement(
             'g',
@@ -757,9 +758,9 @@
           ),
         )
       }
-      Be.metadata = { width: 24, height: 24 }
-      var Fe = Be
-      function Ae(e, t) {
+      Fe.metadata = { width: 24, height: 24 }
+      var Ae = Fe
+      function Re(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -771,22 +772,22 @@
         }
         return r
       }
-      function Re(e) {
+      function Ne(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Ae(Object(r), !0).forEach(function (t) {
+            ? Re(Object(r), !0).forEach(function (t) {
                 f()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : Ae(Object(r)).forEach(function (t) {
+            : Re(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      function Ne(e) {
+      function Ke(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -807,33 +808,33 @@
           return h()(this, r)
         }
       }
-      var Ke = P.a.c818c60c,
-        Ve = P.a.b5711f09,
-        We = P.a.i3145aa0,
-        qe = P.a.b5298d91,
-        Ue = P.a.a57a341b,
-        Ge = P.a.i83d4f13,
-        Ze = 'Collaborate',
-        Xe = P.a.f66d24be,
-        Je = P.a.c4881c66,
-        Ye = P.a.h54e6137,
-        Qe = P.a.ae1bbb26,
-        $e = P.a.a58e0e51,
-        et = P.a.deaf7e0a,
-        tt = P.a.b4af8c6a,
-        rt = P.a.ed21f885,
-        nt = P.a.d0a51fb1,
-        ct = P.a.fa98627a,
-        it = P.a.fd442790,
-        ot = P.a.b8533bac,
-        at = P.a.b0041756,
-        lt = P.a.h02a6fe5,
-        st = P.a.b7fa0cfd,
-        ut = P.a.ab38b896,
-        dt = P.a.c9d41313,
-        ht = (function (e) {
+      var Ve = I.a.c818c60c,
+        We = I.a.b5711f09,
+        qe = I.a.i3145aa0,
+        Ue = I.a.b5298d91,
+        Ge = I.a.a57a341b,
+        Ze = I.a.i83d4f13,
+        Xe = 'Collaborate',
+        Je = I.a.f66d24be,
+        Ye = I.a.c4881c66,
+        Qe = I.a.h54e6137,
+        $e = I.a.ae1bbb26,
+        et = I.a.a58e0e51,
+        tt = I.a.deaf7e0a,
+        rt = I.a.b4af8c6a,
+        nt = I.a.ed21f885,
+        ct = I.a.d0a51fb1,
+        it = I.a.fa98627a,
+        ot = I.a.fd442790,
+        at = I.a.b8533bac,
+        lt = I.a.b0041756,
+        st = I.a.h02a6fe5,
+        ut = I.a.b7fa0cfd,
+        dt = I.a.ab38b896,
+        ht = I.a.c9d41313,
+        mt = (function (e) {
           u()(r, e)
-          var t = Ne(r)
+          var t = Ke(r)
           function r() {
             var e
             c()(this, r)
@@ -877,32 +878,32 @@
               ),
               f()(l()(e), '_renderProfileItem', function (t) {
                 return t
-                  ? _.createElement(H, { icon: ie.a, label: ct, link: '/'.concat(t), onClick: e._handleProfileClick })
+                  ? _.createElement(T, { icon: oe.a, label: it, link: '/'.concat(t), onClick: e._handleProfileClick })
                   : null
               }),
               f()(l()(e), '_renderTopicsItem', function (t) {
                 return t
-                  ? _.createElement(H, {
-                      icon: oe.a,
-                      label: ot,
+                  ? _.createElement(T, {
+                      icon: ae.a,
+                      label: at,
                       link: '/'.concat(t, '/topics'),
                       onClick: e._handleTopicsClick,
                     })
                   : null
               }),
               f()(l()(e), '_renderConnectItem', function () {
-                return _.createElement(H, {
-                  icon: ae.a,
-                  label: qe,
+                return _.createElement(T, {
+                  icon: le.a,
+                  label: Ue,
                   link: '/i/connect_people',
                   onClick: e._handleConnectClick,
                 })
               }),
               f()(l()(e), '_renderCollaborateItem', function () {
                 return e._collaborateEnabled
-                  ? _.createElement(H, {
-                      icon: le.a,
-                      label: Ze,
+                  ? _.createElement(T, {
+                      icon: se.a,
+                      label: Xe,
                       link: {
                         external: !0,
                         pathname: '/i/collaborate/home',
@@ -913,9 +914,9 @@
               }),
               f()(l()(e), '_renderListsItem', function (t) {
                 return t
-                  ? _.createElement(H, {
-                      icon: se.a,
-                      label: at,
+                  ? _.createElement(T, {
+                      icon: ue.a,
+                      label: lt,
                       link: '/'.concat(t, '/lists'),
                       onClick: e._handleListsClick,
                     })
@@ -923,42 +924,42 @@
               }),
               f()(l()(e), '_renderCommunitiesItem', function (t) {
                 return t
-                  ? _.createElement(H, {
-                      icon: ue.a,
-                      label: lt,
+                  ? _.createElement(T, {
+                      icon: de.a,
+                      label: st,
                       link: '/'.concat(t, '/communities'),
                       onClick: e._handleCommunitiesClick,
                     })
                   : null
               }),
               f()(l()(e), '_renderTopArticlesItem', function () {
-                return _.createElement(H, {
-                  icon: de.a,
-                  label: st,
+                return _.createElement(T, {
+                  icon: he.a,
+                  label: ut,
                   link: '/i/articles',
                   onClick: e._handleTopArticlesClick,
                 })
               }),
               f()(l()(e), '_renderBookmarksItem', function () {
-                return _.createElement(H, {
-                  icon: he.a,
-                  label: We,
+                return _.createElement(T, {
+                  icon: me.a,
+                  label: qe,
                   link: '/i/bookmarks',
                   onClick: e._handleBookmarksClick,
                 })
               }),
               f()(l()(e), '_renderMomentsItem', function (t) {
                 var r = e._momentMakerEnabled ? '/i/moment_maker' : t ? '/'.concat(t, '/moments') : void 0
-                return r ? _.createElement(H, { icon: me.a, label: tt, link: r, onClick: e._handleMomentsClick }) : null
+                return r ? _.createElement(T, { icon: be.a, label: rt, link: r, onClick: e._handleMomentsClick }) : null
               }),
               f()(l()(e), '_renderTwitterBlueItem', function () {
                 var t = e.context.userClaims.isTwitterBlueSubscriber()
                 if (e.context.featureSwitches.isTrue('subscriptions_sign_up_enabled') || t) {
                   var r = t ? '/settings/twitter_blue' : '/i/twitter_blue_sign_up'
-                  return _.createElement(H, {
-                    icon: be.a,
-                    iconColor: F.a.theme.colors.brandColor,
-                    label: rt,
+                  return _.createElement(T, {
+                    icon: pe.a,
+                    iconColor: A.a.theme.colors.brandColor,
+                    label: nt,
                     link: r,
                     onClick: e._handleTwitterBlueClick,
                   })
@@ -967,9 +968,9 @@
               }),
               f()(l()(e), '_renderNewslettersItem', function () {
                 return e._newslettersEnabled
-                  ? _.createElement(H, {
-                      icon: pe.a,
-                      label: nt,
+                  ? _.createElement(T, {
+                      icon: fe.a,
+                      label: ct,
                       link: '/i/newsletters',
                       onClick: e._handleNewslettersClick,
                     })
@@ -977,9 +978,9 @@
               }),
               f()(l()(e), '_renderTwitterForProfessionalsItem', function () {
                 return e._twitterForProfessionalsEnabled
-                  ? _.createElement(H, {
-                      icon: ye,
-                      label: dt,
+                  ? _.createElement(T, {
+                      icon: Oe,
+                      label: ht,
                       link: {
                         pathname: '/i/flow/convert_to_professional',
                         state: { input: { requested_variant: 'navdrawer' } },
@@ -991,9 +992,9 @@
               }),
               f()(l()(e), '_renderBirdwatchItem', function () {
                 return e._birdwatchEnabled
-                  ? _.createElement(H, {
-                      icon: Oe.a,
-                      label: Ve,
+                  ? _.createElement(T, {
+                      icon: we.a,
+                      label: We,
                       link: '/i/birdwatch',
                       onClick: e._handleBirdwatchClick,
                     })
@@ -1004,67 +1005,67 @@
                   r = t.acceptedFollowerCount,
                   n = t.pendingFollowerCount
                 return n || r
-                  ? _.createElement(H, {
+                  ? _.createElement(T, {
                       badgeCount: n,
-                      icon: je,
-                      label: Ge,
+                      icon: Ce,
+                      label: Ze,
                       link: '/follower_requests',
                       onClick: e._handleFollowerRequestsClick,
                     })
                   : null
               }),
               f()(l()(e), '_renderTwitterAdsItem', function () {
-                return _.createElement(H, {
-                  icon: Ce.a,
-                  label: ut,
+                return _.createElement(T, {
+                  icon: Ee.a,
+                  label: dt,
                   link: 'https://ads.twitter.com/?ref=gl-tw-tw-twitter-ads-rweb',
                   onClick: e._handleTwitterAdsClick,
                 })
               }),
               f()(l()(e), '_renderAnalyticsItem', function () {
-                return _.createElement(H, {
-                  icon: Ee.a,
-                  label: Ke,
+                return _.createElement(T, {
+                  icon: Pe.a,
+                  label: Ve,
                   link: 'https://analytics.twitter.com/',
                   onClick: e._handleAnalyticsClick,
                 })
               }),
               f()(l()(e), '_renderMediaStudioItem', function () {
                 return e.props.isMediaStudioLinkVisible
-                  ? _.createElement(H, {
-                      icon: Pe.a,
-                      label: et,
+                  ? _.createElement(T, {
+                      icon: Ie.a,
+                      label: tt,
                       link: 'https://studio.twitter.com/?ref=dotcom',
                       onClick: e._handleMediaStudioClick,
                     })
                   : null
               }),
               f()(l()(e), '_renderSettingsItem', function () {
-                return _.createElement(H, {
-                  icon: Ie.a,
-                  label: it,
+                return _.createElement(T, {
+                  icon: Se.a,
+                  label: ot,
                   link: '/settings',
                   onClick: e._handleSettingsClick,
-                  testID: $.a.settings,
+                  testID: ee.a.settings,
                 })
               }),
               f()(l()(e), '_renderHelpCenterItem', function () {
-                return _.createElement(H, {
-                  icon: Se.a,
-                  label: Xe,
+                return _.createElement(T, {
+                  icon: Me.a,
+                  label: Je,
                   link: 'https://support.twitter.com/',
                   onClick: e._handleHelpClick,
-                  testID: $.a.help,
+                  testID: ee.a.help,
                 })
               }),
               f()(l()(e), '_renderDisplayItem', function () {
-                return _.createElement(H, { icon: J, label: Je, link: '/i/display', onClick: e._handleDisplayClick })
+                return _.createElement(T, { icon: Y, label: Ye, link: '/i/display', onClick: e._handleDisplayClick })
               }),
               f()(l()(e), '_renderKeyboardShortcuts', function () {
-                return ee.b.isDesktopOS()
-                  ? _.createElement(H, {
-                      icon: Me.a,
-                      label: Ye,
+                return te.b.isDesktopOS()
+                  ? _.createElement(T, {
+                      icon: De.a,
+                      label: Qe,
                       link: '/i/keyboard_shortcuts',
                       onClick: e._handleMenuItemClick('keyboard_shortcuts_overflow_item'),
                     })
@@ -1075,26 +1076,26 @@
               }),
               f()(l()(e), '_renderLogoutItem', function (t) {
                 return t
-                  ? _.createElement(H, {
-                      label: Object(T.a)().hasMultiAccountCookie ? $e({ screenName: t }) : Qe,
+                  ? _.createElement(T, {
+                      label: Object(B.a)().hasMultiAccountCookie ? et({ screenName: t }) : $e,
                       link: '/logout',
                       onClick: e._handleLogoutScribingClick,
-                      testID: $.a.logout,
+                      testID: ee.a.logout,
                     })
                   : null
               }),
               f()(l()(e), '_renderDataSaverItem', function () {
                 var t = e.props.settings,
-                  r = t.dataSaverMode ? ze : Fe
-                return _.createElement(H, {
+                  r = t.dataSaverMode ? He : Ae
+                return _.createElement(T, {
                   icon: r,
-                  label: Ue,
+                  label: Ge,
                   link: '/settings/data',
                   onClick: e._handleDataSaverClick,
-                  rightControl: _.createElement(ne.a, {
-                    accessibilityLabel: Ue,
+                  rightControl: _.createElement(ce.a, {
+                    accessibilityLabel: Ge,
                     onValueChange: e._handleDataSaverChanged,
-                    style: I.a.itemAccessory,
+                    style: S.a.itemAccessory,
                     value: t.dataSaverMode,
                   }),
                 })
@@ -1105,7 +1106,7 @@
                   c = r.createLocalApiErrorHandler,
                   i = r.updateDataSaverMode
                 n.scribe({ element: 'dataSaverMode', action: t ? 'on' : 'off' }),
-                  i({ enabled: t }).catch(c(Re(Re({}, Object(C.a)()), {}, { showToast: !0 })))
+                  i({ enabled: t }).catch(c(Ne(Ne({}, Object(E.a)()), {}, { showToast: !0 })))
               }),
               f()(l()(e), '_handleMenuItemClick', function (t) {
                 return function () {
@@ -1161,7 +1162,7 @@
                     c = e.withMoreSideNavOverflow,
                     i = n && n.screen_name,
                     o = this.context.userClaims.isTrueAndEnabled('subscriptions_feature_1007'),
-                    a = Object(B.f)({
+                    a = Object(F.e)({
                       featureSwitches: this.context.featureSwitches,
                       communitiesActions: t,
                       hasCommunityMemberships: r,
@@ -1169,7 +1170,7 @@
                   return _.createElement(
                     _.Fragment,
                     null,
-                    Object(Q.a)()
+                    Object($.a)()
                       ? _.createElement(
                           _.Fragment,
                           null,
@@ -1190,7 +1191,7 @@
                           this._renderAnalyticsItem(),
                           this._renderMediaStudioItem(),
                           this._renderBirdwatchItem(),
-                          _.createElement(ce.a, { spacing: 'space2' }),
+                          _.createElement(ie.a, { spacing: 'space2' }),
                           this._renderSettingsItem(),
                           this._renderHelpCenterItem(),
                           this._renderDisplayItem(),
@@ -1209,21 +1210,21 @@
                           this._renderTwitterBlueItem(),
                           this._renderNewslettersItem(),
                           this._renderFollowerCountsItem(),
-                          _.createElement(ce.a, { spacing: 'space2' }),
+                          _.createElement(ie.a, { spacing: 'space2' }),
                           this._renderTwitterForProfessionalsItem(),
                           this._renderTwitterAdsItem(),
                           this._renderAnalyticsItem(),
                           this._renderMediaStudioItem(),
                           this._renderBirdwatchItem(),
-                          _.createElement(ce.a, { spacing: 'space2' }),
+                          _.createElement(ie.a, { spacing: 'space2' }),
                           this._renderSettingsItem(),
                           this._renderHelpCenterItem(),
                           this._renderLabsItem(),
-                          _.createElement(ce.a, { spacing: 'space2' }),
+                          _.createElement(ie.a, { spacing: 'space2' }),
                           this._renderDataSaverItem(),
                           this._renderDisplayItem(),
                           this._renderKeyboardShortcuts(),
-                          _.createElement(ce.a, { spacing: 'space2' }),
+                          _.createElement(ie.a, { spacing: 'space2' }),
                           this._renderLogoutItem(i),
                         ),
                   )
@@ -1233,8 +1234,8 @@
             r
           )
         })(_.Component)
-      f()(ht, 'contextType', re.a), f()(ht, 'defaultProps', { onClose: Y.a })
-      t.a = Object(te.a)(j(ht))
+      f()(mt, 'contextType', ne.a), f()(mt, 'defaultProps', { onClose: Q.a })
+      t.a = Object(re.a)(C(mt))
     },
     nV1z: function (e, t, r) {
       'use strict'

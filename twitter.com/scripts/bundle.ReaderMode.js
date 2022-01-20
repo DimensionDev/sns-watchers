@@ -650,7 +650,7 @@
           ),
             a.useEffect(
               function () {
-                h(E.a.CLOSED)
+                h(E.b.CLOSED)
               },
               [h],
             )

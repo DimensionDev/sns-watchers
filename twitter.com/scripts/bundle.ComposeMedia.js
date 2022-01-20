@@ -1476,7 +1476,7 @@
         _ = function (e) {
           return function (t, n, r) {
             var a = r.api
-            return i.b(t, { params: e, meta: { lang: Object(l.n)(n()) }, request: a.FeatureSwitch.fetchLanguages })({
+            return i.b(t, { params: e, meta: { lang: Object(l.o)(n()) }, request: a.FeatureSwitch.fetchLanguages })({
               actionTypes: h,
               context: 'FETCH_AVAILABLE_LANGUAGES',
             })
@@ -3717,12 +3717,12 @@
         et = n('0KEI'),
         tt = n('FDFL'),
         nt = function (e) {
-          var t = Object(Qe.n)(e)
+          var t = Object(Qe.o)(e)
           return t && Object(tt.b)(e, t)
         },
         rt = Object(X.a)()
           .propsFromState(function () {
-            return { language: Qe.n, languageName: nt }
+            return { language: Qe.o, languageName: nt }
           })
           .propsFromActions(function () {
             return {

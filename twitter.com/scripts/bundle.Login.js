@@ -44,7 +44,7 @@
         k = Object(w.createSelector)(
           function (e, t) {
             return (
-              _.h(e) ||
+              _.i(e) ||
               (Object(C.a)(t.location.query.login_verification_error)
                 ? O[t.location.query.login_verification_error]
                 : void 0)
@@ -56,7 +56,7 @@
               (Object(C.a)(t.location.query.username_or_email) ? t.location.query.username_or_email : void 0)
             )
           },
-          _.q,
+          _.r,
           function (e, t) {
             return (
               !!t.location.pathname &&

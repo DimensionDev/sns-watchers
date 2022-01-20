@@ -32,23 +32,23 @@
         O = n('G6rE'),
         k = Object(_.createSelector)(
           function (e) {
-            var t = v.g(e)
+            var t = v.h(e)
             return t ? Object(O.f)(['screen_name'])(e, t) : S.a.LOADING
           },
-          v.s,
+          v.t,
           S.d,
         ),
         w = Object(_.createSelector)(
           k,
           function (e) {
-            var t = v.g(e),
+            var t = v.h(e),
               n = t && O.e.select(e, t)
             return n && n.screen_name
           },
+          v.s,
+          v.h,
           v.r,
           v.g,
-          v.q,
-          v.f,
           function (e, t, n, r, i, o) {
             var c = n ? 'true' === n.sms.eligible : void 0
             return {
@@ -84,7 +84,7 @@
         M = n('t62R'),
         H = n('rHpw'),
         z = n('7JQg')
-      function q(e, t) {
+      function G(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -96,16 +96,16 @@
         }
         return n
       }
-      function G(e) {
+      function q(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? q(Object(n), !0).forEach(function (t) {
+            ? G(Object(n), !0).forEach(function (t) {
                 b()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : q(Object(n)).forEach(function (t) {
+            : G(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
@@ -221,14 +221,14 @@
               }),
               b()(l()(r), '_handleScribePasswordLoginClick', function () {
                 var e = r.props
-                ;(0, e.scribeAction)(G(G({}, e.scribeNamespace), {}, { element: 'password_login', action: 'click' }))
+                ;(0, e.scribeAction)(q(q({}, e.scribeNamespace), {}, { element: 'password_login', action: 'click' }))
               }),
               b()(l()(r), '_handleUpdatePhoneNumberClick', function () {
                 var e = r.props,
                   t = e.scribeAction,
                   n = e.scribeNamespace
                 ;(0, e.setLoginReturnPath)('/settings/phone'),
-                  t(G(G({}, n), {}, { element: 'update_phone_number', action: 'click' }))
+                  t(q(q({}, n), {}, { element: 'update_phone_number', action: 'click' }))
               }),
               b()(l()(r), '_redirectToLoginPage', function (e) {
                 var t = r.props,

@@ -2727,7 +2727,7 @@
           return function (e, t, r) {
             r.api
             var n = t()
-            return Object(p.l)(n)
+            return Object(p.m)(n)
               ? (function (e) {
                   return e.savedSearches.fetchStatus
                 })(n) === l.a.LOADED

@@ -192,7 +192,7 @@
         g = function (e) {
           return function (t, n, r) {
             var o = r.api
-            return c.b(t, { params: e, meta: { lang: Object(s.n)(n()) }, request: o.FeatureSwitch.fetchLanguages })({
+            return c.b(t, { params: e, meta: { lang: Object(s.o)(n()) }, request: o.FeatureSwitch.fetchLanguages })({
               actionTypes: d,
               context: 'FETCH_AVAILABLE_LANGUAGES',
             })

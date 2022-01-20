@@ -152,7 +152,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'TimelineRenderer', function () {
-          return He
+          return Ue
         })
       n('OZaJ'), n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('FtHn')
       var r = n('VrFO'),
@@ -287,7 +287,7 @@
         }
         return e
       }
-      function G(e) {
+      function z(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -308,9 +308,9 @@
           return p()(this, n)
         }
       }
-      var K = (function (e) {
+      var G = (function (e) {
         u()(n, e)
-        var t = G(n)
+        var t = z(n)
         function n() {
           var e
           i()(this, n)
@@ -453,8 +453,8 @@
           n
         )
       })(b.PureComponent)
-      m()(K, 'defaultProps', { imageDisplayType: I.Icon })
-      var z = Object(P.a)(O(K))
+      m()(G, 'defaultProps', { imageDisplayType: I.Icon })
+      var K = Object(P.a)(O(G))
       function Y(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
@@ -515,7 +515,7 @@
             }
           return 'full' === n.type
             ? ((t = n.cover),
-              b.createElement(z, {
+              b.createElement(K, {
                 details: t.details || void 0,
                 dismissInfo: t.dismissInfo,
                 displayType: t.displayType,
@@ -533,7 +533,7 @@
             : 'half' === n.type
             ? (function (e) {
                 var t = 'CenterCover' === e.displayType ? 'full' : 'half'
-                return b.createElement(z, {
+                return b.createElement(K, {
                   displayType: e.displayType,
                   image: e.coverImage ? e.coverImage.image : void 0,
                   imageDisplayType: e.coverImage ? e.coverImage.imageDisplayType : void 0,
@@ -843,45 +843,38 @@
             n = e.impressionTracker
           return n ? b.createElement(pe.a.Provider, { value: { impressionTracker: n } }, t) : t
         },
-        he = n('VPAj'),
-        ve = n('3GUV'),
-        me = n('v//M'),
-        ye = n('rHpw'),
-        be = Object(he.a)(b.createElement(ve.a, null)),
-        _e = function (e) {
+        he = n('3GUV'),
+        ve = n('v//M'),
+        me = n('rHpw'),
+        ye = n('VPAj'),
+        be = n('0zXz'),
+        _e = Object(ye.a)(b.createElement(he.a, null)),
+        ge = function (e) {
           var t = e.bottomFetchStatus,
             n = e.onBottomRetry,
             r = e.withEndOfContent
           return b.createElement(
             F.a,
-            { style: r && ge.footer },
-            b.createElement(me.a, {
-              fetchStatus: t,
-              onRequestRetry: n,
-              render: r
-                ? be
-                : function () {
-                    return null
-                  },
-            }),
+            { style: r && we.footer },
+            b.createElement(ve.a, { fetchStatus: t, onRequestRetry: n, render: r ? _e : be.a }),
           )
         },
-        ge = ye.a.create(function (e) {
+        we = me.a.create(function (e) {
           return { footer: { height: 5 * e.lineHeightsPx.body } }
         }),
-        we = b.memo(_e),
-        Ee = n('xjVt'),
-        Oe = n('EUHl'),
-        Ce = n('IG4P'),
-        ke = n('iBK2'),
-        Ie = n('pbku'),
-        Te = n('aITJ'),
-        Re = n('aWzz'),
-        Pe = n('iChn'),
-        je = n('8UdT'),
-        Le = n('cFgU'),
-        Se = n('WA1W')
-      function De(e, t) {
+        Ee = b.memo(ge),
+        Oe = n('xjVt'),
+        Ce = n('EUHl'),
+        ke = n('IG4P'),
+        Ie = n('iBK2'),
+        Te = n('pbku'),
+        Re = n('aITJ'),
+        Pe = n('aWzz'),
+        je = n('iChn'),
+        Le = n('8UdT'),
+        Se = n('cFgU'),
+        De = n('WA1W')
+      function Ae(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -893,22 +886,22 @@
         }
         return n
       }
-      function Ae(e) {
+      function xe(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? De(Object(n), !0).forEach(function (t) {
+            ? Ae(Object(n), !0).forEach(function (t) {
                 m()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : De(Object(n)).forEach(function (t) {
+            : Ae(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      function xe(e) {
+      function Me(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -929,26 +922,26 @@
           return p()(this, n)
         }
       }
-      var Me = function (e) {
+      var Ne = function (e) {
           return e.entryId
         },
-        Ne = function (e) {
+        Be = function (e) {
           return e.sortIndex
         }
-      var Be = new Map(),
-        Fe = function (e) {
+      var Fe = new Map(),
+        He = function (e) {
           switch (e) {
-            case je.b.Tweet:
-              return Te.b.isDesktopOS() ? 250 : 400
-            case je.a.ModuleImpressionPlaceholder:
+            case Le.b.Tweet:
+              return Re.b.isDesktopOS() ? 250 : 400
+            case Le.a.ModuleImpressionPlaceholder:
               return 0
             default:
               return 100
           }
         },
-        He = (function (e) {
+        Ue = (function (e) {
           u()(n, e)
-          var t = xe(n)
+          var t = Me(n)
           function n(e, r) {
             var o, a
             return (
@@ -965,7 +958,7 @@
                   ? b.createElement(
                       b.Fragment,
                       null,
-                      b.createElement(we, { bottomFetchStatus: t, onBottomRetry: i, withEndOfContent: !r }),
+                      b.createElement(Ee, { bottomFetchStatus: t, onBottomRetry: i, withEndOfContent: !r }),
                       r,
                     )
                   : r
@@ -1007,7 +1000,7 @@
                 c()(o),
                 '_createEntryIndex',
                 Object(H.a)(function (e) {
-                  return Object(Pe.a)(e, function (e) {
+                  return Object(je.a)(e, function (e) {
                     return e.entryId
                   })
                 }),
@@ -1054,7 +1047,7 @@
                     n = e.removeAlert,
                     r = e.richScribeAction,
                     i = e.scribeNamespace
-                  n && n(), t && t(), r(Ae(Ae({}, i), {}, { component: 'stream', element: 'top', action: 'show' }))
+                  n && n(), t && t(), r(xe(xe({}, i), {}, { component: 'stream', element: 'top', action: 'show' }))
                 }),
               ),
               m()(
@@ -1106,7 +1099,7 @@
               m()(c()(o), '_handleOnLingerEvent', function (e) {
                 var t = o.props.applyReactionInstructions,
                   n = o._getEntryIndex()[e]
-                n && t({ entry: n, triggerName: Ie.a.ON_LINGER })
+                n && t({ entry: n, triggerName: Te.a.ON_LINGER })
               }),
               m()(c()(o), '_handlePositionRestored', function () {
                 o._positionedRestored = !0
@@ -1119,7 +1112,7 @@
                     n = t.richScribeAction,
                     r = t.scribeNamespace,
                     i = o._buildStreamScribeData(e)
-                  i.length > 0 && n(Ae(Ae({}, r), {}, { component: 'stream', action: 'results' }), { items: i })
+                  i.length > 0 && n(xe(xe({}, r), {}, { component: 'stream', action: 'results' }), { items: i })
                 }),
                 g.canUseDOM && window.requestIdleCallback
                   ? function (e) {
@@ -1250,7 +1243,7 @@
                             this._renderPill(),
                             b.createElement(h, {
                               anchoring: n,
-                              assumedItemHeight: Fe,
+                              assumedItemHeight: He,
                               cacheKey: u,
                               footer: this._renderFooter(),
                               hasNewContentAtBottom:
@@ -1258,8 +1251,8 @@
                                   ? void 0
                                   : e.isTrue('responsive_web_do_not_launch_me_reverse_home_timeline_enabled'),
                               header: o,
-                              identityFunction: Me,
-                              initialAnchor: v && y.b(Me(v)),
+                              identityFunction: Ne,
+                              initialAnchor: v && y.b(Ne(v)),
                               items: r,
                               nearStartProximityRatio: c,
                               onAtEnd: this._handleAtBottom,
@@ -1271,7 +1264,7 @@
                               onPositionRestored: this._handlePositionRestored,
                               ref: this._setScroller,
                               renderer: this._getCellRenderer(i, s),
-                              sortIndexFunction: Ne,
+                              sortIndexFunction: Be,
                               withKeyboardShortcuts: p,
                               withoutHeadroom: f,
                             }),
@@ -1294,8 +1287,8 @@
                     c = t.timelineId,
                     l = t.topUnseenCount
                   return o
-                    ? o === Oe.a.URT
-                      ? b.createElement(Ee.a.Configure, {
+                    ? o === Ce.a.URT
+                      ? b.createElement(Oe.a.Configure, {
                           alert: n,
                           applyNewTweetsBarInstructions: r,
                           isAtNewest: null === (e = this._scroller) || void 0 === e ? void 0 : e.isAtNewest,
@@ -1304,8 +1297,8 @@
                           scribeNamespace: s,
                           timelineId: c,
                         })
-                      : o === Oe.a.CLIENT && l && l > 0
-                      ? b.createElement(Ee.a.Configure, {
+                      : o === Ce.a.CLIENT && l && l > 0
+                      ? b.createElement(Oe.a.Configure, {
                           applyNewTweetsBarInstructions: r,
                           removeAlert: a,
                           scribeNamespace: s,
@@ -1453,8 +1446,8 @@
                     n = t.seenIds,
                     r = t.seenIdsLatest,
                     i = t.timelineId
-                  ;(i !== Se.d && i !== Se.b) || !n
-                    ? (i !== Se.c && i !== Se.a) || !r || r.addNewTweets(e)
+                  ;(i !== De.d && i !== De.b) || !n
+                    ? (i !== De.c && i !== De.a) || !r || r.addNewTweets(e)
                     : n.addNewTweets(e)
                 },
               },
@@ -1477,13 +1470,13 @@
                           var u = t._getScribeDataItem(n, l)
                           if (u) {
                             var d = { visibility_start: c, visibility_end: a }
-                            i.push(Ae(Ae({}, u), {}, { impression_details: d }))
+                            i.push(xe(xe({}, u), {}, { impression_details: d }))
                           }
-                          if (l.type === je.b.Tweet) {
+                          if (l.type === Le.b.Tweet) {
                             var p = l
                             o.push(p.content.id)
                           }
-                          if (l.type === je.b.PagedCarouselItem) {
+                          if (l.type === Le.b.PagedCarouselItem) {
                             var f = l,
                               h =
                                 f.content.content &&
@@ -1497,8 +1490,8 @@
                     ) {
                       var a = this.props
                       ;(0, a.richScribeAction)(
-                        Ae(
-                          Ae({}, a.scribeNamespace),
+                        xe(
+                          xe({}, a.scribeNamespace),
                           {},
                           { component: 'stream', element: 'linger', action: 'results' },
                         ),
@@ -1528,22 +1521,22 @@
             n
           )
         })(b.PureComponent)
-      m()(He, 'contextTypes', { viewport: Re.object, featureSwitches: Re.any }),
-        m()(He, 'defaultProps', {
+      m()(Ue, 'contextTypes', { viewport: Pe.object, featureSwitches: Pe.any }),
+        m()(Ue, 'defaultProps', {
           onBottomRetry: U.a,
           onNearBottom: U.a,
           onNearTop: U.a,
           onRefresh: U.a,
-          refreshControl: Ce.a,
-          scribeCache: Be,
-          scroller: ke.b,
-          seenIds: Object(Le.b)(),
-          seenIdsLatest: Object(Le.a)(),
+          refreshControl: ke.a,
+          scribeCache: Fe,
+          scroller: Ie.b,
+          seenIds: Object(Se.b)(),
+          seenIdsLatest: Object(Se.a)(),
           withoutHeadroom: !1,
           showLoadingFooter: !0,
           withKeyboardShortcuts: !0,
         })
-      t.default = He
+      t.default = Ue
     },
     'ejT/': function (e, t, n) {
       'use strict'

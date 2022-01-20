@@ -496,7 +496,7 @@
           b.selectEntries,
           B,
           D.l,
-          E.p,
+          E.q,
           D.m,
           D.n,
           k.e.selectAll,
@@ -560,8 +560,8 @@
         J = n('rHpw'),
         U = n('aITJ'),
         G = n('MWbm'),
-        Y = n('7JQg'),
-        q = n('OhSZ')
+        q = n('7JQg'),
+        Y = n('OhSZ')
       function X(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -675,15 +675,15 @@
                     r = e.perspective,
                     o =
                       t && Object.keys(t.participants).length
-                        ? Object(q.a)({ conversation: t, perspective: r })
+                        ? Object(Y.a)({ conversation: t, perspective: r })
                         : n
-                        ? Object(q.a)({ newConversationParticipants: n, perspective: r })
+                        ? Object(Y.a)({ newConversationParticipants: n, perspective: r })
                         : Z,
                     a =
                       t && Object.keys(t.participants).length
-                        ? m.createElement(q.b, { conversation: t, perspective: r, withScreenName: !1 })
+                        ? m.createElement(Y.b, { conversation: t, perspective: r, withScreenName: !1 })
                         : n
-                        ? m.createElement(q.b, { newConversationParticipants: n, perspective: r, withScreenName: !1 })
+                        ? m.createElement(Y.b, { newConversationParticipants: n, perspective: r, withScreenName: !1 })
                         : Z,
                     i = 'medium',
                     c = r ? m.createElement(L.a, { conversation: t, perspective: r, size: i }) : void 0,
@@ -751,7 +751,7 @@
           rightControlStyles: { flexDirection: 'row' },
         }
       })
-      t.default = Object(Y.c)({ page: 'messages', section: 'thread' })(I(ee))
+      t.default = Object(q.c)({ page: 'messages', section: 'thread' })(I(ee))
     },
     dWxr: function (e, t, n) {
       'use strict'

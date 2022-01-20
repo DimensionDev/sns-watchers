@@ -849,6 +849,12 @@ window.__SCRIPTS_LOADED__.polyfills &&
             return 1 !== new s(new u(2), 1, void 0).length
           })
       },
+      '0zXz': function (e, t, n) {
+        'use strict'
+        t.a = function () {
+          return null
+        }
+      },
       '118+': function (e, t, n) {
         'use strict'
         var r = n('9CVu')

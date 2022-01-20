@@ -10,10 +10,10 @@
           return a
         }),
         n.d(t, 'b', function () {
-          return i
+          return o
         }),
         n.d(t, 'f', function () {
-          return o
+          return i
         }),
         n.d(t, 'd', function () {
           return s
@@ -24,8 +24,8 @@
       n('yH/f')
       var r = 'com.twitter.twitter.siwa',
         a = '49625052041-kgt0hghf445lmcmhijv46b715m2mpbct.apps.googleusercontent.com',
-        i = 300,
-        o = 'popup_closed_by_user',
+        o = 300,
+        i = 'popup_closed_by_user',
         s = Object.freeze({ SignUp: 'signup_with', SignIn: 'signin_with' }),
         c = Object.freeze({ Button: 'button', Prompt: 'prompt' })
     },
@@ -43,16 +43,16 @@
       n('yH/f')
       var r = n('ERkP'),
         a = n('t62R'),
-        i = n('3XMw'),
-        o = n.n(i),
+        o = n('3XMw'),
+        i = n.n(o),
         s = 'phone_email',
         c = Object.freeze({ LogIn: 'login', SignUp: 'signup' }),
         u = r.createElement(
-          o.a.I18NFormatMessage,
+          i.a.I18NFormatMessage,
           { $i18n: 'c4d3d078' },
-          r.createElement(a.b, { link: 'https://twitter.com/tos' }, o.a.c8c5faad),
-          r.createElement(a.b, { link: 'https://twitter.com/privacy' }, o.a.ba5b7ecb),
-          r.createElement(a.b, { link: 'https://help.twitter.com/rules-and-policies/twitter-cookies' }, o.a.f4fe46c3),
+          r.createElement(a.b, { link: 'https://twitter.com/tos' }, i.a.c8c5faad),
+          r.createElement(a.b, { link: 'https://twitter.com/privacy' }, i.a.ba5b7ecb),
+          r.createElement(a.b, { link: 'https://help.twitter.com/rules-and-policies/twitter-cookies' }, i.a.f4fe46c3),
         )
     },
     NeAX: function (e, t, n) {
@@ -134,10 +134,10 @@
           return ae
         }),
         n.d(t, 'createDataDownload', function () {
-          return ie
+          return oe
         }),
         n.d(t, 'fetchTwitterInterestsIfNeeded', function () {
-          return oe
+          return ie
         }),
         n.d(t, 'fetchPartnerInterestsIfNeeded', function () {
           return ce
@@ -148,8 +148,8 @@
       n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var r = n('ddV6'),
         a = n.n(r),
-        i = n('KEM+'),
-        o = n.n(i),
+        o = n('KEM+'),
+        i = n.n(o),
         s = (n('KOtZ'), n('+KXO'), n('JtPf'), n('7x/C'), n('vrRf'), n('Ee2X'), n('RqPI')),
         c = n('P1r1'),
         u = n('cmwl'),
@@ -175,7 +175,7 @@
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
             ? g(Object(n), !0).forEach(function (t) {
-                o()(e, t, n[t])
+                i()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
@@ -293,7 +293,7 @@
             return e
         }
       }
-      d.a.register(o()({}, y, A))
+      d.a.register(i()({}, y, A))
       var z = {
           allowCookieUse: 'use_cookie_personalization',
           allowDeviceAccess: 'allow_logged_out_device_personalization',
@@ -314,13 +314,13 @@
         L = function (e) {
           return e.personalization.data.data
         },
-        R = Object(l.createSelector)(s.l, k, c.g, function (e, t, n) {
+        R = Object(l.createSelector)(s.m, k, c.g, function (e, t, n) {
           var r = e ? [z, n] : [D, t],
-            i = a()(r, 2),
-            o = i[0],
-            s = i[1]
-          return Object.keys(o).reduce(function (e, t) {
-            return (e[t] = s[o[t]]), e
+            o = a()(r, 2),
+            i = o[0],
+            s = o[1]
+          return Object.keys(i).reduce(function (e, t) {
+            return (e[t] = s[i[t]]), e
           }, {})
         }),
         C = function (e) {
@@ -368,8 +368,8 @@
             var n = t(),
               r = k(n),
               a = Date.now(),
-              i = { location_preferences: b(b({}, r.location_preferences), {}, { override_times: [a] }) }
-            return e($(i)).then(function () {
+              o = { location_preferences: b(b({}, r.location_preferences), {}, { override_times: [a] }) }
+            return e($(o)).then(function () {
               return e({ type: I })
             })
           }
@@ -385,26 +385,26 @@
           return function (n, r) {
             if (Object(f.a)(e)) return Promise.resolve()
             var a = r(),
-              i = k(a),
-              o = i.language_preferences.disabled_languages || [],
-              s = o.indexOf(e),
+              o = k(a),
+              i = o.language_preferences.disabled_languages || [],
+              s = i.indexOf(e),
               c = s > -1
-            if (c && t) o.splice(s, 1)
+            if (c && t) i.splice(s, 1)
             else {
               if (c || t) return Promise.resolve()
-              o.push(e)
+              i.push(e)
             }
-            var u = { language_preferences: b(b({}, i.language_preferences), {}, { disabled_languages: o }) }
+            var u = { language_preferences: b(b({}, o.language_preferences), {}, { disabled_languages: i }) }
             return n($(u))
           }
         },
         W = function (e, t, n) {
           return function (r, a) {
             if (Object(f.a)(e) || -1 === ['ads', 'partner'].indexOf(n)) return Promise.resolve()
-            var i = 'partner' === n,
+            var o = 'partner' === n,
               s = a(),
               c = k(s).interest_preferences,
-              u = i ? 'disabled_partner_interests' : 'disabled_interests',
+              u = o ? 'disabled_partner_interests' : 'disabled_interests',
               l = c[u],
               p = l.indexOf(e),
               d = p > -1
@@ -414,7 +414,7 @@
               l.push(e)
             }
             var _ = {
-              interest_preferences: o()(
+              interest_preferences: i()(
                 { disabled_interests: c.disabled_interests, disabled_partner_interests: c.disabled_partner_interests },
                 u,
                 l,
@@ -454,24 +454,24 @@
         ee = function (e) {
           return function (t, n, r) {
             var a = r.api,
-              i = r.featureSwitches
+              o = r.featureSwitches
             if (Object(f.a)(e)) return Promise.resolve()
             var l = n(),
-              p = s.l(l),
+              p = s.m(l),
               d = p ? z : D,
               _ = Object.keys(e).reduce(function (t, n) {
                 n in d && (t[d[n]] = e[n])
-                n in T && (t[T[n]] = o()({}, n, e[n]))
+                n in T && (t[T[n]] = i()({}, n, e[n]))
                 return t
               }, {})
             return p
               ? t(c.L(_)).then(function () {
                   Object(u.a)().then(function (e) {
-                    e.updateBranchTracking(i, a)
+                    e.updateBranchTracking(o, a)
                   }),
                     t(le(_))
                 })
-              : te(i, t, _, a)
+              : te(o, t, _, a)
           }
         },
         te = function (e, t, n, r) {
@@ -507,13 +507,13 @@
             return Object(_.d)(e, { request: r.Personalization.createAudienceDownload })('CREATE_AUDIENCE_DOWNLOAD')
           }
         },
-        ie = function () {
+        oe = function () {
           return function (e, t, n) {
             var r = n.api
             return Object(_.d)(e, { request: r.Personalization.createDataDownload })('CREATE_DATA_DOWNLOAD')
           }
         },
-        oe = function () {
+        ie = function () {
           return function (e, t, n) {
             n.api
             var r = t().personalization.twitter_interests
@@ -548,18 +548,18 @@
         le = function (e) {
           return function (t, n, r) {
             var a = r.api,
-              i = {}
+              o = {}
             return (
               e.hasOwnProperty('use_cookie_personalization') &&
-                (i.use_cookie_personalization = e.use_cookie_personalization),
+                (o.use_cookie_personalization = e.use_cookie_personalization),
               e.hasOwnProperty('allow_ads_personalization') &&
-                (i.allow_ads_personalization = e.allow_ads_personalization),
-              Object(f.a)(i)
+                (o.allow_ads_personalization = e.allow_ads_personalization),
+              Object(f.a)(o)
                 ? Promise.resolve()
-                : Object(_.b)(t, { params: i, request: a.Personalization.updateCookies })({
+                : Object(_.b)(t, { params: o, request: a.Personalization.updateCookies })({
                     actionTypes: E,
                     context: 'APP_UPDATE_PERSONALIZATION_COOKIES',
-                    params: i,
+                    params: o,
                   })
             )
           }
@@ -595,10 +595,10 @@
           var t,
             n = e.callback,
             a = e.scriptId,
-            i = e.src,
-            o = document.getElementById(a)
-          o && (null === (t = o.parentNode) || void 0 === t || t.removeChild(o))
-          r.inject({ callback: n, scriptId: a, src: i })
+            o = e.src,
+            i = document.getElementById(a)
+          i && (null === (t = i.parentNode) || void 0 === t || t.removeChild(i))
+          r.inject({ callback: n, scriptId: a, src: o })
         },
       }
       t.a = r
@@ -608,8 +608,8 @@
       n('OZaJ'), n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var r = n('VrFO'),
         a = n.n(r),
-        i = n('Y9Ll'),
-        o = n.n(i),
+        o = n('Y9Ll'),
+        i = n.n(o),
         s = n('1Pcy'),
         c = n.n(s),
         u = n('5Yy7'),
@@ -692,9 +692,9 @@
           function n() {
             var e
             a()(this, n)
-            for (var r = arguments.length, i = new Array(r), o = 0; o < r; o++) i[o] = arguments[o]
+            for (var r = arguments.length, o = new Array(r), i = 0; i < r; i++) o[i] = arguments[i]
             return (
-              (e = t.call.apply(t, [this].concat(i))),
+              (e = t.call.apply(t, [this].concat(o))),
               b()(c()(e), 'state', { isScriptLoaded: !1 }),
               b()(
                 c()(e),
@@ -716,11 +716,11 @@
                   n = e.props,
                   r = n.analytics,
                   a = n.buttonState,
-                  i = n.history,
-                  o = n.personalizationSettings,
+                  o = n.history,
+                  i = n.personalizationSettings,
                   s = n.shouldPropagateP13nSettings,
                   c = n.ssoInitTokens,
-                  u = o || {},
+                  u = i || {},
                   l = u.allowCookieUse,
                   p = u.allowDeviceAccess,
                   f = u.allowPartnerships,
@@ -731,7 +731,7 @@
                     .then(function (e) {
                       r.scribe({ component: 'apple_sign_in', element: a, action: 'success' })
                       var t = e.user && e.user.name && e.user.name.firstName && e.user.name.lastName
-                      i.push({
+                      o.push({
                         pathname: '/i/flow/single_sign_on',
                         state: {
                           input: {
@@ -762,7 +762,7 @@
             )
           }
           return (
-            o()(n, [
+            i()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -785,13 +785,13 @@
                     n = e.buttonState,
                     r = e.style,
                     a = this.state.isScriptLoaded,
-                    i = n === P.a.SignUp ? R : C
+                    o = n === P.a.SignUp ? R : C
                   return this._is3rdPartyIntegrationDisabled
                     ? null
                     : h.createElement(y.a, {
                         backgroundColor: 'white',
                         borderColor: 'gray200',
-                        children: i,
+                        children: o,
                         color: 'gray1100',
                         disabled: !a,
                         icon: h.createElement(v.a, null),
@@ -813,15 +813,15 @@
       'use strict'
       var r = n('NeAX'),
         a = n('1YZw'),
-        i = n('rxPX'),
-        o = n('RqPI')
-      t.a = Object(i.a)()
+        o = n('rxPX'),
+        i = n('RqPI')
+      t.a = Object(o.a)()
         .propsFromState(function () {
           return {
             personalizationPreferences: r.selectPreferences,
             personalizationSettings: r.selectUserPreferences,
-            ssoInitTokens: o.t,
-            userLanguage: o.n,
+            ssoInitTokens: i.u,
+            userLanguage: i.o,
           }
         })
         .adjustStateProps(function (e) {
@@ -837,7 +837,7 @@
           }
         })
         .propsFromActions(function () {
-          return { addToast: a.b, fetchSsoInitToken: o.d }
+          return { addToast: a.b, fetchSsoInitToken: i.e }
         })
         .withAnalytics()
     },
@@ -846,8 +846,8 @@
       n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var r = n('KEM+'),
         a = n.n(r),
-        i = n('ERkP'),
-        o = n('Lsrn'),
+        o = n('ERkP'),
+        i = n('Lsrn'),
         s = n('k/Ka')
       function c(e, t) {
         var n = Object.keys(e)
@@ -883,12 +883,12 @@
           u(
             u({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [o.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [i.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          i.createElement(
+          o.createElement(
             'g',
             null,
-            i.createElement('path', {
+            o.createElement('path', {
               d: 'M16.365 1.43c0 1.14-.493 2.27-1.177 3.08-.744.9-1.99 1.57-2.987 1.57-.12 0-.23-.02-.3-.03-.01-.06-.04-.22-.04-.39 0-1.15.572-2.27 1.206-2.98.804-.94 2.142-1.64 3.248-1.68.03.13.05.28.05.43zm4.565 15.71c-.03.07-.463 1.58-1.518 3.12-.945 1.34-1.94 2.71-3.43 2.71-1.517 0-1.9-.88-3.63-.88-1.698 0-2.302.91-3.67.91-1.377 0-2.332-1.26-3.428-2.8-1.287-1.82-2.323-4.63-2.323-7.28 0-4.28 2.797-6.55 5.552-6.55 1.448 0 2.675.95 3.6.95.865 0 2.222-1.01 3.902-1.01.613 0 2.886.06 4.374 2.19-.13.09-2.383 1.37-2.383 4.19 0 3.26 2.854 4.42 2.955 4.45z',
             }),
           ),
@@ -901,8 +901,8 @@
       n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var r = n('KEM+'),
         a = n.n(r),
-        i = n('ERkP'),
-        o = n('Lsrn'),
+        o = n('ERkP'),
+        i = n('Lsrn'),
         s = n('k/Ka')
       function c(e, t) {
         var n = Object.keys(e)
@@ -938,24 +938,24 @@
           u(
             u({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [o.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [i.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          i.createElement(
+          o.createElement(
             'g',
             null,
-            i.createElement('path', {
+            o.createElement('path', {
               d: 'M18.977 4.322L16 7.3c-1.023-.838-2.326-1.35-3.768-1.35-2.69 0-4.95 1.73-5.74 4.152l-3.44-2.635c1.656-3.387 5.134-5.705 9.18-5.705 2.605 0 4.93.977 6.745 2.56z',
               fill: '#EA4335',
             }),
-            i.createElement('path', {
+            o.createElement('path', {
               d: 'M6.186 12c0 .66.102 1.293.307 1.89L3.05 16.533C2.38 15.17 2 13.63 2 12s.38-3.173 1.05-4.533l3.443 2.635c-.204.595-.307 1.238-.307 1.898z',
               fill: '#FBBC05',
             }),
-            i.createElement('path', {
+            o.createElement('path', {
               d: 'M18.893 19.688c-1.786 1.667-4.168 2.55-6.66 2.55-4.048 0-7.526-2.317-9.18-5.705l3.44-2.635c.79 2.42 3.05 4.152 5.74 4.152 1.32 0 2.474-.308 3.395-.895l3.265 2.533z',
               fill: '#34A853',
             }),
-            i.createElement('path', {
+            o.createElement('path', {
               d: 'M22 12c0 3.34-1.22 5.948-3.107 7.688l-3.265-2.53c1.07-.67 1.814-1.713 2.093-3.063h-5.488V10.14h9.535c.14.603.233 1.255.233 1.86z',
               fill: '#4285F4',
             }),
@@ -969,8 +969,8 @@
       n('OZaJ')
       var r = n('VrFO'),
         a = n.n(r),
-        i = n('Y9Ll'),
-        o = n.n(i),
+        o = n('Y9Ll'),
+        i = n.n(o),
         s = n('1Pcy'),
         c = n.n(s),
         u = n('5Yy7'),
@@ -1024,69 +1024,69 @@
           l()(n, e)
           var t = L(n)
           function n(e, r) {
-            var i
+            var o
             return (
               a()(this, n),
-              (i = t.call(this, e, r)),
-              b()(c()(i), '_buttonInitialized', !1),
-              b()(c()(i), '_viewRef', h.createRef()),
+              (o = t.call(this, e, r)),
+              b()(c()(o), '_buttonInitialized', !1),
+              b()(c()(o), '_viewRef', h.createRef()),
               b()(
-                c()(i),
+                c()(o),
                 '_is3rdPartyIntegrationDisabled',
-                Object(v.a)('responsive_web_3rd_party_category_google_platform', i.context.featureSwitches),
+                Object(v.a)('responsive_web_3rd_party_category_google_platform', o.context.featureSwitches),
               ),
-              b()(c()(i), '_initGoogleClient', function () {
+              b()(c()(o), '_initGoogleClient', function () {
                 var e = window.google
-                i._buttonInitialized ||
+                o._buttonInitialized ||
                   (e &&
-                    (e.accounts.id.initialize({ client_id: k.c, callback: i._handleOnPress }),
-                    (i._buttonInitialized = !0)))
+                    (e.accounts.id.initialize({ client_id: k.c, callback: o._handleOnPress }),
+                    (o._buttonInitialized = !0)))
               }),
-              b()(c()(i), '_renderGoogleSignInButton', function () {
+              b()(c()(o), '_renderGoogleSignInButton', function () {
                 var e = window.google,
-                  t = i.props,
+                  t = o.props,
                   n = t.buttonState,
                   r = t.displayType,
                   a = t.userLanguage,
-                  o = n === E.a.SignUp ? k.d.SignUp : k.d.SignIn,
-                  s = r !== k.e.Prompt && i._buttonInitialized
+                  i = n === E.a.SignUp ? k.d.SignUp : k.d.SignIn,
+                  s = r !== k.e.Prompt && o._buttonInitialized
                 e &&
                   s &&
-                  e.accounts.id.renderButton(i._viewRef.current, {
+                  e.accounts.id.renderButton(o._viewRef.current, {
                     theme: 'outline',
                     size: 'large',
                     shape: 'circle',
                     locale: a,
                     logo_alignment: 'center',
-                    text: o,
+                    text: i,
                     width: k.b,
                   })
               }),
-              b()(c()(i), '_renderGoogleOneTapPrompt', function () {
+              b()(c()(o), '_renderGoogleOneTapPrompt', function () {
                 var e = window.google,
-                  t = i.props,
+                  t = o.props,
                   n = t.analytics,
                   r = t.displayType,
                   a = t.isCookieCompliant,
-                  o = !I.b.isIOS() && !I.b.isSafari(),
-                  s = r !== k.e.Button && o && a
+                  i = !I.b.isIOS() && !I.b.isSafari(),
+                  s = r !== k.e.Button && i && a
                 e &&
                   s &&
                   e.accounts.id.prompt(function (e) {
                     n.scribe({ component: 'google_sign_in', element: 'one_tap', action: e.getMomentType() })
                   })
               }),
-              b()(c()(i), '_renderPlaceholderButton', function () {
-                var e = i.props,
+              b()(c()(o), '_renderPlaceholderButton', function () {
+                var e = o.props,
                   t = e.buttonSize,
                   n = e.buttonState,
                   r = e.onPress,
                   a = e.style,
-                  o = n === E.a.SignUp ? R : C
+                  i = n === E.a.SignUp ? R : C
                 return h.createElement(z.a, {
                   backgroundColor: 'white',
                   borderColor: 'gray200',
-                  children: o,
+                  children: i,
                   color: 'gray1100',
                   icon: h.createElement(m.a, null),
                   onPress: r,
@@ -1094,36 +1094,36 @@
                   style: a,
                 })
               }),
-              b()(c()(i), '_injectGoogleGsiLibraryScript', function () {
+              b()(c()(o), '_injectGoogleGsiLibraryScript', function () {
                 P.a.inject({
                   callback: function () {
-                    i.setState({ isScriptLoaded: !0 }, function () {
-                      i._initGoogleClient(), i._renderGoogleSignInButton(), i._renderGoogleOneTapPrompt()
+                    o.setState({ isScriptLoaded: !0 }, function () {
+                      o._initGoogleClient(), o._renderGoogleSignInButton(), o._renderGoogleOneTapPrompt()
                     })
                   },
                   scriptId: 'googleGSILibrary',
                   src: 'https://accounts.google.com/gsi/client',
                 })
               }),
-              b()(c()(i), '_handleOnPress', function (e) {
-                var t = i.props,
+              b()(c()(o), '_handleOnPress', function (e) {
+                var t = o.props,
                   n = t.analytics,
                   r = t.buttonState,
                   a = t.fetchSsoInitToken
                 n.scribe({ component: 'google_sign_in', element: r, action: 'click' }),
                   a(w.A.Google).then(function () {
-                    i._handleGoogleAccSignInSuccess(e)
+                    o._handleGoogleAccSignInSuccess(e)
                   })
               }),
-              b()(c()(i), '_handleGoogleAccSignInSuccess', function (e) {
-                var t = i.props,
+              b()(c()(o), '_handleGoogleAccSignInSuccess', function (e) {
+                var t = o.props,
                   n = t.analytics,
                   r = t.buttonState,
                   a = t.history,
-                  o = t.personalizationSettings,
+                  i = t.personalizationSettings,
                   s = t.shouldPropagateP13nSettings,
                   c = t.ssoInitTokens,
-                  u = o || {},
+                  u = i || {},
                   l = u.allowCookieUse,
                   p = u.allowDeviceAccess,
                   f = u.allowPartnerships,
@@ -1148,12 +1148,12 @@
                     },
                   })
               }),
-              (i.state = { isScriptLoaded: !1 }),
-              i
+              (o.state = { isScriptLoaded: !1 }),
+              o
             )
           }
           return (
-            o()(n, [
+            i()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -1206,8 +1206,8 @@
       n('OZaJ')
       var r = n('VrFO'),
         a = n.n(r),
-        i = n('Y9Ll'),
-        o = n.n(i),
+        o = n('Y9Ll'),
+        i = n.n(o),
         s = n('1Pcy'),
         c = n.n(s),
         u = n('5Yy7'),
@@ -1341,9 +1341,9 @@
         function n() {
           var e
           a()(this, n)
-          for (var r = arguments.length, i = new Array(r), o = 0; o < r; o++) i[o] = arguments[o]
+          for (var r = arguments.length, o = new Array(r), i = 0; i < r; i++) o[i] = arguments[i]
           return (
-            (e = t.call.apply(t, [this].concat(i))),
+            (e = t.call.apply(t, [this].concat(o))),
             b()(c()(e), '_handleSignupClick', function () {
               e.props.analytics.scribeAction('signup')
             }),
@@ -1351,7 +1351,7 @@
           )
         }
         return (
-          o()(n, [
+          i()(n, [
             {
               key: 'render',
               value: function () {

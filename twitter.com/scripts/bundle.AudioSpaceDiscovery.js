@@ -31,8 +31,8 @@
         h = n('AuHH'),
         d = n.n(h),
         y = n('mAxt'),
-        b = n.n(y),
-        m = (n('2G9S'), n('CEs6'))
+        m = n.n(y),
+        b = (n('2G9S'), n('CEs6'))
       function v(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -70,7 +70,7 @@
           )
         }
         return n
-      })(b()(Error))
+      })(m()(Error))
       s()(g, 'displayName', 'ProxseeApiError')
       var O,
         w = n('epkG'),
@@ -158,7 +158,7 @@
                 value: function () {
                   if (!this.initialized()) return !1
                   var e = k.store.getState()
-                  return Object(j.l)(e)
+                  return Object(j.m)(e)
                 },
               },
               {
@@ -171,7 +171,7 @@
                 key: 'dispatch',
                 value: function (e) {
                   return this.initialized()
-                    ? this.client.dispatch(e).then(m.a)
+                    ? this.client.dispatch(e).then(b.a)
                     : Promise.reject(new Error('[ProxseeApi] config not initialized'))
                 },
               },
@@ -304,7 +304,7 @@
                     (function (e, t) {
                       var n = e.uri,
                         r = t.status,
-                        o = Object(m.a)(t)
+                        o = Object(b.a)(t)
                       return new g(n, r, o.msg)
                     })(e, t),
                   )
@@ -400,8 +400,8 @@
         h = n('AuHH'),
         d = n.n(h),
         y = n('KEM+'),
-        b = n.n(y),
-        m = (n('2G9S'), n('LJOr'), n('KqXw'), n('ERkP')),
+        m = n.n(y),
+        b = (n('2G9S'), n('LJOr'), n('KqXw'), n('ERkP')),
         v = n('sTyV'),
         g = n('6/RC'),
         O = n('sebV'),
@@ -446,7 +446,7 @@
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
             ? B(Object(n), !0).forEach(function (t) {
-                b()(e, t, n[t])
+                m()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
@@ -499,7 +499,7 @@
             for (var r = arguments.length, a = new Array(r), c = 0; c < r; c++) a[c] = arguments[c]
             return (
               (e = t.call.apply(t, [this].concat(a))),
-              b()(s()(e), '_bindKeyboardShortcuts', function () {
+              m()(s()(e), '_bindKeyboardShortcuts', function () {
                 var t,
                   n,
                   r = e.props,
@@ -515,15 +515,15 @@
                   },
                   i =
                     ((t = {}),
-                    b()(t, k.e.search, c()),
-                    b()(t, k.e.goToUser, c('@')),
-                    b()(t, k.e.openKeyboardShortcuts, function () {
+                    m()(t, k.e.search, c()),
+                    m()(t, k.e.goToUser, c('@')),
+                    m()(t, k.e.openKeyboardShortcuts, function () {
                       return o.push('/i/keyboard_shortcuts')
                     }),
-                    b()(t, k.e.goExplore, function () {
+                    m()(t, k.e.goExplore, function () {
                       return o.push('/explore')
                     }),
-                    b()(t, k.e.goSettings, function () {
+                    m()(t, k.e.goSettings, function () {
                       return o.push('/settings')
                     }),
                     t),
@@ -531,13 +531,13 @@
                     var t
                     return (
                       (t = {}),
-                      b()(t, k.e.goProfile, function () {
+                      m()(t, k.e.goProfile, function () {
                         return o.push('/'.concat(e))
                       }),
-                      b()(t, k.e.goLikes, function () {
+                      m()(t, k.e.goLikes, function () {
                         return o.push('/'.concat(e, '/likes'))
                       }),
-                      b()(t, k.e.goLists, function () {
+                      m()(t, k.e.goLists, function () {
                         return o.push('/'.concat(e, '/lists'))
                       }),
                       t
@@ -549,7 +549,7 @@
                       ? F(
                           F({}, s(a)),
                           {},
-                          b()({}, k.e.goTopArticles, function () {
+                          m()({}, k.e.goTopArticles, function () {
                             return o.push('/i/articles')
                           }),
                         )
@@ -560,31 +560,31 @@
                     F(F({}, i), l),
                     {},
                     ((n = {}),
-                    b()(n, k.e.goHome, function () {
+                    m()(n, k.e.goHome, function () {
                       return o.push('/home')
                     }),
-                    b()(n, k.e.goDisplay, function () {
+                    m()(n, k.e.goDisplay, function () {
                       return o.push('/i/display')
                     }),
-                    b()(n, k.e.goNotifications, function () {
+                    m()(n, k.e.goNotifications, function () {
                       return o.push('/notifications')
                     }),
-                    b()(n, k.e.goMentions, function () {
+                    m()(n, k.e.goMentions, function () {
                       return o.push('/notifications/mentions')
                     }),
-                    b()(n, k.e.goMessages, function () {
+                    m()(n, k.e.goMessages, function () {
                       return o.push('/messages')
                     }),
-                    b()(n, k.e.newMessage, function () {
+                    m()(n, k.e.newMessage, function () {
                       return o.push('/messages/compose')
                     }),
-                    b()(n, k.e.newTweet, function () {
+                    m()(n, k.e.newTweet, function () {
                       return o.push('/compose/tweet')
                     }),
-                    b()(n, k.e.goMomentMaker, function () {
+                    m()(n, k.e.goMomentMaker, function () {
                       return o.push('/i/moment_maker')
                     }),
-                    b()(n, k.e.goBookmarks, function () {
+                    m()(n, k.e.goBookmarks, function () {
                       return o.push('/i/bookmarks')
                     }),
                     n),
@@ -592,12 +592,12 @@
                   f = e.props.loggedInUserScreenName ? p : i
                 e._unbindKeyboardShortcuts = Object(v.a)(f)
               }),
-              b()(s()(e), '_handleKeyDown', function (t) {
+              m()(s()(e), '_handleKeyDown', function (t) {
                 z(t) ||
                   'Backspace' !== t.key ||
                   ((e._backspaceDown = Date.now()), t.preventDefault(), t.stopPropagation())
               }),
-              b()(s()(e), '_handleKeyUp', function (t) {
+              m()(s()(e), '_handleKeyUp', function (t) {
                 if (!z(t) && 'Backspace' === t.key) {
                   t.preventDefault(), t.stopPropagation()
                   var n = e._backspaceDown,
@@ -635,11 +635,11 @@
                 key: 'render',
                 value: function () {
                   return this.props.loggedInUserScreenName
-                    ? m.createElement(
+                    ? b.createElement(
                         x.a,
                         { accessibilityLevel: 2, accessibilityRole: 'heading', style: D.a.visuallyHidden },
-                        m.createElement(I.b, null, M),
-                        m.createElement(I.b, { focusable: !1, link: '/i/keyboard_shortcuts' }, V),
+                        b.createElement(I.b, null, M),
+                        b.createElement(I.b, { focusable: !1, link: '/i/keyboard_shortcuts' }, V),
                       )
                     : null
                 },
@@ -647,8 +647,8 @@
             ]),
             n
           )
-        })(m.Component)
-      b()(q, 'contextType', R.a)
+        })(b.Component)
+      m()(q, 'contextType', R.a)
       var Q = j(q),
         G = g.canUseDOM ? Object(T.a)(Q) : Object(K.a)(null)
       t.a = G
@@ -672,8 +672,8 @@
         h = (n('ho0z'), n('z84I'), n('5BYb'), n('2G9S'), n('7lsG')),
         d = n('RgK2'),
         y = n.n(d),
-        b = n('Irs7'),
-        m = n('MWbm'),
+        m = n('Irs7'),
+        b = n('MWbm'),
         v = n('t62R'),
         g = n('AooF'),
         O = n('6iuV'),
@@ -741,7 +741,7 @@
       function A(e) {
         var t = e.data,
           n = e.searchQuery,
-          o = Object(b.b)()
+          o = Object(m.b)()
         r.useEffect(
           function () {
             o.scribeAction('impression')
@@ -752,7 +752,7 @@
           return !!e.items.length
         })
           ? r.createElement(
-              m.a,
+              b.a,
               { style: x.root },
               t.sections.map(function (e) {
                 var t = e.items,
@@ -892,7 +892,7 @@
               r.Fragment,
               null,
               r.createElement(o.a, { deepLink: V(n, a) }),
-              r.createElement(m.a, { style: N.root }, d || y),
+              r.createElement(b.a, { style: N.root }, d || y),
             ),
           )
         },
@@ -955,14 +955,14 @@
           })().inputRef,
           n = Object(C.g)(),
           o = Object(C.h)(),
-          a = Object(b.b)(),
+          a = Object(m.b)(),
           c = H().searchQuery,
           i = r.useState(c),
           s = f()(i, 2),
           u = s[0],
           l = s[1]
         return r.createElement(
-          m.a,
+          b.a,
           { style: se.horizontal },
           r.createElement(
             Y.a,
@@ -1018,9 +1018,9 @@
           { label: u.a.g88e2a29, id: 'Upcoming' },
         ],
         ye = de[0]
-      var be = function () {
+      var me = function () {
           var e = Object(C.h)(),
-            t = Object(b.b)(),
+            t = Object(m.b)(),
             n = e.query,
             o = (n.f, pe()(n, ['f'])),
             a = Object.keys(o)
@@ -1047,8 +1047,8 @@
             })
           return r.createElement(he.a, { links: c })
         },
-        me = r.createElement(X.a, { withSearchBox: !1, withTrends: !1 }),
-        ve = r.createElement(be, null),
+        be = r.createElement(X.a, { withSearchBox: !1, withTrends: !1 }),
+        ve = r.createElement(me, null),
         ge = u.a.f5774e3a
       function Oe(e) {
         var t = e.history
@@ -1062,7 +1062,7 @@
             history: t,
             primaryContent: r.createElement(z, null),
             secondaryBar: ve,
-            sidebarContent: me,
+            sidebarContent: be,
             title: ge,
             withSearchBox: !0,
           }),

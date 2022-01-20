@@ -25,7 +25,7 @@
         R = r('rxPX'),
         O = Object(R.a)()
           .propsFromState(function () {
-            return { language: w.n, scale: g.y }
+            return { language: w.o, scale: g.y }
           })
           .propsFromActions(function () {
             return { updateSettings: g.L }
@@ -276,7 +276,7 @@
         v = r('RqPI'),
         g = r('rxPX'),
         w = Object(g.a)().propsFromState(function () {
-          return { language: v.n }
+          return { language: v.o }
         }),
         R = r('3XMw'),
         O = r.n(R),

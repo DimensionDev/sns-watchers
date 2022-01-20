@@ -41,7 +41,7 @@
           return B
         }),
         r.d(t, 'h', function () {
-          return G
+          return q
         }),
         r.d(t, 'a', function () {
           return W
@@ -170,9 +170,9 @@
             L && L.isGif
               ? (B.extraInitParams = '&media_category=dm_gif')
               : L && L.isVideo && (B.extraInitParams = '&media_category=dm_video')
-            var q = l.p(S, B),
-              W = [t(q)],
-              V = (G(D, b) || {}).found_media_origin
+            var G = l.p(S, B),
+              W = [t(G)],
+              V = (q(D, b) || {}).found_media_origin
             return (
               L && L.isGif && W.push(Object(_.a)(L)),
               Promise.all(W).then(
@@ -321,13 +321,13 @@
         B = function (e, t) {
           return l.l(e, N(e, t))
         },
-        G = function (e, t) {
+        q = function (e, t) {
           var r = I(e, t)
           return r ? r.gifMetadata : null
         },
-        q = 'rweb/dmComposer/ADD_MEDIA',
+        G = 'rweb/dmComposer/ADD_MEDIA',
         W = function (e, t, r) {
-          return { payload: { isUploading: !1, mediaId: i()(t, 1)[0], gifMetadata: r }, type: q, conversationId: e }
+          return { payload: { isUploading: !1, mediaId: i()(t, 1)[0], gifMetadata: r }, type: G, conversationId: e }
         },
         V = 'rweb/dmComposer/CANCEL_UPLOAD',
         X = function (e) {
@@ -360,7 +360,7 @@
             t = arguments.length > 1 ? arguments[1] : void 0,
             r = t.conversationId || 'new_group'
           switch (t.type) {
-            case q:
+            case G:
               var n = e[r] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
               return T(T({}, e), {}, d()({}, r, T(T({}, n), t.payload)))
             case z:
@@ -451,17 +451,17 @@
           return t.location && t.location.state && t.location.state.conversationSection
         },
         B = function (e, t) {
-          return Object(j.e)(G(e, t))
-        },
-        G = function (e, t) {
-          return t.match.params.reportType
+          return Object(j.e)(q(e, t))
         },
         q = function (e, t) {
+          return t.match.params.reportType
+        },
+        G = function (e, t) {
           return t.match.params.reportedId
         },
         W = function (e, t) {
-          var r = G(e, t),
-            n = q(0, t)
+          var r = q(e, t),
+            n = G(0, t)
           switch (r) {
             case j.a.Tweet:
             case j.a.AppealTweetWarning:
@@ -473,20 +473,20 @@
           }
         },
         V = function (e, t) {
-          var r = G(e, t) === j.a.User ? q(0, t) : void 0
+          var r = q(e, t) === j.a.User ? G(0, t) : void 0
           return r ? k.e.select(e, r) : void 0
         },
         X = function (e, t) {
           var r,
-            n = G(e, t)
+            n = q(e, t)
           if (
             ((n !== j.a.DMConversation && n !== j.a.DMMessage) ||
-              (r = n === j.a.DMConversation ? q(0, t) : t.location.state ? t.location.state.conversationId : void 0),
+              (r = n === j.a.DMConversation ? G(0, t) : t.location.state ? t.location.state.conversationId : void 0),
             r)
           ) {
             var o = Object(I.a)(e, r),
               a = (function (e, t) {
-                return y.p(e)
+                return y.q(e)
               })(e)
             return Q(o, a)
           }
@@ -505,14 +505,14 @@
             )
         },
         Y = function (e, t) {
-          return G(e, t) === j.a.Moment ? C.a.select(e, q(0, t)) : void 0
+          return q(e, t) === j.a.Moment ? C.a.select(e, G(0, t)) : void 0
         },
         K = function (e, t) {
-          var r = G(e, t) === j.a.List ? q(0, t) : void 0
+          var r = q(e, t) === j.a.List ? G(0, t) : void 0
           return r ? O.a.select(e, r) : void 0
         },
         z = function (e, t) {
-          var r = G(e, t) === j.a.Moment ? q(0, t) : void 0
+          var r = q(e, t) === j.a.Moment ? G(0, t) : void 0
           return r ? T.a.select(e, r) : void 0
         },
         J = Object(D.a)()
@@ -521,16 +521,16 @@
               canGoBack: R.a,
               clientReferer: x,
               dmConversation: X,
-              reportedId: q,
+              reportedId: G,
               inboxType: P,
               isMedia: N,
-              lang: y.n,
+              lang: y.o,
               liveEvent: z,
               moment: Y,
               list: K,
               promotedContent: H,
               conversationSection: F,
-              reportType: G,
+              reportType: q,
               reportSource: B,
               scribeNamespace: L,
               tweet: W,
@@ -1187,7 +1187,7 @@
       })
       var n = r('AQ79'),
         o = function (e, t) {
-          return e[n.b] ? e[n.b].conversations[t] : null
+          return e[n.c] ? e[n.c].conversations[t] : null
         }
     },
     'X/yg': function (e, t, r) {
@@ -1269,7 +1269,7 @@
           )
         }
       function p(e) {
-        return e === i.c.SECONDARY ? c.c.REQUESTS : e === i.c.TERTIARY ? c.c.LOW_QUALITY : c.c.PRIMARY
+        return e === i.d.SECONDARY ? c.c.REQUESTS : e === i.d.TERTIARY ? c.c.LOW_QUALITY : c.c.PRIMARY
       }
       function m(e) {
         return e.isTrue('dm_voice_rendering_enabled')
@@ -1292,16 +1292,16 @@
         return { name: (n && n.name) || '', screenName: (n && n.screen_name) || '', idStr: (n && n.id_str) || '' }
       }
       var b = function (e) {
-          return e === i.c.TERTIARY
+          return e === i.d.TERTIARY
             ? 'low_quality_timeline'
-            : e === i.c.SECONDARY
+            : e === i.d.SECONDARY
             ? 'requests_timeline'
             : 'inbox_timeline'
         },
         h = function (e) {
-          return e === i.c.TERTIARY
+          return e === i.d.TERTIARY
             ? '/messages/requests/additional'
-            : e === i.c.SECONDARY
+            : e === i.d.SECONDARY
             ? '/messages/requests'
             : '/messages'
         },

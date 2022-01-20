@@ -976,7 +976,7 @@
             isCurationStudioMoment: function (e) {
               return u.a.selectIsCurationStudioMoment(e, t.content.momentId)
             },
-            isLoggedIn: ae.l,
+            isLoggedIn: ae.m,
             isTOO: function (e) {
               return u.a.selectIsTOO(e, t.content.momentId)
             },
@@ -1068,7 +1068,7 @@
           return function (t, n, r) {
             var i = r.api,
               o = n(),
-              a = Object(E.p)(o) || '',
+              a = Object(E.q)(o) || '',
               c = Object(C.c)(o),
               s = Object(_.a)(a),
               l = { moment_id: e, teamUserId: c }

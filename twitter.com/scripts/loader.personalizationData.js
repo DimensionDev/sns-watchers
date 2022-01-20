@@ -260,7 +260,7 @@
         j = function (e) {
           return e.personalization.data.data
         },
-        C = Object(f.createSelector)(o.l, R, c.g, function (e, t, r) {
+        C = Object(f.createSelector)(o.m, R, c.g, function (e, t, r) {
           var n = e ? [z, r] : [y, t],
             i = a()(n, 2),
             s = i[0],
@@ -403,7 +403,7 @@
               i = n.featureSwitches
             if (Object(l.a)(e)) return Promise.resolve()
             var f = r(),
-              d = o.l(f),
+              d = o.m(f),
               p = d ? z : y,
               _ = Object.keys(e).reduce(function (t, r) {
                 r in p && (t[p[r]] = e[r])

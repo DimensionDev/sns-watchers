@@ -22,7 +22,7 @@
           return Object(u.a)(a.match)
         },
         f = Object(m.a)().propsFromState(function () {
-          return { broadcastId: g, loggedInUserId: b.p }
+          return { broadcastId: g, loggedInUserId: b.q }
         }),
         v = t('jHSc'),
         h = t('aITJ'),

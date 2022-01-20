@@ -158,7 +158,7 @@
                 value: function () {
                   if (!this.initialized()) return !1
                   var e = j.store.getState()
-                  return Object(S.l)(e)
+                  return Object(S.m)(e)
                 },
               },
               {

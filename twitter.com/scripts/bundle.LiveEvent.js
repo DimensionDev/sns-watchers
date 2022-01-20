@@ -3028,7 +3028,7 @@
           return function (t, n, r) {
             var i = r.api,
               a = n(),
-              o = Object(w.p)(a) || '',
+              o = Object(w.q)(a) || '',
               c = Object(E.c)(a),
               l = Object(I.a)(o),
               s = { moment_id: e, teamUserId: c }
@@ -5261,9 +5261,9 @@
                   var e = K.a.theme.spaces,
                     t = this.props.dmDrawerVisibility,
                     n = parseInt(''.concat(e.space20), 10)
-                  return t === At.a.COLLAPSED
+                  return t === At.b.COLLAPSED
                     ? kt.a.dmDrawerHeight.collapsed + n
-                    : t === At.a.EXPANDED
+                    : t === At.b.EXPANDED
                     ? kt.a.dmDrawerHeight.expanded + n
                     : n
                 },

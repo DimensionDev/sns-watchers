@@ -718,7 +718,7 @@
           function (e, t) {
             return _.selectEntriesForConversation(e, M(0, t))
           },
-          O.p,
+          O.q,
           function (e, t) {
             return t ? Object(I.d)(e, t) : void 0
           },
@@ -729,7 +729,7 @@
           },
           _.selectEntries,
           I.l,
-          O.p,
+          O.q,
           I.m,
           I.n,
           k.e.selectAll,
@@ -2116,7 +2116,7 @@
           ),
         },
         Cn = Object(T.e)(function () {
-          return Object(S.createSelector)(Sn, En, O.p, Rn.d, function (e, t, n, r) {
+          return Object(S.createSelector)(Sn, En, O.q, Rn.d, function (e, t, n, r) {
             var i,
               a = Object(lt.a)(r, { includeInactive: !0 }),
               o = 0
@@ -2164,7 +2164,7 @@
           ),
         },
         jn = Object(T.e)(function () {
-          return Object(S.createSelector)(kn, Tn, O.p, In, Rn.d, function (e, t, n, r, i) {
+          return Object(S.createSelector)(kn, Tn, O.q, In, Rn.d, function (e, t, n, r, i) {
             var a = Object(lt.a)(i, { includeInactive: !0 }),
               o = []
             t.forEach(function (t) {
@@ -7418,6 +7418,12 @@
             return (
               i()(this, n),
               (a = t.call(this, e, r)),
+              v()(
+                c()(a),
+                '_isVDLEnabled',
+                a.context.featureSwitches.isTrue('dm_vdl_enabled') &&
+                  a.context.featureSwitches.isTrue('dm_vdl_chat_p0_enabled'),
+              ),
               v()(c()(a), '_renderCopy', function (e) {
                 var t = a.props.conversation,
                   n = a.context.loggedInUserId
@@ -7431,6 +7437,17 @@
                   return y.createElement(
                     ge.a,
                     { style: Rc.actionsContainer },
+                    a._isVDLEnabled &&
+                      y.createElement(
+                        kt.a,
+                        {
+                          onPress: a._handleAcceptConversation,
+                          size: 'medium',
+                          style: [Rc.actionFullWidth, Rc.actionMarginBottom],
+                          type: 'primaryOutlined',
+                        },
+                        pc,
+                      ),
                     y.createElement(
                       ge.a,
                       { style: i ? Rc.actionFullWidth : [Rc.actionHalfWidth, Rc.actionMarginRight] },
@@ -7453,16 +7470,17 @@
                       },
                       fc,
                     ),
-                    y.createElement(
-                      kt.a,
-                      {
-                        onPress: a._handleAcceptConversation,
-                        size: 'medium',
-                        style: [Rc.actionFullWidth, Rc.actionMarginTop],
-                        type: 'primaryOutlined',
-                      },
-                      pc,
-                    ),
+                    !a._isVDLEnabled &&
+                      y.createElement(
+                        kt.a,
+                        {
+                          onPress: a._handleAcceptConversation,
+                          size: 'medium',
+                          style: [Rc.actionFullWidth, Rc.actionMarginTop],
+                          type: 'primaryOutlined',
+                        },
+                        pc,
+                      ),
                   )
                 })
               }),
@@ -7526,7 +7544,7 @@
                     p = u.name
                   c(d, i).then(function () {
                     n({ action: { label: vc, onAction: a._handleUnmuteDMUserClick(e) }, text: hc({ name: p }) }),
-                      s !== nc.c.TERTIARY && e.replace('/messages/requests')
+                      s !== nc.d.TERTIARY && e.replace('/messages/requests')
                   }, o()),
                     a._scribeAction('mute_user')
                 }
@@ -7696,6 +7714,7 @@
             actionMarginRight: { marginRight: e.spaces.space4 },
             actionMarginLeft: { marginLeft: e.spaces.space4 },
             actionMarginTop: { marginTop: e.spaces.space12 },
+            actionMarginBottom: { marginBottom: e.spaces.space12 },
           }
         }),
         Oc = Object(sc.c)({ element: 'untrusted_interstitial' })(tc(_c)),
@@ -8412,7 +8431,7 @@
           )
         }
       function p(e) {
-        return e === o.c.SECONDARY ? s.c.REQUESTS : e === o.c.TERTIARY ? s.c.LOW_QUALITY : s.c.PRIMARY
+        return e === o.d.SECONDARY ? s.c.REQUESTS : e === o.d.TERTIARY ? s.c.LOW_QUALITY : s.c.PRIMARY
       }
       function f(e) {
         return e.isTrue('dm_voice_rendering_enabled')
@@ -8435,16 +8454,16 @@
         return { name: (r && r.name) || '', screenName: (r && r.screen_name) || '', idStr: (r && r.id_str) || '' }
       }
       var y = function (e) {
-          return e === o.c.TERTIARY
+          return e === o.d.TERTIARY
             ? 'low_quality_timeline'
-            : e === o.c.SECONDARY
+            : e === o.d.SECONDARY
             ? 'requests_timeline'
             : 'inbox_timeline'
         },
         g = function (e) {
-          return e === o.c.TERTIARY
+          return e === o.d.TERTIARY
             ? '/messages/requests/additional'
-            : e === o.c.SECONDARY
+            : e === o.d.SECONDARY
             ? '/messages/requests'
             : '/messages'
         },

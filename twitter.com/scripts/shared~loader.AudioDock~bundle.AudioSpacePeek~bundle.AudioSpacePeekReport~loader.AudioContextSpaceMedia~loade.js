@@ -2012,15 +2012,7 @@
           n = o
         }
       }
-      var oe = {
-        default: {
-          buildDockConfig: function () {
-            return null
-          },
-        },
-        space: r,
-        voiceTweet: a,
-      }
+      var oe = { default: { buildDockConfig: n('0zXz').a }, space: r, voiceTweet: a }
       function ce(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
@@ -2646,7 +2638,7 @@
                 value: function () {
                   if (!this.initialized()) return !1
                   var e = j.store.getState()
-                  return Object(E.l)(e)
+                  return Object(E.m)(e)
                 },
               },
               {
@@ -4106,7 +4098,7 @@
           d,
           p,
           f = Object(C.b)(),
-          m = Object(R.a)(s.l),
+          m = Object(R.a)(s.m),
           h = (function (e) {
             var t = (function () {
                 var e = Object(I.a)(),
@@ -6786,7 +6778,7 @@
       function Ot(e) {
         var t = (function (e) {
             var t = Object(S.a)(e).utils,
-              n = Object(ct.a)(vt.l),
+              n = Object(ct.a)(vt.m),
               r = p.k().openSheet,
               a = []
             n &&

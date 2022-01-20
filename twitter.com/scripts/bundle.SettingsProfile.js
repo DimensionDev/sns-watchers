@@ -89,8 +89,8 @@
         f = n.n(h),
         m = n('KEM+'),
         v = n.n(m),
-        y = (n('Rqga'), n('2G9S'), n('ERkP')),
-        g = n('/yvb'),
+        g = (n('Rqga'), n('2G9S'), n('ERkP')),
+        y = n('/yvb'),
         b = n('3XMw'),
         _ = n.n(b),
         P = n('3rX5'),
@@ -111,7 +111,7 @@
           var t = e.circle,
             n = e.height,
             r = e.width
-          return y.createElement(S.a, {
+          return g.createElement(S.a, {
             pointerEvents: 'none',
             style: [C.mask, { width: r, height: n }, t && C.circle],
           })
@@ -251,7 +251,7 @@
                       e.onPinchMove,
                       e.onWheel,
                       D()(e, ['children', 'onPanEnd', 'onPanMove', 'onPinchMove', 'onWheel']))
-                  return y.createElement(
+                  return g.createElement(
                     S.a,
                     R()({}, t, { onWheel: this._handleWheel, ref: this._setRef }, this._panResponder.panHandlers),
                     this.props.children,
@@ -269,9 +269,9 @@
             ]),
             n
           )
-        })(y.Component),
-        T = n('9RkS'),
-        k = n('rOXj'),
+        })(g.Component),
+        k = n('9RkS'),
+        T = n('rOXj'),
         x = n('aITJ'),
         U = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('Lsrn')),
         F = n('k/Ka')
@@ -302,7 +302,7 @@
         }
         return e
       }
-      var V = function () {
+      var z = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
         return Object(F.a)(
           'svg',
@@ -311,17 +311,17 @@
             {},
             { accessibilityHidden: void 0 === e.accessibilityLabel, style: [U.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          y.createElement(
+          g.createElement(
             'g',
             null,
-            y.createElement('path', {
+            g.createElement('path', {
               d: 'M19.75 19.944H4.25c-1.24 0-2.25-1.01-2.25-2.25V6.306c0-1.24 1.01-2.25 2.25-2.25h15.5c1.24 0 2.25 1.01 2.25 2.25v11.39c0 1.24-1.01 2.248-2.25 2.248zM4.25 5.556c-.413 0-.75.337-.75.75v11.39c0 .412.337.75.75.75h15.5c.413 0 .75-.338.75-.75V6.305c0-.413-.337-.75-.75-.75H4.25z',
             }),
           ),
         )
       }
-      V.metadata = { width: 24, height: 24 }
-      var z = V
+      z.metadata = { width: 24, height: 24 }
+      var V = z
       function W(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
@@ -358,10 +358,10 @@
             {},
             { accessibilityHidden: void 0 === e.accessibilityLabel, style: [U.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          y.createElement(
+          g.createElement(
             'g',
             null,
-            y.createElement('path', {
+            g.createElement('path', {
               d: 'M19.75 19.89H4.25C3.01 19.89 2 18.88 2 17.64v-7.28c0-1.24 1.01-2.25 2.25-2.25h15.5c1.24 0 2.25 1.01 2.25 2.25v7.277c0 1.24-1.01 2.25-2.25 2.25zM4.25 9.61c-.413 0-.75.338-.75.75v7.278c0 .413.337.75.75.75h15.5c.413 0 .75-.337.75-.75V10.36c0-.412-.337-.75-.75-.75H4.25z',
             }),
           ),
@@ -405,10 +405,10 @@
             {},
             { accessibilityHidden: void 0 === e.accessibilityLabel, style: [U.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          y.createElement(
+          g.createElement(
             'g',
             null,
-            y.createElement('path', {
+            g.createElement('path', {
               d: 'M19.75 22H4.25C3.01 22 2 20.99 2 19.75V4.25C2 3.01 3.01 2 4.25 2h15.5C20.99 2 22 3.01 22 4.25v15.5c0 1.24-1.01 2.25-2.25 2.25zM4.25 3.5c-.413 0-.75.337-.75.75v15.5c0 .413.337.75.75.75h15.5c.413 0 .75-.337.75-.75V4.25c0-.413-.337-.75-.75-.75H4.25z',
             }),
           ),
@@ -452,13 +452,13 @@
             {},
             { accessibilityHidden: void 0 === e.accessibilityLabel, style: [U.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          y.createElement(
+          g.createElement(
             'g',
             null,
-            y.createElement('path', {
+            g.createElement('path', {
               d: 'M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z',
             }),
-            y.createElement('path', {
+            g.createElement('path', {
               d: 'M15.21 11c0 .41-.34.75-.75.75h-2.71v2.71c0 .41-.34.75-.75.75s-.75-.34-.75-.75v-2.71H7.54c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h2.71V7.54c0-.41.34-.75.75-.75s.75.34.75.75v2.71h2.71c.41 0 .75.34.75.75z',
             }),
           ),
@@ -502,13 +502,13 @@
             {},
             { accessibilityHidden: void 0 === e.accessibilityLabel, style: [U.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          y.createElement(
+          g.createElement(
             'g',
             null,
-            y.createElement('path', {
+            g.createElement('path', {
               d: 'M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z',
             }),
-            y.createElement('path', {
+            g.createElement('path', {
               d: 'M14.46 11.75H7.54c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h6.92c.415 0 .75.336.75.75s-.335.75-.75.75z',
             }),
           ),
@@ -561,7 +561,7 @@
               v()(s()(r), '_previousTop', 0),
               v()(s()(r), '_panStyles', { top: 0, left: 0 }),
               v()(s()(r), '_shouldShowZoomControl', function () {
-                return (!x.b.isMobileOS() || !k.a.isTouchSupported()) && r.props.withZoomControl
+                return (!x.b.isMobileOS() || !T.a.isTouchSupported()) && r.props.withZoomControl
               }),
               v()(s()(r), '_renderControls', function () {
                 var e = r.props,
@@ -571,52 +571,52 @@
                   i = t.width / t.height,
                   o = r._shouldShowZoomControl()
                 return n || o
-                  ? y.createElement(
+                  ? g.createElement(
                       S.a,
                       { style: ve.controlsContainer },
                       n
-                        ? y.createElement(
+                        ? g.createElement(
                             S.a,
                             { style: ve.ratioContainer },
-                            y.createElement(g.a, {
+                            g.createElement(y.a, {
                               accessibilityLabel: se,
                               borderColor: 'transparent',
                               color: a === i ? 'primary' : 'gray700',
                               hoverLabel: { label: de },
-                              icon: y.createElement(z, null),
+                              icon: g.createElement(V, null),
                               onPress: r._setAspectRatio(i),
                               size: 'medium',
                             }),
-                            y.createElement(g.a, {
+                            g.createElement(y.a, {
                               accessibilityLabel: le,
                               borderColor: 'transparent',
                               color: a === 16 / 9 ? 'primary' : 'gray700',
                               hoverLabel: { label: pe },
-                              icon: y.createElement(Y, null),
+                              icon: g.createElement(Y, null),
                               onPress: r._setAspectRatio(16 / 9),
                               size: 'medium',
                             }),
-                            y.createElement(g.a, {
+                            g.createElement(y.a, {
                               accessibilityLabel: ue,
                               borderColor: 'transparent',
                               color: 1 === a ? 'primary' : 'gray700',
                               hoverLabel: { label: he },
-                              icon: y.createElement(q, null),
+                              icon: g.createElement(q, null),
                               onPress: r._setAspectRatio(1),
                               size: 'medium',
                             }),
                           )
                         : null,
                       o
-                        ? y.createElement(
+                        ? g.createElement(
                             S.a,
                             { style: ve.zoomContainer },
-                            y.createElement(T.a, {
+                            g.createElement(k.a, {
                               accessibilityLabel: ce,
                               max: r._maxScale,
-                              maxIcon: y.createElement(te, { style: ve.icon }),
+                              maxIcon: g.createElement(te, { style: ve.icon }),
                               min: 0,
-                              minIcon: y.createElement(ie, { style: ve.icon }),
+                              minIcon: g.createElement(ie, { style: ve.icon }),
                               onChange: r._handleScaleChange,
                               step: 'any',
                               value: r.state.imageScale,
@@ -781,10 +781,10 @@
                     s = c.height,
                     l = c.width,
                     u = this.state.containerWidth && this.state.containerHeight
-                  return y.createElement(
+                  return g.createElement(
                     S.a,
                     { style: ve.container },
-                    y.createElement(
+                    g.createElement(
                       I,
                       {
                         onLayout: this._handleLayout,
@@ -795,15 +795,15 @@
                         style: ve.root,
                       },
                       u
-                        ? y.createElement(
-                            y.Fragment,
+                        ? g.createElement(
+                            g.Fragment,
                             null,
-                            y.createElement(P.a, {
+                            g.createElement(P.a, {
                               ref: this._setImageRef,
                               source: { uri: n.src, width: o, height: i },
                               style: ve.image,
                             }),
-                            y.createElement(O, { circle: t, height: s, width: l }),
+                            g.createElement(O, { circle: t, height: s, width: l }),
                           )
                         : null,
                     ),
@@ -835,7 +835,7 @@
             ]),
             n
           )
-        })(y.Component)
+        })(g.Component)
       v()(me, 'defaultProps', { circle: !1, withZoomControl: !0 })
       var ve = E.a.create(function (e) {
         return {
@@ -899,8 +899,8 @@
         f = n.n(h),
         m = (n('uFXj'), n('ERkP')),
         v = n('LCtV'),
-        y = n('3XMw'),
-        g = n.n(y),
+        g = n('3XMw'),
+        y = n.n(g),
         b = n('VPdC'),
         _ = n('pKoL'),
         P = n('MWbm'),
@@ -932,8 +932,8 @@
           return u()(this, n)
         }
       }
-      var D = g.a.b87ca51a,
-        j = g.a.eebff22c,
+      var D = y.a.b87ca51a,
+        j = y.a.eebff22c,
         A = (function (e) {
           s()(n, e)
           var t = B(n)
@@ -990,8 +990,9 @@
                     hoverLabel: { label: D },
                     icon: m.createElement(M.a, null),
                     onPress: e,
+                    size: 'large',
                     style: I.rightButton,
-                    type: 'onMediaText',
+                    type: 'onMediaDominantColorFilled',
                   })
                 },
               },
@@ -1005,8 +1006,9 @@
                     accessibilityLabel: j,
                     icon: m.createElement(w.a, null),
                     onPress: t,
+                    size: 'large',
                     style: n ? I.middleButton : I.rightButton,
-                    type: 'onMediaText',
+                    type: 'onMediaDominantColorFilled',
                   })
                 },
               },
@@ -1027,14 +1029,16 @@
                         accessibilityLabel: r,
                         icon: o,
                         onChange: a,
-                        type: 'onMediaText',
+                        size: 'large',
+                        type: 'onMediaDominantColorFilled',
                       })
                     : m.createElement(S.a, {
                         accessibilityLabel: r,
                         icon: o,
                         onPress: i,
+                        size: 'large',
                         style: I.edit,
-                        type: 'onMediaText',
+                        type: 'onMediaDominantColorFilled',
                       })
                 },
               },
@@ -1151,7 +1155,7 @@
           return I
         }),
         n.d(t, 'g', function () {
-          return k
+          return T
         }),
         n.d(t, 'f', function () {
           return x
@@ -1205,8 +1209,8 @@
       var f = ''.concat(u.a, '/profile'),
         m = 'rweb/'.concat(f),
         v = c.a(m, 'REMOVE_PROFILE_BANNER'),
-        y = c.a(m, 'UPDATE_PROFILE'),
-        g = c.a(m, 'UPDATE_PROFILE_AVATAR'),
+        g = c.a(m, 'UPDATE_PROFILE'),
+        y = c.a(m, 'UPDATE_PROFILE_AVATAR'),
         b = c.a(m, 'UPDATE_PROFILE_BANNER'),
         _ = c.a(m, 'UPLOAD_MEDIA'),
         P = { avatarMediaId: null, bannerMediaId: null, isUploading: !1, profileSettings: null }
@@ -1239,9 +1243,9 @@
         I = function (e) {
           return { meta: { profileSettings: e }, type: L }
         },
-        T = 'rweb/settings/profile/RESET_PERSISTED_PROFILE_SETTINGS',
-        k = function () {
-          return { type: T }
+        k = 'rweb/settings/profile/RESET_PERSISTED_PROFILE_SETTINGS',
+        T = function () {
+          return { type: k }
         },
         x = function (e) {
           return function (t, n, r) {
@@ -1258,7 +1262,7 @@
           return function (t, n, r) {
             var a = r.api
             return c.b(t, { params: e, request: a.Settings.updateProfile })(
-              { actionTypes: y, context: 'ACTION_UPDATE_PROFILE_SETTINGS' },
+              { actionTypes: g, context: 'ACTION_UPDATE_PROFILE_SETTINGS' },
               function (e) {
                 if (e && e.entities) return [Object(l.c)(e.entities)]
               },
@@ -1276,7 +1280,7 @@
                   var s = a()(r, 1)[0]
                   i([{ type: _.SUCCESS }, { type: e.REQUEST }])
                   return c.b(i, { params: { media_id: s.uploadId }, request: n(p) })(
-                    { actionTypes: y, context: t },
+                    { actionTypes: g, context: t },
                     function (e) {
                       if (e) return [Object(l.c)({ users: o()({}, e.id_str, e) })]
                     },
@@ -1289,7 +1293,7 @@
             }
           }
         },
-        N = F(g, 'ACTION_UPDATE_USER_AVATAR', function (e) {
+        N = F(y, 'ACTION_UPDATE_USER_AVATAR', function (e) {
           return e.Settings.updateProfileAvatar
         }),
         H = F(b, 'ACTION_UPDATE_USER_BANNER', function (e) {
@@ -1310,7 +1314,7 @@
               return h(h({}, e), {}, { bannerMediaId: null })
             case L:
               return h(h({}, e), {}, { profileSettings: t.meta.profileSettings })
-            case T:
+            case k:
               return h(h({}, e), {}, { profileSettings: null })
             case _.REQUEST:
               return h(h({}, e), {}, { isUploading: !0 })
@@ -1340,8 +1344,8 @@
         f = n.n(h),
         m = n('ERkP'),
         v = n('3XMw'),
-        y = n.n(v),
-        g = n('MWbm'),
+        g = n.n(v),
+        y = n('MWbm'),
         b = n('Qwev'),
         _ = n('21U8'),
         P = n('rHpw'),
@@ -1368,7 +1372,7 @@
           return p()(this, n)
         }
       }
-      var O = y.a.gff1f69e,
+      var O = g.a.gff1f69e,
         M = (function (e) {
           u()(n, e)
           var t = C(n)
@@ -1418,7 +1422,7 @@
                     d = void 0 === u ? {} : u
                   return c
                     ? m.createElement(
-                        g.a,
+                        y.a,
                         { style: w.cropper },
                         m.createElement(_.a, {
                           circle: this.props.circle,
@@ -1526,11 +1530,11 @@
         f = n.n(h),
         m = n('KEM+'),
         v = n.n(m),
-        y = (n('2G9S'), n('hCOa'), n('87if'), n('hBpG'), n('jQ3i'), n('x4t0'), n('z84I'), n('ERkP')),
-        g = n('AspN'),
+        g = (n('2G9S'), n('hCOa'), n('87if'), n('hBpG'), n('jQ3i'), n('x4t0'), n('z84I'), n('ERkP')),
+        y = n('AspN'),
         b = n('rxPX'),
         _ = Object(b.a)().propsFromActions(function () {
-          return { addMedia: g.b, processMultipleMedia: g.g }
+          return { addMedia: y.b, processMultipleMedia: y.g }
         }),
         P = n('2Daw'),
         E = n('VPdC')
@@ -1612,7 +1616,7 @@
                   l = e.onCrop,
                   u = e.onRemove,
                   d = e.rootStyle
-                return y.createElement(P.a, {
+                return g.createElement(P.a, {
                   acceptGifs: t,
                   acceptVideo: n,
                   accessibilityLabel: r,
@@ -1632,7 +1636,7 @@
           ]),
           n
         )
-      })(y.Component)
+      })(g.Component)
       v()(C, 'defaultProps', { acceptGifs: !1, acceptVideo: !1 })
       var O = _(C)
       t.default = O
@@ -1738,12 +1742,12 @@
         f = n('AuHH'),
         m = n.n(f),
         v = n('KEM+'),
-        y = n.n(v),
-        g = n('/NU0'),
+        g = n.n(v),
+        y = n('/NU0'),
         b = n('rxPX'),
         _ = n('AspN'),
         P = function (e, t) {
-          return t.media ? t.media : Object(g.a)(t.mediaId) ? Object(_.k)(e, t.mediaId)[0] : void 0
+          return t.media ? t.media : Object(y.a)(t.mediaId) ? Object(_.k)(e, t.mediaId)[0] : void 0
         },
         E = function (e, t) {
           return void 0 !== t.mediaId ? t.mediaId : t.media ? t.media.id : null
@@ -1794,11 +1798,11 @@
             return (
               i()(this, n),
               (a = t.call(this, e)),
-              y()(l()(a), '_getMedia', function () {
+              g()(l()(a), '_getMedia', function () {
                 var e = a.props.media
                 return e && e.mediaFile && e.mediaFile.isImage ? e : null
               }),
-              y()(l()(a), '_renderAppBarRightControl', function () {
+              g()(l()(a), '_renderAppBarRightControl', function () {
                 var e = a.state.isProcessing
                 return r.createElement(
                   B.a,
@@ -1806,13 +1810,13 @@
                   L,
                 )
               }),
-              y()(l()(a), '_handleBackClick', function () {
+              g()(l()(a), '_handleBackClick', function () {
                 var e = a.props,
                   t = e.analytics,
                   n = e.onCancel
                 t.scribe({ action: 'cancel' }), n && n()
               }),
-              y()(l()(a), '_handleApplyButtonClick', function () {
+              g()(l()(a), '_handleApplyButtonClick', function () {
                 var e = a.props.onCropDone,
                   t = a._cropper.current
                 if (t) {
@@ -1827,7 +1831,7 @@
                   var u = t.getCropData(),
                     d = (i || {}).originalMediaFile,
                     p = !d || (0 === u.top && 0 === u.left && u.width === d.width && u.height === d.height)
-                  Object(g.a)(o) &&
+                  Object(y.a)(o) &&
                     (e
                       ? (e(u), c())
                       : (l({ id: o, cropData: p ? void 0 : u }),
@@ -1858,7 +1862,7 @@
                     C.b,
                     {
                       backButtonType: 'back',
-                      containerStyle: T.root,
+                      containerStyle: k.root,
                       documentTitle: a || A,
                       history: n,
                       onBackClick: this._handleBackClick,
@@ -1879,10 +1883,10 @@
             n
           )
         })(r.Component),
-        T = D.a.create(function (e) {
+        k = D.a.create(function (e) {
           return { root: { flexShrink: 1, height: 650 } }
         }),
-        k = S(I),
+        T = S(I),
         x = n('X8FW'),
         U = D.a.create(function (e) {
           return { modal: { width: 600, maxWidth: '90vw' } }
@@ -1891,7 +1895,7 @@
         return r.createElement(
           x.b,
           { clickMaskToClose: !1, modalSize: 'fitChildren', style: U.modal },
-          r.createElement(k, e),
+          r.createElement(T, e),
         )
       }
     },
@@ -1907,7 +1911,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'DEFAULT_BIRTHDAY', function () {
-          return Ve
+          return ze
         }),
         n.d(t, 'stylizedCharHelperText', function () {
           return We
@@ -1930,9 +1934,9 @@
         f = n('N+ot'),
         m = n.n(f),
         v = n('AuHH'),
-        y = n.n(v),
-        g = n('KEM+'),
-        b = n.n(g),
+        g = n.n(v),
+        y = n('KEM+'),
+        b = n.n(y),
         _ =
           (n('+KXO'),
           n('jwue'),
@@ -2018,8 +2022,8 @@
           PUNCTUATION: 'punctuation',
           MISC: 'miscellaneous',
         }),
-        T = Object(L.a)(I),
-        k =
+        k = Object(L.a)(I),
+        T =
           ((r = {}),
           b()(r, I.SUPERSCRIPT_AND_SUBSCRIPT, { base: '[⁰-ⁱ]|[⁴-₎]|[ₐ-ₜ]', specialChars: {} }),
           b()(r, I.CURRENCY, { base: '[₠-₿]', specialChars: { $: '[$]' } }),
@@ -2041,14 +2045,14 @@
         x = function (e) {
           var t = e.text,
             n = e.keys,
-            r = void 0 === n ? T : n,
+            r = void 0 === n ? k : n,
             a = e.includeSpecialChars,
             i = void 0 === a || a,
             o = r
               .map(function (e) {
                 return (function (e) {
                   var t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1],
-                    n = k[e],
+                    n = T[e],
                     r = ''.concat(n.base)
                   if (t) {
                     var a = n.specialChars
@@ -2066,8 +2070,8 @@
         F = n.n(U),
         N = n('jHSc'),
         H = n('fS8x'),
-        V = n('mN6z'),
-        z = n('P68U'),
+        z = n('mN6z'),
+        V = n('P68U'),
         W = n('eyty'),
         X = (n('JtPf'), n('87if'), n('zb92')),
         G = n('RuTB'),
@@ -2101,9 +2105,9 @@
         })()
         return function () {
           var n,
-            r = y()(e)
+            r = g()(e)
           if (t) {
-            var a = y()(this).constructor
+            var a = g()(this).constructor
             n = Reflect.construct(r, arguments, a)
           } else n = r.apply(this, arguments)
           return m()(this, n)
@@ -2223,8 +2227,8 @@
         fe = n('jhWN'),
         me = n('9Xij'),
         ve = n('GWvE'),
-        ye = n('/yvb'),
-        ge = n('p+r5'),
+        ge = n('/yvb'),
+        ye = n('p+r5'),
         be = n('PbQQ'),
         _e = n('Q0VY'),
         Pe = n('csss'),
@@ -2271,9 +2275,9 @@
         })()
         return function () {
           var n,
-            r = y()(e)
+            r = g()(e)
           if (t) {
-            var a = y()(this).constructor
+            var a = g()(this).constructor
             n = Reflect.construct(r, arguments, a)
           } else n = r.apply(this, arguments)
           return m()(this, n)
@@ -2286,16 +2290,16 @@
         Ae = K.a.jaaa8984,
         Le = K.a.i2209530,
         Ie = K.a.cb469ff5,
-        Te = K.a.g511f467,
-        ke = K.a.ec3a116d,
+        ke = K.a.g511f467,
+        Te = K.a.ec3a116d,
         xe = K.a.j94599ec,
         Ue = K.a.df31d76a,
         Fe = { confirmButtonLabel: K.a.g9677c6d, headline: K.a.c01a0e19 },
         Ne = { switchToProfessionalLabel: K.a.df2c469a, editProfessionalProfileLabel: K.a.e1f76977 },
         He = { headline: K.a.e554f641, text: K.a.ic04a6f5, confirmLabel: K.a.d4ab68e2 },
-        Ve = { visibility: de.a.MUTUAL_FOLLOW, year_visibility: de.a.SELF },
-        ze = {
-          birthdate: Ve,
+        ze = { visibility: de.a.MUTUAL_FOLLOW, year_visibility: de.a.SELF },
+        Ve = {
+          birthdate: ze,
           description: void 0,
           location: void 0,
           name: void 0,
@@ -2359,7 +2363,7 @@
                 var e = a.state.profileSettings.birthdate,
                   t = {}
                 return (
-                  e !== Ve &&
+                  e !== ze &&
                     ['day', 'month', 'year'].forEach(function (n) {
                       e[n] || (t[n] = !0)
                     }),
@@ -2372,8 +2376,8 @@
                   n = ['day', 'month', 'year'].every(function (e) {
                     return !!t[e]
                   }),
-                  r = (e && e.birthdate) || Ve,
-                  i = !Object(V.a)(r, t)
+                  r = (e && e.birthdate) || ze,
+                  i = !Object(z.a)(r, t)
                 return n && i
               }),
               b()(d()(a), '_shouldShowDiscardConfirmation', function () {
@@ -2402,7 +2406,7 @@
               b()(d()(a), '_handleResetBirthdate', function () {
                 var e = a.state.profileSettings,
                   t = a.props.loggedInUser && a.props.loggedInUser.birthdate
-                a.setState({ profileSettings: Me(Me({}, e), {}, { birthdate: t || Ve }), errors: {} })
+                a.setState({ profileSettings: Me(Me({}, e), {}, { birthdate: t || ze }), errors: {} })
               }),
               b()(d()(a), '_handleRemoveBirthdate', function () {
                 var e = a.props,
@@ -2413,7 +2417,7 @@
                 t.scribe({ component: 'birthdate', action: 'remove' }),
                   r({ birthdate_day: 0, birthdate_month: 0, birthdate_year: 0 })
                     .then(function () {
-                      a.setState({ profileSettings: Me(Me({}, i), {}, { birthdate: Ve }), errors: {} })
+                      a.setState({ profileSettings: Me(Me({}, i), {}, { birthdate: ze }), errors: {} })
                     })
                     .catch(n({ showToast: !0 }))
               }),
@@ -2498,7 +2502,7 @@
             var o = e.loggedInUser,
               s = e.persistedProfileSettings
             return (
-              (a._initialProfileSettings = (o && a._getInitialProfileSettings(o)) || ze),
+              (a._initialProfileSettings = (o && a._getInitialProfileSettings(o)) || Ve),
               (a.state = {
                 displayNameMaxLength: a.context.featureSwitches.getNumberValue('user_display_name_max_limit', 20),
                 profileSettings: s || a._initialProfileSettings,
@@ -2566,17 +2570,17 @@
                     f = i.showAvatarCropper,
                     m = i.showBannerCropper,
                     v = i.showDiscardConfirmation,
-                    y = P.createElement(fe.a, { size: 'custom', uri: e.profile_image_url_https }),
-                    g = r || (e.profile_banner_url && !p),
+                    g = P.createElement(fe.a, { size: 'custom', uri: e.profile_image_url_https }),
+                    y = r || (e.profile_banner_url && !p),
                     b = P.createElement(
                       me.a,
                       { ratio: ne.a.theme.aspectRatios.profileBanner },
-                      g ? P.createElement(Ce.a, { source: { uri: e.profile_banner_url }, style: Ge.banner }) : null,
+                      y ? P.createElement(Ce.a, { source: { uri: e.profile_banner_url }, style: Ge.banner }) : null,
                     ),
                     _ = void 0 !== d && Object(ve.a)(d),
                     S = !!((n && !n.uploader) || (r && !r.uploader)) || !!Object.keys(c).length || _,
                     C = P.createElement(
-                      ye.a,
+                      ge.a,
                       {
                         disabled: S,
                         onPress: this._handleSubmit,
@@ -2592,7 +2596,7 @@
                     P.createElement(
                       Q.a,
                       { style: Ge.container },
-                      P.createElement(z.default, {
+                      P.createElement(V.default, {
                         accessibilityLabel: Ue,
                         aspectRatio: 3,
                         currentContent: b,
@@ -2600,20 +2604,20 @@
                         mediaItem: r,
                         onChange: this._handleBannerMediaChange,
                         onFailure: this._handleBannerMediaFailure,
-                        onRemove: g ? this._handleBannerMediaRemove : void 0,
+                        onRemove: y ? this._handleBannerMediaRemove : void 0,
                         rootStyle: Ge.bannerContainer,
                       }),
-                      P.createElement(z.default, {
+                      P.createElement(V.default, {
                         accessibilityLabel: xe,
                         borderRadius: E.a.INFINITE,
-                        currentContent: y,
+                        currentContent: g,
                         location: W.d.Avatar,
                         mediaItem: n,
                         onChange: this._handleAvatarMediaChange,
                         onFailure: this._handleAvatarMediaFailure,
                         rootStyle: Ge.avatarContainer,
                       }),
-                      P.createElement(ge.a, {
+                      P.createElement(ye.a, {
                         autoComplete: 'off',
                         defaultValue: d,
                         errorText: Ie,
@@ -2624,7 +2628,7 @@
                         name: 'displayName',
                         onChange: this._handleChangeDisplayName,
                       }),
-                      P.createElement(ge.a, {
+                      P.createElement(ye.a, {
                         defaultValue: l,
                         label: je,
                         maxLength: 160,
@@ -2633,14 +2637,14 @@
                         numberOfLines: 3,
                         onChange: this._handleChangeDescription,
                       }),
-                      P.createElement(ge.a, {
+                      P.createElement(ye.a, {
                         defaultValue: u,
                         label: Ae,
                         maxLength: 30,
                         name: 'location',
                         onChange: this._handleChangeLocation,
                       }),
-                      P.createElement(ge.a, {
+                      P.createElement(ye.a, {
                         defaultValue: h || '',
                         label: De,
                         maxLength: 100,
@@ -2701,7 +2705,7 @@
                   var o = e.entities.url,
                     c = null == o || null === (t = o.urls) || void 0 === t ? void 0 : t[0].expanded_url
                   return {
-                    birthdate: e.birthdate || Ve,
+                    birthdate: e.birthdate || ze,
                     description: i,
                     location: e.location,
                     name: e.name,
@@ -2812,12 +2816,12 @@
                     var d = n.id
                     s(d).then(function () {
                       return i(d)
-                    }, this._handleMediaUpdateFailureFactory(n, Te))
+                    }, this._handleMediaUpdateFailureFactory(n, ke))
                   }
                   r
                     ? l(r.id).then(function () {
                         return i(r.id)
-                      }, this._handleMediaUpdateFailureFactory(r, ke))
+                      }, this._handleMediaUpdateFailureFactory(r, Te))
                     : u && o().catch(a({ showToast: !0 })),
                     c(this._getFormattedState())
                       .then(function () {

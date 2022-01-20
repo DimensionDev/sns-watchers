@@ -16,7 +16,7 @@
         o = n('XMGw'),
         i = n('Ssj5'),
         l = n('oEOe')
-      function s(e, t) {
+      function u(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -28,16 +28,16 @@
         }
         return n
       }
-      function u(e) {
+      function s(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? s(Object(n), !0).forEach(function (t) {
+            ? u(Object(n), !0).forEach(function (t) {
                 a()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : s(Object(n)).forEach(function (t) {
+            : u(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
@@ -53,11 +53,11 @@
             t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
           switch (t.type) {
             case b.REQUEST:
-              return u(u({}, e), {}, { fetchStatus: c.a.LOADING })
+              return s(s({}, e), {}, { fetchStatus: c.a.LOADING })
             case b.SUCCESS:
-              return u(u({}, e), {}, { fetchStatus: c.a.LOADED })
+              return s(s({}, e), {}, { fetchStatus: c.a.LOADED })
             case b.FAILURE:
-              return u(u({}, e), {}, { error: t.payload, fetchStatus: c.a.FAILED })
+              return s(s({}, e), {}, { error: t.payload, fetchStatus: c.a.FAILED })
             default:
               return e
           }
@@ -96,7 +96,7 @@
         }
         return n
       }
-      function s(e) {
+      function u(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
@@ -111,12 +111,12 @@
         }
         return e
       }
-      var u = function () {
+      var s = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
         return Object(i.a)(
           'svg',
-          s(
-            s({}, e),
+          u(
+            u({}, e),
             {},
             { accessibilityHidden: void 0 === e.accessibilityLabel, style: [o.a.root, e.style], viewBox: '0 0 24 24' },
           ),
@@ -132,7 +132,7 @@
           ),
         )
       }
-      ;(u.metadata = { width: 24, height: 24 }), (t.a = u)
+      ;(s.metadata = { width: 24, height: 24 }), (t.a = s)
     },
     ClNT: function (e, t, n) {
       'use strict'
@@ -143,8 +143,8 @@
         o = n.n(c),
         i = n('1Pcy'),
         l = n.n(i),
-        s = n('5Yy7'),
-        u = n.n(s),
+        u = n('5Yy7'),
+        s = n.n(u),
         d = n('N+ot'),
         f = n.n(d),
         b = n('AuHH'),
@@ -154,10 +154,10 @@
         E = (n('2G9S'), n('ERkP')),
         y = n('k49u'),
         O = n('rxPX'),
-        g = n('0KEI'),
-        v = Object(O.a)().propsFromActions(function () {
+        v = n('0KEI'),
+        g = Object(O.a)().propsFromActions(function () {
           return {
-            createLocalApiErrorHandler: Object(g.createLocalApiErrorHandlerWithContextFactory)(
+            createLocalApiErrorHandler: Object(v.createLocalApiErrorHandlerWithContextFactory)(
               'TWO_FACTOR_AUTHENTICATION_GATEWAY',
             ),
           }
@@ -165,7 +165,7 @@
         w = n('kGix'),
         S = n('v//M'),
         P = n('5FtR')
-      function j(e) {
+      function _(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -186,9 +186,9 @@
           return f()(this, n)
         }
       }
-      var _ = (function (e) {
-          u()(n, e)
-          var t = j(n)
+      var j = (function (e) {
+          s()(n, e)
+          var t = _(n)
           function n() {
             var e
             a()(this, n)
@@ -254,7 +254,7 @@
             n
           )
         })(E.Component),
-        A = v.forwardRef(_)
+        A = g.forwardRef(j)
       t.a = A
     },
     Ezva: function (e, t, n) {
@@ -270,8 +270,8 @@
         o = n.n(c),
         i = n('1Pcy'),
         l = n.n(i),
-        s = n('5Yy7'),
-        u = n.n(s),
+        u = n('5Yy7'),
+        s = n.n(u),
         d = n('N+ot'),
         f = n.n(d),
         b = n('AuHH'),
@@ -281,42 +281,42 @@
         E = (n('2G9S'), n('JtPf'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP'), n('7xRU'), n('z84I'), n('ERkP')),
         y = n('QJRq'),
         O = n('Fcaw'),
-        g = n('ZyHq'),
-        v = n('vEo5'),
+        v = n('ZyHq'),
+        g = n('vEo5'),
         w = n('NeAX'),
         S = n('YeIG'),
         P = n('P1r1'),
-        j = n('RqPI'),
-        _ = n('G6rE'),
+        _ = n('RqPI'),
+        j = n('G6rE'),
         A = n('rxPX'),
         D = n('0KEI'),
         L = n('S/HT'),
-        R = n('kGix'),
-        I = function (e, t) {
-          var n = _.e.selectLoggedInUser(e),
-            r = Object(S.a)(n) ? R.a.LOADED : v.selectFetchStatus(e)
-          return Object(R.d)(w.selectFetchDataStatus(e), w.selectPreferencesFetchStatus(e), r)
+        I = n('kGix'),
+        R = function (e, t) {
+          var n = j.e.selectLoggedInUser(e),
+            r = Object(S.a)(n) ? I.a.LOADED : g.selectFetchStatus(e)
+          return Object(I.d)(w.selectFetchDataStatus(e), w.selectPreferencesFetchStatus(e), r)
         },
-        k = function (e) {
+        N = function (e) {
           var t = Object(P.j)(e)
           return t && Object(L.b)(e, t)
         },
-        x = Object(A.a)()
+        k = Object(A.a)()
           .propsFromState(function () {
             return {
-              countryName: k,
-              email: v.selectFirstEmail,
-              fetchStatus: I,
-              loggedInUser: _.e.selectLoggedInUser,
-              managingAccount: O.c,
-              phone: v.selectFirstPhoneNumber,
+              countryName: N,
+              email: g.selectFirstEmail,
+              fetchStatus: R,
+              loggedInUser: j.e.selectLoggedInUser,
+              managingAccount: O.d,
+              phone: g.selectFirstPhoneNumber,
               ages: w.selectAge,
               birthdate: w.selectBirthdate,
               gender: w.selectGender,
               languages: w.selectLanguage,
-              languageCode: j.n,
+              languageCode: _.o,
               signupDetails: w.selectSignupDetails,
-              verificationAccess: g.m,
+              verificationAccess: v.m,
             }
           })
           .propsFromActions(function () {
@@ -324,16 +324,16 @@
               createLocalApiErrorHandler: Object(D.createLocalApiErrorHandlerWithContextFactory)(
                 'SETTINGS_ACCOUNT_INFORMATION_SCREEN',
               ),
-              fetchAccountVerificationAccess: g.a,
-              fetchDevices: v.fetchDevices,
+              fetchAccountVerificationAccess: v.a,
+              fetchDevices: g.fetchDevices,
               fetchData: w.fetchDataIfNeeded,
               fetchPreferences: w.fetchPreferencesIfNeeded,
               fetchCountryNamesIfNeeded: L.a,
               fetchUserAccountLabel: O.b,
             }
           }),
-        F = n('yoO3'),
-        N = n('PK8P'),
+        x = n('yoO3'),
+        F = n('PK8P'),
         T = n('7JQg'),
         C = n('7FtF'),
         U = n('rHpw').a.create(function (e) {
@@ -382,8 +382,8 @@
       var V = W.a.f15bfdb3,
         q = W.a.d0a77c9a,
         X = W.a.jade381b,
-        Z = W.a.d1f6d336,
-        Q = W.a.a3841918,
+        Q = W.a.d1f6d336,
+        Z = W.a.a3841918,
         J = W.a.f70cd5ed,
         $ = W.a.ib6f1694,
         ee = W.a.a8d0108d,
@@ -395,8 +395,8 @@
         oe = W.a.hbd12156,
         ie = W.a.b7ec04f3,
         le = W.a.f70d5780,
-        se = W.a.dc62d3c6,
-        ue = W.a.ab22c36c,
+        ue = W.a.dc62d3c6,
+        se = W.a.ab22c36c,
         de = W.a.j3a1cff6,
         fe = W.a.i62a03aa,
         be = W.a.c119dee8,
@@ -414,12 +414,12 @@
           { $i18n: 'f2df3f23' },
           E.createElement(M.b, { link: '/settings/account/personalization' }, W.a.bad6cf6e),
         ),
-        ge = W.a.i859a9d3,
-        ve = 'https://help.twitter.com/managing-your-account/about-twitter-verified-accounts',
+        ve = W.a.i859a9d3,
+        ge = 'https://help.twitter.com/managing-your-account/about-twitter-verified-accounts',
         we = '/settings/account/request_verification',
         Se = { page: 'settings', section: 'account_information' },
         Pe = (function (e) {
-          u()(n, e)
+          s()(n, e)
           var t = Y(n)
           function n() {
             var e
@@ -436,15 +436,15 @@
                   o = t.fetchPreferences,
                   i = t.fetchUserAccountLabel,
                   l = t.languageCode,
-                  s = t.loggedInUser,
-                  u = [a(), o(), r(l || '')]
+                  u = t.loggedInUser,
+                  s = [a(), o(), r(l || '')]
                 return (
-                  s &&
-                    (u.push(c()),
-                    e.context.featureSwitches.isTrue('identity_verification_intake_enabled') && u.push(n()),
+                  u &&
+                    (s.push(c()),
+                    e.context.featureSwitches.isTrue('identity_verification_intake_enabled') && s.push(n()),
                     e.context.featureSwitches.isTrue('account_taxonomy_automation_opt_in_enabled') &&
-                      u.push(i(s.id_str))),
-                  Promise.all(u)
+                      s.push(i(u.id_str))),
+                  Promise.all(s)
                 )
               }),
               m()(l()(e), '_render', function () {
@@ -456,8 +456,8 @@
                   o = t.gender,
                   i = t.languages,
                   l = t.loggedInUser,
-                  s = t.phone,
-                  u = t.signupDetails,
+                  u = t.phone,
+                  s = t.signupDetails,
                   d = n
                     .map(function (e) {
                       return 'string' == typeof e ? e : e.display
@@ -477,12 +477,12 @@
                         description:
                           l.screen_name &&
                           E.createElement(M.b, { color: 'gray700', size: 'subtext2' }, '@'.concat(l.screen_name)),
-                        label: Z,
+                        label: Q,
                         link: '/settings/screen_name',
                       })
                     : null,
-                  l ? E.createElement(B.a, { description: s, label: J, link: '/settings/phone' }) : null,
-                  l ? E.createElement(B.a, { description: c, label: Q, link: '/settings/email' }) : null,
+                  l ? E.createElement(B.a, { description: u, label: J, link: '/settings/phone' }) : null,
+                  l ? E.createElement(B.a, { description: c, label: Z, link: '/settings/email' }) : null,
                   l ? e._renderVerified() : null,
                   l
                     ? E.createElement(B.a, {
@@ -497,11 +497,11 @@
                         { style: [U.infoItem, U.bottomBorder], testID: 'account-creation' },
                         E.createElement(M.b, { color: 'normal' }, $),
                         E.createElement(M.b, { color: 'gray700', style: U.helpText }, q(new Date(l.created_at))),
-                        u.creation_ip && u.country
+                        s.creation_ip && s.country
                           ? E.createElement(
                               M.b,
                               { color: 'gray700', style: U.helpText },
-                              ''.concat(u.creation_ip, ' (').concat(u.country, ')'),
+                              ''.concat(s.creation_ip, ' (').concat(s.country, ')'),
                             )
                           : null,
                       )
@@ -549,9 +549,9 @@
                 var t,
                   n = E.createElement(z.a, {
                     label: ae,
-                    learnMoreLabel: ge,
-                    learnMoreLink: ve,
-                    subtext: null !== (t = e.props.loggedInUser) && void 0 !== t && t.verified ? le : se,
+                    learnMoreLabel: ve,
+                    learnMoreLink: ge,
+                    subtext: null !== (t = e.props.loggedInUser) && void 0 !== t && t.verified ? le : ue,
                   })
                 if (e.context.featureSwitches.isTrue('identity_verification_intake_enabled')) {
                   var r, a
@@ -563,7 +563,7 @@
                       a = le
                       break
                     default:
-                      ;(r = oe), (a = se)
+                      ;(r = oe), (a = ue)
                   }
                   return E.createElement(z.a, { label: ae, learnMoreLabel: r, learnMoreLink: we, subtext: a })
                 }
@@ -571,7 +571,7 @@
               }),
               m()(l()(e), '_renderAutomation', function () {
                 if (e.context.featureSwitches.isTrue('account_taxonomy_automation_opt_in_enabled')) {
-                  var t = e.props.managingAccount ? de : ue
+                  var t = e.props.managingAccount ? de : se
                   return E.createElement(B.a, { description: t, label: ce, link: '/settings/account/automation' })
                 }
                 return null
@@ -591,12 +591,12 @@
                     T.b,
                     { namespace: Se },
                     E.createElement(
-                      F.a,
+                      x.a,
                       null,
                       E.createElement(
                         C.a,
                         { location: n, title: V },
-                        E.createElement(N.a, { fetch: this.combinedFetches, fetchStatus: t, render: this._render }),
+                        E.createElement(F.a, { fetch: this.combinedFetches, fetchStatus: t, render: this._render }),
                       ),
                     ),
                   )
@@ -607,19 +607,25 @@
           )
         })(E.Component)
       m()(Pe, 'contextType', G.a)
-      var je = x(Pe)
-      t.default = je
+      var _e = k(Pe)
+      t.default = _e
     },
     Fcaw: function (e, t, n) {
       'use strict'
-      n.d(t, 'c', function () {
-        return h
+      n.d(t, 'd', function () {
+        return m
       }),
+        n.d(t, 'e', function () {
+          return E
+        }),
+        n.d(t, 'c', function () {
+          return y
+        }),
         n.d(t, 'b', function () {
-          return m
+          return O
         }),
         n.d(t, 'a', function () {
-          return E
+          return v
         })
       n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var r = n('KEM+'),
@@ -627,7 +633,8 @@
         c = (n('yH/f'), n('oEOe')),
         o = n('iD2S'),
         i = n.n(o),
-        l = n('Ssj5')
+        l = n('kGix'),
+        u = n('Ssj5')
       function s(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
@@ -640,7 +647,7 @@
         }
         return n
       }
-      function u(e) {
+      function d(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
@@ -655,49 +662,69 @@
         }
         return e
       }
-      var d = 'accountTaxonomy',
-        f = ('rweb/'.concat(d), i()({ account_label: void 0 })),
-        b = Object.freeze({
+      var f = 'accountTaxonomy',
+        b =
+          ('rweb/'.concat(f),
+          i()({ account_label: { disableStatus: l.a.NONE, fetchStatus: l.a.NONE, managed_label: void 0 } })),
+        p = Object.freeze({
           REQUEST: 'rweb/accountTaxonomy/FETCH_USER_ACCOUNT_LABEL_REQUEST',
           SUCCESS: 'rweb/accountTaxonomy/FETCH_USER_ACCOUNT_LABEL_SUCCESS',
           FAILURE: 'rweb/accountTaxonomy/FETCH_USER_ACCOUNT_LABEL_FAILURE',
         }),
-        p = Object.freeze({
+        h = Object.freeze({
           REQUEST: 'rweb/accountTaxonomy/DISABLE_USER_ACCOUNT_LABEL_REQUEST',
           SUCCESS: 'rweb/accountTaxonomy/DISABLE_USER_ACCOUNT_LABEL_SUCCESS',
           FAILURE: 'rweb/accountTaxonomy/DISABLE_USER_ACCOUNT_LABEL_FAILURE',
         })
-      l.a.register(
-        a()({}, d, function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f,
+      u.a.register(
+        a()({}, f, function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : b,
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
-            case b.SUCCESS:
+            case p.REQUEST:
+              return d(d({}, e), {}, { account_label: d(d({}, e.account_label), {}, { fetchStatus: l.a.LOADING }) })
+            case p.SUCCESS:
               var n, r, a
-              return u(
-                u({}, e),
+              return d(
+                d({}, e),
                 {},
                 {
-                  account_label:
-                    null == t ||
-                    null === (n = t.payload) ||
-                    void 0 === n ||
-                    null === (r = n.user) ||
-                    void 0 === r ||
-                    null === (a = r.result) ||
-                    void 0 === a
-                      ? void 0
-                      : a.account_label,
+                  account_label: d(
+                    d(
+                      {},
+                      null == t ||
+                        null === (n = t.payload) ||
+                        void 0 === n ||
+                        null === (r = n.user) ||
+                        void 0 === r ||
+                        null === (a = r.result) ||
+                        void 0 === a
+                        ? void 0
+                        : a.account_label,
+                    ),
+                    {},
+                    { fetchStatus: l.a.LOADED },
+                  ),
                 },
               )
-            case p.SUCCESS:
-              return u(u({}, e), {}, { account_label: void 0 })
+            case p.FAILURE:
+              return d(d({}, e), {}, { account_label: d(d({}, e.account_label), {}, { fetchStatus: l.a.FAILED }) })
+            case h.REQUEST:
+              return d(d({}, e), {}, { account_label: d(d({}, e.account_label), {}, { disableStatus: l.a.LOADING }) })
+            case h.SUCCESS:
+              return d(
+                d({}, e),
+                {},
+                { account_label: { managed_label: void 0, fetchStatus: l.a.LOADED, disableStatus: l.a.LOADED } },
+              )
+            case h.FAILURE:
+              return d(d({}, e), {}, { account_label: d(d({}, e.account_label), {}, { disableStatus: l.a.FAILED }) })
             default:
               return e
           }
         }),
       )
-      var h = function (e) {
+      var m = function (e) {
           var t, n, r
           return null === (t = e.accountTaxonomy) ||
             void 0 === t ||
@@ -708,20 +735,36 @@
             ? void 0
             : r.owner_screen_name
         },
-        m = function (e) {
+        E = function (e) {
+          var t, n
+          return (
+            (null === (t = e.accountTaxonomy) || void 0 === t || null === (n = t.account_label) || void 0 === n
+              ? void 0
+              : n.fetchStatus) || l.a.NONE
+          )
+        },
+        y = function (e) {
+          var t, n
+          return (
+            (null === (t = e.accountTaxonomy) || void 0 === t || null === (n = t.account_label) || void 0 === n
+              ? void 0
+              : n.disableStatus) || l.a.NONE
+          )
+        },
+        O = function (e) {
           return function (t, n, r) {
             var a = r.api
             return Object(c.b)(t, { request: a.AccountTaxonomy.fetchUserAccountLabel, params: { userId: e } })({
-              actionTypes: b,
+              actionTypes: p,
               context: 'FETCH_USER_ACCOUNT_LABEL',
             })
           }
         },
-        E = function () {
+        v = function () {
           return function (e, t, n) {
             var r = n.api
             return Object(c.b)(e, { request: r.AccountTaxonomy.disableUserAccountLabel, params: {} })({
-              actionTypes: p,
+              actionTypes: h,
               context: 'DISABLE_USER_ACCOUNT_LABEL',
             })
           }
@@ -739,10 +782,10 @@
           return O
         }),
         n.d(t, 'g', function () {
-          return g
+          return v
         }),
         n.d(t, 'h', function () {
-          return v
+          return g
         }),
         n.d(t, 'd', function () {
           return w
@@ -760,8 +803,8 @@
         o = n.n(c),
         i = (n('yH/f'), n('LW0h'), n('2G9S'), n('kGix')),
         l = n('Ssj5'),
-        s = n('oEOe')
-      function u(e, t) {
+        u = n('oEOe')
+      function s(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -777,12 +820,12 @@
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? u(Object(n), !0).forEach(function (t) {
+            ? s(Object(n), !0).forEach(function (t) {
                 o()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : u(Object(n)).forEach(function (t) {
+            : s(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
@@ -790,8 +833,8 @@
       }
       var f = 'userData',
         b = 'rweb/'.concat(f),
-        p = Object(s.a)(b, 'FETCH_DOWNLOADS'),
-        h = Object(s.a)(b, 'CREATE_DOWNLOAD'),
+        p = Object(u.a)(b, 'FETCH_DOWNLOADS'),
+        h = Object(u.a)(b, 'CREATE_DOWNLOAD'),
         m = Object.freeze({
           NEW: 'NEW',
           INPROGRESS: 'INPROGRESS',
@@ -847,17 +890,17 @@
       var O = function (e) {
           return e.userData.downloads
         },
-        g = function (e) {
+        v = function (e) {
           return e.userData.fetchStatus
         },
-        v = function (e) {
+        g = function (e) {
           var t
           return 503 === (null === (t = e.userData.error) || void 0 === t ? void 0 : t.status)
         },
         w = function () {
           return function (e, t, n) {
             var r = n.api
-            return Object(s.b)(e, { request: r.UserData.fetchDownloads })({
+            return Object(u.b)(e, { request: r.UserData.fetchDownloads })({
               actionTypes: p,
               context: 'FETCH_DOWNLOADS',
             })
@@ -866,7 +909,7 @@
         S = function () {
           return function (e, t, n) {
             var r = n.api
-            return Object(s.b)(e, { request: r.UserData.createDataDownload })({
+            return Object(u.b)(e, { request: r.UserData.createDataDownload })({
               actionTypes: h,
               context: 'CREATE_DOWNLOAD',
             })
@@ -875,7 +918,7 @@
         P = function (e) {
           return function (t, n, r) {
             var a = r.api
-            return Object(s.d)(t, { params: e, request: a.UserData.markDataAsDownloaded })('MARK_DATA_AS_DOWNLOADED')
+            return Object(u.d)(t, { params: e, request: a.UserData.markDataAsDownloaded })('MARK_DATA_AS_DOWNLOADED')
           }
         }
     },
@@ -893,8 +936,8 @@
         o = n.n(c),
         i = (n('hBvt'), n('ERkP')),
         l = n('rHpw'),
-        s = n('csss'),
-        u = function (e) {
+        u = n('csss'),
+        s = function (e) {
           return i.createElement(e.Icon, { style: d.thumbnail })
         },
         d = l.a.create(function (e) {
@@ -903,12 +946,12 @@
       function f(e) {
         var t = e.Icon,
           n = o()(e, ['Icon'])
-        return i.createElement(s.a, a()({}, n, { thumbnail: i.createElement(u, { Icon: t }), thumbnailSize: 'large' }))
+        return i.createElement(u.a, a()({}, n, { thumbnail: i.createElement(s, { Icon: t }), thumbnailSize: 'large' }))
       }
       function b(e) {
         e.link
         var t = o()(e, ['link'])
-        return i.createElement(s.a, a()({}, t, { link: { external: !0, pathname: e.link } }))
+        return i.createElement(u.a, a()({}, t, { link: { external: !0, pathname: e.link } }))
       }
     },
     PK8P: function (e, t, n) {
@@ -920,8 +963,8 @@
         o = n.n(c),
         i = n('1Pcy'),
         l = n.n(i),
-        s = n('5Yy7'),
-        u = n.n(s),
+        u = n('5Yy7'),
+        s = n.n(u),
         d = n('N+ot'),
         f = n.n(d),
         b = n('AuHH'),
@@ -931,27 +974,27 @@
         E = (n('2G9S'), n('ERkP')),
         y = n('k49u'),
         O = n('hqKg'),
-        g = n('0KEI'),
-        v = n('oEGd'),
+        v = n('0KEI'),
+        g = n('oEGd'),
         w = n('55TG'),
         S = Object(O.createSelector)(w.a, function (e) {
           return { verifyPasswordFetchStatus: e }
         }),
         P = {
           verifyPassword: w.b,
-          createLocalApiErrorHandler: Object(g.createLocalApiErrorHandlerWithContextFactory)('PASSWORD_GATEWAY'),
+          createLocalApiErrorHandler: Object(v.createLocalApiErrorHandlerWithContextFactory)('PASSWORD_GATEWAY'),
         },
-        j = Object(v.g)(S, P, null, { pure: !1 }),
-        _ = n('kGix'),
+        _ = Object(g.g)(S, P, null, { pure: !1 }),
+        j = n('kGix'),
         A = n('v//M'),
         D = n('3XMw'),
         L = n.n(D),
-        R = n('5FtR'),
-        I = n('iCwC'),
-        k = n('MWbm'),
-        x = n('TnY3'),
-        F = n('t62R'),
-        N = n('6vad'),
+        I = n('5FtR'),
+        R = n('iCwC'),
+        N = n('MWbm'),
+        k = n('TnY3'),
+        x = n('t62R'),
+        F = n('6vad'),
         T = n('p+r5'),
         C = n('mw9i'),
         U = n('/yvb'),
@@ -985,7 +1028,7 @@
         Y = L.a.g9677c6d,
         V = L.a.c8cb0b4c,
         q = (function (e) {
-          u()(n, e)
+          s()(n, e)
           var t = B(n)
           function n() {
             var e
@@ -1062,7 +1105,7 @@
               {
                 key: 'componentDidUpdate',
                 value: function (e) {
-                  e.fetchStatus === _.a.LOADED && this.props.fetchStatus === _.a.NONE && this._makeFetch()
+                  e.fetchStatus === j.a.LOADED && this.props.fetchStatus === j.a.NONE && this._makeFetch()
                 },
               },
               {
@@ -1071,7 +1114,7 @@
                   var e = this.props.titleHeader,
                     t = this.state.passwordError,
                     n = E.createElement(
-                      F.b,
+                      x.b,
                       {
                         link: {
                           pathname: 'https://twitter.com/account/begin_password_reset',
@@ -1084,11 +1127,11 @@
                   return E.createElement(
                     E.Fragment,
                     null,
-                    e ? E.createElement(N.b, { text: e }) : null,
+                    e ? E.createElement(F.b, { text: e }) : null,
                     E.createElement(
-                      k.a,
-                      { style: [I.a.viewItem, I.a.bottomBorder] },
-                      E.createElement(F.b, { color: 'gray700', size: 'subtext2' }, K),
+                      N.a,
+                      { style: [R.a.viewItem, R.a.bottomBorder] },
+                      E.createElement(x.b, { color: 'gray700', size: 'subtext2' }, K),
                     ),
                     E.createElement(T.a, {
                       errorText: t,
@@ -1121,13 +1164,13 @@
                     n = e.location,
                     r = e.render,
                     a = this.state.verificationRequired,
-                    c = t === _.a.FAILED && a
+                    c = t === j.a.FAILED && a
                   return E.createElement(
                     E.Fragment,
                     null,
                     c
                       ? this._passwordlessSsoEnabled
-                        ? E.createElement(R.a, {
+                        ? E.createElement(I.a, {
                             to: {
                               pathname: '/i/flow/verify_account_ownership',
                               state: { input: { requested_variant: n.pathname } },
@@ -1156,14 +1199,14 @@
             button: { marginVertical: 0, marginHorizontal: e.componentDimensions.gutterHorizontal },
           }
         }),
-        Z = j(q)
-      t.a = Object(x.a)(Z)
+        Q = _(q)
+      t.a = Object(k.a)(Q)
     },
     QoYZ: function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'ArchiveUnavailable', function () {
-          return Q
+          return Z
         }),
         n.d(t, 'YourTwitterData', function () {
           return J
@@ -1175,9 +1218,9 @@
         o = n('v6aA'),
         i = n('1YZw'),
         l = n('NyKK'),
-        s = n('rxPX'),
-        u = n('0KEI'),
-        d = Object(s.a)()
+        u = n('rxPX'),
+        s = n('0KEI'),
+        d = Object(u.a)()
           .propsFromState(function () {
             return { fetchStatus: l.g, downloads: l.f, isUserDataUnavailable: l.h }
           })
@@ -1185,7 +1228,7 @@
             return {
               addToast: i.b,
               createDataDownload: l.c,
-              createLocalApiErrorHandler: Object(u.createLocalApiErrorHandlerWithContextFactory)('DOWNLOAD_YOUR_DATA'),
+              createLocalApiErrorHandler: Object(s.createLocalApiErrorHandlerWithContextFactory)('DOWNLOAD_YOUR_DATA'),
               fetchDownloads: l.d,
             }
           })
@@ -1217,14 +1260,14 @@
         E = n('ClNT'),
         y = n('MWbm'),
         O = n('t62R'),
-        g = n('0yYu'),
-        v = n('o1YB'),
+        v = n('0yYu'),
+        g = n('o1YB'),
         w = n('xHsv'),
         S = n('/yvb'),
         P = n('6vad'),
-        j = n('csss'),
-        _ = n('3XMw'),
-        A = n.n(_)
+        _ = n('csss'),
+        j = n('3XMw'),
+        A = n.n(j)
       function D(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
@@ -1252,12 +1295,12 @@
         }
         return e
       }
-      var R = A.a.f56af9cc,
-        I = A.a.cce24bf3,
-        k = A.a.d6eb9b9a,
-        x = A.a.d2fb334b,
-        F = A.a.b708417b,
-        N = A.a.jbf5843d,
+      var I = A.a.f56af9cc,
+        R = A.a.cce24bf3,
+        N = A.a.d6eb9b9a,
+        k = A.a.d2fb334b,
+        x = A.a.b708417b,
+        F = A.a.jbf5843d,
         T = A.a.ea886c6e,
         C = A.a.cdcc2ad3,
         U = A.a.dbeff879,
@@ -1282,13 +1325,13 @@
         ),
         q = A.a.b221ca4b,
         X = { page: 'settings', section: 'account', component: 'download_your_data' },
-        Z = Object.freeze(L(L({}, l.b), {}, { UNAVAILABLE: 'UNAVAILABLE' })),
-        Q = function () {
+        Q = Object.freeze(L(L({}, l.b), {}, { UNAVAILABLE: 'UNAVAILABLE' })),
+        Z = function () {
           return c.createElement(
             c.Fragment,
             null,
-            c.createElement(g.a, null),
-            c.createElement(v.a, { label: z, withBottomBorder: !0 }),
+            c.createElement(v.a, null),
+            c.createElement(g.a, { label: z, withBottomBorder: !0 }),
             c.createElement(w.a, { description: G }),
           )
         }
@@ -1298,15 +1341,15 @@
           r = e.analytics,
           a = e.createDataDownload,
           i = e.createLocalApiErrorHandler,
-          s = e.downloads,
-          u = e.fetchDownloads,
+          u = e.downloads,
+          s = e.fetchDownloads,
           d = e.fetchStatus,
-          v = e.isUserDataUnavailable,
-          _ = e.location,
+          g = e.isUserDataUnavailable,
+          j = e.location,
           A = !!t,
           D = !A,
-          L = v,
-          z = !v && A
+          L = g,
+          z = !g && A
         function J() {
           r.scribe({ element: 'request_button', action: 'click' }),
             a()
@@ -1316,21 +1359,21 @@
               .catch(i())
         }
         var $ = function () {
-          var e = s.all,
-            t = s.nonFailed,
+          var e = u.all,
+            t = u.nonFailed,
             n = t.length ? t[0].status : e.length ? l.b.FAILED : l.b.NONE,
             r = !!t.length && void 0 !== t[0].urls,
             a = l.a.indexOf(n) >= 0,
             o = r && n === l.b.COMPLETE,
             i = n === l.b.FAILED,
-            u = n === l.b.COMPLETE && !r,
-            d = u ? Z.UNAVAILABLE : n,
+            s = n === l.b.COMPLETE && !r,
+            d = s ? Q.UNAVAILABLE : n,
             b = n === l.b.NONE ? J : f.a,
             p = function () {
               return c.createElement(
                 S.a,
                 {
-                  disabled: a || i || u,
+                  disabled: a || i || s,
                   link: o ? '/settings/your_twitter_data/data' : void 0,
                   onPress: b,
                   size: 'small',
@@ -1339,13 +1382,13 @@
                 },
                 (function (e) {
                   switch (e) {
-                    case Z.NONE:
+                    case Q.NONE:
                       return U
-                    case Z.FAILED:
+                    case Q.FAILED:
                       return C
-                    case Z.COMPLETE:
+                    case Q.COMPLETE:
                       return B
-                    case Z.UNAVAILABLE:
+                    case Q.UNAVAILABLE:
                       return H
                     default:
                       return M
@@ -1359,19 +1402,19 @@
             c.createElement(
               y.a,
               { style: m.description },
-              c.createElement(O.b, { color: 'normal' }, x),
+              c.createElement(O.b, { color: 'normal' }, k),
               c.createElement(
                 O.b,
                 { color: 'gray700', style: [m.errorText, m.helpText] },
                 (function (e) {
                   switch (e) {
-                    case Z.NONE:
+                    case Q.NONE:
                       return null
-                    case Z.FAILED:
+                    case Q.FAILED:
                       return V
-                    case Z.COMPLETE:
+                    case Q.COMPLETE:
                       return W
-                    case Z.UNAVAILABLE:
+                    case Q.UNAVAILABLE:
                       return G
                     default:
                       return K
@@ -1390,12 +1433,12 @@
             null,
             c.createElement(
               h.a,
-              { location: _, screenType: 'secondaryDetail', title: R },
-              c.createElement(w.a, { description: I }),
+              { location: j, screenType: 'secondaryDetail', title: I },
+              c.createElement(w.a, { description: R }),
               z
                 ? c.createElement(E.a, {
                     fetch: function () {
-                      return u()
+                      return s()
                     },
                     fetchStatus: d,
                     renderChildren: function () {
@@ -1405,20 +1448,20 @@
                         c.createElement(
                           y.a,
                           null,
-                          c.createElement(P.b, { text: k }),
+                          c.createElement(P.b, { text: N }),
                           c.createElement(w.a, {
-                            description: F,
+                            description: x,
                             learnMoreLabel: Y,
                             learnMoreLink: 'https://help.twitter.com/managing-your-account/accessing-your-twitter-data',
                           }),
                           $(),
                         ),
-                        c.createElement(g.a, null),
+                        c.createElement(v.a, null),
                         c.createElement(
                           y.a,
                           null,
-                          c.createElement(P.b, { text: N }),
-                          c.createElement(j.a, {
+                          c.createElement(P.b, { text: F }),
+                          c.createElement(_.a, {
                             label: T,
                             link: { external: !0, pathname: 'https://pscp.tv/account/your-data' },
                           }),
@@ -1427,8 +1470,8 @@
                     },
                   })
                 : null,
-              D && c.createElement(j.a, { label: B, link: '/settings/your_twitter_data/request_data' }),
-              L && c.createElement(Q, null),
+              D && c.createElement(_.a, { label: B, link: '/settings/your_twitter_data/request_data' }),
+              L && c.createElement(Z, null),
             ),
           ),
         )
@@ -1479,11 +1522,11 @@
         }
         return e
       }
-      var s = 'countryNames',
-        u = { fetchStatus: c.a.NONE, countries: {} },
-        d = { REQUEST: ''.concat(s, '_REQUEST'), FAILURE: ''.concat(s, '_FAILURE'), SUCCESS: ''.concat(s, '_SUCCESS') },
+      var u = 'countryNames',
+        s = { fetchStatus: c.a.NONE, countries: {} },
+        d = { REQUEST: ''.concat(u, '_REQUEST'), FAILURE: ''.concat(u, '_FAILURE'), SUCCESS: ''.concat(u, '_SUCCESS') },
         f = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : u,
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : s,
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
             case d.REQUEST:
@@ -1496,7 +1539,7 @@
               return e
           }
         }
-      o.a.register(a()({}, s, f))
+      o.a.register(a()({}, u, f))
       var b = function (e) {
           return e.countryNames.countries
         },
@@ -1628,8 +1671,8 @@
         o = n('3XMw'),
         i = n.n(o),
         l = n('yoO3'),
-        s = n('7JQg'),
-        u = n('xHsv'),
+        u = n('7JQg'),
+        s = n('xHsv'),
         d = n('7FtF'),
         f = n('OySi'),
         b = 'notificationsScreen',
@@ -1639,7 +1682,7 @@
         E = n.n(m),
         y = n('Lsrn'),
         O = n('k/Ka')
-      function g(e, t) {
+      function v(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -1651,16 +1694,16 @@
         }
         return n
       }
-      function v(e) {
+      function g(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? g(Object(n), !0).forEach(function (t) {
+            ? v(Object(n), !0).forEach(function (t) {
                 E()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : g(Object(n)).forEach(function (t) {
+            : v(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
@@ -1670,8 +1713,8 @@
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
         return Object(O.a)(
           'svg',
-          v(
-            v({}, e),
+          g(
+            g({}, e),
             {},
             { accessibilityHidden: void 0 === e.accessibilityLabel, style: [y.a.root, e.style], viewBox: '0 0 24 24' },
           ),
@@ -1693,21 +1736,21 @@
       w.metadata = { width: 24, height: 24 }
       var S = w,
         P = i.a.eb75875d,
-        j = i.a.a3f22d8d,
-        _ = i.a.i647fb03,
+        _ = i.a.a3f22d8d,
+        j = i.a.i647fb03,
         A = i.a.ef1b5cbb,
         D = i.a.bcd81cab,
         L = i.a.da867c58,
-        R = { page: 'settings', section: 'notification' },
-        I = [
-          { description: A, label: _, link: '/settings/notifications/filters', Icon: h.a },
+        I = { page: 'settings', section: 'notification' },
+        R = [
+          { description: A, label: j, link: '/settings/notifications/filters', Icon: h.a },
           { description: L, label: D, link: '/settings/notifications/preferences', Icon: S },
         ]
       t.default = function (e) {
         var t = e.location
         return c.createElement(
-          s.b,
-          { namespace: R },
+          u.b,
+          { namespace: I },
           c.createElement(
             l.a,
             null,
@@ -1717,8 +1760,8 @@
               c.createElement(
                 p.a,
                 { testID: b },
-                c.createElement(u.a, { description: j }),
-                I.map(function (e) {
+                c.createElement(s.a, { description: _ }),
+                R.map(function (e) {
                   return c.createElement(f.b, a()({}, e, { key: e.link }))
                 }),
               ),
@@ -1737,8 +1780,8 @@
         o = n.n(c),
         i = n('yoO3'),
         l = n('7JQg'),
-        s = n('7FtF'),
-        u = n('OySi'),
+        u = n('7FtF'),
+        s = n('OySi'),
         d = 'accountScreen',
         f = n('MWbm'),
         b = n('boUI'),
@@ -1773,7 +1816,7 @@
         }
         return e
       }
-      var g = function () {
+      var v = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
         return Object(E.a)(
           'svg',
@@ -1794,8 +1837,8 @@
           ),
         )
       }
-      g.metadata = { width: 24, height: 24 }
-      var v = g,
+      v.metadata = { width: 24, height: 24 }
+      var g = v,
         w = n('89Im'),
         S = n('wz7L')
       function P(e, t) {
@@ -1810,7 +1853,7 @@
         }
         return n
       }
-      function j(e) {
+      function _(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
@@ -1825,12 +1868,12 @@
         }
         return e
       }
-      var _ = function () {
+      var j = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
         return Object(E.a)(
           'svg',
-          j(
-            j({}, e),
+          _(
+            _({}, e),
             {},
             { accessibilityHidden: void 0 === e.accessibilityLabel, style: [m.a.root, e.style], viewBox: '0 0 24 24' },
           ),
@@ -1843,16 +1886,16 @@
           ),
         )
       }
-      _.metadata = { width: 24, height: 24 }
-      var A = _,
+      j.metadata = { width: 24, height: 24 }
+      var A = j,
         D = n('Nh1N'),
         L = n('xHsv'),
-        R = n('4zmP'),
-        I = n('rHpw'),
-        k = o.a.hc73f03f,
-        x = o.a.d3a2bde7,
-        F = o.a.f15bfdb3,
-        N = o.a.idca4741,
+        I = n('4zmP'),
+        R = n('rHpw'),
+        N = o.a.hc73f03f,
+        k = o.a.d3a2bde7,
+        x = o.a.f15bfdb3,
+        F = o.a.idca4741,
         T = o.a.b6ded35d,
         C = o.a.ab1f7eef,
         U = o.a.f56af9cc,
@@ -1863,7 +1906,7 @@
         G = o.a.i203df96,
         K = { page: 'settings', section: 'account' },
         W = { label: 'Go to Security settings', link: '/settings/security_and_account_access' },
-        Y = I.a.create(function (e) {
+        Y = R.a.create(function (e) {
           return { callout: { marginHorizontal: e.componentDimensions.gutterHorizontal, width: 'auto' } }
         })
       t.default = function (e) {
@@ -1873,8 +1916,8 @@
             function () {
               return (function (e) {
                 return [
-                  { description: N, label: F, link: '/settings/your_twitter_data/account', Icon: b.a },
-                  { description: T, label: C, link: '/settings/password', Icon: v },
+                  { description: F, label: x, link: '/settings/your_twitter_data/account', Icon: b.a },
+                  { description: T, label: C, link: '/settings/password', Icon: g },
                   { description: H, label: U, link: '/settings/download_your_data', Icon: w.a },
                   { description: B, disabled: e, label: M, link: '/settings/teams', Icon: S.a },
                   { description: G, label: z, link: '/settings/deactivate', Icon: A },
@@ -1890,20 +1933,20 @@
             i.a,
             null,
             r.createElement(
-              s.a,
-              { location: t, screenType: 'primaryDetail', title: k },
+              u.a,
+              { location: t, screenType: 'primaryDetail', title: N },
               r.createElement(
                 f.a,
                 { testID: d },
-                r.createElement(L.a, { description: x }),
+                r.createElement(L.a, { description: k }),
                 c.map(function (e) {
                   return r.createElement(
                     f.a,
                     { key: e.label },
-                    r.createElement(u.b, e),
+                    r.createElement(s.b, e),
                     e.disabled &&
                       '/settings/teams' === e.link &&
-                      r.createElement(R.a, {
+                      r.createElement(I.a, {
                         Icon: D.a,
                         action: W,
                         headline: 'TweetDeck Teams moved',
@@ -1927,8 +1970,8 @@
         o = n.n(c),
         i = n('1Pcy'),
         l = n.n(i),
-        s = n('5Yy7'),
-        u = n.n(s),
+        u = n('5Yy7'),
+        s = n.n(u),
         d = n('N+ot'),
         f = n.n(d),
         b = n('AuHH'),
@@ -1938,8 +1981,8 @@
         E = (n('2G9S'), n('uFXj'), n('ERkP')),
         y = n('t62R'),
         O = n('rHpw'),
-        g = n('MWbm')
-      function v(e) {
+        v = n('MWbm')
+      function g(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -1961,8 +2004,8 @@
         }
       }
       var w = (function (e) {
-        u()(n, e)
-        var t = v(n)
+        s()(n, e)
+        var t = g(n)
         function n() {
           var e
           a()(this, n)
@@ -1994,7 +2037,7 @@
                   a = e.subtext,
                   c = e.withBottomBorder
                 return E.createElement(
-                  g.a,
+                  v.a,
                   { style: [S.root, c && S.bottomBorder] },
                   E.createElement(y.b, null, t),
                   a
@@ -2046,7 +2089,7 @@
         }
         return n
       }
-      function s(e) {
+      function u(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
@@ -2061,12 +2104,12 @@
         }
         return e
       }
-      var u = function () {
+      var s = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
         return Object(i.a)(
           'svg',
-          s(
-            s({}, e),
+          u(
+            u({}, e),
             {},
             { accessibilityHidden: void 0 === e.accessibilityLabel, style: [o.a.root, e.style], viewBox: '0 0 24 24' },
           ),
@@ -2079,7 +2122,7 @@
           ),
         )
       }
-      ;(u.metadata = { width: 24, height: 24 }), (t.a = u)
+      ;(s.metadata = { width: 24, height: 24 }), (t.a = s)
     },
   },
 ])

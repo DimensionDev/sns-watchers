@@ -157,8 +157,8 @@
         d = r('XOJV'),
         f = r('rxPX'),
         p = r('0KEI'),
-        v = r('P1r1'),
-        m = function (e, t) {
+        m = r('P1r1'),
+        v = function (e, t) {
           return t.match.params.screenName
         },
         w = function (e, t) {
@@ -197,7 +197,7 @@
               fetchStatus: b,
               forwardPivotInfo: O,
               index: h,
-              screenName: m,
+              screenName: v,
               tweetId: w,
               tweet: d.a.createHydratedTweetSelector(w),
               promotedContent: g,
@@ -205,7 +205,7 @@
               socialContext: E,
               contextTweetId: j,
               rootTweet: d.a.createHydratedTweetSelector(C),
-              showTweetMediaDetailDrawer: v.A,
+              showTweetMediaDetailDrawer: m.A,
             }
           })
           .propsFromActions(function () {
@@ -215,7 +215,7 @@
               ),
               fetchTweetIfNeeded: d.a.fetchOneIfNeeded,
               googleAnalyticsPageView: s.a,
-              updateSettings: v.L,
+              updateSettings: m.L,
             }
           })
           .withAnalytics({ page: 'tweet', section: 'media' }),
@@ -223,8 +223,8 @@
         T = r.n(P),
         I = r('Y9Ll'),
         M = r.n(I),
-        _ = r('1Pcy'),
-        S = r.n(_),
+        S = r('1Pcy'),
+        _ = r.n(S),
         D = r('5Yy7'),
         k = r.n(D),
         L = r('N+ot'),
@@ -237,8 +237,8 @@
         B = r('oQhu'),
         K = r('AUxQ'),
         X = r('rHpw'),
-        V = r('yw4N')
-      function z(e) {
+        z = r('yw4N')
+      function V(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -261,7 +261,7 @@
       }
       var Z = (function (e) {
         k()(r, e)
-        var t = z(r)
+        var t = V(r)
         function r() {
           var e
           T()(this, r)
@@ -269,14 +269,14 @@
           return (
             (e = t.call.apply(t, [this].concat(a))),
             o()(
-              S()(e),
+              _()(e),
               '_getApiErrorHandlerMap',
               Object(B.a)(function (e) {
                 return Object(F.a)(e)
               }),
             ),
             o()(
-              S()(e),
+              _()(e),
               '_getModule',
               Object(B.a)(function (e, t) {
                 return Object(A.a)({ focalTweetId: e, featureSwitches: t })
@@ -302,7 +302,7 @@
                   u = this.context.featureSwitches,
                   d = { selectedTweetId: s }
                 return i.createElement(
-                  V.a,
+                  z.a,
                   { accessibilityExpanded: !0, style: U.root },
                   i.createElement(K.a, {
                     apiErrorHandlerMap: this._getApiErrorHandlerMap(a),
@@ -357,8 +357,8 @@
         de = r('/Ikv'),
         fe = r('mjJ+'),
         pe = r('/yvb'),
-        ve = r('rOXj'),
-        me = r('cHvH'),
+        me = r('rOXj'),
+        ve = r('cHvH'),
         we = r('RCZO'),
         he = r('mpWK'),
         be = r('NP4V'),
@@ -410,8 +410,8 @@
             d = u[0],
             f = u[1],
             p = i.useContext(l.a).featureSwitches,
-            v = e.analytics,
-            m = e.contextTweetId,
+            m = e.analytics,
+            v = e.contextTweetId,
             w = e.createLocalApiErrorHandler,
             h = e.dataSaver,
             b = e.fetchStatus,
@@ -426,8 +426,8 @@
             T = e.screenName,
             I = e.showTweetMediaDetailDrawer,
             M = e.socialContext,
-            _ = e.tweet,
-            S = e.tweetId,
+            S = e.tweet,
+            _ = e.tweetId,
             D = e.updateSettings,
             k = function () {
               var e = C.state
@@ -444,35 +444,33 @@
               var e,
                 t = k()
               if (t) return t.items
-              if (_) {
-                var r = null === (e = _.extended_entities) || void 0 === e ? void 0 : e.media
+              if (S) {
+                var r = null === (e = S.extended_entities) || void 0 === e ? void 0 : e.media
                 if (r) return r
-                if (_.card) {
+                if (S.card) {
                   var n = H()
                   if (n) return [n]
                 }
               }
             },
             H = function () {
-              if (null != _ && _.card) {
-                var e = !0 === p.getValueWithoutScribeImpression('responsive_web_carousels_convert_to_single_media'),
-                  t =
+              if (null != S && S.card) {
+                var e =
                     !0 ===
                     p.getValueWithoutScribeImpression(
                       'unified_cards_multi_destination_carousels_convert_to_single_card',
                     ),
-                  r = {
-                    tweetId: _.id_str,
-                    tweetUserId: _.user.id_str,
-                    tweetPermalink: _.permalink,
-                    shouldConvertCarouselsToSingleMedia: e,
-                    shouldConvertMDCtoSingleCard: t,
+                  t = {
+                    tweetId: S.id_str,
+                    tweetUserId: S.user.id_str,
+                    tweetPermalink: S.permalink,
+                    shouldConvertMDCtoSingleCard: e,
                   }
-                ee()(void 0 !== _.card, 'tweet.card must be defined')
-                var n = Object(ue.b)(_.card, r)
-                if (n) {
-                  var o = de.a.getImageEntityFromCard(n.card)
-                  if (o) return de.a.convertImageEntityToPhoto(o)
+                ee()(void 0 !== S.card, 'tweet.card must be defined')
+                var r = Object(ue.b)(S.card, t)
+                if (r) {
+                  var n = de.a.getImageEntityFromCard(r.card)
+                  if (n) return de.a.convertImageEntityToPhoto(n)
                 }
               }
             },
@@ -482,7 +480,7 @@
               return t && t[e]
             },
             A = function () {
-              return null != _ && _.user ? '/'.concat(_.user.screen_name, '/status/').concat(_.id_str) : '/'
+              return null != S && S.user ? '/'.concat(S.user.screen_name, '/status/').concat(S.id_str) : '/'
             },
             F = function (e) {
               var t = k()
@@ -493,43 +491,43 @@
             },
             B = i.useCallback(
               function () {
-                if (_ && _.user && T.toLowerCase() !== _.user.screen_name.toLowerCase()) {
+                if (S && S.user && T.toLowerCase() !== S.user.screen_name.toLowerCase()) {
                   var e =
-                    _ && _.user
+                    S && S.user
                       ? '/'
-                          .concat(_.user.screen_name, '/status/')
-                          .concat(_.id_str, '/photo/')
+                          .concat(S.user.screen_name, '/status/')
+                          .concat(S.id_str, '/photo/')
                           .concat(j + 1)
                       : null
                   e && E.replace(e)
                 }
               },
-              [E, j, T, _],
+              [E, j, T, S],
             ),
             K = i.useCallback(
               function () {
-                if (_) {
-                  var e = ae.a.getTweetItem(_)
-                  g(v.contextualScribeNamespace), v.scribe({ action: 'show', data: { items: [e] } })
+                if (S) {
+                  var e = ae.a.getTweetItem(S)
+                  g(m.contextualScribeNamespace), m.scribe({ action: 'show', data: { items: [e] } })
                 }
               },
-              [v, g, _],
+              [m, g, S],
             ),
             X = function () {
               var e = A()
               E.goBackThroughModals({ fallbackPath: e })
             },
-            V = i.useCallback(
+            z = i.useCallback(
               function () {
-                y(S).catch(w(Q.a))
+                y(_).catch(w(Q.a))
               },
-              [w, y, S],
+              [w, y, _],
             ),
-            z = function (e) {
+            V = function (e) {
               return function () {
                 e && Ie(e)
-                  ? (v.scribe({ component: 'conversation_drawer', action: d ? 'collapse' : 'expand' }), f(!d))
-                  : (v.scribe({ component: 'conversation_drawer', action: I ? 'collapse' : 'expand' }),
+                  ? (m.scribe({ component: 'conversation_drawer', action: d ? 'collapse' : 'expand' }), f(!d))
+                  : (m.scribe({ component: 'conversation_drawer', action: I ? 'collapse' : 'expand' }),
                     D({ showTweetMediaDetailDrawer: !I }))
               }
             },
@@ -537,7 +535,7 @@
               var t = L(),
                 r = R()
               if (e !== t) {
-                v.scribe({
+                m.scribe({
                   component: 'gallery',
                   element: t < e ? 'next' : 'prev',
                   action: 'click',
@@ -560,10 +558,10 @@
                     dominantColor: n.rgb,
                     hoverLabel: { label: o ? Pe : Te },
                     icon: o ? i.createElement(he.a, null) : i.createElement(be.a, null),
-                    onClick: z(e),
+                    onClick: V(e),
                     type: 'onMediaDominantColorFilled',
                   })
-                : _ && !t
+                : S && !t
                 ? i.createElement(pe.a, {
                     accessibilityLabel: Ce,
                     dominantColor: r ? n.rgb : void 0,
@@ -589,14 +587,14 @@
                 onMediaItemChanged: Z,
                 onTap: o,
                 promotedContent: x,
-                videoId: 1 === t.length && _ ? ie.b.forTweet(_.id_str) : void 0,
+                videoId: 1 === t.length && S ? ie.b.forTweet(S.id_str) : void 0,
               })
             },
             $ = function (e) {
               var t = W(),
                 r = Object(we.b)(t),
                 n =
-                  ve.a.isTouchSupported() &&
+                  me.a.isTouchSupported() &&
                   (function () {
                     var e = L(),
                       t = R()
@@ -608,15 +606,15 @@
                 re.a,
                 {
                   backgroundColor: r,
-                  footerButtons: _
+                  footerButtons: S
                     ? i.createElement(ce.a, {
                         actionSize: 'large',
                         activeColor: 'white',
                         allowDownvote: !0,
                         color: 'white',
-                        forwardPivotInfo: _.softIntervention || O,
-                        style: _e.actionsBar,
-                        tweet: _,
+                        forwardPivotInfo: S.softIntervention || O,
+                        style: Se.actionsBar,
+                        tweet: S,
                         withCount: !0,
                       })
                     : void 0,
@@ -626,25 +624,25 @@
                   overlayFooter: n,
                   topRightButton: Y(e),
                 },
-                i.createElement(J.a, { accessibilityLabel: Ee, fetchStatus: b, onRequestRetry: V, render: G }),
+                i.createElement(J.a, { accessibilityLabel: Ee, fetchStatus: b, onRequestRetry: z, render: G }),
               )
             },
             Oe = i.useRef(null)
           i.useEffect(
             function () {
-              Oe.current !== S && (V(), (Oe.current = S))
+              Oe.current !== _ && (z(), (Oe.current = _))
             },
-            [V, S],
+            [z, _],
           )
           var Me = i.useRef(null)
           return (
             i.useEffect(
               function () {
                 var e
-                ;(null === (e = Me.current) || void 0 === e ? void 0 : e.id_str) !== (null == _ ? void 0 : _.id_str) &&
-                  (K(), (Me.current = _))
+                ;(null === (e = Me.current) || void 0 === e ? void 0 : e.id_str) !== (null == S ? void 0 : S.id_str) &&
+                  (K(), (Me.current = S))
               },
-              [K, _],
+              [K, S],
             ),
             i.useEffect(
               function () {
@@ -656,22 +654,22 @@
               oe.a.Configure,
               { headerless: !0 },
               t
-                ? i.createElement(me.a, null, function (e) {
+                ? i.createElement(ve.a, null, function (e) {
                     var t = e.windowWidth
                     return i.createElement(
                       le.a,
-                      { style: _e.container },
-                      i.createElement(le.a, { style: _e.neighbor }, $(t)),
+                      { style: Se.container },
+                      i.createElement(le.a, { style: Se.neighbor }, $(t)),
                       N(t)
                         ? i.createElement(q, {
-                            contextTweetId: m,
+                            contextTweetId: v,
                             location: C,
                             promotedContent: x,
                             rootTweet: P,
                             screenName: T,
                             socialContext: M,
-                            tweet: _,
-                            tweetId: S,
+                            tweet: S,
+                            tweetId: _,
                           })
                         : null,
                     )
@@ -680,7 +678,7 @@
             )
           )
         },
-        _e = X.a.create(function (e) {
+        Se = X.a.create(function (e) {
           return {
             actionsBar: { height: e.spaces.space48, maxWidth: 'none', paddingHorizontal: e.spaces.space12 },
             container: {
@@ -694,8 +692,8 @@
             neighbor: { flexGrow: 1, flexShrink: 1 },
           }
         }),
-        Se = x(Me)
-      t.default = Se
+        _e = x(Me)
+      t.default = _e
     },
   },
 ])

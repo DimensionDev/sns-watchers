@@ -351,7 +351,7 @@
                 value: function () {
                   if (!this.initialized()) return !1
                   var e = A.store.getState()
-                  return Object(w.l)(e)
+                  return Object(w.m)(e)
                 },
               },
               {

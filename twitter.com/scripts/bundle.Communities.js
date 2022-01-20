@@ -109,8 +109,8 @@
         R = n('m3Bd'),
         M = n.n(R),
         k = n('CHgo'),
-        x = n('7ep7')
-      function T(e) {
+        T = n('7ep7')
+      function x(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -133,7 +133,7 @@
       }
       var A = (function (e) {
           s()(n, e)
-          var t = T(n)
+          var t = x(n)
           function n(e) {
             var r
             return (
@@ -208,7 +208,7 @@
                   l = i.y - n
                 r.props.onWheel && r.props.onWheel(a, o, c, l)
               }),
-              (r._panResponder = x.a.create({
+              (r._panResponder = T.a.create({
                 onStartShouldSetPanResponder: function () {
                   return !0
                 },
@@ -259,8 +259,8 @@
         })(b.Component),
         L = n('9RkS'),
         D = n('rOXj'),
-        F = n('aITJ'),
-        H = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('Lsrn')),
+        H = n('aITJ'),
+        F = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('Lsrn')),
         B = n('k/Ka')
       function N(e, t) {
         var n = Object.keys(e)
@@ -296,7 +296,7 @@
           z(
             z({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [H.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [F.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           b.createElement(
             'g',
@@ -343,7 +343,7 @@
           V(
             V({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [H.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [F.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           b.createElement(
             'g',
@@ -390,7 +390,7 @@
           Q(
             Q({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [H.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [F.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           b.createElement(
             'g',
@@ -437,7 +437,7 @@
           $(
             $({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [H.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [F.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           b.createElement(
             'g',
@@ -487,7 +487,7 @@
           re(
             re({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [H.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [F.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           b.createElement(
             'g',
@@ -548,7 +548,7 @@
               h()(l()(r), '_previousTop', 0),
               h()(l()(r), '_panStyles', { top: 0, left: 0 }),
               h()(l()(r), '_shouldShowZoomControl', function () {
-                return (!F.b.isMobileOS() || !D.a.isTouchSupported()) && r.props.withZoomControl
+                return (!H.b.isMobileOS() || !D.a.isTouchSupported()) && r.props.withZoomControl
               }),
               h()(l()(r), '_renderControls', function () {
                 var e = r.props,
@@ -1317,8 +1317,8 @@
         R = n('4e/K'),
         M = n('MWbm'),
         k = n('4zmP'),
-        x = n('t62R'),
-        T = n('FIs5'),
+        T = n('t62R'),
+        x = n('FIs5'),
         A = n('rHpw'),
         L = n('GZwR')
       function D(e, t) {
@@ -1333,7 +1333,7 @@
         }
         return n
       }
-      function F(e) {
+      function H(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
@@ -1348,7 +1348,7 @@
         }
         return e
       }
-      var H = h.a.b139b549,
+      var F = h.a.b139b549,
         B = h.a.dfddd842,
         N = h.a.cf4898a0,
         z = h.a.a3b3939a,
@@ -1404,7 +1404,7 @@
           A = c.useCallback(
             function (e, t) {
               g(function (n) {
-                return F(F({}, n), {}, a()({}, e, t))
+                return H(H({}, n), {}, a()({}, e, t))
               })
             },
             [g],
@@ -1412,7 +1412,7 @@
           D = c.useCallback(
             function (e) {
               C(function (t) {
-                return F(F({}, t), {}, a()({}, e, !0))
+                return H(H({}, t), {}, a()({}, e, !0))
               })
             },
             [C],
@@ -1439,7 +1439,7 @@
               { viewType: 'community' },
               c.createElement(
                 f.b,
-                { behavioralEventViewType: 'invite', history: e.history, rightControl: re, subtitle: B, title: H },
+                { behavioralEventViewType: 'invite', history: e.history, rightControl: re, subtitle: B, title: F },
                 ((_ = (null == o ? void 0 : o.remaining_invite_count) || 0),
                 (S = _ > 999),
                 'CommunityInvites' === (null == o ? void 0 : o.__typename) &&
@@ -1489,7 +1489,7 @@
                   },
                   placeholder: N,
                   renderEmptyState: function () {
-                    return c.createElement(T.a, { header: G, message: Q })
+                    return c.createElement(x.a, { header: G, message: Q })
                   },
                   renderHeader: function () {
                     return (
@@ -1497,12 +1497,12 @@
                       c.createElement(
                         M.a,
                         { style: ne.input },
-                        c.createElement(x.b, { size: 'headline2', weight: 'heavy' }, V),
+                        c.createElement(T.b, { size: 'headline2', weight: 'heavy' }, V),
                       )
                     )
                   },
                   renderNoResultsState: function () {
-                    return c.createElement(T.a, { header: Z({ query: d }), message: q })
+                    return c.createElement(x.a, { header: Z({ query: d }), message: q })
                   },
                   renderUserDecoration: function (e) {
                     var t = e.userId
@@ -1728,8 +1728,8 @@
         k = function (e) {
           return e
         },
-        x = { viewType: 'timeline' },
-        T = (function (e) {
+        T = { viewType: 'timeline' },
+        x = (function (e) {
           s()(n, e)
           var t = I(n)
           function n() {
@@ -1810,7 +1810,7 @@
                   return n
                     ? b.createElement(C.a, {
                         accessibilityLabel: R,
-                        behavioralEventContext: x,
+                        behavioralEventContext: T,
                         fetchStatus: t,
                         onRequestRetry: this._handleFetch,
                         render: this._render,
@@ -1824,8 +1824,8 @@
             n
           )
         })(b.Component)
-      h()(T, 'defaultProps', { numColumns: 1, alwaysFetch: !1 })
-      var A = w(T)
+      h()(x, 'defaultProps', { numColumns: 1, alwaysFetch: !1 })
+      var A = w(x)
       t.a = A
     },
     FSMj: function (e, t, n) {
@@ -1973,27 +1973,27 @@
         R = n('4zmP'),
         M = n('0yYu'),
         k = n('6vad'),
-        x = n('rHpw'),
-        T = C.a.j643a234,
+        T = n('rHpw'),
+        x = C.a.j643a234,
         A = C.a.c730a21c,
         L = C.a.a5baa7d1,
         D = C.a.icc32e3d,
-        F = P.a.getCommunityTheme('Default'),
-        H = x.a.create(function (e) {
+        H = P.a.getCommunityTheme('Default'),
+        F = T.a.create(function (e) {
           return {
             badges: { marginRight: e.spaces.space16, marginLeft: e.spaces.space2 },
             communityTitle: { marginTop: e.spaces.space24, marginBottom: e.spaces.space2 },
             helpText: { marginTop: e.spaces.space12, marginBottom: e.spaces.space24 },
             hiddenTweetWarningText: { marginTop: e.spaces.space2, marginBottom: e.spaces.space24 },
             removedMemberReason: {
-              backgroundColor: x.a.theme.colors.gray50,
-              borderRadius: x.a.theme.spacesPx.space4,
+              backgroundColor: T.a.theme.colors.gray50,
+              borderRadius: T.a.theme.spacesPx.space4,
               border: '1px solid gray',
-              padding: x.a.theme.spacesPx.space16,
-              marginBottom: x.a.theme.spaces.space24,
+              padding: T.a.theme.spacesPx.space16,
+              marginBottom: T.a.theme.spaces.space24,
             },
             rulesTitle: { marginHorizontal: e.spacesPx.space16 },
-            titleText: { marginTop: x.a.theme.spaces.space24, marginBottom: e.spacesPx.space24 },
+            titleText: { marginTop: T.a.theme.spaces.space24, marginBottom: e.spacesPx.space24 },
             tweetContainer: { marginBottom: e.spacesPx.space12 },
             tweetInfo: { display: 'flex', flexDirection: 'column', justifyContent: 'center' },
             tweetInfoItems: { marginHorizontal: e.spacesPx.space16 },
@@ -2027,16 +2027,16 @@
                 : t.name) || '',
             p = null == n ? void 0 : n.name,
             f = null == n ? void 0 : n.rules,
-            y = (null == n ? void 0 : n.theme) || F,
+            y = (null == n ? void 0 : n.theme) || H,
             h = P.a.getCommunityUIColorName(y),
             b = Object(O.a)({ communityName: p })
           return y && null != f && f.length
             ? c.createElement(
                 j.a,
-                { style: H.tweetInfo },
+                { style: F.tweetInfo },
                 c.createElement(
                   j.a,
-                  { style: H.tweetInfoItems },
+                  { style: F.tweetInfoItems },
                   (function (e) {
                     switch (e) {
                       case V.HiddenTweet:
@@ -2045,21 +2045,21 @@
                           null,
                           c.createElement(
                             I.b,
-                            { color: h, size: 'subtext1', style: H.communityTitle, weight: 'bold' },
+                            { color: h, size: 'subtext1', style: F.communityTitle, weight: 'bold' },
                             p,
                           ),
                           c.createElement(
                             I.b,
-                            { size: 'headline1', style: [H.titleText, H.hiddenTweetWarningText], weight: 'heavy' },
-                            T,
+                            { size: 'headline1', style: [F.titleText, F.hiddenTweetWarningText], weight: 'heavy' },
+                            x,
                           ),
                           c.createElement(S.a, {
-                            style: H.tweetContainer,
+                            style: F.tweetContainer,
                             tweetId: null == i ? void 0 : i.id_str,
                             withMediaAsTextLinks: !1,
                           }),
                           c.createElement(R.a, { headline: A, text: d }),
-                          c.createElement(I.b, { style: H.helpText }, L),
+                          c.createElement(I.b, { style: F.helpText }, L),
                         )
                       case V.RemovedMember:
                         return c.createElement(
@@ -2067,12 +2067,12 @@
                           null,
                           c.createElement(
                             I.b,
-                            { size: 'headline1', style: H.titleText, weight: 'heavy' },
+                            { size: 'headline1', style: F.titleText, weight: 'heavy' },
                             D({ communityName: p }),
                           ),
                           c.createElement(
                             j.a,
-                            { style: H.removedMemberReason },
+                            { style: F.removedMemberReason },
                             c.createElement(I.b, { weight: 'bold' }, d),
                           ),
                         )
@@ -2082,8 +2082,8 @@
                 c.createElement(M.a, null),
                 c.createElement(k.b, { text: b }),
                 c.createElement(E.b, {
-                  badgeStyle: H.badges,
-                  ruleContainerStyle: H.rules,
+                  badgeStyle: F.badges,
+                  ruleContainerStyle: F.rules,
                   rules: f,
                   theme: y,
                   withBottomMargin: !0,
@@ -2386,8 +2386,8 @@
         }),
         M = n('MWbm'),
         k = n('yw4N'),
-        x = n('TnY3'),
-        T = n('cHvH'),
+        T = n('TnY3'),
+        x = n('cHvH'),
         A = n('3xLC')
       function L(e) {
         var t = (function () {
@@ -2443,7 +2443,7 @@
               key: 'render',
               value: function () {
                 var e = this
-                return E.createElement(T.a, null, function (t) {
+                return E.createElement(x.a, null, function (t) {
                   var n = t.windowWidth
                   return O.a.isTwoColumnLayout(n) ? e._renderForTwoColumnLayout() : e._renderForOneColumnLayout()
                 })
@@ -2520,15 +2520,15 @@
                   P = a.titleIconCell,
                   I = a.titleIconCellSize,
                   k = a.withBottomBorder,
-                  x = a.withDetailOpen,
-                  T = a.withSearchBox,
+                  T = a.withDetailOpen,
+                  x = a.withSearchBox,
                   A = a.withTweetButton,
                   L = 'root' === h,
                   D = 'secondaryRoot' === h,
-                  F = 'primaryDetail' === h,
-                  H = (F && w) || (L && O),
-                  B = L || (F && r),
-                  N = L ? g.c : F ? g.a : void 0,
+                  H = 'primaryDetail' === h,
+                  F = (H && w) || (L && O),
+                  B = L || (H && r),
+                  N = L ? g.c : H ? g.a : void 0,
                   z = E.createElement(
                     M.a,
                     { style: n ? [R.appBarContainer, R.appBarZindex] : R.appBarZindex },
@@ -2542,7 +2542,7 @@
                       onBackClick: f,
                       rightControl: y,
                       secondaryBar: n ? v : null,
-                      subtitle: H ? S : void 0,
+                      subtitle: F ? S : void 0,
                       title: j,
                       titleDomId: N,
                       titleIconCell: P,
@@ -2551,7 +2551,7 @@
                     }),
                   ),
                   U =
-                    L || (D && x)
+                    L || (D && T)
                       ? null
                       : E.createElement(_.a.Configure, {
                           SideNavButton: o,
@@ -2566,7 +2566,7 @@
                           searchBoxOptions: b,
                           subtitle: S,
                           title: j,
-                          withSearchBox: T,
+                          withSearchBox: x,
                           withTweetButton: A,
                         })
                 return E.createElement(E.Fragment, null, U, z, n ? null : v)
@@ -2578,7 +2578,7 @@
       })(E.Component)
       v()(D, 'contextType', A.a),
         v()(D, 'defaultProps', { screenType: 'secondaryDetail', showSubtitleOnWideDetail: !0 })
-      t.a = Object(x.a)(D)
+      t.a = Object(T.a)(D)
     },
     MCGW: function (e, t, n) {
       'use strict'
@@ -2805,13 +2805,13 @@
             w = e.onChange,
             _ = o.useCallback(
               function (e) {
-                return !Object(m.h)(e, 3, n)
+                return !Object(m.g)(e, 3, n)
               },
               [n],
             ),
             S = o.useCallback(
               function (e) {
-                return !Object(m.h)(e, 0, r)
+                return !Object(m.g)(e, 0, r)
               },
               [r],
             ),
@@ -2821,14 +2821,14 @@
             R = P[1],
             M = o.useState(_(f)),
             k = a()(M, 2),
-            x = k[0],
-            T = k[1],
+            T = k[0],
+            x = k[1],
             A = o.useState(void 0),
             L = a()(A, 2),
             D = L[0],
-            F = L[1],
-            H = o.useState(c),
-            B = a()(H, 2),
+            H = L[1],
+            F = o.useState(c),
+            B = a()(F, 2),
             N = B[0],
             z = B[1],
             U = o.useState(S(c)),
@@ -2847,9 +2847,9 @@
               function (e) {
                 var t = !1,
                   r = e.target.value
-                _(r) && ((t = !0), F(b({ minCharacterCount: 3, maxCharacterCount: n }))),
+                _(r) && ((t = !0), H(b({ minCharacterCount: 3, maxCharacterCount: n }))),
                   $(!0),
-                  T(t),
+                  x(t),
                   R(r),
                   w({ description: N, name: r, valid: !t && !W })
               },
@@ -2862,11 +2862,11 @@
                 S(n) && ((t = !0), Q(E({ maxCharacterCount: r }))),
                   V(t),
                   z(n),
-                  w({ name: I, description: n, valid: !t && !x })
+                  w({ name: I, description: n, valid: !t && !T })
               },
-              [r, I, w, x, S],
+              [r, I, w, T, S],
             ),
-            ne = x && D ? void 0 : h({ minCharacterCount: 3, maxCharacterCount: n }),
+            ne = T && D ? void 0 : h({ minCharacterCount: 3, maxCharacterCount: n }),
             re = W ? void 0 : g({ maxCharacterCount: r }),
             ae = l
               ? o.createElement(
@@ -2886,7 +2886,7 @@
               calculateLength: m.b,
               errorText: D,
               helperText: ne,
-              invalid: x && J,
+              invalid: T && J,
               label: y,
               name: 'typedRuleName',
               onChange: ee,
@@ -3257,7 +3257,7 @@
               function (e) {
                 var t = e.target.value,
                   n = !1
-                Object(s.h)(t, 3, S)
+                Object(s.g)(t, 3, S)
                   ? (d()(t).length > 0 || f()(t).length > 0) && ((n = !0), _(v))
                   : ((n = !0), _(b({ minCharacterCount: 3, maxCharacterCount: S }))),
                   E(n),
@@ -3511,13 +3511,13 @@
         R = n('iY63'),
         M = n('ACHU'),
         k = n('Ty5D'),
-        x = m.a.gfca5254,
-        T = m.a.d94edeb4,
+        T = m.a.gfca5254,
+        x = m.a.d94edeb4,
         A = m.a.j560c8ea,
         L = m.a.ab8089ea,
         D = m.a.h63a5c3b,
-        F = o.createElement(R.a, null),
-        H = o.createElement(M.a, null),
+        H = o.createElement(R.a, null),
+        F = o.createElement(M.a, null),
         B = { viewType: 'add' },
         N = function (e) {
           var t = o.useContext(i.a).featureSwitches,
@@ -3538,7 +3538,7 @@
                 ? o.createElement(y.a, {
                     accessibilityLabel: A,
                     behavioralEventContext: B,
-                    icon: F,
+                    icon: H,
                     link: '/i/communities/'.concat(p, '/tools/rules/add'),
                     pullRight: !0,
                     type: 'primaryText',
@@ -3549,7 +3549,7 @@
               l && g && _
                 ? o.createElement(y.a, {
                     accessibilityLabel: D,
-                    icon: H,
+                    icon: F,
                     pullRight: !0,
                     renderMenu: function (e) {
                       var t = [{ text: L, link: '/i/communities/'.concat(p, '/tools/rules/reorder') }]
@@ -3576,13 +3576,13 @@
                 { exact: !0, path: ''.concat(v, '/') },
                 o.createElement(
                   w.a,
-                  { communityId: p, rightControl: R, screenType: 'primaryDetail', title: x },
+                  { communityId: p, rightControl: R, screenType: 'primaryDetail', title: T },
                   o.createElement(
                     C.b,
                     a()(
                       {
                         badgeStyle: O.badgeStyle,
-                        explanation: T,
+                        explanation: x,
                         headerContainerStyle: O.headerContainerStyle,
                         ruleContainerStyle: O.ruleContainerStyle,
                         rules: h,
@@ -3596,7 +3596,7 @@
               o.createElement(
                 k.c,
                 { exact: !0, path: ''.concat(v, '/reorder') },
-                o.createElement(j, { community: u, explanation: T, history: s }),
+                o.createElement(j, { community: u, explanation: x, history: s }),
               ),
               o.createElement(k.c, null, o.createElement(d.a, { to: ''.concat(v, '/') })),
             )
@@ -3628,10 +3628,10 @@
       'use strict'
       n.r(t),
         n.d(t, 'CommunityTimelineType', function () {
-          return Jn
+          return er
         }),
         n.d(t, 'CommunityScreen', function () {
-          return er
+          return nr
         })
       n('OZaJ'), n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var r,
@@ -3686,13 +3686,13 @@
         R = n('Ig1G'),
         M = n('yoO3'),
         k = n('fTQJ'),
-        x = n('n0Rl'),
-        T = n('v//M'),
+        T = n('n0Rl'),
+        x = n('v//M'),
         A = (n('enFi'), n('z84I'), n('3XMw')),
         L = n.n(A),
         D = n('6vad'),
-        F = n('rC8y'),
-        H = n('0yYu'),
+        H = n('rC8y'),
+        F = n('0yYu'),
         B = n('rHpw'),
         N = n('jAXQ'),
         z = n.n(N),
@@ -3744,15 +3744,15 @@
                   ? g.createElement(
                       g.Fragment,
                       null,
-                      g.createElement(F.a, { link: '/i/communities/'.concat(r.rest_id, '/rules'), text: W }),
+                      g.createElement(H.a, { link: '/i/communities/'.concat(r.rest_id, '/rules'), text: W }),
                       ' ',
-                      g.createElement(H.a, null),
+                      g.createElement(F.a, null),
                     )
                   : null,
               )
         },
         Y = void 0 !== a ? a : (a = n('GR8q')),
-        G = Object(x.b)(Y, { errorConfig: { context: 'RULES' } }),
+        G = Object(T.b)(Y, { errorConfig: { context: 'RULES' } }),
         Q = function (e) {
           return g.createElement(G, {
             render: function (t) {
@@ -3760,7 +3760,7 @@
                 r = (t.error, t.fetchStatus),
                 a = t.retry
               return null != n && n.community
-                ? g.createElement(T.a, {
+                ? g.createElement(x.a, {
                     fetchStatus: r,
                     onRequestRetry: a,
                     render: function () {
@@ -3842,9 +3842,9 @@
                   g.Fragment,
                   null,
                   g.createElement(D.b, { text: ce }),
-                  Object(R.g)(r) && n ? g.createElement(q.a, { label: n }) : null,
+                  Object(R.f)(r) && n ? g.createElement(q.a, { label: n }) : null,
                   g.createElement(J.a, { containerStyle: fe.containerStyle, items: e._getItems() }),
-                  g.createElement(H.a, null),
+                  g.createElement(F.a, null),
                 )
               }
               return null
@@ -3876,9 +3876,9 @@
                         ? g.createElement(
                             g.Fragment,
                             null,
-                            g.createElement(F.a, { link: '/i/communities/'.concat(a, '/rules'), text: le }),
+                            g.createElement(H.a, { link: '/i/communities/'.concat(a, '/rules'), text: le }),
                             ' ',
-                            g.createElement(H.a, null),
+                            g.createElement(F.a, null),
                           )
                         : null,
                     )
@@ -3976,8 +3976,8 @@
         Re = n('mjJ+'),
         Me = n('/yvb'),
         ke = n('Znyr'),
-        xe = n('zIWA'),
-        Te = n('SNyS'),
+        Te = n('zIWA'),
+        xe = n('SNyS'),
         Ae = n('Lsrn'),
         Le = n('k/Ka')
       function De(e, t) {
@@ -3992,7 +3992,7 @@
         }
         return n
       }
-      function Fe(e) {
+      function He(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
@@ -4007,12 +4007,12 @@
         }
         return e
       }
-      var He = function () {
+      var Fe = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
         return Object(Le.a)(
           'svg',
-          Fe(
-            Fe({}, e),
+          He(
+            He({}, e),
             {},
             { accessibilityHidden: void 0 === e.accessibilityLabel, style: [Ae.a.root, e.style], viewBox: '0 0 24 24' },
           ),
@@ -4025,8 +4025,8 @@
           ),
         )
       }
-      He.metadata = { width: 24, height: 24 }
-      var Be = He,
+      Fe.metadata = { width: 24, height: 24 }
+      var Be = Fe,
         Ne = n('ACHU'),
         ze = L.a.h6beb5fa,
         Ue = L.a.e3f04700,
@@ -4068,16 +4068,16 @@
                     t.push({
                       text: Ke,
                       subText: We({ count: a }),
-                      Icon: xe.a,
+                      Icon: Te.a,
                       link: '/i/communities/'.concat(n, '/moderation/reported_tweets'),
                     }),
                   m &&
                     t.push({
                       text: Ve,
-                      Icon: xe.a,
+                      Icon: Te.a,
                       link: 'https://help.twitter.com/forms/safety-and-sensitive-content/communities',
                     }),
-                  t.push({ text: Xe, Icon: Te.a, link: 'https://help.twitter.com/using-twitter/communities' }),
+                  t.push({ text: Xe, Icon: xe.a, link: 'https://help.twitter.com/using-twitter/communities' }),
                   g.createElement(Re.a, { items: t, onCloseRequested: e })
                 )
               },
@@ -4205,7 +4205,7 @@
             f = o.id_str,
             y = o.name,
             h = o.role,
-            b = Object(R.g)(h),
+            b = Object(R.f)(h),
             v = { viewType: 'join', viewState: { type: 'toggleable', toggledTo: !b } },
             E = function () {
               a(void 0)
@@ -4355,13 +4355,13 @@
           .withAnalytics({ page: 'community', section: 'detail' }),
         Mt = n('YeIG'),
         kt = n('TIdA'),
-        xt = n('A91F'),
-        Tt = n('9Xij'),
-        At = n('cm6r'),
-        Lt = n('MAI/'),
-        Dt = n('k/OQ'),
+        Tt = n('A91F'),
+        xt = n('9Xij'),
+        At = n('X00g'),
+        Lt = n('cm6r'),
+        Dt = n('MAI/'),
+        Ht = n('k/OQ'),
         Ft = n('MtXG'),
-        Ht = n('X00g'),
         Bt = n('n4Eu'),
         Nt = n('I4+6')
       function zt(e) {
@@ -4392,8 +4392,10 @@
         Xt = L.a.d601fc2f,
         Yt = L.a.b721eb37,
         Gt = L.a.hb9400db,
-        Qt = L.a.d58baa7e,
-        Zt = (function (e) {
+        Qt = 'description',
+        Zt = 'facepiles_with_count',
+        qt = L.a.d58baa7e,
+        Jt = (function (e) {
           d()(n, e)
           var t = zt(n)
           function n() {
@@ -4421,12 +4423,12 @@
                       null,
                       g.createElement(kt.a, {
                         accessibilityLabel: '',
-                        aspectMode: xt.a.exact(a),
+                        aspectMode: Tt.a.exact(a),
                         backgroundColor: B.a.theme.colors.gray300,
                         image: r,
                       }),
                     )
-                  : g.createElement(Tt.a, { ratio: a }, g.createElement(Ie.a, { style: qt.placeholderImageContainer }))
+                  : g.createElement(xt.a, { ratio: a }, g.createElement(Ie.a, { style: $t.placeholderImageContainer }))
               }),
               v()(s()(e), '_renderCommunityDescription', function () {
                 var t = e.props,
@@ -4451,25 +4453,25 @@
                     E = n.theme,
                     O = y || 0,
                     w = null == f || null === (d = f.image) || void 0 === d ? void 0 : d.palette,
-                    C = e._isThemeEnabled ? E.backgroundColor : void 0
+                    C = e._isThemeEnabled ? At.a.getCommunityBackgroundColorName(E) : void 0
                   return g.createElement(
                     ge.a,
-                    { viewType: 'description' },
+                    { viewType: Qt },
                     g.createElement(
                       Ie.a,
                       null,
                       g.createElement(
                         Ie.a,
-                        { style: qt.descriptionContainer },
+                        { style: $t.descriptionContainer },
                         g.createElement(
                           Z.b,
-                          { color: 'white', size: 'title2', style: qt.name, weight: 'bold' },
+                          { color: 'white', size: 'title2', style: $t.name, weight: 'bold' },
                           b.trim(),
                         ),
-                        p && !Object(R.g)(v)
+                        p && !Object(R.f)(v)
                           ? g.createElement(
                               Ie.a,
-                              { style: qt.description },
+                              { style: $t.description },
                               g.createElement(
                                 Z.b,
                                 {
@@ -4490,21 +4492,21 @@
                           : null,
                         g.createElement(
                           ge.a,
-                          { viewType: 'facepiles_with_count' },
+                          { viewType: Zt },
                           g.createElement(
                             Ie.a,
-                            { style: qt.bottomContainer },
+                            { style: $t.bottomContainer },
                             g.createElement(
-                              At.a,
+                              Lt.a,
                               {
                                 interactiveStyles: e._getMemberContainerInteractiveStyle(),
                                 link: '/i/communities/'.concat(r, '/members'),
-                                style: qt.membersContainer,
+                                style: $t.membersContainer,
                               },
                               h
-                                ? g.createElement(Lt.a, {
+                                ? g.createElement(Dt.a, {
                                     borderColor: C,
-                                    style: qt.rightSpace,
+                                    style: $t.rightSpace,
                                     userAvatarSize: 'large',
                                     userAvatarUrls: h,
                                   })
@@ -4513,8 +4515,8 @@
                             ),
                             g.createElement(
                               Ie.a,
-                              { style: qt.buttons },
-                              g.createElement(Ct.a, { community: n, style: qt.inviteButton, type: 'onMediaOutlined' }),
+                              { style: $t.buttons },
+                              g.createElement(Ct.a, { community: n, style: $t.inviteButton, type: 'onMediaOutlined' }),
                               e._isParticipationEnabled
                                 ? g.createElement(Ot, {
                                     community: n,
@@ -4529,9 +4531,9 @@
                           ),
                         ),
                       ),
-                      g.createElement(Ie.a, { style: [B.a.absoluteFill, qt.backgroundColorWhite] }),
+                      g.createElement(Ie.a, { style: [B.a.absoluteFill, $t.backgroundColorWhite] }),
                       g.createElement(Ie.a, {
-                        style: [B.a.absoluteFill, qt.backgroundColor, e._getBackgroundStyle(w, E)],
+                        style: [B.a.absoluteFill, $t.backgroundColor, e._getBackgroundStyle(w, E)],
                       }),
                     ),
                   )
@@ -4544,7 +4546,7 @@
                     { to: '/i/communities/'.concat(t, '/latest'), label: Xt, key: Xt },
                     { to: '/i/communities/'.concat(t, '/about'), label: Yt, key: Yt },
                   ]
-                return g.createElement(Dt.a, {
+                return g.createElement(Ht.a, {
                   accessibilityLabel: Wt,
                   links: e._isTimelinesRankingEnabled
                     ? n
@@ -4556,7 +4558,7 @@
                 })
               }),
               v()(s()(e), '_renderCount', function (e) {
-                var t = Qt(e)
+                var t = qt(e)
                 return g.createElement(
                   Ft.a.Group,
                   null,
@@ -4577,7 +4579,7 @@
                 )
               }),
               v()(s()(e), '_getBackgroundStyle', function (t, n) {
-                if (e._isThemeEnabled) return Ht.a.getCommunityGradientStyle(n, Kt)
+                if (e._isThemeEnabled) return At.a.getCommunityGradientStyle(n, Kt)
                 var r = t && Bt.a.get(t),
                   a = r ? (null == r ? void 0 : r.rgb) : Ut,
                   o = 'rgba('.concat(a.red, ',').concat(a.green, ',').concat(a.blue, ', 0.9)'),
@@ -4618,7 +4620,7 @@
                         { behavioralEventViewType: 'timeline' },
                         g.createElement(
                           Ie.a,
-                          { style: qt.container },
+                          { style: $t.container },
                           g.createElement(Ie.a, null, this._renderImage(), this._renderCommunityDescription()),
                           this._renderTabs(),
                         ),
@@ -4630,8 +4632,8 @@
             n
           )
         })(g.Component)
-      v()(Zt, 'contextType', ee.a)
-      var qt = B.a.create(function (e) {
+      v()(Jt, 'contextType', ee.a)
+      var $t = B.a.create(function (e) {
           return {
             access: { alignSelf: 'stretch', flexDirection: 'row' },
             name: { flexDirection: 'column', justifyContent: 'left', marginBottom: e.spaces.space8 },
@@ -4667,55 +4669,55 @@
             placeholderImageContainer: { backgroundColor: e.colors.gray300, height: '100%' },
           }
         }),
-        Jt = Rt(Zt),
-        $t = n('eSoz'),
-        en = n('8Lfv'),
-        tn = n('LI/a'),
-        nn = function (e, t) {
+        en = Rt(Jt),
+        tn = n('eSoz'),
+        nn = n('8Lfv'),
+        rn = n('LI/a'),
+        an = function (e, t) {
           return t.communityId
         },
-        rn = function (e, t) {
-          var n = $t.b.select(e, t.communityId)
-          return Object(R.g)(null == n ? void 0 : n.role)
+        on = function (e, t) {
+          var n = tn.b.select(e, t.communityId)
+          return Object(R.f)(null == n ? void 0 : n.role)
         },
-        an = Object(S.a)()
+        cn = Object(S.a)()
           .propsFromState(function () {
             return {
-              isCommunityMember: rn,
-              rankedTweetsModule: Object(_.createSelector)(nn, function (e) {
-                return Object(tn.b)(e)
+              isCommunityMember: on,
+              rankedTweetsModule: Object(_.createSelector)(an, function (e) {
+                return Object(rn.b)(e)
               }),
-              tweetsModule: Object(_.createSelector)(nn, function (e) {
-                return Object(tn.a)(e)
+              tweetsModule: Object(_.createSelector)(an, function (e) {
+                return Object(rn.a)(e)
               }),
             }
           })
           .propsFromActions(function () {
             return {
-              clearTimelineCache: en.a,
+              clearTimelineCache: nn.a,
               createLocalApiErrorHandler: Object(Oe.createLocalApiErrorHandlerWithContextFactory)('COMMUNITIES_TWEETS'),
             }
           }),
-        on = n('FIs5'),
-        cn = n('EUHl'),
-        ln = n('7BdX'),
-        un = n('7JQg'),
-        sn = L.a.c18e3a3e,
-        mn = L.a.d68146c0,
-        dn = L.a.h5245afa,
-        pn = L.a.f05dbeff,
-        fn = { page: 'community', section: 'home' },
-        yn = { page: 'community', section: 'latest' },
-        hn = { page: 'community', section: 'tweets' },
-        bn = an(function (e) {
+        ln = n('FIs5'),
+        un = n('EUHl'),
+        sn = n('7BdX'),
+        mn = n('7JQg'),
+        dn = L.a.c18e3a3e,
+        pn = L.a.d68146c0,
+        fn = L.a.h5245afa,
+        yn = L.a.f05dbeff,
+        hn = { page: 'community', section: 'home' },
+        bn = { page: 'community', section: 'latest' },
+        vn = { page: 'community', section: 'tweets' },
+        gn = cn(function (e) {
           var t = g.useContext(ee.a).featureSwitches.isTrue('c9s_timelines_ranking_enabled'),
             n = e.clearTimelineCache,
             r = e.createLocalApiErrorHandler,
             a = e.isCommunityMember,
             o = e.rankedTweetsModule,
             i = e.tweetsModule,
-            c = e.type === Jn.Home ? { module: o, scribeNamespace: fn } : { module: i, scribeNamespace: yn },
-            l = t ? c : { module: i, scribeNamespace: hn },
+            c = e.type === er.Home ? { module: o, scribeNamespace: hn } : { module: i, scribeNamespace: bn },
+            l = t ? c : { module: i, scribeNamespace: vn },
             u = l.module,
             s = l.scribeNamespace
           g.useEffect(
@@ -4725,28 +4727,28 @@
             [n, r, a, u],
           )
           var m = g.useCallback(function () {
-            return g.createElement(on.a, { buttonType: 'brandOutlined', header: sn, message: mn })
+            return g.createElement(ln.a, { buttonType: 'brandOutlined', header: dn, message: pn })
           }, [])
           return g.createElement(
-            un.b,
+            mn.b,
             { namespace: s },
             g.createElement(
               M.a,
               { behavioralEventViewType: 'tweets' },
               g.createElement(k.a, {
-                loadingAccessibilityLabel: pn,
+                loadingAccessibilityLabel: yn,
                 module: u,
-                newTweetsPillMode: cn.a.CLIENT,
-                prerollDisplayLocation: ln.c.OTHER,
+                newTweetsPillMode: un.a.CLIENT,
+                prerollDisplayLocation: sn.c.OTHER,
                 refreshControl: null,
                 renderEmptyState: m,
-                title: dn,
+                title: fn,
               }),
             ),
           )
         }),
-        vn = n('o3oN')
-      function gn(e, t) {
+        En = n('o3oN')
+      function On(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -4758,14 +4760,14 @@
         }
         return n
       }
-      var En = Object(S.a)()
+      var wn = Object(S.a)()
           .propsFromState(function () {
             return {
               communityId: O.c,
               community: O.a,
               communityTheme: O.f,
               fetchStatus: O.b,
-              membershipsFetchStatus: vn.d,
+              membershipsFetchStatus: En.d,
               isCommunityMember: O.h,
               joinActionResultType: O.i,
               loggedInUser: jt.e.selectLoggedInUser,
@@ -4778,12 +4780,12 @@
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {}
                 t % 2
-                  ? gn(Object(n), !0).forEach(function (t) {
+                  ? On(Object(n), !0).forEach(function (t) {
                       v()(e, t, n[t])
                     })
                   : Object.getOwnPropertyDescriptors
                   ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-                  : gn(Object(n)).forEach(function (t) {
+                  : On(Object(n)).forEach(function (t) {
                       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     })
               }
@@ -4793,13 +4795,13 @@
           .propsFromActions(function () {
             return {
               createLocalApiErrorHandler: Object(Oe.createLocalApiErrorHandlerWithContextFactory)('COMMUNITIES_SCREEN'),
-              fetchCommunityIfNeeded: $t.b.fetchOneIfNeeded,
-              fetchCommunityMemberships: vn.a,
+              fetchCommunityIfNeeded: tn.b.fetchOneIfNeeded,
+              fetchCommunityMemberships: En.a,
             }
           })
           .withAnalytics({ page: 'community' }),
-        On = (n('MvUL'), n('Ty5D'))
-      function wn(e, t) {
+        Cn = (n('MvUL'), n('Ty5D'))
+      function _n(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -4811,27 +4813,27 @@
         }
         return n
       }
-      function Cn(e) {
+      function Sn(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? wn(Object(n), !0).forEach(function (t) {
+            ? _n(Object(n), !0).forEach(function (t) {
                 v()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : wn(Object(n)).forEach(function (t) {
+            : _n(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var _n = function () {
+      var jn = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
         return Object(Le.a)(
           'svg',
-          Cn(
-            Cn({}, e),
+          Sn(
+            Sn({}, e),
             {},
             { accessibilityHidden: void 0 === e.accessibilityLabel, style: [Ae.a.root, e.style], viewBox: '0 0 24 24' },
           ),
@@ -4847,36 +4849,36 @@
           ),
         )
       }
-      _n.metadata = { width: 24, height: 24 }
-      var Sn = _n,
-        jn = n('wpLu'),
-        Pn = n('vFjZ'),
-        In = L.a.bf359e0d,
-        Rn = L.a.e8fcdd3a,
-        Mn = L.a.h54d99da,
-        kn = L.a.f30c8202,
-        xn = L.a.ca7eeabf,
-        Tn = L.a.a55eca58,
-        An = L.a.e97cf2bc,
-        Ln = L.a.j24c37b2,
-        Dn = g.memo(function (e) {
+      jn.metadata = { width: 24, height: 24 }
+      var Pn = jn,
+        In = n('wpLu'),
+        Rn = n('vFjZ'),
+        Mn = L.a.bf359e0d,
+        kn = L.a.e8fcdd3a,
+        Tn = L.a.h54d99da,
+        xn = L.a.f30c8202,
+        An = L.a.ca7eeabf,
+        Ln = L.a.a55eca58,
+        Dn = L.a.e97cf2bc,
+        Hn = L.a.j24c37b2,
+        Fn = g.memo(function (e) {
           var t = e.community,
             n = t.id_str,
-            r = Object(On.g)(),
+            r = Object(Cn.g)(),
             a = g.useCallback(
               function () {
                 r.replace('/i/communities/'.concat(n, '/'))
               },
               [r, n],
             ),
-            o = Object(R.d)(Object(R.e)(t)),
+            o = At.a.getCommunityThemeDisplayName(Object(R.d)(t)),
             i = g.createElement(
               Ie.a,
-              { accessibilityRole: 'list', style: Fn.rulesContainer },
+              { accessibilityRole: 'list', style: Bn.rulesContainer },
               t.rules.map(function (e) {
                 return g.createElement(
                   Z.b,
-                  { accessibilityRole: 'listitem', color: 'gray700', key: e.rest_id, style: Fn.rule },
+                  { accessibilityRole: 'listitem', color: 'gray700', key: e.rest_id, style: Bn.rule },
                   e.name,
                 )
               }),
@@ -4884,33 +4886,33 @@
           return g.createElement(
             rt.a,
             {
-              actionLabel: Ln,
+              actionLabel: Hn,
               graphicDisplayMode: 'none',
-              headline: In,
+              headline: Mn,
               onAction: a,
               onClose: a,
-              subtext: Rn,
+              subtext: kn,
               withCloseButton: !0,
             },
             g.createElement(
               Ie.a,
-              { style: Fn.infoItemsContainer },
+              { style: Bn.infoItemsContainer },
               g.createElement(J.a, {
-                containerStyle: Fn.itemContainer,
+                containerStyle: Bn.itemContainer,
                 items: [
-                  { label: Mn, description: kn, decoration: g.createElement(Sn, { style: Fn.decorationContainer }) },
-                  { label: xn, decoration: g.createElement(jn.a, { style: Fn.decorationContainer }), description: i },
+                  { label: Tn, description: xn, decoration: g.createElement(Pn, { style: Bn.decorationContainer }) },
+                  { label: An, decoration: g.createElement(In.a, { style: Bn.decorationContainer }), description: i },
                   {
-                    label: Tn({ title: o }),
-                    description: An,
-                    decoration: g.createElement(Pn.a, { style: Fn.decorationContainer }),
+                    label: Ln({ title: o }),
+                    description: Dn,
+                    decoration: g.createElement(Rn.a, { style: Bn.decorationContainer }),
                   },
                 ],
               }),
             ),
           )
         }),
-        Fn = B.a.create(function (e) {
+        Bn = B.a.create(function (e) {
           return {
             infoItemsContainer: { marginBottom: e.spaces.space32 },
             itemContainer: { paddingHorizontal: 0 },
@@ -4924,17 +4926,17 @@
             rule: { display: 'list-item', listStyleType: 'disc', listStylePosition: 'inside' },
           }
         }),
-        Hn = Dn,
-        Bn = n('dwig'),
-        Nn = n('MDbM'),
-        zn = n('0+qk'),
-        Un = n('oQhu'),
-        Kn = n('/de5'),
-        Wn = n('VS6U'),
-        Vn = n('QRqA'),
-        Xn = n('Qwev'),
-        Yn = n('mw9i')
-      function Gn(e, t) {
+        Nn = Fn,
+        zn = n('dwig'),
+        Un = n('MDbM'),
+        Kn = n('0+qk'),
+        Wn = n('oQhu'),
+        Vn = n('/de5'),
+        Xn = n('VS6U'),
+        Yn = n('QRqA'),
+        Gn = n('Qwev'),
+        Qn = n('mw9i')
+      function Zn(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -4946,22 +4948,22 @@
         }
         return n
       }
-      function Qn(e) {
+      function qn(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Gn(Object(n), !0).forEach(function (t) {
+            ? Zn(Object(n), !0).forEach(function (t) {
                 v()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : Gn(Object(n)).forEach(function (t) {
+            : Zn(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      function Zn(e) {
+      function Jn(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -4982,12 +4984,12 @@
           return f()(this, n)
         }
       }
-      var qn = { type: 'serversideContextKey', serversideContextType: 'community' },
-        Jn = Object.freeze({ Home: 'home', Latest: 'latest' }),
-        $n = L.a.a7c2e06c,
-        er = (function (e) {
+      var $n = { type: 'serversideContextKey', serversideContextType: 'community' },
+        er = Object.freeze({ Home: 'home', Latest: 'latest' }),
+        tr = L.a.a7c2e06c,
+        nr = (function (e) {
           d()(n, e)
-          var t = Zn(n)
+          var t = Jn(n)
           function n() {
             var e
             i()(this, n)
@@ -5000,14 +5002,14 @@
               v()(
                 s()(e),
                 '_getClientEntity',
-                Object(Un.a)(function (e) {
-                  return Qn(Qn({}, qn), {}, { serversideContextId: e })
+                Object(Wn.a)(function (e) {
+                  return qn(qn({}, $n), {}, { serversideContextId: e })
                 }),
               ),
               v()(
                 s()(e),
                 '_getWelcomeEducationParams',
-                Object(Un.a)(function (e, t) {
+                Object(Wn.a)(function (e, t) {
                   return { forSingleCommunity: { canJoinCommunity: 'CommunityJoinAction' === t, theme: e.theme } }
                 }),
               ),
@@ -5022,45 +5024,45 @@
                   l = t.match,
                   u = (null == n ? void 0 : n.role) === R.a.Admin && void 0 !== c.query.show_creation_summary,
                   s = e._isAllowedToTweet
-                    ? g.createElement(zn.a, { getLocationState: e._getTweetButtonLocationState, history: o })
+                    ? g.createElement(Kn.a, { getLocationState: e._getTweetButtonLocationState, history: o })
                     : null
-                return r && a === Nn.a.LOADING
-                  ? g.createElement(Xn.a, { style: tr.topMargin })
-                  : r && null != n && n.name && a === Nn.a.LOADED
+                return r && a === Un.a.LOADING
+                  ? g.createElement(Gn.a, { style: rr.topMargin })
+                  : r && null != n && n.name && a === Un.a.LOADED
                   ? g.createElement(
-                      Bn.a,
-                      { component: Yn.a, fab: s },
-                      g.createElement(Vn.a, e._getWelcomeEducationParams(n, i)),
-                      u && g.createElement(Hn, { community: n }),
+                      zn.a,
+                      { component: Qn.a, fab: s },
+                      g.createElement(Yn.a, e._getWelcomeEducationParams(n, i)),
+                      u && g.createElement(Nn, { community: n }),
                       e._renderCommunityDetail(),
                       g.createElement(
-                        On.c,
+                        Cn.c,
                         { exact: !0, path: '/i/communities/'.concat(r, '/about') },
                         g.createElement(ve, { communityId: r, match: l }),
                       ),
                       g.createElement(
-                        On.e,
+                        Cn.e,
                         null,
                         g.createElement(
-                          On.c,
+                          Cn.c,
                           { exact: !0, path: '/i/communities/'.concat(r, '/') },
-                          g.createElement(bn, { communityId: r, location: c, match: l, type: Jn.Home }),
+                          g.createElement(gn, { communityId: r, location: c, match: l, type: er.Home }),
                         ),
                         g.createElement(
-                          On.c,
+                          Cn.c,
                           { path: '/i/communities/'.concat(r, '/latest') },
-                          g.createElement(bn, { communityId: r, location: c, match: l, type: Jn.Latest }),
+                          g.createElement(gn, { communityId: r, location: c, match: l, type: er.Latest }),
                         ),
                       ),
                     )
-                  : g.createElement(Kn.b, { history: o, location: c, match: l })
+                  : g.createElement(Vn.b, { history: o, location: c, match: l })
               }),
               v()(s()(e), '_renderCommunityDetail', function () {
                 var t = e.props,
                   n = t.communityId,
                   r = t.history,
                   a = t.match
-                return n ? g.createElement(Jt, { communityId: n, history: r, match: a }) : null
+                return n ? g.createElement(en, { communityId: n, history: r, match: a }) : null
               }),
               v()(s()(e), '_handleFetchIfNeeded', function () {
                 var t = e.props,
@@ -5109,10 +5111,10 @@
                   return g.createElement(
                     ge.a,
                     { clientEntity: this._getClientEntity(n || ''), viewType: 'community' },
-                    g.createElement(Wn.a, {
+                    g.createElement(Xn.a, {
                       backLocation: a && '/'.concat(a, '/communities'),
                       composeOptions: this._getTweetButtonLocationState(),
-                      documentTitle: i ? $n({ communityName: i }) : '',
+                      documentTitle: i ? tr({ communityName: i }) : '',
                       history: r,
                       primaryContent: this._renderPrimaryContent(),
                       rightControl: c,
@@ -5127,12 +5129,12 @@
             n
           )
         })(g.Component)
-      v()(er, 'contextType', ee.a)
-      var tr = B.a.create(function (e) {
+      v()(nr, 'contextType', ee.a)
+      var rr = B.a.create(function (e) {
           return { topMargin: { marginTop: e.spaces.space64 } }
         }),
-        nr = En(er)
-      t.default = nr
+        ar = wn(nr)
+      t.default = ar
     },
     U0Qk: function (e, t, n) {
       'use strict'
@@ -5167,7 +5169,7 @@
             w = o.useCallback(
               function (e) {
                 var t = e.target.value,
-                  n = !Object(s.h)(t, 3, O)
+                  n = !Object(s.g)(t, 3, O)
                 n && h(p({ minCharacterCount: 3, maxCharacterCount: O })), E(n), l(t, n)
               },
               [O, h, l],
@@ -5208,7 +5210,7 @@
         m = n('rxPX'),
         d = Object(m.a)()
           .propsFromState(function () {
-            return { communitiesActions: s.e }
+            return { communitiesActions: s.f }
           })
           .propsFromActions(function () {
             return { createCommunity: u.b.create }
@@ -5242,13 +5244,13 @@
             I = y[1],
             M = m || w,
             k = o.useState(''),
-            x = a()(k, 2),
-            T = x[0],
-            A = x[1],
+            T = a()(k, 2),
+            x = T[0],
+            A = T[1],
             L = o.useState(''),
             D = a()(L, 2),
-            F = D[0],
-            H = D[1],
+            H = D[0],
+            F = D[1],
             B = o.useState(null),
             N = a()(B, 2),
             z = N[0],
@@ -5257,12 +5259,12 @@
               A(e), d(t)
             }, []),
             W = o.useCallback(function (e, t) {
-              H(e), 0 === e.length ? I(!1) : I(t)
+              F(e), 0 === e.length ? I(!1) : I(t)
             }, []),
             V = o.useCallback(
               function () {
                 U(null),
-                  n(T, { description: F })
+                  n(x, { description: H })
                     .then(function (e) {
                       if ('Community' === (null == e ? void 0 : e.type)) {
                         var t = null == e ? void 0 : e.normalized.result
@@ -5273,7 +5275,7 @@
                       U({ error: 'GraphQL error', reason: e })
                     })
               },
-              [T, F, n, r],
+              [x, H, n, r],
             )
           if (null == t || !t.create) return o.createElement(b.a, { to: '/home' })
           var X = o.createElement(g.a, { disabled: M, onClick: V, size: 'small', type: 'brandFilled' }, C),
@@ -5301,8 +5303,8 @@
                 null,
                 Y,
                 o.createElement(O.b, { color: 'gray700', style: R.text }, S),
-                o.createElement(c.a, { autoFocus: !0, communityName: T, onChange: K }),
-                o.createElement(l.a, { communityPurpose: F, onChange: W }),
+                o.createElement(c.a, { autoFocus: !0, communityName: x, onChange: K }),
+                o.createElement(l.a, { communityPurpose: H, onChange: W }),
               ),
             ),
           )
@@ -5741,8 +5743,8 @@
           return p()(this, n)
         }
       }
-      var x = j.a.gd80afba,
-        T = j.a.a753a87f,
+      var T = j.a.gd80afba,
+        x = j.a.a753a87f,
         A = (function (e) {
           m()(n, e)
           var t = k(n)
@@ -5760,7 +5762,7 @@
                 return r.createElement(
                   R.a,
                   { disabled: e, onPress: a._handleApplyButtonClick, size: 'small', testID: I, type: 'primaryFilled' },
-                  T,
+                  x,
                 )
               }),
               b()(u()(a), '_handleBackClick', function () {
@@ -5816,11 +5818,11 @@
                     {
                       backButtonType: 'back',
                       containerStyle: L.root,
-                      documentTitle: a || x,
+                      documentTitle: a || T,
                       history: n,
                       onBackClick: this._handleBackClick,
                       rightControl: this._renderAppBarRightControl(),
-                      title: a || x,
+                      title: a || T,
                     },
                     r.createElement(P.a, {
                       defaultAspectRatio: t,
@@ -5840,14 +5842,14 @@
           return { root: { flexShrink: 1, height: 650 } }
         }),
         D = C(A),
-        F = n('X8FW'),
-        H = M.a.create(function (e) {
+        H = n('X8FW'),
+        F = M.a.create(function (e) {
           return { modal: { width: 600, maxWidth: '90vw' } }
         })
       t.a = function (e) {
         return r.createElement(
-          F.b,
-          { clickMaskToClose: !1, modalSize: 'fitChildren', style: H.modal },
+          H.b,
+          { clickMaskToClose: !1, modalSize: 'fitChildren', style: F.modal },
           r.createElement(D, e),
         )
       }
@@ -6058,13 +6060,13 @@
         R = f.a.c8c7f9fc,
         M = f.a.c045c7b6,
         k = f.a.a87df2ee,
-        x = f.a.dc6ce7b4,
-        T = f.a.gfca5254,
+        T = f.a.dc6ce7b4,
+        x = f.a.gfca5254,
         A = f.a.bb081ea1,
         L = f.a.h6beb5fa,
         D = f.a.e3f04700,
-        F = f.a.efc26607,
-        H = f.a.adfcc3cd,
+        H = f.a.efc26607,
+        F = f.a.adfcc3cd,
         B = f.a.d0330d9c,
         N = f.a.fd67f7c8,
         z = f.a.gc00d212,
@@ -6097,7 +6099,7 @@
           )
           var w = n.role,
             C = w === o.a.Admin ? P : I,
-            _ = w === o.a.Admin ? H : B,
+            _ = w === o.a.Admin ? F : B,
             S = !s.isExact
           return r.createElement(
             h.a,
@@ -6130,15 +6132,15 @@
                 : null,
               r.createElement(E.b, { text: k }),
               r.createElement(y.a, {
-                description: F({ memberCount: n.member_count }),
-                label: x,
+                description: H({ memberCount: n.member_count }),
+                label: T,
                 link: '/i/communities/'.concat(i, '/tools/members'),
                 thumbnail: Y,
               }),
               v
                 ? r.createElement(y.a, {
                     description: _,
-                    label: T,
+                    label: x,
                     link: '/i/communities/'.concat(i, '/tools/rules'),
                     thumbnail: G,
                   })
@@ -6162,146 +6164,6 @@
         },
         Z = m(Q)
       t.default = Z
-    },
-    'li/m': function (e, t, n) {
-      'use strict'
-      n.d(t, 'b', function () {
-        return f
-      }),
-        n.d(t, 'c', function () {
-          return y
-        }),
-        n.d(t, 'a', function () {
-          return h
-        })
-      n('+KXO'), n('1t7P'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
-      var r = n('RhWx'),
-        a = n.n(r),
-        o = n('KEM+'),
-        i = n.n(o),
-        c = (n('LW0h'), n('5BYb'), n('2G9S'), n('7xRU'), n('/kEJ')),
-        l = n('eSoz'),
-        u = n('RqPI'),
-        s = n('o3oN'),
-        m = n('G6rE')
-      function d(e, t) {
-        var n = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
-          t &&
-            (r = r.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            n.push.apply(n, r)
-        }
-        return n
-      }
-      function p(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? d(Object(n), !0).forEach(function (t) {
-                i()(e, t, n[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : d(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-              })
-        }
-        return e
-      }
-      var f = function (e) {
-          return function (t, n, r) {
-            r.api
-            return t(l.b.join(e)).then(function (r) {
-              var o,
-                i,
-                c,
-                m,
-                d = null === (o = n().communityMemberships) || void 0 === o ? void 0 : o.memberships,
-                p =
-                  ((m = e),
-                  (c = d).some(function (e) {
-                    return e === m
-                  })
-                    ? c
-                    : [m].concat(a()(c))),
-                f = [Object(u.w)(!0), Object(s.e)(p)],
-                y = null == r || null === (i = r.entities) || void 0 === i ? void 0 : i.communities[e]
-              return y && f.push(l.b.updateOne(e, y)), t(f)
-            })
-          }
-        },
-        y = function (e) {
-          return function (t, n, r) {
-            r.api
-            return t(l.b.leave(e)).then(function (r) {
-              var a,
-                o,
-                i = (function (e, t) {
-                  return e.filter(function (e) {
-                    return t !== e
-                  })
-                })(null === (a = n().communityMemberships) || void 0 === a ? void 0 : a.memberships, e),
-                c = [Object(s.e)(i)]
-              0 === i.length && c.push(Object(u.w)(!1))
-              var d = null == r || null === (o = r.entities) || void 0 === o ? void 0 : o.communities[e]
-              if (d) {
-                var p,
-                  f = m.e.selectLoggedInUser(n())
-                if (d.membersFacepileUrls && null != f && f.profile_image_url_https)
-                  d.membersFacepileUrls =
-                    null === (p = d.membersFacepileUrls) || void 0 === p
-                      ? void 0
-                      : p.filter(function (e) {
-                          return e !== (null == f ? void 0 : f.profile_image_url_https)
-                        })
-                c.push(l.b.updateOne(e, d))
-              }
-              return t(c)
-            })
-          }
-        },
-        h = function (e, t) {
-          return function (n, r, a) {
-            a.api
-            return n(l.b.invite(e, { userId: t })).then(function (a) {
-              var o = r()
-              if (a)
-                switch (a.type) {
-                  case 'UserCommunityRelationship':
-                    a.normalized.entities && n(Object(c.c)(a.normalized.entities))
-                    var u = (function (e, t, n) {
-                      var r = e.entities.communities.entities[t]
-                      if ('CommunityInvites' === (null == r ? void 0 : r.invites_result.__typename)) {
-                        var a = {
-                          invites_result: p(
-                            p({}, r.invites_result),
-                            {},
-                            { remaining_invite_count: n(r.invites_result.remaining_invite_count) },
-                          ),
-                        }
-                        return l.b.updateOne(r.id_str, a)
-                      }
-                    })(o, e, function () {
-                      return a.remainingInviteCount
-                    })
-                    u && n(u)
-                    break
-                  case 'UserCommunityInviteActionUnavailable':
-                    var s = ''.concat(e, '_').concat(t),
-                      m = {
-                        id_str: s,
-                        __typename: 'UserCommunityInviteActionUnavailable',
-                        reason: a.reason,
-                        message: a.message,
-                      }
-                    n(Object(c.c)({ userCommunityInviteActionResult: i()({}, s, m) }))
-                }
-            })
-          }
-        }
     },
     m0MN: function (e, t, n) {
       'use strict'
@@ -6394,13 +6256,13 @@
         k = Object(d.a)().propsFromState(function () {
           return { reports: M }
         }),
-        x = n('3XMw'),
-        T = n.n(x),
+        T = n('3XMw'),
+        x = n.n(T),
         A = n('MWbm'),
         L = n('t62R'),
         D = n('855f'),
-        F = n('GBcw'),
-        H = n('cHvH'),
+        H = n('GBcw'),
+        F = n('cHvH'),
         B = n('IMA+'),
         N = n('rHpw'),
         z = n('5mJL'),
@@ -6411,9 +6273,9 @@
             var t = e.count,
               n = e.formattedCount
             return c.createElement(
-              T.a.I18NFormatMessage,
+              x.a.I18NFormatMessage,
               { $i18n: 'je0779b7' },
-              c.createElement(L.b, { color: 'primary' }, T.a.ff0f7429({ count: t, formattedCount: n })),
+              c.createElement(L.b, { color: 'primary' }, x.a.ff0f7429({ count: t, formattedCount: n })),
             )
           })({ count: e, formattedCount: D.a.getFormattedCount(e) })
         },
@@ -6422,9 +6284,9 @@
             n = e.withBottomBorder,
             r = t.created_at,
             a = t.reporter,
-            o = c.createElement(F.a, { timestamp: r })
+            o = c.createElement(H.a, { timestamp: r })
           return a
-            ? c.createElement(H.a, null, function (e) {
+            ? c.createElement(F.a, null, function (e) {
                 var r = e.windowWidth
                 return c.createElement(
                   A.a,
@@ -6490,7 +6352,7 @@
               ),
             ),
             c.createElement(K.a, null),
-            c.createElement(F.a, { timestamp: u }),
+            c.createElement(H.a, { timestamp: u }),
           )
         }),
         Y = N.a.create(function (e) {
@@ -6598,8 +6460,8 @@
         ye = n('n5fo'),
         he = n('6Rrp'),
         be = Object.freeze({ Hidden: 'hidden', Kept: 'kept' }),
-        ve = T.a.ad10c66d,
-        ge = T.a.c6caed9c,
+        ve = x.a.ad10c66d,
+        ge = x.a.c6caed9c,
         Ee = function (e) {
           return c.createElement(L.b, null, e)
         },
@@ -6608,13 +6470,13 @@
           switch (e.type) {
             case be.Hidden:
               var n = (function (e) {
-                  return c.createElement(T.a.I18NFormatMessage, { $i18n: 'dfd5760a' }, e)
+                  return c.createElement(x.a.I18NFormatMessage, { $i18n: 'dfd5760a' }, e)
                 })(t),
                 r = [{ label: Ee(n), decoration: Ce }]
               return c.createElement(fe.a, { accessibilityLabel: ve, containerStyle: we.container, items: r })
             case be.Kept:
               var a = (function (e) {
-                  return c.createElement(T.a.I18NFormatMessage, { $i18n: 'a6d33440' }, e)
+                  return c.createElement(x.a.I18NFormatMessage, { $i18n: 'a6d33440' }, e)
                 })(t),
                 o = [{ label: Ee(a), decoration: _e }]
               return c.createElement(fe.a, { accessibilityLabel: ge, containerStyle: we.container, items: o })
@@ -6663,12 +6525,12 @@
         return e
       }
       var Pe = { page: 'reported_tweets', component: 'tweet' },
-        Ie = T.a.f1d9930c,
-        Re = T.a.a219e217,
-        Me = T.a.fa524057,
-        ke = T.a.g30bc699,
-        xe = T.a.f0306107,
-        Te = T.a.b99364a5,
+        Ie = x.a.f1d9930c,
+        Re = x.a.a219e217,
+        Me = x.a.fa524057,
+        ke = x.a.g30bc699,
+        Te = x.a.f0306107,
+        xe = x.a.b99364a5,
         Ae = ae(function (e) {
           var t,
             n = c.useContext(b.a).featureSwitches.isTrue('c9s_remove_member_enabled'),
@@ -6689,7 +6551,7 @@
                       link: '/'.concat(s),
                     },
                     {
-                      text: xe,
+                      text: Te,
                       Icon: me.a,
                       behavioralEventContext: { viewType: 'report_tweet' },
                       link: {
@@ -6704,7 +6566,7 @@
                   return (
                     n &&
                       t.push({
-                        text: Te({ screenName: s }),
+                        text: xe({ screenName: s }),
                         Icon: de.a,
                         behavioralEventContext: { viewType: 'remove_user' },
                         link: {
@@ -6767,7 +6629,7 @@
               ),
               c.createElement(oe.a, { tweetId: u }),
               o
-                ? c.createElement(H.a, null, function (e) {
+                ? c.createElement(F.a, null, function (e) {
                     e.windowHeight
                     var t = e.windowWidth <= N.a.theme.breakpoints.small
                     return c.createElement(
@@ -6837,8 +6699,8 @@
           }
         }),
         De = n('hqKg'),
-        Fe = n('wAC9')
-      function He(e, t) {
+        He = n('wAC9')
+      function Fe(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -6854,12 +6716,12 @@
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? He(Object(n), !0).forEach(function (t) {
+            ? Fe(Object(n), !0).forEach(function (t) {
                 E()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : He(Object(n)).forEach(function (t) {
+            : Fe(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
@@ -6873,7 +6735,7 @@
           return Object(De.createSelector)(Ne, function (e) {
             return e
               ? (function (e) {
-                  return Object(Fe.a)({
+                  return Object(He.a)({
                     contextSuffix: 'COMMUNITIES_MODERATION_CASES_SLICE',
                     getFetchApiEndpoint: function (e) {
                       return e.Communities.fetchModerationCasesSlice
@@ -6896,9 +6758,9 @@
         We = n('yoO3'),
         Ve = n('VS6U'),
         Xe = n('FS1z'),
-        Ye = T.a.c045c7b6,
-        Ge = T.a.dffb0774,
-        Qe = T.a.cbb2a93c,
+        Ye = x.a.c045c7b6,
+        Ge = x.a.dffb0774,
+        Qe = x.a.cbb2a93c,
         Ze = Ue(function (e) {
           var t = c.useContext(b.a).featureSwitches,
             n = e.community,
@@ -7130,8 +6992,8 @@
         R = b.a.a1c93d73,
         M = b.a.f74a5adb,
         k = b.a.fbb0ed91,
-        x = b.a.gea6cc19,
-        T = b.a.hed35471,
+        T = b.a.gea6cc19,
+        x = b.a.hed35471,
         A = b.a.c8677445,
         L = b.a.c3a0d44e
       function D(e) {
@@ -7149,7 +7011,7 @@
           b = r.rules,
           j = o.useState(''),
           D = a()(j, 2),
-          H = D[0],
+          F = D[0],
           B = D[1],
           N = o.useState(''),
           z = a()(N, 2),
@@ -7190,13 +7052,13 @@
                 },
               })
               'string' == typeof d &&
-                l(h, { ruleId: d, name: H, description: U })
+                l(h, { ruleId: d, name: F, description: U })
                   .then(function () {
                     u.goBack({ backLocation: '/i/communities/'.concat(h, '/tools/rules') })
                   })
                   .catch(e)
             },
-            [h, H, U, d, l, u, c],
+            [h, F, U, d, l, u, c],
           ),
           le = o.useCallback(
             function () {
@@ -7235,7 +7097,7 @@
           pe = t
             ? o.createElement(
                 O.a,
-                { style: F.delete },
+                { style: H.delete },
                 o.createElement(C.a, {
                   color: 'red500',
                   disabled: de,
@@ -7246,18 +7108,18 @@
                 }),
               )
             : void 0,
-          fe = de ? o.createElement(O.a, { style: F.callout }, o.createElement(_.a, { text: M })) : void 0,
+          fe = de ? o.createElement(O.a, { style: H.callout }, o.createElement(_.a, { text: M })) : void 0,
           ye = ee
             ? o.createElement(S.a, {
                 cancelButtonLabel: L,
                 confirmButtonLabel: A,
                 confirmButtonType: 'destructiveFilled',
-                headline: x,
+                headline: T,
                 onCancel: function () {
                   te(!1)
                 },
                 onConfirm: le,
-                text: T,
+                text: x,
               })
             : void 0,
           he = ae
@@ -7281,7 +7143,7 @@
         )
       }
       t.default = p(D)
-      var F = j.a.create(function (e) {
+      var H = j.a.create(function (e) {
         return {
           delete: { marginTop: e.spaces.space12 },
           callout: { paddingTop: e.spaces.space12, paddingHorizontal: e.spaces.space16 },
@@ -7326,9 +7188,9 @@
         R = n('21nk'),
         M = n.n(R),
         k = n('bCEw'),
-        x = n.n(k),
-        T = n('Ud88'),
-        A = n.n(T)
+        T = n.n(k),
+        x = n('Ud88'),
+        A = n.n(x)
       function L(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -7353,7 +7215,7 @@
       var D = function (e) {
           return (0, e.render)({ fetchStatus: _.a.LOADING, data: null, error: null, retry: S.a })
         },
-        F = (function (e) {
+        H = (function (e) {
           d()(n, e)
           var t = L(n)
           function n() {
@@ -7392,7 +7254,7 @@
             n
           )
         })(g.Component),
-        H = function (e) {
+        F = function (e) {
           var t = e.query,
             n = e.queryRef,
             r = e.render,
@@ -7406,7 +7268,7 @@
                 o = void 0 === r ? 'store-or-network' : r,
                 i = n.render,
                 c = n.variables,
-                l = x()(e),
+                l = T()(e),
                 u = a()(l, 2),
                 s = u[0],
                 m = u[1],
@@ -7431,12 +7293,12 @@
                       g.Suspense,
                       { fallback: g.createElement(D, { render: i }) },
                       g.createElement(
-                        F,
+                        H,
                         { errorHandler: d(t.errorConfig.options || {}), key: s.fetchKey, retry: y },
                         function (t, n) {
                           return t
                             ? i({ fetchStatus: _.a.FAILED, error: t, data: null, retry: n })
-                            : g.createElement(H, { query: e, queryRef: s, render: i })
+                            : g.createElement(F, { query: e, queryRef: s, render: i })
                         },
                       ),
                     )
@@ -7542,15 +7404,15 @@
           R = o.useState(''),
           M = a()(R, 2),
           k = M[0],
-          x = M[1],
-          T = o.useState(!1),
-          A = a()(T, 2),
+          T = M[1],
+          x = o.useState(!1),
+          A = a()(x, 2),
           L = A[0],
           D = A[1],
-          F = o.useState(!1),
-          H = a()(F, 2),
-          B = H[0],
-          N = H[1],
+          H = o.useState(!1),
+          F = a()(H, 2),
+          B = F[0],
+          N = F[1],
           z = o.useState(''),
           U = a()(z, 2),
           K = U[0],
@@ -7564,9 +7426,9 @@
               var t = e.description,
                 n = e.name,
                 r = e.valid
-              W(''), I(n), x(t), D(r)
+              W(''), I(n), T(t), D(r)
             },
-            [I, x, D],
+            [I, T, D],
           ),
           Z = o.useCallback(
             function () {
@@ -7932,8 +7794,8 @@
         R = n('VS6U'),
         M = n('k/OQ'),
         k = n('v6aA'),
-        x = n('krnS'),
-        T = n('Ty5D')
+        T = n('krnS'),
+        x = n('Ty5D')
       function A(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -7957,8 +7819,8 @@
       }
       var L = P.a.h5245afa,
         D = P.a.dc6ce7b4,
-        F = P.a.f8321d82,
-        H = P.a.ga2aa43c,
+        H = P.a.f8321d82,
+        F = P.a.ga2aa43c,
         B = (function (e) {
           s()(n, e)
           var t = A(n)
@@ -7975,11 +7837,11 @@
                   r = t.location,
                   a = n
                     ? [
-                        { to: { pathname: '/i/communities/'.concat(n, '/members'), state: r.state }, label: F, key: F },
+                        { to: { pathname: '/i/communities/'.concat(n, '/members'), state: r.state }, label: H, key: H },
                         {
                           to: { pathname: '/i/communities/'.concat(n, '/moderators'), state: r.state },
-                          label: H,
-                          key: H,
+                          label: F,
+                          key: F,
                         },
                       ]
                     : []
@@ -7989,17 +7851,17 @@
                 var t = e.props.communityId
                 return t
                   ? b.createElement(
-                      T.e,
+                      x.e,
                       null,
                       b.createElement(
-                        T.c,
+                        x.c,
                         { exact: !0, path: '/i/communities/'.concat(t, '/members') },
-                        b.createElement(x.b, { communityId: t, mode: x.a.Members }),
+                        b.createElement(T.b, { communityId: t, mode: T.a.Members }),
                       ),
                       b.createElement(
-                        T.c,
+                        x.c,
                         { exact: !0, path: '/i/communities/'.concat(t, '/moderators') },
-                        b.createElement(x.b, { communityId: t, mode: x.a.Moderators }),
+                        b.createElement(T.b, { communityId: t, mode: T.a.Moderators }),
                       ),
                     )
                   : null
@@ -8026,7 +7888,7 @@
                 key: 'getTitle',
                 get: function () {
                   var e = this.props.location
-                  return null != e && e.pathname && e.pathname.indexOf('members') > 0 ? D : H
+                  return null != e && e.pathname && e.pathname.indexOf('members') > 0 ? D : F
                 },
               },
               {
@@ -8068,10 +7930,10 @@
       'use strict'
       n.r(t),
         n.d(t, 'CreateButton', function () {
-          return We
+          return Xe
         }),
         n.d(t, 'CommunitiesScreen', function () {
-          return Ve
+          return Ye
         })
       n('OZaJ')
       var r = n('VrFO'),
@@ -8092,30 +7954,31 @@
         v = n('+Kfv'),
         g = n('es0u'),
         E = n('1Idg'),
-        O = n('G6rE'),
-        w = n('rxPX'),
-        C = n('0KEI'),
-        _ = n('RqPI'),
-        S = function (e, t) {
+        O = n('RqPI'),
+        w = n('li/m'),
+        C = n('G6rE'),
+        _ = n('rxPX'),
+        S = n('0KEI'),
+        j = function (e, t) {
           var n = E.j(e, t)
-          if (n) return O.e.selectByScreenName(e, n)
+          if (n) return C.e.selectByScreenName(e, n)
         },
-        j = Object(w.a)()
+        P = Object(_.a)()
           .propsFromState(function () {
-            return { communitiesActions: _.e, hasCommunityMemberships: _.j, screenName: E.j, user: S }
+            return { communitiesActions: O.f, hasCommunityMemberships: w.d, screenName: E.j, user: j }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(C.createLocalApiErrorHandlerWithContextFactory)('USER_COMMUNITIES'),
-              fetchOneUserByScreenNameIfNeeded: O.e.fetchOneByScreenNameIfNeeded,
+              createLocalApiErrorHandler: Object(S.createLocalApiErrorHandlerWithContextFactory)('USER_COMMUNITIES'),
+              fetchOneUserByScreenNameIfNeeded: C.e.fetchOneByScreenNameIfNeeded,
             }
           })
           .withAnalytics({ page: 'communities' }),
-        P = n('GOQE'),
-        I = n('3XMw'),
-        R = n.n(I),
-        M = n('5oT/'),
-        k =
+        I = n('GOQE'),
+        R = n('3XMw'),
+        M = n.n(R),
+        k = n('5oT/'),
+        T =
           (n('z84I'),
           n('M+/F'),
           n('+KXO'),
@@ -8130,15 +7993,16 @@
           n('uFXj'),
           n('v6aA')),
         x = n('MWbm'),
-        T = n('rHpw'),
-        A = n('htQn'),
-        L = n('9Xij'),
-        D = n('TIdA'),
-        F = n('A91F'),
-        H = n('t62R'),
-        B = n('YeIG'),
-        N = n('oQhu')
-      function z(e, t) {
+        A = n('rHpw'),
+        L = n('X00g'),
+        D = n('htQn'),
+        H = n('9Xij'),
+        F = n('TIdA'),
+        B = n('A91F'),
+        N = n('t62R'),
+        z = n('YeIG'),
+        U = n('oQhu')
+      function K(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -8150,26 +8014,26 @@
         }
         return n
       }
-      function U(e) {
+      function W(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? z(Object(n), !0).forEach(function (t) {
+            ? K(Object(n), !0).forEach(function (t) {
                 h()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : z(Object(n)).forEach(function (t) {
+            : K(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var K = { type: 'serversideContextKey', serversideContextType: 'community' },
-        W = Object(N.a)(function (e) {
-          return U(U({}, K), {}, { serversideContextId: e })
+      var V = { type: 'serversideContextKey', serversideContextType: 'community' },
+        X = Object(U.a)(function (e) {
+          return W(W({}, V), {}, { serversideContextId: e })
         }),
-        V = T.a.create(function (e) {
+        Y = A.a.create(function (e) {
           return {
             root: {
               paddingHorizontal: e.spaces.space4,
@@ -8180,7 +8044,7 @@
               borderRadius: e.borderRadii.large,
             },
             container: {
-              width: 'calc(('.concat(T.a.theme.spaces.space36, ' * 3) + ').concat(T.a.theme.spaces.space24, ')'),
+              width: 'calc(('.concat(A.a.theme.spaces.space36, ' * 3) + ').concat(A.a.theme.spaces.space24, ')'),
               borderRadius: e.borderRadii.large,
               overflow: 'hidden',
               borderWidth: e.borderWidths.small,
@@ -8189,44 +8053,44 @@
             name: { paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space8, width: '100%' },
           }
         }),
-        X = function (e) {
-          var t = b.useContext(k.a).featureSwitches.isTrue('c9s_ui_colors_enabled_rweb'),
+        G = function (e) {
+          var t = b.useContext(T.a).featureSwitches.isTrue('c9s_ui_colors_enabled_rweb'),
             n = e.community,
             r = n.id_str,
             a = n.media,
             o = n.name,
             i = n.theme
-          if (Object(B.a)(null == a ? void 0 : a.image) || !o) return null
+          if (Object(z.a)(null == a ? void 0 : a.image) || !o) return null
           var c = null == a ? void 0 : a.image,
             l = null == a ? void 0 : a.crop,
-            u = T.a.theme.aspectRatios.communityBanner,
-            s = t ? T.a.theme.colors[i.backgroundColor] : T.a.theme.colors.translucentBlack77
+            u = A.a.theme.aspectRatios.communityBanner,
+            s = t ? L.a.getCommunityBackgroundColor(i) : A.a.theme.colors.translucentBlack77
           return c
             ? b.createElement(
                 v.a,
-                { clientEntity: W(r || ''), viewType: 'community_thumbnail' },
+                { clientEntity: X(r || ''), viewType: 'community_thumbnail' },
                 b.createElement(
-                  A.a,
-                  { link: '/i/communities/'.concat(r), style: V.root },
+                  D.a,
+                  { link: '/i/communities/'.concat(r), style: Y.root },
                   b.createElement(
                     x.a,
-                    { style: V.container },
+                    { style: Y.container },
                     b.createElement(
-                      L.a,
+                      H.a,
                       { ratio: u },
-                      b.createElement(D.a, {
+                      b.createElement(F.a, {
                         accessibilityLabel: '',
-                        aspectMode: F.a.exact(u),
-                        backgroundColor: T.a.theme.colors.gray300,
+                        aspectMode: B.a.exact(u),
+                        backgroundColor: A.a.theme.colors.gray300,
                         cropCandidates: l,
                         image: c,
                       }),
                     ),
                     b.createElement(
                       x.a,
-                      { style: [V.name, { backgroundColor: s }] },
+                      { style: [Y.name, { backgroundColor: s }] },
                       b.createElement(
-                        H.b,
+                        N.b,
                         { align: 'left', color: 'white', numberOfLines: 1, size: 'subtext2', weight: 'bold' },
                         o.trim(),
                       ),
@@ -8236,30 +8100,30 @@
               )
             : null
         },
-        Y = n('eSoz'),
-        G = n('o3oN'),
-        Q = function (e) {
-          var t = Object(G.c)(e)
-          return Y.b.selectMany(e, t)
+        Q = n('eSoz'),
+        Z = n('o3oN'),
+        q = function (e) {
+          var t = Object(Z.c)(e)
+          return Q.b.selectMany(e, t)
         },
-        Z = Object(w.a)()
+        J = Object(_.a)()
           .propsFromState(function () {
-            return { communities: Q, fetchStatus: G.d }
+            return { communities: q, fetchStatus: Z.d }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(C.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(S.createLocalApiErrorHandlerWithContextFactory)(
                 'COMMUNITIES_CAROUSEL',
               ),
-              fetchCommunityMemberships: G.a,
+              fetchCommunityMemberships: Z.a,
             }
           })
           .withAnalytics({ page: 'communities', section: 'carousel' }),
-        q = n('kGix'),
-        J = n('6iuV'),
-        $ = n('rC8y'),
-        ee = R.a.d228a9a0,
-        te = b.memo(function (e) {
+        $ = n('kGix'),
+        ee = n('6iuV'),
+        te = n('rC8y'),
+        ne = M.a.d228a9a0,
+        re = b.memo(function (e) {
           var t = e.communities,
             n = e.createLocalApiErrorHandler,
             r = e.fetchCommunityMemberships,
@@ -8267,33 +8131,33 @@
             o = e.location.pathname
           b.useEffect(
             function () {
-              a === q.a.NONE && r().catch(n())
+              a === $.a.NONE && r().catch(n())
             },
             [n, r, a],
           )
           var i = b.useMemo(
             function () {
               return t.slice(0, 10).map(function (e) {
-                return b.createElement(X, { community: e, key: e.id_str })
+                return b.createElement(G, { community: e, key: e.id_str })
               })
             },
             [t],
           )
-          return Object(B.a)(t)
+          return Object(z.a)(t)
             ? null
             : b.createElement(
                 b.Fragment,
                 null,
-                b.createElement(J.a, { style: [ne.paddingHorizontal, ne.bottomBorder] }, i),
+                b.createElement(ee.a, { style: [ae.paddingHorizontal, ae.bottomBorder] }, i),
                 t.length > 10 &&
                   b.createElement(
                     x.a,
-                    { style: ne.bottomBorder },
-                    b.createElement($.a, { link: '/'.concat(o, '/memberships'), text: ee }),
+                    { style: ae.bottomBorder },
+                    b.createElement(te.a, { link: '/'.concat(o, '/memberships'), text: ne }),
                   ),
               )
         }),
-        ne = T.a.create(function (e) {
+        ae = A.a.create(function (e) {
           return {
             root: { backgroundColor: e.colors.cellBackground },
             paddingHorizontal: { paddingHorizontal: e.spaces.space4 },
@@ -8304,10 +8168,10 @@
             },
           }
         }),
-        re = Z(te),
-        ae = n('WpDa'),
-        oe = n('ZNT5'),
-        ie = Object(oe.a)({
+        oe = J(re),
+        ie = n('WpDa'),
+        ce = n('ZNT5'),
+        le = Object(ce.a)({
           timelineId: 'communitiesMainTimeline',
           getEndpoint: function (e) {
             return e.Communities.fetchCommunitiesMainTimeline
@@ -8319,17 +8183,17 @@
           },
           context: 'FETCH_COMMUNITIES_MAIN_TIMELINE',
           perfKey: 'communitiesMainTimeline',
-          formatResponse: ae.a,
+          formatResponse: ie.a,
         }),
-        ce = n('OUEC'),
-        le = n('dwig'),
-        ue = n('0+qk'),
-        se = n('7BdX'),
-        me = n('fTQJ'),
-        de = n('QRqA'),
-        pe = n('FIs5'),
-        fe = n('mw9i')
-      function ye(e) {
+        ue = n('OUEC'),
+        se = n('dwig'),
+        me = n('0+qk'),
+        de = n('7BdX'),
+        pe = n('fTQJ'),
+        fe = n('QRqA'),
+        ye = n('FIs5'),
+        he = n('mw9i')
+      function be(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -8350,12 +8214,12 @@
           return d()(this, n)
         }
       }
-      var he = R.a.c63602d3,
-        be = R.a.d7346631,
-        ve = R.a.fbd12fea,
-        ge = (function (e) {
+      var ve = M.a.c63602d3,
+        ge = M.a.d7346631,
+        Ee = M.a.fbd12fea,
+        Oe = (function (e) {
           s()(n, e)
-          var t = ye(n)
+          var t = be(n)
           function n() {
             var e
             a()(this, n)
@@ -8366,12 +8230,12 @@
               h()(
                 l()(e),
                 '_getModule',
-                Object(N.a)(function () {
-                  return ie
+                Object(U.a)(function () {
+                  return le
                 }),
               ),
               h()(l()(e), '_renderEmptyTimeline', function () {
-                return b.createElement(pe.a, { header: be, message: ve })
+                return b.createElement(ye.a, { header: ge, message: Ee })
               }),
               e
             )
@@ -8387,23 +8251,23 @@
                     r = e.isLoggedInUser,
                     a = e.location,
                     o = this._getModule(),
-                    i = this._c9sParticipationEnabled && t ? b.createElement(ue.a, { history: n }) : null
+                    i = this._c9sParticipationEnabled && t ? b.createElement(me.a, { history: n }) : null
                   return r && o
                     ? b.createElement(
                         b.Fragment,
                         null,
-                        b.createElement(de.a, null),
+                        b.createElement(fe.a, null),
                         b.createElement(
-                          le.a,
-                          { container: fe.a, fab: i },
-                          b.createElement(re, { location: a }),
-                          b.createElement(me.a, {
-                            entryConfiguration: ce.a,
+                          se.a,
+                          { container: he.a, fab: i },
+                          b.createElement(oe, { location: a }),
+                          b.createElement(pe.a, {
+                            entryConfiguration: ue.a,
                             module: o,
-                            prerollDisplayLocation: se.c.OTHER,
+                            prerollDisplayLocation: de.c.OTHER,
                             refreshControl: null,
                             renderEmptyState: this._renderEmptyTimeline,
-                            title: he,
+                            title: ve,
                           }),
                         ),
                       )
@@ -8414,20 +8278,20 @@
             n
           )
         })(b.Component)
-      h()(ge, 'contextType', k.a)
-      var Ee = ge,
-        Oe = n('wl7o'),
-        we = n('wa7Z'),
-        Ce = n('hqKg'),
-        _e = function (e, t) {
+      h()(Oe, 'contextType', T.a)
+      var we = Oe,
+        Ce = n('wl7o'),
+        _e = n('wa7Z'),
+        Se = n('hqKg'),
+        je = function (e, t) {
           var n = t.user
           return n ? n.id_str : void 0
         },
-        Se = function () {
-          return Object(Ce.createSelector)(_e, function (e) {
+        Pe = function () {
+          return Object(Se.createSelector)(je, function (e) {
             return e
               ? (function (e) {
-                  return Object(oe.a)({
+                  return Object(ce.a)({
                     timelineId: 'communityMemberships-'.concat(e),
                     getEndpoint: function (e) {
                       return e.Communities.fetchCommunityMemberships
@@ -8438,25 +8302,25 @@
                     },
                     context: 'FETCH_COMMUNITY_MEMBERSHIPS_TIMELINE',
                     perfKey: 'communityMemberships',
-                    formatResponse: ae.a,
+                    formatResponse: ie.a,
                   })
                 })(e)
               : void 0
           })
         },
-        je = Object(w.a)()
+        Ie = Object(_.a)()
           .propsFromState(function () {
             return {
-              urtModule: Se(),
-              sliceModule: Object(Ce.createSelector)(_e, function (e) {
-                return e ? Object(we.a)(e) : void 0
+              urtModule: Pe(),
+              sliceModule: Object(Se.createSelector)(je, function (e) {
+                return e ? Object(_e.a)(e) : void 0
               }),
             }
           })
           .withAnalytics({ page: 'communities', section: 'memberships' }),
-        Pe = n('yoO3'),
-        Ie = n('FS1z')
-      function Re(e) {
+        Re = n('yoO3'),
+        Me = n('FS1z')
+      function ke(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -8477,12 +8341,12 @@
           return d()(this, n)
         }
       }
-      var Me = R.a.c63602d3,
-        ke = R.a.d7346631,
-        xe = R.a.hb01fe46,
-        Te = (function (e) {
+      var Te = M.a.c63602d3,
+        xe = M.a.d7346631,
+        Ae = M.a.hb01fe46,
+        Le = (function (e) {
           s()(n, e)
-          var t = Re(n)
+          var t = ke(n)
           function n() {
             var e
             a()(this, n)
@@ -8495,10 +8359,10 @@
                 e.context.featureSwitches.isTrue('responsive_web_communities_slices_enabled'),
               ),
               h()(l()(e), '_renderCommunityCell', function (e) {
-                return b.createElement(Oe.a, { communityId: e, key: e })
+                return b.createElement(Ce.a, { communityId: e, key: e })
               }),
               h()(l()(e), '_renderEmptyState', function () {
-                return e.props.isLoggedInUser ? b.createElement(pe.a, { header: ke, message: xe }) : null
+                return e.props.isLoggedInUser ? b.createElement(ye.a, { header: xe, message: Ae }) : null
               }),
               e
             )
@@ -8513,7 +8377,7 @@
                     n = e.urtModule
                   return this._slicesEnabled
                     ? t
-                      ? b.createElement(Ie.a, {
+                      ? b.createElement(Me.a, {
                           module: t,
                           noItemsRenderer: this._renderEmptyState,
                           renderer: this._renderCommunityCell,
@@ -8521,14 +8385,14 @@
                       : null
                     : n
                     ? b.createElement(
-                        Pe.a,
+                        Re.a,
                         { behavioralEventViewType: 'all' },
-                        b.createElement(me.a, {
-                          entryConfiguration: ce.a,
+                        b.createElement(pe.a, {
+                          entryConfiguration: ue.a,
                           module: n,
                           refreshControl: null,
                           renderEmptyState: this._renderEmptyState,
-                          title: Me,
+                          title: Te,
                         }),
                       )
                     : null
@@ -8538,14 +8402,14 @@
             n
           )
         })(b.Component)
-      h()(Te, 'contextType', k.a)
-      var Ae = je(Te),
-        Le = n('5FtR'),
-        De = n('Y6L+'),
-        Fe = n('VS6U'),
-        He = n('/yvb'),
-        Be = n('Ty5D')
-      function Ne(e) {
+      h()(Le, 'contextType', T.a)
+      var De = Ie(Le),
+        He = n('5FtR'),
+        Fe = n('Y6L+'),
+        Be = n('VS6U'),
+        Ne = n('/yvb'),
+        ze = n('Ty5D')
+      function Ue(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -8566,22 +8430,22 @@
           return d()(this, n)
         }
       }
-      var ze = R.a.h02a6fe5,
-        Ue = R.a.c63602d3,
-        Ke = R.a.a226497c,
-        We = b.memo(function (e) {
+      var Ke = M.a.h02a6fe5,
+        We = M.a.c63602d3,
+        Ve = M.a.a226497c,
+        Xe = b.memo(function (e) {
           var t = e.communitiesActions
           if (null == t || !t.create) return null
-          return b.createElement(He.a, {
-            icon: b.createElement(M.a, { accessibilityLabel: Ke, style: Xe.createButton }),
+          return b.createElement(Ne.a, {
+            icon: b.createElement(k.a, { accessibilityLabel: Ve, style: Ge.createButton }),
             link: '/i/communities/create',
             size: 'medium',
             type: 'brandText',
           })
         }),
-        Ve = (function (e) {
+        Ye = (function (e) {
           s()(n, e)
-          var t = Ne(n)
+          var t = Ue(n)
           function n() {
             var e
             a()(this, n)
@@ -8596,17 +8460,17 @@
                   o = t.user,
                   i = e._isLoggedInUser()
                 return b.createElement(
-                  Be.e,
+                  ze.e,
                   null,
                   b.createElement(
-                    Be.c,
-                    { exact: !0, path: '/'.concat(De.H, '/communities') },
-                    b.createElement(Ee, { hasCommunityMemberships: n, history: r, isLoggedInUser: i, location: a }),
+                    ze.c,
+                    { exact: !0, path: '/'.concat(Fe.H, '/communities') },
+                    b.createElement(we, { hasCommunityMemberships: n, history: r, isLoggedInUser: i, location: a }),
                   ),
                   b.createElement(
-                    Be.c,
-                    { exact: !0, path: '/'.concat(De.H, '/communities/memberships') },
-                    b.createElement(Ae, { isLoggedInUser: i, user: o }),
+                    ze.c,
+                    { exact: !0, path: '/'.concat(Fe.H, '/communities/memberships') },
+                    b.createElement(De, { isLoggedInUser: i, user: o }),
                   ),
                 )
               }),
@@ -8615,7 +8479,7 @@
                   r = n.createLocalApiErrorHandler,
                   a = n.fetchOneUserByScreenNameIfNeeded,
                   o = n.screenName
-                o && a(o).catch(r(P.a))
+                o && a(o).catch(r(I.a))
               }),
               e
             )
@@ -8649,33 +8513,33 @@
                     t = e.communitiesActions,
                     n = e.history
                   if (this._isLoggedInUser()) {
-                    var r = this._isMembershipsView() ? Ue : ze
+                    var r = this._isMembershipsView() ? We : Ke
                     return b.createElement(
                       v.a,
                       { viewType: 'communities' },
-                      b.createElement(Fe.a, {
+                      b.createElement(Be.a, {
                         backLocation: '/',
                         history: n,
                         primaryContent: this._renderPrimaryContent(),
-                        rightControl: b.createElement(We, { communitiesActions: t }),
+                        rightControl: b.createElement(Xe, { communitiesActions: t }),
                         sidebarContent: b.createElement(g.a, null),
                         title: r,
                       }),
                     )
                   }
-                  return b.createElement(Le.a, { to: '/' })
+                  return b.createElement(He.a, { to: '/' })
                 },
               },
             ]),
             n
           )
         })(b.Component)
-      h()(Ve, 'contextType', k.a)
-      var Xe = T.a.create(function (e) {
+      h()(Ye, 'contextType', T.a)
+      var Ge = A.a.create(function (e) {
           return { createButton: { color: e.colors.text, transform: 'rotate(45deg)' } }
         }),
-        Ye = j(Ve)
-      t.default = Ye
+        Qe = P(Ye)
+      t.default = Qe
     },
     uI9t: function (e, t, n) {
       'use strict'
@@ -8861,13 +8725,13 @@
           return s()(this, n)
         }
       }
-      var x = 1,
-        T = (function (e) {
+      var T = 1,
+        x = (function (e) {
           l()(n, e)
           var t = k(n)
           function n() {
             var e
-            return a()(this, n), ((e = t.call(this))._colorPickerId = 'COLOR_PICKER_'.concat(x, '_LABEL')), (x += 1), e
+            return a()(this, n), ((e = t.call(this))._colorPickerId = 'COLOR_PICKER_'.concat(T, '_LABEL')), (T += 1), e
           }
           return (
             i()(n, [
@@ -8909,11 +8773,11 @@
             n
           )
         })(y.Component)
-      f()(T, 'defaultProps', { layout: 'one-row' })
+      f()(x, 'defaultProps', { layout: 'one-row' })
       var A = E.a.create(function (e) {
         return { root: { flexDirection: 'row', justifyContent: 'space-around' }, flexWrap: { flexWrap: 'wrap' } }
       })
-      t.a = T
+      t.a = x
     },
     ulNE: function (e, t, n) {
       'use strict'
@@ -9047,8 +8911,8 @@
         R = n('htQn'),
         M = n('MAI/'),
         k = n('3XMw'),
-        x = n.n(k),
-        T = n('oQhu'),
+        T = n.n(k),
+        x = n('oQhu'),
         A = n('YeIG')
       function L(e, t) {
         var n = Object.keys(e)
@@ -9077,7 +8941,7 @@
         }
         return e
       }
-      function F(e) {
+      function H(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -9098,12 +8962,12 @@
           return d()(this, n)
         }
       }
-      var H = x.a.d58baa7e,
+      var F = T.a.d58baa7e,
         B = { type: 'serversideContextKey', serversideContextType: 'community' },
         N = w(
           (function (e) {
             s()(n, e)
-            var t = F(n)
+            var t = H(n)
             function n() {
               var e
               a()(this, n)
@@ -9113,7 +8977,7 @@
                 h()(
                   l()(e),
                   '_getClientEntity',
-                  Object(T.a)(function (e) {
+                  Object(x.a)(function (e) {
                     return D(D({}, B), {}, { serversideContextId: e })
                   }),
                 ),
@@ -9136,7 +9000,7 @@
                   var n = e.props.communityId,
                     r = t.member_count
                   if (r) {
-                    var a = H(r),
+                    var a = F(r),
                       o = '/i/communities/'.concat(n, '/members')
                     return b.createElement(
                       P.a.Group,
@@ -9148,10 +9012,10 @@
                           I.b,
                           { color: 'gray700' },
                           b.createElement(
-                            x.a.I18NFormatMessage,
+                            T.a.I18NFormatMessage,
                             { $i18n: 'b38e130b' },
-                            b.createElement(P.a.Value, null, x.a.ibd0106d({ formattedCount: a })),
-                            b.createElement(P.a.Label, null, x.a.cface2d0({ count: r })),
+                            b.createElement(P.a.Value, null, T.a.ibd0106d({ formattedCount: a })),
+                            b.createElement(P.a.Label, null, T.a.cface2d0({ count: r })),
                           ),
                         ),
                       ),
@@ -9245,7 +9109,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'CommunitySettingsRouter', function () {
-          return rt
+          return at
         })
       n('WNMA'), n('KqXw'), n('1t7P'), n('jQ/y'), n('ho0z')
       var r = n('ERkP'),
@@ -9324,13 +9188,13 @@
         }
         return e
       }
-      var x = v.a.a49f884d,
-        T = v.a.ea965b81,
+      var T = v.a.a49f884d,
+        x = v.a.ea965b81,
         A = v.a.c1ca95bd,
         L = v.a.e71cdf4d,
         D = v.a.gea6cc19,
-        F = v.a.cfd2f35d,
-        H = v.a.j35d3ad6,
+        H = v.a.cfd2f35d,
+        F = v.a.j35d3ad6,
         B = v.a.f1e8fb21,
         N = v.a.fc2a5c92,
         z = v.a.e405ec21
@@ -9382,7 +9246,7 @@
             ie = c
               ? k(k({}, c), {}, { id: Number.MAX_SAFE_INTEGER, originalMediaFile: c.mediaFile, cropData: void 0 })
               : void 0,
-            ce = ne ? r.createElement(j.a, { accessibilityLabel: x, aspectMode: P.a.exact(re), image: ne }) : null
+            ce = ne ? r.createElement(j.a, { accessibilityLabel: T, aspectMode: P.a.exact(re), image: ne }) : null
           return r.createElement(
             r.Fragment,
             null,
@@ -9394,7 +9258,7 @@
                 )
               : null,
             r.createElement(w, {
-              accessibilityLabel: T,
+              accessibilityLabel: x,
               aspectRatio: re,
               currentContent: ce,
               location: C.d.CommunityBanner,
@@ -9449,8 +9313,8 @@
               : null,
             X
               ? r.createElement(R.a, {
-                  cancelButtonLabel: F,
-                  confirmButtonLabel: H,
+                  cancelButtonLabel: H,
+                  confirmButtonLabel: F,
                   confirmButtonType: 'destructiveFilled',
                   headline: D,
                   onCancel: function () {
@@ -9604,10 +9468,10 @@
               },
               [f, g, C],
             ),
-            x = r.useCallback(function (e, t) {
+            T = r.useCallback(function (e, t) {
               y(t)
             }, []),
-            T = r.useCallback(function (e, t) {
+            x = r.useCallback(function (e, t) {
               _(t ? ne.Moderator : ne.Disabled)
             }, []),
             A = r.useCallback(function (e, t) {
@@ -9639,10 +9503,10 @@
               },
               [m, k, L],
             ),
-            F = r.useCallback(function () {
+            H = r.useCallback(function () {
               return I(void 0)
             }, []),
-            H =
+            F =
               ((n = k),
               (a = (t = m).access !== n.access),
               (o =
@@ -9651,8 +9515,8 @@
               !(a || o))
           return r.createElement(
             X.a,
-            { communityId: u, onSubmit: D, submitDisabled: H, title: de },
-            r.createElement(Y.a, { name: 'membershipSetting', onChange: x, options: pe, value: f }),
+            { communityId: u, onSubmit: D, submitDisabled: F, title: de },
+            r.createElement(Y.a, { name: 'membershipSetting', onChange: T, options: pe, value: f }),
             f === ee.Restricted &&
               r.createElement(
                 r.Fragment,
@@ -9663,7 +9527,7 @@
                   helpText: ye,
                   label: fe,
                   name: 'allowRequests',
-                  onChange: T,
+                  onChange: x,
                 }),
                 r.createElement(ae.a, {
                   checked: g === te.Member,
@@ -9678,7 +9542,7 @@
                 confirmButtonLabel: ve,
                 confirmButtonType: 'primary',
                 headline: ge,
-                onCancel: F,
+                onCancel: H,
                 onConfirm: L,
                 text: P,
               }),
@@ -9722,8 +9586,8 @@
         Re = n('yoO3'),
         Me = v.a.h3c0f1a2,
         ke = v.a.fc2a5c92,
-        xe = v.a.cb5e6510
-      var Te = S.a.create(function (e) {
+        Te = v.a.cb5e6510
+      var xe = S.a.create(function (e) {
           return { error: { paddingTop: e.spaces.space12, paddingHorizontal: e.spaces.space16 } }
         }),
         Ae = Pe(function (e) {
@@ -9750,7 +9614,7 @@
                 var e = n({
                   customErrorHandler: function (e) {
                     var t = s()(e.errors, 1)[0],
-                      n = t.code === Ie.a.GenericBadRequest && t.message ? t.message : xe
+                      n = t.code === Ie.a.GenericBadRequest && t.message ? t.message : Te
                     return O(n), h(!0), []
                   },
                 })
@@ -9771,7 +9635,7 @@
               E
                 ? r.createElement(
                     _.a,
-                    { style: Te.error },
+                    { style: xe.error },
                     r.createElement(I.a, { Icon: g.a, headline: ke, text: E, type: 'danger' }),
                   )
                 : void 0,
@@ -9796,8 +9660,8 @@
             }
           })
           .withAnalytics({ page: 'communities', section: 'edit_purpose' }),
-        Fe = v.a.a895549f,
-        He = v.a.fc2a5c92,
+        He = v.a.a895549f,
+        Fe = v.a.fc2a5c92,
         Be = v.a.ced22929
       var Ne = S.a.create(function (e) {
           return { error: { paddingTop: e.spaces.space12, paddingHorizontal: e.spaces.space16 } }
@@ -9843,12 +9707,12 @@
             null,
             r.createElement(
               X.a,
-              { communityId: c, onSubmit: w, submitDisabled: y, title: Fe },
+              { communityId: c, onSubmit: w, submitDisabled: y, title: He },
               E
                 ? r.createElement(
                     _.a,
                     { style: Ne.error },
-                    r.createElement(I.a, { Icon: g.a, headline: He, text: E, type: 'danger' }),
+                    r.createElement(I.a, { Icon: g.a, headline: Fe, text: E, type: 'danger' }),
                   )
                 : void 0,
               r.createElement(Le.a, {
@@ -9861,25 +9725,26 @@
             ),
           )
         }),
-        Ue = n('x0mb'),
-        Ke = n('5FtR'),
-        We = n('t62R'),
-        Ve = n('6vad'),
-        Xe = n('csss'),
-        Ye = n('Ig1G'),
-        Ge = v.a.bb081ea1,
-        Qe = v.a.h3e55b40,
-        Ze = v.a.j8af8ea9,
-        qe = v.a.d5f01115,
-        Je = v.a.c3c04b70,
-        $e = { Closed: v.a.ce0523a8, Public: v.a.fd00a769 },
-        et = v.a.f4a98e9e,
-        tt = v.a.f713fbd1,
-        nt = function (e) {
-          var t = e.children
-          return r.createElement(We.b, { color: 'gray700', size: 'subtext2' }, t)
-        },
+        Ue = n('Ig1G'),
+        Ke = n('x0mb'),
+        We = n('5FtR'),
+        Ve = n('t62R'),
+        Xe = n('X00g'),
+        Ye = n('6vad'),
+        Ge = n('csss'),
+        Qe = v.a.bb081ea1,
+        Ze = v.a.h3e55b40,
+        qe = v.a.j8af8ea9,
+        Je = v.a.d5f01115,
+        $e = v.a.c3c04b70,
+        et = { Closed: v.a.ce0523a8, Public: v.a.fd00a769 },
+        tt = v.a.f4a98e9e,
+        nt = v.a.f713fbd1,
         rt = function (e) {
+          var t = e.children
+          return r.createElement(Ve.b, { color: 'gray700', size: 'subtext2' }, t)
+        },
+        at = function (e) {
           var t = e.community,
             n = e.history,
             o = e.match,
@@ -9899,10 +9764,10 @@
             g = f.isTrue('c9s_edit_community_banner_enabled'),
             E = f.isTrue('c9s_edit_community_theme_enabled'),
             O = o.url,
-            w = $e[t.access],
-            C = Object(Ye.e)(t),
-            _ = Object(Ye.d)(C),
-            j = S.a.theme.colors[p.backgroundColor]
+            w = et[t.access],
+            C = Object(Ue.d)(t),
+            _ = Xe.a.getCommunityThemeDisplayName(C),
+            S = Xe.a.getCommunityBackgroundColor(p)
           return r.createElement(
             $.e,
             null,
@@ -9938,28 +9803,28 @@
               { exact: !0, path: ''.concat(O, '/') },
               r.createElement(
                 X.a,
-                { communityId: u, screenType: 'primaryDetail', title: Ge },
+                { communityId: u, screenType: 'primaryDetail', title: Qe },
                 g ? r.createElement(W, { communityId: u, hasCustomMedia: l, localMediaId: s, media: m }) : null,
-                r.createElement(Ve.b, { text: et }),
-                r.createElement(Xe.a, {
-                  description: r.createElement(nt, null, d),
-                  label: Qe,
+                r.createElement(Ye.b, { text: tt }),
+                r.createElement(Ge.a, {
+                  description: r.createElement(rt, null, d),
+                  label: Ze,
                   link: y ? ''.concat(O, '/name') : void 0,
                 }),
                 c
-                  ? r.createElement(Xe.a, {
-                      description: r.createElement(nt, null, c),
-                      label: qe,
+                  ? r.createElement(Ge.a, {
+                      description: r.createElement(rt, null, c),
+                      label: Je,
                       link: h ? ''.concat(O, '/purpose') : void 0,
                     })
                   : null,
                 E
-                  ? r.createElement(Xe.a, {
-                      description: r.createElement(nt, null, _),
-                      label: Je,
+                  ? r.createElement(Ge.a, {
+                      description: r.createElement(rt, null, _),
+                      label: $e,
                       link: E ? ''.concat(O, '/theme') : void 0,
                       renderRightContent: function () {
-                        return r.createElement(Ue.a, { style: [{ color: j }, at.themeIcon] })
+                        return r.createElement(Ke.a, { style: [{ color: S }, ot.themeIcon] })
                       },
                     })
                   : null,
@@ -9968,21 +9833,21 @@
                       r.Fragment,
                       null,
                       r.createElement(re.a, null),
-                      r.createElement(Ve.b, { text: tt }),
-                      r.createElement(Xe.a, {
-                        description: r.createElement(nt, null, w),
-                        label: Ze,
+                      r.createElement(Ye.b, { text: nt }),
+                      r.createElement(Ge.a, {
+                        description: r.createElement(rt, null, w),
+                        label: qe,
                         link: ''.concat(O, '/membership'),
                       }),
                     )
                   : null,
               ),
             ),
-            r.createElement($.c, null, r.createElement(Ke.a, { to: ''.concat(O, '/') })),
+            r.createElement($.c, null, r.createElement(We.a, { to: ''.concat(O, '/') })),
           )
         },
-        at =
-          ((t.default = i(rt)),
+        ot =
+          ((t.default = i(at)),
           S.a.create(function (e) {
             return { themeIcon: { width: e.spaces.space24, height: e.spaces.space24 } }
           }))
@@ -10010,18 +9875,18 @@
           })
           .withAnalytics({ page: 'communities', section: 'edit_theme' }),
         s = n('jHSc'),
-        m = n('3XMw'),
-        d = n.n(m),
-        p = n('MWbm'),
-        f = n('X00g'),
-        y = n('/yvb'),
-        h = n('uI9t'),
-        b = n('rHpw'),
-        v = n('Ig1G'),
-        g = d.a.dbda7beb,
-        E = d.a.i2209530,
-        O = d.a.hcf35d0c,
-        w = d.a.da48b72c,
+        m = n('Ig1G'),
+        d = n('3XMw'),
+        p = n.n(d),
+        f = n('MWbm'),
+        y = n('X00g'),
+        h = n('/yvb'),
+        b = n('uI9t'),
+        v = n('rHpw'),
+        g = p.a.dbda7beb,
+        E = p.a.i2209530,
+        O = p.a.hcf35d0c,
+        w = p.a.da48b72c,
         C = Object.freeze(['Blue', 'Purple', 'Plum', 'Magenta', 'Red', 'Orange', 'Yellow', 'Green', 'Teal', 'Default']),
         _ = {},
         S = []
@@ -10031,63 +9896,65 @@
           r = e.editTheme,
           i = e.history,
           c = t.id_str,
-          l = t.theme.backgroundColor,
-          u = o.useState(!1),
-          m = a()(u, 2),
-          d = m[0],
-          f = m[1],
-          b = o.useState(Object(v.e)(t)),
-          C = a()(b, 2),
-          j = C[0],
-          I = C[1],
-          R = o.useState(Object(v.d)(j)),
-          M = a()(R, 2),
-          k = M[0],
-          x = M[1],
-          T = o.useState(l),
-          A = a()(T, 2),
-          L = A[0],
-          D = A[1],
-          F = o.useCallback(
+          l = t.theme,
+          u = y.a.getCommunityBackgroundColorName(l),
+          d = o.useState(!1),
+          p = a()(d, 2),
+          v = p[0],
+          C = p[1],
+          j = o.useState(Object(m.d)(t)),
+          I = a()(j, 2),
+          R = I[0],
+          M = I[1],
+          k = o.useState(y.a.getCommunityThemeDisplayName(R)),
+          T = a()(k, 2),
+          x = T[0],
+          A = T[1],
+          L = o.useState(u),
+          D = a()(L, 2),
+          H = D[0],
+          F = D[1],
+          B = o.useCallback(
             function () {
-              r(c, { theme: j })
+              r(c, { theme: R })
                 .then(function () {
                   i.goBack({ backLocation: '/i/communities/'.concat(c, '/tools/settings') })
                 })
                 .catch(n({ showToast: !0 }))
             },
-            [c, j, r, i, n],
+            [c, R, r, i, n],
           ),
-          H = o.createElement(
-            y.a,
-            { accessibilityLabel: O({ themeName: k }), disabled: !d, onPress: F, size: 'small', type: 'brandFilled' },
+          N = o.createElement(
+            h.a,
+            { accessibilityLabel: O({ themeName: x }), disabled: !v, onPress: B, size: 'small', type: 'brandFilled' },
             E,
           )
         return o.createElement(
           s.b,
-          { behavioralEventViewType: 'edit_theme', history: i, rightControl: H, title: g },
+          { behavioralEventViewType: 'edit_theme', history: i, rightControl: N, title: g },
           o.createElement(
-            p.a,
+            f.a,
             { style: P.themePickerContainer },
-            o.createElement(h.a, {
+            o.createElement(b.a, {
               accessibilityLabel: w,
               layout: 'two-rows',
               onChange: function (e) {
                 var n = _[e],
-                  r = n !== Object(v.e)(t)
-                I(n), x(Object(v.d)(n)), D(e), f(r)
+                  r = n !== Object(m.d)(t)
+                M(n), A(y.a.getCommunityThemeDisplayName(n)), F(e), C(r)
               },
               options: S,
-              value: L,
+              value: H,
             }),
           ),
         )
       }
       C.forEach(function (e) {
-        var t = f.a.getCommunityTheme(e).backgroundColor
-        ;(_[t] = e), S.push({ accessibilityLabel: Object(v.d)(e), colorName: t })
+        var t = y.a.getCommunityTheme(e),
+          n = y.a.getCommunityBackgroundColorName(t)
+        ;(_[n] = e), S.push({ accessibilityLabel: y.a.getCommunityThemeDisplayName(e), colorName: n })
       })
-      var P = b.a.create(function (e) {
+      var P = v.a.create(function (e) {
         return { themePickerContainer: { paddingVertical: e.spaces.space40, paddingHorizontal: e.spaces.space64 } }
       })
       t.default = u(j)

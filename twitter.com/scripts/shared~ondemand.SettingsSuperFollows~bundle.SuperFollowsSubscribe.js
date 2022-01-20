@@ -18,31 +18,31 @@
           d = r.fetchKey,
           p = r.fetchPolicy,
           y = r.source,
-          h = r.variables,
-          m = r.networkCacheConfig,
-          g = o(e, h, m)
+          m = r.variables,
+          h = r.networkCacheConfig,
+          b = o(e, m, h)
         if ('PreloadedQuery_DEPRECATED' === r.kind)
-          g.request.node.params.name !== r.name && t(!1),
+          b.request.node.params.name !== r.name && t(!1),
             (c = {
               componentDisplayName: 'usePreloadedQuery()',
               fetchKey: d,
-              fetchObservable: l(f, g.request.identifier, function () {
+              fetchObservable: l(f, b.request.identifier, function () {
                 return f === r.environment && null != y
-                  ? f.executeWithSource({ operation: g, source: y })
-                  : f.execute({ operation: g })
+                  ? f.executeWithSource({ operation: b, source: y })
+                  : f.execute({ operation: b })
               }),
               fetchPolicy: p,
-              query: g,
+              query: b,
               renderPolicy: null == n ? void 0 : n.UNSTABLE_renderPolicy,
             })
         else {
-          var b = s(f, g)
+          var g = s(f, b)
           c = {
             componentDisplayName: 'usePreloadedQuery()',
-            fetchObservable: null != y && f === r.environment ? y.ifEmpty(b) : (r.environment, b),
+            fetchObservable: null != y && f === r.environment ? y.ifEmpty(g) : (r.environment, g),
             fetchKey: d,
             fetchPolicy: p,
-            query: g,
+            query: b,
             renderPolicy: null == n ? void 0 : n.UNSTABLE_renderPolicy,
           }
         }
@@ -91,12 +91,12 @@
           u = t.screen_name
         return a.createElement(
           i.a,
-          { style: [h.signature, r] },
+          { style: [m.signature, r] },
           u && a.createElement(c.b, { color: 'gray700', weight: 'bold' }, p({ screenName: u })),
           o && a.createElement(l.a, { size: 'medium', uri: o }),
         )
       }
-      var h = s.a.create(function (e) {
+      var m = s.a.create(function (e) {
         return {
           signature: { display: 'inline-flex', alignItems: 'center', flexDirection: 'row', gap: e.spaces.space8 },
         }
@@ -104,19 +104,34 @@
     },
     FEMQ: function (e, r, n) {
       'use strict'
-      n('ho0z'), n('uFXj')
-      var t = n('ERkP'),
-        a = n('tI3i'),
-        o = n.n(a),
-        u = n('JWc1'),
-        i = n('t62R'),
-        c = n('rHpw'),
-        l = n('3XMw'),
-        s = n.n(l),
-        f = s.a.dc71aee7,
-        d = c.a.create(function (e) {
+      var t = n('97Jx'),
+        a = n.n(t),
+        o = n('m3Bd'),
+        u = n.n(o),
+        i = (n('ho0z'), n('uFXj'), n('ERkP')),
+        c = n('JWc1'),
+        l = n('t62R'),
+        s = n('rHpw'),
+        f = n('3XMw'),
+        d = n.n(f),
+        p = d.a.dc71aee7,
+        y = i.forwardRef(function (e, r) {
+          var n = e.name,
+            t = u()(e, ['name'])
+          return i.createElement(
+            i.Fragment,
+            null,
+            i.createElement(
+              l.b,
+              { accessibilityLevel: 1, accessibilityRole: 'heading', size: 'title2', weight: 'heavy' },
+              i.createElement(d.a.I18NFormatMessage, { $i18n: 'f402ebd1', name: n }, i.createElement('br', null)),
+            ),
+            i.createElement(l.b, { size: 'headline2', style: m.subheader }, p),
+            i.createElement(c.a, a()({}, t, { ref: r })),
+          )
+        }),
+        m = s.a.create(function (e) {
           return {
-            subheader: { paddingTop: e.spaces.space8 },
             creatorIntro: {
               display: 'inline-flex',
               alignItems: 'start',
@@ -136,40 +151,10 @@
               width: '100%',
             },
             creatorIntroInput: { border: 'none', padding: 0 },
+            subheader: { paddingTop: e.spaces.space8 },
           }
         })
-      r.a = function (e) {
-        var r = e.creatorIntro,
-          n = e.creatorIntroInputRef,
-          a = e.creatorIntroInputValue,
-          c = e.image,
-          l = e.name,
-          p = e.onInputChange,
-          y = e.withInput
-        return (
-          o()('string' == typeof l, 'name must be a string'),
-          t.createElement(
-            t.Fragment,
-            null,
-            t.createElement(
-              i.b,
-              { accessibilityLevel: 1, accessibilityRole: 'heading', size: 'title2', weight: 'heavy' },
-              t.createElement(s.a.I18NFormatMessage, { $i18n: 'f402ebd1', name: l }, t.createElement('br', null)),
-            ),
-            t.createElement(i.b, { size: 'headline2', style: d.subheader }, f),
-            c
-              ? t.createElement(u.a, {
-                  creatorIntro: r,
-                  image: c,
-                  inputRef: n,
-                  inputValue: a,
-                  onInputChange: p,
-                  withInput: y,
-                })
-              : null,
-          )
-        )
-      }
+      r.a = y
     },
     JWc1: function (e, r, n) {
       'use strict'
@@ -177,14 +162,41 @@
       var t = n('ERkP'),
         a = n('3XMw'),
         o = n.n(a),
-        u = n('MWbm'),
-        i = n('j7Bv'),
+        u = n('lUZE'),
+        i = n('MWbm'),
         c = n('jhWN'),
-        l = n('6OUF'),
-        s = n('t62R'),
-        f = n('rHpw'),
-        d = o.a.a4ed9071
-      var p = f.a.create(function (e) {
+        l = n('j7Bv'),
+        s = n('6OUF'),
+        f = n('t62R'),
+        d = n('rHpw'),
+        p = o.a.a4ed9071,
+        y = t.forwardRef(function (e, r) {
+          var n = e.imageUrl,
+            a = e.onChange,
+            o = e.value
+          return t.createElement(
+            i.a,
+            { style: m.root },
+            n ? t.createElement(c.a, { size: 'xxxLarge', uri: n }) : t.createElement(l.a, { Icon: u.a }),
+            a
+              ? t.createElement(s.a, {
+                  isCompact: !0,
+                  leftAligned: !0,
+                  maxNumberOfLines: 4,
+                  multiline: !0,
+                  name: 'creatorIntro',
+                  numberOfLines: 1,
+                  onChange: a,
+                  placeholder: p,
+                  ref: r,
+                  style: [m.creatorIntroBubble, m.creatorIntroInputBubble],
+                  value: o,
+                })
+              : t.createElement(f.b, { style: m.creatorIntroBubble }, o),
+          )
+        })
+      r.a = y
+      var m = d.a.create(function (e) {
         return {
           root: {
             display: 'inline-flex',
@@ -201,38 +213,11 @@
             borderTopRightRadius: e.borderRadii.large,
             boxShadow: e.boxShadows.small,
             padding: e.spaces.space24,
-            userSelect: 'none',
             width: '100%',
           },
           creatorIntroInputBubble: { padding: e.spaces.space12 },
         }
       })
-      r.a = function (e) {
-        var r = e.Icon,
-          n = e.creatorIntro,
-          a = e.image,
-          o = e.inputRef,
-          f = e.inputValue,
-          y = e.onInputChange,
-          h = e.withInput
-        return t.createElement(
-          u.a,
-          { style: p.root },
-          r ? t.createElement(i.a, { Icon: r }) : t.createElement(c.a, { size: 'xxxLarge', uri: a }),
-          h && y
-            ? t.createElement(l.a, {
-                isCompact: !0,
-                leftAligned: !0,
-                name: 'Creator Intro',
-                onChange: y,
-                placeholder: d,
-                ref: o,
-                style: [p.creatorIntroBubble, p.creatorIntroInputBubble],
-                value: f,
-              })
-            : t.createElement(s.b, { style: p.creatorIntroBubble }, n),
-        )
-      }
     },
     VTDR: function (e, r, n) {
       'use strict'
@@ -304,23 +289,23 @@
         d = l.useRef,
         p = l.useState,
         y = n('K1lQ').getRequest,
-        h = { kind: 'NullQueryReference' }
-      function m(e) {
+        m = { kind: 'NullQueryReference' }
+      function h(e) {
         return 'PreloadableConcreteRequest' === e.kind
           ? void 0 !== e.params.metadata.live
           : void 0 !== y(e).params.metadata.live
       }
       e.exports = function (e, r) {
-        var n = null != r ? r : h,
+        var n = null != r ? r : m,
           u = o()
         c()
         var l = a(),
           y = d(new Set([n])),
-          g = p(function () {
+          b = p(function () {
             return n
           }),
-          b = g[0],
-          v = g[1],
+          g = b[0],
+          v = b[1],
           R = p(function () {
             return n
           }),
@@ -329,11 +314,11 @@
         n !== E && (y.current.add(n), k(n), v(n))
         var w = s(
             function () {
-              l.current && (y.current.add(h), v(h))
+              l.current && (y.current.add(m), v(m))
             },
             [l],
           ),
-          I = s(
+          C = s(
             function (r, n) {
               var t =
                 null != n && n.hasOwnProperty('__environment')
@@ -351,21 +336,21 @@
             },
             [u, e, v, l],
           ),
-          C = d(!1)
+          P = d(!1)
         return (
           f(function () {
             return function () {
-              C.current = !0
+              P.current = !0
             }
           }, []),
           f(
             function () {
-              if (!0 === C.current)
+              if (!0 === P.current)
                 return (
-                  (C.current = !1),
+                  (P.current = !1),
                   void (
-                    'NullQueryReference' !== b.kind &&
-                    I(b.variables, { fetchPolicy: b.fetchPolicy, networkCacheConfig: b.networkCacheConfig })
+                    'NullQueryReference' !== g.kind &&
+                    C(g.variables, { fetchPolicy: g.fetchPolicy, networkCacheConfig: g.networkCacheConfig })
                   )
                 )
               var r = y.current
@@ -375,10 +360,10 @@
                 try {
                   for (a.s(); !(n = a.n()).done; ) {
                     var o = n.value
-                    if (o === b) break
+                    if (o === g) break
                     r.delete(o),
                       'NullQueryReference' !== o.kind &&
-                        (m(e) ? o.dispose && o.dispose() : o.releaseQuery && o.releaseQuery())
+                        (h(e) ? o.dispose && o.dispose() : o.releaseQuery && o.releaseQuery())
                   }
                 } catch (u) {
                   a.e(u)
@@ -387,7 +372,7 @@
                 }
               }
             },
-            [b, l, I, e],
+            [g, l, C, e],
           ),
           f(
             function () {
@@ -398,7 +383,7 @@
                   for (n.s(); !(r = n.n()).done; ) {
                     var a = r.value
                     'NullQueryReference' !== a.kind &&
-                      (m(e) ? a.dispose && a.dispose() : a.releaseQuery && a.releaseQuery())
+                      (h(e) ? a.dispose && a.dispose() : a.releaseQuery && a.releaseQuery())
                   }
                 } catch (o) {
                   n.e(o)
@@ -409,14 +394,14 @@
             },
             [e],
           ),
-          ['NullQueryReference' === b.kind ? null : b, I, w]
+          ['NullQueryReference' === g.kind ? null : g, C, w]
         )
       }
     },
     n0Rl: function (e, r, n) {
       'use strict'
       n.d(r, 'b', function () {
-        return O
+        return K
       })
       n('OZaJ')
       var t = n('ddV6'),
@@ -431,29 +416,29 @@
         d = n.n(f),
         p = n('N+ot'),
         y = n.n(p),
-        h = n('AuHH'),
-        m = n.n(h),
-        g = n('KEM+'),
-        b = n.n(g),
+        m = n('AuHH'),
+        h = n.n(m),
+        b = n('KEM+'),
+        g = n.n(b),
         v = (n('2G9S'), n('ZUdG'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP'), n('ERkP')),
         R = n('pXBW'),
         E = n('6/RC'),
         k = n('UIzd'),
         w = n.n(k),
-        I = n('kGix')
+        C = n('kGix')
       n.d(r, 'a', function () {
-        return I.a
+        return C.a
       })
-      var C = n('fs1G'),
-        P = n('0KEI'),
-        x = n('lU4h'),
-        Q = n.n(x),
-        S = n('21nk'),
-        L = n.n(S),
+      var P = n('fs1G'),
+        x = n('0KEI'),
+        I = n('lU4h'),
+        L = n.n(I),
+        Q = n('21nk'),
+        S = n.n(Q),
         _ = n('bCEw'),
         D = n.n(_),
-        A = n('Ud88'),
-        B = n.n(A)
+        B = n('Ud88'),
+        A = n.n(B)
       function F(e) {
         var r = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -467,25 +452,25 @@
         })()
         return function () {
           var n,
-            t = m()(e)
+            t = h()(e)
           if (r) {
-            var a = m()(this).constructor
+            var a = h()(this).constructor
             n = Reflect.construct(t, arguments, a)
           } else n = t.apply(this, arguments)
           return y()(this, n)
         }
       }
       var N = function (e) {
-          return (0, e.render)({ fetchStatus: I.a.LOADING, data: null, error: null, retry: C.a })
+          return (0, e.render)({ fetchStatus: C.a.LOADING, data: null, error: null, retry: P.a })
         },
-        T = (function (e) {
+        O = (function (e) {
           d()(n, e)
           var r = F(n)
           function n() {
             var e
             u()(this, n)
             for (var t = arguments.length, a = new Array(t), o = 0; o < t; o++) a[o] = arguments[o]
-            return (e = r.call.apply(r, [this].concat(a))), b()(s()(e), 'state', { error: null }), e
+            return (e = r.call.apply(r, [this].concat(a))), g()(s()(e), 'state', { error: null }), e
           }
           return (
             c()(
@@ -517,14 +502,14 @@
             n
           )
         })(v.Component),
-        K = function (e) {
+        T = function (e) {
           var r = e.query,
             n = e.queryRef,
             t = e.render,
-            a = L()(r, n)
-          return t({ fetchStatus: I.a.LOADED, data: a, error: null, retry: C.a })
+            a = S()(r, n)
+          return t({ fetchStatus: C.a.LOADED, data: a, error: null, retry: P.a })
         },
-        O = function (e, r) {
+        K = function (e, r) {
           if (E.canUseDOM)
             return function (n) {
               var t = n.fetchPolicy,
@@ -535,10 +520,10 @@
                 l = a()(c, 2),
                 s = l[0],
                 f = l[1],
-                d = Object(P.useCreateLocalApiErrorHandler)(r.errorConfig.context),
-                p = Q()(i),
+                d = Object(x.useCreateLocalApiErrorHandler)(r.errorConfig.context),
+                p = L()(i),
                 y = a()(p, 1)[0],
-                h = v.useCallback(
+                m = v.useCallback(
                   function () {
                     f(y, { fetchPolicy: 'network-only' })
                   },
@@ -556,12 +541,12 @@
                       v.Suspense,
                       { fallback: v.createElement(N, { render: u }) },
                       v.createElement(
-                        T,
-                        { errorHandler: d(r.errorConfig.options || {}), key: s.fetchKey, retry: h },
+                        O,
+                        { errorHandler: d(r.errorConfig.options || {}), key: s.fetchKey, retry: m },
                         function (r, n) {
                           return r
-                            ? u({ fetchStatus: I.a.FAILED, error: r, data: null, retry: n })
-                            : v.createElement(K, { query: e, queryRef: s, render: u })
+                            ? u({ fetchStatus: C.a.FAILED, error: r, data: null, retry: n })
+                            : v.createElement(T, { query: e, queryRef: s, render: u })
                         },
                       ),
                     )
@@ -573,9 +558,9 @@
             t.fetchPolicy
             var o = t.render,
               u = t.variables,
-              i = B()(),
-              c = Object(P.useCreateLocalApiErrorHandler)(r.errorConfig.context),
-              l = Q()(u),
+              i = A()(),
+              c = Object(x.useCreateLocalApiErrorHandler)(r.errorConfig.context),
+              l = L()(u),
               s = a()(l, 1)[0],
               f = n.get(i)
             if (f) return f
@@ -584,12 +569,12 @@
                 .toPromise()
                 .then(
                   function (e) {
-                    return o({ fetchStatus: I.a.LOADED, data: e, error: null, retry: C.a })
+                    return o({ fetchStatus: C.a.LOADED, data: e, error: null, retry: P.a })
                   },
                   function (e) {
                     return e instanceof R.a
                       ? (c(r.errorConfig.options || {})(e),
-                        o({ fetchStatus: I.a.FAILED, data: null, error: e, retry: C.a }))
+                        o({ fetchStatus: C.a.FAILED, data: null, error: e, retry: P.a }))
                       : v.createElement(function () {
                           throw e
                         })

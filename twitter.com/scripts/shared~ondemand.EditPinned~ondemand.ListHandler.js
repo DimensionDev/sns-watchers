@@ -719,7 +719,7 @@
         function () {
           return function (e, t, n) {
             var r = n.userPersistence
-            return Object(a.l)(t())
+            return Object(a.m)(t())
               ? r.get(u).then(function (t) {
                   t && e(m(t))
                 })

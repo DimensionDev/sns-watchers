@@ -4,15 +4,15 @@
     '2Daw': function (e, t, r) {
       'use strict'
       r.d(t, 'a', function () {
-        return D
+        return V
       })
       r('OZaJ')
       var n = r('VrFO'),
         i = r.n(n),
         a = r('Y9Ll'),
-        c = r.n(a),
-        o = r('5Yy7'),
-        s = r.n(o),
+        o = r.n(a),
+        c = r('5Yy7'),
+        s = r.n(c),
         l = r('N+ot'),
         u = r.n(l),
         d = r('AuHH'),
@@ -20,11 +20,11 @@
         f = r('KEM+'),
         h = r.n(f),
         y = (r('uFXj'), r('ERkP')),
-        b = r('LCtV'),
-        m = r('3XMw'),
-        v = r.n(m),
-        O = r('VPdC'),
-        g = r('pKoL'),
+        m = r('LCtV'),
+        b = r('3XMw'),
+        v = r.n(b),
+        g = r('VPdC'),
+        O = r('pKoL'),
         P = r('MWbm'),
         w = r('rFBM'),
         R = r('/yvb'),
@@ -33,7 +33,7 @@
         j = r('hOZg'),
         C = r('Mbn/'),
         k = r('T8pk')
-      function L(e) {
+      function F(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -54,16 +54,16 @@
           return u()(this, r)
         }
       }
-      var F = v.a.b87ca51a,
-        V = v.a.eebff22c,
-        D = (function (e) {
+      var D = v.a.b87ca51a,
+        L = v.a.eebff22c,
+        V = (function (e) {
           s()(r, e)
-          var t = L(r)
+          var t = F(r)
           function r() {
             return i()(this, r), t.apply(this, arguments)
           }
           return (
-            c()(r, [
+            o()(r, [
               {
                 key: 'render',
                 value: function () {
@@ -73,8 +73,8 @@
                     n = e.mediaItem,
                     i = e.onAddMediaFiles,
                     a = e.onCrop,
-                    c = e.onRemove,
-                    o = e.rootStyle,
+                    o = e.onRemove,
+                    c = e.rootStyle,
                     s = e.withDragDrop,
                     l = n && !n.uploader,
                     u = y.createElement(
@@ -92,13 +92,13 @@
                               { style: B.mediaPicker },
                               this._renderMediaEdit(),
                               a ? this._renderMediaCrop() : null,
-                              c ? this._renderMediaRemove() : null,
+                              o ? this._renderMediaRemove() : null,
                             ),
                           ),
                     )
                   return y.createElement(
                     P.a,
-                    { style: [B.container, o, H[t]] },
+                    { style: [B.container, c, H[t]] },
                     s && i ? y.createElement(w.a, { onFilesAdded: i, style: [B.dragDropContainer, H[t]] }, u) : u,
                   )
                 },
@@ -108,12 +108,13 @@
                 value: function () {
                   var e = this.props.onRemove
                   return y.createElement(R.a, {
-                    accessibilityLabel: F,
-                    hoverLabel: { label: F },
+                    accessibilityLabel: D,
+                    hoverLabel: { label: D },
                     icon: y.createElement(j.a, null),
                     onPress: e,
+                    size: 'large',
                     style: B.rightButton,
-                    type: 'onMediaText',
+                    type: 'onMediaDominantColorFilled',
                   })
                 },
               },
@@ -124,11 +125,12 @@
                     t = e.onCrop,
                     r = e.onRemove
                   return y.createElement(R.a, {
-                    accessibilityLabel: V,
+                    accessibilityLabel: L,
                     icon: y.createElement(C.a, null),
                     onPress: t,
+                    size: 'large',
                     style: r ? B.middleButton : B.rightButton,
-                    type: 'onMediaText',
+                    type: 'onMediaDominantColorFilled',
                   })
                 },
               },
@@ -141,22 +143,24 @@
                     n = e.accessibilityLabel,
                     i = e.onAddMediaFiles,
                     a = e.onEdit,
-                    c = y.createElement(k.a, null)
+                    o = y.createElement(k.a, null)
                   return i
-                    ? y.createElement(O.a, {
+                    ? y.createElement(g.a, {
                         acceptGifs: t,
                         acceptVideo: r,
                         accessibilityLabel: n,
-                        icon: c,
+                        icon: o,
                         onChange: i,
-                        type: 'onMediaText',
+                        size: 'large',
+                        type: 'onMediaDominantColorFilled',
                       })
                     : y.createElement(R.a, {
                         accessibilityLabel: n,
-                        icon: c,
+                        icon: o,
                         onPress: a,
+                        size: 'large',
                         style: B.edit,
-                        type: 'onMediaText',
+                        type: 'onMediaDominantColorFilled',
                       })
                 },
               },
@@ -172,7 +176,7 @@
                     ? y.createElement(
                         E.a,
                         { ratio: t },
-                        y.createElement(g.a, {
+                        y.createElement(O.a, {
                           borderRadius: r,
                           enableGif: !1,
                           mediaItem: i,
@@ -187,7 +191,7 @@
             r
           )
         })(y.Component)
-      h()(D, 'defaultProps', { acceptGifs: !1, acceptVideo: !1, aspectRatio: 1, borderRadius: b.a.NONE })
+      h()(V, 'defaultProps', { acceptGifs: !1, acceptVideo: !1, aspectRatio: 1, borderRadius: m.a.NONE })
       var H = M.a.create(function (e) {
           return {
             infinite: { borderRadius: e.borderRadii.infinite },
@@ -233,8 +237,8 @@
       var n = r('KEM+'),
         i = r.n(n),
         a = r('ERkP'),
-        c = r('Lsrn'),
-        o = r('k/Ka')
+        o = r('Lsrn'),
+        c = r('k/Ka')
       function s(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
@@ -264,12 +268,12 @@
       }
       var u = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(o.a)(
+        return Object(c.a)(
           'svg',
           l(
             l({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [c.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [o.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           a.createElement(
             'g',
@@ -295,9 +299,9 @@
       var n = r('VrFO'),
         i = r.n(n),
         a = r('Y9Ll'),
-        c = r.n(a),
-        o = r('1Pcy'),
-        s = r.n(o),
+        o = r.n(a),
+        c = r('1Pcy'),
+        s = r.n(c),
         l = r('5Yy7'),
         u = r.n(l),
         d = r('N+ot'),
@@ -305,11 +309,11 @@
         f = r('AuHH'),
         h = r.n(f),
         y = r('KEM+'),
-        b = r.n(y),
-        m = (r('2G9S'), r('hCOa'), r('87if'), r('hBpG'), r('jQ3i'), r('x4t0'), r('z84I'), r('ERkP')),
+        m = r.n(y),
+        b = (r('2G9S'), r('hCOa'), r('87if'), r('hBpG'), r('jQ3i'), r('x4t0'), r('z84I'), r('ERkP')),
         v = r('AspN'),
-        O = r('rxPX'),
-        g = Object(O.a)().propsFromActions(function () {
+        g = r('rxPX'),
+        O = Object(g.a)().propsFromActions(function () {
           return { addMedia: v.b, processMultipleMedia: v.g }
         }),
         P = r('2Daw'),
@@ -341,16 +345,16 @@
         function r() {
           var e
           i()(this, r)
-          for (var n = arguments.length, a = new Array(n), c = 0; c < n; c++) a[c] = arguments[c]
+          for (var n = arguments.length, a = new Array(n), o = 0; o < n; o++) a[o] = arguments[o]
           return (
             (e = t.call.apply(t, [this].concat(a))),
-            b()(s()(e), '_handleAddMediaFiles', function (t) {
+            m()(s()(e), '_handleAddMediaFiles', function (t) {
               var r = e.props,
                 n = r.addMedia,
                 i = r.location,
                 a = r.onChange,
-                c = r.onFailure,
-                o = r.processMultipleMedia,
+                o = r.onFailure,
+                c = r.processMultipleMedia,
                 s = e._getAcceptedFileInputs(),
                 l = Array.from(t).find(function (e) {
                   return s.includes(e.type)
@@ -363,10 +367,10 @@
                         return e.id
                       }),
                     ),
-                    o(e, { onFailure: c })
+                    c(e, { onFailure: o })
                 })
             }),
-            b()(s()(e), '_getAcceptedFileInputs', function () {
+            m()(s()(e), '_getAcceptedFileInputs', function () {
               var t = e.props,
                 r = t.acceptGifs,
                 n = t.acceptVideo
@@ -376,7 +380,7 @@
           )
         }
         return (
-          c()(r, [
+          o()(r, [
             {
               key: 'render',
               value: function () {
@@ -386,20 +390,20 @@
                   n = e.accessibilityLabel,
                   i = e.aspectRatio,
                   a = e.borderRadius,
-                  c = e.currentContent,
-                  o = e.maskStyle,
+                  o = e.currentContent,
+                  c = e.maskStyle,
                   s = e.mediaItem,
                   l = e.onCrop,
                   u = e.onRemove,
                   d = e.rootStyle
-                return m.createElement(P.a, {
+                return b.createElement(P.a, {
                   acceptGifs: t,
                   acceptVideo: r,
                   accessibilityLabel: n,
                   aspectRatio: i,
                   borderRadius: a,
-                  currentContent: c,
-                  maskStyle: o,
+                  currentContent: o,
+                  maskStyle: c,
                   mediaItem: s,
                   onAddMediaFiles: this._handleAddMediaFiles,
                   onCrop: l,
@@ -412,9 +416,9 @@
           ]),
           r
         )
-      })(m.Component)
-      b()(E, 'defaultProps', { acceptGifs: !1, acceptVideo: !1 })
-      var M = g(E)
+      })(b.Component)
+      m()(E, 'defaultProps', { acceptGifs: !1, acceptVideo: !1 })
+      var M = O(E)
       t.default = M
     },
     T8pk: function (e, t, r) {
@@ -423,8 +427,8 @@
       var n = r('KEM+'),
         i = r.n(n),
         a = r('ERkP'),
-        c = r('Lsrn'),
-        o = r('k/Ka')
+        o = r('Lsrn'),
+        c = r('k/Ka')
       function s(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
@@ -454,12 +458,12 @@
       }
       var u = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(o.a)(
+        return Object(c.a)(
           'svg',
           l(
             l({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [c.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [o.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           a.createElement(
             'g',

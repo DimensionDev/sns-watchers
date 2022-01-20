@@ -2212,7 +2212,7 @@
         W = (n('hBvt'), n('RqPI')),
         V = n('rxPX'),
         K = Object(V.a)().propsFromState(function () {
-          return { currentCountry: W.v }
+          return { currentCountry: W.w }
         }),
         Q = n('cnVF'),
         G = n('mrHL'),
@@ -2650,7 +2650,7 @@
         T = function (e) {
           return e.personalization.data.data
         },
-        L = Object(l.createSelector)(i.l, D, s.g, function (e, t, n) {
+        L = Object(l.createSelector)(i.m, D, s.g, function (e, t, n) {
           var r = e ? [R, n] : [j, t],
             o = a()(r, 2),
             c = o[0],
@@ -2793,7 +2793,7 @@
               o = r.featureSwitches
             if (Object(p.a)(e)) return Promise.resolve()
             var l = n(),
-              d = i.l(l),
+              d = i.m(l),
               f = d ? R : j,
               h = Object.keys(e).reduce(function (t, n) {
                 n in f && (t[f[n]] = e[n])
@@ -3372,7 +3372,7 @@
         P = n('rxPX'),
         C = Object(P.a)()
           .propsFromState(function () {
-            return { userLanguage: I.n }
+            return { userLanguage: I.o }
           })
           .propsFromActions(function () {
             return { scribeAction: k.c }
@@ -4305,8 +4305,8 @@
           return {
             personalizationPreferences: r.selectPreferences,
             personalizationSettings: r.selectUserPreferences,
-            ssoInitTokens: c.t,
-            userLanguage: c.n,
+            ssoInitTokens: c.u,
+            userLanguage: c.o,
           }
         })
         .adjustStateProps(function (e) {
@@ -4322,7 +4322,7 @@
           }
         })
         .propsFromActions(function () {
-          return { addToast: a.b, fetchSsoInitToken: c.d }
+          return { addToast: a.b, fetchSsoInitToken: c.e }
         })
         .withAnalytics()
     },
@@ -5544,7 +5544,7 @@
           return function (e, t, n) {
             n.api
             var r = t()
-            return Object(f.l)(r)
+            return Object(f.m)(r)
               ? (function (e) {
                   return e.savedSearches.fetchStatus
                 })(r) === l.a.LOADED

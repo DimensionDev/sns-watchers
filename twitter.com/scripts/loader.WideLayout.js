@@ -277,7 +277,7 @@
         k = n('0KEI'),
         x = 'profile_accounts_sidebar',
         U = function (e, t) {
-          return S.p(e)
+          return S.q(e)
         },
         H = function (e, t) {
           return t.userId
@@ -377,8 +377,8 @@
         }
       }
       var Z = w.a.fd6473fa,
-        G = { element: 'user', action: 'results' },
-        q = { viewType: 'who_to_follow' },
+        q = { element: 'user', action: 'results' },
+        G = { viewType: 'who_to_follow' },
         V = (function (e) {
           l()(n, e)
           var t = J(n)
@@ -407,7 +407,7 @@
                     t.slice(0, 3).map(function (e) {
                       return X(X({}, E.a.forUser(e.user)), {}, { suggestion_details: { source_data: e.token } })
                     })
-                n.scribe(X(X({}, G), {}, { data: { items: r } }))
+                n.scribe(X(X({}, q), {}, { data: { items: r } }))
               }),
               e
             )
@@ -442,7 +442,7 @@
                         { style: [Q.root, n] },
                         y.createElement(_.a, {
                           accessibilityLabel: Z,
-                          behavioralEventContext: q,
+                          behavioralEventContext: G,
                           fetchStatus: t,
                           render: this._renderContent,
                         }),

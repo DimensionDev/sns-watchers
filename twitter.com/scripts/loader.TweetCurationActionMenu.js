@@ -291,8 +291,8 @@
         $ = Object(V.a)()
           .propsFromState(function () {
             return {
-              userCountry: J.v,
-              userLanguage: J.n,
+              userCountry: J.w,
+              userLanguage: J.o,
               shouldShowMuteEducationTip: q,
               shouldShowHideReplyTip: Y,
               shouldShowConversationControlsTip: G,
@@ -570,23 +570,22 @@
             (r = He)
           return w.createElement(E.a.I18NFormatMessage, { $i18n: 'f8ea2809', selection: r })
         },
-        Be = n('F3pd'),
-        Fe = n('feu+'),
-        Ue = n('eb3s'),
-        Ne = n('lUZE'),
-        Ke = n('5cUs'),
-        We = E.a.ge5067bb,
-        Ve = E.a.ea626ab3,
-        Ze = E.a.fc716886,
-        Xe = E.a.f2a2a06e,
-        Je = E.a.f82c0bbf,
-        qe = ''.concat(Xe, '\n\n').concat(Je),
-        Ye = E.a.b2615c6d,
-        Ge = E.a.i62a03aa,
-        Qe = E.a.cfd2f35d,
-        $e = E.a.a6450e83,
-        et = E.a.hb279a11,
-        tt = function (e) {
+        Be = n('feu+'),
+        Fe = n('eb3s'),
+        Ue = n('lUZE'),
+        Ne = n('5cUs'),
+        Ke = E.a.ge5067bb,
+        We = E.a.ea626ab3,
+        Ve = E.a.fc716886,
+        Ze = E.a.f2a2a06e,
+        Xe = E.a.f82c0bbf,
+        Je = ''.concat(Ze, '\n\n').concat(Xe),
+        qe = E.a.b2615c6d,
+        Ye = E.a.i62a03aa,
+        Ge = E.a.cfd2f35d,
+        Qe = E.a.a6450e83,
+        $e = E.a.hb279a11,
+        et = function (e) {
           var t = e.addFlag,
             n = e.addToast,
             o = e.behavioralEventEntityToken,
@@ -609,18 +608,18 @@
                         n = e.onCancel,
                         o = e.onHideReplyImpression,
                         r = void 0 === o ? function () {} : o
-                      return w.createElement(Fe.a, {
-                        actionLabel: We,
-                        graphic: Ne.a,
-                        headline: Ze,
+                      return w.createElement(Be.a, {
+                        actionLabel: Ke,
+                        graphic: Ue.a,
+                        headline: Ve,
                         onAction: t,
                         onClose: n,
                         onImpression: r,
                         onTertiaryAction: n,
-                        subtext: qe,
+                        subtext: Je,
                         supportUrl:
                           'https://help.twitter.com/en/using-twitter/mentions-and-replies?lang=browser#hidden-reply',
-                        tertiaryActionLabel: Qe,
+                        tertiaryActionLabel: Ge,
                       })
                     })({ onConfirm: e, onCancel: t, onHideReplyImpression: d })
                   },
@@ -628,57 +627,57 @@
               : {
                   render: function (e, t) {
                     var n = u.user.screen_name
-                    return w.createElement(Ue.a, {
-                      cancelButtonLabel: Ge,
-                      confirmButtonLabel: $e,
+                    return w.createElement(Fe.a, {
+                      cancelButtonLabel: Ye,
+                      confirmButtonLabel: Qe,
                       confirmButtonType: 'destructiveFilled',
-                      headline: Ye({ screenName: n }),
+                      headline: qe({ screenName: n }),
                       onCancel: e,
                       onConfirm: function () {
                         a(), e()
                       },
-                      text: et({ screenName: n }),
+                      text: $e({ screenName: n }),
                     })
                   },
                 },
-            text: We,
+            text: Ke,
             onClick: function () {
               t(R.m),
                 i(u.id_str, { conversation_id: u.conversation_id_str }).then(function (e) {
-                  c && c(), n({ text: Ve, behavioralEventEntityToken: o })
+                  c && c(), n({ text: We, behavioralEventEntityToken: o })
                 }, r({ showToast: !0 })),
                 l({ element: 'moderate_reply' })
             },
-            Icon: Ke.a,
+            Icon: Ne.a,
           }
         },
-        nt = n('n5fo'),
-        ot = n('fz3c'),
-        rt = E.a.f20b040d,
-        it = function (e, t) {
+        tt = n('n5fo'),
+        nt = n('fz3c'),
+        ot = E.a.f20b040d,
+        rt = function (e, t) {
           return {
-            text: rt,
-            Icon: nt.a,
+            text: ot,
+            Icon: tt.a,
             link: {
-              pathname: '/i/report/'.concat(ot.a.HideCommunityTweet, '/').concat(e),
+              pathname: '/i/report/'.concat(nt.a.HideCommunityTweet, '/').concat(e),
               state: { scribeNamespace: t },
             },
           }
         },
-        at = n('jQy5'),
-        ct = n('NTtI'),
-        lt = n('qz6Z'),
-        st = n('w02m'),
-        ut = E.a.e2d6c17e,
-        dt = E.a.cd1942f4,
-        pt = E.a.bbd8bed6,
-        ft = E.a.c13af432,
-        mt = E.a.gf5e9ea6,
-        bt = E.a.df744bd9,
-        vt = E.a.j9552760,
-        ht = E.a.cfd2f35d,
-        yt = E.a.d751694c,
-        wt = function (e) {
+        it = n('jQy5'),
+        at = n('NTtI'),
+        ct = n('qz6Z'),
+        lt = n('w02m'),
+        st = E.a.e2d6c17e,
+        ut = E.a.cd1942f4,
+        dt = E.a.bbd8bed6,
+        pt = E.a.c13af432,
+        ft = E.a.gf5e9ea6,
+        mt = E.a.df744bd9,
+        bt = E.a.j9552760,
+        vt = E.a.cfd2f35d,
+        ht = E.a.d751694c,
+        yt = function (e) {
           var t = e.addFlag,
             n = e.addToast,
             o = e.behavioralEventEntityToken,
@@ -694,7 +693,7 @@
             d = function () {
               s(l.id_str).then(
                 function () {
-                  n({ text: ft, behavioralEventEntityToken: o })
+                  n({ text: pt, behavioralEventEntityToken: o })
                 },
                 function (e) {
                   r({ showToast: !0 })(e), a({ element: 'unmute_conversation_error' })
@@ -707,14 +706,14 @@
                 viewType: 'mute_conversation',
                 viewState: { type: 'toggleable', toggledTo: !0 },
               },
-              text: ut,
+              text: st,
               onClick: function () {
                 i(l.id_str).then(
                   function () {
                     n({
-                      action: { label: mt, onAction: d, behavioralEventViewType: 'unmute_conversation' },
+                      action: { label: ft, onAction: d, behavioralEventViewType: 'unmute_conversation' },
                       behavioralEventEntityToken: o,
-                      text: pt,
+                      text: dt,
                     })
                   },
                   function (e) {
@@ -726,46 +725,46 @@
               confirmation: c
                 ? {
                     render: function (e, t) {
-                      return w.createElement(Fe.a, {
-                        actionLabel: bt,
-                        graphic: ct.a,
+                      return w.createElement(Be.a, {
+                        actionLabel: mt,
+                        graphic: at.a,
                         graphicDisplayMode: 'illustration',
-                        headline: vt,
+                        headline: bt,
                         onAction: e,
                         onClose: t,
                         onImpression: u,
                         onTertiaryAction: t,
-                        subtext: yt,
+                        subtext: ht,
                         supportUrl: 'https://support.twitter.com/articles/20175032',
-                        tertiaryActionLabel: ht,
+                        tertiaryActionLabel: vt,
                       })
                     },
                   }
                 : void 0,
-              Icon: lt.a,
+              Icon: ct.a,
             },
             f = {
               behavioralEventContext: {
                 viewType: 'mute_conversation',
                 viewState: { type: 'toggleable', toggledTo: !1 },
               },
-              text: dt,
+              text: ut,
               onClick: d,
-              Icon: st.a,
+              Icon: lt.a,
             }
           return l.conversation_muted ? f : p
         },
-        _t = n('ShJ/'),
-        gt = 'block',
-        Ot = 'pin',
-        Et = 'unpin',
-        Ct = 'report',
-        Tt = E.a.ha35a1d2,
-        jt = E.a.afac3b9d,
-        kt = E.a.e2d44ce9,
-        xt = E.a.c5d23126,
-        Pt = E.a.aaef1b48,
-        At = function (e) {
+        wt = n('ShJ/'),
+        _t = 'block',
+        gt = 'pin',
+        Ot = 'unpin',
+        Et = 'report',
+        Ct = E.a.ha35a1d2,
+        Tt = E.a.afac3b9d,
+        jt = E.a.e2d44ce9,
+        kt = E.a.c5d23126,
+        xt = E.a.aaef1b48,
+        Pt = function (e) {
           var t = e.addToast,
             n = e.behavioralEventEntityToken,
             o = e.createLocalApiErrorHandler,
@@ -773,61 +772,61 @@
             i = e.scribeAction,
             a = e.tweetId
           return {
-            confirmation: { text: kt, headline: jt, label: xt },
-            testID: Ot,
-            text: Tt,
+            confirmation: { text: jt, headline: Tt, label: kt },
+            testID: gt,
+            text: Ct,
             onClick: function () {
               r(a).then(function () {
-                t({ text: Pt, behavioralEventEntityToken: n })
+                t({ text: xt, behavioralEventEntityToken: n })
               }, o({ showToast: !0 })),
                 i({ element: 'pin' })
             },
-            Icon: _t.a,
+            Icon: wt.a,
           }
         },
-        It = E.a.f5cdcc2b,
-        St = function (e) {
+        At = E.a.f5cdcc2b,
+        It = function (e) {
           var t = e.onTweetDismiss
-          return { text: It, onClick: t, Icon: C.a }
+          return { text: At, onClick: t, Icon: C.a }
         },
-        Dt = (n('WNMA'), n('KqXw'), n('24HD')),
-        Rt = n('Bwid'),
-        Mt = E.a.jcba15d2,
-        Lt = function (e) {
+        St = (n('WNMA'), n('KqXw'), n('24HD')),
+        Dt = n('Bwid'),
+        Rt = E.a.jcba15d2,
+        Mt = function (e) {
           var t = e.history,
             n = e.removeAutoblockAction,
             o = e.user,
-            r = Object(Dt.i)(o.screen_name)
+            r = Object(St.i)(o.screen_name)
           return {
-            text: Mt,
+            text: Rt,
             onClick: function () {
               n(r)
               t.location.pathname.match(/actioned_tweets\/\d+/) && t.goBack()
             },
             confirmation: r,
-            Icon: Rt.a,
+            Icon: Dt.a,
           }
         },
-        Ht = n('5oT/'),
-        zt = E.a.b99364a5,
-        Bt = function (e, t, n) {
+        Lt = n('5oT/'),
+        Ht = E.a.b99364a5,
+        zt = function (e, t, n) {
           return {
-            text: zt({ screenName: e.screen_name }),
-            Icon: Ht.a,
+            text: Ht({ screenName: e.screen_name }),
+            Icon: Lt.a,
             link: {
-              pathname: '/i/report/'.concat(ot.a.RemoveCommunityMember, '/').concat(t),
+              pathname: '/i/report/'.concat(nt.a.RemoveCommunityMember, '/').concat(t),
               state: { scribeNamespace: n },
             },
           }
         },
-        Ft = n('Rp9C'),
-        Ut = n('4bW+'),
-        Nt = n('u0B7'),
-        Kt = n('SJ11'),
-        Wt = n('tJZD'),
-        Vt = E.a.ja66a2b4,
-        Zt = E.a.c2423b7a,
-        Xt = function (e) {
+        Bt = n('Rp9C'),
+        Ft = n('4bW+'),
+        Ut = n('u0B7'),
+        Nt = n('SJ11'),
+        Kt = n('tJZD'),
+        Wt = E.a.ja66a2b4,
+        Vt = E.a.c2423b7a,
+        Zt = function (e) {
           var t = e.addToast,
             n = e.behavioralEventEntityToken,
             o = e.createLocalApiErrorHandler,
@@ -837,17 +836,17 @@
             c = e.user
           return {
             behavioralEventContext: { viewType: 'follow', viewState: { type: 'toggleable', toggledTo: !1 } },
-            text: Vt({ screenName: c.screen_name }),
+            text: Wt({ screenName: c.screen_name }),
             onClick: function () {
               a(c.id_str, { promotedContent: r }).then(function (e) {
-                t({ behavioralEventEntityToken: n, text: Zt({ screenName: c.screen_name }) })
-              }, o(Wt.a)),
+                t({ behavioralEventEntityToken: n, text: Vt({ screenName: c.screen_name }) })
+              }, o(Kt.a)),
                 i({ element: 'unfollow' })
             },
-            Icon: Kt.a,
+            Icon: Nt.a,
           }
         }
-      function Jt(e, t) {
+      function Xt(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var o = Object.getOwnPropertySymbols(e)
@@ -859,27 +858,27 @@
         }
         return n
       }
-      function qt(e) {
+      function Jt(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Jt(Object(n), !0).forEach(function (t) {
+            ? Xt(Object(n), !0).forEach(function (t) {
                 y()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : Jt(Object(n)).forEach(function (t) {
+            : Xt(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var Yt = function () {
+      var qt = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
         return Object(ge.a)(
           'svg',
-          qt(
-            qt({}, e),
+          Jt(
+            Jt({}, e),
             {},
             { accessibilityHidden: void 0 === e.accessibilityLabel, style: [_e.a.root, e.style], viewBox: '0 0 24 24' },
           ),
@@ -895,11 +894,11 @@
           ),
         )
       }
-      Yt.metadata = { width: 24, height: 24 }
-      var Gt = Yt,
-        Qt = E.a.i31dfa4c,
-        $t = E.a.j8e56ba1,
-        en = function (e) {
+      qt.metadata = { width: 24, height: 24 }
+      var Yt = qt,
+        Gt = E.a.i31dfa4c,
+        Qt = E.a.j8e56ba1,
+        $t = function (e) {
           var t = e.addToast,
             n = e.behavioralEventEntityToken,
             o = e.createLocalApiErrorHandler,
@@ -907,22 +906,22 @@
             i = e.tweet,
             a = e.unhideReply
           return {
-            text: Qt,
+            text: Gt,
             onClick: function () {
               a(i.id_str, { conversation_id: i.conversation_id_str }).then(function (e) {
-                t({ ariaOnly: !0, text: $t, behavioralEventEntityToken: n })
+                t({ ariaOnly: !0, text: Qt, behavioralEventEntityToken: n })
               }, o({ showToast: !0 })),
                 r({ element: 'unmoderate_reply' })
             },
-            Icon: Gt,
+            Icon: Yt,
           }
         },
-        tn = E.a.ic030337,
-        nn = E.a.j1b8c867,
-        on = E.a.eb2d59f3,
-        rn = E.a.j44ec61f,
-        an = E.a.i0086d6b,
-        cn = function (e) {
+        en = E.a.ic030337,
+        tn = E.a.j1b8c867,
+        nn = E.a.eb2d59f3,
+        on = E.a.j44ec61f,
+        rn = E.a.i0086d6b,
+        an = function (e) {
           var t = e.addToast,
             n = e.behavioralEventEntityToken,
             o = e.createLocalApiErrorHandler,
@@ -930,42 +929,42 @@
             i = e.tweetId,
             a = e.unpin
           return {
-            confirmation: { text: on, headline: nn, label: rn },
-            testID: Et,
-            text: tn,
+            confirmation: { text: nn, headline: tn, label: on },
+            testID: Ot,
+            text: en,
             onClick: function () {
               a(i).then(function () {
-                t({ text: an, behavioralEventEntityToken: n })
+                t({ text: rn, behavioralEventEntityToken: n })
               }, o({ showToast: !0 })),
                 r({ element: 'unpin' })
             },
-            Icon: _t.a,
+            Icon: wt.a,
           }
         },
-        ln = E.a.f9478972,
-        sn = function (e) {
+        cn = E.a.f9478972,
+        ln = function (e) {
           var t = e.permalink,
             n = e.scribeAction
           return {
-            text: ln,
+            text: cn,
             link: ''.concat(t, '/hidden'),
             onClick: function () {
               n({ element: 'view_moderated_replies' })
             },
-            Icon: Ke.a,
+            Icon: Ne.a,
           }
         },
-        un = n('TnY3'),
-        dn = n('mqpi'),
-        pn = n('4hQ9'),
-        fn = n('ACNv'),
-        mn = (n('ho0z'), n('zIWA')),
-        bn = n('6s7X'),
-        vn = E.a.f1824804,
-        hn = E.a.ff9bd692,
-        yn = E.a.e3fd237d,
-        wn = E.a.d1e2161f,
-        _n = function (e) {
+        sn = n('TnY3'),
+        un = n('mqpi'),
+        dn = n('4hQ9'),
+        pn = n('ACNv'),
+        fn = (n('ho0z'), n('zIWA')),
+        mn = n('6s7X'),
+        bn = E.a.f1824804,
+        vn = E.a.ff9bd692,
+        hn = E.a.e3fd237d,
+        yn = E.a.d1e2161f,
+        wn = function (e) {
           var t = e.analytics,
             n = e.featureSwitches,
             o = e.history,
@@ -978,15 +977,15 @@
             u = e.tweet,
             d = { element: 'report_tweet' },
             p = '/i/report/status',
-            f = ot.a.Tweet,
-            m = mn.a,
-            b = a ? yn : hn
+            f = nt.a.Tweet,
+            m = fn.a,
+            b = a ? hn : vn
           i &&
             ((d = { element: 'appeal_tweet_warning' }),
             (p = '/i/report/appeal_tweet_warning'),
-            (f = ot.a.AppealTweetWarning),
-            (m = bn.a),
-            (b = vn))
+            (f = nt.a.AppealTweetWarning),
+            (m = mn.a),
+            (b = bn))
           return {
             behavioralEventContext: { viewType: 'report' },
             Icon: m,
@@ -1017,9 +1016,9 @@
                   '745291183405076480:broadcast' === (null === (b = u.card) || void 0 === b ? void 0 : b.name) ||
                   '3691233323:periscope_broadcast' === (null === (v = u.card) || void 0 === v ? void 0 : v.name) ||
                   a
-                ) && Object(ot.g)(n, f, c, l))
+                ) && Object(nt.g)(n, f, c, l))
               ) {
-                var _ = Object(ot.d)({
+                var _ = Object(nt.d)({
                   clientReferer: window.location.pathname,
                   conversationSection: w,
                   isMedia: y,
@@ -1030,7 +1029,7 @@
                   scribeNamespace: t.contextualScribeNamespace,
                 })
                 o.push({
-                  pathname: '/i/safety/report_story',
+                  pathname: '/i/safety/report_story_start',
                   state: { input: { requested_variant: JSON.stringify(_) } },
                 })
               } else
@@ -1045,31 +1044,32 @@
                   },
                 })
             },
-            testID: Ct,
+            testID: Et,
             text: b,
           }
         },
-        gn = function (e) {
+        _n = function (e) {
           var t = e.promotedContent,
             n = e.scribeAction
           return {
             behavioralEventContext: { viewType: 'report' },
-            Icon: mn.a,
+            Icon: fn.a,
             link: 'https://help.twitter.com/forms',
             onClick: function () {
               n({ element: 'report_tweet' })
             },
-            testID: Ct,
-            text: t ? yn : hn,
+            testID: Et,
+            text: t ? hn : vn,
           }
         },
-        On = function (e) {
+        gn = function (e) {
           return {
-            Icon: mn.a,
+            Icon: fn.a,
             link: 'https://help.twitter.com/forms/netzwerkdurchsetzungsgesetz?tweet_id='.concat(e),
-            text: wn,
+            text: yn,
           }
         },
+        On = n('Z6aJ'),
         En = n('IG7M'),
         Cn = (n('7xRU'), n('z84I'), n('0wXR')),
         Tn = n('1wVr'),
@@ -1221,7 +1221,7 @@
               (e = t.call.apply(t, [this].concat(i))),
               y()(u()(e), '_dividerIndices', []),
               y()(u()(e), 'state', { showModerationBlockConfirmation: !1 }),
-              y()(u()(e), '_shouldDisable', dn.b.bind(null, e.context.featureSwitches)),
+              y()(u()(e), '_shouldDisable', un.b.bind(null, e.context.featureSwitches)),
               y()(u()(e), '_birdwatchAction', S.bind(null, e.context.featureSwitches)),
               y()(
                 u()(e),
@@ -1271,7 +1271,7 @@
                         i.scribe({
                           element: zn.all,
                           action: 'click',
-                          data: { items: [Ft.a.getChangeConversationControlsItem(u, t)] },
+                          data: { items: [Bt.a.getChangeConversationControlsItem(u, t)] },
                         })
                     }, l(B))
                   : c &&
@@ -1283,14 +1283,14 @@
                         i.scribe({
                           element: zn[t],
                           action: 'click',
-                          data: { items: [Ft.a.getChangeConversationControlsItem(u, t)] },
+                          data: { items: [Bt.a.getChangeConversationControlsItem(u, t)] },
                         })
                     }, l(B))
               }),
               y()(u()(e), '_renderCurationActionMenu', function (t) {
                 return function (n) {
                   var o = e._getActionItems(t)
-                  return w.createElement(fn.default, {
+                  return w.createElement(pn.default, {
                     actionItems: o,
                     dividerIndices: e._shouldRenderSectionDividers ? e._dividerIndices : void 0,
                     onClose: n,
@@ -1321,7 +1321,7 @@
                       ? c
                       : void 0,
                   }
-                return Object(at.a)(
+                return Object(it.a)(
                   Sn(Sn({}, d), {}, { mute: a, unmute: s, user: u, dismissUserFromConversation: i }, p),
                 )
               }),
@@ -1363,7 +1363,7 @@
                   U = B.loggedInUserId,
                   N = x.user,
                   K = [],
-                  W = C && 'earned' !== Object(Be.a)(C),
+                  W = On.a.isPromoted(C),
                   V = {},
                   Z = [],
                   X = e._scribeAction,
@@ -1372,22 +1372,22 @@
                 if (
                   (W && (V.adInfo = j({ promotedContent: C })),
                   N.id_str !== U ||
-                    e._shouldDisable(x, dn.a.Analytics) ||
+                    e._shouldDisable(x, un.a.Analytics) ||
                     (V.analytics = P({ tweet: x, scribeAction: X })),
                   N.protected ||
-                    e._shouldDisable(x, dn.a.Embed) ||
+                    e._shouldDisable(x, un.a.Embed) ||
                     (V.embed = ke({ permalink: x.permalink, scribeAction: X })),
                   H &&
                     x.conversation_id_str === x.id_str &&
-                    !e._shouldDisable(x, dn.a.ViewHiddenReplies) &&
-                    (V.viewHiddenReplies = sn({ permalink: x.permalink, scribeAction: X })),
+                    !e._shouldDisable(x, un.a.ViewHiddenReplies) &&
+                    (V.viewHiddenReplies = ln({ permalink: x.permalink, scribeAction: X })),
                   Pn(U, x) &&
                     (V.removeTag = An({ createLocalApiErrorHandler: h, loggedInUserId: U, removeTag: s, tweet: x })),
                   U)
                 )
                   if (
                     (N.blocking ||
-                      e._shouldDisable(x, dn.a.ListsAddRemove) ||
+                      e._shouldDisable(x, un.a.ListsAddRemove) ||
                       (V.addOrRemoveFromList = g({ user: N, scribeAction: X })),
                     e._birdwatchNoteWritingEnabled &&
                       (V.birdwatch = e._birdwatchAction({ scribeAction: X, tweetId: x.id_str })),
@@ -1395,25 +1395,25 @@
                   ) {
                     if (q) {
                       var Y = b.contextualScribeNamespace
-                      e._shouldDisable(x, dn.a.HideCommunityTweet) ||
-                        (V.hideTweet = it(x.id_str, Sn(Sn({}, Y), {}, { element: 'hide_tweet' }))),
+                      e._shouldDisable(x, un.a.HideCommunityTweet) ||
+                        (V.hideTweet = rt(x.id_str, Sn(Sn({}, Y), {}, { element: 'hide_tweet' }))),
                         e._c9sRemoveMemberEnabled &&
-                          !e._shouldDisable(x, dn.a.RemoveCommunityMember) &&
-                          (V.removeCommunityMember = Bt(
+                          !e._shouldDisable(x, un.a.RemoveCommunityMember) &&
+                          (V.removeCommunityMember = zt(
                             N,
                             x.id_str,
                             Sn(Sn({}, Y), {}, { element: 'remove_community_member' }),
                           ))
                     }
-                    E && W && (V.promotedTweetDismiss = St({ onTweetDismiss: E })),
+                    E && W && (V.promotedTweetDismiss = It({ onTweetDismiss: E })),
                       N.blocking ||
-                        e._shouldDisable(x, dn.a.FollowAuthor) ||
+                        e._shouldDisable(x, un.a.FollowAuthor) ||
                         ((V.followOrUnfollow = N.following
-                          ? Xt(Sn(Sn({}, J), {}, { unfollow: e.props.unfollow, promotedContent: C, user: N }))
+                          ? Zt(Sn(Sn({}, J), {}, { unfollow: e.props.unfollow, promotedContent: C, user: N }))
                           : Me(Sn(Sn({}, J), {}, { follow: i, promotedContent: C, user: N }))),
                         (V.muteOrUnmute = e._getMuteOrUnmuteAction())),
                       M &&
-                        (V.muteOrUnmuteConversation = wt(
+                        (V.muteOrUnmuteConversation = yt(
                           Sn(
                             Sn({}, J),
                             {},
@@ -1422,7 +1422,7 @@
                         )),
                       R &&
                         !e._authorModeratedReplies &&
-                        (V.hideReply = tt(
+                        (V.hideReply = et(
                           Sn(
                             Sn({}, J),
                             {},
@@ -1436,25 +1436,25 @@
                             },
                           ),
                         )),
-                      L && (V.unhideReply = en(Sn(Sn({}, J), {}, { tweet: x, unhideReply: e.props.unhideReply })))
+                      L && (V.unhideReply = $t(Sn(Sn({}, J), {}, { tweet: x, unhideReply: e.props.unhideReply })))
                     var G = {
                       user: N,
-                      source: Dt.k.TWEET_CARET,
-                      testID: gt,
+                      source: St.k.TWEET_CARET,
+                      testID: _t,
                       blockAction: e._handleBlock,
                       unblockAction: e._handleUnblock,
                     }
-                    if (((V.blockOrUnblock = Object(Dt.g)(G)), N.smart_blocking)) {
+                    if (((V.blockOrUnblock = Object(St.g)(G)), N.smart_blocking)) {
                       var Q = { history: w, user: N, removeAutoblockAction: e._handleUnblock }
-                      V.removeAutoblock = Lt(Q)
+                      V.removeAutoblock = Mt(Q)
                     }
                   } else
                     _
-                      ? (V.pinOrUnpin = cn(Sn(Sn({}, J), {}, { tweetId: x.id_str, unpin: d })))
-                      : e._shouldDisable(x, dn.a.PinToProfile) ||
-                        (V.pinOrUnpin = At(Sn(Sn({}, J), {}, { pin: l, tweetId: x.id_str }))),
+                      ? (V.pinOrUnpin = an(Sn(Sn({}, J), {}, { tweetId: x.id_str, unpin: d })))
+                      : e._shouldDisable(x, un.a.PinToProfile) ||
+                        (V.pinOrUnpin = Pt(Sn(Sn({}, J), {}, { pin: l, tweetId: x.id_str }))),
                       e._shouldIncludeTweetAppealOption() &&
-                        (V.appealTweetWarning = _n({
+                        (V.appealTweetWarning = wn({
                           analytics: b,
                           history: w,
                           isAppealTweetWarning: !0,
@@ -1466,8 +1466,8 @@
                           reporterLanguage: I,
                         })),
                       M &&
-                        !e._shouldDisable(x, dn.a.MuteConversation) &&
-                        (V.muteOrUnmuteConversation = wt(
+                        !e._shouldDisable(x, un.a.MuteConversation) &&
+                        (V.muteOrUnmuteConversation = yt(
                           Sn(
                             Sn({}, J),
                             {},
@@ -1481,7 +1481,7 @@
                 var $ = U && U !== N.id_str
                 return (
                   $
-                    ? (V.report = _n({
+                    ? (V.report = wn({
                         analytics: b,
                         history: w,
                         promotedContent: C,
@@ -1494,7 +1494,7 @@
                     : !U &&
                       A &&
                       Hn(A) &&
-                      ((V.report = gn({ promotedContent: C, scribeAction: X })), (V.reportNetzDG = On(x.id_str))),
+                      ((V.report = _n({ promotedContent: C, scribeAction: X })), (V.reportNetzDG = gn(x.id_str))),
                   Ln.forEach(function (e) {
                     if ('feedbackOptions' === e) {
                       var t = y
@@ -1535,7 +1535,7 @@
                   n = t.createLocalApiErrorHandler,
                   o = t.promotedContent,
                   r = t.tweet
-                ;(0, t.unblock)(r.user.id_str, { promotedContent: o }).catch(n(Nt.a)),
+                ;(0, t.unblock)(r.user.id_str, { promotedContent: o }).catch(n(Ut.a)),
                   e._scribeAction({ element: 'unblock' })
               }),
               y()(u()(e), '_scribeAction', function (t) {
@@ -1547,7 +1547,7 @@
                   c = i.promotedContent,
                   l = i.tweet,
                   s = a.contextualScribeData,
-                  u = null != s && s.items ? s : Sn(Sn({}, s || {}), {}, { items: [Ft.a.getTweetItem(l, c)] })
+                  u = null != s && s.items ? s : Sn(Sn({}, s || {}), {}, { items: [Bt.a.getTweetItem(l, c)] })
                 return o && (u = Sn(Sn({}, u), o)), a.scribe({ element: r, action: n || 'click', data: u })
               }),
               e
@@ -1583,7 +1583,7 @@
                           isDisabled: o,
                           onClick: t._onMenuClick,
                           renderActionMenu: t._renderCurationActionMenu(n),
-                          testID: Ut.a.caret,
+                          testID: Ft.a.caret,
                         })
                       },
                     ),
@@ -1603,7 +1603,7 @@
                     c = a.featureSwitches,
                     l = a.loggedInUserId
                   return (
-                    Object(pn.b)({
+                    Object(dn.b)({
                       loggedInUserId: l,
                       featureSwitches: c,
                       forwardPivotDisplayType: t,
@@ -1611,7 +1611,7 @@
                       userCountry: r,
                       userLanguage: i,
                     }) ||
-                    Object(pn.a)({
+                    Object(dn.a)({
                       loggedInUserId: l,
                       featureSwitches: c,
                       isNsfwUser: n,
@@ -1627,7 +1627,7 @@
           )
         })(w.Component)
       y()(Bn, 'defaultProps', { withRemoveFromBookmarks: !1 }), y()(Bn, 'contextType', te.a)
-      t.default = Object(un.a)($(Bn))
+      t.default = Object(sn.a)($(Bn))
       var Fn = le.a.create(function (e) {
         return { overflowMenu: { display: 'flex', flexDirection: 'row', alignItems: 'center' } }
       })

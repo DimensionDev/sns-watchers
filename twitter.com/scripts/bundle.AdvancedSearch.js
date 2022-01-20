@@ -924,7 +924,7 @@
         _ = function (e) {
           return function (t, n, a) {
             var r = a.api
-            return o.b(t, { params: e, meta: { lang: Object(s.n)(n()) }, request: r.FeatureSwitch.fetchLanguages })({
+            return o.b(t, { params: e, meta: { lang: Object(s.o)(n()) }, request: r.FeatureSwitch.fetchLanguages })({
               actionTypes: h,
               context: 'FETCH_AVAILABLE_LANGUAGES',
             })

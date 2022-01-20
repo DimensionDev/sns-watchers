@@ -1534,7 +1534,7 @@
         S = n('G6rE'),
         _ = n('rxPX'),
         C = n('0KEI'),
-        P = Object(E.createSelector)(v.l, g.selectPreferencesFetchStatus, function (e, t) {
+        P = Object(E.createSelector)(v.m, g.selectPreferencesFetchStatus, function (e, t) {
           return e ? w.a.LOADED : t
         }),
         x = Object(_.a)()
@@ -2234,7 +2234,7 @@
         c = n('rxPX'),
         i = Object(c.a)()
           .propsFromState(function () {
-            return { viewerCountry: o.v }
+            return { viewerCountry: o.w }
           })
           .propsFromActions(function () {
             return { scribeAction: a.c }
@@ -2578,7 +2578,7 @@
         v = n('P1r1'),
         E = n('hqKg'),
         w = n('uD2z'),
-        O = n('RqPI'),
+        O = n('li/m'),
         S = n('G6rE'),
         _ = n('0KEI'),
         C = n('oEGd'),
@@ -2586,7 +2586,7 @@
           g.selectPreferencesFetchStatus,
           g.selectUserPreferences,
           v.g,
-          O.j,
+          O.d,
           function (e, t, n, r) {
             return { fetchStatus: e, personalizationString: Object(w.a)(t), settings: n, hasCommunityMemberships: r }
           },
