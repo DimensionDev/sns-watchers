@@ -34,8 +34,8 @@
             }
           }),
         O = n('v//M'),
-        S = n('3XMw'),
-        k = n.n(S),
+        k = n('3XMw'),
+        S = n.n(k),
         E = n('M2mT'),
         L = 'settingsDetailSave',
         _ = n('mw9i'),
@@ -63,7 +63,7 @@
           return p()(this, n)
         }
       }
-      var x = k.a.i2209530,
+      var x = S.a.i2209530,
         I = (function (t) {
           s()(n, t)
           var e = P(n)
@@ -133,24 +133,26 @@
                 value: function () {
                   var t = this.props,
                     e = t.loggedInUser,
-                    n = t.rightControl,
-                    r = t.screenType,
-                    o = t.secondaryBar,
-                    a = t.title,
-                    i = t.withBottomBorder,
-                    c = this.getBackLocation(),
-                    l = e ? '@'.concat(e.screen_name) : void 0
+                    n = t.onBackClick,
+                    r = t.rightControl,
+                    o = t.screenType,
+                    a = t.secondaryBar,
+                    i = t.title,
+                    c = t.withBottomBorder,
+                    l = this.getBackLocation(),
+                    u = e ? '@'.concat(e.screen_name) : void 0
                   return y.createElement(
                     E.a,
                     {
-                      backLocation: c,
-                      rightControl: n,
-                      screenType: r,
-                      secondaryBar: o,
+                      backLocation: l,
+                      onBackClick: n,
+                      rightControl: r,
+                      screenType: o,
+                      secondaryBar: a,
                       showSubtitleOnWideDetail: !1,
-                      subtitle: l,
-                      title: a,
-                      withBottomBorder: i,
+                      subtitle: u,
+                      title: i,
+                      withBottomBorder: c,
                     },
                     e ? this._renderWithFetchSettings() : this._render(),
                   )
@@ -209,8 +211,8 @@
         B = n('HPNB'),
         C = n('v6aA'),
         O = n('VAZu'),
-        S = n('wiP2'),
-        k = n('Es6L'),
+        k = n('wiP2'),
+        S = n('Es6L'),
         E = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('rHpw'))
       function L(t, e) {
         var n = Object.keys(t)
@@ -336,7 +338,7 @@
                 return g.createElement(
                   g.Fragment,
                   null,
-                  Object(k.a)() ? this._renderInlineNav({ isTwoColumnLayout: !1 }) : g.createElement(S.a.Configure, n),
+                  Object(S.a)() ? this._renderInlineNav({ isTwoColumnLayout: !1 }) : g.createElement(k.a.Configure, n),
                   e,
                 )
               },
@@ -378,7 +380,7 @@
                   b = o.secondaryBar,
                   B = o.showSubtitleOnRoot,
                   C = o.showSubtitleOnWideDetail,
-                  k = o.subtitle,
+                  S = o.subtitle,
                   E = o.title,
                   L = o.titleIconCell,
                   _ = o.titleIconCellSize,
@@ -405,7 +407,7 @@
                       onBackClick: h,
                       rightControl: m,
                       secondaryBar: n ? b : null,
-                      subtitle: H ? k : void 0,
+                      subtitle: H ? S : void 0,
                       title: E,
                       titleDomId: U,
                       titleIconCell: L,
@@ -416,7 +418,7 @@
                   W =
                     F || (A && P)
                       ? null
-                      : g.createElement(S.a.Configure, {
+                      : g.createElement(k.a.Configure, {
                           SideNavButton: a,
                           TabBar: i,
                           TeamsSwitcher: c,
@@ -427,7 +429,7 @@
                           onBackClick: h,
                           rightControl: m,
                           searchBoxOptions: y,
-                          subtitle: k,
+                          subtitle: S,
                           title: E,
                           withSearchBox: x,
                           withTweetButton: I,
@@ -468,8 +470,8 @@
         B = n('7FtF'),
         C = n('MWbm'),
         O = n('Irs7'),
-        S = n('t62R'),
-        k = n('csss'),
+        k = n('t62R'),
+        S = n('csss'),
         E = n('rHpw')
       function L(t) {
         var e = (function () {
@@ -525,7 +527,7 @@
                     y.createElement(
                       C.a,
                       { style: I.itemContainer },
-                      y.createElement(S.b, { color: 'gray700', size: 'subtext2' }, R),
+                      y.createElement(k.b, { color: 'gray700', size: 'subtext2' }, R),
                     ),
                     this._appStoreUrls.map(function (e, n) {
                       var r = e.matches,
@@ -534,7 +536,7 @@
                         i = e.webUrl
                       return t._renderAppStoreLink(r() ? a : i, P[o], n)
                     }),
-                    y.createElement(k.a, {
+                    y.createElement(S.a, {
                       key: 'other',
                       label: T,
                       link: { external: !0, pathname: 'https://help.twitter.com/using-twitter#twitter-on-your-device' },
@@ -547,7 +549,7 @@
                 key: '_renderAppStoreLink',
                 value: function (t, e) {
                   var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0
-                  return y.createElement(k.a, {
+                  return y.createElement(S.a, {
                     key: n,
                     label: e,
                     link: { external: !0, pathname: ''.concat(D, '?$fallback_url=').concat(t) },

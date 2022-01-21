@@ -2784,27 +2784,27 @@
                       o.createElement(hn.c, { exact: !0, path: '/intent/user' }, o.createElement(Yn, a()({}, p, f))),
                       o.createElement(
                         hn.c,
-                        { exact: !0, path: '/'.concat($r.H) },
+                        { exact: !0, path: '/'.concat($r.I) },
                         o.createElement(Yn, a()({}, p, f, { onEntriesRendered: this._handleEntriesRendered })),
                       ),
                       o.createElement(
                         hn.c,
-                        { exact: !0, path: '/'.concat($r.H, '/').concat(ta) },
+                        { exact: !0, path: '/'.concat($r.I, '/').concat(ta) },
                         o.createElement(Yn, a()({}, p, f, { mode: 'with_replies' })),
                       ),
                       o.createElement(
                         hn.c,
-                        { exact: !0, path: '/'.concat($r.H, '/').concat(ea) },
+                        { exact: !0, path: '/'.concat($r.I, '/').concat(ea) },
                         o.createElement(Yn, a()({}, p, f, { mode: 'superfollows' })),
                       ),
                       o.createElement(
                         hn.c,
-                        { exact: !0, path: '/'.concat($r.H, '/').concat(Xn) },
+                        { exact: !0, path: '/'.concat($r.I, '/').concat(Xn) },
                         o.createElement(Kn, p),
                       ),
                       o.createElement(
                         hn.c,
-                        { exact: !0, path: '/'.concat($r.H, '/(').concat(Qn, '|').concat(Zn, ')') },
+                        { exact: !0, path: '/'.concat($r.I, '/(').concat(Qn, '|').concat(Zn, ')') },
                         o.createElement(Jn, p),
                       ),
                     ),

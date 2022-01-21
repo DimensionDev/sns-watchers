@@ -719,6 +719,7 @@
                       onTouchMove: a ? this._handleTouchMove : void 0,
                       onTouchStart: a ? this._handleTouchStart : void 0,
                       style: r,
+                      testID: 'swipe-to-dismiss',
                     },
                     t,
                   )

@@ -364,7 +364,7 @@
             return {
               communitiesActions: t,
               acceptedFollowerCount: a.length,
-              hasCommunityMemberships: Boolean(r),
+              hasCommunityMemberships: r,
               loggedInUser: n,
               pendingFollowerCount: l.length - a.length,
               settings: i,

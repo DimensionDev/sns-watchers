@@ -542,7 +542,7 @@
               o = e.tokens,
               r = s()(e, ['rounded_score', 'tokens']),
               a = r.topic_type || H.b.Event,
-              i = null == r || null === (t = r.url) || void 0 === t ? void 0 : t.match(L.z.id)
+              i = null == r || null === (t = r.url) || void 0 === t ? void 0 : t.match(L.A.id)
             return { id: (null == i ? void 0 : i[0]) || '', type: a, tokens: o, rounded_score: n, data: r }
           })
         },

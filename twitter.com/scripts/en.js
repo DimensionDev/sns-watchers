@@ -886,6 +886,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a2e7377e', function (e) {
             return 'Removed from ' + e.bookmarkFolderName
           }),
+          a('ja44c3a6', 'Keep it up! You found your first like'),
           a('ba370e34', 'Tweet liked'),
           a('d9034c72', 'Tweet unliked'),
           a('e518bc7a', 'Reaction added'),
@@ -1145,9 +1146,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Dismiss ' + e.topicName + ' Topic'
           }),
           a('c837fca9', 'Show more replies'),
-          a('d228a9a0', 'Show more'),
-          a('cf433585', 'Introducing')
-        a('a603e958', 'Reply downvotes'),
+          a('d228a9a0', 'Show more')
+        a('cf433585', 'Introducing'),
+          a('a603e958', 'Reply downvotes'),
           a('f2be4e37', 'Tap to downvote'),
           a('aa4b7c32', 'See a reply that isn’t adding to the conversation? Let us know by downvoting.'),
           a('df15f9c2', 'Help make Twitter better'),
@@ -1627,17 +1628,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i26425d8', 'Somewhat'),
           a('e2988ed0', 'How can we improve the note rating experience?'),
           a('d2ae3d42', 'About Birdwatch ratings'),
-          a('c01f8d12', 'Ok, I understand'),
-          a('e21a6afe', 'Cancel my rating'),
-          a('d57ed9c7', 'Thank you — your ratings mean a lot'),
+          a('c4e0c730', 'I understand'),
+          a('b1ea3365', 'Thank you — here’s what else you need to know'),
           a(
-            'b165ae7b',
-            'By rating, you’re part of making sure that notes shown on Tweets are helpful to people with varying points of view.',
+            'h1a9d37a',
+            'By rating, you’re helping ensure that notes shown on Tweets are useful to people with varying points of view.',
           ),
           a('ac7f9745', 'What was helpful about it?'),
           a('c7751803', 'What was unhelpful about it?'),
-          a('e0440086', 'Ratings are anonymous but publicly available, '),
-          a('e30eecce', 'how Birdwatch shares data.'),
+          a('iedb2fc7', 'Ratings are anonymized and made publicly available for transparency — '),
+          a('cd24d5f5', 'available to the public'),
           a('f2ceaed4', 'Helpful'),
           a('i7d91dc8', 'Somewhat Helpful'),
           a('c206a60f', 'Not Helpful'),
@@ -2152,6 +2152,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i0dd9b9d', 'Muted words'),
           a('d299431b', 'Monetization'),
           a('ab1f7eef', 'Change your password'),
+          a('e731db59', 'Password reset'),
           a('j95edf76', 'Security'),
           a('f8645654', 'Security and account access'),
           a('ae72d4c4', 'Apps and sessions'),
@@ -2204,7 +2205,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bdfa2b8c', 'Additional resources'),
           a('df483b47', 'Feature switches'),
           a('e435cdff', 'Try searching for password reset, notifications, etc'),
-          a('ae3d6086', 'No settings found'),
+          a('c170a564', 'The term you entered did not bring up any results. Try a different search term.'),
           a('ba8f6f81', 'Search Settings'),
           a('dae57a41', 'Allow all'),
           a('i7cbc154', 'Allow some'),
@@ -2226,12 +2227,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e8c72272', 'Increase color contrast'),
           a('dba2cdd1', 'Improves legibility by increasing the contrast between text and background colors.'),
           a('d070244e', 'Reduce motion'),
-          a('icfa5e8b', 'Limits the amount of in-app animations, including live engagement counts.'),
-          a(
-            'ae41b002',
-            'Limits the amount of in-app animations, including live engagement counts. Your system is currently signaling to reduce motion. If you would like to re-enable motion, first disable it there.',
-          )
-        a('e82b294e', 'Prompt me to add image descriptions'),
+          a('icfa5e8b', 'Limits the amount of in-app animations, including live engagement counts.')
+        a(
+          'ae41b002',
+          'Limits the amount of in-app animations, including live engagement counts. Your system is currently signaling to reduce motion. If you would like to re-enable motion, first disable it there.',
+        ),
+          a('e82b294e', 'Prompt me to add image descriptions'),
           a('ea284ab8', 'Get a reminder when you Tweet media without descriptions.'),
           a('g1888dc1', 'Never'),
           a('f724d1a9', 'Only on Wi-Fi'),
@@ -2527,6 +2528,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d5dedb7a', 'Learn more'),
           a('ab604a66', 'Learn more'),
           a('i532d121', 'Learn more'),
+          a('f22a6d0c', 'Learn more'),
           a('i78c9fd3', 'Learn more'),
           a('i78b0bd0', 'Learn more'),
           a('i78103dc', 'Learn more'),
@@ -3504,12 +3506,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'f62d1d9d',
             'Your archive is ready for you to download and view using your desktop browser. Keep in mind, you need to download this data before it expires in a few days.',
           ),
-          a('b221ca4b', 'We’ll let you know when your data is ready to download'),
-          a('c9c1ebbb', 'complete this form'),
-          a(
-            'a3f22d8d',
-            'Select the kinds of notifications you get about your activities, interests, and recommendations.',
-          )
+          a('b221ca4b', 'We’ll let you know when your data is ready to download')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3526,7 +3523,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('i647fb03', 'Filters'),
+        a('c9c1ebbb', 'complete this form'),
+          a(
+            'a3f22d8d',
+            'Select the kinds of notifications you get about your activities, interests, and recommendations.',
+          ),
+          a('i647fb03', 'Filters'),
           a('ef1b5cbb', 'Choose the notifications you’d like to see — and those you don’t.'),
           a('bcd81cab', 'Preferences'),
           a('da867c58', 'Select your preferences by notification type.'),
@@ -3849,29 +3851,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g743ef96', 'Stay tuned for more ways to create and share peak content.'),
           a('d0fc4890', 'One more thing...'),
           a('c64384b6', 'Complete your profile before submitting your Super Follows application.'),
-          a('e873f0ae', 'Apply for Super Follows'),
-          a(
-            'f095a24a',
-            'Tell us more about who you are, what you love, and why your followers keep coming back for more.',
-          ),
           a('f7997b16', 'Content categories'),
+          a('fc00ab5b', 'What kind of content do you create?'),
+          a('c249167f', 'Tell us about your content.'),
           a('c144fa52', 'What kind of content do you create? Select all that apply.'),
-          a('f1bf337d', 'Select categories'),
-          a('da8ea7da', 'Content platforms'),
-          a('d4062c9a', 'Where do you share content? Select all that apply.'),
-          a('e963d587', 'Select platforms'),
-          a('ede0ac3e', 'Planned usage'),
-          a('ffb6cb88', 'How do you plan to use Super Follows?'),
-          a('b2159e8e', 'Tell us how you plan to use Super Follows and what kind of content you’d like to share.'),
-          a('feacb49d', 'About you'),
-          a(
-            'je17c987',
-            'If you provide us with this optional demographic information, we’ll only use it to analyze the diversity of Super Follows participants.',
-          ),
-          a('d94a9a17', 'Ethnicity'),
-          a('gfc80842', 'Submit application'),
-          a('f4f4dd6f', 'Required'),
-          a('f448cbcb', 'Optional'),
           a('b1f2e8ce', 'Activist'),
           a('jfec3aa0', 'Adult content'),
           a('e08a6e6f', 'Animals'),
@@ -3900,8 +3883,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fc64990d', 'Video'),
           a('hb5f1d64', 'Writing'),
           a('bd44a8a8', 'Tell us more'),
-          a('fc00ab5b', 'What kind of content do you create?'),
-          a('c249167f', 'Tell us about your content.'),
+          a('d94a9a17', 'Ethnicity'),
           a('a35394b3', 'Select all that apply.'),
           a('e375c2df', 'Black'),
           a('gf30371a', 'Hispanic/Latinx'),
@@ -3919,14 +3901,44 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b3af7344', 'Transgender'),
           a('he3f1435', 'Two Spirit'),
           a('c3c16abb', 'My gender identity isn’t on this list'),
+          a('da8ea7da', 'Content platforms'),
+          a('d7081f91', 'What platforms do you use?'),
+          a('j349548f', 'Tell us about the platforms you use to share your content.'),
+          a('d4062c9a', 'Where do you share content? Select all that apply.'),
           a('a3021317', 'Facebook'),
           a('eb4a600d', 'OnlyFans'),
           a('d4d74bb3', 'Patreon'),
           a('fc738909', 'Substack'),
           a('d8552c1a', 'Twitch'),
           a('ca07aa46', 'YouTube'),
-          a('d7081f91', 'What platforms do you use?'),
-          a('j349548f', 'Tell us about the platforms you use to share your content.'),
+          a('e873f0ae', 'Apply for Super Follows'),
+          a(
+            'f095a24a',
+            'Tell us more about who you are, what you love, and why your followers keep coming back for more.',
+          ),
+          a('f1bf337d', 'Select categories'),
+          a('e963d587', 'Select platforms'),
+          a('ede0ac3e', 'Planned usage'),
+          a('ffb6cb88', 'How do you plan to use Super Follows?'),
+          a('b2159e8e', 'Tell us how you plan to use Super Follows and what kind of content you’d like to share.'),
+          a('feacb49d', 'About you'),
+          a(
+            'je17c987',
+            'If you provide us with this optional demographic information, we’ll only use it to analyze the diversity of Super Follows participants.',
+          ),
+          a('gfc80842', 'Submit application'),
+          a('f4f4dd6f', 'Required'),
+          a('f448cbcb', 'Optional'),
+          a('j3253319', 'Take a minute to say hello'),
+          a('h1e80993', 'Make a good first impression with a quick intro message for your potential Super Followers.'),
+          a('dc71aee7', 'Support your favorite people on Twitter for bonus content and extra perks.'),
+          a('a4ed9071', 'Add an introduction...'),
+          a('ab793af9', 'Super Follower preview'),
+          a('fb278c81', 'What’s this preview?'),
+          a(
+            'e6b60e94',
+            'This is what people see before they Super Follow you. Tweak and edit your descriptions until you’ve got them just right.',
+          ),
           a('b4a93a91', 'Super Follows Benefits'),
           a('c0348963', 'Introduction'),
           a('ea4c3496', 'VIP status'),
@@ -3974,26 +3986,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'a15b98ec',
             'Nothing to change or edit here. All of your Super Followers will automatically get a public badge when they subscribe.',
           ),
-          a('ab793af9', 'Super Follower preview'),
-          a('fb278c81', 'What’s this preview?'),
-          a(
-            'e6b60e94',
-            'This is what people see before they Super Follow you. Tweak and edit your descriptions until you’ve got them just right.',
-          ),
           a('d94d5707', 'Perks setup'),
           a('iba08a94', 'How does everything look?'),
           a(
             'aa6db82c',
             'Check your descriptions before continuing. You’ll need to contact Twitter Support to make changes during the Super Follows test period.',
           ),
-          a('d80af370', '2 of 3'),
-          a('gf32cca1', 'Describe the perks you’ll offer'),
-          a(
-            'j8ba99b3',
-            'Give people a taste of what they’re in for each month with a quick summary of the bonus content you’ll share.',
-          ),
-          a('a329ce87', 'Add a description...'),
-          a('be76dc33', 'Add description'),
           a('ebfb897c', 'Examples'),
           a('dc4feb19', 'Not sure what to say?'),
           a(
@@ -4009,12 +4007,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'h580543e',
             'Get ready for a VIP experience. Think: subscriber-only content like polls, videos, and deals.',
           ),
-          a('ef08a890', '1 of 3'),
-          a('j3253319', 'Take a minute to say hello'),
-          a('h1e80993', 'Make a good first impression with a quick intro message for your potential Super Followers.'),
-          a('b16680ff', 'Add intro'),
-          a('dc71aee7', 'Support your favorite people on Twitter for bonus content and extra perks.'),
-          a('a4ed9071', 'Add an introduction...'),
+          a('d80af370', '2 of 3'),
+          a('gf32cca1', 'Describe the perks you’ll offer'),
+          a(
+            'j8ba99b3',
+            'Give people a taste of what they’re in for each month with a quick summary of the bonus content you’ll share.',
+          ),
+          a('a329ce87', 'Add a description...'),
+          a('be76dc33', 'Add description'),
           a(
             'a0bb2076',
             'Keep your intro short and sweet, you’ll be able to describe your content later. Here are a few examples to help get you started.',
@@ -4028,6 +4028,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'What’s up everyone? Thanks for checking out my Super Follows subscription. I think you’ll like what I have in store for you.',
           ),
           a('hbe4f99e', 'Hey there! Can’t wait to share some top secret content and get to know you even better :)'),
+          a('ef08a890', '1 of 3'),
+          a('b16680ff', 'Add intro'),
           a('ea8a3d2d', 'Pricing setup'),
           a('ic9124bf', 'Choose what your Super Followers pay'),
           a('g5923869', function (e) {
@@ -4708,12 +4710,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('e241095e', 'Your Topics'),
           a('f8bc75e2', 'your Topics'),
-          a('ed827af6', 'Topic is unavailable.'),
-          a('d094c720', 'All Topics'),
-          a('f68f0fc7', 'Twitter Topics')
-        a('ieb6f5c1', function (e) {
-          return e.topicName + ' | Twitter Topics'
-        }),
+          a('ed827af6', 'Topic is unavailable.')
+        a('d094c720', 'All Topics'),
+          a('f68f0fc7', 'Twitter Topics'),
+          a('ieb6f5c1', function (e) {
+            return e.topicName + ' | Twitter Topics'
+          }),
           a(
             'd848d612',
             'Follow Topics on Twitter. Topics let you see Tweets from a number of accounts that are experts or just fans of different topics on Twitter.',
@@ -4744,6 +4746,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i976aff3', 'Update daily budget info to match your billing currency.'),
           a('e5fe61ef', 'Impressions'),
           a('f6162a32', 'Times this Tweet was seen on Twitter'),
+          a('dbe9353d', 'Engagements'),
+          a(
+            'e044b63f',
+            'Total number of times a user has interacted with a Tweet. This includes all clicks anywhere on the Tweet (including hashtags, links, avatar, username, and Tweet expansion), retweets, replies, follows, and likes.',
+          ),
           a('d8abdaa4', 'New followers'),
           a('de0de3a7', 'Follows gained directly from this Tweet'),
           a('aeee0181', 'Profile visits'),
@@ -4752,6 +4759,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i680442e', 'Number of clicks on any video in this Tweet'),
           a('d5f1e553', 'Link clicks'),
           a('d24b7811', 'Number of clicks on any URL in this Tweet'),
+          a('b40d33e4', 'Detail expands'),
+          a('ee547382', 'Times people viewed the details about this Tweet'),
           a('g33fd6b0', function (e) {
             return e.percentage + ' from promotion'
           }),
@@ -4839,13 +4848,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ce309bed', 'Metro'),
           a('c6c16a51', 'City'),
           a('cc49d03f', 'Postcode'),
-          a('dbe9353d', 'Engagements'),
           a('c64974fb', 'Followers'),
           a('i638f89c', 'Website visits'),
           a('e1bca506', 'Your promoted Tweet is under review'),
           a('e4a4c608', 'Check back soon.'),
           a('db841200', 'Boost engagement, reach more people, and spread the word about your page.'),
           a('hc67be9d', 'Get Started'),
+          a('gdb4ffae', 'Your first Quick Promote ad is on us!'),
+          a('a1228fee', function (e) {
+            return 'Get started now and get ' + e.couponAmount + ' off your first promotion before March 31st, 2022.'
+          }),
           a('fcc839b5', 'What’s your goal?'),
           a('d80964aa', 'Increase engagement'),
           a('d4f57cce', 'Grow your followers'),
@@ -5587,15 +5599,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('h9b3104d', 'Video Settings'),
           a('ccc97152', 'Playback speed'),
-          a('cd6e0e5f', 'Press the speed you would like to watch the video in.'),
-          a('a0551d36', '0.25x speed'),
-          a('if8ee0cd', '0.5x speed'),
-          a('e4347df3', '0.75x speed'),
-          a('e14d60ca', '1x speed'),
-          a('bf7aa0dd', '1.25x speed'),
-          a('j2476269', '1.5x speed'),
-          a('d6a09fad', '1.75x speed'),
-          a('e2457653', '2x speed'),
+          a('e8b5757c', '0.25x'),
+          a('e7e954de', '0.5x'),
+          a('g07ffe66', '0.75x'),
+          a('d8bede9d', '1x'),
+          a('j41845c7', '1.25x'),
+          a('e9eeed9e', '1.5x'),
+          a('fe45dc83', '1.75x'),
+          a('e791190a', '2x'),
           a('b3160a69', function (e) {
             return e.volumePercent + ' percent'
           }),
@@ -5977,8 +5988,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cfd13f46', 'Voice Dock')
         var c = o('ERkP'),
           s = [],
-          d = {}
-        function u(e) {
+          u = {}
+        function d(e) {
           return e
         }
         var f = (function (e) {
@@ -6778,9 +6789,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'ca2f5036',
+                key: 'ab4d390f',
                 get: function () {
-                  return ['', 'even if your account is protected. Find out ']
+                  return ['', 'even if your account is protected. Find out how Birdwatch makes data ', '.']
                 },
               },
               {
@@ -7330,6 +7341,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 get: function () {
                   return [
                     'Individuals in professional sports must compete in verified sports leagues and events to be verified. Provide a link to the verified team, league, event, or organization relevant to your account.',
+                  ]
+                },
+              },
+              {
+                key: 'iba551d5',
+                get: function () {
+                  return [
+                    'You have not met the minimum follower threshold for your region that is required to be verified as an individual in gaming. ',
                   ]
                 },
               },
@@ -8388,7 +8407,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 get: function () {
                   var e,
                     t = c.Children.toArray(this.props.children),
-                    o = ((e = this.props.$i18n), s[d[e]] || u)
+                    o = ((e = this.props.$i18n), s[u[e]] || d)
                   return function (e, a, n) {
                     return e.concat(a, t[o(n)])
                   }

@@ -1092,6 +1092,7 @@
                       onTouchMove: i ? this._handleTouchMove : void 0,
                       onTouchStart: i ? this._handleTouchStart : void 0,
                       style: a,
+                      testID: 'swipe-to-dismiss',
                     },
                     t,
                   )
@@ -12687,15 +12688,17 @@
               v()(s()(i), '_determineMode', function (e) {
                 var t,
                   n,
-                  r = e.tweetAttachment || !!e.initialMessage
+                  r = i.context.featureSwitches,
+                  a = e.tweetAttachment || !!e.initialMessage
                 return null !== (t = i.props.location) &&
                   void 0 !== t &&
                   null !== (n = t.state) &&
                   void 0 !== n &&
                   n.isNewGroup
                   ? Me.CREATE_GROUP
-                  : r
-                  ? i.context.featureSwitches.isTrue('dm_share_sheet_send_individually_enabled')
+                  : a
+                  ? r.isTrue('dm_share_sheet_send_individually_enabled') &&
+                    r.isTrue('direct_messages_incremental_holdback_2022h1')
                     ? Me.SHARE_TWEET_INDIVIDUALLY
                     : Me.SHARE_TWEET
                   : Me.COMPOSE_MESSAGE
@@ -17873,7 +17876,7 @@
             l = e.renderInboxItem,
             u = e.searchTerm,
             d = Object(en.c)(),
-            p = Object(rn.a)(er, { query: u }, nr),
+            p = Object(rn.a)(er, { query: u }),
             f = p.data,
             h = p.fetchNext,
             m = p.hasNext,

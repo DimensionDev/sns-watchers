@@ -3836,10 +3836,10 @@
         We = H.a.e2988ed0,
         Ue = H.a.c1a50438,
         Ke = H.a.d2ae3d42,
-        Ve = H.a.c01f8d12,
-        Xe = H.a.e21a6afe,
-        Ge = H.a.d57ed9c7,
-        qe = H.a.b165ae7b,
+        Ve = H.a.c4e0c730,
+        Xe = H.a.cfd2f35d,
+        Ge = H.a.b1ea3365,
+        qe = H.a.h1a9d37a,
         Ze = E.createElement(L.b, { weight: 'bold' }),
         Qe = E.createElement(L.b, {
           link: 'https://twitter.github.io/birdwatch/about/overview/#transparency-and-visibility',
@@ -3848,9 +3848,9 @@
         }),
         Ye = E.createElement(
           H.a.I18NFormatMessage,
-          { $i18n: 'ca2f5036' },
-          E.cloneElement(Ze, null, H.a.e0440086),
-          E.cloneElement(Qe, null, H.a.e30eecce),
+          { $i18n: 'ab4d390f' },
+          E.cloneElement(Ze, null, H.a.iedb2fc7),
+          E.cloneElement(Qe, null, H.a.cd24d5f5),
         ),
         Je = E.createElement(L.b, { weight: 'bold' }),
         $e = E.createElement(L.b, { weight: 'bold' }),
@@ -3875,6 +3875,7 @@
               paddingTop: e.spaces.space4,
               paddingRight: e.spaces.space20,
             },
+            anonymousCrowdText: { display: 'inline' },
             infoItemContainer: { paddingHorizontal: 0 },
             root: {
               backgroundColor: e.colors.gray0,
@@ -3891,7 +3892,11 @@
           containerStyle: rt.infoItemContainer,
           items: [
             { label: '', decoration: E.createElement(Pe.a, { style: rt.iconDataPrivacy }), description: qe },
-            { label: '', decoration: E.createElement(Le.a, { style: rt.iconDataPrivacy }), description: Ye },
+            {
+              label: '',
+              decoration: E.createElement(Le.a, { style: rt.iconDataPrivacy }),
+              description: E.createElement(P.a, { style: rt.anonymousCrowdText }, Ye),
+            },
           ],
         },
         ct = Se(function (e) {

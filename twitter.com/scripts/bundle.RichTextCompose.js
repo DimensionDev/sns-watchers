@@ -2065,7 +2065,7 @@
           }),
         Me = n('4zmP'),
         Fe = F.a.g46f363d,
-        Be = { viewType: 'community_rule_education' }
+        Be = { viewType: 'rule_education' }
       var Le = j.a.create(function (e) {
           return { container: { marginBottom: e.spaces.space8 } }
         }),

@@ -302,6 +302,7 @@
           ENTERTAINMENT_PRODUCTION_ORGANIZATION_STOCK_EXCHANGE: 'ENTERTAINMENT_PRODUCTION_ORGANIZATION_STOCK_EXCHANGE',
           ENTERTAINMENT_PRODUCTION_ORGANIZATION_WIKIPEDIA: 'ENTERTAINMENT_PRODUCTION_ORGANIZATION_WIKIPEDIA',
           ENTERTAINMENT_QUALIFICATIONS: 'ENTERTAINMENT_QUALIFICATIONS',
+          GAMING_INDIVIDUAL_INELIGIBLE: 'GAMING_INDIVIDUAL_INELIGIBLE',
           GAMING_INDIVIDUAL_NEWS_REFERENCE_URLS: 'GAMING_INDIVIDUAL_NEWS_REFERENCE_URLS',
           GAMING_INDIVIDUAL_NOTABILITY_METHOD: 'GAMING_INDIVIDUAL_NOTABILITY_METHOD',
           GAMING_INDIVIDUAL_SCREENNAME_CONFIRM: 'GAMING_INDIVIDUAL_SCREENNAME_CONFIRM',
@@ -561,6 +562,7 @@
             next: S.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
             scribeComponent: m.NOTABILITY_INPUT,
           }),
+          r()(n, S.GAMING_INDIVIDUAL_INELIGIBLE, { next: null, scribeComponent: null }),
           r()(n, S.SPORTS_ENTITY_GOOGLE_TRENDS, { next: null, scribeComponent: m.NOTABILITY_INPUT }),
           r()(n, S.SPORTS_ENTITY_NEWS_REFERENCE, {
             next: S.AUTHENTICITY_TYPE_SELECT,
@@ -830,10 +832,10 @@
           return ge
         }),
         a.d(t, 'a', function () {
-          return Ye
+          return Ge
         }),
         a.d(t, 'c', function () {
-          return Ge
+          return Ye
         }),
         a.d(t, 'd', function () {
           return xe
@@ -954,8 +956,8 @@
         M = 'rweb/accountVerification/SET_AUTHENTICITY_DATA',
         P = 'rweb/accountVerification/SET_AUTHENTICITY_TYPE',
         g = 'rweb/accountVerification/SET_BACK_ID',
-        Y = 'rweb/accountVerification/SET_FRONT_ID',
-        G = 'rweb/accountVerification/SET_ID_COUNTRY',
+        G = 'rweb/accountVerification/SET_FRONT_ID',
+        Y = 'rweb/accountVerification/SET_ID_COUNTRY',
         x = 'rweb/accountVerification/SET_ID_TYPE',
         B = 'rweb/accountVerification/SET_NEXT_FLOW',
         V = 'rweb/accountVerification/SET_NOTABILITY_CATEGORY',
@@ -1309,9 +1311,9 @@
               )
             case g:
               return O(O({}, i), {}, { backID: r.payload })
-            case Y:
-              return O(O({}, i), {}, { frontID: r.payload })
             case G:
+              return O(O({}, i), {}, { frontID: r.payload })
+            case Y:
               if (r.payload)
                 return O(
                   O({}, i),
@@ -1551,10 +1553,10 @@
             a.api
             var n = t(),
               i = ne(n)
-            return i !== T.a.LOADING && i !== T.a.LOADED ? e(Ye()) : Promise.resolve()
+            return i !== T.a.LOADING && i !== T.a.LOADED ? e(Ge()) : Promise.resolve()
           }
         },
-        Ye = function () {
+        Ge = function () {
           return function (e, t, a) {
             var n = a.api
             return Object(E.b)(e, { request: n.AccountVerification.fetchAccess })({
@@ -1563,7 +1565,7 @@
             })
           }
         },
-        Ge = function () {
+        Ye = function () {
           return function (e, t, a) {
             a.api
             var n = t(),
@@ -1636,13 +1638,13 @@
         We = function (e) {
           return function (t, a, n) {
             n.api
-            t({ type: Y, payload: e })
+            t({ type: G, payload: e })
           }
         },
         ke = function (e, t) {
           return function (a, n, i) {
             i.api
-            a({ type: G, payload: { countryCode: e, countryName: t } })
+            a({ type: Y, payload: { countryCode: e, countryName: t } })
           }
         },
         je = function (e, t) {
@@ -2073,10 +2075,10 @@
       'use strict'
       a.r(t),
         a.d(t, 'renderNullHeader', function () {
-          return RE
+          return mE
         }),
         a.d(t, 'AccountVerification', function () {
-          return fE
+          return SE
         })
       a('OZaJ'), a('+KXO'), a('1t7P'), a('LW0h'), a('daRM'), a('jwue'), a('+oxZ'), a('FtHn')
       var n,
@@ -2159,8 +2161,8 @@
             withCloseButton: !1,
           })
         },
-        Y = a('ddV6'),
-        G = a.n(Y),
+        G = a('ddV6'),
+        Y = a.n(G),
         x = (a('Ysgh'), a('KqXw'), a('z84I'), a('MvUL'), a('7xRU'), a('iKE+'), a('DZ+c'), a('+/5o')),
         B = a('rHpw'),
         V = B.a.create(function (e) {
@@ -2246,7 +2248,7 @@
             c ||
             (function (e) {
               var t = e.split('@'),
-                a = G()(t, 2)[1],
+                a = Y()(t, 2)[1],
                 n = Object(j.a)(Object(H.a)(X))
                   .filter(function (e) {
                     return e
@@ -2498,8 +2500,8 @@
         Me = f.a.d6fb5877,
         Pe = f.a.b72f97cc,
         ge = f.a.b2ab6008,
-        Ye = f.a.c1df579e,
-        Ge = function (e, t) {
+        Ge = f.a.c1df579e,
+        Ye = function (e, t) {
           return e && t ? e[t].country : Me
         },
         xe = function (e, t, a) {
@@ -2522,12 +2524,12 @@
                 style: V.buttonFixed,
                 type: 'brandFilled',
               },
-              Ye,
+              Ge,
             ),
             description: Ue,
             isNarrow: i,
             items: [
-              { description: Ge(t, a), label: ve, nextStep: L.h.ID_COUNTRY_SELECT },
+              { description: Ye(t, a), label: ve, nextStep: L.h.ID_COUNTRY_SELECT },
               { description: xe(t, a, n), disabled: !a, label: Pe, nextStep: L.h.ID_TYPE_SELECT },
             ],
             title: Fe,
@@ -2541,7 +2543,7 @@
             a = e.isNarrow,
             n = e.onCountryClick,
             i = A.useState(new RegExp('', 'i')),
-            r = G()(i, 2),
+            r = Y()(i, 2),
             o = r[0],
             l = r[1],
             c = A.useMemo(
@@ -2837,7 +2839,7 @@
           }
           return {
             verification_application_details: (I = Object.entries(I).reduce(function (e, t) {
-              var a = G()(t, 2),
+              var a = Y()(t, 2),
                 n = a[0],
                 i = a[1]
               return void 0 === i || (e[n] = i), e
@@ -2927,7 +2929,7 @@
                   t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
                   a = {},
                   n = e.slice(-1),
-                  i = G()(n, 1)[0],
+                  i = Y()(n, 1)[0],
                   r = void 0 === i ? {} : i
                 return (
                   t.length
@@ -2943,23 +2945,23 @@
                 )
               })(N, T),
             ),
-            S = G()(m, 2),
+            S = Y()(m, 2),
             L = S[0],
             y = S[1],
             h = A.useState(!1),
-            D = G()(h, 2),
+            D = Y()(h, 2),
             F = D[0],
             U = D[1],
             v = A.useState(!1),
-            M = G()(v, 2),
+            M = Y()(v, 2),
             P = M[0],
             g = M[1],
-            Y = A.useState(!0),
-            B = G()(Y, 2),
+            G = A.useState(!0),
+            B = Y()(G, 2),
             j = B[0],
             K = B[1],
             q = A.useState(null),
-            z = G()(q, 2),
+            z = Y()(q, 2),
             Q = z[0],
             $ = z[1],
             Z = N.length
@@ -3186,8 +3188,8 @@
         Mt = f.a.a68b43ed,
         Pt = f.a.b5e3039f,
         gt = f.a.h146703d,
-        Yt = f.a.ee38d0f0,
-        Gt = f.a.cb97ee3e,
+        Gt = f.a.ee38d0f0,
+        Yt = f.a.cb97ee3e,
         xt = f.a.hc371f34,
         Bt = f.a.b9d0ad9f,
         Vt = f.a.ge137dce,
@@ -3222,7 +3224,7 @@
           return { title: kt, description: e, articleLabelGenerator: qt, addFieldText: Lt }
         },
         Ea = function (e) {
-          return { title: Gt, description: e, label: gt }
+          return { title: Yt, description: e, label: gt }
         },
         sa = function (e) {
           return { title: $t, description: e, label: Zt }
@@ -3279,7 +3281,7 @@
           notEligibleTitle: na,
           items: [
             { helpText: vt, label: Ut },
-            { helpText: Yt, label: gt },
+            { helpText: Gt, label: gt },
             { helpText: ya, label: xt },
             { helpText: ha, label: Jt },
           ],
@@ -3297,12 +3299,12 @@
         ),
         Pa = Ea(Ma),
         ga = { title: Wt, description: Kt, articleLabelGenerator: qt, addFieldText: Lt },
-        Ya = A.createElement(
+        Ga = A.createElement(
           f.a.I18NFormatMessage,
           { $i18n: 'ie26d72d' },
           A.createElement(W.b, { link: St }, f.a.ccadfc84),
         ),
-        Ga = { title: ta, description: Ya, label: aa, confirmationText: ea },
+        Ya = { title: ta, description: Ga, label: aa, confirmationText: ea },
         xa = f.a.d2ea2049,
         Ba = f.a.h753ddd2,
         Va = {
@@ -3332,7 +3334,7 @@
           notEligibleTitle: na,
           items: [
             { helpText: vt, label: Ut },
-            { helpText: Yt, label: gt },
+            { helpText: Gt, label: gt },
             { helpText: Wa, label: xt },
           ],
         },
@@ -3371,7 +3373,7 @@
           description: tn,
           items: [
             { helpText: vt, label: Ut },
-            { helpText: Yt, label: gt },
+            { helpText: Gt, label: gt },
             { helpText: Qt, label: zt },
             { helpText: wt, label: xt },
           ],
@@ -3420,14 +3422,13 @@
             { helpText: Xt, label: Jt },
           ],
         },
-        pn = ca(
-          A.createElement(
-            f.a.I18NFormatMessage,
-            { $i18n: 'fce3e22d' },
-            A.createElement(W.b, { link: St }, f.a.h486f753),
-          ),
+        pn = A.createElement(
+          f.a.I18NFormatMessage,
+          { $i18n: 'fce3e22d' },
+          A.createElement(W.b, { link: St }, f.a.h486f753),
         ),
-        On = {
+        On = ca(pn),
+        bn = {
           title: yt,
           description: A.createElement(
             f.a.I18NFormatMessage,
@@ -3437,27 +3438,27 @@
           label: Jt,
           confirmationText: ea,
         },
-        bn = f.a.aa6228de,
-        An = f.a.d5b3cbc9,
-        Rn = f.a.b5a3e590,
-        fn = f.a.e484f794,
-        Cn = f.a.b8d8ea64,
-        mn = f.a.ff27db3c,
-        Sn = la(
+        An = f.a.aa6228de,
+        Rn = f.a.d5b3cbc9,
+        fn = f.a.b5a3e590,
+        Cn = f.a.e484f794,
+        mn = f.a.b8d8ea64,
+        Sn = f.a.ff27db3c,
+        Ln = la(
           A.createElement(
             f.a.I18NFormatMessage,
             { $i18n: 'e2465096' },
             A.createElement(W.b, { link: St }, f.a.jc7215cd),
           ),
         ),
-        Ln = ca(
+        yn = ca(
           A.createElement(
             f.a.I18NFormatMessage,
             { $i18n: 'g83bcecc' },
             A.createElement(W.b, { link: St }, f.a.gdb5ae61),
           ),
         ),
-        yn = {
+        hn = {
           title: ht,
           description: A.createElement(
             f.a.I18NFormatMessage,
@@ -3466,35 +3467,35 @@
           ),
           items: [
             { helpText: vt, label: Ut },
-            { helpText: Yt, label: gt },
+            { helpText: Gt, label: gt },
             { helpText: Qt, label: zt },
             { helpText: wt, label: xt },
           ],
         },
-        hn = sa(
+        Dn = sa(
           A.createElement(
             f.a.I18NFormatMessage,
             { $i18n: 'h74144bd' },
             A.createElement(W.b, { link: St }, f.a.af819831),
           ),
         ),
-        Dn = Ea(
+        Fn = Ea(
           A.createElement(
             f.a.I18NFormatMessage,
             { $i18n: 'jef5dfc5' },
             A.createElement(W.b, { link: St }, f.a.d35525bf),
           ),
         ),
-        Fn = {
+        Un = {
           title: fa,
           description: Ca,
           items: [
-            { helpText: An, label: bn },
-            { helpText: fn, label: Rn },
-            { helpText: mn, label: Cn },
+            { helpText: Rn, label: An },
+            { helpText: Cn, label: fn },
+            { helpText: Sn, label: mn },
           ],
         },
-        Un = {
+        vn = {
           title: ht,
           description: A.createElement(
             f.a.I18NFormatMessage,
@@ -3503,33 +3504,33 @@
           ),
           items: [
             { helpText: vt, label: Ut },
-            { helpText: Yt, label: gt },
+            { helpText: Gt, label: gt },
             { helpText: Qt, label: zt },
             { helpText: wt, label: xt },
           ],
         },
-        vn = la(
+        Mn = la(
           A.createElement(
             f.a.I18NFormatMessage,
             { $i18n: 'g2e175b1' },
             A.createElement(W.b, { link: St }, f.a.f6c3d3ff),
           ),
         ),
-        Mn = ca(
+        Pn = ca(
           A.createElement(
             f.a.I18NFormatMessage,
             { $i18n: 'efc369c2' },
             A.createElement(W.b, { link: St }, f.a.bad6af53),
           ),
         ),
-        Pn = sa(
+        gn = sa(
           A.createElement(
             f.a.I18NFormatMessage,
             { $i18n: 'ff03f07c' },
             A.createElement(W.b, { link: St }, f.a.af0cb1b5),
           ),
         ),
-        gn = Ea(
+        Gn = Ea(
           A.createElement(
             f.a.I18NFormatMessage,
             { $i18n: 'a3e9dde2' },
@@ -3541,61 +3542,61 @@
           { $i18n: 'c2b8fb3c' },
           A.createElement(W.b, { link: St }, f.a.bd70d5d0),
         ),
-        Gn = f.a.c0e57cb2,
-        xn = A.createElement(
+        xn = f.a.c0e57cb2,
+        Bn = A.createElement(
           f.a.I18NFormatMessage,
           { $i18n: 'da6e5b18' },
           A.createElement(W.b, { link: St }, f.a.h9ec0778),
         ),
-        Bn = f.a.f3c605b6,
-        Vn = {
+        Vn = f.a.f3c605b6,
+        wn = {
           title: ht,
           description: Yn,
           items: [
             { helpText: vt, label: Ut },
-            { helpText: Yt, label: gt },
+            { helpText: Gt, label: gt },
             { helpText: Vt, label: xt },
           ],
         },
-        wn = { title: Gn, description: xn, items: [{ label: Bn }] },
-        Wn = A.createElement(
+        Wn = { title: xn, description: Bn, items: [{ label: Vn }] },
+        kn = A.createElement(
           f.a.I18NFormatMessage,
           { $i18n: 'efd8f6e7' },
           A.createElement(W.b, { link: St }, f.a.j6ef6afa),
         ),
-        kn = { title: Mt, description: Wn, label: Pt },
-        jn = A.createElement(
+        jn = { title: Mt, description: kn, label: Pt },
+        Hn = A.createElement(
           f.a.I18NFormatMessage,
           { $i18n: 'bb47d2b9' },
           A.createElement(W.b, { link: St }, f.a.f7998564),
         ),
-        Hn = { title: Gt, description: jn, label: gt },
-        Kn = { title: Wt, description: Kt, articleLabelGenerator: qt, addFieldText: Lt },
-        qn = A.createElement(
+        Kn = { title: Yt, description: Hn, label: gt },
+        qn = { title: Wt, description: Kt, articleLabelGenerator: qt, addFieldText: Lt },
+        zn = A.createElement(
           f.a.I18NFormatMessage,
           { $i18n: 'db930fb2' },
           A.createElement(W.b, { link: St }, f.a.b4e93970),
         ),
-        zn = f.a.h042d1a5,
-        Qn = {
+        Qn = f.a.h042d1a5,
+        $n = {
           title: ht,
-          description: qn,
+          description: zn,
           items: [
-            { description: f.a.d2310f0b, label: zn },
+            { description: f.a.d2310f0b, label: Qn },
             { description: Vt, label: jt },
           ],
         },
-        $n = {
+        Zn = {
           title: f.a.ba04b4c1,
           description: A.createElement(
             f.a.I18NFormatMessage,
             { $i18n: 'dc263ec0' },
             A.createElement(W.b, { link: St }, f.a.jb3e663d),
           ),
-          label: zn,
+          label: Qn,
         },
-        Zn = { title: kt, description: Kt, articleLabelGenerator: qt, addFieldText: Lt },
-        Jn = {
+        Jn = { title: kt, description: Kt, articleLabelGenerator: qt, addFieldText: Lt },
+        Xn = {
           title: oa,
           description: A.createElement(
             f.a.I18NFormatMessage,
@@ -3604,26 +3605,26 @@
           ),
           label: ia,
         },
-        Xn = A.createElement(
+        ei = A.createElement(
           f.a.I18NFormatMessage,
           { $i18n: 'i3b4217a' },
           A.createElement(W.b, { link: St }, f.a.c58d2c6b),
         ),
-        ei = f.a.i9b124b6,
-        ti = f.a.f84a99ee,
-        ai = f.a.j2cb5f50,
-        ni = f.a.j2472894,
-        ii = f.a.ha44c13f,
-        ri = {
+        ti = f.a.i9b124b6,
+        ai = f.a.f84a99ee,
+        ni = f.a.j2cb5f50,
+        ii = f.a.j2472894,
+        ri = f.a.ha44c13f,
+        oi = {
           title: fa,
-          description: Xn,
+          description: ei,
           items: [
-            { helpText: ti, label: ei },
-            { helpText: ni, label: ai },
-            { helpText: f.a.j8ae9d40, label: ii },
+            { helpText: ai, label: ti },
+            { helpText: ii, label: ni },
+            { helpText: f.a.j8ae9d40, label: ri },
           ],
         },
-        oi = {
+        li = {
           candidateTitle: f.a.ef1d6175,
           candidateDescription: f.a.f54ba6e6,
           officialTitle: f.a.dd85d0af,
@@ -3631,7 +3632,7 @@
           confirmButtonLabel: f.a.f420a711,
           declineButtonLabel: f.a.fb97d22b,
         },
-        li = {
+        ci = {
           candidateTitle: f.a.e16b1cc8,
           candidateDescription: f.a.cf2ee92e,
           officeTitle: f.a.g544885e,
@@ -3641,77 +3642,77 @@
           confirmButtonLabel: f.a.e95c44dd,
           declineButtonLabel: f.a.fa5e15e1,
         },
-        ci = ca(
+        Ei = ca(
           A.createElement(
             f.a.I18NFormatMessage,
             { $i18n: 'ja62479f' },
             A.createElement(W.b, { link: St }, f.a.c04b4b1b),
           ),
         ),
-        Ei = ca(
+        si = ca(
           A.createElement(
             f.a.I18NFormatMessage,
             { $i18n: 'f28bbbb0' },
             A.createElement(W.b, { link: St }, f.a.a60039a6),
           ),
         ),
-        si = ca(
+        Ii = ca(
           A.createElement(
             f.a.I18NFormatMessage,
             { $i18n: 'b229f4b8' },
             A.createElement(W.b, { link: St }, f.a.ba75f2ad),
           ),
         ),
-        Ii = f.a.jdf47e8d,
-        Ti = {
+        Ti = f.a.jdf47e8d,
+        ui = {
           title: f.a.eeec7315,
           description: A.createElement(
             f.a.I18NFormatMessage,
             { $i18n: 'ec71430d' },
             A.createElement(W.b, { link: St }, f.a.d9486fbf),
           ),
-          websiteLabel: Ii,
+          websiteLabel: Ti,
         },
-        ui = f.a.b163b653,
-        Ni = {
+        Ni = f.a.b163b653,
+        di = {
           title: f.a.d2378d34,
           description: A.createElement(
             f.a.I18NFormatMessage,
             { $i18n: 'f9e2b0f2' },
             A.createElement(W.b, { link: St }, f.a.e3b02224),
           ),
-          websiteLabel: ui,
+          websiteLabel: Ni,
         },
-        di = {
+        _i = {
           title: yt,
           description: A.createElement(
             f.a.I18NFormatMessage,
             { $i18n: 'a394654e' },
             A.createElement(W.b, { link: St }, f.a.e332fb11),
           ),
-          websiteLabel: ui,
+          websiteLabel: Ni,
         },
-        _i = f.a.a05b8445,
-        pi = f.a.hdad12b1,
-        Oi = f.a.a18c6dfb,
-        bi = f.a.h0b46533,
-        Ai = f.a.d2d7af4b,
-        Ri = {
+        pi = f.a.a05b8445,
+        Oi = f.a.hdad12b1,
+        bi = f.a.a18c6dfb,
+        Ai = f.a.h0b46533,
+        Ri = f.a.d2d7af4b,
+        fi = {
           title: fa,
           description: Ca,
           items: [
-            { description: bi, label: Oi },
-            { description: pi, label: _i },
-            { description: f.a.d83e51db, label: Ai },
+            { description: Ai, label: bi },
+            { description: Oi, label: pi },
+            { description: f.a.d83e51db, label: Ri },
           ],
         },
-        fi = {
+        Ci = {
           title: f.a.g708cbdb,
           description: f.a.b107ee5b,
           confirmButtonLabel: f.a.e95c44dd,
           declineButtonLabel: f.a.fa5e15e1,
         },
-        Ci = {
+        mi = {
           title: Dt,
           description: A.createElement(
             f.a.I18NFormatMessage,
@@ -3720,29 +3721,29 @@
           ),
           confirmationText: f.a.e8746826,
         },
-        mi = {
+        Si = {
           headline: f.a.jc09b420,
           subtext: f.a.gfbd7e58,
           actionLabel: f.a.e95c44dd,
           tertiaryActionLabel: f.a.fa5e15e1,
         },
-        Si = A.createElement(
+        Li = A.createElement(
           f.a.I18NFormatMessage,
           { $i18n: 'd82a96af' },
           A.createElement(W.b, { link: St }, f.a.j331c658),
         ),
-        Li = f.a.h0ad4c9d,
-        yi = f.a.a6553b5f,
-        hi = f.a.a29b2987,
-        Di = {
+        yi = f.a.h0ad4c9d,
+        hi = f.a.a6553b5f,
+        Di = f.a.a29b2987,
+        Fi = {
           title: ht,
-          description: Si,
+          description: Li,
           items: [
-            { description: yi, label: Li },
-            { description: f.a.ab4eae60, label: hi },
+            { description: hi, label: yi },
+            { description: f.a.ab4eae60, label: Di },
           ],
         },
-        Fi = {
+        Ui = {
           title: yt,
           description: A.createElement(
             f.a.I18NFormatMessage,
@@ -3752,7 +3753,7 @@
           websiteLabel: ia,
           confirmationText: f.a.b3fac982,
         },
-        Ui = {
+        vi = {
           title: f.a.e26dc9e2,
           description: A.createElement(
             f.a.I18NFormatMessage,
@@ -3762,13 +3763,13 @@
           articleNumerationLabelGenerator: qt,
           addFieldText: Lt,
         },
-        vi = {
+        Mi = {
           title: f.a.e164df2d,
           description: f.a.i80ff05e,
           actionLabel: f.a.cf7482eb,
           tertiaryActionLabel: f.a.cb70b893,
         },
-        Mi = {
+        Pi = {
           title: ht,
           description: A.createElement(
             f.a.I18NFormatMessage,
@@ -3777,19 +3778,19 @@
           ),
           items: [
             { description: vt, label: Ut },
-            { description: Yt, label: gt },
+            { description: Gt, label: gt },
             { description: Qt, label: zt },
             { description: Bt, label: xt },
           ],
         },
-        Pi = la(
+        gi = la(
           A.createElement(
             f.a.I18NFormatMessage,
             { $i18n: 'cc16af2c' },
             A.createElement(W.b, { link: St }, f.a.ede35c04),
           ),
         ),
-        gi = Ea(
+        Gi = Ea(
           A.createElement(
             f.a.I18NFormatMessage,
             { $i18n: 'b42b7001' },
@@ -3803,74 +3804,80 @@
             A.createElement(W.b, { link: St }, f.a.ab604a66),
           ),
         ),
-        Gi = ca(
+        xi = ca(
           A.createElement(
             f.a.I18NFormatMessage,
             { $i18n: 'ec7027cc' },
             A.createElement(W.b, { link: St }, f.a.i532d121),
           ),
         ),
-        xi = f.a.fcb96cfc,
-        Bi = f.a.ddc7d64a,
-        Vi = f.a.c4e0d346,
-        wi = f.a.e3ce81fa,
-        Wi = f.a.b2808f47,
-        ki = {
+        Bi = f.a.fcb96cfc,
+        Vi = f.a.ddc7d64a,
+        wi = f.a.c4e0d346,
+        Wi = f.a.e3ce81fa,
+        ki = f.a.b2808f47,
+        ji = {
           title: fa,
           description: Ca,
           items: [
-            { helpText: Bi, label: xi },
-            { helpText: wi, label: Vi },
-            { helpText: f.a.jaa90f86, label: Wi },
+            { helpText: Vi, label: Bi },
+            { helpText: Wi, label: wi },
+            { helpText: f.a.jaa90f86, label: ki },
           ],
         },
-        ji = A.createElement(f.a.I18NFormatMessage, { $i18n: 'a0a9f835' }),
-        Hi = f.a.bbd9a911,
-        Ki = { title: Dt, description: ji, confirmationText: Hi },
-        qi = {
+        Hi = A.createElement(f.a.I18NFormatMessage, { $i18n: 'a0a9f835' }),
+        Ki = f.a.bbd9a911,
+        qi = A.createElement(
+          f.a.I18NFormatMessage,
+          { $i18n: 'iba551d5' },
+          A.createElement(W.b, { link: St }, f.a.f22a6d0c),
+        ),
+        zi = { title: Dt, description: Hi, confirmationText: Ki },
+        Qi = {
           title: Dt,
           description: A.createElement(f.a.I18NFormatMessage, { $i18n: 'h515e868' }),
-          confirmationText: Hi,
+          confirmationText: Ki,
         },
-        zi = A.createElement(
+        $i = { headline: na, subtext: qi, actionLabel: Ft },
+        Zi = A.createElement(
           f.a.I18NFormatMessage,
           { $i18n: 'd2cd7f89' },
           A.createElement(W.b, { link: St }, f.a.i78c9fd3),
         ),
-        Qi = f.a.he9c5637,
-        $i = {
+        Ji = f.a.he9c5637,
+        Xi = {
           title: ht,
-          description: zi,
+          description: Zi,
           items: [
             { helpText: vt, label: Ut },
-            { helpText: Yt, label: gt },
+            { helpText: Gt, label: gt },
             { helpText: Qt, label: zt },
-            { helpText: Qi, label: ra },
+            { helpText: Ji, label: ra },
             { helpText: wt, label: xt },
           ],
         },
-        Zi = la(
+        er = la(
           A.createElement(
             f.a.I18NFormatMessage,
             { $i18n: 'c68614a2' },
             A.createElement(W.b, { link: St }, f.a.i78b0bd0),
           ),
         ),
-        Ji = Ea(
+        tr = Ea(
           A.createElement(
             f.a.I18NFormatMessage,
             { $i18n: 'b4ea622e' },
             A.createElement(W.b, { link: St }, f.a.i78103dc),
           ),
         ),
-        Xi = sa(
+        ar = sa(
           A.createElement(
             f.a.I18NFormatMessage,
             { $i18n: 'acab99f6' },
             A.createElement(W.b, { link: St }, f.a.ebfa8bb3),
           ),
         ),
-        er = {
+        nr = {
           title: oa,
           description: A.createElement(
             f.a.I18NFormatMessage,
@@ -3879,28 +3886,28 @@
           ),
           label: ia,
         },
-        tr = ca(
+        ir = ca(
           A.createElement(
             f.a.I18NFormatMessage,
             { $i18n: 'jfda4c28' },
             A.createElement(W.b, { link: St }, f.a.a5e8a43a),
           ),
         ),
-        ar = A.createElement(
+        rr = A.createElement(
           f.a.I18NFormatMessage,
           { $i18n: 'g3299df1' },
           A.createElement(W.b, { link: St }, f.a.d9bd3821),
         ),
-        nr = f.a.bf06e1d5,
-        ir = {
+        or = f.a.bf06e1d5,
+        lr = {
           title: ht,
-          description: ar,
+          description: rr,
           items: [
             { description: f.a.e241d35d, label: jt },
-            { description: nr, label: ra },
+            { description: or, label: ra },
           ],
         },
-        rr = {
+        cr = {
           title: ht,
           description: A.createElement(
             f.a.I18NFormatMessage,
@@ -3912,7 +3919,7 @@
             { description: f.a.hbe2e65b, label: ra },
           ],
         },
-        or = {
+        Er = {
           title: oa,
           description: A.createElement(
             f.a.I18NFormatMessage,
@@ -3921,8 +3928,8 @@
           ),
           websiteLabel: ia,
         },
-        lr = ca(Kt),
-        cr = {
+        sr = ca(Kt),
+        Ir = {
           title: oa,
           description: A.createElement(
             f.a.I18NFormatMessage,
@@ -3931,66 +3938,66 @@
           ),
           websiteLabel: ia,
         },
-        Er = ca(Kt),
-        sr = f.a.j24c37b2,
-        Ir = f.a.j3da4de9,
-        Tr = A.createElement(
+        Tr = ca(Kt),
+        ur = f.a.j24c37b2,
+        Nr = f.a.j3da4de9,
+        dr = A.createElement(
           f.a.I18NFormatMessage,
           { $i18n: 'ca20e39f' },
           A.createElement(W.b, { link: St }, f.a.b436b100),
         ),
-        ur = f.a.ff2ee0c1,
-        Nr = f.a.af39265e,
-        dr = f.a.hc61adfb,
-        _r = f.a.d2042392,
-        pr = f.a.c365dcc5,
-        Or = f.a.c8ee31da,
-        br = f.a.bb51cd79,
-        Ar =
+        _r = f.a.ff2ee0c1,
+        pr = f.a.af39265e,
+        Or = f.a.hc61adfb,
+        br = f.a.d2042392,
+        Ar = f.a.c365dcc5,
+        Rr = f.a.c8ee31da,
+        fr = f.a.bb51cd79,
+        Cr =
           ((It = {}),
-          b()(It, L.l.ACTIVISM, ur),
-          b()(It, L.l.COMPANY, Nr),
-          b()(It, L.l.ENTERTAINMENT, dr),
-          b()(It, L.l.GOVERNMENT, _r),
-          b()(It, L.l.INFLUENCER_OTHER, pr),
-          b()(It, L.l.NEWS, Or),
-          b()(It, L.l.SPORTS, br),
+          b()(It, L.l.ACTIVISM, _r),
+          b()(It, L.l.COMPANY, pr),
+          b()(It, L.l.ENTERTAINMENT, Or),
+          b()(It, L.l.GOVERNMENT, br),
+          b()(It, L.l.INFLUENCER_OTHER, Ar),
+          b()(It, L.l.NEWS, Rr),
+          b()(It, L.l.SPORTS, fr),
           It),
-        Rr = f.a.d2ea2049,
-        fr =
+        mr = f.a.d2ea2049,
+        Sr =
           ((Tt = {}),
           b()(Tt, L.n.ACTIVIST, Ia),
-          b()(Tt, L.n.CANDIDATE, ai),
+          b()(Tt, L.n.CANDIDATE, ni),
           b()(Tt, L.n.COMPANY, $a),
           b()(Tt, L.n.CONTENT_CREATOR, ma),
-          b()(Tt, L.n.ENTERTAINMENT_COMPANY, bn),
-          b()(Tt, L.n.ENTERTAINMENT_INDIVIDUAL, Rn),
+          b()(Tt, L.n.ENTERTAINMENT_COMPANY, An),
+          b()(Tt, L.n.ENTERTAINMENT_INDIVIDUAL, fn),
           b()(Tt, L.n.EXECUTIVE, Ja),
-          b()(Tt, L.n.FREELANCER, _i),
-          b()(Tt, L.n.GAMING_INDIVIDUAL, Wi),
-          b()(Tt, L.n.INFLUENTIAL_INDIVIDUAL, Rr),
-          b()(Tt, L.n.JOURNALIST, Oi),
-          b()(Tt, L.n.OFFICE, ii),
-          b()(Tt, L.n.OFFICIAL, ei),
-          b()(Tt, L.n.ORGANIZATION, Ai),
-          b()(Tt, L.n.PRODUCTION, Cn),
-          b()(Tt, L.n.SPORTS_ENTITY, Vi),
-          b()(Tt, L.n.SPORTS_INDIVIDUAL, xi),
+          b()(Tt, L.n.FREELANCER, pi),
+          b()(Tt, L.n.GAMING_INDIVIDUAL, ki),
+          b()(Tt, L.n.INFLUENTIAL_INDIVIDUAL, mr),
+          b()(Tt, L.n.JOURNALIST, bi),
+          b()(Tt, L.n.OFFICE, ri),
+          b()(Tt, L.n.OFFICIAL, ti),
+          b()(Tt, L.n.ORGANIZATION, Ri),
+          b()(Tt, L.n.PRODUCTION, mn),
+          b()(Tt, L.n.SPORTS_ENTITY, wi),
+          b()(Tt, L.n.SPORTS_INDIVIDUAL, Bi),
           Tt),
-        Cr = f.a.fc2a5c92,
-        mr = f.a.jf4b6f7f,
-        Sr = Ir,
-        Lr = Tr,
-        yr = f.a.d338f53e,
-        hr = function (e) {
+        Lr = f.a.fc2a5c92,
+        yr = f.a.jf4b6f7f,
+        hr = Nr,
+        Dr = dr,
+        Fr = f.a.d338f53e,
+        Ur = function (e) {
           var t = e.error,
             a = e.onButtonClick,
             n = t instanceof mt.a ? t.status : void 0,
-            i = yr,
-            r = Cr,
-            o = mr
+            i = Fr,
+            r = Lr,
+            o = yr
           return (
-            429 === n && ((i = sr), (r = Sr), (o = Lr)),
+            429 === n && ((i = ur), (r = hr), (o = Dr)),
             A.createElement(C.a, {
               actionLabel: i,
               graphicDisplayMode: 'none',
@@ -4002,7 +4009,7 @@
             })
           )
         }
-      function Dr(e, t) {
+      function vr(e, t) {
         var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -4014,22 +4021,22 @@
         }
         return a
       }
-      function Fr(e) {
+      function Mr(e) {
         for (var t = 1; t < arguments.length; t++) {
           var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Dr(Object(a), !0).forEach(function (t) {
+            ? vr(Object(a), !0).forEach(function (t) {
                 b()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
-            : Dr(Object(a)).forEach(function (t) {
+            : vr(Object(a)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      function Ur(e) {
+      function Pr(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -4050,12 +4057,12 @@
           return d()(this, a)
         }
       }
-      var vr = f.a.h2d4ba55,
-        Mr = f.a.i2051842,
-        Pr = ft(
+      var gr = f.a.h2d4ba55,
+        Gr = f.a.i2051842,
+        Yr = ft(
           (function (e) {
             u()(a, e)
-            var t = Ur(a)
+            var t = Pr(a)
             function a(e) {
               var n
               return (
@@ -4118,8 +4125,8 @@
                   value: function (e) {
                     var t = this.props.analytics
                     t.scribe(
-                      Fr(
-                        Fr({}, t.contextualScribeNamespace),
+                      Mr(
+                        Mr({}, t.contextualScribeNamespace),
                         {},
                         { element: 'process', action: e, data: t.contextualScribeData },
                       ),
@@ -4146,7 +4153,7 @@
                   value: function () {
                     return (
                       this._handleScribe('failure'),
-                      A.createElement(hr, { onButtonClick: this._handleErrorButtonClick })
+                      A.createElement(Ur, { onButtonClick: this._handleErrorButtonClick })
                     )
                   },
                 },
@@ -4170,9 +4177,9 @@
                             style: V.header,
                             weight: 'heavy',
                           },
-                          vr,
+                          gr,
                         ),
-                        A.createElement(W.b, { color: 'gray700' }, Mr),
+                        A.createElement(W.b, { color: 'gray700' }, Gr),
                       ),
                     )
                   },
@@ -4188,23 +4195,23 @@
             )
           })(A.Component),
         ),
-        gr = a('AspN'),
-        Yr = function (e) {
+        xr = a('AspN'),
+        Br = function (e) {
           var t = Object(Ce.u)(e)
-          return t ? Object(gr.k)(e, t)[0] : void 0
+          return t ? Object(xr.k)(e, t)[0] : void 0
         },
-        Gr = function (e) {
+        Vr = function (e) {
           var t = Object(Ce.F)(e)
-          return t ? Object(gr.k)(e, t)[0] : void 0
+          return t ? Object(xr.k)(e, t)[0] : void 0
         },
-        xr = Object(fe.a)()
+        wr = Object(fe.a)()
           .propsFromState(function () {
             return {
               backID: Ce.u,
-              backImage: Yr,
+              backImage: Br,
               documentFormats: Ce.A,
               frontID: Ce.F,
-              frontImage: Gr,
+              frontImage: Vr,
               idCountry: Ce.G,
               idType: Ce.I,
               isConfirmed: Ce.x,
@@ -4216,12 +4223,12 @@
           })
           .propsFromActions(function () {
             return {
-              addMedia: gr.b,
+              addMedia: xr.b,
               createLocalApiErrorHandler: Object(Rt.createLocalApiErrorHandlerWithContextFactory)(
                 'ACCOUNT_VERIFICATION_INTAKE_UPLOAD',
               ),
-              processMultipleMedia: gr.g,
-              removeMedia: gr.h,
+              processMultipleMedia: xr.g,
+              removeMedia: xr.h,
               resetAuthenticationResult: Ce.h,
               resetDocumentIdProcess: Ce.i,
               resetIntakeUpload: Ce.k,
@@ -4233,12 +4240,12 @@
             }
           })
           .withAnalytics(),
-        Br = a('LCtV'),
-        Vr = a('T8pk'),
-        wr = a('VPdC'),
-        Wr = a('pKoL'),
-        kr = a('rFBM')
-      function jr(e) {
+        Wr = a('LCtV'),
+        kr = a('T8pk'),
+        jr = a('VPdC'),
+        Hr = a('pKoL'),
+        Kr = a('rFBM')
+      function qr(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -4259,10 +4266,10 @@
           return d()(this, a)
         }
       }
-      var Hr = ['application/pdf', 'image/bmp', 'image/jpeg', 'image/png', 'image/tiff'],
-        Kr = (function (e) {
+      var zr = ['application/pdf', 'image/bmp', 'image/jpeg', 'image/png', 'image/tiff'],
+        Qr = (function (e) {
           u()(a, e)
-          var t = jr(a)
+          var t = qr(a)
           function a() {
             var e
             l()(this, a)
@@ -4272,7 +4279,7 @@
               b()(I()(e), '_handleDragDrop', function (t) {
                 var a = e.props.onChange,
                   n = t.find(function (e) {
-                    return Hr.includes(e.type)
+                    return zr.includes(e.type)
                   })
                 n && a([n])
               }),
@@ -4280,16 +4287,16 @@
                 var t = e.props,
                   a = t.accessibilityLabel,
                   n = t.onChange
-                return A.createElement(wr.a, {
+                return A.createElement(jr.a, {
                   acceptGifs: !1,
                   acceptImages: !1,
                   acceptVideo: !1,
                   accessibilityLabel: a,
-                  customMimeTypes: Hr,
-                  icon: A.createElement(Vr.a, { style: qr.mediaPickerIcon }),
+                  customMimeTypes: zr,
+                  icon: A.createElement(kr.a, { style: $r.mediaPickerIcon }),
                   onChange: n,
                   size: 'small',
-                  style: qr.mediaPicker,
+                  style: $r.mediaPicker,
                   withIcon: !0,
                 })
               }),
@@ -4299,12 +4306,12 @@
               }),
               b()(I()(e), '_renderPreview', function (t) {
                 var a = e.props.onRemove
-                return A.createElement(Wr.a, {
-                  borderRadius: Br.a.MEDIUM,
+                return A.createElement(Hr.a, {
+                  borderRadius: Wr.a.MEDIUM,
                   mediaItem: t,
                   onRemove: a,
                   resizeIfNeeded: e._getResizeIfNeeded(t),
-                  style: qr.mediaPreview,
+                  style: $r.mediaPreview,
                   withCloseButton: !0,
                 })
               }),
@@ -4322,9 +4329,9 @@
                     n = t ? this._renderPreview(t) : this._renderDragDropTarget()
                   return A.createElement(
                     w.a,
-                    { style: qr.dragDropContainer },
+                    { style: $r.dragDropContainer },
                     A.createElement(W.b, { weight: 'bold' }, a),
-                    A.createElement(kr.a, { onFilesAdded: this._handleDragDrop, style: qr.dragDropComponent }, n),
+                    A.createElement(Kr.a, { onFilesAdded: this._handleDragDrop, style: $r.dragDropComponent }, n),
                   )
                 },
               },
@@ -4332,7 +4339,7 @@
             a
           )
         })(A.Component),
-        qr = B.a.create(function (e) {
+        $r = B.a.create(function (e) {
           return {
             dragDropContainer: {
               flex: 1,
@@ -4356,9 +4363,9 @@
             mediaPreview: { justifyContent: 'center', flex: 1 },
           }
         }),
-        zr = Kr,
-        Qr = a('eyty')
-      function $r(e, t) {
+        Zr = Qr,
+        Jr = a('eyty')
+      function Xr(e, t) {
         var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -4370,22 +4377,22 @@
         }
         return a
       }
-      function Zr(e) {
+      function eo(e) {
         for (var t = 1; t < arguments.length; t++) {
           var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? $r(Object(a), !0).forEach(function (t) {
+            ? Xr(Object(a), !0).forEach(function (t) {
                 b()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
-            : $r(Object(a)).forEach(function (t) {
+            : Xr(Object(a)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      function Jr(e) {
+      function to(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -4406,10 +4413,7 @@
           return d()(this, a)
         }
       }
-      var Xr,
-        eo,
-        to,
-        ao,
+      var ao,
         no,
         io,
         ro,
@@ -4428,29 +4432,32 @@
         bo,
         Ao,
         Ro,
-        fo = 'verification-checkbox-label',
-        Co = f.a.ff1d68f7,
-        mo = A.createElement(
+        fo,
+        Co,
+        mo,
+        So = 'verification-checkbox-label',
+        Lo = f.a.ff1d68f7,
+        yo = A.createElement(
           f.a.I18NFormatMessage,
           { $i18n: 'b8f15ec4' },
           A.createElement(W.b, { link: St }, f.a.h0ed9034),
         ),
-        So = f.a.bdada5a5,
-        Lo = f.a.edfed0f6,
-        yo = f.a.b08821f3,
-        ho = f.a.b09aade5,
-        Do = f.a.b40ed190,
-        Fo = f.a.c6650b55,
-        Uo = f.a.d171ed16,
-        vo = A.createElement(
+        ho = f.a.bdada5a5,
+        Do = f.a.edfed0f6,
+        Fo = f.a.b08821f3,
+        Uo = f.a.b09aade5,
+        vo = f.a.b40ed190,
+        Mo = f.a.c6650b55,
+        Po = f.a.d171ed16,
+        go = A.createElement(
           f.a.I18NFormatMessage,
           { $i18n: 'd65a41c2' },
           A.createElement(W.b, { link: 'https://twitter.com/privacy' }, f.a.e9d83172),
         ),
-        Mo = f.a.c1df579e,
-        Po = (function (e) {
+        Go = f.a.c1df579e,
+        Yo = (function (e) {
           u()(a, e)
-          var t = Jr(a)
+          var t = to(a)
           function a() {
             var e
             l()(this, a)
@@ -4469,7 +4476,7 @@
                   n = a.addMedia,
                   i = a.processMultipleMedia,
                   r = a.setBackID
-                n(t, { location: Qr.d.Verification }).then(function (t) {
+                n(t, { location: Jr.d.Verification }).then(function (t) {
                   t.map(function (e) {
                     var t = e.id
                     r(t)
@@ -4489,7 +4496,7 @@
                   n = a.addMedia,
                   i = a.processMultipleMedia,
                   r = a.setFrontID
-                n(t, { location: Qr.d.Verification }).then(function (t) {
+                n(t, { location: Jr.d.Verification }).then(function (t) {
                   t.map(function (e) {
                     var t = e.id
                     r(t)
@@ -4527,16 +4534,16 @@
                     w.a,
                     { style: V.checkbox },
                     A.createElement(lt.a, {
-                      accessibilityLabelledBy: fo,
+                      accessibilityLabelledBy: So,
                       checked: t,
                       onChange: e._handleCheckboxChange,
                     }),
                   ),
                   A.createElement(
                     w.a,
-                    { nativeID: fo, style: V.checkboxText },
-                    A.createElement(W.b, { color: 'gray700' }, Uo),
-                    A.createElement(W.b, { color: 'gray700', style: V.text }, vo),
+                    { nativeID: So, style: V.checkboxText },
+                    A.createElement(W.b, { color: 'gray700' }, Po),
+                    A.createElement(W.b, { color: 'gray700', style: V.text }, go),
                   ),
                 )
               }),
@@ -4552,12 +4559,12 @@
                   a = t.backImage,
                   n = t.frontImage,
                   i = e._needsBackside(),
-                  r = i ? Lo : Fo,
-                  o = i ? So : Do
+                  r = i ? Do : Mo,
+                  o = i ? ho : vo
                 return A.createElement(
                   w.a,
-                  { accessibilityLabelledBy: x.b, accessibilityRole: 'group', style: go.gridContainer },
-                  A.createElement(zr, {
+                  { accessibilityLabelledBy: x.b, accessibilityRole: 'group', style: xo.gridContainer },
+                  A.createElement(Zr, {
                     accessibilityLabel: r,
                     mediaItem: n,
                     onChange: e._handleAddFrontMedia,
@@ -4565,12 +4572,12 @@
                     title: o,
                   }),
                   i &&
-                    A.createElement(zr, {
-                      accessibilityLabel: ho,
+                    A.createElement(Zr, {
+                      accessibilityLabel: Uo,
                       mediaItem: a,
                       onChange: e._handleAddBackMedia,
                       onRemove: e._handleRemoveBackID,
-                      title: yo,
+                      title: Fo,
                     }),
                 )
               }),
@@ -4612,8 +4619,8 @@
                 value: function (e) {
                   var t = this.props.analytics
                   t.scribe(
-                    Zr(
-                      Zr({}, t.contextualScribeNamespace),
+                    eo(
+                      eo({}, t.contextualScribeNamespace),
                       {},
                       { element: 'upload', action: e, data: t.contextualScribeData },
                     ),
@@ -4626,7 +4633,7 @@
                   var e = this.props.uploadRequestError
                   return (
                     this._handleScribe('failure'),
-                    A.createElement(hr, { error: e, onButtonClick: this._handleErrorButtonClick })
+                    A.createElement(Ur, { error: e, onButtonClick: this._handleErrorButtonClick })
                   )
                 },
               },
@@ -4652,19 +4659,19 @@
                         style: V.header,
                         weight: 'heavy',
                       },
-                      Co,
+                      Lo,
                     ),
                     A.createElement(
                       w.a,
                       { style: V.scrollableContainer },
-                      A.createElement(W.b, { color: 'gray700' }, mo),
+                      A.createElement(W.b, { color: 'gray700' }, yo),
                       this._renderUploadTargets(),
                       this._renderCheckbox(),
                     ),
                     A.createElement(
                       k.a,
                       { disabled: r, onPress: this._handleSubmit, style: V.buttonFixed, type: 'brandFilled' },
-                      Mo,
+                      Go,
                     ),
                   )
                 },
@@ -4679,80 +4686,80 @@
             a
           )
         })(A.Component),
-        go = B.a.create(function (e) {
+        xo = B.a.create(function (e) {
           return { gridContainer: { flexDirection: 'row', flexWrap: 'wrap', gap: e.spaces.space16 } }
         }),
-        Yo = xr(Po),
-        Go = { hasId: !0, hasEmail: !0, hasWebsite: !0 },
-        xo =
-          ((io = {}),
-          b()(io, L.l.ACTIVISM, {
+        Bo = wr(Yo),
+        Vo = { hasId: !0, hasEmail: !0, hasWebsite: !0 },
+        wo =
+          ((lo = {}),
+          b()(lo, L.l.ACTIVISM, {
             hasId: !0,
             hasEmail: !1,
             hasWebsite: !0,
             subtype: b()({}, L.b.ACTIVIST, { hasId: !0, hasEmail: !1, hasWebsite: !0 }),
           }),
-          b()(io, L.l.COMPANY, {
-            hasId: !1,
-            hasEmail: !0,
-            hasWebsite: !0,
-            subtype:
-              ((Xr = {}),
-              b()(Xr, L.e.COMPANY, { hasId: !1, hasEmail: !0, hasWebsite: !0 }),
-              b()(Xr, L.e.EXECUTIVE, { hasId: !0, hasEmail: !0, hasWebsite: !0 }),
-              Xr),
-          }),
-          b()(io, L.l.ENTERTAINMENT, {
-            hasId: !1,
-            hasEmail: !1,
-            hasWebsite: !0,
-            subtype:
-              ((eo = {}),
-              b()(eo, L.f.ENTERTAINMENT_INDIVIDUAL, { hasId: !1, hasEmail: !1, hasWebsite: !1 }),
-              b()(eo, L.f.ENTERTAINMENT_COMPANY, { hasId: !1, hasEmail: !1, hasWebsite: !0 }),
-              b()(eo, L.f.PRODUCTION, { hasId: !1, hasEmail: !1, hasWebsite: !0 }),
-              eo),
-          }),
-          b()(io, L.l.GOVERNMENT, {
-            hasId: !1,
-            hasEmail: !1,
-            hasWebsite: !0,
-            subtype: b()({}, L.i.CANDIDATE, { hasId: !0, hasEmail: !1, hasWebsite: !0 }),
-          }),
-          b()(io, L.l.INFLUENCER_OTHER, {
-            hasId: !0,
-            hasEmail: !1,
-            hasWebsite: !0,
-            subtype:
-              ((to = {}),
-              b()(to, L.j.INFLUENTIAL_INDIVIDUAL, { hasId: !0, hasEmail: !1, hasWebsite: !0 }),
-              b()(to, L.j.CONTENT_CREATOR, { hasId: !1, hasEmail: !1, hasWebsite: !0 }),
-              to),
-          }),
-          b()(io, L.l.NEWS, {
+          b()(lo, L.l.COMPANY, {
             hasId: !1,
             hasEmail: !0,
             hasWebsite: !0,
             subtype:
               ((ao = {}),
-              b()(ao, L.k.JOURNALIST, { hasId: !0, hasEmail: !0, hasWebsite: !0 }),
-              b()(ao, L.k.FREELANCER, { hasId: !0, hasEmail: !1, hasWebsite: !0 }),
-              b()(ao, L.k.ORGANIZATION, { hasId: !1, hasEmail: !0, hasWebsite: !0 }),
+              b()(ao, L.e.COMPANY, { hasId: !1, hasEmail: !0, hasWebsite: !0 }),
+              b()(ao, L.e.EXECUTIVE, { hasId: !0, hasEmail: !0, hasWebsite: !0 }),
               ao),
           }),
-          b()(io, L.l.SPORTS, {
-            hasId: !0,
+          b()(lo, L.l.ENTERTAINMENT, {
+            hasId: !1,
             hasEmail: !1,
             hasWebsite: !0,
             subtype:
               ((no = {}),
-              b()(no, L.q.SPORTS_INDIVIDUAL, { hasId: !0, hasEmail: !1, hasWebsite: !0 }),
-              b()(no, L.q.SPORTS_ENTITY, { hasId: !1, hasEmail: !1, hasWebsite: !0 }),
-              b()(no, L.q.GAMING_INDIVIDUAL, { hasId: !0, hasEmail: !1, hasWebsite: !0 }),
+              b()(no, L.f.ENTERTAINMENT_INDIVIDUAL, { hasId: !1, hasEmail: !1, hasWebsite: !1 }),
+              b()(no, L.f.ENTERTAINMENT_COMPANY, { hasId: !1, hasEmail: !1, hasWebsite: !0 }),
+              b()(no, L.f.PRODUCTION, { hasId: !1, hasEmail: !1, hasWebsite: !0 }),
               no),
           }),
-          io)
-      function Bo(e, t) {
+          b()(lo, L.l.GOVERNMENT, {
+            hasId: !1,
+            hasEmail: !1,
+            hasWebsite: !0,
+            subtype: b()({}, L.i.CANDIDATE, { hasId: !0, hasEmail: !1, hasWebsite: !0 }),
+          }),
+          b()(lo, L.l.INFLUENCER_OTHER, {
+            hasId: !0,
+            hasEmail: !1,
+            hasWebsite: !0,
+            subtype:
+              ((io = {}),
+              b()(io, L.j.INFLUENTIAL_INDIVIDUAL, { hasId: !0, hasEmail: !1, hasWebsite: !0 }),
+              b()(io, L.j.CONTENT_CREATOR, { hasId: !1, hasEmail: !1, hasWebsite: !0 }),
+              io),
+          }),
+          b()(lo, L.l.NEWS, {
+            hasId: !1,
+            hasEmail: !0,
+            hasWebsite: !0,
+            subtype:
+              ((ro = {}),
+              b()(ro, L.k.JOURNALIST, { hasId: !0, hasEmail: !0, hasWebsite: !0 }),
+              b()(ro, L.k.FREELANCER, { hasId: !0, hasEmail: !1, hasWebsite: !0 }),
+              b()(ro, L.k.ORGANIZATION, { hasId: !1, hasEmail: !0, hasWebsite: !0 }),
+              ro),
+          }),
+          b()(lo, L.l.SPORTS, {
+            hasId: !0,
+            hasEmail: !1,
+            hasWebsite: !0,
+            subtype:
+              ((oo = {}),
+              b()(oo, L.q.SPORTS_INDIVIDUAL, { hasId: !0, hasEmail: !1, hasWebsite: !0 }),
+              b()(oo, L.q.SPORTS_ENTITY, { hasId: !1, hasEmail: !1, hasWebsite: !0 }),
+              b()(oo, L.q.GAMING_INDIVIDUAL, { hasId: !0, hasEmail: !1, hasWebsite: !0 }),
+              oo),
+          }),
+          lo)
+      function Wo(e, t) {
         var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -4764,220 +4771,220 @@
         }
         return a
       }
-      function Vo(e) {
+      function ko(e) {
         for (var t = 1; t < arguments.length; t++) {
           var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Bo(Object(a), !0).forEach(function (t) {
+            ? Wo(Object(a), !0).forEach(function (t) {
                 b()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
-            : Bo(Object(a)).forEach(function (t) {
+            : Wo(Object(a)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var wo,
-        Wo = f.a.i79902b4,
-        ko = f.a.fb2fcb5b,
-        jo = f.a.e43425fa,
-        Ho = f.a.cb7c2e2e,
-        Ko = f.a.a411926a,
-        qo = f.a.g253cddf,
-        zo = f.a.cf93bcbf,
-        Qo = f.a.ca5fb0d4,
-        $o = f.a.g40cd2c0,
-        Zo = { title: Wo, description: ko },
-        Jo =
-          ((ro = {}),
-          b()(ro, L.d.IDENTITY_DOCUMENT, { label: jo, subtext: Ho }),
-          b()(ro, L.d.EMAIL, { label: Ko, subtext: qo }),
-          b()(ro, L.d.WEBSITE, { label: zo, subtext: Qo }),
-          ro),
-        Xo = Vo(Vo({}, Zo), {}, { items: Vo({}, Jo) }),
-        el = { title: f.a.a7f1cff6, description: f.a.ce40e7a5, websiteLabel: zo },
-        tl = f.a.dff1555f,
-        al = f.a.ed751204,
-        nl = f.a.fbc023bf,
-        il = { headline: tl, subtext: al, actionLabel: nl, tertiaryActionLabel: f.a.e785ce06 },
-        rl = f.a.i8d58f3d,
-        ol = Vo(Vo({}, il), {}, { tertiaryActionLabel: rl }),
-        ll = f.a.eb21eca9,
-        cl = Vo(Vo({}, il), {}, { tertiaryActionLabel: ll }),
-        El = f.a.f848a69d,
-        sl = f.a.d59b5365,
-        Il = f.a.bfb01c62,
-        Tl = { headline: tl, subtext: El, actionLabel: nl, tertiaryActionLabel: Il },
-        ul = Vo(Vo({}, Tl), {}, { subtext: sl }),
-        Nl = { headline: tl, subtext: El, actionLabel: nl, tertiaryActionLabel: Il },
-        dl = f.a.ibd16281,
-        _l = f.a.d5254e1b,
-        pl = f.a.h45b00d7,
-        Ol = f.a.bd9d7f96,
-        bl = f.a.g32c2900,
-        Al = f.a.e6327f3b,
-        Rl = f.a.c7f75eab,
-        fl = f.a.eb08a392,
-        Cl = f.a.je4c4696,
-        ml = f.a.dcc23261,
-        Sl = f.a.h96ba9b6,
-        Ll = f.a.e4610048,
-        yl = f.a.dedf41f1,
-        hl = f.a.c78e091a,
-        Dl = f.a.g5657ec3,
-        Fl = f.a.baf718c3,
-        Ul = f.a.c65bbbc1,
-        vl = f.a.i31e3606,
-        Ml = f.a.d85ef4a7,
-        Pl = f.a.ddb19f72,
-        gl = f.a.a8d332f2,
-        Yl = f.a.f7afbaeb,
-        Gl = f.a.d4ab0055,
-        xl = f.a.d2a77621,
-        Bl = f.a.e23b92c5,
-        Vl = f.a.b03ae068,
-        wl = f.a.g0daba49,
-        Wl = f.a.h85524c4,
-        kl = f.a.cdcd9cd5,
-        jl = f.a.gcee7aad,
-        Hl = f.a.e6dc91b1,
-        Kl = f.a.ga603b22,
-        ql =
-          ((Ro = { header: Wo }),
+      var jo,
+        Ho = f.a.i79902b4,
+        Ko = f.a.fb2fcb5b,
+        qo = f.a.e43425fa,
+        zo = f.a.cb7c2e2e,
+        Qo = f.a.a411926a,
+        $o = f.a.g253cddf,
+        Zo = f.a.cf93bcbf,
+        Jo = f.a.ca5fb0d4,
+        Xo = f.a.g40cd2c0,
+        el = { title: Ho, description: Ko },
+        tl =
+          ((co = {}),
+          b()(co, L.d.IDENTITY_DOCUMENT, { label: qo, subtext: zo }),
+          b()(co, L.d.EMAIL, { label: Qo, subtext: $o }),
+          b()(co, L.d.WEBSITE, { label: Zo, subtext: Jo }),
+          co),
+        al = ko(ko({}, el), {}, { items: ko({}, tl) }),
+        nl = { title: f.a.a7f1cff6, description: f.a.ce40e7a5, websiteLabel: Zo },
+        il = f.a.dff1555f,
+        rl = f.a.ed751204,
+        ol = f.a.fbc023bf,
+        ll = { headline: il, subtext: rl, actionLabel: ol, tertiaryActionLabel: f.a.e785ce06 },
+        cl = f.a.i8d58f3d,
+        El = ko(ko({}, ll), {}, { tertiaryActionLabel: cl }),
+        sl = f.a.eb21eca9,
+        Il = ko(ko({}, ll), {}, { tertiaryActionLabel: sl }),
+        Tl = f.a.f848a69d,
+        ul = f.a.d59b5365,
+        Nl = f.a.bfb01c62,
+        dl = { headline: il, subtext: Tl, actionLabel: ol, tertiaryActionLabel: Nl },
+        _l = ko(ko({}, dl), {}, { subtext: ul }),
+        pl = { headline: il, subtext: Tl, actionLabel: ol, tertiaryActionLabel: Nl },
+        Ol = f.a.ibd16281,
+        bl = f.a.d5254e1b,
+        Al = f.a.h45b00d7,
+        Rl = f.a.bd9d7f96,
+        fl = f.a.g32c2900,
+        Cl = f.a.e6327f3b,
+        ml = f.a.c7f75eab,
+        Sl = f.a.eb08a392,
+        Ll = f.a.je4c4696,
+        yl = f.a.dcc23261,
+        hl = f.a.h96ba9b6,
+        Dl = f.a.e4610048,
+        Fl = f.a.dedf41f1,
+        Ul = f.a.c78e091a,
+        vl = f.a.g5657ec3,
+        Ml = f.a.baf718c3,
+        Pl = f.a.c65bbbc1,
+        gl = f.a.i31e3606,
+        Gl = f.a.d85ef4a7,
+        Yl = f.a.ddb19f72,
+        xl = f.a.a8d332f2,
+        Bl = f.a.f7afbaeb,
+        Vl = f.a.d4ab0055,
+        wl = f.a.d2a77621,
+        Wl = f.a.e23b92c5,
+        kl = f.a.b03ae068,
+        jl = f.a.g0daba49,
+        Hl = f.a.h85524c4,
+        Kl = f.a.cdcd9cd5,
+        ql = f.a.gcee7aad,
+        zl = f.a.e6dc91b1,
+        Ql = f.a.ga603b22,
+        $l =
+          ((mo = { header: Ho }),
           b()(
-            Ro,
+            mo,
             L.l.ACTIVISM,
             b()({}, L.b.ACTIVIST, {
-              description: ml,
-              items:
-                ((oo = {}),
-                b()(oo, L.d.IDENTITY_DOCUMENT, { label: jo, subtext: Ho }),
-                b()(oo, L.d.WEBSITE, { label: zo, subtext: Sl, description: Ll, inputLabel: $o }),
-                oo),
-            }),
-          ),
-          b()(
-            Ro,
-            L.l.INFLUENCER_OTHER,
-            b()({}, L.j.INFLUENTIAL_INDIVIDUAL, {
               description: yl,
               items:
-                ((lo = {}),
-                b()(lo, L.d.IDENTITY_DOCUMENT, { label: jo, subtext: Ho }),
-                b()(lo, L.d.WEBSITE, { label: zo, subtext: hl, description: Dl, inputLabel: $o }),
-                lo),
-            }),
-          ),
-          b()(
-            Ro,
-            L.l.COMPANY,
-            ((so = {}),
-            b()(so, L.e.COMPANY, {
-              description: Fl,
-              items:
-                ((co = {}),
-                b()(co, L.d.EMAIL, { label: Ko, subtext: vl }),
-                b()(co, L.d.WEBSITE, { label: zo, subtext: Ol, description: Pl, inputLabel: $o }),
-                co),
-            }),
-            b()(so, L.e.EXECUTIVE, {
-              description: Ul,
-              items:
                 ((Eo = {}),
-                b()(Eo, L.d.IDENTITY_DOCUMENT, { label: jo, subtext: Ho }),
-                b()(Eo, L.d.EMAIL, { label: Ko, subtext: vl }),
-                b()(Eo, L.d.WEBSITE, { label: zo, subtext: Ml, description: gl, inputLabel: $o }),
+                b()(Eo, L.d.IDENTITY_DOCUMENT, { label: qo, subtext: zo }),
+                b()(Eo, L.d.WEBSITE, { label: Zo, subtext: hl, description: Dl, inputLabel: Xo }),
                 Eo),
             }),
-            so),
           ),
           b()(
-            Ro,
-            L.l.ENTERTAINMENT,
-            ((Io = {}),
-            b()(Io, L.f.ENTERTAINMENT_COMPANY, {
-              description: pl,
-              items: b()({}, L.d.WEBSITE, { label: zo, subtext: Rl, description: Pl, inputLabel: $o }),
+            mo,
+            L.l.INFLUENCER_OTHER,
+            b()({}, L.j.INFLUENTIAL_INDIVIDUAL, {
+              description: Fl,
+              items:
+                ((so = {}),
+                b()(so, L.d.IDENTITY_DOCUMENT, { label: qo, subtext: zo }),
+                b()(so, L.d.WEBSITE, { label: Zo, subtext: Ul, description: vl, inputLabel: Xo }),
+                so),
             }),
-            b()(Io, L.f.PRODUCTION, {
-              description: bl,
-              items: b()({}, L.d.WEBSITE, { label: zo, subtext: Rl, description: Al, inputLabel: $o }),
-            }),
-            Io),
           ),
           b()(
-            Ro,
-            L.l.GOVERNMENT,
-            b()({}, L.i.CANDIDATE, {
-              description: fl,
+            mo,
+            L.l.COMPANY,
+            ((uo = {}),
+            b()(uo, L.e.COMPANY, {
+              description: Ml,
+              items:
+                ((Io = {}),
+                b()(Io, L.d.EMAIL, { label: Qo, subtext: gl }),
+                b()(Io, L.d.WEBSITE, { label: Zo, subtext: Rl, description: Yl, inputLabel: Xo }),
+                Io),
+            }),
+            b()(uo, L.e.EXECUTIVE, {
+              description: Pl,
               items:
                 ((To = {}),
-                b()(To, L.d.IDENTITY_DOCUMENT, { label: jo, subtext: Ho }),
-                b()(To, L.d.WEBSITE, { label: zo, subtext: Ol, description: Cl, inputLabel: $o }),
+                b()(To, L.d.IDENTITY_DOCUMENT, { label: qo, subtext: zo }),
+                b()(To, L.d.EMAIL, { label: Qo, subtext: gl }),
+                b()(To, L.d.WEBSITE, { label: Zo, subtext: Gl, description: xl, inputLabel: Xo }),
                 To),
             }),
+            uo),
           ),
           b()(
-            Ro,
-            L.l.NEWS,
-            ((po = {}),
-            b()(po, L.k.FREELANCER, {
-              description: Gl,
-              items:
-                ((uo = {}),
-                b()(uo, L.d.IDENTITY_DOCUMENT, { label: jo, subtext: Ho }),
-                b()(uo, L.d.WEBSITE, { label: zo, subtext: Bl, description: dl }),
-                uo),
+            mo,
+            L.l.ENTERTAINMENT,
+            ((No = {}),
+            b()(No, L.f.ENTERTAINMENT_COMPANY, {
+              description: Al,
+              items: b()({}, L.d.WEBSITE, { label: Zo, subtext: ml, description: Yl, inputLabel: Xo }),
             }),
-            b()(po, L.k.JOURNALIST, {
-              description: Yl,
-              items:
-                ((No = {}),
-                b()(No, L.d.IDENTITY_DOCUMENT, { label: jo, subtext: Ho }),
-                b()(No, L.d.EMAIL, { label: Ko, subtext: xl }),
-                b()(No, L.d.WEBSITE, { label: zo, subtext: Bl, description: dl }),
-                No),
+            b()(No, L.f.PRODUCTION, {
+              description: fl,
+              items: b()({}, L.d.WEBSITE, { label: Zo, subtext: ml, description: Cl, inputLabel: Xo }),
             }),
-            b()(po, L.k.ORGANIZATION, {
-              description: Vl,
+            No),
+          ),
+          b()(
+            mo,
+            L.l.GOVERNMENT,
+            b()({}, L.i.CANDIDATE, {
+              description: Sl,
               items:
                 ((_o = {}),
-                b()(_o, L.d.EMAIL, { label: Ko, subtext: xl }),
-                b()(_o, L.d.WEBSITE, { label: zo, subtext: Ol, description: _l }),
+                b()(_o, L.d.IDENTITY_DOCUMENT, { label: qo, subtext: zo }),
+                b()(_o, L.d.WEBSITE, { label: Zo, subtext: Rl, description: Ll, inputLabel: Xo }),
                 _o),
             }),
-            po),
           ),
           b()(
-            Ro,
-            L.l.SPORTS,
+            mo,
+            L.l.NEWS,
             ((Ao = {}),
-            b()(Ao, L.q.SPORTS_INDIVIDUAL, {
-              description: Hl,
+            b()(Ao, L.k.FREELANCER, {
+              description: Vl,
+              items:
+                ((po = {}),
+                b()(po, L.d.IDENTITY_DOCUMENT, { label: qo, subtext: zo }),
+                b()(po, L.d.WEBSITE, { label: Zo, subtext: Wl, description: Ol }),
+                po),
+            }),
+            b()(Ao, L.k.JOURNALIST, {
+              description: Bl,
               items:
                 ((Oo = {}),
-                b()(Oo, L.d.IDENTITY_DOCUMENT, { label: jo, subtext: Ho }),
-                b()(Oo, L.d.WEBSITE, { label: zo, subtext: Ol, description: Kl }),
+                b()(Oo, L.d.IDENTITY_DOCUMENT, { label: qo, subtext: zo }),
+                b()(Oo, L.d.EMAIL, { label: Qo, subtext: wl }),
+                b()(Oo, L.d.WEBSITE, { label: Zo, subtext: Wl, description: Ol }),
                 Oo),
             }),
-            b()(Ao, L.q.SPORTS_ENTITY, {
+            b()(Ao, L.k.ORGANIZATION, {
               description: kl,
-              items: b()({}, L.d.WEBSITE, { label: zo, subtext: Ol, description: jl }),
-            }),
-            b()(Ao, L.q.GAMING_INDIVIDUAL, {
-              description: wl,
               items:
                 ((bo = {}),
-                b()(bo, L.d.IDENTITY_DOCUMENT, { label: jo, subtext: Ho }),
-                b()(bo, L.d.WEBSITE, { label: zo, subtext: Ol, description: Wl }),
+                b()(bo, L.d.EMAIL, { label: Qo, subtext: wl }),
+                b()(bo, L.d.WEBSITE, { label: Zo, subtext: Rl, description: bl }),
                 bo),
             }),
             Ao),
           ),
-          Ro)
-      function zl(e, t) {
+          b()(
+            mo,
+            L.l.SPORTS,
+            ((Co = {}),
+            b()(Co, L.q.SPORTS_INDIVIDUAL, {
+              description: zl,
+              items:
+                ((Ro = {}),
+                b()(Ro, L.d.IDENTITY_DOCUMENT, { label: qo, subtext: zo }),
+                b()(Ro, L.d.WEBSITE, { label: Zo, subtext: Rl, description: Ql }),
+                Ro),
+            }),
+            b()(Co, L.q.SPORTS_ENTITY, {
+              description: Kl,
+              items: b()({}, L.d.WEBSITE, { label: Zo, subtext: Rl, description: ql }),
+            }),
+            b()(Co, L.q.GAMING_INDIVIDUAL, {
+              description: jl,
+              items:
+                ((fo = {}),
+                b()(fo, L.d.IDENTITY_DOCUMENT, { label: qo, subtext: zo }),
+                b()(fo, L.d.WEBSITE, { label: Zo, subtext: Rl, description: Hl }),
+                fo),
+            }),
+            Co),
+          ),
+          mo)
+      function Zl(e, t) {
         var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -4989,29 +4996,29 @@
         }
         return a
       }
-      function Ql(e) {
+      function Jl(e) {
         for (var t = 1; t < arguments.length; t++) {
           var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? zl(Object(a), !0).forEach(function (t) {
+            ? Zl(Object(a), !0).forEach(function (t) {
                 b()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
-            : zl(Object(a)).forEach(function (t) {
+            : Zl(Object(a)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var $l,
-        Zl = function (e, t) {
-          return e && t ? ql[e][t] : Xo
+      var Xl,
+        ec = function (e, t) {
+          return e && t ? $l[e][t] : al
         },
-        Jl = function (e, t, a) {
-          var n = Zl(t, a).items,
-            i = Go
-          t && a ? (i = xo[t].subtype[a]) : t && (i = xo[t])
+        tc = function (e, t, a) {
+          var n = ec(t, a).items,
+            i = Vo
+          t && a ? (i = wo[t].subtype[a]) : t && (i = wo[t])
           var r = []
           return (
             i.hasId &&
@@ -5026,16 +5033,16 @@
             r
           )
         },
-        Xl = Object.freeze(
-          ((wo = {}),
-          b()(wo, L.h.AUTHENTICITY_TYPE_SELECT, function (e) {
+        ac = Object.freeze(
+          ((jo = {}),
+          b()(jo, L.h.AUTHENTICITY_TYPE_SELECT, function (e) {
             var t = e.notabilityCategory,
               a = e.notabilitySubcategory,
               n = e.userEmail
             return {
               type: 'radio',
               props: {
-                description: Zl(t, a).description,
+                description: ec(t, a).description,
                 getNextFormStep: function (e) {
                   switch (e) {
                     case L.d.IDENTITY_DOCUMENT:
@@ -5048,25 +5055,25 @@
                       return L.h.THANK_YOU
                   }
                 },
-                items: Jl(n, t, a),
-                title: Xo.title,
+                items: tc(n, t, a),
+                title: al.title,
               },
             }
           }),
-          b()(wo, L.h.SITE_VERIFICATION, function (e) {
+          b()(jo, L.h.SITE_VERIFICATION, function (e) {
             var t = e.notabilityCategory,
               a = e.notabilitySubcategory,
-              n = Zl(t, a).items[L.d.WEBSITE]
+              n = ec(t, a).items[L.d.WEBSITE]
             return {
               type: 'input',
               props: {
-                title: el.title,
-                description: n.description || el.description,
-                items: [{ dataKey: L.c.WEBSITE, label: n.inputLabel || el.websiteLabel, required: !0 }],
+                title: nl.title,
+                description: n.description || nl.description,
+                items: [{ dataKey: L.c.WEBSITE, label: n.inputLabel || nl.websiteLabel, required: !0 }],
               },
             }
           }),
-          b()(wo, L.h.WEBSITE_REFERENCE_CONFIRM_AUTOFILL, function (e) {
+          b()(jo, L.h.WEBSITE_REFERENCE_CONFIRM_AUTOFILL, function (e) {
             var t,
               a,
               n,
@@ -5097,39 +5104,39 @@
               case L.l.SPORTS:
                 T = null !== (r = null == l ? void 0 : l.teamReferenceUrl) && void 0 !== r ? r : []
             }
-            var u = il,
+            var u = ll,
               N = function () {
                 return s(L.h.AUTHENTICITY_TYPE_SELECT)
               }
             switch (c) {
               case L.n.CONTENT_CREATOR:
-                ;(u = ul),
+                ;(u = _l),
                   (N = function () {
                     return I()
                   })
                 break
               case L.n.ENTERTAINMENT_INDIVIDUAL:
-                ;(u = Tl),
+                ;(u = dl),
                   (N = function () {
                     return I()
                   })
                 break
               case L.n.OFFICE:
-                ;(u = cl),
+                ;(u = Il),
                   (N = function () {
                     E(L.h.AUTHENTICITY_TYPE_SELECT, L.d.EMAIL), s(L.h.EMAIL_VERIFICATION)
                   })
                 break
               case L.n.OFFICIAL:
-                ;(u = ol),
+                ;(u = El),
                   (N = function () {
                     E(L.h.AUTHENTICITY_TYPE_SELECT, L.d.IDENTITY_DOCUMENT), s(L.h.INTAKE_TYPE_SELECT)
                   })
             }
             return {
               type: 'info',
-              props: Ql(
-                Ql({}, u),
+              props: Jl(
+                Jl({}, u),
                 {},
                 {
                   onAction: function () {
@@ -5144,11 +5151,11 @@
               ),
             }
           }),
-          b()(wo, L.h.WEBSITE_REFERENCE_CONFIRM_PROCEED, { type: 'info', props: Ql({}, Nl) }),
-          wo),
+          b()(jo, L.h.WEBSITE_REFERENCE_CONFIRM_PROCEED, { type: 'info', props: Jl({}, pl) }),
+          jo),
         )
       a('i4UL')
-      function ec(e, t) {
+      function nc(e, t) {
         var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -5160,25 +5167,25 @@
         }
         return a
       }
-      function tc(e) {
+      function ic(e) {
         for (var t = 1; t < arguments.length; t++) {
           var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? ec(Object(a), !0).forEach(function (t) {
+            ? nc(Object(a), !0).forEach(function (t) {
                 b()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
-            : ec(Object(a)).forEach(function (t) {
+            : nc(Object(a)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var ac,
-        nc = Object.freeze(
-          (($l = {}),
-          b()($l, L.h.NOTABILITY_CATEGORY_SELECT, function (e) {
+      var rc,
+        oc = Object.freeze(
+          ((Xl = {}),
+          b()(Xl, L.h.NOTABILITY_CATEGORY_SELECT, function (e) {
             var t = e.followersEligible,
               a = void 0 !== t && t,
               n = e.mentionsEligible,
@@ -5220,16 +5227,16 @@
               },
             }
           }),
-          b()($l, L.h.ACTIVIST_QUALIFICATIONS, {
+          b()(Xl, L.h.ACTIVIST_QUALIFICATIONS, {
             type: 'radio',
             props: {
               title: Fa.title,
               description: Fa.description,
               items: [
-                tc(tc({}, Fa.items[0]), {}, { value: L.m.GOOGLE }),
-                tc(tc({}, Fa.items[1]), {}, { value: L.m.WIKIPEDIA }),
-                tc(tc({}, Fa.items[2]), {}, { value: L.m.NEWS }),
-                tc(tc({}, Fa.items[3]), {}, { value: L.m.LEADERSHIP }),
+                ic(ic({}, Fa.items[0]), {}, { value: L.m.GOOGLE }),
+                ic(ic({}, Fa.items[1]), {}, { value: L.m.WIKIPEDIA }),
+                ic(ic({}, Fa.items[2]), {}, { value: L.m.NEWS }),
+                ic(ic({}, Fa.items[3]), {}, { value: L.m.LEADERSHIP }),
               ],
               getNextFormStep: function (e) {
                 return e === L.m.GOOGLE
@@ -5244,7 +5251,7 @@
               },
             },
           }),
-          b()($l, L.h.ACTIVIST_GOOGLE_TRENDS, {
+          b()(Xl, L.h.ACTIVIST_GOOGLE_TRENDS, {
             type: 'input',
             props: {
               title: va.title,
@@ -5252,16 +5259,16 @@
               items: [{ dataKey: L.m.GOOGLE, label: va.label, required: !0 }],
             },
           }),
-          b()($l, L.h.ACTIVIST_LEADERSHIP, {
+          b()(Xl, L.h.ACTIVIST_LEADERSHIP, {
             type: 'input',
             props: {
-              title: Ga.title,
-              description: Ga.description,
-              items: [{ dataKey: L.m.LEADERSHIP, label: Ga.label, required: !0 }],
-              confirmationText: Ga.confirmationText,
+              title: Ya.title,
+              description: Ya.description,
+              items: [{ dataKey: L.m.LEADERSHIP, label: Ya.label, required: !0 }],
+              confirmationText: Ya.confirmationText,
             },
           }),
-          b()($l, L.h.ACTIVIST_NEWS, {
+          b()(Xl, L.h.ACTIVIST_NEWS, {
             type: 'input',
             props: {
               title: ga.title,
@@ -5272,7 +5279,7 @@
               maxItems: 10,
             },
           }),
-          b()($l, L.h.ACTIVIST_WIKIPEDIA, {
+          b()(Xl, L.h.ACTIVIST_WIKIPEDIA, {
             type: 'input',
             props: {
               title: Pa.title,
@@ -5280,7 +5287,7 @@
               items: [{ dataKey: L.m.WIKIPEDIA, label: Pa.label, required: !0 }],
             },
           }),
-          b()($l, L.h.ACTIVIST_QUALIFICATIONS_INELIGIBLE, {
+          b()(Xl, L.h.ACTIVIST_QUALIFICATIONS_INELIGIBLE, {
             type: 'info',
             props: {
               headline: Fa.notEligibleTitle,
@@ -5288,15 +5295,15 @@
               actionLabel: Fa.notEligibleButton,
             },
           }),
-          b()($l, L.h.COMPANY_SUBCATEGORY, {
+          b()(Xl, L.h.COMPANY_SUBCATEGORY, {
             type: 'radio',
-            props: tc(
-              tc({}, en),
+            props: ic(
+              ic({}, en),
               {},
               {
                 items: [
-                  tc(tc({}, en.items[0]), {}, { value: L.e.COMPANY }),
-                  tc(tc({}, en.items[1]), {}, { value: L.e.EXECUTIVE }),
+                  ic(ic({}, en.items[0]), {}, { value: L.e.COMPANY }),
+                  ic(ic({}, en.items[1]), {}, { value: L.e.EXECUTIVE }),
                 ],
                 getNextFormStep: function (e) {
                   return e === L.e.COMPANY
@@ -5308,19 +5315,19 @@
               },
             ),
           }),
-          b()($l, L.h.COMPANY_NOTABILITY_METHOD, function (e) {
+          b()(Xl, L.h.COMPANY_NOTABILITY_METHOD, function (e) {
             var t = e.followersEligible,
               a = void 0 !== t && t,
               n = [
-                tc(tc({}, an.items[0]), {}, { value: L.m.GOOGLE }),
-                tc(tc({}, an.items[1]), {}, { value: L.m.WIKIPEDIA }),
-                tc(tc({}, an.items[2]), {}, { value: L.m.STOCK }),
-                tc(tc({}, an.items[3]), {}, { value: L.m.NEWS }),
+                ic(ic({}, an.items[0]), {}, { value: L.m.GOOGLE }),
+                ic(ic({}, an.items[1]), {}, { value: L.m.WIKIPEDIA }),
+                ic(ic({}, an.items[2]), {}, { value: L.m.STOCK }),
+                ic(ic({}, an.items[3]), {}, { value: L.m.NEWS }),
               ]
             return {
               type: 'radio',
-              props: tc(
-                tc({}, an),
+              props: ic(
+                ic({}, an),
                 {},
                 {
                   items: a ? n : n.slice(0, -1),
@@ -5339,7 +5346,7 @@
               ),
             }
           }),
-          b()($l, L.h.COMPANY_GOOGLE_TRENDS, function (e) {
+          b()(Xl, L.h.COMPANY_GOOGLE_TRENDS, function (e) {
             var t = e.followersEligible
             return {
               type: 'input',
@@ -5351,7 +5358,7 @@
               },
             }
           }),
-          b()($l, L.h.COMPANY_WIKIPEDIA, function (e) {
+          b()(Xl, L.h.COMPANY_WIKIPEDIA, function (e) {
             var t = e.followersEligible
             return {
               type: 'input',
@@ -5363,7 +5370,7 @@
               },
             }
           }),
-          b()($l, L.h.COMPANY_STOCK_EXCHANGE, function (e) {
+          b()(Xl, L.h.COMPANY_STOCK_EXCHANGE, function (e) {
             var t = e.followersEligible
             return {
               type: 'input',
@@ -5375,7 +5382,7 @@
               },
             }
           }),
-          b()($l, L.h.COMPANY_NEWS_REFERENCE, {
+          b()(Xl, L.h.COMPANY_NEWS_REFERENCE, {
             type: 'input',
             props: {
               title: In.title,
@@ -5385,16 +5392,16 @@
               addFieldText: In.addFieldText,
             },
           }),
-          b()($l, L.h.COMPANY_INDIVIDUAL_SCREENNAME_CONFIRM, { type: 'screenName', props: tc({}, Nn) }),
-          b()($l, L.h.COMPANY_INDIVIDUAL_NOTABILITY_METHOD, {
+          b()(Xl, L.h.COMPANY_INDIVIDUAL_SCREENNAME_CONFIRM, { type: 'screenName', props: ic({}, Nn) }),
+          b()(Xl, L.h.COMPANY_INDIVIDUAL_NOTABILITY_METHOD, {
             type: 'radio',
-            props: tc(
-              tc({}, _n),
+            props: ic(
+              ic({}, _n),
               {},
               {
                 items: [
-                  tc(tc({}, _n.items[0]), {}, { value: L.m.NEWS }),
-                  tc(tc({}, _n.items[1]), {}, { value: L.m.LEADERSHIP }),
+                  ic(ic({}, _n.items[0]), {}, { value: L.m.NEWS }),
+                  ic(ic({}, _n.items[1]), {}, { value: L.m.LEADERSHIP }),
                 ],
                 getNextFormStep: function (e) {
                   return e === L.m.NEWS
@@ -5406,26 +5413,26 @@
               },
             ),
           }),
-          b()($l, L.h.COMPANY_INDIVIDUAL_NEWS_REFERENCE, {
-            type: 'input',
-            props: {
-              title: pn.title,
-              description: pn.description,
-              items: Ze()(Array(3).fill({ dataKey: L.m.NEWS, labelGenerator: pn.articleLabelGenerator, required: !0 })),
-              allowAddFields: !0,
-              addFieldText: pn.addFieldText,
-            },
-          }),
-          b()($l, L.h.COMPANY_INDIVIDUAL_LEADERSHIP, {
+          b()(Xl, L.h.COMPANY_INDIVIDUAL_NEWS_REFERENCE, {
             type: 'input',
             props: {
               title: On.title,
               description: On.description,
-              items: [{ dataKey: L.m.LEADERSHIP, label: On.label, required: !0 }],
-              confirmationText: On.confirmationText,
+              items: Ze()(Array(3).fill({ dataKey: L.m.NEWS, labelGenerator: On.articleLabelGenerator, required: !0 })),
+              allowAddFields: !0,
+              addFieldText: On.addFieldText,
             },
           }),
-          b()($l, L.h.ENTERTAINMENT_COMPANY_GOOGLE_TRENDS, function (e) {
+          b()(Xl, L.h.COMPANY_INDIVIDUAL_LEADERSHIP, {
+            type: 'input',
+            props: {
+              title: bn.title,
+              description: bn.description,
+              items: [{ dataKey: L.m.LEADERSHIP, label: bn.label, required: !0 }],
+              confirmationText: bn.confirmationText,
+            },
+          }),
+          b()(Xl, L.h.ENTERTAINMENT_COMPANY_GOOGLE_TRENDS, function (e) {
             var t = e.followersEligible,
               a = void 0 !== t && t,
               n = e.mentionsEligible,
@@ -5433,38 +5440,38 @@
             return {
               type: 'input',
               props: {
-                title: vn.title,
-                description: vn.description,
-                items: [{ dataKey: L.m.GOOGLE, label: vn.label, required: !0 }],
+                title: Mn.title,
+                description: Mn.description,
+                items: [{ dataKey: L.m.GOOGLE, label: Mn.label, required: !0 }],
                 nextFormStep: a || i ? L.h.AUTHENTICITY_TYPE_SELECT : L.h.ENTERTAINMENT_COMPANY_NEWS_REFERENCE,
               },
             }
           }),
-          b()($l, L.h.ENTERTAINMENT_COMPANY_NEWS_REFERENCE, {
+          b()(Xl, L.h.ENTERTAINMENT_COMPANY_NEWS_REFERENCE, {
             type: 'input',
             props: {
-              title: Mn.title,
-              description: Mn.description,
-              items: Ze()(Array(3).fill({ dataKey: L.m.NEWS, labelGenerator: Mn.articleLabelGenerator, required: !0 })),
+              title: Pn.title,
+              description: Pn.description,
+              items: Ze()(Array(3).fill({ dataKey: L.m.NEWS, labelGenerator: Pn.articleLabelGenerator, required: !0 })),
               allowAddFields: !0,
-              addFieldText: Mn.addFieldText,
+              addFieldText: Pn.addFieldText,
             },
           }),
-          b()($l, L.h.ENTERTAINMENT_COMPANY_NOTABILITY_METHOD, function (e) {
+          b()(Xl, L.h.ENTERTAINMENT_COMPANY_NOTABILITY_METHOD, function (e) {
             var t = e.followersEligible,
               a = void 0 !== t && t,
               n = e.mentionsEligible,
               i = void 0 !== n && n,
               r = [
-                tc(tc({}, Un.items[0]), {}, { value: L.m.GOOGLE }),
-                tc(tc({}, Un.items[1]), {}, { value: L.m.WIKIPEDIA }),
-                tc(tc({}, Un.items[2]), {}, { value: L.m.STOCK }),
-                tc(tc({}, Un.items[3]), {}, { value: L.m.NEWS }),
+                ic(ic({}, vn.items[0]), {}, { value: L.m.GOOGLE }),
+                ic(ic({}, vn.items[1]), {}, { value: L.m.WIKIPEDIA }),
+                ic(ic({}, vn.items[2]), {}, { value: L.m.STOCK }),
+                ic(ic({}, vn.items[3]), {}, { value: L.m.NEWS }),
               ]
             return {
               type: 'radio',
-              props: tc(
-                tc({}, Un),
+              props: ic(
+                ic({}, vn),
                 {},
                 {
                   items: a || i ? r : r.slice(0, -1),
@@ -5483,22 +5490,7 @@
               ),
             }
           }),
-          b()($l, L.h.ENTERTAINMENT_COMPANY_STOCK_REFERENCE, function (e) {
-            var t = e.followersEligible,
-              a = void 0 !== t && t,
-              n = e.mentionsEligible,
-              i = void 0 !== n && n
-            return {
-              type: 'input',
-              props: {
-                title: Pn.title,
-                description: Pn.description,
-                items: [{ dataKey: L.m.STOCK, label: Pn.label, required: !0 }],
-                nextFormStep: a || i ? L.h.AUTHENTICITY_TYPE_SELECT : L.h.ENTERTAINMENT_COMPANY_NEWS_REFERENCE,
-              },
-            }
-          }),
-          b()($l, L.h.ENTERTAINMENT_COMPANY_WIKIPEDIA, function (e) {
+          b()(Xl, L.h.ENTERTAINMENT_COMPANY_STOCK_REFERENCE, function (e) {
             var t = e.followersEligible,
               a = void 0 !== t && t,
               n = e.mentionsEligible,
@@ -5508,46 +5500,61 @@
               props: {
                 title: gn.title,
                 description: gn.description,
-                items: [{ dataKey: L.m.WIKIPEDIA, label: gn.label, required: !0 }],
+                items: [{ dataKey: L.m.STOCK, label: gn.label, required: !0 }],
                 nextFormStep: a || i ? L.h.AUTHENTICITY_TYPE_SELECT : L.h.ENTERTAINMENT_COMPANY_NEWS_REFERENCE,
               },
             }
           }),
-          b()($l, L.h.ENTERTAINMENT_INDIVIDUAL_IMDB_URL, {
-            type: 'input',
-            props: {
-              title: $n.title,
-              description: $n.description,
-              items: [{ dataKey: L.m.IMDB, label: $n.label, required: !0 }],
-            },
+          b()(Xl, L.h.ENTERTAINMENT_COMPANY_WIKIPEDIA, function (e) {
+            var t = e.followersEligible,
+              a = void 0 !== t && t,
+              n = e.mentionsEligible,
+              i = void 0 !== n && n
+            return {
+              type: 'input',
+              props: {
+                title: Gn.title,
+                description: Gn.description,
+                items: [{ dataKey: L.m.WIKIPEDIA, label: Gn.label, required: !0 }],
+                nextFormStep: a || i ? L.h.AUTHENTICITY_TYPE_SELECT : L.h.ENTERTAINMENT_COMPANY_NEWS_REFERENCE,
+              },
+            }
           }),
-          b()($l, L.h.ENTERTAINMENT_INDIVIDUAL_MAIN_REFERENCE_URL, {
-            type: 'input',
-            props: {
-              title: Jn.title,
-              description: Jn.description,
-              items: [{ dataKey: L.m.MAIN, label: Jn.label, required: !0 }],
-            },
-          }),
-          b()($l, L.h.ENTERTAINMENT_INDIVIDUAL_NEWS_COVERAGE_URLS, {
+          b()(Xl, L.h.ENTERTAINMENT_INDIVIDUAL_IMDB_URL, {
             type: 'input',
             props: {
               title: Zn.title,
               description: Zn.description,
+              items: [{ dataKey: L.m.IMDB, label: Zn.label, required: !0 }],
+            },
+          }),
+          b()(Xl, L.h.ENTERTAINMENT_INDIVIDUAL_MAIN_REFERENCE_URL, {
+            type: 'input',
+            props: {
+              title: Xn.title,
+              description: Xn.description,
+              items: [{ dataKey: L.m.MAIN, label: Xn.label, required: !0 }],
+            },
+          }),
+          b()(Xl, L.h.ENTERTAINMENT_INDIVIDUAL_NEWS_COVERAGE_URLS, {
+            type: 'input',
+            props: {
+              title: Jn.title,
+              description: Jn.description,
               items: Ze()(Array(3).fill({ dataKey: L.m.NEWS, labelGenerator: In.articleLabelGenerator, required: !0 })),
-              addFieldText: Zn.addFieldText,
+              addFieldText: Jn.addFieldText,
               allowAddFields: !0,
               maxItems: 10,
             },
           }),
-          b()($l, L.h.ENTERTAINMENT_INDIVIDUAL_QUALIFICATIONS, {
+          b()(Xl, L.h.ENTERTAINMENT_INDIVIDUAL_QUALIFICATIONS, {
             type: 'radio',
             props: {
-              title: Qn.title,
-              description: Qn.description,
+              title: $n.title,
+              description: $n.description,
               items: [
-                { helpText: Qn.items[0].description, label: Qn.items[0].label, value: L.m.IMDB },
-                { helpText: Qn.items[1].description, label: Qn.items[1].label, value: L.m.NEWS },
+                { helpText: $n.items[0].description, label: $n.items[0].label, value: L.m.IMDB },
+                { helpText: $n.items[1].description, label: $n.items[1].label, value: L.m.NEWS },
               ],
               getNextFormStep: function (e) {
                 return e === L.m.IMDB
@@ -5558,7 +5565,7 @@
               },
             },
           }),
-          b()($l, L.h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_GOOGLE_TRENDS, function (e) {
+          b()(Xl, L.h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_GOOGLE_TRENDS, function (e) {
             var t = e.followersEligible,
               a = void 0 !== t && t,
               n = e.mentionsEligible,
@@ -5566,39 +5573,39 @@
             return {
               type: 'input',
               props: {
-                title: Sn.title,
-                description: Sn.description,
-                items: [{ dataKey: L.m.GOOGLE, label: Sn.label, required: !0 }],
+                title: Ln.title,
+                description: Ln.description,
+                items: [{ dataKey: L.m.GOOGLE, label: Ln.label, required: !0 }],
                 nextFormStep:
                   a || i ? L.h.AUTHENTICITY_TYPE_SELECT : L.h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NEWS_REFERENCE,
               },
             }
           }),
-          b()($l, L.h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NEWS_REFERENCE, {
+          b()(Xl, L.h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NEWS_REFERENCE, {
             type: 'input',
             props: {
-              title: Ln.title,
-              description: Ln.description,
-              items: Ze()(Array(3).fill({ dataKey: L.m.NEWS, labelGenerator: Ln.articleLabelGenerator, required: !0 })),
+              title: yn.title,
+              description: yn.description,
+              items: Ze()(Array(3).fill({ dataKey: L.m.NEWS, labelGenerator: yn.articleLabelGenerator, required: !0 })),
               allowAddFields: !0,
-              addFieldText: Ln.addFieldText,
+              addFieldText: yn.addFieldText,
             },
           }),
-          b()($l, L.h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NOTABILITY_METHOD, function (e) {
+          b()(Xl, L.h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NOTABILITY_METHOD, function (e) {
             var t = e.followersEligible,
               a = void 0 !== t && t,
               n = e.mentionsEligible,
               i = void 0 !== n && n,
               r = [
-                tc(tc({}, yn.items[0]), {}, { value: L.m.GOOGLE }),
-                tc(tc({}, yn.items[1]), {}, { value: L.m.WIKIPEDIA }),
-                tc(tc({}, yn.items[2]), {}, { value: L.m.STOCK }),
-                tc(tc({}, yn.items[3]), {}, { value: L.m.NEWS }),
+                ic(ic({}, hn.items[0]), {}, { value: L.m.GOOGLE }),
+                ic(ic({}, hn.items[1]), {}, { value: L.m.WIKIPEDIA }),
+                ic(ic({}, hn.items[2]), {}, { value: L.m.STOCK }),
+                ic(ic({}, hn.items[3]), {}, { value: L.m.NEWS }),
               ]
             return {
               type: 'radio',
-              props: tc(
-                tc({}, yn),
+              props: ic(
+                ic({}, hn),
                 {},
                 {
                   items: a || i ? r : r.slice(0, -1),
@@ -5617,23 +5624,7 @@
               ),
             }
           }),
-          b()($l, L.h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_STOCK_EXCHANGE, function (e) {
-            var t = e.followersEligible,
-              a = void 0 !== t && t,
-              n = e.mentionsEligible,
-              i = void 0 !== n && n
-            return {
-              type: 'input',
-              props: {
-                title: hn.title,
-                description: hn.description,
-                items: [{ dataKey: L.m.STOCK, label: hn.label, required: !0 }],
-                nextFormStep:
-                  a || i ? L.h.AUTHENTICITY_TYPE_SELECT : L.h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NEWS_REFERENCE,
-              },
-            }
-          }),
-          b()($l, L.h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_WIKIPEDIA, function (e) {
+          b()(Xl, L.h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_STOCK_EXCHANGE, function (e) {
             var t = e.followersEligible,
               a = void 0 !== t && t,
               n = e.mentionsEligible,
@@ -5643,21 +5634,37 @@
               props: {
                 title: Dn.title,
                 description: Dn.description,
-                items: [{ dataKey: L.m.WIKIPEDIA, label: Dn.label, required: !0 }],
+                items: [{ dataKey: L.m.STOCK, label: Dn.label, required: !0 }],
                 nextFormStep:
                   a || i ? L.h.AUTHENTICITY_TYPE_SELECT : L.h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NEWS_REFERENCE,
               },
             }
           }),
-          b()($l, L.h.ENTERTAINMENT_QUALIFICATIONS, {
+          b()(Xl, L.h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_WIKIPEDIA, function (e) {
+            var t = e.followersEligible,
+              a = void 0 !== t && t,
+              n = e.mentionsEligible,
+              i = void 0 !== n && n
+            return {
+              type: 'input',
+              props: {
+                title: Fn.title,
+                description: Fn.description,
+                items: [{ dataKey: L.m.WIKIPEDIA, label: Fn.label, required: !0 }],
+                nextFormStep:
+                  a || i ? L.h.AUTHENTICITY_TYPE_SELECT : L.h.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NEWS_REFERENCE,
+              },
+            }
+          }),
+          b()(Xl, L.h.ENTERTAINMENT_QUALIFICATIONS, {
             type: 'radio',
             props: {
-              title: Fn.title,
-              description: Fn.description,
+              title: Un.title,
+              description: Un.description,
               items: [
-                tc(tc({}, Fn.items[0]), {}, { value: L.f.ENTERTAINMENT_COMPANY }),
-                tc(tc({}, Fn.items[1]), {}, { value: L.f.ENTERTAINMENT_INDIVIDUAL }),
-                tc(tc({}, Fn.items[2]), {}, { value: L.f.PRODUCTION }),
+                ic(ic({}, Un.items[0]), {}, { value: L.f.ENTERTAINMENT_COMPANY }),
+                ic(ic({}, Un.items[1]), {}, { value: L.f.ENTERTAINMENT_INDIVIDUAL }),
+                ic(ic({}, Un.items[2]), {}, { value: L.f.PRODUCTION }),
               ],
               getNextFormStep: function (e) {
                 return e === L.f.ENTERTAINMENT_COMPANY
@@ -5670,45 +5677,16 @@
               },
             },
           }),
-          b()($l, L.h.GOVERNMENT_CANDIDATE_LEVEL_CONFIRM, {
-            type: 'info',
-            props: {
-              headline: oi.candidateTitle,
-              subtext: oi.candidateDescription,
-              actionLabel: oi.confirmButtonLabel,
-              tertiaryActionLabel: oi.declineButtonLabel,
-            },
-          }),
-          b()($l, L.h.GOVERNMENT_CANDIDATE_NEWS_REFERENCE_URLS, {
-            type: 'input',
-            props: {
-              title: ci.title,
-              description: ci.description,
-              items: Ze()(Array(5).fill({ dataKey: L.m.NEWS, labelGenerator: ci.articleLabelGenerator, required: !0 })),
-              addFieldText: ci.addFieldText,
-              allowAddFields: !0,
-              maxItems: 10,
-            },
-          }),
-          b()($l, L.h.GOVERNMENT_CANDIDATE_PROFILE_CONFIRM, {
+          b()(Xl, L.h.GOVERNMENT_CANDIDATE_LEVEL_CONFIRM, {
             type: 'info',
             props: {
               headline: li.candidateTitle,
               subtext: li.candidateDescription,
               actionLabel: li.confirmButtonLabel,
               tertiaryActionLabel: li.declineButtonLabel,
-              tertiaryActionLink: P,
             },
           }),
-          b()($l, L.h.GOVERNMENT_CANDIDATE_PUBLIC_REFERENCE_URL, {
-            type: 'input',
-            props: {
-              title: Ti.title,
-              description: Ti.description,
-              items: [{ dataKey: L.m.PUBLIC, label: Ti.websiteLabel, required: !0 }],
-            },
-          }),
-          b()($l, L.h.GOVERNMENT_OFFICE_NEWS_REFERENCE_URLS, {
+          b()(Xl, L.h.GOVERNMENT_CANDIDATE_NEWS_REFERENCE_URLS, {
             type: 'input',
             props: {
               title: Ei.title,
@@ -5719,34 +5697,25 @@
               maxItems: 10,
             },
           }),
-          b()($l, L.h.GOVERNMENT_OFFICE_PROFILE_CONFIRM, {
+          b()(Xl, L.h.GOVERNMENT_CANDIDATE_PROFILE_CONFIRM, {
             type: 'info',
             props: {
-              headline: li.officeTitle,
-              subtext: li.officeDescription,
-              actionLabel: li.confirmButtonLabel,
-              tertiaryActionLabel: li.declineButtonLabel,
+              headline: ci.candidateTitle,
+              subtext: ci.candidateDescription,
+              actionLabel: ci.confirmButtonLabel,
+              tertiaryActionLabel: ci.declineButtonLabel,
               tertiaryActionLink: P,
             },
           }),
-          b()($l, L.h.GOVERNMENT_OFFICE_PUBLIC_REFERENCE_URL, {
+          b()(Xl, L.h.GOVERNMENT_CANDIDATE_PUBLIC_REFERENCE_URL, {
             type: 'input',
             props: {
-              title: Ni.title,
-              description: Ni.description,
-              items: [{ dataKey: L.m.PUBLIC, label: Ni.websiteLabel, required: !0 }],
+              title: ui.title,
+              description: ui.description,
+              items: [{ dataKey: L.m.PUBLIC, label: ui.websiteLabel, required: !0 }],
             },
           }),
-          b()($l, L.h.GOVERNMENT_OFFICIAL_LEVEL_CONFIRM, {
-            type: 'info',
-            props: {
-              headline: oi.officialTitle,
-              subtext: oi.officialDescription,
-              actionLabel: oi.confirmButtonLabel,
-              tertiaryActionLabel: oi.declineButtonLabel,
-            },
-          }),
-          b()($l, L.h.GOVERNMENT_OFFICIAL_NEWS_REFERENCE_URLS, {
+          b()(Xl, L.h.GOVERNMENT_OFFICE_NEWS_REFERENCE_URLS, {
             type: 'input',
             props: {
               title: si.title,
@@ -5757,17 +5726,17 @@
               maxItems: 10,
             },
           }),
-          b()($l, L.h.GOVERNMENT_OFFICIAL_PROFILE_CONFIRM, {
+          b()(Xl, L.h.GOVERNMENT_OFFICE_PROFILE_CONFIRM, {
             type: 'info',
             props: {
-              headline: li.officialTitle,
-              subtext: li.officialDescription,
-              actionLabel: li.confirmButtonLabel,
-              tertiaryActionLabel: li.declineButtonLabel,
+              headline: ci.officeTitle,
+              subtext: ci.officeDescription,
+              actionLabel: ci.confirmButtonLabel,
+              tertiaryActionLabel: ci.declineButtonLabel,
               tertiaryActionLink: P,
             },
           }),
-          b()($l, L.h.GOVERNMENT_OFFICIAL_PUBLIC_REFERENCE_URL, {
+          b()(Xl, L.h.GOVERNMENT_OFFICE_PUBLIC_REFERENCE_URL, {
             type: 'input',
             props: {
               title: di.title,
@@ -5775,15 +5744,53 @@
               items: [{ dataKey: L.m.PUBLIC, label: di.websiteLabel, required: !0 }],
             },
           }),
-          b()($l, L.h.GOVERNMENT_SUBCATEGORY, {
+          b()(Xl, L.h.GOVERNMENT_OFFICIAL_LEVEL_CONFIRM, {
+            type: 'info',
+            props: {
+              headline: li.officialTitle,
+              subtext: li.officialDescription,
+              actionLabel: li.confirmButtonLabel,
+              tertiaryActionLabel: li.declineButtonLabel,
+            },
+          }),
+          b()(Xl, L.h.GOVERNMENT_OFFICIAL_NEWS_REFERENCE_URLS, {
+            type: 'input',
+            props: {
+              title: Ii.title,
+              description: Ii.description,
+              items: Ze()(Array(5).fill({ dataKey: L.m.NEWS, labelGenerator: Ii.articleLabelGenerator, required: !0 })),
+              addFieldText: Ii.addFieldText,
+              allowAddFields: !0,
+              maxItems: 10,
+            },
+          }),
+          b()(Xl, L.h.GOVERNMENT_OFFICIAL_PROFILE_CONFIRM, {
+            type: 'info',
+            props: {
+              headline: ci.officialTitle,
+              subtext: ci.officialDescription,
+              actionLabel: ci.confirmButtonLabel,
+              tertiaryActionLabel: ci.declineButtonLabel,
+              tertiaryActionLink: P,
+            },
+          }),
+          b()(Xl, L.h.GOVERNMENT_OFFICIAL_PUBLIC_REFERENCE_URL, {
+            type: 'input',
+            props: {
+              title: _i.title,
+              description: _i.description,
+              items: [{ dataKey: L.m.PUBLIC, label: _i.websiteLabel, required: !0 }],
+            },
+          }),
+          b()(Xl, L.h.GOVERNMENT_SUBCATEGORY, {
             type: 'radio',
             props: {
-              title: ri.title,
-              description: ri.description,
+              title: oi.title,
+              description: oi.description,
               items: [
-                tc(tc({}, ri.items[0]), {}, { value: L.i.OFFICIAL }),
-                tc(tc({}, ri.items[1]), {}, { value: L.i.CANDIDATE }),
-                tc(tc({}, ri.items[2]), {}, { value: L.i.OFFICE }),
+                ic(ic({}, oi.items[0]), {}, { value: L.i.OFFICIAL }),
+                ic(ic({}, oi.items[1]), {}, { value: L.i.CANDIDATE }),
+                ic(ic({}, oi.items[2]), {}, { value: L.i.OFFICE }),
               ],
               getNextFormStep: function (e) {
                 return e === L.i.OFFICIAL
@@ -5796,34 +5803,34 @@
               },
             },
           }),
-          b()($l, L.h.CONTENT_CREATOR_GOOGLE_TRENDS, {
+          b()(Xl, L.h.CONTENT_CREATOR_GOOGLE_TRENDS, {
             type: 'input',
             props: {
-              title: kn.title,
-              description: kn.description,
-              items: [{ dataKey: L.m.GOOGLE, label: kn.label, required: !0 }],
+              title: jn.title,
+              description: jn.description,
+              items: [{ dataKey: L.m.GOOGLE, label: jn.label, required: !0 }],
             },
           }),
-          b()($l, L.h.CONTENT_CREATOR_NEWS, {
+          b()(Xl, L.h.CONTENT_CREATOR_NEWS, {
             type: 'input',
             props: {
-              title: Kn.title,
-              description: Kn.description,
-              items: Ze()(Array(3).fill({ dataKey: L.m.NEWS, labelGenerator: Kn.articleLabelGenerator, required: !0 })),
+              title: qn.title,
+              description: qn.description,
+              items: Ze()(Array(3).fill({ dataKey: L.m.NEWS, labelGenerator: qn.articleLabelGenerator, required: !0 })),
               allowAddFields: !0,
-              addFieldText: Kn.addFieldText,
+              addFieldText: qn.addFieldText,
               maxItems: 10,
             },
           }),
-          b()($l, L.h.CONTENT_CREATOR_QUALIFICATIONS, {
+          b()(Xl, L.h.CONTENT_CREATOR_QUALIFICATIONS, {
             type: 'radio',
             props: {
-              title: Vn.title,
-              description: Vn.description,
+              title: wn.title,
+              description: wn.description,
               items: [
-                tc(tc({}, Vn.items[0]), {}, { value: L.m.GOOGLE }),
-                tc(tc({}, Vn.items[1]), {}, { value: L.m.WIKIPEDIA }),
-                tc(tc({}, Vn.items[2]), {}, { value: L.m.NEWS }),
+                ic(ic({}, wn.items[0]), {}, { value: L.m.GOOGLE }),
+                ic(ic({}, wn.items[1]), {}, { value: L.m.WIKIPEDIA }),
+                ic(ic({}, wn.items[2]), {}, { value: L.m.NEWS }),
               ],
               getNextFormStep: function (e) {
                 return e === L.m.GOOGLE
@@ -5836,23 +5843,23 @@
               },
             },
           }),
-          b()($l, L.h.CONTENT_CREATOR_WIKIPEDIA, {
+          b()(Xl, L.h.CONTENT_CREATOR_WIKIPEDIA, {
             type: 'input',
             props: {
-              title: Hn.title,
-              description: Hn.description,
-              items: [{ dataKey: L.m.WIKIPEDIA, label: Hn.label, required: !0 }],
+              title: Kn.title,
+              description: Kn.description,
+              items: [{ dataKey: L.m.WIKIPEDIA, label: Kn.label, required: !0 }],
             },
           }),
-          b()($l, L.h.CREATOR_PROFILE, {
+          b()(Xl, L.h.CREATOR_PROFILE, {
             type: 'input',
             props: {
-              title: wn.title,
-              description: wn.description,
-              items: [{ dataKey: L.m.MAIN, label: wn.items[0].label, required: !0 }],
+              title: Wn.title,
+              description: Wn.description,
+              items: [{ dataKey: L.m.MAIN, label: Wn.items[0].label, required: !0 }],
             },
           }),
-          b()($l, L.h.INFLUENCER_GOOGLE_TRENDS, {
+          b()(Xl, L.h.INFLUENCER_GOOGLE_TRENDS, {
             type: 'input',
             props: {
               title: Ka.title,
@@ -5860,7 +5867,7 @@
               items: [{ dataKey: L.m.GOOGLE, label: Ka.label, required: !0 }],
             },
           }),
-          b()($l, L.h.INFLUENCER_NEWS, {
+          b()(Xl, L.h.INFLUENCER_NEWS, {
             type: 'input',
             props: {
               title: Qa.title,
@@ -5871,15 +5878,15 @@
               maxItems: 10,
             },
           }),
-          b()($l, L.h.INFLUENCER_QUALIFICATIONS, {
+          b()(Xl, L.h.INFLUENCER_QUALIFICATIONS, {
             type: 'radio',
             props: {
               title: ja.title,
               description: ja.description,
               items: [
-                tc(tc({}, ja.items[0]), {}, { value: L.m.GOOGLE }),
-                tc(tc({}, ja.items[1]), {}, { value: L.m.WIKIPEDIA }),
-                tc(tc({}, ja.items[2]), {}, { value: L.m.NEWS }),
+                ic(ic({}, ja.items[0]), {}, { value: L.m.GOOGLE }),
+                ic(ic({}, ja.items[1]), {}, { value: L.m.WIKIPEDIA }),
+                ic(ic({}, ja.items[2]), {}, { value: L.m.NEWS }),
               ],
               getNextFormStep: function (e) {
                 return e === L.m.GOOGLE
@@ -5892,7 +5899,7 @@
               },
             },
           }),
-          b()($l, L.h.INFLUENCER_QUALIFICATIONS_INELIGIBLE, {
+          b()(Xl, L.h.INFLUENCER_QUALIFICATIONS_INELIGIBLE, {
             type: 'info',
             props: {
               headline: ja.notEligibleTitle,
@@ -5900,15 +5907,15 @@
               actionLabel: ja.notEligibleButton,
             },
           }),
-          b()($l, L.h.INFLUENCER_SUBCATEGORY, {
+          b()(Xl, L.h.INFLUENCER_SUBCATEGORY, {
             type: 'radio',
-            props: tc(
-              tc({}, Va),
+            props: ic(
+              ic({}, Va),
               {},
               {
                 items: [
-                  tc(tc({}, Va.items[0]), {}, { value: L.j.CONTENT_CREATOR }),
-                  tc(tc({}, Va.items[1]), {}, { value: L.j.INFLUENTIAL_INDIVIDUAL }),
+                  ic(ic({}, Va.items[0]), {}, { value: L.j.CONTENT_CREATOR }),
+                  ic(ic({}, Va.items[1]), {}, { value: L.j.INFLUENTIAL_INDIVIDUAL }),
                 ],
                 getNextFormStep: function (e) {
                   return e === L.j.CONTENT_CREATOR
@@ -5920,7 +5927,7 @@
               },
             ),
           }),
-          b()($l, L.h.INFLUENCER_WIKIPEDIA, {
+          b()(Xl, L.h.INFLUENCER_WIKIPEDIA, {
             type: 'input',
             props: {
               title: za.title,
@@ -5928,67 +5935,67 @@
               items: [{ dataKey: L.m.WIKIPEDIA, label: za.label, required: !0 }],
             },
           }),
-          b()($l, L.h.NEWS_CREDIBILITY_ARTICLE_REFERENCE_URLS, {
+          b()(Xl, L.h.NEWS_CREDIBILITY_ARTICLE_REFERENCE_URLS, {
             type: 'input',
             props: {
-              title: Ui.title,
-              description: Ui.description,
+              title: vi.title,
+              description: vi.description,
               items: Ze()(
                 Array(3).fill({
                   dataKey: L.m.ARTICLES,
-                  labelGenerator: Ui.articleNumerationLabelGenerator,
+                  labelGenerator: vi.articleNumerationLabelGenerator,
                   required: !0,
                 }),
               ),
-              addFieldText: Ui.addFieldText,
+              addFieldText: vi.addFieldText,
               allowAddFields: !0,
               maxItems: 10,
             },
           }),
-          b()($l, L.h.NEWS_FREELANCER_CREDIBILITY_ARTICLE_REFERENCE_URLS, {
+          b()(Xl, L.h.NEWS_FREELANCER_CREDIBILITY_ARTICLE_REFERENCE_URLS, {
             type: 'input',
             props: {
-              title: Ui.title,
-              description: Ui.description,
+              title: vi.title,
+              description: vi.description,
               items: Ze()(
                 Array(3).fill({
                   dataKey: L.m.ARTICLES,
-                  labelGenerator: Ui.articleNumerationLabelGenerator,
+                  labelGenerator: vi.articleNumerationLabelGenerator,
                   required: !0,
                 }),
               ),
-              addFieldText: Ui.addFieldText,
+              addFieldText: vi.addFieldText,
               allowAddFields: !0,
               maxItems: 10,
             },
           }),
-          b()($l, L.h.NEWS_CREDIBILITY_AUTHOR_REFERENCE_URL, {
+          b()(Xl, L.h.NEWS_CREDIBILITY_AUTHOR_REFERENCE_URL, {
             type: 'input',
             props: {
-              title: Fi.title,
-              description: Fi.description,
-              items: [{ dataKey: L.m.AUTHOR, label: Fi.websiteLabel, required: !0 }],
-              confirmationText: Fi.confirmationText,
+              title: Ui.title,
+              description: Ui.description,
+              items: [{ dataKey: L.m.AUTHOR, label: Ui.websiteLabel, required: !0 }],
+              confirmationText: Ui.confirmationText,
             },
           }),
-          b()($l, L.h.NEWS_NOTABILITY_CRITERIA_CONFIRMATION, {
+          b()(Xl, L.h.NEWS_NOTABILITY_CRITERIA_CONFIRMATION, {
             type: 'info',
             props: {
-              headline: vi.title,
-              subtext: vi.description,
-              actionLabel: vi.actionLabel,
-              tertiaryActionLabel: vi.tertiaryActionLabel,
+              headline: Mi.title,
+              subtext: Mi.description,
+              actionLabel: Mi.actionLabel,
+              tertiaryActionLabel: Mi.tertiaryActionLabel,
             },
           }),
-          b()($l, L.h.NEWS_QUALIFICATIONS, {
+          b()(Xl, L.h.NEWS_QUALIFICATIONS, {
             type: 'radio',
             props: {
-              title: Ri.title,
-              description: Ri.description,
+              title: fi.title,
+              description: fi.description,
               items: [
-                { helpText: Ri.items[0].description, label: Ri.items[0].label, value: L.k.JOURNALIST },
-                { helpText: Ri.items[1].description, label: Ri.items[1].label, value: L.k.FREELANCER },
-                { helpText: Ri.items[2].description, label: Ri.items[2].label, value: L.k.ORGANIZATION },
+                { helpText: fi.items[0].description, label: fi.items[0].label, value: L.k.JOURNALIST },
+                { helpText: fi.items[1].description, label: fi.items[1].label, value: L.k.FREELANCER },
+                { helpText: fi.items[2].description, label: fi.items[2].label, value: L.k.ORGANIZATION },
               ],
               getNextFormStep: function (e) {
                 return e === L.k.JOURNALIST
@@ -6001,19 +6008,19 @@
               },
             },
           }),
-          b()($l, L.h.NEWS_JOURNALIST_CRITERIA_CONFIRMATION, {
+          b()(Xl, L.h.NEWS_JOURNALIST_CRITERIA_CONFIRMATION, {
             type: 'info',
-            props: tc(tc({}, mi), {}, { tertiaryActionLink: P }),
+            props: ic(ic({}, Si), {}, { tertiaryActionLink: P }),
           }),
-          b()($l, L.h.NEWS_JOURNALIST_SCREENNAME_CONFIRMATION, { type: 'screenName', props: tc({}, Ci) }),
-          b()($l, L.h.NEWS_JOURNALIST_QUALIFICATIONS, {
+          b()(Xl, L.h.NEWS_JOURNALIST_SCREENNAME_CONFIRMATION, { type: 'screenName', props: ic({}, mi) }),
+          b()(Xl, L.h.NEWS_JOURNALIST_QUALIFICATIONS, {
             type: 'radio',
             props: {
-              title: Di.title,
-              description: Di.description,
+              title: Fi.title,
+              description: Fi.description,
               items: [
-                { helpText: Di.items[0].description, label: Di.items[0].label, value: L.m.AUTHOR },
-                { helpText: Di.items[1].description, label: Di.items[1].label, value: L.m.ARTICLES },
+                { helpText: Fi.items[0].description, label: Fi.items[0].label, value: L.m.AUTHOR },
+                { helpText: Fi.items[1].description, label: Fi.items[1].label, value: L.m.ARTICLES },
               ],
               getNextFormStep: function (e) {
                 return e === L.m.ARTICLES
@@ -6024,17 +6031,17 @@
               },
             },
           }),
-          b()($l, L.h.NEWS_ORGANIZATION_REQUIREMENTS_CONFIRMATION, {
+          b()(Xl, L.h.NEWS_ORGANIZATION_REQUIREMENTS_CONFIRMATION, {
             type: 'info',
             props: {
-              headline: fi.title,
-              subtext: fi.description,
-              actionLabel: fi.confirmButtonLabel,
-              tertiaryActionLabel: fi.declineButtonLabel,
+              headline: Ci.title,
+              subtext: Ci.description,
+              actionLabel: Ci.confirmButtonLabel,
+              tertiaryActionLabel: Ci.declineButtonLabel,
               tertiaryActionLink: P,
             },
           }),
-          b()($l, L.h.NEWS_ORGANIZATION_QUALIFICATIONS, function (e) {
+          b()(Xl, L.h.NEWS_ORGANIZATION_QUALIFICATIONS, function (e) {
             var t = e.followersEligible,
               a = void 0 !== t && t,
               n = e.mentionsEligible,
@@ -6042,16 +6049,16 @@
             return {
               type: 'radio',
               props: {
-                title: Mi.title,
-                description: Mi.description,
+                title: Pi.title,
+                description: Pi.description,
                 items: [
-                  { helpText: Mi.items[0].description, label: Mi.items[0].label, value: L.m.GOOGLE },
-                  { helpText: Mi.items[1].description, label: Mi.items[1].label, value: L.m.WIKIPEDIA },
-                  { helpText: Mi.items[2].description, label: Mi.items[2].label, value: L.m.STOCK },
+                  { helpText: Pi.items[0].description, label: Pi.items[0].label, value: L.m.GOOGLE },
+                  { helpText: Pi.items[1].description, label: Pi.items[1].label, value: L.m.WIKIPEDIA },
+                  { helpText: Pi.items[2].description, label: Pi.items[2].label, value: L.m.STOCK },
                 ].concat(
                   Ze()(
                     a || i
-                      ? [{ helpText: Mi.items[3].description, label: Mi.items[3].label, value: L.m.ARTICLES }]
+                      ? [{ helpText: Pi.items[3].description, label: Pi.items[3].label, value: L.m.ARTICLES }]
                       : [],
                   ),
                 ),
@@ -6069,23 +6076,7 @@
               },
             }
           }),
-          b()($l, L.h.NEWS_CREDIBILITY_GOOGLE_TRENDS_REFERENCE_URL, function (e) {
-            var t = e.followersEligible,
-              a = void 0 !== t && t,
-              n = e.mentionsEligible,
-              i = void 0 !== n && n
-            return {
-              type: 'input',
-              props: {
-                title: Pi.title,
-                description: Pi.description,
-                items: [{ dataKey: L.m.GOOGLE, label: Pi.label, required: !0 }],
-                nextFormStep:
-                  a || i ? L.h.AUTHENTICITY_TYPE_SELECT : L.h.NEWS_ORGANIZATION_CREDIBILITY_ARTICLE_REFERENCE_URLS,
-              },
-            }
-          }),
-          b()($l, L.h.NEWS_CREDIBILITY_WIKIPEDIA_REFERENCE_URL, function (e) {
+          b()(Xl, L.h.NEWS_CREDIBILITY_GOOGLE_TRENDS_REFERENCE_URL, function (e) {
             var t = e.followersEligible,
               a = void 0 !== t && t,
               n = e.mentionsEligible,
@@ -6095,13 +6086,29 @@
               props: {
                 title: gi.title,
                 description: gi.description,
-                items: [{ dataKey: L.m.WIKIPEDIA, label: gi.label, required: !0 }],
+                items: [{ dataKey: L.m.GOOGLE, label: gi.label, required: !0 }],
                 nextFormStep:
                   a || i ? L.h.AUTHENTICITY_TYPE_SELECT : L.h.NEWS_ORGANIZATION_CREDIBILITY_ARTICLE_REFERENCE_URLS,
               },
             }
           }),
-          b()($l, L.h.NEWS_CREDIBILITY_STOCK_REFERENCE_URL, function (e) {
+          b()(Xl, L.h.NEWS_CREDIBILITY_WIKIPEDIA_REFERENCE_URL, function (e) {
+            var t = e.followersEligible,
+              a = void 0 !== t && t,
+              n = e.mentionsEligible,
+              i = void 0 !== n && n
+            return {
+              type: 'input',
+              props: {
+                title: Gi.title,
+                description: Gi.description,
+                items: [{ dataKey: L.m.WIKIPEDIA, label: Gi.label, required: !0 }],
+                nextFormStep:
+                  a || i ? L.h.AUTHENTICITY_TYPE_SELECT : L.h.NEWS_ORGANIZATION_CREDIBILITY_ARTICLE_REFERENCE_URLS,
+              },
+            }
+          }),
+          b()(Xl, L.h.NEWS_CREDIBILITY_STOCK_REFERENCE_URL, function (e) {
             var t = e.followersEligible,
               a = void 0 !== t && t,
               n = e.mentionsEligible,
@@ -6117,38 +6124,38 @@
               },
             }
           }),
-          b()($l, L.h.NEWS_ORGANIZATION_CREDIBILITY_ARTICLE_REFERENCE_URLS, {
+          b()(Xl, L.h.NEWS_ORGANIZATION_CREDIBILITY_ARTICLE_REFERENCE_URLS, {
             type: 'input',
             props: {
-              title: Gi.title,
-              description: Gi.description,
+              title: xi.title,
+              description: xi.description,
               items: Ze()(
-                Array(3).fill({ dataKey: L.m.ARTICLES, labelGenerator: Gi.articleLabelGenerator, required: !0 }),
+                Array(3).fill({ dataKey: L.m.ARTICLES, labelGenerator: xi.articleLabelGenerator, required: !0 }),
               ),
-              addFieldText: Gi.addFieldText,
+              addFieldText: xi.addFieldText,
               allowAddFields: !0,
               maxItems: 10,
             },
           }),
-          b()($l, L.h.GAMING_INDIVIDUAL_NEWS_REFERENCE_URLS, {
+          b()(Xl, L.h.GAMING_INDIVIDUAL_NEWS_REFERENCE_URLS, {
             type: 'input',
             props: {
-              title: Er.title,
-              description: Er.description,
-              items: Ze()(Array(3).fill({ dataKey: L.m.NEWS, labelGenerator: Er.articleLabelGenerator, required: !0 })),
+              title: Tr.title,
+              description: Tr.description,
+              items: Ze()(Array(3).fill({ dataKey: L.m.NEWS, labelGenerator: Tr.articleLabelGenerator, required: !0 })),
               allowAddFields: !0,
-              addFieldText: Er.addFieldText,
+              addFieldText: Tr.addFieldText,
               maxItems: 10,
             },
           }),
-          b()($l, L.h.GAMING_INDIVIDUAL_NOTABILITY_METHOD, {
+          b()(Xl, L.h.GAMING_INDIVIDUAL_NOTABILITY_METHOD, {
             type: 'radio',
             props: {
-              title: rr.title,
-              description: rr.description,
+              title: cr.title,
+              description: cr.description,
               items: [
-                { helpText: rr.items[0].description, label: rr.items[0].label, value: L.m.NEWS },
-                { helpText: rr.items[1].description, label: rr.items[1].label, value: L.m.TEAM },
+                { helpText: cr.items[0].description, label: cr.items[0].label, value: L.m.NEWS },
+                { helpText: cr.items[1].description, label: cr.items[1].label, value: L.m.TEAM },
               ],
               getNextFormStep: function (e) {
                 return e === L.m.TEAM
@@ -6159,47 +6166,47 @@
               },
             },
           }),
-          b()($l, L.h.GAMING_INDIVIDUAL_TEAM_REFERENCE_URL, {
+          b()(Xl, L.h.GAMING_INDIVIDUAL_TEAM_REFERENCE_URL, {
             type: 'input',
             props: {
-              title: cr.title,
-              description: cr.description,
-              items: [{ dataKey: L.m.TEAM, label: cr.websiteLabel, required: !0 }],
+              title: Ir.title,
+              description: Ir.description,
+              items: [{ dataKey: L.m.TEAM, label: Ir.websiteLabel, required: !0 }],
             },
           }),
-          b()($l, L.h.SPORTS_INDIVIDUAL_NEWS_REFERENCE_URLS, {
+          b()(Xl, L.h.SPORTS_INDIVIDUAL_NEWS_REFERENCE_URLS, {
             type: 'input',
             props: {
-              title: lr.title,
-              description: lr.description,
-              items: Ze()(Array(3).fill({ dataKey: L.m.NEWS, labelGenerator: lr.articleLabelGenerator, required: !0 })),
+              title: sr.title,
+              description: sr.description,
+              items: Ze()(Array(3).fill({ dataKey: L.m.NEWS, labelGenerator: sr.articleLabelGenerator, required: !0 })),
               allowAddFields: !0,
-              addFieldText: lr.addFieldText,
+              addFieldText: sr.addFieldText,
               maxItems: 10,
             },
           }),
-          b()($l, L.h.SPORTS_INDIVIDUAL_TEAM_REFERENCE_URL, {
+          b()(Xl, L.h.SPORTS_INDIVIDUAL_TEAM_REFERENCE_URL, {
             type: 'input',
             props: {
-              title: or.title,
-              description: or.description,
-              items: [{ dataKey: L.m.TEAM, label: or.websiteLabel, required: !0 }],
+              title: Er.title,
+              description: Er.description,
+              items: [{ dataKey: L.m.TEAM, label: Er.websiteLabel, required: !0 }],
             },
           }),
-          b()($l, L.h.SPORTS_ENTITY_NOTABILITY_METHOD, function (e) {
+          b()(Xl, L.h.SPORTS_ENTITY_NOTABILITY_METHOD, function (e) {
             var t = e.followersEligible,
               a = void 0 !== t && t,
               n = [
-                tc(tc({}, $i.items[0]), {}, { value: L.m.GOOGLE }),
-                tc(tc({}, $i.items[1]), {}, { value: L.m.WIKIPEDIA }),
-                tc(tc({}, $i.items[2]), {}, { value: L.m.STOCK }),
-                tc(tc({}, $i.items[3]), {}, { value: L.m.TEAM }),
-                tc(tc({}, $i.items[4]), {}, { value: L.m.NEWS }),
+                ic(ic({}, Xi.items[0]), {}, { value: L.m.GOOGLE }),
+                ic(ic({}, Xi.items[1]), {}, { value: L.m.WIKIPEDIA }),
+                ic(ic({}, Xi.items[2]), {}, { value: L.m.STOCK }),
+                ic(ic({}, Xi.items[3]), {}, { value: L.m.TEAM }),
+                ic(ic({}, Xi.items[4]), {}, { value: L.m.NEWS }),
               ]
             return {
               type: 'radio',
-              props: tc(
-                tc({}, $i),
+              props: ic(
+                ic({}, Xi),
                 {},
                 {
                   items: a ? n : n.slice(0, -1),
@@ -6220,75 +6227,75 @@
               ),
             }
           }),
-          b()($l, L.h.SPORTS_ENTITY_GOOGLE_TRENDS, function (e) {
-            var t = e.followersEligible
-            return {
-              type: 'input',
-              props: {
-                title: Zi.title,
-                description: Zi.description,
-                items: [{ dataKey: L.m.GOOGLE, label: Zi.label, required: !0 }],
-                nextFormStep: t ? L.h.AUTHENTICITY_TYPE_SELECT : L.h.SPORTS_ENTITY_NEWS_REFERENCE,
-              },
-            }
-          }),
-          b()($l, L.h.SPORTS_ENTITY_WIKIPEDIA, function (e) {
-            var t = e.followersEligible
-            return {
-              type: 'input',
-              props: {
-                title: Ji.title,
-                description: Ji.description,
-                items: [{ dataKey: L.m.WIKIPEDIA, label: Ji.label, required: !0 }],
-                nextFormStep: t ? L.h.AUTHENTICITY_TYPE_SELECT : L.h.SPORTS_ENTITY_NEWS_REFERENCE,
-              },
-            }
-          }),
-          b()($l, L.h.SPORTS_ENTITY_STOCK_REFERENCE, function (e) {
-            var t = e.followersEligible
-            return {
-              type: 'input',
-              props: {
-                title: Xi.title,
-                description: Xi.description,
-                items: [{ dataKey: L.m.STOCK, label: Xi.label, required: !0 }],
-                nextFormStep: t ? L.h.AUTHENTICITY_TYPE_SELECT : L.h.SPORTS_ENTITY_NEWS_REFERENCE,
-              },
-            }
-          }),
-          b()($l, L.h.SPORTS_ENTITY_WEBSITE, function (e) {
+          b()(Xl, L.h.SPORTS_ENTITY_GOOGLE_TRENDS, function (e) {
             var t = e.followersEligible
             return {
               type: 'input',
               props: {
                 title: er.title,
                 description: er.description,
-                items: [{ dataKey: L.m.TEAM, label: er.label, required: !0 }],
+                items: [{ dataKey: L.m.GOOGLE, label: er.label, required: !0 }],
+                nextFormStep: t ? L.h.AUTHENTICITY_TYPE_SELECT : L.h.SPORTS_ENTITY_NEWS_REFERENCE,
+              },
+            }
+          }),
+          b()(Xl, L.h.SPORTS_ENTITY_WIKIPEDIA, function (e) {
+            var t = e.followersEligible
+            return {
+              type: 'input',
+              props: {
+                title: tr.title,
+                description: tr.description,
+                items: [{ dataKey: L.m.WIKIPEDIA, label: tr.label, required: !0 }],
+                nextFormStep: t ? L.h.AUTHENTICITY_TYPE_SELECT : L.h.SPORTS_ENTITY_NEWS_REFERENCE,
+              },
+            }
+          }),
+          b()(Xl, L.h.SPORTS_ENTITY_STOCK_REFERENCE, function (e) {
+            var t = e.followersEligible
+            return {
+              type: 'input',
+              props: {
+                title: ar.title,
+                description: ar.description,
+                items: [{ dataKey: L.m.STOCK, label: ar.label, required: !0 }],
+                nextFormStep: t ? L.h.AUTHENTICITY_TYPE_SELECT : L.h.SPORTS_ENTITY_NEWS_REFERENCE,
+              },
+            }
+          }),
+          b()(Xl, L.h.SPORTS_ENTITY_WEBSITE, function (e) {
+            var t = e.followersEligible
+            return {
+              type: 'input',
+              props: {
+                title: nr.title,
+                description: nr.description,
+                items: [{ dataKey: L.m.TEAM, label: nr.label, required: !0 }],
                 nextFormStep: t ? L.h.WEBSITE_REFERENCE_CONFIRM_AUTOFILL : L.h.SPORTS_ENTITY_NEWS_REFERENCE,
               },
             }
           }),
-          b()($l, L.h.SPORTS_ENTITY_NEWS_REFERENCE, {
+          b()(Xl, L.h.SPORTS_ENTITY_NEWS_REFERENCE, {
             type: 'input',
-            props: {
-              title: tr.title,
-              description: tr.description,
-              items: Ze()(Array(3).fill({ dataKey: L.m.NEWS, labelGenerator: tr.articleLabelGenerator, required: !0 })),
-              allowAddFields: !0,
-              addFieldText: tr.addFieldText,
-              maxItems: 10,
-            },
-          }),
-          b()($l, L.h.SPORTS_INDIVIDUAL_SCREENNAME_CONFIRM, { type: 'screenName', props: tc({}, Ki) }),
-          b()($l, L.h.GAMING_INDIVIDUAL_SCREENNAME_CONFIRM, { type: 'screenName', props: tc({}, qi) }),
-          b()($l, L.h.SPORTS_INDIVIDUAL_NOTABILITY_METHOD, {
-            type: 'radio',
             props: {
               title: ir.title,
               description: ir.description,
+              items: Ze()(Array(3).fill({ dataKey: L.m.NEWS, labelGenerator: ir.articleLabelGenerator, required: !0 })),
+              allowAddFields: !0,
+              addFieldText: ir.addFieldText,
+              maxItems: 10,
+            },
+          }),
+          b()(Xl, L.h.SPORTS_INDIVIDUAL_SCREENNAME_CONFIRM, { type: 'screenName', props: ic({}, zi) }),
+          b()(Xl, L.h.GAMING_INDIVIDUAL_SCREENNAME_CONFIRM, { type: 'screenName', props: ic({}, Qi) }),
+          b()(Xl, L.h.SPORTS_INDIVIDUAL_NOTABILITY_METHOD, {
+            type: 'radio',
+            props: {
+              title: lr.title,
+              description: lr.description,
               items: [
-                { helpText: ir.items[0].description, label: ir.items[0].label, value: L.m.NEWS },
-                { helpText: ir.items[1].description, label: ir.items[1].label, value: L.m.TEAM },
+                { helpText: lr.items[0].description, label: lr.items[0].label, value: L.m.NEWS },
+                { helpText: lr.items[1].description, label: lr.items[1].label, value: L.m.TEAM },
               ],
               getNextFormStep: function (e) {
                 return e === L.m.TEAM
@@ -6299,34 +6306,41 @@
               },
             },
           }),
-          b()($l, L.h.SPORTS_SUBCATEGORY, {
-            type: 'radio',
-            props: tc(
-              tc({}, ki),
-              {},
-              {
-                items: [
-                  tc(tc({}, ki.items[0]), {}, { value: L.q.SPORTS_INDIVIDUAL }),
-                  tc(tc({}, ki.items[1]), {}, { value: L.q.SPORTS_ENTITY }),
-                  tc(tc({}, ki.items[2]), {}, { value: L.q.GAMING_INDIVIDUAL }),
-                ],
-                getNextFormStep: function (e) {
-                  return e === L.q.SPORTS_INDIVIDUAL
-                    ? L.h.SPORTS_INDIVIDUAL_SCREENNAME_CONFIRM
-                    : e === L.q.SPORTS_ENTITY
-                    ? L.h.SPORTS_ENTITY_NOTABILITY_METHOD
-                    : e === L.q.GAMING_INDIVIDUAL
-                    ? L.h.GAMING_INDIVIDUAL_SCREENNAME_CONFIRM
-                    : void 0
+          b()(Xl, L.h.GAMING_INDIVIDUAL_INELIGIBLE, { type: 'info', props: ic({}, $i) }),
+          b()(Xl, L.h.SPORTS_SUBCATEGORY, function (e) {
+            var t = e.followersEligible,
+              a = void 0 !== t && t
+            return {
+              type: 'radio',
+              props: ic(
+                ic({}, ji),
+                {},
+                {
+                  items: [
+                    ic(ic({}, ji.items[0]), {}, { value: L.q.SPORTS_INDIVIDUAL }),
+                    ic(ic({}, ji.items[1]), {}, { value: L.q.SPORTS_ENTITY }),
+                    ic(ic({}, ji.items[2]), {}, { value: L.q.GAMING_INDIVIDUAL }),
+                  ],
+                  getNextFormStep: function (e) {
+                    return e === L.q.SPORTS_INDIVIDUAL
+                      ? L.h.SPORTS_INDIVIDUAL_SCREENNAME_CONFIRM
+                      : e === L.q.SPORTS_ENTITY
+                      ? L.h.SPORTS_ENTITY_NOTABILITY_METHOD
+                      : e === L.q.GAMING_INDIVIDUAL
+                      ? a
+                        ? L.h.GAMING_INDIVIDUAL_SCREENNAME_CONFIRM
+                        : L.h.GAMING_INDIVIDUAL_INELIGIBLE
+                      : void 0
+                  },
                 },
-              },
-            ),
+              ),
+            }
           }),
-          $l),
+          Xl),
         ),
-        ic = Object.freeze(
-          ((ac = {}),
-          b()(ac, L.h.TEST_INPUT, {
+        lc = Object.freeze(
+          ((rc = {}),
+          b()(rc, L.h.TEST_INPUT, {
             type: 'input',
             props: {
               title: 'test input form',
@@ -6338,7 +6352,7 @@
               allowAddFields: !0,
             },
           }),
-          b()(ac, L.h.TEST_PIVOT, {
+          b()(rc, L.h.TEST_PIVOT, {
             type: 'pivot',
             props: {
               title: 'test pivot form',
@@ -6349,7 +6363,7 @@
               ],
             },
           }),
-          b()(ac, L.h.TEST_RADIO, function (e) {
+          b()(rc, L.h.TEST_RADIO, function (e) {
             var t = e.followersEligible,
               a = void 0 !== t && t,
               n = e.mentionsEligible,
@@ -6393,9 +6407,9 @@
               },
             }
           }),
-          ac),
+          rc),
         )
-      function rc(e, t) {
+      function cc(e, t) {
         var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -6407,37 +6421,37 @@
         }
         return a
       }
-      function oc(e) {
+      function Ec(e) {
         for (var t = 1; t < arguments.length; t++) {
           var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? rc(Object(a), !0).forEach(function (t) {
+            ? cc(Object(a), !0).forEach(function (t) {
                 b()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
-            : rc(Object(a)).forEach(function (t) {
+            : cc(Object(a)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var lc = Object.freeze(oc(oc(oc({}, Xl), nc), ic)),
-        cc = a('oQhu'),
-        Ec = function (e) {
+      var sc = Object.freeze(Ec(Ec(Ec({}, ac), oc), lc)),
+        Ic = a('oQhu'),
+        Tc = function (e) {
           var t = Object(Ce.y)(e)
           return null != t && t.radioData ? t.radioData : ''
         },
-        sc = Object(fe.a)()
+        uc = Object(fe.a)()
           .propsFromState(function () {
-            return { currentStep: Ce.z, formHistory: Ec }
+            return { currentStep: Ce.z, formHistory: Tc }
           })
           .propsFromActions(function () {
             return { setFormStepData: Ce.R, setNextFlow: Ce.V, updateFormHistory: Ce.Y }
           })
           .withAnalytics(),
-        Ic = a('fyvP')
-      function Tc(e, t) {
+        Nc = a('fyvP')
+      function dc(e, t) {
         var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -6449,33 +6463,33 @@
         }
         return a
       }
-      function uc(e) {
+      function _c(e) {
         for (var t = 1; t < arguments.length; t++) {
           var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Tc(Object(a), !0).forEach(function (t) {
+            ? dc(Object(a), !0).forEach(function (t) {
                 b()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
-            : Tc(Object(a)).forEach(function (t) {
+            : dc(Object(a)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var Nc = f.a.c1df579e,
-        dc = B.a.create(function (e) {
+      var pc = f.a.c1df579e,
+        Oc = B.a.create(function (e) {
           return {
             radioContainer: {
               paddingRight: 'calc('.concat(e.spaces.space12, ' + ').concat(e.borderWidths.medium, ')'),
             },
           }
         }),
-        _c = sc(function (e) {
+        bc = uc(function (e) {
           var t = e.analytics,
             a = e.buttonText,
-            n = void 0 === a ? Nc : a,
+            n = void 0 === a ? pc : a,
             i = e.currentStep,
             r = e.description,
             o = e.footer,
@@ -6488,7 +6502,7 @@
             u = e.title,
             N = e.updateFormHistory,
             d = A.useState(l),
-            _ = G()(d, 2),
+            _ = Y()(d, 2),
             p = _[0],
             O = _[1]
           A.useEffect(
@@ -6518,8 +6532,8 @@
               r && A.createElement(W.b, { color: 'gray700' }, r),
               A.createElement(
                 w.a,
-                { style: [V.contentContainer, dc.radioContainer] },
-                A.createElement(Ic.a, {
+                { style: [V.contentContainer, Oc.radioContainer] },
+                A.createElement(Nc.a, {
                   accessibilityLabel: u,
                   name: ''.concat(u, '-radiogroup'),
                   onChange: function (e, t) {
@@ -6536,22 +6550,22 @@
               {
                 disabled: !p,
                 onClick: function () {
-                  var e = uc(
-                    uc({}, t.contextualScribeNamespace),
+                  var e = _c(
+                    _c({}, t.contextualScribeNamespace),
                     {},
                     { element: 'CTA', action: 'click', data: t.contextualScribeData },
                   )
                   'notability_qualifications_select' === t.contextualScribeNamespace.component &&
-                    (e = uc(
-                      uc({}, e),
+                    (e = _c(
+                      _c({}, e),
                       {},
                       {
-                        data: uc(
-                          uc({}, e.data),
+                        data: _c(
+                          _c({}, e.data),
                           {},
                           {
-                            verification_application_details: uc(
-                              uc({}, e.data.verification_application_details),
+                            verification_application_details: _c(
+                              _c({}, e.data.verification_application_details),
                               {},
                               { notability_method: [at(p)] },
                             ),
@@ -6571,44 +6585,44 @@
             ),
           )
         }),
-        pc = a('5FtR'),
-        Oc = Object(fe.a)().propsFromActions(function () {
+        Ac = a('5FtR'),
+        Rc = Object(fe.a)().propsFromActions(function () {
           return { setNextFlow: Ce.V }
         }),
-        bc = a('EweD'),
-        Ac = 'verification-checkbox-label',
-        Rc = f.a.c1df579e,
-        fc = f.a.a6278dcb,
-        Cc = function (e) {
+        fc = a('EweD'),
+        Cc = 'verification-checkbox-label',
+        mc = f.a.c1df579e,
+        Sc = f.a.a6278dcb,
+        Lc = function (e) {
           return !e.match(/\W/g)
         },
-        mc = B.a.create(function (e) {
+        yc = B.a.create(function (e) {
           return { input: { paddingHorizontal: 0 }, checkboxContainer: { paddingTop: 0 } }
         }),
-        Sc = Oc(function (e) {
+        hc = Rc(function (e) {
           var t = e.buttonText,
-            a = void 0 === t ? Rc : t,
+            a = void 0 === t ? mc : t,
             n = e.confirmationText,
             i = e.description,
             r = e.isNarrow,
             o = e.setNextFlow,
             l = e.title,
             c = A.useState(''),
-            E = G()(c, 2),
+            E = Y()(c, 2),
             s = E[0],
             I = E[1],
             T = A.useState(!1),
-            u = G()(T, 2),
+            u = Y()(T, 2),
             N = u[0],
             d = u[1],
             _ = A.useState(!0),
-            p = G()(_, 2),
+            p = Y()(_, 2),
             O = p[0],
             b = p[1]
           return (
             A.useEffect(
               function () {
-                var e = !!s && Cc(s)
+                var e = !!s && Lc(s)
                 b(!e || !(!n || N))
               },
               [n, N, s, b],
@@ -6636,26 +6650,26 @@
                   w.a,
                   { accessibilityLabelledBy: x.b, accessibilityRole: 'group', style: V.contentContainer },
                   A.createElement(ot.a, {
-                    Icon: bc.a,
-                    invalid: !Cc(s),
-                    label: fc,
+                    Icon: fc.a,
+                    invalid: !Lc(s),
+                    label: Sc,
                     name: '',
                     onChange: function (e) {
                       return I(e.target.value)
                     },
-                    style: mc.input,
+                    style: yc.input,
                     value: s,
                   }),
                 ),
                 n &&
                   A.createElement(
                     w.a,
-                    { style: [V.contentContainer, V.checkboxContainer, mc.checkboxContainer] },
+                    { style: [V.contentContainer, V.checkboxContainer, yc.checkboxContainer] },
                     A.createElement(
                       w.a,
                       { style: V.checkbox },
                       A.createElement(lt.a, {
-                        accessibilityLabelledBy: Ac,
+                        accessibilityLabelledBy: Cc,
                         checked: N,
                         onChange: function () {
                           return d(!N)
@@ -6664,7 +6678,7 @@
                     ),
                     A.createElement(
                       w.a,
-                      { nativeID: Ac, style: V.checkboxText },
+                      { nativeID: Cc, style: V.checkboxText },
                       A.createElement(W.b, { color: 'gray700' }, n),
                     ),
                   ),
@@ -6684,11 +6698,11 @@
             )
           )
         }),
-        Lc = a('7JQg'),
-        yc = (a('hBvt'), a('v6aA')),
-        hc = f.a.ec6801cb,
-        Dc = f.a.j24c37b2,
-        Fc = function (e) {
+        Dc = a('7JQg'),
+        Fc = (a('hBvt'), a('v6aA')),
+        Uc = f.a.ec6801cb,
+        vc = f.a.j24c37b2,
+        Mc = function (e) {
           var t,
             a = e.daysForDecision,
             n = void 0 === a ? 14 : a,
@@ -6696,7 +6710,7 @@
             r = e.link,
             o = e.onSurveyClick,
             l = e.surveyUrl,
-            c = A.useContext(yc.a).featureSwitches.isTrue('identity_verification_notable_demo_survey')
+            c = A.useContext(Fc.a).featureSwitches.isTrue('identity_verification_notable_demo_survey')
           return A.createElement(
             w.a,
             { style: V.largeBannerContainer },
@@ -6714,7 +6728,7 @@
                   style: V.header,
                   weight: 'heavy',
                 },
-                hc,
+                Uc,
               ),
               A.createElement(
                 W.b,
@@ -6740,42 +6754,42 @@
               A.createElement(
                 k.a,
                 { link: { pathname: r, openInSameFrame: !0 }, style: V.buttonPadded, type: 'brandFilled' },
-                Dc,
+                vc,
               ),
             ),
           )
         },
-        Uc = f.a.b772cd65,
-        vc = f.a.j3da4de9,
-        Mc = function (e) {
+        Pc = f.a.b772cd65,
+        gc = f.a.j3da4de9,
+        Gc = function (e) {
           var t = f.a.da44942d,
             a = new Date(e)
           return A.createElement(f.a.I18NFormatMessage, { $i18n: 'b7be91be', date: t(a) })
         },
-        Pc = f.a.j94e995e,
-        gc = f.a.da458d6c,
-        Yc = f.a.j4ed9f0e,
-        Gc = f.a.b1ade78f,
-        xc = f.a.b1ade78f,
-        Bc = f.a.j3da4de9,
-        Vc = function (e) {
+        Yc = f.a.j94e995e,
+        xc = f.a.da458d6c,
+        Bc = f.a.j4ed9f0e,
+        Vc = f.a.b1ade78f,
+        wc = f.a.b1ade78f,
+        Wc = f.a.j3da4de9,
+        kc = function (e) {
           var t = f.a.da44942d,
             a = new Date(e)
           return A.createElement(f.a.I18NFormatMessage, { $i18n: 'jcb00a94', date: t(a) })
         },
-        wc = f.a.aab67626,
-        Wc = function (e) {
+        jc = f.a.aab67626,
+        Hc = function (e) {
           var t = f.a.da44942d,
             a = new Date(e)
           return A.createElement(f.a.I18NFormatMessage, { $i18n: 'j92ea4b8', date: t(a) })
         },
-        kc = f.a.d3c1e25e,
-        jc = A.createElement(
+        Kc = f.a.d3c1e25e,
+        qc = A.createElement(
           f.a.I18NFormatMessage,
           { $i18n: 'jcd067dd' },
           A.createElement(W.b, { link: 'https://help.twitter.com/rules-and-policies/twitter-rules' }, f.a.g0bfb17a),
         ),
-        Hc = function (e) {
+        zc = function (e) {
           var t,
             a = e.applicationSubmissionTimeInMs,
             n = e.decisionMadeTimeInMs,
@@ -6783,15 +6797,15 @@
             r = e.link,
             o = e.status,
             l = ((t = {}),
-            b()(t, L.a.DISABLED, { title: Ir, content: Tr, button: sr }),
+            b()(t, L.a.DISABLED, { title: Nr, content: dr, button: ur }),
             b()(t, L.a.INTAKE_PROGRESS, { title: null, content: null, button: null }),
-            b()(t, L.a.LOCKED, { title: vc, content: n ? Mc(n) : gc, button: sr }),
-            b()(t, L.a.NEW_ACCOUNT, { title: vc, content: xc, button: sr }),
-            b()(t, L.a.NOT_ELIGIBLE, { title: vc, content: Gc, button: sr }),
+            b()(t, L.a.LOCKED, { title: gc, content: n ? Gc(n) : xc, button: ur }),
+            b()(t, L.a.NEW_ACCOUNT, { title: gc, content: wc, button: ur }),
+            b()(t, L.a.NOT_ELIGIBLE, { title: gc, content: Vc, button: ur }),
             b()(t, L.a.NOT_STARTED, { title: null, content: null, button: null }),
-            b()(t, L.a.VERIFICATION_DENIED, { title: Bc, content: n ? Vc(n) : Pc, button: Uc }),
-            b()(t, L.a.VERIFICATION_PENDING, { title: wc, content: a ? Wc(a) : Yc, button: Uc }),
-            b()(t, L.a.VERIFIED, { title: kc, content: jc, button: Uc }),
+            b()(t, L.a.VERIFICATION_DENIED, { title: Wc, content: n ? kc(n) : Yc, button: Pc }),
+            b()(t, L.a.VERIFICATION_PENDING, { title: jc, content: a ? Hc(a) : Bc, button: Pc }),
+            b()(t, L.a.VERIFIED, { title: Kc, content: qc, button: Pc }),
             t)[o],
             c = l.button,
             E = l.content,
@@ -6821,10 +6835,10 @@
               )
             : null
         },
-        Kc = a('zh9S'),
-        qc = a('vEo5'),
-        zc = { page: 'settings', section: 'account_verification' },
-        Qc = Object(fe.a)()
+        Qc = a('zh9S'),
+        $c = a('vEo5'),
+        Zc = { page: 'settings', section: 'account_verification' },
+        Jc = Object(fe.a)()
           .propsFromState(function () {
             return {
               access: Ce.m,
@@ -6838,7 +6852,7 @@
               idType: Ce.I,
               initialIntakeFetchStatus: Ce.K,
               surveyUrl: Ce.O,
-              userEmail: qc.selectFirstEmail,
+              userEmail: $c.selectFirstEmail,
               verifyAccountFetchStatus: Ce.P,
               notabilityCategory: Ce.L,
               notabilityData: Ce.M,
@@ -6892,9 +6906,9 @@
               fetchAccessIfNeeded: Ce.b,
               fetchAccountEligibility: Ce.c,
               fetchAccountViolations: Ce.d,
-              fetchDevices: qc.fetchDevicesIfNeeded,
+              fetchDevices: $c.fetchDevicesIfNeeded,
               fetchDocumentFormats: Ce.g,
-              googleAnalyticsPageView: Kc.a,
+              googleAnalyticsPageView: Qc.a,
               resetFlow: Ce.j,
               resetSubmitVerification: Ce.l,
               setFormStepData: Ce.R,
@@ -6905,14 +6919,14 @@
               verifyAccount: Ce.Z,
             }
           })
-          .withAnalytics(zc),
-        $c = 'info',
-        Zc = 'input',
-        Jc = 'pivot',
-        Xc = 'radio',
-        eE = 'screenName',
-        tE = a('cHvH'),
-        aE =
+          .withAnalytics(Zc),
+        Xc = 'info',
+        eE = 'input',
+        tE = 'pivot',
+        aE = 'radio',
+        nE = 'screenName',
+        iE = a('cHvH'),
+        rE =
           (a('ulNE'),
           a('1IsZ'),
           Object(fe.a)()
@@ -6930,16 +6944,16 @@
             .propsFromActions(function () {
               return { verifyAccount: Ce.Z }
             })),
-        nE = a('3A2y'),
-        iE = f.a.a91bb144,
-        rE = f.a.affce770,
-        oE = f.a.i0864917,
-        lE = f.a.c7942073,
-        cE = f.a.b8121da9,
-        EE = f.a.d247ca7f,
-        sE = f.a.b51afbb2,
-        IE = f.a.cc87b01c,
-        TE = function (e) {
+        oE = a('3A2y'),
+        lE = f.a.a91bb144,
+        cE = f.a.affce770,
+        EE = f.a.i0864917,
+        sE = f.a.c7942073,
+        IE = f.a.b8121da9,
+        TE = f.a.d247ca7f,
+        uE = f.a.b51afbb2,
+        NE = f.a.cc87b01c,
+        dE = function (e) {
           var t,
             a,
             n,
@@ -6968,29 +6982,29 @@
                 style: V.header,
                 weight: 'heavy',
               },
-              IE,
+              NE,
             ),
             A.createElement(
               w.a,
               { style: V.scrollableContainer },
-              A.createElement(W.b, { color: 'gray700' }, EE),
-              u(oE),
-              E && A.createElement(W.b, { style: V.subtext }, Ar[E]),
-              I && ((i = fr[I]), A.createElement(w.a, null, u(lE), A.createElement(W.b, { style: V.subtext }, i))),
+              A.createElement(W.b, { color: 'gray700' }, TE),
+              u(EE),
+              E && A.createElement(W.b, { style: V.subtext }, Cr[E]),
+              I && ((i = Sr[I]), A.createElement(w.a, null, u(sE), A.createElement(W.b, { style: V.subtext }, i))),
               s &&
                 (function (e) {
-                  var t = Object(nE.a)(e, 'newsType'),
+                  var t = Object(oE.a)(e, 'newsType'),
                     a = Object.values(t).flat()
                   return A.createElement(
                     w.a,
                     null,
-                    u(cE),
+                    u(IE),
                     a.map(function (e, t) {
                       return A.createElement(W.b, { key: t, style: V.subtext }, e)
                     }),
                   )
                 })(s),
-              u(sE),
+              u(uE),
               r &&
                 ((t = r),
                 (a = {}),
@@ -6999,7 +7013,7 @@
                 b()(a, L.d.WEBSITE, f.a.e1c78795),
                 (n = a[t]),
                 A.createElement(W.b, { style: V.subtext }, n)),
-              A.createElement(W.b, { color: 'gray700', style: V.contentContainer }, rE),
+              A.createElement(W.b, { color: 'gray700', style: V.contentContainer }, cE),
             ),
             A.createElement(
               k.a,
@@ -7010,12 +7024,12 @@
                 style: V.buttonFixed,
                 type: 'brandFilled',
               },
-              iE,
+              lE,
             ),
           )
         },
-        uE = aE(TE)
-      function NE(e, t) {
+        _E = rE(dE)
+      function pE(e, t) {
         var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -7027,22 +7041,22 @@
         }
         return a
       }
-      function dE(e) {
+      function OE(e) {
         for (var t = 1; t < arguments.length; t++) {
           var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? NE(Object(a), !0).forEach(function (t) {
+            ? pE(Object(a), !0).forEach(function (t) {
                 b()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
-            : NE(Object(a)).forEach(function (t) {
+            : pE(Object(a)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      function _E(e) {
+      function bE(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -7063,18 +7077,18 @@
           return d()(this, a)
         }
       }
-      var pE = 'INITIAL_FETCH_STATUS_RENDERER',
-        OE = 'SUBMIT_FETCH_STATUS_RENDERER',
-        bE = f.a.g61ed8a4,
-        AE = function () {
+      var AE = 'INITIAL_FETCH_STATUS_RENDERER',
+        RE = 'SUBMIT_FETCH_STATUS_RENDERER',
+        fE = f.a.g61ed8a4,
+        CE = function () {
           return null
         },
-        RE = function (e) {
+        mE = function (e) {
           return null
         },
-        fE = (function (e) {
+        SE = (function (e) {
           u()(a, e)
-          var t = _E(a)
+          var t = bE(a)
           function a() {
             var e
             l()(this, a)
@@ -7124,14 +7138,14 @@
               b()(
                 I()(e),
                 '_getMemoizedVerificationScribeNamespace',
-                Object(cc.a)(function (e) {
+                Object(Ic.a)(function (e) {
                   return nt(e)
                 }),
               ),
               b()(
                 I()(e),
                 '_getMemoizedVerificationScribeData',
-                Object(cc.a)(function (e) {
+                Object(Ic.a)(function (e) {
                   var t = e.accessStatus,
                     a = e.authenticityType,
                     n = e.currentStep,
@@ -7157,8 +7171,8 @@
                   T = n.notabilityData,
                   u = n.notabilitySubcategory
                 r.scribe(
-                  dE(
-                    dE({}, e._getMemoizedVerificationScribeNamespace(l)),
+                  OE(
+                    OE({}, e._getMemoizedVerificationScribeNamespace(l)),
                     {},
                     {
                       action: t,
@@ -7206,10 +7220,10 @@
                         e._scribeAction('click', 'CTA'), u()
                       },
                     },
-                    genericModalProps: { renderHeader: RE },
+                    genericModalProps: { renderHeader: mE },
                   }),
-                  b()(t, TE.name, {
-                    ComponentToRender: uE,
+                  b()(t, dE.name, {
+                    ComponentToRender: _E,
                     componentProps: {
                       createLocalApiErrorHandler: i,
                       handleOnClick: function () {
@@ -7218,8 +7232,8 @@
                     },
                     genericModalProps: { onBackClick: N },
                   }),
-                  b()(t, Hc.name, {
-                    ComponentToRender: Hc,
+                  b()(t, zc.name, {
+                    ComponentToRender: zc,
                     componentProps: { decisionMadeTimeInMs: o, link: e._accountSettingsLink, status: n },
                     genericModalProps: { backButtonType: 'close', hideBackButton: S.b.isTwitterApp() },
                   }),
@@ -7245,9 +7259,9 @@
                     genericModalProps: { onBackClick: N },
                   }),
                   b()(t, L.h.INTAKE_LOADING, {
-                    ComponentToRender: Pr,
+                    ComponentToRender: Yr,
                     componentProps: {},
-                    genericModalProps: { hideBackButton: !0, renderHeader: RE },
+                    genericModalProps: { hideBackButton: !0, renderHeader: mE },
                   }),
                   b()(t, L.h.INTAKE_TYPE_SELECT, {
                     ComponentToRender: Be,
@@ -7255,7 +7269,7 @@
                     genericModalProps: { onBackClick: N },
                   }),
                   b()(t, L.h.INTAKE_UPLOAD, {
-                    ComponentToRender: Yo,
+                    ComponentToRender: Bo,
                     componentProps: {
                       handleOnClick: function () {
                         return e._scribeAction('click', 'CTA')
@@ -7263,8 +7277,8 @@
                     },
                     genericModalProps: { onBackClick: N },
                   }),
-                  b()(t, Fc.name, {
-                    ComponentToRender: Fc,
+                  b()(t, Mc.name, {
+                    ComponentToRender: Mc,
                     componentProps: {
                       link: e._accountSettingsLink,
                       onSurveyClick: function () {
@@ -7272,7 +7286,7 @@
                       },
                       surveyUrl: d,
                     },
-                    genericModalProps: { renderHeader: RE },
+                    genericModalProps: { renderHeader: mE },
                   }),
                   b()(t, g.name, {
                     ComponentToRender: g,
@@ -7293,25 +7307,25 @@
                     },
                     genericModalProps: { onBackClick: N },
                   }),
-                  b()(t, OE, {
+                  b()(t, RE, {
                     ComponentToRender: ae.a,
                     componentProps: {
                       fetchStatus: O,
                       onRequestRetry: function () {
                         p().catch(i())
                       },
-                      render: AE,
-                      retryMessage: bE,
+                      render: CE,
+                      retryMessage: fE,
                     },
                     genericModalProps: { hideBackButton: O === te.a.LOADING, onBackClick: s },
                   }),
-                  b()(t, pE, {
+                  b()(t, AE, {
                     ComponentToRender: ae.a,
                     componentProps: {
                       fetchStatus: E,
                       onRequestRetry: e._initialFetchRetry,
-                      render: AE,
-                      retryMessage: bE,
+                      render: CE,
+                      retryMessage: fE,
                     },
                     genericModalProps: { backButtonType: 'close', hideBackButton: S.b.isTwitterApp() },
                   }),
@@ -7346,9 +7360,9 @@
                 var a = e.props,
                   n = a.history,
                   i = a.setPreviousFlow
-                if (t && lc[t]) {
-                  var r = lc[t],
-                    o = 'function' == typeof r ? r(dE({}, e.props)) : r
+                if (t && sc[t]) {
+                  var r = sc[t],
+                    o = 'function' == typeof r ? r(OE({}, e.props)) : r
                   return A.createElement(
                     ne.b,
                     {
@@ -7362,21 +7376,21 @@
                     e._renderLayoutComponent(o, t),
                   )
                 }
-                return A.createElement(pc.a, { to: '/settings/account' })
+                return A.createElement(Ac.a, { to: '/settings/account' })
               }),
               b()(I()(e), '_renderLayoutComponent', function (t, a) {
                 var n = { isNarrow: e._isNarrow, key: ''.concat(a, '-screen') }
                 switch (t.type) {
-                  case $c:
-                    return A.createElement(Qe, r()({}, t.props, { key: ''.concat(a, '-screen') }))
-                  case Zc:
-                    return A.createElement(At, r()({}, t.props, n))
-                  case Jc:
-                    return A.createElement(De, r()({}, t.props, n))
                   case Xc:
-                    return A.createElement(_c, r()({}, t.props, n))
+                    return A.createElement(Qe, r()({}, t.props, { key: ''.concat(a, '-screen') }))
                   case eE:
-                    return A.createElement(Sc, r()({}, t.props, n))
+                    return A.createElement(At, r()({}, t.props, n))
+                  case tE:
+                    return A.createElement(De, r()({}, t.props, n))
+                  case aE:
+                    return A.createElement(bc, r()({}, t.props, n))
+                  case nE:
+                    return A.createElement(hc, r()({}, t.props, n))
                   default:
                     return null
                 }
@@ -7387,12 +7401,12 @@
                   n = t.currentStep,
                   i = t.initialIntakeFetchStatus,
                   r = t.verifyAccountFetchStatus
-                if (i !== te.a.LOADED) return e._wrapInGenericModalScreen(pE)
-                if (r === te.a.LOADING || r === te.a.FAILED) return e._wrapInGenericModalScreen(OE)
+                if (i !== te.a.LOADED) return e._wrapInGenericModalScreen(AE)
+                if (r === te.a.LOADING || r === te.a.FAILED) return e._wrapInGenericModalScreen(RE)
                 if (e._hasBadgeViolations(a)) return e._wrapInGenericModalScreen(g.name)
                 switch (n) {
                   case L.h.LANDING_PAGE:
-                    return e._wrapInGenericModalScreen(e._shouldStartFlow ? Re.name : Hc.name)
+                    return e._wrapInGenericModalScreen(e._shouldStartFlow ? Re.name : zc.name)
                   case L.h.INTAKE_TYPE_SELECT:
                     return e._wrapInGenericModalScreen(L.h.INTAKE_TYPE_SELECT)
                   case L.h.ID_COUNTRY_SELECT:
@@ -7406,9 +7420,9 @@
                   case L.h.EMAIL_VERIFICATION:
                     return e._wrapInGenericModalScreen(ee.name)
                   case L.h.REVIEW_SUBMIT:
-                    return e._wrapInGenericModalScreen(TE.name)
+                    return e._wrapInGenericModalScreen(dE.name)
                   case L.h.THANK_YOU:
-                    return e._wrapInGenericModalScreen(Fc.name)
+                    return e._wrapInGenericModalScreen(Mc.name)
                   default:
                     return e._createFormFromLayout(n)
                 }
@@ -7434,7 +7448,7 @@
                       return e._scribeAction('get_initial')
                     })
                     .catch(a()),
-                    i(zc)
+                    i(Zc)
                 },
               },
               {
@@ -7471,12 +7485,12 @@
                     E = t.notabilityData,
                     s = t.notabilitySubcategory
                   return this._isVerificationIntakeEnabled
-                    ? A.createElement(tE.a, null, function (t) {
+                    ? A.createElement(iE.a, null, function (t) {
                         var I = t.windowWidth < B.a.theme.breakpoints.small
                         return (
                           I !== e._isNarrow && (e._isNarrow = I),
                           A.createElement(
-                            Lc.b,
+                            Dc.b,
                             {
                               data: e._getMemoizedVerificationScribeData({
                                 accessStatus: a,
@@ -7502,9 +7516,9 @@
             a
           )
         })(A.Component)
-      b()(fE, 'contextType', yc.a)
-      var CE = Qc(fE)
-      t.default = CE
+      b()(SE, 'contextType', Fc.a)
+      var LE = Jc(SE)
+      t.default = LE
     },
     je27: function (e, t, a) {
       'use strict'

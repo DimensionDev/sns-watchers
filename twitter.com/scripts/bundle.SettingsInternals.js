@@ -56,15 +56,15 @@
               })(t, n)
             : _
         },
-        P = function (e, t) {
+        B = function (e, t) {
           var n, r
           return null === (n = t.location) || void 0 === n || null === (r = n.query) || void 0 === r
             ? void 0
             : r.flow_status
         },
-        B = Object(w.a)()
+        P = Object(w.a)()
           .propsFromState(function () {
-            return { countryCode: m.j, countryList: R, changeCountryFlowStatus: P, lang: S.o }
+            return { countryCode: m.j, countryList: R, changeCountryFlowStatus: B, lang: S.o }
           })
           .propsFromActions(function () {
             return {
@@ -78,10 +78,10 @@
           })
           .withAnalytics({ page: 'settings', section: 'country' }),
         j = n('q82E'),
-        F = n('yoO3'),
-        D = n('7FtF'),
-        T = 'Settings_Country_Selector',
-        k = n('MWbm'),
+        k = n('yoO3'),
+        F = n('7FtF'),
+        D = 'Settings_Country_Selector',
+        T = n('MWbm'),
         I = n('t62R'),
         x = n('6XNv'),
         A = n('rHpw'),
@@ -167,20 +167,20 @@
                       g.createElement(I.b, { link: 'https://support.twitter.com/articles/20169220' }, H.a.ia15900d),
                     )
                   return g.createElement(
-                    F.a,
+                    k.a,
                     null,
                     g.createElement(
-                      D.a,
+                      F.a,
                       { location: r, submitLabel: z, title: G },
                       g.createElement(
-                        k.a,
+                        T.a,
                         { style: K.countrySelector },
                         g.createElement(x.a, {
                           helperText: a,
                           label: M,
                           onChange: this._handleCountryChange,
                           options: n,
-                          testID: T,
+                          testID: D,
                           value: t || '',
                         }),
                       ),
@@ -195,7 +195,7 @@
         K = A.a.create(function (e) {
           return { countrySelector: { margin: e.spaces.space20 } }
         })
-      t.default = B(W)
+      t.default = P(W)
     },
     '6XNv': function (e, t, n) {
       'use strict'
@@ -225,7 +225,7 @@
         L = (n('aWzz'), n('k/Ka')),
         _ = n('shC7'),
         R = n('MWbm')
-      function P(e) {
+      function B(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -246,7 +246,7 @@
           return h()(this, n)
         }
       }
-      function B(e, t) {
+      function P(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -262,27 +262,27 @@
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? B(Object(n), !0).forEach(function (t) {
+            ? P(Object(n), !0).forEach(function (t) {
                 m()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : B(Object(n)).forEach(function (t) {
+            : P(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var F = v.forwardRef(function (e, t) {
+      var k = v.forwardRef(function (e, t) {
           return Object(L.a)('select', j(j({}, e), {}, { ref: t }))
         }),
-        D = function (e) {
+        F = function (e) {
           return Object(L.a)('option', e)
         },
-        T = 1,
-        k = (function (e) {
+        D = 1,
+        T = (function (e) {
           p()(n, e)
-          var t = P(n)
+          var t = B(n)
           function n(e) {
             var r
             return (
@@ -307,11 +307,11 @@
                 var t = r.props.onFocus
                 r.setState({ isFocused: !0 }), t && t()
               }),
-              (r._id = 'SELECTOR_'.concat(T)),
+              (r._id = 'SELECTOR_'.concat(D)),
               (r._errorID = ''.concat(r._id, '_ERROR')),
               (r._helperID = ''.concat(r._id, '_HELP')),
               (r._labelID = ''.concat(r._id, '_LABEL')),
-              (T += 1),
+              (D += 1),
               r
             )
           }
@@ -367,7 +367,7 @@
                       },
                       this._renderLabel(),
                       v.createElement(
-                        F,
+                        k,
                         {
                           accessibilityDescribedBy: g,
                           accessibilityInvalid: b,
@@ -382,13 +382,13 @@
                           testID: u || '',
                           value: s,
                         },
-                        d ? v.createElement(D, { disabled: !0, style: I.option, value: '' }) : null,
+                        d ? v.createElement(F, { disabled: !0, style: I.option, value: '' }) : null,
                         i.map(function (e) {
                           var t = e.disabled,
                             n = e.label,
                             r = e.value
                           return v.createElement(
-                            D,
+                            F,
                             { disabled: t, key: ''.concat(n, '-').concat(r), style: I.option, value: r },
                             n,
                           )
@@ -455,7 +455,7 @@
             n
           )
         })(v.PureComponent)
-      m()(k, 'defaultProps', { disabled: !1, autofocus: !1, withEmptyOption: !1 }), (k.propTypes = {})
+      m()(T, 'defaultProps', { disabled: !1, autofocus: !1, withEmptyOption: !1 }), (T.propTypes = {})
       var I = C.a.create(function (e) {
         return {
           container: { backgroundColor: e.colors.cellBackground },
@@ -501,7 +501,7 @@
           },
         }
       })
-      t.a = k
+      t.a = T
     },
     '7FtF': function (e, t, n) {
       'use strict'
@@ -540,11 +540,11 @@
         L = n.n(C),
         _ = n('M2mT'),
         R = 'settingsDetailSave',
-        P = n('mw9i'),
-        B = n('0yYu'),
+        B = n('mw9i'),
+        P = n('0yYu'),
         j = n('/yvb'),
-        F = n('rHpw')
-      function D(e) {
+        k = n('rHpw')
+      function F(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -565,10 +565,10 @@
           return p()(this, n)
         }
       }
-      var T = L.a.i2209530,
-        k = (function (e) {
+      var D = L.a.i2209530,
+        T = (function (e) {
           s()(n, e)
-          var t = D(n)
+          var t = F(n)
           function n() {
             var e
             a()(this, n)
@@ -588,16 +588,16 @@
                   c = t.submitType,
                   i = t.withMarginBottom
                 return g.createElement(
-                  P.a,
+                  B.a,
                   { style: [I.contentRoot, i && I.withMarginBottom] },
                   n,
                   r
                     ? g.createElement(
                         g.Fragment,
                         null,
-                        g.createElement(B.a, null),
+                        g.createElement(P.a, null),
                         g.createElement(
-                          P.a,
+                          B.a,
                           { style: I.buttonContainer },
                           g.createElement(j.a, { disabled: a, onPress: r, style: I.button, testID: R, type: c }, o),
                         ),
@@ -635,24 +635,26 @@
                 value: function () {
                   var e = this.props,
                     t = e.loggedInUser,
-                    n = e.rightControl,
-                    r = e.screenType,
-                    a = e.secondaryBar,
-                    o = e.title,
-                    c = e.withBottomBorder,
-                    i = this.getBackLocation(),
-                    l = t ? '@'.concat(t.screen_name) : void 0
+                    n = e.onBackClick,
+                    r = e.rightControl,
+                    a = e.screenType,
+                    o = e.secondaryBar,
+                    c = e.title,
+                    i = e.withBottomBorder,
+                    l = this.getBackLocation(),
+                    u = t ? '@'.concat(t.screen_name) : void 0
                   return g.createElement(
                     _.a,
                     {
-                      backLocation: i,
-                      rightControl: n,
-                      screenType: r,
-                      secondaryBar: a,
+                      backLocation: l,
+                      onBackClick: n,
+                      rightControl: r,
+                      screenType: a,
+                      secondaryBar: o,
                       showSubtitleOnWideDetail: !1,
-                      subtitle: l,
-                      title: o,
-                      withBottomBorder: c,
+                      subtitle: u,
+                      title: c,
+                      withBottomBorder: i,
                     },
                     t ? this._renderWithFetchSettings() : this._render(),
                   )
@@ -662,8 +664,8 @@
             n
           )
         })(g.Component)
-      y()(k, 'defaultProps', { submitLabel: T, submitType: 'brandFilled', withMarginBottom: !0 })
-      var I = F.a.create(function (e) {
+      y()(T, 'defaultProps', { submitLabel: D, submitType: 'brandFilled', withMarginBottom: !0 })
+      var I = k.a.create(function (e) {
         return {
           contentRoot: {
             backgroundColor: e.colors.cellBackground,
@@ -681,11 +683,11 @@
           },
           button: { marginVertical: 0, marginHorizontal: e.spaces.space12 },
           withMarginBottom: {
-            marginBottom: 'calc('.concat(e.spaces.space64, ' + ').concat(F.a.iPhoneOffsetBottom, ')'),
+            marginBottom: 'calc('.concat(e.spaces.space64, ' + ').concat(k.a.iPhoneOffsetBottom, ')'),
           },
         }
       })
-      t.a = S(k)
+      t.a = S(T)
     },
     FDFL: function (e, t, n) {
       'use strict'
@@ -823,7 +825,7 @@
         }
         return n
       }
-      function P(e) {
+      function B(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
@@ -838,19 +840,19 @@
         }
         return e
       }
-      var B = _.a.create(function (e) {
+      var P = _.a.create(function (e) {
           return {
             fill: { flex: 1, alignSelf: 'stretch' },
-            viewportView: P(P({}, _.a.absoluteFillObject), {}, { overflowY: 'auto' }),
+            viewportView: B(B({}, _.a.absoluteFillObject), {}, { overflowY: 'auto' }),
             appBarContainer: { position: 'sticky', top: 0 },
             appBarZindex: { backfaceVisibility: 'hidden', zIndex: e.componentZIndices.appBarZIndex },
           }
         }),
         j = n('MWbm'),
-        F = n('yw4N'),
-        D = n('TnY3'),
-        T = n('cHvH'),
-        k = n('3xLC')
+        k = n('yw4N'),
+        F = n('TnY3'),
+        D = n('cHvH'),
+        T = n('3xLC')
       function I(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -886,10 +888,10 @@
               return e.context.rootDetailPerColumnScroll
                 ? O.createElement(
                     j.a,
-                    { style: B.fill },
+                    { style: P.fill },
                     O.createElement(
-                      F.a,
-                      { style: B.viewportView },
+                      k.a,
+                      { style: P.viewportView },
                       t ? e._renderInlineNav({ isTwoColumnLayout: !0, appBarScrollEnabled: !0 }) : null,
                       n,
                     ),
@@ -905,7 +907,7 @@
               key: 'render',
               value: function () {
                 var e = this
-                return O.createElement(T.a, null, function (t) {
+                return O.createElement(D.a, null, function (t) {
                   var n = t.windowWidth
                   return E.a.isTwoColumnLayout(n) ? e._renderForTwoColumnLayout() : e._renderForOneColumnLayout()
                 })
@@ -980,11 +982,11 @@
                   L = a.subtitle,
                   _ = a.title,
                   R = a.titleIconCell,
-                  P = a.titleIconCellSize,
-                  F = a.withBottomBorder,
-                  D = a.withDetailOpen,
-                  T = a.withSearchBox,
-                  k = a.withTweetButton,
+                  B = a.titleIconCellSize,
+                  k = a.withBottomBorder,
+                  F = a.withDetailOpen,
+                  D = a.withSearchBox,
+                  T = a.withTweetButton,
                   I = 'root' === y,
                   x = 'secondaryRoot' === y,
                   A = 'primaryDetail' === y,
@@ -993,7 +995,7 @@
                   U = I ? v.c : A ? v.a : void 0,
                   M = O.createElement(
                     j.a,
-                    { style: n ? [B.appBarContainer, B.appBarZindex] : B.appBarZindex },
+                    { style: n ? [P.appBarContainer, P.appBarZindex] : P.appBarZindex },
                     O.createElement(w.a, {
                       backLocation: l,
                       fixed: !1,
@@ -1008,12 +1010,12 @@
                       title: _,
                       titleDomId: U,
                       titleIconCell: R,
-                      titleIconCellSize: P,
-                      withBottomBorder: F,
+                      titleIconCellSize: B,
+                      withBottomBorder: k,
                     }),
                   ),
                   z =
-                    I || (x && D)
+                    I || (x && F)
                       ? null
                       : O.createElement(C.a.Configure, {
                           SideNavButton: o,
@@ -1028,8 +1030,8 @@
                           searchBoxOptions: g,
                           subtitle: L,
                           title: _,
-                          withSearchBox: T,
-                          withTweetButton: k,
+                          withSearchBox: D,
+                          withTweetButton: T,
                         })
                 return O.createElement(O.Fragment, null, z, M, n ? null : m)
               },
@@ -1038,9 +1040,9 @@
           n
         )
       })(O.Component)
-      m()(x, 'contextType', k.a),
+      m()(x, 'contextType', T.a),
         m()(x, 'defaultProps', { screenType: 'secondaryDetail', showSubtitleOnWideDetail: !0 })
-      t.a = Object(D.a)(x)
+      t.a = Object(F.a)(x)
     },
     'S/HT': function (e, t, n) {
       'use strict'

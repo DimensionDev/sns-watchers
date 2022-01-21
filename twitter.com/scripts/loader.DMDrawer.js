@@ -4760,7 +4760,7 @@
             s = e.renderInboxItem,
             u = e.searchTerm,
             d = Object(en.c)(),
-            p = Object(rn.a)(er, { query: u }, nr),
+            p = Object(rn.a)(er, { query: u }),
             f = p.data,
             m = p.fetchNext,
             h = p.hasNext,

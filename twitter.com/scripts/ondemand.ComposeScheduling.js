@@ -1543,7 +1543,7 @@
                       u = l && 'PostTweetRequest' === l.type ? l.status : '',
                       d = l && 'PostTweetRequest' === l.type ? l.in_reply_to_status_id : void 0,
                       f = l && 'PostTweetRequest' === l.type ? l.attachment_url : void 0,
-                      h = f && f.split('/status/')[1].match(L.z.id),
+                      h = f && f.split('/status/')[1].match(L.A.id),
                       p = h ? h[0] : void 0,
                       m = t.media_entities ? Object(B.d)(t.media_entities) : {},
                       y = (t.media_entities || []).reduce(function (e, t) {

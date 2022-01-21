@@ -290,10 +290,10 @@
     Q0n6: function (e, t, r) {
       'use strict'
       r.d(t, 'a', function () {
-        return g
+        return w
       }),
         r.d(t, 'l', function () {
-          return w
+          return g
         }),
         r.d(t, 'g', function () {
           return O
@@ -320,10 +320,10 @@
           return L
         }),
         r.d(t, 'c', function () {
-          return x
+          return T
         }),
         r.d(t, 'b', function () {
-          return T
+          return R
         })
       r('7xRU'), r('hBpG'), r('2G9S')
       var n = r('kCRK'),
@@ -344,12 +344,12 @@
         y = function (e) {
           return 'number' == typeof e ? i(e) : e
         },
-        g = function (e) {
+        w = function (e) {
           var t = e.viewCount,
             r = e.viewerCount
           return t || 0 === t ? v({ viewCount: y(t) }) : r || 0 === r ? m({ viewerCount: y(r) }) : null
         },
-        w = function (e) {
+        g = function (e) {
           return e
             ? (function () {
                 var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
@@ -369,13 +369,13 @@
                   i.push(b({ hoursWord: m, minutesWord: v, secondsWord: y }))
                 }
                 if ('number' == typeof o && o) {
-                  var w = S(o),
-                    O = w.hoursWord,
-                    E = w.minutesWord,
-                    P = w.secondsWord
+                  var g = S(o),
+                    O = g.hoursWord,
+                    E = g.minutesWord,
+                    P = g.secondsWord
                   i.push(h({ hoursWord: O, minutesWord: E, secondsWord: P }))
                 }
-                var k = a && g(a)
+                var k = a && w(a)
                 return k && i.push(k), i.join('. ')
               })({
                 isLive: e.isLive,
@@ -387,7 +387,7 @@
             : ''
         },
         S = function (e) {
-          var t = R(e),
+          var t = x(e),
             r = t.hours,
             n = t.minutes,
             o = t.seconds,
@@ -432,11 +432,11 @@
             return t && t > 0 ? t : e.replayEditedStartTime
           }
         },
-        x = function (e) {
-          return T(Math.round(e / 1e3))
-        },
         T = function (e) {
-          var t = R(e),
+          return R(Math.round(e / 1e3))
+        },
+        R = function (e) {
+          var t = x(e),
             r = t.hours,
             n = t.minutes,
             o = t.seconds,
@@ -444,7 +444,7 @@
             i = n < 10 && r ? '0'.concat(n) : n
           return r ? ''.concat(r, ':').concat(i, ':').concat(a) : ''.concat(i, ':').concat(a)
         },
-        R = function (e) {
+        x = function (e) {
           return { hours: Math.floor(e / 3600), minutes: Math.floor((e % 3600) / 60), seconds: Math.floor(e % 60) }
         }
     },
@@ -559,7 +559,7 @@
     hhMf: function (e, t, r) {
       'use strict'
       r.d(t, 'a', function () {
-        return T
+        return R
       })
       r('OZaJ')
       var n = r('97Jx'),
@@ -578,7 +578,7 @@
         m = r.n(h),
         v = r('KEM+'),
         y = r.n(v),
-        g =
+        w =
           (r('LqLs'),
           r('7x/C'),
           r('87if'),
@@ -590,7 +590,7 @@
           r('jwue'),
           r('+oxZ'),
           r('ERkP')),
-        w = r('6fxz')
+        g = r('6fxz')
       function S(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -629,16 +629,16 @@
             return n[e].delete(t), { observed: n }
           }
         },
-        L = g.createContext({
+        L = w.createContext({
           observed: { click: new Set(), focused: new Set(), mousemove: new Set(), mouseover: new Set() },
           Observer: function () {
             return null
           },
         }),
-        x = g.createContext(function () {
+        T = w.createContext(function () {
           return null
         }),
-        T = (function (e) {
+        R = (function (e) {
           d()(r, e)
           var t = S(r)
           function r() {
@@ -684,7 +684,7 @@
                   c && (d.onMouseMove = e._handleMouseMove(n, f)),
                   s && ((d.onMouseEnter = e._handleMouseEnter(n)), (d.onMouseLeave = e._handleMouseLeave(n))),
                   u && ((d.onTouchStart = e._handleTouchStart(n)), (d.onTouchEnd = e._handleTouchEnd(n, f))),
-                  g.createElement(
+                  w.createElement(
                     'div',
                     o()({}, d, {
                       ref: function (t) {
@@ -747,7 +747,7 @@
                   var r = E
                   clearTimeout(e._timeoutCollection[r][t])
                   var n = e.hasActiveInteractionWatcherChildren()
-                  w.a.hadKeyboardEvent && n && e.setState(j(r, t))
+                  g.a.hadKeyboardEvent && n && e.setState(j(r, t))
                 }
               }),
               y()(l()(e), '_handleBlur', function (t, r) {
@@ -786,18 +786,18 @@
                   var e = this.props.children
                   if (!e) throw new Error('component requires children prop.')
                   var t = this._renderObserver
-                  return g.createElement(
+                  return w.createElement(
                     r.ObserverContext.Provider,
                     { value: t },
-                    g.createElement(r.Context.Provider, { value: this.getContext() }, e),
+                    w.createElement(r.Context.Provider, { value: this.getContext() }, e),
                   )
                 },
               },
             ]),
             r
           )
-        })(g.Component)
-      y()(T, 'Context', L), y()(T, 'ObserverContext', x)
+        })(w.Component)
+      y()(R, 'Context', L), y()(R, 'ObserverContext', T)
     },
     kCRK: function (e, t, r) {
       'use strict'
@@ -885,7 +885,7 @@
     ub6r: function (e, t, r) {
       'use strict'
       r.d(t, 'a', function () {
-        return rt
+        return tt
       })
       var n = r('ERkP'),
         o = (r('OZaJ'), r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('VrFO')),
@@ -903,8 +903,8 @@
         m = r('KEM+'),
         v = r.n(m),
         y = (r('2G9S'), r('7x/C'), r('DZ+c'), r('hBvt'), r('Zl35')),
-        g = r('IE/l'),
-        w = r('N2PN'),
+        w = r('IE/l'),
+        g = r('N2PN'),
         S = r('dPHj'),
         O = r('kCRK'),
         E = r('3XMw'),
@@ -934,8 +934,8 @@
           return p()(this, r)
         }
       }
-      var x = P.a.f06f2e53,
-        T = (function (e) {
+      var T = P.a.f06f2e53,
+        R = (function (e) {
           f()(r, e)
           var t = L(r)
           function r(e) {
@@ -996,7 +996,7 @@
                       c = Object(C.b)(o)
                     return n.createElement(j.a, {
                       accessibilityLabel: t,
-                      accessibilityLabelValueText: x({ currentTime: i, durationTime: c }),
+                      accessibilityLabelValueText: T({ currentTime: i, durationTime: c }),
                       color: 'white',
                       keepLTR: !0,
                       keyboardStep: 5,
@@ -1016,8 +1016,8 @@
             r
           )
         })(n.PureComponent),
-        R = r('97Jx'),
-        B = r.n(R),
+        x = r('97Jx'),
+        B = r.n(x),
         M = r('/yvb'),
         D = r('BVo1'),
         A = r('w05h'),
@@ -1141,39 +1141,38 @@
         te = r('efqG'),
         re = P.a.h9b3104d,
         ne = P.a.ccc97152,
-        oe = P.a.cd6e0e5f,
-        ae = P.a.a0551d36,
-        ie = P.a.if8ee0cd,
-        ce = P.a.e4347df3,
-        se = P.a.e14d60ca,
-        ue = P.a.bf7aa0dd,
-        le = P.a.j2476269,
-        fe = P.a.d6a09fad,
-        de = P.a.e2457653,
-        pe = P.a.e23b20af,
-        be = { label: se, value: '1' },
-        he = [
-          { label: ae, value: '0.25' },
-          { label: ie, value: '0.5' },
-          { label: ce, value: '0.75' },
+        oe = P.a.e8b5757c,
+        ae = P.a.e7e954de,
+        ie = P.a.g07ffe66,
+        ce = P.a.d8bede9d,
+        se = P.a.j41845c7,
+        ue = P.a.e9eeed9e,
+        le = P.a.fe45dc83,
+        fe = P.a.e791190a,
+        de = P.a.e23b20af,
+        pe = { label: ce, value: '1' },
+        be = [
+          { label: oe, value: '0.25' },
+          { label: ae, value: '0.5' },
+          { label: ie, value: '0.75' },
         ],
-        me = [
-          { label: ue, value: '1.25' },
-          { label: le, value: '1.5' },
-          { label: fe, value: '1.75' },
-          { label: de, value: '2' },
+        he = [
+          { label: se, value: '1.25' },
+          { label: ue, value: '1.5' },
+          { label: le, value: '1.75' },
+          { label: fe, value: '2' },
         ]
-      function ve(e) {
+      function me(e) {
         switch (e) {
           case 'fast':
-            return [be].concat(me)
+            return [pe].concat(he)
           case 'slow':
-            return [].concat(he, [be])
+            return [].concat(be, [pe])
           default:
-            return [].concat(he, [be], me)
+            return [].concat(be, [pe], he)
         }
       }
-      var ye = N.a.create(function (e) {
+      var ve = N.a.create(function (e) {
           return {
             root: {
               flexDirection: 'column',
@@ -1186,7 +1185,6 @@
             popover: { maxWidth: 5 * e.spacesPx.space64 },
             modal: { borderRadius: e.borderRadii.none },
             title: { flexDirection: 'column', paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space16 },
-            subtext: { paddingTop: e.spaces.space4 },
             menuRow: {
               flexDirection: 'row',
               paddingTop: e.spaces.space12,
@@ -1197,7 +1195,7 @@
             cancelButton: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space16 },
           }
         }),
-        ge = function (e) {
+        ye = function (e) {
           var t,
             r = null === (t = e.playerState.playbackRate) || void 0 === t ? void 0 : t.toString(),
             o = e.children,
@@ -1220,29 +1218,24 @@
                 var o = 'sheet' === t
                 return n.createElement(
                   z.a,
-                  { accessibilityRole: 'dialog', style: ye.root },
+                  { accessibilityRole: 'dialog', style: ve.root },
                   n.createElement(
                     z.a,
-                    { style: ye.title },
+                    { style: ve.title },
                     n.createElement($.b, { size: 'headline1', weight: 'bold' }, ne),
-                    n.createElement(
-                      z.a,
-                      { style: ye.subtext },
-                      n.createElement($.b, { color: 'gray700', size: 'subtext2' }, oe),
-                    ),
                   ),
                   n.createElement(ee.a, {
-                    accessibilityLabel: re,
+                    accessibilityLabel: ne,
                     name: 'playback_rate',
                     onChange: p,
-                    options: ve(l),
+                    options: me(l),
                     value: r,
                   }),
                   o
                     ? n.createElement(
                         M.a,
-                        { onPress: a, style: ye.cancelButton, testID: 'Cancel', type: 'primaryOutlined' },
-                        pe,
+                        { onPress: a, style: ve.cancelButton, testID: 'Cancel', type: 'primaryOutlined' },
+                        de,
                       )
                     : null,
                 )
@@ -1256,7 +1249,7 @@
           )
         },
         we = { action: 'click', element: 'video_settings' }
-      function Se(e) {
+      function ge(e) {
         var t = n.useState({ showVideoSettings: !1, resumePlaybackOnDismiss: !1 }),
           r = Y()(t, 2),
           o = r[0],
@@ -1268,7 +1261,7 @@
           l = Object(C.e)(s)
         return l && l.playbackRateSupported
           ? n.createElement(
-              ge,
+              ye,
               {
                 onDismiss: function () {
                   a({ showVideoSettings: !1 })
@@ -1278,7 +1271,7 @@
                 showVideoSettings: o.showVideoSettings,
               },
               n.createElement(
-                w.a,
+                g.a,
                 B()({}, u, {
                   accessibilityLabel: re,
                   icon: n.createElement(Z.a, null),
@@ -1292,23 +1285,23 @@
             )
           : null
       }
-      var Oe,
-        Ee = r('kRXa'),
-        Pe = (r('yH/f'), Object.freeze({ wide: 'wide', narrow: 'narrow', veryNarrow: 'veryNarrow' })),
-        ke = Object.freeze(
-          ((Oe = {}), v()(Oe, Pe.wide, 500), v()(Oe, Pe.narrow, 285), v()(Oe, Pe.veryNarrow, 200), Oe),
+      var Se,
+        Oe = r('kRXa'),
+        Ee = (r('yH/f'), Object.freeze({ wide: 'wide', narrow: 'narrow', veryNarrow: 'veryNarrow' })),
+        Pe = Object.freeze(
+          ((Se = {}), v()(Se, Ee.wide, 500), v()(Se, Ee.narrow, 285), v()(Se, Ee.veryNarrow, 200), Se),
         ),
-        Ce = r('wtsM'),
-        je = r('5Ixf'),
-        _e = r('RUwF'),
-        Le = r('AtEG'),
-        xe = r('NnQ9'),
+        ke = r('wtsM'),
+        Ce = r('5Ixf'),
+        je = r('RUwF'),
+        _e = r('AtEG'),
+        Le = r('NnQ9'),
         Te = r('p6DB'),
         Re = r('pHub'),
-        Be = r('8A5z'),
-        Me = r('Lsrn'),
-        De = r('k/Ka')
-      function Ae(e, t) {
+        xe = r('8A5z'),
+        Be = r('Lsrn'),
+        Me = r('k/Ka')
+      function De(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -1320,29 +1313,29 @@
         }
         return r
       }
-      function He(e) {
+      function Ae(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Ae(Object(r), !0).forEach(function (t) {
+            ? De(Object(r), !0).forEach(function (t) {
                 v()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : Ae(Object(r)).forEach(function (t) {
+            : De(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var ze = function () {
+      var He = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(De.a)(
+        return Object(Me.a)(
           'svg',
-          He(
-            He({}, e),
+          Ae(
+            Ae({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [Me.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [Be.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           n.createElement(
             'g',
@@ -1353,9 +1346,9 @@
           ),
         )
       }
-      ze.metadata = { width: 24, height: 24 }
-      var We = ze
-      function Fe(e, t) {
+      He.metadata = { width: 24, height: 24 }
+      var ze = He
+      function We(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -1367,22 +1360,22 @@
         }
         return r
       }
-      function Ie(e) {
+      function Fe(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Fe(Object(r), !0).forEach(function (t) {
+            ? We(Object(r), !0).forEach(function (t) {
                 v()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : Fe(Object(r)).forEach(function (t) {
+            : We(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      function Ne(e) {
+      function Ie(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -1403,32 +1396,32 @@
           return p()(this, r)
         }
       }
-      var Ve = /^https?:\/\/(?:www.)?(?:periscope|pscp).tv/,
-        Ke = P.a.j25d7cc9,
-        Ue = P.a.a858b25b,
-        Ge = P.a.faf9f483,
-        Xe = P.a.ae2ea9e6,
-        qe = P.a.hea01797,
-        Ye = P.a.f8a09386,
-        Ze = 'ControlBar-',
-        Je = {
-          CAPTIONS: ''.concat(Ze, 'Captions'),
-          PERISCOPE: ''.concat(Ze, 'Periscope'),
-          FULLSCREEN: ''.concat(Ze, 'Fullscreen'),
-          SETTING: ''.concat(Ze, 'Setting'),
+      var Ne = /^https?:\/\/(?:www.)?(?:periscope|pscp).tv/,
+        Ve = P.a.j25d7cc9,
+        Ke = P.a.a858b25b,
+        Ue = P.a.faf9f483,
+        Ge = P.a.ae2ea9e6,
+        Xe = P.a.hea01797,
+        qe = P.a.f8a09386,
+        Ye = 'ControlBar-',
+        Ze = {
+          CAPTIONS: ''.concat(Ye, 'Captions'),
+          PERISCOPE: ''.concat(Ye, 'Periscope'),
+          FULLSCREEN: ''.concat(Ye, 'Fullscreen'),
+          SETTING: ''.concat(Ye, 'Setting'),
         },
-        Qe = function (e) {
-          return e === Pe.narrow || e === Pe.veryNarrow
+        Je = function (e) {
+          return e === Ee.narrow || e === Ee.veryNarrow
         },
-        $e = (function (e) {
+        Qe = (function (e) {
           f()(r, e)
-          var t = Ne(r)
+          var t = Ie(r)
           function r(e) {
             var o
             if (
               (a()(this, r),
               (o = t.call(this, e)),
-              v()(u()(o), 'state', { currentBreakpoint: Pe.wide, showScrubber: !0, scrubTime: 0 }),
+              v()(u()(o), 'state', { currentBreakpoint: Ee.wide, showScrubber: !0, scrubTime: 0 }),
               v()(u()(o), '_parentRef', n.createRef()),
               v()(u()(o), '_renderActionButton', function (e, t) {
                 var r = t.controls,
@@ -1438,32 +1431,32 @@
                   s = e.replay,
                   u = o.state.currentBreakpoint,
                   l = Object(C.e)(t),
-                  f = Qe(u) ? 'xSmall' : 'medium'
+                  f = Je(u) ? 'xSmall' : 'medium'
                 return !l || l.isLive
                   ? null
                   : a || (r && 'PLAY_REQUESTED' === r.playState)
-                  ? n.createElement(w.b, {
-                      accessibilityLabel: Ce.d,
+                  ? n.createElement(g.b, {
+                      accessibilityLabel: ke.d,
                       hoverLabelPreferredHorizontalOrientation: 'end',
                       hoverLabelWithExtraSpace: o.props.showScrubber,
-                      icon: n.createElement(je.a, null),
+                      icon: n.createElement(Ce.a, null),
                       onPress: i,
                       size: f,
                     })
                   : r.isReplayButtonShown
-                  ? n.createElement(w.b, {
-                      accessibilityLabel: Ce.f,
+                  ? n.createElement(g.b, {
+                      accessibilityLabel: ke.f,
                       hoverLabelPreferredHorizontalOrientation: 'end',
                       hoverLabelWithExtraSpace: o.props.showScrubber,
-                      icon: n.createElement(_e.a, null),
+                      icon: n.createElement(je.a, null),
                       onPress: s,
                       size: f,
                     })
-                  : n.createElement(w.b, {
-                      accessibilityLabel: Ce.e,
+                  : n.createElement(g.b, {
+                      accessibilityLabel: ke.e,
                       hoverLabelPreferredHorizontalOrientation: 'end',
                       hoverLabelWithExtraSpace: o.props.showScrubber,
-                      icon: n.createElement(Le.a, null),
+                      icon: n.createElement(_e.a, null),
                       onPress: c,
                       size: f,
                     })
@@ -1505,8 +1498,8 @@
                   var a = t.advertiserName
                   return n.createElement(
                     S.a,
-                    { style: Qe(r) && { fontSize: N.a.theme.fontSizes.subtext2 } },
-                    a ? Xe({ advertiserName: a }) : Ge,
+                    { style: Je(r) && { fontSize: N.a.theme.fontSizes.subtext2 } },
+                    a ? Ge({ advertiserName: a }) : Ue,
                   )
                 }
                 return null
@@ -1518,20 +1511,20 @@
                   c = t.fullscreen,
                   s = o.state.currentBreakpoint,
                   u = o._fullScreenIcon,
-                  l = Qe(s) ? 'xSmall' : 'medium'
+                  l = Je(s) ? 'xSmall' : 'medium'
                 return r && i
                   ? null
                   : c.isFullscreen
-                  ? n.createElement(w.b, {
-                      accessibilityLabel: Ce.b,
+                  ? n.createElement(g.b, {
+                      accessibilityLabel: ke.b,
                       hoverLabelPreferredHorizontalOrientation: 'start',
                       hoverLabelWithExtraSpace: o.props.showScrubber,
                       icon: n.createElement(u, { isFullscreen: c.isFullscreen }),
                       onPress: o._exitFullScreen(e),
                       size: l,
                     })
-                  : n.createElement(w.b, {
-                      accessibilityLabel: Ce.a,
+                  : n.createElement(g.b, {
+                      accessibilityLabel: ke.a,
                       hoverLabelPreferredHorizontalOrientation: 'start',
                       hoverLabelWithExtraSpace: o.props.showScrubber,
                       icon: n.createElement(u, { isFullscreen: c.isFullscreen }),
@@ -1541,12 +1534,12 @@
               }),
               v()(u()(o), '_fullScreenIcon', function (e) {
                 var t = e.isFullscreen,
-                  r = (e.style, tt.hidden),
-                  o = tt.shown
+                  r = (e.style, et.hidden),
+                  o = et.shown
                 return n.createElement(
                   n.Fragment,
                   null,
-                  n.createElement(xe.a, { style: t ? r : o }),
+                  n.createElement(Le.a, { style: t ? r : o }),
                   n.createElement(Te.a, { style: t ? o : r }),
                 )
               }),
@@ -1568,8 +1561,8 @@
                       n.createElement(y.a, { periodic: !0 }, function (t) {
                         var r = t.playerState,
                           o = Object(C.e)(r)
-                        return n.createElement(T, {
-                          accessibilityLabel: qe,
+                        return n.createElement(R, {
+                          accessibilityLabel: Xe,
                           currentTime: Object(C.g)(o),
                           duration: Object(C.h)(o),
                           isScrubbing: r.isScrubbing,
@@ -1590,17 +1583,17 @@
                   l = u.containerHeight,
                   f = u.currentBreakpoint,
                   d = r ? s : i,
-                  p = r ? Ce.g : Ce.c
-                return n.createElement(Ee.a, {
+                  p = r ? ke.g : ke.c
+                return n.createElement(Oe.a, {
                   accessibilityLabelIcon: p,
-                  accessibilityLabelSlider: Ce.h,
+                  accessibilityLabelSlider: ke.h,
                   containerHeight: l,
                   isMuted: r,
                   onHideSlider: o._showScrubberHandler(!0),
                   onMuteToggle: d,
                   onShowSlider: o._showScrubberHandler(!1),
                   onSliderChange: o._setVolumePercent(c),
-                  size: Qe(f) ? 'xSmall' : 'medium',
+                  size: Je(f) ? 'xSmall' : 'medium',
                   volumePercent: 100 * a,
                 })
               }),
@@ -1610,12 +1603,12 @@
                   var a = o.state.currentBreakpoint,
                     i = t.areCaptionsShown,
                     c = e.toggleCaptions
-                  return n.createElement(w.b, {
-                    accessibilityLabel: i ? Ke : Ue,
+                  return n.createElement(g.b, {
+                    accessibilityLabel: i ? Ve : Ke,
                     hoverLabelWithExtraSpace: o.props.showScrubber,
-                    icon: i ? n.createElement(Re.a, null) : n.createElement(Be.a, null),
+                    icon: i ? n.createElement(Re.a, null) : n.createElement(xe.a, null),
                     onPress: c,
-                    size: Qe(a) ? 'xSmall' : 'medium',
+                    size: Je(a) ? 'xSmall' : 'medium',
                     testID: 'captions',
                   })
                 }
@@ -1633,10 +1626,10 @@
                     f = u && void 0 !== l && c ? l * c : Object(C.d)(a) || 0
                   if (a && 'number' == typeof i && c && !a.isLive) {
                     var d =
-                      r === Pe.veryNarrow
+                      r === Ee.veryNarrow
                         ? ''.concat(Object(C.b)(c - f))
                         : ''.concat(Object(C.b)(f), ' / ').concat(Object(C.b)(c))
-                    return n.createElement(S.a, { style: Qe(r) && { fontSize: N.a.theme.fontSizes.subtext2 } }, d)
+                    return n.createElement(S.a, { style: Je(r) && { fontSize: N.a.theme.fontSizes.subtext2 } }, d)
                   }
                   return null
                 })
@@ -1647,7 +1640,7 @@
                   i = Object(C.e)(t),
                   c = r && r.hidePeriscopeLink,
                   s = null == i ? void 0 : i.broadcastShareUrl
-                return s && Ve.test(s) ? o._renderPeriscopeLink(i, c, n) : a ? o._renderCustomIconLink(a) : void 0
+                return s && Ne.test(s) ? o._renderPeriscopeLink(i, c, n) : a ? o._renderCustomIconLink(a) : void 0
               }),
               v()(u()(o), '_renderPeriscopeLink', function (e, t, r) {
                 return n.createElement(y.a, { periodic: !0 }, function (a) {
@@ -1662,14 +1655,14 @@
                       var l = u + (s || 0)
                       c.addSearchParam('t', l.toString())
                     }
-                    return n.createElement(w.b, {
-                      accessibilityLabel: Ye,
+                    return n.createElement(g.b, {
+                      accessibilityLabel: qe,
                       hoverLabelPreferredHorizontalOrientation: 'start',
                       hoverLabelWithExtraSpace: o.props.showScrubber,
-                      icon: n.createElement(We, null),
+                      icon: n.createElement(ze, null),
                       link: { pathname: c.toString(), anchorless: !0 },
                       onPress: r,
-                      size: Qe(i) ? 'xSmall' : 'medium',
+                      size: Je(i) ? 'xSmall' : 'medium',
                       testID: 'periscopeLink',
                     })
                   }
@@ -1680,14 +1673,14 @@
                   r = new V.a(e.link),
                   a = e.tooltipLabel,
                   i = e.onPress
-                return n.createElement(w.b, {
+                return n.createElement(g.b, {
                   accessibilityLabel: a,
                   hoverLabelPreferredHorizontalOrientation: 'start',
                   hoverLabelWithExtraSpace: o.props.showScrubber,
                   icon: e.icon,
                   link: { pathname: r.toString(), anchorless: !0 },
                   onPress: i,
-                  size: Qe(t) ? 'xSmall' : 'medium',
+                  size: Je(t) ? 'xSmall' : 'medium',
                 })
               }),
               v()(u()(o), '_showScrubberHandler', function (e) {
@@ -1712,11 +1705,11 @@
               v()(u()(o), '_convertWidthToBreakpoint', function (e) {
                 var t
                 return (
-                  e > ke.wide
-                    ? (t = Pe.wide)
-                    : e < ke.veryNarrow
-                    ? (t = Pe.veryNarrow)
-                    : e < ke.narrow && (t = Pe.narrow),
+                  e > Pe.wide
+                    ? (t = Ee.wide)
+                    : e < Pe.veryNarrow
+                    ? (t = Ee.veryNarrow)
+                    : e < Pe.narrow && (t = Ee.narrow),
                   t
                 )
               }),
@@ -1725,8 +1718,8 @@
               var i = e.containerRef.getBoundingClientRect(),
                 c = i.height,
                 s = i.width
-              o.state = Ie(
-                Ie({}, o.state),
+              o.state = Fe(
+                Fe({}, o.state),
                 {},
                 { currentBreakpoint: o._convertWidthToBreakpoint(s), containerHeight: c },
               )
@@ -1752,7 +1745,7 @@
                           return n.createElement(
                             z.a,
                             { onLayout: e._handleLayout, pointerEvents: 'auto', ref: e._parentRef, style: D.e },
-                            n.createElement(g.a, {
+                            n.createElement(w.a, {
                               actionButton: e._renderActionButton(o, i),
                               displayDismissableControls: !r,
                               leftContent: n.createElement(
@@ -1760,8 +1753,8 @@
                                 null,
                                 e._renderAdBadge(i),
                                 e._renderPublisherAttribution(i),
-                                c === Pe.wide ? e._renderMiddot(i) : null,
-                                c === Pe.wide ? e._renderViewCount(i) : null,
+                                c === Ee.wide ? e._renderMiddot(i) : null,
+                                c === Ee.wide ? e._renderViewCount(i) : null,
                               ),
                               rightContent: n.createElement(
                                 n.Fragment,
@@ -1769,23 +1762,23 @@
                                 e._renderTimePlayed(),
                                 n.createElement(
                                   t,
-                                  { focus: !0, interactionKey: Je.CAPTIONS, interactionTimeoutMs: 0, mouseover: !0 },
+                                  { focus: !0, interactionKey: Ze.CAPTIONS, interactionTimeoutMs: 0, mouseover: !0 },
                                   e._renderCaptionsButton(o, i),
                                 ),
                                 e._renderVolume(o, i),
                                 n.createElement(
                                   t,
-                                  { focus: !0, interactionKey: Je.PERISCOPE, interactionTimeoutMs: 0, mouseover: !0 },
+                                  { focus: !0, interactionKey: Ze.PERISCOPE, interactionTimeoutMs: 0, mouseover: !0 },
                                   e._renderPeriscopeOrCustomIconLink(o, i, a),
                                 ),
                                 n.createElement(
                                   t,
-                                  { focus: !0, interactionKey: Je.SETTING, interactionTimeoutMs: 0, mouseover: !0 },
-                                  n.createElement(Se, { isNarrow: Qe(c), playerApi: o, playerState: i }),
+                                  { focus: !0, interactionKey: Ze.SETTING, interactionTimeoutMs: 0, mouseover: !0 },
+                                  n.createElement(ge, { isNarrow: Je(c), playerApi: o, playerState: i }),
                                 ),
                                 n.createElement(
                                   t,
-                                  { focus: !0, interactionKey: Je.FULLSCREEN, interactionTimeoutMs: 0, mouseover: !0 },
+                                  { focus: !0, interactionKey: Ze.FULLSCREEN, interactionTimeoutMs: 0, mouseover: !0 },
                                   e._renderFullScreenButton(o, i),
                                 ),
                               ),
@@ -1802,7 +1795,7 @@
                 {
                   key: 'getDerivedStateFromProps',
                   value: function (e, t) {
-                    return e.hideControls ? Ie(Ie({}, t), {}, { showScrubber: !0 }) : t
+                    return e.hideControls ? Fe(Fe({}, t), {}, { showScrubber: !0 }) : t
                   },
                 },
               ],
@@ -1810,11 +1803,11 @@
             r
           )
         })(n.PureComponent)
-      v()($e, 'defaultProps', { showScrubber: !0 })
-      var et = $e,
-        tt = { hidden: { display: 'none', height: '1.5em' }, shown: { display: 'block', height: '1.5em' } }
-      function rt(e) {
-        return n.createElement(et, e)
+      v()(Qe, 'defaultProps', { showScrubber: !0 })
+      var $e = Qe,
+        et = { hidden: { display: 'none', height: '1.5em' }, shown: { display: 'block', height: '1.5em' } }
+      function tt(e) {
+        return n.createElement($e, e)
       }
     },
     w05h: function (e, t, r) {
@@ -1862,10 +1855,10 @@
           return y
         }),
         r.d(t, 'l', function () {
-          return g
+          return w
         }),
         r.d(t, 'm', function () {
-          return w
+          return g
         }),
         r.d(t, 'n', function () {
           return S
@@ -1886,8 +1879,8 @@
         m = o.a.j0c67729,
         v = o.a.f73003aa,
         y = o.a.b3112b89,
-        g = o.a.h6333ad0,
-        w = o.a.c59da417,
+        w = o.a.h6333ad0,
+        g = o.a.c59da417,
         S = o.a.c3c147cf
     },
     wtsM: function (e, t, r) {

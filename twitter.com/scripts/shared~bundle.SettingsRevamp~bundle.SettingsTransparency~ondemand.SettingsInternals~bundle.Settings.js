@@ -63,8 +63,8 @@
           return f()(this, r)
         }
       }
-      var N = P.a.i2209530,
-        B = (function (e) {
+      var B = P.a.i2209530,
+        N = (function (e) {
           l()(r, e)
           var t = j(r)
           function r() {
@@ -133,24 +133,26 @@
                 value: function () {
                   var e = this.props,
                     t = e.loggedInUser,
-                    r = e.rightControl,
-                    n = e.screenType,
-                    a = e.secondaryBar,
-                    o = e.title,
-                    i = e.withBottomBorder,
-                    c = this.getBackLocation(),
-                    s = t ? '@'.concat(t.screen_name) : void 0
+                    r = e.onBackClick,
+                    n = e.rightControl,
+                    a = e.screenType,
+                    o = e.secondaryBar,
+                    i = e.title,
+                    c = e.withBottomBorder,
+                    s = this.getBackLocation(),
+                    u = t ? '@'.concat(t.screen_name) : void 0
                   return b.createElement(
                     T.a,
                     {
-                      backLocation: c,
-                      rightControl: r,
-                      screenType: n,
-                      secondaryBar: a,
+                      backLocation: s,
+                      onBackClick: r,
+                      rightControl: n,
+                      screenType: a,
+                      secondaryBar: o,
                       showSubtitleOnWideDetail: !1,
-                      subtitle: s,
-                      title: o,
-                      withBottomBorder: i,
+                      subtitle: u,
+                      title: i,
+                      withBottomBorder: c,
                     },
                     t ? this._renderWithFetchSettings() : this._render(),
                   )
@@ -160,7 +162,7 @@
             r
           )
         })(b.Component)
-      _()(B, 'defaultProps', { submitLabel: N, submitType: 'brandFilled', withMarginBottom: !0 })
+      _()(N, 'defaultProps', { submitLabel: B, submitType: 'brandFilled', withMarginBottom: !0 })
       var R = L.a.create(function (e) {
         return {
           contentRoot: {
@@ -183,7 +185,7 @@
           },
         }
       })
-      t.a = w(B)
+      t.a = w(N)
     },
     M2mT: function (e, t, r) {
       'use strict'
@@ -250,8 +252,8 @@
         A = r('MWbm'),
         L = r('yw4N'),
         j = r('TnY3'),
-        N = r('cHvH'),
-        B = r('3xLC')
+        B = r('cHvH'),
+        N = r('3xLC')
       function R(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -306,7 +308,7 @@
               key: 'render',
               value: function () {
                 var e = this
-                return y.createElement(N.a, null, function (t) {
+                return y.createElement(B.a, null, function (t) {
                   var r = t.windowWidth
                   return m.a.isTwoColumnLayout(r) ? e._renderForTwoColumnLayout() : e._renderForOneColumnLayout()
                 })
@@ -384,8 +386,8 @@
                   C = a.titleIconCellSize,
                   L = a.withBottomBorder,
                   j = a.withDetailOpen,
-                  N = a.withSearchBox,
-                  B = a.withTweetButton,
+                  B = a.withSearchBox,
+                  N = a.withTweetButton,
                   R = 'root' === _,
                   z = 'secondaryRoot' === _,
                   k = 'primaryDetail' === _,
@@ -429,8 +431,8 @@
                           searchBoxOptions: b,
                           subtitle: P,
                           title: T,
-                          withSearchBox: N,
-                          withTweetButton: B,
+                          withSearchBox: B,
+                          withTweetButton: N,
                         })
                 return y.createElement(y.Fragment, null, Z, U, r ? null : g)
               },
@@ -439,7 +441,7 @@
           r
         )
       })(y.Component)
-      g()(z, 'contextType', B.a),
+      g()(z, 'contextType', N.a),
         g()(z, 'defaultProps', { screenType: 'secondaryDetail', showSubtitleOnWideDetail: !0 })
       t.a = Object(j.a)(z)
     },
@@ -453,10 +455,10 @@
           return j
         }),
         r.d(t, 'selectData', function () {
-          return N
+          return B
         }),
         r.d(t, 'selectUserPreferences', function () {
-          return B
+          return N
         }),
         r.d(t, 'selectPreferencesFetchStatus', function () {
           return R
@@ -699,10 +701,10 @@
         j = function (e) {
           return e.personalization.preferences.data
         },
-        N = function (e) {
+        B = function (e) {
           return e.personalization.data.data
         },
-        B = Object(l.createSelector)(c.m, j, s.g, function (e, t, r) {
+        N = Object(l.createSelector)(c.m, j, s.g, function (e, t, r) {
           var n = e ? [I, r] : [A, t],
             o = a()(n, 2),
             i = o[0],
@@ -728,7 +730,7 @@
           return !!e.personalization.data.data.has_exact_age
         },
         H = function (e) {
-          var t = N(e),
+          var t = B(e),
             r = j(e),
             n = r.gender_preferences && r.gender_preferences.gender_override
           return n && n.type ? n : { type: t.gender, value: t.gender }

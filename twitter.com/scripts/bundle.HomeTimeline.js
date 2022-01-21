@@ -841,7 +841,7 @@
             o = b.useRef(0),
             c = Object(Nt.b)(),
             s = Object(Qt.a)(F.e.selectLoggedInUser),
-            u = Object(Vt.a)(qt, {}, Gt).data,
+            u = Object(Vt.a)(qt, {}).data,
             p = (
               ('User' ===
                 (null == u ||

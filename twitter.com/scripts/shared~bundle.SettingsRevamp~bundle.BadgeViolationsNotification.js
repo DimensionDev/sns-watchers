@@ -62,8 +62,8 @@
         })
       I('+KXO'), I('1t7P'), I('LW0h'), I('daRM'), I('jwue'), I('+oxZ'), I('FtHn')
       var t,
-        T = I('KEM+'),
-        n = I.n(T)
+        n = I('KEM+'),
+        T = I.n(n)
       I('yH/f')
       function N(E, e) {
         var I = Object.keys(E)
@@ -82,7 +82,7 @@
           var I = null != arguments[e] ? arguments[e] : {}
           e % 2
             ? N(Object(I), !0).forEach(function (e) {
-                n()(E, e, I[e])
+                T()(E, e, I[e])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(E, Object.getOwnPropertyDescriptors(I))
@@ -206,6 +206,7 @@
           ENTERTAINMENT_PRODUCTION_ORGANIZATION_STOCK_EXCHANGE: 'ENTERTAINMENT_PRODUCTION_ORGANIZATION_STOCK_EXCHANGE',
           ENTERTAINMENT_PRODUCTION_ORGANIZATION_WIKIPEDIA: 'ENTERTAINMENT_PRODUCTION_ORGANIZATION_WIKIPEDIA',
           ENTERTAINMENT_QUALIFICATIONS: 'ENTERTAINMENT_QUALIFICATIONS',
+          GAMING_INDIVIDUAL_INELIGIBLE: 'GAMING_INDIVIDUAL_INELIGIBLE',
           GAMING_INDIVIDUAL_NEWS_REFERENCE_URLS: 'GAMING_INDIVIDUAL_NEWS_REFERENCE_URLS',
           GAMING_INDIVIDUAL_NOTABILITY_METHOD: 'GAMING_INDIVIDUAL_NOTABILITY_METHOD',
           GAMING_INDIVIDUAL_SCREENNAME_CONFIRM: 'GAMING_INDIVIDUAL_SCREENNAME_CONFIRM',
@@ -272,237 +273,238 @@
         }),
         d = Object.freeze(
           ((t = {}),
-          n()(t, F.LANDING_PAGE, { next: F.NOTABILITY_CATEGORY_SELECT, scribeComponent: f.LANDING_PAGE }),
-          n()(t, F.NOTABILITY_CATEGORY_SELECT, { next: null, scribeComponent: f.NOTABILITY_CATEGORY }),
-          n()(t, F.ACTIVIST_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          n()(t, F.ACTIVIST_GOOGLE_TRENDS, { next: F.AUTHENTICITY_TYPE_SELECT, scribeComponent: f.NOTABILITY_INPUT }),
-          n()(t, F.ACTIVIST_LEADERSHIP, {
+          T()(t, F.LANDING_PAGE, { next: F.NOTABILITY_CATEGORY_SELECT, scribeComponent: f.LANDING_PAGE }),
+          T()(t, F.NOTABILITY_CATEGORY_SELECT, { next: null, scribeComponent: f.NOTABILITY_CATEGORY }),
+          T()(t, F.ACTIVIST_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
+          T()(t, F.ACTIVIST_GOOGLE_TRENDS, { next: F.AUTHENTICITY_TYPE_SELECT, scribeComponent: f.NOTABILITY_INPUT }),
+          T()(t, F.ACTIVIST_LEADERSHIP, {
             next: F.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.ACTIVIST_NEWS, { next: F.AUTHENTICITY_TYPE_SELECT, scribeComponent: f.NOTABILITY_INPUT }),
-          n()(t, F.ACTIVIST_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          n()(t, F.ACTIVIST_QUALIFICATIONS_INELIGIBLE, { next: null, scribeComponent: null }),
-          n()(t, F.ACTIVIST_WIKIPEDIA, { next: F.AUTHENTICITY_TYPE_SELECT, scribeComponent: f.NOTABILITY_INPUT }),
-          n()(t, F.COMPANY_SUBCATEGORY, {
+          T()(t, F.ACTIVIST_NEWS, { next: F.AUTHENTICITY_TYPE_SELECT, scribeComponent: f.NOTABILITY_INPUT }),
+          T()(t, F.ACTIVIST_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
+          T()(t, F.ACTIVIST_QUALIFICATIONS_INELIGIBLE, { next: null, scribeComponent: null }),
+          T()(t, F.ACTIVIST_WIKIPEDIA, { next: F.AUTHENTICITY_TYPE_SELECT, scribeComponent: f.NOTABILITY_INPUT }),
+          T()(t, F.COMPANY_SUBCATEGORY, {
             next: F.COMPANY_NOTABILITY_METHOD,
             scribeComponent: f.NOTABILITY_SUBCATEGORY,
           }),
-          n()(t, F.COMPANY_NOTABILITY_METHOD, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          n()(t, F.COMPANY_GOOGLE_TRENDS, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
-          n()(t, F.COMPANY_WIKIPEDIA, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
-          n()(t, F.COMPANY_STOCK_EXCHANGE, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
-          n()(t, F.COMPANY_NEWS_REFERENCE, { next: F.AUTHENTICITY_TYPE_SELECT, scribeComponent: f.NOTABILITY_INPUT }),
-          n()(t, F.COMPANY_INDIVIDUAL_SCREENNAME_CONFIRM, {
+          T()(t, F.COMPANY_NOTABILITY_METHOD, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
+          T()(t, F.COMPANY_GOOGLE_TRENDS, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
+          T()(t, F.COMPANY_WIKIPEDIA, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
+          T()(t, F.COMPANY_STOCK_EXCHANGE, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
+          T()(t, F.COMPANY_NEWS_REFERENCE, { next: F.AUTHENTICITY_TYPE_SELECT, scribeComponent: f.NOTABILITY_INPUT }),
+          T()(t, F.COMPANY_INDIVIDUAL_SCREENNAME_CONFIRM, {
             next: F.COMPANY_INDIVIDUAL_NOTABILITY_METHOD,
             scribeComponent: null,
           }),
-          n()(t, F.COMPANY_INDIVIDUAL_NOTABILITY_METHOD, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          n()(t, F.COMPANY_INDIVIDUAL_LEADERSHIP, {
+          T()(t, F.COMPANY_INDIVIDUAL_NOTABILITY_METHOD, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
+          T()(t, F.COMPANY_INDIVIDUAL_LEADERSHIP, {
             next: F.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.COMPANY_INDIVIDUAL_NEWS_REFERENCE, {
+          T()(t, F.COMPANY_INDIVIDUAL_NEWS_REFERENCE, {
             next: F.AUTHENTICITY_TYPE_SELECT,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.CREATOR_PROFILE, { next: F.WEBSITE_REFERENCE_CONFIRM_AUTOFILL, scribeComponent: null }),
-          n()(t, F.CONTENT_CREATOR_GOOGLE_TRENDS, { next: F.CREATOR_PROFILE, scribeComponent: f.NOTABILITY_INPUT }),
-          n()(t, F.CONTENT_CREATOR_NEWS, { next: F.CREATOR_PROFILE, scribeComponent: f.NOTABILITY_INPUT }),
-          n()(t, F.CONTENT_CREATOR_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          n()(t, F.CONTENT_CREATOR_WIKIPEDIA, { next: F.CREATOR_PROFILE, scribeComponent: f.NOTABILITY_INPUT }),
-          n()(t, F.ENTERTAINMENT_COMPANY_GOOGLE_TRENDS, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
-          n()(t, F.ENTERTAINMENT_COMPANY_NEWS_REFERENCE, {
+          T()(t, F.CREATOR_PROFILE, { next: F.WEBSITE_REFERENCE_CONFIRM_AUTOFILL, scribeComponent: null }),
+          T()(t, F.CONTENT_CREATOR_GOOGLE_TRENDS, { next: F.CREATOR_PROFILE, scribeComponent: f.NOTABILITY_INPUT }),
+          T()(t, F.CONTENT_CREATOR_NEWS, { next: F.CREATOR_PROFILE, scribeComponent: f.NOTABILITY_INPUT }),
+          T()(t, F.CONTENT_CREATOR_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
+          T()(t, F.CONTENT_CREATOR_WIKIPEDIA, { next: F.CREATOR_PROFILE, scribeComponent: f.NOTABILITY_INPUT }),
+          T()(t, F.ENTERTAINMENT_COMPANY_GOOGLE_TRENDS, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
+          T()(t, F.ENTERTAINMENT_COMPANY_NEWS_REFERENCE, {
             next: F.AUTHENTICITY_TYPE_SELECT,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.ENTERTAINMENT_COMPANY_NOTABILITY_METHOD, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          n()(t, F.ENTERTAINMENT_COMPANY_STOCK_REFERENCE, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
-          n()(t, F.ENTERTAINMENT_COMPANY_WIKIPEDIA, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
-          n()(t, F.ENTERTAINMENT_INDIVIDUAL_IMDB_URL, {
+          T()(t, F.ENTERTAINMENT_COMPANY_NOTABILITY_METHOD, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
+          T()(t, F.ENTERTAINMENT_COMPANY_STOCK_REFERENCE, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
+          T()(t, F.ENTERTAINMENT_COMPANY_WIKIPEDIA, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
+          T()(t, F.ENTERTAINMENT_INDIVIDUAL_IMDB_URL, {
             next: F.ENTERTAINMENT_INDIVIDUAL_MAIN_REFERENCE_URL,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.ENTERTAINMENT_INDIVIDUAL_MAIN_REFERENCE_URL, {
+          T()(t, F.ENTERTAINMENT_INDIVIDUAL_MAIN_REFERENCE_URL, {
             next: F.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.ENTERTAINMENT_INDIVIDUAL_NEWS_COVERAGE_URLS, {
+          T()(t, F.ENTERTAINMENT_INDIVIDUAL_NEWS_COVERAGE_URLS, {
             next: F.ENTERTAINMENT_INDIVIDUAL_MAIN_REFERENCE_URL,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.ENTERTAINMENT_INDIVIDUAL_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          n()(t, F.ENTERTAINMENT_PRODUCTION_ORGANIZATION_GOOGLE_TRENDS, {
+          T()(t, F.ENTERTAINMENT_INDIVIDUAL_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
+          T()(t, F.ENTERTAINMENT_PRODUCTION_ORGANIZATION_GOOGLE_TRENDS, {
             next: null,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NEWS_REFERENCE, {
+          T()(t, F.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NEWS_REFERENCE, {
             next: F.AUTHENTICITY_TYPE_SELECT,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NOTABILITY_METHOD, {
+          T()(t, F.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NOTABILITY_METHOD, {
             next: null,
             scribeComponent: f.NOTABILITY_METHOD,
           }),
-          n()(t, F.ENTERTAINMENT_PRODUCTION_ORGANIZATION_STOCK_EXCHANGE, {
+          T()(t, F.ENTERTAINMENT_PRODUCTION_ORGANIZATION_STOCK_EXCHANGE, {
             next: null,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.ENTERTAINMENT_PRODUCTION_ORGANIZATION_WIKIPEDIA, {
+          T()(t, F.ENTERTAINMENT_PRODUCTION_ORGANIZATION_WIKIPEDIA, {
             next: null,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.ENTERTAINMENT_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_SUBCATEGORY }),
-          n()(t, F.GOVERNMENT_CANDIDATE_LEVEL_CONFIRM, {
+          T()(t, F.ENTERTAINMENT_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_SUBCATEGORY }),
+          T()(t, F.GOVERNMENT_CANDIDATE_LEVEL_CONFIRM, {
             next: F.GOVERNMENT_CANDIDATE_PROFILE_CONFIRM,
             scribeComponent: null,
           }),
-          n()(t, F.GOVERNMENT_CANDIDATE_NEWS_REFERENCE_URLS, {
+          T()(t, F.GOVERNMENT_CANDIDATE_NEWS_REFERENCE_URLS, {
             next: F.GOVERNMENT_CANDIDATE_PUBLIC_REFERENCE_URL,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.GOVERNMENT_CANDIDATE_PROFILE_CONFIRM, {
+          T()(t, F.GOVERNMENT_CANDIDATE_PROFILE_CONFIRM, {
             next: F.GOVERNMENT_CANDIDATE_NEWS_REFERENCE_URLS,
             scribeComponent: null,
           }),
-          n()(t, F.GOVERNMENT_CANDIDATE_PUBLIC_REFERENCE_URL, {
+          T()(t, F.GOVERNMENT_CANDIDATE_PUBLIC_REFERENCE_URL, {
             next: F.AUTHENTICITY_TYPE_SELECT,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.GOVERNMENT_OFFICE_NEWS_REFERENCE_URLS, {
+          T()(t, F.GOVERNMENT_OFFICE_NEWS_REFERENCE_URLS, {
             next: F.GOVERNMENT_OFFICE_PUBLIC_REFERENCE_URL,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.GOVERNMENT_OFFICE_PROFILE_CONFIRM, {
+          T()(t, F.GOVERNMENT_OFFICE_PROFILE_CONFIRM, {
             next: F.GOVERNMENT_OFFICE_NEWS_REFERENCE_URLS,
             scribeComponent: null,
           }),
-          n()(t, F.GOVERNMENT_OFFICE_PUBLIC_REFERENCE_URL, {
+          T()(t, F.GOVERNMENT_OFFICE_PUBLIC_REFERENCE_URL, {
             next: F.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.GOVERNMENT_OFFICIAL_LEVEL_CONFIRM, {
+          T()(t, F.GOVERNMENT_OFFICIAL_LEVEL_CONFIRM, {
             next: F.GOVERNMENT_OFFICIAL_PROFILE_CONFIRM,
             scribeComponent: null,
           }),
-          n()(t, F.GOVERNMENT_OFFICIAL_NEWS_REFERENCE_URLS, {
+          T()(t, F.GOVERNMENT_OFFICIAL_NEWS_REFERENCE_URLS, {
             next: F.GOVERNMENT_OFFICIAL_PUBLIC_REFERENCE_URL,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.GOVERNMENT_OFFICIAL_PROFILE_CONFIRM, {
+          T()(t, F.GOVERNMENT_OFFICIAL_PROFILE_CONFIRM, {
             next: F.GOVERNMENT_OFFICIAL_NEWS_REFERENCE_URLS,
             scribeComponent: null,
           }),
-          n()(t, F.GOVERNMENT_OFFICIAL_PUBLIC_REFERENCE_URL, {
+          T()(t, F.GOVERNMENT_OFFICIAL_PUBLIC_REFERENCE_URL, {
             next: F.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.GOVERNMENT_SUBCATEGORY, { next: null, scribeComponent: f.NOTABILITY_SUBCATEGORY }),
-          n()(t, F.INFLUENCER_GOOGLE_TRENDS, { next: F.AUTHENTICITY_TYPE_SELECT, scribeComponent: f.NOTABILITY_INPUT }),
-          n()(t, F.INFLUENCER_NEWS, { next: F.AUTHENTICITY_TYPE_SELECT, scribeComponent: f.NOTABILITY_INPUT }),
-          n()(t, F.INFLUENCER_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          n()(t, F.INFLUENCER_QUALIFICATIONS_INELIGIBLE, { next: null, scribeComponent: null }),
-          n()(t, F.INFLUENCER_SUBCATEGORY, { next: null, scribeComponent: f.NOTABILITY_SUBCATEGORY }),
-          n()(t, F.INFLUENCER_WIKIPEDIA, { next: F.AUTHENTICITY_TYPE_SELECT, scribeComponent: f.NOTABILITY_INPUT }),
-          n()(t, F.NEWS_CREDIBILITY_ARTICLE_REFERENCE_URLS, {
+          T()(t, F.GOVERNMENT_SUBCATEGORY, { next: null, scribeComponent: f.NOTABILITY_SUBCATEGORY }),
+          T()(t, F.INFLUENCER_GOOGLE_TRENDS, { next: F.AUTHENTICITY_TYPE_SELECT, scribeComponent: f.NOTABILITY_INPUT }),
+          T()(t, F.INFLUENCER_NEWS, { next: F.AUTHENTICITY_TYPE_SELECT, scribeComponent: f.NOTABILITY_INPUT }),
+          T()(t, F.INFLUENCER_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
+          T()(t, F.INFLUENCER_QUALIFICATIONS_INELIGIBLE, { next: null, scribeComponent: null }),
+          T()(t, F.INFLUENCER_SUBCATEGORY, { next: null, scribeComponent: f.NOTABILITY_SUBCATEGORY }),
+          T()(t, F.INFLUENCER_WIKIPEDIA, { next: F.AUTHENTICITY_TYPE_SELECT, scribeComponent: f.NOTABILITY_INPUT }),
+          T()(t, F.NEWS_CREDIBILITY_ARTICLE_REFERENCE_URLS, {
             next: F.AUTHENTICITY_TYPE_SELECT,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.NEWS_CREDIBILITY_AUTHOR_REFERENCE_URL, {
+          T()(t, F.NEWS_CREDIBILITY_AUTHOR_REFERENCE_URL, {
             next: F.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.NEWS_CREDIBILITY_GOOGLE_TRENDS_REFERENCE_URL, {
+          T()(t, F.NEWS_CREDIBILITY_GOOGLE_TRENDS_REFERENCE_URL, {
             next: F.AUTHENTICITY_TYPE_SELECT,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.NEWS_CREDIBILITY_PUBLICATION_REFERENCE_URL, {
+          T()(t, F.NEWS_CREDIBILITY_PUBLICATION_REFERENCE_URL, {
             next: F.AUTHENTICITY_TYPE_SELECT,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.NEWS_CREDIBILITY_STOCK_REFERENCE_URL, {
+          T()(t, F.NEWS_CREDIBILITY_STOCK_REFERENCE_URL, {
             next: F.AUTHENTICITY_TYPE_SELECT,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.NEWS_CREDIBILITY_WIKIPEDIA_REFERENCE_URL, {
+          T()(t, F.NEWS_CREDIBILITY_WIKIPEDIA_REFERENCE_URL, {
             next: F.AUTHENTICITY_TYPE_SELECT,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.NEWS_FREELANCER_CREDIBILITY_ARTICLE_REFERENCE_URLS, {
+          T()(t, F.NEWS_FREELANCER_CREDIBILITY_ARTICLE_REFERENCE_URLS, {
             next: F.NEWS_NOTABILITY_CRITERIA_CONFIRMATION,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.NEWS_JOURNALIST_CRITERIA_CONFIRMATION, {
+          T()(t, F.NEWS_JOURNALIST_CRITERIA_CONFIRMATION, {
             next: F.NEWS_JOURNALIST_QUALIFICATIONS,
             scribeComponent: null,
           }),
-          n()(t, F.NEWS_JOURNALIST_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          n()(t, F.NEWS_NOTABILITY_CRITERIA_CONFIRMATION, { next: F.AUTHENTICITY_TYPE_SELECT, scribeComponent: null }),
-          n()(t, F.NEWS_ORGANIZATION_CREDIBILITY_ARTICLE_REFERENCE_URLS, {
+          T()(t, F.NEWS_JOURNALIST_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
+          T()(t, F.NEWS_NOTABILITY_CRITERIA_CONFIRMATION, { next: F.AUTHENTICITY_TYPE_SELECT, scribeComponent: null }),
+          T()(t, F.NEWS_ORGANIZATION_CREDIBILITY_ARTICLE_REFERENCE_URLS, {
             next: F.AUTHENTICITY_TYPE_SELECT,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.NEWS_ORGANIZATION_REQUIREMENTS_CONFIRMATION, {
+          T()(t, F.NEWS_ORGANIZATION_REQUIREMENTS_CONFIRMATION, {
             next: F.NEWS_ORGANIZATION_QUALIFICATIONS,
             scribeComponent: null,
           }),
-          n()(t, F.NEWS_JOURNALIST_SCREENNAME_CONFIRMATION, {
+          T()(t, F.NEWS_JOURNALIST_SCREENNAME_CONFIRMATION, {
             next: F.NEWS_JOURNALIST_CRITERIA_CONFIRMATION,
             scribeComponent: null,
           }),
-          n()(t, F.NEWS_ORGANIZATION_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          n()(t, F.NEWS_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_SUBCATEGORY }),
-          n()(t, F.GAMING_INDIVIDUAL_NEWS_REFERENCE_URLS, {
+          T()(t, F.NEWS_ORGANIZATION_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
+          T()(t, F.NEWS_QUALIFICATIONS, { next: null, scribeComponent: f.NOTABILITY_SUBCATEGORY }),
+          T()(t, F.GAMING_INDIVIDUAL_NEWS_REFERENCE_URLS, {
             next: F.AUTHENTICITY_TYPE_SELECT,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.GAMING_INDIVIDUAL_NOTABILITY_METHOD, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          n()(t, F.GAMING_INDIVIDUAL_SCREENNAME_CONFIRM, {
+          T()(t, F.GAMING_INDIVIDUAL_NOTABILITY_METHOD, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
+          T()(t, F.GAMING_INDIVIDUAL_SCREENNAME_CONFIRM, {
             next: F.GAMING_INDIVIDUAL_NOTABILITY_METHOD,
             scribeComponent: null,
           }),
-          n()(t, F.GAMING_INDIVIDUAL_TEAM_REFERENCE_URL, {
+          T()(t, F.GAMING_INDIVIDUAL_TEAM_REFERENCE_URL, {
             next: F.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.SPORTS_ENTITY_GOOGLE_TRENDS, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
-          n()(t, F.SPORTS_ENTITY_NEWS_REFERENCE, {
+          T()(t, F.GAMING_INDIVIDUAL_INELIGIBLE, { next: null, scribeComponent: null }),
+          T()(t, F.SPORTS_ENTITY_GOOGLE_TRENDS, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
+          T()(t, F.SPORTS_ENTITY_NEWS_REFERENCE, {
             next: F.AUTHENTICITY_TYPE_SELECT,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.SPORTS_ENTITY_NOTABILITY_METHOD, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          n()(t, F.SPORTS_ENTITY_STOCK_REFERENCE, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
-          n()(t, F.SPORTS_ENTITY_WEBSITE, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
-          n()(t, F.SPORTS_ENTITY_WIKIPEDIA, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
-          n()(t, F.SPORTS_INDIVIDUAL_NEWS_REFERENCE_URLS, {
+          T()(t, F.SPORTS_ENTITY_NOTABILITY_METHOD, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
+          T()(t, F.SPORTS_ENTITY_STOCK_REFERENCE, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
+          T()(t, F.SPORTS_ENTITY_WEBSITE, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
+          T()(t, F.SPORTS_ENTITY_WIKIPEDIA, { next: null, scribeComponent: f.NOTABILITY_INPUT }),
+          T()(t, F.SPORTS_INDIVIDUAL_NEWS_REFERENCE_URLS, {
             next: F.AUTHENTICITY_TYPE_SELECT,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.SPORTS_INDIVIDUAL_NOTABILITY_METHOD, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
-          n()(t, F.SPORTS_INDIVIDUAL_SCREENNAME_CONFIRM, {
+          T()(t, F.SPORTS_INDIVIDUAL_NOTABILITY_METHOD, { next: null, scribeComponent: f.NOTABILITY_METHOD }),
+          T()(t, F.SPORTS_INDIVIDUAL_SCREENNAME_CONFIRM, {
             next: F.SPORTS_INDIVIDUAL_NOTABILITY_METHOD,
             scribeComponent: null,
           }),
-          n()(t, F.SPORTS_INDIVIDUAL_TEAM_REFERENCE_URL, {
+          T()(t, F.SPORTS_INDIVIDUAL_TEAM_REFERENCE_URL, {
             next: F.WEBSITE_REFERENCE_CONFIRM_AUTOFILL,
             scribeComponent: f.NOTABILITY_INPUT,
           }),
-          n()(t, F.SPORTS_SUBCATEGORY, { next: null, scribeComponent: f.NOTABILITY_SUBCATEGORY }),
-          n()(t, F.WEBSITE_REFERENCE_CONFIRM_AUTOFILL, { next: null, scribeComponent: f.ADD_WEBSITE }),
-          n()(t, F.WEBSITE_REFERENCE_CONFIRM_PROCEED, { next: F.REVIEW_SUBMIT, scribeComponent: f.ADD_WEBSITE }),
-          n()(t, F.AUTHENTICITY_TYPE_SELECT, { next: null, scribeComponent: f.AUTHENTICITY_TYPE }),
-          n()(t, F.INTAKE_TYPE_SELECT, { next: F.INTAKE_UPLOAD, scribeComponent: null }),
-          n()(t, F.ID_COUNTRY_SELECT, { next: F.INTAKE_TYPE_SELECT, scribeComponent: null }),
-          n()(t, F.ID_TYPE_SELECT, { next: F.INTAKE_TYPE_SELECT, scribeComponent: null }),
-          n()(t, F.INTAKE_UPLOAD, { next: F.INTAKE_LOADING, scribeComponent: f.ID_UPLOAD }),
-          n()(t, F.INTAKE_LOADING, { next: F.REVIEW_SUBMIT, scribeComponent: f.ID_UPLOAD }),
-          n()(t, F.EMAIL_VERIFICATION, { next: F.REVIEW_SUBMIT, scribeComponent: f.ADD_EMAIL }),
-          n()(t, F.SITE_VERIFICATION, { next: F.WEBSITE_REFERENCE_CONFIRM_PROCEED, scribeComponent: null }),
-          n()(t, F.REVIEW_SUBMIT, { next: F.THANK_YOU, scribeComponent: f.REVIEW_SUBMIT }),
-          n()(t, F.THANK_YOU, { next: null, scribeComponent: f.THANK_YOU }),
-          n()(t, F.TEST_INPUT, { next: F.TEST_RADIO, scribeComponent: null }),
-          n()(t, F.TEST_PIVOT, { next: F.THANK_YOU, scribeComponent: null }),
-          n()(t, F.TEST_RADIO, { next: F.THANK_YOU, scribeComponent: null }),
+          T()(t, F.SPORTS_SUBCATEGORY, { next: null, scribeComponent: f.NOTABILITY_SUBCATEGORY }),
+          T()(t, F.WEBSITE_REFERENCE_CONFIRM_AUTOFILL, { next: null, scribeComponent: f.ADD_WEBSITE }),
+          T()(t, F.WEBSITE_REFERENCE_CONFIRM_PROCEED, { next: F.REVIEW_SUBMIT, scribeComponent: f.ADD_WEBSITE }),
+          T()(t, F.AUTHENTICITY_TYPE_SELECT, { next: null, scribeComponent: f.AUTHENTICITY_TYPE }),
+          T()(t, F.INTAKE_TYPE_SELECT, { next: F.INTAKE_UPLOAD, scribeComponent: null }),
+          T()(t, F.ID_COUNTRY_SELECT, { next: F.INTAKE_TYPE_SELECT, scribeComponent: null }),
+          T()(t, F.ID_TYPE_SELECT, { next: F.INTAKE_TYPE_SELECT, scribeComponent: null }),
+          T()(t, F.INTAKE_UPLOAD, { next: F.INTAKE_LOADING, scribeComponent: f.ID_UPLOAD }),
+          T()(t, F.INTAKE_LOADING, { next: F.REVIEW_SUBMIT, scribeComponent: f.ID_UPLOAD }),
+          T()(t, F.EMAIL_VERIFICATION, { next: F.REVIEW_SUBMIT, scribeComponent: f.ADD_EMAIL }),
+          T()(t, F.SITE_VERIFICATION, { next: F.WEBSITE_REFERENCE_CONFIRM_PROCEED, scribeComponent: null }),
+          T()(t, F.REVIEW_SUBMIT, { next: F.THANK_YOU, scribeComponent: f.REVIEW_SUBMIT }),
+          T()(t, F.THANK_YOU, { next: null, scribeComponent: f.THANK_YOU }),
+          T()(t, F.TEST_INPUT, { next: F.TEST_RADIO, scribeComponent: null }),
+          T()(t, F.TEST_PIVOT, { next: F.THANK_YOU, scribeComponent: null }),
+          T()(t, F.TEST_RADIO, { next: F.THANK_YOU, scribeComponent: null }),
           t),
         )
     },
@@ -515,7 +517,7 @@
           return tE
         }),
         I.d(e, 'o', function () {
-          return TE
+          return nE
         }),
         I.d(e, 'p', function () {
           return NE
@@ -593,13 +595,13 @@
           return GE
         }),
         I.d(e, 'P', function () {
-          return yE
+          return VE
         }),
         I.d(e, 'K', function () {
-          return mE
+          return yE
         }),
         I.d(e, 'b', function () {
-          return VE
+          return mE
         }),
         I.d(e, 'a', function () {
           return BE
@@ -669,9 +671,9 @@
         })
       I('+KXO'), I('1t7P'), I('LW0h'), I('daRM'), I('jwue'), I('+oxZ'), I('FtHn')
       var t = I('ddV6'),
-        T = I.n(t),
-        n = I('RhWx'),
-        N = I.n(n),
+        n = I.n(t),
+        T = I('RhWx'),
+        N = I.n(T),
         _ = I('KEM+'),
         r = I.n(_),
         o = (I('yH/f'), I('2G9S'), I('7x/C'), I('DZ+c'), I('jQ3i'), I('x4t0'), I('JtPf'), I('M+/F'), I('oEOe')),
@@ -723,9 +725,9 @@
         Y = 'rweb/accountVerification/RESET_NOTABILITY_CATEGORY',
         b = 'rweb/accountVerification/RESET_NOTABILITY_DATA',
         G = 'rweb/accountVerification/RESET_SUBMIT_VERIFICATION',
-        y = 'rweb/accountVerification/SET_AUTHENTICITY_DATA',
-        m = 'rweb/accountVerification/SET_AUTHENTICITY_TYPE',
-        V = 'rweb/accountVerification/SET_BACK_ID',
+        V = 'rweb/accountVerification/SET_AUTHENTICITY_DATA',
+        y = 'rweb/accountVerification/SET_AUTHENTICITY_TYPE',
+        m = 'rweb/accountVerification/SET_BACK_ID',
         B = 'rweb/accountVerification/SET_FRONT_ID',
         W = 'rweb/accountVerification/SET_ID_COUNTRY',
         h = 'rweb/accountVerification/SET_ID_TYPE',
@@ -829,25 +831,25 @@
             e,
             I,
             t,
-            T = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eE,
-            n = arguments.length > 1 ? arguments[1] : void 0
-          switch (n.type) {
+            n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eE,
+            T = arguments.length > 1 ? arguments[1] : void 0
+          switch (T.type) {
             case Q.REQUEST:
-              return S(S({}, T), {}, { access: S(S({}, T.access), {}, { fetchStatus: a.a.LOADING, error: null }) })
+              return S(S({}, n), {}, { access: S(S({}, n.access), {}, { fetchStatus: a.a.LOADING, error: null }) })
             case Q.SUCCESS:
-              if (n.payload)
+              if (T.payload)
                 return S(
-                  S({}, T),
+                  S({}, n),
                   {},
                   {
                     access: {
                       data: S(
-                        S({}, T.access.data),
+                        S({}, n.access.data),
                         {},
                         {
-                          applicationSubmissionTimeInMs: n.payload.application_submission_time_in_ms,
-                          decisionMadeTimeInMs: n.payload.decision_made_time_in_ms,
-                          status: n.payload.status || C.a.DISABLED,
+                          applicationSubmissionTimeInMs: T.payload.application_submission_time_in_ms,
+                          decisionMadeTimeInMs: T.payload.decision_made_time_in_ms,
+                          status: T.payload.status || C.a.DISABLED,
                         },
                       ),
                       error: null,
@@ -857,64 +859,64 @@
                 )
               break
             case Q.FAILURE:
-              return S(S({}, T), {}, { access: S(S({}, T.access), {}, { error: n.payload, fetchStatus: a.a.FAILED }) })
+              return S(S({}, n), {}, { access: S(S({}, n.access), {}, { error: T.payload, fetchStatus: a.a.FAILED }) })
             case k.REQUEST:
               return S(
-                S({}, T),
+                S({}, n),
                 {},
-                { accountEligibility: S(S({}, T.accountEligibility), {}, { fetchStatus: a.a.LOADING, error: null }) },
+                { accountEligibility: S(S({}, n.accountEligibility), {}, { fetchStatus: a.a.LOADING, error: null }) },
               )
             case k.SUCCESS:
-              if (n.payload)
+              if (T.payload)
                 return S(
-                  S({}, T),
+                  S({}, n),
                   {},
-                  { accountEligibility: { data: S({}, n.payload), error: null, fetchStatus: a.a.LOADED } },
+                  { accountEligibility: { data: S({}, T.payload), error: null, fetchStatus: a.a.LOADED } },
                 )
               break
             case k.FAILURE:
               return S(
-                S({}, T),
+                S({}, n),
                 {},
                 {
-                  accountEligibility: S(S({}, T.accountEligibility), {}, { error: n.payload, fetchStatus: a.a.FAILED }),
+                  accountEligibility: S(S({}, n.accountEligibility), {}, { error: T.payload, fetchStatus: a.a.FAILED }),
                 },
               )
             case Z.REQUEST:
               return S(
-                S({}, T),
+                S({}, n),
                 {},
-                { accountViolations: S(S({}, T.accountViolations), {}, { fetchStatus: a.a.LOADING, error: null }) },
+                { accountViolations: S(S({}, n.accountViolations), {}, { fetchStatus: a.a.LOADING, error: null }) },
               )
             case Z.SUCCESS:
-              if (n.payload)
+              if (T.payload)
                 return S(
-                  S({}, T),
+                  S({}, n),
                   {},
-                  { accountViolations: { data: S({}, n.payload), error: null, fetchStatus: a.a.LOADED } },
+                  { accountViolations: { data: S({}, T.payload), error: null, fetchStatus: a.a.LOADED } },
                 )
               break
             case Z.FAILURE:
               return S(
-                S({}, T),
+                S({}, n),
                 {},
-                { accountViolations: S(S({}, T.accountViolations), {}, { error: n.payload, fetchStatus: a.a.FAILED }) },
+                { accountViolations: S(S({}, n.accountViolations), {}, { error: T.payload, fetchStatus: a.a.FAILED }) },
               )
             case z.REQUEST:
               return S(
-                S({}, T),
+                S({}, n),
                 {},
                 {
-                  authenticationResult: S(S({}, T.authenticationResult), {}, { error: null, fetchStatus: a.a.LOADING }),
+                  authenticationResult: S(S({}, n.authenticationResult), {}, { error: null, fetchStatus: a.a.LOADING }),
                 },
               )
             case z.SUCCESS:
               return S(
-                S({}, T),
+                S({}, n),
                 {},
                 {
                   authenticationResult: {
-                    data: S(S({}, T.authenticationResult.data), n.payload),
+                    data: S(S({}, n.authenticationResult.data), T.payload),
                     error: null,
                     fetchStatus: a.a.LOADED,
                   },
@@ -922,75 +924,75 @@
               )
             case z.FAILURE:
               return S(
-                S({}, T),
+                S({}, n),
                 {},
                 {
                   authenticationResult: S(
-                    S({}, T.authenticationResult),
+                    S({}, n.authenticationResult),
                     {},
-                    { error: n.payload, fetchStatus: a.a.FAILED },
+                    { error: T.payload, fetchStatus: a.a.FAILED },
                   ),
                 },
               )
             case J.REQUEST:
-              return S(S({}, T), {}, { badgeViolations: S(S({}, T.badgeViolations), {}, { fetchStatus: a.a.LOADING }) })
+              return S(S({}, n), {}, { badgeViolations: S(S({}, n.badgeViolations), {}, { fetchStatus: a.a.LOADING }) })
             case J.SUCCESS:
-              if (n.payload)
+              if (T.payload)
                 return S(
-                  S({}, T),
+                  S({}, n),
                   {},
-                  { badgeViolations: { data: S({}, n.payload), error: null, fetchStatus: a.a.LOADED } },
+                  { badgeViolations: { data: S({}, T.payload), error: null, fetchStatus: a.a.LOADED } },
                 )
               break
             case J.FAILURE:
               return S(
-                S({}, T),
+                S({}, n),
                 {},
-                { badgeViolations: S(S({}, T.badgeViolations), {}, { error: n.payload, fetchStatus: a.a.FAILED }) },
+                { badgeViolations: S(S({}, n.badgeViolations), {}, { error: T.payload, fetchStatus: a.a.FAILED }) },
               )
             case q.REQUEST:
               return S(
-                S({}, T),
+                S({}, n),
                 {},
-                { documentFormats: S(S({}, T.documentFormats), {}, { error: null, fetchStatus: a.a.LOADING }) },
+                { documentFormats: S(S({}, n.documentFormats), {}, { error: null, fetchStatus: a.a.LOADING }) },
               )
             case q.SUCCESS:
-              if (n.payload)
+              if (T.payload)
                 return S(
-                  S({}, T),
+                  S({}, n),
                   {},
-                  { documentFormats: { data: S({}, n.payload), error: null, fetchStatus: a.a.LOADED } },
+                  { documentFormats: { data: S({}, T.payload), error: null, fetchStatus: a.a.LOADED } },
                 )
               break
             case q.FAILURE:
               return S(
-                S({}, T),
+                S({}, n),
                 {},
-                { documentFormats: S(S({}, T.documentFormats), {}, { error: n.payload, fetchStatus: a.a.FAILED }) },
+                { documentFormats: S(S({}, n.documentFormats), {}, { error: T.payload, fetchStatus: a.a.FAILED }) },
               )
             case X.REQUEST:
-              return S(S({}, T), {}, { verifyAccount: { error: null, fetchStatus: a.a.LOADING } })
+              return S(S({}, n), {}, { verifyAccount: { error: null, fetchStatus: a.a.LOADING } })
             case X.SUCCESS:
               var _
               return (
-                n.payload && (_ = n.payload.survey_url),
-                S(S({}, T), {}, { surveyUrl: _, verifyAccount: { error: null, fetchStatus: a.a.LOADED } })
+                T.payload && (_ = T.payload.survey_url),
+                S(S({}, n), {}, { surveyUrl: _, verifyAccount: { error: null, fetchStatus: a.a.LOADED } })
               )
             case X.FAILURE:
-              return S(S({}, T), {}, { verifyAccount: { error: n.payload, fetchStatus: a.a.FAILED } })
+              return S(S({}, n), {}, { verifyAccount: { error: T.payload, fetchStatus: a.a.FAILED } })
             case $.REQUEST:
               return S(
-                S({}, T),
+                S({}, n),
                 {},
-                { documentIdProcess: S(S({}, T.documentIdProcess), {}, { error: null, fetchStatus: a.a.LOADING }) },
+                { documentIdProcess: S(S({}, n.documentIdProcess), {}, { error: null, fetchStatus: a.a.LOADING }) },
               )
             case $.SUCCESS:
               return S(
-                S({}, T),
+                S({}, n),
                 {},
                 {
                   documentIdProcess: {
-                    data: S(S({}, T.documentIdProcess.data), n.payload),
+                    data: S(S({}, n.documentIdProcess.data), T.payload),
                     error: null,
                     fetchStatus: a.a.LOADED,
                   },
@@ -998,25 +1000,25 @@
               )
             case $.FAILURE:
               return S(
-                S({}, T),
+                S({}, n),
                 {},
-                { documentIdProcess: S(S({}, T.documentIdProcess), {}, { error: n.payload, fetchStatus: a.a.FAILED }) },
+                { documentIdProcess: S(S({}, n.documentIdProcess), {}, { error: T.payload, fetchStatus: a.a.FAILED }) },
               )
             case l:
               return S(
-                S({}, T),
+                S({}, n),
                 {},
                 {
                   formData: S(
-                    S({}, T.formData),
+                    S({}, n.formData),
                     {},
                     {
                       notabilityData: S(
-                        S({}, T.formData.notabilityData),
+                        S({}, n.formData.notabilityData),
                         {},
                         {
                           articleReferenceUrls:
-                            null === (E = n.payload) || void 0 === E ? void 0 : E.articleReferenceUrls,
+                            null === (E = T.payload) || void 0 === E ? void 0 : E.articleReferenceUrls,
                         },
                       ),
                     },
@@ -1025,17 +1027,17 @@
               )
             case U:
               return S(
-                S({}, T),
+                S({}, n),
                 {},
                 {
                   formData: S(
-                    S({}, T.formData),
+                    S({}, n.formData),
                     {},
                     {
                       notabilityData: S(
-                        S({}, T.formData.notabilityData),
+                        S({}, n.formData.notabilityData),
                         {},
-                        { mainReferenceUrl: null === (e = n.payload) || void 0 === e ? void 0 : e.mainReferenceUrl },
+                        { mainReferenceUrl: null === (e = T.payload) || void 0 === e ? void 0 : e.mainReferenceUrl },
                       ),
                     },
                   ),
@@ -1043,17 +1045,17 @@
               )
             case D:
               return S(
-                S({}, T),
+                S({}, n),
                 {},
                 {
                   formData: S(
-                    S({}, T.formData),
+                    S({}, n.formData),
                     {},
                     {
                       notabilityData: S(
-                        S({}, T.formData.notabilityData),
+                        S({}, n.formData.notabilityData),
                         {},
-                        { newsReferenceUrls: null === (I = n.payload) || void 0 === I ? void 0 : I.newsReferenceUrls },
+                        { newsReferenceUrls: null === (I = T.payload) || void 0 === I ? void 0 : I.newsReferenceUrls },
                       ),
                     },
                   ),
@@ -1061,83 +1063,83 @@
               )
             case s:
               return S(
-                S({}, T),
+                S({}, n),
                 {},
                 {
                   formData: S(
-                    S({}, T.formData),
+                    S({}, n.formData),
                     {},
                     {
                       notabilityData: S(
-                        S({}, T.formData.notabilityData),
+                        S({}, n.formData.notabilityData),
                         {},
                         {
-                          publicReferenceUrl: null === (t = n.payload) || void 0 === t ? void 0 : t.publicReferenceUrl,
+                          publicReferenceUrl: null === (t = T.payload) || void 0 === t ? void 0 : t.publicReferenceUrl,
                         },
                       ),
                     },
                   ),
                 },
               )
-            case V:
-              return S(S({}, T), {}, { backID: n.payload })
+            case m:
+              return S(S({}, n), {}, { backID: T.payload })
             case B:
-              return S(S({}, T), {}, { frontID: n.payload })
+              return S(S({}, n), {}, { frontID: T.payload })
             case W:
-              if (n.payload)
+              if (T.payload)
                 return S(
-                  S({}, T),
+                  S({}, n),
                   {},
                   {
-                    idCountry: n.payload.countryCode,
-                    idCountryName: n.payload.countryName,
+                    idCountry: T.payload.countryCode,
+                    idCountryName: T.payload.countryName,
                     idType: void 0,
                     idTypeName: void 0,
                   },
                 )
               break
             case h:
-              if (n.payload) return S(S({}, T), {}, { idType: n.payload.idType, idTypeName: n.payload.idTypeName })
+              if (T.payload) return S(S({}, n), {}, { idType: T.payload.idType, idTypeName: T.payload.idTypeName })
               break
             case M:
-              return S(S({}, T), {}, { backID: eE.backID, frontID: eE.frontID, isConfirmed: eE.isConfirmed })
+              return S(S({}, n), {}, { backID: eE.backID, frontID: eE.frontID, isConfirmed: eE.isConfirmed })
             case G:
-              var o = Te(T.stepsTaken),
+              var o = ne(n.stepsTaken),
                 R = o.previousStep,
                 i = o.remainingSteps
               return S(
-                S({}, T),
+                S({}, n),
                 {},
                 { currentStep: R, stepsTaken: N()(i), verifyAccount: { error: null, fetchStatus: a.a.NONE } },
               )
             case K:
-              return S(S({}, T), {}, { isConfirmed: !T.isConfirmed })
+              return S(S({}, n), {}, { isConfirmed: !n.isConfirmed })
             case p:
-              return S(S({}, T), {}, { documentIdProcess: S({}, eE.documentIdProcess) })
+              return S(S({}, n), {}, { documentIdProcess: S({}, eE.documentIdProcess) })
             case f:
-              return S(S({}, T), {}, { authenticationResult: S({}, eE.authenticationResult) })
+              return S(S({}, n), {}, { authenticationResult: S({}, eE.authenticationResult) })
             case v:
-              if (n.payload)
+              if (T.payload)
                 return S(
-                  S({}, T),
+                  S({}, n),
                   {},
-                  { currentStep: n.payload, stepsTaken: [].concat(N()(T.stepsTaken), [n.payload]) },
+                  { currentStep: T.payload, stepsTaken: [].concat(N()(n.stepsTaken), [T.payload]) },
                 )
               break
             case g:
-              var A = Te(T.stepsTaken),
+              var A = ne(n.stepsTaken),
                 c = A.previousStep,
                 O = A.remainingSteps
-              return S(S({}, T), {}, { currentStep: c, stepsTaken: N()(O) })
+              return S(S({}, n), {}, { currentStep: c, stepsTaken: N()(O) })
             case H:
-              return S(S({}, T), {}, { formData: S(S({}, T.formData), {}, { notabilityCategory: n.payload }) })
+              return S(S({}, n), {}, { formData: S(S({}, n.formData), {}, { notabilityCategory: T.payload }) })
             case Y:
               return S(
-                S({}, T),
+                S({}, n),
                 {},
                 {
                   formData: S(
-                    S({}, T.formData),
+                    S({}, n.formData),
                     {},
                     {
                       notabilityCategory: eE.formData.notabilityCategory,
@@ -1147,18 +1149,18 @@
                 },
               )
             case x:
-              return S(S({}, T), {}, { formData: S(S({}, T.formData), {}, { notabilityData: S({}, n.payload) }) })
+              return S(S({}, n), {}, { formData: S(S({}, n.formData), {}, { notabilityData: S({}, T.payload) }) })
             case b:
               return S(
-                S({}, T),
+                S({}, n),
                 {},
-                { formData: S(S({}, T.formData), {}, { notabilityData: eE.formData.notabilityData }) },
+                { formData: S(S({}, n.formData), {}, { notabilityData: eE.formData.notabilityData }) },
               )
             case w:
-              return S(S({}, T), {}, { formData: S(S({}, T.formData), {}, { notabilitySubcategory: n.payload }) })
-            case m:
+              return S(S({}, n), {}, { formData: S(S({}, n.formData), {}, { notabilitySubcategory: T.payload }) })
+            case y:
               return S(
-                S({}, T),
+                S({}, n),
                 {},
                 {
                   backID: eE.backID,
@@ -1167,35 +1169,35 @@
                   idType: eE.idType,
                   idTypeName: eE.idTypeName,
                   formData: S(
-                    S({}, T.formData),
+                    S({}, n.formData),
                     {},
-                    { authenticityType: n.payload, authenticityData: eE.formData.authenticityData },
+                    { authenticityType: T.payload, authenticityData: eE.formData.authenticityData },
                   ),
                 },
               )
             case d:
               return S(
-                S({}, T),
+                S({}, n),
                 {},
-                { formData: S(S({}, T.formData), {}, { authenticityType: eE.formData.authenticityType }) },
+                { formData: S(S({}, n.formData), {}, { authenticityType: eE.formData.authenticityType }) },
               )
-            case y:
-              return S(S({}, T), {}, { formData: S(S({}, T.formData), {}, { authenticityData: S({}, n.payload) }) })
+            case V:
+              return S(S({}, n), {}, { formData: S(S({}, n.formData), {}, { authenticityData: S({}, T.payload) }) })
             case F:
               return S(
-                S({}, T),
+                S({}, n),
                 {},
-                { formData: S(S({}, T.formData), {}, { authenticityData: eE.formData.authenticityData }) },
+                { formData: S(S({}, n.formData), {}, { authenticityData: eE.formData.authenticityData }) },
               )
             case j:
-              var u = T.currentStep.toString()
-              return S(S({}, T), {}, { formHistory: S(S({}, T.formHistory), {}, r()({}, u, S({}, n.payload))) })
+              var u = n.currentStep.toString()
+              return S(S({}, n), {}, { formHistory: S(S({}, n.formHistory), {}, r()({}, u, S({}, T.payload))) })
             case P:
               return eE
             default:
-              return T
+              return n
           }
-          return T
+          return n
         }),
       )
       var IE = function (E) {
@@ -1204,10 +1206,10 @@
         tE = function (E) {
           return E[L].access.fetchStatus
         },
-        TE = function (E) {
+        nE = function (E) {
           return E[L].accountEligibility.data
         },
-        nE = function (E) {
+        TE = function (E) {
           return E[L].accountEligibility.fetchStatus
         },
         NE = function (E) {
@@ -1287,12 +1289,12 @@
           var e = E[L].formData,
             I = e.notabilityCategory,
             t = e.notabilityData,
-            T = e.notabilitySubcategory
+            n = e.notabilitySubcategory
           switch (I) {
             case C.l.NEWS:
               return null == t ? void 0 : t.newsType
             default:
-              return T
+              return n
           }
         },
         bE = function (E) {
@@ -1301,29 +1303,29 @@
         GE = function (E) {
           return E[L].surveyUrl
         },
-        yE = function (E) {
+        VE = function (E) {
           return E[L].verifyAccount.fetchStatus
         },
-        mE = function (E) {
+        yE = function (E) {
           var e = tE(E),
-            I = nE(E),
+            I = TE(E),
             t = _E(E),
-            T = Object(c.selectFetchStatus)(E),
-            n = LE(E)
-          return [e, I, t, T, n].includes(a.a.FAILED)
+            n = Object(c.selectFetchStatus)(E),
+            T = LE(E)
+          return [e, I, t, n, T].includes(a.a.FAILED)
             ? a.a.FAILED
             : (function (E) {
                 return E.includes(a.a.LOADING)
-              })([e, I, t, T, n])
+              })([e, I, t, n, T])
             ? a.a.LOADING
             : a.a.LOADED
         },
-        VE = function () {
+        mE = function () {
           return function (E, e, I) {
             I.api
             var t = e(),
-              T = tE(t)
-            return T !== a.a.LOADING && T !== a.a.LOADED ? E(BE()) : Promise.resolve()
+              n = tE(t)
+            return n !== a.a.LOADING && n !== a.a.LOADED ? E(BE()) : Promise.resolve()
           }
         },
         BE = function () {
@@ -1339,8 +1341,8 @@
           return function (E, e, I) {
             I.api
             var t = e(),
-              T = nE(t)
-            return T !== a.a.LOADING && T !== a.a.LOADED
+              n = TE(t)
+            return n !== a.a.LOADING && n !== a.a.LOADED
               ? E(function (E, e, I) {
                   var t = I.api
                   return Object(o.b)(E, { request: t.AccountVerification.fetchAccountEligibility })({
@@ -1355,8 +1357,8 @@
           return function (E, e, I) {
             I.api
             var t = e(),
-              T = _E(t)
-            return T !== a.a.LOADING && T !== a.a.LOADED
+              n = _E(t)
+            return n !== a.a.LOADING && n !== a.a.LOADED
               ? E(function (E, e, I) {
                   var t = I.api
                   return Object(o.b)(E, { request: t.AccountVerification.fetchAccountViolations })({
@@ -1387,8 +1389,8 @@
           return function (E, e, I) {
             I.api
             var t = e(),
-              T = LE(t)
-            return T !== a.a.LOADING && T !== a.a.LOADED
+              n = LE(t)
+            return n !== a.a.LOADING && n !== a.a.LOADED
               ? E(function (E, e, I) {
                   var t = I.api
                   return Object(o.b)(E, { request: t.AccountVerification.fetchDocumentFormats })({
@@ -1402,7 +1404,7 @@
         xE = function (E) {
           return function (e, I, t) {
             t.api
-            e({ type: V, payload: E })
+            e({ type: m, payload: E })
           }
         },
         wE = function (E) {
@@ -1412,14 +1414,14 @@
           }
         },
         gE = function (E, e) {
-          return function (I, t, T) {
-            T.api
+          return function (I, t, n) {
+            n.api
             I({ type: W, payload: { countryCode: E, countryName: e } })
           }
         },
         KE = function (E, e) {
-          return function (I, t, T) {
-            T.api
+          return function (I, t, n) {
+            n.api
             I({ type: h, payload: { idType: E, idTypeName: e } })
           }
         },
@@ -1489,8 +1491,8 @@
         ee = function () {
           return function (E, e, I) {
             var t,
-              T,
-              n = I.api,
+              n,
+              T = I.api,
               N = e(),
               _ = RE(N) || void 0,
               r = iE(N) || void 0,
@@ -1507,7 +1509,7 @@
               (c = S(
                 S({}, c),
                 {},
-                { verified_email: null == r || null === (T = r.email) || void 0 === T ? void 0 : T[0] },
+                { verified_email: null == r || null === (n = r.email) || void 0 === n ? void 0 : n[0] },
               ))
             var O,
               u,
@@ -1628,7 +1630,7 @@
                 },
               ))
             var M = { authenticity_claim: c, notability_claim: P }
-            return Object(o.b)(E, { params: M, request: n.AccountVerification.verifyAccount })({
+            return Object(o.b)(E, { params: M, request: T.AccountVerification.verifyAccount })({
               actionTypes: X,
               context: 'VERIFY_ACCOUNT',
             })
@@ -1637,7 +1639,7 @@
         Ie = function () {
           return function (E, e, I) {
             var t,
-              n,
+              T,
               N = I.api,
               _ = e(),
               r = aE(_),
@@ -1647,16 +1649,16 @@
             if (r) {
               var A,
                 c = Object(O.k)(_, r),
-                C = T()(c, 1)[0]
-              n = null == C || null === (A = C.originalMediaFile) || void 0 === A ? void 0 : A.fileHandle
+                C = n()(c, 1)[0]
+              T = null == C || null === (A = C.originalMediaFile) || void 0 === A ? void 0 : A.fileHandle
             }
             if (R) {
               var u,
                 S = Object(O.k)(_, R),
-                L = T()(S, 1)[0]
+                L = n()(S, 1)[0]
               t = null == L || null === (u = L.originalMediaFile) || void 0 === u ? void 0 : u.fileHandle
             }
-            var l = { backImage: n, country: a, frontImage: t, idType: i }
+            var l = { backImage: T, country: a, frontImage: t, idType: i }
             return Object(o.b)(E, { params: l, request: N.AccountVerification.verifyIdDocument })({
               actionTypes: $,
               context: 'VERIFY_ID_DOCUMENT',
@@ -1664,12 +1666,12 @@
           }
         },
         te = function (E, e) {
-          return function (I, t, T) {
-            T.api
-            var n,
+          return function (I, t, n) {
+            n.api
+            var T,
               N = t(),
-              _ = null === (n = bE(N)) || void 0 === n ? void 0 : n.newsType,
-              r = TE(N),
+              _ = null === (T = bE(N)) || void 0 === T ? void 0 : T.newsType,
+              r = nE(N),
               o = r.followers_eligible,
               R = r.mentions_eligible
             switch (E) {
@@ -1755,25 +1757,25 @@
                 I(o || R ? { payload: S(S({}, e), {}, { newsType: _ }), type: x } : { payload: S({}, e), type: l })
                 break
               case C.h.AUTHENTICITY_TYPE_SELECT:
-                I({ payload: e, type: m })
+                I({ payload: e, type: y })
                 break
               case C.h.EMAIL_VERIFICATION:
-                I({ payload: { email: [e] }, type: y })
+                I({ payload: { email: [e] }, type: V })
                 break
               case C.h.SITE_VERIFICATION:
-                I({ payload: e, type: y })
+                I({ payload: e, type: V })
                 break
               default:
                 return
             }
           }
         },
-        Te = function E(e) {
+        ne = function E(e) {
           var I = e.slice(-2),
-            t = T()(I, 1)[0],
-            n = void 0 === t ? EE : t,
+            t = n()(I, 1)[0],
+            T = void 0 === t ? EE : t,
             _ = [EE].concat(N()(e.slice(1, -1)))
-          return n === C.h.INTAKE_LOADING ? E(_) : { previousStep: n, remainingSteps: _ }
+          return T === C.h.INTAKE_LOADING ? E(_) : { previousStep: T, remainingSteps: _ }
         }
     },
     iD2S: function (E, e) {
