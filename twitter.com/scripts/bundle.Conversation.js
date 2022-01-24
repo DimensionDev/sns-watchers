@@ -2025,7 +2025,7 @@
               targetingLocations: Xr,
               targetedLocations: Yr,
               fetchStatus: Kr,
-              userCountry: _.w,
+              userCountry: _.x,
             }
           })
           .propsFromActions(function () {

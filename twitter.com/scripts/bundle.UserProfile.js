@@ -62,7 +62,7 @@
             return n || (a && a.promoted_content)
           },
           f,
-          d.v,
+          d.w,
           m,
           function (e, t) {
             var r = m(e, t)

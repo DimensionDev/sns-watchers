@@ -4,58 +4,37 @@
     '1Ws7': function (e, t, n) {
       'use strict'
       n.r(t)
-      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
-      var r = n('KEM+'),
-        a = n.n(r),
-        i = n('m3Bd'),
+      var r = n('ezF+'),
+        a = n('VPAj'),
+        i = n('97Jx'),
         o = n.n(i),
-        c = n('ezF+'),
-        s = (n('ERkP'), n('VPAj')),
-        l = n('1AUC'),
-        u = n('sYiQ'),
-        d = n('Rp9C')
-      function p(e, t) {
-        var n = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
-          t &&
-            (r = r.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            n.push.apply(n, r)
-        }
-        return n
-      }
+        c = n('m3Bd'),
+        l = n.n(c),
+        s = n('ERkP'),
+        u = n('1AUC'),
+        d = n('sYiQ'),
+        m = function (e) {
+          var t = e.entry,
+            n = (e.feedbackItems, e.module, e.shouldDisplayPin),
+            r = l()(e, ['entry', 'feedbackItems', 'module', 'shouldDisplayPin']),
+            a = n ? d.a.Pinning : void 0
+          return s.createElement(u.a, o()({ isMember: t.content.isMember, listId: t.content.id, mode: a }, r))
+        },
+        f = s.memo(m),
+        p = n('Rp9C')
       t.default = function (e) {
-        return c.g({
-          component: l.a,
-          createProps: function (t) {
-            var n = t.entry,
-              r = e.shouldDisplayPin,
-              i = o()(e, ['shouldDisplayPin']),
-              c = r ? u.a.Pinning : void 0
-            return (function (e) {
-              for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {}
-                t % 2
-                  ? p(Object(n), !0).forEach(function (t) {
-                      a()(e, t, n[t])
-                    })
-                  : Object.getOwnPropertyDescriptors
-                  ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-                  : p(Object(n)).forEach(function (t) {
-                      Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-                    })
-              }
-              return e
-            })({ listId: n.content.id, isMember: n.content.isMember, mode: c }, i)
-          },
-          isFocusable: Object(s.a)(!0),
-          getScribeDataItem: function (e) {
-            var t = e.content.id
-            return d.a.forList(t)
-          },
-        })
+        return r
+          .b({
+            component: f,
+            isFocusable: Object(a.a)(!0),
+            getScribeDataItem: function (e) {
+              var t = e.content.id
+              return p.a.forList(t)
+            },
+          })
+          .getHandler(function () {
+            return e
+          })
       }
     },
     O4YN: function (e, t, n) {
@@ -66,35 +45,35 @@
         i = n('VPAj'),
         o = (n('OZaJ'), n('VrFO')),
         c = n.n(o),
-        s = n('Y9Ll'),
-        l = n.n(s),
+        l = n('Y9Ll'),
+        s = n.n(l),
         u = n('1Pcy'),
         d = n.n(u),
-        p = n('5Yy7'),
-        f = n.n(p),
-        m = n('N+ot'),
-        v = n.n(m),
+        m = n('5Yy7'),
+        f = n.n(m),
+        p = n('N+ot'),
+        v = n.n(p),
         b = n('AuHH'),
-        y = n.n(b),
-        h = n('KEM+'),
-        O = n.n(h),
-        P = (n('2G9S'), n('ho0z'), n('tVqn'), n('xZmF')),
-        g = n('iPch'),
-        j = n('kHBp'),
+        h = n.n(b),
+        y = n('KEM+'),
+        P = n.n(y),
+        g = (n('2G9S'), n('ho0z'), n('tVqn'), n('xZmF')),
+        k = n('iPch'),
+        I = n('kHBp'),
         w = n('P1r1'),
-        k = n('rxPX'),
-        I = function (e, t) {
+        M = n('rxPX'),
+        E = function (e, t) {
           return t.listId
         },
-        M = function (e, t) {
-          return j.a.select(e, I(0, t))
+        O = function (e, t) {
+          return I.a.select(e, E(0, t))
         },
-        E = function (e, t) {
-          return g.h(e, t.listId)
+        S = function (e, t) {
+          return k.h(e, t.listId)
         },
-        S = Object(k.a)()
+        C = Object(M.a)()
           .propsFromState(function () {
-            return { list: M, listId: I, dataSaverMode: w.k, media: E }
+            return { list: O, listId: E, dataSaverMode: w.k, media: S }
           })
           .adjustStateProps(function (e) {
             var t = e.dataSaverMode,
@@ -111,13 +90,13 @@
           })
           .withAnalytics(),
         R = n('3XMw'),
-        C = n.n(R),
-        D = n('a5gf'),
-        x = n('2My+'),
-        A = n('MWbm'),
-        F = n('htQn'),
-        L = n('t62R'),
-        B = n('rHpw'),
+        j = n.n(R),
+        x = n('a5gf'),
+        A = n('2My+'),
+        F = n('MWbm'),
+        L = n('htQn'),
+        B = n('t62R'),
+        D = n('rHpw'),
         H = n('v6aA')
       function z(e) {
         var t = (function () {
@@ -132,16 +111,16 @@
         })()
         return function () {
           var n,
-            r = y()(e)
+            r = h()(e)
           if (t) {
-            var a = y()(this).constructor
+            var a = h()(this).constructor
             n = Reflect.construct(r, arguments, a)
           } else n = r.apply(this, arguments)
           return v()(this, n)
         }
       }
-      var T = C.a.j681933d,
-        V = (function (e) {
+      var J = j.a.j681933d,
+        T = (function (e) {
           f()(n, e)
           var t = z(n)
           function n() {
@@ -150,27 +129,27 @@
             for (var r = arguments.length, i = new Array(r), o = 0; o < r; o++) i[o] = arguments[o]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              O()(d()(e), '_renderThumbnail', function () {
+              P()(d()(e), '_renderThumbnail', function () {
                 var t = e.props,
                   n = t.dataSaverMode,
                   r = t.isPrivate,
                   i = t.listId,
                   o = t.media,
                   c = t.name,
-                  s = '/i/lists/'.concat(i)
+                  l = '/i/lists/'.concat(i)
                 return a.createElement(
-                  F.a,
-                  { link: s, onPress: e._handleOnClick, style: Y.root },
-                  a.createElement(P.a, { cropCandidates: o.crop, dataSaverMode: n, icon: 'lists', image: o.image }),
+                  L.a,
+                  { link: l, onPress: e._handleOnClick, style: V.root },
+                  a.createElement(g.a, { cropCandidates: o.crop, dataSaverMode: n, icon: 'lists', image: o.image }),
                   a.createElement(
-                    A.a,
-                    { style: Y.name },
-                    a.createElement(L.b, { align: 'center', numberOfLines: 1, size: 'subtext2' }, c ? c.trim() : null),
-                    r ? a.createElement(D.a, { accessibilityLabel: T, style: Y.iconLock }) : null,
+                    F.a,
+                    { style: V.name },
+                    a.createElement(B.b, { align: 'center', numberOfLines: 1, size: 'subtext2' }, c ? c.trim() : null),
+                    r ? a.createElement(x.a, { accessibilityLabel: J, style: V.iconLock }) : null,
                   ),
                 )
               }),
-              O()(d()(e), '_handleOnClick', function (t) {
+              P()(d()(e), '_handleOnClick', function (t) {
                 var n = e.props,
                   r = n.analytics,
                   a = n.onClick
@@ -180,7 +159,7 @@
             )
           }
           return (
-            l()(n, [
+            s()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -191,15 +170,15 @@
                     i = t.name
                   if (!(null != r && null !== (e = r.image) && void 0 !== e && e.url && i && n)) return null
                   var o = '/i/lists/'.concat(n)
-                  return a.createElement(x.a, { basePath: o, listId: n }, this._renderThumbnail())
+                  return a.createElement(A.a, { basePath: o, listId: n }, this._renderThumbnail())
                 },
               },
             ]),
             n
           )
         })(a.PureComponent)
-      O()(V, 'contextType', H.a)
-      var Y = B.a.create(function (e) {
+      P()(T, 'contextType', H.a)
+      var V = D.a.create(function (e) {
           return {
             root: { alignItems: 'center', backgroundColor: e.colors.cellBackground, padding: e.spaces.space12 },
             name: {
@@ -212,10 +191,10 @@
             iconLock: { color: e.colors.text, marginHorizontal: e.spaces.space4 },
           }
         }),
-        _ = S(V),
-        J = n('Rp9C'),
-        K = r.g({
-          component: _,
+        Y = C(T),
+        _ = n('Rp9C'),
+        N = r.g({
+          component: Y,
           createProps: function (e) {
             var t,
               n = e.entry,
@@ -226,11 +205,11 @@
           isFocusable: Object(i.a)(!0),
           getScribeDataItem: function (e) {
             var t = e.content.id
-            return J.a.forList(t)
+            return _.a.forList(t)
           },
           shouldDisplayBorder: Object(i.a)(!1),
         })
-      t.default = K
+      t.default = N
     },
   },
 ])

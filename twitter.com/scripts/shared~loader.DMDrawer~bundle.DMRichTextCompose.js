@@ -2883,12 +2883,13 @@
                     r = e.isLastRapidFire,
                     i = e.isRapidFire,
                     a = e.isSent,
-                    o = !i || r
+                    o = e.withUserAvatar,
+                    s = !i || r
                   return t
                     ? y.createElement(
                         ge.a,
-                        { style: !a && xr.footerPadderWithAvatar },
-                        y.createElement(tr, { conversationId: t, entryId: n, isEndOfDM: o, isSent: a }),
+                        { style: o && xr.footerPadderWithAvatar },
+                        y.createElement(tr, { conversationId: t, entryId: n, isEndOfDM: s, isSent: a }),
                       )
                     : null
                 },
@@ -2952,24 +2953,24 @@
                     a = e.isLastRapidFire,
                     o = e.isRapidFire,
                     s = e.isSent,
-                    c = e.user.name
+                    c = e.user.name,
+                    l = e.withUserAvatar
                   if (n || r || (o && !a)) return null
-                  var l,
-                    u = new Date(Number(t))
-                  l = Object(vr.c)(u) ? Or(u) : Object(vr.d)(u) ? Er({ time: Or(u) }) : Object(vr.e)(u) ? Sr(u) : wr(u)
-                  var d = i && !s,
-                    p = s ? 'right' : 'left',
-                    f = !s
+                  var u,
+                    d = new Date(Number(t))
+                  u = Object(vr.c)(d) ? Or(d) : Object(vr.d)(d) ? Er({ time: Or(d) }) : Object(vr.e)(d) ? Sr(d) : wr(d)
+                  var p = i && !s,
+                    f = s ? 'right' : 'left'
                   return y.createElement(
                     ge.a,
-                    { style: [f && xr.footerPadderWithAvatar, s && xr.timestamp] },
+                    { style: [l && xr.footerPadderWithAvatar, s && xr.timestamp] },
                     y.createElement(
                       be.b,
-                      { align: p, color: 'gray700', size: 'subtext2', withInteractiveStyling: s || !Tt.a.isEnabled },
-                      d &&
+                      { align: f, color: 'gray700', size: 'subtext2', withInteractiveStyling: s || !Tt.a.isEnabled },
+                      p &&
                         y.createElement(Je.a.I18NFormatMessage, { $i18n: 'c8b914d4' }, y.createElement(be.b, null, c)),
-                      d && ' ',
-                      l,
+                      p && ' ',
+                      u,
                     ),
                   )
                 },
@@ -4935,44 +4936,53 @@
                   var e = this,
                     t = this.props,
                     n = t.isActive,
-                    r = t.isSent,
-                    i = t.user,
-                    a = this._getRapidFireProps(),
-                    o = !a.isRapidFire || a.isLastRapidFire,
-                    s =
+                    r = t.isGroupDM,
+                    i = t.isSent,
+                    a = t.user,
+                    o = this._getRapidFireProps(),
+                    s = !o.isRapidFire || o.isLastRapidFire,
+                    c =
                       this.context.featureSwitches.isTrue('dm_vdl_enabled') &&
                       this.context.featureSwitches.isTrue('dm_vdl_chat_p0_enabled'),
-                    c = [
+                    l = [
                       ro.root.base,
-                      s && ro.root.vdlPadding,
-                      o && ro.root.contentSpacing,
-                      o && s && ro.root.vdlContentSpacing,
-                    ]
-                  if (!i) return null
-                  var l = !Tt.a.isEnabled || r
+                      c && ro.root.vdlPadding,
+                      s && ro.root.contentSpacing,
+                      s && c && ro.root.vdlContentSpacing,
+                    ],
+                    u = this._isDMVoiceMessage(),
+                    d = c ? r && !i : !i || u
+                  if (!a) return null
+                  var p = !Tt.a.isEnabled || i
                   return y.createElement(
                     We.a,
                     { viewType: 'message' },
                     y.createElement(
                       ge.a,
-                      { style: c },
+                      { style: l },
                       y.createElement(
                         ae.a,
                         {
-                          accessibilityExpanded: !(!l || !n),
+                          accessibilityExpanded: !(!p || !n),
                           focusable: !0,
                           interactiveStyles: null,
-                          onPress: l ? this._handleClick : void 0,
-                          style: r ? ro.root.sent : ro.root.received,
+                          onPress: p ? this._handleClick : void 0,
+                          style: i ? ro.root.sent : ro.root.received,
                           testID: Qa,
                         },
                         function (t) {
                           var n = t.isFocused,
                             r = t.isHovered
-                          return e._renderMessage({ isFocused: n, isHovered: r, rapidFireProps: a, withVDLRefresh: s })
+                          return e._renderMessage({
+                            isFocused: n,
+                            isHovered: r,
+                            rapidFireProps: o,
+                            withVDLRefresh: c,
+                            withUserAvatar: d,
+                          })
                         },
                       ),
-                      this._renderFooter(a),
+                      this._renderFooter(o, d),
                     ),
                   )
                 },
@@ -4984,148 +4994,150 @@
                     n = e.isFocused,
                     r = e.isHovered,
                     i = e.rapidFireProps,
-                    a = e.withVDLRefresh,
-                    o = this.props,
-                    s = o.displaySensitiveMedia,
-                    c = o.entry,
-                    l = o.inboxType,
-                    u = o.isActive,
-                    d = o.isDmNsfwMediaFilterEnabled,
-                    p = o.isGroupDM,
-                    f = o.isLowQuality,
-                    h = o.isReadOnly,
-                    m = o.isSent,
-                    v = o.isTrusted,
-                    g = o.isVoiceMessageActive,
-                    b = o.isWide,
-                    _ = o.participants,
-                    R = o.perspective,
-                    O = o.scribeVoiceMessage,
-                    E = o.setShouldFreezeUpdates,
-                    S = i.isFirstRapidFire,
-                    w = i.isRapidFire,
-                    C = [
-                      m ? ro.messageContainer.sent : ro.messageContainer.received,
-                      b ? ro.messageContainer.wide : ro.messageContainer.narrow,
-                      m && b && ro.messageContainer.sentWide,
-                      !m && b && ro.messageContainer.receivedWide,
+                    a = e.withUserAvatar,
+                    o = e.withVDLRefresh,
+                    s = this.props,
+                    c = s.displaySensitiveMedia,
+                    l = s.entry,
+                    u = s.inboxType,
+                    d = s.isActive,
+                    p = s.isDmNsfwMediaFilterEnabled,
+                    f = s.isGroupDM,
+                    h = s.isLowQuality,
+                    m = s.isReadOnly,
+                    v = s.isSent,
+                    g = s.isTrusted,
+                    b = s.isVoiceMessageActive,
+                    _ = s.isWide,
+                    R = s.participants,
+                    O = s.perspective,
+                    E = s.scribeVoiceMessage,
+                    S = s.setShouldFreezeUpdates,
+                    w = i.isFirstRapidFire,
+                    C = i.isRapidFire,
+                    x = [
+                      v ? ro.messageContainer.sent : ro.messageContainer.received,
+                      _ ? ro.messageContainer.wide : ro.messageContainer.narrow,
+                      v && _ && ro.messageContainer.sentWide,
+                      !v && _ && ro.messageContainer.receivedWide,
                     ],
-                    x = v && !h,
-                    A = this._isDMVoiceMessage(),
-                    k = null === (t = Object.keys(_)) || void 0 === t ? void 0 : t.length
+                    A = g && !m,
+                    k = this._isDMVoiceMessage(),
+                    T = null === (t = Object.keys(R)) || void 0 === t ? void 0 : t.length
                   return y.createElement(
                     ge.a,
-                    { style: C },
-                    c.error
+                    { style: x },
+                    l.error
                       ? null
                       : y.createElement(fn, {
-                          containerIsActive: u,
+                          containerIsActive: d,
                           containerIsFocused: n,
                           containerIsHovered: r,
-                          entry: c,
-                          inboxType: l,
-                          isDraft: !!c.is_draft,
-                          isGroupDM: p,
-                          isSent: m,
+                          entry: l,
+                          inboxType: u,
+                          isDraft: !!l.is_draft,
+                          isGroupDM: f,
+                          isSent: v,
                           onReportMessage:
-                            A && O
+                            k && E
                               ? function () {
-                                  return O.report({ isLowQuality: f, isTrusted: v })
+                                  return E.report({ isLowQuality: h, isTrusted: g })
                                 }
                               : void 0,
-                          participantsCount: k,
-                          perspective: R,
-                          setShouldFreezeUpdates: E,
-                          shouldShowReactionButton: x,
-                          style: A && Me(re.a.theme.scale).actionsContainer({ isSent: m, isVoiceMessageActive: g }),
-                          withVDLRefresh: a,
+                          participantsCount: T,
+                          perspective: O,
+                          setShouldFreezeUpdates: S,
+                          shouldShowReactionButton: A,
+                          style: k && Me(re.a.theme.scale).actionsContainer({ isSent: v, isVoiceMessageActive: b }),
+                          withVDLRefresh: o,
                         }),
                     y.createElement(Na, {
-                      displaySensitiveMedia: s,
-                      entry: c,
-                      isActive: u,
-                      isDmNsfwMediaFilterEnabled: d,
-                      isFirstRapidFire: S,
-                      isLowQuality: f,
-                      isRapidFire: w,
-                      isSent: m,
-                      isTrusted: v,
-                      key: c.id,
+                      displaySensitiveMedia: c,
+                      entry: l,
+                      isActive: d,
+                      isDmNsfwMediaFilterEnabled: p,
+                      isFirstRapidFire: w,
+                      isLowQuality: h,
+                      isRapidFire: C,
+                      isSent: v,
+                      isTrusted: g,
+                      key: l.id,
                       onCtaClick: this._handleClick,
                       onCtaImpression: this._handleCtaImpression,
-                      style: A && Me(re.a.theme.scale).messageContainer({ isSent: m, isVoiceMessageActive: g }),
+                      style: k && Me(re.a.theme.scale).messageContainer({ isSent: v, isVoiceMessageActive: b }),
                     }),
-                    this._possiblyRenderUserAvatar(i),
+                    this._possiblyRenderUserAvatar(i, a),
                   )
                 },
               },
               {
                 key: '_renderFooter',
-                value: function (e) {
-                  var t,
-                    n,
-                    r = e.isLastRapidFire,
-                    i = e.isRapidFire,
-                    a = this.props,
-                    o = a.entry,
-                    s = a.isActive,
-                    c = a.isGroupDM,
-                    l = a.isSent,
-                    u = a.participants,
-                    d = a.user
-                  return d
+                value: function (e, t) {
+                  var n,
+                    r,
+                    i = e.isLastRapidFire,
+                    a = e.isRapidFire,
+                    o = this.props,
+                    s = o.entry,
+                    c = o.isActive,
+                    l = o.isGroupDM,
+                    u = o.isSent,
+                    d = o.participants,
+                    p = o.user
+                  return p
                     ? y.createElement(Ar, {
-                        conversationId: o.conversation_id,
-                        entryId: o.id,
-                        entryText: null === (t = o.message_data) || void 0 === t ? void 0 : t.text,
-                        entryTime: o.time,
-                        isActive: s,
-                        isDraft: !!o.is_draft,
-                        isError: !!o.error,
-                        isGroupDM: c,
-                        isLastRapidFire: r,
-                        isRapidFire: i,
-                        isSent: l,
-                        localMediaId: null === (n = o.message_data) || void 0 === n ? void 0 : n.localMediaId,
+                        conversationId: s.conversation_id,
+                        entryId: s.id,
+                        entryText: null === (n = s.message_data) || void 0 === n ? void 0 : n.text,
+                        entryTime: s.time,
+                        isActive: c,
+                        isDraft: !!s.is_draft,
+                        isError: !!s.error,
+                        isGroupDM: l,
+                        isLastRapidFire: i,
+                        isRapidFire: a,
+                        isSent: u,
+                        localMediaId: null === (r = s.message_data) || void 0 === r ? void 0 : r.localMediaId,
                         onPress: this._handleClick,
-                        participants: u,
-                        user: d,
+                        participants: d,
+                        user: p,
+                        withUserAvatar: t,
                       })
                     : null
                 },
               },
               {
                 key: '_possiblyRenderUserAvatar',
-                value: function (e) {
-                  var t = e.isLastRapidFire,
-                    n = e.isRapidFire,
-                    r = this.props,
-                    i = r.isSent,
-                    a = r.isVoiceMessageActive,
-                    o = r.user,
-                    s = this._isDMVoiceMessage()
-                  if (!o || (i && !s)) return null
-                  var c = Ie(re.a.theme.scale),
-                    l = c.DMUserAvatarSizePx,
-                    u = { showAvatar: !!s || !n || !!t, size: c.DMUserAvatarSizeType, user: o },
-                    d = [
+                value: function (e, t) {
+                  var n = e.isLastRapidFire,
+                    r = e.isRapidFire,
+                    i = this.props,
+                    a = i.isSent,
+                    o = i.isVoiceMessageActive,
+                    s = i.user,
+                    c = this._isDMVoiceMessage()
+                  if (!s || (!t && !o)) return null
+                  var l = Ie(re.a.theme.scale),
+                    u = l.DMUserAvatarSizePx,
+                    d = { showAvatar: !!c || !r || !!n, size: l.DMUserAvatarSizeType, user: s },
+                    p = [
                       ro.userAvatar.base,
-                      i ? ro.userAvatar.sent : ro.userAvatar.received,
-                      s && Me(re.a.theme.scale).userAvatar({ isVoiceMessageActive: a, isSent: i }),
+                      a ? ro.userAvatar.sent : ro.userAvatar.received,
+                      c && Me(re.a.theme.scale).userAvatar({ isVoiceMessageActive: o, isSent: a }),
                     ]
                   return y.createElement(
                     ge.a,
                     { style: ro.userAvatar.container },
-                    i ? null : y.createElement(ge.a, { style: ro.userAvatar.spacer }),
-                    s
+                    a ? null : y.createElement(ge.a, { style: ro.userAvatar.spacer }),
+                    c
                       ? y.createElement(qa, {
-                          color: i ? re.a.theme.colors.primary : re.a.theme.colors.text,
-                          isActive: !!a,
-                          size: l,
-                          style: d,
+                          color: a ? re.a.theme.colors.primary : re.a.theme.colors.text,
+                          isActive: !!o,
+                          size: u,
+                          style: p,
                         })
                       : null,
-                    y.createElement(ge.a, { style: d }, y.createElement(Ha, u)),
+                    y.createElement(ge.a, { style: p }, y.createElement(Ha, d)),
                   )
                 },
               },

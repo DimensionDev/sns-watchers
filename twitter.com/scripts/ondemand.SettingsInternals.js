@@ -9173,7 +9173,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'PersonalizationScreen', function () {
-          return _e
+          return Se
         })
       n('OZaJ'), n('1t7P'), n('LW0h'), n('daRM'), n('FtHn')
       var r = n('VrFO'),
@@ -9229,18 +9229,19 @@
         F = n('3XMw'),
         j = n.n(F),
         D = n('fs1G'),
-        x = n('7FtF'),
-        N = n('iCwC'),
-        M = n('MWbm'),
-        H = n('G8HL'),
-        U = n('t62R'),
-        B = n('cCdp'),
-        K = n('0yYu'),
-        V = n('6vad'),
-        G = n('csss'),
-        W = n('eb3s'),
-        Y = n('v6aA')
-      function X(e, t) {
+        x = n('7JQg'),
+        N = n('7FtF'),
+        M = n('iCwC'),
+        H = n('MWbm'),
+        U = n('G8HL'),
+        B = n('t62R'),
+        K = n('cCdp'),
+        V = n('0yYu'),
+        G = n('6vad'),
+        W = n('csss'),
+        Y = n('eb3s'),
+        X = n('v6aA')
+      function z(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -9252,22 +9253,22 @@
         }
         return n
       }
-      function z(e) {
+      function q(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? X(Object(n), !0).forEach(function (t) {
+            ? z(Object(n), !0).forEach(function (t) {
                 y()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : X(Object(n)).forEach(function (t) {
+            : z(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      function q(e) {
+      function Z(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -9288,34 +9289,34 @@
           return d()(this, n)
         }
       }
-      var Z = j.a.e8f57e07,
-        Q = j.a.ce8450f1,
-        J = j.a.ja94f34d,
-        $ = j.a.e8f57e07,
-        ee = j.a.bd73f7e5,
-        te = j.a.a55db872,
-        ne = j.a.ddbc3287,
-        re = j.a.i7b329e0,
-        ae = { headline: j.a.b934e0ea, text: j.a.bf917ce9, confirmButtonLabel: j.a.a148acb9 },
-        oe = j.a.e8313b32,
-        ce = j.a.f1d46fd5,
-        ie = j.a.cfd2f35d,
-        se = j.a.ib3357a5,
-        le = j.a.c4ca418c,
-        ue = j.a.b0b3ed8e,
-        fe = j.a.f6c8ccc7,
-        de = j.a.f748b0fc,
-        pe = j.a.aa023546,
-        he = j.a.cb2ed998,
-        me = j.a.b85127bc,
-        ye = j.a.b276596b,
-        be = j.a.c966aaf4,
-        Ee = j.a.d3c20d8f,
-        ge = j.a.jdaf84e3,
-        ve = { page: 'settings', section: 'personalization' },
-        _e = (function (e) {
+      var Q = j.a.e8f57e07,
+        J = j.a.ce8450f1,
+        $ = j.a.ja94f34d,
+        ee = j.a.e8f57e07,
+        te = j.a.bd73f7e5,
+        ne = j.a.a55db872,
+        re = j.a.ddbc3287,
+        ae = j.a.i7b329e0,
+        oe = { headline: j.a.b934e0ea, text: j.a.bf917ce9, confirmButtonLabel: j.a.a148acb9 },
+        ce = j.a.e8313b32,
+        ie = j.a.f1d46fd5,
+        se = j.a.cfd2f35d,
+        le = j.a.ib3357a5,
+        ue = j.a.c4ca418c,
+        fe = j.a.b0b3ed8e,
+        de = j.a.f6c8ccc7,
+        pe = j.a.f748b0fc,
+        he = j.a.aa023546,
+        me = j.a.cb2ed998,
+        ye = j.a.b85127bc,
+        be = j.a.b276596b,
+        Ee = j.a.c966aaf4,
+        ge = j.a.d3c20d8f,
+        ve = j.a.jdaf84e3,
+        _e = { page: 'settings', section: 'personalization' },
+        Se = (function (e) {
           u()(n, e)
-          var t = q(n)
+          var t = Z(n)
           function n(e, r) {
             var o
             return (
@@ -9331,84 +9332,84 @@
                   i = c.showDisableEUConfirmation,
                   s = c.showSwitchAllConfirmation
                 return b.createElement(
-                  M.a,
+                  H.a,
                   null,
                   b.createElement(
-                    M.a,
+                    H.a,
                     null,
                     b.createElement(
-                      U.b,
-                      { color: 'gray700', size: 'subtext2', style: [N.a.infoText, N.a.bottomBorder] },
-                      o._isLoggedIn ? Q : J,
+                      B.b,
+                      { color: 'gray700', size: 'subtext2', style: [M.a.infoText, M.a.bottomBorder] },
+                      o._isLoggedIn ? J : $,
                     ),
                   ),
-                  b.createElement(B.a, {
+                  b.createElement(K.a, {
                     checked: o._getSwitchAllValue(),
-                    helpText: ee,
+                    helpText: te,
                     key: 'switchAll',
-                    label: $,
+                    label: ee,
                     name: 'switchAll',
                     onChange: o._handleSwitchAllChanged,
                     type: 'switch',
                   }),
-                  b.createElement(K.a, null),
-                  b.createElement(V.b, { text: te }),
-                  b.createElement(B.a, {
+                  b.createElement(V.a, null),
+                  b.createElement(G.b, { text: ne }),
+                  b.createElement(K.a, {
                     checked: a,
                     disabled: o._adsPersonalizationOSLevelDisabled,
-                    helpText: o._adsPersonalizationOSLevelDisabled ? ue : le,
+                    helpText: o._adsPersonalizationOSLevelDisabled ? fe : ue,
                     key: 'allowPersonalization',
-                    label: se,
+                    label: le,
                     learnMoreLink: 'https://support.twitter.com/articles/20170405',
                     name: 'allowPersonalization',
                     onChange: o._handleBooleanChanged,
                   }),
-                  b.createElement(B.a, {
+                  b.createElement(K.a, {
                     checked: t,
-                    helpText: de,
+                    helpText: pe,
                     key: 'allowDeviceAccess',
-                    label: fe,
+                    label: de,
                     learnMoreLink: 'https://support.twitter.com/articles/20175257',
                     name: 'allowDeviceAccess',
                     onChange: o._handleBooleanChanged,
                   }),
                   o._isLoggedIn &&
-                    b.createElement(B.a, {
+                    b.createElement(K.a, {
                       checked: n,
-                      helpText: he,
+                      helpText: me,
                       key: 'allowLocationHistoryUse',
-                      label: pe,
+                      label: he,
                       name: 'allowLocationHistoryUse',
                       onChange: o._handleBooleanChanged,
                     }),
-                  b.createElement(K.a, null),
-                  b.createElement(V.b, { text: ne }),
+                  b.createElement(V.a, null),
+                  b.createElement(G.b, { text: re }),
                   o._renderCookiePersonalizationSetting(),
-                  b.createElement(B.a, {
+                  b.createElement(K.a, {
                     checked: r,
-                    helpText: ge,
+                    helpText: ve,
                     key: 'allowPartnerships',
-                    label: Ee,
+                    label: ge,
                     learnMoreLink: 'https://support.twitter.com/articles/20175379',
                     name: 'allowPartnerships',
                     onChange: o._handleBooleanChanged,
                   }),
-                  o._isLoggedIn && b.createElement(G.a, { label: re, link: '/settings/your_twitter_data' }),
+                  o._isLoggedIn && b.createElement(W.a, { label: ae, link: '/settings/your_twitter_data' }),
                   i &&
-                    b.createElement(W.a, {
-                      cancelButtonLabel: ie,
-                      confirmButtonLabel: ce,
+                    b.createElement(Y.a, {
+                      cancelButtonLabel: se,
+                      confirmButtonLabel: ie,
                       onCancel: o._handleCancelDisableEU,
                       onConfirm: o._handleDisableEUCookies,
-                      text: oe,
+                      text: ce,
                     }),
                   s &&
-                    b.createElement(W.a, {
-                      confirmButtonLabel: ae.confirmButtonLabel,
-                      headline: ae.headline,
+                    b.createElement(Y.a, {
+                      confirmButtonLabel: oe.confirmButtonLabel,
+                      headline: oe.headline,
                       onCancel: o._handleCancelSwitchAll,
                       onConfirm: o._handleConfirmSwitchAll,
-                      text: ae.text,
+                      text: oe.text,
                     }),
                 )
               }),
@@ -9454,7 +9455,7 @@
                 o._scribeAction(e, c), a(c).catch(r())
               }),
               y()(s()(o), '_scribeAction', function (e, t) {
-                ;(0, o.props.scribeAction)(z(z({}, ve), {}, { component: e, action: 'edit' }), { metadata: t })
+                ;(0, o.props.scribeAction)(q(q({}, _e), {}, { component: e, action: 'edit' }), { metadata: t })
               }),
               y()(s()(o), '_handleFetchPreferences', function () {
                 var e = o.props,
@@ -9488,7 +9489,7 @@
                     n = e.googleAnalyticsPageView,
                     r = e.scribePageImpression,
                     a = e.syncSettings
-                  n(ve), r(ve), !this._isLoggedIn && E.canUseDOM && a().catch(t())
+                  n(_e), r(_e), !this._isLoggedIn && E.canUseDOM && a().catch(t())
                 },
               },
               {
@@ -9498,16 +9499,20 @@
                     t = e.fetchStatus,
                     n = e.location
                   return b.createElement(
-                    x.a,
-                    { location: n, title: Z },
+                    x.b,
+                    { namespace: _e },
                     b.createElement(
-                      k.a,
-                      null,
-                      b.createElement(L.a, {
-                        fetchStatus: t,
-                        onRequestRetry: this._handleFetchPreferences,
-                        render: this._render,
-                      }),
+                      N.a,
+                      { location: n, title: Q },
+                      b.createElement(
+                        k.a,
+                        null,
+                        b.createElement(L.a, {
+                          fetchStatus: t,
+                          onRequestRetry: this._handleFetchPreferences,
+                          render: this._render,
+                        }),
+                      ),
                     ),
                   )
                 },
@@ -9521,12 +9526,12 @@
                     r = !!n,
                     a = !1,
                     o = D.a,
-                    c = me
+                    c = ye
                   return (
                     t
-                      ? ((e = be), r ? (o = this._handleEUCookiesChanged) : (a = !0))
-                      : ((e = ye), (o = this._handleBooleanChanged)),
-                    b.createElement(B.a, {
+                      ? ((e = Ee), r ? (o = this._handleEUCookiesChanged) : (a = !0))
+                      : ((e = be), (o = this._handleBooleanChanged)),
+                    b.createElement(K.a, {
                       checked: n,
                       disabled: a,
                       helpText: e,
@@ -9551,8 +9556,8 @@
             n
           )
         })(b.Component)
-      y()(_e, 'contextType', Y.a)
-      t.default = R(Object(H.a)(_e))
+      y()(Se, 'contextType', X.a)
+      t.default = R(Object(U.a)(Se))
     },
     i6OR: function (e, t, n) {
       'use strict'
@@ -13182,7 +13187,7 @@
     xCYy: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return y
+        return b
       })
       var r = n('ERkP'),
         a = n('v6aA'),
@@ -13191,19 +13196,29 @@
         i = n.n(c),
         s = n('cnVF'),
         l = n('RqPI'),
-        u = n('yUQf'),
-        f = n('q9Zt'),
-        d = n('t62R'),
-        p = i.a.ffeb836a,
-        h = i.a.f2fb9746
-      function m() {
-        return r.createElement(f.a, { title: p }, r.createElement(d.b, null, h))
+        u = n('k89r'),
+        f = n('yUQf'),
+        d = n('q9Zt'),
+        p = n('t62R'),
+        h = i.a.ffeb836a,
+        m = i.a.f2fb9746
+      function y() {
+        var e = Object(u.a)()
+        return (
+          r.useEffect(
+            function () {
+              e.scribe({ element: 'error_page', action: 'show' })
+            },
+            [e],
+          ),
+          r.createElement(d.a, { title: h }, r.createElement(p.b, null, m))
+        )
       }
-      function y(e) {
+      function b(e) {
         var t = r.useContext(a.a).featureSwitches,
-          n = Object(u.a)(l.m),
+          n = Object(f.a)(l.m),
           c = Object(o.b)(s.u, t)
-        return n || c ? e.children : r.createElement(m, null)
+        return n || c ? e.children : r.createElement(y, null)
       }
     },
     xKqQ: function (e, t, n) {

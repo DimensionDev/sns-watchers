@@ -620,13 +620,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e4b3f520', 'Pinned conversations'),
           a('ae4d666a', 'All conversations'),
           a('a219e217', 'OK'),
-          a('i0c01075', function (e) {
-            return 'You can only pin ' + e.count + ' conversations'
+          a('d571e4f8', function (e) {
+            return 'You can only pin ' + e.count + ' conversation' + n(e.count, '', 's')
           }),
           a('a551bf7d', 'You’ll need to unpin one conversation to pin another.'),
           a('e5b0063d', function (e) {
             return 'Timeline: ' + e.title
           }),
+          a('e4f6bd9e', 'Oops, something went wrong. Please try again later.'),
+          a('e4ff75a9', 'Something went wrong. Check your connection and try again.'),
           a('b9dae4f4', 'Try a different search term'),
           a('e7fb2027', 'No more results'),
           a('b92a21d8', function (e) {
@@ -1144,10 +1146,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('i77347d0', function (e) {
             return 'Dismiss ' + e.topicName + ' Topic'
-          }),
-          a('c837fca9', 'Show more replies'),
-          a('d228a9a0', 'Show more')
-        a('cf433585', 'Introducing'),
+          })
+        a('c837fca9', 'Show more replies'),
+          a('d228a9a0', 'Show more'),
+          a('cf433585', 'Introducing'),
           a('a603e958', 'Reply downvotes'),
           a('f2be4e37', 'Tap to downvote'),
           a('aa4b7c32', 'See a reply that isn’t adding to the conversation? Let us know by downvoting.'),
@@ -2225,13 +2227,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('jfe6a3a0', 'Motion'),
           a('a6d5b010', 'Timeline'),
           a('e8c72272', 'Increase color contrast'),
-          a('dba2cdd1', 'Improves legibility by increasing the contrast between text and background colors.'),
-          a('d070244e', 'Reduce motion'),
-          a('icfa5e8b', 'Limits the amount of in-app animations, including live engagement counts.')
-        a(
-          'ae41b002',
-          'Limits the amount of in-app animations, including live engagement counts. Your system is currently signaling to reduce motion. If you would like to re-enable motion, first disable it there.',
-        ),
+          a('dba2cdd1', 'Improves legibility by increasing the contrast between text and background colors.')
+        a('d070244e', 'Reduce motion'),
+          a('icfa5e8b', 'Limits the amount of in-app animations, including live engagement counts.'),
+          a(
+            'ae41b002',
+            'Limits the amount of in-app animations, including live engagement counts. Your system is currently signaling to reduce motion. If you would like to re-enable motion, first disable it there.',
+          ),
           a('e82b294e', 'Prompt me to add image descriptions'),
           a('ea284ab8', 'Get a reminder when you Tweet media without descriptions.'),
           a('g1888dc1', 'Never'),
@@ -3501,12 +3503,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'c2254083',
             'We received your request. To protect your account, it can take 24 hours or longer for your data to be ready.',
-          ),
-          a(
-            'f62d1d9d',
-            'Your archive is ready for you to download and view using your desktop browser. Keep in mind, you need to download this data before it expires in a few days.',
-          ),
-          a('b221ca4b', 'We’ll let you know when your data is ready to download')
+          )
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -3523,7 +3520,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('c9c1ebbb', 'complete this form'),
+        a(
+          'f62d1d9d',
+          'Your archive is ready for you to download and view using your desktop browser. Keep in mind, you need to download this data before it expires in a few days.',
+        ),
+          a('b221ca4b', 'We’ll let you know when your data is ready to download'),
+          a('c9c1ebbb', 'complete this form'),
           a(
             'a3f22d8d',
             'Select the kinds of notifications you get about your activities, interests, and recommendations.',
@@ -3929,10 +3931,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('gfc80842', 'Submit application'),
           a('f4f4dd6f', 'Required'),
           a('f448cbcb', 'Optional'),
-          a('j3253319', 'Take a minute to say hello'),
-          a('h1e80993', 'Make a good first impression with a quick intro message for your potential Super Followers.'),
+          a('hf6f2913', 'Preview'),
+          a('iba08a94', 'How does everything look?'),
+          a(
+            'bcb1e4e6',
+            'This is what people see before they Super Follow you. Tweak and edit your descriptions below Super Follows Benefits.',
+          ),
           a('dc71aee7', 'Support your favorite people on Twitter for bonus content and extra perks.'),
           a('a4ed9071', 'Add an introduction...'),
+          a('j3253319', 'Take a minute to say hello'),
+          a('h1e80993', 'Make a good first impression with a quick intro message for your potential Super Followers.'),
           a('ab793af9', 'Super Follower preview'),
           a('fb278c81', 'What’s this preview?'),
           a(
@@ -3963,6 +3971,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'a3932653',
             'We’re inviting all Beta Creators and they’ll use the group to chat with each other, provide feedback, and ask questions / get support.',
           ),
+          a('a1ef1964', 'View preview'),
           a('c9f7c195', 'Help center'),
           a('jfb2bf30', 'Join creators on Discord'),
           a('a962b5d8', 'Creator guide'),
@@ -3987,11 +3996,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Nothing to change or edit here. All of your Super Followers will automatically get a public badge when they subscribe.',
           ),
           a('d94d5707', 'Perks setup'),
-          a('iba08a94', 'How does everything look?'),
-          a(
-            'aa6db82c',
-            'Check your descriptions before continuing. You’ll need to contact Twitter Support to make changes during the Super Follows test period.',
-          ),
           a('ebfb897c', 'Examples'),
           a('dc4feb19', 'Not sure what to say?'),
           a(
@@ -4551,8 +4555,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bb347bbb', 'help center'),
           a('e0876919', 'You weren’t able to give access to the App. Go back and try logging in again.'),
           a('cea71013', 'We’re loading your contacts...'),
-          a('e4ff75a9', 'Something went wrong. Check your connection and try again.'),
-          a('e4f6bd9e', 'Oops, something went wrong. Please try again later.'),
           a('hc72e1fc', 'Please enter a valid email.'),
           a('fa69a1ca', 'Reveal password'),
           a('aacf5085', 'Hide password'),
@@ -4708,10 +4710,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'c5bb3cd1',
             'You’ll see Tweets about this in your Home timeline. This Topic will help personalize your experience across Twitter.',
           ),
-          a('e241095e', 'Your Topics'),
-          a('f8bc75e2', 'your Topics'),
-          a('ed827af6', 'Topic is unavailable.')
-        a('d094c720', 'All Topics'),
+          a('e241095e', 'Your Topics')
+        a('f8bc75e2', 'your Topics'),
+          a('ed827af6', 'Topic is unavailable.'),
+          a('d094c720', 'All Topics'),
           a('f68f0fc7', 'Twitter Topics'),
           a('ieb6f5c1', function (e) {
             return e.topicName + ' | Twitter Topics'
@@ -5508,17 +5510,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('efce3d9a', function (e) {
             return e.hours + ' ' + e.minutes + ' ' + e.seconds
           }),
-          a('b03e1629', 'Listen live'),
           a('f89a5d6f', 'Host'),
-          a('fb236727', 'Pause'),
-          a('jf7853f6', function (e) {
-            return 'Space ' + e.title + ' hosted by ' + e.host + ' has ended'
-          }),
-          a('i1a29920', 'Space has ended'),
           a('j8b01b27', function (e) {
             return 'Space ' + e.title + ' hosted by ' + e.host + ' has been canceled'
           }),
           a('fda9f48b', 'Space has been canceled'),
+          a('jf7853f6', function (e) {
+            return 'Space ' + e.title + ' hosted by ' + e.host + ' has ended'
+          }),
+          a('i1a29920', 'Space has ended'),
           a('j2d460c0', function (e) {
             return e.count + ' in this Space'
           }),
@@ -5547,6 +5547,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('dc718e53', function (e) {
             return '+' + e.count + ' other' + n(e.count, '', 's')
           }),
+          a('b03e1629', 'Listen live'),
+          a('fb236727', 'Pause'),
           a('fc45ccc5', 'Embedded video'),
           a('a9edea48', 'Reload'),
           a('f1ad0df1', function (e) {

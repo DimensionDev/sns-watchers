@@ -1211,7 +1211,7 @@
         }
         return n
       }
-      function M(e) {
+      function L(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
@@ -1226,7 +1226,7 @@
         }
         return e
       }
-      function L(e) {
+      function M(e) {
         var t = Object(P.b)()
         return {
           getActionItem: (function (e, t) {
@@ -1240,11 +1240,11 @@
                     c = i.scribeAction,
                     s = g()(i, ['isAvailable', 'scribeAction'])
                   if (!o()) return null
-                  var l = M({}, s)
+                  var l = L({}, s)
                   function u() {
                     var i = r.shareText || e.shareText,
                       o = e.url,
-                      s = M(M({}, e.scribeNamespace), {}, { action: c }, r.scribeNamespace),
+                      s = L(L({}, e.scribeNamespace), {}, { action: c }, r.scribeNamespace),
                       l = { text: i, url: o },
                       u = { analytics: t, dispatch: n, history: a, mergedScribeNamespace: s }
                     !(function (e, t, n) {
@@ -1253,7 +1253,7 @@
                       }
                       switch (e) {
                         case 'dm':
-                          return r(), void n.history.push(M(M({}, _(t)), {}, { pathname: '/messages/compose' }))
+                          return r(), void n.history.push(L(L({}, _(t)), {}, { pathname: '/messages/compose' }))
                         case 'copy':
                           return (
                             O.a.setString(w(t.url)),
@@ -1264,8 +1264,8 @@
                           return (
                             r(),
                             void n.history.push(
-                              M(
-                                M({ pathname: '/compose/tweet' }, _(t)),
+                              L(
+                                L({ pathname: '/compose/tweet' }, _(t)),
                                 {},
                                 { state: { positionCursorAtBeginning: !0 } },
                               ),
@@ -1276,14 +1276,14 @@
                             .share({ text: t.text, url: w(t.url) })
                             .then(r)
                             .catch(function () {
-                              n.analytics.scribe(M(M({}, n.mergedScribeNamespace), {}, { action: 'share_error' }))
+                              n.analytics.scribe(L(L({}, n.mergedScribeNamespace), {}, { action: 'share_error' }))
                             })
                         default:
                           Object(E.a)('[ShareButton] Unexpected share type ['.concat(e, ']'))
                       }
                     })(r.type, l, u)
                   }
-                  return r.label && (l.text = r.label), M(M({}, l), {}, { onClick: u })
+                  return r.label && (l.text = r.label), L(L({}, l), {}, { onClick: u })
                 }
               },
               [t, n, a, e.scribeNamespace, e.shareText, e.url],
@@ -1341,7 +1341,7 @@
             var a = t.current.previous
             return a && (e === a || Object(H.a)(e, a)) ? a : n()
           })(V(V({}, U), e.scribeNamespace)),
-          n = L(V(V({}, e), {}, { scribeNamespace: t })),
+          n = M(V(V({}, e), {}, { scribeNamespace: t })),
           a = n.analytics,
           i = n.getActionItem
         var o = e.ButtonComponent || q
@@ -1564,8 +1564,8 @@
         I = n('Chkh'),
         R = n('3XMw'),
         T = n.n(R),
-        M = n('Ty5D'),
-        L = n('dgjd'),
+        L = n('Ty5D'),
+        M = n('dgjd'),
         D = n('xZGM'),
         _ = n('uDfI')
       function A(e, t) {
@@ -1637,7 +1637,7 @@
           i = e.isSideNavLayout
         return (
           (function (e) {
-            var t = Object(L.a)(e).utils,
+            var t = Object(M.a)(e).utils,
               n = b.p()
             p.useEffect(
               function () {
@@ -1647,7 +1647,7 @@
             )
           })(a),
           (function (e) {
-            var t = Object(L.a)(e),
+            var t = Object(M.a)(e),
               n = t.space,
               r = t.utils,
               a = v.g(),
@@ -1679,7 +1679,7 @@
           (function (e) {
             var t = b.q(),
               n = b.p(),
-              r = Object(M.h)(),
+              r = Object(L.h)(),
               a = r.key,
               i = r.pathname,
               o = p.useRef({ key: a, pathname: i })
@@ -1784,7 +1784,7 @@
       }
       function K(e) {
         var t = e.audioSpaceId,
-          n = Object(L.a)(t),
+          n = Object(M.a)(t),
           r = n.space,
           a = n.utils,
           i = a.title(),
@@ -2247,7 +2247,7 @@
         I = n.n(C),
         R = n('Lsrn'),
         T = n('k/Ka')
-      function M(e, t) {
+      function L(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -2259,16 +2259,16 @@
         }
         return n
       }
-      function L(e) {
+      function M(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? M(Object(n), !0).forEach(function (t) {
+            ? L(Object(n), !0).forEach(function (t) {
                 I()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : M(Object(n)).forEach(function (t) {
+            : L(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
@@ -2278,8 +2278,8 @@
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
         return Object(T.a)(
           'svg',
-          L(
-            L({}, e),
+          M(
+            M({}, e),
             {},
             { accessibilityHidden: void 0 === e.accessibilityLabel, style: [R.a.root, e.style], viewBox: '0 0 24 24' },
           ),
@@ -2660,7 +2660,7 @@
                 value: function (e, t) {
                   var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
                     r = n.params,
-                    a = Object.assign(L(), n.headers),
+                    a = Object.assign(M(), n.headers),
                     i = JSON.stringify(k(k({}, t), {}, { cookie: this._authToken })),
                     o = 'Twitter' === this._authUserType ? 'twitter/'.concat(e) : e
                   return this.dispatch({ method: 'POST', path: '/api/v2/'.concat(o), headers: a, params: r, data: i })
@@ -2725,7 +2725,7 @@
                     n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
                   return this.login().then(function () {
                     var r = n.params,
-                      a = Object.assign(L(), n.headers),
+                      a = Object.assign(M(), n.headers),
                       i = JSON.stringify({ access_token: e.access_token, cursor: e.cursor, limit: 1e3, since: null })
                     return t.dispatch({ method: 'POST', host: e.host, path: e.path, headers: a, params: r, data: i })
                   })
@@ -2764,13 +2764,13 @@
         I = 'X-Idempotence',
         R = 'X-Periscope-User-Agent',
         T = 'X-Attempt',
-        M = ((S = {}), s()(S, R, 'Twitter/m5'), s()(S, T, 1), S)
-      function L() {
+        L = ((S = {}), s()(S, R, 'Twitter/m5'), s()(S, T, 1), S)
+      function M() {
         var e,
           t = Date.now()
         return (
           (x = t <= x ? x + 1 : t),
-          Object.assign({}, M, ((e = {}), s()(e, I, x), s()(e, 'content-type', 'application/json'), e))
+          Object.assign({}, L, ((e = {}), s()(e, I, x), s()(e, 'content-type', 'application/json'), e))
         )
       }
       var D = 'm5-proxsee-login-a2011357b73e',
@@ -3557,7 +3557,7 @@
         }
         return n
       }
-      function M(e) {
+      function L(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
@@ -3572,7 +3572,7 @@
         }
         return e
       }
-      var L = '/chatapi/v1/chatnow',
+      var M = '/chatapi/v1/chatnow',
         D = '/chatapi/v1/history',
         _ = new I.a({ chatmanClient: null })
       function A() {
@@ -3590,7 +3590,7 @@
                 new z(e).connect().then(function (e) {
                   P.a.start(),
                     _.setState(function (t) {
-                      return M(M({}, t), {}, { chatmanClient: e })
+                      return L(L({}, t), {}, { chatmanClient: e })
                     })
                 })
             })(e)
@@ -3652,7 +3652,7 @@
                 key: 'openSocket',
                 value: function () {
                   if (this.session) {
-                    var e = this.session.endpoint.replace('https://', 'wss://') + L
+                    var e = this.session.endpoint.replace('https://', 'wss://') + M
                     this.closeSocket()
                     try {
                       ;(this.socketState = V.Opening),
@@ -4115,7 +4115,7 @@
                 }
                 function i(e) {
                   var t = n[e]
-                  return t || M(E.a.NONE)
+                  return t || L(E.a.NONE)
                 }
                 function o(e) {
                   return u.a.subscribeToScheduledSpace(e).then(function () {
@@ -4133,7 +4133,7 @@
                   if ('number' == typeof t && a.status !== E.a.NONE && !((Date.now() - a.time) / 1e3 > t))
                     return Promise.resolve(a)
                   function o(t) {
-                    var n = M(t, arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {})
+                    var n = L(t, arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {})
                     r(function (t) {
                       var r = Object.assign({}, t[e], n)
                       return (t[e] = r), Object.assign({}, t)
@@ -4252,7 +4252,7 @@
             scribe: z,
             state: function () {
               var e,
-                t = x.a.SpaceMediaStateEnum
+                t = x.a.StateEnum
               return (
                 T.loaded && T.error
                   ? (e = t.unavailable)
@@ -4276,7 +4276,7 @@
           c.useEffect(
             function () {
               var e,
-                t = L
+                t = M
               return (
                 B &&
                   (function n() {
@@ -4313,12 +4313,12 @@
         }
         return { space: P, audioContext: b, utils: H, handlers: N }
       }
-      function M(e) {
+      function L(e) {
         var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
           n = { status: e, time: Date.now() }
         return t.data && (n.data = t.data), t.error && (n.error = t.error), n
       }
-      var L = 15,
+      var M = 15,
         D = { title: k.a.b6d3e0ee, titleFallback: k.a.ab4fc8bb }
     },
     hUaP: function (e, t, n) {
@@ -4394,7 +4394,7 @@
         I = n('A53h'),
         R = n('sTSP'),
         T = n('MWbm')
-      function M(e) {
+      function L(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -4415,10 +4415,10 @@
           return b()(this, n)
         }
       }
-      var L = P.a.b3160a69,
+      var M = P.a.b3160a69,
         D = (function (e) {
           m()(n, e)
-          var t = M(n)
+          var t = L(n)
           function n() {
             var e
             s()(this, n)
@@ -4565,7 +4565,7 @@
                             },
                             O.createElement(x.a, {
                               accessibilityLabel: r,
-                              accessibilityLabelValueText: L({ volumePercent: m }),
+                              accessibilityLabelValueText: M({ volumePercent: m }),
                               color: f || 'white',
                               isVertical: !0,
                               keyboardStep: 10,
@@ -4948,7 +4948,7 @@
           c.createElement(p.a, { style: { height: t } }),
         )
       }
-      var M = l.a.create(function (e) {
+      var L = l.a.create(function (e) {
         return {
           root: { height: '100%', width: '100%', flex: 1 },
           captionsContainer: { maxHeight: '100%', height: '100%' },
@@ -5002,7 +5002,7 @@
           }, []),
           c.createElement(
             p.a,
-            { ref: b, style: M.root },
+            { ref: b, style: L.root },
             c.createElement(I.a, {
               ListFooterComponent: c.createElement(T, { footerHeight: r, unintelligible: d }),
               ListHeaderComponent: c.createElement(R, { headerHeight: s }),
@@ -5044,7 +5044,7 @@
                 )
               },
               scrollEventThrottle: 100,
-              style: [M.captionsContainer, l],
+              style: [L.captionsContainer, l],
             }),
           )
         )
@@ -5274,7 +5274,7 @@
         I = n('5Ixf'),
         R = n('AtEG'),
         T = n('hOZg')
-      function M(e, t) {
+      function L(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -5286,16 +5286,16 @@
         }
         return n
       }
-      function L(e) {
+      function M(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? M(Object(n), !0).forEach(function (t) {
+            ? L(Object(n), !0).forEach(function (t) {
                 a()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : M(Object(n)).forEach(function (t) {
+            : L(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
@@ -5534,8 +5534,8 @@
             }
           }, [])
         var s = e.title || H.untitled,
-          u = L(
-            L({}, e),
+          u = M(
+            M({}, e),
             {},
             {
               title: s,
@@ -5926,7 +5926,7 @@
           m.createElement(
             w.a,
             {
-              childrenStyle: M.carouselChildrenStyles,
+              childrenStyle: L.carouselChildrenStyles,
               key: n,
               onVisibleRangeChange: function (e) {
                 var n = e.index
@@ -5949,34 +5949,34 @@
           r = t.user
         return m.createElement(
           O.a,
-          { key: n.id_str, style: M.sharedContentContainer },
+          { key: n.id_str, style: L.sharedContentContainer },
           m.createElement(P.a, { isCondensed: !0, tweet: n }),
           m.createElement(k.a, {
             avatarSize: 'small',
             name: T.sharedBy({ name: null == r ? void 0 : r.name }),
             nameSize: 'subtext2',
             profileImageUrl: null == r ? void 0 : r.profile_image_url_https,
-            style: M.sharedContentBy,
+            style: L.sharedContentBy,
             weight: 'normal',
           }),
         )
       }
       var R = 8,
         T = { sharedBy: g.a.bdfa93eb },
-        M = j.a.create(function (e) {
+        L = j.a.create(function (e) {
           return {
             sharedContentContainer: { paddingHorizontal: tn(e).container.paddingHorizontal, width: '100%' },
             carouselChildrenStyles: { scrollSnapAlign: 'center', scrollSnapStop: 'always', width: '100%' },
             sharedContentBy: { marginTop: e.spaces.space8 },
           }
         }),
-        L = n('2C8o'),
+        M = n('2C8o'),
         D = n('ndUM'),
         _ = n('vbJ7')
       function A(e) {
         var t = e.audioSpaceId,
           n = e.height,
-          r = L.c()
+          r = M.c()
         return p.n()
           ? m.createElement(
               O.a,
@@ -6457,7 +6457,7 @@
           onClick: t,
           style: [
             Te.dockSheetOverlayBase,
-            e.isSideNavLayout ? Me.dockSheetOverlay : Te.dockSheetOverlay,
+            e.isSideNavLayout ? Le.dockSheetOverlay : Te.dockSheetOverlay,
             {
               opacity: e.animation.animatedPan.interpolate({
                 inputRange: [e.animation.shellHeights.half, e.animation.shellHeights.full],
@@ -6523,7 +6523,7 @@
             pointerEventsNone: { pointerEvents: 'none' },
           }
         }),
-        Me = j.a.create(function (e) {
+        Le = j.a.create(function (e) {
           var t = Object(Ce.b)(e)
           return {
             dockSheetContainer: {
@@ -6545,7 +6545,7 @@
             },
           }
         }),
-        Le = function (e) {
+        Me = function (e) {
           var t = e.audioSpaceId,
             n = e.dockAnimation,
             r = e.isSideNavLayout,
@@ -6569,7 +6569,7 @@
               }
             })(r),
             l = n.shellHeights.sheetMaxHeight,
-            u = r ? Me.contentContainer : Te.contentContainer,
+            u = r ? Le.contentContainer : Te.contentContainer,
             d = m.useMemo(
               function () {
                 switch (c) {
@@ -6601,7 +6601,7 @@
             !d)
           )
             return null
-          var f = r ? Me.dockSheetContainer : Te.dockSheetContainer
+          var f = r ? Le.dockSheetContainer : Te.dockSheetContainer
           return m.createElement(
             je.a.View,
             {
@@ -6906,15 +6906,15 @@
             },
             style: t,
           },
-          m.createElement(Mt, e),
+          m.createElement(Lt, e),
         )
       }
-      function Mt(e) {
+      function Lt(e) {
         return p.m()
           ? m.createElement(Et.a, { audioSpaceId: e.audioSpaceId })
-          : m.createElement(Lt, { audioSpaceId: e.audioSpaceId })
+          : m.createElement(Mt, { audioSpaceId: e.audioSpaceId })
       }
-      function Lt(e) {
+      function Mt(e) {
         var t = m.useContext(ht.a).featureSwitches
         return m.createElement(
           m.Fragment,
@@ -7205,8 +7205,9 @@
                     var n = o(r.current.state),
                       a = null == t ? void 0 : t.vy
                     return new Promise(function (t) {
+                      if (e === p.a.exit) return s(), t()
                       je.a.spring(c, { velocity: a, toValue: n }).start(function () {
-                        e === p.a.collapse ? l() : e === p.a.exit && s(), t()
+                        e === p.a.collapse && l(), t()
                       })
                     })
                   }
@@ -7282,7 +7283,7 @@
                   m.createElement(A, { audioSpaceId: e.audioSpaceId, height: $t }),
                   m.createElement(Tt, { audioSpaceId: e.audioSpaceId, isSideNavLayout: e.isSideNavLayout }),
                 ),
-                m.createElement(Le, {
+                m.createElement(Me, {
                   audioSpaceId: e.audioSpaceId,
                   dockAnimation: i,
                   isSideNavLayout: e.isSideNavLayout,

@@ -6188,7 +6188,7 @@
             googleAnalyticsSendEvent: pt.b,
             scribeAction: pt.c,
             scribePageImpression: pt.d,
-            verifyCredentials: _t.y,
+            verifyCredentials: _t.z,
           }
         }),
         jt = {
@@ -15815,7 +15815,7 @@
           return {
             personalizationPreferences: r.selectPreferences,
             personalizationSettings: r.selectUserPreferences,
-            ssoInitTokens: i.u,
+            ssoInitTokens: i.v,
             userLanguage: i.o,
           }
         })

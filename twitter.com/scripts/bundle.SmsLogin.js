@@ -35,7 +35,7 @@
             var t = v.h(e)
             return t ? Object(O.f)(['screen_name'])(e, t) : S.a.LOADING
           },
-          v.t,
+          v.u,
           S.d,
         ),
         w = Object(_.createSelector)(
@@ -45,7 +45,7 @@
               n = t && O.e.select(e, t)
             return n && n.screen_name
           },
-          v.s,
+          v.t,
           v.h,
           v.r,
           v.g,
@@ -67,7 +67,7 @@
           fetchOneUserIfNeeded: O.e.fetchOneIfNeeded,
           fetchOneFactorLoginEligibility: v.c,
           scribeAction: y.c,
-          setLoginReturnPath: v.x,
+          setLoginReturnPath: v.y,
         },
         R = Object(L.g)(w, P),
         B = n('GOQE'),

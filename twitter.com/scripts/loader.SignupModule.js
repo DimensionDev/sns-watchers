@@ -820,7 +820,7 @@
           return {
             personalizationPreferences: r.selectPreferences,
             personalizationSettings: r.selectUserPreferences,
-            ssoInitTokens: i.u,
+            ssoInitTokens: i.v,
             userLanguage: i.o,
           }
         })

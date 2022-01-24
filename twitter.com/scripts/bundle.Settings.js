@@ -2272,7 +2272,7 @@
         c = n('rxPX'),
         i = Object(c.a)()
           .propsFromState(function () {
-            return { viewerCountry: o.w }
+            return { viewerCountry: o.x }
           })
           .propsFromActions(function () {
             return { scribeAction: a.c }

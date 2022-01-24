@@ -6753,37 +6753,64 @@
             shouldDisplayBorder: Object(T.a)(!1),
           }),
         ),
-        D = function (e) {
+        D =
+          (n('yH/f'),
+          Object.freeze({ Classic: 'Classic', ContextEmphasis: 'ContextEmphasis' }),
+          Object.freeze({ Classic: 'Classic', Footnote: 'Footnote', Button: 'Button' })),
+        L = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(202)]).then(n.bind(null, '3Rb8'))
+              return Promise.all([n.e(0), n.e(202)]).then(n.bind(null, 'RohR'))
             },
             loaderOptions: e,
-            loaderKey: 'defaultModuleFooterLoader',
+            loaderKey: 'buttonFooterLoader',
             strategy: m.a.Critical,
           }
         },
-        L = function (e) {
-          var t = e.isInSidebar
-          return i.e(D({ isInSidebar: t }))
+        M = function (e) {
+          var t,
+            r,
+            a = e.isInSidebar
+          return i.c({
+            selectDisplayType: function (e) {
+              return e.content.displayType
+            },
+            handlers:
+              ((t = {}),
+              o()(
+                t,
+                D.Classic,
+                ((r = { isInSidebar: a }),
+                {
+                  loader: function () {
+                    return Promise.all([n.e(0), n.e(202)]).then(n.bind(null, 'pODo'))
+                  },
+                  loaderOptions: r,
+                  loaderKey: 'defaultModuleFooterLoader',
+                  strategy: m.a.Critical,
+                }),
+              ),
+              o()(t, D.Button, L({ isInSidebar: a })),
+              t),
+          })
         },
-        M = {
+        A = {
           loader: function () {
             return n.e(213).then(n.bind(null, 'oiEo'))
           },
           loaderKey: 'defaultModuleHeaderLoader',
           strategy: m.a.Critical,
         },
-        A = i.e(M),
-        F = {
+        F = i.e(A),
+        B = {
           loader: function () {
             return n.e(205).then(n.bind(null, 'hKgB'))
           },
           loaderKey: 'defaultImpressionPlaceholderLoader',
           strategy: m.a.Critical,
         },
-        B = i.e(F),
-        N = function (e) {
+        N = i.e(B),
+        H = function (e) {
           return {
             loader: function () {
               return n.e(227).then(n.bind(null, 'D9QQ'))
@@ -6793,26 +6820,26 @@
             strategy: m.a.Critical,
           }
         },
-        H = function (e) {
+        U = function (e) {
           var t = e.isInSidebar
-          return i.e(N({ isInSidebar: t }))
+          return i.e(H({ isInSidebar: t }))
         },
-        U = n('m3Bd'),
-        V = n.n(U),
-        z = (n('dlmX'), n('5BYb'), n('2G9S'), n('z84I'), n('RhWx')),
-        W = n.n(z),
-        K = n('VrFO'),
-        G = n.n(K),
-        X = n('Y9Ll'),
-        q = n.n(X),
-        Y =
+        V = n('m3Bd'),
+        z = n.n(V),
+        W = (n('dlmX'), n('5BYb'), n('2G9S'), n('z84I'), n('RhWx')),
+        K = n.n(W),
+        G = n('VrFO'),
+        X = n.n(G),
+        q = n('Y9Ll'),
+        Y = n.n(q),
+        Z =
           (n('Ee2X'),
           n('vrRf'),
           n('SrIh'),
           (function () {
             function e(t) {
               var n, r
-              G()(this, e),
+              X()(this, e),
                 o()(this, 'depth', 1),
                 o()(this, 'isAnchorChild', !1),
                 o()(this, 'hasAnchorChild', !1),
@@ -6831,7 +6858,7 @@
                 (this.isIndented = !(null === (r = t.treeDisplay) || void 0 === r || !r.indentFromParent))
             }
             return (
-              q()(e, [
+              Y()(e, [
                 {
                   key: 'addChild',
                   value: function (e) {
@@ -6861,20 +6888,20 @@
               e
             )
           })()),
-        Z = (function () {
+        Q = (function () {
           function e(t) {
             var n = this,
               r = t.entries,
               i = t.isRootEntryPresent,
               c = t.maxIndent,
               s = t.selectedTweetId
-            G()(this, e),
+            X()(this, e),
               o()(this, '_roots', []),
               (this._lookup = {}),
               (this._maxIndent = c),
               (this._isRootEntryPresent = i),
               r.forEach(function (e, t) {
-                n._lookup[e.entryId] = new Y(e)
+                n._lookup[e.entryId] = new Z(e)
               }),
               r.forEach(function (e, t) {
                 var o = (function (e) {
@@ -6900,7 +6927,7 @@
               })
           }
           return (
-            q()(e, [
+            Y()(e, [
               {
                 key: 'toArray',
                 value: function () {
@@ -6908,8 +6935,8 @@
                     t = []
                   return (
                     this._roots.forEach(function (n) {
-                      return J(n, function (r) {
-                        Q(r, e._isRootEntryPresent ? n : void 0, e._maxIndent),
+                      return $(n, function (r) {
+                        J(r, e._isRootEntryPresent ? n : void 0, e._maxIndent),
                           (r.conversationTreeMetadata.indents.length < e._maxIndent ||
                             (r.conversationTreeMetadata.indents.length === e._maxIndent &&
                               r.parent &&
@@ -6926,7 +6953,7 @@
             e
           )
         })(),
-        Q = function (e, t, n) {
+        J = function (e, t, n) {
           var r = e.entry,
             o = e.parent,
             i = r.treeDisplay
@@ -6939,7 +6966,7 @@
                 u = !0
               u = 'boolean' == typeof s ? s : o === t ? o.hasAnchorChild : o.children.length > 1
               var d = e.conversationTreeMetadata
-              ;(d.indents = W()(o.conversationTreeMetadata.indents)),
+              ;(d.indents = K()(o.conversationTreeMetadata.indents)),
                 u
                   ? (d.indents.push({ parentId: c, displayType: a }), (d.ancestorConnector = 'side'))
                   : (d.ancestorConnector =
@@ -6952,26 +6979,26 @@
             e.isAnchorChild && (p.ancestorConnector = 'top')
           }
         },
-        J = function e(t, n) {
+        $ = function e(t, n) {
           n(t),
             t.children.forEach(function (t) {
               return e(t, n)
             })
         },
-        $ = n('zrc3'),
-        ee = n('RgK2'),
-        te = n.n(ee),
-        ne = function (e, t, n, r) {
+        ee = n('zrc3'),
+        te = n('RgK2'),
+        ne = n.n(te),
+        re = function (e, t, n, r) {
           return {
             type: a.a.ModuleImpressionPlaceholder,
             entryId: 'impressionPlaceholder-'.concat(e),
-            content: te.a,
+            content: ne.a,
             itemMetadata: t,
             sortIndex: n,
             moduleBehavioralEventView: r,
           }
         }
-      function re(e, t) {
+      function oe(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -6983,22 +7010,22 @@
         }
         return n
       }
-      function oe(e) {
+      function ie(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? re(Object(n), !0).forEach(function (t) {
+            ? oe(Object(n), !0).forEach(function (t) {
                 o()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : re(Object(n)).forEach(function (t) {
+            : oe(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var ie = i.f({
+      var ae = i.f({
           splice: function (e) {
             var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
               n = e.content.items,
@@ -7013,14 +7040,14 @@
               }, []),
               u = []
             if (0 === l.length) return u
-            u.push(ne(r, { clientEventInfo: i }, c))
+            u.push(re(r, { clientEventInfo: i }, c))
             var d = l.some(function (e) {
               return e.treeDisplay
             })
-            return u.concat(d ? ce(l, c) : ae(l, s, e))
+            return u.concat(d ? se(l, c) : ce(l, s, e))
           },
         }),
-        ae = function (e, t, n) {
+        ce = function (e, t, n) {
           var r = [],
             o = n.sortIndex
           return (
@@ -7028,25 +7055,25 @@
               var s = 0 === c,
                 l = s ? void 0 : e[c - 1],
                 u = !1
-              l && l.type === a.b.Tweet && i.type === a.b.Tweet && (u = se(l, i, t)) && r.push(pe(n, t, l.content.id))
+              l && l.type === a.b.Tweet && i.type === a.b.Tweet && (u = le(l, i, t)) && r.push(fe(n, t, l.content.id))
               var d = { isStart: s, isEnd: c === e.length - 1, position: 'descendant', showReplyContext: s || u },
                 p =
                   i.type === a.b.Tweet
-                    ? ue({
+                    ? de({
                         item: i,
                         conversationPosition: d,
                         conversationTreeMetadata: void 0,
                         isFirst: s,
                         sortIndex: o,
                       })
-                    : le({ item: i, conversationPosition: d, sortIndex: o })
+                    : ue({ item: i, conversationPosition: d, sortIndex: o })
               r.push(p)
             }),
             r
           )
         },
-        ce = function (e, t) {
-          var n = new Z({
+        se = function (e, t) {
+          var n = new Q({
               entries: e.map(function (e) {
                 return e.treeDisplay && (e.treeDisplay.isAnchorChild = !0), e
               }),
@@ -7060,32 +7087,32 @@
               var i = n.conversationTreeMetadata,
                 c = n.entry,
                 s = 0 === o,
-                l = oe(oe({}, i), {}, { showSmallAvatars: !1 }),
+                l = ie(ie({}, i), {}, { showSmallAvatars: !1 }),
                 u = { isStart: !1, isEnd: o === e.length - 1 },
                 d =
                   c.type === a.b.Tweet
-                    ? ue({ isFirst: s, item: c, conversationPosition: u, conversationTreeMetadata: l, sortIndex: t })
-                    : le({ item: c, conversationPosition: u, conversationTreeMetadata: l, sortIndex: t })
+                    ? de({ isFirst: s, item: c, conversationPosition: u, conversationTreeMetadata: l, sortIndex: t })
+                    : ue({ item: c, conversationPosition: u, conversationTreeMetadata: l, sortIndex: t })
               r.push(d)
             }),
             r
           )
         },
-        se = function (e, t, n) {
-          var r = Object($.a)(n, function (t) {
+        le = function (e, t, n) {
+          var r = Object(ee.a)(n, function (t) {
               return t === e.content.id
             }),
             o = r >= 0 && r < n.length - 1 && n[r + 1]
           return !!o && o !== t.content.id
         },
-        le = function (e) {
+        ue = function (e) {
           var t = e.conversationPosition,
             n = e.conversationTreeMetadata,
             r = e.item,
             o = e.sortIndex
-          return oe(oe({}, r), {}, { conversationPosition: t, conversationTreeMetadata: n, sortIndex: o })
+          return ie(ie({}, r), {}, { conversationPosition: t, conversationTreeMetadata: n, sortIndex: o })
         },
-        ue = function (e) {
+        de = function (e) {
           var t = e.conversationPosition,
             n = e.conversationTreeMetadata,
             r = e.isFirst,
@@ -7093,38 +7120,38 @@
             i = e.sortIndex,
             a = o.content,
             c = a.socialContext,
-            s = V()(a, ['socialContext'])
-          return oe(
-            oe({}, o),
+            s = z()(a, ['socialContext'])
+          return ie(
+            ie({}, o),
             {},
             {
               conversationPosition: t,
               conversationTreeMetadata: n,
-              content: oe(oe({}, s), c && r ? { socialContext: c } : null),
+              content: ie(ie({}, s), c && r ? { socialContext: c } : null),
               sortIndex: i,
             },
           )
         },
-        de = {},
-        pe = function (e, t, n) {
+        pe = {},
+        fe = function (e, t, n) {
           return {
             entryId: ''.concat(e.entryId, '-gap-').concat(n),
             type: a.a.ConversationModuleGap,
             content: { allTweetIds: t, focalTweetId: n },
-            itemMetadata: de,
+            itemMetadata: pe,
             sortIndex: e.sortIndex,
           }
         },
-        fe = ie,
-        he = {
+        he = ae,
+        me = {
           loader: function () {
             return n.e(234).then(n.bind(null, 'VzRj'))
           },
           loaderKey: 'defaultVerticalGridListLoader',
           strategy: m.a.Critical,
         },
-        me = i.e(he),
-        ve =
+        ve = i.e(me),
+        ye =
           (n('M+/F'),
           function (e, t, n, r, o) {
             return {
@@ -7136,7 +7163,7 @@
               moduleBehavioralEventView: o,
             }
           }),
-        ye = function (e, t, n, r, o) {
+        be = function (e, t, n, r, o) {
           return {
             type: a.a.ModuleVerticalGridList,
             sortIndex: t,
@@ -7146,7 +7173,7 @@
             moduleBehavioralEventView: o,
           }
         },
-        be = function (e, t, n, r, o, i, c, s, l) {
+        ge = function (e, t, n, r, o, i, c, s, l) {
           return {
             type: a.a.ModuleVerticalGridTimelineRow,
             entryId: 'verticalGridRow-'.concat(s, '-').concat(e),
@@ -7163,7 +7190,7 @@
             moduleBehavioralEventView: o,
           }
         },
-        ge = function (e) {
+        _e = function (e) {
           var t = e.isWide
           return i.f({
             splice: function (e) {
@@ -7183,7 +7210,7 @@
                   viewType: o,
                   entityToken: null === (n = f.clientEventInfo) || void 0 === n ? void 0 : n.entityToken,
                 }
-              m.push(ne(p, e.itemMetadata, h, v)), a && m.push(l(p, a, e, h, v))
+              m.push(re(p, e.itemMetadata, h, v)), a && m.push(l(p, a, e, h, v))
               for (
                 var y = t ? 3 : 2, b = u || (null == d ? void 0 : d.initialItemsCount) || c.length, g = '', _ = 0;
                 _ < b;
@@ -7191,27 +7218,27 @@
               )
                 g += 'verticalGridItem-'.concat(_, '-').concat(p, ' ')
               var w = !!d && b < c.length
-              m.push(ye(p, h, g, f, v))
+              m.push(be(p, h, g, f, v))
               for (var O = 0; O < b; O += y) {
                 var E = O / y,
                   C = c.slice(O, Math.min(b, O + y)),
                   P = w && O + y >= b
-                m.push(be(p, f, C, h, v, null == d ? void 0 : d.entryToFocus, y, E, P))
+                m.push(ge(p, f, C, h, v, null == d ? void 0 : d.entryToFocus, y, E, P))
               }
-              return d && w && m.push(ve(p, d, e, h, v)), i && m.push(s(p, i, e.itemMetadata, h, v)), m
+              return d && w && m.push(ye(p, d, e, h, v)), i && m.push(s(p, i, e.itemMetadata, h, v)), m
             },
             divider: { top: !0, bottom: !0 },
           })
         },
-        _e = {
+        we = {
           loader: function () {
             return n.e(235).then(n.bind(null, 'JKhl'))
           },
           loaderKey: 'defaultVerticalGridRowLoader',
           strategy: m.a.Critical,
         },
-        we = i.e(_e)
-      function Oe(e, t) {
+        Oe = i.e(we)
+      function Ee(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -7223,22 +7250,22 @@
         }
         return n
       }
-      function Ee(e) {
+      function Ce(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Oe(Object(n), !0).forEach(function (t) {
+            ? Ee(Object(n), !0).forEach(function (t) {
                 o()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : Oe(Object(n)).forEach(function (t) {
+            : Ee(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var Ce = i.f({
+      var Pe = i.f({
         splice: function (e) {
           var t,
             n = e.content,
@@ -7252,13 +7279,13 @@
             p = [],
             f = { viewType: r, entityToken: null === (t = u.clientEventInfo) || void 0 === t ? void 0 : t.entityToken }
           return (
-            p.push(ne(c, e.itemMetadata, d, f)),
+            p.push(re(c, e.itemMetadata, d, f)),
             i && p.push(l(c, i, e, d, f)),
             p.push.apply(
               p,
-              W()(
+              K()(
                 a.map(function (e) {
-                  return Ee(Ee({}, e), {}, { sortIndex: d, moduleBehavioralEventView: f })
+                  return Ce(Ce({}, e), {}, { sortIndex: d, moduleBehavioralEventView: f })
                 }),
               ),
             ),
@@ -7268,7 +7295,7 @@
         },
         divider: { top: !0, bottom: !0 },
       })
-      function Pe(e, t) {
+      function ke(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -7280,22 +7307,22 @@
         }
         return n
       }
-      function ke(e) {
+      function Se(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Pe(Object(n), !0).forEach(function (t) {
+            ? ke(Object(n), !0).forEach(function (t) {
                 o()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : Pe(Object(n)).forEach(function (t) {
+            : ke(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var Se = function (e) {
+      var Te = function (e) {
         var t = e.customHandlers,
           n = e.customSelectDisplayType,
           r = e.isWide
@@ -7305,16 +7332,16 @@
             function (e) {
               return e.content.displayType
             },
-          handlers: ke(
-            ke({}, t),
+          handlers: Se(
+            Se({}, t),
             {},
             {
               Carousel: h(y.a.Carousel),
               GridCarousel: h(y.a.GridCarousel),
               PagedCarousel: h(y.a.PagedCarousel),
-              Vertical: Ce,
-              VerticalConversation: fe,
-              VerticalGrid: ge({ isWide: r }),
+              Vertical: Pe,
+              VerticalConversation: he,
+              VerticalGrid: _e({ isWide: r }),
             },
           ),
         })
@@ -7330,15 +7357,15 @@
           l = void 0 !== s && s
         return (
           (e = {}),
-          o()(e, a.b.TimelineModule, Se({ customHandlers: n, customSelectDisplayType: r, isWide: l })),
-          o()(e, a.a.ModuleImpressionPlaceholder, B),
-          o()(e, a.a.ModuleHeader, A),
-          o()(e, a.a.ModuleFooter, L({ isInSidebar: c })),
-          o()(e, a.a.ModuleShowMore, H({ isInSidebar: c })),
+          o()(e, a.b.TimelineModule, Te({ customHandlers: n, customSelectDisplayType: r, isWide: l })),
+          o()(e, a.a.ModuleImpressionPlaceholder, N),
+          o()(e, a.a.ModuleHeader, F),
+          o()(e, a.a.ModuleFooter, M({ isInSidebar: c })),
+          o()(e, a.a.ModuleShowMore, U({ isInSidebar: c })),
           o()(e, a.a.ConversationModuleGap, R),
           o()(e, a.a.ModuleCarouselTimeline, b),
-          o()(e, a.a.ModuleVerticalGridList, me),
-          o()(e, a.a.ModuleVerticalGridTimelineRow, we),
+          o()(e, a.a.ModuleVerticalGridList, ve),
+          o()(e, a.a.ModuleVerticalGridTimelineRow, Oe),
           e
         )
       }
@@ -30468,7 +30495,7 @@
                       formattedPreviousPrice: h ? S(h) : void 0,
                       formattedPrice: T(f, r),
                       formattedTitle: s,
-                      image: d.original_img_url,
+                      image: 'ApiImage' === d.__typename ? d.original_img_url : '',
                       url: i.url,
                     }
                   })(o)
@@ -59692,7 +59719,7 @@
               tweet: L.a.createHydratedTweetSelector(X),
               urtAdvertiser: ee,
               urtPromotedContent: $,
-              userCountry: k.w,
+              userCountry: k.x,
               userLanguage: k.o,
             }
           })

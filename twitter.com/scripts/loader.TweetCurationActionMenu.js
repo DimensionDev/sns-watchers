@@ -291,7 +291,7 @@
         $ = Object(V.a)()
           .propsFromState(function () {
             return {
-              userCountry: J.w,
+              userCountry: J.x,
               userLanguage: J.o,
               shouldShowMuteEducationTip: q,
               shouldShowHideReplyTip: Y,

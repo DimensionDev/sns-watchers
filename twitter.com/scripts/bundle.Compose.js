@@ -8045,7 +8045,7 @@
               lastSearchFetchStatus: w.g,
               position: _.d,
               taggedLocation: E.q,
-              userCountry: T.w,
+              userCountry: T.x,
             }
           })
           .propsFromActions(function () {
