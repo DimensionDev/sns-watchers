@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [74, 170, 184],
+  [73, 169, 183],
   {
     '0+0m': function (e, t, n) {
       'use strict'
@@ -4899,9 +4899,9 @@
           return {
             buttonRightAligned: { marginHorizontal: '-'.concat(e.spaces.space8), marginVertical: 0 },
             containerRightAlignedButton: { marginLeft: e.spaces.space20 },
-            headerImageFullWidth: { marginHorizontal: '-'.concat(e.spaces.space32) },
             secondaryTextRightAlignedButton: { flexBasis: 0, flexGrow: 1 },
             subHeaderRightAlignedButton: { flexDirection: 'row', flexWrap: 'wrap' },
+            headerImageContainer: { alignItems: 'center' },
           }
         }),
         ce = function (e) {
@@ -4911,34 +4911,49 @@
             o,
             i,
             s,
-            c = e.header,
-            l = e.onNavigate,
-            u = e.primaryTextProp,
-            d = e.primaryTextSize,
-            p = e.secondaryTextProp,
-            f = e.subtaskInputs,
-            h = e.userInfo,
-            b = e.withHeaderImage,
-            m =
-              (null == c ? void 0 : c.header_button) &&
+            c,
+            l,
+            u,
+            d = e.header,
+            p = e.onNavigate,
+            f = e.primaryTextProp,
+            h = e.primaryTextSize,
+            b = e.secondaryTextProp,
+            m = e.subtaskInputs,
+            v = e.userInfo,
+            _ = e.withHeaderImage,
+            w =
+              (null == d ? void 0 : d.header_button) &&
               !(
-                !(t = c.header_button).icon ||
+                !(t = d.header_button).icon ||
                 t.style !== k.c.Text ||
                 (null !== (n = t.navigation_link) && void 0 !== n && n.label)
               )
           return (
-            c ? ((i = c.user), (s = c.header_image), (r = c.primary_text), (o = c.secondary_text)) : ((r = u), (o = p)),
+            d
+              ? ((i = d.user),
+                (s = d.header_image),
+                (r = d.primary_text),
+                (o = d.secondary_text),
+                (c = 10 * $.a.theme.lineHeightsPx.body),
+                (l = s ? (c * s.image.image_info.width) / s.image.image_info.height : 'initial'),
+                (u = _ && s && 'icon' === s.image_type))
+              : ((r = f), (o = b)),
             y.createElement(
               J.a,
-              null,
-              b && s
+              { style: u ? se.headerImageContainer : void 0 },
+              _ && s
                 ? y.createElement(
                     J.a,
                     {
-                      style:
-                        'full_width' === s.image_type || 'full_bleed_top' === s.image_type
-                          ? se.headerImageFullWidth
-                          : void 0,
+                      style: {
+                        marginHorizontal:
+                          'full_width' === s.image_type || 'full_bleed_top' === s.image_type
+                            ? '-'.concat($.a.theme.spaces.space32)
+                            : 'initial',
+                        height: u ? c : 'initial',
+                        width: u ? l : 'initial',
+                      },
                     },
                     y.createElement(ae.a, {
                       accessibilityLabel: s.image.image_info.alt_text || '',
@@ -4952,38 +4967,38 @@
                     Z,
                     a()({}, r, {
                       nativeID: g.b,
-                      onNavigate: l,
-                      size: null != d ? d : 'title4',
+                      onNavigate: p,
+                      size: null != h ? h : 'title4',
                       style: ne.headline,
-                      subtaskInputs: f,
+                      subtaskInputs: m,
                       weight: 'bold',
                     }),
                   )
                 : null,
               y.createElement(
                 J.a,
-                { style: [ne.subHeader, m && se.subHeaderRightAlignedButton] },
+                { style: [ne.subHeader, w && se.subHeaderRightAlignedButton] },
                 y.createElement(
                   J.a,
-                  { style: m && se.secondaryTextRightAlignedButton },
-                  o ? y.createElement(Z, a()({}, o, { color: 'gray700', onNavigate: l, subtaskInputs: f })) : null,
+                  { style: w && se.secondaryTextRightAlignedButton },
+                  o ? y.createElement(Z, a()({}, o, { color: 'gray700', onNavigate: p, subtaskInputs: m })) : null,
                 ),
-                null != c && c.header_button
+                null != d && d.header_button
                   ? y.createElement(
                       J.a,
-                      { style: m && se.containerRightAlignedButton },
+                      { style: w && se.containerRightAlignedButton },
                       y.createElement(re, {
-                        button: c.header_button,
-                        onNavigate: l,
-                        style: m && se.buttonRightAligned,
-                        subtaskInputs: f,
+                        button: d.header_button,
+                        onNavigate: p,
+                        style: w && se.buttonRightAligned,
+                        subtaskInputs: m,
                       }),
                     )
                   : null,
               ),
               i
-                ? null != h
-                  ? h
+                ? null != v
+                  ? v
                   : y.createElement(ie.a, {
                       avatarUri: i.profile_image_url_https,
                       displayMode: 'UserCompact',
@@ -12462,7 +12477,7 @@
           }
         }),
         Mi = function () {
-          return n.e(339).then(n.t.bind(null, '0FX9', 7))
+          return n.e(338).then(n.t.bind(null, '0FX9', 7))
         }
       function Vi(e) {
         var t = e.errorDialog,

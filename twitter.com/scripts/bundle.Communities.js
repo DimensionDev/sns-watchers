@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [41],
+  [40],
   {
     '1tGk': function (e, t, n) {
       'use strict'
@@ -1214,7 +1214,7 @@
         m = n('0KEI'),
         d = function (e, t) {
           var n = t.match.params.communityId
-          return n ? u.b.select(e, n) : void 0
+          return n ? u.c.select(e, n) : void 0
         },
         p = Object(s.a)()
           .propsFromState(function () {
@@ -1225,7 +1225,7 @@
               createLocalApiErrorHandler: Object(m.createLocalApiErrorHandlerWithContextFactory)(
                 'COMMUNITY_INVITE_SCREEN',
               ),
-              fetchCommunityIfNeeded: u.b.fetchOneIfNeeded,
+              fetchCommunityIfNeeded: u.c.fetchOneIfNeeded,
             }
           })
           .withAnalytics({ page: 'community', section: 'invite' }),
@@ -1940,10 +1940,10 @@
               r = t.match.params.tweetId,
               a = r ? d.a.selectHydrated(e, r) : void 0,
               o = null == a || null === (n = a.community_relationship) || void 0 === n ? void 0 : n.community
-            return o ? m.b.select(e, o) : void 0
+            return o ? m.c.select(e, o) : void 0
           }
           var i = t.match.params.communityId
-          return i ? m.b.select(e, i) : void 0
+          return i ? m.c.select(e, i) : void 0
         },
         v = function (e, t) {
           if (h(0, t) === V.HiddenTweet) {
@@ -1951,14 +1951,14 @@
             return n ? d.a.selectFetchStatus(e, n) : void 0
           }
           var r = t.match.params.communityId
-          return r ? m.b.selectFetchStatus(e, r) : void 0
+          return r ? m.c.selectFetchStatus(e, r) : void 0
         },
         g = Object(f.a)()
           .propsFromState(function () {
             return { community: b, fetchStatus: v, loggedInUser: p.e.selectLoggedInUser, tweet: y, type: h }
           })
           .propsFromActions(function () {
-            return { fetchCommunity: m.b.fetchOne, fetchTweet: d.a.fetchOne }
+            return { fetchCommunity: m.c.fetchOne, fetchTweet: d.a.fetchOne }
           })
           .withAnalytics({ page: 'community', section: 'moderation', component: 'feedback' }),
         E = (n('ho0z'), n('PKbs')),
@@ -2609,7 +2609,7 @@
               createLocalApiErrorHandler: Object(y.createLocalApiErrorHandlerWithContextFactory)(
                 'COMMUNITY_RULES_SCREEN',
               ),
-              fetchCommunityIfNeeded: p.b.fetchOneIfNeeded,
+              fetchCommunityIfNeeded: p.c.fetchOneIfNeeded,
             }
           })
           .withAnalytics({ page: 'community', section: 'rules' }),
@@ -2734,7 +2734,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return n.e(194).then(n.bind(null, 'V5fj'))
+              return n.e(193).then(n.bind(null, 'V5fj'))
             },
             loaderKey: 'communityDefaultLoader',
             strategy: n('XBtf').a.Critical,
@@ -3433,7 +3433,7 @@
         v = Object(l.a)()
           .propsFromActions(function () {
             return {
-              reorderRules: h.b.reorderRules,
+              reorderRules: h.c.reorderRules,
               createLocalApiErrorHandler: Object(b.createLocalApiErrorHandlerWithContextFactory)(
                 'COMMUNITY_TOOLS_REORDER_RULES_SCREEN',
               ),
@@ -4677,7 +4677,7 @@
           return t.communityId
         },
         on = function (e, t) {
-          var n = tn.b.select(e, t.communityId)
+          var n = tn.c.select(e, t.communityId)
           return Object(R.f)(null == n ? void 0 : n.role)
         },
         cn = Object(S.a)()
@@ -4795,7 +4795,7 @@
           .propsFromActions(function () {
             return {
               createLocalApiErrorHandler: Object(Oe.createLocalApiErrorHandlerWithContextFactory)('COMMUNITIES_SCREEN'),
-              fetchCommunityIfNeeded: tn.b.fetchOneIfNeeded,
+              fetchCommunityIfNeeded: tn.c.fetchOneIfNeeded,
               fetchCommunityMemberships: En.a,
             }
           })
@@ -5213,7 +5213,7 @@
             return { communitiesActions: s.f }
           })
           .propsFromActions(function () {
-            return { createCommunity: u.b.create }
+            return { createCommunity: u.b }
           }),
         p = n('jHSc'),
         f = n('3XMw'),
@@ -5384,7 +5384,7 @@
         f = function (e, t) {
           var n = t.tweetId,
             r = n && u.a.select(e, n)
-          return r ? Object(s.f)(e, r) : void 0
+          return r ? Object(s.g)(e, r) : void 0
         },
         y = Object(m.a)()
           .propsFromState(function () {
@@ -5395,7 +5395,7 @@
               createLocalApiErrorHandler: Object(d.createLocalApiErrorHandlerWithContextFactory)(
                 'QUOTE_TWEET_CONTAINER',
               ),
-              fetchCommunityIfNeeded: s.b.fetchOneIfNeeded,
+              fetchCommunityIfNeeded: s.c.fetchOneIfNeeded,
             }
           }),
         h = n('YeIG'),
@@ -5939,7 +5939,7 @@
     krnS: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return b
+        return h
       })
       var r = n('ERkP'),
         a = n('WpDa'),
@@ -5948,15 +5948,14 @@
         c = n('3XMw'),
         l = n.n(c),
         u = n('oQhu'),
-        s = n('yoO3'),
-        m = n('fTQJ'),
-        d = l.a.cdd87523,
-        p = l.a.cca5191f,
-        f = l.a.e442bbb4,
-        y = l.a.e9488b0d,
-        h = l.a.j43fea20,
-        b = { Moderators: 'Moderators', Members: 'Members' },
-        v = Object(u.a)(function (e) {
+        s = n('fTQJ'),
+        m = l.a.cdd87523,
+        d = l.a.cca5191f,
+        p = l.a.e442bbb4,
+        f = l.a.e9488b0d,
+        y = l.a.j43fea20,
+        h = { Moderators: 'Moderators', Members: 'Members' },
+        b = Object(u.a)(function (e) {
           return (function (e) {
             return Object(o.a)({
               timelineId: 'communityMembers-'.concat(e),
@@ -5974,7 +5973,7 @@
             })
           })(e)
         }),
-        g = Object(u.a)(function (e) {
+        v = Object(u.a)(function (e) {
           return (function (e) {
             return Object(o.a)({
               timelineId: 'communityModerators-'.concat(e),
@@ -5992,20 +5991,15 @@
             })
           })(e)
         }),
-        E = function () {
-          return r.createElement(i.a, { header: d, message: p })
+        g = function () {
+          return r.createElement(i.a, { header: m, message: d })
         }
       t.b = function (e) {
         var t = e.communityId,
-          n = e.mode === b.Moderators,
-          a = n ? g(t) : v(t),
-          o = n ? y : h,
-          i = n ? 'moderator' : 'member'
-        return r.createElement(
-          s.a,
-          { behavioralEventViewType: i },
-          r.createElement(m.a, { loadingAccessibilityLabel: o, module: a, renderEmptyState: E, title: f }),
-        )
+          n = e.mode === h.Moderators,
+          a = n ? v(t) : b(t),
+          o = n ? f : y
+        return r.createElement(s.a, { loadingAccessibilityLabel: o, module: a, renderEmptyState: g, title: p })
       }
     },
     l3Hs: function (e, t, n) {
@@ -6191,7 +6185,7 @@
               createLocalApiErrorHandler: Object(p.createLocalApiErrorHandlerWithContextFactory)(
                 'COMMUNITY_MODERATION',
               ),
-              fetchCommunityIfNeeded: m.b.fetchOneIfNeeded,
+              fetchCommunityIfNeeded: m.c.fetchOneIfNeeded,
             }
           })
           .withAnalytics({ page: 'communities', section: 'moderation' }),
@@ -6966,8 +6960,8 @@
               addRuleInformEducationFlag: function () {
                 return Object(l.v)(l.h)
               },
-              editRule: c.b.editRule,
-              removeRule: c.b.removeRule,
+              editRule: c.c.editRule,
+              removeRule: c.c.removeRule,
               createLocalApiErrorHandler: Object(s.createLocalApiErrorHandlerWithContextFactory)(
                 'COMMUNITY_TOOLS_EDIT_RULE_SCREEN',
               ),
@@ -7366,7 +7360,7 @@
               addRuleInformEducationFlag: function () {
                 return Object(l.v)(l.h)
               },
-              createRule: c.b.createRule,
+              createRule: c.c.createRule,
               createLocalApiErrorHandler: Object(s.createLocalApiErrorHandlerWithContextFactory)(
                 'COMMUNITY_TOOLS_ADD_RULE_SCREEN',
               ),
@@ -7516,7 +7510,7 @@
                 'COMMUNITY_RULES_SCREEN',
               ),
               join: u.b,
-              fetchCommunityIfNeeded: l.b.fetchOneIfNeeded,
+              fetchCommunityIfNeeded: l.c.fetchOneIfNeeded,
             }
           })
           .withAnalytics({ page: 'community', section: 'rules', component: 'modal' }),
@@ -7750,7 +7744,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'CommunityPeopleScreen', function () {
-          return B
+          return N
         })
       n('OZaJ')
       var r = n('VrFO'),
@@ -7784,7 +7778,7 @@
               createLocalApiErrorHandler: Object(_.createLocalApiErrorHandlerWithContextFactory)(
                 'COMMUNITIES_MEMBERS_SCREEN_CONTEXT',
               ),
-              fetchCommunityIfNeeded: w.b.fetchOneIfNeeded,
+              fetchCommunityIfNeeded: w.c.fetchOneIfNeeded,
             }
           })
           .withAnalytics({ page: 'community', section: 'people' }),
@@ -7821,7 +7815,8 @@
         D = P.a.dc6ce7b4,
         F = P.a.f8321d82,
         H = P.a.ga2aa43c,
-        B = (function (e) {
+        B = 'moderators',
+        N = (function (e) {
           s()(n, e)
           var t = A(n)
           function n() {
@@ -7856,12 +7851,20 @@
                       b.createElement(
                         x.c,
                         { exact: !0, path: '/i/communities/'.concat(t, '/members') },
-                        b.createElement(T.b, { communityId: t, mode: T.a.Members }),
+                        b.createElement(
+                          v.a,
+                          { viewType: 'all' },
+                          b.createElement(T.b, { communityId: t, mode: T.a.Members }),
+                        ),
                       ),
                       b.createElement(
                         x.c,
                         { exact: !0, path: '/i/communities/'.concat(t, '/moderators') },
-                        b.createElement(T.b, { communityId: t, mode: T.a.Moderators }),
+                        b.createElement(
+                          v.a,
+                          { viewType: B },
+                          b.createElement(T.b, { communityId: t, mode: T.a.Moderators }),
+                        ),
                       ),
                     )
                   : null
@@ -7922,9 +7925,9 @@
             n
           )
         })(b.Component)
-      h()(B, 'contextType', k.a)
-      var N = S(B)
-      t.default = N
+      h()(N, 'contextType', k.a)
+      var z = S(N)
+      t.default = z
     },
     u0MR: function (e, t, n) {
       'use strict'
@@ -8104,7 +8107,7 @@
         Z = n('o3oN'),
         q = function (e) {
           var t = Object(Z.c)(e)
-          return Q.b.selectMany(e, t)
+          return Q.c.selectMany(e, t)
         },
         J = Object(_.a)()
           .propsFromState(function () {
@@ -8897,7 +8900,7 @@
         E = n('rxPX'),
         O = function (e, t) {
           var n = t.communityId
-          return n ? g.b.select(e, n) : void 0
+          return n ? g.c.select(e, n) : void 0
         },
         w = Object(E.a)().propsFromState(function () {
           return { community: O }
@@ -9136,9 +9139,9 @@
           .propsFromActions(function () {
             return {
               addLocalMediaId: p.a,
-              removeLocalMediaId: p.d,
-              editCommunityBanner: p.c,
-              removeBanner: p.b.removeBannerMedia,
+              removeLocalMediaId: p.e,
+              editCommunityBanner: p.d,
+              removeBanner: p.c.removeBannerMedia,
               createLocalApiErrorHandler: Object(f.createLocalApiErrorHandlerWithContextFactory)(
                 'COMMUNITY_TOOLS_EDIT_BANNER',
               ),
@@ -9151,7 +9154,7 @@
         O = (n('JtPf'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP'), n('zb92')),
         w = Object(O.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(4), n.e(5), n.e(170)]).then(n.bind(null, 'P68U'))
+            return Promise.all([n.e(0), n.e(4), n.e(5), n.e(169)]).then(n.bind(null, 'P68U'))
           },
         }),
         C = n('eyty'),
@@ -9331,7 +9334,7 @@
         V = Object(o.a)()
           .propsFromActions(function () {
             return {
-              editAccess: p.b.editAccess,
+              editAccess: p.c.editAccess,
               createLocalApiErrorHandler: Object(f.createLocalApiErrorHandlerWithContextFactory)(
                 'COMMUNITY_TOOLS_EDIT_ACCESS_SCREEN',
               ),
@@ -9575,7 +9578,7 @@
         Pe = Object(o.a)()
           .propsFromActions(function () {
             return {
-              editName: p.b.editName,
+              editName: p.c.editName,
               createLocalApiErrorHandler: Object(f.createLocalApiErrorHandlerWithContextFactory)(
                 'COMMUNITY_TOOLS_EDIT_NAME_SCREEN',
               ),
@@ -9653,7 +9656,7 @@
         De = Object(o.a)()
           .propsFromActions(function () {
             return {
-              editPurpose: p.b.editPurpose,
+              editPurpose: p.c.editPurpose,
               createLocalApiErrorHandler: Object(f.createLocalApiErrorHandlerWithContextFactory)(
                 'COMMUNITY_TOOLS_EDIT_PURPOSE_SCREEN',
               ),
@@ -9867,7 +9870,7 @@
         u = Object(c.a)()
           .propsFromActions(function () {
             return {
-              editTheme: i.b.editTheme,
+              editTheme: i.c.editTheme,
               createLocalApiErrorHandler: Object(l.createLocalApiErrorHandlerWithContextFactory)(
                 'COMMUNITY_TOOLS_EDIT_THEME_SCREEN',
               ),

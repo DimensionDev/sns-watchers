@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [217],
+  [216],
   {
     'X3+4': function (e, t, r) {
       'use strict'
@@ -25,27 +25,27 @@
         b = function (e, t) {
           return t.tweetId
         },
-        f = function (e, t) {
+        m = function (e, t) {
           var r = t.tweetId,
             n = r && l.a.select(e, r)
-          return n ? Object(u.f)(e, n) : void 0
+          return n ? Object(u.g)(e, n) : void 0
         },
-        m = Object(d.a)()
+        f = Object(d.a)()
           .propsFromState(function () {
-            return { community: f, hydratedTweet: l.a.createHydratedTweetSelector(b) }
+            return { community: m, hydratedTweet: l.a.createHydratedTweetSelector(b) }
           })
           .propsFromActions(function () {
             return {
               createLocalApiErrorHandler: Object(p.createLocalApiErrorHandlerWithContextFactory)(
                 'QUOTE_TWEET_CONTAINER',
               ),
-              fetchCommunityIfNeeded: u.b.fetchOneIfNeeded,
+              fetchCommunityIfNeeded: u.c.fetchOneIfNeeded,
             }
           }),
         w = r('YeIG'),
         h = r('uCxL'),
         C = r('x5Pi'),
-        y = m(function (e) {
+        y = f(function (e) {
           var t = e.community,
             r = e.createLocalApiErrorHandler,
             n = e.fetchCommunityIfNeeded,
@@ -69,15 +69,15 @@
             },
             [t, b, r, n],
           )
-          var f = d.isTrue('responsive_web_alt_text_badge_enabled'),
-            m = a && Object(C.f)(a, p, t),
-            y = m && Object(C.e)(m),
+          var m = d.isTrue('responsive_web_alt_text_badge_enabled'),
+            f = a && Object(C.f)(a, p, t),
+            y = f && Object(C.e)(f),
             E = d.isTrue('responsive_web_reactions_enabled')
           return s.createElement(
             h.a,
             o()({}, l, {
               loggedInUserId: p,
-              shouldShowAltLabelAlways: f,
+              shouldShowAltLabelAlways: m,
               socialContextProps: y,
               tweet: a,
               withReactions: E,
@@ -119,13 +119,13 @@
             d = e.showMoreText,
             p = o.useRef(),
             b = Object(c.b)(),
-            f = function (e) {
+            m = function (e) {
               return function (t) {
                 var r
                 b.scribeAction('show_more'), u(), null === (r = p.current) || void 0 === r || r.blur(), e(t)
               }
             },
-            m = function (e) {
+            f = function (e) {
               return function (t) {
                 var n, o
                 b.scribeAction('show_less'),
@@ -149,12 +149,12 @@
                 { style: l.buttonsContainer },
                 o.createElement(
                   i.a,
-                  { onPress: m(r), size: 'medium', style: [l.button, l.leftControl], type: 'primaryOutlined' },
+                  { onPress: f(r), size: 'medium', style: [l.button, l.leftControl], type: 'primaryOutlined' },
                   n,
                 ),
                 o.createElement(
                   i.a,
-                  { onPress: f(r), ref: p, size: 'medium', style: [l.button, l.rightControl], type: 'primaryFilled' },
+                  { onPress: m(r), ref: p, size: 'medium', style: [l.button, l.rightControl], type: 'primaryFilled' },
                   d,
                 ),
               ),
@@ -164,8 +164,8 @@
         d = r('VPAj'),
         p = r('EIk2'),
         b = r('b5s6'),
-        f = r('zh9S'),
-        m = r('Rp9C'),
+        m = r('zh9S'),
+        f = r('Rp9C'),
         w = r('pbku'),
         h = r('XOJV'),
         C = r('0KEI'),
@@ -183,7 +183,7 @@
                 'PAGED_CAROUSEL_FEEDBACK_ITEM',
               ),
               processCallback: p.a,
-              scribe: f.c,
+              scribe: m.c,
             }
           },
           selectData: function (e) {
@@ -217,7 +217,7 @@
             }
           },
           getScribeDataItem: function (e) {
-            return m.a.getPagedCarouselTweetURTEntryItem(e)
+            return f.a.getPagedCarouselTweetURTEntryItem(e)
           },
           shouldDisplayBorder: Object(d.a)(!1),
           isFocusable: Object(d.a)(!0),

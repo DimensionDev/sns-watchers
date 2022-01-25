@@ -9551,7 +9551,7 @@
         h = function (t, e) {
           var r = e.tweetId,
             n = r && c.a.select(t, r)
-          return n ? Object(l.f)(t, n) : void 0
+          return n ? Object(l.g)(t, n) : void 0
         },
         g = Object(f.a)()
           .propsFromState(function () {
@@ -9562,7 +9562,7 @@
               createLocalApiErrorHandler: Object(p.createLocalApiErrorHandlerWithContextFactory)(
                 'QUOTE_TWEET_CONTAINER',
               ),
-              fetchCommunityIfNeeded: l.b.fetchOneIfNeeded,
+              fetchCommunityIfNeeded: l.c.fetchOneIfNeeded,
             }
           }),
         y = r('YeIG'),
@@ -10890,7 +10890,7 @@
         l = Object(a.a)({
           loader: function () {
             return c.a.emoji.then(function () {
-              return Promise.all([r.e(0), r.e(14), r.e(200)]).then(r.bind(null, '5RdJ'))
+              return Promise.all([r.e(0), r.e(14), r.e(199)]).then(r.bind(null, '5RdJ'))
             })
           },
           renderPlaceholder: function (t, e) {

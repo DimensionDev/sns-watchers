@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [231],
+  [230],
   {
     '+92Z': function (e, t, n) {
       'use strict'
@@ -18,8 +18,8 @@
         m = n('aX4+'),
         f = n('caTy'),
         b = n('cFuS'),
-        h = n('zh9S'),
-        g = n('Rp9C'),
+        g = n('zh9S'),
+        h = n('Rp9C'),
         y = (n('OZaJ'), n('VrFO')),
         E = n.n(y),
         v = n('Y9Ll'),
@@ -30,17 +30,17 @@
         C = n.n(O),
         M = n('AuHH'),
         k = n.n(M),
-        A = (n('WNMA'), n('KqXw'), n('MvUL'), n('hBvt'), n('aTAq')),
-        _ = n('b5s6'),
-        j = n('i7AQ'),
-        R = 'metadata',
-        x = 'trend',
-        P = n('MWbm'),
-        D = n('hxu0'),
-        F = n('PbQQ'),
-        L = n('htQn'),
-        S = n('pjBI'),
-        H = n('t62R'),
+        _ = (n('WNMA'), n('KqXw'), n('MvUL'), n('hBvt'), n('aTAq')),
+        A = n('b5s6'),
+        j = 'metadata',
+        R = 'trend',
+        x = n('MWbm'),
+        P = n('hxu0'),
+        D = n('PbQQ'),
+        F = n('htQn'),
+        L = n('pjBI'),
+        S = n('t62R'),
+        H = n('tg+X'),
         N = n('e5HP'),
         z = n('rHpw')
       function U(e) {
@@ -70,7 +70,7 @@
           var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0
           return e.replace('#', '').charAt(t).match(B) ? 'rtl' : 'ltr'
         },
-        Y = (function (e) {
+        X = (function (e) {
           w()(n, e)
           var t = U(n)
           function n() {
@@ -96,38 +96,38 @@
                     m = t.trendFeedbackMenu,
                     f = W(l),
                     b = d && ('string' == typeof d ? { pathname: d } : d),
-                    h = n && n.length ? n[0] : void 0
-                  return i.createElement(F.a.Consumer, null, function (t) {
+                    g = n && n.length ? n[0] : void 0
+                  return i.createElement(D.a.Consumer, null, function (t) {
                     return i.createElement(
                       i.Fragment,
                       null,
                       i.createElement(
-                        L.a,
+                        F.a,
                         {
                           link: b ? t.withAnchorless(b) : void 0,
                           onPress: u,
-                          style: K.rootLink,
-                          testID: x,
+                          style: G.rootLink,
+                          testID: R,
                           withDarkerInteractiveBackground: s,
                         },
                         i.createElement(
-                          P.a,
-                          { style: K.content },
+                          x.a,
+                          { style: G.content },
                           i.createElement(
-                            S.a,
+                            L.a,
                             null,
                             p
-                              ? i.createElement(H.b, { accessibilityHidden: !0, color: 'gray700', size: 'subtext2' }, p)
+                              ? i.createElement(S.b, { accessibilityHidden: !0, color: 'gray700', size: 'subtext2' }, p)
                               : null,
-                            i.createElement(H.b, { color: 'gray700', size: 'subtext2' }, o || null),
+                            i.createElement(S.b, { color: 'gray700', size: 'subtext2' }, o || null),
                           ),
-                          i.createElement(H.b, { dir: f, style: K.name, weight: 'bold', withHashflags: !0 }, l),
-                          a ? i.createElement(H.b, { color: 'gray700', style: K.description }, a) : null,
-                          h ? i.createElement(_.a, { isCondensed: !0, style: K.withMarginTop, tweetId: h }) : null,
-                          r ? i.createElement(P.a, { style: K.attachment }, r) : null,
-                          i.createElement(j.a, { groupedTrends: c }),
+                          i.createElement(S.b, { dir: f, style: G.name, weight: 'bold', withHashflags: !0 }, l),
+                          a ? i.createElement(S.b, { color: 'gray700', style: G.description }, a) : null,
+                          g ? i.createElement(A.a, { isCondensed: !0, style: G.withMarginTop, tweetId: g }) : null,
+                          r ? i.createElement(x.a, { style: G.attachment }, r) : null,
+                          i.createElement(H.a, { groupedTrends: c }),
                           e._renderMetadata(),
-                          i.createElement(P.a, { style: K.trendFeedbackMenuContainer }, m),
+                          i.createElement(x.a, { style: G.trendFeedbackMenuContainer }, m),
                         ),
                       ),
                     )
@@ -142,11 +142,11 @@
                     n = t.metaDescription,
                     r = t.promotedContent
                   r ? (e = i.createElement(N.a, { label: n, promotedContent: r })) : n && (e = n)
-                  var a = Object(A.a)(e) && e.length ? W(e, e.length - 1) : void 0
+                  var a = Object(_.a)(e) && e.length ? W(e, e.length - 1) : void 0
                   return e
                     ? i.createElement(
-                        H.b,
-                        { color: 'gray700', dir: a, size: 'subtext2', style: K.withMarginTop, testID: R },
+                        S.b,
+                        { color: 'gray700', dir: a, size: 'subtext2', style: G.withMarginTop, testID: j },
                         e,
                       )
                     : null
@@ -156,8 +156,8 @@
             n
           )
         })(i.Component),
-        G = Object(D.a)(Y),
-        K = z.a.create(function (e) {
+        Y = Object(P.a)(X),
+        G = z.a.create(function (e) {
           return {
             rootLink: {
               display: 'flex',
@@ -172,7 +172,7 @@
             withMarginTop: { marginTop: e.spaces.space4 },
           }
         })
-      function Q(e, t) {
+      function K(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -188,18 +188,18 @@
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Q(Object(n), !0).forEach(function (t) {
+            ? K(Object(n), !0).forEach(function (t) {
                 a()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : Q(Object(n)).forEach(function (t) {
+            : K(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var X = d.a.CardNames,
+      var Q = d.a.CardNames,
         Z = function (e) {
           return e && e.promotedTrendId
             ? { disclosure_type: e.disclosureType, impression_id: e.promotedTrendId }
@@ -207,18 +207,18 @@
         },
         q = Object.freeze(
           ((V = {}),
-          a()(V, X.LIVE_EVENT, !0),
-          a()(V, X.MOMENT, !0),
-          a()(V, X.SUMMARY, !0),
-          a()(V, X.SUMMARY_LARGE_IMAGE, !0),
-          a()(V, X.AUDIOSPACE, !0),
+          a()(V, Q.LIVE_EVENT, !0),
+          a()(V, Q.MOMENT, !0),
+          a()(V, Q.SUMMARY, !0),
+          a()(V, Q.SUMMARY_LARGE_IMAGE, !0),
+          a()(V, Q.AUDIOSPACE, !0),
           V),
         ),
         $ = function (e, t) {
           if (e && e.length > 0) {
             var n = e[0]
-            if (!t && n.name !== X.LIVE_EVENT && n.name !== X.AUDIOSPACE) return
-            var r = n.name === X.SUMMARY_LARGE_IMAGE ? X.SUMMARY : n.name
+            if (!t && n.name !== Q.LIVE_EVENT && n.name !== Q.AUDIOSPACE) return
+            var r = n.name === Q.SUMMARY_LARGE_IMAGE ? Q.SUMMARY : n.name
             if (!q[r]) return
             return i.createElement(m.a, {
               card: { url: n.url, name: r, binding_values: n.binding_values, users: n.users },
@@ -236,12 +236,12 @@
           n = e.withThirdPartyCards
         return o.g({
           isFocusable: Object(l.a)(!0),
-          component: G,
+          component: Y,
           bindActions: function (e) {
             e.module
             return {
               logTrend: c.c,
-              scribe: h.c,
+              scribe: g.c,
               createLocalApiErrorHandler: Object(u.createLocalApiErrorHandlerWithContextFactory)(t),
             }
           },
@@ -257,8 +257,8 @@
               l = (e.module.selectFeedbackActions, e.scribeData),
               u = e.scribeNamespace,
               m = s.content,
-              h = m.promotedMetadata,
-              g = m.groupedTrends
+              g = m.promotedMetadata,
+              h = m.groupedTrends
                 ? m.groupedTrends.map(function (e) {
                     return { name: e.name, link: Object(f.b)(e.url) }
                   })
@@ -268,21 +268,21 @@
               attachment: $(c, n),
               description: m.description,
               domainContext: m.trendMetadata.domainContext,
-              groupedTrends: g,
+              groupedTrends: h,
               link: Object(f.b)(m.url),
               metaDescription: m.trendMetadata && m.trendMetadata.metaDescription,
               name: m.name,
               onClick: function () {
                 o(J(J({}, u), {}, { action: 'search' }), l),
-                  h &&
-                    h.promotedTrendId &&
+                  g &&
+                    g.promotedTrendId &&
                     a({
-                      promoted_trend_id: h.promotedTrendId,
-                      impression_id: h.impressionString,
+                      promoted_trend_id: g.promotedTrendId,
+                      impression_id: g.impressionString,
                       event: b.d.TREND_CLICK,
                     }).catch(r())
               },
-              promotedContent: Z(h),
+              promotedContent: Z(g),
               rank: m.rank,
               trendFeedbackMenu: i.createElement(p.a, { feedbackItems: d }),
             }
@@ -292,7 +292,7 @@
               n = t.name,
               r = t.promotedMetadata,
               a = e.itemMetadata.clientEventInfo
-            return g.a.getTrendItem(n, r, a)
+            return h.a.getTrendItem(n, r, a)
           },
           onImpression: function (e) {
             var t = e.actions,
@@ -321,7 +321,7 @@
         a = (n('JtPf'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP'), n('zb92')),
         o = Object(a.a)({
           loader: function () {
-            return n.e(167).then(n.bind(null, 'ACNv'))
+            return n.e(166).then(n.bind(null, 'ACNv'))
           },
         }),
         c = n('4bW+'),
@@ -369,7 +369,7 @@
         f = function (e, t) {
           var n = t.tweetId,
             r = n && d.a.select(e, n)
-          return r ? Object(l.f)(e, r) : void 0
+          return r ? Object(l.g)(e, r) : void 0
         },
         b = Object(u.a)()
           .propsFromState(function () {
@@ -380,11 +380,11 @@
               createLocalApiErrorHandler: Object(p.createLocalApiErrorHandlerWithContextFactory)(
                 'QUOTE_TWEET_CONTAINER',
               ),
-              fetchCommunityIfNeeded: l.b.fetchOneIfNeeded,
+              fetchCommunityIfNeeded: l.c.fetchOneIfNeeded,
             }
           }),
-        h = n('YeIG'),
-        g = n('uCxL'),
+        g = n('YeIG'),
+        h = n('uCxL'),
         y = n('x5Pi'),
         E = b(function (e) {
           var t = e.community,
@@ -406,7 +406,7 @@
             m = null == o ? void 0 : o.community_id_str
           i.useEffect(
             function () {
-              m && Object(h.a)(t) && r(m).catch(n())
+              m && Object(g.a)(t) && r(m).catch(n())
             },
             [t, m, n, r],
           )
@@ -415,7 +415,7 @@
             E = b && Object(y.e)(b),
             v = u.isTrue('responsive_web_reactions_enabled')
           return i.createElement(
-            g.a,
+            h.a,
             a()({}, d, {
               loggedInUserId: p,
               shouldShowAltLabelAlways: f,
@@ -427,35 +427,35 @@
         })
       t.a = E
     },
-    i7AQ: function (e, t, n) {
+    'tg+X': function (e, t, n) {
       'use strict'
       n('hBvt'), n('ho0z')
       var r = n('ERkP'),
-        a = n('3XMw'),
-        o = n.n(a),
-        c = n('t62R'),
+        a = n('t62R'),
+        o = n('3XMw'),
+        c = n.n(o),
         i = n('rHpw'),
         s = function (e) {
           var t = e.groupedTrends,
             n = e.linkColor,
-            a = e.textColor,
-            o = d(t, n)
-          return o ? r.createElement(c.b, { color: a, numberOfLines: 2, size: 'subtext2', style: m.root }, o) : null
+            o = e.textColor,
+            c = d(t, n)
+          return c ? r.createElement(a.b, { color: o, numberOfLines: 2, size: 'subtext2', style: m.root }, c) : null
         }
       s.defaultProps = { textColor: 'gray700' }
       var d = function (e, t) {
           return e.length >= 2 ? u(e, t) : 1 === e.length ? l(e[0], t) : null
         },
         l = function (e, t) {
-          return r.createElement(o.a.I18NFormatMessage, { $i18n: 'g1e704c3' }, p(e, t, !0))
+          return r.createElement(c.a.I18NFormatMessage, { $i18n: 'fe7c309b' }, p(e, t, !0))
         },
         u = function (e, t) {
-          return r.createElement(o.a.I18NFormatMessage, { $i18n: 'i7bba09d' }, p(e[0], t, !0), p(e[1], t))
+          return r.createElement(c.a.I18NFormatMessage, { $i18n: 'ea753bf4' }, p(e[0], t, !0), p(e[1], t))
         },
         p = function (e, t) {
           var n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2]
           return r.createElement(
-            c.b,
+            a.b,
             { color: t, link: e.link, size: 'subtext2', style: n && m.paddingLeft, withHashflags: !0 },
             e.name,
           )

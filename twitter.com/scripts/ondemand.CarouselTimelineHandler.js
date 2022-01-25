@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [193],
+  [192],
   {
     '+93b': function (e, t, r) {
       'use strict'
@@ -33,7 +33,7 @@
         S = r('RuTB'),
         T = Object(D.a)({
           loader: function () {
-            return Promise.all([r.e(0), r.e(192)]).then(r.bind(null, 'DO1+'))
+            return Promise.all([r.e(0), r.e(191)]).then(r.bind(null, 'DO1+'))
           },
           renderPlaceholder: function (e, t) {
             return l.createElement(S.a, { hasError: e, onRetry: t })
@@ -45,7 +45,7 @@
         F = r('JfS+'),
         M = Object(D.a)({
           loader: function () {
-            return Promise.all([r.e(0), r.e(192)]).then(r.bind(null, '0xZH'))
+            return Promise.all([r.e(0), r.e(191)]).then(r.bind(null, '0xZH'))
           },
           renderPlaceholder: function (e, t) {
             return l.createElement(S.a, { hasError: e, onRetry: t })
@@ -56,7 +56,7 @@
         B = r('XBtf'),
         x = {
           loader: function () {
-            return r.e(217).then(r.bind(null, 'kh1t'))
+            return r.e(216).then(r.bind(null, 'kh1t'))
           },
           loaderKey: 'feedbackItemLoader',
           strategy: B.a.Critical,
@@ -91,28 +91,28 @@
         }),
         W = {
           loader: function () {
-            return r.e(228).then(r.bind(null, 'CdHO'))
+            return r.e(227).then(r.bind(null, 'CdHO'))
           },
           loaderKey: 'standardHandlerLoader',
           strategy: B.a.Critical,
         },
         Z = {
           loader: function () {
-            return r.e(228).then(r.bind(null, 'vKPG'))
+            return r.e(227).then(r.bind(null, 'vKPG'))
           },
           loaderKey: 'broadcastLoader',
           strategy: B.a.Critical,
         },
         q = {
           loader: function () {
-            return r.e(228).then(r.bind(null, 'kthL'))
+            return r.e(227).then(r.bind(null, 'kthL'))
           },
           loaderKey: 'callToActionLoader',
           strategy: B.a.Critical,
         },
         U = {
           loader: function () {
-            return r.e(228).then(r.bind(null, 'FYbo'))
+            return r.e(227).then(r.bind(null, 'FYbo'))
           },
           loaderKey: 'scoreCardLoader',
           strategy: B.a.Critical,

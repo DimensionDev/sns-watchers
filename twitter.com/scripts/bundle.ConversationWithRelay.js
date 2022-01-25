@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [47],
+  [46],
   {
     '+s2u': function (e, t, n) {
       'use strict'
@@ -1449,7 +1449,7 @@
         f = function (e, t) {
           var n = t.tweetId,
             r = n && s.a.select(e, n)
-          return r ? Object(u.f)(e, r) : void 0
+          return r ? Object(u.g)(e, r) : void 0
         },
         y = Object(d.a)()
           .propsFromState(function () {
@@ -1460,7 +1460,7 @@
               createLocalApiErrorHandler: Object(m.createLocalApiErrorHandlerWithContextFactory)(
                 'QUOTE_TWEET_CONTAINER',
               ),
-              fetchCommunityIfNeeded: u.b.fetchOneIfNeeded,
+              fetchCommunityIfNeeded: u.c.fetchOneIfNeeded,
             }
           }),
         g = n('YeIG'),

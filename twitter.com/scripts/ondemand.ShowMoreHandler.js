@@ -1,20 +1,35 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [227],
+  [226],
   {
     D9QQ: function (e, t, n) {
       'use strict'
       n.r(t)
-      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
-      var r = n('KEM+'),
-        o = n.n(r),
-        c = (n('2G9S'), n('ezF+')),
-        i = n('jtO7'),
-        a = n('VPAj'),
-        s = n('3XMw'),
-        l = n.n(s),
-        u = n('zh9S'),
-        p = n('eR3e')
-      function m(e, t) {
+      var r = n('ezF+'),
+        o = n('VPAj'),
+        c = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('KEM+')),
+        i = n.n(c),
+        a = (n('2G9S'), n('ERkP')),
+        s = n('jtO7'),
+        l = n('rxPX'),
+        u = function (e, t) {
+          return t.entry.content
+        },
+        p = function (e, t) {
+          return u(0, t).timelineModule
+        },
+        m = function (e, t) {
+          return u(0, t).showMore
+        },
+        d = Object(l.a)()
+          .propsFromState(function () {
+            return { showMoreModule: m, timelineModule: p }
+          })
+          .propsFromActions(function (e) {
+            return { updateEntry: e.module.updateEntry }
+          })
+          .withAnalytics({ element: 'footer' }),
+        b = n('3XMw')
+      function f(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -26,86 +41,78 @@
         }
         return n
       }
-      function b(e) {
+      function y(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? m(Object(n), !0).forEach(function (t) {
-                o()(e, t, n[t])
+            ? f(Object(n), !0).forEach(function (t) {
+                i()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : m(Object(n)).forEach(function (t) {
+            : f(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var d = l.a.d228a9a0,
-        f = Object(a.a)(!1),
-        y = Object(a.a)(!0),
-        w = { viewType: 'module_footer' },
-        O = { element: 'footer' }
+      var w = n.n(b).a.d228a9a0,
+        O = function (e) {
+          var t = e.analytics,
+            n = e.showMoreModule,
+            r = e.timelineModule,
+            o = e.updateEntry
+          a.useEffect(function () {
+            n.shouldScribeImpression && t.scribeAction('impression')
+          }, [])
+          var c = a.useCallback(
+            function () {
+              var e = r.content,
+                c = e.items,
+                i = e.numItemsShown,
+                a = r.entryId,
+                s = n.initialItemsCount,
+                l = n.showMoreItemsCount,
+                u = i || s
+              o(
+                a,
+                y(
+                  y({}, r.content),
+                  {},
+                  {
+                    numItemsShown: Math.min(u + l, c.length),
+                    showMore: y(
+                      y({}, n),
+                      {},
+                      { entryToFocus: 'verticalGridItem-'.concat(u, '-').concat(a), shouldScribeImpression: !1 },
+                    ),
+                  },
+                ),
+              ),
+                t.scribeAction('click')
+            },
+            [t, n, r, o],
+          )
+          return a.createElement(s.a, { color: 'primary', label: w, onPress: c })
+        },
+        h = d(a.memo(O)),
+        g = Object(o.a)(!1),
+        v = Object(o.a)(!0),
+        j = { viewType: 'module_footer' },
+        M = { element: 'footer' }
       t.default = function (e) {
         var t = e.isInSidebar
-        return c.g({
-          shouldDisplayBorder: t ? f : void 0,
-          component: i.a,
-          bindActions: Object(a.a)({ scribe: u.c, updateEntry: p.w }),
-          createProps: function (e) {
-            var t = e.actions,
-              n = t.scribe,
-              r = t.updateEntry,
-              o = e.entry,
-              c = o.content,
-              i = c.showMore,
-              a = i.initialItemsCount,
-              s = i.showMoreItemsCount,
-              l = c.timelineModule,
-              u = (o.entryId, e.module.timelineId),
-              p = e.scribeNamespace,
-              m = l.content,
-              f = m.items,
-              y = m.numItemsShown || a
-            return {
-              color: 'primary',
-              label: d,
-              onPress: function () {
-                r(
-                  u,
-                  l.entryId,
-                  b(
-                    b({}, l.content),
-                    {},
-                    {
-                      numItemsShown: Math.min(y + s, f.length),
-                      showMore: b(
-                        b({}, l.content.showMore),
-                        {},
-                        {
-                          entryToFocus: 'verticalGridItem-'.concat(y, '-').concat(l.entryId),
-                          shouldScribeImpression: !1,
-                        },
-                      ),
-                    },
-                  ),
-                ),
-                  n(b(b({}, p), {}, { element: 'footer', action: 'click' }))
-              },
-            }
-          },
-          defaultScribeNamespace: O,
-          isFocusable: y,
-          getBehavioralEventContextOverride: function () {
-            return w
-          },
-          onImpression: function (e) {
-            var t = e.actions.scribe,
-              n = e.entry.content.showMore,
-              r = e.scribeNamespace
-            n.shouldScribeImpression && t(b(b({}, r), {}, { element: 'footer', action: 'impression' }))
-          },
-        })
+        return r
+          .b({
+            shouldDisplayBorder: t ? g : void 0,
+            component: h,
+            defaultScribeNamespace: M,
+            isFocusable: v,
+            getBehavioralEventContextOverride: function () {
+              return j
+            },
+          })
+          .getHandler()
       }
     },
     jtO7: function (e, t, n) {
@@ -120,7 +127,7 @@
         u = n('cm6r'),
         p = n('rHpw'),
         m = n('MWbm'),
-        b = p.a.create(function (e) {
+        d = p.a.create(function (e) {
           return {
             container: { backgroundColor: e.colors.cellBackground },
             root: {
@@ -136,7 +143,7 @@
           n = void 0 === t ? 'center' : t,
           r = e.color,
           c = e.label,
-          d = i()(e, ['align', 'color', 'label']),
+          b = i()(e, ['align', 'color', 'label']),
           f = l.a.generate({
             backgroundColor: p.a.theme.colors.transparent,
             color: p.a.theme.colors[r],
@@ -144,10 +151,10 @@
           })
         return a.createElement(
           m.a,
-          { style: b.container },
+          { style: d.container },
           a.createElement(
             u.a,
-            o()({}, d, { interactiveStyles: f, style: b.root }),
+            o()({}, b, { interactiveStyles: f, style: d.root }),
             a.createElement(s.b, { align: n, color: r }, c),
           ),
         )

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [226],
+  [225],
   {
     '+OUG': function (e, a, n) {
       'use strict'
@@ -1498,10 +1498,10 @@
           return N
         }),
         n.d(t, 'Arrow2x', function () {
-          return Q
+          return G
         }),
         n.d(t, 'Arrow3x', function () {
-          return G
+          return Q
         }),
         n.d(t, 'Bench', function () {
           return X
@@ -1777,8 +1777,8 @@
         H = n('jAXQ'),
         q = n.n(H),
         N = (n('yH/f'), n('KOtZ'), n.p + 'Arrow.e8910965.png'),
-        Q = n.p + 'Arrow@2x.8af675c5.png',
-        G = n.p + 'Arrow@3x.949d4365.png',
+        G = n.p + 'Arrow@2x.8af675c5.png',
+        Q = n.p + 'Arrow@3x.949d4365.png',
         X = n.p + 'Bench.ed26a435.png',
         J = n.p + 'Bench@2x.ef9fb7d5.png',
         Z = n.p + 'Bench@3x.a306fd55.png',
@@ -1900,11 +1900,11 @@
         He = b.a.a753a87f,
         qe = b.a.abfaa527,
         Ne = P.a.getTruncatedCount(1e4),
-        Qe = b.a.fdd95737({ minFollowersCount: Ne }),
-        Ge = P.a.getTruncatedCount(25),
+        Ge = b.a.fdd95737({ minFollowersCount: Ne }),
+        Qe = P.a.getTruncatedCount(25),
         Xe = [
           {
-            label: Qe,
+            label: Ge,
             test: function (e) {
               var a
               return !(
@@ -1916,7 +1916,7 @@
             },
           },
           {
-            label: b.a.a0dcad86({ minTweetsCount: Ge }),
+            label: b.a.a0dcad86({ minTweetsCount: Qe }),
             test: function (e) {
               var a
               return !(
@@ -2267,8 +2267,8 @@
       var Ha,
         qa,
         Na,
-        Qa,
         Ga,
+        Qa,
         Xa,
         Ja,
         Za,
@@ -2474,12 +2474,12 @@
           b.a.he3f1435,
           b.a.c3c16abb,
         ],
-        Qn = void 0 !== Qa ? Qa : (Qa = n('VG5i')),
-        Gn = function (e) {
+        Gn = void 0 !== Ga ? Ga : (Ga = n('VG5i')),
+        Qn = function (e) {
           var a,
             n,
             t = e.viewer,
-            r = q()(Qn, t),
+            r = q()(Gn, t),
             l =
               null !== (a = null === (n = r.super_follows_application_draft) || void 0 === n ? void 0 : n.gender) &&
               void 0 !== a
@@ -2509,7 +2509,7 @@
         Jn = b.a.d7081f91,
         Zn = b.a.j349548f,
         $n = b.a.b772cd65,
-        Yn = void 0 !== Ga ? Ga : (Ga = n('+OUG')),
+        Yn = void 0 !== Qa ? Qa : (Qa = n('+OUG')),
         et = function (e) {
           var a,
             n,
@@ -2764,7 +2764,7 @@
               o.createElement(
                 u.c,
                 { exact: !0, path: '/application/submit_genders' },
-                o.createElement(Gn, { viewer: r }),
+                o.createElement(Qn, { viewer: r }),
               ),
               o.createElement(u.c, { path: '/application' }, o.createElement(ka, { user: t })),
             )
@@ -2860,26 +2860,26 @@
           }
         }),
         Ht = n('VTDR'),
-        qt = n('FEMQ'),
+        qt = n('MAc7'),
         Nt = o.forwardRef(function (e, a) {
           return o.createElement(
             Ut,
-            { style: Qt.mockBrowserWindow },
+            { style: Gt.mockBrowserWindow },
             o.createElement(
               F.a,
-              { style: Qt.mockBrowserWindowContent },
+              { style: Gt.mockBrowserWindowContent },
               o.createElement(Ht.a, null),
               o.createElement(qt.a, ta()({}, e, { ref: a })),
             ),
           )
         }),
-        Qt = E.a.create(function (e) {
+        Gt = E.a.create(function (e) {
           return {
             mockBrowserWindow: { marginVertical: e.spaces.space24, maxWidth: '600px' },
             mockBrowserWindowContent: { padding: e.spaces.space24 },
           }
         }),
-        Gt = b.a.iba08a94,
+        Qt = b.a.iba08a94,
         Xt = b.a.bcb1e4e6,
         Jt = void 0 !== an ? an : (an = n('JK1g')),
         Zt = void 0 !== nn ? nn : (nn = n('yqZQ')),
@@ -2905,7 +2905,7 @@
             o.createElement(
               o.Fragment,
               null,
-              o.createElement(ze, { headline: Gt, subtext: Xt }),
+              o.createElement(ze, { headline: Qt, subtext: Xt }),
               o.createElement(Nt, { imageUrl: d, name: u, value: p }),
             )
           )
@@ -3102,8 +3102,8 @@
         Hr = b.a.f3ce76c0,
         qr = b.a.e9e3b3f7,
         Nr = b.a.a79bf10a,
-        Qr = b.a.a3932653,
-        Gr = b.a.a1ef1964,
+        Gr = b.a.a3932653,
+        Qr = b.a.a1ef1964,
         Xr = b.a.abd845fd,
         Jr = b.a.c9f7c195,
         Zr = b.a.g5925628,
@@ -3142,7 +3142,7 @@
               { accessibilityLevel: 2, accessibilityRole: 'heading', size: 'title4', weight: 'heavy' },
               Rr,
             ),
-            o.createElement(W, { label: Gr, path: '/management/perks_confirm', type: 'primaryText' }),
+            o.createElement(W, { label: Qr, path: '/management/perks_confirm', type: 'primaryText' }),
             o.createElement(
               B.b,
               { accessibilityLevel: 3, accessibilityRole: 'heading', size: 'headline1', weight: 'heavy' },
@@ -3192,7 +3192,7 @@
               { accessibilityLevel: 2, accessibilityRole: 'heading', size: 'title4', weight: 'heavy' },
               Nr,
             ),
-            o.createElement(B.b, { color: 'gray700' }, Qr),
+            o.createElement(B.b, { color: 'gray700' }, Gr),
             o.createElement(h.a, { link: 'https://t.co/jPqvg6tFrDJG', type: 'brandFilled' }, $r),
             o.createElement(h.a, { link: 'https://t.co/RL2NN3bEVkes', type: 'brandOutlined' }, Yr),
             o.createElement(Pr.a, null),
@@ -3370,7 +3370,7 @@
         Hl = b.a.abd845fd,
         ql = b.a.c1df579e,
         Nl = void 0 !== wn ? wn : (wn = n('tJ4s')),
-        Ql = function (e) {
+        Gl = function (e) {
           var a,
             n,
             t = e.viewer,
@@ -3401,8 +3401,8 @@
             o.createElement(W, { disabled: !l, label: ql, path: '/onboarding/perks_badges' }),
           )
         },
-        Gl = (n('+KXO'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('KEM+')),
-        Xl = n.n(Gl),
+        Ql = (n('+KXO'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('KEM+')),
+        Xl = n.n(Ql),
         Jl = n('Lsrn'),
         Zl = n('k/Ka')
       function $l(e, a) {
@@ -3648,7 +3648,7 @@
         Hi = b.a.e2cd700f,
         qi = b.a.d6bfb60c,
         Ni = b.a.b9cbb370,
-        Qi = function () {
+        Gi = function () {
           var e = o.createElement(k, { rightControl: o.createElement(R, null) })
           return o.createElement(
             x,
@@ -3657,7 +3657,7 @@
             o.createElement(W, { label: Ni, path: '/onboarding/stripe_setup' }),
           )
         },
-        Gi = n('8jkQ'),
+        Qi = n('8jkQ'),
         Xi = b.a.ja884230,
         Ji = b.a.af1b808d,
         Zi = b.a.fe339750,
@@ -3673,7 +3673,7 @@
                 variables: {},
                 onCompleted: function (e, a) {
                   var n = e.stripe_account_create_onboarding_url
-                  n && Gi.b.navigateTo(n)
+                  n && Qi.b.navigateTo(n)
                 },
               })
             },
@@ -3720,7 +3720,7 @@
               o.createElement(
                 u.c,
                 { exact: !0, path: '/onboarding/perks_description' },
-                o.createElement(Ql, { viewer: s }),
+                o.createElement(Gl, { viewer: s }),
               ),
               o.createElement(
                 u.c,
@@ -3739,7 +3739,7 @@
                 o.createElement(Mi, { priceOfferings: i, viewer: s }),
               ),
               o.createElement(u.c, { exact: !0, path: '/onboarding/stripe_setup' }, o.createElement(eo, null)),
-              o.createElement(u.c, { exact: !0, path: '/onboarding/stripe_incomplete' }, o.createElement(Qi, null)),
+              o.createElement(u.c, { exact: !0, path: '/onboarding/stripe_incomplete' }, o.createElement(Gi, null)),
               o.createElement(u.c, { exact: !0, path: '/onboarding/stripe_completed' }, o.createElement(Wi, null)),
               o.createElement(u.c, { path: '/onboarding' }, o.createElement(hl, { user: c, viewer: s })),
             )

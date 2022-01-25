@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [93],
+  [92],
   {
     '9RBu': function (e, a, l) {
       'use strict'
@@ -262,8 +262,9 @@
         },
         j = l('v//M'),
         I = l('VTDR'),
-        H = l('9VLy'),
-        z = function (e) {
+        H = l('MAc7'),
+        z = l('9VLy'),
+        M = function (e) {
           var a = e.style
           return t.createElement(
             m.b,
@@ -279,7 +280,6 @@
             ),
           )
         },
-        M = l('FEMQ'),
         V = function (e) {
           var a = e.description,
             l = e.style,
@@ -380,13 +380,13 @@
               return t.createElement(
                 t.Fragment,
                 null,
-                t.createElement(M.a, { imageUrl: u, name: i, value: y }),
+                t.createElement(H.a, { imageUrl: u, name: i, value: y }),
                 t.createElement(V, { description: f || void 0, style: ne.titleDescription, title: k || q }),
-                t.createElement(H.a, { style: ne.signature, user: o }),
+                t.createElement(z.a, { style: ne.signature, user: o }),
                 t.createElement(F, { style: ne.demoTweet }),
                 t.createElement(V, { description: J, style: ne.titleDescription, title: $ }),
                 c ? t.createElement(N, { style: [ne.demoTweet, ne.demoVIPTweetMarginTop], viewer: c }) : null,
-                t.createElement(z, { style: ne.disclaimer }),
+                t.createElement(M, { style: ne.disclaimer }),
                 t.createElement(
                   d.a,
                   { style: ne.subscribeButtonContainer },

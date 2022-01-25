@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [25],
+  [24],
   {
     bv0X: function (t, e, r) {
       'use strict'

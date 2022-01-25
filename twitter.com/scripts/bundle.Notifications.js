@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [72],
+  [71],
   {
     '+Bsv': function (e, t, n) {
       'use strict'
@@ -77,7 +77,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return Promise.all([n.e(6), n.e(216)]).then(n.bind(null, 'RfPh'))
+              return Promise.all([n.e(6), n.e(215)]).then(n.bind(null, 'RfPh'))
             },
             loaderKey: 'defaultNotificationLoader',
             strategy: n('XBtf').a.Critical,
@@ -457,7 +457,7 @@
         y = function (e, t) {
           var n = t.tweetId,
             r = n && s.a.select(e, n)
-          return r ? Object(l.f)(e, r) : void 0
+          return r ? Object(l.g)(e, r) : void 0
         },
         m = Object(f.a)()
           .propsFromState(function () {
@@ -468,7 +468,7 @@
               createLocalApiErrorHandler: Object(d.createLocalApiErrorHandlerWithContextFactory)(
                 'QUOTE_TWEET_CONTAINER',
               ),
-              fetchCommunityIfNeeded: l.b.fetchOneIfNeeded,
+              fetchCommunityIfNeeded: l.c.fetchOneIfNeeded,
             }
           }),
         b = n('YeIG'),

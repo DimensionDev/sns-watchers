@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [164],
+  [163],
   {
     '+Bsv': function (e, t, n) {
       'use strict'
@@ -643,8 +643,7 @@
         m,
         h,
         b,
-        y,
-        g = {
+        y = {
           fragment: {
             argumentDefinitions: (r = [{ defaultValue: null, kind: 'LocalArgument', name: 'label' }]),
             kind: 'Fragment',
@@ -653,7 +652,10 @@
             selections: [
               {
                 alias: 'labeled_conversation_slice',
-                args: [(a = { kind: 'Variable', name: 'label', variableName: 'label' })],
+                args: (a = [
+                  { kind: 'Variable', name: 'label', variableName: 'label' },
+                  { kind: 'Literal', name: 's', value: 16 },
+                ]),
                 concreteType: 'DMLabeledConversationsSlice',
                 kind: 'LinkedField',
                 name: '__DMPinnedInboxQuery_labeled_conversation_slice_slice',
@@ -888,7 +890,7 @@
             selections: [
               {
                 alias: null,
-                args: (b = [a, { kind: 'Literal', name: 's', value: 16 }]),
+                args: a,
                 concreteType: 'DMLabeledConversationsSlice',
                 kind: 'LinkedField',
                 name: 'labeled_conversation_slice',
@@ -942,7 +944,7 @@
                                     name: 'media_info',
                                     plural: !1,
                                     selections: [
-                                      (y = {
+                                      (b = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
@@ -983,7 +985,7 @@
                                     name: 'result',
                                     plural: !1,
                                     selections: [
-                                      y,
+                                      b,
                                       {
                                         kind: 'InlineFragment',
                                         selections: [
@@ -1026,8 +1028,8 @@
               },
               {
                 alias: null,
-                args: b,
-                filters: ['label', 'safety_level'],
+                args: a,
+                filters: ['label', 's'],
                 handle: 'slice',
                 key: 'DMPinnedInboxQuery_labeled_conversation_slice',
                 kind: 'LinkedHandle',
@@ -1043,7 +1045,7 @@
             text: null,
           },
         }
-      ;(g.hash = 'a75c1dda87cc485eccb5aa8efb5739a4'), (t.default = g)
+      ;(y.hash = 'a75c1dda87cc485eccb5aa8efb5739a4'), (t.default = y)
     },
     ZH9U: function (e, t, n) {
       'use strict'
@@ -1709,7 +1711,7 @@
         Fe = (n('JtPf'), n('87if'), n('zb92')),
         Me = Object(Fe.a)({
           loader: function () {
-            return n.e(222).then(n.bind(null, 'Rk1B'))
+            return n.e(221).then(n.bind(null, 'Rk1B'))
           },
         }),
         Te = n('aWzz'),
@@ -6017,7 +6019,8 @@
         T,
         L,
         H,
-        A = {
+        A,
+        N = {
           fragment: {
             argumentDefinitions: (r = [
               { defaultValue: null, kind: 'LocalArgument', name: 'cursor' },
@@ -6029,7 +6032,10 @@
             selections: [
               {
                 alias: 'dm_message_slice_result',
-                args: [(a = { kind: 'Variable', name: 'query', variableName: 'query' })],
+                args: [
+                  (a = { kind: 'Variable', name: 'query', variableName: 'query' }),
+                  (l = { kind: 'Literal', name: 's', value: 17 }),
+                ],
                 concreteType: null,
                 kind: 'LinkedField',
                 name: '__DMMessageSearchTabQuery_dm_message_slice_result_slice',
@@ -6057,14 +6063,14 @@
                                 name: 'dm_event',
                                 plural: !1,
                                 selections: [
-                                  (l = {
+                                  (o = {
                                     alias: null,
                                     args: null,
                                     kind: 'ScalarField',
                                     name: 'rest_id',
                                     storageKey: null,
                                   }),
-                                  (o = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
+                                  (i = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
                                   {
                                     alias: null,
                                     args: null,
@@ -6073,35 +6079,35 @@
                                     name: 'legacy',
                                     plural: !1,
                                     selections: [
-                                      (i = {
+                                      (c = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
                                         name: 'affects_sort',
                                         storageKey: null,
                                       }),
-                                      (c = {
+                                      (s = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
                                         name: 'created_at_millis',
                                         storageKey: null,
                                       }),
-                                      (s = {
+                                      (u = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
                                         name: 'request_id',
                                         storageKey: null,
                                       }),
-                                      (u = {
+                                      (d = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
                                         name: 'event_id',
                                         storageKey: null,
                                       }),
-                                      (d = {
+                                      (p = {
                                         alias: null,
                                         args: null,
                                         kind: 'ScalarField',
@@ -6116,8 +6122,8 @@
                                         name: 'conversation',
                                         plural: !1,
                                         selections: [
+                                          i,
                                           o,
-                                          l,
                                           {
                                             alias: null,
                                             args: null,
@@ -6126,7 +6132,7 @@
                                             name: 'legacy',
                                             plural: !1,
                                             selections: [
-                                              (p = {
+                                              (f = {
                                                 alias: null,
                                                 args: null,
                                                 kind: 'ScalarField',
@@ -6141,15 +6147,15 @@
                                                 name: 'metadata',
                                                 plural: !1,
                                                 selections: [
-                                                  p,
-                                                  (f = {
+                                                  f,
+                                                  (m = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
                                                     name: 'conversation_type',
                                                     storageKey: null,
                                                   }),
-                                                  (m = {
+                                                  (h = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
@@ -6163,7 +6169,7 @@
                                                     kind: 'LinkedField',
                                                     name: 'created_by_user_results',
                                                     plural: !1,
-                                                    selections: (y = [
+                                                    selections: (g = [
                                                       {
                                                         alias: null,
                                                         args: null,
@@ -6175,9 +6181,9 @@
                                                           {
                                                             kind: 'InlineFragment',
                                                             selections: [
+                                                              i,
                                                               o,
-                                                              l,
-                                                              (b = {
+                                                              (y = {
                                                                 alias: null,
                                                                 args: null,
                                                                 concreteType: 'ApiUser',
@@ -6185,8 +6191,8 @@
                                                                 name: 'legacy',
                                                                 plural: !1,
                                                                 selections: [
-                                                                  m,
-                                                                  (h = {
+                                                                  h,
+                                                                  (b = {
                                                                     alias: null,
                                                                     args: null,
                                                                     kind: 'ScalarField',
@@ -6206,7 +6212,7 @@
                                                     ]),
                                                     storageKey: null,
                                                   },
-                                                  c,
+                                                  s,
                                                   {
                                                     alias: null,
                                                     args: null,
@@ -6214,7 +6220,7 @@
                                                     kind: 'LinkedField',
                                                     name: 'admin_user_results',
                                                     plural: !1,
-                                                    selections: y,
+                                                    selections: g,
                                                     storageKey: null,
                                                   },
                                                   {
@@ -6225,7 +6231,7 @@
                                                     name: 'avatar',
                                                     plural: !1,
                                                     selections: [
-                                                      o,
+                                                      i,
                                                       {
                                                         alias: null,
                                                         args: null,
@@ -6234,7 +6240,7 @@
                                                         name: 'media_info',
                                                         plural: !1,
                                                         selections: [
-                                                          (g = {
+                                                          (v = {
                                                             kind: 'InlineFragment',
                                                             selections: [
                                                               {
@@ -6298,9 +6304,9 @@
                                                           {
                                                             kind: 'InlineFragment',
                                                             selections: [
+                                                              i,
                                                               o,
-                                                              l,
-                                                              (v = {
+                                                              (_ = {
                                                                 alias: null,
                                                                 args: null,
                                                                 concreteType: 'ApiUser',
@@ -6315,8 +6321,8 @@
                                                                     name: 'id_str',
                                                                     storageKey: null,
                                                                   },
-                                                                  m,
                                                                   h,
+                                                                  b,
                                                                   {
                                                                     alias: null,
                                                                     args: null,
@@ -6337,21 +6343,21 @@
                                                     ],
                                                     storageKey: null,
                                                   },
-                                                  (_ = {
+                                                  (E = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
                                                     name: 'last_read_event_id',
                                                     storageKey: null,
                                                   }),
-                                                  (E = {
+                                                  (O = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
                                                     name: 'join_time_millis',
                                                     storageKey: null,
                                                   }),
-                                                  (O = {
+                                                  (S = {
                                                     alias: null,
                                                     args: null,
                                                     kind: 'ScalarField',
@@ -6361,7 +6367,7 @@
                                                 ],
                                                 storageKey: null,
                                               },
-                                              (S = {
+                                              (I = {
                                                 alias: null,
                                                 args: null,
                                                 concreteType: 'PerspectivalConversationMetadata',
@@ -6369,7 +6375,7 @@
                                                 name: 'perspectival_conversation_metadata',
                                                 plural: !1,
                                                 selections: [
-                                                  _,
+                                                  E,
                                                   {
                                                     alias: null,
                                                     args: null,
@@ -6422,7 +6428,7 @@
                                         name: 'event_detail',
                                         plural: !1,
                                         selections: [
-                                          (I = {
+                                          (k = {
                                             alias: null,
                                             args: null,
                                             concreteType: 'DMInitialLowQualityState',
@@ -6440,43 +6446,43 @@
                                             ],
                                             storageKey: null,
                                           }),
-                                          (k = {
+                                          (w = {
                                             alias: null,
                                             args: null,
                                             kind: 'ScalarField',
                                             name: 'is_new_one_to_one_convo',
                                             storageKey: null,
                                           }),
-                                          (w = {
+                                          (C = {
                                             alias: null,
                                             args: null,
                                             kind: 'ScalarField',
                                             name: 'is_spam_hide',
                                             storageKey: null,
                                           }),
-                                          (C = {
+                                          (x = {
                                             alias: null,
                                             args: null,
                                             kind: 'ScalarField',
                                             name: 'marked_as_abuse',
                                             storageKey: null,
                                           }),
-                                          (x = {
+                                          (P = {
                                             alias: null,
                                             args: null,
                                             kind: 'ScalarField',
                                             name: 'message_id',
                                             storageKey: null,
                                           }),
-                                          m,
-                                          (P = {
+                                          h,
+                                          (D = {
                                             alias: null,
                                             args: null,
                                             kind: 'ScalarField',
                                             name: 'possibly_spam',
                                             storageKey: null,
                                           }),
-                                          (D = {
+                                          (j = {
                                             alias: null,
                                             args: null,
                                             kind: 'ScalarField',
@@ -6490,7 +6496,7 @@
                                             kind: 'LinkedField',
                                             name: 'users_results',
                                             plural: !0,
-                                            selections: y,
+                                            selections: g,
                                             storageKey: null,
                                           },
                                           {
@@ -6500,7 +6506,7 @@
                                             kind: 'LinkedField',
                                             name: 'participants_snapshot_results',
                                             plural: !0,
-                                            selections: y,
+                                            selections: g,
                                             storageKey: null,
                                           },
                                           {
@@ -6510,7 +6516,7 @@
                                             kind: 'LinkedField',
                                             name: 'initiating_user_results',
                                             plural: !1,
-                                            selections: y,
+                                            selections: g,
                                             storageKey: null,
                                           },
                                           {
@@ -6521,15 +6527,15 @@
                                             name: 'dm',
                                             plural: !1,
                                             selections: [
-                                              (j = {
+                                              (R = {
                                                 alias: null,
                                                 args: null,
                                                 kind: 'ScalarField',
                                                 name: 'created_at_sec',
                                                 storageKey: null,
                                               }),
-                                              o,
-                                              (R = {
+                                              i,
+                                              (F = {
                                                 alias: null,
                                                 args: null,
                                                 kind: 'ScalarField',
@@ -6543,7 +6549,7 @@
                                                 kind: 'LinkedField',
                                                 name: 'recipient_results',
                                                 plural: !1,
-                                                selections: y,
+                                                selections: g,
                                                 storageKey: null,
                                               },
                                               {
@@ -6553,7 +6559,7 @@
                                                 kind: 'LinkedField',
                                                 name: 'sender_results',
                                                 plural: !1,
-                                                selections: y,
+                                                selections: g,
                                                 storageKey: null,
                                               },
                                             ],
@@ -6575,7 +6581,7 @@
                         ],
                         storageKey: null,
                       },
-                      (F = {
+                      (M = {
                         alias: null,
                         args: null,
                         concreteType: 'SliceInfo',
@@ -6607,17 +6613,13 @@
             selections: [
               {
                 alias: null,
-                args: (M = [
-                  { kind: 'Variable', name: 'cursor', variableName: 'cursor' },
-                  a,
-                  { kind: 'Literal', name: 's', value: 17 },
-                ]),
+                args: (T = [{ kind: 'Variable', name: 'cursor', variableName: 'cursor' }, a, l]),
                 concreteType: null,
                 kind: 'LinkedField',
                 name: 'dm_message_slice_result',
                 plural: !1,
                 selections: [
-                  (T = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
+                  (L = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
                   {
                     kind: 'InlineFragment',
                     selections: [
@@ -6629,7 +6631,7 @@
                         name: 'items',
                         plural: !0,
                         selections: [
-                          T,
+                          L,
                           {
                             kind: 'InlineFragment',
                             selections: [
@@ -6641,8 +6643,8 @@
                                 name: 'dm_event',
                                 plural: !1,
                                 selections: [
-                                  l,
                                   o,
+                                  i,
                                   {
                                     alias: null,
                                     args: null,
@@ -6651,11 +6653,11 @@
                                     name: 'legacy',
                                     plural: !1,
                                     selections: [
-                                      i,
                                       c,
                                       s,
                                       u,
                                       d,
+                                      p,
                                       {
                                         alias: null,
                                         args: null,
@@ -6664,8 +6666,8 @@
                                         name: 'conversation',
                                         plural: !1,
                                         selections: [
+                                          i,
                                           o,
-                                          l,
                                           {
                                             alias: null,
                                             args: null,
@@ -6674,7 +6676,7 @@
                                             name: 'legacy',
                                             plural: !1,
                                             selections: [
-                                              p,
+                                              f,
                                               {
                                                 alias: null,
                                                 args: null,
@@ -6683,9 +6685,9 @@
                                                 name: 'metadata',
                                                 plural: !1,
                                                 selections: [
-                                                  p,
                                                   f,
                                                   m,
+                                                  h,
                                                   {
                                                     alias: null,
                                                     args: null,
@@ -6693,7 +6695,7 @@
                                                     kind: 'LinkedField',
                                                     name: 'created_by_user_results',
                                                     plural: !1,
-                                                    selections: (H = [
+                                                    selections: (A = [
                                                       {
                                                         alias: null,
                                                         args: null,
@@ -6702,14 +6704,14 @@
                                                         name: 'result',
                                                         plural: !1,
                                                         selections: [
-                                                          T,
+                                                          L,
                                                           {
                                                             kind: 'InlineFragment',
                                                             selections: [
+                                                              i,
                                                               o,
-                                                              l,
-                                                              b,
-                                                              (L = {
+                                                              y,
+                                                              (H = {
                                                                 alias: null,
                                                                 args: null,
                                                                 filters: null,
@@ -6728,7 +6730,7 @@
                                                     ]),
                                                     storageKey: null,
                                                   },
-                                                  c,
+                                                  s,
                                                   {
                                                     alias: null,
                                                     args: null,
@@ -6736,7 +6738,7 @@
                                                     kind: 'LinkedField',
                                                     name: 'admin_user_results',
                                                     plural: !1,
-                                                    selections: H,
+                                                    selections: A,
                                                     storageKey: null,
                                                   },
                                                   {
@@ -6747,7 +6749,7 @@
                                                     name: 'avatar',
                                                     plural: !1,
                                                     selections: [
-                                                      o,
+                                                      i,
                                                       {
                                                         alias: null,
                                                         args: null,
@@ -6755,7 +6757,7 @@
                                                         kind: 'LinkedField',
                                                         name: 'media_info',
                                                         plural: !1,
-                                                        selections: [T, g],
+                                                        selections: [L, v],
                                                         storageKey: null,
                                                       },
                                                     ],
@@ -6788,10 +6790,10 @@
                                                         name: 'result',
                                                         plural: !1,
                                                         selections: [
-                                                          T,
+                                                          L,
                                                           {
                                                             kind: 'InlineFragment',
-                                                            selections: [o, l, v, L],
+                                                            selections: [i, o, _, H],
                                                             type: 'User',
                                                             abstractKey: null,
                                                           },
@@ -6801,13 +6803,13 @@
                                                     ],
                                                     storageKey: null,
                                                   },
-                                                  _,
                                                   E,
                                                   O,
+                                                  S,
                                                 ],
                                                 storageKey: null,
                                               },
-                                              S,
+                                              I,
                                             ],
                                             storageKey: null,
                                           },
@@ -6822,14 +6824,14 @@
                                         name: 'event_detail',
                                         plural: !1,
                                         selections: [
-                                          I,
                                           k,
                                           w,
                                           C,
                                           x,
-                                          m,
                                           P,
+                                          h,
                                           D,
+                                          j,
                                           {
                                             alias: null,
                                             args: null,
@@ -6837,7 +6839,7 @@
                                             kind: 'LinkedField',
                                             name: 'users_results',
                                             plural: !0,
-                                            selections: H,
+                                            selections: A,
                                             storageKey: null,
                                           },
                                           {
@@ -6847,7 +6849,7 @@
                                             kind: 'LinkedField',
                                             name: 'participants_snapshot_results',
                                             plural: !0,
-                                            selections: H,
+                                            selections: A,
                                             storageKey: null,
                                           },
                                           {
@@ -6857,7 +6859,7 @@
                                             kind: 'LinkedField',
                                             name: 'initiating_user_results',
                                             plural: !1,
-                                            selections: H,
+                                            selections: A,
                                             storageKey: null,
                                           },
                                           {
@@ -6868,9 +6870,9 @@
                                             name: 'dm',
                                             plural: !1,
                                             selections: [
-                                              j,
-                                              o,
                                               R,
+                                              i,
+                                              F,
                                               {
                                                 alias: null,
                                                 args: null,
@@ -6878,7 +6880,7 @@
                                                 kind: 'LinkedField',
                                                 name: 'recipient_results',
                                                 plural: !1,
-                                                selections: H,
+                                                selections: A,
                                                 storageKey: null,
                                               },
                                               {
@@ -6888,7 +6890,7 @@
                                                 kind: 'LinkedField',
                                                 name: 'sender_results',
                                                 plural: !1,
-                                                selections: H,
+                                                selections: A,
                                                 storageKey: null,
                                               },
                                             ],
@@ -6910,7 +6912,7 @@
                         ],
                         storageKey: null,
                       },
-                      F,
+                      M,
                     ],
                     type: 'DMMessageSlice',
                     abstractKey: null,
@@ -6920,8 +6922,8 @@
               },
               {
                 alias: null,
-                args: M,
-                filters: ['query', 'safety_level'],
+                args: T,
+                filters: ['query', 's'],
                 handle: 'slice',
                 key: 'DMMessageSearchTabQuery_dm_message_slice_result',
                 kind: 'LinkedHandle',
@@ -6937,7 +6939,7 @@
             text: null,
           },
         }
-      ;(A.hash = 'f240afda618da0d5e047ef48ee76dd56'), (t.default = A)
+      ;(N.hash = 'f240afda618da0d5e047ef48ee76dd56'), (t.default = N)
     },
   },
 ])

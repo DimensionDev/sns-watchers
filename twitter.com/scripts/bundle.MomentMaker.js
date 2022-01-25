@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [65, 3, 4, 8, 11, 167],
+  [64, 3, 4, 7, 9, 166],
   {
     '+/sI': function (e, t, n) {
       'use strict'
@@ -4786,7 +4786,7 @@
       var r = n('zb92'),
         o = Object(r.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(175)]).then(n.bind(null, 'iT+n'))
+            return Promise.all([n.e(0), n.e(174)]).then(n.bind(null, 'iT+n'))
           },
         })
       t.a = o
@@ -5132,7 +5132,7 @@
       var r = n('zb92'),
         o = Object(r.a)({
           loader: function () {
-            return n.e(179).then(n.bind(null, 'MzK7'))
+            return n.e(178).then(n.bind(null, 'MzK7'))
           },
         })
       t.a = o
@@ -6637,7 +6637,7 @@
         v = function (e) {
           return {
             loader: function () {
-              return n.e(193).then(n.bind(null, '+93b'))
+              return n.e(192).then(n.bind(null, '+93b'))
             },
             loaderKey: 'defaultCarouselTimelineLoader',
             loaderOptions: e,
@@ -6760,7 +6760,7 @@
         L = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(202)]).then(n.bind(null, 'RohR'))
+              return Promise.all([n.e(0), n.e(201)]).then(n.bind(null, 'RohR'))
             },
             loaderOptions: e,
             loaderKey: 'buttonFooterLoader',
@@ -6783,7 +6783,7 @@
                 ((r = { isInSidebar: a }),
                 {
                   loader: function () {
-                    return Promise.all([n.e(0), n.e(202)]).then(n.bind(null, 'pODo'))
+                    return Promise.all([n.e(0), n.e(201)]).then(n.bind(null, 'pODo'))
                   },
                   loaderOptions: r,
                   loaderKey: 'defaultModuleFooterLoader',
@@ -6796,7 +6796,7 @@
         },
         A = {
           loader: function () {
-            return n.e(213).then(n.bind(null, 'oiEo'))
+            return n.e(212).then(n.bind(null, 'oiEo'))
           },
           loaderKey: 'defaultModuleHeaderLoader',
           strategy: m.a.Critical,
@@ -6804,7 +6804,7 @@
         F = i.e(A),
         B = {
           loader: function () {
-            return n.e(205).then(n.bind(null, 'hKgB'))
+            return n.e(204).then(n.bind(null, 'hKgB'))
           },
           loaderKey: 'defaultImpressionPlaceholderLoader',
           strategy: m.a.Critical,
@@ -6813,7 +6813,7 @@
         H = function (e) {
           return {
             loader: function () {
-              return n.e(227).then(n.bind(null, 'D9QQ'))
+              return n.e(226).then(n.bind(null, 'D9QQ'))
             },
             loaderOptions: e,
             loaderKey: 'defaultModuleShowMoreLoader',
@@ -7145,7 +7145,7 @@
         he = ae,
         me = {
           loader: function () {
-            return n.e(234).then(n.bind(null, 'VzRj'))
+            return n.e(233).then(n.bind(null, 'VzRj'))
           },
           loaderKey: 'defaultVerticalGridListLoader',
           strategy: m.a.Critical,
@@ -7232,7 +7232,7 @@
         },
         we = {
           loader: function () {
-            return n.e(235).then(n.bind(null, 'JKhl'))
+            return n.e(234).then(n.bind(null, 'JKhl'))
           },
           loaderKey: 'defaultVerticalGridRowLoader',
           strategy: m.a.Critical,
@@ -14410,7 +14410,7 @@
         oe = (n('JtPf'), n('87if'), n('lTEL'), n('kYxP'), n('zb92')),
         ie = Object(oe.a)({
           loader: function () {
-            return n.e(173).then(n.bind(null, 'mL9d'))
+            return n.e(172).then(n.bind(null, 'mL9d'))
           },
         }),
         ae = n('m3Bd'),
@@ -18666,7 +18666,7 @@
       }
       var P = {
           load: function () {
-            return n.e(211).then(n.t.bind(null, 'Ys2B', 7))
+            return n.e(210).then(n.t.bind(null, 'Ys2B', 7))
           },
         },
         k = (function (e) {
@@ -22139,7 +22139,7 @@
         i = n('RuTB'),
         a = Object(o.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(178)]).then(n.bind(null, 'VeNJ'))
+            return Promise.all([n.e(0), n.e(177)]).then(n.bind(null, 'VeNJ'))
           },
           renderPlaceholder: function (e, t) {
             return r.createElement(i.a, { hasError: e, onRetry: t })
@@ -23950,7 +23950,7 @@
         o = n('zb92'),
         i = Object(o.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(6), n.e(12), n.e(20), n.e(187)]).then(n.bind(null, 'wHP+'))
+            return Promise.all([n.e(0), n.e(6), n.e(12), n.e(19), n.e(186)]).then(n.bind(null, 'wHP+'))
           },
           renderPlaceholder: function () {
             return r.createElement('div', null)
@@ -25206,12 +25206,11 @@
             { description: a.a.b881560d, keys: u.video.mute, universal: !0 },
           ]
           return (
-            (e.isTrue('voice_consumption_enabled') || e.isTrue('voice_rooms_consumption_enabled')) &&
-              t.push(
-                { description: a.a.a94f7301, keys: u.audio.dock, universal: !1 },
-                { description: a.a.a7e604c5, keys: u.audio.play, universal: !1 },
-                { description: a.a.f978c4fc, keys: u.audio.mute, universal: !1 },
-              ),
+            t.push(
+              { description: a.a.a94f7301, keys: u.audio.dock, universal: !1 },
+              { description: a.a.a7e604c5, keys: u.audio.play, universal: !1 },
+              { description: a.a.f978c4fc, keys: u.audio.mute, universal: !1 },
+            ),
             t
           )
         }),
@@ -25729,7 +25728,7 @@
         o = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(212)]).then(n.bind(null, 'J23q'))
+              return Promise.all([n.e(0), n.e(211)]).then(n.bind(null, 'J23q'))
             },
             loaderKey: 'defaultMessageLoader',
             loaderOptions: e,
@@ -25747,14 +25746,14 @@
         s = (n('JtPf'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP'), n('XBtf')),
         l = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(203)]).then(n.bind(null, 'Xl5C'))
+            return Promise.all([n.e(0), n.e(202)]).then(n.bind(null, 'Xl5C'))
           },
           loaderKey: 'defaultGapLoader',
           strategy: s.a.Critical,
         },
         u = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(203)]).then(n.bind(null, 'ex5I'))
+            return Promise.all([n.e(0), n.e(202)]).then(n.bind(null, 'ex5I'))
           },
           loaderKey: 'showMoreGapLoader',
           strategy: s.a.Critical,
@@ -25762,7 +25761,7 @@
         d = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(203)]).then(n.bind(null, 'zXWy'))
+              return Promise.all([n.e(0), n.e(202)]).then(n.bind(null, 'zXWy'))
             },
             loaderKey: 'showMoreThreadsPromptGapLoader',
             loaderOptions: e,
@@ -25797,7 +25796,7 @@
               ((r = { onLowQualityCursorShown: h, transparentCursorsEnabled: p, withRuxInjections: !!c }),
               {
                 loader: function () {
-                  return Promise.all([n.e(0), n.e(203)]).then(n.bind(null, 'aqRH'))
+                  return Promise.all([n.e(0), n.e(202)]).then(n.bind(null, 'aqRH'))
                 },
                 loaderKey: 'showMoreThreadsGapLoader',
                 loaderOptions: r,
@@ -25963,7 +25962,7 @@
         u = (n('JtPf'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP'), n('XBtf')),
         d = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(337)]).then(n.bind(null, 'jv0Q'))
+            return Promise.all([n.e(0), n.e(336)]).then(n.bind(null, 'jv0Q'))
           },
           loaderKey: 'defaultNewEntriesGapLoader',
           strategy: u.a.Critical,
@@ -25973,7 +25972,7 @@
         h = (n('yH/f'), Object.freeze({ RelevancePrompt: 'relevancePrompt' })),
         m = {
           loader: function () {
-            return n.e(340).then(n.bind(null, '3ukl'))
+            return n.e(339).then(n.bind(null, '3ukl'))
           },
           loaderKey: 'relevancePromptLoader',
           strategy: u.a.Critical,
@@ -25989,7 +25988,7 @@
         g = n('67iF'),
         _ = {
           loader: function () {
-            return n.e(229).then(n.bind(null, 'VSZh'))
+            return n.e(228).then(n.bind(null, 'VSZh'))
           },
           loaderKey: 'topicFollowPromptDefaultLoader',
           strategy: u.a.Critical,
@@ -26002,7 +26001,7 @@
         k = n('Ka9G'),
         S = {
           loader: function () {
-            return n.e(233).then(n.bind(null, 'bXO0'))
+            return n.e(232).then(n.bind(null, 'bXO0'))
           },
           loaderKey: 'topicTileLoader',
           strategy: u.a.Critical,
@@ -33513,7 +33512,7 @@
         a = n.n(i),
         c = n('ddV6'),
         s = n.n(c),
-        l = n('ERkP'),
+        l = (n('hBvt'), n('ERkP')),
         u = n('mjJ+'),
         d = n('PxJJ'),
         p = n('3XMw'),
@@ -33575,23 +33574,24 @@
           x = e.isPresentational,
           j = e.likeActionIconContainerRef,
           R = e.likeTransitionAnimation,
-          D = e.onError,
-          L = void 0 === D ? T : D,
-          M = e.onLikeActionSelect,
-          A = e.onMenuCancel,
-          F = e.onPress,
-          B = e.style,
-          N = e.testIDs,
-          H = e.withCount && 'number' == typeof a,
-          U = I ? C : w
-        H && (U = I ? k({ count: a }) : P({ count: a }))
-        var V = S({ isLiked: I, likeTransitionAnimation: R })
+          D = e.link,
+          L = e.onError,
+          M = void 0 === L ? T : L,
+          A = e.onLikeActionSelect,
+          F = e.onMenuCancel,
+          B = e.onPress,
+          N = e.style,
+          H = e.testIDs,
+          U = e.withCount && 'number' == typeof a,
+          V = I ? C : w
+        U && (V = I ? k({ count: a }) : P({ count: a }))
+        var z = S({ isLiked: I, likeTransitionAnimation: R })
         return l.createElement(
           v.a,
-          o()({}, V, {
+          o()({}, z, {
             ActiveIcon: _.a,
             Icon: g.a,
-            accessibilityLabel: U,
+            accessibilityLabel: V,
             actionIconContainerRef: j,
             activeColor: r,
             behavioralEventContext: { viewType: 'like', viewState: { type: 'toggleable', toggledTo: !I } },
@@ -33605,9 +33605,10 @@
             isFaded: m,
             isPresentational: x,
             keyboardShortcut: h.a.shortcuts.like,
-            onError: L,
+            link: D,
+            onError: M,
             onPress: function () {
-              y.b.isFirefox() || b.a.vibrate(5), null == F || F()
+              y.b.isFirefox() || b.a.vibrate(5), null == B || B()
             },
             renderMenu: s
               ? function (e) {
@@ -33615,9 +33616,9 @@
                     {
                       text: E,
                       onClick: function () {
-                        e(), null == M || M()
+                        e(), null == A || A()
                       },
-                      testID: null == N ? void 0 : N.like,
+                      testID: null == H ? void 0 : H.like,
                       Icon: g.a,
                     },
                   ]
@@ -33625,14 +33626,14 @@
                     description: t,
                     items: n,
                     onCloseRequested: function () {
-                      e(), null == A || A()
+                      e(), null == F || F()
                     },
                   })
                 }
               : void 0,
-            style: B,
-            testID: N && (I ? N.unlike : N.like),
-            withCount: H,
+            style: N,
+            testID: H && (I ? H.unlike : H.like),
+            withCount: U,
           }),
         )
       }
@@ -40975,7 +40976,6 @@
               o()(this, n),
               (i = t.call(this, e, r)),
               v()(s()(i), '_unmounted', !1),
-              v()(s()(i), '_isEntryConfigurationInvalidated', !1),
               v()(s()(i), '_createAndSubscribeToHandlerRegistryManager', function () {
                 var e,
                   t = i.props.entryConfiguration
@@ -40991,19 +40991,13 @@
                 '_handleConfigurationChanged',
                 Object(M.a)(function () {
                   i._unmounted ||
-                    ((i._isEntryConfigurationInvalidated = !1),
-                    i.setState({
+                    (i.setState({
                       processedEntryConfiguration: i._handlerRegistryManager.getPartiallyLoadedConfiguration(),
                       fetchStatus: i._handlerRegistryManager.getFetchStatus(),
                     }),
                     i._handlerRegistryManager.loadOnDemand(i._getEntriesNeedingLoad()))
                 }, 100),
               ),
-              v()(s()(i), '_getFinalEntryConfiguration', function () {
-                return i._isEntryConfigurationInvalidated
-                  ? i.props.entryConfiguration
-                  : i.state.processedEntryConfiguration
-              }),
               v()(s()(i), '_handleRetry', function () {
                 i._handlerRegistryManager.retryAll()
               }),
@@ -41015,7 +41009,7 @@
                   o = e.entries,
                   a = e.pinnedEntry,
                   c = e.preprocessEntryList,
-                  s = i._getMemoizedHandlerRegistry(i._getFinalEntryConfiguration(), t)
+                  s = i._getMemoizedHandlerRegistry(i.state.processedEntryConfiguration, t)
                 return n(s, i._getMemoizedFinalEntries(s, r, o, a, c))
               }),
               v()(s()(i), '_getEntriesNeedingLoad', function () {
@@ -41089,8 +41083,7 @@
                     r = n.entries,
                     o = n.entryConfiguration,
                     i = this.state.fetchStatus
-                  e.entryConfiguration !== o &&
-                    (this._createAndSubscribeToHandlerRegistryManager(), (this._isEntryConfigurationInvalidated = !0)),
+                  e.entryConfiguration !== o && this._createAndSubscribeToHandlerRegistryManager(),
                     t.fetchStatus !== i &&
                       i === S.a.FAILED &&
                       Object(I.a)('URT HandlerRegistryProvider: Failed to load critical handlers'),
@@ -43942,10 +43935,13 @@
                 se.a,
                 {
                   anchorRef: z ? P : G,
+                  animationDuration: 'normal',
+                  animationType: 'slide',
                   contentStyle: Ne.popoverContainer,
                   disabled: p || f,
                   enableHover: !0,
                   enableLongPress: !0,
+                  hoverDelay: 'short',
                   onDismiss: v,
                   onOpen: re,
                   preferredVerticalOrientation: 'up',
@@ -45225,7 +45221,7 @@
         f = function (e) {
           return {
             loader: function () {
-              return n.e(215).then(n.bind(null, 'Pb8P'))
+              return n.e(214).then(n.bind(null, 'Pb8P'))
             },
             loaderOptions: e,
             loaderKey: 'momentSummaryLoader',
@@ -45604,7 +45600,7 @@
         c = n('RuTB'),
         s = Object(a.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(158)]).then(n.bind(null, 'FwSR'))
+            return Promise.all([n.e(0), n.e(157)]).then(n.bind(null, 'FwSR'))
           },
           renderPlaceholder: function (e, t) {
             return i.createElement(c.a, { hasError: e, onRetry: t })
@@ -45679,7 +45675,7 @@
       var r = n('zb92')
       t.a = Object(r.a)({
         loader: function () {
-          return Promise.all([n.e(0), n.e(3), n.e(208)]).then(n.bind(null, '57t6'))
+          return Promise.all([n.e(0), n.e(3), n.e(207)]).then(n.bind(null, '57t6'))
         },
       })
     },
@@ -46478,7 +46474,7 @@
         s = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(13), n.e(201)]).then(n.bind(null, '8qIq'))
+              return Promise.all([n.e(13), n.e(200)]).then(n.bind(null, '8qIq'))
             },
             loaderOptions: e,
             loaderKey: 'eventSummaryCellLoader',
@@ -46502,7 +46498,7 @@
               ((r = { errorContext: l }),
               {
                 loader: function () {
-                  return Promise.all([n.e(13), n.e(201)]).then(n.bind(null, 'm5t/'))
+                  return Promise.all([n.e(13), n.e(200)]).then(n.bind(null, 'm5t/'))
                 },
                 loaderOptions: r,
                 loaderKey: 'eventSummaryHeroLoader',
@@ -49960,7 +49956,7 @@
         C = n('RuTB'),
         P = Object(E.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(6), n.e(12), n.e(171)])
+            return Promise.all([n.e(0), n.e(6), n.e(12), n.e(170)])
               .then(n.bind(null, 'EOJ2'))
               .then(function (e) {
                 return { default: e.__DANGEROUS_IMPORT_VIDEOPLAYER__ }
@@ -52806,7 +52802,7 @@
         u = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(13), n.e(21), n.e(210)]).then(n.bind(null, '1Ws7'))
+              return Promise.all([n.e(0), n.e(13), n.e(20), n.e(209)]).then(n.bind(null, '1Ws7'))
             },
             loaderKey: 'listLoader',
             loaderOptions: e,
@@ -52815,7 +52811,7 @@
         },
         d = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(13), n.e(21), n.e(210)]).then(n.bind(null, 'O4YN'))
+            return Promise.all([n.e(0), n.e(13), n.e(20), n.e(209)]).then(n.bind(null, 'O4YN'))
           },
           loaderKey: 'tileLoader',
           strategy: l.a.Critical,
@@ -54122,7 +54118,7 @@
         o = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(335)]).then(n.bind(null, 'NO+D'))
+              return Promise.all([n.e(0), n.e(334)]).then(n.bind(null, 'NO+D'))
             },
             loaderOptions: e,
             loaderKey: 'inlineTombstoneLoader',
@@ -54131,14 +54127,14 @@
         },
         i = {
           loader: function () {
-            return n.e(343).then(n.bind(null, '1Tet'))
+            return n.e(342).then(n.bind(null, '1Tet'))
           },
           loaderKey: 'tweetUnavailableTombstoneLoader',
           strategy: r.a.Critical,
         },
         a = {
           loader: function () {
-            return n.e(283).then(n.bind(null, '08qV'))
+            return n.e(282).then(n.bind(null, '08qV'))
           },
           loaderKey: 'disconnectedRepliesTombstoneLoader',
           strategy: r.a.Critical,
@@ -57949,7 +57945,7 @@
         },
         we = function (e, t) {
           var n = t.tweet.community_id_str,
-            r = n ? $.b.select(e, n) : void 0
+            r = n ? $.c.select(e, n) : void 0
           return Object(te.f)(null == r ? void 0 : r.role)
         },
         Oe = function (e, t) {
@@ -59077,7 +59073,7 @@
                 u()(o),
                 '_getUnbookmarkTweetAction',
                 Object(Be.a)(function () {
-                  return { behavioralEventContext: wn(!1), text: xt, onClick: o._handleUnbookmarkTweet, Icon: vt.a }
+                  return { behavioralEventContext: wn(!1), text: xt, onClick: o._handleUnbookmarkTweet, Icon: bt.a }
                 }),
               ),
               b()(
@@ -59685,12 +59681,12 @@
         Q = function (e, t) {
           var n = t.tweetId,
             r = n && L.a.select(e, n)
-          return r ? Object(B.f)(e, r) : void 0
+          return r ? Object(B.g)(e, r) : void 0
         },
         J = function (e, t) {
           var n = L.a.createHydratedTweetSelector(X)(e, t),
             r = null == n ? void 0 : n.quoted_status
-          return r ? Object(B.f)(e, r) : void 0
+          return r ? Object(B.g)(e, r) : void 0
         },
         $ = function (e, t) {
           return t.urtPromotedContent
@@ -59786,7 +59782,7 @@
               ),
               log: I.a,
               fetchAdFreeToken: U.a,
-              fetchCommunityIfNeeded: B.b.fetchOneIfNeeded,
+              fetchCommunityIfNeeded: B.c.fetchOneIfNeeded,
               fetchTopicIfNeeded: D.a.fetchOneIfNeeded,
               loadAdFreeArticleDomainsFromPersistence: U.b,
               mute: x.a,
@@ -61236,7 +61232,7 @@
         },
         s = Object(o.a)({
           loader: function () {
-            return n.e(168).then(n.bind(null, '6l+S'))
+            return n.e(167).then(n.bind(null, '6l+S'))
           },
           renderPlaceholder: function (e, t) {
             return r.createElement(c, { hasError: e, onRetry: t })
@@ -61592,7 +61588,7 @@
             p = u.advertiser_profile_image_url
           ;(o.advertiserName = d), (o.advertiserProfileImageUrl = p)
         }
-        if (null != r && r.redesign && e.isTrue('responsive_web_instream_video_redesign_enabled')) {
+        if (null != r && r.redesign) {
           ;(o.shouldAutoAdvance = !1), (o.useRedesignedPrerollUx = !0)
           var f = t.media_info,
             h = f.advertiser_name,
@@ -61643,7 +61639,7 @@
             m = i.advertiserProfileImageUrl
           ;(s.advertiserName = h), (s.advertiserProfileImageUrl = m)
         }
-        if (null != r && r.redesign && e.isTrue('responsive_web_instream_video_redesign_enabled')) {
+        if (null != r && r.redesign) {
           ;(s.shouldAutoAdvance = !1), (s.useRedesignedPrerollUx = !0)
           var v = i.advertiserName,
             y = i.advertiserProfileImageUrl
@@ -62037,7 +62033,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return n.e(214).then(n.bind(null, 'tFiq'))
+              return n.e(213).then(n.bind(null, 'tFiq'))
             },
             loaderKey: 'momentAnnoationLoader',
             strategy: n('XBtf').a.Critical,

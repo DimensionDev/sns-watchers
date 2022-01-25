@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [117],
+    [116],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -11,7 +11,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(293).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(292).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -1436,15 +1436,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('cc5ab041', 'This space has ended'),
           a('eadd5677', 'It looks like this space has been closed.'),
-          a('a2288d04', 'Twitter - Space'),
-          a('a324f032', 'Oops, let’s get you to the right place'),
-          a('eba5d942', 'Unable to join this space'),
-          a(
-            'a77e3b5c',
-            'Spaces is only available on iOS and Android for now, but we’re working to bring it to Twitter.com as fast as we can.',
-          ),
-          a('f66f311d', 'Join this space in the Twitter app.'),
-          a('db2b473e', 'Go to the app'),
           a('f5774e3a', 'Spaces Discovery'),
           a('e9f1fbcb', 'Nothing to see here — yet'),
           a('e67af8ef', function (e) {
@@ -1592,6 +1583,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('hfd2544f', 'Reviews are made by contributors, not Twitter.'),
           a('b9e1cf02', 'Request'),
+          a('i80c8a83', 'Additional review requested.'),
+          a('i97b83f6', 'There was an error submitting your appeal, please try again.'),
           a('c8259b73', 'request additional contributor review of this note'),
           a('ed5156f9', 'There was an error saving your rating, please try again.'),
           a('a7338bc2', 'Is this note helpful?'),
@@ -2227,15 +2220,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('jfe6a3a0', 'Motion'),
           a('a6d5b010', 'Timeline'),
           a('e8c72272', 'Increase color contrast'),
-          a('dba2cdd1', 'Improves legibility by increasing the contrast between text and background colors.')
-        a('d070244e', 'Reduce motion'),
+          a('dba2cdd1', 'Improves legibility by increasing the contrast between text and background colors.'),
+          a('d070244e', 'Reduce motion'),
           a('icfa5e8b', 'Limits the amount of in-app animations, including live engagement counts.'),
           a(
             'ae41b002',
             'Limits the amount of in-app animations, including live engagement counts. Your system is currently signaling to reduce motion. If you would like to re-enable motion, first disable it there.',
           ),
-          a('e82b294e', 'Prompt me to add image descriptions'),
-          a('ea284ab8', 'Get a reminder when you Tweet media without descriptions.'),
+          a('e82b294e', 'Prompt me to add image descriptions')
+        a('ea284ab8', 'Get a reminder when you Tweet media without descriptions.'),
           a('g1888dc1', 'Never'),
           a('f724d1a9', 'Only on Wi-Fi'),
           a('cf6472c1', 'On cellular or Wi-Fi'),
@@ -3503,6 +3496,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'c2254083',
             'We received your request. To protect your account, it can take 24 hours or longer for your data to be ready.',
+          ),
+          a(
+            'f62d1d9d',
+            'Your archive is ready for you to download and view using your desktop browser. Keep in mind, you need to download this data before it expires in a few days.',
+          ),
+          a('b221ca4b', 'We’ll let you know when your data is ready to download'),
+          a('c9c1ebbb', 'complete this form'),
+          a(
+            'a3f22d8d',
+            'Select the kinds of notifications you get about your activities, interests, and recommendations.',
           )
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
@@ -3520,17 +3523,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a(
-          'f62d1d9d',
-          'Your archive is ready for you to download and view using your desktop browser. Keep in mind, you need to download this data before it expires in a few days.',
-        ),
-          a('b221ca4b', 'We’ll let you know when your data is ready to download'),
-          a('c9c1ebbb', 'complete this form'),
-          a(
-            'a3f22d8d',
-            'Select the kinds of notifications you get about your activities, interests, and recommendations.',
-          ),
-          a('i647fb03', 'Filters'),
+        a('i647fb03', 'Filters'),
           a('ef1b5cbb', 'Choose the notifications you’d like to see — and those you don’t.'),
           a('bcd81cab', 'Preferences'),
           a('da867c58', 'Select your preferences by notification type.'),
@@ -4297,6 +4290,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'This is the best place to see what’s happening in your world. Find some people and topics to follow now.',
           ),
           a('bf17ded9', 'Let’s go!'),
+          a('d4d5785f', 'Welcome to your timeline!'),
+          a(
+            'f3f4c67b',
+            'This is the best place to see what’s happening on Twitter for you. The more people and interests you follow, the better your timeline becomes. We have some suggestions to help you get started.',
+          ),
+          a('a399ed2f', 'Let’s go'),
+          a(
+            'jb52037c',
+            'Your timeline is the best place to see what’s happening with the people and Topics you care about. Check out our suggested follows to start filling your timeline with Tweets.',
+          ),
+          a('b34cb956', 'Fill your timeline'),
           a('g2b8acd4', 'Log in to Twitter'),
           a('bdc9d8a2', 'Login on Twitter'),
           a(
@@ -4709,9 +4713,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'c5bb3cd1',
             'You’ll see Tweets about this in your Home timeline. This Topic will help personalize your experience across Twitter.',
-          ),
-          a('e241095e', 'Your Topics')
-        a('f8bc75e2', 'your Topics'),
+          )
+        a('e241095e', 'Your Topics'),
+          a('f8bc75e2', 'your Topics'),
           a('ed827af6', 'Topic is unavailable.'),
           a('d094c720', 'All Topics'),
           a('f68f0fc7', 'Twitter Topics'),
@@ -5637,6 +5641,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i5dfae6e', 'This video is not available in your location.'),
           a('c2388276', 'This video has been deleted.'),
           a('d2c9614f', 'Guest audio indicator'),
+          a('f6dc9146', 'REPLAY'),
+          a('d30c74fd', 'Volume'),
           a('a681babd', function (e) {
             return 'Watch now at ' + e.trimmedHostname
           }),
@@ -5644,8 +5650,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Visit ' + e.trimmedHostname
           }),
           a('f2d4e6f1', 'Watch again'),
-          a('f6dc9146', 'REPLAY'),
-          a('d30c74fd', 'Volume'),
           a('bb5d8cd1', 'Yes'),
           a('c2fc878c', function (e) {
             return 'You have exceeded the character limit by ' + e.count
@@ -6701,18 +6705,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'g1e704c3',
-                get: function () {
-                  return ['Trending with ']
-                },
-              },
-              {
-                key: 'i7bba09d',
-                get: function () {
-                  return ['Trending with ', ', ']
-                },
-              },
-              {
                 key: 'h0d6f2c5',
                 get: function () {
                   return ['', '']
@@ -6728,12 +6720,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'c4d3d078',
                 get: function () {
                   return ['By signing up, you agree to the ', ' and ', ', including ']
-                },
-              },
-              {
-                key: 'c79f144b',
-                get: function () {
-                  return ['Check out ', ' to stay up to date.']
                 },
               },
               {
@@ -8372,6 +8358,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'g4eb2847',
                 get: function () {
                   return ['Replying to ', ' ', ' ']
+                },
+              },
+              {
+                key: 'fe7c309b',
+                get: function () {
+                  return ['Trending with ']
+                },
+              },
+              {
+                key: 'ea753bf4',
+                get: function () {
+                  return ['Trending with ', ', ']
                 },
               },
               {

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [54],
+  [53],
   {
     PH3B: function (e, t, r) {
       'use strict'
@@ -11,14 +11,14 @@
         u = (r('JtPf'), r('7x/C'), r('87if'), r('lTEL'), r('kYxP'), r('XBtf')),
         l = {
           loader: function () {
-            return r.e(336).then(r.bind(null, 'a+ad'))
+            return r.e(335).then(r.bind(null, 'a+ad'))
           },
           loaderKey: 'newsCellLoader',
           strategy: u.a.Critical,
         },
         s = {
           loader: function () {
-            return r.e(338).then(r.bind(null, 'hX2d'))
+            return r.e(337).then(r.bind(null, 'hX2d'))
           },
           loaderKey: 'newsPreviewCardLoader',
           strategy: u.a.Critical,

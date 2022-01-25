@@ -1,311 +1,131 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [186],
+  [185],
   {
-    '0W/e': function (e, t, r) {
+    '0W/e': function (e, t, n) {
       'use strict'
-      r.d(t, 'a', function () {
+      n.d(t, 'a', function () {
         return a
       })
-      var n = r('rHpw'),
+      var r = n('rHpw'),
         a = function (e) {
           return 1 === e
-            ? { height: n.a.theme.spacesPx.space48, width: n.a.theme.spacesPx.space48 }
-            : { height: n.a.theme.spacesPx.space40, width: e * n.a.theme.spacesPx.space40 }
+            ? { height: r.a.theme.spacesPx.space48, width: r.a.theme.spacesPx.space48 }
+            : { height: r.a.theme.spacesPx.space40, width: e * r.a.theme.spacesPx.space40 }
         }
     },
-    PEva: function (e, t, r) {
+    PEva: function (e, t, n) {
       'use strict'
-      r.r(t)
-      r('OZaJ')
-      var n = r('VrFO'),
-        a = r.n(n),
-        l = r('Y9Ll'),
-        o = r.n(l),
-        i = r('5Yy7'),
-        c = r.n(i),
-        s = r('N+ot'),
-        u = r.n(s),
-        p = r('AuHH'),
-        f = r.n(p),
-        m = r('ERkP'),
-        d = r('1Pcy'),
-        y = r.n(d),
-        h = r('KEM+'),
-        b = r.n(h),
-        v = (r('2G9S'), r('+xEG')),
-        g = r('aoyV'),
-        E = r('kCRK'),
-        S = r('fZNH'),
-        O = r('ub6r'),
-        R = r('0nHQ'),
-        w = r('USG3'),
-        C = r('Q0n6'),
-        P = r('5VhU'),
-        A = r('hhMf'),
-        k = r('Ur4q'),
-        T = r('oH2E'),
-        L = r('mNIZ'),
-        x = r('zCLo'),
-        _ = r('MWbm'),
-        j = r('ReFq'),
-        I = r('VLhD')
-      function F(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var r,
-            n = f()(e)
-          if (t) {
-            var a = f()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return u()(this, r)
-        }
-      }
-      var B = (function (e) {
-          c()(r, e)
-          var t = F(r)
-          function r() {
-            var e
-            a()(this, r)
-            for (var n = arguments.length, l = new Array(n), o = 0; o < n; o++) l[o] = arguments[o]
-            return (
-              (e = t.call.apply(t, [this].concat(l))),
-              b()(y()(e), '_renderWithHideControls', function (t) {
-                var r,
-                  n,
-                  a = e.props,
-                  l = a.accessibilityLabel,
-                  o = a.containerRef,
-                  i = a.customControlBarIcon,
-                  c = a.fullscreenAdsDisabledOnIOS,
-                  s = a.guestsState,
-                  u = a.onScribeEvent,
-                  p = a.playerApi,
-                  f = a.playerDisplayOptions,
-                  d = a.playerState,
-                  y = a.poster,
-                  h = a.shouldShowAltLabel,
-                  b = a.showWatchAgain,
-                  A = a.useKeyboardShortcuts
-                if (!p || !d) return null
-                var F = Object(C.e)(d),
-                  B = (null == F ? void 0 : F.contentType) === E.a.GIF,
-                  D = 'PLAY_REQUESTED' !== (null === (r = d.controls) || void 0 === r ? void 0 : r.playState),
-                  N = b && d.tracksFinished,
-                  M = t.Observer,
-                  W = t.observed,
-                  H = Object(I.c)(d, W, I.b),
-                  U = !!d.error,
-                  K = H && d.isPreview,
-                  V = !(!H || null == F || !F.isLive),
-                  z = h ? l : void 0,
-                  Y = !(null != f && f.hideLeftBadges) && (!!z || B || K || V),
-                  X = !(null != f && f.hideRightBadges) && H,
-                  G = !(null != f && f.hidePosterImage),
-                  Z = null === (n = d.controls) || void 0 === n ? void 0 : n.isPosterShown
-                return m.createElement(
-                  x.a,
-                  { enabled: !!A, playerApi: p, playerState: d },
-                  m.createElement(
-                    S.a,
-                    { playerState: d },
-                    m.createElement(
-                      M,
-                      { click: !0, interactionKey: I.a.Root, mousemove: !0, mouseover: !0 },
-                      U
-                        ? null
-                        : m.createElement(
-                            m.Fragment,
-                            null,
-                            m.createElement(k.a, {
-                              hideControls: H,
-                              isTouchOnlyUI: I.b,
-                              playerApi: p,
-                              playerDisplayOptions: f,
-                              playerState: d,
-                            }),
-                            G &&
-                              !N &&
-                              m.createElement(T.a, { imageSrc: y, playerApi: p, playerState: d, withPlayButton: D }),
-                            m.createElement(g.a, { playerState: d }),
-                            !B && b && m.createElement(j.a, { onScribeEvent: u, playerApi: p, playerState: d }),
-                            m.createElement(P.a, { guestsState: s, playerState: d }),
-                            !B &&
-                              m.createElement(
-                                M,
-                                { focus: !0, interactionKey: I.a.VideoCTA, mouseover: !0 },
-                                m.createElement(
-                                  w.a,
-                                  { show: !H },
-                                  m.createElement(L.a, { playerApi: p, playerState: d }),
-                                ),
-                              ),
-                            !B &&
-                              !Z &&
-                              m.createElement(
-                                m.Fragment,
-                                null,
-                                m.createElement(
-                                  M,
-                                  { focus: !0, interactionKey: I.a.A11YHook },
-                                  m.createElement(_.a, { focusable: !0 }),
-                                ),
-                                m.createElement(
-                                  M,
-                                  { focus: !0, interactionKey: I.a.ControlBar, mouseover: !0, touch: !0 },
-                                  m.createElement(O.a, {
-                                    containerRef: o,
-                                    customControlBarIcon: i,
-                                    fullscreenAdsDisabledOnIOS: c,
-                                    hideControls: H,
-                                    playerApi: p,
-                                    playerState: d,
-                                    publisherDisplayName: null == F ? void 0 : F.publisherDisplayName,
-                                    publisherProfileImageUrl: null == F ? void 0 : F.publisherProfileImageUrl,
-                                    showScrubber:
-                                      'ad' !== (null == F ? void 0 : F.displayType) && !(null != F && F.isLive),
-                                  }),
-                                ),
-                              ),
-                            m.createElement(
-                              w.a,
-                              { show: Y },
-                              m.createElement(v.a, {
-                                mediaAccessibilityLabel: z,
-                                playerDisplayOptions: f,
-                                playerState: d,
-                                position: 'left',
-                              }),
-                            ),
-                            m.createElement(
-                              w.a,
-                              { show: X },
-                              m.createElement(v.a, { playerDisplayOptions: f, playerState: d, position: 'right' }),
-                            ),
-                          ),
-                      m.createElement(
-                        w.a,
-                        { show: U },
-                        U && m.createElement(R.a, { imageSrc: y, playerApi: p, playerState: d }),
-                      ),
-                    ),
-                  ),
-                )
-              }),
-              e
-            )
-          }
-          return (
-            o()(r, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.playerApi,
-                    r = e.playerState
-                  return t && r
-                    ? m.createElement(
-                        A.a,
-                        null,
-                        m.createElement(A.a.Context.Consumer, null, this._renderWithHideControls),
-                      )
-                    : null
-                },
-              },
-            ]),
-            r
-          )
-        })(m.PureComponent),
-        D = r('Zl35'),
-        N = r('RhWx'),
-        M = r.n(N),
-        W = r('t62R'),
-        H = r('Wms4'),
-        U = r('vCAy'),
-        K = r('w05h'),
-        V = r('IE/l'),
-        z = r('N2PN'),
-        Y = r('dPHj'),
-        X = (r('uFXj'), r('/yvb')),
-        G = r('0W/e'),
-        Z = (r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('Lsrn')),
-        q = r('k/Ka')
-      function Q(e, t) {
-        var r = Object.keys(e)
+      n.r(t)
+      n('OZaJ')
+      var r = n('VrFO'),
+        a = n.n(r),
+        i = n('Y9Ll'),
+        l = n.n(i),
+        o = n('1Pcy'),
+        c = n.n(o),
+        s = n('5Yy7'),
+        u = n.n(s),
+        p = n('N+ot'),
+        f = n.n(p),
+        m = n('AuHH'),
+        d = n.n(m),
+        b = n('KEM+'),
+        y = n.n(b),
+        h = (n('2G9S'), n('ERkP')),
+        v = n('+xEG'),
+        g = n('aoyV'),
+        E = n('Zl35'),
+        O = n('fZNH'),
+        S = n('ub6r'),
+        R = n('0nHQ'),
+        w = n('USG3'),
+        C = n('Q0n6'),
+        P = n('5VhU'),
+        A = n('hhMf'),
+        k = n('Ur4q'),
+        T = n('oH2E'),
+        L = n('RhWx'),
+        x = n.n(L),
+        _ = n('t62R'),
+        j = n('Wms4'),
+        I = n('vCAy'),
+        F = n('w05h'),
+        B = n('IE/l'),
+        D = n('N2PN'),
+        N = n('dPHj'),
+        M = (n('uFXj'), n('/yvb')),
+        W = n('0W/e'),
+        H = n('kCRK'),
+        V = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('Lsrn')),
+        z = n('k/Ka')
+      function K(e, t) {
+        var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
+          var r = Object.getOwnPropertySymbols(e)
           t &&
-            (n = n.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            r.push.apply(r, n)
+            n.push.apply(n, r)
         }
-        return r
+        return n
       }
-      function J(e) {
+      function U(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
+          var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Q(Object(r), !0).forEach(function (t) {
-                b()(e, t, r[t])
+            ? K(Object(n), !0).forEach(function (t) {
+                y()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : Q(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : K(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var $ = function () {
+      var X = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(q.a)(
+        return Object(z.a)(
           'svg',
-          J(
-            J({}, e),
+          U(
+            U({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [Z.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [V.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          m.createElement(
+          h.createElement(
             'g',
             null,
-            m.createElement('path', {
+            h.createElement('path', {
               d: 'M20.5 2h-1c-.828 0-1.5.672-1.5 1.5v6.976L4.87 2.116c-.228-.146-.522-.157-.762-.023-.24.132-.39.384-.39.657v18.5c0 .273.15.525.39.657.113.063.237.093.36.093.142 0 .28-.04.403-.117L18 13.527V20.5c0 .828.672 1.5 1.5 1.5h1c.828 0 1.5-.672 1.5-1.5v-17c0-.828-.672-1.5-1.5-1.5z',
             }),
           ),
         )
       }
-      $.metadata = { width: 24, height: 24 }
-      var ee = $,
-        te = r('3rX5'),
-        re = r('cm6r'),
-        ne = r('fs1G'),
-        ae = r('rHpw'),
-        le = r('shC7'),
-        oe = ae.a.create(function (e) {
+      X.metadata = { width: 24, height: 24 }
+      var Y = X,
+        G = n('3rX5'),
+        Z = n('cm6r'),
+        q = n('fs1G'),
+        J = n('rHpw'),
+        Q = n('shC7'),
+        $ = n('MWbm'),
+        ee = J.a.create(function (e) {
           var t = e.borderRadii,
-            r = e.borderWidths,
-            n = e.colors,
+            n = e.borderWidths,
+            r = e.colors,
             a = e.spaces
           return {
             thumbnail: {
-              backgroundColor: n.translucentBlack77,
+              backgroundColor: r.translucentBlack77,
               borderRadius: t.small,
               display: 'flex',
-              flexDirection: le.a.getConstants().isRTL ? 'row-reverse' : 'row',
+              flexDirection: Q.a.getConstants().isRTL ? 'row-reverse' : 'row',
               overflow: 'hidden',
               opacity: 1,
             },
-            thumbnailFocused: { boxShadow: '0 0 0 '.concat(r.medium, ' ').concat(n.white), outlineStyle: 'none' },
+            thumbnailFocused: { boxShadow: '0 0 0 '.concat(n.medium, ' ').concat(r.white), outlineStyle: 'none' },
             countdownTime: {
               paddingHorizontal: a.space4,
               minWidth: '1em',
@@ -318,58 +138,58 @@
             iconMarginRtl: { marginRight: '0.5em' },
           }
         }),
-        ie = function (e) {
+        te = function (e) {
           var t = e.onClick,
-            r = m.useContext(D.b.PeriodicContext),
-            n = r.aspectRatio,
-            a = r.playerState
+            n = h.useContext(E.b.PeriodicContext),
+            r = n.aspectRatio,
+            a = n.playerState
           if (!a) return null
-          var l = Object(C.e)(a)
-          if (!l || l.displayType !== E.c.AD) return null
-          var o = l.durationMs,
-            i = o < 7e3,
-            c = (i ? o : 5e3) - (l.currentTimeMs || 0),
+          var i = Object(C.e)(a)
+          if (!i || i.displayType !== H.c.AD) return null
+          var l = i.durationMs,
+            o = l < 7e3,
+            c = (o ? l : 5e3) - (i.currentTimeMs || 0),
             s = c > 250,
             u = c < 0,
-            p = Object(C.d)(l) || 0,
-            f = Object(C.f)(l) || 0,
-            d = (i ? f : 5) - p,
-            y = Object(K.m)({ seconds: Object(K.q)(d) })
-          return m.createElement(
-            re.a,
+            p = Object(C.d)(i) || 0,
+            f = Object(C.f)(i) || 0,
+            m = (o ? f : 5) - p,
+            d = Object(F.m)({ seconds: Object(F.q)(m) })
+          return h.createElement(
+            Z.a,
             {
-              accessibilityLabel: u ? K.l : y,
+              accessibilityLabel: u ? F.l : d,
               accessibilityRole: 'button',
               focusable: !0,
               interactive: !0,
               interactiveStyles: null,
-              onClick: u && t ? t : ne.a,
+              onClick: u && t ? t : q.a,
               testID: 'ControlBar-containerView',
             },
             function (e) {
-              var t = le.a.getConstants().isRTL
-              return m.createElement(
-                m.Fragment,
+              var t = Q.a.getConstants().isRTL
+              return h.createElement(
+                h.Fragment,
                 null,
                 !u &&
-                  m.createElement(
+                  h.createElement(
                     w.a,
                     { show: s },
-                    m.createElement(
-                      _.a,
+                    h.createElement(
+                      $.a,
                       {
-                        style: [oe.thumbnail, e.isFocused && oe.thumbnailFocused],
+                        style: [ee.thumbnail, e.isFocused && ee.thumbnailFocused],
                         testID: 'ControlBar-videoThumbnail',
                       },
-                      m.createElement(W.b, { color: 'white', size: 'subtext2', style: oe.countdownTime }, d),
-                      m.createElement(te.a, { source: a.posterImage, style: Object(G.a)(n) }),
+                      h.createElement(_.b, { color: 'white', size: 'subtext2', style: ee.countdownTime }, m),
+                      h.createElement(G.a, { source: a.posterImage, style: Object(W.a)(r) }),
                     ),
                   ),
-                m.createElement(
+                h.createElement(
                   w.a,
                   { show: u },
-                  m.createElement(
-                    X.a,
+                  h.createElement(
+                    M.a,
                     {
                       focusable: !1,
                       interactivityState: e,
@@ -378,11 +198,11 @@
                       testID: 'ControlBar-skipButton',
                       type: 'onMediaDominantColorFilled',
                     },
-                    m.createElement(
-                      W.b,
+                    h.createElement(
+                      _.b,
                       { dir: 'ltr', weight: 'normal' },
-                      K.k,
-                      m.createElement(ee, { style: t ? oe.iconMarginRtl : oe.iconMargin }),
+                      F.k,
+                      h.createElement(Y, { style: t ? ee.iconMarginRtl : ee.iconMargin }),
                     ),
                   ),
                 ),
@@ -390,14 +210,14 @@
             },
           )
         },
-        ce = r('aITJ'),
-        se = r('kRXa'),
-        ue = r('wtsM'),
-        pe = r('5Ixf'),
-        fe = r('AtEG'),
-        me = r('NnQ9'),
-        de = r('p6DB')
-      function ye(e) {
+        ne = n('aITJ'),
+        re = n('kRXa'),
+        ae = n('wtsM'),
+        ie = n('5Ixf'),
+        le = n('AtEG'),
+        oe = n('NnQ9'),
+        ce = n('p6DB')
+      function se(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -409,162 +229,162 @@
           }
         })()
         return function () {
-          var r,
-            n = f()(e)
+          var n,
+            r = d()(e)
           if (t) {
-            var a = f()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return u()(this, r)
+            var a = d()(this).constructor
+            n = Reflect.construct(r, arguments, a)
+          } else n = r.apply(this, arguments)
+          return f()(this, n)
         }
       }
-      var he = 'PrerollControlBar-',
-        be = { CAPTIONS: ''.concat(he, 'Captions'), FULLSCREEN: ''.concat(he, 'Fullscreen') },
-        ve = (function (e) {
-          c()(r, e)
-          var t = ye(r)
-          function r() {
+      var ue = 'PrerollControlBar-',
+        pe = { CAPTIONS: ''.concat(ue, 'Captions'), FULLSCREEN: ''.concat(ue, 'Fullscreen') },
+        fe = (function (e) {
+          u()(n, e)
+          var t = se(n)
+          function n() {
             var e
-            a()(this, r)
-            for (var n = arguments.length, l = new Array(n), o = 0; o < n; o++) l[o] = arguments[o]
+            a()(this, n)
+            for (var r = arguments.length, i = new Array(r), l = 0; l < r; l++) i[l] = arguments[l]
             return (
-              (e = t.call.apply(t, [this].concat(l))),
-              b()(y()(e), '_parentRef', m.createRef()),
-              b()(y()(e), '_renderRightContent', function (t) {
-                var r = e.props,
-                  n = r.playerApi,
-                  a = r.playerState
-                if (!n || !a) return null
-                var l = ce.b.isIOS()
-                return m.createElement(
-                  m.Fragment,
+              (e = t.call.apply(t, [this].concat(i))),
+              y()(c()(e), '_parentRef', h.createRef()),
+              y()(c()(e), '_renderRightContent', function (t) {
+                var n = e.props,
+                  r = n.playerApi,
+                  a = n.playerState
+                if (!r || !a) return null
+                var i = ne.b.isIOS()
+                return h.createElement(
+                  h.Fragment,
                   null,
                   e._renderTimePlayed(),
-                  e._renderVolumeControls(n, a),
-                  !l &&
-                    m.createElement(
+                  e._renderVolumeControls(r, a),
+                  !i &&
+                    h.createElement(
                       t,
-                      { focus: !0, interactionKey: be.FULLSCREEN, interactionTimeoutMs: 0, mouseover: !0 },
-                      e._renderFullScreenButton(n, a),
+                      { focus: !0, interactionKey: pe.FULLSCREEN, interactionTimeoutMs: 0, mouseover: !0 },
+                      e._renderFullScreenButton(r, a),
                     ),
                 )
               }),
-              b()(y()(e), '_renderActionButton', function (e, t) {
-                var r = t.controls,
-                  n = t.isPlaying,
+              y()(c()(e), '_renderActionButton', function (e, t) {
+                var n = t.controls,
+                  r = t.isPlaying,
                   a = e.pause,
-                  l = e.play,
-                  o = Object(C.e)(t)
-                return !o || o.isLive
+                  i = e.play,
+                  l = Object(C.e)(t)
+                return !l || l.isLive
                   ? null
-                  : n || (r && 'PLAY_REQUESTED' === r.playState)
-                  ? m.createElement(z.b, {
-                      accessibilityLabel: ue.d,
+                  : r || (n && 'PLAY_REQUESTED' === n.playState)
+                  ? h.createElement(D.b, {
+                      accessibilityLabel: ae.d,
                       hoverLabelPreferredHorizontalOrientation: 'end',
-                      icon: m.createElement(pe.a, null),
+                      icon: h.createElement(ie.a, null),
                       onPress: a,
                     })
-                  : m.createElement(z.b, {
-                      accessibilityLabel: ue.e,
+                  : h.createElement(D.b, {
+                      accessibilityLabel: ae.e,
                       hoverLabelPreferredHorizontalOrientation: 'end',
-                      icon: m.createElement(fe.a, null),
-                      onPress: l,
+                      icon: h.createElement(le.a, null),
+                      onPress: i,
                     })
               }),
-              b()(y()(e), '_renderAdText', function () {
-                return m.createElement(Y.a, null, K.o)
+              y()(c()(e), '_renderAdText', function () {
+                return h.createElement(N.a, null, F.o)
               }),
-              b()(y()(e), '_renderTimePlayed', function () {
-                return m.createElement(D.a, { periodic: !0 }, function (e) {
+              y()(c()(e), '_renderTimePlayed', function () {
+                return h.createElement(E.a, { periodic: !0 }, function (e) {
                   var t = e.playerState,
-                    r = Object(C.e)(t),
-                    n = Object(C.d)(r),
-                    a = Object(C.f)(r)
-                  return r && 'number' == typeof n && a && !r.isLive
-                    ? m.createElement(Y.a, null, ''.concat(Object(C.b)(n), ' / ').concat(Object(C.b)(a)))
+                    n = Object(C.e)(t),
+                    r = Object(C.d)(n),
+                    a = Object(C.f)(n)
+                  return n && 'number' == typeof r && a && !n.isLive
+                    ? h.createElement(N.a, null, ''.concat(Object(C.b)(r), ' / ').concat(Object(C.b)(a)))
                     : null
                 })
               }),
-              b()(y()(e), '_renderVolumeControls', function (t, r) {
-                var n = r.isMuted,
-                  a = r.volume,
-                  l = t.mute,
-                  o = t.setVolume,
-                  i = t.unmute,
-                  c = n ? i : l,
-                  s = n ? ue.g : ue.c
-                return m.createElement(se.a, {
+              y()(c()(e), '_renderVolumeControls', function (t, n) {
+                var r = n.isMuted,
+                  a = n.volume,
+                  i = t.mute,
+                  l = t.setVolume,
+                  o = t.unmute,
+                  c = r ? o : i,
+                  s = r ? ae.g : ae.c
+                return h.createElement(re.a, {
                   accessibilityLabelIcon: s,
-                  accessibilityLabelSlider: ue.h,
-                  isMuted: n,
+                  accessibilityLabelSlider: ae.h,
+                  isMuted: r,
                   onMuteToggle: c,
-                  onSliderChange: e._setVolumePercent(o),
+                  onSliderChange: e._setVolumePercent(l),
                   volumePercent: 100 * a,
                 })
               }),
-              b()(y()(e), '_setVolumePercent', function (e) {
+              y()(c()(e), '_setVolumePercent', function (e) {
                 return function (t) {
                   e(t / 100)
                 }
               }),
-              b()(y()(e), '_renderFullScreenButton', function (t, r) {
-                var n = r.fullscreen
-                return n.isFullscreen
-                  ? m.createElement(z.b, {
-                      accessibilityLabel: ue.b,
+              y()(c()(e), '_renderFullScreenButton', function (t, n) {
+                var r = n.fullscreen
+                return r.isFullscreen
+                  ? h.createElement(D.b, {
+                      accessibilityLabel: ae.b,
                       hoverLabelPreferredHorizontalOrientation: 'start',
-                      icon: m.createElement(Ee, { isFullscreen: n.isFullscreen }),
+                      icon: h.createElement(de, { isFullscreen: r.isFullscreen }),
                       onPress: e._exitFullScreen(t),
                     })
-                  : m.createElement(z.b, {
-                      accessibilityLabel: ue.a,
+                  : h.createElement(D.b, {
+                      accessibilityLabel: ae.a,
                       hoverLabelPreferredHorizontalOrientation: 'start',
-                      icon: m.createElement(Ee, { isFullscreen: n.isFullscreen }),
+                      icon: h.createElement(de, { isFullscreen: r.isFullscreen }),
                       onPress: e._requestFullScreen(t),
                     })
               }),
-              b()(y()(e), '_requestFullScreen', function (t) {
+              y()(c()(e), '_requestFullScreen', function (t) {
                 return function () {
                   t.fullScreen(e.props.containerRef)
                 }
               }),
-              b()(y()(e), '_exitFullScreen', function (e) {
+              y()(c()(e), '_exitFullScreen', function (e) {
                 return function () {
                   return e.exitFullScreen()
                 }
               }),
-              b()(y()(e), '_renderSkipAffordance', function () {
-                return m.createElement(
-                  _.a,
-                  { pointerEvents: 'none', style: ge.skipAffordance },
-                  m.createElement(ie, null),
+              y()(c()(e), '_renderSkipAffordance', function () {
+                return h.createElement(
+                  $.a,
+                  { pointerEvents: 'none', style: me.skipAffordance },
+                  h.createElement(te, null),
                 )
               }),
               e
             )
           }
           return (
-            o()(r, [
+            l()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this,
                     t = this.props,
-                    r = t.displayDismissableControls,
-                    n = t.playerApi,
+                    n = t.displayDismissableControls,
+                    r = t.playerApi,
                     a = t.playerState,
-                    l = t.skipButton
-                  return n && a
-                    ? m.createElement(A.a.ObserverContext.Consumer, null, function (t) {
-                        return m.createElement(
-                          _.a,
-                          { ref: e._parentRef, style: ge.root },
-                          m.createElement(V.a, {
-                            actionButton: e._renderActionButton(n, a),
-                            displayDismissableControls: r,
+                    i = t.skipButton
+                  return r && a
+                    ? h.createElement(A.a.ObserverContext.Consumer, null, function (t) {
+                        return h.createElement(
+                          $.a,
+                          { ref: e._parentRef, style: me.root },
+                          h.createElement(B.a, {
+                            actionButton: e._renderActionButton(r, a),
+                            displayDismissableControls: n,
                             leftContent: e._renderAdText(),
                             rightContent: e._renderRightContent(t),
-                            skipButton: l,
+                            skipButton: i,
                           }),
                         )
                       })
@@ -572,30 +392,30 @@
                 },
               },
             ]),
-            r
+            n
           )
-        })(m.Component),
-        ge = ae.a.create(function (e) {
+        })(h.Component),
+        me = J.a.create(function (e) {
           return {
             root: { writingDirection: 'ltr', cursor: 'auto', width: '100%' },
             skipAffordance: { marginLeft: e.spaces.space12, visibility: 'hidden' },
           }
         })
-      function Ee(e) {
+      function de(e) {
         var t = e.isFullscreen,
-          r = (e.style, Se.hidden),
-          n = Se.shown
-        return m.createElement(
-          m.Fragment,
+          n = (e.style, be.hidden),
+          r = be.shown
+        return h.createElement(
+          h.Fragment,
           null,
-          m.createElement(me.a, { style: t ? r : n }),
-          m.createElement(de.a, { style: t ? n : r }),
+          h.createElement(oe.a, { style: t ? n : r }),
+          h.createElement(ce.a, { style: t ? r : n }),
         )
       }
-      var Se = { hidden: { display: 'none', height: '1.5em' }, shown: { display: 'block', height: '1.5em' } },
-        Oe = ve,
-        Re = r('jhWN')
-      function we(e) {
+      var be = { hidden: { display: 'none', height: '1.5em' }, shown: { display: 'block', height: '1.5em' } },
+        ye = fe,
+        he = n('jhWN')
+      function ve(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -607,40 +427,40 @@
           }
         })()
         return function () {
-          var r,
-            n = f()(e)
+          var n,
+            r = d()(e)
           if (t) {
-            var a = f()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return u()(this, r)
+            var a = d()(this).constructor
+            n = Reflect.construct(r, arguments, a)
+          } else n = r.apply(this, arguments)
+          return f()(this, n)
         }
       }
-      var Ce = (function (e) {
-          c()(r, e)
-          var t = we(r)
-          function r() {
+      var ge = (function (e) {
+          u()(n, e)
+          var t = ve(n)
+          function n() {
             var e
-            a()(this, r)
-            for (var n = arguments.length, l = new Array(n), o = 0; o < n; o++) l[o] = arguments[o]
+            a()(this, n)
+            for (var r = arguments.length, i = new Array(r), l = 0; l < r; l++) i[l] = arguments[l]
             return (
-              (e = t.call.apply(t, [this].concat(l))),
-              b()(y()(e), '_buildMessage', function (e, t) {
+              (e = t.call.apply(t, [this].concat(i))),
+              y()(c()(e), '_buildMessage', function (e, t) {
                 switch (e) {
-                  case E.d.watch_now:
-                    return t ? Object(K.e)({ advertiserName: t }) : K.j
-                  case E.d.shop:
-                    return t ? Object(K.c)({ advertiserName: t }) : K.h
-                  case E.d.see_more:
-                    return t ? Object(K.b)({ advertiserName: t }) : K.g
-                  case E.d.go_to:
-                    return t ? Object(K.a)({ advertiserName: t }) : K.f
-                  case E.d.visit_site:
+                  case H.d.watch_now:
+                    return t ? Object(F.e)({ advertiserName: t }) : F.j
+                  case H.d.shop:
+                    return t ? Object(F.c)({ advertiserName: t }) : F.h
+                  case H.d.see_more:
+                    return t ? Object(F.b)({ advertiserName: t }) : F.g
+                  case H.d.go_to:
+                    return t ? Object(F.a)({ advertiserName: t }) : F.f
+                  case H.d.visit_site:
                   default:
-                    return t ? Object(K.d)({ advertiserName: t }) : K.i
+                    return t ? Object(F.d)({ advertiserName: t }) : F.i
                 }
               }),
-              b()(y()(e), '_handlePress', function (e) {
+              y()(c()(e), '_handlePress', function (e) {
                 return function () {
                   e.callToActionClicked()
                 }
@@ -649,7 +469,7 @@
             )
           }
           return (
-            o()(r, [
+            l()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -662,39 +482,39 @@
                 value: function () {
                   var e = this.props,
                     t = e.advertiserName,
-                    r = e.avatarUri,
-                    n = e.ctaType,
+                    n = e.avatarUri,
+                    r = e.ctaType,
                     a = e.ctaUrl,
-                    l = e.playerApi
-                  if (!l) return null
-                  var o = this._buildMessage(n, t)
-                  return m.createElement(
-                    X.a,
+                    i = e.playerApi
+                  if (!i) return null
+                  var l = this._buildMessage(r, t)
+                  return h.createElement(
+                    M.a,
                     {
-                      accessibilityLabel: o,
-                      icon: r
-                        ? m.createElement(Re.a, { borderColor: 'white', borderWidth: 'small', size: 'medium', uri: r })
+                      accessibilityLabel: l,
+                      icon: n
+                        ? h.createElement(he.a, { borderColor: 'white', borderWidth: 'small', size: 'medium', uri: n })
                         : void 0,
                       link: a,
-                      onPress: this._handlePress(l),
+                      onPress: this._handlePress(i),
                       size: 'xSmall',
-                      style: Pe.root,
+                      style: Ee.root,
                       type: 'onMediaDominantColorFilled',
                     },
-                    o,
+                    l,
                   )
                 },
               },
             ]),
-            r
+            n
           )
-        })(m.PureComponent),
-        Pe = ae.a.create(function (e) {
+        })(h.PureComponent),
+        Ee = J.a.create(function (e) {
           return { root: { position: 'absolute', left: e.spaces.space12, top: e.spaces.space12 } }
         }),
-        Ae = Ce,
-        ke = (r('z84I'), r('aNKf')),
-        Te = ae.a.create(function (e) {
+        Oe = ge,
+        Se = (n('z84I'), n('aNKf')),
+        Re = J.a.create(function (e) {
           return {
             root: { position: 'absolute', top: 0, left: 0, width: '100%' },
             gradientContainer: { padding: e.spaces.space16 },
@@ -702,31 +522,32 @@
             rightSpacing: { marginRight: e.spaces.space4 },
           }
         }),
-        Le = function (e) {
+        we = function (e) {
           var t = e.children
-          return m.createElement(
-            _.a,
-            { style: Te.root },
-            m.createElement(
-              ke.a,
+          return h.createElement(
+            $.a,
+            { style: Re.root },
+            h.createElement(
+              Se.a,
               {
-                colors: [ae.a.theme.colors.translucentBlack77, ae.a.theme.colors.transparent],
-                style: Te.gradientContainer,
+                colors: [J.a.theme.colors.translucentBlack77, J.a.theme.colors.transparent],
+                style: Re.gradientContainer,
               },
-              m.createElement(
-                _.a,
-                { style: Te.flexRow },
-                m.Children.toArray(t).map(function (e, t, r) {
-                  var n = r.length,
+              h.createElement(
+                $.a,
+                { style: Re.flexRow },
+                h.Children.toArray(t).map(function (e, t, n) {
+                  var r = n.length,
                     a = 'LinearGradient-children-'.concat(t),
-                    l = t < n - 1 ? Te.rightSpacing : ''
-                  return m.createElement(_.a, { key: a, style: l }, e)
+                    i = t < r - 1 ? Re.rightSpacing : ''
+                  return h.createElement($.a, { key: a, style: i }, e)
                 }),
               ),
             ),
           )
-        }
-      function xe(e) {
+        },
+        Ce = n('VLhD')
+      function Pe(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -738,116 +559,116 @@
           }
         })()
         return function () {
-          var r,
-            n = f()(e)
+          var n,
+            r = d()(e)
           if (t) {
-            var a = f()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return u()(this, r)
+            var a = d()(this).constructor
+            n = Reflect.construct(r, arguments, a)
+          } else n = r.apply(this, arguments)
+          return f()(this, n)
         }
       }
-      var _e = (function (e) {
-          c()(r, e)
-          var t = xe(r)
-          function r() {
+      var Ae = (function (e) {
+          u()(n, e)
+          var t = Pe(n)
+          function n() {
             var e
-            a()(this, r)
-            for (var n = arguments.length, l = new Array(n), o = 0; o < n; o++) l[o] = arguments[o]
+            a()(this, n)
+            for (var r = arguments.length, i = new Array(r), l = 0; l < r; l++) i[l] = arguments[l]
             return (
-              (e = t.call.apply(t, [this].concat(l))),
-              b()(y()(e), 'state', { showControlBar: !1, stackedLabels: !1 }),
-              b()(y()(e), '_durationLabelRef', m.createRef()),
-              b()(y()(e), '_descriptionLabelRef', m.createRef()),
-              b()(y()(e), '_handleLayout', function () {
+              (e = t.call.apply(t, [this].concat(i))),
+              y()(c()(e), 'state', { showControlBar: !1, stackedLabels: !1 }),
+              y()(c()(e), '_durationLabelRef', h.createRef()),
+              y()(c()(e), '_descriptionLabelRef', h.createRef()),
+              y()(c()(e), '_handleLayout', function () {
                 var t,
-                  r,
-                  n = null === (t = e._durationLabelRef) || void 0 === t ? void 0 : t.current,
-                  a = null === (r = e._descriptionLabelRef) || void 0 === r ? void 0 : r.current
-                n &&
+                  n,
+                  r = null === (t = e._durationLabelRef) || void 0 === t ? void 0 : t.current,
+                  a = null === (n = e._descriptionLabelRef) || void 0 === n ? void 0 : n.current
+                r &&
                   a &&
-                  n.measure(function (t, r) {
-                    a.measure(function (t, n) {
-                      r !== n ? e.setState({ stackedLabels: !0 }) : e.setState({ stackedLabels: !1 })
+                  r.measure(function (t, n) {
+                    a.measure(function (t, r) {
+                      n !== r ? e.setState({ stackedLabels: !0 }) : e.setState({ stackedLabels: !1 })
                     })
                   })
               }),
-              b()(y()(e), '_renderPrerollControlBar', function (t) {
-                var r = e.props,
-                  n = r.containerRef,
-                  a = r.onSkip,
-                  l = r.playerApi,
-                  o = r.playerState
-                if (!l || !o) return null
-                var i = t.Observer,
+              y()(c()(e), '_renderPrerollControlBar', function (t) {
+                var n = e.props,
+                  r = n.containerRef,
+                  a = n.onSkip,
+                  i = n.playerApi,
+                  l = n.playerState
+                if (!i || !l) return null
+                var o = t.Observer,
                   c = t.observed,
-                  s = Object(I.c)(o, c, I.b),
-                  u = o.fullscreen.isFullscreen,
-                  p = le.a.getConstants().isRTL,
-                  f = [je.labelOuterContainerBase, p ? je.labelOuterContainerRtl : je.labelOuterContainerLtr]
-                return m.createElement(
-                  _.a,
-                  { style: je.bottomContentContainer },
-                  m.createElement(
-                    _.a,
-                    { style: je.bottomContentRow },
-                    m.createElement(
-                      _.a,
-                      { style: [je.forceFullWidth, je.flexDirectionRow] },
-                      m.createElement(
-                        i,
-                        { focus: !0, interactionKey: I.a.A11YHook },
-                        m.createElement(_.a, { focusable: !0 }),
+                  s = Object(Ce.c)(l, c, Ce.b),
+                  u = l.fullscreen.isFullscreen,
+                  p = Q.a.getConstants().isRTL,
+                  f = [ke.labelOuterContainerBase, p ? ke.labelOuterContainerRtl : ke.labelOuterContainerLtr]
+                return h.createElement(
+                  $.a,
+                  { style: ke.bottomContentContainer },
+                  h.createElement(
+                    $.a,
+                    { style: ke.bottomContentRow },
+                    h.createElement(
+                      $.a,
+                      { style: [ke.forceFullWidth, ke.flexDirectionRow] },
+                      h.createElement(
+                        o,
+                        { focus: !0, interactionKey: Ce.a.A11YHook },
+                        h.createElement($.a, { focusable: !0 }),
                       ),
-                      m.createElement(
-                        _.a,
-                        { style: je.flexExpand },
-                        m.createElement(
-                          _.a,
+                      h.createElement(
+                        $.a,
+                        { style: ke.flexExpand },
+                        h.createElement(
+                          $.a,
                           { style: f },
-                          m.createElement(
+                          h.createElement(
                             w.a,
                             { show: s },
-                            m.createElement(
-                              _.a,
-                              { style: [je.bottomContentRow, je.rowBottomSpace] },
+                            h.createElement(
+                              $.a,
+                              { style: [ke.bottomContentRow, ke.rowBottomSpace] },
                               e._renderLabels(),
                             ),
                           ),
                         ),
                         u
                           ? null
-                          : m.createElement(
-                              _.a,
-                              { style: je.bottomContentRow },
-                              m.createElement(
-                                _.a,
+                          : h.createElement(
+                              $.a,
+                              { style: ke.bottomContentRow },
+                              h.createElement(
+                                $.a,
                                 {
-                                  style: [je.skipThumbnail, p ? je.skipThumbnailAbsoluteRtl : je.skipThumbnailAbsolute],
-                                  testID: Ie.floatSkipThumbnail,
+                                  style: [ke.skipThumbnail, p ? ke.skipThumbnailAbsoluteRtl : ke.skipThumbnailAbsolute],
+                                  testID: Te.floatSkipThumbnail,
                                 },
-                                m.createElement(ie, { onClick: a }),
+                                h.createElement(te, { onClick: a }),
                               ),
                             ),
-                        m.createElement(
-                          i,
-                          { focus: !0, interactionKey: I.a.ControlBar, mouseover: !0, touch: !0 },
-                          m.createElement(Oe, {
-                            containerRef: n,
+                        h.createElement(
+                          o,
+                          { focus: !0, interactionKey: Ce.a.ControlBar, mouseover: !0, touch: !0 },
+                          h.createElement(ye, {
+                            containerRef: r,
                             displayDismissableControls: !s,
-                            playerApi: l,
-                            playerState: o,
+                            playerApi: i,
+                            playerState: l,
                             skipButton: u
-                              ? m.createElement(
-                                  _.a,
+                              ? h.createElement(
+                                  $.a,
                                   {
                                     style: [
-                                      je.skipThumbnail,
-                                      p ? je.skipThumbnailRelativeRtl : je.skipThumbnailRelative,
+                                      ke.skipThumbnail,
+                                      p ? ke.skipThumbnailRelativeRtl : ke.skipThumbnailRelative,
                                     ],
-                                    testID: Ie.inlineSkipThumbnail,
+                                    testID: Te.inlineSkipThumbnail,
                                   },
-                                  m.createElement(ie, { onClick: a }),
+                                  h.createElement(te, { onClick: a }),
                                 )
                               : null,
                           }),
@@ -857,113 +678,113 @@
                   ),
                 )
               }),
-              b()(y()(e), '_renderWithIntentionContext', function (t) {
-                var r = e.props,
-                  n = r.playerApi,
-                  a = r.playerState
-                if (!n || !a) return null
-                var l = Object(C.e)(a),
-                  o = null == l ? void 0 : l.advertiserProfileImageUrl,
-                  i = null == l ? void 0 : l.advertiserName,
-                  c = null == l ? void 0 : l.cta
-                return m.createElement(
-                  m.Fragment,
+              y()(c()(e), '_renderWithIntentionContext', function (t) {
+                var n = e.props,
+                  r = n.playerApi,
+                  a = n.playerState
+                if (!r || !a) return null
+                var i = Object(C.e)(a),
+                  l = null == i ? void 0 : i.advertiserProfileImageUrl,
+                  o = null == i ? void 0 : i.advertiserName,
+                  c = null == i ? void 0 : i.cta
+                return h.createElement(
+                  h.Fragment,
                   null,
                   c
-                    ? m.createElement(Ae, {
-                        advertiserName: i,
-                        avatarUri: o,
+                    ? h.createElement(Oe, {
+                        advertiserName: o,
+                        avatarUri: l,
                         ctaType: c.type,
                         ctaUrl: c.url,
-                        playerApi: n,
+                        playerApi: r,
                       })
-                    : m.createElement(
-                        Le,
+                    : h.createElement(
+                        we,
                         null,
-                        o &&
-                          m.createElement(Re.a, {
+                        l &&
+                          h.createElement(he.a, {
                             accessibilityHidden: !0,
                             borderColor: 'white',
                             borderWidth: 'small',
                             focusable: !1,
                             size: 'medium',
-                            uri: o,
+                            uri: l,
                           }),
-                        i && m.createElement(W.b, { color: 'white', weight: 'bold' }, i),
+                        o && h.createElement(_.b, { color: 'white', weight: 'bold' }, o),
                       ),
                   e._renderPrerollControlBar(t),
                 )
               }),
-              b()(y()(e), '_renderLabels', function () {
-                return m.createElement(D.a, { periodic: !0 }, function (t) {
-                  var r = t.playerState,
-                    n = Object(C.e)(r),
-                    a = Object(C.f)(n),
-                    l = Object(C.d)(n) || 0,
-                    o = a ? a - l : null,
-                    i = le.a.getConstants().isRTL,
-                    c = [je.labelContainerBase, i ? je.labelContainerRtl : je.labelContainerLtr],
-                    s = [U.b.borderRadiusLeft, e.state.stackedLabels && U.b.borderRadiusRight],
-                    u = [U.b.borderRadiusRight, e.state.stackedLabels && U.b.borderRadiusLeft],
+              y()(c()(e), '_renderLabels', function () {
+                return h.createElement(E.a, { periodic: !0 }, function (t) {
+                  var n = t.playerState,
+                    r = Object(C.e)(n),
+                    a = Object(C.f)(r),
+                    i = Object(C.d)(r) || 0,
+                    l = a ? a - i : null,
+                    o = Q.a.getConstants().isRTL,
+                    c = [ke.labelContainerBase, o ? ke.labelContainerRtl : ke.labelContainerLtr],
+                    s = [I.b.borderRadiusLeft, e.state.stackedLabels && I.b.borderRadiusRight],
+                    u = [I.b.borderRadiusRight, e.state.stackedLabels && I.b.borderRadiusLeft],
                     p =
-                      n && 'number' == typeof o && !n.isLive
-                        ? m.createElement(
-                            _.a,
+                      r && 'number' == typeof l && !r.isLive
+                        ? h.createElement(
+                            $.a,
                             { ref: e._durationLabelRef },
-                            m.createElement(
-                              H.a,
+                            h.createElement(
+                              j.a,
                               {
                                 key: 'PrerollVideoOverlay-DurationLabel',
                                 style: [
-                                  U.b.label,
-                                  i ? je.labelSpaceLeft : U.b.spaceRight,
-                                  e.state.stackedLabels && je.labelBottomSpace,
-                                ].concat(M()(i ? u : s)),
+                                  I.b.label,
+                                  o ? ke.labelSpaceLeft : I.b.spaceRight,
+                                  e.state.stackedLabels && ke.labelBottomSpace,
+                                ].concat(x()(o ? u : s)),
                               },
-                              m.createElement(W.b, { numberOfLines: 1 }, Object(C.b)(o)),
+                              h.createElement(_.b, { numberOfLines: 1 }, Object(C.b)(l)),
                             ),
                           )
                         : null,
-                    f = m.createElement(
-                      _.a,
+                    f = h.createElement(
+                      $.a,
                       { ref: e._descriptionLabelRef },
-                      m.createElement(
-                        H.a,
+                      h.createElement(
+                        j.a,
                         {
                           key: 'PrerollVideoOverlay-DescriptionLabel',
-                          style: [U.b.label, i ? je.labelSpaceLeft : U.b.spaceRight].concat(M()(i ? s : u)),
+                          style: [I.b.label, o ? ke.labelSpaceLeft : I.b.spaceRight].concat(x()(o ? s : u)),
                         },
-                        m.createElement(W.b, { numberOfLines: 1 }, K.o),
+                        h.createElement(_.b, { numberOfLines: 1 }, F.o),
                       ),
                     )
-                  return m.createElement(_.a, { onLayout: e._handleLayout, pointerEvents: 'none', style: c }, p, f)
+                  return h.createElement($.a, { onLayout: e._handleLayout, pointerEvents: 'none', style: c }, p, f)
                 })
               }),
               e
             )
           }
           return (
-            o()(r, [
+            l()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.playerApi,
-                    r = e.playerState
-                  return t && r ? m.createElement(A.a.Context.Consumer, null, this._renderWithIntentionContext) : null
+                    n = e.playerState
+                  return t && n ? h.createElement(A.a.Context.Consumer, null, this._renderWithIntentionContext) : null
                 },
               },
             ]),
-            r
+            n
           )
-        })(m.Component),
-        je = ae.a.create(function (e) {
+        })(h.Component),
+        ke = J.a.create(function (e) {
           return {
             bottomContentContainer: { flexWrap: 'wrap', position: 'absolute', bottom: 0, width: '100%' },
             bottomContentRow: {
               alignItems: 'flex-end',
               flexWrap: 'nowrap',
-              flexDirection: le.a.getConstants().isRTL ? 'row-reverse' : 'row',
+              flexDirection: Q.a.getConstants().isRTL ? 'row-reverse' : 'row',
               flexGrow: 1,
               flexShrink: 0,
               justifyContent: 'space-between',
@@ -1001,15 +822,18 @@
               maxWidth: '35%',
             },
             flexExpand: { flexGrow: 1, flexShrink: 1, flexBasis: 0 },
-            flexDirectionRow: { flexDirection: le.a.getConstants().isRTL ? 'row-reverse' : 'row' },
+            flexDirectionRow: { flexDirection: Q.a.getConstants().isRTL ? 'row-reverse' : 'row' },
             flexWrap: { flexWrap: 'wrap', justifyContent: 'space-between' },
             hidden: { visibility: 'hidden' },
           }
         }),
-        Ie = { floatSkipThumbnail: 'float-SkipThumbnail', inlineSkipThumbnail: 'inline-SkipThumbnail' },
-        Fe = _e,
-        Be = r('uz49')
-      function De(e) {
+        Te = { floatSkipThumbnail: 'float-SkipThumbnail', inlineSkipThumbnail: 'inline-SkipThumbnail' },
+        Le = Ae,
+        xe = n('uz49'),
+        _e = n('mNIZ'),
+        je = n('zCLo'),
+        Ie = n('ReFq')
+      function Fe(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -1021,97 +845,177 @@
           }
         })()
         return function () {
-          var r,
-            n = f()(e)
+          var n,
+            r = d()(e)
           if (t) {
-            var a = f()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return u()(this, r)
+            var a = d()(this).constructor
+            n = Reflect.construct(r, arguments, a)
+          } else n = r.apply(this, arguments)
+          return f()(this, n)
         }
       }
-      var Ne = (function (e) {
-        c()(r, e)
-        var t = De(r)
-        function r() {
+      var Be = (function (e) {
+        u()(n, e)
+        var t = Fe(n)
+        function n() {
           var e
-          a()(this, r)
-          for (var n = arguments.length, l = new Array(n), o = 0; o < n; o++) l[o] = arguments[o]
+          a()(this, n)
+          for (var r = arguments.length, i = new Array(r), l = 0; l < r; l++) i[l] = arguments[l]
           return (
-            (e = t.call.apply(t, [this].concat(l))),
-            b()(y()(e), 'state', { wasPrerollSkipped: !1 }),
-            b()(y()(e), '_renderWithRedesignedPrerollUx', function (t) {
-              var r,
-                n = e.props,
-                a = n.playerApi,
-                l = n.playerState,
-                o = n.poster
-              if (!a || !l) return null
-              var i = Object(C.e)(l),
-                c = (null == i ? void 0 : i.displayType) === E.c.AD && (null == i ? void 0 : i.playbackCompleted),
-                s = null === (r = l.errorInfo) || void 0 === r ? void 0 : r.adFailed
-              return e.state.wasPrerollSkipped || c || s
-                ? m.createElement(D.a, null, function (t) {
-                    var r = t.aspectRatio,
-                      n = o || l.posterImage
-                    return m.createElement(Be.a, {
-                      aspectRatio: r,
-                      imageSrc: n,
+            (e = t.call.apply(t, [this].concat(i))),
+            y()(c()(e), 'state', { wasPrerollSkipped: !1 }),
+            y()(c()(e), '_renderVideoPlayer', function (t) {
+              var n,
+                r = e.props,
+                a = r.playerApi,
+                i = r.playerState,
+                l = r.poster,
+                o = r.useKeyboardShortcuts
+              if (!a || !i) return null
+              var c = Object(C.e)(i),
+                s = (null == c ? void 0 : c.displayType) === H.c.AD && (null == c ? void 0 : c.playbackCompleted),
+                u = null === (n = i.errorInfo) || void 0 === n ? void 0 : n.adFailed,
+                p = (null == c ? void 0 : c.displayType) === H.c.AD && (null == c ? void 0 : c.useRedesignedPrerollUx)
+              return p && (e.state.wasPrerollSkipped || s || u)
+                ? h.createElement(E.a, null, function (t) {
+                    var n = t.aspectRatio,
+                      r = l || i.posterImage
+                    return h.createElement(xe.a, {
+                      aspectRatio: n,
+                      imageSrc: r,
                       onTransitionComplete: e._handleTransitionAnimationComplete,
                     })
                   })
-                : (null == i ? void 0 : i.displayType) === E.c.AD
-                ? e._renderPrerollVideo(t)
-                : m.createElement(S.a, { playerState: l }, e._renderPrerollVideo(t))
+                : p
+                ? e._renderVideo(t, !0)
+                : h.createElement(
+                    je.a,
+                    { enabled: !!o, playerApi: a, playerState: i },
+                    h.createElement(O.a, { playerState: i }, e._renderVideo(t, !1)),
+                  )
             }),
-            b()(y()(e), '_renderPrerollVideo', function (t) {
+            y()(c()(e), '_renderVideo', function (t, n) {
               var r,
-                n = e.props,
-                a = n.containerRef,
-                l = n.playerApi,
-                o = n.playerDisplayOptions,
-                i = n.playerState,
-                c = n.poster,
-                s = n.showWatchAgain
-              if (!l || !i) return null
-              var u = t.Observer,
-                p = t.observed,
-                f = 'PLAY_REQUESTED' !== (null === (r = i.controls) || void 0 === r ? void 0 : r.playState),
-                d = s && i.tracksFinished,
-                y = Object(I.c)(i, p, I.b),
-                h = !!i.error,
-                b = !(null != o && o.hidePosterImage)
-              return m.createElement(
-                u,
-                { click: !0, interactionKey: I.a.Root, mousemove: !0, mouseover: !0 },
-                h
+                a,
+                i = e.props,
+                l = i.accessibilityLabel,
+                o = i.containerRef,
+                c = i.customControlBarIcon,
+                s = i.fullscreenAdsDisabledOnIOS,
+                u = i.guestsState,
+                p = i.onScribeEvent,
+                f = i.playerApi,
+                m = i.playerDisplayOptions,
+                d = i.playerState,
+                b = i.poster,
+                y = i.shouldShowAltLabel,
+                E = i.showWatchAgain
+              if (!f || !d) return null
+              var O = t.Observer,
+                A = t.observed,
+                L = Object(Ce.c)(d, A, Ce.b),
+                x = !!d.error,
+                _ = Object(C.e)(d),
+                j = (null == _ ? void 0 : _.contentType) === H.a.GIF,
+                I = 'PLAY_REQUESTED' !== (null === (r = d.controls) || void 0 === r ? void 0 : r.playState),
+                F = E && d.tracksFinished,
+                B = L && d.isPreview,
+                D = !(!L || null == _ || !_.isLive),
+                N = y ? l : void 0,
+                M = !(null != m && m.hideLeftBadges) && (!!N || j || B || D),
+                W = !(null != m && m.hideRightBadges) && L,
+                V = !(null != m && m.hidePosterImage),
+                z = null === (a = d.controls) || void 0 === a ? void 0 : a.isPosterShown
+              return h.createElement(
+                O,
+                { click: !0, interactionKey: Ce.a.Root, mousemove: !0, mouseover: !0 },
+                x
                   ? null
-                  : m.createElement(
-                      m.Fragment,
+                  : h.createElement(
+                      h.Fragment,
                       null,
-                      m.createElement(k.a, {
-                        hideControls: y,
-                        isTouchOnlyUI: I.b,
-                        playerApi: l,
-                        playerDisplayOptions: o,
-                        playerState: i,
+                      h.createElement(k.a, {
+                        hideControls: L,
+                        isTouchOnlyUI: Ce.b,
+                        playerApi: f,
+                        playerDisplayOptions: m,
+                        playerState: d,
                       }),
-                      b && !d && m.createElement(T.a, { imageSrc: c, playerApi: l, playerState: i, withPlayButton: f }),
-                      m.createElement(g.a, { playerState: i }),
-                      m.createElement(Fe, { containerRef: a, onSkip: e._handleSkip, playerApi: l, playerState: i }),
+                      V && !F && h.createElement(T.a, { imageSrc: b, playerApi: f, playerState: d, withPlayButton: I }),
+                      h.createElement(g.a, { playerState: d }),
+                      n
+                        ? h.createElement(Le, { containerRef: o, onSkip: e._handleSkip, playerApi: f, playerState: d })
+                        : h.createElement(
+                            h.Fragment,
+                            null,
+                            !j && E && h.createElement(Ie.a, { onScribeEvent: p, playerApi: f, playerState: d }),
+                            h.createElement(P.a, { guestsState: u, playerState: d }),
+                            !j &&
+                              h.createElement(
+                                O,
+                                { focus: !0, interactionKey: Ce.a.VideoCTA, mouseover: !0 },
+                                h.createElement(
+                                  w.a,
+                                  { show: !L },
+                                  h.createElement(_e.a, { playerApi: f, playerState: d }),
+                                ),
+                              ),
+                            !j &&
+                              !z &&
+                              h.createElement(
+                                h.Fragment,
+                                null,
+                                h.createElement(
+                                  O,
+                                  { focus: !0, interactionKey: Ce.a.A11YHook },
+                                  h.createElement($.a, { focusable: !0 }),
+                                ),
+                                h.createElement(
+                                  O,
+                                  { focus: !0, interactionKey: Ce.a.ControlBar, mouseover: !0, touch: !0 },
+                                  h.createElement(S.a, {
+                                    containerRef: o,
+                                    customControlBarIcon: c,
+                                    fullscreenAdsDisabledOnIOS: s,
+                                    hideControls: L,
+                                    playerApi: f,
+                                    playerState: d,
+                                    publisherDisplayName: null == _ ? void 0 : _.publisherDisplayName,
+                                    publisherProfileImageUrl: null == _ ? void 0 : _.publisherProfileImageUrl,
+                                    showScrubber:
+                                      'ad' !== (null == _ ? void 0 : _.displayType) && !(null != _ && _.isLive),
+                                  }),
+                                ),
+                              ),
+                            h.createElement(
+                              w.a,
+                              { show: M },
+                              h.createElement(v.a, {
+                                mediaAccessibilityLabel: N,
+                                playerDisplayOptions: m,
+                                playerState: d,
+                                position: 'left',
+                              }),
+                            ),
+                            h.createElement(
+                              w.a,
+                              { show: W },
+                              h.createElement(v.a, { playerDisplayOptions: m, playerState: d, position: 'right' }),
+                            ),
+                          ),
                     ),
-                m.createElement(
+                h.createElement(
                   w.a,
-                  { show: h },
-                  h && m.createElement(R.a, { imageSrc: c, playerApi: l, playerState: i }),
+                  { show: x },
+                  x && h.createElement(R.a, { imageSrc: b, playerApi: f, playerState: d }),
                 ),
               )
             }),
-            b()(y()(e), '_handleSkip', function () {
+            y()(c()(e), '_handleSkip', function () {
               var t = e.props.playerApi
               t && t.pause(), e.setState({ wasPrerollSkipped: !0 })
             }),
-            b()(y()(e), '_handleTransitionAnimationComplete', function () {
+            y()(c()(e), '_handleTransitionAnimationComplete', function () {
               var t = e.props.playerApi
               t && t.nextTrack()
             }),
@@ -1119,123 +1023,73 @@
           )
         }
         return (
-          o()(r, [
+          l()(n, [
             {
               key: 'render',
               value: function () {
                 var e = this.props,
                   t = e.playerApi,
-                  r = e.playerState
-                if (!t || !r) return null
-                var n = Object(C.e)(r)
-                return (null == n ? void 0 : n.displayType) === E.c.AD &&
-                  (null == n ? void 0 : n.useRedesignedPrerollUx)
-                  ? m.createElement(
-                      A.a,
-                      null,
-                      m.createElement(A.a.Context.Consumer, null, this._renderWithRedesignedPrerollUx),
-                    )
-                  : m.createElement(B, this.props)
+                  n = e.playerState
+                return t && n
+                  ? h.createElement(A.a, null, h.createElement(A.a.Context.Consumer, null, this._renderVideoPlayer))
+                  : null
               },
             },
           ]),
-          r
+          n
         )
-      })(m.PureComponent)
-      function Me(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var r,
-            n = f()(e)
-          if (t) {
-            var a = f()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return u()(this, r)
-        }
-      }
-      var We = (function (e) {
-        c()(r, e)
-        var t = Me(r)
-        function r() {
-          return a()(this, r), t.apply(this, arguments)
-        }
-        return (
-          o()(r, [
-            {
-              key: 'render',
-              value: function () {
-                var e = this.props,
-                  t = e.playerApi,
-                  r = e.playerState,
-                  n = e.useRedesignedPrerollUx
-                return t && r ? (n ? m.createElement(Ne, this.props) : m.createElement(B, this.props)) : null
-              },
-            },
-          ]),
-          r
-        )
-      })(m.PureComponent)
-      t.default = We
+      })(h.PureComponent)
+      t.default = Be
     },
-    ReFq: function (e, t, r) {
+    ReFq: function (e, t, n) {
       'use strict'
-      r.d(t, 'a', function () {
+      n.d(t, 'a', function () {
         return A
       })
-      r('OZaJ'), r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
-      var n = r('VrFO'),
-        a = r.n(n),
-        l = r('Y9Ll'),
-        o = r.n(l),
-        i = r('1Pcy'),
-        c = r.n(i),
-        s = r('5Yy7'),
-        u = r.n(s),
-        p = r('N+ot'),
-        f = r.n(p),
-        m = r('AuHH'),
-        d = r.n(m),
-        y = r('KEM+'),
-        h = r.n(y),
-        b = (r('2G9S'), r('ERkP')),
-        v = r('/yvb'),
-        g = r('3XMw'),
-        E = r.n(g),
-        S = r('rHpw'),
-        O = r('MWbm')
+      n('OZaJ'), n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
+      var r = n('VrFO'),
+        a = n.n(r),
+        i = n('Y9Ll'),
+        l = n.n(i),
+        o = n('1Pcy'),
+        c = n.n(o),
+        s = n('5Yy7'),
+        u = n.n(s),
+        p = n('N+ot'),
+        f = n.n(p),
+        m = n('AuHH'),
+        d = n.n(m),
+        b = n('KEM+'),
+        y = n.n(b),
+        h = (n('2G9S'), n('ERkP')),
+        v = n('/yvb'),
+        g = n('3XMw'),
+        E = n.n(g),
+        O = n('rHpw'),
+        S = n('MWbm')
       function R(e, t) {
-        var r = Object.keys(e)
+        var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
+          var r = Object.getOwnPropertySymbols(e)
           t &&
-            (n = n.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            r.push.apply(r, n)
+            n.push.apply(n, r)
         }
-        return r
+        return n
       }
       function w(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
+          var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? R(Object(r), !0).forEach(function (t) {
-                h()(e, t, r[t])
+            ? R(Object(n), !0).forEach(function (t) {
+                y()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : R(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : R(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
@@ -1252,49 +1106,49 @@
           }
         })()
         return function () {
-          var r,
-            n = d()(e)
+          var n,
+            r = d()(e)
           if (t) {
             var a = d()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return f()(this, r)
+            n = Reflect.construct(r, arguments, a)
+          } else n = r.apply(this, arguments)
+          return f()(this, n)
         }
       }
       var P = E.a.f2d4e6f1,
         A = (function (e) {
-          u()(r, e)
-          var t = C(r)
-          function r() {
+          u()(n, e)
+          var t = C(n)
+          function n() {
             var e
-            a()(this, r)
-            for (var n = arguments.length, l = new Array(n), o = 0; o < n; o++) l[o] = arguments[o]
+            a()(this, n)
+            for (var r = arguments.length, i = new Array(r), l = 0; l < r; l++) i[l] = arguments[l]
             return (
-              (e = t.call.apply(t, [this].concat(l))),
-              h()(c()(e), '_createWatchAgainHandler', function (t) {
-                return function (r) {
-                  var n = e.props,
-                    a = n.onScribeEvent,
-                    l = n.playerApi
-                  r.stopPropagation(), a && a({ namespace: { element: t, action: 'click' } }), l && l.replay()
+              (e = t.call.apply(t, [this].concat(i))),
+              y()(c()(e), '_createWatchAgainHandler', function (t) {
+                return function (n) {
+                  var r = e.props,
+                    a = r.onScribeEvent,
+                    i = r.playerApi
+                  n.stopPropagation(), a && a({ namespace: { element: t, action: 'click' } }), i && i.replay()
                 }
               }),
-              h()(c()(e), '_handleOnPress', e._createWatchAgainHandler('watch_again_button')),
-              h()(c()(e), '_handleOnClick', e._createWatchAgainHandler('watch_again_overlay')),
+              y()(c()(e), '_handleOnPress', e._createWatchAgainHandler('watch_again_button')),
+              y()(c()(e), '_handleOnClick', e._createWatchAgainHandler('watch_again_overlay')),
               e
             )
           }
           return (
-            o()(r, [
+            l()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props.playerState
                   return e && e.tracksFinished
-                    ? b.createElement(
-                        O.a,
+                    ? h.createElement(
+                        S.a,
                         { onClick: this._handleOnClick, style: k.overlay },
-                        b.createElement(
+                        h.createElement(
                           v.a,
                           { accessibilityLabel: P, onPress: this._handleOnPress, type: 'onMediaDominantColorFilled' },
                           P,
@@ -1304,78 +1158,78 @@
                 },
               },
             ]),
-            r
+            n
           )
-        })(b.PureComponent),
-        k = S.a.create(function (e) {
+        })(h.PureComponent),
+        k = O.a.create(function (e) {
           return {
             overlay: w(
-              w({}, S.a.absoluteFillObject),
+              w({}, O.a.absoluteFillObject),
               {},
-              { backgroundColor: S.a.theme.colors.translucentBlack30, alignItems: 'center', justifyContent: 'center' },
+              { backgroundColor: O.a.theme.colors.translucentBlack30, alignItems: 'center', justifyContent: 'center' },
             ),
           }
         })
     },
-    uz49: function (e, t, r) {
+    uz49: function (e, t, n) {
       'use strict'
-      r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
-      var n = r('ddV6'),
-        a = r.n(n),
-        l = r('KEM+'),
-        o = r.n(l),
-        i = (r('2G9S'), r('ERkP')),
-        c = r('0W/e'),
-        s = r('3rX5'),
-        u = r('rHpw'),
-        p = r('MWbm')
+      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
+      var r = n('ddV6'),
+        a = n.n(r),
+        i = n('KEM+'),
+        l = n.n(i),
+        o = (n('2G9S'), n('ERkP')),
+        c = n('0W/e'),
+        s = n('3rX5'),
+        u = n('rHpw'),
+        p = n('MWbm')
       function f(e, t) {
-        var r = Object.keys(e)
+        var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
+          var r = Object.getOwnPropertySymbols(e)
           t &&
-            (n = n.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            r.push.apply(r, n)
+            n.push.apply(n, r)
         }
-        return r
+        return n
       }
       function m(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
+          var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? f(Object(r), !0).forEach(function (t) {
-                o()(e, t, r[t])
+            ? f(Object(n), !0).forEach(function (t) {
+                l()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : f(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : f(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
       var d = { animationStage: 'INITIAL', containerSize: null, imageTransform: null },
-        y = function () {
+        b = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : d,
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
             case 'SET_TRANSFORM':
               if ('INITIAL' === e.animationStage) {
-                var r = t.payload,
-                  n = r.aspectRatio,
-                  a = r.containerHeight,
-                  l = r.containerWidth,
-                  o = Object(c.a)(n),
-                  i = { width: l, height: a },
+                var n = t.payload,
+                  r = n.aspectRatio,
+                  a = n.containerHeight,
+                  i = n.containerWidth,
+                  l = Object(c.a)(r),
+                  o = { width: i, height: a },
                   s = {
-                    scaleX: o.width / l,
-                    scaleY: o.height / a,
+                    scaleX: l.width / i,
+                    scaleY: l.height / a,
                     translateX: -1 * u.a.theme.spacesPx.space12,
                     translateY: -1 * u.a.theme.spacesPx.space12,
                   }
-                return m(m({}, e), {}, { animationStage: 'SET_TRANSFORM', containerSize: i, imageTransform: s })
+                return m(m({}, e), {}, { animationStage: 'SET_TRANSFORM', containerSize: o, imageTransform: s })
               }
               return e
             case 'START_ANIMATION':
@@ -1395,7 +1249,7 @@
               return e
           }
         }
-      var h = {
+      var y = {
         imageFill: { width: '100%', height: '100%' },
         imageWrapperBaseStyles: {
           transitionDuration: '250ms',
@@ -1409,100 +1263,100 @@
       }
       t.a = function (e) {
         var t = e.aspectRatio,
-          r = e.imageSrc,
-          n = e.onTransitionComplete,
-          l = i.useReducer(y, d),
-          o = a()(l, 2),
-          c = o[0],
-          f = o[1],
-          b = c.animationStage,
+          n = e.imageSrc,
+          r = e.onTransitionComplete,
+          i = o.useReducer(b, d),
+          l = a()(i, 2),
+          c = l[0],
+          f = l[1],
+          h = c.animationStage,
           v = c.containerSize,
           g = c.imageTransform,
-          E = i.useCallback(
+          E = o.useCallback(
             function (e) {
               if (null != e) {
-                var r = e.getBoundingClientRect(),
-                  n = r.height,
-                  a = r.width
+                var n = e.getBoundingClientRect(),
+                  r = n.height,
+                  a = n.width
                 requestAnimationFrame(function () {
-                  f({ type: 'SET_TRANSFORM', payload: { aspectRatio: t, containerHeight: n, containerWidth: a } })
+                  f({ type: 'SET_TRANSFORM', payload: { aspectRatio: t, containerHeight: r, containerWidth: a } })
                 })
               }
             },
             [t],
           ),
-          S = i.useCallback(function (e) {
+          O = o.useCallback(function (e) {
             requestAnimationFrame(function () {
               f({ type: 'START_ANIMATION' })
             })
           }, []),
-          O = i.useCallback(function () {
+          S = o.useCallback(function () {
             f({ type: 'FINISH_ANIMATION' })
           }, [])
         return (
-          i.useEffect(
+          o.useEffect(
             function () {
-              r || O()
+              n || S()
             },
-            [r, O],
+            [n, S],
           ),
-          i.useEffect(
+          o.useEffect(
             function () {
-              'FINISH_ANIMATION' === b && n && n()
+              'FINISH_ANIMATION' === h && r && r()
             },
-            [n, b],
+            [r, h],
           ),
-          i.useEffect(
+          o.useEffect(
             function () {
-              if ('START_ANIMATION' === b) {
+              if ('START_ANIMATION' === h) {
                 var e = setTimeout(function () {
-                  O()
+                  S()
                 }, 300)
                 return function () {
                   clearTimeout(e)
                 }
               }
             },
-            [b, O],
+            [h, S],
           ),
-          i.createElement(
+          o.createElement(
             p.a,
             { ref: E, style: u.a.absoluteFill },
             (function () {
-              if (null == v || null == g || !r) return null
+              if (null == v || null == g || !n) return null
               var e = { height: v.height, width: v.width },
                 t = g.scaleX,
-                n = g.scaleY,
+                r = g.scaleY,
                 a = g.translateX,
-                l = g.translateY,
-                o = { transform: 'matrix('.concat(t, ', 0, 0, ').concat(n, ', ').concat(a, ', ').concat(l, ')') },
-                c = m(m(m({}, h.imageWrapperBaseStyles), e), o)
-              return i.createElement(
+                i = g.translateY,
+                l = { transform: 'matrix('.concat(t, ', 0, 0, ').concat(r, ', ').concat(a, ', ').concat(i, ')') },
+                c = m(m(m({}, y.imageWrapperBaseStyles), e), l)
+              return o.createElement(
                 'div',
-                { onTransitionEnd: O, style: c },
-                i.createElement(s.a, { ref: S, source: r, style: h.imageFill }),
+                { onTransitionEnd: S, style: c },
+                o.createElement(s.a, { ref: O, source: n, style: y.imageFill }),
               )
             })(),
           )
         )
       }
     },
-    zCLo: function (e, t, r) {
+    zCLo: function (e, t, n) {
       'use strict'
-      var n = r('KEM+'),
-        a = r.n(n),
-        l = (r('Blm6'), r('ERkP')),
-        o = r('wD1h'),
-        i = r('oLZl'),
-        c = r('rHpw'),
-        s = r('MWbm')
+      var r = n('KEM+'),
+        a = n.n(r),
+        i = (n('Blm6'), n('ERkP')),
+        l = n('wD1h'),
+        o = n('oLZl'),
+        c = n('rHpw'),
+        s = n('MWbm')
       t.a = function (e) {
         var t,
-          r = l.useRef(null),
-          n = e.enabled,
+          n = i.useRef(null),
+          r = e.enabled,
           u = e.playerApi,
           p = e.playerState
-        if (!n) return e.children || null
+        if (!r) return e.children || null
         var f = function (e) {
             u && p && (p.isPlaying ? u.pause() : u.play())
           },
@@ -1512,40 +1366,40 @@
               u.scrubToFraction(t)
             }
           }
-        return l.createElement(
-          o.a,
+        return i.createElement(
+          l.a,
           {
-            containerRef: r,
+            containerRef: n,
             enabled: !0,
             handlers:
               ((t = {}),
-              a()(t, i.a.K, f),
-              a()(t, i.a.M, function (e) {
+              a()(t, o.a.K, f),
+              a()(t, o.a.M, function (e) {
                 u && p && (p.isMuted ? u.unmute() : u.mute())
               }),
-              a()(t, i.a.Space, f),
-              a()(t, i.a.C, function (e) {
+              a()(t, o.a.Space, f),
+              a()(t, o.a.C, function (e) {
                 u && p && u.toggleCaptions()
               }),
-              a()(t, i.a.Home, function (e) {
+              a()(t, o.a.Home, function (e) {
                 u && p && u.scrubToFraction(0)
               }),
-              a()(t, i.a[0], m),
-              a()(t, i.a[1], m),
-              a()(t, i.a[2], m),
-              a()(t, i.a[3], m),
-              a()(t, i.a[4], m),
-              a()(t, i.a[5], m),
-              a()(t, i.a[6], m),
-              a()(t, i.a[7], m),
-              a()(t, i.a[8], m),
-              a()(t, i.a[9], m),
-              a()(t, i.a.End, function (e) {
+              a()(t, o.a[0], m),
+              a()(t, o.a[1], m),
+              a()(t, o.a[2], m),
+              a()(t, o.a[3], m),
+              a()(t, o.a[4], m),
+              a()(t, o.a[5], m),
+              a()(t, o.a[6], m),
+              a()(t, o.a[7], m),
+              a()(t, o.a[8], m),
+              a()(t, o.a[9], m),
+              a()(t, o.a.End, function (e) {
                 u && p && u.scrubToFraction(1)
               }),
               t),
           },
-          l.createElement(s.a, { focusable: !0, ref: r, style: c.a.absoluteFill }, e.children),
+          i.createElement(s.a, { focusable: !0, ref: n, style: c.a.absoluteFill }, e.children),
         )
       }
     },

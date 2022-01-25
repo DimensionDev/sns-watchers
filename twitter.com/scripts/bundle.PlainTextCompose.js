@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [76],
+  [75],
   {
     '/Rsk': function (e, t, n) {
       'use strict'
@@ -1247,7 +1247,7 @@
         R = n('rxPX'),
         I = function (e, t) {
           var n = t.communityId
-          return n ? O.b.select(e, n) : void 0
+          return n ? O.c.select(e, n) : void 0
         },
         P = Object(R.a)().propsFromState(function () {
           return { community: I }
@@ -1430,7 +1430,7 @@
         re = n('0KEI'),
         oe = function (e, t) {
           var n = t.audienceControlsValue.communityIdValue || void 0
-          return n ? O.b.select(e, n) : void 0
+          return n ? O.c.select(e, n) : void 0
         },
         ie = function (e, t) {
           return Object(ae.y)(e, ae.f)
@@ -1438,7 +1438,7 @@
         ce = Object(R.a)()
           .propsFromState(function () {
             return {
-              communities: O.e,
+              communities: O.f,
               educationalVisibilityFlag: ie,
               hasMemberships: te.d,
               selectedCommunity: oe,
@@ -1611,7 +1611,7 @@
         Te = n('PKbs'),
         xe = function (e, t) {
           var n = t.selectedCommunityId
-          return n ? O.b.select(e, n) : void 0
+          return n ? O.c.select(e, n) : void 0
         },
         Ee = Object(R.a)()
           .propsFromState(function () {
@@ -1620,7 +1620,7 @@
           .propsFromActions(function () {
             return {
               createLocalApiErrorHandler: Object(re.createLocalApiErrorHandlerWithContextFactory)('COMMUNITY_RULES'),
-              fetchCommunityIfNeeded: O.b.fetchOneIfNeeded,
+              fetchCommunityIfNeeded: O.c.fetchOneIfNeeded,
             }
           }),
         Se = n('YeIG'),
@@ -4402,7 +4402,7 @@
           var n = Pr(e, t),
             a = wr(e, t).communityIdValue || void 0,
             r = (null == n ? void 0 : n.community_id_str) || a,
-            o = r ? O.b.select(e, r) : void 0
+            o = r ? O.c.select(e, r) : void 0
           return o ? o.name : void 0
         },
         Tr = function (e, t) {
@@ -5357,9 +5357,12 @@
                       o,
                       i,
                       s,
-                      l = c.context.featureSwitches.getArrayValue('responsive_web_reply_nudge_supported_languages')
+                      l = c.context.featureSwitches.getValueWithoutScribeImpression(
+                        'responsive_web_reply_nudge_supported_languages',
+                      )
                     if (
                       !l ||
+                      !Array.isArray(l) ||
                       !l.includes(
                         null === (t = e.create_nudge) || void 0 === t || null === (n = t.nudge) || void 0 === n
                           ? void 0
@@ -5409,14 +5412,16 @@
                     !c._getSingleComposerDataWithLatestText(t[0]).scheduledFor &&
                     c.isReply &&
                     !n &&
-                    c.context.featureSwitches.isTrue('responsive_web_reply_nudge_enabled') &&
+                    c.context.featureSwitches.getValueWithoutScribeImpression('responsive_web_reply_nudge_enabled') &&
                     !a
                   )
                 )
                   return c._handleSendTweet()
                 c._checkToxicReply().then(function (e) {
                   if (!e) return c._handleSendTweet()
-                  c._showToxicReplyNudge()
+                  c.context.featureSwitches.isTrue('responsive_web_reply_nudge_enabled'),
+                    c.context.featureSwitches.getArrayValue('responsive_web_reply_nudge_supported_languages'),
+                    c._showToxicReplyNudge()
                 })
               }),
               _()(p()(c), '_handleSendTweet', function () {

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [169],
+  [168],
   {
     jHwr: function (e, t, n) {
       'use strict'
@@ -108,47 +108,49 @@
               (i = t.call(this, e, o)),
               y()(d()(i), '_renderContent', function () {
                 var e = i.props,
-                  t = e.enableClickOutsideToDismiss,
-                  n = e.onAnimateComplete,
-                  o = e.onDismiss,
-                  a = e.show,
-                  c = e.withArrow,
-                  s = e.withContentOverflow,
-                  u = e.withFixedPosition,
-                  d = e.withFocusContainer,
-                  l = e.withMask,
-                  p = e.withRoundedSides,
-                  f = e.withoutLayer,
-                  h = i.state,
-                  w = h.bottom,
-                  m = h.left,
-                  b = h.right,
-                  y = h.top,
-                  g = void 0 === y && void 0 === w,
-                  _ = g || !d ? v.Fragment : R.a,
-                  C = { top: y, bottom: w, left: m, right: b },
-                  P = [g ? z.initialRenderWrapper : u ? z.contentWrapperFixed : z.contentWrapperAbsolute, C],
-                  j = p ? z.infiniteCornerRadius : z.defaultCornerRadius,
-                  E = [z.contentRoot, j, !s && !c && z.overflowHidden]
+                  t = e.animationDuration,
+                  n = e.animationType,
+                  o = e.enableClickOutsideToDismiss,
+                  a = e.onAnimateComplete,
+                  c = e.onDismiss,
+                  s = e.show,
+                  u = e.withArrow,
+                  d = e.withContentOverflow,
+                  l = e.withFixedPosition,
+                  p = e.withFocusContainer,
+                  f = e.withMask,
+                  h = e.withRoundedSides,
+                  w = e.withoutLayer,
+                  m = i.state,
+                  b = m.bottom,
+                  y = m.left,
+                  g = m.right,
+                  _ = m.top,
+                  C = void 0 === _ && void 0 === b,
+                  P = C || !p ? v.Fragment : R.a,
+                  j = { top: _, bottom: b, left: y, right: g },
+                  E = [C ? z.initialRenderWrapper : l ? z.contentWrapperFixed : z.contentWrapperAbsolute, j],
+                  S = h ? z.infiniteCornerRadius : z.defaultCornerRadius,
+                  A = [z.contentRoot, S, !d && !u && z.overflowHidden]
                 return v.createElement(
                   k.a.Provider,
                   { value: { isInHoverCard: !0 } },
-                  t ? v.createElement(D.a, { onClick: o, style: [z.mask, l && z.withMask] }) : null,
+                  o ? v.createElement(D.a, { onClick: c, style: [z.mask, f && z.withMask] }) : null,
                   v.createElement(
                     D.a,
-                    { onKeyUp: i._handleEsc, ref: i._setContentNode, style: P },
+                    { onKeyUp: i._handleEsc, ref: i._setContentNode, style: E },
                     v.createElement(
-                      _,
+                      P,
                       null,
                       v.createElement(
                         O.b,
-                        { animateMount: !0, duration: 'long', onAnimateComplete: n, show: a, type: 'fade' },
+                        { animateMount: !0, duration: t || 'long', onAnimateComplete: a, show: s, type: n || 'fade' },
                         function (e) {
                           var t = e.isAnimating
-                          return l || f
-                            ? v.createElement(D.a, { style: E }, i._renderInnerBody())
+                          return f || w
+                            ? v.createElement(D.a, { style: A }, i._renderInnerBody())
                             : v.createElement(x.a, { id: 'HoverCard', minimizeReporting: t }, function (e, t) {
-                                return v.createElement(D.a, r()({ ref: e() }, t({ style: E })), i._renderInnerBody())
+                                return v.createElement(D.a, r()({ ref: e() }, t({ style: A })), i._renderInnerBody())
                               })
                         },
                       ),
@@ -182,7 +184,7 @@
                     r = e.withArrow,
                     a = e.withFixedPosition,
                     c = E.a.theme.borderRadiiPx.large,
-                    s = Object(g.c)({
+                    s = Object(g.d)({
                       anchorNode: t,
                       contentNode: i._contentNode,
                       preferredHorizontalOrientation: n,
