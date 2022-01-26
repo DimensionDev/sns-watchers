@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [224, 183],
+  [225, 184],
   {
     '1Uii': function (e, t, r) {
       'use strict'
@@ -1707,12 +1707,15 @@
       function P(e) {
         var t = e.userClaimsFetchStatus,
           r = Object(p.h)(),
-          c = n.useContext(a.a).userClaims,
-          o = c.isTrueAndEnabled('subscriptions_feature_labs_1001'),
-          i = c.isTrueAndEnabled('subscriptions_long_video_upload'),
-          l = [
-            { label: E, subtext: v, shouldRender: o },
-            { label: w, subtext: S, shouldRender: i },
+          c = n.useContext(a.a),
+          o = c.featureSwitches,
+          i = c.userClaims,
+          l = i.isTrueAndEnabled('subscriptions_feature_labs_1001'),
+          u = i.isTrueAndEnabled('subscriptions_long_video_upload'),
+          P = o.isTrue('dm_conversation_labels_pinned_enabled'),
+          j = [
+            { label: E, subtext: v, shouldRender: l && !P },
+            { label: w, subtext: S, shouldRender: u },
           ]
         return n.createElement(s.a, {
           accessibilityLabel: O,
@@ -1726,7 +1729,7 @@
                 { location: r, title: h },
                 n.createElement(b.a, { description: g }),
                 n.createElement(m.a, null),
-                l.map(function (e) {
+                j.map(function (e) {
                   var t = e.label,
                     r = e.shouldRender,
                     a = e.subtext

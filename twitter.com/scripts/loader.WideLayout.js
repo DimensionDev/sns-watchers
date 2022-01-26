@@ -1,14 +1,14 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [181, 196],
+  [182, 197],
   {
-    '0af8': function (e, t, n) {
+    '0af8': function (t, e, n) {
       'use strict'
-      n.r(t),
-        n.d(t, 'roundToNearestDevicePixel', function () {
-          return R
-        }),
-        n.d(t, 'default', function () {
+      n.r(e),
+        n.d(e, 'roundToNearestDevicePixel', function () {
           return P
+        }),
+        n.d(e, 'default', function () {
+          return I
         })
       n('OZaJ')
       var r = n('VrFO'),
@@ -24,61 +24,61 @@
         p = n('AuHH'),
         h = n.n(p),
         m = n('KEM+'),
-        v = n.n(m),
-        y = n('ERkP'),
+        y = n.n(m),
+        v = n('ERkP'),
         O = n('aITJ'),
-        b = (n('aWzz'), n('v6aA')),
+        g = (n('aWzz'), n('v6aA')),
         _ = n('jHwr'),
-        g = n('rHpw'),
+        b = n('rHpw'),
         w = n('i4Oy'),
         E = n('MWbm')
-      function I(e) {
-        var t = (function () {
+      function R(t) {
+        var e = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
           if ('function' == typeof Proxy) return !0
           try {
             return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
+          } catch (t) {
             return !1
           }
         })()
         return function () {
           var n,
-            r = h()(e)
-          if (t) {
+            r = h()(t)
+          if (e) {
             var o = h()(this).constructor
             n = Reflect.construct(r, arguments, o)
           } else n = r.apply(this, arguments)
           return f()(this, n)
         }
       }
-      var R = function (e) {
-          var t = e.cssPixels,
-            n = e.dpr
-          return Math.round(t * n) / n
+      var P = function (t) {
+          var e = t.cssPixels,
+            n = t.dpr
+          return Math.round(e * n) / n
         },
-        P = (function (e) {
-          l()(n, e)
-          var t = I(n)
-          function n(e, r) {
+        I = (function (t) {
+          l()(n, t)
+          var e = R(n)
+          function n(t, r) {
             var i
             return (
               o()(this, n),
-              (i = t.call(this, e, r)),
-              v()(s()(i), '_setContentRef', function (e) {
-                i._contentNode = e
+              (i = e.call(this, t, r)),
+              y()(s()(i), '_setContentRef', function (t) {
+                i._contentNode = t
               }),
-              v()(s()(i), '_setContainerRef', function (e) {
-                i._containerNode = e
+              y()(s()(i), '_setContainerRef', function (t) {
+                i._containerNode = t
               }),
-              v()(s()(i), '_handleProgrammaticScroll', function (e) {
-                ;(i._prevScrollY = (i._prevScrollY || 0) + e),
-                  i.setState({ contentOffset: Math.max(0, i.state.contentOffset + e) })
+              y()(s()(i), '_handleProgrammaticScroll', function (t) {
+                ;(i._prevScrollY = (i._prevScrollY || 0) + t),
+                  i.setState({ contentOffset: Math.max(0, i.state.contentOffset + t) })
               }),
-              v()(s()(i), '_handleLayout', function (e) {
-                var t = e.nativeEvent.layout.height > i.state.contentHeight
-                i._updatePositioning(t)
+              y()(s()(i), '_handleLayout', function (t) {
+                var e = t.nativeEvent.layout.height > i.state.contentHeight
+                i._updatePositioning(e)
               }),
               (i.state = {
                 stickyTop: !0,
@@ -100,8 +100,8 @@
               {
                 key: 'UNSAFE_componentWillMount',
                 value: function () {
-                  var e = this.context.viewport
-                  this._removeProgrammaticScrollListener = e.addProgrammaticScrollListener(
+                  var t = this.context.viewport
+                  this._removeProgrammaticScrollListener = t.addProgrammaticScrollListener(
                     this._handleProgrammaticScroll,
                   )
                 },
@@ -109,15 +109,15 @@
               {
                 key: 'componentDidMount',
                 value: function () {
-                  var e = this.context.viewport
+                  var t = this.context.viewport
                   if (
                     (this._updatePositioning(),
-                    (this._removeScrollListener = e.addScrollListener(this._scheduleUpdatePositioning)),
+                    (this._removeScrollListener = t.addScrollListener(this._scheduleUpdatePositioning)),
                     this._containerNode)
                   ) {
-                    var t = this._containerNode.getBoundingClientRect(),
-                      n = e.scrollY()
-                    ;(this._prevScrollY = n), this.setState({ stickyOffset: n + t.top })
+                    var e = this._containerNode.getBoundingClientRect(),
+                      n = t.scrollY()
+                    ;(this._prevScrollY = n), this.setState({ stickyOffset: n + e.top })
                   }
                 },
               },
@@ -131,21 +131,21 @@
               {
                 key: 'render',
                 value: function () {
-                  var e = this.state,
-                    t = e.contentOffset,
-                    n = e.position,
-                    r = e.stickyThreshold,
-                    o = e.stickyTop,
-                    i = S[n],
+                  var t = this.state,
+                    e = t.contentOffset,
+                    n = t.position,
+                    r = t.stickyThreshold,
+                    o = t.stickyTop,
+                    i = k[n],
                     a = window.devicePixelRatio || 1,
-                    c = R({ cssPixels: r, dpr: a }),
-                    s = R({ cssPixels: t, dpr: a }),
+                    c = P({ cssPixels: r, dpr: a }),
+                    s = P({ cssPixels: e, dpr: a }),
                     u = { top: o ? ''.concat(c, 'px') : null, bottom: o ? null : ''.concat(c, 'px') }
-                  return y.createElement(
+                  return v.createElement(
                     E.a,
-                    { ref: this._setContainerRef, style: [S.container, { minHeight: this.state.contentHeight }] },
-                    y.createElement(E.a, { style: { marginTop: ''.concat(s, 'px') } }),
-                    y.createElement(
+                    { ref: this._setContainerRef, style: [k.container, { minHeight: this.state.contentHeight }] },
+                    v.createElement(E.a, { style: { marginTop: ''.concat(s, 'px') } }),
+                    v.createElement(
                       E.a,
                       { onLayout: this._handleLayout, ref: this._setContentRef, style: [this.props.style, u, i] },
                       this.props.children,
@@ -156,19 +156,19 @@
               {
                 key: '_updatePositioning',
                 value: function () {
-                  var e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0]
+                  var t = arguments.length > 0 && void 0 !== arguments[0] && arguments[0]
                   if (this._contentNode && this._containerNode) {
-                    var t = this.context.viewport.scrollY(),
-                      n = t - this._prevScrollY
-                    if (!(Math.abs(n) < 0.5) || e) {
+                    var e = this.context.viewport.scrollY(),
+                      n = e - this._prevScrollY
+                    if (!(Math.abs(n) < 0.5) || t) {
                       var r = this.props.distanceFromBottom
-                      this._prevScrollY = t
+                      this._prevScrollY = e
                       var o = !!this._contentNode && this._contentNode.getBoundingClientRect(),
                         i = !!this._containerNode && this._containerNode.getBoundingClientRect()
                       if (o && i) {
                         var a = w.a.get('window'),
                           c = a.height,
-                          s = t + i.top,
+                          s = e + i.top,
                           u = Math.max(o.top - i.top, 0)
                         if (c - o.height > s)
                           this._updateState({
@@ -187,24 +187,24 @@
                             h = s - o.top <= 1 / f,
                             m = (l && p) || (!l && h)
                           if (m && O.b.isFirefox()) {
-                            var v = r,
-                              y = s
+                            var y = r,
+                              v = s
                             this._updateState({
                               position: 'fixed',
                               stickyOffset: s,
                               stickyTop: h,
-                              stickyThreshold: h ? y : v,
+                              stickyThreshold: h ? v : y,
                               contentOffset: u,
                               contentHeight: o.height,
                             })
                           } else {
-                            var b = c - o.height - r,
+                            var g = c - o.height - r,
                               _ = c - o.height - s
                             this._updateState({
                               position: 'sticky',
                               stickyTop: l,
                               stickyOffset: s,
-                              stickyThreshold: l ? b : _,
+                              stickyThreshold: l ? g : _,
                               contentOffset: d ? u : this.state.contentOffset,
                               contentHeight: o.height,
                             })
@@ -217,22 +217,22 @@
               },
               {
                 key: '_updateState',
-                value: function (e) {
-                  var t = this.state.stickyTop !== e.stickyTop,
-                    n = this.state.stickyThreshold !== e.stickyThreshold,
-                    r = Math.abs(this.state.contentOffset - e.contentOffset) > 0.5,
-                    o = Math.abs(this.state.stickyOffset - e.stickyOffset) > 0.5,
-                    i = this.state.position !== e.position,
-                    a = this.state.contentHeight !== e.contentHeight
-                  ;(t || n || r || o || i || a) && this.setState(e)
+                value: function (t) {
+                  var e = this.state.stickyTop !== t.stickyTop,
+                    n = this.state.stickyThreshold !== t.stickyThreshold,
+                    r = Math.abs(this.state.contentOffset - t.contentOffset) > 0.5,
+                    o = Math.abs(this.state.stickyOffset - t.stickyOffset) > 0.5,
+                    i = this.state.position !== t.position,
+                    a = this.state.contentHeight !== t.contentHeight
+                  ;(e || n || r || o || i || a) && this.setState(t)
                 },
               },
             ]),
             n
           )
-        })(y.PureComponent)
-      v()(P, 'contextType', b.a), v()(P, 'defaultProps', { distanceFromBottom: 10 })
-      var S = g.a.create(function (e) {
+        })(v.PureComponent)
+      y()(I, 'contextType', g.a), y()(I, 'defaultProps', { distanceFromBottom: 10 })
+      var k = b.a.create(function (t) {
         return {
           container: { height: '100%' },
           sticky: { position: 'sticky' },
@@ -241,11 +241,11 @@
         }
       })
     },
-    LHcr: function (e, t, n) {
+    LHcr: function (t, e, n) {
       'use strict'
-      n.r(t),
-        n.d(t, 'WhoToFollowContainer', function () {
-          return V
+      n.r(e),
+        n.d(e, 'WhoToFollowContainer', function () {
+          return G
         })
       n('OZaJ'), n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var r = n('VrFO'),
@@ -261,155 +261,155 @@
         p = n('AuHH'),
         h = n.n(p),
         m = n('KEM+'),
-        v = n.n(m),
-        y = (n('2G9S'), n('z84I'), n('M+/F'), n('ERkP')),
+        y = n.n(m),
+        v = (n('2G9S'), n('z84I'), n('M+/F'), n('ERkP')),
         O = n('Xs4Y'),
-        b = n('kGix'),
+        g = n('kGix'),
         _ = n('v//M'),
-        g = n('3XMw'),
-        w = n.n(g),
+        b = n('3XMw'),
+        w = n.n(b),
         E = n('Rp9C'),
-        I = n('rHpw'),
-        R = n('MWbm'),
-        P = n('lP98'),
-        S = n('RqPI'),
-        L = n('rxPX'),
-        k = n('0KEI'),
-        x = 'profile_accounts_sidebar',
-        U = function (e, t) {
-          return S.q(e)
+        R = n('rHpw'),
+        P = n('MWbm'),
+        I = n('lP98'),
+        k = n('RqPI'),
+        x = n('rxPX'),
+        S = n('0KEI'),
+        L = 'profile_accounts_sidebar',
+        H = function (t, e) {
+          return k.q(t)
         },
-        H = function (e, t) {
-          return t.userId
+        T = function (t, e) {
+          return e.userId
         },
-        N = function (e, t) {
-          var n = H(0, t),
-            r = U(e)
-          return P.c(e, { displayLocation: x, similarToUserId: n === r ? void 0 : n })
+        j = function (t, e) {
+          var n = T(0, e),
+            r = H(t)
+          return I.c(t, { displayLocation: L, similarToUserId: n === r ? void 0 : n })
         },
-        T = function (e, t) {
-          var n = H(0, t),
-            r = U(e)
-          return P.b(e, { displayLocation: x, similarToUserId: n === r ? void 0 : n })
+        N = function (t, e) {
+          var n = T(0, e),
+            r = H(t)
+          return I.b(t, { displayLocation: L, similarToUserId: n === r ? void 0 : n })
         },
-        j = Object(L.a)()
+        C = Object(x.a)()
           .propsFromState(function () {
-            return { fetchStatus: T, loggedInUserId: U, recommendations: N }
+            return { fetchStatus: N, loggedInUserId: H, recommendations: j }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(k.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(S.createLocalApiErrorHandlerWithContextFactory)(
                 'WHO_TO_FOLLOW_CONTAINER',
               ),
-              fetchRecommendationsIfNeeded: P.a,
+              fetchRecommendationsIfNeeded: I.a,
             }
           })
           .withAnalytics({ component: 'suggest_who_to_follow' }),
         D = n('Re5t'),
-        C = n('hqDb'),
-        A = n('hxu0'),
-        F = n('6vad'),
-        M = n('rC8y'),
+        U = n('hqDb'),
+        F = n('hxu0'),
+        M = n('6vad'),
+        A = n('rC8y'),
         B = w.a.a526aa66,
         W = w.a.ef62501f,
         K = w.a.d228a9a0,
-        Y = Object(A.a)(function (e) {
-          var t = e.isInSidebar,
-            n = e.userId,
-            r = e.userIds,
-            o = e.withProfileHeaderText,
+        Y = Object(F.a)(function (t) {
+          var e = t.isInSidebar,
+            n = t.userId,
+            r = t.userIds,
+            o = t.withProfileHeaderText,
             i = r.length > 3,
             a = '/i/connect_people?user_id='.concat(n)
-          return y.createElement(
-            R.a,
+          return v.createElement(
+            P.a,
             { accessibilityLabel: B, accessibilityRole: 'complementary' },
-            y.createElement(F.b, { text: o ? W : B }),
-            y.createElement(C.a, { displayMode: D.a.UserCompact, userIds: r.slice(0, 3), withItemBorder: !0 }),
-            i && y.createElement(M.a, { link: a, text: K, withBottomRadius: !0, withDarkerInteractiveBackground: t }),
+            v.createElement(M.b, { text: o ? W : B }),
+            v.createElement(U.a, { displayMode: D.a.UserCompact, userIds: r.slice(0, 3), withItemBorder: !0 }),
+            i && v.createElement(A.a, { link: a, text: K, withBottomRadius: !0, withDarkerInteractiveBackground: e }),
           )
         })
-      function z(e, t) {
-        var n = Object.keys(e)
+      function z(t, e) {
+        var n = Object.keys(t)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
-          t &&
-            (r = r.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
+          var r = Object.getOwnPropertySymbols(t)
+          e &&
+            (r = r.filter(function (e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
             })),
             n.push.apply(n, r)
         }
         return n
       }
-      function X(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? z(Object(n), !0).forEach(function (t) {
-                v()(e, t, n[t])
+      function X(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var n = null != arguments[e] ? arguments[e] : {}
+          e % 2
+            ? z(Object(n), !0).forEach(function (e) {
+                y()(t, e, n[e])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : z(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n))
+            : z(Object(n)).forEach(function (e) {
+                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
               })
         }
-        return e
+        return t
       }
-      function J(e) {
-        var t = (function () {
+      function J(t) {
+        var e = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
           if ('function' == typeof Proxy) return !0
           try {
             return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
+          } catch (t) {
             return !1
           }
         })()
         return function () {
           var n,
-            r = h()(e)
-          if (t) {
+            r = h()(t)
+          if (e) {
             var o = h()(this).constructor
             n = Reflect.construct(r, arguments, o)
           } else n = r.apply(this, arguments)
           return f()(this, n)
         }
       }
-      var Z = w.a.fd6473fa,
-        q = { element: 'user', action: 'results' },
-        G = { viewType: 'who_to_follow' },
-        V = (function (e) {
-          l()(n, e)
-          var t = J(n)
+      var q = w.a.fd6473fa,
+        V = { element: 'user', action: 'results' },
+        Z = { viewType: 'who_to_follow' },
+        G = (function (t) {
+          l()(n, t)
+          var e = J(n)
           function n() {
-            var e
+            var t
             o()(this, n)
             for (var r = arguments.length, i = new Array(r), a = 0; a < r; a++) i[a] = arguments[a]
             return (
-              (e = t.call.apply(t, [this].concat(i))),
-              v()(s()(e), '_renderContent', function () {
-                var t = e.props,
-                  n = t.recommendations,
-                  r = t.userId,
-                  o = t.withProfileHeaderText,
+              (t = e.call.apply(e, [this].concat(i))),
+              y()(s()(t), '_renderContent', function () {
+                var e = t.props,
+                  n = e.recommendations,
+                  r = e.userId,
+                  o = e.withProfileHeaderText,
                   i =
                     n &&
-                    n.map(function (e) {
-                      return e.user
+                    n.map(function (t) {
+                      return t.user
                     })
-                return y.createElement(Y, { userId: r, userIds: i, withProfileHeaderText: o })
+                return v.createElement(Y, { userId: r, userIds: i, withProfileHeaderText: o })
               }),
-              v()(s()(e), '_handleImpression', function (t) {
-                var n = e.props.analytics,
+              y()(s()(t), '_handleImpression', function (e) {
+                var n = t.props.analytics,
                   r =
-                    t &&
-                    t.slice(0, 3).map(function (e) {
-                      return X(X({}, E.a.forUser(e.user)), {}, { suggestion_details: { source_data: e.token } })
+                    e &&
+                    e.slice(0, 3).map(function (t) {
+                      return X(X({}, E.a.forUser(t.user)), {}, { suggestion_details: { source_data: t.token } })
                     })
-                n.scribe(X(X({}, q), {}, { data: { items: r } }))
+                n.scribe(X(X({}, V), {}, { data: { items: r } }))
               }),
-              e
+              t
             )
           }
           return (
@@ -417,33 +417,33 @@
               {
                 key: 'componentDidMount',
                 value: function () {
-                  var e = this.props.recommendations
-                  this._fetchRecommendations(this.props), e && e.length > 0 && this._handleImpression(e)
+                  var t = this.props.recommendations
+                  this._fetchRecommendations(this.props), t && t.length > 0 && this._handleImpression(t)
                 },
               },
               {
                 key: 'componentDidUpdate',
-                value: function (e) {
-                  var t = this.props.recommendations
-                  this.props.userId !== e.userId && this._fetchRecommendations(this.props),
-                    t !== e.recommendations && t && t.length > 0 && this._handleImpression(t)
+                value: function (t) {
+                  var e = this.props.recommendations
+                  this.props.userId !== t.userId && this._fetchRecommendations(this.props),
+                    e !== t.recommendations && e && e.length > 0 && this._handleImpression(e)
                 },
               },
               {
                 key: 'render',
                 value: function () {
-                  var e = this.props,
-                    t = e.fetchStatus,
-                    n = e.style
-                  return t === b.a.FAILED || this._hasEmptySuggestionList()
+                  var t = this.props,
+                    e = t.fetchStatus,
+                    n = t.style
+                  return e === g.a.FAILED || this._hasEmptySuggestionList()
                     ? null
-                    : y.createElement(
-                        R.a,
+                    : v.createElement(
+                        P.a,
                         { style: [Q.root, n] },
-                        y.createElement(_.a, {
-                          accessibilityLabel: Z,
-                          behavioralEventContext: G,
-                          fetchStatus: t,
+                        v.createElement(_.a, {
+                          accessibilityLabel: q,
+                          behavioralEventContext: Z,
+                          fetchStatus: e,
                           render: this._renderContent,
                         }),
                       )
@@ -451,36 +451,36 @@
               },
               {
                 key: '_fetchRecommendations',
-                value: function (e) {
-                  var t = e.createLocalApiErrorHandler,
-                    n = e.fetchRecommendationsIfNeeded,
-                    r = e.loggedInUserId,
-                    o = e.userId
-                  n({ limit: 4, displayLocation: x, similarToUserId: o !== r ? o : void 0 }).catch(t(O.a))
+                value: function (t) {
+                  var e = t.createLocalApiErrorHandler,
+                    n = t.fetchRecommendationsIfNeeded,
+                    r = t.loggedInUserId,
+                    o = t.userId
+                  n({ limit: 4, displayLocation: L, similarToUserId: o !== r ? o : void 0 }).catch(e(O.a))
                 },
               },
               {
                 key: '_hasEmptySuggestionList',
                 value: function () {
-                  var e = this.props,
-                    t = e.fetchStatus,
-                    n = e.recommendations
-                  return t === b.a.LOADED && 0 === n.length
+                  var t = this.props,
+                    e = t.fetchStatus,
+                    n = t.recommendations
+                  return e === g.a.LOADED && 0 === n.length
                 },
               },
             ]),
             n
           )
-        })(y.PureComponent),
-        Q = I.a.create(function (e) {
+        })(v.PureComponent),
+        Q = R.a.create(function (t) {
           return { root: { minHeight: '15rem' } }
         }),
-        $ = j(V)
-      t.default = $
+        $ = C(G)
+      e.default = $
     },
-    Xs4Y: function (e, t, n) {
+    Xs4Y: function (t, e, n) {
       'use strict'
-      n.d(t, 'a', function () {
+      n.d(e, 'a', function () {
         return c
       })
       var r = n('KEM+'),
@@ -489,24 +489,24 @@
         a = n('fs1G'),
         c = o()({}, i.a.ResourceNotFound, { customAction: a.a })
     },
-    XygZ: function (e, t, n) {
+    XygZ: function (t, e, n) {
       'use strict'
       var r = n('ax0f'),
         o = n('gIHd')
       r(
         { target: 'String', proto: !0, forced: n('sHxg')('anchor') },
         {
-          anchor: function (e) {
-            return o(this, 'a', 'name', e)
+          anchor: function (t) {
+            return o(this, 'a', 'name', t)
           },
         },
       )
     },
-    fyKl: function (e, t, n) {
+    fyKl: function (t, e, n) {
       'use strict'
-      n.r(t),
-        n.d(t, 'default', function () {
-          return A
+      n.r(e),
+        n.d(e, 'default', function () {
+          return F
         })
       n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('OZaJ')
       var r = n('97Jx'),
@@ -522,118 +522,118 @@
         p = n('N+ot'),
         h = n.n(p),
         m = n('AuHH'),
-        v = n.n(m),
-        y = n('KEM+'),
-        O = n.n(y),
-        b = (n('uFXj'), n('yH/f'), n('XygZ'), n('ERkP')),
+        y = n.n(m),
+        v = n('KEM+'),
+        O = n.n(v),
+        g = (n('uFXj'), n('yH/f'), n('XygZ'), n('ERkP')),
         _ = n('zfvc'),
-        g = n('jHwr'),
+        b = n('jHwr'),
         w = n('VY6S'),
         E = n('w9LO'),
-        I = n('//dC'),
-        R = n('lHOd'),
-        P = n('Oe3h'),
-        S = n('0FVZ'),
-        L = n('7N4s'),
-        k = n('cHvH'),
-        x = n('rHpw'),
-        U = n('i4Oy'),
-        H = n('shC7'),
-        N = n('MWbm')
-      function T(e) {
-        var t = (function () {
+        R = n('//dC'),
+        P = n('lHOd'),
+        I = n('Oe3h'),
+        k = n('0FVZ'),
+        x = n('7N4s'),
+        S = n('cHvH'),
+        L = n('rHpw'),
+        H = n('i4Oy'),
+        T = n('shC7'),
+        j = n('MWbm')
+      function N(t) {
+        var e = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
           if ('function' == typeof Proxy) return !0
           try {
             return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
+          } catch (t) {
             return !1
           }
         })()
         return function () {
           var n,
-            r = v()(e)
-          if (t) {
-            var o = v()(this).constructor
+            r = y()(t)
+          if (e) {
+            var o = y()(this).constructor
             n = Reflect.construct(r, arguments, o)
           } else n = r.apply(this, arguments)
           return h()(this, n)
         }
       }
-      function j(e, t) {
-        var n = Object.keys(e)
+      function C(t, e) {
+        var n = Object.keys(t)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
-          t &&
-            (r = r.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
+          var r = Object.getOwnPropertySymbols(t)
+          e &&
+            (r = r.filter(function (e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
             })),
             n.push.apply(n, r)
         }
         return n
       }
-      function D(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? j(Object(n), !0).forEach(function (t) {
-                O()(e, t, n[t])
+      function D(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var n = null != arguments[e] ? arguments[e] : {}
+          e % 2
+            ? C(Object(n), !0).forEach(function (e) {
+                O()(t, e, n[e])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : j(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n))
+            : C(Object(n)).forEach(function (e) {
+                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
               })
         }
-        return e
+        return t
       }
-      var C = x.a.create(function (e) {
+      var U = L.a.create(function (t) {
           return {
             rootNarrow: { maxWidth: '75%' },
-            rootWide: { maxWidth: 'calc('.concat(e.spaces.space64, ' * 6)') },
-            anchor: x.a.absoluteFillObject,
-            mask: D(D({}, x.a.absoluteFillObject), {}, { position: 'fixed' }),
-            bodyRectHelper: D(D({}, x.a.absoluteFillObject), {}, { bottom: void 0 }),
+            rootWide: { maxWidth: 'calc('.concat(t.spaces.space64, ' * 6)') },
+            anchor: L.a.absoluteFillObject,
+            mask: D(D({}, L.a.absoluteFillObject), {}, { position: 'fixed' }),
+            bodyRectHelper: D(D({}, L.a.absoluteFillObject), {}, { bottom: void 0 }),
             content: {
-              borderRadius: e.borderRadii.small,
+              borderRadius: t.borderRadii.small,
               position: 'absolute',
               overflow: 'hidden',
-              backgroundColor: e.colors.navigationBackground,
-              boxShadow: e.boxShadows.medium,
+              backgroundColor: t.colors.navigationBackground,
+              boxShadow: t.boxShadows.medium,
             },
             contentInitialRender: { position: 'fixed', opacity: 0 },
             contentFixed: { position: 'fixed', overflowY: 'auto', overscrollBehavior: 'contain' },
           }
         }),
-        A = (function (e) {
-          f()(n, e)
-          var t = T(n)
-          function n(e, r) {
+        F = (function (t) {
+          f()(n, t)
+          var e = N(n)
+          function n(t, r) {
             var o
             return (
               a()(this, n),
-              (o = t.call(this, e, r)),
+              (o = e.call(this, t, r)),
               O()(l()(o), '_handleAnimateComplete', function () {
-                var e = o.props.onAnimateComplete
-                e && e()
+                var t = o.props.onAnimateComplete
+                t && t()
               }),
-              O()(l()(o), '_handleEsc', function (e) {
-                var t = o.props.onDismiss,
-                  n = e.altKey,
-                  r = e.ctrlKey,
-                  i = e.key,
-                  a = e.metaKey
-                !(n || r || a) && 'Escape' === i && t()
+              O()(l()(o), '_handleEsc', function (t) {
+                var e = o.props.onDismiss,
+                  n = t.altKey,
+                  r = t.ctrlKey,
+                  i = t.key,
+                  a = t.metaKey
+                !(n || r || a) && 'Escape' === i && e()
               }),
-              O()(l()(o), '_receiveBodyRectHelperRef', function (e) {
-                e && o._bodyRectHelperNode !== e && ((o._bodyRectHelperNode = e), o._scheduleUpdate())
+              O()(l()(o), '_receiveBodyRectHelperRef', function (t) {
+                t && o._bodyRectHelperNode !== t && ((o._bodyRectHelperNode = t), o._scheduleUpdate())
               }),
-              O()(l()(o), '_receiveAnchorRef', function (e) {
-                e && o._anchorNode !== e && ((o._anchorNode = e), o._scheduleUpdate())
+              O()(l()(o), '_receiveAnchorRef', function (t) {
+                t && o._anchorNode !== t && ((o._anchorNode = t), o._scheduleUpdate())
               }),
-              O()(l()(o), '_receiveContentRef', function (e) {
-                e && o._contentNode !== e && ((o._contentNode = e), o._scheduleUpdate())
+              O()(l()(o), '_receiveContentRef', function (t) {
+                t && o._contentNode !== t && ((o._contentNode = t), o._scheduleUpdate())
               }),
               O()(l()(o), '_updatePosition', function () {
                 if (
@@ -644,13 +644,13 @@
                   o._bodyRectHelperNode &&
                   o._bodyRectHelperNode instanceof window.HTMLElement
                 ) {
-                  var e = o._contentNode.scrollHeight,
-                    t = o._contentNode.scrollWidth,
+                  var t = o._contentNode.scrollHeight,
+                    e = o._contentNode.scrollWidth,
                     n = o._bodyRectHelperNode.getBoundingClientRect(),
                     r = n.left,
                     i = n.top,
                     a = n.width,
-                    c = U.a.get('window'),
+                    c = H.a.get('window'),
                     s = c.height,
                     u = c.width,
                     l = { left: 0, top: 0, height: 0, width: 0 }
@@ -664,42 +664,42 @@
                     p = d.left,
                     h = d.top,
                     m = d.width,
-                    v = u - a,
-                    y = p - r,
+                    y = u - a,
+                    v = p - r,
                     O = h - i,
-                    b = p + m >= t,
-                    _ = h + f >= e,
-                    g = u - p >= t,
-                    w = s - h >= e,
+                    g = p + m >= e,
+                    _ = h + f >= t,
+                    b = u - p >= e,
+                    w = s - h >= t,
                     E = o.props.preferredVerticalOrientation,
-                    I = (function (e) {
-                      return H.a.getConstants().isRTL ? ('left' === e ? 'right' : 'left') : e
+                    R = (function (t) {
+                      return T.a.getConstants().isRTL ? ('left' === t ? 'right' : 'left') : t
                     })(o.props.preferredHorizontalOrientation),
-                    R =
-                      o.state.verticalOrientation ||
-                      (function (e) {
-                        var t = e.canOrientDown,
-                          n = e.canOrientUp,
-                          r = e.verticalPreference
-                        return (n && t) || (!n && !t) ? r : n ? 'up' : 'down'
-                      })({ verticalPreference: E, canOrientUp: _, canOrientDown: w }),
                     P =
+                      o.state.verticalOrientation ||
+                      (function (t) {
+                        var e = t.canOrientDown,
+                          n = t.canOrientUp,
+                          r = t.verticalPreference
+                        return (n && e) || (!n && !e) ? r : n ? 'up' : 'down'
+                      })({ verticalPreference: E, canOrientUp: _, canOrientDown: w }),
+                    I =
                       o.state.horizontalOrientation ||
-                      (function (e) {
-                        var t = e.canOrientLeft,
-                          n = e.canOrientRight,
-                          r = e.horizontalPreference
-                        return !t || ('left' !== r && n) ? 'right' : 'left'
-                      })({ horizontalPreference: I, canOrientLeft: b, canOrientRight: g }),
-                    S = o.props.isFixed ? p : y,
-                    L = o.props.isFixed ? h : O,
-                    k = 'up' === R ? L + f - e : L,
-                    x = 'left' === P ? u - S - m - v : u - S - t - v
-                  o.setState({ top: Math.max(k, 0), right: x, verticalOrientation: R, horizontalOrientation: P })
+                      (function (t) {
+                        var e = t.canOrientLeft,
+                          n = t.canOrientRight,
+                          r = t.horizontalPreference
+                        return !e || ('left' !== r && n) ? 'right' : 'left'
+                      })({ horizontalPreference: R, canOrientLeft: g, canOrientRight: b }),
+                    k = o.props.isFixed ? p : v,
+                    x = o.props.isFixed ? h : O,
+                    S = 'up' === P ? x + f - t : x,
+                    L = 'left' === I ? u - k - m - y : u - k - e - y
+                  o.setState({ top: Math.max(S, 0), right: L, verticalOrientation: P, horizontalOrientation: I })
                 }
               }),
               (o.state = Object.freeze({})),
-              (o._scheduleUpdate = Object(g.a)(o._updatePosition, window.requestAnimationFrame)),
+              (o._scheduleUpdate = Object(b.a)(o._updatePosition, window.requestAnimationFrame)),
               (o._scheduleDebouncedUpdate = Object(w.a)(o._scheduleUpdate, 250)),
               o
             )
@@ -709,26 +709,26 @@
               {
                 key: 'componentDidMount',
                 value: function () {
-                  ;(this._mounted = !0), U.a.addEventListener('change', this._scheduleDebouncedUpdate)
+                  ;(this._mounted = !0), H.a.addEventListener('change', this._scheduleDebouncedUpdate)
                 },
               },
               {
                 key: 'componentWillUnmount',
                 value: function () {
-                  ;(this._mounted = !1), U.a.removeEventListener('change', this._scheduleDebouncedUpdate)
+                  ;(this._mounted = !1), H.a.removeEventListener('change', this._scheduleDebouncedUpdate)
                 },
               },
               {
                 key: 'render',
                 value: function () {
-                  var e = this,
-                    t = this.props,
-                    n = t.animateInDuration,
-                    r = t.animateType,
-                    i = t.children,
-                    a = t.isFixed,
-                    c = t.onDismiss,
-                    s = t.withKeyboardNavigation,
+                  var t = this,
+                    e = this.props,
+                    n = e.animateInDuration,
+                    r = e.animateType,
+                    i = e.children,
+                    a = e.isFixed,
+                    c = e.onDismiss,
+                    s = e.withKeyboardNavigation,
                     u = this.state,
                     l = u.right,
                     d = u.top,
@@ -736,60 +736,60 @@
                     p = void 0 === d,
                     h = 'calc(100vh - '.concat(d || 0, 'px)'),
                     m = [
-                      C.content,
-                      p && C.contentInitialRender,
-                      a && [C.contentFixed, { maxHeight: h }],
+                      U.content,
+                      p && U.contentInitialRender,
+                      a && [U.contentFixed, { maxHeight: h }],
                       {
                         top: d,
-                        right: H.a.getConstants().isRTL ? void 0 : l,
-                        left: H.a.getConstants().isRTL ? l : void 0,
+                        right: T.a.getConstants().isRTL ? void 0 : l,
+                        left: T.a.getConstants().isRTL ? l : void 0,
                       },
                     ]
-                  return b.createElement(
-                    N.a,
-                    { ref: this._receiveAnchorRef, style: C.anchor },
-                    b.createElement(
-                      S.a.Dropdown,
+                  return g.createElement(
+                    j.a,
+                    { ref: this._receiveAnchorRef, style: U.anchor },
+                    g.createElement(
+                      k.a.Dropdown,
                       null,
-                      b.createElement(R.a.Consumer, null, function (t) {
-                        return b.createElement(L.b.Consumer, null, function (a) {
+                      g.createElement(P.a.Consumer, null, function (e) {
+                        return g.createElement(x.b.Consumer, null, function (a) {
                           var u = a.isModal
-                          return b.createElement(
-                            I.a,
-                            { history: t, isModal: u, onDismiss: c },
-                            b.createElement(
+                          return g.createElement(
+                            R.a,
+                            { history: e, isModal: u, onDismiss: c },
+                            g.createElement(
                               E.a,
                               { withKeyboardNavigation: s },
-                              b.createElement(N.a, { onClick: c, style: C.mask }),
-                              b.createElement(N.a, { ref: e._receiveBodyRectHelperRef, style: C.bodyRectHelper }),
-                              b.createElement(k.a, null, function (t) {
-                                var a = t.windowWidth
-                                return b.createElement(
-                                  N.a,
+                              g.createElement(j.a, { onClick: c, style: U.mask }),
+                              g.createElement(j.a, { ref: t._receiveBodyRectHelperRef, style: U.bodyRectHelper }),
+                              g.createElement(S.a, null, function (e) {
+                                var a = e.windowWidth
+                                return g.createElement(
+                                  j.a,
                                   {
                                     accessibilityRole: 'menu',
-                                    onKeyUp: e._handleEsc,
-                                    ref: e._receiveContentRef,
-                                    style: [a < x.a.theme.breakpoints.medium ? C.rootNarrow : C.rootWide, m],
+                                    onKeyUp: t._handleEsc,
+                                    ref: t._receiveContentRef,
+                                    style: [a < L.a.theme.breakpoints.medium ? U.rootNarrow : U.rootWide, m],
                                   },
                                   p && 'slide' === r
                                     ? i
-                                    : b.createElement(
+                                    : g.createElement(
                                         _.b,
                                         {
                                           animateMount: 'up' !== f,
                                           duration: n,
-                                          onAnimateComplete: e._handleAnimateComplete,
+                                          onAnimateComplete: t._handleAnimateComplete,
                                           show: !0,
                                           type: r,
                                         },
-                                        function (e) {
-                                          var t = e.isAnimating
-                                          return b.createElement(
-                                            P.a,
-                                            { id: 'Dropdown', minimizeReporting: t },
-                                            function (e, t) {
-                                              return b.createElement(N.a, o()({ ref: e() }, t({})), i)
+                                        function (t) {
+                                          var e = t.isAnimating
+                                          return g.createElement(
+                                            I.a,
+                                            { id: 'Dropdown', minimizeReporting: e },
+                                            function (t, e) {
+                                              return g.createElement(j.a, o()({ ref: t() }, e({})), i)
                                             },
                                           )
                                         },
@@ -807,8 +807,8 @@
             ]),
             n
           )
-        })(b.Component)
-      O()(A, 'defaultProps', {
+        })(g.Component)
+      O()(F, 'defaultProps', {
         preferredHorizontalOrientation: 'left',
         preferredVerticalOrientation: 'down',
         animateType: 'slide',
@@ -816,249 +816,27 @@
         withKeyboardNavigation: !0,
       })
     },
-    hqDb: function (e, t, n) {
+    jHwr: function (t, e, n) {
       'use strict'
-      n('OZaJ')
-      var r = n('97Jx'),
-        o = n.n(r),
-        i = n('m3Bd'),
-        a = n.n(i),
-        c = n('VrFO'),
-        s = n.n(c),
-        u = n('Y9Ll'),
-        l = n.n(u),
-        d = n('1Pcy'),
-        f = n.n(d),
-        p = n('5Yy7'),
-        h = n.n(p),
-        m = n('N+ot'),
-        v = n.n(m),
-        y = n('AuHH'),
-        O = n.n(y),
-        b = n('KEM+'),
-        _ = n.n(b),
-        g = (n('2G9S'), n('ERkP')),
-        w = n('k49u'),
-        E = (n('LW0h'), n('KOtZ'), n('vrRf'), n('6xIQ')),
-        I = n('kGix'),
-        R = n('G6rE'),
-        P = n('rxPX'),
-        S = n('0KEI'),
-        L = function (e, t) {
-          return t.userIds
-        },
-        k = function (e, t) {
-          return t.userIds.filter(function (t) {
-            return !!R.e.select(e, t)
-          })
-        },
-        x = function (e, t) {
-          return t.userIds.reduce(function (t, n) {
-            var r = R.e.selectFetchStatus(e, n)
-            return (t[n] = r === I.a.NONE ? I.a.LOADING : r), t
-          }, {})
-        },
-        U = Object(P.a)()
-          .propsFromState(function () {
-            return {
-              availableUserIds: Object(E.a)(k, function (e) {
-                return e
-              }),
-              fetchStatus: Object(E.a)(k, x, L, function (e, t, n) {
-                for (var r = I.a.LOADED, o = 0; o < n.length; o++) {
-                  var i = n[o]
-                  if (-1 === e.indexOf(i)) {
-                    var a = t[i] || I.a.LOADING
-                    r = r === I.a.LOADED ? a : r
-                  }
-                  if (r === I.a.LOADED) break
-                }
-                return r
-              }),
-            }
-          })
-          .propsFromActions(function () {
-            return {
-              createLocalApiErrorHandler: Object(S.createLocalApiErrorHandlerWithContextFactory)(
-                'USERS_LIST_CONTAINER',
-              ),
-              fetchUsersIfNeeded: R.e.fetchManyIfNeeded,
-            }
-          }),
-        H = n('v//M'),
-        N = n('3XMw'),
-        T = n.n(N),
-        j = n('pQ3Z'),
-        D = n.n(j),
-        C = (n('z84I'), n('cFuS')),
-        A = n('Re5t'),
-        F = n('MWbm'),
-        M = n('88ay'),
-        B = function (e) {
-          var t = e.displayMode,
-            n = e.renderUserCell,
-            r = e.userIds
-          e.withFinalItemBorder, e.withItemBorder
-          return g.createElement(
-            F.a,
-            null,
-            r.map(function (e, r) {
-              return n
-                ? n(e)
-                : g.createElement(M.b, {
-                    decoration: M.e,
-                    displayMode: t,
-                    key: e,
-                    promotedItemType: C.c.USER,
-                    userId: e,
-                    withFollowsYou: !0,
-                  })
-            }),
-          )
-        }
-      B.defaultProps = { displayMode: A.a.UserDetailed, withFinalItemBorder: !0, withItemBorder: !1 }
-      var W = B
-      function K(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var n,
-            r = O()(e)
-          if (t) {
-            var o = O()(this).constructor
-            n = Reflect.construct(r, arguments, o)
-          } else n = r.apply(this, arguments)
-          return v()(this, n)
-        }
-      }
-      var Y = T.a.f5b426c2,
-        z = { viewType: 'user_list' },
-        X = U(
-          (function (e) {
-            h()(n, e)
-            var t = K(n)
-            function n() {
-              var e
-              s()(this, n)
-              for (var r = arguments.length, i = new Array(r), c = 0; c < r; c++) i[c] = arguments[c]
-              return (
-                (e = t.call.apply(t, [this].concat(i))),
-                _()(f()(e), 'state', { allUsersUnavailable: !1 }),
-                _()(f()(e), '_renderContent', function () {
-                  var t = e.props,
-                    n = t.availableUserIds,
-                    r =
-                      (t.createLocalApiErrorHandler,
-                      t.fetchStatus,
-                      t.fetchUsersIfNeeded,
-                      t.userIds,
-                      a()(t, [
-                        'availableUserIds',
-                        'createLocalApiErrorHandler',
-                        'fetchStatus',
-                        'fetchUsersIfNeeded',
-                        'userIds',
-                      ]))
-                  return g.createElement(W, o()({}, r, { userIds: n }))
-                }),
-                _()(f()(e), '_handleFetch', function () {
-                  e._fetchUsersIfNeeded()
-                }),
-                e
-              )
-            }
-            return (
-              l()(n, [
-                {
-                  key: 'componentDidMount',
-                  value: function () {
-                    this._fetchUsersIfNeeded()
-                  },
-                },
-                {
-                  key: 'componentDidUpdate',
-                  value: function (e) {
-                    D()(e.userIds, this.props.userIds) || this._fetchUsersIfNeeded()
-                  },
-                },
-                {
-                  key: 'render',
-                  value: function () {
-                    return g.createElement(H.a, {
-                      accessibilityLabel: Y,
-                      behavioralEventContext: z,
-                      fetchStatus: this.state.allUsersUnavailable ? I.a.LOADED : this.props.fetchStatus,
-                      onRequestRetry: this._handleFetch,
-                      render: this._renderContent,
-                      retryable: !1,
-                    })
-                  },
-                },
-                {
-                  key: '_fetchUsersIfNeeded',
-                  value: function () {
-                    var e,
-                      t = this,
-                      n = this.props,
-                      r = n.availableUserIds,
-                      o = n.createLocalApiErrorHandler
-                    ;(0, n.fetchUsersIfNeeded)(n.userIds).then(
-                      function () {
-                        t.setState({ allUsersUnavailable: !1 })
-                      },
-                      o(
-                        ((e = {}),
-                        _()(e, w.a.AddressBookLookupNotFound, {
-                          customAction: function () {
-                            0 === r.length && t.setState({ allUsersUnavailable: !0 })
-                          },
-                        }),
-                        _()(e, w.a.OtherUserSuspended, {
-                          customAction: function () {
-                            0 === r.length && t.setState({ allUsersUnavailable: !0 })
-                          },
-                        }),
-                        e),
-                      ),
-                    )
-                  },
-                },
-              ]),
-              n
-            )
-          })(g.Component),
-        )
-      t.a = X
-    },
-    jHwr: function (e, t, n) {
-      'use strict'
-      t.a = function (e, t) {
+      e.a = function (t, e) {
         var n = null,
           r = function () {
-            ;(n = null), e()
+            ;(n = null), t()
           }
         return function () {
-          return n || (n = t(r)), n
+          return n || (n = e(r)), n
         }
       }
     },
-    lP98: function (e, t, n) {
+    lP98: function (t, e, n) {
       'use strict'
-      n.d(t, 'c', function () {
-        return g
+      n.d(e, 'c', function () {
+        return b
       }),
-        n.d(t, 'b', function () {
+        n.d(e, 'b', function () {
           return w
         }),
-        n.d(t, 'a', function () {
+        n.d(e, 'a', function () {
           return E
         })
       n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
@@ -1070,128 +848,128 @@
         s = n.n(c),
         u = n('kGix'),
         l = n('Ssj5')
-      function d(e, t) {
-        var n = Object.keys(e)
+      function d(t, e) {
+        var n = Object.keys(t)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
-          t &&
-            (r = r.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
+          var r = Object.getOwnPropertySymbols(t)
+          e &&
+            (r = r.filter(function (e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
             })),
             n.push.apply(n, r)
         }
         return n
       }
-      function f(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? d(Object(n), !0).forEach(function (t) {
-                o()(e, t, n[t])
+      function f(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var n = null != arguments[e] ? arguments[e] : {}
+          e % 2
+            ? d(Object(n), !0).forEach(function (e) {
+                o()(t, e, n[e])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : d(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n))
+            : d(Object(n)).forEach(function (e) {
+                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
               })
         }
-        return e
+        return t
       }
       var p = 'recommendations',
         h = 'rweb/recommendations/FETCH_REQUEST',
         m = 'rweb/recommendations/FETCH_SUCCESS',
-        v = 'rweb/recommendations/FETCH_FAILURE',
-        y = {},
-        O = function (e) {
-          var t = e.displayLocation,
-            n = e.similarToUserId
-          return t + (n ? '_'.concat(n) : '')
+        y = 'rweb/recommendations/FETCH_FAILURE',
+        v = {},
+        O = function (t) {
+          var e = t.displayLocation,
+            n = t.similarToUserId
+          return e + (n ? '_'.concat(n) : '')
         }
       l.a.register(
         o()({}, p, function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : y,
-            t = arguments.length > 1 ? arguments[1] : void 0
-          if (!t.meta) return e
-          switch (t.type) {
+          var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : v,
+            e = arguments.length > 1 ? arguments[1] : void 0
+          if (!e.meta) return t
+          switch (e.type) {
             case h:
-              var n = O(t.meta)
-              return f(f({}, e), {}, o()({}, n, f(f({}, e[n]), {}, { fetchStatus: u.a.LOADING })))
-            case v:
-              var r = O(t.meta)
-              return f(f({}, e), {}, o()({}, r, f(f({}, e[r]), {}, { fetchStatus: u.a.FAILED })))
+              var n = O(e.meta)
+              return f(f({}, t), {}, o()({}, n, f(f({}, t[n]), {}, { fetchStatus: u.a.LOADING })))
+            case y:
+              var r = O(e.meta)
+              return f(f({}, t), {}, o()({}, r, f(f({}, t[r]), {}, { fetchStatus: u.a.FAILED })))
             case m:
-              var i = O(t.meta),
-                a = t.payload && t.payload.entities ? t.payload.entities : { recommendations: s.a },
-                c = t.payload && t.payload.result ? t.payload.result : _,
-                l = c.map(function (e) {
-                  return a.recommendations[e]
+              var i = O(e.meta),
+                a = e.payload && e.payload.entities ? e.payload.entities : { recommendations: s.a },
+                c = e.payload && e.payload.result ? e.payload.result : _,
+                l = c.map(function (t) {
+                  return a.recommendations[t]
                 })
-              return f(f({}, e), {}, o()({}, i, f(f({}, e[i]), {}, { fetchStatus: u.a.LOADED, recommendations: l })))
+              return f(f({}, t), {}, o()({}, i, f(f({}, t[i]), {}, { fetchStatus: u.a.LOADED, recommendations: l })))
             default:
-              return e
+              return t
           }
         }),
       )
-      var b = [],
+      var g = [],
         _ = [],
-        g = function (e, t) {
-          var n = t.displayLocation,
-            r = t.similarToUserId,
-            o = e.recommendations[O({ displayLocation: n, similarToUserId: r })]
-          return o && o.recommendations ? o.recommendations : b
+        b = function (t, e) {
+          var n = e.displayLocation,
+            r = e.similarToUserId,
+            o = t.recommendations[O({ displayLocation: n, similarToUserId: r })]
+          return o && o.recommendations ? o.recommendations : g
         },
-        w = function (e, t) {
-          var n = t.displayLocation,
-            r = t.similarToUserId,
-            o = e.recommendations[O({ displayLocation: n, similarToUserId: r })]
+        w = function (t, e) {
+          var n = e.displayLocation,
+            r = e.similarToUserId,
+            o = t.recommendations[O({ displayLocation: n, similarToUserId: r })]
           return o ? o.fetchStatus : u.a.NONE
         },
-        E = function (e) {
-          return function (t, n, r) {
+        E = function (t) {
+          return function (e, n, r) {
             var o = n(),
-              c = e.displayLocation,
-              l = e.similarToUserId,
-              d = g(o, { displayLocation: c, similarToUserId: l }),
+              c = t.displayLocation,
+              l = t.similarToUserId,
+              d = b(o, { displayLocation: c, similarToUserId: l }),
               f = w(o, { displayLocation: c, similarToUserId: l }) === u.a.LOADED
             return d && f
               ? Promise.resolve(s.a)
-              : t(
-                  (function (e) {
-                    return function (t, n, r) {
+              : e(
+                  (function (t) {
+                    return function (e, n, r) {
                       var o = r.api,
-                        c = e.displayLocation,
-                        s = e.itsInterests,
-                        u = e.limit,
+                        c = t.displayLocation,
+                        s = t.itsInterests,
+                        u = t.limit,
                         l = void 0 === u ? 30 : u,
-                        d = e.similarToUserId
-                      return Object(a.b)(t, {
+                        d = t.similarToUserId
+                      return Object(a.b)(e, {
                         request: o.Recommendations.fetch,
                         params: { display_location: c, itsInterests: s, limit: l, user_id: d },
                       })(
                         {
-                          actionTypes: { REQUEST: h, SUCCESS: m, FAILURE: v },
+                          actionTypes: { REQUEST: h, SUCCESS: m, FAILURE: y },
                           context: 'FETCH_RECOMMENDATIONS',
                           meta: { displayLocation: c, similarToUserId: d },
                         },
-                        function (e) {
-                          if (e && e.entities) return [Object(i.c)(e.entities)]
+                        function (t) {
+                          if (t && t.entities) return [Object(i.c)(t.entities)]
                         },
                       )
                     }
-                  })(e),
+                  })(t),
                 )
           }
         }
     },
-    sAnO: function (e, t, n) {
+    sAnO: function (t, e, n) {
       'use strict'
-      n.r(t)
+      n.r(e)
       var r = n('fyKl')
-      t.default = r.default
+      e.default = r.default
     },
-    uo3S: function (e, t, n) {
+    uo3S: function (t, e, n) {
       'use strict'
-      n.r(t)
+      n.r(e)
       var r = n('ERkP'),
         o = n('RhWx'),
         i = n.n(o),
@@ -1199,35 +977,35 @@
         c = n('XOJV'),
         s = n('s1N3'),
         u = n('rxPX'),
-        l = function (e) {
-          var t, n
+        l = function (t) {
+          var e, n
           return (
-            (null === (t = e.entities) || void 0 === t || null === (n = t.user_mentions) || void 0 === n
+            (null === (e = t.entities) || void 0 === e || null === (n = e.user_mentions) || void 0 === n
               ? void 0
-              : n.map(function (e) {
-                  return e.id_str
+              : n.map(function (t) {
+                  return t.id_str
                 })) || []
           )
         },
-        d = function (e, t) {
-          return t.focalTweetId
+        d = function (t, e) {
+          return e.focalTweetId
         },
         f = Object(u.a)()
           .propsFromState(function () {
             return { tweetMap: c.a.selectAll, focalTweetId: d }
           })
-          .adjustStateProps(function (e) {
-            var t = e.focalTweetId,
-              n = e.tweetMap,
-              r = t && n[t]
+          .adjustStateProps(function (t) {
+            var e = t.focalTweetId,
+              n = t.tweetMap,
+              r = e && n[e]
             if (!r) return { participantIds: [] }
             var o,
               c = [r.user].concat(
                 i()(l(r)),
                 i()(
                   ((o = r),
-                  a.a.mergeTaggedUsers((o.extended_entities && o.extended_entities.media) || []).map(function (e) {
-                    return e.user_id
+                  a.a.mergeTaggedUsers((o.extended_entities && o.extended_entities.media) || []).map(function (t) {
+                    return t.user_id
                   })),
                 ),
               ),
@@ -1238,25 +1016,25 @@
         p = (n('M+/F'), n('3XMw')),
         h = n.n(p),
         m = n('6vad'),
-        v = n('hqDb'),
-        y = n('MWbm'),
+        y = n('hqDb'),
+        v = n('MWbm'),
         O = h.a.j88f27d8,
-        b = function (e) {
-          var t = e.maxCount,
-            n = e.participantIds
+        g = function (t) {
+          var e = t.maxCount,
+            n = t.participantIds
           return r.createElement(
-            y.a,
+            v.a,
             { accessibilityLabel: O, accessibilityRole: 'complementary' },
             r.createElement(m.b, { text: O }),
-            r.createElement(v.a, { userIds: n.slice(0, t), withFinalItemBorder: !1, withItemBorder: !0 }),
+            r.createElement(y.a, { userIds: n.slice(0, e), withFinalItemBorder: !1, withItemBorder: !0 }),
           )
         }
-      b.defaultProps = { maxCount: 3 }
-      var _ = b,
-        g = f(function (e) {
-          return r.createElement(_, { participantIds: e.participantIds })
+      g.defaultProps = { maxCount: 3 }
+      var _ = g,
+        b = f(function (t) {
+          return r.createElement(_, { participantIds: t.participantIds })
         })
-      t.default = g
+      e.default = b
     },
   },
 ])

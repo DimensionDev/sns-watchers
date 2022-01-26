@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [309],
+  [311],
   {
     jJWd: function (a, e, n) {
       'use strict'
@@ -271,7 +271,7 @@
         i('d0c3803c', 'tubuh,kepalan,tinju kanan'),
         i('d9f47c0a', 'Jari menyilang'),
         i('c47d97e3', 'tubuh,silang,jari,tangan,keberuntungan'),
-        i('f631ab6a', 'Tangan tanda kemenangan'),
+        i('f631ab6a', 'Isyarat kemenangan'),
         i('a3a1cf87', 'badan,tubuh,tangan,v,kemenangan'),
         i('c8bd1585', 'Tanda tanduk'),
         i('ebf78b93', 'badan,tubuh,jari,tangan,tanduk,salam metal'),

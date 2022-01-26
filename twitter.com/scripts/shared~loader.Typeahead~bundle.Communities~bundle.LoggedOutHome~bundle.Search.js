@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [9],
+  [10],
   {
     '4e/K': function (e, t, n) {
       'use strict'
@@ -21,32 +21,32 @@
         d = n.n(u),
         l = n('N+ot'),
         p = n.n(l),
-        h = n('AuHH'),
-        f = n.n(h),
+        f = n('AuHH'),
+        h = n.n(f),
         m = n('KEM+'),
         y = n.n(m),
         _ = (n('uFXj'), n('LW0h'), n('3EFP')),
-        w = n('ERkP'),
-        v = n('ZUOq'),
+        v = n('ERkP'),
+        w = n('ZUOq'),
         I = n('+Kfv'),
         b = n('woHV'),
-        R = n('3XMw'),
-        D = n.n(R),
-        g = n('VwDm'),
+        D = n('3XMw'),
+        g = n.n(D),
+        R = n('VwDm'),
         E = n('WPfJ'),
         C = n('N5qz'),
         T = n('Es6L'),
-        S = n('OEYw'),
-        O = n('GZwR'),
-        x = n('MWbm'),
-        P = n('v6aA'),
-        N = n('rHpw'),
-        j = n('xoZN'),
+        O = n('OEYw'),
+        x = n('GZwR'),
+        S = n('MWbm'),
+        N = n('v6aA'),
+        j = n('rHpw'),
+        P = n('xoZN'),
         k = n('6OUF'),
         F = n('pf9B'),
         U = n('cHvH'),
-        L = n('oEoC')
-      function q(e) {
+        q = n('oEoC')
+      function L(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -59,32 +59,32 @@
         })()
         return function () {
           var n,
-            o = f()(e)
+            o = h()(e)
           if (t) {
-            var r = f()(this).constructor
+            var r = h()(this).constructor
             n = Reflect.construct(o, arguments, r)
           } else n = o.apply(this, arguments)
           return p()(this, n)
         }
       }
-      var A = D.a.f065ba8c,
+      var A = g.a.f065ba8c,
         H = function (e) {
           return C.a.isTwoColumnNormalLayout(e)
             ? {
-                width: v.a.columnWidths.secondary.normal + N.a.theme.spacesPx.space24,
-                left: -N.a.theme.spacesPx.space24 / 2,
+                width: w.a.columnWidths.secondary.normal + j.a.theme.spacesPx.space24,
+                left: -j.a.theme.spacesPx.space24 / 2,
               }
             : C.a.isTwoColumnSmallLayout(e)
             ? {
-                width: v.a.columnWidths.secondary.small + N.a.theme.spacesPx.space16,
-                left: -N.a.theme.spacesPx.space16 / 2,
+                width: w.a.columnWidths.secondary.small + j.a.theme.spacesPx.space16,
+                left: -j.a.theme.spacesPx.space16 / 2,
               }
             : void 0
         },
         M = 1,
         B = (function (e) {
           d()(n, e)
-          var t = q(n)
+          var t = L(n)
           function n(e, o) {
             var a
             return (
@@ -108,21 +108,21 @@
                   d = n.placeholder,
                   l = n.renderInSearchField,
                   p = n.rounded,
-                  h = n.shouldAutoFocus,
-                  f = n.shouldFocusOnClear,
+                  f = n.shouldAutoFocus,
+                  h = n.shouldFocusOnClear,
                   m = n.style,
                   y = n.testID,
                   _ = a.state.showTypeaheadDropdown || o
-                return w.createElement(
+                return v.createElement(
                   I.a,
                   { viewType: 'typeahead_input' },
-                  w.createElement(
-                    x.a,
+                  v.createElement(
+                    S.a,
                     { onLayout: a._handleLayout, ref: a._setRootContainerNode, style: [W.root, m] },
-                    w.createElement(
-                      j.a,
+                    v.createElement(
+                      P.a,
                       { onKeyDown: a._handleKeyDown, style: W.keydownInputListener },
-                      w.createElement(
+                      v.createElement(
                         b.a,
                         {
                           accessibilityLabel: d,
@@ -130,11 +130,11 @@
                           onSubmit: a._handleFormSubmit,
                           style: W.wrapper,
                         },
-                        w.createElement(
-                          x.a,
+                        v.createElement(
+                          S.a,
                           { ref: a._setInputContainerNode, style: i },
-                          w.createElement(k.a, {
-                            Icon: g.a,
+                          v.createElement(k.a, {
+                            Icon: R.a,
                             ariaActiveDescendant: a.state.ariaDescendantId,
                             ariaAutocomplete: 'list',
                             ariaExpanded: _,
@@ -143,9 +143,9 @@
                             ariaRole: 'combobox',
                             autoComplete: 'off',
                             autoCorrect: !1,
-                            autoFocus: h,
+                            autoFocus: f,
                             contentBelow: l && l(),
-                            focusOnClear: f,
+                            focusOnClear: h,
                             isCompact: c,
                             leftAligned: u,
                             onChange: a._handleInputChange,
@@ -162,8 +162,8 @@
                             withClearButton: !r && a.state.showTypeaheadDropdown,
                           }),
                         ),
-                        w.createElement(
-                          x.a,
+                        v.createElement(
+                          S.a,
                           { style: [W.typeaheadContainer, !p && W.topBorder] },
                           _ ? a._renderDropdown(t) : null,
                         ),
@@ -184,51 +184,49 @@
                   d = t.isInSidebar,
                   l = t.isModal,
                   p = t.isOnHomepage,
-                  h = t.maxEvents,
-                  f = t.maxTopics,
+                  f = t.maxEvents,
+                  h = t.maxTopics,
                   m = t.onItemsChanged,
                   y = t.orderResults,
                   _ = t.renderEmptyState,
-                  v = t.renderHeader,
+                  w = t.renderHeader,
                   I = t.renderNoResultsState,
                   b = t.renderUserDecoration,
-                  R = t.selectedItems,
-                  D = t.shouldDeferPrefetch,
-                  g = t.shouldShowPrefetchResults,
-                  E = t.source,
-                  C = t.userLimit,
-                  O = t.withFixedPositioning,
-                  x = t.withSectionDivider,
-                  P = e >= N.a.theme.breakpoints.medium || Object(T.a)(),
-                  j = a.state,
-                  k = j.dropdownOffset,
-                  F = j.query,
-                  U = l
+                  D = t.selectedItems,
+                  g = t.shouldDeferPrefetch,
+                  R = t.source,
+                  E = t.withFixedPositioning,
+                  C = t.withSectionDivider,
+                  x = e >= j.a.theme.breakpoints.medium || Object(T.a)(),
+                  S = a.state,
+                  N = S.dropdownOffset,
+                  P = S.query,
+                  k = l
                     ? W.modalDropdown
                     : [
                         W.dropdown,
-                        !P && O && k
+                        !x && E && N
                           ? [
-                              Object(L.d)(k),
-                              a._shouldUseHeightOnDropdown && { height: 'calc(100vh - '.concat(k, 'px)') },
+                              Object(q.d)(N),
+                              a._shouldUseHeightOnDropdown && { height: 'calc(100vh - '.concat(N, 'px)') },
                             ]
                           : null,
-                        (P || p) && W.wideModeDropdown,
+                        (x || p) && W.wideModeDropdown,
                         a._withNewTypeaheadUI && d && H(e),
                         p && W.shortModeDropdown,
-                        !P && p && W.shortModeDropdownMobile,
+                        !x && p && W.shortModeDropdownMobile,
                       ],
-                  q = {
+                  F = {
                     ariaDescendantId: a.state.ariaDescendantId,
                     domId: a._dropdownDomId,
                     onDismiss: a._handleOnEmptyStateDismiss,
                     onItemFocusChanged: a._handleItemFocusChanged,
                     ref: a._handleDropdownRef,
-                    style: U,
+                    style: k,
                   }
-                return _ && !F
-                  ? _(q)
-                  : w.createElement(S.a, {
+                return _ && !P
+                  ? _(F)
+                  : v.createElement(O.a, {
                       ariaDescendantId: a.state.ariaDescendantId,
                       communityId: n,
                       domId: a._dropdownDomId,
@@ -238,24 +236,22 @@
                       getTopicExactMatch: i,
                       getUserExactMatch: c,
                       injectedItems: u,
-                      maxEvents: h,
-                      maxTopics: f,
+                      maxEvents: f,
+                      maxTopics: h,
                       onItemClick: a._handleItemClick,
                       onItemFocusChanged: a._handleItemFocusChanged,
                       onItemsChanged: m,
                       orderResults: y,
-                      query: F,
+                      query: P,
                       ref: a._handleDropdownRef,
-                      renderHeader: v,
+                      renderHeader: w,
                       renderNoResultsState: I,
                       renderUserDecoration: b,
-                      selectedItems: R,
-                      shouldDeferPrefetch: D,
-                      shouldShowPrefetchResults: g,
-                      source: E,
-                      style: U,
-                      userLimit: C,
-                      withSectionDivider: x,
+                      selectedItems: D,
+                      shouldDeferPrefetch: g,
+                      source: R,
+                      style: k,
+                      withSectionDivider: C,
                     })
               }),
               y()(c()(a), '_dismissDropdown', function () {
@@ -297,7 +293,7 @@
               y()(c()(a), '_handleKeyDown', function (e) {
                 var t = e.key,
                   n = a.state.showTypeaheadDropdown
-                if (Object(L.g)(e)) {
+                if (Object(q.g)(e)) {
                   if (t === _.a) return a._focusNext(), void e.preventDefault()
                   if (t === _.b) return a._focusPrevious(), void e.preventDefault()
                   if (t === _.d) return a._dismissDropdown(), void e.preventDefault()
@@ -309,7 +305,7 @@
                 }
               }),
               y()(c()(a), '_handleItemFocusChanged', function () {
-                a.setState({ ariaDescendantId: Object(L.b)() })
+                a.setState({ ariaDescendantId: Object(q.b)() })
               }),
               y()(c()(a), '_handleInputClear', function () {
                 a.setQuery('')
@@ -353,7 +349,7 @@
               y()(c()(a), '_focusPrevious', function () {
                 a._dropdownRef && a._dropdownRef.focusPrevious()
               }),
-              (a.state = { ariaDescendantId: Object(L.b)(), query: e.initialValue, showTypeaheadDropdown: !1 }),
+              (a.state = { ariaDescendantId: Object(q.b)(), query: e.initialValue, showTypeaheadDropdown: !1 }),
               (a._dropdownDomId = 'typeaheadDropdown-'.concat(M)),
               (M += 1),
               (a._withNewTypeaheadUI = a.context.featureSwitches.isTrue(
@@ -385,7 +381,7 @@
               {
                 key: 'render',
                 value: function () {
-                  return w.createElement(U.a, null, this._render)
+                  return v.createElement(U.a, null, this._render)
                 },
               },
               {
@@ -403,16 +399,16 @@
             ]),
             n
           )
-        })(w.Component)
+        })(v.Component)
       y()(B, 'defaultProps', {
         disableClearButton: !1,
-        filter: [O.a.Users, O.a.Topics],
+        filter: [x.a.Users, x.a.Topics],
         isInSidebar: !1,
         initialValue: '',
         withSectionDivider: !0,
       }),
-        y()(B, 'contextType', P.a)
-      var W = N.a.create(function (e) {
+        y()(B, 'contextType', N.a)
+      var W = j.a.create(function (e) {
         return {
           root: { flex: 1, flexDirection: 'column', position: 'relative', zIndex: E.d + 1 },
           typeaheadContainer: { flex: 1, position: 'relative' },
@@ -467,27 +463,27 @@
         d = n.n(u),
         l = n('1Pcy'),
         p = n.n(l),
-        h = n('5Yy7'),
-        f = n.n(h),
+        f = n('5Yy7'),
+        h = n.n(f),
         m = n('N+ot'),
         y = n.n(m),
         _ = n('AuHH'),
-        w = n.n(_),
-        v = n('KEM+'),
-        I = n.n(v),
+        v = n.n(_),
+        w = n('KEM+'),
+        I = n.n(w),
         b = (n('7xRU'), n('LW0h'), n('z84I'), n('ERkP')),
-        R = n('RhWx'),
-        D = n.n(R),
-        g = (n('vrRf'), n('M+/F'), n('tQbP'), n('2G9S'), n('hqKg')),
+        D = n('RhWx'),
+        g = n.n(D),
+        R = (n('vrRf'), n('M+/F'), n('tQbP'), n('2G9S'), n('hqKg')),
         E = n('oEoC'),
         C = n('o52z'),
         T = n('kGix'),
-        S = n('M0jS'),
-        O = n('Qyxo'),
-        x = n('lnti'),
-        P = n('rxPX'),
-        N = n('0KEI'),
-        j =
+        O = n('M0jS'),
+        x = n('Qyxo'),
+        S = n('lnti'),
+        N = n('rxPX'),
+        j = n('0KEI'),
+        P =
           (n('yH/f'),
           n('Ee2X'),
           n('MvUL'),
@@ -503,8 +499,8 @@
         k = n('oEOe'),
         F = n('vy4g'),
         U = n('3A2y'),
-        L = n('Y6L+'),
-        q = n('9EWH'),
+        q = n('Y6L+'),
+        L = n('9EWH'),
         A = n('Ssj5'),
         H = n('GZwR'),
         M = 'typeaheadV2',
@@ -542,7 +538,7 @@
               o = e.tokens,
               r = s()(e, ['rounded_score', 'tokens']),
               a = r.topic_type || H.b.Event,
-              i = null == r || null === (t = r.url) || void 0 === t ? void 0 : t.match(L.A.id)
+              i = null == r || null === (t = r.url) || void 0 === t ? void 0 : t.match(q.A.id)
             return { id: (null == i ? void 0 : i[0]) || '', type: a, tokens: o, rounded_score: n, data: r }
           })
         },
@@ -570,7 +566,7 @@
                 request: a.Typeahead.fetchCommunityInviteUsers,
               })(u, function (e) {
                 var t = ((null == e ? void 0 : e.invite_action_results) || {}).entities
-                return t ? [Object(j.c)(t)] : void 0
+                return t ? [Object(P.c)(t)] : void 0
               })
             }
             return Object(k.b)(n, { params: e, request: a.Typeahead.fetch })(u)
@@ -583,7 +579,7 @@
           switch (t.type) {
             case W.REQUEST:
               var n = t.meta.queryId
-              return Object(q.a)(e, function (e) {
+              return Object(L.a)(e, function (e) {
                 e.remoteResults[n] || (e.remoteResults[n] = { fetchStatus: T.a.NONE }),
                   (e.remoteResults[n].fetchStatus = T.a.LOADING)
               })
@@ -603,7 +599,7 @@
                   users: Object(H.g)(a),
                   timestamp: Date.now(),
                 }
-              return Object(q.a)(e, function (e) {
+              return Object(L.a)(e, function (e) {
                 ;(e.cachedIds = e.cachedIds.filter(function (e) {
                   return e !== o
                 })),
@@ -614,7 +610,7 @@
               })
             case W.FAILURE:
               var i = t.meta.queryId
-              return Object(q.a)(e, function (e) {
+              return Object(L.a)(e, function (e) {
                 e.remoteResults[i].fetchStatus = T.a.FAILED
               })
             default:
@@ -659,9 +655,9 @@
           return (t.rounded_graph_weight || 0) - (e.rounded_graph_weight || 0)
         },
         ae = function () {
-          return Object(g.createSelector)(
+          return Object(R.createSelector)(
             te,
-            Object(g.createSelector)(
+            Object(R.createSelector)(
               function (e, t) {
                 return t.query
               },
@@ -693,31 +689,28 @@
             function (e, t) {
               return t.getUserExactMatch
             },
-            function (e, t) {
-              return t.userLimit
-            },
-            function (e, t, n, o, r, a, s) {
-              var i = Object(O.a)(o || [], function (e) {
+            function (e, t, n, o, r, a) {
+              var s = Object(x.a)(o || [], function (e) {
                   return e.type === H.b.User ? e.data.id_str : void 0
                 }),
-                c = t.filter(function (e) {
-                  return i.indexOf(e.id) < 0
+                i = t.filter(function (e) {
+                  return s.indexOf(e.id) < 0
                 }),
-                u = e.filter(function (e) {
-                  return i.indexOf(e.id) < 0
+                c = e.filter(function (e) {
+                  return s.indexOf(e.id) < 0
                 }),
-                d = Object(E.a)(c, u).slice(0, s || 10),
-                l = n === T.a.LOADED,
-                p = a && a({ query: r, hasResults: !!e.length, isLoaded: l }),
-                h = p ? [].concat(D()(d), [p]) : d
-              return h.length ? h : Object(C.a)()
+                u = Object(E.a)(i, c).slice(0, 10),
+                d = n === T.a.LOADED,
+                l = a && a({ query: r, hasResults: !!e.length, isLoaded: d }),
+                p = l ? [].concat(g()(u), [l]) : u
+              return p.length ? p : Object(C.a)()
             },
           )
         },
         se = function () {
-          return Object(g.createSelector)(
+          return Object(R.createSelector)(
             ae(),
-            Object(g.createSelector)(
+            Object(R.createSelector)(
               ne,
               ee,
               function (e, t) {
@@ -736,7 +729,7 @@
                 return s && i.push(s), i.length ? i : Object(C.a)()
               },
             ),
-            Object(g.createSelector)(
+            Object(R.createSelector)(
               oe,
               ee,
               function (e, t) {
@@ -764,22 +757,22 @@
               var a = o && o.length ? o : null,
                 s = r
                   ? r(a, e, t, n)
-                  : Object(x.a)([a, n.length ? n : void 0, t.length ? t : void 0, e.length ? e : void 0])
+                  : Object(S.a)([a, n.length ? n : void 0, t.length ? t : void 0, e.length ? e : void 0])
               return t.length || e.length || n.length ? s : a ? [a] : Object(C.a)()
             },
           )
         },
-        ie = Object(P.a)()
+        ie = Object(N.a)()
           .propsFromState(function () {
             return { fetchStatus: ee, items: se() }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(N.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(j.createLocalApiErrorHandlerWithContextFactory)(
                 'TYPEAHEAD_DROPDOWN_CONTAINER_CONTEXT',
               ),
               fetchTypeaheadIfNeeded: z,
-              fetchUsersPresenceIfNeeded: S.b.fetchManyIfNeeded,
+              fetchUsersPresenceIfNeeded: O.b.fetchManyIfNeeded,
               prefetchTypeaheadUsersIfNeeded: Z.b,
             }
           })
@@ -789,8 +782,8 @@
         de = n('Rp9C'),
         le = n('tAeL'),
         pe = n('v6aA'),
-        he = n('VY6S'),
-        fe = n('w6IS')
+        fe = n('VY6S'),
+        he = n('w6IS')
       function me(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -804,16 +797,16 @@
         })()
         return function () {
           var n,
-            o = w()(e)
+            o = v()(e)
           if (t) {
-            var r = w()(this).constructor
+            var r = v()(this).constructor
             n = Reflect.construct(o, arguments, r)
           } else n = o.apply(this, arguments)
           return y()(this, n)
         }
       }
       var ye = (function (e) {
-        f()(n, e)
+        h()(n, e)
         var t = me(n)
         function n(e, o) {
           var r
@@ -855,11 +848,8 @@
                 data: { items: de.a.forTypeaheadResults(n), search_details: { query: o } },
               })
             }),
-            (r._debouncedFetchTypeaheadResultsIfNeeded = Object(he.a)(r._fetchTypeaheadResultsIfNeeded, 250)),
-            (r.state = {
-              shouldShowPrefetchResults:
-                void 0 === r.props.shouldShowPrefetchResults || r.props.shouldShowPrefetchResults,
-            }),
+            (r._debouncedFetchTypeaheadResultsIfNeeded = Object(fe.a)(r._fetchTypeaheadResultsIfNeeded, 250)),
+            (r.state = { shouldShowPrefetchResults: !0 }),
             r
           )
         }
@@ -892,27 +882,25 @@
                   i = n.onItemsChanged,
                   c = n.query,
                   u = n.shouldDeferPrefetch,
-                  d = n.shouldShowPrefetchResults,
-                  l = n.source,
-                  p = e.filter,
-                  h = e.query,
+                  d = n.source,
+                  l = e.filter,
+                  p = e.query,
                   f = e.source,
-                  m = this.context.loggedInUserId,
-                  y = this.context.featureSwitches.isTrue('voice_rooms_typeahead_audiospace_ring_enabled') && m
-                if (null != s && s.length && s !== e.items && (this._scribeResults(), i && i(s), y)) {
-                  var _ = Object(fe.a)(s)
+                  h = this.context.loggedInUserId,
+                  m = this.context.featureSwitches.isTrue('voice_rooms_typeahead_audiospace_ring_enabled') && h
+                if (null != s && s.length && s !== e.items && (this._scribeResults(), i && i(s), m)) {
+                  var y = Object(he.a)(s)
                     .filter(function (e) {
                       return e.type === ce.b.User
                     })
                     .map(function (e) {
                       return e.id
                     })
-                  _ && r(_).catch(o({}))
+                  y && r(y).catch(o({}))
                 }
-                ;(c === h && a === p && l === f) ||
+                ;(c === p && a === l && d === f) ||
                   (this._debouncedFetchTypeaheadResultsIfNeeded(this.props),
                   u &&
-                    !1 !== d &&
                     (clearTimeout(this._prefetchResultsTimer),
                     this.setState({ shouldShowPrefetchResults: !1 }),
                     (this._prefetchResultsTimer = setTimeout(function () {
@@ -946,9 +934,7 @@
                     e.query),
                   c =
                     (e.shouldDeferPrefetch,
-                    e.shouldShowPrefetchResults,
                     e.topicType,
-                    e.userLimit,
                     s()(e, [
                       'analytics',
                       'communityId',
@@ -971,9 +957,7 @@
                       'prefetchTypeaheadUsersIfNeeded',
                       'query',
                       'shouldDeferPrefetch',
-                      'shouldShowPrefetchResults',
                       'topicType',
-                      'userLimit',
                     ])),
                   u = i && n !== T.a.LOADED,
                   d = u && !this.state.shouldShowPrefetchResults ? o : a
@@ -992,8 +976,8 @@
       var _e = b.forwardRef(function (e, t) {
           return b.createElement(ye, r()({}, e, { dropdownRef: t }))
         }),
-        we = ie.forwardRef(_e)
-      t.a = we
+        ve = ie.forwardRef(_e)
+      t.a = ve
     },
     o52z: function (e, t, n) {
       'use strict'

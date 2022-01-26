@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [318],
+  [320],
   {
     'L+8d': function (a, e, i) {
       'use strict'
@@ -277,7 +277,7 @@
         c('ebf78b93', 'body,finger,hand,horns,rock-on'),
         c('a4d65da1', 'Gest miłości'),
         c('g728105c', 'ciało,wyznanie miłości,kocham cię,dłoń'),
-        c('fc084205', 'Dłoń pokazująca OK'),
+        c('fc084205', 'Dłoń pokazująca „OK”'),
         c('a1b9c674', 'body,hand,ok'),
         c('he3b496b', 'Palce złączone w koszyczek'),
         c('f02beee3', 'palce,gest,pytanie,koszyczek,sarkastyczny'),
@@ -596,7 +596,7 @@
         c('dbed65b1', 'Kobieta wróżka'),
         c('fc313c8e', 'fantasy,titania,wings,woman,female,women'),
         c('j5eb5023', 'Wróżka'),
-        c('j4fe4edd', 'fantasy,tytania,skrzydła'),
+        c('j4fe4edd', 'fantastyka,wróżka,skrzydła'),
         c('gbd7d065', 'Mężczyzna wróżka'),
         c('b76773a3', 'fantasy,oberon,puck,man,male,men'),
         c('j9990ae4', 'Kobieta dżin'),

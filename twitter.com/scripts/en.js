@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [116],
+    [117],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -11,7 +11,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(292).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(294).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -4125,6 +4125,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a2ccb2e7', 'Direct Message sent.'),
           a('a6add339', 'Tweet shared with group.'),
           a('aca6eb1b', 'Tweet shared separately.'),
+          a('hbbc401c', 'Send to group'),
           a('e1bde73e', function (e) {
             return '@' + e.screenName + ' can’t be messaged'
           }),
@@ -4549,6 +4550,19 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Reactions, mentions, Retweets, and a whole lot more — when it comes from other verified people, you’ll find it here.',
           ),
           a('ib4510fd', 'See new Notifications'),
+          a(
+            'f269c47d',
+            'Notifications about new Tweets, Retweets, recommendations, and more will show up here as you follow more people.',
+          ),
+          a('g6871092', 'Find people'),
+          a('e577e1a1', 'Join the conversation'),
+          a('b91e5a3a', 'When someone on Twitter mentions you in a Tweet or reply, you’ll find it here.'),
+          a('g264f125', 'Don’t miss a thing'),
+          a(
+            'a3420a9b',
+            'Notifications help you stay up-to-date on what’s happening on Twitter for you. Retweets, recommendations, and more will show up here as you follow more people.',
+          ),
+          a('ef0b8028', 'You rang?'),
           a('c380d684', 'Your report'),
           a('c7714935', 'We flagged these Tweets as sensitive content'),
           a('bfaadb2c', function (e) {
@@ -4628,6 +4642,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('ie4dd8d6', 'Sign up'),
           a('fb9dd9b0', 'Sign in'),
+          a('g0ff1ca8', 'Join the conversation on Twitter'),
+          a('g3aa4a89', 'Log in to see what’s happening'),
           a('jae84f3a', 'Currently Trending in your location'),
           a('d1cc8c05', 'Limit unwelcome interactions'),
           a('c1da34c2', function (e) {
@@ -4695,8 +4711,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('daaf2c71', 'Example: @SFBART @Caltrain · mentions @SFBART or mentions @Caltrain'),
           a('b18366ba', 'Minimum replies'),
           a('a76c9844', 'Example: 280 · Tweets with at least 280 replies'),
-          a('ib3ddbd4', 'Minimum Likes'),
-          a('dec3293c', 'Example: 280 · Tweets with at least 280 Likes'),
+          a('ib3ddbd4', 'Minimum Likes')
+        a('dec3293c', 'Example: 280 · Tweets with at least 280 Likes'),
           a('i6e5440d', 'Minimum Retweets'),
           a('b6dc8434', 'Example: 280 · Tweets with at least 280 Retweets'),
           a('ge046208', 'Manage subscription'),
@@ -4713,8 +4729,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'c5bb3cd1',
             'You’ll see Tweets about this in your Home timeline. This Topic will help personalize your experience across Twitter.',
-          )
-        a('e241095e', 'Your Topics'),
+          ),
+          a('e241095e', 'Your Topics'),
           a('f8bc75e2', 'your Topics'),
           a('ed827af6', 'Topic is unavailable.'),
           a('d094c720', 'All Topics'),
@@ -4961,6 +4977,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'a0b7009f',
             'Get more out of Twitter. Access exclusive features at our introductory price when you subscribe to Twitter Blue today.',
           ),
+          a('gdd8144c', 'For when you have more to share, upload and Tweet videos up to 10-minutes long.'),
+          a('h73af45f', 'Swipe to pin your favorite conversations to the top of your Direct Message inbox.'),
           a('c4debbdf', 'Upgrade your content'),
           a(
             'g52ab673',
@@ -4984,8 +5002,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f39aef7b', 'App Theme'),
           a('b4a97be8', 'Choose a new theme color for your Twitter experience that can only be seen by you.'),
           a('h52ee955', 'Get early access'),
-          a('gdd8144c', 'For when you have more to share, upload and Tweet videos up to 10-minutes long.'),
-          a('h73af45f', 'Swipe to pin your favorite conversations to the top of your Direct Message inbox.'),
           a('fce91ab4', 'Hmmm - that didn’t work.'),
           a(
             'gc7637d3',

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [74],
+  [75],
   {
     '3X8/': function (e, t, r) {
       'use strict'
@@ -102,8 +102,8 @@
             }
           }),
         w = r('v//M'),
-        _ = r('3XMw'),
-        P = r.n(_),
+        P = r('3XMw'),
+        _ = r.n(P),
         S = r('JFx8'),
         C = r('yoO3'),
         j = r('h2mu'),
@@ -117,10 +117,10 @@
         L = r('cHvH'),
         D = r('rHpw'),
         F = r('7JQg'),
-        z = P.a.jaaa8984,
-        q = P.a.bab1f8b0,
-        A = P.a.add55c97,
-        K = P.a.f4a654a3,
+        z = _.a.jaaa8984,
+        q = _.a.bab1f8b0,
+        A = _.a.add55c97,
+        K = _.a.f4a654a3,
         B = function (e) {
           var t = {}
           'foursquare' === e.vendor &&
@@ -304,14 +304,14 @@
         l = (r('JtPf'), r('7x/C'), r('87if'), r('lTEL'), r('kYxP'), r('XBtf')),
         s = {
           loader: function () {
-            return r.e(335).then(r.bind(null, 'a+ad'))
+            return Promise.all([r.e(0), r.e(337)]).then(r.bind(null, 'a+ad'))
           },
           loaderKey: 'newsCellLoader',
           strategy: l.a.Critical,
         },
         u = {
           loader: function () {
-            return r.e(337).then(r.bind(null, 'hX2d'))
+            return Promise.all([r.e(0), r.e(339)]).then(r.bind(null, 'hX2d'))
           },
           loaderKey: 'newsPreviewCardLoader',
           strategy: l.a.Critical,
@@ -346,12 +346,12 @@
         O = r('QIgh'),
         E = r('8UdT'),
         w = r('iu0J'),
-        _ = r('zgaL'),
-        P = r('PH3B'),
+        P = r('zgaL'),
+        _ = r('PH3B'),
         S = (r('JtPf'), r('7x/C'), r('87if'), r('lTEL'), r('kYxP'), r('XBtf')),
         C = {
           loader: function () {
-            return r.e(220).then(r.bind(null, 'sc5C'))
+            return r.e(221).then(r.bind(null, 'sc5C'))
           },
           loaderKey: 'relatedSearchDefaultLoader',
           strategy: S.a.Critical,
@@ -360,21 +360,21 @@
         T = (r('yH/f'), Object.freeze({ Expand: 'Expand', Replace: 'Replace', Suggest: 'Suggest' })),
         k = {
           loader: function () {
-            return r.e(340).then(r.bind(null, '5aND'))
+            return r.e(342).then(r.bind(null, '5aND'))
           },
           loaderKey: 'spellingExpandLoader',
           strategy: S.a.Critical,
         },
         x = {
           loader: function () {
-            return r.e(340).then(r.bind(null, '77Dd'))
+            return r.e(342).then(r.bind(null, '77Dd'))
           },
           loaderKey: 'spellingReplaceLoader',
           strategy: S.a.Critical,
         },
         I = {
           loader: function () {
-            return r.e(340).then(r.bind(null, 'D4Iv'))
+            return r.e(342).then(r.bind(null, 'D4Iv'))
           },
           loaderKey: 'spellingSuggestLoader',
           strategy: S.a.Critical,
@@ -430,13 +430,13 @@
                 r = e.shouldStoreTypeaheadItem
               return (
                 (t = {}),
-                v()(t, E.b.News, P.a),
+                v()(t, E.b.News, _.a),
                 v()(t, E.b.EventSummary, Object(w.a)({ errorContext: 'SEARCH_SCREEN', shouldStoreTypeaheadItem: r })),
                 v()(t, E.b.RelatedSearch, j),
                 v()(t, E.b.FollowSearch, g.e(g.a())),
                 v()(t, E.b.FollowSearchAction, g.e(g.a())),
                 v()(t, E.b.Place, g.e(g.a())),
-                v()(t, E.b.MomentAnnotation, _.a),
+                v()(t, E.b.MomentAnnotation, P.a),
                 v()(t, E.b.Spelling, M),
                 t
               )
@@ -678,7 +678,7 @@
           r('kYxP'),
           {
             loader: function () {
-              return r.e(213).then(r.bind(null, 'tFiq'))
+              return r.e(214).then(r.bind(null, 'tFiq'))
             },
             loaderKey: 'momentAnnoationLoader',
             strategy: r('XBtf').a.Critical,

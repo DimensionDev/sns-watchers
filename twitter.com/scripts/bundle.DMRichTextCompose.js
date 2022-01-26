@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [47, 221],
+  [48, 222],
   {
     '8fI/': function (e, t, n) {
       'use strict'
@@ -84,12 +84,12 @@
             appBarZindex: { backfaceVisibility: 'hidden', zIndex: e.componentZIndices.appBarZIndex },
           }
         }),
-        B = n('MWbm'),
-        P = n('yw4N'),
+        P = n('MWbm'),
+        B = n('yw4N'),
         I = n('TnY3'),
         R = n('cHvH'),
-        F = n('3xLC')
-      function L(e) {
+        L = n('3xLC')
+      function F(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -112,7 +112,7 @@
       }
       var K = (function (e) {
         f()(n, e)
-        var t = L(n)
+        var t = F(n)
         function n() {
           var e
           i()(this, n)
@@ -123,10 +123,10 @@
               var n = e.props.children
               return e.context.rootDetailPerColumnScroll
                 ? b.createElement(
-                    B.a,
+                    P.a,
                     { style: D.fill },
                     b.createElement(
-                      P.a,
+                      B.a,
                       { style: D.viewportView },
                       t ? e._renderInlineNav({ isTwoColumnLayout: !0, appBarScrollEnabled: !0 }) : null,
                       n,
@@ -219,18 +219,18 @@
                   O = o.title,
                   k = o.titleIconCell,
                   _ = o.titleIconCellSize,
-                  P = o.withBottomBorder,
+                  B = o.withBottomBorder,
                   I = o.withDetailOpen,
                   R = o.withSearchBox,
-                  F = o.withTweetButton,
-                  L = 'root' === v,
+                  L = o.withTweetButton,
+                  F = 'root' === v,
                   K = 'secondaryRoot' === v,
                   j = 'primaryDetail' === v,
-                  M = (j && E) || (L && w),
-                  N = L || (j && r),
-                  A = L ? C.c : j ? C.a : void 0,
+                  M = (j && E) || (F && w),
+                  N = F || (j && r),
+                  A = F ? C.c : j ? C.a : void 0,
                   H = b.createElement(
-                    B.a,
+                    P.a,
                     { style: n ? [D.appBarContainer, D.appBarZindex] : D.appBarZindex },
                     b.createElement(S.a, {
                       backLocation: l,
@@ -247,11 +247,11 @@
                       titleDomId: A,
                       titleIconCell: k,
                       titleIconCellSize: _,
-                      withBottomBorder: P,
+                      withBottomBorder: B,
                     }),
                   ),
                   W =
-                    L || (K && I)
+                    F || (K && I)
                       ? null
                       : b.createElement(x.a.Configure, {
                           SideNavButton: a,
@@ -267,7 +267,7 @@
                           subtitle: T,
                           title: O,
                           withSearchBox: R,
-                          withTweetButton: F,
+                          withTweetButton: L,
                         })
                 return b.createElement(b.Fragment, null, W, H, n ? null : g)
               },
@@ -276,7 +276,7 @@
           n
         )
       })(b.Component)
-      g()(K, 'contextType', F.a),
+      g()(K, 'contextType', L.a),
         g()(K, 'defaultProps', { screenType: 'secondaryDetail', showSubtitleOnWideDetail: !0 })
       t.a = Object(I.a)(K)
     },
@@ -486,25 +486,25 @@
         k = n('G6rE'),
         _ = n('oEGd'),
         D = n('X/yg'),
-        B = function (e, t) {
+        P = function (e, t) {
           return t.match.params.conversationId
         },
-        P = Object(S.createSelector)(
+        B = Object(S.createSelector)(
           function (e, t) {
-            return b.selectConversation(e, B(0, t))
+            return b.selectConversation(e, P(0, t))
           },
           b.selectEntries,
-          B,
+          P,
           D.l,
           E.q,
           D.m,
           D.n,
           k.e.selectAll,
           function (e, t) {
-            return w.j(e, B(0, t))
+            return w.j(e, P(0, t))
           },
           function (e, t) {
-            return w.i(e, B(0, t))
+            return w.i(e, P(0, t))
           },
           function (e, t, n, r, o, a, i, c, l, s) {
             var u = e && e.data
@@ -519,7 +519,7 @@
             }
           },
         ),
-        I = Object(_.d)(P, function (e) {
+        I = Object(_.d)(B, function (e) {
           return {
             cancelUpload: Object(D.a)(e.match.params.conversationId),
             googleAnalyticsPageView: C.a,
@@ -530,8 +530,8 @@
           }
         }),
         R = n('i4Oy'),
-        F = n('Oi4X'),
-        L = n('aA19'),
+        L = n('Oi4X'),
+        F = n('aA19'),
         K = n('XnpN'),
         j = n('3XMw'),
         M = n.n(j),
@@ -559,10 +559,10 @@
         V = n('M2mT'),
         J = n('rHpw'),
         U = n('aITJ'),
-        G = n('MWbm'),
-        q = n('7JQg'),
-        Y = n('OhSZ')
-      function X(e) {
+        q = n('MWbm'),
+        Y = n('7JQg'),
+        X = n('OhSZ')
+      function Z(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -583,12 +583,12 @@
           return f()(this, n)
         }
       }
-      var Z = M.a.d4986f85,
+      var G = M.a.d4986f85,
         Q = M.a.e3e58b6d,
         $ = M.a.a9ddbb94,
         ee = (function (e) {
           u()(n, e)
-          var t = X(n)
+          var t = Z(n)
           function n(e) {
             var r
             o()(this, n),
@@ -653,7 +653,7 @@
                     m.createElement(
                       g.a,
                       { viewType: 'messages' },
-                      m.createElement(F.a, {
+                      m.createElement(L.a, {
                         conversationId: t,
                         history: n,
                         isWide: c,
@@ -675,18 +675,18 @@
                     r = e.perspective,
                     o =
                       t && Object.keys(t.participants).length
-                        ? Object(Y.a)({ conversation: t, perspective: r })
+                        ? Object(X.a)({ conversation: t, perspective: r })
                         : n
-                        ? Object(Y.a)({ newConversationParticipants: n, perspective: r })
-                        : Z,
+                        ? Object(X.a)({ newConversationParticipants: n, perspective: r })
+                        : G,
                     a =
                       t && Object.keys(t.participants).length
-                        ? m.createElement(Y.b, { conversation: t, perspective: r, withScreenName: !1 })
+                        ? m.createElement(X.b, { conversation: t, perspective: r, withScreenName: !1 })
                         : n
-                        ? m.createElement(Y.b, { newConversationParticipants: n, perspective: r, withScreenName: !1 })
-                        : Z,
+                        ? m.createElement(X.b, { newConversationParticipants: n, perspective: r, withScreenName: !1 })
+                        : G,
                     i = 'medium',
-                    c = r ? m.createElement(L.a, { conversation: t, perspective: r, size: i }) : void 0,
+                    c = r ? m.createElement(F.a, { conversation: t, perspective: r, size: i }) : void 0,
                     l =
                       t &&
                       t.type === b.CONVERSATION_TYPE.ONE_TO_ONE &&
@@ -722,7 +722,7 @@
                     i = (null == o || null === (e = o.state) || void 0 === e ? void 0 : e.position) || 0
                   return r
                     ? m.createElement(
-                        G.a,
+                        q.a,
                         { style: te.rightControlStyles },
                         m.createElement(W, {
                           accessibilityLabel: a ? $ : Q,
@@ -740,18 +740,9 @@
         })(m.PureComponent)
       v()(ee, 'defaultProps', { isNewGroupConversation: !1, typeaheadWrapper: z.a })
       var te = J.a.create(function (e) {
-        return {
-          root: { flexGrow: 1 },
-          activity: { flexBasis: '1px', flexGrow: 1, height: '100%' },
-          kaiOSFix: { paddingBottom: 20 },
-          dragDrop: { flexGrow: 1 },
-          scrollView: { flexGrow: 1 },
-          infoButton: { marginRight: e.spaces.space4 },
-          offsetBottom: { paddingBottom: J.a.iPhoneOffsetBottom },
-          rightControlStyles: { flexDirection: 'row' },
-        }
+        return { infoButton: { marginRight: e.spaces.space4 }, rightControlStyles: { flexDirection: 'row' } }
       })
-      t.default = Object(q.c)({ page: 'messages', section: 'thread' })(I(ee))
+      t.default = Object(Y.c)({ page: 'messages', section: 'thread' })(I(ee))
     },
     dWxr: function (e, t, n) {
       'use strict'
@@ -1052,10 +1043,10 @@
           return f()(this, n)
         }
       }
-      var B = function (e) {
+      var P = function (e) {
           return Object(x.a)('div', e)
         },
-        P = !1,
+        B = !1,
         I =
           ((t.a = S.forwardRef(function (e, t) {
             var n = C.d()
@@ -1209,7 +1200,7 @@
                         : n
                         ? null == t || t(this._setFocusToStart())
                         : this.props.autoFocus && this.focus(),
-                        P || (this._setDraftJsStyle(), (P = !0))
+                        B || (this._setDraftJsStyle(), (B = !0))
                     },
                   },
                   {
@@ -1240,7 +1231,7 @@
                         m = t.style,
                         g = t.testID
                       return S.createElement(
-                        B,
+                        P,
                         {
                           className: l ? void 0 : w,
                           onClick: this._handleViewClick,

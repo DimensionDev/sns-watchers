@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [17],
+  [18],
   {
     '+0pD': function (e, t) {
       var n =
@@ -255,7 +255,7 @@
       var r = n('zb92')
       t.a = Object(r.a)({
         loader: function () {
-          return Promise.all([n.e(21), n.e(162)])
+          return Promise.all([n.e(22), n.e(163)])
             .then(n.bind(null, 'u2Vg'))
             .then(function (e) {
               return { default: e.__DANGEROUS_IMPORT__ }
@@ -8337,7 +8337,6 @@
           kaiOSFix: { paddingBottom: e.spaces.space20 },
           dragDrop: { flexGrow: 1 },
           scrollView: { flexGrow: 1 },
-          infoButton: { marginRight: e.spaces.space4 },
         }
       })
       t.a = Object(sc.c)()(F(Dc))
@@ -9973,7 +9972,7 @@
                     })
                   : null
               }),
-              g()(u()(c), '_renderActionButton', function (e) {
+              g()(u()(c), '_renderPrimaryActionButton', function (e) {
                 var t = c.props,
                   n = t.primaryActionIcon,
                   r = t.primaryActionLabel,
@@ -9987,14 +9986,34 @@
                         disabled: c._isSendDisabled(),
                         hoverLabel: { label: r },
                         icon: n || void 0,
-                        onPress: c._handleSend,
+                        onPress: c._handlePrimaryAction,
                         size: 'medium',
+                        style: ze.actionButton,
                         testID: he,
                         type: n ? 'brandText' : 'brandFilled',
                       },
                       n ? null : r,
                     )
                   : c._renderQRToggleButton()
+              }),
+              g()(u()(c), '_renderSecondaryActionButton', function () {
+                var e = c.props,
+                  t = e.secondaryActionLabel,
+                  n = e.shouldEnableSecondaryActionFunc,
+                  r = e.shouldShowSecondaryActionFunc
+                if ((r && !r()) || !t) return null
+                var i = !n || n()
+                return b.createElement(
+                  be.a,
+                  {
+                    accessibilityLabel: t,
+                    disabled: !i,
+                    onPress: c._handleSecondaryAction,
+                    style: ze.actionButton,
+                    type: 'primaryOutlined',
+                  },
+                  c.props.secondaryActionLabel,
+                )
               }),
               g()(u()(c), '_renderQRToggleButton', function () {
                 var e = c.state.isQuickReplyOpen
@@ -10011,12 +10030,14 @@
                 var e = c.props.attachment,
                   t = He(e),
                   n = c._renderComposeBox(),
-                  r = c._renderActionButton(t)
+                  r = c._renderPrimaryActionButton(t),
+                  i = c._renderSecondaryActionButton()
                 return b.createElement(
                   A.a,
                   { style: [ze.composer, t && ze.composerWithAttachment] },
                   t ? null : c._renderMediaButtons(),
                   n,
+                  i,
                   r,
                 )
               }),
@@ -10057,7 +10078,7 @@
                   a = t.shiftKey,
                   o = 'Enter' === r
                 return !c.state.isTypeaheadActive && o && c._keyboardOrMouseDetected && !(a || i || n)
-                  ? (e.preventDefault(), c._handleSend(e), 'handled')
+                  ? (e.preventDefault(), c._handlePrimaryAction(e), 'handled')
                   : 'not-handled'
               }),
               g()(u()(c), '_handleClickMediaDetail', function () {
@@ -10111,7 +10132,7 @@
                   c.props.removeMedia && c.props.removeMedia(e)
                 }
               }),
-              g()(u()(c), '_handleSend', function (e) {
+              g()(u()(c), '_handlePrimaryAction', function (e) {
                 if (!c._isSendDisabled()) {
                   var t = c.props.onPrimaryAction
                   c._textInput &&
@@ -10120,6 +10141,13 @@
                     }),
                     c._closeQuickReplyPicker()
                 }
+              }),
+              g()(u()(c), '_handleSecondaryAction', function (e) {
+                var t = c.props.onSecondaryAction
+                c._textInput &&
+                  c._textInput.applyFinalValue(function (e) {
+                    t && t({ type: 'richText' }, e)
+                  })
               }),
               g()(u()(c), '_handleRichTextChange', function (e) {
                 var t = c.props,

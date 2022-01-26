@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [178, 166],
+  [179, 167],
   {
     ACNv: function (e, t, n) {
       'use strict'
@@ -1025,7 +1025,7 @@
                   isPromoted: void 0 !== a,
                   reportType: f,
                   reportedTweet: u,
-                  reportedUser: u.user,
+                  reportedUser: u.user.id_str,
                   scribeNamespace: t.contextualScribeNamespace,
                 })
                 o.push({

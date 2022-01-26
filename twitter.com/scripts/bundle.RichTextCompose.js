@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [80, 75],
+  [81, 76],
   {
     '/Rsk': function (e, t, n) {
       'use strict'
@@ -26,6 +26,9 @@
         }),
         n.d(t, 'a', function () {
           return x
+        }),
+        n.d(t, 'i', function () {
+          return O
         })
       n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var r = n('KEM+'),
@@ -70,7 +73,11 @@
           SUCCESS: 'rweb/placePicker/SEARCH_SUCCESS',
           FAILURE: 'rweb/placePicker/SEARCH_FAILURE',
         }),
-        y = Object.freeze({ initial: { fetchStatus: i.a.NONE }, lastSearch: { fetchStatus: i.a.NONE } })
+        y = Object.freeze({
+          initial: { fetchStatus: i.a.NONE },
+          lastSearch: { fetchStatus: i.a.NONE },
+          lastSelectedPlace: void 0,
+        })
       var g = function (e) {
           return e.placePicker.initial.results
         },
@@ -84,14 +91,20 @@
           return e.placePicker.lastSearch.fetchStatus
         },
         C = function (e) {
-          var t,
-            n = g(e)
-          if (n)
-            return null == (t = n)
+          return (function (e, t) {
+            return null != t
+              ? t
+              : null == e
               ? void 0
-              : t.places.find(function (e) {
-                  return (null == t ? void 0 : t.autotag_place_id) === e.place.id
+              : e.places.find(function (t) {
+                  return (null == e ? void 0 : e.autotag_place_id) === t.place.id
                 })
+          })(
+            g(e),
+            (function (e) {
+              return e.placePicker.lastSelectedPlace
+            })(e),
+          )
         },
         w = function (e, t) {
           return function (n, r, a) {
@@ -157,6 +170,10 @@
                   })
               : Promise.resolve()
           }
+        },
+        S = 'rweb/placePicker/UPDATE_LAST_SELECTED_PLACE',
+        O = function (e) {
+          return { type: S, payload: e }
         }
       s.a.register(
         a()({}, f, function () {
@@ -173,6 +190,9 @@
               var o = t.meta.resultSet,
                 c = t.payload
               return m(m({}, e), {}, a()({}, o, { fetchStatus: i.a.LOADED, results: c }))
+            case S:
+              var s = t.payload
+              return m(m({}, e), {}, { lastSelectedPlace: null != s ? s : void 0 })
             default:
               return e
           }
@@ -3081,14 +3101,12 @@
                 if (t) {
                   var i,
                     c,
-                    s = this.context.featureSwitches.isTrue('media_minimal_image_crop_enabled'),
-                    l = this.context.featureSwitches.getNumberValue('media_minimal_image_crop_minimum_aspect_ratio'),
-                    u = this.context.featureSwitches.getNumberValue('media_minimal_image_crop_maximum_aspect_ratio')
-                  if (s)
-                    o = er.a.getImageAspectRatio(l, u, {
-                      width: null === (i = e[0].mediaFile) || void 0 === i ? void 0 : i.width,
-                      height: null === (c = e[0].mediaFile) || void 0 === c ? void 0 : c.height,
-                    })
+                    s = j.a.theme.aspectRatios.minTimelineImage,
+                    l = j.a.theme.aspectRatios.maxTimelineImage
+                  o = er.a.getImageAspectRatio(s, l, {
+                    width: null === (i = e[0].mediaFile) || void 0 === i ? void 0 : i.width,
+                    height: null === (c = e[0].mediaFile) || void 0 === c ? void 0 : c.height,
+                  })
                 }
                 return C.createElement(
                   tr.a,
@@ -6997,6 +7015,61 @@
             return o
           },
         })
+    },
+    iY63: function (e, t, n) {
+      'use strict'
+      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
+      var r = n('KEM+'),
+        a = n.n(r),
+        o = n('ERkP'),
+        i = n('Lsrn'),
+        c = n('k/Ka')
+      function s(e, t) {
+        var n = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e)
+          t &&
+            (r = r.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            n.push.apply(n, r)
+        }
+        return n
+      }
+      function l(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? s(Object(n), !0).forEach(function (t) {
+                a()(e, t, n[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : s(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+              })
+        }
+        return e
+      }
+      var u = function () {
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+        return Object(c.a)(
+          'svg',
+          l(
+            l({}, e),
+            {},
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [i.a.root, e.style], viewBox: '0 0 24 24' },
+          ),
+          o.createElement(
+            'g',
+            null,
+            o.createElement('path', {
+              d: 'M19.75 11H13V4.25c0-.553-.447-1-1-1s-1 .447-1 1V11H4.25c-.553 0-1 .447-1 1s.447 1 1 1H11v6.75c0 .553.447 1 1 1s1-.447 1-1V13h6.75c.553 0 1-.447 1-1s-.447-1-1-1z',
+            }),
+          ),
+        )
+      }
+      ;(u.metadata = { width: 24, height: 24 }), (t.a = u)
     },
     keCP: function (e, t, n) {
       'use strict'

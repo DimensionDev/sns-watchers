@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [53],
+  [54],
   {
     PH3B: function (e, t, r) {
       'use strict'
@@ -11,14 +11,14 @@
         u = (r('JtPf'), r('7x/C'), r('87if'), r('lTEL'), r('kYxP'), r('XBtf')),
         l = {
           loader: function () {
-            return r.e(335).then(r.bind(null, 'a+ad'))
+            return Promise.all([r.e(0), r.e(337)]).then(r.bind(null, 'a+ad'))
           },
           loaderKey: 'newsCellLoader',
           strategy: u.a.Critical,
         },
         s = {
           loader: function () {
-            return r.e(337).then(r.bind(null, 'hX2d'))
+            return Promise.all([r.e(0), r.e(339)]).then(r.bind(null, 'hX2d'))
           },
           loaderKey: 'newsPreviewCardLoader',
           strategy: u.a.Critical,
@@ -94,21 +94,21 @@
         w = function (e, t) {
           return t.match.params.topicId
         },
-        g = function (e, t) {
+        P = function (e, t) {
           return t.match.params.taxonomy
         },
-        j = Object(c.createSelector)(w, g, function (e, t) {
+        g = Object(c.createSelector)(w, P, function (e, t) {
           return f({ topicId: e, taxonomy: t })
         }),
-        P = function (e, t) {
-          var r = j(e, t)
+        j = function (e, t) {
+          var r = g(e, t)
           if (r.selectInitialFetchStatus(e, t) !== d.a.LOADED) return ''
           var n = r.selectMetadata(e).title
           return void 0 === n ? m : n
         },
         h = Object(O.a)()
           .propsFromState(function () {
-            return { module: j, topicId: w, taxonomy: g, title: P }
+            return { module: g, topicId: w, taxonomy: P, title: j }
           })
           .withAnalytics({ page: 'guide', section: 'topic' }),
         v = r('PnFR'),

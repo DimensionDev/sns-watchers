@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [231],
+  [233],
   {
     '+PaE': function (e, l, n) {
       'use strict'
@@ -2434,13 +2434,13 @@
         sl = n('wytG'),
         ol = n('k/OQ'),
         ul = Object(sl.a)(function () {
-          return Promise.all([n.e(0), n.e(231)]).then(n.bind(null, '8KtR'))
+          return Promise.all([n.e(0), n.e(233)]).then(n.bind(null, '8KtR'))
         }),
         cl = Object(sl.a)(function () {
-          return Promise.all([n.e(0), n.e(231)]).then(n.bind(null, 'ivpD'))
+          return Promise.all([n.e(0), n.e(233)]).then(n.bind(null, 'ivpD'))
         }),
         dl = Object(sl.a)(function () {
-          return Promise.all([n.e(0), n.e(231)]).then(n.bind(null, 'ylAD'))
+          return Promise.all([n.e(0), n.e(233)]).then(n.bind(null, 'ylAD'))
         }),
         gl = 'likes',
         ml = 'media',
@@ -3424,85 +3424,77 @@
             S = ha(k),
             v = s.useRef(!0),
             K = s.useRef(!0),
-            E = s.useContext(m.a),
-            w = E.featureSwitches,
-            U = E.loggedInUserId,
-            P = s.useState(!1),
-            L = i()(P, 2),
-            T = L[0],
-            C = L[1],
-            D = s.useState(!1),
-            I = i()(D, 2),
-            O = I[0],
-            A = I[1],
-            R = s.useState(!1),
-            x = i()(R, 2),
-            N = x[0],
-            H = x[1],
-            M = Q()(void 0 !== _e ? _e : (_e = n('kcMG')), f),
-            j = ba({
-              user: M,
-              loggedInUserId: U,
+            E = s.useContext(m.a).loggedInUserId,
+            w = s.useState(!1),
+            U = i()(w, 2),
+            P = U[0],
+            L = U[1],
+            T = s.useState(!1),
+            C = i()(T, 2),
+            D = C[0],
+            I = C[1],
+            O = s.useState(!1),
+            A = i()(O, 2),
+            R = A[0],
+            x = A[1],
+            N = Q()(void 0 !== _e ? _e : (_e = n('kcMG')), f),
+            H = ba({
+              user: N,
+              loggedInUserId: E,
               isSuspended: o,
               isNotFound: r,
-              showBlockedTweets: T,
+              showBlockedTweets: P,
               displaySensitiveMedia: l,
-              userProfileInterstitialDismissed: N,
+              userProfileInterstitialDismissed: R,
             }),
-            W = j.isInvalid,
-            q = j.isOwnProfile,
-            V = j.isProtectedFromViewer,
-            G = j.isWithheld,
-            z = j.shouldShowProfileInterstitial,
-            Y = !0 === w.getValueWithoutScribeImpression('responsive_web_graphql_profile_timeline'),
-            Z = M && !M.legacy.blocking && !M.legacy.blocked_by && !q && !V && !o && !r && !G && !z
+            M = H.isInvalid,
+            j = H.isOwnProfile,
+            W = H.isProtectedFromViewer,
+            q = H.isWithheld,
+            V = H.shouldShowProfileInterstitial,
+            G = N && !N.legacy.blocking && !N.legacy.blocked_by && !j && !W && !o && !r && !q && !V
           s.useEffect(
             function () {
               if (a === d.a.FAILED) K.current = !1
-              else if (K.current && Z) {
-                var e = { source: Y ? 'graphql' : 'rest' }
-                g.d('profile', e), (K.current = !1)
+              else if (K.current && G) {
+                g.d('profile', { source: 'graphql' }), (K.current = !1)
               }
             },
-            [a, Y, Z],
+            [a, G],
           )
-          var J = s.useCallback(
-              function (e) {
-                var l = e.entries
-                if ((e.fetchStatus === d.a.FAILED && (v.current = !1), v.current && l.length)) {
-                  var n = l.some(function (e) {
-                    return e.type === b.b.Tweet
-                  })
-                  if (((v.current = !1), n)) {
-                    var a = { source: Y ? 'graphql' : 'rest' }
-                    g.c('profile', a)
-                  }
+          var z = s.useCallback(function (e) {
+              var l = e.entries
+              if ((e.fetchStatus === d.a.FAILED && (v.current = !1), v.current && l.length)) {
+                var n = l.some(function (e) {
+                  return e.type === b.b.Tweet
+                })
+                if (((v.current = !1), n)) {
+                  g.c('profile', { source: 'graphql' })
                 }
-              },
-              [Y],
-            ),
-            X = M ? pa({ screenName: M.legacy.screen_name, fullName: M.legacy.name }) : void 0,
-            $ = q ? '' : '@'.concat((null == M ? void 0 : M.legacy.screen_name) || y || '', ' '),
-            ee = s.useMemo(
+              }
+            }, []),
+            Y = N ? pa({ screenName: N.legacy.screen_name, fullName: N.legacy.name }) : void 0,
+            Z = j ? '' : '@'.concat((null == N ? void 0 : N.legacy.screen_name) || y || '', ' '),
+            J = s.useMemo(
               function () {
                 return function () {
-                  return { defaultText: $ }
+                  return { defaultText: Z }
                 }
               },
-              [$],
+              [Z],
             ),
-            le = W ? null : s.createElement(F.a, { getLocationState: ee, history: p }),
-            ne = s.useCallback(function (e) {
+            X = M ? null : s.createElement(F.a, { getLocationState: J, history: p }),
+            $ = s.useCallback(function (e) {
               var l = e.isOffscreen
-              A(l)
+              I(l)
             }, []),
-            ae = function () {
-              H(!0)
+            ee = function () {
+              x(!0)
             },
-            re = function () {
-              C(!0)
+            le = function () {
+              L(!0)
             },
-            te = s.useCallback(
+            ne = s.useCallback(
               function () {
                 return s.createElement(
                   s.Fragment,
@@ -3510,33 +3502,33 @@
                   s.createElement(da, {
                     history: p,
                     isNotFound: r,
-                    isOwnProfile: q,
+                    isOwnProfile: j,
                     isSuspended: o,
                     location: k,
-                    loggedInUserId: U,
-                    onFollowButtonOffscreen: ne,
+                    loggedInUserId: E,
+                    onFollowButtonOffscreen: $,
                     promotedContent: S,
                     screenName: y,
-                    shouldShowProfileInterstitial: z,
-                    user: M,
+                    shouldShowProfileInterstitial: V,
+                    user: N,
                   }),
                   s.createElement(jl, {
                     isNotFound: r,
-                    isOwnProfile: q,
-                    isProtectedFromViewer: V,
+                    isOwnProfile: j,
+                    isProtectedFromViewer: W,
                     isSuspended: o,
-                    onConfirmProfileInterstitial: ae,
-                    onEntriesRendered: J,
-                    onShowBlockedTweets: re,
-                    shouldShowProfileInterstitial: z,
-                    showBlockedTweets: T,
-                    user: M,
+                    onConfirmProfileInterstitial: ee,
+                    onEntriesRendered: z,
+                    onShowBlockedTweets: le,
+                    shouldShowProfileInterstitial: V,
+                    showBlockedTweets: P,
+                    user: N,
                   }),
                 )
               },
-              [J, ne, p, r, q, V, o, k, U, S, y, z, T, M],
+              [z, $, p, r, j, W, o, k, E, S, y, V, P, N],
             ),
-            ie = s.useCallback(
+            ae = s.useCallback(
               function () {
                 var e = o || r
                 return s.createElement(
@@ -3552,35 +3544,35 @@
                         accessibilityLabel: ka({ screenName: y }),
                         fetchStatus: e ? d.a.LOADED : a,
                         onRequestRetry: c,
-                        render: te,
+                        render: ne,
                       }),
                     ),
                   ),
                 )
               },
-              [y, t, o, r, a, u, c, te],
+              [y, t, o, r, a, u, c, ne],
             )
           return s.createElement(Ne.a, {
             backLocation: '/',
-            composeOptions: { defaultText: $ },
-            documentTitle: X,
+            composeOptions: { defaultText: Z },
+            documentTitle: Y,
             history: p,
             primaryContent: s.createElement(
               _.a,
-              { fab: le },
-              s.createElement(Re, { user: M }),
+              { fab: X },
+              s.createElement(Re, { user: N }),
               s.createElement(h.a, {
                 accessibilityLabel: ka({ screenName: y }),
-                fetchStatus: M || W ? d.a.LOADED : a,
+                fetchStatus: N || M ? d.a.LOADED : a,
                 onRequestRetry: c,
-                render: ie,
+                render: ae,
               }),
-              _a(k) ? s.createElement(Ce.a, { history: p, location: k, userId: null == M ? void 0 : M.rest_id }) : null,
+              _a(k) ? s.createElement(Ce.a, { history: p, location: k, userId: null == N ? void 0 : N.rest_id }) : null,
             ),
-            rightControl: Fa(M, S, q, O),
-            sidebarContent: Sa(M, q, V, z, T),
-            subtitle: M && !W && a === d.a.LOADED ? s.createElement(Qe, { location: k, user: M }) : void 0,
-            title: M && !W ? s.createElement(qe, { user: M }) : fa,
+            rightControl: Fa(N, S, j, D),
+            sidebarContent: Sa(N, j, W, V, P),
+            subtitle: N && !M && a === d.a.LOADED ? s.createElement(Qe, { location: k, user: N }) : void 0,
+            title: N && !M ? s.createElement(qe, { user: N }) : fa,
           })
         },
         Ka = Ze.a.create(function (e) {

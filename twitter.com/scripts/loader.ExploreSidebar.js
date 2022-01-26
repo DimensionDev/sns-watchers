@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [165],
+  [166],
   {
     '+Bsv': function (e, t, n) {
       'use strict'
@@ -48,7 +48,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return n.e(222).then(n.bind(null, 'QPD4'))
+              return n.e(223).then(n.bind(null, 'QPD4'))
             },
             loaderKey: 'defaultScoreEventSummaryLoader',
             strategy: n('XBtf').a.Critical,
@@ -90,8 +90,8 @@
         w = n('8UdT'),
         g = n('iu0J'),
         j = n('xN10'),
-        P = n('+o05'),
-        E = n('5Y9N'),
+        E = n('+o05'),
+        P = n('5Y9N'),
         T = n('XtkE'),
         _ = (n('z84I'), n('VPAj')),
         S = (n('M+/F'), n('3XMw')),
@@ -126,7 +126,7 @@
       }
       var A = k.a.c5f4befa,
         F = k.a.d228a9a0,
-        H = (function (e) {
+        U = (function (e) {
           l()(n, e)
           var t = B(n)
           function n(e, r) {
@@ -207,7 +207,7 @@
             n
           )
         })(v.Component),
-        U = Object(M.a)(Object(D.a)(H)),
+        H = Object(M.a)(Object(D.a)(U)),
         X = n('zh9S')
       function z(e, t) {
         var n = Object.keys(e)
@@ -236,12 +236,12 @@
         }
         return e
       }
-      var W,
-        J = m.g({
+      var J,
+        W = m.g({
           bindActions: function () {
             return { scribeAction: X.c }
           },
-          component: U,
+          component: H,
           createProps: function (e) {
             var t = e.actions.scribeAction,
               n = e.entry,
@@ -293,22 +293,22 @@
       }
       var Y = 'TrendsModule',
         Z = 'EXPLORE_SIDEBAR',
-        V =
-          ((W = {}),
-          y()(W, w.b.TimelineCursor, m.e(m.a())),
-          y()(W, w.b.Label, m.e(m.a())),
-          y()(W, w.b.Message, m.e(m.a())),
-          y()(W, w.b.News, m.e(m.a())),
-          y()(W, w.b.Trend, Object(T.a)({ withThirdPartyCards: !1, errorContext: Z })),
-          y()(W, w.b.EventSummary, Object(g.a)({ errorContext: Z })),
-          y()(W, w.b.ScoreEventSummary, P.a),
-          W),
-        q = y()({}, Y, J),
+        q =
+          ((J = {}),
+          y()(J, w.b.TimelineCursor, m.e(m.a())),
+          y()(J, w.b.Label, m.e(m.a())),
+          y()(J, w.b.Message, m.e(m.a())),
+          y()(J, w.b.News, m.e(m.a())),
+          y()(J, w.b.Trend, Object(T.a)({ withThirdPartyCards: !1, errorContext: Z })),
+          y()(J, w.b.EventSummary, Object(g.a)({ errorContext: Z })),
+          y()(J, w.b.ScoreEventSummary, E.a),
+          J),
+        V = y()({}, Y, W),
         G = Q(
           Q(
             {},
-            Object(E.a)({
-              customHandlers: q,
+            Object(P.a)({
+              customHandlers: V,
               customSelectDisplayType: function (e) {
                 return (t = e.content.items).length > 0 &&
                   Object(j.a)(t, function (e) {
@@ -321,7 +321,7 @@
               isInSidebar: !0,
             }),
           ),
-          V,
+          q,
         ),
         $ = n('oQhu'),
         ee = n('fTQJ'),
@@ -616,12 +616,26 @@
           c = void 0 !== i && i
         return r.e({
           loader: function () {
-            return n.e(230).then(n.bind(null, '+92Z'))
+            return n.e(231).then(n.bind(null, '+92Z'))
           },
           loaderKey: 'trendDefaultLoader',
           loaderOptions: { withThirdPartyCards: c, errorContext: t },
           strategy: o.a.Critical,
         })
+      }
+    },
+    hxu0: function (e, t, n) {
+      'use strict'
+      var r = n('97Jx'),
+        o = n.n(r),
+        i = n('ERkP'),
+        c = n('vqbU')
+      t.a = function (e) {
+        return function (t) {
+          return i.createElement(c.a.Consumer, null, function (n) {
+            return i.createElement(e, o()({}, t, { isInSidebar: n }))
+          })
+        }
       }
     },
   },
