@@ -4233,13 +4233,13 @@
           .propsFromState(function () {
             return {
               shouldShowDataPrivacyPrompt: function (e, t) {
-                return Object(Ee.y)(e, Ee.c)
+                return Object(Ee.z)(e, Ee.c)
               },
             }
           })
           .propsFromActions(function () {
             return {
-              addFlag: Ee.v,
+              addFlag: Ee.w,
               addToast: Oe.b,
               createLocalApiErrorHandler: Object(T.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
               createRating: C.c,
@@ -4387,7 +4387,7 @@
             helpfulContainer: { alignItems: 'center', flexDirection: 'row', justifyContent: 'space-between' },
             helpfulOptions: { flexDirection: 'row' },
             helpfulQuestionMobile: { paddingBottom: e.spaces.space8 },
-            icon: { color: e.colors.primary, paddingRight: e.spaces.space12 },
+            icon: { color: e.colors.normal, paddingRight: e.spaces.space12 },
             iconDataPrivacy: {
               color: e.colors.primary,
               height: e.spaces.space20,
@@ -4399,12 +4399,16 @@
             infoItemContainer: { paddingHorizontal: 0 },
             root: {
               backgroundColor: e.colors.gray0,
-              borderRadius: e.borderRadii.xLarge,
+              borderRadius: e.borderRadii.medium,
               marginTop: e.spaces.space4,
               padding: e.spaces.space16,
             },
             row: { alignItems: 'center', flex: 1, flexDirection: 'row', width: '100%' },
-            showSubmittedRating: { flexDirection: 'row', justifyContent: 'space-between' },
+            showSubmittedRating: {
+              backgroundColor: e.colors.green0,
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+            },
           }
         }),
         ot = {
@@ -4974,7 +4978,7 @@
         on = H.a.b664c554,
         cn = H.a.ab66e1f2,
         ln = H.a.b2792b8c,
-        sn = H.a.d49cbe9f,
+        sn = H.a.b74df918,
         un = H.a.hfd2544f,
         dn = H.a.b9e1cf02,
         pn = H.a.cfd2f35d,
@@ -5149,8 +5153,10 @@
                 })
               }),
               v()(u()(a), '_renderAppealsStatus', function () {
-                var e = a.props.note.can_appeal,
-                  t = E.createElement(
+                var e = a.props,
+                  t = e.note.can_appeal,
+                  n = e.showTweet,
+                  r = E.createElement(
                     H.a.I18NFormatMessage,
                     { $i18n: 'c5c4d000' },
                     E.createElement(
@@ -5166,8 +5172,8 @@
                       headline: fn,
                       type: 'success',
                     })
-                  : e
-                  ? E.createElement(L.b, { color: 'gray700', size: 'subtext2' }, t)
+                  : t
+                  ? E.createElement(L.b, { color: 'gray700', size: 'subtext2', style: n && On.noteWithQT }, r)
                   : void 0
               }),
               (a.state = {
@@ -5254,7 +5260,7 @@
                           : null,
                         E.createElement(
                           P.a,
-                          { style: [On.noteTop, g && On.noteTopWithQT] },
+                          { style: [On.noteTop, g && On.noteWithQT] },
                           E.createElement(
                             P.a,
                             { style: On.noteBody },
@@ -5364,8 +5370,8 @@
               paddingTop: e.spaces.space4,
             },
             noteTop: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between' },
-            noteTopWithQT: { paddingLeft: e.spaces.space12 },
             noteTopContainer: { paddingHorizontal: e.componentDimensions.gutterHorizontal },
+            noteWithQT: { paddingLeft: e.spaces.space12 },
             ratingContainer: { paddingBottom: e.spaces.space16 },
             ratingTag: { textOverflow: 'ellipsis', whiteSpace: 'nowrap', overflow: 'hidden' },
             ratingInfoItem: { alignItems: 'center', flexDirection: 'row' },

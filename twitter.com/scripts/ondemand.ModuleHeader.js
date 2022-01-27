@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [213],
+  [214],
   {
     RoyM: function (e, t, n) {
       'use strict'
@@ -12,12 +12,12 @@
         }),
         c = n('4bW+'),
         i = n('IG7M'),
-        u = n('rHpw'),
-        l = n('Irs7'),
-        s = u.a.create(function (e) {
+        l = n('rHpw'),
+        u = n('Irs7'),
+        s = l.a.create(function (e) {
           return { curationControl: { marginStart: e.spaces.space20 } }
         })
-      t.a = Object(l.a)(function (e) {
+      t.a = Object(u.a)(function (e) {
         var t = e.analytics,
           n = e.feedbackItems,
           o = e.isDisplayedOnMedia
@@ -45,28 +45,29 @@
         a = n('ERkP'),
         c = n('RoyM'),
         i = n('6vad'),
-        u = function (e) {
+        l = function (e) {
           var t = e.entry,
             n = e.feedbackItems,
             r = t.content.header,
             o = r.icon,
+            l = r.landingUrl,
             u = r.renderCustomControl,
-            l = r.socialContext,
-            s = r.text,
-            d = l && l.generalContext && l.generalContext.text,
-            f = a.useMemo(
+            s = r.socialContext,
+            d = r.text,
+            f = s && s.generalContext && s.generalContext.text,
+            m = a.useMemo(
               function () {
                 return u ? u() : a.createElement(c.a, { feedbackItems: n })
               },
               [n, u],
             )
-          return a.createElement(i.b, { icon: o, rightControl: f, subtext: d, text: s })
+          return a.createElement(i.b, { icon: o, landingUrl: l, rightControl: m, subtext: f, text: d })
         },
-        l = a.memo(u),
+        u = a.memo(l),
         s = { viewType: 'module_header' },
         d = r
           .b({
-            component: l,
+            component: u,
             feedbackEntrySelector: function (e) {
               return e.content.timelineModule
             },

@@ -5,7 +5,7 @@
       'use strict'
       r.r(t),
         r.d(t, 'UserProfileScreenContainer', function () {
-          return la
+          return ua
         })
       var n = r('97Jx'),
         a = r.n(n),
@@ -62,7 +62,7 @@
             return n || (a && a.promoted_content)
           },
           f,
-          d.w,
+          d.x,
           m,
           function (e, t) {
             var r = m(e, t)
@@ -114,9 +114,9 @@
         I = r('N+ot'),
         F = r.n(I),
         x = r('AuHH'),
-        B = r.n(x),
-        T = r('KEM+'),
-        N = r.n(T),
+        T = r.n(x),
+        B = r('KEM+'),
+        N = r.n(B),
         j =
           (r('JtPf'),
           r('7x/C'),
@@ -325,9 +325,9 @@
         })()
         return function () {
           var r,
-            n = B()(e)
+            n = T()(e)
           if (t) {
-            var a = B()(this).constructor
+            var a = T()(this).constructor
             r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
           return F()(this, r)
@@ -378,8 +378,8 @@
         Ie = Y.a.g7088266,
         Fe = Y.a.gd7acb84,
         xe = Y.a.b7636014,
-        Be = o.createElement(he.a, null),
-        Te = X.a.create(function (e) {
+        Te = o.createElement(he.a, null),
+        Be = X.a.create(function (e) {
           return {
             buttons: {
               maxWidth: '100%',
@@ -410,26 +410,26 @@
             b = s.default_profile_image && !s.description && !s.profile_banner_url
           return o.createElement(
             oe.a,
-            { style: Te.buttons },
+            { style: Be.buttons },
             n && c
               ? o.createElement(
                   _e.a,
                   {
                     link: b ? '/i/flow/setup_profile' : '/settings/profile',
-                    style: Te.lastButton,
+                    style: Be.lastButton,
                     testID: ye.a.editProfileButton,
                     type: 'primaryOutlined',
                   },
                   b ? Fe : Ie,
                 )
               : null,
-            m && o.createElement(Ce, { buttonStyle: Te.button, promotedContent: i, user: s }),
+            m && o.createElement(Ce, { buttonStyle: Be.button, promotedContent: i, user: s }),
             !c &&
               f &&
               o.createElement(_e.a, {
                 accessibilityLabel: xe,
                 hoverLabel: { label: xe },
-                icon: Be,
+                icon: Te,
                 onPress: function () {
                   if (n) {
                     var e = Object(pe.a)(s.id_str, n)
@@ -446,7 +446,7 @@
                       t.push('/messages/'.concat(e))
                   }
                 },
-                style: Te.button,
+                style: Be.button,
                 testID: ye.a.sendDMFromProfile,
                 type: 'primaryOutlined',
               }),
@@ -455,7 +455,7 @@
               o.createElement(fe.a, {
                 allowPromptForPush: !0,
                 isFollowing: s.notifications,
-                style: Te.button,
+                style: Be.button,
                 userId: s.id_str,
               }),
             !c &&
@@ -464,7 +464,7 @@
               o.createElement(
                 be.a,
                 { onOffscreenChange: a },
-                o.createElement(me.a, { promotedContent: i, style: Te.lastButton, userId: s.id_str }),
+                o.createElement(me.a, { promotedContent: i, style: Be.lastButton, userId: s.id_str }),
               ),
           )
         },
@@ -775,7 +775,7 @@
             text: { marginTop: e.spaces.space12, textAlign: 'center' },
           }
         }),
-        Bt = function (e) {
+        Tt = function (e) {
           var t = e.dismiss,
             r = e.type,
             n = Object(ge.b)()
@@ -810,7 +810,7 @@
             'sheet' === r ? o.createElement(_e.a, { onClick: t, style: xt.button, type: 'primaryOutlined' }, Ct) : null,
           )
         },
-        Tt = r('jV+4'),
+        Bt = r('jV+4'),
         Nt = r('ir4X')
       function jt(e, t) {
         var r = Object.keys(e)
@@ -851,7 +851,7 @@
             d = s.name && s.screen_name && !(n && !r),
             p = d ? s.name : '@'.concat(s.screen_name),
             f = o.useCallback(function (e, t) {
-              return o.createElement(Bt, { dismiss: e, type: t })
+              return o.createElement(Tt, { dismiss: e, type: t })
             }, []),
             m = c.isTrue('identity_verification_educational_prompt_enabled'),
             h = c.isTrue('account_taxonomy_automated_label_enabled'),
@@ -881,7 +881,7 @@
             oe.a,
             { style: H.a.names, testID: Ot },
             o.createElement(
-              Tt.a,
+              Bt.a,
               a()({}, u, {
                 badgeContext: 'account',
                 name: p,
@@ -1287,9 +1287,9 @@
         })()
         return function () {
           var r,
-            n = B()(e)
+            n = T()(e)
           if (t) {
-            var a = B()(this).constructor
+            var a = T()(this).constructor
             r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
           return F()(this, r)
@@ -1430,7 +1430,7 @@
         Er = r('oQhu'),
         wr = r('xZGM'),
         Or = function (e, t) {
-          return Object(wr.y)(e, wr.u)
+          return Object(wr.z)(e, wr.v)
         },
         Pr = Object(W.a)()
           .propsFromState(function () {
@@ -1439,7 +1439,7 @@
           .propsFromActions(function () {
             return {
               addEducationFlag: function () {
-                return Object(wr.v)(wr.u)
+                return Object(wr.w)(wr.v)
               },
             }
           })
@@ -1496,8 +1496,8 @@
         )
       }
       xr.metadata = { width: 24, height: 24 }
-      var Br = xr
-      function Tr(e, t) {
+      var Tr = xr
+      function Br(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -1513,12 +1513,12 @@
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Tr(Object(r), !0).forEach(function (t) {
+            ? Br(Object(r), !0).forEach(function (t) {
                 N()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : Tr(Object(r)).forEach(function (t) {
+            : Br(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
@@ -1654,7 +1654,7 @@
                     o.createElement(
                       oe.a,
                       { style: zr.iconContainer },
-                      o.createElement(Br, { style: zr.icon }),
+                      o.createElement(Tr, { style: zr.icon }),
                       o.createElement(He.b, null, Wr),
                     ),
                     o.createElement(
@@ -1699,9 +1699,9 @@
         })()
         return function () {
           var r,
-            n = B()(e)
+            n = T()(e)
           if (t) {
-            var a = B()(this).constructor
+            var a = T()(this).constructor
             r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
           return F()(this, r)
@@ -1787,7 +1787,7 @@
                   return o.createElement(
                     oe.a,
                     { style: H.a.names },
-                    o.createElement(Tt.a, {
+                    o.createElement(Bt.a, {
                       name: i,
                       nameSize: 'headline1',
                       screenName: a ? n.screen_name : void 0,
@@ -1889,9 +1889,9 @@
         })()
         return function () {
           var r,
-            n = B()(e)
+            n = T()(e)
           if (t) {
-            var a = B()(this).constructor
+            var a = T()(this).constructor
             r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
           return F()(this, r)
@@ -1908,45 +1908,47 @@
         Sn = Y.a.add55c97,
         In = Y.a.d7b8eba9,
         Fn = Y.a.c0098d49,
-        xn = Y.a.c4af3561,
+        xn = Y.a.b721eb37,
+        Tn = Y.a.c4af3561,
         Bn = Y.a.dbcaaab5,
-        Tn = Y.a.hf162fb6,
-        Nn = Y.a.ad7b2b38,
-        jn = Y.a.f19b4073,
-        Ln = Y.a.ha62da97,
-        Rn = Y.a.ica87fde,
-        Mn = Y.a.e79ed125,
-        An = Y.a.g8475f82,
-        Dn = Y.a.c9a1cb5d,
-        Un = Y.a.e7b201dd,
-        Hn = Y.a.d09e12c4,
-        Wn = Y.a.gbf342a4,
-        zn = Y.a.eeab4adf,
-        Vn = Y.a.i144ee20,
-        qn = Y.a.j58e7b00,
-        $n = Y.a.d834ab9c,
-        Gn = { section: 'profile_interstitial' },
-        Yn = Object(Qr.a)(function () {
+        Nn = Y.a.hf162fb6,
+        jn = Y.a.ad7b2b38,
+        Ln = Y.a.f19b4073,
+        Rn = Y.a.ha62da97,
+        Mn = Y.a.ica87fde,
+        An = Y.a.e79ed125,
+        Dn = Y.a.g8475f82,
+        Un = Y.a.c9a1cb5d,
+        Hn = Y.a.e7b201dd,
+        Wn = Y.a.d09e12c4,
+        zn = Y.a.gbf342a4,
+        Vn = Y.a.eeab4adf,
+        qn = Y.a.i144ee20,
+        $n = Y.a.j58e7b00,
+        Gn = Y.a.d834ab9c,
+        Yn = { section: 'profile_interstitial' },
+        Jn = Object(Qr.a)(function () {
           return Promise.all([r.e(0), r.e(106)]).then(r.bind(null, '8KtR'))
         }),
-        Jn = Object(Qr.a)(function () {
+        Kn = Object(Qr.a)(function () {
           return Promise.all([r.e(0), r.e(106)]).then(r.bind(null, 'ivpD'))
         }),
-        Kn = Object(Qr.a)(function () {
+        Xn = Object(Qr.a)(function () {
           return Promise.all([r.e(0), r.e(106)]).then(r.bind(null, 'ylAD'))
         }),
-        Xn = 'likes',
-        Qn = 'media',
-        Zn = 'reactions',
-        ea = 'superfollows',
-        ta = 'with_replies',
-        ra = 36e5,
-        na = Object(Er.a)(function (e) {
+        Qn = 'about',
+        Zn = 'likes',
+        ea = 'media',
+        ta = 'reactions',
+        ra = 'superfollows',
+        na = 'with_replies',
+        aa = 36e5,
+        oa = Object(Er.a)(function (e) {
           return function () {
             return { defaultText: e }
           }
         }),
-        aa = (function (e) {
+        ia = (function (e) {
           S()(r, e)
           var t = gn(r)
           function r(e, n) {
@@ -1992,7 +1994,7 @@
                   { isRefreshing: n, onRefresh: a._handlePullToRefresh },
                   o.createElement(
                     oe.a,
-                    { style: ia.containerGrow },
+                    { style: la.containerGrow },
                     o.createElement(
                       ln.a,
                       null,
@@ -2101,7 +2103,7 @@
                 var e = a.props,
                   t = e.scribeAction,
                   r = e.scribeNamespace
-                a.setState({ userProfileInterstitialDismissed: !0 }), t(yn(yn(yn({}, r), Gn), {}, { action: 'click' }))
+                a.setState({ userProfileInterstitialDismissed: !0 }), t(yn(yn(yn({}, r), Yn), {}, { action: 'click' }))
               }),
               N()(k()(a), '_handleOnDismissNftAvatarEducation', function () {
                 a.setState({ showNftAvatarEducation: !1 })
@@ -2129,14 +2131,14 @@
                     r = parseInt(e.smart_blocking_expiration, 10),
                     n = r > t ? r - t : 0
                   if (n <= 72e5) return Bn
-                  var o = Math.floor(n / ra),
+                  var o = Math.floor(n / aa),
                     i = Math.floor(o / 24),
                     s = o % 24
                   return 0 === i
-                    ? jn({ hourCount: s })
+                    ? Ln({ hourCount: s })
                     : 0 === s
-                    ? Nn({ dayCount: i })
-                    : Tn({ dayCount: i, hourCount: s })
+                    ? jn({ dayCount: i })
+                    : Nn({ dayCount: i, hourCount: s })
                 }
                 return ''
               }),
@@ -2211,7 +2213,7 @@
                     n()
                       .catch(r())
                       .then(function () {
-                        e._shouldShowProfileInterstitial() && a(yn(yn(yn({}, o), Gn), {}, { action: 'impression' }))
+                        e._shouldShowProfileInterstitial() && a(yn(yn(yn({}, o), Yn), {}, { action: 'impression' }))
                       })
                 },
               },
@@ -2249,7 +2251,7 @@
                     ? (this._fetchOneUserIfNeeded(e), this.setState({ userProfileInterstitialDismissed: !1 }))
                     : !o &&
                       this._shouldShowProfileInterstitial(e.userProfileInterstitialType) &&
-                      n(yn(yn(yn({}, a), Gn), {}, { action: 'impression' }))
+                      n(yn(yn(yn({}, a), Yn), {}, { action: 'impression' }))
                 },
               },
               {
@@ -2271,10 +2273,10 @@
                     m = s || i || (l && !f),
                     h = d ? En({ screenName: d.screen_name, fullName: d.name }) : void 0,
                     b = f ? '' : '@'.concat((d && d.screen_name) || u || '', ' '),
-                    y = m ? null : o.createElement(br.a, { getLocationState: na(b), history: n }),
+                    y = m ? null : o.createElement(br.a, { getLocationState: oa(b), history: n }),
                     g =
                       d && !m
-                        ? o.createElement(Tt.a, {
+                        ? o.createElement(Bt.a, {
                             isProtected: d.protected,
                             isVerified: d.verified,
                             name: d.name,
@@ -2355,11 +2357,11 @@
                 value: function (e) {
                   var t = this.props.location.pathname.toLowerCase(),
                     r = e.screen_name.toLowerCase()
-                  return t.indexOf('/'.concat(r, '/').concat(Xn)) > -1
+                  return t.indexOf('/'.concat(r, '/').concat(Zn)) > -1
                     ? o.createElement(on.a, { count: e.favourites_count, type: 'likes' })
-                    : t.indexOf('/'.concat(r, '/').concat(Zn)) > -1
+                    : t.indexOf('/'.concat(r, '/').concat(ta)) > -1
                     ? o.createElement(on.a, { count: e.favourites_count, type: 'reactions' })
-                    : t.indexOf('/'.concat(r, '/').concat(Qn)) > -1
+                    : t.indexOf('/'.concat(r, '/').concat(ea)) > -1
                     ? o.createElement(on.a, { count: e.media_count, type: 'media' })
                     : o.createElement(on.a, { count: e.statuses_count, type: 'tweets' })
                 },
@@ -2445,7 +2447,7 @@
                       onSecondaryButtonPress: s,
                       secondaryButtonText: l,
                       secondaryButtonType: c,
-                      style: sa.root,
+                      style: ca.root,
                     }),
                   )
                 },
@@ -2460,7 +2462,7 @@
                   return this._renderEmptyState({
                     header: r,
                     message: n,
-                    buttonText: $n,
+                    buttonText: Gn,
                     onButtonPress: this._handleOnConfirmProfileInterstitial,
                   })
                 },
@@ -2471,7 +2473,7 @@
                   var e = this.props.user
                   if (!e) return null
                   var t = e.screen_name,
-                    r = Mn({ screenName: t }),
+                    r = An({ screenName: t }),
                     n = o.createElement(
                       Y.a.I18NFormatMessage,
                       { $i18n: 'e645092a', screenName: t },
@@ -2480,7 +2482,7 @@
                   return this._renderEmptyState({
                     header: r,
                     message: n,
-                    buttonText: zn,
+                    buttonText: Vn,
                     onButtonPress: this._handleShowBlockedTweets,
                   })
                 },
@@ -2492,7 +2494,7 @@
                   if (!e) return null
                   var t = this._getSmartBlockEndTimeSentence(),
                     r = e.screen_name,
-                    n = Ln({ screenName: r }),
+                    n = Rn({ screenName: r }),
                     a = o.createElement(He.b, { color: 'gray700', weight: 'bold' }),
                     i = o.createElement(
                       oe.a,
@@ -2519,9 +2521,9 @@
                   return this._renderEmptyState({
                     header: n,
                     message: i,
-                    buttonText: Vn,
+                    buttonText: qn,
                     buttonType: 'primaryFilled',
-                    secondaryButtonText: qn,
+                    secondaryButtonText: $n,
                     secondaryButtonType: 'primaryOutlined',
                     onButtonPress: this._handleShowActionedTweets,
                     onSecondaryButtonPress: this._handleShowBlockedTweets,
@@ -2539,7 +2541,7 @@
                       { $i18n: 'ccade2e6', screenName: t },
                       o.createElement(He.b, { link: 'https://support.twitter.com/articles/20172060' }, Y.a.de078c23),
                     )
-                  return this._renderEmptyState({ header: Rn, message: r })
+                  return this._renderEmptyState({ header: Mn, message: r })
                 },
               },
               {
@@ -2616,7 +2618,7 @@
                         o.cloneElement(r, null, Y.a.dbb6ccd4),
                       ),
                     )
-                  return this._renderEmptyState({ header: xn, message: i })
+                  return this._renderEmptyState({ header: Tn, message: i })
                 },
               },
               {
@@ -2633,7 +2635,7 @@
                             { $i18n: 'f6fa2033' },
                             o.createElement(He.b, { link: 'https://support.twitter.com/articles/18311' }, Y.a.f3b1bdc1),
                           )),
-                    this._renderEmptyState({ header: An, message: e })
+                    this._renderEmptyState({ header: Dn, message: e })
                   )
                 },
               },
@@ -2658,7 +2660,7 @@
                         })
                       }),
                     )
-                  return this._renderEmptyState({ header: Wn, message: i })
+                  return this._renderEmptyState({ header: zn, message: i })
                 },
               },
               {
@@ -2676,11 +2678,11 @@
                     null,
                     o.createElement(
                       oe.a,
-                      { style: ia.withheldMessageRoot },
+                      { style: la.withheldMessageRoot },
                       o.createElement(
                         He.b,
-                        { align: 'center', size: 'title4', style: ia.withheldMessageHeader, weight: 'bold' },
-                        Wn,
+                        { align: 'center', size: 'title4', style: la.withheldMessageHeader, weight: 'bold' },
+                        zn,
                       ),
                       o.createElement(
                         He.b,
@@ -2710,13 +2712,13 @@
                       { $i18n: 'c97724c2', screenName: t },
                       o.createElement(He.b, { link: 'https://support.twitter.com/articles/14016' }, Y.a.a58c8a4e),
                     )
-                  return this._renderEmptyState({ header: Hn, message: r })
+                  return this._renderEmptyState({ header: Wn, message: r })
                 },
               },
               {
                 key: '_renderUserNotFound',
                 value: function () {
-                  return this._renderEmptyState({ header: Dn, message: Un })
+                  return this._renderEmptyState({ header: Un, message: Hn })
                 },
               },
               {
@@ -2732,9 +2734,18 @@
                     l = t.query,
                     c = this.context.featureSwitches.isTrue('responsive_web_reactions_enabled'),
                     u = (this._isViewingOwnProfile() && r) || n.super_following,
-                    d = function (e) {
+                    d = this.context.featureSwitches.isTrue('profile_foundations_about_tab_enabled'),
+                    p = function (e) {
                       var r = c ? Fn : In
                       return [
+                        d
+                          ? {
+                              to: { pathname: '/'.concat(i, '/').concat(Qn), query: l },
+                              key: xn,
+                              label: xn,
+                              onClick: e(),
+                            }
+                          : void 0,
                         {
                           isActive: function () {
                             return (
@@ -2748,61 +2759,66 @@
                           key: Pn,
                           label: Pn,
                         },
-                        { to: { pathname: '/'.concat(i, '/').concat(ta), query: l }, key: kn, label: kn },
+                        { to: { pathname: '/'.concat(i, '/').concat(na), query: l }, key: kn, label: kn },
                         u
                           ? {
-                              to: { pathname: '/'.concat(i, '/').concat(ea), query: l },
+                              to: { pathname: '/'.concat(i, '/').concat(ra), query: l },
                               key: Cn,
                               label: Cn,
                               color: 'plum500',
                             }
                           : void 0,
-                        { to: { pathname: '/'.concat(i, '/').concat(Qn), query: l }, key: Sn, label: Sn, onClick: e() },
+                        { to: { pathname: '/'.concat(i, '/').concat(ea), query: l }, key: Sn, label: Sn, onClick: e() },
                         {
-                          to: { pathname: '/'.concat(i, '/').concat(c ? Zn : Xn), query: l },
+                          to: { pathname: '/'.concat(i, '/').concat(c ? ta : Zn), query: l },
                           key: r,
                           label: r,
                           onClick: e(),
                         },
                       ]
                     },
-                    p = { displayBlocked: s, fullName: n.name, screenName: n.screen_name, userId: n.id_str },
-                    f = { isActiveCreator: r, isSuperFollowing: n.super_following }
+                    f = { displayBlocked: s, fullName: n.name, screenName: n.screen_name, userId: n.id_str },
+                    m = { isActiveCreator: r, isSuperFollowing: n.super_following }
                   return o.createElement(
                     o.Fragment,
                     null,
                     o.createElement(nr.a, null, function (e) {
-                      return o.createElement(mn.a, { accessibilityLabel: vn, links: d(e) })
+                      return o.createElement(mn.a, { accessibilityLabel: vn, links: p(e) })
                     }),
                     o.createElement(
                       hn.e,
                       null,
-                      o.createElement(hn.c, { exact: !0, path: '/intent/follow' }, o.createElement(Yn, a()({}, p, f))),
-                      o.createElement(hn.c, { exact: !0, path: '/intent/user' }, o.createElement(Yn, a()({}, p, f))),
+                      o.createElement(hn.c, { exact: !0, path: '/intent/follow' }, o.createElement(Jn, a()({}, f, m))),
+                      o.createElement(hn.c, { exact: !0, path: '/intent/user' }, o.createElement(Jn, a()({}, f, m))),
                       o.createElement(
                         hn.c,
                         { exact: !0, path: '/'.concat(Gr.I) },
-                        o.createElement(Yn, a()({}, p, f, { onEntriesRendered: this._handleEntriesRendered })),
+                        o.createElement(Jn, a()({}, f, m, { onEntriesRendered: this._handleEntriesRendered })),
                       ),
                       o.createElement(
                         hn.c,
-                        { exact: !0, path: '/'.concat(Gr.I, '/').concat(ta) },
-                        o.createElement(Yn, a()({}, p, f, { mode: 'with_replies' })),
+                        { exact: !0, path: '/'.concat(Gr.I, '/').concat(na) },
+                        o.createElement(Jn, a()({}, f, m, { mode: 'with_replies' })),
+                      ),
+                      o.createElement(
+                        hn.c,
+                        { exact: !0, path: '/'.concat(Gr.I, '/').concat(ra) },
+                        o.createElement(Jn, a()({}, f, m, { mode: 'superfollows' })),
                       ),
                       o.createElement(
                         hn.c,
                         { exact: !0, path: '/'.concat(Gr.I, '/').concat(ea) },
-                        o.createElement(Yn, a()({}, p, f, { mode: 'superfollows' })),
+                        o.createElement(Xn, f),
+                      ),
+                      o.createElement(
+                        hn.c,
+                        { exact: !0, path: '/'.concat(Gr.I, '/(').concat(Zn, '|').concat(ta, ')') },
+                        o.createElement(Kn, f),
                       ),
                       o.createElement(
                         hn.c,
                         { exact: !0, path: '/'.concat(Gr.I, '/').concat(Qn) },
-                        o.createElement(Kn, p),
-                      ),
-                      o.createElement(
-                        hn.c,
-                        { exact: !0, path: '/'.concat(Gr.I, '/(').concat(Xn, '|').concat(Zn, ')') },
-                        o.createElement(Jn, p),
+                        o.createElement(Jn, a()({}, f, m, { onEntriesRendered: this._handleEntriesRendered })),
                       ),
                     ),
                   )
@@ -2884,8 +2900,8 @@
             r
           )
         })(o.Component)
-      N()(aa, 'contextType', U.a),
-        N()(aa, 'defaultProps', {
+      N()(ia, 'contextType', U.a),
+        N()(ia, 'defaultProps', {
           profileHeaderRenderer: function (e) {
             return o.createElement(ur, e)
           },
@@ -2895,8 +2911,8 @@
           recordTTFL: j.c,
           recordTTFMC: j.d,
         })
-      var oa = Object(sn.a)(aa),
-        ia = X.a.create(function (e) {
+      var sa = Object(sn.a)(ia),
+        la = X.a.create(function (e) {
           return {
             containerGrow: { flexGrow: 1 },
             rightControlContainer: { flexDirection: 'row', flexGrow: 1 },
@@ -2905,7 +2921,7 @@
             withheldMessageHeader: { paddingBottom: e.spaces.space4 },
           }
         }),
-        sa = X.a.create(function (e) {
+        ca = X.a.create(function (e) {
           return {
             root: {
               backgroundColor: e.colors.cellBackground,
@@ -2914,13 +2930,13 @@
             },
           }
         }),
-        la = function (e) {
+        ua = function (e) {
           return o.createElement(_.a, { userId: e.user && e.user.id_str }, function (t) {
             var r = t.scribeNamespace
-            return o.createElement(oa, a()({}, e, { scribeNamespace: r }))
+            return o.createElement(sa, a()({}, e, { scribeNamespace: r }))
           })
         }
-      t.default = g(la)
+      t.default = g(ua)
     },
   },
 ])

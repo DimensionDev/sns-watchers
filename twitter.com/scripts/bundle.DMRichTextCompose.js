@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [48, 222],
+  [48, 223],
   {
     '8fI/': function (e, t, n) {
       'use strict'
@@ -456,7 +456,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'DMConversationScreen', function () {
-          return ee
+          return te
         })
       n('OZaJ')
       var r = n('VrFO'),
@@ -474,42 +474,43 @@
         y = n('KEM+'),
         v = n.n(y),
         m = (n('MvUL'), n('KqXw'), n('uFXj'), n('+KXO'), n('z84I'), n('ERkP')),
-        g = n('+Kfv'),
-        C = (n('WNMA'), n('zh9S')),
-        b = n('MMRb'),
-        w = n('CDB5'),
-        E = n('RqPI'),
-        S = n('hqKg'),
-        x = n('AQOc'),
-        T = n('z2Pn'),
-        O = n('pNZL'),
-        k = n('G6rE'),
-        _ = n('oEGd'),
-        D = n('X/yg'),
-        P = function (e, t) {
+        g = n('v6aA'),
+        C = n('+Kfv'),
+        b = (n('WNMA'), n('zh9S')),
+        w = n('MMRb'),
+        E = n('CDB5'),
+        S = n('RqPI'),
+        x = n('hqKg'),
+        T = n('AQOc'),
+        O = n('z2Pn'),
+        k = n('pNZL'),
+        _ = n('G6rE'),
+        D = n('oEGd'),
+        P = n('X/yg'),
+        B = function (e, t) {
           return t.match.params.conversationId
         },
-        B = Object(S.createSelector)(
+        I = Object(x.createSelector)(
           function (e, t) {
-            return b.selectConversation(e, P(0, t))
+            return w.selectConversation(e, B(0, t))
           },
-          b.selectEntries,
-          P,
-          D.l,
-          E.q,
-          D.m,
-          D.n,
-          k.e.selectAll,
+          w.selectEntries,
+          B,
+          P.l,
+          S.q,
+          P.m,
+          P.n,
+          _.e.selectAll,
           function (e, t) {
-            return w.j(e, P(0, t))
+            return E.j(e, B(0, t))
           },
           function (e, t) {
-            return w.i(e, P(0, t))
+            return E.i(e, B(0, t))
           },
           function (e, t, n, r, o, a, i, c, l, s) {
             var u = e && e.data
             return {
-              conversation: (u && Object(x.a)(u, t, c)) || void 0,
+              conversation: (u && Object(T.a)(u, t, c)) || void 0,
               conversationId: n,
               isNewGroupConversation: r,
               isUploading: l,
@@ -519,34 +520,34 @@
             }
           },
         ),
-        I = Object(_.d)(B, function (e) {
+        R = Object(D.d)(I, function (e) {
           return {
-            cancelUpload: Object(D.a)(e.match.params.conversationId),
-            googleAnalyticsPageView: C.a,
-            removeMedia: Object(D.b)(e.match.params.conversationId),
-            scribePageImpression: C.d,
-            setLastViewedDmInboxPath: T.h,
-            updateTweetDetailNav: O.b,
+            cancelUpload: Object(P.a)(e.match.params.conversationId),
+            googleAnalyticsPageView: b.a,
+            removeMedia: Object(P.b)(e.match.params.conversationId),
+            scribePageImpression: b.d,
+            setLastViewedDmInboxPath: O.h,
+            updateTweetDetailNav: k.b,
           }
         }),
-        R = n('i4Oy'),
-        L = n('Oi4X'),
-        F = n('aA19'),
-        K = n('XnpN'),
-        j = n('3XMw'),
-        M = n.n(j),
-        N = (n('hBvt'), n('/yvb')),
-        A = n('6s7X'),
-        H = M.a.h810143c,
-        W = function (e) {
+        L = n('i4Oy'),
+        F = n('Oi4X'),
+        K = n('aA19'),
+        j = n('XnpN'),
+        M = n('3XMw'),
+        N = n.n(M),
+        A = (n('hBvt'), n('/yvb')),
+        H = n('6s7X'),
+        W = N.a.h810143c,
+        z = function (e) {
           var t = e.accessibilityLabel,
             n = e.conversationId,
             r = e.link,
             o = e.style,
-            a = m.createElement(A.a, null)
-          return m.createElement(N.a, {
-            accessibilityLabel: t || H,
-            hoverLabel: { label: H },
+            a = m.createElement(H.a, null)
+          return m.createElement(A.a, {
+            accessibilityLabel: t || W,
+            hoverLabel: { label: W },
             icon: a,
             key: n,
             link: r,
@@ -555,14 +556,14 @@
             type: 'primaryText',
           })
         },
-        z = n('7myi'),
-        V = n('M2mT'),
-        J = n('rHpw'),
-        U = n('aITJ'),
-        q = n('MWbm'),
-        Y = n('7JQg'),
-        X = n('OhSZ')
-      function Z(e) {
+        V = n('7myi'),
+        J = n('M2mT'),
+        U = n('rHpw'),
+        q = n('aITJ'),
+        Y = n('MWbm'),
+        X = n('7JQg'),
+        Z = n('OhSZ')
+      function G(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -583,39 +584,45 @@
           return f()(this, n)
         }
       }
-      var G = M.a.d4986f85,
-        Q = M.a.e3e58b6d,
-        $ = M.a.a9ddbb94,
-        ee = (function (e) {
+      var Q = N.a.d4986f85,
+        $ = N.a.e3e58b6d,
+        ee = N.a.a9ddbb94,
+        te = (function (e) {
           u()(n, e)
-          var t = Z(n)
-          function n(e) {
-            var r
+          var t = G(n)
+          function n(e, r) {
+            var a
             o()(this, n),
-              (r = t.call(this, e)),
-              v()(l()(r), '_composer', m.createRef()),
-              v()(l()(r), '_handleConversationClose', function (e) {
-                var t = r.props,
+              (a = t.call(this, e, r)),
+              v()(l()(a), '_composer', m.createRef()),
+              v()(
+                l()(a),
+                '_isVDLEnabled',
+                a.context.featureSwitches.isTrue('dm_vdl_enabled') &&
+                  a.context.featureSwitches.isTrue('dm_vdl_chat_p0_enabled'),
+              ),
+              v()(l()(a), '_handleConversationClose', function (e) {
+                var t = a.props,
                   n = t.conversation,
-                  o = t.history
-                null != n && n.trusted ? o.push('/messages') : e()
+                  r = t.history
+                null != n && n.trusted ? r.push('/messages') : e()
               }),
-              v()(l()(r), '_handleInfoClick', function () {
-                var e = r.props,
+              v()(l()(a), '_handleInfoClick', function () {
+                var e = a.props,
                   t = e.conversationId,
                   n = e.history
                 t && n.push('/messages/'.concat(t, '/info'))
               }),
-              v()(l()(r), '_updateLastViewDmInboxPath', function () {
-                var e = r.props,
+              v()(l()(a), '_updateLastViewDmInboxPath', function () {
+                var e = a.props,
                   t = e.location
                 ;(0, e.setLastViewedDmInboxPath)(t.pathname)
               })
-            var a = e.conversationId,
-              i = e.history,
-              c = e.isNewGroupConversation,
-              s = e.location
-            return a || c || s.pathname !== window.location.pathname || i.replace({ pathname: '/messages' }), r
+            var i = e.conversationId,
+              c = e.history,
+              s = e.isNewGroupConversation,
+              u = e.location
+            return i || s || u.pathname !== window.location.pathname || c.replace({ pathname: '/messages' }), a
           }
           return (
             i()(n, [
@@ -646,14 +653,14 @@
                     o = e.richTextInputContext,
                     a = e.typeaheadWrapper,
                     i = 'string' == typeof r.query.text ? r.query.text : void 0,
-                    c = R.a.get('window').width >= J.a.theme.breakpoints.small
+                    c = L.a.get('window').width >= U.a.theme.breakpoints.small
                   return m.createElement(
-                    V.a,
+                    J.a,
                     this._getNavProps(),
                     m.createElement(
-                      g.a,
+                      C.a,
                       { viewType: 'messages' },
-                      m.createElement(L.a, {
+                      m.createElement(F.a, {
                         conversationId: t,
                         history: n,
                         isWide: c,
@@ -675,23 +682,23 @@
                     r = e.perspective,
                     o =
                       t && Object.keys(t.participants).length
-                        ? Object(X.a)({ conversation: t, perspective: r })
+                        ? Object(Z.a)({ conversation: t, perspective: r })
                         : n
-                        ? Object(X.a)({ newConversationParticipants: n, perspective: r })
-                        : G,
+                        ? Object(Z.a)({ newConversationParticipants: n, perspective: r })
+                        : Q,
                     a =
                       t && Object.keys(t.participants).length
-                        ? m.createElement(X.b, { conversation: t, perspective: r, withScreenName: !1 })
+                        ? m.createElement(Z.b, { conversation: t, perspective: r, withScreenName: !1 })
                         : n
-                        ? m.createElement(X.b, { newConversationParticipants: n, perspective: r, withScreenName: !1 })
-                        : G,
-                    i = 'medium',
-                    c = r ? m.createElement(F.a, { conversation: t, perspective: r, size: i }) : void 0,
+                        ? m.createElement(Z.b, { newConversationParticipants: n, perspective: r, withScreenName: !1 })
+                        : Q,
+                    i = this._isVDLEnabled ? 'large' : 'medium',
+                    c = r ? m.createElement(K.a, { conversation: t, perspective: r, size: i }) : void 0,
                     l =
                       t &&
-                      t.type === b.CONVERSATION_TYPE.ONE_TO_ONE &&
+                      t.type === w.CONVERSATION_TYPE.ONE_TO_ONE &&
                       r &&
-                      Object(K.a)(t, r).map(function (e) {
+                      Object(j.a)(t, r).map(function (e) {
                         return e.user.screen_name
                       }),
                     s = l ? '@'.concat(l[0]) : void 0
@@ -706,7 +713,7 @@
                     subtitle: s,
                     screenType: 'primaryDetail',
                     withBottomTabBar: !1,
-                    headerless: U.b.isKaiOS(),
+                    headerless: q.b.isKaiOS(),
                   }
                 },
               },
@@ -718,17 +725,17 @@
                     n = t.conversation,
                     r = t.conversationId,
                     o = t.location,
-                    a = (null == n ? void 0 : n.type) === b.CONVERSATION_TYPE.GROUP,
+                    a = (null == n ? void 0 : n.type) === w.CONVERSATION_TYPE.GROUP,
                     i = (null == o || null === (e = o.state) || void 0 === e ? void 0 : e.position) || 0
                   return r
                     ? m.createElement(
-                        q.a,
-                        { style: te.rightControlStyles },
-                        m.createElement(W, {
-                          accessibilityLabel: a ? $ : Q,
+                        Y.a,
+                        { style: ne.rightControlStyles },
+                        m.createElement(z, {
+                          accessibilityLabel: a ? ee : $,
                           conversationId: r,
                           link: { pathname: '/messages/'.concat(r, '/info'), state: { position: i } },
-                          style: te.infoButton,
+                          style: ne.infoButton,
                         }),
                       )
                     : void 0
@@ -738,11 +745,11 @@
             n
           )
         })(m.PureComponent)
-      v()(ee, 'defaultProps', { isNewGroupConversation: !1, typeaheadWrapper: z.a })
-      var te = J.a.create(function (e) {
+      v()(te, 'contextType', g.a), v()(te, 'defaultProps', { isNewGroupConversation: !1, typeaheadWrapper: V.a })
+      var ne = U.a.create(function (e) {
         return { infoButton: { marginRight: e.spaces.space4 }, rightControlStyles: { flexDirection: 'row' } }
       })
-      t.default = Object(Y.c)({ page: 'messages', section: 'thread' })(I(ee))
+      t.default = Object(X.c)({ page: 'messages', section: 'thread' })(R(te))
     },
     dWxr: function (e, t, n) {
       'use strict'

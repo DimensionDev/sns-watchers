@@ -67,7 +67,7 @@
           fetchOneUserIfNeeded: O.e.fetchOneIfNeeded,
           fetchOneFactorLoginEligibility: v.c,
           scribeAction: y.c,
-          setLoginReturnPath: v.y,
+          setLoginReturnPath: v.z,
         },
         R = Object(L.g)(w, P),
         B = n('GOQE'),

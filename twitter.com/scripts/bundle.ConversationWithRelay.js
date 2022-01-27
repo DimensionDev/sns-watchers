@@ -543,7 +543,7 @@
       }
       var Ie = ee.a.create(function (e) {
           return {
-            grid: { display: 'grid' },
+            grid: { display: 'grid', marginBottom: e.spaces.space40 },
             minorDataPointsGrid: { display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)' },
             promotionIcon: { fontSize: e.spaces.space4, color: e.colors.primary, marginRight: e.spaces.space4 },
           }

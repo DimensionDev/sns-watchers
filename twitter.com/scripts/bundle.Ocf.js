@@ -6426,7 +6426,7 @@
             googleAnalyticsSendEvent: pt.b,
             scribeAction: pt.c,
             scribePageImpression: pt.d,
-            verifyCredentials: yt.z,
+            verifyCredentials: yt.A,
           }
         }),
         jt = {
@@ -12700,7 +12700,7 @@
           }
         }),
         Mi = function () {
-          return n.e(340).then(n.t.bind(null, '0FX9', 7))
+          return n.e(341).then(n.t.bind(null, '0FX9', 7))
         }
       function Vi(e) {
         var t = e.errorDialog,
@@ -16061,7 +16061,7 @@
           return {
             personalizationPreferences: r.selectPreferences,
             personalizationSettings: r.selectUserPreferences,
-            ssoInitTokens: i.v,
+            ssoInitTokens: i.w,
             userLanguage: i.o,
           }
         })

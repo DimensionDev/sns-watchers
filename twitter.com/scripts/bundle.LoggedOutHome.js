@@ -2468,7 +2468,7 @@
         W = (n('hBvt'), n('RqPI')),
         V = n('rxPX'),
         K = Object(V.a)().propsFromState(function () {
-          return { currentCountry: W.x }
+          return { currentCountry: W.y }
         }),
         Q = n('cnVF'),
         G = n('mrHL'),
@@ -4384,7 +4384,7 @@
           return {
             personalizationPreferences: r.selectPreferences,
             personalizationSettings: r.selectUserPreferences,
-            ssoInitTokens: c.v,
+            ssoInitTokens: c.w,
             userLanguage: c.o,
           }
         })

@@ -48,7 +48,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return n.e(223).then(n.bind(null, 'QPD4'))
+              return n.e(224).then(n.bind(null, 'QPD4'))
             },
             loaderKey: 'defaultScoreEventSummaryLoader',
             strategy: n('XBtf').a.Critical,
@@ -616,7 +616,7 @@
           c = void 0 !== i && i
         return r.e({
           loader: function () {
-            return n.e(231).then(n.bind(null, '+92Z'))
+            return n.e(232).then(n.bind(null, '+92Z'))
           },
           loaderKey: 'trendDefaultLoader',
           loaderOptions: { withThirdPartyCards: c, errorContext: t },

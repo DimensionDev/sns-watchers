@@ -11,7 +11,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(294).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(295).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -603,6 +603,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e3cfff7c', 'Snooze conversation'),
           a('a8ed0eca', 'Take conversation off snooze'),
           a('bdd91963', 'Unpin conversation'),
+          a('a30a206d', 'Got it!'),
+          a('ib4b1b85', 'Introducing pinned conversations'),
+          a('bd3ca2ee', function (e) {
+            return (
+              'Select the actions menu on any conversation to pin it to the top for easy access. You can pin up to ' +
+              e.count +
+              ' conversation' +
+              n(e.count, '', 's') +
+              ' at a time.'
+            )
+          }),
           a('dedfd265', 'Sent a voice message'),
           a('h7033cac', 'You sent a voice message'),
           a('j7d81019', 'You sent a video'),
@@ -1137,17 +1148,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Show ' + e.count + ' Tweet' + n(e.count, '', 's')
           }),
           a('afb4c24a', 'No items'),
-          a('aaf2c6e9', 'Thanks. Twitter will use this to make your timeline better.'),
-          a('ge8f3043', function (e) {
-            return 'Follow ' + e.topicName + ' Topic'
-          }),
+          a('aaf2c6e9', 'Thanks. Twitter will use this to make your timeline better.')
+        a('ge8f3043', function (e) {
+          return 'Follow ' + e.topicName + ' Topic'
+        }),
           a('aa576cbf', function (e) {
             return 'Unfollow ' + e.topicName + ' Topic'
           }),
           a('i77347d0', function (e) {
             return 'Dismiss ' + e.topicName + ' Topic'
-          })
-        a('c837fca9', 'Show more replies'),
+          }),
+          a('c837fca9', 'Show more replies'),
           a('d228a9a0', 'Show more'),
           a('cf433585', 'Introducing'),
           a('a603e958', 'Reply downvotes'),
@@ -1578,8 +1589,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ab66e1f2', 'Here’s how it works:'),
           a('b2792b8c', 'More Birdwatch contributors will receive a request to review and rate this note.'),
           a(
-            'd49cbe9f',
-            'If contributors’ ratings change the status of the note to other than currently rated helpful, it will no longer be displayed on the Tweet.',
+            'b74df918',
+            'If contributors’ ratings change the status of the note so that it’s no longer currently rated helpful, the note will not be displayed on the Tweet.',
           ),
           a('hfd2544f', 'Reviews are made by contributors, not Twitter.'),
           a('b9e1cf02', 'Request'),
@@ -1843,6 +1854,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Your theme is ' + e.title
           }),
           a('e97cf2bc', 'Not feeling it? No problem. It’s easy enough to change.'),
+          a('a841c4ea', 'Finish setting up!'),
+          a('fd36e4f7', 'You’re not yet done. Try these steps to get the most out of your Community.'),
+          a('b192b58b', 'Dismiss Checklist'),
+          a('gd30278f', 'Check out the community I created:'),
+          a('cbdddb09', 'Completed'),
+          a('h5890b1a', 'Uncompleted'),
+          a('b4a6fac9', 'Review your rules'),
+          a('a01e1a7c', 'Personalize your Community'),
+          a('j538604d', 'Tweet your Community'),
           a('h4fbfa57', 'Agree and join'),
           a('dc1b14a1', function (e) {
             return 'Review and agree to ' + e.communityName + ' Rules'
@@ -2176,7 +2196,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i6b3f59a', 'Account history'),
           a('da202f9a', 'Your advertiser list'),
           a('hc36dbba', 'Logged-in devices and apps'),
-          a('g1aced04', 'Apps, devices & information'),
           a('a8d0108d', 'Gender'),
           a('a03dacaa', 'Language'),
           a('d9138165', 'See places you’ve been'),
@@ -2210,8 +2229,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'j0783ebe',
             'Check out other places for helpful information to learn more about Twitter products and services.',
-          ),
-          a('c0398892', 'Release notes'),
+          )
+        a('c0398892', 'Release notes'),
           a(
             'a5208fad',
             'Manage aspects of your Twitter experience such as limiting color contrast and motion. These settings affect all the Twitter accounts on this browser.',
@@ -2227,8 +2246,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'ae41b002',
             'Limits the amount of in-app animations, including live engagement counts. Your system is currently signaling to reduce motion. If you would like to re-enable motion, first disable it there.',
           ),
-          a('e82b294e', 'Prompt me to add image descriptions')
-        a('ea284ab8', 'Get a reminder when you Tweet media without descriptions.'),
+          a('e82b294e', 'Prompt me to add image descriptions'),
+          a('ea284ab8', 'Get a reminder when you Tweet media without descriptions.'),
           a('g1888dc1', 'Never'),
           a('f724d1a9', 'Only on Wi-Fi'),
           a('cf6472c1', 'On cellular or Wi-Fi'),
@@ -2739,6 +2758,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b92190c1', 'Managing account connected'),
           a('fb03b399', 'Managing account disconnected'),
           a('bd51ddfa', 'We are unable to disconnect your managing account at this time. Please try again later.'),
+          a('e91c15f5', 'Disconnect your managing account?'),
+          a('df035b80', 'Your automated account will lose its label if you disconnect your managing account.'),
+          a('bd12cf34', 'Yes, disconnect'),
           a(
             'a45d71b8',
             'These are the social accounts you connected to your Twitter account to log in. You can disable access here.',
@@ -3316,6 +3338,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('efd23f39', function (e) {
             return e.num_advertisers + ' advertisers'
           }),
+          a('g1aced04', 'Apps, devices & information'),
           a('j4fa776e', 'Phones'),
           a('i7acdb35', 'Tablets'),
           a('c112dfc8', 'Desktop'),
@@ -3345,13 +3368,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j291883b', 'Personalization and data settings'),
           a('id414293', 'Off-Twitter activity'),
           a('b352177d', 'Personalization and data settings'),
-          a('jc02ae67', 'Connected apps'),
-          a('cc49f761', function (e) {
-            return e.count + ' logged in device' + n(e.count, '', 's')
-          }),
-          a('g6bc494b', function (e) {
-            return e.count + ' linked device' + n(e.count, '', 's')
-          }),
           a('b056d9dc', 'This is your account’s primary language setting.'),
           a('h68bc23c', 'These additional languages are used to personalize your experience.'),
           a(
@@ -3482,8 +3498,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'User ID: ' + e.userid
           }),
           a('a781b0c6', 'profile'),
-          a('j7f91baf', ' your personalization and data settings'),
-          a('d6eb9b9a', 'Twitter data'),
+          a('j7f91baf', ' your personalization and data settings')
+        a('d6eb9b9a', 'Twitter data'),
           a(
             'b708417b',
             'You can request a ZIP file with an archive of your account information, account history, apps and devices, account activity, interests, and Ads data. You’ll get an in-app notification when the archive of your data is ready to download.',
@@ -3506,24 +3522,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'a3f22d8d',
             'Select the kinds of notifications you get about your activities, interests, and recommendations.',
-          )
-        function r(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var a = t[o]
-            ;(a.enumerable = a.enumerable || !1),
-              (a.configurable = !0),
-              'value' in a && (a.writable = !0),
-              Object.defineProperty(e, a.key, a)
-          }
-        }
-        function i(e, t) {
-          return (i =
-            Object.setPrototypeOf ||
-            function (e, t) {
-              return (e.__proto__ = t), e
-            })(e, t)
-        }
-        a('i647fb03', 'Filters'),
+          ),
+          a('i647fb03', 'Filters'),
           a('ef1b5cbb', 'Choose the notifications you’d like to see — and those you don’t.'),
           a('bcd81cab', 'Preferences'),
           a('da867c58', 'Select your preferences by notification type.'),
@@ -3557,6 +3557,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'See information about when you logged into your account and the apps you connected to your account.',
           ),
           a('j748604a', 'Manage Google or Apple accounts connected to Twitter to log in.'),
+          a('jc02ae67', 'Connected apps'),
           a('dd823129', 'Sessions'),
           a('e5e8a899', 'Loading apps'),
           a('ge06310e', 'You don’t have any connected apps'),
@@ -4698,8 +4699,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f1c5faee', 'This exact phrase'),
           a('ad10780e', 'Example: happy hour · contains the exact phrase “happy hour”'),
           a('a555a3f3', 'Any of these words'),
-          a('ee8a2b6f', 'Example: cats dogs · contains either “cats” or “dogs” (or both)'),
-          a('f51fe348', 'None of these words'),
+          a('ee8a2b6f', 'Example: cats dogs · contains either “cats” or “dogs” (or both)')
+        function r(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var a = t[o]
+            ;(a.enumerable = a.enumerable || !1),
+              (a.configurable = !0),
+              'value' in a && (a.writable = !0),
+              Object.defineProperty(e, a.key, a)
+          }
+        }
+        function i(e, t) {
+          return (i =
+            Object.setPrototypeOf ||
+            function (e, t) {
+              return (e.__proto__ = t), e
+            })(e, t)
+        }
+        a('f51fe348', 'None of these words'),
           a('hb657ad3', 'Example: cats dogs · does not contain “cats” and does not contain “dogs”'),
           a('d10da5da', 'These hashtags'),
           a('f0b52b50', 'Example: #ThrowbackThursday · contains the hashtag #ThrowbackThursday'),
@@ -4711,8 +4728,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('daaf2c71', 'Example: @SFBART @Caltrain · mentions @SFBART or mentions @Caltrain'),
           a('b18366ba', 'Minimum replies'),
           a('a76c9844', 'Example: 280 · Tweets with at least 280 replies'),
-          a('ib3ddbd4', 'Minimum Likes')
-        a('dec3293c', 'Example: 280 · Tweets with at least 280 Likes'),
+          a('ib3ddbd4', 'Minimum Likes'),
+          a('dec3293c', 'Example: 280 · Tweets with at least 280 Likes'),
           a('i6e5440d', 'Minimum Retweets'),
           a('b6dc8434', 'Example: 280 · Tweets with at least 280 Retweets'),
           a('ge046208', 'Manage subscription'),
@@ -5907,6 +5924,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c8891d06', 'Tomorrow'),
           a('d6b930d3', 'Try again'),
           a('aafa48c2', 'Something went wrong.'),
+          a('g5662c95', function (e) {
+            return 'Level ' + e.conversationTreeDepth + ':'
+          }),
           a('a0af935b', 'Liked'),
           a('fbaa28ef', 'Reacted'),
           a('f9be84f0', 'Downvoted'),
@@ -6000,10 +6020,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('j3d49e93', function (e) {
             return e.timestamp + 'm'
-          }),
-          a('a394f904', function (e) {
-            return e.seconds + ' seconds'
-          }),
+          })
+        a('a394f904', function (e) {
+          return e.seconds + ' seconds'
+        }),
           a('f42c0c8f', 'End of chosen section, use arrow keys to adjust selection'),
           a('i667afe8', 'Start of chosen section, use arrow keys to adjust selection'),
           a('gfaaead7', 'Untitled'),

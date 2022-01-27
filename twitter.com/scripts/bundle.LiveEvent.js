@@ -787,9 +787,9 @@
             : null
         },
         J = n('m3Bd'),
-        Z = n.n(J),
-        Q = (n('tVqn'), n('3XMw')),
-        $ = n.n(Q),
+        Q = n.n(J),
+        Z = (n('tVqn'), n('3XMw')),
+        $ = n.n(Z),
         ee = n('I6Uj'),
         te = $.a.i8d6a27e,
         ne = $.a.hbae0a4e,
@@ -809,7 +809,7 @@
         },
         ce = function (e) {
           var t = e.id,
-            n = Z()(e, ['id']),
+            n = Q()(e, ['id']),
             r = Object(A.j)(t),
             i = ie(n)
           return b.createElement(ee.a, { scribeNamespace: re, shareText: i, url: r })
@@ -1643,8 +1643,8 @@
         J = function (e, t) {
           return q(e, t) ? U.a.LOADED : H.selectFetchStatus(e, Y(0, t))
         },
-        Z = Object(V.b)('t'),
-        Q = Object(W.a)()
+        Q = Object(V.b)('t'),
+        Z = Object(W.a)()
           .propsFromState(function () {
             return {
               broadcastId: Y,
@@ -1652,7 +1652,7 @@
               twitterBroadcaster: X,
               fetchStatus: J,
               promotedContent: K,
-              timecode: Z,
+              timecode: Q,
             }
           })
           .propsFromActions(function () {
@@ -2048,7 +2048,7 @@
             titleText: { marginRight: e.spaces.space4 },
           }
         })
-      t.default = Object(ye.c)({ page: 'broadcast' })(Q(Object(de.a)(Le)))
+      t.default = Object(ye.c)({ page: 'broadcast' })(Z(Object(de.a)(Le)))
     },
     ACNv: function (e, t, n) {
       'use strict'
@@ -2619,26 +2619,24 @@
         y = n('m3Bd'),
         g = n.n(y),
         _ = n('1YZw'),
-        O = n('CaKu')
-      n('Cm4o'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP')
-      function E(e) {
-        var t = new URL(e, 'https://twitter.com')
-        return t.searchParams.has('s') || t.searchParams.set('s', '20'), t.href
-      }
-      var I = n('SrIh'),
-        w = n('Irs7'),
-        P = n('uDfI'),
-        C = n('Ty5D'),
-        k = n('jwTb'),
-        S = n('SOvA'),
-        D = n('I/9y'),
-        x = {
+        O = n('CaKu'),
+        E = n('y+lG'),
+        I = n('SrIh'),
+        w = n('RqPI'),
+        P = n('Irs7'),
+        C = n('uDfI'),
+        k = n('Ty5D'),
+        S = n('yUQf'),
+        D = n('jwTb'),
+        x = n('SOvA'),
+        j = n('I/9y'),
+        R = {
           tweet: {
             isAvailable: function () {
               return !0
             },
             scribeAction: 'share_via_tweet',
-            Icon: k.a,
+            Icon: D.a,
             text: u.a.fcc684a9,
             testID: b,
           },
@@ -2647,7 +2645,7 @@
               return !0
             },
             scribeAction: 'share_via_dm',
-            Icon: S.a,
+            Icon: x.a,
             text: u.a.f61c4bbf,
           },
           copy: {
@@ -2655,7 +2653,7 @@
               return O.a.isAvailable()
             },
             scribeAction: 'copy_link',
-            Icon: D.a,
+            Icon: j.a,
             text: u.a.e05c00b4,
           },
           via: {
@@ -2667,7 +2665,7 @@
             text: u.a.if23a251,
           },
         }
-      function j(e, t) {
+      function A(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -2679,61 +2677,62 @@
         }
         return n
       }
-      function R(e) {
+      function T(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? j(Object(n), !0).forEach(function (t) {
+            ? A(Object(n), !0).forEach(function (t) {
                 l()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : j(Object(n)).forEach(function (t) {
+            : A(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      function A(e) {
-        var t = Object(w.b)()
+      function L(e) {
+        var t = Object(P.b)()
         return {
           getActionItem: (function (e, t) {
-            var n = Object(P.c)(),
-              i = Object(C.g)()
+            var n = Object(C.c)(),
+              i = Object(k.g)(),
+              a = Object(S.a)(w.v)
             return r.useMemo(
               function () {
                 return function (r) {
-                  var a = x[r.type],
-                    o = a.isAvailable,
-                    c = a.scribeAction,
-                    l = g()(a, ['isAvailable', 'scribeAction'])
-                  if (!o()) return null
-                  var s = R({}, l)
-                  function u() {
-                    var a = r.shareText || e.shareText,
-                      o = e.url,
-                      l = R(R({}, e.scribeNamespace), {}, { action: c }, r.scribeNamespace),
-                      s = { text: a, url: o },
-                      u = { analytics: t, dispatch: n, history: i, mergedScribeNamespace: l }
+                  var o = R[r.type],
+                    c = o.isAvailable,
+                    l = o.scribeAction,
+                    s = g()(o, ['isAvailable', 'scribeAction'])
+                  if (!c()) return null
+                  var u = T({}, s)
+                  function d() {
+                    var o = r.shareText || e.shareText,
+                      c = e.url,
+                      s = T(T({}, e.scribeNamespace), {}, { action: l }, r.scribeNamespace),
+                      u = { text: o, url: c },
+                      d = { analytics: t, dispatch: n, history: i, mergedScribeNamespace: s, sessionToken: a }
                     !(function (e, t, n) {
                       var r = function () {
                         return n.analytics.scribe(n.mergedScribeNamespace)
                       }
                       switch (e) {
                         case 'dm':
-                          return r(), void n.history.push(R(R({}, L(t)), {}, { pathname: '/messages/compose' }))
+                          return r(), void n.history.push(T(T({}, M(t)), {}, { pathname: '/messages/compose' }))
                         case 'copy':
                           return (
-                            O.a.setString(E(t.url)),
+                            O.a.setString(Object(E.a)(t.url, n.sessionToken)),
                             r(),
-                            void n.dispatch(Object(_.b)({ text: T.copyLinkSuccessMessage }))
+                            void n.dispatch(Object(_.b)({ text: B.copyLinkSuccessMessage }))
                           )
                         case 'tweet':
                           return (
                             r(),
                             void n.history.push(
-                              R(
-                                R({ pathname: '/compose/tweet' }, L(t)),
+                              T(
+                                T({ pathname: '/compose/tweet' }, M(t)),
                                 {},
                                 { state: { positionCursorAtBeginning: !0 } },
                               ),
@@ -2741,37 +2740,37 @@
                           )
                         case 'via':
                           return void window.navigator
-                            .share({ text: t.text, url: E(t.url) })
+                            .share({ text: t.text, url: Object(E.a)(t.url, n.sessionToken) })
                             .then(r)
                             .catch(function () {
-                              n.analytics.scribe(R(R({}, n.mergedScribeNamespace), {}, { action: 'share_error' }))
+                              n.analytics.scribe(T(T({}, n.mergedScribeNamespace), {}, { action: 'share_error' }))
                             })
                         default:
                           Object(I.a)('[ShareButton] Unexpected share type ['.concat(e, ']'))
                       }
-                    })(r.type, s, u)
+                    })(r.type, u, d)
                   }
-                  return r.label && (s.text = r.label), R(R({}, s), {}, { onClick: u })
+                  return r.label && (u.text = r.label), T(T({}, u), {}, { onClick: d })
                 }
               },
-              [t, n, i, e.scribeNamespace, e.shareText, e.url],
+              [t, n, i, a, e.scribeNamespace, e.shareText, e.url],
             )
           })(e, t),
           analytics: t,
         }
       }
-      var T = { copyLinkSuccessMessage: u.a.f88553c8, shareTextPrefixFormatter: u.a.gb5851d7 }
-      function L(e) {
+      var B = { copyLinkSuccessMessage: u.a.f88553c8, shareTextPrefixFormatter: u.a.gb5851d7 }
+      function M(e) {
         var t = e.url,
           n = e.text
-        return { query: { text: n ? T.shareTextPrefixFormatter({ prefix: n, url: t }) : t } }
+        return { query: { text: n ? B.shareTextPrefixFormatter({ prefix: n, url: t }) : t } }
       }
-      var B = n('T0aG'),
-        M = n.n(B),
-        N = n('mN6z')
-      var F = n('mjJ+'),
-        H = n('rHpw')
-      function U(e, t) {
+      var N = n('T0aG'),
+        F = n.n(N),
+        H = n('mN6z')
+      var U = n('mjJ+'),
+        V = n('rHpw')
+      function z(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -2783,39 +2782,39 @@
         }
         return n
       }
-      function V(e) {
+      function W(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? U(Object(n), !0).forEach(function (t) {
+            ? z(Object(n), !0).forEach(function (t) {
                 l()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : U(Object(n)).forEach(function (t) {
+            : z(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var z = { element: 'share' }
-      function W(e) {
+      var G = { element: 'share' }
+      function Y(e) {
         var t = (function (e) {
             var t = r.useRef({ previous: void 0 })
-            if ('object' !== M()(e)) return e
+            if ('object' !== F()(e)) return e
             function n() {
               return (t.current.previous = e), e
             }
             var i = t.current.previous
-            return i && (e === i || Object(N.a)(e, i)) ? i : n()
-          })(V(V({}, z), e.scribeNamespace)),
-          n = A(V(V({}, e), {}, { scribeNamespace: t })),
+            return i && (e === i || Object(H.a)(e, i)) ? i : n()
+          })(W(W({}, G), e.scribeNamespace)),
+          n = L(W(W({}, e), {}, { scribeNamespace: t })),
           i = n.analytics,
           a = n.getActionItem
-        var o = e.ButtonComponent || G
+        var o = e.ButtonComponent || q
         return r.createElement(o, {
           onPress: function () {
-            var e = V(V({}, t), {}, { action: 'share_menu_click' })
+            var e = W(W({}, t), {}, { action: 'share_menu_click' })
             i.scribe(e)
           },
           pullRight: e.pullRight,
@@ -2833,25 +2832,25 @@
                     var t = a({ type: e })
                     t && n.push(t)
                   }),
-              r.createElement(F.a, { isFixed: e.isFixed, items: n, onCloseRequested: t, shouldCloseOnClick: !0 })
+              r.createElement(U.a, { isFixed: e.isFixed, items: n, onCloseRequested: t, shouldCloseOnClick: !0 })
             )
           },
         })
       }
-      function G(e) {
-        return r.createElement(h, o()({}, e, { style: Y.button, testID: v }))
+      function q(e) {
+        return r.createElement(h, o()({}, e, { style: X.button, testID: v }))
       }
-      var Y = H.a.create(function (e) {
+      var X = V.a.create(function (e) {
         return { button: { marginRight: e.spaces.space4 } }
       })
-      function q(e) {
+      function K(e) {
         var t = e.copyLinkShareLabel,
           n = e.dmShareLabel,
           a = e.externalShareLabel,
           o = e.tweetShareLabel,
           c = g()(e, ['copyLinkShareLabel', 'dmShareLabel', 'externalShareLabel', 'tweetShareLabel'])
         return r.createElement(
-          W,
+          Y,
           c,
           r.createElement(i, { label: o, type: 'tweet' }),
           r.createElement(i, { label: n, type: 'dm' }),
@@ -2859,8 +2858,8 @@
           r.createElement(i, { label: a, type: 'via' }),
         )
       }
-      ;(q.Action = i), (q.Custom = W)
-      t.a = q
+      ;(K.Action = i), (K.Custom = Y)
+      t.a = K
     },
     IJsT: function (e, t, n) {
       'use strict'
@@ -3114,7 +3113,7 @@
         X = x.a.aaae5e7f,
         K = x.a.d96cf7cd,
         J = x.a.e7718461,
-        Z = (function (e) {
+        Q = (function (e) {
           u()(n, e)
           var t = U(n)
           function n() {
@@ -3226,9 +3225,9 @@
             n
           )
         })(b.Component)
-      v()(Z, 'contextType', A.a)
-      var Q = k(Z),
-        $ = Object(R.a)(Q),
+      v()(Q, 'contextType', A.a)
+      var Z = k(Q),
+        $ = Object(R.a)(Z),
         ee = n('2G3J')
       function te(e) {
         var t = (function () {
@@ -3568,9 +3567,9 @@
         X = n('FIs5'),
         K = n('rHpw'),
         J = w.a.e9f1fbcb,
-        Z = w.a.c9b302f8,
-        Q = function () {
-          return g.createElement(X.a, { header: J, message: Z })
+        Q = w.a.c9b302f8,
+        Z = function () {
+          return g.createElement(X.a, { header: J, message: Q })
         },
         $ = K.a.create(function (e) {
           return {
@@ -3603,7 +3602,7 @@
               { style: $.root },
               g.createElement(Y.a, {
                 module: r,
-                noItemsRenderer: Q,
+                noItemsRenderer: Z,
                 numColumns: 2,
                 renderer: function (e) {
                   var t = e.item
@@ -4102,7 +4101,7 @@
         Xe = n('jV+4'),
         Ke = n('9Xij'),
         Je = n('vCAy')
-      function Ze(e, t) {
+      function Qe(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -4114,16 +4113,16 @@
         }
         return n
       }
-      function Qe(e) {
+      function Ze(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Ze(Object(n), !0).forEach(function (t) {
+            ? Qe(Object(n), !0).forEach(function (t) {
                 y()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : Ze(Object(n)).forEach(function (t) {
+            : Qe(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
@@ -4237,8 +4236,8 @@
         })(g.Component),
         rt = K.a.create(function (e) {
           return {
-            selectedOverlay: Qe(
-              Qe({}, K.a.absoluteFillObject),
+            selectedOverlay: Ze(
+              Ze({}, K.a.absoluteFillObject),
               {},
               {
                 borderColor: e.colors.primary,
@@ -4606,8 +4605,8 @@
         )
       }
       Jt.metadata = { width: 24, height: 24 }
-      var Zt = Jt,
-        Qt = n('hOZg')
+      var Qt = Jt,
+        Zt = n('hOZg')
       function $t(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -4716,13 +4715,13 @@
                     { style: rn.dockingControls },
                     g.createElement(ft.a, {
                       accessibilityLabel: tn,
-                      icon: g.createElement(Zt, null),
+                      icon: g.createElement(Qt, null),
                       onPress: e,
                       type: 'brandText',
                     }),
                     g.createElement(ft.a, {
                       accessibilityLabel: en,
-                      icon: g.createElement(Qt.a, null),
+                      icon: g.createElement(Zt.a, null),
                       onPress: t,
                       type: 'brandText',
                     }),
@@ -5605,8 +5604,8 @@
         Xn = n('QIgh'),
         Kn = n('8UdT'),
         Jn = n('iu0J'),
-        Zn = n('IcAo'),
-        Qn = n('zgaL')
+        Qn = n('IcAo'),
+        Zn = n('zgaL')
       function $n(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
@@ -5755,7 +5754,7 @@
                   er({}, Object(Xn.a)({ withTweetActionsDisabled: n })),
                   {},
                   ((t = {}),
-                  y()(t, Kn.b.MomentAnnotation, Qn.a),
+                  y()(t, Kn.b.MomentAnnotation, Zn.a),
                   y()(t, Kn.b.EventSummary, Object(Jn.a)({ errorContext: 'LIVE_EVENT_TIMELINE' })),
                   t),
                 )
@@ -5766,7 +5765,7 @@
                     ? t.map(function (t) {
                         if (t.type === Kn.b.Message) {
                           var n = { content: { content: { inlinePrompt: { headerText: e } } } }
-                          return Object(Zn.a)({}, t, n)
+                          return Object(Qn.a)({}, t, n)
                         }
                         return t
                       })
@@ -6385,7 +6384,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return n.e(214).then(n.bind(null, 'tFiq'))
+              return n.e(215).then(n.bind(null, 'tFiq'))
             },
             loaderKey: 'momentAnnoationLoader',
             strategy: n('XBtf').a.Critical,
@@ -6446,10 +6445,10 @@
           return K
         }),
         n.d(t, 'l', function () {
-          return Z
+          return Q
         }),
         n.d(t, 'c', function () {
-          return Q
+          return Z
         })
       n('+KXO'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var r = n('KEM+'),
@@ -6682,7 +6681,7 @@
         },
         L = function (e, t) {
           switch (t) {
-            case Q.SHOP:
+            case Z.SHOP:
               return e.isTrue('responsive_web_live_commerce_enabled')
             default:
               return !0
@@ -6876,13 +6875,13 @@
         J = function (e) {
           return !!e && !!e.carouselItemInfo && e.carouselItemInfo.type !== w.GIF && e.carouselItemInfo.type !== w.SLATE
         },
-        Z = function (e) {
+        Q = function (e) {
           var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
             n = e + 1,
             r = t.slice(n).findIndex(J)
           return r > -1 ? r + n : r
         },
-        Q = Object.freeze({ SHOP: 'shop' })
+        Z = Object.freeze({ SHOP: 'shop' })
     },
   },
 ])

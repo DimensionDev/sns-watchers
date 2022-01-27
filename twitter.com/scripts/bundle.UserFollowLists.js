@@ -39,12 +39,12 @@
         _ = o.n(v),
         g = (o('1t7P'), o('jQ/y'), o('ho0z'), o('2G9S'), o('hBpG'), o('ERkP')),
         I = o('6rlp'),
-        E = o('zh9S'),
-        O = o('G6rE'),
+        O = o('zh9S'),
+        E = o('G6rE'),
         k = o('rxPX'),
         C = o('0KEI'),
         S = function (e, t) {
-          return O.e.select(e, t.userId)
+          return E.e.select(e, t.userId)
         },
         R = function (e, t) {
           return t.promotedContent
@@ -62,7 +62,7 @@
             return {
               createLocalApiErrorHandler: Object(C.createLocalApiErrorHandlerWithContextFactory)('USER_CELL_CONTAINER'),
               log: I.a,
-              scribeAction: E.c,
+              scribeAction: O.c,
             }
           }),
         A = o('I57f'),
@@ -545,18 +545,18 @@
         _ = (o('LW0h'), o('z84I'), o('8UdT')),
         g = o('WpDa'),
         I = o('ZNT5'),
-        E = o('G6rE'),
-        O = o('hqKg'),
+        O = o('G6rE'),
+        E = o('hqKg'),
         k = o('0KEI'),
         C = o('oEGd'),
         S = o('RqPI'),
         R = function (e, t) {
           return t.match.params.screenName
         },
-        F = Object(O.createSelector)(
+        F = Object(E.createSelector)(
           function (e, t) {
             var o = (function (e, t) {
-              return E.e.selectIdByScreenName(e, R(0, t))
+              return O.e.selectIdByScreenName(e, R(0, t))
             })(e, t)
             return o ? v.c(e, o) : void 0
           },
@@ -564,9 +564,9 @@
             return e
           },
         ),
-        A = Object(O.createSelector)(
+        A = Object(E.createSelector)(
           function (e, t) {
-            return E.e.selectFetchStatusByScreenName(e, R(0, t))
+            return O.e.selectFetchStatusByScreenName(e, R(0, t))
           },
           S.l,
           function (e, t) {
@@ -574,7 +574,7 @@
           },
           R,
           function (e, t) {
-            return E.e.selectByScreenName(e, R(0, t))
+            return O.e.selectByScreenName(e, R(0, t))
           },
           S.q,
           F,
@@ -591,7 +591,7 @@
           },
         ),
         P = {
-          cleanupFollowersList: function (e) {
+          cleanupOwnFollowersList: function (e) {
             return function (t, o) {
               var r = o()
               t(
@@ -600,7 +600,7 @@
                   .filter(function (e) {
                     if (!e.content || e.type !== _.b.User) return !1
                     var t = e.content.id,
-                      o = E.e.select(r, t)
+                      o = O.e.select(r, t)
                     return o && !o.followed_by
                   })
                   .map(function (t) {
@@ -610,7 +610,7 @@
             }
           },
           createLocalApiErrorHandler: Object(k.createLocalApiErrorHandlerWithContextFactory)('USER_PROFILE_FOLLOWERS'),
-          fetchOneUserByScreenNameIfNeeded: E.e.fetchOneByScreenNameIfNeeded,
+          fetchOneUserByScreenNameIfNeeded: O.e.fetchOneByScreenNameIfNeeded,
           fetchKnownFollowersIfNeeded: v.a,
         },
         L = Object(C.g)(A, P),
@@ -950,9 +950,9 @@
               {
                 key: '_handleCleanup',
                 value: function (e) {
-                  if ('followers' === e) {
+                  if ('followers' === e && this._isOwnProfile()) {
                     var t = this.props,
-                      o = t.cleanupFollowersList,
+                      o = t.cleanupOwnFollowersList,
                       r = t.user,
                       n = se(null == r ? void 0 : r.id_str, e)
                     n && o(n)

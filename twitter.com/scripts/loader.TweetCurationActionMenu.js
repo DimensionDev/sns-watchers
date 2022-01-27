@@ -20,8 +20,8 @@
         b = n('KEM+'),
         v = n.n(b),
         h = (n('2G9S'), n('KOtZ'), n('hBvt'), n('jQ3i'), n('x4t0'), n('ERkP')),
-        y = n('3XMw'),
-        w = n.n(y),
+        w = n('3XMw'),
+        y = n.n(w),
         _ = n('oQhu'),
         g = n('mjJ+'),
         O = n('eb3s')
@@ -46,7 +46,7 @@
           return p()(this, n)
         }
       }
-      var C = w.a.cfd2f35d,
+      var C = y.a.cfd2f35d,
         T = (function (e) {
           u()(n, e)
           var t = E(n)
@@ -196,8 +196,8 @@
         b = n('AuHH'),
         v = n.n(b),
         h = n('KEM+'),
-        y = n.n(h),
-        w = (n('yH/f'), n('2G9S'), n('jwue'), n('LW0h'), n('ERkP')),
+        w = n.n(h),
+        y = (n('yH/f'), n('2G9S'), n('jwue'), n('LW0h'), n('ERkP')),
         _ = n('d4kb'),
         g = function (e) {
           var t = e.scribeAction,
@@ -271,13 +271,13 @@
         X = n('0KEI'),
         J = n('RqPI'),
         q = function (e, t) {
-          return Object(R.y)(e, R.n)
+          return Object(R.z)(e, R.n)
         },
         Y = function (e, t) {
-          return Object(R.y)(e, R.m)
+          return Object(R.z)(e, R.m)
         },
         G = function (e) {
-          return Object(R.y)(e, R.d)
+          return Object(R.z)(e, R.d)
         },
         Q = function (e) {
           return function (t, n, o) {
@@ -291,7 +291,7 @@
         $ = Object(V.a)()
           .propsFromState(function () {
             return {
-              userCountry: J.x,
+              userCountry: J.y,
               userLanguage: J.o,
               shouldShowMuteEducationTip: q,
               shouldShowHideReplyTip: Y,
@@ -300,7 +300,7 @@
           })
           .propsFromActions(function () {
             return {
-              addFlag: R.v,
+              addFlag: R.w,
               addToast: U.b,
               block: W.e.block,
               changeConversationControls: K.a.changeConversationControls,
@@ -328,14 +328,14 @@
         ee = n('H7Rt'),
         te = n('v6aA'),
         ne = function (e) {
-          return Object(R.y)(e, R.d)
+          return Object(R.z)(e, R.d)
         },
         oe = Object(V.a)()
           .propsFromState(function () {
             return { shouldShowConversationControlsTip: ne }
           })
           .propsFromActions(function () {
-            return { addFlag: R.v }
+            return { addFlag: R.w }
           }),
         re = n('ddV6'),
         ie = n.n(re)
@@ -352,9 +352,9 @@
         de = oe(function (e) {
           var t = e.addFlag,
             n = e.shouldShowConversationControlsTip,
-            o = w.useRef(),
+            o = y.useRef(),
             r = (function (e) {
-              var t = w.useState(!1),
+              var t = y.useState(!1),
                 n = ie()(t, 2),
                 o = n[0],
                 r = n[1],
@@ -366,7 +366,7 @@
                       })
                     : null
               return (
-                w.useEffect(function () {
+                y.useEffect(function () {
                   if (null !== i)
                     return (
                       i.observe(e.current),
@@ -378,11 +378,11 @@
                 o
               )
             })(o),
-            i = w.useRef(!1),
-            a = w.useContext(te.a).featureSwitches.isTrue('conversation_controls_change_tooltip_enabled'),
+            i = y.useRef(!1),
+            a = y.useContext(te.a).featureSwitches.isTrue('conversation_controls_change_tooltip_enabled'),
             c = n && a
           return (
-            w.useEffect(
+            y.useEffect(
               function () {
                 r &&
                   ((i.current = !0),
@@ -392,15 +392,15 @@
               },
               [r, t],
             ),
-            w.useEffect(function () {
+            y.useEffect(function () {
               return function () {
                 i.current && t(R.d)
               }
             }, []),
-            w.createElement(
+            y.createElement(
               ae.a,
               { ref: o, style: ue.inlineCallout },
-              r && c ? w.createElement(ce.a, { text: se, textStyle: ue.textStyle, withRightArrow: !0 }) : null,
+              r && c ? y.createElement(ce.a, { text: se, textStyle: ue.textStyle, withRightArrow: !0 }) : null,
             )
           )
         }),
@@ -410,8 +410,8 @@
         be = E.a.dd211107,
         ve = E.a.c55d72d0,
         he = E.a.a1aa840e,
-        ye = E.a.c189f2dd,
-        we = function (e) {
+        we = E.a.c189f2dd,
+        ye = function (e) {
           var t = e.addToast,
             n = e.behavioralEventEntityToken,
             o = e.createLocalApiErrorHandler,
@@ -426,7 +426,7 @@
             onClick: function () {
               r(c.id_str).then(function () {
                 t({ text: he, behavioralEventEntityToken: n })
-              }, o({ defaultToast: { text: ye }, showToast: !0 })),
+              }, o({ defaultToast: { text: we }, showToast: !0 })),
                 a({ element: 'delete' }),
                 i && i(c.id_str)
             },
@@ -452,7 +452,7 @@
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
             ? Oe(Object(n), !0).forEach(function (t) {
-                y()(e, t, n[t])
+                w()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
@@ -471,10 +471,10 @@
             {},
             { accessibilityHidden: void 0 === e.accessibilityLabel, style: [_e.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          w.createElement(
+          y.createElement(
             'g',
             null,
-            w.createElement('path', {
+            y.createElement('path', {
               d: 'M23.804 11.5l-6.496-7.25c-.278-.31-.752-.334-1.06-.06-.308.277-.334.752-.058 1.06L22.238 12l-6.047 6.75c-.275.308-.25.782.06 1.06.142.127.32.19.5.19.204 0 .41-.084.558-.25l6.496-7.25c.252-.28.258-.713 0-1zm-23.606 0l6.496-7.25c.278-.31.752-.334 1.06-.06.308.277.334.752.058 1.06L1.764 12l6.047 6.75c.277.308.25.782-.057 1.06-.143.127-.322.19-.5.19-.206 0-.41-.084-.56-.25L.197 12.5c-.252-.28-.257-.713 0-1zm9.872 12c-.045 0-.09-.004-.135-.012-.407-.073-.68-.463-.605-.87l3.863-21.5c.074-.407.466-.674.87-.606.408.073.68.463.606.87l-3.864 21.5c-.065.363-.38.618-.737.618z',
             }),
           ),
@@ -515,7 +515,7 @@
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
             ? Ae(Object(n), !0).forEach(function (t) {
-                y()(e, t, n[t])
+                w()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
@@ -568,7 +568,7 @@
               })
             ) &&
             (r = He)
-          return w.createElement(E.a.I18NFormatMessage, { $i18n: 'f8ea2809', selection: r })
+          return y.createElement(E.a.I18NFormatMessage, { $i18n: 'f8ea2809', selection: r })
         },
         Be = n('feu+'),
         Fe = n('eb3s'),
@@ -608,7 +608,7 @@
                         n = e.onCancel,
                         o = e.onHideReplyImpression,
                         r = void 0 === o ? function () {} : o
-                      return w.createElement(Be.a, {
+                      return y.createElement(Be.a, {
                         actionLabel: Ke,
                         graphic: Ue.a,
                         headline: Ve,
@@ -627,7 +627,7 @@
               : {
                   render: function (e, t) {
                     var n = u.user.screen_name
-                    return w.createElement(Fe.a, {
+                    return y.createElement(Fe.a, {
                       cancelButtonLabel: Ye,
                       confirmButtonLabel: Qe,
                       confirmButtonType: 'destructiveFilled',
@@ -677,7 +677,7 @@
         bt = E.a.j9552760,
         vt = E.a.cfd2f35d,
         ht = E.a.d751694c,
-        yt = function (e) {
+        wt = function (e) {
           var t = e.addFlag,
             n = e.addToast,
             o = e.behavioralEventEntityToken,
@@ -725,7 +725,7 @@
               confirmation: c
                 ? {
                     render: function (e, t) {
-                      return w.createElement(Be.a, {
+                      return y.createElement(Be.a, {
                         actionLabel: mt,
                         graphic: at.a,
                         graphicDisplayMode: 'illustration',
@@ -754,7 +754,7 @@
             }
           return l.conversation_muted ? f : p
         },
-        wt = n('ShJ/'),
+        yt = n('ShJ/'),
         _t = 'block',
         gt = 'pin',
         Ot = 'unpin',
@@ -781,7 +781,7 @@
               }, o({ showToast: !0 })),
                 i({ element: 'pin' })
             },
-            Icon: wt.a,
+            Icon: yt.a,
           }
         },
         At = E.a.f5cdcc2b,
@@ -863,7 +863,7 @@
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
             ? Xt(Object(n), !0).forEach(function (t) {
-                y()(e, t, n[t])
+                w()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
@@ -882,13 +882,13 @@
             {},
             { accessibilityHidden: void 0 === e.accessibilityLabel, style: [_e.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          w.createElement(
+          y.createElement(
             'g',
             null,
-            w.createElement('path', {
+            y.createElement('path', {
               d: 'M18.64.94c-2.2 0-4.05 1.53-4.54 3.59H2.96c-1.15 0-2.08.94-2.08 2.08v14.34c0 1.15.93 2.08 2.08 2.08H17.3c1.15 0 2.08-.93 2.08-2.08V10.22c2.23-.35 3.94-2.28 3.94-4.6 0-2.58-2.1-4.68-4.68-4.68zm-.65 20.01c0 .39-.31.7-.69.7H2.96c-.38 0-.69-.31-.69-.7V6.62c0-.39.31-.7.69-.7h11.02c.14 2.22 1.83 4.02 4.01 4.32v10.71zm.65-12.16c-1.75 0-3.17-1.42-3.17-3.17s1.42-3.18 3.17-3.18 3.17 1.43 3.17 3.18-1.42 3.17-3.17 3.17z',
             }),
-            w.createElement('path', {
+            y.createElement('path', {
               d: 'M13.25 10.71H5.493c-.414 0-.75-.336-.75-.75s.336-.752.75-.752h7.754c.415 0 .752.337.752.75s-.34.752-.75.752zm1.47 3.793H5.493c-.414 0-.75-.336-.75-.75 0-.415.335-.752.75-.752h9.225c.413 0 .75.338.75.75 0 .418-.335.754-.75.754h.002zm-4.613 3.793H5.494c-.414 0-.75-.336-.75-.75 0-.416.335-.752.75-.752h4.613c.414 0 .75.336.75.75 0 .416-.336.752-.75.752zM20.72 5.62c0 .38-.31.69-.69.69h-.7V7c0 .38-.31.69-.69.69s-.69-.31-.69-.69v-.69h-.69c-.38 0-.69-.31-.69-.69s.31-.69.69-.69h.69v-.7c0-.38.31-.69.69-.69s.69.31.69.69v.7h.7c.38 0 .69.3.69.69z',
             }),
           ),
@@ -938,7 +938,7 @@
               }, o({ showToast: !0 })),
                 r({ element: 'unpin' })
             },
-            Icon: wt.a,
+            Icon: yt.a,
           }
         },
         cn = E.a.f9478972,
@@ -963,8 +963,8 @@
         bn = E.a.f1824804,
         vn = E.a.ff9bd692,
         hn = E.a.e3fd237d,
-        yn = E.a.d1e2161f,
-        wn = function (e) {
+        wn = E.a.d1e2161f,
+        yn = function (e) {
           var t = e.analytics,
             n = e.featureSwitches,
             o = e.history,
@@ -996,7 +996,7 @@
                 b,
                 v,
                 h = t.contextualScribeData,
-                y =
+                w =
                   ((null == u ||
                   null === (e = u.extended_entities) ||
                   void 0 === e ||
@@ -1004,7 +1004,7 @@
                   void 0 === r
                     ? void 0
                     : r.length) || 0) > 0,
-                w =
+                y =
                   h.items &&
                   h.items[0] &&
                   (null === (m = h.items[0].conversation_details) || void 0 === m ? void 0 : m.conversation_section)
@@ -1020,8 +1020,8 @@
               ) {
                 var _ = Object(nt.d)({
                   clientReferer: window.location.pathname,
-                  conversationSection: w,
-                  isMedia: y,
+                  conversationSection: y,
+                  isMedia: w,
                   isPromoted: void 0 !== a,
                   reportType: f,
                   reportedTweet: u,
@@ -1037,8 +1037,8 @@
                   pathname: ''.concat(p, '/').concat(u.id_str),
                   state: {
                     clientReferer: window.location.pathname,
-                    conversationSection: w,
-                    isMedia: y,
+                    conversationSection: y,
+                    isMedia: w,
                     promotedContent: a,
                     scribeNamespace: t.contextualScribeNamespace,
                   },
@@ -1066,7 +1066,7 @@
           return {
             Icon: fn.a,
             link: 'https://help.twitter.com/forms/netzwerkdurchsetzungsgesetz?tweet_id='.concat(e),
-            text: yn,
+            text: wn,
           }
         },
         On = n('Z6aJ'),
@@ -1138,7 +1138,7 @@
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
             ? In(Object(n), !0).forEach(function (t) {
-                y()(e, t, n[t])
+                w()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
@@ -1219,33 +1219,33 @@
             for (var o = arguments.length, i = new Array(o), c = 0; c < o; c++) i[c] = arguments[c]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              y()(u()(e), '_dividerIndices', []),
-              y()(u()(e), 'state', { showModerationBlockConfirmation: !1 }),
-              y()(u()(e), '_shouldDisable', un.b.bind(null, e.context.featureSwitches)),
-              y()(u()(e), '_birdwatchAction', S.bind(null, e.context.featureSwitches)),
-              y()(
+              w()(u()(e), '_dividerIndices', []),
+              w()(u()(e), 'state', { showModerationBlockConfirmation: !1 }),
+              w()(u()(e), '_shouldDisable', un.b.bind(null, e.context.featureSwitches)),
+              w()(u()(e), '_birdwatchAction', S.bind(null, e.context.featureSwitches)),
+              w()(
                 u()(e),
                 '_shouldRenderSectionDividers',
                 e.context.featureSwitches.isTrue('responsive_web_menu_section_divider_enabled'),
               ),
-              y()(
+              w()(
                 u()(e),
                 '_authorModeratedReplies',
                 e.context.featureSwitches.isTrue('author_moderated_replies_urt_container_enabled'),
               ),
-              y()(
+              w()(
                 u()(e),
                 '_birdwatchNoteWritingEnabled',
                 e.context.featureSwitches.isTrue('responsive_web_birdwatch_note_writing_enabled'),
               ),
-              y()(
+              w()(
                 u()(e),
                 '_convoControlsEnabled',
                 e.context.featureSwitches.isTrue('conversation_controls_change_enabled'),
               ),
-              y()(u()(e), '_c9sModerationEnabled', e.context.featureSwitches.isTrue('c9s_moderation_enabled')),
-              y()(u()(e), '_c9sRemoveMemberEnabled', e.context.featureSwitches.isTrue('c9s_remove_member_enabled')),
-              y()(u()(e), '_onMenuClick', function () {
+              w()(u()(e), '_c9sModerationEnabled', e.context.featureSwitches.isTrue('c9s_moderation_enabled')),
+              w()(u()(e), '_c9sRemoveMemberEnabled', e.context.featureSwitches.isTrue('c9s_remove_member_enabled')),
+              w()(u()(e), '_onMenuClick', function () {
                 var t = e.props,
                   n = t.addFlag,
                   o = t.onMenuClick,
@@ -1253,7 +1253,7 @@
                   i = t.withChangeConversationControlsTooltip
                 r && i && n(R.d), o && o()
               }),
-              y()(u()(e), '_handleOnChangeConversationControls', function (t) {
+              w()(u()(e), '_handleOnChangeConversationControls', function (t) {
                 var n,
                   o = e.props,
                   r = o.addToast,
@@ -1287,17 +1287,17 @@
                         })
                     }, l(B))
               }),
-              y()(u()(e), '_renderCurationActionMenu', function (t) {
+              w()(u()(e), '_renderCurationActionMenu', function (t) {
                 return function (n) {
                   var o = e._getActionItems(t)
-                  return w.createElement(pn.default, {
+                  return y.createElement(pn.default, {
                     actionItems: o,
                     dividerIndices: e._shouldRenderSectionDividers ? e._dividerIndices : void 0,
                     onClose: n,
                   })
                 }
               }),
-              y()(u()(e), '_getMuteOrUnmuteAction', function () {
+              w()(u()(e), '_getMuteOrUnmuteAction', function () {
                 var t = e.props,
                   n = t.addToast,
                   o = t.behavioralEventEntityToken,
@@ -1325,7 +1325,7 @@
                   Sn(Sn({}, d), {}, { mute: a, unmute: s, user: u, dismissUserFromConversation: i }, p),
                 )
               }),
-              y()(u()(e), '_getActionItems', function (t) {
+              w()(u()(e), '_getActionItems', function (t) {
                 var n = e.props,
                   o = n.deleteTweet,
                   i = n.follow,
@@ -1341,8 +1341,8 @@
                   b = p.analytics,
                   v = p.behavioralEventEntityToken,
                   h = p.createLocalApiErrorHandler,
-                  y = p.feedbackItems,
-                  w = p.history,
+                  w = p.feedbackItems,
+                  y = p.history,
                   _ = p.isPinned,
                   O = p.onDeleteTweet,
                   E = p.onTweetDismiss,
@@ -1413,7 +1413,7 @@
                           : Me(Sn(Sn({}, J), {}, { follow: i, promotedContent: C, user: N }))),
                         (V.muteOrUnmute = e._getMuteOrUnmuteAction())),
                       M &&
-                        (V.muteOrUnmuteConversation = yt(
+                        (V.muteOrUnmuteConversation = wt(
                           Sn(
                             Sn({}, J),
                             {},
@@ -1445,7 +1445,7 @@
                       unblockAction: e._handleUnblock,
                     }
                     if (((V.blockOrUnblock = Object(St.g)(G)), N.smart_blocking)) {
-                      var Q = { history: w, user: N, removeAutoblockAction: e._handleUnblock }
+                      var Q = { history: y, user: N, removeAutoblockAction: e._handleUnblock }
                       V.removeAutoblock = Mt(Q)
                     }
                   } else
@@ -1454,9 +1454,9 @@
                       : e._shouldDisable(x, un.a.PinToProfile) ||
                         (V.pinOrUnpin = Pt(Sn(Sn({}, J), {}, { pin: l, tweetId: x.id_str }))),
                       e._shouldIncludeTweetAppealOption() &&
-                        (V.appealTweetWarning = wn({
+                        (V.appealTweetWarning = yn({
                           analytics: b,
-                          history: w,
+                          history: y,
                           isAppealTweetWarning: !0,
                           promotedContent: C,
                           scribeAction: X,
@@ -1467,7 +1467,7 @@
                         })),
                       M &&
                         !e._shouldDisable(x, un.a.MuteConversation) &&
-                        (V.muteOrUnmuteConversation = yt(
+                        (V.muteOrUnmuteConversation = wt(
                           Sn(
                             Sn({}, J),
                             {},
@@ -1477,13 +1477,13 @@
                       S &&
                         e._convoControlsEnabled &&
                         (V.changeConversationControls = z({ tweet: x, onChangeConversationControls: t })),
-                      (V.delete = we(Sn(Sn({}, J), {}, { deleteTweet: o, onDeleteTweet: O, tweet: x })))
+                      (V.delete = ye(Sn(Sn({}, J), {}, { deleteTweet: o, onDeleteTweet: O, tweet: x })))
                 var $ = U && U !== N.id_str
                 return (
                   $
-                    ? (V.report = wn({
+                    ? (V.report = yn({
                         analytics: b,
-                        history: w,
+                        history: y,
                         promotedContent: C,
                         scribeAction: X,
                         tweet: x,
@@ -1497,8 +1497,8 @@
                       ((V.report = _n({ promotedContent: C, scribeAction: X })), (V.reportNetzDG = gn(x.id_str))),
                   Ln.forEach(function (e) {
                     if ('feedbackOptions' === e) {
-                      var t = y
-                        ? y.filter(function (e) {
+                      var t = w
+                        ? w.filter(function (e) {
                             return !e.excludeFromActionMenu
                           })
                         : []
@@ -1511,7 +1511,7 @@
                   K
                 )
               }),
-              y()(u()(e), '_handleBlock', function () {
+              w()(u()(e), '_handleBlock', function () {
                 var t = e.props,
                   n = t.addToast,
                   o = t.behavioralEventEntityToken,
@@ -1530,7 +1530,7 @@
                 }, i(D.a)),
                   e._scribeAction({ element: 'block' })
               }),
-              y()(u()(e), '_handleUnblock', function () {
+              w()(u()(e), '_handleUnblock', function () {
                 var t = e.props,
                   n = t.createLocalApiErrorHandler,
                   o = t.promotedContent,
@@ -1538,7 +1538,7 @@
                 ;(0, t.unblock)(r.user.id_str, { promotedContent: o }).catch(n(Ut.a)),
                   e._scribeAction({ element: 'unblock' })
               }),
-              y()(u()(e), '_scribeAction', function (t) {
+              w()(u()(e), '_scribeAction', function (t) {
                 var n = t.action,
                   o = t.additionalData,
                   r = t.element,
@@ -1565,11 +1565,11 @@
                     r = n.tweet,
                     i = n.withChangeConversationControlsTooltip,
                     a = (null === (e = r.conversation_control) || void 0 === e ? void 0 : e.policy) || ee.a.all
-                  return w.createElement(
+                  return y.createElement(
                     ae.a,
                     { style: Fn.overflowMenu },
-                    i ? w.createElement(de, null) : null,
-                    w.createElement(
+                    i ? y.createElement(de, null) : null,
+                    y.createElement(
                       pe.a,
                       {
                         controlled: !0,
@@ -1579,7 +1579,7 @@
                       },
                       function (e) {
                         var n = e.openPopover
-                        return w.createElement(En.a, {
+                        return y.createElement(En.a, {
                           isDisabled: o,
                           onClick: t._onMenuClick,
                           renderActionMenu: t._renderCurationActionMenu(n),
@@ -1625,8 +1625,8 @@
             ]),
             n
           )
-        })(w.Component)
-      y()(Bn, 'defaultProps', { withRemoveFromBookmarks: !1 }), y()(Bn, 'contextType', te.a)
+        })(y.Component)
+      w()(Bn, 'defaultProps', { withRemoveFromBookmarks: !1 }), w()(Bn, 'contextType', te.a)
       t.default = Object(sn.a)($(Bn))
       var Fn = le.a.create(function (e) {
         return { overflowMenu: { display: 'flex', flexDirection: 'row', alignItems: 'center' } }
@@ -1953,9 +1953,9 @@
         b = n('CKsB'),
         v = n('/yvb'),
         h = n('rHpw'),
-        y = n('Zg3A'),
-        w = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('KEM+')),
-        _ = n.n(w),
+        w = n('Zg3A'),
+        y = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('KEM+')),
+        _ = n.n(y),
         g = n('Lsrn'),
         O = n('k/Ka')
       function E(e, t) {
@@ -2085,7 +2085,7 @@
                 f.a,
                 null,
                 s.createElement(b.a, {
-                  Icon: y.a,
+                  Icon: w.a,
                   actionText: I,
                   isSelected: u.a.all === a,
                   onClick: c(u.a.all),
