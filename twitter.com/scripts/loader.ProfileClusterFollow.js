@@ -1,11 +1,11 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [174],
+  [176],
   {
     Gffe: function (e, t, r) {
       'use strict'
       r.r(t),
         r.d(t, 'ProfileClusterFollowContainer', function () {
-          return Q
+          return V
         })
       r('OZaJ'), r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
       var n = r('VrFO'),
@@ -23,49 +23,50 @@
         y = r('KEM+'),
         h = r.n(y),
         v = (r('2G9S'), r('z84I'), r('M+/F'), r('ERkP')),
-        O = r('Xs4Y'),
-        b = r('kGix'),
-        E = r('Rp9C'),
-        w = r('lP98'),
-        I = r('rxPX'),
-        R = r('0KEI'),
-        g = 'profile-cluster-follow',
-        _ = function (e, t) {
+        O = r.n(v),
+        b = r('Xs4Y'),
+        E = r('kGix'),
+        w = r('Rp9C'),
+        I = r('lP98'),
+        R = r('rxPX'),
+        g = r('0KEI'),
+        _ = 'profile-cluster-follow',
+        L = function (e, t) {
           return t.userId
         },
-        L = function (e, t) {
-          var r = _(0, t)
-          return w.c(e, { displayLocation: g, similarToUserId: r })
-        },
         P = function (e, t) {
-          var r = _(0, t)
-          return w.b(e, { displayLocation: g, similarToUserId: r })
+          var r = L(0, t)
+          return I.c(e, { displayLocation: _, similarToUserId: r })
         },
-        j = Object(I.a)()
+        j = function (e, t) {
+          var r = L(0, t)
+          return I.b(e, { displayLocation: _, similarToUserId: r })
+        },
+        C = Object(R.a)()
           .propsFromState(function () {
-            return { fetchStatus: P, recommendations: L }
+            return { fetchStatus: j, recommendations: P }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(R.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(g.createLocalApiErrorHandlerWithContextFactory)(
                 'WHO_TO_FOLLOW_CONTAINER',
               ),
-              fetchRecommendationsIfNeeded: w.a,
+              fetchRecommendationsIfNeeded: I.a,
             }
           })
           .withAnalytics(),
-        C = r('3XMw'),
-        T = r.n(C),
-        U = r('hOZg'),
-        S = r('Re5t'),
-        F = r('hqDb'),
-        D = r('MWbm'),
-        A = r('/yvb'),
-        k = r('zfvc'),
-        x = r('0yYu'),
-        H = r('6vad'),
-        M = r('rHpw')
-      function N(e) {
+        T = r('3XMw'),
+        U = r.n(T),
+        S = r('hOZg'),
+        F = r('Re5t'),
+        D = r('hqDb'),
+        A = r('MWbm'),
+        k = r('/yvb'),
+        x = r('zfvc'),
+        H = r('0yYu'),
+        M = r('6vad'),
+        N = r('rHpw')
+      function B(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -86,12 +87,12 @@
           return p()(this, r)
         }
       }
-      var B = T.a.ba5a88e3,
-        K = T.a.a526aa66,
-        G = v.createElement(U.a, null),
-        W = (function (e) {
+      var K = U.a.ba5a88e3,
+        G = U.a.a526aa66,
+        W = O.a.createElement(S.a, null),
+        X = (function (e) {
           l()(r, e)
-          var t = N(r)
+          var t = B(r)
           function r() {
             var e
             o()(this, r)
@@ -102,8 +103,8 @@
                 e.props.onRemoveClusterFollow()
               }),
               h()(s()(e), '_renderCloseButton', function () {
-                return v.createElement(A.a, {
-                  icon: G,
+                return O.a.createElement(k.a, {
+                  icon: W,
                   onPress: e._handleRemoveClusterFollow,
                   size: 'xSmall',
                   type: 'brandText',
@@ -118,20 +119,20 @@
                 key: 'render',
                 value: function () {
                   var e = this.props.userIds
-                  return v.createElement(
-                    k.b,
+                  return O.a.createElement(
+                    x.b,
                     { animateMount: !0, duration: 'longer', show: !0, type: 'slide' },
-                    v.createElement(
-                      D.a,
-                      { accessibilityLabel: K, accessibilityRole: 'complementary', style: X.root },
-                      v.createElement(x.a, null),
-                      v.createElement(H.b, { rightControl: this._renderCloseButton(), text: B }),
-                      v.createElement(F.a, {
-                        displayMode: S.a.UserCompact,
+                    O.a.createElement(
+                      A.a,
+                      { accessibilityLabel: G, accessibilityRole: 'complementary', style: J.root },
+                      O.a.createElement(H.a, null),
+                      O.a.createElement(M.b, { rightControl: this._renderCloseButton(), text: K }),
+                      O.a.createElement(D.a, {
+                        displayMode: F.a.UserCompact,
                         userIds: e.slice(0, 3),
                         withItemBorder: !0,
                       }),
-                      v.createElement(x.a, null),
+                      O.a.createElement(H.a, null),
                     ),
                   )
                 },
@@ -139,11 +140,11 @@
             ]),
             r
           )
-        })(v.Component),
-        X = M.a.create(function (e) {
+        })(O.a.Component),
+        J = N.a.create(function (e) {
           return { root: { marginTop: e.spaces.space12 } }
         })
-      function J(e, t) {
+      function Y(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -155,22 +156,22 @@
         }
         return r
       }
-      function Y(e) {
+      function z(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? J(Object(r), !0).forEach(function (t) {
+            ? Y(Object(r), !0).forEach(function (t) {
                 h()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : J(Object(r)).forEach(function (t) {
+            : Y(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      function z(e) {
+      function Z(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -191,11 +192,11 @@
           return p()(this, r)
         }
       }
-      var Z = { component: 'suggest_profile_cluster_follow', element: 'user', action: 'results' },
-        q = { component: 'suggest_profile_cluster_follow', element: 'close_button', action: 'click' },
-        Q = (function (e) {
+      var q = { component: 'suggest_profile_cluster_follow', element: 'user', action: 'results' },
+        Q = { component: 'suggest_profile_cluster_follow', element: 'close_button', action: 'click' },
+        V = (function (e) {
           l()(r, e)
-          var t = z(r)
+          var t = Z(r)
           function r() {
             var e
             o()(this, r)
@@ -207,15 +208,15 @@
                   n =
                     t &&
                     t.slice(0, 3).map(function (e) {
-                      return Y(Y({}, E.a.forUser(e.user)), {}, { suggestion_details: { source_data: e.token } })
+                      return z(z({}, w.a.forUser(e.user)), {}, { suggestion_details: { source_data: e.token } })
                     })
-                r.scribe(Y(Y({}, Z), {}, { data: { items: n } }))
+                r.scribe(z(z({}, q), {}, { data: { items: n } }))
               }),
               h()(s()(e), '_handleCloseButtonImpression', function () {
                 var t = e.props,
                   r = t.analytics,
                   n = t.onRemoveClusterFollow
-                r.scribe(q), n()
+                r.scribe(Q), n()
               }),
               e
             )
@@ -246,7 +247,7 @@
                         return e.user
                       })
                   return this._hasLoadedUsers()
-                    ? v.createElement(W, { onRemoveClusterFollow: this._handleCloseButtonImpression, userIds: t })
+                    ? O.a.createElement(X, { onRemoveClusterFollow: this._handleCloseButtonImpression, userIds: t })
                     : null
                 },
               },
@@ -256,7 +257,7 @@
                   var t = e.createLocalApiErrorHandler,
                     r = e.fetchRecommendationsIfNeeded,
                     n = e.userId
-                  r({ limit: 3, displayLocation: g, similarToUserId: n }).catch(t(O.a))
+                  r({ limit: 3, displayLocation: _, similarToUserId: n }).catch(t(b.a))
                 },
               },
               {
@@ -265,15 +266,15 @@
                   var e = this.props,
                     t = e.fetchStatus,
                     r = e.recommendations
-                  return t === b.a.LOADED && r.length > 0
+                  return t === E.a.LOADED && r.length > 0
                 },
               },
             ]),
             r
           )
-        })(v.PureComponent),
-        V = j(Q)
-      t.default = V
+        })(O.a.PureComponent),
+        $ = C(V)
+      t.default = $
     },
     Xs4Y: function (e, t, r) {
       'use strict'

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [229],
+  [233],
   {
     CdHO: function (e, t, r) {
       'use strict'
@@ -9,15 +9,16 @@
         a = r.n(n),
         c = r('ezF+'),
         o = r('ERkP'),
-        i = r('VPAj'),
-        s = r('RoyM'),
-        l = r('caTy'),
-        u = r('zh9S'),
-        p = r('Rp9C'),
-        f = r('lzTJ'),
-        d = r('rHpw'),
-        m = r('iSF/')
-      function b(e, t) {
+        i = r.n(o),
+        s = r('VPAj'),
+        l = r('RoyM'),
+        u = r('caTy'),
+        p = r('zh9S'),
+        f = r('Rp9C'),
+        d = r('lzTJ'),
+        m = r('rHpw'),
+        b = r('iSF/')
+      function y(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -29,48 +30,48 @@
         }
         return r
       }
-      function y(e) {
+      function g(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? b(Object(r), !0).forEach(function (t) {
+            ? y(Object(r), !0).forEach(function (t) {
                 a()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : b(Object(r)).forEach(function (t) {
+            : y(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var g = Object(i.a)({ scribe: u.c }),
-        v = function (e) {
+      var v = Object(s.a)({ scribe: p.c }),
+        h = function (e) {
           var t = e.itemMetadata.clientEventInfo,
-            r = p.a.getAllSurfaceDetails(t)
+            r = f.a.getAllSurfaceDetails(t)
           return r ? { items: [r] } : void 0
         },
-        h = function (e) {
+        O = function (e) {
           var t = e.entry,
             r = e.scribe,
             n = e.scribeNamespace
           return function () {
-            var e = v(t)
-            r(y(y({}, n), {}, { element: 'tile', action: 'click' }), e)
+            var e = h(t)
+            r(g(g({}, n), {}, { element: 'tile', action: 'click' }), e)
           }
         },
-        O = function (e) {
+        w = function (e) {
           var t = null == e ? void 0 : e.text
           return t
-            ? { backgroundColor: Object(f.a)((null == e ? void 0 : e.backgroundColorName) || '') || void 0, text: t }
+            ? { backgroundColor: Object(d.a)((null == e ? void 0 : e.backgroundColorName) || '') || void 0, text: t }
             : void 0
         },
-        w = d.a.create(function (e) {
+        S = m.a.create(function (e) {
           return { containerStyle: { width: 'calc('.concat(e.spaces.space36, '*5)') } }
         }),
-        S = c.g({
-          bindActions: g,
-          component: m.a,
+        C = c.g({
+          bindActions: v,
+          component: b.a,
           createProps: function (e) {
             var t = e.actions.scribe,
               r = e.entry,
@@ -78,33 +79,33 @@
               a = e.scribeNamespace
             if (!(r && r.content && r.content.content && r.content.content.standard)) return null
             var c = r.content,
-              i = c.content,
-              u = c.image,
+              o = c.content,
+              s = c.image,
               p = c.url,
-              f = i.standard,
+              f = o.standard,
               d = f.badge,
               m = f.title
             return {
               accessibilityLabel: m,
-              badge: O(d),
-              containerStyle: w.containerStyle,
+              badge: w(d),
+              containerStyle: S.containerStyle,
               description: m,
-              image: u,
-              link: p ? Object(l.b)(p) : '',
-              onClick: h({ scribeNamespace: a, scribe: t, entry: r }),
-              rightControl: o.createElement(s.a, { feedbackItems: n }),
+              image: s,
+              link: p ? Object(u.b)(p) : '',
+              onClick: O({ scribeNamespace: a, scribe: t, entry: r }),
+              rightControl: i.a.createElement(l.a, { feedbackItems: n }),
             }
           },
-          shouldDisplayBorder: Object(i.a)(!1),
+          shouldDisplayBorder: Object(s.a)(!1),
           onImpression: function (e) {
             var t = e.actions.scribe,
               r = e.entry,
               n = e.scribeNamespace,
-              a = v(r)
-            t(y(y({}, n), {}, { element: 'tile', action: 'impression' }), a)
+              a = h(r)
+            t(g(g({}, n), {}, { element: 'tile', action: 'impression' }), a)
           },
         })
-      t.default = S
+      t.default = C
     },
     FYbo: function (e, t, r) {
       'use strict'
@@ -261,34 +262,35 @@
       'use strict'
       r('hBvt')
       var n = r('ERkP'),
-        a = r('cm6r'),
-        c = r('rHpw'),
-        o = r('MWbm'),
-        i = function (e) {
+        a = r.n(n),
+        c = r('cm6r'),
+        o = r('rHpw'),
+        i = r('MWbm'),
+        s = function (e) {
           var t = e.accessibilityLabel,
             r = e.containerStyle,
-            c = e.isCompact,
-            i = e.link,
-            l = e.lower,
+            n = e.isCompact,
+            o = e.link,
+            s = e.lower,
             u = e.onClick,
             p = e.stackLayoutLowerStyle,
             f = e.stackLayoutUpperStyle,
             d = e.upper,
             m = e.withInteractiveStyling,
-            b = n.createElement(
-              n.Fragment,
+            b = a.a.createElement(
+              a.a.Fragment,
               null,
-              n.createElement(o.a, { style: [s.defaultUpperContainerStyle, f, c && { height: 'auto' }] }, d),
-              l ? n.createElement(o.a, { style: [s.defaultLowerContainerStyle, p] }, l) : null,
+              a.a.createElement(i.a, { style: [l.defaultUpperContainerStyle, f, n && { height: 'auto' }] }, d),
+              s ? a.a.createElement(i.a, { style: [l.defaultLowerContainerStyle, p] }, s) : null,
             )
-          return n.createElement(
-            a.a,
-            { accessibilityLabel: t, interactive: m, link: i, onClick: u, style: [s.root, r] },
+          return a.a.createElement(
+            c.a,
+            { accessibilityLabel: t, interactive: m, link: o, onClick: u, style: [l.root, r] },
             b,
           )
         }
-      i.defaultProps = { withInteractiveStyling: !1 }
-      var s = c.a.create(function (e) {
+      s.defaultProps = { withInteractiveStyling: !1 }
+      var l = o.a.create(function (e) {
         return {
           root: { padding: e.spaces.space12, borderRadius: e.borderRadii.large },
           defaultLowerContainerStyle: { marginTop: e.spaces.space12, justifyContent: 'flex-end' },
@@ -299,12 +301,12 @@
           },
         }
       })
-      t.a = i
+      t.a = s
     },
     Nxr7: function (e, t, r) {
       'use strict'
       r.d(t, 'a', function () {
-        return M
+        return z
       })
       r('OZaJ')
       var n = r('VrFO'),
@@ -322,18 +324,19 @@
         b = r('KEM+'),
         y = r.n(b),
         g = (r('2G9S'), r('Blm6'), r('hBpG'), r('ERkP')),
-        v = r('t62R'),
-        h = 864e5,
-        O = function (e) {
+        v = r.n(g),
+        h = r('t62R'),
+        O = 864e5,
+        w = function (e) {
           var t = new Date().setHours(0, 0, 0, 0),
-            r = t + h
+            r = t + O
           return e >= t && e < r ? 0 : e >= r && e < t + 1728e5 ? 1 : -1
         },
-        w = r('3XMw'),
-        S = r.n(w),
-        C = r('pjBI'),
-        E = r('gmfB')
-      function j(e) {
+        S = r('3XMw'),
+        C = r.n(S),
+        E = r('pjBI'),
+        j = r('gmfB')
+      function P(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -354,19 +357,19 @@
           return f()(this, r)
         }
       }
-      var P = S.a.ccaa970e,
-        k = S.a.d725a288,
-        R = S.a.db355331,
-        I = S.a.a8428d5e,
-        L = S.a.a7aad8b9,
-        _ = S.a.e431f1aa,
-        D = S.a.a7391707,
-        T = S.a.d2dbfa91,
-        x = S.a.cd734f65,
-        N = S.a.c8891d06,
-        M = (function (e) {
+      var k = C.a.ccaa970e,
+        R = C.a.d725a288,
+        I = C.a.db355331,
+        L = C.a.a8428d5e,
+        _ = C.a.a7aad8b9,
+        D = C.a.e431f1aa,
+        T = C.a.a7391707,
+        x = C.a.d2dbfa91,
+        N = C.a.cd734f65,
+        M = C.a.c8891d06,
+        z = (function (e) {
           u()(r, e)
-          var t = j(r)
+          var t = P(r)
           function r() {
             var e
             a()(this, r)
@@ -376,42 +379,42 @@
               y()(s()(e), '_renderCategory', function () {
                 var t = e.props.category
                 return t
-                  ? g.createElement(v.b, { align: 'left', numberOfLines: 1, size: 'subtext2', weight: 'bold' }, t)
+                  ? v.a.createElement(h.b, { align: 'left', numberOfLines: 1, size: 'subtext2', weight: 'bold' }, t)
                   : null
               }),
               y()(s()(e), '_renderGameScheduledDateTime', function () {
                 var t = e.props.startTimeMillis
                 if (t) {
                   var r = new Date(parseInt(t, 10)),
-                    n = O(r)
+                    n = w(r)
                   return -1 === n ? e._renderDateTime(r) : e._renderTodayTomorrow(n, r)
                 }
                 return null
               }),
               y()(s()(e), '_renderTodayTomorrow', function (e, t) {
-                var r = k(t)
-                return g.createElement(
-                  C.a,
+                var r = R(t)
+                return v.a.createElement(
+                  E.a,
                   null,
-                  g.createElement(v.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }, 0 === e ? x : N),
-                  g.createElement(v.b, { color: 'gray700', size: 'subtext2' }, r),
+                  v.a.createElement(h.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }, 0 === e ? N : M),
+                  v.a.createElement(h.b, { color: 'gray700', size: 'subtext2' }, r),
                 )
               }),
               y()(s()(e), '_renderDateTime', function (e) {
-                var t = k(e),
-                  r = P(e)
-                return g.createElement(
-                  C.a,
+                var t = R(e),
+                  r = k(e)
+                return v.a.createElement(
+                  E.a,
                   null,
-                  g.createElement(v.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }, r),
-                  g.createElement(v.b, { color: 'gray700', size: 'subtext2' }, t),
+                  v.a.createElement(h.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }, r),
+                  v.a.createElement(h.b, { color: 'gray700', size: 'subtext2' }, t),
                 )
               }),
               y()(s()(e), '_renderGameStateValue', function (t, r) {
                 var n = e.props.gameClockPeriod,
                   a = e._getWinnerName(),
-                  c = t && a ? R({ team: a }) : r && n ? n : void 0
-                return c ? g.createElement(v.b, { color: 'gray700', numberOfLines: 1, size: 'subtext2' }, c) : null
+                  c = t && a ? I({ team: a }) : r && n ? n : void 0
+                return c ? v.a.createElement(h.b, { color: 'gray700', numberOfLines: 1, size: 'subtext2' }, c) : null
               }),
               y()(s()(e), '_getWinnerName', function () {
                 var t = e.props,
@@ -435,32 +438,32 @@
                   var e = this.props,
                     t = e.gameState,
                     r = e.withCategory,
-                    n = t === E.a.Scheduled,
-                    a = t === E.a.InProgress,
-                    c = t === E.a.Completed
-                  return g.createElement(
-                    g.Fragment,
+                    n = t === j.a.Scheduled,
+                    a = t === j.a.InProgress,
+                    c = t === j.a.Completed
+                  return v.a.createElement(
+                    v.a.Fragment,
                     null,
                     n
                       ? this._renderGameScheduledDateTime()
-                      : g.createElement(
-                          C.a,
+                      : v.a.createElement(
+                          E.a,
                           null,
-                          g.createElement(
-                            v.b,
+                          v.a.createElement(
+                            h.b,
                             { color: a ? 'magenta500' : 'gray700', numberOfLines: 1, size: 'subtext2', weight: 'bold' },
                             (function (e) {
                               switch (e) {
-                                case E.a.Scheduled:
-                                  return I
-                                case E.a.InProgress:
+                                case j.a.Scheduled:
                                   return L
-                                case E.a.Completed:
+                                case j.a.InProgress:
                                   return _
-                                case E.a.Postponed:
+                                case j.a.Completed:
                                   return D
-                                case E.a.Cancelled:
+                                case j.a.Postponed:
                                   return T
+                                case j.a.Cancelled:
+                                  return x
                                 default:
                                   return null
                               }
@@ -475,40 +478,41 @@
             ]),
             r
           )
-        })(g.Component)
-      y()(M, 'defaultProps', { withCategory: !0 })
+        })(v.a.Component)
+      y()(z, 'defaultProps', { withCategory: !0 })
     },
     RoyM: function (e, t, r) {
       'use strict'
       var n = r('ERkP'),
-        a = (r('JtPf'), r('7x/C'), r('87if'), r('lTEL'), r('kYxP'), r('zb92')),
-        c = Object(a.a)({
+        a = r.n(n),
+        c = (r('JtPf'), r('7x/C'), r('87if'), r('lTEL'), r('kYxP'), r('zb92')),
+        o = Object(c.a)({
           loader: function () {
-            return r.e(167).then(r.bind(null, 'ACNv'))
+            return r.e(169).then(r.bind(null, 'ACNv'))
           },
         }),
-        o = r('4bW+'),
-        i = r('IG7M'),
-        s = r('rHpw'),
-        l = r('Irs7'),
-        u = s.a.create(function (e) {
+        i = r('4bW+'),
+        s = r('IG7M'),
+        l = r('rHpw'),
+        u = r('Irs7'),
+        p = l.a.create(function (e) {
           return { curationControl: { marginStart: e.spaces.space20 } }
         })
-      t.a = Object(l.a)(function (e) {
+      t.a = Object(u.a)(function (e) {
         var t = e.analytics,
           r = e.feedbackItems,
-          a = e.isDisplayedOnMedia
+          n = e.isDisplayedOnMedia
         if (r && r.length > 0) {
-          return n.createElement(i.a, {
+          return a.a.createElement(s.a, {
             onClick: function () {
               return t.scribe({ element: 'caret', action: 'click' })
             },
             renderActionMenu: function (e) {
-              return n.createElement(c, { actionItems: r, onClose: e })
+              return a.a.createElement(o, { actionItems: r, onClose: e })
             },
-            style: u.curationControl,
-            testID: o.a.caret,
-            withDarkBackground: a,
+            style: p.curationControl,
+            testID: i.a.caret,
+            withDarkBackground: n,
           })
         }
         return null
@@ -575,14 +579,184 @@
         b = r('KEM+'),
         y = r.n(b),
         g = (r('2G9S'), r('ho0z'), r('1t7P'), r('jQ/y'), r('hBvt'), r('ERkP')),
-        v = r('TIdA'),
-        h = r('t62R'),
-        O = r('A91F'),
-        w = r('IJsT'),
-        S = r('a6qo'),
-        C = r('rHpw'),
-        E = r('jhWN'),
-        j = r('jV+4'),
+        v = r.n(g),
+        h = r('TIdA'),
+        O = r('t62R'),
+        w = r('A91F'),
+        S = r('IJsT'),
+        C = r('a6qo'),
+        E = r('rHpw'),
+        j = r('jhWN'),
+        P = r('jV+4'),
+        k = r('MWbm')
+      function R(e) {
+        var t = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (e) {
+            return !1
+          }
+        })()
+        return function () {
+          var r,
+            n = m()(e)
+          if (t) {
+            var a = m()(this).constructor
+            r = Reflect.construct(n, arguments, a)
+          } else r = n.apply(this, arguments)
+          return f()(this, r)
+        }
+      }
+      var I = (function (e) {
+          u()(r, e)
+          var t = R(r)
+          function r() {
+            var e
+            a()(this, r)
+            for (var n = arguments.length, c = new Array(n), o = 0; o < n; o++) c[o] = arguments[o]
+            return (
+              (e = t.call.apply(t, [this].concat(c))),
+              y()(s()(e), '_renderTileLower', function () {
+                return e.props.attribution ? e._renderUserAvatar() : e._renderEventDescription()
+              }),
+              y()(s()(e), '_renderTileUpper', function () {
+                var t = e.props,
+                  r = t.accessibilityLabel,
+                  n = t.badge,
+                  a = t.image
+                return a
+                  ? v.a.createElement(
+                      v.a.Fragment,
+                      null,
+                      v.a.createElement(h.a, { accessibilityLabel: r, aspectMode: w.a.COVER, image: a }),
+                      n
+                        ? v.a.createElement(C.a, { align: 'left', background: n.backgroundColor, bold: !0 }, n.text)
+                        : null,
+                    )
+                  : null
+              }),
+              y()(s()(e), '_renderUserAvatar', function () {
+                var t = e.props.attribution
+                return t
+                  ? v.a.createElement(
+                      k.a,
+                      { style: L.accountContainer },
+                      v.a.createElement(
+                        k.a,
+                        { style: L.avatarContainer },
+                        v.a.createElement(j.a, {
+                          accessibilityHidden: !0,
+                          focusable: !1,
+                          size: 'xLarge',
+                          uri: t.profile_image_url_https,
+                          withLink: !1,
+                        }),
+                      ),
+                      v.a.createElement(
+                        k.a,
+                        { style: L.groupContainer },
+                        v.a.createElement(P.a, {
+                          isVerified: t.verified,
+                          name: t.name,
+                          nameSize: 'subtext2',
+                          screenName: t.screen_name,
+                          weight: 'bold',
+                          withLink: !1,
+                          withScreenName: !0,
+                          withStackedLayout: !0,
+                        }),
+                      ),
+                    )
+                  : null
+              }),
+              y()(s()(e), '_renderEventDescription', function () {
+                var t = e.props,
+                  r = t.description,
+                  n = t.rightControl
+                return r
+                  ? v.a.createElement(
+                      k.a,
+                      { style: L.eventDescription },
+                      v.a.createElement(
+                        O.b,
+                        { numberOfLines: 2, size: 'subtext2', style: { width: '100%' }, weight: 'bold' },
+                        r,
+                      ),
+                      v.a.createElement(k.a, { style: L.rightControl }, n || null),
+                    )
+                  : null
+              }),
+              e
+            )
+          }
+          return (
+            o()(r, [
+              {
+                key: 'render',
+                value: function () {
+                  var e = this.props,
+                    t = e.accessibilityLabel,
+                    r = e.containerStyle,
+                    n = e.link,
+                    a = e.onClick
+                  return v.a.createElement(S.a, {
+                    accessibilityLabel: t,
+                    containerStyle: r,
+                    link: n,
+                    lower: this._renderTileLower(),
+                    onClick: a,
+                    upper: this._renderTileUpper(),
+                    withInteractiveStyling: !0,
+                  })
+                },
+              },
+            ]),
+            r
+          )
+        })(v.a.Component),
+        L = E.a.create(function (e) {
+          return {
+            accountContainer: { flexDirection: 'row' },
+            avatarContainer: { marginRight: e.spaces.space4 },
+            rightControl: { marginTop: e.spaces.space2 },
+            groupContainer: { flexDirection: 'row', flexShrink: 1 },
+            eventDescription: { flexDirection: 'row' },
+          }
+        })
+      t.a = I
+    },
+    jUPy: function (e, t, r) {
+      'use strict'
+      r.d(t, 'a', function () {
+        return T
+      })
+      r('OZaJ')
+      var n = r('VrFO'),
+        a = r.n(n),
+        c = r('Y9Ll'),
+        o = r.n(c),
+        i = r('1Pcy'),
+        s = r.n(i),
+        l = r('5Yy7'),
+        u = r.n(l),
+        p = r('N+ot'),
+        f = r.n(p),
+        d = r('AuHH'),
+        m = r.n(d),
+        b = r('KEM+'),
+        y = r.n(b),
+        g = (r('2G9S'), r('hBvt'), r('z84I'), r('ERkP')),
+        v = r.n(g),
+        h = r('IJsT'),
+        O = r('Nxr7'),
+        w = (r('yH/f'), r('TIdA')),
+        S = r('t62R'),
+        C = r('A91F'),
+        E = r('gmfB'),
+        j = r('rHpw'),
         P = r('MWbm')
       function k(e) {
         var t = (function () {
@@ -605,178 +779,10 @@
           return f()(this, r)
         }
       }
-      var R = (function (e) {
+      var R = Object.freeze({ SCORE: 'score', SECONDARY_SCORE: 'secondaryScore' }),
+        I = (function (e) {
           u()(r, e)
           var t = k(r)
-          function r() {
-            var e
-            a()(this, r)
-            for (var n = arguments.length, c = new Array(n), o = 0; o < n; o++) c[o] = arguments[o]
-            return (
-              (e = t.call.apply(t, [this].concat(c))),
-              y()(s()(e), '_renderTileLower', function () {
-                return e.props.attribution ? e._renderUserAvatar() : e._renderEventDescription()
-              }),
-              y()(s()(e), '_renderTileUpper', function () {
-                var t = e.props,
-                  r = t.accessibilityLabel,
-                  n = t.badge,
-                  a = t.image
-                return a
-                  ? g.createElement(
-                      g.Fragment,
-                      null,
-                      g.createElement(v.a, { accessibilityLabel: r, aspectMode: O.a.COVER, image: a }),
-                      n
-                        ? g.createElement(S.a, { align: 'left', background: n.backgroundColor, bold: !0 }, n.text)
-                        : null,
-                    )
-                  : null
-              }),
-              y()(s()(e), '_renderUserAvatar', function () {
-                var t = e.props.attribution
-                return t
-                  ? g.createElement(
-                      P.a,
-                      { style: I.accountContainer },
-                      g.createElement(
-                        P.a,
-                        { style: I.avatarContainer },
-                        g.createElement(E.a, {
-                          accessibilityHidden: !0,
-                          focusable: !1,
-                          size: 'xLarge',
-                          uri: t.profile_image_url_https,
-                          withLink: !1,
-                        }),
-                      ),
-                      g.createElement(
-                        P.a,
-                        { style: I.groupContainer },
-                        g.createElement(j.a, {
-                          isVerified: t.verified,
-                          name: t.name,
-                          nameSize: 'subtext2',
-                          screenName: t.screen_name,
-                          weight: 'bold',
-                          withLink: !1,
-                          withScreenName: !0,
-                          withStackedLayout: !0,
-                        }),
-                      ),
-                    )
-                  : null
-              }),
-              y()(s()(e), '_renderEventDescription', function () {
-                var t = e.props,
-                  r = t.description,
-                  n = t.rightControl
-                return r
-                  ? g.createElement(
-                      P.a,
-                      { style: I.eventDescription },
-                      g.createElement(
-                        h.b,
-                        { numberOfLines: 2, size: 'subtext2', style: { width: '100%' }, weight: 'bold' },
-                        r,
-                      ),
-                      g.createElement(P.a, { style: I.rightControl }, n || null),
-                    )
-                  : null
-              }),
-              e
-            )
-          }
-          return (
-            o()(r, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.accessibilityLabel,
-                    r = e.containerStyle,
-                    n = e.link,
-                    a = e.onClick
-                  return g.createElement(w.a, {
-                    accessibilityLabel: t,
-                    containerStyle: r,
-                    link: n,
-                    lower: this._renderTileLower(),
-                    onClick: a,
-                    upper: this._renderTileUpper(),
-                    withInteractiveStyling: !0,
-                  })
-                },
-              },
-            ]),
-            r
-          )
-        })(g.Component),
-        I = C.a.create(function (e) {
-          return {
-            accountContainer: { flexDirection: 'row' },
-            avatarContainer: { marginRight: e.spaces.space4 },
-            rightControl: { marginTop: e.spaces.space2 },
-            groupContainer: { flexDirection: 'row', flexShrink: 1 },
-            eventDescription: { flexDirection: 'row' },
-          }
-        })
-      t.a = R
-    },
-    jUPy: function (e, t, r) {
-      'use strict'
-      r.d(t, 'a', function () {
-        return D
-      })
-      r('OZaJ')
-      var n = r('VrFO'),
-        a = r.n(n),
-        c = r('Y9Ll'),
-        o = r.n(c),
-        i = r('1Pcy'),
-        s = r.n(i),
-        l = r('5Yy7'),
-        u = r.n(l),
-        p = r('N+ot'),
-        f = r.n(p),
-        d = r('AuHH'),
-        m = r.n(d),
-        b = r('KEM+'),
-        y = r.n(b),
-        g = (r('2G9S'), r('hBvt'), r('z84I'), r('ERkP')),
-        v = r('IJsT'),
-        h = r('Nxr7'),
-        O = (r('yH/f'), r('TIdA')),
-        w = r('t62R'),
-        S = r('A91F'),
-        C = r('gmfB'),
-        E = r('rHpw'),
-        j = r('MWbm')
-      function P(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var r,
-            n = m()(e)
-          if (t) {
-            var a = m()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return f()(this, r)
-        }
-      }
-      var k = Object.freeze({ SCORE: 'score', SECONDARY_SCORE: 'secondaryScore' }),
-        R = (function (e) {
-          u()(r, e)
-          var t = P(r)
           function r() {
             var e
             a()(this, r)
@@ -786,10 +792,10 @@
               y()(s()(e), 'state', { imageError: !1 }),
               y()(s()(e), '_renderTeamName', function () {
                 var t = e.props.team.shortName
-                return g.createElement(
-                  j.a,
-                  { style: I.teamNameContainer },
-                  g.createElement(w.b, { color: 'white', numberOfLines: 1, weight: 'heavy' }, t),
+                return v.a.createElement(
+                  P.a,
+                  { style: L.teamNameContainer },
+                  v.a.createElement(S.b, { color: 'white', numberOfLines: 1, weight: 'heavy' }, t),
                 )
               }),
               y()(s()(e), '_renderImage', function () {
@@ -799,12 +805,12 @@
                   a = n.imageUrl,
                   c = n.logo,
                   o = e.state.imageError,
-                  i = (!c && !a) || o ? I.translucent : {},
-                  s = c ? S.a.exact(c.width / c.height) : S.a.SQUARE
-                return g.createElement(
-                  j.a,
-                  { style: [I.imageContainer, i, r && I.compactImageContainer] },
-                  g.createElement(O.a, {
+                  i = (!c && !a) || o ? L.translucent : {},
+                  s = c ? C.a.exact(c.width / c.height) : C.a.SQUARE
+                return v.a.createElement(
+                  P.a,
+                  { style: [L.imageContainer, i, r && L.compactImageContainer] },
+                  v.a.createElement(w.a, {
                     accessibilityLabel: '',
                     aspectMode: s,
                     image: c || a || '',
@@ -826,16 +832,18 @@
                   i = n.secondaryScore,
                   s = c === a,
                   l = !a,
-                  u = r === C.a.Completed && !s && !l,
+                  u = r === E.a.Completed && !s && !l,
                   p = e._shouldRenderScore(),
-                  f = e._getTeamScoreSize(k.SCORE),
-                  d = i ? e._getTeamScoreSize(k.SECONDARY_SCORE) : void 0
+                  f = e._getTeamScoreSize(R.SCORE),
+                  d = i ? e._getTeamScoreSize(R.SECONDARY_SCORE) : void 0
                 return p
-                  ? g.createElement(
-                      j.a,
-                      { style: [I.teamScore, u && I.losingTeamScore] },
-                      g.createElement(w.b, { color: 'white', numberOfLines: 1, size: f, weight: 'heavy' }, o),
-                      i ? g.createElement(w.b, { color: 'white', numberOfLines: 1, size: d, weight: 'bold' }, i) : null,
+                  ? v.a.createElement(
+                      P.a,
+                      { style: [L.teamScore, u && L.losingTeamScore] },
+                      v.a.createElement(S.b, { color: 'white', numberOfLines: 1, size: f, weight: 'heavy' }, o),
+                      i
+                        ? v.a.createElement(S.b, { color: 'white', numberOfLines: 1, size: d, weight: 'bold' }, i)
+                        : null,
                     )
                   : null
               }),
@@ -844,9 +852,9 @@
                   n = r.isCompact
                 if (!!!r.team.secondaryScore) return n ? 'headline1' : 'title4'
                 switch (t) {
-                  case k.SCORE:
+                  case R.SCORE:
                     return n ? 'subtext2' : 'headline1'
-                  case k.SECONDARY_SCORE:
+                  case R.SECONDARY_SCORE:
                     return n ? 'subtext3' : 'body'
                   default:
                     return
@@ -854,7 +862,7 @@
               }),
               y()(s()(e), '_shouldRenderScore', function () {
                 var t = e.props.gameState
-                return t === C.a.Completed || t === C.a.InProgress
+                return t === E.a.Completed || t === E.a.InProgress
               }),
               e
             )
@@ -871,13 +879,13 @@
                     a = {
                       backgroundColor:
                         (n && 'rgb('.concat(n.red, ', ').concat(n.green, ', ').concat(n.blue, ')')) ||
-                        E.a.theme.colors[t],
+                        j.a.theme.colors[t],
                     },
                     c = this._shouldRenderScore(),
                     o = !r || !c
-                  return g.createElement(
-                    j.a,
-                    { style: [I.root, a, r && I.compactRoot] },
+                  return v.a.createElement(
+                    P.a,
+                    { style: [L.root, a, r && L.compactRoot] },
                     this._renderImage(),
                     o ? this._renderTeamName() : null,
                     this._renderScore(),
@@ -887,9 +895,9 @@
             ]),
             r
           )
-        })(g.Component)
-      y()(R, 'defaultProps', { isCompact: !1 })
-      var I = E.a.create(function (e) {
+        })(v.a.Component)
+      y()(I, 'defaultProps', { isCompact: !1 })
+      var L = j.a.create(function (e) {
           return {
             root: { flexDirection: 'row', height: e.spaces.space48, paddingHorizontal: e.spaces.space12 },
             imageContainer: { alignSelf: 'center', width: e.spaces.space32, marginRight: e.spaces.space12 },
@@ -897,8 +905,8 @@
             compactRoot: {
               height: 'calc('
                 .concat(e.spaces.space48, ' - (')
-                .concat(E.a.theme.spaces.space1, ' + ')
-                .concat(E.a.theme.spaces.space2, '))'),
+                .concat(j.a.theme.spaces.space1, ' + ')
+                .concat(j.a.theme.spaces.space2, '))'),
             },
             losingTeamScore: { opacity: 0.5 },
             teamNameContainer: { alignSelf: 'center' },
@@ -906,8 +914,8 @@
             translucent: { borderRadius: e.borderRadii.infinite, backgroundColor: e.colors.white, opacity: 0.4 },
           }
         }),
-        L = R
-      function _(e) {
+        _ = I
+      function D(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -928,9 +936,9 @@
           return f()(this, r)
         }
       }
-      var D = (function (e) {
+      var T = (function (e) {
         u()(r, e)
-        var t = _(r)
+        var t = D(r)
         function r() {
           var e
           a()(this, r)
@@ -947,7 +955,7 @@
                 i = t.startTimeMillis,
                 s = t.teams,
                 l = t.winnerId
-              return g.createElement(h.a, {
+              return v.a.createElement(O.a, {
                 category: r,
                 gameClock: n,
                 gameClockPeriod: a,
@@ -964,7 +972,7 @@
                 c = n.isCompact,
                 o = n.winnerId,
                 i = t.id
-              return g.createElement(L, {
+              return v.a.createElement(_, {
                 fallbackColor: r % 2 == 0 ? 'gray300' : 'gray700',
                 gameState: a,
                 isCompact: c,
@@ -990,7 +998,7 @@
                   o = e.teams
                 if (o) {
                   var i = o && o.map(this._renderTeamRow)
-                  return g.createElement(v.a, {
+                  return v.a.createElement(h.a, {
                     accessibilityLabel: t,
                     containerStyle: r,
                     isCompact: n,
@@ -1007,8 +1015,8 @@
           ]),
           r
         )
-      })(g.Component)
-      y()(D, 'defaultProps', { isCompact: !1 })
+      })(v.a.Component)
+      y()(T, 'defaultProps', { isCompact: !1 })
     },
     kthL: function (e, t, r) {
       'use strict'
@@ -1119,14 +1127,15 @@
       'use strict'
       r('hBvt')
       var n = r('ERkP'),
-        a = r('t62R'),
-        c = r('IJsT'),
-        o = (r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('KEM+')),
-        i = r.n(o),
-        s = r('Lsrn'),
-        l = r('shC7'),
-        u = r('k/Ka')
-      function p(e, t) {
+        a = r.n(n),
+        c = r('t62R'),
+        o = r('IJsT'),
+        i = (r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('KEM+')),
+        s = r.n(i),
+        l = r('Lsrn'),
+        u = r('shC7'),
+        p = r('k/Ka')
+      function f(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -1138,46 +1147,46 @@
         }
         return r
       }
-      function f(e) {
+      function d(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? p(Object(r), !0).forEach(function (t) {
-                i()(e, t, r[t])
+            ? f(Object(r), !0).forEach(function (t) {
+                s()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : p(Object(r)).forEach(function (t) {
+            : f(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var d = function () {
+      var m = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(u.a)(
+        return Object(p.a)(
           'svg',
-          f(
-            f({}, e),
+          d(
+            d({}, e),
             {},
             {
               accessibilityHidden: void 0 === e.accessibilityLabel,
-              style: [s.a.root, e.style, l.a.getConstants().isRTL && s.a.iconRTL],
+              style: [l.a.root, e.style, u.a.getConstants().isRTL && l.a.iconRTL],
               viewBox: '0 0 24 24',
             },
           ),
-          n.createElement(
+          a.a.createElement(
             'g',
             null,
-            n.createElement('path', {
+            a.a.createElement('path', {
               d: 'M22.75 12c0-5.928-4.822-10.75-10.75-10.75S1.25 6.072 1.25 12 6.072 22.75 12 22.75 22.75 17.928 22.75 12zm-10.203 3.85c-.146-.147-.22-.34-.22-.53s.073-.385.22-.53l2.038-2.04H7.813c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h6.772l-2.038-2.038c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l3.32 3.317c.292.29.292.765 0 1.06l-3.32 3.316c-.293.294-.767.294-1.06 0v.003z',
             }),
           ),
         )
       }
-      d.metadata = { width: 24, height: 24 }
-      var m = d,
-        b = r('rHpw').a.create(function (e) {
+      m.metadata = { width: 24, height: 24 }
+      var b = m,
+        y = r('rHpw').a.create(function (e) {
           var t = 'calc(2 * '.concat(e.spaces.space32, ')')
           return {
             upper: { height: t, justifyContent: 'flex-end' },
@@ -1189,17 +1198,17 @@
       t.a = function (e) {
         var t = e.containerStyle,
           r = e.link,
-          o = e.onClick,
+          n = e.onClick,
           i = e.text
-        return n.createElement(c.a, {
+        return a.a.createElement(o.a, {
           accessibilityLabel: i,
-          containerStyle: [b.center, t],
+          containerStyle: [y.center, t],
           link: r,
-          lower: n.createElement(a.b, { color: 'primary' }, i),
-          onClick: o,
-          stackLayoutLowerStyle: b.lower,
-          stackLayoutUpperStyle: b.upper,
-          upper: n.createElement(m, { style: b.arrow }),
+          lower: a.a.createElement(c.b, { color: 'primary' }, i),
+          onClick: n,
+          stackLayoutLowerStyle: y.lower,
+          stackLayoutUpperStyle: y.upper,
+          upper: a.a.createElement(b, { style: y.arrow }),
         })
       }
     },

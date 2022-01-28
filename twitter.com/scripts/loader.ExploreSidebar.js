@@ -1,46 +1,47 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [166],
+  [168],
   {
     '+Bsv': function (e, t, n) {
       'use strict'
       var r = n('ERkP'),
-        o = n('3XMw'),
-        i = n.n(o),
+        o = n.n(r),
+        i = n('3XMw'),
+        a = n.n(i),
         c = n('M2x3'),
-        a = 'settingsAppBar',
-        u = n('/yvb'),
-        s = n('rHpw'),
-        l = i.a.bb081ea1,
-        f = { viewType: 'settings_button' },
-        d = r.memo(function (e) {
+        u = 'settingsAppBar',
+        s = n('/yvb'),
+        l = n('rHpw'),
+        f = a.a.bb081ea1,
+        d = { viewType: 'settings_button' },
+        p = o.a.memo(function (e) {
           var t = e.onPress,
             n = e.pullRight,
-            o = e.to
-          return r.createElement(u.a, {
-            accessibilityLabel: l,
-            behavioralEventContext: f,
-            hoverLabel: { label: l },
-            icon: r.createElement(c.a, null),
-            link: o,
+            r = e.to
+          return o.a.createElement(s.a, {
+            accessibilityLabel: f,
+            behavioralEventContext: d,
+            hoverLabel: { label: f },
+            icon: o.a.createElement(c.a, null),
+            link: r,
             onPress: t,
             pullRight: n,
-            style: p.button,
-            testID: a,
+            style: b.button,
+            testID: u,
             type: 'primaryText',
           })
         }),
-        p = s.a.create(function (e) {
+        b = l.a.create(function (e) {
           return { button: { marginVertical: 'calc(-'.concat(e.spaces.space12, ')') } }
         })
-      t.a = d
+      t.a = p
     },
     '+o05': function (e, t, n) {
       'use strict'
       var r = n('KEM+'),
         o = n.n(r),
         i = n('ezF+'),
-        c = (n('yH/f'), Object.freeze({ Cell: 'Cell', Hero: 'Hero', Tile: 'Tile' })),
-        a =
+        a = (n('yH/f'), Object.freeze({ Cell: 'Cell', Hero: 'Hero', Tile: 'Tile' })),
+        c =
           (n('JtPf'),
           n('7x/C'),
           n('87if'),
@@ -48,7 +49,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return n.e(224).then(n.bind(null, 'QPD4'))
+              return n.e(228).then(n.bind(null, 'QPD4'))
             },
             loaderKey: 'defaultScoreEventSummaryLoader',
             strategy: n('XBtf').a.Critical,
@@ -57,25 +58,25 @@
         selectDisplayType: function (e) {
           return e.content.displayType
         },
-        handlers: o()({}, c.Cell, a),
+        handlers: o()({}, a.Cell, c),
       })
     },
     'A+RP': function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'UPDATE_INTERVAL', function () {
-          return ue
+          return se
         }),
         n.d(t, 'ExploreSidebar', function () {
-          return de
+          return pe
         })
       n('OZaJ')
       var r = n('VrFO'),
         o = n.n(r),
         i = n('Y9Ll'),
-        c = n.n(i),
-        a = n('1Pcy'),
-        u = n.n(a),
+        a = n.n(i),
+        c = n('1Pcy'),
+        u = n.n(c),
         s = n('5Yy7'),
         l = n.n(s),
         f = n('N+ot'),
@@ -85,25 +86,26 @@
         h = n('KEM+'),
         y = n.n(h),
         v = (n('2G9S'), n('ERkP')),
-        O = n('FIs5'),
-        m = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('ezF+')),
-        w = n('8UdT'),
-        g = n('iu0J'),
-        j = n('xN10'),
-        E = n('+o05'),
-        P = n('5Y9N'),
-        T = n('XtkE'),
-        _ = (n('z84I'), n('VPAj')),
-        S = (n('M+/F'), n('3XMw')),
-        k = n.n(S),
-        x = n('caTy'),
-        C = n('+Bsv'),
-        R = n('MWbm'),
-        M = n('Irs7'),
-        D = n('hxu0'),
-        I = n('6vad'),
-        L = n('rC8y')
-      function B(e) {
+        O = n.n(v),
+        m = n('FIs5'),
+        w = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('ezF+')),
+        g = n('8UdT'),
+        j = n('iu0J'),
+        E = n('xN10'),
+        P = n('+o05'),
+        T = n('5Y9N'),
+        _ = n('XtkE'),
+        S = (n('z84I'), n('VPAj')),
+        k = (n('M+/F'), n('3XMw')),
+        x = n.n(k),
+        C = n('caTy'),
+        R = n('+Bsv'),
+        M = n('MWbm'),
+        D = n('Irs7'),
+        I = n('hxu0'),
+        L = n('6vad'),
+        B = n('rC8y')
+      function A(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -124,11 +126,11 @@
           return d()(this, n)
         }
       }
-      var A = k.a.c5f4befa,
-        F = k.a.d228a9a0,
-        U = (function (e) {
+      var F = x.a.c5f4befa,
+        U = x.a.d228a9a0,
+        H = (function (e) {
           l()(n, e)
-          var t = B(n)
+          var t = A(n)
           function n(e, r) {
             var i
             return (
@@ -146,7 +148,7 @@
             )
           }
           return (
-            c()(n, [
+            a()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -170,22 +172,22 @@
                     t = e.footer,
                     n = e.headerTitle,
                     r = e.isInSidebar,
-                    o = v.createElement(C.a, { to: '/settings/trends' })
-                  return v.createElement(
-                    R.a,
+                    o = O.a.createElement(R.a, { to: '/settings/trends' })
+                  return O.a.createElement(
+                    M.a,
                     null,
-                    v.createElement(I.b, { rightControl: o, text: n || A }),
+                    O.a.createElement(L.b, { rightControl: o, text: n || F }),
                     this._renderTrends(),
                     this.canShowMoreTrends()
-                      ? v.createElement(L.a, {
+                      ? O.a.createElement(B.a, {
                           onPress: this._handleShowMoreInlineClick,
-                          text: F,
+                          text: U,
                           withBottomRadius: !0,
                           withDarkerInteractiveBackground: r,
                         })
                       : !!t &&
-                          v.createElement(L.a, {
-                            link: t.landingUrl ? Object(x.b)(t.landingUrl) : void 0,
+                          O.a.createElement(B.a, {
+                            link: t.landingUrl ? Object(C.b)(t.landingUrl) : void 0,
                             onPress: this._handleShowMoreClick,
                             text: t.text,
                             withBottomRadius: !0,
@@ -199,17 +201,17 @@
                 value: function () {
                   var e = this.props.trends
                   return (this.state.showMoreTrends ? e : e.slice(0, 5)).map(function (e) {
-                    return v.createElement(v.Fragment, { key: e.key }, e.item)
+                    return O.a.createElement(O.a.Fragment, { key: e.key }, e.item)
                   })
                 },
               },
             ]),
             n
           )
-        })(v.Component),
-        H = Object(M.a)(Object(D.a)(U)),
-        X = n('zh9S')
-      function z(e, t) {
+        })(O.a.Component),
+        X = Object(D.a)(Object(I.a)(H)),
+        z = n('zh9S')
+      function K(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -221,50 +223,50 @@
         }
         return n
       }
-      function K(e) {
+      function J(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? z(Object(n), !0).forEach(function (t) {
+            ? K(Object(n), !0).forEach(function (t) {
                 y()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : z(Object(n)).forEach(function (t) {
+            : K(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var J,
-        W = m.g({
+      var W,
+        N = w.g({
           bindActions: function () {
-            return { scribeAction: X.c }
+            return { scribeAction: z.c }
           },
-          component: H,
+          component: X,
           createProps: function (e) {
             var t = e.actions.scribeAction,
               n = e.entry,
               r = e.renderEntry,
               o = e.scribeNamespace,
               i = n.content,
-              c = i.footer,
-              a = i.header,
+              a = i.footer,
+              c = i.header,
               u = i.items
             return {
-              footer: c,
-              headerTitle: a && a.text,
+              footer: a,
+              headerTitle: c && c.text,
               onClick: function (e) {
-                t(K(K({}, o), {}, { element: e, action: 'click' }))
+                t(J(J({}, o), {}, { element: e, action: 'click' }))
               },
               trends: u.map(function (e) {
                 return { item: r(e), key: e.entryId }
               }),
             }
           },
-          shouldDisplayBorder: Object(_.a)(!1),
+          shouldDisplayBorder: Object(S.a)(!1),
         })
-      function N(e, t) {
+      function Q(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -276,60 +278,60 @@
         }
         return n
       }
-      function Q(e) {
+      function Y(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? N(Object(n), !0).forEach(function (t) {
+            ? Q(Object(n), !0).forEach(function (t) {
                 y()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : N(Object(n)).forEach(function (t) {
+            : Q(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var Y = 'TrendsModule',
-        Z = 'EXPLORE_SIDEBAR',
-        q =
-          ((J = {}),
-          y()(J, w.b.TimelineCursor, m.e(m.a())),
-          y()(J, w.b.Label, m.e(m.a())),
-          y()(J, w.b.Message, m.e(m.a())),
-          y()(J, w.b.News, m.e(m.a())),
-          y()(J, w.b.Trend, Object(T.a)({ withThirdPartyCards: !1, errorContext: Z })),
-          y()(J, w.b.EventSummary, Object(g.a)({ errorContext: Z })),
-          y()(J, w.b.ScoreEventSummary, E.a),
-          J),
-        V = y()({}, Y, W),
-        G = Q(
-          Q(
+      var Z = 'TrendsModule',
+        q = 'EXPLORE_SIDEBAR',
+        V =
+          ((W = {}),
+          y()(W, g.b.TimelineCursor, w.e(w.a())),
+          y()(W, g.b.Label, w.e(w.a())),
+          y()(W, g.b.Message, w.e(w.a())),
+          y()(W, g.b.News, w.e(w.a())),
+          y()(W, g.b.Trend, Object(_.a)({ withThirdPartyCards: !1, errorContext: q })),
+          y()(W, g.b.EventSummary, Object(j.a)({ errorContext: q })),
+          y()(W, g.b.ScoreEventSummary, P.a),
+          W),
+        G = y()({}, Z, N),
+        $ = Y(
+          Y(
             {},
-            Object(P.a)({
-              customHandlers: V,
+            Object(T.a)({
+              customHandlers: G,
               customSelectDisplayType: function (e) {
                 return (t = e.content.items).length > 0 &&
-                  Object(j.a)(t, function (e) {
-                    return e.type === w.b.Trend
+                  Object(E.a)(t, function (e) {
+                    return e.type === g.b.Trend
                   })
-                  ? Y
+                  ? Z
                   : e.content.displayType
                 var t
               },
               isInSidebar: !0,
             }),
           ),
-          q,
+          V,
         ),
-        $ = n('oQhu'),
-        ee = n('fTQJ'),
-        te = n('b8qQ'),
-        ne = n('2g+p'),
-        re = n('v6aA'),
-        oe = n('BxsD')
-      function ie(e) {
+        ee = n('oQhu'),
+        te = n('fTQJ'),
+        ne = n('b8qQ'),
+        re = n('2g+p'),
+        oe = n('v6aA'),
+        ie = n('BxsD')
+      function ae(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -350,25 +352,25 @@
           return d()(this, n)
         }
       }
-      var ce = k.a.b8e930fd,
-        ae = k.a.ae05f268,
-        ue = 3e5,
-        se = function () {
-          return v.createElement(O.a, { message: ae })
+      var ce = x.a.b8e930fd,
+        ue = x.a.ae05f268,
+        se = 3e5,
+        le = function () {
+          return O.a.createElement(m.a, { message: ue })
         },
-        le = Object($.a)(function (e, t) {
-          return Object(oe.c)({ featureSwitches: t, displayLocation: oe.a.WebSidebar, focalTweetId: e })
+        fe = Object(ee.a)(function (e, t) {
+          return Object(ie.c)({ featureSwitches: t, displayLocation: ie.a.WebSidebar, focalTweetId: e })
         }),
-        fe = Object($.a)(function (e, t) {
-          return Object(oe.c)({ featureSwitches: t, displayLocation: oe.a.WebSidebar, profileUserId: e })
+        de = Object(ee.a)(function (e, t) {
+          return Object(ie.c)({ featureSwitches: t, displayLocation: ie.a.WebSidebar, profileUserId: e })
         }),
-        de = (function (e) {
+        pe = (function (e) {
           l()(n, e)
-          var t = ie(n)
+          var t = ae(n)
           function n() {
             var e
             o()(this, n)
-            for (var r = arguments.length, i = new Array(r), c = 0; c < r; c++) i[c] = arguments[c]
+            for (var r = arguments.length, i = new Array(r), a = 0; a < r; a++) i[a] = arguments[a]
             return (
               (e = t.call.apply(t, [this].concat(i))),
               y()(u()(e), '_getModule', function () {
@@ -376,10 +378,10 @@
                   n = t.focalTweetId,
                   r = t.profileUserId
                 return n
-                  ? le(n, e.context.featureSwitches)
+                  ? fe(n, e.context.featureSwitches)
                   : r
-                  ? fe(r, e.context.featureSwitches)
-                  : Object(oe.e)(e.context.featureSwitches)
+                  ? de(r, e.context.featureSwitches)
+                  : Object(ie.e)(e.context.featureSwitches)
               }),
               y()(u()(e), '_setTimelineRef', function (t) {
                 e._timeline = t
@@ -388,37 +390,37 @@
                 'active' === t && e._fetchUpdates()
               }),
               y()(u()(e), '_fetchUpdates', function () {
-                e._timeline && 'active' === ne.a.currentState && e._timeline.fetchTop({})
+                e._timeline && 'active' === re.a.currentState && e._timeline.fetchTop({})
               }),
               e
             )
           }
           return (
-            c()(n, [
+            a()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
-                  ne.a.addEventListener('change', this._onAppForegrounded)
+                  re.a.addEventListener('change', this._onAppForegrounded)
                 },
               },
               {
                 key: 'componentWillUnmount',
                 value: function () {
-                  ne.a.removeEventListener('change', this._onAppForegrounded)
+                  re.a.removeEventListener('change', this._onAppForegrounded)
                 },
               },
               {
                 key: 'render',
                 value: function () {
-                  return v.createElement(
-                    R.a,
+                  return O.a.createElement(
+                    M.a,
                     null,
-                    v.createElement(ee.a, {
-                      entryConfiguration: G,
+                    O.a.createElement(te.a, {
+                      entryConfiguration: $,
                       module: this._getModule(),
-                      pollingIntervalMsOverride: ue,
-                      renderUnavailable: se,
-                      scroller: te.a,
+                      pollingIntervalMsOverride: se,
+                      renderUnavailable: le,
+                      scroller: ne.a,
                       showLoadingFooter: !1,
                       timelineRef: this._setTimelineRef,
                       title: ce,
@@ -430,9 +432,9 @@
             ]),
             n
           )
-        })(v.Component)
-      y()(de, 'contextType', re.a)
-      t.default = de
+        })(O.a.Component)
+      y()(pe, 'contextType', oe.a)
+      t.default = pe
     },
     BxsD: function (e, t, n) {
       'use strict'
@@ -461,8 +463,8 @@
       var r = n('KEM+'),
         o = n.n(r),
         i = (n('yH/f'), n('2G9S'), n('z84I'), n('LW0h'), n('vrRf'), n('vXCH')),
-        c = n('oQhu'),
-        a = n('ZNT5'),
+        a = n('oQhu'),
+        c = n('ZNT5'),
         u = n('eR3e')
       function s(e, t) {
         var n = Object.keys(e)
@@ -502,7 +504,7 @@
             r = e.featureSwitches,
             o = e.focalTweetId,
             i = e.includePageConfiguration,
-            c = void 0 !== i && i,
+            a = void 0 !== i && i,
             u = e.initialTabId,
             s = e.profileUserId,
             f = t || n || 'main',
@@ -512,7 +514,7 @@
               ? ''.concat(p).concat(f, '-user-').concat(s)
               : ''.concat(p).concat(f),
             h = r.isTrue('responsive_web_new_client_events_enabled')
-          return Object(a.a)({
+          return Object(c.a)({
             timelineId: d,
             formatResponse: y(h),
             getEndpoint: function (e) {
@@ -526,7 +528,7 @@
                   candidate_source: t,
                   display_location: n,
                   focal_tweet_id: o,
-                  include_page_configuration: c,
+                  include_page_configuration: a,
                   initial_tab_id: u,
                   profile_user_id: s,
                   entity_tokens: h,
@@ -586,10 +588,10 @@
         v = function (e, t) {
           return h({ featureSwitches: e, includePageConfiguration: !0, initialTabId: t })
         },
-        O = Object(c.a)(function (e) {
+        O = Object(a.a)(function (e) {
           return h({ featureSwitches: e, contentType: f.Trends })
         }),
-        m = Object(c.a)(function (e) {
+        m = Object(a.a)(function (e) {
           return h({ featureSwitches: e, displayLocation: d.WebSidebar })
         }),
         w = function () {
@@ -613,13 +615,13 @@
       t.a = function (e) {
         var t = e.errorContext,
           i = e.withThirdPartyCards,
-          c = void 0 !== i && i
+          a = void 0 !== i && i
         return r.e({
           loader: function () {
-            return n.e(232).then(n.bind(null, '+92Z'))
+            return n.e(236).then(n.bind(null, '+92Z'))
           },
           loaderKey: 'trendDefaultLoader',
-          loaderOptions: { withThirdPartyCards: c, errorContext: t },
+          loaderOptions: { withThirdPartyCards: a, errorContext: t },
           strategy: o.a.Critical,
         })
       }
@@ -629,11 +631,12 @@
       var r = n('97Jx'),
         o = n.n(r),
         i = n('ERkP'),
+        a = n.n(i),
         c = n('vqbU')
       t.a = function (e) {
         return function (t) {
-          return i.createElement(c.a.Consumer, null, function (n) {
-            return i.createElement(e, o()({}, t, { isInSidebar: n }))
+          return a.a.createElement(c.a.Consumer, null, function (n) {
+            return a.a.createElement(e, o()({}, t, { isInSidebar: n }))
           })
         }
       }

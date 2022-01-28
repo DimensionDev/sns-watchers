@@ -1,69 +1,70 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
   [51],
   {
-    '3EFP': function (e, t, n) {
+    '3EFP': function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
-        return a
+      a.d(t, 'a', function () {
+        return n
       }),
-        n.d(t, 'b', function () {
+        a.d(t, 'b', function () {
           return r
         }),
-        n.d(t, 'c', function () {
+        a.d(t, 'c', function () {
           return o
         }),
-        n.d(t, 'd', function () {
+        a.d(t, 'd', function () {
           return c
         }),
-        n.d(t, 'e', function () {
+        a.d(t, 'e', function () {
           return i
         }),
-        n.d(t, 'f', function () {
+        a.d(t, 'f', function () {
           return l
         })
-      var a = 'ArrowDown',
+      var n = 'ArrowDown',
         r = 'ArrowUp',
         o = 'Enter',
         c = 'Escape',
         i = 'ESC',
         l = 'Tab'
     },
-    '6rLm': function (e, t, n) {
+    '6rLm': function (e, t, a) {
       'use strict'
-      n.r(t),
-        n.d(t, 'DisplayScreen', function () {
-          return N
+      a.r(t),
+        a.d(t, 'DisplayScreen', function () {
+          return V
         })
-      n('OZaJ')
-      var a = n('VrFO'),
-        r = n.n(a),
-        o = n('Y9Ll'),
-        c = n.n(o),
-        i = n('1Pcy'),
-        l = n.n(i),
-        s = n('5Yy7'),
-        p = n.n(s),
-        u = n('N+ot'),
-        d = n.n(u),
-        m = n('AuHH'),
-        f = n.n(m),
-        g = n('KEM+'),
-        y = n.n(g),
-        b = (n('1t7P'), n('jQ/y'), n('ERkP')),
-        h = n('jHSc'),
-        E = n('3XMw'),
-        w = n.n(E),
-        k = n('5hXE'),
-        v = n('A2ey'),
-        B = n('vSJw'),
-        H = n('KNZn'),
-        T = n('MWbm'),
-        M = n('t62R'),
-        x = n('/yvb'),
-        P = n('7N4s'),
-        R = n('rHpw'),
-        _ = n('7JQg')
-      function z(e) {
+      a('OZaJ')
+      var n = a('VrFO'),
+        r = a.n(n),
+        o = a('Y9Ll'),
+        c = a.n(o),
+        i = a('1Pcy'),
+        l = a.n(i),
+        s = a('5Yy7'),
+        p = a.n(s),
+        u = a('N+ot'),
+        d = a.n(u),
+        m = a('AuHH'),
+        f = a.n(m),
+        g = a('KEM+'),
+        y = a.n(g),
+        b = (a('1t7P'), a('jQ/y'), a('ERkP')),
+        h = a.n(b),
+        E = a('jHSc'),
+        w = a('3XMw'),
+        k = a.n(w),
+        v = a('5hXE'),
+        B = a('A2ey'),
+        H = a('vSJw'),
+        T = a('KNZn'),
+        M = a('MWbm'),
+        x = a('t62R'),
+        P = a('/yvb'),
+        R = a('7N4s'),
+        _ = a('rHpw'),
+        z = a('7JQg')
+      function F(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -75,41 +76,41 @@
           }
         })()
         return function () {
-          var n,
-            a = f()(e)
+          var a,
+            n = f()(e)
           if (t) {
             var r = f()(this).constructor
-            n = Reflect.construct(a, arguments, r)
-          } else n = a.apply(this, arguments)
-          return d()(this, n)
+            a = Reflect.construct(n, arguments, r)
+          } else a = n.apply(this, arguments)
+          return d()(this, a)
         }
       }
-      var F = w.a.b5b0afa4,
-        C = w.a.b772cd65,
-        S = w.a.a5ce82a4,
-        W = w.a.babfa32c,
-        J = w.a.a2a2f98d,
-        A = w.a.b4a361cf,
-        O = w.a.ce494bb3,
-        j = w.a.c783d45e,
-        L = w.a.h306a357,
-        N = (function (e) {
-          p()(n, e)
-          var t = z(n)
-          function n(e, a) {
+      var C = k.a.b5b0afa4,
+        S = k.a.b772cd65,
+        W = k.a.a5ce82a4,
+        J = k.a.babfa32c,
+        A = k.a.a2a2f98d,
+        O = k.a.b4a361cf,
+        j = k.a.ce494bb3,
+        L = k.a.c783d45e,
+        N = k.a.h306a357,
+        V = (function (e) {
+          p()(a, e)
+          var t = F(a)
+          function a(e, n) {
             var o
             return (
-              r()(this, n),
-              (o = t.call(this, e, a)),
+              r()(this, a),
+              (o = t.call(this, e, n)),
               y()(l()(o), '_renderModalHeader', function (e) {
                 return o.context.isModal
-                  ? b.createElement(
-                      T.a,
-                      { style: V.header },
-                      b.createElement(
-                        M.b,
+                  ? h.a.createElement(
+                      M.a,
+                      { style: D.header },
+                      h.a.createElement(
+                        x.b,
                         { align: 'center', size: 'title4', weight: 'heavy' },
-                        o._isWelcomeFlow ? W : F,
+                        o._isWelcomeFlow ? J : C,
                       ),
                     )
                   : e
@@ -122,41 +123,45 @@
             )
           }
           return (
-            c()(n, [
+            c()(a, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.context.isModal,
                     t = this.props.history
-                  return b.createElement(
-                    h.b,
-                    { history: t, renderHeader: this._renderModalHeader, title: this._isWelcomeFlow ? W : F },
-                    b.createElement(
-                      T.a,
-                      { style: V.root },
-                      b.createElement(
-                        M.b,
-                        { align: 'center', color: 'gray700', style: [V.description, !e && V.descriptionMarginTop] },
-                        this._isWelcomeFlow ? A : S,
+                  return h.a.createElement(
+                    E.b,
+                    { history: t, renderHeader: this._renderModalHeader, title: this._isWelcomeFlow ? J : C },
+                    h.a.createElement(
+                      M.a,
+                      { style: D.root },
+                      h.a.createElement(
+                        x.b,
+                        { align: 'center', color: 'gray700', style: [D.description, !e && D.descriptionMarginTop] },
+                        this._isWelcomeFlow ? O : W,
                       ),
-                      b.createElement(
-                        T.a,
-                        { style: [V.tweetExample, e && V.tweetExampleMarginHorizontal] },
-                        b.createElement(H.a, { withTweetBorder: !0 }),
+                      h.a.createElement(
+                        M.a,
+                        { style: [D.tweetExample, e && D.tweetExampleMarginHorizontal] },
+                        h.a.createElement(T.a, { withTweetBorder: !0 }),
                       ),
-                      b.createElement(M.b, { color: 'gray700', style: V.componentTitle, weight: 'bold' }, O),
-                      b.createElement(T.a, { style: V.component }, b.createElement(k.a, null)),
-                      b.createElement(M.b, { color: 'gray700', style: V.componentTitle, weight: 'bold' }, j),
-                      b.createElement(T.a, { style: [V.component, V.colorPicker] }, b.createElement(B.a, null)),
-                      b.createElement(M.b, { color: 'gray700', style: V.componentTitle, weight: 'bold' }, L),
-                      b.createElement(T.a, { style: [V.component, V.backgroundPicker] }, b.createElement(v.a, null)),
-                      b.createElement(
-                        T.a,
-                        { style: V.buttonContainer },
-                        b.createElement(
-                          x.a,
+                      h.a.createElement(x.b, { color: 'gray700', style: D.componentTitle, weight: 'bold' }, j),
+                      h.a.createElement(M.a, { style: D.component }, h.a.createElement(v.a, null)),
+                      h.a.createElement(x.b, { color: 'gray700', style: D.componentTitle, weight: 'bold' }, L),
+                      h.a.createElement(M.a, { style: [D.component, D.colorPicker] }, h.a.createElement(H.a, null)),
+                      h.a.createElement(x.b, { color: 'gray700', style: D.componentTitle, weight: 'bold' }, N),
+                      h.a.createElement(
+                        M.a,
+                        { style: [D.component, D.backgroundPicker] },
+                        h.a.createElement(B.a, null),
+                      ),
+                      h.a.createElement(
+                        M.a,
+                        { style: D.buttonContainer },
+                        h.a.createElement(
+                          P.a,
                           { onPress: this._handleBackClick, type: 'brandFilled' },
-                          this._isWelcomeFlow ? J : C,
+                          this._isWelcomeFlow ? A : S,
                         ),
                       ),
                     ),
@@ -164,11 +169,11 @@
                 },
               },
             ]),
-            n
+            a
           )
-        })(b.Component)
-      y()(N, 'contextType', P.b), (t.default = Object(_.c)({ page: 'display' })(N))
-      var V = R.a.create(function (e) {
+        })(h.a.Component)
+      y()(V, 'contextType', R.b), (t.default = Object(z.c)({ page: 'display' })(V))
+      var D = _.a.create(function (e) {
         return {
           root: { paddingBottom: e.spaces.space32, paddingHorizontal: e.spaces.space32 },
           header: { marginBottom: e.spaces.space12, marginTop: e.spaces.space32 },

@@ -1,17 +1,17 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [207],
+  [210],
   {
     '64vW': function (e, t, r) {
       'use strict'
       var n = r('ERkP'),
-        a = n.createContext({ heightsReady: !0 })
+        a = r.n(n).a.createContext({ heightsReady: !0 })
       t.a = a
     },
     QHXq: function (e, t, r) {
       'use strict'
       r.r(t),
         r.d(t, 'InlinePlayerContainer', function () {
-          return be
+          return Pe
         })
       r('OZaJ'), r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
       var n = r('97Jx'),
@@ -33,26 +33,27 @@
         b = r('KEM+'),
         P = r.n(b),
         g = (r('hBpG'), r('ERkP')),
-        I = r('6rlp'),
-        w = r('H9MA'),
-        C = r('RqPI'),
-        A = r('yr4d'),
-        O = r('XOJV'),
-        R = r('rxPX'),
-        k = r('0KEI'),
-        E = r('eXeu'),
-        S = function () {
+        I = r.n(g),
+        w = r('6rlp'),
+        C = r('H9MA'),
+        A = r('RqPI'),
+        O = r('yr4d'),
+        R = r('XOJV'),
+        k = r('rxPX'),
+        E = r('0KEI'),
+        S = r('eXeu'),
+        T = function () {
           return function (e, t, r) {
             return r.api.getHttpClient()
           }
         },
-        T = function (e, t) {
+        j = function (e, t) {
           var r = t.source && t.source.videoId
           return r && 'tweet' === r.type ? r.id : void 0
         },
-        j = Object(R.a)()
+        H = Object(k.a)()
           .propsFromState(function () {
-            return { dataSaverMode: w.c, language: C.o, sourceTweet: O.a.createHydratedTweetSelector(T) }
+            return { dataSaverMode: C.c, language: A.o, sourceTweet: R.a.createHydratedTweetSelector(j) }
           })
           .adjustStateProps(function (e) {
             var t = e.dataSaverMode,
@@ -61,38 +62,38 @@
             return {
               dataSaverMode: t,
               language: r,
-              mediaAvailability: (n && Object(E.c)(n)) || void 0,
-              publisherId: n ? Object(E.d)(n) : void 0,
+              mediaAvailability: (n && Object(S.c)(n)) || void 0,
+              publisherId: n ? Object(S.d)(n) : void 0,
             }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(k.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(E.createLocalApiErrorHandlerWithContextFactory)(
                 'INLINE_PLAYER_CONTAINER',
               ),
-              getTwitterAuthedHttpClient: S,
-              logPromotedVideoEvent: I.b,
-              tweetAdProvider: A.b,
+              getTwitterAuthedHttpClient: T,
+              logPromotedVideoEvent: w.b,
+              tweetAdProvider: O.b,
             }
           })
           .withAnalytics(),
-        H = (r('z84I'), r('6v1f')),
-        F = r('ZeN/'),
-        L = r('rHpw'),
-        D = r('MWbm'),
-        M = function (e) {
+        F = (r('z84I'), r('6v1f')),
+        L = r('ZeN/'),
+        D = r('rHpw'),
+        M = r('MWbm'),
+        x = function (e) {
           e.stopPropagation()
         },
-        x = function (e) {
+        V = function (e) {
           var t = e.children,
             r = e.testID
-          return g.createElement(D.a, { onClick: M, style: L.a.absoluteFill, testID: r }, t)
+          return I.a.createElement(M.a, { onClick: x, style: D.a.absoluteFill, testID: r }, t)
         },
-        V = r('epkG'),
-        B = r('mN6z'),
-        U = (r('2G9S'), r('gZV8')),
-        N = r('ylrv'),
-        z = (function () {
+        B = r('epkG'),
+        U = r('mN6z'),
+        N = (r('2G9S'), r('gZV8')),
+        z = r('ylrv'),
+        q = (function () {
           function e(t, r, n) {
             s()(this, e), (this.placement = t), (this.obstructions = r), (this.layerId = n)
           }
@@ -116,8 +117,8 @@
                   var t = this.layerId
                       ? this.obstructions.getObstructionAboveLayer(this.layerId, e)
                       : this.obstructions.getTotalObstruction(e),
-                    r = N.a.area(this.placement.item),
-                    n = (1 - t) * N.a.area(e)
+                    r = z.a.area(this.placement.item),
+                    n = (1 - t) * z.a.area(e)
                   return r > 0 ? n / r : 0
                 },
               },
@@ -149,9 +150,9 @@
             e
           )
         })(),
-        q = r('vF3p'),
-        W = r('S4UJ')
-      function G(e) {
+        W = r('vF3p'),
+        G = r('S4UJ')
+      function J(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -172,9 +173,9 @@
           return _()(this, r)
         }
       }
-      var J = (function (e) {
+      var X = (function (e) {
         f()(r, e)
-        var t = G(r)
+        var t = J(r)
         function r() {
           var e
           s()(this, r)
@@ -214,8 +215,8 @@
                 var e = this.props,
                   t = e.children,
                   r = e.style
-                return g.createElement(
-                  U.e,
+                return I.a.createElement(
+                  N.e,
                   {
                     onPlacementChange: this._handlePlacementChange,
                     ref: this._setPlacementRef,
@@ -252,33 +253,33 @@
                 ;(this._placement = a || this._placement),
                   (this._obstructions = n || this._obstructions || l.getObstructions()),
                   this._placement
-                    ? t(new z(this._placement, this._obstructions, o))
+                    ? t(new q(this._placement, this._obstructions, o))
                     : this._placementRef &&
                       this._placementRef.sample(function (e) {
                         ;(r._placement = e),
                           (r._obstructions = r._obstructions || l.getObstructions()),
-                          t(new z(e, r._obstructions, o))
+                          t(new q(e, r._obstructions, o))
                       })
               },
             },
           ]),
           r
         )
-      })(g.Component)
-      P()(J, 'defaultProps', { obstructionDetection: q.a })
-      var X = Object(W.a)(J),
-        Y = r('efbI'),
-        Z = r('mf9H'),
-        K = r('zHh/'),
-        Q = 'videoPlayer',
-        $ = r('v/3V'),
-        ee = r('aITJ'),
-        te = r('Zl35'),
-        re = r('9Xij'),
-        ne = r('HT/6'),
-        ae = r('v6aA'),
-        ie = r('iOGT')
-      function oe(e, t) {
+      })(I.a.Component)
+      P()(X, 'defaultProps', { obstructionDetection: W.a })
+      var Y = Object(G.a)(X),
+        Z = r('efbI'),
+        K = r('mf9H'),
+        Q = r('zHh/'),
+        $ = 'videoPlayer',
+        ee = r('v/3V'),
+        te = r('aITJ'),
+        re = r('Zl35'),
+        ne = r('9Xij'),
+        ae = r('HT/6'),
+        ie = r('v6aA'),
+        oe = r('iOGT')
+      function le(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -290,22 +291,22 @@
         }
         return r
       }
-      function le(e) {
+      function se(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? oe(Object(r), !0).forEach(function (t) {
+            ? le(Object(r), !0).forEach(function (t) {
                 P()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : oe(Object(r)).forEach(function (t) {
+            : le(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      function se(e) {
+      function ce(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -326,10 +327,10 @@
           return _()(this, r)
         }
       }
-      var ce = new V.a({}),
-        ue = (function (e) {
+      var ue = new B.a({}),
+        pe = (function (e) {
           f()(r, e)
-          var t = se(r)
+          var t = ce(r)
           function r(e, n) {
             var i
             s()(this, r),
@@ -358,17 +359,17 @@
                   m = v.contentId,
                   b = v.eventId,
                   P = v.videoId,
-                  I = v.vmapUrl,
+                  g = v.vmapUrl,
                   w = t.timecode,
                   C = t.twitterAuthedHttpClient,
                   A = t.uiStack,
                   O = t.videoEl,
                   R = t.videoPlayer,
                   k = t.viewCount
-                return g.createElement(Y.a.Consumer, null, function (t) {
+                return I.a.createElement(Z.a.Consumer, null, function (t) {
                   var v = t.prerollDisplayLocation
-                  return g.createElement(
-                    te.b,
+                  return I.a.createElement(
+                    re.b,
                     a()(
                       {
                         accessibilityLabel: r,
@@ -402,7 +403,7 @@
                         videoEl: O,
                         videoId: P,
                         viewCount: k,
-                        vmapUrl: I,
+                        vmapUrl: g,
                       },
                       e,
                     ),
@@ -439,10 +440,10 @@
                   r = e.promotedContent
                 return (
                   t &&
-                  le(
-                    le({}, t),
+                  se(
+                    se({}, t),
                     {},
-                    { url: Object($.a)(i.context.featureSwitches, t.url, null == r ? void 0 : r.click_tracking_info) },
+                    { url: Object(ee.a)(i.context.featureSwitches, t.url, null == r ? void 0 : r.click_tracking_info) },
                   )
                 )
               }),
@@ -509,7 +510,7 @@
               P()(d()(i), '_handleFullscreenChange', function (e) {
                 var t = i.context.viewport
                 if (((i._isPlayerFullscreen = e.isPlayerFullscreen), t)) {
-                  if ((t.temporarilySuppressScrollListeners(2e3), ee.b.isChrome() || ee.b.isSafari()))
+                  if ((t.temporarilySuppressScrollListeners(2e3), te.b.isChrome() || te.b.isSafari()))
                     if (i._isPlayerFullscreen) i._savedScrollPosition = { y: t.scrollY(), x: t.scrollX() }
                     else if (i._savedScrollPosition) {
                       var r = i._savedScrollPosition,
@@ -590,10 +591,10 @@
               l = e.forwardPivotInfo
             return (
               (i._disableHls = !(
-                ee.b.isDesktopOS() ||
-                (ee.b.isAndroid() && i.context.featureSwitches.isTrue('web_video_hls_android_mse_enabled'))
+                te.b.isDesktopOS() ||
+                (te.b.isAndroid() && i.context.featureSwitches.isTrue('web_video_hls_android_mse_enabled'))
               )),
-              (i._shouldAutoplay = Object(K.a)(o, l)),
+              (i._shouldAutoplay = Object(Q.a)(o, l)),
               i
             )
           }
@@ -606,7 +607,7 @@
                     r = t.heightsReady,
                     n = t.playbackPriority
                   !e.heightsReady && r && this._submitInitialPlacement(),
-                    !Object(B.a)(e.source, this.props.source) && this._emitter && this._emitter.reset(),
+                    !Object(U.a)(e.source, this.props.source) && this._emitter && this._emitter.reset(),
                     e.playbackPriority !== n &&
                       void 0 !== n &&
                       this._emitter &&
@@ -617,12 +618,12 @@
                 key: 'render',
                 value: function () {
                   var e = this.props.aspectRatio
-                  return g.createElement(
-                    re.a,
-                    { ratio: e, style: pe.aspectRatio },
-                    g.createElement(
-                      X,
-                      { onChange: this._handlePlacementChange, ref: this._setPlacementAPI, style: L.a.absoluteFill },
+                  return I.a.createElement(
+                    ne.a,
+                    { ratio: e, style: de.aspectRatio },
+                    I.a.createElement(
+                      Y,
+                      { onChange: this._handlePlacementChange, ref: this._setPlacementAPI, style: D.a.absoluteFill },
                       this._renderPlayer(),
                     ),
                   )
@@ -652,7 +653,7 @@
                     p = l && l.length ? (c ? 'gif' : 'media_entity') : 'vmap'
                   this._isLooping = !!(n || c || u || (r && r <= this._getLoopingThreshold()))
                   var d = {
-                    bitrateCap: t ? F.a.MEDIUM : void 0,
+                    bitrateCap: t ? L.a.MEDIUM : void 0,
                     contentType: p,
                     loop: this._isLooping,
                     maxLoopCount: this._isLooping ? a : void 0,
@@ -663,14 +664,14 @@
                         : void 0,
                     variants:
                       (l &&
-                        Object(E.f)(
-                          Object(ie.b)(l, t ? ie.a.MEDIUM : ie.a.HIGH).map(function (e) {
+                        Object(S.f)(
+                          Object(oe.b)(l, t ? oe.a.MEDIUM : oe.a.HIGH).map(function (e) {
                             return { src: e.url, type: e.content_type }
                           }),
                         )) ||
                       [],
                   }
-                  return g.createElement(x, { testID: Q }, this._renderHorizonPlayer(d))
+                  return I.a.createElement(V, { testID: $ }, this._renderHorizonPlayer(d))
                 },
               },
               {
@@ -687,25 +688,25 @@
             ]),
             r
           )
-        })(g.Component)
-      P()(ue, 'contextType', ae.a),
-        P()(ue, 'defaultProps', {
-          autoplay: H.b.Off,
-          playbackCoordination: Z.b,
-          playbackPriority: ne.a.NORMAL,
+        })(I.a.Component)
+      P()(pe, 'contextType', ie.a),
+        P()(pe, 'defaultProps', {
+          autoplay: F.b.Off,
+          playbackCoordination: K.b,
+          playbackPriority: ae.a.NORMAL,
           showControls: !0,
           dataSaverMode: !1,
           geolocationPrompt: !0,
           heightsReady: !0,
-          noAuthHttpClient: ce,
+          noAuthHttpClient: ue,
           includeBroadcastEventAssociation: !1,
         })
-      var pe = L.a.create({ aspectRatio: { zIndex: void 0 } }),
-        de = r('fs1G'),
-        ye = r('64vW'),
-        fe = r('gOg7'),
-        he = r('4oeU')
-      function _e(e, t) {
+      var de = D.a.create({ aspectRatio: { zIndex: void 0 } }),
+        ye = r('fs1G'),
+        fe = r('64vW'),
+        he = r('gOg7'),
+        _e = r('4oeU')
+      function ve(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -717,22 +718,22 @@
         }
         return r
       }
-      function ve(e) {
+      function me(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? _e(Object(r), !0).forEach(function (t) {
+            ? ve(Object(r), !0).forEach(function (t) {
                 P()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : _e(Object(r)).forEach(function (t) {
+            : ve(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      function me(e) {
+      function be(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -753,9 +754,9 @@
           return _()(this, r)
         }
       }
-      var be = (function (e) {
+      var Pe = (function (e) {
         f()(r, e)
-        var t = me(r)
+        var t = be(r)
         function r(e, n) {
           var a
           return (
@@ -782,19 +783,19 @@
                 n = {
                   log: a.context.featureSwitches.isTrue('responsive_web_video_promoted_logging_enabled')
                     ? a._logPromotedVideoEvent
-                    : de.a,
+                    : ye.a,
                 },
                 i = r.contextualScribeNamespace,
                 o = r.contextualScribeData,
                 l = Array.isArray(o.items) ? a._getBaseItem(o.items) : void 0,
                 s = {
-                  scribeContext: ve({}, i),
+                  scribeContext: me({}, i),
                   baseScribeItem: l,
                   enableShortFormCompleteLogging: a.context.featureSwitches.isTrue(
                     'responsive_web_video_pcomplete_enabled',
                   ),
                 }
-              return new fe.a(t, n, e, s)
+              return new he.a(t, n, e, s)
             }),
             P()(d()(a), '_logPromotedVideoEvent', function (e) {
               var t = a.props.createLocalApiErrorHandler
@@ -805,7 +806,7 @@
                 r = e.data,
                 n = e.namespace,
                 i = a.props.analytics
-              null != n && n.action && i.scribe(ve(ve({}, n), {}, { data: ve(ve({}, r), {}, { _category_: t }) }))
+              null != n && n.action && i.scribe(me(me({}, n), {}, { data: me(me({}, r), {}, { _category_: t }) }))
             }),
             P()(d()(a), '_setPlayer', function (e) {
               if (((a._player = e), a.props.setPlayer)) {
@@ -843,16 +844,16 @@
                     'playbackPriority',
                     'tweetAdProvider',
                   ])
-                return g.createElement(ye.a.Consumer, null, function (t) {
+                return I.a.createElement(fe.a.Consumer, null, function (t) {
                   var o = t.heightsReady
-                  return g.createElement(he.a.Consumer, null, function (t) {
+                  return I.a.createElement(_e.a.Consumer, null, function (t) {
                     var l = t.playbackPriority
-                    return g.createElement(
-                      ue,
+                    return I.a.createElement(
+                      pe,
                       a()({}, i, {
                         analytics: e._analytics,
                         heightsReady: o,
-                        playbackPriority: l === ne.a.INELIGIBLE ? l : r,
+                        playbackPriority: l === ae.a.INELIGIBLE ? l : r,
                         setPlayer: e._setPlayer,
                         tweetAdProvider: n,
                         twitterAuthedHttpClient: e._twitterAuthedHttpClient,
@@ -865,10 +866,10 @@
           ]),
           r
         )
-      })(g.PureComponent)
-      P()(be, 'contextType', ae.a)
-      var Pe = j(be)
-      t.default = Pe
+      })(I.a.PureComponent)
+      P()(Pe, 'contextType', ie.a)
+      var ge = H(Pe)
+      t.default = ge
     },
   },
 ])

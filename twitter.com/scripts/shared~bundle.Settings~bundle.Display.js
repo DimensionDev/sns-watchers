@@ -5,8 +5,8 @@
       'use strict'
       r('OZaJ')
       var n,
-        o = r('VrFO'),
-        a = r.n(o),
+        a = r('VrFO'),
+        o = r.n(a),
         c = r('Y9Ll'),
         i = r.n(c),
         l = r('1Pcy'),
@@ -20,26 +20,27 @@
         m = r('KEM+'),
         b = r.n(m),
         v = (r('+KXO'), r('uFXj'), r('2G9S'), r('vrRf'), r('ERkP')),
-        g = r('P1r1'),
-        w = r('RqPI'),
-        R = r('rxPX'),
-        O = Object(R.a)()
+        g = r.n(v),
+        w = r('P1r1'),
+        R = r('RqPI'),
+        O = r('rxPX'),
+        k = Object(O.a)()
           .propsFromState(function () {
-            return { language: w.o, scale: g.y }
+            return { language: R.o, scale: w.y }
           })
           .propsFromActions(function () {
-            return { updateSettings: g.L }
+            return { updateSettings: w.L }
           })
           .withAnalytics(),
-        k = r('3XMw'),
-        C = r.n(k),
-        P = r('huBF'),
-        _ = r('MWbm'),
-        S = r('lzTJ'),
-        x = r('rHpw'),
-        j = r('t62R'),
-        E = r('9RkS')
-      function F(e) {
+        C = r('3XMw'),
+        P = r.n(C),
+        _ = r('huBF'),
+        S = r('MWbm'),
+        x = r('lzTJ'),
+        j = r('rHpw'),
+        E = r('t62R'),
+        F = r('9RkS')
+      function L(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -54,47 +55,47 @@
           var r,
             n = y()(e)
           if (t) {
-            var o = y()(this).constructor
-            r = Reflect.construct(n, arguments, o)
+            var a = y()(this).constructor
+            r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
           return p()(this, r)
         }
       }
-      var L = S.f.ThemeScaleNames,
-        N = Object.keys(L),
-        B = N.length - 1,
-        H = C.a.d8680056,
-        I = C.a.eed02405,
-        A = C.a.j59f0b93,
-        M = C.a.b81aaad8,
-        D = C.a.c704488f,
-        T =
+      var N = x.f.ThemeScaleNames,
+        B = Object.keys(N),
+        H = B.length - 1,
+        I = P.a.d8680056,
+        A = P.a.eed02405,
+        M = P.a.j59f0b93,
+        D = P.a.b81aaad8,
+        T = P.a.c704488f,
+        W =
           ((n = {}),
-          b()(n, L.xSmall, H),
-          b()(n, L.small, I),
-          b()(n, L.normal, A),
-          b()(n, L.large, M),
-          b()(n, L.xLarge, D),
+          b()(n, N.xSmall, I),
+          b()(n, N.small, A),
+          b()(n, N.normal, M),
+          b()(n, N.large, D),
+          b()(n, N.xLarge, T),
           n),
-        W = [H, I, A, M, D],
-        K = C.a.e46dffa0,
-        z = (function (e) {
+        K = [I, A, M, D, T],
+        z = P.a.e46dffa0,
+        X = (function (e) {
           f()(r, e)
-          var t = F(r)
+          var t = L(r)
           function r() {
             var e
-            a()(this, r)
-            for (var n = arguments.length, o = new Array(n), c = 0; c < n; c++) o[c] = arguments[c]
+            o()(this, r)
+            for (var n = arguments.length, a = new Array(n), c = 0; c < n; c++) a[c] = arguments[c]
             return (
-              (e = t.call.apply(t, [this].concat(o))),
+              (e = t.call.apply(t, [this].concat(a))),
               b()(u()(e), '_handleSliderChanged', function (t) {
                 var r = e.props,
                   n = r.analytics,
-                  o = r.updateSettings,
-                  a = N[t]
-                n.scribe({ component: 'text_size_picker', element: 'scale', action: a }),
-                  o({ scale: a }),
-                  x.a.setScale(L[a])
+                  a = r.updateSettings,
+                  o = B[t]
+                n.scribe({ component: 'text_size_picker', element: 'scale', action: o }),
+                  a({ scale: o }),
+                  j.a.setScale(N[o])
               }),
               e
             )
@@ -105,27 +106,27 @@
                 key: 'render',
                 value: function () {
                   var e = this
-                  return v.createElement(P.a, { themeItem: 'textSize' }, function (t) {
-                    return v.createElement(
-                      _.a,
-                      { style: X.sliderContainer },
-                      v.createElement(j.b, { size: 'subtext2' }, 'Aa'),
-                      v.createElement(
-                        _.a,
-                        { style: X.slider },
-                        v.createElement(E.a, {
-                          accessibilityLabel: K,
-                          accessibilityLabelValueText: T[x.a.theme.scale],
+                  return g.a.createElement(_.a, { themeItem: 'textSize' }, function (t) {
+                    return g.a.createElement(
+                      S.a,
+                      { style: Y.sliderContainer },
+                      g.a.createElement(E.b, { size: 'subtext2' }, 'Aa'),
+                      g.a.createElement(
+                        S.a,
+                        { style: Y.slider },
+                        g.a.createElement(F.a, {
+                          accessibilityLabel: z,
+                          accessibilityLabelValueText: W[j.a.theme.scale],
                           autoFocus: t,
-                          hoverLabels: W,
-                          max: B,
+                          hoverLabels: K,
+                          max: H,
                           min: 0,
                           onChange: e._handleSliderChanged,
-                          value: N.indexOf(x.a.theme.scale),
+                          value: B.indexOf(j.a.theme.scale),
                           withMarkers: !0,
                         }),
                       ),
-                      v.createElement(j.b, { size: 'headline1' }, 'Aa'),
+                      g.a.createElement(E.b, { size: 'headline1' }, 'Aa'),
                     )
                   })
                 },
@@ -133,23 +134,23 @@
             ]),
             r
           )
-        })(v.Component),
-        X = x.a.create(function (e) {
+        })(g.a.Component),
+        Y = j.a.create(function (e) {
           return {
             sliderContainer: { alignItems: 'center', flexDirection: 'row', padding: e.spaces.space16 },
             slider: { flexGrow: 1, marginHorizontal: e.spaces.space20 },
           }
         }),
-        Y = O(z)
-      t.a = Y
+        J = k(X)
+      t.a = J
     },
     A2ey: function (e, t, r) {
       'use strict'
       r('OZaJ')
       var n = r('VrFO'),
-        o = r.n(n),
-        a = r('Y9Ll'),
-        c = r.n(a),
+        a = r.n(n),
+        o = r('Y9Ll'),
+        c = r.n(o),
         i = r('1Pcy'),
         l = r.n(i),
         u = r('5Yy7'),
@@ -162,23 +163,24 @@
         m = r.n(y),
         b = (r('2G9S'), r('ezhf')),
         v = r('ERkP'),
-        g = r('HPNB'),
-        w = r('v6aA'),
-        R = r('P1r1'),
-        O = r('rxPX'),
-        k = Object(O.a)()
+        g = r.n(v),
+        w = r('HPNB'),
+        R = r('v6aA'),
+        O = r('P1r1'),
+        k = r('rxPX'),
+        C = Object(k.a)()
           .propsFromActions(function () {
-            return { updateSettings: R.L }
+            return { updateSettings: O.L }
           })
           .withAnalytics(),
-        C = r('3XMw'),
-        P = r.n(C),
-        _ = r('huBF'),
-        S = r('lzTJ'),
-        x = r('rHpw'),
-        j = r('cHvH'),
-        E = r('fBvp')
-      function F(e) {
+        P = r('3XMw'),
+        _ = r.n(P),
+        S = r('huBF'),
+        x = r('lzTJ'),
+        j = r('rHpw'),
+        E = r('cHvH'),
+        F = r('fBvp')
+      function L(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -193,35 +195,35 @@
           var r,
             n = d()(e)
           if (t) {
-            var o = d()(this).constructor
-            r = Reflect.construct(n, arguments, o)
+            var a = d()(this).constructor
+            r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
           return h()(this, r)
         }
       }
-      var L = S.f.ThemePaletteNames,
-        N = P.a.ce8a8115,
-        B = [
-          { label: P.a.j59f0b93, accessibilityLabel: P.a.d3d48f39, backgroundName: L.light },
-          { label: P.a.i76f67ed, backgroundName: L.dark },
-          { label: P.a.c8f85960, backgroundName: L.darker },
+      var N = x.f.ThemePaletteNames,
+        B = _.a.ce8a8115,
+        H = [
+          { label: _.a.j59f0b93, accessibilityLabel: _.a.d3d48f39, backgroundName: N.light },
+          { label: _.a.i76f67ed, backgroundName: N.dark },
+          { label: _.a.c8f85960, backgroundName: N.darker },
         ],
-        H = (function (e) {
+        I = (function (e) {
           s()(r, e)
-          var t = F(r)
+          var t = L(r)
           function r() {
             var e
-            o()(this, r)
-            for (var n = arguments.length, a = new Array(n), c = 0; c < n; c++) a[c] = arguments[c]
+            a()(this, r)
+            for (var n = arguments.length, o = new Array(n), c = 0; c < n; c++) o[c] = arguments[c]
             return (
-              (e = t.call.apply(t, [this].concat(a))),
+              (e = t.call.apply(t, [this].concat(o))),
               m()(l()(e), '_handleBackgroundChange', function (t) {
                 var r = e.props,
                   n = r.analytics,
-                  o = r.updateSettings
+                  a = r.updateSettings
                 n.scribe({ component: 'background_picker', element: 'option', action: t })
-                var a = L[t]
-                x.a.setPalette(a), o({ themeBackground: a }), b.c(t, e.context.featureSwitches)
+                var o = N[t]
+                j.a.setPalette(o), a({ themeBackground: o }), b.c(t, e.context.featureSwitches)
               }),
               e
             )
@@ -232,16 +234,16 @@
                 key: 'render',
                 value: function () {
                   var e = this
-                  return v.createElement(j.a, null, function (t) {
+                  return g.a.createElement(E.a, null, function (t) {
                     var r = t.windowWidth
-                    return v.createElement(_.a, { themeItem: 'background' }, function (t) {
-                      return v.createElement(E.a, {
-                        accessibilityLabel: N,
+                    return g.a.createElement(S.a, { themeItem: 'background' }, function (t) {
+                      return g.a.createElement(F.a, {
+                        accessibilityLabel: B,
                         autoFocus: t,
-                        layout: g.a.shouldRenderAsModal(r) ? 'row' : 'column',
+                        layout: w.a.shouldRenderAsModal(r) ? 'row' : 'column',
                         onChange: e._handleBackgroundChange,
-                        options: B,
-                        value: x.a.theme.paletteName,
+                        options: H,
+                        value: j.a.theme.paletteName,
                       })
                     })
                   })
@@ -250,18 +252,18 @@
             ]),
             r
           )
-        })(v.Component)
-      m()(H, 'contextType', w.a)
-      var I = k(H)
-      t.a = I
+        })(g.a.Component)
+      m()(I, 'contextType', R.a)
+      var A = C(I)
+      t.a = A
     },
     KNZn: function (e, t, r) {
       'use strict'
       r('OZaJ'), r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
       var n = r('VrFO'),
-        o = r.n(n),
-        a = r('Y9Ll'),
-        c = r.n(a),
+        a = r.n(n),
+        o = r('Y9Ll'),
+        c = r.n(o),
         i = r('1Pcy'),
         l = r.n(i),
         u = r('5Yy7'),
@@ -273,18 +275,19 @@
         y = r('KEM+'),
         m = r.n(y),
         b = (r('7x/C'), r('DZ+c'), r('vrRf'), r('uFXj'), r('ERkP')),
-        v = r('RqPI'),
-        g = r('rxPX'),
-        w = Object(g.a)().propsFromState(function () {
-          return { language: v.o }
+        v = r.n(b),
+        g = r('RqPI'),
+        w = r('rxPX'),
+        R = Object(w.a)().propsFromState(function () {
+          return { language: g.o }
         }),
-        R = r('3XMw'),
-        O = r.n(R),
-        k = r('fs1G'),
-        C = r('rHpw'),
-        P = r('BLtI'),
-        _ = r('MWbm')
-      function S(e, t) {
+        O = r('3XMw'),
+        k = r.n(O),
+        C = r('fs1G'),
+        P = r('rHpw'),
+        _ = r('BLtI'),
+        S = r('MWbm')
+      function x(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -296,22 +299,22 @@
         }
         return r
       }
-      function x(e) {
+      function j(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? S(Object(r), !0).forEach(function (t) {
+            ? x(Object(r), !0).forEach(function (t) {
                 m()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : S(Object(r)).forEach(function (t) {
+            : x(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      function j(e) {
+      function E(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -326,28 +329,28 @@
           var r,
             n = d()(e)
           if (t) {
-            var o = d()(this).constructor
-            r = Reflect.construct(n, arguments, o)
+            var a = d()(this).constructor
+            r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
           return h()(this, r)
         }
       }
-      var E = 'Twitter',
-        F = O.a.ea1c87a5({ mention: E }),
-        L = {
-          text: F,
+      var F = 'Twitter',
+        L = k.a.ea1c87a5({ mention: F }),
+        N = {
+          text: L,
           created_at: new Date(Date.now() - 6e5).toString(),
           id: 20,
           id_str: '20',
-          display_text_range: [0, F.length - 1],
+          display_text_range: [0, L.length - 1],
           entities: {
             user_mentions: [
               {
                 id_str: '783214',
                 name: 'Twitter',
                 screen_name: 'Twitter',
-                text: E,
-                indices: [F.indexOf('@'), F.indexOf('@') + E.length + 1],
+                text: F,
+                indices: [L.indexOf('@'), L.indexOf('@') + F.length + 1],
               },
             ],
           },
@@ -360,20 +363,20 @@
             verified: !0,
           },
         },
-        N = (function (e) {
+        B = (function (e) {
           s()(r, e)
-          var t = j(r)
+          var t = E(r)
           function r(e) {
             var n
-            o()(this, r),
+            a()(this, r),
               (n = t.call(this, e)),
               m()(l()(n), '_handleTweetAction', function (e) {
                 e && e.preventDefault && e.preventDefault()
               })
-            var a = n.props,
-              c = a.language,
-              i = a.tweet
-            return (n._tweet = x(x(x({}, L), i), {}, { lang: c || 'en' })), n
+            var o = n.props,
+              c = o.language,
+              i = o.tweet
+            return (n._tweet = j(j(j({}, N), i), {}, { lang: c || 'en' })), n
           }
           return (
             c()(r, [
@@ -381,12 +384,12 @@
                 key: 'render',
                 value: function () {
                   var e = this.props.withTweetBorder
-                  return b.createElement(
-                    _.a,
-                    { accessibilityHidden: !0, style: e && B.tweetBorder },
-                    b.createElement(P.b, {
+                  return v.a.createElement(
+                    S.a,
+                    { accessibilityHidden: !0, style: e && H.tweetBorder },
+                    v.a.createElement(_.b, {
                       enableKeyboardShortcuts: !1,
-                      onAnalyticsClick: k.a,
+                      onAnalyticsClick: C.a,
                       onAvatarClick: this._handleTweetAction,
                       onEntityClick: this._handleTweetAction,
                       onMediaClick: this._handleTweetAction,
@@ -397,16 +400,16 @@
                       withTimestampLink: !1,
                       withUserHoverCard: !1,
                     }),
-                    b.createElement(_.a, { style: C.a.absoluteFill }),
+                    v.a.createElement(S.a, { style: P.a.absoluteFill }),
                   )
                 },
               },
             ]),
             r
           )
-        })(b.Component)
-      m()(N, 'defaultProps', { tweet: L, withTweetBorder: !1 })
-      var B = C.a.create(function (e) {
+        })(v.a.Component)
+      m()(B, 'defaultProps', { tweet: N, withTweetBorder: !1 })
+      var H = P.a.create(function (e) {
           return {
             tweetBorder: {
               borderStyle: 'solid',
@@ -417,19 +420,19 @@
             },
           }
         }),
-        H = w(N)
-      t.a = H
+        I = R(B)
+      t.a = I
     },
     fBvp: function (e, t, r) {
       'use strict'
       r.d(t, 'a', function () {
-        return H
+        return I
       })
       r('OZaJ')
       var n = r('VrFO'),
-        o = r.n(n),
-        a = r('Y9Ll'),
-        c = r.n(a),
+        a = r.n(n),
+        o = r('Y9Ll'),
+        c = r.n(o),
         i = r('1Pcy'),
         l = r.n(i),
         u = r('5Yy7'),
@@ -441,7 +444,8 @@
         y = r('KEM+'),
         m = r.n(y),
         b = (r('z84I'), r('ERkP')),
-        v =
+        v = r.n(b),
+        g =
           (r('+KXO'),
           r('1t7P'),
           r('LW0h'),
@@ -452,15 +456,15 @@
           r('ho0z'),
           r('uFXj'),
           r('t62R')),
-        g = r('IMYl'),
-        w = r('cm6r'),
-        R = r('rHpw'),
-        O = r('lzTJ'),
-        k = r('k/Ka'),
-        C = r('MWbm'),
-        P = r('r7ya'),
-        _ = r('I4+6')
-      function S(e, t) {
+        w = r('IMYl'),
+        R = r('cm6r'),
+        O = r('rHpw'),
+        k = r('lzTJ'),
+        C = r('k/Ka'),
+        P = r('MWbm'),
+        _ = r('r7ya'),
+        S = r('I4+6')
+      function x(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -472,22 +476,22 @@
         }
         return r
       }
-      function x(e) {
+      function j(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? S(Object(r), !0).forEach(function (t) {
+            ? x(Object(r), !0).forEach(function (t) {
                 m()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : S(Object(r)).forEach(function (t) {
+            : x(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      function j(e) {
+      function E(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -502,36 +506,36 @@
           var r,
             n = d()(e)
           if (t) {
-            var o = d()(this).constructor
-            r = Reflect.construct(n, arguments, o)
+            var a = d()(this).constructor
+            r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
           return h()(this, r)
         }
       }
-      var E = (function (e) {
+      var F = (function (e) {
           s()(r, e)
-          var t = j(r)
+          var t = E(r)
           function r() {
             var e
             return (
-              o()(this, r),
+              a()(this, r),
               (e = t.call(this)),
-              m()(l()(e), '_radioRef', b.createRef()),
+              m()(l()(e), '_radioRef', v.a.createRef()),
               m()(l()(e), '_handleChange', function (t) {
                 var r = e.props,
                   n = r.backgroundName,
-                  o = r.isSelected,
-                  a = r.onChange
-                a && !o && a(n)
+                  a = r.isSelected,
+                  o = r.onChange
+                o && !a && o(n)
               }),
-              (e._selectedInteractiveStyles = _.a.generate({
-                backgroundColor: R.a.theme.colors.transparent,
-                color: R.a.theme.colors.primary,
+              (e._selectedInteractiveStyles = S.a.generate({
+                backgroundColor: O.a.theme.colors.transparent,
+                color: O.a.theme.colors.primary,
                 withFocusWithinFocusRing: !0,
               })),
-              (e._unselectedInteractiveStyles = _.a.generate({
-                backgroundColor: R.a.theme.colors.transparent,
-                color: R.a.theme.colors.gray700,
+              (e._unselectedInteractiveStyles = S.a.generate({
+                backgroundColor: O.a.theme.colors.transparent,
+                color: O.a.theme.colors.gray700,
                 withFocusWithinFocusRing: !0,
               })),
               e
@@ -552,40 +556,40 @@
                     t = this.props,
                     r = t.accessibilityLabel,
                     n = t.isSelected,
-                    o = t.label,
-                    a = t.name
-                  return b.createElement(
-                    w.a,
-                    { focusable: !1, interactiveStyles: null, style: [F.root, this._getButtonStyles()] },
+                    a = t.label,
+                    o = t.name
+                  return v.a.createElement(
+                    R.a,
+                    { focusable: !1, interactiveStyles: null, style: [L.root, this._getButtonStyles()] },
                     function (t) {
-                      return b.createElement(
-                        b.Fragment,
+                      return v.a.createElement(
+                        v.a.Fragment,
                         null,
-                        b.createElement(
-                          w.a,
+                        v.a.createElement(
+                          R.a,
                           {
                             accessibilityRole: 'radio',
                             focusable: !1,
                             interactiveStyles: e._getInteractiveRadioStyles(),
                             interactivityState: t,
-                            style: F.radioOuterCircle,
+                            style: L.radioOuterCircle,
                           },
-                          b.createElement(
-                            C.a,
-                            { style: [F.radioInnerCircle, e._getCircleStyles()] },
-                            n ? b.createElement(g.a, { style: F.checkMark }) : null,
+                          v.a.createElement(
+                            P.a,
+                            { style: [L.radioInnerCircle, e._getCircleStyles()] },
+                            n ? v.a.createElement(w.a, { style: L.checkMark }) : null,
                           ),
                         ),
-                        b.createElement(
-                          C.a,
-                          { accessibilityHidden: !0, style: F.text },
-                          b.createElement(v.b, { numberOfLines: 1, style: e._getTextStyles(), weight: 'bold' }, o),
+                        v.a.createElement(
+                          P.a,
+                          { accessibilityHidden: !0, style: L.text },
+                          v.a.createElement(g.b, { numberOfLines: 1, style: e._getTextStyles(), weight: 'bold' }, a),
                         ),
-                        Object(k.a)('input', {
-                          accessibilityLabel: r || o,
+                        Object(C.a)('input', {
+                          accessibilityLabel: r || a,
                           checked: n,
-                          name: a,
-                          style: F.nativeControl,
+                          name: o,
+                          style: L.nativeControl,
                           type: 'radio',
                           onChange: e._handleChange,
                           ref: e._radioRef,
@@ -603,7 +607,7 @@
                     r = e.isSelected
                   return {
                     backgroundColor: this._getPalette(t).cellBackground,
-                    borderColor: r ? R.a.theme.colors.primary : R.a.theme.colors.gray200,
+                    borderColor: r ? O.a.theme.colors.primary : O.a.theme.colors.gray200,
                     borderWidth: r ? '2px' : '1px',
                   }
                 },
@@ -615,8 +619,8 @@
                     t = e.backgroundName,
                     r = e.isSelected
                   return {
-                    backgroundColor: r ? R.a.theme.colors.primary : R.a.theme.colors.transparent,
-                    borderColor: r ? R.a.theme.colors.primary : this._getPalette(t).gray300,
+                    backgroundColor: r ? O.a.theme.colors.primary : O.a.theme.colors.transparent,
+                    borderColor: r ? O.a.theme.colors.primary : this._getPalette(t).gray300,
                   }
                 },
               },
@@ -636,14 +640,14 @@
               {
                 key: '_getPalette',
                 value: function (e) {
-                  return e === O.b.dark ? P.a : e === O.b.darker ? P.b : P.c
+                  return e === k.b.dark ? _.a : e === k.b.darker ? _.b : _.c
                 },
               },
             ]),
             r
           )
-        })(b.Component),
-        F = R.a.create(function (e) {
+        })(v.a.Component),
+        L = O.a.create(function (e) {
           return {
             root: {
               paddingHorizontal: '20px',
@@ -682,15 +686,15 @@
               width: '80%',
             },
             checkMark: { color: e.colors.white, width: '18px', height: '18px' },
-            nativeControl: x(
-              x({}, R.a.absoluteFillObject),
+            nativeControl: j(
+              j({}, O.a.absoluteFillObject),
               {},
               { cursor: 'inherit', height: '100%', margin: 0, opacity: 0, padding: 0, width: '100%' },
             ),
           }
         }),
-        L = E
-      function N(e) {
+        N = F
+      function B(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -705,28 +709,28 @@
           var r,
             n = d()(e)
           if (t) {
-            var o = d()(this).constructor
-            r = Reflect.construct(n, arguments, o)
+            var a = d()(this).constructor
+            r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
           return h()(this, r)
         }
       }
-      var B = 1,
-        H = (function (e) {
+      var H = 1,
+        I = (function (e) {
           s()(r, e)
-          var t = N(r)
+          var t = B(r)
           function r() {
             var e
             return (
-              o()(this, r),
+              a()(this, r),
               (e = t.call(this)),
               m()(l()(e), '_handleItemChanged', function (t) {
                 return function () {
                   ;(0, e.props.onChange)(t)
                 }
               }),
-              (e._backgroundPickerName = 'background_picker_'.concat(B)),
-              (B += 1),
+              (e._backgroundPickerName = 'background_picker_'.concat(H)),
+              (H += 1),
               e
             )
           }
@@ -739,14 +743,14 @@
                     t = this.props,
                     r = t.accessibilityLabel,
                     n = t.autoFocus,
-                    o = t.layout,
-                    a = t.options,
+                    a = t.layout,
+                    o = t.options,
                     c = t.value
-                  return b.createElement(
-                    C.a,
-                    { accessibilityLabel: r, accessibilityRole: 'radiogroup', style: 'row' === o ? I.row : I.column },
-                    a.map(function (t) {
-                      return b.createElement(L, {
+                  return v.a.createElement(
+                    P.a,
+                    { accessibilityLabel: r, accessibilityRole: 'radiogroup', style: 'row' === a ? A.row : A.column },
+                    o.map(function (t) {
+                      return v.a.createElement(N, {
                         accessibilityLabel: t.accessibilityLabel,
                         autoFocus: n && t.backgroundName === c,
                         backgroundName: t.backgroundName,
@@ -763,8 +767,8 @@
             ]),
             r
           )
-        })(b.Component),
-        I = R.a.create(function (e) {
+        })(v.a.Component),
+        A = O.a.create(function (e) {
           return { row: { flexDirection: 'row' }, column: { flexDirection: 'column' } }
         })
     },
@@ -772,9 +776,9 @@
       'use strict'
       r('OZaJ')
       var n = r('VrFO'),
-        o = r.n(n),
-        a = r('Y9Ll'),
-        c = r.n(a),
+        a = r.n(n),
+        o = r('Y9Ll'),
+        c = r.n(o),
         i = r('1Pcy'),
         l = r.n(i),
         u = r('5Yy7'),
@@ -786,18 +790,19 @@
         y = r('KEM+'),
         m = r.n(y),
         b = (r('2G9S'), r('ERkP')),
-        v = r('rxPX'),
-        g = r('z2Pn'),
-        w = Object(v.a)()
+        v = r.n(b),
+        g = r('rxPX'),
+        w = r('z2Pn'),
+        R = Object(g.a)()
           .propsFromState(function () {
-            return { themeFocus: g.f }
+            return { themeFocus: w.f }
           })
           .propsFromActions(function () {
-            return { setThemeFocus: g.k }
+            return { setThemeFocus: w.k }
           }),
-        R = r('MWbm'),
-        O = r('3EFP')
-      function k(e) {
+        O = r('MWbm'),
+        k = r('3EFP')
+      function C(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -812,27 +817,27 @@
           var r,
             n = d()(e)
           if (t) {
-            var o = d()(this).constructor
-            r = Reflect.construct(n, arguments, o)
+            var a = d()(this).constructor
+            r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
           return h()(this, r)
         }
       }
-      var C = w(
+      var P = R(
         (function (e) {
           s()(r, e)
-          var t = k(r)
+          var t = C(r)
           function r() {
             var e
-            o()(this, r)
-            for (var n = arguments.length, a = new Array(n), c = 0; c < n; c++) a[c] = arguments[c]
+            a()(this, r)
+            for (var n = arguments.length, o = new Array(n), c = 0; c < n; c++) o[c] = arguments[c]
             return (
-              (e = t.call.apply(t, [this].concat(a))),
+              (e = t.call.apply(t, [this].concat(o))),
               m()(l()(e), '_handleKeyDown', function (t) {
                 var r = e.props,
                   n = r.setThemeFocus,
-                  o = r.themeItem
-                t.key === O.d || t.key === O.e ? n('') : n(o)
+                  a = r.themeItem
+                t.key === k.d || t.key === k.e ? n('') : n(a)
               }),
               m()(l()(e), '_handleMouseDown', function () {
                 e.props.setThemeFocus('')
@@ -849,8 +854,8 @@
                     t = e.children,
                     r = e.themeFocus,
                     n = e.themeItem === r
-                  return b.createElement(
-                    R.a,
+                  return v.a.createElement(
+                    O.a,
                     { onKeyDown: this._handleKeyDown, onMouseDown: this._handleMouseDown },
                     t(n),
                   )
@@ -859,17 +864,17 @@
             ]),
             r
           )
-        })(b.Component),
+        })(v.a.Component),
       )
-      t.a = C
+      t.a = P
     },
     uI9t: function (e, t, r) {
       'use strict'
       r('OZaJ')
       var n = r('VrFO'),
-        o = r.n(n),
-        a = r('Y9Ll'),
-        c = r.n(a),
+        a = r.n(n),
+        o = r('Y9Ll'),
+        c = r.n(o),
         i = r('5Yy7'),
         l = r.n(i),
         u = r('N+ot'),
@@ -879,16 +884,17 @@
         p = r('KEM+'),
         d = r.n(p),
         y = (r('z84I'), r('ERkP')),
-        m = (r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('1Pcy')),
-        b = r.n(m),
-        v = (r('2G9S'), r('ho0z'), r('I4+6')),
-        g = r('cm6r'),
-        w = r('rHpw'),
-        R = r('k/Ka'),
-        O = r('MWbm'),
-        k = r('x0mb'),
-        C = r('IMYl')
-      function P(e, t) {
+        m = r.n(y),
+        b = (r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('1Pcy')),
+        v = r.n(b),
+        g = (r('2G9S'), r('ho0z'), r('I4+6')),
+        w = r('cm6r'),
+        R = r('rHpw'),
+        O = r('k/Ka'),
+        k = r('MWbm'),
+        C = r('x0mb'),
+        P = r('IMYl')
+      function _(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -900,22 +906,22 @@
         }
         return r
       }
-      function _(e) {
+      function S(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? P(Object(r), !0).forEach(function (t) {
+            ? _(Object(r), !0).forEach(function (t) {
                 d()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : P(Object(r)).forEach(function (t) {
+            : _(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      function S(e) {
+      function x(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -930,23 +936,23 @@
           var r,
             n = h()(e)
           if (t) {
-            var o = h()(this).constructor
-            r = Reflect.construct(n, arguments, o)
+            var a = h()(this).constructor
+            r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
           return s()(this, r)
         }
       }
-      var x = (function (e) {
+      var j = (function (e) {
           l()(r, e)
-          var t = S(r)
+          var t = x(r)
           function r() {
             var e
-            o()(this, r)
-            for (var n = arguments.length, a = new Array(n), c = 0; c < n; c++) a[c] = arguments[c]
+            a()(this, r)
+            for (var n = arguments.length, o = new Array(n), c = 0; c < n; c++) o[c] = arguments[c]
             return (
-              (e = t.call.apply(t, [this].concat(a))),
-              d()(b()(e), '_radioRef', y.createRef()),
-              d()(b()(e), '_handleChange', function () {
+              (e = t.call.apply(t, [this].concat(o))),
+              d()(v()(e), '_radioRef', m.a.createRef()),
+              d()(v()(e), '_handleChange', function () {
                 var t = e.props,
                   r = t.colorName
                 ;(0, t.onChange)(r)
@@ -969,36 +975,36 @@
                     t = e.accessibilityLabel,
                     r = e.colorName,
                     n = e.isSelected,
-                    o = e.name,
-                    a = e.style,
-                    c = w.a.theme.colors[r],
-                    i = v.a.generate({
-                      backgroundColor: w.a.theme.colors.transparent,
+                    a = e.name,
+                    o = e.style,
+                    c = R.a.theme.colors[r],
+                    i = g.a.generate({
+                      backgroundColor: R.a.theme.colors.transparent,
                       color: c,
                       withFocusWithinFocusRing: !0,
                     })
-                  return y.createElement(
-                    O.a,
-                    { style: [j.container, a] },
-                    y.createElement(
-                      g.a,
-                      { accessibilityRole: 'label', interactiveStyles: i, style: [j.choice, j.choiceContainer] },
-                      y.createElement(k.a, { style: [j.choice, { color: c }] }),
-                      Object(R.a)('input', {
+                  return m.a.createElement(
+                    k.a,
+                    { style: [E.container, o] },
+                    m.a.createElement(
+                      w.a,
+                      { accessibilityRole: 'label', interactiveStyles: i, style: [E.choice, E.choiceContainer] },
+                      m.a.createElement(C.a, { style: [E.choice, { color: c }] }),
+                      Object(O.a)('input', {
                         accessibilityLabel: t,
-                        name: o,
+                        name: a,
                         checked: n,
                         onChange: this._handleChange,
                         ref: this._radioRef,
-                        style: j.nativeControl,
+                        style: E.nativeControl,
                         type: 'radio',
                       }),
                     ),
                     n &&
-                      y.createElement(
-                        O.a,
-                        { style: [j.choice, j.checkMarkContainer] },
-                        y.createElement(C.a, { style: [j.choiceSelected, { backgroundColor: c }] }),
+                      m.a.createElement(
+                        k.a,
+                        { style: [E.choice, E.checkMarkContainer] },
+                        m.a.createElement(P.a, { style: [E.choiceSelected, { backgroundColor: c }] }),
                       ),
                   )
                 },
@@ -1006,8 +1012,8 @@
             ]),
             r
           )
-        })(y.Component),
-        j = w.a.create(function (e) {
+        })(m.a.Component),
+        E = R.a.create(function (e) {
           return {
             container: { alignItems: 'center', paddingVertical: e.spaces.space4, userSelect: 'none' },
             choice: { cursor: 'pointer', height: 45, width: 45 },
@@ -1018,15 +1024,15 @@
             focusedStyle: { outlineStyle: 'none' },
             hoverStyle: { transform: [{ scale: 1.1 }] },
             pressedStyle: { transform: [{ scale: 0.95 }] },
-            nativeControl: _(
-              _({}, w.a.absoluteFillObject),
+            nativeControl: S(
+              S({}, R.a.absoluteFillObject),
               {},
               { cursor: 'inherit', height: '100%', margin: 0, opacity: 0, padding: 0, width: '100%' },
             ),
           }
         }),
-        E = x
-      function F(e) {
+        F = j
+      function L(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -1041,19 +1047,19 @@
           var r,
             n = h()(e)
           if (t) {
-            var o = h()(this).constructor
-            r = Reflect.construct(n, arguments, o)
+            var a = h()(this).constructor
+            r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
           return s()(this, r)
         }
       }
-      var L = 1,
-        N = (function (e) {
+      var N = 1,
+        B = (function (e) {
           l()(r, e)
-          var t = F(r)
+          var t = L(r)
           function r() {
             var e
-            return o()(this, r), ((e = t.call(this))._colorPickerId = 'COLOR_PICKER_'.concat(L, '_LABEL')), (L += 1), e
+            return a()(this, r), ((e = t.call(this))._colorPickerId = 'COLOR_PICKER_'.concat(N, '_LABEL')), (N += 1), e
           }
           return (
             c()(r, [
@@ -1064,27 +1070,27 @@
                     t = this.props,
                     r = t.accessibilityLabel,
                     n = t.autoFocus,
-                    o = t.layout,
-                    a = t.onChange,
+                    a = t.layout,
+                    o = t.onChange,
                     c = t.options,
                     i = t.value,
-                    l = 'two-rows' === o,
-                    u = [B.root, l && B.flexWrap],
+                    l = 'two-rows' === a,
+                    u = [H.root, l && H.flexWrap],
                     s = l ? { width: ''.concat((2 / c.length) * 100, '%') } : void 0
-                  return y.createElement(
-                    O.a,
+                  return m.a.createElement(
+                    k.a,
                     { accessibilityLabel: r, accessibilityRole: 'radiogroup', style: u },
                     c.map(function (t) {
                       var r = t.accessibilityLabel,
-                        o = t.colorName
-                      return y.createElement(E, {
+                        a = t.colorName
+                      return m.a.createElement(F, {
                         accessibilityLabel: r,
-                        autoFocus: n && i === o,
-                        colorName: o,
-                        isSelected: i === o,
-                        key: o,
+                        autoFocus: n && i === a,
+                        colorName: a,
+                        isSelected: i === a,
+                        key: a,
                         name: e._colorPickerId,
-                        onChange: a,
+                        onChange: o,
                         style: s,
                       })
                     }),
@@ -1094,20 +1100,20 @@
             ]),
             r
           )
-        })(y.Component)
-      d()(N, 'defaultProps', { layout: 'one-row' })
-      var B = w.a.create(function (e) {
+        })(m.a.Component)
+      d()(B, 'defaultProps', { layout: 'one-row' })
+      var H = R.a.create(function (e) {
         return { root: { flexDirection: 'row', justifyContent: 'space-around' }, flexWrap: { flexWrap: 'wrap' } }
       })
-      t.a = N
+      t.a = B
     },
     vSJw: function (e, t, r) {
       'use strict'
       r('OZaJ')
       var n = r('VrFO'),
-        o = r.n(n),
-        a = r('Y9Ll'),
-        c = r.n(a),
+        a = r.n(n),
+        o = r('Y9Ll'),
+        c = r.n(o),
         i = r('1Pcy'),
         l = r.n(i),
         u = r('5Yy7'),
@@ -1119,22 +1125,23 @@
         y = r('KEM+'),
         m = r.n(y),
         b = (r('2G9S'), r('ERkP')),
-        v = r('HPNB'),
-        g = r('P1r1'),
-        w = r('rxPX'),
-        R = Object(w.a)()
+        v = r.n(b),
+        g = r('HPNB'),
+        w = r('P1r1'),
+        R = r('rxPX'),
+        O = Object(R.a)()
           .propsFromActions(function () {
-            return { updateSettings: g.L }
+            return { updateSettings: w.L }
           })
           .withAnalytics(),
-        O = r('3XMw'),
-        k = r.n(O),
-        C = r('huBF'),
-        P = r('lzTJ'),
-        _ = r('rHpw'),
-        S = r('cHvH'),
-        x = r('uI9t')
-      function j(e) {
+        k = r('3XMw'),
+        C = r.n(k),
+        P = r('huBF'),
+        _ = r('lzTJ'),
+        S = r('rHpw'),
+        x = r('cHvH'),
+        j = r('uI9t')
+      function E(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -1149,39 +1156,39 @@
           var r,
             n = d()(e)
           if (t) {
-            var o = d()(this).constructor
-            r = Reflect.construct(n, arguments, o)
+            var a = d()(this).constructor
+            r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
           return h()(this, r)
         }
       }
-      var E = P.f.ThemePrimaryColorNames,
-        F = k.a.aefc5b20,
-        L = [
-          { accessibilityLabel: k.a.a52d0fdd, colorName: E.blue500 },
-          { accessibilityLabel: k.a.d818cdd5, colorName: E.yellow500 },
-          { accessibilityLabel: k.a.fee1cd64, colorName: E.magenta500 },
-          { accessibilityLabel: k.a.cbed7fb2, colorName: E.purple500 },
-          { accessibilityLabel: k.a.g697ec02, colorName: E.orange500 },
-          { accessibilityLabel: k.a.a7c22049, colorName: E.green500 },
+      var F = _.f.ThemePrimaryColorNames,
+        L = C.a.aefc5b20,
+        N = [
+          { accessibilityLabel: C.a.a52d0fdd, colorName: F.blue500 },
+          { accessibilityLabel: C.a.d818cdd5, colorName: F.yellow500 },
+          { accessibilityLabel: C.a.fee1cd64, colorName: F.magenta500 },
+          { accessibilityLabel: C.a.cbed7fb2, colorName: F.purple500 },
+          { accessibilityLabel: C.a.g697ec02, colorName: F.orange500 },
+          { accessibilityLabel: C.a.a7c22049, colorName: F.green500 },
         ],
-        N = R(
+        B = O(
           (function (e) {
             s()(r, e)
-            var t = j(r)
+            var t = E(r)
             function r() {
               var e
-              o()(this, r)
-              for (var n = arguments.length, a = new Array(n), c = 0; c < n; c++) a[c] = arguments[c]
+              a()(this, r)
+              for (var n = arguments.length, o = new Array(n), c = 0; c < n; c++) o[c] = arguments[c]
               return (
-                (e = t.call.apply(t, [this].concat(a))),
+                (e = t.call.apply(t, [this].concat(o))),
                 m()(l()(e), '_handleColorChange', function (t) {
                   var r = e.props,
                     n = r.analytics,
-                    o = r.updateSettings
+                    a = r.updateSettings
                   n.scribe({ component: 'color_picker', element: 'option', action: t }),
-                    o({ themeColor: E[t] }),
-                    _.a.setPrimaryColor(E[t])
+                    a({ themeColor: F[t] }),
+                    S.a.setPrimaryColor(F[t])
                 }),
                 e
               )
@@ -1192,16 +1199,16 @@
                   key: 'render',
                   value: function () {
                     var e = this
-                    return b.createElement(S.a, null, function (t) {
+                    return v.a.createElement(x.a, null, function (t) {
                       var r = t.windowWidth
-                      return b.createElement(C.a, { themeItem: 'color' }, function (t) {
-                        return b.createElement(x.a, {
-                          accessibilityLabel: F,
+                      return v.a.createElement(P.a, { themeItem: 'color' }, function (t) {
+                        return v.a.createElement(j.a, {
+                          accessibilityLabel: L,
                           autoFocus: t,
-                          layout: v.a.shouldRenderAsModal(r) ? 'one-row' : 'two-rows',
+                          layout: g.a.shouldRenderAsModal(r) ? 'one-row' : 'two-rows',
                           onChange: e._handleColorChange,
-                          options: L,
-                          value: _.a.theme.primaryColorName,
+                          options: N,
+                          value: S.a.theme.primaryColorName,
                         })
                       })
                     })
@@ -1210,9 +1217,9 @@
               ]),
               r
             )
-          })(b.Component),
+          })(v.a.Component),
         )
-      t.a = N
+      t.a = B
     },
   },
 ])

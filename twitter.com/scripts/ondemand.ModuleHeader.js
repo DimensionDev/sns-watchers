@@ -1,37 +1,38 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [214],
+  [217],
   {
     RoyM: function (e, t, n) {
       'use strict'
       var r = n('ERkP'),
+        a = n.n(r),
         o = (n('JtPf'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP'), n('zb92')),
-        a = Object(o.a)({
+        c = Object(o.a)({
           loader: function () {
-            return n.e(167).then(n.bind(null, 'ACNv'))
+            return n.e(169).then(n.bind(null, 'ACNv'))
           },
         }),
-        c = n('4bW+'),
-        i = n('IG7M'),
-        l = n('rHpw'),
-        u = n('Irs7'),
-        s = l.a.create(function (e) {
+        i = n('4bW+'),
+        l = n('IG7M'),
+        u = n('rHpw'),
+        s = n('Irs7'),
+        d = u.a.create(function (e) {
           return { curationControl: { marginStart: e.spaces.space20 } }
         })
-      t.a = Object(u.a)(function (e) {
+      t.a = Object(s.a)(function (e) {
         var t = e.analytics,
           n = e.feedbackItems,
-          o = e.isDisplayedOnMedia
+          r = e.isDisplayedOnMedia
         if (n && n.length > 0) {
-          return r.createElement(i.a, {
+          return a.a.createElement(l.a, {
             onClick: function () {
               return t.scribe({ element: 'caret', action: 'click' })
             },
             renderActionMenu: function (e) {
-              return r.createElement(a, { actionItems: n, onClose: e })
+              return a.a.createElement(c, { actionItems: n, onClose: e })
             },
-            style: s.curationControl,
-            testID: c.a.caret,
-            withDarkBackground: o,
+            style: d.curationControl,
+            testID: i.a.caret,
+            withDarkBackground: r,
           })
         }
         return null
@@ -41,43 +42,44 @@
       'use strict'
       n.r(t)
       var r = n('ezF+'),
-        o = n('VPAj'),
-        a = n('ERkP'),
-        c = n('RoyM'),
-        i = n('6vad'),
-        l = function (e) {
+        a = n('VPAj'),
+        o = n('ERkP'),
+        c = n.n(o),
+        i = n('RoyM'),
+        l = n('6vad'),
+        u = function (e) {
           var t = e.entry,
             n = e.feedbackItems,
             r = t.content.header,
-            o = r.icon,
-            l = r.landingUrl,
+            a = r.icon,
+            o = r.landingUrl,
             u = r.renderCustomControl,
             s = r.socialContext,
             d = r.text,
             f = s && s.generalContext && s.generalContext.text,
-            m = a.useMemo(
+            m = c.a.useMemo(
               function () {
-                return u ? u() : a.createElement(c.a, { feedbackItems: n })
+                return u ? u() : c.a.createElement(i.a, { feedbackItems: n })
               },
               [n, u],
             )
-          return a.createElement(i.b, { icon: o, landingUrl: l, rightControl: m, subtext: f, text: d })
+          return c.a.createElement(l.b, { icon: a, landingUrl: o, rightControl: m, subtext: f, text: d })
         },
-        u = a.memo(l),
-        s = { viewType: 'module_header' },
-        d = r
+        s = c.a.memo(u),
+        d = { viewType: 'module_header' },
+        f = r
           .b({
-            component: u,
+            component: s,
             feedbackEntrySelector: function (e) {
               return e.content.timelineModule
             },
-            shouldDisplayBorder: Object(o.a)(!1),
+            shouldDisplayBorder: Object(a.a)(!1),
             getBehavioralEventContextOverride: function () {
-              return s
+              return d
             },
           })
           .getHandler()
-      t.default = d
+      t.default = f
     },
   },
 ])

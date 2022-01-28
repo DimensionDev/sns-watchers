@@ -4,39 +4,40 @@
     '0mK8': function (e, t, a) {
       'use strict'
       a.d(t, 'a', function () {
-        return d
+        return m
       }),
         a.d(t, 'b', function () {
-          return m
+          return p
         }),
         a.d(t, 'c', function () {
-          return p
+          return f
         })
       a('ho0z'), a('uFXj')
       var r = a('ERkP'),
-        n = a('MWbm'),
-        c = a('GcQN'),
-        o = a('PU7B'),
-        i = a('/WPq'),
-        l = a('78ol'),
-        s = a('jV+4'),
-        u = a('rHpw'),
-        d = function (e) {
+        n = a.n(r),
+        c = a('MWbm'),
+        o = a('GcQN'),
+        i = a('PU7B'),
+        l = a('/WPq'),
+        s = a('78ol'),
+        u = a('jV+4'),
+        d = a('rHpw'),
+        m = function (e) {
           var t = e.author,
             a = e.color,
-            n = void 0 === a ? 'normal' : a,
+            r = void 0 === a ? 'normal' : a,
             c = e.size,
             o = void 0 === c ? 'subtext2' : c,
             i = e.style,
             l = e.withHoverCard,
-            u = void 0 === l || l,
+            s = void 0 === l || l,
             d = e.withLink,
             m = void 0 !== d && d,
             p = e.withScreenName,
-            h = void 0 !== p && p
-          return r.createElement(s.a, {
+            f = void 0 !== p && p
+          return n.a.createElement(u.a, {
             avatarSize: { subtext2: 'small', body: 'medium', headline1: 'large' }[o],
-            color: n,
+            color: r,
             isProtected: t.protected,
             isVerified: t.verified,
             name: t.name,
@@ -44,33 +45,33 @@
             profileImageUrl: t.profile_image_url_https,
             screenName: t.screen_name,
             screenNameSize: o,
-            style: [f.authorUserName, i],
-            withHoverCard: u,
+            style: [h.authorUserName, i],
+            withHoverCard: s,
             withLink: m,
-            withScreenName: h,
+            withScreenName: f,
           })
         },
-        m = function (e) {
-          var t = e.style
-          return r.createElement(
-            n.a,
-            { style: [f.lightningBadge, t] },
-            r.createElement(c.a, { style: f.lightningIcon }),
-          )
-        },
         p = function (e) {
-          var t = e.icon
-          return r.createElement(
-            n.a,
-            { style: f.placeholderIconContainer },
-            'news' === t
-              ? r.createElement(o.a, { style: f.placeholderIcon })
-              : 'lists' === t
-              ? r.createElement(i.a, { style: f.placeholderIcon })
-              : r.createElement(l.a, { style: f.placeholderIcon }),
+          var t = e.style
+          return n.a.createElement(
+            c.a,
+            { style: [h.lightningBadge, t] },
+            n.a.createElement(o.a, { style: h.lightningIcon }),
           )
         },
-        f = u.a.create(function (e) {
+        f = function (e) {
+          var t = e.icon
+          return n.a.createElement(
+            c.a,
+            { style: h.placeholderIconContainer },
+            'news' === t
+              ? n.a.createElement(i.a, { style: h.placeholderIcon })
+              : 'lists' === t
+              ? n.a.createElement(l.a, { style: h.placeholderIcon })
+              : n.a.createElement(s.a, { style: h.placeholderIcon }),
+          )
+        },
+        h = d.a.create(function (e) {
           return {
             authorUserName: { alignItems: 'center' },
             lightningBadge: {
@@ -141,34 +142,35 @@
       'use strict'
       a('hBvt')
       var r = a('ERkP'),
-        n = a('cm6r'),
-        c = a('rHpw'),
-        o = a('MWbm'),
-        i = function (e) {
+        n = a.n(r),
+        c = a('cm6r'),
+        o = a('rHpw'),
+        i = a('MWbm'),
+        l = function (e) {
           var t = e.accessibilityLabel,
             a = e.containerStyle,
-            c = e.isCompact,
-            i = e.link,
-            s = e.lower,
+            r = e.isCompact,
+            o = e.link,
+            l = e.lower,
             u = e.onClick,
             d = e.stackLayoutLowerStyle,
             m = e.stackLayoutUpperStyle,
             p = e.upper,
             f = e.withInteractiveStyling,
-            h = r.createElement(
-              r.Fragment,
+            h = n.a.createElement(
+              n.a.Fragment,
               null,
-              r.createElement(o.a, { style: [l.defaultUpperContainerStyle, m, c && { height: 'auto' }] }, p),
-              s ? r.createElement(o.a, { style: [l.defaultLowerContainerStyle, d] }, s) : null,
+              n.a.createElement(i.a, { style: [s.defaultUpperContainerStyle, m, r && { height: 'auto' }] }, p),
+              l ? n.a.createElement(i.a, { style: [s.defaultLowerContainerStyle, d] }, l) : null,
             )
-          return r.createElement(
-            n.a,
-            { accessibilityLabel: t, interactive: f, link: i, onClick: u, style: [l.root, a] },
+          return n.a.createElement(
+            c.a,
+            { accessibilityLabel: t, interactive: f, link: o, onClick: u, style: [s.root, a] },
             h,
           )
         }
-      i.defaultProps = { withInteractiveStyling: !1 }
-      var l = c.a.create(function (e) {
+      l.defaultProps = { withInteractiveStyling: !1 }
+      var s = o.a.create(function (e) {
         return {
           root: { padding: e.spaces.space12, borderRadius: e.borderRadii.large },
           defaultLowerContainerStyle: { marginTop: e.spaces.space12, justifyContent: 'flex-end' },
@@ -179,12 +181,12 @@
           },
         }
       })
-      t.a = i
+      t.a = l
     },
     Nxr7: function (e, t, a) {
       'use strict'
       a.d(t, 'a', function () {
-        return G
+        return H
       })
       a('OZaJ')
       var r = a('VrFO'),
@@ -202,18 +204,19 @@
         h = a('KEM+'),
         g = a.n(h),
         b = (a('2G9S'), a('Blm6'), a('hBpG'), a('ERkP')),
-        y = a('t62R'),
-        C = 864e5,
-        v = function (e) {
+        y = a.n(b),
+        C = a('t62R'),
+        v = 864e5,
+        S = function (e) {
           var t = new Date().setHours(0, 0, 0, 0),
-            a = t + C
+            a = t + v
           return e >= t && e < a ? 0 : e >= a && e < t + 1728e5 ? 1 : -1
         },
-        S = a('3XMw'),
-        w = a.n(S),
-        E = a('pjBI'),
-        R = a('gmfB')
-      function I(e) {
+        w = a('3XMw'),
+        E = a.n(w),
+        R = a('pjBI'),
+        I = a('gmfB')
+      function P(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -234,19 +237,19 @@
           return m()(this, a)
         }
       }
-      var P = w.a.ccaa970e,
-        _ = w.a.d725a288,
-        k = w.a.db355331,
-        x = w.a.a8428d5e,
-        T = w.a.a7aad8b9,
-        O = w.a.e431f1aa,
-        z = w.a.a7391707,
-        L = w.a.d2dbfa91,
-        N = w.a.cd734f65,
-        B = w.a.c8891d06,
-        G = (function (e) {
+      var _ = E.a.ccaa970e,
+        k = E.a.d725a288,
+        x = E.a.db355331,
+        T = E.a.a8428d5e,
+        O = E.a.a7aad8b9,
+        z = E.a.e431f1aa,
+        L = E.a.a7391707,
+        N = E.a.d2dbfa91,
+        B = E.a.cd734f65,
+        G = E.a.c8891d06,
+        H = (function (e) {
           u()(a, e)
-          var t = I(a)
+          var t = P(a)
           function a() {
             var e
             n()(this, a)
@@ -256,42 +259,42 @@
               g()(l()(e), '_renderCategory', function () {
                 var t = e.props.category
                 return t
-                  ? b.createElement(y.b, { align: 'left', numberOfLines: 1, size: 'subtext2', weight: 'bold' }, t)
+                  ? y.a.createElement(C.b, { align: 'left', numberOfLines: 1, size: 'subtext2', weight: 'bold' }, t)
                   : null
               }),
               g()(l()(e), '_renderGameScheduledDateTime', function () {
                 var t = e.props.startTimeMillis
                 if (t) {
                   var a = new Date(parseInt(t, 10)),
-                    r = v(a)
+                    r = S(a)
                   return -1 === r ? e._renderDateTime(a) : e._renderTodayTomorrow(r, a)
                 }
                 return null
               }),
               g()(l()(e), '_renderTodayTomorrow', function (e, t) {
-                var a = _(t)
-                return b.createElement(
-                  E.a,
+                var a = k(t)
+                return y.a.createElement(
+                  R.a,
                   null,
-                  b.createElement(y.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }, 0 === e ? N : B),
-                  b.createElement(y.b, { color: 'gray700', size: 'subtext2' }, a),
+                  y.a.createElement(C.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }, 0 === e ? B : G),
+                  y.a.createElement(C.b, { color: 'gray700', size: 'subtext2' }, a),
                 )
               }),
               g()(l()(e), '_renderDateTime', function (e) {
-                var t = _(e),
-                  a = P(e)
-                return b.createElement(
-                  E.a,
+                var t = k(e),
+                  a = _(e)
+                return y.a.createElement(
+                  R.a,
                   null,
-                  b.createElement(y.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }, a),
-                  b.createElement(y.b, { color: 'gray700', size: 'subtext2' }, t),
+                  y.a.createElement(C.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }, a),
+                  y.a.createElement(C.b, { color: 'gray700', size: 'subtext2' }, t),
                 )
               }),
               g()(l()(e), '_renderGameStateValue', function (t, a) {
                 var r = e.props.gameClockPeriod,
                   n = e._getWinnerName(),
-                  c = t && n ? k({ team: n }) : a && r ? r : void 0
-                return c ? b.createElement(y.b, { color: 'gray700', numberOfLines: 1, size: 'subtext2' }, c) : null
+                  c = t && n ? x({ team: n }) : a && r ? r : void 0
+                return c ? y.a.createElement(C.b, { color: 'gray700', numberOfLines: 1, size: 'subtext2' }, c) : null
               }),
               g()(l()(e), '_getWinnerName', function () {
                 var t = e.props,
@@ -315,32 +318,32 @@
                   var e = this.props,
                     t = e.gameState,
                     a = e.withCategory,
-                    r = t === R.a.Scheduled,
-                    n = t === R.a.InProgress,
-                    c = t === R.a.Completed
-                  return b.createElement(
-                    b.Fragment,
+                    r = t === I.a.Scheduled,
+                    n = t === I.a.InProgress,
+                    c = t === I.a.Completed
+                  return y.a.createElement(
+                    y.a.Fragment,
                     null,
                     r
                       ? this._renderGameScheduledDateTime()
-                      : b.createElement(
-                          E.a,
+                      : y.a.createElement(
+                          R.a,
                           null,
-                          b.createElement(
-                            y.b,
+                          y.a.createElement(
+                            C.b,
                             { color: n ? 'magenta500' : 'gray700', numberOfLines: 1, size: 'subtext2', weight: 'bold' },
                             (function (e) {
                               switch (e) {
-                                case R.a.Scheduled:
-                                  return x
-                                case R.a.InProgress:
+                                case I.a.Scheduled:
                                   return T
-                                case R.a.Completed:
+                                case I.a.InProgress:
                                   return O
-                                case R.a.Postponed:
+                                case I.a.Completed:
                                   return z
-                                case R.a.Cancelled:
+                                case I.a.Postponed:
                                   return L
+                                case I.a.Cancelled:
+                                  return N
                                 default:
                                   return null
                               }
@@ -355,8 +358,8 @@
             ]),
             a
           )
-        })(b.Component)
-      g()(G, 'defaultProps', { withCategory: !0 })
+        })(y.a.Component)
+      g()(H, 'defaultProps', { withCategory: !0 })
     },
     ajvb: function (e, t, a) {
       'use strict'
@@ -404,7 +407,7 @@
     jUPy: function (e, t, a) {
       'use strict'
       a.d(t, 'a', function () {
-        return z
+        return L
       })
       a('OZaJ')
       var r = a('VrFO'),
@@ -422,15 +425,16 @@
         h = a('KEM+'),
         g = a.n(h),
         b = (a('2G9S'), a('hBvt'), a('z84I'), a('ERkP')),
-        y = a('IJsT'),
-        C = a('Nxr7'),
-        v = (a('yH/f'), a('TIdA')),
-        S = a('t62R'),
-        w = a('A91F'),
-        E = a('gmfB'),
-        R = a('rHpw'),
-        I = a('MWbm')
-      function P(e) {
+        y = a.n(b),
+        C = a('IJsT'),
+        v = a('Nxr7'),
+        S = (a('yH/f'), a('TIdA')),
+        w = a('t62R'),
+        E = a('A91F'),
+        R = a('gmfB'),
+        I = a('rHpw'),
+        P = a('MWbm')
+      function _(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -451,10 +455,10 @@
           return m()(this, a)
         }
       }
-      var _ = Object.freeze({ SCORE: 'score', SECONDARY_SCORE: 'secondaryScore' }),
-        k = (function (e) {
+      var k = Object.freeze({ SCORE: 'score', SECONDARY_SCORE: 'secondaryScore' }),
+        x = (function (e) {
           u()(a, e)
-          var t = P(a)
+          var t = _(a)
           function a() {
             var e
             n()(this, a)
@@ -464,10 +468,10 @@
               g()(l()(e), 'state', { imageError: !1 }),
               g()(l()(e), '_renderTeamName', function () {
                 var t = e.props.team.shortName
-                return b.createElement(
-                  I.a,
-                  { style: x.teamNameContainer },
-                  b.createElement(S.b, { color: 'white', numberOfLines: 1, weight: 'heavy' }, t),
+                return y.a.createElement(
+                  P.a,
+                  { style: T.teamNameContainer },
+                  y.a.createElement(w.b, { color: 'white', numberOfLines: 1, weight: 'heavy' }, t),
                 )
               }),
               g()(l()(e), '_renderImage', function () {
@@ -477,12 +481,12 @@
                   n = r.imageUrl,
                   c = r.logo,
                   o = e.state.imageError,
-                  i = (!c && !n) || o ? x.translucent : {},
-                  l = c ? w.a.exact(c.width / c.height) : w.a.SQUARE
-                return b.createElement(
-                  I.a,
-                  { style: [x.imageContainer, i, a && x.compactImageContainer] },
-                  b.createElement(v.a, {
+                  i = (!c && !n) || o ? T.translucent : {},
+                  l = c ? E.a.exact(c.width / c.height) : E.a.SQUARE
+                return y.a.createElement(
+                  P.a,
+                  { style: [T.imageContainer, i, a && T.compactImageContainer] },
+                  y.a.createElement(S.a, {
                     accessibilityLabel: '',
                     aspectMode: l,
                     image: c || n || '',
@@ -504,16 +508,18 @@
                   i = r.secondaryScore,
                   l = c === n,
                   s = !n,
-                  u = a === E.a.Completed && !l && !s,
+                  u = a === R.a.Completed && !l && !s,
                   d = e._shouldRenderScore(),
-                  m = e._getTeamScoreSize(_.SCORE),
-                  p = i ? e._getTeamScoreSize(_.SECONDARY_SCORE) : void 0
+                  m = e._getTeamScoreSize(k.SCORE),
+                  p = i ? e._getTeamScoreSize(k.SECONDARY_SCORE) : void 0
                 return d
-                  ? b.createElement(
-                      I.a,
-                      { style: [x.teamScore, u && x.losingTeamScore] },
-                      b.createElement(S.b, { color: 'white', numberOfLines: 1, size: m, weight: 'heavy' }, o),
-                      i ? b.createElement(S.b, { color: 'white', numberOfLines: 1, size: p, weight: 'bold' }, i) : null,
+                  ? y.a.createElement(
+                      P.a,
+                      { style: [T.teamScore, u && T.losingTeamScore] },
+                      y.a.createElement(w.b, { color: 'white', numberOfLines: 1, size: m, weight: 'heavy' }, o),
+                      i
+                        ? y.a.createElement(w.b, { color: 'white', numberOfLines: 1, size: p, weight: 'bold' }, i)
+                        : null,
                     )
                   : null
               }),
@@ -522,9 +528,9 @@
                   r = a.isCompact
                 if (!!!a.team.secondaryScore) return r ? 'headline1' : 'title4'
                 switch (t) {
-                  case _.SCORE:
+                  case k.SCORE:
                     return r ? 'subtext2' : 'headline1'
-                  case _.SECONDARY_SCORE:
+                  case k.SECONDARY_SCORE:
                     return r ? 'subtext3' : 'body'
                   default:
                     return
@@ -532,7 +538,7 @@
               }),
               g()(l()(e), '_shouldRenderScore', function () {
                 var t = e.props.gameState
-                return t === E.a.Completed || t === E.a.InProgress
+                return t === R.a.Completed || t === R.a.InProgress
               }),
               e
             )
@@ -549,13 +555,13 @@
                     n = {
                       backgroundColor:
                         (r && 'rgb('.concat(r.red, ', ').concat(r.green, ', ').concat(r.blue, ')')) ||
-                        R.a.theme.colors[t],
+                        I.a.theme.colors[t],
                     },
                     c = this._shouldRenderScore(),
                     o = !a || !c
-                  return b.createElement(
-                    I.a,
-                    { style: [x.root, n, a && x.compactRoot] },
+                  return y.a.createElement(
+                    P.a,
+                    { style: [T.root, n, a && T.compactRoot] },
                     this._renderImage(),
                     o ? this._renderTeamName() : null,
                     this._renderScore(),
@@ -565,9 +571,9 @@
             ]),
             a
           )
-        })(b.Component)
-      g()(k, 'defaultProps', { isCompact: !1 })
-      var x = R.a.create(function (e) {
+        })(y.a.Component)
+      g()(x, 'defaultProps', { isCompact: !1 })
+      var T = I.a.create(function (e) {
           return {
             root: { flexDirection: 'row', height: e.spaces.space48, paddingHorizontal: e.spaces.space12 },
             imageContainer: { alignSelf: 'center', width: e.spaces.space32, marginRight: e.spaces.space12 },
@@ -575,8 +581,8 @@
             compactRoot: {
               height: 'calc('
                 .concat(e.spaces.space48, ' - (')
-                .concat(R.a.theme.spaces.space1, ' + ')
-                .concat(R.a.theme.spaces.space2, '))'),
+                .concat(I.a.theme.spaces.space1, ' + ')
+                .concat(I.a.theme.spaces.space2, '))'),
             },
             losingTeamScore: { opacity: 0.5 },
             teamNameContainer: { alignSelf: 'center' },
@@ -584,8 +590,8 @@
             translucent: { borderRadius: e.borderRadii.infinite, backgroundColor: e.colors.white, opacity: 0.4 },
           }
         }),
-        T = k
-      function O(e) {
+        O = x
+      function z(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -606,9 +612,9 @@
           return m()(this, a)
         }
       }
-      var z = (function (e) {
+      var L = (function (e) {
         u()(a, e)
-        var t = O(a)
+        var t = z(a)
         function a() {
           var e
           n()(this, a)
@@ -625,7 +631,7 @@
                 i = t.startTimeMillis,
                 l = t.teams,
                 s = t.winnerId
-              return b.createElement(C.a, {
+              return y.a.createElement(v.a, {
                 category: a,
                 gameClock: r,
                 gameClockPeriod: n,
@@ -642,7 +648,7 @@
                 c = r.isCompact,
                 o = r.winnerId,
                 i = t.id
-              return b.createElement(T, {
+              return y.a.createElement(O, {
                 fallbackColor: a % 2 == 0 ? 'gray300' : 'gray700',
                 gameState: n,
                 isCompact: c,
@@ -668,7 +674,7 @@
                   o = e.teams
                 if (o) {
                   var i = o && o.map(this._renderTeamRow)
-                  return b.createElement(y.a, {
+                  return y.a.createElement(C.a, {
                     accessibilityLabel: t,
                     containerStyle: a,
                     isCompact: r,
@@ -685,8 +691,8 @@
           ]),
           a
         )
-      })(b.Component)
-      g()(z, 'defaultProps', { isCompact: !1 })
+      })(y.a.Component)
+      g()(L, 'defaultProps', { isCompact: !1 })
     },
     qB1G: function (e, t, a) {
       'use strict'
@@ -709,51 +715,52 @@
       a('yH/f'), a('2G9S')
       var r = a('0mK8'),
         n = a('ERkP'),
-        c = a('GliE'),
-        o = a('YeIG'),
-        i = a('MWbm'),
-        l = a('TIdA'),
-        s = a('A91F'),
-        u = a('9Xij'),
-        d = a('jUPy'),
-        m = a('rHpw'),
-        p = Object.freeze({ Fixed: 'fixed', Variable: 'variable' }),
-        f = function (e) {
+        c = a.n(n),
+        o = a('GliE'),
+        i = a('YeIG'),
+        l = a('MWbm'),
+        s = a('TIdA'),
+        u = a('A91F'),
+        d = a('9Xij'),
+        m = a('jUPy'),
+        p = a('rHpw'),
+        f = Object.freeze({ Fixed: 'fixed', Variable: 'variable' }),
+        h = function (e) {
           var t = e.cropCandidates,
             a = e.dataSaverMode,
-            c = e.icon,
-            d = e.image,
+            n = e.icon,
+            o = e.image,
             m = e.isCellWithProminentSocialContext,
             p = e.scoreEvent,
             f = e.type,
-            y = g({ isCellWithProminentSocialContext: m, type: f })
-          return n.createElement(
-            i.a,
-            { style: [b.coverContainer, y] },
+            h = b({ isCellWithProminentSocialContext: m, type: f })
+          return c.a.createElement(
+            l.a,
+            { style: [y.coverContainer, h] },
             p
-              ? h(p)
-              : !d || Object(o.a)(d) || a
-              ? a || Object(o.a)(d)
-                ? n.createElement(u.a, { ratio: 1 }, n.createElement(r.c, { icon: c }))
+              ? g(p)
+              : !o || Object(i.a)(o) || a
+              ? a || Object(i.a)(o)
+                ? c.a.createElement(d.a, { ratio: 1 }, c.a.createElement(r.c, { icon: n }))
                 : null
-              : n.createElement(l.a, { accessibilityLabel: '', aspectMode: s.a.SQUARE, cropCandidates: t, image: d }),
+              : c.a.createElement(s.a, { accessibilityLabel: '', aspectMode: u.a.SQUARE, cropCandidates: t, image: o }),
           )
         },
-        h = function (e) {
+        g = function (e) {
           var t = e.category,
             a = e.eventState,
             r = e.gameClock,
-            o = e.gameClockPeriod,
+            n = e.gameClockPeriod,
             i = e.participants,
             l = e.startTimeMillis,
             s = e.winnerId,
-            u = Object(c.a)(t, a, i, o, s)
-          return n.createElement(d.a, {
+            u = Object(o.a)(t, a, i, n, s)
+          return c.a.createElement(m.a, {
             accessibilityLabel: u,
             category: t,
-            containerStyle: b.scoreCardTile,
+            containerStyle: y.scoreCardTile,
             gameClock: r,
-            gameClockPeriod: o,
+            gameClockPeriod: n,
             gameState: a,
             isCompact: !0,
             startTimeMillis: l,
@@ -761,46 +768,46 @@
             winnerId: s,
           })
         },
-        g = function (e) {
+        b = function (e) {
           var t = e.isCellWithProminentSocialContext
           switch (e.type) {
-            case p.Fixed:
-              return (t && b.fixedCellThumbnailWithProminentSocialContext) || b.fixedCellThumbnail
-            case p.Variable:
-              return b.variableCellThumbnail
+            case f.Fixed:
+              return (t && y.fixedCellThumbnailWithProminentSocialContext) || y.fixedCellThumbnail
+            case f.Variable:
+              return y.variableCellThumbnail
             default:
               return
           }
         }
-      f.defaultProps = { type: 'variable' }
-      var b = m.a.create(function (e) {
+      h.defaultProps = { type: 'variable' }
+      var y = p.a.create(function (e) {
         return {
           coverContainer: { borderRadius: e.borderRadii.large, overflow: 'hidden' },
-          fixedCellThumbnail: { height: m.a.theme.spaces.space48, width: m.a.theme.spaces.space48 },
+          fixedCellThumbnail: { height: p.a.theme.spaces.space48, width: p.a.theme.spaces.space48 },
           fixedCellThumbnailWithProminentSocialContext: {
             height: 'calc('
-              .concat(m.a.theme.spaces.space48, ' + ')
-              .concat(m.a.theme.spaces.space40, ' + ')
-              .concat(m.a.theme.spaces.space1, ' + ')
-              .concat(m.a.theme.spaces.space2, ')'),
+              .concat(p.a.theme.spaces.space48, ' + ')
+              .concat(p.a.theme.spaces.space40, ' + ')
+              .concat(p.a.theme.spaces.space1, ' + ')
+              .concat(p.a.theme.spaces.space2, ')'),
             width: 'calc('
-              .concat(m.a.theme.spaces.space48, ' + ')
-              .concat(m.a.theme.spaces.space40, ' + ')
-              .concat(m.a.theme.spaces.space1, ' + ')
-              .concat(m.a.theme.spaces.space2, ')'),
+              .concat(p.a.theme.spaces.space48, ' + ')
+              .concat(p.a.theme.spaces.space40, ' + ')
+              .concat(p.a.theme.spaces.space1, ' + ')
+              .concat(p.a.theme.spaces.space2, ')'),
           },
           scoreCardTile: { padding: 0 },
           variableCellThumbnail: {
-            maxHeight: 'calc('.concat(m.a.theme.spaces.space48, ' * 2)'),
-            maxWidth: 'calc('.concat(m.a.theme.spaces.space48, ' * 2)'),
-            minHeight: 'calc('.concat(m.a.theme.spaces.space48, ' + ').concat(m.a.theme.spaces.space20, ')'),
-            minWidth: 'calc('.concat(m.a.theme.spaces.space48, ' + ').concat(m.a.theme.spaces.space20, ')'),
+            maxHeight: 'calc('.concat(p.a.theme.spaces.space48, ' * 2)'),
+            maxWidth: 'calc('.concat(p.a.theme.spaces.space48, ' * 2)'),
+            minHeight: 'calc('.concat(p.a.theme.spaces.space48, ' + ').concat(p.a.theme.spaces.space20, ')'),
+            minWidth: 'calc('.concat(p.a.theme.spaces.space48, ' + ').concat(p.a.theme.spaces.space20, ')'),
             height: '15%',
             width: '15%',
           },
         }
       })
-      t.a = f
+      t.a = h
     },
   },
 ])

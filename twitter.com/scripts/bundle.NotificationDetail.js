@@ -5,13 +5,13 @@
       'use strict'
       n.r(t),
         n.d(t, 'SafetyReportNotificationScreen', function () {
-          return T
+          return C
         })
       n('OZaJ')
       var r = n('VrFO'),
         o = n.n(r),
-        i = n('Y9Ll'),
-        a = n.n(i),
+        a = n('Y9Ll'),
+        i = n.n(a),
         c = n('1Pcy'),
         l = n.n(c),
         f = n('5Yy7'),
@@ -33,17 +33,18 @@
           n('LW0h'),
           n('+KXO'),
           n('ERkP')),
-        m = n('jHSc'),
-        _ = n('qzfk'),
-        w = n('3XMw'),
-        k = n.n(w),
-        g = n('8jkQ'),
-        R = n('5FtR'),
-        O = n('/yvb'),
-        U = n('bPFD'),
-        P = n('rHpw'),
-        S = n('7JQg')
-      function j(e) {
+        m = n.n(b),
+        _ = n('jHSc'),
+        w = n('qzfk'),
+        k = n('3XMw'),
+        g = n.n(k),
+        R = n('8jkQ'),
+        O = n('5FtR'),
+        U = n('/yvb'),
+        P = n('bPFD'),
+        S = n('rHpw'),
+        j = n('7JQg')
+      function E(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -64,19 +65,19 @@
           return p()(this, n)
         }
       }
-      var E = k.a.c380d684,
-        x = k.a.f15bfdb3,
-        q = k.a.c7714935,
-        F = k.a.b772cd65,
-        T = (function (e) {
+      var x = g.a.c380d684,
+        q = g.a.f15bfdb3,
+        F = g.a.c7714935,
+        T = g.a.b772cd65,
+        C = (function (e) {
           s()(n, e)
-          var t = j(n)
+          var t = E(n)
           function n() {
             var e
             o()(this, n)
-            for (var r = arguments.length, i = new Array(r), a = 0; a < r; a++) i[a] = arguments[a]
+            for (var r = arguments.length, a = new Array(r), i = 0; i < r; i++) a[i] = arguments[i]
             return (
-              (e = t.call.apply(t, [this].concat(i))),
+              (e = t.call.apply(t, [this].concat(a))),
               d()(l()(e), '_handleDone', function () {
                 e.props.history.replace('/notifications')
               }),
@@ -84,7 +85,7 @@
             )
           }
           return (
-            a()(n, [
+            i()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -92,25 +93,25 @@
                     t = this._getSafeUrl(),
                     n = this._getTitle(t),
                     r = this._getParams(),
-                    o = b.createElement(O.a, { onPress: this._handleDone, size: 'small', type: 'brandFilled' }, F),
-                    i = -1 !== (null == t ? void 0 : t.indexOf('appealable_label'))
+                    o = m.a.createElement(U.a, { onPress: this._handleDone, size: 'small', type: 'brandFilled' }, T),
+                    a = -1 !== (null == t ? void 0 : t.indexOf('appealable_label'))
                   return t
-                    ? b.createElement(
-                        m.b,
+                    ? m.a.createElement(
+                        _.b,
                         {
-                          backButtonType: i ? 'back' : 'close',
+                          backButtonType: a ? 'back' : 'close',
                           backLocation: '/notifications',
                           history: e,
-                          rightControl: i ? o : void 0,
+                          rightControl: a ? o : void 0,
                           title: n,
                         },
-                        b.createElement(U.a, {
+                        m.a.createElement(P.a, {
                           allowForms: !0,
                           src: 'https://twitter.com/'.concat(t, '?').concat(r),
-                          style: C.iframe,
+                          style: H.iframe,
                         }),
                       )
-                    : b.createElement(R.a, { to: '/notifications' })
+                    : m.a.createElement(O.a, { to: '/notifications' })
                 },
               },
               {
@@ -118,17 +119,17 @@
                 value: function () {
                   var e = this.props.location,
                     t = e.query && 'string' == typeof e.query.relativeUrl ? e.query.relativeUrl : void 0
-                  if (t && g.b.isSafetyNotificationsUrl(t)) return t
+                  if (t && R.b.isSafetyNotificationsUrl(t)) return t
                 },
               },
               {
                 key: '_getTitle',
                 value: function (e) {
                   return null != e && e.endsWith('review_settings')
-                    ? x
-                    : -1 !== (null == e ? void 0 : e.indexOf('appealable_label'))
                     ? q
-                    : E
+                    : -1 !== (null == e ? void 0 : e.indexOf('appealable_label'))
+                    ? F
+                    : x
                 },
               },
               {
@@ -138,7 +139,7 @@
                     t = {
                       client_location: [e.page, e.section, e.component].join(':'),
                       client_referer: window.location.pathname,
-                      client_app_id: Object(_.a)().clientAppId,
+                      client_app_id: Object(w.a)().clientAppId,
                     }
                   return Object.keys(t)
                     .filter(function (e) {
@@ -153,11 +154,11 @@
             ]),
             n
           )
-        })(b.PureComponent),
-        C = P.a.create(function (e) {
+        })(m.a.PureComponent),
+        H = S.a.create(function (e) {
           return { iframe: { flexGrow: 1, flexShrink: 1 } }
         })
-      t.default = Object(S.c)({ page: 'ntab', section: 'safety_report_notification' })(T)
+      t.default = Object(j.c)({ page: 'ntab', section: 'safety_report_notification' })(C)
     },
   },
 ])

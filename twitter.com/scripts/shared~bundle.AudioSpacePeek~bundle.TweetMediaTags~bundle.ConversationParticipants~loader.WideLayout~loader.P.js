@@ -4,16 +4,16 @@
     '88ay': function (e, t, r) {
       'use strict'
       r.d(t, 'c', function () {
-        return ee
+        return te
       }),
         r.d(t, 'e', function () {
-          return te
-        }),
-        r.d(t, 'f', function () {
           return re
         }),
-        r.d(t, 'd', function () {
+        r.d(t, 'f', function () {
           return ne
+        }),
+        r.d(t, 'd', function () {
+          return oe
         }),
         r.d(t, 'a', function () {
           return ce
@@ -22,9 +22,9 @@
       var n = r('m3Bd'),
         o = r.n(n),
         i = r('VrFO'),
-        c = r.n(i),
-        a = r('Y9Ll'),
-        s = r.n(a),
+        a = r.n(i),
+        c = r('Y9Ll'),
+        s = r.n(c),
         l = r('1Pcy'),
         u = r.n(l),
         d = r('5Yy7'),
@@ -38,20 +38,21 @@
         I = r('97Jx'),
         _ = r.n(I),
         g = (r('1t7P'), r('jQ/y'), r('ho0z'), r('2G9S'), r('hBpG'), r('ERkP')),
-        k = r('6rlp'),
-        C = r('zh9S'),
-        E = r('G6rE'),
-        S = r('rxPX'),
-        w = r('0KEI'),
-        A = function (e, t) {
-          return E.e.select(e, t.userId)
-        },
+        k = r.n(g),
+        C = r('6rlp'),
+        E = r('zh9S'),
+        S = r('G6rE'),
+        w = r('rxPX'),
+        A = r('0KEI'),
         R = function (e, t) {
+          return S.e.select(e, t.userId)
+        },
+        O = function (e, t) {
           return t.promotedContent
         },
-        O = Object(S.a)()
+        U = Object(w.a)()
           .propsFromState(function () {
-            return { promotedContent: R, user: A }
+            return { promotedContent: O, user: R }
           })
           .adjustStateProps(function (e) {
             var t = e.promotedContent,
@@ -60,49 +61,49 @@
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(w.createLocalApiErrorHandlerWithContextFactory)('USER_CELL_CONTAINER'),
-              log: k.a,
-              scribeAction: C.c,
+              createLocalApiErrorHandler: Object(A.createLocalApiErrorHandlerWithContextFactory)('USER_CELL_CONTAINER'),
+              log: C.a,
+              scribeAction: E.c,
             }
           }),
-        U = r('I57f'),
-        L = r('vMjK'),
-        B = r('MWbm'),
-        P = r('IG7M'),
-        D = r('rHpw'),
-        N = function (e) {
+        L = r('I57f'),
+        B = r('vMjK'),
+        P = r('MWbm'),
+        D = r('IG7M'),
+        N = r('rHpw'),
+        F = function (e) {
           var t = e.children,
             r = e.promotedContent,
             n = e.user
-          return g.createElement(
-            B.a,
-            { style: F.decorationWrapper },
+          return k.a.createElement(
+            P.a,
+            { style: T.decorationWrapper },
             t,
-            g.createElement(P.a, {
+            k.a.createElement(D.a, {
               renderActionMenu: function (e) {
-                return g.createElement(L.b, { onClose: e, promotedContent: r, user: n, view: 'follower' })
+                return k.a.createElement(B.b, { onClose: e, promotedContent: r, user: n, view: 'follower' })
               },
-              style: F.actionMenu,
+              style: T.actionMenu,
             }),
           )
         },
-        F = D.a.create(function (e) {
+        T = N.a.create(function (e) {
           return { decorationWrapper: { flexDirection: 'row' }, actionMenu: { marginLeft: e.spaces.space12 } }
         }),
-        T = r('uIZp'),
-        x = r('mN6z'),
-        j = r('caTy'),
-        M = r('3IPs'),
-        H = r('Rp9C'),
-        q = r('X04g'),
-        G = r('Re5t'),
-        K = r('TnY3'),
-        W = r('hxu0'),
-        J = r('v6aA'),
-        Y = r('7JQg'),
-        Z = r('IMA+'),
-        z = r('cFuS')
-      function X(e, t) {
+        x = r('uIZp'),
+        j = r('mN6z'),
+        M = r('caTy'),
+        H = r('3IPs'),
+        q = r('Rp9C'),
+        G = r('X04g'),
+        K = r('Re5t'),
+        W = r('TnY3'),
+        J = r('hxu0'),
+        Y = r('v6aA'),
+        Z = r('7JQg'),
+        z = r('IMA+'),
+        X = r('cFuS')
+      function Q(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -114,22 +115,22 @@
         }
         return r
       }
-      function Q(e) {
+      function V(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? X(Object(r), !0).forEach(function (t) {
+            ? Q(Object(r), !0).forEach(function (t) {
                 y()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : X(Object(r)).forEach(function (t) {
+            : Q(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      function V(e) {
+      function $(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -150,11 +151,11 @@
           return h()(this, r)
         }
       }
-      var $ = function (e) {
+      var ee = function (e) {
         var t = e.user
         return t && t.profile_image_url_https
-          ? g.createElement(
-              oe,
+          ? k.a.createElement(
+              ie,
               _()({}, e, {
                 avatarUri: t.profile_image_url_https,
                 description: t.description,
@@ -179,37 +180,37 @@
             )
           : null
       }
-      $.defaultProps = {
+      ee.defaultProps = {
         cellClickable: !0,
         decoration: null,
-        displayMode: G.a.UserCompact,
+        displayMode: K.a.UserCompact,
         followRequestReceived: !1,
         hideBlocked: !1,
-        promotedItemType: z.c.USER,
+        promotedItemType: X.c.USER,
         shouldScribeProfileClick: !0,
         shouldScribeImpression: !1,
         withFollowsYou: !1,
       }
-      var ee = function (e) {
+      var te = function (e) {
           var t = e.isDeviceFollowing,
             r = e.userId
-          return g.createElement(U.a, { isFollowing: t, style: ie.followButton, userId: r })
+          return k.a.createElement(L.a, { isFollowing: t, style: ae.followButton, userId: r })
         },
-        te = function (e) {
+        re = function (e) {
           var t = e.loggedInUserId,
             r = e.promotedContent,
             n = e.userId
           return t !== n
-            ? g.createElement(T.a, { promotedContent: r, size: 'small', style: ie.followButton, userId: n })
+            ? k.a.createElement(x.a, { promotedContent: r, size: 'small', style: ae.followButton, userId: n })
             : null
         },
-        re = function (e) {
-          return g.createElement(N, { promotedContent: e.promotedContent, user: e.user }, te(e))
-        },
         ne = function (e) {
-          return g.createElement(P.a, {
+          return k.a.createElement(F, { promotedContent: e.promotedContent, user: e.user }, re(e))
+        },
+        oe = function (e) {
+          return k.a.createElement(D.a, {
             renderActionMenu: function (t) {
-              return g.createElement(L.b, {
+              return k.a.createElement(B.b, {
                 onClose: t,
                 promotedContent: e.promotedContent,
                 user: e.user,
@@ -218,12 +219,12 @@
             },
           })
         },
-        oe = (function (e) {
+        ie = (function (e) {
           p()(r, e)
-          var t = V(r)
+          var t = $(r)
           function r() {
             var e
-            c()(this, r)
+            a()(this, r)
             for (var n = arguments.length, o = new Array(n), i = 0; i < n; i++) o[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(o))),
@@ -231,7 +232,7 @@
                 var t = e.props.shouldScribeProfileClick
                 e._handleSaveAsRecentSearch(),
                   t && e._scribeAction({ element: 'avatar', action: 'profile_click' }),
-                  e._handleAsyncPromotedEvent(z.b.PROFILE_IMAGE_CLICK)
+                  e._handleAsyncPromotedEvent(X.b.PROFILE_IMAGE_CLICK)
               }),
               y()(u()(e), '_handleCellClick', function () {
                 var t = e.props,
@@ -239,42 +240,42 @@
                   n = t.onClick,
                   o = t.screenName,
                   i = t.user,
-                  c = e._getPromotedTweetState()
+                  a = e._getPromotedTweetState()
                 e._handleSaveAsRecentSearch(),
                   e._handleScreenNameClick(),
-                  n ? n({ user: i, state: c }) : r.push({ pathname: '/'.concat(o), state: c || void 0 })
+                  n ? n({ user: i, state: a }) : r.push({ pathname: '/'.concat(o), state: a || void 0 })
               }),
               y()(u()(e), '_handleScreenNameClick', function () {
                 var t = e.props.shouldScribeProfileClick
                 e._handleSaveAsRecentSearch(),
                   t && e._scribeAction({ action: 'profile_click' }),
-                  e._handleAsyncPromotedEvent(z.b.SCREEN_NAME_CLICK)
+                  e._handleAsyncPromotedEvent(X.b.SCREEN_NAME_CLICK)
               }),
               y()(u()(e), '_handleSaveAsRecentSearch', function () {
                 var t = e.props,
                   r = t.saveAsRecentSearch,
                   n = t.shouldStoreTypeaheadItem,
                   o = t.userId
-                r && n && n(q.a.ItemType.USER) && r({ user: { id: o, type: M.a.User } })
+                r && n && n(G.a.ItemType.USER) && r({ user: { id: o, type: H.a.User } })
               }),
               y()(u()(e), '_scribeAction', function (t) {
                 var r,
                   n = e.props,
                   o = n.promotedContent,
                   i = n.scribeAction,
-                  c = n.scribeData,
-                  a = n.scribeNamespace,
+                  a = n.scribeData,
+                  c = n.scribeNamespace,
                   s = n.user,
                   l = n.userId,
                   u =
-                    null == c || null === (r = c.items) || void 0 === r
+                    null == a || null === (r = a.items) || void 0 === r
                       ? void 0
                       : r.find(function (e) {
-                          return e.item_type === q.a.ItemType.USER && e.id === l
+                          return e.item_type === G.a.ItemType.USER && e.id === l
                         }),
-                  d = c.search_details,
-                  p = { items: [Q(Q({}, u), H.a.getUserItem(s, o))], profile_id: l, search_details: d }
-                i(Q(Q({}, a), t), p)
+                  d = a.search_details,
+                  p = { items: [V(V({}, u), q.a.getUserItem(s, o))], profile_id: l, search_details: d }
+                i(V(V({}, c), t), p)
               }),
               e
             )
@@ -290,7 +291,7 @@
               {
                 key: 'shouldComponentUpdate',
                 value: function (e) {
-                  return !Object(x.a)(this.props, e)
+                  return !Object(j.a)(this.props, e)
                 },
               },
               {
@@ -324,8 +325,8 @@
                       e.shouldScribeProfileClick,
                       e.shouldStoreTypeaheadItem,
                       e.socialContext),
-                    c = e.user,
-                    a = o()(e, [
+                    a = e.user,
+                    c = o()(e, [
                       'avatarDecoration',
                       'bottomControl',
                       'cellClickable',
@@ -355,14 +356,14 @@
                       'user',
                     ])
                   return this._shouldRender()
-                    ? g.createElement(
-                        Z.a,
-                        _()({}, a, {
+                    ? k.a.createElement(
+                        z.a,
+                        _()({}, c, {
                           avatarDecoration: t,
                           bottomControl: this._renderBottomControl(),
                           decoration: this._renderDecoration(),
                           highlightedLabel: this._getHighlightedLabel(),
-                          isBlocking: c.blocking,
+                          isBlocking: a.blocking,
                           onAvatarClick: this._handleAvatarClick,
                           onCellClick: r ? this._handleCellClick : void 0,
                           onScreenNameClick: this._handleScreenNameClick,
@@ -370,7 +371,7 @@
                             ? {
                                 contextType: i.contextType,
                                 text: i.text,
-                                link: i.landingUrl ? Object(j.b)(i.landingUrl) : void 0,
+                                link: i.landingUrl ? Object(M.b)(i.landingUrl) : void 0,
                               }
                             : void 0,
                           withDarkerInteractiveBackground: n,
@@ -399,8 +400,8 @@
                     n = r.displayMode,
                     o = r.followRequestReceived,
                     i = r.isAutoblocking,
-                    c = r.isBlocking,
-                    a = r.isDeviceFollowing,
+                    a = r.isBlocking,
+                    c = r.isDeviceFollowing,
                     s = r.isFollowing,
                     l = r.promotedContent,
                     u = r.screenName,
@@ -411,8 +412,8 @@
                         displayMode: n,
                         followRequestReceived: o,
                         isAutoblocking: i,
-                        isBlocking: c,
-                        isDeviceFollowing: !!a,
+                        isBlocking: a,
+                        isDeviceFollowing: !!c,
                         isFollowing: !!s,
                         loggedInUserId: t,
                         promotedContent: l,
@@ -449,7 +450,7 @@
                   var e = this.props,
                     t = e.promotedContent,
                     r = e.promotedItemType
-                  return t && r === z.c.TWEET ? { promotedTweetState: t } : null
+                  return t && r === X.c.TWEET ? { promotedTweetState: t } : null
                 },
               },
               {
@@ -460,13 +461,13 @@
                     n = t.log,
                     o = t.promotedContent,
                     i = t.promotedItemId,
-                    c = t.promotedItemType,
-                    a = t.userId
+                    a = t.promotedItemType,
+                    c = t.userId
                   o &&
                     n({
                       disclosureType: o.disclosure_type,
-                      itemId: i || a,
-                      itemType: c,
+                      itemId: i || c,
+                      itemType: a,
                       params: { event: e, impression_id: o.impression_id },
                     }).catch(r())
                 },
@@ -480,15 +481,15 @@
                     n = e.promotedContent,
                     o = e.promotedItemType,
                     i = e.shouldScribeImpression,
-                    c = e.userId
-                  if (n && o === z.c.USER) {
-                    var a = n.disclosure_type,
+                    a = e.userId
+                  if (n && o === X.c.USER) {
+                    var c = n.disclosure_type,
                       s = n.impression_id
                     r({
-                      disclosureType: a,
-                      itemId: c,
-                      itemType: z.c.USER,
-                      params: { event: z.b.IMPRESSION, impression_id: s },
+                      disclosureType: c,
+                      itemId: a,
+                      itemType: X.c.USER,
+                      params: { event: X.b.IMPRESSION, impression_id: s },
                     }).catch(t())
                   } else i && this._scribeAction({ action: 'impression' })
                 },
@@ -496,13 +497,13 @@
             ]),
             r
           )
-        })(g.Component)
-      y()(oe, 'contextType', J.a), y()(oe, 'defaultProps', $.defaultProps)
-      var ie = D.a.create(function (e) {
+        })(k.a.Component)
+      y()(ie, 'contextType', Y.a), y()(ie, 'defaultProps', ee.defaultProps)
+      var ae = N.a.create(function (e) {
           return { followButton: { marginLeft: e.spaces.space12 } }
         }),
-        ce = Object(K.a)(Object(W.a)(O($)))
-      t.b = Object(Y.c)({ element: 'user' })(ce)
+        ce = Object(W.a)(Object(J.a)(U(ee)))
+      t.b = Object(Z.c)({ element: 'user' })(ce)
     },
     hqDb: function (e, t, r) {
       'use strict'
@@ -510,9 +511,9 @@
       var n = r('97Jx'),
         o = r.n(n),
         i = r('m3Bd'),
-        c = r.n(i),
-        a = r('VrFO'),
-        s = r.n(a),
+        a = r.n(i),
+        c = r('VrFO'),
+        s = r.n(c),
         l = r('Y9Ll'),
         u = r.n(l),
         d = r('1Pcy'),
@@ -526,40 +527,41 @@
         I = r('KEM+'),
         _ = r.n(I),
         g = (r('2G9S'), r('ERkP')),
-        k = r('k49u'),
-        C = (r('LW0h'), r('KOtZ'), r('vrRf'), r('6xIQ')),
-        E = r('kGix'),
-        S = r('G6rE'),
-        w = r('rxPX'),
-        A = r('0KEI'),
-        R = function (e, t) {
+        k = r.n(g),
+        C = r('k49u'),
+        E = (r('LW0h'), r('KOtZ'), r('vrRf'), r('6xIQ')),
+        S = r('kGix'),
+        w = r('G6rE'),
+        A = r('rxPX'),
+        R = r('0KEI'),
+        O = function (e, t) {
           return t.userIds
         },
-        O = function (e, t) {
+        U = function (e, t) {
           return t.userIds.filter(function (t) {
-            return !!S.e.select(e, t)
+            return !!w.e.select(e, t)
           })
         },
-        U = function (e, t) {
+        L = function (e, t) {
           return t.userIds.reduce(function (t, r) {
-            var n = S.e.selectFetchStatus(e, r)
-            return (t[r] = n === E.a.NONE ? E.a.LOADING : n), t
+            var n = w.e.selectFetchStatus(e, r)
+            return (t[r] = n === S.a.NONE ? S.a.LOADING : n), t
           }, {})
         },
-        L = Object(w.a)()
+        B = Object(A.a)()
           .propsFromState(function () {
             return {
-              availableUserIds: Object(C.a)(O, function (e) {
+              availableUserIds: Object(E.a)(U, function (e) {
                 return e
               }),
-              fetchStatus: Object(C.a)(O, U, R, function (e, t, r) {
-                for (var n = E.a.LOADED, o = 0; o < r.length; o++) {
+              fetchStatus: Object(E.a)(U, L, O, function (e, t, r) {
+                for (var n = S.a.LOADED, o = 0; o < r.length; o++) {
                   var i = r[o]
                   if (-1 === e.indexOf(i)) {
-                    var c = t[i] || E.a.LOADING
-                    n = n === E.a.LOADED ? c : n
+                    var a = t[i] || S.a.LOADING
+                    n = n === S.a.LOADED ? a : n
                   }
-                  if (n === E.a.LOADED) break
+                  if (n === S.a.LOADED) break
                 }
                 return n
               }),
@@ -567,46 +569,46 @@
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(A.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(R.createLocalApiErrorHandlerWithContextFactory)(
                 'USERS_LIST_CONTAINER',
               ),
-              fetchUsersIfNeeded: S.e.fetchManyIfNeeded,
+              fetchUsersIfNeeded: w.e.fetchManyIfNeeded,
             }
           }),
-        B = r('v//M'),
-        P = r('3XMw'),
-        D = r.n(P),
-        N = r('pQ3Z'),
-        F = r.n(N),
-        T = (r('z84I'), r('cFuS')),
-        x = r('Re5t'),
-        j = r('MWbm'),
-        M = r('88ay'),
-        H = function (e) {
+        P = r('v//M'),
+        D = r('3XMw'),
+        N = r.n(D),
+        F = r('pQ3Z'),
+        T = r.n(F),
+        x = (r('z84I'), r('cFuS')),
+        j = r('Re5t'),
+        M = r('MWbm'),
+        H = r('88ay'),
+        q = function (e) {
           var t = e.displayMode,
             r = e.renderUserCell,
             n = e.userIds
           e.withFinalItemBorder, e.withItemBorder
-          return g.createElement(
-            j.a,
+          return k.a.createElement(
+            M.a,
             null,
             n.map(function (e, n) {
               return r
                 ? r(e)
-                : g.createElement(M.b, {
-                    decoration: M.e,
+                : k.a.createElement(H.b, {
+                    decoration: H.e,
                     displayMode: t,
                     key: e,
-                    promotedItemType: T.c.USER,
+                    promotedItemType: x.c.USER,
                     userId: e,
                     withFollowsYou: !0,
                   })
             }),
           )
         }
-      H.defaultProps = { displayMode: x.a.UserDetailed, withFinalItemBorder: !0, withItemBorder: !1 }
-      var q = H
-      function G(e) {
+      q.defaultProps = { displayMode: j.a.UserDetailed, withFinalItemBorder: !0, withItemBorder: !1 }
+      var G = q
+      function K(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -627,16 +629,16 @@
           return v()(this, r)
         }
       }
-      var K = D.a.f5b426c2,
-        W = { viewType: 'user_list' },
-        J = L(
+      var W = N.a.f5b426c2,
+        J = { viewType: 'user_list' },
+        Y = B(
           (function (e) {
             h()(r, e)
-            var t = G(r)
+            var t = K(r)
             function r() {
               var e
               s()(this, r)
-              for (var n = arguments.length, i = new Array(n), a = 0; a < n; a++) i[a] = arguments[a]
+              for (var n = arguments.length, i = new Array(n), c = 0; c < n; c++) i[c] = arguments[c]
               return (
                 (e = t.call.apply(t, [this].concat(i))),
                 _()(p()(e), 'state', { allUsersUnavailable: !1 }),
@@ -648,14 +650,14 @@
                       t.fetchStatus,
                       t.fetchUsersIfNeeded,
                       t.userIds,
-                      c()(t, [
+                      a()(t, [
                         'availableUserIds',
                         'createLocalApiErrorHandler',
                         'fetchStatus',
                         'fetchUsersIfNeeded',
                         'userIds',
                       ]))
-                  return g.createElement(q, o()({}, n, { userIds: r }))
+                  return k.a.createElement(G, o()({}, n, { userIds: r }))
                 }),
                 _()(p()(e), '_handleFetch', function () {
                   e._fetchUsersIfNeeded()
@@ -674,16 +676,16 @@
                 {
                   key: 'componentDidUpdate',
                   value: function (e) {
-                    F()(e.userIds, this.props.userIds) || this._fetchUsersIfNeeded()
+                    T()(e.userIds, this.props.userIds) || this._fetchUsersIfNeeded()
                   },
                 },
                 {
                   key: 'render',
                   value: function () {
-                    return g.createElement(B.a, {
-                      accessibilityLabel: K,
-                      behavioralEventContext: W,
-                      fetchStatus: this.state.allUsersUnavailable ? E.a.LOADED : this.props.fetchStatus,
+                    return k.a.createElement(P.a, {
+                      accessibilityLabel: W,
+                      behavioralEventContext: J,
+                      fetchStatus: this.state.allUsersUnavailable ? S.a.LOADED : this.props.fetchStatus,
                       onRequestRetry: this._handleFetch,
                       render: this._renderContent,
                       retryable: !1,
@@ -704,12 +706,12 @@
                       },
                       o(
                         ((e = {}),
-                        _()(e, k.a.AddressBookLookupNotFound, {
+                        _()(e, C.a.AddressBookLookupNotFound, {
                           customAction: function () {
                             0 === n.length && t.setState({ allUsersUnavailable: !0 })
                           },
                         }),
-                        _()(e, k.a.OtherUserSuspended, {
+                        _()(e, C.a.OtherUserSuspended, {
                           customAction: function () {
                             0 === n.length && t.setState({ allUsersUnavailable: !0 })
                           },
@@ -722,20 +724,21 @@
               ]),
               r
             )
-          })(g.Component),
+          })(k.a.Component),
         )
-      t.a = J
+      t.a = Y
     },
     hxu0: function (e, t, r) {
       'use strict'
       var n = r('97Jx'),
         o = r.n(n),
         i = r('ERkP'),
+        a = r.n(i),
         c = r('vqbU')
       t.a = function (e) {
         return function (t) {
-          return i.createElement(c.a.Consumer, null, function (r) {
-            return i.createElement(e, o()({}, t, { isInSidebar: r }))
+          return a.a.createElement(c.a.Consumer, null, function (r) {
+            return a.a.createElement(e, o()({}, t, { isInSidebar: r }))
           })
         }
       }

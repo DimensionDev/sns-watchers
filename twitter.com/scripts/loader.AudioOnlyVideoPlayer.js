@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [163],
+  [165],
   {
     'Pc/x': function (e, t, n) {
       'use strict'
@@ -385,10 +385,10 @@
       'use strict'
       n.r(t),
         n.d(t, '__DANGEROUS_IMPORT_VIDEOPLAYER_BASE__', function () {
-          return E
+          return C
         }),
         n.d(t, '__DANGEROUS_IMPORT__', function () {
-          return C
+          return x
         })
       n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var r = n('KEM+'),
@@ -396,21 +396,22 @@
         o = n('ddV6'),
         a = n.n(o),
         c = (n('z84I'), n('ERkP')),
-        u = n('v6aA'),
-        s = n('rxPX'),
-        l = function () {
+        u = n.n(c),
+        s = n('v6aA'),
+        l = n('rxPX'),
+        p = function () {
           return function (e, t, n) {
             return n.api.getHttpClient()
           }
         },
-        p = Object(s.a)()
+        f = Object(l.a)()
           .propsFromActions(function () {
-            return { getTwitterAuthedHttpClient: l }
+            return { getTwitterAuthedHttpClient: p }
           })
           .withAnalytics(),
-        f = n('Pc/x'),
-        h = n('gOg7')
-      function y(e, t) {
+        h = n('Pc/x'),
+        y = n('gOg7')
+      function d(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -422,31 +423,31 @@
         }
         return n
       }
-      function d(e) {
+      function v(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? y(Object(n), !0).forEach(function (t) {
+            ? d(Object(n), !0).forEach(function (t) {
                 i()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : y(Object(n)).forEach(function (t) {
+            : d(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var v = n('epkG'),
-        b = n('88qn'),
-        g = n('fs1G'),
-        P = n('mf9H'),
-        O = n('lklz'),
-        m = n('MWbm'),
-        k = n('HT/6'),
-        S = n('Zl35'),
-        _ = n('rHpw')
-      function w(e, t) {
+      var b = n('epkG'),
+        g = n('88qn'),
+        P = n('fs1G'),
+        O = n('mf9H'),
+        m = n('lklz'),
+        k = n('MWbm'),
+        S = n('HT/6'),
+        _ = n('Zl35'),
+        w = n('rHpw')
+      function j(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -457,66 +458,66 @@
             n.push.apply(n, r)
         }
         return n
-      }
-      function j(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? w(Object(n), !0).forEach(function (t) {
-                i()(e, t, n[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : w(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-              })
-        }
-        return e
       }
       function A(e) {
-        var t = c.useContext(u.a).featureSwitches,
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? j(Object(n), !0).forEach(function (t) {
+                i()(e, t, n[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : j(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+              })
+        }
+        return e
+      }
+      function T(e) {
+        var t = u.a.useContext(s.a).featureSwitches,
           n = e.broadcastId,
           r = e.isLive,
           i = e.media,
           o = e.mediaKey,
-          s = e.onEnded,
+          c = e.onEnded,
           l = e.onPlayerApi,
           p = e.onPlayerState,
-          y = e.requestedTimecode,
-          v = c.useState(null),
-          m = a()(v, 2),
-          S = m[0],
-          _ = m[1],
-          w = c.useRef({ playbackCoordinationEmitter: null, previousPlayerState: null }),
-          A = i || (n && o)
+          f = e.requestedTimecode,
+          d = u.a.useState(null),
+          b = a()(d, 2),
+          k = b[0],
+          _ = b[1],
+          w = u.a.useRef({ playbackCoordinationEmitter: null, previousPlayerState: null }),
+          j = i || (n && o)
         if (
-          (c.useEffect(
+          (u.a.useEffect(
             function () {
-              null === S &&
-                A &&
-                Object(b.a)({ showControls: !1, source: {} }, t).then(function (e) {
+              null === k &&
+                j &&
+                Object(g.a)({ showControls: !1, source: {} }, t).then(function (e) {
                   return _(function () {
                     return e
                   })
                 })
             },
-            [S, A, t],
+            [k, j, t],
           ),
-          c.useEffect(function () {
+          u.a.useEffect(function () {
             return function () {
               var e = w.current.playbackCoordinationEmitter
               e && e.unregister()
             }
           }, []),
-          null === S || !A)
+          null === k || !j)
         )
           return null
-        var E = {
+        var T = {
           analytics: (function (e, t) {
             var n = {
-                scribeContext: d({}, e.analytics.contextualScribeNamespace),
+                scribeContext: v({}, e.analytics.contextualScribeNamespace),
                 enableShortFormCompleteLogging: t.isTrue('responsive_web_video_pcomplete_enabled'),
-                periscopeAuthToken: f.a.proxsee.authToken(),
+                periscopeAuthToken: h.a.proxsee.authToken(),
               },
               r = {
                 log: function (t) {
@@ -525,24 +526,24 @@
                     i = t.namespace
                   null != i &&
                     i.action &&
-                    e.analytics.scribe(d(d({}, i), {}, { data: d(d({}, r), {}, { _category_: n }) }))
+                    e.analytics.scribe(v(v({}, i), {}, { data: v(v({}, r), {}, { _category_: n }) }))
                 },
               }
-            return new h.a(r, { log: function () {} }, e.getTwitterAuthedHttpClient(), n)
+            return new y.a(r, { log: function () {} }, e.getTwitterAuthedHttpClient(), n)
           })(e, t),
-          basePlayerClass: S,
-          httpClient: I,
+          basePlayerClass: k,
+          httpClient: R,
           onApiReady: function (t) {
             var r
             t.play(), 'function' == typeof l && l(t)
             var a = null == i || null === (r = i.video_info) || void 0 === r ? void 0 : r.duration_millis
-            'number' == typeof a && 'number' == typeof y && t.scrubToFraction(y / a)
+            'number' == typeof a && 'number' == typeof f && t.scrubToFraction(f / a)
             var c = e.disablePlaybackCoordination
-                ? g.a
+                ? P.a
                 : function () {
                     return t.pause()
                   },
-              u = n && o ? k.a.SPACE : k.a.NORMAL
+              u = n && o ? S.a.SPACE : S.a.NORMAL
             w.current.playbackCoordinationEmitter = (function (e, t) {
               var n = {
                 onAutoPlayRequest: function () {},
@@ -551,18 +552,18 @@
                 isLooping: !1,
                 playbackPriority: t,
               }
-              return P.b.register(n)
+              return O.b.register(n)
             })(c, u)
           },
           onStateUpdate: function (e, t) {
             'function' == typeof p && p(e, t),
               (function (e) {
-                var t = x(e)
+                var t = I(e)
                 e.isPlaying &&
                   t &&
                   t.durationMs === t.currentTimeMs &&
-                  'function' == typeof s &&
-                  (s(),
+                  'function' == typeof c &&
+                  (c(),
                   w.current.playbackCoordinationEmitter && w.current.playbackCoordinationEmitter.signalPlaybackFinish())
               })(e),
               (function (e) {
@@ -580,22 +581,22 @@
           twitterAuthedHttpClient: e.getTwitterAuthedHttpClient(),
         }
         if (n && o) {
-          var C = j(
-            j({}, E),
+          var C = A(
+            A({}, T),
             {},
             {
               configType: 'static',
               contentId: o,
               contentType: 'broadcast',
               variants: [],
-              videoId: O.b.forAudioSpace(n, o, r),
+              videoId: m.b.forAudioSpace(n, o, r),
             },
           )
-          return c.createElement(T, { key: n, playerConfig: C })
+          return u.a.createElement(E, { key: n, playerConfig: C })
         }
         if (i) {
-          var R = j(
-            j({}, E),
+          var x = A(
+            A({}, T),
             {},
             {
               configType: 'static',
@@ -609,21 +610,21 @@
               }),
             },
           )
-          return c.createElement(T, { key: i.id_str, playerConfig: R })
+          return u.a.createElement(E, { key: i.id_str, playerConfig: x })
         }
         return null
       }
-      function T(e) {
+      function E(e) {
         var t = e.playerConfig
-        return c.createElement(m.a, { style: R.displayNone }, c.createElement(S.b, t))
+        return u.a.createElement(k.a, { style: H.displayNone }, u.a.createElement(_.b, t))
       }
-      var E = A,
-        C = p(A),
-        x = function (e) {
+      var C = T,
+        x = f(T),
+        I = function (e) {
           return e && e.tracks[e.currentTrackId]
         },
-        I = new v.a({}),
-        R = _.a.create(function (e) {
+        R = new b.a({}),
+        H = w.a.create(function (e) {
           return { displayNone: { display: 'none' } }
         })
     },

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [172],
+  [174],
   {
     WXWl: function (e, t, r) {
       'use strict'
@@ -7,9 +7,10 @@
       var n = r('KEM+'),
         i = r.n(n),
         o = r('ERkP'),
-        a = r('Lsrn'),
-        s = r('k/Ka')
-      function c(e, t) {
+        a = r.n(o),
+        s = r('Lsrn'),
+        c = r('k/Ka')
+      function l(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -21,40 +22,40 @@
         }
         return r
       }
-      function l(e) {
+      function u(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? c(Object(r), !0).forEach(function (t) {
+            ? l(Object(r), !0).forEach(function (t) {
                 i()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : c(Object(r)).forEach(function (t) {
+            : l(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var u = function () {
+      var p = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(s.a)(
+        return Object(c.a)(
           'svg',
-          l(
-            l({}, e),
+          u(
+            u({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [a.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [s.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          o.createElement(
+          a.a.createElement(
             'g',
             null,
-            o.createElement('path', {
+            a.a.createElement('path', {
               d: 'M18.707 10.293l-6-6c-.39-.39-1.023-.39-1.414 0l-6 6c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L11 7.414V20c0 .553.447 1 1 1s1-.447 1-1V7.414l4.293 4.293c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414z',
             }),
           ),
         )
       }
-      ;(u.metadata = { width: 24, height: 24 }), (t.a = u)
+      ;(p.metadata = { width: 24, height: 24 }), (t.a = p)
     },
     o52z: function (e, t, r) {
       'use strict'
@@ -69,7 +70,7 @@
       'use strict'
       r.r(t),
         r.d(t, 'NewTweetsPill', function () {
-          return U
+          return B
         })
       r('OZaJ'), r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
       var n = r('VrFO'),
@@ -87,20 +88,21 @@
         d = r('KEM+'),
         w = r.n(d),
         y = (r('2G9S'), r('uFXj'), r('ERkP')),
-        b = (r('z84I'), r('lnti')),
-        v = r('hqKg'),
-        g = r('o52z'),
-        O = r('G6rE'),
-        _ = r('rxPX'),
-        j = function (e, t) {
-          return (t.alert && t.alert.userIds) || Object(g.a)()
+        b = r.n(y),
+        v = (r('z84I'), r('lnti')),
+        g = r('hqKg'),
+        O = r('o52z'),
+        _ = r('G6rE'),
+        j = r('rxPX'),
+        D = function (e, t) {
+          return (t.alert && t.alert.userIds) || Object(O.a)()
         },
-        D = Object(_.a)()
+        S = Object(j.a)()
           .propsFromState(function () {
             return {
-              userImageUrls: Object(v.createSelector)(O.e.selectAll, j, function (e, t) {
+              userImageUrls: Object(g.createSelector)(_.e.selectAll, D, function (e, t) {
                 return t
-                  ? Object(b.a)(
+                  ? Object(v.a)(
                       t.map(function (t) {
                         var r = e[t]
                         return r ? r.profile_image_url_https : void 0
@@ -111,19 +113,19 @@
             }
           })
           .withAnalytics(),
-        S = r('3XMw'),
-        P = r.n(S),
-        I = r('WXWl'),
-        T = r('IbOt'),
-        k = r('fs1G'),
-        A = r('rcen'),
-        E = r('MWbm'),
-        L = r('I4+6'),
-        R = r('rHpw'),
-        x = r('cm6r'),
-        C = r('MAI/'),
-        M = r('t62R')
-      function H(e, t) {
+        P = r('3XMw'),
+        I = r.n(P),
+        T = r('WXWl'),
+        k = r('IbOt'),
+        A = r('fs1G'),
+        E = r('rcen'),
+        L = r('MWbm'),
+        R = r('I4+6'),
+        x = r('rHpw'),
+        C = r('cm6r'),
+        M = r('MAI/'),
+        H = r('t62R')
+      function W(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -135,22 +137,22 @@
         }
         return r
       }
-      function W(e) {
+      function F(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? H(Object(r), !0).forEach(function (t) {
+            ? W(Object(r), !0).forEach(function (t) {
                 w()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : H(Object(r)).forEach(function (t) {
+            : W(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      function F(e) {
+      function V(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -171,14 +173,14 @@
           return h()(this, r)
         }
       }
-      var V = P.a.gdb8bdcc,
-        X = P.a.ac0f6491,
-        z = { component: 'new_tweet_prompt' },
-        K = {},
+      var X = I.a.gdb8bdcc,
+        z = I.a.ac0f6491,
+        K = { component: 'new_tweet_prompt' },
         N = {},
-        U = (function (e) {
+        U = {},
+        B = (function (e) {
           u()(r, e)
-          var t = F(r)
+          var t = V(r)
           function r() {
             var e
             i()(this, r)
@@ -187,7 +189,7 @@
               (e = t.call.apply(t, [this].concat(o))),
               w()(c()(e), 'state', { show: !1 }),
               w()(c()(e), '_getLastShownTime', function () {
-                return N[e.props.timelineId]
+                return U[e.props.timelineId]
               }),
               w()(c()(e), '_attemptShow', function () {
                 var t = e.props,
@@ -200,7 +202,7 @@
                   var s = e._getDelayRemaining()
                   if (s <= 0) {
                     if (r && n()) return void i()
-                    e.setState({ show: !0 }), (K[o] = Date.now()), e._scribeAction('show')
+                    e.setState({ show: !0 }), (N[o] = Date.now()), e._scribeAction('show')
                   } else e._timeoutID = setTimeout(e._attemptShow, s)
                 }
               }),
@@ -211,7 +213,7 @@
                   i = t.timelineId,
                   o = n
                 r && r.displayDurationMs && r.displayDurationMs > -1 && (o = r.displayDurationMs),
-                  e.state.show && Date.now() >= K[i] + o && (e._scribeAction('dismiss'), e._hide())
+                  e.state.show && Date.now() >= N[i] + o && (e._scribeAction('dismiss'), e._hide())
               }),
               w()(c()(e), '_handleClick', function () {
                 var t = e.props.applyNewTweetsBarInstructions
@@ -228,7 +230,7 @@
                   ;(this._mounted = !0),
                     this._getLastShownTime() || this._updateLastShownTime(this.props.timelineId),
                     this._attemptShow(),
-                    (this._cancelMomentum = Object(T.a)({ onUp: k.a, onDown: this._handleScrollDown }))
+                    (this._cancelMomentum = Object(k.a)({ onUp: A.a, onDown: this._handleScrollDown }))
                 },
               },
               {
@@ -272,41 +274,41 @@
                     i = t.userImageUrls,
                     o = this.state.show
                   e = r
-                    ? r.richText && y.createElement(A.a, { entities: r.richText.entities, text: r.richText.text })
+                    ? r.richText && b.a.createElement(E.a, { entities: r.richText.entities, text: r.richText.text })
                     : n
-                  var a = L.a.generate({
-                    backgroundColor: R.a.theme.colors.primary,
-                    color: R.a.theme.colors.whiteOnColor,
+                  var a = R.a.generate({
+                    backgroundColor: x.a.theme.colors.primary,
+                    color: x.a.theme.colors.whiteOnColor,
                   })
-                  return y.createElement(
-                    E.a,
+                  return b.a.createElement(
+                    L.a,
                     { accessibilityRole: 'status' },
-                    y.createElement(
-                      x.a,
+                    b.a.createElement(
+                      C.a,
                       {
                         accessibilityHidden: !o,
-                        accessibilityLabel: X,
+                        accessibilityLabel: z,
                         accessibilityRole: 'button',
                         interactiveStyles: a,
                         onClick: this._handleClick,
-                        style: [B.pill, o && B.show],
+                        style: [G.pill, o && G.show],
                       },
-                      y.createElement(
-                        E.a,
-                        { style: B.innerPill },
-                        y.createElement(I.a, { style: B.icon }),
+                      b.a.createElement(
+                        L.a,
+                        { style: G.innerPill },
+                        b.a.createElement(T.a, { style: G.icon }),
                         i && i.length > 0
-                          ? y.createElement(
-                              E.a,
-                              { style: B.facepile },
-                              y.createElement(C.a, {
+                          ? b.a.createElement(
+                              L.a,
+                              { style: G.facepile },
+                              b.a.createElement(M.a, {
                                 borderColor: 'primary',
                                 userAvatarSize: 'large',
                                 userAvatarUrls: i,
                               }),
                             )
                           : null,
-                        y.createElement(M.b, { color: 'whiteOnColor', numberOfLines: 1, style: B.pillText }, e),
+                        b.a.createElement(H.b, { color: 'whiteOnColor', numberOfLines: 1, style: G.pillText }, e),
                       ),
                     ),
                   )
@@ -325,7 +327,7 @@
               {
                 key: '_updateLastShownTime',
                 value: function (e) {
-                  e && (N[e] = Date.now())
+                  e && (U[e] = Date.now())
                 },
               },
               {
@@ -347,24 +349,24 @@
                 value: function (e) {
                   var t = this.props,
                     r = t.analytics,
-                    n = W(W(W({}, t.scribeNamespace), z), {}, { action: e })
+                    n = F(F(F({}, t.scribeNamespace), K), {}, { action: e })
                   r.scribe(n)
                 },
               },
             ]),
             r
           )
-        })(y.PureComponent)
-      w()(U, 'defaultProps', {
+        })(b.a.PureComponent)
+      w()(B, 'defaultProps', {
         isAtNewest: function () {
           return !0
         },
-        label: V,
+        label: X,
         remainVisibleInterval: 3e3,
         triggerDelay: 24e4,
         unreadCount: 0,
       })
-      var B = R.a.create(function (e) {
+      var G = x.a.create(function (e) {
           return {
             pill: {
               boxShadow: e.boxShadows.small,
@@ -394,8 +396,8 @@
             },
           }
         }),
-        G = D(U)
-      t.default = G
+        J = S(B)
+      t.default = J
     },
   },
 ])

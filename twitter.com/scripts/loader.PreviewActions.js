@@ -1,23 +1,24 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [173],
+  [175],
   {
     WOwf: function (e, t, n) {
       'use strict'
-      function i(e, t) {
+      function a(e, t) {
         return Math.min(1, 1 - e / t)
       }
       n.d(t, 'a', function () {
-        return i
+        return a
       })
     },
     aRdY: function (e, t, n) {
       'use strict'
-      var i = n('ERkP'),
+      var a = n('ERkP'),
+        i = n.n(a),
         r = n('WOwf'),
-        a = n('k6Ei'),
-        o = n('rHpw'),
-        u = n('MWbm'),
-        s = o.a.create(function (e) {
+        o = n('k6Ei'),
+        u = n('rHpw'),
+        s = n('MWbm'),
+        l = u.a.create(function (e) {
           e.colors
           return {
             root: { alignItems: 'flex-start', minHeight: 30, minWidth: 30, justifyContent: 'center', margin: 'auto' },
@@ -27,110 +28,111 @@
       t.a = function (e) {
         var t = e.accessibilityLabel,
           n = e.count,
-          o = e.maxCount,
-          l = o - n,
-          c = Object(r.a)(l, o),
-          d = i.createElement(a.a, {
+          a = e.maxCount,
+          u = a - n,
+          c = Object(r.a)(u, a),
+          d = i.a.createElement(o.a, {
             accessibilityLabel: t,
             color: 'primary',
             progress: c,
             size: 20,
             strokeWidth: 'thick',
-            style: s.progressCircle,
+            style: l.progressCircle,
           })
-        return i.createElement(u.a, { style: s.root }, d)
+        return i.a.createElement(s.a, { style: l.root }, d)
       }
     },
     mL9d: function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'PreviewActions', function () {
-          return S
+          return E
         })
-      var i = n('ddV6'),
-        r = n.n(i),
-        a = (n('uFXj'), n('ERkP')),
-        o = n('qlwE'),
-        u = n('rxPX'),
-        s = n('5oBF'),
-        l = Object(u.a)()
+      var a = n('ddV6'),
+        i = n.n(a),
+        r = (n('uFXj'), n('ERkP')),
+        o = n.n(r),
+        u = n('qlwE'),
+        s = n('rxPX'),
+        l = n('5oBF'),
+        c = Object(s.a)()
           .propsFromState(function () {
-            return { previewTweet: s.d, undoTweetSettings: o.p }
+            return { previewTweet: l.d, undoTweetSettings: u.p }
           })
           .adjustStateProps(function (e) {
             var t,
               n,
-              i = e.previewTweet,
-              r = e.undoTweetSettings,
-              a = null == i ? void 0 : i.timeToSend,
-              o = null == i || null === (t = i.previewData) || void 0 === t ? void 0 : t.communityIdValue,
-              u = null == i || null === (n = i.previewData) || void 0 === n ? void 0 : n.inReplyToStatus,
-              l = r.durationSecs || s.a
+              a = e.previewTweet,
+              i = e.undoTweetSettings,
+              r = null == a ? void 0 : a.timeToSend,
+              o = null == a || null === (t = a.previewData) || void 0 === t ? void 0 : t.communityIdValue,
+              u = null == a || null === (n = a.previewData) || void 0 === n ? void 0 : n.inReplyToStatus,
+              s = i.durationSecs || l.a
             return {
-              timeToSend: a,
+              timeToSend: r,
               inReplyToStatusId: null == u ? void 0 : u.id_str,
-              undoPeriod: l,
+              undoPeriod: s,
               communityIdValue: o,
             }
           })
           .propsFromActions(function () {
-            return { undoTweet: s.h, sendNow: s.g }
+            return { undoTweet: l.h, sendNow: l.g }
           })
           .withAnalytics({ page: 'undo_tweet_details', section: 'timeline' }),
-        c = n('3XMw'),
-        d = n.n(c)
-      var p = n('Ty5D'),
-        m = n('MWbm'),
-        w = n('t62R'),
-        f = n('aRdY'),
-        y = n('/yvb'),
-        b = n('rHpw'),
-        v = d.a.bc2ceaf2,
-        g = d.a.gf5e9ea6,
-        h = d.a.j4c40da3,
-        T = d.a.b23688c7,
-        S = function (e) {
-          var t = Object(p.g)(),
+        d = n('3XMw'),
+        p = n.n(d)
+      var m = n('Ty5D'),
+        w = n('MWbm'),
+        f = n('t62R'),
+        y = n('aRdY'),
+        b = n('/yvb'),
+        v = n('rHpw'),
+        g = p.a.bc2ceaf2,
+        h = p.a.gf5e9ea6,
+        T = p.a.j4c40da3,
+        S = p.a.b23688c7,
+        E = function (e) {
+          var t = Object(m.g)(),
             n = e.analytics,
-            i = e.communityIdValue,
-            o = e.inReplyToStatusId,
+            a = e.communityIdValue,
+            r = e.inReplyToStatusId,
             u = e.previewTweetId,
             s = e.sendNow,
             l = e.timeToSend,
             c = e.undoPeriod,
             d = e.undoTweet,
-            b = a.useState(0),
-            S = r()(b, 2),
-            W = S[0],
-            x = S[1],
-            _ = a.useState(),
-            C = r()(_, 2),
+            p = o.a.useState(0),
+            v = i()(p, 2),
+            E = v[0],
+            x = v[1],
+            _ = o.a.useState(),
+            C = i()(_, 2),
             I = C[0],
             R = C[1],
-            D = a.useState(!1),
-            j = r()(D, 2),
+            D = o.a.useState(!1),
+            j = i()(D, 2),
             k = j[0],
             F = j[1]
-          a.useEffect(
+          o.a.useEffect(
             function () {
               'number' == typeof l && x(Math.round(l - Date.now()))
             },
             [l],
           )
           var L = (function (e) {
-            var t = a.useState(0),
-              n = r()(t, 2),
-              i = n[0],
-              o = n[1],
-              u = a.useRef()
+            var t = o.a.useState(0),
+              n = i()(t, 2),
+              a = n[0],
+              r = n[1],
+              u = o.a.useRef()
             return (
-              a.useEffect(
+              o.a.useEffect(
                 function () {
                   var t = Date.now()
                   return (
                     (u.current = window.requestAnimationFrame(function n() {
-                      var i = Math.min(1, (Date.now() - t) / e)
-                      i < 1 && (o(i), (u.current = window.requestAnimationFrame(n)))
+                      var a = Math.min(1, (Date.now() - t) / e)
+                      a < 1 && (r(a), (u.current = window.requestAnimationFrame(n)))
                     })),
                     function () {
                       window.cancelAnimationFrame(u.current)
@@ -139,14 +141,14 @@
                 },
                 [e],
               ),
-              i
+              a
             )
-          })(W)
-          if (W <= 0 || !W) return null
+          })(E)
+          if (E <= 0 || !E) return null
           return 'number' != typeof l
             ? null
-            : a.createElement(
-                m.a,
+            : o.a.createElement(
+                w.a,
                 {
                   onLayout: function (e) {
                     var t, n
@@ -160,23 +162,23 @@
                         : n.width) || 0,
                     )
                   },
-                  style: E.root,
+                  style: W.root,
                 },
-                a.createElement(
-                  m.a,
-                  { style: E.timer },
-                  a.createElement(
-                    m.a,
-                    { style: E.timerWrapper },
-                    a.createElement(f.a, { accessibilityLabel: T, count: L, maxCount: 1 }),
+                o.a.createElement(
+                  w.a,
+                  { style: W.timer },
+                  o.a.createElement(
+                    w.a,
+                    { style: W.timerWrapper },
+                    o.a.createElement(y.a, { accessibilityLabel: S, count: L, maxCount: 1 }),
                   ),
-                  !I || I < 470 ? null : a.createElement(w.b, { style: E.sendingLabel, weight: 'bold' }, v),
+                  !I || I < 470 ? null : o.a.createElement(f.b, { style: W.sendingLabel, weight: 'bold' }, g),
                 ),
-                a.createElement(
-                  m.a,
-                  { style: E.buttonWrapper },
-                  a.createElement(
-                    y.a,
+                o.a.createElement(
+                  w.a,
+                  { style: W.buttonWrapper },
+                  o.a.createElement(
+                    b.a,
                     {
                       disabled: k,
                       onClick: function () {
@@ -192,10 +194,10 @@
                       style: { marginRight: 4 },
                       type: 'brandText',
                     },
-                    h,
+                    T,
                   ),
-                  a.createElement(
-                    y.a,
+                  o.a.createElement(
+                    b.a,
                     {
                       onClick: function () {
                         n.scribe({
@@ -206,18 +208,18 @@
                           d(u),
                           t.push({
                             pathname: '/compose/tweet',
-                            state: { previewTweetId: u, inReplyToStatusId: o, selectedCommunityId: i },
+                            state: { previewTweetId: u, inReplyToStatusId: r, selectedCommunityId: a },
                           })
                       },
                       size: 'xSmall',
                       type: 'brandFilled',
                     },
-                    g,
+                    h,
                   ),
                 ),
               )
         },
-        E = b.a.create(function (e) {
+        W = v.a.create(function (e) {
           return {
             root: {
               marginTop: e.spaces.space12,
@@ -234,8 +236,8 @@
             buttonWrapper: { display: 'flex', flexDirection: 'row' },
           }
         }),
-        W = l(S)
-      t.default = W
+        x = c(E)
+      t.default = x
     },
   },
 ])

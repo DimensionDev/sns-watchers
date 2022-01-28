@@ -1,19 +1,20 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [238],
+  [242],
   {
-    U0EQ: function (e, n, t) {
+    U0EQ: function (e, n, a) {
       'use strict'
-      t.r(n)
-      t('1t7P'), t('jQ/y'), t('ho0z')
-      var a = t('ezF+'),
-        r = t('ERkP'),
-        c = t('3XMw'),
-        o = t.n(c),
-        s = t('MWbm'),
-        i = t('t62R'),
-        p = t('rHpw'),
-        l = o.a.jb0429b1,
-        u = p.a.create(function (e) {
+      a.r(n)
+      a('1t7P'), a('jQ/y'), a('ho0z')
+      var t = a('ezF+'),
+        r = a('ERkP'),
+        c = a.n(r),
+        o = a('3XMw'),
+        s = a.n(o),
+        i = a('MWbm'),
+        p = a('t62R'),
+        l = a('rHpw'),
+        u = s.a.jb0429b1,
+        d = l.a.create(function (e) {
           return {
             header: {
               paddingTop: e.spaces.space12,
@@ -23,41 +24,41 @@
             description: { marginTop: e.spaces.space12 },
           }
         }),
-        d = function (e) {
+        m = function (e) {
           var n = e.collectionName,
-            t = e.description,
-            a = e.userLabel
-          return r.createElement(
-            s.a,
-            { style: u.header },
-            r.createElement(i.b, { accessibilityRole: 'heading', size: 'title4' }, n),
-            a && r.createElement(i.b, { color: 'gray700' }, l({ name: a.name, screenName: a.screenName })),
-            t ? r.createElement(i.b, { style: u.description }, t) : null,
+            a = e.description,
+            t = e.userLabel
+          return c.a.createElement(
+            i.a,
+            { style: d.header },
+            c.a.createElement(p.b, { accessibilityRole: 'heading', size: 'title4' }, n),
+            t && c.a.createElement(p.b, { color: 'gray700' }, u({ name: t.name, screenName: t.screenName })),
+            a ? c.a.createElement(p.b, { style: d.description }, a) : null,
           )
         },
-        m = t('G6rE'),
-        b = a.g({
-          component: d,
+        b = a('G6rE'),
+        h = t.g({
+          component: m,
           selectData: function (e) {
             var n = e.entry
             return {
               author: function (e) {
-                return m.e.select(e, n.content.authorId)
+                return b.e.select(e, n.content.authorId)
               },
             }
           },
           createProps: function (e) {
             var n = e.data.author,
-              t = e.entry.content,
-              a = t.description
+              a = e.entry.content,
+              t = a.description
             return {
-              collectionName: t.name,
-              description: a,
+              collectionName: a.name,
+              description: t,
               userLabel: n && { name: n.name, screenName: n.screen_name },
             }
           },
         })
-      n.default = b
+      n.default = h
     },
   },
 ])

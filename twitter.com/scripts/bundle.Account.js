@@ -5,7 +5,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'AccountScreen', function () {
-          return B
+          return H
         })
       n('OZaJ')
       var r = n('VrFO'),
@@ -19,23 +19,24 @@
         f = n('AuHH'),
         p = n.n(f),
         m = (n('ho0z'), n('ERkP')),
-        d = n('G6rE'),
-        h = n('rxPX'),
-        y = Object(h.a)()
+        d = n.n(m),
+        h = n('G6rE'),
+        y = n('rxPX'),
+        g = Object(y.a)()
           .propsFromState(function () {
-            return { loggedInUser: d.e.selectLoggedInUser }
+            return { loggedInUser: h.e.selectLoggedInUser }
           })
           .withAnalytics({ page: 'me' }),
-        g = n('VN5n'),
-        v = n('3XMw'),
-        w = n.n(v),
-        b = n('yoO3'),
-        E = n('wiP2'),
-        N = n('MWbm'),
-        O = n('Irs7'),
-        R = n('jV+4'),
-        k = n('rHpw')
-      function P(e) {
+        v = n('VN5n'),
+        w = n('3XMw'),
+        b = n.n(w),
+        E = n('yoO3'),
+        N = n('wiP2'),
+        O = n('MWbm'),
+        R = n('Irs7'),
+        k = n('jV+4'),
+        P = n('rHpw')
+      function U(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -56,10 +57,10 @@
           return l()(this, n)
         }
       }
-      var U = w.a.i5f7b6b8,
-        B = (function (e) {
+      var B = b.a.i5f7b6b8,
+        H = (function (e) {
           i()(n, e)
-          var t = P(n)
+          var t = U(n)
           function n() {
             return a()(this, n), t.apply(this, arguments)
           }
@@ -68,13 +69,13 @@
               {
                 key: 'render',
                 value: function () {
-                  return m.createElement(
-                    b.a,
+                  return d.a.createElement(
+                    E.a,
                     null,
-                    m.createElement(
-                      E.a.Configure,
-                      { documentTitle: U, title: this._renderUserName() },
-                      m.createElement(N.a, { style: H.dashmenu }, m.createElement(g.a, null)),
+                    d.a.createElement(
+                      N.a.Configure,
+                      { documentTitle: B, title: this._renderUserName() },
+                      d.a.createElement(O.a, { style: I.dashmenu }, d.a.createElement(v.a, null)),
                     ),
                   )
                 },
@@ -84,7 +85,7 @@
                 value: function () {
                   var e = this.props.loggedInUser
                   return e
-                    ? m.createElement(R.a, {
+                    ? d.a.createElement(k.a, {
                         badgeContext: 'account',
                         isProtected: e.protected,
                         isVerified: e.verified,
@@ -99,11 +100,11 @@
             ]),
             n
           )
-        })(m.Component),
-        H = k.a.create(function (e) {
+        })(d.a.Component),
+        I = P.a.create(function (e) {
           return { dashmenu: { marginBottom: e.componentDimensions.appBarHeight } }
         })
-      t.default = Object(O.a)(y(B))
+      t.default = Object(R.a)(g(H))
     },
   },
 ])

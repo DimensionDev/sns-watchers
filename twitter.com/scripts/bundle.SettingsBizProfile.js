@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [85],
+  [86],
   {
     '6XNv': function (e, t, n) {
       'use strict'
@@ -21,15 +21,16 @@
         g = n('KEM+'),
         b = n.n(g),
         v = (n('LqLs'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP'), n('7xRU'), n('z84I'), n('2G9S'), n('ERkP')),
-        w = n('t62R'),
-        _ = n('piX5'),
-        E = n('4r2z'),
-        O = n('FG+G'),
-        C = n('rHpw'),
-        T = (n('aWzz'), n('k/Ka')),
-        P = n('shC7'),
-        B = n('MWbm')
-      function S(e) {
+        w = n.n(v),
+        _ = n('t62R'),
+        E = n('piX5'),
+        O = n('4r2z'),
+        C = n('FG+G'),
+        T = n('rHpw'),
+        P = (n('aWzz'), n('k/Ka')),
+        B = n('shC7'),
+        S = n('MWbm')
+      function z(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -50,7 +51,7 @@
           return m()(this, n)
         }
       }
-      function z(e, t) {
+      function k(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var a = Object.getOwnPropertySymbols(e)
@@ -62,37 +63,37 @@
         }
         return n
       }
-      function k(e) {
+      function D(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? z(Object(n), !0).forEach(function (t) {
+            ? k(Object(n), !0).forEach(function (t) {
                 b()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : z(Object(n)).forEach(function (t) {
+            : k(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var D = v.forwardRef(function (e, t) {
-          return Object(T.a)('select', k(k({}, e), {}, { ref: t }))
+      var x = w.a.forwardRef(function (e, t) {
+          return Object(P.a)('select', D(D({}, e), {}, { ref: t }))
         }),
-        x = function (e) {
-          return Object(T.a)('option', e)
+        H = function (e) {
+          return Object(P.a)('option', e)
         },
-        H = 1,
-        I = (function (e) {
+        I = 1,
+        R = (function (e) {
           h()(n, e)
-          var t = S(n)
+          var t = z(n)
           function n(e) {
             var a
             return (
               i()(this, n),
               (a = t.call(this, e)),
-              b()(u()(a), '_selectRef', v.createRef()),
+              b()(u()(a), '_selectRef', w.a.createRef()),
               b()(u()(a), 'state', { isFocused: !1 }),
               b()(u()(a), '_handleChange', function (e) {
                 var t = a.props,
@@ -111,11 +112,11 @@
                 var t = a.props.onFocus
                 a.setState({ isFocused: !0 }), t && t()
               }),
-              (a._id = 'SELECTOR_'.concat(H)),
+              (a._id = 'SELECTOR_'.concat(I)),
               (a._errorID = ''.concat(a._id, '_ERROR')),
               (a._helperID = ''.concat(a._id, '_HELP')),
               (a._labelID = ''.concat(a._id, '_LABEL')),
-              (H += 1),
+              (I += 1),
               a
             )
           }
@@ -142,36 +143,36 @@
                     u = e.value,
                     d = e.withEmptyOption,
                     h = this.state.isFocused,
-                    p = w.b.getLanguage(),
+                    p = _.b.getLanguage(),
                     m =
                       'ja' === p
-                        ? C.a.theme.fontFamilies.japan
-                        : P.a.getConstants().isRTL || E.a.isLocaleRTL(p)
-                        ? C.a.theme.fontFamilies.rtl
-                        : C.a.theme.fontFamilies.normal,
+                        ? T.a.theme.fontFamilies.japan
+                        : B.a.getConstants().isRTL || O.a.isLocaleRTL(p)
+                        ? T.a.theme.fontFamilies.rtl
+                        : T.a.theme.fontFamilies.normal,
                     f = void 0 === o ? !!a : o,
                     y = new Set()
                   a && y.add(this._errorID), t && y.add(t), i && y.add(this._helperID)
                   var g = y.size ? r()(y).join(' ') : void 0
-                  return v.createElement(
-                    v.Fragment,
+                  return w.a.createElement(
+                    w.a.Fragment,
                     null,
-                    v.createElement(
-                      B.a,
+                    w.a.createElement(
+                      S.a,
                       {
                         style: [
-                          _.a.border,
-                          R.container,
-                          n && _.a.disabled,
-                          h && _.a.focusedBorderValid,
-                          f && _.a.invalidBorderColor,
-                          h && f && _.a.focusedBorderInvalid,
+                          E.a.border,
+                          M.container,
+                          n && E.a.disabled,
+                          h && E.a.focusedBorderValid,
+                          f && E.a.invalidBorderColor,
+                          h && f && E.a.focusedBorderInvalid,
                           s,
                         ],
                       },
                       this._renderLabel(),
-                      v.createElement(
-                        D,
+                      w.a.createElement(
+                        x,
                         {
                           accessibilityDescribedBy: g,
                           accessibilityInvalid: f,
@@ -182,24 +183,24 @@
                           onChange: this._handleChange,
                           onFocus: this._handleFocus,
                           ref: this._selectRef,
-                          style: [R.select, { fontFamily: m }, n && _.a.disabled],
+                          style: [M.select, { fontFamily: m }, n && E.a.disabled],
                           testID: c || '',
                           value: u,
                         },
-                        d ? v.createElement(x, { disabled: !0, style: R.option, value: '' }) : null,
+                        d ? w.a.createElement(H, { disabled: !0, style: M.option, value: '' }) : null,
                         l.map(function (e) {
                           var t = e.disabled,
                             n = e.label,
                             a = e.value
-                          return v.createElement(
-                            x,
-                            { disabled: t, key: ''.concat(n, '-').concat(a), style: R.option, value: a },
+                          return w.a.createElement(
+                            H,
+                            { disabled: t, key: ''.concat(n, '-').concat(a), style: M.option, value: a },
                             n,
                           )
                         }),
                       ),
-                      v.createElement(O.a, {
-                        style: [R.dropdownCaret, h && _.a.validColor, (o || a) && _.a.invalidColor],
+                      w.a.createElement(C.a, {
+                        style: [M.dropdownCaret, h && E.a.validColor, (o || a) && E.a.invalidColor],
                       }),
                     ),
                     i ? this._renderHelperText() : null,
@@ -215,13 +216,13 @@
                     n = e.hasError,
                     a = e.label,
                     r = this.state.isFocused
-                  return v.createElement(
-                    w.b,
+                  return w.a.createElement(
+                    _.b,
                     {
                       accessibilityRole: 'label',
                       color: n || t ? 'red500' : r ? 'primary' : 'gray700',
                       nativeID: this._labelID,
-                      style: R.label,
+                      style: M.label,
                     },
                     a,
                   )
@@ -230,12 +231,12 @@
               {
                 key: '_renderHelperText',
                 value: function () {
-                  return v.createElement(
-                    B.a,
+                  return w.a.createElement(
+                    S.a,
                     { accessibilityLiveRegion: 'polite' },
-                    v.createElement(
-                      w.b,
-                      { color: 'gray700', nativeID: this._helperID, style: R.helperText },
+                    w.a.createElement(
+                      _.b,
+                      { color: 'gray700', nativeID: this._helperID, style: M.helperText },
                       this.props.helperText,
                     ),
                   )
@@ -244,12 +245,12 @@
               {
                 key: '_renderErrorText',
                 value: function () {
-                  return v.createElement(
-                    B.a,
+                  return w.a.createElement(
+                    S.a,
                     { accessibilityLiveRegion: 'polite' },
-                    v.createElement(
-                      w.b,
-                      { color: 'red500', nativeID: this._errorID, style: R.helperText },
+                    w.a.createElement(
+                      _.b,
+                      { color: 'red500', nativeID: this._errorID, style: M.helperText },
                       this.props.errorText,
                     ),
                   )
@@ -258,9 +259,9 @@
             ]),
             n
           )
-        })(v.PureComponent)
-      b()(I, 'defaultProps', { disabled: !1, autofocus: !1, withEmptyOption: !1 }), (I.propTypes = {})
-      var R = C.a.create(function (e) {
+        })(w.a.PureComponent)
+      b()(R, 'defaultProps', { disabled: !1, autofocus: !1, withEmptyOption: !1 }), (R.propTypes = {})
+      var M = T.a.create(function (e) {
         return {
           container: { backgroundColor: e.colors.cellBackground },
           dropdownCaret: {
@@ -305,13 +306,13 @@
           },
         }
       })
-      t.a = I
+      t.a = R
     },
     Ssqp: function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'BizProfileScreen', function () {
-          return Oe
+          return Ce
         })
       n('OZaJ'), n('+KXO'), n('1t7P'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var a = n('VrFO'),
@@ -341,19 +342,20 @@
           n('i4UL'),
           n('vfdX'),
           n('ERkP')),
-        b = n('jHSc'),
-        v = n('lUZE'),
-        w = 'Biz_Profile_Save_Button',
-        _ = 'Opt_out_test_id_app_text',
-        E = 'Opt_Out_Link_Button',
-        O = 'Logged_User_Screen_name',
-        C = n('MWbm'),
-        T = n('/yvb'),
-        P = n('j7Bv'),
-        B = n('t62R'),
-        S = n('eb3s'),
-        z = n('rHpw')
-      function k(e) {
+        b = n.n(g),
+        v = n('jHSc'),
+        w = n('lUZE'),
+        _ = 'Biz_Profile_Save_Button',
+        E = 'Opt_out_test_id_app_text',
+        O = 'Opt_Out_Link_Button',
+        C = 'Logged_User_Screen_name',
+        T = n('MWbm'),
+        P = n('/yvb'),
+        B = n('j7Bv'),
+        S = n('t62R'),
+        z = n('eb3s'),
+        k = n('rHpw')
+      function D(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -374,9 +376,9 @@
           return h()(this, n)
         }
       }
-      var D = (function (e) {
+      var x = (function (e) {
           u()(n, e)
-          var t = k(n)
+          var t = D(n)
           function n() {
             var e
             r()(this, n)
@@ -414,42 +416,42 @@
                     t = e.business.hidden,
                     n = e.email,
                     a = e.history,
-                    r = g.createElement(
-                      T.a,
+                    r = b.a.createElement(
+                      P.a,
                       { onPress: this._handleCancel, size: 'small', type: 'brandFilled' },
                       t ? 'OK' : 'Done',
                     )
-                  return g.createElement(
-                    b.b,
+                  return b.a.createElement(
+                    v.b,
                     {
                       history: a,
                       onBackClick: this._handleCancel,
                       rightControl: r,
                       title: t ? 'Business Profile' : 'Business Profile - Application',
                     },
-                    g.createElement(
-                      C.a,
-                      { style: x.container },
-                      g.createElement(
-                        C.a,
-                        { style: x.margin },
-                        g.createElement(P.a, { Icon: v.a, size: 'large', style: x.centered }),
-                        g.createElement(
-                          B.b,
-                          { align: 'center', size: 'headline1', style: x.bold },
-                          g.createElement('br', null),
+                    b.a.createElement(
+                      T.a,
+                      { style: H.container },
+                      b.a.createElement(
+                        T.a,
+                        { style: H.margin },
+                        b.a.createElement(B.a, { Icon: w.a, size: 'large', style: H.centered }),
+                        b.a.createElement(
+                          S.b,
+                          { align: 'center', size: 'headline1', style: H.bold },
+                          b.a.createElement('br', null),
                           t
                             ? 'You’ve opted out of the Twitter Business Profile pilot'
                             : 'Your application was submitted!',
                         ),
-                        g.createElement(
-                          B.b,
-                          { align: 'center', style: x.margin },
+                        b.a.createElement(
+                          S.b,
+                          { align: 'center', style: H.margin },
                           t ? null : this._renderBeInTouchMessage(n),
                         ),
-                        g.createElement(
-                          B.b,
-                          { align: 'center', style: x.bigMarginTop, testID: _ },
+                        b.a.createElement(
+                          S.b,
+                          { align: 'center', style: H.bigMarginTop, testID: E },
                           t ? null : this._renderOptOutMessage(),
                         ),
                       ),
@@ -463,7 +465,7 @@
                 value: function () {
                   var e = this.props.loggedInUser
                   return this.state.showOptOutModal
-                    ? g.createElement(S.a, {
+                    ? b.a.createElement(z.a, {
                         confirmButtonLabel: 'Opt out',
                         headline: 'Do you want to opt out of the Twitter Business Profile pilot?',
                         onCancel: this._handleModalCancel,
@@ -477,14 +479,14 @@
               {
                 key: '_renderOptOutMessage',
                 value: function () {
-                  return g.createElement(
-                    B.b,
+                  return b.a.createElement(
+                    S.b,
                     null,
                     'You can',
                     ' ',
-                    g.createElement(
-                      B.b,
-                      { accessibilityRole: 'button', color: 'link', onPress: this._handleShowOptOutModal, testID: E },
+                    b.a.createElement(
+                      S.b,
+                      { accessibilityRole: 'button', color: 'link', onPress: this._handleShowOptOutModal, testID: O },
                       'opt out of Twitter Business Profile',
                     ),
                     ' ',
@@ -495,8 +497,8 @@
               {
                 key: '_renderBeInTouchMessage',
                 value: function (e) {
-                  return g.createElement(
-                    B.b,
+                  return b.a.createElement(
+                    S.b,
                     null,
                     'We’ll be in touch. All communication about the Twitter Business Profile pilot will be sent to the email you provided: '.concat(
                       null != e ? e : '',
@@ -507,8 +509,8 @@
             ]),
             n
           )
-        })(g.Component),
-        x = z.a.create(function (e) {
+        })(b.a.Component),
+        H = k.a.create(function (e) {
           return {
             margin: {
               marginHorizontal: e.componentDimensions.gutterHorizontal,
@@ -520,46 +522,46 @@
             container: { paddingBottom: e.spaces.space64 },
           }
         }),
-        H = n('zh9S'),
-        I = n('YeSc'),
-        R = n('vEo5'),
-        M = n('1YZw'),
-        A = n('G6rE'),
-        F = n('rxPX'),
-        j = n('0KEI')
-      function L(e, t) {
-        var n = A.e.selectLoggedInUser(e)
-        return n ? I.g(n.id_str, e) : null
+        I = n('zh9S'),
+        R = n('YeSc'),
+        M = n('vEo5'),
+        A = n('1YZw'),
+        F = n('G6rE'),
+        j = n('rxPX'),
+        L = n('0KEI')
+      function W(e, t) {
+        var n = F.e.selectLoggedInUser(e)
+        return n ? R.g(n.id_str, e) : null
       }
-      var W = Object(F.a)()
+      var V = Object(j.a)()
           .propsFromState(function () {
-            return { loggedInUser: A.e.selectLoggedInUser, bizProfile: L, email: R.selectFirstEmail }
+            return { loggedInUser: F.e.selectLoggedInUser, bizProfile: W, email: M.selectFirstEmail }
           })
           .propsFromActions(function () {
             return {
-              addToast: M.b,
-              createLocalApiErrorHandler: Object(j.createLocalApiErrorHandlerWithContextFactory)(
+              addToast: A.b,
+              createLocalApiErrorHandler: Object(L.createLocalApiErrorHandlerWithContextFactory)(
                 'SETTINGS_BIZ_PROFILE_SCREEN',
               ),
-              googleAnalyticsPageView: H.a,
-              scribePageImpression: H.d,
-              createBusinessProfile: I.a,
-              fetchUserBizProfile: I.b,
-              fetchDevices: R.fetchDevices,
-              hideBusinessProfile: I.d,
+              googleAnalyticsPageView: I.a,
+              scribePageImpression: I.d,
+              createBusinessProfile: R.a,
+              fetchUserBizProfile: R.b,
+              fetchDevices: M.fetchDevices,
+              hideBusinessProfile: R.d,
             }
           })
           .withAnalytics(),
-        V = n('Dtul'),
-        N =
+        N = n('Dtul'),
+        Y =
           (n('iKE+'),
           n('DZ+c'),
           n('3voH'),
           n('dlmX'),
           new RegExp('^[a-zA-Z0-9_\\-+\\.!\\&]+@(?:[a-zA-Z0-9\\-_]+\\.)+[a-zA-Z]{2,63}$')),
-        Y = new RegExp('^[0-9]{10}$'),
-        U = new RegExp('^[0-9]{5}$'),
-        K = [
+        U = new RegExp('^[0-9]{10}$'),
+        K = new RegExp('^[0-9]{5}$'),
+        Z = [
           'category',
           'businessName',
           'website',
@@ -573,40 +575,40 @@
           'city',
           'zipCode',
         ],
-        Z = K.filter(function (e) {
+        G = Z.filter(function (e) {
           return 'country' !== e && 'countryCode' !== e && 'timezone' !== e && 'state' !== e
         }),
-        G = Object.freeze({
+        X = Object.freeze({
           phoneNumber: function (e) {
             return e.startsWith('+') || e.startsWith('(1)') || e.startsWith('00')
               ? 'Please enter phone number without country code'
-              : Y.test(e)
+              : U.test(e)
               ? void 0
               : 'Please enter a valid phone number'
           },
           email: function (e) {
-            if (!N.test(e)) return 'Please enter a valid email'
+            if (!Y.test(e)) return 'Please enter a valid email'
           },
           zipCode: function (e) {
-            if (!U.test(e)) return 'Zip code must be 5 digits length'
+            if (!K.test(e)) return 'Zip code must be 5 digits length'
           },
         })
-      function X(e, t, n) {
+      function q(e, t, n) {
         var a
         if ('' === t) a = 'Field is invalid'
-        else if (G[e]) {
-          a = (0, G[e])(t)
+        else if (X[e]) {
+          a = (0, X[e])(t)
         }
         return a ? n.set(e, a) : n.delete(e), n
       }
-      var q = n('G1WX'),
-        J = n('4zmP'),
-        Q = n('p+r5'),
-        $ = n('cCdp'),
-        ee = n('6XNv'),
-        te = n('Y3cQ'),
-        ne = n('v6aA'),
-        ae =
+      var J = n('G1WX'),
+        Q = n('4zmP'),
+        $ = n('p+r5'),
+        ee = n('cCdp'),
+        te = n('6XNv'),
+        ne = n('Y3cQ'),
+        ae = n('v6aA'),
+        re =
           (n('m9LP'),
           n('7x/C'),
           n('87if'),
@@ -618,12 +620,12 @@
           n('kFen'),
           n('qd3W'),
           ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']),
-        re = [
+        oe = [
           { label: 'Don’t show hours', value: '' },
           { label: 'Always open', value: 'AlwaysOpen' },
           { label: 'Scheduled hours', value: 'RegularHours' },
         ],
-        oe = [
+        ie = [
           'AK',
           'AL',
           'AR',
@@ -683,7 +685,7 @@
         ].map(function (e) {
           return { value: e, label: e }
         }),
-        ie = [
+        le = [
           { value: 'America/Chicago', label: 'Central Daylight Time (America/Chicago)' },
           { value: 'Pacific/Honolulu', label: 'Hawaii Standard Time (Pacific/Honolulu)' },
           { value: 'America/Juneau', label: 'Alaska Daylight Time (America/Juneau)' },
@@ -694,14 +696,14 @@
         ].sort(function (e, t) {
           return e.label >= t.label ? 1 : -1
         }),
-        le = ['00', '15', '30', '45'],
-        se = Array(24)
+        se = ['00', '15', '30', '45'],
+        ce = Array(24)
           .fill(0)
           .map(function (e, t) {
             return t
           })
           .flatMap(function (e) {
-            return le.map(function (t) {
+            return se.map(function (t) {
               var n = e >= 12 ? 'PM' : 'AM'
               return {
                 label: ''
@@ -712,7 +714,7 @@
               }
             })
           }),
-        ce = {
+        ue = {
           website: '',
           email: '',
           countryCode: '+1',
@@ -724,21 +726,21 @@
           allowEmail: !0,
           getDirections: !0,
           acceptTYC: !1,
-          regularOpenHours: ae.map(function (e) {
+          regularOpenHours: re.map(function (e) {
             return { enabled: !1, day: e, slots: [] }
           }),
           country: 'us',
           allowUpdates: !1,
-          state: oe[0].value,
+          state: ie[0].value,
           businessName: '',
           category: '',
-          timezone: ie[0].value,
+          timezone: le[0].value,
           errors: new Map(),
           city: '',
           zipCode: '',
           showWarningModalClose: !1,
         }
-      function ue(e) {
+      function de(e) {
         var t, n
         return (
           3 === e.length
@@ -747,25 +749,25 @@
           { hour: t, minute: n }
         )
       }
-      function de(e) {
+      function he(e) {
         if (!e) return ''
         var t = e.hour,
           n = e.minute,
           a = n && 0 !== n ? (null == n ? void 0 : n.toString()) : '00'
         return ''.concat(null != t ? t : '').concat(a)
       }
-      function he(e) {
+      function pe(e) {
         var t = e.allowUpdates,
           n = e.businessName
         return { categories: [{ name: e.category }], name: n, consent_marketing_updates: t }
       }
-      function pe(e) {
+      function me(e) {
         var t = e.allowCall,
           n = e.allowEmail,
           a = e.allowText
         return { show_directions: e.getDirections, enable_call: t, enable_sms: a, enable_email: n }
       }
-      function me(e) {
+      function fe(e) {
         var t = e.address,
           n = e.city,
           a = e.country,
@@ -796,9 +798,9 @@
           timezone: 'RegularHours' === i ? { name: u } : void 0,
         }
       }
-      var fe = n('iY63'),
-        ye = n('hOZg')
-      function ge(e, t) {
+      var ye = n('iY63'),
+        ge = n('hOZg')
+      function be(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var a = Object.getOwnPropertySymbols(e)
@@ -810,22 +812,22 @@
         }
         return n
       }
-      function be(e) {
+      function ve(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? ge(Object(n), !0).forEach(function (t) {
+            ? be(Object(n), !0).forEach(function (t) {
                 y()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : ge(Object(n)).forEach(function (t) {
+            : be(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      function ve(e) {
+      function we(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -846,7 +848,7 @@
           return h()(this, n)
         }
       }
-      var we = Object.freeze({
+      var _e = Object.freeze({
           Monday: 'Monday',
           Tuesday: 'Tuesday',
           Wednesday: 'Wednesday',
@@ -855,18 +857,18 @@
           Saturday: 'Saturday',
           Sunday: 'Sunday',
         }),
-        _e = 'Use numbers only',
-        Ee = { page: 'settings', section: 'bizProfile' },
-        Oe = (function (e) {
+        Ee = 'Use numbers only',
+        Oe = { page: 'settings', section: 'bizProfile' },
+        Ce = (function (e) {
           u()(n, e)
-          var t = ve(n)
+          var t = we(n)
           function n() {
             var e
             r()(this, n)
             for (var a = arguments.length, o = new Array(a), i = 0; i < a; i++) o[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(o))),
-              y()(s()(e), 'state', ce),
+              y()(s()(e), 'state', ue),
               y()(s()(e), '_handleFetch', function () {
                 var t = e.props,
                   n = t.fetchDevices,
@@ -911,7 +913,7 @@
               }),
               y()(s()(e), '_handleOnBlurEventForBizProfiles', function (t) {
                 var n = t.currentTarget,
-                  a = X(n.name, n.value, e.state.errors)
+                  a = q(n.name, n.value, e.state.errors)
                 e.setState({ errors: a })
               }),
               y()(s()(e), '_handleHtmlEventForBizProfiles', function (t) {
@@ -930,7 +932,7 @@
                 var a = e.state.showWarningModalClose
                 return (
                   !(
-                    Z.find(function (t) {
+                    G.find(function (t) {
                       return '' !== e.state[t]
                     }) && !a
                   ) || (e.setState({ showWarningModalClose: !0 }), !1)
@@ -958,8 +960,8 @@
                     n = e.history,
                     a = e.loggedInUser,
                     r = e.scribePageImpression
-                  a ? (this._handleFetch(), r(Ee), t(Ee)) : n.push('/login'),
-                    (this._unlockReload = V.a.acquire()),
+                  a ? (this._handleFetch(), r(Oe), t(Oe)) : n.push('/login'),
+                    (this._unlockReload = N.a.acquire()),
                     (this._unblockHistory = this.props.history.block(this._blockHistory))
                 },
               },
@@ -991,7 +993,7 @@
                     u = s.fetchStatus
                   return i
                     ? c
-                      ? g.createElement(D, {
+                      ? b.a.createElement(x, {
                           business: c,
                           email: a,
                           history: r,
@@ -1000,7 +1002,7 @@
                           match: l,
                           onOptOut: this._handleOptOut,
                         })
-                      : g.createElement(q.a, {
+                      : b.a.createElement(J.a, {
                           fetchStatus: u,
                           onRequestRetry: this._handleFetch,
                           render: function () {
@@ -1030,68 +1032,68 @@
                     m = a.errors,
                     f = a.getDirections,
                     y = a.openHoursType,
-                    _ = a.phoneNumber,
+                    g = a.phoneNumber,
                     E = a.showWarningModalClose,
-                    S = a.state,
+                    O = a.state,
                     z = a.website,
                     k = a.zipCode,
                     D = m.size > 0 || !r,
-                    x = g.createElement(
-                      T.a,
-                      { disabled: D, onPress: this._handleSubmit, size: 'small', testID: w, type: 'primaryFilled' },
+                    x = b.a.createElement(
+                      P.a,
+                      { disabled: D, onPress: this._handleSubmit, size: 'small', testID: _, type: 'primaryFilled' },
                       'Submit',
                     )
-                  return g.createElement(
-                    b.b,
+                  return b.a.createElement(
+                    v.b,
                     {
                       history: t,
                       onBackClick: this._handleCancel,
                       rightControl: x,
                       title: 'Business Profile - Application',
                     },
-                    g.createElement(
-                      C.a,
-                      { style: Ce.container },
-                      g.createElement(
-                        C.a,
-                        { style: Ce.margin },
-                        g.createElement(P.a, { Icon: v.a, size: 'large', style: Ce.centered }),
-                        g.createElement(
-                          B.b,
+                    b.a.createElement(
+                      T.a,
+                      { style: Te.container },
+                      b.a.createElement(
+                        T.a,
+                        { style: Te.margin },
+                        b.a.createElement(B.a, { Icon: w.a, size: 'large', style: Te.centered }),
+                        b.a.createElement(
+                          S.b,
                           { align: 'center', size: 'headline1', weight: 'bold' },
-                          g.createElement('br', null),
+                          b.a.createElement('br', null),
                           'Apply for the Twitter Business Profile pilot',
                         ),
-                        g.createElement(
-                          B.b,
-                          { align: 'center', style: Ce.margin },
+                        b.a.createElement(
+                          S.b,
+                          { align: 'center', style: Te.margin },
                           'Use this form to apply for the Twitter Business Profile pilot. Keep an eye out for an email letting you know if you’re approved and when to expect changes to go live.',
                         ),
-                        g.createElement(
-                          C.a,
-                          { style: [Ce.bigMargin, Ce.bold] },
-                          g.createElement(J.a, {
+                        b.a.createElement(
+                          T.a,
+                          { style: [Te.bigMargin, Te.bold] },
+                          b.a.createElement(Q.a, {
                             text: 'The information you provide below will appear on your new, public profile.',
                           }),
                         ),
-                        g.createElement(
-                          B.b,
-                          { align: 'center', size: 'body', style: [Ce.deepGray, Ce.marginTop], weight: 'bold' },
+                        b.a.createElement(
+                          S.b,
+                          { align: 'center', size: 'body', style: [Te.deepGray, Te.marginTop], weight: 'bold' },
                           'All fields are required.',
                         ),
                       ),
-                      g.createElement(
-                        B.b,
-                        { size: 'headline1', style: Ce.sectionMargin, weight: 'bold' },
+                      b.a.createElement(
+                        S.b,
+                        { size: 'headline1', style: Te.sectionMargin, weight: 'bold' },
                         'Your business',
                       ),
-                      g.createElement(
-                        C.a,
-                        { style: Ce.bigMargin },
-                        g.createElement(B.b, { size: 'subtext3' }, 'Twitter username'),
-                        g.createElement(B.b, { testID: O }, '@', null == n ? void 0 : n.screen_name),
+                      b.a.createElement(
+                        T.a,
+                        { style: Te.bigMargin },
+                        b.a.createElement(S.b, { size: 'subtext3' }, 'Twitter username'),
+                        b.a.createElement(S.b, { testID: C }, '@', null == n ? void 0 : n.screen_name),
                       ),
-                      g.createElement(Q.a, {
+                      b.a.createElement($.a, {
                         defaultValue: u,
                         errorText: m.get('businessName'),
                         invalid: m.has('businessName'),
@@ -1101,7 +1103,7 @@
                         onChange: this._handleHtmlEventForBizProfiles,
                         showValidationIcon: !0,
                       }),
-                      g.createElement(Q.a, {
+                      b.a.createElement($.a, {
                         defaultValue: d,
                         errorText: m.get('category'),
                         invalid: m.has('category'),
@@ -1111,12 +1113,12 @@
                         onChange: this._handleHtmlEventForBizProfiles,
                         showValidationIcon: !0,
                       }),
-                      g.createElement(
-                        B.b,
-                        { size: 'headline1', style: Ce.sectionMargin, weight: 'bold' },
+                      b.a.createElement(
+                        S.b,
+                        { size: 'headline1', style: Te.sectionMargin, weight: 'bold' },
                         'Business contact info',
                       ),
-                      g.createElement(Q.a, {
+                      b.a.createElement($.a, {
                         defaultValue: p,
                         errorText: m.get('email'),
                         invalid: m.has('email'),
@@ -1127,10 +1129,10 @@
                         showValidationIcon: !0,
                         type: 'email',
                       }),
-                      g.createElement(
-                        C.a,
+                      b.a.createElement(
+                        T.a,
                         null,
-                        g.createElement($.a, {
+                        b.a.createElement(ee.a, {
                           checked: l,
                           helpText: 'People can email this address directly from your profile.',
                           label: 'Allow emails from profile link',
@@ -1139,22 +1141,22 @@
                           type: 'switch',
                         }),
                       ),
-                      g.createElement(
-                        C.a,
-                        { style: Ce.row },
-                        g.createElement(Q.a, {
+                      b.a.createElement(
+                        T.a,
+                        { style: Te.row },
+                        b.a.createElement($.a, {
                           defaultValue: '+1',
                           editable: !1,
                           label: 'Code',
                           name: 'countryCode',
                           onChange: this._handleHtmlEventForBizProfiles,
-                          style: Ce.smallInput,
+                          style: Te.smallInput,
                           type: 'tel',
                         }),
-                        g.createElement(Q.a, {
-                          defaultValue: _,
+                        b.a.createElement($.a, {
+                          defaultValue: g,
                           errorText: m.get('phoneNumber'),
-                          helperText: _e,
+                          helperText: Ee,
                           inputMode: 'tel',
                           invalid: m.has('phoneNumber'),
                           label: 'Phone number',
@@ -1163,14 +1165,14 @@
                           onBlur: this._handleOnBlurEventForBizProfiles,
                           onChange: this._handleHtmlEventForBizProfiles,
                           showValidationIcon: !0,
-                          style: Ce.expand,
+                          style: Te.expand,
                           type: 'number',
                         }),
                       ),
-                      g.createElement(
-                        C.a,
+                      b.a.createElement(
+                        T.a,
                         null,
-                        g.createElement($.a, {
+                        b.a.createElement(ee.a, {
                           checked: i,
                           helpText: 'Standard Rates Apply',
                           label: 'Allow customer voice calls from profile link',
@@ -1178,7 +1180,7 @@
                           onChange: this._handleChangeAllowSetting,
                           type: 'switch',
                         }),
-                        g.createElement($.a, {
+                        b.a.createElement(ee.a, {
                           checked: s,
                           helpText: 'Standard Rates Apply',
                           label: 'Allow customer text messages from profile link',
@@ -1187,7 +1189,7 @@
                           type: 'switch',
                         }),
                       ),
-                      g.createElement(Q.a, {
+                      b.a.createElement($.a, {
                         defaultValue: z,
                         errorText: m.get('website'),
                         invalid: m.has('website'),
@@ -1198,12 +1200,12 @@
                         showValidationIcon: !0,
                         type: 'url',
                       }),
-                      g.createElement(
-                        B.b,
-                        { size: 'headline1', style: Ce.sectionMargin, weight: 'bold' },
+                      b.a.createElement(
+                        S.b,
+                        { size: 'headline1', style: Te.sectionMargin, weight: 'bold' },
                         'Business location',
                       ),
-                      g.createElement(Q.a, {
+                      b.a.createElement($.a, {
                         defaultValue: o,
                         errorText: m.get('address'),
                         invalid: m.has('address'),
@@ -1213,7 +1215,7 @@
                         onChange: this._handleHtmlEventForBizProfiles,
                         showValidationIcon: !0,
                       }),
-                      g.createElement(Q.a, {
+                      b.a.createElement($.a, {
                         defaultValue: h,
                         errorText: m.get('city'),
                         invalid: m.has('city'),
@@ -1223,37 +1225,37 @@
                         onChange: this._handleHtmlEventForBizProfiles,
                         showValidationIcon: !0,
                       }),
-                      g.createElement(
-                        C.a,
-                        { style: Ce.row },
-                        g.createElement(
-                          C.a,
-                          { style: [Ce.margin, Ce.expand] },
-                          g.createElement(ee.a, {
+                      b.a.createElement(
+                        T.a,
+                        { style: Te.row },
+                        b.a.createElement(
+                          T.a,
+                          { style: [Te.margin, Te.expand] },
+                          b.a.createElement(te.a, {
                             label: 'State',
                             onChange: this._handleStateSelection,
-                            options: oe,
-                            value: S,
+                            options: ie,
+                            value: O,
                           }),
                         ),
-                        g.createElement(Q.a, {
+                        b.a.createElement($.a, {
                           defaultValue: k,
                           errorText: m.get('zipCode'),
-                          helperText: _e,
+                          helperText: Ee,
                           invalid: m.has('zipCode'),
                           label: 'ZIP/Postal code',
                           name: 'zipCode',
                           onBlur: this._handleOnBlurEventForBizProfiles,
                           onChange: this._handleHtmlEventForBizProfiles,
                           showValidationIcon: !0,
-                          style: Ce.expand,
+                          style: Te.expand,
                           type: 'number',
                         }),
                       ),
-                      g.createElement(
-                        C.a,
+                      b.a.createElement(
+                        T.a,
                         null,
-                        g.createElement($.a, {
+                        b.a.createElement(ee.a, {
                           checked: f,
                           label: 'Allow driving directions',
                           name: 'getDirections',
@@ -1261,27 +1263,27 @@
                           type: 'switch',
                         }),
                       ),
-                      g.createElement(
-                        B.b,
-                        { size: 'headline1', style: Ce.sectionMargin, weight: 'bold' },
+                      b.a.createElement(
+                        S.b,
+                        { size: 'headline1', style: Te.sectionMargin, weight: 'bold' },
                         'Business hours',
                       ),
-                      g.createElement(te.a, {
+                      b.a.createElement(ne.a, {
                         name: 'openHoursType',
                         onChange: this._handleOpenTimesTypeChange,
-                        options: re,
+                        options: oe,
                         value: null != y ? y : '',
                       }),
                       this._renderRegularOpenHours(),
-                      g.createElement(
-                        B.b,
-                        { size: 'headline1', style: Ce.sectionMargin, weight: 'bold' },
+                      b.a.createElement(
+                        S.b,
+                        { size: 'headline1', style: Te.sectionMargin, weight: 'bold' },
                         'Want more info from Twitter for Business?',
                       ),
-                      g.createElement(
-                        C.a,
+                      b.a.createElement(
+                        T.a,
                         null,
-                        g.createElement($.a, {
+                        b.a.createElement(ee.a, {
                           checked: c,
                           helpText:
                             'By choosing to get updates, you agree to receive marketing communications via email from Twitter. You may unsubscribe at any time.',
@@ -1289,12 +1291,12 @@
                           name: 'allowUpdates',
                           onChange: this._handleChangeAllowSetting,
                         }),
-                        g.createElement(
-                          C.a,
-                          { style: Ce.margin },
-                          g.createElement(B.b, null, this._renderTermsAndConditions()),
+                        b.a.createElement(
+                          T.a,
+                          { style: Te.margin },
+                          b.a.createElement(S.b, null, this._renderTermsAndConditions()),
                         ),
-                        g.createElement($.a, {
+                        b.a.createElement(ee.a, {
                           checked: r,
                           label: 'I have read and accept these Terms and Conditions.',
                           name: 'acceptTYC',
@@ -1309,42 +1311,42 @@
               {
                 key: '_renderTermsAndConditions',
                 value: function () {
-                  return g.createElement(
-                    B.b,
+                  return b.a.createElement(
+                    S.b,
                     null,
                     'By accepting these terms and submitting the information above, you represent and warrant that you are the owner of the entity listed on your Business Profile and/or have the authority to bind such entity to these terms. Participation in the Twitter Business Profile pilot is not guaranteed and is subject to the Twitter User Agreement including our',
                     ' ',
-                    g.createElement(
-                      B.b,
+                    b.a.createElement(
+                      S.b,
                       { accessibilityRole: 'button', link: 'https://twitter.com/tos' },
                       'Terms of Service',
                     ),
                     ' ',
                     'and the',
                     ' ',
-                    g.createElement(
-                      B.b,
+                    b.a.createElement(
+                      S.b,
                       { accessibilityRole: 'button', link: 'https://legal.twitter.com/ads-terms/us.html' },
                       'Twitter Master Services Agreement',
                     ),
                     ', as well as the Twitter Rules and Policies, including the',
                     ' ',
-                    g.createElement(
-                      B.b,
+                    b.a.createElement(
+                      S.b,
                       { accessibilityRole: 'button', link: 'http://www.twitter.com/adspolicy' },
                       'Twitter Ads Policy Guidelines',
                     ),
                     '. You are responsible for your Business Profile and any information provided as part of your Business Profile and must ensure these comply with all applicable laws, rules, and regulations. You should only provide information that you are comfortable sharing with others, including by publicly displaying your business information on your Business Profile, as applicable. Do not provide information, including for example a business phone number, business location or website, other than that of the actual business and that is under the direct control of your business. Our',
                     ' ',
-                    g.createElement(
-                      B.b,
+                    b.a.createElement(
+                      S.b,
                       { accessibilityRole: 'button', link: 'https://twitter.com/privacy' },
                       'privacy policy',
                     ),
                     ' ',
                     'describes how we handle information provided to us. To submit a request related to access, modification or deletion of any information provided to us as part of this pilot, please contact:',
-                    g.createElement(
-                      B.b,
+                    b.a.createElement(
+                      S.b,
                       { accessibilityRole: 'button', link: 'mailto:pilot_business_profile@twitter.com' },
                       'pilot_business_profile@twitter.com',
                     ),
@@ -1360,18 +1362,18 @@
                     a = t.validationError
                   return 'RegularHours' !== n
                     ? null
-                    : g.createElement(
-                        C.a,
+                    : b.a.createElement(
+                        T.a,
                         { ref: this._setRef },
-                        null != a && a.reason ? g.createElement(J.a, { text: a.reason, type: 'danger' }) : null,
-                        ae.map(function (t, n) {
+                        null != a && a.reason ? b.a.createElement(Q.a, { text: a.reason, type: 'danger' }) : null,
+                        re.map(function (t, n) {
                           return e._renderDailyInformationAndSlots(t)
                         }),
-                        g.createElement(ee.a, {
+                        b.a.createElement(te.a, {
                           label: 'Time zone',
                           onChange: this._handleTimezoneSelection,
-                          options: ie,
-                          style: Ce.margin,
+                          options: le,
+                          style: Te.margin,
                           withEmptyOption: !0,
                         }),
                       )
@@ -1384,16 +1386,16 @@
                     n = this.state.regularOpenHours.find(function (t) {
                       return t.day === e
                     })
-                  return g.createElement(
-                    C.a,
-                    { key: e, style: [Ce.row, Ce.marginTop, Ce.dailyInfo] },
-                    g.createElement(
-                      C.a,
-                      { style: Ce.dayToggle },
-                      g.createElement($.a, {
+                  return b.a.createElement(
+                    T.a,
+                    { key: e, style: [Te.row, Te.marginTop, Te.dailyInfo] },
+                    b.a.createElement(
+                      T.a,
+                      { style: Te.dayToggle },
+                      b.a.createElement(ee.a, {
                         checked: null == n ? void 0 : n.enabled,
                         key: 'flag'.concat(e),
-                        label: we[e],
+                        label: _e[e],
                         name: e,
                         onChange: function (n, a) {
                           return t._handleDayCheckboxChange(e, a)
@@ -1401,10 +1403,10 @@
                         type: 'switch',
                       }),
                     ),
-                    g.createElement(
-                      C.a,
-                      { style: [Ce.expand, Ce.centered, (null == n ? void 0 : n.enabled) && Ce.dayInfo] },
-                      null != n && n.enabled ? this._renderDaySlots(n, e) : g.createElement(B.b, null, 'Closed'),
+                    b.a.createElement(
+                      T.a,
+                      { style: [Te.expand, Te.centered, (null == n ? void 0 : n.enabled) && Te.dayInfo] },
+                      null != n && n.enabled ? this._renderDaySlots(n, e) : b.a.createElement(S.b, null, 'Closed'),
                     ),
                   )
                 },
@@ -1414,39 +1416,39 @@
                 value: function (e, t) {
                   var n = this,
                     a = e.slots && e.slots.length > 0 ? e.slots : [{}]
-                  return g.createElement(
-                    C.a,
+                  return b.a.createElement(
+                    T.a,
                     null,
                     a.map(function (a, r) {
-                      return g.createElement(
-                        C.a,
-                        { key: 'slot'.concat(t).concat(r), style: r > 0 ? [Ce.row, Ce.marginTop] : [Ce.row] },
-                        g.createElement(
-                          C.a,
-                          { style: [Ce.row, Ce.expand] },
-                          g.createElement(ee.a, {
+                      return b.a.createElement(
+                        T.a,
+                        { key: 'slot'.concat(t).concat(r), style: r > 0 ? [Te.row, Te.marginTop] : [Te.row] },
+                        b.a.createElement(
+                          T.a,
+                          { style: [Te.row, Te.expand] },
+                          b.a.createElement(te.a, {
                             key: 'open'.concat(t),
                             label: 'Open at',
                             onChange: function (e, a) {
                               return n._handleOpenTimeChange(e, t, r)
                             },
-                            options: se,
-                            style: Ce.timeRange,
-                            value: de(a.open),
+                            options: ce,
+                            style: Te.timeRange,
+                            value: he(a.open),
                           }),
-                          g.createElement(B.b, { size: 'headline1', style: [Ce.centered, Ce.dashMargin] }, '-'),
-                          g.createElement(ee.a, {
+                          b.a.createElement(S.b, { size: 'headline1', style: [Te.centered, Te.dashMargin] }, '-'),
+                          b.a.createElement(te.a, {
                             key: 'close'.concat(t),
                             label: 'Close at',
                             onChange: function (e) {
                               return n._handleCloseTimeChange(e, t, r)
                             },
-                            options: se,
-                            style: Ce.timeRange,
-                            value: de(a.close),
+                            options: ce,
+                            style: Te.timeRange,
+                            value: he(a.close),
                           }),
                         ),
-                        g.createElement(C.a, { style: [Ce.centered, Ce.buttonMargin] }, n._renderDayButton(e, t, r)),
+                        b.a.createElement(T.a, { style: [Te.centered, Te.buttonMargin] }, n._renderDayButton(e, t, r)),
                       )
                     }),
                   )
@@ -1457,26 +1459,26 @@
                 value: function (e, t, n) {
                   var a = this
                   return 0 === n
-                    ? g.createElement(T.a, {
+                    ? b.a.createElement(P.a, {
                         disabled: !(null != e && e.enabled),
-                        icon: g.createElement(fe.a, { key: 'icon'.concat(t), style: Ce.blue }),
+                        icon: b.a.createElement(ye.a, { key: 'icon'.concat(t), style: Te.blue }),
                         key: 'plus'.concat(t),
                         onPress: function (e) {
                           return a._handleAddSlot(t)
                         },
                         size: 'xSmall',
-                        style: [Ce.plusMinusButtons, Ce.blue],
+                        style: [Te.plusMinusButtons, Te.blue],
                         type: 'brandOutlined',
                       })
-                    : g.createElement(T.a, {
+                    : b.a.createElement(P.a, {
                         disabled: !(null != e && e.enabled),
-                        icon: g.createElement(ye.a, { key: 'iconMinus'.concat(t).concat(n), style: Ce.gray }),
+                        icon: b.a.createElement(ge.a, { key: 'iconMinus'.concat(t).concat(n), style: Te.gray }),
                         key: 'minus'.concat(t).concat(n),
                         onPress: function (e) {
                           return a._handleRemoveSlot(t, n)
                         },
                         size: 'xSmall',
-                        style: Ce.plusMinusButtons,
+                        style: Te.plusMinusButtons,
                         type: 'brandText',
                       })
                 },
@@ -1484,7 +1486,7 @@
               {
                 key: '_renderCloseModalWarning',
                 value: function () {
-                  return g.createElement(S.a, {
+                  return b.a.createElement(z.a, {
                     cancelButtonLabel: 'Cancel',
                     confirmButtonLabel: 'Yes, leave',
                     headline: 'Are you sure you want to leave this form?',
@@ -1506,14 +1508,14 @@
                     o = n.loggedInUser,
                     i =
                       ((e = this.state),
-                      K.reduceRight(function (t, n, a, r) {
-                        return X(n, e[n], t)
+                      Z.reduceRight(function (t, n, a, r) {
+                        return q(n, e[n], t)
                       }, e.errors))
                   if (i.size > 0) this.setState({ errors: i })
                   else if (o) {
-                    var l = he(this.state),
-                      s = me(this.state),
-                      c = { businessInput: l, config: pe(this.state), venueData: s }
+                    var l = pe(this.state),
+                      s = fe(this.state),
+                      c = { businessInput: l, config: me(this.state), venueData: s }
                     a(o.id_str, c)
                       .then(function (e) {
                         var n = e.error
@@ -1532,7 +1534,7 @@
                       open: { hour: n.close.hour + 1, minute: n.close.minute },
                       close: { hour: n.close.hour + 2, minute: n.close.minute },
                     }),
-                    r = be(be({}, t), {}, { slots: a })
+                    r = ve(ve({}, t), {}, { slots: a })
                   this._replaceDailyInfo(r)
                 },
               },
@@ -1543,7 +1545,7 @@
                     a = n.slots.filter(function (e, n) {
                       return n !== t
                     }),
-                    r = be(be({}, n), {}, { slots: a })
+                    r = ve(ve({}, n), {}, { slots: a })
                   this._replaceDailyInfo(r)
                 },
               },
@@ -1551,10 +1553,10 @@
                 key: '_handleOpenTimeChange',
                 value: function (e, t, n) {
                   var a = this._getCurrentDaySlot(t),
-                    r = ue(e),
+                    r = de(e),
                     o = { close: a.slots[n].close, open: r },
                     i = a.slots.fill(o, n, n + 1),
-                    l = be(be({}, a), {}, { slots: i })
+                    l = ve(ve({}, a), {}, { slots: i })
                   this._replaceDailyInfo(l)
                 },
               },
@@ -1562,10 +1564,10 @@
                 key: '_handleCloseTimeChange',
                 value: function (e, t, n) {
                   var a = this._getCurrentDaySlot(t),
-                    r = ue(e),
+                    r = de(e),
                     o = { open: a.slots[n].open, close: r },
                     i = 0 === a.slots.length ? [o] : a.slots.fill(o, n, n + 1),
-                    l = be(be({}, a), {}, { slots: i })
+                    l = ve(ve({}, a), {}, { slots: i })
                   this._replaceDailyInfo(l)
                 },
               },
@@ -1602,9 +1604,9 @@
             ]),
             n
           )
-        })(g.Component)
-      y()(Oe, 'contextType', ne.a)
-      var Ce = z.a.create(function (e) {
+        })(b.a.Component)
+      y()(Ce, 'contextType', ae.a)
+      var Te = k.a.create(function (e) {
           return {
             margin: {
               marginHorizontal: e.componentDimensions.gutterHorizontal,
@@ -1634,19 +1636,20 @@
             deepGray: { color: e.colors.gray700 },
           }
         }),
-        Te = W(Oe)
-      t.default = Te
+        Pe = V(Ce)
+      t.default = Pe
     },
     Y3cQ: function (e, t, n) {
       'use strict'
       var a = n('ERkP'),
-        r = n('fyvP'),
-        o = n('rHpw'),
-        i = n('MWbm')
+        r = n.n(a),
+        o = n('fyvP'),
+        i = n('rHpw'),
+        l = n('MWbm')
       t.a = function (e) {
-        return a.createElement(i.a, { style: l.root }, a.createElement(r.a, e))
+        return r.a.createElement(l.a, { style: s.root }, r.a.createElement(o.a, e))
       }
-      var l = o.a.create(function (e) {
+      var s = i.a.create(function (e) {
         return {
           root: {
             backgroundColor: e.colors.cellBackground,
@@ -1662,9 +1665,10 @@
       var a = n('KEM+'),
         r = n.n(a),
         o = n('ERkP'),
-        i = n('Lsrn'),
-        l = n('k/Ka')
-      function s(e, t) {
+        i = n.n(o),
+        l = n('Lsrn'),
+        s = n('k/Ka')
+      function c(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var a = Object.getOwnPropertySymbols(e)
@@ -1676,40 +1680,40 @@
         }
         return n
       }
-      function c(e) {
+      function u(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? s(Object(n), !0).forEach(function (t) {
+            ? c(Object(n), !0).forEach(function (t) {
                 r()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : s(Object(n)).forEach(function (t) {
+            : c(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var u = function () {
+      var d = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(l.a)(
+        return Object(s.a)(
           'svg',
-          c(
-            c({}, e),
+          u(
+            u({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [i.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [l.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          o.createElement(
+          i.a.createElement(
             'g',
             null,
-            o.createElement('path', {
+            i.a.createElement('path', {
               d: 'M19.75 11H13V4.25c0-.553-.447-1-1-1s-1 .447-1 1V11H4.25c-.553 0-1 .447-1 1s.447 1 1 1H11v6.75c0 .553.447 1 1 1s1-.447 1-1V13h6.75c.553 0 1-.447 1-1s-.447-1-1-1z',
             }),
           ),
         )
       }
-      ;(u.metadata = { width: 24, height: 24 }), (t.a = u)
+      ;(d.metadata = { width: 24, height: 24 }), (t.a = d)
     },
   },
 ])

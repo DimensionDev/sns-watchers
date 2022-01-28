@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [343],
+  [347],
   {
     '5aND': function (e, t, n) {
       'use strict'
@@ -176,13 +176,13 @@
     hYIq: function (e, t, n) {
       'use strict'
       n.d(t, 'c', function () {
-        return E
+        return k
       }),
         n.d(t, 'a', function () {
-          return k
+          return D
         }),
         n.d(t, 'b', function () {
-          return D
+          return R
         })
       n('OZaJ')
       var r = n('VrFO'),
@@ -196,13 +196,14 @@
         p = n('AuHH'),
         f = n.n(p),
         b = n('ERkP'),
-        g = n('u3ZE'),
-        m = n('MWbm'),
-        y = n('t62R'),
-        O = n('rHpw'),
-        h = n('3XMw'),
-        d = n.n(h)
-      function v(e) {
+        g = n.n(b),
+        m = n('u3ZE'),
+        y = n('MWbm'),
+        O = n('t62R'),
+        h = n('rHpw'),
+        d = n('3XMw'),
+        v = n.n(d)
+      function j(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -223,14 +224,14 @@
           return l()(this, n)
         }
       }
-      var j = d.a.je5502ea,
-        P = d.a.bc4628a0,
-        w = function (e) {
-          return b.createElement(y.b, { weight: 'bold' }, e)
+      var P = v.a.je5502ea,
+        w = v.a.bc4628a0,
+        E = function (e) {
+          return g.a.createElement(O.b, { weight: 'bold' }, e)
         },
-        E = (function (e) {
+        k = (function (e) {
           u()(n, e)
-          var t = v(n)
+          var t = j(n)
           function n() {
             return o()(this, n), t.apply(this, arguments)
           }
@@ -240,53 +241,21 @@
                 key: 'render',
                 value: function () {
                   var e = this.props.suggestion,
-                    t = { pathname: '/search', query: { q: e, src: g.a.SpellingSuggestionClick } }
-                  return b.createElement(
-                    y.b,
-                    { link: t, style: R.root },
-                    b.createElement(d.a.I18NFormatMessage, { $i18n: 'hce48b8a' }, w(e)),
+                    t = { pathname: '/search', query: { q: e, src: m.a.SpellingSuggestionClick } }
+                  return g.a.createElement(
+                    O.b,
+                    { link: t, style: C.root },
+                    g.a.createElement(v.a.I18NFormatMessage, { $i18n: 'hce48b8a' }, E(e)),
                   )
                 },
               },
             ]),
             n
           )
-        })(b.PureComponent),
-        k = (function (e) {
-          u()(n, e)
-          var t = v(n)
-          function n() {
-            return o()(this, n), t.apply(this, arguments)
-          }
-          return (
-            i()(n, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.onClick,
-                    n = e.original,
-                    r = e.suggestion,
-                    o = { pathname: '/search', query: { q: r, src: g.a.SpellingCorrectionClick } }
-                  return b.createElement(
-                    m.a,
-                    { style: R.root },
-                    b.createElement(y.b, { weight: 'bold' }, P({ suggestion: r })),
-                    b.createElement(
-                      y.b,
-                      { link: o, onClick: t },
-                      b.createElement(d.a.I18NFormatMessage, { $i18n: 'h36fe5c9' }, w(n)),
-                    ),
-                  )
-                },
-              },
-            ]),
-            n
-          )
-        })(b.PureComponent),
+        })(g.a.PureComponent),
         D = (function (e) {
           u()(n, e)
-          var t = v(n)
+          var t = j(n)
           function n() {
             return o()(this, n), t.apply(this, arguments)
           }
@@ -299,15 +268,15 @@
                     t = e.onClick,
                     n = e.original,
                     r = e.suggestion,
-                    o = { pathname: '/search', query: { q: n, src: g.a.SpellingExpansionRevertClick } }
-                  return b.createElement(
-                    m.a,
-                    { style: R.root },
-                    b.createElement(y.b, { weight: 'bold' }, j({ suggestion: r })),
-                    b.createElement(
-                      y.b,
+                    o = { pathname: '/search', query: { q: r, src: m.a.SpellingCorrectionClick } }
+                  return g.a.createElement(
+                    y.a,
+                    { style: C.root },
+                    g.a.createElement(O.b, { weight: 'bold' }, w({ suggestion: r })),
+                    g.a.createElement(
+                      O.b,
                       { link: o, onClick: t },
-                      b.createElement(d.a.I18NFormatMessage, { $i18n: 'h36fe5c9' }, w(n)),
+                      g.a.createElement(v.a.I18NFormatMessage, { $i18n: 'h36fe5c9' }, E(n)),
                     ),
                   )
                 },
@@ -315,8 +284,40 @@
             ]),
             n
           )
-        })(b.PureComponent),
-        R = O.a.create(function (e) {
+        })(g.a.PureComponent),
+        R = (function (e) {
+          u()(n, e)
+          var t = j(n)
+          function n() {
+            return o()(this, n), t.apply(this, arguments)
+          }
+          return (
+            i()(n, [
+              {
+                key: 'render',
+                value: function () {
+                  var e = this.props,
+                    t = e.onClick,
+                    n = e.original,
+                    r = e.suggestion,
+                    o = { pathname: '/search', query: { q: n, src: m.a.SpellingExpansionRevertClick } }
+                  return g.a.createElement(
+                    y.a,
+                    { style: C.root },
+                    g.a.createElement(O.b, { weight: 'bold' }, P({ suggestion: r })),
+                    g.a.createElement(
+                      O.b,
+                      { link: o, onClick: t },
+                      g.a.createElement(v.a.I18NFormatMessage, { $i18n: 'h36fe5c9' }, E(n)),
+                    ),
+                  )
+                },
+              },
+            ]),
+            n
+          )
+        })(g.a.PureComponent),
+        C = h.a.create(function (e) {
           return {
             root: {
               paddingHorizontal: e.componentDimensions.gutterHorizontal,

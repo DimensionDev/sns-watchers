@@ -1,14 +1,14 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [182, 198],
+  [184, 201],
   {
     '0af8': function (t, e, n) {
       'use strict'
       n.r(e),
         n.d(e, 'roundToNearestDevicePixel', function () {
-          return P
+          return I
         }),
         n.d(e, 'default', function () {
-          return I
+          return k
         })
       n('OZaJ')
       var r = n('VrFO'),
@@ -26,13 +26,14 @@
         m = n('KEM+'),
         y = n.n(m),
         v = n('ERkP'),
-        O = n('aITJ'),
-        g = (n('aWzz'), n('v6aA')),
-        _ = n('jHwr'),
-        b = n('rHpw'),
-        w = n('i4Oy'),
-        E = n('MWbm')
-      function R(t) {
+        O = n.n(v),
+        g = n('aITJ'),
+        _ = (n('aWzz'), n('v6aA')),
+        b = n('jHwr'),
+        w = n('rHpw'),
+        E = n('i4Oy'),
+        R = n('MWbm')
+      function P(t) {
         var e = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -53,14 +54,14 @@
           return f()(this, n)
         }
       }
-      var P = function (t) {
+      var I = function (t) {
           var e = t.cssPixels,
             n = t.dpr
           return Math.round(e * n) / n
         },
-        I = (function (t) {
+        k = (function (t) {
           l()(n, t)
-          var e = R(n)
+          var e = P(n)
           function n(t, r) {
             var i
             return (
@@ -88,7 +89,7 @@
                 stickyOffset: 0,
                 position: 'sticky',
               }),
-              (i._scheduleUpdatePositioning = Object(_.a)(
+              (i._scheduleUpdatePositioning = Object(b.a)(
                 i._updatePositioning.bind(s()(i)),
                 window.requestAnimationFrame,
               )),
@@ -136,17 +137,17 @@
                     n = t.position,
                     r = t.stickyThreshold,
                     o = t.stickyTop,
-                    i = k[n],
+                    i = x[n],
                     a = window.devicePixelRatio || 1,
-                    c = P({ cssPixels: r, dpr: a }),
-                    s = P({ cssPixels: e, dpr: a }),
+                    c = I({ cssPixels: r, dpr: a }),
+                    s = I({ cssPixels: e, dpr: a }),
                     u = { top: o ? ''.concat(c, 'px') : null, bottom: o ? null : ''.concat(c, 'px') }
-                  return v.createElement(
-                    E.a,
-                    { ref: this._setContainerRef, style: [k.container, { minHeight: this.state.contentHeight }] },
-                    v.createElement(E.a, { style: { marginTop: ''.concat(s, 'px') } }),
-                    v.createElement(
-                      E.a,
+                  return O.a.createElement(
+                    R.a,
+                    { ref: this._setContainerRef, style: [x.container, { minHeight: this.state.contentHeight }] },
+                    O.a.createElement(R.a, { style: { marginTop: ''.concat(s, 'px') } }),
+                    O.a.createElement(
+                      R.a,
                       { onLayout: this._handleLayout, ref: this._setContentRef, style: [this.props.style, u, i] },
                       this.props.children,
                     ),
@@ -166,7 +167,7 @@
                       var o = !!this._contentNode && this._contentNode.getBoundingClientRect(),
                         i = !!this._containerNode && this._containerNode.getBoundingClientRect()
                       if (o && i) {
-                        var a = w.a.get('window'),
+                        var a = E.a.get('window'),
                           c = a.height,
                           s = e + i.top,
                           u = Math.max(o.top - i.top, 0)
@@ -186,7 +187,7 @@
                             p = o.bottom - c + r <= 1 / f,
                             h = s - o.top <= 1 / f,
                             m = (l && p) || (!l && h)
-                          if (m && O.b.isFirefox()) {
+                          if (m && g.b.isFirefox()) {
                             var y = r,
                               v = s
                             this._updateState({
@@ -198,13 +199,13 @@
                               contentHeight: o.height,
                             })
                           } else {
-                            var g = c - o.height - r,
+                            var O = c - o.height - r,
                               _ = c - o.height - s
                             this._updateState({
                               position: 'sticky',
                               stickyTop: l,
                               stickyOffset: s,
-                              stickyThreshold: l ? g : _,
+                              stickyThreshold: l ? O : _,
                               contentOffset: d ? u : this.state.contentOffset,
                               contentHeight: o.height,
                             })
@@ -230,9 +231,9 @@
             ]),
             n
           )
-        })(v.PureComponent)
-      y()(I, 'contextType', g.a), y()(I, 'defaultProps', { distanceFromBottom: 10 })
-      var k = b.a.create(function (t) {
+        })(O.a.PureComponent)
+      y()(k, 'contextType', _.a), y()(k, 'defaultProps', { distanceFromBottom: 10 })
+      var x = w.a.create(function (t) {
         return {
           container: { height: '100%' },
           sticky: { position: 'sticky' },
@@ -245,7 +246,7 @@
       'use strict'
       n.r(e),
         n.d(e, 'WhoToFollowContainer', function () {
-          return G
+          return Q
         })
       n('OZaJ'), n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var r = n('VrFO'),
@@ -263,72 +264,73 @@
         m = n('KEM+'),
         y = n.n(m),
         v = (n('2G9S'), n('z84I'), n('M+/F'), n('ERkP')),
-        O = n('Xs4Y'),
-        g = n('kGix'),
-        _ = n('v//M'),
-        b = n('3XMw'),
-        w = n.n(b),
-        E = n('Rp9C'),
-        R = n('rHpw'),
-        P = n('MWbm'),
-        I = n('lP98'),
-        k = n('RqPI'),
-        x = n('rxPX'),
-        S = n('0KEI'),
-        L = 'profile_accounts_sidebar',
-        H = function (t, e) {
-          return k.q(t)
-        },
+        O = n.n(v),
+        g = n('Xs4Y'),
+        _ = n('kGix'),
+        b = n('v//M'),
+        w = n('3XMw'),
+        E = n.n(w),
+        R = n('Rp9C'),
+        P = n('rHpw'),
+        I = n('MWbm'),
+        k = n('lP98'),
+        x = n('RqPI'),
+        S = n('rxPX'),
+        L = n('0KEI'),
+        H = 'profile_accounts_sidebar',
         T = function (t, e) {
-          return e.userId
+          return x.q(t)
         },
         j = function (t, e) {
-          var n = T(0, e),
-            r = H(t)
-          return I.c(t, { displayLocation: L, similarToUserId: n === r ? void 0 : n })
+          return e.userId
         },
         N = function (t, e) {
-          var n = T(0, e),
-            r = H(t)
-          return I.b(t, { displayLocation: L, similarToUserId: n === r ? void 0 : n })
+          var n = j(0, e),
+            r = T(t)
+          return k.c(t, { displayLocation: H, similarToUserId: n === r ? void 0 : n })
         },
-        C = Object(x.a)()
+        C = function (t, e) {
+          var n = j(0, e),
+            r = T(t)
+          return k.b(t, { displayLocation: H, similarToUserId: n === r ? void 0 : n })
+        },
+        D = Object(S.a)()
           .propsFromState(function () {
-            return { fetchStatus: N, loggedInUserId: H, recommendations: j }
+            return { fetchStatus: C, loggedInUserId: T, recommendations: N }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(S.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(L.createLocalApiErrorHandlerWithContextFactory)(
                 'WHO_TO_FOLLOW_CONTAINER',
               ),
-              fetchRecommendationsIfNeeded: I.a,
+              fetchRecommendationsIfNeeded: k.a,
             }
           })
           .withAnalytics({ component: 'suggest_who_to_follow' }),
-        D = n('Re5t'),
-        U = n('hqDb'),
-        F = n('hxu0'),
-        M = n('6vad'),
-        A = n('rC8y'),
-        B = w.a.a526aa66,
-        W = w.a.ef62501f,
-        K = w.a.d228a9a0,
-        Y = Object(F.a)(function (t) {
+        U = n('Re5t'),
+        F = n('hqDb'),
+        M = n('hxu0'),
+        A = n('6vad'),
+        B = n('rC8y'),
+        W = E.a.a526aa66,
+        K = E.a.ef62501f,
+        Y = E.a.d228a9a0,
+        z = Object(M.a)(function (t) {
           var e = t.isInSidebar,
             n = t.userId,
             r = t.userIds,
             o = t.withProfileHeaderText,
             i = r.length > 3,
             a = '/i/connect_people?user_id='.concat(n)
-          return v.createElement(
-            P.a,
-            { accessibilityLabel: B, accessibilityRole: 'complementary' },
-            v.createElement(M.b, { text: o ? W : B }),
-            v.createElement(U.a, { displayMode: D.a.UserCompact, userIds: r.slice(0, 3), withItemBorder: !0 }),
-            i && v.createElement(A.a, { link: a, text: K, withBottomRadius: !0, withDarkerInteractiveBackground: e }),
+          return O.a.createElement(
+            I.a,
+            { accessibilityLabel: W, accessibilityRole: 'complementary' },
+            O.a.createElement(A.b, { text: o ? K : W }),
+            O.a.createElement(F.a, { displayMode: U.a.UserCompact, userIds: r.slice(0, 3), withItemBorder: !0 }),
+            i && O.a.createElement(B.a, { link: a, text: Y, withBottomRadius: !0, withDarkerInteractiveBackground: e }),
           )
         })
-      function z(t, e) {
+      function X(t, e) {
         var n = Object.keys(t)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(t)
@@ -340,22 +342,22 @@
         }
         return n
       }
-      function X(t) {
+      function J(t) {
         for (var e = 1; e < arguments.length; e++) {
           var n = null != arguments[e] ? arguments[e] : {}
           e % 2
-            ? z(Object(n), !0).forEach(function (e) {
+            ? X(Object(n), !0).forEach(function (e) {
                 y()(t, e, n[e])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n))
-            : z(Object(n)).forEach(function (e) {
+            : X(Object(n)).forEach(function (e) {
                 Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
               })
         }
         return t
       }
-      function J(t) {
+      function q(t) {
         var e = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -376,12 +378,12 @@
           return f()(this, n)
         }
       }
-      var q = w.a.fd6473fa,
-        V = { element: 'user', action: 'results' },
-        Z = { viewType: 'who_to_follow' },
-        G = (function (t) {
+      var V = E.a.fd6473fa,
+        Z = { element: 'user', action: 'results' },
+        G = { viewType: 'who_to_follow' },
+        Q = (function (t) {
           l()(n, t)
-          var e = J(n)
+          var e = q(n)
           function n() {
             var t
             o()(this, n)
@@ -398,16 +400,16 @@
                     n.map(function (t) {
                       return t.user
                     })
-                return v.createElement(Y, { userId: r, userIds: i, withProfileHeaderText: o })
+                return O.a.createElement(z, { userId: r, userIds: i, withProfileHeaderText: o })
               }),
               y()(s()(t), '_handleImpression', function (e) {
                 var n = t.props.analytics,
                   r =
                     e &&
                     e.slice(0, 3).map(function (t) {
-                      return X(X({}, E.a.forUser(t.user)), {}, { suggestion_details: { source_data: t.token } })
+                      return J(J({}, R.a.forUser(t.user)), {}, { suggestion_details: { source_data: t.token } })
                     })
-                n.scribe(X(X({}, V), {}, { data: { items: r } }))
+                n.scribe(J(J({}, Z), {}, { data: { items: r } }))
               }),
               t
             )
@@ -435,14 +437,14 @@
                   var t = this.props,
                     e = t.fetchStatus,
                     n = t.style
-                  return e === g.a.FAILED || this._hasEmptySuggestionList()
+                  return e === _.a.FAILED || this._hasEmptySuggestionList()
                     ? null
-                    : v.createElement(
-                        P.a,
-                        { style: [Q.root, n] },
-                        v.createElement(_.a, {
-                          accessibilityLabel: q,
-                          behavioralEventContext: Z,
+                    : O.a.createElement(
+                        I.a,
+                        { style: [$.root, n] },
+                        O.a.createElement(b.a, {
+                          accessibilityLabel: V,
+                          behavioralEventContext: G,
                           fetchStatus: e,
                           render: this._renderContent,
                         }),
@@ -456,7 +458,7 @@
                     n = t.fetchRecommendationsIfNeeded,
                     r = t.loggedInUserId,
                     o = t.userId
-                  n({ limit: 4, displayLocation: L, similarToUserId: o !== r ? o : void 0 }).catch(e(O.a))
+                  n({ limit: 4, displayLocation: H, similarToUserId: o !== r ? o : void 0 }).catch(e(g.a))
                 },
               },
               {
@@ -465,18 +467,18 @@
                   var t = this.props,
                     e = t.fetchStatus,
                     n = t.recommendations
-                  return e === g.a.LOADED && 0 === n.length
+                  return e === _.a.LOADED && 0 === n.length
                 },
               },
             ]),
             n
           )
-        })(v.PureComponent),
-        Q = R.a.create(function (t) {
+        })(O.a.PureComponent),
+        $ = P.a.create(function (t) {
           return { root: { minHeight: '15rem' } }
         }),
-        $ = C(G)
-      e.default = $
+        tt = D(Q)
+      e.default = tt
     },
     Xs4Y: function (t, e, n) {
       'use strict'
@@ -506,7 +508,7 @@
       'use strict'
       n.r(e),
         n.d(e, 'default', function () {
-          return F
+          return M
         })
       n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('OZaJ')
       var r = n('97Jx'),
@@ -526,21 +528,22 @@
         v = n('KEM+'),
         O = n.n(v),
         g = (n('uFXj'), n('yH/f'), n('XygZ'), n('ERkP')),
-        _ = n('zfvc'),
-        b = n('jHwr'),
-        w = n('VY6S'),
-        E = n('w9LO'),
-        R = n('//dC'),
-        P = n('lHOd'),
-        I = n('Oe3h'),
-        k = n('0FVZ'),
-        x = n('7N4s'),
-        S = n('cHvH'),
-        L = n('rHpw'),
-        H = n('i4Oy'),
-        T = n('shC7'),
-        j = n('MWbm')
-      function N(t) {
+        _ = n.n(g),
+        b = n('zfvc'),
+        w = n('jHwr'),
+        E = n('VY6S'),
+        R = n('w9LO'),
+        P = n('//dC'),
+        I = n('lHOd'),
+        k = n('Oe3h'),
+        x = n('0FVZ'),
+        S = n('7N4s'),
+        L = n('cHvH'),
+        H = n('rHpw'),
+        T = n('i4Oy'),
+        j = n('shC7'),
+        N = n('MWbm')
+      function C(t) {
         var e = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -561,7 +564,7 @@
           return h()(this, n)
         }
       }
-      function C(t, e) {
+      function D(t, e) {
         var n = Object.keys(t)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(t)
@@ -573,28 +576,28 @@
         }
         return n
       }
-      function D(t) {
+      function U(t) {
         for (var e = 1; e < arguments.length; e++) {
           var n = null != arguments[e] ? arguments[e] : {}
           e % 2
-            ? C(Object(n), !0).forEach(function (e) {
+            ? D(Object(n), !0).forEach(function (e) {
                 O()(t, e, n[e])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n))
-            : C(Object(n)).forEach(function (e) {
+            : D(Object(n)).forEach(function (e) {
                 Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
               })
         }
         return t
       }
-      var U = L.a.create(function (t) {
+      var F = H.a.create(function (t) {
           return {
             rootNarrow: { maxWidth: '75%' },
             rootWide: { maxWidth: 'calc('.concat(t.spaces.space64, ' * 6)') },
-            anchor: L.a.absoluteFillObject,
-            mask: D(D({}, L.a.absoluteFillObject), {}, { position: 'fixed' }),
-            bodyRectHelper: D(D({}, L.a.absoluteFillObject), {}, { bottom: void 0 }),
+            anchor: H.a.absoluteFillObject,
+            mask: U(U({}, H.a.absoluteFillObject), {}, { position: 'fixed' }),
+            bodyRectHelper: U(U({}, H.a.absoluteFillObject), {}, { bottom: void 0 }),
             content: {
               borderRadius: t.borderRadii.small,
               position: 'absolute',
@@ -606,9 +609,9 @@
             contentFixed: { position: 'fixed', overflowY: 'auto', overscrollBehavior: 'contain' },
           }
         }),
-        F = (function (t) {
+        M = (function (t) {
           f()(n, t)
-          var e = N(n)
+          var e = C(n)
           function n(t, r) {
             var o
             return (
@@ -650,12 +653,12 @@
                     r = n.left,
                     i = n.top,
                     a = n.width,
-                    c = H.a.get('window'),
+                    c = T.a.get('window'),
                     s = c.height,
                     u = c.width,
                     l = { left: 0, top: 0, height: 0, width: 0 }
                   o.props.position
-                    ? (l = D(D({}, l), o.props.position))
+                    ? (l = U(U({}, l), o.props.position))
                     : o._anchorNode &&
                       o._anchorNode instanceof window.HTMLElement &&
                       (l = o._anchorNode.getBoundingClientRect())
@@ -673,7 +676,7 @@
                     w = s - h >= t,
                     E = o.props.preferredVerticalOrientation,
                     R = (function (t) {
-                      return T.a.getConstants().isRTL ? ('left' === t ? 'right' : 'left') : t
+                      return j.a.getConstants().isRTL ? ('left' === t ? 'right' : 'left') : t
                     })(o.props.preferredHorizontalOrientation),
                     P =
                       o.state.verticalOrientation ||
@@ -699,8 +702,8 @@
                 }
               }),
               (o.state = Object.freeze({})),
-              (o._scheduleUpdate = Object(b.a)(o._updatePosition, window.requestAnimationFrame)),
-              (o._scheduleDebouncedUpdate = Object(w.a)(o._scheduleUpdate, 250)),
+              (o._scheduleUpdate = Object(w.a)(o._updatePosition, window.requestAnimationFrame)),
+              (o._scheduleDebouncedUpdate = Object(E.a)(o._scheduleUpdate, 250)),
               o
             )
           }
@@ -709,13 +712,13 @@
               {
                 key: 'componentDidMount',
                 value: function () {
-                  ;(this._mounted = !0), H.a.addEventListener('change', this._scheduleDebouncedUpdate)
+                  ;(this._mounted = !0), T.a.addEventListener('change', this._scheduleDebouncedUpdate)
                 },
               },
               {
                 key: 'componentWillUnmount',
                 value: function () {
-                  ;(this._mounted = !1), H.a.removeEventListener('change', this._scheduleDebouncedUpdate)
+                  ;(this._mounted = !1), T.a.removeEventListener('change', this._scheduleDebouncedUpdate)
                 },
               },
               {
@@ -736,46 +739,46 @@
                     p = void 0 === d,
                     h = 'calc(100vh - '.concat(d || 0, 'px)'),
                     m = [
-                      U.content,
-                      p && U.contentInitialRender,
-                      a && [U.contentFixed, { maxHeight: h }],
+                      F.content,
+                      p && F.contentInitialRender,
+                      a && [F.contentFixed, { maxHeight: h }],
                       {
                         top: d,
-                        right: T.a.getConstants().isRTL ? void 0 : l,
-                        left: T.a.getConstants().isRTL ? l : void 0,
+                        right: j.a.getConstants().isRTL ? void 0 : l,
+                        left: j.a.getConstants().isRTL ? l : void 0,
                       },
                     ]
-                  return g.createElement(
-                    j.a,
-                    { ref: this._receiveAnchorRef, style: U.anchor },
-                    g.createElement(
-                      k.a.Dropdown,
+                  return _.a.createElement(
+                    N.a,
+                    { ref: this._receiveAnchorRef, style: F.anchor },
+                    _.a.createElement(
+                      x.a.Dropdown,
                       null,
-                      g.createElement(P.a.Consumer, null, function (e) {
-                        return g.createElement(x.b.Consumer, null, function (a) {
+                      _.a.createElement(I.a.Consumer, null, function (e) {
+                        return _.a.createElement(S.b.Consumer, null, function (a) {
                           var u = a.isModal
-                          return g.createElement(
-                            R.a,
+                          return _.a.createElement(
+                            P.a,
                             { history: e, isModal: u, onDismiss: c },
-                            g.createElement(
-                              E.a,
+                            _.a.createElement(
+                              R.a,
                               { withKeyboardNavigation: s },
-                              g.createElement(j.a, { onClick: c, style: U.mask }),
-                              g.createElement(j.a, { ref: t._receiveBodyRectHelperRef, style: U.bodyRectHelper }),
-                              g.createElement(S.a, null, function (e) {
+                              _.a.createElement(N.a, { onClick: c, style: F.mask }),
+                              _.a.createElement(N.a, { ref: t._receiveBodyRectHelperRef, style: F.bodyRectHelper }),
+                              _.a.createElement(L.a, null, function (e) {
                                 var a = e.windowWidth
-                                return g.createElement(
-                                  j.a,
+                                return _.a.createElement(
+                                  N.a,
                                   {
                                     accessibilityRole: 'menu',
                                     onKeyUp: t._handleEsc,
                                     ref: t._receiveContentRef,
-                                    style: [a < L.a.theme.breakpoints.medium ? U.rootNarrow : U.rootWide, m],
+                                    style: [a < H.a.theme.breakpoints.medium ? F.rootNarrow : F.rootWide, m],
                                   },
                                   p && 'slide' === r
                                     ? i
-                                    : g.createElement(
-                                        _.b,
+                                    : _.a.createElement(
+                                        b.b,
                                         {
                                           animateMount: 'up' !== f,
                                           duration: n,
@@ -785,11 +788,11 @@
                                         },
                                         function (t) {
                                           var e = t.isAnimating
-                                          return g.createElement(
-                                            I.a,
+                                          return _.a.createElement(
+                                            k.a,
                                             { id: 'Dropdown', minimizeReporting: e },
                                             function (t, e) {
-                                              return g.createElement(j.a, o()({ ref: t() }, e({})), i)
+                                              return _.a.createElement(N.a, o()({ ref: t() }, e({})), i)
                                             },
                                           )
                                         },
@@ -807,8 +810,8 @@
             ]),
             n
           )
-        })(g.Component)
-      O()(F, 'defaultProps', {
+        })(_.a.Component)
+      O()(M, 'defaultProps', {
         preferredHorizontalOrientation: 'left',
         preferredVerticalOrientation: 'down',
         animateType: 'slide',
@@ -971,13 +974,14 @@
       'use strict'
       n.r(e)
       var r = n('ERkP'),
-        o = n('RhWx'),
-        i = n.n(o),
-        a = (n('z84I'), n('2G9S'), n('VAyw')),
-        c = n('XOJV'),
-        s = n('s1N3'),
-        u = n('rxPX'),
-        l = function (t) {
+        o = n.n(r),
+        i = n('RhWx'),
+        a = n.n(i),
+        c = (n('z84I'), n('2G9S'), n('VAyw')),
+        s = n('XOJV'),
+        u = n('s1N3'),
+        l = n('rxPX'),
+        d = function (t) {
           var e, n
           return (
             (null === (e = t.entities) || void 0 === e || null === (n = e.user_mentions) || void 0 === n
@@ -987,12 +991,12 @@
                 })) || []
           )
         },
-        d = function (t, e) {
+        f = function (t, e) {
           return e.focalTweetId
         },
-        f = Object(u.a)()
+        p = Object(l.a)()
           .propsFromState(function () {
-            return { tweetMap: c.a.selectAll, focalTweetId: d }
+            return { tweetMap: s.a.selectAll, focalTweetId: f }
           })
           .adjustStateProps(function (t) {
             var e = t.focalTweetId,
@@ -1000,41 +1004,41 @@
               r = e && n[e]
             if (!r) return { participantIds: [] }
             var o,
-              c = [r.user].concat(
-                i()(l(r)),
-                i()(
+              i = [r.user].concat(
+                a()(d(r)),
+                a()(
                   ((o = r),
-                  a.a.mergeTaggedUsers((o.extended_entities && o.extended_entities.media) || []).map(function (t) {
+                  c.a.mergeTaggedUsers((o.extended_entities && o.extended_entities.media) || []).map(function (t) {
                     return t.user_id
                   })),
                 ),
               ),
-              u = r.quoted_status && n[r.quoted_status]
-            return u && (c.push(u.user), c.push.apply(c, i()(l(u)))), { participantIds: Object(s.a)(c) }
+              s = r.quoted_status && n[r.quoted_status]
+            return s && (i.push(s.user), i.push.apply(i, a()(d(s)))), { participantIds: Object(u.a)(i) }
           })
           .withAnalytics({ component: 'in_this_conversation' }),
-        p = (n('M+/F'), n('3XMw')),
-        h = n.n(p),
-        m = n('6vad'),
-        y = n('hqDb'),
-        v = n('MWbm'),
-        O = h.a.j88f27d8,
-        g = function (t) {
+        h = (n('M+/F'), n('3XMw')),
+        m = n.n(h),
+        y = n('6vad'),
+        v = n('hqDb'),
+        O = n('MWbm'),
+        g = m.a.j88f27d8,
+        _ = function (t) {
           var e = t.maxCount,
             n = t.participantIds
-          return r.createElement(
-            v.a,
-            { accessibilityLabel: O, accessibilityRole: 'complementary' },
-            r.createElement(m.b, { text: O }),
-            r.createElement(y.a, { userIds: n.slice(0, e), withFinalItemBorder: !1, withItemBorder: !0 }),
+          return o.a.createElement(
+            O.a,
+            { accessibilityLabel: g, accessibilityRole: 'complementary' },
+            o.a.createElement(y.b, { text: g }),
+            o.a.createElement(v.a, { userIds: n.slice(0, e), withFinalItemBorder: !1, withItemBorder: !0 }),
           )
         }
-      g.defaultProps = { maxCount: 3 }
-      var _ = g,
-        b = f(function (t) {
-          return r.createElement(_, { participantIds: t.participantIds })
+      _.defaultProps = { maxCount: 3 }
+      var b = _,
+        w = p(function (t) {
+          return o.a.createElement(b, { participantIds: t.participantIds })
         })
-      e.default = b
+      e.default = w
     },
   },
 ])

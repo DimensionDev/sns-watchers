@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [167],
+  [169],
   {
     ACNv: function (t, n, e) {
       'use strict'
@@ -20,12 +20,13 @@
         C = e('KEM+'),
         v = e.n(C),
         p = (e('2G9S'), e('KOtZ'), e('hBvt'), e('jQ3i'), e('x4t0'), e('ERkP')),
-        b = e('3XMw'),
-        y = e.n(b),
-        B = e('oQhu'),
-        w = e('mjJ+'),
-        k = e('eb3s')
-      function x(t) {
+        b = e.n(p),
+        y = e('3XMw'),
+        B = e.n(y),
+        w = e('oQhu'),
+        k = e('mjJ+'),
+        x = e('eb3s')
+      function _(t) {
         var n = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -46,10 +47,10 @@
           return d()(this, e)
         }
       }
-      var _ = y.a.cfd2f35d,
-        E = (function (t) {
+      var E = B.a.cfd2f35d,
+        I = (function (t) {
           s()(e, t)
-          var n = x(e)
+          var n = _(e)
           function e() {
             var t
             i()(this, e)
@@ -80,8 +81,8 @@
                     n = this.state.activeConfirmation
                   return n
                     ? this._renderConfirmation(n)
-                    : p.createElement(w.a, {
-                        cancelButtonLabel: _,
+                    : b.a.createElement(k.a, {
+                        cancelButtonLabel: E,
                         items: this._getProcessedActionItems(),
                         onCloseRequested: t,
                       })
@@ -97,7 +98,7 @@
                     i = n.label,
                     r = n.text,
                     a = n.withCancelButton
-                  return p.createElement(k.a, {
+                  return b.a.createElement(x.a, {
                     confirmButtonLabel: i,
                     confirmButtonType: e,
                     headline: o,
@@ -115,14 +116,14 @@
                     n = t.actionItems,
                     e = t.dividerIndices,
                     o = t.onClose
-                  return I(n, e, o, this._handleConfirm)
+                  return R(n, e, o, this._handleConfirm)
                 },
               },
             ]),
             e
           )
-        })(p.Component),
-        I = Object(B.a)(function (t, n, e, o) {
+        })(b.a.Component),
+        R = Object(w.a)(function (t, n, e, o) {
           return t.reduce(function (t, i, r) {
             var a = i.Icon,
               c = i.behavioralEventContext,
@@ -169,7 +170,7 @@
             return t
           }, [])
         })
-      n.default = E
+      n.default = I
     },
   },
 ])

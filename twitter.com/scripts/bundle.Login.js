@@ -5,14 +5,14 @@
       'use strict'
       n.r(t),
         n.d(t, 'LoginScreen', function () {
-          return Le
+          return Re
         }),
         n.d(t, 'styles', function () {
-          return Re
+          return Oe
         })
       n('OZaJ'), n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
-      var r = n('VrFO'),
-        a = n.n(r),
+      var a = n('VrFO'),
+        r = n.n(a),
         o = n('Y9Ll'),
         i = n.n(o),
         c = n('1Pcy'),
@@ -26,37 +26,38 @@
         f = n('KEM+'),
         g = n.n(f),
         b = n('ERkP'),
-        y = n('6/RC'),
-        v = n('zh9S'),
-        _ = n('RqPI'),
-        w = n('hqKg'),
-        E = n('3XMw'),
-        S = n.n(E),
-        C = n('aTAq'),
-        L = n('G6rE'),
-        R = n('oEGd'),
-        O = {
-          BadSessionLoginVerification: S.a.f8ad0091,
-          ExpiredLoginVerification: S.a.h2c7767e,
-          OverLimitLoginVerificationAttempts: S.a.e83047c2,
-          OfflineCodeSync: S.a.g4b108ee,
+        y = n.n(b),
+        v = n('6/RC'),
+        _ = n('zh9S'),
+        w = n('RqPI'),
+        E = n('hqKg'),
+        S = n('3XMw'),
+        C = n.n(S),
+        L = n('aTAq'),
+        R = n('G6rE'),
+        O = n('oEGd'),
+        k = {
+          BadSessionLoginVerification: C.a.f8ad0091,
+          ExpiredLoginVerification: C.a.h2c7767e,
+          OverLimitLoginVerificationAttempts: C.a.e83047c2,
+          OfflineCodeSync: C.a.g4b108ee,
         },
-        k = Object(w.createSelector)(
+        x = Object(E.createSelector)(
           function (e, t) {
             return (
-              _.i(e) ||
-              (Object(C.a)(t.location.query.login_verification_error)
-                ? O[t.location.query.login_verification_error]
+              w.i(e) ||
+              (Object(L.a)(t.location.query.login_verification_error)
+                ? k[t.location.query.login_verification_error]
                 : void 0)
             )
           },
           function (e, t) {
             return (
               t.location.query &&
-              (Object(C.a)(t.location.query.username_or_email) ? t.location.query.username_or_email : void 0)
+              (Object(L.a)(t.location.query.username_or_email) ? t.location.query.username_or_email : void 0)
             )
           },
-          _.r,
+          w.r,
           function (e, t) {
             return (
               !!t.location.pathname &&
@@ -72,35 +73,35 @@
           function (e, t) {
             return 'true' === t.location.query.phone_disabled
           },
-          L.e.selectLoggedInUser,
-          function (e, t, n, r, a, o, i, c) {
+          R.e.selectLoggedInUser,
+          function (e, t, n, a, r, o, i, c) {
             return {
               errorMessage: e,
               loginId: t,
               loginReturnPath: n,
               loggedInUser: c,
-              shouldChallenge: r,
-              shouldDisableUsernameLogin: a,
+              shouldChallenge: a,
+              shouldDisableUsernameLogin: r,
               shouldDisableEmailLogin: o,
               shouldDisablePhoneLogin: i,
             }
           },
         ),
-        x = { scribeAction: v.c, scribePageImpression: v.d },
-        P = Object(R.g)(k, x),
-        D = (n('2G9S'), n('7x/C'), n('DZ+c'), n('MvUL'), n('KqXw'), n('ho0z'), n('SrtL')),
-        j = n('lUZE'),
-        F = n('8jkQ'),
-        I = n('yoO3'),
-        T = 'LoginPage_Continue_Button',
-        B = n('sgih'),
-        U = n('mw9i'),
-        A = n('t62R'),
-        z = n('jhWN'),
-        M = n('jV+4'),
-        V = n('/yvb'),
-        H = n('Irs7')
-      function N(e) {
+        P = { scribeAction: _.c, scribePageImpression: _.d },
+        D = Object(O.g)(x, P),
+        j = (n('2G9S'), n('7x/C'), n('DZ+c'), n('MvUL'), n('KqXw'), n('ho0z'), n('SrtL')),
+        F = n('lUZE'),
+        I = n('8jkQ'),
+        T = n('yoO3'),
+        B = 'LoginPage_Continue_Button',
+        U = n('sgih'),
+        A = n('mw9i'),
+        z = n('t62R'),
+        M = n('jhWN'),
+        V = n('jV+4'),
+        H = n('/yvb'),
+        N = n('Irs7')
+      function q(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -113,44 +114,44 @@
         })()
         return function () {
           var n,
-            r = m()(e)
+            a = m()(e)
           if (t) {
-            var a = m()(this).constructor
-            n = Reflect.construct(r, arguments, a)
-          } else n = r.apply(this, arguments)
+            var r = m()(this).constructor
+            n = Reflect.construct(a, arguments, r)
+          } else n = a.apply(this, arguments)
           return p()(this, n)
         }
       }
-      var q = S.a.d98c140e,
-        X = S.a.e55188f0,
-        W = S.a.d55d8fe1,
-        J = S.a.c3d89aca,
-        G = S.a.g806008e,
-        Y = (function (e) {
+      var X = C.a.d98c140e,
+        W = C.a.e55188f0,
+        J = C.a.d55d8fe1,
+        G = C.a.c3d89aca,
+        Y = C.a.g806008e,
+        K = (function (e) {
           u()(n, e)
-          var t = N(n)
+          var t = q(n)
           function n() {
             var e
-            a()(this, n)
-            for (var r = arguments.length, o = new Array(r), i = 0; i < r; i++) o[i] = arguments[i]
+            r()(this, n)
+            for (var a = arguments.length, o = new Array(a), i = 0; i < a; i++) o[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(o))),
               g()(s()(e), '_handleContinuePress', function () {
                 var t = e.props,
                   n = t.analytics,
-                  r = t.history,
-                  a = t.location.query,
-                  o = a && a.redirect_after_login ? a.redirect_after_login.toString() : void 0,
-                  i = o && F.b.makeSafeForTwitterRedirect(o)
+                  a = t.history,
+                  r = t.location.query,
+                  o = r && r.redirect_after_login ? r.redirect_after_login.toString() : void 0,
+                  i = o && I.b.makeSafeForTwitterRedirect(o)
                 o && i
                   ? (n.scribeAction('redirect'), window.location.assign(i))
-                  : (n.scribeAction('redirecthome'), r.replace('/home'))
+                  : (n.scribeAction('redirecthome'), a.replace('/home'))
               }),
               g()(s()(e), '_handleSwitchAccountPress', function () {
                 var t = e.props,
                   n = t.analytics,
-                  r = t.history
-                n.scribeAction('switch'), r.replace('/account/switch')
+                  a = t.history
+                n.scribeAction('switch'), a.replace('/account/switch')
               }),
               e
             )
@@ -161,54 +162,54 @@
                 key: 'render',
                 value: function () {
                   var e = this.props.loggedInUser
-                  return b.createElement(
-                    I.a,
+                  return y.a.createElement(
+                    T.a,
                     null,
-                    b.createElement(D.a, { title: q }),
-                    b.createElement(
-                      B.a,
+                    y.a.createElement(j.a, { title: X }),
+                    y.a.createElement(
+                      U.a,
                       { type: 'full' },
-                      b.createElement(
-                        U.a,
-                        { style: [Re.root, Re.center], withGutter: !0 },
-                        b.createElement(j.a, { style: Re.icon }),
-                        b.createElement(
-                          A.b,
+                      y.a.createElement(
+                        A.a,
+                        { style: [Oe.root, Oe.center], withGutter: !0 },
+                        y.a.createElement(F.a, { style: Oe.icon }),
+                        y.a.createElement(
+                          z.b,
                           {
                             accessibilityRole: 'heading',
                             align: 'center',
                             size: 'title4',
-                            style: Re.heading,
+                            style: Oe.heading,
                             weight: 'bold',
                           },
-                          X,
+                          W,
                         ),
-                        b.createElement(z.a, { size: 'jumbo', uri: e.profile_image_url_https }),
-                        b.createElement(M.a, {
+                        y.a.createElement(M.a, { size: 'jumbo', uri: e.profile_image_url_https }),
+                        y.a.createElement(V.a, {
                           badgeContext: 'account',
                           isProtected: e.protected,
                           isVerified: e.verified,
                           name: e.name,
                           screenName: e.screen_name,
-                          style: [Re.gutter, Re.center],
+                          style: [Oe.gutter, Oe.center],
                           withStackedLayout: !0,
                         }),
-                        b.createElement(A.b, { align: 'center', style: Re.gutter }, W),
-                        b.createElement(
-                          V.a,
-                          { onPress: this._handleContinuePress, style: Re.gutter, testID: T, type: 'brandFilled' },
-                          J,
+                        y.a.createElement(z.b, { align: 'center', style: Oe.gutter }, J),
+                        y.a.createElement(
+                          H.a,
+                          { onPress: this._handleContinuePress, style: Oe.gutter, testID: B, type: 'brandFilled' },
+                          G,
                         ),
-                        b.createElement(
-                          A.b,
+                        y.a.createElement(
+                          z.b,
                           {
                             accessibilityRole: 'link',
                             align: 'center',
                             color: 'link',
                             onPress: this._handleSwitchAccountPress,
-                            style: Re.gutter,
+                            style: Oe.gutter,
                           },
-                          G,
+                          Y,
                         ),
                       ),
                     ),
@@ -218,52 +219,52 @@
             ]),
             n
           )
-        })(b.Component),
-        K = Object(H.a)(Y, { page: 'login', section: 'continue' }),
-        Z = n('mrHL'),
-        Q = n('cnVF'),
-        $ = n('YeIG'),
-        ee = n('TaB8')
-      var te = n('5S/X'),
-        ne = n('6oVL'),
+        })(y.a.Component),
+        Z = Object(N.a)(K, { page: 'login', section: 'continue' }),
+        Q = n('mrHL'),
+        $ = n('cnVF'),
+        ee = n('YeIG'),
+        te = n('TaB8')
+      var ne = n('5S/X'),
+        ae = n('6oVL'),
         re = n('Lam0'),
-        ae = n('5FtR'),
-        oe = n('Es6L'),
-        ie = n('MWbm'),
-        ce = n('pxuL'),
-        se = n('4zmP'),
-        le = n('pjBI'),
-        ue = n('rHpw'),
-        de = n('7JQg'),
-        pe = n('XJCT')
-      function he(e, t) {
+        oe = n('5FtR'),
+        ie = n('Es6L'),
+        ce = n('MWbm'),
+        se = n('pxuL'),
+        le = n('4zmP'),
+        ue = n('pjBI'),
+        de = n('rHpw'),
+        pe = n('7JQg'),
+        he = n('XJCT')
+      function me(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
+          var a = Object.getOwnPropertySymbols(e)
           t &&
-            (r = r.filter(function (t) {
+            (a = a.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            n.push.apply(n, r)
+            n.push.apply(n, a)
         }
         return n
       }
-      function me(e) {
+      function fe(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? he(Object(n), !0).forEach(function (t) {
+            ? me(Object(n), !0).forEach(function (t) {
                 g()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : he(Object(n)).forEach(function (t) {
+            : me(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      function fe(e) {
+      function ge(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -276,46 +277,46 @@
         })()
         return function () {
           var n,
-            r = m()(e)
+            a = m()(e)
           if (t) {
-            var a = m()(this).constructor
-            n = Reflect.construct(r, arguments, a)
-          } else n = r.apply(this, arguments)
+            var r = m()(this).constructor
+            n = Reflect.construct(a, arguments, r)
+          } else n = a.apply(this, arguments)
           return p()(this, n)
         }
       }
-      var ge = S.a.d1091f50,
-        be = S.a.eab9ceb1,
-        ye = S.a.g2b8acd4,
-        ve = S.a.bdc9d8a2,
-        _e = S.a.c2ab20ab,
-        we = S.a.id312f0a,
-        Ee = S.a.caac124e,
-        Se = S.a.ab77e0b8,
-        Ce = { page: 'login' },
-        Le = (function (e) {
+      var be = C.a.d1091f50,
+        ye = C.a.eab9ceb1,
+        ve = C.a.g2b8acd4,
+        _e = C.a.bdc9d8a2,
+        we = C.a.c2ab20ab,
+        Ee = C.a.id312f0a,
+        Se = C.a.caac124e,
+        Ce = C.a.ab77e0b8,
+        Le = { page: 'login' },
+        Re = (function (e) {
           u()(n, e)
-          var t = fe(n)
-          function n(e, r) {
+          var t = ge(n)
+          function n(e, a) {
             var o
-            a()(this, n)
+            r()(this, n)
             var i = e.loginId
-            ;(o = t.call(this, e, r)),
+            ;(o = t.call(this, e, a)),
               g()(s()(o), '_recaptchaEnabled', !1),
               g()(s()(o), '_renderLogin', function () {
-                return b.createElement(
-                  I.a,
+                return y.a.createElement(
+                  T.a,
                   null,
-                  b.createElement(D.a, { title: ve }),
-                  b.createElement(ie.a, { style: [Re.root, Re.container] }, o._renderContent()),
+                  y.a.createElement(j.a, { title: _e }),
+                  y.a.createElement(ce.a, { style: [Oe.root, Oe.container] }, o._renderContent()),
                 )
               }),
               g()(s()(o), '_renderContent', function () {
                 var e = o.props,
                   t = e.errorMessage,
                   n = e.loginId,
-                  r = e.loginReturnPath,
-                  a = e.shouldDisableEmailLogin,
+                  a = e.loginReturnPath,
+                  r = e.shouldDisableEmailLogin,
                   i = e.shouldDisablePhoneLogin,
                   c = e.shouldDisableUsernameLogin,
                   s = o.state,
@@ -327,75 +328,75 @@
                   m = !!d,
                   f = o._recaptchaEnabled && !m,
                   g = !(o._recaptchaEnabled && p)
-                return b.createElement(
-                  b.Fragment,
+                return y.a.createElement(
+                  y.a.Fragment,
                   null,
-                  b.createElement(
-                    ie.a,
-                    { style: Re.marginHorizontal },
-                    b.createElement(j.a, { style: Re.icon }),
-                    b.createElement(
-                      A.b,
+                  y.a.createElement(
+                    ce.a,
+                    { style: Oe.marginHorizontal },
+                    y.a.createElement(F.a, { style: Oe.icon }),
+                    y.a.createElement(
+                      z.b,
                       {
                         accessibilityRole: 'heading',
                         extendedWidth: !0,
                         size: 'title2',
-                        style: Re.heading,
+                        style: Oe.heading,
                         weight: 'bold',
                       },
-                      ye,
+                      ve,
                     ),
-                    t ? b.createElement(se.a, { text: t, type: 'danger' }) : null,
+                    t ? y.a.createElement(le.a, { text: t, type: 'danger' }) : null,
                     g ? o._renderAlternativeLoginMethodCopy() : null,
-                    m ? b.createElement(A.b, { style: Re.passedChallengeCopy }, _e) : null,
+                    m ? y.a.createElement(z.b, { style: Oe.passedChallengeCopy }, we) : null,
                   ),
-                  b.createElement(
-                    ne.a,
+                  y.a.createElement(
+                    ae.a,
                     {
                       autoSubmit: l,
                       hideSubmitButton: f,
-                      loginReturnPath: r,
+                      loginReturnPath: a,
                       submitButtonDisabled: o._hasMissingFields(),
                       submitButtonSize: 'xLarge',
-                      submitButtonStyle: Re.submitButton,
+                      submitButtonStyle: Oe.submitButton,
                     },
-                    b.createElement(pe.b, {
+                    y.a.createElement(he.b, {
                       autoFocus: !n,
                       onChange: o._handleUsernameFieldChange,
                       onSubmitEditing: o._handleSubmitEditing,
                       value: h,
-                      withEmailDisabled: a,
+                      withEmailDisabled: r,
                       withPhoneDisabled: i,
                       withUsernameDisabled: c,
                     }),
                     f
                       ? null
-                      : b.createElement(pe.a, {
+                      : y.a.createElement(he.a, {
                           autoFocus: !!n,
                           onChange: o._handlePasswordFieldChange,
                           onSubmitEditing: o._handleSubmitEditing,
                           value: u,
                         }),
                     o._recaptchaEnabled
-                      ? b.createElement('input', {
+                      ? y.a.createElement('input', {
                           defaultValue: d,
                           name: 'g-recaptcha-response',
                           style: { display: 'none' },
                         })
                       : null,
                   ),
-                  b.createElement(
-                    ie.a,
-                    { style: Re.marginHorizontal },
+                  y.a.createElement(
+                    ce.a,
+                    { style: Oe.marginHorizontal },
                     o._recaptchaEnabled && !m ? o._renderRecaptcha() : null,
-                    b.createElement(
-                      A.b,
-                      { align: 'center', style: Re.links },
-                      b.createElement(
-                        le.a,
+                    y.a.createElement(
+                      z.b,
+                      { align: 'center', style: Oe.links },
+                      y.a.createElement(
+                        ue.a,
                         null,
-                        b.createElement(
-                          A.b,
+                        y.a.createElement(
+                          z.b,
                           {
                             link: {
                               pathname: 'https://twitter.com/account/begin_password_reset',
@@ -403,9 +404,9 @@
                               openInSameFrame: !0,
                             },
                           },
-                          ge,
+                          be,
                         ),
-                        b.createElement(A.b, { link: '/i/flow/signup' }, be),
+                        y.a.createElement(z.b, { link: '/i/flow/signup' }, ye),
                       ),
                     ),
                   ),
@@ -415,16 +416,16 @@
                 var e,
                   t = o.props,
                   n = t.shouldDisableEmailLogin,
-                  r = t.shouldDisablePhoneLogin,
-                  a = t.shouldDisableUsernameLogin
+                  a = t.shouldDisablePhoneLogin,
+                  r = t.shouldDisableUsernameLogin
                 return (
-                  a ? (e = we) : r ? (e = Se) : n && (e = Ee),
-                  r || n || a ? b.createElement(A.b, { color: 'magenta500' }, e) : null
+                  r ? (e = Ee) : a ? (e = Ce) : n && (e = Se),
+                  a || n || r ? y.a.createElement(z.b, { color: 'magenta500' }, e) : null
                 )
               }),
               g()(s()(o), '_renderRecaptcha', function () {
                 var e = o.state.usernameValue
-                return b.createElement(re.a, {
+                return y.a.createElement(re.a, {
                   nextButtonDisabled: !e,
                   onChange: o._handleRecaptchaStateChange,
                   onConsent: o._handleRecaptchaTermAccepted,
@@ -447,12 +448,12 @@
               }),
               g()(s()(o), '_handleRecaptchaStateChange', function (e) {
                 var t = e ? 'passed' : 'expired'
-                ;(0, o.props.scribeAction)(me(me({}, Ce), {}, { section: 'recaptcha', action: t })),
+                ;(0, o.props.scribeAction)(fe(fe({}, Le), {}, { section: 'recaptcha', action: t })),
                   e && o.setState({ recaptchaSuccessToken: e })
               }),
               g()(s()(o), '_handleRecaptchaTermAccepted', function () {
                 ;(0, o.props.scribeAction)(
-                  me(me({}, Ce), {}, { section: 'recaptcha', component: 'terms', action: 'accepted' }),
+                  fe(fe({}, Le), {}, { section: 'recaptcha', component: 'terms', action: 'accepted' }),
                 ),
                   o.setState({ recaptchaTermAccepted: !0 })
               }),
@@ -460,14 +461,14 @@
                 o.context.featureSwitches.isTrue('responsive_web_continue_as_always_enabled') ||
                 ('true' === e.location.query.showContinuePrompt &&
                   o.context.featureSwitches.isTrue('responsive_web_continue_as_param_enabled'))),
-              (o._shouldRedirectToOCFLoginFlow = !te.b && o.context.featureSwitches.isTrue('stateful_login_enabled'))
+              (o._shouldRedirectToOCFLoginFlow = !ne.b && o.context.featureSwitches.isTrue('stateful_login_enabled'))
             var c,
               l = e.shouldChallenge
             return (
               (o._recaptchaEnabled =
                 !!l &&
                 ((c = o.context.featureSwitches),
-                !Object(ee.a)('responsive_web_3rd_party_category_google_recaptcha', c))),
+                !Object(te.a)('responsive_web_3rd_party_category_google_recaptcha', c))),
               (o.state = { autoSubmit: !1, recaptchaTermAccepted: !1, usernameValue: i || '', passwordValue: '' }),
               o
             )
@@ -480,11 +481,11 @@
                   var e = this.props,
                     t = e.errorMessage,
                     n = e.scribeNamespace,
-                    r = e.scribePageImpression
+                    a = e.scribePageImpression
                   this._unsetFlashMessage(this.props),
-                    Object(oe.a)() && this.context.setSideNavSupport(!1),
-                    t && r(me(me({}, n), {}, { section: 'error' })),
-                    this._recaptchaEnabled && r(me(me({}, n), {}, { section: 'recaptcha' }))
+                    Object(ie.a)() && this.context.setSideNavSupport(!1),
+                    t && a(fe(fe({}, n), {}, { section: 'error' })),
+                    this._recaptchaEnabled && a(fe(fe({}, n), {}, { section: 'recaptcha' }))
                 },
               },
               {
@@ -496,7 +497,7 @@
               {
                 key: 'componentWillUnmount',
                 value: function () {
-                  Object(oe.a)() && this.context.setSideNavSupport(!0)
+                  Object(ie.a)() && this.context.setSideNavSupport(!0)
                 },
               },
               {
@@ -505,15 +506,15 @@
                   var e = this.props,
                     t = e.errorMessage,
                     n = e.history,
-                    r = e.location,
-                    a = e.loggedInUser
-                  if (this._continueEnabled && a && !t)
-                    return b.createElement(K, { history: n, location: r, loggedInUser: a })
+                    a = e.location,
+                    r = e.loggedInUser
+                  if (this._continueEnabled && r && !t)
+                    return y.a.createElement(Z, { history: n, location: a, loggedInUser: r })
                   if (this._shouldRedirectToOCFLoginFlow) {
-                    var o = y.canUseDOM && !Object($.a)(r.query) ? btoa(JSON.stringify(r.query)) : '',
+                    var o = v.canUseDOM && !Object(ee.a)(a.query) ? btoa(JSON.stringify(a.query)) : '',
                       i = o ? encodeURIComponent(JSON.stringify({ requested_variant: o })) : '',
                       c = i ? '/i/flow/login?input_flow_data='.concat(i) : '/i/flow/login'
-                    return b.createElement(ae.a, { to: c })
+                    return y.a.createElement(oe.a, { to: c })
                   }
                   return this._renderLogin()
                 },
@@ -521,18 +522,18 @@
               {
                 key: '_unsetFlashMessage',
                 value: function (e) {
-                  e.errorMessage && Object(Z.c)(Q.n, { featureSwitches: this.context.featureSwitches })
+                  e.errorMessage && Object(Q.c)($.n, { featureSwitches: this.context.featureSwitches })
                 },
               },
             ]),
             n
           )
-        })(b.Component)
-      g()(Le, 'contextType', ce.a)
-      var Re = ue.a.create(function (e) {
+        })(y.a.Component)
+      g()(Re, 'contextType', se.a)
+      var Oe = de.a.create(function (e) {
         return {
           root: { marginTop: e.spaces.space20 },
-          marginHorizontal: { marginHorizontal: ue.a.theme.spaces.space16 },
+          marginHorizontal: { marginHorizontal: de.a.theme.spaces.space16 },
           container: {
             maxWidth: 400,
             marginHorizontal: 'auto',
@@ -548,13 +549,13 @@
           gutter: { marginVertical: e.componentDimensions.gutterVertical },
         }
       })
-      t.default = Object(de.c)(Ce)(P(Le))
+      t.default = Object(pe.c)(Le)(D(Re))
     },
     '6oVL': function (e, t, n) {
       'use strict'
       n('OZaJ')
-      var r = n('ddV6'),
-        a = n.n(r),
+      var a = n('ddV6'),
+        r = n.n(a),
         o = n('VrFO'),
         i = n.n(o),
         c = n('Y9Ll'),
@@ -570,21 +571,22 @@
         b = n('KEM+'),
         y = n.n(b),
         v = (n('2G9S'), n('MvUL'), n('KqXw'), n('Ysgh'), n('ERkP')),
-        _ = n('3XMw'),
-        w = n.n(_),
-        E = n('cnVF'),
-        S = n('Ukpf'),
-        C = n('BTou'),
-        L = n('mrHL'),
-        R = 'LoginForm_Login_Button',
-        O = n('fEA7'),
-        k = n.n(O),
-        x = n('MWbm'),
-        P = n('Irs7'),
-        D = n('v6aA'),
-        j = n('/yvb'),
-        F = n('rHpw')
-      function I(e) {
+        _ = n.n(v),
+        w = n('3XMw'),
+        E = n.n(w),
+        S = n('cnVF'),
+        C = n('Ukpf'),
+        L = n('BTou'),
+        R = n('mrHL'),
+        O = 'LoginForm_Login_Button',
+        k = n('fEA7'),
+        x = n.n(k),
+        P = n('MWbm'),
+        D = n('Irs7'),
+        j = n('v6aA'),
+        F = n('/yvb'),
+        I = n('rHpw')
+      function T(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -597,31 +599,31 @@
         })()
         return function () {
           var n,
-            r = g()(e)
+            a = g()(e)
           if (t) {
-            var a = g()(this).constructor
-            n = Reflect.construct(r, arguments, a)
-          } else n = r.apply(this, arguments)
+            var r = g()(this).constructor
+            n = Reflect.construct(a, arguments, r)
+          } else n = a.apply(this, arguments)
           return m()(this, n)
         }
       }
-      var T = w.a.e919c3bc,
-        B = (function (e) {
+      var B = E.a.e919c3bc,
+        U = (function (e) {
           p()(n, e)
-          var t = I(n)
+          var t = T(n)
           function n() {
             var e
             i()(this, n)
-            for (var r = arguments.length, a = new Array(r), o = 0; o < r; o++) a[o] = arguments[o]
+            for (var a = arguments.length, r = new Array(a), o = 0; o < a; o++) r[o] = arguments[o]
             return (
-              (e = t.call.apply(t, [this].concat(a))),
-              y()(u()(e), '_mobileLoginToken', k.a.v1().replace(/-/g, '')),
+              (e = t.call.apply(t, [this].concat(r))),
+              y()(u()(e), '_mobileLoginToken', x.a.v1().replace(/-/g, '')),
               y()(u()(e), '_handleSubmit', function () {
                 var t = e.props,
                   n = t.analytics,
-                  r = t.onSubmit
-                if ((n.scribe({ action: 'submit' }), C.a.flushHTMLCache(), e._setLoginCookie(), r))
-                  return r(e._form.elements), !1
+                  a = t.onSubmit
+                if ((n.scribe({ action: 'submit' }), L.a.flushHTMLCache(), e._setLoginCookie(), a))
+                  return a(e._form.elements), !1
               }),
               y()(u()(e), '_handleSubmitButtonClick', function () {
                 !1 !== e._handleSubmit() && e._form.submit()
@@ -632,7 +634,7 @@
               y()(u()(e), '_setLoginCookie', function () {
                 var t = new Date(Date.now())
                 t.setTime(t.getTime() + 3e5),
-                  Object(L.e)(E.q, e._mobileLoginToken, {
+                  Object(R.e)(S.q, e._mobileLoginToken, {
                     featureSwitches: e.context.featureSwitches,
                     cookieOptions: { domain: void 0, expires: t },
                   })
@@ -651,7 +653,7 @@
               {
                 key: 'componentDidMount',
                 value: function () {
-                  S.a.inject({ scriptId: 'jsInstLibrary', src: 'https://twitter.com/i/js_inst?c_name=ui_metrics' })
+                  C.a.inject({ scriptId: 'jsInstLibrary', src: 'https://twitter.com/i/js_inst?c_name=ui_metrics' })
                 },
               },
               {
@@ -660,7 +662,7 @@
                   var e = this.props,
                     t = e.children,
                     n = e.formActionUrl,
-                    r = e.hideSubmitButton,
+                    a = e.hideSubmitButton,
                     o = e.horizontalLayout,
                     i = e.loginReturnPath,
                     c = e.submitButtonDisabled,
@@ -669,50 +671,50 @@
                     u = e.submitButtonStyle,
                     d = e.submitButtonType,
                     p = 'string' == typeof i ? i.split('?') : [],
-                    h = a()(p, 2),
+                    h = r()(p, 2),
                     m = h[0],
                     f = h[1],
                     g = encodeURI(m || '/'),
                     b = f ? '?'.concat(f) : '',
                     y = ''.concat('').concat(g).concat(b),
-                    _ = v.createElement(
-                      x.a,
-                      { style: o && U.horizontalFields },
-                      v.createElement('input', { name: 'redirect_after_login', type: 'hidden', value: y }),
-                      v.createElement('input', { name: 'remember_me', type: 'hidden', value: '1' }),
-                      v.createElement('input', {
+                    v = _.a.createElement(
+                      P.a,
+                      { style: o && A.horizontalFields },
+                      _.a.createElement('input', { name: 'redirect_after_login', type: 'hidden', value: y }),
+                      _.a.createElement('input', { name: 'remember_me', type: 'hidden', value: '1' }),
+                      _.a.createElement('input', {
                         name: 'authenticity_token',
                         type: 'hidden',
                         value: this._mobileLoginToken,
                       }),
-                      v.createElement('input', { name: 'wfa', type: 'hidden', value: '1' }),
-                      v.createElement('input', { autoComplete: 'off', name: 'ui_metrics', type: 'hidden' }),
+                      _.a.createElement('input', { name: 'wfa', type: 'hidden', value: '1' }),
+                      _.a.createElement('input', { autoComplete: 'off', name: 'ui_metrics', type: 'hidden' }),
                       t,
-                      r
+                      a
                         ? null
-                        : v.createElement(
-                            x.a,
-                            { style: o && U.loginButtonContainer },
-                            v.createElement(
-                              j.a,
+                        : _.a.createElement(
+                            P.a,
+                            { style: o && A.loginButtonContainer },
+                            _.a.createElement(
+                              F.a,
                               {
                                 disabled: c,
                                 onPress: this._handleSubmitButtonClick,
                                 size: l,
                                 style: u,
-                                testID: R,
+                                testID: O,
                                 type: d,
                               },
                               s,
                             ),
                           ),
                     )
-                  return v.createElement(
-                    x.a,
-                    { style: U.loginForm },
-                    v.createElement('form', {
+                  return _.a.createElement(
+                    P.a,
+                    { style: A.loginForm },
+                    _.a.createElement('form', {
                       action: n,
-                      children: _,
+                      children: v,
                       method: 'post',
                       noValidate: !0,
                       onSubmit: this._handleSubmit,
@@ -724,34 +726,34 @@
             ]),
             n
           )
-        })(v.Component)
-      y()(B, 'contextType', D.a),
-        y()(B, 'defaultProps', {
+        })(_.a.Component)
+      y()(U, 'contextType', j.a),
+        y()(U, 'defaultProps', {
           autoSubmit: !1,
           formActionUrl: '/sessions',
           hideSubmitButton: !1,
           submitButtonDisabled: !1,
-          submitButtonLabel: T,
+          submitButtonLabel: B,
           submitButtonType: 'brandFilled',
         })
-      var U = F.a.create(function (e) {
+      var A = I.a.create(function (e) {
         return {
           horizontalFields: { flexDirection: 'row', justifyContent: 'center', alignItems: 'stretch' },
           loginForm: { width: '100%' },
           loginButtonContainer: { flexDirection: 'column', justifyContent: 'center' },
         }
       })
-      t.a = Object(P.a)(B, { element: 'inline_login_form' })
+      t.a = Object(D.a)(U, { element: 'inline_login_form' })
     },
     Lam0: function (e, t, n) {
       'use strict'
       ;(function (e) {
         n.d(t, 'a', function () {
-          return P
+          return D
         })
         n('OZaJ')
-        var r = n('VrFO'),
-          a = n.n(r),
+        var a = n('VrFO'),
+          r = n.n(a),
           o = n('Y9Ll'),
           i = n.n(o),
           c = n('1Pcy'),
@@ -765,14 +767,15 @@
           f = n('KEM+'),
           g = n.n(f),
           b = n('ERkP'),
-          y = n('t+RT'),
-          v = n('MWbm'),
-          _ = n('t62R'),
-          w = n('/yvb'),
-          E = n('rHpw'),
-          S = n('3XMw'),
-          C = n.n(S)
-        function L(e) {
+          y = n.n(b),
+          v = n('t+RT'),
+          _ = n('MWbm'),
+          w = n('t62R'),
+          E = n('/yvb'),
+          S = n('rHpw'),
+          C = n('3XMw'),
+          L = n.n(C)
+        function R(e) {
           var t = (function () {
             if ('undefined' == typeof Reflect || !Reflect.construct) return !1
             if (Reflect.construct.sham) return !1
@@ -785,25 +788,25 @@
           })()
           return function () {
             var n,
-              r = m()(e)
+              a = m()(e)
             if (t) {
-              var a = m()(this).constructor
-              n = Reflect.construct(r, arguments, a)
-            } else n = r.apply(this, arguments)
+              var r = m()(this).constructor
+              n = Reflect.construct(a, arguments, r)
+            } else n = a.apply(this, arguments)
             return p()(this, n)
           }
         }
-        var R = C.a.c1df579e,
-          O = C.a.b60eba9e,
-          k = C.a.ba939777,
-          x = C.a.bc6efc72,
-          P = (function (t) {
-            u()(r, t)
-            var n = L(r)
-            function r(t, o) {
+        var O = L.a.c1df579e,
+          k = L.a.b60eba9e,
+          x = L.a.ba939777,
+          P = L.a.bc6efc72,
+          D = (function (t) {
+            u()(a, t)
+            var n = R(a)
+            function a(t, o) {
               var i
               return (
-                a()(this, r),
+                r()(this, a),
                 (i = n.call(this, t, o)),
                 g()(s()(i), '_handlePass', function (e) {
                   var t = i.props.onChange
@@ -822,31 +825,31 @@
               )
             }
             return (
-              i()(r, [
+              i()(a, [
                 {
                   key: '_renderConsentForm',
                   value: function () {
                     var e = this.props.nextButtonDisabled
-                    return b.createElement(
-                      v.a,
+                    return y.a.createElement(
+                      _.a,
                       null,
-                      b.createElement(_.b, { style: D.guideCopy }, O),
-                      b.createElement(
-                        v.a,
-                        { style: D.button },
-                        b.createElement(
-                          w.a,
+                      y.a.createElement(w.b, { style: j.guideCopy }, k),
+                      y.a.createElement(
+                        _.a,
+                        { style: j.button },
+                        y.a.createElement(
+                          E.a,
                           { disabled: e, onPress: this._handleConsent, size: 'xLarge', type: 'brandOutlined' },
-                          R,
+                          O,
                         ),
                       ),
-                      b.createElement(
-                        _.b,
+                      y.a.createElement(
+                        w.b,
                         { color: 'gray700' },
-                        b.createElement(
-                          C.a.I18NFormatMessage,
+                        y.a.createElement(
+                          L.a.I18NFormatMessage,
                           { $i18n: 'hc37d3ba' },
-                          b.createElement(_.b, { link: 'https://policies.google.com/privacy' }, x),
+                          y.a.createElement(w.b, { link: 'https://policies.google.com/privacy' }, P),
                         ),
                       ),
                     )
@@ -856,20 +859,20 @@
                   key: '_renderRecaptcha',
                   value: function () {
                     var e = this.props.withConsentForm
-                    return b.createElement(
-                      b.Fragment,
+                    return y.a.createElement(
+                      y.a.Fragment,
                       null,
                       e
-                        ? b.createElement(
-                            v.a,
-                            { style: D.recaptchaTitle },
-                            b.createElement(_.b, { style: D.guideCopy }, k),
+                        ? y.a.createElement(
+                            _.a,
+                            { style: j.recaptchaTitle },
+                            y.a.createElement(w.b, { style: j.guideCopy }, x),
                           )
                         : null,
-                      b.createElement(
-                        v.a,
-                        { style: D.container },
-                        b.createElement(y.a, {
+                      y.a.createElement(
+                        _.a,
+                        { style: j.container },
+                        y.a.createElement(v.a, {
                           onChange: this._handlePass,
                           sitekey: '6LfOP30UAAAAAFBC4jbzu890rTdXBXBNHx9eVZEX',
                         }),
@@ -886,10 +889,10 @@
                   },
                 },
               ]),
-              r
+              a
             )
-          })(b.Component),
-          D = E.a.create(function (e) {
+          })(y.a.Component),
+          j = S.a.create(function (e) {
             return {
               container: { margin: 'auto', transitionProperty: 'opacity', transitionDelay: '2s' },
               button: { paddingVertical: e.spaces.space20 },
@@ -901,20 +904,20 @@
     },
     Ukpf: function (e, t, n) {
       'use strict'
-      var r = {
+      var a = {
         inject: function (e) {
           var t = e.callback,
             n = e.scriptId,
-            r = e.src
+            a = e.src
           if (document.getElementById(n)) t && t()
           else {
-            var a = document.createElement('script')
-            ;(a.src = r),
-              (a.id = n),
-              (a.async = !0),
-              (a.defer = !0),
-              document.body.appendChild(a),
-              (a.onload = function () {
+            var r = document.createElement('script')
+            ;(r.src = a),
+              (r.id = n),
+              (r.async = !0),
+              (r.defer = !0),
+              document.body.appendChild(r),
+              (r.onload = function () {
                 t && t()
               })
           }
@@ -922,89 +925,90 @@
         replace: function (e) {
           var t,
             n = e.callback,
-            a = e.scriptId,
+            r = e.scriptId,
             o = e.src,
-            i = document.getElementById(a)
+            i = document.getElementById(r)
           i && (null === (t = i.parentNode) || void 0 === t || t.removeChild(i))
-          r.inject({ callback: n, scriptId: a, src: o })
+          a.inject({ callback: n, scriptId: r, src: o })
         },
       }
-      t.a = r
+      t.a = a
     },
     XJCT: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return y
+        return v
       }),
         n.d(t, 'b', function () {
-          return R
+          return O
         })
-      var r = n('97Jx'),
-        a = n.n(r),
+      var a = n('97Jx'),
+        r = n.n(a),
         o = n('m3Bd'),
         i = n.n(o),
         c = n('ERkP'),
-        s = n('t62R'),
-        l = n('3XMw'),
-        u = n.n(l),
-        d = (n('yH/f'), n('ho0z'), n('p+r5')),
-        p = Object.freeze({ password: 'password', username: 'username_or_email' }),
-        h = function (e) {
+        s = n.n(c),
+        l = n('t62R'),
+        u = n('3XMw'),
+        d = n.n(u),
+        p = (n('yH/f'), n('ho0z'), n('p+r5')),
+        h = Object.freeze({ password: 'password', username: 'username_or_email' }),
+        m = function (e) {
           var t = e.name,
             n = i()(e, ['name'])
-          return c.createElement(
-            d.a,
-            a()({ autoCapitalize: 'none', autoCorrect: !1, name: 'session['.concat(t, ']'), spellCheck: 'false' }, n),
+          return s.a.createElement(
+            p.a,
+            r()({ autoCapitalize: 'none', autoCorrect: !1, name: 'session['.concat(t, ']'), spellCheck: 'false' }, n),
           )
         },
-        m = u.a.d1091f50,
-        f = c.createElement(
-          s.b,
+        f = d.a.d1091f50,
+        g = s.a.createElement(
+          l.b,
           { link: { external: !0, pathname: 'https://twitter.com/account/begin_password_reset', openInSameFrame: !0 } },
-          m,
+          f,
         ),
-        g = u.a.dec3c9b8,
-        b = function (e) {
+        b = d.a.dec3c9b8,
+        y = function (e) {
           var t = e.helperText,
             n = e.label,
-            r = e.withForgotPasswordLink,
+            a = e.withForgotPasswordLink,
             o = i()(e, ['helperText', 'label', 'withForgotPasswordLink'])
-          return c.createElement(
-            h,
-            a()({}, o, { helperText: r ? f : t, label: n || g, name: p.password, type: 'password' }),
+          return s.a.createElement(
+            m,
+            r()({}, o, { helperText: a ? g : t, label: n || b, name: h.password, type: 'password' }),
           )
         }
-      b.defaultProps = { autoFocus: !1, withForgotPasswordLink: !1 }
-      var y = b,
-        v = n('v6aA'),
-        _ = function (e) {
+      y.defaultProps = { autoFocus: !1, withForgotPasswordLink: !1 }
+      var v = y,
+        _ = n('v6aA'),
+        w = function (e) {
           return e.isTrue('responsive_web_login_input_type_email_enabled') ? 'email' : void 0
         },
-        w = u.a.e1ec8c17,
-        E = u.a.d0a750f2,
-        S = u.a.e2dd29b5,
-        C = u.a.jb4eb245,
-        L = function (e) {
+        E = d.a.e1ec8c17,
+        S = d.a.d0a750f2,
+        C = d.a.e2dd29b5,
+        L = d.a.jb4eb245,
+        R = function (e) {
           var t = e.autoFocus,
             n = e.label,
-            r = e.withEmailDisabled,
+            a = e.withEmailDisabled,
             o = e.withPhoneDisabled,
-            s = e.withUsernameDisabled,
+            c = e.withUsernameDisabled,
             l = i()(e, ['autoFocus', 'label', 'withEmailDisabled', 'withPhoneDisabled', 'withUsernameDisabled']),
-            u = c.useContext(v.a).featureSwitches,
-            d = w
+            u = s.a.useContext(_.a).featureSwitches,
+            d = E
           return (
-            s ? (d = E) : o ? (d = C) : r && (d = S),
-            c.createElement(h, a()({}, l, { autoFocus: t, label: n || d, name: p.username, type: _(u) }))
+            c ? (d = S) : o ? (d = L) : a && (d = C),
+            s.a.createElement(m, r()({}, l, { autoFocus: t, label: n || d, name: h.username, type: w(u) }))
           )
         }
-      L.defaultProps = { autoFocus: !0, withUsernameDisabled: !1, withPhoneDisabled: !1, withEmailDisabled: !1 }
-      var R = L
+      R.defaultProps = { autoFocus: !0, withUsernameDisabled: !1, withPhoneDisabled: !1, withEmailDisabled: !1 }
+      var O = R
     },
     't+RT': function (e, t, n) {
       'use strict'
-      var r = n('ERkP'),
-        a = n.n(r),
+      var a = n('ERkP'),
+        r = n.n(a),
         o = n('aWzz'),
         i = n.n(o)
       function c() {
@@ -1013,7 +1017,7 @@
           function (e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = arguments[t]
-              for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
+              for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
             }
             return e
           }).apply(this, arguments)
@@ -1024,7 +1028,7 @@
       }
       var l = (function (e) {
         var t, n
-        function r() {
+        function a() {
           var t
           return (
             ((t = e.call(this) || this).handleExpired = t.handleExpired.bind(s(t))),
@@ -1033,8 +1037,8 @@
             t
           )
         }
-        ;(n = e), ((t = r).prototype = Object.create(n.prototype)), (t.prototype.constructor = t), (t.__proto__ = n)
-        var o = r.prototype
+        ;(n = e), ((t = a).prototype = Object.create(n.prototype)), (t.prototype.constructor = t), (t.__proto__ = n)
+        var o = a.prototype
         return (
           (o.getValue = function () {
             return this.props.grecaptcha && void 0 !== this._widgetId
@@ -1119,11 +1123,11 @@
                 (function (e, t) {
                   if (null == e) return {}
                   var n,
-                    r,
-                    a = {},
+                    a,
+                    r = {},
                     o = Object.keys(e)
-                  for (r = 0; r < o.length; r++) (n = o[r]), t.indexOf(n) >= 0 || (a[n] = e[n])
-                  return a
+                  for (a = 0; a < o.length; a++) (n = o[a]), t.indexOf(n) >= 0 || (r[n] = e[n])
+                  return r
                 })(e, [
                   'sitekey',
                   'onChange',
@@ -1138,11 +1142,11 @@
                   'badge',
                   'hl',
                 ]))
-            return a.a.createElement('div', c({}, t, { ref: this.handleRecaptchaRef }))
+            return r.a.createElement('div', c({}, t, { ref: this.handleRecaptchaRef }))
           }),
-          r
+          a
         )
-      })(a.a.Component)
+      })(r.a.Component)
       ;(l.displayName = 'ReCAPTCHA'),
         (l.propTypes = {
           sitekey: i.a.string.isRequired,
@@ -1174,7 +1178,7 @@
           function (e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = arguments[t]
-              for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
+              for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
             }
             return e
           }).apply(this, arguments)
@@ -1204,15 +1208,15 @@
         function (e) {
           var t = e.displayName || e.name || 'Component',
             n = (function (t) {
-              var n, a
+              var n, r
               function o(e, n) {
-                var r
-                return ((r = t.call(this, e, n) || this).state = {}), (r.__scriptURL = ''), r
+                var a
+                return ((a = t.call(this, e, n) || this).state = {}), (a.__scriptURL = ''), a
               }
-              ;(a = t),
-                ((n = o).prototype = Object.create(a.prototype)),
+              ;(r = t),
+                ((n = o).prototype = Object.create(r.prototype)),
                 (n.prototype.constructor = n),
-                (n.__proto__ = a)
+                (n.__proto__ = r)
               var i = o.prototype
               return (
                 (i.asyncScriptLoaderGetScriptLoaderID = function () {
@@ -1240,11 +1244,11 @@
                   var e = this,
                     t = this.setupScriptURL(),
                     n = this.asyncScriptLoaderGetScriptLoaderID(),
-                    r = b,
-                    a = r.globalName,
-                    o = r.callbackName,
-                    i = r.scriptId
-                  if ((a && void 0 !== window[a] && (h[t] = { loaded: !0, observers: {} }), h[t])) {
+                    a = b,
+                    r = a.globalName,
+                    o = a.callbackName,
+                    i = a.scriptId
+                  if ((r && void 0 !== window[r] && (h[t] = { loaded: !0, observers: {} }), h[t])) {
                     var c = h[t]
                     return c && (c.loaded || c.errored)
                       ? void this.asyncScriptLoaderHandleLoad(c)
@@ -1262,7 +1266,7 @@
                   var u = function (e) {
                     if (h[t]) {
                       var n = h[t].observers
-                      for (var r in n) e(n[r]) && delete n[r]
+                      for (var a in n) e(n[a]) && delete n[a]
                     }
                   }
                   o &&
@@ -1293,38 +1297,38 @@
                   if (!0 === b.removeOnUnmount)
                     for (var t = document.getElementsByTagName('script'), n = 0; n < t.length; n += 1)
                       t[n].src.indexOf(e) > -1 && t[n].parentNode && t[n].parentNode.removeChild(t[n])
-                  var r = h[e]
-                  r &&
-                    (delete r.observers[this.asyncScriptLoaderGetScriptLoaderID()],
+                  var a = h[e]
+                  a &&
+                    (delete a.observers[this.asyncScriptLoaderGetScriptLoaderID()],
                     !0 === b.removeOnUnmount && delete h[e])
                 }),
                 (i.render = function () {
                   var t = b.globalName,
                     n = this.props,
-                    a = (n.asyncScriptOnLoad, n.forwardedRef),
+                    r = (n.asyncScriptOnLoad, n.forwardedRef),
                     o = (function (e, t) {
                       if (null == e) return {}
                       var n,
-                        r,
-                        a = {},
+                        a,
+                        r = {},
                         o = Object.keys(e)
-                      for (r = 0; r < o.length; r++) (n = o[r]), t.indexOf(n) >= 0 || (a[n] = e[n])
-                      return a
+                      for (a = 0; a < o.length; a++) (n = o[a]), t.indexOf(n) >= 0 || (r[n] = e[n])
+                      return r
                     })(n, ['asyncScriptOnLoad', 'forwardedRef'])
                   return (
                     t && 'undefined' != typeof window && (o[t] = void 0 !== window[t] ? window[t] : void 0),
-                    (o.ref = a),
-                    Object(r.createElement)(e, o)
+                    (o.ref = r),
+                    Object(a.createElement)(e, o)
                   )
                 }),
                 o
               )
-            })(r.Component),
-            a = Object(r.forwardRef)(function (e, t) {
-              return Object(r.createElement)(n, p({}, e, { forwardedRef: t }))
+            })(a.Component),
+            r = Object(a.forwardRef)(function (e, t) {
+              return Object(a.createElement)(n, p({}, e, { forwardedRef: t }))
             })
           return (
-            (a.displayName = 'AsyncScriptLoader(' + t + ')'), (a.propTypes = { asyncScriptOnLoad: i.a.func }), d()(a, e)
+            (r.displayName = 'AsyncScriptLoader(' + t + ')'), (r.propTypes = { asyncScriptOnLoad: i.a.func }), d()(r, e)
           )
         })(l)
       t.a = _

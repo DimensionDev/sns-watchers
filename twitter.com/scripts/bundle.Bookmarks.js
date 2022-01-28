@@ -5,7 +5,7 @@
       'use strict'
       r.r(t),
         r.d(t, 'BookmarksScreen', function () {
-          return D
+          return q
         })
       r('OZaJ')
       var n = r('VrFO'),
@@ -23,21 +23,22 @@
         p = r('KEM+'),
         k = r.n(p),
         y = (r('2G9S'), r('ERkP')),
-        b = r('BQZD'),
-        v = r('1LtL'),
-        E = r('es0u'),
-        C = r('wrlS'),
-        F = r('G6rE'),
-        A = r('rxPX'),
-        _ = r('0KEI'),
-        M = function (e) {
+        b = r.n(y),
+        v = r('BQZD'),
+        E = r('1LtL'),
+        C = r('es0u'),
+        F = r('wrlS'),
+        A = r('G6rE'),
+        _ = r('rxPX'),
+        M = r('0KEI'),
+        O = function (e) {
           return (function (e) {
-            return Object(b.b)(Object(C.d)(e))
+            return Object(v.b)(Object(F.d)(e))
           })(e).selectIsEmptyTimeline(e)
         },
-        O = Object(A.a)()
+        w = Object(_.a)()
           .propsFromState(function () {
-            return { isEmpty: M, loggedInUser: F.e.selectLoggedInUser }
+            return { isEmpty: O, loggedInUser: A.e.selectLoggedInUser }
           })
           .adjustStateProps(function (e) {
             var t = e.isEmpty,
@@ -46,21 +47,21 @@
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(_.createLocalApiErrorHandlerWithContextFactory)('BOOKMARK_PAGE'),
-              removeAll: b.c,
+              createLocalApiErrorHandler: Object(M.createLocalApiErrorHandlerWithContextFactory)('BOOKMARK_PAGE'),
+              removeAll: v.c,
             }
           }),
-        w = r('3XMw'),
-        R = r.n(w),
-        L = r('2G3J'),
-        g = r('yoO3'),
-        B = r('7JQg'),
-        I = r('VS6U'),
-        S = r('mjJ+'),
-        j = r('eb3s'),
-        P = r('yrzJ'),
-        x = r('v6aA')
-      function H(e) {
+        R = r('3XMw'),
+        L = r.n(R),
+        g = r('2G3J'),
+        B = r('yoO3'),
+        I = r('7JQg'),
+        S = r('VS6U'),
+        j = r('mjJ+'),
+        P = r('eb3s'),
+        x = r('yrzJ'),
+        H = r('v6aA')
+      function J(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -81,17 +82,17 @@
           return d()(this, r)
         }
       }
-      var J = { page: 'bookmarks' },
-        N = R.a.i3145aa0,
-        K = R.a.bcc7e8cf,
-        T = R.a.h63a5c3b,
-        U = R.a.c8c1fa6d,
-        G = R.a.jf748f4f,
-        Q = R.a.cc0f2f4f,
-        X = R.a.dbd5d40f,
-        D = (function (e) {
+      var N = { page: 'bookmarks' },
+        K = L.a.i3145aa0,
+        T = L.a.bcc7e8cf,
+        U = L.a.h63a5c3b,
+        G = L.a.c8c1fa6d,
+        Q = L.a.jf748f4f,
+        X = L.a.cc0f2f4f,
+        D = L.a.dbd5d40f,
+        q = (function (e) {
           s()(r, e)
-          var t = H(r)
+          var t = J(r)
           function r() {
             var e
             o()(this, r)
@@ -100,8 +101,8 @@
               (e = t.call.apply(t, [this].concat(a))),
               k()(l()(e), 'state', { showConfirmRemoveAll: !1 }),
               k()(l()(e), '_renderMenu', function (t) {
-                return y.createElement(S.a, {
-                  items: [{ text: U, onClick: e._removeAllSelected, isEmphasized: !0 }],
+                return b.a.createElement(j.a, {
+                  items: [{ text: G, onClick: e._removeAllSelected, isEmphasized: !0 }],
                   onCloseRequested: t,
                 })
               }),
@@ -128,31 +129,31 @@
                     t = e.history,
                     r = e.isEmpty,
                     n = this.context.userClaims.isTrueAndEnabled('subscriptions_feature_1002'),
-                    o = r ? void 0 : y.createElement(L.a, { accessibilityLabel: T, renderMenu: this._renderMenu })
-                  return y.createElement(
-                    B.b,
-                    { namespace: J },
-                    y.createElement(
-                      g.a,
+                    o = r ? void 0 : b.a.createElement(g.a, { accessibilityLabel: U, renderMenu: this._renderMenu })
+                  return b.a.createElement(
+                    I.b,
+                    { namespace: N },
+                    b.a.createElement(
+                      B.a,
                       null,
-                      y.createElement(I.a, {
+                      b.a.createElement(S.a, {
                         backLocation: '/home',
                         history: t,
                         primaryContent: this._renderPrimaryContent(),
                         rightControl: o,
-                        sidebarContent: y.createElement(E.a, null),
+                        sidebarContent: b.a.createElement(C.a, null),
                         subtitle: this._renderSubtitle(n),
-                        title: n ? K : N,
+                        title: n ? T : K,
                         withBackButton: n,
                       }),
                       this.state.showConfirmRemoveAll
-                        ? y.createElement(j.a, {
-                            confirmButtonLabel: X,
+                        ? b.a.createElement(P.a, {
+                            confirmButtonLabel: D,
                             confirmButtonType: 'destructiveFilled',
-                            headline: G,
+                            headline: Q,
                             onCancel: this._handleClearCancel,
                             onConfirm: this._handleClearConfirmed,
-                            text: Q,
+                            text: X,
                           })
                         : null,
                     ),
@@ -163,61 +164,62 @@
                 key: '_renderSubtitle',
                 value: function (e) {
                   var t = this.props.loggedInUserScreenName
-                  return !e && t ? y.createElement(P.a, { screenName: t }) : null
+                  return !e && t ? b.a.createElement(x.a, { screenName: t }) : null
                 },
               },
               {
                 key: '_renderPrimaryContent',
                 value: function () {
                   var e = this.props.history
-                  return y.createElement(v.a, {
+                  return b.a.createElement(E.a, {
                     history: e,
-                    title: N,
-                    urtModule: Object(b.b)(this.context.featureSwitches),
+                    title: K,
+                    urtModule: Object(v.b)(this.context.featureSwitches),
                   })
                 },
               },
             ]),
             r
           )
-        })(y.Component)
-      k()(D, 'contextType', x.a)
-      var q = O(D)
-      t.default = q
+        })(b.a.Component)
+      k()(q, 'contextType', H.a)
+      var V = w(q)
+      t.default = V
     },
     '1LtL': function (e, t, r) {
       'use strict'
       var n = r('ERkP'),
-        o = r('QIgh'),
-        a = r('dwig'),
-        c = r('0+qk'),
-        i = r('3XMw'),
-        l = r.n(i),
-        u = r('7BdX'),
-        s = r('fTQJ'),
-        m = r('k89r'),
-        d = r('FIs5'),
-        f = r('mw9i'),
-        h = l.a.e38b760f,
-        p = l.a.ea1715cf
+        o = r.n(n),
+        a = r('QIgh'),
+        c = r('dwig'),
+        i = r('0+qk'),
+        l = r('3XMw'),
+        u = r.n(l),
+        s = r('7BdX'),
+        m = r('fTQJ'),
+        d = r('k89r'),
+        f = r('FIs5'),
+        h = r('mw9i'),
+        p = u.a.e38b760f,
+        k = u.a.ea1715cf
       t.a = function (e) {
         var t = e.bookmarkFolderId,
           r = e.history,
-          i = e.title,
+          n = e.title,
           l = e.urtModule,
-          k = n.createElement(c.a, { history: r }),
-          y = Object(m.a)()
-        return n.createElement(
-          a.a,
-          { component: f.a, fab: k },
-          n.createElement(s.a, {
-            entryConfiguration: Object(o.a)({ withRemoveFromBookmarks: !0, bookmarkFolderId: t }),
+          u = o.a.createElement(i.a, { history: r }),
+          y = Object(d.a)()
+        return o.a.createElement(
+          c.a,
+          { component: h.a, fab: u },
+          o.a.createElement(m.a, {
+            entryConfiguration: Object(a.a)({ withRemoveFromBookmarks: !0, bookmarkFolderId: t }),
             module: l,
-            prerollDisplayLocation: u.c.OTHER,
+            prerollDisplayLocation: s.c.OTHER,
             renderEmptyState: function () {
-              return y.scribeAction('empty'), n.createElement(d.a, { header: h, message: p })
+              return y.scribeAction('empty'), o.a.createElement(f.a, { header: p, message: k })
             },
-            title: i,
+            title: n,
           }),
         )
       }
@@ -226,7 +228,7 @@
       'use strict'
       r.r(t),
         r.d(t, 'BookmarkFolderTimelineScreen', function () {
-          return J
+          return N
         })
       r('OZaJ')
       var n = r('VrFO'),
@@ -244,39 +246,40 @@
         p = r('KEM+'),
         k = r.n(p),
         y = (r('2G9S'), r('WNMA'), r('KqXw'), r('jQ3i'), r('x4t0'), r('MvUL'), r('ERkP')),
-        b = r('mjJ+'),
-        v = r('BQZD'),
-        E = r('1LtL'),
-        C = r('es0u'),
-        F = (r('ho0z'), r('Hja3')),
-        A = r('rxPX'),
-        _ = r('0KEI'),
-        M = function (e, t) {
+        b = r.n(y),
+        v = r('mjJ+'),
+        E = r('BQZD'),
+        C = r('1LtL'),
+        F = r('es0u'),
+        A = (r('ho0z'), r('Hja3')),
+        _ = r('rxPX'),
+        M = r('0KEI'),
+        O = function (e, t) {
           var r = t.match.params.bookmarkFolderId,
-            n = r ? F.b.select(e, r) : void 0
+            n = r ? A.b.select(e, r) : void 0
           return null == n ? void 0 : n.name
         },
-        O = Object(A.a)()
+        w = Object(_.a)()
           .propsFromState(function () {
-            return { bookmarkFolderName: M }
+            return { bookmarkFolderName: O }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(_.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(M.createLocalApiErrorHandlerWithContextFactory)(
                 'BOOKMARK_FOLDER_TIMELINE_PAGE',
               ),
-              fetchBookmarkFolders: F.c,
+              fetchBookmarkFolders: A.c,
             }
           })
           .withAnalytics({ page: 'bookmark_folder' }),
-        w = r('3XMw'),
-        R = r.n(w),
-        L = r('TW8A'),
-        g = r('oQhu'),
-        B = r('2G3J'),
-        I = r('yoO3'),
-        S = r('VS6U')
-      function j(e) {
+        R = r('3XMw'),
+        L = r.n(R),
+        g = r('TW8A'),
+        B = r('oQhu'),
+        I = r('2G3J'),
+        S = r('yoO3'),
+        j = r('VS6U')
+      function P(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -297,15 +300,15 @@
           return d()(this, r)
         }
       }
-      var P = R.a.h63a5c3b,
-        x = R.a.f075b0e8,
-        H = function (e) {
+      var x = L.a.h63a5c3b,
+        H = L.a.f075b0e8,
+        J = function (e) {
           var t = e.renderMenu
-          return y.createElement(B.a, { accessibilityLabel: P, renderMenu: t })
+          return b.a.createElement(I.a, { accessibilityLabel: x, renderMenu: t })
         },
-        J = (function (e) {
+        N = (function (e) {
           s()(r, e)
-          var t = j(r)
+          var t = P(r)
           function r() {
             var e
             o()(this, r)
@@ -313,19 +316,19 @@
             return (
               (e = t.call.apply(t, [this].concat(a))),
               k()(l()(e), '_renderPrimaryContent', function (t, r, n) {
-                return y.createElement(E.a, { bookmarkFolderId: n, history: e.props.history, title: r, urtModule: t })
+                return b.a.createElement(C.a, { bookmarkFolderId: n, history: e.props.history, title: r, urtModule: t })
               }),
               k()(l()(e), '_renderMenu', function (t) {
-                return y.createElement(b.a, {
-                  items: [{ text: x, onClick: e._editFolderModal, Icon: L.a }],
+                return b.a.createElement(v.a, {
+                  items: [{ text: H, onClick: e._editFolderModal, Icon: g.a }],
                   onCloseRequested: t,
                 })
               }),
               k()(
                 l()(e),
                 '_getBookmarkFolderModule',
-                Object(g.a)(function (e) {
-                  if (e) return Object(v.a)(e)
+                Object(B.a)(function (e) {
+                  if (e) return Object(E.a)(e)
                 }),
               ),
               k()(l()(e), '_editFolderModal', function (t) {
@@ -366,16 +369,16 @@
                     n = this.props.match.params.bookmarkFolderId || void 0,
                     o = this._getBookmarkFolderModule(n)
                   if (!t || !o) return null
-                  var a = y.createElement(H, { renderMenu: this._renderMenu })
-                  return y.createElement(
-                    I.a,
+                  var a = b.a.createElement(J, { renderMenu: this._renderMenu })
+                  return b.a.createElement(
+                    S.a,
                     null,
-                    y.createElement(S.a, {
+                    b.a.createElement(j.a, {
                       backLocation: '/i/bookmarks',
                       history: r,
                       primaryContent: this._renderPrimaryContent(o, t, n),
                       rightControl: a,
-                      sidebarContent: y.createElement(C.a, null),
+                      sidebarContent: b.a.createElement(F.a, null),
                       title: t,
                       withBackButton: !0,
                     }),
@@ -385,9 +388,9 @@
             ]),
             r
           )
-        })(y.Component),
-        N = O(J)
-      t.default = N
+        })(b.a.Component),
+        K = w(N)
+      t.default = K
     },
   },
 ])

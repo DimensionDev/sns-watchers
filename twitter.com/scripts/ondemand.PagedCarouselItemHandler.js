@@ -1,14 +1,15 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [218],
+  [221],
   {
     'X3+4': function (e, t, r) {
       'use strict'
       r.d(t, 'a', function () {
-        return a
+        return c
       })
       var n = r('ERkP'),
-        o = r('fs1G'),
-        a = n.createContext({ handleNextSlide: o.a })
+        o = r.n(n),
+        a = r('fs1G'),
+        c = o.a.createContext({ handleNextSlide: a.a })
     },
     b5s6: function (e, t, r) {
       'use strict'
@@ -17,40 +18,41 @@
         a = r('m3Bd'),
         c = r.n(a),
         s = r('ERkP'),
-        i = r('v6aA'),
-        l = r('XOJV'),
-        u = r('eSoz'),
-        d = r('rxPX'),
-        p = r('0KEI'),
-        b = function (e, t) {
+        i = r.n(s),
+        l = r('v6aA'),
+        u = r('XOJV'),
+        d = r('eSoz'),
+        p = r('rxPX'),
+        b = r('0KEI'),
+        m = function (e, t) {
           return t.tweetId
         },
-        m = function (e, t) {
+        f = function (e, t) {
           var r = t.tweetId,
-            n = r && l.a.select(e, r)
-          return n ? Object(u.g)(e, n) : void 0
+            n = r && u.a.select(e, r)
+          return n ? Object(d.g)(e, n) : void 0
         },
-        f = Object(d.a)()
+        w = Object(p.a)()
           .propsFromState(function () {
-            return { community: m, hydratedTweet: l.a.createHydratedTweetSelector(b) }
+            return { community: f, hydratedTweet: u.a.createHydratedTweetSelector(m) }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(p.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(b.createLocalApiErrorHandlerWithContextFactory)(
                 'QUOTE_TWEET_CONTAINER',
               ),
-              fetchCommunityIfNeeded: u.c.fetchOneIfNeeded,
+              fetchCommunityIfNeeded: d.c.fetchOneIfNeeded,
             }
           }),
-        w = r('YeIG'),
-        h = r('uCxL'),
-        C = r('x5Pi'),
-        y = f(function (e) {
+        h = r('YeIG'),
+        C = r('uCxL'),
+        y = r('x5Pi'),
+        E = w(function (e) {
           var t = e.community,
             r = e.createLocalApiErrorHandler,
             n = e.fetchCommunityIfNeeded,
             a = e.hydratedTweet,
-            l =
+            s =
               (e.tweetId,
               c()(e, [
                 'community',
@@ -59,43 +61,44 @@
                 'hydratedTweet',
                 'tweetId',
               ])),
-            u = s.useContext(i.a),
+            u = i.a.useContext(l.a),
             d = u.featureSwitches,
             p = u.loggedInUserId,
             b = null == a ? void 0 : a.community_id_str
-          s.useEffect(
+          i.a.useEffect(
             function () {
-              b && Object(w.a)(t) && n(b).catch(r())
+              b && Object(h.a)(t) && n(b).catch(r())
             },
             [t, b, r, n],
           )
           var m = d.isTrue('responsive_web_alt_text_badge_enabled'),
-            f = a && Object(C.f)(a, p, t),
-            y = f && Object(C.e)(f),
+            f = a && Object(y.f)(a, p, t),
+            w = f && Object(y.e)(f),
             E = d.isTrue('responsive_web_reactions_enabled')
-          return s.createElement(
-            h.a,
-            o()({}, l, {
+          return i.a.createElement(
+            C.a,
+            o()({}, s, {
               loggedInUserId: p,
               shouldShowAltLabelAlways: m,
-              socialContextProps: y,
+              socialContextProps: w,
               tweet: a,
               withReactions: E,
             }),
           )
         })
-      t.a = y
+      t.a = E
     },
     kh1t: function (e, t, r) {
       'use strict'
       r.r(t)
       var n = r('ezF+'),
         o = r('ERkP'),
-        a = (r('uFXj'), r('X3+4')),
-        c = r('Irs7'),
-        s = r('MWbm'),
-        i = r('/yvb'),
-        l = r('rHpw').a.create(function (e) {
+        a = r.n(o),
+        c = (r('uFXj'), r('X3+4')),
+        s = r('Irs7'),
+        i = r('MWbm'),
+        l = r('/yvb'),
+        u = r('rHpw').a.create(function (e) {
           return {
             root: {
               borderColor: e.colors.nestedBorderColor,
@@ -111,18 +114,18 @@
             rightControl: { marginRight: e.spaces.space12, marginLeft: e.spaces.space4 },
           }
         }),
-        u = function (e) {
+        d = function (e) {
           var t = e.content,
             r = e.showLessOnClick,
             n = e.showLessText,
-            u = e.showMoreOnClick,
+            o = e.showMoreOnClick,
             d = e.showMoreText,
-            p = o.useRef(),
-            b = Object(c.b)(),
+            p = a.a.useRef(),
+            b = Object(s.b)(),
             m = function (e) {
               return function (t) {
                 var r
-                b.scribeAction('show_more'), u(), null === (r = p.current) || void 0 === r || r.blur(), e(t)
+                b.scribeAction('show_more'), o(), null === (r = p.current) || void 0 === r || r.blur(), e(t)
               }
             },
             f = function (e) {
@@ -138,64 +141,64 @@
             w = function () {
               b.scribeAction('click')
             }
-          return o.createElement(a.a.Consumer, null, function (e) {
+          return a.a.createElement(c.a.Consumer, null, function (e) {
             var r = e.handleNextSlide
-            return o.createElement(
-              s.a,
-              { style: l.root },
-              o.createElement(s.a, { onClick: w }, t),
-              o.createElement(
-                s.a,
-                { style: l.buttonsContainer },
-                o.createElement(
-                  i.a,
-                  { onPress: f(r), size: 'medium', style: [l.button, l.leftControl], type: 'primaryOutlined' },
+            return a.a.createElement(
+              i.a,
+              { style: u.root },
+              a.a.createElement(i.a, { onClick: w }, t),
+              a.a.createElement(
+                i.a,
+                { style: u.buttonsContainer },
+                a.a.createElement(
+                  l.a,
+                  { onPress: f(r), size: 'medium', style: [u.button, u.leftControl], type: 'primaryOutlined' },
                   n,
                 ),
-                o.createElement(
-                  i.a,
-                  { onPress: m(r), ref: p, size: 'medium', style: [l.button, l.rightControl], type: 'primaryFilled' },
+                a.a.createElement(
+                  l.a,
+                  { onPress: m(r), ref: p, size: 'medium', style: [u.button, u.rightControl], type: 'primaryFilled' },
                   d,
                 ),
               ),
             )
           })
         },
-        d = r('VPAj'),
-        p = r('EIk2'),
-        b = r('b5s6'),
-        m = r('zh9S'),
-        f = r('Rp9C'),
-        w = r('pbku'),
-        h = r('XOJV'),
-        C = r('0KEI'),
-        y = function (e, t) {
+        p = r('VPAj'),
+        b = r('EIk2'),
+        m = r('b5s6'),
+        f = r('zh9S'),
+        w = r('Rp9C'),
+        h = r('pbku'),
+        C = r('XOJV'),
+        y = r('0KEI'),
+        E = function (e, t) {
           var r = (t || {}).entry
           return r.content.content && r.content.content.pagedCarouselFeedbackItem
             ? r.content.content.pagedCarouselFeedbackItem.content.tweet.id
             : void 0
         },
-        E = n.g({
+        g = n.g({
           bindActions: function (e) {
             return {
               applyReactionInstructions: e.module.applyReactionInstructions,
-              createLocalApiErrorHandler: Object(C.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(y.createLocalApiErrorHandlerWithContextFactory)(
                 'PAGED_CAROUSEL_FEEDBACK_ITEM',
               ),
-              processCallback: p.a,
-              scribe: m.c,
+              processCallback: b.a,
+              scribe: f.c,
             }
           },
           selectData: function (e) {
             e.entry
-            return { tweet: h.a.createHydratedTweetSelector(y) }
+            return { tweet: C.a.createHydratedTweetSelector(E) }
           },
-          component: u,
+          component: d,
           createProps: function (e) {
             var t = e.actions,
               r = t.applyReactionInstructions,
               n = t.createLocalApiErrorHandler,
-              a = t.processCallback,
+              o = t.processCallback,
               c = (t.scribe, e.data.tweet),
               s = e.entry
             if (!s.content.content.pagedCarouselFeedbackItem || !c) return null
@@ -205,24 +208,24 @@
               d = i.showMoreCallback,
               p = i.showMoreText
             return {
-              content: o.createElement(b.a, { shouldShowBorder: !1, tweetId: c.id_str }),
+              content: a.a.createElement(m.a, { shouldShowBorder: !1, tweetId: c.id_str }),
               showLessText: u,
               showLessOnClick: function () {
-                a(l).catch(n())
+                o(l).catch(n())
               },
               showMoreText: p,
               showMoreOnClick: function () {
-                a(d).catch(n()), r({ entry: s, triggerName: w.a.ON_SHOW_MORE })
+                o(d).catch(n()), r({ entry: s, triggerName: h.a.ON_SHOW_MORE })
               },
             }
           },
           getScribeDataItem: function (e) {
-            return f.a.getPagedCarouselTweetURTEntryItem(e)
+            return w.a.getPagedCarouselTweetURTEntryItem(e)
           },
-          shouldDisplayBorder: Object(d.a)(!1),
-          isFocusable: Object(d.a)(!0),
+          shouldDisplayBorder: Object(p.a)(!1),
+          isFocusable: Object(p.a)(!0),
         })
-      t.default = E
+      t.default = g
     },
   },
 ])

@@ -6,13 +6,14 @@
       r.r(t)
       r('WNMA'), r('KqXw')
       var n = r('ERkP'),
-        o = r('SslV'),
-        c = r('es0u'),
-        i = r('mw9i'),
-        a = (r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('KEM+')),
-        s = r.n(a),
-        u = r('ezF+'),
-        l =
+        o = r.n(n),
+        c = r('SslV'),
+        i = r('es0u'),
+        a = r('mw9i'),
+        s = (r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('KEM+')),
+        u = r.n(s),
+        l = r('ezF+'),
+        p =
           (r('JtPf'),
           r('7x/C'),
           r('87if'),
@@ -20,14 +21,14 @@
           r('kYxP'),
           {
             loader: function () {
-              return r.e(238).then(r.bind(null, 'U0EQ'))
+              return r.e(242).then(r.bind(null, 'U0EQ'))
             },
             loaderKey: 'collectionHeaderLoader',
             strategy: r('XBtf').a.Critical,
           }),
-        p = u.e(l),
-        d = r('8UdT')
-      function f(e, t) {
+        d = l.e(p),
+        f = r('8UdT')
+      function O(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -39,46 +40,46 @@
         }
         return r
       }
-      function O(e) {
+      function b(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? f(Object(r), !0).forEach(function (t) {
-                s()(e, t, r[t])
+            ? O(Object(r), !0).forEach(function (t) {
+                u()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : f(Object(r)).forEach(function (t) {
+            : O(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var b = O(O({}, r('QIgh').b), {}, s()({}, d.a.CollectionHeader, p)),
-        y = r('3XMw'),
-        j = r.n(y),
-        m = r('yoO3'),
-        w = r('fTQJ'),
-        g = r('VS6U'),
-        h = r('7JQg'),
-        P = j.a.f8cafdc1,
-        v = j.a.ddf0ba7e
-      t.default = Object(h.c)({ page: 'collection', section: 'tweets' })(function (e) {
+      var y = b(b({}, r('QIgh').b), {}, u()({}, f.a.CollectionHeader, d)),
+        j = r('3XMw'),
+        m = r.n(j),
+        w = r('yoO3'),
+        g = r('fTQJ'),
+        h = r('VS6U'),
+        P = r('7JQg'),
+        v = m.a.f8cafdc1,
+        E = m.a.ddf0ba7e
+      t.default = Object(P.c)({ page: 'collection', section: 'tweets' })(function (e) {
         var t = e.history,
           r = e.match.params.collectionId
-        return n.createElement(
-          m.a,
+        return o.a.createElement(
+          w.a,
           null,
-          n.createElement(g.a, {
+          o.a.createElement(h.a, {
             backLocation: '/',
             history: t,
-            primaryContent: n.createElement(
-              i.a,
+            primaryContent: o.a.createElement(
+              a.a,
               null,
-              n.createElement(w.a, { entryConfiguration: b, module: Object(o.a)(r), title: P }),
+              o.a.createElement(g.a, { entryConfiguration: y, module: Object(c.a)(r), title: v }),
             ),
-            sidebarContent: n.createElement(c.a, null),
-            title: v,
+            sidebarContent: o.a.createElement(i.a, null),
+            title: E,
           }),
         )
       })

@@ -1,61 +1,62 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
   [70],
   {
-    2927: function (e, t, n) {
+    2927: function (e, t, a) {
       'use strict'
-      n.r(t),
-        n.d(t, 'NotMyAccountScreen', function () {
-          return U
+      a.r(t),
+        a.d(t, 'NotMyAccountScreen', function () {
+          return X
         })
-      n('OZaJ')
-      var a = n('VrFO'),
-        r = n.n(a),
-        c = n('Y9Ll'),
-        o = n.n(c),
-        s = n('1Pcy'),
-        i = n.n(s),
-        l = n('5Yy7'),
-        u = n.n(l),
-        m = n('N+ot'),
-        d = n.n(m),
-        f = n('AuHH'),
-        h = n.n(f),
-        p = n('KEM+'),
-        E = n.n(p),
-        A = (n('WNMA'), n('KqXw'), n('7x/C'), n('DZ+c'), n('ERkP')),
-        b = n('k49u'),
-        N = n('rxPX'),
-        v = n('0KEI'),
-        _ = n('oEOe'),
-        y = function (e) {
-          return function (t, n, a) {
-            var r = a.api
-            return Object(_.d)(t, { params: e, request: r.Account.disassociateAccount })('DISASSOCIATE_ACCOUNT')
-          }
-        },
+      a('OZaJ')
+      var n = a('VrFO'),
+        r = a.n(n),
+        c = a('Y9Ll'),
+        o = a.n(c),
+        s = a('1Pcy'),
+        i = a.n(s),
+        l = a('5Yy7'),
+        u = a.n(l),
+        m = a('N+ot'),
+        d = a.n(m),
+        f = a('AuHH'),
+        h = a.n(f),
+        p = a('KEM+'),
+        E = a.n(p),
+        A = (a('WNMA'), a('KqXw'), a('7x/C'), a('DZ+c'), a('ERkP')),
+        b = a.n(A),
+        N = a('k49u'),
+        v = a('rxPX'),
+        _ = a('0KEI'),
+        y = a('oEOe'),
         g = function (e) {
-          return function (t, n, a) {
-            var r = a.api
-            return Object(_.d)(t, { params: e, request: r.Account.getMaskedData })('GET_MASKED_DATA')
+          return function (t, a, n) {
+            var r = n.api
+            return Object(y.d)(t, { params: e, request: r.Account.disassociateAccount })('DISASSOCIATE_ACCOUNT')
           }
         },
-        M = Object(N.a)().propsFromActions(function () {
+        M = function (e) {
+          return function (t, a, n) {
+            var r = n.api
+            return Object(y.d)(t, { params: e, request: r.Account.getMaskedData })('GET_MASKED_DATA')
+          }
+        },
+        w = Object(v.a)().propsFromActions(function () {
           return {
-            createLocalApiErrorHandler: Object(v.createLocalApiErrorHandlerWithContextFactory)(
+            createLocalApiErrorHandler: Object(_.createLocalApiErrorHandlerWithContextFactory)(
               'NOT_MY_ACCOUNT_CONTEXT',
             ),
-            disassociateAccount: y,
-            getMaskedData: g,
+            disassociateAccount: g,
+            getMaskedData: M,
           }
         }),
-        w = n('jHSc'),
-        H = n('MWbm'),
-        O = n('t62R'),
-        S = n('rHpw'),
-        T = n('cmUU'),
-        k = n('3XMw'),
-        C = n.n(k)
-      function F(e) {
+        H = a('jHSc'),
+        O = a('MWbm'),
+        S = a('t62R'),
+        T = a('rHpw'),
+        k = a('cmUU'),
+        C = a('3XMw'),
+        F = a.n(C)
+      function I(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -67,98 +68,98 @@
           }
         })()
         return function () {
-          var n,
-            a = h()(e)
+          var a,
+            n = h()(e)
           if (t) {
             var r = h()(this).constructor
-            n = Reflect.construct(a, arguments, r)
-          } else n = a.apply(this, arguments)
-          return d()(this, n)
+            a = Reflect.construct(n, arguments, r)
+          } else a = n.apply(this, arguments)
+          return d()(this, a)
         }
       }
-      var I = A.createElement(O.b, { color: 'gray700', weight: 'bold' }),
-        j = C.a.f7865ab5,
-        D = C.a.a35248e3,
-        x = C.a.f794a67b,
-        L = C.a.j79c0ff7,
-        R = C.a.j24c37b2,
-        q = A.createElement(C.a.I18NFormatMessage, { $i18n: 'a1c4702f' }, A.cloneElement(I, null, C.a.c97a594b)),
-        P = A.createElement(
-          C.a.I18NFormatMessage,
+      var j = b.a.createElement(S.b, { color: 'gray700', weight: 'bold' }),
+        D = F.a.f7865ab5,
+        x = F.a.a35248e3,
+        L = F.a.f794a67b,
+        R = F.a.j79c0ff7,
+        q = F.a.j24c37b2,
+        P = b.a.createElement(F.a.I18NFormatMessage, { $i18n: 'a1c4702f' }, b.a.cloneElement(j, null, F.a.c97a594b)),
+        $ = b.a.createElement(
+          F.a.I18NFormatMessage,
           { $i18n: 'g9aa2a63' },
-          A.createElement(
-            O.b,
+          b.a.createElement(
+            S.b,
             {
               link: 'https://help.twitter.com/managing-your-account/received-a-confirmation-email-thats-not-for-my-account',
             },
-            C.a.ee54f475,
+            F.a.ee54f475,
           ),
         ),
-        $ = A.createElement(
-          A.Fragment,
+        B = b.a.createElement(
+          b.a.Fragment,
           null,
-          A.createElement(H.a, { style: { paddingBottom: S.a.theme.spaces.space4 } }, q),
-          P,
+          b.a.createElement(O.a, { style: { paddingBottom: T.a.theme.spaces.space4 } }, P),
+          $,
         ),
-        B = C.a.fb46383b,
-        K = C.a.a6b9e23b,
-        U = (function (e) {
-          u()(n, e)
-          var t = F(n)
-          function n(e) {
-            var a
+        K = F.a.fb46383b,
+        U = F.a.a6b9e23b,
+        X = (function (e) {
+          u()(a, e)
+          var t = I(a)
+          function a(e) {
+            var n
             return (
-              r()(this, n),
-              (a = t.call(this, e)),
-              E()(i()(a), '_renderHeader', function () {
+              r()(this, a),
+              (n = t.call(this, e)),
+              E()(i()(n), '_renderHeader', function () {
                 return null
               }),
-              E()(i()(a), '_handleErrors', function (e) {
+              E()(i()(n), '_handleErrors', function (e) {
                 var t,
-                  n = a.props.createLocalApiErrorHandler,
-                  r = a.state.screenName
-                n(
+                  a = n.props.createLocalApiErrorHandler,
+                  r = n.state.screenName
+                a(
                   ((t = {}),
-                  E()(t, b.a.ClientNotPermitted, { toast: { text: B } }),
-                  E()(t, b.a.InvalidEmailAddress, { toast: { text: K({ screenName: r }) } }),
+                  E()(t, N.a.ClientNotPermitted, { toast: { text: K } }),
+                  E()(t, N.a.InvalidEmailAddress, { toast: { text: U({ screenName: r }) } }),
                   E()(t, 'showToast', !0),
                   t),
                 )(e),
-                  a._redirectToHome()
+                  n._redirectToHome()
               }),
-              E()(i()(a), '_handleSubmit', function () {
-                var e = a.props.disassociateAccount,
-                  t = a.state.screenName
+              E()(i()(n), '_handleSubmit', function () {
+                var e = n.props.disassociateAccount,
+                  t = n.state.screenName
                 t &&
-                  a._secret &&
-                  e({ screenName: t, secret: a._secret })
+                  n._secret &&
+                  e({ screenName: t, secret: n._secret })
                     .then(function () {
-                      a.setState({ success: !0 })
+                      n.setState({ success: !0 })
                     })
-                    .catch(a._handleErrors)
+                    .catch(n._handleErrors)
               }),
-              E()(i()(a), '_redirectToHome', function () {
-                a.props.history.push('/')
+              E()(i()(n), '_redirectToHome', function () {
+                n.props.history.push('/')
               }),
-              (a._secret = e.match.params.emailLinkSecret),
-              (a.state = { emailAddress: '', screenName: '', success: !1 }),
-              a
+              (n._secret = e.match.params.emailLinkSecret),
+              (n.state = { emailAddress: '', screenName: '', success: !1 }),
+              n
             )
           }
           return (
-            o()(n, [
+            o()(a, [
               {
                 key: 'componentDidMount',
                 value: function () {
                   var e = this,
                     t = this.props,
-                    n = t.getMaskedData,
-                    a = t.location,
+                    a = t.getMaskedData,
+                    n = t.location,
                     r = t.match.params.screenName,
-                    c = a.query.ut && a.query.ut.toString()
+                    c = n.query.ut && n.query.ut.toString()
                   this._secret &&
                     r &&
-                    n({ secret: this._secret, user: r, ut: c })
+                    a({ secret: this._secret, user: r, ut: c })
                       .then(function (t) {
                         e.setState({
                           emailAddress: null == t ? void 0 : t.emailAddress,
@@ -174,49 +175,49 @@
                 value: function () {
                   var e = this.state,
                     t = e.emailAddress,
-                    n = e.screenName,
-                    a = e.success
-                  if (!t || !n) return null
-                  var r = a ? L({ emailAddress: t }) : j,
-                    c = a
+                    a = e.screenName,
+                    n = e.success
+                  if (!t || !a) return null
+                  var r = n ? R({ emailAddress: t }) : D,
+                    c = n
                       ? (function (e, t) {
-                          return A.createElement(
-                            C.a.I18NFormatMessage,
+                          return b.a.createElement(
+                            F.a.I18NFormatMessage,
                             { $i18n: 'hf714442' },
-                            A.cloneElement(I, null, C.a.da9fdc87({ emailAddress: t })),
-                            A.cloneElement(I, null, C.a.e851165f({ screenName: e })),
+                            b.a.cloneElement(j, null, F.a.da9fdc87({ emailAddress: t })),
+                            b.a.cloneElement(j, null, F.a.e851165f({ screenName: e })),
                           )
-                        })(n, t)
+                        })(a, t)
                       : (function (e, t) {
-                          return A.createElement(
-                            C.a.I18NFormatMessage,
+                          return b.a.createElement(
+                            F.a.I18NFormatMessage,
                             { $i18n: 'j1958650' },
-                            A.cloneElement(I, null, C.a.a2b8656b({ screenName: e })),
-                            A.cloneElement(I, null, C.a.gef8c0a9({ emailAddress: t })),
+                            b.a.cloneElement(j, null, F.a.a2b8656b({ screenName: e })),
+                            b.a.cloneElement(j, null, F.a.gef8c0a9({ emailAddress: t })),
                           )
-                        })(n, t),
-                    o = a ? R : D,
-                    s = a ? void 0 : x,
-                    i = a ? this._redirectToHome : this._handleSubmit,
-                    l = a ? void 0 : this._redirectToHome,
-                    u = a
-                      ? $
+                        })(a, t),
+                    o = n ? q : x,
+                    s = n ? void 0 : L,
+                    i = n ? this._redirectToHome : this._handleSubmit,
+                    l = n ? void 0 : this._redirectToHome,
+                    u = n
+                      ? B
                       : (function (e) {
-                          return A.createElement(
-                            C.a.I18NFormatMessage,
+                          return b.a.createElement(
+                            F.a.I18NFormatMessage,
                             { $i18n: 'c1567ae1' },
-                            A.cloneElement(I, null, C.a.f3604c48({ screenName: e })),
-                            A.createElement(
-                              O.b,
+                            b.a.cloneElement(j, null, F.a.f3604c48({ screenName: e })),
+                            b.a.createElement(
+                              S.b,
                               { link: 'https://twitter.com/settings/email_notifications' },
-                              C.a.d7572079,
+                              F.a.d7572079,
                             ),
                           )
-                        })(n)
-                  return A.createElement(
-                    w.b,
+                        })(a)
+                  return b.a.createElement(
+                    H.b,
                     { renderHeader: this._renderHeader },
-                    A.createElement(T.a, {
+                    b.a.createElement(k.a, {
                       actionLabel: o,
                       footer: u,
                       headline: r,
@@ -231,11 +232,11 @@
                 },
               },
             ]),
-            n
+            a
           )
-        })(A.Component),
-        X = M(U)
-      t.default = X
+        })(b.a.Component),
+        J = w(X)
+      t.default = J
     },
   },
 ])

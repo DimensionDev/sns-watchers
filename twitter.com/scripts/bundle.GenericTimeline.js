@@ -24,23 +24,24 @@
       'use strict'
       r.r(t),
         r.d(t, 'GenericTimelineScreen', function () {
-          return D
+          return S
         })
       var n,
         i = r('ERkP'),
-        o = r('v84o'),
-        c = r('es0u'),
-        a = (r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('KEM+')),
-        u = r.n(a),
-        l = r('QIgh'),
-        s = r('8UdT'),
-        f = r('iu0J'),
-        p = r('ezF+'),
-        d = r('Ai1p'),
-        b = p.e(d.a),
-        O = r('rpbw'),
-        y = r('PH3B')
-      function g(e, t) {
+        o = r.n(i),
+        c = r('v84o'),
+        a = r('es0u'),
+        u = (r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('KEM+')),
+        l = r.n(u),
+        s = r('QIgh'),
+        f = r('8UdT'),
+        p = r('iu0J'),
+        d = r('ezF+'),
+        b = r('Ai1p'),
+        O = d.e(b.a),
+        y = r('rpbw'),
+        g = r('PH3B')
+      function P(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -52,67 +53,67 @@
         }
         return r
       }
-      function P(e) {
+      function m(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? g(Object(r), !0).forEach(function (t) {
-                u()(e, t, r[t])
+            ? P(Object(r), !0).forEach(function (t) {
+                l()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : g(Object(r)).forEach(function (t) {
+            : P(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var m =
+      var v =
           ((n = {}),
-          u()(n, s.b.EventSummary, Object(f.a)({ errorContext: 'GENERIC_TIMELINE_SCREEN' })),
-          u()(n, s.b.Label, b),
-          u()(n, s.b.News, y.a),
-          u()(n, s.b.TwitterList, Object(O.a)({})),
+          l()(n, f.b.EventSummary, Object(p.a)({ errorContext: 'GENERIC_TIMELINE_SCREEN' })),
+          l()(n, f.b.Label, O),
+          l()(n, f.b.News, g.a),
+          l()(n, f.b.TwitterList, Object(y.a)({})),
           n),
-        v = P(P({}, Object(l.a)({ withMuteConversation: !0 })), m),
-        w = r('3XMw'),
-        j = r.n(w),
-        E = r('yoO3'),
-        h = r('5FtR'),
-        C = r('fTQJ'),
-        I = r('VS6U'),
-        T = r('7JQg'),
-        L = j.a.a6d5b010,
-        D = function (e) {
+        w = m(m({}, Object(s.a)({ withMuteConversation: !0 })), v),
+        j = r('3XMw'),
+        E = r.n(j),
+        h = r('yoO3'),
+        C = r('5FtR'),
+        I = r('fTQJ'),
+        T = r('VS6U'),
+        L = r('7JQg'),
+        D = E.a.a6d5b010,
+        S = function (e) {
           var t = e.history,
             r = (function (e) {
               return e.state && e.state.urtUrl
             })(e.location),
             n = null == r ? void 0 : r.urtEndpointOptions,
-            a = n ? n.title : L,
+            i = n ? n.title : D,
             u = n ? n.subtitle : void 0,
-            l = i.useMemo(
+            l = o.a.useMemo(
               function () {
-                return r && Object(o.a)({ urtUrl: r, timelinePrefix: 'generic-' })
+                return r && Object(c.a)({ urtUrl: r, timelinePrefix: 'generic-' })
               },
               [r],
             )
           return l
-            ? i.createElement(
-                E.a,
+            ? o.a.createElement(
+                h.a,
                 null,
-                i.createElement(I.a, {
+                o.a.createElement(T.a, {
                   backLocation: '/',
                   history: t,
-                  primaryContent: i.createElement(C.a, { entryConfiguration: v, module: l, title: a }),
-                  sidebarContent: i.createElement(c.a, { withWhoToFollow: !1 }),
+                  primaryContent: o.a.createElement(I.a, { entryConfiguration: w, module: l, title: i }),
+                  sidebarContent: o.a.createElement(a.a, { withWhoToFollow: !1 }),
                   subtitle: u,
-                  title: a,
+                  title: i,
                 }),
               )
-            : i.createElement(h.a, { to: '/' })
+            : o.a.createElement(C.a, { to: '/' })
         }
-      t.default = Object(T.c)({ page: 'generic_timeline' })(D)
+      t.default = Object(L.c)({ page: 'generic_timeline' })(S)
     },
     PH3B: function (e, t, r) {
       'use strict'
@@ -124,14 +125,14 @@
         u = (r('JtPf'), r('7x/C'), r('87if'), r('lTEL'), r('kYxP'), r('XBtf')),
         l = {
           loader: function () {
-            return Promise.all([r.e(0), r.e(338)]).then(r.bind(null, 'a+ad'))
+            return Promise.all([r.e(0), r.e(342)]).then(r.bind(null, 'a+ad'))
           },
           loaderKey: 'newsCellLoader',
           strategy: u.a.Critical,
         },
         s = {
           loader: function () {
-            return Promise.all([r.e(0), r.e(340)]).then(r.bind(null, 'hX2d'))
+            return Promise.all([r.e(0), r.e(344)]).then(r.bind(null, 'hX2d'))
           },
           loaderKey: 'newsPreviewCardLoader',
           strategy: u.a.Critical,

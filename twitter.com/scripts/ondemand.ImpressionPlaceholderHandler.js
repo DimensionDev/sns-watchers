@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [206],
+  [209],
   {
     hKgB: function (e, n, t) {
       'use strict'
@@ -7,32 +7,33 @@
       var o = t('ezF+'),
         i = t('VPAj'),
         r = t('ERkP'),
-        a = t('Irs7'),
-        c = function (e) {
+        a = t.n(r),
+        c = t('Irs7'),
+        s = function (e) {
           var n = e.entry,
-            t = Object(a.b)()
+            t = Object(c.b)()
           return (
-            r.useEffect(function () {
+            a.a.useEffect(function () {
               t.scribe({ action: 'impression', data: { position: n.position } })
             }, []),
             null
           )
         },
-        s = r.memo(c),
-        u = Object(i.a)(!1),
-        p = { viewType: 'module' },
-        d = o
+        u = a.a.memo(s),
+        p = Object(i.a)(!1),
+        d = { viewType: 'module' },
+        l = o
           .b({
-            component: s,
-            shouldDisplayBorder: u,
+            component: u,
+            shouldDisplayBorder: p,
             defaultScribeNamespace: { component: 'module' },
             getBehavioralEventContextOverride: function () {
-              return p
+              return d
             },
             isEmpty: !0,
           })
           .getHandler()
-      n.default = d
+      n.default = l
     },
   },
 ])

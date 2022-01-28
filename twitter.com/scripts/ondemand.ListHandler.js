@@ -1,35 +1,36 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [211],
+  [214],
   {
-    '1Ws7': function (e, t, n) {
+    '1Ws7': function (e, t, a) {
       'use strict'
-      n.r(t)
-      var r = n('ezF+'),
-        a = n('VPAj'),
-        i = n('97Jx'),
-        o = n.n(i),
-        c = n('m3Bd'),
-        l = n.n(c),
-        s = n('ERkP'),
-        u = n('1AUC'),
-        d = n('sYiQ'),
-        m = function (e) {
+      a.r(t)
+      var n = a('ezF+'),
+        i = a('VPAj'),
+        r = a('97Jx'),
+        o = a.n(r),
+        c = a('m3Bd'),
+        s = a.n(c),
+        l = a('ERkP'),
+        d = a.n(l),
+        u = a('1AUC'),
+        m = a('sYiQ'),
+        p = function (e) {
           var t = e.entry,
-            n = (e.feedbackItems, e.module, e.shouldDisplayPin),
-            r = l()(e, ['entry', 'feedbackItems', 'module', 'shouldDisplayPin']),
-            a = n ? d.a.Pinning : void 0
-          return s.createElement(u.a, o()({ isMember: t.content.isMember, listId: t.content.id, mode: a }, r))
+            a = (e.feedbackItems, e.module, e.shouldDisplayPin),
+            n = s()(e, ['entry', 'feedbackItems', 'module', 'shouldDisplayPin']),
+            i = a ? m.a.Pinning : void 0
+          return d.a.createElement(u.a, o()({ isMember: t.content.isMember, listId: t.content.id, mode: i }, n))
         },
-        f = s.memo(m),
-        p = n('Rp9C')
+        b = d.a.memo(p),
+        f = a('Rp9C')
       t.default = function (e) {
-        return r
+        return n
           .b({
-            component: f,
-            isFocusable: Object(a.a)(!0),
+            component: b,
+            isFocusable: Object(i.a)(!0),
             getScribeDataItem: function (e) {
               var t = e.content.id
-              return p.a.forList(t)
+              return f.a.forList(t)
             },
           })
           .getHandler(function () {
@@ -37,148 +38,85 @@
           })
       }
     },
-    O4YN: function (e, t, n) {
+    O4YN: function (e, t, a) {
       'use strict'
-      n.r(t)
-      var r = n('ezF+'),
-        a = n('ERkP'),
-        i = n('VPAj'),
-        o = (n('OZaJ'), n('VrFO')),
-        c = n.n(o),
-        l = n('Y9Ll'),
-        s = n.n(l),
-        u = n('1Pcy'),
-        d = n.n(u),
-        m = n('5Yy7'),
-        f = n.n(m),
-        p = n('N+ot'),
-        v = n.n(p),
-        b = n('AuHH'),
-        h = n.n(b),
-        y = n('KEM+'),
-        P = n.n(y),
-        g = (n('2G9S'), n('ho0z'), n('tVqn'), n('xZmF')),
-        k = n('iPch'),
-        I = n('kHBp'),
-        w = n('P1r1'),
-        M = n('rxPX'),
-        E = function (e, t) {
-          return t.listId
+      a.r(t)
+      var n = a('ezF+'),
+        i = a('VPAj'),
+        r = (a('ho0z'), a('tVqn'), a('ERkP')),
+        o = a.n(r),
+        c = a('xZmF'),
+        s = a('iPch'),
+        l = a('kHBp'),
+        d = a('P1r1'),
+        u = a('rxPX'),
+        m = function (e, t) {
+          return t.entry.content.id
         },
-        O = function (e, t) {
-          return I.a.select(e, E(0, t))
+        p = function (e, t) {
+          return l.a.select(e, m(0, t))
         },
-        S = function (e, t) {
-          return k.h(e, t.listId)
+        b = function (e, t) {
+          return s.h(e, m(0, t))
         },
-        C = Object(M.a)()
+        f = Object(u.a)()
           .propsFromState(function () {
-            return { list: O, listId: E, dataSaverMode: w.k, media: S }
+            return { list: p, listId: m, dataSaverMode: d.k, media: b }
           })
           .adjustStateProps(function (e) {
             var t = e.dataSaverMode,
-              n = e.list,
-              r = e.listId,
-              a = e.media
+              a = e.list,
+              n = e.listId,
+              i = e.media
             return {
-              name: null == n ? void 0 : n.name,
-              isPrivate: 'private' === (null == n ? void 0 : n.mode),
-              listId: r,
+              name: null == a ? void 0 : a.name,
+              isPrivate: 'private' === (null == a ? void 0 : a.mode),
+              listId: n,
               dataSaverMode: t,
-              media: a,
+              media: i,
             }
           })
           .withAnalytics(),
-        R = n('3XMw'),
-        j = n.n(R),
-        x = n('a5gf'),
-        A = n('2My+'),
-        F = n('MWbm'),
-        L = n('htQn'),
-        B = n('t62R'),
-        D = n('rHpw'),
-        H = n('v6aA')
-      function z(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var n,
-            r = h()(e)
-          if (t) {
-            var a = h()(this).constructor
-            n = Reflect.construct(r, arguments, a)
-          } else n = r.apply(this, arguments)
-          return v()(this, n)
-        }
-      }
-      var J = j.a.j681933d,
-        T = (function (e) {
-          f()(n, e)
-          var t = z(n)
-          function n() {
-            var e
-            c()(this, n)
-            for (var r = arguments.length, i = new Array(r), o = 0; o < r; o++) i[o] = arguments[o]
-            return (
-              (e = t.call.apply(t, [this].concat(i))),
-              P()(d()(e), '_renderThumbnail', function () {
-                var t = e.props,
-                  n = t.dataSaverMode,
-                  r = t.isPrivate,
-                  i = t.listId,
-                  o = t.media,
-                  c = t.name,
-                  l = '/i/lists/'.concat(i)
-                return a.createElement(
-                  L.a,
-                  { link: l, onPress: e._handleOnClick, style: V.root },
-                  a.createElement(g.a, { cropCandidates: o.crop, dataSaverMode: n, icon: 'lists', image: o.image }),
-                  a.createElement(
-                    F.a,
-                    { style: V.name },
-                    a.createElement(B.b, { align: 'center', numberOfLines: 1, size: 'subtext2' }, c ? c.trim() : null),
-                    r ? a.createElement(x.a, { accessibilityLabel: J, style: V.iconLock }) : null,
-                  ),
-                )
-              }),
-              P()(d()(e), '_handleOnClick', function (t) {
-                var n = e.props,
-                  r = n.analytics,
-                  a = n.onClick
-                r.scribeAction('click'), a && a(t)
-              }),
-              e
-            )
-          }
-          return (
-            s()(n, [
-              {
-                key: 'render',
-                value: function () {
-                  var e,
-                    t = this.props,
-                    n = t.listId,
-                    r = t.media,
-                    i = t.name
-                  if (!(null != r && null !== (e = r.image) && void 0 !== e && e.url && i && n)) return null
-                  var o = '/i/lists/'.concat(n)
-                  return a.createElement(A.a, { basePath: o, listId: n }, this._renderThumbnail())
-                },
+        v = a('3XMw'),
+        g = a.n(v),
+        k = a('a5gf'),
+        P = a('2My+'),
+        y = a('MWbm'),
+        h = a('htQn'),
+        w = a('t62R'),
+        I = a('rHpw'),
+        M = g.a.j681933d,
+        S = function (e) {
+          var t = e.analytics,
+            a = e.dataSaverMode,
+            n = e.isPrivate,
+            i = e.listId,
+            r = e.media,
+            s = e.name,
+            l = '/i/lists/'.concat(i),
+            d = o.a.useCallback(
+              function () {
+                t.scribeAction('click')
               },
-            ]),
-            n
+              [t],
+            )
+          return o.a.createElement(
+            P.a,
+            { basePath: l, listId: i },
+            o.a.createElement(
+              h.a,
+              { link: l, onPress: d, style: j.root },
+              o.a.createElement(c.a, { cropCandidates: r.crop, dataSaverMode: a, icon: 'lists', image: r.image }),
+              o.a.createElement(
+                y.a,
+                { style: j.name },
+                o.a.createElement(w.b, { align: 'center', numberOfLines: 1, size: 'subtext2' }, s ? s.trim() : null),
+                n ? o.a.createElement(k.a, { accessibilityLabel: M, style: j.iconLock }) : null,
+              ),
+            ),
           )
-        })(a.PureComponent)
-      P()(T, 'contextType', H.a)
-      var V = D.a.create(function (e) {
+        },
+        j = I.a.create(function (e) {
           return {
             root: { alignItems: 'center', backgroundColor: e.colors.cellBackground, padding: e.spaces.space12 },
             name: {
@@ -191,25 +129,20 @@
             iconLock: { color: e.colors.text, marginHorizontal: e.spaces.space4 },
           }
         }),
-        Y = C(T),
-        _ = n('Rp9C'),
-        N = r.g({
-          component: Y,
-          createProps: function (e) {
-            var t,
-              n = e.entry,
-              r = null === (t = n.itemMetadata) || void 0 === t ? void 0 : t.clientEventInfo,
-              a = r ? { component: null == r ? void 0 : r.component, element: null == r ? void 0 : r.element } : void 0
-            return { listId: n.content.id, scribeNamespace: a }
-          },
-          isFocusable: Object(i.a)(!0),
-          getScribeDataItem: function (e) {
-            var t = e.content.id
-            return _.a.forList(t)
-          },
-          shouldDisplayBorder: Object(i.a)(!1),
-        })
-      t.default = N
+        E = f(o.a.memo(S)),
+        C = a('Rp9C'),
+        x = n
+          .b({
+            component: E,
+            isFocusable: Object(i.a)(!0),
+            getScribeDataItem: function (e) {
+              var t = e.content.id
+              return C.a.forList(t)
+            },
+            shouldDisplayBorder: Object(i.a)(!1),
+          })
+          .getHandler()
+      t.default = x
     },
   },
 ])

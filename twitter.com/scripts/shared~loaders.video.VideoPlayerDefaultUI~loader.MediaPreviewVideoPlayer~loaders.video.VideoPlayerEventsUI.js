@@ -4,9 +4,9 @@
     '+aTU': function (e, t, r) {
       'use strict'
       var n = r('VrFO'),
-        o = r.n(n),
-        a = r('Y9Ll'),
-        i = r.n(a),
+        a = r.n(n),
+        o = r('Y9Ll'),
+        i = r.n(o),
         c =
           (r('Cm4o'),
           r('7x/C'),
@@ -19,7 +19,7 @@
           r('2G9S'),
           (function () {
             function e(t) {
-              o()(this, e)
+              a()(this, e)
               try {
                 this.parser = new URL(t)
               } catch (r) {
@@ -69,10 +69,10 @@
     BVo1: function (e, t, r) {
       'use strict'
       r.d(t, 'e', function () {
-        return o
+        return a
       }),
         r.d(t, 'd', function () {
-          return a
+          return o
         }),
         r.d(t, 'c', function () {
           return i
@@ -112,8 +112,8 @@
             skipAdText: { fontVariant: ['tabular-nums'] },
           }
         }),
-        o = n.root,
-        a = n.container,
+        a = n.root,
+        o = n.container,
         i = [n.flexRow, n.bottomBar],
         c = [n.actionContainer, n.leftContainer, n.flexShrink, n.flexRow],
         s = [n.actionContainer, n.rightContainer, n.flexRow],
@@ -123,58 +123,59 @@
     'IE/l': function (e, t, r) {
       'use strict'
       var n = r('ERkP'),
+        a = r.n(n),
         o = r('USG3'),
-        a = r('aNKf'),
-        i = r('rHpw'),
-        c = r('MWbm'),
-        s = r('BVo1')
+        i = r('aNKf'),
+        c = r('rHpw'),
+        s = r('MWbm'),
+        u = r('BVo1')
       t.a = function (e) {
         var t = e.actionButton,
           r = e.displayDismissableControls,
-          u = void 0 === r || r,
+          n = void 0 === r || r,
           l = e.leftContent,
           f = e.rightContent,
           d = e.scrubber,
           p = e.skipButton
-        return n.createElement(
-          n.Fragment,
+        return a.a.createElement(
+          a.a.Fragment,
           null,
-          n.createElement(
+          a.a.createElement(
             o.a,
-            { show: u },
-            n.createElement(a.a, {
-              colors: [i.a.theme.colors.transparent, i.a.theme.colors.translucentBlack77],
-              style: s.g.absoluteContainer,
+            { show: n },
+            a.a.createElement(i.a, {
+              colors: [c.a.theme.colors.transparent, c.a.theme.colors.translucentBlack77],
+              style: u.g.absoluteContainer,
             }),
           ),
-          n.createElement(
-            c.a,
-            { style: s.g.controlContainer },
-            n.createElement(
-              c.a,
-              { style: s.g.flex },
-              n.createElement(
+          a.a.createElement(
+            s.a,
+            { style: u.g.controlContainer },
+            a.a.createElement(
+              s.a,
+              { style: u.g.flex },
+              a.a.createElement(
                 o.a,
-                { show: u },
-                n.createElement(
-                  c.a,
-                  { style: s.g.controlsBottomOffset },
+                { show: n },
+                a.a.createElement(
+                  s.a,
+                  { style: u.g.controlsBottomOffset },
                   d,
-                  n.createElement(
-                    c.a,
-                    { style: s.c },
-                    n.createElement(
-                      c.a,
-                      { style: s.a },
+                  a.a.createElement(
+                    s.a,
+                    { style: u.c },
+                    a.a.createElement(
+                      s.a,
+                      { style: u.a },
                       t,
-                      n.createElement(c.a, { style: [s.g.flexRow, s.g.flexShrink] }, l),
+                      a.a.createElement(s.a, { style: [u.g.flexRow, u.g.flexShrink] }, l),
                     ),
-                    n.createElement(c.a, { style: s.b }, f),
+                    a.a.createElement(s.a, { style: u.b }, f),
                   ),
                 ),
               ),
             ),
-            p && n.createElement(c.a, { style: s.g.controlsBottomOffset }, p),
+            p && a.a.createElement(s.a, { style: u.g.controlsBottomOffset }, p),
           ),
         )
       }
@@ -182,16 +183,17 @@
     N2PN: function (e, t, r) {
       'use strict'
       r.d(t, 'a', function () {
-        return f
+        return d
       })
       var n = r('97Jx'),
-        o = r.n(n),
-        a = r('m3Bd'),
-        i = r.n(a),
+        a = r.n(n),
+        o = r('m3Bd'),
+        i = r.n(o),
         c = r('ERkP'),
-        s = r('/yvb'),
-        u = r('gK2g'),
-        l = function (e) {
+        s = r.n(c),
+        u = r('/yvb'),
+        l = r('gK2g'),
+        f = function (e) {
           e.hoverLabelPreferredHorizontalOrientation, e.hoverLabelWithExtraSpace
           var t = i()(e, ['hoverLabelPreferredHorizontalOrientation', 'hoverLabelWithExtraSpace']),
             r = e.accessibilityLabel
@@ -203,40 +205,41 @@
                   withExtraSpace: e.hoverLabelWithExtraSpace,
                 }
               : void 0
-          return c.createElement(s.a, o()({}, t, { hoverLabel: r, size: e.size || 'medium', type: 'onMediaText' }))
+          return s.a.createElement(u.a, a()({}, t, { hoverLabel: r, size: e.size || 'medium', type: 'onMediaText' }))
         },
-        f = function (e) {
+        d = function (e) {
           var t = e.icon,
             r = e.onPress,
             n = e.scribeNamespace,
-            a = e.size,
-            s = e.testID,
-            f = i()(e, ['icon', 'onPress', 'scribeNamespace', 'size', 'testID']),
-            d = u.a.useAnalytics()
-          return c.createElement(
-            l,
-            o()({}, f, {
+            o = e.size,
+            c = e.testID,
+            u = i()(e, ['icon', 'onPress', 'scribeNamespace', 'size', 'testID']),
+            d = l.a.useAnalytics()
+          return s.a.createElement(
+            f,
+            a()({}, u, {
               icon: t,
               onPress: function (e) {
                 r && r(e), d.scribe(n)
               },
-              size: a,
-              testID: s,
+              size: o,
+              testID: c,
             }),
           )
         }
-      t.b = l
+      t.b = f
     },
     NnQ9: function (e, t, r) {
       'use strict'
       r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
       var n = r('KEM+'),
-        o = r.n(n),
-        a = r('ERkP'),
-        i = r('Lsrn'),
-        c = r('shC7'),
-        s = r('k/Ka')
-      function u(e, t) {
+        a = r.n(n),
+        o = r('ERkP'),
+        i = r.n(o),
+        c = r('Lsrn'),
+        s = r('shC7'),
+        u = r('k/Ka')
+      function l(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -248,44 +251,44 @@
         }
         return r
       }
-      function l(e) {
+      function f(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? u(Object(r), !0).forEach(function (t) {
-                o()(e, t, r[t])
+            ? l(Object(r), !0).forEach(function (t) {
+                a()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : u(Object(r)).forEach(function (t) {
+            : l(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var f = function () {
+      var d = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(s.a)(
+        return Object(u.a)(
           'svg',
-          l(
-            l({}, e),
+          f(
+            f({}, e),
             {},
             {
               accessibilityHidden: void 0 === e.accessibilityLabel,
-              style: [i.a.root, e.style, c.a.getConstants().isRTL && i.a.iconRTL],
+              style: [c.a.root, e.style, s.a.getConstants().isRTL && c.a.iconRTL],
               viewBox: '0 0 24 24',
             },
           ),
-          a.createElement(
+          i.a.createElement(
             'g',
             null,
-            a.createElement('path', {
+            i.a.createElement('path', {
               d: 'M3.5 19.44v-4c0-.414-.336-.75-.75-.75s-.75.336-.75.75v5.81c0 .414.336.75.75.75h5.81c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-4l6.577-6.576c.146-.146.22-.338.22-.53s-.073-.384-.22-.53c-.293-.293-.768-.293-1.06 0L3.5 19.44zM14.69 2.75c0 .414.336.75.75.75h4l-6.577 6.576c-.293.293-.293.768 0 1.06s.768.294 1.06 0L20.5 4.562v4c0 .414.336.75.75.75s.75-.336.75-.75V2.75c0-.414-.336-.75-.75-.75h-5.81c-.414 0-.75.336-.75.75z',
             }),
           ),
         )
       }
-      ;(f.metadata = { width: 24, height: 24 }), (t.a = f)
+      ;(d.metadata = { width: 24, height: 24 }), (t.a = d)
     },
     Q0n6: function (e, t, r) {
       'use strict'
@@ -327,20 +330,20 @@
         })
       r('7xRU'), r('hBpG'), r('2G9S')
       var n = r('kCRK'),
-        o = r('3XMw'),
-        a = r.n(o),
-        i = a.a.d58baa7e,
-        c = a.a.i3b7a017,
-        s = a.a.ie5d110e,
-        u = a.a.df5f11b3,
-        l = a.a.a7cd5cf4,
-        f = a.a.b6eb8f69,
-        d = a.a.dcc2b9b2,
-        p = a.a.hf4ffd4d,
-        b = a.a.f6e90cd6,
-        h = a.a.e7d191ec,
-        m = a.a.h1888a33,
-        v = a.a.c58b2ab7,
+        a = r('3XMw'),
+        o = r.n(a),
+        i = o.a.d58baa7e,
+        c = o.a.i3b7a017,
+        s = o.a.ie5d110e,
+        u = o.a.df5f11b3,
+        l = o.a.a7cd5cf4,
+        f = o.a.b6eb8f69,
+        d = o.a.dcc2b9b2,
+        p = o.a.hf4ffd4d,
+        b = o.a.f6e90cd6,
+        h = o.a.e7d191ec,
+        m = o.a.h1888a33,
+        v = o.a.c58b2ab7,
         y = function (e) {
           return 'number' == typeof e ? i(e) : e
         },
@@ -356,8 +359,8 @@
                   t = e.durationSeconds,
                   r = e.isBroadcast,
                   n = e.isLive,
-                  o = e.timecode,
-                  a = e.videoTrack,
+                  a = e.timecode,
+                  o = e.videoTrack,
                   i = [],
                   c = r || n ? f : l,
                   s = n ? p : d
@@ -368,14 +371,14 @@
                     y = u.secondsWord
                   i.push(b({ hoursWord: m, minutesWord: v, secondsWord: y }))
                 }
-                if ('number' == typeof o && o) {
-                  var g = S(o),
+                if ('number' == typeof a && a) {
+                  var g = S(a),
                     O = g.hoursWord,
                     E = g.minutesWord,
                     P = g.secondsWord
                   i.push(h({ hoursWord: O, minutesWord: E, secondsWord: P }))
                 }
-                var k = a && w(a)
+                var k = o && w(o)
                 return k && i.push(k), i.join('. ')
               })({
                 isLive: e.isLive,
@@ -390,14 +393,14 @@
           var t = R(e),
             r = t.hours,
             n = t.minutes,
-            o = t.seconds,
-            a = { hoursWord: '', minutesWord: '', secondsWord: '' }
-          return 0 === o && 0 === n && 0 === r && 0 === n
-            ? ((a.secondsWord = c(0)), a)
-            : ((a.hoursWord = r > 0 ? u(r) : ''),
-              (a.minutesWord = n > 0 ? s(n) : ''),
-              (a.secondsWord = o > 0 ? c(o) : ''),
-              a)
+            a = t.seconds,
+            o = { hoursWord: '', minutesWord: '', secondsWord: '' }
+          return 0 === a && 0 === n && 0 === r && 0 === n
+            ? ((o.secondsWord = c(0)), o)
+            : ((o.hoursWord = r > 0 ? u(r) : ''),
+              (o.minutesWord = n > 0 ? s(n) : ''),
+              (o.secondsWord = a > 0 ? c(a) : ''),
+              o)
         },
         O = function (e) {
           return e ? (e.currentTimeMs || 0) / 1e3 : void 0
@@ -439,10 +442,10 @@
           var t = R(e),
             r = t.hours,
             n = t.minutes,
-            o = t.seconds,
-            a = o < 10 ? '0'.concat(o) : o,
+            a = t.seconds,
+            o = a < 10 ? '0'.concat(a) : a,
             i = n < 10 && r ? '0'.concat(n) : n
-          return r ? ''.concat(r, ':').concat(i, ':').concat(a) : ''.concat(i, ':').concat(a)
+          return r ? ''.concat(r, ':').concat(i, ':').concat(o) : ''.concat(i, ':').concat(o)
         },
         R = function (e) {
           return { hours: Math.floor(e / 3600), minutes: Math.floor((e % 3600) / 60), seconds: Math.floor(e % 60) }
@@ -451,15 +454,16 @@
     USG3: function (e, t, r) {
       'use strict'
       r.d(t, 'a', function () {
-        return f
+        return d
       })
       r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
       var n = r('KEM+'),
-        o = r.n(n),
-        a = r('ddV6'),
-        i = r.n(a),
-        c = r('ERkP')
-      function s(e, t) {
+        a = r.n(n),
+        o = r('ddV6'),
+        i = r.n(o),
+        c = r('ERkP'),
+        s = r.n(c)
+      function u(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -471,56 +475,56 @@
         }
         return r
       }
-      function u(e) {
+      function l(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? s(Object(r), !0).forEach(function (t) {
-                o()(e, t, r[t])
+            ? u(Object(r), !0).forEach(function (t) {
+                a()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : s(Object(r)).forEach(function (t) {
+            : u(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var l = {
+      var f = {
         transitionDuration: '250ms',
         transitionProperty: 'opacity, height',
         transitionTimingFunction: 'ease',
         willChange: 'opacity',
       }
-      function f(e) {
+      function d(e) {
         var t = e.children,
           r = e.show,
-          n = c.useState(!r),
-          o = i()(n, 2),
-          a = o[0],
-          s = o[1]
+          n = s.a.useState(!r),
+          a = i()(n, 2),
+          o = a[0],
+          c = a[1]
         return (
-          c.useEffect(
+          s.a.useEffect(
             function () {
-              r && a && s(!1)
+              r && o && c(!1)
             },
-            [a, r],
+            [o, r],
           ),
-          c.useMemo(
+          s.a.useMemo(
             function () {
-              var e = u(u({}, l), {}, { opacity: r ? 1 : 0 })
-              return c.createElement(
+              var e = l(l({}, f), {}, { opacity: r ? 1 : 0 })
+              return s.a.createElement(
                 'div',
                 {
                   onTransitionEnd: function (e) {
-                    r || a || s(!0)
+                    r || o || c(!0)
                   },
                   style: e,
                 },
-                a ? null : t,
+                o ? null : t,
               )
             },
-            [t, r, a],
+            [t, r, o],
           )
         )
       }
@@ -528,13 +532,14 @@
     Y3cQ: function (e, t, r) {
       'use strict'
       var n = r('ERkP'),
+        a = r.n(n),
         o = r('fyvP'),
-        a = r('rHpw'),
-        i = r('MWbm')
+        i = r('rHpw'),
+        c = r('MWbm')
       t.a = function (e) {
-        return n.createElement(i.a, { style: c.root }, n.createElement(o.a, e))
+        return a.a.createElement(c.a, { style: s.root }, a.a.createElement(o.a, e))
       }
-      var c = a.a.create(function (e) {
+      var s = i.a.create(function (e) {
         return {
           root: {
             backgroundColor: e.colors.cellBackground,
@@ -547,25 +552,30 @@
     dPHj: function (e, t, r) {
       'use strict'
       var n = r('ERkP'),
+        a = r.n(n),
         o = r('t62R'),
-        a = function (e) {
-          return n.createElement(o.b, { color: 'white', numberOfLines: 1, style: [i.withMargin, e.style] }, e.children)
+        i = function (e) {
+          return a.a.createElement(
+            o.b,
+            { color: 'white', numberOfLines: 1, style: [c.withMargin, e.style] },
+            e.children,
+          )
         },
-        i = r('rHpw').a.create(function (e) {
+        c = r('rHpw').a.create(function (e) {
           return { withMargin: { marginHorizontal: e.spaces.space4 } }
         })
-      t.a = n.memo(a)
+      t.a = a.a.memo(i)
     },
     hhMf: function (e, t, r) {
       'use strict'
       r.d(t, 'a', function () {
-        return T
+        return R
       })
       r('OZaJ')
       var n = r('97Jx'),
-        o = r.n(n),
-        a = r('VrFO'),
-        i = r.n(a),
+        a = r.n(n),
+        o = r('VrFO'),
+        i = r.n(o),
         c = r('Y9Ll'),
         s = r.n(c),
         u = r('1Pcy'),
@@ -590,8 +600,9 @@
           r('jwue'),
           r('+oxZ'),
           r('ERkP')),
-        g = r('6fxz')
-      function S(e) {
+        g = r.n(w),
+        S = r('6fxz')
+      function O(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -606,47 +617,47 @@
           var r,
             n = m()(e)
           if (t) {
-            var o = m()(this).constructor
-            r = Reflect.construct(n, arguments, o)
+            var a = m()(this).constructor
+            r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
           return b()(this, r)
         }
       }
-      var O = 'click',
-        E = 'focused',
-        P = 'mousemove',
-        k = 'mouseover',
-        C = 'touch',
-        j = function (e, t) {
+      var E = 'click',
+        P = 'focused',
+        k = 'mousemove',
+        C = 'mouseover',
+        j = 'touch',
+        _ = function (e, t) {
           return function (r) {
             var n = r.observed
             return n[e].add(t), { observed: n }
           }
         },
-        _ = function (e, t) {
+        L = function (e, t) {
           return function (r) {
             var n = r.observed
             return n[e].delete(t), { observed: n }
           }
         },
-        L = w.createContext({
+        x = g.a.createContext({
           observed: { click: new Set(), focused: new Set(), mousemove: new Set(), mouseover: new Set() },
           Observer: function () {
             return null
           },
         }),
-        x = w.createContext(function () {
+        T = g.a.createContext(function () {
           return null
         }),
-        T = (function (e) {
+        R = (function (e) {
           d()(r, e)
-          var t = S(r)
+          var t = O(r)
           function r() {
             var e
             i()(this, r)
-            for (var n = arguments.length, a = new Array(n), c = 0; c < n; c++) a[c] = arguments[c]
+            for (var n = arguments.length, o = new Array(n), c = 0; c < n; c++) o[c] = arguments[c]
             return (
-              (e = t.call.apply(t, [this].concat(a))),
+              (e = t.call.apply(t, [this].concat(o))),
               y()(l()(e), '_timeoutCollection', { click: {}, focused: {}, mousemove: {}, mouseover: {}, touch: {} }),
               y()(l()(e), '_interactionWatcherRefs', {}),
               y()(l()(e), 'state', {
@@ -670,7 +681,7 @@
               y()(l()(e), '_renderObserver', function (t) {
                 var r = t.children,
                   n = t.interactionKey,
-                  a = t.click,
+                  o = t.click,
                   i = t.focus,
                   c = t.mousemove,
                   s = t.mouseover,
@@ -679,14 +690,14 @@
                   f = void 0 === l ? 2e3 : l,
                   d = {}
                 return (
-                  a && (d.onClick = e._handleClick(n, f)),
+                  o && (d.onClick = e._handleClick(n, f)),
                   i && ((d.onBlur = e._handleBlur(n, f)), (d.onFocus = e._handleActive(n))),
                   c && (d.onMouseMove = e._handleMouseMove(n, f)),
                   s && ((d.onMouseEnter = e._handleMouseEnter(n)), (d.onMouseLeave = e._handleMouseLeave(n))),
                   u && ((d.onTouchStart = e._handleTouchStart(n)), (d.onTouchEnd = e._handleTouchEnd(n, f))),
-                  w.createElement(
+                  g.a.createElement(
                     'div',
-                    o()({}, d, {
+                    a()({}, d, {
                       ref: function (t) {
                         if (!n) throw new Error('Observer requires an `interactionKey` prop for storing refs.')
                         e._interactionWatcherRefs[n] = t
@@ -698,69 +709,69 @@
               }),
               y()(l()(e), '_handleMouseEnter', function (t) {
                 return function () {
-                  e.setState(j(k, t))
+                  e.setState(_(C, t))
                 }
               }),
               y()(l()(e), '_handleMouseLeave', function (t) {
                 return function () {
-                  e.setState(_(k, t))
+                  e.setState(L(C, t))
                 }
               }),
               y()(l()(e), '_handleTouchStart', function (t) {
                 return function () {
-                  e.setState(j(C, t))
+                  e.setState(_(j, t))
                 }
               }),
               y()(l()(e), '_handleTouchEnd', function (t, r) {
                 return function () {
-                  var n = C
+                  var n = j
                   clearTimeout(e._timeoutCollection[n][t]),
                     r
                       ? (e._timeoutCollection[n][t] = setTimeout(function () {
-                          return e.setState(_(n, t))
+                          return e.setState(L(n, t))
                         }, r))
-                      : e.setState(_(n, t))
+                      : e.setState(L(n, t))
                 }
               }),
               y()(l()(e), '_handleMouseMove', function (t, r) {
                 return function () {
-                  var n = P
-                  e.state.observed[n].has(t) || e.setState(j(n, t)),
+                  var n = k
+                  e.state.observed[n].has(t) || e.setState(_(n, t)),
                     clearTimeout(e._timeoutCollection[n][t]),
                     (e._timeoutCollection[n][t] = setTimeout(function () {
-                      return e.setState(_(n, t))
+                      return e.setState(L(n, t))
                     }, r))
                 }
               }),
               y()(l()(e), '_handleClick', function (t, r) {
                 return function () {
-                  var n = O
-                  e.state.observed[n].has(t) || e.setState(j(n, t)),
+                  var n = E
+                  e.state.observed[n].has(t) || e.setState(_(n, t)),
                     clearTimeout(e._timeoutCollection[n][t]),
                     (e._timeoutCollection[n][t] = setTimeout(function () {
-                      return e.setState(_(n, t))
+                      return e.setState(L(n, t))
                     }, r))
                 }
               }),
               y()(l()(e), '_handleActive', function (t) {
                 return function () {
-                  var r = E
+                  var r = P
                   clearTimeout(e._timeoutCollection[r][t])
                   var n = e.hasActiveInteractionWatcherChildren()
-                  g.a.hadKeyboardEvent && n && e.setState(j(r, t))
+                  S.a.hadKeyboardEvent && n && e.setState(_(r, t))
                 }
               }),
               y()(l()(e), '_handleBlur', function (t, r) {
                 return function () {
-                  var n = E
+                  var n = P
                   clearTimeout(e._timeoutCollection[n][t]),
                     e.state.observed[n].has(t) && (e._timeoutCollection[n][t] = setTimeout(e._handleFocusReset(t), r))
                 }
               }),
               y()(l()(e), '_handleFocusReset', function (t) {
                 return function () {
-                  var r = E
-                  e.setState(_(r, t)), clearTimeout(e._timeoutCollection[r][t])
+                  var r = P
+                  e.setState(L(r, t)), clearTimeout(e._timeoutCollection[r][t])
                 }
               }),
               e
@@ -786,18 +797,18 @@
                   var e = this.props.children
                   if (!e) throw new Error('component requires children prop.')
                   var t = this._renderObserver
-                  return w.createElement(
+                  return g.a.createElement(
                     r.ObserverContext.Provider,
                     { value: t },
-                    w.createElement(r.Context.Provider, { value: this.getContext() }, e),
+                    g.a.createElement(r.Context.Provider, { value: this.getContext() }, e),
                   )
                 },
               },
             ]),
             r
           )
-        })(w.Component)
-      y()(T, 'Context', L), y()(T, 'ObserverContext', x)
+        })(g.a.Component)
+      y()(R, 'Context', x), y()(R, 'ObserverContext', T)
     },
     kCRK: function (e, t, r) {
       'use strict'
@@ -805,10 +816,10 @@
         return n
       }),
         r.d(t, 'd', function () {
-          return o
+          return a
         }),
         r.d(t, 'a', function () {
-          return a
+          return o
         }),
         r.d(t, 'c', function () {
           return i
@@ -817,8 +828,8 @@
           return c
         })
       var n = { VISIT: 'url', WATCH: 'watch' },
-        o = { watch_now: 'watch_now', visit_site: 'visit_site', shop: 'shop', see_more: 'see_more', go_to: 'go_to' },
-        a = { MEDIA: 'media_entity', GIF: 'gif', VMAP: 'vmap', BROADCAST: 'broadcast' },
+        a = { watch_now: 'watch_now', visit_site: 'visit_site', shop: 'shop', see_more: 'see_more', go_to: 'go_to' },
+        o = { MEDIA: 'media_entity', GIF: 'gif', VMAP: 'vmap', BROADCAST: 'broadcast' },
         i = { AD: 'ad', CONTENT: 'content' },
         c = { BROADCAST: 'broadcast', DM: 'dm', TWEET: 'tweet' }
     },
@@ -826,12 +837,13 @@
       'use strict'
       r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
       var n = r('KEM+'),
-        o = r.n(n),
-        a = r('ERkP'),
-        i = r('Lsrn'),
-        c = r('shC7'),
-        s = r('k/Ka')
-      function u(e, t) {
+        a = r.n(n),
+        o = r('ERkP'),
+        i = r.n(o),
+        c = r('Lsrn'),
+        s = r('shC7'),
+        u = r('k/Ka')
+      function l(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -843,77 +855,78 @@
         }
         return r
       }
-      function l(e) {
+      function f(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? u(Object(r), !0).forEach(function (t) {
-                o()(e, t, r[t])
+            ? l(Object(r), !0).forEach(function (t) {
+                a()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : u(Object(r)).forEach(function (t) {
+            : l(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var f = function () {
+      var d = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(s.a)(
+        return Object(u.a)(
           'svg',
-          l(
-            l({}, e),
+          f(
+            f({}, e),
             {},
             {
               accessibilityHidden: void 0 === e.accessibilityLabel,
-              style: [i.a.root, e.style, c.a.getConstants().isRTL && i.a.iconRTL],
+              style: [c.a.root, e.style, s.a.getConstants().isRTL && c.a.iconRTL],
               viewBox: '0 0 24 24',
             },
           ),
-          a.createElement(
+          i.a.createElement(
             'g',
             null,
-            a.createElement('path', {
+            i.a.createElement('path', {
               d: 'M3.983 13.605c0 .414.336.75.75.75H8.57l-6.357 6.357c-.297.297-.297.777 0 1.074s.777.297 1.074 0l6.357-6.357v3.828c0 .414.336.75.75.75s.75-.336.75-.75v-5.653c0-.414-.336-.75-.75-.75h-5.66c-.415 0-.75.336-.75.75zm16.73-11.392L14.355 8.57V4.74c0-.413-.336-.75-.75-.75s-.75.337-.75.75v5.654c0 .414.336.75.75.75h5.653c.414 0 .75-.336.75-.75s-.336-.75-.75-.75H15.43l6.357-6.357c.148-.148.223-.343.223-.537s-.074-.39-.223-.537c-.297-.297-.777-.297-1.074 0z',
             }),
           ),
         )
       }
-      ;(f.metadata = { width: 24, height: 24 }), (t.a = f)
+      ;(d.metadata = { width: 24, height: 24 }), (t.a = d)
     },
     ub6r: function (e, t, r) {
       'use strict'
       r.d(t, 'a', function () {
-        return tt
+        return rt
       })
       var n = r('ERkP'),
+        a = r.n(n),
         o = (r('OZaJ'), r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('VrFO')),
-        a = r.n(o),
-        i = r('Y9Ll'),
-        c = r.n(i),
-        s = r('1Pcy'),
-        u = r.n(s),
-        l = r('5Yy7'),
-        f = r.n(l),
-        d = r('N+ot'),
-        p = r.n(d),
-        b = r('AuHH'),
-        h = r.n(b),
-        m = r('KEM+'),
-        v = r.n(m),
-        y = (r('2G9S'), r('7x/C'), r('DZ+c'), r('hBvt'), r('Zl35')),
-        w = r('IE/l'),
-        g = r('N2PN'),
-        S = r('dPHj'),
-        O = r('kCRK'),
-        E = r('3XMw'),
-        P = r.n(E),
-        k = r('hhMf'),
-        C = r('Q0n6'),
-        j = r('9RkS'),
-        _ = r('+d3d')
-      function L(e) {
+        i = r.n(o),
+        c = r('Y9Ll'),
+        s = r.n(c),
+        u = r('1Pcy'),
+        l = r.n(u),
+        f = r('5Yy7'),
+        d = r.n(f),
+        p = r('N+ot'),
+        b = r.n(p),
+        h = r('AuHH'),
+        m = r.n(h),
+        v = r('KEM+'),
+        y = r.n(v),
+        w = (r('2G9S'), r('7x/C'), r('DZ+c'), r('hBvt'), r('Zl35')),
+        g = r('IE/l'),
+        S = r('N2PN'),
+        O = r('dPHj'),
+        E = r('kCRK'),
+        P = r('3XMw'),
+        k = r.n(P),
+        C = r('hhMf'),
+        j = r('Q0n6'),
+        _ = r('9RkS'),
+        L = r('+d3d')
+      function x(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -926,45 +939,45 @@
         })()
         return function () {
           var r,
-            n = h()(e)
+            n = m()(e)
           if (t) {
-            var o = h()(this).constructor
-            r = Reflect.construct(n, arguments, o)
+            var a = m()(this).constructor
+            r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
-          return p()(this, r)
+          return b()(this, r)
         }
       }
-      var x = P.a.f06f2e53,
-        T = (function (e) {
-          f()(r, e)
-          var t = L(r)
+      var T = k.a.f06f2e53,
+        R = (function (e) {
+          d()(r, e)
+          var t = x(r)
           function r(e) {
             var n
             return (
-              a()(this, r),
+              i()(this, r),
               (n = t.call(this, e)),
-              v()(u()(n), '_handleChange', function (e) {
+              y()(l()(n), '_handleChange', function (e) {
                 n.setState({ scrubTo: e }), (n.scheduledSeekTargetSec = e), n._throttledPlayerSeek()
               }),
-              v()(
-                u()(n),
+              y()(
+                l()(n),
                 '_throttledPlayerSeek',
-                Object(_.a)(
+                Object(L.a)(
                   function () {
-                    var e = u()(n).scheduledSeekTargetSec,
+                    var e = l()(n).scheduledSeekTargetSec,
                       t = n.props,
                       r = t.duration,
-                      o = t.playerApi
+                      a = t.playerApi
                     if (r) {
-                      var a = e / r
-                      o.scrubToFraction(a)
+                      var o = e / r
+                      a.scrubToFraction(o)
                     }
                   },
                   50,
                   { leading: !0, trailing: !0 },
                 ),
               ),
-              v()(u()(n), '_handleActive', function (e) {
+              y()(l()(n), '_handleActive', function (e) {
                 return (
                   !n.state.isScrubbing && e && document.addEventListener('click', n._handleCaptureClick, !0),
                   e || n._throttledPlayerSeek.flush(),
@@ -972,7 +985,7 @@
                   n.setState({ isScrubbing: e })
                 )
               }),
-              v()(u()(n), '_handleCaptureClick', function (e) {
+              y()(l()(n), '_handleCaptureClick', function (e) {
                 e.preventDefault(),
                   e.stopPropagation(),
                   document.removeEventListener('click', n._handleCaptureClick, !0)
@@ -982,30 +995,30 @@
             )
           }
           return (
-            c()(r, [
+            s()(r, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.accessibilityLabel,
                     r = e.currentTime,
-                    o = e.duration,
-                    a = this.state.isScrubbing || this.props.isSeeking ? this.state.scrubTo : r
-                  if ('number' == typeof a && 'number' == typeof o && o > 0) {
-                    var i = Object(C.b)(a),
-                      c = Object(C.b)(o)
-                    return n.createElement(j.a, {
+                    n = e.duration,
+                    o = this.state.isScrubbing || this.props.isSeeking ? this.state.scrubTo : r
+                  if ('number' == typeof o && 'number' == typeof n && n > 0) {
+                    var i = Object(j.b)(o),
+                      c = Object(j.b)(n)
+                    return a.a.createElement(_.a, {
                       accessibilityLabel: t,
-                      accessibilityLabelValueText: x({ currentTime: i, durationTime: c }),
+                      accessibilityLabelValueText: T({ currentTime: i, durationTime: c }),
                       color: 'white',
                       keepLTR: !0,
                       keyboardStep: 5,
-                      max: o,
+                      max: n,
                       min: 0,
                       onActive: this._handleActive,
                       onChange: this._handleChange,
                       step: 'any',
-                      value: a,
+                      value: o,
                       withHidingThumb: !0,
                     })
                   }
@@ -1015,15 +1028,15 @@
             ]),
             r
           )
-        })(n.PureComponent),
-        R = r('97Jx'),
-        B = r.n(R),
-        M = r('/yvb'),
-        D = r('BVo1'),
-        A = r('w05h'),
-        H = r('+/1j'),
-        z = r('MWbm')
-      function W(e) {
+        })(a.a.PureComponent),
+        B = r('97Jx'),
+        M = r.n(B),
+        D = r('/yvb'),
+        A = r('BVo1'),
+        H = r('w05h'),
+        z = r('+/1j'),
+        W = r('MWbm')
+      function F(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -1036,45 +1049,45 @@
         })()
         return function () {
           var r,
-            n = h()(e)
+            n = m()(e)
           if (t) {
-            var o = h()(this).constructor
-            r = Reflect.construct(n, arguments, o)
+            var a = m()(this).constructor
+            r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
-          return p()(this, r)
+          return b()(this, r)
         }
       }
-      var F = (function (e) {
-        f()(r, e)
-        var t = W(r)
+      var I = (function (e) {
+        d()(r, e)
+        var t = F(r)
         function r() {
           var e
-          a()(this, r)
-          for (var n = arguments.length, o = new Array(n), i = 0; i < n; i++) o[i] = arguments[i]
+          i()(this, r)
+          for (var n = arguments.length, a = new Array(n), o = 0; o < n; o++) a[o] = arguments[o]
           return (
-            (e = t.call.apply(t, [this].concat(o))),
-            v()(u()(e), '_handleSkipPress', function () {
+            (e = t.call.apply(t, [this].concat(a))),
+            y()(l()(e), '_handleSkipPress', function () {
               e.props.playerApi.nextTrack()
             }),
             e
           )
         }
         return (
-          c()(r, [
+          s()(r, [
             {
               key: 'render',
               value: function () {
                 if (!this.props.playerState) return null
-                var e = Object(C.e)(this.props.playerState)
-                if (!e || e.durationMs <= this.props.skipThreshold || e.displayType !== O.c.AD) return null
+                var e = Object(j.e)(this.props.playerState)
+                if (!e || e.durationMs <= this.props.skipThreshold || e.displayType !== E.c.AD) return null
                 var t = Math.ceil((5e3 - e.currentTimeMs) / 1e3),
                   r = t > 0,
-                  o = r ? Object(A.m)({ seconds: Object(A.q)(t) }) : A.l,
-                  a = r ? Object(A.n)({ seconds: Object(A.p)(t) }) : A.k
-                return n.createElement(
-                  M.a,
+                  n = r ? Object(H.m)({ seconds: Object(H.q)(t) }) : H.l,
+                  o = r ? Object(H.n)({ seconds: Object(H.p)(t) }) : H.k
+                return a.a.createElement(
+                  D.a,
                   {
-                    accessibilityLabel: o,
+                    accessibilityLabel: n,
                     disabled: r,
                     onPress: r ? void 0 : this._handleSkipPress,
                     pointerEvents: 'auto',
@@ -1082,97 +1095,97 @@
                     testID: 'ControlBar-skipButton',
                     type: 'onMediaDominantColorFilled',
                   },
-                  n.createElement(H.a, { style: D.f }, a),
+                  a.a.createElement(z.a, { style: A.f }, o),
                 )
               },
             },
           ]),
           r
         )
-      })(n.PureComponent)
-      v()(F, 'defaultProps', { skipThreshold: 7e3 })
-      var I = n.memo(function (e) {
+      })(a.a.PureComponent)
+      y()(I, 'defaultProps', { skipThreshold: 7e3 })
+      var N = a.a.memo(function (e) {
           return e.useRefactoredLayout
-            ? n.createElement(
-                z.a,
-                { pointerEvents: 'none', style: D.b },
-                n.createElement(y.a, { periodic: !0 }, function (t) {
+            ? a.a.createElement(
+                W.a,
+                { pointerEvents: 'none', style: A.b },
+                a.a.createElement(w.a, { periodic: !0 }, function (t) {
                   var r = t.playerApi,
-                    o = t.playerState
-                  return n.createElement(F, B()({}, e, { playerApi: r, playerState: o }))
+                    n = t.playerState
+                  return a.a.createElement(I, M()({}, e, { playerApi: r, playerState: n }))
                 }),
               )
-            : n.createElement(
-                z.a,
-                { pointerEvents: 'none', style: D.e },
-                n.createElement(
-                  z.a,
-                  { style: D.d },
-                  n.createElement(
-                    z.a,
-                    { style: D.c },
-                    n.createElement(z.a, { style: D.a }),
-                    n.createElement(
-                      z.a,
-                      { style: D.b },
-                      n.createElement(y.a, { periodic: !0 }, function (t) {
+            : a.a.createElement(
+                W.a,
+                { pointerEvents: 'none', style: A.e },
+                a.a.createElement(
+                  W.a,
+                  { style: A.d },
+                  a.a.createElement(
+                    W.a,
+                    { style: A.c },
+                    a.a.createElement(W.a, { style: A.a }),
+                    a.a.createElement(
+                      W.a,
+                      { style: A.b },
+                      a.a.createElement(w.a, { periodic: !0 }, function (t) {
                         var r = t.playerApi,
-                          o = t.playerState
-                        return n.createElement(F, B()({}, e, { playerApi: r, playerState: o }))
+                          n = t.playerState
+                        return a.a.createElement(I, M()({}, e, { playerApi: r, playerState: n }))
                       }),
                     ),
                   ),
                 ),
               )
         }),
-        N = r('rHpw'),
-        V = r('+aTU'),
-        K = r('aITJ'),
-        U = r('jV+4'),
-        G = r('m3Bd'),
-        X = r.n(G),
-        q = r('ddV6'),
-        Y = r.n(q),
-        Z = r('M2x3'),
-        J = (r('lZm3'), r('uFXj'), r('nBUg')),
-        Q = r('3dyc'),
-        $ = r('t62R'),
-        ee = r('Y3cQ'),
-        te = r('efqG'),
-        re = P.a.h9b3104d,
-        ne = P.a.ccc97152,
-        oe = P.a.e8b5757c,
-        ae = P.a.e7e954de,
-        ie = P.a.g07ffe66,
-        ce = P.a.d8bede9d,
-        se = P.a.j41845c7,
-        ue = P.a.e9eeed9e,
-        le = P.a.fe45dc83,
-        fe = P.a.e791190a,
-        de = P.a.e23b20af,
-        pe = { label: ce, value: '1' },
-        be = [
-          { label: oe, value: '0.25' },
-          { label: ae, value: '0.5' },
-          { label: ie, value: '0.75' },
-        ],
+        V = r('rHpw'),
+        K = r('+aTU'),
+        U = r('aITJ'),
+        G = r('jV+4'),
+        X = r('m3Bd'),
+        q = r.n(X),
+        Y = r('ddV6'),
+        Z = r.n(Y),
+        J = r('M2x3'),
+        Q = (r('lZm3'), r('uFXj'), r('nBUg')),
+        $ = r('3dyc'),
+        ee = r('t62R'),
+        te = r('Y3cQ'),
+        re = r('efqG'),
+        ne = k.a.h9b3104d,
+        ae = k.a.ccc97152,
+        oe = k.a.e8b5757c,
+        ie = k.a.e7e954de,
+        ce = k.a.g07ffe66,
+        se = k.a.d8bede9d,
+        ue = k.a.j41845c7,
+        le = k.a.e9eeed9e,
+        fe = k.a.fe45dc83,
+        de = k.a.e791190a,
+        pe = k.a.e23b20af,
+        be = { label: se, value: '1' },
         he = [
-          { label: se, value: '1.25' },
-          { label: ue, value: '1.5' },
-          { label: le, value: '1.75' },
-          { label: fe, value: '2' },
+          { label: oe, value: '0.25' },
+          { label: ie, value: '0.5' },
+          { label: ce, value: '0.75' },
+        ],
+        me = [
+          { label: ue, value: '1.25' },
+          { label: le, value: '1.5' },
+          { label: fe, value: '1.75' },
+          { label: de, value: '2' },
         ]
-      function me(e) {
+      function ve(e) {
         switch (e) {
           case 'fast':
-            return [pe].concat(he)
+            return [be].concat(me)
           case 'slow':
-            return [].concat(be, [pe])
+            return [].concat(he, [be])
           default:
-            return [].concat(be, [pe], he)
+            return [].concat(he, [be], me)
         }
       }
-      var ve = N.a.create(function (e) {
+      var ye = V.a.create(function (e) {
           return {
             root: {
               flexDirection: 'column',
@@ -1195,47 +1208,47 @@
             cancelButton: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space16 },
           }
         }),
-        ye = function (e) {
+        we = function (e) {
           var t,
             r = null === (t = e.playerState.playbackRate) || void 0 === t ? void 0 : t.toString(),
-            o = e.children,
-            a = e.onDismiss,
+            n = e.children,
+            o = e.onDismiss,
             i = e.showVideoSettings,
             c = e.playerState,
             s = c.features,
             u = c.fullscreen.isFullscreen,
             l = null == s ? void 0 : s.web_video_playback_rate_enabled,
-            f = i ? Q.b.forceVisible : Q.b.forceHidden,
-            d = J.b.useProps().isDMDrawer
+            f = i ? $.b.forceVisible : $.b.forceHidden,
+            d = Q.b.useProps().isDMDrawer
           function p(t, r) {
-            e.playerApi.setPlaybackRate(parseFloat(r)), a()
+            e.playerApi.setPlaybackRate(parseFloat(r)), o()
           }
-          return n.createElement(
-            te.a,
+          return a.a.createElement(
+            re.a,
             {
-              onDismiss: a,
+              onDismiss: o,
               renderContent: function (e, t) {
-                var o = 'sheet' === t
-                return n.createElement(
-                  z.a,
-                  { accessibilityRole: 'dialog', style: ve.root },
-                  n.createElement(
-                    z.a,
-                    { style: ve.title },
-                    n.createElement($.b, { size: 'headline1', weight: 'bold' }, ne),
+                var n = 'sheet' === t
+                return a.a.createElement(
+                  W.a,
+                  { accessibilityRole: 'dialog', style: ye.root },
+                  a.a.createElement(
+                    W.a,
+                    { style: ye.title },
+                    a.a.createElement(ee.b, { size: 'headline1', weight: 'bold' }, ae),
                   ),
-                  n.createElement(ee.a, {
-                    accessibilityLabel: ne,
+                  a.a.createElement(te.a, {
+                    accessibilityLabel: ae,
                     name: 'playback_rate',
                     onChange: p,
-                    options: me(l),
+                    options: ve(l),
                     value: r,
                   }),
-                  o
-                    ? n.createElement(
-                        M.a,
-                        { onPress: a, style: ve.cancelButton, testID: 'Cancel', type: 'primaryOutlined' },
-                        de,
+                  n
+                    ? a.a.createElement(
+                        D.a,
+                        { onPress: o, style: ye.cancelButton, testID: 'Cancel', type: 'primaryOutlined' },
+                        pe,
                       )
                     : null,
                 )
@@ -1245,63 +1258,63 @@
               withFixedPosition: u || d(),
               withoutLayer: u,
             },
-            o,
+            n,
           )
         },
-        we = { action: 'click', element: 'video_settings' }
-      function ge(e) {
-        var t = n.useState({ showVideoSettings: !1, resumePlaybackOnDismiss: !1 }),
-          r = Y()(t, 2),
-          o = r[0],
-          a = r[1],
+        ge = { action: 'click', element: 'video_settings' }
+      function Se(e) {
+        var t = a.a.useState({ showVideoSettings: !1, resumePlaybackOnDismiss: !1 }),
+          r = Z()(t, 2),
+          n = r[0],
+          o = r[1],
           i = e.isNarrow,
           c = e.playerApi,
           s = e.playerState,
-          u = X()(e, ['isNarrow', 'playerApi', 'playerState']),
-          l = Object(C.e)(s)
+          u = q()(e, ['isNarrow', 'playerApi', 'playerState']),
+          l = Object(j.e)(s)
         return l && l.playbackRateSupported
-          ? n.createElement(
-              ye,
+          ? a.a.createElement(
+              we,
               {
                 onDismiss: function () {
-                  a({ showVideoSettings: !1 })
+                  o({ showVideoSettings: !1 })
                 },
                 playerApi: c,
                 playerState: s,
-                showVideoSettings: o.showVideoSettings,
+                showVideoSettings: n.showVideoSettings,
               },
-              n.createElement(
-                g.a,
-                B()({}, u, {
-                  accessibilityLabel: re,
-                  icon: n.createElement(Z.a, null),
+              a.a.createElement(
+                S.a,
+                M()({}, u, {
+                  accessibilityLabel: ne,
+                  icon: a.a.createElement(J.a, null),
                   onPress: function () {
-                    a({ showVideoSettings: !0 })
+                    o({ showVideoSettings: !0 })
                   },
-                  scribeNamespace: we,
+                  scribeNamespace: ge,
                   size: i ? 'xSmall' : 'medium',
                 }),
               ),
             )
           : null
       }
-      var Se,
-        Oe = r('kRXa'),
-        Ee = (r('yH/f'), Object.freeze({ wide: 'wide', narrow: 'narrow', veryNarrow: 'veryNarrow' })),
-        Pe = Object.freeze(
-          ((Se = {}), v()(Se, Ee.wide, 500), v()(Se, Ee.narrow, 285), v()(Se, Ee.veryNarrow, 200), Se),
+      var Oe,
+        Ee = r('kRXa'),
+        Pe = (r('yH/f'), Object.freeze({ wide: 'wide', narrow: 'narrow', veryNarrow: 'veryNarrow' })),
+        ke = Object.freeze(
+          ((Oe = {}), y()(Oe, Pe.wide, 500), y()(Oe, Pe.narrow, 285), y()(Oe, Pe.veryNarrow, 200), Oe),
         ),
-        ke = r('wtsM'),
-        Ce = r('5Ixf'),
-        je = r('RUwF'),
-        _e = r('AtEG'),
-        Le = r('NnQ9'),
-        xe = r('p6DB'),
-        Te = r('pHub'),
-        Re = r('8A5z'),
-        Be = r('Lsrn'),
-        Me = r('k/Ka')
-      function De(e, t) {
+        Ce = r('wtsM'),
+        je = r('5Ixf'),
+        _e = r('RUwF'),
+        Le = r('AtEG'),
+        xe = r('NnQ9'),
+        Te = r('p6DB'),
+        Re = r('pHub'),
+        Be = r('8A5z'),
+        Me = r('Lsrn'),
+        De = r('k/Ka')
+      function Ae(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -1313,42 +1326,42 @@
         }
         return r
       }
-      function Ae(e) {
+      function He(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? De(Object(r), !0).forEach(function (t) {
-                v()(e, t, r[t])
+            ? Ae(Object(r), !0).forEach(function (t) {
+                y()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : De(Object(r)).forEach(function (t) {
+            : Ae(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var He = function () {
+      var ze = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(Me.a)(
+        return Object(De.a)(
           'svg',
-          Ae(
-            Ae({}, e),
+          He(
+            He({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [Be.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [Me.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          n.createElement(
+          a.a.createElement(
             'g',
             null,
-            n.createElement('path', {
+            a.a.createElement('path', {
               d: 'M12.13 1.5c-4.684 0-8.387 4.316-8.387 9.055 0 4.95 6.51 11.945 8.386 11.945 1.642 0 8.152-7.383 8.152-12.334 0-4.74-3.702-8.666-8.153-8.666zm.026 13.17c-2.924 0-5.178-2.232-5.178-4.84 0-1.217.402-2.313 1.08-3.178v.01c0 1.08.884 1.958 1.976 1.958s1.977-.877 1.977-1.958c0-.8-.486-1.488-1.182-1.79.422-.106.865-.168 1.327-.168 2.636 0 4.89 2.23 4.89 5.126 0 2.61-2.252 4.84-4.89 4.84z',
             }),
           ),
         )
       }
-      He.metadata = { width: 24, height: 24 }
-      var ze = He
-      function We(e, t) {
+      ze.metadata = { width: 24, height: 24 }
+      var We = ze
+      function Fe(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -1360,22 +1373,22 @@
         }
         return r
       }
-      function Fe(e) {
+      function Ie(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? We(Object(r), !0).forEach(function (t) {
-                v()(e, t, r[t])
+            ? Fe(Object(r), !0).forEach(function (t) {
+                y()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : We(Object(r)).forEach(function (t) {
+            : Fe(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      function Ie(e) {
+      function Ne(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -1388,183 +1401,183 @@
         })()
         return function () {
           var r,
-            n = h()(e)
+            n = m()(e)
           if (t) {
-            var o = h()(this).constructor
-            r = Reflect.construct(n, arguments, o)
+            var a = m()(this).constructor
+            r = Reflect.construct(n, arguments, a)
           } else r = n.apply(this, arguments)
-          return p()(this, r)
+          return b()(this, r)
         }
       }
-      var Ne = /^https?:\/\/(?:www.)?(?:periscope|pscp).tv/,
-        Ve = P.a.j25d7cc9,
-        Ke = P.a.a858b25b,
-        Ue = P.a.faf9f483,
-        Ge = P.a.ae2ea9e6,
-        Xe = P.a.hea01797,
-        qe = P.a.f8a09386,
-        Ye = 'ControlBar-',
-        Ze = {
-          CAPTIONS: ''.concat(Ye, 'Captions'),
-          PERISCOPE: ''.concat(Ye, 'Periscope'),
-          FULLSCREEN: ''.concat(Ye, 'Fullscreen'),
-          SETTING: ''.concat(Ye, 'Setting'),
+      var Ve = /^https?:\/\/(?:www.)?(?:periscope|pscp).tv/,
+        Ke = k.a.j25d7cc9,
+        Ue = k.a.a858b25b,
+        Ge = k.a.faf9f483,
+        Xe = k.a.ae2ea9e6,
+        qe = k.a.hea01797,
+        Ye = k.a.f8a09386,
+        Ze = 'ControlBar-',
+        Je = {
+          CAPTIONS: ''.concat(Ze, 'Captions'),
+          PERISCOPE: ''.concat(Ze, 'Periscope'),
+          FULLSCREEN: ''.concat(Ze, 'Fullscreen'),
+          SETTING: ''.concat(Ze, 'Setting'),
         },
-        Je = function (e) {
-          return e === Ee.narrow || e === Ee.veryNarrow
+        Qe = function (e) {
+          return e === Pe.narrow || e === Pe.veryNarrow
         },
-        Qe = (function (e) {
-          f()(r, e)
-          var t = Ie(r)
+        $e = (function (e) {
+          d()(r, e)
+          var t = Ne(r)
           function r(e) {
-            var o
+            var n
             if (
-              (a()(this, r),
-              (o = t.call(this, e)),
-              v()(u()(o), 'state', { currentBreakpoint: Ee.wide, showScrubber: !0, scrubTime: 0 }),
-              v()(u()(o), '_parentRef', n.createRef()),
-              v()(u()(o), '_renderActionButton', function (e, t) {
+              (i()(this, r),
+              (n = t.call(this, e)),
+              y()(l()(n), 'state', { currentBreakpoint: Pe.wide, showScrubber: !0, scrubTime: 0 }),
+              y()(l()(n), '_parentRef', a.a.createRef()),
+              y()(l()(n), '_renderActionButton', function (e, t) {
                 var r = t.controls,
-                  a = t.isPlaying,
+                  o = t.isPlaying,
                   i = e.pause,
                   c = e.play,
                   s = e.replay,
-                  u = o.state.currentBreakpoint,
-                  l = Object(C.e)(t),
-                  f = Je(u) ? 'xSmall' : 'medium'
+                  u = n.state.currentBreakpoint,
+                  l = Object(j.e)(t),
+                  f = Qe(u) ? 'xSmall' : 'medium'
                 return !l || l.isLive
                   ? null
-                  : a || (r && 'PLAY_REQUESTED' === r.playState)
-                  ? n.createElement(g.b, {
-                      accessibilityLabel: ke.d,
+                  : o || (r && 'PLAY_REQUESTED' === r.playState)
+                  ? a.a.createElement(S.b, {
+                      accessibilityLabel: Ce.d,
                       hoverLabelPreferredHorizontalOrientation: 'end',
-                      hoverLabelWithExtraSpace: o.props.showScrubber,
-                      icon: n.createElement(Ce.a, null),
+                      hoverLabelWithExtraSpace: n.props.showScrubber,
+                      icon: a.a.createElement(je.a, null),
                       onPress: i,
                       size: f,
                     })
                   : r.isReplayButtonShown
-                  ? n.createElement(g.b, {
-                      accessibilityLabel: ke.f,
+                  ? a.a.createElement(S.b, {
+                      accessibilityLabel: Ce.f,
                       hoverLabelPreferredHorizontalOrientation: 'end',
-                      hoverLabelWithExtraSpace: o.props.showScrubber,
-                      icon: n.createElement(je.a, null),
+                      hoverLabelWithExtraSpace: n.props.showScrubber,
+                      icon: a.a.createElement(_e.a, null),
                       onPress: s,
                       size: f,
                     })
-                  : n.createElement(g.b, {
-                      accessibilityLabel: ke.e,
+                  : a.a.createElement(S.b, {
+                      accessibilityLabel: Ce.e,
                       hoverLabelPreferredHorizontalOrientation: 'end',
-                      hoverLabelWithExtraSpace: o.props.showScrubber,
-                      icon: n.createElement(_e.a, null),
+                      hoverLabelWithExtraSpace: n.props.showScrubber,
+                      icon: a.a.createElement(Le.a, null),
                       onPress: c,
                       size: f,
                     })
               }),
-              v()(u()(o), '_renderViewCount', function (e) {
-                var t = Object(C.e)(e)
+              y()(l()(n), '_renderViewCount', function (e) {
+                var t = Object(j.e)(e)
                 if (!t) return null
-                var r = Object(C.a)(t)
-                return r ? n.createElement(S.a, null, r) : null
+                var r = Object(j.a)(t)
+                return r ? a.a.createElement(O.a, null, r) : null
               }),
-              v()(u()(o), '_renderPublisherAttribution', function (e) {
-                var t = o.props,
+              y()(l()(n), '_renderPublisherAttribution', function (e) {
+                var t = n.props,
                   r = t.publisherDisplayName,
-                  a = t.publisherProfileImageUrl,
-                  i = Object(C.e)(e)
-                return r && a && i
-                  ? n.createElement(
-                      z.a,
-                      { style: D.g.flex },
-                      n.createElement(
-                        z.a,
-                        { style: [D.g.withMargin, D.g.flex] },
-                        n.createElement(U.a, { color: 'white', name: r, profileImageUrl: a }),
+                  o = t.publisherProfileImageUrl,
+                  i = Object(j.e)(e)
+                return r && o && i
+                  ? a.a.createElement(
+                      W.a,
+                      { style: A.g.flex },
+                      a.a.createElement(
+                        W.a,
+                        { style: [A.g.withMargin, A.g.flex] },
+                        a.a.createElement(G.a, { color: 'white', name: r, profileImageUrl: o }),
                       ),
                     )
                   : null
               }),
-              v()(u()(o), '_renderMiddot', function (e) {
-                var t = o.props,
+              y()(l()(n), '_renderMiddot', function (e) {
+                var t = n.props,
                   r = t.publisherDisplayName,
-                  a = t.publisherProfileImageUrl,
-                  i = Object(C.e)(e)
-                return i && r && a && (i.viewCount || i.viewerCount) ? n.createElement(S.a, null, '·') : null
+                  o = t.publisherProfileImageUrl,
+                  i = Object(j.e)(e)
+                return i && r && o && (i.viewCount || i.viewerCount) ? a.a.createElement(O.a, null, '·') : null
               }),
-              v()(u()(o), '_renderAdBadge', function (e) {
-                var t = Object(C.e)(e),
-                  r = o.state.currentBreakpoint
-                if (t && t.displayType === O.c.AD) {
-                  var a = t.advertiserName
-                  return n.createElement(
-                    S.a,
-                    { style: Je(r) && { fontSize: N.a.theme.fontSizes.subtext2 } },
-                    a ? Ge({ advertiserName: a }) : Ue,
+              y()(l()(n), '_renderAdBadge', function (e) {
+                var t = Object(j.e)(e),
+                  r = n.state.currentBreakpoint
+                if (t && t.displayType === E.c.AD) {
+                  var o = t.advertiserName
+                  return a.a.createElement(
+                    O.a,
+                    { style: Qe(r) && { fontSize: V.a.theme.fontSizes.subtext2 } },
+                    o ? Xe({ advertiserName: o }) : Ge,
                   )
                 }
                 return null
               }),
-              v()(u()(o), '_renderFullScreenButton', function (e, t) {
-                var r = o.props.fullscreenAdsDisabledOnIOS,
-                  a = Object(C.e)(t),
-                  i = (null == a ? void 0 : a.displayType) === O.c.AD && K.b.isIOS(),
+              y()(l()(n), '_renderFullScreenButton', function (e, t) {
+                var r = n.props.fullscreenAdsDisabledOnIOS,
+                  o = Object(j.e)(t),
+                  i = (null == o ? void 0 : o.displayType) === E.c.AD && U.b.isIOS(),
                   c = t.fullscreen,
-                  s = o.state.currentBreakpoint,
-                  u = o._fullScreenIcon,
-                  l = Je(s) ? 'xSmall' : 'medium'
+                  s = n.state.currentBreakpoint,
+                  u = n._fullScreenIcon,
+                  l = Qe(s) ? 'xSmall' : 'medium'
                 return r && i
                   ? null
                   : c.isFullscreen
-                  ? n.createElement(g.b, {
-                      accessibilityLabel: ke.b,
+                  ? a.a.createElement(S.b, {
+                      accessibilityLabel: Ce.b,
                       hoverLabelPreferredHorizontalOrientation: 'start',
-                      hoverLabelWithExtraSpace: o.props.showScrubber,
-                      icon: n.createElement(u, { isFullscreen: c.isFullscreen }),
-                      onPress: o._exitFullScreen(e),
+                      hoverLabelWithExtraSpace: n.props.showScrubber,
+                      icon: a.a.createElement(u, { isFullscreen: c.isFullscreen }),
+                      onPress: n._exitFullScreen(e),
                       size: l,
                     })
-                  : n.createElement(g.b, {
-                      accessibilityLabel: ke.a,
+                  : a.a.createElement(S.b, {
+                      accessibilityLabel: Ce.a,
                       hoverLabelPreferredHorizontalOrientation: 'start',
-                      hoverLabelWithExtraSpace: o.props.showScrubber,
-                      icon: n.createElement(u, { isFullscreen: c.isFullscreen }),
-                      onPress: o._requestFullScreen(e),
+                      hoverLabelWithExtraSpace: n.props.showScrubber,
+                      icon: a.a.createElement(u, { isFullscreen: c.isFullscreen }),
+                      onPress: n._requestFullScreen(e),
                       size: l,
                     })
               }),
-              v()(u()(o), '_fullScreenIcon', function (e) {
+              y()(l()(n), '_fullScreenIcon', function (e) {
                 var t = e.isFullscreen,
-                  r = (e.style, et.hidden),
-                  o = et.shown
-                return n.createElement(
-                  n.Fragment,
+                  r = (e.style, tt.hidden),
+                  n = tt.shown
+                return a.a.createElement(
+                  a.a.Fragment,
                   null,
-                  n.createElement(Le.a, { style: t ? r : o }),
-                  n.createElement(xe.a, { style: t ? o : r }),
+                  a.a.createElement(xe.a, { style: t ? r : n }),
+                  a.a.createElement(Te.a, { style: t ? n : r }),
                 )
               }),
-              v()(u()(o), '_requestFullScreen', function (e) {
+              y()(l()(n), '_requestFullScreen', function (e) {
                 return function () {
-                  e.fullScreen(o.props.containerRef)
+                  e.fullScreen(n.props.containerRef)
                 }
               }),
-              v()(u()(o), '_exitFullScreen', function (e) {
+              y()(l()(n), '_exitFullScreen', function (e) {
                 return function () {
                   return e.exitFullScreen()
                 }
               }),
-              v()(u()(o), '_renderScrubber', function (e) {
-                return o.props.showScrubber && o.state.showScrubber
-                  ? n.createElement(
-                      z.a,
-                      { style: D.g.scrubber },
-                      n.createElement(y.a, { periodic: !0 }, function (t) {
+              y()(l()(n), '_renderScrubber', function (e) {
+                return n.props.showScrubber && n.state.showScrubber
+                  ? a.a.createElement(
+                      W.a,
+                      { style: A.g.scrubber },
+                      a.a.createElement(w.a, { periodic: !0 }, function (t) {
                         var r = t.playerState,
-                          o = Object(C.e)(r)
-                        return n.createElement(T, {
-                          accessibilityLabel: Xe,
-                          currentTime: Object(C.g)(o),
-                          duration: Object(C.h)(o),
+                          n = Object(j.e)(r)
+                        return a.a.createElement(R, {
+                          accessibilityLabel: qe,
+                          currentTime: Object(j.g)(n),
+                          duration: Object(j.h)(n),
                           isScrubbing: r.isScrubbing,
                           isSeeking: r.isSeeking,
                           playerApi: e,
@@ -1573,172 +1586,172 @@
                     )
                   : null
               }),
-              v()(u()(o), '_renderVolume', function (e, t) {
+              y()(l()(n), '_renderVolume', function (e, t) {
                 var r = t.isMuted,
-                  a = t.volume,
+                  o = t.volume,
                   i = e.mute,
                   c = e.setVolume,
                   s = e.unmute,
-                  u = o.state,
+                  u = n.state,
                   l = u.containerHeight,
                   f = u.currentBreakpoint,
                   d = r ? s : i,
-                  p = r ? ke.g : ke.c
-                return n.createElement(Oe.a, {
+                  p = r ? Ce.g : Ce.c
+                return a.a.createElement(Ee.a, {
                   accessibilityLabelIcon: p,
-                  accessibilityLabelSlider: ke.h,
+                  accessibilityLabelSlider: Ce.h,
                   containerHeight: l,
                   isMuted: r,
-                  onHideSlider: o._showScrubberHandler(!0),
+                  onHideSlider: n._showScrubberHandler(!0),
                   onMuteToggle: d,
-                  onShowSlider: o._showScrubberHandler(!1),
-                  onSliderChange: o._setVolumePercent(c),
-                  size: Je(f) ? 'xSmall' : 'medium',
-                  volumePercent: 100 * a,
+                  onShowSlider: n._showScrubberHandler(!1),
+                  onSliderChange: n._setVolumePercent(c),
+                  size: Qe(f) ? 'xSmall' : 'medium',
+                  volumePercent: 100 * o,
                 })
               }),
-              v()(u()(o), '_renderCaptionsButton', function (e, t) {
-                var r = Object(C.e)(t)
+              y()(l()(n), '_renderCaptionsButton', function (e, t) {
+                var r = Object(j.e)(t)
                 if (r && r.hasCaptions) {
-                  var a = o.state.currentBreakpoint,
+                  var o = n.state.currentBreakpoint,
                     i = t.areCaptionsShown,
                     c = e.toggleCaptions
-                  return n.createElement(g.b, {
-                    accessibilityLabel: i ? Ve : Ke,
-                    hoverLabelWithExtraSpace: o.props.showScrubber,
-                    icon: i ? n.createElement(Te.a, null) : n.createElement(Re.a, null),
+                  return a.a.createElement(S.b, {
+                    accessibilityLabel: i ? Ke : Ue,
+                    hoverLabelWithExtraSpace: n.props.showScrubber,
+                    icon: i ? a.a.createElement(Re.a, null) : a.a.createElement(Be.a, null),
                     onPress: c,
-                    size: Je(a) ? 'xSmall' : 'medium',
+                    size: Qe(o) ? 'xSmall' : 'medium',
                     testID: 'captions',
                   })
                 }
               }),
-              v()(u()(o), '_renderTimePlayed', function () {
-                return n.createElement(y.a, { periodic: !0 }, function (e) {
+              y()(l()(n), '_renderTimePlayed', function () {
+                return a.a.createElement(w.a, { periodic: !0 }, function (e) {
                   var t = e.playerState,
-                    r = o.state.currentBreakpoint,
-                    a = Object(C.e)(t),
-                    i = Object(C.d)(a),
-                    c = Object(C.f)(a),
+                    r = n.state.currentBreakpoint,
+                    o = Object(j.e)(t),
+                    i = Object(j.d)(o),
+                    c = Object(j.f)(o),
                     s = t.controls,
                     u = t.isSeeking,
                     l = s.scrubToFraction,
-                    f = u && void 0 !== l && c ? l * c : Object(C.d)(a) || 0
-                  if (a && 'number' == typeof i && c && !a.isLive) {
+                    f = u && void 0 !== l && c ? l * c : Object(j.d)(o) || 0
+                  if (o && 'number' == typeof i && c && !o.isLive) {
                     var d =
-                      r === Ee.veryNarrow
-                        ? ''.concat(Object(C.b)(c - f))
-                        : ''.concat(Object(C.b)(f), ' / ').concat(Object(C.b)(c))
-                    return n.createElement(S.a, { style: Je(r) && { fontSize: N.a.theme.fontSizes.subtext2 } }, d)
+                      r === Pe.veryNarrow
+                        ? ''.concat(Object(j.b)(c - f))
+                        : ''.concat(Object(j.b)(f), ' / ').concat(Object(j.b)(c))
+                    return a.a.createElement(O.a, { style: Qe(r) && { fontSize: V.a.theme.fontSizes.subtext2 } }, d)
                   }
                   return null
                 })
               }),
-              v()(u()(o), '_renderPeriscopeOrCustomIconLink', function (e, t, r) {
-                var n = e.pause,
-                  a = o.props.customControlBarIcon,
-                  i = Object(C.e)(t),
+              y()(l()(n), '_renderPeriscopeOrCustomIconLink', function (e, t, r) {
+                var a = e.pause,
+                  o = n.props.customControlBarIcon,
+                  i = Object(j.e)(t),
                   c = r && r.hidePeriscopeLink,
                   s = null == i ? void 0 : i.broadcastShareUrl
-                return s && Ne.test(s) ? o._renderPeriscopeLink(i, c, n) : a ? o._renderCustomIconLink(a) : void 0
+                return s && Ve.test(s) ? n._renderPeriscopeLink(i, c, a) : o ? n._renderCustomIconLink(o) : void 0
               }),
-              v()(u()(o), '_renderPeriscopeLink', function (e, t, r) {
-                return n.createElement(y.a, { periodic: !0 }, function (a) {
-                  a.playerState
+              y()(l()(n), '_renderPeriscopeLink', function (e, t, r) {
+                return a.a.createElement(w.a, { periodic: !0 }, function (o) {
+                  o.playerState
                   if (e && e.broadcastShareUrl && !e.unavailableInPeriscope && !t) {
-                    var i = o.state.currentBreakpoint,
-                      c = new V.a(e.broadcastShareUrl),
-                      s = Object(C.d)(e),
-                      u = Object(C.i)(e)
+                    var i = n.state.currentBreakpoint,
+                      c = new K.a(e.broadcastShareUrl),
+                      s = Object(j.d)(e),
+                      u = Object(j.i)(e)
                     if (s && s > 0 && !e.isLive) c.addSearchParam('t', s.toString())
                     else if (e.isLive && u) {
                       var l = u + (s || 0)
                       c.addSearchParam('t', l.toString())
                     }
-                    return n.createElement(g.b, {
-                      accessibilityLabel: qe,
+                    return a.a.createElement(S.b, {
+                      accessibilityLabel: Ye,
                       hoverLabelPreferredHorizontalOrientation: 'start',
-                      hoverLabelWithExtraSpace: o.props.showScrubber,
-                      icon: n.createElement(ze, null),
+                      hoverLabelWithExtraSpace: n.props.showScrubber,
+                      icon: a.a.createElement(We, null),
                       link: { pathname: c.toString(), anchorless: !0 },
                       onPress: r,
-                      size: Je(i) ? 'xSmall' : 'medium',
+                      size: Qe(i) ? 'xSmall' : 'medium',
                       testID: 'periscopeLink',
                     })
                   }
                 })
               }),
-              v()(u()(o), '_renderCustomIconLink', function (e) {
-                var t = o.state.currentBreakpoint,
-                  r = new V.a(e.link),
-                  a = e.tooltipLabel,
+              y()(l()(n), '_renderCustomIconLink', function (e) {
+                var t = n.state.currentBreakpoint,
+                  r = new K.a(e.link),
+                  o = e.tooltipLabel,
                   i = e.onPress
-                return n.createElement(g.b, {
-                  accessibilityLabel: a,
+                return a.a.createElement(S.b, {
+                  accessibilityLabel: o,
                   hoverLabelPreferredHorizontalOrientation: 'start',
-                  hoverLabelWithExtraSpace: o.props.showScrubber,
+                  hoverLabelWithExtraSpace: n.props.showScrubber,
                   icon: e.icon,
                   link: { pathname: r.toString(), anchorless: !0 },
                   onPress: i,
-                  size: Je(t) ? 'xSmall' : 'medium',
+                  size: Qe(t) ? 'xSmall' : 'medium',
                 })
               }),
-              v()(u()(o), '_showScrubberHandler', function (e) {
+              y()(l()(n), '_showScrubberHandler', function (e) {
                 return function () {
-                  return o.setState({ showScrubber: e })
+                  return n.setState({ showScrubber: e })
                 }
               }),
-              v()(u()(o), '_setVolumePercent', function (e) {
+              y()(l()(n), '_setVolumePercent', function (e) {
                 return function (t) {
                   e(t / 100)
                 }
               }),
-              v()(u()(o), '_handleLayout', function (e) {
+              y()(l()(n), '_handleLayout', function (e) {
                 var t = e.nativeEvent.layout,
                   r = t.height,
-                  n = t.width,
-                  a = o.state.currentBreakpoint,
-                  i = o.props,
+                  a = t.width,
+                  o = n.state.currentBreakpoint,
+                  i = n.props,
                   c = i.hideControls,
                   s = i.playerApi,
                   u = i.playerState
                 if (s) {
                   var l = 0
-                  ;(l = c ? (null != u && u.isPreview ? N.a.theme.spacesPx.space40 : N.a.theme.spacesPx.space12) : r),
-                    o.props.playerApi.setCaptionDefaultOffset({ bottom: l })
+                  ;(l = c ? (null != u && u.isPreview ? V.a.theme.spacesPx.space40 : V.a.theme.spacesPx.space12) : r),
+                    n.props.playerApi.setCaptionDefaultOffset({ bottom: l })
                 }
-                var f = o._convertWidthToBreakpoint(n)
-                f !== a &&
-                  o.setState(function (e) {
+                var f = n._convertWidthToBreakpoint(a)
+                f !== o &&
+                  n.setState(function (e) {
                     return { currentBreakpoint: f }
                   })
               }),
-              v()(u()(o), '_convertWidthToBreakpoint', function (e) {
+              y()(l()(n), '_convertWidthToBreakpoint', function (e) {
                 var t
                 return (
-                  e > Pe.wide
-                    ? (t = Ee.wide)
-                    : e < Pe.veryNarrow
-                    ? (t = Ee.veryNarrow)
-                    : e < Pe.narrow && (t = Ee.narrow),
+                  e > ke.wide
+                    ? (t = Pe.wide)
+                    : e < ke.veryNarrow
+                    ? (t = Pe.veryNarrow)
+                    : e < ke.narrow && (t = Pe.narrow),
                   t
                 )
               }),
               e.containerRef)
             ) {
-              var i = e.containerRef.getBoundingClientRect(),
-                c = i.height,
-                s = i.width
-              o.state = Fe(
-                Fe({}, o.state),
+              var o = e.containerRef.getBoundingClientRect(),
+                c = o.height,
+                s = o.width
+              n.state = Ie(
+                Ie({}, n.state),
                 {},
-                { currentBreakpoint: o._convertWidthToBreakpoint(s), containerHeight: c },
+                { currentBreakpoint: n._convertWidthToBreakpoint(s), containerHeight: c },
               )
             }
-            return o
+            return n
           }
           return (
-            c()(
+            s()(
               r,
               [
                 {
@@ -1747,54 +1760,54 @@
                     var e = this,
                       t = this.props,
                       r = t.hideControls,
-                      o = t.playerApi,
-                      a = t.playerDisplayOptions,
+                      n = t.playerApi,
+                      o = t.playerDisplayOptions,
                       i = t.playerState,
                       c = this.state.currentBreakpoint
-                    return o && i
-                      ? n.createElement(k.a.ObserverContext.Consumer, null, function (t) {
-                          return n.createElement(
-                            z.a,
-                            { onLayout: e._handleLayout, pointerEvents: 'auto', ref: e._parentRef, style: D.e },
-                            n.createElement(w.a, {
-                              actionButton: e._renderActionButton(o, i),
+                    return n && i
+                      ? a.a.createElement(C.a.ObserverContext.Consumer, null, function (t) {
+                          return a.a.createElement(
+                            W.a,
+                            { onLayout: e._handleLayout, pointerEvents: 'auto', ref: e._parentRef, style: A.e },
+                            a.a.createElement(g.a, {
+                              actionButton: e._renderActionButton(n, i),
                               displayDismissableControls: !r,
-                              leftContent: n.createElement(
-                                n.Fragment,
+                              leftContent: a.a.createElement(
+                                a.a.Fragment,
                                 null,
                                 e._renderAdBadge(i),
                                 e._renderPublisherAttribution(i),
-                                c === Ee.wide ? e._renderMiddot(i) : null,
-                                c === Ee.wide ? e._renderViewCount(i) : null,
+                                c === Pe.wide ? e._renderMiddot(i) : null,
+                                c === Pe.wide ? e._renderViewCount(i) : null,
                               ),
-                              rightContent: n.createElement(
-                                n.Fragment,
+                              rightContent: a.a.createElement(
+                                a.a.Fragment,
                                 null,
                                 e._renderTimePlayed(),
-                                n.createElement(
+                                a.a.createElement(
                                   t,
-                                  { focus: !0, interactionKey: Ze.CAPTIONS, interactionTimeoutMs: 0, mouseover: !0 },
-                                  e._renderCaptionsButton(o, i),
+                                  { focus: !0, interactionKey: Je.CAPTIONS, interactionTimeoutMs: 0, mouseover: !0 },
+                                  e._renderCaptionsButton(n, i),
                                 ),
-                                e._renderVolume(o, i),
-                                n.createElement(
+                                e._renderVolume(n, i),
+                                a.a.createElement(
                                   t,
-                                  { focus: !0, interactionKey: Ze.PERISCOPE, interactionTimeoutMs: 0, mouseover: !0 },
-                                  e._renderPeriscopeOrCustomIconLink(o, i, a),
+                                  { focus: !0, interactionKey: Je.PERISCOPE, interactionTimeoutMs: 0, mouseover: !0 },
+                                  e._renderPeriscopeOrCustomIconLink(n, i, o),
                                 ),
-                                n.createElement(
+                                a.a.createElement(
                                   t,
-                                  { focus: !0, interactionKey: Ze.SETTING, interactionTimeoutMs: 0, mouseover: !0 },
-                                  n.createElement(ge, { isNarrow: Je(c), playerApi: o, playerState: i }),
+                                  { focus: !0, interactionKey: Je.SETTING, interactionTimeoutMs: 0, mouseover: !0 },
+                                  a.a.createElement(Se, { isNarrow: Qe(c), playerApi: n, playerState: i }),
                                 ),
-                                n.createElement(
+                                a.a.createElement(
                                   t,
-                                  { focus: !0, interactionKey: Ze.FULLSCREEN, interactionTimeoutMs: 0, mouseover: !0 },
-                                  e._renderFullScreenButton(o, i),
+                                  { focus: !0, interactionKey: Je.FULLSCREEN, interactionTimeoutMs: 0, mouseover: !0 },
+                                  e._renderFullScreenButton(n, i),
                                 ),
                               ),
-                              scrubber: e._renderScrubber(o),
-                              skipButton: n.createElement(I, { useRefactoredLayout: !0 }),
+                              scrubber: e._renderScrubber(n),
+                              skipButton: a.a.createElement(N, { useRefactoredLayout: !0 }),
                             }),
                           )
                         })
@@ -1806,25 +1819,25 @@
                 {
                   key: 'getDerivedStateFromProps',
                   value: function (e, t) {
-                    return e.hideControls ? Fe(Fe({}, t), {}, { showScrubber: !0 }) : t
+                    return e.hideControls ? Ie(Ie({}, t), {}, { showScrubber: !0 }) : t
                   },
                 },
               ],
             ),
             r
           )
-        })(n.PureComponent)
-      v()(Qe, 'defaultProps', { showScrubber: !0 })
-      var $e = Qe,
-        et = { hidden: { display: 'none', height: '1.5em' }, shown: { display: 'block', height: '1.5em' } }
-      function tt(e) {
-        return n.createElement($e, e)
+        })(a.a.PureComponent)
+      y()($e, 'defaultProps', { showScrubber: !0 })
+      var et = $e,
+        tt = { hidden: { display: 'none', height: '1.5em' }, shown: { display: 'block', height: '1.5em' } }
+      function rt(e) {
+        return a.a.createElement(et, e)
       }
     },
     w05h: function (e, t, r) {
       'use strict'
       r.d(t, 'e', function () {
-        return a
+        return o
       }),
         r.d(t, 'c', function () {
           return i
@@ -1875,29 +1888,29 @@
           return S
         })
       var n = r('3XMw'),
-        o = r.n(n),
-        a = o.a.eeb64451,
-        i = o.a.f3c268a4,
-        c = o.a.g60001bb,
-        s = o.a.dff1ddd9,
-        u = o.a.b0b22805,
-        l = o.a.e8733ed8,
-        f = o.a.i3b7a017,
-        d = o.a.c67e71aa,
-        p = o.a.a6ada13d,
-        b = o.a.j0f12222,
-        h = o.a.f569f7c7,
-        m = o.a.j0c67729,
-        v = o.a.f73003aa,
-        y = o.a.b3112b89,
-        w = o.a.h6333ad0,
-        g = o.a.c59da417,
-        S = o.a.c3c147cf
+        a = r.n(n),
+        o = a.a.eeb64451,
+        i = a.a.f3c268a4,
+        c = a.a.g60001bb,
+        s = a.a.dff1ddd9,
+        u = a.a.b0b22805,
+        l = a.a.e8733ed8,
+        f = a.a.i3b7a017,
+        d = a.a.c67e71aa,
+        p = a.a.a6ada13d,
+        b = a.a.j0f12222,
+        h = a.a.f569f7c7,
+        m = a.a.j0c67729,
+        v = a.a.f73003aa,
+        y = a.a.b3112b89,
+        w = a.a.h6333ad0,
+        g = a.a.c59da417,
+        S = a.a.c3c147cf
     },
     wtsM: function (e, t, r) {
       'use strict'
       r.d(t, 'd', function () {
-        return a
+        return o
       }),
         r.d(t, 'f', function () {
           return i
@@ -1921,15 +1934,15 @@
           return d
         })
       var n = r('3XMw'),
-        o = r.n(n),
-        a = o.a.fb236727,
-        i = o.a.e9bd453e,
-        c = o.a.f17dfdb5,
-        s = o.a.ec8ab8b4,
-        u = o.a.b8b6344a,
-        l = o.a.c9a642f9,
-        f = o.a.c27e60bf,
-        d = o.a.d2969f1f
+        a = r.n(n),
+        o = a.a.fb236727,
+        i = a.a.e9bd453e,
+        c = a.a.f17dfdb5,
+        s = a.a.ec8ab8b4,
+        u = a.a.b8b6344a,
+        l = a.a.c9a642f9,
+        f = a.a.c27e60bf,
+        d = a.a.d2969f1f
     },
   },
 ])

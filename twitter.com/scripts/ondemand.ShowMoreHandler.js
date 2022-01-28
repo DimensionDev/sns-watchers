@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [228],
+  [232],
   {
     D9QQ: function (e, t, n) {
       'use strict'
@@ -7,29 +7,30 @@
       var r = n('ezF+'),
         o = n('VPAj'),
         c = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('KEM+')),
-        i = n.n(c),
-        a = (n('2G9S'), n('ERkP')),
-        s = n('jtO7'),
-        l = n('rxPX'),
-        u = function (e, t) {
+        a = n.n(c),
+        i = (n('2G9S'), n('ERkP')),
+        s = n.n(i),
+        l = n('jtO7'),
+        u = n('rxPX'),
+        p = function (e, t) {
           return t.entry.content
         },
-        p = function (e, t) {
-          return u(0, t).timelineModule
-        },
         m = function (e, t) {
-          return u(0, t).showMore
+          return p(0, t).timelineModule
         },
-        d = Object(l.a)()
+        d = function (e, t) {
+          return p(0, t).showMore
+        },
+        b = Object(u.a)()
           .propsFromState(function () {
-            return { showMoreModule: m, timelineModule: p }
+            return { showMoreModule: d, timelineModule: m }
           })
           .propsFromActions(function (e) {
             return { updateEntry: e.module.updateEntry }
           })
           .withAnalytics({ element: 'footer' }),
-        b = n('3XMw')
-      function f(e, t) {
+        f = n('3XMw')
+      function y(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -41,50 +42,50 @@
         }
         return n
       }
-      function y(e) {
+      function w(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? f(Object(n), !0).forEach(function (t) {
-                i()(e, t, n[t])
+            ? y(Object(n), !0).forEach(function (t) {
+                a()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : f(Object(n)).forEach(function (t) {
+            : y(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var w = n.n(b).a.d228a9a0,
-        O = function (e) {
+      var O = n.n(f).a.d228a9a0,
+        h = function (e) {
           var t = e.analytics,
             n = e.showMoreModule,
             r = e.timelineModule,
             o = e.updateEntry
-          a.useEffect(function () {
+          s.a.useEffect(function () {
             n.shouldScribeImpression && t.scribeAction('impression')
           }, [])
-          var c = a.useCallback(
+          var c = s.a.useCallback(
             function () {
               var e = r.content,
                 c = e.items,
-                i = e.numItemsShown,
-                a = r.entryId,
+                a = e.numItemsShown,
+                i = r.entryId,
                 s = n.initialItemsCount,
                 l = n.showMoreItemsCount,
-                u = i || s
+                u = a || s
               o(
-                a,
-                y(
-                  y({}, r.content),
+                i,
+                w(
+                  w({}, r.content),
                   {},
                   {
                     numItemsShown: Math.min(u + l, c.length),
-                    showMore: y(
-                      y({}, n),
+                    showMore: w(
+                      w({}, n),
                       {},
-                      { entryToFocus: 'verticalGridItem-'.concat(u, '-').concat(a), shouldScribeImpression: !1 },
+                      { entryToFocus: 'verticalGridItem-'.concat(u, '-').concat(i), shouldScribeImpression: !1 },
                     ),
                   },
                 ),
@@ -93,23 +94,23 @@
             },
             [t, n, r, o],
           )
-          return a.createElement(s.a, { color: 'primary', label: w, onPress: c })
+          return s.a.createElement(l.a, { color: 'primary', label: O, onPress: c })
         },
-        h = d(a.memo(O)),
-        g = Object(o.a)(!1),
-        v = Object(o.a)(!0),
-        j = { viewType: 'module_footer' },
-        M = { element: 'footer' }
+        g = b(s.a.memo(h)),
+        v = Object(o.a)(!1),
+        j = Object(o.a)(!0),
+        M = { viewType: 'module_footer' },
+        E = { element: 'footer' }
       t.default = function (e) {
         var t = e.isInSidebar
         return r
           .b({
-            shouldDisplayBorder: t ? g : void 0,
-            component: h,
-            defaultScribeNamespace: M,
-            isFocusable: v,
+            shouldDisplayBorder: t ? v : void 0,
+            component: g,
+            defaultScribeNamespace: E,
+            isFocusable: j,
             getBehavioralEventContextOverride: function () {
-              return j
+              return M
             },
           })
           .getHandler()
@@ -120,14 +121,15 @@
       var r = n('97Jx'),
         o = n.n(r),
         c = n('m3Bd'),
-        i = n.n(c),
-        a = n('ERkP'),
-        s = n('t62R'),
-        l = n('I4+6'),
-        u = n('cm6r'),
-        p = n('rHpw'),
-        m = n('MWbm'),
-        d = p.a.create(function (e) {
+        a = n.n(c),
+        i = n('ERkP'),
+        s = n.n(i),
+        l = n('t62R'),
+        u = n('I4+6'),
+        p = n('cm6r'),
+        m = n('rHpw'),
+        d = n('MWbm'),
+        b = m.a.create(function (e) {
           return {
             container: { backgroundColor: e.colors.cellBackground },
             root: {
@@ -143,19 +145,19 @@
           n = void 0 === t ? 'center' : t,
           r = e.color,
           c = e.label,
-          b = i()(e, ['align', 'color', 'label']),
-          f = l.a.generate({
-            backgroundColor: p.a.theme.colors.transparent,
-            color: p.a.theme.colors[r],
+          i = a()(e, ['align', 'color', 'label']),
+          f = u.a.generate({
+            backgroundColor: m.a.theme.colors.transparent,
+            color: m.a.theme.colors[r],
             insetFocusRing: !0,
           })
-        return a.createElement(
-          m.a,
-          { style: d.container },
-          a.createElement(
-            u.a,
-            o()({}, b, { interactiveStyles: f, style: d.root }),
-            a.createElement(s.b, { align: n, color: r }, c),
+        return s.a.createElement(
+          d.a,
+          { style: b.container },
+          s.a.createElement(
+            p.a,
+            o()({}, i, { interactiveStyles: f, style: b.root }),
+            s.a.createElement(l.b, { align: n, color: r }, c),
           ),
         )
       }

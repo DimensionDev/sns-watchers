@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [337],
+  [341],
   {
     'NO+D': function (e, t, o) {
       'use strict'
@@ -9,24 +9,25 @@
         i = o.n(n),
         r = o('ezF+'),
         a = o('ERkP'),
-        c = o('VPAj'),
-        d = o('rcen'),
-        s = o('ddV6'),
-        l = o.n(s),
-        u = o('xM7j'),
-        v = o('xZXe'),
-        w = o('P1oR'),
-        f = o('kY28'),
-        p = function (e) {
+        c = o.n(a),
+        d = o('VPAj'),
+        s = o('rcen'),
+        l = o('ddV6'),
+        u = o.n(l),
+        v = o('xM7j'),
+        w = o('xZXe'),
+        f = o('P1oR'),
+        p = o('kY28'),
+        P = function (e) {
           var t = e.actionText,
             o = e.children,
             n = e.contextTweetId,
             i = e.conversationPosition,
             r = e.conversationTreeMetadata,
-            c = e.ctaLink,
+            a = e.ctaLink,
             d = e.ctaText,
             s = e.forwardPivotInfo,
-            p = e.innerForwardPivotInfo,
+            l = e.innerForwardPivotInfo,
             P = e.isFocalTweet,
             T = e.isReaderMode,
             b = e.lang,
@@ -35,53 +36,53 @@
             I = e.socialContext,
             h = e.tweetId,
             x = e.withHideReply,
-            O = a.useState(!0),
-            j = l()(O, 2),
+            O = c.a.useState(!0),
+            j = u()(O, 2),
             g = j[0],
             k = j[1]
-          a.useEffect(
+          c.a.useEffect(
             function () {
               k(!0)
             },
             [h],
           )
-          var D = a.useCallback(function () {
+          var D = c.a.useCallback(function () {
             k(!1)
           }, [])
           return g || !h
-            ? a.createElement(u.a, {
+            ? c.a.createElement(v.a, {
                 actionText: t,
                 children: o,
                 conversationPosition: i,
                 conversationTreeMetadata: r,
-                ctaLink: c,
+                ctaLink: a,
                 ctaText: d,
                 lang: b,
                 onClick: D,
               })
             : h
             ? P && !T
-              ? a.createElement(w.b, {
+              ? c.a.createElement(f.b, {
                   contextTweetId: n,
                   forwardPivotInfo: s,
-                  innerForwardPivotInfo: p,
+                  innerForwardPivotInfo: l,
                   onTweetDismiss: y,
                   quotedTweetTombstoneInfo: m,
                   socialContext: I,
                   tweetId: h,
                   withHideReply: x,
                 })
-              : a.createElement(v.b, {
+              : c.a.createElement(w.b, {
                   conversationPosition: i,
                   conversationTreeMetadata: r,
                   displayBlocked: !0,
                   displayPromotedContent: !0,
                   forwardPivotInfo: s,
-                  innerForwardPivotInfo: p,
+                  innerForwardPivotInfo: l,
                   isReaderMode: T,
                   onTweetDismiss: y,
                   quotedTweetTombstoneInfo: m,
-                  replyContext: T ? f.a.ReplyContextTypes.None : void 0,
+                  replyContext: T ? p.a.ReplyContextTypes.None : void 0,
                   shouldSelfThreadIncludeAvatar: !0,
                   tweetId: h,
                   withActions: !0,
@@ -91,8 +92,8 @@
                 })
             : null
         },
-        P = a.memo(p)
-      function T(e, t) {
+        T = c.a.memo(P)
+      function b(e, t) {
         var o = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -104,23 +105,23 @@
         }
         return o
       }
-      Object(c.a)(!1)
-      var b = function (e) {
+      Object(d.a)(!1)
+      var y = function (e) {
         var t = e.alignment,
           o = e.entities,
           n = e.rtl,
           i = e.text
-        return a.createElement(d.a, { alignment: t, entities: o, rtl: n, text: i })
+        return c.a.createElement(s.a, { alignment: t, entities: o, rtl: n, text: i })
       }
       t.default = function (e) {
         var t = e.createAdditionalProps,
-          o = void 0 === t ? Object(c.a)(null) : t
+          o = void 0 === t ? Object(d.a)(null) : t
         e.shouldDisplayBorder
         return r.g({
           bindActions: function (e) {
             return { applyFeedbackAction: e.module.applyFeedbackAction }
           },
-          component: P,
+          component: T,
           createProps: function (e) {
             var t,
               n,
@@ -140,20 +141,20 @@
               for (var t = 1; t < arguments.length; t++) {
                 var o = null != arguments[t] ? arguments[t] : {}
                 t % 2
-                  ? T(Object(o), !0).forEach(function (t) {
+                  ? b(Object(o), !0).forEach(function (t) {
                       i()(e, t, o[t])
                     })
                   : Object.getOwnPropertyDescriptors
                   ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(o))
-                  : T(Object(o)).forEach(function (t) {
+                  : b(Object(o)).forEach(function (t) {
                       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(o, t))
                     })
               }
               return e
             })(
               {
-                actionText: f ? b(f) : w,
-                children: p ? b(p) : P,
+                actionText: f ? y(f) : w,
+                children: p ? y(p) : P,
                 conversationPosition: l,
                 conversationTreeMetadata: u,
                 forwardPivotInfo: null === (t = s.tweet) || void 0 === t ? void 0 : t.forwardPivot,

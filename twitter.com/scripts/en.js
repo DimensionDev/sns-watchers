@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [117],
+    [119],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -11,7 +11,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(295).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(299).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -3989,7 +3989,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'a15b98ec',
             'Nothing to change or edit here. All of your Super Followers will automatically get a public badge when they subscribe.',
           ),
-          a('d94d5707', 'Perks setup'),
           a('ebfb897c', 'Examples'),
           a('dc4feb19', 'Not sure what to say?'),
           a(
@@ -4029,6 +4028,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ef08a890', '1 of 3'),
           a('b16680ff', 'Add intro'),
           a('ea8a3d2d', 'Pricing setup'),
+          a('f77bb178', function (e) {
+            return 'Confirm your ' + e.price + ' selection'
+          }),
+          a(
+            'cd75a5d4',
+            'Double-check and confirm your subscription price. You won’t be able to change this during the Super Follows test period.',
+          ),
           a('ic9124bf', 'Choose what your Super Followers pay'),
           a('g5923869', function (e) {
             return e.price + ' per month'
@@ -4072,6 +4078,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'e4972a1a',
             'Check out some of the new features we’re testing before they’re available to everyone else and tell us what you think.',
           ),
+          a('adcaa213', 'See the most-shared articles from people you follow.'),
           a('e5fff0c7', 'Your subscription is active.'),
           a(
             'ccfdbb86',
@@ -4625,6 +4632,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f1252ac7', 'Medium Text'),
           a('daa0da04', 'Small Text'),
           a('ba5256b1', 'Text Size'),
+          a('e37836f8', 'Report Detail'),
+          a('a78f7bd9', 'Tweet Content Hidden'),
+          a('d7b32a4d', 'What’s Next'),
           a('h030c24b', 'Report an issue'),
           a('c3e6226a', 'Remove member'),
           a('a62c9c33', 'Follow your interests.'),
@@ -4694,12 +4704,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ie23eef9', 'Only show Tweets with links'),
           a('ge10bfa1', 'Include replies and original Tweets'),
           a('ab870903', 'Only show replies'),
-          a('b621568f', 'All of these words'),
-          a('cceffa5d', 'Example: what’s happening · contains both “what’s” and “happening”'),
-          a('f1c5faee', 'This exact phrase'),
-          a('ad10780e', 'Example: happy hour · contains the exact phrase “happy hour”'),
-          a('a555a3f3', 'Any of these words'),
-          a('ee8a2b6f', 'Example: cats dogs · contains either “cats” or “dogs” (or both)')
+          a('b621568f', 'All of these words')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4716,7 +4721,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('f51fe348', 'None of these words'),
+        a('cceffa5d', 'Example: what’s happening · contains both “what’s” and “happening”'),
+          a('f1c5faee', 'This exact phrase'),
+          a('ad10780e', 'Example: happy hour · contains the exact phrase “happy hour”'),
+          a('a555a3f3', 'Any of these words'),
+          a('ee8a2b6f', 'Example: cats dogs · contains either “cats” or “dogs” (or both)'),
+          a('f51fe348', 'None of these words'),
           a('hb657ad3', 'Example: cats dogs · does not contain “cats” and does not contain “dogs”'),
           a('d10da5da', 'These hashtags'),
           a('f0b52b50', 'Example: #ThrowbackThursday · contains the hashtag #ThrowbackThursday'),
@@ -6007,10 +6017,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('a81dc154', function (e) {
             return 'Follower' + n(e.count, '', 's')
-          }),
-          a('b8680362', function (e) {
-            return '' + e.formattedCount
-          }),
+          })
+        a('b8680362', function (e) {
+          return '' + e.formattedCount
+        }),
           a('b93e3a02', function (e) {
             return 'Super Follower' + n(e.count, '', 's')
           }),
@@ -6020,10 +6030,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('j3d49e93', function (e) {
             return e.timestamp + 'm'
-          })
-        a('a394f904', function (e) {
-          return e.seconds + ' seconds'
-        }),
+          }),
+          a('a394f904', function (e) {
+            return e.seconds + ' seconds'
+          }),
           a('f42c0c8f', 'End of chosen section, use arrow keys to adjust selection'),
           a('i667afe8', 'Start of chosen section, use arrow keys to adjust selection'),
           a('gfaaead7', 'Untitled'),

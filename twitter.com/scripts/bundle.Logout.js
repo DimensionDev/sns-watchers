@@ -5,7 +5,7 @@
       'use strict'
       n.r(e),
         n.d(e, 'LogoutErrorScreen', function () {
-          return F
+          return G
         })
       n('OZaJ')
       var r = n('VrFO'),
@@ -23,29 +23,30 @@
         y = n('KEM+'),
         g = n.n(y),
         v = (n('2G9S'), n('Qavd'), n('JtPf'), n('7x/C'), n('MvUL'), n('KqXw'), n('ERkP')),
-        E = n('KkUe'),
-        L = n('5oBF'),
-        A = n('rxPX'),
-        b = n('0KEI'),
-        m = Object(A.a)()
+        E = n.n(v),
+        L = n('KkUe'),
+        A = n('5oBF'),
+        b = n('rxPX'),
+        m = n('0KEI'),
+        w = Object(b.a)()
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(b.createLocalApiErrorHandlerWithContextFactory)('LOGOUT_ERROR_SCREEN'),
-              logout: E.a,
-              sendAllPreviews: L.f,
+              createLocalApiErrorHandler: Object(m.createLocalApiErrorHandlerWithContextFactory)('LOGOUT_ERROR_SCREEN'),
+              logout: L.a,
+              sendAllPreviews: A.f,
             }
           })
           .withAnalytics({ page: 'logout_error' }),
-        w = n('kGix'),
-        O = n('v//M'),
-        R = n('3XMw'),
-        _ = n.n(R),
-        S = n('yoO3'),
-        C = n('5FtR'),
-        D = n('BTou'),
-        k = n('feu+'),
-        x = n('sgih')
-      function H(t) {
+        O = n('kGix'),
+        R = n('v//M'),
+        _ = n('3XMw'),
+        S = n.n(_),
+        C = n('yoO3'),
+        D = n('5FtR'),
+        k = n('BTou'),
+        x = n('feu+'),
+        H = n('sgih')
+      function M(t) {
         var e = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -66,58 +67,58 @@
           return h()(this, n)
         }
       }
-      var M = _.a.ae1bbb26,
-        P = _.a.a5077d3d,
-        B = _.a.gc6866f7,
-        T = _.a.c20aaf3d,
-        U = _.a.c55f5c9a,
-        j = function () {
+      var P = S.a.ae1bbb26,
+        B = S.a.a5077d3d,
+        T = S.a.gc6866f7,
+        U = S.a.c20aaf3d,
+        j = S.a.c55f5c9a,
+        F = function () {
           return null
         },
-        F = (function (t) {
+        G = (function (t) {
           s()(n, t)
-          var e = H(n)
+          var e = M(n)
           function n() {
             var t
             o()(this, n)
             for (var r = arguments.length, a = new Array(r), c = 0; c < r; c++) a[c] = arguments[c]
             return (
               (t = e.call.apply(e, [this].concat(a))),
-              g()(u()(t), 'state', { fetchStatus: w.a.LOADED }),
+              g()(u()(t), 'state', { fetchStatus: O.a.LOADED }),
               g()(u()(t), '_renderError', function () {
-                return v.createElement(
-                  S.a,
+                return E.a.createElement(
+                  C.a,
                   null,
-                  v.createElement(k.a, {
-                    actionLabel: P,
-                    headline: T,
+                  E.a.createElement(x.a, {
+                    actionLabel: B,
+                    headline: U,
                     isFullHeightOnMobile: !0,
                     onAction: t._handleRefresh,
                     onClose: t._handleRefresh,
                     onSecondaryAction: t._handleLogout,
-                    secondaryActionLabel: M,
-                    subtext: U,
+                    secondaryActionLabel: P,
+                    subtext: j,
                     withCloseButton: !1,
                   }),
                 )
               }),
               g()(u()(t), '_redirectToHome', function () {
-                return v.createElement(C.a, { to: '/' })
+                return E.a.createElement(D.a, { to: '/' })
               }),
               g()(u()(t), '_handleLogout', function () {
                 var e = t.props,
                   n = e.createLocalApiErrorHandler,
                   r = e.logout,
                   o = e.sendAllPreviews
-                t.setState({ fetchStatus: w.a.LOADING }),
+                t.setState({ fetchStatus: O.a.LOADING }),
                   o().finally(function () {
                     r({ redirectAfterLogout: '/' }).catch(function (e) {
-                      return t.setState({ fetchStatus: w.a.LOADED }), n({ showToast: !0 })(e)
+                      return t.setState({ fetchStatus: O.a.LOADED }), n({ showToast: !0 })(e)
                     })
                   })
               }),
               g()(u()(t), '_handleRefresh', function (t) {
-                D.a.flushHTMLCache(), window.location.replace('/')
+                k.a.flushHTMLCache(), window.location.replace('/')
               }),
               t
             )
@@ -129,18 +130,18 @@
                 value: function () {
                   var t = this.props.location,
                     e = this.state.fetchStatus
-                  return e === w.a.LOADED
+                  return e === O.a.LOADED
                     ? (t.state && t.state.error) || t.query.testing
                       ? this._renderError()
                       : this._redirectToHome()
-                    : v.createElement(
-                        x.a,
+                    : E.a.createElement(
+                        H.a,
                         { type: 'full' },
-                        v.createElement(O.a, {
+                        E.a.createElement(R.a, {
                           fetchStatus: e,
-                          loadingMessage: B,
+                          loadingMessage: T,
                           onRequestRetry: this._handleLogout,
-                          render: j,
+                          render: F,
                         }),
                       )
                 },
@@ -148,14 +149,14 @@
             ]),
             n
           )
-        })(v.Component)
-      e.default = m(F)
+        })(E.a.Component)
+      e.default = w(G)
     },
     'x/Xu': function (t, e, n) {
       'use strict'
       n.r(e),
         n.d(e, 'LogoutScreen', function () {
-          return Y
+          return Z
         })
       n('OZaJ')
       var r = n('VrFO'),
@@ -173,35 +174,36 @@
         y = n('KEM+'),
         g = n.n(y),
         v = (n('2G9S'), n('Qavd'), n('JtPf'), n('7x/C'), n('ERkP')),
-        E = n('hqKg'),
-        L = n('KkUe'),
-        A = n('5oBF'),
-        b = n('G6rE'),
-        m = n('0KEI'),
-        w = n('oEGd'),
-        O = Object(E.createSelector)(b.e.selectLoggedInUser, function (t) {
+        E = n.n(v),
+        L = n('hqKg'),
+        A = n('KkUe'),
+        b = n('5oBF'),
+        m = n('G6rE'),
+        w = n('0KEI'),
+        O = n('oEGd'),
+        R = Object(L.createSelector)(m.e.selectLoggedInUser, function (t) {
           return { loggedInUser: t }
         }),
-        R = {
-          createLocalApiErrorHandler: Object(m.createLocalApiErrorHandlerWithContextFactory)('LOGOUT_SCREEN'),
-          logout: L.a,
-          sendAllPreviews: A.f,
+        _ = {
+          createLocalApiErrorHandler: Object(w.createLocalApiErrorHandlerWithContextFactory)('LOGOUT_SCREEN'),
+          logout: A.a,
+          sendAllPreviews: b.f,
         },
-        _ = Object(w.g)(O, R),
-        S = n('kGix'),
-        C = n('v//M'),
-        D = n('3Wr5'),
-        k = n('3XMw'),
-        x = n.n(k),
-        H = n('lUZE'),
-        M = n('8jkQ'),
-        P = n('yoO3'),
-        B = n('pxuL'),
-        T = n('eb3s'),
-        U = n('sgih'),
-        j = n('rHpw'),
-        F = n('7JQg')
-      function G(t) {
+        S = Object(O.g)(R, _),
+        C = n('kGix'),
+        D = n('v//M'),
+        k = n('3Wr5'),
+        x = n('3XMw'),
+        H = n.n(x),
+        M = n('lUZE'),
+        P = n('8jkQ'),
+        B = n('yoO3'),
+        T = n('pxuL'),
+        U = n('eb3s'),
+        j = n('sgih'),
+        F = n('rHpw'),
+        G = n('7JQg')
+      function I(t) {
         var e = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -222,61 +224,61 @@
           return h()(this, n)
         }
       }
-      var I = x.a.a3fad4f2,
-        K = x.a.f12b4db4,
-        N = x.a.ae1bbb26,
-        J = x.a.ia5ff8b6,
-        q = x.a.ea3750c3,
-        X = x.a.gc6866f7,
-        Q = function () {
+      var K = H.a.a3fad4f2,
+        N = H.a.f12b4db4,
+        J = H.a.ae1bbb26,
+        q = H.a.ia5ff8b6,
+        X = H.a.ea3750c3,
+        Q = H.a.gc6866f7,
+        W = function () {
           return null
         },
-        W = function (t) {
+        Y = function (t) {
           var e = t.query.redirect_after_logout
           return 'string' == typeof e ? e : Array.isArray(e) && 'string' == typeof e[0] ? e[0] : void 0
         },
-        Y = (function (t) {
+        Z = (function (t) {
           s()(n, t)
-          var e = G(n)
+          var e = I(n)
           function n() {
             var t
             o()(this, n)
             for (var r = arguments.length, a = new Array(r), c = 0; c < r; c++) a[c] = arguments[c]
             return (
               (t = e.call.apply(e, [this].concat(a))),
-              g()(u()(t), 'state', { fetchStatus: S.a.LOADED }),
+              g()(u()(t), 'state', { fetchStatus: C.a.LOADED }),
               g()(u()(t), '_render', function () {
                 var e = t.props.loggedInUser,
-                  n = Object(D.a)().hasMultiAccountCookie
-                return v.createElement(
-                  P.a,
+                  n = Object(k.a)().hasMultiAccountCookie
+                return E.a.createElement(
+                  B.a,
                   null,
-                  v.createElement(T.a, {
-                    Icon: H.a,
+                  E.a.createElement(U.a, {
+                    Icon: M.a,
                     allowBackNavigation: !0,
-                    confirmButtonLabel: N,
+                    confirmButtonLabel: J,
                     confirmButtonType: 'primary',
                     enableMaskForDismiss: !0,
-                    headline: n && e ? K({ screenName: e.screen_name }) : I,
-                    iconStyle: Z.icon,
+                    headline: n && e ? N({ screenName: e.screen_name }) : K,
+                    iconStyle: V.icon,
                     onCancel: t._handleCancel,
                     onConfirm: t._handleLogout,
-                    text: n ? q : J,
+                    text: n ? X : q,
                   }),
                 )
               }),
               g()(u()(t), '_handleLogout', function () {
-                var e = Object(D.a)().hasMultiAccountCookie,
+                var e = Object(k.a)().hasMultiAccountCookie,
                   n = t.props,
                   r = n.createLocalApiErrorHandler,
                   o = n.location,
                   a = n.logout,
                   c = n.sendAllPreviews
-                t.setState({ fetchStatus: S.a.LOADING })
-                var i = W(o) || (e ? 'https://'.concat(window.location.host, '/account/switch') : void 0)
+                t.setState({ fetchStatus: C.a.LOADING })
+                var i = Y(o) || (e ? 'https://'.concat(window.location.host, '/account/switch') : void 0)
                 c().finally(function () {
                   a({ redirectAfterLogout: i }).catch(function (e) {
-                    return t.setState({ fetchStatus: S.a.LOADED }), r({ showToast: !0 })(e)
+                    return t.setState({ fetchStatus: C.a.LOADED }), r({ showToast: !0 })(e)
                   })
                 })
               }),
@@ -284,8 +286,8 @@
                 var e = t.props,
                   n = e.history,
                   r = e.location,
-                  o = W(r)
-                o && M.b.isTwitterUrl(o) ? M.b.navigateTo(o) : n.goBack()
+                  o = Y(r)
+                o && P.b.isTwitterUrl(o) ? P.b.navigateTo(o) : n.goBack()
               }),
               t
             )
@@ -308,16 +310,16 @@
                 key: 'render',
                 value: function () {
                   var t = this.state.fetchStatus
-                  return t === S.a.LOADED
+                  return t === C.a.LOADED
                     ? this._render()
-                    : v.createElement(
-                        U.a,
+                    : E.a.createElement(
+                        j.a,
                         { type: 'full' },
-                        v.createElement(C.a, {
+                        E.a.createElement(D.a, {
                           fetchStatus: t,
-                          loadingMessage: X,
+                          loadingMessage: Q,
                           onRequestRetry: this._handleLogout,
-                          render: Q,
+                          render: W,
                         }),
                       )
                 },
@@ -325,12 +327,12 @@
             ]),
             n
           )
-        })(v.Component)
-      g()(Y, 'contextType', B.a)
-      var Z = j.a.create(function (t) {
+        })(E.a.Component)
+      g()(Z, 'contextType', T.a)
+      var V = F.a.create(function (t) {
         return { icon: { color: t.colors.brandColor, height: t.spaces.space40 } }
       })
-      e.default = Object(F.c)({ page: 'logout' })(_(Y))
+      e.default = Object(G.c)({ page: 'logout' })(S(Z))
     },
   },
 ])

@@ -1,71 +1,72 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [171],
+  [173],
   {
-    EOJ2: function (e, t, a) {
+    EOJ2: function (e, a, t) {
       'use strict'
-      a.r(t),
-        a.d(t, '__DANGEROUS_IMPORT_VIDEOPLAYER__', function () {
-          return y
+      t.r(a),
+        t.d(a, '__DANGEROUS_IMPORT_VIDEOPLAYER__', function () {
+          return b
         })
-      var n = a('ddV6'),
-        i = a.n(n),
-        l = a('ERkP'),
-        r = a('epkG'),
-        o = a('62wY'),
-        u = a('/run'),
-        d = a('MWbm'),
-        c = a('Zl35'),
-        s = a('rHpw'),
-        p = a('hhMf'),
-        m = a('ub6r'),
-        f = new r.a()
-      function v(e) {
-        var t,
-          a,
+      var n = t('ddV6'),
+        i = t.n(n),
+        l = t('ERkP'),
+        r = t.n(l),
+        o = t('epkG'),
+        u = t('62wY'),
+        d = t('/run'),
+        c = t('MWbm'),
+        s = t('Zl35'),
+        p = t('rHpw'),
+        m = t('hhMf'),
+        f = t('ub6r'),
+        v = new o.a()
+      function y(e) {
+        var a,
+          t,
           n = e.mediaFile,
-          r = e.mediaId,
-          v = e.subtitles,
+          l = e.mediaId,
+          o = e.subtitles,
           y = e.trimData,
           b = e.variants,
-          E = l.useState(null),
+          E = r.a.useState(null),
           w = i()(E, 2),
           h = w[0],
           k = w[1],
           R = 1e3 * n.duration,
           T =
-            (null == v || null === (t = v.upload) || void 0 === t ? void 0 : t.mediaFile) instanceof o.b
-              ? v.upload.mediaFile.vtt
+            (null == o || null === (a = o.upload) || void 0 === a ? void 0 : a.mediaFile) instanceof u.b
+              ? o.upload.mediaFile.vtt
               : void 0
         if (T) {
           var _ = document.createElement('track')
           ;(_.default = !0),
-            (_.label = (null == v ? void 0 : v.displayName) || ''),
-            (_.lang = (null == v ? void 0 : v.lang) || ''),
+            (_.label = (null == o ? void 0 : o.displayName) || ''),
+            (_.lang = (null == o ? void 0 : o.lang) || ''),
             (_.src = T),
             (_.kind = 'subtitles'),
-            (a = document.createElement('video')).appendChild(_)
+            (t = document.createElement('video')).appendChild(_)
         }
         return (
-          l.useEffect(
+          r.a.useEffect(
             function () {
               if (h && y) {
                 var e = y.startTime || 0,
-                  t = y.endTime || n.duration
-                h.scrubToFraction(e / n.duration), h.setPlaybackTimeRange({ startTimeS: e, endTimeS: t })
+                  a = y.endTime || n.duration
+                h.scrubToFraction(e / n.duration), h.setPlaybackTimeRange({ startTimeS: e, endTimeS: a })
               }
             },
             [n.duration, y, h],
           ),
-          l.createElement(
-            c.b,
+          r.a.createElement(
+            s.b,
             {
               aspectRatio: n.width / n.height,
-              basePlayerClass: u.a,
+              basePlayerClass: d.a,
               configType: 'static',
-              contentId: r,
+              contentId: l,
               contentType: 'media_entity',
               durationMs: R,
-              httpClient: f,
+              httpClient: v,
               initiallyMuted: !0,
               key: T,
               loop: !0,
@@ -74,34 +75,34 @@
               poster: n.thumbnail,
               size: 'fill',
               variants: b,
-              videoEl: a,
+              videoEl: t,
             },
             function (e) {
-              var t = e.containerRef,
-                a = e.playerApi,
+              var a = e.containerRef,
+                t = e.playerApi,
                 n = e.playerState
-              if (!a || !n || !t) return null
-              return l.createElement(
-                l.Fragment,
+              if (!t || !n || !a) return null
+              return r.a.createElement(
+                r.a.Fragment,
                 null,
-                l.createElement(d.a, {
+                r.a.createElement(c.a, {
                   onClick: function () {
-                    n.isPlaying ? a.pause() : a.play()
+                    n.isPlaying ? t.pause() : t.play()
                   },
-                  style: s.a.absoluteFill,
+                  style: p.a.absoluteFill,
                 }),
-                l.createElement(
-                  p.a,
+                r.a.createElement(
+                  m.a,
                   null,
-                  l.createElement(m.a, { containerRef: t, playerApi: a, playerState: n, showScrubber: !0 }),
+                  r.a.createElement(f.a, { containerRef: a, playerApi: t, playerState: n, showScrubber: !0 }),
                 ),
               )
             },
           )
         )
       }
-      var y = v
-      t.default = v
+      var b = y
+      a.default = y
     },
   },
 ])

@@ -5,7 +5,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'KeyboardShortcutsScreen', function () {
-          return M
+          return H
         })
       var r = a('ddV6'),
         n = a.n(r),
@@ -24,58 +24,59 @@
           a('Ysgh'),
           a('uFXj'),
           a('ERkP')),
-        i = a('v6aA'),
-        o = a('hqKg'),
-        c = a('G6rE'),
-        l = a('oEGd'),
-        d = Object(o.createSelector)(c.e.selectLoggedInUser, function (e) {
+        i = a.n(s),
+        o = a('v6aA'),
+        c = a('hqKg'),
+        l = a('G6rE'),
+        d = a('oEGd'),
+        u = Object(c.createSelector)(l.e.selectLoggedInUser, function (e) {
           return { loggedInUserScreenName: e && e.screen_name }
         }),
-        u = Object(l.c)(d),
-        p = a('jHSc'),
-        m = a('ObVQ'),
-        b = a('3XMw'),
-        y = a.n(b),
-        g = a('MWbm'),
-        h = a('7N4s'),
-        f = a('k/OQ'),
-        v = a('6vad'),
-        k = a('t62R'),
-        w = a('rHpw'),
-        x = a('7JQg'),
-        E = a('OrGc'),
-        P = y.a.dfef5ab8,
-        j = y.a.h54e6137,
-        O = y.a.aefd89c7,
-        R = y.a.cafdefb1,
-        S = y.a.add55c97,
-        T = y.a.e95b9448,
-        I = y.a.c106055a,
-        M = function (e) {
+        p = Object(d.c)(u),
+        m = a('jHSc'),
+        b = a('ObVQ'),
+        y = a('3XMw'),
+        g = a.n(y),
+        h = a('MWbm'),
+        f = a('7N4s'),
+        v = a('k/OQ'),
+        k = a('6vad'),
+        w = a('t62R'),
+        x = a('rHpw'),
+        E = a('7JQg'),
+        P = a('OrGc'),
+        j = g.a.dfef5ab8,
+        O = g.a.h54e6137,
+        R = g.a.aefd89c7,
+        S = g.a.cafdefb1,
+        T = g.a.add55c97,
+        I = g.a.e95b9448,
+        M = g.a.c106055a,
+        H = function (e) {
           var t,
             a,
             r = e.history,
-            o = e.location,
+            s = e.location,
             c = e.loggedInUserScreenName,
-            l = s.useContext(i.a),
+            l = i.a.useContext(o.a),
             d = l.featureSwitches,
             u = l.userClaims,
-            b = s.useContext(h.b).isModal,
+            p = i.a.useContext(f.b).isModal,
             y =
-              null === (t = o.state) || void 0 === t || null === (a = t.previousPath) || void 0 === a
+              null === (t = s.state) || void 0 === t || null === (a = t.previousPath) || void 0 === a
                 ? void 0
                 : a.includes('/i/moment_maker'),
-            k = s.useState(!1),
-            w = n()(k, 2),
+            g = i.a.useState(!1),
+            w = n()(g, 2),
             x = w[0],
-            M = w[1]
-          s.useEffect(
+            E = w[1]
+          i.a.useEffect(
             function () {
-              y && (M(!0), r.replace('/i/keyboard_shortcuts/moments'))
+              y && (E(!0), r.replace('/i/keyboard_shortcuts/moments'))
             },
             [r, y],
           )
-          var C = function (e) {
+          var H = function (e) {
               return c
                 ? e
                 : e.filter(function (e) {
@@ -83,46 +84,46 @@
                   })
             },
             N = [
-              { key: I, label: I, to: { pathname: '/i/keyboard_shortcuts/moments', state: o.state } },
-              { key: T, label: T, to: { pathname: '/i/keyboard_shortcuts', state: o.state } },
+              { key: M, label: M, to: { pathname: '/i/keyboard_shortcuts/moments', state: s.state } },
+              { key: I, label: I, to: { pathname: '/i/keyboard_shortcuts', state: s.state } },
             ],
-            Q = '/i/keyboard_shortcuts/moments' === o.pathname,
-            W = Object(E.c)(d, u.isTrueAndEnabled('subscriptions_feature_1007')),
-            L = Object(E.a)(d),
-            V = Object(E.b)(d),
-            z = Object(m.a)(d),
-            D = C(W),
-            B = C(L),
-            G = C(V),
-            K = C(z),
+            Q = '/i/keyboard_shortcuts/moments' === s.pathname,
+            W = Object(P.c)(d, u.isTrueAndEnabled('subscriptions_feature_1007')),
+            L = Object(P.a)(d),
+            V = Object(P.b)(d),
+            z = Object(b.a)(d),
+            D = H(W),
+            B = H(L),
+            G = H(V),
+            K = H(z),
             U = Q
               ? [{ headerText: void 0, shortcuts: K }]
               : [
-                  { headerText: O, shortcuts: D },
-                  { headerText: R, shortcuts: B },
-                  { headerText: S, shortcuts: G },
+                  { headerText: R, shortcuts: D },
+                  { headerText: S, shortcuts: B },
+                  { headerText: T, shortcuts: G },
                 ]
-          return s.createElement(
-            p.b,
-            { documentTitle: P, history: r, isLarge: !0, title: j },
-            x ? s.createElement(f.a, { links: N }) : null,
-            s.createElement(
-              g.a,
-              { style: [_.root, b && _.row] },
+          return i.a.createElement(
+            m.b,
+            { documentTitle: j, history: r, isLarge: !0, title: O },
+            x ? i.a.createElement(v.a, { links: N }) : null,
+            i.a.createElement(
+              h.a,
+              { style: [C.root, p && C.row] },
               U.map(function (e, t) {
                 var a = e.headerText,
                   r = e.shortcuts,
                   n = t === U.length - 1,
-                  i = U.length > 1
-                return s.createElement(
-                  g.a,
-                  { key: t, style: [_.section, !n && !b && _.sectionBottomMargin] },
-                  a ? s.createElement(v.b, { style: _.moduleHeader, text: a }) : null,
-                  s.createElement(
-                    g.a,
-                    { accessibilityRole: 'table', style: !n && i && b && _.divider },
+                  s = U.length > 1
+                return i.a.createElement(
+                  h.a,
+                  { key: t, style: [C.section, !n && !p && C.sectionBottomMargin] },
+                  a ? i.a.createElement(k.b, { style: C.moduleHeader, text: a }) : null,
+                  i.a.createElement(
+                    h.a,
+                    { accessibilityRole: 'table', style: !n && s && p && C.divider },
                     r.map(function (e, t) {
-                      return s.createElement(H, { description: e.description, key: t, keys: e.keys })
+                      return i.a.createElement(_, { description: e.description, key: t, keys: e.keys })
                     }),
                   ),
                 )
@@ -130,28 +131,28 @@
             ),
           )
         },
-        H = function (e) {
+        _ = function (e) {
           var t = e.description,
             a = e.keys.split(' ')
-          return s.createElement(
-            g.a,
-            { accessibilityRole: 'row', style: _.entry },
-            s.createElement(k.b, { accessibilityRole: 'cell' }, t),
-            s.createElement(
-              g.a,
-              { accessibilityRole: 'cell', style: _.keyRow },
+          return i.a.createElement(
+            h.a,
+            { accessibilityRole: 'row', style: C.entry },
+            i.a.createElement(w.b, { accessibilityRole: 'cell' }, t),
+            i.a.createElement(
+              h.a,
+              { accessibilityRole: 'cell', style: C.keyRow },
               a.map(function (e, t, a) {
-                return s.createElement(
-                  s.Fragment,
+                return i.a.createElement(
+                  i.a.Fragment,
                   { key: t },
-                  s.createElement(k.b, { align: 'center', style: _.key, withoutTwemojiAndHashflags: !0 }, e),
-                  t !== a.length - 1 ? s.createElement(k.b, { style: _.plus }, '+') : null,
+                  i.a.createElement(w.b, { align: 'center', style: C.key, withoutTwemojiAndHashflags: !0 }, e),
+                  t !== a.length - 1 ? i.a.createElement(w.b, { style: C.plus }, '+') : null,
                 )
               }),
             ),
           )
         },
-        _ = w.a.create(function (e) {
+        C = x.a.create(function (e) {
           return {
             root: { padding: e.spaces.space12, paddingBottom: e.spaces.space20 },
             row: { flexDirection: 'row' },
@@ -187,7 +188,7 @@
             moduleHeader: { paddingLeft: e.spaces.space12 },
           }
         })
-      t.default = Object(x.c)({ page: 'keyboard_shortcuts' })(u(M))
+      t.default = Object(E.c)({ page: 'keyboard_shortcuts' })(p(H))
     },
     ObVQ: function (e, t, a) {
       'use strict'

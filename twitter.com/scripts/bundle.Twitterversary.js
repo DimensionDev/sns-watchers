@@ -1,54 +1,55 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [100],
+  [102],
   {
-    yQeU: function (e, t, n) {
+    yQeU: function (e, t, a) {
       'use strict'
-      n.r(t),
-        n.d(t, 'TwitterversaryScreen', function () {
-          return P
+      a.r(t),
+        a.d(t, 'TwitterversaryScreen', function () {
+          return B
         })
-      n('OZaJ')
-      var a = n('VrFO'),
-        r = n.n(a),
-        c = n('Y9Ll'),
-        i = n.n(c),
-        o = n('1Pcy'),
-        s = n.n(o),
-        l = n('5Yy7'),
-        p = n.n(l),
-        u = n('N+ot'),
-        m = n.n(u),
-        f = n('AuHH'),
-        h = n.n(f),
-        y = n('KEM+'),
-        g = n.n(y),
-        b = (n('2G9S'), n('MvUL'), n('KqXw'), n('ERkP')),
-        v = n('Hw0q'),
-        d = n('rxPX'),
-        w = function (e, t) {
-          var n
-          return !(null === (n = t.location.state) || void 0 === n || !n.fromApp)
+      a('OZaJ')
+      var n = a('VrFO'),
+        r = a.n(n),
+        c = a('Y9Ll'),
+        i = a.n(c),
+        o = a('1Pcy'),
+        s = a.n(o),
+        l = a('5Yy7'),
+        p = a.n(l),
+        u = a('N+ot'),
+        m = a.n(u),
+        f = a('AuHH'),
+        h = a.n(f),
+        y = a('KEM+'),
+        g = a.n(y),
+        b = (a('2G9S'), a('MvUL'), a('KqXw'), a('ERkP')),
+        v = a.n(b),
+        d = a('Hw0q'),
+        w = a('rxPX'),
+        x = function (e, t) {
+          var a
+          return !(null === (a = t.location.state) || void 0 === a || !a.fromApp)
         },
-        x = Object(d.a)()
+        A = Object(w.a)()
           .propsFromState(function () {
             return {
-              title: Object(v.b)('title'),
-              message: Object(v.b)('message'),
-              action: Object(v.b)('action'),
-              text: Object(v.b)('text'),
-              imageAttachment: Object(v.b)('image_attachment'),
-              fromApp: w,
+              title: Object(d.b)('title'),
+              message: Object(d.b)('message'),
+              action: Object(d.b)('action'),
+              text: Object(d.b)('text'),
+              imageAttachment: Object(d.b)('image_attachment'),
+              fromApp: x,
             }
           })
           .withAnalytics({ page: 'twitterversary' }),
-        A = n('jHSc'),
-        E = n('9Xij'),
-        O = n('t62R'),
-        j = n('/yvb'),
-        k = n('rHpw'),
-        R = n('U+bB'),
-        H = n('MWbm')
-      function M(e) {
+        E = a('jHSc'),
+        O = a('9Xij'),
+        j = a('t62R'),
+        k = a('/yvb'),
+        R = a('rHpw'),
+        H = a('U+bB'),
+        M = a('MWbm')
+      function P(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -60,33 +61,33 @@
           }
         })()
         return function () {
-          var n,
-            a = h()(e)
+          var a,
+            n = h()(e)
           if (t) {
             var r = h()(this).constructor
-            n = Reflect.construct(a, arguments, r)
-          } else n = a.apply(this, arguments)
-          return m()(this, n)
+            a = Reflect.construct(n, arguments, r)
+          } else a = n.apply(this, arguments)
+          return m()(this, a)
         }
       }
-      var P = (function (e) {
-          p()(n, e)
-          var t = M(n)
-          function n() {
+      var B = (function (e) {
+          p()(a, e)
+          var t = P(a)
+          function a() {
             var e
-            r()(this, n)
-            for (var a = arguments.length, c = new Array(a), i = 0; i < a; i++) c[i] = arguments[i]
+            r()(this, a)
+            for (var n = arguments.length, c = new Array(n), i = 0; i < n; i++) c[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(c))),
               g()(s()(e), '_handleClick', function () {
                 var t = e.props,
-                  n = t.analytics,
-                  a = t.history,
+                  a = t.analytics,
+                  n = t.history,
                   r = t.imageAttachment,
                   c = t.text
-                n.scribe({ action: 'compose' }),
+                a.scribe({ action: 'compose' }),
                   c &&
-                    a.replace({
+                    n.replace({
                       pathname: '/compose/tweet',
                       state: { defaultText: ''.concat(c, ' '), externalMedia: [r] },
                     })
@@ -95,14 +96,14 @@
             )
           }
           return (
-            i()(n, [
+            i()(a, [
               {
                 key: 'componentDidMount',
                 value: function () {
                   var e = this.props,
                     t = e.fromApp,
-                    n = e.history
-                  t || n.replace('/notifications')
+                    a = e.history
+                  t || a.replace('/notifications')
                 },
               },
               {
@@ -110,39 +111,43 @@
                 value: function () {
                   var e = this.props,
                     t = e.action,
-                    n = e.history,
-                    a = e.imageAttachment,
+                    a = e.history,
+                    n = e.imageAttachment,
                     r = e.message,
                     c = e.text,
                     i = e.title
-                  return b.createElement(
-                    A.b,
-                    { backLocation: '/notifications', history: n, title: i },
-                    b.createElement(
-                      H.a,
-                      { style: B.container },
-                      b.createElement(
-                        H.a,
-                        { style: B.imageWrapper },
-                        b.createElement(E.a, { ratio: 16 / 9 }, b.createElement(R.a, { source: a, style: B.image })),
+                  return v.a.createElement(
+                    E.b,
+                    { backLocation: '/notifications', history: a, title: i },
+                    v.a.createElement(
+                      M.a,
+                      { style: L.container },
+                      v.a.createElement(
+                        M.a,
+                        { style: L.imageWrapper },
+                        v.a.createElement(
+                          O.a,
+                          { ratio: 16 / 9 },
+                          v.a.createElement(H.a, { source: n, style: L.image }),
+                        ),
                       ),
-                      b.createElement(
-                        O.b,
-                        { align: 'center', size: 'headline1', style: B.message, weight: 'heavy' },
+                      v.a.createElement(
+                        j.b,
+                        { align: 'center', size: 'headline1', style: L.message, weight: 'heavy' },
                         r,
                       ),
                       c
-                        ? b.createElement(j.a, { onPress: this._handleClick, size: 'xLarge', type: 'brandFilled' }, t)
+                        ? v.a.createElement(k.a, { onPress: this._handleClick, size: 'xLarge', type: 'brandFilled' }, t)
                         : null,
                     ),
                   )
                 },
               },
             ]),
-            n
+            a
           )
-        })(b.Component),
-        B = k.a.create(function (e) {
+        })(v.a.Component),
+        L = R.a.create(function (e) {
           return {
             container: { alignItems: 'center', marginBottom: e.spaces.space32 },
             imageWrapper: { width: '100%' },
@@ -150,7 +155,7 @@
             message: { marginHorizontal: e.spaces.space20, marginVertical: e.spaces.space32 },
           }
         })
-      t.default = x(P)
+      t.default = A(B)
     },
   },
 ])

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [230],
+  [234],
   {
     VSZh: function (e, t, n) {
       'use strict'
@@ -11,31 +11,32 @@
         c = n('zh9S'),
         a = n('Rp9C'),
         s = (n('uFXj'), n('ERkP')),
-        l = n('fRsM'),
-        p = (n('yH/f'), Object.freeze({ IncentiveFocus: 'IncentiveFocus', TopicFocus: 'TopicFocus' })),
-        u = n('MWbm'),
-        d = n('t62R'),
-        f = function (e) {
+        l = n.n(s),
+        p = n('fRsM'),
+        u = (n('yH/f'), Object.freeze({ IncentiveFocus: 'IncentiveFocus', TopicFocus: 'TopicFocus' })),
+        d = n('MWbm'),
+        f = n('t62R'),
+        m = function (e) {
           var t = e.displayType,
             n = e.subtext,
             o = e.title,
             r = e.topic,
-            i = t === p.IncentiveFocus
-          return s.createElement(
-            u.a,
-            { style: i && m.incentiveFocus },
-            s.createElement(l.a, { educateOnFollow: !0, nameWeight: i ? void 0 : 'heavy', topic: r, withIcon: !0 }),
+            i = t === u.IncentiveFocus
+          return l.a.createElement(
+            d.a,
+            { style: i && b.incentiveFocus },
+            l.a.createElement(p.a, { educateOnFollow: !0, nameWeight: i ? void 0 : 'heavy', topic: r, withIcon: !0 }),
             o || n
-              ? s.createElement(
-                  u.a,
-                  { style: [m.text, i ? m.noMarginBottom : m.border] },
-                  o ? s.createElement(d.b, { size: 'headline1', weight: 'bold' }, o) : null,
-                  n ? s.createElement(d.b, { color: 'gray700' }, n) : null,
+              ? l.a.createElement(
+                  d.a,
+                  { style: [b.text, i ? b.noMarginBottom : b.border] },
+                  o ? l.a.createElement(f.b, { size: 'headline1', weight: 'bold' }, o) : null,
+                  n ? l.a.createElement(f.b, { color: 'gray700' }, n) : null,
                 )
               : null,
           )
         },
-        m = n('rHpw').a.create(function (e) {
+        b = n('rHpw').a.create(function (e) {
           return {
             border: {
               borderTopStyle: 'solid',
@@ -52,8 +53,8 @@
             },
           }
         }),
-        b = n('Zejx')
-      function h(e, t) {
+        h = n('Zejx')
+      function y(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var o = Object.getOwnPropertySymbols(e)
@@ -65,23 +66,23 @@
         }
         return n
       }
-      function y(e) {
+      function g(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? h(Object(n), !0).forEach(function (t) {
+            ? y(Object(n), !0).forEach(function (t) {
                 r()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : h(Object(n)).forEach(function (t) {
+            : y(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
       var I = i.g({
-        component: f,
+        component: m,
         bindActions: function () {
           return { scribe: c.c }
         },
@@ -89,7 +90,7 @@
           var t = e.entry.content
           return {
             topic: function (e) {
-              return b.a.select(e, t.topicId)
+              return h.a.select(e, t.topicId)
             },
           }
         },
@@ -106,7 +107,7 @@
         onImpression: function (e) {
           var t = e.actions.scribe,
             n = e.scribeData
-          t(y(y({}, e.scribeNamespace), {}, { action: 'impression' }), n)
+          t(g(g({}, e.scribeNamespace), {}, { action: 'impression' }), n)
         },
       })
       t.default = I
@@ -129,23 +130,23 @@
         b = n('KEM+'),
         h = n.n(b),
         y = (n('1t7P'), n('jQ/y'), n('ho0z'), n('7xRU'), n('ERkP')),
+        g = n.n(y),
         I = n('LWCC'),
-        g = n('3XMw'),
-        v = n.n(g),
-        O = n('EHV7'),
-        w = n('YICZ'),
-        D = n('3IPs'),
-        j = n('X04g'),
-        x = n('Irs7'),
-        E = n('hxu0'),
+        v = n('3XMw'),
+        O = n.n(v),
+        w = n('EHV7'),
+        D = n('YICZ'),
+        j = n('3IPs'),
+        x = n('X04g'),
+        E = n('MWbm'),
+        P = n('Irs7'),
+        k = n('hxu0'),
         _ = n('htQn'),
-        P = n('t62R'),
-        k = n('j7Bv'),
-        S = n('rHpw'),
-        R = n('v6aA'),
-        T = n('U+bB'),
-        L = n('MWbm')
-      function B(e, t) {
+        S = n('t62R'),
+        R = n('j7Bv'),
+        T = n('rHpw'),
+        L = n('v6aA')
+      function F(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var o = Object.getOwnPropertySymbols(e)
@@ -157,16 +158,16 @@
         }
         return n
       }
-      function F(e) {
+      function B(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? B(Object(n), !0).forEach(function (t) {
+            ? F(Object(n), !0).forEach(function (t) {
                 h()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : B(Object(n)).forEach(function (t) {
+            : F(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
@@ -193,7 +194,7 @@
           return d()(this, n)
         }
       }
-      var H = v.a.a2a3824a,
+      var H = O.a.a2a3824a,
         M = 0,
         z = (function (e) {
           p()(n, e)
@@ -206,8 +207,8 @@
               h()(s()(i), '_topicLink', {
                 pathname: '/i/topics/'.concat(i.props.topic.id),
                 state: {
-                  referringScribeNamespace: F(
-                    F({}, i.props.analytics.contextualScribeNamespace),
+                  referringScribeNamespace: B(
+                    B({}, i.props.analytics.contextualScribeNamespace),
                     {},
                     { action: 'click' },
                   ),
@@ -223,8 +224,8 @@
                   a = o.name
                 t &&
                   n &&
-                  n(j.a.ItemType.TOPIC) &&
-                  t({ topic: { id: c, name: a, description: r || '', type: D.a.Topic } }),
+                  n(x.a.ItemType.TOPIC) &&
+                  t({ topic: { id: c, name: a, description: r || '', type: j.a.Topic } }),
                   i._handleScribe('click')
               }),
               (i._topicDomId = 'topic'.concat(M)),
@@ -250,7 +251,7 @@
                     c = i.description,
                     a = i.name,
                     s = this.context.loggedInUserId
-                  return y.createElement(
+                  return g.a.createElement(
                     _.a,
                     {
                       accessibilityLabelledBy: [
@@ -266,34 +267,34 @@
                       style: [W.root, W.flexStart],
                       withDarkerInteractiveBackground: n,
                     },
-                    y.createElement(
-                      L.a,
+                    g.a.createElement(
+                      E.a,
                       { style: W.topic },
-                      y.createElement(L.a, { accessibilityLabel: H, nativeID: this._topicDomId }),
+                      g.a.createElement(E.a, { accessibilityLabel: H, nativeID: this._topicDomId }),
                       this._renderIcon(),
-                      y.createElement(
-                        L.a,
+                      g.a.createElement(
+                        E.a,
                         { style: W.text },
-                        y.createElement(
-                          P.b,
+                        g.a.createElement(
+                          S.b,
                           { nativeID: this._nameDomId, weight: o, withInteractiveStyling: !!this._topicLink },
                           a,
                         ),
                         c
-                          ? y.createElement(
-                              P.b,
+                          ? g.a.createElement(
+                              S.b,
                               { color: 'gray700', nativeID: this._descriptionDomId, numberOfLines: 2 },
                               c,
                             )
                           : null,
                       ),
                     ),
-                    y.createElement(
-                      L.a,
+                    g.a.createElement(
+                      E.a,
                       { style: W.buttons },
-                      y.createElement(I.a, { educateOnFollow: t, nativeID: this._followButtonDomId, topic: i }),
+                      g.a.createElement(I.a, { educateOnFollow: t, nativeID: this._followButtonDomId, topic: i }),
                       s && r
-                        ? y.createElement(w.a, {
+                        ? g.a.createElement(D.a, {
                             nativeID: this._notInterestedButtonDomId,
                             onPress: r,
                             style: W.marginLeft,
@@ -307,12 +308,8 @@
               {
                 key: '_renderIcon',
                 value: function () {
-                  var e = this.props,
-                    t = e.topic.icon_url
-                  return e.withIcon
-                    ? t && this.context.featureSwitches.isTrue('topic_icons_enabled')
-                      ? y.createElement(T.a, { source: t, style: [W.icon, W.customIcon] })
-                      : y.createElement(k.a, { Icon: O.a, size: 'large', style: W.icon })
+                  return this.props.withIcon
+                    ? g.a.createElement(R.a, { Icon: w.a, size: 'large', style: W.icon })
                     : null
                 },
               },
@@ -325,9 +322,9 @@
             ]),
             n
           )
-        })(y.Component)
-      h()(z, 'contextType', R.a), h()(z, 'defaultProps', { nameWeight: 'bold', withIcon: !0 })
-      var W = S.a.create(function (e) {
+        })(g.a.Component)
+      h()(z, 'contextType', L.a), h()(z, 'defaultProps', { nameWeight: 'bold', withIcon: !0 })
+      var W = T.a.create(function (e) {
         return {
           root: {
             flexDirection: 'row',
@@ -344,18 +341,19 @@
           topic: { alignItems: 'center', flexDirection: 'row', flexShrink: 1, paddingRight: e.spaces.space4 },
         }
       })
-      t.a = Object(E.a)(Object(x.a)(z))
+      t.a = Object(k.a)(Object(P.a)(z))
     },
     hxu0: function (e, t, n) {
       'use strict'
       var o = n('97Jx'),
         r = n.n(o),
         i = n('ERkP'),
-        c = n('vqbU')
+        c = n.n(i),
+        a = n('vqbU')
       t.a = function (e) {
         return function (t) {
-          return i.createElement(c.a.Consumer, null, function (n) {
-            return i.createElement(e, r()({}, t, { isInSidebar: n }))
+          return c.a.createElement(a.a.Consumer, null, function (n) {
+            return c.a.createElement(e, r()({}, t, { isInSidebar: n }))
           })
         }
       }

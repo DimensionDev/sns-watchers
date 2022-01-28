@@ -1,10 +1,10 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [188],
+  [190],
   {
     '0nHQ': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return C
+        return S
       })
       n('OZaJ')
       var r = n('VrFO'),
@@ -22,37 +22,38 @@
         h = n('KEM+'),
         v = n.n(h),
         E = (n('2G9S'), n('ERkP')),
-        _ = n('Yyzf'),
-        R = n('3XMw'),
-        b = n.n(R),
-        m = b.a.c1658fc6,
-        O = {
-          BROADCAST_REQUEST_ERROR: m,
-          BROADCAST_ENDED_NO_REPLAY: b.a.ce871584,
-          BROADCAST_NOT_FOUND: b.a.c101eb95,
-          CONFIG_USER_DATA_NETWORK_ERROR: m,
-          CONFIG_NETWORK_ERROR: m,
-          DMCA_TAKEDOWN_ERROR: b.a.gb24a513,
-          EUROPEAN_COPYRIGHT_VIOLATION: b.a.hcaf3e62,
-          LIVE_PARSE_ERROR: m,
-          LIVE_STREAM_ACQUISITION_MISSING_CONTENT_ID: m,
-          LIVE_STREAM_ACQUISITION_NETWORK_ERROR: m,
-          LIVE_VIDEO_GEOBLOCK_ERROR: b.a.if05c037,
-          LIVE_VIDEO_COPYRIGHT_VIOLATION_ERROR: b.a.d420171a,
-          LIVE_VIDEO_GEOLOCATION_PROMPT: b.a.b1eb72f9,
-          MEDIA_NOT_SUPPORTED: b.a.c057680b,
-          MEDIA_SRC_INVALID_ERROR: m,
-          MEDIA_ABORTED: m,
-          MEDIA_NETWORK_ERROR: m,
-          MEDIA_DECODE_ERROR: m,
-          MEDIA_GEOBLOCK_ERROR: b.a.i5dfae6e,
-          MEDIA_UNKNOWN_CODE_ERROR: m,
-          ORIGINAL_CONTEXT_DELETED: b.a.c2388276,
-          UNSUPPORTED_TYPE: m,
-          VMAP_NETWORK_ERROR: m,
-          VMAP_PARSE_ERROR: m,
+        _ = n.n(E),
+        R = n('Yyzf'),
+        b = n('3XMw'),
+        m = n.n(b),
+        O = m.a.c1658fc6,
+        g = {
+          BROADCAST_REQUEST_ERROR: O,
+          BROADCAST_ENDED_NO_REPLAY: m.a.ce871584,
+          BROADCAST_NOT_FOUND: m.a.c101eb95,
+          CONFIG_USER_DATA_NETWORK_ERROR: O,
+          CONFIG_NETWORK_ERROR: O,
+          DMCA_TAKEDOWN_ERROR: m.a.gb24a513,
+          EUROPEAN_COPYRIGHT_VIOLATION: m.a.hcaf3e62,
+          LIVE_PARSE_ERROR: O,
+          LIVE_STREAM_ACQUISITION_MISSING_CONTENT_ID: O,
+          LIVE_STREAM_ACQUISITION_NETWORK_ERROR: O,
+          LIVE_VIDEO_GEOBLOCK_ERROR: m.a.if05c037,
+          LIVE_VIDEO_COPYRIGHT_VIOLATION_ERROR: m.a.d420171a,
+          LIVE_VIDEO_GEOLOCATION_PROMPT: m.a.b1eb72f9,
+          MEDIA_NOT_SUPPORTED: m.a.c057680b,
+          MEDIA_SRC_INVALID_ERROR: O,
+          MEDIA_ABORTED: O,
+          MEDIA_NETWORK_ERROR: O,
+          MEDIA_DECODE_ERROR: O,
+          MEDIA_GEOBLOCK_ERROR: m.a.i5dfae6e,
+          MEDIA_UNKNOWN_CODE_ERROR: O,
+          ORIGINAL_CONTEXT_DELETED: m.a.c2388276,
+          UNSUPPORTED_TYPE: O,
+          VMAP_NETWORK_ERROR: O,
+          VMAP_PARSE_ERROR: O,
         }
-      function g(e) {
+      function C(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -73,9 +74,9 @@
           return p()(this, n)
         }
       }
-      var C = (function (e) {
+      var S = (function (e) {
         s()(n, e)
-        var t = g(n)
+        var t = C(n)
         function n() {
           var e
           a()(this, n)
@@ -106,7 +107,7 @@
                   a = e.playerApi,
                   o = e.playerState
                 return a && o
-                  ? E.createElement(_.a, {
+                  ? _.a.createElement(R.a, {
                       displayBackgroundImage: n,
                       errorMessage: this._buildMessage(),
                       iconPlayError: 'BROADCAST_NOT_FOUND' === o.error,
@@ -125,86 +126,91 @@
                     n = e.errorData
                   if ('LIVE_VIDEO_COPYRIGHT_VIOLATION_ERROR' === t || 'EUROPEAN_COPYRIGHT_VIOLATION' === t) {
                     var r = (n || {}).copyrightHolder
-                    return r ? O[t]({ holder: r }) : m
+                    return r ? g[t]({ holder: r }) : O
                   }
-                  return (t && O[t]) || m
+                  return (t && g[t]) || O
                 }
               },
             },
           ]),
           n
         )
-      })(E.Component)
+      })(_.a.Component)
     },
     KoZZ: function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'default', function () {
-          return _
+          return R
         })
       var r = n('ERkP'),
-        a = n('t62R'),
-        o = n('aoyV'),
-        i = n('kCRK'),
-        c = n('fZNH'),
-        u = n('0nHQ'),
-        l = n('USG3'),
-        s = n('Q0n6'),
-        f = n('n8uP'),
-        p = n('Wms4'),
-        d = n('Ur4q'),
-        y = n('oH2E'),
-        h = n('rHpw'),
-        v = n('zCLo'),
-        E = n('MWbm')
-      function _(e) {
+        a = n.n(r),
+        o = n('t62R'),
+        i = n('aoyV'),
+        c = n('kCRK'),
+        u = n('fZNH'),
+        l = n('0nHQ'),
+        s = n('USG3'),
+        f = n('Q0n6'),
+        p = n('n8uP'),
+        d = n('Wms4'),
+        y = n('Ur4q'),
+        h = n('oH2E'),
+        v = n('rHpw'),
+        E = n('zCLo'),
+        _ = n('MWbm')
+      function R(e) {
         var t,
           n = e.hashtagHighlightProps,
-          h = e.playerApi,
-          _ = e.playerDisplayOptions,
-          b = e.playerState,
+          r = e.playerApi,
+          v = e.playerDisplayOptions,
+          R = e.playerState,
           m = e.poster,
           O = e.useKeyboardShortcuts
-        if (!h || !b) return null
-        var g = b && Object(s.e)(b)
-        if (!g || g.contentType !== i.a.GIF || !n) return null
-        if (!!b.error)
-          return r.createElement(l.a, { show: !0 }, r.createElement(u.a, { imageSrc: m, playerApi: h, playerState: b }))
-        var C = !(null != _ && _.hidePosterImage),
-          S = 'PLAY_REQUESTED' !== (null === (t = b.controls) || void 0 === t ? void 0 : t.playState),
-          P = b.tracksFinished
-        return r.createElement(
-          v.a,
-          { enabled: !!O, playerApi: h, playerState: b },
-          r.createElement(
-            c.a,
-            { playerState: b },
-            r.createElement(
-              r.Fragment,
+        if (!r || !R) return null
+        var g = R && Object(f.e)(R)
+        if (!g || g.contentType !== c.a.GIF || !n) return null
+        if (!!R.error)
+          return a.a.createElement(
+            s.a,
+            { show: !0 },
+            a.a.createElement(l.a, { imageSrc: m, playerApi: r, playerState: R }),
+          )
+        var C = !(null != v && v.hidePosterImage),
+          S = 'PLAY_REQUESTED' !== (null === (t = R.controls) || void 0 === t ? void 0 : t.playState),
+          P = R.tracksFinished
+        return a.a.createElement(
+          E.a,
+          { enabled: !!O, playerApi: r, playerState: R },
+          a.a.createElement(
+            u.a,
+            { playerState: R },
+            a.a.createElement(
+              a.a.Fragment,
               null,
-              r.createElement(d.a, { playerApi: h, playerDisplayOptions: _, playerState: b }),
-              C && !P && r.createElement(y.a, { imageSrc: m, playerApi: h, playerState: b, withPlayButton: S }),
-              r.createElement(o.a, { playerState: b }),
-              r.createElement(
-                E.a,
-                { style: R.root },
-                r.createElement(
-                  E.a,
-                  { style: R.gifLabel },
-                  r.createElement(p.a, null, r.createElement(a.b, { weight: 'bold' }, 'GIF')),
+              a.a.createElement(y.a, { playerApi: r, playerDisplayOptions: v, playerState: R }),
+              C && !P && a.a.createElement(h.a, { imageSrc: m, playerApi: r, playerState: R, withPlayButton: S }),
+              a.a.createElement(i.a, { playerState: R }),
+              a.a.createElement(
+                _.a,
+                { style: b.root },
+                a.a.createElement(
+                  _.a,
+                  { style: b.gifLabel },
+                  a.a.createElement(d.a, null, a.a.createElement(o.b, { weight: 'bold' }, 'GIF')),
                 ),
-                r.createElement(E.a, { style: R.hashtagHighlight }, r.createElement(f.a, n)),
-                r.createElement(
-                  p.a,
-                  { style: [R.gifLabel, R.invisibleBadge] },
-                  r.createElement(a.b, { weight: 'bold' }, 'GIF'),
+                a.a.createElement(_.a, { style: b.hashtagHighlight }, a.a.createElement(p.a, n)),
+                a.a.createElement(
+                  d.a,
+                  { style: [b.gifLabel, b.invisibleBadge] },
+                  a.a.createElement(o.b, { weight: 'bold' }, 'GIF'),
                 ),
               ),
             ),
           ),
         )
       }
-      var R = h.a.create(function (e) {
+      var b = v.a.create(function (e) {
         return {
           root: {
             position: 'absolute',
@@ -385,15 +391,16 @@
     USG3: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return f
+        return p
       })
       n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var r = n('KEM+'),
         a = n.n(r),
         o = n('ddV6'),
         i = n.n(o),
-        c = n('ERkP')
-      function u(e, t) {
+        c = n('ERkP'),
+        u = n.n(c)
+      function l(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -405,49 +412,49 @@
         }
         return n
       }
-      function l(e) {
+      function s(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? u(Object(n), !0).forEach(function (t) {
+            ? l(Object(n), !0).forEach(function (t) {
                 a()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : u(Object(n)).forEach(function (t) {
+            : l(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var s = {
+      var f = {
         transitionDuration: '250ms',
         transitionProperty: 'opacity, height',
         transitionTimingFunction: 'ease',
         willChange: 'opacity',
       }
-      function f(e) {
+      function p(e) {
         var t = e.children,
           n = e.show,
-          r = c.useState(!n),
+          r = u.a.useState(!n),
           a = i()(r, 2),
           o = a[0],
-          u = a[1]
+          c = a[1]
         return (
-          c.useEffect(
+          u.a.useEffect(
             function () {
-              n && o && u(!1)
+              n && o && c(!1)
             },
             [o, n],
           ),
-          c.useMemo(
+          u.a.useMemo(
             function () {
-              var e = l(l({}, s), {}, { opacity: n ? 1 : 0 })
-              return c.createElement(
+              var e = s(s({}, f), {}, { opacity: n ? 1 : 0 })
+              return u.a.createElement(
                 'div',
                 {
                   onTransitionEnd: function (e) {
-                    n || o || u(!0)
+                    n || o || c(!0)
                   },
                   style: e,
                 },
@@ -477,13 +484,14 @@
         h = n('KEM+'),
         v = n.n(h),
         E = (n('2G9S'), n('ERkP')),
-        _ = n('kCRK'),
-        R = n('Q0n6'),
-        b = n('7nmT'),
-        m = n.n(b),
-        O = n('rHpw'),
-        g = n('MWbm')
-      function C(e) {
+        _ = n.n(E),
+        R = n('kCRK'),
+        b = n('Q0n6'),
+        m = n('7nmT'),
+        O = n.n(m),
+        g = n('rHpw'),
+        C = n('MWbm')
+      function S(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -504,9 +512,9 @@
           return p()(this, n)
         }
       }
-      var S = (function (e) {
+      var P = (function (e) {
           s()(n, e)
-          var t = C(n)
+          var t = S(n)
           function n() {
             var e
             a()(this, n)
@@ -515,16 +523,16 @@
               (e = t.call.apply(t, [this].concat(o))),
               v()(u()(e), 'state', { grabbing: !1 }),
               v()(u()(e), '_firstClick', !0),
-              v()(u()(e), '_componentRef', E.createRef()),
+              v()(u()(e), '_componentRef', _.a.createRef()),
               v()(u()(e), '_handleMouseDown', function () {
                 var t = e.props.playerState,
-                  n = t && Object(R.e)(t)
+                  n = t && Object(b.e)(t)
                 n && n.is360 && e._setEventListener('mousemove', e._handleMouseMove),
                   e._setEventListener('mouseup', e._handleMouseUp)
               }),
               v()(u()(e), '_handleMouseMove', function () {
                 var t = e.props.playerState,
-                  n = t && Object(R.e)(t)
+                  n = t && Object(b.e)(t)
                 n && n.is360 && (e.setState({ grabbing: !0 }), e._setEventListener('mouseup', e._handleGrabRelease)),
                   e._unsetEventListener('mousemove', e._handleMouseMove),
                   e._unsetEventListener('mouseup', e._handleMouseUp)
@@ -547,8 +555,8 @@
                   u = n.playerState
                 if (o) return o(t)
                 if (i && u) {
-                  var l = Object(R.e)(u),
-                    s = l && l.contentType && l.contentType === _.a.GIF
+                  var l = Object(b.e)(u),
+                    s = l && l.contentType && l.contentType === R.a.GIF
                   if (e._firstClick && !s && ((e._firstClick = !1), u.isMuted)) return void i.unmute()
                   if (a && r) return
                   var f = i.pause,
@@ -569,11 +577,11 @@
                 }
               }),
               v()(u()(e), '_setEventListener', function (t, n) {
-                var r = m.a.findDOMNode(e._componentRef.current)
+                var r = O.a.findDOMNode(e._componentRef.current)
                 r && r.addEventListener(t, n)
               }),
               v()(u()(e), '_unsetEventListener', function (t, n) {
-                var r = m.a.findDOMNode(e._componentRef.current)
+                var r = O.a.findDOMNode(e._componentRef.current)
                 r && r.removeEventListener(t, n)
               }),
               v()(u()(e), '_handleLiveClickthrough', function () {
@@ -582,7 +590,7 @@
                   r = t.playerDisplayOptions,
                   a = t.playerState,
                   o = r && r.liveClickthrough,
-                  i = a && Object(R.e)(a)
+                  i = a && Object(b.e)(a)
                 if (o && a && i && n) {
                   var c = o.url || a.eventUrl || i.broadcastShareUrl
                   c && (window.open(c, o.target || '_blank'), n.liveClickthroughClicked())
@@ -598,23 +606,23 @@
                 value: function () {
                   var e = this.props.playerState,
                     t = this.state.grabbing,
-                    n = e && Object(R.e)(e),
+                    n = e && Object(b.e)(e),
                     r = n && n.is360
-                  return E.createElement(g.a, {
+                  return _.a.createElement(C.a, {
                     onMouseDown: this._handleMouseDown,
                     ref: this._componentRef,
-                    style: [O.a.absoluteFill, r ? (t ? P.base360grabbing : P.base360) : P.base],
+                    style: [g.a.absoluteFill, r ? (t ? T.base360grabbing : T.base360) : T.base],
                   })
                 },
               },
             ]),
             n
           )
-        })(E.Component),
-        P = O.a.create(function (e) {
+        })(_.a.Component),
+        T = g.a.create(function (e) {
           return { base: { cursor: 'pointer' }, base360: { cursor: 'grab' }, base360grabbing: { cursor: 'grabbing' } }
         })
-      t.a = S
+      t.a = P
     },
     aoyV: function (e, t, n) {
       'use strict'
@@ -634,11 +642,12 @@
         h = n('KEM+'),
         v = n.n(h),
         E = (n('2G9S'), n('ERkP')),
-        _ = n('Qwev'),
-        R = n('Q0n6'),
-        b = n('rHpw'),
-        m = n('MWbm')
-      function O(e) {
+        _ = n.n(E),
+        R = n('Qwev'),
+        b = n('Q0n6'),
+        m = n('rHpw'),
+        O = n('MWbm')
+      function g(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -659,9 +668,9 @@
           return p()(this, n)
         }
       }
-      var g = (function (e) {
+      var C = (function (e) {
         s()(n, e)
-        var t = O(n)
+        var t = g(n)
         function n() {
           var e
           a()(this, n)
@@ -718,12 +727,12 @@
                 value: function () {
                   var e = this.props.playerState
                   if (!e) return null
-                  var t = Object(R.e)(e)
+                  var t = Object(b.e)(e)
                   return (t && t.isBuffering) || this.state.waitingForPlayback
-                    ? E.createElement(
-                        m.a,
-                        { pointerEvents: 'none', style: [b.a.absoluteFill, C.buttonContainer] },
-                        E.createElement(_.a, { color: b.a.theme.colors.white, size: 60 }),
+                    ? _.a.createElement(
+                        O.a,
+                        { pointerEvents: 'none', style: [m.a.absoluteFill, S.buttonContainer] },
+                        _.a.createElement(R.a, { color: m.a.theme.colors.white, size: 60 }),
                       )
                     : null
                 },
@@ -741,12 +750,12 @@
           ),
           n
         )
-      })(E.Component)
-      v()(g, 'defaultProps', { waitingForPlaybackThresholdMs: 1e3 })
-      var C = b.a.create(function (e) {
+      })(_.a.Component)
+      v()(C, 'defaultProps', { waitingForPlaybackThresholdMs: 1e3 })
+      var S = m.a.create(function (e) {
         return { buttonContainer: { justifyContent: 'center', alignItems: 'center' } }
       })
-      t.a = g
+      t.a = C
     },
     fZNH: function (e, t, n) {
       'use strict'
@@ -766,15 +775,16 @@
         h = n('KEM+'),
         v = n.n(h),
         E = (n('2G9S'), n('uFXj'), n('ERkP')),
-        _ = n('Q0n6'),
-        R = n('3XMw'),
-        b = n.n(R),
-        m = n('CKsB'),
-        O = n('rHpw'),
-        g = n('kCRK'),
-        C = n('shC7'),
-        S = n('MWbm')
-      function P(e) {
+        _ = n.n(E),
+        R = n('Q0n6'),
+        b = n('3XMw'),
+        m = n.n(b),
+        O = n('CKsB'),
+        g = n('rHpw'),
+        C = n('kCRK'),
+        S = n('shC7'),
+        P = n('MWbm')
+      function T(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -795,11 +805,11 @@
           return p()(this, n)
         }
       }
-      var T = b.a.d26d8730,
-        M = b.a.f1b6bcec,
-        A = (function (e) {
+      var M = m.a.d26d8730,
+        A = m.a.f1b6bcec,
+        I = (function (e) {
           s()(n, e)
-          var t = P(n)
+          var t = T(n)
           function n() {
             var e
             a()(this, n)
@@ -816,7 +826,7 @@
                       null !== (r = t.source) &&
                       void 0 !== r &&
                       r.id &&
-                      (t.source.type === g.e.TWEET || t.source.type === g.e.BROADCAST))
+                      (t.source.type === C.e.TWEET || t.source.type === C.e.BROADCAST))
                   ) {
                     document.addEventListener('click', e._handleCloseContextMenu)
                     var a = n.currentTarget.getBoundingClientRect()
@@ -841,16 +851,16 @@
                 o &&
                   i &&
                   t.clipboardData &&
-                  (i === g.e.BROADCAST
+                  (i === C.e.BROADCAST
                     ? t.clipboardData.setData('text/plain', 'https://twitter.com/i/broadcasts/'.concat(o))
-                    : i === g.e.TWEET &&
+                    : i === C.e.TWEET &&
                       t.clipboardData.setData('text/plain', 'https://twitter.com/i/status/'.concat(o)),
                   t.preventDefault()),
                   document.removeEventListener('copy', e._handleCopy)
               }),
               v()(u()(e), '_isGif', function (e) {
-                var t = e && Object(_.j)(e)
-                return t && t.contentType === g.a.GIF
+                var t = e && Object(R.j)(e)
+                return t && t.contentType === C.a.GIF
               }),
               e
             )
@@ -868,16 +878,16 @@
                     o = r.positionX,
                     i = r.positionY,
                     c = this._isGif(n),
-                    u = C.a.getConstants().isRTL ? { top: i, right: o } : { top: i, left: o }
-                  return E.createElement(
-                    S.a,
-                    { onContextMenu: this._handleOpenContextMenu(n), style: O.a.absoluteFill },
+                    u = S.a.getConstants().isRTL ? { top: i, right: o } : { top: i, left: o }
+                  return _.a.createElement(
+                    P.a,
+                    { onContextMenu: this._handleOpenContextMenu(n), style: g.a.absoluteFill },
                     t,
                     a &&
-                      E.createElement(
-                        S.a,
-                        { style: [I.menuWrapper, u] },
-                        E.createElement(m.a, { actionText: c ? M : T, onClick: this._handleCopyVideoAddress }),
+                      _.a.createElement(
+                        P.a,
+                        { style: [k.menuWrapper, u] },
+                        _.a.createElement(O.a, { actionText: c ? A : M, onClick: this._handleCopyVideoAddress }),
                       ),
                   )
                 },
@@ -885,9 +895,9 @@
             ]),
             n
           )
-        })(E.Component)
-      t.a = A
-      var I = O.a.create(function (e) {
+        })(_.a.Component)
+      t.a = I
+      var k = g.a.create(function (e) {
         return {
           menuWrapper: {
             borderRadius: e.borderRadii.small,
@@ -943,12 +953,13 @@
         E = n('KEM+'),
         _ = n.n(E),
         R = (n('2G9S'), n('ERkP')),
-        b = n('3rX5'),
-        m = n('cm6r'),
-        O = n('rHpw'),
-        g = n('mXq/'),
-        C = n('Q0n6')
-      function S(e) {
+        b = n.n(R),
+        m = n('3rX5'),
+        O = n('cm6r'),
+        g = n('rHpw'),
+        C = n('mXq/'),
+        S = n('Q0n6')
+      function P(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -969,9 +980,9 @@
           return y()(this, n)
         }
       }
-      var P = (function (e) {
+      var T = (function (e) {
         p()(n, e)
-        var t = S(n)
+        var t = P(n)
         function n() {
           var e
           i()(this, n)
@@ -996,91 +1007,92 @@
                   n = e.playerState,
                   r = e.withPlayButton
                 if (!(t && n && n.controls && n.controls.isPosterShown)) return null
-                var o = Object(C.j)(n),
+                var o = Object(S.j)(n),
                   i = this.props.imageSrc || n.posterImage,
-                  c = Object(C.l)(o)
-                return R.createElement(
-                  m.a,
+                  c = Object(S.l)(o)
+                return b.a.createElement(
+                  O.a,
                   a()({}, r ? null : { accessibilityLabel: c }, {
                     focusable: !r,
                     interactiveStyles: null,
                     onPress: this._playVideo(t),
-                    style: [O.a.absoluteFill, T.buttonContainer],
+                    style: [g.a.absoluteFill, M.buttonContainer],
                   }),
-                  i && R.createElement(b.a, { resizeMode: 'cover', source: i, style: O.a.absoluteFill }),
-                  r && R.createElement(g.a, { accessibilityLabel: c, onPress: this._playVideo(t), type: 'video' }),
+                  i && b.a.createElement(m.a, { resizeMode: 'cover', source: i, style: g.a.absoluteFill }),
+                  r && b.a.createElement(C.a, { accessibilityLabel: c, onPress: this._playVideo(t), type: 'video' }),
                 )
               },
             },
           ]),
           n
         )
-      })(R.Component)
-      _()(P, 'defaultProps', { withPlayButton: !0 })
-      var T = O.a.create(function (e) {
+      })(b.a.Component)
+      _()(T, 'defaultProps', { withPlayButton: !0 })
+      var M = g.a.create(function (e) {
         return { buttonContainer: { justifyContent: 'center', alignItems: 'center' } }
       })
-      t.a = P
+      t.a = T
     },
     zCLo: function (e, t, n) {
       'use strict'
       var r = n('KEM+'),
         a = n.n(r),
         o = (n('Blm6'), n('ERkP')),
-        i = n('wD1h'),
-        c = n('oLZl'),
-        u = n('rHpw'),
-        l = n('MWbm')
+        i = n.n(o),
+        c = n('wD1h'),
+        u = n('oLZl'),
+        l = n('rHpw'),
+        s = n('MWbm')
       t.a = function (e) {
         var t,
-          n = o.useRef(null),
+          n = i.a.useRef(null),
           r = e.enabled,
-          s = e.playerApi,
+          o = e.playerApi,
           f = e.playerState
         if (!r) return e.children || null
         var p = function (e) {
-            s && f && (f.isPlaying ? s.pause() : s.play())
+            o && f && (f.isPlaying ? o.pause() : o.play())
           },
           d = function (e) {
-            if (s && f) {
+            if (o && f) {
               var t = parseInt(e.key, 10) / 10
-              s.scrubToFraction(t)
+              o.scrubToFraction(t)
             }
           }
-        return o.createElement(
-          i.a,
+        return i.a.createElement(
+          c.a,
           {
             containerRef: n,
             enabled: !0,
             handlers:
               ((t = {}),
-              a()(t, c.a.K, p),
-              a()(t, c.a.M, function (e) {
-                s && f && (f.isMuted ? s.unmute() : s.mute())
+              a()(t, u.a.K, p),
+              a()(t, u.a.M, function (e) {
+                o && f && (f.isMuted ? o.unmute() : o.mute())
               }),
-              a()(t, c.a.Space, p),
-              a()(t, c.a.C, function (e) {
-                s && f && s.toggleCaptions()
+              a()(t, u.a.Space, p),
+              a()(t, u.a.C, function (e) {
+                o && f && o.toggleCaptions()
               }),
-              a()(t, c.a.Home, function (e) {
-                s && f && s.scrubToFraction(0)
+              a()(t, u.a.Home, function (e) {
+                o && f && o.scrubToFraction(0)
               }),
-              a()(t, c.a[0], d),
-              a()(t, c.a[1], d),
-              a()(t, c.a[2], d),
-              a()(t, c.a[3], d),
-              a()(t, c.a[4], d),
-              a()(t, c.a[5], d),
-              a()(t, c.a[6], d),
-              a()(t, c.a[7], d),
-              a()(t, c.a[8], d),
-              a()(t, c.a[9], d),
-              a()(t, c.a.End, function (e) {
-                s && f && s.scrubToFraction(1)
+              a()(t, u.a[0], d),
+              a()(t, u.a[1], d),
+              a()(t, u.a[2], d),
+              a()(t, u.a[3], d),
+              a()(t, u.a[4], d),
+              a()(t, u.a[5], d),
+              a()(t, u.a[6], d),
+              a()(t, u.a[7], d),
+              a()(t, u.a[8], d),
+              a()(t, u.a[9], d),
+              a()(t, u.a.End, function (e) {
+                o && f && o.scrubToFraction(1)
               }),
               t),
           },
-          o.createElement(l.a, { focusable: !0, ref: n, style: u.a.absoluteFill }, e.children),
+          i.a.createElement(s.a, { focusable: !0, ref: n, style: l.a.absoluteFill }, e.children),
         )
       }
     },

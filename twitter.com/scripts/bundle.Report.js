@@ -397,7 +397,7 @@
       'use strict'
       r.r(t),
         r.d(t, 'ReportScreen', function () {
-          return Re
+          return Ie
         })
       r('OZaJ'), r('1t7P'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
       var n = r('VrFO'),
@@ -415,88 +415,89 @@
         _ = r('KEM+'),
         v = r.n(_),
         b = (r('MvUL'), r('KqXw'), r('hBpG'), r('7xRU'), r('z84I'), r('LW0h'), r('+KXO'), r('2G9S'), r('ERkP')),
-        h = r('EbOo'),
-        y = (r('WNMA'), r('RqPI')),
-        g = r('1YZw'),
-        w = r('aWyx'),
-        E = r('MMRb'),
-        O = r('kHBp'),
-        T = r('lPpt'),
-        C = r('Fg8X'),
-        A = r('0pUJ'),
-        M = r('Fmkq'),
-        R = r('QK5w'),
-        I = r('V5Qi'),
-        U = r('XOJV'),
-        k = r('G6rE'),
-        D = r('rxPX'),
-        S = r('0KEI'),
-        j = r('fz3c'),
-        x = function (e, t) {
+        h = r.n(b),
+        y = r('EbOo'),
+        g = (r('WNMA'), r('RqPI')),
+        w = r('1YZw'),
+        E = r('aWyx'),
+        O = r('MMRb'),
+        T = r('kHBp'),
+        C = r('lPpt'),
+        A = r('Fg8X'),
+        M = r('0pUJ'),
+        R = r('Fmkq'),
+        I = r('QK5w'),
+        U = r('V5Qi'),
+        k = r('XOJV'),
+        D = r('G6rE'),
+        S = r('rxPX'),
+        j = r('0KEI'),
+        x = r('fz3c'),
+        P = function (e, t) {
           return t.location && t.location.state && t.location.state.clientReferer
         },
-        P = function (e, t) {
+        L = function (e, t) {
           return t.location && t.location.state && t.location.state.inboxType
         },
-        L = function (e, t) {
+        N = function (e, t) {
           return t.location && t.location.state && t.location.state.scribeNamespace
         },
-        N = function (e, t) {
+        H = function (e, t) {
           return !!(t.location && t.location.state && t.location.state.isMedia) || !1
         },
-        H = function (e, t) {
+        F = function (e, t) {
           return t.location && t.location.state && t.location.state.promotedContent
         },
-        F = function (e, t) {
+        B = function (e, t) {
           return t.location && t.location.state && t.location.state.conversationSection
         },
-        B = function (e, t) {
-          return Object(j.e)(q(e, t))
-        },
         q = function (e, t) {
-          return t.match.params.reportType
+          return Object(x.e)(G(e, t))
         },
         G = function (e, t) {
-          return t.match.params.reportedId
+          return t.match.params.reportType
         },
         W = function (e, t) {
-          var r = q(e, t),
-            n = G(0, t)
+          return t.match.params.reportedId
+        },
+        V = function (e, t) {
+          var r = G(e, t),
+            n = W(0, t)
           switch (r) {
-            case j.a.Tweet:
-            case j.a.AppealTweetWarning:
-            case j.a.HideCommunityTweet:
-            case j.a.RemoveCommunityMember:
-              return U.a.selectHydrated(e, n)
+            case x.a.Tweet:
+            case x.a.AppealTweetWarning:
+            case x.a.HideCommunityTweet:
+            case x.a.RemoveCommunityMember:
+              return k.a.selectHydrated(e, n)
             default:
               return
           }
         },
-        V = function (e, t) {
-          var r = q(e, t) === j.a.User ? G(0, t) : void 0
-          return r ? k.e.select(e, r) : void 0
-        },
         X = function (e, t) {
-          var r,
-            n = q(e, t)
-          if (
-            ((n !== j.a.DMConversation && n !== j.a.DMMessage) ||
-              (r = n === j.a.DMConversation ? G(0, t) : t.location.state ? t.location.state.conversationId : void 0),
-            r)
-          ) {
-            var o = Object(I.a)(e, r),
-              a = (function (e, t) {
-                return y.q(e)
-              })(e)
-            return Q(o, a)
-          }
+          var r = G(e, t) === x.a.User ? W(0, t) : void 0
+          return r ? D.e.select(e, r) : void 0
         },
         Q = function (e, t) {
+          var r,
+            n = G(e, t)
+          if (
+            ((n !== x.a.DMConversation && n !== x.a.DMMessage) ||
+              (r = n === x.a.DMConversation ? W(0, t) : t.location.state ? t.location.state.conversationId : void 0),
+            r)
+          ) {
+            var o = Object(U.a)(e, r),
+              a = (function (e, t) {
+                return g.q(e)
+              })(e)
+            return Y(o, a)
+          }
+        },
+        Y = function (e, t) {
           var r
           if (e && e.data)
             return (
               (r =
-                e.data.type === w.a.GROUP
+                e.data.type === E.a.GROUP
                   ? '0'
                   : e.data.participants.filter(function (e) {
                       return e.user_id !== t
@@ -504,62 +505,62 @@
               { conversationId: e.data.conversation_id, reportedUserId: r }
             )
         },
-        Y = function (e, t) {
-          return q(e, t) === j.a.Moment ? C.a.select(e, G(0, t)) : void 0
-        },
         K = function (e, t) {
-          var r = q(e, t) === j.a.List ? G(0, t) : void 0
-          return r ? O.a.select(e, r) : void 0
+          return G(e, t) === x.a.Moment ? A.a.select(e, W(0, t)) : void 0
         },
         z = function (e, t) {
-          var r = q(e, t) === j.a.Moment ? G(0, t) : void 0
+          var r = G(e, t) === x.a.List ? W(0, t) : void 0
           return r ? T.a.select(e, r) : void 0
         },
-        J = Object(D.a)()
+        J = function (e, t) {
+          var r = G(e, t) === x.a.Moment ? W(0, t) : void 0
+          return r ? C.a.select(e, r) : void 0
+        },
+        Z = Object(S.a)()
           .propsFromState(function () {
             return {
-              canGoBack: R.a,
-              clientReferer: x,
-              dmConversation: X,
-              reportedId: G,
-              inboxType: P,
-              isMedia: N,
-              lang: y.o,
-              liveEvent: z,
-              moment: Y,
-              list: K,
-              promotedContent: H,
-              conversationSection: F,
-              reportType: q,
-              reportSource: B,
-              scribeNamespace: L,
-              tweet: W,
-              user: V,
+              canGoBack: I.a,
+              clientReferer: P,
+              dmConversation: Q,
+              reportedId: W,
+              inboxType: L,
+              isMedia: H,
+              lang: g.o,
+              liveEvent: J,
+              moment: K,
+              list: z,
+              promotedContent: F,
+              conversationSection: B,
+              reportType: G,
+              reportSource: q,
+              scribeNamespace: N,
+              tweet: V,
+              user: X,
             }
           })
           .propsFromActions(function () {
             return {
-              addToast: g.b,
-              block: k.e.block,
-              createLocalApiErrorHandler: Object(S.createLocalApiErrorHandlerWithContextFactory)('REPORT_SCREEN'),
-              fetchUpdates: E.fetchUpdates,
-              mute: A.a,
-              markTweetAsReported: U.a.markAsReported,
-              markTweetsAsRemovedFromCommunity: U.a.markTweetsAsRemovedFromCommunity,
-              richScribeAction: M.richScribeAction,
-              unblock: k.e.unblock,
-              unfollow: k.e.unfollow,
-              unmute: k.e.unmute,
+              addToast: w.b,
+              block: D.e.block,
+              createLocalApiErrorHandler: Object(j.createLocalApiErrorHandlerWithContextFactory)('REPORT_SCREEN'),
+              fetchUpdates: O.fetchUpdates,
+              mute: M.a,
+              markTweetAsReported: k.a.markAsReported,
+              markTweetsAsRemovedFromCommunity: k.a.markTweetsAsRemovedFromCommunity,
+              richScribeAction: R.richScribeAction,
+              unblock: D.e.unblock,
+              unfollow: D.e.unfollow,
+              unmute: D.e.unmute,
             }
           }),
-        Z = r('jHSc'),
-        $ = r('qzfk'),
-        ee = r('X/yg'),
-        te = r('3XMw'),
-        re = r.n(te),
-        ne = r('tn7R'),
-        oe = r('SrIh'),
-        ae =
+        $ = r('jHSc'),
+        ee = r('qzfk'),
+        te = r('X/yg'),
+        re = r('3XMw'),
+        ne = r.n(re),
+        oe = r('tn7R'),
+        ae = r('SrIh'),
+        ie =
           (r('yH/f'),
           Object.freeze({
             AppealTweetWarning: 'appealtweet',
@@ -572,19 +573,19 @@
             List: 'reportlist',
             User: 'reportprofile',
           })),
-        ie = r('Rp9C'),
-        ce = r('X04g'),
-        se = r('u0B7'),
-        ue = r('1bnC'),
-        de = r('tJZD'),
-        le = r('fEA7'),
-        pe = r.n(le),
-        me = r('v6aA'),
-        fe = r('/yvb'),
-        _e = r('bPFD'),
-        ve = r('rHpw'),
-        be = r('P2xQ')
-      function he(e, t) {
+        ce = r('Rp9C'),
+        se = r('X04g'),
+        ue = r('u0B7'),
+        de = r('1bnC'),
+        le = r('tJZD'),
+        pe = r('fEA7'),
+        me = r.n(pe),
+        fe = r('v6aA'),
+        _e = r('/yvb'),
+        ve = r('bPFD'),
+        be = r('rHpw'),
+        he = r('P2xQ')
+      function ye(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -596,22 +597,22 @@
         }
         return r
       }
-      function ye(e) {
+      function ge(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? he(Object(r), !0).forEach(function (t) {
+            ? ye(Object(r), !0).forEach(function (t) {
                 v()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : he(Object(r)).forEach(function (t) {
+            : ye(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      function ge(e) {
+      function we(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -632,16 +633,16 @@
           return p()(this, r)
         }
       }
-      var we = re.a.f1824804,
-        Ee = re.a.h030c24b,
-        Oe = re.a.c3e6226a,
-        Te = re.a.a9fd20be,
-        Ce = re.a.i2b9632d,
-        Ae = re.a.b772cd65,
-        Me = 'https://twitter.com',
-        Re = (function (e) {
+      var Ee = ne.a.f1824804,
+        Oe = ne.a.h030c24b,
+        Te = ne.a.c3e6226a,
+        Ce = ne.a.a9fd20be,
+        Ae = ne.a.i2b9632d,
+        Me = ne.a.b772cd65,
+        Re = 'https://twitter.com',
+        Ie = (function (e) {
           d()(r, e)
-          var t = ge(r)
+          var t = we(r)
           function r(e, n) {
             var a
             return (
@@ -649,7 +650,7 @@
               (a = t.call(this, e, n)),
               v()(s()(a), '_renderDoneButton', function () {
                 return a.state.isDone
-                  ? b.createElement(fe.a, { onPress: a._handleDone, size: 'xSmall', type: 'primaryFilled' }, Ae)
+                  ? h.a.createElement(_e.a, { onPress: a._handleDone, size: 'xSmall', type: 'primaryFilled' }, Me)
                   : void 0
               }),
               v()(s()(a), '_handleDone', function () {
@@ -660,9 +661,9 @@
                   o = e.inboxType,
                   i = e.reportType
                 switch ((a._scribeAction('done'), i)) {
-                  case j.a.DMConversation:
-                  case j.a.DMMessage:
-                    n.replace(Object(ee.e)(o)), r().catch(t({}))
+                  case x.a.DMConversation:
+                  case x.a.DMMessage:
+                    n.replace(Object(te.e)(o)), r().catch(t({}))
                     break
                   default:
                     a._goBack()
@@ -686,8 +687,8 @@
                     n = t.createLocalApiErrorHandler,
                     o = t.promotedContent
                   ;(0, t.unblock)(e, { promotedContent: o }).then(function () {
-                    r({ text: Ce })
-                  }, n(se.a))
+                    r({ text: Ae })
+                  }, n(ue.a))
                 }
               }),
               v()(s()(a), '_handleUndoMute', function (e, t) {
@@ -696,18 +697,18 @@
                     n = r.addToast,
                     o = r.createLocalApiErrorHandler
                   ;(0, r.unmute)(e).then(function () {
-                    n({ text: Object(be.d)(t) })
+                    n({ text: Object(he.d)(t) })
                   }, o({ showToast: !0 }))
                 }
               }),
               v()(s()(a), '_getReportTitle', function () {
                 switch (a.props.reportType) {
-                  case j.a.AppealTweetWarning:
-                    return we
-                  case j.a.RemoveCommunityMember:
-                    return Oe
-                  default:
+                  case x.a.AppealTweetWarning:
                     return Ee
+                  case x.a.RemoveCommunityMember:
+                    return Te
+                  default:
+                    return Oe
                 }
               }),
               v()(s()(a), '_getReportedTweetId', function () {
@@ -717,15 +718,15 @@
                   n = e.reportType,
                   o = e.tweet
                 switch (n) {
-                  case j.a.Moment:
-                    var i = (t ? Object(ne.a)(t.slates) : []).find(function (e) {
+                  case x.a.Moment:
+                    var i = (t ? Object(oe.a)(t.slates) : []).find(function (e) {
                       return e.tweet_id
                     })
                     return i ? i.tweet_id : r && r.cover_media && r.cover_media.tweet_id
-                  case j.a.AppealTweetWarning:
-                  case j.a.HideCommunityTweet:
-                  case j.a.RemoveCommunityMember:
-                  case j.a.Tweet:
+                  case x.a.AppealTweetWarning:
+                  case x.a.HideCommunityTweet:
+                  case x.a.RemoveCommunityMember:
+                  case x.a.Tweet:
                     return o && o.id_str
                   default:
                     return
@@ -741,24 +742,24 @@
                   s = t.tweet,
                   u = t.user
                 switch (c) {
-                  case j.a.DMConversation:
-                  case j.a.DMMessage:
+                  case x.a.DMConversation:
+                  case x.a.DMMessage:
                     return e && e.data && r && '0' === r.reportedUserId
                       ? e.data.reported_user_id
                       : r && r.reportedUserId
-                  case j.a.Moment:
+                  case x.a.Moment:
                     return (o && o.liveEventDetails.attribution_user_id) || (i && i.author && i.author.id)
-                  case j.a.User:
+                  case x.a.User:
                     return u && u.id_str
-                  case j.a.List:
+                  case x.a.List:
                     return n && n.user
-                  case j.a.AppealTweetWarning:
-                  case j.a.HideCommunityTweet:
-                  case j.a.RemoveCommunityMember:
-                  case j.a.Tweet:
+                  case x.a.AppealTweetWarning:
+                  case x.a.HideCommunityTweet:
+                  case x.a.RemoveCommunityMember:
+                  case x.a.Tweet:
                     return s && s.user.id_str
                   default:
-                    return void Object(oe.a)('Unknown report type '.concat(c))
+                    return void Object(ae.a)('Unknown report type '.concat(c))
                 }
               }),
               v()(s()(a), '_getReportedUserScreenName', function (e) {
@@ -769,16 +770,16 @@
                   i = t.tweet,
                   c = t.user
                 switch (o) {
-                  case j.a.Moment:
+                  case x.a.Moment:
                     var s,
                       u = null == r ? void 0 : r.liveEventDetails.attribution_user_id,
                       d = u ? (null == r || null === (s = r.users) || void 0 === s ? void 0 : s[u]) : void 0
                     if (d) return null == d ? void 0 : d.screen_name
                     if (n && n.author) return n.author.screen_name
                     break
-                  case j.a.Tweet:
+                  case x.a.Tweet:
                     return null == i ? void 0 : i.user.screen_name
-                  case j.a.User:
+                  case x.a.User:
                     return null == c ? void 0 : c.screen_name
                 }
               }),
@@ -787,7 +788,7 @@
                   t = e.reportType,
                   r = e.tweet
                 switch (t) {
-                  case j.a.RemoveCommunityMember:
+                  case x.a.RemoveCommunityMember:
                     return null == r ? void 0 : r.community_id_str
                 }
               }),
@@ -806,10 +807,10 @@
                   p = e.reportType,
                   m = e.reportedId,
                   f = e.scribeNamespace,
-                  _ = p === j.a.DMConversation,
-                  v = p === j.a.DMMessage,
-                  b = p === j.a.Moment,
-                  h = p === j.a.List,
+                  _ = p === x.a.DMConversation,
+                  v = p === x.a.DMMessage,
+                  b = p === x.a.Moment,
+                  h = p === x.a.List,
                   y = a.context.featureSwitches.isTrue('responsive_web_add_impression_id_to_mute_engagement_enabled'),
                   g = {
                     client_location: [
@@ -818,7 +819,7 @@
                       null == f ? void 0 : f.component,
                     ].join(':'),
                     client_referer: t,
-                    client_app_id: Object($.a)().clientAppId,
+                    client_app_id: Object(ee.a)().clientAppId,
                     conversation_section: r,
                     source: l,
                     report_flow_id: a._reportFlowId,
@@ -843,7 +844,7 @@
                       return ''.concat(encodeURIComponent(e), '=').concat(encodeURIComponent(g[e]))
                     })
                     .join('&')
-                return ''.concat(Me, '/i/safety/report_story?').concat(w)
+                return ''.concat(Re, '/i/safety/report_story?').concat(w)
               }),
               v()(s()(a), '_messageHandler', function (e) {
                 var t = a.props,
@@ -851,7 +852,7 @@
                   n = t.markTweetAsReported,
                   o = t.markTweetsAsRemovedFromCommunity,
                   i = t.reportSource
-                if (e.origin === Me && 'ReportAction' === e.data.type) {
+                if (e.origin === Re && 'ReportAction' === e.data.type) {
                   var c = a.props,
                     s = c.block,
                     u = c.createLocalApiErrorHandler,
@@ -863,26 +864,26 @@
                     case 'block':
                       m &&
                         s(m, { promotedContent: l }).then(function () {
-                          r({ action: { label: ue.a, onAction: a._handleUndoBlock(m) }, text: Te })
-                        }, u(h.a))
+                          r({ action: { label: de.a, onAction: a._handleUndoBlock(m) }, text: Ce })
+                        }, u(y.a))
                       break
                     case 'unfollow':
-                      m && p(m, { promotedContent: l }).catch(u(de.a))
+                      m && p(m, { promotedContent: l }).catch(u(le.a))
                       break
                     case 'mute':
                       m &&
                         d(m).then(function () {
                           var t = a._getReportedUserScreenName(e)
-                          r({ action: { label: ue.a, onAction: a._handleUndoMute(m, t) }, text: Object(be.b)(t) })
+                          r({ action: { label: de.a, onAction: a._handleUndoMute(m, t) }, text: Object(he.b)(t) })
                         }, u({ showToast: !0 }))
                       break
                     case 'complete':
                       a.setState({ isDone: !0 })
                       var f = a._getReportedTweetId()
                       f &&
-                        (i === ae.Tweet && n(f, j.b.Tombstone),
-                        i === ae.HideCommunityTweet && n(f, j.b.HiddenCommunityTweet),
-                        i === ae.RemoveCommunityMember && o(f))
+                        (i === ie.Tweet && n(f, x.b.Tombstone),
+                        i === ie.HideCommunityTweet && n(f, x.b.HiddenCommunityTweet),
+                        i === ie.RemoveCommunityMember && o(f))
                       break
                     case 'error':
                       a.setState({ isDone: !0 })
@@ -894,7 +895,7 @@
               }),
               (a.state = { isDone: !1 }),
               (a._accessedDirectly = a._wasAccessedDirectly()),
-              (a._reportFlowId = pe.a.v4()),
+              (a._reportFlowId = me.a.v4()),
               (a._reportUrl = a._accessedDirectly ? '' : a._getReportUrl()),
               (a._initialHistoryLength = window.history.length),
               a
@@ -926,8 +927,8 @@
                     t = this.state.isDone
                   return this._accessedDirectly
                     ? null
-                    : b.createElement(
-                        Z.b,
+                    : h.a.createElement(
+                        $.b,
                         {
                           backButtonType: t ? 'close' : 'back',
                           history: e,
@@ -935,7 +936,7 @@
                           rightControl: this._renderDoneButton(),
                           title: this._getReportTitle(),
                         },
-                        b.createElement(_e.a, { allowForms: !0, src: this._reportUrl, style: ve.a.absoluteFill }),
+                        h.a.createElement(ve.a, { allowForms: !0, src: this._reportUrl, style: be.a.absoluteFill }),
                       )
                 },
               },
@@ -957,15 +958,15 @@
                   return (
                     !t ||
                     !s ||
-                    (i === j.a.AppealTweetWarning && !u) ||
-                    (i === j.a.HideCommunityTweet && !u) ||
-                    (i === j.a.RemoveCommunityMember && !u) ||
-                    (i === j.a.Tweet && !u) ||
-                    (i === j.a.User && !d) ||
-                    (i === j.a.DMConversation && !r) ||
-                    (i === j.a.DMMessage && (!c || !r)) ||
-                    (i === j.a.Moment && !a && !l) ||
-                    (i === j.a.List && !n)
+                    (i === x.a.AppealTweetWarning && !u) ||
+                    (i === x.a.HideCommunityTweet && !u) ||
+                    (i === x.a.RemoveCommunityMember && !u) ||
+                    (i === x.a.Tweet && !u) ||
+                    (i === x.a.User && !d) ||
+                    (i === x.a.DMConversation && !r) ||
+                    (i === x.a.DMMessage && (!c || !r)) ||
+                    (i === x.a.Moment && !a && !l) ||
+                    (i === x.a.List && !n)
                   )
                 },
               },
@@ -978,22 +979,22 @@
                     r = t.reportType,
                     n = t.scribeNamespace
                   switch (r) {
-                    case j.a.AppealTweetWarning:
+                    case x.a.AppealTweetWarning:
                       e = 'appeal_tweet_warning'
                       break
-                    case j.a.DMConversation:
+                    case x.a.DMConversation:
                       e = 'report_dm_conversation'
                       break
-                    case j.a.Moment:
+                    case x.a.Moment:
                       e = 'report_moment'
                       break
-                    case j.a.Tweet:
+                    case x.a.Tweet:
                       e = 'report_tweet'
                       break
-                    case j.a.User:
+                    case x.a.User:
                       e = 'report_user'
                   }
-                  return (this._scribeNamespace = ye(ye({}, n), {}, { element: e })), this._scribeNamespace
+                  return (this._scribeNamespace = ge(ge({}, n), {}, { element: e })), this._scribeNamespace
                 },
               },
               {
@@ -1006,19 +1007,19 @@
                     n = e.scribeNamespace,
                     o = e.tweet,
                     a = e.user
-                  if (r === j.a.Tweet || r === j.a.AppealTweetWarning)
+                  if (r === x.a.Tweet || r === x.a.AppealTweetWarning)
                     this._scribeData = {
-                      associations: v()({}, ce.a.AssociationType.ASSOCIATED_TWEET, {
+                      associations: v()({}, se.a.AssociationType.ASSOCIATED_TWEET, {
                         association_id: o && o.id_str,
                         association_namespace: { page: null == n ? void 0 : n.page },
                       }),
                       promoted: !!t,
-                      items: o ? [ie.a.forTweet(o)] : [],
+                      items: o ? [ce.a.forTweet(o)] : [],
                     }
-                  else if (r === j.a.User) {
-                    var i = a ? [ie.a.forUser(a.id_str)] : []
+                  else if (r === x.a.User) {
+                    var i = a ? [ce.a.forUser(a.id_str)] : []
                     this._scribeData = {
-                      associations: v()({}, ce.a.AssociationType.ASSOCIATED_USER, { association_id: a && a.id_str }),
+                      associations: v()({}, se.a.AssociationType.ASSOCIATED_USER, { association_id: a && a.id_str }),
                       items: i,
                       targets: i,
                     }
@@ -1030,19 +1031,19 @@
                 key: '_scribeAction',
                 value: function (e) {
                   var t = this.props.richScribeAction,
-                    r = ye(
-                      ye({}, this._getScribeData()),
+                    r = ge(
+                      ge({}, this._getScribeData()),
                       {},
                       { report_details: { report_flow_id: this._reportFlowId } },
                     )
-                  t(ye(ye({}, this._getScribeNamespace()), {}, { action: e }), r)
+                  t(ge(ge({}, this._getScribeNamespace()), {}, { action: e }), r)
                 },
               },
             ]),
             r
           )
-        })(b.Component)
-      v()(Re, 'defaultProps', {
+        })(h.a.Component)
+      v()(Ie, 'defaultProps', {
         addMessageListener: function (e) {
           return window.addEventListener('message', e)
         },
@@ -1051,85 +1052,86 @@
           return window.removeEventListener('message', e)
         },
       }),
-        v()(Re, 'contextType', me.a)
-      var Ie = J(Re)
-      t.default = Ie
+        v()(Ie, 'contextType', fe.a)
+      var Ue = Z(Ie)
+      t.default = Ue
     },
     LqVV: function (e, t, r) {
       'use strict'
       r.r(t),
         r.d(t, 'ReportFlowComplete', function () {
-          return R
+          return I
         })
       var n = r('ERkP'),
-        o = r('EbOo'),
-        a = r('1YZw'),
-        i = r('0pUJ'),
-        c = r('QK5w'),
-        s = r('G6rE'),
-        u = r('rxPX'),
-        d = r('0KEI'),
-        l = function (e, t) {
+        o = r.n(n),
+        a = r('EbOo'),
+        i = r('1YZw'),
+        c = r('0pUJ'),
+        s = r('QK5w'),
+        u = r('G6rE'),
+        d = r('rxPX'),
+        l = r('0KEI'),
+        p = function (e, t) {
           var r = t.location.query.action
           if ('string' == typeof r) return r
         },
-        p = function (e, t) {
+        m = function (e, t) {
           var r = t.location.query.reported_user_id
           if ('string' == typeof r) return r
         },
-        m = function (e, t) {
+        f = function (e, t) {
           var r = t.location.query.reported_screen_name
           if ('string' == typeof r) return r
         },
-        f = Object(u.a)()
+        _ = Object(d.a)()
           .propsFromState(function () {
-            return { action: l, canGoBack: c.a, reportedUserId: p, reportedScreenName: m }
+            return { action: p, canGoBack: s.a, reportedUserId: m, reportedScreenName: f }
           })
           .propsFromActions(function () {
             return {
-              addToast: a.b,
-              block: s.e.block,
-              createLocalApiErrorHandler: Object(d.createLocalApiErrorHandlerWithContextFactory)('REPORT_SCREEN'),
-              mute: i.a,
-              unblock: s.e.unblock,
-              unfollow: s.e.unfollow,
-              unmute: s.e.unmute,
+              addToast: i.b,
+              block: u.e.block,
+              createLocalApiErrorHandler: Object(l.createLocalApiErrorHandlerWithContextFactory)('REPORT_SCREEN'),
+              mute: c.a,
+              unblock: u.e.unblock,
+              unfollow: u.e.unfollow,
+              unmute: u.e.unmute,
             }
           }),
-        _ = r('kGix'),
-        v = r('v//M'),
-        b = r('3XMw'),
-        h = r.n(b),
-        y = r('fs1G'),
-        g = r('rHpw'),
-        w = r('u0B7'),
-        E = r('1bnC'),
-        O = r('MWbm'),
-        T = r('P2xQ'),
-        C = function () {
+        v = r('kGix'),
+        b = r('v//M'),
+        h = r('3XMw'),
+        y = r.n(h),
+        g = r('fs1G'),
+        w = r('rHpw'),
+        E = r('u0B7'),
+        O = r('1bnC'),
+        T = r('MWbm'),
+        C = r('P2xQ'),
+        A = function () {
           return null
         },
-        A = h.a.a9fd20be,
-        M = h.a.i2b9632d
-      function R(e) {
+        M = y.a.a9fd20be,
+        R = y.a.i2b9632d
+      function I(e) {
         return (
-          n.useEffect(function () {
+          o.a.useEffect(function () {
             var t = e.action,
               r = e.addToast,
               n = e.block,
-              a = e.canGoBack,
+              o = e.canGoBack,
               i = e.createLocalApiErrorHandler,
               c = e.history,
               s = e.mute,
               u = e.reportedScreenName,
               d = e.reportedUserId
-            a
+            o
               ? (d && 'mute' === t
                   ? s(d).then(function () {
                       var t, n
                       r({
                         action: {
-                          label: E.a,
+                          label: O.a,
                           onAction:
                             ((t = d),
                             (n = u),
@@ -1137,11 +1139,11 @@
                               var r = e.addToast,
                                 o = e.createLocalApiErrorHandler
                               ;(0, e.unmute)(t).then(function () {
-                                r({ text: Object(T.d)(n) })
+                                r({ text: Object(C.d)(n) })
                               }, o({ showToast: !0 }))
                             }),
                         },
-                        text: Object(T.b)(u),
+                        text: Object(C.b)(u),
                       })
                     }, i({ showToast: !0 }))
                   : d &&
@@ -1150,35 +1152,35 @@
                       var t
                       r({
                         action: {
-                          label: E.a,
+                          label: O.a,
                           onAction:
                             ((t = d),
                             function () {
                               var r = e.addToast,
                                 n = e.createLocalApiErrorHandler
                               ;(0, e.unblock)(t).then(function () {
-                                r({ text: M })
-                              }, n(w.a))
+                                r({ text: R })
+                              }, n(E.a))
                             }),
                         },
-                        text: A,
+                        text: M,
                       })
-                    }, i(o.a)),
+                    }, i(a.a)),
                 c.goBackThroughModals())
               : c.push('/')
           }, []),
-          n.createElement(
-            O.a,
-            { style: I.root },
-            n.createElement(v.a, { fetchStatus: _.a.LOADING, onRequestRetry: y.a, render: C, retryable: !1 }),
+          o.a.createElement(
+            T.a,
+            { style: U.root },
+            o.a.createElement(b.a, { fetchStatus: v.a.LOADING, onRequestRetry: g.a, render: A, retryable: !1 }),
           )
         )
       }
-      var I = g.a.create(function (e) {
+      var U = w.a.create(function (e) {
           return { root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, flexShrink: 1 } }
         }),
-        U = f(R)
-      t.default = U
+        k = _(I)
+      t.default = k
     },
     V5Qi: function (e, t, r) {
       'use strict'

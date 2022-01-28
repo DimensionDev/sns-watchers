@@ -5,45 +5,46 @@
       'use strict'
       var n,
         o = r('KEM+'),
-        c = r.n(o),
-        a = r('ezF+'),
+        a = r.n(o),
+        c = r('ezF+'),
         i = (r('yH/f'), Object.freeze({ Cell: 'Cell', PreviewCard: 'PreviewCard' })),
         u = (r('JtPf'), r('7x/C'), r('87if'), r('lTEL'), r('kYxP'), r('XBtf')),
         l = {
           loader: function () {
-            return Promise.all([r.e(0), r.e(338)]).then(r.bind(null, 'a+ad'))
+            return Promise.all([r.e(0), r.e(342)]).then(r.bind(null, 'a+ad'))
           },
           loaderKey: 'newsCellLoader',
           strategy: u.a.Critical,
         },
         s = {
           loader: function () {
-            return Promise.all([r.e(0), r.e(340)]).then(r.bind(null, 'hX2d'))
+            return Promise.all([r.e(0), r.e(344)]).then(r.bind(null, 'hX2d'))
           },
           loaderKey: 'newsPreviewCardLoader',
           strategy: u.a.Critical,
         }
-      t.a = a.c({
+      t.a = c.c({
         selectDisplayType: function (e) {
           return e.content.newsDisplayType
         },
-        handlers: ((n = {}), c()(n, i.Cell, l), c()(n, i.PreviewCard, s), n),
+        handlers: ((n = {}), a()(n, i.Cell, l), a()(n, i.PreviewCard, s), n),
       })
     },
     gRxV: function (e, t, r) {
       'use strict'
       r.r(t),
         r.d(t, 'ExploreTopicsScreen', function () {
-          return Q
+          return V
         })
       r('2G9S'), r('vrRf')
       var n = r('ERkP'),
-        o = r('es0u'),
+        o = r.n(n),
+        a = r('es0u'),
         c = (r('WNMA'), r('KqXw'), r('hqKg')),
-        a = (r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('KEM+')),
-        i = r.n(a),
-        u = r('ZNT5')
-      function l(e, t) {
+        i = (r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('KEM+')),
+        u = r.n(i),
+        l = r('ZNT5')
+      function s(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -55,12 +56,12 @@
         }
         return r
       }
-      var s,
-        p = { news: 'url', sim_cluster: 'cluster_id', ttt: 'ttt_id', semantic_core: 'entity_id' },
-        f = function (e) {
+      var p,
+        f = { news: 'url', sim_cluster: 'cluster_id', ttt: 'ttt_id', semantic_core: 'entity_id' },
+        d = function (e) {
           var t = e.taxonomy,
             r = e.topicId
-          return Object(u.a)({
+          return Object(l.a)({
             timelineId: 'guide-'.concat(r, '-').concat(t, '-topic'),
             getEndpoint: function (e) {
               return e.URT.fetchExploreTopic
@@ -70,53 +71,53 @@
                 for (var t = 1; t < arguments.length; t++) {
                   var r = null != arguments[t] ? arguments[t] : {}
                   t % 2
-                    ? l(Object(r), !0).forEach(function (t) {
-                        i()(e, t, r[t])
+                    ? s(Object(r), !0).forEach(function (t) {
+                        u()(e, t, r[t])
                       })
                     : Object.getOwnPropertyDescriptors
                     ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-                    : l(Object(r)).forEach(function (t) {
+                    : s(Object(r)).forEach(function (t) {
                         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
                       })
                 }
                 return e
-              })(i()({}, p[t], r), e)
+              })(u()({}, f[t], r), e)
             },
             context: 'FETCH_EXPLORE_TOPIC',
             perfKey: 'guide-topic',
           })
         },
-        d = r('kGix'),
-        y = r('3XMw'),
-        b = r.n(y),
-        O = r('rxPX'),
-        m = b.a.fcf3e54b,
-        w = function (e, t) {
+        y = r('kGix'),
+        b = r('3XMw'),
+        O = r.n(b),
+        m = r('rxPX'),
+        w = O.a.fcf3e54b,
+        P = function (e, t) {
           return t.match.params.topicId
         },
-        P = function (e, t) {
+        g = function (e, t) {
           return t.match.params.taxonomy
         },
-        g = Object(c.createSelector)(w, P, function (e, t) {
-          return f({ topicId: e, taxonomy: t })
+        j = Object(c.createSelector)(P, g, function (e, t) {
+          return d({ topicId: e, taxonomy: t })
         }),
-        j = function (e, t) {
-          var r = g(e, t)
-          if (r.selectInitialFetchStatus(e, t) !== d.a.LOADED) return ''
+        h = function (e, t) {
+          var r = j(e, t)
+          if (r.selectInitialFetchStatus(e, t) !== y.a.LOADED) return ''
           var n = r.selectMetadata(e).title
-          return void 0 === n ? m : n
+          return void 0 === n ? w : n
         },
-        h = Object(O.a)()
+        v = Object(m.a)()
           .propsFromState(function () {
-            return { module: g, topicId: w, taxonomy: P, title: j }
+            return { module: j, topicId: P, taxonomy: g, title: h }
           })
           .withAnalytics({ page: 'guide', section: 'topic' }),
-        v = r('PnFR'),
-        E = r('QIgh'),
-        x = r('8UdT'),
-        C = r('S/Qv'),
-        T = r('PH3B')
-      function D(e, t) {
+        E = r('PnFR'),
+        x = r('QIgh'),
+        C = r('8UdT'),
+        T = r('S/Qv'),
+        D = r('PH3B')
+      function S(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -128,96 +129,96 @@
         }
         return r
       }
-      function S(e) {
+      function I(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? D(Object(r), !0).forEach(function (t) {
-                i()(e, t, r[t])
+            ? S(Object(r), !0).forEach(function (t) {
+                u()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : D(Object(r)).forEach(function (t) {
+            : S(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
         return e
       }
-      var I =
-          ((s = {}),
-          i()(s, x.b.Message, Object(C.a)({ withGaps: !1 })),
-          i()(s, x.b.News, T.a),
-          i()(s, x.b.TimelineCursor, Object(v.a)({})),
-          s),
-        k = S(S({}, E.b), I),
-        _ = r('dwig'),
-        F = r('0+qk'),
-        K = r('VTxf'),
-        L = r('yoO3'),
-        M = r('7BdX'),
-        R = r('SrIh'),
-        X = r('fTQJ'),
-        H = r('VS6U'),
-        U = r('FIs5'),
-        q = r('mw9i'),
-        B = b.a.a2a3824a,
-        J = b.a.ed827af6,
-        A = function () {
-          return n.createElement(K.a, null)
-        },
+      var k =
+          ((p = {}),
+          u()(p, C.b.Message, Object(T.a)({ withGaps: !1 })),
+          u()(p, C.b.News, D.a),
+          u()(p, C.b.TimelineCursor, Object(E.a)({})),
+          p),
+        _ = I(I({}, x.b), k),
+        F = r('dwig'),
+        K = r('0+qk'),
+        L = r('VTxf'),
+        M = r('yoO3'),
+        R = r('7BdX'),
+        X = r('SrIh'),
+        H = r('fTQJ'),
+        U = r('VS6U'),
+        q = r('FIs5'),
+        B = r('mw9i'),
+        J = O.a.a2a3824a,
+        A = O.a.ed827af6,
         G = function () {
-          return n.createElement(U.a, { message: J })
+          return o.a.createElement(L.a, null)
         },
-        N = ['news', 'ttt', 'semantic_core', 'sim_cluster']
-      function Q(e) {
+        N = function () {
+          return o.a.createElement(q.a, { message: A })
+        },
+        Q = ['news', 'ttt', 'semantic_core', 'sim_cluster']
+      function V(e) {
         var t = e.history,
           r = e.title,
-          c = n.createElement(F.a, { history: t }),
-          a = function () {
+          n = o.a.createElement(K.a, { history: t }),
+          c = function () {
             var t = e.taxonomy
-            return N.indexOf(t) >= 0
+            return Q.indexOf(t) >= 0
           }
-        return n.createElement(
-          L.a,
+        return o.a.createElement(
+          M.a,
           null,
-          n.createElement(H.a, {
+          o.a.createElement(U.a, {
             backLocation: '/explore',
-            documentTitle: B,
+            documentTitle: J,
             history: t,
-            primaryContent: n.createElement(
-              _.a,
-              { container: q.a, fab: c },
+            primaryContent: o.a.createElement(
+              F.a,
+              { container: B.a, fab: n },
               (function () {
-                if (a()) {
+                if (c()) {
                   var t = e.module
-                  return n.createElement(X.a, {
-                    entryConfiguration: k,
+                  return o.a.createElement(H.a, {
+                    entryConfiguration: _,
                     module: t,
-                    prerollDisplayLocation: M.c.OTHER,
-                    renderEmptyState: A,
-                    renderUnavailable: G,
-                    title: B,
+                    prerollDisplayLocation: R.c.OTHER,
+                    renderEmptyState: G,
+                    renderUnavailable: N,
+                    title: J,
                   })
                 }
                 var r = e.taxonomy,
-                  o = e.topicId
+                  n = e.topicId
                 return (
-                  r && o
-                    ? Object(R.a)(
-                        "Unexpected guide topic: Taxonomy '".concat(r, "' requested with topicId '").concat(o, "'"),
+                  r && n
+                    ? Object(X.a)(
+                        "Unexpected guide topic: Taxonomy '".concat(r, "' requested with topicId '").concat(n, "'"),
                       )
-                    : Object(R.a)('Missing taxonomy and/or topic id for guide topic:'),
-                  A()
+                    : Object(X.a)('Missing taxonomy and/or topic id for guide topic:'),
+                  G()
                 )
               })(),
             ),
-            sidebarContent: n.createElement(o.a, { withWhoToFollow: !1 }),
+            sidebarContent: o.a.createElement(a.a, { withWhoToFollow: !1 }),
             title: r,
           }),
         )
       }
-      var V = h(Q)
-      t.default = V
+      var W = v(V)
+      t.default = W
     },
   },
 ])

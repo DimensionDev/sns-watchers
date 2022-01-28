@@ -4,35 +4,36 @@
     '+Bsv': function (e, t, n) {
       'use strict'
       var r = n('ERkP'),
-        a = n('3XMw'),
-        i = n.n(a),
-        o = n('M2x3'),
-        c = 'settingsAppBar',
-        l = n('/yvb'),
-        u = n('rHpw'),
-        s = i.a.bb081ea1,
-        f = { viewType: 'settings_button' },
-        d = r.memo(function (e) {
+        a = n.n(r),
+        i = n('3XMw'),
+        o = n.n(i),
+        c = n('M2x3'),
+        l = 'settingsAppBar',
+        u = n('/yvb'),
+        s = n('rHpw'),
+        f = o.a.bb081ea1,
+        d = { viewType: 'settings_button' },
+        p = a.a.memo(function (e) {
           var t = e.onPress,
             n = e.pullRight,
-            a = e.to
-          return r.createElement(l.a, {
-            accessibilityLabel: s,
-            behavioralEventContext: f,
-            hoverLabel: { label: s },
-            icon: r.createElement(o.a, null),
-            link: a,
+            r = e.to
+          return a.a.createElement(u.a, {
+            accessibilityLabel: f,
+            behavioralEventContext: d,
+            hoverLabel: { label: f },
+            icon: a.a.createElement(c.a, null),
+            link: r,
             onPress: t,
             pullRight: n,
-            style: p.button,
-            testID: c,
+            style: b.button,
+            testID: l,
             type: 'primaryText',
           })
         }),
-        p = u.a.create(function (e) {
+        b = s.a.create(function (e) {
           return { button: { marginVertical: 'calc(-'.concat(e.spaces.space12, ')') } }
         })
-      t.a = d
+      t.a = p
     },
     '+o05': function (e, t, n) {
       'use strict'
@@ -48,7 +49,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return n.e(224).then(n.bind(null, 'QPD4'))
+              return n.e(228).then(n.bind(null, 'QPD4'))
             },
             loaderKey: 'defaultScoreEventSummaryLoader',
             strategy: n('XBtf').a.Critical,
@@ -242,14 +243,14 @@
         l = (n('JtPf'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP'), n('XBtf')),
         u = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(338)]).then(n.bind(null, 'a+ad'))
+            return Promise.all([n.e(0), n.e(342)]).then(n.bind(null, 'a+ad'))
           },
           loaderKey: 'newsCellLoader',
           strategy: l.a.Critical,
         },
         s = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(340)]).then(n.bind(null, 'hX2d'))
+            return Promise.all([n.e(0), n.e(344)]).then(n.bind(null, 'hX2d'))
           },
           loaderKey: 'newsPreviewCardLoader',
           strategy: l.a.Critical,
@@ -271,7 +272,7 @@
           o = void 0 !== i && i
         return r.e({
           loader: function () {
-            return n.e(232).then(n.bind(null, '+92Z'))
+            return n.e(236).then(n.bind(null, '+92Z'))
           },
           loaderKey: 'trendDefaultLoader',
           loaderOptions: { withThirdPartyCards: o, errorContext: t },
@@ -283,7 +284,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'ExploreScreen', function () {
-          return ce
+          return le
         })
       n('OZaJ')
       var r,
@@ -302,53 +303,54 @@
         y = n('KEM+'),
         m = n.n(y),
         g = (n('2G9S'), n('ERkP')),
-        O = n('es0u'),
-        v = (n('WNMA'), n('KqXw'), n('hqKg')),
-        w = n('BxsD'),
-        E = n('oQhu'),
-        P = n('wrlS'),
-        j = n('rxPX'),
-        C = function (e, t) {
+        O = n.n(g),
+        v = n('es0u'),
+        w = (n('WNMA'), n('KqXw'), n('hqKg')),
+        E = n('BxsD'),
+        P = n('oQhu'),
+        j = n('wrlS'),
+        C = n('rxPX'),
+        T = function (e, t) {
           var n, r
           return (
             (null === (n = t.match) || void 0 === n || null === (r = n.params) || void 0 === r ? void 0 : r.tabId) ||
             void 0
           )
         },
-        T = Object(j.a)()
+        x = Object(C.a)()
           .propsFromState(function () {
             return {
               initialTabModule:
-                ((e = Object(E.a)(function (e) {
-                  return Object(w.d)(e)
+                ((e = Object(P.a)(function (e) {
+                  return Object(E.d)(e)
                 })),
-                (t = Object(E.a)(function (e, t) {
-                  return Object(w.d)(e, t)
+                (t = Object(P.a)(function (e, t) {
+                  return Object(E.d)(e, t)
                 })),
-                Object(v.createSelector)(
-                  P.d,
-                  C,
+                Object(w.createSelector)(
+                  j.d,
+                  T,
                   function (t) {
-                    return e(Object(P.d)(t)).selectPageConfiguration(t)
+                    return e(Object(j.d)(t)).selectPageConfiguration(t)
                   },
                   function (e, n, r) {
                     var a
                     return t(e, r ? (null == r || null === (a = r.tabs) || void 0 === a ? void 0 : a.initialTabId) : n)
                   },
                 )),
-              selectedTabId: C,
+              selectedTabId: T,
             }
             var e, t
           })
           .withAnalytics({ page: 'guide', section: 'main' }),
-        x = n('FIs5'),
-        _ = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('QIgh')),
-        S = n('8UdT'),
-        k = n('iu0J'),
-        B = n('PH3B'),
-        L = n('+o05'),
-        R = n('XtkE')
-      function D(e, t) {
+        _ = n('FIs5'),
+        S = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('QIgh')),
+        k = n('8UdT'),
+        B = n('iu0J'),
+        L = n('PH3B'),
+        R = n('+o05'),
+        D = n('XtkE')
+      function H(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -360,46 +362,46 @@
         }
         return n
       }
-      function H(e) {
+      function M(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? D(Object(n), !0).forEach(function (t) {
+            ? H(Object(n), !0).forEach(function (t) {
                 m()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : D(Object(n)).forEach(function (t) {
+            : H(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var M = 'EXPLORE_SCREEN',
-        I = H(
-          H({}, _.b),
+      var I = 'EXPLORE_SCREEN',
+        X = M(
+          M({}, S.b),
           {},
           ((r = {}),
-          m()(r, S.b.EventSummary, Object(k.a)({ errorContext: M })),
-          m()(r, S.b.News, B.a),
-          m()(r, S.b.ScoreEventSummary, L.a),
-          m()(r, S.b.Trend, Object(R.a)({ withThirdPartyCards: !0, errorContext: M })),
+          m()(r, k.b.EventSummary, Object(B.a)({ errorContext: I })),
+          m()(r, k.b.News, L.a),
+          m()(r, k.b.ScoreEventSummary, R.a),
+          m()(r, k.b.Trend, Object(D.a)({ withThirdPartyCards: !0, errorContext: I })),
           r),
         ),
-        X = n('0+qk'),
-        K = n('3XMw'),
-        F = n.n(K),
-        J = n('VTxf'),
-        N = n('rJoH'),
-        A = n('7BdX'),
-        W = n('7nmT'),
-        Y = n.n(W),
-        q = n('UZjl'),
-        z = n('+Bsv'),
-        Z = n('LsPn'),
-        Q = n('aITJ'),
-        U = n('v6aA')
-      function V(e) {
+        K = n('0+qk'),
+        F = n('3XMw'),
+        J = n.n(F),
+        N = n('VTxf'),
+        A = n('rJoH'),
+        W = n('7BdX'),
+        Y = n('7nmT'),
+        q = n.n(Y),
+        z = n('UZjl'),
+        Z = n('+Bsv'),
+        Q = n('LsPn'),
+        U = n('aITJ'),
+        V = n('v6aA')
+      function G(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -420,22 +422,22 @@
           return p()(this, n)
         }
       }
-      var G = F.a.fcf3e54b,
-        $ = F.a.ead349a7,
-        ee = F.a.a19ce06f,
-        te = F.a.a9ae1e78,
-        ne = function () {
-          return g.createElement(J.a, null)
-        },
+      var $ = J.a.fcf3e54b,
+        ee = J.a.ead349a7,
+        te = J.a.a19ce06f,
+        ne = J.a.a9ae1e78,
         re = function () {
-          return g.createElement(x.a, { message: ee })
+          return O.a.createElement(N.a, null)
         },
-        ae = 600,
-        ie = 315,
-        oe = 'https://abs.twimg.com/a/1602199131/img/moments/moments-card.jpg',
-        ce = (function (e) {
+        ae = function () {
+          return O.a.createElement(_.a, { message: te })
+        },
+        ie = 600,
+        oe = 315,
+        ce = 'https://abs.twimg.com/a/1602199131/img/moments/moments-card.jpg',
+        le = (function (e) {
           f()(n, e)
-          var t = V(n)
+          var t = G(n)
           function n() {
             var e
             i()(this, n)
@@ -455,7 +457,7 @@
                 e._searchBoxRef = t
               }),
               m()(u()(e), '_handleSoftLeftClick', function () {
-                var t = Y.a.findDOMNode(e._searchBoxRef)
+                var t = q.a.findDOMNode(e._searchBoxRef)
                 t && t instanceof window.HTMLElement && t.querySelector('input').focus()
               }),
               e
@@ -472,49 +474,49 @@
                     r = e.initialTabModule,
                     a = e.location,
                     i = e.selectedTabId,
-                    o = g.createElement(X.a, { history: n }),
+                    o = O.a.createElement(K.a, { history: n }),
                     c = this.context.featureSwitches.isTrue('responsive_web_trends_setting_new_endpoints')
                       ? '/settings/explore'
                       : '/settings/trends',
-                    l = g.createElement(z.a, { onPress: this._handleSettingsClick, pullRight: !0, to: c }),
+                    l = O.a.createElement(Z.a, { onPress: this._handleSettingsClick, pullRight: !0, to: c }),
                     u = a.state && a.state.searchFocused,
-                    s = g.createElement(O.a, { withSearchBox: !1, withTrends: !1 })
-                  return g.createElement(
-                    g.Fragment,
+                    s = O.a.createElement(v.a, { withSearchBox: !1, withTrends: !1 })
+                  return O.a.createElement(
+                    O.a.Fragment,
                     null,
-                    g.createElement(N.a, {
+                    O.a.createElement(A.a, {
                       canonical: 'https://twitter.com/explore',
-                      description: $,
-                      image: oe,
-                      imageH: ie,
-                      imageW: ae,
-                      title: G,
+                      description: ee,
+                      image: ce,
+                      imageH: oe,
+                      imageW: ie,
+                      title: $,
                       type: 'article',
                     }),
-                    g.createElement(q.a, {
+                    O.a.createElement(z.a, {
                       behavioralEventViewType: 'guide',
-                      entryConfiguration: I,
+                      entryConfiguration: X,
                       fab: o,
                       getTabLink: this._getTabLink,
                       history: n,
                       initialPageNamespace: t.contextualScribeNamespace,
                       module: r,
                       onBackClick: u ? this._handleBackClick : void 0,
-                      prerollDisplayLocation: A.c.OTHER,
-                      renderEmptyState: ne,
-                      renderUnavailable: re,
+                      prerollDisplayLocation: W.c.OTHER,
+                      renderEmptyState: re,
+                      renderUnavailable: ae,
                       rightControl: l,
                       searchBoxRef: this._setSearchBoxRef,
                       selectedTabId: i,
                       sidebarContent: s,
-                      timelinePrefix: w.b,
-                      title: G,
+                      timelinePrefix: E.b,
+                      title: $,
                       withBottomLoginSignupBar: !0,
                       withDeferredView: !0,
                       withSearchBox: !0,
                     }),
-                    Q.b.isKaiOS()
-                      ? g.createElement(Z.a, { leftText: te, onLeftClick: this._handleSoftLeftClick })
+                    U.b.isKaiOS()
+                      ? O.a.createElement(Q.a, { leftText: ne, onLeftClick: this._handleSoftLeftClick })
                       : null,
                   )
                 },
@@ -522,29 +524,30 @@
             ]),
             n
           )
-        })(g.Component)
-      m()(ce, 'contextType', U.a)
-      t.default = T(ce)
+        })(O.a.Component)
+      m()(le, 'contextType', V.a)
+      t.default = x(le)
     },
     rA3t: function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'ExploreRevampScreen', function () {
-          return M
+          return I
         })
       n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var r = n('KEM+'),
         a = n.n(r),
         i = n('ERkP'),
-        o = n('v6aA'),
-        c = n('es0u'),
-        l = n('mw9i'),
-        u = n('s14A'),
-        s = n('dwig'),
-        f = n('0+qk'),
-        d = n('WpDa'),
-        p = n('ZNT5'),
-        b = Object(p.a)({
+        o = n.n(i),
+        c = n('v6aA'),
+        l = n('es0u'),
+        u = n('mw9i'),
+        s = n('s14A'),
+        f = n('dwig'),
+        d = n('0+qk'),
+        p = n('WpDa'),
+        b = n('ZNT5'),
+        h = Object(b.a)({
           timelineId: 'forYouExploreGraphQL',
           getEndpoint: function (e) {
             return e.Explore.fetchForYouExplore
@@ -556,21 +559,21 @@
           },
           context: 'FETCH_FOR_YOU_EXPLORE',
           perfKey: 'forYouExploreGraphQL',
-          formatResponse: d.a,
+          formatResponse: p.a,
         }),
-        h = n('3XMw'),
-        y = n.n(h),
-        m = n('rJoH'),
-        g = n('yoO3'),
-        O = n('7nmT'),
-        v = n.n(O),
-        w = n('fTQJ'),
-        E = n('+Bsv'),
-        P = n('VS6U'),
-        j = n('LsPn'),
-        C = n('aITJ'),
-        T = n('Irs7')
-      function x(e, t) {
+        y = n('3XMw'),
+        m = n.n(y),
+        g = n('rJoH'),
+        O = n('yoO3'),
+        v = n('7nmT'),
+        w = n.n(v),
+        E = n('fTQJ'),
+        P = n('+Bsv'),
+        j = n('VS6U'),
+        C = n('LsPn'),
+        T = n('aITJ'),
+        x = n('Irs7')
+      function _(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -582,96 +585,96 @@
         }
         return n
       }
-      function _(e) {
+      function S(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? x(Object(n), !0).forEach(function (t) {
+            ? _(Object(n), !0).forEach(function (t) {
                 a()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : x(Object(n)).forEach(function (t) {
+            : _(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var S = y.a.fcf3e54b,
-        k = y.a.ead349a7,
-        B = y.a.a9ae1e78,
-        L = { page: 'guide', section: 'main' },
-        R = 600,
-        D = 315,
-        H = 'https://abs.twimg.com/a/1602199131/img/moments/moments-card.jpg',
-        M = function (e) {
+      var k = m.a.fcf3e54b,
+        B = m.a.ead349a7,
+        L = m.a.a9ae1e78,
+        R = { page: 'guide', section: 'main' },
+        D = 600,
+        H = 315,
+        M = 'https://abs.twimg.com/a/1602199131/img/moments/moments-card.jpg',
+        I = function (e) {
           var t = e.analytics,
             n = e.history,
             r = e.location,
-            a = i.useContext(o.a).featureSwitches,
-            d = i.useRef(null),
+            a = o.a.useContext(c.a).featureSwitches,
+            i = o.a.useRef(null),
             p = r.state && r.state.searchFocused,
-            h = a.isTrue('responsive_web_trends_setting_new_endpoints') ? '/settings/explore' : '/settings/trends',
-            y = i.useCallback(
+            b = a.isTrue('responsive_web_trends_setting_new_endpoints') ? '/settings/explore' : '/settings/trends',
+            y = o.a.useCallback(
               function (e) {
-                t.scribe(_(_({}, L), {}, { element: 'settings_button', action: 'click' }))
+                t.scribe(S(S({}, R), {}, { element: 'settings_button', action: 'click' }))
               },
               [t],
             ),
-            O = i.useCallback(
+            m = o.a.useCallback(
               function () {
                 n.goBack({ backLocation: '/' })
               },
               [n],
             ),
-            T = i.useCallback(
+            v = o.a.useCallback(
               function () {
-                var e = v.a.findDOMNode(d.current)
+                var e = w.a.findDOMNode(i.current)
                 e && e instanceof window.HTMLElement && e.querySelector('input').focus()
               },
-              [d],
+              [i],
             ),
-            x = i.createElement(f.a, { history: n }),
-            M = i.createElement(E.a, { onPress: y, pullRight: !0, to: h }),
-            I = i.createElement(c.a, { withSearchBox: !1, withTrends: !1 })
-          return i.createElement(
-            i.Fragment,
+            x = o.a.createElement(d.a, { history: n }),
+            _ = o.a.createElement(P.a, { onPress: y, pullRight: !0, to: b }),
+            I = o.a.createElement(l.a, { withSearchBox: !1, withTrends: !1 })
+          return o.a.createElement(
+            o.a.Fragment,
             null,
-            i.createElement(
-              g.a,
+            o.a.createElement(
+              O.a,
               { behavioralEventViewType: 'guide' },
-              i.createElement(m.a, {
+              o.a.createElement(g.a, {
                 canonical: 'https://twitter.com/explore',
-                description: k,
-                image: H,
-                imageH: D,
-                imageW: R,
-                title: S,
+                description: B,
+                image: M,
+                imageH: H,
+                imageW: D,
+                title: k,
                 type: 'article',
               }),
-              i.createElement(P.a, {
+              o.a.createElement(j.a, {
                 history: n,
-                onBackClick: p ? O : void 0,
-                primaryContent: i.createElement(
-                  s.a,
-                  { component: l.a, fab: x },
-                  i.createElement(u.a, null, i.createElement(w.a, { module: b, title: S })),
+                onBackClick: p ? m : void 0,
+                primaryContent: o.a.createElement(
+                  f.a,
+                  { component: u.a, fab: x },
+                  o.a.createElement(s.a, null, o.a.createElement(E.a, { module: h, title: k })),
                 ),
-                rightControl: M,
+                rightControl: _,
                 searchBoxRef: function (e) {
-                  d.current = e
+                  i.current = e
                 },
                 secondaryBar: null,
                 sidebarContent: I,
-                title: S,
+                title: k,
                 withBottomLoginSignupBar: !0,
                 withSearchBox: !0,
               }),
             ),
-            C.b.isKaiOS() ? i.createElement(j.a, { leftText: B, onLeftClick: T }) : null,
+            T.b.isKaiOS() ? o.a.createElement(C.a, { leftText: L, onLeftClick: v }) : null,
           )
         }
-      t.default = Object(T.a)(M)
+      t.default = Object(x.a)(I)
     },
   },
 ])

@@ -1,42 +1,43 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [338],
+  [342],
   {
     '0mK8': function (e, t, r) {
       'use strict'
       r.d(t, 'a', function () {
-        return u
+        return m
       }),
         r.d(t, 'b', function () {
-          return m
+          return g
         }),
         r.d(t, 'c', function () {
-          return g
+          return b
         })
       r('ho0z'), r('uFXj')
       var n = r('ERkP'),
+        a = r.n(n),
         o = r('MWbm'),
-        a = r('GcQN'),
-        i = r('PU7B'),
-        c = r('/WPq'),
-        l = r('78ol'),
-        s = r('jV+4'),
-        d = r('rHpw'),
-        u = function (e) {
+        i = r('GcQN'),
+        c = r('PU7B'),
+        l = r('/WPq'),
+        s = r('78ol'),
+        d = r('jV+4'),
+        u = r('rHpw'),
+        m = function (e) {
           var t = e.author,
             r = e.color,
-            o = void 0 === r ? 'normal' : r,
-            a = e.size,
-            i = void 0 === a ? 'subtext2' : a,
+            n = void 0 === r ? 'normal' : r,
+            o = e.size,
+            i = void 0 === o ? 'subtext2' : o,
             c = e.style,
             l = e.withHoverCard,
-            d = void 0 === l || l,
+            s = void 0 === l || l,
             u = e.withLink,
             m = void 0 !== u && u,
             g = e.withScreenName,
-            h = void 0 !== g && g
-          return n.createElement(s.a, {
+            b = void 0 !== g && g
+          return a.a.createElement(d.a, {
             avatarSize: { subtext2: 'small', body: 'medium', headline1: 'large' }[i],
-            color: o,
+            color: n,
             isProtected: t.protected,
             isVerified: t.verified,
             name: t.name,
@@ -44,33 +45,33 @@
             profileImageUrl: t.profile_image_url_https,
             screenName: t.screen_name,
             screenNameSize: i,
-            style: [b.authorUserName, c],
-            withHoverCard: d,
+            style: [h.authorUserName, c],
+            withHoverCard: s,
             withLink: m,
-            withScreenName: h,
+            withScreenName: b,
           })
         },
-        m = function (e) {
-          var t = e.style
-          return n.createElement(
-            o.a,
-            { style: [b.lightningBadge, t] },
-            n.createElement(a.a, { style: b.lightningIcon }),
-          )
-        },
         g = function (e) {
-          var t = e.icon
-          return n.createElement(
+          var t = e.style
+          return a.a.createElement(
             o.a,
-            { style: b.placeholderIconContainer },
-            'news' === t
-              ? n.createElement(i.a, { style: b.placeholderIcon })
-              : 'lists' === t
-              ? n.createElement(c.a, { style: b.placeholderIcon })
-              : n.createElement(l.a, { style: b.placeholderIcon }),
+            { style: [h.lightningBadge, t] },
+            a.a.createElement(i.a, { style: h.lightningIcon }),
           )
         },
-        b = d.a.create(function (e) {
+        b = function (e) {
+          var t = e.icon
+          return a.a.createElement(
+            o.a,
+            { style: h.placeholderIconContainer },
+            'news' === t
+              ? a.a.createElement(c.a, { style: h.placeholderIcon })
+              : 'lists' === t
+              ? a.a.createElement(l.a, { style: h.placeholderIcon })
+              : a.a.createElement(s.a, { style: h.placeholderIcon }),
+          )
+        },
+        h = u.a.create(function (e) {
           return {
             authorUserName: { alignItems: 'center' },
             lightningBadge: {
@@ -104,18 +105,19 @@
       'use strict'
       r.r(t)
       var n = r('tPQo'),
-        o = (r('hBvt'), r('0mK8')),
-        a = r('ERkP'),
-        i = r('MWbm'),
-        c = r('htQn'),
-        l = r('t62R'),
-        s = r('9Xij'),
-        d = r('TIdA'),
-        u = r('A91F'),
-        m = r('rHpw'),
-        g = '100px',
-        b = '70px',
-        h = m.a.create(function (e) {
+        a = (r('hBvt'), r('0mK8')),
+        o = r('ERkP'),
+        i = r.n(o),
+        c = r('MWbm'),
+        l = r('htQn'),
+        s = r('t62R'),
+        d = r('9Xij'),
+        u = r('TIdA'),
+        m = r('A91F'),
+        g = r('rHpw'),
+        b = '100px',
+        h = '70px',
+        p = g.a.create(function (e) {
           return {
             root: {
               flexDirection: 'row',
@@ -127,10 +129,10 @@
               backgroundColor: e.colors.gray200,
               borderRadius: e.borderRadii.xLarge,
               height: '15%',
-              maxHeight: g,
-              maxWidth: g,
-              minHeight: b,
-              minWidth: b,
+              maxHeight: b,
+              maxWidth: b,
+              minHeight: h,
+              minWidth: h,
               overflow: 'hidden',
               width: '15%',
             },
@@ -138,42 +140,42 @@
             title: { marginHorizontal: 0, marginVertical: e.spaces.space2 },
           }
         }),
-        p = function (e) {
+        f = function (e) {
           var t = e.author,
             r = e.link,
             n = e.onClick,
-            m = e.originalImage,
+            o = e.originalImage,
             g = e.title
-          return a.createElement(
-            c.a,
-            { link: r, onClick: n, style: h.root },
-            a.createElement(
-              i.a,
-              { style: h.details },
-              a.createElement(l.b, { color: 'gray700', size: 'subtext2' }, t),
-              a.createElement(l.b, { style: h.title, weight: 'bold' }, g),
+          return i.a.createElement(
+            l.a,
+            { link: r, onClick: n, style: p.root },
+            i.a.createElement(
+              c.a,
+              { style: p.details },
+              i.a.createElement(s.b, { color: 'gray700', size: 'subtext2' }, t),
+              i.a.createElement(s.b, { style: p.title, weight: 'bold' }, g),
             ),
-            a.createElement(
-              i.a,
-              { style: h.coverContainer },
-              a.createElement(
-                s.a,
+            i.a.createElement(
+              c.a,
+              { style: p.coverContainer },
+              i.a.createElement(
+                d.a,
                 { ratio: 1 },
-                m
-                  ? a.createElement(d.a, { accessibilityLabel: '', aspectMode: u.a.SQUARE, image: m })
-                  : a.createElement(o.c, { icon: 'news' }),
+                o
+                  ? i.a.createElement(u.a, { accessibilityLabel: '', aspectMode: m.a.SQUARE, image: o })
+                  : i.a.createElement(a.c, { icon: 'news' }),
               ),
             ),
           )
         }
-      t.default = Object(n.a)(p, function () {})
+      t.default = Object(n.a)(f, function () {})
     },
     tPQo: function (e, t, r) {
       'use strict'
       r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
       var n = r('KEM+'),
-        o = r.n(n),
-        a = r('ezF+'),
+        a = r.n(n),
+        o = r('ezF+'),
         i = r('VPAj'),
         c = r('caTy'),
         l = r('zh9S'),
@@ -195,7 +197,7 @@
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
             ? d(Object(r), !0).forEach(function (t) {
-                o()(e, t, r[t])
+                a()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
@@ -206,7 +208,7 @@
         return e
       }
       t.a = function (e, t) {
-        return a.g({
+        return o.g({
           isFocusable: Object(i.a)(!0),
           component: e,
           bindActions: Object(i.a)({ scribe: l.c }),
@@ -216,9 +218,9 @@
           createProps: function (e) {
             var r = e.actions.scribe,
               n = e.data.dataSaverMode,
-              o = e.entry,
-              a = e.scribeNamespace,
-              i = o.content,
+              a = e.entry,
+              o = e.scribeNamespace,
+              i = a.content,
               l = i.landingUrl && Object(c.b)(i.landingUrl),
               s = t({ content: i }),
               d = {
@@ -226,7 +228,7 @@
                 link: l,
                 originalImage: n ? void 0 : i.originalImage,
                 onClick: function () {
-                  r(u(u({}, a), {}, { action: 'click' }), void 0)
+                  r(u(u({}, o), {}, { action: 'click' }), void 0)
                 },
                 title: i.title,
               }

@@ -5,31 +5,32 @@
       'use strict'
       a.r(t),
         a.d(t, 'default', function () {
-          return k
+          return v
         })
       a('WNMA'), a('KqXw')
       var n = a('ERkP'),
-        r = (a('z84I'), a('B/Qy')),
-        o = a('Ty5D'),
-        c = a('MWbm'),
-        i = a('5Vk4'),
-        s = a('sgih'),
-        l = a('xKuM'),
-        u = a('jtO7'),
-        p = a('rHpw'),
-        d = a('PaZX')
-      function m(e) {
+        r = a.n(n),
+        o = (a('z84I'), a('B/Qy')),
+        c = a('Ty5D'),
+        i = a('MWbm'),
+        s = a('5Vk4'),
+        l = a('sgih'),
+        u = a('xKuM'),
+        p = a('jtO7'),
+        d = a('rHpw'),
+        m = a('PaZX')
+      function b(e) {
         var t = e.audioSpaceId,
           a = (function (e) {
-            var t = Object(o.g)(),
-              a = Object(r.a)(e)
+            var t = Object(c.g)(),
+              a = Object(o.a)(e)
             return function () {
               t.push(a)
             }
           })(t),
-          u = n.createElement(i.a, { autofocus: !0, backButtonType: 'back', onClick: a })
-        return n.createElement(
-          s.a,
+          n = r.a.createElement(s.a, { autofocus: !0, backButtonType: 'back', onClick: a })
+        return r.a.createElement(
+          l.a,
           {
             accessibilityRole: 'menu',
             allowBackNavigation: !0,
@@ -39,30 +40,30 @@
             withKeyboardNavigation: !0,
             withMask: !0,
           },
-          n.createElement(
-            c.a,
-            { style: f.root },
-            n.createElement(l.a, {
-              leftControl: u,
-              style: f.appBar,
-              subtitle: d.c.describeTheIssue,
-              title: d.c.reportThisSpace,
+          r.a.createElement(
+            i.a,
+            { style: g.root },
+            r.a.createElement(u.a, {
+              leftControl: n,
+              style: g.appBar,
+              subtitle: m.c.describeTheIssue,
+              title: m.c.reportThisSpace,
               withGutter: !0,
             }),
-            n.createElement(b, { audioSpaceId: t, returnToPreview: a }),
+            r.a.createElement(f, { audioSpaceId: t, returnToPreview: a }),
           ),
         )
       }
-      function b(e) {
+      function f(e) {
         var t = e.audioSpaceId,
           a = e.returnToPreview,
-          r = d.a.useReportingItems({ audioSpaceId: t })
-        return n.createElement(
-          c.a,
-          { style: f.actionList },
-          r.map(function (e) {
+          n = m.a.useReportingItems({ audioSpaceId: t })
+        return r.a.createElement(
+          i.a,
+          { style: g.actionList },
+          n.map(function (e) {
             var t = e.label
-            return n.createElement(u.a, {
+            return r.a.createElement(p.a, {
               align: 'left',
               color: 'red500',
               key: t,
@@ -74,18 +75,18 @@
           }),
         )
       }
-      var f = p.a.create(function (e) {
+      var g = d.a.create(function (e) {
         return {
           root: { paddingBottom: e.spaces.space56 },
           appBar: { paddingVertical: e.spaces.space8 },
           actionList: { marginTop: e.spaces.space20 },
         }
       })
-      m.ActionList = b
-      var g = a('Z5jE')
-      function k(e) {
-        var t = Object(g.a)(e.match)
-        return n.createElement(m, { audioSpaceId: t })
+      b.ActionList = f
+      var k = a('Z5jE')
+      function v(e) {
+        var t = Object(k.a)(e.match)
+        return r.a.createElement(b, { audioSpaceId: t })
       }
     },
     Z5jE: function (e, t, a) {
@@ -104,12 +105,13 @@
         o = a('m3Bd'),
         c = a.n(o),
         i = a('ERkP'),
-        s = a('t62R'),
-        l = a('I4+6'),
-        u = a('cm6r'),
-        p = a('rHpw'),
-        d = a('MWbm'),
-        m = p.a.create(function (e) {
+        s = a.n(i),
+        l = a('t62R'),
+        u = a('I4+6'),
+        p = a('cm6r'),
+        d = a('rHpw'),
+        m = a('MWbm'),
+        b = d.a.create(function (e) {
           return {
             container: { backgroundColor: e.colors.cellBackground },
             root: {
@@ -125,19 +127,19 @@
           a = void 0 === t ? 'center' : t,
           n = e.color,
           o = e.label,
-          b = c()(e, ['align', 'color', 'label']),
-          f = l.a.generate({
-            backgroundColor: p.a.theme.colors.transparent,
-            color: p.a.theme.colors[n],
+          i = c()(e, ['align', 'color', 'label']),
+          f = u.a.generate({
+            backgroundColor: d.a.theme.colors.transparent,
+            color: d.a.theme.colors[n],
             insetFocusRing: !0,
           })
-        return i.createElement(
-          d.a,
-          { style: m.container },
-          i.createElement(
-            u.a,
-            r()({}, b, { interactiveStyles: f, style: m.root }),
-            i.createElement(s.b, { align: a, color: n }, o),
+        return s.a.createElement(
+          m.a,
+          { style: b.container },
+          s.a.createElement(
+            p.a,
+            r()({}, i, { interactiveStyles: f, style: b.root }),
+            s.a.createElement(l.b, { align: a, color: n }, o),
           ),
         )
       }

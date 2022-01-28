@@ -1,149 +1,150 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [36, 167],
+  [36, 169],
   {
-    '/ZwF': function (e, t, n) {
+    '/ZwF': function (e, t, a) {
       'use strict'
-      n.r(t),
-        n.d(t, 'BirdwatchTweetNotesScreen', function () {
-          return se
+      a.r(t),
+        a.d(t, 'BirdwatchTweetNotesScreen', function () {
+          return ue
         })
-      var r = n('ddV6'),
-        a = n.n(r),
-        o = (n('z84I'), n('uFXj'), n('ERkP')),
-        i = n('v6aA'),
-        c = n('ZD0R'),
-        l = n('vZpt'),
-        s = n('L5MV'),
-        u = (n('WNMA'), n('KqXw'), n('MvLc')),
-        d = n('XOJV'),
-        p = n('G6rE'),
-        f = n('rxPX'),
-        b = n('0KEI'),
-        m = function (e, t) {
+      var n = a('ddV6'),
+        r = a.n(n),
+        o = (a('z84I'), a('uFXj'), a('ERkP')),
+        i = a.n(o),
+        c = a('v6aA'),
+        l = a('ZD0R'),
+        s = a('vZpt'),
+        u = a('L5MV'),
+        d = (a('WNMA'), a('KqXw'), a('MvLc')),
+        p = a('XOJV'),
+        f = a('G6rE'),
+        b = a('rxPX'),
+        m = a('0KEI'),
+        h = function (e, t) {
           return t.match.params.tweetId
         },
-        h = function (e, t) {
-          var n = m(0, t)
-          return n ? d.a.selectHydrated(e, n) : void 0
-        },
         y = function (e, t) {
-          return u.s(e, m(0, t))
+          var a = h(0, t)
+          return a ? p.a.selectHydrated(e, a) : void 0
         },
         v = function (e, t) {
-          return u.x(e, m(0, t))
+          return d.s(e, h(0, t))
         },
         g = function (e, t) {
-          return u.w(e, m(0, t))
+          return d.x(e, h(0, t))
         },
-        w = Object(f.a)()
+        w = function (e, t) {
+          return d.w(e, h(0, t))
+        },
+        E = Object(b.a)()
           .propsFromState(function () {
             return {
-              ownNoteData: v,
-              fetchStatus: g,
-              loggedInUser: p.e.selectLoggedInUser,
-              tweet: h,
-              tweetId: m,
-              notes: y,
+              ownNoteData: g,
+              fetchStatus: w,
+              loggedInUser: f.e.selectLoggedInUser,
+              tweet: y,
+              tweetId: h,
+              notes: v,
             }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(b.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
-              fetchNotes: u.k,
-              fetchTweet: d.a.fetchOneIfNeeded,
-              fetchUserAlias: u.l,
+              createLocalApiErrorHandler: Object(m.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
+              fetchNotes: d.k,
+              fetchTweet: p.a.fetchOneIfNeeded,
+              fetchUserAlias: d.l,
             }
           }),
-        E = n('kGix'),
-        O = n('3XMw'),
-        _ = n.n(O),
-        S = n('yoO3'),
-        C = n('7JQg'),
-        j = n('VS6U'),
-        T = n('xZXe'),
-        A = n('MWbm'),
-        I = n('FIs5'),
-        x = n('4zmP'),
-        P = n('t62R'),
-        L = n('htQn'),
-        R = n('6vad'),
-        D = n('0yYu'),
-        k = n('/yvb'),
-        B = n('Qwev'),
-        N = n('rHpw'),
-        M = n('Nh1N'),
-        H = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('KEM+')),
-        F = n.n(H),
-        z = n('Lsrn'),
-        W = n('k/Ka')
-      function U(e, t) {
-        var n = Object.keys(e)
+        O = a('kGix'),
+        _ = a('3XMw'),
+        S = a.n(_),
+        C = a('yoO3'),
+        T = a('7JQg'),
+        j = a('VS6U'),
+        A = a('xZXe'),
+        I = a('MWbm'),
+        x = a('FIs5'),
+        P = a('4zmP'),
+        L = a('t62R'),
+        R = a('htQn'),
+        D = a('6vad'),
+        k = a('0yYu'),
+        B = a('/yvb'),
+        N = a('Qwev'),
+        M = a('rHpw'),
+        H = a('Nh1N'),
+        F = (a('+KXO'), a('1t7P'), a('LW0h'), a('daRM'), a('jwue'), a('+oxZ'), a('FtHn'), a('KEM+')),
+        z = a.n(F),
+        W = a('Lsrn'),
+        U = a('k/Ka')
+      function K(e, t) {
+        var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
+          var n = Object.getOwnPropertySymbols(e)
           t &&
-            (r = r.filter(function (t) {
+            (n = n.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            n.push.apply(n, r)
+            a.push.apply(a, n)
         }
-        return n
+        return a
       }
-      function K(e) {
+      function V(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
+          var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? U(Object(n), !0).forEach(function (t) {
-                F()(e, t, n[t])
+            ? K(Object(a), !0).forEach(function (t) {
+                z()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : U(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : K(Object(a)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var V = function () {
+      var X = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(W.a)(
+        return Object(U.a)(
           'svg',
-          K(
-            K({}, e),
+          V(
+            V({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [z.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [W.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          o.createElement(
+          i.a.createElement(
             'g',
             null,
-            o.createElement('path', {
+            i.a.createElement('path', {
               d: 'M12 1.25C6.072 1.25 1.25 6.072 1.25 12S6.072 22.75 12 22.75 22.75 17.928 22.75 12 17.928 1.25 12 1.25zM9.145 16.033c0 .414-.336.75-.75.75s-.75-.336-.75-.75v-5.046c0-.414.336-.75.75-.75s.75.336.75.75v5.046zm3.605 0c0 .414-.336.75-.75.75s-.75-.336-.75-.75V6.95c0-.415.336-.75.75-.75s.75.335.75.75v9.083zm3.605 0c0 .414-.336.75-.75.75s-.75-.336-.75-.75v-6.56c0-.414.336-.75.75-.75s.75.336.75.75v6.56z',
             }),
           ),
         )
       }
-      V.metadata = { width: 24, height: 24 }
-      var X = V,
-        q = _.a.h8335712,
-        G = _.a.fe27c1e1,
-        Z = _.a.c59107c3,
-        Q = _.a.i859a9d3,
-        Y = _.a.ib73f867,
-        J = _.a.efd14e79,
-        $ = _.a.d06b723c,
-        ee = _.a.j0790071,
-        te = _.a.j679dcda,
-        ne = _.a.d4f03f72,
-        re = _.a.d94e246a,
-        ae = _.a.d5c203a5,
-        oe = _.a.bd3f064b,
-        ie = _.a.ia596d40,
-        ce = _.a.deff0bdd,
-        le = o.createElement(I.a, { buttonLink: '/i/birdwatch/about', buttonText: Q, header: Y }),
-        se = function (e) {
-          var t = o.useContext(i.a).featureSwitches,
-            n = e.createLocalApiErrorHandler,
-            r = e.fetchNotes,
-            u = e.fetchStatus,
+      X.metadata = { width: 24, height: 24 }
+      var q = X,
+        G = S.a.h8335712,
+        Z = S.a.fe27c1e1,
+        Q = S.a.c59107c3,
+        Y = S.a.i859a9d3,
+        J = S.a.ib73f867,
+        $ = S.a.efd14e79,
+        ee = S.a.d06b723c,
+        te = S.a.j0790071,
+        ae = S.a.j679dcda,
+        ne = S.a.d4f03f72,
+        re = S.a.d94e246a,
+        oe = S.a.d5c203a5,
+        ie = S.a.bd3f064b,
+        ce = S.a.ia596d40,
+        le = S.a.deff0bdd,
+        se = i.a.createElement(x.a, { buttonLink: '/i/birdwatch/about', buttonText: Y, header: J }),
+        ue = function (e) {
+          var t = i.a.useContext(c.a).featureSwitches,
+            a = e.createLocalApiErrorHandler,
+            n = e.fetchNotes,
+            o = e.fetchStatus,
             d = e.fetchTweet,
             p = e.fetchUserAlias,
             f = e.history,
@@ -156,100 +157,100 @@
             w =
               t.isTrue('responsive_web_birdwatch_rating_participant_enabled') ||
               t.isTrue('responsive_web_birdwatch_rating_crowd_enabled'),
-            O = o.useMemo(
+            E = i.a.useMemo(
               function () {
                 return { page: 'birdwatch', section: g ? 'tweet_notes_participant' : 'tweet_notes' }
               },
               [g],
             ),
-            _ = o.useState(h),
-            I = a()(_, 2),
-            N = I[0],
-            H = I[1],
+            _ = i.a.useState(h),
+            S = r()(_, 2),
+            x = S[0],
+            M = S[1],
             F = function (e) {
-              H(null)
+              M(null)
             }
-          o.useEffect(
+          i.a.useEffect(
             function () {
-              v && (r(v).catch(n()), d(v).catch(n()))
+              v && (n(v).catch(a()), d(v).catch(a()))
             },
-            [n, r, d, v],
+            [a, n, d, v],
           ),
-            o.useEffect(
+            i.a.useEffect(
               function () {
-                H(h)
+                M(h)
               },
               [h],
             ),
-            o.useEffect(
+            i.a.useEffect(
               function () {
-                p().catch(n())
+                p().catch(a())
               },
-              [n, p],
+              [a, p],
             )
           var z,
             W,
             U,
-            K = o.createElement(
-              A.a,
-              { style: ue.appealsCallout },
-              o.createElement(x.a, {
-                Icon: M.a,
-                action: { label: Q, link: 'https://twitter.github.io/birdwatch/additional-review' },
-                headline: ae,
-                text: oe,
+            K = i.a.createElement(
+              I.a,
+              { style: de.appealsCallout },
+              i.a.createElement(P.a, {
+                Icon: H.a,
+                action: { label: Y, link: 'https://twitter.github.io/birdwatch/additional-review' },
+                headline: oe,
+                text: ie,
                 type: 'primary',
               }),
             ),
-            V = o.createElement(
-              A.a,
-              { style: ue.actionModuleContainer },
-              o.createElement(
-                A.a,
-                { style: ue.actionModule },
-                w ? o.createElement(X, { style: ue.icon }) : o.createElement(M.a, { style: ue.icon }),
-                o.createElement(P.b, { size: 'headline1', style: ue.header, weight: 'bold' }, w ? $ : ne),
-                o.createElement(P.b, { color: 'gray700' }, w ? ee : re),
+            V = i.a.createElement(
+              I.a,
+              { style: de.actionModuleContainer },
+              i.a.createElement(
+                I.a,
+                { style: de.actionModule },
+                w ? i.a.createElement(q, { style: de.icon }) : i.a.createElement(H.a, { style: de.icon }),
+                i.a.createElement(L.b, { size: 'headline1', style: de.header, weight: 'bold' }, w ? ee : ne),
+                i.a.createElement(L.b, { color: 'gray700' }, w ? te : re),
                 w
-                  ? o.createElement(
-                      P.b,
+                  ? i.a.createElement(
+                      L.b,
                       { link: { external: !0, pathname: 'https://twitter.github.io/birdwatch/note-examples' } },
-                      te,
+                      ae,
                     )
-                  : o.createElement(
-                      P.b,
+                  : i.a.createElement(
+                      L.b,
                       { link: { external: !0, pathname: 'https://twitter.github.io/birdwatch/overview' } },
-                      Q,
+                      Y,
                     ),
               ),
             )
-          return o.createElement(
-            C.b,
-            { namespace: O },
-            o.createElement(
-              S.a,
+          return i.a.createElement(
+            T.b,
+            { namespace: E },
+            i.a.createElement(
+              C.a,
               null,
-              o.createElement(j.a, {
-                TabBar: s.a,
+              i.a.createElement(j.a, {
+                TabBar: u.a,
                 backLocation: '/i/birdwatch',
                 history: f,
-                logoButton: o.createElement(o.Fragment, null),
+                logoButton: i.a.createElement(i.a.Fragment, null),
                 primaryContent:
-                  ((z = N || m.length),
+                  ((z = x || m.length),
                   (W = '/i/birdwatch/contribute/'.concat(v)),
                   (U =
                     t.isTrue('responsive_web_birdwatch_appeals_enabled') &&
                     (null == b ? void 0 : b.id_str) === (null == y ? void 0 : y.user.id_str)),
-                  o.createElement(
-                    L.a,
+                  i.a.createElement(
+                    R.a,
                     null,
-                    o.createElement(
-                      A.a,
-                      { style: ue.contentWrapper },
-                      o.createElement(
-                        A.a,
-                        { style: ue.withBottomBorder },
-                        o.createElement(T.b, {
+                    i.a.createElement(
+                      I.a,
+                      { style: de.contentWrapper },
+                      i.a.createElement(
+                        I.a,
+                        { style: de.withBottomBorder },
+                        i.a.createElement(A.b, {
                           displayPromotedContent: !1,
                           tweetId: v,
                           withActions: !0,
@@ -259,63 +260,63 @@
                         }),
                       ),
                       z
-                        ? o.createElement(
-                            o.Fragment,
+                        ? i.a.createElement(
+                            i.a.Fragment,
                             null,
-                            N &&
-                              o.createElement(
-                                A.a,
+                            x &&
+                              i.a.createElement(
+                                I.a,
                                 null,
-                                o.createElement(R.b, { text: q }),
-                                o.createElement(c.a, { handleDelete: F, note: N }),
+                                i.a.createElement(D.b, { text: G }),
+                                i.a.createElement(l.a, { handleDelete: F, note: x }),
                               ),
                             !!m.length &&
-                              o.createElement(
-                                o.Fragment,
+                              i.a.createElement(
+                                i.a.Fragment,
                                 null,
-                                o.createElement(A.a, { style: ue.divider }),
-                                o.createElement(R.b, { text: G }),
+                                i.a.createElement(I.a, { style: de.divider }),
+                                i.a.createElement(D.b, { text: Z }),
                                 U ? K : V,
-                                o.createElement(D.a, null),
+                                i.a.createElement(k.a, null),
                                 m.map(function (e) {
-                                  return o.createElement(
-                                    o.Fragment,
+                                  return i.a.createElement(
+                                    i.a.Fragment,
                                     { key: e.rest_id },
-                                    o.createElement(c.a, { note: e }),
-                                    o.createElement(D.a, null),
+                                    i.a.createElement(l.a, { note: e }),
+                                    i.a.createElement(k.a, null),
                                   )
                                 }),
-                                g && !N
-                                  ? o.createElement(
-                                      A.a,
-                                      { style: ue.actionModuleContainer },
-                                      o.createElement(
-                                        A.a,
-                                        { style: ue.actionModule },
-                                        o.createElement(P.b, { style: ue.improveText }, ie),
-                                        o.createElement(
-                                          k.a,
-                                          { accessibilityLabel: ce, link: W, type: 'brandOutlined' },
-                                          ce,
+                                g && !x
+                                  ? i.a.createElement(
+                                      I.a,
+                                      { style: de.actionModuleContainer },
+                                      i.a.createElement(
+                                        I.a,
+                                        { style: de.actionModule },
+                                        i.a.createElement(L.b, { style: de.improveText }, ce),
+                                        i.a.createElement(
+                                          B.a,
+                                          { accessibilityLabel: le, link: W, type: 'brandOutlined' },
+                                          le,
                                         ),
                                       ),
                                     )
                                   : null,
                               ),
                           )
-                        : u === E.a.LOADING
-                        ? o.createElement(B.a, { accessibilityLabel: J, size: 'large', style: ue.spinner })
-                        : le,
+                        : o === O.a.LOADING
+                        ? i.a.createElement(N.a, { accessibilityLabel: $, size: 'large', style: de.spinner })
+                        : se,
                     ),
                   )),
-                sidebarContent: o.createElement(l.a, null),
-                title: Z,
+                sidebarContent: i.a.createElement(s.a, null),
+                title: Q,
                 withTweetButton: !1,
               }),
             ),
           )
         },
-        ue = N.a.create(function (e) {
+        de = M.a.create(function (e) {
           return {
             actionModule: {
               alignItems: 'center',
@@ -344,90 +345,91 @@
             },
           }
         }),
-        de = w(se)
-      t.default = de
+        pe = E(ue)
+      t.default = pe
     },
-    '0SuV': function (e, t, n) {
+    '0SuV': function (e, t, a) {
       'use strict'
-      n.r(t),
-        n.d(t, 'BirdwatchPrinciples', function () {
-          return A
+      a.r(t),
+        a.d(t, 'BirdwatchPrinciples', function () {
+          return I
         })
-      n('MvUL'), n('KqXw'), n('7x/C'), n('lTEL'), n('kYxP')
-      var r = n('ERkP'),
-        a = (n('WNMA'), n('MvLc')),
-        o = n('rxPX'),
-        i = n('0KEI'),
-        c = function (e, t) {
+      a('MvUL'), a('KqXw'), a('7x/C'), a('lTEL'), a('kYxP')
+      var n = a('ERkP'),
+        r = a.n(n),
+        o = (a('WNMA'), a('MvLc')),
+        i = a('rxPX'),
+        c = a('0KEI'),
+        l = function (e, t) {
           return t.match.params.tweetId
         },
-        l = function (e, t) {
-          return a.x(e, c(0, t))
+        s = function (e, t) {
+          return o.x(e, l(0, t))
         },
-        s = Object(o.a)()
+        u = Object(i.a)()
           .propsFromState(function () {
-            return { ownNoteData: l, tweetId: c }
+            return { ownNoteData: s, tweetId: l }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(i.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
-              fetchNotes: a.k,
+              createLocalApiErrorHandler: Object(c.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
+              fetchNotes: o.k,
             }
           })
           .withAnalytics({ page: 'birdwatch', section: 'contribute_form', component: 'values' }),
-        u = n('3XMw'),
-        d = n.n(u),
-        p = n('5FtR'),
-        f = n('aITJ'),
-        b = n('MWbm'),
-        m = n('t62R'),
-        h = n('h0NW'),
-        y = n('feu+'),
-        v = n('rHpw'),
-        g = n('yygM'),
-        w = n('QDet'),
-        E = n('wz7L'),
-        O = d.a.gfa725ae,
-        _ = d.a.c3d89aca,
-        S = d.a.h7ad677b,
-        C = d.a.eac7b6ab,
-        j = d.a.b0381cfb,
-        T = d.a.f0addddc,
-        A = function (e) {
+        d = a('3XMw'),
+        p = a.n(d),
+        f = a('5FtR'),
+        b = a('aITJ'),
+        m = a('MWbm'),
+        h = a('t62R'),
+        y = a('h0NW'),
+        v = a('feu+'),
+        g = a('rHpw'),
+        w = a('yygM'),
+        E = a('QDet'),
+        O = a('wz7L'),
+        _ = p.a.gfa725ae,
+        S = p.a.c3d89aca,
+        C = p.a.h7ad677b,
+        T = p.a.eac7b6ab,
+        j = p.a.b0381cfb,
+        A = p.a.f0addddc,
+        I = function (e) {
           var t = e.analytics,
-            n = e.createLocalApiErrorHandler,
-            a = e.fetchNotes,
+            a = e.createLocalApiErrorHandler,
+            n = e.fetchNotes,
             o = e.history,
             i = e.ownNoteData,
             c = e.tweetId,
             l = c ? '/i/birdwatch/'.concat(c, '/contribute_complete') : '/'
-          r.useEffect(
+          r.a.useEffect(
             function () {
-              c && a(c).catch(n())
+              c && n(c).catch(a())
             },
-            [n, a, c],
+            [a, n, c],
           )
           var s = function (e) {
               t.scribeAction('click_'.concat(e))
             },
             u = function (e) {
-              return r.createElement(b.a, { style: I.valueItem }, r.createElement(m.b, { color: 'gray700' }, e))
+              return r.a.createElement(m.a, { style: x.valueItem }, r.a.createElement(h.b, { color: 'gray700' }, e))
             },
             d = {
-              accessibilityLabel: O,
+              accessibilityLabel: _,
               items: [
-                { label: '', decoration: r.createElement(g.a, null), description: u(C) },
-                { label: '', decoration: r.createElement(w.a, null), description: u(j) },
-                { label: '', decoration: r.createElement(E.a, null), description: u(T) },
+                { label: '', decoration: r.a.createElement(w.a, null), description: u(T) },
+                { label: '', decoration: r.a.createElement(E.a, null), description: u(j) },
+                { label: '', decoration: r.a.createElement(O.a, null), description: u(A) },
               ],
             },
-            v = r.createElement(b.a, { style: I.values }, r.createElement(h.a, d))
+            p = r.a.createElement(m.a, { style: x.values }, r.a.createElement(y.a, d))
           return i
-            ? r.createElement(p.a, { to: l })
-            : r.createElement(y.a, {
-                actionLabel: _,
+            ? r.a.createElement(f.a, { to: l })
+            : r.a.createElement(v.a, {
+                actionLabel: S,
                 graphicDisplayMode: 'none',
-                headline: S,
+                headline: C,
                 isFullHeightOnMobile: !0,
                 onAction: function () {
                   s('continue'), c && o.replace('/i/birdwatch/contribute_form/'.concat(c))
@@ -435,36 +437,37 @@
                 onClose: function () {
                   s('close'), c && o.goBackThroughModals({ fallbackPath: '/i/status/'.concat(c) })
                 },
-                subtext: v,
-                withCloseButton: !f.b.isTwitterApp(),
+                subtext: p,
+                withCloseButton: !b.b.isTwitterApp(),
               })
         },
-        I = v.a.create(function (e) {
+        x = g.a.create(function (e) {
           return {
             valueItem: { flexDirection: 'row', marginLeft: e.spaces.space16 },
             values: { marginVertical: e.spaces.space16, textAlign: 'left', width: '100%' },
           }
         }),
-        x = s(A)
-      t.default = x
+        P = u(I)
+      t.default = P
     },
-    '3GUV': function (e, t, n) {
+    '3GUV': function (e, t, a) {
       'use strict'
-      n('OZaJ')
-      var r = n('VrFO'),
-        a = n.n(r),
-        o = n('Y9Ll'),
-        i = n.n(o),
-        c = n('5Yy7'),
-        l = n.n(c),
-        s = n('N+ot'),
-        u = n.n(s),
-        d = n('AuHH'),
-        p = n.n(d),
-        f = n('ERkP'),
-        b = n('rHpw'),
-        m = n('MWbm')
-      function h(e) {
+      a('OZaJ')
+      var n = a('VrFO'),
+        r = a.n(n),
+        o = a('Y9Ll'),
+        i = a.n(o),
+        c = a('5Yy7'),
+        l = a.n(c),
+        s = a('N+ot'),
+        u = a.n(s),
+        d = a('AuHH'),
+        p = a.n(d),
+        f = a('ERkP'),
+        b = a.n(f),
+        m = a('rHpw'),
+        h = a('MWbm')
+      function y(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -476,23 +479,23 @@
           }
         })()
         return function () {
-          var n,
-            r = p()(e)
+          var a,
+            n = p()(e)
           if (t) {
-            var a = p()(this).constructor
-            n = Reflect.construct(r, arguments, a)
-          } else n = r.apply(this, arguments)
-          return u()(this, n)
+            var r = p()(this).constructor
+            a = Reflect.construct(n, arguments, r)
+          } else a = n.apply(this, arguments)
+          return u()(this, a)
         }
       }
-      var y = (function (e) {
-          l()(n, e)
-          var t = h(n)
-          function n() {
-            return a()(this, n), t.apply(this, arguments)
+      var v = (function (e) {
+          l()(a, e)
+          var t = y(a)
+          function a() {
+            return r()(this, a), t.apply(this, arguments)
           }
           return (
-            i()(n, [
+            i()(a, [
               {
                 key: 'shouldComponentUpdate',
                 value: function () {
@@ -502,38 +505,39 @@
               {
                 key: 'render',
                 value: function () {
-                  return f.createElement(m.a, { style: v.root })
+                  return b.a.createElement(h.a, { style: g.root })
                 },
               },
             ]),
-            n
+            a
           )
-        })(f.Component),
-        v = b.a.create(function (e) {
+        })(b.a.Component),
+        g = m.a.create(function (e) {
           return { root: { height: 5 * e.lineHeightsPx.body } }
         })
-      t.a = y
+      t.a = v
     },
-    '5UID': function (e, t, n) {
+    '5UID': function (e, t, a) {
       'use strict'
-      n('OZaJ')
-      var r = n('VrFO'),
-        a = n.n(r),
-        o = n('Y9Ll'),
-        i = n.n(o),
-        c = n('5Yy7'),
-        l = n.n(c),
-        s = n('N+ot'),
-        u = n.n(s),
-        d = n('AuHH'),
-        p = n.n(d),
-        f = n('ERkP'),
-        b = n('3XMw'),
-        m = n.n(b),
-        h = n('rHpw'),
-        y = n('+/1j'),
-        v = n('MWbm')
-      function g(e) {
+      a('OZaJ')
+      var n = a('VrFO'),
+        r = a.n(n),
+        o = a('Y9Ll'),
+        i = a.n(o),
+        c = a('5Yy7'),
+        l = a.n(c),
+        s = a('N+ot'),
+        u = a.n(s),
+        d = a('AuHH'),
+        p = a.n(d),
+        f = a('ERkP'),
+        b = a.n(f),
+        m = a('3XMw'),
+        h = a.n(m),
+        y = a('rHpw'),
+        v = a('+/1j'),
+        g = a('MWbm')
+      function w(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -545,185 +549,186 @@
           }
         })()
         return function () {
-          var n,
-            r = p()(e)
+          var a,
+            n = p()(e)
           if (t) {
-            var a = p()(this).constructor
-            n = Reflect.construct(r, arguments, a)
-          } else n = r.apply(this, arguments)
-          return u()(this, n)
+            var r = p()(this).constructor
+            a = Reflect.construct(n, arguments, r)
+          } else a = n.apply(this, arguments)
+          return u()(this, a)
         }
       }
-      var w = m.a.e5b0063d,
-        E = 0,
-        O = (function (e) {
-          l()(n, e)
-          var t = g(n)
-          function n() {
+      var E = h.a.e5b0063d,
+        O = 0,
+        _ = (function (e) {
+          l()(a, e)
+          var t = w(a)
+          function a() {
             var e
-            return a()(this, n), ((e = t.call(this))._listDomId = 'accessible-list-'.concat(E)), (E += 1), e
+            return r()(this, a), ((e = t.call(this))._listDomId = 'accessible-list-'.concat(O)), (O += 1), e
           }
           return (
-            i()(n, [
+            i()(a, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.children,
-                    n = e.title,
-                    r = w({ title: n })
-                  return f.createElement(
-                    v.a,
+                    a = e.title,
+                    n = E({ title: a })
+                  return b.a.createElement(
+                    g.a,
                     { accessibilityLabelledBy: this._listDomId, accessibilityRole: 'region' },
-                    f.createElement(
-                      y.a,
+                    b.a.createElement(
+                      v.a,
                       {
                         accessibilityLevel: 1,
                         accessibilityRole: 'heading',
                         nativeID: this._listDomId,
-                        style: h.a.visuallyHidden,
+                        style: y.a.visuallyHidden,
                       },
-                      n,
+                      a,
                     ),
-                    f.createElement(v.a, { accessibilityLabel: r }, t),
+                    b.a.createElement(g.a, { accessibilityLabel: n }, t),
                   )
                 },
               },
             ]),
-            n
+            a
           )
-        })(f.Component)
-      t.a = O
+        })(b.a.Component)
+      t.a = _
     },
-    '88ay': function (e, t, n) {
+    '88ay': function (e, t, a) {
       'use strict'
-      n.d(t, 'c', function () {
-        return ee
+      a.d(t, 'c', function () {
+        return te
       }),
-        n.d(t, 'e', function () {
-          return te
+        a.d(t, 'e', function () {
+          return ae
         }),
-        n.d(t, 'f', function () {
+        a.d(t, 'f', function () {
           return ne
         }),
-        n.d(t, 'd', function () {
+        a.d(t, 'd', function () {
           return re
         }),
-        n.d(t, 'a', function () {
-          return ie
+        a.d(t, 'a', function () {
+          return ce
         })
-      n('OZaJ'), n('+KXO'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
-      var r = n('m3Bd'),
-        a = n.n(r),
-        o = n('VrFO'),
-        i = n.n(o),
-        c = n('Y9Ll'),
-        l = n.n(c),
-        s = n('1Pcy'),
-        u = n.n(s),
-        d = n('5Yy7'),
-        p = n.n(d),
-        f = n('N+ot'),
-        b = n.n(f),
-        m = n('AuHH'),
-        h = n.n(m),
-        y = n('KEM+'),
-        v = n.n(y),
-        g = n('97Jx'),
-        w = n.n(g),
-        E = (n('1t7P'), n('jQ/y'), n('ho0z'), n('2G9S'), n('hBpG'), n('ERkP')),
-        O = n('6rlp'),
-        _ = n('zh9S'),
-        S = n('G6rE'),
-        C = n('rxPX'),
-        j = n('0KEI'),
-        T = function (e, t) {
-          return S.e.select(e, t.userId)
-        },
+      a('OZaJ'), a('+KXO'), a('LW0h'), a('daRM'), a('jwue'), a('+oxZ'), a('FtHn')
+      var n = a('m3Bd'),
+        r = a.n(n),
+        o = a('VrFO'),
+        i = a.n(o),
+        c = a('Y9Ll'),
+        l = a.n(c),
+        s = a('1Pcy'),
+        u = a.n(s),
+        d = a('5Yy7'),
+        p = a.n(d),
+        f = a('N+ot'),
+        b = a.n(f),
+        m = a('AuHH'),
+        h = a.n(m),
+        y = a('KEM+'),
+        v = a.n(y),
+        g = a('97Jx'),
+        w = a.n(g),
+        E = (a('1t7P'), a('jQ/y'), a('ho0z'), a('2G9S'), a('hBpG'), a('ERkP')),
+        O = a.n(E),
+        _ = a('6rlp'),
+        S = a('zh9S'),
+        C = a('G6rE'),
+        T = a('rxPX'),
+        j = a('0KEI'),
         A = function (e, t) {
+          return C.e.select(e, t.userId)
+        },
+        I = function (e, t) {
           return t.promotedContent
         },
-        I = Object(C.a)()
+        x = Object(T.a)()
           .propsFromState(function () {
-            return { promotedContent: A, user: T }
+            return { promotedContent: I, user: A }
           })
           .adjustStateProps(function (e) {
             var t = e.promotedContent,
-              n = e.user
-            return { promotedContent: t || (n ? n.promoted_content : void 0), user: n }
+              a = e.user
+            return { promotedContent: t || (a ? a.promoted_content : void 0), user: a }
           })
           .propsFromActions(function () {
             return {
               createLocalApiErrorHandler: Object(j.createLocalApiErrorHandlerWithContextFactory)('USER_CELL_CONTAINER'),
-              log: O.a,
-              scribeAction: _.c,
+              log: _.a,
+              scribeAction: S.c,
             }
           }),
-        x = n('I57f'),
-        P = n('vMjK'),
-        L = n('MWbm'),
-        R = n('IG7M'),
-        D = n('rHpw'),
-        k = function (e) {
+        P = a('I57f'),
+        L = a('vMjK'),
+        R = a('MWbm'),
+        D = a('IG7M'),
+        k = a('rHpw'),
+        B = function (e) {
           var t = e.children,
-            n = e.promotedContent,
-            r = e.user
-          return E.createElement(
-            L.a,
-            { style: B.decorationWrapper },
+            a = e.promotedContent,
+            n = e.user
+          return O.a.createElement(
+            R.a,
+            { style: N.decorationWrapper },
             t,
-            E.createElement(R.a, {
+            O.a.createElement(D.a, {
               renderActionMenu: function (e) {
-                return E.createElement(P.b, { onClose: e, promotedContent: n, user: r, view: 'follower' })
+                return O.a.createElement(L.b, { onClose: e, promotedContent: a, user: n, view: 'follower' })
               },
-              style: B.actionMenu,
+              style: N.actionMenu,
             }),
           )
         },
-        B = D.a.create(function (e) {
+        N = k.a.create(function (e) {
           return { decorationWrapper: { flexDirection: 'row' }, actionMenu: { marginLeft: e.spaces.space12 } }
         }),
-        N = n('uIZp'),
-        M = n('mN6z'),
-        H = n('caTy'),
-        F = n('3IPs'),
-        z = n('Rp9C'),
-        W = n('X04g'),
-        U = n('Re5t'),
-        K = n('TnY3'),
-        V = n('hxu0'),
-        X = n('v6aA'),
-        q = n('7JQg'),
-        G = n('IMA+'),
-        Z = n('cFuS')
-      function Q(e, t) {
-        var n = Object.keys(e)
+        M = a('uIZp'),
+        H = a('mN6z'),
+        F = a('caTy'),
+        z = a('3IPs'),
+        W = a('Rp9C'),
+        U = a('X04g'),
+        K = a('Re5t'),
+        V = a('TnY3'),
+        X = a('hxu0'),
+        q = a('v6aA'),
+        G = a('7JQg'),
+        Z = a('IMA+'),
+        Q = a('cFuS')
+      function Y(e, t) {
+        var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
+          var n = Object.getOwnPropertySymbols(e)
           t &&
-            (r = r.filter(function (t) {
+            (n = n.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            n.push.apply(n, r)
+            a.push.apply(a, n)
         }
-        return n
+        return a
       }
-      function Y(e) {
+      function J(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
+          var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Q(Object(n), !0).forEach(function (t) {
-                v()(e, t, n[t])
+            ? Y(Object(a), !0).forEach(function (t) {
+                v()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : Q(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : Y(Object(a)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      function J(e) {
+      function $(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -735,20 +740,20 @@
           }
         })()
         return function () {
-          var n,
-            r = h()(e)
+          var a,
+            n = h()(e)
           if (t) {
-            var a = h()(this).constructor
-            n = Reflect.construct(r, arguments, a)
-          } else n = r.apply(this, arguments)
-          return b()(this, n)
+            var r = h()(this).constructor
+            a = Reflect.construct(n, arguments, r)
+          } else a = n.apply(this, arguments)
+          return b()(this, a)
         }
       }
-      var $ = function (e) {
+      var ee = function (e) {
         var t = e.user
         return t && t.profile_image_url_https
-          ? E.createElement(
-              ae,
+          ? O.a.createElement(
+              oe,
               w()({}, e, {
                 avatarUri: t.profile_image_url_https,
                 description: t.description,
@@ -773,37 +778,37 @@
             )
           : null
       }
-      $.defaultProps = {
+      ee.defaultProps = {
         cellClickable: !0,
         decoration: null,
-        displayMode: U.a.UserCompact,
+        displayMode: K.a.UserCompact,
         followRequestReceived: !1,
         hideBlocked: !1,
-        promotedItemType: Z.c.USER,
+        promotedItemType: Q.c.USER,
         shouldScribeProfileClick: !0,
         shouldScribeImpression: !1,
         withFollowsYou: !1,
       }
-      var ee = function (e) {
+      var te = function (e) {
           var t = e.isDeviceFollowing,
-            n = e.userId
-          return E.createElement(x.a, { isFollowing: t, style: oe.followButton, userId: n })
+            a = e.userId
+          return O.a.createElement(P.a, { isFollowing: t, style: ie.followButton, userId: a })
         },
-        te = function (e) {
+        ae = function (e) {
           var t = e.loggedInUserId,
-            n = e.promotedContent,
-            r = e.userId
-          return t !== r
-            ? E.createElement(N.a, { promotedContent: n, size: 'small', style: oe.followButton, userId: r })
+            a = e.promotedContent,
+            n = e.userId
+          return t !== n
+            ? O.a.createElement(M.a, { promotedContent: a, size: 'small', style: ie.followButton, userId: n })
             : null
         },
         ne = function (e) {
-          return E.createElement(k, { promotedContent: e.promotedContent, user: e.user }, te(e))
+          return O.a.createElement(B, { promotedContent: e.promotedContent, user: e.user }, ae(e))
         },
         re = function (e) {
-          return E.createElement(R.a, {
+          return O.a.createElement(D.a, {
             renderActionMenu: function (t) {
-              return E.createElement(P.b, {
+              return O.a.createElement(L.b, {
                 onClose: t,
                 promotedContent: e.promotedContent,
                 user: e.user,
@@ -812,69 +817,69 @@
             },
           })
         },
-        ae = (function (e) {
-          p()(n, e)
-          var t = J(n)
-          function n() {
+        oe = (function (e) {
+          p()(a, e)
+          var t = $(a)
+          function a() {
             var e
-            i()(this, n)
-            for (var r = arguments.length, a = new Array(r), o = 0; o < r; o++) a[o] = arguments[o]
+            i()(this, a)
+            for (var n = arguments.length, r = new Array(n), o = 0; o < n; o++) r[o] = arguments[o]
             return (
-              (e = t.call.apply(t, [this].concat(a))),
+              (e = t.call.apply(t, [this].concat(r))),
               v()(u()(e), '_handleAvatarClick', function () {
                 var t = e.props.shouldScribeProfileClick
                 e._handleSaveAsRecentSearch(),
                   t && e._scribeAction({ element: 'avatar', action: 'profile_click' }),
-                  e._handleAsyncPromotedEvent(Z.b.PROFILE_IMAGE_CLICK)
+                  e._handleAsyncPromotedEvent(Q.b.PROFILE_IMAGE_CLICK)
               }),
               v()(u()(e), '_handleCellClick', function () {
                 var t = e.props,
-                  n = t.history,
-                  r = t.onClick,
-                  a = t.screenName,
+                  a = t.history,
+                  n = t.onClick,
+                  r = t.screenName,
                   o = t.user,
                   i = e._getPromotedTweetState()
                 e._handleSaveAsRecentSearch(),
                   e._handleScreenNameClick(),
-                  r ? r({ user: o, state: i }) : n.push({ pathname: '/'.concat(a), state: i || void 0 })
+                  n ? n({ user: o, state: i }) : a.push({ pathname: '/'.concat(r), state: i || void 0 })
               }),
               v()(u()(e), '_handleScreenNameClick', function () {
                 var t = e.props.shouldScribeProfileClick
                 e._handleSaveAsRecentSearch(),
                   t && e._scribeAction({ action: 'profile_click' }),
-                  e._handleAsyncPromotedEvent(Z.b.SCREEN_NAME_CLICK)
+                  e._handleAsyncPromotedEvent(Q.b.SCREEN_NAME_CLICK)
               }),
               v()(u()(e), '_handleSaveAsRecentSearch', function () {
                 var t = e.props,
-                  n = t.saveAsRecentSearch,
-                  r = t.shouldStoreTypeaheadItem,
-                  a = t.userId
-                n && r && r(W.a.ItemType.USER) && n({ user: { id: a, type: F.a.User } })
+                  a = t.saveAsRecentSearch,
+                  n = t.shouldStoreTypeaheadItem,
+                  r = t.userId
+                a && n && n(U.a.ItemType.USER) && a({ user: { id: r, type: z.a.User } })
               }),
               v()(u()(e), '_scribeAction', function (t) {
-                var n,
-                  r = e.props,
-                  a = r.promotedContent,
-                  o = r.scribeAction,
-                  i = r.scribeData,
-                  c = r.scribeNamespace,
-                  l = r.user,
-                  s = r.userId,
+                var a,
+                  n = e.props,
+                  r = n.promotedContent,
+                  o = n.scribeAction,
+                  i = n.scribeData,
+                  c = n.scribeNamespace,
+                  l = n.user,
+                  s = n.userId,
                   u =
-                    null == i || null === (n = i.items) || void 0 === n
+                    null == i || null === (a = i.items) || void 0 === a
                       ? void 0
-                      : n.find(function (e) {
-                          return e.item_type === W.a.ItemType.USER && e.id === s
+                      : a.find(function (e) {
+                          return e.item_type === U.a.ItemType.USER && e.id === s
                         }),
                   d = i.search_details,
-                  p = { items: [Y(Y({}, u), z.a.getUserItem(l, a))], profile_id: s, search_details: d }
-                o(Y(Y({}, c), t), p)
+                  p = { items: [J(J({}, u), W.a.getUserItem(l, r))], profile_id: s, search_details: d }
+                o(J(J({}, c), t), p)
               }),
               e
             )
           }
           return (
-            l()(n, [
+            l()(a, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -884,7 +889,7 @@
               {
                 key: 'shouldComponentUpdate',
                 value: function (e) {
-                  return !Object(M.a)(this.props, e)
+                  return !Object(H.a)(this.props, e)
                 },
               },
               {
@@ -892,8 +897,8 @@
                 value: function () {
                   var e = this.props,
                     t = e.avatarDecoration,
-                    n = (e.bottomControl, e.cellClickable),
-                    r =
+                    a = (e.bottomControl, e.cellClickable),
+                    n =
                       (e.createLocalApiErrorHandler,
                       e.decoration,
                       e.followRequestReceived,
@@ -919,7 +924,7 @@
                       e.shouldStoreTypeaheadItem,
                       e.socialContext),
                     i = e.user,
-                    c = a()(e, [
+                    c = r()(e, [
                       'avatarDecoration',
                       'bottomControl',
                       'cellClickable',
@@ -949,8 +954,8 @@
                       'user',
                     ])
                   return this._shouldRender()
-                    ? E.createElement(
-                        G.a,
+                    ? O.a.createElement(
+                        Z.a,
                         w()({}, c, {
                           avatarDecoration: t,
                           bottomControl: this._renderBottomControl(),
@@ -958,16 +963,16 @@
                           highlightedLabel: this._getHighlightedLabel(),
                           isBlocking: i.blocking,
                           onAvatarClick: this._handleAvatarClick,
-                          onCellClick: n ? this._handleCellClick : void 0,
+                          onCellClick: a ? this._handleCellClick : void 0,
                           onScreenNameClick: this._handleScreenNameClick,
                           socialContext: o
                             ? {
                                 contextType: o.contextType,
                                 text: o.text,
-                                link: o.landingUrl ? Object(H.b)(o.landingUrl) : void 0,
+                                link: o.landingUrl ? Object(F.b)(o.landingUrl) : void 0,
                               }
                             : void 0,
-                          withDarkerInteractiveBackground: r,
+                          withDarkerInteractiveBackground: n,
                         }),
                       )
                     : null
@@ -989,21 +994,21 @@
                 key: '_renderControl',
                 value: function (e) {
                   var t = this.context.loggedInUserId,
-                    n = this.props,
-                    r = n.displayMode,
-                    a = n.followRequestReceived,
-                    o = n.isAutoblocking,
-                    i = n.isBlocking,
-                    c = n.isDeviceFollowing,
-                    l = n.isFollowing,
-                    s = n.promotedContent,
-                    u = n.screenName,
-                    d = n.user,
-                    p = n.userId
+                    a = this.props,
+                    n = a.displayMode,
+                    r = a.followRequestReceived,
+                    o = a.isAutoblocking,
+                    i = a.isBlocking,
+                    c = a.isDeviceFollowing,
+                    l = a.isFollowing,
+                    s = a.promotedContent,
+                    u = a.screenName,
+                    d = a.user,
+                    p = a.userId
                   return 'function' == typeof e
                     ? e({
-                        displayMode: r,
-                        followRequestReceived: a,
+                        displayMode: n,
+                        followRequestReceived: r,
                         isAutoblocking: o,
                         isBlocking: i,
                         isDeviceFollowing: !!c,
@@ -1022,10 +1027,10 @@
                 value: function () {
                   var e = this.props,
                     t = e.hideBlocked,
-                    n = e.isBlockedBy,
-                    r = e.isBlocking,
-                    a = e.screenName
-                  return e.userId && a && !(t && (n || r))
+                    a = e.isBlockedBy,
+                    n = e.isBlocking,
+                    r = e.screenName
+                  return e.userId && r && !(t && (a || n))
                 },
               },
               {
@@ -1033,8 +1038,8 @@
                 value: function () {
                   var e = this.props.user.highlightedLabel,
                     t = 'AutomatedLabel' === (null == e ? void 0 : e.userLabelType),
-                    n = !!t && this.context.featureSwitches.isTrue('account_taxonomy_automated_label_enabled')
-                  return !t || n ? e : void 0
+                    a = !!t && this.context.featureSwitches.isTrue('account_taxonomy_automated_label_enabled')
+                  return !t || a ? e : void 0
                 },
               },
               {
@@ -1042,27 +1047,27 @@
                 value: function () {
                   var e = this.props,
                     t = e.promotedContent,
-                    n = e.promotedItemType
-                  return t && n === Z.c.TWEET ? { promotedTweetState: t } : null
+                    a = e.promotedItemType
+                  return t && a === Q.c.TWEET ? { promotedTweetState: t } : null
                 },
               },
               {
                 key: '_handleAsyncPromotedEvent',
                 value: function (e) {
                   var t = this.props,
-                    n = t.createLocalApiErrorHandler,
-                    r = t.log,
-                    a = t.promotedContent,
+                    a = t.createLocalApiErrorHandler,
+                    n = t.log,
+                    r = t.promotedContent,
                     o = t.promotedItemId,
                     i = t.promotedItemType,
                     c = t.userId
-                  a &&
-                    r({
-                      disclosureType: a.disclosure_type,
+                  r &&
+                    n({
+                      disclosureType: r.disclosure_type,
                       itemId: o || c,
                       itemType: i,
-                      params: { event: e, impression_id: a.impression_id },
-                    }).catch(n())
+                      params: { event: e, impression_id: r.impression_id },
+                    }).catch(a())
                 },
               },
               {
@@ -1070,153 +1075,155 @@
                 value: function () {
                   var e = this.props,
                     t = e.createLocalApiErrorHandler,
-                    n = e.log,
-                    r = e.promotedContent,
-                    a = e.promotedItemType,
+                    a = e.log,
+                    n = e.promotedContent,
+                    r = e.promotedItemType,
                     o = e.shouldScribeImpression,
                     i = e.userId
-                  if (r && a === Z.c.USER) {
-                    var c = r.disclosure_type,
-                      l = r.impression_id
-                    n({
+                  if (n && r === Q.c.USER) {
+                    var c = n.disclosure_type,
+                      l = n.impression_id
+                    a({
                       disclosureType: c,
                       itemId: i,
-                      itemType: Z.c.USER,
-                      params: { event: Z.b.IMPRESSION, impression_id: l },
+                      itemType: Q.c.USER,
+                      params: { event: Q.b.IMPRESSION, impression_id: l },
                     }).catch(t())
                   } else o && this._scribeAction({ action: 'impression' })
                 },
               },
             ]),
-            n
+            a
           )
-        })(E.Component)
-      v()(ae, 'contextType', X.a), v()(ae, 'defaultProps', $.defaultProps)
-      var oe = D.a.create(function (e) {
+        })(O.a.Component)
+      v()(oe, 'contextType', q.a), v()(oe, 'defaultProps', ee.defaultProps)
+      var ie = k.a.create(function (e) {
           return { followButton: { marginLeft: e.spaces.space12 } }
         }),
-        ie = Object(K.a)(Object(V.a)(I($)))
-      t.b = Object(q.c)({ element: 'user' })(ie)
+        ce = Object(V.a)(Object(X.a)(x(ee)))
+      t.b = Object(G.c)({ element: 'user' })(ce)
     },
-    '89Im': function (e, t, n) {
+    '89Im': function (e, t, a) {
       'use strict'
-      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
-      var r = n('KEM+'),
-        a = n.n(r),
-        o = n('ERkP'),
-        i = n('Lsrn'),
-        c = n('k/Ka')
-      function l(e, t) {
-        var n = Object.keys(e)
+      a('+KXO'), a('1t7P'), a('LW0h'), a('daRM'), a('jwue'), a('+oxZ'), a('FtHn')
+      var n = a('KEM+'),
+        r = a.n(n),
+        o = a('ERkP'),
+        i = a.n(o),
+        c = a('Lsrn'),
+        l = a('k/Ka')
+      function s(e, t) {
+        var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
+          var n = Object.getOwnPropertySymbols(e)
           t &&
-            (r = r.filter(function (t) {
+            (n = n.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            n.push.apply(n, r)
+            a.push.apply(a, n)
         }
-        return n
+        return a
       }
-      function s(e) {
+      function u(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
+          var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? l(Object(n), !0).forEach(function (t) {
-                a()(e, t, n[t])
+            ? s(Object(a), !0).forEach(function (t) {
+                r()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : l(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : s(Object(a)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var u = function () {
+      var d = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(c.a)(
+        return Object(l.a)(
           'svg',
-          s(
-            s({}, e),
+          u(
+            u({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [i.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [c.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          o.createElement(
+          i.a.createElement(
             'g',
             null,
-            o.createElement('path', {
+            i.a.createElement('path', {
               d: 'M11.47 14.53c.146.146.338.22.53.22s.384-.073.53-.22l5-5c.293-.293.293-.768 0-1.06s-.768-.294-1.06 0l-3.72 3.72V2c0-.414-.337-.75-.75-.75s-.75.336-.75.75v10.19L7.53 8.47c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l5 5z',
             }),
-            o.createElement('path', {
+            i.a.createElement('path', {
               d: 'M21.25 13.25c-.414 0-.75.336-.75.75v5.652c0 .437-.355.792-.792.792H4.292c-.437 0-.792-.355-.792-.792V14c0-.414-.336-.75-.75-.75S2 13.586 2 14v5.652c0 1.264 1.028 2.292 2.292 2.292h15.416c1.264 0 2.292-1.028 2.292-2.292V14c0-.414-.336-.75-.75-.75z',
             }),
           ),
         )
       }
-      ;(u.metadata = { width: 24, height: 24 }), (t.a = u)
+      ;(d.metadata = { width: 24, height: 24 }), (t.a = d)
     },
-    '9StO': function (e, t, n) {
+    '9StO': function (e, t, a) {
       'use strict'
-      var r = n('ddV6'),
-        a = n.n(r),
-        o = (n('7x/C'), n('lTEL'), n('kYxP'), n('jwue'), n('+oxZ'), n('ERkP')),
-        i = n.p + 'birdwatch_owl.9e2a1755.png',
-        c = n('MvLc'),
-        l = n('1YZw'),
-        s = n('rxPX'),
-        u = n('0KEI'),
-        d = Object(s.a)()
+      var n = a('ddV6'),
+        r = a.n(n),
+        o = (a('7x/C'), a('lTEL'), a('kYxP'), a('jwue'), a('+oxZ'), a('ERkP')),
+        i = a.n(o),
+        c = a.p + 'birdwatch_owl.9e2a1755.png',
+        l = a('MvLc'),
+        s = a('1YZw'),
+        u = a('rxPX'),
+        d = a('0KEI'),
+        p = Object(u.a)()
           .propsFromState(function () {
-            return { aliasSelfSelectOptions: c.n }
+            return { aliasSelfSelectOptions: l.n }
           })
           .propsFromActions(function () {
             return {
-              addToast: l.b,
-              createLocalApiErrorHandler: Object(u.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
-              fetchAliasSelfSelectOptions: c.f,
-              selectAlias: c.m,
+              addToast: s.b,
+              createLocalApiErrorHandler: Object(d.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
+              fetchAliasSelfSelectOptions: l.f,
+              selectAlias: l.m,
             }
           })
           .withAnalytics({ page: 'birdwatch', section: 'alias_select' }),
-        p = n('W6+M'),
-        f = n('3XMw'),
-        b = n.n(f),
-        m = n('t62R'),
-        h = n('h0NW'),
-        y = n('feu+'),
-        v = n('gSL+'),
-        g = n('Qwev'),
-        w = n('4zmP'),
-        E = n('rHpw'),
-        O = n('j7Bv'),
-        _ = n('ms2t'),
-        S = n('VwDm'),
-        C = n('EQ/a'),
-        j = n('U+bB'),
-        T = n('MWbm'),
-        A = b.a.f084f1cd,
-        I = b.a.ja0ee36f,
-        x = b.a.j761c248,
-        P = b.a.h66bd30a,
-        L = b.a.j48ab593,
-        R = b.a.e17c80bc,
-        D = b.a.d939cf16,
-        k = b.a.a56f0c32,
-        B = b.a.d17c59e4,
-        N = b.a.i719f8e1,
-        M = b.a.d0e190cd,
-        H = b.a.e74a2cd5,
-        F = b.a.g9677c6d,
-        z = b.a.e4a6e006,
-        W = b.a.f83d0446,
-        U = function (e) {
-          return o.createElement(m.b, { weight: 'bold' }, e)
+        f = a('W6+M'),
+        b = a('3XMw'),
+        m = a.n(b),
+        h = a('t62R'),
+        y = a('h0NW'),
+        v = a('feu+'),
+        g = a('gSL+'),
+        w = a('Qwev'),
+        E = a('4zmP'),
+        O = a('rHpw'),
+        _ = a('j7Bv'),
+        S = a('ms2t'),
+        C = a('VwDm'),
+        T = a('EQ/a'),
+        j = a('U+bB'),
+        A = a('MWbm'),
+        I = m.a.f084f1cd,
+        x = m.a.ja0ee36f,
+        P = m.a.j761c248,
+        L = m.a.h66bd30a,
+        R = m.a.j48ab593,
+        D = m.a.e17c80bc,
+        k = m.a.d939cf16,
+        B = m.a.a56f0c32,
+        N = m.a.d17c59e4,
+        M = m.a.i719f8e1,
+        H = m.a.d0e190cd,
+        F = m.a.e74a2cd5,
+        z = m.a.g9677c6d,
+        W = m.a.e4a6e006,
+        U = m.a.f83d0446,
+        K = function (e) {
+          return i.a.createElement(h.b, { weight: 'bold' }, e)
         },
-        K = function () {
-          return o.createElement(j.a, { source: i, style: V.image })
+        V = function () {
+          return i.a.createElement(j.a, { source: c, style: X.image })
         },
-        V = E.a.create(function (e) {
+        X = O.a.create(function (e) {
           return {
             aliasIcon: { marginRight: e.spaces.space12 },
             aliasSelectContainer: { paddingVertical: e.spaces.space16 },
@@ -1229,144 +1236,145 @@
             values: { color: e.colors.text, textAlign: 'left', width: '100%' },
           }
         }),
-        X = o.createElement(O.a, { Icon: _.a, color: 'neutral', size: 'large', style: V.aliasIcon }),
-        q = {
-          accessibilityLabel: A,
-          containerStyle: V.infoItemContainer,
+        q = i.a.createElement(_.a, { Icon: S.a, color: 'neutral', size: 'large', style: X.aliasIcon }),
+        G = {
+          accessibilityLabel: I,
+          containerStyle: X.infoItemContainer,
           items: [
-            { label: U(L), decoration: o.createElement(_.a, { style: V.icon }), description: R },
-            { label: U(D), decoration: o.createElement(S.a, { style: V.icon }), description: k },
-            { label: U(B), decoration: o.createElement(C.a, { style: V.icon }), description: N },
+            { label: K(R), decoration: i.a.createElement(S.a, { style: X.icon }), description: D },
+            { label: K(k), decoration: i.a.createElement(C.a, { style: X.icon }), description: B },
+            { label: K(N), decoration: i.a.createElement(T.a, { style: X.icon }), description: M },
           ],
         },
-        G = d(function (e) {
+        Z = p(function (e) {
           var t = e.addToast,
-            n = e.aliasSelfSelectOptions,
-            r = e.createLocalApiErrorHandler,
-            i = e.fetchAliasSelfSelectOptions,
+            a = e.aliasSelfSelectOptions,
+            n = e.createLocalApiErrorHandler,
+            o = e.fetchAliasSelfSelectOptions,
             c = e.onAliasSelected,
             l = e.selectAlias,
-            s = o.useState(!0),
-            u = a()(s, 2),
+            s = i.a.useState(!0),
+            u = r()(s, 2),
             d = u[0],
-            f = u[1],
-            b = o.useState(''),
-            E = a()(b, 2),
-            O = E[0],
-            _ = E[1],
-            S = o.useState(!1),
-            C = a()(S, 2),
-            j = C[0],
-            A = C[1]
-          o.useEffect(
+            p = u[1],
+            b = i.a.useState(''),
+            m = r()(b, 2),
+            O = m[0],
+            _ = m[1],
+            S = i.a.useState(!1),
+            C = r()(S, 2),
+            T = C[0],
+            j = C[1]
+          i.a.useEffect(
             function () {
-              i()
+              o()
                 .then(function (e) {
-                  e && e[0] ? _(e[0]) : A(!0)
+                  e && e[0] ? _(e[0]) : j(!0)
                 })
-                .catch(r())
+                .catch(n())
             },
-            [r, i],
+            [n, o],
           )
-          var L,
+          var I,
             R,
-            D = o.createElement(
-              m.b,
+            D = i.a.createElement(
+              h.b,
               { color: 'normal', link: 'https://twitter.github.io/birdwatch/aliases/', withUnderline: !0 },
-              P,
+              L,
             ),
-            k = o.createElement(T.a, { style: V.values }, o.createElement(h.a, q)),
-            B = o.createElement(y.a, {
-              actionLabel: I,
+            k = i.a.createElement(A.a, { style: X.values }, i.a.createElement(y.a, G)),
+            B = i.a.createElement(v.a, {
+              actionLabel: x,
               footer: D,
-              graphic: K,
+              graphic: V,
               graphicDisplayMode: 'illustration',
-              headline: x,
+              headline: P,
               isFullHeightOnMobile: !0,
               onAction: function () {
-                f(!1)
+                p(!1)
               },
               subtext: k,
             }),
-            N = o.useCallback(
+            N = i.a.useCallback(
               function (e, t) {
                 _(t)
               },
               [_],
             ),
-            U = o.createElement(
-              T.a,
+            M = i.a.createElement(
+              A.a,
               null,
-              o.createElement(m.b, { style: V.aliasSubtext }, H),
-              n
-                ? o.createElement(
-                    T.a,
-                    { style: V.aliasSelectContainer },
-                    o.createElement(v.a, {
+              i.a.createElement(h.b, { style: X.aliasSubtext }, F),
+              a
+                ? i.a.createElement(
+                    A.a,
+                    { style: X.aliasSelectContainer },
+                    i.a.createElement(g.a, {
                       name: 'example',
                       onChange: N,
                       options:
-                        ((L = n),
+                        ((I = a),
                         (R = []),
-                        L.forEach(function (e) {
-                          R.push({ containerStyle: V.optionContainer, label: Object(p.a)(e), value: e, decoration: X })
+                        I.forEach(function (e) {
+                          R.push({ containerStyle: X.optionContainer, label: Object(f.a)(e), value: e, decoration: q })
                         }),
                         R),
                       value: O,
                     }),
                   )
-                : o.createElement(g.a, null),
-              j ? o.createElement(w.a, { text: z, type: 'danger' }) : void 0,
+                : i.a.createElement(w.a, null),
+              T ? i.a.createElement(E.a, { text: W, type: 'danger' }) : void 0,
             ),
-            G = o.createElement(y.a, {
-              actionLabel: F,
+            K = i.a.createElement(v.a, {
+              actionLabel: z,
               footer: D,
               graphicDisplayMode: 'none',
-              headline: M,
+              headline: H,
               isFullHeightOnMobile: !0,
               onAction: function () {
                 O &&
                   l(O)
                     .then(function (e) {
                       'Done' === e.authenticated_user_birdwatch_alias_self_selection_put
-                        ? (c(!1), t({ text: W, withClearButton: !0 }))
-                        : A(!0)
+                        ? (c(!1), t({ text: U, withClearButton: !0 }))
+                        : j(!0)
                     })
                     .catch(function (e) {
-                      r({ defaultToast: { text: z, withAutoDismiss: !1, withClearButton: !0 }, showToast: !0 })(e)
+                      n({ defaultToast: { text: W, withAutoDismiss: !1, withClearButton: !0 }, showToast: !0 })(e)
                     })
               },
-              subtext: U,
+              subtext: M,
             })
-          return d ? B : G
+          return d ? B : K
         })
-      t.a = G
+      t.a = Z
     },
-    ACNv: function (e, t, n) {
+    ACNv: function (e, t, a) {
       'use strict'
-      n.r(t)
-      n('OZaJ')
-      var r = n('VrFO'),
-        a = n.n(r),
-        o = n('Y9Ll'),
-        i = n.n(o),
-        c = n('1Pcy'),
-        l = n.n(c),
-        s = n('5Yy7'),
-        u = n.n(s),
-        d = n('N+ot'),
-        p = n.n(d),
-        f = n('AuHH'),
-        b = n.n(f),
-        m = n('KEM+'),
-        h = n.n(m),
-        y = (n('2G9S'), n('KOtZ'), n('hBvt'), n('jQ3i'), n('x4t0'), n('ERkP')),
-        v = n('3XMw'),
-        g = n.n(v),
-        w = n('oQhu'),
-        E = n('mjJ+'),
-        O = n('eb3s')
-      function _(e) {
+      a.r(t)
+      a('OZaJ')
+      var n = a('VrFO'),
+        r = a.n(n),
+        o = a('Y9Ll'),
+        i = a.n(o),
+        c = a('1Pcy'),
+        l = a.n(c),
+        s = a('5Yy7'),
+        u = a.n(s),
+        d = a('N+ot'),
+        p = a.n(d),
+        f = a('AuHH'),
+        b = a.n(f),
+        m = a('KEM+'),
+        h = a.n(m),
+        y = (a('2G9S'), a('KOtZ'), a('hBvt'), a('jQ3i'), a('x4t0'), a('ERkP')),
+        v = a.n(y),
+        g = a('3XMw'),
+        w = a.n(g),
+        E = a('oQhu'),
+        O = a('mjJ+'),
+        _ = a('eb3s')
+      function S(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -1378,23 +1386,23 @@
           }
         })()
         return function () {
-          var n,
-            r = b()(e)
+          var a,
+            n = b()(e)
           if (t) {
-            var a = b()(this).constructor
-            n = Reflect.construct(r, arguments, a)
-          } else n = r.apply(this, arguments)
-          return p()(this, n)
+            var r = b()(this).constructor
+            a = Reflect.construct(n, arguments, r)
+          } else a = n.apply(this, arguments)
+          return p()(this, a)
         }
       }
-      var S = g.a.cfd2f35d,
-        C = (function (e) {
-          u()(n, e)
-          var t = _(n)
-          function n() {
+      var C = w.a.cfd2f35d,
+        T = (function (e) {
+          u()(a, e)
+          var t = S(a)
+          function a() {
             var e
-            a()(this, n)
-            for (var r = arguments.length, o = new Array(r), i = 0; i < r; i++) o[i] = arguments[i]
+            r()(this, a)
+            for (var n = arguments.length, o = new Array(n), i = 0; i < n; i++) o[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(o))),
               h()(l()(e), 'state', { activeConfirmation: null }),
@@ -1413,7 +1421,7 @@
             )
           }
           return (
-            i()(n, [
+            i()(a, [
               {
                 key: 'render',
                 value: function () {
@@ -1421,8 +1429,8 @@
                     t = this.state.activeConfirmation
                   return t
                     ? this._renderConfirmation(t)
-                    : y.createElement(E.a, {
-                        cancelButtonLabel: S,
+                    : v.a.createElement(O.a, {
+                        cancelButtonLabel: C,
                         items: this._getProcessedActionItems(),
                         onCloseRequested: e,
                       })
@@ -1433,15 +1441,15 @@
                 value: function (e) {
                   if (e && e.render) return e.render(this._handleConfirmed, this._handleCancelConfirm)
                   var t = e || {},
-                    n = t.confirmButtonType,
-                    r = t.headline,
-                    a = t.label,
+                    a = t.confirmButtonType,
+                    n = t.headline,
+                    r = t.label,
                     o = t.text,
                     i = t.withCancelButton
-                  return y.createElement(O.a, {
-                    confirmButtonLabel: a,
-                    confirmButtonType: n,
-                    headline: r,
+                  return v.a.createElement(_.a, {
+                    confirmButtonLabel: r,
+                    confirmButtonType: a,
+                    headline: n,
                     onCancel: this._handleCancelConfirm,
                     onConfirm: this._handleConfirmed,
                     text: o,
@@ -1454,36 +1462,36 @@
                 value: function () {
                   var e = this.props,
                     t = e.actionItems,
-                    n = e.dividerIndices,
-                    r = e.onClose
-                  return j(t, n, r, this._handleConfirm)
+                    a = e.dividerIndices,
+                    n = e.onClose
+                  return j(t, a, n, this._handleConfirm)
                 },
               },
             ]),
-            n
+            a
           )
-        })(y.Component),
-        j = Object(w.a)(function (e, t, n, r) {
-          return e.reduce(function (e, a, o) {
-            var i = a.Icon,
-              c = a.behavioralEventContext,
-              l = a.confirmation,
-              s = a.disabled,
-              u = a.excludeFromActionMenu,
-              d = a.isEmphasized,
-              p = a.link,
-              f = a.onClick,
-              b = a.subText,
-              m = a.testID,
-              h = a.text
-            a.withCancelButton
+        })(v.a.Component),
+        j = Object(E.a)(function (e, t, a, n) {
+          return e.reduce(function (e, r, o) {
+            var i = r.Icon,
+              c = r.behavioralEventContext,
+              l = r.confirmation,
+              s = r.disabled,
+              u = r.excludeFromActionMenu,
+              d = r.isEmphasized,
+              p = r.link,
+              f = r.onClick,
+              b = r.subText,
+              m = r.testID,
+              h = r.text
+            r.withCancelButton
             if (!u) {
               var y = f
                 ? function () {
                     l
                       ? l.render
-                        ? r({ callback: f, render: l.render })
-                        : r({
+                        ? n({ callback: f, render: l.render })
+                        : n({
                             callback: f,
                             text: l.text,
                             headline: l.headline,
@@ -1491,9 +1499,9 @@
                             confirmButtonType: l.confirmButtonType,
                             withCancelButton: l.withCancelButton,
                           })
-                      : (f(), n())
+                      : (f(), a())
                   }
-                : n
+                : a
               e.push({
                 behavioralEventContext: c,
                 disabled: s,
@@ -1510,166 +1518,169 @@
             return e
           }, [])
         })
-      t.default = C
+      t.default = T
     },
-    'B/qP': function (e, t, n) {
+    'B/qP': function (e, t, a) {
       'use strict'
-      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
-      var r = n('KEM+'),
-        a = n.n(r),
-        o = n('ERkP'),
-        i = n('Lsrn'),
-        c = n('k/Ka')
-      function l(e, t) {
-        var n = Object.keys(e)
+      a('+KXO'), a('1t7P'), a('LW0h'), a('daRM'), a('jwue'), a('+oxZ'), a('FtHn')
+      var n = a('KEM+'),
+        r = a.n(n),
+        o = a('ERkP'),
+        i = a.n(o),
+        c = a('Lsrn'),
+        l = a('k/Ka')
+      function s(e, t) {
+        var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
+          var n = Object.getOwnPropertySymbols(e)
           t &&
-            (r = r.filter(function (t) {
+            (n = n.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            n.push.apply(n, r)
+            a.push.apply(a, n)
         }
-        return n
+        return a
       }
-      function s(e) {
+      function u(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
+          var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? l(Object(n), !0).forEach(function (t) {
-                a()(e, t, n[t])
+            ? s(Object(a), !0).forEach(function (t) {
+                r()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : l(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : s(Object(a)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var u = function () {
+      var d = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(c.a)(
+        return Object(l.a)(
           'svg',
-          s(
-            s({}, e),
+          u(
+            u({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [i.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [c.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          o.createElement(
+          i.a.createElement(
             'g',
             null,
-            o.createElement('path', {
+            i.a.createElement('path', {
               d: 'M11.434 16.22l-3.38 5.3c-.076.116-.21.19-.35.19h-.05c-.16-.018-.292-.127-.34-.277l-.937-2.564-2.72.25c-.168.024-.317-.06-.4-.194-.083-.134-.082-.31.002-.442l3.018-4.725c.1.108.2.208.307.292.1.117.207.21.315.294 1.03.898 2.276 1.505 3.617 1.762.15.026.3.043.45.07.033 0 .058.008.092.008.115.017.24.026.374.035zm9.306 2.8c-.084.134-.235.216-.393.19l-2.725-.28-.956 2.553c-.06.15-.193.257-.352.273h-.042c-.142 0-.275-.077-.35-.194l-3.356-5.335c.133-.008.26-.015.392-.03.025 0 .05-.01.075-.01.15-.023.3-.047.442-.072 1.344-.26 2.597-.86 3.628-1.74.11-.09.21-.19.31-.28.11-.1.21-.2.302-.308l3.026 4.792c.085.133.084.308 0 .44zM18.187 8.446c-.007 1.376-.473 2.65-1.245 3.67-.974 1.304-2.47 2.213-4.182 2.42-.26.032-.517.047-.784.046-.242 0-.483-.02-.725-.054-1.715-.2-3.203-1.11-4.188-2.415-.77-1.046-1.238-2.333-1.23-3.733.02-3.41 2.8-6.154 6.21-6.136 3.41.018 6.164 2.793 6.145 6.202z',
             }),
           ),
         )
       }
-      ;(u.metadata = { width: 24, height: 24 }), (t.a = u)
+      ;(d.metadata = { width: 24, height: 24 }), (t.a = d)
     },
-    'EQ/a': function (e, t, n) {
+    'EQ/a': function (e, t, a) {
       'use strict'
-      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
-      var r = n('KEM+'),
-        a = n.n(r),
-        o = n('ERkP'),
-        i = n('Lsrn'),
-        c = n('k/Ka')
-      function l(e, t) {
-        var n = Object.keys(e)
+      a('+KXO'), a('1t7P'), a('LW0h'), a('daRM'), a('jwue'), a('+oxZ'), a('FtHn')
+      var n = a('KEM+'),
+        r = a.n(n),
+        o = a('ERkP'),
+        i = a.n(o),
+        c = a('Lsrn'),
+        l = a('k/Ka')
+      function s(e, t) {
+        var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
+          var n = Object.getOwnPropertySymbols(e)
           t &&
-            (r = r.filter(function (t) {
+            (n = n.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            n.push.apply(n, r)
+            a.push.apply(a, n)
         }
-        return n
+        return a
       }
-      function s(e) {
+      function u(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
+          var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? l(Object(n), !0).forEach(function (t) {
-                a()(e, t, n[t])
+            ? s(Object(a), !0).forEach(function (t) {
+                r()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : l(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : s(Object(a)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var u = function () {
+      var d = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(c.a)(
+        return Object(l.a)(
           'svg',
-          s(
-            s({}, e),
+          u(
+            u({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [i.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [c.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          o.createElement(
+          i.a.createElement(
             'g',
             null,
-            o.createElement('path', {
+            i.a.createElement('path', {
               d: 'M9.944 10.68H2.75c-.414 0-.75-.335-.75-.75s.336-.75.75-.75h7.194c.414 0 .75.337.75.75s-.336.75-.75.75zm4.112-4.11H2.75c-.414 0-.75-.337-.75-.75s.336-.75.75-.75h11.306c.414 0 .75.335.75.75s-.336.75-.75.75z',
             }),
-            o.createElement('path', {
+            i.a.createElement('path', {
               d: 'M8.917 21.986c-.198 0-.39-.078-.53-.22L2.61 15.99c-.293-.294-.293-.77 0-1.062s.768-.293 1.06 0l5.15 5.147L20.64 3.33c.237-.34.706-.42 1.044-.18.338.238.42.706.18 1.045L9.53 21.67c-.128.18-.33.295-.55.313-.02.002-.042.003-.063.003z',
             }),
           ),
         )
       }
-      ;(u.metadata = { width: 24, height: 24 }), (t.a = u)
+      ;(d.metadata = { width: 24, height: 24 }), (t.a = d)
     },
-    FS1z: function (e, t, n) {
+    FS1z: function (e, t, a) {
       'use strict'
-      n('OZaJ')
-      var r = n('VrFO'),
-        a = n.n(r),
-        o = n('Y9Ll'),
-        i = n.n(o),
-        c = n('1Pcy'),
-        l = n.n(c),
-        s = n('5Yy7'),
-        u = n.n(s),
-        d = n('N+ot'),
-        p = n.n(d),
-        f = n('AuHH'),
-        b = n.n(f),
-        m = n('KEM+'),
-        h = n.n(m),
-        y = (n('2G9S'), n('ERkP')),
-        v = n('rxPX'),
-        g = n('0KEI'),
-        w = function (e, t) {
+      a('OZaJ')
+      var n = a('VrFO'),
+        r = a.n(n),
+        o = a('Y9Ll'),
+        i = a.n(o),
+        c = a('1Pcy'),
+        l = a.n(c),
+        s = a('5Yy7'),
+        u = a.n(s),
+        d = a('N+ot'),
+        p = a.n(d),
+        f = a('AuHH'),
+        b = a.n(f),
+        m = a('KEM+'),
+        h = a.n(m),
+        y = (a('2G9S'), a('ERkP')),
+        v = a.n(y),
+        g = a('rxPX'),
+        w = a('0KEI'),
+        E = function (e, t) {
           return t.module.selectFetchStatus(e)
         },
-        E = function (e, t) {
+        O = function (e, t) {
           return t.module.selectItems(e)
         },
-        O = Object(v.a)()
+        _ = Object(g.a)()
           .propsFromState(function (e) {
-            return { fetchStatus: w, items: E }
+            return { fetchStatus: E, items: O }
           })
           .propsFromActions(function (e) {
             var t = e.module
             return {
-              createLocalApiErrorHandler: Object(g.createLocalApiErrorHandlerWithContextFactory)('SLICES_TIMELINE'),
+              createLocalApiErrorHandler: Object(w.createLocalApiErrorHandlerWithContextFactory)('SLICES_TIMELINE'),
               fetch: t.fetch,
               fetchIfNeeded: t.fetchIfNeeded,
               fetchBottom: t.fetchBottom,
             }
           }),
-        _ = n('v//M'),
-        S = n('sIe2'),
-        C = n('3XMw'),
-        j = n.n(C),
-        T = n('TEoO')
-      function A(e) {
+        S = a('v//M'),
+        C = a('sIe2'),
+        T = a('3XMw'),
+        j = a.n(T),
+        A = a('TEoO')
+      function I(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -1681,79 +1692,79 @@
           }
         })()
         return function () {
-          var n,
-            r = b()(e)
+          var a,
+            n = b()(e)
           if (t) {
-            var a = b()(this).constructor
-            n = Reflect.construct(r, arguments, a)
-          } else n = r.apply(this, arguments)
-          return p()(this, n)
+            var r = b()(this).constructor
+            a = Reflect.construct(n, arguments, r)
+          } else a = n.apply(this, arguments)
+          return p()(this, a)
         }
       }
-      var I = j.a.i9028824,
-        x = 'sliceTimeline',
-        P = function (e) {
+      var x = j.a.i9028824,
+        P = 'sliceTimeline',
+        L = function (e) {
           return e
         },
-        L = { viewType: 'timeline' },
-        R = (function (e) {
-          u()(n, e)
-          var t = A(n)
-          function n() {
+        R = { viewType: 'timeline' },
+        D = (function (e) {
+          u()(a, e)
+          var t = I(a)
+          function a() {
             var e
-            a()(this, n)
-            for (var r = arguments.length, o = new Array(r), i = 0; i < r; i++) o[i] = arguments[i]
+            r()(this, a)
+            for (var n = arguments.length, o = new Array(n), i = 0; i < n; i++) o[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(o))),
               h()(l()(e), '_render', function () {
                 var t = e.props,
-                  n = t.footer,
-                  r = t.items,
-                  a = t.noItemsRenderer,
+                  a = t.footer,
+                  n = t.items,
+                  r = t.noItemsRenderer,
                   o = t.numColumns,
                   i = t.onScrollEnd,
                   c = t.renderer,
                   l = t.withoutHeadroom
-                return !r || o < 1
+                return !n || o < 1
                   ? null
                   : 1 === o
-                  ? y.createElement(T.a, {
-                      cacheKey: x,
-                      footer: n,
-                      identityFunction: P,
-                      items: r,
-                      noItemsRenderer: a,
+                  ? v.a.createElement(A.a, {
+                      cacheKey: P,
+                      footer: a,
+                      identityFunction: L,
+                      items: n,
+                      noItemsRenderer: r,
                       onNearEnd: e._handleNearEnd,
                       onScrollEnd: i,
                       renderer: c,
                       withoutHeadroom: l,
                     })
-                  : y.createElement(S.a, {
-                      ListEmptyComponent: a,
-                      data: r,
-                      keyExtractor: P,
+                  : v.a.createElement(C.a, {
+                      ListEmptyComponent: r,
+                      data: n,
+                      keyExtractor: L,
                       numColumns: o,
                       renderItem: c,
                     })
               }),
               h()(l()(e), '_handleNearEnd', function () {
                 var t = e.props,
-                  n = t.createLocalApiErrorHandler
-                ;(0, t.fetchBottom)().catch(n())
+                  a = t.createLocalApiErrorHandler
+                ;(0, t.fetchBottom)().catch(a())
               }),
               h()(l()(e), '_handleFetch', function () {
                 var t = e.props,
-                  n = t.alwaysFetch,
-                  r = t.createLocalApiErrorHandler,
-                  a = t.fetch,
+                  a = t.alwaysFetch,
+                  n = t.createLocalApiErrorHandler,
+                  r = t.fetch,
                   o = t.fetchIfNeeded
-                ;(n ? a : o)().catch(r())
+                ;(a ? r : o)().catch(n())
               }),
               e
             )
           }
           return (
-            i()(n, [
+            i()(a, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -1772,119 +1783,128 @@
                 value: function () {
                   var e = this.props,
                     t = e.fetchStatus,
-                    n = e.module,
-                    r = e.retryMessage
-                  return n
-                    ? y.createElement(_.a, {
-                        accessibilityLabel: I,
-                        behavioralEventContext: L,
+                    a = e.module,
+                    n = e.retryMessage
+                  return a
+                    ? v.a.createElement(S.a, {
+                        accessibilityLabel: x,
+                        behavioralEventContext: R,
                         fetchStatus: t,
                         onRequestRetry: this._handleFetch,
                         render: this._render,
-                        retryMessage: r,
+                        retryMessage: n,
                         retryable: !0,
                       })
                     : null
                 },
               },
             ]),
-            n
+            a
           )
-        })(y.Component)
-      h()(R, 'defaultProps', { numColumns: 1, alwaysFetch: !1 })
-      var D = O(R)
-      t.a = D
+        })(v.a.Component)
+      h()(D, 'defaultProps', { numColumns: 1, alwaysFetch: !1 })
+      var k = _(D)
+      t.a = k
     },
-    KqB4: function (e, t, n) {
+    KqB4: function (e, t, a) {
       'use strict'
-      var r = n('IGGJ')
+      var n = a('IGGJ')
       Object.defineProperty(t, '__esModule', { value: !0 }),
         (t.default = function (e, t) {
-          for (var n = [], r = (0, a.default)(e, t), o = 0; o < r.length; o++) n.push(r[o].url)
-          return n
+          for (var a = [], n = (0, r.default)(e, t), o = 0; o < n.length; o++) a.push(n[o].url)
+          return a
         })
-      var a = r(n('vwfs'))
+      var r = n(a('vwfs'))
       e.exports = t.default
     },
-    Ku87: function (e, t, n) {
+    Ku87: function (e, t, a) {
       'use strict'
-      n.r(t),
-        n.d(t, 'BirdwatchAboutScreen', function () {
-          return C
+      a.r(t),
+        a.d(t, 'BirdwatchAboutScreen', function () {
+          return T
         })
-      n('z84I'), n('uFXj')
-      var r = n('ERkP'),
-        a = n('v6aA'),
-        o = n.p + 'birdwatch_logo.0a5315e5.png',
-        i = n('vZpt'),
-        c = n('L5MV'),
-        l = n('3XMw'),
-        s = n.n(l),
-        u = n('yoO3'),
-        d = n('7JQg'),
-        p = n('VS6U'),
-        f = n('t62R'),
-        b = n('/yvb'),
-        m = n('rHpw'),
-        h = n('U+bB'),
-        y = n('MWbm'),
-        v = s.a.b721eb37,
-        g = s.a.a225549d,
-        w = [s.a.bc203ca1, s.a.iea72310, s.a.c337f3d1],
-        E = s.a.ff3e0be2,
-        O = s.a.i859a9d3,
-        _ = { external: !0, pathname: 'https://twitter.github.io/birdwatch' },
-        S = { page: 'birdwatch', section: 'about' },
-        C = function (e) {
+      a('z84I'), a('uFXj')
+      var n = a('ERkP'),
+        r = a.n(n),
+        o = a('v6aA'),
+        i = a.p + 'birdwatch_logo.0a5315e5.png',
+        c = a('vZpt'),
+        l = a('L5MV'),
+        s = a('3XMw'),
+        u = a.n(s),
+        d = a('yoO3'),
+        p = a('7JQg'),
+        f = a('VS6U'),
+        b = a('t62R'),
+        m = a('/yvb'),
+        h = a('rHpw'),
+        y = a('U+bB'),
+        v = a('MWbm'),
+        g = u.a.b721eb37,
+        w = u.a.a225549d,
+        E = [u.a.bc203ca1, u.a.iea72310, u.a.c337f3d1],
+        O = u.a.ff3e0be2,
+        _ = u.a.i859a9d3,
+        S = { external: !0, pathname: 'https://twitter.github.io/birdwatch' },
+        C = { page: 'birdwatch', section: 'about' },
+        T = function (e) {
           var t = e.history,
-            n = r.useContext(a.a).featureSwitches,
-            l = r.createElement(
-              r.Fragment,
+            a = r.a.useContext(o.a).featureSwitches,
+            n = r.a.createElement(
+              r.a.Fragment,
               null,
-              r.createElement(
-                y.a,
+              r.a.createElement(
+                v.a,
                 { style: j.header },
-                r.createElement(y.a, { style: j.imageContainer }, r.createElement(h.a, { source: o, style: j.image })),
+                r.a.createElement(
+                  v.a,
+                  { style: j.imageContainer },
+                  r.a.createElement(y.a, { source: i, style: j.image }),
+                ),
               ),
-              r.createElement(
-                y.a,
+              r.a.createElement(
+                v.a,
                 { style: j.content },
-                r.createElement(f.b, { size: 'title4', style: j.textSection, weight: 'heavy' }, g),
-                w.map(function (e, t) {
-                  return r.createElement(f.b, { color: 'gray700', key: 'aboutText'.concat(t), style: j.textSection }, e)
+                r.a.createElement(b.b, { size: 'title4', style: j.textSection, weight: 'heavy' }, w),
+                E.map(function (e, t) {
+                  return r.a.createElement(
+                    b.b,
+                    { color: 'gray700', key: 'aboutText'.concat(t), style: j.textSection },
+                    e,
+                  )
                 }),
               ),
-              r.createElement(y.a, { style: j.learnMore }, r.createElement(f.b, { link: _ }, O)),
-              !n.isTrue('responsive_web_birdwatch_note_writing_enabled') &&
-                r.createElement(
-                  y.a,
+              r.a.createElement(v.a, { style: j.learnMore }, r.a.createElement(b.b, { link: S }, _)),
+              !a.isTrue('responsive_web_birdwatch_note_writing_enabled') &&
+                r.a.createElement(
+                  v.a,
                   { style: j.buttonContainer },
-                  r.createElement(
-                    b.a,
-                    { accessibilityLabel: E, link: '/i/flow/join-birdwatch', style: j.button, type: 'brandFilled' },
-                    E,
+                  r.a.createElement(
+                    m.a,
+                    { accessibilityLabel: O, link: '/i/flow/join-birdwatch', style: j.button, type: 'brandFilled' },
+                    O,
                   ),
                 ),
             )
-          return r.createElement(
-            d.b,
-            { namespace: S },
-            r.createElement(
-              u.a,
+          return r.a.createElement(
+            p.b,
+            { namespace: C },
+            r.a.createElement(
+              d.a,
               null,
-              r.createElement(p.a, {
-                TabBar: c.a,
+              r.a.createElement(f.a, {
+                TabBar: l.a,
                 history: t,
-                logoButton: r.createElement(r.Fragment, null),
-                primaryContent: l,
-                sidebarContent: r.createElement(i.a, null),
-                title: v,
+                logoButton: r.a.createElement(r.a.Fragment, null),
+                primaryContent: n,
+                sidebarContent: r.a.createElement(c.a, null),
+                title: g,
                 withTweetButton: !1,
               }),
             ),
           )
         },
-        j = m.a.create(function (e) {
+        j = h.a.create(function (e) {
           return {
             button: { marginTop: e.spaces.space20 },
             buttonContainer: { alignItems: 'center' },
@@ -1909,106 +1929,107 @@
             textSection: { marginBottom: e.spaces.space16 },
           }
         })
-      t.default = C
+      t.default = T
     },
-    L5MV: function (e, t, n) {
+    L5MV: function (e, t, a) {
       'use strict'
-      n('OZaJ')
-      var r = n('VrFO'),
-        a = n.n(r),
-        o = n('Y9Ll'),
-        i = n.n(o),
-        c = n('1Pcy'),
-        l = n.n(c),
-        s = n('5Yy7'),
-        u = n.n(s),
-        d = n('N+ot'),
-        p = n.n(d),
-        f = n('AuHH'),
-        b = n.n(f),
-        m = n('KEM+'),
-        h = n.n(m),
-        y = (n('2G9S'), n('ERkP')),
-        v = n('MvLc'),
-        g = n('rxPX'),
-        w = n('0KEI'),
-        E = Object(g.a)()
+      a('OZaJ')
+      var n = a('VrFO'),
+        r = a.n(n),
+        o = a('Y9Ll'),
+        i = a.n(o),
+        c = a('1Pcy'),
+        l = a.n(c),
+        s = a('5Yy7'),
+        u = a.n(s),
+        d = a('N+ot'),
+        p = a.n(d),
+        f = a('AuHH'),
+        b = a.n(f),
+        m = a('KEM+'),
+        h = a.n(m),
+        y = (a('2G9S'), a('ERkP')),
+        v = a.n(y),
+        g = a('MvLc'),
+        w = a('rxPX'),
+        E = a('0KEI'),
+        O = Object(w.a)()
           .propsFromState(function () {
-            return { userAlias: v.y }
+            return { userAlias: g.y }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(w.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
-              fetchUserAlias: v.l,
+              createLocalApiErrorHandler: Object(E.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
+              fetchUserAlias: g.l,
             }
           })
           .withAnalytics({ page: 'birdwatch', component: 'birdwatch_tab_bar' }),
-        O = n('3XMw'),
-        _ = n.n(O),
-        S = n('gASw'),
-        C = n('v6aA'),
-        j = n('C6f5'),
-        T = n('2qZs'),
-        A = n('PU7B'),
-        I = n('YI7k'),
-        x = n('boUI'),
-        P = n('6ZHn'),
-        L = n('89Im'),
-        R = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('Lsrn')),
-        D = n('k/Ka')
-      function k(e, t) {
-        var n = Object.keys(e)
+        _ = a('3XMw'),
+        S = a.n(_),
+        C = a('gASw'),
+        T = a('v6aA'),
+        j = a('C6f5'),
+        A = a('2qZs'),
+        I = a('PU7B'),
+        x = a('YI7k'),
+        P = a('boUI'),
+        L = a('6ZHn'),
+        R = a('89Im'),
+        D = (a('+KXO'), a('1t7P'), a('LW0h'), a('daRM'), a('jwue'), a('+oxZ'), a('FtHn'), a('Lsrn')),
+        k = a('k/Ka')
+      function B(e, t) {
+        var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
+          var n = Object.getOwnPropertySymbols(e)
           t &&
-            (r = r.filter(function (t) {
+            (n = n.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            n.push.apply(n, r)
+            a.push.apply(a, n)
         }
-        return n
+        return a
       }
-      function B(e) {
+      function N(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
+          var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? k(Object(n), !0).forEach(function (t) {
-                h()(e, t, n[t])
+            ? B(Object(a), !0).forEach(function (t) {
+                h()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : k(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : B(Object(a)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var N = function () {
+      var M = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(D.a)(
+        return Object(k.a)(
           'svg',
-          B(
-            B({}, e),
+          N(
+            N({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [R.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [D.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          y.createElement(
+          v.a.createElement(
             'g',
             null,
-            y.createElement('path', {
+            v.a.createElement('path', {
               d: 'M11.188 14.813c.217.217.506.337.812.337.307 0 .596-.12.813-.337l5-5c.217-.218.337-.507.337-.815 0-.307-.12-.595-.338-.812-.217-.216-.506-.336-.814-.336h-.003c-.307 0-.594.12-.81.337l-3.035 3.037V2c0-.634-.517-1.15-1.15-1.15-.634 0-1.15.516-1.15 1.15v9.225L7.813 8.188C7.596 7.97 7.307 7.85 7 7.85c-.308 0-.596.12-.813.338-.218.22-.337.51-.337.817 0 .306.12.593.337.808l5 5z',
             }),
-            y.createElement('path', {
+            v.a.createElement('path', {
               d: 'M21.25 12.85c-.634 0-1.15.517-1.15 1.15v5.652c0 .216-.176.392-.392.392H4.292c-.216 0-.392-.176-.392-.392V14c0-.634-.516-1.15-1.15-1.15S1.6 13.366 1.6 14v5.652c0 1.484 1.208 2.692 2.692 2.692h15.416c1.484 0 2.692-1.208 2.692-2.692V14c0-.634-.516-1.15-1.15-1.15z',
             }),
           ),
         )
       }
-      N.metadata = { width: 24, height: 24 }
-      var M = N,
-        H = n('6s7X'),
-        F = n('Nh1N')
-      function z(e) {
+      M.metadata = { width: 24, height: 24 }
+      var H = M,
+        F = a('6s7X'),
+        z = a('Nh1N')
+      function W(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -2020,40 +2041,40 @@
           }
         })()
         return function () {
-          var n,
-            r = b()(e)
+          var a,
+            n = b()(e)
           if (t) {
-            var a = b()(this).constructor
-            n = Reflect.construct(r, arguments, a)
-          } else n = r.apply(this, arguments)
-          return p()(this, n)
+            var r = b()(this).constructor
+            a = Reflect.construct(n, arguments, r)
+          } else a = n.apply(this, arguments)
+          return p()(this, a)
         }
       }
-      var W = _.a.d5b2da0a,
-        U = _.a.b5711f09,
-        K = _.a.ha8209bb,
-        V = _.a.ff692d63,
-        X = _.a.cb1adfa0,
-        q = _.a.b721eb37,
-        G = function (e, t) {
+      var U = S.a.d5b2da0a,
+        K = S.a.b5711f09,
+        V = S.a.ha8209bb,
+        X = S.a.ff692d63,
+        q = S.a.cb1adfa0,
+        G = S.a.b721eb37,
+        Z = function (e, t) {
           return (
             '/i/birdwatch' === t.pathname || '/i/birdwatch/all' === t.pathname || '/i/birdwatch/helpful' === t.pathname
           )
         },
-        Z = function () {
+        Q = function () {
           return !1
         },
-        Q = (function (e) {
-          u()(n, e)
-          var t = z(n)
-          function n() {
+        Y = (function (e) {
+          u()(a, e)
+          var t = W(a)
+          function a() {
             var e
-            a()(this, n)
-            for (var r = arguments.length, o = new Array(r), i = 0; i < r; i++) o[i] = arguments[i]
+            r()(this, a)
+            for (var n = arguments.length, o = new Array(n), i = 0; i < n; i++) o[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(o))),
               h()(l()(e), '_handleTabClickFactory', function (t) {
-                return function (n) {
+                return function (a) {
                   e.props.analytics.scribe({ element: t, action: 'navigate' })
                 }
               }),
@@ -2061,7 +2082,7 @@
             )
           }
           return (
-            i()(n, [
+            i()(a, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -2075,189 +2096,189 @@
                 value: function () {
                   var e = this.props,
                     t = e.layout,
-                    n = void 0 === t ? 'horizontal' : t,
-                    r = e.wideMode,
-                    a = void 0 !== r && r,
+                    a = void 0 === t ? 'horizontal' : t,
+                    n = e.wideMode,
+                    r = void 0 !== n && n,
                     o = e.withLabel,
                     i = void 0 !== o && o,
                     c = this.context.featureSwitches
-                  return y.createElement(
+                  return v.a.createElement(
                     j.b,
-                    { layout: n, primaryLabel: W, wideMode: a },
-                    y.createElement(S.a, {
-                      accessibilityLabel: U,
-                      isActive: Z,
-                      label: U,
-                      layout: n,
+                    { layout: a, primaryLabel: U, wideMode: r },
+                    v.a.createElement(C.a, {
+                      accessibilityLabel: K,
+                      isActive: Q,
+                      label: K,
+                      layout: a,
                       onClick: this._handleTabClickFactory('home'),
                       path: '/i/birdwatch',
-                      renderIcon: Object(j.c)(T.a, T.a, n),
+                      renderIcon: Object(j.c)(A.a, A.a, a),
                       withLabel: i,
                     }),
-                    y.createElement(S.a, {
-                      accessibilityLabel: K,
-                      isActive: G,
-                      label: K,
-                      layout: n,
+                    v.a.createElement(C.a, {
+                      accessibilityLabel: V,
+                      isActive: Z,
+                      label: V,
+                      layout: a,
                       onClick: this._handleTabClickFactory('timeline_home'),
                       path: '/i/birdwatch',
-                      renderIcon: Object(j.c)(A.a, I.a, n),
+                      renderIcon: Object(j.c)(I.a, x.a, a),
                       withLabel: i,
                     }),
                     c.isTrue('responsive_web_birdwatch_note_writing_enabled')
-                      ? y.createElement(S.a, {
-                          accessibilityLabel: V,
-                          label: V,
-                          layout: n,
+                      ? v.a.createElement(C.a, {
+                          accessibilityLabel: X,
+                          label: X,
+                          layout: a,
                           onClick: this._handleTabClickFactory('user_notes'),
                           path: '/i/birdwatch/u/me',
-                          renderIcon: Object(j.c)(x.a, P.a, n),
+                          renderIcon: Object(j.c)(P.a, L.a, a),
                           withLabel: i,
                         })
                       : null,
-                    y.createElement(S.a, {
-                      accessibilityLabel: X,
-                      label: X,
-                      layout: n,
-                      onClick: this._handleTabClickFactory('download_data'),
-                      path: '/i/birdwatch/download-data',
-                      renderIcon: Object(j.c)(L.a, M, n),
-                      withLabel: i,
-                    }),
-                    y.createElement(S.a, {
+                    v.a.createElement(C.a, {
                       accessibilityLabel: q,
                       label: q,
-                      layout: n,
+                      layout: a,
+                      onClick: this._handleTabClickFactory('download_data'),
+                      path: '/i/birdwatch/download-data',
+                      renderIcon: Object(j.c)(R.a, H, a),
+                      withLabel: i,
+                    }),
+                    v.a.createElement(C.a, {
+                      accessibilityLabel: G,
+                      label: G,
+                      layout: a,
                       onClick: this._handleTabClickFactory('about'),
                       path: '/i/birdwatch/about',
-                      renderIcon: Object(j.c)(H.a, F.a, n),
+                      renderIcon: Object(j.c)(F.a, z.a, a),
                       withLabel: i,
                     }),
                   )
                 },
               },
             ]),
-            n
+            a
           )
-        })(y.Component)
-      h()(Q, 'contextType', C.a)
-      var Y = E(Q)
-      t.a = Y
+        })(v.a.Component)
+      h()(Y, 'contextType', T.a)
+      var J = O(Y)
+      t.a = J
     },
-    MvLc: function (e, t, n) {
+    MvLc: function (e, t, a) {
       'use strict'
-      n.d(t, 'r', function () {
+      a.d(t, 'r', function () {
         return R
       }),
-        n.d(t, 'x', function () {
+        a.d(t, 'x', function () {
           return B
         }),
-        n.d(t, 'o', function () {
+        a.d(t, 'o', function () {
           return N
         }),
-        n.d(t, 'u', function () {
+        a.d(t, 'u', function () {
           return M
         }),
-        n.d(t, 's', function () {
+        a.d(t, 's', function () {
           return H
         }),
-        n.d(t, 'y', function () {
+        a.d(t, 'y', function () {
           return z
         }),
-        n.d(t, 'v', function () {
+        a.d(t, 'v', function () {
           return W
         }),
-        n.d(t, 'n', function () {
+        a.d(t, 'n', function () {
           return U
         }),
-        n.d(t, 'p', function () {
+        a.d(t, 'p', function () {
           return K
         }),
-        n.d(t, 'w', function () {
+        a.d(t, 'w', function () {
           return V
         }),
-        n.d(t, 't', function () {
+        a.d(t, 't', function () {
           return X
         }),
-        n.d(t, 'q', function () {
+        a.d(t, 'q', function () {
           return q
         }),
-        n.d(t, 'k', function () {
+        a.d(t, 'k', function () {
           return G
         }),
-        n.d(t, 'g', function () {
+        a.d(t, 'g', function () {
           return Z
         }),
-        n.d(t, 'h', function () {
+        a.d(t, 'h', function () {
           return Q
         }),
-        n.d(t, 'l', function () {
+        a.d(t, 'l', function () {
           return Y
         }),
-        n.d(t, 'j', function () {
+        a.d(t, 'j', function () {
           return J
         }),
-        n.d(t, 'f', function () {
+        a.d(t, 'f', function () {
           return $
         }),
-        n.d(t, 'm', function () {
+        a.d(t, 'm', function () {
           return ee
         }),
-        n.d(t, 'd', function () {
+        a.d(t, 'd', function () {
           return te
         }),
-        n.d(t, 'b', function () {
-          return ne
-        }),
-        n.d(t, 'z', function () {
-          return re
-        }),
-        n.d(t, 'c', function () {
+        a.d(t, 'b', function () {
           return ae
         }),
-        n.d(t, 'e', function () {
+        a.d(t, 'z', function () {
+          return ne
+        }),
+        a.d(t, 'c', function () {
+          return re
+        }),
+        a.d(t, 'e', function () {
           return oe
         }),
-        n.d(t, 'a', function () {
+        a.d(t, 'a', function () {
           return ie
         }),
-        n.d(t, 'i', function () {
+        a.d(t, 'i', function () {
           return ce
         })
-      n('+KXO'), n('1t7P'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
-      var r = n('m3Bd'),
-        a = n.n(r),
-        o = n('KEM+'),
-        i = n.n(o),
-        c = (n('yH/f'), n('KOtZ'), n('z84I'), n('LW0h'), n('JtPf'), n('7x/C'), n('/kEJ')),
-        l = n('kGix'),
-        s = n('Ssj5'),
-        u = n('oEOe'),
-        d = n('3A2y'),
-        p = n('YeIG')
+      a('+KXO'), a('1t7P'), a('daRM'), a('jwue'), a('+oxZ'), a('FtHn')
+      var n = a('m3Bd'),
+        r = a.n(n),
+        o = a('KEM+'),
+        i = a.n(o),
+        c = (a('yH/f'), a('KOtZ'), a('z84I'), a('LW0h'), a('JtPf'), a('7x/C'), a('/kEJ')),
+        l = a('kGix'),
+        s = a('Ssj5'),
+        u = a('oEOe'),
+        d = a('3A2y'),
+        p = a('YeIG')
       function f(e, t) {
-        var n = Object.keys(e)
+        var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
+          var n = Object.getOwnPropertySymbols(e)
           t &&
-            (r = r.filter(function (t) {
+            (n = n.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            n.push.apply(n, r)
+            a.push.apply(a, n)
         }
-        return n
+        return a
       }
       function b(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
+          var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? f(Object(n), !0).forEach(function (t) {
-                i()(e, t, n[t])
+            ? f(Object(a), !0).forEach(function (t) {
+                i()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : f(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : f(Object(a)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
@@ -2289,12 +2310,12 @@
           SUCCESS: 'rweb/birdwatchNotes/CREATE_NOTE_SUCCESS',
           FAILURE: 'rweb/birdwatchNotes/CREATE_NOTE_FAILURE',
         }),
-        j = Object.freeze({
+        T = Object.freeze({
           REQUEST: 'rweb/birdwatchNotes/FETCH_TWEET_NOTES_REQUEST',
           SUCCESS: 'rweb/birdwatchNotes/FETCH_TWEET_NOTES_SUCCESS',
           FAILURE: 'rweb/birdwatchNotes/FETCH_TWEET_NOTES_FAILURE',
         }),
-        T = Object.freeze({
+        j = Object.freeze({
           REQUEST: 'rweb/birdwatchNotes/FETCH_BIRDWATCH_PROFILE_REQUEST',
           SUCCESS: 'rweb/birdwatchNotes/FETCH_BIRDWATCH_PROFILE_SUCCESS',
           FAILURE: 'rweb/birdwatchNotes/FETCH_BIRDWATCH_PROFILE_FAILURE',
@@ -2317,28 +2338,28 @@
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
             case C.SUCCESS:
-              var n,
-                r = null === (n = t.payload) || void 0 === n ? void 0 : n.result
-              if (r) {
+              var a,
+                n = null === (a = t.payload) || void 0 === a ? void 0 : a.result
+              if (n) {
                 var o,
                   c,
                   s =
                     null === (o = t.payload) || void 0 === o || null === (c = o.entities) || void 0 === c
                       ? void 0
-                      : c.birdwatchNotes[r],
+                      : c.birdwatchNotes[n],
                   u = s.tweet.rest_id
                 return b(
                   b({}, e),
                   {},
                   {
-                    notes: b(b({}, e.notes), {}, i()({}, r, s)),
+                    notes: b(b({}, e.notes), {}, i()({}, n, s)),
                     tweetNotes: b(
                       b({}, e.tweetNotes),
                       {},
                       i()(
                         {},
                         u,
-                        b(b({}, e.tweetNotes && e.tweetNotes[u]), {}, { ownNoteId: r, fetchStatus: l.a.LOADED }),
+                        b(b({}, e.tweetNotes && e.tweetNotes[u]), {}, { ownNoteId: n, fetchStatus: l.a.LOADED }),
                       ),
                     ),
                   },
@@ -2361,11 +2382,11 @@
                 D = null === (R = t.meta) || void 0 === R ? void 0 : R.note_id
               if (D) {
                 var k = e.notes[D],
-                  B = (k.rating, a()(k, ['rating']))
+                  B = (k.rating, r()(k, ['rating']))
                 return b(b({}, e), {}, { notes: b(b({}, e.notes), {}, i()({}, D, b({}, B))) })
               }
               return e
-            case j.REQUEST:
+            case T.REQUEST:
               var N,
                 M = null === (N = t.meta) || void 0 === N ? void 0 : N.tweet_id
               return M
@@ -2381,7 +2402,7 @@
                     },
                   )
                 : e
-            case j.FAILURE:
+            case T.FAILURE:
               var H,
                 F = null === (H = t.meta) || void 0 === H ? void 0 : H.tweet_id
               return F
@@ -2397,7 +2418,7 @@
                     },
                   )
                 : e
-            case j.SUCCESS:
+            case T.SUCCESS:
               var z,
                 W,
                 U = null === (z = t.payload) || void 0 === z ? void 0 : z.result,
@@ -2433,7 +2454,7 @@
               return K
                 ? b(b({}, e), {}, { tweetNotes: b(b({}, e.tweetNotes), {}, i()({}, K, { fetchStatus: l.a.LOADED })) })
                 : e
-            case T.REQUEST:
+            case j.REQUEST:
               var J,
                 $ = null === (J = t.meta) || void 0 === J ? void 0 : J.alias
               return $
@@ -2449,7 +2470,7 @@
                     },
                   )
                 : e
-            case T.FAILURE:
+            case j.FAILURE:
               var ee,
                 te = null === (ee = t.meta) || void 0 === ee ? void 0 : ee.alias
               return te
@@ -2465,11 +2486,11 @@
                     },
                   )
                 : e
-            case T.SUCCESS:
-              var ne,
-                re,
-                ae = null === (ne = t.meta) || void 0 === ne ? void 0 : ne.alias,
-                oe = null === (re = t.payload) || void 0 === re ? void 0 : re.result
+            case j.SUCCESS:
+              var ae,
+                ne,
+                re = null === (ae = t.meta) || void 0 === ae ? void 0 : ae.alias,
+                oe = null === (ne = t.payload) || void 0 === ne ? void 0 : ne.result
               if (oe && t.meta) {
                 var ie,
                   ce,
@@ -2503,7 +2524,7 @@
                   },
                 )
               }
-              return ae
+              return re
                 ? b(
                     b({}, e),
                     {},
@@ -2511,7 +2532,7 @@
                       contributor: b(
                         b({}, e.contributor),
                         {},
-                        i()({}, ae, b(b({}, e.contributor[ae]), {}, { fetchStatus: l.a.FAILED })),
+                        i()({}, re, b(b({}, e.contributor[re]), {}, { fetchStatus: l.a.FAILED })),
                       ),
                     },
                   )
@@ -2592,13 +2613,13 @@
               return Se ? b(b({}, e), {}, { publicData: Se }) : e
             case w.SUCCESS:
               var Ce,
-                je = null === (Ce = t.meta) || void 0 === Ce ? void 0 : Ce.alias
-              return b(b({}, e), {}, { contributor: b(b({}, e.contributor), {}, { ownAlias: je }) })
+                Te = null === (Ce = t.meta) || void 0 === Ce ? void 0 : Ce.alias
+              return b(b({}, e), {}, { contributor: b(b({}, e.contributor), {}, { ownAlias: Te }) })
             case x:
-              var Te = t.payload
-              if (Object(p.a)(Te)) return e
-              var Ae = Te.updates,
-                Ie = Te.tweetId
+              var je = t.payload
+              if (Object(p.a)(je)) return e
+              var Ae = je.updates,
+                Ie = je.tweetId
               return b(b({}, e), {}, { drafts: b(b({}, e.drafts), {}, i()({}, Ie, Ae)) })
             default:
               return e
@@ -2610,38 +2631,38 @@
           return e.birdwatchNotes.notes[t]
         },
         D = function (e, t) {
-          var n
-          return null === (n = e.birdwatchNotes.tweetNotes[t]) || void 0 === n ? void 0 : n.ids
+          var a
+          return null === (a = e.birdwatchNotes.tweetNotes[t]) || void 0 === a ? void 0 : a.ids
         },
         k = function (e, t) {
-          var n
-          return null === (n = e.birdwatchNotes.tweetNotes[t]) || void 0 === n ? void 0 : n.ownNoteId
+          var a
+          return null === (a = e.birdwatchNotes.tweetNotes[t]) || void 0 === a ? void 0 : a.ownNoteId
         },
         B = function (e, t) {
           if (!t) return null
-          var n = k(e, t)
-          return n ? R(e, n) : null
+          var a = k(e, t)
+          return a ? R(e, a) : null
         },
         N = function (e, t) {
-          var n, r
+          var a, n
           if (t)
-            return null === (n = e.birdwatchNotes) || void 0 === n || null === (r = n.contributor[t]) || void 0 === r
+            return null === (a = e.birdwatchNotes) || void 0 === a || null === (n = a.contributor[t]) || void 0 === n
               ? void 0
-              : r.badges
+              : n.badges
         },
         M = function (e) {
           return e.birdwatchNotes.publicData
         },
         H = function (e, t) {
-          var n = t ? D(e, t) : void 0
-          if (n) {
-            var r = k(e, t)
+          var a = t ? D(e, t) : void 0
+          if (a) {
+            var n = k(e, t)
             return (
-              r &&
-                (n = n.filter(function (e) {
-                  return e !== r
+              n &&
+                (a = a.filter(function (e) {
+                  return e !== n
                 })),
-              n
+              a
                 .map(function (t) {
                   return R(e, t)
                 })
@@ -2651,8 +2672,8 @@
           return L
         },
         F = function (e, t) {
-          var n = e.birdwatchNotes.contributor[t]
-          return n ? n.notes : void 0
+          var a = e.birdwatchNotes.contributor[t]
+          return a ? a.notes : void 0
         },
         z = function (e) {
           var t = e.birdwatchNotes.contributor
@@ -2668,37 +2689,37 @@
         },
         K = function (e, t) {
           if (t) {
-            var n = e.birdwatchNotes.contributor[t]
-            return n ? n.ratings : void 0
+            var a = e.birdwatchNotes.contributor[t]
+            return a ? a.ratings : void 0
           }
         },
         V = function (e, t) {
-          var n = e.birdwatchNotes.tweetNotes[t]
-          return n ? n.fetchStatus : l.a.NONE
+          var a = e.birdwatchNotes.tweetNotes[t]
+          return a ? a.fetchStatus : l.a.NONE
         },
         X = function (e, t) {
-          var n = e.birdwatchNotes.notes[t]
-          return n ? n.fetchStatus : l.a.NONE
+          var a = e.birdwatchNotes.notes[t]
+          return a ? a.fetchStatus : l.a.NONE
         },
         q = function (e, t) {
           if (t) {
-            var n = e.birdwatchNotes.drafts
-            return n ? n[t] : void 0
+            var a = e.birdwatchNotes.drafts
+            return a ? a[t] : void 0
           }
         },
         G = function (e) {
-          return function (t, n, r) {
-            r.api
-            var a = !!D(n(), e),
-              o = V(n(), e) === l.a.LOADING
-            return a || o
+          return function (t, a, n) {
+            n.api
+            var r = !!D(a(), e),
+              o = V(a(), e) === l.a.LOADING
+            return r || o
               ? Promise.resolve()
               : t(
                   (function (e) {
-                    return function (t, n, r) {
-                      var a = r.api
-                      return Object(u.b)(t, { request: a.Birdwatch.fetchNotes, params: { tweet_id: e } })(
-                        { actionTypes: j, context: 'FETCH_TWEET_NOTES', meta: { tweet_id: e } },
+                    return function (t, a, n) {
+                      var r = n.api
+                      return Object(u.b)(t, { request: r.Birdwatch.fetchNotes, params: { tweet_id: e } })(
+                        { actionTypes: T, context: 'FETCH_TWEET_NOTES', meta: { tweet_id: e } },
                         function (e) {
                           if (e) {
                             var t = e.entities
@@ -2712,23 +2733,23 @@
           }
         },
         Z = function (e) {
-          return function (t, n, r) {
-            r.api
-            var a = !!e && !!F(n(), e),
+          return function (t, a, n) {
+            n.api
+            var r = !!e && !!F(a(), e),
               o =
                 (function (e, t) {
-                  var n = e.birdwatchNotes.contributor[t]
-                  return n ? n.fetchStatus : l.a.NONE
-                })(n(), e) === l.a.LOADING
-            return a || o
+                  var a = e.birdwatchNotes.contributor[t]
+                  return a ? a.fetchStatus : l.a.NONE
+                })(a(), e) === l.a.LOADING
+            return r || o
               ? Promise.resolve()
               : t(
                   (function (e) {
-                    return function (t, n, r) {
-                      var a = r.api
+                    return function (t, a, n) {
+                      var r = n.api
                       return e
-                        ? Object(u.b)(t, { request: a.Birdwatch.fetchBirdwatchProfile, params: { alias: e } })(
-                            { actionTypes: T, context: 'FETCH_BIRDWATCH_PROFILE', meta: { alias: e } },
+                        ? Object(u.b)(t, { request: r.Birdwatch.fetchBirdwatchProfile, params: { alias: e } })(
+                            { actionTypes: j, context: 'FETCH_BIRDWATCH_PROFILE', meta: { alias: e } },
                             function (e) {
                               if (e) {
                                 var t = e.entities
@@ -2743,17 +2764,17 @@
           }
         },
         Q = function (e) {
-          return function (t, n, r) {
-            r.api
-            var a = !!R(n(), e),
-              o = X(n(), e) === l.a.LOADING
-            return a || o
+          return function (t, a, n) {
+            n.api
+            var r = !!R(a(), e),
+              o = X(a(), e) === l.a.LOADING
+            return r || o
               ? Promise.resolve()
               : t(
                   (function (e) {
-                    return function (t, n, r) {
-                      var a = r.api
-                      return Object(u.b)(t, { request: a.Birdwatch.fetchOneNote, params: { note_id: e } })({
+                    return function (t, a, n) {
+                      var r = n.api
+                      return Object(u.b)(t, { request: r.Birdwatch.fetchOneNote, params: { note_id: e } })({
                         actionTypes: I,
                         context: 'FETCH_NOTE',
                         meta: { note_id: e },
@@ -2764,13 +2785,13 @@
           }
         },
         Y = function () {
-          return function (e, t, n) {
-            n.api
+          return function (e, t, a) {
+            a.api
             return !!z(t())
               ? Promise.resolve()
-              : e(function (e, t, n) {
-                  var r = n.api
-                  return Object(u.b)(e, { request: r.Birdwatch.fetchUserAlias, params: {} })({
+              : e(function (e, t, a) {
+                  var n = a.api
+                  return Object(u.b)(e, { request: n.Birdwatch.fetchUserAlias, params: {} })({
                     actionTypes: _,
                     context: 'FETCH_USER_ALIAS',
                   })
@@ -2778,9 +2799,9 @@
           }
         },
         J = function () {
-          return function (e, t, n) {
-            var r = n.api
-            return Object(u.b)(e, { request: r.Birdwatch.fetchAliasSelfSelectStatus, params: {} })({
+          return function (e, t, a) {
+            var n = a.api
+            return Object(u.b)(e, { request: n.Birdwatch.fetchAliasSelfSelectStatus, params: {} })({
               actionTypes: A,
               context: 'FETCH_SHOW_ALIAS_SELECT',
               meta: {},
@@ -2788,9 +2809,9 @@
           }
         },
         $ = function () {
-          return function (e, t, n) {
-            var r = n.api
-            return Object(u.b)(e, { request: r.Birdwatch.fetchAliasSelfSelectOptions, params: {} })({
+          return function (e, t, a) {
+            var n = a.api
+            return Object(u.b)(e, { request: n.Birdwatch.fetchAliasSelfSelectOptions, params: {} })({
               actionTypes: S,
               context: 'FETCH_ALIAS_SELECT_OPTIONS',
               meta: {},
@@ -2798,9 +2819,9 @@
           }
         },
         ee = function (e) {
-          return function (t, n, r) {
-            var a = r.api
-            return Object(u.b)(t, { request: a.Birdwatch.selectAlias, params: { alias: e } })({
+          return function (t, a, n) {
+            var r = n.api
+            return Object(u.b)(t, { request: r.Birdwatch.selectAlias, params: { alias: e } })({
               actionTypes: w,
               context: 'SELECT_ALIAS',
               meta: { alias: e },
@@ -2810,16 +2831,16 @@
         te = function (e) {
           return { meta: { note_id: e }, type: y.SUCCESS }
         },
-        ne = function (e, t) {
-          return function (n, r, a) {
-            var o = a.api
-            return Object(u.b)(n, { request: o.Birdwatch.createNote, params: { tweet_id: e, data: t } })({
+        ae = function (e, t) {
+          return function (a, n, r) {
+            var o = r.api
+            return Object(u.b)(a, { request: o.Birdwatch.createNote, params: { tweet_id: e, data: t } })({
               actionTypes: C,
               context: 'CREATE_NOTE',
             })
           }
         },
-        re = function (e) {
+        ne = function (e) {
           return function (t) {
             t(
               (function (e) {
@@ -2828,10 +2849,10 @@
             )
           }
         },
-        ae = function (e, t) {
-          return function (n, r, a) {
-            var o = a.api
-            return Object(u.b)(n, { request: o.Birdwatch.createRating, params: { note_id: e, data: t } })({
+        re = function (e, t) {
+          return function (a, n, r) {
+            var o = r.api
+            return Object(u.b)(a, { request: o.Birdwatch.createRating, params: { note_id: e, data: t } })({
               actionTypes: v,
               context: 'CREATE_RATING',
               meta: { note_id: e },
@@ -2839,9 +2860,9 @@
           }
         },
         oe = function (e) {
-          return function (t, n, r) {
-            var a = r.api
-            return Object(u.b)(t, { request: a.Birdwatch.deleteRating, params: { note_id: e } })({
+          return function (t, a, n) {
+            var r = n.api
+            return Object(u.b)(t, { request: r.Birdwatch.deleteRating, params: { note_id: e } })({
               actionTypes: g,
               context: 'DELETE_RATING',
               meta: { note_id: e },
@@ -2849,9 +2870,9 @@
           }
         },
         ie = function (e) {
-          return function (t, n, r) {
-            var a = r.api
-            return Object(u.b)(t, { request: a.Birdwatch.createAppeal, params: { note_id: e } })({
+          return function (t, a, n) {
+            var r = n.api
+            return Object(u.b)(t, { request: r.Birdwatch.createAppeal, params: { note_id: e } })({
               actionTypes: E,
               context: 'CREATE_APPEAL',
               meta: { note_id: e },
@@ -2859,9 +2880,9 @@
           }
         },
         ce = function () {
-          return function (e, t, n) {
-            var r = n.api
-            return Object(u.b)(e, { request: r.Birdwatch.fetchPublicData, params: {} })({
+          return function (e, t, a) {
+            var n = a.api
+            return Object(u.b)(e, { request: n.Birdwatch.fetchPublicData, params: {} })({
               actionTypes: O,
               context: 'FETCH_DATA',
               meta: {},
@@ -2869,87 +2890,88 @@
           }
         }
     },
-    PKU5: function (e, t, n) {
+    PKU5: function (e, t, a) {
       'use strict'
-      n.r(t),
-        n.d(t, 'BirdwatchNoteScreen', function () {
-          return x
+      a.r(t),
+        a.d(t, 'BirdwatchNoteScreen', function () {
+          return P
         })
-      var r = n('ddV6'),
-        a = n.n(r),
-        o = n('ERkP'),
-        i = n('ZD0R'),
-        c = (n('WNMA'), n('KqXw'), n('MvLc')),
-        l = n('rxPX'),
-        s = n('0KEI'),
-        u = function (e, t) {
+      var n = a('ddV6'),
+        r = a.n(n),
+        o = a('ERkP'),
+        i = a.n(o),
+        c = a('ZD0R'),
+        l = (a('WNMA'), a('KqXw'), a('MvLc')),
+        s = a('rxPX'),
+        u = a('0KEI'),
+        d = function (e, t) {
           return t.match.params.noteId
         },
-        d = function (e, t) {
-          return c.r(e, u(0, t))
-        },
         p = function (e, t) {
-          return c.t(e, u(0, t))
+          return l.r(e, d(0, t))
         },
-        f = Object(l.a)()
+        f = function (e, t) {
+          return l.t(e, d(0, t))
+        },
+        b = Object(s.a)()
           .propsFromState(function () {
-            return { noteData: d, noteId: u, fetchStatus: p }
+            return { noteData: p, noteId: d, fetchStatus: f }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(s.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
-              fetchOneNoteIfNeeded: c.h,
+              createLocalApiErrorHandler: Object(u.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
+              fetchOneNoteIfNeeded: l.h,
             }
           }),
-        b = n('kGix'),
-        m = n('jHSc'),
-        h = n('3XMw'),
-        y = n.n(h),
-        v = n('aITJ'),
-        g = n('MWbm'),
-        w = n('FIs5'),
-        E = n('htQn'),
-        O = n('rHpw'),
-        _ = n('Qwev'),
-        S = y.a.c87f3cf8,
-        C = y.a.i859a9d3,
-        j = y.a.efd14e79,
-        T = y.a.a5b19492,
-        A = o.createElement(w.a, { buttonLink: '/i/birdwatch/about', buttonText: C, header: T }),
-        I = function () {
+        m = a('kGix'),
+        h = a('jHSc'),
+        y = a('3XMw'),
+        v = a.n(y),
+        g = a('aITJ'),
+        w = a('MWbm'),
+        E = a('FIs5'),
+        O = a('htQn'),
+        _ = a('rHpw'),
+        S = a('Qwev'),
+        C = v.a.c87f3cf8,
+        T = v.a.i859a9d3,
+        j = v.a.efd14e79,
+        A = v.a.a5b19492,
+        I = i.a.createElement(E.a, { buttonLink: '/i/birdwatch/about', buttonText: T, header: A }),
+        x = function () {
           return null
         },
-        x = function (e) {
+        P = function (e) {
           var t = e.createLocalApiErrorHandler,
-            n = e.fetchOneNoteIfNeeded,
-            r = e.fetchStatus,
-            c = e.history,
+            a = e.fetchOneNoteIfNeeded,
+            n = e.fetchStatus,
+            o = e.history,
             l = e.noteData,
             s = e.noteId,
-            u = o.useState(l),
-            d = a()(u, 2),
+            u = i.a.useState(l),
+            d = r()(u, 2),
             p = d[0],
             f = d[1]
-          o.useEffect(
+          i.a.useEffect(
             function () {
-              s && n(s).catch(t())
+              s && a(s).catch(t())
             },
-            [t, n, s],
+            [t, a, s],
           ),
-            o.useEffect(
+            i.a.useEffect(
               function () {
                 f(l)
               },
               [l],
             )
-          var h = o.createElement(
-            E.a,
+          var b = i.a.createElement(
+            O.a,
             null,
             p && p.data_v1
-              ? o.createElement(
-                  g.a,
-                  { style: P.contentWrapper },
-                  o.createElement(i.a, {
+              ? i.a.createElement(
+                  w.a,
+                  { style: L.contentWrapper },
+                  i.a.createElement(c.a, {
                     handleDelete: function (e) {
                       f(null)
                     },
@@ -2958,105 +2980,107 @@
                     showTweet: !0,
                   }),
                 )
-              : r === b.a.LOADING
-              ? L
-              : A,
+              : n === m.a.LOADING
+              ? R
+              : I,
           )
-          return o.createElement(
-            m.b,
-            { history: c, renderHeader: v.b.isTwitterApp() ? I : void 0, title: S },
-            o.createElement(g.a, { style: P.contentWrapper }, h),
+          return i.a.createElement(
+            h.b,
+            { history: o, renderHeader: g.b.isTwitterApp() ? x : void 0, title: C },
+            i.a.createElement(w.a, { style: L.contentWrapper }, b),
           )
         },
-        P = O.a.create(function (e) {
+        L = _.a.create(function (e) {
           return {
             contentWrapper: { backgroundColor: e.colors.cellBackground },
             spinner: { paddingTop: e.spaces.space80 },
           }
         }),
-        L = o.createElement(_.a, { accessibilityLabel: j, size: 'large', style: P.spinner }),
-        R = f(x)
-      t.default = R
+        R = i.a.createElement(S.a, { accessibilityLabel: j, size: 'large', style: L.spinner }),
+        D = b(P)
+      t.default = D
     },
-    QDet: function (e, t, n) {
+    QDet: function (e, t, a) {
       'use strict'
-      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
-      var r = n('KEM+'),
-        a = n.n(r),
-        o = n('ERkP'),
-        i = n('Lsrn'),
-        c = n('k/Ka')
-      function l(e, t) {
-        var n = Object.keys(e)
+      a('+KXO'), a('1t7P'), a('LW0h'), a('daRM'), a('jwue'), a('+oxZ'), a('FtHn')
+      var n = a('KEM+'),
+        r = a.n(n),
+        o = a('ERkP'),
+        i = a.n(o),
+        c = a('Lsrn'),
+        l = a('k/Ka')
+      function s(e, t) {
+        var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
+          var n = Object.getOwnPropertySymbols(e)
           t &&
-            (r = r.filter(function (t) {
+            (n = n.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            n.push.apply(n, r)
+            a.push.apply(a, n)
         }
-        return n
+        return a
       }
-      function s(e) {
+      function u(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
+          var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? l(Object(n), !0).forEach(function (t) {
-                a()(e, t, n[t])
+            ? s(Object(a), !0).forEach(function (t) {
+                r()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : l(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : s(Object(a)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var u = function () {
+      var d = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(c.a)(
+        return Object(l.a)(
           'svg',
-          s(
-            s({}, e),
+          u(
+            u({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [i.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [c.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          o.createElement(
+          i.a.createElement(
             'g',
             null,
-            o.createElement('path', {
+            i.a.createElement('path', {
               d: 'M12 3.413c.45 0 .814-.365.814-.815V1.315a.814.814 0 10-1.628 0v1.284c0 .449.364.814.814.814zm0 17.174a.814.814 0 00-.814.815v1.284a.814.814 0 101.628 0v-1.284a.813.813 0 00-.814-.815zm10.685-9.402h-1.284a.814.814 0 100 1.628h1.284a.814.814 0 100-1.628zm-20.087.001H1.315a.814.814 0 100 1.628h1.284a.814.814 0 10-.001-1.628zm16.626-5.259l.908-.908a.814.814 0 10-1.152-1.152l-.908.907a.814.814 0 101.152 1.153zM4.777 18.072l-.908.908a.814.814 0 101.152 1.152l.908-.908a.814.814 0 10-1.152-1.152zm14.447 0a.814.814 0 10-1.152 1.152l.908.908a.814.814 0 101.152-1.152l-.908-.908zM4.776 5.927a.814.814 0 101.152-1.152l-.908-.907A.814.814 0 103.868 5.02l.908.907zm10.264.372c-1.378 0-2.408.841-3.039 1.621-.631-.78-1.661-1.621-3.039-1.621-2.005 0-3.763 1.866-3.763 3.992 0 4.281 5.042 8.802 6.815 8.834 1.747-.032 6.788-4.553 6.788-8.834 0-2.126-1.759-3.992-3.762-3.992zm-3.025 11.389c-.934-.05-5.378-3.835-5.378-7.397 0-1.337 1.108-2.555 2.326-2.555 1.496 0 2.367 1.781 2.374 1.798.11.269.372.441.663.443h.003a.723.723 0 00.664-.442c.007-.018.879-1.799 2.374-1.799 1.217 0 2.325 1.218 2.325 2.555-.002 3.562-4.445 7.348-5.351 7.397z',
             }),
           ),
         )
       }
-      ;(u.metadata = { width: 24, height: 24 }), (t.a = u)
+      ;(d.metadata = { width: 24, height: 24 }), (t.a = d)
     },
-    TEoO: function (e, t, n) {
+    TEoO: function (e, t, a) {
       'use strict'
-      var r = n('m3Bd'),
-        a = n.n(r),
-        o = n('ERkP'),
-        i = n('5UID'),
-        c = n('3GUV'),
-        l = n('iBK2'),
-        s = o.createElement(c.a, null),
-        u = function (e) {
+      var n = a('m3Bd'),
+        r = a.n(n),
+        o = a('ERkP'),
+        i = a.n(o),
+        c = a('5UID'),
+        l = a('3GUV'),
+        s = a('iBK2'),
+        u = i.a.createElement(l.a, null),
+        d = function (e) {
           var t = e.accessibilityTitle,
-            n = a()(e, ['accessibilityTitle']),
-            r = o.createElement(l.b, n)
-          return t ? o.createElement(i.a, { title: t }, r) : r
+            a = r()(e, ['accessibilityTitle']),
+            n = i.a.createElement(s.b, a)
+          return t ? i.a.createElement(c.a, { title: t }, n) : n
         }
-      ;(u.defaultProps = { footer: s }), (t.a = u)
+      ;(d.defaultProps = { footer: u }), (t.a = d)
     },
-    'W6+M': function (e, t, n) {
+    'W6+M': function (e, t, a) {
       'use strict'
-      n.d(t, 'a', function () {
-        return r
+      a.d(t, 'a', function () {
+        return n
       })
-      n('7xRU'), n('z84I'), n('Ysgh'), n('KqXw')
-      var r = function (e) {
+      a('7xRU'), a('z84I'), a('Ysgh'), a('KqXw')
+      var n = function (e) {
         var t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1]
         return e
           .split('-')
@@ -3066,230 +3090,231 @@
           .join(' ')
       }
     },
-    XioW: function (e, t, n) {
+    XioW: function (e, t, a) {
       'use strict'
-      n.r(t),
-        n.d(t, 'BirdwatchForm', function () {
-          return Ie
+      a.r(t),
+        a.d(t, 'BirdwatchForm', function () {
+          return xe
         })
-      n('+KXO'), n('1t7P'), n('daRM'), n('FtHn')
-      var r = n('RhWx'),
-        a = n.n(r),
-        o = n('KEM+'),
-        i = n.n(o),
-        c = n('ddV6'),
-        l = n.n(c),
+      a('+KXO'), a('1t7P'), a('daRM'), a('FtHn')
+      var n = a('RhWx'),
+        r = a.n(n),
+        o = a('KEM+'),
+        i = a.n(o),
+        c = a('ddV6'),
+        l = a.n(c),
         s =
-          (n('2G9S'),
-          n('tVqn'),
-          n('jwue'),
-          n('jQ3i'),
-          n('x4t0'),
-          n('LW0h'),
-          n('z84I'),
-          n('7x/C'),
-          n('DZ+c'),
-          n('MvUL'),
-          n('KqXw'),
-          n('+oxZ'),
-          n('uFXj'),
-          n('ERkP')),
-        u = n('v6aA'),
-        d = n('9StO'),
-        p = (n('WNMA'), n('MvLc')),
-        f = n('1YZw'),
-        b = n('XOJV'),
-        m = n('rxPX'),
-        h = n('0KEI'),
-        y = function (e, t) {
+          (a('2G9S'),
+          a('tVqn'),
+          a('jwue'),
+          a('jQ3i'),
+          a('x4t0'),
+          a('LW0h'),
+          a('z84I'),
+          a('7x/C'),
+          a('DZ+c'),
+          a('MvUL'),
+          a('KqXw'),
+          a('+oxZ'),
+          a('uFXj'),
+          a('ERkP')),
+        u = a.n(s),
+        d = a('v6aA'),
+        p = a('9StO'),
+        f = (a('WNMA'), a('MvLc')),
+        b = a('1YZw'),
+        m = a('XOJV'),
+        h = a('rxPX'),
+        y = a('0KEI'),
+        v = function (e, t) {
           return t.match.params.tweetId
         },
-        v = function (e, t) {
-          return p.x(e, y(0, t))
-        },
         g = function (e, t) {
-          return p.q(e, y(0, t))
+          return f.x(e, v(0, t))
         },
         w = function (e, t) {
-          return p.v(e)
+          return f.q(e, v(0, t))
         },
-        E = Object(m.a)()
+        E = function (e, t) {
+          return f.v(e)
+        },
+        O = Object(h.a)()
           .propsFromState(function () {
-            return { draftData: g, ownNoteData: v, tweetId: y, showAliasSelfSelect: w, userAlias: p.y }
+            return { draftData: w, ownNoteData: g, tweetId: v, showAliasSelfSelect: E, userAlias: f.y }
           })
           .propsFromActions(function () {
             return {
-              addToast: f.b,
-              createLocalApiErrorHandler: Object(h.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
-              createNote: p.b,
-              fetchNotes: p.k,
-              fetchShowAliasSelfSelect: p.j,
-              fetchTweet: b.a.fetchOneIfNeeded,
-              fetchUserAlias: p.l,
-              saveFormData: p.z,
+              addToast: b.b,
+              createLocalApiErrorHandler: Object(y.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
+              createNote: f.b,
+              fetchNotes: f.k,
+              fetchShowAliasSelfSelect: f.j,
+              fetchTweet: m.a.fetchOneIfNeeded,
+              fetchUserAlias: f.l,
+              saveFormData: f.z,
             }
           })
           .withAnalytics({ page: 'birdwatch', section: 'contribute_form' }),
-        O = n('W6+M'),
-        _ = n('jHSc'),
-        S = n('3XMw'),
-        C = n.n(S),
-        j = n('5FtR'),
-        T = n('SrIh'),
-        A = n('Rp9C'),
-        I = n('xZXe'),
-        x = n('aITJ'),
-        P = n('MWbm'),
-        L = n('t62R'),
-        R = n('XiMS'),
-        D = n('fyvP'),
-        k = n('p+r5'),
-        B = n('4zmP'),
-        N = n('/yvb'),
-        M = n('feu+'),
-        H = n('rHpw'),
-        F = n('KqB4'),
-        z = n.n(F),
-        W = n('S1qy'),
-        U = n.n(W),
-        K = n('Oib4'),
-        V = n('DlMI'),
-        X = n('ms2t'),
-        q = n('I/9y'),
-        G = n('EHV7'),
-        Z = 'MisinformedOrPotentiallyMisleading',
-        Q = 'NotMisleading',
-        Y = {
+        _ = a('W6+M'),
+        S = a('jHSc'),
+        C = a('3XMw'),
+        T = a.n(C),
+        j = a('5FtR'),
+        A = a('SrIh'),
+        I = a('Rp9C'),
+        x = a('xZXe'),
+        P = a('aITJ'),
+        L = a('MWbm'),
+        R = a('t62R'),
+        D = a('XiMS'),
+        k = a('fyvP'),
+        B = a('p+r5'),
+        N = a('4zmP'),
+        M = a('/yvb'),
+        H = a('feu+'),
+        F = a('rHpw'),
+        z = a('KqB4'),
+        W = a.n(z),
+        U = a('S1qy'),
+        K = a.n(U),
+        V = a('Oib4'),
+        X = a('DlMI'),
+        q = a('ms2t'),
+        G = a('I/9y'),
+        Z = a('EHV7'),
+        Q = 'MisinformedOrPotentiallyMisleading',
+        Y = 'NotMisleading',
+        J = {
           classification: {
-            label: C.a.c8a7eee9,
+            label: T.a.c8a7eee9,
             options: [
-              { label: C.a.d4e419f5, value: Z },
-              { label: C.a.ha9655c2, value: Q },
+              { label: T.a.d4e419f5, value: Q },
+              { label: T.a.ha9655c2, value: Y },
             ],
           },
           misleading_tags: {
-            label: C.a.a0cf39fc,
+            label: T.a.a0cf39fc,
             options: [
-              { label: C.a.c33bc7d3, value: 'FactualError' },
-              { label: C.a.j6e12b24, value: 'ManipulatedMedia' },
-              { label: C.a.aadb676b, value: 'OutdatedInformation' },
-              { label: C.a.g21a0ef3, value: 'MissingImportantContext' },
-              { label: C.a.daf354dd, value: 'DisputedClaimAsFact' },
-              { label: C.a.d1d2ef84, value: 'MisinterpretedSatire' },
-              { label: C.a.c365dcc5, value: 'Other' },
+              { label: T.a.c33bc7d3, value: 'FactualError' },
+              { label: T.a.j6e12b24, value: 'ManipulatedMedia' },
+              { label: T.a.aadb676b, value: 'OutdatedInformation' },
+              { label: T.a.g21a0ef3, value: 'MissingImportantContext' },
+              { label: T.a.daf354dd, value: 'DisputedClaimAsFact' },
+              { label: T.a.d1d2ef84, value: 'MisinterpretedSatire' },
+              { label: T.a.c365dcc5, value: 'Other' },
             ],
           },
           believable: {
-            label: C.a.ce5fa5d4,
+            label: T.a.ce5fa5d4,
             options: [
-              { label: C.a.d617b1b9, value: 'BelievableByFew' },
-              { label: C.a.c5be638b, value: 'BelievableByMany' },
+              { label: T.a.d617b1b9, value: 'BelievableByFew' },
+              { label: T.a.c5be638b, value: 'BelievableByMany' },
             ],
           },
           harmful: {
-            label: C.a.cd06cf1a,
+            label: T.a.cd06cf1a,
             options: [
-              { label: C.a.c23c72e6, value: 'LittleHarm' },
-              { label: C.a.ee822d70, value: 'ConsiderableHarm' },
+              { label: T.a.c23c72e6, value: 'LittleHarm' },
+              { label: T.a.ee822d70, value: 'ConsiderableHarm' },
             ],
           },
           validation: {
-            label: C.a.d19bf2bc,
+            label: T.a.d19bf2bc,
             options: [
-              { label: C.a.h25771bb, value: 'Easy' },
-              { label: C.a.e0830664, value: 'Challenging' },
+              { label: T.a.h25771bb, value: 'Easy' },
+              { label: T.a.e0830664, value: 'Challenging' },
             ],
           },
           not_misleading_tags: {
-            label: C.a.j206b73d,
+            label: T.a.j206b73d,
             options: [
-              { label: C.a.g228df26, value: 'FactuallyCorrect' },
-              { label: C.a.dd55f821, value: 'OutdatedNowButNotWhenWritten' },
-              { label: C.a.hf607a09, value: 'ClearlySatire' },
-              { label: C.a.j6ac7741, value: 'PersonalOpinion' },
-              { label: C.a.c365dcc5, value: 'Other' },
+              { label: T.a.g228df26, value: 'FactuallyCorrect' },
+              { label: T.a.dd55f821, value: 'OutdatedNowButNotWhenWritten' },
+              { label: T.a.hf607a09, value: 'ClearlySatire' },
+              { label: T.a.j6ac7741, value: 'PersonalOpinion' },
+              { label: T.a.c365dcc5, value: 'Other' },
             ],
           },
           trustworthy_sources: {
-            label: C.a.b1d82aae,
+            label: T.a.b1d82aae,
             options: [
-              { label: C.a.b7ec04f3, value: !0 },
-              { label: C.a.i62a03aa, value: !1 },
+              { label: T.a.b7ec04f3, value: !0 },
+              { label: T.a.i62a03aa, value: !1 },
             ],
           },
         }
-      function J(e, t) {
-        var n = Object.keys(e)
+      function $(e, t) {
+        var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
+          var n = Object.getOwnPropertySymbols(e)
           t &&
-            (r = r.filter(function (t) {
+            (n = n.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            n.push.apply(n, r)
+            a.push.apply(a, n)
         }
-        return n
+        return a
       }
-      function $(e) {
+      function ee(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
+          var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? J(Object(n), !0).forEach(function (t) {
-                i()(e, t, n[t])
+            ? $(Object(a), !0).forEach(function (t) {
+                i()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : J(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : $(Object(a)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var ee = C.a.d39e8b30,
-        te = C.a.a91bb144,
-        ne = C.a.hb2bf967,
-        re = C.a.dc7a6625,
-        ae = C.a.af778d9e,
-        oe = C.a.ifd2c15f,
-        ie = C.a.f24ec219,
-        ce = C.a.j679dcda,
-        le = { external: !0, pathname: 'https://twitter.github.io/birdwatch/note-examples' },
-        se = C.a.b7476596,
-        ue = C.a.df6c8291,
-        de = C.a.h0e35524,
-        pe = ['believable', 'harmful', 'validation'],
-        fe = ['classification', 'summary', 'trustworthy_sources'],
-        be = ['misleading_tags'].concat(pe),
-        me = ['not_misleading_tags'],
-        he = ['classification', 'believable', 'harmful', 'validation', 'trustworthy_sources'],
-        ye = ['misleading_tags', 'not_misleading_tags'],
-        ve = C.a.b47b5a16,
-        ge = C.a.i0e66c5a,
-        we = C.a.j8e3e3be,
-        Ee = C.a.f1e851ff,
-        Oe = C.a.ff5dcac8,
-        _e = {
-          classification: ge,
-          misleading_tags: we,
-          believable: ge,
-          harmful: ge,
-          validation: ge,
-          summary: Ee,
-          not_misleading_tags: we,
-          trustworthy_sources: ge,
+      var te = T.a.d39e8b30,
+        ae = T.a.a91bb144,
+        ne = T.a.hb2bf967,
+        re = T.a.dc7a6625,
+        oe = T.a.af778d9e,
+        ie = T.a.ifd2c15f,
+        ce = T.a.f24ec219,
+        le = T.a.j679dcda,
+        se = { external: !0, pathname: 'https://twitter.github.io/birdwatch/note-examples' },
+        ue = T.a.b7476596,
+        de = T.a.df6c8291,
+        pe = T.a.h0e35524,
+        fe = ['believable', 'harmful', 'validation'],
+        be = ['classification', 'summary', 'trustworthy_sources'],
+        me = ['misleading_tags'].concat(fe),
+        he = ['not_misleading_tags'],
+        ye = ['classification', 'believable', 'harmful', 'validation', 'trustworthy_sources'],
+        ve = ['misleading_tags', 'not_misleading_tags'],
+        ge = T.a.b47b5a16,
+        we = T.a.i0e66c5a,
+        Ee = T.a.j8e3e3be,
+        Oe = T.a.f1e851ff,
+        _e = T.a.ff5dcac8,
+        Se = {
+          classification: we,
+          misleading_tags: Ee,
+          believable: we,
+          harmful: we,
+          validation: we,
+          summary: Oe,
+          not_misleading_tags: Ee,
+          trustworthy_sources: we,
         },
-        Se = C.a.abdd8d09,
-        Ce = { explanation: C.a.c097608d, source: C.a.g9cffe15 },
-        je = { explanation: C.a.ba25898c, source: C.a.e764d704 },
-        Te = { explanation: C.a.gb67e44c, source: C.a.d6b758a1 },
-        Ae = { defaultWeight: 1, maxWeightedTweetLength: 280, scale: 1, transformedURLLength: 1 },
-        Ie = function (e) {
-          var t = s.useContext(u.a).featureSwitches,
-            n = e.addToast,
-            r = e.analytics,
+        Ce = T.a.abdd8d09,
+        Te = { explanation: T.a.c097608d, source: T.a.g9cffe15 },
+        je = { explanation: T.a.ba25898c, source: T.a.e764d704 },
+        Ae = { explanation: T.a.gb67e44c, source: T.a.d6b758a1 },
+        Ie = { defaultWeight: 1, maxWeightedTweetLength: 280, scale: 1, transformedURLLength: 1 },
+        xe = function (e) {
+          var t = u.a.useContext(d.a).featureSwitches,
+            a = e.addToast,
+            n = e.analytics,
             o = e.createLocalApiErrorHandler,
             c = e.createNote,
-            p = e.draftData,
+            s = e.draftData,
             f = e.fetchNotes,
             b = e.fetchShowAliasSelfSelect,
             m = e.fetchTweet,
@@ -3299,34 +3324,34 @@
             g = e.saveFormData,
             w = e.showAliasSelfSelect,
             E = e.tweetId,
-            S = e.userAlias,
+            O = e.userAlias,
             C = function (e) {
-              return void 0 === e ? ge : ''
+              return void 0 === e ? we : ''
             },
-            H = function (e) {
-              return U()(e, Ae).weightedLength
+            T = function (e) {
+              return K()(e, Ie).weightedLength
             },
             F = function (e) {
-              if (!e) return Ee
-              var t = H(e.trim())
-              return t <= 0 ? Ee : t > 280 ? Oe : ''
+              if (!e) return Oe
+              var t = T(e.trim())
+              return t <= 0 ? Oe : t > 280 ? _e : ''
             },
-            W = s.useState(p || {}),
-            J = l()(W, 2),
-            Ie = J[0],
-            Pe = J[1],
-            Le = s.useState(
+            z = u.a.useState(s || {}),
+            U = l()(z, 2),
+            $ = U[0],
+            xe = U[1],
+            Le = u.a.useState(
               (function () {
-                var e = _e
+                var e = Se
                 return (
-                  he.forEach(function (t) {
-                    e[t] = C(Ie[t])
-                  }),
                   ye.forEach(function (t) {
-                    var n
-                    e[t] = (n = Ie[t]) && n.length > 0 ? '' : we
+                    e[t] = C($[t])
                   }),
-                  (e.summary = F(Ie.summary)),
+                  ve.forEach(function (t) {
+                    var a
+                    e[t] = (a = $[t]) && a.length > 0 ? '' : Ee
+                  }),
+                  (e.summary = F($.summary)),
                   e
                 )
               })(),
@@ -3334,42 +3359,42 @@
             Re = l()(Le, 2),
             De = Re[0],
             ke = Re[1],
-            Be = s.useState(!1),
+            Be = u.a.useState(!1),
             Ne = l()(Be, 2),
             Me = Ne[0],
             He = Ne[1],
-            Fe = s.useState(!1),
+            Fe = u.a.useState(!1),
             ze = l()(Fe, 2),
             We = ze[0],
             Ue = ze[1],
-            Ke = s.useState(null),
+            Ke = u.a.useState(null),
             Ve = l()(Ke, 2),
             Xe = Ve[0],
             qe = Ve[1],
-            Ge = s.useState(w),
+            Ge = u.a.useState(w),
             Ze = l()(Ge, 2),
             Qe = Ze[0],
             Ye = Ze[1],
             Je = '/i/birdwatch/'.concat(E, '/contribute_complete')
-          s.useEffect(
+          u.a.useEffect(
             function () {
               E && (m(E).catch(o()), f(E).catch(o()))
             },
             [o, f, m, E],
           ),
-            s.useEffect(
+            u.a.useEffect(
               function () {
                 h().catch(o())
               },
               [o, h],
             ),
-            s.useEffect(
+            u.a.useEffect(
               function () {
                 b().catch(o())
               },
               [o, b],
             ),
-            s.useEffect(
+            u.a.useEffect(
               function () {
                 Ye(w)
               },
@@ -3377,119 +3402,119 @@
             )
           var $e,
             et = function (e) {
-              var t = A.a.forTweet(E)
-              r.scribe({ element: e, action: 'click', data: { targets: [t] } })
+              var t = I.a.forTweet(E)
+              n.scribe({ element: e, action: 'click', data: { targets: [t] } })
             },
             tt = function (e) {
-              return function (t, n) {
+              return function (t, a) {
                 et(e),
-                  Pe(function (t) {
-                    var r = n
-                    'trustworthy_sources' === e && ('true' === n ? (r = !0) : 'false' === n && (r = !1))
-                    var a = $($({}, t), {}, i()({}, e, r))
-                    return g({ updates: a, tweetId: E }), a
+                  xe(function (t) {
+                    var n = a
+                    'trustworthy_sources' === e && ('true' === a ? (n = !0) : 'false' === a && (n = !1))
+                    var r = ee(ee({}, t), {}, i()({}, e, n))
+                    return g({ updates: r, tweetId: E }), r
                   }),
                   ke(function (t) {
-                    return $($({}, t), {}, i()({}, e, C(n)))
+                    return ee(ee({}, t), {}, i()({}, e, C(a)))
                   })
               }
             },
-            nt = function (e) {
+            at = function (e) {
               return function (t) {
                 return function () {
-                  Pe(function (n) {
-                    if (!n[e]) {
+                  xe(function (a) {
+                    if (!a[e]) {
                       ke(function (t) {
-                        return $($({}, t), {}, i()({}, e, ''))
+                        return ee(ee({}, t), {}, i()({}, e, ''))
                       })
-                      var r = $($({}, n), {}, i()({}, e, [t]))
-                      return g({ updates: r, tweetId: E }), r
+                      var n = ee(ee({}, a), {}, i()({}, e, [t]))
+                      return g({ updates: n, tweetId: E }), n
                     }
-                    var o = n[e].includes(t),
-                      c = n[e].filter(function (e) {
+                    var o = a[e].includes(t),
+                      c = a[e].filter(function (e) {
                         return e !== t
                       })
                     if (o) {
                       ke(function (t) {
-                        return c.length > 0 ? $($({}, t), {}, i()({}, e, '')) : $($({}, t), {}, i()({}, e, we))
+                        return c.length > 0 ? ee(ee({}, t), {}, i()({}, e, '')) : ee(ee({}, t), {}, i()({}, e, Ee))
                       })
-                      var l = $($({}, n), {}, i()({}, e, c))
+                      var l = ee(ee({}, a), {}, i()({}, e, c))
                       return g({ updates: l, tweetId: E }), l
                     }
                     ke(function (t) {
-                      return $($({}, t), {}, i()({}, e, ''))
+                      return ee(ee({}, t), {}, i()({}, e, ''))
                     })
-                    var s = $($({}, n), {}, i()({}, e, [].concat(a()(n[e]), [t])))
+                    var s = ee(ee({}, a), {}, i()({}, e, [].concat(r()(a[e]), [t])))
                     return g({ updates: s, tweetId: E }), s
                   })
                 }
               }
             },
-            rt = (null == Ie ? void 0 : Ie.misleading_tags) || [],
-            at = (null == Ie ? void 0 : Ie.not_misleading_tags) || [],
+            nt = (null == $ ? void 0 : $.misleading_tags) || [],
+            rt = (null == $ ? void 0 : $.not_misleading_tags) || [],
             ot = function (e) {
               return (
                 Me &&
                 '' !== e &&
-                s.createElement(
-                  P.a,
-                  { style: xe.errorContainer },
-                  s.createElement(K.a, { style: xe.errorIcon }),
-                  s.createElement(L.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }, e),
+                u.a.createElement(
+                  L.a,
+                  { style: Pe.errorContainer },
+                  u.a.createElement(V.a, { style: Pe.errorIcon }),
+                  u.a.createElement(R.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }, e),
                 )
               )
             },
-            it = s.createElement(
-              P.a,
+            it = u.a.createElement(
+              L.a,
               null,
-              s.createElement(
-                P.a,
-                { style: xe.questionSection },
-                s.createElement(
-                  P.a,
-                  { accessibilityLabel: Y.misleading_tags.label, accessibilityRole: 'group' },
-                  s.createElement(L.b, { weight: 'bold' }, Y.misleading_tags.label, ' '),
-                  Y.misleading_tags.options.map(function (e) {
-                    return s.createElement(R.a, {
-                      checked: rt.includes(e.value),
+              u.a.createElement(
+                L.a,
+                { style: Pe.questionSection },
+                u.a.createElement(
+                  L.a,
+                  { accessibilityLabel: J.misleading_tags.label, accessibilityRole: 'group' },
+                  u.a.createElement(R.b, { weight: 'bold' }, J.misleading_tags.label, ' '),
+                  J.misleading_tags.options.map(function (e) {
+                    return u.a.createElement(D.a, {
+                      checked: nt.includes(e.value),
                       key: e.value,
                       label: e.label,
-                      onChange: nt('misleading_tags')(e.value),
-                      style: xe.checkbox,
+                      onChange: at('misleading_tags')(e.value),
+                      style: Pe.checkbox,
                     })
                   }),
                   ot(De.misleading_tags),
                 ),
               ),
-              pe.map(function (e) {
-                return s.createElement(
-                  P.a,
-                  { key: Y[e].label, style: xe.questionSection },
-                  s.createElement(D.a, {
-                    label: Y[e].label,
+              fe.map(function (e) {
+                return u.a.createElement(
+                  L.a,
+                  { key: J[e].label, style: Pe.questionSection },
+                  u.a.createElement(k.a, {
+                    label: J[e].label,
                     name: e,
                     onChange: tt(e),
-                    options: Y[e].options,
-                    value: Ie[e],
+                    options: J[e].options,
+                    value: $[e],
                   }),
                   ot(De[e]),
                 )
               }),
             ),
-            ct = s.createElement(
-              P.a,
-              { style: xe.questionSection },
-              s.createElement(
-                P.a,
-                { accessibilityLabel: Y.not_misleading_tags.label, accessibilityRole: 'group' },
-                s.createElement(L.b, { weight: 'bold' }, Y.not_misleading_tags.label, ' '),
-                Y.not_misleading_tags.options.map(function (e) {
-                  return s.createElement(R.a, {
-                    checked: at.includes(e.value),
+            ct = u.a.createElement(
+              L.a,
+              { style: Pe.questionSection },
+              u.a.createElement(
+                L.a,
+                { accessibilityLabel: J.not_misleading_tags.label, accessibilityRole: 'group' },
+                u.a.createElement(R.b, { weight: 'bold' }, J.not_misleading_tags.label, ' '),
+                J.not_misleading_tags.options.map(function (e) {
+                  return u.a.createElement(D.a, {
+                    checked: rt.includes(e.value),
                     key: e.value,
                     label: e.label,
-                    onChange: nt('not_misleading_tags')(e.value),
-                    style: xe.checkbox,
+                    onChange: at('not_misleading_tags')(e.value),
+                    style: Pe.checkbox,
                   })
                 }),
                 ot(De.not_misleading_tags),
@@ -3504,109 +3529,109 @@
               )
             },
             st = function () {
-              var e = Ie.summary || ''
-              return !(!lt(fe) || '' !== F(e)) && !!((dt === Z && lt(be)) || (dt === Q && lt(me)))
+              var e = $.summary || ''
+              return !(!lt(be) || '' !== F(e)) && !!((dt === Q && lt(me)) || (dt === Y && lt(he)))
             },
             ut = function () {
               Ue(!0),
-                c(E, Ie)
+                c(E, $)
                   .then(function (e) {
                     if (e && e.error) {
                       var t = ''.concat(e.error, ': ').concat(JSON.stringify(e.reason || ''))
-                      n({ text: t, withAutoDismiss: !1, withClearButton: !0 }),
-                        Object(T.a)('BirdwatchNoteCreationFailure: '.concat(t)),
+                      a({ text: t, withAutoDismiss: !1, withClearButton: !0 }),
+                        Object(A.a)('BirdwatchNoteCreationFailure: '.concat(t)),
                         et('submit_failed'),
                         Ue(!1)
                     } else g({ updates: {}, tweetId: E }), y.replace(Je)
                   })
                   .catch(function (e) {
-                    o({ defaultToast: { text: de, withAutoDismiss: !1, withClearButton: !0 }, showToast: !0 })(e),
+                    o({ defaultToast: { text: pe, withAutoDismiss: !1, withClearButton: !0 }, showToast: !0 })(e),
                       Ue(!1),
                       et('submit_failed'),
-                      Object(T.a)('BirdwatchNoteCreationFailure: '.concat(JSON.stringify(e)))
+                      Object(A.a)('BirdwatchNoteCreationFailure: '.concat(JSON.stringify(e)))
                   })
             },
-            dt = Ie.classification,
-            pt = Ie.trustworthy_sources,
+            dt = $.classification,
+            pt = $.trustworthy_sources,
             ft = void 0 === pt ? '' : pt ? 'true' : 'false',
-            bt = dt === Q,
+            bt = dt === Y,
             mt = !t.isTrue('responsive_web_birdwatch_hcomp_user'),
             ht = t.isTrue('responsive_web_birdwatch_aliases_enabled'),
-            yt = S && Object(O.a)(S, !0),
-            vt = s.createElement(
-              s.Fragment,
+            yt = O && Object(_.a)(O, !0),
+            vt = u.a.createElement(
+              u.a.Fragment,
               null,
-              s.createElement(
-                P.a,
-                { style: xe.tweetContainer },
-                s.createElement(I.b, { displayPromotedContent: !1, tweetId: E, withCurationMenu: !1 }),
+              u.a.createElement(
+                L.a,
+                { style: Pe.tweetContainer },
+                u.a.createElement(x.b, { displayPromotedContent: !1, tweetId: E, withCurationMenu: !1 }),
               ),
-              s.createElement(
-                P.a,
-                { style: xe.formQuestions },
-                s.createElement(
-                  P.a,
-                  { style: xe.questionSection },
-                  s.createElement(D.a, {
-                    label: Y.classification.label,
+              u.a.createElement(
+                L.a,
+                { style: Pe.formQuestions },
+                u.a.createElement(
+                  L.a,
+                  { style: Pe.questionSection },
+                  u.a.createElement(k.a, {
+                    label: J.classification.label,
                     name: 'misleading_radio',
                     onChange: tt('classification'),
-                    options: Y.classification.options,
+                    options: J.classification.options,
                     value: dt,
                   }),
                   ot(De.classification),
                 ),
-                dt === Z && it,
+                dt === Q && it,
                 bt && ct,
                 !!dt &&
-                  s.createElement(
-                    s.Fragment,
+                  u.a.createElement(
+                    u.a.Fragment,
                     null,
-                    s.createElement(
-                      P.a,
-                      { style: xe.questionSection },
-                      s.createElement(
-                        P.a,
-                        { accessibilityLabel: bt ? ie : oe, accessibilityRole: 'group' },
-                        s.createElement(L.b, { weight: 'bold' }, bt ? ie : oe),
-                        s.createElement(L.b, { link: le }, ce),
-                        s.createElement(k.a, {
-                          calculateLength: H,
-                          helperText: se,
+                    u.a.createElement(
+                      L.a,
+                      { style: Pe.questionSection },
+                      u.a.createElement(
+                        L.a,
+                        { accessibilityLabel: bt ? ce : ie, accessibilityRole: 'group' },
+                        u.a.createElement(R.b, { weight: 'bold' }, bt ? ce : ie),
+                        u.a.createElement(R.b, { link: se }, le),
+                        u.a.createElement(B.a, {
+                          calculateLength: T,
+                          helperText: ue,
                           invalid: !!De.summary && Me,
-                          label: ue,
+                          label: de,
                           maxNumberOfLines: 20,
                           multiline: !0,
                           name: 'FormTextInput',
                           numberOfLines: 5,
                           onBlur: function (e) {
-                            g({ updates: Ie, tweetId: E })
+                            g({ updates: $, tweetId: E })
                           },
                           onChange: function (e) {
                             var t = e.target.value
-                            Pe(function (e) {
-                              return $($({}, e), {}, { summary: t })
+                            xe(function (e) {
+                              return ee(ee({}, e), {}, { summary: t })
                             }),
                               ke(function (e) {
-                                return $($({}, e), {}, { summary: F(t) })
+                                return ee(ee({}, e), {}, { summary: F(t) })
                               })
                           },
-                          style: xe.textInput,
+                          style: Pe.textInput,
                           validLength: 280,
-                          value: null == Ie ? void 0 : Ie.summary,
+                          value: null == $ ? void 0 : $.summary,
                         }),
                         ot(De.summary),
                       ),
                     ),
-                    s.createElement(
-                      P.a,
-                      { style: xe.questionSection },
-                      s.createElement(D.a, {
-                        label: Y.trustworthy_sources.label,
+                    u.a.createElement(
+                      L.a,
+                      { style: Pe.questionSection },
+                      u.a.createElement(k.a, {
+                        label: J.trustworthy_sources.label,
                         name: 'trustworthy_sources_radio',
                         onChange: tt('trustworthy_sources'),
                         options:
-                          (($e = Y.trustworthy_sources.options),
+                          (($e = J.trustworthy_sources.options),
                           $e.map(function (e) {
                             return { label: e.label, value: e.value.toString() }
                           })),
@@ -3616,37 +3641,37 @@
                     ),
                     mt &&
                       !ht &&
-                      s.createElement(P.a, { style: xe.callout }, s.createElement(B.a, { Icon: V.a, text: ne })),
+                      u.a.createElement(L.a, { style: Pe.callout }, u.a.createElement(N.a, { Icon: X.a, text: ne })),
                     mt &&
                       ht &&
                       yt &&
-                      s.createElement(
-                        P.a,
-                        { style: xe.callout },
-                        s.createElement(B.a, {
-                          Icon: X.a,
+                      u.a.createElement(
+                        L.a,
+                        { style: Pe.callout },
+                        u.a.createElement(N.a, {
+                          Icon: q.a,
                           headline: re({ displayAlias: yt }),
-                          text: ae,
+                          text: oe,
                           withThumbnail: !0,
                         }),
                       ),
                     Me &&
                       !st() &&
-                      s.createElement(
-                        P.a,
-                        { style: xe.callout },
-                        s.createElement(B.a, { Icon: K.a, text: ve, type: 'danger' }),
+                      u.a.createElement(
+                        L.a,
+                        { style: Pe.callout },
+                        u.a.createElement(N.a, { Icon: V.a, text: ge, type: 'danger' }),
                       ),
-                    s.createElement(
-                      N.a,
+                    u.a.createElement(
+                      M.a,
                       {
                         disabled: We,
                         onPress: function () {
                           et('submit'), He(!0)
                           var e = (function () {
-                            var e = z()(Ie.summary)
+                            var e = W()($.summary)
                             if (0 === (null == e ? void 0 : e.length)) return 'source'
-                            var t = Ie.summary
+                            var t = $.summary
                             return (
                               e.forEach(function (e) {
                                 if (!t) return 'explanation'
@@ -3657,61 +3682,61 @@
                           })()
                           st() && (e ? qe(e) : ut())
                         },
-                        style: xe.submitButton,
+                        style: Pe.submitButton,
                         type: 'brandFilled',
                       },
-                      te,
+                      ae,
                     ),
                   ),
               ),
             )
           return ht && Qe
-            ? s.createElement(d.a, {
+            ? u.a.createElement(p.a, {
                 onAliasSelected: function (e) {
                   Ye(e)
                 },
               })
             : v
-            ? s.createElement(j.a, { to: Je })
+            ? u.a.createElement(j.a, { to: Je })
             : Xe
-            ? s.createElement(M.a, {
-                actionLabel: Se,
-                graphic: 'source' === Xe ? q.a : G.a,
+            ? u.a.createElement(H.a, {
+                actionLabel: Ce,
+                graphic: 'source' === Xe ? G.a : Z.a,
                 graphicDisplayMode: 'thumbnail',
-                headline: Ce[Xe],
+                headline: Te[Xe],
                 onAction: function () {
                   et('nudge_edit'), qe(null)
                 },
                 onClose: function () {},
                 onImpression: function () {
-                  var e = A.a.forTweet(E)
-                  r.scribe({ element: 'nudge', action: 'show', data: { targets: [e] } })
+                  var e = I.a.forTweet(E)
+                  n.scribe({ element: 'nudge', action: 'show', data: { targets: [e] } })
                 },
                 onTertiaryAction: function () {
                   et('nudge_submit'), ut()
                 },
                 subtext: je[Xe],
-                tertiaryActionLabel: Te[Xe],
+                tertiaryActionLabel: Ae[Xe],
                 withCloseButton: !1,
               })
-            : s.createElement(
-                _.b,
+            : u.a.createElement(
+                S.b,
                 {
                   history: y,
                   onBackClick: function () {
                     et('close'), y.goBack()
                   },
-                  renderHeader: x.b.isTwitterApp()
+                  renderHeader: P.b.isTwitterApp()
                     ? function () {
                         return null
                       }
                     : void 0,
-                  title: ee,
+                  title: te,
                 },
-                s.createElement(P.a, { style: xe.contentWrapper }, vt),
+                u.a.createElement(L.a, { style: Pe.contentWrapper }, vt),
               )
         },
-        xe = H.a.create(function (e) {
+        Pe = F.a.create(function (e) {
           return {
             callout: { marginTop: e.spaces.space12 },
             checkbox: { paddingVertical: e.spaces.space8 },
@@ -3730,160 +3755,163 @@
             },
           }
         }),
-        Pe = E(Ie)
-      t.default = Pe
+        Le = O(xe)
+      t.default = Le
     },
-    YI7k: function (e, t, n) {
+    YI7k: function (e, t, a) {
       'use strict'
-      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
-      var r = n('KEM+'),
-        a = n.n(r),
-        o = n('ERkP'),
-        i = n('Lsrn'),
-        c = n('k/Ka')
-      function l(e, t) {
-        var n = Object.keys(e)
+      a('+KXO'), a('1t7P'), a('LW0h'), a('daRM'), a('jwue'), a('+oxZ'), a('FtHn')
+      var n = a('KEM+'),
+        r = a.n(n),
+        o = a('ERkP'),
+        i = a.n(o),
+        c = a('Lsrn'),
+        l = a('k/Ka')
+      function s(e, t) {
+        var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
+          var n = Object.getOwnPropertySymbols(e)
           t &&
-            (r = r.filter(function (t) {
+            (n = n.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            n.push.apply(n, r)
+            a.push.apply(a, n)
         }
-        return n
+        return a
       }
-      function s(e) {
+      function u(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
+          var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? l(Object(n), !0).forEach(function (t) {
-                a()(e, t, n[t])
+            ? s(Object(a), !0).forEach(function (t) {
+                r()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : l(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : s(Object(a)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var u = function () {
+      var d = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(c.a)(
+        return Object(l.a)(
           'svg',
-          s(
-            s({}, e),
+          u(
+            u({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [i.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [c.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          o.createElement(
+          i.a.createElement(
             'g',
             null,
-            o.createElement('path', {
+            i.a.createElement('path', {
               d: 'M21.5 11.25h-3.25v-7C18.25 3.01 17.24 2 16 2H4C2.76 2 1.75 3.01 1.75 4.25v15.5C1.75 20.99 2.76 22 4 22h15.5c1.517 0 2.75-1.233 2.75-2.75V12c0-.414-.336-.75-.75-.75zm-10.75 5.5H6c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h4.75c.414 0 .75.336.75.75s-.336.75-.75.75zm3.25-4H6c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h8c.414 0 .75.336.75.75s-.336.75-.75.75zm0-4H6c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h8c.414 0 .75.336.75.75s-.336.75-.75.75zm6.75 10.5c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25v-6.5h2.5v6.5z',
             }),
           ),
         )
       }
-      ;(u.metadata = { width: 24, height: 24 }), (t.a = u)
+      ;(d.metadata = { width: 24, height: 24 }), (t.a = d)
     },
-    Yyvu: function (e, t, n) {
+    Yyvu: function (e, t, a) {
       'use strict'
-      n.r(t),
-        n.d(t, 'NotAvailablePage', function () {
-          return y
+      a.r(t),
+        a.d(t, 'NotAvailablePage', function () {
+          return v
         })
-      var r = n('ERkP'),
-        a = n('vZpt'),
-        o = n('L5MV'),
-        i = n('3XMw'),
-        c = n.n(i),
-        l = n('VS6U'),
-        s = n('MWbm'),
-        u = n('FIs5'),
-        d = n('rHpw'),
-        p = c.a.b5711f09,
-        f = c.a.e96677aa,
-        b = c.a.f026d2ee,
-        m = c.a.i859a9d3,
-        h = { external: !0, pathname: 'https://twitter.github.io/birdwatch/join' },
-        y = function (e) {
+      var n = a('ERkP'),
+        r = a.n(n),
+        o = a('vZpt'),
+        i = a('L5MV'),
+        c = a('3XMw'),
+        l = a.n(c),
+        s = a('VS6U'),
+        u = a('MWbm'),
+        d = a('FIs5'),
+        p = a('rHpw'),
+        f = l.a.b5711f09,
+        b = l.a.e96677aa,
+        m = l.a.f026d2ee,
+        h = l.a.i859a9d3,
+        y = { external: !0, pathname: 'https://twitter.github.io/birdwatch/join' },
+        v = function (e) {
           var t = e.history,
-            n = r.createElement(
-              s.a,
-              { style: v.contentWrapper },
-              r.createElement(u.a, {
-                buttonLink: h,
-                buttonText: m,
+            a = r.a.createElement(
+              u.a,
+              { style: g.contentWrapper },
+              r.a.createElement(d.a, {
+                buttonLink: y,
+                buttonText: h,
                 buttonType: 'brandOutlined',
-                header: f,
-                message: b,
+                header: b,
+                message: m,
               }),
             )
-          return r.createElement(l.a, {
-            TabBar: o.a,
+          return r.a.createElement(s.a, {
+            TabBar: i.a,
             history: t,
-            logoButton: r.createElement(r.Fragment, null),
-            primaryContent: n,
-            sidebarContent: r.createElement(a.a, null),
-            title: p,
+            logoButton: r.a.createElement(r.a.Fragment, null),
+            primaryContent: a,
+            sidebarContent: r.a.createElement(o.a, null),
+            title: f,
             withTweetButton: !1,
           })
         },
-        v = d.a.create(function (e) {
+        g = p.a.create(function (e) {
           return { contentWrapper: { marginHorizontal: '100px' } }
         })
-      t.default = y
+      t.default = v
     },
-    ZD0R: function (e, t, n) {
+    ZD0R: function (e, t, a) {
       'use strict'
-      var r,
-        a,
-        o = n('VrFO'),
-        i = n.n(o),
-        c = n('Y9Ll'),
-        l = n.n(c),
-        s = n('1Pcy'),
-        u = n.n(s),
-        d = n('5Yy7'),
-        p = n.n(d),
-        f = n('N+ot'),
-        b = n.n(f),
-        m = n('AuHH'),
-        h = n.n(m),
-        y = n('KEM+'),
-        v = n.n(y),
-        g = n('ddV6'),
-        w = n.n(g),
-        E = (n('jQ3i'), n('x4t0'), n('2G9S'), n('OZaJ'), n('ERkP')),
-        O = (n('+KXO'), n('1t7P'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('RhWx')),
-        _ = n.n(O),
-        S = (n('z84I'), n('7x/C'), n('DZ+c'), n('LW0h'), n('v6aA')),
-        C = n('MvLc'),
-        j = n('rxPX'),
-        T = n('0KEI'),
-        A = Object(j.a)()
+      var n,
+        r,
+        o = a('VrFO'),
+        i = a.n(o),
+        c = a('Y9Ll'),
+        l = a.n(c),
+        s = a('1Pcy'),
+        u = a.n(s),
+        d = a('5Yy7'),
+        p = a.n(d),
+        f = a('N+ot'),
+        b = a.n(f),
+        m = a('AuHH'),
+        h = a.n(m),
+        y = a('KEM+'),
+        v = a.n(y),
+        g = a('ddV6'),
+        w = a.n(g),
+        E = (a('jQ3i'), a('x4t0'), a('2G9S'), a('OZaJ'), a('ERkP')),
+        O = a.n(E),
+        _ = (a('+KXO'), a('1t7P'), a('daRM'), a('jwue'), a('+oxZ'), a('FtHn'), a('RhWx')),
+        S = a.n(_),
+        C = (a('z84I'), a('7x/C'), a('DZ+c'), a('LW0h'), a('v6aA')),
+        T = a('MvLc'),
+        j = a('rxPX'),
+        A = a('0KEI'),
+        I = Object(j.a)()
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(T.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
-              createRating: C.c,
-              deleteRating: C.e,
+              createLocalApiErrorHandler: Object(A.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
+              createRating: T.c,
+              deleteRating: T.e,
             }
           })
           .withAnalytics({ component: 'birdwatch_rating' }),
-        I = n('ACNv'),
-        x = n('YeIG'),
-        P = n('MWbm'),
-        L = n('t62R'),
-        R = n('XiMS'),
-        D = n('fyvP'),
-        k = n('/yvb'),
-        B = n('IG7M'),
-        N = n('rHpw'),
-        M = (n('yH/f'), n('3XMw')),
-        H = n.n(M),
-        F = Object.freeze({
+        x = a('ACNv'),
+        P = a('YeIG'),
+        L = a('MWbm'),
+        R = a('t62R'),
+        D = a('XiMS'),
+        k = a('fyvP'),
+        B = a('/yvb'),
+        N = a('IG7M'),
+        M = a('rHpw'),
+        H = (a('yH/f'), a('3XMw')),
+        F = a.n(H),
+        z = Object.freeze({
           Informative: 'Informative',
           Clear: 'Clear',
           Empathetic: 'Empathetic',
@@ -3894,17 +3922,17 @@
           UnbiasedLanguage: 'UnbiasedLanguage',
           Other: 'Other',
         }),
-        z = [F.Informative, F.Clear, F.Empathetic, F.GoodSources, F.UniqueContext, F.Other],
-        W =
-          ((r = {}),
-          v()(r, F.Clear, H.a.dfa44ddd),
-          v()(r, F.Empathetic, H.a.hc2b6a7e),
-          v()(r, F.GoodSources, H.a.a7bc3191),
-          v()(r, F.Informative, H.a.f3e6f0a9),
-          v()(r, F.Other, H.a.c365dcc5),
-          v()(r, F.UniqueContext, H.a.c5d55592),
-          r),
-        U = Object.freeze({
+        W = [z.Informative, z.Clear, z.Empathetic, z.GoodSources, z.UniqueContext, z.Other],
+        U =
+          ((n = {}),
+          v()(n, z.Clear, F.a.dfa44ddd),
+          v()(n, z.Empathetic, F.a.hc2b6a7e),
+          v()(n, z.GoodSources, F.a.a7bc3191),
+          v()(n, z.Informative, F.a.f3e6f0a9),
+          v()(n, z.Other, F.a.c365dcc5),
+          v()(n, z.UniqueContext, F.a.c5d55592),
+          n),
+        K = Object.freeze({
           NoSources: 'NoSources',
           Incorrect: 'Incorrect',
           Outdated: 'Outdated',
@@ -3919,126 +3947,126 @@
           NoteNotNeeded: 'NoteNotNeeded',
           Other: 'Other',
         }),
-        K = [
-          U.NoSources,
-          U.Incorrect,
-          U.Outdated,
-          U.Biased,
-          U.MissingKeyPoints,
-          U.Unclear,
-          U.Rude,
-          U.OffTopic,
-          U.TwitterViolationAny,
-          U.Other,
+        V = [
+          K.NoSources,
+          K.Incorrect,
+          K.Outdated,
+          K.Biased,
+          K.MissingKeyPoints,
+          K.Unclear,
+          K.Rude,
+          K.OffTopic,
+          K.TwitterViolationAny,
+          K.Other,
         ],
-        V =
-          ((a = {}),
-          v()(a, U.Biased, H.a.bbe8b4ac),
-          v()(a, U.Incorrect, H.a.heb35e12),
-          v()(a, U.MissingKeyPoints, H.a.c34e0b2b),
-          v()(a, U.NoSources, H.a.a802709f),
-          v()(a, U.OffTopic, H.a.dd1f17e9),
-          v()(a, U.Outdated, H.a.if966b54),
-          v()(a, U.Other, H.a.c365dcc5),
-          v()(a, U.Rude, H.a.d0ba7db4),
-          v()(a, U.TwitterViolationAny, H.a.aa520d31),
-          v()(a, U.Unclear, H.a.e25e5ed1),
-          a),
-        X = n('hiGS'),
-        q = n('TW8A'),
-        G = n('WtWS')
-      function Z(e, t) {
-        var n = Object.keys(e)
+        X =
+          ((r = {}),
+          v()(r, K.Biased, F.a.bbe8b4ac),
+          v()(r, K.Incorrect, F.a.heb35e12),
+          v()(r, K.MissingKeyPoints, F.a.c34e0b2b),
+          v()(r, K.NoSources, F.a.a802709f),
+          v()(r, K.OffTopic, F.a.dd1f17e9),
+          v()(r, K.Outdated, F.a.if966b54),
+          v()(r, K.Other, F.a.c365dcc5),
+          v()(r, K.Rude, F.a.d0ba7db4),
+          v()(r, K.TwitterViolationAny, F.a.aa520d31),
+          v()(r, K.Unclear, F.a.e25e5ed1),
+          r),
+        q = a('hiGS'),
+        G = a('TW8A'),
+        Z = a('WtWS')
+      function Q(e, t) {
+        var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
+          var n = Object.getOwnPropertySymbols(e)
           t &&
-            (r = r.filter(function (t) {
+            (n = n.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            n.push.apply(n, r)
+            a.push.apply(a, n)
         }
-        return n
+        return a
       }
-      function Q(e) {
+      function Y(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
+          var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Z(Object(n), !0).forEach(function (t) {
-                v()(e, t, n[t])
+            ? Q(Object(a), !0).forEach(function (t) {
+                v()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : Z(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : Q(Object(a)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var Y = H.a.ed5156f9,
-        J = [
-          { label: H.a.b7ec04f3, value: !0 },
-          { label: H.a.i62a03aa, value: !1 },
+      var J = F.a.ed5156f9,
+        $ = [
+          { label: F.a.b7ec04f3, value: !0 },
+          { label: F.a.i62a03aa, value: !1 },
         ],
-        $ = {
-          helpful: { label: H.a.a7338bc2, options: J },
-          agree: { label: H.a.d93489e6, options: J },
+        ee = {
+          helpful: { label: F.a.a7338bc2, options: $ },
+          agree: { label: F.a.d93489e6, options: $ },
           helpful_tags: {
-            label: H.a.j63844f5,
-            options: z.map(function (e) {
-              return { label: W[e], value: e }
+            label: F.a.j63844f5,
+            options: W.map(function (e) {
+              return { label: U[e], value: e }
             }),
           },
           not_helpful_tags: {
-            label: H.a.e0806a48,
-            options: K.map(function (e) {
-              return { label: V[e], value: e }
+            label: F.a.e0806a48,
+            options: V.map(function (e) {
+              return { label: X[e], value: e }
             }),
           },
         },
-        ee = H.a.a91bb144,
-        te = H.a.abd845fd,
-        ne = H.a.d96cf7cd,
-        re = H.a.j6aa6172,
-        ae = H.a.i411275f,
-        oe = H.a.d1a479a8,
-        ie = function (e) {
+        te = F.a.a91bb144,
+        ae = F.a.abd845fd,
+        ne = F.a.d96cf7cd,
+        re = F.a.j6aa6172,
+        oe = F.a.i411275f,
+        ie = F.a.d1a479a8,
+        ce = function (e) {
           return e.map(function (e) {
             return { label: e.label, value: e.value.toString() }
           })
         },
-        ce = E.createElement(L.b, { weight: 'bold' }),
-        le = E.createElement(L.b, { weight: 'bold' }),
-        se = E.createElement(L.b, { weight: 'bold' }),
-        ue = E.createElement(L.b, { weight: 'bold' }),
-        de = E.createElement(H.a.I18NFormatMessage, { $i18n: 'if77e237' }, E.cloneElement(se, null, H.a.a43beaf2)),
-        pe = E.createElement(H.a.I18NFormatMessage, { $i18n: 'c312ca7d' }, E.cloneElement(ue, null, H.a.cb1d0ef3)),
-        fe = E.createElement(H.a.I18NFormatMessage, { $i18n: 'j575fa79' }, E.cloneElement(ce, null, H.a.he5f1491)),
-        be = E.createElement(H.a.I18NFormatMessage, { $i18n: 'h61f9ad3' }, E.cloneElement(le, null, H.a.a67e7d91)),
-        me = E.createElement(
-          H.a.I18NFormatMessage,
+        le = O.a.createElement(R.b, { weight: 'bold' }),
+        se = O.a.createElement(R.b, { weight: 'bold' }),
+        ue = O.a.createElement(R.b, { weight: 'bold' }),
+        de = O.a.createElement(R.b, { weight: 'bold' }),
+        pe = O.a.createElement(F.a.I18NFormatMessage, { $i18n: 'if77e237' }, O.a.cloneElement(ue, null, F.a.a43beaf2)),
+        fe = O.a.createElement(F.a.I18NFormatMessage, { $i18n: 'c312ca7d' }, O.a.cloneElement(de, null, F.a.cb1d0ef3)),
+        be = O.a.createElement(F.a.I18NFormatMessage, { $i18n: 'j575fa79' }, O.a.cloneElement(le, null, F.a.he5f1491)),
+        me = O.a.createElement(F.a.I18NFormatMessage, { $i18n: 'h61f9ad3' }, O.a.cloneElement(se, null, F.a.a67e7d91)),
+        he = O.a.createElement(
+          F.a.I18NFormatMessage,
           { $i18n: 'd570f1d9' },
-          E.cloneElement(se, null, H.a.c9c4850a),
-          E.cloneElement(ce, null, H.a.ffa975fd),
+          O.a.cloneElement(ue, null, F.a.c9c4850a),
+          O.a.cloneElement(le, null, F.a.ffa975fd),
         ),
-        he = E.createElement(
-          H.a.I18NFormatMessage,
+        ye = O.a.createElement(
+          F.a.I18NFormatMessage,
           { $i18n: 'c6cb9513' },
-          E.cloneElement(se, null, H.a.c9701442),
-          E.cloneElement(le, null, H.a.d2be9800),
+          O.a.cloneElement(ue, null, F.a.c9701442),
+          O.a.cloneElement(se, null, F.a.d2be9800),
         ),
-        ye = E.createElement(
-          H.a.I18NFormatMessage,
+        ve = O.a.createElement(
+          F.a.I18NFormatMessage,
           { $i18n: 'fe957a43' },
-          E.cloneElement(ue, null, H.a.cf87d556),
-          E.cloneElement(ce, null, H.a.hec80c95),
+          O.a.cloneElement(de, null, F.a.cf87d556),
+          O.a.cloneElement(le, null, F.a.hec80c95),
         ),
-        ve = E.createElement(
-          H.a.I18NFormatMessage,
+        ge = O.a.createElement(
+          F.a.I18NFormatMessage,
           { $i18n: 'gbfec7fd' },
-          E.cloneElement(ue, null, H.a.bfa5f565),
-          E.cloneElement(le, null, H.a.eb1cc800),
+          O.a.cloneElement(de, null, F.a.bfa5f565),
+          O.a.cloneElement(se, null, F.a.eb1cc800),
         ),
-        ge = N.a.create(function (e) {
+        we = M.a.create(function (e) {
           return {
             button: { alignSelf: 'center' },
             checkbox: { paddingVertical: e.spaces.space8 },
@@ -4049,176 +4077,176 @@
             showSubmittedRating: { flexDirection: 'row', justifyContent: 'space-between' },
           }
         }),
-        we = A(function (e) {
+        Ee = I(function (e) {
           var t = e.analytics,
-            n = e.createLocalApiErrorHandler,
-            r = e.createRating,
-            a = e.deleteRating,
+            a = e.createLocalApiErrorHandler,
+            n = e.createRating,
+            r = e.deleteRating,
             o = e.noteId,
             i = e.rating,
-            c = E.useContext(S.a).featureSwitches,
+            c = O.a.useContext(C.a).featureSwitches,
             l = i || {},
-            s = E.useState(l),
+            s = O.a.useState(l),
             u = w()(s, 2),
             d = u[0],
             p = u[1],
-            f = E.useState(Object(x.a)(i)),
+            f = O.a.useState(Object(P.a)(i)),
             b = w()(f, 2),
             m = b[0],
             h = b[1],
             y = function (e) {
-              return function (t, n) {
+              return function (t, a) {
                 p(function (t) {
-                  var r = n
-                  return 'true' === n ? (r = !0) : 'false' === n && (r = !1), Q(Q({}, t), {}, v()({}, e, r))
+                  var n = a
+                  return 'true' === a ? (n = !0) : 'false' === a && (n = !1), Y(Y({}, t), {}, v()({}, e, n))
                 })
               }
             },
             g = function (e) {
               var t = d[e] || []
-              return E.createElement(
-                P.a,
-                { style: ge.checkboxContainer },
-                E.createElement(L.b, { weight: 'bold' }, $[e].label),
-                $[e].options.map(function (n) {
-                  return E.createElement(R.a, {
-                    checked: t.includes(n.value),
-                    key: n.value,
-                    label: n.label,
-                    onChange: j(e)(n.value),
-                    style: ge.checkbox,
+              return O.a.createElement(
+                L.a,
+                { style: we.checkboxContainer },
+                O.a.createElement(R.b, { weight: 'bold' }, ee[e].label),
+                ee[e].options.map(function (a) {
+                  return O.a.createElement(D.a, {
+                    checked: t.includes(a.value),
+                    key: a.value,
+                    label: a.label,
+                    onChange: T(e)(a.value),
+                    style: we.checkbox,
                   })
                 }),
               )
             },
-            O = function () {
-              T('delete'),
-                a(o)
+            E = function () {
+              j('delete'),
+                r(o)
                   .then(function (e) {
                     'Done' === e.birdwatchnote_rating_delete && (p({}), h(!0))
                   })
-                  .catch(n())
+                  .catch(a())
             },
-            C = function () {
-              T('edit'), h(!0)
+            _ = function () {
+              j('edit'), h(!0)
             },
-            j = function (e) {
+            T = function (e) {
               return function (t) {
                 return function () {
-                  p(function (n) {
-                    return n[e]
-                      ? n[e].includes(t)
-                        ? Q(
-                            Q({}, n),
+                  p(function (a) {
+                    return a[e]
+                      ? a[e].includes(t)
+                        ? Y(
+                            Y({}, a),
                             {},
                             v()(
                               {},
                               e,
-                              n[e].filter(function (e) {
+                              a[e].filter(function (e) {
                                 return e !== t
                               }),
                             ),
                           )
-                        : Q(Q({}, n), {}, v()({}, e, [].concat(_()(n[e]), [t])))
-                      : Q(Q({}, n), {}, v()({}, e, [t]))
+                        : Y(Y({}, a), {}, v()({}, e, [].concat(S()(a[e]), [t])))
+                      : Y(Y({}, a), {}, v()({}, e, [t]))
                   })
                 }
               }
             },
-            T = function (e) {
+            j = function (e) {
               t.scribeAction('click_'.concat(e))
             },
             A = void 0 !== (null == d ? void 0 : d.helpful),
-            N = A ? (null != d && d.helpful ? 'true' : 'false') : '',
+            I = A ? (null != d && d.helpful ? 'true' : 'false') : '',
             M = void 0 !== (null == d ? void 0 : d.agree),
             H = M ? (null != d && d.agree ? 'true' : 'false') : ''
           return m
-            ? E.createElement(
-                P.a,
-                { style: ge.root },
-                E.createElement(D.a, {
-                  label: $.helpful.label,
-                  name: $.helpful.label + o,
+            ? O.a.createElement(
+                L.a,
+                { style: we.root },
+                O.a.createElement(k.a, {
+                  label: ee.helpful.label,
+                  name: ee.helpful.label + o,
                   onChange: y('helpful'),
-                  options: ie(J),
-                  value: N,
+                  options: ce($),
+                  value: I,
                 }),
                 A && (null != d && d.helpful ? g('helpful_tags') : g('not_helpful_tags')),
-                E.createElement(D.a, {
-                  label: $.agree.label,
-                  name: $.agree.label + o,
+                O.a.createElement(k.a, {
+                  label: ee.agree.label,
+                  name: ee.agree.label + o,
                   onChange: y('agree'),
-                  options: ie(J),
+                  options: ce($),
                   value: H,
                 }),
-                !Object(x.a)(d) &&
-                  E.createElement(
-                    k.a,
+                !Object(P.a)(d) &&
+                  O.a.createElement(
+                    B.a,
                     {
                       onClick: function () {
-                        T('submit'),
+                        j('submit'),
                           d &&
-                            r(o, d)
+                            n(o, d)
                               .then(function () {
                                 h(!1)
                               })
                               .catch(
-                                n({
-                                  defaultToast: { text: Y, withAutoDismiss: !1, withClearButton: !0 },
+                                a({
+                                  defaultToast: { text: J, withAutoDismiss: !1, withClearButton: !0 },
                                   showToast: !0,
                                 }),
                               )
                       },
-                      style: ge.button,
+                      style: we.button,
                       type: 'brandFilled',
                     },
-                    ee,
+                    te,
                   ),
               )
-            : E.createElement(
-                P.a,
-                { style: [ge.root, ge.showSubmittedRating] },
-                E.createElement(
-                  P.a,
-                  { style: ge.row },
-                  E.createElement(G.a, { style: ge.icon }),
-                  E.createElement(
-                    L.b,
+            : O.a.createElement(
+                L.a,
+                { style: [we.root, we.showSubmittedRating] },
+                O.a.createElement(
+                  L.a,
+                  { style: we.row },
+                  O.a.createElement(Z.a, { style: we.icon }),
+                  O.a.createElement(
+                    R.b,
                     { size: 'subtext2' },
                     null != d && d.helpful && !M
-                      ? de
+                      ? pe
                       : (null != d && d.helpful) || M
                       ? null != d && d.agree && !A
-                        ? fe
+                        ? be
                         : (null != d && d.agree) || A
                         ? null != d && d.helpful && null != d && d.agree
-                          ? me
+                          ? he
                           : null == d || !d.helpful || (null != d && d.agree)
                           ? (null != d && d.helpful) || null == d || !d.agree
                             ? (null != d && d.helpful) || (null != d && d.agree)
                               ? void 0
-                              : ve
-                            : ye
-                          : he
-                        : be
-                      : pe,
+                              : ge
+                            : ve
+                          : ye
+                        : me
+                      : fe,
                   ),
                 ),
-                E.createElement(B.a, {
+                O.a.createElement(N.a, {
                   renderActionMenu: function (e) {
-                    return E.createElement(I.default, {
+                    return O.a.createElement(x.default, {
                       actionItems:
                         ((t = []),
                         t.push({
-                          confirmation: { label: ne, headline: re, text: ae, confirmButtonType: 'destructiveFilled' },
+                          confirmation: { label: ne, headline: re, text: oe, confirmButtonType: 'destructiveFilled' },
                           isEmphasized: !0,
                           text: ne,
-                          Icon: X.a,
-                          onClick: O,
+                          Icon: q.a,
+                          onClick: E,
                         }),
                         c.isTrue('responsive_web_birdwatch_ratings_v2_enabled')
-                          ? t.push({ disabled: !0, text: te, subText: oe, Icon: q.a })
-                          : t.push({ text: te, Icon: q.a, onClick: C }),
+                          ? t.push({ disabled: !0, text: ae, subText: ie, Icon: G.a })
+                          : t.push({ text: ae, Icon: G.a, onClick: _ }),
                         t),
                       onClose: e,
                     })
@@ -4227,158 +4255,158 @@
                 }),
               )
         }),
-        Ee = (n('uFXj'), n('xZGM')),
-        Oe = n('1YZw'),
-        _e = Object(j.a)()
+        Oe = (a('uFXj'), a('xZGM')),
+        _e = a('1YZw'),
+        Se = Object(j.a)()
           .propsFromState(function () {
             return {
               shouldShowDataPrivacyPrompt: function (e, t) {
-                return Object(Ee.z)(e, Ee.c)
+                return Object(Oe.z)(e, Oe.c)
               },
             }
           })
           .propsFromActions(function () {
             return {
-              addFlag: Ee.w,
-              addToast: Oe.b,
-              createLocalApiErrorHandler: Object(T.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
-              createRating: C.c,
-              deleteRating: C.e,
+              addFlag: Oe.w,
+              addToast: _e.b,
+              createLocalApiErrorHandler: Object(A.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
+              createRating: T.c,
+              deleteRating: T.e,
             }
           })
           .withAnalytics({ component: 'birdwatch_rating' }),
-        Se = n('cHvH'),
-        Ce = n('h0NW'),
-        je = n('feu+')
-      function Te(e) {
+        Ce = a('cHvH'),
+        Te = a('h0NW'),
+        je = a('feu+')
+      function Ae(e) {
         var t,
-          n,
-          r = H.a.a7bc3191,
-          a = H.a.a26f8dc1,
-          o = H.a.d89cfe9e,
-          i = H.a.faa5f9e7,
-          c = H.a.c365dcc5
+          a,
+          n = F.a.a7bc3191,
+          r = F.a.a26f8dc1,
+          o = F.a.d89cfe9e,
+          i = F.a.faa5f9e7,
+          c = F.a.c365dcc5
         return e
           ? ((t = {}),
-            v()(t, F.GoodSources, r),
-            v()(t, F.Clear, a),
-            v()(t, F.AddressesClaim, o),
-            v()(t, F.ImportantContext, i),
-            v()(t, F.UnbiasedLanguage, H.a.gf3b38f4),
-            v()(t, F.Other, c),
+            v()(t, z.GoodSources, n),
+            v()(t, z.Clear, r),
+            v()(t, z.AddressesClaim, o),
+            v()(t, z.ImportantContext, i),
+            v()(t, z.UnbiasedLanguage, F.a.gf3b38f4),
+            v()(t, z.Other, c),
             t)
-          : ((n = {}),
-            v()(n, F.GoodSources, r),
-            v()(n, F.Clear, a),
-            v()(n, F.AddressesClaim, o),
-            v()(n, F.ImportantContext, i),
-            v()(n, F.Other, c),
-            n)
-      }
-      function Ae(e) {
-        return Object.keys(Te(e))
+          : ((a = {}),
+            v()(a, z.GoodSources, n),
+            v()(a, z.Clear, r),
+            v()(a, z.AddressesClaim, o),
+            v()(a, z.ImportantContext, i),
+            v()(a, z.Other, c),
+            a)
       }
       function Ie(e) {
-        var t,
-          n,
-          r = H.a.ef490ae8,
-          a = H.a.bf3dc461,
-          o = H.a.heb35e12,
-          i = H.a.ib117531,
-          c = H.a.c365dcc5
-        return e
-          ? ((t = {}),
-            v()(t, U.NoSources, r),
-            v()(t, U.IrrelevantSources, a),
-            v()(t, U.Incorrect, o),
-            v()(t, U.OpinionSpeculation, H.a.h7c59ea2),
-            v()(t, U.Unclear, H.a.d60c0063),
-            v()(t, U.MissingKeyPoints, H.a.e06416c9),
-            v()(t, U.Rude, H.a.cff1aa8b),
-            v()(t, U.NoteNotNeeded, H.a.cc443e25),
-            v()(t, U.TwitterViolationAny, i),
-            v()(t, U.Other, c),
-            t)
-          : ((n = {}),
-            v()(n, U.NoSources, r),
-            v()(n, U.IrrelevantSources, a),
-            v()(n, U.Incorrect, o),
-            v()(n, U.Unclear, H.a.d60c0063),
-            v()(n, U.MissingKeyPoints, H.a.c34e0b2b),
-            v()(n, U.Rude, H.a.d24b99ed),
-            v()(n, U.TwitterViolationAny, i),
-            v()(n, U.Other, c),
-            n)
+        return Object.keys(Ae(e))
       }
       function xe(e) {
-        return Object.keys(Ie(e))
+        var t,
+          a,
+          n = F.a.ef490ae8,
+          r = F.a.bf3dc461,
+          o = F.a.heb35e12,
+          i = F.a.ib117531,
+          c = F.a.c365dcc5
+        return e
+          ? ((t = {}),
+            v()(t, K.NoSources, n),
+            v()(t, K.IrrelevantSources, r),
+            v()(t, K.Incorrect, o),
+            v()(t, K.OpinionSpeculation, F.a.h7c59ea2),
+            v()(t, K.Unclear, F.a.d60c0063),
+            v()(t, K.MissingKeyPoints, F.a.e06416c9),
+            v()(t, K.Rude, F.a.cff1aa8b),
+            v()(t, K.NoteNotNeeded, F.a.cc443e25),
+            v()(t, K.TwitterViolationAny, i),
+            v()(t, K.Other, c),
+            t)
+          : ((a = {}),
+            v()(a, K.NoSources, n),
+            v()(a, K.IrrelevantSources, r),
+            v()(a, K.Incorrect, o),
+            v()(a, K.Unclear, F.a.d60c0063),
+            v()(a, K.MissingKeyPoints, F.a.c34e0b2b),
+            v()(a, K.Rude, F.a.d24b99ed),
+            v()(a, K.TwitterViolationAny, i),
+            v()(a, K.Other, c),
+            a)
       }
-      var Pe = n('EQ/a'),
-        Le = n('DlMI')
-      function Re(e, t) {
-        var n = Object.keys(e)
+      function Pe(e) {
+        return Object.keys(xe(e))
+      }
+      var Le = a('EQ/a'),
+        Re = a('DlMI')
+      function De(e, t) {
+        var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
+          var n = Object.getOwnPropertySymbols(e)
           t &&
-            (r = r.filter(function (t) {
+            (n = n.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            n.push.apply(n, r)
+            a.push.apply(a, n)
         }
-        return n
+        return a
       }
-      function De(e) {
+      function ke(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
+          var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Re(Object(n), !0).forEach(function (t) {
-                v()(e, t, n[t])
+            ? De(Object(a), !0).forEach(function (t) {
+                v()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : Re(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : De(Object(a)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var ke = H.a.ed5156f9,
-        Be = [
-          { label: H.a.b7ec04f3, value: 'Helpful' },
-          { label: H.a.i26425d8, value: 'SomewhatHelpful' },
-          { label: H.a.i62a03aa, value: 'NotHelpful' },
+      var Be = F.a.ed5156f9,
+        Ne = [
+          { label: F.a.b7ec04f3, value: 'Helpful' },
+          { label: F.a.i26425d8, value: 'SomewhatHelpful' },
+          { label: F.a.i62a03aa, value: 'NotHelpful' },
         ],
-        Ne = H.a.a91bb144,
-        Me = H.a.abd845fd,
-        He = H.a.d96cf7cd,
-        Fe = H.a.j6aa6172,
-        ze = H.a.i411275f,
-        We = H.a.e2988ed0,
-        Ue = H.a.c1a50438,
-        Ke = H.a.d2ae3d42,
-        Ve = H.a.c4e0c730,
-        Xe = H.a.cfd2f35d,
-        qe = H.a.b1ea3365,
-        Ge = H.a.h1a9d37a,
-        Ze = E.createElement(L.b, { weight: 'bold' }),
-        Qe = E.createElement(L.b, {
+        Me = F.a.a91bb144,
+        He = F.a.abd845fd,
+        Fe = F.a.d96cf7cd,
+        ze = F.a.j6aa6172,
+        We = F.a.i411275f,
+        Ue = F.a.e2988ed0,
+        Ke = F.a.c1a50438,
+        Ve = F.a.d2ae3d42,
+        Xe = F.a.c4e0c730,
+        qe = F.a.cfd2f35d,
+        Ge = F.a.b1ea3365,
+        Ze = F.a.h1a9d37a,
+        Qe = O.a.createElement(R.b, { weight: 'bold' }),
+        Ye = O.a.createElement(R.b, {
           link: 'https://twitter.github.io/birdwatch/about/overview/#transparency-and-visibility',
           withInteractiveStyling: !0,
           withUnderline: !0,
         }),
-        Ye = E.createElement(
-          H.a.I18NFormatMessage,
+        Je = O.a.createElement(
+          F.a.I18NFormatMessage,
           { $i18n: 'ab4d390f' },
-          E.cloneElement(Ze, null, H.a.iedb2fc7),
-          E.cloneElement(Qe, null, H.a.cd24d5f5),
+          O.a.cloneElement(Qe, null, F.a.iedb2fc7),
+          O.a.cloneElement(Ye, null, F.a.cd24d5f5),
         ),
-        Je = E.createElement(L.b, { weight: 'bold' }),
-        $e = E.createElement(L.b, { weight: 'bold' }),
-        et = E.createElement(L.b, { weight: 'bold' }),
-        tt = E.createElement(H.a.I18NFormatMessage, { $i18n: 'had203a8' }, E.cloneElement(Je, null, H.a.f2ceaed4)),
-        nt = E.createElement(H.a.I18NFormatMessage, { $i18n: 'h42a21df' }, E.cloneElement($e, null, H.a.i7d91dc8)),
-        rt = E.createElement(H.a.I18NFormatMessage, { $i18n: 'c3d1a1b0' }, E.cloneElement(et, null, H.a.c206a60f)),
-        at = N.a.create(function (e) {
+        $e = O.a.createElement(R.b, { weight: 'bold' }),
+        et = O.a.createElement(R.b, { weight: 'bold' }),
+        tt = O.a.createElement(R.b, { weight: 'bold' }),
+        at = O.a.createElement(F.a.I18NFormatMessage, { $i18n: 'had203a8' }, O.a.cloneElement($e, null, F.a.f2ceaed4)),
+        nt = O.a.createElement(F.a.I18NFormatMessage, { $i18n: 'h42a21df' }, O.a.cloneElement(et, null, F.a.i7d91dc8)),
+        rt = O.a.createElement(F.a.I18NFormatMessage, { $i18n: 'c3d1a1b0' }, O.a.cloneElement(tt, null, F.a.c206a60f)),
+        ot = M.a.create(function (e) {
           return {
             button: { alignSelf: 'center' },
             checkbox: { paddingVertical: e.spaces.space8 },
@@ -4411,91 +4439,91 @@
             },
           }
         }),
-        ot = {
-          accessibilityLabel: Ke,
-          containerStyle: at.infoItemContainer,
+        it = {
+          accessibilityLabel: Ve,
+          containerStyle: ot.infoItemContainer,
           items: [
-            { label: '', decoration: E.createElement(Pe.a, { style: at.iconDataPrivacy }), description: Ge },
+            { label: '', decoration: O.a.createElement(Le.a, { style: ot.iconDataPrivacy }), description: Ze },
             {
               label: '',
-              decoration: E.createElement(Le.a, { style: at.iconDataPrivacy }),
-              description: E.createElement(P.a, { style: at.anonymousCrowdText }, Ye),
+              decoration: O.a.createElement(Re.a, { style: ot.iconDataPrivacy }),
+              description: O.a.createElement(L.a, { style: ot.anonymousCrowdText }, Je),
             },
           ],
         },
-        it = _e(function (e) {
+        ct = Se(function (e) {
           var t = e.addFlag,
-            n = e.addToast,
-            r = e.analytics,
-            a = e.createLocalApiErrorHandler,
+            a = e.addToast,
+            n = e.analytics,
+            r = e.createLocalApiErrorHandler,
             o = e.createRating,
             i = e.deleteRating,
             c = e.noteId,
             l = e.rating,
             s = e.ratingSurvey,
             u = e.shouldShowDataPrivacyPrompt,
-            d = E.useContext(S.a).featureSwitches,
-            p = E.useState(l),
+            d = O.a.useContext(C.a).featureSwitches,
+            p = O.a.useState(l),
             f = w()(p, 2),
             b = f[0],
             m = f[1],
-            h = E.useState(Object(x.a)(l)),
+            h = O.a.useState(Object(P.a)(l)),
             y = w()(h, 2),
             g = y[0],
-            O = y[1],
-            C = E.useState(!1),
-            j = w()(C, 2),
-            T = j[0],
-            A = j[1],
-            D = d.isTrue('responsive_web_birdwatch_ratings_m2_tags_enabled'),
-            M = {
-              helpful: { label: H.a.a7338bc2, options: Be },
+            E = y[1],
+            _ = O.a.useState(!1),
+            T = w()(_, 2),
+            j = T[0],
+            A = T[1],
+            I = d.isTrue('responsive_web_birdwatch_ratings_m2_tags_enabled'),
+            k = {
+              helpful: { label: F.a.a7338bc2, options: Ne },
               helpful_tags: {
-                label: H.a.ac7f9745,
-                options: Ae(D).map(function (e) {
-                  return { label: Te(D)[e], value: e }
+                label: F.a.ac7f9745,
+                options: Ie(I).map(function (e) {
+                  return { label: Ae(I)[e], value: e }
                 }),
               },
               not_helpful_tags: {
-                label: H.a.c7751803,
-                options: xe(D).map(function (e) {
-                  return { label: Ie(D)[e], value: e }
+                label: F.a.c7751803,
+                options: Pe(I).map(function (e) {
+                  return { label: xe(I)[e], value: e }
                 }),
               },
             },
-            F = function (e) {
-              r.scribeAction('click_'.concat(e))
+            H = function (e) {
+              n.scribeAction('click_'.concat(e))
             },
             z = function () {
-              F('delete'),
+              H('delete'),
                 i(c)
                   .then(function (e) {
                     if ('Done' === e.birdwatchnote_rating_delete) {
                       var t = Object.freeze({})
-                      m(t), O(!0)
+                      m(t), E(!0)
                     }
                   })
-                  .catch(a())
+                  .catch(r())
             },
             W = function () {
-              F('edit'), O(!0)
+              H('edit'), E(!0)
             },
-            K = function () {
+            U = function () {
               var e, t
-              ;(F('submit'),
+              ;(H('submit'),
               o(c, b)
                 .then(function () {
-                  O(!1)
+                  E(!1)
                 })
-                .catch(a({ defaultToast: { text: ke, withAutoDismiss: !1, withClearButton: !0 }, showToast: !0 })),
+                .catch(r({ defaultToast: { text: Be, withAutoDismiss: !1, withClearButton: !0 }, showToast: !0 })),
               d.isTrue('responsive_web_birdwatch_rating_mini_survey_enabled') &&
-                !Object(x.a)(null == s ? void 0 : s.url)) &&
+                !Object(P.a)(null == s ? void 0 : s.url)) &&
                 ((null !== (e = b.helpful_tags) && void 0 !== e && e.includes('Other')) ||
                   (null !== (t = b.not_helpful_tags) && void 0 !== t && t.includes('Other')) ||
                   Math.random() < 0.05) &&
-                n({
-                  text: We,
-                  action: { label: Ue, link: null == s ? void 0 : s.url },
+                a({
+                  text: Ue,
+                  action: { label: Ke, link: null == s ? void 0 : s.url },
                   withAutoDismiss: !0,
                   withClearButton: !0,
                 })
@@ -4503,72 +4531,72 @@
             V = function (e) {
               return function (t) {
                 return function () {
-                  m(function (n) {
-                    return n[e]
-                      ? n[e].includes(t)
-                        ? De(
-                            De({}, n),
+                  m(function (a) {
+                    return a[e]
+                      ? a[e].includes(t)
+                        ? ke(
+                            ke({}, a),
                             {},
                             v()(
                               {},
                               e,
-                              n[e].filter(function (e) {
+                              a[e].filter(function (e) {
                                 return e !== t
                               }),
                             ),
                           )
-                        : De(De({}, n), {}, v()({}, e, [].concat(_()(n[e]), [t])))
-                      : De(De({}, n), {}, v()({}, e, [t]))
+                        : ke(ke({}, a), {}, v()({}, e, [].concat(S()(a[e]), [t])))
+                      : ke(ke({}, a), {}, v()({}, e, [t]))
                   })
                 }
               }
             },
-            Z = function (e) {
+            X = function (e) {
               var t = (b && b[e]) || []
-              return E.createElement(
-                P.a,
-                { style: at.checkboxContainer },
-                E.createElement(L.b, { weight: 'bold' }, M[e].label),
-                M[e].options.map(function (n) {
+              return O.a.createElement(
+                L.a,
+                { style: ot.checkboxContainer },
+                O.a.createElement(R.b, { weight: 'bold' }, k[e].label),
+                k[e].options.map(function (a) {
                   return (
                     !(
                       'SomewhatHelpful' === (null == b ? void 0 : b.helpfulness_level) &&
-                      n.value === U.TwitterViolationAny
+                      a.value === K.TwitterViolationAny
                     ) &&
-                    E.createElement(R.a, {
-                      checked: t.includes(n.value),
-                      key: n.value,
-                      label: n.label,
-                      onChange: V(e)(n.value),
-                      style: at.checkbox,
+                    O.a.createElement(D.a, {
+                      checked: t.includes(a.value),
+                      key: a.value,
+                      label: a.label,
+                      onChange: V(e)(a.value),
+                      style: ot.checkbox,
                     })
                   )
                 }),
               )
             },
-            Q = E.createElement(Se.a, null, function (e) {
-              var t = e.windowWidth <= N.a.theme.breakpoints.small
-              return E.createElement(
-                P.a,
-                { style: !t && at.helpfulContainer },
-                E.createElement(L.b, { style: t && at.helpfulQuestionMobile, weight: 'bold' }, M.helpful.label),
-                E.createElement(
-                  P.a,
-                  { style: at.helpfulOptions },
-                  Be.map(function (e) {
-                    return E.createElement(
-                      k.a,
+            Q = O.a.createElement(Ce.a, null, function (e) {
+              var t = e.windowWidth <= M.a.theme.breakpoints.small
+              return O.a.createElement(
+                L.a,
+                { style: !t && ot.helpfulContainer },
+                O.a.createElement(R.b, { style: t && ot.helpfulQuestionMobile, weight: 'bold' }, k.helpful.label),
+                O.a.createElement(
+                  L.a,
+                  { style: ot.helpfulOptions },
+                  Ne.map(function (e) {
+                    return O.a.createElement(
+                      B.a,
                       {
                         key: e.value,
                         onClick:
                           ((t = e.value),
                           function () {
                             m(function (e) {
-                              return De(De({}, e), {}, { helpfulness_level: t })
+                              return ke(ke({}, e), {}, { helpfulness_level: t })
                             })
                           }),
                         size: 'small',
-                        style: at.helpfulButtons,
+                        style: ot.helpfulButtons,
                         type: (null == b ? void 0 : b.helpfulness_level) === e.value ? 'brandFilled' : 'brandOutlined',
                       },
                       e.label,
@@ -4578,18 +4606,18 @@
                 ),
               )
             }),
-            Y = E.createElement(Ce.a, ot),
-            J = E.createElement(je.a, {
-              actionLabel: Ve,
-              headline: qe,
+            Y = O.a.createElement(Te.a, it),
+            J = O.a.createElement(je.a, {
+              actionLabel: Xe,
+              headline: Ge,
               isFullHeightOnMobile: !0,
               onAction: function () {
-                K(), t(Ee.c), A(!1)
+                U(), t(Oe.c), A(!1)
               },
               onSecondaryAction: function () {
                 return A(!1)
               },
-              secondaryActionLabel: Xe,
+              secondaryActionLabel: qe,
               subtext: Y,
             }),
             $ = void 0 !== (null == b ? void 0 : b.helpfulness_level),
@@ -4601,44 +4629,44 @@
               $ &&
               ('NotHelpful' === (null == b ? void 0 : b.helpfulness_level) ||
                 'SomewhatHelpful' === (null == b ? void 0 : b.helpfulness_level))
-          return E.createElement(
-            E.Fragment,
+          return O.a.createElement(
+            O.a.Fragment,
             null,
-            T ? J : null,
+            j ? J : null,
             g
-              ? E.createElement(
-                  P.a,
-                  { style: at.root },
+              ? O.a.createElement(
+                  L.a,
+                  { style: ot.root },
                   Q,
-                  ee && Z('helpful_tags'),
-                  te && Z('not_helpful_tags'),
-                  !Object(x.a)(b) &&
-                    E.createElement(
-                      k.a,
+                  ee && X('helpful_tags'),
+                  te && X('not_helpful_tags'),
+                  !Object(P.a)(b) &&
+                    O.a.createElement(
+                      B.a,
                       {
                         onClick: function () {
-                          u && d.isTrue('responsive_web_birdwatch_rating_crowd_enabled') ? A(!0) : b && K()
+                          u && d.isTrue('responsive_web_birdwatch_rating_crowd_enabled') ? A(!0) : b && U()
                         },
-                        style: at.button,
+                        style: ot.button,
                         type: 'brandFilled',
                       },
-                      Ne,
+                      Me,
                     ),
                 )
-              : E.createElement(
-                  P.a,
-                  { style: [at.root, at.showSubmittedRating] },
-                  E.createElement(
-                    P.a,
-                    { style: at.row },
-                    E.createElement(G.a, { style: at.icon }),
-                    E.createElement(
-                      L.b,
+              : O.a.createElement(
+                  L.a,
+                  { style: [ot.root, ot.showSubmittedRating] },
+                  O.a.createElement(
+                    L.a,
+                    { style: ot.row },
+                    O.a.createElement(Z.a, { style: ot.icon }),
+                    O.a.createElement(
+                      R.b,
                       { size: 'subtext2' },
                       (function () {
                         switch (null == b ? void 0 : b.helpfulness_level) {
                           case 'Helpful':
-                            return tt
+                            return at
                           case 'SomewhatHelpful':
                             return nt
                           case 'NotHelpful':
@@ -4649,19 +4677,19 @@
                       })(),
                     ),
                   ),
-                  E.createElement(B.a, {
+                  O.a.createElement(N.a, {
                     renderActionMenu: function (e) {
-                      return E.createElement(I.default, {
+                      return O.a.createElement(x.default, {
                         actionItems:
                           ((t = []),
                           t.push({
-                            confirmation: { label: He, headline: Fe, text: ze, confirmButtonType: 'destructiveFilled' },
+                            confirmation: { label: Fe, headline: ze, text: We, confirmButtonType: 'destructiveFilled' },
                             isEmphasized: !0,
-                            text: He,
-                            Icon: X.a,
+                            text: Fe,
+                            Icon: q.a,
                             onClick: z,
                           }),
-                          t.push({ text: Me, Icon: q.a, onClick: W }),
+                          t.push({ text: He, Icon: G.a, onClick: W }),
                           t),
                         onClose: e,
                       })
@@ -4671,33 +4699,33 @@
                 ),
           )
         }),
-        ct = n('xSpP'),
-        lt = n('XOJV'),
-        st = function (e, t) {
-          var n,
-            r = null === (n = t.note) || void 0 === n ? void 0 : n.tweet
-          return r ? lt.a.selectFetchStatus(e, r.rest_id) : void 0
+        lt = a('xSpP'),
+        st = a('XOJV'),
+        ut = function (e, t) {
+          var a,
+            n = null === (a = t.note) || void 0 === a ? void 0 : a.tweet
+          return n ? st.a.selectFetchStatus(e, n.rest_id) : void 0
         },
-        ut = Object(j.a)()
+        dt = Object(j.a)()
           .propsFromState(function () {
-            return { tweetFetchStatus: st, userAlias: C.y }
+            return { tweetFetchStatus: ut, userAlias: T.y }
           })
           .propsFromActions(function () {
             return {
-              addToast: Oe.b,
-              createAppeal: C.a,
-              createLocalApiErrorHandler: Object(T.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
-              deleteNote: ct.b,
-              fetchTweet: lt.a.fetchOneIfNeeded,
-              fetchUserAlias: C.l,
+              addToast: _e.b,
+              createAppeal: T.a,
+              createLocalApiErrorHandler: Object(A.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
+              deleteNote: lt.b,
+              fetchTweet: st.a.fetchOneIfNeeded,
+              fetchUserAlias: T.l,
             }
           })
           .withAnalytics({ component: 'birdwatch_note' }),
-        dt = n('eqZz'),
-        pt = n('W6+M'),
-        ft = n('yrzJ'),
-        bt = n('sgih')
-      function mt(e) {
+        pt = a('eqZz'),
+        ft = a('W6+M'),
+        bt = a('yrzJ'),
+        mt = a('sgih')
+      function ht(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -4709,92 +4737,92 @@
           }
         })()
         return function () {
-          var n,
-            r = h()(e)
+          var a,
+            n = h()(e)
           if (t) {
-            var a = h()(this).constructor
-            n = Reflect.construct(r, arguments, a)
-          } else n = r.apply(this, arguments)
-          return b()(this, n)
+            var r = h()(this).constructor
+            a = Reflect.construct(n, arguments, r)
+          } else a = n.apply(this, arguments)
+          return b()(this, a)
         }
       }
-      var ht = H.a.e4579709,
-        yt = H.a.df587b98,
-        vt = H.a.fd284b08,
-        gt = H.a.h201bdc8,
-        wt = H.a.fe1f6043,
-        Et = H.a.ia5e7487,
-        Ot = H.a.j58e7b00,
-        _t = (function (e) {
-          p()(n, e)
-          var t = mt(n)
-          function n() {
-            return i()(this, n), t.apply(this, arguments)
+      var yt = F.a.e4579709,
+        vt = F.a.df587b98,
+        gt = F.a.fd284b08,
+        wt = F.a.h201bdc8,
+        Et = F.a.fe1f6043,
+        Ot = F.a.ia5e7487,
+        _t = F.a.j58e7b00,
+        St = (function (e) {
+          p()(a, e)
+          var t = ht(a)
+          function a() {
+            return i()(this, a), t.apply(this, arguments)
           }
           return (
-            l()(n, [
+            l()(a, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.alias,
-                    n = e.closeNoteDetails,
-                    r = e.created_at,
-                    a = e.rest_id,
+                    a = e.closeNoteDetails,
+                    n = e.created_at,
+                    r = e.rest_id,
                     o = e.userBadges,
                     i = this.context.featureSwitches,
                     c = i.isTrue('responsive_web_birdwatch_note_awards_enabled'),
                     l = i.isTrue('responsive_web_birdwatch_aliases_enabled'),
                     s = c && o && o.length > 0,
-                    u = E.createElement(
-                      P.a,
-                      { style: St.noteDetailsContainer },
-                      E.createElement(
-                        P.a,
-                        { style: St.noteDetailsHeader },
-                        E.createElement(L.b, { size: 'headline1', weight: 'bold' }, ht),
+                    u = O.a.createElement(
+                      L.a,
+                      { style: Ct.noteDetailsContainer },
+                      O.a.createElement(
+                        L.a,
+                        { style: Ct.noteDetailsHeader },
+                        O.a.createElement(R.b, { size: 'headline1', weight: 'bold' }, yt),
                       ),
-                      E.createElement(
-                        P.a,
-                        { style: St.noteDetails },
-                        E.createElement(
-                          P.a,
-                          { style: [St.noteDetailsSection, St.noteDetailsSectionBorder] },
-                          E.createElement(L.b, { color: 'normal', style: St.noteDetailsText }, yt),
-                          E.createElement(L.b, { style: St.noteDetailsContentText }, a),
+                      O.a.createElement(
+                        L.a,
+                        { style: Ct.noteDetails },
+                        O.a.createElement(
+                          L.a,
+                          { style: [Ct.noteDetailsSection, Ct.noteDetailsSectionBorder] },
+                          O.a.createElement(R.b, { color: 'normal', style: Ct.noteDetailsText }, vt),
+                          O.a.createElement(R.b, { style: Ct.noteDetailsContentText }, r),
                         ),
-                        E.createElement(
-                          P.a,
-                          { style: [St.noteDetailsSection, St.noteDetailsSectionBorder] },
-                          E.createElement(L.b, { color: 'normal', style: St.noteDetailsText }, gt),
+                        O.a.createElement(
+                          L.a,
+                          { style: [Ct.noteDetailsSection, Ct.noteDetailsSectionBorder] },
+                          O.a.createElement(R.b, { color: 'normal', style: Ct.noteDetailsText }, wt),
                           l
-                            ? E.createElement(
-                                L.b,
-                                { color: 'gray700', dir: 'ltr', numberOfLines: 1, style: St.profileText },
-                                Object(pt.a)(t),
+                            ? O.a.createElement(
+                                R.b,
+                                { color: 'gray700', dir: 'ltr', numberOfLines: 1, style: Ct.profileText },
+                                Object(ft.a)(t),
                               )
-                            : E.createElement(ft.a, { screenName: t }),
+                            : O.a.createElement(bt.a, { screenName: t }),
                           l &&
-                            E.createElement(
-                              L.b,
+                            O.a.createElement(
+                              R.b,
                               {
                                 color: 'link',
                                 link: '/i/birdwatch/u/'.concat(t),
-                                onClick: n,
-                                style: St.viewProfileLink,
+                                onClick: a,
+                                style: Ct.viewProfileLink,
                               },
-                              Ot,
+                              _t,
                             ),
                         ),
-                        E.createElement(
-                          P.a,
+                        O.a.createElement(
+                          L.a,
                           {
-                            style: [St.noteDetailsSection, s ? St.noteDetailsSectionBorder : St.noteDetailsSectionLast],
+                            style: [Ct.noteDetailsSection, s ? Ct.noteDetailsSectionBorder : Ct.noteDetailsSectionLast],
                           },
-                          E.createElement(L.b, { color: 'normal', style: St.noteDetailsText }, wt),
-                          E.createElement(
-                            L.b,
-                            { style: St.noteDetailsContentText },
+                          O.a.createElement(R.b, { color: 'normal', style: Ct.noteDetailsText }, Et),
+                          O.a.createElement(
+                            R.b,
+                            { style: Ct.noteDetailsContentText },
                             (function (e) {
                               if (!e) return ''
                               var t = new Date(e).toLocaleString('default', {
@@ -4802,53 +4830,53 @@
                                   month: 'long',
                                   year: 'numeric',
                                 }),
-                                n = new Date(e).toLocaleString('default', {
+                                a = new Date(e).toLocaleString('default', {
                                   hour: '2-digit',
                                   minute: '2-digit',
                                   second: '2-digit',
                                 })
-                              return ''.concat(t, ' ').concat(n)
-                            })(r),
+                              return ''.concat(t, ' ').concat(a)
+                            })(n),
                           ),
                         ),
                         s &&
-                          E.createElement(
-                            P.a,
-                            { style: [St.noteDetailsSection, St.noteDetailsSectionLast] },
-                            E.createElement(L.b, { color: 'normal', style: St.awardDetailsText }, vt),
+                          O.a.createElement(
+                            L.a,
+                            { style: [Ct.noteDetailsSection, Ct.noteDetailsSectionLast] },
+                            O.a.createElement(R.b, { color: 'normal', style: Ct.awardDetailsText }, gt),
                             o
                               ? o.map(function (e, t) {
-                                  return E.createElement(dt.a, { badgeType: e, key: t })
+                                  return O.a.createElement(pt.a, { badgeType: e, key: t })
                                 })
                               : null,
                           ),
-                        E.createElement(P.a, { style: St.contentSpacer }),
+                        O.a.createElement(L.a, { style: Ct.contentSpacer }),
                       ),
-                      E.createElement(
-                        P.a,
-                        { style: St.noteDetailsButtonSection },
-                        E.createElement(P.a, { style: St.buttonSpacer }),
-                        E.createElement(k.a, { onClick: n, style: St.noteDetailsButton, type: 'brandFilled' }, Et),
+                      O.a.createElement(
+                        L.a,
+                        { style: Ct.noteDetailsButtonSection },
+                        O.a.createElement(L.a, { style: Ct.buttonSpacer }),
+                        O.a.createElement(B.a, { onClick: a, style: Ct.noteDetailsButton, type: 'brandFilled' }, Ot),
                       ),
                     )
-                  return E.createElement(Se.a, null, function (e) {
+                  return O.a.createElement(Ce.a, null, function (e) {
                     var t = e.windowWidth
-                    return E.createElement(bt.a, {
+                    return O.a.createElement(mt.a, {
                       allowBackNavigation: !0,
                       children: u,
-                      onMaskClick: n,
-                      type: t >= N.a.theme.breakpoints.medium ? 'center' : 'full',
+                      onMaskClick: a,
+                      type: t >= M.a.theme.breakpoints.medium ? 'center' : 'full',
                       withMask: !0,
                     })
                   })
                 },
               },
             ]),
-            n
+            a
           )
-        })(E.Component)
-      v()(_t, 'contextType', S.a)
-      var St = N.a.create(function (e) {
+        })(O.a.Component)
+      v()(St, 'contextType', C.a)
+      var Ct = M.a.create(function (e) {
           return {
             awardDetailsText: { marginBottom: e.spaces.space8 },
             noteDetails: { alignItems: 'flex-start', display: 'flex', paddingHorizontal: e.spaces.space8 },
@@ -4878,72 +4906,72 @@
             profileText: { textTransform: 'capitalize' },
           }
         }),
-        Ct = _t,
-        jt = n('b5s6'),
-        Tt = n('rcen'),
-        At = n('Rp9C'),
-        It = 'helpfulRatingTags',
-        xt = 'notHelpfulRatingTags',
-        Pt = 'ratingStatus',
-        Lt = n('4zmP'),
-        Rt = n('pjBI'),
-        Dt = n('GBcw'),
-        kt = n('htQn'),
-        Bt = n('zIWA'),
-        Nt = n('/WPq'),
-        Mt = n('x0mb'),
-        Ht = n('fBGZ'),
-        Ft = n('Lsrn'),
-        zt = n('k/Ka')
-      function Wt(e, t) {
-        var n = Object.keys(e)
+        Tt = St,
+        jt = a('b5s6'),
+        At = a('rcen'),
+        It = a('Rp9C'),
+        xt = 'helpfulRatingTags',
+        Pt = 'notHelpfulRatingTags',
+        Lt = 'ratingStatus',
+        Rt = a('4zmP'),
+        Dt = a('pjBI'),
+        kt = a('GBcw'),
+        Bt = a('htQn'),
+        Nt = a('zIWA'),
+        Mt = a('/WPq'),
+        Ht = a('x0mb'),
+        Ft = a('fBGZ'),
+        zt = a('Lsrn'),
+        Wt = a('k/Ka')
+      function Ut(e, t) {
+        var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
+          var n = Object.getOwnPropertySymbols(e)
           t &&
-            (r = r.filter(function (t) {
+            (n = n.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            n.push.apply(n, r)
+            a.push.apply(a, n)
         }
-        return n
+        return a
       }
-      function Ut(e) {
+      function Kt(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
+          var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Wt(Object(n), !0).forEach(function (t) {
-                v()(e, t, n[t])
+            ? Ut(Object(a), !0).forEach(function (t) {
+                v()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : Wt(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : Ut(Object(a)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var Kt = function () {
+      var Vt = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(zt.a)(
+        return Object(Wt.a)(
           'svg',
-          Ut(
-            Ut({}, e),
+          Kt(
+            Kt({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [Ft.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [zt.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          E.createElement(
+          O.a.createElement(
             'g',
             null,
-            E.createElement('path', {
+            O.a.createElement('path', {
               d: 'M8 20V5.8l2.7 2.7c.3.3.8.3 1.1 0s.3-.8 0-1.1l-4-4c-.3-.2-.8-.2-1.1.1l-4 4c-.1.1-.2.3-.2.5s.1.4.2.5c.3.3.8.3 1.1 0l2.7-2.7V20c0 .4.3.8.8.8s.7-.4.7-.8zm9.3.5l4-4c.3-.3.3-.8 0-1.1-.3-.3-.8-.3-1.1 0l-2.7 2.7V4c0-.4-.3-.8-.8-.8s-.7.4-.7.8v14.2l-2.7-2.7c-.3-.3-.8-.3-1.1 0-.1.1-.2.3-.2.5s.1.4.2.5l4 4c.3.3.8.3 1.1 0z',
             }),
           ),
         )
       }
-      Kt.metadata = { width: 24, height: 24 }
-      var Vt = Kt,
-        Xt = n('Nh1N')
-      function qt(e) {
+      Vt.metadata = { width: 24, height: 24 }
+      var Xt = Vt,
+        qt = a('Nh1N')
+      function Gt(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -4955,72 +4983,72 @@
           }
         })()
         return function () {
-          var n,
-            r = h()(e)
+          var a,
+            n = h()(e)
           if (t) {
-            var a = h()(this).constructor
-            n = Reflect.construct(r, arguments, a)
-          } else n = r.apply(this, arguments)
-          return b()(this, n)
+            var r = h()(this).constructor
+            a = Reflect.construct(n, arguments, r)
+          } else a = n.apply(this, arguments)
+          return b()(this, a)
         }
       }
-      var Gt = H.a.d96cf7cd,
-        Zt = H.a.e272836c,
-        Qt = H.a.e4579709,
-        Yt = H.a.fa0d3ee3,
-        Jt = H.a.ccf2f24e,
-        $t = H.a.df321fc3,
-        en = E.createElement(L.b, { color: 'primary' }, $t),
-        tn = H.a.gdcbac31,
-        nn = H.a.be86e75d,
-        rn = H.a.f2d93c3d,
-        an = H.a.d1dd62ac,
-        on = H.a.b664c554,
-        cn = H.a.ab66e1f2,
-        ln = H.a.b2792b8c,
-        sn = H.a.b74df918,
-        un = H.a.hfd2544f,
-        dn = H.a.b9e1cf02,
-        pn = H.a.cfd2f35d,
-        fn = H.a.i80c8a83,
-        bn = H.a.i859a9d3,
-        mn = H.a.i97b83f6,
-        hn = 'CurrentlyRatedHelpful',
-        yn = 'CurrentlyRatedNotHelpful',
-        vn = 'NeedsMoreRatings',
-        gn = function (e, t, n) {
+      var Zt = F.a.d96cf7cd,
+        Qt = F.a.e272836c,
+        Yt = F.a.e4579709,
+        Jt = F.a.fa0d3ee3,
+        $t = F.a.ccf2f24e,
+        ea = F.a.df321fc3,
+        ta = O.a.createElement(R.b, { color: 'primary' }, ea),
+        aa = F.a.gdcbac31,
+        na = F.a.be86e75d,
+        ra = F.a.f2d93c3d,
+        oa = F.a.d1dd62ac,
+        ia = F.a.b664c554,
+        ca = F.a.ab66e1f2,
+        la = F.a.b2792b8c,
+        sa = F.a.b74df918,
+        ua = F.a.hfd2544f,
+        da = F.a.b9e1cf02,
+        pa = F.a.cfd2f35d,
+        fa = F.a.i80c8a83,
+        ba = F.a.i859a9d3,
+        ma = F.a.i97b83f6,
+        ha = 'CurrentlyRatedHelpful',
+        ya = 'CurrentlyRatedNotHelpful',
+        va = 'NeedsMoreRatings',
+        ga = function (e, t, a) {
           switch (e) {
-            case hn:
+            case ha:
               if (2 === t.length) {
-                var r = w()(t, 2),
-                  a = r[0],
-                  o = r[1],
-                  i = Ae(!0),
-                  c = Te(!0),
-                  l = i.includes(a) ? c[a] : W[a],
-                  s = i.includes(o) ? c[o] : W[o],
+                var n = w()(t, 2),
+                  r = n[0],
+                  o = n[1],
+                  i = Ie(!0),
+                  c = Ae(!0),
+                  l = i.includes(r) ? c[r] : U[r],
+                  s = i.includes(o) ? c[o] : U[o],
                   u = ''.concat(l, ' · ').concat(s)
                 return l && s
-                  ? E.createElement(
-                      L.b,
-                      { color: 'gray700', hoverLabel: { label: u }, size: 'subtext2', style: On.ratingTag, testID: It },
+                  ? O.a.createElement(
+                      R.b,
+                      { color: 'gray700', hoverLabel: { label: u }, size: 'subtext2', style: Oa.ratingTag, testID: xt },
                       u,
                     )
                   : null
               }
               return null
-            case yn:
-              if (2 === n.length) {
-                var d = w()(n, 2),
+            case ya:
+              if (2 === a.length) {
+                var d = w()(a, 2),
                   p = d[0],
                   f = d[1],
-                  b = xe(!0).includes(p) ? Ie(!0)[p] : V[p],
-                  m = xe(!0).includes(f) ? Ie(!0)[f] : V[f],
+                  b = Pe(!0).includes(p) ? xe(!0)[p] : X[p],
+                  m = Pe(!0).includes(f) ? xe(!0)[f] : X[f],
                   h = ''.concat(b, ' · ').concat(m)
                 return b && m
-                  ? E.createElement(
-                      L.b,
-                      { color: 'gray700', hoverLabel: { label: h }, size: 'subtext2', style: On.ratingTag, testID: xt },
+                  ? O.a.createElement(
+                      R.b,
+                      { color: 'gray700', hoverLabel: { label: h }, size: 'subtext2', style: Oa.ratingTag, testID: Pt },
                       h,
                     )
                   : null
@@ -5030,171 +5058,171 @@
               return null
           }
         },
-        wn = function (e, t) {
-          return E.createElement(
-            P.a,
-            { style: On.ratingInfoItem, testID: Pt },
-            _n(e),
-            E.createElement(L.b, { size: 'subtext2', weight: 'bold' }, t),
+        wa = function (e, t) {
+          return O.a.createElement(
+            L.a,
+            { style: Oa.ratingInfoItem, testID: Lt },
+            _a(e),
+            O.a.createElement(R.b, { size: 'subtext2', weight: 'bold' }, t),
           )
         },
-        En = (function (e) {
-          p()(n, e)
-          var t = qt(n)
-          function n(e, r) {
-            var a
+        Ea = (function (e) {
+          p()(a, e)
+          var t = Gt(a)
+          function a(e, n) {
+            var r
             return (
-              i()(this, n),
-              (a = t.call(this, e, r)),
-              v()(u()(a), '_handleFetchTweet', function () {
-                var e = a.props,
+              i()(this, a),
+              (r = t.call(this, e, n)),
+              v()(u()(r), '_handleFetchTweet', function () {
+                var e = r.props,
                   t = e.createLocalApiErrorHandler,
-                  n = e.fetchTweet,
-                  r = e.note.tweet,
-                  o = null == r ? void 0 : r.rest_id
-                o && n(o).catch(t())
+                  a = e.fetchTweet,
+                  n = e.note.tweet,
+                  o = null == n ? void 0 : n.rest_id
+                o && a(o).catch(t())
               }),
-              v()(u()(a), '_isOwner', function () {
+              v()(u()(r), '_isOwner', function () {
                 var e,
-                  t = a.props,
-                  n = t.note,
-                  r = t.userAlias,
-                  o = null == n || null === (e = n.birdwatch_profile) || void 0 === e ? void 0 : e.alias
-                return !(!r || !o) && o === r
+                  t = r.props,
+                  a = t.note,
+                  n = t.userAlias,
+                  o = null == a || null === (e = a.birdwatch_profile) || void 0 === e ? void 0 : e.alias
+                return !(!n || !o) && o === n
               }),
-              v()(u()(a), '_handleDeleteConfirm', function () {
-                var e = a.props,
+              v()(u()(r), '_handleDeleteConfirm', function () {
+                var e = r.props,
                   t = e.createLocalApiErrorHandler,
-                  n = e.deleteNote,
-                  r = e.handleDelete,
+                  a = e.deleteNote,
+                  n = e.handleDelete,
                   o = e.note,
                   i = o.birdwatch_profile,
                   c = o.rest_id
-                a._scribeOnClick('delete')(),
+                r._scribeOnClick('delete')(),
                   null != i &&
                     i.alias &&
-                    a._isOwner() &&
-                    n(c)
+                    r._isOwner() &&
+                    a(c)
                       .then(function (e) {
-                        null == r || r(c)
+                        null == n || n(c)
                       })
                       .catch(t())
               }),
-              v()(u()(a), '_getMenuActionItems', function () {
-                var e = a.props.note,
+              v()(u()(r), '_getMenuActionItems', function () {
+                var e = r.props.note,
                   t = e.birdwatch_profile,
-                  n = e.rest_id,
-                  r = []
+                  a = e.rest_id,
+                  n = []
                 return (
                   null != t &&
                     t.alias &&
-                    a._isOwner() &&
-                    r.push({
-                      confirmation: { label: Gt, headline: Zt, text: Yt, confirmButtonType: 'destructiveFilled' },
+                    r._isOwner() &&
+                    n.push({
+                      confirmation: { label: Zt, headline: Qt, text: Jt, confirmButtonType: 'destructiveFilled' },
                       isEmphasized: !0,
-                      text: Gt,
-                      Icon: X.a,
-                      onClick: a._handleDeleteConfirm,
+                      text: Zt,
+                      Icon: q.a,
+                      onClick: r._handleDeleteConfirm,
                     }),
-                  r.push({
-                    text: Jt,
-                    Icon: Bt.a,
-                    link: { pathname: 'https://help.twitter.com/en/forms/birdwatch?note_id='.concat(n) },
-                    onClick: a._scribeOnClick('report'),
+                  n.push({
+                    text: $t,
+                    Icon: Nt.a,
+                    link: { pathname: 'https://help.twitter.com/en/forms/birdwatch?note_id='.concat(a) },
+                    onClick: r._scribeOnClick('report'),
                   }),
-                  r.push({ text: Qt, Icon: Nt.a, onClick: a._onNoteDetailsClick }),
-                  r
+                  n.push({ text: Yt, Icon: Mt.a, onClick: r._onNoteDetailsClick }),
+                  n
                 )
               }),
-              v()(u()(a), '_onNoteDetailsClick', function () {
-                a.setState({ noteDetailsOpen: !0 }), a._scribeOnClick('note_details')
+              v()(u()(r), '_onNoteDetailsClick', function () {
+                r.setState({ noteDetailsOpen: !0 }), r._scribeOnClick('note_details')
               }),
-              v()(u()(a), '_renderCurationActionMenu', function (e) {
-                return E.createElement(I.default, { actionItems: a._getMenuActionItems(), onClose: e })
+              v()(u()(r), '_renderCurationActionMenu', function (e) {
+                return O.a.createElement(x.default, { actionItems: r._getMenuActionItems(), onClose: e })
               }),
-              v()(u()(a), '_scribeOnClick', function (e) {
+              v()(u()(r), '_scribeOnClick', function (e) {
                 return function () {
-                  var t = a.props,
-                    n = t.analytics,
-                    r = t.note.tweet
-                  if (r) {
-                    var o = At.a.forTweet(r.rest_id)
-                    n.scribe({ element: e, action: 'click', data: { targets: [o] } })
+                  var t = r.props,
+                    a = t.analytics,
+                    n = t.note.tweet
+                  if (n) {
+                    var o = It.a.forTweet(n.rest_id)
+                    a.scribe({ element: e, action: 'click', data: { targets: [o] } })
                   }
                 }
               }),
-              v()(u()(a), '_handleRequestAppeal', function () {
-                var e = a.props,
+              v()(u()(r), '_handleRequestAppeal', function () {
+                var e = r.props,
                   t = e.createAppeal,
-                  n = e.createLocalApiErrorHandler
+                  a = e.createLocalApiErrorHandler
                 t(e.note.rest_id)
                   .then(function () {
-                    a.setState({ appealsRequestOpen: !1 }), a.setState({ appealRequested: !0 })
+                    r.setState({ appealsRequestOpen: !1 }), r.setState({ appealRequested: !0 })
                   })
-                  .catch(n({ defaultToast: { text: mn, withAutoDismiss: !1, withClearButton: !0 }, showToast: !0 }))
+                  .catch(a({ defaultToast: { text: ma, withAutoDismiss: !1, withClearButton: !0 }, showToast: !0 }))
               }),
-              v()(u()(a), '_handleOpenAppealsModal', function () {
-                a.setState({ appealsRequestOpen: !0 })
+              v()(u()(r), '_handleOpenAppealsModal', function () {
+                r.setState({ appealsRequestOpen: !0 })
               }),
-              v()(u()(a), '_handleCloseAppealsModal', function () {
-                a.setState({ appealsRequestOpen: !1 })
+              v()(u()(r), '_handleCloseAppealsModal', function () {
+                r.setState({ appealsRequestOpen: !1 })
               }),
-              v()(u()(a), '_renderAppealsModal', function () {
-                var e = E.createElement(P.a, null, E.createElement(L.b, null, cn), E.createElement(Ce.a, Sn))
-                return E.createElement(je.a, {
-                  actionLabel: dn,
+              v()(u()(r), '_renderAppealsModal', function () {
+                var e = O.a.createElement(L.a, null, O.a.createElement(R.b, null, ca), O.a.createElement(Te.a, Sa))
+                return O.a.createElement(je.a, {
+                  actionLabel: da,
                   graphicDisplayMode: 'none',
-                  headline: on,
+                  headline: ia,
                   isFullHeightOnMobile: !0,
-                  onAction: a._handleRequestAppeal,
-                  onSecondaryAction: a._handleCloseAppealsModal,
-                  secondaryActionLabel: pn,
+                  onAction: r._handleRequestAppeal,
+                  onSecondaryAction: r._handleCloseAppealsModal,
+                  secondaryActionLabel: pa,
                   subtext: e,
                 })
               }),
-              v()(u()(a), '_renderAppealsStatus', function () {
-                var e = a.props,
+              v()(u()(r), '_renderAppealsStatus', function () {
+                var e = r.props,
                   t = e.note.can_appeal,
-                  n = e.showTweet,
-                  r = E.createElement(
-                    H.a.I18NFormatMessage,
+                  a = e.showTweet,
+                  n = O.a.createElement(
+                    F.a.I18NFormatMessage,
                     { $i18n: 'c5c4d000' },
-                    E.createElement(
-                      L.b,
-                      { onPress: a._handleOpenAppealsModal, withInteractiveStyling: !0, withUnderline: !0 },
-                      H.a.c8259b73,
+                    O.a.createElement(
+                      R.b,
+                      { onPress: r._handleOpenAppealsModal, withInteractiveStyling: !0, withUnderline: !0 },
+                      F.a.c8259b73,
                     ),
                   )
-                return a.state.appealRequested
-                  ? E.createElement(Lt.a, {
-                      Icon: G.a,
-                      action: { label: bn, link: 'https://twitter.github.io/birdwatch/additional-review' },
-                      headline: fn,
+                return r.state.appealRequested
+                  ? O.a.createElement(Rt.a, {
+                      Icon: Z.a,
+                      action: { label: ba, link: 'https://twitter.github.io/birdwatch/additional-review' },
+                      headline: fa,
                       type: 'success',
                     })
                   : t
-                  ? E.createElement(L.b, { color: 'gray700', size: 'subtext2', style: n && On.noteWithQT }, r)
+                  ? O.a.createElement(R.b, { color: 'gray700', size: 'subtext2', style: a && Oa.noteWithQT }, n)
                   : void 0
               }),
-              (a.state = {
+              (r.state = {
                 noteDetailsOpen: !1,
                 appealsRequestOpen: !1,
                 appealRequested: 'AppealReceived' === e.note.appeal_status,
               }),
-              a
+              r
             )
           }
           return (
-            l()(n, [
+            l()(a, [
               {
                 key: 'componentDidMount',
                 value: function () {
                   var e = this.props,
                     t = e.createLocalApiErrorHandler,
-                    n = e.fetchUserAlias,
-                    r = e.note.tweet,
-                    a = e.showTweet
-                  n().catch(t()), a && null != r && r.rest_id && this._handleFetchTweet()
+                    a = e.fetchUserAlias,
+                    n = e.note.tweet,
+                    r = e.showTweet
+                  a().catch(t()), r && null != n && n.rest_id && this._handleFetchTweet()
                 },
               },
               {
@@ -5202,129 +5230,133 @@
                 value: function () {
                   var e,
                     t,
-                    n = this,
-                    r = this.props,
-                    a = r.note,
-                    o = a.created_at,
-                    i = a.rating,
-                    c = a.rating_status,
-                    l = a.rating_survey,
-                    s = a.helpful_tags,
+                    a = this,
+                    n = this.props,
+                    r = n.note,
+                    o = r.created_at,
+                    i = r.rating,
+                    c = r.rating_status,
+                    l = r.rating_survey,
+                    s = r.helpful_tags,
                     u = void 0 === s ? [] : s,
-                    d = a.not_helpful_tags,
+                    d = r.not_helpful_tags,
                     p = void 0 === d ? [] : d,
-                    f = a.rest_id,
-                    b = a.data_v1,
-                    m = a.tweetId,
-                    h = a.tweet,
-                    y = r.showPivot,
-                    v = r.showRating,
-                    g = r.showTweet,
+                    f = r.rest_id,
+                    b = r.data_v1,
+                    m = r.tweetId,
+                    h = r.tweet,
+                    y = n.showPivot,
+                    v = n.showRating,
+                    g = n.showTweet,
                     w = this.context.featureSwitches,
-                    O = m || (null == h ? void 0 : h.rest_id),
+                    E = m || (null == h ? void 0 : h.rest_id),
                     _ = (null == b || null === (e = b.summary) || void 0 === e ? void 0 : e.text) || '',
                     S = (null == b || null === (t = b.summary) || void 0 === t ? void 0 : t.entities) || [],
                     C = (null == i ? void 0 : i.data_v1) || {},
-                    j = (null == i ? void 0 : i.data_v2) || {},
-                    T = 2 === (null == i ? void 0 : i.version),
-                    A = T ? j : C,
-                    I = Object(x.a)(A),
-                    R = (w.isTrue('responsive_web_birdwatch_ratings_v2_enabled') && I) || T,
+                    T = (null == i ? void 0 : i.data_v2) || {},
+                    j = 2 === (null == i ? void 0 : i.version),
+                    A = j ? T : C,
+                    I = Object(P.a)(A),
+                    x = (w.isTrue('responsive_web_birdwatch_ratings_v2_enabled') && I) || j,
                     D =
                       (w.isTrue('responsive_web_birdwatch_rating_participant_enabled') ||
                         w.isTrue('responsive_web_birdwatch_rating_crowd_enabled')) &&
                       !this._isOwner() &&
                       v,
                     k = w.isTrue('responsive_web_birdwatch_appeals_enabled') && this.state.appealsRequestOpen,
-                    M = this.props.note.birdwatch_profile,
-                    H = (null == M ? void 0 : M.alias) || '',
-                    F = (null == M ? void 0 : M.badges) || [],
+                    B = this.props.note.birdwatch_profile,
+                    H = (null == B ? void 0 : B.alias) || '',
+                    F = (null == B ? void 0 : B.badges) || [],
                     z = function () {
-                      return n.setState({ noteDetailsOpen: !1 })
+                      return a.setState({ noteDetailsOpen: !1 })
                     }
-                  return E.createElement(Se.a, null, function (e) {
+                  return O.a.createElement(Ce.a, null, function (e) {
                     var t = e.windowWidth
-                    return E.createElement(
-                      P.a,
-                      { key: f, style: On.noteContainer },
-                      k && n._renderAppealsModal(),
-                      E.createElement(
-                        P.a,
-                        { style: On.noteTopContainer },
-                        g && O
-                          ? E.createElement(
-                              P.a,
-                              { style: On.tweetContainer },
-                              E.createElement(jt.a, { isCondensed: !0, tweetId: O }),
+                    return O.a.createElement(
+                      L.a,
+                      { key: f, style: Oa.noteContainer },
+                      k && a._renderAppealsModal(),
+                      O.a.createElement(
+                        L.a,
+                        { style: Oa.noteTopContainer },
+                        g && E
+                          ? O.a.createElement(
+                              L.a,
+                              { style: Oa.tweetContainer },
+                              O.a.createElement(jt.a, { isCondensed: !0, tweetId: E }),
                             )
                           : null,
-                        E.createElement(
-                          P.a,
-                          { style: [On.noteTop, g && On.noteWithQT] },
-                          E.createElement(
-                            P.a,
-                            { style: On.noteBody },
-                            E.createElement(
-                              Rt.a,
-                              { style: On.noteInfoMiddots },
+                        O.a.createElement(
+                          L.a,
+                          { style: [Oa.noteTop, g && Oa.noteWithQT] },
+                          O.a.createElement(
+                            L.a,
+                            { style: Oa.noteBody },
+                            O.a.createElement(
+                              Dt.a,
+                              { style: Oa.noteInfoMiddots },
                               (function (e) {
                                 switch (e) {
-                                  case hn:
-                                    return wn(On.iconGreen, tn)
-                                  case yn:
-                                    return wn(On.iconRed, rn)
-                                  case vn:
-                                    return wn(On.iconGray, nn)
+                                  case ha:
+                                    return wa(Oa.iconGreen, aa)
+                                  case ya:
+                                    return wa(Oa.iconRed, ra)
+                                  case va:
+                                    return wa(Oa.iconGray, na)
                                   default:
                                     return null
                                 }
                               })(c),
-                              t >= N.a.theme.breakpoints.medium ? gn(c, u, p) : null,
+                              t >= M.a.theme.breakpoints.medium ? ga(c, u, p) : null,
                               o
-                                ? E.createElement(Dt.a, { style: [On.ratingInfoItem, On.timestamp], timestamp: o })
+                                ? O.a.createElement(kt.a, { style: [Oa.ratingInfoItem, Oa.timestamp], timestamp: o })
                                 : null,
                             ),
-                            t < N.a.theme.breakpoints.medium
-                              ? E.createElement(Rt.a, { style: On.noteInfoMiddots }, gn(c, u, p))
+                            t < M.a.theme.breakpoints.medium
+                              ? O.a.createElement(Dt.a, { style: Oa.noteInfoMiddots }, ga(c, u, p))
                               : null,
-                            E.createElement(
-                              P.a,
-                              { style: On.noteTextSection },
-                              E.createElement(Tt.a, { entities: S, onEntityClick: n._scribeOnClick('link'), text: _ }),
+                            O.a.createElement(
+                              L.a,
+                              { style: Oa.noteTextSection },
+                              O.a.createElement(At.a, {
+                                entities: S,
+                                onEntityClick: a._scribeOnClick('link'),
+                                text: _,
+                              }),
                             ),
                           ),
-                          E.createElement(B.a, { renderActionMenu: n._renderCurationActionMenu, style: On.caret }),
+                          O.a.createElement(N.a, { renderActionMenu: a._renderCurationActionMenu, style: Oa.caret }),
                         ),
                         D
-                          ? E.createElement(
-                              P.a,
-                              { style: On.ratingContainer },
-                              R
-                                ? E.createElement(it, { noteId: f, rating: j, ratingSurvey: l })
-                                : E.createElement(we, { noteId: f, rating: C }),
+                          ? O.a.createElement(
+                              L.a,
+                              { style: Oa.ratingContainer },
+                              x
+                                ? O.a.createElement(ct, { noteId: f, rating: T, ratingSurvey: l })
+                                : O.a.createElement(Ee, { noteId: f, rating: C }),
                             )
                           : null,
-                        w.isTrue('responsive_web_birdwatch_appeals_enabled') ? n._renderAppealsStatus() : null,
+                        w.isTrue('responsive_web_birdwatch_appeals_enabled') ? a._renderAppealsStatus() : null,
                       ),
                       y &&
-                        O &&
+                        E &&
                         w.isTrue('responsive_web_birdwatch_rating_participant_enabled') &&
-                        E.createElement(
-                          kt.a,
+                        O.a.createElement(
+                          Bt.a,
                           null,
-                          E.createElement(
-                            L.b,
+                          O.a.createElement(
+                            R.b,
                             {
-                              link: '/i/birdwatch/t/'.concat(O),
-                              onPress: n._scribeOnClick('pivot'),
-                              style: [On.pivot, g && On.pivotWithQT],
+                              link: '/i/birdwatch/t/'.concat(E),
+                              onPress: a._scribeOnClick('pivot'),
+                              style: [Oa.pivot, g && Oa.pivotWithQT],
                               withInteractiveStyling: !1,
                             },
-                            en,
+                            ta,
                           ),
                         ),
-                      n.state.noteDetailsOpen &&
-                        E.createElement(Ct, {
+                      a.state.noteDetailsOpen &&
+                        O.a.createElement(Tt, {
                           alias: H,
                           closeNoteDetails: z,
                           created_at: o,
@@ -5336,11 +5368,11 @@
                 },
               },
             ]),
-            n
+            a
           )
-        })(E.Component)
-      v()(En, 'defaultProps', { showPivot: !1, showRating: !0, showTweet: !1 }), v()(En, 'contextType', S.a)
-      var On = N.a.create(function (e) {
+        })(O.a.Component)
+      v()(Ea, 'defaultProps', { showPivot: !1, showRating: !0, showTweet: !1 }), v()(Ea, 'contextType', C.a)
+      var Oa = M.a.create(function (e) {
           return {
             caret: { display: 'flex', alignSelf: 'flex-start', flex: 1, flexBasis: '0%', flexDirection: 'row-reverse' },
             classification: { paddingRight: e.spaces.space4 },
@@ -5390,62 +5422,63 @@
             tweetContainer: { marginBottom: e.spaces.space12 },
           }
         }),
-        _n = function (e) {
-          return E.createElement(Mt.a, { style: [On.icon, e] })
+        _a = function (e) {
+          return O.a.createElement(Ht.a, { style: [Oa.icon, e] })
         },
-        Sn = {
-          accessibilityLabel: an,
-          containerStyle: On.infoItemContainer,
+        Sa = {
+          accessibilityLabel: oa,
+          containerStyle: Oa.infoItemContainer,
           items: [
-            { label: '', decoration: E.createElement(Ht.a, { style: On.iconAppeals }), description: ln },
-            { label: '', decoration: E.createElement(Vt, { style: On.iconAppeals }), description: sn },
-            { label: '', decoration: E.createElement(Xt.a, { style: On.iconAppeals }), description: un },
+            { label: '', decoration: O.a.createElement(Ft.a, { style: Oa.iconAppeals }), description: la },
+            { label: '', decoration: O.a.createElement(Xt, { style: Oa.iconAppeals }), description: sa },
+            { label: '', decoration: O.a.createElement(qt.a, { style: Oa.iconAppeals }), description: ua },
           ],
         },
-        Cn = ut(En)
-      t.a = Cn
+        Ca = dt(Ea)
+      t.a = Ca
     },
-    b5s6: function (e, t, n) {
+    b5s6: function (e, t, a) {
       'use strict'
-      var r = n('97Jx'),
-        a = n.n(r),
-        o = n('m3Bd'),
-        i = n.n(o),
-        c = n('ERkP'),
-        l = n('v6aA'),
-        s = n('XOJV'),
-        u = n('eSoz'),
-        d = n('rxPX'),
-        p = n('0KEI'),
-        f = function (e, t) {
+      var n = a('97Jx'),
+        r = a.n(n),
+        o = a('m3Bd'),
+        i = a.n(o),
+        c = a('ERkP'),
+        l = a.n(c),
+        s = a('v6aA'),
+        u = a('XOJV'),
+        d = a('eSoz'),
+        p = a('rxPX'),
+        f = a('0KEI'),
+        b = function (e, t) {
           return t.tweetId
         },
-        b = function (e, t) {
-          var n = t.tweetId,
-            r = n && s.a.select(e, n)
-          return r ? Object(u.g)(e, r) : void 0
+        m = function (e, t) {
+          var a = t.tweetId,
+            n = a && u.a.select(e, a)
+          return n ? Object(d.g)(e, n) : void 0
         },
-        m = Object(d.a)()
+        h = Object(p.a)()
           .propsFromState(function () {
-            return { community: b, hydratedTweet: s.a.createHydratedTweetSelector(f) }
+            return { community: m, hydratedTweet: u.a.createHydratedTweetSelector(b) }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(p.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(f.createLocalApiErrorHandlerWithContextFactory)(
                 'QUOTE_TWEET_CONTAINER',
               ),
-              fetchCommunityIfNeeded: u.c.fetchOneIfNeeded,
+              fetchCommunityIfNeeded: d.c.fetchOneIfNeeded,
             }
           }),
-        h = n('YeIG'),
-        y = n('uCxL'),
-        v = n('x5Pi'),
-        g = m(function (e) {
+        y = a('YeIG'),
+        v = a('uCxL'),
+        g = a('x5Pi'),
+        w = h(function (e) {
           var t = e.community,
-            n = e.createLocalApiErrorHandler,
-            r = e.fetchCommunityIfNeeded,
+            a = e.createLocalApiErrorHandler,
+            n = e.fetchCommunityIfNeeded,
             o = e.hydratedTweet,
-            s =
+            c =
               (e.tweetId,
               i()(e, [
                 'community',
@@ -5454,139 +5487,141 @@
                 'hydratedTweet',
                 'tweetId',
               ])),
-            u = c.useContext(l.a),
+            u = l.a.useContext(s.a),
             d = u.featureSwitches,
             p = u.loggedInUserId,
             f = null == o ? void 0 : o.community_id_str
-          c.useEffect(
+          l.a.useEffect(
             function () {
-              f && Object(h.a)(t) && r(f).catch(n())
+              f && Object(y.a)(t) && n(f).catch(a())
             },
-            [t, f, n, r],
+            [t, f, a, n],
           )
           var b = d.isTrue('responsive_web_alt_text_badge_enabled'),
-            m = o && Object(v.f)(o, p, t),
-            g = m && Object(v.e)(m),
+            m = o && Object(g.f)(o, p, t),
+            h = m && Object(g.e)(m),
             w = d.isTrue('responsive_web_reactions_enabled')
-          return c.createElement(
-            y.a,
-            a()({}, s, {
+          return l.a.createElement(
+            v.a,
+            r()({}, c, {
               loggedInUserId: p,
               shouldShowAltLabelAlways: b,
-              socialContextProps: g,
+              socialContextProps: h,
               tweet: o,
               withReactions: w,
             }),
           )
         })
-      t.a = g
+      t.a = w
     },
-    dW4k: function (e, t, n) {
+    dW4k: function (e, t, a) {
       'use strict'
-      n.r(t),
-        n.d(t, 'SelfUserNotePageRedirect', function () {
-          return E
+      a.r(t),
+        a.d(t, 'SelfUserNotePageRedirect', function () {
+          return O
         })
-      var r = n('ddV6'),
-        a = n.n(r),
-        o = n('ERkP'),
-        i = n('Qwev'),
-        c = n('v6aA'),
-        l = n('9StO'),
-        s = n('vZpt'),
-        u = n('L5MV'),
-        d = n('MvLc'),
-        p = n('rxPX'),
-        f = n('0KEI'),
-        b = Object(p.a)()
+      var n = a('ddV6'),
+        r = a.n(n),
+        o = a('ERkP'),
+        i = a.n(o),
+        c = a('Qwev'),
+        l = a('v6aA'),
+        s = a('9StO'),
+        u = a('vZpt'),
+        d = a('L5MV'),
+        p = a('MvLc'),
+        f = a('rxPX'),
+        b = a('0KEI'),
+        m = Object(f.a)()
           .propsFromState(function () {
-            return { userAlias: d.y, showAliasSelfSelect: d.v }
+            return { userAlias: p.y, showAliasSelfSelect: p.v }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(f.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
-              fetchUserAlias: d.l,
-              fetchShowAliasSelfSelect: d.j,
+              createLocalApiErrorHandler: Object(b.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
+              fetchUserAlias: p.l,
+              fetchShowAliasSelfSelect: p.j,
             }
           }),
-        m = n('3XMw'),
-        h = n.n(m),
-        y = n('5FtR'),
-        v = n('VS6U'),
-        g = n('nymP'),
-        w = h.a.ff692d63,
-        E = function (e) {
+        h = a('3XMw'),
+        y = a.n(h),
+        v = a('5FtR'),
+        g = a('VS6U'),
+        w = a('nymP'),
+        E = y.a.ff692d63,
+        O = function (e) {
           var t = e.createLocalApiErrorHandler,
-            n = e.fetchShowAliasSelfSelect,
-            r = e.fetchUserAlias,
-            d = e.history,
+            a = e.fetchShowAliasSelfSelect,
+            n = e.fetchUserAlias,
+            o = e.history,
             p = e.showAliasSelfSelect,
             f = e.userAlias,
-            b = o.useContext(c.a).featureSwitches.isTrue('responsive_web_birdwatch_aliases_enabled'),
-            m = o.useState(!0),
-            h = a()(m, 2),
-            E = h[0],
+            b = i.a.useContext(l.a).featureSwitches.isTrue('responsive_web_birdwatch_aliases_enabled'),
+            m = i.a.useState(!0),
+            h = r()(m, 2),
+            y = h[0],
             O = h[1]
-          o.useEffect(
+          i.a.useEffect(
             function () {
-              r()
+              n()
                 .then(function () {
                   return O(!1)
                 })
                 .catch(t())
             },
-            [t, r],
+            [t, n],
           ),
-            o.useEffect(
+            i.a.useEffect(
               function () {
-                n().catch(t())
+                a().catch(t())
               },
-              [t, n],
+              [t, a],
             )
           var _ = function (e) {
-            r()
+            n()
               .then(function () {
                 return O(!1)
               })
               .catch(t())
           }
-          return o.createElement(v.a, {
-            TabBar: u.a,
-            history: d,
-            logoButton: o.createElement(o.Fragment, null),
-            primaryContent: E
-              ? o.createElement(i.a, { size: 'large' })
+          return i.a.createElement(g.a, {
+            TabBar: d.a,
+            history: o,
+            logoButton: i.a.createElement(i.a.Fragment, null),
+            primaryContent: y
+              ? i.a.createElement(c.a, { size: 'large' })
               : f
-              ? o.createElement(y.a, { to: '/i/birdwatch/u/'.concat(f) })
+              ? i.a.createElement(v.a, { to: '/i/birdwatch/u/'.concat(f) })
               : b && p
-              ? o.createElement(l.a, { onAliasSelected: _ })
-              : o.createElement(g.a, null),
-            sidebarContent: o.createElement(s.a, null),
-            title: w,
+              ? i.a.createElement(s.a, { onAliasSelected: _ })
+              : i.a.createElement(w.a, null),
+            sidebarContent: i.a.createElement(u.a, null),
+            title: E,
             withTweetButton: !1,
           })
         },
-        O = b(E)
-      t.default = O
+        _ = m(O)
+      t.default = _
     },
-    eqZz: function (e, t, n) {
+    eqZz: function (e, t, a) {
       'use strict'
-      var r = n('ERkP'),
-        a = n('3XMw'),
-        o = n.n(a),
-        i = n('B/qP'),
-        c = n('MWbm'),
-        l = n('j7Bv'),
-        s = n('t62R'),
-        u = n('rHpw'),
-        d = o.a.c57760e9,
-        p = o.a.c45ef9c1,
-        f = o.a.g29805f5,
-        b = o.a.b1056323,
-        m = function () {
-          return r.createElement(i.a, { style: h.innerIconColor })
+      var n = a('ERkP'),
+        r = a.n(n),
+        o = a('3XMw'),
+        i = a.n(o),
+        c = a('B/qP'),
+        l = a('MWbm'),
+        s = a('j7Bv'),
+        u = a('t62R'),
+        d = a('rHpw'),
+        p = i.a.c57760e9,
+        f = i.a.c45ef9c1,
+        b = i.a.g29805f5,
+        m = i.a.b1056323,
+        h = function () {
+          return r.a.createElement(c.a, { style: y.innerIconColor })
         },
-        h = u.a.create(function (e) {
+        y = d.a.create(function (e) {
           return {
             awardSection: { flexDirection: 'row', marginBottom: e.spaces.space8, alignItems: 'center' },
             goldAward: { backgroundColor: e.colors.yellow500 },
@@ -5596,281 +5631,286 @@
             silverAward: { backgroundColor: e.colors.gray300 },
           }
         }),
-        y = {
-          Top10Author: { badgeStyle: h.goldAward, contributorText: f, badgeText: d },
-          Top10Rater: { badgeStyle: h.goldAward, contributorText: f, badgeText: p },
-          Top25Author: { badgeStyle: h.silverAward, contributorText: b, badgeText: d },
-          Top25Rater: { badgeStyle: h.silverAward, contributorText: b, badgeText: p },
+        v = {
+          Top10Author: { badgeStyle: y.goldAward, contributorText: b, badgeText: p },
+          Top10Rater: { badgeStyle: y.goldAward, contributorText: b, badgeText: f },
+          Top25Author: { badgeStyle: y.silverAward, contributorText: m, badgeText: p },
+          Top25Rater: { badgeStyle: y.silverAward, contributorText: m, badgeText: f },
         }
       t.a = function (e) {
         var t = e.badgeType,
-          n = y[t],
-          a = n.badgeStyle,
-          o = n.badgeText,
-          i = n.contributorText
-        return r.createElement(
-          c.a,
-          { style: h.awardSection },
-          r.createElement(l.a, { Icon: m, size: 'large', style: [h.ratingAward, a] }),
-          r.createElement(s.b, { style: h.ratingAwardText, weight: 'bold' }, i),
-          r.createElement(s.b, null, o),
+          a = v[t],
+          n = a.badgeStyle,
+          o = a.badgeText,
+          i = a.contributorText
+        return r.a.createElement(
+          l.a,
+          { style: y.awardSection },
+          r.a.createElement(s.a, { Icon: h, size: 'large', style: [y.ratingAward, n] }),
+          r.a.createElement(u.b, { style: y.ratingAwardText, weight: 'bold' }, i),
+          r.a.createElement(u.b, null, o),
         )
       }
     },
-    fBGZ: function (e, t, n) {
+    fBGZ: function (e, t, a) {
       'use strict'
-      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
-      var r = n('KEM+'),
-        a = n.n(r),
-        o = n('ERkP'),
-        i = n('Lsrn'),
-        c = n('k/Ka')
-      function l(e, t) {
-        var n = Object.keys(e)
+      a('+KXO'), a('1t7P'), a('LW0h'), a('daRM'), a('jwue'), a('+oxZ'), a('FtHn')
+      var n = a('KEM+'),
+        r = a.n(n),
+        o = a('ERkP'),
+        i = a.n(o),
+        c = a('Lsrn'),
+        l = a('k/Ka')
+      function s(e, t) {
+        var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
+          var n = Object.getOwnPropertySymbols(e)
           t &&
-            (r = r.filter(function (t) {
+            (n = n.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            n.push.apply(n, r)
+            a.push.apply(a, n)
         }
-        return n
+        return a
       }
-      function s(e) {
+      function u(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
+          var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? l(Object(n), !0).forEach(function (t) {
-                a()(e, t, n[t])
+            ? s(Object(a), !0).forEach(function (t) {
+                r()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : l(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : s(Object(a)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var u = function () {
+      var d = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(c.a)(
+        return Object(l.a)(
           'svg',
-          s(
-            s({}, e),
+          u(
+            u({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [i.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [c.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          o.createElement(
+          i.a.createElement(
             'g',
             null,
-            o.createElement('path', {
+            i.a.createElement('path', {
               d: 'M23.53 15.155c0 .716-.58 1.296-1.296 1.296h-4.128c-.034-.144-.077-.29-.136-.425-.05-.145-.102-.29-.17-.426-.444-.948-1.16-1.74-2.082-2.304-.12-.085-.247-.162-.375-.213-.12-.077-.247-.136-.384-.188.118-.18.255-.34.408-.495.86-.853 2.098-1.322 3.497-1.322h.017c2.738 0 4.648 1.68 4.648 4.077zM21.398 7.77c0 .682-.162 1.21-.478 1.578-.52.588-1.322.665-2.038.665-.725 0-1.527-.077-2.038-.665-.435-.495-.58-1.262-.435-2.328.195-1.5 1.116-2.396 2.464-2.396 1.34 0 2.26.895 2.465 2.396.032.264.058.52.058.75zm-9.408 4.52c-.084 0-.17 0-.246.01.077.008.162.008.24.008.084 0 .178 0 .263-.01-.085-.008-.17-.008-.256-.008z',
             }),
-            o.createElement('path', {
+            i.a.createElement('path', {
               d: 'M14.806 9.8c0 .768-.18 1.356-.537 1.765-.496.57-1.255.708-1.98.733-.017 0-.026.01-.043 0-.085-.01-.17-.01-.256-.01s-.17 0-.246.01c-.742-.017-1.535-.136-2.047-.733-.486-.554-.64-1.416-.478-2.618.23-1.68 1.26-2.686 2.762-2.686s2.54 1.007 2.763 2.687c.044.307.06.588.06.853zm2.43 8.16c0 .786-.63 1.417-1.416 1.417H8.145c-.776 0-1.416-.63-1.416-1.416 0-1.176.46-2.276 1.287-3.103.972-.972 2.405-1.492 3.974-1.5.922 0 1.75.16 2.466.468.136.05.264.11.384.188.128.06.256.128.375.213.563.358 1.032.82 1.373 1.373.085.135.162.28.23.425.068.136.12.28.17.426.163.47.248.974.248 1.51zM.47 15.155c0 .716.58 1.296 1.296 1.296h4.128c.034-.144.077-.29.136-.425.05-.145.102-.29.17-.426.444-.948 1.16-1.74 2.082-2.304.12-.085.247-.162.375-.213.12-.077.247-.136.384-.188-.118-.18-.255-.34-.408-.495-.86-.853-2.098-1.322-3.497-1.322h-.017c-2.746 0-4.648 1.68-4.648 4.077zM2.602 7.77c0 .682.162 1.21.478 1.578.52.588 1.322.665 2.038.665.725 0 1.527-.077 2.038-.665.435-.495.58-1.262.435-2.328-.204-1.5-1.125-2.397-2.472-2.397-1.34 0-2.26.895-2.465 2.396-.034.264-.05.52-.05.75z',
             }),
           ),
         )
       }
-      ;(u.metadata = { width: 24, height: 24 }), (t.a = u)
+      ;(d.metadata = { width: 24, height: 24 }), (t.a = d)
     },
-    hiGS: function (e, t, n) {
+    hiGS: function (e, t, a) {
       'use strict'
-      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
-      var r = n('KEM+'),
-        a = n.n(r),
-        o = n('ERkP'),
-        i = n('Lsrn'),
-        c = n('k/Ka')
-      function l(e, t) {
-        var n = Object.keys(e)
+      a('+KXO'), a('1t7P'), a('LW0h'), a('daRM'), a('jwue'), a('+oxZ'), a('FtHn')
+      var n = a('KEM+'),
+        r = a.n(n),
+        o = a('ERkP'),
+        i = a.n(o),
+        c = a('Lsrn'),
+        l = a('k/Ka')
+      function s(e, t) {
+        var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
+          var n = Object.getOwnPropertySymbols(e)
           t &&
-            (r = r.filter(function (t) {
+            (n = n.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            n.push.apply(n, r)
+            a.push.apply(a, n)
         }
-        return n
+        return a
       }
-      function s(e) {
+      function u(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
+          var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? l(Object(n), !0).forEach(function (t) {
-                a()(e, t, n[t])
+            ? s(Object(a), !0).forEach(function (t) {
+                r()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : l(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : s(Object(a)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var u = function () {
+      var d = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(c.a)(
+        return Object(l.a)(
           'svg',
-          s(
-            s({}, e),
+          u(
+            u({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [i.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [c.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          o.createElement(
+          i.a.createElement(
             'g',
             null,
-            o.createElement('path', {
+            i.a.createElement('path', {
               d: 'M20.746 5.236h-3.75V4.25c0-1.24-1.01-2.25-2.25-2.25h-5.5c-1.24 0-2.25 1.01-2.25 2.25v.986h-3.75c-.414 0-.75.336-.75.75s.336.75.75.75h.368l1.583 13.262c.216 1.193 1.31 2.027 2.658 2.027h8.282c1.35 0 2.442-.834 2.664-2.072l1.577-13.217h.368c.414 0 .75-.336.75-.75s-.335-.75-.75-.75zM8.496 4.25c0-.413.337-.75.75-.75h5.5c.413 0 .75.337.75.75v.986h-7V4.25zm8.822 15.48c-.1.55-.664.795-1.18.795H7.854c-.517 0-1.083-.246-1.175-.75L5.126 6.735h13.74L17.32 19.732z',
             }),
-            o.createElement('path', {
+            i.a.createElement('path', {
               d: 'M10 17.75c.414 0 .75-.336.75-.75v-7c0-.414-.336-.75-.75-.75s-.75.336-.75.75v7c0 .414.336.75.75.75zm4 0c.414 0 .75-.336.75-.75v-7c0-.414-.336-.75-.75-.75s-.75.336-.75.75v7c0 .414.336.75.75.75z',
             }),
           ),
         )
       }
-      ;(u.metadata = { width: 24, height: 24 }), (t.a = u)
+      ;(d.metadata = { width: 24, height: 24 }), (t.a = d)
     },
-    hxu0: function (e, t, n) {
+    hxu0: function (e, t, a) {
       'use strict'
-      var r = n('97Jx'),
-        a = n.n(r),
-        o = n('ERkP'),
-        i = n('vqbU')
+      var n = a('97Jx'),
+        r = a.n(n),
+        o = a('ERkP'),
+        i = a.n(o),
+        c = a('vqbU')
       t.a = function (e) {
         return function (t) {
-          return o.createElement(i.a.Consumer, null, function (n) {
-            return o.createElement(e, a()({}, t, { isInSidebar: n }))
+          return i.a.createElement(c.a.Consumer, null, function (a) {
+            return i.a.createElement(e, r()({}, t, { isInSidebar: a }))
           })
         }
       }
     },
-    'iCa+': function (e, t, n) {
+    'iCa+': function (e, t, a) {
       'use strict'
-      n.r(t)
-      n('WNMA'), n('KqXw'), n('MvUL')
-      var r = n('ERkP'),
-        a = n('3XMw'),
-        o = n.n(a),
-        i = n.p + 'birdwatch_note_live.b1a67015.png',
-        c = n('aITJ'),
-        l = n('t62R'),
-        s = n('feu+'),
-        u = n('rHpw'),
-        d = n('U+bB'),
-        p = n('MWbm'),
-        f = o.a.a05667aa,
-        b = o.a.j5a1d85a,
-        m = o.a.ace99891,
-        h = function () {
-          return r.createElement(d.a, { source: i, style: y.image })
+      a.r(t)
+      a('WNMA'), a('KqXw'), a('MvUL')
+      var n = a('ERkP'),
+        r = a.n(n),
+        o = a('3XMw'),
+        i = a.n(o),
+        c = a.p + 'birdwatch_note_live.b1a67015.png',
+        l = a('aITJ'),
+        s = a('t62R'),
+        u = a('feu+'),
+        d = a('rHpw'),
+        p = a('U+bB'),
+        f = a('MWbm'),
+        b = i.a.a05667aa,
+        m = i.a.j5a1d85a,
+        h = i.a.ace99891,
+        y = function () {
+          return r.a.createElement(p.a, { source: c, style: v.image })
         },
-        y = u.a.create(function (e) {
+        v = d.a.create(function (e) {
           return { content: { marginVertical: e.spaces.space16 }, image: { height: '189px', width: '152px' } }
         })
       t.default = function (e) {
         var t = e.history,
-          n = e.match.params.tweetId,
-          a = r.createElement(p.a, null, r.createElement(l.b, null, f))
-        return r.createElement(s.a, {
-          actionLabel: b,
-          contentStyle: y.content,
-          graphic: h,
+          a = e.match.params.tweetId,
+          n = r.a.createElement(f.a, null, r.a.createElement(s.b, null, b))
+        return r.a.createElement(u.a, {
+          actionLabel: m,
+          contentStyle: v.content,
+          graphic: y,
           graphicDisplayMode: 'illustration',
-          headline: m,
+          headline: h,
           isFullHeightOnMobile: !0,
           onAction: function () {
-            t.push('/i/birdwatch/t/'.concat(n))
+            t.push('/i/birdwatch/t/'.concat(a))
           },
           onClose: function () {
-            c.b.isTwitterApp() || t.replace('/i/status/'.concat(n))
+            l.b.isTwitterApp() || t.replace('/i/status/'.concat(a))
           },
-          subtext: a,
-          withCloseButton: !c.b.isTwitterApp(),
+          subtext: n,
+          withCloseButton: !l.b.isTwitterApp(),
         })
       }
     },
-    mQYW: function (e, t, n) {
+    mQYW: function (e, t, a) {
       'use strict'
-      n.r(t),
-        n.d(t, 'BirdwatchNotesUserScreen', function () {
-          return he
+      a.r(t),
+        a.d(t, 'BirdwatchNotesUserScreen', function () {
+          return ye
         })
-      var r = n('ddV6'),
-        a = n.n(r),
-        o = (n('z84I'), n('uFXj'), n('ERkP')),
-        i = n('v6aA'),
-        c = n('9StO'),
-        l = n('eqZz'),
-        s = n('97Jx'),
-        u = n.n(s),
-        d = n('m3Bd'),
-        p = n.n(d),
-        f = n('ZD0R'),
-        b = n('xSpP'),
-        m = n('rxPX'),
-        h = function (e, t) {
-          var n = t.noteId
-          return b.a.select(e, n)
+      var n = a('ddV6'),
+        r = a.n(n),
+        o = (a('z84I'), a('uFXj'), a('ERkP')),
+        i = a.n(o),
+        c = a('v6aA'),
+        l = a('9StO'),
+        s = a('eqZz'),
+        u = a('97Jx'),
+        d = a.n(u),
+        p = a('m3Bd'),
+        f = a.n(p),
+        b = a('ZD0R'),
+        m = a('xSpP'),
+        h = a('rxPX'),
+        y = function (e, t) {
+          var a = t.noteId
+          return m.a.select(e, a)
         },
-        y = Object(m.a)().propsFromState(function () {
-          return { note: h }
+        v = Object(h.a)().propsFromState(function () {
+          return { note: y }
         })(function (e) {
           var t = e.note,
-            n = (e.noteId, p()(e, ['note', 'noteId']))
-          return t ? o.createElement(f.a, u()({ note: t }, n)) : null
+            a = (e.noteId, f()(e, ['note', 'noteId']))
+          return t ? i.a.createElement(b.a, d()({ note: t }, a)) : null
         }),
-        v = n('vZpt'),
-        g = n('L5MV'),
-        w = (n('WNMA'), n('KqXw'), n('MvLc')),
-        E = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('KEM+')),
-        O = n.n(E),
-        _ = n('wAC9')
-      function S(e, t) {
-        var n = Object.keys(e)
+        g = a('vZpt'),
+        w = a('L5MV'),
+        E = (a('WNMA'), a('KqXw'), a('MvLc')),
+        O = (a('+KXO'), a('1t7P'), a('LW0h'), a('daRM'), a('jwue'), a('+oxZ'), a('FtHn'), a('KEM+')),
+        _ = a.n(O),
+        S = a('wAC9')
+      function C(e, t) {
+        var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
+          var n = Object.getOwnPropertySymbols(e)
           t &&
-            (r = r.filter(function (t) {
+            (n = n.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            n.push.apply(n, r)
+            a.push.apply(a, n)
         }
-        return n
+        return a
       }
-      function C(e) {
+      function T(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
+          var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? S(Object(n), !0).forEach(function (t) {
-                O()(e, t, n[t])
+            ? C(Object(a), !0).forEach(function (t) {
+                _()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : S(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : C(Object(a)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var j = n('hqKg'),
-        T = n('0KEI'),
-        A = function (e, t) {
+      var j = a('hqKg'),
+        A = a('0KEI'),
+        I = function (e, t) {
           return t.match.params.alias
         },
-        I = function (e, t) {
-          return Object(j.createSelector)(A, function (e) {
+        x = function (e, t) {
+          return Object(j.createSelector)(I, function (e) {
             return e
               ? (function (e) {
-                  return Object(_.a)({
+                  return Object(S.a)({
                     contextSuffix: 'BIRDWATCH_CONTRIBUTOR_NOTES_SLICE',
                     getFetchApiEndpoint: function (e) {
                       return e.Birdwatch.fetchBirdwatchContributorNotesSlice
                     },
                     getEndpointParams: function (t) {
-                      return C(C({}, t), {}, { alias: e })
+                      return T(T({}, t), {}, { alias: e })
                     },
                     sliceKey: 'birdwatchContributorNotesSlice-'.concat(e),
                   })
@@ -5878,79 +5918,79 @@
               : void 0
           })
         },
-        x = function (e, t) {
-          return w.p(e, A(0, t))
-        },
         P = function (e, t) {
-          return w.o(e, A(0, t))
+          return E.p(e, I(0, t))
         },
         L = function (e, t) {
-          return w.v(e)
+          return E.o(e, I(0, t))
         },
-        R = Object(m.a)()
+        R = function (e, t) {
+          return E.v(e)
+        },
+        D = Object(h.a)()
           .propsFromState(function () {
             return {
-              alias: A,
-              notesSlice: I(),
-              ratingsData: x,
-              contributorBadgeData: P,
-              showAliasSelfSelect: L,
-              userAlias: w.y,
+              alias: I,
+              notesSlice: x(),
+              ratingsData: P,
+              contributorBadgeData: L,
+              showAliasSelfSelect: R,
+              userAlias: E.y,
             }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(T.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
-              fetchBirdwatchProfile: w.g,
-              fetchShowAliasSelfSelect: w.j,
-              fetchUserAlias: w.l,
+              createLocalApiErrorHandler: Object(A.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
+              fetchBirdwatchProfile: E.g,
+              fetchShowAliasSelfSelect: E.j,
+              fetchUserAlias: E.l,
             }
           }),
-        D = n('W6+M'),
-        k = n('BcsE'),
-        B = n('yoO3'),
-        N = n('7JQg'),
-        M = n('VS6U'),
-        H = n('FS1z'),
-        F = n('aITJ'),
-        z = n('nymP'),
-        W = n('MWbm'),
-        U = n('t62R'),
-        K = n('FIs5'),
-        V = n('MtXG'),
-        X = n('0yYu'),
-        q = n('/yvb'),
-        G = n('j7Bv'),
-        Z = n('6vad'),
-        Q = n('cHvH'),
-        Y = n('rHpw'),
-        J = n('3XMw'),
-        $ = n.n(J),
-        ee = n('B/qP'),
-        te = n('6s7X'),
-        ne = n('ms2t'),
-        re = $.a.ff692d63,
-        ae = $.a.ab28945b,
-        oe = $.a.jaf0d42c,
-        ie = $.a.fe27c1e1,
-        ce = $.a.b8b34f54,
-        le = $.a.fd284b08,
-        se = $.a.ff746f63,
-        ue = $.a.hc19704b,
-        de = $.a.j44125ee,
-        pe = $.a.da55067b,
-        fe = o.createElement(
-          $.a.I18NFormatMessage,
+        k = a('W6+M'),
+        B = a('BcsE'),
+        N = a('yoO3'),
+        M = a('7JQg'),
+        H = a('VS6U'),
+        F = a('FS1z'),
+        z = a('aITJ'),
+        W = a('nymP'),
+        U = a('MWbm'),
+        K = a('t62R'),
+        V = a('FIs5'),
+        X = a('MtXG'),
+        q = a('0yYu'),
+        G = a('/yvb'),
+        Z = a('j7Bv'),
+        Q = a('6vad'),
+        Y = a('cHvH'),
+        J = a('rHpw'),
+        $ = a('3XMw'),
+        ee = a.n($),
+        te = a('B/qP'),
+        ae = a('6s7X'),
+        ne = a('ms2t'),
+        re = ee.a.ff692d63,
+        oe = ee.a.ab28945b,
+        ie = ee.a.jaf0d42c,
+        ce = ee.a.fe27c1e1,
+        le = ee.a.b8b34f54,
+        se = ee.a.fd284b08,
+        ue = ee.a.ff746f63,
+        de = ee.a.hc19704b,
+        pe = ee.a.j44125ee,
+        fe = ee.a.da55067b,
+        be = i.a.createElement(
+          ee.a.I18NFormatMessage,
           { $i18n: 'bc62b131' },
-          o.createElement(U.b, { link: 'https://twitter.github.io/birdwatch/aliases/' }, $.a.j1a30557),
+          i.a.createElement(K.b, { link: 'https://twitter.github.io/birdwatch/aliases/' }, ee.a.j1a30557),
         ),
-        be = { label: ue, preferredHorizontalOrientation: 'start' },
-        me = { pathname: 'https://twitter.github.io/birdwatch/about/ranking-notes/', external: !0 },
-        he = function (e) {
-          var t = o.useContext(i.a).featureSwitches,
-            n = e.alias,
-            r = e.contributorBadgeData,
-            s = e.createLocalApiErrorHandler,
+        me = { label: de, preferredHorizontalOrientation: 'start' },
+        he = { pathname: 'https://twitter.github.io/birdwatch/about/ranking-notes/', external: !0 },
+        ye = function (e) {
+          var t = i.a.useContext(c.a).featureSwitches,
+            a = e.alias,
+            n = e.contributorBadgeData,
+            o = e.createLocalApiErrorHandler,
             u = e.fetchBirdwatchProfile,
             d = e.fetchShowAliasSelfSelect,
             p = e.fetchUserAlias,
@@ -5958,240 +5998,240 @@
             b = e.notesSlice,
             m = e.ratingsData,
             h = e.showAliasSelfSelect,
-            w = e.userAlias,
-            E = o.useState(h),
-            O = a()(E, 2),
+            y = e.userAlias,
+            E = i.a.useState(h),
+            O = r()(E, 2),
             _ = O[0],
             S = O[1],
-            C = w === n
-          o.useEffect(
+            C = y === a
+          i.a.useEffect(
             function () {
-              d().catch(s())
+              d().catch(o())
             },
-            [s, d],
+            [o, d],
           ),
-            o.useEffect(
+            i.a.useEffect(
               function () {
-                n && u(n).catch(s())
+                a && u(a).catch(o())
               },
-              [s, u, n],
+              [o, u, a],
             ),
-            o.useEffect(
+            i.a.useEffect(
               function () {
-                p().catch(s())
+                p().catch(o())
               },
-              [s, p],
+              [o, p],
             ),
-            o.useEffect(
+            i.a.useEffect(
               function () {
                 S(h)
               },
               [h],
             )
-          var j,
-            T,
+          var T,
+            j,
             A,
             I,
             x,
             P,
             L,
             R,
-            J,
-            ue = t.isTrue('responsive_web_birdwatch_note_writing_enabled'),
-            he = t.isTrue('responsive_web_birdwatch_ratings_v2_enabled'),
-            ve = t.isTrue('responsive_web_birdwatch_aliases_enabled'),
-            ge = o.useMemo(
+            D,
+            $ = t.isTrue('responsive_web_birdwatch_note_writing_enabled'),
+            de = t.isTrue('responsive_web_birdwatch_ratings_v2_enabled'),
+            ye = t.isTrue('responsive_web_birdwatch_aliases_enabled'),
+            ge = i.a.useMemo(
               function () {
-                return { page: 'birdwatch', section: ue ? 'user_notes_participant' : 'user_notes' }
+                return { page: 'birdwatch', section: $ ? 'user_notes_participant' : 'user_notes' }
               },
-              [ue],
+              [$],
             ),
-            we = o.createElement(K.a, { header: de, message: pe }),
-            Ee = o.createElement(z.a, null),
+            we = i.a.createElement(V.a, { header: pe, message: fe }),
+            Ee = i.a.createElement(W.a, null),
             Oe = function (e) {
-              return o.createElement(
-                W.a,
+              return i.a.createElement(
+                U.a,
                 { key: e },
-                o.createElement(y, { noteId: e, showPivot: C, showRating: !1, showTweet: !0 }),
-                o.createElement(X.a, null),
+                i.a.createElement(v, { noteId: e, showPivot: C, showRating: !1, showTweet: !0 }),
+                i.a.createElement(q.a, null),
               )
             },
             _e = function () {
               return C ? Ee : we
             },
-            Se = C ? re : ae,
-            Ce = ve && _ && C,
-            je = ve ? void 0 : '@'.concat(n)
-          return o.createElement(
-            N.b,
+            Se = C ? re : oe,
+            Ce = ye && _ && C,
+            Te = ye ? void 0 : '@'.concat(a)
+          return i.a.createElement(
+            M.b,
             { namespace: ge },
-            o.createElement(
-              B.a,
+            i.a.createElement(
+              N.a,
               null,
-              o.createElement(M.a, {
-                TabBar: g.a,
+              i.a.createElement(H.a, {
+                TabBar: w.a,
                 backLocation: '/i/birdwatch',
                 history: f,
-                logoButton: o.createElement(o.Fragment, null),
+                logoButton: i.a.createElement(i.a.Fragment, null),
                 primaryContent: Ce
-                  ? o.createElement(c.a, {
+                  ? i.a.createElement(l.a, {
                       onAliasSelected: function (e) {
                         f.push('/i/birdwatch/u/me')
                       },
                     })
-                  : ((T = null == m ? void 0 : m.helpful),
+                  : ((j = null == m ? void 0 : m.helpful),
                     (A = null == m ? void 0 : m.somewhatHelpful),
                     (I = null == m ? void 0 : m.notHelpful),
-                    (x = void 0 !== T),
+                    (x = void 0 !== j),
                     (P = x && t.isTrue('responsive_web_birdwatch_profile_awards_enabled')),
-                    (L = r || []),
-                    (R = o.createElement(te.a, { style: ye.badgeStandingIcon })),
-                    (J = o.createElement(q.a, { hoverLabel: be, icon: R, link: me, style: ye.badgeStandingButton })),
-                    o.createElement(
-                      W.a,
+                    (L = n || []),
+                    (R = i.a.createElement(ae.a, { style: ve.badgeStandingIcon })),
+                    (D = i.a.createElement(G.a, { hoverLabel: me, icon: R, link: he, style: ve.badgeStandingButton })),
+                    i.a.createElement(
+                      U.a,
                       null,
-                      F.b.isTwitterApp() &&
-                        o.createElement(
-                          W.a,
-                          { style: ye.birdwatchProfileContainer },
-                          o.createElement(
-                            U.b,
-                            { numberOfLines: 1, size: 'headline1', style: ye.birdwatchProfileTitle, weight: 'bold' },
+                      z.b.isTwitterApp() &&
+                        i.a.createElement(
+                          U.a,
+                          { style: ve.birdwatchProfileContainer },
+                          i.a.createElement(
+                            K.b,
+                            { numberOfLines: 1, size: 'headline1', style: ve.birdwatchProfileTitle, weight: 'bold' },
                             Se,
                           ),
-                          o.createElement(X.a, null),
+                          i.a.createElement(q.a, null),
                         ),
-                      ve &&
-                        o.createElement(
-                          o.Fragment,
+                      ye &&
+                        i.a.createElement(
+                          i.a.Fragment,
                           null,
-                          o.createElement(G.a, {
+                          i.a.createElement(Z.a, {
                             Icon: ne.a,
                             color: 'neutral',
                             size: 'xxLarge',
-                            style: ye.genericBirdwatchProfileIcon,
+                            style: ve.genericBirdwatchProfileIcon,
                           }),
-                          o.createElement(Z.b, { style: ye.profileText, text: Object(D.a)(n) }),
-                          o.createElement(U.b, { color: 'gray700', style: ye.birdwatchAliasDisclaimerText }, fe),
-                          o.createElement(X.a, null),
+                          i.a.createElement(Q.b, { style: ve.profileText, text: Object(k.a)(a) }),
+                          i.a.createElement(K.b, { color: 'gray700', style: ve.birdwatchAliasDisclaimerText }, be),
+                          i.a.createElement(q.a, null),
                         ),
                       P &&
-                        o.createElement(
-                          o.Fragment,
+                        i.a.createElement(
+                          i.a.Fragment,
                           null,
-                          o.createElement(Z.b, { rightControl: J, text: le }),
-                          o.createElement(
-                            W.a,
-                            { style: ye.awardsContainer },
+                          i.a.createElement(Q.b, { rightControl: D, text: se }),
+                          i.a.createElement(
+                            U.a,
+                            { style: ve.awardsContainer },
                             L.length > 0
-                              ? o.createElement(Q.a, null, function (e) {
+                              ? i.a.createElement(Y.a, null, function (e) {
                                   var t = e.windowWidth
-                                  return o.createElement(
-                                    W.a,
+                                  return i.a.createElement(
+                                    U.a,
                                     {
                                       style:
-                                        t >= Y.a.theme.breakpoints.medium
-                                          ? ye.badgeContainerLarge
-                                          : ye.badgeContainerSmall,
+                                        t >= J.a.theme.breakpoints.medium
+                                          ? ve.badgeContainerLarge
+                                          : ve.badgeContainerSmall,
                                     },
                                     L &&
                                       L.map(function (e, t) {
-                                        return o.createElement(l.a, { badgeType: e, key: t })
+                                        return i.a.createElement(s.a, { badgeType: e, key: t })
                                       }),
                                   )
                                 })
-                              : o.createElement(
-                                  W.a,
-                                  { style: ye.awardSection },
-                                  o.createElement(G.a, {
+                              : i.a.createElement(
+                                  U.a,
+                                  { style: ve.awardSection },
+                                  i.a.createElement(Z.a, {
                                     Icon: function () {
-                                      return o.createElement(ee.a, { style: ye.noAward })
+                                      return i.a.createElement(te.a, { style: ve.noAward })
                                     },
                                     size: 'large',
-                                    style: [ye.ratingAward, ye.noAwardThumbnail],
+                                    style: [ve.ratingAward, ve.noAwardThumbnail],
                                   }),
-                                  o.createElement(U.b, { size: 'subtext1', style: ye.noAwardText }, se),
+                                  i.a.createElement(K.b, { size: 'subtext1', style: ve.noAwardText }, ue),
                                 ),
                           ),
                         ),
                       x &&
                         C &&
-                        o.createElement(
-                          W.a,
-                          { style: ye.ratingsContainer },
-                          o.createElement(U.b, { style: ye.ratingsReceived, weight: 'bold' }, ce),
-                          o.createElement(
-                            W.a,
-                            { style: ye.ratingNumbers },
-                            Object(k.a)(T)
-                              ? o.createElement(
-                                  W.a,
-                                  { style: ye.helpfulStats },
+                        i.a.createElement(
+                          U.a,
+                          { style: ve.ratingsContainer },
+                          i.a.createElement(K.b, { style: ve.ratingsReceived, weight: 'bold' }, le),
+                          i.a.createElement(
+                            U.a,
+                            { style: ve.ratingNumbers },
+                            Object(B.a)(j)
+                              ? i.a.createElement(
+                                  U.a,
+                                  { style: ve.helpfulStats },
                                   (function (e) {
-                                    return o.createElement(
-                                      V.a,
+                                    return i.a.createElement(
+                                      X.a,
                                       null,
-                                      o.createElement(
-                                        $.a.I18NFormatMessage,
+                                      i.a.createElement(
+                                        ee.a.I18NFormatMessage,
                                         { $i18n: 'g6ea1d54' },
-                                        o.createElement(V.a.Value, null, $.a.b5eb23f9({ count: e })),
-                                        o.createElement(V.a.Label, null, $.a.ebecb73c),
+                                        i.a.createElement(X.a.Value, null, ee.a.b5eb23f9({ count: e })),
+                                        i.a.createElement(X.a.Label, null, ee.a.ebecb73c),
                                       ),
                                     )
-                                  })(T),
+                                  })(j),
                                 )
                               : null,
-                            he && Object(k.a)(A)
-                              ? o.createElement(
-                                  W.a,
-                                  { style: ye.helpfulStats },
+                            de && Object(B.a)(A)
+                              ? i.a.createElement(
+                                  U.a,
+                                  { style: ve.helpfulStats },
                                   (function (e) {
-                                    return o.createElement(
-                                      V.a,
+                                    return i.a.createElement(
+                                      X.a,
                                       null,
-                                      o.createElement(
-                                        $.a.I18NFormatMessage,
+                                      i.a.createElement(
+                                        ee.a.I18NFormatMessage,
                                         { $i18n: 'b93058db' },
-                                        o.createElement(V.a.Value, null, $.a.i1f57cc4({ count: e })),
-                                        o.createElement(V.a.Label, null, $.a.e8907cd9),
+                                        i.a.createElement(X.a.Value, null, ee.a.i1f57cc4({ count: e })),
+                                        i.a.createElement(X.a.Label, null, ee.a.e8907cd9),
                                       ),
                                     )
                                   })(A),
                                 )
                               : null,
-                            Object(k.a)(I)
-                              ? ((j = I),
-                                o.createElement(
-                                  V.a,
+                            Object(B.a)(I)
+                              ? ((T = I),
+                                i.a.createElement(
+                                  X.a,
                                   null,
-                                  o.createElement(
-                                    $.a.I18NFormatMessage,
+                                  i.a.createElement(
+                                    ee.a.I18NFormatMessage,
                                     { $i18n: 'c6726126' },
-                                    o.createElement(V.a.Value, null, $.a.d551bc31({ count: j })),
-                                    o.createElement(V.a.Label, null, $.a.c1db7f3a),
+                                    i.a.createElement(X.a.Value, null, ee.a.d551bc31({ count: T })),
+                                    i.a.createElement(X.a.Label, null, ee.a.c1db7f3a),
                                   ),
                                 ))
                               : null,
                           ),
                         ),
                       b
-                        ? o.createElement(
-                            o.Fragment,
+                        ? i.a.createElement(
+                            i.a.Fragment,
                             null,
-                            o.createElement(Z.b, { text: C ? oe : ie }),
-                            o.createElement(H.a, { module: b, noItemsRenderer: _e, renderer: Oe }),
+                            i.a.createElement(Q.b, { text: C ? ie : ce }),
+                            i.a.createElement(F.a, { module: b, noItemsRenderer: _e, renderer: Oe }),
                           )
                         : null,
                     )),
-                sidebarContent: o.createElement(v.a, null),
-                subtitle: je,
+                sidebarContent: i.a.createElement(g.a, null),
+                subtitle: Te,
                 title: Se,
                 withTweetButton: !1,
               }),
             ),
           )
         },
-        ye = Y.a.create(function (e) {
+        ve = J.a.create(function (e) {
           return {
             awardsContainer: { paddingLeft: e.spaces.space12 },
             awardSection: {
@@ -6247,113 +6287,114 @@
             birdwatchProfileContainer: { paddingTop: e.spaces.space16, paddingBottom: e.spaces.space12 },
           }
         }),
-        ve = R(he)
-      t.default = ve
+        ge = D(ye)
+      t.default = ge
     },
-    nIpi: function (e, t, n) {
+    nIpi: function (e, t, a) {
       'use strict'
-      n.r(t),
-        n.d(t, 'BirdwatchDownloadDataScreen', function () {
-          return k
+      a.r(t),
+        a.d(t, 'BirdwatchDownloadDataScreen', function () {
+          return B
         })
-      n('2G9S'), n('z84I')
-      var r = n('ERkP'),
-        a = n('vZpt'),
-        o = n('L5MV'),
-        i = n('MvLc'),
-        c = n('hqKg'),
-        l = n('rxPX'),
-        s = n('0KEI'),
-        u = function (e, t) {
-          return i.u(e)
+      a('2G9S'), a('z84I')
+      var n = a('ERkP'),
+        r = a.n(n),
+        o = a('vZpt'),
+        i = a('L5MV'),
+        c = a('MvLc'),
+        l = a('hqKg'),
+        s = a('rxPX'),
+        u = a('0KEI'),
+        d = function (e, t) {
+          return c.u(e)
         },
-        d = Object(l.a)()
+        p = Object(s.a)()
           .propsFromState(function () {
             return {
-              publicData: Object(c.createSelector)(u, function (e) {
+              publicData: Object(l.createSelector)(d, function (e) {
                 return e
               }),
             }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(s.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
-              fetchPublicData: i.i,
+              createLocalApiErrorHandler: Object(u.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
+              fetchPublicData: c.i,
             }
           })
           .withAnalytics({ page: 'birdwatch', section: 'download_data' }),
-        p = n('89Im'),
-        f = n('tI3i'),
-        b = n.n(f),
-        m = n('yoO3'),
-        h = n('VS6U'),
-        y = n('MWbm'),
-        v = n('t62R'),
-        g = n('/yvb'),
-        w = n('0yYu'),
-        E = n('6vad'),
-        O = n('rHpw'),
-        _ = n('3XMw'),
-        S = n.n(_),
-        C = S.a.cb1adfa0,
-        j = S.a.e72533f5,
-        T = S.a.g652cada,
-        A = S.a.g4d71b5e,
-        I = S.a.b8a27fe1,
-        x = S.a.j1c99e0f,
-        P = S.a.i6f69313,
-        L = S.a.h786cd79,
-        R = S.a.d0fe8052,
-        D = r.createElement(
-          v.b,
+        f = a('89Im'),
+        b = a('tI3i'),
+        m = a.n(b),
+        h = a('yoO3'),
+        y = a('VS6U'),
+        v = a('MWbm'),
+        g = a('t62R'),
+        w = a('/yvb'),
+        E = a('0yYu'),
+        O = a('6vad'),
+        _ = a('rHpw'),
+        S = a('3XMw'),
+        C = a.n(S),
+        T = C.a.cb1adfa0,
+        j = C.a.e72533f5,
+        A = C.a.g652cada,
+        I = C.a.g4d71b5e,
+        x = C.a.b8a27fe1,
+        P = C.a.j1c99e0f,
+        L = C.a.i6f69313,
+        R = C.a.h786cd79,
+        D = C.a.d0fe8052,
+        k = r.a.createElement(
+          g.b,
           { color: 'gray700', size: 'subtext2' },
-          r.createElement(
-            S.a.I18NFormatMessage,
+          r.a.createElement(
+            C.a.I18NFormatMessage,
             { $i18n: 'ec38eaf7' },
-            r.createElement(
-              v.b,
+            r.a.createElement(
+              g.b,
               { color: 'link', link: 'https://developer.twitter.com/en/developer-terms' },
-              S.a.g0cacb73,
+              C.a.g0cacb73,
             ),
           ),
         ),
-        k = function (e) {
+        B = function (e) {
           var t,
+            a,
             n,
-            i,
             c = e.analytics,
             l = e.createLocalApiErrorHandler,
             s = e.fetchPublicData,
             u = e.history,
             d = e.publicData
-          r.useEffect(
+          r.a.useEffect(
             function () {
               s().catch(l())
             },
             [l, s],
           )
-          var f,
-            O = null == d || null === (t = d.notes) || void 0 === t ? void 0 : t.urls,
-            _ = null == O ? void 0 : O.length,
-            k = null == d || null === (n = d.ratings) || void 0 === n ? void 0 : n.urls,
-            N = null == k ? void 0 : k.length,
-            M = null == d || null === (i = d.notes) || void 0 === i ? void 0 : i.created_at,
-            H = function (e, t, n, a) {
+          var p,
+            b = null == d || null === (t = d.notes) || void 0 === t ? void 0 : t.urls,
+            _ = null == b ? void 0 : b.length,
+            S = null == d || null === (a = d.ratings) || void 0 === a ? void 0 : a.urls,
+            B = null == S ? void 0 : S.length,
+            M = null == d || null === (n = d.notes) || void 0 === n ? void 0 : n.created_at,
+            H = function (e, t, a, n) {
               return (
-                b()(void 0 !== n, 'totalFiles must be defined'),
-                r.createElement(
-                  y.a,
-                  { key: t, style: [B.fileSection, t > 1 && B.fileSectionNotFirst] },
-                  r.createElement(
-                    v.b,
+                m()(void 0 !== a, 'totalFiles must be defined'),
+                r.a.createElement(
+                  v.a,
+                  { key: t, style: [N.fileSection, t > 1 && N.fileSectionNotFirst] },
+                  r.a.createElement(
+                    g.b,
                     null,
-                    r.createElement(S.a.I18NFormatMessage, { $i18n: 'g19fcc5a', fileIndex: t, totalFiles: n }),
+                    r.a.createElement(C.a.I18NFormatMessage, { $i18n: 'g19fcc5a', fileIndex: t, totalFiles: a }),
                   ),
-                  r.createElement(g.a, {
-                    icon: r.createElement(p.a, null),
+                  r.a.createElement(w.a, {
+                    icon: r.a.createElement(f.a, null),
                     link: e,
                     onPress:
-                      ((o = ''.concat(a, '_').concat(t)),
+                      ((o = ''.concat(n, '_').concat(t)),
                       function () {
                         c.scribeAction('click_'.concat(o))
                       }),
@@ -6363,53 +6404,53 @@
               )
               var o
             },
-            F = r.createElement(
-              r.Fragment,
+            F = r.a.createElement(
+              r.a.Fragment,
               null,
-              r.createElement(
-                y.a,
-                { style: B.headerWrapper },
-                r.createElement(v.b, { size: 'title4', style: B.textSection, weight: 'heavy' }, j),
-                r.createElement(v.b, { color: 'gray700', style: B.textSection }, T),
-                r.createElement(
-                  v.b,
+              r.a.createElement(
+                v.a,
+                { style: N.headerWrapper },
+                r.a.createElement(g.b, { size: 'title4', style: N.textSection, weight: 'heavy' }, j),
+                r.a.createElement(g.b, { color: 'gray700', style: N.textSection }, A),
+                r.a.createElement(
+                  g.b,
                   { color: 'gray700' },
-                  A,
-                  r.createElement(
-                    v.b,
+                  I,
+                  r.a.createElement(
+                    g.b,
                     { link: { pathname: 'https://twitter.github.io/birdwatch/data', external: !0 } },
-                    I,
+                    x,
                   ),
                   '.',
                 ),
               ),
-              r.createElement(w.a, null),
-              r.createElement(E.b, { text: x }),
-              O && (null == O ? void 0 : O.length) > 0
-                ? O.map(function (e, t) {
+              r.a.createElement(E.a, null),
+              r.a.createElement(O.b, { text: P }),
+              b && (null == b ? void 0 : b.length) > 0
+                ? b.map(function (e, t) {
                     return H(e, t + 1, _, 'notes')
                   })
-                : r.createElement(v.b, { color: 'gray700', style: B.emptyData }, L),
-              r.createElement(w.a, null),
-              r.createElement(E.b, { text: P }),
-              k && (null == k ? void 0 : k.length) > 0
-                ? k.map(function (e, t) {
-                    return H(e, t + 1, N, 'ratings')
+                : r.a.createElement(g.b, { color: 'gray700', style: N.emptyData }, R),
+              r.a.createElement(E.a, null),
+              r.a.createElement(O.b, { text: L }),
+              S && (null == S ? void 0 : S.length) > 0
+                ? S.map(function (e, t) {
+                    return H(e, t + 1, B, 'ratings')
                   })
-                : r.createElement(v.b, { color: 'gray700', style: B.emptyData }, R),
-              r.createElement(w.a, null),
-              r.createElement(
-                y.a,
-                { style: B.footerText },
-                r.createElement(
-                  v.b,
-                  { color: 'gray700', style: B.dateGenerated },
-                  r.createElement(S.a.I18NFormatMessage, {
+                : r.a.createElement(g.b, { color: 'gray700', style: N.emptyData }, D),
+              r.a.createElement(E.a, null),
+              r.a.createElement(
+                v.a,
+                { style: N.footerText },
+                r.a.createElement(
+                  g.b,
+                  { color: 'gray700', style: N.dateGenerated },
+                  r.a.createElement(C.a.I18NFormatMessage, {
                     $i18n: 'g812cfc3',
                     date:
-                      ((f = M),
-                      f
-                        ? new Date(f).toLocaleString('default', {
+                      ((p = M),
+                      p
+                        ? new Date(p).toLocaleString('default', {
                             day: 'numeric',
                             month: 'long',
                             year: 'numeric',
@@ -6419,24 +6460,24 @@
                         : ''),
                   }),
                 ),
-                D,
+                k,
               ),
             )
-          return r.createElement(
-            m.a,
+          return r.a.createElement(
+            h.a,
             null,
-            r.createElement(h.a, {
-              TabBar: o.a,
+            r.a.createElement(y.a, {
+              TabBar: i.a,
               history: u,
-              logoButton: r.createElement(r.Fragment, null),
+              logoButton: r.a.createElement(r.a.Fragment, null),
               primaryContent: F,
-              sidebarContent: r.createElement(a.a, null),
-              title: C,
+              sidebarContent: r.a.createElement(o.a, null),
+              title: T,
               withTweetButton: !1,
             }),
           )
         },
-        B = O.a.create(function (e) {
+        N = _.a.create(function (e) {
           return {
             dateGenerated: { paddingBottom: e.spaces.space16 },
             emptyData: {
@@ -6468,74 +6509,75 @@
             textSection: { marginBottom: e.spaces.space16 },
           }
         }),
-        N = d(k)
-      t.default = N
+        M = p(B)
+      t.default = M
     },
-    nymP: function (e, t, n) {
+    nymP: function (e, t, a) {
       'use strict'
-      var r = n('ERkP'),
-        a = n('v6aA'),
-        o = n('FIs5'),
-        i = n('3XMw'),
-        c = n.n(i),
-        l = { external: !0, pathname: 'https://twitter.github.io/birdwatch/writing-notes' },
-        s = c.a.i859a9d3,
-        u = c.a.ff3e0be2,
-        d = c.a.e9f1fbcb,
-        p = c.a.db08295d,
-        f = c.a.f4d67927,
-        b = c.a.eae6767a
+      var n = a('ERkP'),
+        r = a.n(n),
+        o = a('v6aA'),
+        i = a('FIs5'),
+        c = a('3XMw'),
+        l = a.n(c),
+        s = { external: !0, pathname: 'https://twitter.github.io/birdwatch/writing-notes' },
+        u = l.a.i859a9d3,
+        d = l.a.ff3e0be2,
+        p = l.a.e9f1fbcb,
+        f = l.a.db08295d,
+        b = l.a.f4d67927,
+        m = l.a.eae6767a
       t.a = function () {
-        var e = r.useContext(a.a).featureSwitches.isTrue('responsive_web_birdwatch_note_writing_enabled')
-        return r.createElement(o.a, {
-          buttonLink: e ? l : '/i/flow/join-birdwatch',
-          buttonText: e ? s : u,
-          header: e ? d : p,
-          message: e ? b : f,
+        var e = r.a.useContext(o.a).featureSwitches.isTrue('responsive_web_birdwatch_note_writing_enabled')
+        return r.a.createElement(i.a, {
+          buttonLink: e ? s : '/i/flow/join-birdwatch',
+          buttonText: e ? u : d,
+          header: e ? p : f,
+          message: e ? m : b,
         })
       }
     },
-    owBv: function (e, t, n) {
+    owBv: function (e, t, a) {
       'use strict'
-      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
-      var r = n('KEM+'),
-        a = n.n(r),
-        o = n('lTXM'),
-        i = n('m3Bd'),
-        c = n.n(i),
-        l = (n('z84I'), n('ho0z'), n('YeIG')),
-        s = n('kLu5'),
-        u = n('7MdP')
+      a('+KXO'), a('1t7P'), a('LW0h'), a('daRM'), a('jwue'), a('+oxZ'), a('FtHn')
+      var n = a('KEM+'),
+        r = a.n(n),
+        o = a('lTXM'),
+        i = a('m3Bd'),
+        c = a.n(i),
+        l = (a('z84I'), a('ho0z'), a('YeIG')),
+        s = a('kLu5'),
+        u = a('7MdP')
       function d(e, t) {
-        var n = Object.keys(e)
+        var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
+          var n = Object.getOwnPropertySymbols(e)
           t &&
-            (r = r.filter(function (t) {
+            (n = n.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            n.push.apply(n, r)
+            a.push.apply(a, n)
         }
-        return n
+        return a
       }
       function p(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
+          var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? d(Object(n), !0).forEach(function (t) {
-                a()(e, t, n[t])
+            ? d(Object(a), !0).forEach(function (t) {
+                r()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : d(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : d(Object(a)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
       var f = function (e) {
           var t = Object(s.b)(),
-            n = (function (e) {
+            a = (function (e) {
               if ('SegmentedTimelines' === e.body.__typename) {
                 var t = e.body.timelines.map(function (e) {
                   return {
@@ -6549,28 +6591,28 @@
                 return { initialTabId: e.body.initialTimeline && e.body.initialTimeline.id, tabs: t }
               }
             })(e),
-            r = (function (e, t) {
-              var n = t.header
-              if (n && 'TopicPageHeader' === n.__typename) {
-                n.__typename
-                var r = n.facepile,
-                  a = n.topic,
-                  o = c()(n, ['__typename', 'facepile', 'topic']),
-                  i = r && Object(u.b)(e, r),
-                  l = Object(u.a)(e, a)
+            n = (function (e, t) {
+              var a = t.header
+              if (a && 'TopicPageHeader' === a.__typename) {
+                a.__typename
+                var n = a.facepile,
+                  r = a.topic,
+                  o = c()(a, ['__typename', 'facepile', 'topic']),
+                  i = n && Object(u.b)(e, n),
+                  l = Object(u.a)(e, r)
                 return p(p({}, o), {}, { topicId: l, facepile: i })
               }
             })(t, e),
-            a = (function (e, t) {
-              var n = t.navBar
-              if (!n) return {}
-              switch (n.__typename) {
+            r = (function (e, t) {
+              var a = t.navBar
+              if (!a) return {}
+              switch (a.__typename) {
                 case 'TitleNavBar':
-                  return { title: n.title, subtitle: n.subtitle }
+                  return { title: a.title, subtitle: a.subtitle }
                 case 'TopicPageNavBar':
                   return {
-                    navBar: { topicId: Object(u.a)(e, n.topic), clientEventInfo: n.clientEventInfo },
-                    title: n.topic.name,
+                    navBar: { topicId: Object(u.a)(e, a.topic), clientEventInfo: a.clientEventInfo },
+                    title: a.topic.name,
                     subtitle: void 0,
                   }
                 default:
@@ -6581,87 +6623,89 @@
             globalObjects: t,
             pageConfiguration: {
               id: e.id,
-              tabs: n,
-              header: r,
-              navBar: a.navBar && a.navBar,
-              title: a.title,
-              subtitle: a.subtitle,
+              tabs: a,
+              header: n,
+              navBar: r.navBar && r.navBar,
+              title: r.title,
+              subtitle: r.subtitle,
               scribeConfig: p({}, e.scribeConfig),
             },
           }
         },
-        b = n('WpDa'),
-        m = n('IcAo')
+        b = a('WpDa'),
+        m = a('IcAo')
       function h(e, t) {
-        var n = Object.keys(e)
+        var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
+          var n = Object.getOwnPropertySymbols(e)
           t &&
-            (r = r.filter(function (t) {
+            (n = n.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            n.push.apply(n, r)
+            a.push.apply(a, n)
         }
-        return n
+        return a
       }
       function y(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
+          var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? h(Object(n), !0).forEach(function (t) {
-                a()(e, t, n[t])
+            ? h(Object(a), !0).forEach(function (t) {
+                r()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : h(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : h(Object(a)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
       t.a = function (e) {
         var t,
-          n,
-          r =
+          a,
+          n =
             'Timeline' === (t = e.body).__typename && t.timeline
               ? Object(b.a)(t.timeline)
               : 'SegmentedTimelines' === t.__typename &&
-                null !== (n = t.initialTimeline) &&
-                void 0 !== n &&
-                n.timeline.timeline
+                null !== (a = t.initialTimeline) &&
+                void 0 !== a &&
+                a.timeline.timeline
               ? Object(b.a)(t.initialTimeline.timeline.timeline)
               : Object(b.a)(o.c),
-          a = f(e),
-          i = a.globalObjects,
-          c = a.pageConfiguration
-        return y(y({}, r), {}, { globalObjects: Object(m.a)(i, r.globalObjects), pageConfiguration: c })
+          r = f(e),
+          i = r.globalObjects,
+          c = r.pageConfiguration
+        return y(y({}, n), {}, { globalObjects: Object(m.a)(i, n.globalObjects), pageConfiguration: c })
       }
     },
-    uw5z: function (e, t, n) {
+    uw5z: function (e, t, a) {
       'use strict'
-      n.r(t),
-        n.d(t, 'BirdwatchGlobalTimelineScreen', function () {
-          return z
+      a.r(t),
+        a.d(t, 'BirdwatchGlobalTimelineScreen', function () {
+          return D
         })
-      var r = n('ERkP'),
-        a = n('v6aA'),
-        o = n('vZpt'),
-        i = n('L5MV'),
-        c = (n('WNMA'), n('KqXw'), n('owBv')),
-        l = n('ZNT5'),
-        s = n('hqKg'),
-        u = n('rxPX'),
-        d = function (e, t) {
-          var n, r
+      var n,
+        r = a('ERkP'),
+        o = a.n(r),
+        i = a('v6aA'),
+        c = a('vZpt'),
+        l = a('L5MV'),
+        s = (a('WNMA'), a('KqXw'), a('owBv')),
+        u = a('ZNT5'),
+        d = a('hqKg'),
+        p = a('rxPX'),
+        f = function (e, t) {
+          var a, n
           return (
-            (null === (n = t.match) || void 0 === n || null === (r = n.params) || void 0 === r ? void 0 : r.tabId) ||
+            (null === (a = t.match) || void 0 === a || null === (n = a.params) || void 0 === n ? void 0 : n.tabId) ||
             void 0
           )
         },
-        p = function () {
-          return Object(s.createSelector)(d, function (e) {
+        b = function () {
+          return Object(d.createSelector)(f, function (e) {
             return (function (e) {
-              return Object(l.a)({
+              return Object(u.a)({
                 timelineId: 'birdwatch-global-timeline',
                 getEndpoint: function (e) {
                   return e.Birdwatch.fetchGlobalTimeline
@@ -6671,223 +6715,171 @@
                 },
                 context: 'FETCH_BIRDWATCH_GLOBAL_TIMELINE',
                 perfKey: 'birdwatch-global-timeline',
-                formatResponse: c.a,
+                formatResponse: s.a,
               })
             })(e)
           })
         },
-        f = Object(u.a)().propsFromState(function () {
-          return { module: p(), selectedTabId: d }
+        m = Object(p.a)().propsFromState(function () {
+          return { module: b(), selectedTabId: f }
         }),
-        b = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('KEM+')),
-        m = n.n(b),
-        h = n('8UdT'),
-        y = n('ezF+'),
-        v = n('VPAj'),
-        g = (n('hBvt'), n('fs1G')),
-        w = n('t62R'),
-        E = n('csss'),
-        O = function (e) {
-          var t = e.link,
-            n = e.onClick,
-            a = void 0 === n ? g.a : n,
-            o = e.subtext,
-            i = e.text,
-            c = r.createElement(w.b, { color: t ? 'primary' : 'normal' }, i)
-          return r.createElement(E.a, { description: o, label: c, link: t, onPress: a })
-        },
-        _ = n('caTy'),
-        S = n('zh9S')
-      function C(e, t) {
-        var n = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
-          t &&
-            (r = r.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            n.push.apply(n, r)
-        }
-        return n
-      }
-      function j(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? C(Object(n), !0).forEach(function (t) {
-                m()(e, t, n[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : C(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-              })
-        }
-        return e
-      }
-      var T,
-        A = y.e(
-          y.g({
-            component: O,
-            bindActions: Object(v.a)({ scribe: S.c }),
-            createProps: function (e) {
-              var t = e.actions.scribe,
-                n = e.entry,
-                r = e.scribeData,
-                a = e.scribeNamespace,
-                o = n.content,
-                i = o.subtext,
-                c = o.text,
-                l = o.url
-              return {
-                subtext: i,
-                text: c,
-                link: l && Object(_.b)(l),
-                onClick: function () {
-                  t(j(j({}, a), {}, { action: 'click_label' }), r)
-                },
-              }
+        h = (a('+KXO'), a('1t7P'), a('LW0h'), a('daRM'), a('jwue'), a('+oxZ'), a('FtHn'), a('KEM+')),
+        y = a.n(h),
+        v = a('8UdT'),
+        g = a('ezF+'),
+        w =
+          (a('JtPf'),
+          a('7x/C'),
+          a('87if'),
+          a('lTEL'),
+          a('kYxP'),
+          {
+            loader: function () {
+              return a.e(223).then(a.bind(null, 'SdtT'))
             },
+            loaderKey: 'pivotLabelLoader',
+            strategy: a('XBtf').a.Critical,
           }),
-        ),
-        I = n('S/Qv'),
-        x = n('5Y9N'),
-        P = n('Yy//')
-      function L(e, t) {
-        var n = Object.keys(e)
+        E = g.e(w),
+        O = a('S/Qv'),
+        _ = a('5Y9N'),
+        S = a('Yy//')
+      function C(e, t) {
+        var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
+          var n = Object.getOwnPropertySymbols(e)
           t &&
-            (r = r.filter(function (t) {
+            (n = n.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            n.push.apply(n, r)
+            a.push.apply(a, n)
         }
-        return n
+        return a
       }
-      function R(e) {
+      function T(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
+          var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? L(Object(n), !0).forEach(function (t) {
-                m()(e, t, n[t])
+            ? C(Object(a), !0).forEach(function (t) {
+                y()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : L(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : C(Object(a)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var D =
-          ((T = {}),
-          m()(T, h.b.Label, A),
-          m()(T, h.b.Message, Object(I.a)({})),
-          m()(T, h.b.Tweet, Object(P.a)({ displayBlocked: !1, withActionsDisabled: !0 })),
-          T),
-        k = R(R({}, Object(x.a)({})), D),
-        B = n('3XMw'),
-        N = n.n(B),
-        M = n('UZjl'),
-        H = N.a.ha8209bb,
-        F = function (e) {
+      var j =
+          ((n = {}),
+          y()(n, v.b.Label, E),
+          y()(n, v.b.Message, Object(O.a)({})),
+          y()(n, v.b.Tweet, Object(S.a)({ displayBlocked: !1, withActionsDisabled: !0 })),
+          n),
+        A = T(T({}, Object(_.a)({})), j),
+        I = a('3XMw'),
+        x = a.n(I),
+        P = a('UZjl'),
+        L = x.a.ha8209bb,
+        R = function (e) {
           return { pathname: '/i/birdwatch/'.concat(e) }
         },
-        z = function (e) {
-          var t = r.useContext(a.a).featureSwitches,
-            n = e.history,
-            c = e.module,
-            l = e.selectedTabId,
+        D = function (e) {
+          var t = o.a.useContext(i.a).featureSwitches,
+            a = e.history,
+            n = e.module,
+            r = e.selectedTabId,
             s = t.isTrue('responsive_web_birdwatch_note_writing_enabled'),
-            u = r.useMemo(
+            u = o.a.useMemo(
               function () {
-                var e = null != l ? l : 'global_timeline'
+                var e = null != r ? r : 'global_timeline'
                 return { page: 'birdwatch', section: s ? ''.concat(e, '_participant') : e }
               },
-              [s, l],
+              [s, r],
             )
-          return r.createElement(M.a, {
-            TabBar: i.a,
-            entryConfiguration: k,
-            getTabLink: F,
-            history: n,
+          return o.a.createElement(P.a, {
+            TabBar: l.a,
+            entryConfiguration: A,
+            getTabLink: R,
+            history: a,
             initialPageNamespace: u,
-            logoButton: r.createElement(r.Fragment, null),
-            module: c,
-            selectedTabId: l,
-            sidebarContent: r.createElement(o.a, null),
+            logoButton: o.a.createElement(o.a.Fragment, null),
+            module: n,
+            selectedTabId: r,
+            sidebarContent: o.a.createElement(c.a, null),
             timelinePrefix: 'birdwatch-',
-            title: H,
+            title: L,
             withTweetButton: !1,
           })
         },
-        W = f(z)
-      t.default = W
+        k = m(D)
+      t.default = k
     },
-    vZpt: function (e, t, n) {
+    vZpt: function (e, t, a) {
       'use strict'
-      var r = n('97Jx'),
-        a = n.n(r),
-        o = n('ddV6'),
-        i = n.n(o),
-        c = (n('uFXj'), n('ERkP')),
-        l = n('v6aA'),
-        s = n('G6rE'),
-        u = n('rxPX'),
-        d = n('0KEI'),
-        p = function (e, t) {
-          return s.e.select(e, '1319036828964454402')
+      var n = a('97Jx'),
+        r = a.n(n),
+        o = a('ddV6'),
+        i = a.n(o),
+        c = (a('uFXj'), a('ERkP')),
+        l = a.n(c),
+        s = a('v6aA'),
+        u = a('G6rE'),
+        d = a('rxPX'),
+        p = a('0KEI'),
+        f = function (e, t) {
+          return u.e.select(e, '1319036828964454402')
         },
-        f = Object(u.a)()
+        b = Object(d.a)()
           .propsFromState(function () {
-            return { birdwatchAccount: p }
+            return { birdwatchAccount: f }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(d.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
-              fetchUsersIfNeeded: s.e.fetchManyIfNeeded,
+              createLocalApiErrorHandler: Object(p.createLocalApiErrorHandlerWithContextFactory)('BIRDWATCH_SCREEN'),
+              fetchUsersIfNeeded: u.e.fetchManyIfNeeded,
             }
           }),
-        b = n('FQwk'),
-        m = n('MWbm'),
-        h = n('t62R'),
-        y = n('6vad'),
-        v = n('/yvb'),
-        g = n('h0NW'),
-        w = n('rC8y'),
-        E = n('rHpw'),
-        O = n('3XMw'),
-        _ = n.n(O),
-        S = n('yygM'),
-        C = n('QDet'),
-        j = n('wz7L'),
-        T = n('88ay'),
-        A = _.a.de962615,
-        I = _.a.cbfa448b,
-        x = _.a.b171d7c4,
-        P = '1319036828964454402',
-        L = _.a.ab23a972,
-        R = _.a.gfa725ae,
-        D = _.a.eac7b6ab,
-        k = _.a.b0381cfb,
-        B = _.a.f0addddc,
-        N = _.a.c68f3bcf,
-        M = _.a.dfb1f498,
-        H = c.createElement(
-          h.b,
+        m = a('FQwk'),
+        h = a('MWbm'),
+        y = a('t62R'),
+        v = a('6vad'),
+        g = a('/yvb'),
+        w = a('h0NW'),
+        E = a('rC8y'),
+        O = a('rHpw'),
+        _ = a('3XMw'),
+        S = a.n(_),
+        C = a('yygM'),
+        T = a('QDet'),
+        j = a('wz7L'),
+        A = a('88ay'),
+        I = S.a.de962615,
+        x = S.a.cbfa448b,
+        P = S.a.b171d7c4,
+        L = '1319036828964454402',
+        R = S.a.ab23a972,
+        D = S.a.gfa725ae,
+        k = S.a.eac7b6ab,
+        B = S.a.b0381cfb,
+        N = S.a.f0addddc,
+        M = S.a.c68f3bcf,
+        H = S.a.dfb1f498,
+        F = l.a.createElement(
+          y.b,
           null,
-          c.createElement(
-            _.a.I18NFormatMessage,
+          l.a.createElement(
+            S.a.I18NFormatMessage,
             { $i18n: 'fdd69021' },
-            c.createElement(
-              h.b,
+            l.a.createElement(
+              y.b,
               { color: 'link', link: { external: !0, pathname: '/messages/compose?recipient_id=1319036828964454402' } },
-              _.a.b8a36128,
+              S.a.b8a36128,
             ),
           ),
         ),
-        F = E.a.create(function (e) {
+        z = O.a.create(function (e) {
           return {
             root: { paddingBottom: e.spaces.space64, paddingTop: e.spaces.space12 },
             footer: {
@@ -6919,235 +6911,241 @@
             },
           }
         }),
-        z = f(function (e) {
+        W = b(function (e) {
           var t = e.birdwatchAccount,
-            n = e.createLocalApiErrorHandler,
-            r = e.fetchUsersIfNeeded,
-            o = c.useContext(l.a).featureSwitches,
-            s = c.useState(null == t ? void 0 : t.following),
-            u = i()(s, 2),
+            a = e.createLocalApiErrorHandler,
+            n = e.fetchUsersIfNeeded,
+            o = l.a.useContext(s.a).featureSwitches,
+            c = l.a.useState(null == t ? void 0 : t.following),
+            u = i()(c, 2),
             d = u[0],
             p = u[1],
             f = o.isTrue('responsive_web_birdwatch_note_writing_enabled')
-          c.useEffect(
+          l.a.useEffect(
             function () {
-              r([P])
+              n([L])
                 .then(function (e) {
                   var t
                   e && p(null === (t = e.entities) || void 0 === t ? void 0 : t.users['1319036828964454402'].following)
                 })
-                .catch(n())
+                .catch(a())
             },
-            [n, r],
+            [a, n],
           )
-          var E = c.createElement(
-              m.a,
-              { style: F.module },
-              c.createElement(y.b, { text: A }),
-              c.createElement(
-                m.a,
-                { style: [F.moduleBody, F.row] },
-                c.createElement(h.b, { color: 'gray700', style: F.text }, I),
-                c.createElement(v.a, { accessibilityLabel: x, link: '/i/flow/join-birdwatch', type: 'brandFilled' }, x),
+          var b = l.a.createElement(
+              h.a,
+              { style: z.module },
+              l.a.createElement(v.b, { text: I }),
+              l.a.createElement(
+                h.a,
+                { style: [z.moduleBody, z.row] },
+                l.a.createElement(y.b, { color: 'gray700', style: z.text }, x),
+                l.a.createElement(
+                  g.a,
+                  { accessibilityLabel: P, link: '/i/flow/join-birdwatch', type: 'brandFilled' },
+                  P,
+                ),
               ),
             ),
-            O = c.createElement(
-              m.a,
-              { style: F.module },
-              c.createElement(y.b, { text: L }),
-              c.createElement(
-                m.a,
+            O = l.a.createElement(
+              h.a,
+              { style: z.module },
+              l.a.createElement(v.b, { text: R }),
+              l.a.createElement(
+                h.a,
                 null,
-                c.createElement(T.b, { decoration: T.e, displayMode: 'UserCompact', userId: P, withFollowsYou: !0 }),
+                l.a.createElement(A.b, { decoration: A.e, displayMode: 'UserCompact', userId: L, withFollowsYou: !0 }),
               ),
             ),
             _ = function (e) {
-              return c.createElement(m.a, { style: F.valueItem }, c.createElement(h.b, { color: 'gray700' }, e))
+              return l.a.createElement(h.a, { style: z.valueItem }, l.a.createElement(y.b, { color: 'gray700' }, e))
             },
-            z = {
-              accessibilityLabel: R,
+            S = {
+              accessibilityLabel: D,
               items: [
-                { label: '', decoration: c.createElement(S.a, { style: F.valueIcon }), description: _(D) },
-                { label: '', decoration: c.createElement(C.a, { style: F.valueIcon }), description: _(k) },
-                { label: '', decoration: c.createElement(j.a, { style: F.valueIcon }), description: _(B) },
+                { label: '', decoration: l.a.createElement(C.a, { style: z.valueIcon }), description: _(k) },
+                { label: '', decoration: l.a.createElement(T.a, { style: z.valueIcon }), description: _(B) },
+                { label: '', decoration: l.a.createElement(j.a, { style: z.valueIcon }), description: _(N) },
               ],
             },
-            W = c.createElement(
-              m.a,
-              { style: F.module },
-              c.createElement(y.b, { text: R }),
-              c.createElement(
-                m.a,
-                { style: F.valuesGroup },
-                c.createElement(g.a, a()({}, z, { containerStyle: F.infoItemContainer })),
+            W = l.a.createElement(
+              h.a,
+              { style: z.module },
+              l.a.createElement(v.b, { text: D }),
+              l.a.createElement(
+                h.a,
+                { style: z.valuesGroup },
+                l.a.createElement(w.a, r()({}, S, { containerStyle: z.infoItemContainer })),
               ),
-              c.createElement(
-                m.a,
-                { style: F.footer },
-                c.createElement(w.a, {
+              l.a.createElement(
+                h.a,
+                { style: z.footer },
+                l.a.createElement(E.a, {
                   link: 'https://twitter.github.io/birdwatch/contributing/values/',
-                  text: N,
+                  text: M,
                   withBottomRadius: !0,
                 }),
               ),
             ),
-            U = c.createElement(
-              m.a,
-              { style: F.module },
-              c.createElement(y.b, { text: M }),
-              c.createElement(m.a, { style: F.moduleBody }, H),
+            U = l.a.createElement(
+              h.a,
+              { style: z.module },
+              l.a.createElement(v.b, { text: H }),
+              l.a.createElement(h.a, { style: z.moduleBody }, F),
             )
-          return c.createElement(
-            m.a,
-            { accessibilityRole: 'complementary', style: F.root },
-            f ? null : E,
+          return l.a.createElement(
+            h.a,
+            { accessibilityRole: 'complementary', style: z.root },
+            f ? null : b,
             d ? null : O,
             W,
             U,
-            c.createElement(
-              m.a,
-              { style: [F.module, F.transparentModule] },
-              c.createElement(b.a, { textColor: 'gray700', withOverflow: !0 }),
+            l.a.createElement(
+              h.a,
+              { style: [z.module, z.transparentModule] },
+              l.a.createElement(m.a, { textColor: 'gray700', withOverflow: !0 }),
             ),
           )
         })
-      t.a = z
+      t.a = W
     },
-    wz7L: function (e, t, n) {
+    wz7L: function (e, t, a) {
       'use strict'
-      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
-      var r = n('KEM+'),
-        a = n.n(r),
-        o = n('ERkP'),
-        i = n('Lsrn'),
-        c = n('k/Ka')
-      function l(e, t) {
-        var n = Object.keys(e)
+      a('+KXO'), a('1t7P'), a('LW0h'), a('daRM'), a('jwue'), a('+oxZ'), a('FtHn')
+      var n = a('KEM+'),
+        r = a.n(n),
+        o = a('ERkP'),
+        i = a.n(o),
+        c = a('Lsrn'),
+        l = a('k/Ka')
+      function s(e, t) {
+        var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
+          var n = Object.getOwnPropertySymbols(e)
           t &&
-            (r = r.filter(function (t) {
+            (n = n.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            n.push.apply(n, r)
+            a.push.apply(a, n)
         }
-        return n
+        return a
       }
-      function s(e) {
+      function u(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
+          var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? l(Object(n), !0).forEach(function (t) {
-                a()(e, t, n[t])
+            ? s(Object(a), !0).forEach(function (t) {
+                r()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : l(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : s(Object(a)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var u = function () {
+      var d = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(c.a)(
+        return Object(l.a)(
           'svg',
-          s(
-            s({}, e),
+          u(
+            u({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [i.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [c.a.root, e.style], viewBox: '0 0 24 24' },
           ),
-          o.createElement(
+          i.a.createElement(
             'g',
             null,
-            o.createElement('path', {
+            i.a.createElement('path', {
               d: 'M16.695 13.037c1.185 0 2.51-.132 3.368-1.11.72-.823.952-2.08.715-3.847-.333-2.478-1.86-3.956-4.083-3.956-2.225 0-3.75 1.48-4.084 3.956-.236 1.766-.002 3.023.717 3.846.858.98 2.184 1.11 3.368 1.11zM14.098 8.28c.134-.992.648-2.656 2.598-2.656 1.948 0 2.463 1.664 2.597 2.655.174 1.293.054 2.187-.358 2.657-.367.42-1.036.6-2.238.6s-1.87-.18-2.24-.6c-.412-.47-.533-1.364-.36-2.658zm9.788 11.222c-.763-3.066-3.72-5.208-7.19-5.208-1.765 0-3.392.558-4.67 1.505-1.278-.948-2.905-1.506-4.67-1.506-3.47 0-6.428 2.142-7.19 5.208-.156.625-.025 1.265.356 1.754.37.473.94.744 1.567.744h19.87c.628 0 1.2-.27 1.57-.745.382-.49.512-1.13.356-1.753zm-1.537.83c-.09.11-.22.168-.39.168h-7.413c.078-.32.084-.66 0-.998-.25-1-.75-1.888-1.41-2.65.993-.665 2.223-1.058 3.558-1.058 2.78 0 5.14 1.674 5.735 4.07.044.174.014.344-.08.467zM7.354 20.5H2.09c-.17 0-.3-.057-.388-.168-.096-.123-.126-.294-.083-.47.596-2.395 2.954-4.068 5.735-4.068 2.78 0 5.14 1.674 5.735 4.07.043.174.014.344-.082.467-.088.113-.22.17-.388.17H7.355zm.001-7.463c1.185 0 2.51-.132 3.367-1.11.72-.823.953-2.08.716-3.847-.333-2.478-1.86-3.956-4.083-3.956-2.225 0-3.75 1.48-4.084 3.956-.236 1.766-.002 3.023.717 3.846.858.98 2.184 1.11 3.368 1.11zM4.758 8.28c.134-.992.648-2.656 2.598-2.656 1.948 0 2.463 1.664 2.597 2.655.174 1.293.053 2.187-.358 2.658-.368.42-1.037.6-2.238.6-1.202 0-1.87-.18-2.24-.6-.412-.47-.533-1.365-.36-2.66z',
             }),
           ),
         )
       }
-      ;(u.metadata = { width: 24, height: 24 }), (t.a = u)
+      ;(d.metadata = { width: 24, height: 24 }), (t.a = d)
     },
-    xSpP: function (e, t, n) {
+    xSpP: function (e, t, a) {
       'use strict'
-      n.d(t, 'b', function () {
+      a.d(t, 'b', function () {
         return l
       })
-      var r = n('oEOe'),
-        a = n('MvLc'),
-        o = n('3zvM'),
-        i = n('lMB6'),
+      var n = a('oEOe'),
+        r = a('MvLc'),
+        o = a('3zvM'),
+        i = a('lMB6'),
         c = Object(o.f)({ namespace: 'birdwatchContributorNotes' }),
         l = function (e) {
-          return function (t, n, o) {
+          return function (t, a, o) {
             var i = o.api
-            return r.b(t, { request: i.Birdwatch.deleteNote, params: { note_id: e } })(
+            return n.b(t, { request: i.Birdwatch.deleteNote, params: { note_id: e } })(
               { actionTypes: c.actionTypes.OPTIMISTIC_UPDATE, context: 'DELETE_NOTE' },
               function (t) {
-                if (t) return [c.deleteOne(e), Object(a.d)(e)]
+                if (t) return [c.deleteOne(e), Object(r.d)(e)]
               },
             )
           }
         }
       t.a = i.a.register(c)
     },
-    yygM: function (e, t, n) {
+    yygM: function (e, t, a) {
       'use strict'
-      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
-      var r = n('KEM+'),
-        a = n.n(r),
-        o = n('ERkP'),
-        i = n('Lsrn'),
-        c = n('k/Ka')
-      function l(e, t) {
-        var n = Object.keys(e)
+      a('+KXO'), a('1t7P'), a('LW0h'), a('daRM'), a('jwue'), a('+oxZ'), a('FtHn')
+      var n = a('KEM+'),
+        r = a.n(n),
+        o = a('ERkP'),
+        i = a.n(o),
+        c = a('Lsrn'),
+        l = a('k/Ka')
+      function s(e, t) {
+        var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
+          var n = Object.getOwnPropertySymbols(e)
           t &&
-            (r = r.filter(function (t) {
+            (n = n.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable
             })),
-            n.push.apply(n, r)
+            a.push.apply(a, n)
         }
-        return n
+        return a
       }
-      function s(e) {
+      function u(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
+          var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? l(Object(n), !0).forEach(function (t) {
-                a()(e, t, n[t])
+            ? s(Object(a), !0).forEach(function (t) {
+                r()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : l(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : s(Object(a)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var u = function () {
+      var d = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(c.a)(
+        return Object(l.a)(
           'svg',
-          s(
-            s({}, e),
+          u(
+            u({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [i.a.root, e.style], viewBox: '0 0 26 26' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [c.a.root, e.style], viewBox: '0 0 26 26' },
           ),
-          o.createElement(
+          i.a.createElement(
             'g',
             null,
-            o.createElement('path', {
+            i.a.createElement('path', {
               d: 'M13 20.673c-.414 0-.75-.336-.75-.75V14.46c0-.414.336-.75.75-.75s.75.336.75.75v5.463c0 .414-.336.75-.75.75z',
             }),
-            o.createElement('path', {
+            i.a.createElement('path', {
               d: 'M13 4.5c-4.687 0-8.5 3.813-8.5 8.5 0 3.424 2.037 6.494 5.19 7.83.094.04.196.067.306.067.414 0 .75-.336.75-.75 0-.31-.188-.575-.456-.69C7.685 18.36 6 15.826 6 13c0-3.86 3.14-7 7-7s7 3.14 7 7c0 2.825-1.683 5.358-4.288 6.454-.273.112-.467.38-.467.693 0 .414.336.75.75.75.105 0 .204-.022.294-.06C19.455 19.51 21.5 16.433 21.5 13c0-4.687-3.813-8.5-8.5-8.5zM13 3c-.414 0-.75-.34-.75-.757V.757C12.25.34 12.586 0 13 0s.75.34.75.757v1.486c0 .418-.336.757-.75.757zM3 13c0 .414-.34.75-.757.75H.757C.34 13.75 0 13.414 0 13s.34-.75.757-.75h1.486c.418 0 .757.336.757.75zm23 0c0 .414-.34.75-.757.75h-1.486c-.418 0-.757-.336-.757-.75s.34-.75.757-.75h1.486c.418 0 .757.336.757.75zM5.93 5.93c-.294.292-.77.29-1.067-.006l-1.05-1.05c-.296-.296-.298-.774-.005-1.066s.77-.29 1.066.005l1.05 1.05c.295.296.298.773.005 1.066zm16.262-2.122c.293.293.29.77-.005 1.066l-1.05 1.05c-.296.296-.774.3-1.067.006s-.29-.77.005-1.066l1.05-1.05c.297-.297.775-.3 1.067-.006zM17 22.75c0 .414-.34.75-.757.75H9.757c-.418 0-.757-.336-.757-.75s.34-.75.757-.75h6.486c.418 0 .757.336.757.75zm-1 2.5c0 .414-.34.75-.757.75h-4.486c-.418 0-.757-.336-.757-.75s.34-.75.757-.75h4.486c.418 0 .757.336.757.75z',
             }),
           ),
         )
       }
-      ;(u.metadata = { width: 26, height: 26 }), (t.a = u)
+      ;(d.metadata = { width: 26, height: 26 }), (t.a = d)
     },
   },
 ])

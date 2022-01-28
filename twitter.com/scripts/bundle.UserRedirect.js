@@ -1,11 +1,11 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [107],
+  [109],
   {
     rFDg: function (e, t, r) {
       'use strict'
       r.r(t),
         r.d(t, 'UserRedirectScreen', function () {
-          return D
+          return J
         })
       r('OZaJ')
       var n,
@@ -24,22 +24,23 @@
         m = r('KEM+'),
         v = r.n(m),
         E = (r('2G9S'), r('MvUL'), r('KqXw'), r('ERkP')),
-        w = (r('WNMA'), r('G6rE')),
-        R = r('rxPX'),
-        I = r('0KEI'),
-        S = function (e, t) {
+        w = r.n(E),
+        R = (r('WNMA'), r('G6rE')),
+        I = r('rxPX'),
+        S = r('0KEI'),
+        A = function (e, t) {
           var r
           return null === (r = t.match) || void 0 === r ? void 0 : r.params.userId
         },
-        A = function (e, t) {
-          return w.e.select(e, S(0, t))
-        },
         _ = function (e, t) {
-          return w.e.selectFetchStatus(e, S(0, t))
+          return R.e.select(e, A(0, t))
         },
-        U = Object(R.a)()
+        U = function (e, t) {
+          return R.e.selectFetchStatus(e, A(0, t))
+        },
+        L = Object(I.a)()
           .propsFromState(function () {
-            return { fetchStatus: _, user: A, userId: S }
+            return { fetchStatus: U, user: _, userId: A }
           })
           .adjustStateProps(function (e) {
             var t = e.fetchStatus,
@@ -49,32 +50,32 @@
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(I.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(S.createLocalApiErrorHandlerWithContextFactory)(
                 'USER_REDIRECT_SCREEN',
               ),
-              fetchUserIfNeeded: w.e.fetchOneIfNeeded,
+              fetchUserIfNeeded: R.e.fetchOneIfNeeded,
             }
           })
           .withAnalytics({ page: 'user_redirect' }),
-        L = r('k49u'),
-        N = r('LVU8'),
-        k =
+        N = r('k49u'),
+        k = r('LVU8'),
+        g =
           ((n = {}),
-          v()(n, L.a.AddressBookLookupNotFound, { customAction: N.c }),
-          v()(n, L.a.GenericUserNotFound, { customAction: N.c }),
-          v()(n, L.a.OtherUserSuspended, { customAction: N.c }),
+          v()(n, N.a.AddressBookLookupNotFound, { customAction: k.c }),
+          v()(n, N.a.GenericUserNotFound, { customAction: k.c }),
+          v()(n, N.a.OtherUserSuspended, { customAction: k.c }),
           v()(n, 'showToast', !0),
           n),
-        g = r('v//M'),
-        O = r('7JQg'),
-        T = r('yoO3'),
-        C = r('wiP2'),
-        F = r('MWbm'),
-        P = r('mw9i'),
-        b = r('rHpw').a.create(function (e) {
+        O = r('v//M'),
+        T = r('7JQg'),
+        C = r('yoO3'),
+        F = r('wiP2'),
+        P = r('MWbm'),
+        b = r('mw9i'),
+        x = r('rHpw').a.create(function (e) {
           return { flexGrow: { flexGrow: 1 } }
         }),
-        x = Object(O.c)()(function (e) {
+        G = Object(T.c)()(function (e) {
           var t = e.children,
             r = e.containerStyle,
             n = e.documentTitle,
@@ -82,21 +83,21 @@
             c = e.renderHeader,
             a = e.rightControl,
             u = e.title
-          return E.createElement(
-            T.a,
+          return w.a.createElement(
+            C.a,
             null,
-            E.createElement(
-              F.a,
-              { onLayout: o, style: b.flexGrow },
+            w.a.createElement(
+              P.a,
+              { onLayout: o, style: x.flexGrow },
               c
-                ? E.createElement(C.a.Configure, { documentTitle: n, headerless: !0 }, c())
-                : E.createElement(C.a.Configure, { backLocation: '/', documentTitle: n, rightControl: a, title: u }),
-              E.createElement(P.a, { style: [b.flexGrow, r] }, t),
+                ? w.a.createElement(F.a.Configure, { documentTitle: n, headerless: !0 }, c())
+                : w.a.createElement(F.a.Configure, { backLocation: '/', documentTitle: n, rightControl: a, title: u }),
+              w.a.createElement(b.a, { style: [x.flexGrow, r] }, t),
             ),
           )
         }),
-        G = r('3XMw')
-      function H(e) {
+        H = r('3XMw')
+      function M(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -117,13 +118,13 @@
           return h()(this, r)
         }
       }
-      var M = r.n(G).a.fa98627a,
-        j = function () {
+      var j = r.n(H).a.fa98627a,
+        D = function () {
           return null
         },
-        D = (function (e) {
+        J = (function (e) {
           d()(r, e)
-          var t = H(r)
+          var t = M(r)
           function r() {
             var e
             c()(this, r)
@@ -147,7 +148,7 @@
               v()(s()(e), '_handleLoadUser', function () {
                 var t = e.props,
                   r = t.createLocalApiErrorHandler
-                ;(0, t.fetchUserIfNeeded)(t.userId).catch(r(k))
+                ;(0, t.fetchUserIfNeeded)(t.userId).catch(r(g))
               }),
               e
             )
@@ -170,10 +171,10 @@
                 key: 'render',
                 value: function () {
                   var e = this.props.fetchStatus
-                  return E.createElement(
-                    x,
-                    { title: M },
-                    E.createElement(g.a, { fetchStatus: e, onRequestRetry: this._handleRetry, render: j }),
+                  return w.a.createElement(
+                    G,
+                    { title: j },
+                    w.a.createElement(O.a, { fetchStatus: e, onRequestRetry: this._handleRetry, render: D }),
                   )
                 },
               },
@@ -192,8 +193,8 @@
             ]),
             r
           )
-        })(E.Component)
-      t.default = U(D)
+        })(w.a.Component)
+      t.default = L(J)
     },
   },
 ])

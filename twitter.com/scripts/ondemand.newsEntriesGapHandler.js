@@ -1,44 +1,45 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [339],
+  [343],
   {
     '5bSN': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return m
+        return f
       })
       n('hBvt')
       var r = n('ERkP'),
-        c = n('3XMw'),
-        i = n.n(c),
+        c = n.n(r),
+        a = n('3XMw'),
+        i = n.n(a),
         o = n('MWbm'),
-        a = n('htQn'),
-        s = n('Qwev'),
-        l = n('h0NW'),
-        p = n('t62R'),
-        u = n('rHpw'),
-        d = i.a.ee8c6c61,
-        b = i.a.i8005e73
-      function m(e) {
+        s = n('htQn'),
+        l = n('Qwev'),
+        p = n('h0NW'),
+        u = n('t62R'),
+        d = n('rHpw'),
+        b = i.a.ee8c6c61,
+        m = i.a.i8005e73
+      function f(e) {
         var t = e.children,
-          n = void 0 === t ? d : t,
-          c = e.isLoading,
-          i = e.link,
-          u = e.onClick,
-          m = e.isTransparentCursor
-        return r.createElement(
-          a.a,
-          { link: i, onClick: u, style: f.root },
-          r.createElement(
+          n = void 0 === t ? b : t,
+          r = e.isLoading,
+          a = e.link,
+          i = e.onClick,
+          d = e.isTransparentCursor
+        return c.a.createElement(
+          s.a,
+          { link: a, onClick: i, style: y.root },
+          c.a.createElement(
             o.a,
-            { style: f.inner },
-            c
-              ? r.createElement(s.a, { accessibilityLabel: b })
-              : m
-              ? r.createElement(
-                  r.Fragment,
+            { style: y.inner },
+            r
+              ? c.a.createElement(l.a, { accessibilityLabel: m })
+              : d
+              ? c.a.createElement(
+                  c.a.Fragment,
                   null,
-                  r.createElement(l.a, {
-                    containerStyle: f.cursor,
+                  c.a.createElement(p.a, {
+                    containerStyle: y.cursor,
                     items: [
                       {
                         description: 'These may include replies that are potentially spammy, harmful, or offensive.',
@@ -46,13 +47,13 @@
                       },
                     ],
                   }),
-                  r.createElement(p.b, { children: 'View Replies', color: 'link', style: f.link }),
+                  c.a.createElement(u.b, { children: 'View Replies', color: 'link', style: y.link }),
                 )
-              : r.createElement(p.b, { align: 'center', children: n, color: 'link' }),
+              : c.a.createElement(u.b, { align: 'center', children: n, color: 'link' }),
           ),
         )
       }
-      var f = u.a.create(function (e) {
+      var y = d.a.create(function (e) {
         return {
           root: { justifyContent: 'center', minHeight: e.spaces.space48, width: '100%' },
           inner: { flexGrow: 1, flexShrink: 1, justifyContent: 'center' },
@@ -71,20 +72,21 @@
       n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var r = n('KEM+'),
         c = n.n(r),
-        i = n('ezF+'),
-        o = n('VPAj'),
-        a = n('3XMw'),
-        s = n.n(a),
+        a = n('ezF+'),
+        i = n('VPAj'),
+        o = n('3XMw'),
+        s = n.n(o),
         l = n('97Jx'),
         p = n.n(l),
         u = n('m3Bd'),
         d = n.n(u),
         b = n('ERkP'),
-        m = n('SrtL'),
-        f = n('5bSN')
-      var y = n('855f'),
-        v = n('zh9S')
-      function h(e, t) {
+        m = n.n(b),
+        f = n('SrtL'),
+        y = n('5bSN')
+      var v = n('855f'),
+        h = n('zh9S')
+      function w(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -96,72 +98,72 @@
         }
         return n
       }
-      function w(e) {
+      function g(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? h(Object(n), !0).forEach(function (t) {
+            ? w(Object(n), !0).forEach(function (t) {
                 c()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : h(Object(n)).forEach(function (t) {
+            : w(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var g = 'new_tweets_bar',
-        O = { component: g },
-        j = s.a.d6917e0c,
-        k = i.g({
+      var O = 'new_tweets_bar',
+        j = { component: O },
+        k = s.a.d6917e0c,
+        E = a.g({
           divider: { top: !0, bottom: !0 },
           component: function (e) {
             var t = e.children,
               n = e.count,
               r = d()(e, ['children', 'count'])
-            return b.createElement(
-              b.Fragment,
+            return m.a.createElement(
+              m.a.Fragment,
               null,
-              b.createElement(m.a.Configure, { timelineNewCount: n }),
-              b.createElement(f.a, p()({}, r, { children: t })),
+              m.a.createElement(f.a.Configure, { timelineNewCount: n }),
+              m.a.createElement(y.a, p()({}, r, { children: t })),
             )
           },
           bindActions: function (e) {
-            return { applyInstructions: e.module.applyNewTweetsBarInstructions, scribeAction: v.c }
+            return { applyInstructions: e.module.applyNewTweetsBarInstructions, scribeAction: h.c }
           },
           createProps: function (e) {
             var t = e.actions,
               n = t.applyInstructions,
               r = t.scribeAction,
               c = e.entry,
-              i = e.scribeNamespace,
-              o = c.content.count
+              a = e.scribeNamespace,
+              i = c.content.count
             return {
-              children: j({ count: y.a.getFormattedCount(o) }),
-              count: o,
+              children: k({ count: v.a.getFormattedCount(i) }),
+              count: i,
               onClick: function () {
-                r(w(w({}, i), {}, { action: 'click' }), { event_value: o }), n()
+                r(g(g({}, a), {}, { action: 'click' }), { event_value: i }), n()
               },
             }
           },
-          isFocusable: Object(o.a)(!0),
-          defaultScribeNamespace: O,
+          isFocusable: Object(i.a)(!0),
+          defaultScribeNamespace: j,
           onImpression: function (e) {
             var t = e.actions.scribeAction,
               n = e.entry,
               r = (e.scribeData, e.scribeNamespace),
               c = n.content.count
-            t(w(w({}, r), {}, { action: 'impression' }), { event_value: c })
+            t(g(g({}, r), {}, { action: 'impression' }), { event_value: c })
           },
           shouldDisplayBorder: function (e) {
             return !0
           },
           getBehavioralEventContextOverride: function () {
-            return { viewType: g }
+            return { viewType: O }
           },
         })
-      t.default = k
+      t.default = E
     },
   },
 ])

@@ -1,13 +1,14 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [215],
+  [218],
   {
     'l+4e': function (e, t, n) {
       'use strict'
       var r = n('ERkP'),
-        o = n('rcen'),
-        i = n('rHpw'),
-        c = n('MWbm'),
-        a = i.a.create(function (e) {
+        o = n.n(r),
+        i = n('rcen'),
+        c = n('rHpw'),
+        a = n('MWbm'),
+        s = c.a.create(function (e) {
           return {
             root: {
               paddingHorizontal: e.componentDimensions.gutterHorizontal,
@@ -26,35 +27,40 @@
       t.a = function (e) {
         var t = e.header,
           n = void 0 === t ? {} : t,
-          i = e.body,
-          s = void 0 === i ? {} : i,
+          r = e.body,
+          c = void 0 === r ? {} : r,
           l = e.controls,
           u = void 0 === l ? null : l,
           b = e.focusable,
           p = void 0 === b || b
-        return r.createElement(
-          c.a,
-          { focusable: p, style: a.root, tabIndex: '0' },
+        return o.a.createElement(
+          a.a,
+          { focusable: p, style: s.root, tabIndex: '0' },
           n.text
-            ? r.createElement(
-                c.a,
-                { style: a.textContainer },
-                r.createElement(o.a, {
+            ? o.a.createElement(
+                a.a,
+                { style: s.textContainer },
+                o.a.createElement(i.a, {
                   entities: n.entities,
                   forceAutoTextDirection: !0,
                   size: 'headline1',
-                  style: [a.text, s.text && a.headerWithBody],
+                  style: [s.text, c.text && s.headerWithBody],
                   text: n.text,
                   weight: 'bold',
                 }),
                 u,
               )
             : null,
-          s.text
-            ? r.createElement(
-                c.a,
-                { style: a.textContainer },
-                r.createElement(o.a, { entities: s.entities, forceAutoTextDirection: !0, style: a.text, text: s.text }),
+          c.text
+            ? o.a.createElement(
+                a.a,
+                { style: s.textContainer },
+                o.a.createElement(i.a, {
+                  entities: c.entities,
+                  forceAutoTextDirection: !0,
+                  style: s.text,
+                  text: c.text,
+                }),
                 n.text ? null : u,
               )
             : null,

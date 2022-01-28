@@ -11,37 +11,38 @@
           var t = (JSON.stringify(e) || '').split('')
           t.sort()
           var n = t.join('')
-          return i(n, 0).toString()
+          return a(n, 0).toString()
         },
-        i = function (e, t) {
-          for (var n = 'string' == typeof e ? e : String(e), r = t, i = 0; i < n.length; i++) {
-            ;(r = (r << 5) - r + n.charCodeAt(i)), (r &= r)
+        a = function (e, t) {
+          for (var n = 'string' == typeof e ? e : String(e), r = t, a = 0; a < n.length; a++) {
+            ;(r = (r << 5) - r + n.charCodeAt(a)), (r &= r)
           }
           return r
         }
     },
     I6Uj: function (e, t, n) {
       'use strict'
-      var r = n('ERkP')
+      var r = n('ERkP'),
+        a = n.n(r)
       function i(e) {
         return null
       }
       n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('FtHn')
-      var a = n('97Jx'),
-        o = n.n(a),
-        c = n('KEM+'),
-        l = n.n(c),
-        u = (n('jwue'), n('+oxZ'), n('3XMw')),
-        s = n.n(u),
-        p = n('/yvb'),
-        f = n('fn9Y'),
-        b = s.a.c0530da5,
-        d = s.a.ifea3114
-      var m = function (e) {
-          return r.createElement(p.a, {
-            accessibilityLabel: b,
-            hoverLabel: { label: d },
-            icon: r.createElement(f.a, null),
+      var o = n('97Jx'),
+        c = n.n(o),
+        l = n('KEM+'),
+        u = n.n(l),
+        s = (n('jwue'), n('+oxZ'), n('3XMw')),
+        p = n.n(s),
+        f = n('/yvb'),
+        b = n('fn9Y'),
+        d = p.a.c0530da5,
+        m = p.a.ifea3114
+      var v = function (e) {
+          return a.a.createElement(f.a, {
+            accessibilityLabel: d,
+            hoverLabel: { label: m },
+            icon: a.a.createElement(b.a, null),
             onPress: e.onPress,
             pullRight: !0,
             renderMenu: e.renderMenu,
@@ -50,58 +51,58 @@
             type: 'primaryText',
           })
         },
-        v = 'share-button',
-        h = 'share-by-tweet',
-        y = n('m3Bd'),
-        g = n.n(y),
-        O = n('1YZw'),
-        E = n('CaKu'),
-        w = n('y+lG'),
-        j = n('SrIh'),
-        P = n('RqPI'),
-        C = n('Irs7'),
-        I = n('uDfI'),
-        T = n('Ty5D'),
-        S = n('yUQf'),
-        k = n('jwTb'),
-        x = n('SOvA'),
-        L = n('I/9y'),
-        D = {
+        h = 'share-button',
+        y = 'share-by-tweet',
+        g = n('m3Bd'),
+        O = n.n(g),
+        E = n('1YZw'),
+        w = n('CaKu'),
+        j = n('y+lG'),
+        P = n('SrIh'),
+        C = n('RqPI'),
+        I = n('Irs7'),
+        T = n('uDfI'),
+        S = n('Ty5D'),
+        k = n('yUQf'),
+        x = n('jwTb'),
+        L = n('SOvA'),
+        D = n('I/9y'),
+        A = {
           tweet: {
             isAvailable: function () {
               return !0
             },
             scribeAction: 'share_via_tweet',
-            Icon: k.a,
-            text: s.a.fcc684a9,
-            testID: h,
+            Icon: x.a,
+            text: p.a.fcc684a9,
+            testID: y,
           },
           dm: {
             isAvailable: function () {
               return !0
             },
             scribeAction: 'share_via_dm',
-            Icon: x.a,
-            text: s.a.f61c4bbf,
+            Icon: L.a,
+            text: p.a.f61c4bbf,
           },
           copy: {
             isAvailable: function () {
-              return E.a.isAvailable()
+              return w.a.isAvailable()
             },
             scribeAction: 'copy_link',
-            Icon: L.a,
-            text: s.a.e05c00b4,
+            Icon: D.a,
+            text: p.a.e05c00b4,
           },
           via: {
             isAvailable: function () {
               return 'function' == typeof window.navigator.share
             },
             scribeAction: 'share_via',
-            Icon: f.a,
-            text: s.a.if23a251,
+            Icon: b.a,
+            text: p.a.if23a251,
           },
         }
-      function A(e, t) {
+      function B(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -113,62 +114,62 @@
         }
         return n
       }
-      function B(e) {
+      function M(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? A(Object(n), !0).forEach(function (t) {
-                l()(e, t, n[t])
+            ? B(Object(n), !0).forEach(function (t) {
+                u()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : A(Object(n)).forEach(function (t) {
+            : B(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      function M(e) {
-        var t = Object(C.b)()
+      function _(e) {
+        var t = Object(I.b)()
         return {
           getActionItem: (function (e, t) {
-            var n = Object(I.c)(),
-              i = Object(T.g)(),
-              a = Object(S.a)(P.v)
-            return r.useMemo(
+            var n = Object(T.c)(),
+              r = Object(S.g)(),
+              i = Object(k.a)(C.v)
+            return a.a.useMemo(
               function () {
-                return function (r) {
-                  var o = D[r.type],
+                return function (a) {
+                  var o = A[a.type],
                     c = o.isAvailable,
                     l = o.scribeAction,
-                    u = g()(o, ['isAvailable', 'scribeAction'])
+                    u = O()(o, ['isAvailable', 'scribeAction'])
                   if (!c()) return null
-                  var s = B({}, u)
+                  var s = M({}, u)
                   function p() {
-                    var o = r.shareText || e.shareText,
+                    var o = a.shareText || e.shareText,
                       c = e.url,
-                      u = B(B({}, e.scribeNamespace), {}, { action: l }, r.scribeNamespace),
+                      u = M(M({}, e.scribeNamespace), {}, { action: l }, a.scribeNamespace),
                       s = { text: o, url: c },
-                      p = { analytics: t, dispatch: n, history: i, mergedScribeNamespace: u, sessionToken: a }
+                      p = { analytics: t, dispatch: n, history: r, mergedScribeNamespace: u, sessionToken: i }
                     !(function (e, t, n) {
                       var r = function () {
                         return n.analytics.scribe(n.mergedScribeNamespace)
                       }
                       switch (e) {
                         case 'dm':
-                          return r(), void n.history.push(B(B({}, N(t)), {}, { pathname: '/messages/compose' }))
+                          return r(), void n.history.push(M(M({}, F(t)), {}, { pathname: '/messages/compose' }))
                         case 'copy':
                           return (
-                            E.a.setString(Object(w.a)(t.url, n.sessionToken)),
+                            w.a.setString(Object(j.a)(t.url, n.sessionToken)),
                             r(),
-                            void n.dispatch(Object(O.b)({ text: _.copyLinkSuccessMessage }))
+                            void n.dispatch(Object(E.b)({ text: N.copyLinkSuccessMessage }))
                           )
                         case 'tweet':
                           return (
                             r(),
                             void n.history.push(
-                              B(
-                                B({ pathname: '/compose/tweet' }, N(t)),
+                              M(
+                                M({ pathname: '/compose/tweet' }, F(t)),
                                 {},
                                 { state: { positionCursorAtBeginning: !0 } },
                               ),
@@ -176,37 +177,37 @@
                           )
                         case 'via':
                           return void window.navigator
-                            .share({ text: t.text, url: Object(w.a)(t.url, n.sessionToken) })
+                            .share({ text: t.text, url: Object(j.a)(t.url, n.sessionToken) })
                             .then(r)
                             .catch(function () {
-                              n.analytics.scribe(B(B({}, n.mergedScribeNamespace), {}, { action: 'share_error' }))
+                              n.analytics.scribe(M(M({}, n.mergedScribeNamespace), {}, { action: 'share_error' }))
                             })
                         default:
-                          Object(j.a)('[ShareButton] Unexpected share type ['.concat(e, ']'))
+                          Object(P.a)('[ShareButton] Unexpected share type ['.concat(e, ']'))
                       }
-                    })(r.type, s, p)
+                    })(a.type, s, p)
                   }
-                  return r.label && (s.text = r.label), B(B({}, s), {}, { onClick: p })
+                  return a.label && (s.text = a.label), M(M({}, s), {}, { onClick: p })
                 }
               },
-              [t, n, i, a, e.scribeNamespace, e.shareText, e.url],
+              [t, n, r, i, e.scribeNamespace, e.shareText, e.url],
             )
           })(e, t),
           analytics: t,
         }
       }
-      var _ = { copyLinkSuccessMessage: s.a.f88553c8, shareTextPrefixFormatter: s.a.gb5851d7 }
-      function N(e) {
+      var N = { copyLinkSuccessMessage: p.a.f88553c8, shareTextPrefixFormatter: p.a.gb5851d7 }
+      function F(e) {
         var t = e.url,
           n = e.text
-        return { query: { text: n ? _.shareTextPrefixFormatter({ prefix: n, url: t }) : t } }
+        return { query: { text: n ? N.shareTextPrefixFormatter({ prefix: n, url: t }) : t } }
       }
-      var F = n('T0aG'),
-        R = n.n(F),
-        H = n('mN6z')
-      var G = n('mjJ+'),
-        U = n('rHpw')
-      function K(e, t) {
+      var R = n('T0aG'),
+        H = n.n(R),
+        G = n('mN6z')
+      var U = n('mjJ+'),
+        K = n('rHpw')
+      function Q(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -218,170 +219,171 @@
         }
         return n
       }
-      function Q(e) {
+      function W(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? K(Object(n), !0).forEach(function (t) {
-                l()(e, t, n[t])
+            ? Q(Object(n), !0).forEach(function (t) {
+                u()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : K(Object(n)).forEach(function (t) {
+            : Q(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var W = { element: 'share' }
-      function V(e) {
+      var V = { element: 'share' }
+      function Z(e) {
         var t = (function (e) {
-            var t = r.useRef({ previous: void 0 })
-            if ('object' !== R()(e)) return e
+            var t = a.a.useRef({ previous: void 0 })
+            if ('object' !== H()(e)) return e
             function n() {
               return (t.current.previous = e), e
             }
-            var i = t.current.previous
-            return i && (e === i || Object(H.a)(e, i)) ? i : n()
-          })(Q(Q({}, W), e.scribeNamespace)),
-          n = M(Q(Q({}, e), {}, { scribeNamespace: t })),
-          i = n.analytics,
-          a = n.getActionItem
-        var o = e.ButtonComponent || Z
-        return r.createElement(o, {
+            var r = t.current.previous
+            return r && (e === r || Object(G.a)(e, r)) ? r : n()
+          })(W(W({}, V), e.scribeNamespace)),
+          n = _(W(W({}, e), {}, { scribeNamespace: t })),
+          r = n.analytics,
+          i = n.getActionItem
+        var o = e.ButtonComponent || J
+        return a.a.createElement(o, {
           onPress: function () {
-            var e = Q(Q({}, t), {}, { action: 'share_menu_click' })
-            i.scribe(e)
+            var e = W(W({}, t), {}, { action: 'share_menu_click' })
+            r.scribe(e)
           },
           pullRight: e.pullRight,
           renderMenu: function (t) {
             var n = []
             return (
               e.children
-                ? r.Children.forEach(e.children, function (e) {
-                    if (r.isValidElement(e)) {
-                      var t = a(e.props)
+                ? a.a.Children.forEach(e.children, function (e) {
+                    if (a.a.isValidElement(e)) {
+                      var t = i(e.props)
                       t && n.push(t)
                     }
                   })
                 : ['tweet', 'dm', 'copy', 'via'].forEach(function (e) {
-                    var t = a({ type: e })
+                    var t = i({ type: e })
                     t && n.push(t)
                   }),
-              r.createElement(G.a, { isFixed: e.isFixed, items: n, onCloseRequested: t, shouldCloseOnClick: !0 })
+              a.a.createElement(U.a, { isFixed: e.isFixed, items: n, onCloseRequested: t, shouldCloseOnClick: !0 })
             )
           },
         })
       }
-      function Z(e) {
-        return r.createElement(m, o()({}, e, { style: J.button, testID: v }))
+      function J(e) {
+        return a.a.createElement(v, c()({}, e, { style: q.button, testID: h }))
       }
-      var J = U.a.create(function (e) {
+      var q = K.a.create(function (e) {
         return { button: { marginRight: e.spaces.space4 } }
       })
-      function q(e) {
+      function X(e) {
         var t = e.copyLinkShareLabel,
           n = e.dmShareLabel,
-          a = e.externalShareLabel,
+          r = e.externalShareLabel,
           o = e.tweetShareLabel,
-          c = g()(e, ['copyLinkShareLabel', 'dmShareLabel', 'externalShareLabel', 'tweetShareLabel'])
-        return r.createElement(
-          V,
+          c = O()(e, ['copyLinkShareLabel', 'dmShareLabel', 'externalShareLabel', 'tweetShareLabel'])
+        return a.a.createElement(
+          Z,
           c,
-          r.createElement(i, { label: o, type: 'tweet' }),
-          r.createElement(i, { label: n, type: 'dm' }),
-          r.createElement(i, { label: t, type: 'copy' }),
-          r.createElement(i, { label: a, type: 'via' }),
+          a.a.createElement(i, { label: o, type: 'tweet' }),
+          a.a.createElement(i, { label: n, type: 'dm' }),
+          a.a.createElement(i, { label: t, type: 'copy' }),
+          a.a.createElement(i, { label: r, type: 'via' }),
         )
       }
-      ;(q.Action = i), (q.Custom = V)
-      t.a = q
+      ;(X.Action = i), (X.Custom = Z)
+      t.a = X
     },
     UZjl: function (e, t, n) {
       'use strict'
       n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var r = n('ddV6'),
-        i = n.n(r),
-        a = n('m3Bd'),
-        o = n.n(a),
+        a = n.n(r),
+        i = n('m3Bd'),
+        o = n.n(i),
         c = n('KEM+'),
         l = n.n(c),
         u = (n('hBpG'), n('ERkP')),
-        s = n('es0u'),
-        p = n('hqKg'),
-        f = n('MDbM'),
-        b = n('rxPX'),
-        d = function (e, t) {
+        s = n.n(u),
+        p = n('es0u'),
+        f = n('hqKg'),
+        b = n('MDbM'),
+        d = n('rxPX'),
+        m = function (e, t) {
           return t.module.selectPageConfiguration(e)
         },
-        m = function (e, t) {
+        v = function (e, t) {
           return t.module.selectInitialFetchStatus(e)
         },
-        v = Object(p.createSelector)(d, m, function (e, t) {
-          return t !== f.a.LOADED || (!!e && !!e.tabs)
+        h = Object(f.createSelector)(m, v, function (e, t) {
+          return t !== b.a.LOADED || (!!e && !!e.tabs)
         }),
-        h = Object(b.a)()
+        y = Object(d.a)()
           .propsFromState(function () {
-            return { hasTabNavigation: v, pageConfiguration: d, initialFetchStatus: m }
+            return { hasTabNavigation: h, pageConfiguration: m, initialFetchStatus: v }
           })
           .withAnalytics(),
-        y = n('QIgh'),
-        g = n('s14A'),
-        O = n('dwig'),
-        E = (n('uFXj'), n('7JQg')),
-        w = n('rHpw'),
-        j = n('GKOv'),
-        P = n('Rp9C'),
-        C = n('Irs7')
-      function I(e, t) {
-        var n = Object(C.b)(),
+        g = n('QIgh'),
+        O = n('s14A'),
+        E = n('dwig'),
+        w = (n('uFXj'), n('7JQg')),
+        j = n('rHpw'),
+        P = n('GKOv'),
+        C = n('Rp9C'),
+        I = n('Irs7')
+      function T(e, t) {
+        var n = Object(I.b)(),
           r = t || {},
-          i = r.component,
-          a = r.element,
-          o = { items: [P.a.forTopic(e, t)] }
+          a = r.component,
+          i = r.element,
+          o = { items: [C.a.forTopic(e, t)] }
         return (
-          u.useEffect(
+          s.a.useEffect(
             function () {
-              n.scribe({ component: i, element: a, action: 'impression', data: o })
+              n.scribe({ component: a, element: i, action: 'impression', data: o })
             },
-            [o, i, a, n],
+            [o, a, i, n],
           ),
-          { namespace: { component: i, element: a }, data: o }
+          { namespace: { component: a, element: i }, data: o }
         )
       }
-      var T = n('MWbm')
-      function S(e) {
+      var S = n('MWbm')
+      function k(e) {
         var t = e.header,
           n = t.clientEventInfo,
           r = t.displayType,
-          i = t.facepile,
-          a = t.landingContext,
+          a = t.facepile,
+          i = t.landingContext,
           o = t.topicId,
           c = e.onHeaderVisible,
-          l = I(o, n),
-          s = l.data,
+          l = T(o, n),
+          u = l.data,
           p = l.namespace
-        return u.createElement(
-          T.a,
-          { style: k.root },
-          u.createElement(
-            E.b,
-            { data: s, namespace: p },
-            u.createElement(j.a, {
+        return s.a.createElement(
+          S.a,
+          { style: x.root },
+          s.a.createElement(
+            w.b,
+            { data: u, namespace: p },
+            s.a.createElement(P.a, {
               displayType: r,
-              facepile: i,
+              facepile: a,
               onFollowHeaderOffscreen: function (e) {
                 var t = e.isOffscreen
                 return c(!t)
               },
               topicId: o,
-              topicLandingContext: a,
+              topicLandingContext: i,
               withDivider: !0,
             }),
           ),
         )
       }
-      var k = w.a.create(function (e) {
+      var x = j.a.create(function (e) {
           return {
             root: {
               borderBottomWidth: e.borderWidths.small,
@@ -390,105 +392,105 @@
             },
           }
         }),
-        x = n('3XMw'),
-        L = n.n(x),
-        D = (n('jQ/y'), n('ho0z'), n('zI2C')),
-        A = n('v6aA'),
-        B = n('Zejx'),
-        M = function (e, t) {
+        L = n('3XMw'),
+        D = n.n(L),
+        A = (n('jQ/y'), n('ho0z'), n('zI2C')),
+        B = n('v6aA'),
+        M = n('Zejx'),
+        _ = function (e, t) {
           var n = t.navBar.topicId ? t.navBar.topicId : ''
-          return B.a.select(e, n)
+          return M.a.select(e, n)
         },
-        _ = Object(b.a)().propsFromState(function () {
-          return { topic: M }
+        N = Object(d.a)().propsFromState(function () {
+          return { topic: _ }
         }),
-        N = n('PbbS'),
-        F = n('LWCC'),
-        R = n('IcAo'),
-        H = n('rJoH'),
-        G = n('I6Uj'),
-        U = n('zfvc'),
-        K = function (e) {
+        F = n('PbbS'),
+        R = n('LWCC'),
+        H = n('IcAo'),
+        G = n('rJoH'),
+        U = n('I6Uj'),
+        K = n('zfvc'),
+        Q = function (e) {
           return 'https://twitter.com/i/topics/'.concat(e)
         },
-        Q = function (e) {
+        W = function (e) {
           return 'twitter://topics_timeline?id='.concat(e)
         },
-        W = L.a.ed88e742
-      var V = w.a.create(function (e) {
+        V = D.a.ed88e742
+      var Z = j.a.create(function (e) {
           return {
             rightControl: { flexDirection: 'row' },
             followButtonContainer: { justifyContent: 'center', paddingEnd: e.spaces.space4 },
           }
         }),
-        Z = _(function (e) {
+        J = N(function (e) {
           var t = e.navBar.topicId ? e.navBar.topicId : '',
             n = e.isHeaderOffscreen,
             r = e.navBar.clientEventInfo,
-            i = e.pageNamespace,
-            a = e.topic,
+            a = e.pageNamespace,
+            i = e.topic,
             o = e.withAppLinks,
             c = e.withOpenGraphMeta,
-            l = u.useContext(A.a).featureSwitches.isTrue('topic_landing_page_share_enabled'),
-            s = I(t, r),
-            p = s.data,
-            f = s.namespace,
-            b = Object(R.a)({}, i, f)
-          return a
-            ? u.createElement(
-                E.b,
+            l = s.a.useContext(B.a).featureSwitches.isTrue('topic_landing_page_share_enabled'),
+            u = T(t, r),
+            p = u.data,
+            f = u.namespace,
+            b = Object(H.a)({}, a, f)
+          return i
+            ? s.a.createElement(
+                w.b,
                 { data: p, namespace: b },
-                u.createElement(
-                  u.Fragment,
+                s.a.createElement(
+                  s.a.Fragment,
                   null,
                   c
-                    ? u.createElement(H.a, {
-                        canonical: K(t),
-                        description: a.description,
-                        title: a.name,
+                    ? s.a.createElement(G.a, {
+                        canonical: Q(t),
+                        description: i.description,
+                        title: i.name,
                         type: 'article',
                       })
                     : null,
-                  o ? u.createElement(D.a, { deepLink: Q(t) }) : null,
-                  u.createElement(
-                    T.a,
-                    { style: V.rightControl },
-                    u.createElement(
-                      T.a,
-                      { style: V.followButtonContainer },
-                      u.createElement(
-                        U.b,
+                  o ? s.a.createElement(A.a, { deepLink: W(t) }) : null,
+                  s.a.createElement(
+                    S.a,
+                    { style: Z.rightControl },
+                    s.a.createElement(
+                      S.a,
+                      { style: Z.followButtonContainer },
+                      s.a.createElement(
+                        K.b,
                         { animateMount: !0, show: n, type: 'fade' },
-                        u.createElement(F.a, { size: 'medium', textMode: N.a.FollowTopic, topic: a }),
+                        s.a.createElement(R.a, { size: 'medium', textMode: F.a.FollowTopic, topic: i }),
                       ),
                     ),
-                    l ? u.createElement(G.a, { copyLinkShareLabel: W, scribeNamespace: b, url: K(t) }) : null,
+                    l ? s.a.createElement(U.a, { copyLinkShareLabel: V, scribeNamespace: b, url: Q(t) }) : null,
                   ),
                 ),
               )
             : null
         }),
-        J = n('yoO3'),
-        q = (n('OZaJ'), n('VrFO')),
-        X = n.n(q),
-        z = n('Y9Ll'),
-        Y = n.n(z),
-        $ = n('1Pcy'),
-        ee = n.n($),
-        te = n('5Yy7'),
-        ne = n.n(te),
-        re = n('N+ot'),
-        ie = n.n(re),
-        ae = n('AuHH'),
-        oe = n.n(ae),
-        ce = (n('2G9S'), n('v84o')),
-        le = n('0KEI'),
-        ue = function (e, t) {
+        q = n('yoO3'),
+        X = (n('OZaJ'), n('VrFO')),
+        z = n.n(X),
+        Y = n('Y9Ll'),
+        $ = n.n(Y),
+        ee = n('1Pcy'),
+        te = n.n(ee),
+        ne = n('5Yy7'),
+        re = n.n(ne),
+        ae = n('N+ot'),
+        ie = n.n(ae),
+        oe = n('AuHH'),
+        ce = n.n(oe),
+        le = (n('2G9S'), n('v84o')),
+        ue = n('0KEI'),
+        se = function (e, t) {
           return t.initialModule.selectPageConfiguration && t.initialModule.selectPageConfiguration(e)
         },
-        se = function (e, t) {
+        pe = function (e, t) {
           var n = t.selectedTabId,
-            r = ue(e, t)
+            r = se(e, t)
           return (
             r &&
             r.tabs &&
@@ -497,22 +499,22 @@
             })
           )
         },
-        pe = Object(b.a)()
+        fe = Object(d.a)()
           .propsFromState(function () {
-            return { pageConfiguration: ue, selectedTab: se }
+            return { pageConfiguration: se, selectedTab: pe }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(le.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(ue.createLocalApiErrorHandlerWithContextFactory)(
                 'RICH_SEGMENTED_TIMELINE',
               ),
             }
           })
           .withAnalytics(),
-        fe = n('doI8'),
-        be = n('oQhu'),
-        de = n('fTQJ')
-      function me(e) {
+        be = n('doI8'),
+        de = n('oQhu'),
+        me = n('fTQJ')
+      function ve(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -525,62 +527,62 @@
         })()
         return function () {
           var n,
-            r = oe()(e)
+            r = ce()(e)
           if (t) {
-            var i = oe()(this).constructor
-            n = Reflect.construct(r, arguments, i)
+            var a = ce()(this).constructor
+            n = Reflect.construct(r, arguments, a)
           } else n = r.apply(this, arguments)
           return ie()(this, n)
         }
       }
-      var ve = pe(
+      var he = fe(
           (function (e) {
-            ne()(n, e)
-            var t = me(n)
+            re()(n, e)
+            var t = ve(n)
             function n() {
               var e
-              X()(this, n)
-              for (var r = arguments.length, i = new Array(r), a = 0; a < r; a++) i[a] = arguments[a]
+              z()(this, n)
+              for (var r = arguments.length, a = new Array(r), i = 0; i < r; i++) a[i] = arguments[i]
               return (
-                (e = t.call.apply(t, [this].concat(i))),
-                l()(ee()(e), '_getTimelineNamespace', function () {
+                (e = t.call.apply(t, [this].concat(a))),
+                l()(te()(e), '_getTimelineNamespace', function () {
                   var t = e.props,
                     n = t.analytics,
                     r = t.pageConfiguration,
-                    i = t.selectedTab,
-                    a = (null == i ? void 0 : i.scribeConfig) || (null == r ? void 0 : r.scribeConfig)
-                  if (a) {
-                    a.entityToken
-                    return o()(a, ['entityToken'])
+                    a = t.selectedTab,
+                    i = (null == a ? void 0 : a.scribeConfig) || (null == r ? void 0 : r.scribeConfig)
+                  if (i) {
+                    i.entityToken
+                    return o()(i, ['entityToken'])
                   }
                   return n.contextualScribeNamespace
                 }),
                 l()(
-                  ee()(e),
+                  te()(e),
                   '_getModule',
-                  Object(be.a)(function (e, t, n, r) {
+                  Object(de.a)(function (e, t, n, r) {
                     if ((null == e ? void 0 : e.id) !== t) {
                       if (null != e && e.urtEndpoint)
-                        return Object(ce.a)({ urtUrl: null == e ? void 0 : e.urtEndpoint, timelinePrefix: r })
-                      if (null != e && e.graphQLTimelineId) return Object(fe.a)(e.graphQLTimelineId)
+                        return Object(le.a)({ urtUrl: null == e ? void 0 : e.urtEndpoint, timelinePrefix: r })
+                      if (null != e && e.graphQLTimelineId) return Object(be.a)(e.graphQLTimelineId)
                     }
                     return n
                   }),
                 ),
-                l()(ee()(e), '_getRefreshIntervalSecForCurrentTab', function () {
+                l()(te()(e), '_getRefreshIntervalSecForCurrentTab', function () {
                   var t,
                     n = e.props,
                     r = n.pageConfiguration,
-                    i = n.selectedTab,
-                    a = null == r || null === (t = r.tabs) || void 0 === t ? void 0 : t.initialTabId
-                  if (i) return i.refreshIntervalSec
-                  if (a) {
+                    a = n.selectedTab,
+                    i = null == r || null === (t = r.tabs) || void 0 === t ? void 0 : t.initialTabId
+                  if (a) return a.refreshIntervalSec
+                  if (i) {
                     var o,
                       c =
                         null == r || null === (o = r.tabs) || void 0 === o
                           ? void 0
                           : o.tabs.find(function (e) {
-                              return a === e.id
+                              return i === e.id
                             })
                     return null == c ? void 0 : c.refreshIntervalSec
                   }
@@ -589,7 +591,7 @@
               )
             }
             return (
-              Y()(n, [
+              $()(n, [
                 {
                   key: 'render',
                   value: function () {
@@ -597,30 +599,30 @@
                       t,
                       n = this.props,
                       r = n.entryConfiguration,
-                      i = n.initialModule,
-                      a = n.pageConfiguration,
+                      a = n.initialModule,
+                      i = n.pageConfiguration,
                       o = n.prerollDisplayLocation,
                       c = n.refreshControl,
                       l = n.renderEmptyState,
-                      s = n.renderUnavailable,
+                      u = n.renderUnavailable,
                       p = n.selectedTab,
                       f = n.timelinePrefix,
                       b = n.title,
                       d = {
-                        token: null == a || null === (e = a.scribeConfig) || void 0 === e ? void 0 : e.entityToken,
+                        token: null == i || null === (e = i.scribeConfig) || void 0 === e ? void 0 : e.entityToken,
                       },
                       m = this._getModule(
                         p,
-                        null == a || null === (t = a.tabs) || void 0 === t ? void 0 : t.initialTabId,
-                        i,
+                        null == i || null === (t = i.tabs) || void 0 === t ? void 0 : t.initialTabId,
+                        a,
                         f,
                       ),
                       v = this._getRefreshIntervalSecForCurrentTab(),
                       h = v ? 1e3 * v : void 0
-                    return u.createElement(
-                      E.b,
+                    return s.a.createElement(
+                      w.b,
                       { namespace: this._getTimelineNamespace() },
-                      u.createElement(de.a, {
+                      s.a.createElement(me.a, {
                         behavioralEventContext: d,
                         entryConfiguration: r,
                         module: m,
@@ -628,7 +630,7 @@
                         prerollDisplayLocation: o,
                         refreshControl: c,
                         renderEmptyState: l,
-                        renderUnavailable: s,
+                        renderUnavailable: u,
                         title: b,
                       }),
                     )
@@ -637,18 +639,18 @@
               ]),
               n
             )
-          })(u.Component),
+          })(s.a.Component),
         ),
-        he = (n('z84I'), n('+Kfv')),
-        ye = function (e, t) {
+        ye = (n('z84I'), n('+Kfv')),
+        ge = function (e, t) {
           return t.module.selectInitialFetchStatus(e)
         },
-        ge = function (e, t) {
+        Oe = function (e, t) {
           return t.module.selectPageConfiguration && t.module.selectPageConfiguration(e)
         },
-        Oe = function (e, t) {
+        Ee = function (e, t) {
           var n = t.selectedTabId,
-            r = ge(e, t)
+            r = Oe(e, t)
           return (
             r &&
             r.tabs &&
@@ -657,24 +659,24 @@
             })
           )
         },
-        Ee = Object(b.a)()
+        we = Object(d.a)()
           .propsFromState(function () {
-            return { initialFetchStatus: ye, pageConfiguration: ge, selectedTab: Oe }
+            return { initialFetchStatus: ge, pageConfiguration: Oe, selectedTab: Ee }
           })
           .propsFromActions(function (e) {
             var t = e.module
             return {
-              createLocalApiErrorHandler: Object(le.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(ue.createLocalApiErrorHandlerWithContextFactory)(
                 'RICH_SEGMENTED_TIMELINE',
               ),
               fetchInitial: t.fetchInitial,
             }
           })
           .withAnalytics(),
-        we = n('Nhmk'),
-        je = n('k/OQ'),
-        Pe = n('G8HL')
-      function Ce(e, t) {
+        je = n('Nhmk'),
+        Pe = n('k/OQ'),
+        Ce = n('G8HL')
+      function Ie(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -686,22 +688,22 @@
         }
         return n
       }
-      function Ie(e) {
+      function Te(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Ce(Object(n), !0).forEach(function (t) {
+            ? Ie(Object(n), !0).forEach(function (t) {
                 l()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : Ce(Object(n)).forEach(function (t) {
+            : Ie(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      function Te(e) {
+      function Se(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -714,51 +716,51 @@
         })()
         return function () {
           var n,
-            r = oe()(e)
+            r = ce()(e)
           if (t) {
-            var i = oe()(this).constructor
-            n = Reflect.construct(r, arguments, i)
+            var a = ce()(this).constructor
+            n = Reflect.construct(r, arguments, a)
           } else n = r.apply(this, arguments)
           return ie()(this, n)
         }
       }
-      var Se = 'controls',
-        ke = (function (e) {
-          ne()(n, e)
-          var t = Te(n)
+      var ke = 'controls',
+        xe = (function (e) {
+          re()(n, e)
+          var t = Se(n)
           function n() {
             var e
-            X()(this, n)
-            for (var r = arguments.length, i = new Array(r), a = 0; a < r; a++) i[a] = arguments[a]
+            z()(this, n)
+            for (var r = arguments.length, a = new Array(r), i = 0; i < r; i++) a[i] = arguments[i]
             return (
-              (e = t.call.apply(t, [this].concat(i))),
-              l()(ee()(e), '_fetchPageModule', function () {
+              (e = t.call.apply(t, [this].concat(a))),
+              l()(te()(e), '_fetchPageModule', function () {
                 var t = e.props,
                   n = t.analytics,
                   r = t.createLocalApiErrorHandler,
-                  i = t.fetchInitial,
-                  a = t.pageConfiguration,
-                  o = a ? a.scribeConfig : void 0
-                return i().then(function (t) {
-                  t.performed && n.scribe(Ie(Ie({}, e._getScribeNamespace(o)), {}, { action: 'get_initial' }))
-                }, r(we.a))
+                  a = t.fetchInitial,
+                  i = t.pageConfiguration,
+                  o = i ? i.scribeConfig : void 0
+                return a().then(function (t) {
+                  t.performed && n.scribe(Te(Te({}, e._getScribeNamespace(o)), {}, { action: 'get_initial' }))
+                }, r(je.a))
               }),
-              l()(ee()(e), '_render', function () {
+              l()(te()(e), '_render', function () {
                 var t = e.props,
                   n = t.analytics,
                   r = t.getTabLink,
-                  i = t.pageConfiguration,
-                  a = t.selectedTab,
-                  o = null == i ? void 0 : i.tabs
+                  a = t.pageConfiguration,
+                  i = t.selectedTab,
+                  o = null == a ? void 0 : a.tabs
                 if (o && o.tabs) {
                   var c,
-                    l = (a && a.id) || o.initialTabId,
-                    s = i ? i.scribeConfig : void 0,
-                    p = o.tabs.map(function (t, i) {
-                      var a,
+                    l = (i && i.id) || o.initialTabId,
+                    u = a ? a.scribeConfig : void 0,
+                    p = o.tabs.map(function (t, a) {
+                      var i,
                         o = t.id === l
                       return (
-                        o && (c = i),
+                        o && (c = a),
                         {
                           isActive: function () {
                             return o
@@ -767,18 +769,18 @@
                           label: t.labelText,
                           onClick: function () {
                             n.scribe(
-                              e._buildTabNamespace(e._getScribeNamespace(s), e._getScribeNamespace(t.scribeConfig)),
+                              e._buildTabNamespace(e._getScribeNamespace(u), e._getScribeNamespace(t.scribeConfig)),
                             )
                           },
                           to: r(t.id),
-                          token: null === (a = t.scribeConfig) || void 0 === a ? void 0 : a.entityToken,
+                          token: null === (i = t.scribeConfig) || void 0 === i ? void 0 : i.entityToken,
                         }
                       )
                     })
-                  return u.createElement(
-                    he.a,
-                    { viewType: Se },
-                    u.createElement(je.a, { links: p, visibleItemIndex: c }),
+                  return s.a.createElement(
+                    ye.a,
+                    { viewType: ke },
+                    s.a.createElement(Pe.a, { links: p, visibleItemIndex: c }),
                   )
                 }
                 return null
@@ -787,7 +789,7 @@
             )
           }
           return (
-            Y()(n, [
+            $()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -803,7 +805,7 @@
               {
                 key: 'render',
                 value: function () {
-                  return this.props.initialFetchStatus === f.a.LOADED ? this._render() : null
+                  return this.props.initialFetchStatus === b.a.LOADED ? this._render() : null
                 },
               },
               {
@@ -811,7 +813,7 @@
                 value: function (e, t) {
                   var n
                   return (
-                    e && (n = e), t && (n = Ie(Ie({}, n), t)), Ie(Ie({}, n), {}, { element: 'tab', action: 'navigate' })
+                    e && (n = e), t && (n = Te(Te({}, n), t)), Te(Te({}, n), {}, { element: 'tab', action: 'navigate' })
                   )
                 },
               },
@@ -827,14 +829,14 @@
             ]),
             n
           )
-        })(u.Component),
-        xe = Ee(Object(Pe.a)(ke)),
-        Le = n('VS6U'),
-        De = n('5Y9N'),
-        Ae = n('FIs5'),
-        Be = n('cHvH'),
-        Me = n('mw9i')
-      function _e(e, t) {
+        })(s.a.Component),
+        Le = we(Object(Ce.a)(xe)),
+        De = n('VS6U'),
+        Ae = n('5Y9N'),
+        Be = n('FIs5'),
+        Me = n('cHvH'),
+        _e = n('mw9i')
+      function Ne(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -846,47 +848,47 @@
         }
         return n
       }
-      function Ne(e) {
+      function Fe(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? _e(Object(n), !0).forEach(function (t) {
+            ? Ne(Object(n), !0).forEach(function (t) {
                 l()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : _e(Object(n)).forEach(function (t) {
+            : Ne(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var Fe = L.a.e9f1fbcb,
-        Re = u.createElement(s.a, null),
-        He = Object(be.a)(function (e, t) {
-          return Ne(Ne({}, t), Object(De.a)({ isWide: e }))
+      var Re = D.a.e9f1fbcb,
+        He = s.a.createElement(p.a, null),
+        Ge = Object(de.a)(function (e, t) {
+          return Fe(Fe({}, t), Object(Ae.a)({ isWide: e }))
         }),
-        Ge = function (e) {
+        Ue = function (e) {
           var t = e.TabBar,
             n = e.backLocation,
             r = e.behavioralEventViewType,
-            a = e.entryConfiguration,
+            i = e.entryConfiguration,
             c = e.fab,
             l = e.getTabLink,
-            s = e.hasTabNavigation,
+            u = e.hasTabNavigation,
             p = e.history,
-            b = e.initialFetchStatus,
+            f = e.initialFetchStatus,
             d = e.initialPageNamespace,
             m = e.logoButton,
             v = e.module,
             h = e.onBackClick,
             y = e.pageConfiguration,
-            j = e.prerollDisplayLocation,
+            g = e.prerollDisplayLocation,
             P = e.renderEmptyState,
             C = e.renderUnavailable,
             I = e.rightControl,
             T = e.searchBoxRef,
-            k = e.selectedTabId,
+            S = e.selectedTabId,
             x = e.sidebarContent,
             L = e.timelinePrefix,
             D = e.title,
@@ -896,34 +898,34 @@
             _ = e.withOpenGraphMeta,
             N = e.withSearchBox,
             F = e.withTweetButton,
-            H = u.useState(!0),
-            G = i()(H, 2),
+            R = s.a.useState(!0),
+            G = a()(R, 2),
             U = G[0],
             K = G[1],
             Q = y || {},
             W = Q.header,
             V = Q.navBar,
-            q = Q.subtitle,
+            Z = Q.subtitle,
             X = Q.title,
-            z = b === f.a.LOADED ? X || D : '',
+            z = f === b.a.LOADED ? X || D : '',
             Y = (function (e, t, n) {
               var r = (null == t ? void 0 : t.scribeConfig) || {},
-                i = (r.entityToken, o()(r, ['entityToken'])),
-                a = null == t ? void 0 : t.tabs,
-                c = e || (null == a ? void 0 : a.initialTabId),
+                a = (r.entityToken, o()(r, ['entityToken'])),
+                i = null == t ? void 0 : t.tabs,
+                c = e || (null == i ? void 0 : i.initialTabId),
                 l =
-                  null == a
+                  null == i
                     ? void 0
-                    : a.tabs.find(function (e) {
+                    : i.tabs.find(function (e) {
                         return e.id === c
                       }),
                 u = (null == l ? void 0 : l.scribeConfig) || {},
                 s = (u.entityToken, o()(u, ['entityToken']))
-              return Object(R.a)({}, n, i, s)
-            })(k, y, d),
-            $ = W ? u.createElement(S, { header: W, onHeaderVisible: K }) : null,
+              return Object(H.a)({}, n, a, s)
+            })(S, y, d),
+            $ = W ? s.a.createElement(k, { header: W, onHeaderVisible: K }) : null,
             ee = V
-              ? u.createElement(Z, {
+              ? s.a.createElement(J, {
                   isHeaderOffscreen: !U,
                   navBar: V,
                   pageNamespace: Y,
@@ -931,38 +933,38 @@
                   withOpenGraphMeta: _,
                 })
               : null,
-            te = M ? g.a : u.Fragment,
-            ne = u.createElement(Be.a, null, function (e) {
-              var t = e.windowWidth >= w.a.theme.breakpoints.medium
-              return u.createElement(
-                u.Fragment,
+            te = M ? O.a : s.a.Fragment,
+            ne = s.a.createElement(Me.a, null, function (e) {
+              var t = e.windowWidth >= j.a.theme.breakpoints.medium
+              return s.a.createElement(
+                s.a.Fragment,
                 null,
                 $,
-                u.createElement(
+                s.a.createElement(
                   te,
                   null,
-                  u.createElement(ve, {
-                    entryConfiguration: He(t, a),
+                  s.a.createElement(he, {
+                    entryConfiguration: Ge(t, i),
                     initialModule: v,
-                    prerollDisplayLocation: j,
+                    prerollDisplayLocation: g,
                     renderEmptyState: P,
                     renderUnavailable: C,
-                    selectedTabId: k,
+                    selectedTabId: S,
                     timelinePrefix: L,
                     title: D,
                   }),
                 ),
               )
             }),
-            re = c ? u.createElement(O.a, { component: Me.a, fab: c }, ne) : ne,
-            ie = l && s ? u.createElement(xe, { getTabLink: l, module: v, selectedTabId: k }) : void 0
-          return u.createElement(
-            E.b,
+            re = c ? s.a.createElement(E.a, { component: _e.a, fab: c }, ne) : ne,
+            ae = l && u ? s.a.createElement(Le, { getTabLink: l, module: v, selectedTabId: S }) : void 0
+          return s.a.createElement(
+            w.b,
             { namespace: Y },
-            u.createElement(
-              J.a,
+            s.a.createElement(
+              q.a,
               { behavioralEventViewType: r },
-              u.createElement(Le.a, {
+              s.a.createElement(De.a, {
                 TabBar: t,
                 backLocation: n,
                 history: p,
@@ -971,9 +973,9 @@
                 primaryContent: re,
                 rightControl: ee || I,
                 searchBoxRef: T,
-                secondaryBar: ie,
+                secondaryBar: ae,
                 sidebarContent: x,
-                subtitle: q,
+                subtitle: Z,
                 title: $ && U ? D : z,
                 withBottomLoginSignupBar: B,
                 withSearchBox: N,
@@ -982,18 +984,18 @@
             ),
           )
         }
-      Ge.defaultProps = {
-        entryConfiguration: y.b,
+      Ue.defaultProps = {
+        entryConfiguration: g.b,
         renderEmptyState: function () {
-          return u.createElement(Ae.a, { header: Fe })
+          return s.a.createElement(Be.a, { header: Re })
         },
-        sidebarContent: Re,
+        sidebarContent: He,
         withDeferredView: !1,
         withAppLinks: !1,
         withOpenGraphMeta: !1,
       }
-      var Ue = h(Ge)
-      t.a = Ue
+      var Ke = y(Ue)
+      t.a = Ke
     },
     doI8: function (e, t, n) {
       'use strict'
@@ -1002,8 +1004,8 @@
       })
       n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var r = n('KEM+'),
-        i = n.n(r),
-        a = n('WpDa'),
+        a = n.n(r),
+        i = n('WpDa'),
         o = n('ZNT5')
       function c(e, t) {
         var n = Object.keys(e)
@@ -1022,7 +1024,7 @@
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
             ? c(Object(n), !0).forEach(function (t) {
-                i()(e, t, n[t])
+                a()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
@@ -1043,8 +1045,8 @@
           },
           getEndpointParams: function (e) {
             var r = e.count,
-              i = e.cursor
-            return l(l({}, t), {}, { cursor: 'string' == typeof i ? i : void 0, count: r, endpointUrl: n })
+              a = e.cursor
+            return l(l({}, t), {}, { cursor: 'string' == typeof a ? a : void 0, count: r, endpointUrl: n })
           },
           context: 'FETCH_TIMELINE',
           perfKey: 'generic',
@@ -1061,7 +1063,7 @@
               r = t.cursor
             return { cursor: 'string' == typeof r ? r : void 0, count: n, timelineId: e }
           },
-          formatResponse: a.a,
+          formatResponse: i.a,
           context: 'FETCH_GENERIC_TIMELINE_GQL',
           perfKey: 'genericGQL',
         })
@@ -1071,17 +1073,17 @@
       'use strict'
       n('2G9S')
       var r = n('180P'),
-        i = n('doI8')
+        a = n('doI8')
       t.a = function (e) {
         var t = e.timelinePrefix,
           n = void 0 === t ? 'generic-timeline-' : t,
-          a = e.urtUrl,
-          o = a.url,
-          c = a.urtEndpointOptions || {},
+          i = e.urtUrl,
+          o = i.url,
+          c = i.urtEndpointOptions || {},
           l = c.cacheId,
           u = c.requestParams
-        return Object(i.b)({
-          timelineId: l || ''.concat(n).concat(Object(r.a)(a)),
+        return Object(a.b)({
+          timelineId: l || ''.concat(n).concat(Object(r.a)(i)),
           endpointUrl: o,
           endpointParams: u || {},
         })

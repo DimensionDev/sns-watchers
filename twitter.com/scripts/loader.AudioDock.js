@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [162],
+  [164],
   {
     '8W85': function (n, e, t) {
       'use strict'
@@ -7,7 +7,7 @@
       var r = t('zb92')
       e.a = Object(r.a)({
         loader: function () {
-          return Promise.all([t.e(22), t.e(163)])
+          return Promise.all([t.e(22), t.e(165)])
             .then(t.bind(null, 'u2Vg'))
             .then(function (n) {
               return { default: n.__DANGEROUS_IMPORT__ }
@@ -19,17 +19,18 @@
       'use strict'
       t.r(e),
         t.d(e, '__DANGEROUS_IMPORT__', function () {
-          return i
+          return o
         })
       var r = t('ERkP'),
+        a = t.n(r),
         u = t('8W85'),
-        a = t('LxAE')
-      function c(n) {
-        var e = Object(a.a)().config
-        return r.createElement(r.Fragment, null, e.dock(n), r.createElement(u.a, e.player()))
+        c = t('LxAE')
+      function i(n) {
+        var e = Object(c.a)().config
+        return a.a.createElement(a.a.Fragment, null, e.dock(n), a.a.createElement(u.a, e.player()))
       }
-      var i = function (n) {
-        return r.createElement(c, n)
+      var o = function (n) {
+        return a.a.createElement(i, n)
       }
     },
   },

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [223],
+  [227],
   {
     RH6X: function (e, t, n) {
       'use strict'
@@ -19,13 +19,14 @@
         g = n('KEM+'),
         y = n.n(g),
         v = (n('2G9S'), n('ERkP')),
-        m = n('oEoC'),
-        C = n('2dXj'),
-        S = n('4bHO'),
-        E = n('dzqK'),
-        b = n('GZwR'),
-        x = n('zpdM')
-      function k(e) {
+        m = n.n(v),
+        C = n('oEoC'),
+        S = n('2dXj'),
+        E = n('4bHO'),
+        b = n('dzqK'),
+        x = n('GZwR'),
+        k = n('zpdM')
+      function T(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -46,9 +47,9 @@
           return f()(this, n)
         }
       }
-      var T = (function (e) {
+      var w = (function (e) {
         s()(n, e)
-        var t = k(n)
+        var t = T(n)
         function n() {
           var e
           o()(this, n)
@@ -56,7 +57,7 @@
           return (
             (e = t.call.apply(t, [this].concat(i))),
             y()(l()(e), 'state', { queryContext: void 0, canShowTypeahead: !1 }),
-            y()(l()(e), '_genericWrapperRef', v.createRef()),
+            y()(l()(e), '_genericWrapperRef', m.a.createRef()),
             y()(l()(e), 'render', function () {
               var t = e.props,
                 n = t.children,
@@ -69,8 +70,8 @@
                 u = l.canShowTypeahead,
                 s = l.queryContext,
                 d = u && s ? { word: s.word, resultType: s.resultType } : void 0
-              return v.createElement(
-                C.a,
+              return m.a.createElement(
+                S.a,
                 {
                   contextText: r,
                   isInline: o,
@@ -80,7 +81,7 @@
                   onTypeaheadStateChange: a,
                   query: d,
                   ref: e._genericWrapperRef,
-                  source: c || b.d.Compose,
+                  source: c || x.d.Compose,
                 },
                 n(e._handleInputChange),
               )
@@ -96,22 +97,22 @@
               var n = e.props.onTextUpdated,
                 r = e.state.queryContext
               if (r) {
-                var o = Object(S.a)(t, r.resultType)
+                var o = Object(E.a)(t, r.resultType)
                 n(e._replaceToken(o, r))
               }
               e._setQueryContext(void 0)
             }),
             y()(l()(e), '_handleInputChange', function (t) {
-              if (!Object(E.a)(t))
+              if (!Object(b.a)(t))
                 throw new Error('RichTextTypeaheadComposeWrapper cannot handle plain text input changes')
               var n = e.state.queryContext,
                 r = n && n.word,
                 o = e._getPlaintextFromCurrentBlock(t),
-                i = m.c(e._getCaret(t), o),
+                i = C.c(e._getCaret(t), o),
                 a = i.end,
                 c = i.start,
                 l = i.word,
-                u = m.e(l || '', 'compose')
+                u = C.e(l || '', 'compose')
               if ((null == u ? void 0 : u.q) !== r)
                 if ((e._genericWrapperRef.current && e._genericWrapperRef.current.resetSelectedItem(), -1 === c))
                   e._setQueryContext(void 0)
@@ -141,18 +142,18 @@
                   i = n
                     .getSelection()
                     .merge({ anchorKey: n.getSelection().getFocusKey(), anchorOffset: o, focusOffset: r }),
-                  a = x.Modifier.replaceText(n.getCurrentContent(), i, e),
-                  c = x.EditorState.push(n, a, 'insert-characters'),
+                  a = k.Modifier.replaceText(n.getCurrentContent(), i, e),
+                  c = k.EditorState.push(n, a, 'insert-characters'),
                   l = o + e.length,
                   u = c.getSelection().merge({ anchorOffset: l, focusOffset: l })
-                return x.EditorState.forceSelection(c, u)
+                return k.EditorState.forceSelection(c, u)
               },
             },
           ]),
           n
         )
-      })(v.Component)
-      t.a = T
+      })(m.a.Component)
+      t.a = w
     },
     Rk1B: function (e, t, n) {
       'use strict'
@@ -197,41 +198,42 @@
       'use strict'
       n('yH/f'), n('jwue'), n('+oxZ'), n('hBvt'), n('KqXw'), n('z84I')
       var r = n('ERkP'),
-        o = n('dWxr'),
-        i = n.n(o),
-        a = n('rHpw'),
-        c = n('aITJ'),
-        l = { clipPath: 'circle(0% at center)' },
-        u = {
+        o = n.n(r),
+        i = n('dWxr'),
+        a = n.n(i),
+        c = n('rHpw'),
+        l = n('aITJ'),
+        u = { clipPath: 'circle(0% at center)' },
+        s = {
           strategy: function (e, t) {
-            for (var n = i()(e.getText()), r = 0; r < n.length; r++)
+            for (var n = a()(e.getText()), r = 0; r < n.length; r++)
               n[r].indices && 2 === n[r].indices.length && t(n[r].indices[0], n[r].indices[1])
           },
           component: function (e) {
-            return r.createElement('span', { style: { color: a.a.theme.colors.link } }, e.children)
+            return o.a.createElement('span', { style: { color: c.a.theme.colors.link } }, e.children)
           },
         },
-        s = {
+        d = {
           strategy: function (e, t, n) {
             e.findEntityRanges(function (e) {
               var t = e.getEntity(),
                 r = t && n.getEntity(t)
-              return !(!r || r.type !== S.TWEMOJI_ENTITY_TYPE)
+              return !(!r || r.type !== E.TWEMOJI_ENTITY_TYPE)
             }, t)
           },
           component: function (e) {
             var t = e.children,
               n = e.contentState,
-              o = e.entityKey,
-              i = (o && n.getEntity(o)) || {}
-            return !(c.b.isFirefox() && c.b.firefoxVersion() < 49)
-              ? r.Children.map(t, function (e) {
+              r = e.entityKey,
+              i = (r && n.getEntity(r)) || {}
+            return !(l.b.isFirefox() && l.b.firefoxVersion() < 49)
+              ? o.a.Children.map(t, function (e) {
                   var t,
-                    n = r.Children.map(e, function (e) {
-                      return r.createElement('span', { style: l }, e)
+                    n = o.a.Children.map(e, function (e) {
+                      return o.a.createElement('span', { style: u }, e)
                     })[0]
-                  return r.cloneElement(
-                    r.createElement('span', null),
+                  return o.a.cloneElement(
+                    o.a.createElement('span', null),
                     {
                       style:
                         ((t = (i.data && i.data.url) || ''),
@@ -250,7 +252,7 @@
               : t
           },
         },
-        d = {
+        f = {
           strategy: function (e, t) {
             var n = (function (e, t, n) {
               for (var r, o, i = t.getText(); (r = e.exec(i)); ) n((o = r.index), o + r[0].length)
@@ -261,9 +263,9 @@
             return '\n'
           },
         },
-        f = n('z4Oz'),
-        p = n('zpdM'),
-        h = function (e, t) {
+        p = n('z4Oz'),
+        h = n('zpdM'),
+        g = function (e, t) {
           for (var n = 0, r = 0; r < e.length; r++) {
             var o = e[r],
               i = o.getText().length
@@ -272,7 +274,7 @@
           }
           return Object.freeze({})
         },
-        g = function (e, t) {
+        y = function (e, t) {
           var n = e.getCurrentContent(),
             r = n.getFirstBlock(),
             o = n.getLastBlock(),
@@ -283,15 +285,15 @@
             u = e
               .getSelection()
               .merge({ anchorKey: r.key, anchorOffset: 0, focusKey: a, focusOffset: l, isBackward: !1 }),
-            s = p.Modifier.removeInlineStyle(e.getCurrentContent(), u, 'overflow')
-          return p.EditorState.push(e, s, 'change-inline-style')
+            s = h.Modifier.removeInlineStyle(e.getCurrentContent(), u, 'overflow')
+          return h.EditorState.push(e, s, 'change-inline-style')
         },
-        y = function (e, t) {
+        v = function (e, t) {
           var n = t.blockKey,
             r = t.offset,
             o = e.getCurrentContent(),
             i = o.getLastBlock(),
-            a = v(o, n, r)
+            a = m(o, n, r)
           if (n) {
             var c = e
                 .getSelection()
@@ -302,12 +304,12 @@
                   focusOffset: i.getText().length,
                   isBackward: !1,
                 }),
-              l = p.Modifier.applyInlineStyle(o, c, 'overflow')
-            return p.EditorState.push(e, l, 'change-inline-style')
+              l = h.Modifier.applyInlineStyle(o, c, 'overflow')
+            return h.EditorState.push(e, l, 'change-inline-style')
           }
           return e
         },
-        v = function (e, t) {
+        m = function (e, t) {
           var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0,
             r = n,
             o = e.getBlockForKey(t)
@@ -329,18 +331,18 @@
             return r
           }
         },
-        m = 'TWEMOJI',
-        C = 'IMMUTABLE',
-        S = (t.a = {
+        C = 'TWEMOJI',
+        S = 'IMMUTABLE',
+        E = (t.a = {
           convertEmojiToEntities: function (e) {
-            var t = p.EditorState.set(e, { allowUndo: !1 }),
+            var t = h.EditorState.set(e, { allowUndo: !1 }),
               n = t.getCurrentContent(),
               r = 0
             return (
               n.getBlocksAsArray().forEach(function (e) {
-                f.a.getTwemojiEntities(e.getText()).forEach(function (o) {
+                p.a.getTwemojiEntities(e.getText()).forEach(function (o) {
                   if (2 === (o.indices && o.indices.length)) {
-                    var i = n.createEntity(m, C, { url: o.url || null, id: r })
+                    var i = n.createEntity(C, S, { url: o.url || null, id: r })
                     r += 1
                     var a = i.getLastCreatedEntityKey(),
                       c = e.getKey(),
@@ -353,42 +355,42 @@
                           focusOffset: o.indices[1],
                           isBackward: !1,
                         })
-                    n = p.Modifier.applyEntity(i, l, a)
+                    n = h.Modifier.applyEntity(i, l, a)
                   }
                 })
               }),
-              p.EditorState.set(t, { allowUndo: !0, currentContent: n })
+              h.EditorState.set(t, { allowUndo: !0, currentContent: n })
             )
           },
-          getRelativeOffset: h,
+          getRelativeOffset: g,
           initEditorState: function () {
             var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : '',
-              t = [u, s, d],
-              n = p.EditorState.createWithContent(p.ContentState.createFromText(e), new p.CompositeDecorator(t))
-            return p.EditorState.moveSelectionToEnd(n)
+              t = [s, d, f],
+              n = h.EditorState.createWithContent(h.ContentState.createFromText(e), new h.CompositeDecorator(t))
+            return h.EditorState.moveSelectionToEnd(n)
           },
           insertTextAtCursor: function (e, t) {
             var n = e.getCurrentContent(),
               r = e.getSelection(),
-              o = p.Modifier.insertText(n, r, t)
-            return p.EditorState.push(e, o, 'insert-characters')
+              o = h.Modifier.insertText(n, r, t)
+            return h.EditorState.push(e, o, 'insert-characters')
           },
-          TWEMOJI_ENTITY_TYPE: m,
+          TWEMOJI_ENTITY_TYPE: C,
           updateOverflowStyle: function (e, t) {
             var n,
               r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
               o = e.getSelection(),
-              i = p.EditorState.set(e, { allowUndo: !1 }),
+              i = h.EditorState.set(e, { allowUndo: !1 }),
               a = e.getCurrentContent().getSelectionBefore(),
               c = e.getCurrentContent().getSelectionAfter(),
               l = e.getCurrentContent(),
               u = l.getBlocksAsArray(),
               s = 'number' == typeof t && t > -1,
-              d = s ? h(u, t) : Object.freeze({})
-            if ((r && ((i = g(i, d)), (n = !0)), s && ((i = y(i, d)), (n = !0)), n)) {
-              var f = (i = p.EditorState.forceSelection(i, o)).getCurrentContent()
+              d = s ? g(u, t) : Object.freeze({})
+            if ((r && ((i = y(i, d)), (n = !0)), s && ((i = v(i, d)), (n = !0)), n)) {
+              var f = (i = h.EditorState.forceSelection(i, o)).getCurrentContent()
               ;(f = (f = f.set('selectionBefore', a)).set('selectionAfter', c)),
-                (i = p.EditorState.set(e, { allowUndo: !0, currentContent: f }))
+                (i = h.EditorState.set(e, { allowUndo: !0, currentContent: f }))
             }
             return i
           },
@@ -446,12 +448,13 @@
             )
         },
         x = n('ERkP'),
-        k = n('k/Ka'),
-        T = n('PxJJ'),
-        w = n('w9LO'),
-        _ = n('fs1G'),
-        D = (n('aWzz'), n('zpdM'))
-      function O(e) {
+        k = n.n(x),
+        T = n('k/Ka'),
+        w = n('PxJJ'),
+        _ = n('w9LO'),
+        D = n('fs1G'),
+        O = (n('aWzz'), n('zpdM'))
+      function R(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -472,15 +475,15 @@
           return f()(this, n)
         }
       }
-      var R = function (e) {
-          return Object(k.a)('div', e)
+      var K = function (e) {
+          return Object(T.a)('div', e)
         },
-        K = !1,
-        P =
-          ((t.a = x.forwardRef(function (e, t) {
+        P = !1,
+        F =
+          ((t.a = k.a.forwardRef(function (e, t) {
             var n = C.d()
-            return x.createElement(
-              P,
+            return k.a.createElement(
+              F,
               m()({}, e, {
                 onFocus: function (t) {
                   e.onFocus && e.onFocus(t), n('focus')
@@ -491,7 +494,7 @@
           })),
           (function (e) {
             s()(n, e)
-            var t = O(n)
+            var t = R(n)
             function n() {
               var e
               o()(this, n)
@@ -501,9 +504,9 @@
                 y()(l()(e), '_setSelectionToStart', function () {
                   var t = e.props.editorState,
                     n = t.getCurrentContent().getFirstBlock().getKey()
-                  return D.EditorState.acceptSelection(
+                  return O.EditorState.acceptSelection(
                     t,
-                    new D.SelectionState({
+                    new O.SelectionState({
                       anchorKey: n,
                       anchorOffset: 0,
                       focusKey: n,
@@ -514,7 +517,7 @@
                 }),
                 y()(l()(e), '_setFocusToStart', function () {
                   var t = e._setSelectionToStart()
-                  return D.EditorState.forceSelection(t, t.getSelection())
+                  return O.EditorState.forceSelection(t, t.getSelection())
                 }),
                 y()(l()(e), '_setFocusToEnd', function () {
                   var t = e.props,
@@ -522,8 +525,8 @@
                     r = t.editorState,
                     o = t.onChange
                   n
-                    ? null == o || o(D.EditorState.moveFocusToEnd(r))
-                    : null == o || o(D.EditorState.moveSelectionToEnd(r))
+                    ? null == o || o(O.EditorState.moveFocusToEnd(r))
+                    : null == o || o(O.EditorState.moveSelectionToEnd(r))
                 }),
                 y()(l()(e), '_setDraftJsStyle', function () {
                   var t = e.props.placeholderTextColor,
@@ -567,9 +570,9 @@
                     a = o.onChange
                   return !i && a
                     ? (a(
-                        D.EditorState.push(
+                        O.EditorState.push(
                           r,
-                          D.Modifier.replaceText(r.getCurrentContent(), r.getSelection(), t.replace(/[\r\n]+/g, ' ')),
+                          O.Modifier.replaceText(r.getCurrentContent(), r.getSelection(), t.replace(/[\r\n]+/g, ' ')),
                           'insert-characters',
                         ),
                       ),
@@ -580,8 +583,8 @@
                   var n = e.props,
                     r = n.dismissComposerCommandName,
                     o = n.sendTweetCommandName,
-                    i = D.KeyBindingUtil.hasCommandModifier
-                  return 13 === t.keyCode && i(t) ? o : 27 === t.keyCode ? r : Object(D.getDefaultKeyBinding)(t)
+                    i = O.KeyBindingUtil.hasCommandModifier
+                  return 13 === t.keyCode && i(t) ? o : 27 === t.keyCode ? r : Object(O.getDefaultKeyBinding)(t)
                 }),
                 y()(l()(e), '_onKeyCommand', function (t) {
                   var n = e.props.keyCommandHandlers,
@@ -629,13 +632,13 @@
                         : n
                         ? null == t || t(this._setFocusToStart())
                         : this.props.autoFocus && this.focus(),
-                        K || (this._setDraftJsStyle(), (K = !0))
+                        P || (this._setDraftJsStyle(), (P = !0))
                     },
                   },
                   {
                     key: 'componentDidCatch',
                     value: function (e) {
-                      T.a.report(e, { tags: { userVisible: !0, draftJs: !0 } })
+                      w.a.report(e, { tags: { userVisible: !0, draftJs: !0 } })
                     },
                   },
                   {
@@ -659,14 +662,14 @@
                         g = t.spellCheck,
                         v = t.style,
                         m = t.testID
-                      return x.createElement(
-                        R,
+                      return k.a.createElement(
+                        K,
                         {
                           className: l ? void 0 : E,
                           onClick: this._handleViewClick,
                           style: [this._getContainerStyle(), v],
                         },
-                        x.createElement(D.Editor, {
+                        k.a.createElement(O.Editor, {
                           ariaActiveDescendantID: n,
                           ariaAutoComplete: r,
                           ariaControls: o,
@@ -674,11 +677,11 @@
                           ariaMultiline: l,
                           customAttrs:
                             ((e = {}),
-                            y()(e, w.a.NO_REFOCUS_ATTRIBUTE, 'true'),
+                            y()(e, _.a.NO_REFOCUS_ATTRIBUTE, 'true'),
                             y()(e, 'onKeyPress', f),
                             y()(e, 'onKeyUp', p),
                             e),
-                          customStyleMap: F(S.a.theme),
+                          customStyleMap: I(S.a.theme),
                           editorState: a,
                           handleKeyCommand: this._onKeyCommand,
                           handlePastedFiles: this._onPastedFiles,
@@ -710,20 +713,20 @@
               ),
               n
             )
-          })(x.Component))
-      y()(P, 'defaultProps', {
+          })(k.a.Component))
+      y()(F, 'defaultProps', {
         appTextSize: 'body',
         autoFocus: !1,
         keyCommandHandlers: {},
         maxNumberOfLines: 30,
         multiline: !0,
         numberOfLines: 6,
-        onFocus: _.a,
+        onFocus: D.a,
         positionCursorAtEnd: !1,
         spellCheck: 'true',
       }),
-        (P.propTypes = {})
-      var F = function (e) {
+        (F.propTypes = {})
+      var I = function (e) {
         return { overflow: { backgroundColor: e.colors.red200 } }
       }
     },

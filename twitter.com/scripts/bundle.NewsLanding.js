@@ -5,13 +5,13 @@
       'use strict'
       n.r(t),
         n.d(t, 'NewsLandingScreen', function () {
-          return W
+          return A
         })
       n('OZaJ')
       var r = n('VrFO'),
-        o = n.n(r),
-        a = n('Y9Ll'),
-        c = n.n(a),
+        a = n.n(r),
+        o = n('Y9Ll'),
+        c = n.n(o),
         i = n('5Yy7'),
         l = n.n(i),
         u = n('N+ot'),
@@ -19,14 +19,15 @@
         f = n('AuHH'),
         p = n.n(f),
         d = (n('WNMA'), n('KqXw'), n('ERkP')),
-        y = n('es0u'),
-        O = n('mw9i'),
-        b = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('KEM+')),
-        w = n.n(b),
-        h = n('QIgh'),
-        g = n('8UdT'),
-        m = n('PH3B')
-      function P(e, t) {
+        y = n.n(d),
+        O = n('es0u'),
+        b = n('mw9i'),
+        w = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('KEM+')),
+        h = n.n(w),
+        g = n('QIgh'),
+        m = n('8UdT'),
+        P = n('PH3B')
+      function v(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -38,30 +39,30 @@
         }
         return n
       }
-      function v(e) {
+      function j(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? P(Object(n), !0).forEach(function (t) {
-                w()(e, t, n[t])
+            ? v(Object(n), !0).forEach(function (t) {
+                h()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : P(Object(n)).forEach(function (t) {
+            : v(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var j = w()({}, g.b.News, m.a),
-        E = v(v({}, h.b), j),
-        C = n('Hw0q'),
-        T = n('dwig'),
-        x = n('0+qk'),
-        D = n('3XMw'),
-        H = n.n(D),
-        L = n('ZNT5')
-      function N(e, t) {
+      var E = h()({}, m.b.News, P.a),
+        C = j(j({}, g.b), E),
+        T = n('Hw0q'),
+        x = n('dwig'),
+        D = n('0+qk'),
+        H = n('3XMw'),
+        L = n.n(H),
+        N = n('ZNT5')
+      function k(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -73,45 +74,45 @@
         }
         return n
       }
-      function k(e) {
+      function S(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? N(Object(n), !0).forEach(function (t) {
-                w()(e, t, n[t])
+            ? k(Object(n), !0).forEach(function (t) {
+                h()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : N(Object(n)).forEach(function (t) {
+            : k(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var S = function (e) {
+      var K = function (e) {
           var t = e.newsLandingContextId,
             n = e.tcoHash,
             r = { tco_hash: n, rux_cxt: t }
-          return Object(L.a)({
+          return Object(N.a)({
             timelineId: 'news-landing-'.concat(n),
             getEndpoint: function (e) {
               return e.URT.fetchNewsLandingTimeline
             },
             getEndpointParams: function (e) {
-              return k(k({}, e), r)
+              return S(S({}, e), r)
             },
             context: 'FETCH_NEWS_LANDING',
             perfKey: 'news-landing',
           })
         },
-        K = n('VTxf'),
-        R = n('yoO3'),
-        I = n('SrIh'),
-        _ = n('fTQJ'),
-        F = n('VS6U'),
-        U = n('wgnn'),
-        B = n('Irs7')
-      function J(e) {
+        R = n('VTxf'),
+        I = n('yoO3'),
+        _ = n('SrIh'),
+        F = n('fTQJ'),
+        U = n('VS6U'),
+        B = n('wgnn'),
+        J = n('Irs7')
+      function M(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -126,29 +127,29 @@
           var n,
             r = p()(e)
           if (t) {
-            var o = p()(this).constructor
-            n = Reflect.construct(r, arguments, o)
+            var a = p()(this).constructor
+            n = Reflect.construct(r, arguments, a)
           } else n = r.apply(this, arguments)
           return s()(this, n)
         }
       }
-      var M = H.a.i31dcd22,
-        X = function () {
-          return d.createElement(K.a, null)
+      var X = L.a.i31dcd22,
+        q = function () {
+          return y.a.createElement(R.a, null)
         },
-        q = function (e) {
+        W = function (e) {
           switch (e) {
-            case U.a.NOT_FOUND:
-              return d.createElement(K.a, null)
+            case B.a.NOT_FOUND:
+              return y.a.createElement(R.a, null)
             default:
-              return Object(I.a)('Unhandled timeline unavailable reason: '.concat(e)), null
+              return Object(_.a)('Unhandled timeline unavailable reason: '.concat(e)), null
           }
         },
-        W = (function (e) {
+        A = (function (e) {
           l()(n, e)
-          var t = J(n)
+          var t = M(n)
           function n() {
-            return o()(this, n), t.apply(this, arguments)
+            return a()(this, n), t.apply(this, arguments)
           }
           return (
             c()(n, [
@@ -156,17 +157,17 @@
                 key: 'render',
                 value: function () {
                   var e = this.props.history,
-                    t = d.createElement(x.a, { history: e })
-                  return d.createElement(
-                    R.a,
+                    t = y.a.createElement(D.a, { history: e })
+                  return y.a.createElement(
+                    I.a,
                     null,
-                    d.createElement(F.a, {
+                    y.a.createElement(U.a, {
                       backLocation: '/explore',
-                      documentTitle: M,
+                      documentTitle: X,
                       history: e,
-                      primaryContent: d.createElement(T.a, { container: O.a, fab: t }, this._renderContent()),
-                      sidebarContent: d.createElement(y.a, { withWhoToFollow: !1 }),
-                      title: M,
+                      primaryContent: y.a.createElement(x.a, { container: b.a, fab: t }, this._renderContent()),
+                      sidebarContent: y.a.createElement(O.a, { withWhoToFollow: !1 }),
+                      title: X,
                     }),
                   )
                 },
@@ -177,42 +178,42 @@
                   var e = this.props,
                     t = e.location.query,
                     n = e.match.params.tcoHash,
-                    r = (t && Object(C.a)(t.cxt)) || ''
+                    r = (t && Object(T.a)(t.cxt)) || ''
                   return n
-                    ? d.createElement(_.a, {
-                        entryConfiguration: E,
-                        module: S({ tcoHash: n, newsLandingContextId: r }),
-                        renderEmptyState: X,
-                        renderUnavailable: q,
-                        title: M,
+                    ? y.a.createElement(F.a, {
+                        entryConfiguration: C,
+                        module: K({ tcoHash: n, newsLandingContextId: r }),
+                        renderEmptyState: q,
+                        renderUnavailable: W,
+                        title: X,
                       })
-                    : d.createElement(K.a, null)
+                    : y.a.createElement(R.a, null)
                 },
               },
             ]),
             n
           )
-        })(d.Component)
-      t.default = Object(B.a)(W, { page: 'news', section: 'landing' })
+        })(y.a.Component)
+      t.default = Object(J.a)(A, { page: 'news', section: 'landing' })
     },
     PH3B: function (e, t, n) {
       'use strict'
       var r,
-        o = n('KEM+'),
-        a = n.n(o),
+        a = n('KEM+'),
+        o = n.n(a),
         c = n('ezF+'),
         i = (n('yH/f'), Object.freeze({ Cell: 'Cell', PreviewCard: 'PreviewCard' })),
         l = (n('JtPf'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP'), n('XBtf')),
         u = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(338)]).then(n.bind(null, 'a+ad'))
+            return Promise.all([n.e(0), n.e(342)]).then(n.bind(null, 'a+ad'))
           },
           loaderKey: 'newsCellLoader',
           strategy: l.a.Critical,
         },
         s = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(340)]).then(n.bind(null, 'hX2d'))
+            return Promise.all([n.e(0), n.e(344)]).then(n.bind(null, 'hX2d'))
           },
           loaderKey: 'newsPreviewCardLoader',
           strategy: l.a.Critical,
@@ -221,7 +222,7 @@
         selectDisplayType: function (e) {
           return e.content.newsDisplayType
         },
-        handlers: ((r = {}), a()(r, i.Cell, u), a()(r, i.PreviewCard, s), r),
+        handlers: ((r = {}), o()(r, i.Cell, u), o()(r, i.PreviewCard, s), r),
       })
     },
   },

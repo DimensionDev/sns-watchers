@@ -4,7 +4,7 @@
     'Fg/a': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return M
+        return N
       })
       n('OZaJ')
       var r = n('VrFO'),
@@ -22,31 +22,32 @@
         v = n('KEM+'),
         m = n.n(v),
         y = (n('2G9S'), n('ERkP')),
-        g = n('Pc/x'),
-        S = n('6/RC'),
-        b = (n('WNMA'), n('KqXw'), n('Z5jE')),
-        P = n('rxPX'),
-        k = function (e, t) {
-          return Object(b.a)(t.match)
+        g = n.n(y),
+        S = n('Pc/x'),
+        b = n('6/RC'),
+        P = (n('WNMA'), n('KqXw'), n('Z5jE')),
+        k = n('rxPX'),
+        w = function (e, t) {
+          return Object(P.a)(t.match)
         },
-        w = function (e) {
+        E = function (e) {
           return function (t, n, r) {
             return r.api.AudioSpaces.byId(e, { isMetatagsQuery: !0 })
           }
         },
-        E = Object(P.a)()
+        O = Object(k.a)()
           .propsFromState(function () {
-            return { broadcastId: k }
+            return { broadcastId: w }
           })
           .propsFromActions(function () {
-            return { fetchAudioSpace: w }
+            return { fetchAudioSpace: E }
           }),
-        O = (n('1t7P'), n('jQ/y'), n('3XMw')),
-        A = n.n(O),
-        j = n('rJoH'),
-        T = n('Rumh'),
-        _ = n('AooF')
-      function C(e) {
+        A = (n('1t7P'), n('jQ/y'), n('3XMw')),
+        j = n.n(A),
+        T = n('rJoH'),
+        _ = n('Rumh'),
+        C = n('AooF')
+      function F(e) {
         var t = e.space
         if (!t) return null
         var n = (function (e) {
@@ -56,25 +57,25 @@
                 r,
                 i,
                 a = null == e || null === (t = e.host) || void 0 === t ? void 0 : t.display_name,
-                c = a ? F.hostSpace({ name: a }) : F.hostSpaceFallback,
+                c = a ? x.hostSpace({ name: a }) : x.hostSpaceFallback,
                 o = e.title || c,
-                u = F.descriptionGeneric,
+                u = x.descriptionGeneric,
                 s = (null == e ? void 0 : e.participants.total) || 0,
-                l = T.a.formatCountShort(s),
-                p = F.descriptionListening({ count: l })
-              if (e.state === _.a.SpaceState.Running)
-                (n = F.titleRunning({ spaceTitle: o })),
-                  (r = F.descriptionFormatRunning({ hostSpace: c, descriptionListening: p, descriptionGeneric: u })),
-                  (i = x.ttl.Frequent)
-              else if (e.state === _.a.SpaceState.NotStarted || e.state === _.a.SpaceState.PrePublished) {
-                var h = F.scheduledSpaceGeneric
-                ;(n = F.titleScheduled({ date: h, spaceTitle: o })),
-                  (r = F.descriptionFormatScheduled({ hostSpace: c, descriptionGeneric: u })),
-                  (i = x.ttl.Frequent)
+                l = _.a.formatCountShort(s),
+                p = x.descriptionListening({ count: l })
+              if (e.state === C.a.SpaceState.Running)
+                (n = x.titleRunning({ spaceTitle: o })),
+                  (r = x.descriptionFormatRunning({ hostSpace: c, descriptionListening: p, descriptionGeneric: u })),
+                  (i = I.ttl.Frequent)
+              else if (e.state === C.a.SpaceState.NotStarted || e.state === C.a.SpaceState.PrePublished) {
+                var h = x.scheduledSpaceGeneric
+                ;(n = x.titleScheduled({ date: h, spaceTitle: o })),
+                  (r = x.descriptionFormatScheduled({ hostSpace: c, descriptionGeneric: u })),
+                  (i = I.ttl.Frequent)
               } else
-                (n = F.titleEnded({ spaceTitle: o })),
-                  (r = F.descriptionFormatEnded({ hostSpace: c, descriptionGeneric: u })),
-                  (i = x.ttl.LongLivedCache)
+                (n = x.titleEnded({ spaceTitle: o })),
+                  (r = x.descriptionFormatEnded({ hostSpace: c, descriptionGeneric: u })),
+                  (i = I.ttl.LongLivedCache)
               var f = 'https://twitter.com/i/spaces/'.concat(e.rest_id)
               return { title: n, canonical: f, description: r, ttl: i }
             })(e),
@@ -87,43 +88,43 @@
             canonical: n,
             title: i,
             description: r,
-            image: x.image.url,
-            imageType: x.image.type,
-            imageW: x.image.width,
-            imageH: x.image.height,
-            imageAlt: x.image.alt,
+            image: I.image.url,
+            imageType: I.image.type,
+            imageW: I.image.width,
+            imageH: I.image.height,
+            imageAlt: I.image.alt,
             ttl: a,
           }
         })(t)
-        return y.createElement(j.a, n)
+        return g.a.createElement(T.a, n)
       }
-      var F = {
-          twitterSpaces: A.a.gaa01f2c,
-          hostSpace: A.a.b6d3e0ee,
-          hostSpaceFallback: A.a.ab4fc8bb,
-          descriptionGeneric: A.a.fec3c1ef,
-          descriptionListeners: A.a.ce447fcb,
-          descriptionListening: A.a.ef7da97e,
-          scheduledSpaceGeneric: A.a.f8464691,
-          titleRunning: A.a.a065e7e7,
-          titleScheduled: A.a.hd5e7b20,
-          titleEnded: A.a.f826f7ee,
-          descriptionFormatRunning: A.a.b2a94e92,
-          descriptionFormatScheduled: A.a.f6432ce5,
-          descriptionFormatEnded: A.a.f6432ce5,
+      var x = {
+          twitterSpaces: j.a.gaa01f2c,
+          hostSpace: j.a.b6d3e0ee,
+          hostSpaceFallback: j.a.ab4fc8bb,
+          descriptionGeneric: j.a.fec3c1ef,
+          descriptionListeners: j.a.ce447fcb,
+          descriptionListening: j.a.ef7da97e,
+          scheduledSpaceGeneric: j.a.f8464691,
+          titleRunning: j.a.a065e7e7,
+          titleScheduled: j.a.hd5e7b20,
+          titleEnded: j.a.f826f7ee,
+          descriptionFormatRunning: j.a.b2a94e92,
+          descriptionFormatScheduled: j.a.f6432ce5,
+          descriptionFormatEnded: j.a.f6432ce5,
         },
-        x = {
+        I = {
           ttl: { Frequent: 300, LongLivedCache: 86400 },
           image: {
             type: 'image/jpeg',
             url: 'https://abs.twimg.com/sticky/cards/TwitterSpacesCardImage.2.jpg',
             width: 1200,
             height: 630,
-            alt: F.twitterSpaces,
+            alt: x.twitterSpaces,
           },
         },
-        I = n('G8HL')
-      function R(e) {
+        R = n('G8HL')
+      function L(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -144,9 +145,9 @@
           return h()(this, n)
         }
       }
-      var L = (function (e) {
+      var H = (function (e) {
         l()(n, e)
-        var t = R(n)
+        var t = L(n)
         function n() {
           var e
           i()(this, n)
@@ -172,27 +173,27 @@
             {
               key: 'render',
               value: function () {
-                return y.createElement(
-                  y.Fragment,
+                return g.a.createElement(
+                  g.a.Fragment,
                   null,
-                  y.createElement(H, this.props),
-                  y.createElement(C, { space: this.state.space }),
+                  g.a.createElement(M, this.props),
+                  g.a.createElement(F, { space: this.state.space }),
                 )
               },
             },
           ]),
           n
         )
-      })(y.Component)
-      function H(e) {
+      })(g.a.Component)
+      function M(e) {
         return (
-          y.useEffect(function () {
-            S.canUseDOM && g.a.proxsee.login()
+          g.a.useEffect(function () {
+            b.canUseDOM && S.a.proxsee.login()
           }, []),
           e.children
         )
       }
-      var M = E(Object(I.a)(L))
+      var N = O(Object(R.a)(H))
     },
     'Pc/x': function (e, t, n) {
       'use strict'
@@ -587,54 +588,55 @@
       'use strict'
       n.r(t),
         n.d(t, 'default', function () {
-          return f
+          return d
         })
       n('WNMA'), n('KqXw')
       var r = n('ERkP'),
-        i = n('Fg/a'),
-        a = n('es0u'),
-        c = n('SrtL'),
-        o = n('Z5jE'),
-        u = n('3XMw'),
-        s = n.n(u),
-        l = n('VS6U'),
-        p = n('MWbm'),
-        h = n('bNYH')
-      function f(e) {
-        return r.createElement(i.a, e, r.createElement(d, e))
-      }
+        i = n.n(r),
+        a = n('Fg/a'),
+        c = n('es0u'),
+        o = n('SrtL'),
+        u = n('Z5jE'),
+        s = n('3XMw'),
+        l = n.n(s),
+        p = n('VS6U'),
+        h = n('MWbm'),
+        f = n('bNYH')
       function d(e) {
-        var t = y.title
-        return r.createElement(
-          r.Fragment,
+        return i.a.createElement(a.a, e, i.a.createElement(v, e))
+      }
+      function v(e) {
+        var t = g.title
+        return i.a.createElement(
+          i.a.Fragment,
           null,
-          r.createElement(c.a, { title: t, withMeta: !1 }),
-          r.createElement(l.a, {
+          i.a.createElement(o.a, { title: t, withMeta: !1 }),
+          i.a.createElement(p.a, {
             backLocation: '/',
             documentTitle: t,
             history: e.history,
-            primaryContent: r.createElement(v, e),
-            sidebarContent: r.createElement(a.a, null),
+            primaryContent: i.a.createElement(m, e),
+            sidebarContent: i.a.createElement(c.a, null),
             title: t,
           }),
         )
       }
-      function v(e) {
-        var t = Object(o.a)(e.match)
-        return r.createElement(
-          p.a,
-          { style: m.container },
-          r.createElement(
-            p.a,
-            { style: m.cardContainer },
-            r.createElement(h.a, { audioSpaceId: t, withDirectJoin: !0 }),
+      function m(e) {
+        var t = Object(u.a)(e.match)
+        return i.a.createElement(
+          h.a,
+          { style: y.container },
+          i.a.createElement(
+            h.a,
+            { style: y.cardContainer },
+            i.a.createElement(f.a, { audioSpaceId: t, withDirectJoin: !0 }),
           ),
         )
       }
-      var m = n('rHpw').a.create(function (e) {
+      var y = n('rHpw').a.create(function (e) {
           return { container: { paddingHorizontal: e.spaces.space16 }, cardContainer: { marginTop: e.spaces.space12 } }
         }),
-        y = { title: s.a.ab4fc8bb }
+        g = { title: l.a.ab4fc8bb }
     },
   },
 ])
