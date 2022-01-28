@@ -1,5 +1,6 @@
 const path = require('path')
 const cheerio = require('cheerio')
+const del = require('del')
 const { download: originalDownload } = require('./utils')
 
 const basedir = path.resolve(__dirname, '../twitter.com')
@@ -83,6 +84,7 @@ function getAllScriptUrls(html) {
 
 async function start() {
   const html = await download(url, null)
+  await del(['twitter.com/scripts/*.js'])
   const scriptUrls = getAllScriptUrls(html)
   const tasks = scriptUrls.map(async (url) => {
     const fileName = url
