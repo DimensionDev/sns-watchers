@@ -69,9 +69,9 @@
       'use strict'
       n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var t = n('KEM+'),
-        r = n.n(t),
-        l = n('ERkP'),
-        i = n.n(l),
+        l = n.n(t),
+        r = n('ERkP'),
+        i = n.n(r),
         o = n('Lsrn'),
         s = n('k/Ka')
       function c(e, a) {
@@ -91,7 +91,7 @@
           var n = null != arguments[a] ? arguments[a] : {}
           a % 2
             ? c(Object(n), !0).forEach(function (a) {
-                r()(e, a, n[a])
+                l()(e, a, n[a])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
@@ -284,18 +284,18 @@
     '9SqB': function (e, a, n) {
       'use strict'
       var t = n('IGGJ')(n('yiKp')),
-        r = n('ERkP'),
-        l = n('Ud88'),
+        l = n('ERkP'),
+        r = n('Ud88'),
         i = n('K1lQ').commitMutation,
-        o = r.useState,
-        s = r.useEffect,
-        c = r.useRef,
-        u = r.useCallback,
+        o = l.useState,
+        s = l.useEffect,
+        c = l.useRef,
+        u = l.useCallback,
         d = n('23An')
       e.exports = function (e) {
         var a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : i,
-          n = l(),
-          r = d(),
+          n = r(),
+          l = d(),
           p = c(n),
           m = c(e),
           g = c(new Set()),
@@ -304,41 +304,41 @@
           y = f[1],
           _ = u(
             function (a) {
-              p.current === n && m.current === e && (g.current.delete(a), r.current && y(g.current.size > 0))
+              p.current === n && m.current === e && (g.current.delete(a), l.current && y(g.current.size > 0))
             },
-            [n, r, e],
+            [n, l, e],
           )
         s(
           function () {
             ;(p.current === n && m.current === e) ||
-              ((g.current = new Set()), r.current && y(!1), (p.current = n), (m.current = e))
+              ((g.current = new Set()), l.current && y(!1), (p.current = n), (m.current = e))
           },
-          [n, r, e],
+          [n, l, e],
         )
         var h = u(
-          function (l) {
+          function (r) {
             var i = a(
               n,
               (0, t.default)(
-                (0, t.default)({}, l),
+                (0, t.default)({}, r),
                 {},
                 {
                   mutation: e,
                   onCompleted: function (e, a) {
-                    _(i), l.onCompleted && l.onCompleted(e, a)
+                    _(i), r.onCompleted && r.onCompleted(e, a)
                   },
                   onError: function (e) {
-                    _(i), l.onError && l.onError(e)
+                    _(i), r.onError && r.onError(e)
                   },
                   onUnsubscribe: function () {
-                    _(i), l.onUnsubscribe && l.onUnsubscribe()
+                    _(i), r.onUnsubscribe && r.onUnsubscribe()
                   },
                 },
               ),
             )
-            return g.current.add(i), r.current && y(!0), i
+            return g.current.add(i), l.current && y(!0), i
           },
-          [_, a, n, r, e],
+          [_, a, n, l, e],
         )
         return [h, b]
       }
@@ -347,8 +347,8 @@
       'use strict'
       n.r(a)
       var t,
-        r,
         l,
+        r,
         i,
         o,
         s,
@@ -356,8 +356,8 @@
           fragment: {
             argumentDefinitions: [
               (t = { defaultValue: null, kind: 'LocalArgument', name: 'category' }),
-              (r = { defaultValue: null, kind: 'LocalArgument', name: 'ethnicity' }),
-              (l = { defaultValue: null, kind: 'LocalArgument', name: 'gender' }),
+              (l = { defaultValue: null, kind: 'LocalArgument', name: 'ethnicity' }),
+              (r = { defaultValue: null, kind: 'LocalArgument', name: 'gender' }),
               (i = { defaultValue: null, kind: 'LocalArgument', name: 'platform' }),
               (o = { defaultValue: null, kind: 'LocalArgument', name: 'purpose' }),
             ],
@@ -385,7 +385,7 @@
           },
           kind: 'Request',
           operation: {
-            argumentDefinitions: [t, i, o, r, l],
+            argumentDefinitions: [t, i, o, l, r],
             kind: 'Operation',
             name: 'SuperFollowsApplicationSubmitScreenMutation',
             selections: s,
@@ -404,8 +404,8 @@
       'use strict'
       n.r(a)
       var t,
-        r,
-        l = {
+        l,
+        r = {
           fragment: {
             argumentDefinitions: (t = [
               { defaultValue: null, kind: 'LocalArgument', name: 'benefits_data' },
@@ -415,7 +415,7 @@
             kind: 'Fragment',
             metadata: null,
             name: 'SuperFollowsOnboardingPricingConfirmScreenMutation',
-            selections: (r = [
+            selections: (l = [
               {
                 alias: null,
                 args: [
@@ -445,7 +445,7 @@
             argumentDefinitions: t,
             kind: 'Operation',
             name: 'SuperFollowsOnboardingPricingConfirmScreenMutation',
-            selections: r,
+            selections: l,
           },
           params: {
             id: '_97mdj3S3wU106zmC8Wy3A',
@@ -455,7 +455,7 @@
             text: null,
           },
         }
-      ;(l.hash = 'c1a6db8f58f9e0b096f1a134ad2ef927'), (a.default = l)
+      ;(r.hash = 'c1a6db8f58f9e0b096f1a134ad2ef927'), (a.default = r)
     },
     EM6u: function (e, a, n) {
       'use strict'
@@ -480,8 +480,8 @@
       'use strict'
       n.r(a)
       var t,
-        r,
         l,
+        r,
         i,
         o,
         s,
@@ -502,8 +502,8 @@
                 name: 'viewer_v2',
                 plural: !1,
                 selections: [
-                  (r = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
-                  (l = { alias: null, args: null, kind: 'ScalarField', name: 'is_active_creator', storageKey: null }),
+                  (l = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
+                  (r = { alias: null, args: null, kind: 'ScalarField', name: 'is_active_creator', storageKey: null }),
                   {
                     alias: null,
                     args: null,
@@ -523,7 +523,7 @@
                           {
                             kind: 'InlineFragment',
                             selections: [
-                              r,
+                              l,
                               (i = {
                                 alias: null,
                                 args: null,
@@ -565,7 +565,7 @@
                 name: 'super_follows_price_offerings',
                 plural: !1,
                 selections: [
-                  r,
+                  l,
                   { args: null, kind: 'FragmentSpread', name: 'SuperFollowsOnboardingSwitch_priceOfferings' },
                   { args: null, kind: 'FragmentSpread', name: 'SuperFollowsManagementSwitch_priceOfferings' },
                 ],
@@ -589,8 +589,8 @@
                 name: 'viewer_v2',
                 plural: !1,
                 selections: [
-                  r,
                   l,
+                  r,
                   {
                     alias: null,
                     args: null,
@@ -607,7 +607,7 @@
                         name: 'result',
                         plural: !1,
                         selections: [
-                          r,
+                          l,
                           {
                             kind: 'InlineFragment',
                             selections: [
@@ -797,7 +797,7 @@
                 name: 'super_follows_price_offerings',
                 plural: !1,
                 selections: [
-                  r,
+                  l,
                   { alias: null, args: null, kind: 'ScalarField', name: 'offer1', storageKey: null },
                   { alias: null, args: null, kind: 'ScalarField', name: 'offer2', storageKey: null },
                   { alias: null, args: null, kind: 'ScalarField', name: 'offer3', storageKey: null },
@@ -1189,8 +1189,8 @@
       'use strict'
       n.r(a)
       var t,
-        r,
-        l = {
+        l,
+        r = {
           fragment: {
             argumentDefinitions: (t = [
               { defaultValue: null, kind: 'LocalArgument', name: 'benefits_data' },
@@ -1199,7 +1199,7 @@
             kind: 'Fragment',
             metadata: null,
             name: 'SuperFollowsManagementPerksIntroScreenMutation',
-            selections: (r = [
+            selections: (l = [
               {
                 alias: null,
                 args: [
@@ -1219,7 +1219,7 @@
             argumentDefinitions: t,
             kind: 'Operation',
             name: 'SuperFollowsManagementPerksIntroScreenMutation',
-            selections: r,
+            selections: l,
           },
           params: {
             id: '8qvi0MQ7inSOKFRwbQIfXg',
@@ -1229,7 +1229,7 @@
             text: null,
           },
         }
-      ;(l.hash = '5f9c7dfac83002ea4ec87405a6e13b8f'), (a.default = l)
+      ;(r.hash = '5f9c7dfac83002ea4ec87405a6e13b8f'), (a.default = r)
     },
     aREQ: function (e, a, n) {
       'use strict'
@@ -1310,9 +1310,9 @@
     hznd: function (e, a, n) {
       'use strict'
       var t = n('97Jx'),
-        r = n.n(t),
-        l = n('ERkP'),
-        i = n.n(l),
+        l = n.n(t),
+        r = n('ERkP'),
+        i = n.n(r),
         o = n('BedV'),
         s = n('KEM+'),
         c = n.n(s),
@@ -1402,24 +1402,24 @@
           var a = e.accessibilityLabel,
             n = e.accessibilityPosInSet,
             t = e.accessibilitySetSize,
-            r = e.checked,
-            l = e.disabled,
+            l = e.checked,
+            r = e.disabled,
             o = e.helpText,
             s = e.label,
             c = e.name,
             y = e.onChange,
             _ = m.a.generate({
               backgroundColor: f.a.theme.colors.transparent,
-              color: r ? f.a.theme.colors.primary : f.a.theme.colors.gray700,
+              color: l ? f.a.theme.colors.primary : f.a.theme.colors.gray700,
               withFocusWithinFocusRing: !0,
             })
-          return i.a.createElement(p.a, { disabled: l }, function (e) {
+          return i.a.createElement(p.a, { disabled: r }, function (e) {
             return i.a.createElement(
               b.a,
               { style: h.root },
               i.a.createElement(
                 b.a,
-                { accessibilityRole: 'label', style: [h.base, h.border, !l && h.interactive] },
+                { accessibilityRole: 'label', style: [h.base, h.border, !r && h.interactive] },
                 i.a.createElement(
                   b.a,
                   { style: h.textContainer },
@@ -1431,28 +1431,28 @@
                   { style: h.radioContainer },
                   i.a.createElement(
                     g.a,
-                    { disabled: l, interactiveStyles: _, interactivityState: e, style: h.radioBackground },
+                    { disabled: r, interactiveStyles: _, interactivityState: e, style: h.radioBackground },
                     i.a.createElement(
                       b.a,
                       {
                         style: [
                           h.circle,
-                          r && h.circleActive,
-                          l && h.circleDisabled,
-                          r && l && h.circleCheckedAndDisabled,
+                          l && h.circleActive,
+                          r && h.circleDisabled,
+                          l && r && h.circleCheckedAndDisabled,
                         ],
                       },
-                      r ? i.a.createElement(d.a, { style: h.checkMark }) : null,
+                      l ? i.a.createElement(d.a, { style: h.checkMark }) : null,
                     ),
                   ),
                   i.a.createElement('input', {
                     'aria-label': a,
                     'aria-posinset': n,
                     'aria-setsize': t,
-                    checked: r,
-                    disabled: l,
+                    checked: l,
+                    disabled: r,
                     name: c,
-                    onChange: r ? void 0 : y,
+                    onChange: l ? void 0 : y,
                     style: w,
                     type: 'radio',
                   }),
@@ -1464,9 +1464,9 @@
       a.a = function (e) {
         return i.a.createElement(
           o.a,
-          r()({}, e, {
+          l()({}, e, {
             renderSelector: function (e) {
-              return i.a.createElement(v, r()({}, e, { key: e.value }))
+              return i.a.createElement(v, l()({}, e, { key: e.value }))
             },
           }),
         )
@@ -1603,7 +1603,7 @@
       'use strict'
       n.r(a),
         n.d(a, 'superFollowsSettingsQuery', function () {
-          return Oo
+          return Lo
         })
       var t = {}
       n.r(t),
@@ -1632,10 +1632,10 @@
           return te
         }),
         n.d(t, 'Cat3x', function () {
-          return re
+          return le
         }),
         n.d(t, 'Clipboard', function () {
-          return le
+          return re
         }),
         n.d(t, 'Clipboard2x', function () {
           return ie
@@ -1715,8 +1715,8 @@
         n.d(t, 'Uturn3x', function () {
           return Pe
         })
-      var r,
-        l,
+      var l,
+        r,
         i,
         o = n('ERkP'),
         s = n.n(o),
@@ -1760,8 +1760,8 @@
           var a = e.leftControlShouldClose,
             n = e.percentageComplete,
             t = e.rightControl,
-            r = e.withCenteredLogo,
-            l = e.withInfoButton,
+            l = e.withCenteredLogo,
+            r = e.withInfoButton,
             i = k()(e, [
               'leftControlShouldClose',
               'percentageComplete',
@@ -1773,8 +1773,8 @@
             c = Object(d.g)(),
             u = a ? 'close' : 'back',
             p = a ? '/settings/monetization' : void 0,
-            m = r ? s.a.createElement(E.a, { style: D.iconTwitter }) : void 0,
-            f = l ? s.a.createElement(s.a.Fragment, null, s.a.createElement(K, null), t) : t,
+            m = l ? s.a.createElement(E.a, { style: D.iconTwitter }) : void 0,
+            f = r ? s.a.createElement(s.a.Fragment, null, s.a.createElement(K, null), t) : t,
             b = n ? s.a.createElement(O.a, { progress: n }) : void 0
           return s.a.createElement(
             F.b,
@@ -1795,8 +1795,8 @@
           return { iconTwitter: { color: e.colors.primary, flexGrow: 1, height: '1.75rem' } }
         }),
         R = y.a.g92a2343,
-        B = y.a.a91bb144,
-        A = function () {
+        A = y.a.a91bb144,
+        B = function () {
           var e = Object(d.g)(),
             a = s.a.createElement(
               h.a,
@@ -1806,7 +1806,7 @@
                 },
                 type: 'primaryFilled',
               },
-              B,
+              A,
             )
           return s.a.createElement(T, { rightControl: a, title: R })
         },
@@ -1819,15 +1819,15 @@
           return e.items.map(function (e) {
             return s.a.createElement(
               I.a,
-              { key: e.label, style: W.item },
-              s.a.createElement(z.b, { style: W.label, weight: 'bold' }, e.label),
+              { key: e.label, style: H.item },
+              s.a.createElement(z.b, { style: H.label, weight: 'bold' }, e.label),
               e.checked
-                ? s.a.createElement(M.a, { style: W.iconChecked })
-                : s.a.createElement(V.a, { style: W.iconUnchecked }),
+                ? s.a.createElement(M.a, { style: H.iconChecked })
+                : s.a.createElement(V.a, { style: H.iconUnchecked }),
             )
           })
         },
-        W = L.a.create(function (e) {
+        H = L.a.create(function (e) {
           return {
             iconChecked: { color: e.colors.primary },
             iconUnchecked: { color: e.colors.gray700 },
@@ -1835,7 +1835,7 @@
             label: { flex: 1 },
           }
         }),
-        H = function () {
+        W = function () {
           return s.a.createElement(
             z.b,
             { align: 'center', color: 'gray700' },
@@ -1860,8 +1860,8 @@
             var a = e.disabled,
               n = e.history,
               t = e.label,
-              r = e.onPress,
-              l = e.path,
+              l = e.onPress,
+              r = e.path,
               i = k()(e, ['disabled', 'history', 'label', 'onPress', 'path']),
               o = Object(d.g)(),
               c = s.a.useState(!1),
@@ -1869,16 +1869,16 @@
               p = u[0],
               m = u[1],
               g = function () {
-                ;(null != n ? n : o).push(l)
+                ;(null != n ? n : o).push(r)
               }
             return s.a.createElement(
               h.a,
               v()({}, i, {
                 disabled: p || a,
                 onPress: function (e) {
-                  r
+                  l
                     ? (m(!0),
-                      r(e)
+                      l(e)
                         .then(g)
                         .finally(function () {
                           return m(!1)
@@ -1899,8 +1899,8 @@
         ae = n.p + 'Bench@3x.a306fd55.png',
         ne = n.p + 'Cat.089435a5.png',
         te = n.p + 'Cat@2x.bca70155.png',
-        re = n.p + 'Cat@3x.2b225ef5.png',
-        le = n.p + 'Clipboard.540710d5.png',
+        le = n.p + 'Cat@3x.2b225ef5.png',
+        re = n.p + 'Clipboard.540710d5.png',
         ie = n.p + 'Clipboard@2x.72ca72e5.png',
         oe = n.p + 'Clipboard@3x.1b952e95.png',
         se = n.p + 'CoinStairs.8488b245.png',
@@ -1930,8 +1930,8 @@
         Te = n('tn7R'),
         De = n('TIdA'),
         Re = n('A91F'),
-        Be = 400,
-        Ae = 250,
+        Ae = 400,
+        Be = 250,
         je = [1, 2, 3],
         Ie = Object.freeze({
           Arrow: 'Arrow',
@@ -1952,9 +1952,9 @@
           return (
             (e[a] = {
               aspectRatio: 1.6,
-              image: { url: t[a], width: Be * n, height: Ae * n },
+              image: { url: t[a], width: Ae * n, height: Be * n },
               customVariants: je.map(function (e) {
-                return { uri: t[a + (1 !== e ? ''.concat(e, 'x') : '')], width: Be * e, height: Ae * e }
+                return { uri: t[a + (1 !== e ? ''.concat(e, 'x') : '')], width: Ae * e, height: Be * e }
               }),
             }),
             e
@@ -1964,28 +1964,28 @@
           var a = e.type,
             n = ze[a],
             t = n.aspectRatio,
-            r = n.customVariants,
-            l = n.image
+            l = n.customVariants,
+            r = n.image
           return s.a.createElement(
             I.a,
             { style: Ve.illustration },
             s.a.createElement(De.a, {
               accessibilityLabel: '',
               aspectMode: Re.a.exact(t),
-              customVariants: r,
+              customVariants: l,
               draggable: !1,
-              image: l,
+              image: r,
             }),
           )
         },
         Ve = L.a.create(function (e) {
-          return { illustration: { alignSelf: 'center', width: Be, height: Ae } }
+          return { illustration: { alignSelf: 'center', width: Ae, height: Be } }
         }),
         Ue = function (e) {
           var a = e.align,
             n = e.headline,
             t = e.illustration,
-            r = e.subtext
+            l = e.subtext
           return s.a.createElement(
             s.a.Fragment,
             null,
@@ -1997,18 +1997,18 @@
                 accessibilityRole: 'heading',
                 align: a,
                 size: 'title4',
-                style: t && We.headline,
+                style: t && He.headline,
                 weight: 'heavy',
               },
               n,
             ),
-            s.a.createElement(z.b, { align: a, color: 'gray700', style: We.subtext }, r),
+            s.a.createElement(z.b, { align: a, color: 'gray700', style: He.subtext }, l),
           )
         },
-        We = L.a.create(function (e) {
+        He = L.a.create(function (e) {
           return { headline: { marginTop: e.spaces.space48 }, subtext: { marginVertical: e.spaces.space12 } }
         }),
-        He = y.a.feb54b4f,
+        We = y.a.feb54b4f,
         qe = y.a.bac156a6,
         Ne = y.a.a3a20a10,
         Ge = y.a.b26ae507,
@@ -2050,13 +2050,13 @@
             },
           },
         ],
-        ea = void 0 !== r ? r : (r = n('RLjm')),
+        ea = void 0 !== l ? l : (l = n('RLjm')),
         aa = function (e) {
           var a = e.user,
             n = X()(ea, a),
             t = 0 === ((null == n ? void 0 : n.super_following_eligibility) || []).length,
-            r = t ? Ie.Arrow : Ie.TrafficLight,
-            l = t ? He : Ne,
+            l = t ? Ie.Arrow : Ie.TrafficLight,
+            r = t ? We : Ne,
             i = t ? qe : Ge,
             o = Ye.map(function (e) {
               return { label: e.label, checked: (0, e.test)(n) }
@@ -2064,30 +2064,30 @@
           return s.a.createElement(
             T,
             { withInfoButton: !0 },
-            s.a.createElement(Ue, { headline: l, illustration: r, subtext: i }),
+            s.a.createElement(Ue, { headline: r, illustration: l, subtext: i }),
             s.a.createElement(U, { items: o }),
-            t && s.a.createElement(H, null),
+            t && s.a.createElement(W, null),
             s.a.createElement(G, { disabled: !t, label: Qe, path: '/application/one_more_thing' }),
             s.a.createElement(G, { label: Xe, path: '/application/one_more_thing' }),
           )
         },
         na = n('9RkS'),
         ta = y.a.bbb89925,
-        ra = function (e) {
+        la = function (e) {
           var a = e.followersCount,
             n = e.max,
             t = e.min,
-            r = e.price,
-            l = e.step,
+            l = e.price,
+            r = e.step,
             i = e.value,
             o = s.a.useState(i),
             c = N()(o, 2),
             u = c[0],
             d = c[1],
-            p = Math.round(a * r * (u / 100))
+            p = Math.round(a * l * (u / 100))
           return s.a.createElement(
             I.a,
-            { style: la.container },
+            { style: ra.container },
             s.a.createElement(
               z.b,
               { accessibilityLevel: 3, accessibilityRole: 'heading', size: 'headline2' },
@@ -2097,37 +2097,37 @@
                 s.a.createElement(z.b, { weight: 'bold' }, y.a.a7dd00ea),
                 s.a.createElement(
                   z.b,
-                  { style: la.earnings, weight: 'heavy' },
+                  { style: ra.earnings, weight: 'heavy' },
                   y.a.c62c1d30({ earnings: '$'.concat(j.a.getTruncatedCount(p)) }),
                 ),
-                s.a.createElement(z.b, { color: 'green500', style: la.asteriskLeft }, y.a.e0fb982b),
+                s.a.createElement(z.b, { color: 'green500', style: ra.asteriskLeft }, y.a.e0fb982b),
               ),
             ),
             s.a.createElement(
               I.a,
-              { style: la.slider },
+              { style: ra.slider },
               s.a.createElement(na.a, {
                 accessibilityLabel: '',
                 max: n,
                 min: t,
                 onChange: d,
-                step: l,
+                step: r,
                 thumbLabel: ta({ percent: u }),
                 value: u,
               }),
             ),
             s.a.createElement(
               z.b,
-              { color: 'green500', size: 'subtext3', style: la.footnote },
+              { color: 'green500', size: 'subtext3', style: ra.footnote },
               s.a.createElement(
                 y.a.I18NFormatMessage,
-                { $i18n: 'caf67b9b', price: '$'.concat(r) },
-                s.a.createElement(z.b, { style: la.asteriskRight }, y.a.e263c38e),
+                { $i18n: 'caf67b9b', price: '$'.concat(l) },
+                s.a.createElement(z.b, { style: ra.asteriskRight }, y.a.e263c38e),
               ),
             ),
           )
         },
-        la = L.a.create(function (e) {
+        ra = L.a.create(function (e) {
           return {
             container: {
               backgroundColor: e.colors.green50,
@@ -2200,7 +2200,7 @@
         va = y.a.g8cdf707,
         Sa = y.a.bff8472e,
         ka = y.a.e533715d,
-        Fa = void 0 !== l ? l : (l = n('xd+q')),
+        Fa = void 0 !== r ? r : (r = n('xd+q')),
         Ea = function (e) {
           var a = e.user,
             n = X()(Fa, a).legacy.followers_count
@@ -2231,7 +2231,7 @@
               { accessibilityLevel: 2, accessibilityRole: 'heading', size: 'title4', weight: 'heavy' },
               wa,
             ),
-            s.a.createElement(ra, { followersCount: n, max: 10, min: 1, price: 4.99, value: 2 }),
+            s.a.createElement(la, { followersCount: n, max: 10, min: 1, price: 4.99, value: 2 }),
             s.a.createElement(
               z.b,
               { accessibilityLevel: 2, accessibilityRole: 'heading', size: 'title4', weight: 'heavy' },
@@ -2259,16 +2259,16 @@
         Ra = function (e) {
           return Pa()(void 0 !== i ? i : (i = n('PlkH')), e).__id
         },
-        Ba = function (e, a) {
+        Aa = function (e, a) {
           var n = Ra(a),
             t = e.get(n)
           return u()(t, 'viewer must be defined'), t
         },
-        Aa = function (e, a) {
-          return Ba(e, a).getLinkedRecord(Ta)
+        Ba = function (e, a) {
+          return Aa(e, a).getLinkedRecord(Ta)
         },
         ja = function (e, a) {
-          return Ba(e, a).getLinkedRecord(Da)
+          return Aa(e, a).getLinkedRecord(Da)
         },
         Ia = n('HG4m'),
         za = n.n(Ia),
@@ -2283,9 +2283,9 @@
                 !(function (e, a) {
                   var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
                     t = n.content_category,
-                    r = void 0 === t ? [] : t,
-                    l = n.content_category_other,
-                    i = void 0 === l ? null : l,
+                    l = void 0 === t ? [] : t,
+                    r = n.content_category_other,
+                    i = void 0 === r ? null : r,
                     o = n.content_creation_platform,
                     s = void 0 === o ? [] : o,
                     c = n.content_creation_platform_other,
@@ -2297,10 +2297,10 @@
                     f = n.purpose,
                     b = void 0 === f ? null : f,
                     y = Ra(a),
-                    _ = Ba(e, a)
-                  if (!Aa(e, a)) {
+                    _ = Aa(e, a)
+                  if (!Ba(e, a)) {
                     var h = e.create(''.concat(y, ':').concat(Ta), 'SuperFollowsApplicationDraft')
-                    h.setValue(r, 'content_category'),
+                    h.setValue(l, 'content_category'),
                       h.setValue(i, 'content_category_other'),
                       h.setValue(s, 'content_creation_platform'),
                       h.setValue(u, 'content_creation_platform_other'),
@@ -2315,7 +2315,7 @@
           [a, n, e],
         )
       }
-      function Wa(e, a) {
+      function Ha(e, a) {
         var n = Va()()
         s.a.useEffect(
           function () {
@@ -2324,16 +2324,16 @@
                 !(function (e, a) {
                   var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
                     t = n.creator_intro,
-                    r = void 0 === t ? null : t,
-                    l = n.description,
-                    i = void 0 === l ? null : l,
+                    l = void 0 === t ? null : t,
+                    r = n.description,
+                    i = void 0 === r ? null : r,
                     o = n.selected_price,
                     s = void 0 === o ? null : o,
                     c = Ra(a),
-                    u = Ba(e, a)
+                    u = Aa(e, a)
                   if (!ja(e, a)) {
                     var d = e.create(''.concat(c, ':').concat(Da), 'SuperFollowsOnboardingDraft')
-                    d.setValue(r, 'creator_intro'),
+                    d.setValue(l, 'creator_intro'),
                       d.setValue(i, 'description'),
                       d.setValue(s, 'selected_price'),
                       u.setLinkedRecord(d, 'super_follows_onboarding_draft')
@@ -2344,15 +2344,15 @@
           [n, a, e],
         )
       }
-      function Ha(e, a) {
+      function Wa(e, a) {
         var n = Va()()
         return s.a.useCallback(
           function (t) {
             u()(e, 'viewerRef must be defined'),
               za()(n, function (n) {
                 !(function (e, a, n, t) {
-                  var r = Aa(e, a)
-                  u()(r, 'applicationDraft must be defined'), r.setValue(t, n)
+                  var l = Ba(e, a)
+                  u()(l, 'applicationDraft must be defined'), l.setValue(t, n)
                 })(n, e, a, t)
               })
           },
@@ -2366,8 +2366,8 @@
             u()(e, 'viewerId must be defined'),
               za()(n, function (n) {
                 !(function (e, a, n, t) {
-                  var r = ja(e, a)
-                  u()(r, 'onboardingDraft must be defined'), r.setValue(t, n)
+                  var l = ja(e, a)
+                  u()(l, 'onboardingDraft must be defined'), l.setValue(t, n)
                 })(n, e, a, t)
               })
           },
@@ -2386,8 +2386,8 @@
         an,
         nn,
         tn,
-        rn,
         ln,
+        rn,
         on,
         sn,
         cn,
@@ -2415,16 +2415,16 @@
           var a,
             n,
             t = e.viewer,
-            r = X()(On, t),
-            l =
+            l = X()(On, t),
+            r =
               null !==
                 (a =
-                  null === (n = r.super_follows_application_draft) || void 0 === n
+                  null === (n = l.super_follows_application_draft) || void 0 === n
                     ? void 0
                     : n.content_category_other) && void 0 !== a
                 ? a
                 : '',
-            i = Ha(r, 'content_category_other')
+            i = Wa(l, 'content_category_other')
           return s.a.createElement(
             T,
             { title: En },
@@ -2435,7 +2435,7 @@
               onChange: function (e) {
                 i(e.currentTarget.value)
               },
-              value: l,
+              value: r,
             }),
             s.a.createElement(h.a, null, Kn),
           )
@@ -2446,21 +2446,21 @@
           var a = e.description,
             n = e.disabled,
             t = e.history,
-            r = e.label,
-            l = e.path,
+            l = e.label,
+            r = e.path,
             i = Object(d.g)()
           return s.a.createElement(Tn.a, {
             description: a,
             disabled: n,
-            label: r,
+            label: l,
             onPress: function () {
-              ;(null != t ? t : i).push(l)
+              ;(null != t ? t : i).push(r)
             },
           })
         },
         Rn = y.a.f7997b16,
-        Bn = y.a.c144fa52,
-        An = [
+        An = y.a.c144fa52,
+        Bn = [
           y.a.b1f2e8ce,
           y.a.jfec3aa0,
           y.a.e08a6e6f,
@@ -2498,36 +2498,36 @@
           var a,
             n,
             t = e.viewer,
-            r = X()(zn, t),
-            l =
+            l = X()(zn, t),
+            r =
               null !==
-                (a = null === (n = r.super_follows_application_draft) || void 0 === n ? void 0 : n.content_category) &&
+                (a = null === (n = l.super_follows_application_draft) || void 0 === n ? void 0 : n.content_category) &&
               void 0 !== a
                 ? a
                 : [],
-            i = Ha(r, 'content_category'),
-            o = An.map(function (e) {
+            i = Wa(l, 'content_category'),
+            o = Bn.map(function (e) {
               return { label: e, value: e }
             })
           return s.a.createElement(
             T,
             { title: Rn },
             s.a.createElement(Pn.a, {
-              description: Bn,
-              label: Bn,
+              description: An,
+              label: An,
               name: 'categories',
               onChange: function (e, a) {
                 i([a])
               },
               options: o,
-              value: l[0],
+              value: r[0],
             }),
             s.a.createElement(Dn, { helpText: In, label: jn, path: '/application/submit_categories_other' }),
           )
         },
         Vn = y.a.d94a9a17,
         Un = y.a.a35394b3,
-        Wn = [
+        Hn = [
           y.a.e375c2df,
           y.a.gf30371a,
           y.a.b3773d47,
@@ -2539,19 +2539,19 @@
           y.a.ab09972f,
           y.a.jafe3705,
         ],
-        Hn = void 0 !== Qa ? Qa : (Qa = n('H1we')),
+        Wn = void 0 !== Qa ? Qa : (Qa = n('H1we')),
         qn = function (e) {
           var a,
             n,
             t = e.viewer,
-            r = X()(Hn, t),
-            l =
-              null !== (a = null === (n = r.super_follows_application_draft) || void 0 === n ? void 0 : n.ethnicity) &&
+            l = X()(Wn, t),
+            r =
+              null !== (a = null === (n = l.super_follows_application_draft) || void 0 === n ? void 0 : n.ethnicity) &&
               void 0 !== a
                 ? a
                 : [],
-            i = Ha(r, 'ethnicity'),
-            o = Wn.map(function (e) {
+            i = Wa(l, 'ethnicity'),
+            o = Hn.map(function (e) {
               return { label: e, value: e }
             })
           return s.a.createElement(
@@ -2565,7 +2565,7 @@
                 i([a])
               },
               options: o,
-              value: l[0],
+              value: r[0],
             }),
           )
         },
@@ -2586,13 +2586,13 @@
           var a,
             n,
             t = e.viewer,
-            r = X()(Xn, t),
-            l =
-              null !== (a = null === (n = r.super_follows_application_draft) || void 0 === n ? void 0 : n.gender) &&
+            l = X()(Xn, t),
+            r =
+              null !== (a = null === (n = l.super_follows_application_draft) || void 0 === n ? void 0 : n.gender) &&
               void 0 !== a
                 ? a
                 : [],
-            i = Ha(r, 'gender'),
+            i = Wa(l, 'gender'),
             o = Qn.map(function (e) {
               return { label: e, value: e }
             })
@@ -2607,7 +2607,7 @@
                 i([a])
               },
               options: o,
-              value: l[0],
+              value: r[0],
             }),
           )
         },
@@ -2620,16 +2620,16 @@
           var a,
             n,
             t = e.viewer,
-            r = X()(at, t),
-            l =
+            l = X()(at, t),
+            r =
               null !==
                 (a =
-                  null === (n = r.super_follows_application_draft) || void 0 === n
+                  null === (n = l.super_follows_application_draft) || void 0 === n
                     ? void 0
                     : n.content_creation_platform_other) && void 0 !== a
                 ? a
                 : '',
-            i = Ha(r, 'content_creation_platform_other')
+            i = Wa(l, 'content_creation_platform_other')
           return s.a.createElement(
             T,
             { title: Zn },
@@ -2640,14 +2640,14 @@
               onChange: function (e) {
                 i(e.currentTarget.value)
               },
-              value: l,
+              value: r,
             }),
             s.a.createElement(h.a, null, et),
           )
         },
         tt = y.a.da8ea7da,
-        rt = y.a.d4062c9a,
-        lt = [y.a.a3021317, y.a.eb4a600d, y.a.d4d74bb3, y.a.fc738909, y.a.d8552c1a, y.a.ca07aa46],
+        lt = y.a.d4062c9a,
+        rt = [y.a.a3021317, y.a.eb4a600d, y.a.d4d74bb3, y.a.fc738909, y.a.d8552c1a, y.a.ca07aa46],
         it = y.a.c365dcc5,
         ot = y.a.bd44a8a8,
         st = void 0 !== Za ? Za : (Za = n('xnrs')),
@@ -2655,31 +2655,31 @@
           var a,
             n,
             t = e.viewer,
-            r = X()(st, t),
-            l =
+            l = X()(st, t),
+            r =
               null !==
                 (a =
-                  null === (n = r.super_follows_application_draft) || void 0 === n
+                  null === (n = l.super_follows_application_draft) || void 0 === n
                     ? void 0
                     : n.content_creation_platform) && void 0 !== a
                 ? a
                 : [],
-            i = Ha(r, 'content_creation_platform'),
-            o = lt.map(function (e) {
+            i = Wa(l, 'content_creation_platform'),
+            o = rt.map(function (e) {
               return { label: e, value: e }
             })
           return s.a.createElement(
             T,
             { title: tt },
             s.a.createElement(Pn.a, {
-              description: rt,
-              label: rt,
+              description: lt,
+              label: lt,
               name: 'platforms',
               onChange: function (e, a) {
                 i([a])
               },
               options: o,
-              value: l[0],
+              value: r[0],
             }),
             s.a.createElement(Dn, { helpText: ot, label: it, path: '/application/submit_platforms_other' }),
           )
@@ -2690,12 +2690,12 @@
           var a = e.title,
             n = e.type,
             t = 'required' === n ? 'red500' : 'optional' === n ? 'gray700' : void 0,
-            r = 'required' === n ? ut : 'optional' === n ? dt : void 0
+            l = 'required' === n ? ut : 'optional' === n ? dt : void 0
           return s.a.createElement(
             I.a,
             { style: mt.container },
             s.a.createElement(z.b, { size: 'headline1', weight: 'heavy' }, a),
-            r && s.a.createElement(z.b, { color: t, size: 'subtext2', style: mt.subtext }, r),
+            l && s.a.createElement(z.b, { color: t, size: 'subtext2', style: mt.subtext }, l),
           )
         },
         mt = L.a.create(function (e) {
@@ -2732,21 +2732,21 @@
         Tt = y.a.je17c987,
         Dt = y.a.d94a9a17,
         Rt = y.a.a8d0108d,
-        Bt = y.a.gfc80842,
-        At = void 0 !== $a ? $a : ($a = n('pLb/')),
+        At = y.a.gfc80842,
+        Bt = void 0 !== $a ? $a : ($a = n('pLb/')),
         jt = void 0 !== Ya ? Ya : (Ya = n('3qCL')),
         It = void 0 !== en ? en : (en = n('AyUU')),
         zt = function (e) {
           var a,
             n,
             t,
-            r,
             l,
+            r,
             i,
             o,
             c = e.user,
             u = e.viewer,
-            d = X()(At, c),
+            d = X()(Bt, c),
             p = null == d ? void 0 : d.legacy.screen_name,
             m = X()(jt, u),
             g = m.super_follows_application_draft,
@@ -2754,13 +2754,13 @@
               null !== (n = null == g ? void 0 : g.content_category_other) && void 0 !== n ? n : [],
             ),
             b = (null !== (t = null == g ? void 0 : g.content_creation_platform) && void 0 !== t ? t : []).concat(
-              null !== (r = null == g ? void 0 : g.content_creation_platform_other) && void 0 !== r ? r : [],
+              null !== (l = null == g ? void 0 : g.content_creation_platform_other) && void 0 !== l ? l : [],
             ),
-            y = null !== (l = null == g ? void 0 : g.purpose) && void 0 !== l ? l : '',
+            y = null !== (r = null == g ? void 0 : g.purpose) && void 0 !== r ? r : '',
             _ = null !== (i = null == g ? void 0 : g.ethnicity) && void 0 !== i ? i : [],
             h = null !== (o = null == g ? void 0 : g.gender) && void 0 !== o ? o : [],
             w = f.length && b.length && y.trim(),
-            v = Ha(m, 'purpose'),
+            v = Wa(m, 'purpose'),
             S = yt()(It),
             k = N()(S, 2),
             F = k[0],
@@ -2804,10 +2804,10 @@
               path: '/application/submit_ethnicities',
             }),
             s.a.createElement(Dn, { description: Object(ft.a)(h, !0), label: Rt, path: '/application/submit_genders' }),
-            s.a.createElement(H, null),
+            s.a.createElement(W, null),
             s.a.createElement(G, {
               disabled: !w || E,
-              label: Bt,
+              label: At,
               onPress: function () {
                 return new Promise(function (e, a) {
                   F({
@@ -2829,9 +2829,9 @@
           var a = e.user,
             n = e.viewer,
             t = X()(Mt, a),
-            r = X()(Vt, n)
+            l = X()(Vt, n)
           return (
-            Ua(r),
+            Ua(l),
             s.a.createElement(
               d.e,
               null,
@@ -2841,82 +2841,87 @@
                 s.a.createElement(aa, { user: t }),
               ),
               s.a.createElement(d.c, { exact: !0, path: '/application/one_more_thing' }, s.a.createElement(Oa, null)),
-              s.a.createElement(d.c, { exact: !0, path: '/application/complete_profile' }, s.a.createElement(A, null)),
+              s.a.createElement(d.c, { exact: !0, path: '/application/complete_profile' }, s.a.createElement(B, null)),
               s.a.createElement(
                 d.c,
                 { exact: !0, path: '/application/submit' },
-                s.a.createElement(zt, { user: t, viewer: r }),
+                s.a.createElement(zt, { user: t, viewer: l }),
               ),
               s.a.createElement(
                 d.c,
                 { exact: !0, path: '/application/submit_categories' },
-                s.a.createElement(Mn, { viewer: r }),
+                s.a.createElement(Mn, { viewer: l }),
               ),
               s.a.createElement(
                 d.c,
                 { exact: !0, path: '/application/submit_categories_other' },
-                s.a.createElement(Ln, { viewer: r }),
+                s.a.createElement(Ln, { viewer: l }),
               ),
               s.a.createElement(
                 d.c,
                 { exact: !0, path: '/application/submit_platforms' },
-                s.a.createElement(ct, { viewer: r }),
+                s.a.createElement(ct, { viewer: l }),
               ),
               s.a.createElement(
                 d.c,
                 { exact: !0, path: '/application/submit_platforms_other' },
-                s.a.createElement(nt, { viewer: r }),
+                s.a.createElement(nt, { viewer: l }),
               ),
               s.a.createElement(
                 d.c,
                 { exact: !0, path: '/application/submit_ethnicities' },
-                s.a.createElement(qn, { viewer: r }),
+                s.a.createElement(qn, { viewer: l }),
               ),
               s.a.createElement(
                 d.c,
                 { exact: !0, path: '/application/submit_genders' },
-                s.a.createElement(Jn, { viewer: r }),
+                s.a.createElement(Jn, { viewer: l }),
               ),
               s.a.createElement(d.c, { path: '/application' }, s.a.createElement(Ea, { user: t })),
             )
           )
         },
-        Wt = (n('ho0z'), n('cHvH')),
-        Ht = function (e) {
+        Ht = (n('ho0z'), n('cHvH')),
+        Wt = function (e) {
           var a = e.children,
             n = e.style
-          return s.a.createElement(Wt.a, null, function (e) {
-            var t = e.windowWidth > L.a.theme.breakpoints.small
-            return s.a.createElement(
+          return s.a.createElement(
+            I.a,
+            { style: [Gt.frame, n] },
+            s.a.createElement(
               I.a,
-              { style: [qt.root, n] },
+              { style: Gt.browserBar },
               s.a.createElement(
                 I.a,
-                { style: qt.browserBar },
-                s.a.createElement(
-                  I.a,
-                  { style: qt.browserBarButtons },
-                  s.a.createElement(I.a, { style: qt.browserBarButton }),
-                  s.a.createElement(I.a, { style: qt.browserBarButton }),
-                  s.a.createElement(I.a, { style: qt.browserBarButton }),
-                ),
-                s.a.createElement(
-                  I.a,
-                  { style: qt.browserBarUrlInputWrapper },
-                  s.a.createElement(I.a, { style: qt.browserBarUrlInput }),
-                ),
+                { style: Gt.browserBarButtons },
+                s.a.createElement(I.a, { style: Gt.browserBarButton }),
+                s.a.createElement(I.a, { style: Gt.browserBarButton }),
+                s.a.createElement(I.a, { style: Gt.browserBarButton }),
               ),
               s.a.createElement(
                 I.a,
-                { style: [qt.contentWrapper, t && qt.contentWrapperWideMargins] },
-                s.a.createElement(I.a, { style: qt.content }, a),
+                { style: Gt.browserBarUrlInputWrapper },
+                s.a.createElement(I.a, { style: Gt.browserBarUrlInput }),
               ),
-            )
-          })
+            ),
+            a,
+          )
         },
-        qt = L.a.create(function (e) {
+        qt = function (e) {
+          var a = e.children,
+            n = e.style
+          return s.a.createElement(I.a, { style: n }, s.a.createElement(I.a, { style: Gt.content }, a))
+        },
+        Nt = function (e) {
+          var a = e.children,
+            n = e.style
+          return Object(Ht.b)().windowWidth > L.a.theme.breakpoints.medium
+            ? s.a.createElement(Wt, { style: n }, s.a.createElement(qt, { style: Gt.contentWide }, a))
+            : s.a.createElement(qt, { style: n }, a)
+        },
+        Gt = L.a.create(function (e) {
           return {
-            root: {
+            frame: {
               backgroundColor: e.colors.gray50,
               borderRadius: e.borderRadii.medium,
               boxShadow: e.boxShadows.medium,
@@ -2953,55 +2958,39 @@
               borderRadius: e.borderRadii.infinite,
               height: e.spaces.space28,
             },
-            contentWrapper: {
-              borderBottomLeftRadius: e.borderRadii.medium,
-              borderBottomRightRadius: e.borderRadii.medium,
+            contentWide: {
               paddingBottom: e.spaces.space24,
-              paddingHorizontal: e.spaces.space16,
-              paddingTop: e.spaces.space16,
+              paddingHorizontal: e.spaces.space40,
+              paddingTop: e.spaces.space12,
             },
-            contentWrapperWideMargins: { paddingHorizontal: e.spaces.space32 },
             content: {
               backgroundColor: e.colors.cellBackground,
               borderRadius: e.borderRadii.large,
               boxShadow: e.boxShadows.medium,
-              minHeight: 400,
+              minHeight: 358,
               overflow: 'hidden',
             },
           }
         }),
-        Nt = n('VTDR'),
-        Gt = n('MAc7'),
-        Qt = s.a.forwardRef(function (e, a) {
-          return s.a.createElement(
-            Ht,
-            { style: Xt.mockBrowserWindow },
-            s.a.createElement(
-              I.a,
-              { style: Xt.mockBrowserWindowContent },
-              s.a.createElement(Nt.a, null),
-              s.a.createElement(Gt.a, v()({}, e, { ref: a })),
-            ),
-          )
-        }),
-        Xt = L.a.create(function (e) {
-          return {
-            mockBrowserWindow: { marginVertical: e.spaces.space24, maxWidth: '600px' },
-            mockBrowserWindowContent: { padding: e.spaces.space24 },
-          }
-        }),
-        Jt = y.a.iba08a94,
-        Zt = y.a.bcb1e4e6,
-        $t = void 0 !== tn ? tn : (tn = n('JK1g')),
-        Yt = void 0 !== rn ? rn : (rn = n('yqZQ')),
-        er = function (e) {
+        Qt = n('MAc7'),
+        Xt = function (e, a) {
+          var n = e.style,
+            t = k()(e, ['style'])
+          return s.a.createElement(Nt, { style: n }, s.a.createElement(Qt.a, v()({}, t, { ref: a })))
+        },
+        Jt = s.a.forwardRef(Xt),
+        Zt = y.a.iba08a94,
+        $t = y.a.bcb1e4e6,
+        Yt = void 0 !== tn ? tn : (tn = n('JK1g')),
+        el = void 0 !== ln ? ln : (ln = n('yqZQ')),
+        al = function (e) {
           var a,
             n,
             t = e.user,
-            r = e.viewer,
-            l = X()($t, t),
-            i = X()(Yt, r),
-            o = l.legacy,
+            l = e.viewer,
+            r = X()(Yt, t),
+            i = X()(el, l),
+            o = r.legacy,
             c = o.name,
             d = o.profile_image_url_https,
             p =
@@ -3016,28 +3005,28 @@
             s.a.createElement(
               s.a.Fragment,
               null,
-              s.a.createElement(Ue, { headline: Jt, subtext: Zt }),
-              s.a.createElement(Qt, { imageUrl: d, name: c, value: p }),
+              s.a.createElement(Ue, { headline: Zt, subtext: $t }),
+              s.a.createElement(Jt, { imageUrl: d, name: c, value: p }),
             )
           )
         },
-        ar = y.a.hf6f2913,
-        nr = void 0 !== ln ? ln : (ln = n('MvEh')),
-        tr = void 0 !== on ? on : (on = n('U5ka')),
-        rr = function (e) {
+        nl = y.a.hf6f2913,
+        tl = void 0 !== rn ? rn : (rn = n('MvEh')),
+        ll = void 0 !== on ? on : (on = n('U5ka')),
+        rl = function (e) {
           var a = e.user,
             n = e.viewer,
-            t = X()(nr, a),
-            r = X()(tr, n)
-          return s.a.createElement(T, { title: ar, withInfoButton: !0 }, s.a.createElement(er, { user: t, viewer: r }))
+            t = X()(tl, a),
+            l = X()(ll, n)
+          return s.a.createElement(T, { title: nl, withInfoButton: !0 }, s.a.createElement(al, { user: t, viewer: l }))
         },
-        lr = n('efqG'),
-        ir = n('5emT'),
-        or = y.a.ab793af9,
-        sr = y.a.fb278c81,
-        cr = y.a.e6b60e94,
-        ur = y.a.j24c37b2,
-        dr = L.a.create(function (e) {
+        il = n('efqG'),
+        ol = n('5emT'),
+        sl = y.a.ab793af9,
+        cl = y.a.fb278c81,
+        ul = y.a.e6b60e94,
+        dl = y.a.j24c37b2,
+        pl = L.a.create(function (e) {
           return {
             root: { margin: e.spaces.space32 },
             triggerLabel: { marginRight: e.spaces.space8 },
@@ -3047,41 +3036,41 @@
             triggerContentWrapper: { alignSelf: 'center', flexDirection: 'row' },
           }
         }),
-        pr = function () {
+        ml = function () {
           return s.a.createElement(
-            lr.a,
+            il.a,
             {
               renderContent: function (e) {
                 return s.a.createElement(
                   I.a,
-                  { style: dr.root },
-                  s.a.createElement(oa.a, { Icon: ir.a, color: 'neutral', size: 'xxxLarge' }),
-                  s.a.createElement(z.b, { size: 'title3', style: dr.headlineText, weight: 'heavy' }, sr),
-                  s.a.createElement(z.b, { color: 'gray700', style: dr.paragraphText }, cr),
-                  s.a.createElement(h.a, { onClick: e, size: 'xLarge', type: 'primaryFilled' }, ur),
+                  { style: pl.root },
+                  s.a.createElement(oa.a, { Icon: ol.a, color: 'neutral', size: 'xxxLarge' }),
+                  s.a.createElement(z.b, { size: 'title3', style: pl.headlineText, weight: 'heavy' }, cl),
+                  s.a.createElement(z.b, { color: 'gray700', style: pl.paragraphText }, ul),
+                  s.a.createElement(h.a, { onClick: e, size: 'xLarge', type: 'primaryFilled' }, dl),
                 )
               },
             },
             s.a.createElement(
               I.a,
-              { accessibilityRole: 'button', style: dr.triggerContentWrapper },
-              s.a.createElement(z.b, { color: 'gray700', style: dr.triggerLabel }, or),
-              s.a.createElement(x.a, { style: dr.triggerIcon }),
+              { accessibilityRole: 'button', style: pl.triggerContentWrapper },
+              s.a.createElement(z.b, { color: 'gray700', style: pl.triggerLabel }, sl),
+              s.a.createElement(x.a, { style: pl.triggerIcon }),
             ),
           )
         },
-        mr = y.a.j3253319,
-        gr = y.a.h1e80993,
-        fr = y.a.j679dcda,
-        br = void 0 !== sn ? sn : (sn = n('S3B+')),
-        yr = void 0 !== cn ? cn : (cn = n('qrhN')),
-        _r = s.a.forwardRef(function (e, a) {
+        gl = y.a.j3253319,
+        fl = y.a.h1e80993,
+        bl = y.a.j679dcda,
+        yl = void 0 !== sn ? sn : (sn = n('S3B+')),
+        _l = void 0 !== cn ? cn : (cn = n('qrhN')),
+        hl = function (e, a) {
           var n,
             t,
-            r = e.user,
-            l = e.viewer,
-            i = X()(br, r),
-            o = X()(yr, l),
+            l = e.user,
+            r = e.viewer,
+            i = X()(yl, l),
+            o = X()(_l, r),
             c = i.legacy,
             d = c.name,
             p = c.profile_image_url_https,
@@ -3098,15 +3087,15 @@
             s.a.createElement(
               s.a.Fragment,
               null,
-              s.a.createElement(Ue, { headline: mr, subtext: gr }),
+              s.a.createElement(Ue, { headline: gl, subtext: fl }),
               s.a.createElement(G, {
-                label: fr,
+                label: bl,
                 path: '/onboarding/perks_intro_examples',
-                style: hr.examplesLink,
+                style: wl.examplesLink,
                 type: 'primaryText',
               }),
-              s.a.createElement(pr, null),
-              s.a.createElement(Qt, {
+              s.a.createElement(ml, null),
+              s.a.createElement(Jt, {
                 imageUrl: p,
                 name: d,
                 onChange: function (e) {
@@ -3117,29 +3106,29 @@
               }),
             )
           )
-        }),
-        hr = L.a.create(function (e) {
+        },
+        wl = L.a.create(function (e) {
           return { examplesLink: { alignSelf: 'center', marginBottom: e.spaces.space12 } }
         }),
-        wr = _r,
-        vr = y.a.cd5cae15,
-        Sr = y.a.abd845fd,
-        kr = y.a.b772cd65,
-        Fr = void 0 !== un ? un : (un = n('oyMe')),
-        Er = void 0 !== dn ? dn : (dn = n('RL7R')),
-        Cr = void 0 !== pn ? pn : (pn = n('VzX/')),
-        xr = L.a.create(function (e) {
+        vl = s.a.forwardRef(hl),
+        Sl = y.a.cd5cae15,
+        kl = y.a.abd845fd,
+        Fl = y.a.b772cd65,
+        El = void 0 !== un ? un : (un = n('oyMe')),
+        Cl = void 0 !== dn ? dn : (dn = n('RL7R')),
+        xl = void 0 !== pn ? pn : (pn = n('VzX/')),
+        Kl = L.a.create(function (e) {
           return { buttonsWrapper: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: e.spaces.space16 } }
         }),
-        Kr = function (e) {
+        Ol = function (e) {
           var a,
             n,
             t,
-            r = e.user,
-            l = e.viewer,
+            l = e.user,
+            r = e.viewer,
             i = s.a.useRef(),
-            o = X()(Fr, r),
-            c = X()(Er, l),
+            o = X()(El, l),
+            c = X()(Cl, r),
             u = null === (a = o.super_follow_creator_benefits) || void 0 === a ? void 0 : a.benefits_data,
             d =
               null !==
@@ -3147,18 +3136,18 @@
               void 0 !== n
                 ? n
                 : '',
-            p = yt()(Cr),
+            p = yt()(xl),
             m = N()(p, 2),
             g = m[0],
             f = m[1],
             b = !!d
           return s.a.createElement(
             T,
-            { title: vr },
-            s.a.createElement(wr, { ref: i, user: o, viewer: c }),
+            { title: Sl },
+            s.a.createElement(vl, { ref: i, user: o, viewer: c }),
             s.a.createElement(
               I.a,
-              { style: xr.buttonsWrapper },
+              { style: Kl.buttonsWrapper },
               s.a.createElement(
                 h.a,
                 {
@@ -3169,11 +3158,11 @@
                   size: 'large',
                   type: 'primaryOutlined',
                 },
-                Sr,
+                kl,
               ),
               s.a.createElement(G, {
                 disabled: !b || f,
-                label: kr,
+                label: Fl,
                 onPress: function () {
                   return new Promise(function (e, a) {
                     g({
@@ -3191,46 +3180,46 @@
             ),
           )
         },
-        Or = n('fs1G'),
-        Lr = n('9VLy'),
-        Pr = n('0yYu'),
-        Tr = n('4zmP'),
-        Dr = y.a.a6777c1b,
-        Rr = y.a.b4a93a91,
-        Br = y.a.c0348963,
-        Ar = y.a.d08d0bb2,
-        jr = y.a.ea4c3496,
-        Ir = y.a.ea92cfe3,
-        zr = y.a.ia9c37c4,
-        Mr = y.a.hc2c5a8b,
-        Vr = y.a.be54a312,
-        Ur = y.a.bc6d85b3,
-        Wr = y.a.b7bc895e,
-        Hr = y.a.f3ce76c0,
-        qr = y.a.e9e3b3f7,
-        Nr = y.a.a79bf10a,
-        Gr = y.a.a3932653,
-        Qr = y.a.a1ef1964,
-        Xr = y.a.abd845fd,
-        Jr = y.a.c9f7c195,
-        Zr = y.a.g5925628,
-        $r = y.a.jfb2bf30,
-        Yr = y.a.a962b5d8,
-        el = y.a.dba12b51,
-        al = void 0 !== mn ? mn : (mn = n('EM6u')),
-        nl = void 0 !== gn ? gn : (gn = n('oNwH')),
-        tl = void 0 !== fn ? fn : (fn = n('qOMr')),
-        rl = function (e) {
+        Ll = n('fs1G'),
+        Pl = n('9VLy'),
+        Tl = n('0yYu'),
+        Dl = n('4zmP'),
+        Rl = y.a.a6777c1b,
+        Al = y.a.b4a93a91,
+        Bl = y.a.c0348963,
+        jl = y.a.d08d0bb2,
+        Il = y.a.ea4c3496,
+        zl = y.a.ea92cfe3,
+        Ml = y.a.ia9c37c4,
+        Vl = y.a.hc2c5a8b,
+        Ul = y.a.be54a312,
+        Hl = y.a.bc6d85b3,
+        Wl = y.a.b7bc895e,
+        ql = y.a.f3ce76c0,
+        Nl = y.a.e9e3b3f7,
+        Gl = y.a.a79bf10a,
+        Ql = y.a.a3932653,
+        Xl = y.a.a1ef1964,
+        Jl = y.a.abd845fd,
+        Zl = y.a.c9f7c195,
+        $l = y.a.g5925628,
+        Yl = y.a.jfb2bf30,
+        er = y.a.a962b5d8,
+        ar = y.a.dba12b51,
+        nr = void 0 !== mn ? mn : (mn = n('EM6u')),
+        tr = void 0 !== gn ? gn : (gn = n('oNwH')),
+        lr = void 0 !== fn ? fn : (fn = n('qOMr')),
+        rr = function (e) {
           var a,
             n,
             t,
-            r = e.priceOfferings,
-            l = e.user,
+            l = e.priceOfferings,
+            r = e.user,
             i = e.viewer,
-            o = X()(al, r),
+            o = X()(nr, l),
             c = (o.$refType, k()(o, ['$refType'])),
-            u = X()(nl, l),
-            d = X()(tl, i).super_follows_onboarding_draft,
+            u = X()(tr, r),
+            d = X()(lr, i).super_follows_onboarding_draft,
             p = null !== (a = null == d ? void 0 : d.creator_intro) && void 0 !== a ? a : '',
             m = null !== (n = null == d ? void 0 : d.description) && void 0 !== n ? n : '',
             g = null !== (t = null == d ? void 0 : d.selected_price) && void 0 !== t ? t : 'offer2'
@@ -3240,88 +3229,88 @@
             s.a.createElement(
               z.b,
               { accessibilityLevel: 1, accessibilityRole: 'heading', size: 'title4', weight: 'heavy' },
-              Dr,
+              Rl,
             ),
-            s.a.createElement(Pr.a, null),
+            s.a.createElement(Tl.a, null),
             s.a.createElement(
               z.b,
               { accessibilityLevel: 2, accessibilityRole: 'heading', size: 'title4', weight: 'heavy' },
-              Rr,
+              Al,
             ),
-            s.a.createElement(G, { label: Qr, path: '/management/perks_confirm', type: 'primaryText' }),
+            s.a.createElement(G, { label: Xl, path: '/management/perks_confirm', type: 'primaryText' }),
             s.a.createElement(
               z.b,
               { accessibilityLevel: 3, accessibilityRole: 'heading', size: 'headline1', weight: 'heavy' },
-              Br,
+              Bl,
             ),
-            s.a.createElement(G, { label: Xr, path: '/management/perks_intro', type: 'primaryOutlined' }),
+            s.a.createElement(G, { label: Jl, path: '/management/perks_intro', type: 'primaryOutlined' }),
             s.a.createElement(z.b, { color: 'gray700' }, p),
-            s.a.createElement(Lr.a, { user: u }),
+            s.a.createElement(Pl.a, { user: u }),
             s.a.createElement(
               z.b,
               { accessibilityLevel: 3, accessibilityRole: 'heading', size: 'headline1', weight: 'heavy' },
-              Ar,
+              jl,
             ),
             s.a.createElement(z.b, { color: 'gray700' }, m),
-            s.a.createElement(Lr.a, { user: u }),
+            s.a.createElement(Pl.a, { user: u }),
             s.a.createElement(
               z.b,
               { accessibilityLevel: 3, accessibilityRole: 'heading', size: 'headline1', weight: 'heavy' },
-              jr,
+              Il,
             ),
-            s.a.createElement(z.b, { color: 'gray700' }, Ir),
-            s.a.createElement(Pr.a, null),
+            s.a.createElement(z.b, { color: 'gray700' }, zl),
+            s.a.createElement(Tl.a, null),
             s.a.createElement(
               z.b,
               { accessibilityLevel: 2, accessibilityRole: 'heading', size: 'title4', weight: 'heavy' },
-              zr,
+              Ml,
             ),
-            s.a.createElement(z.b, { color: 'gray700' }, Mr),
-            s.a.createElement(z.b, { size: 'headline2', weight: 'heavy' }, Vr({ price: c[g] })),
-            s.a.createElement(Tr.a, { headline: Ur, text: Wr }),
-            s.a.createElement(Pr.a, null),
+            s.a.createElement(z.b, { color: 'gray700' }, Vl),
+            s.a.createElement(z.b, { size: 'headline2', weight: 'heavy' }, Ul({ price: c[g] })),
+            s.a.createElement(Dl.a, { headline: Hl, text: Wl }),
+            s.a.createElement(Tl.a, null),
             s.a.createElement(
               z.b,
               { accessibilityLevel: 2, accessibilityRole: 'heading', size: 'title4', weight: 'heavy' },
-              Hr,
+              ql,
             ),
-            s.a.createElement(z.b, { color: 'gray700' }, qr),
-            s.a.createElement(h.a, { link: C, type: 'brandOutlined' }, Jr),
+            s.a.createElement(z.b, { color: 'gray700' }, Nl),
+            s.a.createElement(h.a, { link: C, type: 'brandOutlined' }, Zl),
             s.a.createElement(
               h.a,
               { link: 'https://help.twitter.com/forms/paid-features/superfollows', type: 'brandOutlined' },
-              Zr,
+              $l,
             ),
-            s.a.createElement(Pr.a, null),
+            s.a.createElement(Tl.a, null),
             s.a.createElement(
               z.b,
               { accessibilityLevel: 2, accessibilityRole: 'heading', size: 'title4', weight: 'heavy' },
-              Nr,
+              Gl,
             ),
-            s.a.createElement(z.b, { color: 'gray700' }, Gr),
-            s.a.createElement(h.a, { link: 'https://t.co/jPqvg6tFrDJG', type: 'brandFilled' }, $r),
-            s.a.createElement(h.a, { link: 'https://t.co/RL2NN3bEVkes', type: 'brandOutlined' }, Yr),
-            s.a.createElement(Pr.a, null),
-            s.a.createElement(h.a, { onPress: Or.a, type: 'destructiveText' }, el),
+            s.a.createElement(z.b, { color: 'gray700' }, Ql),
+            s.a.createElement(h.a, { link: 'https://t.co/jPqvg6tFrDJG', type: 'brandFilled' }, Yl),
+            s.a.createElement(h.a, { link: 'https://t.co/RL2NN3bEVkes', type: 'brandOutlined' }, er),
+            s.a.createElement(Tl.a, null),
+            s.a.createElement(h.a, { onPress: Ll.a, type: 'destructiveText' }, ar),
           )
         },
-        ll = void 0 !== bn ? bn : (bn = n('MXCg')),
-        il = void 0 !== yn ? yn : (yn = n('mEFY')),
-        ol = void 0 !== _n ? _n : (_n = n('d8Sa')),
-        sl = function (e) {
+        ir = void 0 !== bn ? bn : (bn = n('MXCg')),
+        or = void 0 !== yn ? yn : (yn = n('mEFY')),
+        sr = void 0 !== _n ? _n : (_n = n('d8Sa')),
+        cr = function (e) {
           var a,
             n,
             t = e.priceOfferings,
-            r = e.user,
-            l = e.viewer,
-            i = X()(ll, t),
-            o = X()(il, r),
-            c = X()(ol, l),
+            l = e.user,
+            r = e.viewer,
+            i = X()(ir, t),
+            o = X()(or, l),
+            c = X()(sr, r),
             u = null !== (a = o.super_follow_creator_benefits) && void 0 !== a ? a : {},
             p = u.benefits_data,
             m = null != p ? p : [{}]
           return (
-            Wa(c, {
+            Ha(c, {
               creator_intro: u.creator_intro,
               description: N()(m, 1)[0].description,
               selected_price: (null !== (n = o.super_follow_creator_price_metadata) && void 0 !== n ? n : {})
@@ -3333,36 +3322,36 @@
               s.a.createElement(
                 d.c,
                 { exact: !0, path: '/management/perks_intro' },
-                s.a.createElement(Kr, { user: o, viewer: c }),
+                s.a.createElement(Ol, { user: o, viewer: c }),
               ),
               s.a.createElement(
                 d.c,
                 { exact: !0, path: '/management/perks_confirm' },
-                s.a.createElement(rr, { user: o, viewer: c }),
+                s.a.createElement(rl, { user: o, viewer: c }),
               ),
               s.a.createElement(
                 d.c,
                 { path: '/management' },
-                s.a.createElement(rl, { priceOfferings: i, user: o, viewer: c }),
+                s.a.createElement(rr, { priceOfferings: i, user: o, viewer: c }),
               ),
             )
           )
         },
-        cl = (n('5BYb'), y.a.b422cb62),
-        ul = y.a.f08705e0,
-        dl = y.a.fc5bfd95,
-        pl = y.a.e2cd700f,
-        ml = y.a.fbfd7397,
-        gl = y.a.c3d89aca,
-        fl = [
+        ur = (n('5BYb'), y.a.b422cb62),
+        dr = y.a.f08705e0,
+        pr = y.a.fc5bfd95,
+        mr = y.a.e2cd700f,
+        gr = y.a.fbfd7397,
+        fr = y.a.c3d89aca,
+        br = [
           {
             label: y.a.d8637c96,
             test: function (e) {
               var a,
                 n = null !== (a = e.viewer.super_follows_onboarding_draft) && void 0 !== a ? a : {},
                 t = n.creator_intro,
-                r = n.description
-              return !!t && !!r
+                l = n.description
+              return !!t && !!l
             },
           },
           {
@@ -3379,136 +3368,136 @@
             },
           },
         ],
-        bl = void 0 !== hn ? hn : (hn = n('wQp3')),
-        yl = void 0 !== wn ? wn : (wn = n('tfBr')),
-        _l = L.a.create(function (e) {
+        yr = void 0 !== hn ? hn : (hn = n('wQp3')),
+        _r = void 0 !== wn ? wn : (wn = n('tfBr')),
+        hr = L.a.create(function (e) {
           return { navigationButton: { marginHorizontal: e.spaces.space80, marginVertical: e.spaces.space24 } }
         }),
-        hl = function (e) {
+        wr = function (e) {
           var a = e.user,
             n = e.viewer,
-            t = X()(bl, a),
-            r = X()(yl, n),
-            l = fl.map(function (e) {
-              return { label: e.label, checked: (0, e.test)({ user: t, viewer: r }) }
+            t = X()(yr, a),
+            l = X()(_r, n),
+            r = br.map(function (e) {
+              return { label: e.label, checked: (0, e.test)({ user: t, viewer: l }) }
             }),
-            i = l.some(function (e) {
+            i = r.some(function (e) {
               return e.checked
             }),
             o = s.a.createElement(G, {
-              label: i ? gl : dl,
+              label: i ? fr : pr,
               path: '/onboarding/perks_intro',
               size: 'xLarge',
-              style: _l.navigationButton,
+              style: hr.navigationButton,
               type: 'primaryFilled',
             })
           return s.a.createElement(
             T,
             { bottomBar: o, leftControlShouldClose: !0, withCenteredLogo: !0, withInfoButton: !0 },
             s.a.createElement(Ue, {
-              headline: i ? pl : cl,
+              headline: i ? mr : ur,
               illustration: i ? Ie.Puzzle : Ie.Cat,
-              subtext: i ? ml : ul,
+              subtext: i ? gr : dr,
             }),
-            s.a.createElement(U, { items: l }),
+            s.a.createElement(U, { items: r }),
           )
         },
-        wl = y.a.cd5cae15,
-        vl = y.a.b83662ac,
-        Sl = y.a.cda6bb6d,
-        kl = y.a.a15b98ec,
-        Fl = y.a.c1df579e,
-        El = function () {
+        vr = y.a.cd5cae15,
+        Sr = y.a.b83662ac,
+        kr = y.a.cda6bb6d,
+        Fr = y.a.a15b98ec,
+        Er = y.a.c1df579e,
+        Cr = function () {
           return s.a.createElement(
             T,
-            { subtitle: vl, title: wl, withInfoButton: !0 },
-            s.a.createElement(Ue, { headline: Sl, subtext: kl }),
-            s.a.createElement(pr, null),
-            s.a.createElement(G, { label: Fl, path: '/onboarding/perks_confirm' }),
+            { subtitle: Sr, title: vr, withInfoButton: !0 },
+            s.a.createElement(Ue, { headline: kr, subtext: Fr }),
+            s.a.createElement(ml, null),
+            s.a.createElement(G, { label: Er, path: '/onboarding/perks_confirm' }),
           )
         },
-        Cl = y.a.cd5cae15,
-        xl = y.a.c1df579e,
-        Kl = void 0 !== vn ? vn : (vn = n('Rthh')),
-        Ol = void 0 !== Sn ? Sn : (Sn = n('aREQ')),
-        Ll = function (e) {
+        xr = y.a.cd5cae15,
+        Kr = y.a.c1df579e,
+        Or = void 0 !== vn ? vn : (vn = n('Rthh')),
+        Lr = void 0 !== Sn ? Sn : (Sn = n('aREQ')),
+        Pr = function (e) {
           var a = e.user,
             n = e.viewer,
-            t = X()(Kl, a),
-            r = X()(Ol, n),
-            l = s.a.createElement(G, { label: xl, path: '/onboarding/pricing', size: 'small', type: 'primaryFilled' })
+            t = X()(Or, a),
+            l = X()(Lr, n),
+            r = s.a.createElement(G, { label: Kr, path: '/onboarding/pricing', size: 'small', type: 'primaryFilled' })
           return s.a.createElement(
             T,
-            { rightControl: l, title: Cl, withInfoButton: !0 },
-            s.a.createElement(er, { user: t, viewer: r }),
+            { rightControl: r, title: xr, withInfoButton: !0 },
+            s.a.createElement(al, { user: t, viewer: l }),
           )
         },
-        Pl = y.a.ebfb897c,
-        Tl = y.a.dc4feb19,
-        Dl = y.a.c183d271,
-        Rl = y.a.ic130fd5,
-        Bl = y.a.dd913e24,
-        Al = y.a.h580543e,
-        jl = function () {
+        Tr = y.a.ebfb897c,
+        Dr = y.a.dc4feb19,
+        Rr = y.a.c183d271,
+        Ar = y.a.ic130fd5,
+        Br = y.a.dd913e24,
+        jr = y.a.h580543e,
+        Ir = function () {
           return s.a.createElement(
             T,
-            { title: Pl },
+            { title: Tr },
             s.a.createElement(
               z.b,
               { accessibilityLevel: 2, accessibilityRole: 'heading', size: 'title4', weight: 'heavy' },
-              Tl,
+              Dr,
             ),
-            s.a.createElement(z.b, { color: 'gray700' }, Dl),
-            s.a.createElement(z.b, null, Rl),
-            s.a.createElement(z.b, null, Bl),
-            s.a.createElement(z.b, null, Al),
+            s.a.createElement(z.b, { color: 'gray700' }, Rr),
+            s.a.createElement(z.b, null, Ar),
+            s.a.createElement(z.b, null, Br),
+            s.a.createElement(z.b, null, jr),
           )
         },
-        Il = y.a.cd5cae15,
-        zl = y.a.d80af370,
-        Ml = y.a.gf32cca1,
-        Vl = y.a.j8ba99b3,
-        Ul = y.a.j679dcda,
-        Wl = y.a.a329ce87,
-        Hl = y.a.be76dc33,
-        ql = y.a.abd845fd,
-        Nl = y.a.c1df579e,
-        Gl = void 0 !== kn ? kn : (kn = n('tJ4s')),
-        Ql = function (e) {
+        zr = y.a.cd5cae15,
+        Mr = y.a.d80af370,
+        Vr = y.a.gf32cca1,
+        Ur = y.a.j8ba99b3,
+        Hr = y.a.j679dcda,
+        Wr = y.a.a329ce87,
+        qr = y.a.be76dc33,
+        Nr = y.a.abd845fd,
+        Gr = y.a.c1df579e,
+        Qr = void 0 !== kn ? kn : (kn = n('tJ4s')),
+        Xr = function (e) {
           var a,
             n,
             t = e.viewer,
-            r = X()(Gl, t),
-            l =
-              null !== (a = null === (n = r.super_follows_onboarding_draft) || void 0 === n ? void 0 : n.description) &&
+            l = X()(Qr, t),
+            r =
+              null !== (a = null === (n = l.super_follows_onboarding_draft) || void 0 === n ? void 0 : n.description) &&
               void 0 !== a
                 ? a
                 : '',
-            i = qa(r, 'description')
+            i = qa(l, 'description')
           return s.a.createElement(
             T,
-            { subtitle: zl, title: Il, withInfoButton: !0 },
-            s.a.createElement(Ue, { headline: Ml, subtext: Vl }),
-            s.a.createElement(G, { label: Ul, path: '/onboarding/perks_description_examples', type: 'primaryText' }),
-            s.a.createElement(pr, null),
+            { subtitle: Mr, title: zr, withInfoButton: !0 },
+            s.a.createElement(Ue, { headline: Vr, subtext: Ur }),
+            s.a.createElement(G, { label: Hr, path: '/onboarding/perks_description_examples', type: 'primaryText' }),
+            s.a.createElement(ml, null),
             s.a.createElement(Fn.a, {
-              label: Wl,
+              label: Wr,
               name: 'description',
               onChange: function (e) {
                 i(e.currentTarget.value)
               },
-              value: l || '',
+              value: r || '',
             }),
-            s.a.createElement(h.a, { type: 'primaryFilled' }, Hl),
-            s.a.createElement(h.a, { type: 'primaryOutlined' }, ql),
-            s.a.createElement(G, { disabled: !l, label: Nl, path: '/onboarding/perks_badges' }),
+            s.a.createElement(h.a, { type: 'primaryFilled' }, qr),
+            s.a.createElement(h.a, { type: 'primaryOutlined' }, Nr),
+            s.a.createElement(G, { disabled: !r, label: Gr, path: '/onboarding/perks_badges' }),
           )
         },
-        Xl = (n('+KXO'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('KEM+')),
-        Jl = n.n(Xl),
-        Zl = n('Lsrn'),
-        $l = n('k/Ka')
-      function Yl(e, a) {
+        Jr = (n('+KXO'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('KEM+')),
+        Zr = n.n(Jr),
+        $r = n('Lsrn'),
+        Yr = n('k/Ka')
+      function ei(e, a) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var t = Object.getOwnPropertySymbols(e)
@@ -3520,29 +3509,29 @@
         }
         return n
       }
-      function ei(e) {
+      function ai(e) {
         for (var a = 1; a < arguments.length; a++) {
           var n = null != arguments[a] ? arguments[a] : {}
           a % 2
-            ? Yl(Object(n), !0).forEach(function (a) {
-                Jl()(e, a, n[a])
+            ? ei(Object(n), !0).forEach(function (a) {
+                Zr()(e, a, n[a])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : Yl(Object(n)).forEach(function (a) {
+            : ei(Object(n)).forEach(function (a) {
                 Object.defineProperty(e, a, Object.getOwnPropertyDescriptor(n, a))
               })
         }
         return e
       }
-      var ai = function () {
+      var ni = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object($l.a)(
+        return Object(Yr.a)(
           'svg',
-          ei(
-            ei({}, e),
+          ai(
+            ai({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [Zl.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [$r.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           s.a.createElement(
             'g',
@@ -3553,11 +3542,10 @@
           ),
         )
       }
-      ai.metadata = { width: 24, height: 24 }
-      var ni,
-        ti,
-        ri,
+      ni.metadata = { width: 24, height: 24 }
+      var ti,
         li,
+        ri,
         ii,
         oi,
         si,
@@ -3566,15 +3554,16 @@
         di,
         pi,
         mi,
-        gi = ai,
-        fi = n('JWc1'),
-        bi = y.a.ebfb897c,
-        yi = y.a.dc4feb19,
-        _i = y.a.a0bb2076,
-        hi = y.a.ace46d40,
-        wi = y.a.h2c4511f,
-        vi = y.a.hbe4f99e,
-        Si = L.a.create(function (e) {
+        gi,
+        fi = ni,
+        bi = n('JWc1'),
+        yi = y.a.ebfb897c,
+        _i = y.a.dc4feb19,
+        hi = y.a.a0bb2076,
+        wi = y.a.ace46d40,
+        vi = y.a.h2c4511f,
+        Si = y.a.hbe4f99e,
+        ki = L.a.create(function (e) {
           return {
             exampleIntros: { marginLeft: e.spaces.space36 },
             headlineWrapper: { flexDirection: 'row', marginBottom: e.spaces.space12 },
@@ -3582,54 +3571,54 @@
             subtext: { marginLeft: e.spaces.space36 },
           }
         }),
-        ki = function () {
+        Fi = function () {
           return s.a.createElement(
             T,
-            { title: bi },
+            { title: yi },
             s.a.createElement(
               I.a,
-              { style: Si.headlineWrapper },
-              s.a.createElement(oa.a, { Icon: gi, color: 'neutral', size: 'large' }),
+              { style: ki.headlineWrapper },
+              s.a.createElement(oa.a, { Icon: fi, color: 'neutral', size: 'large' }),
               s.a.createElement(
                 z.b,
                 {
                   accessibilityLevel: 2,
                   accessibilityRole: 'heading',
                   size: 'title4',
-                  style: Si.headline,
+                  style: ki.headline,
                   weight: 'heavy',
                 },
-                yi,
+                _i,
               ),
             ),
-            s.a.createElement(z.b, { color: 'gray700', style: Si.subtext }, _i),
+            s.a.createElement(z.b, { color: 'gray700', style: ki.subtext }, hi),
             s.a.createElement(
               I.a,
-              { style: Si.exampleIntros },
-              s.a.createElement(fi.a, { value: hi }),
-              s.a.createElement(fi.a, { value: wi }),
-              s.a.createElement(fi.a, { value: vi }),
+              { style: ki.exampleIntros },
+              s.a.createElement(bi.a, { value: wi }),
+              s.a.createElement(bi.a, { value: vi }),
+              s.a.createElement(bi.a, { value: Si }),
             ),
           )
         },
-        Fi = y.a.cd5cae15,
-        Ei = y.a.ef08a890,
-        Ci = y.a.b16680ff,
-        xi = y.a.abd845fd,
-        Ki = y.a.c1df579e,
-        Oi = void 0 !== ni ? ni : (ni = n('02qo')),
-        Li = void 0 !== ti ? ti : (ti = n('TXsE')),
-        Pi = L.a.create(function (e) {
+        Ei = y.a.cd5cae15,
+        Ci = y.a.ef08a890,
+        xi = y.a.b16680ff,
+        Ki = y.a.abd845fd,
+        Oi = y.a.c1df579e,
+        Li = void 0 !== ti ? ti : (ti = n('02qo')),
+        Pi = void 0 !== li ? li : (li = n('TXsE')),
+        Ti = L.a.create(function (e) {
           return { buttonsWrapper: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: e.spaces.space16 } }
         }),
-        Ti = function (e) {
+        Di = function (e) {
           var a,
             n,
             t = e.user,
-            r = e.viewer,
-            l = s.a.useRef(),
-            i = X()(Oi, t),
-            o = X()(Li, r),
+            l = e.viewer,
+            r = s.a.useRef(),
+            i = X()(Li, t),
+            o = X()(Pi, l),
             c = !!(null !==
               (a = null === (n = o.super_follows_onboarding_draft) || void 0 === n ? void 0 : n.creator_intro) &&
             void 0 !== a
@@ -3637,58 +3626,58 @@
               : '')
           return s.a.createElement(
             T,
-            { subtitle: Ei, title: Fi },
-            s.a.createElement(wr, { ref: l, user: i, viewer: o }),
+            { subtitle: Ci, title: Ei },
+            s.a.createElement(vl, { ref: r, user: i, viewer: o }),
             s.a.createElement(
               I.a,
-              { style: Pi.buttonsWrapper },
+              { style: Ti.buttonsWrapper },
               s.a.createElement(
                 h.a,
                 {
                   onClick: function () {
                     var e
-                    null == l || null === (e = l.current) || void 0 === e || e.focus()
+                    null == r || null === (e = r.current) || void 0 === e || e.focus()
                   },
                   size: 'large',
                   type: 'primaryOutlined',
                 },
-                c ? xi : Ci,
+                c ? Ki : xi,
               ),
-              s.a.createElement(G, { disabled: !c, label: Ki, path: '/onboarding/perks_description', size: 'large' }),
+              s.a.createElement(G, { disabled: !c, label: Oi, path: '/onboarding/perks_description', size: 'large' }),
             ),
           )
         },
-        Di = y.a.ea8a3d2d,
-        Ri = y.a.f77bb178,
+        Ri = y.a.ea8a3d2d,
+        Ai = y.a.f77bb178,
         Bi = y.a.cd75a5d4,
-        Ai = y.a.g9677c6d,
-        ji = y.a.abd845fd,
-        Ii = void 0 !== ri ? ri : (ri = n('IeZm')),
-        zi = void 0 !== li ? li : (li = n('7ESn')),
-        Mi = void 0 !== ii ? ii : (ii = n('By/j')),
-        Vi = function (e) {
+        ji = y.a.g9677c6d,
+        Ii = y.a.abd845fd,
+        zi = void 0 !== ri ? ri : (ri = n('IeZm')),
+        Mi = void 0 !== ii ? ii : (ii = n('7ESn')),
+        Vi = void 0 !== oi ? oi : (oi = n('By/j')),
+        Ui = function (e) {
           var a,
             n,
             t,
-            r = e.priceOfferings,
-            l = e.viewer,
-            i = X()(Ii, r),
+            l = e.priceOfferings,
+            r = e.viewer,
+            i = X()(zi, l),
             o = (i.$refType, k()(i, ['$refType'])),
-            c = X()(zi, l).super_follows_onboarding_draft,
+            c = X()(Mi, r).super_follows_onboarding_draft,
             u = null !== (a = null == c ? void 0 : c.creator_intro) && void 0 !== a ? a : '',
             d = null !== (n = null == c ? void 0 : c.description) && void 0 !== n ? n : '',
             p = null !== (t = null == c ? void 0 : c.selected_price) && void 0 !== t ? t : o[0],
-            m = yt()(Mi),
+            m = yt()(Vi),
             g = N()(m, 2),
             f = g[0],
             b = g[1]
           return s.a.createElement(
             T,
-            { title: Di, withInfoButton: !0 },
-            s.a.createElement(Ue, { headline: Ri({ price: o[p] }), subtext: Bi }),
+            { title: Ri, withInfoButton: !0 },
+            s.a.createElement(Ue, { headline: Ai({ price: o[p] }), subtext: Bi }),
             s.a.createElement(G, {
               disabled: b,
-              label: Ai,
+              label: ji,
               onPress: function () {
                 return new Promise(function (e, a) {
                   f({
@@ -3710,45 +3699,45 @@
             }),
             s.a.createElement(G, {
               disabled: b,
-              label: ji,
+              label: Ii,
               path: '/onboarding/pricing',
               size: 'small',
               type: 'primaryOutlined',
             }),
           )
         },
-        Ui = (n('7xRU'), n('hznd')),
+        Hi = (n('7xRU'), n('hznd')),
         Wi = y.a.ea8a3d2d,
-        Hi = y.a.ic9124bf,
-        qi = y.a.g5923869,
-        Ni = {
+        qi = y.a.ic9124bf,
+        Ni = y.a.g5923869,
+        Gi = {
           offer1: [y.a.f025ab39, y.a.c5602dfd],
           offer2: [y.a.ib075804, y.a.j8a72f06],
           offer3: [y.a.c246656e, y.a.a92ab16c],
         },
-        Gi = y.a.c1df579e,
-        Qi = void 0 !== oi ? oi : (oi = n('5jO1')),
-        Xi = void 0 !== si ? si : (si = n('mKqc')),
-        Ji = function (e) {
+        Qi = y.a.c1df579e,
+        Xi = void 0 !== si ? si : (si = n('5jO1')),
+        Ji = void 0 !== ci ? ci : (ci = n('mKqc')),
+        Zi = function (e) {
           var a = e.priceOfferings,
             n = e.viewer,
-            t = X()(Qi, a),
-            r = (t.$refType, k()(t, ['$refType'])),
-            l = X()(Xi, n),
-            i = l.super_follows_onboarding_draft,
+            t = X()(Xi, a),
+            l = (t.$refType, k()(t, ['$refType'])),
+            r = X()(Ji, n),
+            i = r.super_follows_onboarding_draft,
             o = null == i ? void 0 : i.selected_price,
-            c = qa(l, 'selected_price'),
+            c = qa(r, 'selected_price'),
             u = s.a.createElement(
               y.a.I18NFormatMessage,
               { $i18n: 'geee69de' },
               s.a.createElement(z.b, { link: C }, y.a.c336b06a),
             ),
-            d = Object.keys(r).map(function (e) {
-              return { label: qi({ price: r[e] }), value: e, helpText: Ni[e].join(' ') }
+            d = Object.keys(l).map(function (e) {
+              return { label: Ni({ price: l[e] }), value: e, helpText: Gi[e].join(' ') }
             }),
             p = s.a.createElement(G, {
               disabled: !o,
-              label: Gi,
+              label: Qi,
               path: '/onboarding/pricing_confirm',
               size: 'small',
               type: 'primaryFilled',
@@ -3756,9 +3745,9 @@
           return s.a.createElement(
             T,
             { rightControl: p, title: Wi, withInfoButton: !0 },
-            s.a.createElement(Ue, { headline: Hi, subtext: u }),
-            s.a.createElement(Ui.a, {
-              label: Hi,
+            s.a.createElement(Ue, { headline: qi, subtext: u }),
+            s.a.createElement(Hi.a, {
+              label: qi,
               name: 'selectedPrice',
               onChange: function (e, a) {
                 c(a)
@@ -3768,74 +3757,74 @@
             }),
           )
         },
-        Zi = y.a.e20f6661,
-        $i = y.a.a9ee1ecc,
-        Yi = y.a.j24c37b2,
-        eo = function () {
+        $i = y.a.e20f6661,
+        Yi = y.a.a9ee1ecc,
+        eo = y.a.j24c37b2,
+        ao = function () {
           var e = g()
           return s.a.createElement(
             T,
             { leftControlShouldClose: !0, withInfoButton: !0 },
-            s.a.createElement(Ue, { headline: Zi, illustration: Ie.Thumbsup, subtext: $i }),
-            s.a.createElement(G, { history: e, label: Yi, path: '/settings/monetization' }),
+            s.a.createElement(Ue, { headline: $i, illustration: Ie.Thumbsup, subtext: Yi }),
+            s.a.createElement(G, { history: e, label: eo, path: '/settings/monetization' }),
           )
         },
-        ao = y.a.e2cd700f,
-        no = y.a.d6bfb60c,
-        to = y.a.b9cbb370,
+        no = y.a.e2cd700f,
+        to = y.a.d6bfb60c,
+        lo = y.a.b9cbb370,
         ro = function () {
           return s.a.createElement(
             T,
             { withInfoButton: !0 },
-            s.a.createElement(Ue, { headline: ao, illustration: Ie.Puzzle, subtext: no }),
-            s.a.createElement(G, { label: to, path: '/onboarding/stripe_setup' }),
+            s.a.createElement(Ue, { headline: no, illustration: Ie.Puzzle, subtext: to }),
+            s.a.createElement(G, { label: lo, path: '/onboarding/stripe_setup' }),
           )
         },
-        lo = n('8jkQ'),
-        io = y.a.ja884230,
-        oo = y.a.af1b808d,
-        so = y.a.fe339750,
-        co = y.a.j912510a,
-        uo = void 0 !== ci ? ci : (ci = n('xHLM')),
-        po = function () {
-          var e = yt()(uo),
+        io = n('8jkQ'),
+        oo = y.a.ja884230,
+        so = y.a.af1b808d,
+        co = y.a.fe339750,
+        uo = y.a.j912510a,
+        po = void 0 !== ui ? ui : (ui = n('xHLM')),
+        mo = function () {
+          var e = yt()(po),
             a = N()(e, 2),
             n = a[0],
             t = a[1],
-            r = function () {
+            l = function () {
               n({
                 variables: {},
                 onCompleted: function (e, a) {
                   var n = e.stripe_account_create_onboarding_url
-                  n && lo.b.navigateTo(n)
+                  n && io.b.navigateTo(n)
                 },
               })
             }
           return s.a.createElement(
             T,
             { withInfoButton: !0 },
-            s.a.createElement(Ue, { headline: io, illustration: Ie.CoinStairs, subtext: oo }),
-            s.a.createElement(h.a, { disabled: t, onPress: r, type: 'primaryFilled' }, so),
-            s.a.createElement(h.a, { disabled: t, onPress: r, type: 'primaryOutlined' }, co),
+            s.a.createElement(Ue, { headline: oo, illustration: Ie.CoinStairs, subtext: so }),
+            s.a.createElement(h.a, { disabled: t, onPress: l, type: 'primaryFilled' }, co),
+            s.a.createElement(h.a, { disabled: t, onPress: l, type: 'primaryOutlined' }, uo),
           )
         },
-        mo = void 0 !== ui ? ui : (ui = n('UNVS')),
-        go = void 0 !== di ? di : (di = n('6byF')),
-        fo = void 0 !== pi ? pi : (pi = n('dNhZ')),
-        bo = function (e) {
+        go = void 0 !== di ? di : (di = n('UNVS')),
+        fo = void 0 !== pi ? pi : (pi = n('6byF')),
+        bo = void 0 !== mi ? mi : (mi = n('dNhZ')),
+        yo = function (e) {
           var a,
             n,
             t = e.priceOfferings,
-            r = e.user,
-            l = e.viewer,
-            i = X()(mo, t),
-            o = X()(go, r),
-            c = X()(fo, l),
+            l = e.user,
+            r = e.viewer,
+            i = X()(go, t),
+            o = X()(fo, l),
+            c = X()(bo, r),
             u = null !== (a = o.super_follow_creator_benefits) && void 0 !== a ? a : {},
             p = u.benefits_data,
             m = null != p ? p : [{}]
           return (
-            Wa(c, {
+            Ha(c, {
               creator_intro: u.creator_intro,
               description: N()(m, 1)[0].description,
               selected_price: (null !== (n = o.super_follow_creator_price_metadata) && void 0 !== n ? n : {})
@@ -3847,89 +3836,89 @@
               s.a.createElement(
                 d.c,
                 { exact: !0, path: '/onboarding/perks_intro' },
-                s.a.createElement(Ti, { user: o, viewer: c }),
+                s.a.createElement(Di, { user: o, viewer: c }),
               ),
               s.a.createElement(
                 d.c,
                 { exact: !0, path: '/onboarding/perks_intro_examples' },
-                s.a.createElement(ki, null),
+                s.a.createElement(Fi, null),
               ),
               s.a.createElement(
                 d.c,
                 { exact: !0, path: '/onboarding/perks_description' },
-                s.a.createElement(Ql, { viewer: c }),
+                s.a.createElement(Xr, { viewer: c }),
               ),
               s.a.createElement(
                 d.c,
                 { exact: !0, path: '/onboarding/perks_description_examples' },
-                s.a.createElement(jl, null),
+                s.a.createElement(Ir, null),
               ),
-              s.a.createElement(d.c, { exact: !0, path: '/onboarding/perks_badges' }, s.a.createElement(El, null)),
+              s.a.createElement(d.c, { exact: !0, path: '/onboarding/perks_badges' }, s.a.createElement(Cr, null)),
               s.a.createElement(
                 d.c,
                 { exact: !0, path: '/onboarding/perks_confirm' },
-                s.a.createElement(Ll, { user: o, viewer: c }),
+                s.a.createElement(Pr, { user: o, viewer: c }),
               ),
               s.a.createElement(
                 d.c,
                 { exact: !0, path: '/onboarding/pricing' },
-                s.a.createElement(Ji, { priceOfferings: i, viewer: c }),
+                s.a.createElement(Zi, { priceOfferings: i, viewer: c }),
               ),
               s.a.createElement(
                 d.c,
                 { exact: !0, path: '/onboarding/pricing_confirm' },
-                s.a.createElement(Vi, { priceOfferings: i, viewer: c }),
+                s.a.createElement(Ui, { priceOfferings: i, viewer: c }),
               ),
-              s.a.createElement(d.c, { exact: !0, path: '/onboarding/stripe_setup' }, s.a.createElement(po, null)),
+              s.a.createElement(d.c, { exact: !0, path: '/onboarding/stripe_setup' }, s.a.createElement(mo, null)),
               s.a.createElement(d.c, { exact: !0, path: '/onboarding/stripe_incomplete' }, s.a.createElement(ro, null)),
-              s.a.createElement(d.c, { exact: !0, path: '/onboarding/stripe_completed' }, s.a.createElement(eo, null)),
-              s.a.createElement(d.c, { path: '/onboarding' }, s.a.createElement(hl, { user: o, viewer: c })),
+              s.a.createElement(d.c, { exact: !0, path: '/onboarding/stripe_completed' }, s.a.createElement(ao, null)),
+              s.a.createElement(d.c, { path: '/onboarding' }, s.a.createElement(wr, { user: o, viewer: c })),
             )
           )
         },
-        yo = y.a.aa7e35ed,
-        _o = y.a.f67e69bf,
-        ho = function () {
+        _o = y.a.aa7e35ed,
+        ho = y.a.f67e69bf,
+        wo = function () {
           return s.a.createElement(
             T,
             { leftControlShouldClose: !0, withCenteredLogo: !0, withInfoButton: !0 },
-            s.a.createElement(Ue, { headline: yo, illustration: Ie.Uturn, subtext: _o }),
+            s.a.createElement(Ue, { headline: _o, illustration: Ie.Uturn, subtext: ho }),
           )
         },
-        wo = y.a.d3d6c52c,
-        vo = y.a.c53e9129,
-        So = function () {
+        vo = y.a.d3d6c52c,
+        So = y.a.c53e9129,
+        ko = function () {
           return s.a.createElement(
             T,
             { leftControlShouldClose: !0, withInfoButton: !0 },
-            s.a.createElement(Ue, { headline: wo, illustration: Ie.PaperAirplane, subtext: vo }),
+            s.a.createElement(Ue, { headline: vo, illustration: Ie.PaperAirplane, subtext: So }),
           )
         },
-        ko = y.a.j274e6aa,
-        Fo = y.a.d7f65127,
-        Eo = function () {
+        Fo = y.a.j274e6aa,
+        Eo = y.a.d7f65127,
+        Co = function () {
           return s.a.createElement(
             T,
             { leftControlShouldClose: !0, withCenteredLogo: !0, withInfoButton: !0 },
-            s.a.createElement(Ue, { headline: ko, illustration: Ie.Bench, subtext: Fo }),
+            s.a.createElement(Ue, { headline: Fo, illustration: Ie.Bench, subtext: Eo }),
           )
         },
-        Co = n('n0Rl'),
-        xo = n('q9Zt'),
-        Ko = y.a.hae1c933,
-        Oo = void 0 !== mi ? mi : (mi = n('G8I5')),
-        Lo = Object(Co.b)(Oo, { errorConfig: { context: 'SUPER_FOLLOWS_SETTINGS' } }),
-        Po = L.a.create(function (e) {
+        xo = n('n0Rl'),
+        Ko = n('q9Zt'),
+        Oo = y.a.hae1c933,
+        Lo = void 0 !== gi ? gi : (gi = n('G8I5')),
+        Po = Object(xo.b)(Lo, { errorConfig: { context: 'SUPER_FOLLOWS_SETTINGS' } }),
+        To = L.a.create(function (e) {
           return { error: { marginHorizontal: e.spaces.space32 } }
         })
       a.default = function () {
-        return s.a.createElement(Lo, {
+        return s.a.createElement(Po, {
           render: function (e) {
             var a,
               n,
               t = e.data,
-              r = e.error,
-              l = e.fetchStatus,
+              l = e.error,
+              r = e.fetchStatus,
               i = e.retry,
               o = null == t ? void 0 : t.super_follows_price_offerings,
               c =
@@ -3962,13 +3951,13 @@
                     return '/application'
                 }
               })({
-                isActiveCreator: !r && !(null == u || !u.is_active_creator),
+                isActiveCreator: !l && !(null == u || !u.is_active_creator),
                 superFollowsApplicationStatus:
-                  (!r && (null == c ? void 0 : c.super_follows_application_status)) || 'NotStarted',
-                stripeAccountStatus: (!r && (null == c ? void 0 : c.stripe_account_status)) || 'NotStarted',
+                  (!l && (null == c ? void 0 : c.super_follows_application_status)) || 'NotStarted',
+                stripeAccountStatus: (!l && (null == c ? void 0 : c.stripe_account_status)) || 'NotStarted',
               })
             return s.a.createElement(f.a, {
-              fetchStatus: Object(_.b)(l, null != o && 'User' === (null == c ? void 0 : c.__typename) && null != u),
+              fetchStatus: Object(_.b)(r, null != o && 'User' === (null == c ? void 0 : c.__typename) && null != u),
               onRequestRetry: i,
               render: function () {
                 return null == o || 'User' !== (null == c ? void 0 : c.__typename) || null == u
@@ -3987,25 +3976,25 @@
                             { path: '/application' },
                             s.a.createElement(Ut, { user: c, viewer: u }),
                           ),
-                          s.a.createElement(d.c, { exact: !0, path: '/submitted' }, s.a.createElement(So, null)),
-                          s.a.createElement(d.c, { exact: !0, path: '/waitlisted' }, s.a.createElement(Eo, null)),
-                          s.a.createElement(d.c, { exact: !0, path: '/rejected' }, s.a.createElement(ho, null)),
+                          s.a.createElement(d.c, { exact: !0, path: '/submitted' }, s.a.createElement(ko, null)),
+                          s.a.createElement(d.c, { exact: !0, path: '/waitlisted' }, s.a.createElement(Co, null)),
+                          s.a.createElement(d.c, { exact: !0, path: '/rejected' }, s.a.createElement(wo, null)),
                           s.a.createElement(
                             d.c,
                             { path: '/onboarding' },
-                            s.a.createElement(bo, { priceOfferings: o, user: c, viewer: u }),
+                            s.a.createElement(yo, { priceOfferings: o, user: c, viewer: u }),
                           ),
                           s.a.createElement(
                             d.c,
                             { path: '/management' },
-                            s.a.createElement(sl, { priceOfferings: o, user: c, viewer: u }),
+                            s.a.createElement(cr, { priceOfferings: o, user: c, viewer: u }),
                           ),
                         ),
                       ),
                     )
               },
               renderFailure: function () {
-                return s.a.createElement(xo.a, { onRetry: i, style: Po.error, title: Ko })
+                return s.a.createElement(Ko.a, { onRetry: i, style: To.error, title: Oo })
               },
               retryable: !1,
             })
@@ -4287,7 +4276,7 @@
       'use strict'
       n.r(a)
       var t,
-        r = {
+        l = {
           fragment: {
             argumentDefinitions: [],
             kind: 'Fragment',
@@ -4320,7 +4309,7 @@
             text: null,
           },
         }
-      ;(r.hash = '8e42f33fe72435124b83c69d58590c08'), (a.default = r)
+      ;(l.hash = '8e42f33fe72435124b83c69d58590c08'), (a.default = l)
     },
     'xd+q': function (e, a, n) {
       'use strict'

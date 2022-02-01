@@ -60,8 +60,8 @@
           })
           .withAnalytics({ page: 'home' }),
         L = n('s14A'),
-        S = n('dwig'),
-        P = n('v//M'),
+        P = n('dwig'),
+        S = n('v//M'),
         j = n('0+qk'),
         x = (n('JtPf'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP'), n('2dXj')),
         F = (n('ho0z'), n('G6rE')),
@@ -74,8 +74,8 @@
             return { userAvatarURI: t && t.profile_image_url_https, userName: t && t.name }
           }),
         I = n('3XMw'),
-        M = n.n(I),
-        R = n('N5qz'),
+        R = n.n(I),
+        M = n('N5qz'),
         B = n('MWbm'),
         A = n('cHvH'),
         D = n('5mJL'),
@@ -84,18 +84,18 @@
         H = n('t62R'),
         U = n('/yvb'),
         V = n('rHpw'),
-        N = n('cjZk'),
-        Q = n('3rWK'),
-        J = n('ll3R'),
-        W = n('pNJr'),
+        Q = n('cjZk'),
+        J = n('3rWK'),
+        W = n('ll3R'),
+        N = n('pNJr'),
         q = n('J0mu'),
         G = n('KrGU'),
-        X = M.a.g34f2c63({ verb: '' }),
-        Z = M.a.e349147b,
-        Y = y.a.createElement(N.a, null),
-        $ = y.a.createElement(Q.a, null),
-        ee = y.a.createElement(J.a, null),
-        te = y.a.createElement(W.a, null),
+        X = R.a.g34f2c63({ verb: '' }),
+        Z = R.a.e349147b,
+        Y = y.a.createElement(Q.a, null),
+        $ = y.a.createElement(J.a, null),
+        ee = y.a.createElement(W.a, null),
+        te = y.a.createElement(N.a, null),
         ne = y.a.createElement(q.a, null),
         ae = y.a.createElement(G.a, null),
         re = V.a.create(function (e) {
@@ -140,7 +140,7 @@
           var t = e.userAvatarURI
           return y.a.createElement(A.a, null, function (e) {
             var n = e.windowWidth,
-              a = !R.a.isOneColumnSquishedLayout(n)
+              a = !M.a.isOneColumnSquishedLayout(n)
             return y.a.createElement(
               D.a,
               {
@@ -383,7 +383,7 @@
       var Oe = ke,
         Ee = n('3JQt'),
         Le = n('M2x3')
-      function Se(e) {
+      function Pe(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -404,25 +404,25 @@
           return d()(this, n)
         }
       }
-      var Pe = M.a.j681ac0d,
-        je = M.a.g8220472,
-        xe = M.a.ccdd3766,
-        Fe = M.a.g2657de3,
-        Ce = M.a.d126cb7c,
-        Ie = M.a.c41ecf3c,
-        Me = M.a.d18aa6d4,
-        Re = M.a.c90dcfa2,
-        Be = M.a.bc52b0cd,
-        Ae = M.a.j6382fe9,
-        De = M.a.f89f6785,
-        Ke = M.a.e4acfd11,
-        ze = M.a.f0c7628a,
-        He = M.a.j7d0cac5,
-        Ue = M.a.eeab4419,
-        Ve = M.a.cae804f9,
-        Ne = (function (e) {
+      var Se = R.a.j681ac0d,
+        je = R.a.g8220472,
+        xe = R.a.ccdd3766,
+        Fe = R.a.g2657de3,
+        Ce = R.a.d126cb7c,
+        Ie = R.a.c41ecf3c,
+        Re = R.a.d18aa6d4,
+        Me = R.a.c90dcfa2,
+        Be = R.a.bc52b0cd,
+        Ae = R.a.j6382fe9,
+        De = R.a.f89f6785,
+        Ke = R.a.e4acfd11,
+        ze = R.a.f0c7628a,
+        He = R.a.j7d0cac5,
+        Ue = R.a.eeab4419,
+        Ve = R.a.cae804f9,
+        Qe = (function (e) {
           u()(n, e)
-          var t = Se(n)
+          var t = Pe(n)
           function n() {
             var e
             r()(this, n)
@@ -436,7 +436,7 @@
                 return y.a.createElement(me.a, {
                   DescriptionIcon: r,
                   description: a,
-                  descriptionStyle: Qe.description,
+                  descriptionStyle: Je.description,
                   isFixed: !0,
                   items: e._getActionMenuItems(),
                   onCloseRequested: t,
@@ -447,14 +447,14 @@
                   n = t.subText
                 return [
                   { text: t.text, onClick: e._handleTimelineSwitch, Icon: Ee.a, subText: n },
-                  { link: '/settings/content_preferences', text: Pe, onClick: e._handleContentPreferences, Icon: Le.a },
+                  { link: '/settings/content_preferences', text: Se, onClick: e._handleContentPreferences, Icon: Le.a },
                 ]
               }),
               b()(c()(e), '_getContent', function () {
                 var t = e.props.useLatest
                 return e.context.featureSwitches.isTrue('responsive_web_home_pinned_timelines_latest_enabled')
-                  ? { description: t ? Re : Ie, subText: t ? Ve : He, text: t ? Ue : ze }
-                  : { description: t ? Me : Ie, subText: t ? Ke : De, text: t ? Be : Ae }
+                  ? { description: t ? Me : Ie, subText: t ? Ve : He, text: t ? Ue : ze }
+                  : { description: t ? Re : Ie, subText: t ? Ke : De, text: t ? Be : Ae }
               }),
               b()(c()(e), '_handleTimelineSwitch', function (t) {
                 var n = e.props.onToggle
@@ -489,8 +489,8 @@
             n
           )
         })(y.a.PureComponent)
-      b()(Ne, 'contextType', fe.a)
-      var Qe = V.a.create(function (e) {
+      b()(Qe, 'contextType', fe.a)
+      var Je = V.a.create(function (e) {
           return {
             description: {
               fontSize: e.fontSizes.headline1,
@@ -500,8 +500,8 @@
             },
           }
         }),
-        Je = Ne
-      function We(e, t) {
+        We = Qe
+      function Ne(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var a = Object.getOwnPropertySymbols(e)
@@ -517,12 +517,12 @@
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? We(Object(n), !0).forEach(function (t) {
+            ? Ne(Object(n), !0).forEach(function (t) {
                 b()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : We(Object(n)).forEach(function (t) {
+            : Ne(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
@@ -549,8 +549,8 @@
           return d()(this, n)
         }
       }
-      var Xe = M.a.e4c6d14c,
-        Ze = M.a.bffa2da7,
+      var Xe = R.a.e4c6d14c,
+        Ze = R.a.bffa2da7,
         Ye = (function (e) {
           u()(n, e)
           var t = Ge(n)
@@ -605,7 +605,7 @@
                 key: 'render',
                 value: function () {
                   var e = this.props.useLatest
-                  return y.a.createElement(Je, {
+                  return y.a.createElement(We, {
                     onContentPreferencesSelect: this._handleContentPreferencesSelect,
                     onPress: this._handleSwitchPress,
                     onToggle: this._handleToggle,
@@ -688,7 +688,7 @@
             pt.a,
           ),
           {},
-          b()({}, st.b.EventSummary, Object(ut.a)({ errorContext: 'HOME_TIMELINE_SCREEN' })),
+          b()({}, st.b.EventSummary, Object(ut.a)({})),
         ),
         gt = n('MDbM'),
         yt = n('97Jx'),
@@ -733,8 +733,8 @@
             ],
           }),
         Tt = {
-          home_alt_a: { headerMessage: M.a.d4d5785f, bodyMessage: M.a.f3f4c67b, buttonText: M.a.a399ed2f },
-          home_alt_b: { headerMessage: M.a.d2c66f1f, bodyMessage: M.a.jb52037c, buttonText: M.a.b34cb956 },
+          home_alt_a: { headerMessage: R.a.d4d5785f, bodyMessage: R.a.f3f4c67b, buttonText: R.a.a399ed2f },
+          home_alt_b: { headerMessage: R.a.d2c66f1f, bodyMessage: R.a.jb52037c, buttonText: R.a.b34cb956 },
         },
         kt = function (e) {
           return wt[e]
@@ -749,12 +749,12 @@
         Lt = function (e) {
           return Ot('bodyMessage', e)
         },
-        St = function (e) {
+        Pt = function (e) {
           return Ot('buttonText', e)
         },
-        Pt = M.a.d2c66f1f,
-        jt = M.a.c3fbf1da,
-        xt = M.a.bf17ded9,
+        St = R.a.d2c66f1f,
+        jt = R.a.c3fbf1da,
+        xt = R.a.bf17ded9,
         Ft = function (e) {
           var t = e.onButtonPress,
             n = e.onImpression,
@@ -763,7 +763,7 @@
           return y.a.createElement(
             _t.a,
             vt()(
-              { buttonLink: '/i/connect_people', buttonText: r ? St(a) : xt, header: r ? Et(a) : Pt },
+              { buttonLink: '/i/connect_people', buttonText: r ? Pt(a) : xt, header: r ? Et(a) : St },
               r && { imageVariants: kt(a) },
               { message: r ? Lt(a) : jt, onButtonPress: t, onImpression: n },
             ),
@@ -771,9 +771,9 @@
         },
         Ct = n('EUHl'),
         It = n('7BdX'),
-        Mt = n('fTQJ'),
-        Rt = { count: void 0 },
-        Bt = M.a.f089620b,
+        Rt = n('fTQJ'),
+        Mt = { count: void 0 },
+        Bt = R.a.f089620b,
         At = ot(function (e) {
           var t = e.analytics,
             n = e.module,
@@ -801,9 +801,9 @@
               },
               [r, c],
             )
-          return y.a.createElement(Mt.a, {
+          return y.a.createElement(Rt.a, {
             entryConfiguration: bt,
-            fetchTopOptions: Rt,
+            fetchTopOptions: Mt,
             module: n,
             newTweetsPillMode: Ct.a.URT,
             onEntriesRendered: p,
@@ -822,10 +822,10 @@
         Ht = n('LsPn'),
         Ut = n('RhWx'),
         Vt = n.n(Ut),
-        Nt = (n('z84I'), n('gZV8')),
-        Qt = (n('enFi'), n('Fr3L')),
-        Jt = n('lnL+'),
-        Wt = n('Rp9C'),
+        Qt = (n('z84I'), n('gZV8')),
+        Jt = (n('enFi'), n('Fr3L')),
+        Wt = n('lnL+'),
+        Nt = n('Rp9C'),
         qt = n('jAXQ'),
         Gt = n.n(qt),
         Xt = function (e) {
@@ -833,21 +833,21 @@
             a = t.name,
             r = t.topic_id
           y.a.useEffect(function () {
-            e.analytics.scribe({ element: 'topic', action: 'impression', data: { items: [Wt.a.forTopic(r)] } })
+            e.analytics.scribe({ element: 'topic', action: 'impression', data: { items: [Nt.a.forTopic(r)] } })
           }, [])
           var i = y.a.useCallback(
             function () {
-              e.analytics.scribe({ element: 'topic', action: 'click', data: { items: [Wt.a.forTopic(r)] } })
+              e.analytics.scribe({ element: 'topic', action: 'click', data: { items: [Nt.a.forTopic(r)] } })
             },
             [e.analytics, r],
           )
-          return y.a.createElement(Jt.a, { link: '/i/topics/'.concat(r), onClick: i, text: a })
+          return y.a.createElement(Wt.a, { link: '/i/topics/'.concat(r), onClick: i, text: a })
         },
         Zt = n('Irs7'),
         Yt = n('yUQf'),
         $t = n('DQzJ'),
         en = n('6iuV'),
-        tn = M.a.ffd9cfe6,
+        tn = R.a.ffd9cfe6,
         nn = void 0 !== ht ? ht : (ht = n('yKhE')),
         an = { context: 'TOPIC_PIVOTS_CAROUSEL' },
         rn = function () {
@@ -906,7 +906,7 @@
               function (e) {
                 var t = e.index,
                   n = e.intersectionRatio
-                t === o.current - 1 && n >= Nt.c && c.scribeAction('reached_end')
+                t === o.current - 1 && n >= Qt.c && c.scribeAction('reached_end')
               },
               [c],
             )
@@ -926,7 +926,11 @@
               [c],
             ),
             b = s ? '/'.concat(s.screen_name, '/topics') : '/i/topics/picker',
-            g = y.a.createElement(U.a, { key: 'seeMorePivot', link: b, onClick: h, type: 'brandOutlined' }, tn)
+            g = y.a.createElement(
+              U.a,
+              { borderColor: 'primary', color: 'primary', key: 'seeMorePivot', link: b, onClick: h },
+              tn,
+            )
           return p.length > 0
             ? y.a.createElement(
                 en.a,
@@ -947,7 +951,7 @@
           }
         }),
         on = function () {
-          return y.a.createElement(Qt.a, { errorConfig: an }, y.a.createElement(rn, null))
+          return y.a.createElement(Jt.a, { errorConfig: an }, y.a.createElement(rn, null))
         },
         cn = n('aITJ'),
         sn = n('0yYu'),
@@ -974,9 +978,9 @@
           return d()(this, n)
         }
       }
-      var mn = M.a.i5f7b6b8,
-        fn = M.a.d126cb7c,
-        hn = M.a.ha8209bb,
+      var mn = R.a.i5f7b6b8,
+        fn = R.a.d126cb7c,
+        hn = R.a.ha8209bb,
         bn = { page: 'home' },
         gn = { page: 'home_latest' },
         yn = { section: 'topics_navigator', component: 'suggest_topics_module' },
@@ -1039,7 +1043,7 @@
                 return y.a.createElement(
                   L.a,
                   null,
-                  i.context.featureSwitches.isTrue('home_timeline_topics_navigator_enabled')
+                  i.context.featureSwitches.isTrue('home_timeline_topics_navigator_enabled') && !e
                     ? y.a.createElement(Dt.b, { namespace: yn }, y.a.createElement(on, null))
                     : null,
                   y.a.createElement(At, {
@@ -1068,12 +1072,12 @@
                       )
                     : null,
                   y.a.createElement(
-                    S.a,
+                    P.a,
                     { component: un.a, fab: l },
                     cn.b.isKaiOS()
                       ? y.a.createElement(Ht.a, { leftText: mn, onLeftClick: i._handleSoftLeftClick })
                       : null,
-                    y.a.createElement(P.a, { fetchStatus: t, render: i._renderTimeline }),
+                    y.a.createElement(S.a, { fetchStatus: t, render: i._renderTimeline }),
                   ),
                 )
               }),

@@ -76,7 +76,7 @@
       'use strict'
       r.r(t),
         r.d(t, 'QuoteTweetActivityScreen', function () {
-          return N
+          return U
         })
       r('OZaJ')
       var n = r('VrFO'),
@@ -97,20 +97,20 @@
         v = r.n(m),
         _ = r('es0u'),
         w = (r('WNMA'), r('KqXw'), r('6M1P')),
-        E = r('XOJV'),
-        T = r('rxPX'),
-        b = function (e, t) {
+        T = r('XOJV'),
+        b = r('rxPX'),
+        E = function (e, t) {
           return t.match.params.statusId
         },
         S = function (e, t) {
           return t.match.params.screenName
         },
         C = function (e, t) {
-          return E.a.selectHydrated(e, b(0, t))
+          return T.a.selectHydrated(e, E(0, t))
         },
-        O = Object(T.a)()
+        O = Object(b.a)()
           .propsFromState(function () {
-            return { screenName: S, statusId: b, tweet: C }
+            return { screenName: S, statusId: E, tweet: C }
           })
           .adjustStateProps(function (e) {
             var t = e.screenName,
@@ -149,10 +149,10 @@
         }
       }
       var A = I.a.bd7c039f,
-        H = I.a.e9f1fbcb,
-        D = { vertical: 'tweet_detail_quote' },
-        K = v.a.createElement(P.a, { message: H }),
-        N = (function (e) {
+        D = I.a.e9f1fbcb,
+        H = { vertical: 'tweet_detail_quote' },
+        K = v.a.createElement(P.a, { message: D }),
+        U = (function (e) {
           u()(r, e)
           var t = F(r)
           function r() {
@@ -165,7 +165,7 @@
               g()(l()(e), '_renderQuoteTweetTimeline', function () {
                 return v.a.createElement(j.a, {
                   emptyStateComponent: K,
-                  fetchOptions: D,
+                  fetchOptions: H,
                   query: e._quoteTweetSearchQueryString,
                   querySrc: M.a.TweetDetailQuoteTweet,
                   searchMode: x.c.Top,
@@ -199,7 +199,7 @@
             r
           )
         })(v.a.Component)
-      t.default = Object(q.a)(O(N))
+      t.default = Object(q.a)(O(U))
     },
     h2mu: function (e, t, r) {
       'use strict'
@@ -222,9 +222,9 @@
         v = (r('2G9S'), r('ERkP')),
         _ = r.n(v),
         w = (r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('ezF+')),
-        E = r('QIgh'),
-        T = r('8UdT'),
-        b = r('iu0J'),
+        T = r('QIgh'),
+        b = r('8UdT'),
+        E = r('iu0J'),
         S = r('zgaL'),
         C = r('PH3B'),
         O = (r('JtPf'), r('7x/C'), r('87if'), r('lTEL'), r('kYxP'), r('XBtf')),
@@ -297,7 +297,7 @@
           return q(
             q(
               {},
-              Object(E.a)({
+              Object(T.a)({
                 tweetDismissable: !0,
                 displayBlocked: !0,
                 shouldStoreTypeaheadItem: t,
@@ -309,25 +309,25 @@
                 r = e.shouldStoreTypeaheadItem
               return (
                 (t = {}),
-                m()(t, T.b.News, C.a),
-                m()(t, T.b.EventSummary, Object(b.a)({ errorContext: 'SEARCH_SCREEN', shouldStoreTypeaheadItem: r })),
-                m()(t, T.b.RelatedSearch, k),
-                m()(t, T.b.FollowSearch, w.e(w.a())),
-                m()(t, T.b.FollowSearchAction, w.e(w.a())),
-                m()(t, T.b.Place, w.e(w.a())),
-                m()(t, T.b.MomentAnnotation, S.a),
-                m()(t, T.b.Spelling, x),
+                m()(t, b.b.News, C.a),
+                m()(t, b.b.EventSummary, Object(E.a)({ shouldStoreTypeaheadItem: r })),
+                m()(t, b.b.RelatedSearch, k),
+                m()(t, b.b.FollowSearch, w.e(w.a())),
+                m()(t, b.b.FollowSearchAction, w.e(w.a())),
+                m()(t, b.b.Place, w.e(w.a())),
+                m()(t, b.b.MomentAnnotation, S.a),
+                m()(t, b.b.Spelling, x),
                 t
               )
             })({ shouldStoreTypeaheadItem: t }),
           )
         },
         A = r('3X8/'),
-        H = r('oQhu'),
-        D = r('EUHl'),
+        D = r('oQhu'),
+        H = r('EUHl'),
         K = r('7BdX'),
-        N = r('fTQJ'),
-        U = r('i6OR'),
+        U = r('fTQJ'),
+        N = r('i6OR'),
         X = r('X04g'),
         z = r('t62R'),
         Q = r('FIs5'),
@@ -402,8 +402,8 @@
               m()(
                 s()(e),
                 '_getMemoizedModule',
-                Object(H.a)(function (e, t, r, n, a, c) {
-                  return Object(U.b)({
+                Object(D.a)(function (e, t, r, n, a, c) {
+                  return Object(N.b)({
                     query: e,
                     searchMode: r,
                     querySource: t,
@@ -416,7 +416,7 @@
               m()(
                 s()(e),
                 '_getMemoizedEntryConfiguration',
-                Object(H.a)(function (t) {
+                Object(D.a)(function (t) {
                   return F({ shouldStoreTypeaheadItem: e._shouldStoreTypeaheadItem, withUserPresence: t })
                 }),
               ),
@@ -428,12 +428,12 @@
               {
                 key: 'render',
                 value: function () {
-                  return _.a.createElement(N.a, {
+                  return _.a.createElement(U.a, {
                     apiErrorHandlerMap: A.a,
                     entryConfiguration: this._getMemoizedEntryConfiguration(this.props.withUserPresence),
                     fetchOptions: this.props.fetchOptions,
                     module: this._getModule(),
-                    newTweetsPillMode: D.a.CLIENT,
+                    newTweetsPillMode: H.a.CLIENT,
                     prerollDisplayLocation: K.c.SEARCH_TWEETS,
                     renderEmptyState: this._renderEmptyTimeline,
                     title: Y,

@@ -13576,20 +13576,19 @@
       O.a.register(
         y()({}, P, function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : k,
-            t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
+            t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
             case T.REQUEST:
               return C(C({}, e), {}, { fetchStatus: S.a.LOADING })
             case T.FAILURE:
               return C(C({}, e), {}, { fetchStatus: S.a.FAILED })
             case T.SUCCESS:
-              return C(C({}, e), {}, { searchSettings: t.payload, fetchStatus: S.a.LOADED })
+              return C(C({}, e), {}, { searchSettings: t.payload || k.searchSettings, fetchStatus: S.a.LOADED })
             case R.REQUEST:
-              return C(
-                C({}, e),
-                {},
-                { searchSettings: C(C({}, e.searchSettings), {}, y()({}, t.meta.settingName, t.meta.settingValue)) },
-              )
+              var n = t.meta || {},
+                r = n.settingName,
+                a = n.settingValue
+              return C(C({}, e), {}, { searchSettings: C(C({}, e.searchSettings), {}, y()({}, r, a)) })
             default:
               return e
           }
@@ -13613,11 +13612,10 @@
         },
         F = function (e, t) {
           return function (n, r, a) {
-            var o,
-              c = a.api,
-              i = r(),
-              s = C(C({}, L(i)), {}, ((o = {}), y()(o, e, t), y()(o, 'userId', _.q(i)), o))
-            return v.c(n, { params: s, request: c.SafeSearch.set })({
+            var o = a.api,
+              c = r(),
+              i = C(C({}, L(c)), {}, y()({ userId: _.q(c) }, e, t))
+            return v.c(n, { params: i, request: o.SafeSearch.set })({
               actionTypes: R,
               context: 'ACTION_UPDATE_SEARCH_SETTINGS',
               meta: { settingName: e, settingValue: t },
@@ -13649,8 +13647,9 @@
         G = n.n(V),
         W = n('cCdp'),
         Y = 'searchSettings-hideSensitiveContent',
-        X = 'searchSettings-hideMutedOrBlockedAccounts'
-      function z(e, t) {
+        X = 'searchSettings-hideMutedOrBlockedAccounts',
+        z = (n('yH/f'), Object.freeze({ Filtering: 'optInFiltering', Blocking: 'optInBlocking' }))
+      function q(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -13662,22 +13661,22 @@
         }
         return n
       }
-      function q(e) {
+      function Z(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? z(Object(n), !0).forEach(function (t) {
+            ? q(Object(n), !0).forEach(function (t) {
                 y()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : z(Object(n)).forEach(function (t) {
+            : q(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      function Z(e) {
+      function Q(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -13698,18 +13697,17 @@
           return d()(this, n)
         }
       }
-      var Q = G.a.h1ef00db,
-        J = G.a.a90af44e,
-        $ = G.a.a25e2ec5,
-        ee = G.a.b827a057,
-        te = G.a.b27c9851,
-        ne = G.a.c81b9707,
-        re = G.a.if05bca6,
-        ae = 'https://support.twitter.com/articles/132700',
-        oe = 'optInFiltering',
+      var J = G.a.h1ef00db,
+        $ = G.a.a90af44e,
+        ee = G.a.a25e2ec5,
+        te = G.a.b827a057,
+        ne = G.a.b27c9851,
+        re = G.a.c81b9707,
+        ae = G.a.if05bca6,
+        oe = 'https://support.twitter.com/articles/132700',
         ce = (function (e) {
           u()(n, e)
-          var t = Z(n)
+          var t = Q(n)
           function n() {
             var e
             a()(this, n)
@@ -13724,15 +13722,15 @@
                   i = r.updateSettings
                 e._scribeValueChanged(t, n),
                   i(t, n).then(function () {
-                    o(), a({ text: ee })
-                  }, c(q(q({}, Object(U.a)(te)), {}, { showToast: !0 })))
+                    o(), a({ text: te })
+                  }, c(Z(Z({}, Object(U.a)(ne)), {}, { showToast: !0 })))
               }),
               y()(s()(e), '_scribeValueChanged', function (t, n) {
                 var r = e.props,
                   a = r.analytics,
                   o = r.lastSearchQuery,
                   c = o ? { search_details: { query: o } } : {},
-                  i = t === oe ? 'filtering' : 'blocking',
+                  i = t === z.Filtering ? 'filtering' : 'blocking',
                   s = n ? 'on' : 'off'
                 a.scribe({ component: 'safe_search_settings', element: i, action: s, data: c })
               }),
@@ -13743,18 +13741,18 @@
                   null,
                   E.a.createElement(W.a, {
                     checked: t.optInFiltering,
-                    helpText: ne,
-                    label: J,
-                    learnMoreLink: ae,
+                    helpText: re,
+                    label: $,
+                    learnMoreLink: oe,
                     name: 'optInFiltering',
                     onChange: e._handleSettingChanged,
                     testID: Y,
                   }),
                   E.a.createElement(W.a, {
                     checked: t.optInBlocking,
-                    helpText: re,
-                    label: $,
-                    learnMoreLink: ae,
+                    helpText: ae,
+                    label: ee,
+                    learnMoreLink: oe,
                     name: 'optInBlocking',
                     onChange: e._handleSettingChanged,
                     testID: X,
@@ -13785,7 +13783,7 @@
                     n = e.history
                   return E.a.createElement(
                     K.b,
-                    { history: n, title: Q },
+                    { history: n, title: J },
                     E.a.createElement(B.a, {
                       fetchStatus: t,
                       onRequestRetry: this._handleFetchSettings,

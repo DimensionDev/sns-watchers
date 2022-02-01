@@ -284,7 +284,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'ExploreScreen', function () {
-          return le
+          return ce
         })
       n('OZaJ')
       var r,
@@ -309,15 +309,15 @@
         E = n('BxsD'),
         P = n('oQhu'),
         j = n('wrlS'),
-        C = n('rxPX'),
-        T = function (e, t) {
+        T = n('rxPX'),
+        C = function (e, t) {
           var n, r
           return (
             (null === (n = t.match) || void 0 === n || null === (r = n.params) || void 0 === r ? void 0 : r.tabId) ||
             void 0
           )
         },
-        x = Object(C.a)()
+        x = Object(T.a)()
           .propsFromState(function () {
             return {
               initialTabModule:
@@ -329,7 +329,7 @@
                 })),
                 Object(w.createSelector)(
                   j.d,
-                  T,
+                  C,
                   function (t) {
                     return e(Object(j.d)(t)).selectPageConfiguration(t)
                   },
@@ -338,7 +338,7 @@
                     return t(e, r ? (null == r || null === (a = r.tabs) || void 0 === a ? void 0 : a.initialTabId) : n)
                   },
                 )),
-              selectedTabId: T,
+              selectedTabId: C,
             }
             var e, t
           })
@@ -377,31 +377,30 @@
         }
         return e
       }
-      var I = 'EXPLORE_SCREEN',
-        X = M(
+      var I = M(
           M({}, S.b),
           {},
           ((r = {}),
-          m()(r, k.b.EventSummary, Object(B.a)({ errorContext: I })),
+          m()(r, k.b.EventSummary, Object(B.a)({})),
           m()(r, k.b.News, L.a),
           m()(r, k.b.ScoreEventSummary, R.a),
-          m()(r, k.b.Trend, Object(D.a)({ withThirdPartyCards: !0, errorContext: I })),
+          m()(r, k.b.Trend, Object(D.a)({ withThirdPartyCards: !0, errorContext: 'EXPLORE_SCREEN' })),
           r),
         ),
-        K = n('0+qk'),
-        F = n('3XMw'),
-        J = n.n(F),
-        N = n('VTxf'),
-        A = n('rJoH'),
-        W = n('7BdX'),
-        Y = n('7nmT'),
-        q = n.n(Y),
-        z = n('UZjl'),
-        Z = n('+Bsv'),
-        Q = n('LsPn'),
-        U = n('aITJ'),
-        V = n('v6aA')
-      function G(e) {
+        X = n('0+qk'),
+        K = n('3XMw'),
+        F = n.n(K),
+        J = n('VTxf'),
+        N = n('rJoH'),
+        A = n('7BdX'),
+        W = n('7nmT'),
+        Y = n.n(W),
+        q = n('UZjl'),
+        z = n('+Bsv'),
+        Z = n('LsPn'),
+        Q = n('aITJ'),
+        U = n('v6aA')
+      function V(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -422,22 +421,22 @@
           return p()(this, n)
         }
       }
-      var $ = J.a.fcf3e54b,
-        ee = J.a.ead349a7,
-        te = J.a.a19ce06f,
-        ne = J.a.a9ae1e78,
+      var G = F.a.fcf3e54b,
+        $ = F.a.ead349a7,
+        ee = F.a.a19ce06f,
+        te = F.a.a9ae1e78,
+        ne = function () {
+          return O.a.createElement(J.a, null)
+        },
         re = function () {
-          return O.a.createElement(N.a, null)
+          return O.a.createElement(_.a, { message: ee })
         },
-        ae = function () {
-          return O.a.createElement(_.a, { message: te })
-        },
-        ie = 600,
-        oe = 315,
-        ce = 'https://abs.twimg.com/a/1602199131/img/moments/moments-card.jpg',
-        le = (function (e) {
+        ae = 600,
+        ie = 315,
+        oe = 'https://abs.twimg.com/a/1602199131/img/moments/moments-card.jpg',
+        ce = (function (e) {
           f()(n, e)
-          var t = G(n)
+          var t = V(n)
           function n() {
             var e
             i()(this, n)
@@ -457,7 +456,7 @@
                 e._searchBoxRef = t
               }),
               m()(u()(e), '_handleSoftLeftClick', function () {
-                var t = q.a.findDOMNode(e._searchBoxRef)
+                var t = Y.a.findDOMNode(e._searchBoxRef)
                 t && t instanceof window.HTMLElement && t.querySelector('input').focus()
               }),
               e
@@ -474,49 +473,49 @@
                     r = e.initialTabModule,
                     a = e.location,
                     i = e.selectedTabId,
-                    o = O.a.createElement(K.a, { history: n }),
+                    o = O.a.createElement(X.a, { history: n }),
                     c = this.context.featureSwitches.isTrue('responsive_web_trends_setting_new_endpoints')
                       ? '/settings/explore'
                       : '/settings/trends',
-                    l = O.a.createElement(Z.a, { onPress: this._handleSettingsClick, pullRight: !0, to: c }),
+                    l = O.a.createElement(z.a, { onPress: this._handleSettingsClick, pullRight: !0, to: c }),
                     u = a.state && a.state.searchFocused,
                     s = O.a.createElement(v.a, { withSearchBox: !1, withTrends: !1 })
                   return O.a.createElement(
                     O.a.Fragment,
                     null,
-                    O.a.createElement(A.a, {
+                    O.a.createElement(N.a, {
                       canonical: 'https://twitter.com/explore',
-                      description: ee,
-                      image: ce,
-                      imageH: oe,
-                      imageW: ie,
-                      title: $,
+                      description: $,
+                      image: oe,
+                      imageH: ie,
+                      imageW: ae,
+                      title: G,
                       type: 'article',
                     }),
-                    O.a.createElement(z.a, {
+                    O.a.createElement(q.a, {
                       behavioralEventViewType: 'guide',
-                      entryConfiguration: X,
+                      entryConfiguration: I,
                       fab: o,
                       getTabLink: this._getTabLink,
                       history: n,
                       initialPageNamespace: t.contextualScribeNamespace,
                       module: r,
                       onBackClick: u ? this._handleBackClick : void 0,
-                      prerollDisplayLocation: W.c.OTHER,
-                      renderEmptyState: re,
-                      renderUnavailable: ae,
+                      prerollDisplayLocation: A.c.OTHER,
+                      renderEmptyState: ne,
+                      renderUnavailable: re,
                       rightControl: l,
                       searchBoxRef: this._setSearchBoxRef,
                       selectedTabId: i,
                       sidebarContent: s,
                       timelinePrefix: E.b,
-                      title: $,
+                      title: G,
                       withBottomLoginSignupBar: !0,
                       withDeferredView: !0,
                       withSearchBox: !0,
                     }),
-                    U.b.isKaiOS()
-                      ? O.a.createElement(Q.a, { leftText: ne, onLeftClick: this._handleSoftLeftClick })
+                    Q.b.isKaiOS()
+                      ? O.a.createElement(Z.a, { leftText: te, onLeftClick: this._handleSoftLeftClick })
                       : null,
                   )
                 },
@@ -525,8 +524,8 @@
             n
           )
         })(O.a.Component)
-      m()(le, 'contextType', V.a)
-      t.default = x(le)
+      m()(ce, 'contextType', U.a)
+      t.default = x(ce)
     },
     rA3t: function (e, t, n) {
       'use strict'
@@ -570,8 +569,8 @@
         E = n('fTQJ'),
         P = n('+Bsv'),
         j = n('VS6U'),
-        C = n('LsPn'),
-        T = n('aITJ'),
+        T = n('LsPn'),
+        C = n('aITJ'),
         x = n('Irs7')
       function _(e, t) {
         var n = Object.keys(e)
@@ -671,7 +670,7 @@
                 withSearchBox: !0,
               }),
             ),
-            T.b.isKaiOS() ? o.a.createElement(C.a, { leftText: L, onLeftClick: v }) : null,
+            C.b.isKaiOS() ? o.a.createElement(T.a, { leftText: L, onLeftClick: v }) : null,
           )
         }
       t.default = Object(x.a)(I)

@@ -455,26 +455,26 @@
         }
         return e
       }
-      var N = function (e, t) {
+      var F = function (e, t) {
           return t.match.params.eventId
         },
-        F = function (e) {
+        N = function (e) {
           return M({}, e ? { loggedInUserAvatarURI: e.profile_image_url_https, loggedInUserName: e.name } : null)
         },
         H = Object(w.createSelector)(
-          N,
+          F,
           function (e, t) {
-            return D.a.select(e, N(0, t))
+            return D.a.select(e, F(0, t))
           },
           function (e, t) {
-            var n = ((D.a.selectErrors(e) || {})[N(0, t)] || {}).errors,
+            var n = ((D.a.selectErrors(e) || {})[F(0, t)] || {}).errors,
               r = (void 0 === n ? [] : n).find(function (e) {
                 return e.code === g.a.BlockedUserError
               })
             return r && r.message && r.message.replace('@', '')
           },
           function (e, t) {
-            return D.a.selectFetchStatus(e, N(0, t))
+            return D.a.selectFetchStatus(e, F(0, t))
           },
           function (e, t) {
             var n
@@ -486,7 +486,7 @@
           },
           R.e.selectLoggedInUser,
           function (e, t) {
-            return D.a.selectIsTOO(e, N(0, t))
+            return D.a.selectIsTOO(e, F(0, t))
           },
           j.d,
           function (e, t, n, r, a, i, o, c, l) {
@@ -507,7 +507,7 @@
                   isTOO: !1,
                   isUserSuspended: !1,
                 },
-                F(r),
+                N(r),
               )
             })(e, n, r, o)
             if (!t) return s
@@ -536,7 +536,7 @@
               _ = t.liveEventDetails.sensitive,
               O = S({ isBlockedBy: b, isBlocking: y, isSensitive: _, screenName: g })
             return M(
-              M(M({}, s), F(o)),
+              M(M({}, s), N(o)),
               {},
               {
                 liveEventDetails: m,
@@ -1595,8 +1595,8 @@
         L = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('ddV6')),
         B = n.n(L),
         M = n('3zvM'),
-        N = n('lMB6')
-      function F(e, t) {
+        F = n('lMB6')
+      function N(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -1619,12 +1619,12 @@
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {}
                 t % 2
-                  ? F(Object(n), !0).forEach(function (t) {
+                  ? N(Object(n), !0).forEach(function (t) {
                       v()(e, t, n[t])
                     })
                   : Object.getOwnPropertyDescriptors
                   ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-                  : F(Object(n)).forEach(function (t) {
+                  : N(Object(n)).forEach(function (t) {
                       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
                     })
               }
@@ -1632,7 +1632,7 @@
             })({ ids: [B()(e, 1)[0]] }, t)
           },
         }),
-        U = N.a.register(H),
+        U = F.a.register(H),
         V = n('kGix'),
         z = n('Hw0q'),
         W = n('G6rE'),
@@ -2737,7 +2737,7 @@
                       }
                       switch (e) {
                         case 'dm':
-                          return r(), void n.history.push(L(L({}, N(t)), {}, { pathname: '/messages/compose' }))
+                          return r(), void n.history.push(L(L({}, F(t)), {}, { pathname: '/messages/compose' }))
                         case 'copy':
                           return (
                             E.a.setString(Object(I.a)(t.url, n.sessionToken)),
@@ -2749,7 +2749,7 @@
                             r(),
                             void n.history.push(
                               L(
-                                L({ pathname: '/compose/tweet' }, N(t)),
+                                L({ pathname: '/compose/tweet' }, F(t)),
                                 {},
                                 { state: { positionCursorAtBeginning: !0 } },
                               ),
@@ -2777,13 +2777,13 @@
         }
       }
       var M = { copyLinkSuccessMessage: d.a.f88553c8, shareTextPrefixFormatter: d.a.gb5851d7 }
-      function N(e) {
+      function F(e) {
         var t = e.url,
           n = e.text
         return { query: { text: n ? M.shareTextPrefixFormatter({ prefix: n, url: t }) : t } }
       }
-      var F = n('T0aG'),
-        H = n.n(F),
+      var N = n('T0aG'),
+        H = n.n(N),
         U = n('mN6z')
       var V = n('mjJ+'),
         z = n('rHpw')
@@ -3076,8 +3076,8 @@
         L = n('hiGS'),
         B = n('I/9y'),
         M = n('TW8A'),
-        N = n('xrkw'),
-        F = n('zIWA')
+        F = n('xrkw'),
+        N = n('zIWA')
       function H(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
@@ -3166,9 +3166,9 @@
                         link: '/i/moments/'.concat(r, '/analytics'),
                         onClick: e._handleNavigateAnalytics,
                         text: q,
-                        Icon: N.a,
+                        Icon: F.a,
                       }))
-                    : n && o.push({ onClick: e._handleReport, text: W, Icon: F.a }),
+                    : n && o.push({ onClick: e._handleReport, text: W, Icon: N.a }),
                   o
                 )
               }),
@@ -3527,13 +3527,13 @@
           return e
         })({}, Object(A.f)({ namespace: 'commerceItems' })),
         M = T.a.register(B),
-        N = n('rxPX'),
-        F = function (e, t) {
+        F = n('rxPX'),
+        N = function (e, t) {
           var n = t.commerceItemId
           return n ? M.select(e, n) : void 0
         },
-        H = Object(N.a)().propsFromState(function () {
-          return { commerceItem: F }
+        H = Object(F.a)().propsFromState(function () {
+          return { commerceItem: N }
         })(function (e) {
           var t = e.commerceItem,
             n = e.onClick
@@ -3554,7 +3554,7 @@
             })
             .filter(Boolean)
         },
-        V = Object(N.a)().propsFromState(function (e) {
+        V = Object(F.a)().propsFromState(function (e) {
           return { commerceItems: U }
         }),
         z = n('MWbm'),
@@ -3644,7 +3644,7 @@
         ae = n('v//M'),
         ie = n('0+qk'),
         oe = (n('2G9S'), n('hBvt'), n('uFXj'), n('ho0z'), n('G6rE')),
-        ce = Object(N.a)()
+        ce = Object(F.a)()
           .propsFromState(function () {
             return { loggedInUser: oe.e.selectLoggedInUser }
           })
@@ -3981,10 +3981,10 @@
         Le = n('hqKg'),
         Be = n('H9MA'),
         Me = n('oEGd'),
-        Ne = Object(Le.createSelector)(Be.c, function (e) {
+        Fe = Object(Le.createSelector)(Be.c, function (e) {
           return { dataSaverMode: e }
         }),
-        Fe = Object(Me.c)(Ne),
+        Ne = Object(Me.c)(Fe),
         He = n('prG5'),
         Ue = n('A91F')
       function Ve(e, t) {
@@ -4120,7 +4120,7 @@
         qe = J.a.create(function (e) {
           return { fallback: { backgroundColor: e.colors.gray50 } }
         }),
-        Xe = Fe(Ye),
+        Xe = Ne(Ye),
         Ke = n('jV+4'),
         Je = n('9Xij'),
         Qe = n('vCAy')
@@ -4488,8 +4488,8 @@
         Lt = _.a.createContext({ dockRequested: !1, closeRequested: !1 }),
         Bt = n('ddV6'),
         Mt = n.n(Bt),
-        Nt = n('MXDK')
-      function Ft(e, t) {
+        Ft = n('MXDK')
+      function Nt(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -4505,12 +4505,12 @@
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Ft(Object(n), !0).forEach(function (t) {
+            ? Nt(Object(n), !0).forEach(function (t) {
                 y()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : Ft(Object(n)).forEach(function (t) {
+            : Nt(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
@@ -4553,7 +4553,7 @@
                   if (!r && e) d && d()
                   else if (!r && null != n && n.current) {
                     var a = n.current.offsetTop
-                    Nt.d({ featureSwitches: t, top: a })
+                    Ft.d({ featureSwitches: t, top: a })
                   }
                 },
                 [e, r],
@@ -5411,8 +5411,8 @@
             dockedContainerBackground: { backgroundColor: e.colors.cellBackground },
           }
         }),
-        Nn = Object(At.c)({ element: 'image' })(Rt(Bn))
-      function Fn(e) {
+        Fn = Object(At.c)({ element: 'image' })(Rt(Bn))
+      function Nn(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -5436,7 +5436,7 @@
       P.a.f2382014, P.a.g66c8347
       var Hn = (function (e) {
         m()(n, e)
-        var t = Fn(n)
+        var t = Nn(n)
         function n() {
           var e
           o()(this, n)
@@ -5534,7 +5534,7 @@
                   p = e.slate,
                   f = d.type,
                   h = this._getDockingEnabled(f)
-                return _.a.createElement(Nn, {
+                return _.a.createElement(Fn, {
                   carousel: n,
                   carouselItemInfo: d,
                   disableFullscreenVideo: r,
@@ -5781,10 +5781,7 @@
                 return tr(
                   tr({}, Object(Kn.a)({ withTweetActionsDisabled: n })),
                   {},
-                  ((t = {}),
-                  y()(t, Jn.b.MomentAnnotation, $n.a),
-                  y()(t, Jn.b.EventSummary, Object(Qn.a)({ errorContext: 'LIVE_EVENT_TIMELINE' })),
-                  t),
+                  ((t = {}), y()(t, Jn.b.MomentAnnotation, $n.a), y()(t, Jn.b.EventSummary, Object(Qn.a)({})), t),
                 )
               })({ withTweetActionsDisabled: i })),
               (r._timelinePreprocessor = (function (e) {
@@ -6456,7 +6453,7 @@
           return M
         }),
         n.d(t, 'q', function () {
-          return N
+          return F
         }),
         n.d(t, 'n', function () {
           return H
@@ -6778,18 +6775,18 @@
         },
         M = function (e, t) {
           if (e) {
-            var n = t && F(e, t),
-              r = N(e)
+            var n = t && N(e, t),
+              r = F(e)
             return n || e[r]
           }
         },
-        N = function (e) {
+        F = function (e) {
           var t = Object(m.a)(e, function (e) {
             return e.selected
           })
           return -1 === t ? 0 : t
         },
-        F = function (e, t) {
+        N = function (e, t) {
           return (
             e &&
             e.find(function (e) {

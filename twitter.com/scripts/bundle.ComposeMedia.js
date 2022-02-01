@@ -2628,7 +2628,7 @@
             return (function (e) {
               var t = Object(h.e)(e),
                 n = (t && Object(p.a)(t)) || []
-              return Object(f.g)(n)
+              return Object(f.i)(n)
             })(e)
               .filter(function (e) {
                 return e && e.rounded_score

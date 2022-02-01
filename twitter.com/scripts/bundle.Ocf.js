@@ -16679,20 +16679,21 @@
                 var e = window.google,
                   t = o.props,
                   n = t.buttonState,
-                  r = t.displayType,
-                  a = t.userLanguage,
-                  i = n === E.a.SignUp ? T.d.SignUp : T.d.SignIn,
-                  s = r !== T.e.Prompt && o._buttonInitialized
+                  r = t.customWidth,
+                  a = t.displayType,
+                  i = t.userLanguage,
+                  s = n === E.a.SignUp ? T.d.SignUp : T.d.SignIn,
+                  c = a !== T.e.Prompt && o._buttonInitialized
                 e &&
-                  s &&
+                  c &&
                   e.accounts.id.renderButton(o._viewRef.current, {
                     theme: 'outline',
                     size: 'large',
                     shape: 'circle',
-                    locale: a,
+                    locale: i,
                     logo_alignment: 'center',
-                    text: i,
-                    width: T.b,
+                    text: s,
+                    width: r || T.b,
                   })
               }),
               m()(c()(o), '_renderGoogleOneTapPrompt', function () {

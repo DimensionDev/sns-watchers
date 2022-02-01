@@ -31,8 +31,8 @@
         I = n('ZUOq'),
         b = n('+Kfv'),
         D = n('woHV'),
-        g = n('3XMw'),
-        R = n.n(g),
+        R = n('3XMw'),
+        g = n.n(R),
         C = n('VwDm'),
         E = n('WPfJ'),
         T = n('N5qz'),
@@ -68,7 +68,7 @@
           return p()(this, n)
         }
       }
-      var H = R.a.f065ba8c,
+      var H = g.a.f065ba8c,
         M = function (e) {
           return T.a.isTwoColumnNormalLayout(e)
             ? {
@@ -194,8 +194,8 @@
                   I = t.renderHeader,
                   b = t.renderNoResultsState,
                   D = t.renderUserDecoration,
-                  g = t.selectedItems,
-                  R = t.shouldDeferPrefetch,
+                  R = t.selectedItems,
+                  g = t.shouldDeferPrefetch,
                   C = t.source,
                   E = t.withFixedPositioning,
                   T = t.withSectionDivider,
@@ -250,8 +250,8 @@
                       renderHeader: I,
                       renderNoResultsState: b,
                       renderUserDecoration: D,
-                      selectedItems: g,
-                      shouldDeferPrefetch: R,
+                      selectedItems: R,
+                      shouldDeferPrefetch: g,
                       source: C,
                       style: F,
                       withSectionDivider: T,
@@ -476,8 +476,8 @@
         I = n.n(w),
         b = (n('7xRU'), n('LW0h'), n('z84I'), n('ERkP')),
         D = n.n(b),
-        g = n('RhWx'),
-        R = n.n(g),
+        R = n('RhWx'),
+        g = n.n(R),
         C = (n('vrRf'), n('M+/F'), n('tQbP'), n('2G9S'), n('hqKg')),
         E = n('oEoC'),
         T = n('o52z'),
@@ -531,7 +531,7 @@
               n = e.tokens,
               o = s()(e, ['rounded_score', 'tokens']),
               r = o.topic,
-              a = o.topic_type || M.b.Topic
+              a = M.b.Topic
             return { id: ''.concat(a, '_').concat(r.replace(' ', '_')), type: a, tokens: n, rounded_score: t, data: o }
           })
         },
@@ -541,7 +541,7 @@
               n = e.rounded_score,
               o = e.tokens,
               r = s()(e, ['rounded_score', 'tokens']),
-              a = r.topic_type || M.b.Event,
+              a = M.b.Event,
               i = null == r || null === (t = r.url) || void 0 === t ? void 0 : t.match(q.A.id)
             return { id: (null == i ? void 0 : i[0]) || '', type: a, tokens: o, rounded_score: n, data: r }
           })
@@ -600,7 +600,7 @@
                   orderedSections: r.ordered_sections,
                   events: J(r.events),
                   topics: K(r.topics),
-                  users: Object(M.g)(a),
+                  users: Object(M.i)(a),
                   timestamp: Date.now(),
                 }
               return Object(A.a)(e, function (e) {
@@ -673,7 +673,7 @@
               function (e, t, n, o) {
                 if (!e || !t || t.indexOf(M.a.Users) < 0) return Object(T.a)()
                 var r = Object(G.f)(n, e)
-                return Object(M.g)(
+                return Object(M.i)(
                   r
                     .map(function (e) {
                       return o[e]
@@ -709,7 +709,7 @@
                 d = Object(E.a)(c, u).slice(0, s || 10),
                 l = n === O.a.LOADED,
                 p = a && a({ query: r, hasResults: !!e.length, isLoaded: l }),
-                f = p ? [].concat(R()(d), [p]) : d
+                f = p ? [].concat(g()(d), [p]) : d
               return f.length ? f : Object(T.a)()
             },
           )

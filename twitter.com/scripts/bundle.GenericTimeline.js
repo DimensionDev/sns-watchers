@@ -24,7 +24,7 @@
       'use strict'
       r.r(t),
         r.d(t, 'GenericTimelineScreen', function () {
-          return S
+          return K
         })
       var n,
         i = r('ERkP'),
@@ -70,27 +70,27 @@
       }
       var v =
           ((n = {}),
-          l()(n, f.b.EventSummary, Object(p.a)({ errorContext: 'GENERIC_TIMELINE_SCREEN' })),
+          l()(n, f.b.EventSummary, Object(p.a)({})),
           l()(n, f.b.Label, O),
           l()(n, f.b.News, g.a),
           l()(n, f.b.TwitterList, Object(y.a)({})),
           n),
         w = m(m({}, Object(s.a)({ withMuteConversation: !0 })), v),
         j = r('3XMw'),
-        E = r.n(j),
-        h = r('yoO3'),
+        h = r.n(j),
+        E = r('yoO3'),
         C = r('5FtR'),
         I = r('fTQJ'),
         T = r('VS6U'),
-        L = r('7JQg'),
-        D = E.a.a6d5b010,
-        S = function (e) {
+        D = r('7JQg'),
+        L = h.a.a6d5b010,
+        K = function (e) {
           var t = e.history,
             r = (function (e) {
               return e.state && e.state.urtUrl
             })(e.location),
             n = null == r ? void 0 : r.urtEndpointOptions,
-            i = n ? n.title : D,
+            i = n ? n.title : L,
             u = n ? n.subtitle : void 0,
             l = o.a.useMemo(
               function () {
@@ -100,7 +100,7 @@
             )
           return l
             ? o.a.createElement(
-                h.a,
+                E.a,
                 null,
                 o.a.createElement(T.a, {
                   backLocation: '/',
@@ -113,7 +113,7 @@
               )
             : o.a.createElement(C.a, { to: '/' })
         }
-      t.default = Object(L.c)({ page: 'generic_timeline' })(S)
+      t.default = Object(D.c)({ page: 'generic_timeline' })(K)
     },
     PH3B: function (e, t, r) {
       'use strict'

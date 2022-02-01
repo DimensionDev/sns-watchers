@@ -2804,20 +2804,23 @@
         a = n('rHpw'),
         c = n('MWbm')
       function s(e) {
-        var t = e.label
-        return t
+        var t = e.borderColor,
+          n = void 0 === t ? 'borderColor' : t,
+          r = e.label,
+          s = n && { backgroundColor: a.a.theme.colors[n] }
+        return r
           ? o.a.createElement(
               i.a,
               { style: l.root, withGutter: !0 },
-              o.a.createElement(c.a, { style: l.gapColumn }, o.a.createElement(c.a, { style: l.gap })),
-              o.a.createElement(c.a, { style: l.gapText }, t),
-              o.a.createElement(c.a, { style: l.gapColumn }, o.a.createElement(c.a, { style: l.gap })),
+              o.a.createElement(c.a, { style: l.gapColumn }, o.a.createElement(c.a, { style: [l.gap, s] })),
+              o.a.createElement(c.a, { style: l.gapText }, r),
+              o.a.createElement(c.a, { style: l.gapColumn }, o.a.createElement(c.a, { style: [l.gap, s] })),
             )
           : o.a.createElement(c.a, { style: [l.root, l.gap] })
       }
       var l = a.a.create(function (e) {
         return {
-          gap: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small },
+          gap: { height: e.borderWidths.small },
           gapColumn: { flex: 1, justifyContent: 'center' },
           gapText: { 'flex-basis': 'auto' },
           root: { marginVertical: e.spaces.space4 },
@@ -12028,7 +12031,7 @@
                     null,
                     O.a.createElement(Q, {
                       filter: gt,
-                      getTopicExactMatch: o ? q.f : void 0,
+                      getTopicExactMatch: o ? q.h : void 0,
                       initialValue: t,
                       onItemClick: this._handleItemClick,
                       onQueryChange: this._handleQueryChange,
@@ -19997,69 +20000,70 @@
                 value: function () {
                   var e = this.props,
                     t = e.accessibilityLabel,
-                    n = e.accessibilityRole,
-                    r = e.accessibilityState,
-                    i = e.avatarDecoration,
-                    a = e.avatarSize,
-                    c = e.avatarUri,
-                    s = e.bottomControl,
-                    l = e.decoration,
-                    u = e.displayMode,
-                    d = e.isBlocking,
-                    p = e.isDisabled,
-                    f = e.onAvatarClick,
-                    h = e.onCellClick,
-                    m = e.onScreenNameClick,
-                    v = e.presenceIndicator,
-                    y = e.promotedContent,
-                    b = e.promotedItemType,
-                    _ = e.screenName,
-                    O = e.style,
-                    E = e.testID,
-                    k = e.userId,
-                    T = e.withDarkerInteractiveBackground,
-                    x = e.withInteractiveStyling,
-                    j = e.withLink,
-                    R = e.withUsernameCenterAligned,
-                    M = j && !d,
-                    A = u === H.UserCompact || R,
-                    B = u === H.ExperimentalUserTypeahead,
-                    V =
-                      y && b === N.USER && 'earned' !== (y.disclosure_type && y.disclosure_type.toLowerCase())
-                        ? w.a.createElement(I.a, { contentAuthorId: k, promotedContent: y, style: z.promotedIndicator })
+                    n = e.accessibilityState,
+                    r = e.avatarDecoration,
+                    i = e.avatarSize,
+                    a = e.avatarUri,
+                    c = e.bottomControl,
+                    s = e.decoration,
+                    l = e.displayMode,
+                    u = e.isBlocking,
+                    d = e.isDisabled,
+                    p = e.onAvatarClick,
+                    f = e.onCellClick,
+                    h = e.onScreenNameClick,
+                    m = e.presenceIndicator,
+                    v = e.promotedContent,
+                    y = e.promotedItemType,
+                    b = e.screenName,
+                    _ = e.style,
+                    O = e.testID,
+                    E = e.userId,
+                    k = e.withDarkerInteractiveBackground,
+                    T = e.withInteractiveStyling,
+                    x = e.withLink,
+                    j = e.withUsernameCenterAligned,
+                    R = x && !u,
+                    M = l === H.UserCompact || j,
+                    A = l === H.ExperimentalUserTypeahead,
+                    B =
+                      v && y === N.USER && 'earned' !== (v.disclosure_type && v.disclosure_type.toLowerCase())
+                        ? w.a.createElement(I.a, { contentAuthorId: E, promotedContent: v, style: z.promotedIndicator })
                         : null,
-                    W = {
+                    V = {
                       accessibilityHidden: !0,
-                      decoration: i,
+                      decoration: r,
                       focusable: !1,
                       imageLayoutCache: U,
-                      onClick: f,
-                      onHoverCardScreenNameClick: m,
-                      promotedContent: y,
-                      screenName: _,
+                      onClick: p,
+                      onHoverCardScreenNameClick: h,
+                      promotedContent: v,
+                      screenName: b,
                       style: z.avatar,
-                      uri: c,
-                      withHoverCard: M,
-                      withLink: j,
+                      uri: a,
+                      withHoverCard: R,
+                      withLink: x,
                     },
-                    K = w.a.createElement(P.a.Consumer, null, function (e) {
+                    W = w.a.createElement(P.a.Consumer, null, function (e) {
                       var t = e.avatarSize
-                      return v
-                        ? w.a.createElement(L.a, o()({}, W, v, { size: t }))
-                        : w.a.createElement(D.a, o()({ size: t }, W))
+                      return m
+                        ? w.a.createElement(L.a, o()({}, V, m, { size: t }))
+                        : w.a.createElement(D.a, o()({ size: t }, V))
                     }),
-                    G = h ? 'button' : 'listitem',
-                    X = this._renderUserName(),
-                    q = this._renderHighlightedUserLabel(),
-                    Y = this._renderBio(),
-                    Z = q || Y || V || s,
-                    Q = w.a.createElement(
+                    K = n && 'boolean' == typeof n.checked,
+                    G = void 0 !== f,
+                    X = (K ? 'radio' : G && 'button') || 'listitem',
+                    q = this._renderUserName(),
+                    Y = this._renderHighlightedUserLabel(),
+                    Z = this._renderBio(),
+                    Q = Y || Z || B || c,
+                    J = w.a.createElement(
                       w.a.Fragment,
                       null,
-                      q,
                       Y,
-                      V,
-                      s ? w.a.createElement(F.a, { style: z.bottomControl }, s) : null,
+                      Z,
+                      B,
+                      c ? w.a.createElement(F.a, { style: z.bottomControl }, c) : null,
                     )
                   return w.a.createElement(
                     g.a,
@@ -20068,36 +20072,36 @@
                       S.a,
                       {
                         accessibilityLabel: t,
-                        accessibilityRole: n || G,
-                        accessibilityState: r,
-                        disabled: !!p,
-                        focusable: !(!n && !h),
+                        accessibilityRole: X,
+                        accessibilityState: n,
+                        disabled: !!d,
+                        focusable: K || G,
                         onClick: this._handleClick,
                         onKeyPress: this._handleKeyPress,
-                        pointerEvents: p ? 'none' : void 0,
-                        style: [z.root, O],
-                        testID: E,
-                        withDarkerInteractiveBackground: T,
-                        withInteractiveStyling: null != x ? x : !!h,
+                        pointerEvents: d ? 'none' : void 0,
+                        style: [z.root, _],
+                        testID: O,
+                        withDarkerInteractiveBackground: k,
+                        withInteractiveStyling: null != T ? T : !!f,
                       },
-                      B ? null : this._renderSocialContext(),
+                      A ? null : this._renderSocialContext(),
                       w.a.createElement(
                         C.a,
                         {
-                          avatarCell: K,
-                          avatarCellStyle: [z.avatarColumn, A && z.bodyColumnCentered],
-                          avatarSize: B ? 'xxxLarge' : a,
-                          cellStyle: [z.bodyColumn, A && z.bodyColumnCentered],
+                          avatarCell: W,
+                          avatarCellStyle: [z.avatarColumn, M && z.bodyColumnCentered],
+                          avatarSize: A ? 'xxxLarge' : i,
+                          cellStyle: [z.bodyColumn, M && z.bodyColumnCentered],
                         },
-                        w.a.createElement(F.a, { style: z.body }, X, l),
-                        A ? null : Q,
-                        B ? this._renderUserTypeaheadSocialContext() : null,
+                        w.a.createElement(F.a, { style: z.body }, q, s),
+                        M ? null : J,
+                        A ? this._renderUserTypeaheadSocialContext() : null,
                       ),
-                      Z && A
+                      Q && M
                         ? w.a.createElement(
                             C.a,
                             { avatarCell: null, avatarCellStyle: z.avatarColumn, cellStyle: z.bodyColumn },
-                            Q,
+                            J,
                           )
                         : null,
                     ),
@@ -23143,7 +23147,7 @@
               n = e.tokens,
               r = a()(e, ['rounded_score', 'tokens']),
               o = r.topic,
-              i = r.topic_type || U.b.Topic
+              i = U.b.Topic
             return { id: ''.concat(i, '_').concat(o.replace(' ', '_')), type: i, tokens: n, rounded_score: t, data: r }
           })
         },
@@ -23153,7 +23157,7 @@
               n = e.rounded_score,
               r = e.tokens,
               o = a()(e, ['rounded_score', 'tokens']),
-              i = o.topic_type || U.b.Event,
+              i = U.b.Event,
               c = null == o || null === (t = o.url) || void 0 === t ? void 0 : t.match(B.A.id)
             return { id: (null == c ? void 0 : c[0]) || '', type: i, tokens: r, rounded_score: n, data: o }
           })
@@ -23212,7 +23216,7 @@
                   orderedSections: o.ordered_sections,
                   events: q(o.events),
                   topics: X(o.topics),
-                  users: Object(U.g)(i),
+                  users: Object(U.i)(i),
                   timestamp: Date.now(),
                 }
               return Object(N.a)(e, function (e) {
@@ -23285,7 +23289,7 @@
               function (e, t, n, r) {
                 if (!e || !t || t.indexOf(U.a.Users) < 0) return Object(T.a)()
                 var o = Object(J.f)(n, e)
-                return Object(U.g)(
+                return Object(U.i)(
                   o
                     .map(function (e) {
                       return r[e]
@@ -31455,10 +31459,7 @@
                 return tr(
                   tr({}, Object(Yn.a)({ withTweetActionsDisabled: n })),
                   {},
-                  ((t = {}),
-                  b()(t, Zn.b.MomentAnnotation, $n.a),
-                  b()(t, Zn.b.EventSummary, Object(Qn.a)({ errorContext: 'LIVE_EVENT_TIMELINE' })),
-                  t),
+                  ((t = {}), b()(t, Zn.b.MomentAnnotation, $n.a), b()(t, Zn.b.EventSummary, Object(Qn.a)({})), t),
                 )
               })({ withTweetActionsDisabled: i })),
               (r._timelinePreprocessor = (function (e) {
@@ -32887,7 +32888,7 @@
                         disabled: n,
                         focusable: !0,
                         onPress: this._handleClick,
-                        style: [r && _e.focused, _e.transitionStyles, a],
+                        style: [r && _e.focused, _e.transitionStyles, this._loaded && _e.loaded, a],
                         viewRef: this._onViewRef,
                       },
                       this._renderResult(),
@@ -33009,6 +33010,7 @@
               paddingHorizontal: e.componentDimensions.gutterHorizontal,
               paddingVertical: e.componentDimensions.gutterVertical,
             },
+            loaded: { opacity: 1 },
             focused: { backgroundColor: e.colors.gray0 },
             transitionStyles: { transitionProperty: 'opacity', transitionDuration: '250ms', opacity: 0 },
           }
@@ -44651,39 +44653,25 @@
         s = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(14), n.e(205)]).then(n.bind(null, '8qIq'))
+              return Promise.all([n.e(0), n.e(14), n.e(205)]).then(n.bind(null, 'uuEz'))
             },
             loaderOptions: e,
-            loaderKey: 'eventSummaryCellLoader',
+            loaderKey: 'eventSummaryDefaultLoader',
             strategy: c.a.Critical,
           }
         }
       t.a = function (e) {
         var t,
-          r,
-          l = e.errorContext,
-          u = e.shouldStoreTypeaheadItem
+          n = e.shouldStoreTypeaheadItem
         return i.c({
           selectDisplayType: function (e) {
             return e.content.displayType
           },
           handlers:
             ((t = {}),
-            o()(
-              t,
-              a.a.Hero,
-              ((r = { errorContext: l }),
-              {
-                loader: function () {
-                  return Promise.all([n.e(0), n.e(14), n.e(205)]).then(n.bind(null, 'm5t/'))
-                },
-                loaderOptions: r,
-                loaderKey: 'eventSummaryHeroLoader',
-                strategy: c.a.Critical,
-              }),
-            ),
-            o()(t, a.a.Cell, s({ errorContext: l, shouldStoreTypeaheadItem: u })),
-            o()(t, a.a.CellWithProminentSocialContext, s({ errorContext: l, hasProminentSocialContext: !0 })),
+            o()(t, a.a.Hero, s({})),
+            o()(t, a.a.Cell, s({ shouldStoreTypeaheadItem: n })),
+            o()(t, a.a.CellWithProminentSocialContext, s({})),
             t),
         })
       }
@@ -49218,23 +49206,22 @@
         i = n('t62R'),
         a = n('MAI/'),
         c = n('shC7'),
-        s = n('3rX5'),
-        l = n('dC06'),
-        u = n('rHpw'),
-        d = n('3XMw'),
-        p = n.n(d),
-        f = n('FITr'),
-        h = n('yVEN'),
-        m = n('uCrx'),
-        v = n('6ZHn'),
-        y = n('GcQN'),
-        b = n('x0mb'),
-        g = n('Hp3u'),
-        _ = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('KEM+')),
-        w = n.n(_),
-        O = n('Lsrn'),
-        E = n('k/Ka')
-      function C(e, t) {
+        s = n('dC06'),
+        l = n('rHpw'),
+        u = n('3XMw'),
+        d = n.n(u),
+        p = n('FITr'),
+        f = n('yVEN'),
+        h = n('uCrx'),
+        m = n('6ZHn'),
+        v = n('GcQN'),
+        y = n('x0mb'),
+        b = n('Hp3u'),
+        g = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('KEM+')),
+        _ = n.n(g),
+        w = n('Lsrn'),
+        O = n('k/Ka')
+      function E(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -49246,29 +49233,29 @@
         }
         return n
       }
-      function P(e) {
+      function C(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? C(Object(n), !0).forEach(function (t) {
-                w()(e, t, n[t])
+            ? E(Object(n), !0).forEach(function (t) {
+                _()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : C(Object(n)).forEach(function (t) {
+            : E(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var k = function () {
+      var P = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(E.a)(
+        return Object(O.a)(
           'svg',
-          P(
-            P({}, e),
+          C(
+            C({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [O.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [w.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           o.a.createElement(
             'g',
@@ -49279,15 +49266,15 @@
           ),
         )
       }
-      k.metadata = { width: 24, height: 24 }
-      var T = k,
-        S = n('EHV7'),
-        I = n('wpLu'),
-        x = n('EfHu'),
-        j = n('cOhU'),
-        R = n('cap5'),
-        D = n('r9x5')
-      function L(e, t) {
+      P.metadata = { width: 24, height: 24 }
+      var k = P,
+        T = n('EHV7'),
+        S = n('wpLu'),
+        I = n('EfHu'),
+        x = n('cOhU'),
+        j = n('cap5'),
+        R = n('r9x5')
+      function D(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -49299,29 +49286,29 @@
         }
         return n
       }
-      function M(e) {
+      function L(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? L(Object(n), !0).forEach(function (t) {
-                w()(e, t, n[t])
+            ? D(Object(n), !0).forEach(function (t) {
+                _()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : L(Object(n)).forEach(function (t) {
+            : D(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var A = function () {
+      var M = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(E.a)(
+        return Object(O.a)(
           'svg',
-          M(
-            M({}, e),
+          L(
+            L({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [O.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [w.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           o.a.createElement(
             'g',
@@ -49332,11 +49319,11 @@
           ),
         )
       }
-      A.metadata = { width: 24, height: 24 }
-      var F = A,
-        B = n('0qK0'),
-        N = n('aPcQ')
-      function H(e, t) {
+      M.metadata = { width: 24, height: 24 }
+      var A = M,
+        F = n('0qK0'),
+        B = n('aPcQ')
+      function N(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -49348,29 +49335,29 @@
         }
         return n
       }
-      function U(e) {
+      function H(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? H(Object(n), !0).forEach(function (t) {
-                w()(e, t, n[t])
+            ? N(Object(n), !0).forEach(function (t) {
+                _()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : H(Object(n)).forEach(function (t) {
+            : N(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var V = function () {
+      var U = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(E.a)(
+        return Object(O.a)(
           'svg',
-          U(
-            U({}, e),
+          H(
+            H({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [O.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [w.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           o.a.createElement(
             'g',
@@ -49381,32 +49368,32 @@
           ),
         )
       }
-      V.metadata = { width: 24, height: 24 }
-      var z = V,
-        W = n('lUZE'),
-        K = p.a.jb767df7,
-        G = p.a.bb3323fa,
-        X = p.a.db0798ed,
-        q = p.a.dc716ec8,
-        Y = function (e) {
+      U.metadata = { width: 24, height: 24 }
+      var V = U,
+        z = n('lUZE'),
+        W = d.a.jb767df7,
+        K = d.a.bb3323fa,
+        G = d.a.db0798ed,
+        X = d.a.dc716ec8,
+        q = function (e) {
           return o.a.createElement(i.b, { dir: c.a.getConstants().isRTL ? 'rtl' : 'ltr', withHashflags: !0 }, e)
         },
-        Z = function (e, t) {
+        Y = function (e, t) {
           return t
-            ? K
+            ? W
             : (function (e) {
-                var t = Y(e)
-                return o.a.createElement(p.a.I18NFormatMessage, { $i18n: 'h99e9c95' }, t)
+                var t = q(e)
+                return o.a.createElement(d.a.I18NFormatMessage, { $i18n: 'h99e9c95' }, t)
               })(e)
         },
-        Q = u.a.create(function (e) {
+        Z = l.a.create(function (e) {
           return {
             small: { height: e.lineHeights.subtext3, width: e.lineHeights.subtext3 },
             large: { height: e.lineHeights.subtext1, width: e.lineHeights.subtext1 },
             xLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 },
           }
         }),
-        J = u.a.create(function (e) {
+        Q = l.a.create(function (e) {
           return {
             circle: { color: e.colors.primary, width: '0.5em' },
             colorDeepGray: { color: e.colors.gray700 },
@@ -49422,113 +49409,111 @@
       t.a = function (e) {
         var t = e.contextType,
           n = e.iconSize,
-          r = e.iconUrl,
-          i = e.link,
-          c = e.retweetData,
-          u = e.text,
-          d = e.topicData,
-          p = e.userAvatarUrls,
-          _ = e.withColoredIcon,
-          w = c || {},
-          O = w.isSelfRetweet,
-          E = w.name,
-          C = w.screenName,
-          P = (function (e, t, n) {
-            var r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : [],
-              i = arguments.length > 4 ? arguments[4] : void 0,
-              c = Q[t]
-            if (n) return o.a.createElement(s.a, { source: n, style: [J.grayscaleImage, c] })
-            var u = [J.colorDeepGray, c],
-              d = o.a.createElement(f.a, { style: u }),
-              p = o.a.createElement(h.a, { style: [u, i && J.colorGreen] }),
-              _ = o.a.createElement(m.a, { style: [u, i && J.colorRed] }),
-              w = o.a.createElement(v.a, { style: [u, i && J.colorBlue] }),
-              O = o.a.createElement(y.a, { style: [u, i && J.colorBlue] }),
-              E = o.a.createElement(b.a, { style: J.circle }),
-              C = o.a.createElement(g.a, { style: [u, i && J.colorOrange] }),
-              P = o.a.createElement(T, { style: u }),
-              k = o.a.createElement(S.a, { style: [u, i && J.colorPrimary] }),
-              L = o.a.createElement(I.a, { style: u }),
-              M = o.a.createElement(x.a, { style: u }),
-              A = o.a.createElement(j.a, { style: u }),
-              H = o.a.createElement(R.a, { style: u }),
-              U = o.a.createElement(D.a, { style: u }),
-              V = o.a.createElement(F, { style: u }),
-              K = o.a.createElement(B.a, { style: u }),
-              G = o.a.createElement(N.a, { style: u }),
-              X = o.a.createElement(z, { style: u }),
-              q = o.a.createElement(a.a, {
-                borderColor: i ? 'primary' : 'cellBackground',
+          r = e.link,
+          i = e.retweetData,
+          c = e.text,
+          l = e.topicData,
+          u = e.userAvatarUrls,
+          d = e.withColoredIcon,
+          g = i || {},
+          _ = g.isSelfRetweet,
+          w = g.name,
+          O = g.screenName,
+          E = (function (e, t) {
+            var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [],
+              r = arguments.length > 3 ? arguments[3] : void 0,
+              i = Z[t],
+              c = [Q.colorDeepGray, i],
+              l = o.a.createElement(p.a, { style: c }),
+              u = o.a.createElement(f.a, { style: [c, r && Q.colorGreen] }),
+              d = o.a.createElement(h.a, { style: [c, r && Q.colorRed] }),
+              g = o.a.createElement(m.a, { style: [c, r && Q.colorBlue] }),
+              _ = o.a.createElement(v.a, { style: [c, r && Q.colorBlue] }),
+              w = o.a.createElement(y.a, { style: Q.circle }),
+              O = o.a.createElement(b.a, { style: [c, r && Q.colorOrange] }),
+              E = o.a.createElement(k, { style: c }),
+              C = o.a.createElement(T.a, { style: [c, r && Q.colorPrimary] }),
+              P = o.a.createElement(S.a, { style: c }),
+              D = o.a.createElement(I.a, { style: c }),
+              L = o.a.createElement(x.a, { style: c }),
+              M = o.a.createElement(j.a, { style: c }),
+              N = o.a.createElement(R.a, { style: c }),
+              H = o.a.createElement(A, { style: c }),
+              U = o.a.createElement(F.a, { style: c }),
+              W = o.a.createElement(B.a, { style: c }),
+              K = o.a.createElement(V, { style: c }),
+              G = o.a.createElement(a.a, {
+                borderColor: r ? 'primary' : 'cellBackground',
                 userAvatarSize: t,
-                userAvatarUrls: r,
+                userAvatarUrls: n,
               }),
-              Y = o.a.createElement(W.a, { style: [u, i && J.brandColor] })
+              X = o.a.createElement(z.a, { style: [c, r && Q.brandColor] })
             switch (e) {
-              case l.a.Pin:
+              case s.a.Pin:
+                return l
+              case s.a.Retweet:
+                return u
+              case s.a.Like:
                 return d
-              case l.a.Retweet:
-                return p
-              case l.a.Like:
+              case s.a.Follow:
+                return g
+              case s.a.Moment:
                 return _
-              case l.a.Follow:
+              case s.a.NewTweets:
                 return w
-              case l.a.Moment:
+              case s.a.Reply:
+              case s.a.Conversation:
                 return O
-              case l.a.NewTweets:
+              case s.a.Feedback:
                 return E
-              case l.a.Reply:
-              case l.a.Conversation:
+              case s.a.Topic:
                 return C
-              case l.a.Feedback:
+              case s.a.List:
                 return P
-              case l.a.Topic:
-                return k
-              case l.a.List:
+              case s.a.Location:
+                return D
+              case s.a.Community:
                 return L
-              case l.a.Location:
+              case s.a.Spaces:
                 return M
-              case l.a.Community:
-                return A
-              case l.a.Spaces:
+              case s.a.Sparkle:
+                return N
+              case s.a.SmartBlockExpiration:
                 return H
-              case l.a.Sparkle:
-                return U
-              case l.a.SmartBlockExpiration:
-                return V
-              case l.a.SocialProof:
-              case l.a.FollowFollowed:
-                return X
-              case l.a.FollowMutual:
-                return G
-              case l.a.FollowFollowing:
+              case s.a.SocialProof:
+              case s.a.FollowFollowed:
                 return K
-              case l.a.Facepile:
-                return q
-              case l.a.Bird:
-                return Y
-              case l.a.TextOnly:
+              case s.a.FollowMutual:
+                return W
+              case s.a.FollowFollowing:
+                return U
+              case s.a.Facepile:
+                return G
+              case s.a.Bird:
+                return X
+              case s.a.TextOnly:
               default:
                 return null
             }
-          })(t, n, r, p, _)
+          })(t, n, u, d)
         switch (t) {
-          case l.a.Retweet:
-            return { Icon: P, text: u || Z(E, O), link: C ? 'https://twitter.com/'.concat(C) : void 0 }
-          case l.a.Pin:
-            return { Icon: P, text: u || G }
-          case l.a.Topic:
+          case s.a.Retweet:
+            return { Icon: E, text: c || Y(w, _), link: O ? 'https://twitter.com/'.concat(O) : void 0 }
+          case s.a.Pin:
+            return { Icon: E, text: c || K }
+          case s.a.Topic:
             return {
-              Icon: P,
+              Icon: E,
               accessibilityLabel:
-                'Recommendation' === (null == d ? void 0 : d.functionalityType) ||
-                'RecWithEducation' === (null == d ? void 0 : d.functionalityType)
-                  ? q({ topicName: u })
-                  : X({ topicName: u }),
-              text: u ? Y(u) : null,
-              link: i,
+                'Recommendation' === (null == l ? void 0 : l.functionalityType) ||
+                'RecWithEducation' === (null == l ? void 0 : l.functionalityType)
+                  ? X({ topicName: c })
+                  : G({ topicName: c }),
+              text: c ? q(c) : null,
+              link: r,
             }
           default:
-            return { Icon: P, text: u ? Y(u) : null, link: i }
+            return { Icon: E, text: c ? q(c) : null, link: r }
         }
       }
     },

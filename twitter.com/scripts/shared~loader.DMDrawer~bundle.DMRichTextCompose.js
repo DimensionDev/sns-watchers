@@ -7343,22 +7343,44 @@
         Ks = n.n(Gs),
         Ys = n('Es6L'),
         Qs = n('LsPn'),
-        Xs = n('GSsg'),
-        Js = n('EbOo'),
-        Zs = n('tZH3'),
-        $s = Ze.a.ccf2f24e,
-        ec = Ze.a.ib3fe8a9,
-        tc = function (e) {
+        Xs = ie.a.create(function (e) {
+          return {
+            root: { flexGrow: 1 },
+            activity: { flexBasis: e.spacesPx.space1, flexGrow: 1, height: '100%' },
+            kaiOSFix: { paddingBottom: e.spaces.space20 },
+            dragDrop: { flexGrow: 1 },
+            scrollView: { flexGrow: 1 },
+          }
+        }),
+        Js = n('GSsg'),
+        Zs = n('EbOo'),
+        $s = Object(bn.a)().propsFromActions(function () {
+          return {
+            addToast: S.b,
+            block: T.e.block,
+            createLocalApiErrorHandler: Object(j.createLocalApiErrorHandlerWithContextFactory)(
+              'UNTRUSTED_CONVERSATION_ACTIONS',
+            ),
+            muteDMUser: R.muteDMUser,
+            unmuteDMUser: R.unmuteDMUser,
+            unblock: T.e.unblock,
+          }
+        }),
+        ec = (n('AQ79'), n('u0B7')),
+        tc = n('tZH3'),
+        nc = Ze.a.ccf2f24e,
+        rc = Ze.a.ib3fe8a9,
+        ic = function (e) {
           var t = e.isGroup,
             n = e.onBlockClick,
             r = e.onReportClick,
             i = e.requestorScreenName,
             a = { type: 'destructiveOutlined' },
-            o = g.a.createElement(Tt.a, gn()({}, a, { accessibilityRole: 'button' }), ec),
-            s = g.a.createElement(Tt.a, gn()({}, a, { onPress: r }), $s),
+            o = g.a.createElement(Tt.a, gn()({}, a, { accessibilityRole: 'button' }), rc),
+            s = g.a.createElement(Tt.a, gn()({}, a, { onPress: r }), nc),
             c = g.a.useCallback(
               function (e, t) {
-                return g.a.createElement(Zs.a, {
+                return g.a.createElement(tc.a, {
                   dismiss: e,
                   flatBorders: 'sheet' === t,
                   onBlockClick: n,
@@ -7372,26 +7394,89 @@
             )
           return t ? s : g.a.createElement(Vn.a, { renderContent: c }, o)
         },
-        nc = Object(bn.a)().propsFromActions(function () {
+        ac = n('cHvH'),
+        oc = function (e) {
+          var t = g.a.useContext(ee.a),
+            n = t.featureSwitches.isTrue('dm_vdl_enabled') && t.featureSwitches.isTrue('dm_vdl_chat_p0_enabled'),
+            r = t.loggedInUserId,
+            i = function () {
+              return e.onAccept()
+            },
+            a = function () {
+              return e.onBlock()
+            },
+            o = function () {
+              return e.onReport()
+            },
+            s = function () {
+              return e.onLeave()
+            }
+          return g.a.createElement(ac.a, null, function (t) {
+            var c = t.windowWidth <= ie.a.theme.breakpoints.small
+            return g.a.createElement(
+              be.a,
+              { style: sc.actionsContainer },
+              n &&
+                g.a.createElement(
+                  Tt.a,
+                  {
+                    onPress: i,
+                    size: 'medium',
+                    style: [sc.actionFullWidth, sc.actionMarginBottom],
+                    type: 'primaryOutlined',
+                  },
+                  e.acceptButtonText,
+                ),
+              g.a.createElement(
+                be.a,
+                { style: c ? sc.actionFullWidth : [sc.actionHalfWidth, sc.actionMarginRight] },
+                g.a.createElement(ic, {
+                  isGroup: e.isGroup,
+                  onBlockClick: a,
+                  onReportClick: o,
+                  requestorScreenName: Object(I.i)(e.conversation, r).screenName,
+                }),
+              ),
+              g.a.createElement(
+                Tt.a,
+                {
+                  onPress: s,
+                  size: 'medium',
+                  style: c ? [sc.actionFullWidth, sc.actionMarginTop] : [sc.actionHalfWidth, sc.actionMarginLeft],
+                  type: 'destructiveOutlined',
+                },
+                e.declineButtonText,
+              ),
+              !n &&
+                g.a.createElement(
+                  Tt.a,
+                  {
+                    onPress: i,
+                    size: 'medium',
+                    style: [sc.actionFullWidth, sc.actionMarginTop],
+                    type: 'primaryOutlined',
+                  },
+                  e.acceptButtonText,
+                ),
+            )
+          })
+        },
+        sc = ie.a.create(function (e) {
           return {
-            addToast: S.b,
-            block: T.e.block,
-            createLocalApiErrorHandler: Object(j.createLocalApiErrorHandlerWithContextFactory)(
-              'UNTRUSTED_CONVERSATION_ACTIONS',
-            ),
-            muteDMUser: R.muteDMUser,
-            unmuteDMUser: R.unmuteDMUser,
-            unblock: T.e.unblock,
+            actionsContainer: { display: 'flex', flexWrap: 'wrap', flexDirection: 'row' },
+            actionFullWidth: { width: '100%' },
+            actionHalfWidth: { width: 'calc(50% - '.concat(e.spaces.space4, ')') },
+            actionMarginRight: { marginRight: e.spaces.space4 },
+            actionMarginLeft: { marginLeft: e.spaces.space4 },
+            actionMarginTop: { marginTop: e.spaces.space12 },
+            actionMarginBottom: { marginBottom: e.spaces.space12 },
           }
         }),
-        rc = (n('AQ79'), n('u0B7')),
-        ic = n('cHvH'),
-        ac = n('lHOd'),
-        oc = n('vMjK'),
-        sc = n('7JQg'),
-        cc = n('24HD'),
-        lc = n('Ty5D')
-      function uc(e, t) {
+        cc = n('vMjK'),
+        lc = n('7JQg'),
+        uc = n('24HD'),
+        dc = n('Ty5D')
+      function pc(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -7403,27 +7488,27 @@
         }
         return n
       }
-      function dc(e) {
+      function fc(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? uc(Object(n), !0).forEach(function (t) {
+            ? pc(Object(n), !0).forEach(function (t) {
                 v()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : uc(Object(n)).forEach(function (t) {
+            : pc(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var pc = Ze.a.da878dcf,
-        fc = Ze.a.d96cf7cd,
-        hc = (Ze.a.gde6b424, Ze.a.e308019b, Ze.a.gf5e9ea6, Ze.a.hc52446b),
-        mc = Ze.a.f7e1ad65,
-        vc = { headline: Ze.a.gdf4b79f, text: Ze.a.bbf83d83, confirmButtonLabel: Ze.a.bb1d57b6 },
-        yc = ie.a.create(function (e) {
+      var hc = Ze.a.da878dcf,
+        mc = Ze.a.d96cf7cd,
+        vc = (Ze.a.gde6b424, Ze.a.e308019b, Ze.a.gf5e9ea6, Ze.a.hc52446b),
+        yc = Ze.a.f7e1ad65,
+        gc = { headline: Ze.a.gdf4b79f, text: Ze.a.bbf83d83, confirmButtonLabel: Ze.a.bb1d57b6 },
+        bc = ie.a.create(function (e) {
           return {
             root: {
               backgroundColor: e.colors.cellBackground,
@@ -7434,24 +7519,16 @@
               paddingHorizontal: e.componentDimensions.gutterHorizontal,
             },
             copy: { paddingBottom: e.spaces.space20 },
-            reportlink: { marginLeft: e.spaces.space4 },
-            actionsContainer: { display: 'flex', flexWrap: 'wrap', flexDirection: 'row' },
-            actionFullWidth: { width: '100%' },
-            actionHalfWidth: { width: 'calc(50% - '.concat(e.spaces.space4, ')') },
-            actionMarginRight: { marginRight: e.spaces.space4 },
-            actionMarginLeft: { marginLeft: e.spaces.space4 },
-            actionMarginTop: { marginTop: e.spaces.space12 },
-            actionMarginBottom: { marginBottom: e.spaces.space12 },
           }
         }),
-        gc = Object(sc.c)({ element: 'untrusted_interstitial' })(
-          nc(function (e) {
+        _c = Object(lc.c)({ element: 'untrusted_interstitial' })(
+          $s(function (e) {
             var t = e.conversation,
               n = e.scribeAction,
               r = e.scribeNamespace,
               i = g.a.useContext(ee.a),
-              a = Object(lc.g)(),
-              o = Object(lc.h)(),
+              a = Object(dc.g)(),
+              o = Object(dc.h)(),
               s = g.a.useState(!1),
               c = Te()(s, 2),
               l = c[0],
@@ -7468,7 +7545,7 @@
               ),
               v = g.a.useCallback(
                 function (e, t) {
-                  n(dc(dc({}, r), {}, { action: e }), t || m())
+                  n(fc(fc({}, r), {}, { action: e }), t || m())
                 },
                 [m, n, r],
               )
@@ -7482,25 +7559,16 @@
               b,
               _,
               O,
-              E = i.featureSwitches.isTrue('dm_vdl_enabled') && i.featureSwitches.isTrue('dm_vdl_chat_p0_enabled'),
-              S = function () {
-                var t = e.conversationId,
-                  n = e.inboxType
-                t && (v('report'), a.push(Object(I.f)(t, window.location.pathname, r, n)))
-              },
-              w = function () {
+              E = function () {
                 u(!0), h(!1)
               },
-              C = function () {
-                u(!1), h(!0)
-              },
-              x = function () {
+              S = function () {
                 u(!1)
               },
-              A = function () {
+              w = function () {
                 h(!1)
               },
-              k = function () {
+              C = function () {
                 var n,
                   r = e.conversationId,
                   i = e.inboxType,
@@ -7516,13 +7584,13 @@
                     inbox_type: Object(I.h)(i),
                     entry_point: ht.b.REQUEST_ACTION_SHEET,
                   }
-                u(!1), a({ conversationId: r }), v(s, d), T()
+                u(!1), a({ conversationId: r }), v(s, d), x()
               },
-              T = function () {
+              x = function () {
                 var t = e.inboxType
                 a.push(Object(I.e)(t))
               },
-              P = function () {
+              A = function () {
                 !(function () {
                   var n,
                     r = e.acceptConversation,
@@ -7530,122 +7598,81 @@
                     a = e.inboxType,
                     s = e.scribeAction,
                     c = e.scribeNamespace,
-                    l = t.type === R.CONVERSATION_TYPE.GROUP,
-                    u = null != t && t.participants ? Object.keys(t.participants).length : 0,
-                    d = (null == o || null === (n = o.state) || void 0 === n ? void 0 : n.position) || 0
+                    l = null != t && t.participants ? Object.keys(t.participants).length : 0,
+                    u = (null == o || null === (n = o.state) || void 0 === n ? void 0 : n.position) || 0
                   i &&
                     (r(i),
-                    s(dc(dc({}, c), {}, { action: 'accept' }), {
+                    s(fc(fc({}, c), {}, { action: 'accept' }), {
                       conversation_id: i,
-                      conversation_type: l ? 1 : 0,
-                      conversation_participant_count: u,
+                      conversation_type: t.type === R.CONVERSATION_TYPE.GROUP ? ht.g.GROUP : ht.g.ONE_TO_ONE,
+                      conversation_participant_count: l,
                       entry_point: ht.b.REQUEST_ACTION_SHEET,
                       inbox_type: Object(I.h)(a),
-                      position: d,
+                      position: u,
                     }))
                 })()
               },
-              j = function (t) {
+              k = function (t) {
                 return function () {
                   var n = e.addToast,
                     r = e.block,
                     i = e.createLocalApiErrorHandler
                   h(!1),
                     r(t).then(function () {
-                      n({ action: { label: oc.c, onAction: M(t) }, text: oc.a })
-                    }, i(Js.a)),
+                      n({ action: { label: cc.c, onAction: T(t) }, text: cc.a })
+                    }, i(Zs.a)),
                     v('block')
                 }
               },
-              M = function (t) {
+              T = function (t) {
                 return function () {
                   var n = e.createLocalApiErrorHandler
-                  ;(0, e.unblock)(t).catch(n(rc.a)), v('unblock')
+                  ;(0, e.unblock)(t).catch(n(ec.a)), v('unblock')
                 }
               },
-              D = (t && t.type) === R.CONVERSATION_TYPE.GROUP
+              P = (t && t.type) === R.CONVERSATION_TYPE.GROUP
             return g.a.createElement(
               g.a.Fragment,
               null,
               g.a.createElement(
                 be.a,
-                { style: yc.root },
+                { style: bc.root },
                 (function (e) {
                   var n = i.loggedInUserId
                   return g.a.createElement(
                     _e.b,
-                    { style: yc.copy },
-                    e ? hc : mc({ senderName: Object(I.i)(t, n).name }),
+                    { style: bc.copy },
+                    e ? vc : yc({ senderName: Object(I.i)(t, n).name }),
                   )
-                })(D),
-                (function (e) {
-                  var n = i.loggedInUserId
-                  return g.a.createElement(ic.a, null, function (r) {
-                    var i = r.windowWidth <= ie.a.theme.breakpoints.small
-                    return g.a.createElement(
-                      be.a,
-                      { style: yc.actionsContainer },
-                      E &&
-                        g.a.createElement(
-                          Tt.a,
-                          {
-                            onPress: P,
-                            size: 'medium',
-                            style: [yc.actionFullWidth, yc.actionMarginBottom],
-                            type: 'primaryOutlined',
-                          },
-                          pc,
-                        ),
-                      g.a.createElement(
-                        be.a,
-                        { style: i ? yc.actionFullWidth : [yc.actionHalfWidth, yc.actionMarginRight] },
-                        g.a.createElement(ac.a.Consumer, null, function (r) {
-                          return g.a.createElement(tc, {
-                            isGroup: e,
-                            onBlockClick: C,
-                            onReportClick: S,
-                            requestorScreenName: Object(I.i)(t, n).screenName,
-                          })
-                        }),
-                      ),
-                      g.a.createElement(
-                        Tt.a,
-                        {
-                          onPress: w,
-                          size: 'medium',
-                          style: i
-                            ? [yc.actionFullWidth, yc.actionMarginTop]
-                            : [yc.actionHalfWidth, yc.actionMarginLeft],
-                          type: 'destructiveOutlined',
-                        },
-                        fc,
-                      ),
-                      !E &&
-                        g.a.createElement(
-                          Tt.a,
-                          {
-                            onPress: P,
-                            size: 'medium',
-                            style: [yc.actionFullWidth, yc.actionMarginTop],
-                            type: 'primaryOutlined',
-                          },
-                          pc,
-                        ),
-                    )
-                  })
-                })(D),
+                })(P),
+                g.a.createElement(oc, {
+                  acceptButtonText: hc,
+                  conversation: t,
+                  declineButtonText: mc,
+                  isGroup: P,
+                  onAccept: A,
+                  onBlock: function () {
+                    u(!1), h(!0)
+                  },
+                  onLeave: E,
+                  onReport: function () {
+                    var t = e.conversationId,
+                      n = e.inboxType
+                    t && (v('report'), a.push(Object(I.f)(t, window.location.pathname, r, n)))
+                  },
+                }),
               ),
               ns.b.isKaiOS()
-                ? g.a.createElement(Qs.a, { leftText: fc, onLeftClick: w, onRightClick: P, rightText: pc })
+                ? g.a.createElement(Qs.a, { leftText: mc, onLeftClick: E, onRightClick: A, rightText: hc })
                 : null,
               l
                 ? g.a.createElement(kt.a, {
-                    confirmButtonLabel: vc.confirmButtonLabel,
+                    confirmButtonLabel: gc.confirmButtonLabel,
                     confirmButtonType: 'destructiveFilled',
-                    headline: vc.headline,
-                    onCancel: x,
-                    onConfirm: k,
-                    text: vc.text,
+                    headline: gc.headline,
+                    onCancel: S,
+                    onConfirm: C,
+                    text: gc.text,
                   })
                 : null,
               f
@@ -7653,14 +7680,14 @@
                   (b = Object(I.i)(t, y)),
                   (_ = b.idStr),
                   (O = b.screenName),
-                  Object(cc.j)({ confirmation: Object(cc.f)(O), onClose: A, handleConfirm: j(_) }))
+                  Object(uc.j)({ confirmation: Object(uc.f)(O), onClose: w, handleConfirm: k(_) }))
                 : null,
             )
           }),
         ),
-        bc = n('rFBM'),
-        _c = n('jTgF')
-      function Rc(e, t) {
+        Rc = n('rFBM'),
+        Oc = n('jTgF')
+      function Ec(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -7672,22 +7699,22 @@
         }
         return n
       }
-      function Oc(e) {
+      function Sc(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Rc(Object(n), !0).forEach(function (t) {
+            ? Ec(Object(n), !0).forEach(function (t) {
                 v()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : Rc(Object(n)).forEach(function (t) {
+            : Ec(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      function Ec(e) {
+      function wc(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -7708,15 +7735,15 @@
           return p()(this, n)
         }
       }
-      var Sc = g.a.createElement(Xt.a, null),
-        wc = Ze.a.badb01a0,
-        Cc = Ze.a.e3275464,
-        xc = Ze.a.d6b11d9c,
-        Ac = Ze.a.i7ca1446,
-        kc = function (e) {
+      var Cc = g.a.createElement(Xt.a, null),
+        xc = Ze.a.badb01a0,
+        Ac = Ze.a.e3275464,
+        kc = Ze.a.d6b11d9c,
+        Tc = Ze.a.i7ca1446,
+        Pc = function (e) {
           return e && (e.tweet || e.media)
         },
-        Tc = function (e) {
+        Ic = function (e) {
           var t,
             n = e.gifMetadata,
             r = void 0 === n ? {} : n,
@@ -7733,9 +7760,9 @@
             t
           )
         },
-        Pc = (function (e) {
+        jc = (function (e) {
           u()(n, e)
-          var t = Ec(n)
+          var t = wc(n)
           function n(e, r) {
             var a
             return (
@@ -7806,7 +7833,7 @@
                   ? t.read_only
                     ? null
                     : n &&
-                      g.a.createElement(gc, {
+                      g.a.createElement(_c, {
                         acceptConversation: a._acceptConversation,
                         conversation: t,
                         conversationId: n,
@@ -7820,10 +7847,10 @@
                       a._renderComposerBar(),
                       ns.b.isKaiOS()
                         ? g.a.createElement(Qs.a, {
-                            leftText: Ac,
+                            leftText: Tc,
                             onLeftClick: a._handleInfoClick,
                             onRightClick: a._handleComposeClick,
-                            rightText: wc,
+                            rightText: xc,
                           })
                         : null,
                     )
@@ -7844,13 +7871,13 @@
                   Oa,
                   { key: n },
                   g.a.createElement(
-                    bc.a,
-                    { allowDragDrop: !kc(u), onFilesAdded: a._handleDragDrop, style: Ic.dragDrop },
+                    Rc.a,
+                    { allowDragDrop: !Pc(u), onFilesAdded: a._handleDragDrop, style: Xs.dragDrop },
                     g.a.createElement(
                       No.a,
                       {
                         style: [
-                          Ic.scrollView,
+                          Xs.scrollView,
                           !Object(Ys.a)() && !a._isUntrustedConversation(t) && { paddingBottom: d },
                         ],
                       },
@@ -7863,7 +7890,7 @@
                             onHistoryRequest: a._handleHistoryRequest,
                             perspective: s,
                             scribeNamespace: c,
-                            style: Ic.activity,
+                            style: Xs.activity,
                           })
                         : null,
                     ),
@@ -7953,7 +7980,7 @@
                 }
                 return (
                   l &&
-                    v(Oc(Oc({}, y), {}, { element: w, action: 'send_dm' }), {
+                    v(Sc(Sc({}, y), {}, { element: w, action: 'send_dm' }), {
                       conversation_id: l,
                       conversation_participant_count: E,
                       conversation_type: S ? ht.g.GROUP : ht.g.ONE_TO_ONE,
@@ -7968,7 +7995,7 @@
                           r.uploading) ||
                         (a.setState({ attachment: null }), p.replace(f.pathname)),
                       g(
-                        Oc(
+                        Sc(
                           { senderId: m, cardUrl: s, conversationId: l, text: t, tweetAttachment: b },
                           e && e.quickReply && { quickReply: e.quickReply },
                         ),
@@ -7981,9 +8008,9 @@
                             a.setState({ isSending: !1 })
                         })
                         .catch(function (e) {
-                          if ((a.setState({ isSending: !1 }), !Object(_c.d)(e) || e.code !== Vs.b.CANCELED))
-                            if (Object(_c.d)(e)) {
-                              var t = Object(_c.b)(e, xc)
+                          if ((a.setState({ isSending: !1 }), !Object(Oc.d)(e) || e.code !== Vs.b.CANCELED))
+                            if (Object(Oc.d)(e)) {
+                              var t = Object(Oc.b)(e, kc)
                               t && o(t)
                             } else u(qs.b)(e)
                         }))
@@ -7997,7 +8024,7 @@
                         text: t,
                         tweetAttachment: b,
                       }).then(function (e) {
-                        v(Oc(Oc({}, y), {}, { element: w, action: 'send_dm' }), {
+                        v(Sc(Sc({}, y), {}, { element: w, action: 'send_dm' }), {
                           conversation_id: e,
                           conversation_participant_count: h ? h.length + 1 : 0,
                           conversation_type: ht.g.GROUP,
@@ -8029,7 +8056,7 @@
                 t && a._currentComposer && n(t, a._currentComposer.value())
               }),
               (a.state = {
-                attachment: Tc(e),
+                attachment: Ic(e),
                 composerHeight: ie.a.theme.componentDimensions.appBarHeight,
                 isSending: !1,
               }),
@@ -8095,7 +8122,7 @@
                 value: function (e) {
                   var t = e.interval
                   this._updatePolling && this._updatePolling.stop(),
-                    (this._updatePolling = new Xs.a(this._fetchUpdatesIfNeeded, { interval: t }))
+                    (this._updatePolling = new Js.a(this._fetchUpdatesIfNeeded, { interval: t }))
                 },
               },
               {
@@ -8140,7 +8167,7 @@
                 value: function (e) {
                   var t = this.props.media,
                     n = e.media
-                  Object(ge.a)(t, n) || this.setState({ attachment: Tc(e) })
+                  Object(ge.a)(t, n) || this.setState({ attachment: Ic(e) })
                 },
               },
               {
@@ -8149,7 +8176,7 @@
                   var e = this.props.fetchStatus
                   return g.a.createElement(
                     Ps.a,
-                    { style: [Ic.root, ns.b.isKaiOS() && Ic.kaiOSFix] },
+                    { style: [Xs.root, ns.b.isKaiOS() && Xs.kaiOSFix] },
                     g.a.createElement(Us.a, {
                       fetchStatus: e,
                       onRequestRetry: this._handleInitialFetch,
@@ -8200,8 +8227,8 @@
                         onPrimaryAction: this._handleSendMessage,
                         onTyping: a ? this._throttleSaveDraftText : this._handleTyping,
                         prefillText: 'string' == typeof _ ? _ : void 0,
-                        primaryActionIcon: Sc,
-                        primaryActionLabel: Cc,
+                        primaryActionIcon: Cc,
+                        primaryActionLabel: Ac,
                         quickReplyOptions: d,
                         ref: this._composer,
                         removeMedia: p,
@@ -8253,17 +8280,8 @@
             n
           )
         })(g.a.PureComponent)
-      v()(Pc, 'contextType', ee.a), v()(Pc, 'defaultProps', { isNewGroupConversation: !1, typeaheadWrapper: zs.a })
-      var Ic = ie.a.create(function (e) {
-        return {
-          root: { flexGrow: 1 },
-          activity: { flexBasis: e.spacesPx.space1, flexGrow: 1, height: '100%' },
-          kaiOSFix: { paddingBottom: e.spaces.space20 },
-          dragDrop: { flexGrow: 1 },
-          scrollView: { flexGrow: 1 },
-        }
-      })
-      t.a = Object(sc.c)()(N(Pc))
+      v()(jc, 'contextType', ee.a), v()(jc, 'defaultProps', { isNewGroupConversation: !1, typeaheadWrapper: zs.a })
+      t.a = Object(lc.c)()(N(jc))
     },
     RJrc: function (e, t, n) {
       'use strict'

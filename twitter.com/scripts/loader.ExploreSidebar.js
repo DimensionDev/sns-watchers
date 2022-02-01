@@ -65,10 +65,10 @@
       'use strict'
       n.r(t),
         n.d(t, 'UPDATE_INTERVAL', function () {
-          return se
+          return ue
         }),
         n.d(t, 'ExploreSidebar', function () {
-          return pe
+          return de
         })
       n('OZaJ')
       var r = n('VrFO'),
@@ -294,23 +294,22 @@
         return e
       }
       var Z = 'TrendsModule',
-        q = 'EXPLORE_SIDEBAR',
-        V =
+        q =
           ((W = {}),
           y()(W, g.b.TimelineCursor, w.e(w.a())),
           y()(W, g.b.Label, w.e(w.a())),
           y()(W, g.b.Message, w.e(w.a())),
           y()(W, g.b.News, w.e(w.a())),
-          y()(W, g.b.Trend, Object(_.a)({ withThirdPartyCards: !1, errorContext: q })),
-          y()(W, g.b.EventSummary, Object(j.a)({ errorContext: q })),
+          y()(W, g.b.Trend, Object(_.a)({ withThirdPartyCards: !1, errorContext: 'EXPLORE_SIDEBAR' })),
+          y()(W, g.b.EventSummary, Object(j.a)({})),
           y()(W, g.b.ScoreEventSummary, P.a),
           W),
-        G = y()({}, Z, N),
-        $ = Y(
+        V = y()({}, Z, N),
+        G = Y(
           Y(
             {},
             Object(T.a)({
-              customHandlers: G,
+              customHandlers: V,
               customSelectDisplayType: function (e) {
                 return (t = e.content.items).length > 0 &&
                   Object(E.a)(t, function (e) {
@@ -323,15 +322,15 @@
               isInSidebar: !0,
             }),
           ),
-          V,
+          q,
         ),
-        ee = n('oQhu'),
-        te = n('fTQJ'),
-        ne = n('b8qQ'),
-        re = n('2g+p'),
-        oe = n('v6aA'),
-        ie = n('BxsD')
-      function ae(e) {
+        $ = n('oQhu'),
+        ee = n('fTQJ'),
+        te = n('b8qQ'),
+        ne = n('2g+p'),
+        re = n('v6aA'),
+        oe = n('BxsD')
+      function ie(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -352,21 +351,21 @@
           return d()(this, n)
         }
       }
-      var ce = x.a.b8e930fd,
-        ue = x.a.ae05f268,
-        se = 3e5,
-        le = function () {
-          return O.a.createElement(m.a, { message: ue })
+      var ae = x.a.b8e930fd,
+        ce = x.a.ae05f268,
+        ue = 3e5,
+        se = function () {
+          return O.a.createElement(m.a, { message: ce })
         },
-        fe = Object(ee.a)(function (e, t) {
-          return Object(ie.c)({ featureSwitches: t, displayLocation: ie.a.WebSidebar, focalTweetId: e })
+        le = Object($.a)(function (e, t) {
+          return Object(oe.c)({ featureSwitches: t, displayLocation: oe.a.WebSidebar, focalTweetId: e })
         }),
-        de = Object(ee.a)(function (e, t) {
-          return Object(ie.c)({ featureSwitches: t, displayLocation: ie.a.WebSidebar, profileUserId: e })
+        fe = Object($.a)(function (e, t) {
+          return Object(oe.c)({ featureSwitches: t, displayLocation: oe.a.WebSidebar, profileUserId: e })
         }),
-        pe = (function (e) {
+        de = (function (e) {
           l()(n, e)
-          var t = ae(n)
+          var t = ie(n)
           function n() {
             var e
             o()(this, n)
@@ -378,10 +377,10 @@
                   n = t.focalTweetId,
                   r = t.profileUserId
                 return n
-                  ? fe(n, e.context.featureSwitches)
+                  ? le(n, e.context.featureSwitches)
                   : r
-                  ? de(r, e.context.featureSwitches)
-                  : Object(ie.e)(e.context.featureSwitches)
+                  ? fe(r, e.context.featureSwitches)
+                  : Object(oe.e)(e.context.featureSwitches)
               }),
               y()(u()(e), '_setTimelineRef', function (t) {
                 e._timeline = t
@@ -390,7 +389,7 @@
                 'active' === t && e._fetchUpdates()
               }),
               y()(u()(e), '_fetchUpdates', function () {
-                e._timeline && 'active' === re.a.currentState && e._timeline.fetchTop({})
+                e._timeline && 'active' === ne.a.currentState && e._timeline.fetchTop({})
               }),
               e
             )
@@ -400,13 +399,13 @@
               {
                 key: 'componentDidMount',
                 value: function () {
-                  re.a.addEventListener('change', this._onAppForegrounded)
+                  ne.a.addEventListener('change', this._onAppForegrounded)
                 },
               },
               {
                 key: 'componentWillUnmount',
                 value: function () {
-                  re.a.removeEventListener('change', this._onAppForegrounded)
+                  ne.a.removeEventListener('change', this._onAppForegrounded)
                 },
               },
               {
@@ -415,15 +414,15 @@
                   return O.a.createElement(
                     M.a,
                     null,
-                    O.a.createElement(te.a, {
-                      entryConfiguration: $,
+                    O.a.createElement(ee.a, {
+                      entryConfiguration: G,
                       module: this._getModule(),
-                      pollingIntervalMsOverride: se,
-                      renderUnavailable: le,
-                      scroller: ne.a,
+                      pollingIntervalMsOverride: ue,
+                      renderUnavailable: se,
+                      scroller: te.a,
                       showLoadingFooter: !1,
                       timelineRef: this._setTimelineRef,
-                      title: ce,
+                      title: ae,
                       withKeyboardShortcuts: !1,
                     }),
                   )
@@ -433,8 +432,8 @@
             n
           )
         })(O.a.Component)
-      y()(pe, 'contextType', oe.a)
-      t.default = pe
+      y()(de, 'contextType', re.a)
+      t.default = de
     },
     BxsD: function (e, t, n) {
       'use strict'

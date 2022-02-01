@@ -475,6 +475,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('gdf4b79f', 'Leave conversation?'),
           a('bbf83d83', 'This can’t be undone and the conversation history will be deleted from your inbox.'),
           a('b6878b09', 'Something went wrong. Try blocking that user again in a minute.'),
+          a('ca96fe6e', 'Something went wrong. Try unblocking that user again in a minute.'),
           a('ccf2f24e', 'Report'),
           a('ib3fe8a9', 'Block or report'),
           a('fcd4d489', function (e) {
@@ -492,7 +493,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Report @' + e.screenName
           }),
           a('ea200ba6', 'Let Twitter know about spam or abuse so we can help protect others from accounts like this.'),
-          a('ca96fe6e', 'Something went wrong. Try unblocking that user again in a minute.'),
           a('a9fd20be', 'Successfully blocked.'),
           a('e133be4e', 'Unblock'),
           a('b3e6e1e6', function (e) {
@@ -1823,6 +1823,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('dce5e1b3', 'Admin tools'),
           a('c5d8c93d', 'Moderator tools'),
           a('a0e3ece4', 'Community Detail'),
+          a('bec3b8f9', 'Share Community'),
+          a('b139b549', 'Invite members'),
           a('d601fc2f', 'Latest'),
           a('hb9400db', 'See More'),
           a('aa7ae3f6', 'Joined'),
@@ -1837,7 +1839,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a0e0a52b', function (e) {
             return '' + e.offendingRule
           }),
-          a('b139b549', 'Invite members'),
           a('c18e3a3e', 'There aren’t any Tweets in this Community'),
           a('d68146c0', 'When anyone in this Community Tweets, they’ll show up here.'),
           a('h5245afa', 'Community'),
@@ -1869,6 +1870,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('dc6ce7b4', 'Members'),
           a('ga2aa43c', 'Moderators'),
+          a('b6e22e15', 'Adding Moderators'),
+          a(
+            'd17c10d9',
+            'You will be able to add moderators here in the near future. In the meantime, you can DM @HiCommunities with your Community Name and which members you want to make moderators, and we’ll do it for you.',
+          ),
+          a('a1ecaf33', 'DM us now'),
           a('cdd87523', 'No one’s here yet'),
           a('cca5191f', 'When people join this Community, you’ll see them here.'),
           a('e442bbb4', 'Community Members'),
@@ -1901,6 +1908,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('efc26607', function (e) {
             return e.memberCount + ' member' + n(e.memberCount, '', 's')
           }),
+          a('gfccba44', 'Member requests'),
           a('adfcc3cd', 'Add, delete, or edit rules'),
           a('d0330d9c', 'View rules'),
           a('fd67f7c8', 'Edit Community name, purpose, and more'),
@@ -2221,16 +2229,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e435cdff', 'Try searching for password reset, notifications, etc'),
           a('c170a564', 'The term you entered did not bring up any results. Try a different search term.'),
           a('ba8f6f81', 'Search Settings'),
-          a('dae57a41', 'Allow all'),
-          a('i7cbc154', 'Allow some'),
+          a('dae57a41', 'Allow all')
+        a('i7cbc154', 'Allow some'),
           a('e3a761ee', 'Off'),
           a('cedbb01c', 'Legal'),
           a('b4f917d0', 'Miscellaneous'),
           a(
             'j0783ebe',
             'Check out other places for helpful information to learn more about Twitter products and services.',
-          )
-        a('c0398892', 'Release notes'),
+          ),
+          a('c0398892', 'Release notes'),
           a(
             'a5208fad',
             'Manage aspects of your Twitter experience such as limiting color contrast and motion. These settings affect all the Twitter accounts on this browser.',
@@ -3491,15 +3499,35 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'd6d80990',
             'This information applies to your browser or device while you’re logged out. It may be different when you’re logged in.',
-          ),
-          a('c036653e', 'profile'),
+          )
+        a('c036653e', 'profile'),
           a('bad6cf6e', 'your personalization and data settings'),
+          a('g2a9bd3e', 'Automated Account Labels'),
+          a('dd9b3aad', 'What’s an automated account?'),
+          a(
+            'hb6fa97c',
+            'Automated accounts are programmed to perform certain actions automatically through the Twitter API. Like Tweeting a region’s weather conditions, for example. They’re created and managed by other people on Twitter.',
+          ),
+          a(
+            'ed8c8d2d',
+            'Labels let the world know who’s managing the automated account. Once an automated account owner has connected their managing account, a label will appear on the automated account profile and Tweets.',
+          ),
+          a('b989e1fe', 'Do I need to label my automated accounts?'),
+          a('i2d599a9', 'How do I label my automated account?'),
+          a('gd5bed72', 'Create a managing account'),
+          a('g6d44431', 'A managing account is the human-run account responsible for the automated account.'),
+          a('e20a69e7', 'Connect your managing and automated account'),
+          a('d2f88358', 'Connect your accounts from the Automation page in your settings.'),
+          a('e427f632', 'Your account is labeled!'),
+          a('a4d7cff9', 'Once the accounts are connected, the automated account will have a label.'),
+          a('a18d6a7c', 'new rules'),
+          a('e9965c13', 'automated account label FAQ'),
           a('je99e595', function (e) {
             return 'User ID: ' + e.userid
           }),
           a('a781b0c6', 'profile'),
-          a('j7f91baf', ' your personalization and data settings')
-        a('d6eb9b9a', 'Twitter data'),
+          a('j7f91baf', ' your personalization and data settings'),
+          a('d6eb9b9a', 'Twitter data'),
           a(
             'b708417b',
             'You can request a ZIP file with an archive of your account information, account history, apps and devices, account activity, interests, and Ads data. You’ll get an in-app notification when the archive of your data is ready to download.',
@@ -4656,6 +4684,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g0ff1ca8', 'Join the conversation on Twitter'),
           a('g3aa4a89', 'Log in to see what’s happening'),
           a('jae84f3a', 'Currently Trending in your location'),
+          a('ae03a21c', 'See what’s happening'),
           a('d1cc8c05', 'Limit unwelcome interactions'),
           a('c1da34c2', function (e) {
             return 'We flagged ' + e.count + ' potentially abusive or spammy account' + n(e.count, '', 's') + '.'
@@ -4680,10 +4709,26 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a4645d91', 'Your saved search was deleted.'),
           a('j622effd', 'Advanced search'),
           a('i5045e73', 'Anywhere'),
-          a('h2388753', 'Near you'),
-          a('a8399d5b', function (e) {
-            return 'See Tweets about ' + e.query + ' on Twitter. See what people are saying and join the conversation.'
-          }),
+          a('h2388753', 'Near you')
+        function r(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var a = t[o]
+            ;(a.enumerable = a.enumerable || !1),
+              (a.configurable = !0),
+              'value' in a && (a.writable = !0),
+              Object.defineProperty(e, a.key, a)
+          }
+        }
+        function i(e, t) {
+          return (i =
+            Object.setPrototypeOf ||
+            function (e, t) {
+              return (e.__proto__ = t), e
+            })(e, t)
+        }
+        a('a8399d5b', function (e) {
+          return 'See Tweets about ' + e.query + ' on Twitter. See what people are saying and join the conversation.'
+        }),
           a('ge893905', function (e) {
             return 'The latest Tweets on ' + e.query + '. Read what people are saying and join the conversation.'
           }),
@@ -4704,24 +4749,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ie23eef9', 'Only show Tweets with links'),
           a('ge10bfa1', 'Include replies and original Tweets'),
           a('ab870903', 'Only show replies'),
-          a('b621568f', 'All of these words')
-        function r(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var a = t[o]
-            ;(a.enumerable = a.enumerable || !1),
-              (a.configurable = !0),
-              'value' in a && (a.writable = !0),
-              Object.defineProperty(e, a.key, a)
-          }
-        }
-        function i(e, t) {
-          return (i =
-            Object.setPrototypeOf ||
-            function (e, t) {
-              return (e.__proto__ = t), e
-            })(e, t)
-        }
-        a('cceffa5d', 'Example: what’s happening · contains both “what’s” and “happening”'),
+          a('b621568f', 'All of these words'),
+          a('cceffa5d', 'Example: what’s happening · contains both “what’s” and “happening”'),
           a('f1c5faee', 'This exact phrase'),
           a('ad10780e', 'Example: happy hour · contains the exact phrase “happy hour”'),
           a('a555a3f3', 'Any of these words'),
@@ -5979,8 +6008,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hdf72269', 'Reply'),
           a('c9940954', function (e) {
             return e.count + ' Repl' + n(e.count, 'y', 'ies') + '. Reply'
-          }),
-          a('d6c85149', 'Retweet'),
+          })
+        a('d6c85149', 'Retweet'),
           a('f3bbbb87', 'Undo Retweet'),
           a('i769b0ab', function (e) {
             return e.count + ' Retweet' + n(e.count, '', 's') + '. Retweet'
@@ -6017,10 +6046,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('a81dc154', function (e) {
             return 'Follower' + n(e.count, '', 's')
-          })
-        a('b8680362', function (e) {
-          return '' + e.formattedCount
-        }),
+          }),
+          a('b8680362', function (e) {
+            return '' + e.formattedCount
+          }),
           a('b93e3a02', function (e) {
             return 'Super Follower' + n(e.count, '', 's')
           }),
@@ -7820,6 +7849,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'f2df3f23',
                 get: function () {
                   return ['Control how Twitter customizes your experience in ']
+                },
+              },
+              {
+                key: 'j31f2f97',
+                get: function () {
+                  return ['Yes, all automated accounts need to be labeled. This is required under our ', '.']
+                },
+              },
+              {
+                key: 'ed8f77d3',
+                get: function () {
+                  return ['Learn more on the ', ' page.']
                 },
               },
               {

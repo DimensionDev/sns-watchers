@@ -4555,7 +4555,7 @@
               n = e.tokens,
               r = i()(e, ['rounded_score', 'tokens']),
               a = r.topic,
-              o = r.topic_type || H.b.Topic
+              o = H.b.Topic
             return { id: ''.concat(o, '_').concat(a.replace(' ', '_')), type: o, tokens: n, rounded_score: t, data: r }
           })
         },
@@ -4565,7 +4565,7 @@
               n = e.rounded_score,
               r = e.tokens,
               a = i()(e, ['rounded_score', 'tokens']),
-              o = a.topic_type || H.b.Event,
+              o = H.b.Event,
               c = null == a || null === (t = a.url) || void 0 === t ? void 0 : t.match(U.A.id)
             return { id: (null == c ? void 0 : c[0]) || '', type: o, tokens: r, rounded_score: n, data: a }
           })
@@ -4624,7 +4624,7 @@
                   orderedSections: a.ordered_sections,
                   events: Y(a.events),
                   topics: K(a.topics),
-                  users: Object(H.g)(o),
+                  users: Object(H.i)(o),
                   timestamp: Date.now(),
                 }
               return Object(N.a)(e, function (e) {
@@ -4697,7 +4697,7 @@
               function (e, t, n, r) {
                 if (!e || !t || t.indexOf(H.a.Users) < 0) return Object(S.a)()
                 var a = Object(J.f)(n, e)
-                return Object(H.g)(
+                return Object(H.i)(
                   a
                     .map(function (e) {
                       return r[e]
@@ -6402,7 +6402,7 @@
                         disabled: n,
                         focusable: !0,
                         onPress: this._handleClick,
-                        style: [r && _e.focused, _e.transitionStyles, i],
+                        style: [r && _e.focused, _e.transitionStyles, this._loaded && _e.loaded, i],
                         viewRef: this._onViewRef,
                       },
                       this._renderResult(),
@@ -6524,6 +6524,7 @@
               paddingHorizontal: e.componentDimensions.gutterHorizontal,
               paddingVertical: e.componentDimensions.gutterVertical,
             },
+            loaded: { opacity: 1 },
             focused: { backgroundColor: e.colors.gray0 },
             transitionStyles: { transitionProperty: 'opacity', transitionDuration: '250ms', opacity: 0 },
           }

@@ -113,8 +113,8 @@
         I = r('MWbm'),
         M = r('G8HL'),
         R = r('/yvb'),
-        H = r('t62R'),
-        L = r('k/OQ'),
+        L = r('t62R'),
+        H = r('k/OQ'),
         D = r('cHvH'),
         F = r('rHpw'),
         z = r('7JQg'),
@@ -128,7 +128,7 @@
             (t = (function (e) {
               var t = e.data.venue_id
               return {
-                attributionDetails: a.a.createElement(C.a, { style: N.icon }),
+                attributionDetails: a.a.createElement(C.a, { style: U.icon }),
                 href: 'https://foursquare.com/v/'.concat(t),
                 buttonText: B,
               }
@@ -139,8 +139,8 @@
             o = r.href
           return a.a.createElement(
             I.a,
-            { style: N.attribution },
-            a.a.createElement(I.a, { style: N.attributionDetails }, n),
+            { style: U.attribution },
+            a.a.createElement(I.a, { style: U.attributionDetails }, n),
             a.a.createElement(R.a, { link: o, size: 'xSmall', type: 'brandOutlined' }, c),
           )
         },
@@ -166,9 +166,9 @@
                 r = e.street_address
               return a.a.createElement(
                 I.a,
-                { style: N.locationDetails },
-                a.a.createElement(H.b, { size: 'headline1', weight: 'bold' }, l.full_name),
-                r ? a.a.createElement(H.b, { color: 'gray700', size: 'body' }, r) : null,
+                { style: U.locationDetails },
+                a.a.createElement(L.b, { size: 'headline1', weight: 'bold' }, l.full_name),
+                r ? a.a.createElement(L.b, { color: 'gray700', size: 'body' }, r) : null,
                 t ? V(t) : null,
               )
             },
@@ -186,7 +186,7 @@
                   label: K,
                 },
               ]
-              return a.a.createElement(L.a, { links: e })
+              return a.a.createElement(H.a, { links: e })
             },
             m = function () {
               var e = h() ? 'place:'.concat(u, ' filter:media') : 'place:'.concat(u)
@@ -210,7 +210,7 @@
                   null,
                   a.a.createElement(
                     I.a,
-                    { style: N.header },
+                    { style: U.header },
                     a.a.createElement(P.a, { fetchStatus: s, render: p }),
                     f(),
                   ),
@@ -222,7 +222,7 @@
             }),
           )
         },
-        N = F.a.create(function (e) {
+        U = F.a.create(function (e) {
           return {
             header: { backgroundColor: e.colors.cellBackground, zIndex: e.componentZIndices.appBarZIndex },
             locationDetails: {
@@ -393,7 +393,7 @@
           },
           handlers: ((n = {}), v()(n, k.Expand, x), v()(n, k.Replace, I), v()(n, k.Suggest, M), n),
         })
-      function H(e, t) {
+      function L(e, t) {
         var r = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -405,16 +405,16 @@
         }
         return r
       }
-      function L(e) {
+      function H(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? H(Object(r), !0).forEach(function (t) {
+            ? L(Object(r), !0).forEach(function (t) {
                 v()(e, t, r[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : H(Object(r)).forEach(function (t) {
+            : L(Object(r)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               })
         }
@@ -423,8 +423,8 @@
       var D = function (e) {
           var t = e.shouldStoreTypeaheadItem,
             r = e.withUserPresence
-          return L(
-            L(
+          return H(
+            H(
               {},
               Object(E.a)({
                 tweetDismissable: !0,
@@ -439,7 +439,7 @@
               return (
                 (t = {}),
                 v()(t, w.b.News, S.a),
-                v()(t, w.b.EventSummary, Object(P.a)({ errorContext: 'SEARCH_SCREEN', shouldStoreTypeaheadItem: r })),
+                v()(t, w.b.EventSummary, Object(P.a)({ shouldStoreTypeaheadItem: r })),
                 v()(t, w.b.RelatedSearch, T),
                 v()(t, w.b.FollowSearch, O.e(O.a())),
                 v()(t, w.b.FollowSearchAction, O.e(O.a())),
@@ -459,8 +459,8 @@
         B = r('i6OR'),
         V = r('X04g'),
         X = r('t62R'),
-        N = r('FIs5'),
-        U = r('v6aA'),
+        U = r('FIs5'),
+        N = r('v6aA'),
         J = r('3XMw'),
         W = r.n(J)
       function Z(e) {
@@ -526,7 +526,7 @@
                 var t = e.props,
                   r = t.emptyStateComponent,
                   n = t.query
-                return r || g.a.createElement(N.a, { header: G({ query: n }), message: Y })
+                return r || g.a.createElement(U.a, { header: G({ query: n }), message: Y })
               }),
               v()(
                 s()(e),
@@ -574,7 +574,7 @@
             r
           )
         })(g.a.Component)
-      v()($, 'contextType', U.a)
+      v()($, 'contextType', N.a)
       t.a = $
     },
     i6OR: function (e, t, r) {

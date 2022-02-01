@@ -6,47 +6,47 @@
       var t = n('I9iR'),
         a = n('3KVO'),
         o = n('yLYC'),
-        u = n('Ud88'),
+        i = n('Ud88'),
         c = (n('/2Cm'), n('aQQo').useTrackLoadQueryInRender),
-        i = (n('ERkP').useDebugValue, n('K1lQ').__internal),
-        l = i.fetchQueryDeduped,
-        s = i.fetchQuery
+        u = (n('ERkP').useDebugValue, n('K1lQ').__internal),
+        l = u.fetchQueryDeduped,
+        s = u.fetchQuery
       e.exports = function (e, r, n) {
         c()
-        var i,
-          f = u(),
+        var u,
+          f = i(),
           d = r.fetchKey,
-          y = r.fetchPolicy,
-          p = r.source,
+          p = r.fetchPolicy,
+          y = r.source,
           m = r.variables,
           h = r.networkCacheConfig,
           v = o(e, m, h)
         if ('PreloadedQuery_DEPRECATED' === r.kind)
           v.request.node.params.name !== r.name && t(!1),
-            (i = {
+            (u = {
               componentDisplayName: 'usePreloadedQuery()',
               fetchKey: d,
               fetchObservable: l(f, v.request.identifier, function () {
-                return f === r.environment && null != p
-                  ? f.executeWithSource({ operation: v, source: p })
+                return f === r.environment && null != y
+                  ? f.executeWithSource({ operation: v, source: y })
                   : f.execute({ operation: v })
               }),
-              fetchPolicy: y,
+              fetchPolicy: p,
               query: v,
               renderPolicy: null == n ? void 0 : n.UNSTABLE_renderPolicy,
             })
         else {
           var b = s(f, v)
-          i = {
+          u = {
             componentDisplayName: 'usePreloadedQuery()',
-            fetchObservable: null != p && f === r.environment ? p.ifEmpty(b) : (r.environment, b),
+            fetchObservable: null != y && f === r.environment ? y.ifEmpty(b) : (r.environment, b),
             fetchKey: d,
-            fetchPolicy: y,
+            fetchPolicy: p,
             query: v,
             renderPolicy: null == n ? void 0 : n.UNSTABLE_renderPolicy,
           }
         }
-        return a(i)
+        return a(u)
       }
     },
     '23An': function (e, r, n) {
@@ -74,26 +74,26 @@
       var t,
         a = n('ERkP'),
         o = n.n(a),
-        u = n('3XMw'),
-        c = n.n(u),
-        i = n('MWbm'),
+        i = n('3XMw'),
+        c = n.n(i),
+        u = n('MWbm'),
         l = n('t62R'),
         s = n('jhWN'),
         f = n('rHpw'),
         d = (n('enFi'), n('jAXQ')),
-        y = n.n(d),
-        p = c.a.f0c99eff,
+        p = n.n(d),
+        y = c.a.f0c99eff,
         m = void 0 !== t ? t : (t = n('XcCA'))
       r.a = function (e) {
         var r = e.style,
           n = e.user,
-          t = y()(m, n).legacy,
+          t = p()(m, n).legacy,
           a = t.profile_image_url_https,
-          u = t.screen_name
+          i = t.screen_name
         return o.a.createElement(
-          i.a,
+          u.a,
           { style: [h.signature, r] },
-          u && o.a.createElement(l.b, { color: 'gray700', weight: 'bold' }, p({ screenName: u })),
+          i && o.a.createElement(l.b, { color: 'gray700', weight: 'bold' }, y({ screenName: i })),
           a && o.a.createElement(s.a, { size: 'medium', uri: a }),
         )
       }
@@ -105,125 +105,150 @@
     },
     JWc1: function (e, r, n) {
       'use strict'
-      n('uFXj')
+      n.d(r, 'a', function () {
+        return v
+      })
+      n('uFXj'), n('kH1Z'), n('6U7i')
       var t = n('ERkP'),
         a = n.n(t),
         o = n('3XMw'),
-        u = n.n(o),
+        i = n.n(o),
         c = n('lUZE'),
-        i = n('MWbm'),
-        l = n('jhWN'),
-        s = n('j7Bv'),
-        f = n('6OUF'),
-        d = n('t62R'),
-        y = n('rHpw'),
-        p = u.a.a4ed9071,
-        m = a.a.forwardRef(function (e, r) {
+        u = n('MWbm'),
+        l = n('cHvH'),
+        s = n('rHpw'),
+        f = n('jhWN'),
+        d = n('j7Bv'),
+        p = n('6OUF'),
+        y = n('t62R'),
+        m = i.a.a4ed9071,
+        h = function (e, r) {
           var n = e.imageUrl,
             t = e.onChange,
-            o = e.value
+            o = e.style,
+            i = e.value,
+            h = Object(l.b)().windowWidth > s.a.theme.breakpoints.small
           return a.a.createElement(
-            i.a,
-            { style: h.root },
-            n ? a.a.createElement(l.a, { size: 'xxxLarge', uri: n }) : a.a.createElement(s.a, { Icon: c.a }),
+            u.a,
+            { style: [b.root, o] },
+            n
+              ? a.a.createElement(f.a, { size: h ? 'xxxLarge' : 'xLarge', uri: n })
+              : a.a.createElement(d.a, { Icon: c.a }),
             t
-              ? a.a.createElement(f.a, {
+              ? a.a.createElement(p.a, {
                   isCompact: !0,
                   leftAligned: !0,
-                  maxNumberOfLines: 4,
+                  maxLength: 140,
+                  maxNumberOfLines: Number.MAX_SAFE_INTEGER,
                   multiline: !0,
                   name: 'creatorIntro',
                   numberOfLines: 1,
                   onChange: t,
-                  placeholder: p,
+                  placeholder: m,
                   ref: r,
-                  style: [h.creatorIntroBubble, h.creatorIntroInputBubble],
-                  value: o,
+                  style: [b.creatorIntroBubble, b.creatorIntroInputBubble],
+                  value: i,
                 })
-              : a.a.createElement(d.b, { style: h.creatorIntroBubble }, o),
+              : a.a.createElement(y.b, { style: b.creatorIntroBubble }, i),
           )
+        },
+        v = a.a.forwardRef(h),
+        b = s.a.create(function (e) {
+          return {
+            root: { display: 'inline-flex', alignItems: 'start', flexDirection: 'row', gap: e.spaces.space12 },
+            creatorIntroBubble: {
+              backgroundColor: e.colors.cellBackground,
+              borderBottomLeftRadius: e.borderRadii.large,
+              borderBottomRightRadius: e.borderRadii.large,
+              borderTopLeftRadius: 0,
+              borderTopRightRadius: e.borderRadii.large,
+              boxShadow: e.boxShadows.small,
+              padding: e.spaces.space24,
+              width: '100%',
+            },
+            creatorIntroInputBubble: { padding: e.spaces.space12 },
+          }
         })
-      r.a = m
-      var h = y.a.create(function (e) {
-        return {
-          root: {
-            display: 'inline-flex',
-            alignItems: 'start',
-            flexDirection: 'row',
-            gap: e.spaces.space12,
-            marginTop: e.spaces.space32,
-          },
-          creatorIntroBubble: {
-            backgroundColor: e.colors.cellBackground,
-            borderBottomLeftRadius: e.borderRadii.large,
-            borderBottomRightRadius: e.borderRadii.large,
-            borderTopLeftRadius: 0,
-            borderTopRightRadius: e.borderRadii.large,
-            boxShadow: e.boxShadows.small,
-            padding: e.spaces.space24,
-            width: '100%',
-          },
-          creatorIntroInputBubble: { padding: e.spaces.space12 },
-        }
-      })
     },
     MAc7: function (e, r, n) {
       'use strict'
+      n.d(r, 'a', function () {
+        return v
+      })
       var t = n('97Jx'),
         a = n.n(t),
         o = n('m3Bd'),
-        u = n.n(o),
+        i = n.n(o),
         c = (n('ho0z'), n('ERkP')),
-        i = n.n(c),
-        l = n('JWc1'),
-        s = n('t62R'),
-        f = n('rHpw'),
-        d = n('3XMw'),
-        y = n.n(d),
-        p = y.a.dc71aee7,
-        m = i.a.forwardRef(function (e, r) {
+        u = n.n(c),
+        l = n('VTDR'),
+        s = n('JWc1'),
+        f = n('t62R'),
+        d = n('rHpw'),
+        p = n('3XMw'),
+        y = n.n(p),
+        m = y.a.dc71aee7,
+        h = function (e, r) {
           var n = e.name,
-            t = u()(e, ['name'])
-          return i.a.createElement(
-            i.a.Fragment,
-            null,
-            i.a.createElement(
-              s.b,
-              { accessibilityLevel: 1, accessibilityRole: 'heading', size: 'title2', weight: 'heavy' },
-              i.a.createElement(y.a.I18NFormatMessage, { $i18n: 'f402ebd1', name: n }, i.a.createElement('br', null)),
+            t = e.style,
+            o = i()(e, ['name', 'style'])
+          return u.a.createElement(
+            l.a,
+            { style: t },
+            u.a.createElement(
+              f.b,
+              { accessibilityLevel: 1, accessibilityRole: 'heading', size: 'title3', weight: 'heavy' },
+              u.a.createElement(y.a.I18NFormatMessage, { $i18n: 'f402ebd1', name: n }, u.a.createElement('br', null)),
             ),
-            i.a.createElement(s.b, { size: 'headline2', style: h.subheader }, p),
-            i.a.createElement(l.a, a()({}, t, { ref: r })),
+            u.a.createElement(f.b, { style: b.subheader }, m),
+            u.a.createElement(s.a, a()({}, o, { ref: r, style: b.intro })),
           )
-        }),
-        h = f.a.create(function (e) {
-          return { subheader: { paddingTop: e.spaces.space8 } }
+        },
+        v = u.a.forwardRef(h),
+        b = d.a.create(function (e) {
+          return { subheader: { marginTop: e.spaces.space8 }, intro: { marginTop: e.spaces.space36 } }
         })
-      r.a = m
     },
     VTDR: function (e, r, n) {
       'use strict'
       n.d(r, 'a', function () {
-        return i
+        return l
       })
       var t = n('ERkP'),
         a = n.n(t),
         o = n('MWbm'),
-        u = n('rHpw'),
-        c = n('+Eiw'),
-        i = function () {
-          return a.a.createElement(o.a, { style: l.blob })
+        i = n('cHvH'),
+        c = n('rHpw'),
+        u = n('+Eiw'),
+        l = function (e) {
+          var r = e.children,
+            n = e.style,
+            t = Object(i.b)().windowWidth > c.a.theme.breakpoints.medium
+          return a.a.createElement(
+            o.a,
+            { style: [s.root, t && s.rootWide, n] },
+            a.a.createElement(o.a, { style: s.blob }),
+            r,
+          )
         },
-        l = u.a.create(function (e) {
+        s = c.a.create(function (e) {
           return {
+            root: {
+              minHeight: 240,
+              paddingBottom: e.spaces.space16,
+              paddingHorizontal: e.spaces.space32,
+              paddingTop: e.spaces.space48,
+              position: 'relative',
+            },
+            rootWide: { paddingHorizontal: e.spaces.space48 },
             blob: {
-              backgroundImage: c.a.getBackgroundImage(),
-              clipPath: 'ellipse(450px 320px at 33% 0%)',
+              backgroundImage: u.a.getBackgroundImage(),
+              clipPath: 'ellipse(100% 100% at 38% 0%)',
               position: 'absolute',
               left: 0,
               right: 0,
               top: 0,
-              height: 320,
+              height: '100%',
               zIndex: -1,
             },
           }
@@ -263,41 +288,41 @@
       var t = n('IGGJ')(n('K1iM')),
         a = n('23An'),
         o = n('Ud88'),
-        u = n('aQQo'),
-        c = u.loadQuery,
-        i = u.useTrackLoadQueryInRender,
+        i = n('aQQo'),
+        c = i.loadQuery,
+        u = i.useTrackLoadQueryInRender,
         l = n('ERkP'),
         s = l.useCallback,
         f = l.useEffect,
         d = l.useRef,
-        y = l.useState,
-        p = n('K1lQ').getRequest,
+        p = l.useState,
+        y = n('K1lQ').getRequest,
         m = { kind: 'NullQueryReference' }
       function h(e) {
         return 'PreloadableConcreteRequest' === e.kind
           ? void 0 !== e.params.metadata.live
-          : void 0 !== p(e).params.metadata.live
+          : void 0 !== y(e).params.metadata.live
       }
       e.exports = function (e, r) {
         var n = null != r ? r : m,
-          u = o()
-        i()
+          i = o()
+        u()
         var l = a(),
-          p = d(new Set([n])),
-          v = y(function () {
+          y = d(new Set([n])),
+          v = p(function () {
             return n
           }),
           b = v[0],
           g = v[1],
-          E = y(function () {
+          E = p(function () {
             return n
           }),
           k = E[0],
           R = E[1]
-        n !== k && (p.current.add(n), R(n), g(n))
+        n !== k && (y.current.add(n), R(n), g(n))
         var w = s(
             function () {
-              l.current && (p.current.add(m), g(m))
+              l.current && (y.current.add(m), g(m))
             },
             [l],
           ),
@@ -313,11 +338,11 @@
                   : n
               if (l.current) {
                 var a,
-                  o = c(null !== (a = null == n ? void 0 : n.__environment) && void 0 !== a ? a : u, e, r, t)
-                p.current.add(o), g(o)
+                  o = c(null !== (a = null == n ? void 0 : n.__environment) && void 0 !== a ? a : i, e, r, t)
+                y.current.add(o), g(o)
               }
             },
-            [u, e, g, l],
+            [i, e, g, l],
           ),
           P = d(!1)
         return (
@@ -336,7 +361,7 @@
                     C(b.variables, { fetchPolicy: b.fetchPolicy, networkCacheConfig: b.networkCacheConfig })
                   )
                 )
-              var r = p.current
+              var r = y.current
               if (l.current) {
                 var n,
                   a = (0, t.default)(r)
@@ -348,8 +373,8 @@
                       'NullQueryReference' !== o.kind &&
                         (h(e) ? o.dispose && o.dispose() : o.releaseQuery && o.releaseQuery())
                   }
-                } catch (u) {
-                  a.e(u)
+                } catch (i) {
+                  a.e(i)
                 } finally {
                   a.f()
                 }
@@ -361,7 +386,7 @@
             function () {
               return function () {
                 var r,
-                  n = (0, t.default)(p.current)
+                  n = (0, t.default)(y.current)
                 try {
                   for (n.s(); !(r = n.n()).done; ) {
                     var a = r.value
@@ -384,21 +409,21 @@
     n0Rl: function (e, r, n) {
       'use strict'
       n.d(r, 'b', function () {
-        return M
+        return T
       })
       n('OZaJ')
       var t = n('ddV6'),
         a = n.n(t),
         o = n('VrFO'),
-        u = n.n(o),
+        i = n.n(o),
         c = n('Y9Ll'),
-        i = n.n(c),
+        u = n.n(c),
         l = n('1Pcy'),
         s = n.n(l),
         f = n('5Yy7'),
         d = n.n(f),
-        y = n('N+ot'),
-        p = n.n(y),
+        p = n('N+ot'),
+        y = n.n(p),
         m = n('AuHH'),
         h = n.n(m),
         v = n('KEM+'),
@@ -415,15 +440,15 @@
       })
       var x = n('fs1G'),
         I = n('0KEI'),
-        Q = n('lU4h'),
-        L = n.n(Q),
+        L = n('lU4h'),
+        Q = n.n(L),
         _ = n('21nk'),
         A = n.n(_),
         D = n('bCEw'),
         S = n.n(D),
-        B = n('Ud88'),
-        F = n.n(B)
-      function N(e) {
+        H = n('Ud88'),
+        N = n.n(H)
+      function O(e) {
         var r = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -441,23 +466,23 @@
             var a = h()(this).constructor
             n = Reflect.construct(t, arguments, a)
           } else n = t.apply(this, arguments)
-          return p()(this, n)
+          return y()(this, n)
         }
       }
-      var O = function (e) {
+      var B = function (e) {
           return (0, e.render)({ fetchStatus: P.a.LOADING, data: null, error: null, retry: x.a })
         },
-        K = (function (e) {
+        F = (function (e) {
           d()(n, e)
-          var r = N(n)
+          var r = O(n)
           function n() {
             var e
-            u()(this, n)
+            i()(this, n)
             for (var t = arguments.length, a = new Array(t), o = 0; o < t; o++) a[o] = arguments[o]
             return (e = r.call.apply(r, [this].concat(a))), b()(s()(e), 'state', { error: null }), e
           }
           return (
-            i()(
+            u()(
               n,
               [
                 {
@@ -486,51 +511,51 @@
             n
           )
         })(E.a.Component),
-        U = function (e) {
+        W = function (e) {
           var r = e.query,
             n = e.queryRef,
             t = e.render,
             a = A()(r, n)
           return t({ fetchStatus: P.a.LOADED, data: a, error: null, retry: x.a })
         },
-        M = function (e, r) {
+        T = function (e, r) {
           if (R.canUseDOM)
             return function (n) {
               var t = n.fetchPolicy,
                 o = void 0 === t ? 'store-or-network' : t,
-                u = n.render,
+                i = n.render,
                 c = n.variables,
-                i = S()(e),
-                l = a()(i, 2),
+                u = S()(e),
+                l = a()(u, 2),
                 s = l[0],
                 f = l[1],
                 d = Object(I.useCreateLocalApiErrorHandler)(r.errorConfig.context),
-                y = L()(c),
-                p = a()(y, 1)[0],
+                p = Q()(c),
+                y = a()(p, 1)[0],
                 m = E.a.useCallback(
                   function () {
-                    f(p, { fetchPolicy: 'network-only' })
+                    f(y, { fetchPolicy: 'network-only' })
                   },
-                  [f, p],
+                  [f, y],
                 )
               return (
                 E.a.useLayoutEffect(
                   function () {
-                    f(p, { fetchPolicy: o })
+                    f(y, { fetchPolicy: o })
                   },
-                  [o, f, p],
+                  [o, f, y],
                 ),
                 s
                   ? E.a.createElement(
                       E.a.Suspense,
-                      { fallback: E.a.createElement(O, { render: u }) },
+                      { fallback: E.a.createElement(B, { render: i }) },
                       E.a.createElement(
-                        K,
+                        F,
                         { errorHandler: d(r.errorConfig.options || {}), key: s.fetchKey, retry: m },
                         function (r, n) {
                           return r
-                            ? u({ fetchStatus: P.a.FAILED, error: r, data: null, retry: n })
-                            : E.a.createElement(U, { query: e, queryRef: s, render: u })
+                            ? i({ fetchStatus: P.a.FAILED, error: r, data: null, retry: n })
+                            : E.a.createElement(W, { query: e, queryRef: s, render: i })
                         },
                       ),
                     )
@@ -541,10 +566,10 @@
           return function (t) {
             t.fetchPolicy
             var o = t.render,
-              u = t.variables,
-              c = F()(),
-              i = Object(I.useCreateLocalApiErrorHandler)(r.errorConfig.context),
-              l = L()(u),
+              i = t.variables,
+              c = N()(),
+              u = Object(I.useCreateLocalApiErrorHandler)(r.errorConfig.context),
+              l = Q()(i),
               s = a()(l, 1)[0],
               f = n.get(c)
             if (f) return f
@@ -557,7 +582,7 @@
                   },
                   function (e) {
                     return e instanceof k.a
-                      ? (i(r.errorConfig.options || {})(e),
+                      ? (u(r.errorConfig.options || {})(e),
                         o({ fetchStatus: P.a.FAILED, data: null, error: e, retry: x.a }))
                       : E.a.createElement(function () {
                           throw e

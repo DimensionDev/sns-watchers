@@ -4259,7 +4259,7 @@
         }
         null != w &&
           w.is_space_available_for_replay &&
-          (j.Running ? (j.recording = !0) : j.Ended && (j.replayable = !0))
+          (j.Running ? (j.recording = !0) : (j.Ended || j.TimedOut) && (j.replayable = !0))
         var A = 'live_not_recording'
         null != w && w.is_space_available_for_replay && (A = j.Running ? 'live_recording' : 'replay')
         var z = O.createScribeFunction({

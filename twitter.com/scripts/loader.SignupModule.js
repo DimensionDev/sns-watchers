@@ -114,10 +114,10 @@
           return J
         }),
         n.d(t, 'updateLanguage', function () {
-          return X
+          return W
         }),
         n.d(t, 'updateInterest', function () {
-          return W
+          return X
         }),
         n.d(t, 'fetchPreferencesIfNeeded', function () {
           return Y
@@ -382,7 +382,7 @@
             return t($(a))
           }
         },
-        X = function (e, t) {
+        W = function (e, t) {
           return function (n, r) {
             if (Object(f.a)(e)) return Promise.resolve()
             var a = r(),
@@ -399,7 +399,7 @@
             return n($(u))
           }
         },
-        W = function (e, t, n) {
+        X = function (e, t, n) {
           return function (r, a) {
             if (Object(f.a)(e) || -1 === ['ads', 'partner'].indexOf(n)) return Promise.resolve()
             var o = 'partner' === n,
@@ -1051,20 +1051,21 @@
                 var e = window.google,
                   t = o.props,
                   n = t.buttonState,
-                  r = t.displayType,
-                  a = t.userLanguage,
-                  i = n === P.a.SignUp ? L.d.SignUp : L.d.SignIn,
-                  s = r !== L.e.Prompt && o._buttonInitialized
+                  r = t.customWidth,
+                  a = t.displayType,
+                  i = t.userLanguage,
+                  s = n === P.a.SignUp ? L.d.SignUp : L.d.SignIn,
+                  c = a !== L.e.Prompt && o._buttonInitialized
                 e &&
-                  s &&
+                  c &&
                   e.accounts.id.renderButton(o._viewRef.current, {
                     theme: 'outline',
                     size: 'large',
                     shape: 'circle',
-                    locale: a,
+                    locale: i,
                     logo_alignment: 'center',
-                    text: i,
-                    width: L.b,
+                    text: s,
+                    width: r || L.b,
                   })
               }),
               b()(c()(o), '_renderGoogleOneTapPrompt', function () {

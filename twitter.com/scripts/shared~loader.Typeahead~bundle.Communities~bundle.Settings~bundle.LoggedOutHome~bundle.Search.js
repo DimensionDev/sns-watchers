@@ -900,7 +900,7 @@
                         disabled: n,
                         focusable: !0,
                         onPress: this._handleClick,
-                        style: [r && _e.focused, _e.transitionStyles, o],
+                        style: [r && _e.focused, _e.transitionStyles, this._loaded && _e.loaded, o],
                         viewRef: this._onViewRef,
                       },
                       this._renderResult(),
@@ -1022,6 +1022,7 @@
               paddingHorizontal: e.componentDimensions.gutterHorizontal,
               paddingVertical: e.componentDimensions.gutterVertical,
             },
+            loaded: { opacity: 1 },
             focused: { backgroundColor: e.colors.gray0 },
             transitionStyles: { transitionProperty: 'opacity', transitionDuration: '250ms', opacity: 0 },
           }
