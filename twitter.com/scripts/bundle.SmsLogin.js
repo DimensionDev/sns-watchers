@@ -19,37 +19,37 @@
         m = n('N+ot'),
         p = n.n(m),
         f = n('AuHH'),
-        d = n.n(f),
-        h = n('KEM+'),
-        b = n.n(h),
+        h = n.n(f),
+        b = n('KEM+'),
+        d = n.n(b),
         g = (n('MvUL'), n('KqXw'), n('ERkP')),
         y = n.n(g),
-        v = n('zh9S'),
-        _ = n('RqPI'),
+        _ = n('zh9S'),
+        v = n('RqPI'),
         E = n('hqKg'),
         L = n('0KEI'),
         S = n('oEGd'),
         O = n('kGix'),
-        k = n('G6rE'),
-        w = Object(E.createSelector)(
+        w = n('G6rE'),
+        k = Object(E.createSelector)(
           function (e) {
-            var t = _.h(e)
-            return t ? Object(k.f)(['screen_name'])(e, t) : O.a.LOADING
+            var t = v.h(e)
+            return t ? Object(w.f)(['screen_name'])(e, t) : O.a.LOADING
           },
-          _.u,
+          v.u,
           O.d,
         ),
         P = Object(E.createSelector)(
-          w,
+          k,
           function (e) {
-            var t = _.h(e),
-              n = t && k.e.select(e, t)
+            var t = v.h(e),
+              n = t && w.e.select(e, t)
             return n && n.screen_name
           },
-          _.t,
-          _.h,
-          _.r,
-          _.g,
+          v.t,
+          v.h,
+          v.r,
+          v.g,
           function (e, t, n, r, i, o) {
             var a = n ? 'true' === n.sms.eligible : void 0
             return {
@@ -65,22 +65,22 @@
         ),
         R = {
           createLocalApiErrorHandler: Object(L.createLocalApiErrorHandlerWithContextFactory)('SMS_LOGIN_SCREEN'),
-          fetchOneUserIfNeeded: k.e.fetchOneIfNeeded,
-          fetchOneFactorLoginEligibility: _.c,
-          scribeAction: v.c,
-          setLoginReturnPath: _.z,
+          fetchOneUserIfNeeded: w.e.fetchOneIfNeeded,
+          fetchOneFactorLoginEligibility: v.c,
+          scribeAction: _.c,
+          setLoginReturnPath: v.z,
         },
         B = Object(S.g)(P, R),
         j = n('GOQE'),
-        C = n('v//M'),
-        T = n('3XMw'),
-        N = n.n(T),
-        A = n('lUZE'),
-        I = n('6oVL'),
-        F = n('yoO3'),
-        U = 'legalTerm',
-        D = n('fEA7'),
-        x = n.n(D),
+        T = n('v//M'),
+        C = n('3XMw'),
+        A = n.n(C),
+        N = n('lUZE'),
+        F = n('6oVL'),
+        U = n('yoO3'),
+        D = 'legalTerm',
+        I = n('fEA7'),
+        x = n.n(I),
         M = n('mw9i'),
         H = n('t62R'),
         z = n('rHpw'),
@@ -102,7 +102,7 @@
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
             ? q(Object(n), !0).forEach(function (t) {
-                b()(e, t, n[t])
+                d()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
@@ -125,21 +125,21 @@
         })()
         return function () {
           var n,
-            r = d()(e)
+            r = h()(e)
           if (t) {
-            var i = d()(this).constructor
+            var i = h()(this).constructor
             n = Reflect.construct(r, arguments, i)
           } else n = r.apply(this, arguments)
           return p()(this, n)
         }
       }
-      var W = N.a.f0816dee,
-        J = N.a.f9c558ae,
-        X = N.a.haa104f0,
-        Y = N.a.h25bc383,
-        Z = N.a.ecde12c1,
-        Q = N.a.j4824c52,
-        $ = N.a.fca32b2f,
+      var W = A.a.f0816dee,
+        J = A.a.f9c558ae,
+        X = A.a.haa104f0,
+        Y = A.a.h25bc383,
+        Z = A.a.ecde12c1,
+        Q = A.a.j4824c52,
+        $ = A.a.fca32b2f,
         ee = (function (e) {
           u()(n, e)
           var t = V(n)
@@ -148,7 +148,7 @@
             return (
               i()(this, n),
               (r = t.call(this, e)),
-              b()(l()(r), '_renderContent', function () {
+              d()(l()(r), '_renderContent', function () {
                 var e = r.props,
                   t = e.loginReturnPath,
                   n = e.phoneNumber,
@@ -157,7 +157,7 @@
                 return y.a.createElement(
                   M.a,
                   { style: te.root, withGutter: !0 },
-                  y.a.createElement(A.a, { style: te.icon }),
+                  y.a.createElement(N.a, { style: te.icon }),
                   y.a.createElement(
                     H.b,
                     {
@@ -175,7 +175,7 @@
                     Z({ phoneNumber: n }),
                   ),
                   y.a.createElement(
-                    I.a,
+                    F.a,
                     {
                       formActionUrl: '/login/error_options_sms',
                       loginReturnPath: t,
@@ -209,14 +209,14 @@
                         link: o,
                         onClick: r._handleUpdatePhoneNumberClick,
                         size: 'subtext2',
-                        testID: U,
+                        testID: D,
                       },
                       $,
                     ),
                   ),
                 )
               }),
-              b()(l()(r), '_handleFetchUserAndLoginEligibility', function () {
+              d()(l()(r), '_handleFetchUserAndLoginEligibility', function () {
                 var e = r.props,
                   t = e.createLocalApiErrorHandler,
                   n = e.fetchOneFactorLoginEligibility,
@@ -224,18 +224,18 @@
                   o = e.userId
                 o ? (n().catch(t()), i(o).catch(t(j.a))) : r._redirectToLoginPage()
               }),
-              b()(l()(r), '_handleScribePasswordLoginClick', function () {
+              d()(l()(r), '_handleScribePasswordLoginClick', function () {
                 var e = r.props
                 ;(0, e.scribeAction)(K(K({}, e.scribeNamespace), {}, { element: 'password_login', action: 'click' }))
               }),
-              b()(l()(r), '_handleUpdatePhoneNumberClick', function () {
+              d()(l()(r), '_handleUpdatePhoneNumberClick', function () {
                 var e = r.props,
                   t = e.scribeAction,
                   n = e.scribeNamespace
                 ;(0, e.setLoginReturnPath)('/settings/phone'),
                   t(K(K({}, n), {}, { element: 'update_phone_number', action: 'click' }))
               }),
-              b()(l()(r), '_redirectToLoginPage', function (e) {
+              d()(l()(r), '_redirectToLoginPage', function (e) {
                 var t = r.props,
                   n = t.history,
                   i = t.shouldRedirectToEmailLiteLogin,
@@ -269,9 +269,9 @@
                 value: function () {
                   var e = this.props.fetchStatus
                   return y.a.createElement(
-                    F.a,
+                    U.a,
                     null,
-                    y.a.createElement(C.a, {
+                    y.a.createElement(T.a, {
                       accessibilityLabel: W,
                       fetchStatus: e,
                       onRequestRetry: this._handleFetchUserAndLoginEligibility,
@@ -284,7 +284,7 @@
             n
           )
         })(y.a.Component)
-      b()(ee, 'defaultProps', { loginReturnPath: '/' })
+      d()(ee, 'defaultProps', { loginReturnPath: '/' })
       var te = z.a.create(function (e) {
         return {
           root: { marginTop: e.spaces.space48 },
@@ -312,28 +312,28 @@
         m = n('5Yy7'),
         p = n.n(m),
         f = n('N+ot'),
-        d = n.n(f),
-        h = n('AuHH'),
-        b = n.n(h),
+        h = n.n(f),
+        b = n('AuHH'),
+        d = n.n(b),
         g = n('KEM+'),
         y = n.n(g),
-        v = (n('2G9S'), n('MvUL'), n('KqXw'), n('Ysgh'), n('ERkP')),
-        _ = n.n(v),
+        _ = (n('2G9S'), n('MvUL'), n('KqXw'), n('Ysgh'), n('ERkP')),
+        v = n.n(_),
         E = n('3XMw'),
         L = n.n(E),
         S = n('cnVF'),
         O = n('Ukpf'),
-        k = n('BTou'),
-        w = n('mrHL'),
+        w = n('BTou'),
+        k = n('mrHL'),
         P = 'LoginForm_Login_Button',
         R = n('fEA7'),
         B = n.n(R),
         j = n('MWbm'),
-        C = n('Irs7'),
-        T = n('v6aA'),
-        N = n('/yvb'),
-        A = n('rHpw')
-      function I(e) {
+        T = n('Irs7'),
+        C = n('v6aA'),
+        A = n('/yvb'),
+        N = n('rHpw')
+      function F(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -346,18 +346,18 @@
         })()
         return function () {
           var n,
-            r = b()(e)
+            r = d()(e)
           if (t) {
-            var i = b()(this).constructor
+            var i = d()(this).constructor
             n = Reflect.construct(r, arguments, i)
           } else n = r.apply(this, arguments)
-          return d()(this, n)
+          return h()(this, n)
         }
       }
-      var F = L.a.e919c3bc,
-        U = (function (e) {
+      var U = L.a.e919c3bc,
+        D = (function (e) {
           p()(n, e)
-          var t = I(n)
+          var t = F(n)
           function n() {
             var e
             a()(this, n)
@@ -369,7 +369,7 @@
                 var t = e.props,
                   n = t.analytics,
                   r = t.onSubmit
-                if ((n.scribe({ action: 'submit' }), k.a.flushHTMLCache(), e._setLoginCookie(), r))
+                if ((n.scribe({ action: 'submit' }), w.a.flushHTMLCache(), e._setLoginCookie(), r))
                   return r(e._form.elements), !1
               }),
               y()(u()(e), '_handleSubmitButtonClick', function () {
@@ -381,7 +381,7 @@
               y()(u()(e), '_setLoginCookie', function () {
                 var t = new Date(Date.now())
                 t.setTime(t.getTime() + 3e5),
-                  Object(w.e)(S.q, e._mobileLoginToken, {
+                  Object(k.e)(S.q, e._mobileLoginToken, {
                     featureSwitches: e.context.featureSwitches,
                     cookieOptions: { domain: void 0, expires: t },
                   })
@@ -419,31 +419,31 @@
                     m = e.submitButtonType,
                     p = 'string' == typeof a ? a.split('?') : [],
                     f = i()(p, 2),
-                    d = f[0],
-                    h = f[1],
-                    b = encodeURI(d || '/'),
-                    g = h ? '?'.concat(h) : '',
-                    y = ''.concat('').concat(b).concat(g),
-                    v = _.a.createElement(
+                    h = f[0],
+                    b = f[1],
+                    d = encodeURI(h || '/'),
+                    g = b ? '?'.concat(b) : '',
+                    y = ''.concat('').concat(d).concat(g),
+                    _ = v.a.createElement(
                       j.a,
-                      { style: o && D.horizontalFields },
-                      _.a.createElement('input', { name: 'redirect_after_login', type: 'hidden', value: y }),
-                      _.a.createElement('input', { name: 'remember_me', type: 'hidden', value: '1' }),
-                      _.a.createElement('input', {
+                      { style: o && I.horizontalFields },
+                      v.a.createElement('input', { name: 'redirect_after_login', type: 'hidden', value: y }),
+                      v.a.createElement('input', { name: 'remember_me', type: 'hidden', value: '1' }),
+                      v.a.createElement('input', {
                         name: 'authenticity_token',
                         type: 'hidden',
                         value: this._mobileLoginToken,
                       }),
-                      _.a.createElement('input', { name: 'wfa', type: 'hidden', value: '1' }),
-                      _.a.createElement('input', { autoComplete: 'off', name: 'ui_metrics', type: 'hidden' }),
+                      v.a.createElement('input', { name: 'wfa', type: 'hidden', value: '1' }),
+                      v.a.createElement('input', { autoComplete: 'off', name: 'ui_metrics', type: 'hidden' }),
                       t,
                       r
                         ? null
-                        : _.a.createElement(
+                        : v.a.createElement(
                             j.a,
-                            { style: o && D.loginButtonContainer },
-                            _.a.createElement(
-                              N.a,
+                            { style: o && I.loginButtonContainer },
+                            v.a.createElement(
+                              A.a,
                               {
                                 disabled: c,
                                 onPress: this._handleSubmitButtonClick,
@@ -456,12 +456,12 @@
                             ),
                           ),
                     )
-                  return _.a.createElement(
+                  return v.a.createElement(
                     j.a,
-                    { style: D.loginForm },
-                    _.a.createElement('form', {
+                    { style: I.loginForm },
+                    v.a.createElement('form', {
                       action: n,
-                      children: v,
+                      children: _,
                       method: 'post',
                       noValidate: !0,
                       onSubmit: this._handleSubmit,
@@ -473,56 +473,24 @@
             ]),
             n
           )
-        })(_.a.Component)
-      y()(U, 'contextType', T.a),
-        y()(U, 'defaultProps', {
+        })(v.a.Component)
+      y()(D, 'contextType', C.a),
+        y()(D, 'defaultProps', {
           autoSubmit: !1,
           formActionUrl: '/sessions',
           hideSubmitButton: !1,
           submitButtonDisabled: !1,
-          submitButtonLabel: F,
+          submitButtonLabel: U,
           submitButtonType: 'brandFilled',
         })
-      var D = A.a.create(function (e) {
+      var I = N.a.create(function (e) {
         return {
           horizontalFields: { flexDirection: 'row', justifyContent: 'center', alignItems: 'stretch' },
           loginForm: { width: '100%' },
           loginButtonContainer: { flexDirection: 'column', justifyContent: 'center' },
         }
       })
-      t.a = Object(C.a)(U, { element: 'inline_login_form' })
-    },
-    Ukpf: function (e, t, n) {
-      'use strict'
-      var r = {
-        inject: function (e) {
-          var t = e.callback,
-            n = e.scriptId,
-            r = e.src
-          if (document.getElementById(n)) t && t()
-          else {
-            var i = document.createElement('script')
-            ;(i.src = r),
-              (i.id = n),
-              (i.async = !0),
-              (i.defer = !0),
-              document.body.appendChild(i),
-              (i.onload = function () {
-                t && t()
-              })
-          }
-        },
-        replace: function (e) {
-          var t,
-            n = e.callback,
-            i = e.scriptId,
-            o = e.src,
-            a = document.getElementById(i)
-          a && (null === (t = a.parentNode) || void 0 === t || t.removeChild(a))
-          r.inject({ callback: n, scriptId: i, src: o })
-        },
-      }
-      t.a = r
+      t.a = Object(T.a)(D, { element: 'inline_login_form' })
     },
   },
 ])

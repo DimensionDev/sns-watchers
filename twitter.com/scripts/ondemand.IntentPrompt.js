@@ -5,7 +5,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'IntentPrompt', function () {
-          return Be
+          return Re
         })
       n('OZaJ'), n('+KXO'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
       var o,
@@ -31,52 +31,52 @@
         S = n('XOJV'),
         L = n('G6rE'),
         T = n('rxPX'),
-        E = n('0KEI'),
-        P = n('3XMw'),
-        I = n.n(P),
-        A = n('XEYr'),
-        C = n('iGRG'),
+        P = n('0KEI'),
+        E = n('3XMw'),
+        A = n.n(E),
+        C = n('XEYr'),
+        I = n('iGRG'),
         O = n('vbWy'),
         x = n('rHpw'),
-        B = n('PSpH'),
-        R = n('pwey'),
-        F = n('uCrx'),
-        j = n('Hp3u'),
-        M = n('yVEN'),
+        R = n('PSpH'),
+        F = n('pwey'),
+        B = n('uCrx'),
+        M = n('Hp3u'),
+        j = n('yVEN'),
         D = n('jwTb'),
-        N = 'follow',
-        H = 'like',
+        H = 'follow',
+        N = 'like',
         U = 'reply',
         z = 'retweet',
         X = 'tweet',
-        V = ((o = {}), y()(o, H, k.a.like), y()(o, z, k.a.retweet), o),
-        G = I.a.c150ba67,
-        J = I.a.cfd2f35d,
-        Y = I.a.f8e2163e,
-        K = I.a.e919c3bc,
-        W = I.a.f9f9210c,
-        q = I.a.af5cd00d,
-        Z = I.a.fe731015,
-        Q = I.a.bac8f4c1,
+        V = ((o = {}), y()(o, N, k.a.like), y()(o, z, k.a.retweet), o),
+        G = A.a.c150ba67,
+        J = A.a.cfd2f35d,
+        Y = A.a.f8e2163e,
+        K = A.a.e919c3bc,
+        W = A.a.f9f9210c,
+        q = A.a.af5cd00d,
+        Z = A.a.fe731015,
+        Q = A.a.bac8f4c1,
         $ = {
           follow: {
-            loggedIn: { heading: G, description: I.a.a36d354e, confirm: I.a.eb5f060b, cancel: J },
-            loggedOut: { heading: Y, description: I.a.feccfd6d, confirm: K, secondaryAction: W },
+            loggedIn: { heading: G, description: A.a.a36d354e, confirm: A.a.eb5f060b, cancel: J },
+            loggedOut: { heading: Y, description: A.a.feccfd6d, confirm: K, secondaryAction: W },
           },
           like: {
-            loggedIn: { heading: G, description: I.a.bb823968, confirm: Z, cancel: J },
-            loggedInMisinfo: { heading: I.a.a3c87901, description: I.a.j8eff20a, confirm: I.a.af5cd00d, cancel: Z },
-            loggedOut: { heading: Y, description: I.a.i171a982, confirm: K, secondaryAction: W },
+            loggedIn: { heading: G, description: A.a.bb823968, confirm: Z, cancel: J },
+            loggedInMisinfo: { heading: A.a.a3c87901, description: A.a.j8eff20a, confirm: A.a.af5cd00d, cancel: Z },
+            loggedOut: { heading: Y, description: A.a.i171a982, confirm: K, secondaryAction: W },
           },
-          reply: { loggedOut: { heading: Y, description: I.a.bdbebf63, confirm: K, secondaryAction: I.a.a565833d } },
+          reply: { loggedOut: { heading: Y, description: A.a.bdbebf63, confirm: K, secondaryAction: A.a.a565833d } },
           retweet: {
-            loggedIn: { heading: G, description: I.a.fa067de6, confirm: Q, cancel: J },
-            loggedInMisinfo: { heading: I.a.fdfe7016, description: I.a.ce6df39e, confirm: q, cancel: Q },
-            loggedOut: { heading: Y, description: I.a.h126d003, confirm: K, secondaryAction: W },
+            loggedIn: { heading: G, description: A.a.fa067de6, confirm: Q, cancel: J },
+            loggedInMisinfo: { heading: A.a.fdfe7016, description: A.a.ce6df39e, confirm: q, cancel: Q },
+            loggedOut: { heading: Y, description: A.a.h126d003, confirm: K, secondaryAction: W },
           },
-          tweet: { loggedOut: { heading: Y, description: I.a.had58d0f, confirm: K, secondaryAction: I.a.a565833d } },
+          tweet: { loggedOut: { heading: Y, description: A.a.had58d0f, confirm: K, secondaryAction: A.a.a565833d } },
         },
-        ee = { follow: R.a, like: F.a, reply: j.a, retweet: M.a, tweet: D.a },
+        ee = { follow: F.a, like: B.a, reply: M.a, retweet: j.a, tweet: D.a },
         te = x.a.create(function (e) {
           return {
             follow: { color: e.colors.primary },
@@ -95,7 +95,7 @@
             text: t ? (n ? o.loggedInMisinfo : o.loggedIn) : o.loggedOut,
           }
         },
-        oe = { follow: B.a, like: A.a, retweet: O.a, react: C.a },
+        oe = { follow: R.a, like: C.a, retweet: O.a, react: I.a },
         re = function (e, t) {
           return oe['like' === e && t ? 'react' : e]
         },
@@ -105,10 +105,10 @@
           switch (n.pathname) {
             case '/intent/follow':
             case '/intent/user':
-              return N
+              return H
             case '/intent/like':
             case '/intent/favorite':
-              return H
+              return N
             case '/intent/retweet':
               return z
             case '/intent/tweet':
@@ -141,7 +141,7 @@
           .propsFromActions(function () {
             return {
               addToast: v.b,
-              createLocalApiErrorHandler: Object(E.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(P.createLocalApiErrorHandlerWithContextFactory)(
                 'INTENT_PROMPT_CONTAINER',
               ),
               onFollow: L.e.follow,
@@ -181,10 +181,10 @@
           return f()(this, n)
         }
       }
-      var ve = I.a.d1091f50,
-        ke = I.a.eab9ceb1,
-        Se = I.a.hd50e063,
-        Le = I.a.e919c3bc,
+      var ve = A.a.d1091f50,
+        ke = A.a.eab9ceb1,
+        Se = A.a.hd50e063,
+        Le = A.a.e919c3bc,
         Te = (function (e) {
           d()(n, e)
           var t = we(n)
@@ -204,11 +204,11 @@
                   null,
                   _.a.createElement(
                     me.a,
-                    { style: Ee.contentHeader },
-                    t ? _.a.createElement(t, { style: [Ee.icon, i] }) : null,
+                    { style: Pe.contentHeader },
+                    t ? _.a.createElement(t, { style: [Pe.icon, i] }) : null,
                     r ? _.a.createElement(he.b, { size: 'headline1', weight: 'bold' }, r) : null,
                   ),
-                  n ? _.a.createElement(he.b, { color: 'gray700', style: Ee.secondaryText }, n) : null,
+                  n ? _.a.createElement(he.b, { color: 'gray700', style: Pe.secondaryText }, n) : null,
                 )
               }),
               y()(l()(o), '_renderLoginForm', function () {
@@ -217,8 +217,8 @@
                 return _.a.createElement(
                   pe.a,
                   { autoSubmit: e, hideSubmitButton: !0, loginReturnPath: t },
-                  _.a.createElement(_e.b, { onSubmitEditing: o._handleSubmit, style: Ee.textFieldContainer }),
-                  _.a.createElement(_e.a, { onSubmitEditing: o._handleSubmit, style: Ee.textFieldContainer }),
+                  _.a.createElement(_e.b, { onSubmitEditing: o._handleSubmit, style: Pe.textFieldContainer }),
+                  _.a.createElement(_e.a, { onSubmitEditing: o._handleSubmit, style: Pe.textFieldContainer }),
                   o._renderLinks(),
                 )
               }),
@@ -244,7 +244,7 @@
                   r = e.submitButtonLabel
                 return _.a.createElement(
                   me.a,
-                  { style: Ee.footer },
+                  { style: Pe.footer },
                   _.a.createElement(
                     ye.a,
                     { onPress: t, size: 'medium', type: 'brandOutlined' },
@@ -281,8 +281,8 @@
                     { onMaskClick: e, type: 'bottom', withMask: !0 },
                     _.a.createElement(
                       me.a,
-                      { style: Ee.sheetContent, testID: fe },
-                      _.a.createElement(me.a, { style: Ee.content }, this._renderHeader(), this._renderLoginForm()),
+                      { style: Pe.sheetContent, testID: fe },
+                      _.a.createElement(me.a, { style: Pe.content }, this._renderHeader(), this._renderLoginForm()),
                       this._renderFooter(),
                     ),
                   )
@@ -293,7 +293,7 @@
           )
         })(_.a.Component)
       y()(Te, 'defaultProps', { secondaryActionButtonLabel: Se, submitButtonLabel: Le })
-      var Ee = x.a.create(function (e) {
+      var Pe = x.a.create(function (e) {
           return {
             content: { padding: e.spaces.space20 },
             contentHeader: { flexDirection: 'row' },
@@ -313,9 +313,9 @@
             links: { marginTop: e.spaces.space12 },
           }
         }),
-        Pe = Te,
-        Ie = n('v6aA')
-      function Ae(e, t) {
+        Ee = Te,
+        Ae = n('v6aA')
+      function Ce(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var o = Object.getOwnPropertySymbols(e)
@@ -327,16 +327,16 @@
         }
         return n
       }
-      function Ce(e) {
+      function Ie(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? Ae(Object(n), !0).forEach(function (t) {
+            ? Ce(Object(n), !0).forEach(function (t) {
                 y()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : Ae(Object(n)).forEach(function (t) {
+            : Ce(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
@@ -363,8 +363,8 @@
           return f()(this, n)
         }
       }
-      var xe = I.a.e29c651e,
-        Be = (function (e) {
+      var xe = A.a.e29c651e,
+        Re = (function (e) {
           d()(n, e)
           var t = Oe(n)
           function n() {
@@ -400,13 +400,13 @@
                 var t = e.props,
                   n = t.intentType,
                   o = t.tweetId
-                return n && (n === H || n === z) && o ? o : void 0
+                return n && (n === N || n === z) && o ? o : void 0
               }),
               y()(l()(e), '_maybeGetUserId', function () {
                 var t = e.props,
                   n = t.intentType,
                   o = t.userId
-                return n && n === N && o ? o : void 0
+                return n && n === H && o ? o : void 0
               }),
               y()(l()(e), '_handleIntentAction', function () {
                 var t = e.props,
@@ -459,12 +459,12 @@
                   c = e.context.featureSwitches,
                   s = c.isTrue('responsive_web_reactions_enabled') || c.isTrue('responsive_web_reactions_api_test')
                 switch (n) {
-                  case N:
-                    return o
                   case H:
+                    return o
+                  case N:
                     return s
                       ? function (e, t) {
-                          return i(e, Ce(Ce({}, t), {}, { reactionType: 'Like' }))
+                          return i(e, Ie(Ie({}, t), {}, { reactionType: 'Like' }))
                         }
                       : r
                   case z:
@@ -514,7 +514,7 @@
                       r = o.icon,
                       i = o.iconStyle,
                       a = o.text
-                    return _.a.createElement(Pe, {
+                    return _.a.createElement(Ee, {
                       Icon: r,
                       description: a.description,
                       heading: a.heading,
@@ -581,9 +581,9 @@
             n
           )
         })(_.a.Component)
-      y()(Be, 'contextType', Ie.a)
-      var Re = de(Be)
-      t.default = Re
+      y()(Re, 'contextType', Ae.a)
+      var Fe = de(Re)
+      t.default = Fe
     },
     '6oVL': function (e, t, n) {
       'use strict'
@@ -611,16 +611,16 @@
         S = n('cnVF'),
         L = n('Ukpf'),
         T = n('BTou'),
-        E = n('mrHL'),
-        P = 'LoginForm_Login_Button',
-        I = n('fEA7'),
-        A = n.n(I),
-        C = n('MWbm'),
+        P = n('mrHL'),
+        E = 'LoginForm_Login_Button',
+        A = n('fEA7'),
+        C = n.n(A),
+        I = n('MWbm'),
         O = n('Irs7'),
         x = n('v6aA'),
-        B = n('/yvb'),
-        R = n('rHpw')
-      function F(e) {
+        R = n('/yvb'),
+        F = n('rHpw')
+      function B(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -641,17 +641,17 @@
           return m()(this, n)
         }
       }
-      var j = k.a.e919c3bc,
-        M = (function (e) {
+      var M = k.a.e919c3bc,
+        j = (function (e) {
           p()(n, e)
-          var t = F(n)
+          var t = B(n)
           function n() {
             var e
             a()(this, n)
             for (var o = arguments.length, r = new Array(o), i = 0; i < o; i++) r[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(r))),
-              g()(u()(e), '_mobileLoginToken', A.a.v1().replace(/-/g, '')),
+              g()(u()(e), '_mobileLoginToken', C.a.v1().replace(/-/g, '')),
               g()(u()(e), '_handleSubmit', function () {
                 var t = e.props,
                   n = t.analytics,
@@ -668,7 +668,7 @@
               g()(u()(e), '_setLoginCookie', function () {
                 var t = new Date(Date.now())
                 t.setTime(t.getTime() + 3e5),
-                  Object(E.e)(S.q, e._mobileLoginToken, {
+                  Object(P.e)(S.q, e._mobileLoginToken, {
                     featureSwitches: e.context.featureSwitches,
                     cookieOptions: { domain: void 0, expires: t },
                   })
@@ -712,7 +712,7 @@
                     y = h ? '?'.concat(h) : '',
                     g = ''.concat('').concat(b).concat(y),
                     _ = w.a.createElement(
-                      C.a,
+                      I.a,
                       { style: i && D.horizontalFields },
                       w.a.createElement('input', { name: 'redirect_after_login', type: 'hidden', value: g }),
                       w.a.createElement('input', { name: 'remember_me', type: 'hidden', value: '1' }),
@@ -727,16 +727,16 @@
                       o
                         ? null
                         : w.a.createElement(
-                            C.a,
+                            I.a,
                             { style: i && D.loginButtonContainer },
                             w.a.createElement(
-                              B.a,
+                              R.a,
                               {
                                 disabled: c,
                                 onPress: this._handleSubmitButtonClick,
                                 size: l,
                                 style: u,
-                                testID: P,
+                                testID: E,
                                 type: d,
                               },
                               s,
@@ -744,7 +744,7 @@
                           ),
                     )
                   return w.a.createElement(
-                    C.a,
+                    I.a,
                     { style: D.loginForm },
                     w.a.createElement('form', {
                       action: n,
@@ -761,55 +761,23 @@
             n
           )
         })(w.a.Component)
-      g()(M, 'contextType', x.a),
-        g()(M, 'defaultProps', {
+      g()(j, 'contextType', x.a),
+        g()(j, 'defaultProps', {
           autoSubmit: !1,
           formActionUrl: '/sessions',
           hideSubmitButton: !1,
           submitButtonDisabled: !1,
-          submitButtonLabel: j,
+          submitButtonLabel: M,
           submitButtonType: 'brandFilled',
         })
-      var D = R.a.create(function (e) {
+      var D = F.a.create(function (e) {
         return {
           horizontalFields: { flexDirection: 'row', justifyContent: 'center', alignItems: 'stretch' },
           loginForm: { width: '100%' },
           loginButtonContainer: { flexDirection: 'column', justifyContent: 'center' },
         }
       })
-      t.a = Object(O.a)(M, { element: 'inline_login_form' })
-    },
-    Ukpf: function (e, t, n) {
-      'use strict'
-      var o = {
-        inject: function (e) {
-          var t = e.callback,
-            n = e.scriptId,
-            o = e.src
-          if (document.getElementById(n)) t && t()
-          else {
-            var r = document.createElement('script')
-            ;(r.src = o),
-              (r.id = n),
-              (r.async = !0),
-              (r.defer = !0),
-              document.body.appendChild(r),
-              (r.onload = function () {
-                t && t()
-              })
-          }
-        },
-        replace: function (e) {
-          var t,
-            n = e.callback,
-            r = e.scriptId,
-            i = e.src,
-            a = document.getElementById(r)
-          a && (null === (t = a.parentNode) || void 0 === t || t.removeChild(a))
-          o.inject({ callback: n, scriptId: r, src: i })
-        },
-      }
-      t.a = o
+      t.a = Object(O.a)(j, { element: 'inline_login_form' })
     },
     XJCT: function (e, t, n) {
       'use strict'
@@ -817,7 +785,7 @@
         return _
       }),
         n.d(t, 'b', function () {
-          return P
+          return E
         })
       var o = n('97Jx'),
         r = n.n(o),
@@ -865,7 +833,7 @@
         S = d.a.d0a750f2,
         L = d.a.e2dd29b5,
         T = d.a.jb4eb245,
-        E = function (e) {
+        P = function (e) {
           var t = e.autoFocus,
             n = e.label,
             o = e.withEmailDisabled,
@@ -879,8 +847,8 @@
             s.a.createElement(m, r()({}, l, { autoFocus: t, label: n || d, name: f.username, type: v(u) }))
           )
         }
-      E.defaultProps = { autoFocus: !0, withUsernameDisabled: !1, withPhoneDisabled: !1, withEmailDisabled: !1 }
-      var P = E
+      P.defaultProps = { autoFocus: !0, withUsernameDisabled: !1, withPhoneDisabled: !1, withEmailDisabled: !1 }
+      var E = P
     },
   },
 ])

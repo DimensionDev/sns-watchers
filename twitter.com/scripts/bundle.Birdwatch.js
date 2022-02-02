@@ -1,11 +1,11 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [36, 169],
+  [36, 170],
   {
     '/ZwF': function (e, t, a) {
       'use strict'
       a.r(t),
         a.d(t, 'BirdwatchTweetNotesScreen', function () {
-          return ue
+          return pe
         })
       var n = a('ddV6'),
         r = a.n(n),
@@ -89,7 +89,7 @@
         }
         return a
       }
-      function V(e) {
+      function X(e) {
         for (var t = 1; t < arguments.length; t++) {
           var a = null != arguments[t] ? arguments[t] : {}
           t % 2
@@ -104,12 +104,12 @@
         }
         return e
       }
-      var X = function () {
+      var V = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
         return Object(U.a)(
           'svg',
-          V(
-            V({}, e),
+          X(
+            X({}, e),
             {},
             { accessibilityHidden: void 0 === e.accessibilityLabel, style: [W.a.root, e.style], viewBox: '0 0 24 24' },
           ),
@@ -122,8 +122,8 @@
           ),
         )
       }
-      X.metadata = { width: 24, height: 24 }
-      var q = X,
+      V.metadata = { width: 24, height: 24 }
+      var q = V,
         G = S.a.h8335712,
         Z = S.a.fe27c1e1,
         Q = S.a.c59107c3,
@@ -131,16 +131,18 @@
         J = S.a.ib73f867,
         $ = S.a.efd14e79,
         ee = S.a.d06b723c,
-        te = S.a.j0790071,
-        ae = S.a.j679dcda,
+        te = S.a.f84bcd3d,
+        ae = S.a.f10aaf3b,
         ne = S.a.d4f03f72,
-        re = S.a.d94e246a,
+        re = S.a.h98222f4,
         oe = S.a.d5c203a5,
         ie = S.a.bd3f064b,
         ce = S.a.ia596d40,
         le = S.a.deff0bdd,
-        se = i.a.createElement(x.a, { buttonLink: '/i/birdwatch/about', buttonText: Y, header: J }),
-        ue = function (e) {
+        se = S.a.b95dc58a,
+        ue = S.a.a565833d,
+        de = i.a.createElement(x.a, { buttonLink: '/i/birdwatch/about', buttonText: Y, header: J }),
+        pe = function (e) {
           var t = i.a.useContext(c.a).featureSwitches,
             a = e.createLocalApiErrorHandler,
             n = e.fetchNotes,
@@ -193,7 +195,7 @@
             U,
             K = i.a.createElement(
               I.a,
-              { style: de.appealsCallout },
+              { style: fe.appealsCallout },
               i.a.createElement(P.a, {
                 Icon: H.a,
                 action: { label: Y, link: 'https://twitter.github.io/birdwatch/additional-review' },
@@ -202,14 +204,14 @@
                 type: 'primary',
               }),
             ),
-            V = i.a.createElement(
+            X = i.a.createElement(
               I.a,
-              { style: de.actionModuleContainer },
+              { style: fe.actionModuleContainer },
               i.a.createElement(
                 I.a,
-                { style: de.actionModule },
-                w ? i.a.createElement(q, { style: de.icon }) : i.a.createElement(H.a, { style: de.icon }),
-                i.a.createElement(L.b, { size: 'headline1', style: de.header, weight: 'bold' }, w ? ee : ne),
+                { style: fe.actionModule },
+                w ? i.a.createElement(q, { style: fe.icon }) : i.a.createElement(H.a, { style: fe.icon }),
+                i.a.createElement(L.b, { size: 'headline1', style: fe.header, weight: 'bold' }, w ? ee : ne),
                 i.a.createElement(L.b, { color: 'gray700' }, w ? te : re),
                 w
                   ? i.a.createElement(
@@ -219,7 +221,7 @@
                     )
                   : i.a.createElement(
                       L.b,
-                      { link: { external: !0, pathname: 'https://twitter.github.io/birdwatch/overview' } },
+                      { link: { external: !0, pathname: 'https://twitter.github.io/birdwatch/learn-more/' } },
                       Y,
                     ),
               ),
@@ -246,10 +248,10 @@
                     null,
                     i.a.createElement(
                       I.a,
-                      { style: de.contentWrapper },
+                      { style: fe.contentWrapper },
                       i.a.createElement(
                         I.a,
-                        { style: de.withBottomBorder },
+                        { style: fe.withBottomBorder },
                         i.a.createElement(A.b, {
                           displayPromotedContent: !1,
                           tweetId: v,
@@ -274,9 +276,9 @@
                               i.a.createElement(
                                 i.a.Fragment,
                                 null,
-                                i.a.createElement(I.a, { style: de.divider }),
+                                i.a.createElement(I.a, { style: fe.divider }),
                                 i.a.createElement(D.b, { text: Z }),
-                                U ? K : V,
+                                U ? K : X,
                                 i.a.createElement(k.a, null),
                                 m.map(function (e) {
                                   return i.a.createElement(
@@ -286,18 +288,22 @@
                                     i.a.createElement(k.a, null),
                                   )
                                 }),
-                                g && !x
+                                w && !x
                                   ? i.a.createElement(
                                       I.a,
-                                      { style: de.actionModuleContainer },
+                                      { style: fe.actionModuleContainer },
                                       i.a.createElement(
                                         I.a,
-                                        { style: de.actionModule },
-                                        i.a.createElement(L.b, { style: de.improveText }, ce),
+                                        { style: fe.actionModule },
+                                        i.a.createElement(L.b, { style: fe.improveText }, g ? ce : se),
                                         i.a.createElement(
                                           B.a,
-                                          { accessibilityLabel: le, link: W, type: 'brandOutlined' },
-                                          le,
+                                          {
+                                            accessibilityLabel: g ? le : ue,
+                                            link: g ? W : '/i/flow/join-birdwatch',
+                                            type: 'brandOutlined',
+                                          },
+                                          g ? le : ue,
                                         ),
                                       ),
                                     )
@@ -305,8 +311,8 @@
                               ),
                           )
                         : o === O.a.LOADING
-                        ? i.a.createElement(N.a, { accessibilityLabel: $, size: 'large', style: de.spinner })
-                        : se,
+                        ? i.a.createElement(N.a, { accessibilityLabel: $, size: 'large', style: fe.spinner })
+                        : de,
                     ),
                   )),
                 sidebarContent: i.a.createElement(s.a, null),
@@ -316,7 +322,7 @@
             ),
           )
         },
-        de = M.a.create(function (e) {
+        fe = M.a.create(function (e) {
           return {
             actionModule: {
               alignItems: 'center',
@@ -345,8 +351,8 @@
             },
           }
         }),
-        pe = E(ue)
-      t.default = pe
+        be = E(pe)
+      t.default = be
     },
     '0SuV': function (e, t, a) {
       'use strict'
@@ -695,8 +701,8 @@
         W = a('Rp9C'),
         U = a('X04g'),
         K = a('Re5t'),
-        V = a('TnY3'),
-        X = a('hxu0'),
+        X = a('TnY3'),
+        V = a('hxu0'),
         q = a('v6aA'),
         G = a('7JQg'),
         Z = a('IMA+'),
@@ -1100,7 +1106,7 @@
       var ie = k.a.create(function (e) {
           return { followButton: { marginLeft: e.spaces.space12 } }
         }),
-        ce = Object(V.a)(Object(X.a)(x(ee)))
+        ce = Object(X.a)(Object(V.a)(x(ee)))
       t.b = Object(G.c)({ element: 'user' })(ce)
     },
     '89Im': function (e, t, a) {
@@ -1220,10 +1226,10 @@
         K = function (e) {
           return i.a.createElement(h.b, { weight: 'bold' }, e)
         },
-        V = function () {
-          return i.a.createElement(j.a, { source: c, style: X.image })
+        X = function () {
+          return i.a.createElement(j.a, { source: c, style: V.image })
         },
-        X = O.a.create(function (e) {
+        V = O.a.create(function (e) {
           return {
             aliasIcon: { marginRight: e.spaces.space12 },
             aliasSelectContainer: { paddingVertical: e.spaces.space16 },
@@ -1236,14 +1242,14 @@
             values: { color: e.colors.text, textAlign: 'left', width: '100%' },
           }
         }),
-        q = i.a.createElement(_.a, { Icon: S.a, color: 'neutral', size: 'large', style: X.aliasIcon }),
+        q = i.a.createElement(_.a, { Icon: S.a, color: 'neutral', size: 'large', style: V.aliasIcon }),
         G = {
           accessibilityLabel: I,
-          containerStyle: X.infoItemContainer,
+          containerStyle: V.infoItemContainer,
           items: [
-            { label: K(R), decoration: i.a.createElement(S.a, { style: X.icon }), description: D },
-            { label: K(k), decoration: i.a.createElement(C.a, { style: X.icon }), description: B },
-            { label: K(N), decoration: i.a.createElement(T.a, { style: X.icon }), description: M },
+            { label: K(R), decoration: i.a.createElement(S.a, { style: V.icon }), description: D },
+            { label: K(k), decoration: i.a.createElement(C.a, { style: V.icon }), description: B },
+            { label: K(N), decoration: i.a.createElement(T.a, { style: V.icon }), description: M },
           ],
         },
         Z = p(function (e) {
@@ -1282,11 +1288,11 @@
               { color: 'normal', link: 'https://twitter.github.io/birdwatch/aliases/', withUnderline: !0 },
               L,
             ),
-            k = i.a.createElement(A.a, { style: X.values }, i.a.createElement(y.a, G)),
+            k = i.a.createElement(A.a, { style: V.values }, i.a.createElement(y.a, G)),
             B = i.a.createElement(v.a, {
               actionLabel: x,
               footer: D,
-              graphic: V,
+              graphic: X,
               graphicDisplayMode: 'illustration',
               headline: P,
               isFullHeightOnMobile: !0,
@@ -1304,11 +1310,11 @@
             M = i.a.createElement(
               A.a,
               null,
-              i.a.createElement(h.b, { style: X.aliasSubtext }, F),
+              i.a.createElement(h.b, { style: V.aliasSubtext }, F),
               a
                 ? i.a.createElement(
                     A.a,
-                    { style: X.aliasSelectContainer },
+                    { style: V.aliasSelectContainer },
                     i.a.createElement(g.a, {
                       name: 'example',
                       onChange: N,
@@ -1316,7 +1322,7 @@
                         ((I = a),
                         (R = []),
                         I.forEach(function (e) {
-                          R.push({ containerStyle: X.optionContainer, label: Object(f.a)(e), value: e, decoration: q })
+                          R.push({ containerStyle: V.optionContainer, label: Object(f.a)(e), value: e, decoration: q })
                         }),
                         R),
                       value: O,
@@ -2052,8 +2058,8 @@
       }
       var U = S.a.d5b2da0a,
         K = S.a.b5711f09,
-        V = S.a.ha8209bb,
-        X = S.a.ff692d63,
+        X = S.a.ha8209bb,
+        V = S.a.ff692d63,
         q = S.a.cb1adfa0,
         G = S.a.b721eb37,
         Z = function (e, t) {
@@ -2116,9 +2122,9 @@
                       withLabel: i,
                     }),
                     v.a.createElement(C.a, {
-                      accessibilityLabel: V,
+                      accessibilityLabel: X,
                       isActive: Z,
-                      label: V,
+                      label: X,
                       layout: a,
                       onClick: this._handleTabClickFactory('timeline_home'),
                       path: '/i/birdwatch',
@@ -2127,8 +2133,8 @@
                     }),
                     c.isTrue('responsive_web_birdwatch_note_writing_enabled')
                       ? v.a.createElement(C.a, {
-                          accessibilityLabel: X,
-                          label: X,
+                          accessibilityLabel: V,
+                          label: V,
                           layout: a,
                           onClick: this._handleTabClickFactory('user_notes'),
                           path: '/i/birdwatch/u/me',
@@ -2195,10 +2201,10 @@
           return K
         }),
         a.d(t, 'w', function () {
-          return V
+          return X
         }),
         a.d(t, 't', function () {
-          return X
+          return V
         }),
         a.d(t, 'q', function () {
           return q
@@ -2424,12 +2430,12 @@
                 U = null === (z = t.payload) || void 0 === z ? void 0 : z.result,
                 K = null === (W = t.meta) || void 0 === W ? void 0 : W.tweet_id
               if (U) {
-                var V,
-                  X,
+                var X,
+                  V,
                   q =
-                    null === (V = t.payload) || void 0 === V || null === (X = V.entities) || void 0 === X
+                    null === (X = t.payload) || void 0 === X || null === (V = X.entities) || void 0 === V
                       ? void 0
-                      : X.birdwatchNotes[U],
+                      : V.birdwatchNotes[U],
                   G = (null == q ? void 0 : q.ids) || [],
                   Z = G.reduce(function (e, t) {
                     return (e[t.rest_id] = t), e
@@ -2693,11 +2699,11 @@
             return a ? a.ratings : void 0
           }
         },
-        V = function (e, t) {
+        X = function (e, t) {
           var a = e.birdwatchNotes.tweetNotes[t]
           return a ? a.fetchStatus : l.a.NONE
         },
-        X = function (e, t) {
+        V = function (e, t) {
           var a = e.birdwatchNotes.notes[t]
           return a ? a.fetchStatus : l.a.NONE
         },
@@ -2711,7 +2717,7 @@
           return function (t, a, n) {
             n.api
             var r = !!D(a(), e),
-              o = V(a(), e) === l.a.LOADING
+              o = X(a(), e) === l.a.LOADING
             return r || o
               ? Promise.resolve()
               : t(
@@ -2767,7 +2773,7 @@
           return function (t, a, n) {
             n.api
             var r = !!R(a(), e),
-              o = X(a(), e) === l.a.LOADING
+              o = V(a(), e) === l.a.LOADING
             return r || o
               ? Promise.resolve()
               : t(
@@ -2894,7 +2900,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'BirdwatchNoteScreen', function () {
-          return P
+          return L
         })
       var n = a('ddV6'),
         r = a.n(n),
@@ -2927,21 +2933,20 @@
         h = a('jHSc'),
         y = a('3XMw'),
         v = a.n(y),
-        g = a('aITJ'),
-        w = a('MWbm'),
-        E = a('FIs5'),
-        O = a('htQn'),
-        _ = a('rHpw'),
-        S = a('Qwev'),
-        C = v.a.c87f3cf8,
-        T = v.a.i859a9d3,
-        j = v.a.efd14e79,
-        A = v.a.a5b19492,
-        I = i.a.createElement(E.a, { buttonLink: '/i/birdwatch/about', buttonText: T, header: A }),
-        x = function () {
-          return null
-        },
-        P = function (e) {
+        g = a('0zXz'),
+        w = a('aITJ'),
+        E = a('MWbm'),
+        O = a('FIs5'),
+        _ = a('htQn'),
+        S = a('rHpw'),
+        C = a('Qwev'),
+        T = v.a.c87f3cf8,
+        j = v.a.i859a9d3,
+        A = v.a.efd14e79,
+        I = v.a.a5b19492,
+        x = i.a.createElement(O.a, { buttonLink: '/i/birdwatch/about', buttonText: j, header: I }),
+        P = g.a,
+        L = function (e) {
           var t = e.createLocalApiErrorHandler,
             a = e.fetchOneNoteIfNeeded,
             n = e.fetchStatus,
@@ -2965,12 +2970,12 @@
               [l],
             )
           var b = i.a.createElement(
-            O.a,
+            _.a,
             null,
             p && p.data_v1
               ? i.a.createElement(
-                  w.a,
-                  { style: L.contentWrapper },
+                  E.a,
+                  { style: R.contentWrapper },
                   i.a.createElement(c.a, {
                     handleDelete: function (e) {
                       f(null)
@@ -2981,24 +2986,24 @@
                   }),
                 )
               : n === m.a.LOADING
-              ? R
-              : I,
+              ? D
+              : x,
           )
           return i.a.createElement(
             h.b,
-            { history: o, renderHeader: g.b.isTwitterApp() ? x : void 0, title: C },
-            i.a.createElement(w.a, { style: L.contentWrapper }, b),
+            { history: o, renderHeader: w.b.isTwitterApp() ? P : void 0, title: T },
+            i.a.createElement(E.a, { style: R.contentWrapper }, b),
           )
         },
-        L = _.a.create(function (e) {
+        R = S.a.create(function (e) {
           return {
             contentWrapper: { backgroundColor: e.colors.cellBackground },
             spinner: { paddingTop: e.spaces.space80 },
           }
         }),
-        R = i.a.createElement(S.a, { accessibilityLabel: j, size: 'large', style: L.spinner }),
-        D = b(P)
-      t.default = D
+        D = i.a.createElement(C.a, { accessibilityLabel: A, size: 'large', style: R.spinner }),
+        k = b(L)
+      t.default = k
     },
     QDet: function (e, t, a) {
       'use strict'
@@ -3094,7 +3099,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'BirdwatchForm', function () {
-          return xe
+          return Pe
         })
       a('+KXO'), a('1t7P'), a('daRM'), a('FtHn')
       var n = a('RhWx'),
@@ -3161,35 +3166,36 @@
         T = a.n(C),
         j = a('5FtR'),
         A = a('SrIh'),
-        I = a('Rp9C'),
-        x = a('xZXe'),
-        P = a('aITJ'),
-        L = a('MWbm'),
-        R = a('t62R'),
-        D = a('XiMS'),
-        k = a('fyvP'),
-        B = a('p+r5'),
-        N = a('4zmP'),
-        M = a('/yvb'),
-        H = a('feu+'),
-        F = a('rHpw'),
-        z = a('KqB4'),
-        W = a.n(z),
-        U = a('S1qy'),
-        K = a.n(U),
+        I = a('0zXz'),
+        x = a('Rp9C'),
+        P = a('xZXe'),
+        L = a('aITJ'),
+        R = a('MWbm'),
+        D = a('t62R'),
+        k = a('XiMS'),
+        B = a('fyvP'),
+        N = a('p+r5'),
+        M = a('4zmP'),
+        H = a('/yvb'),
+        F = a('feu+'),
+        z = a('rHpw'),
+        W = a('KqB4'),
+        U = a.n(W),
+        K = a('S1qy'),
+        X = a.n(K),
         V = a('Oib4'),
-        X = a('DlMI'),
-        q = a('ms2t'),
-        G = a('I/9y'),
-        Z = a('EHV7'),
-        Q = 'MisinformedOrPotentiallyMisleading',
-        Y = 'NotMisleading',
-        J = {
+        q = a('DlMI'),
+        G = a('ms2t'),
+        Z = a('I/9y'),
+        Q = a('EHV7'),
+        Y = 'MisinformedOrPotentiallyMisleading',
+        J = 'NotMisleading',
+        $ = {
           classification: {
             label: T.a.c8a7eee9,
             options: [
-              { label: T.a.d4e419f5, value: Q },
-              { label: T.a.ha9655c2, value: Y },
+              { label: T.a.d4e419f5, value: Y },
+              { label: T.a.ha9655c2, value: J },
             ],
           },
           misleading_tags: {
@@ -3243,7 +3249,7 @@
             ],
           },
         }
-      function $(e, t) {
+      function ee(e, t) {
         var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e)
@@ -3255,60 +3261,60 @@
         }
         return a
       }
-      function ee(e) {
+      function te(e) {
         for (var t = 1; t < arguments.length; t++) {
           var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? $(Object(a), !0).forEach(function (t) {
+            ? ee(Object(a), !0).forEach(function (t) {
                 i()(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
-            : $(Object(a)).forEach(function (t) {
+            : ee(Object(a)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
               })
         }
         return e
       }
-      var te = T.a.d39e8b30,
-        ae = T.a.a91bb144,
-        ne = T.a.hb2bf967,
-        re = T.a.dc7a6625,
-        oe = T.a.af778d9e,
-        ie = T.a.ifd2c15f,
-        ce = T.a.f24ec219,
-        le = T.a.j679dcda,
-        se = { external: !0, pathname: 'https://twitter.github.io/birdwatch/note-examples' },
-        ue = T.a.b7476596,
-        de = T.a.df6c8291,
-        pe = T.a.h0e35524,
-        fe = ['believable', 'harmful', 'validation'],
-        be = ['classification', 'summary', 'trustworthy_sources'],
-        me = ['misleading_tags'].concat(fe),
-        he = ['not_misleading_tags'],
-        ye = ['classification', 'believable', 'harmful', 'validation', 'trustworthy_sources'],
-        ve = ['misleading_tags', 'not_misleading_tags'],
-        ge = T.a.b47b5a16,
-        we = T.a.i0e66c5a,
-        Ee = T.a.j8e3e3be,
-        Oe = T.a.f1e851ff,
-        _e = T.a.ff5dcac8,
-        Se = {
-          classification: we,
-          misleading_tags: Ee,
-          believable: we,
-          harmful: we,
-          validation: we,
-          summary: Oe,
-          not_misleading_tags: Ee,
-          trustworthy_sources: we,
+      var ae = T.a.d39e8b30,
+        ne = T.a.a91bb144,
+        re = T.a.hb2bf967,
+        oe = T.a.dc7a6625,
+        ie = T.a.af778d9e,
+        ce = T.a.ifd2c15f,
+        le = T.a.f24ec219,
+        se = T.a.j679dcda,
+        ue = { external: !0, pathname: 'https://twitter.github.io/birdwatch/note-examples' },
+        de = T.a.b7476596,
+        pe = T.a.df6c8291,
+        fe = T.a.h0e35524,
+        be = ['believable', 'harmful', 'validation'],
+        me = ['classification', 'summary', 'trustworthy_sources'],
+        he = ['misleading_tags'].concat(be),
+        ye = ['not_misleading_tags'],
+        ve = ['classification', 'believable', 'harmful', 'validation', 'trustworthy_sources'],
+        ge = ['misleading_tags', 'not_misleading_tags'],
+        we = T.a.b47b5a16,
+        Ee = T.a.i0e66c5a,
+        Oe = T.a.j8e3e3be,
+        _e = T.a.f1e851ff,
+        Se = T.a.ff5dcac8,
+        Ce = {
+          classification: Ee,
+          misleading_tags: Oe,
+          believable: Ee,
+          harmful: Ee,
+          validation: Ee,
+          summary: _e,
+          not_misleading_tags: Oe,
+          trustworthy_sources: Ee,
         },
-        Ce = T.a.abdd8d09,
-        Te = { explanation: T.a.c097608d, source: T.a.g9cffe15 },
-        je = { explanation: T.a.ba25898c, source: T.a.e764d704 },
-        Ae = { explanation: T.a.gb67e44c, source: T.a.d6b758a1 },
-        Ie = { defaultWeight: 1, maxWeightedTweetLength: 280, scale: 1, transformedURLLength: 1 },
-        xe = function (e) {
+        Te = T.a.abdd8d09,
+        je = { explanation: T.a.c097608d, source: T.a.g9cffe15 },
+        Ae = { explanation: T.a.ba25898c, source: T.a.e764d704 },
+        Ie = { explanation: T.a.gb67e44c, source: T.a.d6b758a1 },
+        xe = { defaultWeight: 1, maxWeightedTweetLength: 280, scale: 1, transformedURLLength: 1 },
+        Pe = function (e) {
           var t = u.a.useContext(d.a).featureSwitches,
             a = e.addToast,
             n = e.analytics,
@@ -3326,56 +3332,56 @@
             E = e.tweetId,
             O = e.userAlias,
             C = function (e) {
-              return void 0 === e ? we : ''
+              return void 0 === e ? Ee : ''
             },
             T = function (e) {
-              return K()(e, Ie).weightedLength
+              return X()(e, xe).weightedLength
             },
-            F = function (e) {
-              if (!e) return Oe
+            z = function (e) {
+              if (!e) return _e
               var t = T(e.trim())
-              return t <= 0 ? Oe : t > 280 ? _e : ''
+              return t <= 0 ? _e : t > 280 ? Se : ''
             },
-            z = u.a.useState(s || {}),
-            U = l()(z, 2),
-            $ = U[0],
-            xe = U[1],
-            Le = u.a.useState(
+            W = u.a.useState(s || {}),
+            K = l()(W, 2),
+            ee = K[0],
+            Pe = K[1],
+            Re = u.a.useState(
               (function () {
-                var e = Se
+                var e = Ce
                 return (
-                  ye.forEach(function (t) {
-                    e[t] = C($[t])
-                  }),
                   ve.forEach(function (t) {
-                    var a
-                    e[t] = (a = $[t]) && a.length > 0 ? '' : Ee
+                    e[t] = C(ee[t])
                   }),
-                  (e.summary = F($.summary)),
+                  ge.forEach(function (t) {
+                    var a
+                    e[t] = (a = ee[t]) && a.length > 0 ? '' : Oe
+                  }),
+                  (e.summary = z(ee.summary)),
                   e
                 )
               })(),
             ),
-            Re = l()(Le, 2),
-            De = Re[0],
-            ke = Re[1],
-            Be = u.a.useState(!1),
-            Ne = l()(Be, 2),
-            Me = Ne[0],
-            He = Ne[1],
-            Fe = u.a.useState(!1),
-            ze = l()(Fe, 2),
-            We = ze[0],
-            Ue = ze[1],
-            Ke = u.a.useState(null),
-            Ve = l()(Ke, 2),
-            Xe = Ve[0],
-            qe = Ve[1],
-            Ge = u.a.useState(w),
-            Ze = l()(Ge, 2),
-            Qe = Ze[0],
-            Ye = Ze[1],
-            Je = '/i/birdwatch/'.concat(E, '/contribute_complete')
+            De = l()(Re, 2),
+            ke = De[0],
+            Be = De[1],
+            Ne = u.a.useState(!1),
+            Me = l()(Ne, 2),
+            He = Me[0],
+            Fe = Me[1],
+            ze = u.a.useState(!1),
+            We = l()(ze, 2),
+            Ue = We[0],
+            Ke = We[1],
+            Xe = u.a.useState(null),
+            Ve = l()(Xe, 2),
+            qe = Ve[0],
+            Ge = Ve[1],
+            Ze = u.a.useState(w),
+            Qe = l()(Ze, 2),
+            Ye = Qe[0],
+            Je = Qe[1],
+            $e = '/i/birdwatch/'.concat(E, '/contribute_complete')
           u.a.useEffect(
             function () {
               E && (m(E).catch(o()), f(E).catch(o()))
@@ -3396,38 +3402,38 @@
             ),
             u.a.useEffect(
               function () {
-                Ye(w)
+                Je(w)
               },
               [w],
             )
-          var $e,
-            et = function (e) {
-              var t = I.a.forTweet(E)
+          var et,
+            tt = function (e) {
+              var t = x.a.forTweet(E)
               n.scribe({ element: e, action: 'click', data: { targets: [t] } })
             },
-            tt = function (e) {
+            at = function (e) {
               return function (t, a) {
-                et(e),
-                  xe(function (t) {
+                tt(e),
+                  Pe(function (t) {
                     var n = a
                     'trustworthy_sources' === e && ('true' === a ? (n = !0) : 'false' === a && (n = !1))
-                    var r = ee(ee({}, t), {}, i()({}, e, n))
+                    var r = te(te({}, t), {}, i()({}, e, n))
                     return g({ updates: r, tweetId: E }), r
                   }),
-                  ke(function (t) {
-                    return ee(ee({}, t), {}, i()({}, e, C(a)))
+                  Be(function (t) {
+                    return te(te({}, t), {}, i()({}, e, C(a)))
                   })
               }
             },
-            at = function (e) {
+            nt = function (e) {
               return function (t) {
                 return function () {
-                  xe(function (a) {
+                  Pe(function (a) {
                     if (!a[e]) {
-                      ke(function (t) {
-                        return ee(ee({}, t), {}, i()({}, e, ''))
+                      Be(function (t) {
+                        return te(te({}, t), {}, i()({}, e, ''))
                       })
-                      var n = ee(ee({}, a), {}, i()({}, e, [t]))
+                      var n = te(te({}, a), {}, i()({}, e, [t]))
                       return g({ updates: n, tweetId: E }), n
                     }
                     var o = a[e].includes(t),
@@ -3435,243 +3441,243 @@
                         return e !== t
                       })
                     if (o) {
-                      ke(function (t) {
-                        return c.length > 0 ? ee(ee({}, t), {}, i()({}, e, '')) : ee(ee({}, t), {}, i()({}, e, Ee))
+                      Be(function (t) {
+                        return c.length > 0 ? te(te({}, t), {}, i()({}, e, '')) : te(te({}, t), {}, i()({}, e, Oe))
                       })
-                      var l = ee(ee({}, a), {}, i()({}, e, c))
+                      var l = te(te({}, a), {}, i()({}, e, c))
                       return g({ updates: l, tweetId: E }), l
                     }
-                    ke(function (t) {
-                      return ee(ee({}, t), {}, i()({}, e, ''))
+                    Be(function (t) {
+                      return te(te({}, t), {}, i()({}, e, ''))
                     })
-                    var s = ee(ee({}, a), {}, i()({}, e, [].concat(r()(a[e]), [t])))
+                    var s = te(te({}, a), {}, i()({}, e, [].concat(r()(a[e]), [t])))
                     return g({ updates: s, tweetId: E }), s
                   })
                 }
               }
             },
-            nt = (null == $ ? void 0 : $.misleading_tags) || [],
-            rt = (null == $ ? void 0 : $.not_misleading_tags) || [],
-            ot = function (e) {
+            rt = (null == ee ? void 0 : ee.misleading_tags) || [],
+            ot = (null == ee ? void 0 : ee.not_misleading_tags) || [],
+            it = function (e) {
               return (
-                Me &&
+                He &&
                 '' !== e &&
                 u.a.createElement(
-                  L.a,
-                  { style: Pe.errorContainer },
-                  u.a.createElement(V.a, { style: Pe.errorIcon }),
-                  u.a.createElement(R.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }, e),
+                  R.a,
+                  { style: Le.errorContainer },
+                  u.a.createElement(V.a, { style: Le.errorIcon }),
+                  u.a.createElement(D.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }, e),
                 )
               )
             },
-            it = u.a.createElement(
-              L.a,
+            ct = u.a.createElement(
+              R.a,
               null,
               u.a.createElement(
-                L.a,
-                { style: Pe.questionSection },
+                R.a,
+                { style: Le.questionSection },
                 u.a.createElement(
-                  L.a,
-                  { accessibilityLabel: J.misleading_tags.label, accessibilityRole: 'group' },
-                  u.a.createElement(R.b, { weight: 'bold' }, J.misleading_tags.label, ' '),
-                  J.misleading_tags.options.map(function (e) {
-                    return u.a.createElement(D.a, {
-                      checked: nt.includes(e.value),
+                  R.a,
+                  { accessibilityLabel: $.misleading_tags.label, accessibilityRole: 'group' },
+                  u.a.createElement(D.b, { weight: 'bold' }, $.misleading_tags.label, ' '),
+                  $.misleading_tags.options.map(function (e) {
+                    return u.a.createElement(k.a, {
+                      checked: rt.includes(e.value),
                       key: e.value,
                       label: e.label,
-                      onChange: at('misleading_tags')(e.value),
-                      style: Pe.checkbox,
+                      onChange: nt('misleading_tags')(e.value),
+                      style: Le.checkbox,
                     })
                   }),
-                  ot(De.misleading_tags),
+                  it(ke.misleading_tags),
                 ),
               ),
-              fe.map(function (e) {
+              be.map(function (e) {
                 return u.a.createElement(
-                  L.a,
-                  { key: J[e].label, style: Pe.questionSection },
-                  u.a.createElement(k.a, {
-                    label: J[e].label,
+                  R.a,
+                  { key: $[e].label, style: Le.questionSection },
+                  u.a.createElement(B.a, {
+                    label: $[e].label,
                     name: e,
-                    onChange: tt(e),
-                    options: J[e].options,
-                    value: $[e],
+                    onChange: at(e),
+                    options: $[e].options,
+                    value: ee[e],
                   }),
-                  ot(De[e]),
+                  it(ke[e]),
                 )
               }),
             ),
-            ct = u.a.createElement(
-              L.a,
-              { style: Pe.questionSection },
+            lt = u.a.createElement(
+              R.a,
+              { style: Le.questionSection },
               u.a.createElement(
-                L.a,
-                { accessibilityLabel: J.not_misleading_tags.label, accessibilityRole: 'group' },
-                u.a.createElement(R.b, { weight: 'bold' }, J.not_misleading_tags.label, ' '),
-                J.not_misleading_tags.options.map(function (e) {
-                  return u.a.createElement(D.a, {
-                    checked: rt.includes(e.value),
+                R.a,
+                { accessibilityLabel: $.not_misleading_tags.label, accessibilityRole: 'group' },
+                u.a.createElement(D.b, { weight: 'bold' }, $.not_misleading_tags.label, ' '),
+                $.not_misleading_tags.options.map(function (e) {
+                  return u.a.createElement(k.a, {
+                    checked: ot.includes(e.value),
                     key: e.value,
                     label: e.label,
-                    onChange: at('not_misleading_tags')(e.value),
-                    style: Pe.checkbox,
+                    onChange: nt('not_misleading_tags')(e.value),
+                    style: Le.checkbox,
                   })
                 }),
-                ot(De.not_misleading_tags),
+                it(ke.not_misleading_tags),
               ),
             ),
-            lt = function (e) {
+            st = function (e) {
               return (
                 0 ===
                 e.filter(function (e) {
-                  return !!De[e]
+                  return !!ke[e]
                 }).length
               )
             },
-            st = function () {
-              var e = $.summary || ''
-              return !(!lt(be) || '' !== F(e)) && !!((dt === Q && lt(me)) || (dt === Y && lt(he)))
-            },
             ut = function () {
-              Ue(!0),
-                c(E, $)
+              var e = ee.summary || ''
+              return !(!st(me) || '' !== z(e)) && !!((pt === Y && st(he)) || (pt === J && st(ye)))
+            },
+            dt = function () {
+              Ke(!0),
+                c(E, ee)
                   .then(function (e) {
                     if (e && e.error) {
                       var t = ''.concat(e.error, ': ').concat(JSON.stringify(e.reason || ''))
                       a({ text: t, withAutoDismiss: !1, withClearButton: !0 }),
                         Object(A.a)('BirdwatchNoteCreationFailure: '.concat(t)),
-                        et('submit_failed'),
-                        Ue(!1)
-                    } else g({ updates: {}, tweetId: E }), y.replace(Je)
+                        tt('submit_failed'),
+                        Ke(!1)
+                    } else g({ updates: {}, tweetId: E }), y.replace($e)
                   })
                   .catch(function (e) {
-                    o({ defaultToast: { text: pe, withAutoDismiss: !1, withClearButton: !0 }, showToast: !0 })(e),
-                      Ue(!1),
-                      et('submit_failed'),
+                    o({ defaultToast: { text: fe, withAutoDismiss: !1, withClearButton: !0 }, showToast: !0 })(e),
+                      Ke(!1),
+                      tt('submit_failed'),
                       Object(A.a)('BirdwatchNoteCreationFailure: '.concat(JSON.stringify(e)))
                   })
             },
-            dt = $.classification,
-            pt = $.trustworthy_sources,
-            ft = void 0 === pt ? '' : pt ? 'true' : 'false',
-            bt = dt === Y,
-            mt = !t.isTrue('responsive_web_birdwatch_hcomp_user'),
-            ht = t.isTrue('responsive_web_birdwatch_aliases_enabled'),
-            yt = O && Object(_.a)(O, !0),
-            vt = u.a.createElement(
+            pt = ee.classification,
+            ft = ee.trustworthy_sources,
+            bt = void 0 === ft ? '' : ft ? 'true' : 'false',
+            mt = pt === J,
+            ht = !t.isTrue('responsive_web_birdwatch_hcomp_user'),
+            yt = t.isTrue('responsive_web_birdwatch_aliases_enabled'),
+            vt = O && Object(_.a)(O, !0),
+            gt = u.a.createElement(
               u.a.Fragment,
               null,
               u.a.createElement(
-                L.a,
-                { style: Pe.tweetContainer },
-                u.a.createElement(x.b, { displayPromotedContent: !1, tweetId: E, withCurationMenu: !1 }),
+                R.a,
+                { style: Le.tweetContainer },
+                u.a.createElement(P.b, { displayPromotedContent: !1, tweetId: E, withCurationMenu: !1 }),
               ),
               u.a.createElement(
-                L.a,
-                { style: Pe.formQuestions },
+                R.a,
+                { style: Le.formQuestions },
                 u.a.createElement(
-                  L.a,
-                  { style: Pe.questionSection },
-                  u.a.createElement(k.a, {
-                    label: J.classification.label,
+                  R.a,
+                  { style: Le.questionSection },
+                  u.a.createElement(B.a, {
+                    label: $.classification.label,
                     name: 'misleading_radio',
-                    onChange: tt('classification'),
-                    options: J.classification.options,
-                    value: dt,
+                    onChange: at('classification'),
+                    options: $.classification.options,
+                    value: pt,
                   }),
-                  ot(De.classification),
+                  it(ke.classification),
                 ),
-                dt === Q && it,
-                bt && ct,
-                !!dt &&
+                pt === Y && ct,
+                mt && lt,
+                !!pt &&
                   u.a.createElement(
                     u.a.Fragment,
                     null,
                     u.a.createElement(
-                      L.a,
-                      { style: Pe.questionSection },
+                      R.a,
+                      { style: Le.questionSection },
                       u.a.createElement(
-                        L.a,
-                        { accessibilityLabel: bt ? ce : ie, accessibilityRole: 'group' },
-                        u.a.createElement(R.b, { weight: 'bold' }, bt ? ce : ie),
-                        u.a.createElement(R.b, { link: se }, le),
-                        u.a.createElement(B.a, {
+                        R.a,
+                        { accessibilityLabel: mt ? le : ce, accessibilityRole: 'group' },
+                        u.a.createElement(D.b, { weight: 'bold' }, mt ? le : ce),
+                        u.a.createElement(D.b, { link: ue }, se),
+                        u.a.createElement(N.a, {
                           calculateLength: T,
-                          helperText: ue,
-                          invalid: !!De.summary && Me,
-                          label: de,
+                          helperText: de,
+                          invalid: !!ke.summary && He,
+                          label: pe,
                           maxNumberOfLines: 20,
                           multiline: !0,
                           name: 'FormTextInput',
                           numberOfLines: 5,
                           onBlur: function (e) {
-                            g({ updates: $, tweetId: E })
+                            g({ updates: ee, tweetId: E })
                           },
                           onChange: function (e) {
                             var t = e.target.value
-                            xe(function (e) {
-                              return ee(ee({}, e), {}, { summary: t })
+                            Pe(function (e) {
+                              return te(te({}, e), {}, { summary: t })
                             }),
-                              ke(function (e) {
-                                return ee(ee({}, e), {}, { summary: F(t) })
+                              Be(function (e) {
+                                return te(te({}, e), {}, { summary: z(t) })
                               })
                           },
-                          style: Pe.textInput,
+                          style: Le.textInput,
                           validLength: 280,
-                          value: null == $ ? void 0 : $.summary,
+                          value: null == ee ? void 0 : ee.summary,
                         }),
-                        ot(De.summary),
+                        it(ke.summary),
                       ),
                     ),
                     u.a.createElement(
-                      L.a,
-                      { style: Pe.questionSection },
-                      u.a.createElement(k.a, {
-                        label: J.trustworthy_sources.label,
+                      R.a,
+                      { style: Le.questionSection },
+                      u.a.createElement(B.a, {
+                        label: $.trustworthy_sources.label,
                         name: 'trustworthy_sources_radio',
-                        onChange: tt('trustworthy_sources'),
+                        onChange: at('trustworthy_sources'),
                         options:
-                          (($e = J.trustworthy_sources.options),
-                          $e.map(function (e) {
+                          ((et = $.trustworthy_sources.options),
+                          et.map(function (e) {
                             return { label: e.label, value: e.value.toString() }
                           })),
-                        value: ft,
+                        value: bt,
                       }),
-                      ot(De.trustworthy_sources),
+                      it(ke.trustworthy_sources),
                     ),
-                    mt &&
-                      !ht &&
-                      u.a.createElement(L.a, { style: Pe.callout }, u.a.createElement(N.a, { Icon: X.a, text: ne })),
-                    mt &&
-                      ht &&
+                    ht &&
+                      !yt &&
+                      u.a.createElement(R.a, { style: Le.callout }, u.a.createElement(M.a, { Icon: q.a, text: re })),
+                    ht &&
                       yt &&
+                      vt &&
                       u.a.createElement(
-                        L.a,
-                        { style: Pe.callout },
-                        u.a.createElement(N.a, {
-                          Icon: q.a,
-                          headline: re({ displayAlias: yt }),
-                          text: oe,
+                        R.a,
+                        { style: Le.callout },
+                        u.a.createElement(M.a, {
+                          Icon: G.a,
+                          headline: oe({ displayAlias: vt }),
+                          text: ie,
                           withThumbnail: !0,
                         }),
                       ),
-                    Me &&
-                      !st() &&
+                    He &&
+                      !ut() &&
                       u.a.createElement(
-                        L.a,
-                        { style: Pe.callout },
-                        u.a.createElement(N.a, { Icon: V.a, text: ge, type: 'danger' }),
+                        R.a,
+                        { style: Le.callout },
+                        u.a.createElement(M.a, { Icon: V.a, text: we, type: 'danger' }),
                       ),
                     u.a.createElement(
-                      M.a,
+                      H.a,
                       {
-                        disabled: We,
+                        disabled: Ue,
                         onPress: function () {
-                          et('submit'), He(!0)
+                          tt('submit'), Fe(!0)
                           var e = (function () {
-                            var e = W()($.summary)
+                            var e = U()(ee.summary)
                             if (0 === (null == e ? void 0 : e.length)) return 'source'
-                            var t = $.summary
+                            var t = ee.summary
                             return (
                               e.forEach(function (e) {
                                 if (!t) return 'explanation'
@@ -3680,43 +3686,44 @@
                               t && 0 !== t.trim().length ? null : 'explanation'
                             )
                           })()
-                          st() && (e ? qe(e) : ut())
+                          ut() && (e ? Ge(e) : dt())
                         },
-                        style: Pe.submitButton,
+                        style: Le.submitButton,
                         type: 'brandFilled',
                       },
-                      ae,
+                      ne,
                     ),
                   ),
               ),
-            )
-          return ht && Qe
+            ),
+            wt = I.a
+          return yt && Ye
             ? u.a.createElement(p.a, {
                 onAliasSelected: function (e) {
-                  Ye(e)
+                  Je(e)
                 },
               })
             : v
-            ? u.a.createElement(j.a, { to: Je })
-            : Xe
-            ? u.a.createElement(H.a, {
-                actionLabel: Ce,
-                graphic: 'source' === Xe ? G.a : Z.a,
+            ? u.a.createElement(j.a, { to: $e })
+            : qe
+            ? u.a.createElement(F.a, {
+                actionLabel: Te,
+                graphic: 'source' === qe ? Z.a : Q.a,
                 graphicDisplayMode: 'thumbnail',
-                headline: Te[Xe],
+                headline: je[qe],
                 onAction: function () {
-                  et('nudge_edit'), qe(null)
+                  tt('nudge_edit'), Ge(null)
                 },
                 onClose: function () {},
                 onImpression: function () {
-                  var e = I.a.forTweet(E)
+                  var e = x.a.forTweet(E)
                   n.scribe({ element: 'nudge', action: 'show', data: { targets: [e] } })
                 },
                 onTertiaryAction: function () {
-                  et('nudge_submit'), ut()
+                  tt('nudge_submit'), dt()
                 },
-                subtext: je[Xe],
-                tertiaryActionLabel: Ae[Xe],
+                subtext: Ae[qe],
+                tertiaryActionLabel: Ie[qe],
                 withCloseButton: !1,
               })
             : u.a.createElement(
@@ -3724,19 +3731,15 @@
                 {
                   history: y,
                   onBackClick: function () {
-                    et('close'), y.goBack()
+                    tt('close'), y.goBack()
                   },
-                  renderHeader: P.b.isTwitterApp()
-                    ? function () {
-                        return null
-                      }
-                    : void 0,
-                  title: te,
+                  renderHeader: L.b.isTwitterApp() ? wt : void 0,
+                  title: ae,
                 },
-                u.a.createElement(L.a, { style: Pe.contentWrapper }, vt),
+                u.a.createElement(R.a, { style: Le.contentWrapper }, gt),
               )
         },
-        Pe = F.a.create(function (e) {
+        Le = z.a.create(function (e) {
           return {
             callout: { marginTop: e.spaces.space12 },
             checkbox: { paddingVertical: e.spaces.space8 },
@@ -3755,8 +3758,8 @@
             },
           }
         }),
-        Le = O(xe)
-      t.default = Le
+        Re = O(Pe)
+      t.default = Re
     },
     YI7k: function (e, t, a) {
       'use strict'
@@ -3947,7 +3950,7 @@
           NoteNotNeeded: 'NoteNotNeeded',
           Other: 'Other',
         }),
-        V = [
+        X = [
           K.NoSources,
           K.Incorrect,
           K.Outdated,
@@ -3959,7 +3962,7 @@
           K.TwitterViolationAny,
           K.Other,
         ],
-        X =
+        V =
           ((r = {}),
           v()(r, K.Biased, F.a.bbe8b4ac),
           v()(r, K.Incorrect, F.a.heb35e12),
@@ -4018,8 +4021,8 @@
           },
           not_helpful_tags: {
             label: F.a.e0806a48,
-            options: V.map(function (e) {
-              return { label: X[e], value: e }
+            options: X.map(function (e) {
+              return { label: V[e], value: e }
             }),
           },
         },
@@ -4383,8 +4386,8 @@
         We = F.a.i411275f,
         Ue = F.a.e2988ed0,
         Ke = F.a.c1a50438,
-        Ve = F.a.d2ae3d42,
-        Xe = F.a.c4e0c730,
+        Xe = F.a.d2ae3d42,
+        Ve = F.a.c4e0c730,
         qe = F.a.cfd2f35d,
         Ge = F.a.b1ea3365,
         Ze = F.a.h1a9d37a,
@@ -4440,7 +4443,7 @@
           }
         }),
         it = {
-          accessibilityLabel: Ve,
+          accessibilityLabel: Xe,
           containerStyle: ot.infoItemContainer,
           items: [
             { label: '', decoration: O.a.createElement(Le.a, { style: ot.iconDataPrivacy }), description: Ze },
@@ -4528,7 +4531,7 @@
                   withClearButton: !0,
                 })
             },
-            V = function (e) {
+            X = function (e) {
               return function (t) {
                 return function () {
                   m(function (a) {
@@ -4551,7 +4554,7 @@
                 }
               }
             },
-            X = function (e) {
+            V = function (e) {
               var t = (b && b[e]) || []
               return O.a.createElement(
                 L.a,
@@ -4567,7 +4570,7 @@
                       checked: t.includes(a.value),
                       key: a.value,
                       label: a.label,
-                      onChange: V(e)(a.value),
+                      onChange: X(e)(a.value),
                       style: ot.checkbox,
                     })
                   )
@@ -4608,7 +4611,7 @@
             }),
             Y = O.a.createElement(Te.a, it),
             J = O.a.createElement(je.a, {
-              actionLabel: Xe,
+              actionLabel: Ve,
               headline: Ge,
               isFullHeightOnMobile: !0,
               onAction: function () {
@@ -4638,8 +4641,8 @@
                   L.a,
                   { style: ot.root },
                   Q,
-                  ee && X('helpful_tags'),
-                  te && X('not_helpful_tags'),
+                  ee && V('helpful_tags'),
+                  te && V('not_helpful_tags'),
                   !Object(P.a)(b) &&
                     O.a.createElement(
                       B.a,
@@ -4950,7 +4953,7 @@
         }
         return e
       }
-      var Vt = function () {
+      var Xt = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
         return Object(Wt.a)(
           'svg',
@@ -4968,8 +4971,8 @@
           ),
         )
       }
-      Vt.metadata = { width: 24, height: 24 }
-      var Xt = Vt,
+      Xt.metadata = { width: 24, height: 24 }
+      var Vt = Xt,
         qt = a('Nh1N')
       function Gt(e) {
         var t = (function () {
@@ -5042,8 +5045,8 @@
                 var d = w()(a, 2),
                   p = d[0],
                   f = d[1],
-                  b = Pe(!0).includes(p) ? xe(!0)[p] : X[p],
-                  m = Pe(!0).includes(f) ? xe(!0)[f] : X[f],
+                  b = Pe(!0).includes(p) ? xe(!0)[p] : V[p],
+                  m = Pe(!0).includes(f) ? xe(!0)[f] : V[f],
                   h = ''.concat(b, ' · ').concat(m)
                 return b && m
                   ? O.a.createElement(
@@ -5430,7 +5433,7 @@
           containerStyle: Oa.infoItemContainer,
           items: [
             { label: '', decoration: O.a.createElement(Ft.a, { style: Oa.iconAppeals }), description: la },
-            { label: '', decoration: O.a.createElement(Xt, { style: Oa.iconAppeals }), description: sa },
+            { label: '', decoration: O.a.createElement(Vt, { style: Oa.iconAppeals }), description: sa },
             { label: '', decoration: O.a.createElement(qt.a, { style: Oa.iconAppeals }), description: ua },
           ],
         },
@@ -5956,8 +5959,8 @@
         W = a('nymP'),
         U = a('MWbm'),
         K = a('t62R'),
-        V = a('FIs5'),
-        X = a('MtXG'),
+        X = a('FIs5'),
+        V = a('MtXG'),
         q = a('0yYu'),
         G = a('/yvb'),
         Z = a('j7Bv'),
@@ -6046,7 +6049,7 @@
               },
               [$],
             ),
-            we = i.a.createElement(V.a, { header: pe, message: fe }),
+            we = i.a.createElement(X.a, { header: pe, message: fe }),
             Ee = i.a.createElement(W.a, null),
             Oe = function (e) {
               return i.a.createElement(
@@ -6169,13 +6172,13 @@
                                   { style: ve.helpfulStats },
                                   (function (e) {
                                     return i.a.createElement(
-                                      X.a,
+                                      V.a,
                                       null,
                                       i.a.createElement(
                                         ee.a.I18NFormatMessage,
                                         { $i18n: 'g6ea1d54' },
-                                        i.a.createElement(X.a.Value, null, ee.a.b5eb23f9({ count: e })),
-                                        i.a.createElement(X.a.Label, null, ee.a.ebecb73c),
+                                        i.a.createElement(V.a.Value, null, ee.a.b5eb23f9({ count: e })),
+                                        i.a.createElement(V.a.Label, null, ee.a.ebecb73c),
                                       ),
                                     )
                                   })(j),
@@ -6187,13 +6190,13 @@
                                   { style: ve.helpfulStats },
                                   (function (e) {
                                     return i.a.createElement(
-                                      X.a,
+                                      V.a,
                                       null,
                                       i.a.createElement(
                                         ee.a.I18NFormatMessage,
                                         { $i18n: 'b93058db' },
-                                        i.a.createElement(X.a.Value, null, ee.a.i1f57cc4({ count: e })),
-                                        i.a.createElement(X.a.Label, null, ee.a.e8907cd9),
+                                        i.a.createElement(V.a.Value, null, ee.a.i1f57cc4({ count: e })),
+                                        i.a.createElement(V.a.Label, null, ee.a.e8907cd9),
                                       ),
                                     )
                                   })(A),
@@ -6202,13 +6205,13 @@
                             Object(B.a)(I)
                               ? ((T = I),
                                 i.a.createElement(
-                                  X.a,
+                                  V.a,
                                   null,
                                   i.a.createElement(
                                     ee.a.I18NFormatMessage,
                                     { $i18n: 'c6726126' },
-                                    i.a.createElement(X.a.Value, null, ee.a.d551bc31({ count: T })),
-                                    i.a.createElement(X.a.Label, null, ee.a.c1db7f3a),
+                                    i.a.createElement(V.a.Value, null, ee.a.d551bc31({ count: T })),
+                                    i.a.createElement(V.a.Label, null, ee.a.c1db7f3a),
                                   ),
                                 ))
                               : null,

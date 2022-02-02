@@ -112,7 +112,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'ReaderModeScreen', function () {
-          return et
+          return Ye
         })
       var r = n('ddV6'),
         a = n.n(r),
@@ -226,22 +226,22 @@
       }
       T.metadata = { width: 24, height: 24 }
       var L = T,
-        M = n('hACr'),
-        D = n('lOQR'),
+        D = n('hACr'),
+        M = n('lOQR'),
         I = n('yoO3'),
         B = n('wiP2'),
         F = n('MWbm'),
-        N = n('rHpw'),
-        A = n('I4+6'),
+        A = n('rHpw'),
+        N = n('I4+6'),
         z = n('fyKl'),
-        W = n('CKsB'),
-        U = n('cm6r'),
+        U = n('CKsB'),
+        W = n('cm6r'),
         K = n('t62R'),
         V = n('/yvb'),
         q = n('ML2/'),
         X = n('C25v'),
-        Z = n('ZGdk'),
-        Q = n('IMYl'),
+        Q = n('ZGdk'),
+        Z = n('IMYl'),
         J = n('witV'),
         G = n('2lds')
       function Y(e, t) {
@@ -301,13 +301,13 @@
         se = _.a.f1252ac7,
         ue = _.a.daa0da04,
         de = _.a.ba5256b1,
-        pe = N.a.isDarkMode() ? N.a.theme.colors.gray50 : N.a.theme.colors.gray0,
+        pe = A.a.isDarkMode() ? A.a.theme.colors.gray50 : A.a.theme.colors.gray0,
         me = 'body',
         fe = 'headline1',
         he = 'title3',
-        be = A.a.generate({
-          backgroundColor: N.a.theme.colors.primary,
-          color: N.a.theme.colors.cellBackground,
+        be = N.a.generate({
+          backgroundColor: A.a.theme.colors.primary,
+          color: A.a.theme.colors.cellBackground,
           customFocusBackgroundColor: pe,
           customHoverBackgroundColor: pe,
           customPressedBackgroundColor: pe,
@@ -361,9 +361,9 @@
                       preferredVerticalOrientation: 'up',
                     },
                     t
-                      ? i.a.createElement(W.a, { Icon: q.a, actionText: oe, onClick: _ })
-                      : i.a.createElement(W.a, { Icon: X.a, actionText: ae, onClick: k }),
-                    i.a.createElement(W.a, { Icon: Z.a, actionText: ie, onClick: C }),
+                      ? i.a.createElement(U.a, { Icon: q.a, actionText: oe, onClick: _ })
+                      : i.a.createElement(U.a, { Icon: X.a, actionText: ae, onClick: k }),
+                    i.a.createElement(U.a, { Icon: Q.a, actionText: ie, onClick: C }),
                   )
                 : null
             },
@@ -383,9 +383,9 @@
                       preferredHorizontalOrientation: 'right',
                       preferredVerticalOrientation: 'up',
                     },
-                    i.a.createElement(W.a, { Icon: R(me) ? Q.a : S, actionText: ue, onClick: j(me) }),
-                    i.a.createElement(W.a, { Icon: R(fe) ? Q.a : S, actionText: se, onClick: j(fe) }),
-                    i.a.createElement(W.a, { Icon: R(he) ? Q.a : S, actionText: le, onClick: j(he) }),
+                    i.a.createElement(U.a, { Icon: R(me) ? Z.a : S, actionText: ue, onClick: j(me) }),
+                    i.a.createElement(U.a, { Icon: R(fe) ? Z.a : S, actionText: se, onClick: j(fe) }),
+                    i.a.createElement(U.a, { Icon: R(he) ? Z.a : S, actionText: le, onClick: j(he) }),
                   )
                 : null
             },
@@ -407,29 +407,31 @@
               },
               i.a.createElement(
                 F.a,
-                { style: n ? ye.actionBarMobile : ye.actionBar },
-                n && p
-                  ? i.a.createElement(
-                      i.a.Fragment,
-                      null,
-                      i.a.createElement(
-                        U.a,
-                        { accessibilityLabel: ce, interactiveStyles: be, onPress: l, style: ye.actionItem },
-                        i.a.createElement(K.b, { color: 'gray700' }, ce),
-                      ),
-                      i.a.createElement(
-                        U.a,
-                        { accessibilityLabel: re, interactiveStyles: be, onPress: O, style: ye.actionItem },
-                        P(),
-                      ),
-                      x(),
-                      i.a.createElement(
-                        U.a,
-                        { accessibilityLabel: de, interactiveStyles: be, onPress: E, style: ye.actionItem },
-                        i.a.createElement(te, { style: n ? ye.iconMobile : ye.icon }),
-                      ),
-                      H(),
-                    )
+                { style: n ? (p ? ye.actionBarMobile : void 0) : ye.actionBar },
+                n
+                  ? p
+                    ? i.a.createElement(
+                        i.a.Fragment,
+                        null,
+                        i.a.createElement(
+                          W.a,
+                          { accessibilityLabel: ce, interactiveStyles: be, onPress: l, style: ye.actionItem },
+                          i.a.createElement(K.b, { color: 'gray700' }, ce),
+                        ),
+                        i.a.createElement(
+                          W.a,
+                          { accessibilityLabel: re, interactiveStyles: be, onPress: O, style: ye.actionItem },
+                          P(),
+                        ),
+                        x(),
+                        i.a.createElement(
+                          W.a,
+                          { accessibilityLabel: de, interactiveStyles: be, onPress: E, style: ye.actionItem },
+                          i.a.createElement(te, { style: n ? ye.iconMobile : ye.icon }),
+                        ),
+                        H(),
+                      )
+                    : null
                   : i.a.createElement(
                       i.a.Fragment,
                       null,
@@ -469,21 +471,14 @@
             ),
           )
         },
-        ye = N.a.create(function (e) {
+        ye = A.a.create(function (e) {
           return {
-            actionBarWrapper: {
-              backfaceVisibility: 'hidden',
-              height: '100%',
-              width: '100%',
-              position: 'fixed',
-              left: 0,
-              bottom: 0,
-            },
-            actionBarWrapperMobile: { height: 0 },
+            actionBarWrapper: { backfaceVisibility: 'hidden', height: '100%', width: '100%', left: 0, bottom: 0 },
+            actionBarWrapperMobile: { height: 0, position: 'fixed' },
             actionBar: {
               flexDirection: 'row',
               justifyContent: 'center',
-              position: 'absolute',
+              position: 'fixed',
               left: e.spaces.space12,
               top: e.spaces.space12,
             },
@@ -589,33 +584,31 @@
             title: Pe,
           })
         }),
-        Me = n('Rp9C'),
-        De = n('7JQg'),
+        De = n('Rp9C'),
+        Me = n('7JQg'),
         Ie = n('N5qz'),
         Be = n('Es6L'),
         Fe = n('HQ0t'),
-        Ne = n('k89r'),
-        Ae = n('aITJ'),
-        ze = n('yw4N'),
-        We = n('0FVZ'),
-        Ue = n('cHvH'),
-        Ke = n('oQhu'),
-        Ve = n('fs1G'),
-        qe = _.a.b59d8d10,
-        Xe = _.a.h5d6c720,
-        Ze = _.a.af9c8a3d,
-        Qe = _.a.c299a6cf,
-        Je = _.a.i9a4ca8a,
-        Ge = { page: 'thread', section: 'reader_mode' },
-        Ye = Object(Ke.a)(function (e, t, n) {
+        Ae = n('k89r'),
+        Ne = n('aITJ'),
+        ze = n('cHvH'),
+        Ue = n('oQhu'),
+        We = n('fs1G'),
+        Ke = _.a.b59d8d10,
+        Ve = _.a.h5d6c720,
+        qe = _.a.af9c8a3d,
+        Xe = _.a.c299a6cf,
+        Qe = _.a.i9a4ca8a,
+        Ze = { page: 'thread', section: 'reader_mode' },
+        Je = Object(Ue.a)(function (e, t, n) {
           return Object(E.a)({ focalTweetId: e, fetchOptions: t, featureSwitches: n, timelineIdPrefix: 'reader' })
         }),
-        $e = Object(Ke.a)(function (e, t) {
-          var n = (t ? Me.a.getUserItem(t) : {}).is_viewer_follows_user,
+        Ge = Object(Ue.a)(function (e, t) {
+          var n = (t ? De.a.getUserItem(t) : {}).is_viewer_follows_user,
             r = void 0 !== n && n
-          return { items: [Me.a.forThread(e, r)], tweet_id: e }
+          return { items: [De.a.forThread(e, r)], tweet_id: e }
         }),
-        et = function (e) {
+        Ye = function (e) {
           var t = e.addToast,
             n = e.authorScreenName,
             r = e.bookmark,
@@ -630,14 +623,14 @@
             b = e.unbookmark,
             g = e.user,
             y = i.a.useContext(c.a).featureSwitches,
-            w = Object(Ne.a)(),
+            w = Object(Ae.a)(),
             v = i.a.useState('headline1'),
             O = a()(v, 2),
             E = O[0],
             C = O[1],
             _ = i.a.useCallback(
               function () {
-                var e = $e(s, g)
+                var e = Ge(s, g)
                 g &&
                   s &&
                   w.scribe({
@@ -711,83 +704,39 @@
           var L = function () {
               u.push({ pathname: '/i/bookmarks/add/', state: { tweet_id: s } })
             },
-            N = function () {
+            A = function () {
               r(s).then(
                 function () {
-                  t({ text: qe })
+                  t({ text: Ke })
                 },
                 function (e) {
                   o(l.a)(e)
                 },
               )
             },
-            A = function () {
+            N = function () {
               b(s).then(
                 function () {
-                  t({ text: Xe })
+                  t({ text: Ve })
                 },
                 function (e) {
                   o(l.a)(e)
                 },
               )
             },
-            z = function (e, t) {
-              var n,
-                r = Object(Be.a)()
-              e && r ? (n = tt.containerOneCol) : e && (n = tt.containerOneColSmall)
-              var a = i.a.createElement(ge, {
+            z = function (e) {
+              return i.a.createElement(ge, {
                 isBookmarked: d,
-                isMobileLayout: t,
-                onAddBookmark: N,
+                isMobileLayout: e,
+                onAddBookmark: A,
                 onAddBookmarkFolder: L,
                 onClose: x,
                 onFontSizeChange: C,
-                onRemoveBookmark: A,
+                onRemoveBookmark: N,
                 tweetTextSize: E,
               })
-              return i.a.createElement(
-                F.a,
-                { onClick: j, style: tt.pageWrapper },
-                i.a.createElement(
-                  ze.a,
-                  { accessibilityExpanded: !0, style: tt.viewport },
-                  i.a.createElement(
-                    F.a,
-                    { style: [tt.root, e ? tt.rootMobile : void 0] },
-                    e ? null : a,
-                    i.a.createElement(
-                      F.a,
-                      { onClick: R, style: [tt.container, n] },
-                      i.a.createElement(
-                        F.a,
-                        { style: tt.innerWrapper },
-                        i.a.createElement(Le, {
-                          focalTweetId: s,
-                          module: Ye(s, { isReaderMode: !0 }, y),
-                          rootTweetId: m,
-                          tweetTextSize: E,
-                        }),
-                        e ? a : null,
-                      ),
-                    ),
-                  ),
-                ),
-              )
             },
-            W = function () {
-              return D.a.openApp('twitter://thread/'.concat(s))
-            },
-            U = function () {
-              var e = Ae.b.isMobileOS()
-              return i.a.createElement(
-                F.a,
-                { style: tt.mobileAppBarRightControl },
-                e ? i.a.createElement(V.a, { onClick: W }, Ze) : null,
-                i.a.createElement(V.a, { accessibilityLabel: Je, icon: nt, onClick: P, type: 'brandText' }),
-              )
-            }
-          return i.a.createElement(Ue.a, null, function (e) {
-            return (function (e) {
+            U = function (e) {
               var t,
                 n = Ie.a.isOneColumnSquishedLayout(e),
                 r = n || Ie.a.isOneColumnLayout(e)
@@ -796,28 +745,72 @@
                 null,
                 i.a.createElement(B.a.Configure, {
                   onBackClick: x,
-                  rightControl: U(),
-                  sideNav: i.a.createElement(i.a.Fragment, null),
-                  title: i.a.createElement(Fe.a, { style: tt.titleIcon, text: Qe }),
+                  rightControl: K(),
+                  sideNav: z(n),
+                  title: i.a.createElement(Fe.a, { style: $e.titleIcon, text: Xe }),
                   withForceTopNav: n,
                 }),
                 i.a.createElement(
-                  De.b,
-                  { data: { tweet_id: s }, namespace: Ge },
-                  i.a.createElement(I.a, null, n ? z(r, n) : i.a.createElement(We.a.Modal, null, z(r, n))),
+                  Me.b,
+                  { data: { tweet_id: s }, namespace: Ze },
+                  i.a.createElement(
+                    I.a,
+                    null,
+                    (function (e, t) {
+                      var n,
+                        r = Object(Be.a)()
+                      return (
+                        e && r ? (n = $e.containerOneCol) : e && (n = $e.containerOneColSmall),
+                        i.a.createElement(
+                          F.a,
+                          { style: [$e.root, e ? $e.rootMobile : void 0] },
+                          i.a.createElement(
+                            F.a,
+                            { onClick: R, style: [$e.container, n] },
+                            i.a.createElement(
+                              F.a,
+                              { style: $e.innerWrapper },
+                              i.a.createElement(Le, {
+                                focalTweetId: s,
+                                module: Je(s, { isReaderMode: !0 }, y),
+                                rootTweetId: m,
+                                tweetTextSize: E,
+                              }),
+                              e ? z(t) : null,
+                            ),
+                          ),
+                        )
+                      )
+                    })(r, n),
+                  ),
                 ),
-                i.a.createElement(M.a, {
+                i.a.createElement(D.a, {
                   handlers: {
                     esc:
                       ((t = window.location.pathname.match(/\/@?([_\w+]+)\/thread\/([\d]+)\/?/) || []),
-                      a()(t, 1)[0] ? j : Ve.a),
+                      a()(t, 1)[0] ? j : We.a),
                   },
                 }),
               )
-            })(e.windowWidth)
+            },
+            W = function () {
+              return M.a.openApp('twitter://thread/'.concat(s))
+            },
+            K = function () {
+              var e = Ne.b.isMobileOS()
+              return i.a.createElement(
+                F.a,
+                { style: $e.mobileAppBarRightControl },
+                e ? i.a.createElement(V.a, { onClick: W }, qe) : null,
+                i.a.createElement(V.a, { accessibilityLabel: Qe, icon: et, onClick: P, type: 'brandText' }),
+              )
+            }
+          return i.a.createElement(ze.a, null, function (e) {
+            var t = e.windowWidth
+            return U(t)
           })
         },
-        tt = N.a.create(function (e) {
+        $e = A.a.create(function (e) {
           return {
             actionItem: {
               alignItems: 'center',
@@ -844,15 +837,6 @@
             innerWrapper: { height: '100%', width: '100%' },
             mobileAppBarRightControl: { flexDirection: 'row', alignItems: 'center', height: e.spaces.space40 },
             modal: { alignSelf: 'center', backgroundColor: e.colors.gray50 },
-            pageWrapper: {
-              backgroundColor: e.colors.cellBackground,
-              cursor: 'pointer',
-              height: '100%',
-              left: 0,
-              position: 'fixed',
-              right: 0,
-              width: '100%',
-            },
             rightControlAction: { height: '100%' },
             root: { height: '100%', flexDirection: 'row', paddingTop: e.spaces.space56, width: '100%' },
             rootMobile: { paddingTop: 0 },
@@ -860,15 +844,15 @@
             viewport: { backgroundColor: e.colors.cellBackground, overflow: 'auto', width: '100%', maxHeight: '100%' },
           }
         }),
-        nt = i.a.createElement(L, { style: tt.icon }),
-        rt = O(et)
-      t.default = rt
+        et = i.a.createElement(L, { style: $e.icon }),
+        tt = O(Ye)
+      t.default = tt
     },
     fyKl: function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'default', function () {
-          return N
+          return A
         })
       n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('OZaJ')
       var r = n('97Jx'),
@@ -902,8 +886,8 @@
         P = n('rHpw'),
         T = n('i4Oy'),
         L = n('shC7'),
-        M = n('MWbm')
-      function D(e) {
+        D = n('MWbm')
+      function M(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -969,9 +953,9 @@
             contentFixed: { position: 'fixed', overflowY: 'auto', overscrollBehavior: 'contain' },
           }
         }),
-        N = (function (e) {
+        A = (function (e) {
           p()(n, e)
-          var t = D(n)
+          var t = M(n)
           function n(e, r) {
             var a
             return (
@@ -1109,7 +1093,7 @@
                       },
                     ]
                   return v.a.createElement(
-                    M.a,
+                    D.a,
                     { ref: this._receiveAnchorRef, style: F.anchor },
                     v.a.createElement(
                       R.a.Dropdown,
@@ -1123,12 +1107,12 @@
                             v.a.createElement(
                               C.a,
                               { withKeyboardNavigation: l },
-                              v.a.createElement(M.a, { onClick: c, style: F.mask }),
-                              v.a.createElement(M.a, { ref: e._receiveBodyRectHelperRef, style: F.bodyRectHelper }),
+                              v.a.createElement(D.a, { onClick: c, style: F.mask }),
+                              v.a.createElement(D.a, { ref: e._receiveBodyRectHelperRef, style: F.bodyRectHelper }),
                               v.a.createElement(H.a, null, function (t) {
                                 var i = t.windowWidth
                                 return v.a.createElement(
-                                  M.a,
+                                  D.a,
                                   {
                                     accessibilityRole: 'menu',
                                     onKeyUp: e._handleEsc,
@@ -1152,7 +1136,7 @@
                                             x.a,
                                             { id: 'Dropdown', minimizeReporting: t },
                                             function (e, t) {
-                                              return v.a.createElement(M.a, a()({ ref: e() }, t({})), o)
+                                              return v.a.createElement(D.a, a()({ ref: e() }, t({})), o)
                                             },
                                           )
                                         },
@@ -1171,7 +1155,7 @@
             n
           )
         })(v.a.Component)
-      y()(N, 'defaultProps', {
+      y()(A, 'defaultProps', {
         preferredHorizontalOrientation: 'left',
         preferredVerticalOrientation: 'down',
         animateType: 'slide',

@@ -6,12 +6,12 @@
       n('OZaJ')
       var r = n('VrFO'),
         o = n.n(r),
-        i = n('Y9Ll'),
-        a = n.n(i),
+        a = n('Y9Ll'),
+        i = n.n(a),
         c = n('1Pcy'),
         l = n.n(c),
-        u = n('5Yy7'),
-        s = n.n(u),
+        s = n('5Yy7'),
+        u = n.n(s),
         d = n('N+ot'),
         f = n.n(d),
         p = n('AuHH'),
@@ -48,14 +48,14 @@
         }
       }
       var w = (function (e) {
-        s()(n, e)
+        u()(n, e)
         var t = T(n)
         function n() {
           var e
           o()(this, n)
-          for (var r = arguments.length, i = new Array(r), a = 0; a < r; a++) i[a] = arguments[a]
+          for (var r = arguments.length, a = new Array(r), i = 0; i < r; i++) a[i] = arguments[i]
           return (
-            (e = t.call.apply(t, [this].concat(i))),
+            (e = t.call.apply(t, [this].concat(a))),
             y()(l()(e), 'state', { queryContext: void 0, canShowTypeahead: !1 }),
             y()(l()(e), '_genericWrapperRef', m.a.createRef()),
             y()(l()(e), 'render', function () {
@@ -63,22 +63,22 @@
                 n = t.children,
                 r = t.contextText,
                 o = t.isInline,
-                i = t.isInlineReply,
-                a = t.onTypeaheadStateChange,
+                a = t.isInlineReply,
+                i = t.onTypeaheadStateChange,
                 c = t.source,
                 l = e.state,
-                u = l.canShowTypeahead,
-                s = l.queryContext,
-                d = u && s ? { word: s.word, resultType: s.resultType } : void 0
+                s = l.canShowTypeahead,
+                u = l.queryContext,
+                d = s && u ? { word: u.word, resultType: u.resultType } : void 0
               return m.a.createElement(
                 S.a,
                 {
                   contextText: r,
                   isInline: o,
-                  isInlineReply: i,
+                  isInlineReply: a,
                   onDismiss: e._handleDismiss,
                   onSelectItem: e._handleSelectItem,
-                  onTypeaheadStateChange: a,
+                  onTypeaheadStateChange: i,
                   query: d,
                   ref: e._genericWrapperRef,
                   source: c || x.d.Compose,
@@ -108,18 +108,18 @@
               var n = e.state.queryContext,
                 r = n && n.word,
                 o = e._getPlaintextFromCurrentBlock(t),
-                i = C.c(e._getCaret(t), o),
-                a = i.end,
-                c = i.start,
-                l = i.word,
-                u = C.e(l || '', 'compose')
-              if ((null == u ? void 0 : u.q) !== r)
+                a = C.c(e._getCaret(t), o),
+                i = a.end,
+                c = a.start,
+                l = a.word,
+                s = C.e(l || '', 'compose')
+              if ((null == s ? void 0 : s.q) !== r)
                 if ((e._genericWrapperRef.current && e._genericWrapperRef.current.resetSelectedItem(), -1 === c))
                   e._setQueryContext(void 0)
-                else if (u) {
-                  var s = u.q,
-                    d = u.result_type
-                  e._setQueryContext({ word: s, resultType: d, editorState: t, startIndex: c, endIndex: a })
+                else if (s) {
+                  var u = s.q,
+                    d = s.result_type
+                  e._setQueryContext({ word: u, resultType: d, editorState: t, startIndex: c, endIndex: i })
                 } else e._setQueryContext(void 0)
             }),
             y()(l()(e), '_setQueryContext', function (t) {
@@ -132,21 +132,21 @@
           )
         }
         return (
-          a()(n, [
+          i()(n, [
             {
               key: '_replaceToken',
               value: function (e, t) {
                 var n = t.editorState,
                   r = t.endIndex,
                   o = t.startIndex,
-                  i = n
+                  a = n
                     .getSelection()
                     .merge({ anchorKey: n.getSelection().getFocusKey(), anchorOffset: o, focusOffset: r }),
-                  a = k.Modifier.replaceText(n.getCurrentContent(), i, e),
-                  c = k.EditorState.push(n, a, 'insert-characters'),
+                  i = k.Modifier.replaceText(n.getCurrentContent(), a, e),
+                  c = k.EditorState.push(n, i, 'insert-characters'),
                   l = o + e.length,
-                  u = c.getSelection().merge({ anchorOffset: l, focusOffset: l })
-                return k.EditorState.forceSelection(c, u)
+                  s = c.getSelection().merge({ anchorOffset: l, focusOffset: l })
+                return k.EditorState.forceSelection(c, s)
               },
             },
           ]),
@@ -161,12 +161,12 @@
       n('ERkP')
       var r = n('RH6X'),
         o = n('hHEM'),
-        i = n('keCP')
+        a = n('keCP')
       t.default = function (e) {
         return (0, e.children)({
           richTextInputContext: {
             convertEmojiToEntities: o.a.convertEmojiToEntities,
-            element: i.a,
+            element: a.a,
             initEditorState: o.a.initEditorState,
             insertTextAtCursor: o.a.insertTextAtCursor,
           },
@@ -181,15 +181,15 @@
         Object.defineProperty(t, '__esModule', { value: !0 }),
         (t.default = function (e, t) {
           var n = (0, c.default)(e, t)
-            .concat((0, a.default)(e))
-            .concat((0, i.default)(e, { checkUrlOverlap: !1 }))
+            .concat((0, i.default)(e))
+            .concat((0, a.default)(e, { checkUrlOverlap: !1 }))
             .concat((0, o.default)(e))
           if (0 == n.length) return []
           return (0, l.default)(n), n
         })
       var o = r(n('EW8Q')),
-        i = r(n('yyPN')),
-        a = r(n('YXS5')),
+        a = r(n('yyPN')),
+        i = r(n('YXS5')),
         c = r(n('vwfs')),
         l = r(n('c8jd'))
       e.exports = t.default
@@ -199,14 +199,14 @@
       n('yH/f'), n('jwue'), n('+oxZ'), n('hBvt'), n('KqXw'), n('z84I')
       var r = n('ERkP'),
         o = n.n(r),
-        i = n('dWxr'),
-        a = n.n(i),
+        a = n('dWxr'),
+        i = n.n(a),
         c = n('rHpw'),
         l = n('aITJ'),
-        u = { clipPath: 'circle(0% at center)' },
-        s = {
+        s = { clipPath: 'circle(0% at center)' },
+        u = {
           strategy: function (e, t) {
-            for (var n = a()(e.getText()), r = 0; r < n.length; r++)
+            for (var n = i()(e.getText()), r = 0; r < n.length; r++)
               n[r].indices && 2 === n[r].indices.length && t(n[r].indices[0], n[r].indices[1])
           },
           component: function (e) {
@@ -225,18 +225,18 @@
             var t = e.children,
               n = e.contentState,
               r = e.entityKey,
-              i = (r && n.getEntity(r)) || {}
+              a = (r && n.getEntity(r)) || {}
             return !(l.b.isFirefox() && l.b.firefoxVersion() < 49)
               ? o.a.Children.map(t, function (e) {
                   var t,
                     n = o.a.Children.map(e, function (e) {
-                      return o.a.createElement('span', { style: u }, e)
+                      return o.a.createElement('span', { style: s }, e)
                     })[0]
                   return o.a.cloneElement(
                     o.a.createElement('span', null),
                     {
                       style:
-                        ((t = (i.data && i.data.url) || ''),
+                        ((t = (a.data && a.data.url) || ''),
                         {
                           backgroundImage: 'url("'.concat(t, '")'),
                           backgroundSize: '1em 1em',
@@ -255,7 +255,7 @@
         f = {
           strategy: function (e, t) {
             var n = (function (e, t, n) {
-              for (var r, o, i = t.getText(); (r = e.exec(i)); ) n((o = r.index), o + r[0].length)
+              for (var r, o, a = t.getText(); (r = e.exec(a)); ) n((o = r.index), o + r[0].length)
             })(/\r/g, e, t)
             if (n) return t(n, n + 1)
           },
@@ -268,9 +268,9 @@
         g = function (e, t) {
           for (var n = 0, r = 0; r < e.length; r++) {
             var o = e[r],
-              i = o.getText().length
-            if (n + i >= t) return { blockKey: o.key, offset: t - n }
-            n += i + 1
+              a = o.getText().length
+            if (n + a >= t) return { blockKey: o.key, offset: t - n }
+            n += a + 1
           }
           return Object.freeze({})
         },
@@ -278,30 +278,30 @@
           var n = e.getCurrentContent(),
             r = n.getFirstBlock(),
             o = n.getLastBlock(),
-            i = t.blockKey,
-            a = void 0 === i ? o.key : i,
+            a = t.blockKey,
+            i = void 0 === a ? o.key : a,
             c = t.offset,
             l = void 0 === c ? o.getText().length : c,
-            u = e
+            s = e
               .getSelection()
-              .merge({ anchorKey: r.key, anchorOffset: 0, focusKey: a, focusOffset: l, isBackward: !1 }),
-            s = h.Modifier.removeInlineStyle(e.getCurrentContent(), u, 'overflow')
-          return h.EditorState.push(e, s, 'change-inline-style')
+              .merge({ anchorKey: r.key, anchorOffset: 0, focusKey: i, focusOffset: l, isBackward: !1 }),
+            u = h.Modifier.removeInlineStyle(e.getCurrentContent(), s, 'overflow')
+          return h.EditorState.push(e, u, 'change-inline-style')
         },
         v = function (e, t) {
           var n = t.blockKey,
             r = t.offset,
             o = e.getCurrentContent(),
-            i = o.getLastBlock(),
-            a = m(o, n, r)
+            a = o.getLastBlock(),
+            i = m(o, n, r)
           if (n) {
             var c = e
                 .getSelection()
                 .merge({
                   anchorKey: n,
-                  anchorOffset: a,
-                  focusKey: i.key,
-                  focusOffset: i.getText().length,
+                  anchorOffset: i,
+                  focusKey: a.key,
+                  focusOffset: a.getText().length,
                   isBackward: !1,
                 }),
               l = h.Modifier.applyInlineStyle(o, c, 'overflow')
@@ -314,15 +314,15 @@
             r = n,
             o = e.getBlockForKey(t)
           if (o) {
-            var i = o.getEntityAt(n)
-            if (void 0 !== i) {
-              var a = i && e.getEntity(i),
-                c = a && a.data && a.data.id
+            var a = o.getEntityAt(n)
+            if (void 0 !== a) {
+              var i = a && e.getEntity(a),
+                c = i && i.data && i.data.id
               if (void 0 !== c)
                 for (var l = n - 1; l >= 0; l--) {
-                  var u = o.getEntityAt(l),
-                    s = u && e.getEntity(u)
-                  if (!s || !s.data || s.data.id !== c) {
+                  var s = o.getEntityAt(l),
+                    u = s && e.getEntity(s)
+                  if (!u || !u.data || u.data.id !== c) {
                     r = l + 1
                     break
                   }
@@ -342,9 +342,9 @@
               n.getBlocksAsArray().forEach(function (e) {
                 p.a.getTwemojiEntities(e.getText()).forEach(function (o) {
                   if (2 === (o.indices && o.indices.length)) {
-                    var i = n.createEntity(C, S, { url: o.url || null, id: r })
+                    var a = n.createEntity(C, S, { url: o.url || null, id: r })
                     r += 1
-                    var a = i.getLastCreatedEntityKey(),
+                    var i = a.getLastCreatedEntityKey(),
                       c = e.getKey(),
                       l = t
                         .getSelection()
@@ -355,7 +355,7 @@
                           focusOffset: o.indices[1],
                           isBackward: !1,
                         })
-                    n = h.Modifier.applyEntity(i, l, a)
+                    n = h.Modifier.applyEntity(a, l, i)
                   }
                 })
               }),
@@ -365,8 +365,11 @@
           getRelativeOffset: g,
           initEditorState: function () {
             var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : '',
-              t = [s, d, f],
-              n = h.EditorState.createWithContent(h.ContentState.createFromText(e), new h.CompositeDecorator(t))
+              t = [u, d, f],
+              n = h.EditorState.createWithContent(
+                'string' == typeof e ? h.ContentState.createFromText(e) : Object(h.convertFromRaw)(e),
+                new h.CompositeDecorator(t),
+              )
             return h.EditorState.moveSelectionToEnd(n)
           },
           insertTextAtCursor: function (e, t) {
@@ -380,19 +383,19 @@
             var n,
               r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
               o = e.getSelection(),
-              i = h.EditorState.set(e, { allowUndo: !1 }),
-              a = e.getCurrentContent().getSelectionBefore(),
+              a = h.EditorState.set(e, { allowUndo: !1 }),
+              i = e.getCurrentContent().getSelectionBefore(),
               c = e.getCurrentContent().getSelectionAfter(),
               l = e.getCurrentContent(),
-              u = l.getBlocksAsArray(),
-              s = 'number' == typeof t && t > -1,
-              d = s ? g(u, t) : Object.freeze({})
-            if ((r && ((i = y(i, d)), (n = !0)), s && ((i = v(i, d)), (n = !0)), n)) {
-              var f = (i = h.EditorState.forceSelection(i, o)).getCurrentContent()
-              ;(f = (f = f.set('selectionBefore', a)).set('selectionAfter', c)),
-                (i = h.EditorState.set(e, { allowUndo: !0, currentContent: f }))
+              s = l.getBlocksAsArray(),
+              u = 'number' == typeof t && t > -1,
+              d = u ? g(s, t) : Object.freeze({})
+            if ((r && ((a = y(a, d)), (n = !0)), u && ((a = v(a, d)), (n = !0)), n)) {
+              var f = (a = h.EditorState.forceSelection(a, o)).getCurrentContent()
+              ;(f = (f = f.set('selectionBefore', i)).set('selectionAfter', c)),
+                (a = h.EditorState.set(e, { allowUndo: !0, currentContent: f }))
             }
-            return i
+            return a
           },
         })
     },
@@ -401,12 +404,12 @@
       n('OZaJ')
       var r = n('VrFO'),
         o = n.n(r),
-        i = n('Y9Ll'),
-        a = n.n(i),
+        a = n('Y9Ll'),
+        i = n.n(a),
         c = n('1Pcy'),
         l = n.n(c),
-        u = n('5Yy7'),
-        s = n.n(u),
+        s = n('5Yy7'),
+        u = n.n(s),
         d = n('N+ot'),
         f = n.n(d),
         p = n('AuHH'),
@@ -453,8 +456,8 @@
         w = n('PxJJ'),
         _ = n('w9LO'),
         D = n('fs1G'),
-        O = (n('aWzz'), n('zpdM'))
-      function R(e) {
+        R = (n('aWzz'), n('zpdM'))
+      function O(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -475,15 +478,15 @@
           return f()(this, n)
         }
       }
-      var K = function (e) {
+      var F = function (e) {
           return Object(T.a)('div', e)
         },
         P = !1,
-        F =
+        K =
           ((t.a = k.a.forwardRef(function (e, t) {
             var n = C.d()
             return k.a.createElement(
-              F,
+              K,
               m()({}, e, {
                 onFocus: function (t) {
                   e.onFocus && e.onFocus(t), n('focus')
@@ -493,20 +496,20 @@
             )
           })),
           (function (e) {
-            s()(n, e)
-            var t = R(n)
+            u()(n, e)
+            var t = O(n)
             function n() {
               var e
               o()(this, n)
-              for (var r = arguments.length, i = new Array(r), a = 0; a < r; a++) i[a] = arguments[a]
+              for (var r = arguments.length, a = new Array(r), i = 0; i < r; i++) a[i] = arguments[i]
               return (
-                (e = t.call.apply(t, [this].concat(i))),
+                (e = t.call.apply(t, [this].concat(a))),
                 y()(l()(e), '_setSelectionToStart', function () {
                   var t = e.props.editorState,
                     n = t.getCurrentContent().getFirstBlock().getKey()
-                  return O.EditorState.acceptSelection(
+                  return R.EditorState.acceptSelection(
                     t,
-                    new O.SelectionState({
+                    new R.SelectionState({
                       anchorKey: n,
                       anchorOffset: 0,
                       focusKey: n,
@@ -517,7 +520,7 @@
                 }),
                 y()(l()(e), '_setFocusToStart', function () {
                   var t = e._setSelectionToStart()
-                  return O.EditorState.forceSelection(t, t.getSelection())
+                  return R.EditorState.forceSelection(t, t.getSelection())
                 }),
                 y()(l()(e), '_setFocusToEnd', function () {
                   var t = e.props,
@@ -525,8 +528,8 @@
                     r = t.editorState,
                     o = t.onChange
                   n
-                    ? null == o || o(O.EditorState.moveFocusToEnd(r))
-                    : null == o || o(O.EditorState.moveSelectionToEnd(r))
+                    ? null == o || o(R.EditorState.moveFocusToEnd(r))
+                    : null == o || o(R.EditorState.moveSelectionToEnd(r))
                 }),
                 y()(l()(e), '_setDraftJsStyle', function () {
                   var t = e.props.placeholderTextColor,
@@ -566,13 +569,13 @@
                 }),
                 y()(l()(e), '_onPastedText', function (t, n, r) {
                   var o = e.props,
-                    i = o.multiline,
-                    a = o.onChange
-                  return !i && a
-                    ? (a(
-                        O.EditorState.push(
+                    a = o.multiline,
+                    i = o.onChange
+                  return !a && i
+                    ? (i(
+                        R.EditorState.push(
                           r,
-                          O.Modifier.replaceText(r.getCurrentContent(), r.getSelection(), t.replace(/[\r\n]+/g, ' ')),
+                          R.Modifier.replaceText(r.getCurrentContent(), r.getSelection(), t.replace(/[\r\n]+/g, ' ')),
                           'insert-characters',
                         ),
                       ),
@@ -583,8 +586,8 @@
                   var n = e.props,
                     r = n.dismissComposerCommandName,
                     o = n.sendTweetCommandName,
-                    i = O.KeyBindingUtil.hasCommandModifier
-                  return 13 === t.keyCode && i(t) ? o : 27 === t.keyCode ? r : Object(O.getDefaultKeyBinding)(t)
+                    a = R.KeyBindingUtil.hasCommandModifier
+                  return 13 === t.keyCode && a(t) ? o : 27 === t.keyCode ? r : Object(R.getDefaultKeyBinding)(t)
                 }),
                 y()(l()(e), '_onKeyCommand', function (t) {
                   var n = e.props.keyCommandHandlers,
@@ -600,8 +603,8 @@
                     n = t.appTextSize,
                     r = t.maxNumberOfLines,
                     o = t.multiline,
-                    i = t.numberOfLines,
-                    a =
+                    a = t.numberOfLines,
+                    i =
                       S.a.theme.lineHeightsPx[
                         {
                           small: 'subtext2',
@@ -612,13 +615,13 @@
                           headline1: 'headline1',
                         }[n]
                       ]
-                  return { minHeight: (o && i ? i : 1) * a, maxHeight: (o && r ? r : 1) * a }
+                  return { minHeight: (o && a ? a : 1) * i, maxHeight: (o && r ? r : 1) * i }
                 }),
                 e
               )
             }
             return (
-              a()(
+              i()(
                 n,
                 [
                   {
@@ -649,54 +652,59 @@
                         n = t.ariaActiveDescendant,
                         r = t.ariaAutocomplete,
                         o = t.ariaControls,
-                        i = t.ariaLabel,
-                        a = t.editorState,
-                        c = t.handleReturn,
-                        l = t.multiline,
-                        u = t.onChange,
-                        s = t.onFocus,
-                        d = t.onKeyDown,
-                        f = t.onKeyPress,
-                        p = t.onKeyUp,
-                        h = t.placeholder,
-                        g = t.spellCheck,
-                        v = t.style,
-                        m = t.testID
+                        a = t.ariaLabel,
+                        i = t.blockRenderMap,
+                        c = t.blockRendererFn,
+                        l = t.editorState,
+                        s = t.handleReturn,
+                        u = t.multiline,
+                        d = t.onChange,
+                        f = t.onFocus,
+                        p = t.onKeyDown,
+                        h = t.onKeyPress,
+                        g = t.onKeyUp,
+                        v = t.placeholder,
+                        m = t.spellCheck,
+                        C = t.stripPastedStyles,
+                        b = t.style,
+                        x = t.testID
                       return k.a.createElement(
-                        K,
+                        F,
                         {
-                          className: l ? void 0 : E,
+                          className: u ? void 0 : E,
                           onClick: this._handleViewClick,
-                          style: [this._getContainerStyle(), v],
+                          style: [this._getContainerStyle(), b],
                         },
-                        k.a.createElement(O.Editor, {
+                        k.a.createElement(R.Editor, {
                           ariaActiveDescendantID: n,
                           ariaAutoComplete: r,
                           ariaControls: o,
-                          ariaLabel: i,
-                          ariaMultiline: l,
+                          ariaLabel: a,
+                          ariaMultiline: u,
+                          blockRenderMap: i,
+                          blockRendererFn: c,
                           customAttrs:
                             ((e = {}),
                             y()(e, _.a.NO_REFOCUS_ATTRIBUTE, 'true'),
-                            y()(e, 'onKeyPress', f),
-                            y()(e, 'onKeyUp', p),
+                            y()(e, 'onKeyPress', h),
+                            y()(e, 'onKeyUp', g),
                             e),
                           customStyleMap: I(S.a.theme),
-                          editorState: a,
+                          editorState: l,
                           handleKeyCommand: this._onKeyCommand,
                           handlePastedFiles: this._onPastedFiles,
                           handlePastedText: this._onPastedText,
-                          handleReturn: l ? c : this._onSingleLineReturn,
+                          handleReturn: u ? s : this._onSingleLineReturn,
                           keyBindingFn: this._myKeyBindingFn,
-                          onChange: u,
-                          onFocus: s,
-                          onKeyDown: d,
-                          placeholder: h,
+                          onChange: d,
+                          onFocus: f,
+                          onKeyDown: p,
+                          placeholder: v,
                           ref: this._setEditorRef,
-                          spellCheck: 'false' !== g,
-                          stripPastedStyles: !0,
+                          spellCheck: 'false' !== m,
+                          stripPastedStyles: C,
                           tabIndex: 0,
-                          webDriverTestID: m,
+                          webDriverTestID: x,
                         }),
                       )
                     },
@@ -714,7 +722,7 @@
               n
             )
           })(k.a.Component))
-      y()(F, 'defaultProps', {
+      y()(K, 'defaultProps', {
         appTextSize: 'body',
         autoFocus: !1,
         keyCommandHandlers: {},
@@ -724,8 +732,9 @@
         onFocus: D.a,
         positionCursorAtEnd: !1,
         spellCheck: 'true',
+        stripPastedStyles: !0,
       }),
-        (F.propTypes = {})
+        (K.propTypes = {})
       var I = function (e) {
         return { overflow: { backgroundColor: e.colors.red200 } }
       }

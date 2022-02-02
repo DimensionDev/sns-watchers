@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [11],
+  [10],
   {
     '180P': function (e, t, n) {
       'use strict'
@@ -102,7 +102,7 @@
             text: p.a.if23a251,
           },
         }
-      function B(e, t) {
+      function M(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -114,16 +114,16 @@
         }
         return n
       }
-      function M(e) {
+      function B(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? B(Object(n), !0).forEach(function (t) {
+            ? M(Object(n), !0).forEach(function (t) {
                 u()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : B(Object(n)).forEach(function (t) {
+            : M(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
@@ -144,11 +144,11 @@
                     l = o.scribeAction,
                     u = O()(o, ['isAvailable', 'scribeAction'])
                   if (!c()) return null
-                  var s = M({}, u)
+                  var s = B({}, u)
                   function p() {
                     var o = a.shareText || e.shareText,
                       c = e.url,
-                      u = M(M({}, e.scribeNamespace), {}, { action: l }, a.scribeNamespace),
+                      u = B(B({}, e.scribeNamespace), {}, { action: l }, a.scribeNamespace),
                       s = { text: o, url: c },
                       p = { analytics: t, dispatch: n, history: r, mergedScribeNamespace: u, sessionToken: i }
                     !(function (e, t, n) {
@@ -157,7 +157,7 @@
                       }
                       switch (e) {
                         case 'dm':
-                          return r(), void n.history.push(M(M({}, F(t)), {}, { pathname: '/messages/compose' }))
+                          return r(), void n.history.push(B(B({}, F(t)), {}, { pathname: '/messages/compose' }))
                         case 'copy':
                           return (
                             w.a.setString(Object(j.a)(t.url, n.sessionToken)),
@@ -168,8 +168,8 @@
                           return (
                             r(),
                             void n.history.push(
-                              M(
-                                M({ pathname: '/compose/tweet' }, F(t)),
+                              B(
+                                B({ pathname: '/compose/tweet' }, F(t)),
                                 {},
                                 { state: { positionCursorAtBeginning: !0 } },
                               ),
@@ -180,14 +180,14 @@
                             .share({ text: t.text, url: Object(j.a)(t.url, n.sessionToken) })
                             .then(r)
                             .catch(function () {
-                              n.analytics.scribe(M(M({}, n.mergedScribeNamespace), {}, { action: 'share_error' }))
+                              n.analytics.scribe(B(B({}, n.mergedScribeNamespace), {}, { action: 'share_error' }))
                             })
                         default:
                           Object(P.a)('[ShareButton] Unexpected share type ['.concat(e, ']'))
                       }
                     })(a.type, s, p)
                   }
-                  return a.label && (s.text = a.label), M(M({}, s), {}, { onClick: p })
+                  return a.label && (s.text = a.label), B(B({}, s), {}, { onClick: p })
                 }
               },
               [t, n, r, i, e.scribeNamespace, e.shareText, e.url],
@@ -340,7 +340,12 @@
           r = t || {},
           a = r.component,
           i = r.element,
-          o = { items: [C.a.forTopic(e, t)] }
+          o = s.a.useMemo(
+            function () {
+              return { items: [C.a.forTopic(e, t)] }
+            },
+            [t, e],
+          )
         return (
           s.a.useEffect(
             function () {
@@ -395,11 +400,11 @@
         L = n('3XMw'),
         D = n.n(L),
         A = (n('jQ/y'), n('ho0z'), n('zI2C')),
-        B = n('v6aA'),
-        M = n('Zejx'),
+        M = n('v6aA'),
+        B = n('Zejx'),
         _ = function (e, t) {
           var n = t.navBar.topicId ? t.navBar.topicId : ''
-          return M.a.select(e, n)
+          return B.a.select(e, n)
         },
         N = Object(d.a)().propsFromState(function () {
           return { topic: _ }
@@ -431,7 +436,7 @@
             i = e.topic,
             o = e.withAppLinks,
             c = e.withOpenGraphMeta,
-            l = s.a.useContext(B.a).featureSwitches.isTrue('topic_landing_page_share_enabled'),
+            l = s.a.useContext(M.a).featureSwitches.isTrue('topic_landing_page_share_enabled'),
             u = T(t, r),
             p = u.data,
             f = u.namespace,
@@ -833,8 +838,8 @@
         Le = we(Object(Ce.a)(xe)),
         De = n('VS6U'),
         Ae = n('5Y9N'),
-        Be = n('FIs5'),
-        Me = n('cHvH'),
+        Me = n('FIs5'),
+        Be = n('cHvH'),
         _e = n('mw9i')
       function Ne(e, t) {
         var n = Object.keys(e)
@@ -893,8 +898,8 @@
             L = e.timelinePrefix,
             D = e.title,
             A = e.withAppLinks,
-            B = e.withBottomLoginSignupBar,
-            M = e.withDeferredView,
+            M = e.withBottomLoginSignupBar,
+            B = e.withDeferredView,
             _ = e.withOpenGraphMeta,
             N = e.withSearchBox,
             F = e.withTweetButton,
@@ -933,8 +938,8 @@
                   withOpenGraphMeta: _,
                 })
               : null,
-            te = M ? O.a : s.a.Fragment,
-            ne = s.a.createElement(Me.a, null, function (e) {
+            te = B ? O.a : s.a.Fragment,
+            ne = s.a.createElement(Be.a, null, function (e) {
               var t = e.windowWidth >= j.a.theme.breakpoints.medium
               return s.a.createElement(
                 s.a.Fragment,
@@ -977,7 +982,7 @@
                 sidebarContent: x,
                 subtitle: Z,
                 title: $ && U ? D : z,
-                withBottomLoginSignupBar: B,
+                withBottomLoginSignupBar: M,
                 withSearchBox: N,
                 withTweetButton: F,
               }),
@@ -987,7 +992,7 @@
       Ue.defaultProps = {
         entryConfiguration: g.b,
         renderEmptyState: function () {
-          return s.a.createElement(Be.a, { header: Re })
+          return s.a.createElement(Me.a, { header: Re })
         },
         sidebarContent: He,
         withDeferredView: !1,

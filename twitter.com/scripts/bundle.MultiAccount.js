@@ -4,7 +4,7 @@
     '0kTQ': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return s
+        return l
       })
       var r,
         a = n('KEM+'),
@@ -12,11 +12,11 @@
         i = n('k49u'),
         c = n('LVU8'),
         u = n('3XMw'),
-        l = n.n(u).a.b20a3893,
-        s =
+        s = n.n(u).a.b20a3893,
+        l =
           ((r = {}),
           o()(r, i.a.AppInReadOnlyMode, { customAction: c.b }),
-          o()(r, i.a.TargetUserNotFound, { toast: { text: l } }),
+          o()(r, i.a.TargetUserNotFound, { toast: { text: s } }),
           o()(r, 'showToast', !0),
           r)
     },
@@ -33,8 +33,8 @@
         i = n.n(o),
         c = n('1Pcy'),
         u = n.n(c),
-        l = n('5Yy7'),
-        s = n.n(l),
+        s = n('5Yy7'),
+        l = n.n(s),
         d = n('N+ot'),
         f = n.n(d),
         m = n('AuHH'),
@@ -52,8 +52,8 @@
         A = n('0KEI'),
         k = n('oEGd'),
         L = n('auX9'),
-        B = n('KkUe'),
-        O = Object(v.createSelector)(C.e.selectLoggedInUser, L.g, L.j, function (e, t, n) {
+        O = n('KkUe'),
+        B = Object(v.createSelector)(C.e.selectLoggedInUser, L.g, L.j, function (e, t, n) {
           return { loggedInUser: e, fetchStatus: t, users: n }
         }),
         F = {
@@ -61,21 +61,21 @@
           createLocalApiErrorHandler: Object(A.createLocalApiErrorHandlerWithContextFactory)(
             'ACCOUNT_SWITCHER_MULTI_LIST_FETCH',
           ),
-          logout: B.a,
-          logoutAll: B.b,
+          logout: O.a,
+          logoutAll: O.b,
           scribeAction: w.c,
           sendAllPreviews: S.f,
           switchAccount: E.a,
         },
-        R = Object(k.g)(O, F),
+        R = Object(k.g)(B, F),
         T = n('kGix'),
         M = n('v//M'),
-        I = n('jHSc'),
-        P = n('3XMw'),
-        j = n.n(P),
-        H = n('IMYl'),
-        U = n('0kTQ'),
-        x = 'AccountSwitcher_Add_Button',
+        P = n('jHSc'),
+        j = n('3XMw'),
+        H = n.n(j),
+        I = n('IMYl'),
+        x = n('0kTQ'),
+        U = 'AccountSwitcher_Add_Button',
         D = 'AccountSwitcher_Switch_Button',
         V = n('MWbm'),
         z = n('jtO7'),
@@ -134,22 +134,22 @@
           return f()(this, n)
         }
       }
-      var $ = j.a.b8e1d524,
-        ee = j.a.j0a8da6e,
-        te = j.a.b6bd6ae3,
-        ne = j.a.d2b8e92b,
-        re = j.a.dc65b3e4,
-        ae = j.a.i859a9d3,
+      var $ = H.a.b8e1d524,
+        ee = H.a.j0a8da6e,
+        te = H.a.b6bd6ae3,
+        ne = H.a.d2b8e92b,
+        re = H.a.dc65b3e4,
+        ae = H.a.i859a9d3,
         oe = 'https://help.twitter.com/managing-your-account/managing-multiple-twitter-accounts',
-        ie = j.a.ae1bbb26,
-        ce = j.a.bade139e,
-        ue = j.a.ae33b982,
-        le = j.a.fa07bf68,
-        se = j.a.d86bbf0f,
-        de = j.a.h6beb5fa,
+        ie = H.a.ae1bbb26,
+        ce = H.a.bade139e,
+        ue = H.a.ae33b982,
+        se = H.a.fa07bf68,
+        le = H.a.d86bbf0f,
+        de = H.a.h6beb5fa,
         fe = { page: 'account_switcher' },
         me = (function (e) {
-          s()(n, e)
+          l()(n, e)
           var t = Z(n)
           function n() {
             var e
@@ -171,7 +171,7 @@
                     disabled: n,
                     label: ee,
                     onPress: e._handleAddAccount,
-                    testID: x,
+                    testID: U,
                   }),
                   y.a.createElement(
                     V.a,
@@ -190,7 +190,7 @@
                     confirmationSheetConfirmButtonLabel: ie,
                     confirmationSheetConfirmButtonType: 'primary',
                     confirmationSheetHeadline: ue,
-                    confirmationSheetText: le,
+                    confirmationSheetText: se,
                     key: 'logoutAllButton',
                     label: ce,
                     onConfirmationSheetConfirm: e._handleLogoutAll,
@@ -227,7 +227,7 @@
                 )
               }),
               b()(u()(e), '_renderCurrentUserCheckmark', function () {
-                return y.a.createElement(H.a, { accessibilityLabel: te, style: he.iconCheckMark })
+                return y.a.createElement(I.a, { accessibilityLabel: te, style: he.iconCheckMark })
               }),
               b()(u()(e), '_renderBadge', function (e) {
                 return e
@@ -238,7 +238,7 @@
                         count: e,
                         standalone: !0,
                         truncatedCountFormatter: de,
-                        unreadCountLabel: se,
+                        unreadCountLabel: le,
                       }),
                     )
                   : null
@@ -265,7 +265,7 @@
                   e.setState({ spinner: !0 }),
                     o(Q(Q({}, fe), {}, { element: n ? 'account_bubble_badged' : 'account_bubble', action: 'click' })),
                     i({ user_id: t }).catch(function (t) {
-                      return e.setState({ spinner: !1 }), a(U.a)(t)
+                      return e.setState({ spinner: !1 }), a(x.a)(t)
                     })
                 }
               }),
@@ -302,7 +302,7 @@
                     n = e.history,
                     r = this.state.spinner
                   return y.a.createElement(
-                    I.b,
+                    P.b,
                     { history: n, title: $ },
                     y.a.createElement(M.a, {
                       fetchStatus: r ? T.a.LOADING : t,
@@ -335,8 +335,8 @@
         i = n.n(o),
         c = n('Y9Ll'),
         u = n.n(c),
-        l = n('1Pcy'),
-        s = n.n(l),
+        s = n('1Pcy'),
+        l = n.n(s),
         d = n('5Yy7'),
         f = n.n(d),
         m = n('N+ot'),
@@ -354,14 +354,14 @@
         A = n('BTou'),
         k = n('mrHL'),
         L = 'LoginForm_Login_Button',
-        B = n('fEA7'),
-        O = n.n(B),
+        O = n('fEA7'),
+        B = n.n(O),
         F = n('MWbm'),
         R = n('Irs7'),
         T = n('v6aA'),
         M = n('/yvb'),
-        I = n('rHpw')
-      function P(e) {
+        P = n('rHpw')
+      function j(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -382,31 +382,31 @@
           return h()(this, n)
         }
       }
-      var j = S.a.e919c3bc,
-        H = (function (e) {
+      var H = S.a.e919c3bc,
+        I = (function (e) {
           f()(n, e)
-          var t = P(n)
+          var t = j(n)
           function n() {
             var e
             i()(this, n)
             for (var r = arguments.length, a = new Array(r), o = 0; o < r; o++) a[o] = arguments[o]
             return (
               (e = t.call.apply(t, [this].concat(a))),
-              y()(s()(e), '_mobileLoginToken', O.a.v1().replace(/-/g, '')),
-              y()(s()(e), '_handleSubmit', function () {
+              y()(l()(e), '_mobileLoginToken', B.a.v1().replace(/-/g, '')),
+              y()(l()(e), '_handleSubmit', function () {
                 var t = e.props,
                   n = t.analytics,
                   r = t.onSubmit
                 if ((n.scribe({ action: 'submit' }), A.a.flushHTMLCache(), e._setLoginCookie(), r))
                   return r(e._form.elements), !1
               }),
-              y()(s()(e), '_handleSubmitButtonClick', function () {
+              y()(l()(e), '_handleSubmitButtonClick', function () {
                 !1 !== e._handleSubmit() && e._form.submit()
               }),
-              y()(s()(e), '_setFormRef', function (t) {
+              y()(l()(e), '_setFormRef', function (t) {
                 t && (e._form = t)
               }),
-              y()(s()(e), '_setLoginCookie', function () {
+              y()(l()(e), '_setLoginCookie', function () {
                 var t = new Date(Date.now())
                 t.setTime(t.getTime() + 3e5),
                   Object(k.e)(E.q, e._mobileLoginToken, {
@@ -442,8 +442,8 @@
                     i = e.loginReturnPath,
                     c = e.submitButtonDisabled,
                     u = e.submitButtonLabel,
-                    l = e.submitButtonSize,
-                    s = e.submitButtonStyle,
+                    s = e.submitButtonSize,
+                    l = e.submitButtonStyle,
                     d = e.submitButtonType,
                     f = 'string' == typeof i ? i.split('?') : [],
                     m = a()(f, 2),
@@ -454,7 +454,7 @@
                     y = ''.concat('').concat(b).concat(g),
                     _ = v.a.createElement(
                       F.a,
-                      { style: o && U.horizontalFields },
+                      { style: o && x.horizontalFields },
                       v.a.createElement('input', { name: 'redirect_after_login', type: 'hidden', value: y }),
                       v.a.createElement('input', { name: 'remember_me', type: 'hidden', value: '1' }),
                       v.a.createElement('input', {
@@ -469,14 +469,14 @@
                         ? null
                         : v.a.createElement(
                             F.a,
-                            { style: o && U.loginButtonContainer },
+                            { style: o && x.loginButtonContainer },
                             v.a.createElement(
                               M.a,
                               {
                                 disabled: c,
                                 onPress: this._handleSubmitButtonClick,
-                                size: l,
-                                style: s,
+                                size: s,
+                                style: l,
                                 testID: L,
                                 type: d,
                               },
@@ -486,7 +486,7 @@
                     )
                   return v.a.createElement(
                     F.a,
-                    { style: U.loginForm },
+                    { style: x.loginForm },
                     v.a.createElement('form', {
                       action: n,
                       children: _,
@@ -502,23 +502,23 @@
             n
           )
         })(v.a.Component)
-      y()(H, 'contextType', T.a),
-        y()(H, 'defaultProps', {
+      y()(I, 'contextType', T.a),
+        y()(I, 'defaultProps', {
           autoSubmit: !1,
           formActionUrl: '/sessions',
           hideSubmitButton: !1,
           submitButtonDisabled: !1,
-          submitButtonLabel: j,
+          submitButtonLabel: H,
           submitButtonType: 'brandFilled',
         })
-      var U = I.a.create(function (e) {
+      var x = P.a.create(function (e) {
         return {
           horizontalFields: { flexDirection: 'row', justifyContent: 'center', alignItems: 'stretch' },
           loginForm: { width: '100%' },
           loginButtonContainer: { flexDirection: 'column', justifyContent: 'center' },
         }
       })
-      t.a = Object(R.a)(H, { element: 'inline_login_form' })
+      t.a = Object(R.a)(I, { element: 'inline_login_form' })
     },
     EPsT: function (e, t, n) {
       'use strict'
@@ -532,8 +532,8 @@
         i = n.n(o),
         c = n('1Pcy'),
         u = n.n(c),
-        l = n('5Yy7'),
-        s = n.n(l),
+        s = n('5Yy7'),
+        l = n.n(s),
         d = n('N+ot'),
         f = n.n(d),
         m = n('AuHH'),
@@ -566,7 +566,7 @@
         }
       }
       var S = (function (e) {
-        s()(n, e)
+        l()(n, e)
         var t = w(n)
         function n(e) {
           var r
@@ -635,8 +635,8 @@
         i = n.n(o),
         c = n('1Pcy'),
         u = n.n(c),
-        l = n('5Yy7'),
-        s = n.n(l),
+        s = n('5Yy7'),
+        l = n.n(s),
         d = n('N+ot'),
         f = n.n(d),
         m = n('AuHH'),
@@ -663,17 +663,17 @@
         A = Object(v.g)(E, C),
         k = n('jHSc'),
         L = n('3Wr5'),
-        B = n('3XMw'),
-        O = n.n(B),
+        O = n('3XMw'),
+        B = n.n(O),
         F = n('6oVL'),
         R = n('5FtR'),
         T = n('t62R'),
         M = n('G1WX'),
-        I = n('rHpw'),
-        P = n('v6aA'),
-        j = n('7JQg'),
-        H = n('XJCT')
-      function U(e) {
+        P = n('rHpw'),
+        j = n('v6aA'),
+        H = n('7JQg'),
+        I = n('XJCT')
+      function x(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -694,11 +694,11 @@
           return f()(this, n)
         }
       }
-      var x = O.a.b8e1d524,
-        D = O.a.j0a8da6e,
+      var U = B.a.b8e1d524,
+        D = B.a.j0a8da6e,
         V = (function (e) {
-          s()(n, e)
-          var t = U(n)
+          l()(n, e)
+          var t = x(n)
           function n() {
             var e
             a()(this, n)
@@ -746,12 +746,12 @@
                           submitButtonSize: 'xLarge',
                           submitButtonStyle: z.submitButton,
                         },
-                        y.a.createElement(H.b, {
+                        y.a.createElement(I.b, {
                           onChange: e._handleUsernameFieldChange,
                           onSubmitEditing: e._handleSubmitEditing,
                           value: e.state.usernameValue,
                         }),
-                        y.a.createElement(H.a, {
+                        y.a.createElement(I.a, {
                           onChange: e._handlePasswordFieldChange,
                           onSubmitEditing: e._handleSubmitEditing,
                           value: e.state.passwordValue,
@@ -822,7 +822,7 @@
                     r = Object(L.a)().hasMultiAccountCookie
                   return y.a.createElement(
                     k.b,
-                    { backLocation: '/account/switch', history: n, title: x },
+                    { backLocation: '/account/switch', history: n, title: U },
                     r
                       ? y.a.createElement(M.a, {
                           fetchStatus: t,
@@ -837,47 +837,15 @@
             n
           )
         })(y.a.Component)
-      b()(V, 'contextType', P.a)
-      var z = I.a.create(function (e) {
+      b()(V, 'contextType', j.a)
+      var z = P.a.create(function (e) {
         return {
           submitButton: { marginHorizontal: e.spaces.space12 },
           heading: { marginVertical: e.spaces.space40 },
           errorMessage: { marginHorizontal: e.spaces.space12 },
         }
       })
-      t.default = Object(j.c)({ page: 'account_switcher', section: 'login' })(A(V))
-    },
-    Ukpf: function (e, t, n) {
-      'use strict'
-      var r = {
-        inject: function (e) {
-          var t = e.callback,
-            n = e.scriptId,
-            r = e.src
-          if (document.getElementById(n)) t && t()
-          else {
-            var a = document.createElement('script')
-            ;(a.src = r),
-              (a.id = n),
-              (a.async = !0),
-              (a.defer = !0),
-              document.body.appendChild(a),
-              (a.onload = function () {
-                t && t()
-              })
-          }
-        },
-        replace: function (e) {
-          var t,
-            n = e.callback,
-            a = e.scriptId,
-            o = e.src,
-            i = document.getElementById(a)
-          i && (null === (t = i.parentNode) || void 0 === t || t.removeChild(i))
-          r.inject({ callback: n, scriptId: a, src: o })
-        },
-      }
-      t.a = r
+      t.default = Object(H.c)({ page: 'account_switcher', section: 'login' })(A(V))
     },
     XJCT: function (e, t, n) {
       'use strict'
@@ -893,9 +861,9 @@
         i = n.n(o),
         c = n('ERkP'),
         u = n.n(c),
-        l = n('t62R'),
-        s = n('3XMw'),
-        d = n.n(s),
+        s = n('t62R'),
+        l = n('3XMw'),
+        d = n.n(l),
         f = (n('yH/f'), n('ho0z'), n('p+r5')),
         m = Object.freeze({ password: 'password', username: 'username_or_email' }),
         h = function (e) {
@@ -908,7 +876,7 @@
         },
         p = d.a.d1091f50,
         b = u.a.createElement(
-          l.b,
+          s.b,
           { link: { external: !0, pathname: 'https://twitter.com/account/begin_password_reset', openInSameFrame: !0 } },
           p,
         ),
@@ -939,12 +907,12 @@
             r = e.withEmailDisabled,
             o = e.withPhoneDisabled,
             c = e.withUsernameDisabled,
-            l = i()(e, ['autoFocus', 'label', 'withEmailDisabled', 'withPhoneDisabled', 'withUsernameDisabled']),
-            s = u.a.useContext(v.a).featureSwitches,
+            s = i()(e, ['autoFocus', 'label', 'withEmailDisabled', 'withPhoneDisabled', 'withUsernameDisabled']),
+            l = u.a.useContext(v.a).featureSwitches,
             d = S
           return (
             c ? (d = E) : o ? (d = A) : r && (d = C),
-            u.a.createElement(h, a()({}, l, { autoFocus: t, label: n || d, name: m.username, type: w(s) }))
+            u.a.createElement(h, a()({}, s, { autoFocus: t, label: n || d, name: m.username, type: w(l) }))
           )
         }
       k.defaultProps = { autoFocus: !0, withUsernameDisabled: !1, withPhoneDisabled: !1, withEmailDisabled: !1 }
@@ -958,8 +926,8 @@
         i = n.n(o),
         c = n('ERkP'),
         u = n.n(c),
-        l = n('t62R'),
-        s = n('I4+6'),
+        s = n('t62R'),
+        l = n('I4+6'),
         d = n('cm6r'),
         f = n('rHpw'),
         m = n('MWbm'),
@@ -980,7 +948,7 @@
           r = e.color,
           o = e.label,
           c = i()(e, ['align', 'color', 'label']),
-          p = s.a.generate({
+          p = l.a.generate({
             backgroundColor: f.a.theme.colors.transparent,
             color: f.a.theme.colors[r],
             insetFocusRing: !0,
@@ -991,7 +959,7 @@
           u.a.createElement(
             d.a,
             a()({}, c, { interactiveStyles: p, style: h.root }),
-            u.a.createElement(l.b, { align: n, color: r }, o),
+            u.a.createElement(s.b, { align: n, color: r }, o),
           ),
         )
       }
@@ -1012,10 +980,10 @@
         c = function (e) {
           return function (t, n, c) {
             var u = c.api,
-              l = Object(a.b)(t, { request: u.Auth.switch, params: e })
+              s = Object(a.b)(t, { request: u.Auth.switch, params: e })
             return t(Object(o.f)()).then(function () {
               return t(Object(r.b)()).then(function () {
-                return l({ actionTypes: i, context: 'SWITCH' }).then(function () {
+                return s({ actionTypes: i, context: 'SWITCH' }).then(function () {
                   window.location.assign('/home')
                 })
               })

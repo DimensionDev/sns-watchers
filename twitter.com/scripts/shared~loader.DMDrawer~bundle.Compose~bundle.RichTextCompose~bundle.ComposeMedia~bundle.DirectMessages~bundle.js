@@ -449,7 +449,7 @@
         _ = n('RuTB'),
         j = Object(R.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(6), n.e(13), n.e(173)])
+            return Promise.all([n.e(0), n.e(6), n.e(13), n.e(174)])
               .then(n.bind(null, 'EOJ2'))
               .then(function (e) {
                 return { default: e.__DANGEROUS_IMPORT_VIDEOPLAYER__ }

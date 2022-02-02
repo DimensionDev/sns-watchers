@@ -21,9 +21,7 @@
         }),
         s = r('kGix'),
         f = r('v//M'),
-        d = function () {
-          return null
-        },
+        d = r('0zXz'),
         p = function (e) {
           var n = e.history,
             r = e.screenName
@@ -34,7 +32,7 @@
               },
               [n, r],
             ),
-            c.a.createElement(f.a, { fetchStatus: s.a.LOADING, render: d })
+            c.a.createElement(f.a, { fetchStatus: s.a.LOADING, render: d.a })
           )
         }
       n.default = i(p)

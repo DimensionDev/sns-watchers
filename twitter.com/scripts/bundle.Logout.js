@@ -43,10 +43,11 @@
         S = n.n(_),
         C = n('yoO3'),
         D = n('5FtR'),
-        k = n('BTou'),
-        x = n('feu+'),
-        H = n('sgih')
-      function M(t) {
+        k = n('0zXz'),
+        x = n('BTou'),
+        H = n('feu+'),
+        M = n('sgih')
+      function P(t) {
         var e = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -67,17 +68,14 @@
           return h()(this, n)
         }
       }
-      var P = S.a.ae1bbb26,
-        B = S.a.a5077d3d,
-        T = S.a.gc6866f7,
-        U = S.a.c20aaf3d,
-        j = S.a.c55f5c9a,
-        F = function () {
-          return null
-        },
+      var B = S.a.ae1bbb26,
+        T = S.a.a5077d3d,
+        U = S.a.gc6866f7,
+        j = S.a.c20aaf3d,
+        F = S.a.c55f5c9a,
         G = (function (t) {
           s()(n, t)
-          var e = M(n)
+          var e = P(n)
           function n() {
             var t
             o()(this, n)
@@ -89,15 +87,15 @@
                 return E.a.createElement(
                   C.a,
                   null,
-                  E.a.createElement(x.a, {
-                    actionLabel: B,
-                    headline: U,
+                  E.a.createElement(H.a, {
+                    actionLabel: T,
+                    headline: j,
                     isFullHeightOnMobile: !0,
                     onAction: t._handleRefresh,
                     onClose: t._handleRefresh,
                     onSecondaryAction: t._handleLogout,
-                    secondaryActionLabel: P,
-                    subtext: j,
+                    secondaryActionLabel: B,
+                    subtext: F,
                     withCloseButton: !1,
                   }),
                 )
@@ -118,7 +116,7 @@
                   })
               }),
               g()(u()(t), '_handleRefresh', function (t) {
-                k.a.flushHTMLCache(), window.location.replace('/')
+                x.a.flushHTMLCache(), window.location.replace('/')
               }),
               t
             )
@@ -135,13 +133,13 @@
                       ? this._renderError()
                       : this._redirectToHome()
                     : E.a.createElement(
-                        H.a,
+                        M.a,
                         { type: 'full' },
                         E.a.createElement(R.a, {
                           fetchStatus: e,
-                          loadingMessage: T,
+                          loadingMessage: U,
                           onRequestRetry: this._handleLogout,
-                          render: F,
+                          render: k.a,
                         }),
                       )
                 },
@@ -156,7 +154,7 @@
       'use strict'
       n.r(e),
         n.d(e, 'LogoutScreen', function () {
-          return Z
+          return Y
         })
       n('OZaJ')
       var r = n('VrFO'),
@@ -198,12 +196,13 @@
         M = n('lUZE'),
         P = n('8jkQ'),
         B = n('yoO3'),
-        T = n('pxuL'),
-        U = n('eb3s'),
-        j = n('sgih'),
-        F = n('rHpw'),
-        G = n('7JQg')
-      function I(t) {
+        T = n('0zXz'),
+        U = n('pxuL'),
+        j = n('eb3s'),
+        F = n('sgih'),
+        G = n('rHpw'),
+        I = n('7JQg')
+      function K(t) {
         var e = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -224,22 +223,19 @@
           return h()(this, n)
         }
       }
-      var K = H.a.a3fad4f2,
-        N = H.a.f12b4db4,
-        J = H.a.ae1bbb26,
+      var N = H.a.a3fad4f2,
+        J = H.a.f12b4db4,
+        X = H.a.ae1bbb26,
         q = H.a.ia5ff8b6,
-        X = H.a.ea3750c3,
+        z = H.a.ea3750c3,
         Q = H.a.gc6866f7,
-        W = function () {
-          return null
-        },
-        Y = function (t) {
+        W = function (t) {
           var e = t.query.redirect_after_logout
           return 'string' == typeof e ? e : Array.isArray(e) && 'string' == typeof e[0] ? e[0] : void 0
         },
-        Z = (function (t) {
+        Y = (function (t) {
           s()(n, t)
-          var e = I(n)
+          var e = K(n)
           function n() {
             var t
             o()(this, n)
@@ -253,17 +249,17 @@
                 return E.a.createElement(
                   B.a,
                   null,
-                  E.a.createElement(U.a, {
+                  E.a.createElement(j.a, {
                     Icon: M.a,
                     allowBackNavigation: !0,
-                    confirmButtonLabel: J,
+                    confirmButtonLabel: X,
                     confirmButtonType: 'primary',
                     enableMaskForDismiss: !0,
-                    headline: n && e ? N({ screenName: e.screen_name }) : K,
-                    iconStyle: V.icon,
+                    headline: n && e ? J({ screenName: e.screen_name }) : N,
+                    iconStyle: Z.icon,
                     onCancel: t._handleCancel,
                     onConfirm: t._handleLogout,
-                    text: n ? X : q,
+                    text: n ? z : q,
                   }),
                 )
               }),
@@ -275,7 +271,7 @@
                   a = n.logout,
                   c = n.sendAllPreviews
                 t.setState({ fetchStatus: C.a.LOADING })
-                var i = Y(o) || (e ? 'https://'.concat(window.location.host, '/account/switch') : void 0)
+                var i = W(o) || (e ? 'https://'.concat(window.location.host, '/account/switch') : void 0)
                 c().finally(function () {
                   a({ redirectAfterLogout: i }).catch(function (e) {
                     return t.setState({ fetchStatus: C.a.LOADED }), r({ showToast: !0 })(e)
@@ -286,7 +282,7 @@
                 var e = t.props,
                   n = e.history,
                   r = e.location,
-                  o = Y(r)
+                  o = W(r)
                 o && P.b.isTwitterUrl(o) ? P.b.navigateTo(o) : n.goBack()
               }),
               t
@@ -313,13 +309,13 @@
                   return t === C.a.LOADED
                     ? this._render()
                     : E.a.createElement(
-                        j.a,
+                        F.a,
                         { type: 'full' },
                         E.a.createElement(D.a, {
                           fetchStatus: t,
                           loadingMessage: Q,
                           onRequestRetry: this._handleLogout,
-                          render: W,
+                          render: T.a,
                         }),
                       )
                 },
@@ -328,11 +324,11 @@
             n
           )
         })(E.a.Component)
-      g()(Z, 'contextType', T.a)
-      var V = F.a.create(function (t) {
+      g()(Y, 'contextType', U.a)
+      var Z = G.a.create(function (t) {
         return { icon: { color: t.colors.brandColor, height: t.spaces.space40 } }
       })
-      e.default = Object(G.c)({ page: 'logout' })(S(Z))
+      e.default = Object(I.c)({ page: 'logout' })(S(Y))
     },
   },
 ])

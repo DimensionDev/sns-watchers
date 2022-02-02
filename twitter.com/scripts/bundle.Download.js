@@ -36,13 +36,13 @@
           }),
         k = n('v//M'),
         S = n('3XMw'),
-        E = n.n(S),
-        L = n('M2mT'),
-        _ = 'settingsDetailSave',
-        R = n('mw9i'),
-        T = n('0yYu'),
-        D = n('/yvb'),
-        P = n('rHpw')
+        L = n.n(S),
+        E = n('M2mT'),
+        R = 'settingsDetailSave',
+        D = n('mw9i'),
+        P = n('0yYu'),
+        _ = n('/yvb'),
+        T = n('rHpw')
       function x(t) {
         var e = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -64,8 +64,8 @@
           return p()(this, n)
         }
       }
-      var I = E.a.i2209530,
-        F = (function (t) {
+      var F = L.a.i2209530,
+        I = (function (t) {
           s()(n, t)
           var e = x(n)
           function n() {
@@ -87,18 +87,18 @@
                   i = e.submitType,
                   c = e.withMarginBottom
                 return b.a.createElement(
-                  R.a,
+                  D.a,
                   { style: [A.contentRoot, c && A.withMarginBottom] },
                   n,
                   r
                     ? b.a.createElement(
                         b.a.Fragment,
                         null,
-                        b.a.createElement(T.a, null),
+                        b.a.createElement(P.a, null),
                         b.a.createElement(
-                          R.a,
+                          D.a,
                           { style: A.buttonContainer },
-                          b.a.createElement(D.a, { disabled: o, onPress: r, style: A.button, testID: _, type: i }, a),
+                          b.a.createElement(_.a, { disabled: o, onPress: r, style: A.button, testID: R, type: i }, a),
                         ),
                       )
                     : null,
@@ -143,7 +143,7 @@
                     l = this.getBackLocation(),
                     u = e ? '@'.concat(e.screen_name) : void 0
                   return b.a.createElement(
-                    L.a,
+                    E.a,
                     {
                       backLocation: l,
                       onBackClick: n,
@@ -163,8 +163,8 @@
             n
           )
         })(b.a.Component)
-      w()(F, 'defaultProps', { submitLabel: I, submitType: 'brandFilled', withMarginBottom: !0 })
-      var A = P.a.create(function (t) {
+      w()(I, 'defaultProps', { submitLabel: F, submitType: 'brandFilled', withMarginBottom: !0 })
+      var A = T.a.create(function (t) {
         return {
           contentRoot: {
             backgroundColor: t.colors.cellBackground,
@@ -182,11 +182,11 @@
           },
           button: { marginVertical: 0, marginHorizontal: t.spaces.space12 },
           withMarginBottom: {
-            marginBottom: 'calc('.concat(t.spaces.space64, ' + ').concat(P.a.iPhoneOffsetBottom, ')'),
+            marginBottom: 'calc('.concat(t.spaces.space64, ' + ').concat(T.a.iPhoneOffsetBottom, ')'),
           },
         }
       })
-      e.a = O(F)
+      e.a = O(I)
     },
     M2mT: function (t, e, n) {
       'use strict'
@@ -211,12 +211,11 @@
         g = n('ERkP'),
         B = n.n(g),
         C = n('HPNB'),
-        O = n('v6aA'),
-        k = n('VAZu'),
-        S = n('wiP2'),
-        E = n('Es6L'),
+        O = n('VAZu'),
+        k = n('wiP2'),
+        S = n('Es6L'),
         L = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('rHpw'))
-      function _(t, e) {
+      function E(t, e) {
         var n = Object.keys(t)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(t)
@@ -232,31 +231,35 @@
         for (var e = 1; e < arguments.length; e++) {
           var n = null != arguments[e] ? arguments[e] : {}
           e % 2
-            ? _(Object(n), !0).forEach(function (e) {
+            ? E(Object(n), !0).forEach(function (e) {
                 b()(t, e, n[e])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n))
-            : _(Object(n)).forEach(function (e) {
+            : E(Object(n)).forEach(function (e) {
                 Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
               })
         }
         return t
       }
-      var T = L.a.create(function (t) {
+      var D = L.a.create(function (t) {
           return {
             fill: { flex: 1, alignSelf: 'stretch' },
             viewportView: R(R({}, L.a.absoluteFillObject), {}, { overflowY: 'auto' }),
-            appBarContainer: { position: 'sticky', top: 0 },
-            appBarZindex: { backfaceVisibility: 'hidden', zIndex: t.componentZIndices.appBarZIndex },
+            appBarContainer: {
+              position: 'sticky',
+              top: 0,
+              backfaceVisibility: 'hidden',
+              zIndex: t.componentZIndices.appBarZIndex,
+            },
           }
         }),
-        D = n('MWbm'),
-        P = n('yw4N'),
-        x = n('TnY3'),
-        I = n('cHvH'),
+        P = n('MWbm'),
+        _ = n('yw4N'),
+        T = n('TnY3'),
+        x = n('cHvH'),
         F = n('3xLC')
-      function A(t) {
+      function I(t) {
         var e = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -277,29 +280,24 @@
           return h()(this, n)
         }
       }
-      var j = (function (t) {
+      var A = (function (t) {
         p()(n, t)
-        var e = A(n)
+        var e = I(n)
         function n() {
           var t
           i()(this, n)
           for (var r = arguments.length, o = new Array(r), a = 0; a < r; a++) o[a] = arguments[a]
           return (
             (t = e.call.apply(e, [this].concat(o))),
-            b()(s()(t), '_renderChildren', function (e) {
-              var n = t.props.children
+            b()(s()(t), '_renderChildren', function () {
+              var e = t.props.children
               return t.context.rootDetailPerColumnScroll
                 ? B.a.createElement(
-                    D.a,
-                    { style: T.fill },
-                    B.a.createElement(
-                      P.a,
-                      { style: T.viewportView },
-                      e ? t._renderInlineNav({ isTwoColumnLayout: !0, appBarScrollEnabled: !0 }) : null,
-                      n,
-                    ),
+                    P.a,
+                    { style: D.fill },
+                    B.a.createElement(_.a, { style: D.viewportView }, t._renderInlineNav({ isTwoColumnLayout: !0 }), e),
                   )
-                : n
+                : e
             }),
             t
           )
@@ -310,7 +308,7 @@
               key: 'render',
               value: function () {
                 var t = this
-                return B.a.createElement(I.a, null, function (e) {
+                return B.a.createElement(x.a, null, function (e) {
                   var n = e.windowWidth
                   return C.a.isTwoColumnLayout(n) ? t._renderForTwoColumnLayout() : t._renderForOneColumnLayout()
                 })
@@ -340,9 +338,9 @@
                 return B.a.createElement(
                   B.a.Fragment,
                   null,
-                  Object(E.a)()
+                  Object(S.a)()
                     ? this._renderInlineNav({ isTwoColumnLayout: !1 })
-                    : B.a.createElement(S.a.Configure, n),
+                    : B.a.createElement(k.a.Configure, n),
                   e,
                 )
               },
@@ -350,104 +348,100 @@
             {
               key: '_renderForTwoColumnLayout',
               value: function () {
-                var t = this,
-                  e = this.context.rootDetailPerColumnScroll
-                return B.a.createElement(O.a.Consumer, null, function (n) {
-                  var r = n.featureSwitches.isTrue('responsive_web_app_bar_scroll_enabled'),
-                    o = e
-                      ? !r && t._renderInlineNav({ isTwoColumnLayout: !0 })
-                      : t._renderInlineNav({ isTwoColumnLayout: !0 })
-                  return B.a.createElement(B.a.Fragment, null, o, t._renderChildren(r))
-                })
+                var t = this.context.rootDetailPerColumnScroll
+                return B.a.createElement(
+                  B.a.Fragment,
+                  null,
+                  !t && this._renderInlineNav({ isTwoColumnLayout: !0 }),
+                  this._renderChildren(),
+                )
               },
             },
             {
               key: '_renderInlineNav',
               value: function (t) {
-                var e = t.appBarScrollEnabled,
-                  n = void 0 !== e && e,
-                  r = t.isTwoColumnLayout,
-                  o = this.props,
-                  a = o.SideNavButton,
-                  i = o.TabBar,
-                  c = o.TeamsSwitcher,
-                  l = o.backLocation,
-                  u = o.documentTitle,
-                  s = o.headerless,
-                  d = o.history,
-                  p = o.leftControl,
-                  f = o.middleControl,
-                  h = o.onBackClick,
-                  m = o.rightControl,
-                  w = o.screenType,
-                  y = o.searchBoxOptions,
-                  b = o.secondaryBar,
-                  g = o.showSubtitleOnRoot,
-                  C = o.showSubtitleOnWideDetail,
-                  O = o.subtitle,
-                  E = o.title,
-                  L = o.titleIconCell,
-                  _ = o.titleIconCellSize,
-                  R = o.withBottomBorder,
-                  P = o.withDetailOpen,
-                  x = o.withSearchBox,
-                  I = o.withTweetButton,
-                  F = 'root' === w,
-                  A = 'secondaryRoot' === w,
-                  j = 'primaryDetail' === w,
-                  H = (j && C) || (F && g),
-                  M = F || (j && r),
-                  U = F ? v.c : j ? v.a : void 0,
-                  N = B.a.createElement(
-                    D.a,
-                    { style: n ? [T.appBarContainer, T.appBarZindex] : T.appBarZindex },
-                    B.a.createElement(k.a, {
-                      backLocation: l,
+                var e = t.isTwoColumnLayout,
+                  n = this.props,
+                  r = n.SideNavButton,
+                  o = n.TabBar,
+                  a = n.TeamsSwitcher,
+                  i = n.backLocation,
+                  c = n.documentTitle,
+                  l = n.headerless,
+                  u = n.history,
+                  s = n.leftControl,
+                  d = n.middleControl,
+                  p = n.onBackClick,
+                  f = n.rightControl,
+                  h = n.screenType,
+                  m = n.searchBoxOptions,
+                  w = n.secondaryBar,
+                  y = n.showSubtitleOnRoot,
+                  b = n.showSubtitleOnWideDetail,
+                  g = n.subtitle,
+                  C = n.title,
+                  S = n.titleIconCell,
+                  L = n.titleIconCellSize,
+                  E = n.withBottomBorder,
+                  R = n.withDetailOpen,
+                  _ = n.withSearchBox,
+                  T = n.withTweetButton,
+                  x = 'root' === h,
+                  F = 'secondaryRoot' === h,
+                  I = 'primaryDetail' === h,
+                  A = (I && b) || (x && y),
+                  j = x || (I && e),
+                  H = x ? v.c : I ? v.a : void 0,
+                  M = B.a.createElement(
+                    P.a,
+                    { style: D.appBarContainer },
+                    B.a.createElement(O.a, {
+                      backLocation: i,
                       fixed: !1,
-                      hideBackButton: M,
-                      history: d,
-                      leftControl: p,
-                      middleControl: f,
-                      onBackClick: h,
-                      rightControl: m,
-                      secondaryBar: n ? b : null,
-                      subtitle: H ? O : void 0,
-                      title: E,
-                      titleDomId: U,
-                      titleIconCell: L,
-                      titleIconCellSize: _,
-                      withBottomBorder: R,
+                      hideBackButton: j,
+                      history: u,
+                      leftControl: s,
+                      middleControl: d,
+                      onBackClick: p,
+                      rightControl: f,
+                      secondaryBar: w,
+                      subtitle: A ? g : void 0,
+                      title: C,
+                      titleDomId: H,
+                      titleIconCell: S,
+                      titleIconCellSize: L,
+                      withBottomBorder: E,
                     }),
                   ),
-                  W =
-                    F || (A && P)
+                  U =
+                    x || (F && R)
                       ? null
-                      : B.a.createElement(S.a.Configure, {
-                          SideNavButton: a,
-                          TabBar: i,
-                          TeamsSwitcher: c,
-                          backLocation: l,
-                          documentTitle: u,
-                          headerless: s,
-                          middleControl: f,
-                          onBackClick: h,
-                          rightControl: m,
-                          searchBoxOptions: y,
-                          subtitle: O,
-                          title: E,
-                          withSearchBox: x,
-                          withTweetButton: I,
+                      : B.a.createElement(k.a.Configure, {
+                          SideNavButton: r,
+                          TabBar: o,
+                          TeamsSwitcher: a,
+                          backLocation: i,
+                          documentTitle: c,
+                          headerless: l,
+                          middleControl: d,
+                          onBackClick: p,
+                          rightControl: f,
+                          searchBoxOptions: m,
+                          subtitle: g,
+                          title: C,
+                          withSearchBox: _,
+                          withTweetButton: T,
                         })
-                return B.a.createElement(B.a.Fragment, null, W, N, n ? null : b)
+                return B.a.createElement(B.a.Fragment, null, U, M)
               },
             },
           ]),
           n
         )
       })(B.a.Component)
-      b()(j, 'contextType', F.a),
-        b()(j, 'defaultProps', { screenType: 'secondaryDetail', showSubtitleOnWideDetail: !0 })
-      e.a = Object(x.a)(j)
+      b()(A, 'contextType', F.a),
+        b()(A, 'defaultProps', { screenType: 'secondaryDetail', showSubtitleOnWideDetail: !0 })
+      e.a = Object(T.a)(A)
     },
     Voxc: function (t, e, n) {
       'use strict'
@@ -476,9 +470,9 @@
         O = n('MWbm'),
         k = n('Irs7'),
         S = n('t62R'),
-        E = n('csss'),
-        L = n('rHpw')
-      function _(t) {
+        L = n('csss'),
+        E = n('rHpw')
+      function R(t) {
         var e = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -499,14 +493,14 @@
           return p()(this, n)
         }
       }
-      var R = g.a.afcad7f2,
-        T = g.a.hc762e4a,
-        D = g.a.c365dcc5,
-        P = 'https://twitter.app.link/hfQ1AFOM52',
+      var D = g.a.afcad7f2,
+        P = g.a.hc762e4a,
+        _ = g.a.c365dcc5,
+        T = 'https://twitter.app.link/hfQ1AFOM52',
         x = { android: g.a.i8385a2c, ios: g.a.h201c4c1, windows: g.a.d383acfc },
-        I = (function (t) {
+        F = (function (t) {
           s()(n, t)
-          var e = _(n)
+          var e = R(n)
           function n() {
             var t
             o()(this, n)
@@ -528,11 +522,11 @@
                   var t = this
                   return b.a.createElement(
                     C.a,
-                    { title: R },
+                    { title: D },
                     b.a.createElement(
                       O.a,
-                      { style: F.itemContainer },
-                      b.a.createElement(S.b, { color: 'gray700', size: 'subtext2' }, T),
+                      { style: I.itemContainer },
+                      b.a.createElement(S.b, { color: 'gray700', size: 'subtext2' }, P),
                     ),
                     this._appStoreUrls.map(function (e, n) {
                       var r = e.matches,
@@ -541,9 +535,9 @@
                         i = e.webUrl
                       return t._renderAppStoreLink(r() ? a : i, x[o], n)
                     }),
-                    b.a.createElement(E.a, {
+                    b.a.createElement(L.a, {
                       key: 'other',
-                      label: D,
+                      label: _,
                       link: { external: !0, pathname: 'https://help.twitter.com/using-twitter#twitter-on-your-device' },
                       onPress: this._handleDownloadClick,
                     }),
@@ -554,10 +548,10 @@
                 key: '_renderAppStoreLink',
                 value: function (t, e) {
                   var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0
-                  return b.a.createElement(E.a, {
+                  return b.a.createElement(L.a, {
                     key: n,
                     label: e,
-                    link: { external: !0, pathname: ''.concat(P, '?$fallback_url=').concat(t) },
+                    link: { external: !0, pathname: ''.concat(T, '?$fallback_url=').concat(t) },
                     onPress: this._handleDownloadClick,
                   })
                 },
@@ -566,7 +560,7 @@
             n
           )
         })(b.a.Component),
-        F = L.a.create(function (t) {
+        I = E.a.create(function (t) {
           return {
             itemContainer: {
               alignItems: 'center',
@@ -580,7 +574,7 @@
             },
           }
         })
-      e.default = Object(k.a)(I, { page: 'download', section: 'download' })
+      e.default = Object(k.a)(F, { page: 'download', section: 'download' })
     },
     lOQR: function (t, e, n) {
       'use strict'

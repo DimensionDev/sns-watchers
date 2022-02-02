@@ -79,12 +79,11 @@
         b = n('ERkP'),
         w = n.n(b),
         E = n('HPNB'),
-        S = n('v6aA'),
-        x = n('VAZu'),
-        T = n('wiP2'),
-        k = n('Es6L'),
-        O = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('rHpw'))
-      function _(e, t) {
+        S = n('VAZu'),
+        x = n('wiP2'),
+        T = n('Es6L'),
+        k = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('rHpw'))
+      function O(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -96,35 +95,39 @@
         }
         return n
       }
-      function D(e) {
+      function _(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? _(Object(n), !0).forEach(function (t) {
+            ? O(Object(n), !0).forEach(function (t) {
                 g()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : _(Object(n)).forEach(function (t) {
+            : O(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var I = O.a.create(function (e) {
+      var D = k.a.create(function (e) {
           return {
             fill: { flex: 1, alignSelf: 'stretch' },
-            viewportView: D(D({}, O.a.absoluteFillObject), {}, { overflowY: 'auto' }),
-            appBarContainer: { position: 'sticky', top: 0 },
-            appBarZindex: { backfaceVisibility: 'hidden', zIndex: e.componentZIndices.appBarZIndex },
+            viewportView: _(_({}, k.a.absoluteFillObject), {}, { overflowY: 'auto' }),
+            appBarContainer: {
+              position: 'sticky',
+              top: 0,
+              backfaceVisibility: 'hidden',
+              zIndex: e.componentZIndices.appBarZIndex,
+            },
           }
         }),
         P = n('MWbm'),
-        B = n('yw4N'),
+        I = n('yw4N'),
         R = n('TnY3'),
-        F = n('cHvH'),
-        L = n('3xLC')
-      function K(e) {
+        B = n('cHvH'),
+        F = n('3xLC')
+      function L(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -147,27 +150,22 @@
       }
       var j = (function (e) {
         f()(n, e)
-        var t = K(n)
+        var t = L(n)
         function n() {
           var e
           i()(this, n)
           for (var r = arguments.length, o = new Array(r), a = 0; a < r; a++) o[a] = arguments[a]
           return (
             (e = t.call.apply(t, [this].concat(o))),
-            g()(u()(e), '_renderChildren', function (t) {
-              var n = e.props.children
+            g()(u()(e), '_renderChildren', function () {
+              var t = e.props.children
               return e.context.rootDetailPerColumnScroll
                 ? w.a.createElement(
                     P.a,
-                    { style: I.fill },
-                    w.a.createElement(
-                      B.a,
-                      { style: I.viewportView },
-                      t ? e._renderInlineNav({ isTwoColumnLayout: !0, appBarScrollEnabled: !0 }) : null,
-                      n,
-                    ),
+                    { style: D.fill },
+                    w.a.createElement(I.a, { style: D.viewportView }, e._renderInlineNav({ isTwoColumnLayout: !0 }), t),
                   )
-                : n
+                : t
             }),
             e
           )
@@ -178,7 +176,7 @@
               key: 'render',
               value: function () {
                 var e = this
-                return w.a.createElement(F.a, null, function (t) {
+                return w.a.createElement(B.a, null, function (t) {
                   var n = t.windowWidth
                   return E.a.isTwoColumnLayout(n) ? e._renderForTwoColumnLayout() : e._renderForOneColumnLayout()
                 })
@@ -208,9 +206,9 @@
                 return w.a.createElement(
                   w.a.Fragment,
                   null,
-                  Object(k.a)()
+                  Object(T.a)()
                     ? this._renderInlineNav({ isTwoColumnLayout: !1 })
-                    : w.a.createElement(T.a.Configure, n),
+                    : w.a.createElement(x.a.Configure, n),
                   t,
                 )
               },
@@ -218,102 +216,98 @@
             {
               key: '_renderForTwoColumnLayout',
               value: function () {
-                var e = this,
-                  t = this.context.rootDetailPerColumnScroll
-                return w.a.createElement(S.a.Consumer, null, function (n) {
-                  var r = n.featureSwitches.isTrue('responsive_web_app_bar_scroll_enabled'),
-                    o = t
-                      ? !r && e._renderInlineNav({ isTwoColumnLayout: !0 })
-                      : e._renderInlineNav({ isTwoColumnLayout: !0 })
-                  return w.a.createElement(w.a.Fragment, null, o, e._renderChildren(r))
-                })
+                var e = this.context.rootDetailPerColumnScroll
+                return w.a.createElement(
+                  w.a.Fragment,
+                  null,
+                  !e && this._renderInlineNav({ isTwoColumnLayout: !0 }),
+                  this._renderChildren(),
+                )
               },
             },
             {
               key: '_renderInlineNav',
               value: function (e) {
-                var t = e.appBarScrollEnabled,
-                  n = void 0 !== t && t,
-                  r = e.isTwoColumnLayout,
-                  o = this.props,
-                  a = o.SideNavButton,
-                  i = o.TabBar,
-                  c = o.TeamsSwitcher,
-                  l = o.backLocation,
-                  s = o.documentTitle,
-                  u = o.headerless,
-                  d = o.history,
-                  f = o.leftControl,
-                  p = o.middleControl,
-                  h = o.onBackClick,
-                  y = o.rightControl,
-                  v = o.screenType,
-                  m = o.searchBoxOptions,
-                  g = o.secondaryBar,
-                  b = o.showSubtitleOnRoot,
-                  E = o.showSubtitleOnWideDetail,
-                  S = o.subtitle,
-                  k = o.title,
-                  O = o.titleIconCell,
-                  _ = o.titleIconCellSize,
-                  D = o.withBottomBorder,
-                  B = o.withDetailOpen,
-                  R = o.withSearchBox,
-                  F = o.withTweetButton,
-                  L = 'root' === v,
-                  K = 'secondaryRoot' === v,
-                  j = 'primaryDetail' === v,
-                  N = (j && E) || (L && b),
-                  M = L || (j && r),
-                  A = L ? C.c : j ? C.a : void 0,
-                  W = w.a.createElement(
+                var t = e.isTwoColumnLayout,
+                  n = this.props,
+                  r = n.SideNavButton,
+                  o = n.TabBar,
+                  a = n.TeamsSwitcher,
+                  i = n.backLocation,
+                  c = n.documentTitle,
+                  l = n.headerless,
+                  s = n.history,
+                  u = n.leftControl,
+                  d = n.middleControl,
+                  f = n.onBackClick,
+                  p = n.rightControl,
+                  h = n.screenType,
+                  y = n.searchBoxOptions,
+                  v = n.secondaryBar,
+                  m = n.showSubtitleOnRoot,
+                  g = n.showSubtitleOnWideDetail,
+                  b = n.subtitle,
+                  E = n.title,
+                  T = n.titleIconCell,
+                  k = n.titleIconCellSize,
+                  O = n.withBottomBorder,
+                  _ = n.withDetailOpen,
+                  I = n.withSearchBox,
+                  R = n.withTweetButton,
+                  B = 'root' === h,
+                  F = 'secondaryRoot' === h,
+                  L = 'primaryDetail' === h,
+                  j = (L && g) || (B && m),
+                  K = B || (L && t),
+                  M = B ? C.c : L ? C.a : void 0,
+                  N = w.a.createElement(
                     P.a,
-                    { style: n ? [I.appBarContainer, I.appBarZindex] : I.appBarZindex },
-                    w.a.createElement(x.a, {
-                      backLocation: l,
+                    { style: D.appBarContainer },
+                    w.a.createElement(S.a, {
+                      backLocation: i,
                       fixed: !1,
-                      hideBackButton: M,
-                      history: d,
-                      leftControl: f,
-                      middleControl: p,
-                      onBackClick: h,
-                      rightControl: y,
-                      secondaryBar: n ? g : null,
-                      subtitle: N ? S : void 0,
-                      title: k,
-                      titleDomId: A,
-                      titleIconCell: O,
-                      titleIconCellSize: _,
-                      withBottomBorder: D,
+                      hideBackButton: K,
+                      history: s,
+                      leftControl: u,
+                      middleControl: d,
+                      onBackClick: f,
+                      rightControl: p,
+                      secondaryBar: v,
+                      subtitle: j ? b : void 0,
+                      title: E,
+                      titleDomId: M,
+                      titleIconCell: T,
+                      titleIconCellSize: k,
+                      withBottomBorder: O,
                     }),
                   ),
-                  H =
-                    L || (K && B)
+                  A =
+                    B || (F && _)
                       ? null
-                      : w.a.createElement(T.a.Configure, {
-                          SideNavButton: a,
-                          TabBar: i,
-                          TeamsSwitcher: c,
-                          backLocation: l,
-                          documentTitle: s,
-                          headerless: u,
-                          middleControl: p,
-                          onBackClick: h,
-                          rightControl: y,
-                          searchBoxOptions: m,
-                          subtitle: S,
-                          title: k,
-                          withSearchBox: R,
-                          withTweetButton: F,
+                      : w.a.createElement(x.a.Configure, {
+                          SideNavButton: r,
+                          TabBar: o,
+                          TeamsSwitcher: a,
+                          backLocation: i,
+                          documentTitle: c,
+                          headerless: l,
+                          middleControl: d,
+                          onBackClick: f,
+                          rightControl: p,
+                          searchBoxOptions: y,
+                          subtitle: b,
+                          title: E,
+                          withSearchBox: I,
+                          withTweetButton: R,
                         })
-                return w.a.createElement(w.a.Fragment, null, H, W, n ? null : g)
+                return w.a.createElement(w.a.Fragment, null, A, N)
               },
             },
           ]),
           n
         )
       })(w.a.Component)
-      g()(j, 'contextType', L.a),
+      g()(j, 'contextType', F.a),
         g()(j, 'defaultProps', { screenType: 'secondaryDetail', showSubtitleOnWideDetail: !0 })
       t.a = Object(R.a)(j)
     },
@@ -524,27 +518,27 @@
         O = n('z2Pn'),
         _ = n('pNZL'),
         D = n('G6rE'),
-        I = n('oEGd'),
-        P = n('X/yg'),
-        B = function (e, t) {
+        P = n('oEGd'),
+        I = n('X/yg'),
+        R = function (e, t) {
           return t.match.params.conversationId
         },
-        R = Object(T.createSelector)(
+        B = Object(T.createSelector)(
           function (e, t) {
-            return E.selectConversation(e, B(0, t))
+            return E.selectConversation(e, R(0, t))
           },
           E.selectEntries,
-          B,
-          P.l,
+          R,
+          I.l,
           x.q,
-          P.m,
-          P.n,
+          I.m,
+          I.n,
           D.e.selectAll,
           function (e, t) {
-            return S.j(e, B(0, t))
+            return S.j(e, R(0, t))
           },
           function (e, t) {
-            return S.i(e, B(0, t))
+            return S.i(e, R(0, t))
           },
           function (e, t, n, r, o, a, i, c, l, s) {
             var u = e && e.data
@@ -559,22 +553,22 @@
             }
           },
         ),
-        F = Object(I.d)(R, function (e) {
+        F = Object(P.d)(B, function (e) {
           return {
-            cancelUpload: Object(P.a)(e.match.params.conversationId),
+            cancelUpload: Object(I.a)(e.match.params.conversationId),
             googleAnalyticsPageView: w.a,
-            removeMedia: Object(P.b)(e.match.params.conversationId),
+            removeMedia: Object(I.b)(e.match.params.conversationId),
             scribePageImpression: w.d,
             setLastViewedDmInboxPath: O.h,
             updateTweetDetailNav: _.b,
           }
         }),
         L = n('i4Oy'),
-        K = n('Oi4X'),
-        j = n('aA19'),
-        N = n('XnpN'),
-        M = n('3XMw'),
-        A = n.n(M),
+        j = n('Oi4X'),
+        K = n('aA19'),
+        M = n('XnpN'),
+        N = n('3XMw'),
+        A = n.n(N),
         W = (n('hBvt'), n('/yvb')),
         H = n('6s7X'),
         z = A.a.h810143c,
@@ -600,8 +594,8 @@
         U = n('rHpw'),
         X = n('aITJ'),
         Y = n('MWbm'),
-        Z = n('7JQg'),
-        G = n('OhSZ')
+        G = n('7JQg'),
+        Z = n('OhSZ')
       function Q(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -699,7 +693,7 @@
                     g.a.createElement(
                       b.a,
                       { viewType: 'messages' },
-                      g.a.createElement(K.a, {
+                      g.a.createElement(j.a, {
                         conversationId: t,
                         history: n,
                         isWide: c,
@@ -721,23 +715,23 @@
                     r = e.perspective,
                     o =
                       t && Object.keys(t.participants).length
-                        ? Object(G.a)({ conversation: t, perspective: r })
+                        ? Object(Z.a)({ conversation: t, perspective: r })
                         : n
-                        ? Object(G.a)({ newConversationParticipants: n, perspective: r })
+                        ? Object(Z.a)({ newConversationParticipants: n, perspective: r })
                         : $,
                     a =
                       t && Object.keys(t.participants).length
-                        ? g.a.createElement(G.b, { conversation: t, perspective: r, withScreenName: !1 })
+                        ? g.a.createElement(Z.b, { conversation: t, perspective: r, withScreenName: !1 })
                         : n
-                        ? g.a.createElement(G.b, { newConversationParticipants: n, perspective: r, withScreenName: !1 })
+                        ? g.a.createElement(Z.b, { newConversationParticipants: n, perspective: r, withScreenName: !1 })
                         : $,
                     i = this._isVDLEnabled ? 'large' : 'medium',
-                    c = r ? g.a.createElement(j.a, { conversation: t, perspective: r, size: i }) : void 0,
+                    c = r ? g.a.createElement(K.a, { conversation: t, perspective: r, size: i }) : void 0,
                     l =
                       t &&
                       t.type === E.CONVERSATION_TYPE.ONE_TO_ONE &&
                       r &&
-                      Object(N.a)(t, r).map(function (e) {
+                      Object(M.a)(t, r).map(function (e) {
                         return e.user.screen_name
                       }),
                     s = l ? '@'.concat(l[0]) : void 0
@@ -788,7 +782,7 @@
       var re = U.a.create(function (e) {
         return { infoButton: { marginRight: e.spaces.space4 }, rightControlStyles: { flexDirection: 'row' } }
       })
-      t.default = Object(Z.c)({ page: 'messages', section: 'thread' })(F(ne))
+      t.default = Object(G.c)({ page: 'messages', section: 'thread' })(F(ne))
     },
     dWxr: function (e, t, n) {
       'use strict'
@@ -982,7 +976,10 @@
           initEditorState: function () {
             var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : '',
               t = [u, d, f],
-              n = h.EditorState.createWithContent(h.ContentState.createFromText(e), new h.CompositeDecorator(t))
+              n = h.EditorState.createWithContent(
+                'string' == typeof e ? h.ContentState.createFromText(e) : Object(h.convertFromRaw)(e),
+                new h.CompositeDecorator(t),
+              )
             return h.EditorState.moveSelectionToEnd(n)
           },
           insertTextAtCursor: function (e, t) {
@@ -1070,7 +1067,7 @@
         O = n('w9LO'),
         _ = n('fs1G'),
         D = (n('aWzz'), n('zpdM'))
-      function I(e) {
+      function P(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -1091,15 +1088,15 @@
           return f()(this, n)
         }
       }
-      var P = function (e) {
+      var I = function (e) {
           return Object(T.a)('div', e)
         },
-        B = !1,
-        R =
+        R = !1,
+        B =
           ((t.a = x.a.forwardRef(function (e, t) {
             var n = C.d()
             return x.a.createElement(
-              R,
+              B,
               g()({}, e, {
                 onFocus: function (t) {
                   e.onFocus && e.onFocus(t), n('focus')
@@ -1110,7 +1107,7 @@
           })),
           (function (e) {
             u()(n, e)
-            var t = I(n)
+            var t = P(n)
             function n() {
               var e
               o()(this, n)
@@ -1248,7 +1245,7 @@
                         : n
                         ? null == t || t(this._setFocusToStart())
                         : this.props.autoFocus && this.focus(),
-                        B || (this._setDraftJsStyle(), (B = !0))
+                        R || (this._setDraftJsStyle(), (R = !0))
                     },
                   },
                   {
@@ -1266,53 +1263,58 @@
                         r = t.ariaAutocomplete,
                         o = t.ariaControls,
                         a = t.ariaLabel,
-                        i = t.editorState,
-                        c = t.handleReturn,
-                        l = t.multiline,
-                        s = t.onChange,
-                        u = t.onFocus,
-                        d = t.onKeyDown,
-                        f = t.onKeyPress,
-                        p = t.onKeyUp,
-                        h = t.placeholder,
-                        y = t.spellCheck,
-                        m = t.style,
-                        g = t.testID
+                        i = t.blockRenderMap,
+                        c = t.blockRendererFn,
+                        l = t.editorState,
+                        s = t.handleReturn,
+                        u = t.multiline,
+                        d = t.onChange,
+                        f = t.onFocus,
+                        p = t.onKeyDown,
+                        h = t.onKeyPress,
+                        y = t.onKeyUp,
+                        m = t.placeholder,
+                        g = t.spellCheck,
+                        C = t.stripPastedStyles,
+                        E = t.style,
+                        S = t.testID
                       return x.a.createElement(
-                        P,
+                        I,
                         {
-                          className: l ? void 0 : w,
+                          className: u ? void 0 : w,
                           onClick: this._handleViewClick,
-                          style: [this._getContainerStyle(), m],
+                          style: [this._getContainerStyle(), E],
                         },
                         x.a.createElement(D.Editor, {
                           ariaActiveDescendantID: n,
                           ariaAutoComplete: r,
                           ariaControls: o,
                           ariaLabel: a,
-                          ariaMultiline: l,
+                          ariaMultiline: u,
+                          blockRenderMap: i,
+                          blockRendererFn: c,
                           customAttrs:
                             ((e = {}),
                             v()(e, O.a.NO_REFOCUS_ATTRIBUTE, 'true'),
-                            v()(e, 'onKeyPress', f),
-                            v()(e, 'onKeyUp', p),
+                            v()(e, 'onKeyPress', h),
+                            v()(e, 'onKeyUp', y),
                             e),
                           customStyleMap: F(b.a.theme),
-                          editorState: i,
+                          editorState: l,
                           handleKeyCommand: this._onKeyCommand,
                           handlePastedFiles: this._onPastedFiles,
                           handlePastedText: this._onPastedText,
-                          handleReturn: l ? c : this._onSingleLineReturn,
+                          handleReturn: u ? s : this._onSingleLineReturn,
                           keyBindingFn: this._myKeyBindingFn,
-                          onChange: s,
-                          onFocus: u,
-                          onKeyDown: d,
-                          placeholder: h,
+                          onChange: d,
+                          onFocus: f,
+                          onKeyDown: p,
+                          placeholder: m,
                           ref: this._setEditorRef,
-                          spellCheck: 'false' !== y,
-                          stripPastedStyles: !0,
+                          spellCheck: 'false' !== g,
+                          stripPastedStyles: C,
                           tabIndex: 0,
-                          webDriverTestID: g,
+                          webDriverTestID: S,
                         }),
                       )
                     },
@@ -1330,7 +1332,7 @@
               n
             )
           })(x.a.Component))
-      v()(R, 'defaultProps', {
+      v()(B, 'defaultProps', {
         appTextSize: 'body',
         autoFocus: !1,
         keyCommandHandlers: {},
@@ -1340,8 +1342,9 @@
         onFocus: _.a,
         positionCursorAtEnd: !1,
         spellCheck: 'true',
+        stripPastedStyles: !0,
       }),
-        (R.propTypes = {})
+        (B.propTypes = {})
       var F = function (e) {
         return { overflow: { backgroundColor: e.colors.red200 } }
       }

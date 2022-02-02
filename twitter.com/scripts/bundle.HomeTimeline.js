@@ -1043,7 +1043,7 @@
                 return y.a.createElement(
                   L.a,
                   null,
-                  i.context.featureSwitches.isTrue('home_timeline_topics_navigator_enabled') && !e
+                  i.context.featureSwitches.isTrue('home_timeline_topics_navigator_enabled')
                     ? y.a.createElement(Dt.b, { namespace: yn }, y.a.createElement(on, null))
                     : null,
                   y.a.createElement(At, {

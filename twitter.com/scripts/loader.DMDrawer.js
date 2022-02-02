@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [166],
+  [167],
   {
     '+Bsv': function (e, t, n) {
       'use strict'
@@ -1502,11 +1502,6 @@
             return (
               (e = t.call.apply(t, [this].concat(a))),
               g()(u()(e), '_headerBar', _.a.createRef()),
-              g()(
-                u()(e),
-                '_appBarScrollEnabled',
-                e.context.featureSwitches.isTrue('responsive_web_app_bar_scroll_enabled'),
-              ),
               g()(u()(e), '_isExpanded', function () {
                 return e.props.visibility === $.b.EXPANDED
               }),
@@ -1644,8 +1639,7 @@
                     a = t.hasNewMessages,
                     l = t.isHighlighted,
                     o = a ? (l ? [Fe.headerHighlighted] : [Fe.headerActive]) : [],
-                    i = this._isExpanded(),
-                    c = this._appBarScrollEnabled && !l
+                    i = this._isExpanded()
                   return _.a.createElement(
                     te.a,
                     {
@@ -1666,10 +1660,10 @@
                         leftControl: r && this._isExpanded() ? this._renderLeftControl() : null,
                         onMiddleControlClick: this._handleToggleVisibility,
                         rightControl: this._renderRightControl(),
-                        style: this._appBarScrollEnabled ? Fe.roundedAppBarCorners : null,
+                        style: Fe.roundedAppBarCorners,
                         subtitle: n,
                         title: this._renderTitle(),
-                        withBackground: c,
+                        withBackground: !l,
                         withBottomBorder: !0,
                       }),
                     ),
@@ -1757,11 +1751,6 @@
           return (
             o()(this, n),
             (a = t.call(this, e, r)),
-            g()(
-              u()(a),
-              '_appBarScrollEnabled',
-              a.context.featureSwitches.isTrue('responsive_web_app_bar_scroll_enabled'),
-            ),
             g()(u()(a), '_composer', _.a.createRef()),
             g()(u()(a), '_renderConversation', function (e, t) {
               var n = a.props,
@@ -1770,7 +1759,7 @@
                 o = n.location
               return _.a.createElement(Q.a, {
                 conversationId: r,
-                drawerHeader: a._appBarScrollEnabled ? a._renderHeader() : void 0,
+                drawerHeader: a._renderHeader(),
                 history: l,
                 isWide: !1,
                 location: o,
@@ -1815,7 +1804,7 @@
                 return _.a.createElement(
                   _.a.Fragment,
                   null,
-                  t && this._appBarScrollEnabled ? null : this._renderHeader(),
+                  !t && this._renderHeader(),
                   t
                     ? Ne.b.isDesktopOS()
                       ? _.a.createElement(Te, null, function (t) {
@@ -1852,7 +1841,7 @@
                   p = d ? _.a.createElement(Ke.a, { color: u, screenName: d[0] }) : void 0
                 return _.a.createElement(
                   re.a,
-                  { style: this._appBarScrollEnabled ? [Ve.headerRoot, Ve.appBarZIndex] : Ve.appBarZIndex },
+                  { style: Ve.headerRoot },
                   _.a.createElement(Re, {
                     conversationSubtitle: p,
                     conversationTitle: _.a.createElement(X.b, {
@@ -1892,10 +1881,7 @@
       })(_.a.Component)
       g()(Ue, 'contextType', se.a), g()(Ue, 'childContextTypes', { getCustomLocation: Le.func })
       var Ve = ce.a.create(function (e) {
-          return {
-            appBarZIndex: { zIndex: e.componentZIndices.appBarZIndex },
-            headerRoot: { position: 'sticky', top: 0 },
-          }
+          return { headerRoot: { position: 'sticky', top: 0, zIndex: e.componentZIndices.appBarZIndex } }
         }),
         ze = q(Ue),
         qe = (n('i4UL'), n('tQbP'), n('M+/F'), n('ho0z'), n('hCOa'), n('jQ/y'), n('aLgo'), n('4q8G')),
@@ -2090,11 +2076,6 @@
             for (var r = arguments.length, a = new Array(r), l = 0; l < r; l++) a[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(a))),
-              g()(
-                u()(e),
-                '_appBarScrollEnabled',
-                e.context.featureSwitches.isTrue('responsive_web_app_bar_scroll_enabled'),
-              ),
               g()(u()(e), '_renderHeader', function () {
                 var t = e.props,
                   n = t.history,
@@ -2104,7 +2085,7 @@
                   o = t.triggerHeaderHighlight
                 return _.a.createElement(
                   re.a,
-                  { style: e._appBarScrollEnabled ? [mt.headerRoot, mt.appBarZIndex] : mt.appBarZIndex },
+                  { style: mt.headerRoot },
                   _.a.createElement(Re, {
                     hasNewMessages: a,
                     history: n,
@@ -2125,11 +2106,11 @@
                   { style: mt.fill },
                   _.a.createElement(
                     re.a,
-                    { style: [mt.viewportView, e._appBarScrollEnabled && Ye.b.drawerHeaderRadius] },
+                    { style: [mt.viewportView, Ye.b.drawerHeaderRadius] },
                     _.a.createElement(
                       Je.a,
-                      { style: [mt.viewportView, e._appBarScrollEnabled && Ye.b.drawerHeaderRadius] },
-                      e._appBarScrollEnabled && e._renderHeader(),
+                      { style: [mt.viewportView, Ye.b.drawerHeaderRadius] },
+                      e._renderHeader(),
                       _.a.createElement($e.a, {
                         accessibilityTitle: ot,
                         analytics: n,
@@ -2216,7 +2197,7 @@
                   return _.a.createElement(
                     _.a.Fragment,
                     null,
-                    e && this._appBarScrollEnabled ? null : this._renderHeader(),
+                    !e && this._renderHeader(),
                     e && this._renderExpandedInbox(),
                   )
                 },
@@ -2229,8 +2210,7 @@
       var mt = ce.a.create(function (e) {
           return {
             fill: { flex: 1, alignSelf: 'stretch' },
-            headerRoot: { position: 'sticky', top: 0 },
-            appBarZIndex: { zIndex: e.componentZIndices.appBarZIndex },
+            headerRoot: { position: 'sticky', top: 0, zIndex: e.componentZIndices.appBarZIndex },
             requestPivotContainer: {
               backgroundColor: e.colors.cellBackground,
               borderBottomStyle: 'solid',
@@ -5042,65 +5022,78 @@
           var t,
             n,
             r,
-            a,
-            l,
-            o = e.footer,
-            i = e.noItemsRenderer,
-            c = e.onScrollEnd,
-            s = e.renderInboxItem,
-            u = e.searchTerm,
-            d = Object(hn.c)(),
-            p = Object(gn.a)(mr, { query: u }),
-            f = p.data,
-            m = p.fetchNext,
-            h = p.hasNext,
-            b = null == f || null === (t = f.dm_message_slice_result) || void 0 === t ? void 0 : t.items,
-            y =
-              null == f ||
-              null === (n = f.dm_message_slice_result) ||
-              void 0 === n ||
-              null === (r = n.items) ||
-              void 0 === r
-                ? void 0
-                : r.map(function (e) {
-                    var t, n
-                    return null == e ||
-                      null === (t = e.dm_event) ||
-                      void 0 === t ||
-                      null === (n = t.legacy) ||
-                      void 0 === n
+            a = e.footer,
+            l = e.noItemsRenderer,
+            o = e.onScrollEnd,
+            i = e.renderInboxItem,
+            c = e.searchTerm,
+            s = Object(hn.c)(),
+            u = Object(gn.a)(mr, { query: c }),
+            d = u.data,
+            p = u.fetchNext,
+            f = u.hasNext,
+            m = g.a.useMemo(
+              function () {
+                var e,
+                  t,
+                  n,
+                  r =
+                    null == d ||
+                    null === (e = d.dm_message_slice_result) ||
+                    void 0 === e ||
+                    null === (t = e.items) ||
+                    void 0 === t
                       ? void 0
-                      : n.conversation
-                  }),
-            v = Object(sn.b)(y, [Qt.a]),
-            _ = Object(sn.b)(b, [Qt.b]),
-            E = fr(fr({}, null == v ? void 0 : v.entities), null == _ ? void 0 : _.entities),
-            O =
-              ((a = f),
-              (l = g.a.useRef()),
+                      : t.map(function (e) {
+                          var t, n
+                          return null == e ||
+                            null === (t = e.dm_event) ||
+                            void 0 === t ||
+                            null === (n = t.legacy) ||
+                            void 0 === n
+                            ? void 0
+                            : n.conversation
+                        }),
+                  a = null == d || null === (n = d.dm_message_slice_result) || void 0 === n ? void 0 : n.items,
+                  l = Object(sn.b)(r, [Qt.a]),
+                  o = Object(sn.b)(a, [Qt.b])
+                return {
+                  normalizedConversations: l,
+                  normalizedMessages: o,
+                  entities: fr(fr({}, null == l ? void 0 : l.entities), null == o ? void 0 : o.entities),
+                }
+              },
+              [null == d || null === (t = d.dm_message_slice_result) || void 0 === t ? void 0 : t.items],
+            ),
+            h = m.entities,
+            b = m.normalizedConversations,
+            y = m.normalizedMessages,
+            v =
+              ((n = d),
+              (r = g.a.useRef()),
               g.a.useEffect(function () {
-                l.current = a
+                r.current = n
               }),
-              l.current)
+              r.current)
           return (
             g.a.useEffect(
               function () {
-                Object(dr.a)(f, O) || d(Zt(E, !0))
+                Object(dr.a)(d, v) || s(Zt(h, !0))
               },
-              [E, f, O, d],
+              [h, d, v, s],
             ),
             g.a.createElement(cn.a, {
               cacheKey: hr,
-              footer: h ? null : o,
+              footer: f ? null : a,
               identityFunction: yr,
-              items: null == _ ? void 0 : _.result,
-              noItemsRenderer: i,
-              onNearEnd: m,
-              onScrollEnd: c,
-              renderer: s({
-                conversationIds: null == v ? void 0 : v.result,
+              items: null == y ? void 0 : y.result,
+              noItemsRenderer: l,
+              onNearEnd: p,
+              onScrollEnd: o,
+              renderer: i({
+                conversationIds: null == b ? void 0 : b.result,
                 isMessageItem: !0,
-                messageIds: null == _ ? void 0 : _.result,
+                messageIds: null == y ? void 0 : y.result,
               }),
               withoutHeadroom: !0,
             })

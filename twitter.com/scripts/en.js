@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [119],
+    [120],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -661,6 +661,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h845f281', 'Direct Message'),
           a('f325afc3', 'Compose a DM'),
           a('f37a6f73', 'Learn more'),
+          a('e0870f25', 'Sign up with Google'),
+          a('gfeffd69', 'Sign in with Google'),
+          a('c8c5faad', 'Terms of Service'),
+          a('ba5b7ecb', 'Privacy Policy'),
+          a('f4fe46c3', 'Cookie Use.'),
           a('ga169e1b', function (e) {
             return 'Direct Messages (' + e.count + ' unread conversation' + n(e.count, '', 's') + ')'
           }),
@@ -1137,10 +1142,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('h9f711f0', function (e) {
             return 'Follower' + n(e.count, '', 's')
-          }),
-          a('ibd0106d', function (e) {
-            return '' + e.formattedCount
-          }),
+          })
+        a('ibd0106d', function (e) {
+          return '' + e.formattedCount
+        }),
           a('cface2d0', function (e) {
             return 'Member' + n(e.count, '', 's')
           }),
@@ -1148,10 +1153,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Show ' + e.count + ' Tweet' + n(e.count, '', 's')
           }),
           a('afb4c24a', 'No items'),
-          a('aaf2c6e9', 'Thanks. Twitter will use this to make your timeline better.')
-        a('ge8f3043', function (e) {
-          return 'Follow ' + e.topicName + ' Topic'
-        }),
+          a('aaf2c6e9', 'Thanks. Twitter will use this to make your timeline better.'),
+          a('ge8f3043', function (e) {
+            return 'Follow ' + e.topicName + ' Topic'
+          }),
           a('aa576cbf', function (e) {
             return 'Unfollow ' + e.topicName + ' Topic'
           }),
@@ -1224,7 +1229,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f7364fa1', 'Ask a question...'),
           a('e815fc33', 'Choose audience'),
           a('aa4209e8', 'Super Followers'),
+          a('d0748dae', 'Twitter Circle'),
           a('c63602d3', 'My Communities'),
+          a('a5f7b70f', function (e) {
+            return '' + e.formattedCount
+          }),
+          a('a7daec1e', function (e) {
+            return 'Pe' + n(e.count, 'rson', 'ople')
+          }),
           a('gfca5254', 'Rules'),
           a('f510c8b2', 'Community Rules'),
           a('b154b059', 'Twitter’s rules'),
@@ -1233,6 +1245,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ec5a4a25', 'People you follow can reply'),
           a('b4543009', 'Only people you mention can reply'),
           a('i13be5a0', 'Community members can reply'),
+          a('c0857ccd', 'Only your Twitter Circle can view and reply'),
           a('aa65a449', 'We’ll remember your choice on this device'),
           a('bdbcdd93', 'Add photos'),
           a('a809609f', 'Add video'),
@@ -1424,11 +1437,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ie8e1ffc', 'Sign up now to get your own personalized timeline!'),
           a('ib65b1c6', 'Sign up with Apple'),
           a('f55cebb7', 'Sign in with Apple'),
-          a('c8c5faad', 'Terms of Service'),
-          a('ba5b7ecb', 'Privacy Policy'),
-          a('f4fe46c3', 'Cookie Use.'),
-          a('e0870f25', 'Sign up with Google'),
-          a('gfeffd69', 'Sign in with Google'),
           a('fd6473fa', 'Loading recommendations for users to follow'),
           a('a526aa66', 'Who to follow'),
           a('ef62501f', 'You might like'),
@@ -1562,13 +1570,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('efd14e79', 'Loading notes'),
           a('d06b723c', 'These notes need you'),
           a(
-            'j0790071',
-            'Participants like you determine which notes are most helpful. Keep information on Birdwatch reliable by rating notes.',
+            'f84bcd3d',
+            'By rating, you’re helping ensure that notes shown on Tweets are helpful to people with varying points of view.',
           ),
+          a('f10aaf3b', 'Note rating tips'),
           a('d4f03f72', 'We’re just starting to test Birdwatch out'),
           a(
-            'd94e246a',
-            'So, some notes may be helpful, and others, not so much. Birdwatch participants can separate high quality notes from the rest by rating them, which will help us build a better Birdwatch.',
+            'h98222f4',
+            'Birdwatch is a pilot program that lets people on Twitter collaboratively add context to Tweets to help keep people better informed. Notes can be rated by contributors and need to have the rating “currently rated helpful” in order to be public on Twitter.',
           ),
           a('d5c203a5', 'People have proposed Birdwatch notes about this Tweet'),
           a(
@@ -1577,6 +1586,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('ia596d40', 'See anything you’d like to improve?'),
           a('deff0bdd', 'Write a note'),
+          a(
+            'b95dc58a',
+            'Join Birdwatch and gain access to note writing and other features to help create a better-informed world',
+          ),
           a('e272836c', 'Delete note?'),
           a('e4579709', 'Note Details'),
           a('fa0d3ee3', 'Once you delete this note, it will be permanently removed from Birdwatch.'),
@@ -2223,14 +2236,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'These settings apply to this browser or device while you’re logged out. They don’t have any effect when you’re logged in.',
           ),
           a('gd4302ec', 'Manage your cookie experience on Twitter.'),
-          a('bdc6f5b7', 'Your account'),
-          a('bdfa2b8c', 'Additional resources'),
+          a('bdc6f5b7', 'Your account')
+        a('bdfa2b8c', 'Additional resources'),
           a('df483b47', 'Feature switches'),
           a('e435cdff', 'Try searching for password reset, notifications, etc'),
           a('c170a564', 'The term you entered did not bring up any results. Try a different search term.'),
           a('ba8f6f81', 'Search Settings'),
-          a('dae57a41', 'Allow all')
-        a('i7cbc154', 'Allow some'),
+          a('dae57a41', 'Allow all'),
+          a('i7cbc154', 'Allow some'),
           a('e3a761ee', 'Off'),
           a('cedbb01c', 'Legal'),
           a('b4f917d0', 'Miscellaneous'),
@@ -3490,8 +3503,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i203df96', 'Find out how you can deactivate your account.'),
           a('ib6f1694', 'Account creation'),
           a('h3290871', 'Verified'),
-          a('hbd12156', 'Request Verification'),
-          a('f70d5780', 'Yes.'),
+          a('hbd12156', 'Request Verification')
+        a('f70d5780', 'Yes.'),
           a('dc62d3c6', 'No.'),
           a('ab22c36c', 'Disabled'),
           a('j3a1cff6', 'Enabled'),
@@ -3499,8 +3512,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'd6d80990',
             'This information applies to your browser or device while you’re logged out. It may be different when you’re logged in.',
-          )
-        a('c036653e', 'profile'),
+          ),
+          a('c036653e', 'profile'),
           a('bad6cf6e', 'your personalization and data settings'),
           a('g2a9bd3e', 'Automated Account Labels'),
           a('dd9b3aad', 'What’s an automated account?'),
@@ -4165,6 +4178,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e1bde73e', function (e) {
             return '@' + e.screenName + ' can’t be messaged'
           }),
+          a('f7289cd6', 'You have a group conversation selected'),
+          a(
+            'e6cced4e',
+            'Only 1 on 1 conversations can be "sent to group". You can still send your message separately.',
+          ),
           a('e3e58b6d', 'Conversation info'),
           a('a9ddbb94', 'Group info'),
           a('h810143c', 'Details'),
@@ -4701,15 +4719,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('eb0ecd1d', 'Twitter Search'),
           a('cceeb26b', function (e) {
             return e.query + ' - Twitter Search'
-          }),
-          a('i66136a9', 'Top'),
-          a('ac4fb0f3', 'Photos'),
-          a('bb967f9e', 'Videos'),
-          a('gfcfbf8b', 'Your search was saved.'),
-          a('a4645d91', 'Your saved search was deleted.'),
-          a('j622effd', 'Advanced search'),
-          a('i5045e73', 'Anywhere'),
-          a('h2388753', 'Near you')
+          })
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4726,9 +4736,17 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('a8399d5b', function (e) {
-          return 'See Tweets about ' + e.query + ' on Twitter. See what people are saying and join the conversation.'
-        }),
+        a('i66136a9', 'Top'),
+          a('ac4fb0f3', 'Photos'),
+          a('bb967f9e', 'Videos'),
+          a('gfcfbf8b', 'Your search was saved.'),
+          a('a4645d91', 'Your saved search was deleted.'),
+          a('j622effd', 'Advanced search'),
+          a('i5045e73', 'Anywhere'),
+          a('h2388753', 'Near you'),
+          a('a8399d5b', function (e) {
+            return 'See Tweets about ' + e.query + ' on Twitter. See what people are saying and join the conversation.'
+          }),
           a('ge893905', function (e) {
             return 'The latest Tweets on ' + e.query + '. Read what people are saying and join the conversation.'
           }),
@@ -4822,6 +4840,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g9079b93', 'You may only view analytics about your own Tweets.'),
           a('a57daeb1', 'Tweet Analytics'),
           a('i976aff3', 'Update daily budget info to match your billing currency.'),
+          a('ef4602eb', 'Something went wrong. Please try again later.'),
           a('e5fe61ef', 'Impressions'),
           a('f6162a32', 'Times this Tweet was seen on Twitter'),
           a('dbe9353d', 'Engagements'),
@@ -4954,6 +4973,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d7d55f3b', '#PromotionGoals'),
           a('b25fd3d6', 'What results are you looking for from this promotion?'),
           a('bf214f47', 'Okay'),
+          a('de43b66f', 'Payment Methods'),
+          a('hb4773af', 'Add new payment method'),
+          a('aa2a3dd3', 'Delete Card'),
+          a('b1c5b63c', 'ending in'),
           a('c3c57e3e', 'Review promotion'),
           a('h06724b4', 'Once started, you can pause spending on this Tweet at any time.'),
           a('a96f811e', 'Promotion goal'),
@@ -4972,7 +4995,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('iaefd4de', 'Sign up and add payment details to claim your coupon'),
           a('e5e42640', 'Hmmm... your coupon didn’t load. Please try again later.'),
           a('da2805d1', 'A campaign for this tweet has already been created.'),
-          a('ef4602eb', 'Something went wrong. Please try again later.'),
           a('a4db098b', 'It looks like we couldn’t create your promotion. Please try again later.'),
           a('ef7e3916', 'Something went wrong. Check your promotion details and try again.'),
           a('acff74af', 'Twitter Terms and Advertising Guidelines'),
@@ -5986,8 +6008,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f2849136', 'Analytics'),
           a('dedf22f3', 'View Tweet activity'),
           a('d2b2b8e5', 'Downvote'),
-          a('hcb3286f', 'Undo downvote'),
-          a('cb5dafd3', 'Downvote, selected'),
+          a('hcb3286f', 'Undo downvote')
+        a('cb5dafd3', 'Downvote, selected'),
           a('eb3a8b0b', 'Unlike'),
           a('a4ae22fa', 'Like this Tweet'),
           a('dac92b0c', function (e) {
@@ -6008,8 +6030,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hdf72269', 'Reply'),
           a('c9940954', function (e) {
             return e.count + ' Repl' + n(e.count, 'y', 'ies') + '. Reply'
-          })
-        a('d6c85149', 'Retweet'),
+          }),
+          a('d6c85149', 'Retweet'),
           a('f3bbbb87', 'Undo Retweet'),
           a('i769b0ab', function (e) {
             return e.count + ' Retweet' + n(e.count, '', 's') + '. Retweet'
@@ -6558,6 +6580,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
+                key: 'c4d3d078',
+                get: function () {
+                  return ['By signing up, you agree to the ', ' and ', ', including ']
+                },
+              },
+              {
                 key: 'i9bec47a',
                 get: function () {
                   return ['Log out ']
@@ -6687,6 +6715,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
+                key: 'g8ffaf17',
+                get: function () {
+                  return ['', ' ']
+                },
+              },
+              {
                 key: 'i5ba24f4',
                 get: function () {
                   return ['These are set and enforced by Community admins and are in addition to ', '.']
@@ -6789,12 +6823,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'a492659f',
                 get: function () {
                   return ['', '']
-                },
-              },
-              {
-                key: 'c4d3d078',
-                get: function () {
-                  return ['By signing up, you agree to the ', ' and ', ', including ']
                 },
               },
               {

@@ -5,62 +5,63 @@
       'use strict'
       t.r(n),
         t.d(n, 'URTCarouselScroller', function () {
-          return v
+          return g
         })
       t('M+/F'), t('z84I')
       var r = t('ERkP'),
         a = t.n(r),
-        i = t('fs1G'),
-        o = t('BKvV'),
-        u = t('b1wW'),
-        c = t('7n04'),
-        s = t('Irs7'),
-        l = t('MWbm'),
-        d = t('6iuV'),
-        f = t('rHpw'),
-        v = a.a.forwardRef(function (e, n) {
+        i = t('BKvV'),
+        o = t('b1wW'),
+        u = t('7n04'),
+        c = t('Irs7'),
+        s = t('MWbm'),
+        l = t('6iuV'),
+        d = t('rHpw'),
+        f = t('0zXz'),
+        v = t('fs1G'),
+        g = a.a.forwardRef(function (e, n) {
           e.assumedItemHeight
           var t = e.anchoring,
-            r = (void 0 === t && c.a, e.identityFunction),
-            f = e.items,
-            v =
+            r = (void 0 === t && u.a, e.identityFunction),
+            d = e.items,
+            g =
               (e.minimumOffscreenToViewportRatio,
               e.nearEndProximityRatio,
               e.nearStartProximityRatio,
               e.noItemsRenderer),
-            p = void 0 === v ? g : v,
+            p = void 0 === g ? f.a : g,
             b = (e.preferredOffscreenToViewportRatio, e.onAtEnd),
-            R = (void 0 === b && i.a, e.onAtStart),
-            w = (void 0 === R && i.a, e.onNearEnd),
-            E = (void 0 === w && i.a, e.onNearStart),
-            y = (void 0 === E && i.a, e.onPositionRestored),
-            S = (void 0 === y && i.a, e.renderer),
-            V = a.a.useContext(o.a),
+            R = (void 0 === b && v.a, e.onAtStart),
+            w = (void 0 === R && v.a, e.onNearEnd),
+            E = (void 0 === w && v.a, e.onNearStart),
+            y = (void 0 === E && v.a, e.onPositionRestored),
+            S = (void 0 === y && v.a, e.renderer),
+            V = a.a.useContext(i.a),
             C = V.numRowsFromMetadata,
             x = V.scrollerDisplayType,
-            k = void 0 === x ? u.a.Carousel : x,
-            I = C || h(f.length, k),
+            k = void 0 === x ? o.a.Carousel : x,
+            I = C || h(d.length, k),
             P = a.a.useRef(0),
-            A = Object(s.b)()
+            A = Object(c.b)()
           a.a.useImperativeHandle(n, function () {
             return {
               isAtNewest: function () {
                 return !0
               },
               scrollToNewest: function () {
-                return Object(i.a)()
+                return Object(v.a)()
               },
               adjustFocusBy: function (e) {
-                return Object(i.a)()
+                return Object(v.a)()
               },
             }
           })
           var O = a.a.useMemo(
               function () {
-                for (var e = [], n = 0, t = 0; n < f.length; n += I, t++) {
-                  var i = f.slice(n, n + I),
+                for (var e = [], n = 0, t = 0; n < d.length; n += I, t++) {
+                  var i = d.slice(n, n + I),
                     o = a.a.createElement(
-                      l.a,
+                      s.a,
                       { key: t },
                       i.map(function (e) {
                         return a.a.createElement(a.a.Fragment, { key: r(e) }, S(e))
@@ -70,7 +71,7 @@
                 }
                 return (P.current = e.length), e
               },
-              [r, f, I, S],
+              [r, d, I, S],
             ),
             M = a.a.useCallback(
               function (e) {
@@ -88,66 +89,64 @@
               },
               [A],
             )
-          return f.length ? a.a.createElement(d.a, { onScroll: N, onVisibleRangeChange: M, style: m.root }, O) : p()
+          return d.length ? a.a.createElement(l.a, { onScroll: N, onVisibleRangeChange: M, style: m.root }, O) : p()
         }),
-        g = function () {
-          return null
-        },
         h = function (e, n) {
-          return n === u.a.GridCarousel && e >= 8 ? (e < 12 ? 2 : 3) : 1
+          return n === o.a.GridCarousel && e >= 8 ? (e < 12 ? 2 : 3) : 1
         },
-        m = f.a.create(function (e) {
+        m = d.a.create(function (e) {
           return { root: { marginHorizontal: e.spaces.space4, marginVertical: e.spaces.space4 } }
         })
-      n.default = v
+      n.default = g
     },
     'DO1+': function (e, n, t) {
       'use strict'
       t.r(n),
         t.d(n, 'PagedCarouselScroller', function () {
-          return y
+          return S
         })
       var r = t('ddV6'),
         a = t.n(r),
         i = (t('vfdX'), t('uFXj'), t('ERkP')),
         o = t.n(i),
         u = t('gZV8'),
-        c = t('fs1G'),
-        s = t('X3+4'),
-        l = t('7nmT'),
-        d = t.n(l),
-        f = t('Resy'),
-        v = t('7n04'),
-        g = t('Irs7'),
-        h = t('Fz18'),
-        m = t('0ig/'),
-        p = t('rHpw'),
-        b = t('38/B'),
-        R = t('6iuV'),
-        w = t('WrBE'),
-        E = t('MWbm'),
-        y = o.a.forwardRef(function (e, n) {
+        c = t('X3+4'),
+        s = t('7nmT'),
+        l = t.n(s),
+        d = t('Resy'),
+        f = t('7n04'),
+        v = t('Irs7'),
+        g = t('Fz18'),
+        h = t('0ig/'),
+        m = t('rHpw'),
+        p = t('38/B'),
+        b = t('6iuV'),
+        R = t('WrBE'),
+        w = t('MWbm'),
+        E = t('0zXz'),
+        y = t('fs1G'),
+        S = o.a.forwardRef(function (e, n) {
           e.assumedItemHeight
           var t = e.anchoring,
-            r = (void 0 === t && v.a, e.identityFunction),
+            r = (void 0 === t && f.a, e.identityFunction),
             i = e.items,
-            l =
+            s =
               (e.minimumOffscreenToViewportRatio,
               e.nearEndProximityRatio,
               e.nearStartProximityRatio,
               e.noItemsRenderer),
-            y = void 0 === l ? S : l,
+            S = void 0 === s ? E.a : s,
             C = (e.preferredOffscreenToViewportRatio, e.onAtEnd),
-            x = (void 0 === C && c.a, e.onAtStart),
-            k = (void 0 === x && c.a, e.onItemsRendered),
-            I = void 0 === k ? c.a : k,
+            x = (void 0 === C && y.a, e.onAtStart),
+            k = (void 0 === x && y.a, e.onItemsRendered),
+            I = void 0 === k ? y.a : k,
             P = e.onNearEnd,
-            A = (void 0 === P && c.a, e.onNearStart),
-            O = (void 0 === A && c.a, e.onPositionRestored),
-            M = void 0 === O ? c.a : O,
+            A = (void 0 === P && y.a, e.onNearStart),
+            O = (void 0 === A && y.a, e.onPositionRestored),
+            M = void 0 === O ? y.a : O,
             N = e.renderer,
             j = o.a.useRef(),
-            H = Object(h.b)(),
+            H = Object(g.b)(),
             B = o.a.useState(function () {
               var e = H.getSavedPosition()
               if (null == e || !e.length) return 0
@@ -159,13 +158,13 @@
             }),
             F = a()(B, 2),
             T = F[0],
-            _ = F[1],
-            z = o.a.useRef(new w.a.Value(50)).current,
-            D = o.a.useRef({}).current,
-            G = o.a.useRef({}),
-            W = o.a.useRef(0),
-            X = Object(g.b)(),
-            J = Object(m.a)().width < p.a.theme.breakpoints.small,
+            z = F[1],
+            X = o.a.useRef(new R.a.Value(50)).current,
+            _ = o.a.useRef({}).current,
+            D = o.a.useRef({}),
+            G = o.a.useRef(0),
+            W = Object(v.b)(),
+            J = Object(h.a)().width < m.a.theme.breakpoints.small,
             Z = o.a.useCallback(
               function (e) {
                 var n,
@@ -180,18 +179,18 @@
                 return !0
               },
               scrollToNewest: function () {
-                return Object(c.a)()
+                return Object(y.a)()
               },
               adjustFocusBy: function (e) {
-                return Object(c.a)()
+                return Object(y.a)()
               },
             }
           }),
             o.a.useEffect(function () {
-              var e = G.current[T]
+              var e = D.current[T]
               if (e) {
                 var n = e.getBoundingClientRect().height
-                z.setValue(n)
+                X.setValue(n)
               }
               M(), U({ index: T, shouldSavePosition: !1 })
             }, [])
@@ -200,28 +199,28 @@
                 for (
                   var e = function (e) {
                       return function (n) {
-                        n && (G.current[e] = n)
+                        n && (D.current[e] = n)
                       }
                     },
                     n = function (e) {
                       return (
-                        (D[e] = new w.a.Value(0)),
+                        (_[e] = new R.a.Value(0)),
                         {
-                          opacity: D[e].interpolate({ inputRange: [0, 1], outputRange: [1, 0] }),
+                          opacity: _[e].interpolate({ inputRange: [0, 1], outputRange: [1, 0] }),
                           transform: [
-                            { rotate: D[e].interpolate({ inputRange: [0, 1], outputRange: ['0deg', '-2deg'] }) },
+                            { rotate: _[e].interpolate({ inputRange: [0, 1], outputRange: ['0deg', '-2deg'] }) },
                           ],
                         }
                       )
                     },
                     t = [],
-                    a = b.a.reducedMotionEnabled ? E.a : w.a.View,
+                    a = p.a.reducedMotionEnabled ? w.a : R.a.View,
                     u = 0;
                   u < i.length;
                   u += 1
                 ) {
                   var c = i[u],
-                    s = b.a.reducedMotionEnabled ? void 0 : n(u),
+                    s = p.a.reducedMotionEnabled ? void 0 : n(u),
                     l = o.a.createElement(
                       a,
                       { key: u, ref: e(u), style: s },
@@ -229,20 +228,20 @@
                     )
                   t.push(l)
                 }
-                return (W.current = t.length), t
+                return (G.current = t.length), t
               },
-              [D, r, i, N],
+              [_, r, i, N],
             ),
             U = o.a.useCallback(
               function (e) {
                 var n = e.index,
                   t = e.shouldSavePosition,
                   r = (function (e) {
-                    if (!e || !e.current) return new f.a(0, 0)
-                    var n = d.a.findDOMNode(e.current).getBoundingClientRect(),
+                    if (!e || !e.current) return new d.a(0, 0)
+                    var n = l.a.findDOMNode(e.current).getBoundingClientRect(),
                       t = n.height,
                       r = n.top
-                    return new f.a(r, t)
+                    return new d.a(r, t)
                   })(j)
                 I({ positions: [{ id: i[n].entryId, rectangle: r }], viewport: r }), t && Z(n)
               },
@@ -252,75 +251,72 @@
               function (e) {
                 var n = e.index,
                   t = e.intersectionRatio
-                n === W.current - 1 && t >= u.c && X.scribeAction('reached_end'),
-                  n !== T && 1 === t && (_(n), U({ index: n, shouldSavePosition: !0 }))
+                n === G.current - 1 && t >= u.c && W.scribeAction('reached_end'),
+                  n !== T && 1 === t && (z(n), U({ index: n, shouldSavePosition: !0 }))
               },
-              [X, U, W, T],
+              [W, U, G, T],
             ),
             q = o.a.useCallback(
               function (e) {
                 var n
-                b.a.reducedMotionEnabled ||
-                  w.a.spring(D[T], { toValue: 1, bounciness: 2 }).start(function () {
-                    D[T].setValue(0)
+                p.a.reducedMotionEnabled ||
+                  R.a.spring(_[T], { toValue: 1, bounciness: 2 }).start(function () {
+                    _[T].setValue(0)
                   }),
                   null === (n = j.current) || void 0 === n || n.handleNextSlide(e)
               },
-              [D, j, T],
+              [_, j, T],
             ),
             L = o.a.useCallback(
               function (e) {
                 var n = e.next,
                   t = e.previous
-                t > n ? X.scribeAction('scroll_left') : t < n && X.scribeAction('scroll_right')
+                t > n ? W.scribeAction('scroll_left') : t < n && W.scribeAction('scroll_right')
               },
-              [X],
+              [W],
             )
           if (
             (o.a.useEffect(
               function () {
-                var e = G.current[T]
-                if (!b.a.reducedMotionEnabled && e) {
+                var e = D.current[T]
+                if (!p.a.reducedMotionEnabled && e) {
                   var n = e.getBoundingClientRect().height
-                  z.setValue(n)
+                  X.setValue(n)
                 }
               },
-              [J, T],
+              [J, T, X],
             ),
             !i.length)
           )
-            return y()
+            return S()
           var Q = o.a.createElement(
-            s.a.Provider,
+            c.a.Provider,
             { value: { handleNextSlide: q } },
             o.a.createElement(
-              R.a,
+              b.a,
               {
                 childrenStyle: V.children,
                 onScroll: L,
                 onVisibleRangeChange: Y,
                 ref: j,
                 scrollToCenter: !0,
-                style: b.a.reducedMotionEnabled ? V.root : V.rootInheritHeight,
+                style: p.a.reducedMotionEnabled ? V.root : V.rootInheritHeight,
                 visibleItemIndex: T,
                 withAddedNavButtonClickArea: !0,
               },
               K,
             ),
           )
-          return b.a.reducedMotionEnabled ? Q : o.a.createElement(w.a.View, { style: [V.root, { height: z }] }, Q)
+          return p.a.reducedMotionEnabled ? Q : o.a.createElement(R.a.View, { style: [V.root, { height: X }] }, Q)
         }),
-        S = function () {
-          return null
-        },
-        V = p.a.create(function (e) {
+        V = m.a.create(function (e) {
           return {
             root: { marginHorizontal: e.spaces.space4, marginBottom: e.componentDimensions.gutterVertical },
             rootInheritHeight: { height: 'inherit' },
             children: { overflowY: 'hidden', scrollSnapAlign: 'center', scrollSnapStop: 'always', width: '100%' },
           }
         })
-      n.default = y
+      n.default = S
     },
     'X3+4': function (e, n, t) {
       'use strict'

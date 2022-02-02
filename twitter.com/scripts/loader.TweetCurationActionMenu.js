@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [181, 169],
+  [182, 170],
   {
     ACNv: function (e, t, n) {
       'use strict'
@@ -1211,6 +1211,7 @@
           community_hidden_tweet: 'community_hidden_tweet',
           super_followers_exclusive: 'super_followers_exclusive',
           community_tweet_member_removed: 'community_tweet_member_removed',
+          trusted_friends_tweet: 'trusted_friends_tweet',
         }),
         Fn = (function (e) {
           p()(n, e)

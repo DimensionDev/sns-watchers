@@ -14,24 +14,24 @@
         s = n.n(u),
         d = n('N+ot'),
         f = n.n(d),
-        p = n('AuHH'),
-        b = n.n(p),
-        h = n('KEM+'),
-        m = n.n(h),
+        b = n('AuHH'),
+        h = n.n(b),
+        p = n('KEM+'),
+        m = n.n(p),
         y = (n('2G9S'), n('ERkP')),
         g = n.n(y),
         v = n('P1r1'),
         E = n('G6rE'),
-        w = n('rxPX'),
-        O = n('0KEI'),
-        C = Object(w.a)()
+        O = n('rxPX'),
+        w = n('0KEI'),
+        C = Object(O.a)()
           .propsFromState(function () {
             return { fetchStatus: v.o, loggedInUser: E.e.selectLoggedInUser }
           })
           .propsFromActions(function () {
             return {
               fetchSettingsIfNeeded: v.f,
-              createLocalApiErrorHandler: Object(O.createLocalApiErrorHandlerWithContextFactory)('SETTINGS_LOADER'),
+              createLocalApiErrorHandler: Object(w.createLocalApiErrorHandlerWithContextFactory)('SETTINGS_LOADER'),
             }
           }),
         _ = n('v//M'),
@@ -42,8 +42,8 @@
         D = n('mw9i'),
         T = n('0yYu'),
         R = n('/yvb'),
-        x = n('rHpw')
-      function P(e) {
+        P = n('rHpw')
+      function k(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -56,18 +56,18 @@
         })()
         return function () {
           var n,
-            r = b()(e)
+            r = h()(e)
           if (t) {
-            var o = b()(this).constructor
+            var o = h()(this).constructor
             n = Reflect.construct(r, arguments, o)
           } else n = r.apply(this, arguments)
           return f()(this, n)
         }
       }
-      var k = L.a.i2209530,
-        F = (function (e) {
+      var F = L.a.i2209530,
+        j = (function (e) {
           s()(n, e)
-          var t = P(n)
+          var t = k(n)
           function n() {
             var e
             o()(this, n)
@@ -88,7 +88,7 @@
                   i = t.withMarginBottom
                 return g.a.createElement(
                   D.a,
-                  { style: [j.contentRoot, i && j.withMarginBottom] },
+                  { style: [x.contentRoot, i && x.withMarginBottom] },
                   n,
                   r
                     ? g.a.createElement(
@@ -97,8 +97,8 @@
                         g.a.createElement(T.a, null),
                         g.a.createElement(
                           D.a,
-                          { style: j.buttonContainer },
-                          g.a.createElement(R.a, { disabled: o, onPress: r, style: j.button, testID: B, type: c }, a),
+                          { style: x.buttonContainer },
+                          g.a.createElement(R.a, { disabled: o, onPress: r, style: x.button, testID: B, type: c }, a),
                         ),
                       )
                     : null,
@@ -163,8 +163,8 @@
             n
           )
         })(g.a.Component)
-      m()(F, 'defaultProps', { submitLabel: k, submitType: 'brandFilled', withMarginBottom: !0 })
-      var j = x.a.create(function (e) {
+      m()(j, 'defaultProps', { submitLabel: F, submitType: 'brandFilled', withMarginBottom: !0 })
+      var x = P.a.create(function (e) {
         return {
           contentRoot: {
             backgroundColor: e.colors.cellBackground,
@@ -182,11 +182,11 @@
           },
           button: { marginVertical: 0, marginHorizontal: e.spaces.space12 },
           withMarginBottom: {
-            marginBottom: 'calc('.concat(e.spaces.space64, ' + ').concat(x.a.iPhoneOffsetBottom, ')'),
+            marginBottom: 'calc('.concat(e.spaces.space64, ' + ').concat(P.a.iPhoneOffsetBottom, ')'),
           },
         }
       })
-      t.a = C(F)
+      t.a = C(j)
     },
     Fcaw: function (e, t, n) {
       'use strict'
@@ -241,27 +241,27 @@
         return e
       }
       var f = 'accountTaxonomy',
-        p =
+        b =
           ('rweb/'.concat(f),
           i()({ account_label: { disableStatus: l.a.NONE, fetchStatus: l.a.NONE, managed_label: void 0 } })),
-        b = Object.freeze({
+        h = Object.freeze({
           REQUEST: 'rweb/accountTaxonomy/FETCH_USER_ACCOUNT_LABEL_REQUEST',
           SUCCESS: 'rweb/accountTaxonomy/FETCH_USER_ACCOUNT_LABEL_SUCCESS',
           FAILURE: 'rweb/accountTaxonomy/FETCH_USER_ACCOUNT_LABEL_FAILURE',
         }),
-        h = Object.freeze({
+        p = Object.freeze({
           REQUEST: 'rweb/accountTaxonomy/DISABLE_USER_ACCOUNT_LABEL_REQUEST',
           SUCCESS: 'rweb/accountTaxonomy/DISABLE_USER_ACCOUNT_LABEL_SUCCESS',
           FAILURE: 'rweb/accountTaxonomy/DISABLE_USER_ACCOUNT_LABEL_FAILURE',
         })
       u.a.register(
         o()({}, f, function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : p,
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : b,
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
-            case b.REQUEST:
+            case h.REQUEST:
               return d(d({}, e), {}, { account_label: d(d({}, e.account_label), {}, { fetchStatus: l.a.LOADING }) })
-            case b.SUCCESS:
+            case h.SUCCESS:
               var n, r, o
               return d(
                 d({}, e),
@@ -285,17 +285,17 @@
                   ),
                 },
               )
-            case b.FAILURE:
+            case h.FAILURE:
               return d(d({}, e), {}, { account_label: d(d({}, e.account_label), {}, { fetchStatus: l.a.FAILED }) })
-            case h.REQUEST:
+            case p.REQUEST:
               return d(d({}, e), {}, { account_label: d(d({}, e.account_label), {}, { disableStatus: l.a.LOADING }) })
-            case h.SUCCESS:
+            case p.SUCCESS:
               return d(
                 d({}, e),
                 {},
                 { account_label: { managed_label: void 0, fetchStatus: l.a.LOADED, disableStatus: l.a.LOADED } },
               )
-            case h.FAILURE:
+            case p.FAILURE:
               return d(d({}, e), {}, { account_label: d(d({}, e.account_label), {}, { disableStatus: l.a.FAILED }) })
             default:
               return e
@@ -333,7 +333,7 @@
           return function (t, n, r) {
             var o = r.api
             return Object(a.b)(t, { request: o.AccountTaxonomy.fetchUserAccountLabel, params: { userId: e } })({
-              actionTypes: b,
+              actionTypes: h,
               context: 'FETCH_USER_ACCOUNT_LABEL',
             })
           }
@@ -342,7 +342,7 @@
           return function (e, t, n) {
             var r = n.api
             return Object(a.b)(e, { request: r.AccountTaxonomy.disableUserAccountLabel, params: {} })({
-              actionTypes: h,
+              actionTypes: p,
               context: 'DISABLE_USER_ACCOUNT_LABEL',
             })
           }
@@ -361,22 +361,21 @@
         s = n.n(u),
         d = n('5Yy7'),
         f = n.n(d),
-        p = n('N+ot'),
-        b = n.n(p),
-        h = n('AuHH'),
-        m = n.n(h),
+        b = n('N+ot'),
+        h = n.n(b),
+        p = n('AuHH'),
+        m = n.n(p),
         y = n('KEM+'),
         g = n.n(y),
         v = (n('2G9S'), n('i4UL'), n('+/5o')),
         E = n('ERkP'),
-        w = n.n(E),
-        O = n('HPNB'),
-        C = n('v6aA'),
-        _ = n('VAZu'),
-        S = n('wiP2'),
-        L = n('Es6L'),
-        A = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('rHpw'))
-      function B(e, t) {
+        O = n.n(E),
+        w = n('HPNB'),
+        C = n('VAZu'),
+        _ = n('wiP2'),
+        S = n('Es6L'),
+        L = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('rHpw'))
+      function A(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -388,31 +387,35 @@
         }
         return n
       }
-      function D(e) {
+      function B(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? B(Object(n), !0).forEach(function (t) {
+            ? A(Object(n), !0).forEach(function (t) {
                 g()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : B(Object(n)).forEach(function (t) {
+            : A(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var T = A.a.create(function (e) {
+      var D = L.a.create(function (e) {
           return {
             fill: { flex: 1, alignSelf: 'stretch' },
-            viewportView: D(D({}, A.a.absoluteFillObject), {}, { overflowY: 'auto' }),
-            appBarContainer: { position: 'sticky', top: 0 },
-            appBarZindex: { backfaceVisibility: 'hidden', zIndex: e.componentZIndices.appBarZIndex },
+            viewportView: B(B({}, L.a.absoluteFillObject), {}, { overflowY: 'auto' }),
+            appBarContainer: {
+              position: 'sticky',
+              top: 0,
+              backfaceVisibility: 'hidden',
+              zIndex: e.componentZIndices.appBarZIndex,
+            },
           }
         }),
-        R = n('MWbm'),
-        x = n('yw4N'),
+        T = n('MWbm'),
+        R = n('yw4N'),
         P = n('TnY3'),
         k = n('cHvH'),
         F = n('3xLC')
@@ -434,10 +437,10 @@
             var o = m()(this).constructor
             n = Reflect.construct(r, arguments, o)
           } else n = r.apply(this, arguments)
-          return b()(this, n)
+          return h()(this, n)
         }
       }
-      var U = (function (e) {
+      var x = (function (e) {
         f()(n, e)
         var t = j(n)
         function n() {
@@ -446,20 +449,15 @@
           for (var r = arguments.length, o = new Array(r), a = 0; a < r; a++) o[a] = arguments[a]
           return (
             (e = t.call.apply(t, [this].concat(o))),
-            g()(s()(e), '_renderChildren', function (t) {
-              var n = e.props.children
+            g()(s()(e), '_renderChildren', function () {
+              var t = e.props.children
               return e.context.rootDetailPerColumnScroll
-                ? w.a.createElement(
-                    R.a,
-                    { style: T.fill },
-                    w.a.createElement(
-                      x.a,
-                      { style: T.viewportView },
-                      t ? e._renderInlineNav({ isTwoColumnLayout: !0, appBarScrollEnabled: !0 }) : null,
-                      n,
-                    ),
+                ? O.a.createElement(
+                    T.a,
+                    { style: D.fill },
+                    O.a.createElement(R.a, { style: D.viewportView }, e._renderInlineNav({ isTwoColumnLayout: !0 }), t),
                   )
-                : n
+                : t
             }),
             e
           )
@@ -470,9 +468,9 @@
               key: 'render',
               value: function () {
                 var e = this
-                return w.a.createElement(k.a, null, function (t) {
+                return O.a.createElement(k.a, null, function (t) {
                   var n = t.windowWidth
-                  return O.a.isTwoColumnLayout(n) ? e._renderForTwoColumnLayout() : e._renderForOneColumnLayout()
+                  return w.a.isTwoColumnLayout(n) ? e._renderForTwoColumnLayout() : e._renderForOneColumnLayout()
                 })
               },
             },
@@ -497,12 +495,12 @@
                       'withBottomBorder',
                       'withDetailOpen',
                     ]))
-                return w.a.createElement(
-                  w.a.Fragment,
+                return O.a.createElement(
+                  O.a.Fragment,
                   null,
-                  Object(L.a)()
+                  Object(S.a)()
                     ? this._renderInlineNav({ isTwoColumnLayout: !1 })
-                    : w.a.createElement(S.a.Configure, n),
+                    : O.a.createElement(_.a.Configure, n),
                   t,
                 )
               },
@@ -510,104 +508,100 @@
             {
               key: '_renderForTwoColumnLayout',
               value: function () {
-                var e = this,
-                  t = this.context.rootDetailPerColumnScroll
-                return w.a.createElement(C.a.Consumer, null, function (n) {
-                  var r = n.featureSwitches.isTrue('responsive_web_app_bar_scroll_enabled'),
-                    o = t
-                      ? !r && e._renderInlineNav({ isTwoColumnLayout: !0 })
-                      : e._renderInlineNav({ isTwoColumnLayout: !0 })
-                  return w.a.createElement(w.a.Fragment, null, o, e._renderChildren(r))
-                })
+                var e = this.context.rootDetailPerColumnScroll
+                return O.a.createElement(
+                  O.a.Fragment,
+                  null,
+                  !e && this._renderInlineNav({ isTwoColumnLayout: !0 }),
+                  this._renderChildren(),
+                )
               },
             },
             {
               key: '_renderInlineNav',
               value: function (e) {
-                var t = e.appBarScrollEnabled,
-                  n = void 0 !== t && t,
-                  r = e.isTwoColumnLayout,
-                  o = this.props,
-                  a = o.SideNavButton,
-                  c = o.TabBar,
-                  i = o.TeamsSwitcher,
-                  l = o.backLocation,
-                  u = o.documentTitle,
-                  s = o.headerless,
-                  d = o.history,
-                  f = o.leftControl,
-                  p = o.middleControl,
-                  b = o.onBackClick,
-                  h = o.rightControl,
-                  m = o.screenType,
-                  y = o.searchBoxOptions,
-                  g = o.secondaryBar,
-                  E = o.showSubtitleOnRoot,
-                  O = o.showSubtitleOnWideDetail,
-                  C = o.subtitle,
-                  L = o.title,
-                  A = o.titleIconCell,
-                  B = o.titleIconCellSize,
-                  D = o.withBottomBorder,
-                  x = o.withDetailOpen,
-                  P = o.withSearchBox,
-                  k = o.withTweetButton,
-                  F = 'root' === m,
-                  j = 'secondaryRoot' === m,
-                  U = 'primaryDetail' === m,
-                  I = (U && O) || (F && E),
-                  H = F || (U && r),
-                  M = F ? v.c : U ? v.a : void 0,
-                  N = w.a.createElement(
-                    R.a,
-                    { style: n ? [T.appBarContainer, T.appBarZindex] : T.appBarZindex },
-                    w.a.createElement(_.a, {
-                      backLocation: l,
+                var t = e.isTwoColumnLayout,
+                  n = this.props,
+                  r = n.SideNavButton,
+                  o = n.TabBar,
+                  a = n.TeamsSwitcher,
+                  c = n.backLocation,
+                  i = n.documentTitle,
+                  l = n.headerless,
+                  u = n.history,
+                  s = n.leftControl,
+                  d = n.middleControl,
+                  f = n.onBackClick,
+                  b = n.rightControl,
+                  h = n.screenType,
+                  p = n.searchBoxOptions,
+                  m = n.secondaryBar,
+                  y = n.showSubtitleOnRoot,
+                  g = n.showSubtitleOnWideDetail,
+                  E = n.subtitle,
+                  w = n.title,
+                  S = n.titleIconCell,
+                  L = n.titleIconCellSize,
+                  A = n.withBottomBorder,
+                  B = n.withDetailOpen,
+                  R = n.withSearchBox,
+                  P = n.withTweetButton,
+                  k = 'root' === h,
+                  F = 'secondaryRoot' === h,
+                  j = 'primaryDetail' === h,
+                  x = (j && g) || (k && y),
+                  U = k || (j && t),
+                  I = k ? v.c : j ? v.a : void 0,
+                  H = O.a.createElement(
+                    T.a,
+                    { style: D.appBarContainer },
+                    O.a.createElement(C.a, {
+                      backLocation: c,
                       fixed: !1,
-                      hideBackButton: H,
-                      history: d,
-                      leftControl: f,
-                      middleControl: p,
-                      onBackClick: b,
-                      rightControl: h,
-                      secondaryBar: n ? g : null,
-                      subtitle: I ? C : void 0,
-                      title: L,
-                      titleDomId: M,
-                      titleIconCell: A,
-                      titleIconCellSize: B,
-                      withBottomBorder: D,
+                      hideBackButton: U,
+                      history: u,
+                      leftControl: s,
+                      middleControl: d,
+                      onBackClick: f,
+                      rightControl: b,
+                      secondaryBar: m,
+                      subtitle: x ? E : void 0,
+                      title: w,
+                      titleDomId: I,
+                      titleIconCell: S,
+                      titleIconCellSize: L,
+                      withBottomBorder: A,
                     }),
                   ),
-                  W =
-                    F || (j && x)
+                  M =
+                    k || (F && B)
                       ? null
-                      : w.a.createElement(S.a.Configure, {
-                          SideNavButton: a,
-                          TabBar: c,
-                          TeamsSwitcher: i,
-                          backLocation: l,
-                          documentTitle: u,
-                          headerless: s,
-                          middleControl: p,
-                          onBackClick: b,
-                          rightControl: h,
-                          searchBoxOptions: y,
-                          subtitle: C,
-                          title: L,
-                          withSearchBox: P,
-                          withTweetButton: k,
+                      : O.a.createElement(_.a.Configure, {
+                          SideNavButton: r,
+                          TabBar: o,
+                          TeamsSwitcher: a,
+                          backLocation: c,
+                          documentTitle: i,
+                          headerless: l,
+                          middleControl: d,
+                          onBackClick: f,
+                          rightControl: b,
+                          searchBoxOptions: p,
+                          subtitle: E,
+                          title: w,
+                          withSearchBox: R,
+                          withTweetButton: P,
                         })
-                return w.a.createElement(w.a.Fragment, null, W, N, n ? null : g)
+                return O.a.createElement(O.a.Fragment, null, M, H)
               },
             },
           ]),
           n
         )
-      })(w.a.Component)
-      g()(U, 'contextType', F.a),
-        g()(U, 'defaultProps', { screenType: 'secondaryDetail', showSubtitleOnWideDetail: !0 })
-      t.a = Object(P.a)(U)
+      })(O.a.Component)
+      g()(x, 'contextType', F.a),
+        g()(x, 'defaultProps', { screenType: 'secondaryDetail', showSubtitleOnWideDetail: !0 })
+      t.a = Object(P.a)(x)
     },
     iD2S: function (e, t) {
       e.exports = function e(t) {
@@ -636,8 +630,8 @@
         s = n('I4+6'),
         d = n('cm6r'),
         f = n('rHpw'),
-        p = n('MWbm'),
-        b = f.a.create(function (e) {
+        b = n('MWbm'),
+        h = f.a.create(function (e) {
           return {
             container: { backgroundColor: e.colors.cellBackground },
             root: {
@@ -654,17 +648,17 @@
           r = e.color,
           a = e.label,
           i = c()(e, ['align', 'color', 'label']),
-          h = s.a.generate({
+          p = s.a.generate({
             backgroundColor: f.a.theme.colors.transparent,
             color: f.a.theme.colors[r],
             insetFocusRing: !0,
           })
         return l.a.createElement(
-          p.a,
-          { style: b.container },
+          b.a,
+          { style: h.container },
           l.a.createElement(
             d.a,
-            o()({}, i, { interactiveStyles: h, style: b.root }),
+            o()({}, i, { interactiveStyles: p, style: h.root }),
             l.a.createElement(u.b, { align: n, color: r }, a),
           ),
         )
@@ -683,16 +677,16 @@
         s = n.n(u),
         d = n('N+ot'),
         f = n.n(d),
-        p = n('AuHH'),
-        b = n.n(p),
-        h = n('KEM+'),
-        m = n.n(h),
+        b = n('AuHH'),
+        h = n.n(b),
+        p = n('KEM+'),
+        m = n.n(p),
         y = (n('2G9S'), n('uFXj'), n('ERkP')),
         g = n.n(y),
         v = n('t62R'),
         E = n('rHpw'),
-        w = n('MWbm')
-      function O(e) {
+        O = n('MWbm')
+      function w(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -705,9 +699,9 @@
         })()
         return function () {
           var n,
-            r = b()(e)
+            r = h()(e)
           if (t) {
-            var o = b()(this).constructor
+            var o = h()(this).constructor
             n = Reflect.construct(r, arguments, o)
           } else n = r.apply(this, arguments)
           return f()(this, n)
@@ -715,7 +709,7 @@
       }
       var C = (function (e) {
         s()(n, e)
-        var t = O(n)
+        var t = w(n)
         function n() {
           var e
           o()(this, n)
@@ -747,7 +741,7 @@
                   o = e.subtext,
                   a = e.withBottomBorder
                 return g.a.createElement(
-                  w.a,
+                  O.a,
                   { style: [_.root, a && _.bottomBorder] },
                   g.a.createElement(v.b, null, t),
                   o
@@ -802,16 +796,16 @@
         s = n.n(u),
         d = n('N+ot'),
         f = n.n(d),
-        p = n('AuHH'),
-        b = n.n(p),
-        h = n('KEM+'),
-        m = n.n(h),
+        b = n('AuHH'),
+        h = n.n(b),
+        p = n('KEM+'),
+        m = n.n(p),
         y = n('ERkP'),
         g = n.n(y),
         v = n('Fcaw'),
         E = n('G6rE'),
-        w = n('rxPX'),
-        O = Object(w.a)()
+        O = n('rxPX'),
+        w = Object(O.a)()
           .propsFromState(function () {
             return {
               managingAccount: v.d,
@@ -833,11 +827,11 @@
         D = n('7FtF'),
         T = n('MWbm'),
         R = n('Irs7'),
-        x = n('4zmP'),
-        P = n('csss'),
-        k = n('o1YB'),
-        F = n('0yYu'),
-        j = n('jtO7'),
+        P = n('4zmP'),
+        k = n('csss'),
+        F = n('o1YB'),
+        j = n('0yYu'),
+        x = n('jtO7'),
         U = n('feu+'),
         I = n('xHsv'),
         H = n('rHpw'),
@@ -884,16 +878,16 @@
         })()
         return function () {
           var n,
-            r = b()(e)
+            r = h()(e)
           if (t) {
-            var o = b()(this).constructor
+            var o = h()(this).constructor
             n = Reflect.construct(r, arguments, o)
           } else n = r.apply(this, arguments)
           return f()(this, n)
         }
       }
-      var Z = L.a.d12d42db,
-        G = L.a.ja854816,
+      var G = L.a.d12d42db,
+        Z = L.a.ja854816,
         K = L.a.a2981062,
         J = L.a.aff4540e,
         X = L.a.b8b9d10f,
@@ -934,7 +928,7 @@
                 return g.a.createElement(
                   T.a,
                   { style: de.inlineCallout },
-                  g.a.createElement(x.a, { Icon: r, headline: n || '', onClose: a._handleHideCallout, type: o }),
+                  g.a.createElement(P.a, { Icon: r, headline: n || '', onClose: a._handleHideCallout, type: o }),
                 )
               }),
               m()(l()(a), '_handleFetchUserAccountLabel', function () {
@@ -954,7 +948,7 @@
                 return g.a.createElement(
                   T.a,
                   null,
-                  g.a.createElement(P.a, { description: Q, label: X, link: ue }),
+                  g.a.createElement(k.a, { description: Q, label: X, link: ue }),
                   a.state.showCallout && a._renderCallout(),
                 )
               }),
@@ -962,11 +956,11 @@
                 return g.a.createElement(
                   T.a,
                   null,
-                  g.a.createElement(k.a, { label: K, subtext: a.props.managingAccount || '', withBottomBorder: !1 }),
-                  g.a.createElement(P.a, { label: J, link: ue }),
+                  g.a.createElement(F.a, { label: K, subtext: a.props.managingAccount || '', withBottomBorder: !1 }),
+                  g.a.createElement(k.a, { label: J, link: ue }),
                   a.state.showCallout && a._renderCallout(),
-                  g.a.createElement(F.a, null),
-                  g.a.createElement(j.a, { color: 'red500', label: q, onPress: a._handleToggleDisableConfirmation }),
+                  g.a.createElement(j.a, null),
+                  g.a.createElement(x.a, { color: 'red500', label: q, onPress: a._handleToggleDisableConfirmation }),
                 )
               }),
               m()(l()(a), '_renderDisconnectConfirmation', function () {
@@ -990,9 +984,9 @@
                   t = a.state.showDisableConfirmation
                 return g.a.createElement(
                   D.a,
-                  { title: Z },
+                  { title: G },
                   t && a._renderDisconnectConfirmation(),
-                  g.a.createElement(I.a, { description: G }),
+                  g.a.createElement(I.a, { description: Z }),
                   e,
                 )
               }),
@@ -1081,7 +1075,7 @@
       var de = H.a.create(function (e) {
         return { inlineCallout: { paddingLeft: e.spaces.space16, paddingRight: e.spaces.space16 } }
       })
-      t.default = Object(R.a)(O(se))
+      t.default = Object(R.a)(w(se))
     },
   },
 ])

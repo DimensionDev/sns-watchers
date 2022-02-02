@@ -5,7 +5,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'NotMyAccountScreen', function () {
-          return X
+          return J
         })
       a('OZaJ')
       var n = a('VrFO'),
@@ -50,13 +50,14 @@
           }
         }),
         H = a('jHSc'),
-        O = a('MWbm'),
-        S = a('t62R'),
-        T = a('rHpw'),
-        k = a('cmUU'),
-        C = a('3XMw'),
-        F = a.n(C)
-      function I(e) {
+        O = a('0zXz'),
+        S = a('MWbm'),
+        T = a('t62R'),
+        k = a('rHpw'),
+        C = a('cmUU'),
+        F = a('3XMw'),
+        I = a.n(F)
+      function j(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -77,43 +78,41 @@
           return d()(this, a)
         }
       }
-      var j = b.a.createElement(S.b, { color: 'gray700', weight: 'bold' }),
-        D = F.a.f7865ab5,
-        x = F.a.a35248e3,
-        L = F.a.f794a67b,
-        R = F.a.j79c0ff7,
-        q = F.a.j24c37b2,
-        P = b.a.createElement(F.a.I18NFormatMessage, { $i18n: 'a1c4702f' }, b.a.cloneElement(j, null, F.a.c97a594b)),
+      var D = b.a.createElement(T.b, { color: 'gray700', weight: 'bold' }),
+        x = I.a.f7865ab5,
+        L = I.a.a35248e3,
+        R = I.a.f794a67b,
+        q = I.a.j79c0ff7,
+        P = I.a.j24c37b2,
+        X = b.a.createElement(I.a.I18NFormatMessage, { $i18n: 'a1c4702f' }, b.a.cloneElement(D, null, I.a.c97a594b)),
         $ = b.a.createElement(
-          F.a.I18NFormatMessage,
+          I.a.I18NFormatMessage,
           { $i18n: 'g9aa2a63' },
           b.a.createElement(
-            S.b,
+            T.b,
             {
               link: 'https://help.twitter.com/managing-your-account/received-a-confirmation-email-thats-not-for-my-account',
             },
-            F.a.ee54f475,
+            I.a.ee54f475,
           ),
         ),
         B = b.a.createElement(
           b.a.Fragment,
           null,
-          b.a.createElement(O.a, { style: { paddingBottom: T.a.theme.spaces.space4 } }, P),
+          b.a.createElement(S.a, { style: { paddingBottom: k.a.theme.spaces.space4 } }, X),
           $,
         ),
-        K = F.a.fb46383b,
-        U = F.a.a6b9e23b,
-        X = (function (e) {
+        K = I.a.fb46383b,
+        U = I.a.a6b9e23b,
+        J = (function (e) {
           u()(a, e)
-          var t = I(a)
+          var t = j(a)
           function a(e) {
             var n
             return (
               r()(this, a),
               (n = t.call(this, e)),
-              E()(i()(n), '_renderHeader', function () {
-                return null
-              }),
+              E()(i()(n), '_renderHeader', O.a),
               E()(i()(n), '_handleErrors', function (e) {
                 var t,
                   a = n.props.createLocalApiErrorHandler,
@@ -178,46 +177,46 @@
                     a = e.screenName,
                     n = e.success
                   if (!t || !a) return null
-                  var r = n ? R({ emailAddress: t }) : D,
+                  var r = n ? q({ emailAddress: t }) : x,
                     c = n
                       ? (function (e, t) {
                           return b.a.createElement(
-                            F.a.I18NFormatMessage,
+                            I.a.I18NFormatMessage,
                             { $i18n: 'hf714442' },
-                            b.a.cloneElement(j, null, F.a.da9fdc87({ emailAddress: t })),
-                            b.a.cloneElement(j, null, F.a.e851165f({ screenName: e })),
+                            b.a.cloneElement(D, null, I.a.da9fdc87({ emailAddress: t })),
+                            b.a.cloneElement(D, null, I.a.e851165f({ screenName: e })),
                           )
                         })(a, t)
                       : (function (e, t) {
                           return b.a.createElement(
-                            F.a.I18NFormatMessage,
+                            I.a.I18NFormatMessage,
                             { $i18n: 'j1958650' },
-                            b.a.cloneElement(j, null, F.a.a2b8656b({ screenName: e })),
-                            b.a.cloneElement(j, null, F.a.gef8c0a9({ emailAddress: t })),
+                            b.a.cloneElement(D, null, I.a.a2b8656b({ screenName: e })),
+                            b.a.cloneElement(D, null, I.a.gef8c0a9({ emailAddress: t })),
                           )
                         })(a, t),
-                    o = n ? q : x,
-                    s = n ? void 0 : L,
+                    o = n ? P : L,
+                    s = n ? void 0 : R,
                     i = n ? this._redirectToHome : this._handleSubmit,
                     l = n ? void 0 : this._redirectToHome,
                     u = n
                       ? B
                       : (function (e) {
                           return b.a.createElement(
-                            F.a.I18NFormatMessage,
+                            I.a.I18NFormatMessage,
                             { $i18n: 'c1567ae1' },
-                            b.a.cloneElement(j, null, F.a.f3604c48({ screenName: e })),
+                            b.a.cloneElement(D, null, I.a.f3604c48({ screenName: e })),
                             b.a.createElement(
-                              S.b,
+                              T.b,
                               { link: 'https://twitter.com/settings/email_notifications' },
-                              F.a.d7572079,
+                              I.a.d7572079,
                             ),
                           )
                         })(a)
                   return b.a.createElement(
                     H.b,
                     { renderHeader: this._renderHeader },
-                    b.a.createElement(k.a, {
+                    b.a.createElement(C.a, {
                       actionLabel: o,
                       footer: u,
                       headline: r,
@@ -235,8 +234,8 @@
             a
           )
         })(b.a.Component),
-        J = w(X)
-      t.default = J
+        W = w(J)
+      t.default = W
     },
   },
 ])

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [161],
+  [162],
   {
     '+Aie': function (e, t, n) {
       var r
@@ -961,14 +961,16 @@
         re = n('+d3d')
       function oe(e) {
         var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 100,
-          n = o.a.useCallback(
-            Object(re.a)(function (t) {
-              if (e)
-                if (t) {
-                  var n = t.getBoundingClientRect()
-                  n && e(n)
-                } else e(null)
-            }, t),
+          n = o.a.useMemo(
+            function () {
+              return Object(re.a)(function (t) {
+                if (e)
+                  if (t) {
+                    var n = t.getBoundingClientRect()
+                    n && e(n)
+                  } else e(null)
+              }, t)
+            },
             [e, t],
           )
         return o.a.useCallback(
@@ -1444,38 +1446,6 @@
           return { encryptedReferer: n[0], referralType: n[1], encryptedReferralDetails: n[2] }
         }
       }
-    },
-    Ukpf: function (e, t, n) {
-      'use strict'
-      var r = {
-        inject: function (e) {
-          var t = e.callback,
-            n = e.scriptId,
-            r = e.src
-          if (document.getElementById(n)) t && t()
-          else {
-            var o = document.createElement('script')
-            ;(o.src = r),
-              (o.id = n),
-              (o.async = !0),
-              (o.defer = !0),
-              document.body.appendChild(o),
-              (o.onload = function () {
-                t && t()
-              })
-          }
-        },
-        replace: function (e) {
-          var t,
-            n = e.callback,
-            o = e.scriptId,
-            i = e.src,
-            a = document.getElementById(o)
-          a && (null === (t = a.parentNode) || void 0 === t || t.removeChild(a))
-          r.inject({ callback: n, scriptId: o, src: i })
-        },
-      }
-      t.a = r
     },
     XTym: function (e, t, n) {
       'use strict'

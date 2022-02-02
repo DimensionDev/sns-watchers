@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [10],
+  [9],
   {
     '4e/K': function (e, t, n) {
       'use strict'
@@ -91,11 +91,6 @@
             return (
               r()(this, n),
               (a = t.call(this, e, o)),
-              y()(
-                c()(a),
-                '_shouldUseHeightOnDropdown',
-                a.context.featureSwitches.isTrue('responsive_web_app_bar_scroll_enabled'),
-              ),
               y()(c()(a), '_withNewTypeaheadUI', !1),
               y()(c()(a), '_render', function (e) {
                 var t = e.windowWidth,
@@ -207,12 +202,7 @@
                     ? V.modalDropdown
                     : [
                         V.dropdown,
-                        !S && E && j
-                          ? [
-                              Object(q.d)(j),
-                              a._shouldUseHeightOnDropdown && { height: 'calc(100vh - '.concat(j, 'px)') },
-                            ]
-                          : null,
+                        !S && E && j ? [Object(q.d)(j), { height: 'calc(100vh - '.concat(j, 'px)') }] : null,
                         (S || p) && V.wideModeDropdown,
                         a._withNewTypeaheadUI && d && M(e),
                         p && V.shortModeDropdown,

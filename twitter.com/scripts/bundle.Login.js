@@ -32,21 +32,21 @@
         w = n('RqPI'),
         E = n('hqKg'),
         S = n('3XMw'),
-        C = n.n(S),
-        L = n('aTAq'),
+        L = n.n(S),
+        C = n('aTAq'),
         R = n('G6rE'),
         O = n('oEGd'),
         k = {
-          BadSessionLoginVerification: C.a.f8ad0091,
-          ExpiredLoginVerification: C.a.h2c7767e,
-          OverLimitLoginVerificationAttempts: C.a.e83047c2,
-          OfflineCodeSync: C.a.g4b108ee,
+          BadSessionLoginVerification: L.a.f8ad0091,
+          ExpiredLoginVerification: L.a.h2c7767e,
+          OverLimitLoginVerificationAttempts: L.a.e83047c2,
+          OfflineCodeSync: L.a.g4b108ee,
         },
         x = Object(E.createSelector)(
           function (e, t) {
             return (
               w.i(e) ||
-              (Object(L.a)(t.location.query.login_verification_error)
+              (Object(C.a)(t.location.query.login_verification_error)
                 ? k[t.location.query.login_verification_error]
                 : void 0)
             )
@@ -54,7 +54,7 @@
           function (e, t) {
             return (
               t.location.query &&
-              (Object(L.a)(t.location.query.username_or_email) ? t.location.query.username_or_email : void 0)
+              (Object(C.a)(t.location.query.username_or_email) ? t.location.query.username_or_email : void 0)
             )
           },
           w.r,
@@ -89,10 +89,10 @@
         ),
         P = { scribeAction: _.c, scribePageImpression: _.d },
         D = Object(O.g)(x, P),
-        j = (n('2G9S'), n('7x/C'), n('DZ+c'), n('MvUL'), n('KqXw'), n('ho0z'), n('SrtL')),
-        F = n('lUZE'),
-        I = n('8jkQ'),
-        T = n('yoO3'),
+        F = (n('2G9S'), n('7x/C'), n('DZ+c'), n('MvUL'), n('KqXw'), n('ho0z'), n('SrtL')),
+        j = n('lUZE'),
+        T = n('8jkQ'),
+        I = n('yoO3'),
         B = 'LoginPage_Continue_Button',
         U = n('sgih'),
         A = n('mw9i'),
@@ -122,11 +122,11 @@
           return p()(this, n)
         }
       }
-      var X = C.a.d98c140e,
-        W = C.a.e55188f0,
-        J = C.a.d55d8fe1,
-        G = C.a.c3d89aca,
-        Y = C.a.g806008e,
+      var X = L.a.d98c140e,
+        W = L.a.e55188f0,
+        J = L.a.d55d8fe1,
+        G = L.a.c3d89aca,
+        Y = L.a.g806008e,
         K = (function (e) {
           u()(n, e)
           var t = q(n)
@@ -142,7 +142,7 @@
                   a = t.history,
                   r = t.location.query,
                   o = r && r.redirect_after_login ? r.redirect_after_login.toString() : void 0,
-                  i = o && I.b.makeSafeForTwitterRedirect(o)
+                  i = o && T.b.makeSafeForTwitterRedirect(o)
                 o && i
                   ? (n.scribeAction('redirect'), window.location.assign(i))
                   : (n.scribeAction('redirecthome'), a.replace('/home'))
@@ -163,16 +163,16 @@
                 value: function () {
                   var e = this.props.loggedInUser
                   return y.a.createElement(
-                    T.a,
+                    I.a,
                     null,
-                    y.a.createElement(j.a, { title: X }),
+                    y.a.createElement(F.a, { title: X }),
                     y.a.createElement(
                       U.a,
                       { type: 'full' },
                       y.a.createElement(
                         A.a,
                         { style: [Oe.root, Oe.center], withGutter: !0 },
-                        y.a.createElement(F.a, { style: Oe.icon }),
+                        y.a.createElement(j.a, { style: Oe.icon }),
                         y.a.createElement(
                           z.b,
                           {
@@ -285,15 +285,15 @@
           return p()(this, n)
         }
       }
-      var be = C.a.d1091f50,
-        ye = C.a.eab9ceb1,
-        ve = C.a.g2b8acd4,
-        _e = C.a.bdc9d8a2,
-        we = C.a.c2ab20ab,
-        Ee = C.a.id312f0a,
-        Se = C.a.caac124e,
-        Ce = C.a.ab77e0b8,
-        Le = { page: 'login' },
+      var be = L.a.d1091f50,
+        ye = L.a.eab9ceb1,
+        ve = L.a.g2b8acd4,
+        _e = L.a.bdc9d8a2,
+        we = L.a.c2ab20ab,
+        Ee = L.a.id312f0a,
+        Se = L.a.caac124e,
+        Le = L.a.ab77e0b8,
+        Ce = { page: 'login' },
         Re = (function (e) {
           u()(n, e)
           var t = ge(n)
@@ -305,9 +305,9 @@
               g()(s()(o), '_recaptchaEnabled', !1),
               g()(s()(o), '_renderLogin', function () {
                 return y.a.createElement(
-                  T.a,
+                  I.a,
                   null,
-                  y.a.createElement(j.a, { title: _e }),
+                  y.a.createElement(F.a, { title: _e }),
                   y.a.createElement(ce.a, { style: [Oe.root, Oe.container] }, o._renderContent()),
                 )
               }),
@@ -334,7 +334,7 @@
                   y.a.createElement(
                     ce.a,
                     { style: Oe.marginHorizontal },
-                    y.a.createElement(F.a, { style: Oe.icon }),
+                    y.a.createElement(j.a, { style: Oe.icon }),
                     y.a.createElement(
                       z.b,
                       {
@@ -419,7 +419,7 @@
                   a = t.shouldDisablePhoneLogin,
                   r = t.shouldDisableUsernameLogin
                 return (
-                  r ? (e = Ee) : a ? (e = Ce) : n && (e = Se),
+                  r ? (e = Ee) : a ? (e = Le) : n && (e = Se),
                   a || n || r ? y.a.createElement(z.b, { color: 'magenta500' }, e) : null
                 )
               }),
@@ -448,12 +448,12 @@
               }),
               g()(s()(o), '_handleRecaptchaStateChange', function (e) {
                 var t = e ? 'passed' : 'expired'
-                ;(0, o.props.scribeAction)(fe(fe({}, Le), {}, { section: 'recaptcha', action: t })),
+                ;(0, o.props.scribeAction)(fe(fe({}, Ce), {}, { section: 'recaptcha', action: t })),
                   e && o.setState({ recaptchaSuccessToken: e })
               }),
               g()(s()(o), '_handleRecaptchaTermAccepted', function () {
                 ;(0, o.props.scribeAction)(
-                  fe(fe({}, Le), {}, { section: 'recaptcha', component: 'terms', action: 'accepted' }),
+                  fe(fe({}, Ce), {}, { section: 'recaptcha', component: 'terms', action: 'accepted' }),
                 ),
                   o.setState({ recaptchaTermAccepted: !0 })
               }),
@@ -549,7 +549,7 @@
           gutter: { marginVertical: e.componentDimensions.gutterVertical },
         }
       })
-      t.default = Object(pe.c)(Le)(D(Re))
+      t.default = Object(pe.c)(Ce)(D(Re))
     },
     '6oVL': function (e, t, n) {
       'use strict'
@@ -575,18 +575,18 @@
         w = n('3XMw'),
         E = n.n(w),
         S = n('cnVF'),
-        C = n('Ukpf'),
-        L = n('BTou'),
+        L = n('Ukpf'),
+        C = n('BTou'),
         R = n('mrHL'),
         O = 'LoginForm_Login_Button',
         k = n('fEA7'),
         x = n.n(k),
         P = n('MWbm'),
         D = n('Irs7'),
-        j = n('v6aA'),
-        F = n('/yvb'),
-        I = n('rHpw')
-      function T(e) {
+        F = n('v6aA'),
+        j = n('/yvb'),
+        T = n('rHpw')
+      function I(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
           if (Reflect.construct.sham) return !1
@@ -610,7 +610,7 @@
       var B = E.a.e919c3bc,
         U = (function (e) {
           p()(n, e)
-          var t = T(n)
+          var t = I(n)
           function n() {
             var e
             i()(this, n)
@@ -622,7 +622,7 @@
                 var t = e.props,
                   n = t.analytics,
                   a = t.onSubmit
-                if ((n.scribe({ action: 'submit' }), L.a.flushHTMLCache(), e._setLoginCookie(), a))
+                if ((n.scribe({ action: 'submit' }), C.a.flushHTMLCache(), e._setLoginCookie(), a))
                   return a(e._form.elements), !1
               }),
               y()(u()(e), '_handleSubmitButtonClick', function () {
@@ -653,7 +653,7 @@
               {
                 key: 'componentDidMount',
                 value: function () {
-                  C.a.inject({ scriptId: 'jsInstLibrary', src: 'https://twitter.com/i/js_inst?c_name=ui_metrics' })
+                  L.a.inject({ scriptId: 'jsInstLibrary', src: 'https://twitter.com/i/js_inst?c_name=ui_metrics' })
                 },
               },
               {
@@ -696,7 +696,7 @@
                             P.a,
                             { style: o && A.loginButtonContainer },
                             _.a.createElement(
-                              F.a,
+                              j.a,
                               {
                                 disabled: c,
                                 onPress: this._handleSubmitButtonClick,
@@ -727,7 +727,7 @@
             n
           )
         })(_.a.Component)
-      y()(U, 'contextType', j.a),
+      y()(U, 'contextType', F.a),
         y()(U, 'defaultProps', {
           autoSubmit: !1,
           formActionUrl: '/sessions',
@@ -736,7 +736,7 @@
           submitButtonLabel: B,
           submitButtonType: 'brandFilled',
         })
-      var A = I.a.create(function (e) {
+      var A = T.a.create(function (e) {
         return {
           horizontalFields: { flexDirection: 'row', justifyContent: 'center', alignItems: 'stretch' },
           loginForm: { width: '100%' },
@@ -773,8 +773,8 @@
           w = n('t62R'),
           E = n('/yvb'),
           S = n('rHpw'),
-          C = n('3XMw'),
-          L = n.n(C)
+          L = n('3XMw'),
+          C = n.n(L)
         function R(e) {
           var t = (function () {
             if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -796,10 +796,10 @@
             return p()(this, n)
           }
         }
-        var O = L.a.c1df579e,
-          k = L.a.b60eba9e,
-          x = L.a.ba939777,
-          P = L.a.bc6efc72,
+        var O = C.a.c1df579e,
+          k = C.a.b60eba9e,
+          x = C.a.ba939777,
+          P = C.a.bc6efc72,
           D = (function (t) {
             u()(a, t)
             var n = R(a)
@@ -833,10 +833,10 @@
                     return y.a.createElement(
                       _.a,
                       null,
-                      y.a.createElement(w.b, { style: j.guideCopy }, k),
+                      y.a.createElement(w.b, { style: F.guideCopy }, k),
                       y.a.createElement(
                         _.a,
-                        { style: j.button },
+                        { style: F.button },
                         y.a.createElement(
                           E.a,
                           { disabled: e, onPress: this._handleConsent, size: 'xLarge', type: 'brandOutlined' },
@@ -847,7 +847,7 @@
                         w.b,
                         { color: 'gray700' },
                         y.a.createElement(
-                          L.a.I18NFormatMessage,
+                          C.a.I18NFormatMessage,
                           { $i18n: 'hc37d3ba' },
                           y.a.createElement(w.b, { link: 'https://policies.google.com/privacy' }, P),
                         ),
@@ -865,13 +865,13 @@
                       e
                         ? y.a.createElement(
                             _.a,
-                            { style: j.recaptchaTitle },
-                            y.a.createElement(w.b, { style: j.guideCopy }, x),
+                            { style: F.recaptchaTitle },
+                            y.a.createElement(w.b, { style: F.guideCopy }, x),
                           )
                         : null,
                       y.a.createElement(
                         _.a,
-                        { style: j.container },
+                        { style: F.container },
                         y.a.createElement(v.a, {
                           onChange: this._handlePass,
                           sitekey: '6LfOP30UAAAAAFBC4jbzu890rTdXBXBNHx9eVZEX',
@@ -892,7 +892,7 @@
               a
             )
           })(y.a.Component),
-          j = S.a.create(function (e) {
+          F = S.a.create(function (e) {
             return {
               container: { margin: 'auto', transitionProperty: 'opacity', transitionDelay: '2s' },
               button: { paddingVertical: e.spaces.space20 },
@@ -901,38 +901,6 @@
             }
           })
       }.call(this, n('yLpj')))
-    },
-    Ukpf: function (e, t, n) {
-      'use strict'
-      var a = {
-        inject: function (e) {
-          var t = e.callback,
-            n = e.scriptId,
-            a = e.src
-          if (document.getElementById(n)) t && t()
-          else {
-            var r = document.createElement('script')
-            ;(r.src = a),
-              (r.id = n),
-              (r.async = !0),
-              (r.defer = !0),
-              document.body.appendChild(r),
-              (r.onload = function () {
-                t && t()
-              })
-          }
-        },
-        replace: function (e) {
-          var t,
-            n = e.callback,
-            r = e.scriptId,
-            o = e.src,
-            i = document.getElementById(r)
-          i && (null === (t = i.parentNode) || void 0 === t || t.removeChild(i))
-          a.inject({ callback: n, scriptId: r, src: o })
-        },
-      }
-      t.a = a
     },
     XJCT: function (e, t, n) {
       'use strict'
@@ -986,8 +954,8 @@
         },
         E = d.a.e1ec8c17,
         S = d.a.d0a750f2,
-        C = d.a.e2dd29b5,
-        L = d.a.jb4eb245,
+        L = d.a.e2dd29b5,
+        C = d.a.jb4eb245,
         R = function (e) {
           var t = e.autoFocus,
             n = e.label,
@@ -998,7 +966,7 @@
             u = s.a.useContext(_.a).featureSwitches,
             d = E
           return (
-            c ? (d = S) : o ? (d = L) : a && (d = C),
+            c ? (d = S) : o ? (d = C) : a && (d = L),
             s.a.createElement(m, r()({}, l, { autoFocus: t, label: n || d, name: h.username, type: w(u) }))
           )
         }
