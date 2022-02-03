@@ -1066,7 +1066,7 @@
             r = e.trendResults
           return a.a.createElement(
             p.a,
-            { style: [j.searchBoxTrendsContainer, 'tablet' === n && j.searchBoxTrendsContainerThin] },
+            { style: [j.searchBoxTrendsContainerThin, 'desktop' === n && j.searchBoxTrendsContainer] },
             a.a.createElement(
               p.a,
               { style: j.searchBox },
@@ -1095,8 +1095,9 @@
               marginHorizontal: e.spaces.space16,
               alignItems: 'center',
               maxWidth: 'calc('.concat(e.spaces.space48, ' * 10)'),
+              minHeight: 'calc('.concat(e.spaces.space12, ' * 10)'),
             },
-            searchBoxTrendsContainerThin: { maxWidth: 'calc('.concat(e.spaces.space36, ' * 10)') },
+            searchBoxTrendsContainerThin: { maxWidth: 'calc('.concat(e.spaces.space36, ' * 10)'), width: '100%' },
             searchNavBar: {
               flexDirection: 'row',
               alignItems: 'center',
@@ -1104,7 +1105,7 @@
               margin: 'calc('.concat(e.spaces.space40, ' + ').concat(e.spaces.space2, ')'),
             },
             searchNavButtons: { flexDirection: 'row' },
-            searchTrend: { marginTop: e.spaces.space12, marginRight: e.spaces.space8 },
+            searchTrend: { marginTop: e.spaces.space12, marginRight: e.spaces.space16 },
             searchTrends: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center' },
             searchTrendsLeft: { justifyContent: 'flex-start' },
             twitterIconSearch: {
@@ -1239,6 +1240,7 @@
         ae = 360,
         oe = d.a.create(function (e) {
           return {
+            containerThin: { width: 'calc(('.concat(e.spaces.space28, ' + ').concat(e.spaces.space2, ') * 10)') },
             ctaButton: { maxWidth: ''.concat(V.a, 'px'), flex: 1 },
             ctaText: { marginBottom: e.spaces.space32 },
             ctaTitle: {
@@ -1263,8 +1265,8 @@
             gapContainer: { marginVertical: e.spaces.space4, maxWidth: ''.concat(V.a, 'px'), width: ae },
             header: { marginHorizontal: e.spaces.space16, maxWidth: 'calc('.concat(e.spaces.space48, ' * 10)') },
             headerThin: { maxWidth: ae },
-            splitContainer: { minHeight: 'auto', flexGrow: 1, flexDirection: 'column-reverse' },
-            splitContainerWide: { flex: 'auto', flexDirection: 'row-reverse' },
+            splitContainer: { minHeight: 'auto', flexGrow: 1, flexDirection: 'column' },
+            splitContainerWide: { flex: 'auto', flexDirection: 'row' },
             splitItem: {
               width: '50%',
               alignItems: 'center',
@@ -1286,31 +1288,32 @@
             o = e.trendResults,
             i = a.a.useContext(z.a).featureSwitches,
             u = Object(G.c)(i) === G.a.AcceptAllCookies,
-            f = a.a.useState(u),
-            h = N()(f, 2),
-            y = h[0],
-            b = h[1],
-            g = a.a.useState(J.a.SignUp),
-            S = N()(g, 2),
-            O = S[0],
-            w = S[1],
-            E = Object(v.b)(),
+            d = a.a.useState(u),
+            f = N()(d, 2),
+            h = f[0],
+            y = f[1],
+            b = a.a.useState(J.a.SignUp),
+            g = N()(b, 2),
+            S = g[0],
+            O = g[1],
+            w = Object(v.b)(),
+            E = 'tablet' !== n && 'desktop' !== n,
             k = function () {
-              b(!0)
+              y(!0)
             },
             C = function () {
-              E.scribe(
+              w.scribe(
                 Y(Y({}, r), {}, { section: 'front', component: 'signup_callout', element: 'form', action: 'signup' }),
               )
             },
             I = function () {
-              E.scribe(
+              w.scribe(
                 Y(Y({}, r), {}, { section: 'front', component: 'signup_callout', element: 'form', action: 'login' }),
               )
             },
             P =
               (function () {
-                switch (O) {
+                switch (S) {
                   case J.a.SignUp:
                     return {
                       loginSignUpButtonLabel: te,
@@ -1330,12 +1333,12 @@
             T = P.loginSignUpButtonLabel,
             B = P.loginSignUpButtonLink,
             D = function () {
-              switch (O) {
+              switch (S) {
                 case J.a.SignUp:
                   return (
                     (e = {
                       onPress: function () {
-                        return w(J.a.LogIn)
+                        return O(J.a.LogIn)
                       },
                     }.onPress),
                     a.a.createElement(
@@ -1354,7 +1357,7 @@
                     )
                   })({
                     onPress: function () {
-                      return w(J.a.SignUp)
+                      return O(J.a.SignUp)
                     },
                   })
                 default:
@@ -1365,7 +1368,7 @@
             L = function () {
               return a.a.createElement(
                 p.a,
-                { style: oe.footerContainer },
+                { style: [oe.footerContainer, E && oe.containerThin] },
                 a.a.createElement(_.b, { color: 'gray700', size: 'subtext2', style: oe.ctaText }, J.c),
                 a.a.createElement(
                   _.b,
@@ -1380,22 +1383,22 @@
                 null,
                 a.a.createElement(W.a, {
                   buttonSize: 'medium',
-                  buttonState: O,
-                  customWidth: '360',
-                  isCookieCompliant: t ? y : void 0,
+                  buttonState: S,
+                  customWidth: E ? '300' : '360',
+                  isCookieCompliant: t ? h : void 0,
                   onPress: k,
-                  style: [oe.ctaButton, oe.ssoButtonStyles],
+                  style: [oe.ctaButton, oe.ssoButtonStyles, E && oe.containerThin],
                 }),
                 a.a.createElement(q.a, {
                   buttonSize: 'medium',
-                  buttonState: O,
-                  style: [oe.ctaButton, oe.ssoButtonStyles, { marginBottom: 0 }],
+                  buttonState: S,
+                  style: [oe.ctaButton, oe.ssoButtonStyles, { marginBottom: 0 }, E && oe.containerThin],
                 }),
                 a.a.createElement(
                   p.a,
-                  { style: oe.gapContainer },
+                  { style: [oe.gapContainer, E && oe.containerThin] },
                   a.a.createElement(Q.a, {
-                    color: d.a.theme.colors.nestedBorderColor,
+                    borderColor: 'nestedBorderColor',
                     label: a.a.createElement(_.b, { children: ee }),
                   }),
                 ),
@@ -1408,7 +1411,7 @@
                     link: B,
                     onPress: R,
                     size: 'medium',
-                    style: [oe.ctaButton, oe.ssoButtonStyles],
+                    style: [oe.ctaButton, oe.ssoButtonStyles, E && oe.containerThin],
                     testID: K.a.signupButton,
                   },
                   T,
@@ -1437,17 +1440,11 @@
                 {
                   style: [
                     oe.splitItem,
-                    oe.splitItemGray,
                     'desktop' !== n && oe.splitItemMobile,
                     'tablet' === n && oe.splitItemTablet,
+                    { zIndex: '1' },
                   ],
                 },
-                a.a.createElement(F, null),
-                a.a.createElement(L, null),
-              ),
-              a.a.createElement(
-                p.a,
-                { style: [oe.splitItem, 'desktop' !== n && oe.splitItemMobile, 'tablet' === n && oe.splitItemTablet] },
                 a.a.createElement(
                   p.a,
                   { style: [oe.header, 'tablet' === n && oe.headerThin] },
@@ -1463,6 +1460,19 @@
                   ),
                 ),
                 a.a.createElement(x, { alignment: 'left', deviceSize: n, trendResults: o }),
+              ),
+              a.a.createElement(
+                p.a,
+                {
+                  style: [
+                    oe.splitItem,
+                    oe.splitItemGray,
+                    'desktop' !== n && oe.splitItemMobile,
+                    'tablet' === n && oe.splitItemTablet,
+                  ],
+                },
+                a.a.createElement(F, null),
+                a.a.createElement(L, null),
               ),
             ),
             a.a.createElement(A, null),
@@ -2235,7 +2245,7 @@
       var xe = _e.forwardRef(Pe),
         je = n('oQhu'),
         Re = n('hiGS'),
-        Te = n('VwDm')
+        Te = n('Gfoi')
       function Be(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -2328,7 +2338,7 @@
         He = ae.a.create(function (e) {
           return {
             bodyColumn: { alignItems: 'center', flexDirection: 'row', justifyContent: 'space-between' },
-            searchIcon: { marginRight: e.spaces.space12 },
+            searchIcon: { marginRight: e.spaces.space12, borderWidth: 0, backgroundColor: 'none' },
           }
         }),
         Ue = Me,

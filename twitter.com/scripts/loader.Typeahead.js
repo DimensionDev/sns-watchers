@@ -497,7 +497,7 @@
       var De = ge.forwardRef(ke),
         xe = r('oQhu'),
         je = r('hiGS'),
-        Te = r('VwDm')
+        Te = r('Gfoi')
       function Pe(e) {
         var t = (function () {
           if ('undefined' == typeof Reflect || !Reflect.construct) return !1
@@ -590,7 +590,7 @@
         Me = ae.a.create(function (e) {
           return {
             bodyColumn: { alignItems: 'center', flexDirection: 'row', justifyContent: 'space-between' },
-            searchIcon: { marginRight: e.spaces.space12 },
+            searchIcon: { marginRight: e.spaces.space12, borderWidth: 0, backgroundColor: 'none' },
           }
         }),
         Ne = He,

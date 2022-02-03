@@ -30,16 +30,16 @@
           n = e.count,
           a = e.maxCount,
           u = a - n,
-          c = Object(r.a)(u, a),
-          d = i.a.createElement(o.a, {
+          d = Object(r.a)(u, a),
+          c = i.a.createElement(o.a, {
             accessibilityLabel: t,
             color: 'primary',
-            progress: c,
+            progress: d,
             size: 20,
             strokeWidth: 'thick',
             style: l.progressCircle,
           })
-        return i.a.createElement(s.a, { style: l.root }, d)
+        return i.a.createElement(s.a, { style: l.root }, c)
       }
     },
     mL9d: function (e, t, n) {
@@ -55,32 +55,43 @@
         u = n('qlwE'),
         s = n('rxPX'),
         l = n('5oBF'),
-        c = Object(s.a)()
+        d = Object(s.a)()
           .propsFromState(function () {
             return { previewTweet: l.d, undoTweetSettings: u.p }
           })
           .adjustStateProps(function (e) {
             var t,
               n,
-              a = e.previewTweet,
-              i = e.undoTweetSettings,
-              r = null == a ? void 0 : a.timeToSend,
-              o = null == a || null === (t = a.previewData) || void 0 === t ? void 0 : t.communityIdValue,
-              u = null == a || null === (n = a.previewData) || void 0 === n ? void 0 : n.inReplyToStatus,
-              s = i.durationSecs || l.a
+              a,
+              i,
+              r = e.previewTweet,
+              o = e.undoTweetSettings,
+              u = null == r ? void 0 : r.timeToSend,
+              s = null == r || null === (t = r.previewData) || void 0 === t ? void 0 : t.communityIdValue,
+              d = null == r || null === (n = r.previewData) || void 0 === n ? void 0 : n.inReplyToStatus,
+              c =
+                null == r ||
+                null === (a = r.previewData.sendData[0]) ||
+                void 0 === a ||
+                null === (i = a.quotedStatus) ||
+                void 0 === i
+                  ? void 0
+                  : i.id_str,
+              p = o.durationSecs || l.a
             return {
-              timeToSend: r,
-              inReplyToStatusId: null == u ? void 0 : u.id_str,
-              undoPeriod: s,
-              communityIdValue: o,
+              timeToSend: u,
+              inReplyToStatusId: null == d ? void 0 : d.id_str,
+              undoPeriod: p,
+              communityIdValue: s,
+              quotedStatusId: c,
             }
           })
           .propsFromActions(function () {
             return { undoTweet: l.h, sendNow: l.g }
           })
           .withAnalytics({ page: 'undo_tweet_details', section: 'timeline' }),
-        d = n('3XMw'),
-        p = n.n(d)
+        c = n('3XMw'),
+        p = n.n(c)
       var m = n('Ty5D'),
         w = n('MWbm'),
         f = n('t62R'),
@@ -88,38 +99,39 @@
         b = n('/yvb'),
         v = n('rHpw'),
         g = p.a.bc2ceaf2,
-        h = p.a.gf5e9ea6,
-        T = p.a.j4c40da3,
-        S = p.a.b23688c7,
+        S = p.a.gf5e9ea6,
+        h = p.a.j4c40da3,
+        T = p.a.b23688c7,
         E = function (e) {
           var t = Object(m.g)(),
             n = e.analytics,
             a = e.communityIdValue,
             r = e.inReplyToStatusId,
             u = e.previewTweetId,
-            s = e.sendNow,
-            l = e.timeToSend,
+            s = e.quotedStatusId,
+            l = e.sendNow,
+            d = e.timeToSend,
             c = e.undoPeriod,
-            d = e.undoTweet,
-            p = o.a.useState(0),
-            v = i()(p, 2),
-            E = v[0],
-            x = v[1],
+            p = e.undoTweet,
+            v = o.a.useState(0),
+            E = i()(v, 2),
+            W = E[0],
+            x = E[1],
             _ = o.a.useState(),
-            C = i()(_, 2),
-            I = C[0],
-            R = C[1],
-            D = o.a.useState(!1),
-            j = i()(D, 2),
-            k = j[0],
-            F = j[1]
+            D = i()(_, 2),
+            C = D[0],
+            R = D[1],
+            j = o.a.useState(!1),
+            k = i()(j, 2),
+            F = k[0],
+            L = k[1]
           o.a.useEffect(
             function () {
-              'number' == typeof l && x(Math.round(l - Date.now()))
+              'number' == typeof d && x(Math.round(d - Date.now()))
             },
-            [l],
+            [d],
           )
-          var L = (function (e) {
+          var P = (function (e) {
             var t = o.a.useState(0),
               n = i()(t, 2),
               a = n[0],
@@ -143,9 +155,9 @@
               ),
               a
             )
-          })(E)
-          if (E <= 0 || !E) return null
-          return 'number' != typeof l
+          })(W)
+          if (W <= 0 || !W) return null
+          return 'number' != typeof d
             ? null
             : o.a.createElement(
                 w.a,
@@ -162,28 +174,28 @@
                         : n.width) || 0,
                     )
                   },
-                  style: W.root,
+                  style: I.root,
                 },
                 o.a.createElement(
                   w.a,
-                  { style: W.timer },
+                  { style: I.timer },
                   o.a.createElement(
                     w.a,
-                    { style: W.timerWrapper },
-                    o.a.createElement(y.a, { accessibilityLabel: S, count: L, maxCount: 1 }),
+                    { style: I.timerWrapper },
+                    o.a.createElement(y.a, { accessibilityLabel: T, count: P, maxCount: 1 }),
                   ),
-                  !I || I < 470 ? null : o.a.createElement(f.b, { style: W.sendingLabel, weight: 'bold' }, g),
+                  !C || C < 470 ? null : o.a.createElement(f.b, { style: I.sendingLabel, weight: 'bold' }, g),
                 ),
                 o.a.createElement(
                   w.a,
-                  { style: W.buttonWrapper },
+                  { style: I.buttonWrapper },
                   o.a.createElement(
                     b.a,
                     {
-                      disabled: k,
+                      disabled: F,
                       onClick: function () {
-                        s(u),
-                          F(!0),
+                        l(u),
+                          L(!0),
                           n.scribe({
                             element: 'send_now',
                             action: 'send_now',
@@ -194,7 +206,7 @@
                       style: { marginRight: 4 },
                       type: 'brandText',
                     },
-                    T,
+                    h,
                   ),
                   o.a.createElement(
                     b.a,
@@ -205,21 +217,26 @@
                           action: 'undo',
                           data: { subscription_details: { draft_id: u, undo_period: c } },
                         }),
-                          d(u),
+                          p(u),
                           t.push({
                             pathname: '/compose/tweet',
-                            state: { previewTweetId: u, inReplyToStatusId: r, selectedCommunityId: a },
+                            state: {
+                              previewTweetId: u,
+                              inReplyToStatusId: r,
+                              selectedCommunityId: a,
+                              quotedStatusId: s,
+                            },
                           })
                       },
                       size: 'xSmall',
                       type: 'brandFilled',
                     },
-                    h,
+                    S,
                   ),
                 ),
               )
         },
-        W = v.a.create(function (e) {
+        I = v.a.create(function (e) {
           return {
             root: {
               marginTop: e.spaces.space12,
@@ -236,8 +253,8 @@
             buttonWrapper: { display: 'flex', flexDirection: 'row' },
           }
         }),
-        x = c(E)
-      t.default = x
+        W = d(E)
+      t.default = W
     },
   },
 ])

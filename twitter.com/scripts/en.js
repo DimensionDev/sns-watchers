@@ -635,11 +635,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'You can only pin ' + e.count + ' conversation' + n(e.count, '', 's')
           }),
           a('a551bf7d', 'You’ll need to unpin one conversation to pin another.'),
+          a('d98e066b', 'Conversation pinned.'),
+          a('j302dba7', 'Conversation unpinned.'),
           a('e5b0063d', function (e) {
             return 'Timeline: ' + e.title
           }),
-          a('e4f6bd9e', 'Oops, something went wrong. Please try again later.'),
-          a('e4ff75a9', 'Something went wrong. Check your connection and try again.'),
+          a('cb367657', 'Conversation failed to pin. Try again.'),
+          a('ie9a7e48', 'Conversation failed to pin. Check your connection and try again.'),
+          a('hd3927c6', 'Conversation failed to unpin. Try again.'),
+          a('f1ac0968', 'Conversation failed to unpin. Check your connection and try again.'),
           a('b9dae4f4', 'Try a different search term'),
           a('e7fb2027', 'No more results'),
           a('b92a21d8', function (e) {
@@ -1134,18 +1138,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f178e38c', 'Upcoming'),
           a('b6da6b01', 'Live'),
           a('i9f615c8', 'Final'),
-          a('f897267a', 'Postponed'),
-          a('f93c4b69', 'Cancelled'),
+          a('f897267a', 'Postponed')
+        a('f93c4b69', 'Cancelled'),
           a('ca5d0a81', 'Edit List'),
           a('ec08efe3', function (e) {
             return '' + e.formattedCount
           }),
           a('h9f711f0', function (e) {
             return 'Follower' + n(e.count, '', 's')
-          })
-        a('ibd0106d', function (e) {
-          return '' + e.formattedCount
-        }),
+          }),
+          a('ibd0106d', function (e) {
+            return '' + e.formattedCount
+          }),
           a('cface2d0', function (e) {
             return 'Member' + n(e.count, '', 's')
           }),
@@ -2229,15 +2233,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('de43eaf2', 'Undo Tweet'),
           a('f6e88161', 'Labs'),
           a('ib35705d', 'Manage Subscription'),
-          a('e95b9448', 'General'),
-          a('f458a3b1', 'Privacy'),
+          a('e95b9448', 'General')
+        a('f458a3b1', 'Privacy'),
           a(
             'ja94f34d',
             'These settings apply to this browser or device while you’re logged out. They don’t have any effect when you’re logged in.',
           ),
           a('gd4302ec', 'Manage your cookie experience on Twitter.'),
-          a('bdc6f5b7', 'Your account')
-        a('bdfa2b8c', 'Additional resources'),
+          a('bdc6f5b7', 'Your account'),
+          a('bdfa2b8c', 'Additional resources'),
           a('df483b47', 'Feature switches'),
           a('e435cdff', 'Try searching for password reset, notifications, etc'),
           a('c170a564', 'The term you entered did not bring up any results. Try a different search term.'),
@@ -3499,12 +3503,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('idca4741', 'See your account information like your phone number and email address.'),
           a('b6ded35d', 'Change your password at any time.'),
-          a('cce24bf3', 'Get insights into the type of information stored for your account.'),
-          a('i203df96', 'Find out how you can deactivate your account.'),
+          a('cce24bf3', 'Get insights into the type of information stored for your account.')
+        a('i203df96', 'Find out how you can deactivate your account.'),
           a('ib6f1694', 'Account creation'),
           a('h3290871', 'Verified'),
-          a('hbd12156', 'Request Verification')
-        a('f70d5780', 'Yes.'),
+          a('hbd12156', 'Request Verification'),
+          a('f70d5780', 'Yes.'),
           a('dc62d3c6', 'No.'),
           a('ab22c36c', 'Disabled'),
           a('j3a1cff6', 'Enabled'),
@@ -3976,12 +3980,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a4ed9071', 'Add an introduction...'),
           a('j3253319', 'Take a minute to say hello'),
           a('h1e80993', 'Make a good first impression with a quick intro message for your potential Super Followers.'),
-          a('ab793af9', 'Super Follower preview'),
-          a('fb278c81', 'What’s this preview?'),
-          a(
-            'e6b60e94',
-            'This is what people see before they Super Follow you. Tweak and edit your descriptions until you’ve got them just right.',
-          ),
           a('b4a93a91', 'Super Follows Benefits'),
           a('c0348963', 'Introduction'),
           a('ea4c3496', 'VIP status'),
@@ -4024,12 +4022,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d8637c96', 'Describe your Super Follows perks'),
           a('b92892dc', 'Set a subscription price'),
           a('b123a502', 'Verify your payout details'),
-          a('b83662ac', '3 of 3'),
+          a('ad4a92a2', 'Badge'),
           a('cda6bb6d', 'Give your Super Followers badges'),
           a(
             'a15b98ec',
             'Nothing to change or edit here. All of your Super Followers will automatically get a public badge when they subscribe.',
           ),
+          a('e18b7a71', 'Review'),
           a('ebfb897c', 'Examples'),
           a('dc4feb19', 'Not sure what to say?'),
           a(
@@ -4045,14 +4044,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'h580543e',
             'Get ready for a VIP experience. Think: subscriber-only content like polls, videos, and deals.',
           ),
-          a('d80af370', '2 of 3'),
+          a('a329ce87', 'Add a description...'),
+          a('be76dc33', 'Add description'),
           a('gf32cca1', 'Describe the perks you’ll offer'),
           a(
             'j8ba99b3',
             'Give people a taste of what they’re in for each month with a quick summary of the bonus content you’ll share.',
           ),
-          a('a329ce87', 'Add a description...'),
-          a('be76dc33', 'Add description'),
+          a('fa70c77f', 'Only Super Followers can see this Tweet'),
+          a('cbc8ce27', 'Get bonus content when you subscribe'),
           a(
             'a0bb2076',
             'Keep your intro short and sweet, you’ll be able to describe your content later. Here are a few examples to help get you started.',
@@ -4066,8 +4066,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'What’s up everyone? Thanks for checking out my Super Follows subscription. I think you’ll like what I have in store for you.',
           ),
           a('hbe4f99e', 'Hey there! Can’t wait to share some top secret content and get to know you even better :)'),
-          a('ef08a890', '1 of 3'),
-          a('b16680ff', 'Add intro'),
+          a('ef5406e3', 'Add introduction'),
           a('ea8a3d2d', 'Pricing setup'),
           a('f77bb178', function (e) {
             return 'Confirm your ' + e.price + ' selection'
@@ -4087,6 +4086,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c246656e', 'Build an intimate base'),
           a('a92ab16c', 'Regular posting and interacting with subscribers'),
           a('c336b06a', 'Learn more'),
+          a('f1cb36b8', 'Payout setup'),
           a('e20f6661', 'You’re all set!'),
           a(
             'a9ee1ecc',
@@ -4135,6 +4135,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d248d75e', 'Get Support'),
           a('b6ab9962', 'Original Tweets'),
           a('jdceda6f', 'Replies'),
+          a('j45978a8', 'Quotes'),
           a('j905e6fe', 'Tweet Undo period'),
           a(
             'e2c39a4c',
@@ -4627,6 +4628,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bb347bbb', 'help center'),
           a('e0876919', 'You weren’t able to give access to the App. Go back and try logging in again.'),
           a('cea71013', 'We’re loading your contacts...'),
+          a('e4ff75a9', 'Something went wrong. Check your connection and try again.'),
+          a('e4f6bd9e', 'Oops, something went wrong. Please try again later.'),
           a('hc72e1fc', 'Please enter a valid email.'),
           a('fa69a1ca', 'Reveal password'),
           a('aacf5085', 'Hide password'),
@@ -4711,14 +4714,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return (
               'We flagged more than ' + e.count + ' potentially abusive or spammy account' + n(e.count, '', 's') + '.'
             )
-          }),
-          a('ga7fce66', 'Turn on Safety Mode'),
-          a('g42fd3ad', 'If you think you’re in danger, contact local emergency services.'),
-          a('ac9bde9a', 'Preview flagged accounts'),
-          a('ed5457da', 'What’s Safety Mode?'),
-          a('eb0ecd1d', 'Twitter Search'),
-          a('cceeb26b', function (e) {
-            return e.query + ' - Twitter Search'
           })
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
@@ -4736,7 +4731,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('i66136a9', 'Top'),
+        a('ga7fce66', 'Turn on Safety Mode'),
+          a('g42fd3ad', 'If you think you’re in danger, contact local emergency services.'),
+          a('ac9bde9a', 'Preview flagged accounts'),
+          a('ed5457da', 'What’s Safety Mode?'),
+          a('eb0ecd1d', 'Twitter Search'),
+          a('cceeb26b', function (e) {
+            return e.query + ' - Twitter Search'
+          }),
+          a('i66136a9', 'Top'),
           a('ac4fb0f3', 'Photos'),
           a('bb967f9e', 'Videos'),
           a('gfcfbf8b', 'Your search was saved.'),
@@ -5410,7 +5413,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d441fe05', 'When someone requests to follow you, it’ll show up here.'),
           a('j85d8d9f', 'No follow request pending for that user.'),
           a('ec2d8341', 'Decline'),
-          a('cbc8ce27', 'Get bonus content when you subscribe'),
           a('b600eb88', 'Find your people and get recognized'),
           a(
             'b08bbeb4',
@@ -5423,7 +5425,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'c3d23f10',
             'Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Click below to try again.',
           ),
-          a('fa70c77f', 'Only Super Followers can see this Tweet'),
           a('d822ae43', 'Twitter Purchaser Terms'),
           a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter'),
           a('h85446cd', 'This browser is no longer supported.'),
@@ -6004,12 +6005,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('d8320937', function (e) {
             return e.reactionCount + ' reaction' + n(e.reactionCount, '', 's')
-          }),
-          a('f2849136', 'Analytics'),
+          })
+        a('f2849136', 'Analytics'),
           a('dedf22f3', 'View Tweet activity'),
           a('d2b2b8e5', 'Downvote'),
-          a('hcb3286f', 'Undo downvote')
-        a('cb5dafd3', 'Downvote, selected'),
+          a('hcb3286f', 'Undo downvote'),
+          a('cb5dafd3', 'Downvote, selected'),
           a('eb3a8b0b', 'Unlike'),
           a('a4ae22fa', 'Like this Tweet'),
           a('dac92b0c', function (e) {
@@ -7969,6 +7970,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
+                key: 'gc242226',
+                get: function () {
+                  return ['']
+                },
+              },
+              {
                 key: 'geee69de',
                 get: function () {
                   return [
@@ -8338,12 +8345,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'fdc023d7',
                 get: function () {
                   return [this.props.formattedCount + ' Tweet' + n(this.props.count, '', 's')]
-                },
-              },
-              {
-                key: 'gc242226',
-                get: function () {
-                  return ['']
                 },
               },
               {

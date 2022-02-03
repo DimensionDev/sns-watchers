@@ -1603,6 +1603,108 @@
         ae = f(ne)
       t.default = ae
     },
+    EPsT: function (e, t, n) {
+      'use strict'
+      n.d(t, 'a', function () {
+        return C
+      })
+      n('OZaJ')
+      var r = n('VrFO'),
+        a = n.n(r),
+        o = n('Y9Ll'),
+        i = n.n(o),
+        c = n('1Pcy'),
+        l = n.n(c),
+        s = n('5Yy7'),
+        u = n.n(s),
+        m = n('N+ot'),
+        d = n.n(m),
+        p = n('AuHH'),
+        f = n.n(p),
+        y = n('KEM+'),
+        h = n.n(y),
+        b = n('ERkP'),
+        v = n.n(b),
+        g = n('jtO7'),
+        E = n('eb3s')
+      function O(e) {
+        var t = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (e) {
+            return !1
+          }
+        })()
+        return function () {
+          var n,
+            r = f()(e)
+          if (t) {
+            var a = f()(this).constructor
+            n = Reflect.construct(r, arguments, a)
+          } else n = r.apply(this, arguments)
+          return d()(this, n)
+        }
+      }
+      var C = (function (e) {
+        u()(n, e)
+        var t = O(n)
+        function n(e) {
+          var r
+          return (
+            a()(this, n),
+            (r = t.call(this, e)),
+            h()(l()(r), '_handleClick', function (e) {
+              r.setState({ showConfirmation: !0 })
+            }),
+            h()(l()(r), '_handleCancel', function () {
+              r.setState({ showConfirmation: !1 })
+            }),
+            h()(l()(r), '_handleConfirm', function () {
+              r.setState({ showConfirmation: !1 }), r.props.onConfirmationSheetConfirm()
+            }),
+            (r.state = { showConfirmation: !1 }),
+            r
+          )
+        }
+        return (
+          i()(n, [
+            {
+              key: 'render',
+              value: function () {
+                var e = this.props,
+                  t = e.align,
+                  n = e.color,
+                  r = e.confirmationSheetConfirmButtonLabel,
+                  a = e.confirmationSheetConfirmButtonType,
+                  o = e.confirmationSheetHeadline,
+                  i = e.confirmationSheetText,
+                  c = e.label
+                return v.a.createElement(
+                  v.a.Fragment,
+                  null,
+                  v.a.createElement(g.a, { align: t, color: n, label: c, onPress: this._handleClick }),
+                  this.state.showConfirmation
+                    ? v.a.createElement(E.a, {
+                        confirmButtonLabel: r,
+                        confirmButtonType: a,
+                        headline: o,
+                        onCancel: this._handleCancel,
+                        onConfirm: this._handleConfirm,
+                        text: i,
+                      })
+                    : null,
+                )
+              },
+            },
+          ]),
+          n
+        )
+      })(v.a.Component)
+      h()(C, 'defaultProps', { color: 'red500', align: 'center' })
+    },
     EeFI: function (e, t, n) {
       'use strict'
       n('OZaJ')
@@ -6396,56 +6498,58 @@
       'use strict'
       n.r(t),
         n.d(t, 'CommunityToolsScreen', function () {
-          return le
+          return fe
         })
       n('WNMA'), n('KqXw')
       var r = n('ERkP'),
         a = n.n(r),
         o = n('v6aA'),
         i = n('Ig1G'),
-        c = n('eSoz'),
-        l = n('rxPX'),
-        s = n('0KEI'),
-        u = n('R5kW'),
-        m = function (e, t) {
+        c = n('EPsT'),
+        l = n('eSoz'),
+        s = n('rxPX'),
+        u = n('0KEI'),
+        m = n('R5kW'),
+        d = function (e, t) {
           var n,
-            r = Object(u.b)(e, t.communityId)
+            r = Object(m.b)(e, t.communityId)
           return null !== (n = null == r ? void 0 : r.tweet_case_count) && void 0 !== n ? n : 0
         },
-        d = function (e, t) {
-          var n = Object(c.h)(e, t.communityId)
+        p = function (e, t) {
+          var n = Object(l.h)(e, t.communityId)
           return 'CommunityJoinRequests' === (null == n ? void 0 : n.__typename) ? n.pending_join_request_count : 0
         },
-        p = function (e, t) {
-          return Object(u.c)(e, t.communityId)
+        f = function (e, t) {
+          return Object(m.c)(e, t.communityId)
         },
-        f = Object(l.a)()
+        y = Object(s.a)()
           .propsFromState(function () {
-            return { count: m, joinRequestCount: d, moderationFetchStatus: p }
+            return { count: d, joinRequestCount: p, moderationFetchStatus: f }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(s.createLocalApiErrorHandlerWithContextFactory)('COMMUNITY_TOOLS'),
-              fetchCommunityModerationData: u.a,
+              createLocalApiErrorHandler: Object(u.createLocalApiErrorHandlerWithContextFactory)('COMMUNITY_TOOLS'),
+              fetchCommunityModerationData: m.a,
             }
           })
           .withAnalytics({ page: 'communities', section: 'tools' }),
-        y = n('kGix'),
-        h = n('3XMw'),
-        b = n.n(h),
-        v = n('KQzH'),
-        g = n('mWs5'),
-        E = n('MWbm'),
-        O = n('rHpw'),
-        C = n('Znyr'),
-        w = n('6vad'),
-        _ = n('csss'),
-        S = n('zIWA'),
-        j = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('KEM+')),
-        P = n.n(j),
-        k = n('Lsrn'),
-        I = n('k/Ka')
-      function M(e, t) {
+        h = n('kGix'),
+        b = n('3XMw'),
+        v = n.n(b),
+        g = n('KQzH'),
+        E = n('mWs5'),
+        O = n('MWbm'),
+        C = n('rHpw'),
+        w = n('Znyr'),
+        _ = n('6vad'),
+        S = n('csss'),
+        j = n('OOKO'),
+        P = n('zIWA'),
+        k = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('KEM+')),
+        I = n.n(k),
+        M = n('Lsrn'),
+        R = n('k/Ka')
+      function T(e, t) {
         var n = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e)
@@ -6457,29 +6561,29 @@
         }
         return n
       }
-      function R(e) {
+      function x(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? M(Object(n), !0).forEach(function (t) {
-                P()(e, t, n[t])
+            ? T(Object(n), !0).forEach(function (t) {
+                I()(e, t, n[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : M(Object(n)).forEach(function (t) {
+            : T(Object(n)).forEach(function (t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               })
         }
         return e
       }
-      var T = function () {
+      var L = function () {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(I.a)(
+        return Object(R.a)(
           'svg',
-          R(
-            R({}, e),
+          x(
+            x({}, e),
             {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [k.a.root, e.style], viewBox: '0 0 24 24' },
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [M.a.root, e.style], viewBox: '0 0 24 24' },
           ),
           a.a.createElement(
             'g',
@@ -6490,151 +6594,173 @@
           ),
         )
       }
-      T.metadata = { width: 24, height: 24 }
-      var x = T,
-        L = n('M2x3'),
-        A = n('SNyS'),
-        D = n('S+H3'),
-        F = n('PU7B'),
-        H = b.a.dce5e1b3,
-        B = b.a.c5d8c93d,
-        N = b.a.c8c7f9fc,
-        K = b.a.c045c7b6,
-        z = b.a.a87df2ee,
-        U = b.a.dc6ce7b4,
-        V = b.a.gfca5254,
-        W = b.a.bb081ea1,
-        X = b.a.h6beb5fa,
-        Y = b.a.e3f04700,
-        G = b.a.efc26607,
-        Q = b.a.gfccba44,
-        q = b.a.adfcc3cd,
-        Z = b.a.d0330d9c,
-        J = b.a.fd67f7c8,
-        $ = b.a.gc00d212,
-        ee = b.a.a997eca0,
-        te = O.a.create(function (e) {
+      L.metadata = { width: 24, height: 24 }
+      var A = L,
+        D = n('M2x3'),
+        F = n('SNyS'),
+        H = n('S+H3'),
+        B = n('PU7B'),
+        N = v.a.dce5e1b3,
+        K = v.a.c5d8c93d,
+        z = v.a.c8c7f9fc,
+        U = v.a.c045c7b6,
+        V = v.a.a87df2ee,
+        W = v.a.dc6ce7b4,
+        X = v.a.gfca5254,
+        Y = v.a.bb081ea1,
+        G = v.a.h6beb5fa,
+        Q = v.a.e3f04700,
+        q = v.a.efc26607,
+        Z = v.a.gfccba44,
+        J = v.a.adfcc3cd,
+        $ = v.a.d0330d9c,
+        ee = v.a.fd67f7c8,
+        te = v.a.gc00d212,
+        ne = v.a.a997eca0,
+        re = 'Leave moderation team',
+        ae = 'No longer wish to be a moderator?',
+        oe =
+          'By leaving the moderation team, you will no longer have access to Moderator Tools. You will also have to be re-invited as a moderator.',
+        ie = 'Leave moderation role',
+        ce = C.a.create(function (e) {
           return { thumbnail: { color: e.colors.gray700 } }
         }),
-        ne = a.a.createElement(S.a, { style: te.thumbnail }),
-        re = a.a.createElement(x, { style: te.thumbnail }),
-        ae = a.a.createElement(L.a, { style: te.thumbnail }),
-        oe = a.a.createElement(A.a, { style: te.thumbnail }),
-        ie = a.a.createElement(D.a, { style: te.thumbnail }),
-        ce = a.a.createElement(F.a, { style: te.thumbnail }),
-        le = function (e) {
+        le = a.a.createElement(P.a, { style: ce.thumbnail }),
+        se = a.a.createElement(A, { style: ce.thumbnail }),
+        ue = a.a.createElement(D.a, { style: ce.thumbnail }),
+        me = a.a.createElement(F.a, { style: ce.thumbnail }),
+        de = a.a.createElement(H.a, { style: ce.thumbnail }),
+        pe = a.a.createElement(B.a, { style: ce.thumbnail }),
+        fe = function (e) {
           var t = a.a.useContext(o.a).featureSwitches,
             n = e.community,
             r = e.communityId,
-            c = e.count,
-            l = e.createLocalApiErrorHandler,
-            s = e.fetchCommunityModerationData,
-            u = e.joinRequestCount,
-            m = e.match,
-            d = e.moderationFetchStatus,
-            p = l(),
-            f = t.isTrue('c9s_moderation_enabled'),
-            h = t.isTrue('c9s_rule_management_enabled'),
-            b = t.isTrue('c9s_request_to_join_enabled')
+            l = e.count,
+            s = e.createLocalApiErrorHandler,
+            u = e.fetchCommunityModerationData,
+            m = e.joinRequestCount,
+            d = e.match,
+            p = e.moderationFetchStatus,
+            f = s(),
+            y = t.isTrue('c9s_moderation_enabled'),
+            b = t.isTrue('c9s_rule_management_enabled'),
+            v = t.isTrue('c9s_request_to_join_enabled'),
+            C = t.isTrue('c9s_edit_moderators_enabled')
           a.a.useEffect(
             function () {
-              d === y.a.NONE && f && s(r).catch(p)
+              p === h.a.NONE && y && u(r).catch(f)
             },
-            [p, r, s, d, f],
+            [f, r, u, p, y],
           )
-          var O = a.a.useCallback(
+          var P = a.a.useCallback(
               function () {
-                return f && c > 0
-                  ? a.a.createElement(C.a, {
-                      count: c,
+                return y && l > 0
+                  ? a.a.createElement(w.a, {
+                      count: l,
                       standalone: !0,
-                      truncatedCountFormatter: X,
-                      unreadCountLabel: Y,
+                      truncatedCountFormatter: G,
+                      unreadCountLabel: Q,
                       withBorder: !1,
                     })
                   : null
               },
-              [c, f],
+              [l, y],
             ),
-            S = a.a.useCallback(
+            k = a.a.useCallback(
               function () {
-                return b && u > 0
-                  ? a.a.createElement(C.a, {
-                      count: u,
+                return v && m > 0
+                  ? a.a.createElement(w.a, {
+                      count: m,
                       standalone: !0,
-                      truncatedCountFormatter: X,
-                      unreadCountLabel: Y,
+                      truncatedCountFormatter: G,
+                      unreadCountLabel: Q,
                       withBorder: !1,
                     })
                   : null
               },
-              [u, b],
+              [m, v],
             ),
-            j = n.role,
-            P = j === i.a.Admin ? H : B,
-            k = j === i.a.Admin ? q : Z,
-            I = !m.isExact
+            I = n.role,
+            M = I === i.a.Admin ? N : K,
+            R = I === i.a.Admin ? J : $,
+            T = !d.isExact
           return a.a.createElement(
-            g.a,
-            { communityId: r, screenType: 'secondaryRoot', title: P, withDetailOpen: I },
+            E.a,
+            { communityId: r, screenType: 'secondaryRoot', title: M, withDetailOpen: T },
             a.a.createElement(
-              E.a,
+              O.a,
               null,
-              f
+              y
                 ? a.a.createElement(
                     a.a.Fragment,
                     null,
-                    a.a.createElement(w.b, { text: N }),
-                    a.a.createElement(v.a, {
-                      label: K,
+                    a.a.createElement(_.b, { text: z }),
+                    a.a.createElement(g.a, {
+                      label: U,
                       link: '/i/communities/'.concat(r, '/moderation/reported_tweets'),
-                      renderRightContent: O,
-                      thumbnail: ne,
+                      renderRightContent: P,
+                      thumbnail: le,
                     }),
                   )
                 : null,
-              b
-                ? a.a.createElement(v.a, {
-                    label: Q,
+              v
+                ? a.a.createElement(g.a, {
+                    label: Z,
                     link: '/i/communities/'.concat(r, '/moderation/member_requests'),
-                    renderRightContent: S,
-                    thumbnail: re,
+                    renderRightContent: k,
+                    thumbnail: se,
                   })
                 : null,
-              a.a.createElement(w.b, { text: z }),
-              a.a.createElement(v.a, {
-                description: G({ memberCount: n.member_count }),
-                label: U,
+              a.a.createElement(_.b, { text: V }),
+              a.a.createElement(g.a, {
+                description: q({ memberCount: n.member_count }),
+                label: W,
                 link: '/i/communities/'.concat(r, '/tools/members'),
-                thumbnail: ie,
+                thumbnail: de,
               }),
-              h
-                ? a.a.createElement(v.a, {
-                    description: k,
-                    label: V,
+              b
+                ? a.a.createElement(g.a, {
+                    description: R,
+                    label: X,
                     link: '/i/communities/'.concat(r, '/tools/rules'),
-                    thumbnail: ce,
+                    thumbnail: pe,
                   })
                 : null,
-              j === i.a.Admin
-                ? a.a.createElement(v.a, {
-                    description: J,
-                    label: W,
+              I === i.a.Admin
+                ? a.a.createElement(g.a, {
+                    description: ee,
+                    label: Y,
                     link: '/i/communities/'.concat(r, '/tools/settings'),
-                    thumbnail: ae,
+                    thumbnail: ue,
                   })
                 : null,
-              a.a.createElement(_.a, {
-                description: ee,
-                label: $,
+              a.a.createElement(S.a, {
+                description: ne,
+                label: te,
                 link: { external: !0, pathname: 'https://help.twitter.com/using-twitter/communities' },
-                thumbnail: oe,
+                thumbnail: me,
               }),
+              I === i.a.Moderator && C
+                ? a.a.createElement(
+                    a.a.Fragment,
+                    null,
+                    a.a.createElement(j.a, { spacing: 'space1' }),
+                    a.a.createElement(c.a, {
+                      confirmationSheetConfirmButtonLabel: ie,
+                      confirmationSheetConfirmButtonType: 'destructiveFilled',
+                      confirmationSheetHeadline: ae,
+                      confirmationSheetText: oe,
+                      label: re,
+                      onConfirmationSheetConfirm: function () {},
+                      withBottomBorder: !1,
+                    }),
+                  )
+                : null,
             ),
           )
         },
-        se = f(le)
-      t.default = se
+        ye = y(fe)
+      t.default = ye
     },
     m0MN: function (e, t, n) {
       'use strict'
@@ -10655,13 +10781,11 @@
                   label: ot,
                   link: h ? ''.concat(C, '/name') : void 0,
                 }),
-                c
-                  ? a.a.createElement(rt.a, {
-                      description: a.a.createElement(dt, null, c),
-                      label: ct,
-                      link: b ? ''.concat(C, '/purpose') : void 0,
-                    })
-                  : null,
+                a.a.createElement(rt.a, {
+                  description: c ? a.a.createElement(dt, null, c) : void 0,
+                  label: ct,
+                  link: b ? ''.concat(C, '/purpose') : void 0,
+                }),
                 O
                   ? a.a.createElement(rt.a, {
                       description: a.a.createElement(dt, null, S),

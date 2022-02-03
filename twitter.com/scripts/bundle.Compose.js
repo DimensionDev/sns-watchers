@@ -7337,17 +7337,31 @@
                 get: function () {
                   var e,
                     t,
-                    n = this.props.undoTweetSettings
+                    n,
+                    a,
+                    r = this.props.undoTweetSettings,
+                    o =
+                      null == this ||
+                      null === (e = this.context) ||
+                      void 0 === e ||
+                      null === (t = e.userClaims) ||
+                      void 0 === t
+                        ? void 0
+                        : t.isTrueAndEnabled('subscriptions_feature_1003'),
+                    i =
+                      null == this ||
+                      null === (n = this.context) ||
+                      void 0 === n ||
+                      null === (a = n.featureSwitches) ||
+                      void 0 === a
+                        ? void 0
+                        : a.isTrue('subscriptions_undo_quote_tweets_enabled')
                   return (
-                    (null == this ||
-                    null === (e = this.context) ||
-                    void 0 === e ||
-                    null === (t = e.userClaims) ||
-                    void 0 === t
-                      ? void 0
-                      : t.isTrueAndEnabled('subscriptions_feature_1003')) &&
-                    ('original' === this.tweetType || 'reply' === this.tweetType) &&
-                    (!n || void 0 === n[this.tweetType] || n[this.tweetType])
+                    o &&
+                    ('original' === this.tweetType ||
+                      'reply' === this.tweetType ||
+                      ('quote' === this.tweetType && i)) &&
+                    (!r || void 0 === r[this.tweetType] || r[this.tweetType])
                   )
                 },
               },

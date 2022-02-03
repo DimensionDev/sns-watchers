@@ -2062,15 +2062,19 @@
         V = S.a.ff692d63,
         q = S.a.cb1adfa0,
         G = S.a.b721eb37,
-        Z = function (e, t) {
+        Z = '/i/birdwatch',
+        Q = function (e, t) {
           return (
-            '/i/birdwatch' === t.pathname || '/i/birdwatch/all' === t.pathname || '/i/birdwatch/helpful' === t.pathname
+            t.pathname === Z ||
+            t.pathname === ''.concat(Z, '/new') ||
+            t.pathname === ''.concat(Z, '/needs_your_help') ||
+            t.pathname === ''.concat(Z, '/rated_helpful')
           )
         },
-        Q = function () {
+        Y = function () {
           return !1
         },
-        Y = (function (e) {
+        J = (function (e) {
           u()(a, e)
           var t = W(a)
           function a() {
@@ -2079,6 +2083,10 @@
             for (var n = arguments.length, o = new Array(n), i = 0; i < n; i++) o[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(o))),
+              h()(l()(e), '_isOwnProfilePageActive', function (t, a) {
+                var n = e.props.userAlias
+                return !!n && a.pathname === ''.concat(Z, '/u/').concat(n)
+              }),
               h()(l()(e), '_handleTabClickFactory', function (t) {
                 return function (a) {
                   e.props.analytics.scribe({ element: t, action: 'navigate' })
@@ -2113,31 +2121,32 @@
                     { layout: a, primaryLabel: U, wideMode: r },
                     v.a.createElement(C.a, {
                       accessibilityLabel: K,
-                      isActive: Q,
+                      isActive: Y,
                       label: K,
                       layout: a,
                       onClick: this._handleTabClickFactory('home'),
-                      path: '/i/birdwatch',
+                      path: Z,
                       renderIcon: Object(j.c)(A.a, A.a, a),
                       withLabel: i,
                     }),
                     v.a.createElement(C.a, {
                       accessibilityLabel: X,
-                      isActive: Z,
+                      isActive: Q,
                       label: X,
                       layout: a,
                       onClick: this._handleTabClickFactory('timeline_home'),
-                      path: '/i/birdwatch',
+                      path: Z,
                       renderIcon: Object(j.c)(I.a, x.a, a),
                       withLabel: i,
                     }),
                     c.isTrue('responsive_web_birdwatch_note_writing_enabled')
                       ? v.a.createElement(C.a, {
                           accessibilityLabel: V,
+                          isActive: this._isOwnProfilePageActive,
                           label: V,
                           layout: a,
                           onClick: this._handleTabClickFactory('user_notes'),
-                          path: '/i/birdwatch/u/me',
+                          path: ''.concat(Z, '/u/me'),
                           renderIcon: Object(j.c)(P.a, L.a, a),
                           withLabel: i,
                         })
@@ -2147,7 +2156,7 @@
                       label: q,
                       layout: a,
                       onClick: this._handleTabClickFactory('download_data'),
-                      path: '/i/birdwatch/download-data',
+                      path: ''.concat(Z, '/download-data'),
                       renderIcon: Object(j.c)(R.a, H, a),
                       withLabel: i,
                     }),
@@ -2156,7 +2165,7 @@
                       label: G,
                       layout: a,
                       onClick: this._handleTabClickFactory('about'),
-                      path: '/i/birdwatch/about',
+                      path: ''.concat(Z, '/about'),
                       renderIcon: Object(j.c)(F.a, z.a, a),
                       withLabel: i,
                     }),
@@ -2167,9 +2176,9 @@
             a
           )
         })(v.a.Component)
-      h()(Y, 'contextType', T.a)
-      var J = O(Y)
-      t.a = J
+      h()(J, 'contextType', T.a)
+      var $ = O(J)
+      t.a = $
     },
     MvLc: function (e, t, a) {
       'use strict'
