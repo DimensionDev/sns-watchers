@@ -1,30 +1,29 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [346],
+  [347],
   {
     '3ukl': function (e, t, n) {
       'use strict'
       n.r(t)
-      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
-      var r = n('KEM+'),
-        a = n.n(r),
-        o = n('ezF+'),
+      var a = n('yiKp'),
+        o = n.n(a),
+        r = n('ezF+'),
         i = n('EIk2'),
-        c = (n('uFXj'), n('ERkP')),
-        l = n.n(c),
+        l = (n('uFXj'), n('ERkP')),
+        c = n.n(l),
         s = n('IMYl'),
         p = n('hOZg'),
-        u = function (e) {
+        m = function (e) {
           return 'IconCheckmark' === e
-            ? l.a.createElement(s.a, null)
+            ? c.a.createElement(s.a, null)
             : 'IconClose' === e
-            ? l.a.createElement(p.a, null)
+            ? c.a.createElement(p.a, null)
             : void 0
         },
-        m =
+        u =
           (n('yH/f'),
           Object.freeze({ Compact: 'Compact', Normal: 'Normal', Large: 'Large', ThumbsUpAndDown: 'ThumbsUpAndDown' })),
-        b = n('Irs7'),
-        d = n('MWbm'),
+        d = n('Irs7'),
+        b = n('MWbm'),
         y = n('PbQQ'),
         f = n('/yvb'),
         v = n('t62R'),
@@ -56,107 +55,80 @@
         R = function (e) {
           var t = e.confirmation,
             n = e.displayType,
-            r = e.isRelevantIcon,
-            a = e.isRelevantOnClick,
-            o = e.isRelevantText,
+            a = e.isRelevantIcon,
+            o = e.isRelevantOnClick,
+            r = e.isRelevantText,
             i = e.notRelevantIcon,
-            c = e.notRelevantOnClick,
+            l = e.notRelevantOnClick,
             s = e.notRelevantText,
             p = e.onIsRelevant,
             R = e.showConfirmation,
-            g = e.title,
-            E = Object(b.b)(),
-            O = n === m.ThumbsUpAndDown,
-            h = O,
-            w = y.b.useOpaqueIdentifier(),
-            I = function () {
-              E.scribe({ element: 'is_relevant', action: 'click' }), p && p(), a()
+            E = e.title,
+            I = Object(d.b)(),
+            g = n === u.ThumbsUpAndDown,
+            h = g,
+            k = y.b.useOpaqueIdentifier(),
+            w = function () {
+              I.scribe({ element: 'is_relevant', action: 'click' }), p && p(), o()
             },
-            k = function () {
-              E.scribe({ element: 'not_relevant', action: 'click' }), c()
+            T = function () {
+              I.scribe({ element: 'not_relevant', action: 'click' }), l()
             },
-            j = function (e, t, n) {
-              return l.a.createElement(
+            x = function (e, t, n) {
+              return c.a.createElement(
                 f.a,
                 {
                   accessibilityLabel: t,
-                  icon: n ? u(n) : void 0,
+                  icon: n ? m(n) : void 0,
                   onPress: e,
                   size: n ? 'medium' : 'xSmall',
                   style: n ? C.icon : C.button,
-                  type: O ? 'primaryOutlined' : 'brandFilled',
+                  type: g ? 'primaryOutlined' : 'brandFilled',
                 },
                 n ? null : t,
               )
             }
-          return l.a.createElement(
-            d.a,
-            { accessibilityLabelledBy: w, accessibilityRole: 'group', style: C.promptContainer },
+          return c.a.createElement(
+            b.a,
+            { accessibilityLabelledBy: k, accessibilityRole: 'group', style: C.promptContainer },
             R
-              ? l.a.createElement(
-                  d.a,
+              ? c.a.createElement(
+                  b.a,
                   { accessibilityRole: 'alert' },
-                  l.a.createElement(v.b, { style: O && C.survey }, t),
+                  c.a.createElement(v.b, { style: g && C.survey }, t),
                 )
-              : l.a.createElement(
-                  d.a,
-                  { style: [C.root, O && C.survey] },
-                  l.a.createElement(d.a, { style: C.firstHalf }, l.a.createElement(v.b, { nativeID: w }, g)),
-                  l.a.createElement(
-                    d.a,
+              : c.a.createElement(
+                  b.a,
+                  { style: [C.root, g && C.survey] },
+                  c.a.createElement(b.a, { style: C.firstHalf }, c.a.createElement(v.b, { nativeID: k }, E)),
+                  c.a.createElement(
+                    b.a,
                     { style: C.secondHalf },
-                    l.a.createElement(
-                      d.a,
+                    c.a.createElement(
+                      b.a,
                       { style: C.buttonContainer },
                       h
-                        ? l.a.createElement(l.a.Fragment, null, j(I, o, r), j(k, s, i))
-                        : l.a.createElement(l.a.Fragment, null, j(k, s, i), j(I, o, r)),
+                        ? c.a.createElement(c.a.Fragment, null, x(w, r, a), x(T, s, i))
+                        : c.a.createElement(c.a.Fragment, null, x(T, s, i), x(w, r, a)),
                     ),
                   ),
                 ),
           )
         },
-        g = n('zh9S'),
-        E = n('Rp9C'),
-        O = n('pbku'),
-        h = n('0KEI')
-      function w(e, t) {
-        var n = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
-          t &&
-            (r = r.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            n.push.apply(n, r)
-        }
-        return n
-      }
-      function I(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? w(Object(n), !0).forEach(function (t) {
-                a()(e, t, n[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : w(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-              })
-        }
-        return e
-      }
-      var k = function (e, t) {
-          if (e && e === m.ThumbsUpAndDown) return t ? 'IconCheckmark' : 'IconClose'
+        E = n('zh9S'),
+        I = n('Rp9C'),
+        g = n('pbku'),
+        h = n('0KEI'),
+        k = function (e, t) {
+          if (e && e === u.ThumbsUpAndDown) return t ? 'IconCheckmark' : 'IconClose'
         },
-        j = o.g({
+        w = r.g({
           component: R,
           bindActions: function (e) {
             var t = e.module
             return {
               createLocalApiErrorHandler: Object(h.createLocalApiErrorHandlerWithContextFactory)('RELEVANCE_PROMPT'),
-              scribe: g.c,
+              scribe: E.c,
               processCallback: i.a,
               applyReactionInstructions: t.applyReactionInstructions,
               updateEntry: t.updateEntry,
@@ -165,45 +137,46 @@
           createProps: function (e) {
             var t = e.actions,
               n = t.applyReactionInstructions,
-              r = t.createLocalApiErrorHandler,
-              a = t.processCallback,
-              o = (t.scribe, t.updateEntry),
-              i = e.entry,
-              c = i.content,
-              l = c && c.relevancePrompt
-            if (!l) return null
+              a = t.createLocalApiErrorHandler,
+              r = t.processCallback,
+              i = (t.scribe, t.updateEntry),
+              l = e.entry,
+              c = l.content,
+              s = c && c.relevancePrompt
+            if (!s) return null
             return {
               onIsRelevant: function () {
-                n({ entry: i, triggerName: O.a.ON_IS_RELEVANT })
+                n({ entry: l, triggerName: g.a.ON_IS_RELEVANT })
               },
-              title: l.title,
-              confirmation: l.confirmation,
-              isRelevantText: l.isRelevantText,
-              notRelevantText: l.notRelevantText,
-              isRelevantIcon: k(l.displayType, !0),
-              notRelevantIcon: k(l.displayType, !1),
+              title: s.title,
+              confirmation: s.confirmation,
+              isRelevantText: s.isRelevantText,
+              notRelevantText: s.notRelevantText,
+              isRelevantIcon: k(s.displayType, !0),
+              notRelevantIcon: k(s.displayType, !1),
               isRelevantOnClick: function () {
-                o(i.entryId, { relevancePrompt: I(I({}, l), {}, { showConfirmation: !0 }) }),
-                  a(l.isRelevantCallback).catch(r())
+                i(l.entryId, { relevancePrompt: o()(o()({}, s), {}, { showConfirmation: !0 }) }),
+                  r(s.isRelevantCallback).catch(a())
               },
               notRelevantOnClick: function () {
-                o(i.entryId, { relevancePrompt: I(I({}, l), {}, { showConfirmation: !0 }) }),
-                  a(l.notRelevantCallback).catch(r())
+                i(l.entryId, { relevancePrompt: o()(o()({}, s), {}, { showConfirmation: !0 }) }),
+                  r(s.notRelevantCallback).catch(a())
               },
-              displayType: l.displayType,
-              showConfirmation: l.showConfirmation,
+              displayType: s.displayType,
+              showConfirmation: s.showConfirmation,
             }
           },
           getScribeDataItem: function (e) {
-            return E.a.forRelevancePrompt(e.itemMetadata.clientEventInfo)
+            return I.a.forRelevancePrompt(e.itemMetadata.clientEventInfo)
           },
           onImpression: function (e) {
             var t = e.actions.scribe,
-              n = e.scribeData
-            t(I(I({}, e.scribeNamespace), {}, { element: 'relevance_prompt', action: 'impression' }), n)
+              n = e.scribeData,
+              a = e.scribeNamespace
+            t(o()(o()({}, a), {}, { element: 'relevance_prompt', action: 'impression' }), n)
           },
         })
-      t.default = j
+      t.default = w
     },
   },
 ])

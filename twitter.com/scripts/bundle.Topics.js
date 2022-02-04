@@ -1,85 +1,56 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [95],
+  [96],
   {
     '7mm0': function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'TopicLandingPage', function () {
-          return Y
+          return Z
         })
       n('ho0z')
-      var r = n('ERkP'),
-        o = n.n(r),
-        i = n('zI2C'),
-        c = n('es0u'),
-        a = (n('WNMA'), n('KqXw'), n('oQhu')),
+      var a = n('ERkP'),
+        i = n.n(a),
+        r = n('zI2C'),
+        o = n('es0u'),
+        c = (n('KqXw'), n('WNMA'), n('oQhu')),
         s = n('3IPs'),
-        u = (n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('KEM+')),
-        p = n.n(u),
-        l = n('m3Bd'),
-        f = n.n(l),
-        d = n('owBv'),
-        m = n('ZNT5')
-      function b(e, t) {
-        var n = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
-          t &&
-            (r = r.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            n.push.apply(n, r)
-        }
-        return n
-      }
-      function h(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? b(Object(n), !0).forEach(function (t) {
-                p()(e, t, n[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : b(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-              })
-        }
-        return e
-      }
-      var g = 'topic-landing-page',
-        O = n('Zejx'),
-        v = n('rxPX'),
-        y = function (e, t) {
+        u = n('yiKp'),
+        l = n.n(u),
+        p = n('m3Bd'),
+        d = n.n(p),
+        m = n('owBv'),
+        f = n('ZNT5'),
+        h = ['cursor'],
+        g = 'topic-landing-page',
+        v = n('Zejx'),
+        b = n('rxPX'),
+        E = function (e, t) {
           var n
           return null === (n = t.location.state) || void 0 === n ? void 0 : n.referringScribeNamespace
         },
-        P = function (e, t) {
+        T = function (e, t) {
           return t.match.params.topicId
         },
-        j = function (e, t) {
-          var n = P(0, t)
-          return n ? O.a.select(e, n) : void 0
+        _ = function (e, t) {
+          var n = T(0, t)
+          return n ? v.a.select(e, n) : void 0
         },
-        E = Object(v.a)().propsFromState(function () {
-          var e = Object(a.a)(function (e, t) {
+        y = Object(b.a)().propsFromState(function () {
+          var e = Object(c.a)(function (e, t) {
             return (function (e) {
               var t = e.params,
                 n = e.topicId
-              return Object(m.a)({
+              return Object(f.a)({
                 context: 'FETCH_TOPIC_TIMELINE',
                 getEndpoint: function (e) {
                   return e.Topics.fetchTopicLandingPage
                 },
                 getEndpointParams: function (e) {
-                  var r = e.cursor
-                  return h(
-                    h(h({}, f()(e, ['cursor'])), t),
-                    {},
-                    { cursor: 'string' == typeof r ? r : void 0, topicId: n },
-                  )
+                  var a = e.cursor,
+                    i = d()(e, h)
+                  return l()(l()(l()({}, i), t), {}, { cursor: 'string' == typeof a ? a : void 0, topicId: n })
                 },
-                formatResponse: d.a,
+                formatResponse: m.a,
                 perfKey: g,
                 timelineId: ''.concat(g, '-').concat(n),
               })
@@ -87,214 +58,159 @@
           })
           return {
             module: function (t, n) {
-              var r = P(0, n),
-                o = Object(s.j)(t, n)
-              return e(r, o)
+              var a = T(0, n),
+                i = Object(s.j)(t, n)
+              return e(a, i)
             },
-            referringScribeNamespace: y,
-            topic: j,
-            topicId: P,
+            referringScribeNamespace: E,
+            topic: _,
+            topicId: T,
           }
         }),
-        w = n('QIgh'),
-        T = n('8UdT'),
-        _ = n('Ka9G')
-      function I(e, t) {
-        var n = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
-          t &&
-            (r = r.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            n.push.apply(n, r)
-        }
-        return n
-      }
-      function N(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? I(Object(n), !0).forEach(function (t) {
-                p()(e, t, n[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : I(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-              })
-        }
-        return e
-      }
-      var S = N(N({}, w.b), {}, p()({}, T.b.User, Object(_.a)({ shouldScribeImpression: !0 }))),
-        C = (n('2G9S'), n('qzfk')),
-        k = n('Rp9C')
-      function R(e, t) {
-        var n = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
-          t &&
-            (r = r.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            n.push.apply(n, r)
-        }
-        return n
-      }
-      function F(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? R(Object(n), !0).forEach(function (t) {
-                p()(e, t, n[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : R(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-              })
-        }
-        return e
-      }
-      var L = Object(a.a)(function (e, t) {
+        I = n('KEM+'),
+        N = n.n(I),
+        P = n('QIgh'),
+        O = n('8UdT'),
+        w = n('Ka9G'),
+        C = l()(l()({}, P.b), {}, N()({}, O.b.User, Object(w.a)({ shouldScribeImpression: !0 }))),
+        S = (n('2G9S'), n('qzfk')),
+        j = n('Rp9C'),
+        k = Object(c.a)(function (e, t) {
           var n
           if (e) {
-            var r = e.action,
+            var a = e.action,
+              i = void 0 === a ? '' : a,
+              r = e.component,
               o = void 0 === r ? '' : r,
-              i = e.component,
-              c = void 0 === i ? '' : i,
-              a = e.element,
-              s = void 0 === a ? '' : a,
+              c = e.element,
+              s = void 0 === c ? '' : c,
               u = e.page,
               p = void 0 === u ? '' : u,
-              l = e.section,
-              f = void 0 === l ? '' : l
+              d = e.section,
+              m = void 0 === d ? '' : d
             n = ''
-              .concat(Object(C.a)().clientName, ':')
+              .concat(Object(S.a)().clientName, ':')
               .concat(p, ':')
-              .concat(f, ':')
-              .concat(c, ':')
+              .concat(m, ':')
+              .concat(o, ':')
               .concat(s, ':')
-              .concat(o)
+              .concat(i)
           }
-          return { items: t ? [F({}, k.a.forTopic(t))] : void 0, referring_event: n }
+          return { items: t ? [l()({}, j.a.forTopic(t))] : void 0, referring_event: n }
         }),
-        x = n('3XMw'),
-        A = n.n(x),
-        H = n('rJoH'),
-        U = n('UZjl'),
-        M = n('7JQg'),
-        B = function (e) {
+        F = n('3XMw'),
+        L = n.n(F),
+        A = n('rJoH'),
+        R = n('UZjl'),
+        x = n('7JQg'),
+        U = function (e) {
           return 'https://twitter.com/i/topics/'.concat(e)
         },
-        D = function (e) {
+        H = function (e) {
           return 'twitter://topics_timeline?id='.concat(e)
         },
-        K = A.a.a2a3824a,
-        X = A.a.f68f0fc7,
-        G = A.a.ieb6f5c1,
-        Z = A.a.d848d612,
-        W = A.a.j70f0f35,
-        Q = o.a.createElement(c.a, { withWhoToFollow: !1 }),
+        M = L.a.a2a3824a,
+        B = L.a.f68f0fc7,
+        K = L.a.ieb6f5c1,
+        X = L.a.d848d612,
+        G = L.a.j70f0f35,
+        W = i.a.createElement(o.a, { withWhoToFollow: !1 }),
         q = { page: 'topic_landing', section: 'main' }
-      function Y(e) {
+      function Z(e) {
         var t = e.history,
           n = e.module,
-          r = e.referringScribeNamespace,
-          c = e.topic,
-          a = e.topicId,
-          s = null != c && c.name ? G({ topicName: null == c ? void 0 : c.name }) : X,
-          u = null != c && c.name ? W({ topicName: null == c ? void 0 : c.name }) : Z
-        return o.a.createElement(
-          M.b,
-          { data: L(r, a) },
-          o.a.createElement(
-            o.a.Fragment,
+          a = e.referringScribeNamespace,
+          o = e.topic,
+          c = e.topicId,
+          s = null != o && o.name ? K({ topicName: null == o ? void 0 : o.name }) : B,
+          u = null != o && o.name ? G({ topicName: null == o ? void 0 : o.name }) : X
+        return i.a.createElement(
+          x.b,
+          { data: k(a, c) },
+          i.a.createElement(
+            i.a.Fragment,
             null,
-            o.a.createElement(H.a, { canonical: B(a), description: u, title: s, type: 'article' }),
-            o.a.createElement(i.a, { deepLink: D(a) }),
-            o.a.createElement(U.a, {
+            i.a.createElement(A.a, { canonical: U(c), description: u, title: s, type: 'article' }),
+            i.a.createElement(r.a, { deepLink: H(c) }),
+            i.a.createElement(R.a, {
               backLocation: '/',
-              entryConfiguration: S,
+              entryConfiguration: C,
               history: t,
               initialPageNamespace: q,
               module: n,
-              sidebarContent: Q,
+              sidebarContent: W,
               timelinePrefix: g,
-              title: K,
+              title: M,
             }),
           ),
         )
       }
-      var z = E(Y)
-      t.default = z
+      var Q = y(Z)
+      t.default = Q
     },
     BO6E: function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'TOPICS_MANAGEMENT_PREFIX', function () {
-          return D
+          return H
         }),
         n.d(t, 'VIEWING_OTHER_USERS_TOPICS_PREFIX', function () {
-          return K
+          return M
         }),
         n.d(t, 'UserTopicsScreen', function () {
-          return G
+          return K
         })
-      n('OZaJ')
-      var r = n('VrFO'),
+      var a = n('VrFO'),
+        i = n.n(a),
+        r = n('Y9Ll'),
         o = n.n(r),
-        i = n('Y9Ll'),
-        c = n.n(i),
-        a = n('1Pcy'),
-        s = n.n(a),
+        c = n('1Pcy'),
+        s = n.n(c),
         u = n('5Yy7'),
-        p = n.n(u),
-        l = n('N+ot'),
-        f = n.n(l),
-        d = n('AuHH'),
-        m = n.n(d),
-        b = n('KEM+'),
-        h = n.n(b),
-        g = (n('WNMA'), n('KqXw'), n('2G9S'), n('vrRf'), n('ERkP')),
-        O = n.n(g),
+        l = n.n(u),
+        p = n('2VqO'),
+        d = n.n(p),
+        m = n('KEM+'),
+        f = n.n(m),
+        h = (n('KqXw'), n('WNMA'), n('2G9S'), n('vrRf'), n('ERkP')),
+        g = n.n(h),
         v = n('es0u'),
-        y = n('0KEI'),
-        P = n('8Lfv'),
-        j = n('G6rE'),
-        E = n('rxPX'),
-        w = function (e, t) {
+        b = n('0KEI'),
+        E = n('8Lfv'),
+        T = n('G6rE'),
+        _ = n('rxPX'),
+        y = function (e, t) {
           return t.location.pathname
         },
-        T = function (e, t) {
+        I = function (e, t) {
           return 'PUSH' === t.history.action || 'REPLACE' === t.history.action
         },
-        _ = function (e, t) {
+        N = function (e, t) {
           return t.match.params.tabId || void 0
         },
-        I = function (e, t) {
-          return j.e.selectByScreenName(e, t.match.params.screenName)
+        P = function (e, t) {
+          return T.e.selectByScreenName(e, t.match.params.screenName)
         },
-        N = Object(E.a)()
+        O = Object(_.a)()
           .propsFromState(function () {
-            return { isForwardNavigation: T, pathname: w, selectedTabId: _, user: I }
+            return { isForwardNavigation: I, pathname: y, selectedTabId: N, user: P }
           })
           .propsFromActions(function () {
             return {
-              clearTimelineCache: P.a,
-              createLocalApiErrorHandler: Object(y.createLocalApiErrorHandlerWithContextFactory)('USER_TOPICS_SCREEN'),
-              fetchUserByScreenNameIfNeeded: j.e.fetchOneByScreenNameIfNeeded,
+              clearTimelineCache: E.a,
+              createLocalApiErrorHandler: Object(b.createLocalApiErrorHandlerWithContextFactory)('USER_TOPICS_SCREEN'),
+              fetchUserByScreenNameIfNeeded: T.e.fetchOneByScreenNameIfNeeded,
             }
           }),
-        S = n('7wqI'),
+        w = n('7wqI'),
         C = n('3XMw'),
-        k = n.n(C),
-        R = n('oQhu'),
-        F = n('5FtR'),
-        L = n('UZjl'),
-        x = n('owBv'),
+        S = n.n(C),
+        j = n('oQhu'),
+        k = n('5FtR'),
+        F = n('UZjl'),
+        L = n('owBv'),
         A = n('ZNT5'),
-        H = Object(A.a)({
+        R = Object(A.a)({
           timelineId: 'topics-management-graphql',
           getEndpoint: function (e) {
             return e.Topics.fetchTopicsManagementPage
@@ -303,61 +219,40 @@
             var t = e.cursor
             return { cursor: 'string' == typeof t ? t : void 0 }
           },
-          formatResponse: x.a,
+          formatResponse: L.a,
           context: 'FETCH_TOPICS_MANAGEMENT',
           perfKey: 'topics-management-GraphQL',
         }),
-        U = n('v6aA')
-      function M(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var n,
-            r = m()(e)
-          if (t) {
-            var o = m()(this).constructor
-            n = Reflect.construct(r, arguments, o)
-          } else n = r.apply(this, arguments)
-          return f()(this, n)
-        }
-      }
-      var B = k.a.b8533bac,
-        D = 'topics-management-',
-        K = 'viewing-other-users-topics-',
-        X = O.a.createElement(v.a, { withTopicsToFollow: !1 }),
-        G = (function (e) {
-          p()(n, e)
-          var t = M(n)
-          function n(e, r) {
-            var i
+        x = n('v6aA'),
+        U = S.a.b8533bac,
+        H = 'topics-management-',
+        M = 'viewing-other-users-topics-',
+        B = g.a.createElement(v.a, { withTopicsToFollow: !1 }),
+        K = (function (e) {
+          l()(n, e)
+          var t = d()(n)
+          function n(e, a) {
+            var r
             return (
-              o()(this, n),
-              (i = t.call(this, e, r)),
-              h()(s()(i), '_getTabLink', function (e) {
-                var t = i.props.match
+              i()(this, n),
+              (r = t.call(this, e, a)),
+              f()(s()(r), '_getTabLink', function (e) {
+                var t = r.props.match
                 return '/'.concat(t.params.screenName, '/topics/').concat(e)
               }),
-              h()(
-                s()(i),
+              f()(
+                s()(r),
                 '_getScribeNamespace',
-                Object(R.a)(function (e, t) {
+                Object(j.a)(function (e, t) {
                   return { page: e ? 'not_interested_topics' : 'followed_topics', section: t ? 'self' : 'other' }
                 }),
               ),
-              e.isForwardNavigation && i._clearTimelineCache(),
-              i
+              e.isForwardNavigation && r._clearTimelineCache(),
+              r
             )
           }
           return (
-            c()(n, [
+            o()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -378,45 +273,45 @@
                   var e = this.props,
                     t = e.history,
                     n = e.match,
-                    r = e.selectedTabId,
-                    o = e.user,
-                    i = this._isOwnProfile(),
-                    c = o && Object(S.b)({ isOwnProfile: i, user: o }),
-                    a = !i && this._isOnNotInterestedPage(),
-                    s = o && (!c || a),
+                    a = e.selectedTabId,
+                    i = e.user,
+                    r = this._isOwnProfile(),
+                    o = i && Object(w.b)({ isOwnProfile: r, user: i }),
+                    c = !r && this._isOnNotInterestedPage(),
+                    s = i && (!o || c),
                     u = '/'.concat(n.params.screenName)
                   if (s) {
-                    var p = a ? u.concat('/topics') : u
-                    return O.a.createElement(F.a, { to: p })
+                    var l = c ? u.concat('/topics') : u
+                    return g.a.createElement(k.a, { to: l })
                   }
-                  var l,
-                    f = this._getScribeNamespace(this._isOnNotInterestedPage(), i),
-                    d = i
-                      ? H
-                      : ((l = (o && o.id_str) || ''),
+                  var p,
+                    d = this._getScribeNamespace(this._isOnNotInterestedPage(), r),
+                    m = r
+                      ? R
+                      : ((p = (i && i.id_str) || ''),
                         Object(A.a)({
-                          timelineId: 'viewing-user-'.concat(l, '-topics-page-graphql'),
+                          timelineId: 'viewing-user-'.concat(p, '-topics-page-graphql'),
                           getEndpoint: function (e) {
                             return e.Topics.fetchViewingOtherUsersTopicsPagePage
                           },
                           getEndpointParams: function (e) {
-                            return { count: e.count, userId: l }
+                            return { count: e.count, userId: p }
                           },
-                          formatResponse: x.a,
+                          formatResponse: L.a,
                           context: 'FETCH_OTHER_USERS_TOPICS_PAGE',
                           perfKey: 'viewing-other-users-topics-page-GraphQL',
                         })),
-                    m = i ? D : K
-                  return O.a.createElement(L.a, {
+                    f = r ? H : M
+                  return g.a.createElement(F.a, {
                     backLocation: u,
                     getTabLink: this._getTabLink,
                     history: t,
-                    initialPageNamespace: f,
-                    module: d,
-                    selectedTabId: r,
-                    sidebarContent: X,
-                    timelinePrefix: m,
-                    title: B,
+                    initialPageNamespace: d,
+                    module: m,
+                    selectedTabId: a,
+                    sidebarContent: B,
+                    timelinePrefix: f,
+                    title: U,
                   })
                 },
               },
@@ -440,7 +335,7 @@
                   var e = this.props,
                     t = e.clearTimelineCache,
                     n = e.createLocalApiErrorHandler
-                  this._isOwnProfile() && t(H).catch(n())
+                  this._isOwnProfile() && t(R).catch(n())
                 },
               },
               {
@@ -453,37 +348,34 @@
             ]),
             n
           )
-        })(O.a.Component)
-      h()(G, 'contextType', U.a)
-      var Z = N(G)
-      t.default = Z
+        })(g.a.Component)
+      f()(K, 'contextType', x.a)
+      var X = O(K)
+      t.default = X
     },
     'Ih+Y': function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'TopicsEducationScreen', function () {
-          return A
+          return L
         })
-      n('OZaJ')
-      var r = n('VrFO'),
+      var a = n('VrFO'),
+        i = n.n(a),
+        r = n('Y9Ll'),
         o = n.n(r),
-        i = n('Y9Ll'),
-        c = n.n(i),
-        a = n('1Pcy'),
-        s = n.n(a),
+        c = n('1Pcy'),
+        s = n.n(c),
         u = n('5Yy7'),
-        p = n.n(u),
-        l = n('N+ot'),
-        f = n.n(l),
-        d = n('AuHH'),
-        m = n.n(d),
-        b = n('KEM+'),
-        h = n.n(b),
-        g = (n('2G9S'), n('ERkP')),
-        O = n.n(g),
+        l = n.n(u),
+        p = n('2VqO'),
+        d = n.n(p),
+        m = n('KEM+'),
+        f = n.n(m),
+        h = (n('2G9S'), n('ERkP')),
+        g = n.n(h),
         v = n('G6rE'),
-        y = n('rxPX'),
-        P = Object(y.a)()
+        b = n('rxPX'),
+        E = Object(b.a)()
           .propsFromState(function () {
             return { loggedInUser: v.e.selectLoggedInUser }
           })
@@ -492,106 +384,85 @@
             return { screenName: t && t.screen_name }
           })
           .withAnalytics({ page: 'topic_education' }),
-        j = n('jHSc'),
-        E = n('EHV7'),
-        w = n('5FtR'),
-        T = n('MWbm'),
-        _ = n('t62R'),
-        I = n('cmUU'),
-        N = n('rHpw'),
-        S = n('3XMw'),
-        C = n.n(S)
-      function k(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var n,
-            r = m()(e)
-          if (t) {
-            var o = m()(this).constructor
-            n = Reflect.construct(r, arguments, o)
-          } else n = r.apply(this, arguments)
-          return f()(this, n)
-        }
-      }
-      var R = C.a.g931a6e4,
-        F = C.a.j24c37b2,
-        L = C.a.c5bb3cd1,
-        x = C.a.e241095e,
-        A = (function (e) {
-          p()(n, e)
-          var t = k(n)
+        T = n('jHSc'),
+        _ = n('EHV7'),
+        y = n('5FtR'),
+        I = n('MWbm'),
+        N = n('t62R'),
+        P = n('cmUU'),
+        O = n('rHpw'),
+        w = n('3XMw'),
+        C = n.n(w),
+        S = C.a.g931a6e4,
+        j = C.a.j24c37b2,
+        k = C.a.c5bb3cd1,
+        F = C.a.e241095e,
+        L = (function (e) {
+          l()(n, e)
+          var t = d()(n)
           function n() {
             var e
-            o()(this, n)
-            for (var r = arguments.length, i = new Array(r), c = 0; c < r; c++) i[c] = arguments[c]
+            i()(this, n)
+            for (var a = arguments.length, r = new Array(a), o = 0; o < a; o++) r[o] = arguments[o]
             return (
-              (e = t.call.apply(t, [this].concat(i))),
-              h()(s()(e), '_renderHeader', function (e) {
+              (e = t.call.apply(t, [this].concat(r))),
+              f()(s()(e), '_renderHeader', function (e) {
                 return null
               }),
-              h()(s()(e), '_handleClose', function () {
+              f()(s()(e), '_handleClose', function () {
                 e.props.history.goBack()
               }),
-              h()(s()(e), '_getSubtext', function () {
-                return O.a.createElement(
-                  T.a,
+              f()(s()(e), '_getSubtext', function () {
+                return g.a.createElement(
+                  I.a,
                   null,
-                  O.a.createElement(_.b, { color: 'gray700' }, L),
-                  O.a.createElement(_.b, { color: 'gray700', style: H.paddingTop }, e._getSecondaryText()),
+                  g.a.createElement(N.b, { color: 'gray700' }, k),
+                  g.a.createElement(N.b, { color: 'gray700', style: A.paddingTop }, e._getSecondaryText()),
                 )
               }),
-              h()(s()(e), '_getSecondaryText', function () {
+              f()(s()(e), '_getSecondaryText', function () {
                 var t = e.props.screenName,
                   n = { pathname: t ? '/'.concat(t, '/topics') : '/home', method: 'replace' },
-                  r = {
-                    yourTopicsLink: O.a.createElement(_.b, {
-                      accessibilityLabel: x,
+                  a = {
+                    yourTopicsLink: g.a.createElement(N.b, {
+                      accessibilityLabel: F,
                       accessibilityRole: 'link',
                       color: 'link',
                       link: n,
                       withInteractiveStyling: !0,
                     }),
                   }
-                return O.a.createElement(
+                return g.a.createElement(
                   C.a.I18NFormatMessage,
                   { $i18n: 'e1d95725' },
-                  O.a.cloneElement(r.yourTopicsLink, null, C.a.f8bc75e2),
+                  g.a.cloneElement(a.yourTopicsLink, null, C.a.f8bc75e2),
                 )
               }),
               e
             )
           }
           return (
-            c()(n, [
+            o()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props.location
                   return e.state && e.state.topicName
-                    ? O.a.createElement(
-                        j.b,
+                    ? g.a.createElement(
+                        T.b,
                         { renderHeader: this._renderHeader },
                         this._renderContent(e.state.topicName),
                       )
-                    : O.a.createElement(w.a, { to: '/home' })
+                    : g.a.createElement(y.a, { to: '/home' })
                 },
               },
               {
                 key: '_renderContent',
                 value: function (e) {
-                  return O.a.createElement(I.a, {
-                    actionLabel: F,
-                    graphic: E.a,
-                    headline: R({ topic: e }),
+                  return g.a.createElement(P.a, {
+                    actionLabel: j,
+                    graphic: _.a,
+                    headline: S({ topic: e }),
                     onAction: this._handleClose,
                     onClose: this._handleClose,
                     subtext: this._getSubtext(),
@@ -601,48 +472,48 @@
             ]),
             n
           )
-        })(O.a.Component),
-        H = N.a.create(function (e) {
+        })(g.a.Component),
+        A = O.a.create(function (e) {
           return { paddingTop: { paddingTop: e.spaces.space16 } }
         }),
-        U = P(A)
-      t.default = U
+        R = E(L)
+      t.default = R
     },
     SQcl: function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'TopicsPicker', function () {
-          return T
+          return P
         })
       n('jQ3i'), n('x4t0')
-      var r = n('ERkP'),
-        o = n.n(r),
-        i = n('zI2C'),
-        c = n('es0u'),
-        a = (n('WNMA'), n('KqXw'), n('hqKg')),
+      var a = n('ERkP'),
+        i = n.n(a),
+        r = n('zI2C'),
+        o = n('es0u'),
+        c = (n('KqXw'), n('WNMA'), n('hqKg')),
         s = n('8Lfv'),
         u = n('owBv'),
-        p = n('ZNT5'),
-        l = n('rxPX'),
-        f = function (e, t) {
+        l = n('ZNT5'),
+        p = n('rxPX'),
+        d = function (e, t) {
           return 'PUSH' === t.history.action || 'REPLACE' === t.history.action
         },
-        d = function (e, t) {
+        m = function (e, t) {
           var n
           return null === (n = t.location.state) || void 0 === n ? void 0 : n.previousPath
         },
-        m = function (e, t) {
-          var n, r
+        f = function (e, t) {
+          var n, a
           return (
-            (null === (n = t.match) || void 0 === n || null === (r = n.params) || void 0 === r ? void 0 : r.tabId) ||
+            (null === (n = t.match) || void 0 === n || null === (a = n.params) || void 0 === a ? void 0 : a.tabId) ||
             void 0
           )
         },
-        b = function () {
-          return Object(a.createSelector)(m, function (e) {
+        h = function () {
+          return Object(c.createSelector)(f, function (e) {
             return (
               (t = e),
-              Object(p.a)({
+              Object(l.a)({
                 context: 'FETCH_TOPICS_PICKER_PAGE',
                 getEndpoint: function (e) {
                   return e.Topics.fetchTopicsPickerPage
@@ -658,85 +529,85 @@
             var t
           })
         },
-        h = Object(l.a)()
+        g = Object(p.a)()
           .propsFromState(function () {
-            return { isForwardNavigation: f, module: b(), previousPath: d, selectedTabId: m }
+            return { isForwardNavigation: d, module: h(), previousPath: m, selectedTabId: f }
           })
           .propsFromActions(function () {
             return { clearTimelineCache: s.a }
           }),
-        g = n('3XMw'),
-        O = n.n(g),
-        v = n('UZjl'),
-        y = O.a.d094c720,
-        P = { page: 'topics_picker', section: 'main' },
-        j = function (e) {
+        v = n('3XMw'),
+        b = n.n(v),
+        E = n('UZjl'),
+        T = b.a.d094c720,
+        _ = { page: 'topics_picker', section: 'main' },
+        y = function (e) {
           return e ? 'twitter://topics/picker/'.concat(e) : 'twitter://topics/picker'
         },
-        E = function (e) {
+        I = function (e) {
           return { pathname: '/i/topics/picker/'.concat(e) }
         },
-        w = o.a.createElement(c.a, { withTopicsToFollow: !1 }),
-        T = function (e) {
+        N = i.a.createElement(o.a, { withTopicsToFollow: !1 }),
+        P = function (e) {
           var t = e.clearTimelineCache,
             n = e.history,
-            r = e.isForwardNavigation,
-            c = e.module,
-            a = e.previousPath,
+            a = e.isForwardNavigation,
+            o = e.module,
+            c = e.previousPath,
             s = e.selectedTabId
           return (
-            o.a.useEffect(function () {
-              !r || (null != a && a.includes('/i/topics/picker')) || t(c)
+            i.a.useEffect(function () {
+              !a || (null != c && c.includes('/i/topics/picker')) || t(o)
             }),
-            o.a.createElement(
-              o.a.Fragment,
+            i.a.createElement(
+              i.a.Fragment,
               null,
-              o.a.createElement(i.a, { deepLink: j(s) }),
-              o.a.createElement(v.a, {
+              i.a.createElement(r.a, { deepLink: y(s) }),
+              i.a.createElement(E.a, {
                 backLocation: '/home',
-                getTabLink: E,
+                getTabLink: I,
                 history: n,
-                initialPageNamespace: P,
-                module: c,
+                initialPageNamespace: _,
+                module: o,
                 selectedTabId: s,
-                sidebarContent: w,
+                sidebarContent: N,
                 timelinePrefix: 'topics-picker-',
-                title: y,
+                title: T,
               }),
             )
           )
         },
-        _ = h(T)
-      t.default = _
+        O = g(P)
+      t.default = O
     },
     XsZp: function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'NoteworthyAccountsScreen', function () {
-          return P
+          return _
         })
       n('ho0z')
-      var r = n('ERkP'),
-        o = n.n(r),
-        i = n('es0u'),
-        c = (n('WNMA'), n('KqXw'), n('oQhu')),
-        a = n('owBv'),
+      var a = n('ERkP'),
+        i = n.n(a),
+        r = n('es0u'),
+        o = (n('KqXw'), n('WNMA'), n('oQhu')),
+        c = n('owBv'),
         s = n('ZNT5'),
         u = n('Zejx'),
-        p = n('rxPX'),
-        l = n('0KEI'),
-        f = function (e, t) {
+        l = n('rxPX'),
+        p = n('0KEI'),
+        d = function (e, t) {
           var n
           return null === (n = t.location.state) || void 0 === n ? void 0 : n.referringScribeNamespace
         },
-        d = function (e, t) {
+        m = function (e, t) {
           return t.match.params.topicId
         },
-        m = function (e, t) {
-          var n = d(0, t)
+        f = function (e, t) {
+          var n = m(0, t)
           return n ? u.a.select(e, n) : void 0
         },
-        b = Object(c.a)(function (e) {
+        h = Object(o.a)(function (e) {
           return (function (e) {
             return Object(s.a)({
               context: 'FETCH_NOTEWORTHY_ACCOUNTS_PAGE',
@@ -746,90 +617,63 @@
               getEndpointParams: function () {
                 return { topicId: e }
               },
-              formatResponse: a.a,
+              formatResponse: c.a,
               perfKey: 'noteworthy-accounts',
               timelineId: ''.concat('noteworthy-accounts-', '-').concat(e),
             })
           })(e)
         }),
-        h = function (e, t) {
-          var n = d(0, t)
-          return b(n)
+        g = function (e, t) {
+          var n = m(0, t)
+          return h(n)
         },
-        g = Object(p.a)()
+        v = Object(l.a)()
           .propsFromState(function () {
-            return { referringScribeNamespace: f, topic: m, topicId: d, module: h }
+            return { referringScribeNamespace: d, topic: f, topicId: m, module: g }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(l.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(p.createLocalApiErrorHandlerWithContextFactory)(
                 'NOTEWORTHY_ACCOUNTS_SCREEN',
               ),
             }
           })
           .withAnalytics({ page: 'noteworthy_accounts' }),
-        O = n('UZjl'),
-        v = { page: 'noteworthy_accounts', section: 'main' },
-        y = o.a.createElement(i.a, { withTopicsToFollow: !1 }),
-        P = function (e) {
+        b = n('UZjl'),
+        E = { page: 'noteworthy_accounts', section: 'main' },
+        T = i.a.createElement(r.a, { withTopicsToFollow: !1 }),
+        _ = function (e) {
           var t = e.history,
             n = e.module,
-            r = e.topic,
-            i = e.topicId,
-            c = null != r && r.name ? ''.concat(r.name) : '',
-            a = '/i/topics/'.concat(i)
-          return o.a.createElement(O.a, {
-            backLocation: a,
+            a = e.topic,
+            r = e.topicId,
+            o = null != a && a.name ? ''.concat(a.name) : '',
+            c = '/i/topics/'.concat(r)
+          return i.a.createElement(b.a, {
+            backLocation: c,
             history: t,
-            initialPageNamespace: v,
+            initialPageNamespace: E,
             module: n,
-            sidebarContent: y,
+            sidebarContent: T,
             timelinePrefix: 'noteworthy-accounts',
-            title: c,
+            title: o,
           })
         },
-        j = g(P)
-      t.default = j
+        y = v(_)
+      t.default = y
     },
     owBv: function (e, t, n) {
       'use strict'
-      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
-      var r = n('KEM+'),
-        o = n.n(r),
-        i = n('lTXM'),
-        c = n('m3Bd'),
-        a = n.n(c),
+      var a = n('yiKp'),
+        i = n.n(a),
+        r = n('lTXM'),
+        o = n('m3Bd'),
+        c = n.n(o),
         s = (n('z84I'), n('ho0z'), n('YeIG')),
         u = n('kLu5'),
-        p = n('7MdP')
-      function l(e, t) {
-        var n = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
-          t &&
-            (r = r.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            n.push.apply(n, r)
-        }
-        return n
-      }
-      function f(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? l(Object(n), !0).forEach(function (t) {
-                o()(e, t, n[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : l(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-              })
-        }
-        return e
-      }
-      var d = function (e) {
+        l = n('7MdP'),
+        p = ['__typename', 'facepile', 'topic'],
+        d = function (e) {
           var t = Object(u.b)(),
             n = (function (e) {
               if ('SegmentedTimelines' === e.body.__typename) {
@@ -838,26 +682,26 @@
                     graphQLTimelineId: e.timeline.id,
                     id: e.id,
                     labelText: e.labelText,
-                    scribeConfig: Object(s.a)(e.scribeConfig) ? void 0 : f({}, e.scribeConfig),
+                    scribeConfig: Object(s.a)(e.scribeConfig) ? void 0 : i()({}, e.scribeConfig),
                     refreshIntervalSec: e.refreshIntervalSec,
                   }
                 })
                 return { initialTabId: e.body.initialTimeline && e.body.initialTimeline.id, tabs: t }
               }
             })(e),
-            r = (function (e, t) {
+            a = (function (e, t) {
               var n = t.header
               if (n && 'TopicPageHeader' === n.__typename) {
                 n.__typename
-                var r = n.facepile,
-                  o = n.topic,
-                  i = a()(n, ['__typename', 'facepile', 'topic']),
-                  c = r && Object(p.b)(e, r),
-                  s = Object(p.a)(e, o)
-                return f(f({}, i), {}, { topicId: s, facepile: c })
+                var a = n.facepile,
+                  r = n.topic,
+                  o = c()(n, p),
+                  s = a && Object(l.b)(e, a),
+                  u = Object(l.a)(e, r)
+                return i()(i()({}, o), {}, { topicId: u, facepile: s })
               }
             })(t, e),
-            o = (function (e, t) {
+            r = (function (e, t) {
               var n = t.navBar
               if (!n) return {}
               switch (n.__typename) {
@@ -865,7 +709,7 @@
                   return { title: n.title, subtitle: n.subtitle }
                 case 'TopicPageNavBar':
                   return {
-                    navBar: { topicId: Object(p.a)(e, n.topic), clientEventInfo: n.clientEventInfo },
+                    navBar: { topicId: Object(l.a)(e, n.topic), clientEventInfo: n.clientEventInfo },
                     title: n.topic.name,
                     subtitle: void 0,
                   }
@@ -878,47 +722,20 @@
             pageConfiguration: {
               id: e.id,
               tabs: n,
-              header: r,
-              navBar: o.navBar && o.navBar,
-              title: o.title,
-              subtitle: o.subtitle,
-              scribeConfig: f({}, e.scribeConfig),
+              header: a,
+              navBar: r.navBar && r.navBar,
+              title: r.title,
+              subtitle: r.subtitle,
+              scribeConfig: i()({}, e.scribeConfig),
             },
           }
         },
         m = n('WpDa'),
-        b = n('IcAo')
-      function h(e, t) {
-        var n = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
-          t &&
-            (r = r.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            n.push.apply(n, r)
-        }
-        return n
-      }
-      function g(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? h(Object(n), !0).forEach(function (t) {
-                o()(e, t, n[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : h(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-              })
-        }
-        return e
-      }
+        f = n('IcAo')
       t.a = function (e) {
         var t,
           n,
-          r =
+          a =
             'Timeline' === (t = e.body).__typename && t.timeline
               ? Object(m.a)(t.timeline)
               : 'SegmentedTimelines' === t.__typename &&
@@ -926,11 +743,11 @@
                 void 0 !== n &&
                 n.timeline.timeline
               ? Object(m.a)(t.initialTimeline.timeline.timeline)
-              : Object(m.a)(i.c),
+              : Object(m.a)(r.c),
           o = d(e),
           c = o.globalObjects,
-          a = o.pageConfiguration
-        return g(g({}, r), {}, { globalObjects: Object(b.a)(c, r.globalObjects), pageConfiguration: a })
+          s = o.pageConfiguration
+        return i()(i()({}, a), {}, { globalObjects: Object(f.a)(c, a.globalObjects), pageConfiguration: s })
       }
     },
   },

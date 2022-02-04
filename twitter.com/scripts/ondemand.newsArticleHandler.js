@@ -1,43 +1,43 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [342],
+  [343],
   {
-    '0mK8': function (e, t, r) {
+    '0mK8': function (e, t, a) {
       'use strict'
-      r.d(t, 'a', function () {
-        return m
+      a.d(t, 'a', function () {
+        return u
       }),
-        r.d(t, 'b', function () {
+        a.d(t, 'b', function () {
           return g
         }),
-        r.d(t, 'c', function () {
-          return b
+        a.d(t, 'c', function () {
+          return h
         })
-      r('ho0z'), r('uFXj')
-      var n = r('ERkP'),
-        a = r.n(n),
-        o = r('MWbm'),
-        i = r('GcQN'),
-        c = r('PU7B'),
-        l = r('/WPq'),
-        s = r('78ol'),
-        d = r('jV+4'),
-        u = r('rHpw'),
-        m = function (e) {
+      a('ho0z'), a('uFXj')
+      var r = a('ERkP'),
+        n = a.n(r),
+        o = a('MWbm'),
+        i = a('GcQN'),
+        c = a('PU7B'),
+        l = a('/WPq'),
+        s = a('78ol'),
+        d = a('jV+4'),
+        m = a('rHpw'),
+        u = function (e) {
           var t = e.author,
-            r = e.color,
-            n = void 0 === r ? 'normal' : r,
+            a = e.color,
+            r = void 0 === a ? 'normal' : a,
             o = e.size,
             i = void 0 === o ? 'subtext2' : o,
             c = e.style,
             l = e.withHoverCard,
             s = void 0 === l || l,
-            u = e.withLink,
-            m = void 0 !== u && u,
+            m = e.withLink,
+            u = void 0 !== m && m,
             g = e.withScreenName,
-            b = void 0 !== g && g
-          return a.a.createElement(d.a, {
+            h = void 0 !== g && g
+          return n.a.createElement(d.a, {
             avatarSize: { subtext2: 'small', body: 'medium', headline1: 'large' }[i],
-            color: n,
+            color: r,
             isProtected: t.protected,
             isVerified: t.verified,
             name: t.name,
@@ -45,33 +45,33 @@
             profileImageUrl: t.profile_image_url_https,
             screenName: t.screen_name,
             screenNameSize: i,
-            style: [h.authorUserName, c],
+            style: [b.authorUserName, c],
             withHoverCard: s,
-            withLink: m,
-            withScreenName: b,
+            withLink: u,
+            withScreenName: h,
           })
         },
         g = function (e) {
           var t = e.style
-          return a.a.createElement(
+          return n.a.createElement(
             o.a,
-            { style: [h.lightningBadge, t] },
-            a.a.createElement(i.a, { style: h.lightningIcon }),
+            { style: [b.lightningBadge, t] },
+            n.a.createElement(i.a, { style: b.lightningIcon }),
           )
         },
-        b = function (e) {
+        h = function (e) {
           var t = e.icon
-          return a.a.createElement(
+          return n.a.createElement(
             o.a,
-            { style: h.placeholderIconContainer },
+            { style: b.placeholderIconContainer },
             'news' === t
-              ? a.a.createElement(c.a, { style: h.placeholderIcon })
+              ? n.a.createElement(c.a, { style: b.placeholderIcon })
               : 'lists' === t
-              ? a.a.createElement(l.a, { style: h.placeholderIcon })
-              : a.a.createElement(s.a, { style: h.placeholderIcon }),
+              ? n.a.createElement(l.a, { style: b.placeholderIcon })
+              : n.a.createElement(s.a, { style: b.placeholderIcon }),
           )
         },
-        h = u.a.create(function (e) {
+        b = m.a.create(function (e) {
           return {
             authorUserName: { alignItems: 'center' },
             lightningBadge: {
@@ -101,22 +101,22 @@
           }
         })
     },
-    'a+ad': function (e, t, r) {
+    'a+ad': function (e, t, a) {
       'use strict'
-      r.r(t)
-      var n = r('tPQo'),
-        a = (r('hBvt'), r('0mK8')),
-        o = r('ERkP'),
-        i = r.n(o),
-        c = r('MWbm'),
-        l = r('htQn'),
-        s = r('t62R'),
-        d = r('9Xij'),
-        u = r('TIdA'),
-        m = r('A91F'),
-        g = r('rHpw'),
-        b = '100px',
-        h = '70px',
+      a.r(t)
+      var r = a('tPQo'),
+        n = (a('hBvt'), a('0mK8')),
+        o = a('ERkP'),
+        i = a.n(o),
+        c = a('MWbm'),
+        l = a('htQn'),
+        s = a('t62R'),
+        d = a('9Xij'),
+        m = a('TIdA'),
+        u = a('A91F'),
+        g = a('rHpw'),
+        h = '100px',
+        b = '70px',
         p = g.a.create(function (e) {
           return {
             root: {
@@ -129,10 +129,10 @@
               backgroundColor: e.colors.gray200,
               borderRadius: e.borderRadii.xLarge,
               height: '15%',
-              maxHeight: b,
-              maxWidth: b,
-              minHeight: h,
-              minWidth: h,
+              maxHeight: h,
+              maxWidth: h,
+              minHeight: b,
+              minWidth: b,
               overflow: 'hidden',
               width: '15%',
             },
@@ -142,13 +142,13 @@
         }),
         f = function (e) {
           var t = e.author,
-            r = e.link,
-            n = e.onClick,
+            a = e.link,
+            r = e.onClick,
             o = e.originalImage,
             g = e.title
           return i.a.createElement(
             l.a,
-            { link: r, onClick: n, style: p.root },
+            { link: a, onClick: r, style: p.root },
             i.a.createElement(
               c.a,
               { style: p.details },
@@ -162,51 +162,23 @@
                 d.a,
                 { ratio: 1 },
                 o
-                  ? i.a.createElement(u.a, { accessibilityLabel: '', aspectMode: m.a.SQUARE, image: o })
-                  : i.a.createElement(a.c, { icon: 'news' }),
+                  ? i.a.createElement(m.a, { accessibilityLabel: '', aspectMode: u.a.SQUARE, image: o })
+                  : i.a.createElement(n.c, { icon: 'news' }),
               ),
             ),
           )
         }
-      t.default = Object(n.a)(f, function () {})
+      t.default = Object(r.a)(f, function () {})
     },
-    tPQo: function (e, t, r) {
+    tPQo: function (e, t, a) {
       'use strict'
-      r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
-      var n = r('KEM+'),
-        a = r.n(n),
-        o = r('ezF+'),
-        i = r('VPAj'),
-        c = r('caTy'),
-        l = r('zh9S'),
-        s = r('P1r1')
-      function d(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
-        }
-        return r
-      }
-      function u(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? d(Object(r), !0).forEach(function (t) {
-                a()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : d(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
-        }
-        return e
-      }
+      var r = a('yiKp'),
+        n = a.n(r),
+        o = a('ezF+'),
+        i = a('VPAj'),
+        c = a('caTy'),
+        l = a('zh9S'),
+        s = a('P1r1')
       t.a = function (e, t) {
         return o.g({
           isFocusable: Object(i.a)(!0),
@@ -216,23 +188,23 @@
             return { dataSaverMode: s.k }
           },
           createProps: function (e) {
-            var r = e.actions.scribe,
-              n = e.data.dataSaverMode,
-              a = e.entry,
-              o = e.scribeNamespace,
-              i = a.content,
-              l = i.landingUrl && Object(c.b)(i.landingUrl),
-              s = t({ content: i }),
-              d = {
-                author: i.author,
-                link: l,
-                originalImage: n ? void 0 : i.originalImage,
+            var a = e.actions.scribe,
+              r = e.data.dataSaverMode,
+              o = e.entry,
+              i = e.scribeNamespace,
+              l = o.content,
+              s = l.landingUrl && Object(c.b)(l.landingUrl),
+              d = t({ content: l }),
+              m = {
+                author: l.author,
+                link: s,
+                originalImage: r ? void 0 : l.originalImage,
                 onClick: function () {
-                  r(u(u({}, o), {}, { action: 'click' }), void 0)
+                  a(n()(n()({}, i), {}, { action: 'click' }), void 0)
                 },
-                title: i.title,
+                title: l.title,
               }
-            return u(u({}, d), s)
+            return n()(n()({}, m), d)
           },
         })
       }

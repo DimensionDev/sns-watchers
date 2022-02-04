@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [161],
+  [162],
   {
     '+0pD': function (e, t) {
       var n =
@@ -7,10 +7,10 @@
         (function () {
           return Object.prototype.toString.call(arguments)
         })()
-      function r(e) {
+      function i(e) {
         return '[object Arguments]' == Object.prototype.toString.call(e)
       }
-      function i(e) {
+      function r(e) {
         return (
           (e &&
             'object' == typeof e &&
@@ -20,11 +20,11 @@
           !1
         )
       }
-      ;((t = e.exports = n ? r : i).supported = r), (t.unsupported = i)
+      ;((t = e.exports = n ? i : r).supported = i), (t.unsupported = r)
     },
     '06eB': function (e, t, n) {
-      var r = Array.prototype.slice,
-        i = n('kgfz'),
+      var i = Array.prototype.slice,
+        r = n('kgfz'),
         o = n('+0pD'),
         a = (e.exports = function (e, t, n) {
           return (
@@ -40,7 +40,7 @@
                     var u, d
                     if (s(e) || s(t)) return !1
                     if (e.prototype !== t.prototype) return !1
-                    if (o(e)) return !!o(t) && ((e = r.call(e)), (t = r.call(t)), a(e, t, n))
+                    if (o(e)) return !!o(t) && ((e = i.call(e)), (t = i.call(t)), a(e, t, n))
                     if (c(e)) {
                       if (!c(t)) return !1
                       if (e.length !== t.length) return !1
@@ -48,8 +48,8 @@
                       return !0
                     }
                     try {
-                      var l = i(e),
-                        h = i(t)
+                      var l = r(e),
+                        h = r(t)
                     } catch (f) {
                       return !1
                     }
@@ -74,57 +74,29 @@
     },
     '3AAD': function (e, t, n) {
       'use strict'
-      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
-      var r = n('KEM+'),
-        i = n.n(r)
-      function o(e, t) {
-        var n = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
-          t &&
-            (r = r.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            n.push.apply(n, r)
-        }
-        return n
-      }
-      function a(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? o(Object(n), !0).forEach(function (t) {
-                i()(e, t, n[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : o(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-              })
-        }
-        return e
-      }
-      var s = a(a({}, n('7n04').a), {}, { pinToNewestWhenAtNewest: !0 })
-      t.a = s
+      var i = n('yiKp'),
+        r = n.n(i),
+        o = n('7n04'),
+        a = r()(r()({}, o.a), {}, { pinToNewestWhenAtNewest: !0 })
+      t.a = a
     },
     '64vW': function (e, t, n) {
       'use strict'
-      var r = n('ERkP'),
-        i = n.n(r).a.createContext({ heightsReady: !0 })
-      t.a = i
+      var i = n('ERkP'),
+        r = n.n(i).a.createContext({ heightsReady: !0 })
+      t.a = r
     },
     FwSR: function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'resetIsModalScrollerRendered', function () {
-          return xe
+          return Ee
         }),
         n.d(t, 'default', function () {
-          return Ce
+          return Oe
         })
-      n('OZaJ')
-      var r = n('RhWx'),
-        i = n.n(r),
+      var i = n('RhWx'),
+        r = n.n(i),
         o = n('VrFO'),
         a = n.n(o),
         s = n('Y9Ll'),
@@ -133,20 +105,18 @@
         d = n.n(u),
         l = n('5Yy7'),
         h = n.n(l),
-        f = n('N+ot'),
-        p = n.n(f),
-        m = n('AuHH'),
-        _ = n.n(m),
-        g = n('KEM+'),
+        f = n('2VqO'),
+        m = n.n(f),
+        _ = n('KEM+'),
+        p = n.n(_),
+        g = (n('z84I'), n('XygZ'), n('hBpG'), n('7x/C'), n('5BYb'), n('ERkP')),
         v = n.n(g),
-        I = (n('z84I'), n('XygZ'), n('hBpG'), n('5BYb'), n('ERkP')),
-        w = n.n(I),
-        y = (function () {
-          function e(t, n, r, i, o) {
+        I = (function () {
+          function e(t, n, i, r, o) {
             a()(this, e),
               (this.id = t),
-              (this._renderer = r),
-              (this.canBeAnchor = i),
+              (this._renderer = i),
+              (this.canBeAnchor = r),
               (this.data = n),
               (this.sortIndex = o)
           }
@@ -162,33 +132,32 @@
             e
           )
         })(),
-        b = function (e, t, n, r) {
-          var i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : '-1'
-          return new y(e, t, n, r, i)
+        w = function (e, t, n, i) {
+          var r = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : '-1'
+          return new I(e, t, n, i, r)
         },
-        R = (n('yH/f'), Object.freeze({ FocusedItem: 'focusedItem', Anchor: 'anchor' })),
-        O = function (e) {
-          return { anchor: e, type: R.Anchor }
+        b = (n('yH/f'), Object.freeze({ FocusedItem: 'focusedItem', Anchor: 'anchor' })),
+        y = function (e) {
+          return { anchor: e, type: b.Anchor }
         },
-        A = function (e) {
-          return { itemId: e, type: R.FocusedItem }
+        R = function (e) {
+          return { itemId: e, type: b.FocusedItem }
         },
-        H = n('OrGc'),
+        A = n('OrGc'),
         T = n('hACr'),
-        S = n('7N4s'),
-        P = n('3AAD'),
+        H = n('7N4s'),
+        S = n('3AAD'),
         E = n('oi7R'),
-        F = n('JD1h'),
-        j = n('aWzz'),
-        x = n('oQhu'),
-        C = n('+d3d'),
-        N = n('fs1G'),
-        B = n('0zXz'),
-        M =
-          (n('m9LP'),
-          n('7x/C'),
+        O = n('JD1h'),
+        F = n('aWzz'),
+        P = n('oQhu'),
+        x = n('+d3d'),
+        C = n('fs1G'),
+        N = n('0zXz'),
+        B =
+          (n('lTEL'),
+          n('m9LP'),
           n('87if'),
-          n('lTEL'),
           n('kYxP'),
           n('LqLs'),
           n('jwue'),
@@ -200,8 +169,8 @@
           n('KOtZ'),
           n('zrc3')),
         V = n('7nmT'),
-        L = n.n(V),
-        k = function (e) {
+        M = n.n(V),
+        j = function (e) {
           var t
           return null ===
             (t = e.find(function (e) {
@@ -210,20 +179,20 @@
             ? void 0
             : t.id
         },
-        D = n('dPJJ'),
-        U = n('E6XO'),
-        z = n('jHwr'),
-        W = (function () {
+        L = n('dPJJ'),
+        k = n('E6XO'),
+        U = n('jHwr'),
+        z = (function () {
           function e(t) {
             var n = t.listLength,
-              r = t.listRect,
-              i = t.renderedItems,
+              i = t.listRect,
+              r = t.renderedItems,
               o = t.viewportRect
             a()(this, e),
               (this._viewportRect = o),
-              (this._listRect = r),
+              (this._listRect = i),
               (this._listLength = n),
-              (this._renderedItems = i)
+              (this._renderedItems = r)
           }
           return (
             c()(e, [
@@ -255,16 +224,16 @@
             e
           )
         })(),
-        K = n('64vW'),
-        Y = n('Resy'),
-        J = (function () {
-          function e(t, n, r, i) {
+        D = n('64vW'),
+        W = n('Resy'),
+        K = (function () {
+          function e(t, n, i, r) {
             var o = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 0
             a()(this, e),
               (this.itemId = t),
               (this.offset = n),
-              (this.visible = r),
-              (this.canBeAnchor = i),
+              (this.visible = i),
+              (this.canBeAnchor = r),
               (this.height = o)
           }
           return (
@@ -272,141 +241,95 @@
               {
                 key: 'getRectInViewport',
                 value: function () {
-                  return new Y.a(this.offset, this.height)
+                  return new W.a(this.offset, this.height)
                 },
               },
             ]),
             e
           )
         })(),
-        q = n('z0MJ'),
-        Z = n.n(q),
-        X = n('pQ3Z'),
-        G = n.n(X),
-        Q = n('iBK2'),
-        $ = n('gbD7'),
-        ee = n('aITJ'),
-        te = n('Irs7'),
-        ne = n('v6aA'),
-        re = (n('+KXO'), n('1t7P'), n('daRM'), n('FtHn'), n('ddV6')),
-        ie = n.n(re),
+        Y = n('z0MJ'),
+        q = n.n(Y),
+        J = n('pQ3Z'),
+        Z = n.n(J),
+        X = n('iBK2'),
+        G = n('gbD7'),
+        Q = n('aITJ'),
+        $ = n('Irs7'),
+        ee = n('v6aA'),
+        te = n('yiKp'),
+        ne = n.n(te),
+        ie = n('ddV6'),
+        re = n.n(ie),
         oe = n('38/B'),
         ae = n('06eB'),
         se = n.n(ae),
         ce = n('mN6z'),
-        ue = w.a.createContext({
+        ue = v.a.createContext({
           onAnimationStarted: function () {},
           onAnimationEnded: function () {},
           onHeightChanged: function () {},
-        })
-      function de(e, t) {
-        var n = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e)
-          t &&
-            (r = r.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            n.push.apply(n, r)
-        }
-        return n
-      }
-      function le(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? de(Object(n), !0).forEach(function (t) {
-                v()(e, t, n[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : de(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-              })
-        }
-        return e
-      }
-      function he(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var n,
-            r = _()(e)
-          if (t) {
-            var i = _()(this).constructor
-            n = Reflect.construct(r, arguments, i)
-          } else n = r.apply(this, arguments)
-          return p()(this, n)
-        }
-      }
-      var fe = function () {
+        }),
+        de = function () {
           return window.performance ? window.performance.now() : Date.now()
         },
-        pe = 'transform 0.15s linear',
-        me = (function (e) {
+        le = 'transform 0.15s linear',
+        he = (function (e) {
           h()(n, e)
-          var t = he(n)
-          function n(e, r) {
-            var i
+          var t = m()(n)
+          function n(e, i) {
+            var r
             a()(this, n),
-              (i = t.call(this, e, r)),
-              v()(d()(i), '_contentsFocusable', !1),
-              v()(d()(i), '_perfReported', !1),
-              v()(d()(i), '_shouldAnimateTranslate', !1),
-              v()(d()(i), '_observeElement', function (e) {
-                var t = i._resizeObserver
+              (r = t.call(this, e, i)),
+              p()(d()(r), '_contentsFocusable', !1),
+              p()(d()(r), '_perfReported', !1),
+              p()(d()(r), '_shouldAnimateTranslate', !1),
+              p()(d()(r), '_observeElement', function (e) {
+                var t = r._resizeObserver
                 t && (t.disconnect(), t.observe(e))
               }),
-              v()(d()(i), '_handleResize', function (e) {
-                var t = i.props,
+              p()(d()(r), '_handleResize', function (e) {
+                var t = r.props,
                   n = t.item,
-                  r = t.onHeightChanged,
-                  o = ie()(e, 1)[0],
-                  a = (o && Math.floor(o.contentRect.height)) !== (i._currentHeight && Math.floor(i._currentHeight))
-                o && a && ((i._currentHeight = o.contentRect.height), r(n.id, o.contentRect.height)), i._recordTTFV()
+                  i = t.onHeightChanged,
+                  o = re()(e, 1)[0],
+                  a = (o && Math.floor(o.contentRect.height)) !== (r._currentHeight && Math.floor(r._currentHeight))
+                o && a && ((r._currentHeight = o.contentRect.height), i(n.id, o.contentRect.height)), r._recordTTFV()
               }),
-              v()(d()(i), '_setRef', function (e) {
-                var t = i.props,
+              p()(d()(r), '_setRef', function (e) {
+                var t = r.props,
                   n = t.item,
-                  r = t.setAPI
-                e ? ((i._element = e), r(n.id, d()(i)), i._observeElement(e)) : (r(n.id, void 0), (i._element = void 0))
+                  i = t.setAPI
+                e ? ((r._element = e), i(n.id, d()(r)), r._observeElement(e)) : (i(n.id, void 0), (r._element = void 0))
               }),
-              v()(d()(i), '_setIsItemFocusable', function (e) {
-                i._contentsFocusable = e
+              p()(d()(r), '_setIsItemFocusable', function (e) {
+                r._contentsFocusable = e
               }),
-              v()(d()(i), '_handleAnimationStarted', function () {
-                var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : pe
-                i._resizeObserver && i._resizeObserver.disconnect(),
-                  i.props.onAnimationStarted(i.props.item.id, e),
-                  i._animationTTLTimeoutId && clearTimeout(i._animationTTLTimeoutId),
-                  (i._animationTTLTimeoutId = setTimeout(i._handleAnimationEnded, 1e3))
+              p()(d()(r), '_handleAnimationStarted', function () {
+                var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : le
+                r._resizeObserver && r._resizeObserver.disconnect(),
+                  r.props.onAnimationStarted(r.props.item.id, e),
+                  r._animationTTLTimeoutId && clearTimeout(r._animationTTLTimeoutId),
+                  (r._animationTTLTimeoutId = setTimeout(r._handleAnimationEnded, 1e3))
               }),
-              v()(d()(i), '_handleAnimationEnded', function () {
-                i._animationTTLTimeoutId && (clearTimeout(i._animationTTLTimeoutId), (i._animationTTLTimeoutId = null)),
-                  i._element && i._observeElement(i._element),
-                  i.props.onAnimationEnded(i.props.item.id)
+              p()(d()(r), '_handleAnimationEnded', function () {
+                r._animationTTLTimeoutId && (clearTimeout(r._animationTTLTimeoutId), (r._animationTTLTimeoutId = null)),
+                  r._element && r._observeElement(r._element),
+                  r.props.onAnimationEnded(r.props.item.id)
               }),
-              v()(d()(i), '_handleHeightChanged', function (e) {
-                ;(i._currentHeight = e), i.props.onHeightChanged(i.props.item.id, e)
+              p()(d()(r), '_handleHeightChanged', function (e) {
+                ;(r._currentHeight = e), r.props.onHeightChanged(r.props.item.id, e)
               })
-            var o = ee.b.isSafari() ? window.PolyfillResizeObserver : window.ResizeObserver
+            var o = Q.b.isSafari() ? window.PolyfillResizeObserver : window.ResizeObserver
             return (
-              (i._resizeObserver = new o(i._handleResize)),
-              (i._animationContext = {
-                onAnimationEnded: i._handleAnimationEnded,
-                onAnimationStarted: i._handleAnimationStarted,
-                onHeightChanged: i._handleHeightChanged,
+              (r._resizeObserver = new o(r._handleResize)),
+              (r._animationContext = {
+                onAnimationEnded: r._handleAnimationEnded,
+                onAnimationStarted: r._handleAnimationStarted,
+                onHeightChanged: r._handleHeightChanged,
               }),
-              (i._perfStart = fe()),
-              i
+              (r._perfStart = de()),
+              r
             )
           }
           return (
@@ -416,13 +339,13 @@
                 value: function (e) {
                   var t = this.props,
                     n = t.item,
-                    r = t.positioningStyle,
-                    i = t.shouldAnimate,
+                    i = t.positioningStyle,
+                    r = t.shouldAnimate,
                     o = t.visible,
-                    a = !Object(ce.a)(e.positioningStyle, r)
+                    a = !Object(ce.a)(e.positioningStyle, i)
                   return (
                     (this._shouldAnimateTranslate = a && e.visible === o),
-                    !se()(e.item, n) || a || e.visible !== o || e.shouldAnimate !== i
+                    !se()(e.item, n) || a || e.visible !== o || e.shouldAnimate !== r
                   )
                 },
               },
@@ -440,8 +363,8 @@
                 value: function (e) {
                   var t = this.props,
                     n = t.item,
-                    r = t.setAPI
-                  e.item.id !== n.id && (r(e.item.id, void 0), r(n.id, this)), this._recordTTFV()
+                    i = t.setAPI
+                  e.item.id !== n.id && (i(e.item.id, void 0), i(n.id, this)), this._recordTTFV()
                 },
               },
               {
@@ -472,23 +395,23 @@
                   var e = this.props,
                     t = e.item,
                     n = e.shouldAnimate,
-                    r = e.translationTransitionStyle,
-                    i = e.visible,
-                    o = this._shouldAnimateTranslate && !oe.a.reducedMotionEnabled ? r : 'opacity 0.3s ease-out',
-                    a = le(
-                      le({}, this.props.positioningStyle),
+                    i = e.translationTransitionStyle,
+                    r = e.visible,
+                    o = this._shouldAnimateTranslate && !oe.a.reducedMotionEnabled ? i : 'opacity 0.3s ease-out',
+                    a = ne()(
+                      ne()({}, this.props.positioningStyle),
                       {},
                       {
                         position: 'absolute',
-                        opacity: i ? void 0 : 0.01,
+                        opacity: r ? void 0 : 0.01,
                         width: '100%',
                         transition: n && !this._isAnimationDisabled ? o : void 0,
                       },
                     )
-                  return w.a.createElement(
+                  return v.a.createElement(
                     ue.Provider,
                     { value: this._animationContext },
-                    w.a.createElement('div', { ref: this._setRef, style: a }, t.render(this._setIsItemFocusable)),
+                    v.a.createElement('div', { ref: this._setRef, style: a }, t.render(this._setIsItemFocusable)),
                   )
                 },
               },
@@ -498,129 +421,108 @@
                   var e = this.props,
                     t = e.item,
                     n = e.onVisible,
-                    r = e.visible
+                    i = e.visible
                   void 0 !== this._currentHeight &&
                     !this._perfReported &&
-                    r &&
-                    (n(t.id, fe() - this._perfStart), (this._perfReported = !0))
+                    i &&
+                    (n(t.id, de() - this._perfStart), (this._perfReported = !0))
                 },
               },
             ]),
             n
           )
-        })(w.a.Component)
-      v()(me, 'contextType', ne.a), v()(me, 'defaultProps', { translationTransitionStyle: pe })
-      var _e = n('VY6S'),
-        ge = n('Qyxo'),
-        ve = n('qdp+'),
-        Ie = n('/NU0'),
-        we = n('6vUc'),
-        ye = n('jat/'),
-        be = n('xN10'),
-        Re = n('Myq3')
-      function Oe(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var n,
-            r = _()(e)
-          if (t) {
-            var i = _()(this).constructor
-            n = Reflect.construct(r, arguments, i)
-          } else n = r.apply(this, arguments)
-          return p()(this, n)
-        }
-      }
-      var Ae = {},
-        He = function (e) {
+        })(v.a.Component)
+      p()(he, 'contextType', ee.a), p()(he, 'defaultProps', { translationTransitionStyle: le })
+      var fe = n('VY6S'),
+        me = n('Qyxo'),
+        _e = n('qdp+'),
+        pe = n('/NU0'),
+        ge = n('6vUc'),
+        ve = n('jat/'),
+        Ie = n('xN10'),
+        we = n('Myq3'),
+        be = {},
+        ye = function (e) {
           var t = e.cssPixels,
             n = e.dpr
           return Math.ceil(t * n) / n
         },
-        Te = (function (e) {
+        Re = (function (e) {
           h()(n, e)
-          var t = Oe(n)
-          function n(e, r) {
-            var i
+          var t = m()(n)
+          function n(e, i) {
+            var r
             a()(this, n),
-              (i = t.call(this, e, r)),
-              v()(d()(i), '_areAnchorsInvalidated', !1),
-              v()(d()(i), '_cells', new Map()),
-              v()(d()(i), '_cellAnimations', new Set()),
-              v()(d()(i), '_cellAnimationStyle', pe),
-              v()(d()(i), '_currentHeadroom', 0),
-              v()(d()(i), '_isFullScreened', !1),
-              v()(d()(i), '_isIdle', !0),
-              v()(d()(i), '_pendingHeightUpdates', new Map()),
-              v()(d()(i), '_previousScrollPosition', 0),
-              v()(d()(i), '_renderedItemsStatus', new Set()),
-              v()(d()(i), '_rootRef', w.a.createRef()),
-              v()(d()(i), '_slice', { start: 0, end: 0 }),
-              v()(d()(i), '_shouldScribeNextScroll', !0),
-              v()(d()(i), '_visibilityMeasurements', new Map()),
-              v()(d()(i), '_handleScroll', function () {
-                ;(i._wasPreviouslyAtNewestEnd = i.isAtNewest()),
-                  i._isInitialAnchoring ||
-                    i._viewport.scrollY() < 0 ||
-                    ((i._isIdle = !1), i._updateScrollEnd(), i._scheduleCriticalUpdateThrottled())
+              (r = t.call(this, e, i)),
+              p()(d()(r), '_areAnchorsInvalidated', !1),
+              p()(d()(r), '_cells', new Map()),
+              p()(d()(r), '_cellAnimations', new Set()),
+              p()(d()(r), '_cellAnimationStyle', le),
+              p()(d()(r), '_currentHeadroom', 0),
+              p()(d()(r), '_isFullScreened', !1),
+              p()(d()(r), '_isIdle', !0),
+              p()(d()(r), '_pendingHeightUpdates', new Map()),
+              p()(d()(r), '_previousScrollPosition', 0),
+              p()(d()(r), '_renderedItemsStatus', new Set()),
+              p()(d()(r), '_rootRef', v.a.createRef()),
+              p()(d()(r), '_slice', { start: 0, end: 0 }),
+              p()(d()(r), '_shouldScribeNextScroll', !0),
+              p()(d()(r), '_visibilityMeasurements', new Map()),
+              p()(d()(r), '_handleScroll', function () {
+                ;(r._wasPreviouslyAtNewestEnd = r.isAtNewest()),
+                  r._isInitialAnchoring ||
+                    r._viewport.scrollY() < 0 ||
+                    ((r._isIdle = !1), r._updateScrollEnd(), r._scheduleCriticalUpdateThrottled())
               }),
-              v()(
-                d()(i),
+              p()(
+                d()(r),
                 '_updateScrollEnd',
-                Object(_e.a)(function () {
-                  var e = i.props,
+                Object(fe.a)(function () {
+                  var e = r.props,
                     t = e.analytics,
                     n = e.onScrollEnd,
-                    r = i._viewport.scrollY() - i._previousScrollPosition
-                  ;(i._previousScrollPosition = i._viewport.scrollY()),
-                    i._shouldScribeNextScroll &&
-                      Math.abs(r) > 100 &&
-                      t.scribe({ action: 'scroll', data: { event_value: r } }),
-                    (i._shouldScribeNextScroll = !0),
-                    (i._isIdle = !0),
+                    i = r._viewport.scrollY() - r._previousScrollPosition
+                  ;(r._previousScrollPosition = r._viewport.scrollY()),
+                    r._shouldScribeNextScroll &&
+                      Math.abs(i) > 100 &&
+                      t.scribe({ action: 'scroll', data: { event_value: i } }),
+                    (r._shouldScribeNextScroll = !0),
+                    (r._isIdle = !0),
                     n(),
-                    i._scheduleCriticalUpdate()
+                    r._scheduleCriticalUpdate()
                 }, 200),
               ),
-              v()(d()(i), '_handleProgrammaticScroll', function () {
-                i._shouldScribeNextScroll = !1
+              p()(d()(r), '_handleProgrammaticScroll', function () {
+                r._shouldScribeNextScroll = !1
               }),
-              v()(d()(i), '_handleEnterFullscreen', function () {
-                i._isFullScreened = !0
+              p()(d()(r), '_handleEnterFullscreen', function () {
+                r._isFullScreened = !0
               }),
-              v()(d()(i), '_handleExitFullscreen', function () {
-                ;(i._isFullScreened = !1), i._scheduleCriticalUpdate()
+              p()(d()(r), '_handleExitFullscreen', function () {
+                ;(r._isFullScreened = !1), r._scheduleCriticalUpdate()
               }),
-              v()(
-                d()(i),
+              p()(
+                d()(r),
                 '_getPositioningContext',
-                Object(x.a)(function (e) {
+                Object(P.a)(function (e) {
                   return { heightsReady: e }
                 }),
               ),
-              v()(
-                d()(i),
+              p()(
+                d()(r),
                 '_getFinalRenderedItemsMemoized',
-                Object(x.a)(function (e, t) {
-                  var n = i._getItemMapMemoized(e)
-                  return Object(ge.a)(t, function (e) {
+                Object(P.a)(function (e, t) {
+                  var n = r._getItemMapMemoized(e)
+                  return Object(me.a)(t, function (e) {
                     var t = n.get(e.itemId)
                     return t && { item: t, offset: e.offset, visible: e.visible }
                   })
                 }),
               ),
-              v()(
-                d()(i),
+              p()(
+                d()(r),
                 '_getItemMapMemoized',
-                Object(x.a)(function (e) {
+                Object(P.a)(function (e) {
                   var t = new Map()
                   return (
                     e.forEach(function (e) {
@@ -630,21 +532,21 @@
                   )
                 }),
               ),
-              v()(d()(i), '_getInitialRenderedItems', function () {
-                var e = i.props,
+              p()(d()(r), '_getInitialRenderedItems', function () {
+                var e = r.props,
                   t = e.initialAnchor,
                   n = e.list,
-                  r = []
-                if (!t) return r
-                if (t.type === R.FocusedItem) {
-                  var o = Object(ve.a)(n, function (e) {
-                    return e.id === t.itemId ? new J(e.id, 0, !0, e.canBeAnchor) : void 0
+                  i = []
+                if (!t) return i
+                if (t.type === b.FocusedItem) {
+                  var o = Object(_e.a)(n, function (e) {
+                    return e.id === t.itemId ? new K(e.id, 0, !0, e.canBeAnchor) : void 0
                   })
-                  o && r.push(o)
-                } else if (t.type === R.Anchor && Object(Ie.a)(t.anchor.distanceToViewportTop)) {
+                  o && i.push(o)
+                } else if (t.type === b.Anchor && Object(pe.a)(t.anchor.distanceToViewportTop)) {
                   for (
                     var a = t.anchor,
-                      s = i._getDocumentViewportHeight(),
+                      s = r._getDocumentViewportHeight(),
                       c = a.distanceToViewportTop || 0,
                       u = n.findIndex(function (e) {
                         return e.id === a.id
@@ -655,30 +557,30 @@
 
                   ) {
                     var h = n[l],
-                      f = i._heights.get(h.id)
-                    if (!Object(Ie.a)(f)) break
-                    r.push(new J(h.id, d, !0, h.canBeAnchor)), (d += f), (l += 1)
+                      f = r._heights.get(h.id)
+                    if (!Object(pe.a)(f)) break
+                    i.push(new K(h.id, d, !0, h.canBeAnchor)), (d += f), (l += 1)
                   }
                   for (d = c, l = u - 1; l > -1 && d > 0; ) {
-                    var p = n[l],
-                      m = i._heights.get(p.id)
-                    if (!Object(Ie.a)(m)) break
-                    ;(d -= m), r.unshift(new J(p.id, d, !0, p.canBeAnchor)), (l -= 1)
+                    var m = n[l],
+                      _ = r._heights.get(m.id)
+                    if (!Object(pe.a)(_)) break
+                    ;(d -= _), i.unshift(new K(m.id, d, !0, m.canBeAnchor)), (l -= 1)
                   }
                 }
-                return r
+                return i
               }),
-              v()(d()(i), '_getViewportOffsetCorrection', function () {
-                var e = i._rootRef.current && i._rootRef.current.getBoundingClientRect()
-                if (!e || !i._viewport) return 0
-                var t = i._viewport instanceof E.a ? 0 : i._viewport.getRect().getTop()
-                return He({ cssPixels: e.top - t, dpr: i._devicePixelRatio })
+              p()(d()(r), '_getViewportOffsetCorrection', function () {
+                var e = r._rootRef.current && r._rootRef.current.getBoundingClientRect()
+                if (!e || !r._viewport) return 0
+                var t = r._viewport instanceof E.a ? 0 : r._viewport.getRect().getTop()
+                return ye({ cssPixels: e.top - t, dpr: r._devicePixelRatio })
               }),
-              v()(d()(i), 'getAnchors', function () {
-                var e = i._rootRef.current && i._rootRef.current.getBoundingClientRect(),
-                  t = i._measureRelativeViewportRect()
+              p()(d()(r), 'getAnchors', function () {
+                var e = r._rootRef.current && r._rootRef.current.getBoundingClientRect(),
+                  t = r._measureRelativeViewportRect()
                 return e && t
-                  ? i
+                  ? r
                       ._getItemsWithin(t)
                       .filter(function (e) {
                         return e.item.canBeAnchor
@@ -686,102 +588,102 @@
                       .map(function (e) {
                         return {
                           id: e.item.id,
-                          distanceToViewportTop: He({
-                            cssPixels: e.offset + i._getViewportOffsetCorrection(),
-                            dpr: i._devicePixelRatio,
+                          distanceToViewportTop: ye({
+                            cssPixels: e.offset + r._getViewportOffsetCorrection(),
+                            dpr: r._devicePixelRatio,
                           }),
-                          wasFocused: i._hasUserChangedFocus && e.item.id === i._activeEntryId,
+                          wasFocused: r._hasUserChangedFocus && e.item.id === r._activeEntryId,
                         }
                       })
                   : []
               }),
-              v()(d()(i), '_update', function () {
-                var e = i._measureRelativeViewportRect()
-                if (e && !i._isFullScreened) {
-                  var t = i._getAnchor(e)
-                  i._measureHeights(), t && (i._updateRenderedItems(t, e), (i._areAnchorsInvalidated = !1))
+              p()(d()(r), '_update', function () {
+                var e = r._measureRelativeViewportRect()
+                if (e && !r._isFullScreened) {
+                  var t = r._getAnchor(e)
+                  r._measureHeights(), t && (r._updateRenderedItems(t, e), (r._areAnchorsInvalidated = !1))
                 }
               }),
-              v()(d()(i), '_getItemsWithPositions', function (e) {
-                var t = i.props.list,
-                  n = i._getDistanceFromTop(e.itemId),
-                  r = e.offset - n,
+              p()(d()(r), '_getItemsWithPositions', function (e) {
+                var t = r.props.list,
+                  n = r._getDistanceFromTop(e.itemId),
+                  i = e.offset - n,
                   o = []
                 return (
                   t.forEach(function (e) {
-                    var t = i._getHeight(e)
-                    o.push(new J(e.id, r, i._heights.has(e.id), e.canBeAnchor, t)), (r += t)
+                    var t = r._getHeight(e)
+                    o.push(new K(e.id, i, r._heights.has(e.id), e.canBeAnchor, t)), (i += t)
                   }),
                   o
                 )
               }),
-              v()(d()(i), '_getSliceForCandidates', function (e, t) {
-                var n = Object(we.a)(e),
-                  r = Object(ye.a)(e)
-                return { start: n ? t.indexOf(n) : 0, end: r ? t.indexOf(r) + 1 : 0 }
+              p()(d()(r), '_getSliceForCandidates', function (e, t) {
+                var n = Object(ge.a)(e),
+                  i = Object(ve.a)(e)
+                return { start: n ? t.indexOf(n) : 0, end: i ? t.indexOf(i) + 1 : 0 }
               }),
-              v()(d()(i), '_getRenderCandidates', function (e, t) {
-                var n = i.props,
-                  r = n.minimumOffscreenToViewportRatio,
+              p()(d()(r), '_getRenderCandidates', function (e, t) {
+                var n = r.props,
+                  i = n.minimumOffscreenToViewportRatio,
                   o = n.preferredOffscreenToViewportRatio,
-                  a = Fe(t, r),
-                  s = Fe(t, o),
-                  c = i._isIdle && !i._isInitialAnchoring,
-                  u = i._getItemsWithPositions(e),
+                  a = Se(t, i),
+                  s = Se(t, o),
+                  c = r._isIdle && !r._isInitialAnchoring,
+                  u = r._getItemsWithPositions(e),
                   d = u.filter(function (e) {
-                    return i._getRenderedItemRectInViewport(e).doesIntersectWith(c ? s : a)
+                    return r._getRenderedItemRectInViewport(e).doesIntersectWith(c ? s : a)
                   }),
-                  l = i._getSliceForCandidates(d, u),
+                  l = r._getSliceForCandidates(d, u),
                   h = (function (e, t, n) {
                     if (n) return t
                     if (t.start >= e.start && t.end <= e.end && e.end - e.start <= 50) return e
                     if (t.start >= e.end || t.end <= e.start) return t
-                    var r = Math.max(e.start - t.start, t.end - e.end, 0)
-                    return { start: Math.min(e.start + r, t.start), end: Math.max(e.end - r, t.end) }
-                  })(i._slice, l, c),
+                    var i = Math.max(e.start - t.start, t.end - e.end, 0)
+                    return { start: Math.min(e.start + i, t.start), end: Math.max(e.end - i, t.end) }
+                  })(r._slice, l, c),
                   f = u.slice(h.start, h.end)
                 return { allItemsWithPositions: u, newRenderedItems: f, slice: h, arePreferredItemsRendered: c }
               }),
-              v()(d()(i), '_getIsHeightsReady', function (e) {
-                return Object(be.a)(e, function (e) {
+              p()(d()(r), '_getIsHeightsReady', function (e) {
+                return Object(Ie.a)(e, function (e) {
                   var t = e.itemId
-                  return i._heights.has(t)
+                  return r._heights.has(t)
                 })
               }),
-              v()(d()(i), '_getHeightBetweenItems', function (e, t) {
+              p()(d()(r), '_getHeightBetweenItems', function (e, t) {
                 return e && t
-                  ? i._getRenderedItemRectInViewport(t).getBottom() - i._getRenderedItemRectInViewport(e).getTop()
+                  ? r._getRenderedItemRectInViewport(t).getBottom() - r._getRenderedItemRectInViewport(e).getTop()
                   : 0
               }),
-              v()(d()(i), '_getRenderedItemRectInViewport', function (e) {
+              p()(d()(r), '_getRenderedItemRectInViewport', function (e) {
                 return e.getRectInViewport()
               }),
-              v()(d()(i), '_updateRenderedItems', function (e, t) {
-                var n = i._getRenderCandidates(e, t),
-                  r = n.allItemsWithPositions,
+              p()(d()(r), '_updateRenderedItems', function (e, t) {
+                var n = r._getRenderCandidates(e, t),
+                  i = n.allItemsWithPositions,
                   o = n.arePreferredItemsRendered,
                   a = n.newRenderedItems,
                   s = n.slice,
-                  c = 0 !== i._cellAnimations.size,
-                  u = i._shouldNormalize(e),
-                  d = Object(we.a)(r),
-                  l = Object(ye.a)(r),
-                  h = i._getHeightBetweenItems(d, l),
-                  f = h + i._calculateHeadroom(r, t),
-                  p = i._getIsHeightsReady(a),
-                  m = !(ee.b.isSafari() || ee.b.isIOS()),
-                  _ = (!c && p && (i._isIdle || m || f <= t.getHeight())) || (p && i._isInitialAnchoring),
+                  c = 0 !== r._cellAnimations.size,
+                  u = r._shouldNormalize(e),
+                  d = Object(ge.a)(i),
+                  l = Object(ve.a)(i),
+                  h = r._getHeightBetweenItems(d, l),
+                  f = h + r._calculateHeadroom(i, t),
+                  m = r._getIsHeightsReady(a),
+                  _ = !(Q.b.isSafari() || Q.b.isIOS()),
+                  p = (!c && m && (r._isIdle || _ || f <= t.getHeight())) || (m && r._isInitialAnchoring),
                   g = a
-                if (((i._slice = s), p && (i._isInitialAnchoring = !1), u && _)) {
-                  var v = i._normalization(e, a),
+                if (((r._slice = s), m && (r._isInitialAnchoring = !1), u && p)) {
+                  var v = r._normalization(e, a),
                     I = v.offset,
                     w = v.renderedItems
                   ;(g = w),
-                    i.setState({ renderedItems: w, listHeightWithHeadroom: f, shouldAnimate: !u }, function () {
+                    r.setState({ renderedItems: w, listHeightWithHeadroom: f, shouldAnimate: !u }, function () {
                       var e = t
-                      0 !== I && (i._viewport.scrollBy(-I), (e = i._measureRelativeViewportRect())),
+                      0 !== I && (r._viewport.scrollBy(-I), (e = r._measureRelativeViewportRect())),
                         e &&
-                          i._updatePositioning({
+                          r._updatePositioning({
                             renderedItems: g,
                             relativeViewportRect: e,
                             firstItem: d,
@@ -789,9 +691,9 @@
                           })
                     })
                 } else
-                  i.setState({ renderedItems: a, listHeightWithHeadroom: f, shouldAnimate: !0 }, function () {
-                    ;(!u && o) || i._scheduleUpdateDebounced(),
-                      i._updatePositioning({
+                  r.setState({ renderedItems: a, listHeightWithHeadroom: f, shouldAnimate: !0 }, function () {
+                    ;(!u && o) || r._scheduleUpdateDebounced(),
+                      r._updatePositioning({
                         renderedItems: g,
                         relativeViewportRect: t,
                         firstItem: d,
@@ -799,345 +701,345 @@
                       })
                   })
               }),
-              v()(d()(i), '_updatePositioning', function (e) {
+              p()(d()(r), '_updatePositioning', function (e) {
                 var t = e.firstItem,
                   n = e.newListHeight,
-                  r = e.relativeViewportRect,
+                  i = e.relativeViewportRect,
                   o = e.renderedItems,
-                  a = i.props,
+                  a = r.props,
                   s = a.list,
                   c = a.onPositionUpdate
-                if (i._getIsHeightsReady(o)) {
-                  var u = t ? i._getRenderedItemRectInViewport(t).getTop() : 0
+                if (r._getIsHeightsReady(o)) {
+                  var u = t ? r._getRenderedItemRectInViewport(t).getTop() : 0
                   c(
-                    new W({
-                      viewportRect: r,
-                      listRect: new Y.a(u, n),
+                    new z({
+                      viewportRect: i,
+                      listRect: new W.a(u, n),
                       listLength: s.length,
                       renderedItems: o.map(function (e) {
-                        return { id: e.itemId, rectangle: new Y.a(e.offset, i._getHeightForItemId(e.itemId)) }
+                        return { id: e.itemId, rectangle: new W.a(e.offset, r._getHeightForItemId(e.itemId)) }
                       }),
                     }),
                   )
                 }
               }),
-              v()(d()(i), '_shouldNormalize', function (e) {
-                return i.props.hasNewContentAtBottom
-                  ? i._getListOffset(e) - i._currentHeadroom != 0
-                  : 0 !== i._getListOffset(e)
+              p()(d()(r), '_shouldNormalize', function (e) {
+                return r.props.hasNewContentAtBottom
+                  ? r._getListOffset(e) - r._currentHeadroom != 0
+                  : 0 !== r._getListOffset(e)
               }),
-              v()(d()(i), '_normalization', function (e, t) {
-                var n = i._getListOffset(e)
+              p()(d()(r), '_normalization', function (e, t) {
+                var n = r._getListOffset(e)
                 return {
                   offset: n,
                   renderedItems: t.map(function (e) {
-                    return new J(e.itemId, e.offset - n, e.visible, e.canBeAnchor)
+                    return new K(e.itemId, e.offset - n, e.visible, e.canBeAnchor)
                   }),
                 }
               }),
-              v()(d()(i), '_calculateHeadroom', function (e, t) {
-                return i.props.withoutHeadroom
-                  ? ((i._currentHeadroom = 0), i._currentHeadroom)
-                  : i.props.hasNewContentAtBottom
-                  ? i._calculateTopHeadroom(e, t)
-                  : i._calculateBottomHeadroom(e, t)
+              p()(d()(r), '_calculateHeadroom', function (e, t) {
+                return r.props.withoutHeadroom
+                  ? ((r._currentHeadroom = 0), r._currentHeadroom)
+                  : r.props.hasNewContentAtBottom
+                  ? r._calculateTopHeadroom(e, t)
+                  : r._calculateBottomHeadroom(e, t)
               }),
-              v()(d()(i), '_calculateBottomHeadroom', function (e, t) {
-                var n = Object(Re.a)(e, function (e) {
+              p()(d()(r), '_calculateBottomHeadroom', function (e, t) {
+                var n = Object(we.a)(e, function (e) {
                     return e.canBeAnchor
                   }),
-                  r = Object(ye.a)(e)
-                if (!r) return (i._currentHeadroom = 0), i._currentHeadroom
-                var o = i._getRenderedItemRectInViewport(r),
-                  a = o.getBottom() - (n ? i._getRenderedItemRectInViewport(n).getTop() : o.getTop())
+                  i = Object(ve.a)(e)
+                if (!i) return (r._currentHeadroom = 0), r._currentHeadroom
+                var o = r._getRenderedItemRectInViewport(i),
+                  a = o.getBottom() - (n ? r._getRenderedItemRectInViewport(n).getTop() : o.getTop())
                 return (
-                  (i._currentHeadroom = Math.max(0, t.getHeight() - a + i._viewport.getOffsetBottom())),
-                  i._currentHeadroom
+                  (r._currentHeadroom = Math.max(0, t.getHeight() - a + r._viewport.getOffsetBottom())),
+                  r._currentHeadroom
                 )
               }),
-              v()(d()(i), '_calculateTopHeadroom', function (e, t) {
-                var n = Object(Re.a)(e, function (e) {
+              p()(d()(r), '_calculateTopHeadroom', function (e, t) {
+                var n = Object(we.a)(e, function (e) {
                     return e.canBeAnchor
                   }),
-                  r = Object(we.a)(e)
-                if (!r) return (i._currentHeadroom = 0), i._currentHeadroom
-                var o = i._getRenderedItemRectInViewport(r),
-                  a = (n ? i._getRenderedItemRectInViewport(n).getBottom() : o.getBottom()) - o.getTop(),
-                  s = i._getDocumentViewportHeight() - t.getHeight()
-                return (i._currentHeadroom = Math.max(0, t.getHeight() - a - s)), i._currentHeadroom
+                  i = Object(ge.a)(e)
+                if (!i) return (r._currentHeadroom = 0), r._currentHeadroom
+                var o = r._getRenderedItemRectInViewport(i),
+                  a = (n ? r._getRenderedItemRectInViewport(n).getBottom() : o.getBottom()) - o.getTop(),
+                  s = r._getDocumentViewportHeight() - t.getHeight()
+                return (r._currentHeadroom = Math.max(0, t.getHeight() - a - s)), r._currentHeadroom
               }),
-              v()(d()(i), '_getListOffset', function (e) {
-                if (!e) return i.props.hasNewContentAtBottom ? i._currentHeadroom : 0
-                var t = i._getDistanceFromTop(e.itemId)
-                return i.props.hasNewContentAtBottom ? e.offset - t - i._currentHeadroom : e.offset - t
+              p()(d()(r), '_getListOffset', function (e) {
+                if (!e) return r.props.hasNewContentAtBottom ? r._currentHeadroom : 0
+                var t = r._getDistanceFromTop(e.itemId)
+                return r.props.hasNewContentAtBottom ? e.offset - t - r._currentHeadroom : e.offset - t
               }),
-              v()(d()(i), '_getAnchorItemCandidates', function () {
-                var e = i.props.analytics,
-                  t = i._getFinalRenderedItems(),
+              p()(d()(r), '_getAnchorItemCandidates', function () {
+                var e = r.props.analytics,
+                  t = r._getFinalRenderedItems(),
                   n = t.filter(function (e) {
                     var t = e.item
-                    return t.canBeAnchor && (i._isInitialAnchoring || !!i._heights.get(t.id))
+                    return t.canBeAnchor && (r._isInitialAnchoring || !!r._heights.get(t.id))
                   })
-                if (i._areAnchorsInvalidated) {
-                  var r = t.filter(function (e) {
+                if (r._areAnchorsInvalidated) {
+                  var i = t.filter(function (e) {
                     var t,
                       n = e.item,
-                      r = null === (t = i._previousItemMap.get(n.id)) || void 0 === t ? void 0 : t.sortIndex
-                    return r === Q.a || n.sortIndex === Q.a || r === n.sortIndex
+                      i = null === (t = r._previousItemMap.get(n.id)) || void 0 === t ? void 0 : t.sortIndex
+                    return i === X.a || n.sortIndex === X.a || i === n.sortIndex
                   })
-                  if (r.length !== t.length) {
+                  if (i.length !== t.length) {
                     if (
                       (e.scribe({ element: 'scroller', action: 'hoisted_anchor_invalidation' }),
-                      i.context.featureSwitches.isTrue('responsive_web_hoisting_anchor_invalidation_enabled'))
+                      r.context.featureSwitches.isTrue('responsive_web_hoisting_anchor_invalidation_enabled'))
                     )
-                      return r
+                      return i
                   } else e.scribe({ element: 'scroller', action: 'no_hoisted_anchor_invalidation' })
                 }
                 return n
               }),
-              v()(d()(i), '_shouldPinToNewest', function () {
-                return !i._isInitialAnchoring && !!i.props.pinToNewestWhenAtNewest && i.isAtNewest()
+              p()(d()(r), '_shouldPinToNewest', function () {
+                return !r._isInitialAnchoring && !!r.props.pinToNewestWhenAtNewest && r.isAtNewest()
               }),
-              v()(d()(i), '_getAnchor', function (e) {
-                if (i._shouldPinToNewest()) {
-                  if (i.props.hasNewContentAtBottom) {
-                    var t = Object(ye.a)(i.state.renderedItems)
+              p()(d()(r), '_getAnchor', function (e) {
+                if (r._shouldPinToNewest()) {
+                  if (r.props.hasNewContentAtBottom) {
+                    var t = Object(ve.a)(r.state.renderedItems)
                     return t ? { itemId: t.itemId, offset: t.offset } : void 0
                   }
-                  var n = Object(we.a)(i.props.list)
+                  var n = Object(ge.a)(r.props.list)
                   return n ? { itemId: n.id, offset: 0 } : void 0
                 }
-                var r = function (t) {
+                var i = function (t) {
                     var n,
-                      r,
-                      i =
+                      i,
+                      r =
                         ((n = t),
-                        (r = e),
-                        Math.max(0, Math.min(n.getBottom(), r.getBottom()) - Math.max(n.getTop(), r.getTop())))
-                    return (t.getHeight() > 0 ? i / t.getHeight() : 0) > 0.01 ? 1 : 0
+                        (i = e),
+                        Math.max(0, Math.min(n.getBottom(), i.getBottom()) - Math.max(n.getTop(), i.getTop())))
+                    return (t.getHeight() > 0 ? r / t.getHeight() : 0) > 0.01 ? 1 : 0
                   },
                   o = function (t) {
                     return t.getBottom() - e.getTop()
                   },
-                  a = i._getAnchorItemCandidates(),
-                  s = Ee(a, function (e, t) {
-                    var n = new J(e.item.id, e.offset, e.visible, !0, i._getHeight(e.item)).getRectInViewport(),
-                      a = new J(t.item.id, t.offset, t.visible, !0, i._getHeight(t.item)).getRectInViewport()
-                    return i.props.hasNewContentAtBottom
-                      ? r(n) - r(a) || Math.abs(o(n)) - Math.abs(o(a))
-                      : r(n) - r(a) || Math.abs(o(a)) - Math.abs(o(n))
+                  a = r._getAnchorItemCandidates(),
+                  s = He(a, function (e, t) {
+                    var n = new K(e.item.id, e.offset, e.visible, !0, r._getHeight(e.item)).getRectInViewport(),
+                      a = new K(t.item.id, t.offset, t.visible, !0, r._getHeight(t.item)).getRectInViewport()
+                    return r.props.hasNewContentAtBottom
+                      ? i(n) - i(a) || Math.abs(o(n)) - Math.abs(o(a))
+                      : i(n) - i(a) || Math.abs(o(a)) - Math.abs(o(n))
                   })
                 if (s) return { itemId: s.item.id, offset: s.offset }
-                var c = Object(we.a)(a)
+                var c = Object(ge.a)(a)
                 if (c) return { itemId: c.item.id, offset: c.offset }
-                var u = Object(we.a)(i.props.list)
+                var u = Object(ge.a)(r.props.list)
                 return u ? { itemId: u.id, offset: 0 } : void 0
               }),
-              v()(d()(i), '_measureRelativeViewportRect', function () {
-                var e = i._rootRef.current
-                if (e) return i._viewport.getRect().translateBy(-e.getBoundingClientRect().top)
+              p()(d()(r), '_measureRelativeViewportRect', function () {
+                var e = r._rootRef.current
+                if (e) return r._viewport.getRect().translateBy(-e.getBoundingClientRect().top)
               }),
-              v()(d()(i), '_getHeight', function (e) {
+              p()(d()(r), '_getHeight', function (e) {
                 var t
-                return i._getHeightForItemId(e.id, null === (t = e.data) || void 0 === t ? void 0 : t.type)
+                return r._getHeightForItemId(e.id, null === (t = e.data) || void 0 === t ? void 0 : t.type)
               }),
-              v()(d()(i), '_getHeightForItemId', function (e) {
+              p()(d()(r), '_getHeightForItemId', function (e) {
                 var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : '',
-                  n = i.props.assumedItemHeight,
-                  r = i._heights.get(e),
-                  o = Object(Ie.a)(r) ? r : 'function' == typeof n ? n(t) : n
-                return He({ cssPixels: o, dpr: i._devicePixelRatio })
+                  n = r.props.assumedItemHeight,
+                  i = r._heights.get(e),
+                  o = Object(pe.a)(i) ? i : 'function' == typeof n ? n(t) : n
+                return ye({ cssPixels: o, dpr: r._devicePixelRatio })
               }),
-              v()(d()(i), '_getDistanceFromTop', function (e) {
-                var t = i.props.list,
+              p()(d()(r), '_getDistanceFromTop', function (e) {
+                var t = r.props.list,
                   n = t.findIndex(function (t) {
                     return t.id === e
                   })
                 return n >= 0
                   ? t.slice(0, n).reduce(function (e, t) {
-                      return i._getHeight(t) + e
+                      return r._getHeight(t) + e
                     }, 0)
                   : 0
               }),
-              v()(d()(i), '_getItemsWithin', function (e) {
-                return i._getFinalRenderedItems().filter(function (t) {
+              p()(d()(r), '_getItemsWithin', function (e) {
+                return r._getFinalRenderedItems().filter(function (t) {
                   var n = t.item,
-                    r = t.offset
-                  return new Y.a(r, i._getHeight(n)).doesIntersectWith(e)
+                    i = t.offset
+                  return new W.a(i, r._getHeight(n)).doesIntersectWith(e)
                 })
               }),
-              v()(d()(i), '_measureHeights', function () {
-                i._cells.forEach(function (e, t) {
-                  i._heights.set(t, e.measureHeight())
+              p()(d()(r), '_measureHeights', function () {
+                r._cells.forEach(function (e, t) {
+                  r._heights.set(t, e.measureHeight())
                 })
               }),
-              v()(d()(i), '_handleAnimationStarted', function (e, t) {
-                i._cellAnimations.add(e), t && (i._cellAnimationStyle = t)
+              p()(d()(r), '_handleAnimationStarted', function (e, t) {
+                r._cellAnimations.add(e), t && (r._cellAnimationStyle = t)
               }),
-              v()(d()(i), '_handleAnimationEnded', function (e) {
-                i._cellAnimations.delete(e), (i._cellAnimationStyle = pe)
+              p()(d()(r), '_handleAnimationEnded', function (e) {
+                r._cellAnimations.delete(e), (r._cellAnimationStyle = le)
               }),
-              v()(d()(i), '_handleItemVisible', function (e, t) {
-                i._visibilityMeasurements.has(e) || i._visibilityMeasurements.set(e, t)
+              p()(d()(r), '_handleItemVisible', function (e, t) {
+                r._visibilityMeasurements.has(e) || r._visibilityMeasurements.set(e, t)
               }),
-              v()(d()(i), '_reportVisibilityMeasurements', function () {
-                if (i._visibilityMeasurements.size) {
+              p()(d()(r), '_reportVisibilityMeasurements', function () {
+                if (r._visibilityMeasurements.size) {
                   var e = 0
-                  i._visibilityMeasurements.forEach(function (t) {
+                  r._visibilityMeasurements.forEach(function (t) {
                     return (e += t)
                   })
-                  var t = Math.round(e / i._visibilityMeasurements.size),
-                    n = ee.b.isDesktopOS() ? 'scroller_v3' : 'scroller_v3_mobile'
-                  U.c('scroller:ttfv:'.concat(n), { duration_ms: t }), i._visibilityMeasurements.clear()
+                  var t = Math.round(e / r._visibilityMeasurements.size),
+                    n = Q.b.isDesktopOS() ? 'scroller_v3' : 'scroller_v3_mobile'
+                  k.c('scroller:ttfv:'.concat(n), { duration_ms: t }), r._visibilityMeasurements.clear()
                 }
               }),
-              v()(d()(i), '_updateItemHeight', function (e, t) {
-                i._pendingHeightUpdates.set(e, t),
-                  (Object(be.a)(i.state.renderedItems, function (e) {
+              p()(d()(r), '_updateItemHeight', function (e, t) {
+                r._pendingHeightUpdates.set(e, t),
+                  (Object(Ie.a)(r.state.renderedItems, function (e) {
                     var t = e.itemId
-                    return i._heights.has(t) || i._pendingHeightUpdates.has(t)
+                    return r._heights.has(t) || r._pendingHeightUpdates.has(t)
                   }) ||
-                    i._pendingHeightUpdates.size > 50) &&
-                    (i._update(), i._pendingHeightUpdates.clear())
+                    r._pendingHeightUpdates.size > 50) &&
+                    (r._update(), r._pendingHeightUpdates.clear())
               }),
-              v()(d()(i), '_handleHeightChanged', function (e, t) {
-                i._heights.get(e) !== t &&
-                  (i._cellAnimations.has(e) ? i._scheduleCriticalUpdate() : i._updateItemHeight(e, t))
+              p()(d()(r), '_handleHeightChanged', function (e, t) {
+                r._heights.get(e) !== t &&
+                  (r._cellAnimations.has(e) ? r._scheduleCriticalUpdate() : r._updateItemHeight(e, t))
               }),
-              v()(d()(i), '_setItemRef', function (e, t) {
+              p()(d()(r), '_setItemRef', function (e, t) {
                 t
-                  ? (i._cells.set(e, t), i._renderedItemsStatus.add(e))
-                  : (i._cells.delete(e), i._renderedItemsStatus.delete(e))
+                  ? (r._cells.set(e, t), r._renderedItemsStatus.add(e))
+                  : (r._cells.delete(e), r._renderedItemsStatus.delete(e))
               }),
-              v()(d()(i), '_getRenderedItemsWithFocusability', function () {
-                return i._getFinalRenderedItems().map(function (e) {
+              p()(d()(r), '_getRenderedItemsWithFocusability', function () {
+                return r._getFinalRenderedItems().map(function (e) {
                   var t = e.item,
                     n = e.visible,
-                    r = i._cells.get(t.id)
-                  return { id: t.id, focusable: !(!r || !r.isFocusable()), visible: n }
+                    i = r._cells.get(t.id)
+                  return { id: t.id, focusable: !(!i || !i.isFocusable()), visible: n }
                 })
               }),
-              v()(d()(i), '_findNewestVisibleId', function () {
-                var e = i._measureRelativeViewportRect(),
+              p()(d()(r), '_findNewestVisibleId', function () {
+                var e = r._measureRelativeViewportRect(),
                   t =
                     e &&
-                    i._getFinalRenderedItems().find(function (t) {
+                    r._getFinalRenderedItems().find(function (t) {
                       var n = t.item,
-                        r = t.offset
-                      return new Y.a(r, i._getHeight(n)).doesIntersectWith(e)
+                        i = t.offset
+                      return new W.a(i, r._getHeight(n)).doesIntersectWith(e)
                     })
                 return t && t.item.id
               }),
-              v()(d()(i), 'adjustFocusBy', function (e) {
-                i._hasUserChangedFocus = !0
-                var t = i._getRenderedItemsWithFocusability(),
+              p()(d()(r), 'adjustFocusBy', function (e) {
+                r._hasUserChangedFocus = !0
+                var t = r._getRenderedItemsWithFocusability(),
                   n =
-                    i._activeEntryId &&
+                    r._activeEntryId &&
                     (function (e, t, n) {
-                      var r = e
-                        ? Object(M.a)(n, function (t) {
+                      var i = e
+                        ? Object(B.a)(n, function (t) {
                             return t.id === e
                           })
                         : -1
-                      if (r >= 0)
-                        for (var i = r >= 0 ? r + t : 0; i >= 0 && i < n.length; i += t)
-                          if (n[i].focusable) return n[i].id
-                      return r >= 0 ? e : void 0
-                    })(i._activeEntryId, e, t)
+                      if (i >= 0)
+                        for (var r = i >= 0 ? i + t : 0; r >= 0 && r < n.length; r += t)
+                          if (n[r].focusable) return n[r].id
+                      return i >= 0 ? e : void 0
+                    })(r._activeEntryId, e, t)
                 if (!n) {
-                  var r = i._findNewestVisibleId()
-                  n = r
+                  var i = r._findNewestVisibleId()
+                  n = i
                     ? (function (e, t) {
                         var n,
-                          r = Object(M.a)(t, function (t) {
+                          i = Object(B.a)(t, function (t) {
                             return t.id === e
                           })
-                        if (r >= 0) {
-                          var i = t.find(function (e, t) {
-                            return t >= r && e.focusable
+                        if (i >= 0) {
+                          var r = t.find(function (e, t) {
+                            return t >= i && e.focusable
                           })
-                          n = i ? i.id : void 0
+                          n = r ? r.id : void 0
                         }
-                        return n || k(t)
-                      })(r, t)
-                    : k(t)
+                        return n || j(t)
+                      })(i, t)
+                    : j(t)
                 }
-                n && i._updateFocusToItem(n)
+                n && r._updateFocusToItem(n)
               }),
-              v()(d()(i), '_updateFocusToItem', function (e, t) {
-                if (e !== i._activeEntryId) {
-                  var n = i._getRenderedItemsWithFocusability().find(function (t) {
+              p()(d()(r), '_updateFocusToItem', function (e, t) {
+                if (e !== r._activeEntryId) {
+                  var n = r._getRenderedItemsWithFocusability().find(function (t) {
                       return t.visible && t.id === e
                     }),
-                    r = i._cells.get(e),
-                    o = r && r.getElement()
+                    i = r._cells.get(e),
+                    o = i && i.getElement()
                   n &&
-                    ((i._activeEntryId = e),
+                    ((r._activeEntryId = e),
                     o &&
                       (function (e, t, n) {
-                        var r = L.a.findDOMNode(e),
-                          i = r && r instanceof window.HTMLElement && r.querySelector("a, [tabindex='0']")
-                        if (i) {
-                          i.scrollIntoView(n), i.focus()
+                        var i = M.a.findDOMNode(e),
+                          r = i && i instanceof window.HTMLElement && i.querySelector("a, [tabindex='0']")
+                        if (r) {
+                          r.scrollIntoView(n), r.focus()
                           var o = (t || E.a.root()).getRect().getTop()
                           o > 0 && window.scrollBy(0, -1 * o)
                         }
-                      })(o, i.context.viewport, t))
+                      })(o, r.context.viewport, t))
                 }
               }),
-              v()(d()(i), 'scrollToNewest', function (e) {
-                ;(i._hasUserChangedFocus = !0),
-                  i.props.hasNewContentAtBottom
-                    ? i._viewport.scrollTo(0, i.state.listHeightWithHeadroom)
-                    : i._viewport.scrollToTop(),
+              p()(d()(r), 'scrollToNewest', function (e) {
+                ;(r._hasUserChangedFocus = !0),
+                  r.props.hasNewContentAtBottom
+                    ? r._viewport.scrollTo(0, r.state.listHeightWithHeadroom)
+                    : r._viewport.scrollToTop(),
                   e &&
-                    (i._update(),
-                    Z()(function () {
-                      var e = i._getRenderedItemsWithFocusability(),
-                        t = k(e)
-                      t && i._updateFocusToItem(t, { block: 'nearest' })
+                    (r._update(),
+                    q()(function () {
+                      var e = r._getRenderedItemsWithFocusability(),
+                        t = j(e)
+                      t && r._updateFocusToItem(t, { block: 'nearest' })
                     }))
               }),
-              v()(d()(i), 'isAtNewest', function () {
-                var e = i._measureRelativeViewportRect()
+              p()(d()(r), 'isAtNewest', function () {
+                var e = r._measureRelativeViewportRect()
                 return (
                   !e ||
-                  (i.props.hasNewContentAtBottom
-                    ? e.getBottom() >= i.state.listHeightWithHeadroom - 50
+                  (r.props.hasNewContentAtBottom
+                    ? e.getBottom() >= r.state.listHeightWithHeadroom - 50
                     : e.getTop() <= 50)
                 )
               }),
-              (i._viewport = e.viewport),
-              (i._devicePixelRatio = window.devicePixelRatio || 1),
-              (i.state = { renderedItems: [], listHeightWithHeadroom: 0, shouldAnimate: !1 })
-            var o = i.props,
+              (r._viewport = e.viewport),
+              (r._devicePixelRatio = window.devicePixelRatio || 1),
+              (r.state = { renderedItems: [], listHeightWithHeadroom: 0, shouldAnimate: !1 })
+            var o = r.props,
               s = o.cacheKey,
               c = o.initialAnchor
             return (
-              s && Ae.hasOwnProperty(s) ? (i._heights = Ae[s]) : ((i._heights = new Map()), (Ae[s] = i._heights)),
-              (i._scheduleCriticalUpdate = Object(z.a)(function () {
-                return i._update()
+              s && be.hasOwnProperty(s) ? (r._heights = be[s]) : ((r._heights = new Map()), (be[s] = r._heights)),
+              (r._scheduleCriticalUpdate = Object(U.a)(function () {
+                return r._update()
               }, window.requestAnimationFrame)),
-              (i._scheduleUpdate = window.requestIdleCallback
-                ? Object(z.a)(function () {
-                    i._update()
+              (r._scheduleUpdate = window.requestIdleCallback
+                ? Object(U.a)(function () {
+                    r._update()
                   }, window.requestIdleCallback)
-                : i._scheduleCriticalUpdate),
-              (i._scheduleCriticalUpdateThrottled = Object(C.a)(
+                : r._scheduleCriticalUpdate),
+              (r._scheduleCriticalUpdateThrottled = Object(x.a)(
                 function () {
-                  i._scheduleCriticalUpdate()
+                  r._scheduleCriticalUpdate()
                 },
                 100,
                 { trailing: !0 },
               )),
-              (i._scheduleUpdateDebounced = Object(_e.a)(i._scheduleUpdate, 250)),
-              (i._wasPreviouslyAtNewestEnd = !c),
-              (i._removeViewportResizeHandler = i._viewport.addRectChangeListener(i._scheduleCriticalUpdateThrottled)),
-              (i._shouldUseTopPositioning =
-                i.context.featureSwitches.isTrue('responsive_web_scroller_top_positioning_enabled') ||
-                (ee.b.isMobileOS() && ee.b.isSafari())),
-              (window.scroller = d()(i)),
-              i
+              (r._scheduleUpdateDebounced = Object(fe.a)(r._scheduleUpdate, 250)),
+              (r._wasPreviouslyAtNewestEnd = !c),
+              (r._removeViewportResizeHandler = r._viewport.addRectChangeListener(r._scheduleCriticalUpdateThrottled)),
+              (r._shouldUseTopPositioning =
+                r.context.featureSwitches.isTrue('responsive_web_scroller_top_positioning_enabled') ||
+                (Q.b.isMobileOS() && Q.b.isSafari())),
+              (window.scroller = d()(r)),
+              r
             )
           }
           return (
@@ -1148,24 +1050,24 @@
                   var e = this,
                     t = this.state,
                     n = t.listHeightWithHeadroom,
-                    r = t.renderedItems,
-                    i = t.shouldAnimate,
-                    o = this._getIsHeightsReady(r)
-                  return w.a.createElement(
-                    K.a.Provider,
+                    i = t.renderedItems,
+                    r = t.shouldAnimate,
+                    o = this._getIsHeightsReady(i)
+                  return v.a.createElement(
+                    D.a.Provider,
                     { value: this._getPositioningContext(o) },
-                    w.a.createElement(
+                    v.a.createElement(
                       'div',
                       { ref: this._rootRef, style: { position: 'relative', minHeight: n } },
                       this._getFinalRenderedItems().map(function (t) {
                         var n = t.item,
-                          r = t.offset,
+                          i = t.offset,
                           o = t.visible,
                           a = {
-                            top: e._shouldUseTopPositioning ? ''.concat(r, 'px') : void 0,
-                            transform: e._shouldUseTopPositioning ? void 0 : 'translateY('.concat(r, 'px)'),
+                            top: e._shouldUseTopPositioning ? ''.concat(i, 'px') : void 0,
+                            transform: e._shouldUseTopPositioning ? void 0 : 'translateY('.concat(i, 'px)'),
                           }
-                        return w.a.createElement(me, {
+                        return v.a.createElement(he, {
                           item: n,
                           key: n.id,
                           onAnimationEnded: e._handleAnimationEnded,
@@ -1174,7 +1076,7 @@
                           onVisible: e._handleItemVisible,
                           positioningStyle: a,
                           setAPI: e._setItemRef,
-                          shouldAnimate: i,
+                          shouldAnimate: r,
                           translationTransitionStyle: e._cellAnimationStyle,
                           visible: o,
                         })
@@ -1186,7 +1088,7 @@
               {
                 key: 'shouldComponentUpdate',
                 value: function (e, t) {
-                  return !G()(this.props, e) || !Object(ce.a)(this.state, t)
+                  return !Z()(this.props, e) || !Object(ce.a)(this.state, t)
                 },
               },
               {
@@ -1207,9 +1109,9 @@
                     e.cacheKey !== this.props.cacheKey && (this._hasUserChangedFocus = !1),
                     this._wasPreviouslyAtNewestEnd &&
                       this.props.list.find(function (e) {
-                        return e.id === $.a
+                        return e.id === G.a
                       }) &&
-                      this._getHeightForItemId($.a) > 0 &&
+                      this._getHeightForItemId(G.a) > 0 &&
                       this.scrollToNewest()
                 },
               },
@@ -1221,8 +1123,8 @@
                     (this._removeProgrammaticScrollHandler = this._viewport.addProgrammaticScrollListener(
                       this._handleProgrammaticScroll,
                     )),
-                    (this._removeFullscreenEnterHandler = D.a(this._handleEnterFullscreen)),
-                    (this._removeFullscreenExitHandler = D.b(this._handleExitFullscreen))
+                    (this._removeFullscreenEnterHandler = L.a(this._handleEnterFullscreen)),
+                    (this._removeFullscreenExitHandler = L.b(this._handleExitFullscreen))
                   var t = this._getInitialRenderedItems()
                   if (
                     (this.props.isManualScrollRestoration && this._viewport.scrollBy(-1),
@@ -1232,10 +1134,10 @@
                     var n = this._getDocumentViewportHeight()
                     this.setState({ renderedItems: t, shouldAnimate: !0, listHeightWithHeadroom: n }, function () {
                       var t = e.props.initialAnchor
-                      t && t.type === R.Anchor
+                      t && t.type === b.Anchor
                         ? (e._viewport.scrollBy(e._getViewportOffsetCorrection()),
                           t.anchor.wasFocused && e._updateFocusToItem(t.anchor.id))
-                        : t && t.type === R.FocusedItem && e._updateFocusToItem(t.itemId),
+                        : t && t.type === b.FocusedItem && e._updateFocusToItem(t.itemId),
                         window.requestAnimationFrame(function () {
                           return window.requestAnimationFrame(function () {
                             return e._scheduleCriticalUpdate()
@@ -1274,9 +1176,9 @@
             ]),
             n
           )
-        })(w.a.Component)
-      v()(Te, 'contextType', ne.a),
-        v()(Te, 'defaultProps', {
+        })(v.a.Component)
+      p()(Re, 'contextType', ee.a),
+        p()(Re, 'defaultProps', {
           nearEndProximityRatio: 1.75,
           nearStartProximityRatio: 0.25,
           assumedItemHeight: 400,
@@ -1284,60 +1186,39 @@
           minimumOffscreenToViewportRatio: 0.5,
           preferredOffscreenToViewportRatio: 2.5,
         })
-      var Se,
-        Pe = Object(te.a)(Te),
-        Ee = function (e, t) {
+      var Ae,
+        Te = Object($.a)(Re),
+        He = function (e, t) {
           if (e.length)
             return e.reduce(function (e, n) {
               return t(n, e) > 0 ? n : e
             })
         },
-        Fe = function (e, t) {
+        Se = function (e, t) {
           var n = t * e.getHeight()
-          return new Y.a(e.getTop() - n, e.getHeight() + 2 * n)
-        }
-      function je(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var n,
-            r = _()(e)
-          if (t) {
-            var i = _()(this).constructor
-            n = Reflect.construct(r, arguments, i)
-          } else n = r.apply(this, arguments)
-          return p()(this, n)
-        }
-      }
-      var xe = function () {
-          Se = !1
+          return new W.a(e.getTop() - n, e.getHeight() + 2 * n)
         },
-        Ce = (function (e) {
+        Ee = function () {
+          Ae = !1
+        },
+        Oe = (function (e) {
           h()(n, e)
-          var t = je(n)
-          function n(e, r) {
+          var t = m()(n)
+          function n(e, i) {
             var o
             a()(this, n),
-              (o = t.call(this, e, r)),
-              v()(d()(o), '_renderer', w.a.createRef()),
-              v()(d()(o), '_isModal', !1),
-              v()(
+              (o = t.call(this, e, i)),
+              p()(d()(o), '_renderer', v.a.createRef()),
+              p()(d()(o), '_isModal', !1),
+              p()(
                 d()(o),
                 '_getList',
-                Object(x.a)(function (e, t, n, r, o, a, s) {
+                Object(P.a)(function (e, t, n, i, o, a, s) {
                   var c = []
                   return (
                     e &&
                       c.push(
-                        b(
+                        w(
                           '$header',
                           'header',
                           function () {
@@ -1348,15 +1229,15 @@
                       ),
                     c.push.apply(
                       c,
-                      i()(
+                      r()(
                         n.map(function (e) {
-                          return b(a(e), e, r, !o || o(e), s && s(e))
+                          return w(a(e), e, i, !o || o(e), s && s(e))
                         }),
                       ),
                     ),
                     t &&
                       c.push(
-                        b(
+                        w(
                           '$footer',
                           'footer',
                           function () {
@@ -1369,110 +1250,110 @@
                   )
                 }),
               ),
-              v()(d()(o), '_render', function (e) {
+              p()(d()(o), '_render', function (e) {
                 var t,
                   n = e.isModal,
-                  r = o.props,
-                  i = r.anchoring,
-                  a = r.assumedItemHeight,
-                  s = r.cacheKey,
-                  c = r.canBeAnchorFunction,
-                  u = r.footer,
-                  d = r.hasNewContentAtBottom,
-                  l = r.header,
-                  h = r.identityFunction,
-                  f = r.initialAnchor,
-                  p = r.items,
-                  m = r.renderer,
-                  _ = r.sortIndexFunction,
-                  g = r.withKeyboardShortcuts,
-                  I = r.withoutHeadroom,
-                  y = o._scrollRestorationAnchor[s],
-                  b = y ? O(y) : f ? A(f.id) : void 0
+                  i = o.props,
+                  r = i.anchoring,
+                  a = i.assumedItemHeight,
+                  s = i.cacheKey,
+                  c = i.canBeAnchorFunction,
+                  u = i.footer,
+                  d = i.hasNewContentAtBottom,
+                  l = i.header,
+                  h = i.identityFunction,
+                  f = i.initialAnchor,
+                  m = i.items,
+                  _ = i.renderer,
+                  g = i.sortIndexFunction,
+                  I = i.withKeyboardShortcuts,
+                  w = i.withoutHeadroom,
+                  b = o._scrollRestorationAnchor[s],
+                  H = b ? y(b) : f ? R(f.id) : void 0
                 return (
-                  n && ((o._isModal = !0), (Se = !0)),
-                  w.a.createElement(
+                  n && ((o._isModal = !0), (Ae = !0)),
+                  v.a.createElement(
                     T.a,
                     {
-                      enabled: g,
+                      enabled: I,
                       handlers:
                         ((t = {}),
-                        v()(t, H.e.refresh, o._handleKeyboardRefresh),
-                        v()(t, H.e.nextItem, o._handleKeyboardFocusNext),
-                        v()(t, H.e.previousItem, o._handleKeyboardFocusPrevious),
+                        p()(t, A.e.refresh, o._handleKeyboardRefresh),
+                        p()(t, A.e.nextItem, o._handleKeyboardFocusNext),
+                        p()(t, A.e.previousItem, o._handleKeyboardFocusPrevious),
                         t),
                     },
-                    w.a.createElement(Pe, {
+                    v.a.createElement(Te, {
                       assumedItemHeight: a,
                       cacheKey: s,
                       hasNewContentAtBottom: d,
-                      initialAnchor: b,
+                      initialAnchor: H,
                       isManualScrollRestoration: window.history && 'manual' === window.history.scrollRestoration,
                       key: s,
-                      list: o._getList(l, u, p, m, c, h, _),
+                      list: o._getList(l, u, m, _, c, h, g),
                       onPositionUpdate: o._handlePositionUpdate,
                       onScrollEnd: o._handleScrollEnd,
-                      pinToNewestWhenAtNewest: i.pinToNewestWhenAtNewest,
+                      pinToNewestWhenAtNewest: r.pinToNewestWhenAtNewest,
                       ref: o._renderer,
                       viewport: o._viewport,
-                      withoutHeadroom: I,
+                      withoutHeadroom: w,
                     }),
                   )
                 )
               }),
-              v()(d()(o), '_handleScrollEnd', function () {
+              p()(d()(o), '_handleScrollEnd', function () {
                 o.props.onScrollEnd && o.props.onScrollEnd()
               }),
-              v()(d()(o), '_handlePositionUpdate', function (e) {
+              p()(d()(o), '_handlePositionUpdate', function (e) {
                 var t = o.props.onItemsRendered
                 o._edgeProximity.handlePositioningUpdate(e),
                   t && t({ positions: e.getRenderedItems(), viewport: e.getForViewport() }),
                   o._preservePosition(o._customLocation)
               }),
-              v()(d()(o), '_shouldPreventKeyboardShortcuts', function () {
-                return Se && !o._isModal
+              p()(d()(o), '_shouldPreventKeyboardShortcuts', function () {
+                return Ae && !o._isModal
               }),
-              v()(
+              p()(
                 d()(o),
                 '_handleKeyboardRefresh',
-                Object(C.a)(function () {
+                Object(x.a)(function () {
                   var e = o.props.onKeyboardRefresh
                   o._shouldPreventKeyboardShortcuts() || (e && e())
                 }, 1e3),
               ),
-              v()(d()(o), '_handleKeyboardFocusNext', function () {
+              p()(d()(o), '_handleKeyboardFocusNext', function () {
                 !o._shouldPreventKeyboardShortcuts() && o.adjustFocusBy(1)
               }),
-              v()(d()(o), '_handleKeyboardFocusPrevious', function () {
+              p()(d()(o), '_handleKeyboardFocusPrevious', function () {
                 !o._shouldPreventKeyboardShortcuts() && o.adjustFocusBy(-1)
               }),
-              v()(d()(o), 'isAtNewest', function () {
+              p()(d()(o), 'isAtNewest', function () {
                 return !o._renderer.current || o._renderer.current.isAtNewest()
               })
             var s = e.nearEndProximityRatio,
               c = e.nearStartProximityRatio
             return (
-              (o._edgeProximity = new F.b([
+              (o._edgeProximity = new O.b([
                 {
-                  condition: F.a.nearTop(5),
+                  condition: O.a.nearTop(5),
                   callback: function (e) {
                     return o.props.onAtStart(e)
                   },
                 },
                 {
-                  condition: F.a.nearTopRatio(c),
+                  condition: O.a.nearTopRatio(c),
                   callback: function (e) {
                     return o.props.onNearStart(e)
                   },
                 },
                 {
-                  condition: F.a.nearBottomRatio(s),
+                  condition: O.a.nearBottomRatio(s),
                   callback: function (e) {
                     return o.props.onNearEnd(e)
                   },
                 },
                 {
-                  condition: F.a.nearBottom(5),
+                  condition: O.a.nearBottom(5),
                   callback: function (e) {
                     return o.props.onAtEnd(e)
                   },
@@ -1491,7 +1372,7 @@
                   var e = this.props,
                     t = e.items,
                     n = e.noItemsRenderer
-                  return t.length ? w.a.createElement(S.b.Consumer, null, this._render) : n()
+                  return t.length ? v.a.createElement(H.b.Consumer, null, this._render) : n()
                 },
               },
               {
@@ -1505,8 +1386,8 @@
                 value: function (e) {
                   var t = this.props,
                     n = t.cacheKey,
-                    r = t.onPositionRestored
-                  n !== e.cacheKey && r()
+                    i = t.onPositionRestored
+                  n !== e.cacheKey && i()
                 },
               },
               {
@@ -1518,7 +1399,7 @@
               {
                 key: 'componentWillUnmount',
                 value: function () {
-                  this._isModal && (Se = !1)
+                  this._isModal && (Ae = !1)
                 },
               },
               {
@@ -1535,15 +1416,15 @@
                 value: function (e, t) {
                   var n = t.getCustomLocation
                   this._customLocation = n && n()
-                  var r = []
+                  var i = []
                   if (this._customLocation) {
-                    var i = this._customLocation.getSavedPosition()
-                    ;(r = i && i.length ? i : []).length > 0 &&
+                    var r = this._customLocation.getSavedPosition()
+                    ;(i = r && r.length ? r : []).length > 0 &&
                       this._customLocation &&
                       this._customLocation.claimScrollRestoration()
                   }
                   var o =
-                    r.find(function (t) {
+                    i.find(function (t) {
                       var n = t.id
                       return (
                         t.wasFocused &&
@@ -1552,14 +1433,14 @@
                         })
                       )
                     }) ||
-                    r.find(function (t) {
+                    i.find(function (t) {
                       t.distanceToViewportTop
                       var n = t.id
                       return e.items.some(function (t) {
                         return e.identityFunction(t) === n
                       })
                     })
-                  this._scrollRestorationAnchor = v()({}, e.cacheKey, o)
+                  this._scrollRestorationAnchor = p()({}, e.cacheKey, o)
                 },
               },
               {
@@ -1577,20 +1458,20 @@
             ]),
             n
           )
-        })(w.a.PureComponent)
-      v()(Ce, 'contextTypes', { viewport: j.object, getCustomLocation: j.func }),
-        v()(Ce, 'defaultProps', {
-          anchoring: P.a,
+        })(v.a.PureComponent)
+      p()(Oe, 'contextTypes', { viewport: F.object, getCustomLocation: F.func }),
+        p()(Oe, 'defaultProps', {
+          anchoring: S.a,
           hasNewContentAtBottom: !1,
-          onPositionRestored: N.a,
-          onAtEnd: N.a,
-          onAtStart: N.a,
-          onNearEnd: N.a,
-          onNearStart: N.a,
-          onScrollEnd: N.a,
+          onPositionRestored: C.a,
+          onAtEnd: C.a,
+          onAtStart: C.a,
+          onNearEnd: C.a,
+          onNearStart: C.a,
+          onScrollEnd: C.a,
           nearEndProximityRatio: 1.75,
           nearStartProximityRatio: 0.25,
-          noItemsRenderer: B.a,
+          noItemsRenderer: N.a,
           assumedItemHeight: 400,
           minimumOffscreenToViewportRatio: 0.5,
           preferredOffscreenToViewportRatio: 2.5,
@@ -1606,14 +1487,15 @@
         n.d(t, 'b', function () {
           return l
         })
-      var r = n('VrFO'),
-        i = n.n(r),
+      var i = n('VrFO'),
+        r = n.n(i),
         o = n('Y9Ll'),
         a = n.n(o),
         s =
           (n('yH/f'),
           n('z84I'),
           n('jwue'),
+          n('7x/C'),
           n('+oxZ'),
           Object.freeze({ MOVEMENT: 'movement', LIST_UPDATE: 'list_update', INITIAL_POSITION: 'initial_position' })),
         c = {
@@ -1629,19 +1511,19 @@
           },
           nearTopRatio: function (e) {
             return function (t, n) {
-              var r = n.getHeight() * e
-              return n.getTop() - t.getTop() <= r
+              var i = n.getHeight() * e
+              return n.getTop() - t.getTop() <= i
             }
           },
           nearBottomRatio: function (e) {
             return function (t, n) {
-              var r = n.getHeight() * e
-              return t.getBottom() - n.getBottom() <= r
+              var i = n.getHeight() * e
+              return t.getBottom() - n.getBottom() <= i
             }
           },
         },
         u = Object.freeze({ INSIDE: 'inside', OUTSIDE: 'outside' }),
-        d = function (e, t, n, r) {
+        d = function (e, t, n, i) {
           return (function (e, t) {
             return !e && t === u.INSIDE
           })(e, n)
@@ -1652,13 +1534,13 @@
             ? s.MOVEMENT
             : (function (e, t) {
                 return e === u.INSIDE && t === u.INSIDE
-              })(e, n) && r !== t
+              })(e, n) && i !== t
             ? s.LIST_UPDATE
             : null
         },
         l = (function () {
           function e(t) {
-            i()(this, e),
+            r()(this, e),
               (this._handlers = t.map(function (e) {
                 return { zone: e, state: {} }
               }))
@@ -1670,9 +1552,9 @@
                 value: function (e) {
                   this._handlers.forEach(function (t) {
                     var n = t.state,
-                      r = t.zone,
-                      i = r.callback,
-                      o = r.condition,
+                      i = t.zone,
+                      r = i.callback,
+                      o = i.condition,
                       a = n.listLength,
                       s = n.proximity,
                       c = (function (e, t) {
@@ -1680,7 +1562,7 @@
                       })(o, e),
                       l = e.getListLength(),
                       h = d(s, a, c, l)
-                    ;(n.proximity = c), (n.listLength = l), h && i({ triggerCause: h })
+                    ;(n.proximity = c), (n.listLength = l), h && r({ triggerCause: h })
                   })
                 },
               },
@@ -1691,13 +1573,13 @@
     },
     XygZ: function (e, t, n) {
       'use strict'
-      var r = n('ax0f'),
-        i = n('gIHd')
-      r(
+      var i = n('ax0f'),
+        r = n('gIHd')
+      i(
         { target: 'String', proto: !0, forced: n('sHxg')('anchor') },
         {
           anchor: function (e) {
-            return i(this, 'a', 'name', e)
+            return r(this, 'a', 'name', e)
           },
         },
       )
@@ -1710,13 +1592,13 @@
         n.d(t, 'b', function () {
           return u
         })
-      n('LqLs'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP'), n('jwue'), n('LW0h'), n('z84I'), n('+oxZ')
-      var r = n('6/RC'),
-        i = new Set(),
+      n('lTEL'), n('7x/C'), n('LqLs'), n('87if'), n('kYxP'), n('jwue'), n('LW0h'), n('z84I'), n('+oxZ')
+      var i = n('6/RC'),
+        r = new Set(),
         o = new Set(),
         a = !1
       function s() {
-        if (r.canUseDOM && !a) {
+        if (i.canUseDOM && !a) {
           var e = [
             'fullscreenElement',
             'webkitFullscreenElement',
@@ -1733,7 +1615,7 @@
                   })
                   .filter(Boolean)[0]
                 t
-                  ? i.forEach(function (e) {
+                  ? r.forEach(function (e) {
                       return e(t)
                     })
                   : o.forEach(function (e) {
@@ -1748,9 +1630,9 @@
       var c = function (e) {
           return (
             a || s(),
-            i.add(e),
+            r.add(e),
             function () {
-              return i.delete(e)
+              return r.delete(e)
             }
           )
         },
@@ -1779,8 +1661,8 @@
           return c
         })
       n('ERkP')
-      var r = n('aWyx'),
-        i = function (e, t) {
+      var i = n('aWyx'),
+        r = function (e, t) {
           return {
             entry: { id: t, time: '', type: e },
             isActive: !1,
@@ -1790,20 +1672,20 @@
             type: e,
           }
         },
-        o = i(r.b.CONVERSATION_PROFILE_INFO_HEADER, 'conversationProfileInfoHeader'),
+        o = r(i.b.CONVERSATION_PROFILE_INFO_HEADER, 'conversationProfileInfoHeader'),
         a = 'typingIndicator',
-        s = i(r.b.TYPING_INDICATOR, a),
-        c = i(r.b.READ_ONLY_INDICATOR, 'readOnlyIndicator')
+        s = r(i.b.TYPING_INDICATOR, a),
+        c = r(i.b.READ_ONLY_INDICATOR, 'readOnlyIndicator')
     },
     jHwr: function (e, t, n) {
       'use strict'
       t.a = function (e, t) {
         var n = null,
-          r = function () {
+          i = function () {
             ;(n = null), e()
           }
         return function () {
-          return n || (n = t(r)), n
+          return n || (n = t(i)), n
         }
       }
     },

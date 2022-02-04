@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [94],
+  [95],
   {
     '9RBu': function (e, a, l) {
       'use strict'
@@ -12,7 +12,7 @@
         r = l.n(t),
         i = (l('enFi'), l('rZeG')),
         s = l('kGix'),
-        o = (l('ho0z'), l('hBpG'), l('1t7P'), l('jQ/y'), l('uFXj'), l('lD8l')),
+        o = (l('ho0z'), l('hBpG'), l('7x/C'), l('1t7P'), l('jQ/y'), l('uFXj'), l('lD8l')),
         c = l('MWbm'),
         u = l('jhWN'),
         d = l('jV+4'),
@@ -186,8 +186,8 @@
         },
         K = l('v//M'),
         x = l('3XMw'),
-        R = l.n(x),
-        C = l('VTDR'),
+        C = l.n(x),
+        R = l('VTDR'),
         L = l('MAc7'),
         B = l('9VLy'),
         U = l('t62R'),
@@ -197,12 +197,12 @@
             U.b,
             { color: 'gray700', style: a },
             r.a.createElement(
-              R.a.I18NFormatMessage,
+              C.a.I18NFormatMessage,
               { $i18n: 'fce78785' },
               r.a.createElement(
                 U.b,
                 { color: 'plum500', link: 'https://legal.twitter.com/en/purchaser-terms.html' },
-                R.a.d822ae43,
+                C.a.d822ae43,
               ),
             ),
           )
@@ -225,17 +225,17 @@
         N = y.a.create(function (e) {
           return { description: { marginTop: e.spaces.space8 } }
         }),
-        j = l('Ty5D'),
+        j = l('zCf4'),
         W = l('/yvb'),
         I = l('cHvH'),
         A = l('sgih'),
-        H = R.a.cbc8ce27,
-        V = R.a.b600eb88,
-        M = R.a.b08bbeb4,
-        O = R.a.d2613122,
-        z = R.a.g61ed8a4,
-        Q = R.a.c3d23f10,
-        X = R.a.d338f53e,
+        H = C.a.cbc8ce27,
+        V = C.a.b600eb88,
+        M = C.a.b08bbeb4,
+        z = C.a.d2613122,
+        O = C.a.g61ed8a4,
+        Q = C.a.c3d23f10,
+        X = C.a.d338f53e,
         G = void 0 !== h ? h : (h = l('l62v')),
         q = void 0 !== F ? F : (F = l('E0zt')),
         J = y.a.create(function (e) {
@@ -268,7 +268,7 @@
             i = e.viewer,
             s = f()(G, t),
             u = f()(q, i),
-            d = Object(j.g)(),
+            d = Object(j.f)(),
             m = function () {
               d.push('/'.concat(n, '/superfollows'))
             },
@@ -329,7 +329,7 @@
                       onPress: m,
                       style: J.subscribeButton,
                     },
-                    O({ price: '$X.XX' }),
+                    z({ price: '$X.XX' }),
                   ),
                 ),
               )
@@ -338,7 +338,7 @@
               return r.a.createElement(
                 r.a.Fragment,
                 null,
-                r.a.createElement(D, { description: Q, style: J.errorTitleDescription, title: z }),
+                r.a.createElement(D, { description: Q, style: J.errorTitleDescription, title: O }),
                 r.a.createElement(W.a, { onPress: l, style: J.errorButton, type: 'brandFilled' }, X),
               )
             }
@@ -354,7 +354,7 @@
                 type: 'full',
                 withMask: !0,
               },
-              r.a.createElement(C.a, null),
+              r.a.createElement(R.a, null),
               r.a.createElement(K.a, { fetchStatus: a, onRequestRetry: l, render: p, renderFailure: g, retryable: !1 }),
             )
           })
@@ -363,7 +363,7 @@
         Y = void 0 !== _ ? _ : (_ = l('kbWR')),
         ee = Object(Z.b)(Y, { errorConfig: { context: 'SUPER_FOLLOWS_SUBSCRIPTION_SCREEN' } })
       a.default = function () {
-        var e = Object(j.i)().screenName || '',
+        var e = Object(j.h)().screenName || '',
           a = { screenName: Object(i.a)(e) }
         return r.a.createElement(ee, {
           render: function (a) {
@@ -461,7 +461,7 @@
               {
                 alias: 'user',
                 args: (t = [
-                  { kind: 'Literal', name: 's', value: 45 },
+                  { kind: 'Literal', name: 's', value: 46 },
                   { kind: 'Variable', name: 'screen_name', variableName: 'screenName' },
                 ]),
                 concreteType: 'UserResults',
@@ -487,7 +487,7 @@
               },
               {
                 alias: 'viewer',
-                args: (i = [{ kind: 'Literal', name: 's', value: 21 }]),
+                args: (i = [{ kind: 'Literal', name: 's', value: 22 }]),
                 concreteType: 'Viewer',
                 kind: 'LinkedField',
                 name: 'viewer_v2',
@@ -518,7 +518,7 @@
                     storageKey: null,
                   },
                 ],
-                storageKey: 'viewer_v2(s:21)',
+                storageKey: 'viewer_v2(s:22)',
               },
             ],
             type: 'Query',
@@ -689,7 +689,7 @@
                     storageKey: null,
                   },
                 ],
-                storageKey: 'viewer_v2(s:21)',
+                storageKey: 'viewer_v2(s:22)',
               },
             ],
           },

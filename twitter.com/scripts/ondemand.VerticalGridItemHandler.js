@@ -1,19 +1,19 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [239],
+  [240],
   {
-    Dfuf: function (e, t, r) {
+    Dfuf: function (e, t, n) {
       'use strict'
-      r('hBvt')
-      var n = r('ERkP'),
-        a = r.n(n),
-        o = r('t62R'),
-        i = r('IJsT'),
-        c = r('WtWS'),
-        l = r('I4+6'),
-        s = r('cm6r'),
-        u = r('rHpw'),
-        p = r('MWbm'),
-        d = u.a.create(function (e) {
+      n('hBvt')
+      var a = n('ERkP'),
+        r = n.n(a),
+        o = n('t62R'),
+        i = n('IJsT'),
+        c = n('WtWS'),
+        l = n('I4+6'),
+        s = n('cm6r'),
+        u = n('rHpw'),
+        d = n('MWbm'),
+        p = u.a.create(function (e) {
           return {
             base: { flexGrow: 1, backgroundColor: e.colors.cellBackground, justifyContent: 'space-between' },
             icon: {
@@ -49,36 +49,36 @@
         })
       t.a = function (e) {
         var t = e.accessibilityLabel,
-          r = e.isSelected,
-          n = e.link,
+          n = e.isSelected,
+          a = e.link,
           b = e.onClick,
-          f = e.text,
-          m = r ? d.containerClicked : d.containerUnclicked,
+          m = e.text,
+          f = n ? p.containerClicked : p.containerUnclicked,
           y = l.a.generate({
-            backgroundColor: r ? u.a.theme.colors.primary : 'transparent',
-            color: r ? u.a.theme.colors.white : u.a.theme.colors.primary,
+            backgroundColor: n ? u.a.theme.colors.primary : 'transparent',
+            color: n ? u.a.theme.colors.white : u.a.theme.colors.primary,
           }),
-          w = a.a.createElement(
-            p.a,
-            { style: d.base },
-            a.a.createElement(
+          w = r.a.createElement(
+            d.a,
+            { style: p.base },
+            r.a.createElement(
               s.a,
-              { accessibilityLabel: t, interactiveStyles: y, style: [d.border, m] },
-              r ? a.a.createElement(c.a, { style: d.icon }) : null,
-              a.a.createElement(
+              { accessibilityLabel: t, interactiveStyles: y, style: [p.border, f] },
+              n ? r.a.createElement(c.a, { style: p.icon }) : null,
+              r.a.createElement(
                 o.b,
-                { color: r ? 'whiteOnColor' : 'normal', numberOfLines: 2, style: d.text, weight: 'bold' },
-                f,
+                { color: n ? 'whiteOnColor' : 'normal', numberOfLines: 2, style: p.text, weight: 'bold' },
+                m,
               ),
             ),
           )
-        return a.a.createElement(
-          p.a,
-          { style: d.wrapper },
-          a.a.createElement(i.a, {
+        return r.a.createElement(
+          d.a,
+          { style: p.wrapper },
+          r.a.createElement(i.a, {
             accessibilityLabel: t,
-            containerStyle: d.mainContainer,
-            link: n,
+            containerStyle: p.mainContainer,
+            link: a,
             onClick: b,
             upper: w,
             withInteractiveStyling: !0,
@@ -86,35 +86,35 @@
         )
       }
     },
-    IJsT: function (e, t, r) {
+    IJsT: function (e, t, n) {
       'use strict'
-      r('hBvt')
-      var n = r('ERkP'),
-        a = r.n(n),
-        o = r('cm6r'),
-        i = r('rHpw'),
-        c = r('MWbm'),
+      n('hBvt')
+      var a = n('ERkP'),
+        r = n.n(a),
+        o = n('cm6r'),
+        i = n('rHpw'),
+        c = n('MWbm'),
         l = function (e) {
           var t = e.accessibilityLabel,
-            r = e.containerStyle,
-            n = e.isCompact,
+            n = e.containerStyle,
+            a = e.isCompact,
             i = e.link,
             l = e.lower,
             u = e.onClick,
-            p = e.stackLayoutLowerStyle,
-            d = e.stackLayoutUpperStyle,
+            d = e.stackLayoutLowerStyle,
+            p = e.stackLayoutUpperStyle,
             b = e.upper,
-            f = e.withInteractiveStyling,
-            m = a.a.createElement(
-              a.a.Fragment,
+            m = e.withInteractiveStyling,
+            f = r.a.createElement(
+              r.a.Fragment,
               null,
-              a.a.createElement(c.a, { style: [s.defaultUpperContainerStyle, d, n && { height: 'auto' }] }, b),
-              l ? a.a.createElement(c.a, { style: [s.defaultLowerContainerStyle, p] }, l) : null,
+              r.a.createElement(c.a, { style: [s.defaultUpperContainerStyle, p, a && { height: 'auto' }] }, b),
+              l ? r.a.createElement(c.a, { style: [s.defaultLowerContainerStyle, d] }, l) : null,
             )
-          return a.a.createElement(
+          return r.a.createElement(
             o.a,
-            { accessibilityLabel: t, interactive: f, link: i, onClick: u, style: [s.root, r] },
-            m,
+            { accessibilityLabel: t, interactive: m, link: i, onClick: u, style: [s.root, n] },
+            f,
           )
         }
       l.defaultProps = { withInteractiveStyling: !1 }
@@ -131,95 +131,94 @@
       })
       t.a = l
     },
-    bXO0: function (e, t, r) {
+    bXO0: function (e, t, n) {
       'use strict'
-      r.r(t)
-      r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
-      var n = r('KEM+'),
-        a = r.n(n),
-        o = r('ezF+'),
-        i = r('VPAj'),
-        c = r('zh9S'),
-        l = r('Rp9C'),
-        s = r('Zejx'),
-        u = r('97Jx'),
-        p = r.n(u),
-        d = (r('ho0z'), r('ERkP')),
-        b = r.n(d),
-        f = r('rxPX'),
-        m = r('0KEI'),
-        y = Object(f.a)()
+      n.r(t)
+      var a = n('yiKp'),
+        r = n.n(a),
+        o = n('ezF+'),
+        i = n('VPAj'),
+        c = n('zh9S'),
+        l = n('Rp9C'),
+        s = n('Zejx'),
+        u = n('97Jx'),
+        d = n.n(u),
+        p = (n('ho0z'), n('ERkP')),
+        b = n.n(p),
+        m = n('rxPX'),
+        f = n('0KEI'),
+        y = Object(m.a)()
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(m.createLocalApiErrorHandlerWithContextFactory)('TOPIC_TILE_CONTEXT'),
+              createLocalApiErrorHandler: Object(f.createLocalApiErrorHandlerWithContextFactory)('TOPIC_TILE_CONTEXT'),
               follow: s.a.follow,
               unfollow: s.a.unfollow,
             }
           })
           .withAnalytics(),
-        w = r('3XMw'),
-        g = r.n(w),
-        h = r('Tp1h'),
-        v = r('Jkc4'),
-        k = r('gwY8'),
-        C = r('zF9o'),
-        E = r('Dfuf'),
-        O = r('gaoh'),
+        w = n('3XMw'),
+        g = n.n(w),
+        h = n('Tp1h'),
+        v = n('Jkc4'),
+        k = n('gwY8'),
+        C = n('zF9o'),
+        E = n('Dfuf'),
+        R = n('gaoh'),
         S = g.a.je808a16,
-        R = g.a.ge8f3043,
-        j = g.a.aa576cbf,
-        L = y(function (e) {
+        L = g.a.ge8f3043,
+        x = g.a.aa576cbf,
+        I = y(function (e) {
           var t = e.analytics,
-            r = e.createLocalApiErrorHandler,
-            n = e.follow,
-            a = e.isRecommended,
+            n = e.createLocalApiErrorHandler,
+            a = e.follow,
+            r = e.isRecommended,
             o = e.style,
             i = e.topic,
             c = e.unfollow,
             l = e.url,
             s = i.following,
             u = i.id,
-            d = i.name,
-            f = s ? j({ topicName: d }) : R({ topicName: d }),
-            m = b.a.useRef(!1),
-            y = function (e, t, r) {
-              return i.following ? e(g(r)) : e(w(t))
+            p = i.name,
+            m = s ? x({ topicName: p }) : L({ topicName: p }),
+            f = b.a.useRef(!1),
+            y = function (e, t, n) {
+              return i.following ? e(g(n)) : e(w(t))
             },
             w = function (e) {
-              return function (a) {
-                n(i.id)
-                  .catch(r())
+              return function (r) {
+                a(i.id)
+                  .catch(n())
                   .then(e && e(i.id)),
                   t.scribeAction('follow')
               }
             },
             g = function (e) {
-              return function (n) {
+              return function (a) {
                 c(i.id)
-                  .catch(r())
+                  .catch(n())
                   .then(e && e(i.id)),
                   t.scribeAction('unfollow')
               }
             },
-            L = function (e) {
+            I = function (e) {
               t.scribeAction('click')
             }
-          return b.a.createElement(v.a, { customText: d, displayMode: h.a.topic }, function (e) {
+          return b.a.createElement(v.a, { customText: p, displayMode: h.a.topic }, function (e) {
             return b.a.createElement(k.a.Consumer, null, function (t) {
-              var r = t.onFollow,
-                n = t.onInitialize,
+              var n = t.onFollow,
+                a = t.onInitialize,
                 i = t.onUnfollow
-              n && !m.current && (n(u, s), (m.current = !0))
-              var c = a
-                ? (function (e, t, r) {
-                    return { accessibilityLabel: f, onClick: y(e, t, r), text: d }
-                  })(e, r, i)
+              a && !f.current && (a(u, s), (f.current = !0))
+              var c = r
+                ? (function (e, t, n) {
+                    return { accessibilityLabel: m, onClick: y(e, t, n), text: p }
+                  })(e, n, i)
                 : (function (e) {
                     return {
-                      accessibilityLabel: S({ topicName: d }),
-                      onClick: e(L),
+                      accessibilityLabel: S({ topicName: p }),
+                      onClick: e(I),
                       link: (null == l ? void 0 : l.url) || ((t = u), '/i/topics/'.concat(t)),
-                      text: d,
+                      text: p,
                     }
                     var t
                   })(e)
@@ -227,89 +226,63 @@
                 b.a.Fragment,
                 null,
                 o === C.a.DoubleStateDefault
-                  ? b.a.createElement(E.a, p()({}, c, { isSelected: s }))
-                  : b.a.createElement(O.a, c),
+                  ? b.a.createElement(E.a, d()({}, c, { isSelected: s }))
+                  : b.a.createElement(R.a, c),
               )
             })
           })
+        }),
+        T = o.g({
+          bindActions: function (e) {
+            e.module
+            return { scribe: c.c }
+          },
+          selectData: function (e) {
+            var t = e.entry
+            return {
+              topic: function (e) {
+                var n
+                return s.a.select(e, null === (n = t.content.content) || void 0 === n ? void 0 : n.topicTile.topicId)
+              },
+            }
+          },
+          component: I,
+          createProps: function (e) {
+            var t = e.data.topic,
+              n = e.entry.content.content.topicTile,
+              a = n.functionalityType,
+              r = n.style,
+              o = n.url
+            return t ? { topic: t, isRecommended: a === C.b.Recommendation, style: r, url: o } : null
+          },
+          getScribeDataItem: function (e) {
+            var t = e.content.content.topicTile.topicId,
+              n = e.itemMetadata.clientEventInfo
+            return l.a.forTopic(t, n)
+          },
+          onImpression: function (e) {
+            var t = e.actions.scribe,
+              n = e.scribeData,
+              a = e.scribeNamespace
+            t(r()(r()({}, a), {}, { action: 'impression' }), n)
+          },
+          shouldDisplayBorder: Object(i.a)(!1),
+          isFocusable: Object(i.a)(!0),
         })
-      function x(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
-        }
-        return r
-      }
-      function I(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? x(Object(r), !0).forEach(function (t) {
-                a()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : x(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
-        }
-        return e
-      }
-      var P = o.g({
-        bindActions: function (e) {
-          e.module
-          return { scribe: c.c }
-        },
-        selectData: function (e) {
-          var t = e.entry
-          return {
-            topic: function (e) {
-              var r
-              return s.a.select(e, null === (r = t.content.content) || void 0 === r ? void 0 : r.topicTile.topicId)
-            },
-          }
-        },
-        component: L,
-        createProps: function (e) {
-          var t = e.data.topic,
-            r = e.entry.content.content.topicTile,
-            n = r.functionalityType,
-            a = r.style,
-            o = r.url
-          return t ? { topic: t, isRecommended: n === C.b.Recommendation, style: a, url: o } : null
-        },
-        getScribeDataItem: function (e) {
-          var t = e.content.content.topicTile.topicId,
-            r = e.itemMetadata.clientEventInfo
-          return l.a.forTopic(t, r)
-        },
-        onImpression: function (e) {
-          var t = e.actions.scribe,
-            r = e.scribeData
-          t(I(I({}, e.scribeNamespace), {}, { action: 'impression' }), r)
-        },
-        shouldDisplayBorder: Object(i.a)(!1),
-        isFocusable: Object(i.a)(!0),
-      })
-      t.default = P
+      t.default = T
     },
-    gaoh: function (e, t, r) {
+    gaoh: function (e, t, n) {
       'use strict'
-      r('hBvt')
-      var n = r('ERkP'),
-        a = r.n(n),
-        o = r('t62R'),
-        i = r('IJsT'),
-        c = r('I4+6'),
-        l = r('cm6r'),
-        s = r('rHpw'),
-        u = r('MWbm'),
-        p = s.a.create(function (e) {
+      n('hBvt')
+      var a = n('ERkP'),
+        r = n.n(a),
+        o = n('t62R'),
+        i = n('IJsT'),
+        c = n('I4+6'),
+        l = n('cm6r'),
+        s = n('rHpw'),
+        u = n('MWbm'),
+        d = s.a.create(function (e) {
           return {
             base: { flexGrow: 1, backgroundColor: e.colors.primary, justifyContent: 'center' },
             centerTile: { margin: e.spaces.space8 },
@@ -319,47 +292,47 @@
         })
       t.a = function (e) {
         var t = e.accessibilityLabel,
-          r = e.link,
-          n = e.onClick,
-          d = e.text,
+          n = e.link,
+          a = e.onClick,
+          p = e.text,
           b = c.a.generate({ backgroundColor: s.a.theme.colors.primary, color: s.a.theme.colors.white }),
-          f = a.a.createElement(
+          m = r.a.createElement(
             l.a,
-            { accessibilityLabel: t, interactiveStyles: b, style: p.base },
-            a.a.createElement(
+            { accessibilityLabel: t, interactiveStyles: b, style: d.base },
+            r.a.createElement(
               o.b,
               {
                 align: 'center',
                 color: 'whiteOnColor',
                 numberOfLines: 3,
                 size: 'headline2',
-                style: p.centerTile,
+                style: d.centerTile,
                 weight: 'bold',
               },
-              d,
+              p,
             ),
           )
-        return a.a.createElement(
+        return r.a.createElement(
           u.a,
-          { style: p.wrapper },
-          a.a.createElement(i.a, {
+          { style: d.wrapper },
+          r.a.createElement(i.a, {
             accessibilityLabel: t,
-            containerStyle: p.container,
-            link: r,
-            onClick: n,
-            upper: f,
+            containerStyle: d.container,
+            link: n,
+            onClick: a,
+            upper: m,
             withInteractiveStyling: !0,
           }),
         )
       }
     },
-    gwY8: function (e, t, r) {
+    gwY8: function (e, t, n) {
       'use strict'
-      r.d(t, 'a', function () {
-        return a
+      n.d(t, 'a', function () {
+        return r
       })
-      var n = r('ERkP'),
-        a = r.n(n).a.createContext({ onFollow: void 0, onInitialize: void 0, onUnfollow: void 0 })
+      var a = n('ERkP'),
+        r = n.n(a).a.createContext({ onFollow: void 0, onInitialize: void 0, onUnfollow: void 0 })
     },
   },
 ])

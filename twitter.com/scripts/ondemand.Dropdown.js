@@ -1,15 +1,15 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [201],
+  [202],
   {
     XygZ: function (e, t, n) {
       'use strict'
       var o = n('ax0f'),
-        r = n('gIHd')
+        i = n('gIHd')
       o(
         { target: 'String', proto: !0, forced: n('sHxg')('anchor') },
         {
           anchor: function (e) {
-            return r(this, 'a', 'name', e)
+            return i(this, 'a', 'name', e)
           },
         },
       )
@@ -18,96 +18,47 @@
       'use strict'
       n.r(t),
         n.d(t, 'default', function () {
-          return A
+          return j
         })
-      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('OZaJ')
       var o = n('97Jx'),
-        r = n.n(o),
-        i = n('VrFO'),
-        a = n.n(i),
+        i = n.n(o),
+        a = n('VrFO'),
+        r = n.n(a),
         c = n('Y9Ll'),
         l = n.n(c),
-        s = n('1Pcy'),
-        d = n.n(s),
+        d = n('1Pcy'),
+        s = n.n(d),
         u = n('5Yy7'),
         p = n.n(u),
-        f = n('N+ot'),
-        h = n.n(f),
-        m = n('AuHH'),
+        h = n('2VqO'),
+        f = n.n(h),
+        m = n('KEM+'),
         v = n.n(m),
-        y = n('KEM+'),
+        w = n('yiKp'),
+        _ = n.n(w),
+        y = (n('uFXj'), n('yH/f'), n('XygZ'), n('ERkP')),
         b = n.n(y),
-        w = (n('uFXj'), n('yH/f'), n('XygZ'), n('ERkP')),
-        O = n.n(w),
         g = n('zfvc'),
-        _ = n('jHwr'),
+        O = n('jHwr'),
         R = n('VY6S'),
         H = n('w9LO'),
         E = n('//dC'),
         N = n('lHOd'),
-        j = n('Oe3h'),
-        x = n('0FVZ'),
-        P = n('7N4s'),
-        C = n('cHvH'),
-        D = n('rHpw'),
-        k = n('i4Oy'),
-        F = n('shC7'),
-        L = n('MWbm')
-      function U(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var n,
-            o = v()(e)
-          if (t) {
-            var r = v()(this).constructor
-            n = Reflect.construct(o, arguments, r)
-          } else n = o.apply(this, arguments)
-          return h()(this, n)
-        }
-      }
-      function M(e, t) {
-        var n = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var o = Object.getOwnPropertySymbols(e)
-          t &&
-            (o = o.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            n.push.apply(n, o)
-        }
-        return n
-      }
-      function K(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? M(Object(n), !0).forEach(function (t) {
-                b()(e, t, n[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : M(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-              })
-        }
-        return e
-      }
-      var z = D.a.create(function (e) {
+        x = n('Oe3h'),
+        C = n('0FVZ'),
+        k = n('7N4s'),
+        D = n('cHvH'),
+        F = n('rHpw'),
+        L = n('i4Oy'),
+        U = n('shC7'),
+        K = n('MWbm'),
+        M = F.a.create(function (e) {
           return {
             rootNarrow: { maxWidth: '75%' },
             rootWide: { maxWidth: 'calc('.concat(e.spaces.space64, ' * 6)') },
-            anchor: D.a.absoluteFillObject,
-            mask: K(K({}, D.a.absoluteFillObject), {}, { position: 'fixed' }),
-            bodyRectHelper: K(K({}, D.a.absoluteFillObject), {}, { bottom: void 0 }),
+            anchor: F.a.absoluteFillObject,
+            mask: _()(_()({}, F.a.absoluteFillObject), {}, { position: 'fixed' }),
+            bodyRectHelper: _()(_()({}, F.a.absoluteFillObject), {}, { bottom: void 0 }),
             content: {
               borderRadius: e.borderRadii.small,
               position: 'absolute',
@@ -119,102 +70,102 @@
             contentFixed: { position: 'fixed', overflowY: 'auto', overscrollBehavior: 'contain' },
           }
         }),
-        A = (function (e) {
+        j = (function (e) {
           p()(n, e)
-          var t = U(n)
+          var t = f()(n)
           function n(e, o) {
-            var r
+            var i
             return (
-              a()(this, n),
-              (r = t.call(this, e, o)),
-              b()(d()(r), '_handleAnimateComplete', function () {
-                var e = r.props.onAnimateComplete
+              r()(this, n),
+              (i = t.call(this, e, o)),
+              v()(s()(i), '_handleAnimateComplete', function () {
+                var e = i.props.onAnimateComplete
                 e && e()
               }),
-              b()(d()(r), '_handleEsc', function (e) {
-                var t = r.props.onDismiss,
+              v()(s()(i), '_handleEsc', function (e) {
+                var t = i.props.onDismiss,
                   n = e.altKey,
                   o = e.ctrlKey,
-                  i = e.key,
-                  a = e.metaKey
-                !(n || o || a) && 'Escape' === i && t()
+                  a = e.key,
+                  r = e.metaKey
+                !(n || o || r) && 'Escape' === a && t()
               }),
-              b()(d()(r), '_receiveBodyRectHelperRef', function (e) {
-                e && r._bodyRectHelperNode !== e && ((r._bodyRectHelperNode = e), r._scheduleUpdate())
+              v()(s()(i), '_receiveBodyRectHelperRef', function (e) {
+                e && i._bodyRectHelperNode !== e && ((i._bodyRectHelperNode = e), i._scheduleUpdate())
               }),
-              b()(d()(r), '_receiveAnchorRef', function (e) {
-                e && r._anchorNode !== e && ((r._anchorNode = e), r._scheduleUpdate())
+              v()(s()(i), '_receiveAnchorRef', function (e) {
+                e && i._anchorNode !== e && ((i._anchorNode = e), i._scheduleUpdate())
               }),
-              b()(d()(r), '_receiveContentRef', function (e) {
-                e && r._contentNode !== e && ((r._contentNode = e), r._scheduleUpdate())
+              v()(s()(i), '_receiveContentRef', function (e) {
+                e && i._contentNode !== e && ((i._contentNode = e), i._scheduleUpdate())
               }),
-              b()(d()(r), '_updatePosition', function () {
+              v()(s()(i), '_updatePosition', function () {
                 if (
-                  r._mounted &&
-                  (r._anchorNode || r.props.position) &&
-                  r._contentNode &&
-                  r._contentNode instanceof window.HTMLElement &&
-                  r._bodyRectHelperNode &&
-                  r._bodyRectHelperNode instanceof window.HTMLElement
+                  i._mounted &&
+                  (i._anchorNode || i.props.position) &&
+                  i._contentNode &&
+                  i._contentNode instanceof window.HTMLElement &&
+                  i._bodyRectHelperNode &&
+                  i._bodyRectHelperNode instanceof window.HTMLElement
                 ) {
-                  var e = r._contentNode.scrollHeight,
-                    t = r._contentNode.scrollWidth,
-                    n = r._bodyRectHelperNode.getBoundingClientRect(),
+                  var e = i._contentNode.scrollHeight,
+                    t = i._contentNode.scrollWidth,
+                    n = i._bodyRectHelperNode.getBoundingClientRect(),
                     o = n.left,
-                    i = n.top,
-                    a = n.width,
-                    c = k.a.get('window'),
+                    a = n.top,
+                    r = n.width,
+                    c = L.a.get('window'),
                     l = c.height,
-                    s = c.width,
-                    d = { left: 0, top: 0, height: 0, width: 0 }
-                  r.props.position
-                    ? (d = K(K({}, d), r.props.position))
-                    : r._anchorNode &&
-                      r._anchorNode instanceof window.HTMLElement &&
-                      (d = r._anchorNode.getBoundingClientRect())
-                  var u = d,
+                    d = c.width,
+                    s = { left: 0, top: 0, height: 0, width: 0 }
+                  i.props.position
+                    ? (s = _()(_()({}, s), i.props.position))
+                    : i._anchorNode &&
+                      i._anchorNode instanceof window.HTMLElement &&
+                      (s = i._anchorNode.getBoundingClientRect())
+                  var u = s,
                     p = u.height,
-                    f = u.left,
-                    h = u.top,
+                    h = u.left,
+                    f = u.top,
                     m = u.width,
-                    v = s - a,
-                    y = f - o,
-                    b = h - i,
-                    w = f + m >= t,
-                    O = h + p >= e,
-                    g = s - f >= t,
-                    _ = l - h >= e,
-                    R = r.props.preferredVerticalOrientation,
-                    H = (function (e) {
-                      return F.a.getConstants().isRTL ? ('left' === e ? 'right' : 'left') : e
-                    })(r.props.preferredHorizontalOrientation),
-                    E =
-                      r.state.verticalOrientation ||
+                    v = d - r,
+                    w = h - o,
+                    y = f - a,
+                    b = h + m >= t,
+                    g = f + p >= e,
+                    O = d - h >= t,
+                    R = l - f >= e,
+                    H = i.props.preferredVerticalOrientation,
+                    E = (function (e) {
+                      return U.a.getConstants().isRTL ? ('left' === e ? 'right' : 'left') : e
+                    })(i.props.preferredHorizontalOrientation),
+                    N =
+                      i.state.verticalOrientation ||
                       (function (e) {
                         var t = e.canOrientDown,
                           n = e.canOrientUp,
                           o = e.verticalPreference
                         return (n && t) || (!n && !t) ? o : n ? 'up' : 'down'
-                      })({ verticalPreference: R, canOrientUp: O, canOrientDown: _ }),
-                    N =
-                      r.state.horizontalOrientation ||
+                      })({ verticalPreference: H, canOrientUp: g, canOrientDown: R }),
+                    x =
+                      i.state.horizontalOrientation ||
                       (function (e) {
                         var t = e.canOrientLeft,
                           n = e.canOrientRight,
                           o = e.horizontalPreference
                         return !t || ('left' !== o && n) ? 'right' : 'left'
-                      })({ horizontalPreference: H, canOrientLeft: w, canOrientRight: g }),
-                    j = r.props.isFixed ? f : y,
-                    x = r.props.isFixed ? h : b,
-                    P = 'up' === E ? x + p - e : x,
-                    C = 'left' === N ? s - j - m - v : s - j - t - v
-                  r.setState({ top: Math.max(P, 0), right: C, verticalOrientation: E, horizontalOrientation: N })
+                      })({ horizontalPreference: E, canOrientLeft: b, canOrientRight: O }),
+                    C = i.props.isFixed ? h : w,
+                    k = i.props.isFixed ? f : y,
+                    D = 'up' === N ? k + p - e : k,
+                    F = 'left' === x ? d - C - m - v : d - C - t - v
+                  i.setState({ top: Math.max(D, 0), right: F, verticalOrientation: N, horizontalOrientation: x })
                 }
               }),
-              (r.state = Object.freeze({})),
-              (r._scheduleUpdate = Object(_.a)(r._updatePosition, window.requestAnimationFrame)),
-              (r._scheduleDebouncedUpdate = Object(R.a)(r._scheduleUpdate, 250)),
-              r
+              (i.state = Object.freeze({})),
+              (i._scheduleUpdate = Object(O.a)(i._updatePosition, window.requestAnimationFrame)),
+              (i._scheduleDebouncedUpdate = Object(R.a)(i._scheduleUpdate, 250)),
+              i
             )
           }
           return (
@@ -222,13 +173,13 @@
               {
                 key: 'componentDidMount',
                 value: function () {
-                  ;(this._mounted = !0), k.a.addEventListener('change', this._scheduleDebouncedUpdate)
+                  ;(this._mounted = !0), L.a.addEventListener('change', this._scheduleDebouncedUpdate)
                 },
               },
               {
                 key: 'componentWillUnmount',
                 value: function () {
-                  ;(this._mounted = !1), k.a.removeEventListener('change', this._scheduleDebouncedUpdate)
+                  ;(this._mounted = !1), L.a.removeEventListener('change', this._scheduleDebouncedUpdate)
                 },
               },
               {
@@ -238,56 +189,56 @@
                     t = this.props,
                     n = t.animateInDuration,
                     o = t.animateType,
-                    i = t.children,
-                    a = t.isFixed,
+                    a = t.children,
+                    r = t.isFixed,
                     c = t.onDismiss,
                     l = t.withKeyboardNavigation,
-                    s = this.state,
-                    d = s.right,
-                    u = s.top,
-                    p = s.verticalOrientation,
-                    f = void 0 === u,
-                    h = 'calc(100vh - '.concat(u || 0, 'px)'),
+                    d = this.state,
+                    s = d.right,
+                    u = d.top,
+                    p = d.verticalOrientation,
+                    h = void 0 === u,
+                    f = 'calc(100vh - '.concat(u || 0, 'px)'),
                     m = [
-                      z.content,
-                      f && z.contentInitialRender,
-                      a && [z.contentFixed, { maxHeight: h }],
+                      M.content,
+                      h && M.contentInitialRender,
+                      r && [M.contentFixed, { maxHeight: f }],
                       {
                         top: u,
-                        right: F.a.getConstants().isRTL ? void 0 : d,
-                        left: F.a.getConstants().isRTL ? d : void 0,
+                        right: U.a.getConstants().isRTL ? void 0 : s,
+                        left: U.a.getConstants().isRTL ? s : void 0,
                       },
                     ]
-                  return O.a.createElement(
-                    L.a,
-                    { ref: this._receiveAnchorRef, style: z.anchor },
-                    O.a.createElement(
-                      x.a.Dropdown,
+                  return b.a.createElement(
+                    K.a,
+                    { ref: this._receiveAnchorRef, style: M.anchor },
+                    b.a.createElement(
+                      C.a.Dropdown,
                       null,
-                      O.a.createElement(N.a.Consumer, null, function (t) {
-                        return O.a.createElement(P.b.Consumer, null, function (a) {
-                          var s = a.isModal
-                          return O.a.createElement(
+                      b.a.createElement(N.a.Consumer, null, function (t) {
+                        return b.a.createElement(k.b.Consumer, null, function (r) {
+                          var d = r.isModal
+                          return b.a.createElement(
                             E.a,
-                            { history: t, isModal: s, onDismiss: c },
-                            O.a.createElement(
+                            { history: t, isModal: d, onDismiss: c },
+                            b.a.createElement(
                               H.a,
                               { withKeyboardNavigation: l },
-                              O.a.createElement(L.a, { onClick: c, style: z.mask }),
-                              O.a.createElement(L.a, { ref: e._receiveBodyRectHelperRef, style: z.bodyRectHelper }),
-                              O.a.createElement(C.a, null, function (t) {
-                                var a = t.windowWidth
-                                return O.a.createElement(
-                                  L.a,
+                              b.a.createElement(K.a, { onClick: c, style: M.mask }),
+                              b.a.createElement(K.a, { ref: e._receiveBodyRectHelperRef, style: M.bodyRectHelper }),
+                              b.a.createElement(D.a, null, function (t) {
+                                var r = t.windowWidth
+                                return b.a.createElement(
+                                  K.a,
                                   {
                                     accessibilityRole: 'menu',
                                     onKeyUp: e._handleEsc,
                                     ref: e._receiveContentRef,
-                                    style: [a < D.a.theme.breakpoints.medium ? z.rootNarrow : z.rootWide, m],
+                                    style: [r < F.a.theme.breakpoints.medium ? M.rootNarrow : M.rootWide, m],
                                   },
-                                  f && 'slide' === o
-                                    ? i
-                                    : O.a.createElement(
+                                  h && 'slide' === o
+                                    ? a
+                                    : b.a.createElement(
                                         g.b,
                                         {
                                           animateMount: 'up' !== p,
@@ -298,11 +249,11 @@
                                         },
                                         function (e) {
                                           var t = e.isAnimating
-                                          return O.a.createElement(
-                                            j.a,
+                                          return b.a.createElement(
+                                            x.a,
                                             { id: 'Dropdown', minimizeReporting: t },
                                             function (e, t) {
-                                              return O.a.createElement(L.a, r()({ ref: e() }, t({})), i)
+                                              return b.a.createElement(K.a, i()({ ref: e() }, t({})), a)
                                             },
                                           )
                                         },
@@ -320,8 +271,8 @@
             ]),
             n
           )
-        })(O.a.Component)
-      b()(A, 'defaultProps', {
+        })(b.a.Component)
+      v()(j, 'defaultProps', {
         preferredHorizontalOrientation: 'left',
         preferredVerticalOrientation: 'down',
         animateType: 'slide',

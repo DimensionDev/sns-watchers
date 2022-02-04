@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [214],
+  [215],
   {
     '1Ws7': function (e, t, a) {
       'use strict'
@@ -14,23 +14,24 @@
         d = a.n(l),
         u = a('1AUC'),
         m = a('sYiQ'),
-        p = function (e) {
+        p = ['entry', 'feedbackItems', 'module', 'shouldDisplayPin'],
+        b = function (e) {
           var t = e.entry,
             a = (e.feedbackItems, e.module, e.shouldDisplayPin),
-            n = s()(e, ['entry', 'feedbackItems', 'module', 'shouldDisplayPin']),
+            n = s()(e, p),
             i = a ? m.a.Pinning : void 0
           return d.a.createElement(u.a, o()({ isMember: t.content.isMember, listId: t.content.id, mode: i }, n))
         },
-        b = d.a.memo(p),
-        f = a('Rp9C')
+        f = d.a.memo(b),
+        v = a('Rp9C')
       t.default = function (e) {
         return n
           .b({
-            component: b,
+            component: f,
             isFocusable: Object(i.a)(!0),
             getScribeDataItem: function (e) {
               var t = e.content.id
-              return f.a.forList(t)
+              return v.a.forList(t)
             },
           })
           .getHandler(function () {

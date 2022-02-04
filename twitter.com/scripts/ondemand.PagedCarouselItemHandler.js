@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [221],
+  [222],
   {
     'X3+4': function (e, t, r) {
       'use strict'
@@ -47,20 +47,13 @@
         h = r('YeIG'),
         C = r('uCxL'),
         y = r('x5Pi'),
-        E = w(function (e) {
+        E = ['community', 'createLocalApiErrorHandler', 'fetchCommunityIfNeeded', 'hydratedTweet', 'tweetId'],
+        g = w(function (e) {
           var t = e.community,
             r = e.createLocalApiErrorHandler,
             n = e.fetchCommunityIfNeeded,
             a = e.hydratedTweet,
-            s =
-              (e.tweetId,
-              c()(e, [
-                'community',
-                'createLocalApiErrorHandler',
-                'fetchCommunityIfNeeded',
-                'hydratedTweet',
-                'tweetId',
-              ])),
+            s = (e.tweetId, c()(e, E)),
             u = i.a.useContext(l.a),
             d = u.featureSwitches,
             p = u.loggedInUserId,
@@ -74,7 +67,7 @@
           var m = d.isTrue('responsive_web_alt_text_badge_enabled'),
             f = a && Object(y.f)(a, p, t),
             w = f && Object(y.e)(f),
-            E = d.isTrue('responsive_web_reactions_enabled')
+            g = d.isTrue('responsive_web_reactions_enabled')
           return i.a.createElement(
             C.a,
             o()({}, s, {
@@ -82,11 +75,11 @@
               shouldShowAltLabelAlways: m,
               socialContextProps: w,
               tweet: a,
-              withReactions: E,
+              withReactions: g,
             }),
           )
         })
-      t.a = E
+      t.a = g
     },
     kh1t: function (e, t, r) {
       'use strict'

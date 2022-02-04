@@ -1,106 +1,82 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [173],
+  [174],
   {
-    '2Daw': function (e, t, r) {
+    '2Daw': function (e, t, a) {
       'use strict'
-      r.d(t, 'a', function () {
-        return H
+      a.d(t, 'a', function () {
+        return z
       })
-      r('OZaJ')
-      var n = r('VrFO'),
-        a = r.n(n),
-        i = r('Y9Ll'),
-        o = r.n(i),
-        c = r('5Yy7'),
-        s = r.n(c),
-        l = r('N+ot'),
-        u = r.n(l),
-        d = r('AuHH'),
-        p = r.n(d),
-        f = r('KEM+'),
-        h = r.n(f),
-        y = (r('uFXj'), r('ERkP')),
-        m = r.n(y),
-        b = r('LCtV'),
-        v = r('3XMw'),
-        g = r.n(v),
-        O = r('VPdC'),
-        P = r('pKoL'),
-        w = r('MWbm'),
-        R = r('rFBM'),
-        E = r('/yvb'),
-        M = r('9Xij'),
-        j = r('rHpw'),
-        C = r('hOZg'),
-        k = r('Mbn/'),
-        F = r('T8pk')
-      function D(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var r,
-            n = p()(e)
-          if (t) {
-            var a = p()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return u()(this, r)
-        }
-      }
-      var L = g.a.b87ca51a,
-        V = g.a.eebff22c,
-        H = (function (e) {
-          s()(r, e)
-          var t = D(r)
-          function r() {
-            return a()(this, r), t.apply(this, arguments)
+      var n = a('VrFO'),
+        i = a.n(n),
+        r = a('Y9Ll'),
+        o = a.n(r),
+        c = a('5Yy7'),
+        s = a.n(c),
+        l = a('2VqO'),
+        d = a.n(l),
+        u = a('KEM+'),
+        p = a.n(u),
+        m = (a('uFXj'), a('ERkP')),
+        h = a.n(m),
+        v = a('LCtV'),
+        b = a('3XMw'),
+        y = a.n(b),
+        f = a('VPdC'),
+        g = a('pKoL'),
+        C = a('MWbm'),
+        M = a('rFBM'),
+        E = a('/yvb'),
+        R = a('9Xij'),
+        w = a('rHpw'),
+        k = a('hOZg'),
+        P = a('Mbn/'),
+        F = a('T8pk'),
+        V = y.a.b87ca51a,
+        L = y.a.eebff22c,
+        z = (function (e) {
+          s()(a, e)
+          var t = d()(a)
+          function a() {
+            return i()(this, a), t.apply(this, arguments)
           }
           return (
-            o()(r, [
+            o()(a, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.borderRadius,
-                    r = e.maskStyle,
+                    a = e.maskStyle,
                     n = e.mediaItem,
-                    a = e.onAddMediaFiles,
-                    i = e.onCrop,
+                    i = e.onAddMediaFiles,
+                    r = e.onCrop,
                     o = e.onRemove,
                     c = e.rootStyle,
                     s = e.withDragDrop,
                     l = n && !n.uploader,
-                    u = m.a.createElement(
-                      m.a.Fragment,
+                    d = h.a.createElement(
+                      h.a.Fragment,
                       null,
                       this._renderPreview(),
                       l
                         ? null
-                        : m.a.createElement(
-                            m.a.Fragment,
+                        : h.a.createElement(
+                            h.a.Fragment,
                             null,
-                            m.a.createElement(w.a, { style: [A.mask, r, B[t]] }),
-                            m.a.createElement(
-                              w.a,
+                            h.a.createElement(C.a, { style: [A.mask, a, D[t]] }),
+                            h.a.createElement(
+                              C.a,
                               { style: A.mediaPicker },
                               this._renderMediaEdit(),
-                              i ? this._renderMediaCrop() : null,
+                              r ? this._renderMediaCrop() : null,
                               o ? this._renderMediaRemove() : null,
                             ),
                           ),
                     )
-                  return m.a.createElement(
-                    w.a,
-                    { style: [A.container, c, B[t]] },
-                    s && a ? m.a.createElement(R.a, { onFilesAdded: a, style: [A.dragDropContainer, B[t]] }, u) : u,
+                  return h.a.createElement(
+                    C.a,
+                    { style: [A.container, c, D[t]] },
+                    s && i ? h.a.createElement(M.a, { onFilesAdded: i, style: [A.dragDropContainer, D[t]] }, d) : d,
                   )
                 },
               },
@@ -108,10 +84,10 @@
                 key: '_renderMediaRemove',
                 value: function () {
                   var e = this.props.onRemove
-                  return m.a.createElement(E.a, {
-                    accessibilityLabel: L,
-                    hoverLabel: { label: L },
-                    icon: m.a.createElement(C.a, null),
+                  return h.a.createElement(E.a, {
+                    accessibilityLabel: V,
+                    hoverLabel: { label: V },
+                    icon: h.a.createElement(k.a, null),
                     onPress: e,
                     size: 'large',
                     style: A.rightButton,
@@ -124,13 +100,13 @@
                 value: function () {
                   var e = this.props,
                     t = e.onCrop,
-                    r = e.onRemove
-                  return m.a.createElement(E.a, {
-                    accessibilityLabel: V,
-                    icon: m.a.createElement(k.a, null),
+                    a = e.onRemove
+                  return h.a.createElement(E.a, {
+                    accessibilityLabel: L,
+                    icon: h.a.createElement(P.a, null),
                     onPress: t,
                     size: 'large',
-                    style: r ? A.middleButton : A.rightButton,
+                    style: a ? A.middleButton : A.rightButton,
                     type: 'onMediaDominantColorFilled',
                   })
                 },
@@ -140,25 +116,25 @@
                 value: function () {
                   var e = this.props,
                     t = e.acceptGifs,
-                    r = e.acceptVideo,
+                    a = e.acceptVideo,
                     n = e.accessibilityLabel,
-                    a = e.onAddMediaFiles,
-                    i = e.onEdit,
-                    o = m.a.createElement(F.a, null)
-                  return a
-                    ? m.a.createElement(O.a, {
+                    i = e.onAddMediaFiles,
+                    r = e.onEdit,
+                    o = h.a.createElement(F.a, null)
+                  return i
+                    ? h.a.createElement(f.a, {
                         acceptGifs: t,
-                        acceptVideo: r,
+                        acceptVideo: a,
                         accessibilityLabel: n,
                         icon: o,
-                        onChange: a,
+                        onChange: i,
                         size: 'large',
                         type: 'onMediaDominantColorFilled',
                       })
-                    : m.a.createElement(E.a, {
+                    : h.a.createElement(E.a, {
                         accessibilityLabel: n,
                         icon: o,
-                        onPress: i,
+                        onPress: r,
                         size: 'large',
                         style: A.edit,
                         type: 'onMediaDominantColorFilled',
@@ -170,17 +146,17 @@
                 value: function () {
                   var e = this.props,
                     t = e.aspectRatio,
-                    r = e.borderRadius,
+                    a = e.borderRadius,
                     n = e.currentContent,
-                    a = e.mediaItem
-                  return a
-                    ? m.a.createElement(
-                        M.a,
+                    i = e.mediaItem
+                  return i
+                    ? h.a.createElement(
+                        R.a,
                         { ratio: t },
-                        m.a.createElement(P.a, {
-                          borderRadius: r,
+                        h.a.createElement(g.a, {
+                          borderRadius: a,
                           enableGif: !1,
-                          mediaItem: a,
+                          mediaItem: i,
                           style: A.mediaPreview,
                           withCloseButton: !1,
                         }),
@@ -189,18 +165,18 @@
                 },
               },
             ]),
-            r
+            a
           )
-        })(m.a.Component)
-      h()(H, 'defaultProps', { acceptGifs: !1, acceptVideo: !1, aspectRatio: 1, borderRadius: b.a.NONE })
-      var B = j.a.create(function (e) {
+        })(h.a.Component)
+      p()(z, 'defaultProps', { acceptGifs: !1, acceptVideo: !1, aspectRatio: 1, borderRadius: v.a.NONE })
+      var D = w.a.create(function (e) {
           return {
             infinite: { borderRadius: e.borderRadii.infinite },
             medium: { borderRadius: e.borderRadii.small },
             none: { borderRadius: e.borderRadii.none },
           }
         }),
-        A = j.a.create(function (e) {
+        A = w.a.create(function (e) {
           return {
             mediaPreview: { height: '100%' },
             mediaPicker: {
@@ -232,256 +208,184 @@
           }
         })
     },
-    'Mbn/': function (e, t, r) {
+    'Mbn/': function (e, t, a) {
       'use strict'
-      r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
-      var n = r('KEM+'),
-        a = r.n(n),
-        i = r('ERkP'),
-        o = r.n(i),
-        c = r('Lsrn'),
-        s = r('k/Ka')
-      function l(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
-        }
-        return r
-      }
-      function u(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? l(Object(r), !0).forEach(function (t) {
-                a()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : l(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
-        }
-        return e
-      }
-      var d = function () {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(s.a)(
-          'svg',
-          u(
-            u({}, e),
-            {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [c.a.root, e.style], viewBox: '0 0 24 24' },
-          ),
-          o.a.createElement(
-            'g',
-            null,
-            o.a.createElement('path', {
-              d: 'M3.5 5.25H2c-.414 0-.75.336-.75.75s.336.75.75.75h1.5c.414 0 .75-.336.75-.75s-.336-.75-.75-.75zm18.5 12H7.5c-.414 0-.75-.337-.75-.75V2c0-.414-.336-.75-.75-.75s-.75.336-.75.75v14.5c0 1.24 1.01 2.25 2.25 2.25H22c.414 0 .75-.336.75-.75s-.336-.75-.75-.75zm-4 2.5c-.414 0-.75.336-.75.75V22c0 .414.336.75.75.75s.75-.336.75-.75v-1.5c0-.414-.336-.75-.75-.75z',
-            }),
-            o.a.createElement('path', {
-              d: 'M8.5 6.75h8c.414 0 .75.337.75.75v8c0 .414.336.75.75.75s.75-.336.75-.75v-8c0-1.24-1.01-2.25-2.25-2.25h-8c-.414 0-.75.336-.75.75s.336.75.75.75z',
-            }),
-          ),
-        )
-      }
-      ;(d.metadata = { width: 24, height: 24 }), (t.a = d)
-    },
-    P68U: function (e, t, r) {
-      'use strict'
-      r.r(t),
-        r.d(t, 'MediaPickerWithPreview', function () {
-          return M
-        })
-      r('OZaJ')
-      var n = r('VrFO'),
-        a = r.n(n),
-        i = r('Y9Ll'),
-        o = r.n(i),
-        c = r('1Pcy'),
-        s = r.n(c),
-        l = r('5Yy7'),
-        u = r.n(l),
-        d = r('N+ot'),
-        p = r.n(d),
-        f = r('AuHH'),
-        h = r.n(f),
-        y = r('KEM+'),
-        m = r.n(y),
-        b = (r('2G9S'), r('hCOa'), r('87if'), r('hBpG'), r('jQ3i'), r('x4t0'), r('z84I'), r('ERkP')),
-        v = r.n(b),
-        g = r('AspN'),
-        O = r('rxPX'),
-        P = Object(O.a)().propsFromActions(function () {
-          return { addMedia: g.b, processMultipleMedia: g.g }
-        }),
-        w = r('2Daw'),
-        R = r('VPdC')
-      function E(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var r,
-            n = h()(e)
-          if (t) {
-            var a = h()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return p()(this, r)
-        }
-      }
-      var M = (function (e) {
-        u()(r, e)
-        var t = E(r)
-        function r() {
-          var e
-          a()(this, r)
-          for (var n = arguments.length, i = new Array(n), o = 0; o < n; o++) i[o] = arguments[o]
-          return (
-            (e = t.call.apply(t, [this].concat(i))),
-            m()(s()(e), '_handleAddMediaFiles', function (t) {
-              var r = e.props,
-                n = r.addMedia,
-                a = r.location,
-                i = r.onChange,
-                o = r.onFailure,
-                c = r.processMultipleMedia,
-                s = e._getAcceptedFileInputs(),
-                l = Array.from(t).find(function (e) {
-                  return s.includes(e.type)
-                })
-              l &&
-                n([l], { location: a }).then(function (e) {
-                  i &&
-                    i(
-                      e.map(function (e) {
-                        return e.id
-                      }),
-                    ),
-                    c(e, { onFailure: o })
-                })
-            }),
-            m()(s()(e), '_getAcceptedFileInputs', function () {
-              var t = e.props,
-                r = t.acceptGifs,
-                n = t.acceptVideo
-              return Object(R.b)({ acceptGifs: r, acceptVideo: n })
-            }),
-            e
+      var n = a('yiKp'),
+        i = a.n(n),
+        r = a('ERkP'),
+        o = a.n(r),
+        c = a('Lsrn'),
+        s = a('k/Ka'),
+        l = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(s.a)(
+            'svg',
+            i()(
+              i()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [c.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            o.a.createElement(
+              'g',
+              null,
+              o.a.createElement('path', {
+                d: 'M3.5 5.25H2c-.414 0-.75.336-.75.75s.336.75.75.75h1.5c.414 0 .75-.336.75-.75s-.336-.75-.75-.75zm18.5 12H7.5c-.414 0-.75-.337-.75-.75V2c0-.414-.336-.75-.75-.75s-.75.336-.75.75v14.5c0 1.24 1.01 2.25 2.25 2.25H22c.414 0 .75-.336.75-.75s-.336-.75-.75-.75zm-4 2.5c-.414 0-.75.336-.75.75V22c0 .414.336.75.75.75s.75-.336.75-.75v-1.5c0-.414-.336-.75-.75-.75z',
+              }),
+              o.a.createElement('path', {
+                d: 'M8.5 6.75h8c.414 0 .75.337.75.75v8c0 .414.336.75.75.75s.75-.336.75-.75v-8c0-1.24-1.01-2.25-2.25-2.25h-8c-.414 0-.75.336-.75.75s.336.75.75.75z',
+              }),
+            ),
           )
         }
-        return (
-          o()(r, [
-            {
-              key: 'render',
-              value: function () {
-                var e = this.props,
-                  t = e.acceptGifs,
-                  r = e.acceptVideo,
-                  n = e.accessibilityLabel,
-                  a = e.aspectRatio,
-                  i = e.borderRadius,
-                  o = e.currentContent,
-                  c = e.maskStyle,
-                  s = e.mediaItem,
-                  l = e.onCrop,
-                  u = e.onRemove,
-                  d = e.rootStyle
-                return v.a.createElement(w.a, {
-                  acceptGifs: t,
-                  acceptVideo: r,
-                  accessibilityLabel: n,
-                  aspectRatio: a,
-                  borderRadius: i,
-                  currentContent: o,
-                  maskStyle: c,
-                  mediaItem: s,
-                  onAddMediaFiles: this._handleAddMediaFiles,
-                  onCrop: l,
-                  onRemove: u,
-                  rootStyle: d,
-                  withDragDrop: !0,
-                })
-              },
-            },
-          ]),
-          r
-        )
-      })(v.a.Component)
-      m()(M, 'defaultProps', { acceptGifs: !1, acceptVideo: !1 })
-      var j = P(M)
-      t.default = j
+      ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
     },
-    T8pk: function (e, t, r) {
+    P68U: function (e, t, a) {
       'use strict'
-      r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
-      var n = r('KEM+'),
-        a = r.n(n),
-        i = r('ERkP'),
-        o = r.n(i),
-        c = r('Lsrn'),
-        s = r('k/Ka')
-      function l(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
+      a.r(t),
+        a.d(t, 'MediaPickerWithPreview', function () {
+          return E
+        })
+      var n = a('VrFO'),
+        i = a.n(n),
+        r = a('Y9Ll'),
+        o = a.n(r),
+        c = a('1Pcy'),
+        s = a.n(c),
+        l = a('5Yy7'),
+        d = a.n(l),
+        u = a('2VqO'),
+        p = a.n(u),
+        m = a('KEM+'),
+        h = a.n(m),
+        v = (a('2G9S'), a('hCOa'), a('87if'), a('hBpG'), a('7x/C'), a('jQ3i'), a('x4t0'), a('z84I'), a('ERkP')),
+        b = a.n(v),
+        y = a('AspN'),
+        f = a('rxPX'),
+        g = Object(f.a)().propsFromActions(function () {
+          return { addMedia: y.b, processMultipleMedia: y.g }
+        }),
+        C = a('2Daw'),
+        M = a('VPdC'),
+        E = (function (e) {
+          d()(a, e)
+          var t = p()(a)
+          function a() {
+            var e
+            i()(this, a)
+            for (var n = arguments.length, r = new Array(n), o = 0; o < n; o++) r[o] = arguments[o]
+            return (
+              (e = t.call.apply(t, [this].concat(r))),
+              h()(s()(e), '_handleAddMediaFiles', function (t) {
+                var a = e.props,
+                  n = a.addMedia,
+                  i = a.location,
+                  r = a.onChange,
+                  o = a.onFailure,
+                  c = a.processMultipleMedia,
+                  s = e._getAcceptedFileInputs(),
+                  l = Array.from(t).find(function (e) {
+                    return s.includes(e.type)
+                  })
+                l &&
+                  n([l], { location: i }).then(function (e) {
+                    r &&
+                      r(
+                        e.map(function (e) {
+                          return e.id
+                        }),
+                      ),
+                      c(e, { onFailure: o })
+                  })
+              }),
+              h()(s()(e), '_getAcceptedFileInputs', function () {
+                var t = e.props,
+                  a = t.acceptGifs,
+                  n = t.acceptVideo
+                return Object(M.b)({ acceptGifs: a, acceptVideo: n })
+              }),
+              e
+            )
+          }
+          return (
+            o()(a, [
+              {
+                key: 'render',
+                value: function () {
+                  var e = this.props,
+                    t = e.acceptGifs,
+                    a = e.acceptVideo,
+                    n = e.accessibilityLabel,
+                    i = e.aspectRatio,
+                    r = e.borderRadius,
+                    o = e.currentContent,
+                    c = e.maskStyle,
+                    s = e.mediaItem,
+                    l = e.onCrop,
+                    d = e.onRemove,
+                    u = e.rootStyle
+                  return b.a.createElement(C.a, {
+                    acceptGifs: t,
+                    acceptVideo: a,
+                    accessibilityLabel: n,
+                    aspectRatio: i,
+                    borderRadius: r,
+                    currentContent: o,
+                    maskStyle: c,
+                    mediaItem: s,
+                    onAddMediaFiles: this._handleAddMediaFiles,
+                    onCrop: l,
+                    onRemove: d,
+                    rootStyle: u,
+                    withDragDrop: !0,
+                  })
+                },
+              },
+            ]),
+            a
+          )
+        })(b.a.Component)
+      h()(E, 'defaultProps', { acceptGifs: !1, acceptVideo: !1 })
+      var R = g(E)
+      t.default = R
+    },
+    T8pk: function (e, t, a) {
+      'use strict'
+      var n = a('yiKp'),
+        i = a.n(n),
+        r = a('ERkP'),
+        o = a.n(r),
+        c = a('Lsrn'),
+        s = a('k/Ka'),
+        l = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(s.a)(
+            'svg',
+            i()(
+              i()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [c.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            o.a.createElement(
+              'g',
+              null,
+              o.a.createElement('path', {
+                d: 'M19.708 22H4.292C3.028 22 2 20.972 2 19.708V7.375C2 6.11 3.028 5.083 4.292 5.083h2.146C7.633 3.17 9.722 2 12 2c2.277 0 4.367 1.17 5.562 3.083h2.146C20.972 5.083 22 6.11 22 7.375v12.333C22 20.972 20.972 22 19.708 22zM4.292 6.583c-.437 0-.792.355-.792.792v12.333c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V7.375c0-.437-.355-.792-.792-.792h-2.45c-.317.05-.632-.095-.782-.382-.88-1.665-2.594-2.7-4.476-2.7-1.883 0-3.598 1.035-4.476 2.702-.16.302-.502.46-.833.38H4.293z',
+              }),
+              o.a.createElement('path', {
+                d: 'M12 8.167c-2.68 0-4.86 2.18-4.86 4.86s2.18 4.86 4.86 4.86 4.86-2.18 4.86-4.86-2.18-4.86-4.86-4.86zm2 5.583h-1.25V15c0 .414-.336.75-.75.75s-.75-.336-.75-.75v-1.25H10c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h1.25V11c0-.414.336-.75.75-.75s.75.336.75.75v1.25H14c.414 0 .75.336.75.75s-.336.75-.75.75z',
+              }),
+            ),
+          )
         }
-        return r
-      }
-      function u(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? l(Object(r), !0).forEach(function (t) {
-                a()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : l(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
-        }
-        return e
-      }
-      var d = function () {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(s.a)(
-          'svg',
-          u(
-            u({}, e),
-            {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [c.a.root, e.style], viewBox: '0 0 24 24' },
-          ),
-          o.a.createElement(
-            'g',
-            null,
-            o.a.createElement('path', {
-              d: 'M19.708 22H4.292C3.028 22 2 20.972 2 19.708V7.375C2 6.11 3.028 5.083 4.292 5.083h2.146C7.633 3.17 9.722 2 12 2c2.277 0 4.367 1.17 5.562 3.083h2.146C20.972 5.083 22 6.11 22 7.375v12.333C22 20.972 20.972 22 19.708 22zM4.292 6.583c-.437 0-.792.355-.792.792v12.333c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V7.375c0-.437-.355-.792-.792-.792h-2.45c-.317.05-.632-.095-.782-.382-.88-1.665-2.594-2.7-4.476-2.7-1.883 0-3.598 1.035-4.476 2.702-.16.302-.502.46-.833.38H4.293z',
-            }),
-            o.a.createElement('path', {
-              d: 'M12 8.167c-2.68 0-4.86 2.18-4.86 4.86s2.18 4.86 4.86 4.86 4.86-2.18 4.86-4.86-2.18-4.86-4.86-4.86zm2 5.583h-1.25V15c0 .414-.336.75-.75.75s-.75-.336-.75-.75v-1.25H10c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h1.25V11c0-.414.336-.75.75-.75s.75.336.75.75v1.25H14c.414 0 .75.336.75.75s-.336.75-.75.75z',
-            }),
-          ),
-        )
-      }
-      ;(d.metadata = { width: 24, height: 24 }), (t.a = d)
+      ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
     },
   },
 ])

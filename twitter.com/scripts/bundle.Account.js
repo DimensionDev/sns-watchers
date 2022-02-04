@@ -1,81 +1,57 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [26],
+  [27],
   {
-    '14LL': function (e, t, n) {
+    '14LL': function (e, n, t) {
       'use strict'
-      n.r(t),
-        n.d(t, 'AccountScreen', function () {
-          return H
+      t.r(n),
+        t.d(n, 'AccountScreen', function () {
+          return V
         })
-      n('OZaJ')
-      var r = n('VrFO'),
-        a = n.n(r),
-        o = n('Y9Ll'),
-        c = n.n(o),
-        u = n('5Yy7'),
-        i = n.n(u),
-        s = n('N+ot'),
-        l = n.n(s),
-        f = n('AuHH'),
-        p = n.n(f),
-        m = (n('ho0z'), n('ERkP')),
-        d = n.n(m),
-        h = n('G6rE'),
-        y = n('rxPX'),
-        g = Object(y.a)()
+      var r = t('VrFO'),
+        a = t.n(r),
+        o = t('Y9Ll'),
+        c = t.n(o),
+        i = t('5Yy7'),
+        s = t.n(i),
+        u = t('2VqO'),
+        l = t.n(u),
+        m = (t('ho0z'), t('ERkP')),
+        p = t.n(m),
+        d = t('G6rE'),
+        f = t('rxPX'),
+        g = Object(f.a)()
           .propsFromState(function () {
-            return { loggedInUser: h.e.selectLoggedInUser }
+            return { loggedInUser: d.e.selectLoggedInUser }
           })
           .withAnalytics({ page: 'me' }),
-        v = n('VN5n'),
-        w = n('3XMw'),
-        b = n.n(w),
-        E = n('yoO3'),
-        N = n('wiP2'),
-        O = n('MWbm'),
-        R = n('Irs7'),
-        k = n('jV+4'),
-        P = n('rHpw')
-      function U(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var n,
-            r = p()(e)
-          if (t) {
-            var a = p()(this).constructor
-            n = Reflect.construct(r, arguments, a)
-          } else n = r.apply(this, arguments)
-          return l()(this, n)
-        }
-      }
-      var B = b.a.i5f7b6b8,
-        H = (function (e) {
-          i()(n, e)
-          var t = U(n)
-          function n() {
-            return a()(this, n), t.apply(this, arguments)
+        h = t('VN5n'),
+        w = t('3XMw'),
+        y = t.n(w),
+        b = t('yoO3'),
+        E = t('wiP2'),
+        v = t('MWbm'),
+        k = t('Irs7'),
+        N = t('jV+4'),
+        O = t('rHpw'),
+        U = y.a.i5f7b6b8,
+        V = (function (e) {
+          s()(t, e)
+          var n = l()(t)
+          function t() {
+            return a()(this, t), n.apply(this, arguments)
           }
           return (
-            c()(n, [
+            c()(t, [
               {
                 key: 'render',
                 value: function () {
-                  return d.a.createElement(
-                    E.a,
+                  return p.a.createElement(
+                    b.a,
                     null,
-                    d.a.createElement(
-                      N.a.Configure,
-                      { documentTitle: B, title: this._renderUserName() },
-                      d.a.createElement(O.a, { style: I.dashmenu }, d.a.createElement(v.a, null)),
+                    p.a.createElement(
+                      E.a.Configure,
+                      { documentTitle: U, title: this._renderUserName() },
+                      p.a.createElement(v.a, { style: I.dashmenu }, p.a.createElement(h.a, null)),
                     ),
                   )
                 },
@@ -85,7 +61,7 @@
                 value: function () {
                   var e = this.props.loggedInUser
                   return e
-                    ? d.a.createElement(k.a, {
+                    ? p.a.createElement(N.a, {
                         badgeContext: 'account',
                         isProtected: e.protected,
                         isVerified: e.verified,
@@ -98,13 +74,13 @@
                 },
               },
             ]),
-            n
+            t
           )
-        })(d.a.Component),
-        I = P.a.create(function (e) {
+        })(p.a.Component),
+        I = O.a.create(function (e) {
           return { dashmenu: { marginBottom: e.componentDimensions.appBarHeight } }
         })
-      t.default = Object(R.a)(g(H))
+      n.default = Object(k.a)(g(V))
     },
   },
 ])

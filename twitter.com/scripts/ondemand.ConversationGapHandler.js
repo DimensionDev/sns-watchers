@@ -1,22 +1,22 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [198],
+  [199],
   {
     EnM6: function (e, t, n) {
       'use strict'
       n('hBvt')
       var a = n('ERkP'),
-        r = n.n(a),
-        o = n('3XMw'),
-        c = n.n(o),
-        i = n('MWbm'),
-        l = n('t62R'),
+        o = n.n(a),
+        r = n('3XMw'),
+        i = n.n(r),
+        l = n('MWbm'),
+        c = n('t62R'),
         s = n('5mJL'),
-        p = n('PV92'),
-        d = n('htQn'),
+        d = n('PV92'),
+        p = n('htQn'),
         f = n('rHpw'),
         u = n('Qwev'),
-        h = c.a.i8005e73,
-        g = f.a.create(function (e) {
+        h = i.a.i8005e73,
+        m = f.a.create(function (e) {
           return {
             gap: { overflow: 'hidden' },
             treeGap: { flexDirection: 'row', paddingLeft: e.spaces.space16 },
@@ -45,55 +45,55 @@
             loadingIndicator: { paddingVertical: e.spaces.space4 },
           }
         }),
-        m = r.a.createElement(u.a, { accessibilityLabel: h, style: g.loadingIndicator })
+        g = o.a.createElement(u.a, { accessibilityLabel: h, style: m.loadingIndicator })
       t.a = function (e) {
         var t = e.indents,
           n = e.isLoading,
           a = e.label,
-          o = e.link,
-          c = e.onClick,
+          r = e.link,
+          i = e.onClick,
           f = e.withElbow,
-          u = r.a.createElement(l.b, { color: 'link', style: g.enlargeTouchTarget }, a),
-          h = r.a.createElement(
+          u = o.a.createElement(c.b, { color: 'link', style: m.enlargeTouchTarget }, a),
+          h = o.a.createElement(
             s.a,
             {
               avatarCell: t
                 ? void 0
-                : r.a.createElement(
-                    r.a.Fragment,
+                : o.a.createElement(
+                    o.a.Fragment,
                     null,
-                    r.a.createElement(i.a, { style: g.dot }),
-                    r.a.createElement(i.a, { style: g.dot }),
-                    r.a.createElement(i.a, { style: g.dot }),
+                    o.a.createElement(l.a, { style: m.dot }),
+                    o.a.createElement(l.a, { style: m.dot }),
+                    o.a.createElement(l.a, { style: m.dot }),
                   ),
-              avatarCellStyle: g.dotGroup,
-              cellStyle: [g.content, t && g.treeContent],
+              avatarCellStyle: m.dotGroup,
+              cellStyle: [m.content, t && m.treeContent],
             },
-            n ? m : u,
+            n ? g : u,
           )
-        return r.a.createElement(
-          i.a,
-          { style: [g.gap, t && g.treeGap, t && 0 === t.length && g.treeGapTopLevel] },
+        return o.a.createElement(
+          l.a,
+          { style: [m.gap, t && m.treeGap, t && 0 === t.length && m.treeGapTopLevel] },
           t
-            ? r.a.createElement(p.a, {
+            ? o.a.createElement(d.a, {
                 indents: t,
                 paddingTop: 5,
                 smallFirstCell: !1,
-                style: g.connectors,
+                style: m.connectors,
                 wideElbow: 1 === t.length,
                 withElbow: !!f,
               })
             : null,
-          c || o
-            ? r.a.createElement(
-                d.a,
+          i || r
+            ? o.a.createElement(
+                p.a,
                 {
-                  link: n ? void 0 : o,
-                  onClick: n ? void 0 : c,
+                  link: n ? void 0 : r,
+                  onClick: n ? void 0 : i,
                   style: [
-                    g.hoverBox,
-                    t && 0 === t.length && g.hoverBoxTopLevel,
-                    t && t.length > 1 && g.hoverBoxIndented,
+                    m.hoverBox,
+                    t && 0 === t.length && m.hoverBoxTopLevel,
+                    t && t.length > 1 && m.hoverBoxIndented,
                   ],
                   withInteractiveStyling: !n,
                 },
@@ -106,32 +106,31 @@
     GCNy: function (e, t, n) {
       'use strict'
       n.r(t)
-      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
-      var a = n('KEM+'),
-        r = n.n(a),
-        o = n('ezF+'),
-        c = n('ERkP'),
-        i = n.n(c),
-        l = n('EnM6'),
+      var a = n('yiKp'),
+        o = n.n(a),
+        r = n('ezF+'),
+        i = n('ERkP'),
+        l = n.n(i),
+        c = n('EnM6'),
         s = n('3XMw'),
-        p = n.n(s),
-        d = p.a.i569ff3e,
-        f = p.a.c837fca9,
+        d = n.n(s),
+        p = d.a.i569ff3e,
+        f = d.a.c837fca9,
         u = function (e) {
           var t = e.isSelfThread,
             n = e.onClick,
             a = e.onImpression,
-            r = e.url
+            o = e.url
           return (
-            i.a.useEffect(
+            l.a.useEffect(
               function () {
                 a({ isSelfThreadGap: t })
               },
               [a, t],
             ),
-            i.a.createElement(l.a, {
-              label: t ? d : f,
-              link: r,
+            l.a.createElement(c.a, {
+              label: t ? p : f,
+              link: o,
               onClick: function () {
                 n({ isSelfThreadGap: t })
               },
@@ -139,74 +138,47 @@
           )
         },
         h = n('zh9S'),
-        g = n('XOJV'),
-        m = n('VPAj'),
-        v = n('xN10')
-      function b(e, t) {
-        var n = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var a = Object.getOwnPropertySymbols(e)
-          t &&
-            (a = a.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            n.push.apply(n, a)
-        }
-        return n
-      }
-      function w(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? b(Object(n), !0).forEach(function (t) {
-                r()(e, t, n[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : b(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-              })
-        }
-        return e
-      }
-      var y = o.g({
-        bindActions: Object(m.a)({ scribeAction: h.c }),
-        component: u,
-        defaultScribeNamespace: { component: 'timeline_conversation' },
-        selectData: function (e) {
-          var t = e.entry
-          e.module
-          return {
-            isSelfThread: function (e) {
-              var n
-              return Object(v.a)(t.content.allTweetIds, function (t, a) {
-                var r = g.a.select(e, t)
-                return !r || (0 === a ? ((n = r.id_str), !0) : !!r.self_thread && r.self_thread.id_str === n)
-              })
-            },
-          }
-        },
-        createProps: function (e) {
-          var t = e.actions.scribeAction,
-            n = e.data.isSelfThread,
-            a = e.entry,
-            r = e.scribeNamespace
-          return {
-            isSelfThread: n,
-            onClick: function (e) {
-              var n = e.isSelfThreadGap
-              t(w(w({}, r), {}, { element: n ? 'see_more' : 'gap', action: 'click' }))
-            },
-            onImpression: function (e) {
-              var n = e.isSelfThreadGap
-              t(w(w({}, r), {}, { element: n ? 'see_more' : 'gap', action: 'impression' }))
-            },
-            url: '/i/status/'.concat(a.content.focalTweetId),
-          }
-        },
-        shouldDisplayBorder: Object(m.a)(!1),
-      })
-      t.default = y
+        m = n('XOJV'),
+        g = n('VPAj'),
+        v = n('xN10'),
+        w = r.g({
+          bindActions: Object(g.a)({ scribeAction: h.c }),
+          component: u,
+          defaultScribeNamespace: { component: 'timeline_conversation' },
+          selectData: function (e) {
+            var t = e.entry
+            e.module
+            return {
+              isSelfThread: function (e) {
+                var n
+                return Object(v.a)(t.content.allTweetIds, function (t, a) {
+                  var o = m.a.select(e, t)
+                  return !o || (0 === a ? ((n = o.id_str), !0) : !!o.self_thread && o.self_thread.id_str === n)
+                })
+              },
+            }
+          },
+          createProps: function (e) {
+            var t = e.actions.scribeAction,
+              n = e.data.isSelfThread,
+              a = e.entry,
+              r = e.scribeNamespace
+            return {
+              isSelfThread: n,
+              onClick: function (e) {
+                var n = e.isSelfThreadGap
+                t(o()(o()({}, r), {}, { element: n ? 'see_more' : 'gap', action: 'click' }))
+              },
+              onImpression: function (e) {
+                var n = e.isSelfThreadGap
+                t(o()(o()({}, r), {}, { element: n ? 'see_more' : 'gap', action: 'impression' }))
+              },
+              url: '/i/status/'.concat(a.content.focalTweetId),
+            }
+          },
+          shouldDisplayBorder: Object(g.a)(!1),
+        })
+      t.default = w
     },
   },
 ])

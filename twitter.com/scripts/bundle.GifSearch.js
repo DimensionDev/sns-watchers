@@ -1,52 +1,28 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [57],
+  [58],
   {
-    '3GUV': function (e, t, r) {
+    '3GUV': function (e, t, a) {
       'use strict'
-      r('OZaJ')
-      var n = r('VrFO'),
-        a = r.n(n),
-        o = r('Y9Ll'),
-        c = r.n(o),
-        i = r('5Yy7'),
-        u = r.n(i),
-        l = r('N+ot'),
-        s = r.n(l),
-        f = r('AuHH'),
-        h = r.n(f),
-        d = r('ERkP'),
-        y = r.n(d),
-        p = r('rHpw'),
-        g = r('MWbm')
-      function m(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var r,
-            n = h()(e)
-          if (t) {
-            var a = h()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return s()(this, r)
-        }
-      }
-      var v = (function (e) {
-          u()(r, e)
-          var t = m(r)
-          function r() {
-            return a()(this, r), t.apply(this, arguments)
+      var r = a('VrFO'),
+        n = a.n(r),
+        i = a('Y9Ll'),
+        o = a.n(i),
+        c = a('5Yy7'),
+        u = a.n(c),
+        l = a('2VqO'),
+        s = a.n(l),
+        h = a('ERkP'),
+        d = a.n(h),
+        f = a('rHpw'),
+        g = a('MWbm'),
+        y = (function (e) {
+          u()(a, e)
+          var t = s()(a)
+          function a() {
+            return n()(this, a), t.apply(this, arguments)
           }
           return (
-            c()(r, [
+            o()(a, [
               {
                 key: 'shouldComponentUpdate',
                 value: function () {
@@ -56,183 +32,132 @@
               {
                 key: 'render',
                 value: function () {
-                  return y.a.createElement(g.a, { style: b.root })
+                  return d.a.createElement(g.a, { style: m.root })
                 },
               },
             ]),
-            r
+            a
           )
-        })(y.a.Component),
-        b = p.a.create(function (e) {
+        })(d.a.Component),
+        m = f.a.create(function (e) {
           return { root: { height: 5 * e.lineHeightsPx.body } }
         })
-      t.a = v
+      t.a = y
     },
-    '5UID': function (e, t, r) {
+    '5UID': function (e, t, a) {
       'use strict'
-      r('OZaJ')
-      var n = r('VrFO'),
-        a = r.n(n),
-        o = r('Y9Ll'),
-        c = r.n(o),
-        i = r('5Yy7'),
-        u = r.n(i),
-        l = r('N+ot'),
-        s = r.n(l),
-        f = r('AuHH'),
-        h = r.n(f),
-        d = r('ERkP'),
-        y = r.n(d),
-        p = r('3XMw'),
-        g = r.n(p),
-        m = r('rHpw'),
-        v = r('+/1j'),
-        b = r('MWbm')
-      function O(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var r,
-            n = h()(e)
-          if (t) {
-            var a = h()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return s()(this, r)
-        }
-      }
-      var S = g.a.e5b0063d,
-        w = 0,
-        E = (function (e) {
-          u()(r, e)
-          var t = O(r)
-          function r() {
+      var r = a('VrFO'),
+        n = a.n(r),
+        i = a('Y9Ll'),
+        o = a.n(i),
+        c = a('5Yy7'),
+        u = a.n(c),
+        l = a('2VqO'),
+        s = a.n(l),
+        h = a('ERkP'),
+        d = a.n(h),
+        f = a('3XMw'),
+        g = a.n(f),
+        y = a('rHpw'),
+        m = a('+/1j'),
+        p = a('MWbm'),
+        v = g.a.e5b0063d,
+        b = 0,
+        S = (function (e) {
+          u()(a, e)
+          var t = s()(a)
+          function a() {
             var e
-            return a()(this, r), ((e = t.call(this))._listDomId = 'accessible-list-'.concat(w)), (w += 1), e
+            return n()(this, a), ((e = t.call(this))._listDomId = 'accessible-list-'.concat(b)), (b += 1), e
           }
           return (
-            c()(r, [
+            o()(a, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.children,
-                    r = e.title,
-                    n = S({ title: r })
-                  return y.a.createElement(
-                    b.a,
+                    a = e.title,
+                    r = v({ title: a })
+                  return d.a.createElement(
+                    p.a,
                     { accessibilityLabelledBy: this._listDomId, accessibilityRole: 'region' },
-                    y.a.createElement(
-                      v.a,
+                    d.a.createElement(
+                      m.a,
                       {
                         accessibilityLevel: 1,
                         accessibilityRole: 'heading',
                         nativeID: this._listDomId,
-                        style: m.a.visuallyHidden,
+                        style: y.a.visuallyHidden,
                       },
-                      r,
+                      a,
                     ),
-                    y.a.createElement(b.a, { accessibilityLabel: n }, t),
+                    d.a.createElement(p.a, { accessibilityLabel: r }, t),
                   )
                 },
               },
             ]),
-            r
+            a
           )
-        })(y.a.Component)
-      t.a = E
+        })(d.a.Component)
+      t.a = S
     },
-    EP6G: function (e, t, r) {
+    EP6G: function (e, t, a) {
       'use strict'
-      var n = r('VrFO'),
-        a = r.n(n),
-        o = r('Y9Ll'),
-        c = r.n(o),
-        i = r('1Pcy'),
-        u = r.n(i),
-        l = r('5Yy7'),
-        s = r.n(l),
-        f = r('N+ot'),
-        h = r.n(f),
-        d = r('AuHH'),
-        y = r.n(d),
-        p = r('KEM+'),
-        g = r.n(p),
-        m = r('ddV6'),
-        v = r.n(m),
-        b = (r('7xRU'), r('z84I'), r('OZaJ'), r('ERkP')),
-        O = r.n(b),
-        S = (r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('RhWx')),
-        w = r.n(S),
-        E = (r('tQbP'), r('zh9S')),
-        P = r('xVN5'),
-        _ = r('CDB5'),
-        j = r('Qyxo'),
-        R = r('hqKg'),
-        x = r('AspN'),
-        C = r('oEGd')
-      function I(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
-        }
-        return r
-      }
-      function N(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? I(Object(r), !0).forEach(function (t) {
-                g()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : I(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
-        }
-        return e
-      }
-      var k = Object(R.createSelector)(
+      var r = a('VrFO'),
+        n = a.n(r),
+        i = a('Y9Ll'),
+        o = a.n(i),
+        c = a('1Pcy'),
+        u = a.n(c),
+        l = a('5Yy7'),
+        s = a.n(l),
+        h = a('2VqO'),
+        d = a.n(h),
+        f = a('KEM+'),
+        g = a.n(f),
+        y = a('ddV6'),
+        m = a.n(y),
+        p = (a('7xRU'), a('z84I'), a('ERkP')),
+        v = a.n(p),
+        b = a('RhWx'),
+        S = a.n(b),
+        _ = a('yiKp'),
+        E = a.n(_),
+        w = (a('tQbP'), a('zh9S')),
+        C = a('xVN5'),
+        O = a('CDB5'),
+        I = a('Qyxo'),
+        x = a('hqKg'),
+        P = a('AspN'),
+        k = a('oEGd'),
+        M = Object(x.createSelector)(
           function (e, t) {
-            var r = t.module,
-              n = t.query
-            return r.selectInitialFetchStatus(e, n)
+            var a = t.module,
+              r = t.query
+            return a.selectInitialFetchStatus(e, r)
           },
           function (e, t) {
-            var r = t.module,
-              n = t.query
-            return r.selectItems(e, n)
+            var a = t.module,
+              r = t.query
+            return a.selectItems(e, r)
           },
           function (e, t) {
-            var r = t.module,
-              n = t.query
-            return r.selectNextFetchStatus(e, n)
+            var a = t.module,
+              r = t.query
+            return a.selectNextFetchStatus(e, r)
           },
-          function (e, t, r) {
+          function (e, t, a) {
             return {
               initialFetchStatus: e,
               items: Array.isArray(t)
-                ? Object(j.a)(t, function (e) {
+                ? Object(I.a)(t, function (e) {
                     return e.url
-                      ? N(
-                          N({}, e),
+                      ? E()(
+                          E()({}, e),
                           {},
                           {
-                            thumbnail_images: w()(e.thumbnail_images).sort(function (e, t) {
+                            thumbnail_images: S()(e.thumbnail_images).sort(function (e, t) {
                               return t.height * t.width - e.height * e.width
                             }),
                           },
@@ -240,75 +165,54 @@
                       : void 0
                   })
                 : void 0,
-              nextFetchStatus: r,
+              nextFetchStatus: a,
             }
           },
         ),
-        M = Object(C.d)(k, function (e) {
+        N = Object(k.d)(M, function (e) {
           var t,
-            r = e.history,
-            n = e.module
+            a = e.history,
+            r = e.module
           return {
-            addExternalMediaUpload: x.a,
+            addExternalMediaUpload: P.a,
             addMediaToDM:
-              ((t = r.location.state),
-              function (e, r) {
-                var n = t && t.dmConversationId
-                return Object(_.a)(n, e, r)
+              ((t = a.location.state),
+              function (e, a) {
+                var r = t && t.dmConversationId
+                return Object(O.a)(r, e, a)
               }),
-            setMediaMetadata: x.n,
-            fetchInitialIfNeeded: n.fetchInitialIfNeeded,
-            fetchNextIfNeeded: n.fetchNextIfNeeded,
-            scribeAction: E.c,
-            updateSingleComposerV2: P.x,
+            setMediaMetadata: P.n,
+            fetchInitialIfNeeded: r.fetchInitialIfNeeded,
+            fetchNextIfNeeded: r.fetchNextIfNeeded,
+            scribeAction: w.c,
+            updateSingleComposerV2: C.x,
           }
         }),
-        A = r('v//M'),
-        D = r('x5W0'),
-        G = r('U+bB'),
-        F = r('XOY5'),
-        T = r('cm6r'),
-        B = r('rHpw')
-      function L(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var r,
-            n = y()(e)
-          if (t) {
-            var a = y()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return h()(this, r)
-        }
-      }
-      var K = (function (e) {
-          s()(r, e)
-          var t = L(r)
-          function r() {
-            return a()(this, r), t.apply(this, arguments)
+        G = a('v//M'),
+        A = a('x5W0'),
+        R = a('U+bB'),
+        F = a('XOY5'),
+        q = a('cm6r'),
+        T = a('rHpw'),
+        j = (function (e) {
+          s()(a, e)
+          var t = d()(a)
+          function a() {
+            return n()(this, a), t.apply(this, arguments)
           }
           return (
-            c()(r, [
+            o()(a, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.backgroundColor,
-                    r = e.height,
-                    n = e.onClick,
-                    a = e.width
-                  return O.a.createElement(
-                    T.a,
-                    { onPress: n, style: [H.imageContainer, q(t, r, a).background] },
+                    a = e.height,
+                    r = e.onClick,
+                    n = e.width
+                  return v.a.createElement(
+                    q.a,
+                    { onPress: r, style: [K.imageContainer, L(t, a, n).background] },
                     this._renderPreview(),
                   )
                 },
@@ -318,77 +222,53 @@
                 value: function () {
                   var e = this.props,
                     t = e.altText,
-                    r = e.animatedMediaUrl,
-                    n = e.height,
-                    a = e.shouldAutoPlayGif,
-                    o = e.stillMediaUrl,
-                    c = { height: n, width: e.width, uri: a ? r : o }
-                  return O.a.createElement(G.a, { accessibilityLabel: t, source: c, testID: F.a.gifSearchGifImage })
+                    a = e.animatedMediaUrl,
+                    r = e.height,
+                    n = e.shouldAutoPlayGif,
+                    i = e.stillMediaUrl,
+                    o = { height: r, width: e.width, uri: n ? a : i }
+                  return v.a.createElement(R.a, { accessibilityLabel: t, source: o, testID: F.a.gifSearchGifImage })
                 },
               },
             ]),
-            r
+            a
           )
-        })(O.a.Component),
-        q = function (e, t, r) {
-          return B.a.create(function (n) {
-            return { background: { backgroundColor: e, height: t, width: r } }
+        })(v.a.Component),
+        L = function (e, t, a) {
+          return T.a.create(function (r) {
+            return { background: { backgroundColor: e, height: t, width: a } }
           })
         },
-        H = B.a.create(function (e) {
+        K = T.a.create(function (e) {
           return { imageContainer: { marginHorizontal: '1px', overflow: 'hidden', flexShrink: 1 } }
         }),
-        U = K,
-        V = r('MLl7'),
-        Y = r('3XMw'),
-        Q = r.n(Y),
-        W = r('TEoO'),
-        X = r('eyty'),
-        z = r('7nmT'),
-        J = r.n(z),
-        Z = r('MWbm')
-      r('KOtZ')
-      function $(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
-        }
-        return r
-      }
-      function ee(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? $(Object(r), !0).forEach(function (t) {
-                g()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : $(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
-        }
-        return e
-      }
-      var te = function (e, t) {
-        var r = e.reduce(function (e, t) {
-          var r = t.original_image
-          return e + r.width / r.height
-        }, 0)
-        return Math.ceil(t / r)
-      }
-      function re(e, t, r) {
+        D = j,
+        V = a('MLl7'),
+        B = a('3XMw'),
+        U = a.n(B),
+        H = a('TEoO'),
+        Y = a('eyty'),
+        Q = a('7nmT'),
+        W = a.n(Q),
+        z = a('MWbm'),
+        X =
+          (a('KOtZ'),
+          a('7x/C'),
+          a('LW0h'),
+          function (e, t) {
+            var a = e.reduce(function (e, t) {
+              var a = t.original_image
+              return e + a.width / a.height
+            }, 0)
+            return Math.ceil(t / a)
+          })
+      function J(e, t, a) {
         return e
           .reduce(
-            function (e, n, a) {
+            function (e, r, n) {
               return (
-                e[e.length - 1].push(ee(ee({}, n), {}, { index: a })),
-                e[e.length - 1].length > 0 && te(e[e.length - 1], r) < t && e.push([]),
+                e[e.length - 1].push(E()(E()({}, r), {}, { index: n })),
+                e[e.length - 1].length > 0 && X(e[e.length - 1], a) < t && e.push([]),
                 e
               )
             },
@@ -398,67 +278,46 @@
             return e.length > 0
           })
       }
-      var ne = r('VPAj'),
-        ae = r('oQhu'),
-        oe = r('FIs5')
-      function ce(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var r,
-            n = y()(e)
-          if (t) {
-            var a = y()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return h()(this, r)
-        }
-      }
-      var ie = Q.a.a66b7760,
-        ue = Q.a.b719e223,
-        le = Q.a.aed71818,
-        se = function (e) {
+      var Z = a('VPAj'),
+        $ = a('oQhu'),
+        ee = a('FIs5'),
+        te = U.a.a66b7760,
+        ae = U.a.b719e223,
+        re = U.a.aed71818,
+        ne = function (e) {
           return e
             .map(function (e) {
               return e.id
             })
             .join('-')
         },
-        fe = Object(ne.a)(null),
-        he = [],
-        de = Object(ae.a)(function (e, t, r) {
-          return function (n) {
-            var a = te(n, t),
-              o = t - 2 * n.length - 1,
-              c = 0
-            return O.a.createElement(
-              Z.a,
-              { style: [ge.imageRow, { height: a }] },
-              n.map(function (t, i) {
-                var u = v()(t.thumbnail_images, 1)[0],
-                  l = a / u.height,
-                  s = i === n.length - 1 ? o - c : Math.round(u.width * l),
-                  f = u.still_image_url,
-                  h = u.url
+        ie = Object(Z.a)(null),
+        oe = [],
+        ce = Object($.a)(function (e, t, a) {
+          return function (r) {
+            var n = X(r, t),
+              i = t - 2 * r.length - 1,
+              o = 0
+            return v.a.createElement(
+              z.a,
+              { style: [se.imageRow, { height: n }] },
+              r.map(function (t, c) {
+                var u = m()(t.thumbnail_images, 1)[0],
+                  l = n / u.height,
+                  s = c === r.length - 1 ? i - o : Math.round(u.width * l),
+                  h = u.still_image_url,
+                  d = u.url
                 return (
-                  (c += s),
-                  O.a.createElement(U, {
-                    altText: t.alt_text || ie,
-                    animatedMediaUrl: h,
-                    backgroundColor: Object(D.a)(t.index),
-                    height: a,
+                  (o += s),
+                  v.a.createElement(D, {
+                    altText: t.alt_text || te,
+                    animatedMediaUrl: d,
+                    backgroundColor: Object(A.a)(t.index),
+                    height: n,
                     key: t.index,
-                    onClick: r(t),
+                    onClick: a(t),
                     shouldAutoPlayGif: e,
-                    stillMediaUrl: f,
+                    stillMediaUrl: h,
                     width: s,
                   })
                 )
@@ -466,113 +325,113 @@
             )
           }
         }),
-        ye = Object(ae.a)(function (e, t) {
-          return O.a.createElement(A.a, { fetchStatus: e, onRequestRetry: t, render: fe })
+        ue = Object($.a)(function (e, t) {
+          return v.a.createElement(G.a, { fetchStatus: e, onRequestRetry: t, render: ie })
         }),
-        pe = (function (e) {
-          s()(r, e)
-          var t = ce(r)
-          function r(e, n) {
-            var o
+        le = (function (e) {
+          s()(a, e)
+          var t = d()(a)
+          function a(e, r) {
+            var i
             return (
-              a()(this, r),
-              (o = t.call(this, e, n)),
-              g()(u()(o), '_rootNode', null),
-              g()(u()(o), '_render', function () {
-                var e = o.props,
+              n()(this, a),
+              (i = t.call(this, e, r)),
+              g()(u()(i), '_rootNode', null),
+              g()(u()(i), '_render', function () {
+                var e = i.props,
                   t = e.items,
-                  r = e.query,
-                  n = o.state.width,
-                  a = t ? o._brickLayout(t, 150, n) : he
-                return n > 0
-                  ? O.a.createElement(W.a, {
+                  a = e.query,
+                  r = i.state.width,
+                  n = t ? i._brickLayout(t, 150, r) : oe
+                return r > 0
+                  ? v.a.createElement(H.a, {
                       assumedItemHeight: 150,
-                      cacheKey: 'gifSearchCategory/'.concat(r),
-                      footer: o._getRenderFooter(),
-                      identityFunction: se,
-                      items: a,
-                      noItemsRenderer: o._renderEmptyItem,
-                      onNearEnd: o._handleFetchNext,
-                      renderer: o._getRowRenderer(),
+                      cacheKey: 'gifSearchCategory/'.concat(a),
+                      footer: i._getRenderFooter(),
+                      identityFunction: ne,
+                      items: n,
+                      noItemsRenderer: i._renderEmptyItem,
+                      onNearEnd: i._handleFetchNext,
+                      renderer: i._getRowRenderer(),
                     })
                   : null
               }),
-              g()(u()(o), '_getRowRenderer', function () {
-                var e = o.props.shouldAutoPlayGif,
-                  t = o.state.width
-                return de(e, t, o._handleClickFactory)
+              g()(u()(i), '_getRowRenderer', function () {
+                var e = i.props.shouldAutoPlayGif,
+                  t = i.state.width
+                return ce(e, t, i._handleClickFactory)
               }),
-              g()(u()(o), '_handleClickFactory', function (e) {
+              g()(u()(i), '_handleClickFactory', function (e) {
                 return function () {
-                  var t = o.props,
-                    r = t.addExternalMediaUpload,
-                    n = t.addMediaToDM,
-                    a = t.fromSearch,
-                    c = t.gifSearchKey,
-                    i = t.history,
+                  var t = i.props,
+                    a = t.addExternalMediaUpload,
+                    r = t.addMediaToDM,
+                    n = t.fromSearch,
+                    o = t.gifSearchKey,
+                    c = t.history,
                     u = t.scribeAction,
                     l = t.setMediaMetadata,
                     s = t.updateSingleComposerV2,
-                    f = e.alt_text,
-                    h = e.found_media_origin,
-                    d = e.provider,
-                    y = e.original_image.url,
-                    p = e.preview_image,
-                    g = p.height,
-                    m = p.url,
-                    b = p.width,
-                    O = v()(e.thumbnail_images, 1)[0],
-                    S = e.url,
-                    w = r({
-                      mediaCategory: c === V.a.Composition ? X.b.TweetGif : X.b.DMGif,
+                    h = e.alt_text,
+                    d = e.found_media_origin,
+                    f = e.provider,
+                    g = e.original_image.url,
+                    y = e.preview_image,
+                    p = y.height,
+                    v = y.url,
+                    b = y.width,
+                    S = m()(e.thumbnail_images, 1)[0],
+                    _ = e.url,
+                    E = a({
+                      mediaCategory: o === V.a.Composition ? Y.b.TweetGif : Y.b.DMGif,
                       mediaType: 'image/gif',
                       previewMediaType: 'video/mp4',
-                      previewUrl: m,
-                      sourceUrl: y,
-                      stillMediaUrl: O.still_image_url,
+                      previewUrl: v,
+                      sourceUrl: g,
+                      stillMediaUrl: S.still_image_url,
                       width: b,
-                      height: g,
+                      height: p,
                     }).map(function (e) {
                       return e.id
                     }),
-                    E = { found_media_origin: h, provider: d, url: S }
-                  f && l(w[0], { defaultAltText: f }),
-                    c === V.a.Composition
-                      ? s({ updates: { mediaIds: w, gifMetadata: E } })
-                      : c === V.a.DMComposition && n(w, E),
-                    u({ page: c, section: 'gif_search', element: 'category', action: a ? 'search' : 'select' }),
-                    i.go(-2)
+                    w = { found_media_origin: d, provider: f, url: _ }
+                  h && l(E[0], { defaultAltText: h }),
+                    o === V.a.Composition
+                      ? s({ updates: { mediaIds: E, gifMetadata: w } })
+                      : o === V.a.DMComposition && r(E, w),
+                    u({ page: o, section: 'gif_search', element: 'category', action: n ? 'search' : 'select' }),
+                    c.go(-2)
                 }
               }),
-              g()(u()(o), '_renderEmptyItem', function () {
-                return O.a.createElement(oe.a, { header: ue, message: le })
+              g()(u()(i), '_renderEmptyItem', function () {
+                return v.a.createElement(ee.a, { header: ae, message: re })
               }),
-              g()(u()(o), '_getRenderFooter', function () {
-                var e = o.props.nextFetchStatus
-                return ye(e, o._handleFetchNext)
+              g()(u()(i), '_getRenderFooter', function () {
+                var e = i.props.nextFetchStatus
+                return ue(e, i._handleFetchNext)
               }),
-              g()(u()(o), '_handleFetch', function () {
-                var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : o.props.query,
-                  t = o.props.fetchInitialIfNeeded
+              g()(u()(i), '_handleFetch', function () {
+                var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : i.props.query,
+                  t = i.props.fetchInitialIfNeeded
                 t({ query: e })
               }),
-              g()(u()(o), '_handleFetchNext', function () {
-                var e = o.props
+              g()(u()(i), '_handleFetchNext', function () {
+                var e = i.props
                 ;(0, e.fetchNextIfNeeded)({ query: e.query })
               }),
-              g()(u()(o), '_handleResize', function () {
-                o._rootNode && o._rootNode instanceof Element && o.setState({ width: o._rootNode.clientWidth })
+              g()(u()(i), '_handleResize', function () {
+                i._rootNode && i._rootNode instanceof Element && i.setState({ width: i._rootNode.clientWidth })
               }),
-              g()(u()(o), '_brickLayout', Object(ae.a)(re)),
-              g()(u()(o), '_setRootNode', function (e) {
-                o._rootNode = J.a.findDOMNode(e)
+              g()(u()(i), '_brickLayout', Object($.a)(J)),
+              g()(u()(i), '_setRootNode', function (e) {
+                i._rootNode = W.a.findDOMNode(e)
               }),
-              (o.state = { width: 0 }),
-              o
+              (i.state = { width: 0 }),
+              i
             )
           }
           return (
-            c()(r, [
+            o()(a, [
               {
                 key: 'componentDidUpdate',
                 value: function (e) {
@@ -595,10 +454,10 @@
                 key: 'render',
                 value: function () {
                   var e = this.props.initialFetchStatus
-                  return O.a.createElement(
+                  return v.a.createElement(
                     'div',
                     { ref: this._setRootNode },
-                    O.a.createElement(A.a, {
+                    v.a.createElement(G.a, {
                       fetchStatus: e,
                       onRequestRetry: this._handleFetch,
                       ref: this._setRootNode,
@@ -608,11 +467,11 @@
                 },
               },
             ]),
-            r
+            a
           )
-        })(O.a.Component)
-      g()(pe, 'defaultProps', { fromSearch: !1 })
-      var ge = B.a.create(function (e) {
+        })(v.a.Component)
+      g()(le, 'defaultProps', { fromSearch: !1 })
+      var se = T.a.create(function (e) {
         return {
           emptyItem: {
             display: 'inline-block',
@@ -622,57 +481,58 @@
           imageRow: { flexDirection: 'row', marginBottom: 2 },
         }
       })
-      t.a = M(pe)
+      t.a = N(le)
     },
-    TEoO: function (e, t, r) {
+    TEoO: function (e, t, a) {
       'use strict'
-      var n = r('m3Bd'),
-        a = r.n(n),
-        o = r('ERkP'),
-        c = r.n(o),
-        i = r('5UID'),
-        u = r('3GUV'),
-        l = r('iBK2'),
-        s = c.a.createElement(u.a, null),
-        f = function (e) {
+      var r = a('m3Bd'),
+        n = a.n(r),
+        i = a('ERkP'),
+        o = a.n(i),
+        c = a('5UID'),
+        u = a('3GUV'),
+        l = a('iBK2'),
+        s = ['accessibilityTitle'],
+        h = o.a.createElement(u.a, null),
+        d = function (e) {
           var t = e.accessibilityTitle,
-            r = a()(e, ['accessibilityTitle']),
-            n = c.a.createElement(l.b, r)
-          return t ? c.a.createElement(i.a, { title: t }, n) : n
+            a = n()(e, s),
+            r = o.a.createElement(l.b, a)
+          return t ? o.a.createElement(c.a, { title: t }, r) : r
         }
-      ;(f.defaultProps = { footer: s }), (t.a = f)
+      ;(d.defaultProps = { footer: h }), (t.a = d)
     },
-    XOY5: function (e, t, r) {
+    XOY5: function (e, t, a) {
       'use strict'
       t.a = { gifSearchSearchInput: 'gifSearchSearchInput', gifSearchGifImage: 'gifSearchGifImage' }
     },
-    XYn1: function (e, t, r) {
+    XYn1: function (e, t, a) {
       'use strict'
-      r.r(t)
-      var n = r('ERkP'),
-        a = r.n(n),
-        o = (r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('ddV6')),
-        c = r.n(o),
-        i = r('KEM+'),
-        u = r.n(i),
-        l = (r('2G9S'), r('z84I'), r('zh9S')),
-        s = r('pX0s'),
-        f = r('lnti'),
-        h = r('hqKg'),
-        d = r('oEGd'),
-        y = s.a,
-        p = Object(h.createSelector)(
+      a.r(t)
+      var r = a('ERkP'),
+        n = a.n(r),
+        i = a('ddV6'),
+        o = a.n(i),
+        c = a('yiKp'),
+        u = a.n(c),
+        l = (a('2G9S'), a('7x/C'), a('JtPf'), a('z84I'), a('zh9S')),
+        s = a('pX0s'),
+        h = a('lnti'),
+        d = a('hqKg'),
+        f = a('oEGd'),
+        g = s.a,
+        y = Object(d.createSelector)(
           function (e) {
-            return y.selectItems(e)
+            return g.selectItems(e)
           },
           function (e) {
-            return y.selectInitialFetchStatus(e)
+            return g.selectInitialFetchStatus(e)
           },
           function (e, t) {
             return {
               categories:
                 e &&
-                Object(f.a)(
+                Object(h.a)(
                   e.map(function (e) {
                     return e.display_name ? e : void 0
                   }),
@@ -681,79 +541,52 @@
             }
           },
         ),
-        g = { fetchInitialIfNeeded: y.fetchInitialIfNeeded, fetchNextIfNeeded: y.fetchNextIfNeeded, scribeAction: l.c },
-        m = Object(d.g)(p, g),
-        v = r('v//M'),
-        b = r('jHSc'),
-        O = r('x5W0'),
-        S = r('ij+d'),
-        w = r('3XMw'),
-        E = r.n(w),
-        P = r('cm6r'),
-        _ = r('t62R'),
-        j = r('rHpw'),
-        R = r('7JQg'),
-        x = r('U+bB'),
-        C = r('MWbm')
-      function I(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
-        }
-        return r
-      }
-      function N(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? I(Object(r), !0).forEach(function (t) {
-                u()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : I(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
-        }
-        return e
-      }
-      var k = E.a.c6f5ac52,
-        M = a.a.memo(function (e) {
+        m = { fetchInitialIfNeeded: g.fetchInitialIfNeeded, fetchNextIfNeeded: g.fetchNextIfNeeded, scribeAction: l.c },
+        p = Object(f.g)(y, m),
+        v = a('v//M'),
+        b = a('jHSc'),
+        S = a('x5W0'),
+        _ = a('ij+d'),
+        E = a('3XMw'),
+        w = a.n(E),
+        C = a('cm6r'),
+        O = a('t62R'),
+        I = a('rHpw'),
+        x = a('7JQg'),
+        P = a('U+bB'),
+        k = a('MWbm'),
+        M = w.a.c6f5ac52,
+        N = n.a.memo(function (e) {
           var t = e.category,
-            r = e.gifSearchKey,
-            n = e.history,
-            o = e.index,
-            c = e.withLeftMargin,
-            i = t.display_name,
+            a = e.gifSearchKey,
+            r = e.history,
+            i = e.index,
+            o = e.withLeftMargin,
+            c = t.display_name,
             u = t.original_image.still_image_url,
-            l = a.a.useCallback(
+            l = n.a.useCallback(
               function () {
                 var e,
-                  a = null === (e = n.location.state) || void 0 === e ? void 0 : e.dmConversationId
-                n.push({
-                  pathname: ''.concat(S.GifSearchPaths.category, '/').concat(t.id),
-                  state: { category: t, gifSearchKey: r, dmConversationId: a },
+                  n = null === (e = r.location.state) || void 0 === e ? void 0 : e.dmConversationId
+                r.push({
+                  pathname: ''.concat(_.GifSearchPaths.category, '/').concat(t.id),
+                  state: { category: t, gifSearchKey: a, dmConversationId: n },
                 })
               },
-              [n, t, r],
+              [r, t, a],
             )
-          return a.a.createElement(
-            P.a,
-            { onPress: l, style: [A.category, c && A.leftMargin] },
-            a.a.createElement(x.a, { source: u, style: [A.categoryImage, { backgroundColor: Object(O.a)(o) }] }),
-            a.a.createElement(
-              C.a,
-              { style: A.categoryNameContainer },
-              a.a.createElement(_.b, { color: 'white', size: 'headline1', weight: 'bold' }, i),
+          return n.a.createElement(
+            C.a,
+            { onPress: l, style: [G.category, o && G.leftMargin] },
+            n.a.createElement(P.a, { source: u, style: [G.categoryImage, { backgroundColor: Object(S.a)(i) }] }),
+            n.a.createElement(
+              k.a,
+              { style: G.categoryNameContainer },
+              n.a.createElement(O.b, { color: 'white', size: 'headline1', weight: 'bold' }, c),
             ),
           )
         }),
-        A = j.a.create(function (e) {
+        G = I.a.create(function (e) {
           return {
             row: { flexDirection: 'row', marginTop: e.spaces.space4 },
             firstRow: { marginTop: 0 },
@@ -769,58 +602,58 @@
             },
           }
         }),
-        D = Object(R.c)({ element: 'category' })(
-          m(function (e) {
+        A = Object(x.c)({ element: 'category' })(
+          p(function (e) {
             var t,
-              r = e.categories,
-              n = e.fetchInitialIfNeeded,
-              o = e.gifSearchKey,
-              i = e.history,
-              u = e.initialFetchStatus,
-              l = e.location,
-              s = e.scribeAction,
-              f = e.scribeNamespace,
-              h = e.searchBox,
-              d = a.a.useCallback(
+              a = e.categories,
+              r = e.fetchInitialIfNeeded,
+              i = e.gifSearchKey,
+              c = e.history,
+              l = e.initialFetchStatus,
+              s = e.location,
+              h = e.scribeAction,
+              d = e.scribeNamespace,
+              f = e.searchBox,
+              g = n.a.useCallback(
                 function () {
-                  n()
+                  r()
                 },
-                [n],
+                [r],
               ),
-              y = null == l || null === (t = l.state) || void 0 === t ? void 0 : t.searchFocused,
-              p = a.a.useCallback(
+              y = null == s || null === (t = s.state) || void 0 === t ? void 0 : t.searchFocused,
+              m = n.a.useCallback(
                 function () {
-                  y || s(N(N({}, f), {}, { action: 'cancel' })), i.goBack({ backLocation: '/' })
+                  y || h(u()(u()({}, d), {}, { action: 'cancel' })), c.goBack({ backLocation: '/' })
                 },
-                [i, y, s, f],
+                [c, y, h, d],
               ),
-              g = a.a.useCallback(
+              p = n.a.useCallback(
                 function () {
                   var e = []
-                  if (r) for (var t = 0; t < r.length; t += 2) e.push([r[t], r[t + 1]])
-                  return a.a.createElement(
-                    C.a,
+                  if (a) for (var t = 0; t < a.length; t += 2) e.push([a[t], a[t + 1]])
+                  return n.a.createElement(
+                    k.a,
                     null,
-                    a.a.Children.toArray(
+                    n.a.Children.toArray(
                       e.map(function (e, t) {
-                        var r = c()(e, 2),
-                          n = r[0],
-                          u = r[1]
-                        return a.a.createElement(
-                          C.a,
-                          { style: [A.row, 0 === t && A.firstRow] },
-                          a.a.createElement(M, {
-                            category: n,
-                            gifSearchKey: o,
-                            history: i,
+                        var a = o()(e, 2),
+                          r = a[0],
+                          u = a[1]
+                        return n.a.createElement(
+                          k.a,
+                          { style: [G.row, 0 === t && G.firstRow] },
+                          n.a.createElement(N, {
+                            category: r,
+                            gifSearchKey: i,
+                            history: c,
                             index: 2 * t,
                             withLeftMargin: !1,
                           }),
                           u
-                            ? a.a.createElement(M, {
+                            ? n.a.createElement(N, {
                                 category: u,
-                                gifSearchKey: o,
-                                history: i,
+                                gifSearchKey: i,
+                                history: c,
                                 index: 2 * t + 1,
                                 withLeftMargin: !0,
                               })
@@ -830,444 +663,375 @@
                     ),
                   )
                 },
-                [r, o, i],
+                [a, i, c],
               )
             return (
-              a.a.useEffect(
+              n.a.useEffect(
                 function () {
-                  d()
+                  g()
                 },
-                [d],
+                [g],
               ),
-              a.a.createElement(
+              n.a.createElement(
                 b.b,
-                { documentTitle: k, history: i, middleControl: h, onBackClick: p },
-                a.a.createElement(v.a, { fetchStatus: u, onRequestRetry: d, render: g }),
+                { documentTitle: M, history: c, middleControl: f, onBackClick: m },
+                n.a.createElement(v.a, { fetchStatus: l, onRequestRetry: g, render: p }),
               )
             )
           }),
         ),
-        G = (r('OZaJ'), r('VrFO')),
-        F = r.n(G),
-        T = r('Y9Ll'),
-        B = r.n(T),
-        L = r('1Pcy'),
-        K = r.n(L),
-        q = r('5Yy7'),
-        H = r.n(q),
-        U = r('N+ot'),
-        V = r.n(U),
-        Y = r('AuHH'),
-        Q = r.n(Y),
-        W = r('hiCj'),
-        X = r('VAZu'),
-        z = r('EP6G'),
-        J = r('MLl7')
-      function Z(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var r,
-            n = Q()(e)
-          if (t) {
-            var a = Q()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return V()(this, r)
-        }
-      }
-      var $ = E.a.ab468378,
-        ee = (function (e) {
-          H()(r, e)
-          var t = Z(r)
-          function r() {
+        R = a('VrFO'),
+        F = a.n(R),
+        q = a('Y9Ll'),
+        T = a.n(q),
+        j = a('1Pcy'),
+        L = a.n(j),
+        K = a('5Yy7'),
+        D = a.n(K),
+        V = a('2VqO'),
+        B = a.n(V),
+        U = a('KEM+'),
+        H = a.n(U),
+        Y = a('hiCj'),
+        Q = a('VAZu'),
+        W = a('EP6G'),
+        z = a('MLl7'),
+        X = w.a.ab468378,
+        J = (function (e) {
+          D()(a, e)
+          var t = B()(a)
+          function a() {
             var e
-            F()(this, r)
-            for (var n = arguments.length, o = new Array(n), c = 0; c < n; c++) o[c] = arguments[c]
+            F()(this, a)
+            for (var r = arguments.length, i = new Array(r), o = 0; o < r; o++) i[o] = arguments[o]
             return (
-              (e = t.call.apply(t, [this].concat(o))),
-              u()(K()(e), 'state', { shouldAutoPlayGifOverride: null }),
-              u()(K()(e), '_handleToggleChange', function (t) {
+              (e = t.call.apply(t, [this].concat(i))),
+              H()(L()(e), 'state', { shouldAutoPlayGifOverride: null }),
+              H()(L()(e), '_handleToggleChange', function (t) {
                 e.setState({ shouldAutoPlayGifOverride: t })
               }),
-              u()(K()(e), '_renderHeader', function () {
+              H()(L()(e), '_renderHeader', function () {
                 var t = e.props,
-                  r = t.history,
-                  n = t.searchBox
-                return a.a.createElement(X.a, { history: r, middleControl: n })
+                  a = t.history,
+                  r = t.searchBox
+                return n.a.createElement(Q.a, { history: a, middleControl: r })
               }),
               e
             )
           }
           return (
-            B()(r, [
+            T()(a, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.gifSearchKey,
-                    r = e.history,
-                    n = e.location,
-                    o = e.query,
-                    c = e.searchBox,
-                    i = e.shouldAutoPlayGif,
+                    a = e.history,
+                    r = e.location,
+                    i = e.query,
+                    o = e.searchBox,
+                    c = e.shouldAutoPlayGif,
                     u = this.state.shouldAutoPlayGifOverride,
-                    l = Object(J.c)(u, i)
-                  return a.a.createElement(
+                    l = Object(z.c)(u, c)
+                  return n.a.createElement(
                     b.b,
-                    { backButtonType: 'back', documentTitle: $({ query: o }), history: r, middleControl: c },
-                    a.a.createElement(W.a, {
-                      location: n,
+                    { backButtonType: 'back', documentTitle: X({ query: i }), history: a, middleControl: o },
+                    n.a.createElement(Y.a, {
+                      location: r,
                       onToggleChange: this._handleToggleChange,
                       shouldAutoPlayGif: l,
                     }),
-                    a.a.createElement(z.a, {
+                    n.a.createElement(W.a, {
                       fromSearch: !0,
                       gifSearchKey: t,
-                      history: r,
+                      history: a,
                       module: s.c,
-                      query: o,
+                      query: i,
                       shouldAutoPlayGif: l,
                     }),
                   )
                 },
               },
             ]),
-            r
+            a
           )
-        })(a.a.Component),
-        te = Object(R.c)({ element: 'gallery' })(ee)
+        })(n.a.Component),
+        Z = Object(x.c)({ element: 'gallery' })(J)
       t.default = function (e) {
         var t = e.gifSearchKey,
-          r = e.history,
-          n = e.location,
-          o = e.searchBox,
-          c = e.shouldAutoPlayGif,
-          i = n.state && n.state.query
-        return i
-          ? a.a.createElement(te, {
+          a = e.history,
+          r = e.location,
+          i = e.searchBox,
+          o = e.shouldAutoPlayGif,
+          c = r.state && r.state.query
+        return c
+          ? n.a.createElement(Z, {
               gifSearchKey: t,
-              history: r,
-              location: n,
-              query: i,
-              searchBox: o,
-              shouldAutoPlayGif: c,
+              history: a,
+              location: r,
+              query: c,
+              searchBox: i,
+              shouldAutoPlayGif: o,
             })
-          : a.a.createElement(D, { gifSearchKey: t, history: r, location: n, searchBox: o })
+          : n.a.createElement(A, { gifSearchKey: t, history: a, location: r, searchBox: i })
       }
     },
-    hiCj: function (e, t, r) {
+    hiCj: function (e, t, a) {
       'use strict'
-      r('OZaJ')
-      var n = r('VrFO'),
-        a = r.n(n),
-        o = r('Y9Ll'),
-        c = r.n(o),
-        i = r('1Pcy'),
-        u = r.n(i),
-        l = r('5Yy7'),
-        s = r.n(l),
-        f = r('N+ot'),
-        h = r.n(f),
-        d = r('AuHH'),
-        y = r.n(d),
-        p = r('KEM+'),
-        g = r.n(p),
-        m = (r('2G9S'), r('ERkP')),
-        v = r.n(m),
-        b = r('P1r1'),
-        O = r('0KEI'),
-        S = r('oEGd'),
-        w = {
-          createLocalApiErrorHandler: Object(O.createLocalApiErrorHandlerWithContextFactory)(
+      var r = a('VrFO'),
+        n = a.n(r),
+        i = a('Y9Ll'),
+        o = a.n(i),
+        c = a('1Pcy'),
+        u = a.n(c),
+        l = a('5Yy7'),
+        s = a.n(l),
+        h = a('2VqO'),
+        d = a.n(h),
+        f = a('KEM+'),
+        g = a.n(f),
+        y = (a('2G9S'), a('ERkP')),
+        m = a.n(y),
+        p = a('P1r1'),
+        v = a('0KEI'),
+        b = a('oEGd'),
+        S = {
+          createLocalApiErrorHandler: Object(v.createLocalApiErrorHandlerWithContextFactory)(
             'FOUND_MEDIA_AUTOPLAY_TOGGLE',
           ),
-          updateSettings: b.L,
+          updateSettings: p.L,
         },
-        E = Object(S.g)(function () {
+        _ = Object(b.g)(function () {
           return {}
-        }, w),
-        P = r('3XMw'),
-        _ = r.n(P),
-        j = r('fHOo'),
-        R = r('MWbm'),
-        x = r('t62R'),
-        C = r('CK8+'),
-        I = r('rHpw')
-      function N(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var r,
-            n = y()(e)
-          if (t) {
-            var a = y()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return h()(this, r)
-        }
-      }
-      var k = _.a.j7fc4f9b,
+        }, S),
+        E = a('3XMw'),
+        w = a.n(E),
+        C = a('fHOo'),
+        O = a('MWbm'),
+        I = a('t62R'),
+        x = a('CK8+'),
+        P = a('rHpw'),
+        k = w.a.j7fc4f9b,
         M = (function (e) {
-          s()(r, e)
-          var t = N(r)
-          function r() {
+          s()(a, e)
+          var t = d()(a)
+          function a() {
             var e
-            a()(this, r)
-            for (var n = arguments.length, o = new Array(n), c = 0; c < n; c++) o[c] = arguments[c]
+            n()(this, a)
+            for (var r = arguments.length, i = new Array(r), o = 0; o < r; o++) i[o] = arguments[o]
             return (
-              (e = t.call.apply(t, [this].concat(o))),
+              (e = t.call.apply(t, [this].concat(i))),
               g()(u()(e), '_handleSwitchChanged', function (t) {
-                var r = e.props,
-                  n = r.createLocalApiErrorHandler,
-                  a = r.onToggleChange
-                ;(0, r.updateSettings)({ shouldAutoPlayGif: t }).catch(n({ showToast: !0 })), a(t)
+                var a = e.props,
+                  r = a.createLocalApiErrorHandler,
+                  n = a.onToggleChange
+                ;(0, a.updateSettings)({ shouldAutoPlayGif: t }).catch(r({ showToast: !0 })), n(t)
               }),
               e
             )
           }
           return (
-            c()(r, [
+            o()(a, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.location,
-                    r = e.shouldAutoPlayGif,
-                    n = t.state && t.state.query,
-                    a = t.state && t.state.category ? t.state.category.display_name : ''
-                  return Object(j.a)() && (n || a)
-                    ? v.a.createElement(
-                        R.a,
-                        { style: A.root },
-                        v.a.createElement(x.b, { color: 'gray700' }, k),
-                        v.a.createElement(C.a, {
+                    a = e.shouldAutoPlayGif,
+                    r = t.state && t.state.query,
+                    n = t.state && t.state.category ? t.state.category.display_name : ''
+                  return Object(C.a)() && (r || n)
+                    ? m.a.createElement(
+                        O.a,
+                        { style: N.root },
+                        m.a.createElement(I.b, { color: 'gray700' }, k),
+                        m.a.createElement(x.a, {
                           accessibilityLabel: k,
                           onValueChange: this._handleSwitchChanged,
-                          value: r,
+                          value: a,
                         }),
                       )
                     : null
                 },
               },
             ]),
-            r
+            a
           )
-        })(v.a.Component),
-        A = I.a.create(function (e) {
+        })(m.a.Component),
+        N = P.a.create(function (e) {
           return { root: { flexDirection: 'row', justifyContent: 'space-between', margin: e.spaces.space12 } }
         })
-      t.a = E(M)
+      t.a = _(M)
     },
-    'ij+d': function (e, t, r) {
+    'ij+d': function (e, t, a) {
       'use strict'
-      r.r(t),
-        r.d(t, 'GifSearchPaths', function () {
-          return X
+      a.r(t),
+        a.d(t, 'GifSearchPaths', function () {
+          return Y
         }),
-        r.d(t, 'GifSearchScreen', function () {
-          return z
+        a.d(t, 'GifSearchScreen', function () {
+          return Q
         })
-      r('OZaJ')
-      var n = r('VrFO'),
-        a = r.n(n),
-        o = r('Y9Ll'),
-        c = r.n(o),
-        i = r('1Pcy'),
-        u = r.n(i),
-        l = r('5Yy7'),
-        s = r.n(l),
-        f = r('N+ot'),
-        h = r.n(f),
-        d = r('AuHH'),
-        y = r.n(d),
-        p = r('KEM+'),
-        g = r.n(p),
-        m =
-          (r('JtPf'),
-          r('7x/C'),
-          r('87if'),
-          r('lTEL'),
-          r('kYxP'),
-          r('3voH'),
-          r('KqXw'),
-          r('MvUL'),
-          r('2G9S'),
-          r('ERkP')),
-        v = r.n(m),
-        b = r('38/B'),
-        O = r('hqKg'),
-        S = r('H9MA'),
-        w = r('zHh/'),
-        E = r('oEGd'),
-        P = r('P1r1'),
-        _ = Object(O.createSelector)(P.g, P.k, S.d, function (e, t, r) {
+      var r = a('VrFO'),
+        n = a.n(r),
+        i = a('Y9Ll'),
+        o = a.n(i),
+        c = a('1Pcy'),
+        u = a.n(c),
+        l = a('5Yy7'),
+        s = a.n(l),
+        h = a('2VqO'),
+        d = a.n(h),
+        f = a('KEM+'),
+        g = a.n(f),
+        y =
+          (a('lTEL'),
+          a('7x/C'),
+          a('JtPf'),
+          a('87if'),
+          a('kYxP'),
+          a('3voH'),
+          a('KqXw'),
+          a('MvUL'),
+          a('2G9S'),
+          a('ERkP')),
+        m = a.n(y),
+        p = a('38/B'),
+        v = a('hqKg'),
+        b = a('H9MA'),
+        S = a('zHh/'),
+        _ = a('oEGd'),
+        E = a('P1r1'),
+        w = Object(v.createSelector)(E.g, E.k, b.d, function (e, t, a) {
           return {
             isDataSaverEnabled: t,
-            shouldAutoPlayGif: (e.shouldAutoPlayGif || Object(w.a)(r)) && !b.a.reducedMotionEnabled,
+            shouldAutoPlayGif: (e.shouldAutoPlayGif || Object(S.a)(a)) && !p.a.reducedMotionEnabled,
           }
         }),
-        j = Object(E.c)(_),
-        R = r('Y6L+'),
-        x = r('3XMw'),
-        C = r.n(x),
-        I = r('VwDm'),
-        N = r('MLl7'),
-        k = r('/de5'),
-        M = r('5FtR'),
-        A = r('wytG'),
-        D = r('7JQg'),
-        G = r('XOY5'),
-        F = r('MWbm'),
-        T = r('6OUF'),
-        B = r('/yvb'),
-        L = r('rHpw'),
-        K = r('oQhu'),
-        q = r('VY6S'),
-        H = r('Ty5D')
-      function U(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var r,
-            n = y()(e)
-          if (t) {
-            var a = y()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return h()(this, r)
-        }
-      }
-      var V = C.a.a50ba821,
-        Y = C.a.a9ae1e78,
-        Q = Object(A.a)(function () {
-          return Promise.resolve().then(r.bind(null, 'XYn1'))
+        C = Object(_.c)(w),
+        O = a('Y6L+'),
+        I = a('3XMw'),
+        x = a.n(I),
+        P = a('VwDm'),
+        k = a('MLl7'),
+        M = a('/de5'),
+        N = a('5FtR'),
+        G = a('wytG'),
+        A = a('7JQg'),
+        R = a('XOY5'),
+        F = a('MWbm'),
+        q = a('6OUF'),
+        T = a('/yvb'),
+        j = a('rHpw'),
+        L = a('oQhu'),
+        K = a('VY6S'),
+        D = a('zCf4'),
+        V = x.a.a50ba821,
+        B = x.a.a9ae1e78,
+        U = Object(G.a)(function () {
+          return Promise.resolve().then(a.bind(null, 'XYn1'))
         }),
-        W = Object(A.a)(function () {
-          return Promise.resolve().then(r.bind(null, 'k5pS'))
+        H = Object(G.a)(function () {
+          return Promise.resolve().then(a.bind(null, 'k5pS'))
         }),
-        X = { category: '/i/foundmedia/category', search: '/i/foundmedia/search' },
-        z = (function (e) {
-          s()(r, e)
-          var t = U(r)
-          function r(e) {
-            var n
+        Y = { category: '/i/foundmedia/category', search: '/i/foundmedia/search' },
+        Q = (function (e) {
+          s()(a, e)
+          var t = d()(a)
+          function a(e) {
+            var r
             return (
-              a()(this, r),
-              (n = t.call(this, e)),
-              g()(u()(n), 'state', { searchDisabled: !0 }),
-              g()(u()(n), '_gifSearchKey', n._getGifSearchKey()),
+              n()(this, a),
+              (r = t.call(this, e)),
+              g()(u()(r), 'state', { searchDisabled: !0 }),
+              g()(u()(r), '_gifSearchKey', r._getGifSearchKey()),
               g()(
-                u()(n),
+                u()(r),
                 '_getScribeNamespace',
-                Object(K.a)(function (e) {
+                Object(L.a)(function (e) {
                   return { page: e, section: 'gif_search' }
                 }),
               ),
-              g()(u()(n), '_setTextInputRef', function (e) {
-                n._textInputRef = e
+              g()(u()(r), '_setTextInputRef', function (e) {
+                r._textInputRef = e
               }),
-              g()(u()(n), '_handleChange', function (e) {
+              g()(u()(r), '_handleChange', function (e) {
                 var t = e.currentTarget.value
-                n._shouldRenderResultsOnChange ? n._goToQueryDebounced(t) : n.setState({ searchDisabled: !t })
+                r._shouldRenderResultsOnChange ? r._goToQueryDebounced(t) : r.setState({ searchDisabled: !t })
               }),
-              g()(u()(n), '_handleClear', function () {
-                var e = n.props,
+              g()(u()(r), '_handleClear', function () {
+                var e = r.props,
                   t = e.history,
-                  r = e.isDataSaverEnabled,
-                  a = e.location,
-                  o = a.pathname.startsWith(X.category),
-                  c = a.pathname === X.search && a.state && a.state.query
-                !r && (o || c) ? t.goBack() : r && n.setState({ searchDisabled: !0 })
+                  a = e.isDataSaverEnabled,
+                  n = e.location,
+                  i = n.pathname.startsWith(Y.category),
+                  o = n.pathname === Y.search && n.state && n.state.query
+                !a && (i || o) ? t.goBack() : a && r.setState({ searchDisabled: !0 })
               }),
-              g()(u()(n), '_handleSubmit', function () {
-                var e = n._textInputRef && n._textInputRef.getValue()
-                n._goToQuery(e)
+              g()(u()(r), '_handleSubmit', function () {
+                var e = r._textInputRef && r._textInputRef.getValue()
+                r._goToQuery(e)
               }),
-              g()(u()(n), '_handleSearch', function (e) {
+              g()(u()(r), '_handleSearch', function (e) {
                 var t = e.currentTarget.value
-                n._goToQuery(t)
+                r._goToQuery(t)
               }),
-              g()(u()(n), '_goToQuery', function (e) {
-                var t = n.props,
-                  r = t.history,
-                  a = t.isDataSaverEnabled,
-                  o = t.location,
-                  c = {}
-                c.pathname = X.search
-                var i = o.state && o.state.query,
-                  u = o.pathname === X.search && !i,
-                  l = o.pathname.startsWith(X.category) || (o.pathname === X.search && i),
-                  s = !a && l,
-                  f = o.state && o.state.dmConversationId
-                e ? ((c.state = { dmConversationId: f, query: e }), u ? r.push(c) : r.replace(c)) : s && r.goBack()
+              g()(u()(r), '_goToQuery', function (e) {
+                var t = r.props,
+                  a = t.history,
+                  n = t.isDataSaverEnabled,
+                  i = t.location,
+                  o = {}
+                o.pathname = Y.search
+                var c = i.state && i.state.query,
+                  u = i.pathname === Y.search && !c,
+                  l = i.pathname.startsWith(Y.category) || (i.pathname === Y.search && c),
+                  s = !n && l,
+                  h = i.state && i.state.dmConversationId
+                e ? ((o.state = { dmConversationId: h, query: e }), u ? a.push(o) : a.replace(o)) : s && a.goBack()
               }),
-              (n._goToQueryDebounced = Object(q.a)(function () {
+              (r._goToQueryDebounced = Object(K.a)(function () {
                 var e
-                return (e = n)._goToQuery.apply(e, arguments)
+                return (e = r)._goToQuery.apply(e, arguments)
               }, 500)),
-              (n._shouldRenderResultsOnChange = !n.props.isDataSaverEnabled),
-              n
+              (r._shouldRenderResultsOnChange = !r.props.isDataSaverEnabled),
+              r
             )
           }
           return (
-            c()(r, [
+            o()(a, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.history,
-                    r = e.location,
-                    n = e.shouldAutoPlayGif,
-                    a = {
+                    a = e.location,
+                    r = e.shouldAutoPlayGif,
+                    n = {
                       gifSearchKey: this._gifSearchKey,
                       history: t,
-                      location: r,
+                      location: a,
                       searchBox: this._renderSearchBox(),
-                      shouldAutoPlayGif: n,
+                      shouldAutoPlayGif: r,
                     },
-                    o = this._gifSearchKey ? this._gifSearchKey : void 0
+                    i = this._gifSearchKey ? this._gifSearchKey : void 0
                   return this._gifSearchKey
-                    ? v.a.createElement(
-                        D.b,
-                        { namespace: this._getScribeNamespace(o) },
-                        v.a.createElement(
-                          H.e,
+                    ? m.a.createElement(
+                        A.b,
+                        { namespace: this._getScribeNamespace(i) },
+                        m.a.createElement(
+                          D.d,
                           null,
-                          v.a.createElement(H.c, { exact: !0, path: X.search }, v.a.createElement(Q, a)),
-                          v.a.createElement(
-                            H.c,
-                            { exact: !0, path: ''.concat(X.category, '/').concat(R.o) },
-                            v.a.createElement(W, a),
+                          m.a.createElement(D.b, { exact: !0, path: Y.search }, m.a.createElement(U, n)),
+                          m.a.createElement(
+                            D.b,
+                            { exact: !0, path: ''.concat(Y.category, '/').concat(O.o) },
+                            m.a.createElement(H, n),
                           ),
-                          v.a.createElement(H.c, { component: k.b }),
+                          m.a.createElement(D.b, { component: M.b }),
                         ),
                       )
-                    : v.a.createElement(M.a, { to: '/' })
+                    : m.a.createElement(N.a, { to: '/' })
                 },
               },
               {
@@ -1275,8 +1039,8 @@
                 value: function () {
                   var e = this.props.location.state || {},
                     t = e.gifSearchKey,
-                    r = e.gifSearchKeySource
-                  return t || (r && Object(N.b)(r) && r)
+                    a = e.gifSearchKeySource
+                  return t || (a && Object(k.b)(a) && a)
                 },
               },
               {
@@ -1284,8 +1048,8 @@
                 value: function () {
                   var e = this.props.location,
                     t = e.state && e.state.query,
-                    r = e.state && e.state.category ? e.state.category.display_name : ''
-                  return t || r
+                    a = e.state && e.state.category ? e.state.category.display_name : ''
+                  return t || a
                 },
               },
               {
@@ -1293,11 +1057,11 @@
                 value: function () {
                   var e = this.state.searchDisabled,
                     t = this._getQueryOrCategory()
-                  return v.a.createElement(
+                  return m.a.createElement(
                     F.a,
-                    { style: J.searchContainer },
-                    v.a.createElement(T.a, {
-                      Icon: I.a,
+                    { style: W.searchContainer },
+                    m.a.createElement(q.a, {
+                      Icon: P.a,
                       autoFocus: !0,
                       defaultValue: t,
                       key: t,
@@ -1306,101 +1070,77 @@
                       onSubmitEditing: this._handleSearch,
                       placeholder: V,
                       ref: this._setTextInputRef,
-                      style: J.searchInput,
-                      testID: G.a.gifSearchSearchInput,
+                      style: W.searchInput,
+                      testID: R.a.gifSearchSearchInput,
                       withClearButton: !0,
                     }),
                     this._shouldRenderResultsOnChange
                       ? null
-                      : v.a.createElement(
-                          B.a,
+                      : m.a.createElement(
+                          T.a,
                           {
                             disabled: e,
                             onPress: this._handleSubmit,
                             size: 'small',
-                            style: J.searchButton,
+                            style: W.searchButton,
                             type: 'brandFilled',
                           },
-                          Y,
+                          B,
                         ),
                   )
                 },
               },
             ]),
-            r
+            a
           )
-        })(v.a.Component),
-        J = L.a.create(function (e) {
+        })(m.a.Component),
+        W = j.a.create(function (e) {
           return {
             searchContainer: { alignItems: 'center', flex: 1, flexDirection: 'row', marginVertical: e.spaces.space8 },
             searchInput: { height: '100%' },
             searchButton: { marginStart: e.spaces.space12 },
           }
         })
-      t.default = j(z)
+      t.default = C(Q)
     },
-    k5pS: function (e, t, r) {
+    k5pS: function (e, t, a) {
       'use strict'
-      r.r(t),
-        r.d(t, 'GifSearchCategory', function () {
-          return C
+      a.r(t),
+        a.d(t, 'GifSearchCategory', function () {
+          return I
         })
-      r('OZaJ')
-      var n = r('VrFO'),
-        a = r.n(n),
-        o = r('Y9Ll'),
-        c = r.n(o),
-        i = r('1Pcy'),
-        u = r.n(i),
-        l = r('5Yy7'),
-        s = r.n(l),
-        f = r('N+ot'),
-        h = r.n(f),
-        d = r('AuHH'),
-        y = r.n(d),
-        p = r('KEM+'),
-        g = r.n(p),
-        m = (r('2G9S'), r('ERkP')),
-        v = r.n(m),
-        b = r('hiCj'),
-        O = r('pX0s'),
-        S = r('jHSc'),
-        w = r('EP6G'),
-        E = r('3XMw'),
-        P = r.n(E),
-        _ = r('7JQg'),
-        j = r('MLl7')
-      function R(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var r,
-            n = y()(e)
-          if (t) {
-            var a = y()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return h()(this, r)
-        }
-      }
-      var x = P.a.f5ff0d6f,
-        C = (function (e) {
-          s()(r, e)
-          var t = R(r)
-          function r() {
+      var r = a('VrFO'),
+        n = a.n(r),
+        i = a('Y9Ll'),
+        o = a.n(i),
+        c = a('1Pcy'),
+        u = a.n(c),
+        l = a('5Yy7'),
+        s = a.n(l),
+        h = a('2VqO'),
+        d = a.n(h),
+        f = a('KEM+'),
+        g = a.n(f),
+        y = (a('2G9S'), a('ERkP')),
+        m = a.n(y),
+        p = a('hiCj'),
+        v = a('pX0s'),
+        b = a('jHSc'),
+        S = a('EP6G'),
+        _ = a('3XMw'),
+        E = a.n(_),
+        w = a('7JQg'),
+        C = a('MLl7'),
+        O = E.a.f5ff0d6f,
+        I = (function (e) {
+          s()(a, e)
+          var t = d()(a)
+          function a() {
             var e
-            a()(this, r)
-            for (var n = arguments.length, o = new Array(n), c = 0; c < n; c++) o[c] = arguments[c]
+            n()(this, a)
+            for (var r = arguments.length, i = new Array(r), o = 0; o < r; o++) i[o] = arguments[o]
             return (
-              (e = t.call.apply(t, [this].concat(o))),
+              (e = t.call.apply(t, [this].concat(i))),
               g()(u()(e), 'state', { shouldAutoPlayGifOverride: null }),
               g()(u()(e), '_handleToggleChange', function (t) {
                 e.setState({ shouldAutoPlayGifOverride: t })
@@ -1409,217 +1149,165 @@
             )
           }
           return (
-            c()(r, [
+            o()(a, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.gifSearchKey,
-                    r = e.history,
-                    n = e.location,
-                    a = e.searchBox,
-                    o = e.shouldAutoPlayGif,
-                    c = n.state && n.state.category,
-                    i = c && c.display_name,
+                    a = e.history,
+                    r = e.location,
+                    n = e.searchBox,
+                    i = e.shouldAutoPlayGif,
+                    o = r.state && r.state.category,
+                    c = o && o.display_name,
                     u = this.state.shouldAutoPlayGifOverride,
-                    l = Object(j.c)(u, o)
-                  return v.a.createElement(
-                    S.b,
-                    { backButtonType: 'back', documentTitle: x({ category: i }), history: r, middleControl: a },
-                    v.a.createElement(b.a, {
-                      location: n,
+                    l = Object(C.c)(u, i)
+                  return m.a.createElement(
+                    b.b,
+                    { backButtonType: 'back', documentTitle: O({ category: c }), history: a, middleControl: n },
+                    m.a.createElement(p.a, {
+                      location: r,
                       onToggleChange: this._handleToggleChange,
                       shouldAutoPlayGif: l,
                     }),
-                    !!c &&
-                      v.a.createElement(w.a, {
+                    !!o &&
+                      m.a.createElement(S.a, {
                         gifSearchKey: t,
-                        history: r,
-                        module: O.b,
-                        query: c.id,
+                        history: a,
+                        module: v.b,
+                        query: o.id,
                         shouldAutoPlayGif: l,
                       }),
                   )
                 },
               },
             ]),
-            r
+            a
           )
-        })(v.a.Component)
-      t.default = Object(_.c)({ element: 'gallery' })(C)
+        })(m.a.Component)
+      t.default = Object(w.c)({ element: 'gallery' })(I)
     },
-    pX0s: function (e, t, r) {
+    pX0s: function (e, t, a) {
       'use strict'
-      r.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return E
       }),
-        r.d(t, 'b', function () {
-          return P
+        a.d(t, 'b', function () {
+          return w
         }),
-        r.d(t, 'c', function () {
-          return _
+        a.d(t, 'c', function () {
+          return C
         })
-      r('+KXO'), r('1t7P'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
-      var n = r('KEM+'),
-        a = r.n(n),
-        o = r('RhWx'),
-        c = r.n(o),
-        i = (r('LW0h'), r('2G9S'), r('LJOr'), r('KqXw'), r('9OUN')),
-        u = r('m3Bd'),
-        l = r.n(u),
-        s = (r('JtPf'), r('7x/C'), r('oEOe')),
-        f = r('kGix'),
-        h = 'gifSearch',
-        d = 'rweb/'.concat(h)
-      function y(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
-        }
-        return r
-      }
-      function p(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? y(Object(r), !0).forEach(function (t) {
-                a()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : y(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
-        }
-        return e
-      }
-      var g = {},
-        m = { cursor: {}, items: [], initialFetchStatus: f.a.NONE, nextFetchStatus: f.a.NONE },
-        v = function (e) {
+      var r = a('KEM+'),
+        n = a.n(r),
+        i = a('yiKp'),
+        o = a.n(i),
+        c = a('RhWx'),
+        u = a.n(c),
+        l = (a('LW0h'), a('7x/C'), a('2G9S'), a('KqXw'), a('LJOr'), a('9OUN')),
+        s = a('m3Bd'),
+        h = a.n(s),
+        d = (a('JtPf'), a('oEOe')),
+        f = a('kGix'),
+        g = 'gifSearch',
+        y = 'rweb/'.concat(g),
+        m = ['fetchStatus'],
+        p = {},
+        v = { cursor: {}, items: [], initialFetchStatus: f.a.NONE, nextFetchStatus: f.a.NONE },
+        b = function (e) {
           var t = e.defaultQuery,
-            r = e.getApiMethod,
-            n = e.getParams,
-            o = e.localNamespace,
+            a = e.getApiMethod,
+            r = e.getParams,
+            i = e.localNamespace,
             c = e.mergeNewItems,
-            i = s.a(''.concat(d, '/').concat(o), 'FETCH'),
-            u = function (e, t, r) {
-              var n = r.fetchStatus,
-                o = l()(r, ['fetchStatus']),
+            u = d.a(''.concat(y, '/').concat(i), 'FETCH'),
+            l = function (e, t, a) {
+              var r = a.fetchStatus,
+                i = h()(a, m),
                 c = e[t] || {},
-                i = (c.cursor || {}).next ? 'nextFetchStatus' : 'initialFetchStatus'
-              return p(p({}, e), {}, a()({}, t, p(p(p(p({}, m), c), o), {}, a()({}, i, n))))
+                u = (c.cursor || {}).next ? 'nextFetchStatus' : 'initialFetchStatus'
+              return o()(o()({}, e), {}, n()({}, t, o()(o()(o()(o()({}, v), c), i), {}, n()({}, u, r))))
             },
-            h = function (e) {
+            s = function (e) {
               var t = e.cursor,
-                a = e.query
-              return function (e, o, c) {
-                var u = c.api
-                return s.b(e, { request: r(u), params: n(t, a) })({ actionTypes: i, meta: { query: a } })
+                n = e.query
+              return function (e, i, o) {
+                var c = o.api
+                return d.b(e, { request: a(c), params: r(t, n) })({ actionTypes: u, meta: { query: n } })
               }
             },
-            y = function (e) {
-              var r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : t
-              return (e.gifSearch[o] || {})[r] || {}
+            g = function (e) {
+              var a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : t
+              return (e.gifSearch[i] || {})[a] || {}
             }
           return {
-            actionTypes: i,
+            actionTypes: u,
             fetchInitialIfNeeded: function () {
               var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-                r = e.query,
-                n = void 0 === r ? t : r
-              return function (e, t, r) {
-                r.api
-                var a = y(t(), n)
-                return a.initialFetchStatus === f.a.LOADING || a.items ? Promise.resolve() : e(h({ query: n }))
+                a = e.query,
+                r = void 0 === a ? t : a
+              return function (e, t, a) {
+                a.api
+                var n = g(t(), r)
+                return n.initialFetchStatus === f.a.LOADING || n.items ? Promise.resolve() : e(s({ query: r }))
               }
             },
             fetchNextIfNeeded: function () {
               var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-                r = e.query,
-                n = void 0 === r ? t : r
-              return function (e, t, r) {
-                r.api
-                var a = y(t(), n),
-                  o = a.cursor,
-                  c = void 0 === o ? {} : o
-                return a.nextFetchStatus !== f.a.LOADING && c.next
-                  ? e(h({ query: n, cursor: c.next }))
+                a = e.query,
+                r = void 0 === a ? t : a
+              return function (e, t, a) {
+                a.api
+                var n = g(t(), r),
+                  i = n.cursor,
+                  o = void 0 === i ? {} : i
+                return n.nextFetchStatus !== f.a.LOADING && o.next
+                  ? e(s({ query: r, cursor: o.next }))
                   : Promise.resolve()
               }
             },
             reducer: function () {
-              var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : g,
+              var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : p,
                 t = arguments.length > 1 ? arguments[1] : void 0
               switch (t.type) {
-                case i.REQUEST:
+                case u.REQUEST:
+                  var a = t.meta.query
+                  return l(e, a, { fetchStatus: f.a.LOADING })
+                case u.FAILURE:
                   var r = t.meta.query
-                  return u(e, r, { fetchStatus: f.a.LOADING })
-                case i.FAILURE:
-                  var n = t.meta.query
-                  return u(e, n, { fetchStatus: f.a.FAILED })
-                case i.SUCCESS:
-                  var a = t.payload.cursor,
-                    o = t.meta.query,
-                    l = (e[o] || {}).items || []
-                  return u(e, o, { cursor: a, fetchStatus: f.a.LOADED, items: c(l, t.payload) })
+                  return l(e, r, { fetchStatus: f.a.FAILED })
+                case u.SUCCESS:
+                  var n = t.payload.cursor,
+                    i = t.meta.query,
+                    o = (e[i] || {}).items || []
+                  return l(e, i, { cursor: n, fetchStatus: f.a.LOADED, items: c(o, t.payload) })
                 default:
                   return e
               }
             },
             selectInitialFetchStatus: function (e, t) {
-              return y(e, t).initialFetchStatus || f.a.NONE
+              return g(e, t).initialFetchStatus || f.a.NONE
             },
             selectItems: function (e, t) {
-              return y(e, t).items
+              return g(e, t).items
             },
             selectNextFetchStatus: function (e, t) {
-              return y(e, t).nextFetchStatus || f.a.NONE
+              return g(e, t).nextFetchStatus || f.a.NONE
             },
-            selectQueryState: y,
+            selectQueryState: g,
           }
         },
-        b = r('Ssj5')
-      function O(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
-        }
-        return r
-      }
-      function S(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? O(Object(r), !0).forEach(function (t) {
-                a()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : O(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
-        }
-        return e
-      }
-      var w = function (e) {
+        S = a('Ssj5'),
+        _ = function (e) {
           return e.filter(function (e) {
             var t = e.original_image,
-              r = (t = void 0 === t ? {} : t).height,
-              n = t.width
-            return r > 0 && n > 0
+              a = (t = void 0 === t ? {} : t).height,
+              r = t.width
+            return a > 0 && r > 0
           })
         },
-        E = v({
+        E = b({
           defaultQuery: 'categories',
           getApiMethod: function (e) {
             return e.GifSearch.categories
@@ -1628,65 +1316,65 @@
             return e ? { cursor: e } : {}
           },
           mergeNewItems: function (e, t) {
-            var r
+            var a
             return [].concat(
-              c()(e),
-              c()((null == t || null === (r = t.data) || void 0 === r ? void 0 : r.groups) || []),
+              u()(e),
+              u()((null == t || null === (a = t.data) || void 0 === a ? void 0 : a.groups) || []),
             )
           },
           localNamespace: 'categories',
         }),
-        P = v({
+        w = b({
           getApiMethod: function (e) {
             return e.GifSearch.category
           },
           getParams: function (e, t) {
-            return S({ category: t }, e ? { cursor: e } : {})
+            return o()({ category: t }, e ? { cursor: e } : {})
           },
           mergeNewItems: function (e, t) {
-            var r
+            var a
             return [].concat(
-              c()(e),
-              c()(w((null == t || null === (r = t.data) || void 0 === r ? void 0 : r.items) || [])),
+              u()(e),
+              u()(_((null == t || null === (a = t.data) || void 0 === a ? void 0 : a.items) || [])),
             )
           },
           localNamespace: 'category',
         }),
-        _ = v({
+        C = b({
           getApiMethod: function (e) {
             return e.GifSearch.search
           },
           getParams: function (e, t) {
-            return S({ q: t }, e ? { cursor: e } : {})
+            return o()({ q: t }, e ? { cursor: e } : {})
           },
           mergeNewItems: function (e, t) {
-            var r
+            var a
             return [].concat(
-              c()(e),
-              c()(w((null == t || null === (r = t.data) || void 0 === r ? void 0 : r.items) || [])),
+              u()(e),
+              u()(_((null == t || null === (a = t.data) || void 0 === a ? void 0 : a.items) || [])),
             )
           },
           localNamespace: 'search',
         }),
-        j = Object(i.c)({ categories: E.reducer, category: P.reducer, search: _.reducer })
-      b.a.register(a()({}, h, j))
+        O = Object(l.c)({ categories: E.reducer, category: w.reducer, search: C.reducer })
+      S.a.register(n()({}, g, O))
     },
-    x5W0: function (e, t, r) {
+    x5W0: function (e, t, a) {
       'use strict'
-      r.d(t, 'a', function () {
+      a.d(t, 'a', function () {
         return l
       })
-      var n = r('rHpw').a.theme.colors,
-        a = n.blue500,
-        o = n.green500,
-        c = n.magenta500,
-        i = [a, o, n.orange500, n.purple500, c, n.yellow500],
+      var r = a('rHpw').a.theme.colors,
+        n = r.blue500,
+        i = r.green500,
+        o = r.magenta500,
+        c = [n, i, r.orange500, r.purple500, o, r.yellow500],
         u = function () {
-          return Math.floor(Math.random() * i.length + 1)
+          return Math.floor(Math.random() * c.length + 1)
         },
         l = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : u()
-          return i[e % i.length]
+          return c[e % c.length]
         }
     },
   },
