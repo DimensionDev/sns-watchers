@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [78],
+  [77],
   {
     dgvO: function (e, n, r) {
       'use strict'
@@ -7,7 +7,7 @@
         r.d(n, 'ProfileRedirect', function () {
           return p
         })
-      r('KqXw'), r('MvUL')
+      r('MvUL'), r('KqXw')
       var t = r('ERkP'),
         c = r.n(t),
         a = r('G6rE'),

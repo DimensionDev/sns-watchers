@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [177],
+  [176],
   {
     WOwf: function (e, t, n) {
       'use strict'
@@ -92,18 +92,18 @@
           .withAnalytics({ page: 'undo_tweet_details', section: 'timeline' }),
         c = n('3XMw'),
         p = n.n(c)
-      var m = n('zCf4'),
+      var m = n('Ty5D'),
         w = n('MWbm'),
         f = n('t62R'),
-        b = n('aRdY'),
-        y = n('/yvb'),
+        y = n('aRdY'),
+        b = n('/yvb'),
         v = n('rHpw'),
         g = p.a.bc2ceaf2,
         S = p.a.gf5e9ea6,
         h = p.a.j4c40da3,
         T = p.a.b23688c7,
         E = function (e) {
-          var t = Object(m.f)(),
+          var t = Object(m.g)(),
             n = e.analytics,
             a = e.communityIdValue,
             r = e.inReplyToStatusId,
@@ -118,9 +118,9 @@
             W = E[0],
             x = E[1],
             _ = o.a.useState(),
-            C = i()(_, 2),
-            D = C[0],
-            R = C[1],
+            D = i()(_, 2),
+            C = D[0],
+            R = D[1],
             j = o.a.useState(!1),
             k = i()(j, 2),
             F = k[0],
@@ -182,15 +182,15 @@
                   o.a.createElement(
                     w.a,
                     { style: I.timerWrapper },
-                    o.a.createElement(b.a, { accessibilityLabel: T, count: P, maxCount: 1 }),
+                    o.a.createElement(y.a, { accessibilityLabel: T, count: P, maxCount: 1 }),
                   ),
-                  !D || D < 470 ? null : o.a.createElement(f.b, { style: I.sendingLabel, weight: 'bold' }, g),
+                  !C || C < 470 ? null : o.a.createElement(f.b, { style: I.sendingLabel, weight: 'bold' }, g),
                 ),
                 o.a.createElement(
                   w.a,
                   { style: I.buttonWrapper },
                   o.a.createElement(
-                    y.a,
+                    b.a,
                     {
                       disabled: F,
                       onClick: function () {
@@ -209,7 +209,7 @@
                     h,
                   ),
                   o.a.createElement(
-                    y.a,
+                    b.a,
                     {
                       onClick: function () {
                         n.scribe({

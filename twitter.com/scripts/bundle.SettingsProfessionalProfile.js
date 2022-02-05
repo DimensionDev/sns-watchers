@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [89],
+  [88],
   {
     '6kA7': function (e, n, t) {
       'use strict'
@@ -332,8 +332,7 @@
         p = t('cm6r'),
         d = t('rHpw'),
         f = t('MWbm'),
-        m = ['align', 'color', 'label'],
-        b = d.a.create(function (e) {
+        m = d.a.create(function (e) {
           return {
             container: { backgroundColor: e.colors.cellBackground },
             root: {
@@ -349,18 +348,18 @@
           t = void 0 === n ? 'center' : n,
           a = e.color,
           r = e.label,
-          s = i()(e, m),
-          y = u.a.generate({
+          s = i()(e, ['align', 'color', 'label']),
+          b = u.a.generate({
             backgroundColor: d.a.theme.colors.transparent,
             color: d.a.theme.colors[a],
             insetFocusRing: !0,
           })
         return c.a.createElement(
           f.a,
-          { style: b.container },
+          { style: m.container },
           c.a.createElement(
             p.a,
-            o()({}, s, { interactiveStyles: y, style: b.root }),
+            o()({}, s, { interactiveStyles: b, style: m.root }),
             c.a.createElement(l.b, { align: t, color: a }, r),
           ),
         )

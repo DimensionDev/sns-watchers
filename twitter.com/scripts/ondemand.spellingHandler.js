@@ -1,102 +1,158 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [348],
+  [347],
   {
     '5aND': function (e, t, n) {
       'use strict'
       n.r(t)
-      var r = n('yiKp'),
-        i = n.n(r),
-        a = n('ezF+'),
-        o = (n('ERkP'), n('VPAj')),
-        c = n('zh9S'),
-        s = n('hYIq'),
-        u = n('ONGZ'),
-        l = a.g({
-          bindActions: function () {
-            return { scribe: c.c }
-          },
-          component: s.b,
-          divider: { top: !0, bottom: !0 },
-          getScribeDataItem: Object(u.b)('expansion'),
-          selectData: Object(o.a)({}),
-          createProps: function (e) {
-            var t = e.actions.scribe,
-              n = e.entry,
-              r = e.scribeNamespace,
-              a = n.content
-            return {
-              onClick: function () {
-                return t(i()(i()({}, r), {}, { element: 'expansion_revert', action: 'search' }), Object(u.a)(n))
-              },
-              original: a.originalQuery,
-              suggestion: a.spellingResult.text,
-            }
-          },
-        })
-      t.default = l
+      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
+      var r = n('KEM+'),
+        o = n.n(r),
+        c = n('ezF+'),
+        i = (n('ERkP'), n('VPAj')),
+        a = n('zh9S'),
+        u = n('hYIq'),
+        s = n('ONGZ')
+      function l(e, t) {
+        var n = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e)
+          t &&
+            (r = r.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            n.push.apply(n, r)
+        }
+        return n
+      }
+      function p(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? l(Object(n), !0).forEach(function (t) {
+                o()(e, t, n[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : l(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+              })
+        }
+        return e
+      }
+      var f = c.g({
+        bindActions: function () {
+          return { scribe: a.c }
+        },
+        component: u.b,
+        divider: { top: !0, bottom: !0 },
+        getScribeDataItem: Object(s.b)('expansion'),
+        selectData: Object(i.a)({}),
+        createProps: function (e) {
+          var t = e.actions.scribe,
+            n = e.entry,
+            r = e.scribeNamespace,
+            o = n.content
+          return {
+            onClick: function () {
+              return t(p(p({}, r), {}, { element: 'expansion_revert', action: 'search' }), Object(s.a)(n))
+            },
+            original: o.originalQuery,
+            suggestion: o.spellingResult.text,
+          }
+        },
+      })
+      t.default = f
     },
     '77Dd': function (e, t, n) {
       'use strict'
       n.r(t)
-      var r = n('yiKp'),
-        i = n.n(r),
-        a = n('ezF+'),
-        o = (n('ERkP'), n('VPAj')),
-        c = n('zh9S'),
-        s = n('hYIq'),
-        u = n('ONGZ'),
-        l = a.g({
-          bindActions: function () {
-            return { scribe: c.c }
-          },
-          component: s.a,
-          divider: { top: !0, bottom: !0 },
-          getScribeDataItem: Object(u.b)('replacement'),
-          selectData: Object(o.a)({}),
-          createProps: function (e) {
-            var t = e.actions.scribe,
-              n = e.entry,
-              r = e.scribeNamespace,
-              a = n.content
-            return {
-              onClick: function () {
-                return t(i()(i()({}, r), {}, { element: 'replacement_revert', action: 'search' }), Object(u.a)(n))
-              },
-              original: a.originalQuery,
-              suggestion: a.spellingResult.text,
-            }
-          },
-        })
-      t.default = l
+      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
+      var r = n('KEM+'),
+        o = n.n(r),
+        c = n('ezF+'),
+        i = (n('ERkP'), n('VPAj')),
+        a = n('zh9S'),
+        u = n('hYIq'),
+        s = n('ONGZ')
+      function l(e, t) {
+        var n = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e)
+          t &&
+            (r = r.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            n.push.apply(n, r)
+        }
+        return n
+      }
+      function p(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? l(Object(n), !0).forEach(function (t) {
+                o()(e, t, n[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : l(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+              })
+        }
+        return e
+      }
+      var f = c.g({
+        bindActions: function () {
+          return { scribe: a.c }
+        },
+        component: u.a,
+        divider: { top: !0, bottom: !0 },
+        getScribeDataItem: Object(s.b)('replacement'),
+        selectData: Object(i.a)({}),
+        createProps: function (e) {
+          var t = e.actions.scribe,
+            n = e.entry,
+            r = e.scribeNamespace,
+            o = n.content
+          return {
+            onClick: function () {
+              return t(p(p({}, r), {}, { element: 'replacement_revert', action: 'search' }), Object(s.a)(n))
+            },
+            original: o.originalQuery,
+            suggestion: o.spellingResult.text,
+          }
+        },
+      })
+      t.default = f
     },
     D4Iv: function (e, t, n) {
       'use strict'
       n.r(t)
       var r = n('ezF+'),
-        i = (n('ERkP'), n('VPAj')),
-        a = n('ONGZ'),
-        o = n('hYIq'),
-        c = r.g({
-          component: o.c,
+        o = (n('ERkP'), n('VPAj')),
+        c = n('ONGZ'),
+        i = n('hYIq'),
+        a = r.g({
+          component: i.c,
           divider: { top: !0, bottom: !0 },
-          getScribeDataItem: Object(a.b)('suggestion'),
-          selectData: Object(i.a)({}),
+          getScribeDataItem: Object(c.b)('suggestion'),
+          selectData: Object(o.a)({}),
           createProps: function (e) {
             return { suggestion: e.entry.content.spellingResult.text }
           },
         })
-      t.default = c
+      t.default = a
     },
     ONGZ: function (e, t, n) {
       'use strict'
       n.d(t, 'b', function () {
-        return i
+        return o
       }),
         n.d(t, 'a', function () {
-          return a
+          return c
         })
       var r = n('X04g'),
-        i = function (e) {
+        o = function (e) {
           return function (t) {
             return {
               item_type: r.a.ItemType.SEARCH,
@@ -106,7 +162,7 @@
             }
           }
         },
-        a = function (e) {
+        c = function (e) {
           return {
             items: [
               {
@@ -120,52 +176,76 @@
     hYIq: function (e, t, n) {
       'use strict'
       n.d(t, 'c', function () {
-        return q
+        return k
       }),
         n.d(t, 'a', function () {
-          return C
+          return D
         }),
         n.d(t, 'b', function () {
-          return O
+          return R
         })
+      n('OZaJ')
       var r = n('VrFO'),
-        i = n.n(r),
-        a = n('Y9Ll'),
-        o = n.n(a),
-        c = n('5Yy7'),
-        s = n.n(c),
-        u = n('2VqO'),
-        l = n.n(u),
-        p = n('ERkP'),
-        g = n.n(p),
+        o = n.n(r),
+        c = n('Y9Ll'),
+        i = n.n(c),
+        a = n('5Yy7'),
+        u = n.n(a),
+        s = n('N+ot'),
+        l = n.n(s),
+        p = n('AuHH'),
+        f = n.n(p),
+        b = n('ERkP'),
+        g = n.n(b),
         m = n('u3ZE'),
-        b = n('MWbm'),
-        f = n('t62R'),
-        d = n('rHpw'),
-        h = n('3XMw'),
-        y = n.n(h),
-        v = y.a.je5502ea,
-        k = y.a.bc4628a0,
+        y = n('MWbm'),
+        O = n('t62R'),
+        h = n('rHpw'),
+        d = n('3XMw'),
+        v = n.n(d)
+      function j(e) {
+        var t = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (e) {
+            return !1
+          }
+        })()
+        return function () {
+          var n,
+            r = f()(e)
+          if (t) {
+            var o = f()(this).constructor
+            n = Reflect.construct(r, arguments, o)
+          } else n = r.apply(this, arguments)
+          return l()(this, n)
+        }
+      }
+      var P = v.a.je5502ea,
+        w = v.a.bc4628a0,
         E = function (e) {
-          return g.a.createElement(f.b, { weight: 'bold' }, e)
+          return g.a.createElement(O.b, { weight: 'bold' }, e)
         },
-        q = (function (e) {
-          s()(n, e)
-          var t = l()(n)
+        k = (function (e) {
+          u()(n, e)
+          var t = j(n)
           function n() {
-            return i()(this, n), t.apply(this, arguments)
+            return o()(this, n), t.apply(this, arguments)
           }
           return (
-            o()(n, [
+            i()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props.suggestion,
                     t = { pathname: '/search', query: { q: e, src: m.a.SpellingSuggestionClick } }
                   return g.a.createElement(
-                    f.b,
-                    { link: t, style: P.root },
-                    g.a.createElement(y.a.I18NFormatMessage, { $i18n: 'hce48b8a' }, E(e)),
+                    O.b,
+                    { link: t, style: C.root },
+                    g.a.createElement(v.a.I18NFormatMessage, { $i18n: 'hce48b8a' }, E(e)),
                   )
                 },
               },
@@ -173,14 +253,14 @@
             n
           )
         })(g.a.PureComponent),
-        C = (function (e) {
-          s()(n, e)
-          var t = l()(n)
+        D = (function (e) {
+          u()(n, e)
+          var t = j(n)
           function n() {
-            return i()(this, n), t.apply(this, arguments)
+            return o()(this, n), t.apply(this, arguments)
           }
           return (
-            o()(n, [
+            i()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -188,15 +268,15 @@
                     t = e.onClick,
                     n = e.original,
                     r = e.suggestion,
-                    i = { pathname: '/search', query: { q: r, src: m.a.SpellingCorrectionClick } }
+                    o = { pathname: '/search', query: { q: r, src: m.a.SpellingCorrectionClick } }
                   return g.a.createElement(
-                    b.a,
-                    { style: P.root },
-                    g.a.createElement(f.b, { weight: 'bold' }, k({ suggestion: r })),
+                    y.a,
+                    { style: C.root },
+                    g.a.createElement(O.b, { weight: 'bold' }, w({ suggestion: r })),
                     g.a.createElement(
-                      f.b,
-                      { link: i, onClick: t },
-                      g.a.createElement(y.a.I18NFormatMessage, { $i18n: 'h36fe5c9' }, E(n)),
+                      O.b,
+                      { link: o, onClick: t },
+                      g.a.createElement(v.a.I18NFormatMessage, { $i18n: 'h36fe5c9' }, E(n)),
                     ),
                   )
                 },
@@ -205,14 +285,14 @@
             n
           )
         })(g.a.PureComponent),
-        O = (function (e) {
-          s()(n, e)
-          var t = l()(n)
+        R = (function (e) {
+          u()(n, e)
+          var t = j(n)
           function n() {
-            return i()(this, n), t.apply(this, arguments)
+            return o()(this, n), t.apply(this, arguments)
           }
           return (
-            o()(n, [
+            i()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -220,15 +300,15 @@
                     t = e.onClick,
                     n = e.original,
                     r = e.suggestion,
-                    i = { pathname: '/search', query: { q: n, src: m.a.SpellingExpansionRevertClick } }
+                    o = { pathname: '/search', query: { q: n, src: m.a.SpellingExpansionRevertClick } }
                   return g.a.createElement(
-                    b.a,
-                    { style: P.root },
-                    g.a.createElement(f.b, { weight: 'bold' }, v({ suggestion: r })),
+                    y.a,
+                    { style: C.root },
+                    g.a.createElement(O.b, { weight: 'bold' }, P({ suggestion: r })),
                     g.a.createElement(
-                      f.b,
-                      { link: i, onClick: t },
-                      g.a.createElement(y.a.I18NFormatMessage, { $i18n: 'h36fe5c9' }, E(n)),
+                      O.b,
+                      { link: o, onClick: t },
+                      g.a.createElement(v.a.I18NFormatMessage, { $i18n: 'h36fe5c9' }, E(n)),
                     ),
                   )
                 },
@@ -237,7 +317,7 @@
             n
           )
         })(g.a.PureComponent),
-        P = d.a.create(function (e) {
+        C = h.a.create(function (e) {
           return {
             root: {
               paddingHorizontal: e.componentDimensions.gutterHorizontal,

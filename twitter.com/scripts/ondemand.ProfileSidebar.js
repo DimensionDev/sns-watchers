@@ -1,59 +1,60 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [225],
+  [224],
   {
-    hIbf: function (e, t, n) {
+    hIbf: function (e, t, r) {
       'use strict'
-      n.r(t),
-        n.d(t, 'ProfileSidebarContainer', function () {
-          return Y
+      r.r(t),
+        r.d(t, 'ProfileSidebarContainer', function () {
+          return Q
         }),
-        n.d(t, 'toRelativePath', function () {
-          return Z
+        r.d(t, 'toRelativePath', function () {
+          return $
         })
-      var r = n('VrFO'),
-        a = n.n(r),
-        i = n('Y9Ll'),
-        o = n.n(i),
-        c = n('1Pcy'),
-        d = n.n(c),
-        u = n('5Yy7'),
-        s = n.n(u),
-        l = n('2VqO'),
-        h = n.n(l),
-        p = n('KEM+'),
-        f = n.n(p),
-        m = (n('2G9S'), n('LW0h'), n('7x/C'), n('z84I'), n('KqXw'), n('MvUL'), n('ERkP')),
-        I = n.n(m),
-        v = n('k49u'),
-        b = n('es0u'),
-        w = n('yiKp'),
-        y = n.n(w),
-        g = (n('ulNE'), n('urw/'), n('+KXO'), n('hqKg')),
-        M = n('8UdT'),
-        S = n('P1r1'),
-        _ = n('wrlS'),
-        x = n('XOJV'),
-        E = n('YjVx'),
-        O = n('FLCi'),
-        A = n('zrOZ'),
-        L = function (e, t) {
+      r('OZaJ')
+      var n = r('VrFO'),
+        i = r.n(n),
+        a = r('Y9Ll'),
+        o = r.n(a),
+        c = r('1Pcy'),
+        u = r.n(c),
+        s = r('5Yy7'),
+        d = r.n(s),
+        l = r('N+ot'),
+        f = r.n(l),
+        p = r('AuHH'),
+        h = r.n(p),
+        m = r('KEM+'),
+        v = r.n(m),
+        y = (r('2G9S'), r('LW0h'), r('z84I'), r('MvUL'), r('KqXw'), r('ERkP')),
+        b = r.n(y),
+        O = r('k49u'),
+        I = r('es0u'),
+        g = (r('+KXO'), r('1t7P'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('ulNE'), r('hqKg')),
+        w = r('8UdT'),
+        M = r('P1r1'),
+        j = r('wrlS'),
+        S = r('XOJV'),
+        E = r('YjVx'),
+        x = r('FLCi'),
+        P = r('zrOZ'),
+        _ = function (e, t) {
           return Object(E.a)(e, t)
         },
-        k = [],
-        F = Object(g.createSelector)(
+        R = [],
+        A = Object(g.createSelector)(
           function (e, t) {
-            return L(Object(_.d)(e), t).selectEntries(e)
+            return _(Object(j.d)(e), t).selectEntries(e)
           },
-          x.a.createHydratedSelector,
-          S.l,
-          function (e, t, n) {
-            return Object(O.a)(e, function (e) {
-              var r,
-                a = e.type === M.b.Tweet && t(e.content.id),
-                i =
-                  null != a && null !== (r = a.extended_entities) && void 0 !== r && r.media
-                    ? Object(A.a)(
-                        a.extended_entities.media
+          S.a.createHydratedSelector,
+          M.l,
+          function (e, t, r) {
+            return Object(x.a)(e, function (e) {
+              var n,
+                i = e.type === w.b.Tweet && t(e.content.id),
+                a =
+                  null != i && null !== (n = i.extended_entities) && void 0 !== n && n.media
+                    ? Object(P.a)(
+                        i.extended_entities.media
                           .map(function (e) {
                             var t = e.sensitive_media_warning
                             return t
@@ -65,90 +66,137 @@
                           .flat(),
                       )
                     : void 0
-              return !a ||
-                a.tombstoneInfo ||
-                a.isDeleted ||
-                (a.possibly_sensitive && !n) ||
-                (null != i && i.size) ||
-                !a.extended_entities ||
-                !a.extended_entities.media
-                ? k
-                : a.extended_entities.media.map(function (t) {
+              return !i ||
+                i.tombstoneInfo ||
+                i.isDeleted ||
+                (i.possibly_sensitive && !r) ||
+                (null != a && a.size) ||
+                !i.extended_entities ||
+                !i.extended_entities.media
+                ? R
+                : i.extended_entities.media.map(function (t) {
                     return { mediaItem: t, entry: e }
                   })
             })
           },
         ),
-        R = function (e, t) {
-          return L(e, t).fetchInitial()
+        L = function (e, t) {
+          return _(e, t).fetchInitial()
         },
-        j = n('MDbM'),
-        C = n('rxPX'),
-        N = n('0KEI'),
-        P = function (e, t) {
-          return F(e, t.userId)
+        k = r('MDbM'),
+        F = r('rxPX'),
+        D = r('0KEI')
+      function N(e, t) {
+        var r = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var n = Object.getOwnPropertySymbols(e)
+          t &&
+            (n = n.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            r.push.apply(r, n)
+        }
+        return r
+      }
+      var C = function (e, t) {
+          return A(e, t.userId)
         },
-        D = function (e, t) {
+        U = function (e, t) {
           return t.hideMediaModule
-            ? j.a.LOADED
+            ? k.a.LOADED
             : (function (e, t) {
-                return L(Object(_.d)(e), t).selectInitialFetchStatus(e)
-              })(e, t.userId) || j.a.LOADING
+                return _(Object(j.d)(e), t).selectInitialFetchStatus(e)
+              })(e, t.userId) || k.a.LOADING
         },
-        U = Object(C.a)()
+        H = Object(F.a)()
           .propsFromState(function () {
-            return { mediaItemsWithEntry: P, mediaFetchStatus: D }
+            return { mediaItemsWithEntry: C, mediaFetchStatus: U }
           })
           .adjustStateProps(function (e) {
             var t = e.mediaFetchStatus,
-              n = e.mediaItemsWithEntry
+              r = e.mediaItemsWithEntry
             return {
-              mediaItems: n.map(function (e) {
-                return y()({}, e.mediaItem)
+              mediaItems: r.map(function (e) {
+                return (function (e) {
+                  for (var t = 1; t < arguments.length; t++) {
+                    var r = null != arguments[t] ? arguments[t] : {}
+                    t % 2
+                      ? N(Object(r), !0).forEach(function (t) {
+                          v()(e, t, r[t])
+                        })
+                      : Object.getOwnPropertyDescriptors
+                      ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
+                      : N(Object(r)).forEach(function (t) {
+                          Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+                        })
+                  }
+                  return e
+                })({}, e.mediaItem)
               }),
-              mediaItemsWithEntry: n,
+              mediaItemsWithEntry: r,
               mediaFetchStatus: t,
             }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(N.createLocalApiErrorHandlerWithContextFactory)('PROFILE_SIDE_BAR'),
-              fetchRecentMediaIfNeeded: R,
+              createLocalApiErrorHandler: Object(D.createLocalApiErrorHandlerWithContextFactory)('PROFILE_SIDE_BAR'),
+              fetchRecentMediaIfNeeded: L,
             }
           }),
-        T = n('kGix'),
-        K = n('3XMw'),
-        G = n.n(K),
-        H = n('fs1G'),
-        W = n('q2Cp'),
-        q = n('Qwev'),
-        V = n('rHpw'),
-        X = n('3dad'),
-        z = n('v6aA'),
-        B = G.a.b327c129,
-        J = f()({}, v.a.NotAuthorizedToViewUser, { customAction: H.a }),
-        Y = (function (e) {
-          s()(n, e)
-          var t = h()(n)
-          function n() {
+        T = r('kGix'),
+        K = r('3XMw'),
+        G = r.n(K),
+        W = r('fs1G'),
+        B = r('q2Cp'),
+        J = r('Qwev'),
+        V = r('rHpw'),
+        X = r('3dad'),
+        z = r('v6aA')
+      function Z(e) {
+        var t = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (e) {
+            return !1
+          }
+        })()
+        return function () {
+          var r,
+            n = h()(e)
+          if (t) {
+            var i = h()(this).constructor
+            r = Reflect.construct(n, arguments, i)
+          } else r = n.apply(this, arguments)
+          return f()(this, r)
+        }
+      }
+      var q = G.a.b327c129,
+        Y = v()({}, O.a.NotAuthorizedToViewUser, { customAction: W.a }),
+        Q = (function (e) {
+          d()(r, e)
+          var t = Z(r)
+          function r() {
             var e
-            a()(this, n)
-            for (var r = arguments.length, i = new Array(r), o = 0; o < r; o++) i[o] = arguments[o]
+            i()(this, r)
+            for (var n = arguments.length, a = new Array(n), o = 0; o < n; o++) a[o] = arguments[o]
             return (
-              (e = t.call.apply(t, [this].concat(i))),
-              f()(d()(e), '_fetchRecentUserMedia', function () {
+              (e = t.call.apply(t, [this].concat(a))),
+              v()(u()(e), '_fetchRecentUserMedia', function () {
                 var t = e.props,
-                  n = t.createLocalApiErrorHandler,
-                  r = t.fetchRecentMediaIfNeeded,
-                  a = t.hideMediaModule,
-                  i = t.userId
-                !a && r(e.context.featureSwitches, i).catch(n(J))
+                  r = t.createLocalApiErrorHandler,
+                  n = t.fetchRecentMediaIfNeeded,
+                  i = t.hideMediaModule,
+                  a = t.userId
+                !i && n(e.context.featureSwitches, a).catch(r(Y))
               }),
               e
             )
           }
           return (
-            o()(n, [
+            o()(r, [
               {
                 key: 'componentDidUpdate',
                 value: function (e) {
@@ -168,7 +216,7 @@
                   var e = this.props.mediaFetchStatus
                   return e && e !== T.a.LOADING
                     ? this._renderSidebar()
-                    : I.a.createElement(q.a, { accessibilityLabel: 'Loading profile sidebar' })
+                    : b.a.createElement(J.a, { accessibilityLabel: 'Loading profile sidebar' })
                 },
               },
               {
@@ -176,17 +224,17 @@
                 value: function () {
                   var e = this.props,
                     t = e.hideMediaModule,
-                    n = e.userId,
-                    r = e.userScreenName,
-                    a = e.withTopicsToFollow,
-                    i = this._getImages()
-                  return I.a.createElement(
-                    b.a,
-                    { profileScreenName: r, profileUserId: n, withTopicsToFollow: a },
-                    i.length >= 2 && !t
-                      ? I.a.createElement(W.a, {
+                    r = e.userId,
+                    n = e.userScreenName,
+                    i = e.withTopicsToFollow,
+                    a = this._getImages()
+                  return b.a.createElement(
+                    I.a,
+                    { profileScreenName: n, profileUserId: r, withTopicsToFollow: i },
+                    a.length >= 2 && !t
+                      ? b.a.createElement(B.a, {
                           cacheLocationKey: 'profileSidebar',
-                          images: i,
+                          images: a,
                           singleImageMaxAspectRatio: V.a.theme.aspectRatios.landscape,
                           singleImageMinAspectRatio: V.a.theme.aspectRatios.landscape,
                         })
@@ -200,26 +248,26 @@
                   var e = this.props,
                     t = e.mediaItems
                   return e.mediaItemsWithEntry
-                    .map(function (e, n) {
-                      var r,
-                        a = e.entry,
-                        i = e.mediaItem,
+                    .map(function (e, r) {
+                      var n,
+                        i = e.entry,
+                        a = e.mediaItem,
                         o = {
-                          pathname: Z(i.expanded_url),
+                          pathname: $(a.expanded_url),
                           state: {
-                            mediaItems: { items: t, index: n },
-                            forwardPivotInfo: null === (r = a.content) || void 0 === r ? void 0 : r.forwardPivot,
+                            mediaItems: { items: t, index: r },
+                            forwardPivotInfo: null === (n = i.content) || void 0 === n ? void 0 : n.forwardPivot,
                           },
                         },
-                        c = X.a.getOriginalImage(i)
+                        c = X.a.getOriginalImage(a)
                       return (
                         c && {
                           width: c.width,
                           height: c.height,
                           url: c.url,
-                          backgroundColor: X.a.getBackgroundColor(i),
-                          cropCandidates: X.a.getCropCandidates(i),
-                          accessibilityLabel: i.ext_alt_text || B,
+                          backgroundColor: X.a.getBackgroundColor(a),
+                          cropCandidates: X.a.getCropCandidates(a),
+                          accessibilityLabel: a.ext_alt_text || q,
                           shouldShowAltLabel: !1,
                           expandedUrl: o,
                         }
@@ -229,39 +277,36 @@
                 },
               },
             ]),
-            n
+            r
           )
-        })(I.a.Component)
-      f()(Y, 'contextType', z.a)
-      var Z = function (e) {
+        })(b.a.Component)
+      v()(Q, 'contextType', z.a)
+      var $ = function (e) {
           return e.replace('https://twitter.com', '')
         },
-        Q = U(Y)
-      t.default = Q
+        ee = H(Q)
+      t.default = ee
     },
-    ulNE: function (e, t, n) {
+    ulNE: function (e, t, r) {
       'use strict'
-      var r = n('ax0f'),
-        a = n('42ly'),
-        i = n('N9G2'),
-        o = n('BIH/'),
-        c = n('lhaq'),
-        d = n('aoZ+')
-      r(
+      var n = r('ax0f'),
+        i = r('42ly'),
+        a = r('N9G2'),
+        o = r('tJVe'),
+        c = r('i7Kn'),
+        u = r('aoZ+')
+      n(
         { target: 'Array', proto: !0 },
         {
           flat: function () {
             var e = arguments.length ? arguments[0] : void 0,
-              t = i(this),
-              n = o(t),
-              r = d(t, 0)
-            return (r.length = a(r, t, t, n, 0, void 0 === e ? 1 : c(e))), r
+              t = a(this),
+              r = o(t.length),
+              n = u(t, 0)
+            return (n.length = i(n, t, t, r, 0, void 0 === e ? 1 : c(e))), n
           },
         },
       )
-    },
-    'urw/': function (e, t, n) {
-      n('7St7')('flat')
     },
   },
 ])

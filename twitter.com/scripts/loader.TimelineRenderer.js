@@ -1,28 +1,52 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [182],
+  [181],
   {
     '3GUV': function (e, t, n) {
       'use strict'
+      n('OZaJ')
       var r = n('VrFO'),
         i = n.n(r),
-        a = n('Y9Ll'),
-        o = n.n(a),
+        o = n('Y9Ll'),
+        a = n.n(o),
         s = n('5Yy7'),
         c = n.n(s),
-        l = n('2VqO'),
-        d = n.n(l),
-        u = n('ERkP'),
-        p = n.n(u),
-        h = n('rHpw'),
-        v = n('MWbm'),
-        m = (function (e) {
+        l = n('N+ot'),
+        u = n.n(l),
+        d = n('AuHH'),
+        p = n.n(d),
+        f = n('ERkP'),
+        h = n.n(f),
+        v = n('rHpw'),
+        m = n('MWbm')
+      function y(e) {
+        var t = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (e) {
+            return !1
+          }
+        })()
+        return function () {
+          var n,
+            r = p()(e)
+          if (t) {
+            var i = p()(this).constructor
+            n = Reflect.construct(r, arguments, i)
+          } else n = r.apply(this, arguments)
+          return u()(this, n)
+        }
+      }
+      var b = (function (e) {
           c()(n, e)
-          var t = d()(n)
+          var t = y(n)
           function n() {
             return i()(this, n), t.apply(this, arguments)
           }
           return (
-            o()(n, [
+            a()(n, [
               {
                 key: 'shouldComponentUpdate',
                 value: function () {
@@ -32,101 +56,126 @@
               {
                 key: 'render',
                 value: function () {
-                  return p.a.createElement(v.a, { style: f.root })
+                  return h.a.createElement(m.a, { style: _.root })
                 },
               },
             ]),
             n
           )
-        })(p.a.Component),
-        f = h.a.create(function (e) {
+        })(h.a.Component),
+        _ = v.a.create(function (e) {
           return { root: { height: 5 * e.lineHeightsPx.body } }
         })
-      t.a = m
+      t.a = b
     },
     '5UID': function (e, t, n) {
       'use strict'
+      n('OZaJ')
       var r = n('VrFO'),
         i = n.n(r),
-        a = n('Y9Ll'),
-        o = n.n(a),
+        o = n('Y9Ll'),
+        a = n.n(o),
         s = n('5Yy7'),
         c = n.n(s),
-        l = n('2VqO'),
-        d = n.n(l),
-        u = n('ERkP'),
-        p = n.n(u),
-        h = n('3XMw'),
-        v = n.n(h),
-        m = n('rHpw'),
-        f = n('+/1j'),
-        _ = n('MWbm'),
-        y = v.a.e5b0063d,
-        g = 0,
-        b = (function (e) {
+        l = n('N+ot'),
+        u = n.n(l),
+        d = n('AuHH'),
+        p = n.n(d),
+        f = n('ERkP'),
+        h = n.n(f),
+        v = n('3XMw'),
+        m = n.n(v),
+        y = n('rHpw'),
+        b = n('+/1j'),
+        _ = n('MWbm')
+      function g(e) {
+        var t = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (e) {
+            return !1
+          }
+        })()
+        return function () {
+          var n,
+            r = p()(e)
+          if (t) {
+            var i = p()(this).constructor
+            n = Reflect.construct(r, arguments, i)
+          } else n = r.apply(this, arguments)
+          return u()(this, n)
+        }
+      }
+      var w = m.a.e5b0063d,
+        E = 0,
+        O = (function (e) {
           c()(n, e)
-          var t = d()(n)
+          var t = g(n)
           function n() {
             var e
-            return i()(this, n), ((e = t.call(this))._listDomId = 'accessible-list-'.concat(g)), (g += 1), e
+            return i()(this, n), ((e = t.call(this))._listDomId = 'accessible-list-'.concat(E)), (E += 1), e
           }
           return (
-            o()(n, [
+            a()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.children,
                     n = e.title,
-                    r = y({ title: n })
-                  return p.a.createElement(
+                    r = w({ title: n })
+                  return h.a.createElement(
                     _.a,
                     { accessibilityLabelledBy: this._listDomId, accessibilityRole: 'region' },
-                    p.a.createElement(
-                      f.a,
+                    h.a.createElement(
+                      b.a,
                       {
                         accessibilityLevel: 1,
                         accessibilityRole: 'heading',
                         nativeID: this._listDomId,
-                        style: m.a.visuallyHidden,
+                        style: y.a.visuallyHidden,
                       },
                       n,
                     ),
-                    p.a.createElement(_.a, { accessibilityLabel: r }, t),
+                    h.a.createElement(_.a, { accessibilityLabel: r }, t),
                   )
                 },
               },
             ]),
             n
           )
-        })(p.a.Component)
-      t.a = b
+        })(h.a.Component)
+      t.a = O
     },
     VeNJ: function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'TimelineRenderer', function () {
-          return Ae
+          return Ve
         })
-      var r = n('yiKp'),
+      n('OZaJ'), n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('FtHn')
+      var r = n('VrFO'),
         i = n.n(r),
-        a = n('VrFO'),
-        o = n.n(a),
-        s = n('Y9Ll'),
+        o = n('Y9Ll'),
+        a = n.n(o),
+        s = n('1Pcy'),
         c = n.n(s),
-        l = n('1Pcy'),
-        d = n.n(l),
-        u = n('5Yy7'),
-        p = n.n(u),
-        h = n('2VqO'),
-        v = n.n(h),
-        m = n('KEM+'),
-        f = n.n(m),
-        _ =
-          (n('lTEL'),
-          n('m9LP'),
+        l = n('5Yy7'),
+        u = n.n(l),
+        d = n('N+ot'),
+        p = n.n(d),
+        f = n('AuHH'),
+        h = n.n(f),
+        v = n('KEM+'),
+        m = n.n(v),
+        y =
+          (n('m9LP'),
           n('7x/C'),
           n('87if'),
+          n('lTEL'),
           n('kYxP'),
           n('hBpG'),
           n('jwue'),
@@ -135,30 +184,30 @@
           n('LqLs'),
           n('KOtZ'),
           n('ejT/')),
-        y = n('ERkP'),
-        g = n.n(y),
-        b = n('5UID'),
-        C = n('6/RC'),
-        w = (n('2G9S'), n('1YZw')),
-        E = n('rxPX'),
-        k = Object(E.a)()
+        b = n('ERkP'),
+        _ = n.n(b),
+        g = n('5UID'),
+        w = n('6/RC'),
+        E = (n('2G9S'), n('1YZw')),
+        O = n('rxPX'),
+        C = Object(O.a)()
           .propsFromActions(function () {
-            return { addToast: w.b }
+            return { addToast: E.b }
           })
           .withAnalytics(),
-        I = n('KNCp'),
-        T = n('lUZE'),
-        L = (n('yH/f'), Object.freeze({ Icon: 'Icon', IconSmall: 'IconSmall', FullWidth: 'FullWidth' })),
-        S = n('caTy'),
-        R = n('rcen'),
-        A = n('TnY3'),
-        x = n('TIdA'),
-        O = n('A91F'),
+        k = n('KNCp'),
+        I = n('lUZE'),
+        T = (n('yH/f'), Object.freeze({ Icon: 'Icon', IconSmall: 'IconSmall', FullWidth: 'FullWidth' })),
+        R = n('caTy'),
+        P = n('rcen'),
+        j = n('TnY3'),
+        L = n('TIdA'),
+        S = n('A91F'),
         D = n('feu+'),
-        M = n('tI3i'),
-        N = n.n(M),
-        P = C.canUseDOM ? window.location.href : '',
-        U = (function () {
+        A = n('tI3i'),
+        x = n.n(A),
+        M = w.canUseDOM ? window.location.href : '',
+        N = (function () {
           function e() {
             var e = this
             ;(this._eventCallbacks = {}),
@@ -188,192 +237,267 @@
               return Promise.resolve(!0)
             }),
             (t.getInitialURL = function () {
-              return Promise.resolve(P)
+              return Promise.resolve(M)
             }),
             (t.openURL = function (e) {
               try {
-                return F(e), this._dispatchEvent('onOpen', e), Promise.resolve()
+                return B(e), this._dispatchEvent('onOpen', e), Promise.resolve()
               } catch (t) {
                 return Promise.reject(t)
               }
             }),
             (t._validateURL = function (e) {
-              N()('string' == typeof e, 'Invalid URL: should be a string. Was: ' + e),
-                N()(e, 'Invalid URL: cannot be empty')
+              x()('string' == typeof e, 'Invalid URL: should be a string. Was: ' + e),
+                x()(e, 'Invalid URL: cannot be empty')
             }),
             e
           )
         })(),
-        F = function (e) {
-          if (C.canUseDOM) {
+        B = function (e) {
+          if (w.canUseDOM) {
             var t = new URL(e, window.location).toString()
             window.open(t, '_blank', 'noopener')
           }
         },
-        B = new U(),
-        V = n('MWbm'),
-        H = n('oQhu'),
-        j = n('fs1G'),
-        W = (function (e) {
-          p()(n, e)
-          var t = v()(n)
-          function n() {
-            var e
-            o()(this, n)
-            for (var r = arguments.length, a = new Array(r), s = 0; s < r; s++) a[s] = arguments[s]
-            return (
-              (e = t.call.apply(t, [this].concat(a))),
-              f()(
-                d()(e),
-                '_getGraphicProps',
-                Object(H.a)(function (e, t) {
-                  var n = e
-                      ? function (t) {
-                          var n = t.style
-                          return g.a.createElement(
-                            V.a,
-                            { style: n },
-                            g.a.createElement(x.a, {
-                              accessibilityLabel: '',
-                              aspectMode: O.a.exact(e.width / e.height),
-                              image: e,
-                            }),
-                          )
-                        }
-                      : T.a,
-                    r = 'illustration'
-                  return (
-                    e && t !== L.IconSmall ? t === L.FullWidth && (r = 'illustrationFullWidth') : (r = 'icon'),
-                    { graphic: n, graphicDisplayMode: r }
-                  )
-                }),
-              ),
-              f()(d()(e), '_scribeAction', function (t, n) {
-                var r = e.props.analytics,
-                  i = n || {},
-                  a = i.action,
-                  o = i.component,
-                  s = i.element
-                r.scribe({ action: a || t, component: o || 'cover', element: s })
-              }),
-              f()(d()(e), '_handleDismiss', function () {
-                var t = e.props,
-                  n = t.dismissInfo,
-                  r = t.processCallback,
-                  i = (n || {}).callbacks
-                i &&
-                  i.forEach(function (e) {
-                    r(e)
-                  }),
-                  n && (e._scribeAction('dismiss'), e.props.onClose())
-              }),
-              f()(d()(e), '_handlePrimaryCtaClick', function () {
-                e._handleCtaClick(e.props.primaryCta, 'primary_cta')
-              }),
-              f()(d()(e), '_handleSecondaryCtaClick', function () {
-                e.props.secondaryCta && e._handleCtaClick(e.props.secondaryCta, 'secondary_cta')
-              }),
-              f()(d()(e), '_handleCtaClick', function (t, n) {
-                var r = t.callbacks,
-                  a = t.clientEventInfo,
-                  o = t.ctaBehavior,
-                  s = e.props,
-                  c = s.addToast,
-                  l = s.history,
-                  d = s.processCallback
-                if ((e.props.onClose(), e._scribeAction('click', i()({ element: n }, a)), o.dismiss)) {
-                  var u = o.dismiss
-                  u && u.feedbackMessage && c({ text: u.feedbackMessage.text })
-                }
-                if (o.navigate) {
-                  var p = o.navigate,
-                    h = p && Object(S.b)(p.url)
-                  h && (h.external ? B.openURL(h.pathname) : l.push(h.pathname))
-                }
-                r &&
-                  r.forEach(function (e) {
-                    return d(e)
-                  })
-              }),
-              e
-            )
+        F = new N(),
+        H = n('MWbm'),
+        U = n('oQhu'),
+        V = n('fs1G')
+      function W(e, t) {
+        var n = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e)
+          t &&
+            (r = r.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            n.push.apply(n, r)
+        }
+        return n
+      }
+      function z(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? W(Object(n), !0).forEach(function (t) {
+                m()(e, t, n[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : W(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+              })
+        }
+        return e
+      }
+      function G(e) {
+        var t = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (e) {
+            return !1
           }
+        })()
+        return function () {
+          var n,
+            r = h()(e)
+          if (t) {
+            var i = h()(this).constructor
+            n = Reflect.construct(r, arguments, i)
+          } else n = r.apply(this, arguments)
+          return p()(this, n)
+        }
+      }
+      var K = (function (e) {
+        u()(n, e)
+        var t = G(n)
+        function n() {
+          var e
+          i()(this, n)
+          for (var r = arguments.length, o = new Array(r), a = 0; a < r; a++) o[a] = arguments[a]
           return (
-            c()(n, [
-              {
-                key: 'componentDidMount',
-                value: function () {
-                  this.props.onImpression && this.props.onImpression()
-                },
-              },
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.details,
-                    n = e.dismissInfo,
-                    r = e.displayType,
-                    i = e.image,
-                    a = e.imageDisplayType,
-                    o = e.primaryCta,
-                    s = e.primaryText,
-                    c = e.secondaryCta,
-                    l = e.secondaryText,
-                    d = e.type,
-                    u = g.a.createElement(R.a, { entities: s.entities, text: s.text }),
-                    p = l ? g.a.createElement(R.a, { entities: l.entities, text: l.text }) : null
-                  if (d === I.a.Full) {
-                    var h = t ? g.a.createElement(R.a, { entities: t.entities, text: t.text }) : null,
-                      v = this._getGraphicProps(i, a),
-                      m = v.graphic,
-                      f = v.graphicDisplayMode
-                    return g.a.createElement(D.a, {
-                      actionLabel: o.text,
-                      footer: h,
-                      graphic: m,
-                      graphicDisplayMode: f,
-                      headline: u,
-                      isFullHeightOnMobile: !n && 'CenterCover' !== r,
-                      onAction: this._handlePrimaryCtaClick,
-                      onClose: this._handleDismiss,
-                      onTertiaryAction: this._handleSecondaryCtaClick,
-                      subtext: p,
-                      tertiaryActionLabel: c && c.text,
-                      withCloseButton: !!n,
-                    })
-                  }
-                  return g.a.createElement(D.a, {
-                    actionLabel: o.text,
-                    graphicDisplayMode: 'none',
-                    headline: u,
-                    onAction: this._handlePrimaryCtaClick,
-                    onClose: j.a,
-                    onSecondaryAction: this._handleSecondaryCtaClick,
-                    secondaryActionLabel: c && c.text,
-                    subtext: p,
-                    withCloseButton: !1,
-                  })
-                },
-              },
-            ]),
-            n
+            (e = t.call.apply(t, [this].concat(o))),
+            m()(
+              c()(e),
+              '_getGraphicProps',
+              Object(U.a)(function (e, t) {
+                var n = e
+                    ? function (t) {
+                        var n = t.style
+                        return _.a.createElement(
+                          H.a,
+                          { style: n },
+                          _.a.createElement(L.a, {
+                            accessibilityLabel: '',
+                            aspectMode: S.a.exact(e.width / e.height),
+                            image: e,
+                          }),
+                        )
+                      }
+                    : I.a,
+                  r = 'illustration'
+                return (
+                  e && t !== T.IconSmall ? t === T.FullWidth && (r = 'illustrationFullWidth') : (r = 'icon'),
+                  { graphic: n, graphicDisplayMode: r }
+                )
+              }),
+            ),
+            m()(c()(e), '_scribeAction', function (t, n) {
+              var r = e.props.analytics,
+                i = n || {},
+                o = i.action,
+                a = i.component,
+                s = i.element
+              r.scribe({ action: o || t, component: a || 'cover', element: s })
+            }),
+            m()(c()(e), '_handleDismiss', function () {
+              var t = e.props,
+                n = t.dismissInfo,
+                r = t.processCallback,
+                i = (n || {}).callbacks
+              i &&
+                i.forEach(function (e) {
+                  r(e)
+                }),
+                n && (e._scribeAction('dismiss'), e.props.onClose())
+            }),
+            m()(c()(e), '_handlePrimaryCtaClick', function () {
+              e._handleCtaClick(e.props.primaryCta, 'primary_cta')
+            }),
+            m()(c()(e), '_handleSecondaryCtaClick', function () {
+              e.props.secondaryCta && e._handleCtaClick(e.props.secondaryCta, 'secondary_cta')
+            }),
+            m()(c()(e), '_handleCtaClick', function (t, n) {
+              var r = t.callbacks,
+                i = t.clientEventInfo,
+                o = t.ctaBehavior,
+                a = e.props,
+                s = a.addToast,
+                c = a.history,
+                l = a.processCallback
+              if ((e.props.onClose(), e._scribeAction('click', z({ element: n }, i)), o.dismiss)) {
+                var u = o.dismiss
+                u && u.feedbackMessage && s({ text: u.feedbackMessage.text })
+              }
+              if (o.navigate) {
+                var d = o.navigate,
+                  p = d && Object(R.b)(d.url)
+                p && (p.external ? F.openURL(p.pathname) : c.push(p.pathname))
+              }
+              r &&
+                r.forEach(function (e) {
+                  return l(e)
+                })
+            }),
+            e
           )
-        })(g.a.PureComponent)
-      f()(W, 'defaultProps', { imageDisplayType: L.Icon })
-      var K = Object(A.a)(k(W)),
-        z = { component: 'cover', action: 'impression' },
-        G = function (e) {
+        }
+        return (
+          a()(n, [
+            {
+              key: 'componentDidMount',
+              value: function () {
+                this.props.onImpression && this.props.onImpression()
+              },
+            },
+            {
+              key: 'render',
+              value: function () {
+                var e = this.props,
+                  t = e.details,
+                  n = e.dismissInfo,
+                  r = e.displayType,
+                  i = e.image,
+                  o = e.imageDisplayType,
+                  a = e.primaryCta,
+                  s = e.primaryText,
+                  c = e.secondaryCta,
+                  l = e.secondaryText,
+                  u = e.type,
+                  d = _.a.createElement(P.a, { entities: s.entities, text: s.text }),
+                  p = l ? _.a.createElement(P.a, { entities: l.entities, text: l.text }) : null
+                if (u === k.a.Full) {
+                  var f = t ? _.a.createElement(P.a, { entities: t.entities, text: t.text }) : null,
+                    h = this._getGraphicProps(i, o),
+                    v = h.graphic,
+                    m = h.graphicDisplayMode
+                  return _.a.createElement(D.a, {
+                    actionLabel: a.text,
+                    footer: f,
+                    graphic: v,
+                    graphicDisplayMode: m,
+                    headline: d,
+                    isFullHeightOnMobile: !n && 'CenterCover' !== r,
+                    onAction: this._handlePrimaryCtaClick,
+                    onClose: this._handleDismiss,
+                    onTertiaryAction: this._handleSecondaryCtaClick,
+                    subtext: p,
+                    tertiaryActionLabel: c && c.text,
+                    withCloseButton: !!n,
+                  })
+                }
+                return _.a.createElement(D.a, {
+                  actionLabel: a.text,
+                  graphicDisplayMode: 'none',
+                  headline: d,
+                  onAction: this._handlePrimaryCtaClick,
+                  onClose: V.a,
+                  onSecondaryAction: this._handleSecondaryCtaClick,
+                  secondaryActionLabel: c && c.text,
+                  subtext: p,
+                  withCloseButton: !1,
+                })
+              },
+            },
+          ]),
+          n
+        )
+      })(_.a.PureComponent)
+      m()(K, 'defaultProps', { imageDisplayType: T.Icon })
+      var Y = Object(j.a)(C(K))
+      function Z(e, t) {
+        var n = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e)
+          t &&
+            (r = r.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            n.push.apply(n, r)
+        }
+        return n
+      }
+      function J(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? Z(Object(n), !0).forEach(function (t) {
+                m()(e, t, n[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : Z(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+              })
+        }
+        return e
+      }
+      var q = { component: 'cover', action: 'impression' },
+        X = function (e) {
           var t,
             n = e.activeCover,
             r = e.clearActiveCover,
-            a = e.processCallback,
+            i = e.processCallback,
             o = e.scribeAction,
-            s = (function (e, t) {
-              var n = i()(i()({}, e), z)
+            a = (function (e, t) {
+              var n = J(J({}, e), q)
               return (
                 t &&
-                  (n = i()(
-                    i()({}, n),
+                  (n = J(
+                    J({}, n),
                     {},
                     {
                       component: t.component || n.component,
@@ -384,27 +508,27 @@
                 n
               )
             })(e.scribeNamespace, n.clientEventInfo),
-            c = function () {
+            s = function () {
               var e = n.cover.impressionCallbacks
               e &&
                 e.forEach(function (e) {
-                  return a(e)
+                  return i(e)
                 }),
-                o(s)
+                o(a)
             }
           return 'full' === n.type
             ? ((t = n.cover),
-              g.a.createElement(K, {
+              _.a.createElement(Y, {
                 details: t.details || void 0,
                 dismissInfo: t.dismissInfo,
                 displayType: t.displayType,
                 image: t.image,
                 imageDisplayType: t.imageDisplayType || void 0,
                 onClose: r,
-                onImpression: c,
+                onImpression: s,
                 primaryCta: t.primaryCoverCta,
                 primaryText: t.primaryText,
-                processCallback: a,
+                processCallback: i,
                 secondaryCta: t.secondaryCoverCta,
                 secondaryText: t.secondaryText,
                 type: 'full',
@@ -412,15 +536,15 @@
             : 'half' === n.type
             ? (function (e) {
                 var t = 'CenterCover' === e.displayType ? 'full' : 'half'
-                return g.a.createElement(K, {
+                return _.a.createElement(Y, {
                   displayType: e.displayType,
                   image: e.coverImage ? e.coverImage.image : void 0,
                   imageDisplayType: e.coverImage ? e.coverImage.imageDisplayType : void 0,
                   onClose: r,
-                  onImpression: c,
+                  onImpression: s,
                   primaryCta: e.primaryCoverCta,
                   primaryText: e.primaryText,
-                  processCallback: a,
+                  processCallback: i,
                   secondaryCta: e.secondaryCoverCta,
                   secondaryText: e.secondaryText,
                   type: t,
@@ -428,22 +552,49 @@
               })(n.cover)
             : null
         },
-        q = n('MDbM'),
-        Y = (n('+KXO'), n('Qyxo')),
-        Z = (function () {
+        Q = n('MDbM'),
+        $ = n('Qyxo')
+      function ee(e, t) {
+        var n = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e)
+          t &&
+            (r = r.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            n.push.apply(n, r)
+        }
+        return n
+      }
+      function te(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? ee(Object(n), !0).forEach(function (t) {
+                m()(e, t, n[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : ee(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+              })
+        }
+        return e
+      }
+      var ne = (function () {
           function e() {
-            o()(this, e), (this._lingerScribed = {}), (this._appearance = {})
+            i()(this, e), (this._lingerScribed = {}), (this._appearance = {})
           }
           return (
-            c()(e, [
+            a()(e, [
               {
                 key: 'processPositioningUpdate',
                 value: function (e, t) {
                   var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : Date.now(),
-                    r = J(e, t),
+                    r = re(e, t),
                     i = this._lingerTransition(r, n),
-                    a = X(e, t)
-                  return { lingers: i, impressions: a }
+                    o = ie(e, t)
+                  return { lingers: i, impressions: o }
                 },
               },
               {
@@ -472,15 +623,15 @@
                 key: '_detectAllLingerEvents',
                 value: function (e, t) {
                   var n = this
-                  return Object.keys(e).reduce(function (r, a) {
-                    var o = e[a],
-                      s = o.lingered,
-                      c = o.start
+                  return Object.keys(e).reduce(function (r, i) {
+                    var o = e[i],
+                      a = o.lingered,
+                      s = o.start
                     return (
-                      !s &&
-                        t - c >= 500 &&
-                        (r.push(a),
-                        n._appearance[a] && (n._appearance[a] = i()(i()({}, n._appearance[a]), {}, { lingered: !0 }))),
+                      !a &&
+                        t - s >= 500 &&
+                        (r.push(i),
+                        n._appearance[i] && (n._appearance[i] = te(te({}, n._appearance[i]), {}, { lingered: !0 }))),
                       r
                     )
                   }, [])
@@ -490,13 +641,13 @@
                 key: '_detectScribeLingerEvents',
                 value: function (e, t, n) {
                   var r = this
-                  return Object.keys(e).reduce(function (i, a) {
-                    var o = e[a].start
+                  return Object.keys(e).reduce(function (i, o) {
+                    var a = e[o].start
                     return (
-                      !t[a] &&
-                        !r._lingerScribed[a] &&
-                        n - o >= 500 &&
-                        ((r._lingerScribed[a] = !0), i.push({ id: a, start: o, end: n })),
+                      !t[o] &&
+                        !r._lingerScribed[o] &&
+                        n - a >= 500 &&
+                        ((r._lingerScribed[o] = !0), i.push({ id: o, start: a, end: n })),
                       i
                     )
                   }, [])
@@ -506,39 +657,67 @@
             e
           )
         })(),
-        J = function (e, t) {
-          return Object(Y.a)(e, function (e) {
+        re = function (e, t) {
+          return Object($.a)(e, function (e) {
             var n = e.id,
               r = e.rectangle
-            return Q(r, t) >= 0.5 * r.getHeight() ? n : void 0
+            return oe(r, t) >= 0.5 * r.getHeight() ? n : void 0
           })
         },
-        X = function (e, t) {
-          return Object(Y.a)(e, function (e) {
+        ie = function (e, t) {
+          return Object($.a)(e, function (e) {
             var n = e.id,
               r = e.rectangle
-            return Q(r, t) >= 0.99 ? { id: n, relativeElementHeight: $(r.getHeight(), t.getHeight()) } : void 0
+            return oe(r, t) >= 0.99 ? { id: n, relativeElementHeight: ae(r.getHeight(), t.getHeight()) } : void 0
           })
         },
-        Q = function (e, t) {
+        oe = function (e, t) {
           return Math.max(0, Math.min(e.getBottom(), t.getBottom()) - Math.max(e.getTop(), t.getTop()))
         },
-        $ = function (e, t) {
+        ae = function (e, t) {
           return Math.floor((e / t) * 1e5)
         },
-        ee = n('ddV6'),
-        te = n.n(ee),
-        ne = (n('hCOa'), n('LW0h'), n('z84I'), n('ZVkB'), { threshold: [0.01, 0.5] }),
-        re = (function () {
+        se = n('ddV6'),
+        ce = n.n(se)
+      n('hCOa'), n('z84I'), n('ZVkB')
+      function le(e, t) {
+        var n = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e)
+          t &&
+            (r = r.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            n.push.apply(n, r)
+        }
+        return n
+      }
+      function ue(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? le(Object(n), !0).forEach(function (t) {
+                m()(e, t, n[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : le(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+              })
+        }
+        return e
+      }
+      var de = { threshold: [0.01, 0.5] },
+        pe = (function () {
           function e(t) {
             var n = this
-            o()(this, e),
-              f()(this, '_itemsUnderObservation', {}),
-              f()(this, '_lingerCandidates', new Map()),
-              f()(this, '_reactivityCandidates', new Map()),
-              f()(this, '_lingerEvents', new Map()),
-              f()(this, '_impressionEvents', new Map()),
-              f()(this, 'getLingerEvents', function () {
+            i()(this, e),
+              m()(this, '_itemsUnderObservation', {}),
+              m()(this, '_lingerCandidates', new Map()),
+              m()(this, '_reactivityCandidates', new Map()),
+              m()(this, '_lingerEvents', new Map()),
+              m()(this, '_impressionEvents', new Map()),
+              m()(this, 'getLingerEvents', function () {
                 ;(arguments.length > 0 && void 0 !== arguments[0]) || Date.now()
                 var e = Array.from(n._lingerEvents.keys())
                 return e
@@ -547,14 +726,14 @@
                   })
                   .filter(Boolean)
               }),
-              f()(this, '_getLingerEventForId', function (e) {
+              m()(this, '_getLingerEventForId', function (e) {
                 var t = n._lingerEvents.get(e)
                 if (t && !t.scribed)
                   return (
-                    n._lingerEvents.set(e, i()(i()({}, t), {}, { scribed: !0 })), { id: e, start: t.start, end: t.end }
+                    n._lingerEvents.set(e, ue(ue({}, t), {}, { scribed: !0 })), { id: e, start: t.start, end: t.end }
                   )
               }),
-              f()(this, '_getOngoingLingerEvents', function (e) {
+              m()(this, '_getOngoingLingerEvents', function (e) {
                 var t = []
                 return (
                   n._lingerCandidates.forEach(function (n, r) {
@@ -563,43 +742,43 @@
                   t
                 )
               }),
-              f()(this, '_processIntersectionEntries', function (e) {
+              m()(this, '_processIntersectionEntries', function (e) {
                 var t = Date.now()
                 e.forEach(function (e) {
                   var r = Object.entries(n._itemsUnderObservation).find(function (t) {
-                    var n = te()(t, 2)
+                    var n = ce()(t, 2)
                     n[0]
                     return n[1] === e.target
                   })
                   if (r) {
                     var i = r[0],
-                      a = e.boundingClientRect,
-                      o = e.intersectionRatio,
+                      o = e.boundingClientRect,
+                      a = e.intersectionRatio,
                       s = e.rootBounds
-                    if (o >= 0.01) {
-                      var c = null != a && null != s
-                      n._createImpressionCandidate(i, c ? $(a.height, s.height) : void 0)
+                    if (a >= 0.01) {
+                      var c = null != o && null != s
+                      n._createImpressionCandidate(i, c ? ae(o.height, s.height) : void 0)
                     }
-                    o >= 0.5
+                    a >= 0.5
                       ? (n._createLingerCandidate(i, t), n._createReactivityCandidate(i, t))
                       : (n._transitionCandidateToLingerEvent(i, t), n._removeReactivityCandidate(i))
                   }
                 })
               }),
-              f()(this, '_createImpressionCandidate', function (e, t) {
+              m()(this, '_createImpressionCandidate', function (e, t) {
                 n._impressionEvents.set(e, { relativeElementHeight: t })
               }),
-              f()(this, '_createLingerCandidate', function (e, t) {
+              m()(this, '_createLingerCandidate', function (e, t) {
                 n._lingerCandidates.has(e) || n._lingerCandidates.set(e, t)
               }),
-              f()(this, '_transitionCandidateToLingerEvent', function (e, t) {
+              m()(this, '_transitionCandidateToLingerEvent', function (e, t) {
                 var r = n._lingerCandidates.get(e)
                 void 0 === r ||
                   n._lingerEvents.has(e) ||
                   (t - r >= 500 && n._lingerEvents.set(e, { start: r, end: t, scribed: !1 })),
                   n._lingerCandidates.delete(e)
               }),
-              f()(this, '_createReactivityCandidate', function (e, t) {
+              m()(this, '_createReactivityCandidate', function (e, t) {
                 if (!n._reactivityCandidates.has(e)) {
                   var r = window.setTimeout(function () {
                     n._reactivityCallback(e), n._reactivityCandidates.delete(e)
@@ -607,16 +786,16 @@
                   n._reactivityCandidates.set(e, r)
                 }
               }),
-              f()(this, '_removeReactivityCandidate', function (e) {
+              m()(this, '_removeReactivityCandidate', function (e) {
                 window.clearTimeout(n._reactivityCandidates.get(e)), n._reactivityCandidates.delete(e)
               }),
               null != t && t.root && t.root === window.document && (t.root = null)
-            var r = i()(i()({}, ne), t)
+            var r = ue(ue({}, de), t)
             ;(this._observer = new IntersectionObserver(this._processIntersectionEntries, r)),
-              (this._reactivityCallback = (t && t.reactivityCallback) || j.a)
+              (this._reactivityCallback = (t && t.reactivityCallback) || V.a)
           }
           return (
-            c()(e, [
+            a()(e, [
               {
                 key: 'observe',
                 value: function (e, t) {
@@ -642,7 +821,7 @@
                 key: 'getImpressionEvents',
                 value: function () {
                   var e = Array.from(this._impressionEvents, function (e) {
-                    var t = te()(e, 2)
+                    var t = ce()(e, 2)
                     return { id: t[0], relativeElementHeight: t[1].relativeElementHeight }
                   })
                   return this._impressionEvents.clear(), e
@@ -661,96 +840,144 @@
             e
           )
         })(),
-        ie = n('LFzM'),
-        ae = function (e) {
+        fe = n('LFzM'),
+        he = function (e) {
           var t = e.children,
             n = e.impressionTracker
-          return n ? g.a.createElement(ie.a.Provider, { value: { impressionTracker: n } }, t) : t
+          return n ? _.a.createElement(fe.a.Provider, { value: { impressionTracker: n } }, t) : t
         },
-        oe = n('3GUV'),
-        se = n('v//M'),
-        ce = n('rHpw'),
-        le = n('VPAj'),
-        de = n('0zXz'),
-        ue = Object(le.a)(g.a.createElement(oe.a, null)),
-        pe = function (e) {
+        ve = n('3GUV'),
+        me = n('v//M'),
+        ye = n('rHpw'),
+        be = n('VPAj'),
+        _e = n('0zXz'),
+        ge = Object(be.a)(_.a.createElement(ve.a, null)),
+        we = function (e) {
           var t = e.bottomFetchStatus,
             n = e.onBottomRetry,
             r = e.withEndOfContent
-          return g.a.createElement(
-            V.a,
-            { style: r && he.footer },
-            g.a.createElement(se.a, { fetchStatus: t, onRequestRetry: n, render: r ? ue : de.a }),
+          return _.a.createElement(
+            H.a,
+            { style: r && Ee.footer },
+            _.a.createElement(me.a, { fetchStatus: t, onRequestRetry: n, render: r ? ge : _e.a }),
           )
         },
-        he = ce.a.create(function (e) {
+        Ee = ye.a.create(function (e) {
           return { footer: { height: 5 * e.lineHeightsPx.body } }
         }),
-        ve = g.a.memo(pe),
-        me = n('xjVt'),
-        fe = n('EUHl'),
-        _e = n('IG4P'),
-        ye = n('iBK2'),
-        ge = n('pbku'),
-        be = n('aITJ'),
-        Ce = n('aWzz'),
-        we = n('iChn'),
-        Ee = n('8UdT'),
-        ke = n('cFgU'),
-        Ie = n('WA1W'),
-        Te = function (e) {
+        Oe = _.a.memo(we),
+        Ce = n('xjVt'),
+        ke = n('EUHl'),
+        Ie = n('IG4P'),
+        Te = n('iBK2'),
+        Re = n('pbku'),
+        Pe = n('aITJ'),
+        je = n('aWzz'),
+        Le = n('iChn'),
+        Se = n('8UdT'),
+        De = n('cFgU'),
+        Ae = n('WA1W')
+      function xe(e, t) {
+        var n = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e)
+          t &&
+            (r = r.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            n.push.apply(n, r)
+        }
+        return n
+      }
+      function Me(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? xe(Object(n), !0).forEach(function (t) {
+                m()(e, t, n[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : xe(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+              })
+        }
+        return e
+      }
+      function Ne(e) {
+        var t = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (e) {
+            return !1
+          }
+        })()
+        return function () {
+          var n,
+            r = h()(e)
+          if (t) {
+            var i = h()(this).constructor
+            n = Reflect.construct(r, arguments, i)
+          } else n = r.apply(this, arguments)
+          return p()(this, n)
+        }
+      }
+      var Be = function (e) {
           return e.entryId
         },
-        Le = function (e) {
+        Fe = function (e) {
           return e.sortIndex
         }
-      var Se = new Map(),
-        Re = function (e) {
+      var He = new Map(),
+        Ue = function (e) {
           switch (e) {
-            case Ee.b.Tweet:
-              return be.b.isDesktopOS() ? 250 : 400
-            case Ee.a.ModuleImpressionPlaceholder:
+            case Se.b.Tweet:
+              return Pe.b.isDesktopOS() ? 250 : 400
+            case Se.a.ModuleImpressionPlaceholder:
               return 0
             default:
               return 100
           }
         },
-        Ae = (function (e) {
-          p()(n, e)
-          var t = v()(n)
+        Ve = (function (e) {
+          u()(n, e)
+          var t = Ne(n)
           function n(e, r) {
-            var a, s
+            var o, a
             return (
-              o()(this, n),
-              (a = t.call(this, e, r)),
-              f()(d()(a), '_promotedTweetDistanceMap', new Map()),
-              f()(d()(a), '_renderFooter', function () {
-                var e = a.props,
+              i()(this, n),
+              (o = t.call(this, e, r)),
+              m()(c()(o), '_promotedTweetDistanceMap', new Map()),
+              m()(c()(o), '_renderFooter', function () {
+                var e = o.props,
                   t = e.bottomFetchStatus,
                   n = e.footer,
                   r = void 0 === n ? null : n,
                   i = e.onBottomRetry
                 return e.showLoadingFooter
-                  ? g.a.createElement(
-                      g.a.Fragment,
+                  ? _.a.createElement(
+                      _.a.Fragment,
                       null,
-                      g.a.createElement(ve, { bottomFetchStatus: t, onBottomRetry: i, withEndOfContent: !r }),
+                      _.a.createElement(Oe, { bottomFetchStatus: t, onBottomRetry: i, withEndOfContent: !r }),
                       r,
                     )
                   : r
               }),
-              f()(d()(a), '_refreshControlWrapper', function (e) {
-                var t = a.props,
+              m()(c()(o), '_refreshControlWrapper', function (e) {
+                var t = o.props,
                   n = t.canRefresh,
                   r = t.onRefresh,
                   i = t.refreshControl,
-                  o = t.topFetchStatus
-                return i ? g.a.createElement(i, { canRefresh: n, isRefreshing: o === q.a.LOADING, onRefresh: r }, e) : e
+                  a = t.topFetchStatus
+                return i ? _.a.createElement(i, { canRefresh: n, isRefreshing: a === Q.a.LOADING, onRefresh: r }, e) : e
               }),
-              f()(
-                d()(a),
+              m()(
+                c()(o),
                 '_getCellRenderer',
-                Object(H.a)(function (e, t) {
+                Object(U.a)(function (e, t) {
                   var n,
                     r = {
                       module: t,
@@ -760,193 +987,193 @@
                     }
                   return (n = function (t, n) {
                     var i = e.getHandler(t),
-                      a = e.getDisplayType(t) || void 0
-                    return i && i.render ? i.render(t, r, n, a) : null
+                      o = e.getDisplayType(t) || void 0
+                    return i && i.render ? i.render(t, r, n, o) : null
                   })
                 }),
               ),
-              f()(
-                d()(a),
+              m()(
+                c()(o),
                 '_getInitialFocusedEntry',
-                Object(H.a)(function (e, t) {
+                Object(U.a)(function (e, t) {
                   return t && e.find(t)
                 }),
               ),
-              f()(
-                d()(a),
+              m()(
+                c()(o),
                 '_createEntryIndex',
-                Object(H.a)(function (e) {
-                  return Object(we.a)(e, function (e) {
+                Object(U.a)(function (e) {
+                  return Object(Le.a)(e, function (e) {
                     return e.entryId
                   })
                 }),
               ),
-              f()(d()(a), '_handleBeforeWindowUnload', function () {
-                a._flushLingerScribes()
+              m()(c()(o), '_handleBeforeWindowUnload', function () {
+                o._flushLingerScribes()
               }),
-              f()(d()(a), '_handleKeyboardRefresh', function () {
-                a.refreshOrGoTop(!0)
+              m()(c()(o), '_handleKeyboardRefresh', function () {
+                o.refreshOrGoTop(!0)
               }),
-              f()(d()(a), 'scrollToTop', function (e) {
-                if (a._scroller) {
-                  var t = a.props.applyNewTweetsBarInstructions
-                  t && t(), a._scroller.scrollToNewest(e)
+              m()(c()(o), 'scrollToTop', function (e) {
+                if (o._scroller) {
+                  var t = o.props.applyNewTweetsBarInstructions
+                  t && t(), o._scroller.scrollToNewest(e)
                 }
               }),
-              f()(
-                d()(a),
+              m()(
+                c()(o),
                 '_handleAtBottom',
-                a._proximityHandler(function () {
-                  a.props.onAtBottom && a.props.onAtBottom()
+                o._proximityHandler(function () {
+                  o.props.onAtBottom && o.props.onAtBottom()
                 }),
               ),
-              f()(
-                d()(a),
+              m()(
+                c()(o),
                 '_handleNearBottom',
-                a._proximityHandler(function () {
-                  a.props.onNearBottom()
+                o._proximityHandler(function () {
+                  o.props.onNearBottom()
                 }),
               ),
-              f()(
-                d()(a),
+              m()(
+                c()(o),
                 '_handleNearTop',
-                a._proximityHandler(function () {
-                  ;(0, a.props.onNearTop)()
+                o._proximityHandler(function () {
+                  ;(0, o.props.onNearTop)()
                 }),
               ),
-              f()(
-                d()(a),
+              m()(
+                c()(o),
                 '_handleAtTop',
-                a._proximityHandler(function () {
-                  var e = a.props,
+                o._proximityHandler(function () {
+                  var e = o.props,
                     t = e.onAtTop,
                     n = e.removeAlert,
                     r = e.richScribeAction,
-                    o = e.scribeNamespace
-                  n && n(), t && t(), r(i()(i()({}, o), {}, { component: 'stream', element: 'top', action: 'show' }))
+                    i = e.scribeNamespace
+                  n && n(), t && t(), r(Me(Me({}, i), {}, { component: 'stream', element: 'top', action: 'show' }))
                 }),
               ),
-              f()(
-                d()(a),
+              m()(
+                c()(o),
                 '_handleItemsRendered',
-                a._proximityHandler(function (e) {
+                o._proximityHandler(function (e) {
                   var t = e.positions,
                     n = e.viewport
-                  if ((a.props.onEntriesRendered && a.props.onEntriesRendered(), a._V2ImpressionsEnabled()))
-                    a._handleProcessLingerAndImpressionEvents()
+                  if ((o.props.onEntriesRendered && o.props.onEntriesRendered(), o._V2ImpressionsEnabled()))
+                    o._handleProcessLingerAndImpressionEvents()
                   else {
-                    var r = a._impressionTracker.processPositioningUpdate(t, n),
+                    var r = o._impressionTracker.processPositioningUpdate(t, n),
                       i = r.impressions,
-                      o = r.lingers
-                    a._scribeLingerEvents(o.scribeLingerEvents),
-                      a._handleOnLingerEvents(o.allLingerIds),
-                      a._scribeImpressionEvents(i)
+                      a = r.lingers
+                    o._scribeLingerEvents(a.scribeLingerEvents),
+                      o._handleOnLingerEvents(a.allLingerIds),
+                      o._scribeImpressionEvents(i)
                   }
                 }),
               ),
-              f()(d()(a), '_scribeImpressionEvents', function (e) {
+              m()(c()(o), '_scribeImpressionEvents', function (e) {
                 var t,
-                  n = a._getEntryIndex(),
+                  n = o._getEntryIndex(),
                   r =
-                    null === (t = a.context.featureSwitches) || void 0 === t
+                    null === (t = o.context.featureSwitches) || void 0 === t
                       ? void 0
                       : t.isTrue('responsive_web_element_size_impression_scribe_enabled'),
-                  i = Object(Y.a)(e, function (e) {
+                  i = Object($.a)(e, function (e) {
                     var t = n[e.id]
                     return null != t ? { entry: t, relativeElementHeight: r ? e.relativeElementHeight : void 0 } : null
                   })
-                a._scribeNewEntries(i)
+                o._scribeNewEntries(i)
               }),
-              f()(d()(a), '_handleProcessLingerAndImpressionEvents', function () {
-                if (a._impressionTrackerV2) {
+              m()(c()(o), '_handleProcessLingerAndImpressionEvents', function () {
+                if (o._impressionTrackerV2) {
                   var e,
-                    t = a._impressionTrackerV2.getLingerEvents()
-                  a._scribeLingerEvents(t)
+                    t = o._impressionTrackerV2.getLingerEvents()
+                  o._scribeLingerEvents(t)
                   var n =
-                    (null === (e = a._impressionTrackerV2) || void 0 === e ? void 0 : e.getImpressionEvents()) || []
-                  a._scribeImpressionEvents(n)
+                    (null === (e = o._impressionTrackerV2) || void 0 === e ? void 0 : e.getImpressionEvents()) || []
+                  o._scribeImpressionEvents(n)
                 }
               }),
-              f()(d()(a), '_handleOnLingerEvents', function (e) {
+              m()(c()(o), '_handleOnLingerEvents', function (e) {
                 e.forEach(function (e) {
-                  return a._handleOnLingerEvent(e)
+                  return o._handleOnLingerEvent(e)
                 })
               }),
-              f()(d()(a), '_handleOnLingerEvent', function (e) {
-                var t = a.props.applyReactionInstructions,
-                  n = a._getEntryIndex()[e]
-                n && t({ entry: n, triggerName: ge.a.ON_LINGER })
+              m()(c()(o), '_handleOnLingerEvent', function (e) {
+                var t = o.props.applyReactionInstructions,
+                  n = o._getEntryIndex()[e]
+                n && t({ entry: n, triggerName: Re.a.ON_LINGER })
               }),
-              f()(d()(a), '_handlePositionRestored', function () {
-                a._positionedRestored = !0
+              m()(c()(o), '_handlePositionRestored', function () {
+                o._positionedRestored = !0
               }),
-              f()(
-                d()(a),
+              m()(
+                c()(o),
                 '_scheduleNewEntriesScribing',
-                ((s = function (e) {
-                  var t = a.props,
+                ((a = function (e) {
+                  var t = o.props,
                     n = t.richScribeAction,
                     r = t.scribeNamespace,
-                    o = a._buildStreamScribeData(e)
-                  o.length > 0 && n(i()(i()({}, r), {}, { component: 'stream', action: 'results' }), { items: o })
+                    i = o._buildStreamScribeData(e)
+                  i.length > 0 && n(Me(Me({}, r), {}, { component: 'stream', action: 'results' }), { items: i })
                 }),
-                C.canUseDOM && window.requestIdleCallback
+                w.canUseDOM && window.requestIdleCallback
                   ? function (e) {
                       var t = window.requestIdleCallback(function () {
-                        return s(e)
+                        return a(e)
                       })
                       return function () {
                         return window.cancelIdleCallback(t)
                       }
                     }
-                  : C.canUseDOM && window.requestAnimationFrame
+                  : w.canUseDOM && window.requestAnimationFrame
                   ? function (e) {
                       var t = window.requestAnimationFrame(function () {
-                        return s(e)
+                        return a(e)
                       })
                       return function () {
                         return window.cancelAnimationFrame(t)
                       }
                     }
                   : function () {
-                      return j.a
+                      return V.a
                     }),
               ),
-              f()(d()(a), '_setScroller', function (e) {
-                a._scroller = e
+              m()(c()(o), '_setScroller', function (e) {
+                o._scroller = e
               }),
-              f()(d()(a), '_V2ImpressionsEnabled', function () {
+              m()(c()(o), '_V2ImpressionsEnabled', function () {
                 var e
                 return (
-                  C.canUseDOM &&
-                  (null === (e = a.context.featureSwitches) || void 0 === e
+                  w.canUseDOM &&
+                  (null === (e = o.context.featureSwitches) || void 0 === e
                     ? void 0
                     : e.isTrue('responsive_web_linger_refactor_enabled'))
                 )
               }),
-              f()(d()(a), '_newImpressionTrackerV2', function () {
-                return a._V2ImpressionsEnabled() && window.IntersectionObserver
-                  ? new re({
-                      root: a.context.viewport.getViewport(),
-                      rootMargin: a.context.viewport.getRootMargin(),
-                      reactivityCallback: a._handleOnLingerEvent,
+              m()(c()(o), '_newImpressionTrackerV2', function () {
+                return o._V2ImpressionsEnabled() && window.IntersectionObserver
+                  ? new pe({
+                      root: o.context.viewport.getViewport(),
+                      rootMargin: o.context.viewport.getRootMargin(),
+                      reactivityCallback: o._handleOnLingerEvent,
                     })
                   : void 0
               }),
-              (a._impressionTracker = new Z()),
-              (a._streamScribeCancelCallbacks = []),
-              (a._impressionTrackerV2 = a._newImpressionTrackerV2()),
-              a
+              (o._impressionTracker = new ne()),
+              (o._streamScribeCancelCallbacks = []),
+              (o._impressionTrackerV2 = o._newImpressionTrackerV2()),
+              o
             )
           }
           return (
-            c()(n, [
+            a()(n, [
               {
                 key: 'UNSAFE_componentWillReceiveProps',
                 value: function (e) {
                   this.props.timelineId !== e.timelineId &&
                     (this._flushLingerScribes(),
-                    (this._impressionTracker = new Z()),
+                    (this._impressionTracker = new ne()),
                     this._impressionTrackerV2 && this._impressionTrackerV2.disconnect(),
                     (this._impressionTrackerV2 = this._newImpressionTrackerV2()))
                 },
@@ -995,40 +1222,40 @@
                     n = t.anchoring,
                     r = t.entries,
                     i = t.handlerRegistry,
-                    a = t.header,
-                    o = t.isInitialFocusEntry,
+                    o = t.header,
+                    a = t.isInitialFocusEntry,
                     s = t.module,
                     c = t.nearStartProximityRatio,
                     l = t.renderEmptyState,
-                    d = t.timelineId,
-                    u = t.title,
+                    u = t.timelineId,
+                    d = t.title,
                     p = t.withKeyboardShortcuts,
-                    h = t.withoutHeadroom,
-                    v = this.props.scroller,
-                    m = this._getInitialFocusedEntry(r, o)
+                    f = t.withoutHeadroom,
+                    h = this.props.scroller,
+                    v = this._getInitialFocusedEntry(r, a)
                   return this._refreshControlWrapper(
                     this._shouldRenderEmptyState(r)
                       ? l()
-                      : g.a.createElement(
-                          ae,
+                      : _.a.createElement(
+                          he,
                           { impressionTracker: this._impressionTrackerV2 },
-                          g.a.createElement(
-                            b.a,
-                            { title: u },
+                          _.a.createElement(
+                            g.a,
+                            { title: d },
                             this._renderActiveCover(),
                             this._renderPill(),
-                            g.a.createElement(v, {
+                            _.a.createElement(h, {
                               anchoring: n,
-                              assumedItemHeight: Re,
-                              cacheKey: d,
+                              assumedItemHeight: Ue,
+                              cacheKey: u,
                               footer: this._renderFooter(),
                               hasNewContentAtBottom:
                                 null === (e = this.context.featureSwitches) || void 0 === e
                                   ? void 0
                                   : e.isTrue('responsive_web_do_not_launch_me_reverse_home_timeline_enabled'),
-                              header: a,
-                              identityFunction: Te,
-                              initialAnchor: m && _.b(Te(m)),
+                              header: o,
+                              identityFunction: Be,
+                              initialAnchor: v && y.b(Be(v)),
                               items: r,
                               nearStartProximityRatio: c,
                               onAtEnd: this._handleAtBottom,
@@ -1040,9 +1267,9 @@
                               onPositionRestored: this._handlePositionRestored,
                               ref: this._setScroller,
                               renderer: this._getCellRenderer(i, s),
-                              sortIndexFunction: Le,
+                              sortIndexFunction: Fe,
                               withKeyboardShortcuts: p,
-                              withoutHeadroom: h,
+                              withoutHeadroom: f,
                             }),
                           ),
                         ),
@@ -1057,26 +1284,26 @@
                     n = t.alert,
                     r = t.applyNewTweetsBarInstructions,
                     i = t.newTweetsPillLabel,
-                    a = t.newTweetsPillMode,
-                    o = t.removeAlert,
+                    o = t.newTweetsPillMode,
+                    a = t.removeAlert,
                     s = t.scribeNamespace,
                     c = t.timelineId,
                     l = t.topUnseenCount
-                  return a
-                    ? a === fe.a.URT
-                      ? g.a.createElement(me.a.Configure, {
+                  return o
+                    ? o === ke.a.URT
+                      ? _.a.createElement(Ce.a.Configure, {
                           alert: n,
                           applyNewTweetsBarInstructions: r,
                           isAtNewest: null === (e = this._scroller) || void 0 === e ? void 0 : e.isAtNewest,
                           label: i,
-                          removeAlert: o,
+                          removeAlert: a,
                           scribeNamespace: s,
                           timelineId: c,
                         })
-                      : a === fe.a.CLIENT && l && l > 0
-                      ? g.a.createElement(me.a.Configure, {
+                      : o === ke.a.CLIENT && l && l > 0
+                      ? _.a.createElement(Ce.a.Configure, {
                           applyNewTweetsBarInstructions: r,
-                          removeAlert: o,
+                          removeAlert: a,
                           scribeNamespace: s,
                           timelineId: c,
                           unreadCount: l,
@@ -1093,15 +1320,15 @@
                     n = e.clearActiveCover,
                     r = e.processCallback,
                     i = e.scribeAction,
-                    a = e.scribeNamespace,
-                    o = t && t.cover
-                  return t && o
-                    ? g.a.createElement(G, {
+                    o = e.scribeNamespace,
+                    a = t && t.cover
+                  return t && a
+                    ? _.a.createElement(X, {
                         activeCover: t,
                         clearActiveCover: n,
                         processCallback: r,
                         scribeAction: i,
-                        scribeNamespace: a,
+                        scribeNamespace: o,
                       })
                     : null
                 },
@@ -1111,7 +1338,7 @@
                 value: function (e) {
                   var t = this.props,
                     n = t.activeCover,
-                    r = t.initialFetchStatus === q.a.LOADED,
+                    r = t.initialFetchStatus === Q.a.LOADED,
                     i = 0 === e.length
                   return r && i && !n
                 },
@@ -1189,25 +1416,25 @@
                     n = this.props,
                     r = n.handlerRegistry,
                     i = n.scribeCache,
-                    a = n.timelineId
-                  if (!i.has(a)) {
-                    var o = new Set()
-                    i.set(a, o)
+                    o = n.timelineId
+                  if (!i.has(o)) {
+                    var a = new Set()
+                    i.set(o, a)
                   }
-                  var s = i.get(a)
+                  var s = i.get(o)
                   return s
                     ? e.reduce(function (e, n, i) {
-                        var a = n.entry,
-                          o = n.relativeElementHeight,
-                          c = a.entryId
-                        if (!s.has(c) && !r.getNeedsLoad(a)) {
+                        var o = n.entry,
+                          a = n.relativeElementHeight,
+                          c = o.entryId
+                        if (!s.has(c) && !r.getNeedsLoad(o)) {
                           s.add(c)
-                          var l = t._getScribeDataItem(r, a)
+                          var l = t._getScribeDataItem(r, o)
                           if (l) {
-                            var d,
-                              u = !(null === (d = a.content) || void 0 === d || !d.promotedMetadata),
+                            var u,
+                              d = !(null === (u = o.content) || void 0 === u || !u.promotedMetadata),
                               p = t._promotedTweetDistanceMap.get(c)
-                            u && p && (l.tweet_count = p), null != o && (l.percent_screen_height_100k = o), e.push(l)
+                            d && p && (l.tweet_count = p), null != a && (l.percent_screen_height_100k = a), e.push(l)
                           }
                         }
                         return e
@@ -1222,8 +1449,8 @@
                     n = t.seenIds,
                     r = t.seenIdsLatest,
                     i = t.timelineId
-                  ;(i !== Ie.d && i !== Ie.b) || !n
-                    ? (i !== Ie.c && i !== Ie.a) || !r || r.addNewTweets(e)
+                  ;(i !== Ae.d && i !== Ae.b) || !n
+                    ? (i !== Ae.c && i !== Ae.a) || !r || r.addNewTweets(e)
                     : n.addNewTweets(e)
                 },
               },
@@ -1234,42 +1461,45 @@
                   if (0 !== e.length) {
                     var n = this.props.handlerRegistry,
                       r = this._getEntryIndex(),
-                      a = [],
+                      i = [],
                       o = []
                     if (
                       (e.forEach(function (e) {
-                        var s = e.end,
-                          c = e.id,
-                          l = e.start,
-                          d = r[c]
-                        if (d) {
-                          var u = t._getScribeDataItem(n, d)
+                        var a = e.end,
+                          s = e.id,
+                          c = e.start,
+                          l = r[s]
+                        if (l) {
+                          var u = t._getScribeDataItem(n, l)
                           if (u) {
-                            var p = { visibility_start: l, visibility_end: s }
-                            a.push(i()(i()({}, u), {}, { impression_details: p }))
+                            var d = { visibility_start: c, visibility_end: a }
+                            i.push(Me(Me({}, u), {}, { impression_details: d }))
                           }
-                          if (d.type === Ee.b.Tweet) {
-                            var h = d
-                            o.push(h.content.id)
+                          if (l.type === Se.b.Tweet) {
+                            var p = l
+                            o.push(p.content.id)
                           }
-                          if (d.type === Ee.b.PagedCarouselItem) {
-                            var v = d,
-                              m =
-                                v.content.content &&
-                                v.content.content.pagedCarouselFeedbackItem &&
-                                v.content.content.pagedCarouselFeedbackItem.content.tweet.id
-                            m && o.push(m)
+                          if (l.type === Se.b.PagedCarouselItem) {
+                            var f = l,
+                              h =
+                                f.content.content &&
+                                f.content.content.pagedCarouselFeedbackItem &&
+                                f.content.content.pagedCarouselFeedbackItem.content.tweet.id
+                            h && o.push(h)
                           }
                         }
                       }),
-                      a.length > 0)
+                      i.length > 0)
                     ) {
-                      var s = this.props,
-                        c = s.richScribeAction,
-                        l = s.scribeNamespace
-                      c(i()(i()({}, l), {}, { component: 'stream', element: 'linger', action: 'results' }), {
-                        items: a,
-                      })
+                      var a = this.props
+                      ;(0, a.richScribeAction)(
+                        Me(
+                          Me({}, a.scribeNamespace),
+                          {},
+                          { component: 'stream', element: 'linger', action: 'results' },
+                        ),
+                        { items: i },
+                      )
                     }
                     o.length > 0 && this._storeSeenIds(o)
                   }
@@ -1293,23 +1523,23 @@
             ]),
             n
           )
-        })(g.a.PureComponent)
-      f()(Ae, 'contextTypes', { viewport: Ce.object, featureSwitches: Ce.any }),
-        f()(Ae, 'defaultProps', {
-          onBottomRetry: j.a,
-          onNearBottom: j.a,
-          onNearTop: j.a,
-          onRefresh: j.a,
-          refreshControl: _e.a,
-          scribeCache: Se,
-          scroller: ye.b,
-          seenIds: Object(ke.b)(),
-          seenIdsLatest: Object(ke.a)(),
+        })(_.a.PureComponent)
+      m()(Ve, 'contextTypes', { viewport: je.object, featureSwitches: je.any }),
+        m()(Ve, 'defaultProps', {
+          onBottomRetry: V.a,
+          onNearBottom: V.a,
+          onNearTop: V.a,
+          onRefresh: V.a,
+          refreshControl: Ie.a,
+          scribeCache: He,
+          scroller: Te.b,
+          seenIds: Object(De.b)(),
+          seenIdsLatest: Object(De.a)(),
           withoutHeadroom: !1,
           showLoadingFooter: !0,
           withKeyboardShortcuts: !0,
         })
-      t.default = Ae
+      t.default = Ve
     },
     'ejT/': function (e, t, n) {
       'use strict'

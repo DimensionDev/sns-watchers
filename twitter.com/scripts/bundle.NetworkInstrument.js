@@ -1,30 +1,27 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [68],
+  [67],
   {
     ujfh: function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'default', function () {
-          return k
+          return y
         })
-      var r = n('yiKp'),
+      n('+KXO'), n('1t7P'), n('daRM'), n('FtHn')
+      var r = n('m3Bd'),
         i = n.n(r),
-        o = n('m3Bd'),
+        o = n('VrFO'),
         s = n.n(o),
-        a = n('VrFO'),
+        a = n('Y9Ll'),
         u = n.n(a),
-        _ = n('Y9Ll'),
+        _ = n('KEM+'),
         c = n.n(_),
-        m = n('KEM+'),
-        d = n.n(m),
-        p =
-          (n('lTEL'),
+        m =
+          (n('Cm4o'),
           n('7x/C'),
           n('87if'),
+          n('lTEL'),
           n('kYxP'),
-          n('Cm4o'),
-          n('KrtT'),
-          n('TJCb'),
           n('DZ+c'),
           n('vrRf'),
           n('jwue'),
@@ -33,55 +30,80 @@
           n('Ee2X'),
           n('LW0h'),
           n('z84I'),
-          n('0zG9'),
-          n('KqXw'),
           n('LJOr'),
+          n('KqXw'),
           n('pXBW')),
-        h = n('k49u'),
-        f = n('ZjLa'),
-        l = n('Myq3'),
-        v = n('EhiH'),
-        w = n('/NU0'),
-        g = ['error'],
-        y = [h.a.BadOauthToken, h.a.OauthTimestampException, h.a.BadAuthenticationData, h.a.AccessDeniedByBouncer],
-        k = (function () {
+        p = n('k49u'),
+        d = n('ZjLa'),
+        f = n('Myq3'),
+        h = n('EhiH'),
+        l = n('/NU0')
+      function v(e, t) {
+        var n = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e)
+          t &&
+            (r = r.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            n.push.apply(n, r)
+        }
+        return n
+      }
+      function w(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? v(Object(n), !0).forEach(function (t) {
+                c()(e, t, n[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : v(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+              })
+        }
+        return e
+      }
+      var g = [p.a.BadOauthToken, p.a.OauthTimestampException, p.a.BadAuthenticationData, p.a.AccessDeniedByBouncer],
+        y = (function () {
           function e(t, n) {
             var r = this
-            u()(this, e),
-              d()(this, 'scribeRequest', function (e) {
+            s()(this, e),
+              c()(this, 'scribeRequest', function (e) {
                 var t = e.response,
                   n = e.error,
-                  i = s()(e, g),
-                  o = new window.URL(i.url)
+                  o = i()(e, ['error']),
+                  s = new window.URL(o.url)
                 if (
-                  ((!n && t) || ((t = { headers: {}, body: '', status: n ? n.status : 500 }), n instanceof p.a)) &&
-                  !r._shouldFilter(o)
+                  ((!n && t) || ((t = { headers: {}, body: '', status: n ? n.status : 500 }), n instanceof m.a)) &&
+                  !r._shouldFilter(s)
                 ) {
                   r._flushResourceTimingBuffer()
-                  var a = Object(l.a)(r._buffer, function (e) {
+                  var a = Object(f.a)(r._buffer, function (e) {
                     var t = e.request
                     return (
-                      o.protocol === t.uri_scheme &&
-                      o.hostname === t.uri_host_name &&
-                      o.pathname === t.uri_path &&
-                      o.searchParams.toString() === t.uri_query
+                      s.protocol === t.uri_scheme &&
+                      s.hostname === t.uri_host_name &&
+                      s.pathname === t.uri_path &&
+                      s.searchParams.toString() === t.uri_query
                     )
                   })
                   if (a) {
                     var u = r._buffer.indexOf(a)
-                    r._buffer[u] = r._updateEventWithRequestResponse(a, i, t, n)
+                    r._buffer[u] = r._updateEventWithRequestResponse(a, o, t, n)
                   } else {
-                    var _ = r._prepareEvent(i.url),
-                      c = _ && r._updateEventWithRequestResponse(_, i, t, n)
+                    var _ = r._prepareEvent(o.url),
+                      c = _ && r._updateEventWithRequestResponse(_, o, t, n)
                     c && r._buffer.push(c)
                   }
                   r._flushBuffer()
                 }
               }),
-              d()(this, '_shouldFilter', function (e) {
+              c()(this, '_shouldFilter', function (e) {
                 return e.pathname.indexOf('/1.1/jot') > -1
               }),
-              d()(this, '_flushResourceTimingBuffer', function () {
+              c()(this, '_flushResourceTimingBuffer', function () {
                 if (r._resourceTimingApiSupported) {
                   var e = window.performance.getEntriesByType('resource')
                   window.performance.clearResourceTimings(),
@@ -96,10 +118,10 @@
                     })
                 }
               }),
-              d()(this, '_updateNetworkInfo', function (e) {
+              c()(this, '_updateNetworkInfo', function (e) {
                 r._networkInfo = e
               }),
-              d()(this, '_getNetworkMeasurements', function () {
+              c()(this, '_getNetworkMeasurements', function () {
                 return {
                   connection_type: r._networkInfo.type || 'unknown',
                   speed_class: r._networkInfo.effectiveType,
@@ -115,14 +137,14 @@
                 window.performance.getEntriesByType('resource') &&
                 window.performance.clearResourceTimings),
               (this._scribe = t),
-              (this._options = i()(
+              (this._options = w(
                 { apiErrorSampleSize: 0, apiSampleSize: 0, cdnSampleSize: 0, navSampleSize: 0, cdnHostList: [] },
                 n,
               )),
               (this._buffer = []),
               (this._networkInfo = {}),
-              f.a.getConnectionInfo().then(function (e) {
-                r._updateNetworkInfo(e), f.a.addEventListener('connectionChange', r._updateNetworkInfo)
+              d.a.getConnectionInfo().then(function (e) {
+                r._updateNetworkInfo(e), d.a.addEventListener('connectionChange', r._updateNetworkInfo)
               }),
               this._resourceTimingApiSupported &&
                 (window.performance.onresourcetimingbufferfull = this._flushResourceTimingBuffer)
@@ -130,7 +152,7 @@
             o && this._buffer.push(o)
           }
           return (
-            c()(e, [
+            u()(e, [
               {
                 key: '_record',
                 value: function (e) {
@@ -141,7 +163,7 @@
                 key: '_possiblyRecordErrorToAllNamespace',
                 value: function (e) {
                   if ('api:error' === e.event_type) {
-                    var t = i()(i()({}, e), {}, { event_type: 'api:all' })
+                    var t = w(w({}, e), {}, { event_type: 'api:all' })
                     this._record(t)
                   }
                 },
@@ -229,8 +251,8 @@
                       .filter(function (e) {
                         return void 0 !== e
                       }),
-                    r = Object(v.a)(n, function (e) {
-                      return y.indexOf(e) > -1
+                    r = Object(h.a)(n, function (e) {
+                      return g.indexOf(e) > -1
                     })
                   return r || (n.length > 0 ? n[0] : void 0)
                 },
@@ -238,13 +260,13 @@
               {
                 key: '_updateEventWithRequestResponse',
                 value: function (e, t, n, r) {
-                  var o = e.request.request_details
-                  return i()(
-                    i()({}, e),
+                  var i = e.request.request_details
+                  return w(
+                    w({}, e),
                     {},
                     {
-                      request: i()(
-                        i()({}, e.request),
+                      request: w(
+                        w({}, e.request),
                         {},
                         {
                           http_method: t.method,
@@ -252,19 +274,19 @@
                           start_time_ms: t.startTimestamp,
                           trace_id: t.headers['x-b3-traceid'],
                           twitter_api_error_code: (r && this._extractApiErrorCode(r)) || void 0,
-                          request_details: i()(
-                            i()({}, o),
+                          request_details: w(
+                            w({}, i),
                             {},
                             {
-                              duration_ms: o.duration_ms || t.endTimestamp - t.startTimestamp,
+                              duration_ms: i.duration_ms || t.endTimestamp - t.startTimestamp,
                               request_body_size:
-                                o.request_body_size ||
+                                i.request_body_size ||
                                 ('string' == typeof t.data
                                   ? t.data.length
                                   : t.data
                                   ? JSON.stringify(t.data).length
                                   : void 0),
-                              response_body_size: o.response_body_size || (n && n.body ? n.body.length : void 0),
+                              response_body_size: i.response_body_size || (n && n.body ? n.body.length : void 0),
                             },
                           ),
                         },
@@ -277,7 +299,7 @@
               {
                 key: '_getTiming',
                 value: function (e, t) {
-                  return Object(w.a)(e) && Object(w.a)(t) ? Math.round(t - e) : void 0
+                  return Object(l.a)(e) && Object(l.a)(t) ? Math.round(t - e) : void 0
                 },
               },
               {
@@ -302,16 +324,10 @@
                 key: '_updateEventWithPrecisionTimings',
                 value: function (e, t) {
                   var n = this._getRequestDetails(t)
-                  return i()(
-                    i()({}, e),
+                  return w(
+                    w({}, e),
                     {},
-                    {
-                      request: i()(
-                        i()({}, e.request),
-                        {},
-                        { request_details: i()(i()({}, e.request.request_details), n) },
-                      ),
-                    },
+                    { request: w(w({}, e.request), {}, { request_details: w(w({}, e.request.request_details), n) }) },
                   )
                 },
               },

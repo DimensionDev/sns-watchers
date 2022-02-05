@@ -1,340 +1,415 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [179],
+  [178],
   {
-    Lz2T: function (e, t, n) {
+    Lz2T: function (t, e, n) {
       'use strict'
-      var o = n('97Jx'),
-        r = n.n(o),
-        i = n('yiKp'),
+      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
+      var r = n('97Jx'),
+        o = n.n(r),
+        i = n('KEM+'),
         a = n.n(i),
-        s = n('m3Bd'),
-        c = n.n(s),
+        c = n('m3Bd'),
+        s = n.n(c),
         l = n('ERkP'),
-        p = n.n(l),
-        d = n('PnKw'),
-        u = n('vYiB'),
-        m = n('X3+4'),
+        u = n.n(l),
+        p = n('PnKw'),
+        f = n('vYiB'),
+        d = n('X3+4'),
         h = n('rcen'),
-        f = n('k89r'),
-        y = ['bodyRichText', 'bodyText', 'onImpression', 'primaryAction', 'titleRichText', 'titleText']
-      function b(e) {
-        var t = e.bodyRichText,
-          n = e.bodyText,
-          o = e.onImpression,
-          i = e.primaryAction,
-          s = e.titleRichText,
-          l = e.titleText,
-          b = c()(e, y),
-          g = Object(f.a)(),
-          C = function () {
-            g.scribe({ action: 'click' })
+        m = n('k89r')
+      function y(t, e) {
+        var n = Object.keys(t)
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(t)
+          e &&
+            (r = r.filter(function (e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
+            })),
+            n.push.apply(n, r)
+        }
+        return n
+      }
+      function b(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var n = null != arguments[e] ? arguments[e] : {}
+          e % 2
+            ? y(Object(n), !0).forEach(function (e) {
+                a()(t, e, n[e])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n))
+            : y(Object(n)).forEach(function (e) {
+                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+              })
+        }
+        return t
+      }
+      function g(t) {
+        var e = t.bodyRichText,
+          n = t.bodyText,
+          r = t.onImpression,
+          i = t.primaryAction,
+          a = t.titleRichText,
+          c = t.titleText,
+          l = s()(t, ['bodyRichText', 'bodyText', 'onImpression', 'primaryAction', 'titleRichText', 'titleText']),
+          y = Object(m.a)(),
+          g = function () {
+            y.scribe({ action: 'click' })
           },
-          v = s
-            ? p.a.createElement(h.a, { entities: s.entities, onEntityClick: C, text: s.text })
-            : l && l.length
-            ? l
+          v = a
+            ? u.a.createElement(h.a, { entities: a.entities, onEntityClick: g, text: a.text })
+            : c && c.length
+            ? c
             : null,
-          P = t
-            ? p.a.createElement(h.a, { entities: t.entities, onEntityClick: C, text: t.text })
+          P = e
+            ? u.a.createElement(h.a, { entities: e.entities, onEntityClick: g, text: e.text })
             : n && n.length
             ? n
             : null,
-          w = function (e) {
-            return a()(
-              a()({}, i),
+          w = function (t) {
+            return b(
+              b({}, i),
               {},
               {
-                onClick: function (t) {
-                  ;(null == i ? void 0 : i.onClick) && i.onClick(t), e(t)
+                onClick: function (e) {
+                  ;(null == i ? void 0 : i.onClick) && i.onClick(e), t(e)
                 },
               },
             )
           },
-          x = p.a.createElement(m.a.Consumer, null, function (e) {
-            var t = e.handleNextSlide
-            return p.a.createElement(d.a, r()({}, b, { headline: v, primaryAction: i ? w(t) : void 0, subtext: P }))
+          C = u.a.createElement(d.a.Consumer, null, function (t) {
+            var e = t.handleNextSlide
+            return u.a.createElement(p.a, o()({}, l, { headline: v, primaryAction: i ? w(e) : void 0, subtext: P }))
           })
-        return 'function' == typeof o ? p.a.createElement(u.a, { onImpression: o }, x) : x
+        return 'function' == typeof r ? u.a.createElement(f.a, { onImpression: r }, C) : C
       }
-      ;(b.defaultProps = { shouldRenderBorder: !1 }), (t.a = b)
+      ;(g.defaultProps = { shouldRenderBorder: !1 }), (e.a = g)
     },
-    PnKw: function (e, t, n) {
+    PnKw: function (t, e, n) {
       'use strict'
-      n.d(t, 'a', function () {
-        return k
+      n.d(e, 'a', function () {
+        return _
       })
-      var o = n('VrFO'),
-        r = n.n(o),
+      n('OZaJ')
+      var r = n('VrFO'),
+        o = n.n(r),
         i = n('Y9Ll'),
         a = n.n(i),
-        s = n('1Pcy'),
-        c = n.n(s),
+        c = n('1Pcy'),
+        s = n.n(c),
         l = n('5Yy7'),
-        p = n.n(l),
-        d = n('2VqO'),
-        u = n.n(d),
+        u = n.n(l),
+        p = n('N+ot'),
+        f = n.n(p),
+        d = n('AuHH'),
+        h = n.n(d),
         m = n('KEM+'),
-        h = n.n(m),
-        f = (n('2G9S'), n('hBvt'), n('uFXj'), n('ERkP')),
-        y = n.n(f),
-        b = n('TIdA'),
-        g = n('t62R'),
-        C = n('A91F'),
-        v = n('/yvb'),
-        P = n('rHpw'),
-        w = 'inlinePrompt',
-        x = 'inlinePrompt-primaryAction',
-        A = 'inlinePrompt-secondaryAction',
-        E = 'inlinePrompt-centeredImageContainer',
-        T = n('MWbm'),
-        k = (function (e) {
-          p()(n, e)
-          var t = u()(n)
-          function n() {
-            var e
-            r()(this, n)
-            for (var o = arguments.length, i = new Array(o), a = 0; a < o; a++) i[a] = arguments[a]
-            return (
-              (e = t.call.apply(t, [this].concat(i))),
-              h()(c()(e), '_renderImage', function (e) {
-                var t = y.a.createElement(b.a, {
-                  accessibilityLabel: '',
-                  aspectMode: C.a.exact(e.width / e.height),
-                  backgroundColor: e.backgroundColor,
-                  image: e,
-                })
-                return e.isCentered
-                  ? y.a.createElement(
-                      T.a,
-                      { style: _.centeredImage, testID: E },
-                      y.a.createElement(
-                        T.a,
-                        { style: { width: ''.concat(e.width, 'px'), height: ''.concat(e.height, 'px') } },
-                        t,
-                      ),
-                    )
-                  : t
-              }),
-              h()(c()(e), '_renderTitle', function () {
-                var t = e.props.headline
-                return t
-                  ? y.a.createElement(
-                      g.b,
-                      {
-                        accessibilityRole: 'heading',
-                        align: 'left',
-                        size: 'title4',
-                        style: _.flexGrow,
-                        weight: 'bold',
-                        withHashflags: !0,
-                      },
-                      t,
-                    )
-                  : null
-              }),
-              h()(c()(e), '_renderBodyText', function () {
-                var t = e.props.subtext
-                return t
-                  ? y.a.createElement(
-                      g.b,
-                      { align: 'left', color: 'gray700', style: e.styles.body, withHashflags: !0 },
-                      t,
-                    )
-                  : null
-              }),
-              h()(c()(e), '_renderAction', function (t) {
-                var n = t.action,
-                  o = t.buttonSize,
-                  r = t.buttonType,
-                  i = t.style,
-                  a = t.testID,
-                  s = e.props.secondaryAction,
-                  c = n.link,
-                  l = n.onClick,
-                  p = n.text
-                return y.a.createElement(
-                  T.a,
-                  { style: [e.styles.actionContainer, i, { justifyContent: 'flex-start' }], testID: a },
-                  y.a.createElement(
-                    v.a,
-                    { link: c, onPress: l, size: o, style: { width: s ? '100%' : 'auto' }, type: r },
-                    p,
-                  ),
-                )
-              }),
-              e
-            )
+        y = n.n(m),
+        b = (n('2G9S'), n('hBvt'), n('uFXj'), n('ERkP')),
+        g = n.n(b),
+        v = n('TIdA'),
+        P = n('t62R'),
+        w = n('A91F'),
+        C = n('/yvb'),
+        x = n('rHpw'),
+        A = 'inlinePrompt',
+        E = 'inlinePrompt-primaryAction',
+        R = 'inlinePrompt-secondaryAction',
+        k = 'inlinePrompt-centeredImageContainer',
+        T = n('MWbm')
+      function O(t) {
+        var e = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (t) {
+            return !1
           }
+        })()
+        return function () {
+          var n,
+            r = h()(t)
+          if (e) {
+            var o = h()(this).constructor
+            n = Reflect.construct(r, arguments, o)
+          } else n = r.apply(this, arguments)
+          return f()(this, n)
+        }
+      }
+      var _ = (function (t) {
+        u()(n, t)
+        var e = O(n)
+        function n() {
+          var t
+          o()(this, n)
+          for (var r = arguments.length, i = new Array(r), a = 0; a < r; a++) i[a] = arguments[a]
           return (
-            a()(n, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.image,
-                    n = e.primaryAction,
-                    o = e.rightControl,
-                    r = e.secondaryAction,
-                    i = e.shouldRenderBorder
-                  return y.a.createElement(
+            (t = e.call.apply(e, [this].concat(i))),
+            y()(s()(t), '_renderImage', function (t) {
+              var e = g.a.createElement(v.a, {
+                accessibilityLabel: '',
+                aspectMode: w.a.exact(t.width / t.height),
+                backgroundColor: t.backgroundColor,
+                image: t,
+              })
+              return t.isCentered
+                ? g.a.createElement(
                     T.a,
-                    { style: i ? [S.root, S.rootMargin] : _.root },
-                    y.a.createElement(
-                      y.a.Fragment,
-                      null,
-                      t ? this._renderImage(t) : null,
-                      y.a.createElement(
-                        T.a,
-                        { style: this.styles.rootPadding, testID: w },
-                        this._renderTitle(),
-                        this._renderBodyText(),
-                        n
-                          ? this._renderAction({
-                              action: n,
-                              buttonType: 'primaryFilled',
-                              style: this.styles.primaryAction,
-                              buttonSize: 'large',
-                              testID: x,
-                            })
-                          : null,
-                        r
-                          ? this._renderAction({
-                              action: r,
-                              buttonType: 'primaryOutlined',
-                              style: this.styles.secondaryAction,
-                              buttonSize: 'large',
-                              testID: A,
-                            })
-                          : null,
-                      ),
+                    { style: S.centeredImage, testID: k },
+                    g.a.createElement(
+                      T.a,
+                      { style: { width: ''.concat(t.width, 'px'), height: ''.concat(t.height, 'px') } },
+                      e,
                     ),
-                    o ? y.a.createElement(T.a, { style: _.rightControl }, o) : null,
                   )
-                },
-              },
-              {
-                key: 'styles',
-                get: function () {
-                  return this.props.isCompact ? D : I
-                },
-              },
-            ]),
-            n
+                : e
+            }),
+            y()(s()(t), '_renderTitle', function () {
+              var e = t.props.headline
+              return e
+                ? g.a.createElement(
+                    P.b,
+                    {
+                      accessibilityRole: 'heading',
+                      align: 'left',
+                      size: 'title4',
+                      style: S.flexGrow,
+                      weight: 'bold',
+                      withHashflags: !0,
+                    },
+                    e,
+                  )
+                : null
+            }),
+            y()(s()(t), '_renderBodyText', function () {
+              var e = t.props.subtext
+              return e
+                ? g.a.createElement(
+                    P.b,
+                    { align: 'left', color: 'gray700', style: t.styles.body, withHashflags: !0 },
+                    e,
+                  )
+                : null
+            }),
+            y()(s()(t), '_renderAction', function (e) {
+              var n = e.action,
+                r = e.buttonSize,
+                o = e.buttonType,
+                i = e.style,
+                a = e.testID,
+                c = t.props.secondaryAction,
+                s = n.link,
+                l = n.onClick,
+                u = n.text
+              return g.a.createElement(
+                T.a,
+                { style: [t.styles.actionContainer, i, { justifyContent: 'flex-start' }], testID: a },
+                g.a.createElement(
+                  C.a,
+                  { link: s, onPress: l, size: r, style: { width: c ? '100%' : 'auto' }, type: o },
+                  u,
+                ),
+              )
+            }),
+            t
           )
-        })(y.a.Component)
-      h()(k, 'defaultProps', { shouldRenderBorder: !1 })
-      var _ = P.a.create(function (e) {
+        }
+        return (
+          a()(n, [
+            {
+              key: 'render',
+              value: function () {
+                var t = this.props,
+                  e = t.image,
+                  n = t.primaryAction,
+                  r = t.rightControl,
+                  o = t.secondaryAction,
+                  i = t.shouldRenderBorder
+                return g.a.createElement(
+                  T.a,
+                  { style: i ? [D.root, D.rootMargin] : S.root },
+                  g.a.createElement(
+                    g.a.Fragment,
+                    null,
+                    e ? this._renderImage(e) : null,
+                    g.a.createElement(
+                      T.a,
+                      { style: this.styles.rootPadding, testID: A },
+                      this._renderTitle(),
+                      this._renderBodyText(),
+                      n
+                        ? this._renderAction({
+                            action: n,
+                            buttonType: 'primaryFilled',
+                            style: this.styles.primaryAction,
+                            buttonSize: 'large',
+                            testID: E,
+                          })
+                        : null,
+                      o
+                        ? this._renderAction({
+                            action: o,
+                            buttonType: 'primaryOutlined',
+                            style: this.styles.secondaryAction,
+                            buttonSize: 'large',
+                            testID: R,
+                          })
+                        : null,
+                    ),
+                  ),
+                  r ? g.a.createElement(T.a, { style: S.rightControl }, r) : null,
+                )
+              },
+            },
+            {
+              key: 'styles',
+              get: function () {
+                return this.props.isCompact ? j : I
+              },
+            },
+          ]),
+          n
+        )
+      })(g.a.Component)
+      y()(_, 'defaultProps', { shouldRenderBorder: !1 })
+      var S = x.a.create(function (t) {
           return {
-            root: { backgroundColor: e.colors.cellBackground },
+            root: { backgroundColor: t.colors.cellBackground },
             flexGrow: { flexGrow: 1 },
             centeredImage: { display: 'flex', flexDirection: 'row', justifyContent: 'center' },
             rightControl: {
-              paddingHorizontal: e.componentDimensions.gutterHorizontal,
-              paddingVertical: e.componentDimensions.gutterVertical,
+              paddingHorizontal: t.componentDimensions.gutterHorizontal,
+              paddingVertical: t.componentDimensions.gutterVertical,
               position: 'absolute',
               right: 0,
               top: 0,
             },
           }
         }),
-        S = P.a.create(function (e) {
+        D = x.a.create(function (t) {
           return {
             root: {
-              borderColor: e.colors.nestedBorderColor,
-              borderWidth: e.borderWidths.small,
-              borderRadius: e.borderRadii.xLarge,
+              borderColor: t.colors.nestedBorderColor,
+              borderWidth: t.borderWidths.small,
+              borderRadius: t.borderRadii.xLarge,
               overflow: 'hidden',
             },
-            rootMargin: { marginLeft: e.spaces.space16, marginRight: e.spaces.space16 },
+            rootMargin: { marginLeft: t.spaces.space16, marginRight: t.spaces.space16 },
           }
         }),
-        I = P.a.create(function (e) {
+        I = x.a.create(function (t) {
           return {
-            rootPadding: { padding: e.spaces.space32 },
-            body: { marginTop: e.spaces.space8 },
+            rootPadding: { padding: t.spaces.space32 },
+            body: { marginTop: t.spaces.space8 },
             actionContainer: { flexDirection: 'row' },
-            primaryAction: { marginTop: e.spaces.space28 },
-            secondaryAction: { marginTop: e.spaces.space16 },
+            primaryAction: { marginTop: t.spaces.space28 },
+            secondaryAction: { marginTop: t.spaces.space16 },
           }
         }),
-        D = P.a.create(function (e) {
+        j = x.a.create(function (t) {
           return {
-            rootPadding: { padding: e.spaces.space16 },
-            body: { marginTop: e.spaces.space2 },
+            rootPadding: { padding: t.spaces.space16 },
+            body: { marginTop: t.spaces.space2 },
             actionContainer: { flexDirection: 'row' },
-            primaryAction: { marginTop: e.spaces.space4 },
-            secondaryAction: { marginTop: e.spaces.space2 },
+            primaryAction: { marginTop: t.spaces.space4 },
+            secondaryAction: { marginTop: t.spaces.space2 },
           }
         })
     },
-    'X3+4': function (e, t, n) {
+    'X3+4': function (t, e, n) {
       'use strict'
-      n.d(t, 'a', function () {
+      n.d(e, 'a', function () {
         return a
       })
-      var o = n('ERkP'),
-        r = n.n(o),
+      var r = n('ERkP'),
+        o = n.n(r),
         i = n('fs1G'),
-        a = r.a.createContext({ handleNextSlide: i.a })
+        a = o.a.createContext({ handleNextSlide: i.a })
     },
-    'iT+n': function (e, t, n) {
+    'iT+n': function (t, e, n) {
       'use strict'
-      n.r(t),
-        n.d(t, 'PushNotificationsPromptContainer', function () {
-          return G
+      n.r(e),
+        n.d(e, 'PushNotificationsPromptContainer', function () {
+          return X
         })
-      var o = n('VrFO'),
-        r = n.n(o),
+      n('OZaJ')
+      var r = n('VrFO'),
+        o = n.n(r),
         i = n('Y9Ll'),
         a = n.n(i),
-        s = n('1Pcy'),
-        c = n.n(s),
+        c = n('1Pcy'),
+        s = n.n(c),
         l = n('5Yy7'),
-        p = n.n(l),
-        d = n('2VqO'),
-        u = n.n(d),
+        u = n.n(l),
+        p = n('N+ot'),
+        f = n.n(p),
+        d = n('AuHH'),
+        h = n.n(d),
         m = n('KEM+'),
-        h = n.n(m),
-        f = n('ERkP'),
-        y = n.n(f),
-        b = n('/yvb'),
-        g = n('3XMw'),
-        C = n.n(g),
-        v = n('hOZg'),
-        P = C.a.ia5e7487,
-        w = { viewType: 'close_button' },
-        x = (function (e) {
-          p()(n, e)
-          var t = u()(n)
+        y = n.n(m),
+        b = n('ERkP'),
+        g = n.n(b),
+        v = n('/yvb'),
+        P = n('3XMw'),
+        w = n.n(P),
+        C = n('hOZg')
+      function x(t) {
+        var e = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (t) {
+            return !1
+          }
+        })()
+        return function () {
+          var n,
+            r = h()(t)
+          if (e) {
+            var o = h()(this).constructor
+            n = Reflect.construct(r, arguments, o)
+          } else n = r.apply(this, arguments)
+          return f()(this, n)
+        }
+      }
+      var A = w.a.ia5e7487,
+        E = { viewType: 'close_button' },
+        R = (function (t) {
+          u()(n, t)
+          var e = x(n)
           function n() {
-            return r()(this, n), t.apply(this, arguments)
+            return o()(this, n), e.apply(this, arguments)
           }
           return (
             a()(n, [
               {
                 key: 'render',
                 value: function () {
-                  var e = this.props,
-                    t = e.ariaLabel,
-                    n = e.closeIcon,
-                    o = e.color,
-                    r = e.disabled,
-                    i = e.isOnMedia,
-                    a = e.onClose,
-                    s = e.size,
-                    c = e.style,
-                    l = e.testID,
-                    p = n || y.a.createElement(v.a, { testID: l })
-                  return y.a.createElement(b.a, {
-                    accessibilityLabel: t || P,
-                    behavioralEventContext: w,
+                  var t = this.props,
+                    e = t.ariaLabel,
+                    n = t.closeIcon,
+                    r = t.color,
+                    o = t.disabled,
+                    i = t.isOnMedia,
+                    a = t.onClose,
+                    c = t.size,
+                    s = t.style,
+                    l = t.testID,
+                    u = n || g.a.createElement(C.a, { testID: l })
+                  return g.a.createElement(v.a, {
+                    accessibilityLabel: e || A,
+                    behavioralEventContext: E,
                     borderColor: 'transparent',
-                    color: o,
-                    disabled: r,
-                    icon: p,
+                    color: r,
+                    disabled: o,
+                    icon: u,
                     onPress: a,
-                    size: s,
-                    style: c,
+                    size: c,
+                    style: s,
                     type: i ? 'onMediaDominantColorFilled' : void 0,
                   })
                 },
@@ -342,64 +417,85 @@
             ]),
             n
           )
-        })(y.a.PureComponent)
-      h()(x, 'defaultProps', { color: 'white', disabled: !1, size: 'medium' })
-      var A = x,
-        E = n('vEo5'),
-        T = n('1YZw'),
-        k = n('rxPX'),
-        _ = Object(k.a)()
+        })(g.a.PureComponent)
+      y()(R, 'defaultProps', { color: 'white', disabled: !1, size: 'medium' })
+      var k = R,
+        T = n('vEo5'),
+        O = n('1YZw'),
+        _ = n('rxPX'),
+        S = Object(_.a)()
           .propsFromState(function () {
-            return { promptAllowed: E.selectIsEligibleForPushPrompt }
+            return { promptAllowed: T.selectIsEligibleForPushPrompt }
           })
           .propsFromActions(function () {
             return {
-              addToast: T.b,
-              dismissPushNotificationsPrompt: E.dismissPushNotificationsPrompt,
-              pushSubscribe: E.pushSubscribe,
+              addToast: O.b,
+              dismissPushNotificationsPrompt: T.dismissPushNotificationsPrompt,
+              pushSubscribe: T.pushSubscribe,
             }
           })
           .withAnalytics({ component: 'soft_permission_prompt', element: 'push_notifications' }),
-        S = n('5pef'),
+        D = n('5pef'),
         I = n('feu+'),
-        D = n('fs1G'),
-        R = n('Lz2T'),
-        z = C.a.hee41732,
-        L = C.a.b813e4db,
-        B = C.a.e71e09ec,
-        F = C.a.e71e09ec,
-        M = C.a.hd50e063,
-        O = C.a.g4850f43,
-        N = C.a.dc397181,
-        G = (function (e) {
-          p()(n, e)
-          var t = u()(n)
-          function n(e, o) {
+        j = n('fs1G'),
+        B = n('Lz2T')
+      function z(t) {
+        var e = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (t) {
+            return !1
+          }
+        })()
+        return function () {
+          var n,
+            r = h()(t)
+          if (e) {
+            var o = h()(this).constructor
+            n = Reflect.construct(r, arguments, o)
+          } else n = r.apply(this, arguments)
+          return f()(this, n)
+        }
+      }
+      var L = w.a.hee41732,
+        M = w.a.b813e4db,
+        F = w.a.e71e09ec,
+        H = w.a.e71e09ec,
+        N = w.a.hd50e063,
+        G = w.a.g4850f43,
+        K = w.a.dc397181,
+        X = (function (t) {
+          u()(n, t)
+          var e = z(n)
+          function n(t, r) {
             var i
             return (
-              r()(this, n),
-              (i = t.call(this, e, o)),
-              h()(c()(i), '_messageRightControl', function () {
-                return y.a.createElement(A, { color: 'gray700', onClose: i._handleCancel })
+              o()(this, n),
+              (i = e.call(this, t, r)),
+              y()(s()(i), '_messageRightControl', function () {
+                return g.a.createElement(k, { color: 'gray700', onClose: i._handleCancel })
               }),
-              h()(c()(i), '_handleConfirm', function () {
-                var e = i.props,
-                  t = e.addToast,
-                  n = e.pushSubscribe
+              y()(s()(i), '_handleConfirm', function () {
+                var t = i.props,
+                  e = t.addToast,
+                  n = t.pushSubscribe
                 i._scribeAction('click'),
-                  n().then(function (e) {
-                    e &&
+                  n().then(function (t) {
+                    t &&
                       (i.setState({ forceShowPrompt: !1 }),
-                      t({ action: { label: N, link: '/settings/push_notifications' }, text: O }))
+                      e({ action: { label: K, link: '/settings/push_notifications' }, text: G }))
                   })
               }),
-              h()(c()(i), '_handleCancel', function () {
-                var e = i.props,
-                  t = e.dismissPushNotificationsPrompt,
-                  n = e.onDismiss
-                t(), i.setState({ forceShowPrompt: !1 }), i._scribeAction('dismiss'), n()
+              y()(s()(i), '_handleCancel', function () {
+                var t = i.props,
+                  e = t.dismissPushNotificationsPrompt,
+                  n = t.onDismiss
+                e(), i.setState({ forceShowPrompt: !1 }), i._scribeAction('dismiss'), n()
               }),
-              (i.state = { forceShowPrompt: e.promptAllowed }),
+              (i.state = { forceShowPrompt: t.promptAllowed }),
               i
             )
           }
@@ -407,63 +503,63 @@
             a()(n, [
               {
                 key: 'componentDidUpdate',
-                value: function (e, t) {
+                value: function (t, e) {
                   var n = this.props,
-                    o = n.dismissPushNotificationsPrompt,
-                    r = n.promptAllowed
-                  !e.promptAllowed &&
-                    r &&
-                    (this._scribeAction('impression'), o(), this.setState({ forceShowPrompt: !0 }))
+                    r = n.dismissPushNotificationsPrompt,
+                    o = n.promptAllowed
+                  !t.promptAllowed &&
+                    o &&
+                    (this._scribeAction('impression'), r(), this.setState({ forceShowPrompt: !0 }))
                 },
               },
               {
                 key: 'componentDidMount',
                 value: function () {
-                  var e = this.props,
-                    t = e.dismissPushNotificationsPrompt
-                  e.promptAllowed && (this._scribeAction('impression'), this.setState({ forceShowPrompt: !0 }), t())
+                  var t = this.props,
+                    e = t.dismissPushNotificationsPrompt
+                  t.promptAllowed && (this._scribeAction('impression'), this.setState({ forceShowPrompt: !0 }), e())
                 },
               },
               {
                 key: 'render',
                 value: function () {
-                  var e = this.props,
-                    t = e.fullScreen,
-                    n = e.message
-                  return e.promptAllowed || this.state.forceShowPrompt
-                    ? t
-                      ? y.a.createElement(I.a, {
-                          actionLabel: F,
-                          graphic: S.a,
-                          headline: B,
+                  var t = this.props,
+                    e = t.fullScreen,
+                    n = t.message
+                  return t.promptAllowed || this.state.forceShowPrompt
+                    ? e
+                      ? g.a.createElement(I.a, {
+                          actionLabel: H,
+                          graphic: D.a,
+                          headline: F,
                           onAction: this._handleConfirm,
                           onClose: this._handleCancel,
                           onTertiaryAction: this._handleCancel,
                           subtext: n,
-                          tertiaryActionLabel: M,
+                          tertiaryActionLabel: N,
                         })
-                      : y.a.createElement(R.a, {
+                      : g.a.createElement(B.a, {
                           bodyText: n,
-                          primaryAction: { onClick: this._handleConfirm, text: F },
+                          primaryAction: { onClick: this._handleConfirm, text: H },
                           rightControl: this._messageRightControl(),
-                          titleText: z,
+                          titleText: L,
                         })
                     : null
                 },
               },
               {
                 key: '_scribeAction',
-                value: function (e) {
-                  this.props.analytics.scribeAction(e)
+                value: function (t) {
+                  this.props.analytics.scribeAction(t)
                 },
               },
             ]),
             n
           )
-        })(y.a.Component)
-      h()(G, 'defaultProps', { fullScreen: !1, message: L, onDismiss: D.a })
-      var V = _(G)
-      t.default = V
+        })(g.a.Component)
+      y()(X, 'defaultProps', { fullScreen: !1, message: M, onDismiss: j.a })
+      var Y = S(X)
+      e.default = Y
     },
   },
 ])

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [82],
+  [81],
   {
     '2MR/': function (e, t, a) {
       'use strict'
@@ -24,17 +24,17 @@
             c = e.render,
             s = void 0 === c ? m : c,
             b = e.revealLabel,
-            f = void 0 === b ? u : b,
-            p = i.a.useState(!1),
-            w = r()(p, 2),
-            y = w[0],
-            h = w[1]
+            p = void 0 === b ? u : b,
+            f = i.a.useState(!1),
+            y = r()(f, 2),
+            w = y[0],
+            h = y[1]
           return s({
-            actionText: y ? n : f,
-            children: y ? t : o,
+            actionText: w ? n : p,
+            children: w ? t : o,
             lang: l,
             onActionClick: function () {
-              return h(!y)
+              return h(!w)
             },
           })
         }
@@ -50,21 +50,21 @@
         l = a('jHSc'),
         c = a('3XMw'),
         s = a.n(c),
-        u = a('zCf4'),
+        u = a('Ty5D'),
         d = a('MWbm'),
         m = a('/yvb'),
         b = a('pjBI'),
-        f = a('t62R'),
-        p = a('2MR/'),
-        w = a('v302'),
-        y = a('rHpw'),
+        p = a('t62R'),
+        f = a('2MR/'),
+        y = a('v302'),
+        w = a('rHpw'),
         h = s.a.e37836f8,
         v = s.a.ccf2f24e,
         g = s.a.a78f7bd9,
         E = s.a.d7b32a4d,
         k = s.a.b772cd65,
         C = 'gray700',
-        z = function (e) {
+        R = function (e) {
           return i.a.createElement(
             m.a,
             {
@@ -78,7 +78,7 @@
             k,
           )
         },
-        R = y.a.create(function (e) {
+        z = w.a.create(function (e) {
           return {
             root: { flexShrink: 1, flexGrow: 1, paddingBottom: e.spaces.space32 },
             parentContainer: { alignItems: 'center' },
@@ -87,47 +87,47 @@
           }
         })
       t.default = function () {
-        var e = Object(u.f)()
+        var e = Object(u.g)()
         return i.a.createElement(
           l.b,
           {
             backButtonType: 'close',
-            containerStyle: R.root,
+            containerStyle: z.root,
             documentTitle: h,
             history: e,
-            rightControl: z(e),
+            rightControl: R(e),
             title: h,
           },
           i.a.createElement(
             d.a,
-            { style: R.parentContainer },
+            { style: z.parentContainer },
             i.a.createElement(
               d.a,
-              { style: R.innerContainer },
+              { style: z.innerContainer },
               i.a.createElement(
                 b.a,
                 { color: C },
-                i.a.createElement(f.b, { color: C, weight: 'bold' }, v),
-                i.a.createElement(f.b, { color: C }, 'Date'),
+                i.a.createElement(p.b, { color: C, weight: 'bold' }, v),
+                i.a.createElement(p.b, { color: C }, 'Date'),
               ),
               i.a.createElement(
-                f.b,
+                p.b,
                 { size: 'title3', weight: 'heavy' },
                 'We received your report for hateful conduct',
               ),
               i.a.createElement(
-                p.a,
+                f.a,
                 {
                   label: g,
                   render: function (e) {
-                    return i.a.createElement(w.a, r()({}, e, { style: R.tombstone }))
+                    return i.a.createElement(y.a, r()({}, e, { style: z.tombstone }))
                   },
                 },
                 'Revealed Sensitive Content',
               ),
-              i.a.createElement(f.b, { size: 'headline2', weight: 'heavy' }, E),
+              i.a.createElement(p.b, { size: 'headline2', weight: 'heavy' }, E),
               i.a.createElement(
-                f.b,
+                p.b,
                 { color: C, size: 'subtext2', weight: 'normal' },
                 "Our team will review your report as soon as they can. In many cases we'll notify you if we found a rule violation and the actions we're taking as a result. If we don't take action on this report or respond to you directly, please know we take your feedback seriously.",
               ),

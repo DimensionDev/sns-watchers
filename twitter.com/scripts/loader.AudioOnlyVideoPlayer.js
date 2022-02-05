@@ -1,90 +1,150 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [167],
+  [166],
   {
     'Pc/x': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return M
+        return V
       })
-      var i = n('VrFO'),
-        r = n.n(i),
-        a = n('Y9Ll'),
-        o = n.n(a),
-        u = (n('849X'), n('TJCb'), n('7x/C'), n('JtPf'), n('KqXw'), n('LJOr'), n('yiKp')),
-        c = n.n(u),
-        s = n('KEM+'),
+      var r = n('VrFO'),
+        i = n.n(r),
+        o = n('Y9Ll'),
+        a = n.n(o),
+        c =
+          (n('JtPf'),
+          n('7x/C'),
+          n('LJOr'),
+          n('KqXw'),
+          n('+KXO'),
+          n('1t7P'),
+          n('LW0h'),
+          n('daRM'),
+          n('jwue'),
+          n('+oxZ'),
+          n('FtHn'),
+          n('KEM+')),
+        u = n.n(c),
+        s = (n('IAdD'), n('yH/f'), n('OZaJ'), n('5Yy7')),
         l = n.n(s),
-        p = (n('IAdD'), n('0zG9'), n('yH/f'), n('5Yy7')),
+        p = n('N+ot'),
         f = n.n(p),
-        h = n('2VqO'),
-        d = n.n(h),
-        v = n('mAxt'),
-        y = n.n(v),
-        m = (n('2G9S'), n('CEs6')),
-        g = (function (e) {
-          f()(n, e)
-          var t = d()(n)
-          function n(e, i, a) {
-            var o
-            return (
-              r()(this, n),
-              ((o = t.call(
-                this,
-                ''.concat(n.displayName, ': ').concat(e, ' HTTP-').concat(i, ' message: ').concat(a),
-              )).url = e),
-              (o.status = i),
-              o
-            )
+        h = n('AuHH'),
+        y = n.n(h),
+        d = n('mAxt'),
+        v = n.n(d),
+        b = (n('2G9S'), n('CEs6'))
+      function g(e) {
+        var t = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (e) {
+            return !1
           }
-          return o()(n)
-        })(y()(Error))
-      l()(g, 'displayName', 'ProxseeApiError')
-      var b,
-        P,
-        k = n('epkG'),
-        _ = n('SrIh'),
-        S = n('RqPI'),
+        })()
+        return function () {
+          var n,
+            r = y()(e)
+          if (t) {
+            var i = y()(this).constructor
+            n = Reflect.construct(r, arguments, i)
+          } else n = r.apply(this, arguments)
+          return f()(this, n)
+        }
+      }
+      var P = (function (e) {
+        l()(n, e)
+        var t = g(n)
+        function n(e, r, o) {
+          var a
+          return (
+            i()(this, n),
+            ((a = t.call(
+              this,
+              ''.concat(n.displayName, ': ').concat(e, ' HTTP-').concat(r, ' message: ').concat(o),
+            )).url = e),
+            (a.status = r),
+            a
+          )
+        }
+        return n
+      })(v()(Error))
+      u()(P, 'displayName', 'ProxseeApiError')
+      var O,
+        m = n('epkG'),
+        k = n('SrIh'),
+        S = n('RqPI')
+      function _(e, t) {
+        var n = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e)
+          t &&
+            (r = r.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            n.push.apply(n, r)
+        }
+        return n
+      }
+      function w(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? _(Object(n), !0).forEach(function (t) {
+                u()(e, t, n[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : _(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+              })
+        }
+        return e
+      }
+      var j,
         A = 0,
         T = (function () {
           function e() {
             var t = this,
-              n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : j
-            r()(this, e),
-              l()(this, 'reportSpaceFor', {
+              n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : D
+            i()(this, e),
+              u()(this, 'reportSpaceFor', {
                 SelfHarm: function (e) {
-                  return t._reportSpace(c()({ abuse_type: R.SelfHarm }, e))
+                  return t._reportSpace(w({ abuse_type: M.SelfHarm }, e))
                 },
                 Violence: function (e) {
-                  return t._reportSpace(c()({ abuse_type: R.Violence }, e))
+                  return t._reportSpace(w({ abuse_type: M.Violence }, e))
                 },
                 SexualContent: function (e) {
-                  return t._reportSpace(c()({ abuse_type: R.SexualContent }, e))
+                  return t._reportSpace(w({ abuse_type: M.SexualContent }, e))
                 },
                 ChildSafety: function (e) {
-                  return t._reportSpace(c()({ abuse_type: R.ChildSafety }, e))
+                  return t._reportSpace(w({ abuse_type: M.ChildSafety }, e))
                 },
                 PrivateInformation: function (e) {
-                  return t._reportSpace(c()({ abuse_type: R.PrivateInformation }, e))
+                  return t._reportSpace(w({ abuse_type: M.PrivateInformation }, e))
                 },
                 AbusiveBehavior: function (e) {
-                  return t._reportSpace(c()({ abuse_type: R.AbusiveBehavior }, e))
+                  return t._reportSpace(w({ abuse_type: M.AbusiveBehavior }, e))
                 },
               })
-            var i = n.httpConfig
-            ;(this.client = new k.a(c()(c()({}, H), i))), (this._authToken = void 0), (this._authPromise = null)
+            var r = n.httpConfig
+            ;(this.client = new m.a(w(w({}, L), r))), (this._authToken = void 0), (this._authPromise = null)
           }
           return (
-            o()(e, [
+            a()(e, [
               {
                 key: 'init',
                 value: function (e) {
-                  P = e
+                  j = e
                 },
               },
               {
                 key: 'initialized',
                 value: function () {
-                  return !!P
+                  return !!j
                 },
               },
               {
@@ -97,7 +157,7 @@
                 key: 'isTwitterAuthenticated',
                 value: function () {
                   if (!this.initialized()) return !1
-                  var e = P.store.getState()
+                  var e = j.store.getState()
                   return Object(S.m)(e)
                 },
               },
@@ -111,7 +171,7 @@
                 key: 'dispatch',
                 value: function (e) {
                   return this.initialized()
-                    ? this.client.dispatch(e).then(m.a)
+                    ? this.client.dispatch(e).then(b.a)
                     : Promise.reject(new Error('[ProxseeApi] config not initialized'))
                 },
               },
@@ -119,11 +179,11 @@
                 key: 'post',
                 value: function (e, t) {
                   var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
-                    i = n.params,
-                    r = Object.assign(I(), n.headers),
-                    a = JSON.stringify(c()(c()({}, t), {}, { cookie: this._authToken })),
-                    o = 'Twitter' === this._authUserType ? 'twitter/'.concat(e) : e
-                  return this.dispatch({ method: 'POST', path: '/api/v2/'.concat(o), headers: r, params: i, data: a })
+                    r = n.params,
+                    i = Object.assign(R(), n.headers),
+                    o = JSON.stringify(w(w({}, t), {}, { cookie: this._authToken })),
+                    a = 'Twitter' === this._authUserType ? 'twitter/'.concat(e) : e
+                  return this.dispatch({ method: 'POST', path: '/api/v2/'.concat(a), headers: i, params: r, data: o })
                 },
               },
               {
@@ -136,7 +196,7 @@
                     ? this.isTwitterAuthenticated()
                       ? this.isLoggedIn()
                         ? Promise.resolve()
-                        : ((this._authPromise = P.api.Auth.authenticatePeriscope()
+                        : ((this._authPromise = j.api.Auth.authenticatePeriscope()
                             .then(function (t) {
                               return e.loginTwitterToken(t.token)
                             })
@@ -146,7 +206,7 @@
                             })
                             .catch(function (e) {
                               var t = { err: e }
-                              Object(_.a)('[ProxseeApi] failed to login', { extra: t })
+                              Object(k.a)('[ProxseeApi] failed to login', { extra: t })
                             })
                             .then(function () {
                               e._authPromise = null
@@ -159,7 +219,7 @@
               {
                 key: 'loginTwitterToken',
                 value: function (e) {
-                  var t = { jwt: e, vendor_id: x, create_user: !1, direct: !0 }
+                  var t = { jwt: e, vendor_id: H, create_user: !1, direct: !0 }
                   return this.post('loginTwitterToken', t)
                 },
               },
@@ -184,10 +244,10 @@
                   var t = this,
                     n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
                   return this.login().then(function () {
-                    var i = n.params,
-                      r = Object.assign(I(), n.headers),
-                      a = JSON.stringify({ access_token: e.access_token, cursor: e.cursor, limit: 1e3, since: null })
-                    return t.dispatch({ method: 'POST', host: e.host, path: e.path, headers: r, params: i, data: a })
+                    var r = n.params,
+                      i = Object.assign(R(), n.headers),
+                      o = JSON.stringify({ access_token: e.access_token, cursor: e.cursor, limit: 1e3, since: null })
+                    return t.dispatch({ method: 'POST', host: e.host, path: e.path, headers: i, params: r, data: o })
                   })
                 },
               },
@@ -200,7 +260,7 @@
                         return t
                           .post(t.publicPath('trackAudiospaceClientEvent'), { time: Date.now(), log: e })
                           .catch(function (e) {
-                            Object(_.a)('[ProxseeApi] failed to scribe events', { extra: { err: e } })
+                            Object(k.a)('[ProxseeApi] failed to scribe events', { extra: { err: e } })
                           })
                       })
                     : Promise.resolve()
@@ -212,7 +272,7 @@
                   var t = this
                   return this.login().then(function () {
                     return t.post('markAbuse', e).catch(function (e) {
-                      Object(_.a)('[ProxseeApi] failed to report space', { extra: { err: e } })
+                      Object(k.a)('[ProxseeApi] failed to report space', { extra: { err: e } })
                     })
                   })
                 },
@@ -221,21 +281,21 @@
             e
           )
         })(),
-        C = 'X-Idempotence',
-        w = 'X-Periscope-User-Agent',
-        E = 'X-Attempt',
-        O = ((b = {}), l()(b, w, 'Twitter/m5'), l()(b, E, 1), b)
-      function I() {
+        E = 'X-Idempotence',
+        C = 'X-Periscope-User-Agent',
+        x = 'X-Attempt',
+        I = ((O = {}), u()(O, C, 'Twitter/m5'), u()(O, x, 1), O)
+      function R() {
         var e,
           t = Date.now()
         return (
           (A = t <= A ? A + 1 : t),
-          Object.assign({}, O, ((e = {}), l()(e, C, A), l()(e, 'content-type', 'application/json'), e))
+          Object.assign({}, I, ((e = {}), u()(e, E, A), u()(e, 'content-type', 'application/json'), e))
         )
       }
-      var x = 'm5-proxsee-login-a2011357b73e',
-        j = {},
-        H = {
+      var H = 'm5-proxsee-login-a2011357b73e',
+        D = {},
+        L = {
           host: 'https://proxsee.pscp.tv',
           errorFilter: function (e, t) {
             return t(e).then(function (t) {
@@ -243,9 +303,9 @@
                 ? Promise.reject(
                     (function (e, t) {
                       var n = e.uri,
-                        i = t.status,
-                        r = Object(m.a)(t)
-                      return new g(n, i, r.msg)
+                        r = t.status,
+                        i = Object(b.a)(t)
+                      return new P(n, r, i.msg)
                     })(e, t),
                   )
                 : t
@@ -254,7 +314,7 @@
           },
         }
       var N,
-        R = Object.freeze({
+        M = Object.freeze({
           SelfHarm: 'SELF_HARM',
           Violence: 'VIOLENCE',
           SexualContent: 'SEXUAL_CONTENT',
@@ -262,19 +322,19 @@
           PrivateInformation: 'PRIVATE_INFO',
           AbusiveBehavior: 'HARASSMENT',
         }),
-        L = new T(),
+        F = new T(),
         z = n('G6rE'),
-        F = new Error('[AudioModule] config not initialized'),
-        M = new ((function () {
+        U = new Error('[AudioModule] config not initialized'),
+        V = new ((function () {
           function e() {
-            r()(this, e), (this.proxsee = L)
+            i()(this, e), (this.proxsee = F)
           }
           return (
-            o()(e, [
+            a()(e, [
               {
                 key: 'init',
                 value: function (e) {
-                  ;(N = e), L.init(N)
+                  ;(N = e), F.init(N)
                 },
               },
               {
@@ -295,25 +355,25 @@
               {
                 key: 'audioSpace',
                 value: function (e) {
-                  return N ? N.api.AudioSpaces.byId(e) : Promise.reject(F)
+                  return N ? N.api.AudioSpaces.byId(e) : Promise.reject(U)
                 },
               },
               {
                 key: 'subscribeToScheduledSpace',
                 value: function (e) {
-                  return N ? N.api.AudioSpaces.subscribeToScheduledSpaceById(e) : Promise.reject(F)
+                  return N ? N.api.AudioSpaces.subscribeToScheduledSpaceById(e) : Promise.reject(U)
                 },
               },
               {
                 key: 'unsubscribeFromScheduledSpace',
                 value: function (e) {
-                  return N ? N.api.AudioSpaces.unsubscribeFromScheduledSpaceById(e) : Promise.reject(F)
+                  return N ? N.api.AudioSpaces.unsubscribeFromScheduledSpaceById(e) : Promise.reject(U)
                 },
               },
               {
                 key: 'searchAudioSpace',
                 value: function (e, t) {
-                  return N ? N.api.AudioSpaces.search(e, t) : Promise.reject(F)
+                  return N ? N.api.AudioSpaces.search(e, t) : Promise.reject(U)
                 },
               },
             ]),
@@ -328,14 +388,15 @@
           return C
         }),
         n.d(t, '__DANGEROUS_IMPORT__', function () {
-          return w
+          return x
         })
-      var i = n('yiKp'),
-        r = n.n(i),
-        a = n('ddV6'),
-        o = n.n(a),
-        u = (n('z84I'), n('ERkP')),
-        c = n.n(u),
+      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
+      var r = n('KEM+'),
+        i = n.n(r),
+        o = n('ddV6'),
+        a = n.n(o),
+        c = (n('z84I'), n('ERkP')),
+        u = n.n(c),
         s = n('v6aA'),
         l = n('rxPX'),
         p = function () {
@@ -349,88 +410,141 @@
           })
           .withAnalytics(),
         h = n('Pc/x'),
-        d = n('gOg7')
-      var v = n('epkG'),
-        y = n('88qn'),
-        m = n('fs1G'),
-        g = n('mf9H'),
-        b = n('lklz'),
-        P = n('MWbm'),
-        k = n('HT/6'),
+        y = n('gOg7')
+      function d(e, t) {
+        var n = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e)
+          t &&
+            (r = r.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            n.push.apply(n, r)
+        }
+        return n
+      }
+      function v(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? d(Object(n), !0).forEach(function (t) {
+                i()(e, t, n[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : d(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+              })
+        }
+        return e
+      }
+      var b = n('epkG'),
+        g = n('88qn'),
+        P = n('fs1G'),
+        O = n('mf9H'),
+        m = n('lklz'),
+        k = n('MWbm'),
+        S = n('HT/6'),
         _ = n('Zl35'),
-        S = n('rHpw')
+        w = n('rHpw')
+      function j(e, t) {
+        var n = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e)
+          t &&
+            (r = r.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            n.push.apply(n, r)
+        }
+        return n
+      }
       function A(e) {
-        var t = c.a.useContext(s.a).featureSwitches,
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? j(Object(n), !0).forEach(function (t) {
+                i()(e, t, n[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : j(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+              })
+        }
+        return e
+      }
+      function T(e) {
+        var t = u.a.useContext(s.a).featureSwitches,
           n = e.broadcastId,
-          i = e.isLive,
-          a = e.media,
-          u = e.mediaKey,
-          l = e.onEnded,
-          p = e.onPlayerApi,
-          f = e.onPlayerState,
-          v = e.requestedTimecode,
-          P = c.a.useState(null),
-          _ = o()(P, 2),
-          S = _[0],
-          A = _[1],
-          C = c.a.useRef({ playbackCoordinationEmitter: null, previousPlayerState: null }),
-          w = a || (n && u)
+          r = e.isLive,
+          i = e.media,
+          o = e.mediaKey,
+          c = e.onEnded,
+          l = e.onPlayerApi,
+          p = e.onPlayerState,
+          f = e.requestedTimecode,
+          d = u.a.useState(null),
+          b = a()(d, 2),
+          k = b[0],
+          _ = b[1],
+          w = u.a.useRef({ playbackCoordinationEmitter: null, previousPlayerState: null }),
+          j = i || (n && o)
         if (
-          (c.a.useEffect(
+          (u.a.useEffect(
             function () {
-              null === S &&
-                w &&
-                Object(y.a)({ showControls: !1, source: {} }, t).then(function (e) {
-                  return A(function () {
+              null === k &&
+                j &&
+                Object(g.a)({ showControls: !1, source: {} }, t).then(function (e) {
+                  return _(function () {
                     return e
                   })
                 })
             },
-            [S, w, t],
+            [k, j, t],
           ),
-          c.a.useEffect(function () {
+          u.a.useEffect(function () {
             return function () {
-              var e = C.current.playbackCoordinationEmitter
+              var e = w.current.playbackCoordinationEmitter
               e && e.unregister()
             }
           }, []),
-          null === S || !w)
+          null === k || !j)
         )
           return null
-        var I = {
+        var T = {
           analytics: (function (e, t) {
-            var n = e.analytics.contextualScribeNamespace,
-              i = {
-                scribeContext: r()({}, n),
+            var n = {
+                scribeContext: v({}, e.analytics.contextualScribeNamespace),
                 enableShortFormCompleteLogging: t.isTrue('responsive_web_video_pcomplete_enabled'),
                 periscopeAuthToken: h.a.proxsee.authToken(),
               },
-              a = {
+              r = {
                 log: function (t) {
                   var n = t.category,
-                    i = t.data,
-                    a = t.namespace
-                  null != a &&
-                    a.action &&
-                    e.analytics.scribe(r()(r()({}, a), {}, { data: r()(r()({}, i), {}, { _category_: n }) }))
+                    r = t.data,
+                    i = t.namespace
+                  null != i &&
+                    i.action &&
+                    e.analytics.scribe(v(v({}, i), {}, { data: v(v({}, r), {}, { _category_: n }) }))
                 },
               }
-            return new d.a(a, { log: function () {} }, e.getTwitterAuthedHttpClient(), i)
+            return new y.a(r, { log: function () {} }, e.getTwitterAuthedHttpClient(), n)
           })(e, t),
-          basePlayerClass: S,
-          httpClient: O,
+          basePlayerClass: k,
+          httpClient: R,
           onApiReady: function (t) {
-            var i
-            t.play(), 'function' == typeof p && p(t)
-            var r = null == a || null === (i = a.video_info) || void 0 === i ? void 0 : i.duration_millis
-            'number' == typeof r && 'number' == typeof v && t.scrubToFraction(v / r)
-            var o = e.disablePlaybackCoordination
-                ? m.a
+            var r
+            t.play(), 'function' == typeof l && l(t)
+            var a = null == i || null === (r = i.video_info) || void 0 === r ? void 0 : r.duration_millis
+            'number' == typeof a && 'number' == typeof f && t.scrubToFraction(f / a)
+            var c = e.disablePlaybackCoordination
+                ? P.a
                 : function () {
                     return t.pause()
                   },
-              c = n && u ? k.a.SPACE : k.a.NORMAL
-            C.current.playbackCoordinationEmitter = (function (e, t) {
+              u = n && o ? S.a.SPACE : S.a.NORMAL
+            w.current.playbackCoordinationEmitter = (function (e, t) {
               var n = {
                 onAutoPlayRequest: function () {},
                 onPauseRequest: e,
@@ -438,79 +552,79 @@
                 isLooping: !1,
                 playbackPriority: t,
               }
-              return g.b.register(n)
-            })(o, c)
+              return O.b.register(n)
+            })(c, u)
           },
           onStateUpdate: function (e, t) {
-            'function' == typeof f && f(e, t),
+            'function' == typeof p && p(e, t),
               (function (e) {
-                var t = E(e)
+                var t = I(e)
                 e.isPlaying &&
                   t &&
                   t.durationMs === t.currentTimeMs &&
-                  'function' == typeof l &&
-                  (l(),
-                  C.current.playbackCoordinationEmitter && C.current.playbackCoordinationEmitter.signalPlaybackFinish())
+                  'function' == typeof c &&
+                  (c(),
+                  w.current.playbackCoordinationEmitter && w.current.playbackCoordinationEmitter.signalPlaybackFinish())
               })(e),
               (function (e) {
-                var t = C.current,
+                var t = w.current,
                   n = t.playbackCoordinationEmitter,
-                  i = t.previousPlayerState,
-                  r = null === i,
-                  a = null == i ? void 0 : i.isPlaying,
-                  o = e.isPlaying,
-                  u = !r && a && !o
-                ;(!r && a) || !o ? u && n && n.signalPause() : n && n.signalPlay()
+                  r = t.previousPlayerState,
+                  i = null === r,
+                  o = null == r ? void 0 : r.isPlaying,
+                  a = e.isPlaying,
+                  c = !i && o && !a
+                ;(!i && o) || !a ? c && n && n.signalPause() : n && n.signalPlay()
               })(e),
-              (C.current.previousPlayerState = e)
+              (w.current.previousPlayerState = e)
           },
           twitterAuthedHttpClient: e.getTwitterAuthedHttpClient(),
         }
-        if (n && u) {
-          var x = r()(
-            r()({}, I),
+        if (n && o) {
+          var C = A(
+            A({}, T),
             {},
             {
               configType: 'static',
-              contentId: u,
+              contentId: o,
               contentType: 'broadcast',
               variants: [],
-              videoId: b.b.forAudioSpace(n, u, i),
+              videoId: m.b.forAudioSpace(n, o, r),
             },
           )
-          return c.a.createElement(T, { key: n, playerConfig: x })
+          return u.a.createElement(E, { key: n, playerConfig: C })
         }
-        if (a) {
-          var j = r()(
-            r()({}, I),
+        if (i) {
+          var x = A(
+            A({}, T),
             {},
             {
               configType: 'static',
-              contentId: a.id_str,
+              contentId: i.id_str,
               loop: !1,
               contentType: 'media_entity',
-              durationMs: a.video_info.duration_millis,
-              variants: a.video_info.variants.map(function (e) {
+              durationMs: i.video_info.duration_millis,
+              variants: i.video_info.variants.map(function (e) {
                 e.bitrate
                 return { type: e.content_type, src: e.url }
               }),
             },
           )
-          return c.a.createElement(T, { key: a.id_str, playerConfig: j })
+          return u.a.createElement(E, { key: i.id_str, playerConfig: x })
         }
         return null
       }
-      function T(e) {
+      function E(e) {
         var t = e.playerConfig
-        return c.a.createElement(P.a, { style: I.displayNone }, c.a.createElement(_.b, t))
+        return u.a.createElement(k.a, { style: H.displayNone }, u.a.createElement(_.b, t))
       }
-      var C = A,
-        w = f(A),
-        E = function (e) {
+      var C = T,
+        x = f(T),
+        I = function (e) {
           return e && e.tracks[e.currentTrackId]
         },
-        O = new v.a({}),
-        I = S.a.create(function (e) {
+        R = new b.a({}),
+        H = w.a.create(function (e) {
           return { displayNone: { display: 'none' } }
         })
     },

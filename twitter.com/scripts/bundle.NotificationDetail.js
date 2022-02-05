@@ -1,94 +1,117 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [72],
+  [71],
   {
     TvXc: function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'SafetyReportNotificationScreen', function () {
-          return x
+          return C
         })
-      var a = n('VrFO'),
-        i = n.n(a),
-        r = n('Y9Ll'),
+      n('OZaJ')
+      var r = n('VrFO'),
         o = n.n(r),
+        a = n('Y9Ll'),
+        i = n.n(a),
         c = n('1Pcy'),
         l = n.n(c),
-        s = n('5Yy7'),
-        p = n.n(s),
-        f = n('2VqO'),
-        u = n.n(f),
-        d = n('KEM+'),
-        y = n.n(d),
+        f = n('5Yy7'),
+        s = n.n(f),
+        u = n('N+ot'),
+        p = n.n(u),
+        y = n('AuHH'),
+        h = n.n(y),
+        v = n('KEM+'),
+        d = n.n(v),
         b =
           (n('2G9S'),
-          n('KqXw'),
           n('MvUL'),
+          n('KqXw'),
           n('vrRf'),
           n('mlET'),
           n('7xRU'),
           n('z84I'),
           n('LW0h'),
-          n('7x/C'),
           n('+KXO'),
           n('ERkP')),
-        h = n.n(b),
-        v = n('jHSc'),
-        m = n('qzfk'),
-        _ = n('3XMw'),
-        w = n.n(_),
-        k = n('8jkQ'),
-        g = n('5FtR'),
+        m = n.n(b),
+        _ = n('jHSc'),
+        w = n('qzfk'),
+        k = n('3XMw'),
+        g = n.n(k),
+        R = n('8jkQ'),
+        O = n('5FtR'),
         U = n('/yvb'),
-        O = n('bPFD'),
+        P = n('bPFD'),
         S = n('rHpw'),
-        j = n('7JQg'),
-        E = w.a.c380d684,
-        P = w.a.f15bfdb3,
-        R = w.a.c7714935,
-        q = w.a.b772cd65,
-        x = (function (e) {
-          p()(n, e)
-          var t = u()(n)
+        j = n('7JQg')
+      function E(e) {
+        var t = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (e) {
+            return !1
+          }
+        })()
+        return function () {
+          var n,
+            r = h()(e)
+          if (t) {
+            var o = h()(this).constructor
+            n = Reflect.construct(r, arguments, o)
+          } else n = r.apply(this, arguments)
+          return p()(this, n)
+        }
+      }
+      var x = g.a.c380d684,
+        q = g.a.f15bfdb3,
+        F = g.a.c7714935,
+        T = g.a.b772cd65,
+        C = (function (e) {
+          s()(n, e)
+          var t = E(n)
           function n() {
             var e
-            i()(this, n)
-            for (var a = arguments.length, r = new Array(a), o = 0; o < a; o++) r[o] = arguments[o]
+            o()(this, n)
+            for (var r = arguments.length, a = new Array(r), i = 0; i < r; i++) a[i] = arguments[i]
             return (
-              (e = t.call.apply(t, [this].concat(r))),
-              y()(l()(e), '_handleDone', function () {
+              (e = t.call.apply(t, [this].concat(a))),
+              d()(l()(e), '_handleDone', function () {
                 e.props.history.replace('/notifications')
               }),
               e
             )
           }
           return (
-            o()(n, [
+            i()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props.history,
                     t = this._getSafeUrl(),
                     n = this._getTitle(t),
-                    a = this._getParams(),
-                    i = h.a.createElement(U.a, { onPress: this._handleDone, size: 'small', type: 'brandFilled' }, q),
-                    r = -1 !== (null == t ? void 0 : t.indexOf('appealable_label'))
+                    r = this._getParams(),
+                    o = m.a.createElement(U.a, { onPress: this._handleDone, size: 'small', type: 'brandFilled' }, T),
+                    a = -1 !== (null == t ? void 0 : t.indexOf('appealable_label'))
                   return t
-                    ? h.a.createElement(
-                        v.b,
+                    ? m.a.createElement(
+                        _.b,
                         {
-                          backButtonType: r ? 'back' : 'close',
+                          backButtonType: a ? 'back' : 'close',
                           backLocation: '/notifications',
                           history: e,
-                          rightControl: r ? i : void 0,
+                          rightControl: a ? o : void 0,
                           title: n,
                         },
-                        h.a.createElement(O.a, {
+                        m.a.createElement(P.a, {
                           allowForms: !0,
-                          src: 'https://twitter.com/'.concat(t, '?').concat(a),
-                          style: C.iframe,
+                          src: 'https://twitter.com/'.concat(t, '?').concat(r),
+                          style: H.iframe,
                         }),
                       )
-                    : h.a.createElement(g.a, { to: '/notifications' })
+                    : m.a.createElement(O.a, { to: '/notifications' })
                 },
               },
               {
@@ -96,17 +119,17 @@
                 value: function () {
                   var e = this.props.location,
                     t = e.query && 'string' == typeof e.query.relativeUrl ? e.query.relativeUrl : void 0
-                  if (t && k.b.isSafetyNotificationsUrl(t)) return t
+                  if (t && R.b.isSafetyNotificationsUrl(t)) return t
                 },
               },
               {
                 key: '_getTitle',
                 value: function (e) {
                   return null != e && e.endsWith('review_settings')
-                    ? P
+                    ? q
                     : -1 !== (null == e ? void 0 : e.indexOf('appealable_label'))
-                    ? R
-                    : E
+                    ? F
+                    : x
                 },
               },
               {
@@ -116,7 +139,7 @@
                     t = {
                       client_location: [e.page, e.section, e.component].join(':'),
                       client_referer: window.location.pathname,
-                      client_app_id: Object(m.a)().clientAppId,
+                      client_app_id: Object(w.a)().clientAppId,
                     }
                   return Object.keys(t)
                     .filter(function (e) {
@@ -131,11 +154,11 @@
             ]),
             n
           )
-        })(h.a.PureComponent),
-        C = S.a.create(function (e) {
+        })(m.a.PureComponent),
+        H = S.a.create(function (e) {
           return { iframe: { flexGrow: 1, flexShrink: 1 } }
         })
-      t.default = Object(j.c)({ page: 'ntab', section: 'safety_report_notification' })(x)
+      t.default = Object(j.c)({ page: 'ntab', section: 'safety_report_notification' })(C)
     },
   },
 ])

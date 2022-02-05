@@ -1,14 +1,14 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [219],
+  [218],
   {
     'l+4e': function (e, t, n) {
       'use strict'
-      var i = n('ERkP'),
-        o = n.n(i),
-        r = n('rcen'),
-        a = n('rHpw'),
-        c = n('MWbm'),
-        s = a.a.create(function (e) {
+      var r = n('ERkP'),
+        o = n.n(r),
+        i = n('rcen'),
+        c = n('rHpw'),
+        a = n('MWbm'),
+        s = c.a.create(function (e) {
           return {
             root: {
               paddingHorizontal: e.componentDimensions.gutterHorizontal,
@@ -27,39 +27,39 @@
       t.a = function (e) {
         var t = e.header,
           n = void 0 === t ? {} : t,
-          i = e.body,
-          a = void 0 === i ? {} : i,
+          r = e.body,
+          c = void 0 === r ? {} : r,
           l = e.controls,
           u = void 0 === l ? null : l,
-          d = e.focusable,
-          m = void 0 === d || d
+          b = e.focusable,
+          p = void 0 === b || b
         return o.a.createElement(
-          c.a,
-          { focusable: m, style: s.root, tabIndex: '0' },
+          a.a,
+          { focusable: p, style: s.root, tabIndex: '0' },
           n.text
             ? o.a.createElement(
-                c.a,
+                a.a,
                 { style: s.textContainer },
-                o.a.createElement(r.a, {
+                o.a.createElement(i.a, {
                   entities: n.entities,
                   forceAutoTextDirection: !0,
                   size: 'headline1',
-                  style: [s.text, a.text && s.headerWithBody],
+                  style: [s.text, c.text && s.headerWithBody],
                   text: n.text,
                   weight: 'bold',
                 }),
                 u,
               )
             : null,
-          a.text
+          c.text
             ? o.a.createElement(
-                c.a,
+                a.a,
                 { style: s.textContainer },
-                o.a.createElement(r.a, {
-                  entities: a.entities,
+                o.a.createElement(i.a, {
+                  entities: c.entities,
                   forceAutoTextDirection: !0,
                   style: s.text,
-                  text: a.text,
+                  text: c.text,
                 }),
                 n.text ? null : u,
               )
@@ -70,14 +70,42 @@
     tFiq: function (e, t, n) {
       'use strict'
       n.r(t)
-      var i = n('yiKp'),
-        o = n.n(i),
-        r = n('ezF+'),
-        a = (n('ERkP'), n('VPAj')),
-        c = n('l+4e'),
+      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
+      var r = n('KEM+'),
+        o = n.n(r),
+        i = n('ezF+'),
+        c = (n('ERkP'), n('VPAj')),
+        a = n('l+4e'),
         s = n('zh9S')
-      t.default = r.g({
-        component: c.a,
+      function l(e, t) {
+        var n = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e)
+          t &&
+            (r = r.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            n.push.apply(n, r)
+        }
+        return n
+      }
+      function u(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? l(Object(n), !0).forEach(function (t) {
+                o()(e, t, n[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : l(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+              })
+        }
+        return e
+      }
+      t.default = i.g({
+        component: a.a,
         bindActions: function () {
           return { scribe: s.c }
         },
@@ -87,12 +115,11 @@
         },
         onImpression: function (e) {
           var t = e.actions.scribe,
-            n = e.scribeData,
-            i = e.scribeNamespace
-          t(o()(o()({}, i), {}, { action: 'impression' }), n)
+            n = e.scribeData
+          t(u(u({}, e.scribeNamespace), {}, { action: 'impression' }), n)
         },
         divider: { bottom: !0, top: !0 },
-        isFocusable: Object(a.a)(!0),
+        isFocusable: Object(c.a)(!0),
       })
     },
   },

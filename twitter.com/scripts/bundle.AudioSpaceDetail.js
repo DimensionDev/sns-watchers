@@ -1,260 +1,344 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [32],
+  [31],
   {
     'Fg/a': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return H
+        return N
       })
-      var i = n('VrFO'),
-        r = n.n(i),
+      n('OZaJ')
+      var r = n('VrFO'),
+        i = n.n(r),
         a = n('Y9Ll'),
         c = n.n(a),
         o = n('1Pcy'),
-        s = n.n(o),
-        u = n('5Yy7'),
-        l = n.n(u),
-        p = n('2VqO'),
+        u = n.n(o),
+        s = n('5Yy7'),
+        l = n.n(s),
+        p = n('N+ot'),
         h = n.n(p),
-        d = n('KEM+'),
-        f = n.n(d),
-        m = (n('2G9S'), n('849X'), n('TJCb'), n('ERkP')),
-        v = n.n(m),
-        g = n('Pc/x'),
-        S = n('6/RC'),
-        b = (n('KqXw'), n('WNMA'), n('Z5jE')),
-        y = n('rxPX'),
-        k = function (e, t) {
-          return Object(b.a)(t.match)
+        f = n('AuHH'),
+        d = n.n(f),
+        v = n('KEM+'),
+        m = n.n(v),
+        y = (n('2G9S'), n('ERkP')),
+        g = n.n(y),
+        S = n('Pc/x'),
+        b = n('6/RC'),
+        P = (n('WNMA'), n('KqXw'), n('Z5jE')),
+        k = n('rxPX'),
+        w = function (e, t) {
+          return Object(P.a)(t.match)
         },
-        P = function (e) {
-          return function (t, n, i) {
-            return i.api.AudioSpaces.byId(e, { isMetatagsQuery: !0 })
+        E = function (e) {
+          return function (t, n, r) {
+            return r.api.AudioSpaces.byId(e, { isMetatagsQuery: !0 })
           }
         },
-        E = Object(y.a)()
+        O = Object(k.a)()
           .propsFromState(function () {
-            return { broadcastId: k }
+            return { broadcastId: w }
           })
           .propsFromActions(function () {
-            return { fetchAudioSpace: P }
+            return { fetchAudioSpace: E }
           }),
-        w = (n('1t7P'), n('jQ/y'), n('3XMw')),
-        A = n.n(w),
+        A = (n('1t7P'), n('jQ/y'), n('3XMw')),
+        j = n.n(A),
         T = n('rJoH'),
         _ = n('Rumh'),
         C = n('AooF')
-      function j(e) {
+      function F(e) {
         var t = e.space
         if (!t) return null
         var n = (function (e) {
           var t = (function (e) {
               var t,
                 n,
-                i,
                 r,
+                i,
                 a = null == e || null === (t = e.host) || void 0 === t ? void 0 : t.display_name,
-                c = a ? F.hostSpace({ name: a }) : F.hostSpaceFallback,
+                c = a ? x.hostSpace({ name: a }) : x.hostSpaceFallback,
                 o = e.title || c,
-                s = F.descriptionGeneric,
-                u = (null == e ? void 0 : e.participants.total) || 0,
-                l = _.a.formatCountShort(u),
-                p = F.descriptionListening({ count: l })
+                u = x.descriptionGeneric,
+                s = (null == e ? void 0 : e.participants.total) || 0,
+                l = _.a.formatCountShort(s),
+                p = x.descriptionListening({ count: l })
               if (e.state === C.a.SpaceState.Running)
-                (n = F.titleRunning({ spaceTitle: o })),
-                  (i = F.descriptionFormatRunning({ hostSpace: c, descriptionListening: p, descriptionGeneric: s })),
-                  (r = O.ttl.Frequent)
+                (n = x.titleRunning({ spaceTitle: o })),
+                  (r = x.descriptionFormatRunning({ hostSpace: c, descriptionListening: p, descriptionGeneric: u })),
+                  (i = I.ttl.Frequent)
               else if (e.state === C.a.SpaceState.NotStarted || e.state === C.a.SpaceState.PrePublished) {
-                var h = F.scheduledSpaceGeneric
-                ;(n = F.titleScheduled({ date: h, spaceTitle: o })),
-                  (i = F.descriptionFormatScheduled({ hostSpace: c, descriptionGeneric: s })),
-                  (r = O.ttl.Frequent)
+                var h = x.scheduledSpaceGeneric
+                ;(n = x.titleScheduled({ date: h, spaceTitle: o })),
+                  (r = x.descriptionFormatScheduled({ hostSpace: c, descriptionGeneric: u })),
+                  (i = I.ttl.Frequent)
               } else
-                (n = F.titleEnded({ spaceTitle: o })),
-                  (i = F.descriptionFormatEnded({ hostSpace: c, descriptionGeneric: s })),
-                  (r = O.ttl.LongLivedCache)
-              var d = 'https://twitter.com/i/spaces/'.concat(e.rest_id)
-              return { title: n, canonical: d, description: i, ttl: r }
+                (n = x.titleEnded({ spaceTitle: o })),
+                  (r = x.descriptionFormatEnded({ hostSpace: c, descriptionGeneric: u })),
+                  (i = I.ttl.LongLivedCache)
+              var f = 'https://twitter.com/i/spaces/'.concat(e.rest_id)
+              return { title: n, canonical: f, description: r, ttl: i }
             })(e),
             n = t.canonical,
-            i = t.description,
-            r = t.title,
+            r = t.description,
+            i = t.title,
             a = t.ttl
           return {
             type: 'website',
             canonical: n,
-            title: r,
-            description: i,
-            image: O.image.url,
-            imageType: O.image.type,
-            imageW: O.image.width,
-            imageH: O.image.height,
-            imageAlt: O.image.alt,
+            title: i,
+            description: r,
+            image: I.image.url,
+            imageType: I.image.type,
+            imageW: I.image.width,
+            imageH: I.image.height,
+            imageAlt: I.image.alt,
             ttl: a,
           }
         })(t)
-        return v.a.createElement(T.a, n)
+        return g.a.createElement(T.a, n)
       }
-      var F = {
-          twitterSpaces: A.a.gaa01f2c,
-          hostSpace: A.a.b6d3e0ee,
-          hostSpaceFallback: A.a.ab4fc8bb,
-          descriptionGeneric: A.a.fec3c1ef,
-          descriptionListeners: A.a.ce447fcb,
-          descriptionListening: A.a.ef7da97e,
-          scheduledSpaceGeneric: A.a.f8464691,
-          titleRunning: A.a.a065e7e7,
-          titleScheduled: A.a.hd5e7b20,
-          titleEnded: A.a.f826f7ee,
-          descriptionFormatRunning: A.a.b2a94e92,
-          descriptionFormatScheduled: A.a.f6432ce5,
-          descriptionFormatEnded: A.a.f6432ce5,
+      var x = {
+          twitterSpaces: j.a.gaa01f2c,
+          hostSpace: j.a.b6d3e0ee,
+          hostSpaceFallback: j.a.ab4fc8bb,
+          descriptionGeneric: j.a.fec3c1ef,
+          descriptionListeners: j.a.ce447fcb,
+          descriptionListening: j.a.ef7da97e,
+          scheduledSpaceGeneric: j.a.f8464691,
+          titleRunning: j.a.a065e7e7,
+          titleScheduled: j.a.hd5e7b20,
+          titleEnded: j.a.f826f7ee,
+          descriptionFormatRunning: j.a.b2a94e92,
+          descriptionFormatScheduled: j.a.f6432ce5,
+          descriptionFormatEnded: j.a.f6432ce5,
         },
-        O = {
+        I = {
           ttl: { Frequent: 300, LongLivedCache: 86400 },
           image: {
             type: 'image/jpeg',
             url: 'https://abs.twimg.com/sticky/cards/TwitterSpacesCardImage.2.jpg',
             width: 1200,
             height: 630,
-            alt: F.twitterSpaces,
+            alt: x.twitterSpaces,
           },
         },
-        I = n('G8HL'),
-        x = (function (e) {
-          l()(n, e)
-          var t = h()(n)
-          function n() {
-            var e
-            r()(this, n)
-            for (var i = arguments.length, a = new Array(i), c = 0; c < i; c++) a[c] = arguments[c]
-            return (e = t.call.apply(t, [this].concat(a))), f()(s()(e), 'state', { space: null }), e
-          }
-          return (
-            c()(n, [
-              {
-                key: 'componentDidMount',
-                value: function () {
-                  var e = this
-                  this.props
-                    .fetchAudioSpace(this.props.broadcastId)
-                    .catch(function () {
-                      return null
-                    })
-                    .then(function (t) {
-                      !t || t instanceof Error || e.setState({ space: t })
-                    })
-                },
-              },
-              {
-                key: 'render',
-                value: function () {
-                  return v.a.createElement(
-                    v.a.Fragment,
-                    null,
-                    v.a.createElement(L, this.props),
-                    v.a.createElement(j, { space: this.state.space }),
-                  )
-                },
-              },
-            ]),
-            n
-          )
-        })(v.a.Component)
+        R = n('G8HL')
       function L(e) {
+        var t = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (e) {
+            return !1
+          }
+        })()
+        return function () {
+          var n,
+            r = d()(e)
+          if (t) {
+            var i = d()(this).constructor
+            n = Reflect.construct(r, arguments, i)
+          } else n = r.apply(this, arguments)
+          return h()(this, n)
+        }
+      }
+      var H = (function (e) {
+        l()(n, e)
+        var t = L(n)
+        function n() {
+          var e
+          i()(this, n)
+          for (var r = arguments.length, a = new Array(r), c = 0; c < r; c++) a[c] = arguments[c]
+          return (e = t.call.apply(t, [this].concat(a))), m()(u()(e), 'state', { space: null }), e
+        }
         return (
-          v.a.useEffect(function () {
-            S.canUseDOM && g.a.proxsee.login()
+          c()(n, [
+            {
+              key: 'componentDidMount',
+              value: function () {
+                var e = this
+                this.props
+                  .fetchAudioSpace(this.props.broadcastId)
+                  .catch(function () {
+                    return null
+                  })
+                  .then(function (t) {
+                    !t || t instanceof Error || e.setState({ space: t })
+                  })
+              },
+            },
+            {
+              key: 'render',
+              value: function () {
+                return g.a.createElement(
+                  g.a.Fragment,
+                  null,
+                  g.a.createElement(M, this.props),
+                  g.a.createElement(F, { space: this.state.space }),
+                )
+              },
+            },
+          ]),
+          n
+        )
+      })(g.a.Component)
+      function M(e) {
+        return (
+          g.a.useEffect(function () {
+            b.canUseDOM && S.a.proxsee.login()
           }, []),
           e.children
         )
       }
-      var H = E(Object(I.a)(x))
+      var N = O(Object(R.a)(H))
     },
     'Pc/x': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return R
+        return D
       })
-      var i = n('VrFO'),
-        r = n.n(i),
+      var r = n('VrFO'),
+        i = n.n(r),
         a = n('Y9Ll'),
         c = n.n(a),
-        o = (n('849X'), n('TJCb'), n('7x/C'), n('JtPf'), n('KqXw'), n('LJOr'), n('yiKp')),
-        s = n.n(o),
-        u = n('KEM+'),
-        l = n.n(u),
-        p = (n('IAdD'), n('0zG9'), n('yH/f'), n('5Yy7')),
+        o =
+          (n('JtPf'),
+          n('7x/C'),
+          n('LJOr'),
+          n('KqXw'),
+          n('+KXO'),
+          n('1t7P'),
+          n('LW0h'),
+          n('daRM'),
+          n('jwue'),
+          n('+oxZ'),
+          n('FtHn'),
+          n('KEM+')),
+        u = n.n(o),
+        s = (n('IAdD'), n('yH/f'), n('OZaJ'), n('5Yy7')),
+        l = n.n(s),
+        p = n('N+ot'),
         h = n.n(p),
-        d = n('2VqO'),
-        f = n.n(d),
-        m = n('mAxt'),
-        v = n.n(m),
-        g = (n('2G9S'), n('CEs6')),
-        S = (function (e) {
-          h()(n, e)
-          var t = f()(n)
-          function n(e, i, a) {
-            var c
-            return (
-              r()(this, n),
-              ((c = t.call(
-                this,
-                ''.concat(n.displayName, ': ').concat(e, ' HTTP-').concat(i, ' message: ').concat(a),
-              )).url = e),
-              (c.status = i),
-              c
-            )
+        f = n('AuHH'),
+        d = n.n(f),
+        v = n('mAxt'),
+        m = n.n(v),
+        y = (n('2G9S'), n('CEs6'))
+      function g(e) {
+        var t = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (e) {
+            return !1
           }
-          return c()(n)
-        })(v()(Error))
-      l()(S, 'displayName', 'ProxseeApiError')
+        })()
+        return function () {
+          var n,
+            r = d()(e)
+          if (t) {
+            var i = d()(this).constructor
+            n = Reflect.construct(r, arguments, i)
+          } else n = r.apply(this, arguments)
+          return h()(this, n)
+        }
+      }
+      var S = (function (e) {
+        l()(n, e)
+        var t = g(n)
+        function n(e, r, a) {
+          var c
+          return (
+            i()(this, n),
+            ((c = t.call(
+              this,
+              ''.concat(n.displayName, ': ').concat(e, ' HTTP-').concat(r, ' message: ').concat(a),
+            )).url = e),
+            (c.status = r),
+            c
+          )
+        }
+        return n
+      })(m()(Error))
+      u()(S, 'displayName', 'ProxseeApiError')
       var b,
-        y,
-        k = n('epkG'),
-        P = n('SrIh'),
-        E = n('RqPI'),
-        w = 0,
-        A = (function () {
+        P = n('epkG'),
+        k = n('SrIh'),
+        w = n('RqPI')
+      function E(e, t) {
+        var n = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e)
+          t &&
+            (r = r.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            n.push.apply(n, r)
+        }
+        return n
+      }
+      function O(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? E(Object(n), !0).forEach(function (t) {
+                u()(e, t, n[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : E(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+              })
+        }
+        return e
+      }
+      var A,
+        j = 0,
+        T = (function () {
           function e() {
             var t = this,
-              n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : I
-            r()(this, e),
-              l()(this, 'reportSpaceFor', {
+              n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : L
+            i()(this, e),
+              u()(this, 'reportSpaceFor', {
                 SelfHarm: function (e) {
-                  return t._reportSpace(s()({ abuse_type: H.SelfHarm }, e))
+                  return t._reportSpace(O({ abuse_type: N.SelfHarm }, e))
                 },
                 Violence: function (e) {
-                  return t._reportSpace(s()({ abuse_type: H.Violence }, e))
+                  return t._reportSpace(O({ abuse_type: N.Violence }, e))
                 },
                 SexualContent: function (e) {
-                  return t._reportSpace(s()({ abuse_type: H.SexualContent }, e))
+                  return t._reportSpace(O({ abuse_type: N.SexualContent }, e))
                 },
                 ChildSafety: function (e) {
-                  return t._reportSpace(s()({ abuse_type: H.ChildSafety }, e))
+                  return t._reportSpace(O({ abuse_type: N.ChildSafety }, e))
                 },
                 PrivateInformation: function (e) {
-                  return t._reportSpace(s()({ abuse_type: H.PrivateInformation }, e))
+                  return t._reportSpace(O({ abuse_type: N.PrivateInformation }, e))
                 },
                 AbusiveBehavior: function (e) {
-                  return t._reportSpace(s()({ abuse_type: H.AbusiveBehavior }, e))
+                  return t._reportSpace(O({ abuse_type: N.AbusiveBehavior }, e))
                 },
               })
-            var i = n.httpConfig
-            ;(this.client = new k.a(s()(s()({}, x), i))), (this._authToken = void 0), (this._authPromise = null)
+            var r = n.httpConfig
+            ;(this.client = new P.a(O(O({}, H), r))), (this._authToken = void 0), (this._authPromise = null)
           }
           return (
             c()(e, [
               {
                 key: 'init',
                 value: function (e) {
-                  y = e
+                  A = e
                 },
               },
               {
                 key: 'initialized',
                 value: function () {
-                  return !!y
+                  return !!A
                 },
               },
               {
@@ -267,8 +351,8 @@
                 key: 'isTwitterAuthenticated',
                 value: function () {
                   if (!this.initialized()) return !1
-                  var e = y.store.getState()
-                  return Object(E.m)(e)
+                  var e = A.store.getState()
+                  return Object(w.m)(e)
                 },
               },
               {
@@ -281,7 +365,7 @@
                 key: 'dispatch',
                 value: function (e) {
                   return this.initialized()
-                    ? this.client.dispatch(e).then(g.a)
+                    ? this.client.dispatch(e).then(y.a)
                     : Promise.reject(new Error('[ProxseeApi] config not initialized'))
                 },
               },
@@ -289,11 +373,11 @@
                 key: 'post',
                 value: function (e, t) {
                   var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
-                    i = n.params,
-                    r = Object.assign(F(), n.headers),
-                    a = JSON.stringify(s()(s()({}, t), {}, { cookie: this._authToken })),
+                    r = n.params,
+                    i = Object.assign(I(), n.headers),
+                    a = JSON.stringify(O(O({}, t), {}, { cookie: this._authToken })),
                     c = 'Twitter' === this._authUserType ? 'twitter/'.concat(e) : e
-                  return this.dispatch({ method: 'POST', path: '/api/v2/'.concat(c), headers: r, params: i, data: a })
+                  return this.dispatch({ method: 'POST', path: '/api/v2/'.concat(c), headers: i, params: r, data: a })
                 },
               },
               {
@@ -306,7 +390,7 @@
                     ? this.isTwitterAuthenticated()
                       ? this.isLoggedIn()
                         ? Promise.resolve()
-                        : ((this._authPromise = y.api.Auth.authenticatePeriscope()
+                        : ((this._authPromise = A.api.Auth.authenticatePeriscope()
                             .then(function (t) {
                               return e.loginTwitterToken(t.token)
                             })
@@ -316,7 +400,7 @@
                             })
                             .catch(function (e) {
                               var t = { err: e }
-                              Object(P.a)('[ProxseeApi] failed to login', { extra: t })
+                              Object(k.a)('[ProxseeApi] failed to login', { extra: t })
                             })
                             .then(function () {
                               e._authPromise = null
@@ -329,7 +413,7 @@
               {
                 key: 'loginTwitterToken',
                 value: function (e) {
-                  var t = { jwt: e, vendor_id: O, create_user: !1, direct: !0 }
+                  var t = { jwt: e, vendor_id: R, create_user: !1, direct: !0 }
                   return this.post('loginTwitterToken', t)
                 },
               },
@@ -354,10 +438,10 @@
                   var t = this,
                     n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
                   return this.login().then(function () {
-                    var i = n.params,
-                      r = Object.assign(F(), n.headers),
+                    var r = n.params,
+                      i = Object.assign(I(), n.headers),
                       a = JSON.stringify({ access_token: e.access_token, cursor: e.cursor, limit: 1e3, since: null })
-                    return t.dispatch({ method: 'POST', host: e.host, path: e.path, headers: r, params: i, data: a })
+                    return t.dispatch({ method: 'POST', host: e.host, path: e.path, headers: i, params: r, data: a })
                   })
                 },
               },
@@ -370,7 +454,7 @@
                         return t
                           .post(t.publicPath('trackAudiospaceClientEvent'), { time: Date.now(), log: e })
                           .catch(function (e) {
-                            Object(P.a)('[ProxseeApi] failed to scribe events', { extra: { err: e } })
+                            Object(k.a)('[ProxseeApi] failed to scribe events', { extra: { err: e } })
                           })
                       })
                     : Promise.resolve()
@@ -382,7 +466,7 @@
                   var t = this
                   return this.login().then(function () {
                     return t.post('markAbuse', e).catch(function (e) {
-                      Object(P.a)('[ProxseeApi] failed to report space', { extra: { err: e } })
+                      Object(k.a)('[ProxseeApi] failed to report space', { extra: { err: e } })
                     })
                   })
                 },
@@ -391,21 +475,21 @@
             e
           )
         })(),
-        T = 'X-Idempotence',
-        _ = 'X-Periscope-User-Agent',
-        C = 'X-Attempt',
-        j = ((b = {}), l()(b, _, 'Twitter/m5'), l()(b, C, 1), b)
-      function F() {
+        _ = 'X-Idempotence',
+        C = 'X-Periscope-User-Agent',
+        F = 'X-Attempt',
+        x = ((b = {}), u()(b, C, 'Twitter/m5'), u()(b, F, 1), b)
+      function I() {
         var e,
           t = Date.now()
         return (
-          (w = t <= w ? w + 1 : t),
-          Object.assign({}, j, ((e = {}), l()(e, T, w), l()(e, 'content-type', 'application/json'), e))
+          (j = t <= j ? j + 1 : t),
+          Object.assign({}, x, ((e = {}), u()(e, _, j), u()(e, 'content-type', 'application/json'), e))
         )
       }
-      var O = 'm5-proxsee-login-a2011357b73e',
-        I = {},
-        x = {
+      var R = 'm5-proxsee-login-a2011357b73e',
+        L = {},
+        H = {
           host: 'https://proxsee.pscp.tv',
           errorFilter: function (e, t) {
             return t(e).then(function (t) {
@@ -413,9 +497,9 @@
                 ? Promise.reject(
                     (function (e, t) {
                       var n = e.uri,
-                        i = t.status,
-                        r = Object(g.a)(t)
-                      return new S(n, i, r.msg)
+                        r = t.status,
+                        i = Object(y.a)(t)
+                      return new S(n, r, i.msg)
                     })(e, t),
                   )
                 : t
@@ -423,8 +507,8 @@
             })
           },
         }
-      var L,
-        H = Object.freeze({
+      var M,
+        N = Object.freeze({
           SelfHarm: 'SELF_HARM',
           Violence: 'VIOLENCE',
           SexualContent: 'SEXUAL_CONTENT',
@@ -432,58 +516,58 @@
           PrivateInformation: 'PRIVATE_INFO',
           AbusiveBehavior: 'HARASSMENT',
         }),
-        M = new A(),
-        G = n('G6rE'),
-        N = new Error('[AudioModule] config not initialized'),
-        R = new ((function () {
+        G = new T(),
+        X = n('G6rE'),
+        z = new Error('[AudioModule] config not initialized'),
+        D = new ((function () {
           function e() {
-            r()(this, e), (this.proxsee = M)
+            i()(this, e), (this.proxsee = G)
           }
           return (
             c()(e, [
               {
                 key: 'init',
                 value: function (e) {
-                  ;(L = e), M.init(L)
+                  ;(M = e), G.init(M)
                 },
               },
               {
                 key: 'initialized',
                 value: function () {
-                  return !!L
+                  return !!M
                 },
               },
               {
                 key: 'loggedInUser',
                 value: function () {
                   if (this.initialized()) {
-                    var e = L.store.getState()
-                    return G.e.selectLoggedInUser(e)
+                    var e = M.store.getState()
+                    return X.e.selectLoggedInUser(e)
                   }
                 },
               },
               {
                 key: 'audioSpace',
                 value: function (e) {
-                  return L ? L.api.AudioSpaces.byId(e) : Promise.reject(N)
+                  return M ? M.api.AudioSpaces.byId(e) : Promise.reject(z)
                 },
               },
               {
                 key: 'subscribeToScheduledSpace',
                 value: function (e) {
-                  return L ? L.api.AudioSpaces.subscribeToScheduledSpaceById(e) : Promise.reject(N)
+                  return M ? M.api.AudioSpaces.subscribeToScheduledSpaceById(e) : Promise.reject(z)
                 },
               },
               {
                 key: 'unsubscribeFromScheduledSpace',
                 value: function (e) {
-                  return L ? L.api.AudioSpaces.unsubscribeFromScheduledSpaceById(e) : Promise.reject(N)
+                  return M ? M.api.AudioSpaces.unsubscribeFromScheduledSpaceById(e) : Promise.reject(z)
                 },
               },
               {
                 key: 'searchAudioSpace',
                 value: function (e, t) {
-                  return L ? L.api.AudioSpaces.search(e, t) : Promise.reject(N)
+                  return M ? M.api.AudioSpaces.search(e, t) : Promise.reject(z)
                 },
               },
             ]),
@@ -493,66 +577,66 @@
     },
     Z5jE: function (e, t, n) {
       'use strict'
-      function i(e) {
+      function r(e) {
         return e.params.broadcastId || ''
       }
       n.d(t, 'a', function () {
-        return i
+        return r
       })
     },
     qTXf: function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'default', function () {
-          return f
+          return d
         })
-      n('KqXw'), n('WNMA')
-      var i = n('ERkP'),
-        r = n.n(i),
+      n('WNMA'), n('KqXw')
+      var r = n('ERkP'),
+        i = n.n(r),
         a = n('Fg/a'),
         c = n('es0u'),
         o = n('SrtL'),
-        s = n('Z5jE'),
-        u = n('3XMw'),
-        l = n.n(u),
+        u = n('Z5jE'),
+        s = n('3XMw'),
+        l = n.n(s),
         p = n('VS6U'),
         h = n('MWbm'),
-        d = n('bNYH')
-      function f(e) {
-        return r.a.createElement(a.a, e, r.a.createElement(m, e))
+        f = n('bNYH')
+      function d(e) {
+        return i.a.createElement(a.a, e, i.a.createElement(v, e))
       }
-      function m(e) {
-        var t = S.title
-        return r.a.createElement(
-          r.a.Fragment,
+      function v(e) {
+        var t = g.title
+        return i.a.createElement(
+          i.a.Fragment,
           null,
-          r.a.createElement(o.a, { title: t, withMeta: !1 }),
-          r.a.createElement(p.a, {
+          i.a.createElement(o.a, { title: t, withMeta: !1 }),
+          i.a.createElement(p.a, {
             backLocation: '/',
             documentTitle: t,
             history: e.history,
-            primaryContent: r.a.createElement(v, e),
-            sidebarContent: r.a.createElement(c.a, null),
+            primaryContent: i.a.createElement(m, e),
+            sidebarContent: i.a.createElement(c.a, null),
             title: t,
           }),
         )
       }
-      function v(e) {
-        var t = Object(s.a)(e.match)
-        return r.a.createElement(
+      function m(e) {
+        var t = Object(u.a)(e.match)
+        return i.a.createElement(
           h.a,
-          { style: g.container },
-          r.a.createElement(
+          { style: y.container },
+          i.a.createElement(
             h.a,
-            { style: g.cardContainer },
-            r.a.createElement(d.a, { audioSpaceId: t, withDirectJoin: !0 }),
+            { style: y.cardContainer },
+            i.a.createElement(f.a, { audioSpaceId: t, withDirectJoin: !0 }),
           ),
         )
       }
-      var g = n('rHpw').a.create(function (e) {
+      var y = n('rHpw').a.create(function (e) {
           return { container: { paddingHorizontal: e.spaces.space16 }, cardContainer: { marginTop: e.spaces.space12 } }
         }),
-        S = { title: l.a.ab4fc8bb }
+        g = { title: l.a.ab4fc8bb }
     },
   },
 ])

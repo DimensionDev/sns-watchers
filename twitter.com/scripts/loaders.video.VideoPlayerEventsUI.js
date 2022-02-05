@@ -1,34 +1,35 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [190],
+  [189],
   {
     TlAO: function (e, t, a) {
       'use strict'
       a.d(t, 'a', function () {
-        return T
+        return W
       })
-      var r = a('yiKp'),
+      a('OZaJ'), a('+KXO'), a('1t7P'), a('LW0h'), a('daRM'), a('jwue'), a('+oxZ'), a('FtHn')
+      var r = a('VrFO'),
         n = a.n(r),
-        l = a('VrFO'),
+        l = a('Y9Ll'),
         o = a.n(l),
-        i = a('Y9Ll'),
-        p = a.n(i),
-        s = a('5Yy7'),
-        c = a.n(s),
-        u = a('2VqO'),
-        m = a.n(u),
-        y = a('KEM+'),
-        d = a.n(y),
-        f = (a('ho0z'), a('ERkP')),
-        E = a.n(f),
-        h = a('t62R'),
-        v = a('/yvb'),
-        b = a('3XMw'),
-        I = a.n(b),
+        i = a('5Yy7'),
+        c = a.n(i),
+        p = a('N+ot'),
+        s = a.n(p),
+        u = a('AuHH'),
+        y = a.n(u),
+        f = a('KEM+'),
+        m = a.n(f),
+        d = (a('ho0z'), a('ERkP')),
+        h = a.n(d),
+        v = a('t62R'),
+        b = a('/yvb'),
+        E = a('3XMw'),
+        O = a.n(E),
         g = a('RUwF'),
-        S = a('rHpw'),
-        A = a('Q0n6'),
-        O = a('Wms4'),
-        w =
+        I = a('rHpw'),
+        R = a('Q0n6'),
+        w = a('Wms4'),
+        S =
           (a('yH/f'),
           Object.freeze({
             LIVE_BROADCAST: 'liveBroadcast',
@@ -37,47 +38,95 @@
             GIF: 'gif',
             SLATE: 'slate',
           })),
-        D = I.a.j190bf19,
-        R = I.a.f6dc9146,
-        C = function (e) {
+        A = O.a.j190bf19,
+        P = O.a.f6dc9146,
+        D = function (e) {
           var t = e.playbackDurationMs
           switch (e.type) {
-            case w.LIVE_BROADCAST:
-              return E.a.createElement(O.a, { type: 'live' }, D)
-            case w.REPLAY_BROADCAST:
-              return E.a.createElement(O.a, { bold: !0 }, R)
-            case w.VOD:
-              return 'number' == typeof t && E.a.createElement(O.a, null, Object(A.c)(t) || '')
-            case w.GIF:
-              return E.a.createElement(O.a, { bold: !0 }, 'GIF')
+            case S.LIVE_BROADCAST:
+              return h.a.createElement(w.a, { type: 'live' }, A)
+            case S.REPLAY_BROADCAST:
+              return h.a.createElement(w.a, { bold: !0 }, P)
+            case S.VOD:
+              return 'number' == typeof t && h.a.createElement(w.a, null, Object(R.c)(t) || '')
+            case S.GIF:
+              return h.a.createElement(w.a, { bold: !0 }, 'GIF')
             default:
               return null
           }
         },
-        x = a('jV+4'),
-        P = a('mXq/'),
-        L = a('MWbm'),
-        N = I.a.f17dfdb5,
-        k = I.a.e9bd453e,
-        B = I.a.ffeb2fc6,
-        T = (function (e) {
+        j = a('jV+4'),
+        x = a('mXq/'),
+        C = a('MWbm')
+      function B(e, t) {
+        var a = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e)
+          t &&
+            (r = r.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            a.push.apply(a, r)
+        }
+        return a
+      }
+      function N(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var a = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? B(Object(a), !0).forEach(function (t) {
+                m()(e, t, a[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
+            : B(Object(a)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(a, t))
+              })
+        }
+        return e
+      }
+      function L(e) {
+        var t = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (e) {
+            return !1
+          }
+        })()
+        return function () {
+          var a,
+            r = y()(e)
+          if (t) {
+            var n = y()(this).constructor
+            a = Reflect.construct(r, arguments, n)
+          } else a = r.apply(this, arguments)
+          return s()(this, a)
+        }
+      }
+      var k = O.a.f17dfdb5,
+        T = O.a.e9bd453e,
+        _ = O.a.ffeb2fc6,
+        W = (function (e) {
           c()(a, e)
-          var t = m()(a)
+          var t = L(a)
           function a() {
-            return o()(this, a), t.apply(this, arguments)
+            return n()(this, a), t.apply(this, arguments)
           }
           return (
-            p()(a, [
+            o()(a, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props.hideNextItemInfo
-                  return E.a.createElement(
-                    L.a,
-                    { style: _.root },
-                    E.a.createElement(
-                      L.a,
-                      { style: _.wrapper },
+                  return h.a.createElement(
+                    C.a,
+                    { style: F.root },
+                    h.a.createElement(
+                      C.a,
+                      { style: F.wrapper },
                       this.props.renderImage(),
                       e ? null : this._renderNextItemInformation(),
                       this._renderPlayButton(),
@@ -96,28 +145,28 @@
                     r = e.screenName,
                     n = e.type,
                     l = e.verified
-                  return E.a.createElement(
-                    L.a,
-                    { style: _.nextItemInformationWrapper },
-                    E.a.createElement(
-                      L.a,
-                      { style: _.upNextWrapper },
-                      E.a.createElement(h.b, { align: 'left', color: 'white' }, B),
+                  return h.a.createElement(
+                    C.a,
+                    { style: F.nextItemInformationWrapper },
+                    h.a.createElement(
+                      C.a,
+                      { style: F.upNextWrapper },
+                      h.a.createElement(v.b, { align: 'left', color: 'white' }, _),
                     ),
-                    E.a.createElement(x.a, {
+                    h.a.createElement(j.a, {
                       color: 'white',
                       isVerified: l,
                       name: t,
                       screenName: r,
-                      style: _.usernameWrapper,
+                      style: F.usernameWrapper,
                     }),
-                    E.a.createElement(
-                      L.a,
+                    h.a.createElement(
+                      C.a,
                       null,
-                      E.a.createElement(
-                        L.a,
-                        { style: _.badgeContainer },
-                        E.a.createElement(C, { playbackDurationMs: a, type: n }),
+                      h.a.createElement(
+                        C.a,
+                        { style: F.badgeContainer },
+                        h.a.createElement(D, { playbackDurationMs: a, type: n }),
                       ),
                     ),
                   )
@@ -129,11 +178,11 @@
                   var e = this.props,
                     t = e.autoAdvanceDurationMs,
                     a = e.onComplete
-                  return E.a.createElement(
-                    L.a,
-                    { style: _.playWrapper },
-                    E.a.createElement(P.a, {
-                      accessibilityLabel: N,
+                  return h.a.createElement(
+                    C.a,
+                    { style: F.playWrapper },
+                    h.a.createElement(x.a, {
+                      accessibilityLabel: k,
                       duration: t,
                       onComplete: a,
                       onPress: a,
@@ -146,12 +195,12 @@
                 key: '_renderReplayButton',
                 value: function () {
                   var e = this.props.onReplay
-                  return E.a.createElement(
-                    L.a,
-                    { style: _.replayWrapper },
-                    E.a.createElement(v.a, {
-                      accessibilityLabel: k,
-                      icon: E.a.createElement(g.a, null),
+                  return h.a.createElement(
+                    C.a,
+                    { style: F.replayWrapper },
+                    h.a.createElement(b.a, {
+                      accessibilityLabel: T,
+                      icon: h.a.createElement(g.a, null),
                       onPress: e,
                       size: 'medium',
                       type: 'onMediaText',
@@ -162,14 +211,14 @@
             ]),
             a
           )
-        })(E.a.Component)
-      d()(T, 'defaultProps', { autoAdvanceDurationMs: 5e3 })
-      var _ = S.a.create(function (e) {
+        })(h.a.Component)
+      m()(W, 'defaultProps', { autoAdvanceDurationMs: 5e3 })
+      var F = I.a.create(function (e) {
         return {
-          root: n()(n()({}, S.a.absoluteFillObject), {}, { alignItems: 'center', justifyContent: 'center' }),
+          root: N(N({}, I.a.absoluteFillObject), {}, { alignItems: 'center', justifyContent: 'center' }),
           wrapper: { height: '100%', position: 'relative', width: '100%' },
           badgeContainer: { position: 'absolute' },
-          playWrapper: n()(n()({}, S.a.absoluteFillObject), {}, { alignItems: 'center', justifyContent: 'center' }),
+          playWrapper: N(N({}, I.a.absoluteFillObject), {}, { alignItems: 'center', justifyContent: 'center' }),
           replayWrapper: { bottom: e.spaces.space2, left: e.spaces.space4, position: 'absolute' },
           nextItemInformationWrapper: { left: 0, padding: e.spaces.space12, position: 'absolute', top: 0 },
           usernameWrapper: { paddingBottom: e.spaces.space4 },
@@ -180,193 +229,216 @@
     'wHP+': function (e, t, a) {
       'use strict'
       a.r(t)
+      a('OZaJ')
       var r = a('VrFO'),
         n = a.n(r),
         l = a('Y9Ll'),
         o = a.n(l),
         i = a('1Pcy'),
-        p = a.n(i),
-        s = a('5Yy7'),
-        c = a.n(s),
-        u = a('2VqO'),
-        m = a.n(u),
-        y = a('KEM+'),
-        d = a.n(y),
-        f = (a('2G9S'), a('ERkP')),
-        E = a.n(f),
-        h = a('+xEG'),
-        v = a('aoyV'),
-        b = a('kCRK'),
+        c = a.n(i),
+        p = a('5Yy7'),
+        s = a.n(p),
+        u = a('N+ot'),
+        y = a.n(u),
+        f = a('AuHH'),
+        m = a.n(f),
+        d = a('KEM+'),
+        h = a.n(d),
+        v = (a('2G9S'), a('ERkP')),
+        b = a.n(v),
+        E = a('+xEG'),
+        O = a('aoyV'),
+        g = a('kCRK'),
         I = a('fZNH'),
-        g = a('ub6r'),
-        S = a('mf6X'),
-        A = a('0nHQ'),
-        O = a('USG3'),
-        w = a('Q0n6'),
+        R = a('ub6r'),
+        w = a('mf6X'),
+        S = a('0nHQ'),
+        A = a('USG3'),
+        P = a('Q0n6'),
         D = a('5VhU'),
-        R = a('hhMf'),
-        C = a('Ur4q'),
-        x = a('oH2E'),
-        P = a('TlAO'),
-        L = a('mNIZ'),
-        N = a('MWbm'),
-        k = a('VLhD'),
-        B = (function (e) {
-          c()(a, e)
-          var t = m()(a)
-          function a() {
-            var e
-            n()(this, a)
-            for (var r = arguments.length, l = new Array(r), o = 0; o < r; o++) l[o] = arguments[o]
-            return (
-              (e = t.call.apply(t, [this].concat(l))),
-              d()(p()(e), '_render', function (t) {
-                var a,
-                  r = e.props,
-                  n = r.guestsState,
-                  l = r.isDocked,
-                  o = r.nextItemInfo,
-                  i = r.onUpNextComplete,
-                  p = r.onUpNextReplay,
-                  s = r.playerApi,
-                  c = r.playerDisplayOptions,
-                  u = r.playerState,
-                  m = r.poster,
-                  y = r.renderUpNextImage,
-                  d = r.shouldRenderUpNext
-                if (!s || !u) return null
-                var f = Object(w.e)(u),
-                  h =
-                    'PLAY_REQUESTED' !==
-                    (null == u || null === (a = u.controls) || void 0 === a ? void 0 : a.playState),
-                  b = t.Observer,
-                  g = t.observed,
-                  D = Object(k.c)(u, g, k.b),
-                  R = !!u.error,
-                  L = !(null != c && c.hidePosterImage)
-                return E.a.createElement(
-                  I.a,
-                  { playerState: u },
-                  E.a.createElement(
-                    b,
-                    { click: !0, interactionKey: k.a.Root, mousemove: !0, mouseover: !0 },
-                    R
-                      ? null
-                      : E.a.createElement(
-                          E.a.Fragment,
-                          null,
-                          E.a.createElement(C.a, {
-                            hideControls: D,
-                            isTouchOnlyUI: k.b,
-                            playerApi: s,
-                            playerDisplayOptions: c,
-                            playerState: u,
-                          }),
-                          L && E.a.createElement(x.a, { imageSrc: m, playerApi: s, playerState: u, withPlayButton: h }),
-                          E.a.createElement(v.a, { playerState: u }),
-                          d
-                            ? E.a.createElement(P.a, {
-                                hideNextItemInfo: l,
-                                nextItemInfo: o,
-                                onComplete: i,
-                                onReplay: p,
-                                renderImage: y,
-                              })
-                            : l && f
-                            ? E.a.createElement(S.b, {
-                                isLive: !!f.isLive,
-                                mediaType: Object(k.d)(f.contentType, !!f.isLive),
-                                playerApi: s,
-                                playerState: u,
-                              })
-                            : e._renderDefault(u, n, s, D, b, f),
-                        ),
-                    E.a.createElement(
-                      O.a,
-                      { show: R },
-                      R && E.a.createElement(A.a, { imageSrc: m, playerApi: s, playerState: u }),
-                    ),
-                  ),
-                )
-              }),
-              d()(p()(e), '_renderDefault', function (t, a, r, n, l, o) {
-                var i,
-                  p = e.props,
-                  s = p.containerRef,
-                  c = p.playerDisplayOptions,
-                  u = (null == o ? void 0 : o.contentType) === b.a.GIF,
-                  m = n && t.isPreview,
-                  y = !(!n || null == o || !o.isLive),
-                  d = !(null != c && c.hideLeftBadges) && (u || m || y),
-                  f = !(null != c && c.hideRightBadges) && n,
-                  v = null == t || null === (i = t.controls) || void 0 === i ? void 0 : i.isPosterShown
-                return E.a.createElement(
-                  E.a.Fragment,
-                  null,
-                  E.a.createElement(D.a, { guestsState: a, playerState: t }),
-                  !u &&
-                    E.a.createElement(
-                      l,
-                      { focus: !0, interactionKey: k.a.VideoCTA, mouseover: !0 },
-                      E.a.createElement(O.a, { show: !n }, E.a.createElement(L.a, { playerApi: r, playerState: t })),
-                    ),
-                  !u &&
-                    !v &&
-                    E.a.createElement(
-                      E.a.Fragment,
-                      null,
-                      E.a.createElement(
-                        l,
-                        { focus: !0, interactionKey: k.a.A11YHook },
-                        E.a.createElement(N.a, { focusable: !0 }),
-                      ),
-                      E.a.createElement(
-                        l,
-                        { focus: !0, interactionKey: k.a.ControlBar, mouseover: !0, touch: !0 },
-                        E.a.createElement(g.a, {
-                          containerRef: s,
-                          hideControls: n,
-                          playerApi: r,
-                          playerState: t,
-                          publisherDisplayName: null == o ? void 0 : o.publisherDisplayName,
-                          publisherProfileImageUrl: null == o ? void 0 : o.publisherProfileImageUrl,
-                          showScrubber: 'ad' !== (null == o ? void 0 : o.displayType) && !(null != o && o.isLive),
-                        }),
-                      ),
-                    ),
-                  E.a.createElement(
-                    O.a,
-                    { show: d },
-                    E.a.createElement(h.a, { playerDisplayOptions: c, playerState: t, position: 'left' }),
-                  ),
-                  E.a.createElement(
-                    O.a,
-                    { show: f },
-                    E.a.createElement(h.a, { playerDisplayOptions: c, playerState: t, position: 'right' }),
-                  ),
-                )
-              }),
-              e
-            )
+        j = a('hhMf'),
+        x = a('Ur4q'),
+        C = a('oH2E'),
+        B = a('TlAO'),
+        N = a('mNIZ'),
+        L = a('MWbm'),
+        k = a('VLhD')
+      function T(e) {
+        var t = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (e) {
+            return !1
           }
+        })()
+        return function () {
+          var a,
+            r = m()(e)
+          if (t) {
+            var n = m()(this).constructor
+            a = Reflect.construct(r, arguments, n)
+          } else a = r.apply(this, arguments)
+          return y()(this, a)
+        }
+      }
+      var _ = (function (e) {
+        s()(a, e)
+        var t = T(a)
+        function a() {
+          var e
+          n()(this, a)
+          for (var r = arguments.length, l = new Array(r), o = 0; o < r; o++) l[o] = arguments[o]
           return (
-            o()(a, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.playerApi,
-                    a = e.playerState
-                  return t && a
-                    ? E.a.createElement(R.a, null, E.a.createElement(R.a.Context.Consumer, null, this._render))
-                    : null
-                },
-              },
-            ]),
-            a
+            (e = t.call.apply(t, [this].concat(l))),
+            h()(c()(e), '_render', function (t) {
+              var a,
+                r = e.props,
+                n = r.guestsState,
+                l = r.isDocked,
+                o = r.nextItemInfo,
+                i = r.onUpNextComplete,
+                c = r.onUpNextReplay,
+                p = r.playerApi,
+                s = r.playerDisplayOptions,
+                u = r.playerState,
+                y = r.poster,
+                f = r.renderUpNextImage,
+                m = r.shouldRenderUpNext
+              if (!p || !u) return null
+              var d = Object(P.e)(u),
+                h =
+                  'PLAY_REQUESTED' !== (null == u || null === (a = u.controls) || void 0 === a ? void 0 : a.playState),
+                v = t.Observer,
+                E = t.observed,
+                g = Object(k.c)(u, E, k.b),
+                R = !!u.error,
+                D = !(null != s && s.hidePosterImage)
+              return b.a.createElement(
+                I.a,
+                { playerState: u },
+                b.a.createElement(
+                  v,
+                  { click: !0, interactionKey: k.a.Root, mousemove: !0, mouseover: !0 },
+                  R
+                    ? null
+                    : b.a.createElement(
+                        b.a.Fragment,
+                        null,
+                        b.a.createElement(x.a, {
+                          hideControls: g,
+                          isTouchOnlyUI: k.b,
+                          playerApi: p,
+                          playerDisplayOptions: s,
+                          playerState: u,
+                        }),
+                        D && b.a.createElement(C.a, { imageSrc: y, playerApi: p, playerState: u, withPlayButton: h }),
+                        b.a.createElement(O.a, { playerState: u }),
+                        m
+                          ? b.a.createElement(B.a, {
+                              hideNextItemInfo: l,
+                              nextItemInfo: o,
+                              onComplete: i,
+                              onReplay: c,
+                              renderImage: f,
+                            })
+                          : l && d
+                          ? b.a.createElement(w.b, {
+                              isLive: !!d.isLive,
+                              mediaType: Object(k.d)(d.contentType, !!d.isLive),
+                              playerApi: p,
+                              playerState: u,
+                            })
+                          : e._renderDefault(u, n, p, g, v, d),
+                      ),
+                  b.a.createElement(
+                    A.a,
+                    { show: R },
+                    R && b.a.createElement(S.a, { imageSrc: y, playerApi: p, playerState: u }),
+                  ),
+                ),
+              )
+            }),
+            h()(c()(e), '_renderDefault', function (t, a, r, n, l, o) {
+              var i,
+                c = e.props,
+                p = c.containerRef,
+                s = c.playerDisplayOptions,
+                u = (null == o ? void 0 : o.contentType) === g.a.GIF,
+                y = n && t.isPreview,
+                f = !(!n || null == o || !o.isLive),
+                m = !(null != s && s.hideLeftBadges) && (u || y || f),
+                d = !(null != s && s.hideRightBadges) && n,
+                h = null == t || null === (i = t.controls) || void 0 === i ? void 0 : i.isPosterShown
+              return b.a.createElement(
+                b.a.Fragment,
+                null,
+                b.a.createElement(D.a, { guestsState: a, playerState: t }),
+                !u &&
+                  b.a.createElement(
+                    l,
+                    { focus: !0, interactionKey: k.a.VideoCTA, mouseover: !0 },
+                    b.a.createElement(A.a, { show: !n }, b.a.createElement(N.a, { playerApi: r, playerState: t })),
+                  ),
+                !u &&
+                  !h &&
+                  b.a.createElement(
+                    b.a.Fragment,
+                    null,
+                    b.a.createElement(
+                      l,
+                      { focus: !0, interactionKey: k.a.A11YHook },
+                      b.a.createElement(L.a, { focusable: !0 }),
+                    ),
+                    b.a.createElement(
+                      l,
+                      { focus: !0, interactionKey: k.a.ControlBar, mouseover: !0, touch: !0 },
+                      b.a.createElement(R.a, {
+                        containerRef: p,
+                        hideControls: n,
+                        playerApi: r,
+                        playerState: t,
+                        publisherDisplayName: null == o ? void 0 : o.publisherDisplayName,
+                        publisherProfileImageUrl: null == o ? void 0 : o.publisherProfileImageUrl,
+                        showScrubber: 'ad' !== (null == o ? void 0 : o.displayType) && !(null != o && o.isLive),
+                      }),
+                    ),
+                  ),
+                b.a.createElement(
+                  A.a,
+                  { show: m },
+                  b.a.createElement(E.a, { playerDisplayOptions: s, playerState: t, position: 'left' }),
+                ),
+                b.a.createElement(
+                  A.a,
+                  { show: d },
+                  b.a.createElement(E.a, { playerDisplayOptions: s, playerState: t, position: 'right' }),
+                ),
+              )
+            }),
+            e
           )
-        })(E.a.Component)
-      t.default = B
+        }
+        return (
+          o()(a, [
+            {
+              key: 'render',
+              value: function () {
+                var e = this.props,
+                  t = e.playerApi,
+                  a = e.playerState
+                return t && a
+                  ? b.a.createElement(j.a, null, b.a.createElement(j.a.Context.Consumer, null, this._render))
+                  : null
+              },
+            },
+          ]),
+          a
+        )
+      })(b.a.Component)
+      t.default = _
     },
   },
 ])

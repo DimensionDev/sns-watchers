@@ -1,151 +1,179 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [164],
+  [163],
   {
-    BXJq: function (t, e, a) {
+    BXJq: function (t, e, r) {
       'use strict'
-      a.d(e, 'a', function () {
-        return l
+      r.d(e, 'a', function () {
+        return u
       })
-      var i = a('ddV6'),
-        n = a.n(i),
-        o = (a('7x/C'), a('JtPf'), a('Qavd'), a('ERkP')),
-        r = a.n(o),
-        s = a('dgjd')
-      function l(t) {
+      var a = r('ddV6'),
+        n = r.n(a),
+        i = (r('Qavd'), r('JtPf'), r('7x/C'), r('ERkP')),
+        o = r.n(i),
+        s = r('dgjd')
+      function u(t) {
         var e = Object(s.a)(t),
-          a = e.handlers,
-          i = e.space,
-          o = r.a.useState(!1),
-          l = n()(o, 2),
-          u = l[0],
-          d = l[1],
-          c = { hasReminderSet: !1, onClick: void 0, scheduledStart: void 0 }
+          r = e.handlers,
+          a = e.space,
+          i = o.a.useState(!1),
+          u = n()(i, 2),
+          c = u[0],
+          l = u[1],
+          d = { hasReminderSet: !1, onClick: void 0, scheduledStart: void 0 }
         return (
           (function (t) {
             return t && t.host && t.scheduled_start && ('NotStarted' === t.state || 'PrePublished' === t.state)
-          })(i) &&
-            ((c.hasReminderSet = Boolean(null == i ? void 0 : i.is_subscribed)),
-            (c.onClick = function () {
+          })(a) &&
+            ((d.hasReminderSet = Boolean(null == a ? void 0 : a.is_subscribed)),
+            (d.onClick = function () {
               var t = function () {
-                return d(!1)
+                return l(!1)
               }
-              d(!0), c.hasReminderSet ? a.unsubscribe().finally(t) : a.subscribe().finally(t)
+              l(!0), d.hasReminderSet ? r.unsubscribe().finally(t) : r.subscribe().finally(t)
             }),
-            (c.scheduledStart = null == i ? void 0 : i.scheduled_start)),
-          { props: c, isSubscribing: u }
+            (d.scheduledStart = null == a ? void 0 : a.scheduled_start)),
+          { props: d, isSubscribing: c }
         )
       }
     },
-    U1mC: function (t, e, a) {
+    U1mC: function (t, e, r) {
       'use strict'
-      a.r(e),
-        a.d(e, '__DANGEROUS_IMPORT__', function () {
-          return f
+      r.r(e),
+        r.d(e, '__DANGEROUS_IMPORT__', function () {
+          return m
         })
-      var i = a('RhWx'),
-        n = a.n(i),
-        o = a('97Jx'),
-        r = a.n(o),
-        s = a('yiKp'),
-        l = a.n(s),
-        u = (a('7xRU'), a('M+/F'), a('LW0h'), a('7x/C'), a('2G9S'), a('ERkP')),
-        d = a.n(u),
-        c = a('v6aA'),
-        p = a('B/Qy'),
-        h = a('vYiB'),
-        v = a('O07O'),
-        b = a('dgjd'),
-        S = a('BXJq'),
-        m = a('AooF'),
-        f = function (t) {
-          var e,
-            a = d.a.useContext(c.a).featureSwitches,
-            i = Object(p.a)(t.audioSpaceId),
-            o = Object(b.a)(t.audioSpaceId),
-            s = o.handlers,
-            u = o.space,
-            v = o.utils,
-            f = v.state() === m.a.StateEnum.unavailable,
-            y = Object(S.a)(t.audioSpaceId),
-            k = {}
-          k =
-            !1 === t.isInteractive
-              ? { link: void 0, onButtonClick: void 0 }
-              : (t.withDirectJoin && v.is.Running) || v.is.replayable
-              ? {
-                  onClick: function () {
-                    return s.join('card')
-                  },
-                }
-              : { link: i, onButtonClick: y.props.onClick }
-          var R = v.state(),
-            _ = (function (t) {
-              return t ? [t.host].concat(n()(t.cohosts), n()(t.participants.speakers)).filter(Boolean) : []
-            })(u),
-            w = l()(
-              {
-                disabled: y.isSubscribing,
-                hasReminderSet: y.props.hasReminderSet,
-                scheduledStart: y.props.scheduledStart,
-                isJoined: v.is.joined,
-                title: v.title(),
-                replayStartTime: void 0,
-                replayDuration: void 0,
-                withSquareBottomBorderRadius: t.withSquareBottomBorderRadius,
-                withStraightBorders: t.withStraightBorders,
-                withoutButton: t.withoutButton,
-              },
-              k,
-            ),
-            g = u || {},
-            P = g.ended_at,
-            C = g.started_at
-          C && P && ((w.replayStartTime = C), (w.replayDuration = P - C))
-          var j = { shouldUseV2: !1, propsForV2: void 0 }
-          2 === a.getValue('voice_rooms_card_version') &&
-            ((j.shouldUseV2 = !0),
-            (j.propsForV2 = l()(
-              l()({}, w),
-              {},
-              {
-                host: null == u ? void 0 : u.host,
-                participants: _.slice(0, 3),
-                palette: null == u ? void 0 : u.hostPalette,
-                total: null == u ? void 0 : u.participants.total,
-                state: R,
-                button: void 0,
-              },
-            )),
-            v.is.joined && v.is.replayable && (j.propsForV2.button = d.a.createElement(B, j.propsForV2)))
-          return d.a.createElement(
-            h.a,
-            {
-              onImpression: function () {
-                v.scribe('::::audiospace_card:impression')
-              },
-            },
-            d.a.createElement(
-              m.a,
-              r()(
-                {
-                  disableInteractionsIfUnavailable: !0,
-                  hostName: null == u || null === (e = u.host) || void 0 === e ? void 0 : e.display_name,
-                  isReplay: R === m.a.StateEnum.replay,
-                  isUnavailable: f,
-                  participants: _,
-                  state: null == u ? void 0 : u.state,
-                },
-                w,
-                j,
-              ),
-            ),
-          )
+      r('+KXO'), r('1t7P'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
+      var a = r('RhWx'),
+        n = r.n(a),
+        i = r('97Jx'),
+        o = r.n(i),
+        s = r('KEM+'),
+        u = r.n(s),
+        c = (r('7xRU'), r('M+/F'), r('LW0h'), r('2G9S'), r('ERkP')),
+        l = r.n(c),
+        d = r('v6aA'),
+        p = r('B/Qy'),
+        b = r('vYiB'),
+        h = r('O07O'),
+        v = r('dgjd'),
+        f = r('BXJq'),
+        S = r('AooF')
+      function y(t, e) {
+        var r = Object.keys(t)
+        if (Object.getOwnPropertySymbols) {
+          var a = Object.getOwnPropertySymbols(t)
+          e &&
+            (a = a.filter(function (e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
+            })),
+            r.push.apply(r, a)
         }
-      function B(t) {
-        var e = v.a.usePlayButtonProps(),
-          a = e.isPlaying,
-          i = e.togglePlayback
-        return d.a.createElement(m.a.ButtonV2, r()({}, t, { onButtonClick: i, replayIsPlaying: a }))
+        return r
+      }
+      function O(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var r = null != arguments[e] ? arguments[e] : {}
+          e % 2
+            ? y(Object(r), !0).forEach(function (e) {
+                u()(t, e, r[e])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r))
+            : y(Object(r)).forEach(function (e) {
+                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+              })
+        }
+        return t
+      }
+      var m = function (t) {
+        var e,
+          r = l.a.useContext(d.a).featureSwitches,
+          a = Object(p.a)(t.audioSpaceId),
+          i = Object(v.a)(t.audioSpaceId),
+          s = i.handlers,
+          u = i.space,
+          c = i.utils,
+          h = c.state() === S.a.StateEnum.unavailable,
+          y = Object(f.a)(t.audioSpaceId),
+          m = {}
+        m =
+          !1 === t.isInteractive
+            ? { link: void 0, onButtonClick: void 0 }
+            : (t.withDirectJoin && c.is.Running) || c.is.replayable
+            ? {
+                onClick: function () {
+                  return s.join('card')
+                },
+              }
+            : { link: a, onButtonClick: y.props.onClick }
+        var w = c.state(),
+          P = (function (t) {
+            return t ? [t.host].concat(n()(t.cohosts), n()(t.participants.speakers)).filter(Boolean) : []
+          })(u),
+          g = O(
+            {
+              disabled: y.isSubscribing,
+              hasReminderSet: y.props.hasReminderSet,
+              scheduledStart: y.props.scheduledStart,
+              isJoined: c.is.joined,
+              title: c.title(),
+              replayStartTime: void 0,
+              replayDuration: void 0,
+              withSquareBottomBorderRadius: t.withSquareBottomBorderRadius,
+              withStraightBorders: t.withStraightBorders,
+              withoutButton: t.withoutButton,
+            },
+            m,
+          ),
+          B = u || {},
+          k = B.ended_at,
+          R = B.started_at
+        R && k && ((g.replayStartTime = R), (g.replayDuration = k - R))
+        var _ = { shouldUseV2: !1, propsForV2: void 0 }
+        2 === r.getValue('voice_rooms_card_version') &&
+          ((_.shouldUseV2 = !0),
+          (_.propsForV2 = O(
+            O({}, g),
+            {},
+            {
+              host: null == u ? void 0 : u.host,
+              participants: P.slice(0, 3),
+              palette: null == u ? void 0 : u.hostPalette,
+              total: null == u ? void 0 : u.participants.total,
+              state: w,
+              button: void 0,
+            },
+          )),
+          c.is.joined && c.is.replayable && (_.propsForV2.button = l.a.createElement(j, _.propsForV2)))
+        return l.a.createElement(
+          b.a,
+          {
+            onImpression: function () {
+              c.scribe('::::audiospace_card:impression')
+            },
+          },
+          l.a.createElement(
+            S.a,
+            o()(
+              {
+                disableInteractionsIfUnavailable: !0,
+                hostName: null == u || null === (e = u.host) || void 0 === e ? void 0 : e.display_name,
+                isReplay: w === S.a.StateEnum.replay,
+                isUnavailable: h,
+                participants: P,
+                state: null == u ? void 0 : u.state,
+              },
+              g,
+              _,
+            ),
+          ),
+        )
+      }
+      function j(t) {
+        var e = h.a.usePlayButtonProps(),
+          r = e.isPlaying,
+          a = e.togglePlayback
+        return l.a.createElement(S.a.ButtonV2, o()({}, t, { onButtonClick: a, replayIsPlaying: r }))
       }
     },
   },

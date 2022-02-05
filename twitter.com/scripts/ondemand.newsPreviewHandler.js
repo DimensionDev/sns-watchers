@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [345],
+  [344],
   {
     '0mK8': function (e, t, n) {
       'use strict'
@@ -45,7 +45,7 @@
             profileImageUrl: t.profile_image_url_https,
             screenName: t.screen_name,
             screenNameSize: o,
-            style: [h.authorUserName, c],
+            style: [b.authorUserName, c],
             withHoverCard: s,
             withLink: m,
             withScreenName: g,
@@ -55,23 +55,23 @@
           var t = e.style
           return a.a.createElement(
             i.a,
-            { style: [h.lightningBadge, t] },
-            a.a.createElement(o.a, { style: h.lightningIcon }),
+            { style: [b.lightningBadge, t] },
+            a.a.createElement(o.a, { style: b.lightningIcon }),
           )
         },
         g = function (e) {
           var t = e.icon
           return a.a.createElement(
             i.a,
-            { style: h.placeholderIconContainer },
+            { style: b.placeholderIconContainer },
             'news' === t
-              ? a.a.createElement(c.a, { style: h.placeholderIcon })
+              ? a.a.createElement(c.a, { style: b.placeholderIcon })
               : 'lists' === t
-              ? a.a.createElement(l.a, { style: h.placeholderIcon })
-              : a.a.createElement(s.a, { style: h.placeholderIcon }),
+              ? a.a.createElement(l.a, { style: b.placeholderIcon })
+              : a.a.createElement(s.a, { style: b.placeholderIcon }),
           )
         },
-        h = d.a.create(function (e) {
+        b = d.a.create(function (e) {
           return {
             authorUserName: { alignItems: 'center' },
             lightningBadge: {
@@ -116,11 +116,11 @@
         m = n('yrzJ'),
         p = n('XrEN'),
         g = n('Q0VY'),
-        h = n('FiRh'),
-        b = u.a.create(function (e) {
+        b = n('FiRh'),
+        h = u.a.create(function (e) {
           return { description: { marginTop: e.spaces.space12 } }
         }),
-        v = function (e, t, n) {
+        f = function (e, t, n) {
           return n && !p.a.VIDEO_TYPES.includes(t)
             ? (function (e) {
                 var t,
@@ -132,12 +132,12 @@
                 return i.a.createElement(
                   d.b,
                   { color: 'gray700', link: e.permalink },
-                  f(t, { screenName: i.a.createElement(m.a, { screenName: e.user.screen_name }) }),
+                  v(t, { screenName: i.a.createElement(m.a, { screenName: e.user.screen_name }) }),
                 )
               })(e, t)
             : null
         },
-        f = function (e, t) {
+        v = function (e, t) {
           switch (e) {
             case 'animated_gif':
               return i.a.createElement(c.a.I18NFormatMessage, { $i18n: 'a5d9d070' }, t.screenName)
@@ -158,17 +158,17 @@
             l = c ? g.a.descriptionTextParts(c) : []
           return i.a.createElement(
             s.a,
-            { style: b.description },
+            { style: h.description },
             l.length
               ? i.a.createElement(
                   d.b,
                   null,
                   l.map(function (e, t) {
-                    return i.a.createElement(h.b, { key: 'events_textpart_'.concat(t), linkify: !0, part: e })
+                    return i.a.createElement(b.b, { key: 'events_textpart_'.concat(t), linkify: !0, part: e })
                   }),
                 )
               : null,
-            v(t, a, r),
+            f(t, a, r),
             o ? i.a.createElement(d.b, { color: 'gray700' }, o) : null,
           )
         },
@@ -192,19 +192,19 @@
           m = e.preTitle,
           p = e.remindMeButton,
           g = e.time,
-          h = e.title,
-          b = e.withHashflags,
-          v = function () {
+          b = e.title,
+          h = e.withHashflags,
+          f = function () {
             return t
               ? i.a.createElement(
                   s.a,
                   null,
                   i.a.createElement(r.a, { author: t, size: 'body', withLink: !0, withScreenName: !0 }),
-                  g ? f(!0) : null,
+                  g ? v(!0) : null,
                 )
               : null
           },
-          f = function () {
+          v = function () {
             var e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0]
             return i.a.createElement(
               d.b,
@@ -212,21 +212,21 @@
               g,
             )
           },
-          T = function () {
+          O = function () {
             return m
               ? i.a.createElement(
                   E.a,
                   null,
                   i.a.createElement(d.b, { color: 'gray700', numberOfLines: 1, size: 'body', weight: 'bold' }, m),
-                  g ? f() : null,
+                  g ? v() : null,
                 )
               : null
           }
         return i.a.createElement(
           i.a.Fragment,
           null,
-          c && m ? T() : v() || T(),
-          i.a.createElement(d.b, { dir: 'auto', size: 'title4', style: w.title, weight: 'heavy', withHashflags: b }, h),
+          c && m ? O() : f() || O(),
+          i.a.createElement(d.b, { dir: 'auto', size: 'title4', style: w.title, weight: 'heavy', withHashflags: h }, b),
           a || n || o
             ? i.a.createElement(y, { coverTweet: n, description: a, imageAttribution: o, mediaType: l, pivotText: u })
             : null,
@@ -263,8 +263,8 @@
             r = e.link,
             i = e.onClick,
             g = e.originalImage,
-            h = e.pivotText,
-            b = e.title
+            b = e.pivotText,
+            h = e.title
           return o.a.createElement(
             s.a,
             { link: r, onClick: i },
@@ -282,7 +282,7 @@
             o.a.createElement(
               l.a,
               { style: p.contentContainer },
-              o.a.createElement(c.a, { description: n, pivotText: h, preTitle: t, title: b }),
+              o.a.createElement(c.a, { description: n, pivotText: b, preTitle: t, title: h }),
             ),
           )
         }
@@ -293,13 +293,41 @@
     },
     tPQo: function (e, t, n) {
       'use strict'
-      var r = n('yiKp'),
+      n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
+      var r = n('KEM+'),
         a = n.n(r),
         i = n('ezF+'),
         o = n('VPAj'),
         c = n('caTy'),
         l = n('zh9S'),
         s = n('P1r1')
+      function u(e, t) {
+        var n = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e)
+          t &&
+            (r = r.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            n.push.apply(n, r)
+        }
+        return n
+      }
+      function d(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? u(Object(n), !0).forEach(function (t) {
+                a()(e, t, n[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : u(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+              })
+        }
+        return e
+      }
       t.a = function (e, t) {
         return i.g({
           isFocusable: Object(o.a)(!0),
@@ -311,21 +339,21 @@
           createProps: function (e) {
             var n = e.actions.scribe,
               r = e.data.dataSaverMode,
-              i = e.entry,
-              o = e.scribeNamespace,
-              l = i.content,
-              s = l.landingUrl && Object(c.b)(l.landingUrl),
-              u = t({ content: l }),
-              d = {
-                author: l.author,
-                link: s,
-                originalImage: r ? void 0 : l.originalImage,
+              a = e.entry,
+              i = e.scribeNamespace,
+              o = a.content,
+              l = o.landingUrl && Object(c.b)(o.landingUrl),
+              s = t({ content: o }),
+              u = {
+                author: o.author,
+                link: l,
+                originalImage: r ? void 0 : o.originalImage,
                 onClick: function () {
-                  n(a()(a()({}, o), {}, { action: 'click' }), void 0)
+                  n(d(d({}, i), {}, { action: 'click' }), void 0)
                 },
-                title: l.title,
+                title: o.title,
               }
-            return a()(a()({}, d), u)
+            return d(d({}, u), s)
           },
         })
       }

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [35],
+  [34],
   {
     KkRJ: function (e, t, a) {
       'use strict'
@@ -7,11 +7,11 @@
         a.d(t, 'default', function () {
           return v
         })
-      a('KqXw'), a('WNMA')
+      a('WNMA'), a('KqXw')
       var n = a('ERkP'),
         r = a.n(n),
         o = (a('z84I'), a('B/Qy')),
-        c = a('zCf4'),
+        c = a('Ty5D'),
         i = a('MWbm'),
         s = a('5Vk4'),
         l = a('sgih'),
@@ -19,10 +19,10 @@
         p = a('jtO7'),
         d = a('rHpw'),
         m = a('PaZX')
-      function f(e) {
+      function b(e) {
         var t = e.audioSpaceId,
           a = (function (e) {
-            var t = Object(c.f)(),
+            var t = Object(c.g)(),
               a = Object(o.a)(e)
             return function () {
               t.push(a)
@@ -50,11 +50,11 @@
               title: m.c.reportThisSpace,
               withGutter: !0,
             }),
-            r.a.createElement(b, { audioSpaceId: t, returnToPreview: a }),
+            r.a.createElement(f, { audioSpaceId: t, returnToPreview: a }),
           ),
         )
       }
-      function b(e) {
+      function f(e) {
         var t = e.audioSpaceId,
           a = e.returnToPreview,
           n = m.a.useReportingItems({ audioSpaceId: t })
@@ -82,11 +82,11 @@
           actionList: { marginTop: e.spaces.space20 },
         }
       })
-      f.ActionList = b
+      b.ActionList = f
       var k = a('Z5jE')
       function v(e) {
         var t = Object(k.a)(e.match)
-        return r.a.createElement(f, { audioSpaceId: t })
+        return r.a.createElement(b, { audioSpaceId: t })
       }
     },
     Z5jE: function (e, t, a) {
@@ -111,7 +111,6 @@
         p = a('cm6r'),
         d = a('rHpw'),
         m = a('MWbm'),
-        f = ['align', 'color', 'label'],
         b = d.a.create(function (e) {
           return {
             container: { backgroundColor: e.colors.cellBackground },
@@ -128,8 +127,8 @@
           a = void 0 === t ? 'center' : t,
           n = e.color,
           o = e.label,
-          i = c()(e, f),
-          g = u.a.generate({
+          i = c()(e, ['align', 'color', 'label']),
+          f = u.a.generate({
             backgroundColor: d.a.theme.colors.transparent,
             color: d.a.theme.colors[n],
             insetFocusRing: !0,
@@ -139,7 +138,7 @@
           { style: b.container },
           s.a.createElement(
             p.a,
-            r()({}, i, { interactiveStyles: g, style: b.root }),
+            r()({}, i, { interactiveStyles: f, style: b.root }),
             s.a.createElement(l.b, { align: a, color: n }, o),
           ),
         )

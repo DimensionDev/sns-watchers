@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [194],
+  [193],
   {
     '2Jqb': function (e, n, t) {
       ;(function (i) {
@@ -3058,7 +3058,7 @@
             }.call(n, t, n, e)) || (e.exports = r),
             window && (window.branch = Et)
         })()
-      }.call(this, t('fRV1')))
+      }.call(this, t('yLpj')))
     },
     WDmn: function (e, n, t) {
       'use strict'
@@ -3072,7 +3072,7 @@
         t.d(n, 'setJourneyDeeplink', function () {
           return g
         })
-      t('849X'), t('TJCb'), t('7x/C'), t('JtPf')
+      t('JtPf'), t('7x/C')
       var i = t('zh9S'),
         r = t('2Jqb'),
         a = t.n(r),

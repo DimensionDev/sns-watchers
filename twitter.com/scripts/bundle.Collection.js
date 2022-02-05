@@ -1,163 +1,213 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [41],
+  [40],
   {
-    '3L7q': function (e, t, n) {
+    '3L7q': function (e, t, r) {
       'use strict'
-      n.r(t)
-      n('KqXw'), n('WNMA')
-      var r = n('ERkP'),
-        o = n.n(r),
-        a = n('SslV'),
-        i = n('es0u'),
-        c = n('mw9i'),
-        s = n('KEM+'),
-        l = n.n(s),
-        u = n('yiKp'),
-        d = n.n(u),
-        p = n('ezF+'),
-        f =
-          (n('lTEL'),
-          n('7x/C'),
-          n('JtPf'),
-          n('87if'),
-          n('kYxP'),
+      r.r(t)
+      r('WNMA'), r('KqXw')
+      var n = r('ERkP'),
+        o = r.n(n),
+        c = r('SslV'),
+        i = r('es0u'),
+        a = r('mw9i'),
+        s = (r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('KEM+')),
+        u = r.n(s),
+        l = r('ezF+'),
+        p =
+          (r('JtPf'),
+          r('7x/C'),
+          r('87if'),
+          r('lTEL'),
+          r('kYxP'),
           {
             loader: function () {
-              return n.e(243).then(n.bind(null, 'U0EQ'))
+              return r.e(242).then(r.bind(null, 'U0EQ'))
             },
             loaderKey: 'collectionHeaderLoader',
-            strategy: n('XBtf').a.Critical,
+            strategy: r('XBtf').a.Critical,
           }),
-        m = p.e(f),
-        y = n('8UdT'),
-        w = n('QIgh'),
-        I = d()(d()({}, w.b), {}, l()({}, y.a.CollectionHeader, m)),
-        b = n('3XMw'),
-        C = n.n(b),
-        x = n('yoO3'),
-        E = n('fTQJ'),
-        h = n('VS6U'),
-        g = n('7JQg'),
-        T = C.a.f8cafdc1,
-        v = C.a.ddf0ba7e
-      t.default = Object(g.c)({ page: 'collection', section: 'tweets' })(function (e) {
+        d = l.e(p),
+        f = r('8UdT')
+      function O(e, t) {
+        var r = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var n = Object.getOwnPropertySymbols(e)
+          t &&
+            (n = n.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            r.push.apply(r, n)
+        }
+        return r
+      }
+      function b(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var r = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? O(Object(r), !0).forEach(function (t) {
+                u()(e, t, r[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
+            : O(Object(r)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+              })
+        }
+        return e
+      }
+      var y = b(b({}, r('QIgh').b), {}, u()({}, f.a.CollectionHeader, d)),
+        j = r('3XMw'),
+        m = r.n(j),
+        w = r('yoO3'),
+        g = r('fTQJ'),
+        h = r('VS6U'),
+        P = r('7JQg'),
+        v = m.a.f8cafdc1,
+        E = m.a.ddf0ba7e
+      t.default = Object(P.c)({ page: 'collection', section: 'tweets' })(function (e) {
         var t = e.history,
-          n = e.match.params.collectionId
+          r = e.match.params.collectionId
         return o.a.createElement(
-          x.a,
+          w.a,
           null,
           o.a.createElement(h.a, {
             backLocation: '/',
             history: t,
             primaryContent: o.a.createElement(
-              c.a,
+              a.a,
               null,
-              o.a.createElement(E.a, { entryConfiguration: I, module: Object(a.a)(n), title: T }),
+              o.a.createElement(g.a, { entryConfiguration: y, module: Object(c.a)(r), title: v }),
             ),
             sidebarContent: o.a.createElement(i.a, null),
-            title: v,
+            title: E,
           }),
         )
       })
     },
-    SslV: function (e, t, n) {
+    SslV: function (e, t, r) {
       'use strict'
-      var r = n('yiKp'),
-        o = n.n(r),
-        a = n('m3Bd'),
-        i = n.n(a),
-        c = n('RhWx'),
-        s = n.n(c),
-        l = (n('KqXw'), n('MvUL'), n('2G9S'), n('ho0z'), n('1t7P'), n('jQ/y'), n('CXcw')),
-        u = n('vWJI'),
-        d = n('8UdT'),
-        p = n('9/1j'),
-        f = n('t0aI'),
-        m = n('VrCx'),
-        y = n('Qyxo'),
-        w = function (e, t) {
+      r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
+      var n = r('KEM+'),
+        o = r.n(n),
+        c = r('m3Bd'),
+        i = r.n(c),
+        a = r('RhWx'),
+        s = r.n(a),
+        u = (r('MvUL'), r('KqXw'), r('2G9S'), r('ho0z'), r('jQ/y'), r('CXcw')),
+        l = r('vWJI'),
+        p = r('8UdT'),
+        d = r('9/1j'),
+        f = r('t0aI'),
+        O = r('VrCx'),
+        b = r('Qyxo'),
+        y = function (e, t) {
           if (0 !== e.length) {
-            for (var n = e[0], r = 1; r < e.length; r++) {
-              var o = e[r]
-              t(o, n) < 0 && (n = o)
+            for (var r = e[0], n = 1; n < e.length; n++) {
+              var o = e[n]
+              t(o, r) < 0 && (r = o)
             }
-            return n
+            return r
           }
         },
-        I = function (e, t) {
-          var n = e.result.response.timeline,
-            r = Object(y.a)(n, function (e) {
-              return e.tweet ? C(e.tweet) : void 0
+        j = function (e, t) {
+          var r = e.result.response.timeline,
+            n = Object(b.a)(r, function (e) {
+              return e.tweet ? w(e.tweet) : void 0
             }),
-            o = w(r, function (e, t) {
+            o = y(n, function (e, t) {
               return -Object(f.a)(e.sortIndex, t.sortIndex)
             }),
-            a = w(r, function (e, t) {
+            c = y(n, function (e, t) {
               return Object(f.a)(e.sortIndex, t.sortIndex)
             }),
             i = (e.result.response.position || {}).min_position,
-            c = i && a && x(i, a.sortIndex)
-          c && r.push(c)
-          var l = e.result.response.timeline_id.replace('custom-', ''),
-            u = e.entities,
-            d = u.cards,
-            m = u.collections,
-            I = u.tweets,
-            E = u.users,
-            h = m && m[l],
-            g = !t.cursor && h && b(l, o ? o.sortIndex : '0', h),
-            T = g ? [g].concat(s()(r)) : r
+            a = i && c && g(i, c.sortIndex)
+          a && n.push(a)
+          var u = e.result.response.timeline_id.replace('custom-', ''),
+            l = e.entities,
+            p = l.cards,
+            O = l.collections,
+            j = l.tweets,
+            h = l.users,
+            P = O && O[u],
+            v = !t.cursor && P && m(u, o ? o.sortIndex : '0', P),
+            E = v ? [v].concat(s()(n)) : n
           return {
-            globalObjects: { cards: d || {}, tweets: I || {}, users: E || {} },
+            globalObjects: { cards: p || {}, tweets: j || {}, users: h || {} },
             timeline: {
-              instructions: T.length > 0 ? [{ type: p.a.AddEntries, parameters: { entries: T } }] : [],
+              instructions: E.length > 0 ? [{ type: d.a.AddEntries, parameters: { entries: E } }] : [],
               responseObjects: {},
             },
           }
         },
-        b = function (e, t, n) {
+        m = function (e, t, r) {
           return {
             type: 'legacy_CollectionHeader',
             entryId: 'header-'.concat(e),
-            sortIndex: l.b(t),
+            sortIndex: u.b(t),
             itemMetadata: {},
-            content: { authorId: n.user_id, name: n.name, description: n.description },
+            content: { authorId: r.user_id, name: r.name, description: r.description },
           }
         },
-        C = function (e) {
+        w = function (e) {
           return {
             type: 'tweet',
             entryId: 'tweet-'.concat(e.id),
             sortIndex: e.sort_index,
             itemMetadata: {},
-            content: { id: e.id, displayType: m.a.Tweet },
+            content: { id: e.id, displayType: O.a.Tweet },
           }
         },
-        x = function (e, t) {
+        g = function (e, t) {
           return {
-            type: d.b.TimelineCursor,
+            type: p.b.TimelineCursor,
             entryId: 'cursor-'.concat(e),
-            sortIndex: l.a(t),
+            sortIndex: u.a(t),
             itemMetadata: {},
-            content: { value: e, cursorType: u.a.Bottom },
+            content: { value: e, cursorType: l.a.Bottom },
           }
         },
-        E = n('ZNT5'),
-        h = ['cursor']
+        h = r('ZNT5')
+      function P(e, t) {
+        var r = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var n = Object.getOwnPropertySymbols(e)
+          t &&
+            (n = n.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            r.push.apply(r, n)
+        }
+        return r
+      }
+      function v(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var r = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? P(Object(r), !0).forEach(function (t) {
+                o()(e, t, r[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
+            : P(Object(r)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+              })
+        }
+        return e
+      }
       t.a = function (e) {
-        return Object(E.a)({
+        return Object(h.a)({
           timelineId: 'legacy-collection-'.concat(e),
           getEndpoint: function (e) {
             return e.Collections.fetchCollection
           },
           getEndpointParams: function (t) {
-            var n = t.cursor,
-              r = i()(t, h)
-            return o()(o()({}, r), {}, { id: e, max_position: n })
+            var r = t.cursor
+            return v(v({}, i()(t, ['cursor'])), {}, { id: e, max_position: r })
           },
           context: 'FETCH_LEGACY_COLLECTION_CONTEXT',
           perfKey: 'legacyCollection',
-          formatResponse: I,
+          formatResponse: j,
         })
       }
     },

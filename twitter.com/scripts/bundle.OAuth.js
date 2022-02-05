@@ -1,174 +1,219 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [74],
+  [73],
   {
-    '5xYW': function (e, t, a) {
+    '5xYW': function (e, t, n) {
       'use strict'
-      a.r(t),
-        a.d(t, 'OAuthConsentScreen', function () {
-          return ge
+      n.r(t),
+        n.d(t, 'OAuthConsentScreen', function () {
+          return _e
         })
-      var n = a('VrFO'),
-        r = a.n(n),
-        o = a('Y9Ll'),
-        i = a.n(o),
-        s = a('1Pcy'),
-        c = a.n(s),
-        l = a('5Yy7'),
-        u = a.n(l),
-        p = a('2VqO'),
-        d = a.n(p),
-        h = a('KEM+'),
-        m = a.n(h),
-        E = (a('2G9S'), a('ho0z'), a('tQbP'), a('LW0h'), a('7x/C'), a('uFXj'), a('ERkP')),
-        y = a.n(E),
-        f = a('yiKp'),
-        g = a.n(f),
-        S = (a('yH/f'), a('oEOe')),
-        _ = a('kGix'),
-        C = a('Ssj5'),
-        b = 'oAuthConsent',
-        A = Object.freeze({
+      n('OZaJ')
+      var r = n('VrFO'),
+        a = n.n(r),
+        o = n('Y9Ll'),
+        c = n.n(o),
+        i = n('1Pcy'),
+        s = n.n(i),
+        l = n('5Yy7'),
+        u = n.n(l),
+        p = n('N+ot'),
+        d = n.n(p),
+        h = n('AuHH'),
+        f = n.n(h),
+        m = n('KEM+'),
+        y = n.n(m),
+        E = (n('2G9S'), n('ho0z'), n('tQbP'), n('LW0h'), n('uFXj'), n('ERkP')),
+        g = n.n(E),
+        b = (n('+KXO'), n('1t7P'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn'), n('yH/f'), n('oEOe')),
+        S = n('kGix'),
+        v = n('Ssj5')
+      function _(e, t) {
+        var n = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e)
+          t &&
+            (r = r.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            n.push.apply(n, r)
+        }
+        return n
+      }
+      function C(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? _(Object(n), !0).forEach(function (t) {
+                y()(e, t, n[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
+            : _(Object(n)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+              })
+        }
+        return e
+      }
+      var A = 'oAuthConsent',
+        O = Object.freeze({
           REQUEST: 'rweb/oAuthConsent/FETCH_CONSENT_METADATA_REQUEST',
           SUCCESS: 'rweb/oAuthConsent/FETCH_CONSENT_METADATA_SUCCESS',
           FAILURE: 'rweb/oAuthConsent/FETCH_CONSENT_METADATA_FAILURE',
         }),
-        v = Object.freeze({
+        w = Object.freeze({
           REQUEST: 'rweb/oAuthConsent/POST_CONSENT_REQUEST',
           SUCCESS: 'rweb/oAuthConsent/POST_CONSENT_SUCCESS',
           FAILURE: 'rweb/oAuthConsent/POST_CONSENT_FAILURE',
         }),
-        w = 'rweb/oAuthConsent/FETCH_FAILED',
-        L = { consentMetadata: void 0, fetchStatus: _.a.NONE, postStatus: _.a.NONE, redirectUri: void 0 }
-      function T() {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : L,
+        L = 'rweb/oAuthConsent/FETCH_FAILED',
+        T = { consentMetadata: void 0, fetchStatus: S.a.NONE, postStatus: S.a.NONE, redirectUri: void 0 }
+      function k() {
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : T,
           t = arguments.length > 1 ? arguments[1] : void 0
         switch (t.type) {
-          case A.REQUEST:
-            return g()(g()({}, e), {}, { fetchStatus: _.a.LOADING })
-          case A.FAILURE:
-            return g()(g()({}, e), {}, { fetchStatus: _.a.FAILED })
-          case A.SUCCESS:
-            return t.payload ? g()(g()({}, e), {}, { consentMetadata: t.payload, fetchStatus: _.a.LOADED }) : e
-          case w:
-            return t.payload ? g()(g()({}, e), {}, { fetchStatus: _.a.FAILED, redirectUri: t.payload.redirectUri }) : e
-          case v.REQUEST:
-            return g()(g()({}, e), {}, { postStatus: _.a.LOADING })
-          case v.FAILURE:
-            return g()(g()({}, e), {}, { postStatus: _.a.FAILED })
-          case v.SUCCESS:
-            return t.payload ? g()(g()({}, e), {}, { redirectUri: t.payload.redirect_uri, postStatus: _.a.LOADED }) : e
+          case O.REQUEST:
+            return C(C({}, e), {}, { fetchStatus: S.a.LOADING })
+          case O.FAILURE:
+            return C(C({}, e), {}, { fetchStatus: S.a.FAILED })
+          case O.SUCCESS:
+            return t.payload ? C(C({}, e), {}, { consentMetadata: t.payload, fetchStatus: S.a.LOADED }) : e
+          case L:
+            return t.payload ? C(C({}, e), {}, { fetchStatus: S.a.FAILED, redirectUri: t.payload.redirectUri }) : e
+          case w.REQUEST:
+            return C(C({}, e), {}, { postStatus: S.a.LOADING })
+          case w.FAILURE:
+            return C(C({}, e), {}, { postStatus: S.a.FAILED })
+          case w.SUCCESS:
+            return t.payload ? C(C({}, e), {}, { redirectUri: t.payload.redirect_uri, postStatus: S.a.LOADED }) : e
           default:
             return e
         }
       }
-      C.a.register(m()({}, b, T))
-      var k = function (e) {
+      v.a.register(y()({}, A, k))
+      var D = function (e) {
           return e.oAuthConsent.consentMetadata || {}
         },
-        O = function (e) {
+        M = function (e) {
           return e.oAuthConsent.redirectUri || ''
         },
         I = function (e) {
           return e.oAuthConsent.fetchStatus
         },
-        M = function (e) {
+        R = function (e) {
           return e.oAuthConsent.postStatus
         },
         U = function (e) {
-          return function (t, a, n) {
-            var r = n.api
-            return S.b(t, { params: e, request: r.OAuth.fetch })({ actionTypes: A, context: 'FETCH_CONSENT_METADATA' })
+          return function (t, n, r) {
+            var a = r.api
+            return b.b(t, { params: e, request: a.OAuth.fetch })({ actionTypes: O, context: 'FETCH_CONSENT_METADATA' })
           }
         },
-        D = function (e) {
-          return function (t, a, n) {
-            var r = n.api
-            return S.b(t, { params: e, request: r.OAuth.post })({ actionTypes: v, context: 'POST_CONSENT' })
+        N = function (e) {
+          return function (t, n, r) {
+            var a = r.api
+            return b.b(t, { params: e, request: a.OAuth.post })({ actionTypes: w, context: 'POST_CONSENT' })
           }
         },
-        F = a('G6rE'),
-        N = a('rxPX'),
-        x = a('0KEI'),
-        R = Object(N.a)()
+        F = n('G6rE'),
+        x = n('rxPX'),
+        P = n('0KEI'),
+        H = Object(x.a)()
           .propsFromState(function () {
             return {
               fetchStatus: I,
-              oAuthConsentMetadata: k,
-              postStatus: M,
-              redirectUri: O,
+              oAuthConsentMetadata: D,
+              postStatus: R,
+              redirectUri: M,
               user: F.e.selectLoggedInUser,
             }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(x.createLocalApiErrorHandlerWithContextFactory)('OAUTH_CONSENT'),
+              createLocalApiErrorHandler: Object(P.createLocalApiErrorHandlerWithContextFactory)('OAUTH_CONSENT'),
               fetchConsentMetadata: U,
-              postConsent: D,
+              postConsent: N,
             }
           }),
-        H = {
+        j = {
           customErrorHandler: function (e) {
             var t = e.errors
             return Array.isArray(t) && t.length > 0
-              ? { payload: { redirectUri: t[0].redirect_uri }, type: w }
-              : { payload: {}, type: w }
+              ? { payload: { redirectUri: t[0].redirect_uri }, type: L }
+              : { payload: {}, type: L }
           },
         },
-        P = a('av9q'),
-        W = a('lUZE'),
-        z = a('Es6L'),
-        j = a('MWbm'),
-        Q = a('pxuL'),
-        B = a('SyIi'),
-        q = a('t62R'),
-        G = a('rHpw'),
-        K = (function (e) {
-          u()(a, e)
-          var t = d()(a)
-          function a() {
-            return r()(this, a), t.apply(this, arguments)
+        B = n('av9q'),
+        W = n('lUZE'),
+        z = n('Es6L'),
+        Q = n('MWbm'),
+        G = n('pxuL'),
+        q = n('SyIi'),
+        K = n('t62R'),
+        X = n('rHpw')
+      function Y(e) {
+        var t = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (e) {
+            return !1
           }
-          return (
-            i()(a, [
-              {
-                key: 'componentDidMount',
-                value: function () {
-                  Object(z.a)() && (this.context.setSideNavSupport(!1), this.context.incrementDmDrawerInhibitorCount())
-                },
+        })()
+        return function () {
+          var n,
+            r = f()(e)
+          if (t) {
+            var a = f()(this).constructor
+            n = Reflect.construct(r, arguments, a)
+          } else n = r.apply(this, arguments)
+          return d()(this, n)
+        }
+      }
+      var Z = (function (e) {
+        u()(n, e)
+        var t = Y(n)
+        function n() {
+          return a()(this, n), t.apply(this, arguments)
+        }
+        return (
+          c()(n, [
+            {
+              key: 'componentDidMount',
+              value: function () {
+                Object(z.a)() && (this.context.setSideNavSupport(!1), this.context.incrementDmDrawerInhibitorCount())
               },
-              {
-                key: 'componentWillUnmount',
-                value: function () {
-                  Object(z.a)() && (this.context.setSideNavSupport(!0), this.context.decrementDmDrawerInhibitorCount())
-                },
+            },
+            {
+              key: 'componentWillUnmount',
+              value: function () {
+                Object(z.a)() && (this.context.setSideNavSupport(!0), this.context.decrementDmDrawerInhibitorCount())
               },
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.children,
-                    a = e.footerContent
-                  return y.a.createElement(
-                    j.a,
-                    { style: Y.container },
-                    y.a.createElement(j.a, { style: Y.navbar }, y.a.createElement(W.a, { style: Y.icon })),
-                    y.a.createElement(j.a, { style: Y.body }, y.a.createElement(B.a, { showReload: !0 }, t)),
-                    a
-                      ? y.a.createElement(
-                          j.a,
-                          { style: Y.footer },
-                          y.a.createElement(q.b, { style: Y.footerContent }, a),
-                        )
-                      : null,
-                  )
-                },
+            },
+            {
+              key: 'render',
+              value: function () {
+                var e = this.props,
+                  t = e.children,
+                  n = e.footerContent
+                return g.a.createElement(
+                  Q.a,
+                  { style: J.container },
+                  g.a.createElement(Q.a, { style: J.navbar }, g.a.createElement(W.a, { style: J.icon })),
+                  g.a.createElement(Q.a, { style: J.body }, g.a.createElement(q.a, { showReload: !0 }, t)),
+                  n
+                    ? g.a.createElement(Q.a, { style: J.footer }, g.a.createElement(K.b, { style: J.footerContent }, n))
+                    : null,
+                )
               },
-            ]),
-            a
-          )
-        })(y.a.Component)
-      m()(K, 'contextType', Q.a)
-      var Y = G.a.create(function (e) {
+            },
+          ]),
+          n
+        )
+      })(g.a.Component)
+      y()(Z, 'contextType', G.a)
+      var J = X.a.create(function (e) {
           return {
             body: { flex: '1 0 auto' },
             container: { display: 'flex', flexDirection: 'column', height: '100%' },
@@ -195,59 +240,80 @@
             },
           }
         }),
-        V = K,
-        X = 'OAuth_Consent_Button',
-        J = 'OAuth_Consent_Error_Detail',
-        Z = a('mw9i'),
-        $ = a('IMA+'),
-        ee = a('Qwev'),
-        te = a('/yvb'),
-        ae = a('OOKO'),
-        ne = a('q9Zt'),
-        re = a('i4Oy'),
-        oe = a('U+bB'),
-        ie = a('3XMw'),
-        se = a.n(ie),
-        ce = se.a.bfaadb2c,
-        le = se.a.f4392d00,
-        ue = se.a.b08821f3,
-        pe = se.a.cfd2f35d,
-        de = se.a.ee4dca3c,
-        he = se.a.eafcc76a,
-        me = se.a.j3998a15,
-        Ee = se.a.bb347bbb,
-        ye = se.a.fc2a5c92,
-        fe = se.a.e0876919,
-        ge = (function (e) {
-          u()(a, e)
-          var t = d()(a)
-          function a() {
+        V = Z,
+        $ = 'OAuth_Consent_Button',
+        ee = 'OAuth_Consent_Error_Detail',
+        te = n('mw9i'),
+        ne = n('IMA+'),
+        re = n('Qwev'),
+        ae = n('/yvb'),
+        oe = n('OOKO'),
+        ce = n('q9Zt'),
+        ie = n('i4Oy'),
+        se = n('U+bB'),
+        le = n('3XMw'),
+        ue = n.n(le)
+      function pe(e) {
+        var t = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (e) {
+            return !1
+          }
+        })()
+        return function () {
+          var n,
+            r = f()(e)
+          if (t) {
+            var a = f()(this).constructor
+            n = Reflect.construct(r, arguments, a)
+          } else n = r.apply(this, arguments)
+          return d()(this, n)
+        }
+      }
+      var de = ue.a.bfaadb2c,
+        he = ue.a.f4392d00,
+        fe = ue.a.b08821f3,
+        me = ue.a.cfd2f35d,
+        ye = ue.a.ee4dca3c,
+        Ee = ue.a.eafcc76a,
+        ge = ue.a.j3998a15,
+        be = ue.a.bb347bbb,
+        Se = ue.a.fc2a5c92,
+        ve = ue.a.e0876919,
+        _e = (function (e) {
+          u()(n, e)
+          var t = pe(n)
+          function n() {
             var e
-            r()(this, a)
-            for (var n = arguments.length, o = new Array(n), i = 0; i < n; i++) o[i] = arguments[i]
+            a()(this, n)
+            for (var r = arguments.length, o = new Array(r), c = 0; c < r; c++) o[c] = arguments[c]
             return (
               (e = t.call.apply(t, [this].concat(o))),
-              m()(c()(e), '_handleSubmit', function () {
+              y()(s()(e), '_handleSubmit', function () {
                 var t = e.props,
-                  a = t.createLocalApiErrorHandler,
-                  n = t.oAuthConsentMetadata.auth_code
-                ;(0, t.postConsent)({ approval: !0, code: n }).catch(a())
+                  n = t.createLocalApiErrorHandler,
+                  r = t.oAuthConsentMetadata.auth_code
+                ;(0, t.postConsent)({ approval: !0, code: r }).catch(n())
               }),
-              m()(c()(e), '_handleCancel', function () {
+              y()(s()(e), '_handleCancel', function () {
                 var t = e.props,
-                  a = t.createLocalApiErrorHandler,
-                  n = t.oAuthConsentMetadata.auth_code,
-                  r = t.postConsent
-                n && r({ approval: !1, code: n }).catch(a())
+                  n = t.createLocalApiErrorHandler,
+                  r = t.oAuthConsentMetadata.auth_code,
+                  a = t.postConsent
+                r && a({ approval: !1, code: r }).catch(n())
               }),
-              m()(c()(e), '_changeWindowLocation', function (e) {
+              y()(s()(e), '_changeWindowLocation', function (e) {
                 window.location.href = e
               }),
               e
             )
           }
           return (
-            i()(a, [
+            c()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -258,9 +324,9 @@
                 key: 'componentDidUpdate',
                 value: function (e) {
                   var t = this.props,
-                    a = t.fetchStatus,
-                    n = t.redirectUri
-                  a === _.a.FAILED || '' === n || e.redirectUri === n || this._changeWindowLocation(n)
+                    n = t.fetchStatus,
+                    r = t.redirectUri
+                  n === S.a.FAILED || '' === r || e.redirectUri === r || this._changeWindowLocation(r)
                 },
               },
               {
@@ -268,18 +334,18 @@
                 value: function () {
                   var e,
                     t = this.props.fetchStatus,
-                    a = t === _.a.FAILED
+                    n = t === S.a.FAILED
                   return (
                     (e =
-                      t === _.a.LOADING
-                        ? y.a.createElement(j.a, null, this._renderLoading())
-                        : a
-                        ? y.a.createElement(j.a, null, this._renderErrorState())
+                      t === S.a.LOADING
+                        ? g.a.createElement(Q.a, null, this._renderLoading())
+                        : n
+                        ? g.a.createElement(Q.a, null, this._renderErrorState())
                         : this._renderMainContent()),
-                    y.a.createElement(
+                    g.a.createElement(
                       V,
                       { footerContent: this._renderFooterContent() },
-                      y.a.createElement(Z.a, { style: Se.layout }, e),
+                      g.a.createElement(te.a, { style: Ce.layout }, e),
                     )
                   )
                 },
@@ -289,94 +355,94 @@
                 value: function () {
                   var e = this.props,
                     t = e.oAuthConsentMetadata,
-                    a = t.app_description,
-                    n = t.app_image_uri,
-                    r = t.app_name,
+                    n = t.app_description,
+                    r = t.app_image_uri,
+                    a = t.app_name,
                     o = t.auth_code,
-                    i = e.postStatus,
-                    s = e.user,
-                    c = i === _.a.FAILED,
-                    l = i === _.a.LOADING || i === _.a.LOADED,
-                    u = s || {},
+                    c = e.postStatus,
+                    i = e.user,
+                    s = c === S.a.FAILED,
+                    l = c === S.a.LOADING || c === S.a.LOADED,
+                    u = i || {},
                     p = u.id_str,
                     d = u.name,
                     h = u.profile_image_url_https,
-                    m = u.screen_name,
-                    E = re.a.get('window').width < G.a.theme.breakpoints.medium
-                  return y.a.createElement(
-                    y.a.Fragment,
+                    f = u.screen_name,
+                    m = ie.a.get('window').width < X.a.theme.breakpoints.medium
+                  return g.a.createElement(
+                    g.a.Fragment,
                     null,
-                    c ? this._renderErrorState() : null,
-                    y.a.createElement(
-                      j.a,
-                      { style: E ? Se.mobileContainer : Se.container },
-                      y.a.createElement(
-                        j.a,
-                        { style: Se.head },
-                        y.a.createElement(oe.a, { source: n, style: Se.image }),
-                        y.a.createElement(
-                          q.b,
-                          { size: 'title4', style: Se.headline, weight: 'heavy' },
-                          ce({ appName: r }),
+                    s ? this._renderErrorState() : null,
+                    g.a.createElement(
+                      Q.a,
+                      { style: m ? Ce.mobileContainer : Ce.container },
+                      g.a.createElement(
+                        Q.a,
+                        { style: Ce.head },
+                        g.a.createElement(se.a, { source: r, style: Ce.image }),
+                        g.a.createElement(
+                          K.b,
+                          { size: 'title4', style: Ce.headline, weight: 'heavy' },
+                          de({ appName: a }),
                           '.',
                         ),
-                        y.a.createElement($.a, {
+                        g.a.createElement(ne.a, {
                           avatarUri: h,
                           displayMode: 'UserCompact',
                           name: d,
-                          screenName: m,
-                          style: Se.userCell,
+                          screenName: f,
+                          style: Ce.userCell,
                           userId: p,
                         }),
-                        y.a.createElement(
-                          j.a,
-                          { accessibilityLiveRegion: 'polite', style: Se.actionContainer },
+                        g.a.createElement(
+                          Q.a,
+                          { accessibilityLiveRegion: 'polite', style: Ce.actionContainer },
                           l
-                            ? y.a.createElement(ee.a, null)
-                            : y.a.createElement(
-                                te.a,
+                            ? g.a.createElement(re.a, null)
+                            : g.a.createElement(
+                                ae.a,
                                 {
                                   disabled: !o,
                                   onClick: this._handleSubmit,
                                   size: 'xLarge',
-                                  testID: X,
+                                  testID: $,
                                   type: 'brandFilled',
                                 },
-                                le,
+                                he,
                               ),
                         ),
-                        y.a.createElement(
-                          q.b,
-                          { accessibilityLabel: de, color: 'link', onPress: this._handleCancel, size: 'subtext2' },
-                          pe,
+                        g.a.createElement(
+                          K.b,
+                          { accessibilityLabel: ye, color: 'link', onPress: this._handleCancel, size: 'subtext2' },
+                          me,
                         ),
                       ),
-                      y.a.createElement(ae.a, { spacing: 'space32' }),
-                      y.a.createElement(q.b, null, a),
+                      g.a.createElement(oe.a, { spacing: 'space32' }),
+                      g.a.createElement(K.b, null, n),
                       this._renderScopesList(),
                       this._renderCanDoScopes(),
-                      y.a.createElement(ae.a, { spacing: 'space32' }),
+                      g.a.createElement(oe.a, { spacing: 'space32' }),
                       this._renderPrivacyAndTerms(),
                     ),
-                    y.a.createElement(q.b, { link: 'https://www.twitter.com', style: Se.twitterLink }, 'Twitter'),
+                    g.a.createElement(K.b, { link: 'https://www.twitter.com', style: Ce.twitterLink }, 'Twitter'),
                   )
                 },
               },
               {
                 key: '_renderFooterContent',
                 value: function () {
-                  return y.a.createElement(
-                    q.b,
+                  return g.a.createElement(
+                    K.b,
                     null,
-                    y.a.createElement(
-                      se.a.I18NFormatMessage,
+                    g.a.createElement(
+                      ue.a.I18NFormatMessage,
                       { $i18n: 'a0b6818f' },
-                      y.a.createElement(
-                        q.b,
+                      g.a.createElement(
+                        K.b,
                         {
                           link: 'https://help.twitter.com/en/managing-your-account/connect-or-revoke-access-to-third-party-apps',
                         },
-                        Ee,
+                        be,
                       ),
                     ),
                   )
@@ -393,7 +459,7 @@
                       .sort(function (e, t) {
                         return e.rank - t.rank
                       })
-                  return t.length ? y.a.createElement(P.a, { scopes: t, title: he }) : null
+                  return t.length ? g.a.createElement(B.a, { scopes: t, title: Ee }) : null
                 },
               },
               {
@@ -407,7 +473,7 @@
                       .sort(function (e, t) {
                         return e.rank - t.rank
                       })
-                  return t.length ? y.a.createElement(P.a, { scopes: t, title: me }) : null
+                  return t.length ? g.a.createElement(B.a, { scopes: t, title: ge }) : null
                 },
               },
               {
@@ -415,18 +481,18 @@
                 value: function () {
                   var e = this.props.oAuthConsentMetadata,
                     t = e.organization_name,
-                    a = e.organization_privacy_policy_uri,
-                    n = e.organization_terms_and_conditions_uri,
-                    r = e.organization_uri
-                  return y.a.createElement(
-                    q.b,
+                    n = e.organization_privacy_policy_uri,
+                    r = e.organization_terms_and_conditions_uri,
+                    a = e.organization_uri
+                  return g.a.createElement(
+                    K.b,
                     null,
-                    y.a.createElement(
-                      se.a.I18NFormatMessage,
+                    g.a.createElement(
+                      ue.a.I18NFormatMessage,
                       { $i18n: 'afd52f45', orgName: t },
-                      y.a.createElement(q.b, { link: r }, t),
-                      y.a.createElement(q.b, { link: a }, 'privacy policy'),
-                      y.a.createElement(q.b, { link: n }, 'terms'),
+                      g.a.createElement(K.b, { link: a }, t),
+                      g.a.createElement(K.b, { link: n }, 'privacy policy'),
+                      g.a.createElement(K.b, { link: r }, 'terms'),
                     ),
                   )
                 },
@@ -434,7 +500,7 @@
               {
                 key: '_renderLoading',
                 value: function () {
-                  return y.a.createElement(ee.a, null)
+                  return g.a.createElement(re.a, null)
                 },
               },
               {
@@ -442,26 +508,26 @@
                 value: function () {
                   var e = this.props,
                     t = e.history.goBack,
-                    a = e.redirectUri,
-                    n = { openInSameFrame: !0, pathname: a }
-                  return a
-                    ? y.a.createElement(
-                        ne.a,
-                        { buttonLink: n, retryLabel: ue, style: Se.errorState, testID: J, title: ye },
-                        fe,
+                    n = e.redirectUri,
+                    r = { openInSameFrame: !0, pathname: n }
+                  return n
+                    ? g.a.createElement(
+                        ce.a,
+                        { buttonLink: r, retryLabel: fe, style: Ce.errorState, testID: ee, title: Se },
+                        ve,
                       )
-                    : y.a.createElement(
-                        ne.a,
+                    : g.a.createElement(
+                        ce.a,
                         {
                           onRetry: function (e) {
                             return t()
                           },
-                          retryLabel: ue,
-                          style: Se.errorState,
-                          testID: J,
-                          title: ye,
+                          retryLabel: fe,
+                          style: Ce.errorState,
+                          testID: ee,
+                          title: Se,
                         },
-                        fe,
+                        ve,
                       )
                 },
               },
@@ -470,11 +536,11 @@
                 value: function () {
                   var e,
                     t,
-                    a = this.props,
-                    n = a.createLocalApiErrorHandler,
-                    r = a.fetchConsentMetadata,
-                    o = a.history.location.query
-                  r(
+                    n = this.props,
+                    r = n.createLocalApiErrorHandler,
+                    a = n.fetchConsentMetadata,
+                    o = n.history.location.query
+                  a(
                     ((t = (e = o).client_id),
                     {
                       code_challenge: e.code_challenge,
@@ -485,14 +551,14 @@
                       scope: e.scope,
                       state: e.state,
                     }),
-                  ).catch(n(H))
+                  ).catch(r(j))
                 },
               },
             ]),
-            a
+            n
           )
-        })(y.a.Component),
-        Se = G.a.create(function (e) {
+        })(g.a.Component),
+        Ce = X.a.create(function (e) {
           return {
             actionContainer: { paddingTop: e.spaces.space40, paddingBottom: e.spaces.space32 },
             container: {
@@ -518,46 +584,70 @@
             userCell: { minWidth: '65%' },
           }
         }),
-        _e = R(ge)
-      t.default = _e
+        Ae = H(_e)
+      t.default = Ae
     },
-    av9q: function (e, t, a) {
+    av9q: function (e, t, n) {
       'use strict'
-      a.d(t, 'a', function () {
-        return v
+      n.d(t, 'a', function () {
+        return L
       })
-      var n = a('VrFO'),
-        r = a.n(n),
-        o = a('Y9Ll'),
-        i = a.n(o),
-        s = a('1Pcy'),
-        c = a.n(s),
-        l = a('5Yy7'),
-        u = a.n(l),
-        p = a('2VqO'),
-        d = a.n(p),
-        h = a('KEM+'),
-        m = a.n(h),
-        E = (a('2G9S'), a('M+/F'), a('z84I'), a('ho0z'), a('1t7P'), a('jQ/y'), a('hBvt'), a('ERkP')),
-        y = a.n(E),
-        f = a('3XMw'),
-        g = a.n(f),
-        S = a('t62R'),
-        _ = a('htQn'),
-        C = a('rHpw'),
-        b = g.a.c174e46e,
-        A = g.a.a39075ff,
-        v = (function (e) {
-          u()(a, e)
-          var t = d()(a)
-          function a() {
+      n('OZaJ')
+      var r = n('VrFO'),
+        a = n.n(r),
+        o = n('Y9Ll'),
+        c = n.n(o),
+        i = n('1Pcy'),
+        s = n.n(i),
+        l = n('5Yy7'),
+        u = n.n(l),
+        p = n('N+ot'),
+        d = n.n(p),
+        h = n('AuHH'),
+        f = n.n(h),
+        m = n('KEM+'),
+        y = n.n(m),
+        E = (n('2G9S'), n('M+/F'), n('z84I'), n('ho0z'), n('1t7P'), n('jQ/y'), n('hBvt'), n('ERkP')),
+        g = n.n(E),
+        b = n('3XMw'),
+        S = n.n(b),
+        v = n('t62R'),
+        _ = n('htQn'),
+        C = n('rHpw')
+      function A(e) {
+        var t = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (e) {
+            return !1
+          }
+        })()
+        return function () {
+          var n,
+            r = f()(e)
+          if (t) {
+            var a = f()(this).constructor
+            n = Reflect.construct(r, arguments, a)
+          } else n = r.apply(this, arguments)
+          return d()(this, n)
+        }
+      }
+      var O = S.a.c174e46e,
+        w = S.a.a39075ff,
+        L = (function (e) {
+          u()(n, e)
+          var t = A(n)
+          function n() {
             var e
-            r()(this, a)
-            for (var n = arguments.length, o = new Array(n), i = 0; i < n; i++) o[i] = arguments[i]
+            a()(this, n)
+            for (var r = arguments.length, o = new Array(r), c = 0; c < r; c++) o[c] = arguments[c]
             return (
               (e = t.call.apply(t, [this].concat(o))),
-              m()(c()(e), 'state', { showAllScopes: !1 }),
-              m()(c()(e), '_handleToggleShowMoreScopes', function () {
+              y()(s()(e), 'state', { showAllScopes: !1 }),
+              y()(s()(e), '_handleToggleShowMoreScopes', function () {
                 var t = e.state.showAllScopes
                 e.setState({ showAllScopes: !t })
               }),
@@ -565,54 +655,54 @@
             )
           }
           return (
-            i()(a, [
+            c()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.scopes,
-                    a = e.size,
-                    n = e.title,
-                    r = this.state.showAllScopes,
-                    o = r ? t : t.slice(0, 3),
-                    i = t.length > 3
-                  return y.a.createElement(
-                    y.a.Fragment,
+                    n = e.size,
+                    r = e.title,
+                    a = this.state.showAllScopes,
+                    o = a ? t : t.slice(0, 3),
+                    c = t.length > 3
+                  return g.a.createElement(
+                    g.a.Fragment,
                     null,
-                    y.a.createElement(S.b, { style: w.scopesHeader, weight: 'bold' }, n),
-                    y.a.createElement(
+                    g.a.createElement(v.b, { style: T.scopesHeader, weight: 'bold' }, r),
+                    g.a.createElement(
                       _.a,
                       { withInteractiveStyling: !1 },
                       o.map(function (e) {
-                        return y.a.createElement(
-                          S.b,
-                          { color: 'subtext2' === a ? 'gray700' : void 0, key: e.name, size: a, style: w.listItem },
+                        return g.a.createElement(
+                          v.b,
+                          { color: 'subtext2' === n ? 'gray700' : void 0, key: e.name, size: n, style: T.listItem },
                           e.description,
                         )
                       }),
                     ),
-                    i && r
-                      ? y.a.createElement(
-                          S.b,
-                          { onPress: this._handleToggleShowMoreScopes, style: w.toggleMoreLink },
-                          b,
+                    c && a
+                      ? g.a.createElement(
+                          v.b,
+                          { onPress: this._handleToggleShowMoreScopes, style: T.toggleMoreLink },
+                          O,
                         )
                       : null,
-                    i && !r
-                      ? y.a.createElement(
-                          S.b,
-                          { onPress: this._handleToggleShowMoreScopes, style: w.toggleMoreLink },
-                          A({ n: t.length - 3 }),
+                    c && !a
+                      ? g.a.createElement(
+                          v.b,
+                          { onPress: this._handleToggleShowMoreScopes, style: T.toggleMoreLink },
+                          w({ n: t.length - 3 }),
                         )
                       : null,
                   )
                 },
               },
             ]),
-            a
+            n
           )
-        })(y.a.Component),
-        w = C.a.create(function (e) {
+        })(g.a.Component),
+        T = C.a.create(function (e) {
           return {
             listItem: {
               display: 'list-item',

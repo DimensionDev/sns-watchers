@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [79],
+  [78],
   {
     '3X8/': function (e, t, r) {
       'use strict'
@@ -8,25 +8,25 @@
       })
       var n,
         a = r('KEM+'),
-        i = r.n(a),
-        c = r('k49u'),
+        c = r.n(a),
+        i = r('k49u'),
         o = r('LVU8'),
         l = r('3XMw'),
         s = r.n(l).a.i1801686,
         u =
           ((n = {}),
-          i()(n, c.a.GenericForbidden, { toast: Object(o.a)() }),
-          i()(n, c.a.InvalidRequestUrl, { toast: { text: s, withClearButton: !0 } }),
-          i()(n, 'showToast', !0),
+          c()(n, i.a.GenericForbidden, { toast: Object(o.a)() }),
+          c()(n, i.a.InvalidRequestUrl, { toast: { text: s, withClearButton: !0 } }),
+          c()(n, 'showToast', !0),
           n)
     },
     '6M1P': function (e, t, r) {
       'use strict'
       var n = r('WpDa'),
         a = r('rJrz'),
-        i = r('ZNT5')
+        c = r('ZNT5')
       t.a = function (e) {
-        return Object(i.a)({
+        return Object(c.a)({
           timelineId: 'retweetersGraphQL-'.concat(e),
           getEndpoint: function (e) {
             return e.TweetActivity.fetchRetweetedBy
@@ -47,126 +47,150 @@
       'use strict'
       var n,
         a = r('KEM+'),
-        i = r.n(a),
-        c = r('ezF+'),
+        c = r.n(a),
+        i = r('ezF+'),
         o = (r('yH/f'), Object.freeze({ Cell: 'Cell', PreviewCard: 'PreviewCard' })),
-        l = (r('lTEL'), r('7x/C'), r('JtPf'), r('87if'), r('kYxP'), r('XBtf')),
+        l = (r('JtPf'), r('7x/C'), r('87if'), r('lTEL'), r('kYxP'), r('XBtf')),
         s = {
           loader: function () {
-            return Promise.all([r.e(0), r.e(343)]).then(r.bind(null, 'a+ad'))
+            return Promise.all([r.e(0), r.e(342)]).then(r.bind(null, 'a+ad'))
           },
           loaderKey: 'newsCellLoader',
           strategy: l.a.Critical,
         },
         u = {
           loader: function () {
-            return Promise.all([r.e(0), r.e(345)]).then(r.bind(null, 'hX2d'))
+            return Promise.all([r.e(0), r.e(344)]).then(r.bind(null, 'hX2d'))
           },
           loaderKey: 'newsPreviewCardLoader',
           strategy: l.a.Critical,
         }
-      t.a = c.c({
+      t.a = i.c({
         selectDisplayType: function (e) {
           return e.content.newsDisplayType
         },
-        handlers: ((n = {}), i()(n, o.Cell, s), i()(n, o.PreviewCard, u), n),
+        handlers: ((n = {}), c()(n, o.Cell, s), c()(n, o.PreviewCard, u), n),
       })
     },
     SCGq: function (e, t, r) {
       'use strict'
       r.r(t),
         r.d(t, 'QuoteTweetActivityScreen', function () {
-          return K
+          return U
         })
+      r('OZaJ')
       var n = r('VrFO'),
         a = r.n(n),
-        i = r('Y9Ll'),
-        c = r.n(i),
+        c = r('Y9Ll'),
+        i = r.n(c),
         o = r('1Pcy'),
         l = r.n(o),
         s = r('5Yy7'),
         u = r.n(s),
-        d = r('2VqO'),
+        d = r('N+ot'),
         p = r.n(d),
-        h = r('KEM+'),
-        f = r.n(h),
-        y = (r('2G9S'), r('ERkP')),
-        m = r.n(y),
+        f = r('AuHH'),
+        h = r.n(f),
+        y = r('KEM+'),
+        g = r.n(y),
+        m = (r('2G9S'), r('ERkP')),
+        v = r.n(m),
         _ = r('es0u'),
-        g = (r('KqXw'), r('WNMA'), r('6M1P')),
-        w = r('XOJV'),
-        v = r('rxPX'),
-        T = function (e, t) {
+        w = (r('WNMA'), r('KqXw'), r('6M1P')),
+        T = r('XOJV'),
+        b = r('rxPX'),
+        E = function (e, t) {
           return t.match.params.statusId
         },
-        E = function (e, t) {
+        S = function (e, t) {
           return t.match.params.screenName
         },
-        S = function (e, t) {
-          return w.a.selectHydrated(e, T(0, t))
+        C = function (e, t) {
+          return T.a.selectHydrated(e, E(0, t))
         },
-        C = Object(v.a)()
+        O = Object(b.a)()
           .propsFromState(function () {
-            return { screenName: E, statusId: T, tweet: S }
+            return { screenName: S, statusId: E, tweet: C }
           })
           .adjustStateProps(function (e) {
             var t = e.screenName,
               r = e.statusId
-            return { screenName: t, statusId: r, tweet: e.tweet, usersUrtModule: Object(g.a)(r) }
+            return { screenName: t, statusId: r, tweet: e.tweet, usersUrtModule: Object(w.a)(r) }
           })
           .withAnalytics({ page: 'quote_tweets_timeline' }),
-        b = r('FIs5'),
+        P = r('FIs5'),
         k = r('3XMw'),
         I = r.n(k),
-        P = r('yoO3'),
-        O = r('u3ZE'),
-        M = r('h2mu'),
-        q = r('3IPs'),
-        x = r('VS6U'),
-        R = r('Irs7'),
-        L = I.a.bd7c039f,
-        F = I.a.e9f1fbcb,
-        j = { vertical: 'tweet_detail_quote' },
-        A = m.a.createElement(b.a, { message: F }),
-        K = (function (e) {
+        R = r('yoO3'),
+        M = r('u3ZE'),
+        j = r('h2mu'),
+        x = r('3IPs'),
+        L = r('VS6U'),
+        q = r('Irs7')
+      function F(e) {
+        var t = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (e) {
+            return !1
+          }
+        })()
+        return function () {
+          var r,
+            n = h()(e)
+          if (t) {
+            var a = h()(this).constructor
+            r = Reflect.construct(n, arguments, a)
+          } else r = n.apply(this, arguments)
+          return p()(this, r)
+        }
+      }
+      var A = I.a.bd7c039f,
+        D = I.a.e9f1fbcb,
+        H = { vertical: 'tweet_detail_quote' },
+        K = v.a.createElement(P.a, { message: D }),
+        U = (function (e) {
           u()(r, e)
-          var t = p()(r)
+          var t = F(r)
           function r() {
             var e
             a()(this, r)
-            for (var n = arguments.length, i = new Array(n), c = 0; c < n; c++) i[c] = arguments[c]
+            for (var n = arguments.length, c = new Array(n), i = 0; i < n; i++) c[i] = arguments[i]
             return (
-              (e = t.call.apply(t, [this].concat(i))),
-              f()(l()(e), '_quoteTweetSearchQueryString', 'quoted_tweet_id:'.concat(e.props.statusId)),
-              f()(l()(e), '_renderQuoteTweetTimeline', function () {
-                return m.a.createElement(M.a, {
-                  emptyStateComponent: A,
-                  fetchOptions: j,
+              (e = t.call.apply(t, [this].concat(c))),
+              g()(l()(e), '_quoteTweetSearchQueryString', 'quoted_tweet_id:'.concat(e.props.statusId)),
+              g()(l()(e), '_renderQuoteTweetTimeline', function () {
+                return v.a.createElement(j.a, {
+                  emptyStateComponent: K,
+                  fetchOptions: H,
                   query: e._quoteTweetSearchQueryString,
-                  querySrc: O.a.TweetDetailQuoteTweet,
-                  searchMode: q.c.Top,
+                  querySrc: M.a.TweetDetailQuoteTweet,
+                  searchMode: x.c.Top,
                 })
               }),
               e
             )
           }
           return (
-            c()(r, [
+            i()(r, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.history,
                     r = e.tweet
-                  return m.a.createElement(
-                    P.a,
+                  return v.a.createElement(
+                    R.a,
                     null,
-                    m.a.createElement(x.a, {
+                    v.a.createElement(L.a, {
                       backLocation: r ? r.permalink : '/',
                       history: t,
                       primaryContent: this._renderQuoteTweetTimeline(),
-                      sidebarContent: m.a.createElement(_.a, { withWhoToFollow: !1 }),
-                      title: L,
+                      sidebarContent: v.a.createElement(_.a, { withWhoToFollow: !1 }),
+                      title: A,
                     }),
                   )
                 },
@@ -174,76 +198,104 @@
             ]),
             r
           )
-        })(m.a.Component)
-      t.default = Object(R.a)(C(K))
+        })(v.a.Component)
+      t.default = Object(q.a)(O(U))
     },
     h2mu: function (e, t, r) {
       'use strict'
+      r('OZaJ')
       var n,
         a = r('VrFO'),
-        i = r.n(a),
-        c = r('Y9Ll'),
-        o = r.n(c),
+        c = r.n(a),
+        i = r('Y9Ll'),
+        o = r.n(i),
         l = r('1Pcy'),
         s = r.n(l),
         u = r('5Yy7'),
         d = r.n(u),
-        p = r('2VqO'),
-        h = r.n(p),
-        f = r('KEM+'),
-        y = r.n(f),
-        m = (r('2G9S'), r('ERkP')),
-        _ = r.n(m),
-        g = r('yiKp'),
-        w = r.n(g),
-        v = r('ezF+'),
+        p = r('N+ot'),
+        f = r.n(p),
+        h = r('AuHH'),
+        y = r.n(h),
+        g = r('KEM+'),
+        m = r.n(g),
+        v = (r('2G9S'), r('ERkP')),
+        _ = r.n(v),
+        w = (r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('ezF+')),
         T = r('QIgh'),
-        E = r('8UdT'),
-        S = r('iu0J'),
-        C = r('zgaL'),
-        b = r('PH3B'),
-        k = (r('lTEL'), r('7x/C'), r('JtPf'), r('87if'), r('kYxP'), r('XBtf')),
-        I = {
+        b = r('8UdT'),
+        E = r('iu0J'),
+        S = r('zgaL'),
+        C = r('PH3B'),
+        O = (r('JtPf'), r('7x/C'), r('87if'), r('lTEL'), r('kYxP'), r('XBtf')),
+        P = {
           loader: function () {
-            return r.e(227).then(r.bind(null, 'sc5C'))
+            return r.e(226).then(r.bind(null, 'sc5C'))
           },
           loaderKey: 'relatedSearchDefaultLoader',
-          strategy: k.a.Critical,
+          strategy: O.a.Critical,
         },
-        P = v.e(I),
-        O = (r('yH/f'), Object.freeze({ Expand: 'Expand', Replace: 'Replace', Suggest: 'Suggest' })),
-        M = {
+        k = w.e(P),
+        I = (r('yH/f'), Object.freeze({ Expand: 'Expand', Replace: 'Replace', Suggest: 'Suggest' })),
+        R = {
           loader: function () {
-            return r.e(348).then(r.bind(null, '5aND'))
+            return r.e(347).then(r.bind(null, '5aND'))
           },
           loaderKey: 'spellingExpandLoader',
-          strategy: k.a.Critical,
+          strategy: O.a.Critical,
         },
-        q = {
+        M = {
           loader: function () {
-            return r.e(348).then(r.bind(null, '77Dd'))
+            return r.e(347).then(r.bind(null, '77Dd'))
           },
           loaderKey: 'spellingReplaceLoader',
-          strategy: k.a.Critical,
+          strategy: O.a.Critical,
         },
-        x = {
+        j = {
           loader: function () {
-            return r.e(348).then(r.bind(null, 'D4Iv'))
+            return r.e(347).then(r.bind(null, 'D4Iv'))
           },
           loaderKey: 'spellingSuggestLoader',
-          strategy: k.a.Critical,
+          strategy: O.a.Critical,
         },
-        R = v.c({
+        x = w.c({
           selectDisplayType: function (e) {
             return e.content.spellingAction
           },
-          handlers: ((n = {}), y()(n, O.Expand, M), y()(n, O.Replace, q), y()(n, O.Suggest, x), n),
-        }),
-        L = function (e) {
+          handlers: ((n = {}), m()(n, I.Expand, R), m()(n, I.Replace, M), m()(n, I.Suggest, j), n),
+        })
+      function L(e, t) {
+        var r = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var n = Object.getOwnPropertySymbols(e)
+          t &&
+            (n = n.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            r.push.apply(r, n)
+        }
+        return r
+      }
+      function q(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var r = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? L(Object(r), !0).forEach(function (t) {
+                m()(e, t, r[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
+            : L(Object(r)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+              })
+        }
+        return e
+      }
+      var F = function (e) {
           var t = e.shouldStoreTypeaheadItem,
             r = e.withUserPresence
-          return w()(
-            w()(
+          return q(
+            q(
               {},
               Object(T.a)({
                 tweetDismissable: !0,
@@ -257,94 +309,115 @@
                 r = e.shouldStoreTypeaheadItem
               return (
                 (t = {}),
-                y()(t, E.b.News, b.a),
-                y()(t, E.b.EventSummary, Object(S.a)({ shouldStoreTypeaheadItem: r })),
-                y()(t, E.b.RelatedSearch, P),
-                y()(t, E.b.FollowSearch, v.e(v.a())),
-                y()(t, E.b.FollowSearchAction, v.e(v.a())),
-                y()(t, E.b.Place, v.e(v.a())),
-                y()(t, E.b.MomentAnnotation, C.a),
-                y()(t, E.b.Spelling, R),
+                m()(t, b.b.News, C.a),
+                m()(t, b.b.EventSummary, Object(E.a)({ shouldStoreTypeaheadItem: r })),
+                m()(t, b.b.RelatedSearch, k),
+                m()(t, b.b.FollowSearch, w.e(w.a())),
+                m()(t, b.b.FollowSearchAction, w.e(w.a())),
+                m()(t, b.b.Place, w.e(w.a())),
+                m()(t, b.b.MomentAnnotation, S.a),
+                m()(t, b.b.Spelling, x),
                 t
               )
             })({ shouldStoreTypeaheadItem: t }),
           )
         },
-        F = r('3X8/'),
-        j = r('oQhu'),
-        A = r('EUHl'),
+        A = r('3X8/'),
+        D = r('oQhu'),
+        H = r('EUHl'),
         K = r('7BdX'),
         U = r('fTQJ'),
-        z = r('i6OR'),
-        Q = r('X04g'),
-        X = r('t62R'),
-        D = r('FIs5'),
-        N = r('v6aA'),
-        H = r('3XMw'),
-        V = r.n(H),
-        J = V.a.c09de2d4,
-        B = _.a.createElement(
+        N = r('i6OR'),
+        X = r('X04g'),
+        z = r('t62R'),
+        Q = r('FIs5'),
+        B = r('v6aA'),
+        J = r('3XMw'),
+        V = r.n(J)
+      function W(e) {
+        var t = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (e) {
+            return !1
+          }
+        })()
+        return function () {
+          var r,
+            n = y()(e)
+          if (t) {
+            var a = y()(this).constructor
+            r = Reflect.construct(n, arguments, a)
+          } else r = n.apply(this, arguments)
+          return f()(this, r)
+        }
+      }
+      var Y = V.a.c09de2d4,
+        Z = _.a.createElement(
           V.a.I18NFormatMessage,
           { $i18n: 'f0089e9c' },
-          _.a.createElement(X.b, { link: '/settings/search' }, V.a.d2918e88),
+          _.a.createElement(z.b, { link: '/settings/search' }, V.a.d2918e88),
         ),
-        Y = V.a.ae111c99,
-        G = (function (e) {
+        G = V.a.ae111c99,
+        $ = (function (e) {
           d()(r, e)
-          var t = h()(r)
+          var t = W(r)
           function r() {
             var e
-            i()(this, r)
-            for (var n = arguments.length, a = new Array(n), c = 0; c < n; c++) a[c] = arguments[c]
+            c()(this, r)
+            for (var n = arguments.length, a = new Array(n), i = 0; i < n; i++) a[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(a))),
-              y()(s()(e), '_shouldStoreTypeaheadItem', function (t) {
+              m()(s()(e), '_shouldStoreTypeaheadItem', function (t) {
                 switch (t) {
-                  case Q.a.ItemType.USER:
+                  case X.a.ItemType.USER:
                     return e.context.featureSwitches.isTrue('responsive_web_recent_searches_users_enabled')
-                  case Q.a.ItemType.TOPIC:
+                  case X.a.ItemType.TOPIC:
                     return e.context.featureSwitches.isTrue('responsive_web_recent_searches_topics_enabled')
-                  case Q.a.ItemType.EVENT:
+                  case X.a.ItemType.EVENT:
                     return e.context.featureSwitches.isTrue('responsive_web_recent_searches_events_enabled')
                   default:
                     return !1
                 }
               }),
-              y()(s()(e), '_getModule', function () {
+              m()(s()(e), '_getModule', function () {
                 var t = e.props,
                   r = t.query,
                   n = t.querySrc,
                   a = t.searchFilters,
-                  i = t.searchMode,
-                  c = t.urtEndpointOptions,
+                  c = t.searchMode,
+                  i = t.urtEndpointOptions,
                   o = t.vertical
-                return e._getMemoizedModule(r, n, i, a, o, c)
+                return e._getMemoizedModule(r, n, c, a, o, i)
               }),
-              y()(s()(e), '_renderEmptyTimeline', function () {
+              m()(s()(e), '_renderEmptyTimeline', function () {
                 var t = e.props,
                   r = t.emptyStateComponent,
                   n = t.query
-                return r || _.a.createElement(D.a, { header: Y({ query: n }), message: B })
+                return r || _.a.createElement(Q.a, { header: G({ query: n }), message: Z })
               }),
-              y()(
+              m()(
                 s()(e),
                 '_getMemoizedModule',
-                Object(j.a)(function (e, t, r, n, a, i) {
-                  return Object(z.b)({
+                Object(D.a)(function (e, t, r, n, a, c) {
+                  return Object(N.b)({
                     query: e,
                     searchMode: r,
                     querySource: t,
                     searchFilters: n,
                     vertical: a,
-                    urtEndpointOptions: i,
+                    urtEndpointOptions: c,
                   })
                 }),
               ),
-              y()(
+              m()(
                 s()(e),
                 '_getMemoizedEntryConfiguration',
-                Object(j.a)(function (t) {
-                  return L({ shouldStoreTypeaheadItem: e._shouldStoreTypeaheadItem, withUserPresence: t })
+                Object(D.a)(function (t) {
+                  return F({ shouldStoreTypeaheadItem: e._shouldStoreTypeaheadItem, withUserPresence: t })
                 }),
               ),
               e
@@ -356,14 +429,14 @@
                 key: 'render',
                 value: function () {
                   return _.a.createElement(U.a, {
-                    apiErrorHandlerMap: F.a,
+                    apiErrorHandlerMap: A.a,
                     entryConfiguration: this._getMemoizedEntryConfiguration(this.props.withUserPresence),
                     fetchOptions: this.props.fetchOptions,
                     module: this._getModule(),
-                    newTweetsPillMode: A.a.CLIENT,
+                    newTweetsPillMode: H.a.CLIENT,
                     prerollDisplayLocation: K.c.SEARCH_TWEETS,
                     renderEmptyState: this._renderEmptyTimeline,
-                    title: J,
+                    title: Y,
                     withUserPresence: this.props.withUserPresence,
                   })
                 },
@@ -372,18 +445,18 @@
             r
           )
         })(_.a.Component)
-      y()(G, 'contextType', N.a)
-      t.a = G
+      m()($, 'contextType', B.a)
+      t.a = $
     },
     i6OR: function (e, t, r) {
       'use strict'
       r.d(t, 'a', function () {
-        return f
+        return h
       })
       var n,
         a = r('KEM+'),
-        i = r.n(a),
-        c = (r('jQ3i'), r('x4t0'), r('2G9S'), r('IAdD'), r('LW0h'), r('7x/C'), r('vrRf'), r('z84I'), r('u3ZE')),
+        c = r.n(a),
+        i = (r('jQ3i'), r('x4t0'), r('2G9S'), r('IAdD'), r('LW0h'), r('vrRf'), r('z84I'), r('u3ZE')),
         o = r('3IPs'),
         l = r('ZNT5'),
         s = r('eR3e'),
@@ -391,20 +464,20 @@
         d = ' near:me',
         p =
           ((n = {}),
-          i()(n, o.c.Top, {}),
-          i()(n, o.c.Live, { tweet_search_mode: o.c.Live }),
-          i()(n, o.c.User, { result_filter: o.c.User }),
-          i()(n, o.c.Image, { result_filter: o.c.Image }),
-          i()(n, o.c.Video, { result_filter: o.c.Video }),
+          c()(n, o.c.Top, {}),
+          c()(n, o.c.Live, { tweet_search_mode: o.c.Live }),
+          c()(n, o.c.User, { result_filter: o.c.User }),
+          c()(n, o.c.Image, { result_filter: o.c.Image }),
+          c()(n, o.c.Video, { result_filter: o.c.Video }),
           n),
-        h = function (e) {
+        f = function (e) {
           return (function (e) {
-            return e === c.a.SpellingCorrectionRevertClick || e === c.a.SpellingExpansionRevertClick
+            return e === i.a.SpellingCorrectionRevertClick || e === i.a.SpellingExpansionRevertClick
           })(e)
             ? '-revert'
             : ''
         },
-        f = function () {
+        h = function () {
           return function (e, t) {
             e(
               Object(s.t)(t())
@@ -422,16 +495,16 @@
           r = e.searchMode,
           n = void 0 === r ? o.c.Top : r,
           a = e.querySource,
-          i = e.searchFilters,
-          c = e.vertical,
+          c = e.searchFilters,
+          i = e.vertical,
           s = e.urtEndpointOptions,
-          f = h(a),
-          y = i && i.peopleFilter ? 'searcher_follows' : void 0,
-          m = y ? '-pf' : '',
-          _ = i && i.locationFilter && !t.includes(d) ? ''.concat(t).concat(d) : t,
-          g = ''.concat(u).concat(_, '-').concat(n).concat(f).concat(m)
+          h = f(a),
+          y = c && c.peopleFilter ? 'searcher_follows' : void 0,
+          g = y ? '-pf' : '',
+          m = c && c.locationFilter && !t.includes(d) ? ''.concat(t).concat(d) : t,
+          v = ''.concat(u).concat(m, '-').concat(n).concat(h).concat(g)
         return Object(l.a)({
-          timelineId: g,
+          timelineId: v,
           getEndpoint: function (e) {
             return e.URT.fetchSearch
           },
@@ -439,7 +512,7 @@
             return Object.assign(
               {},
               null == s ? void 0 : s.requestParams,
-              { q: _, social_filter: y, vertical: c },
+              { q: m, social_filter: y, vertical: i },
               p[n],
               e,
             )
@@ -484,14 +557,14 @@
       'use strict'
       var n = r('ezF+'),
         a =
-          (r('lTEL'),
+          (r('JtPf'),
           r('7x/C'),
-          r('JtPf'),
           r('87if'),
+          r('lTEL'),
           r('kYxP'),
           {
             loader: function () {
-              return r.e(219).then(r.bind(null, 'tFiq'))
+              return r.e(218).then(r.bind(null, 'tFiq'))
             },
             loaderKey: 'momentAnnoationLoader',
             strategy: r('XBtf').a.Critical,

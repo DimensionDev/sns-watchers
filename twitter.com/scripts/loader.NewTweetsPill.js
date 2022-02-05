@@ -1,86 +1,111 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [176],
+  [175],
   {
-    WXWl: function (e, t, i) {
+    WXWl: function (e, t, r) {
       'use strict'
-      var n = i('yiKp'),
-        a = i.n(n),
-        r = i('ERkP'),
-        o = i.n(r),
-        s = i('Lsrn'),
-        l = i('k/Ka'),
-        c = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(l.a)(
-            'svg',
-            a()(
-              a()({}, e),
-              {},
-              {
-                accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [s.a.root, e.style],
-                viewBox: '0 0 24 24',
-              },
-            ),
-            o.a.createElement(
-              'g',
-              null,
-              o.a.createElement('path', {
-                d: 'M18.707 10.293l-6-6c-.39-.39-1.023-.39-1.414 0l-6 6c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L11 7.414V20c0 .553.447 1 1 1s1-.447 1-1V7.414l4.293 4.293c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414z',
-              }),
-            ),
-          )
+      r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
+      var n = r('KEM+'),
+        i = r.n(n),
+        o = r('ERkP'),
+        a = r.n(o),
+        s = r('Lsrn'),
+        c = r('k/Ka')
+      function l(e, t) {
+        var r = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var n = Object.getOwnPropertySymbols(e)
+          t &&
+            (n = n.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            r.push.apply(r, n)
         }
-      ;(c.metadata = { width: 24, height: 24 }), (t.a = c)
+        return r
+      }
+      function u(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var r = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? l(Object(r), !0).forEach(function (t) {
+                i()(e, t, r[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
+            : l(Object(r)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+              })
+        }
+        return e
+      }
+      var p = function () {
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+        return Object(c.a)(
+          'svg',
+          u(
+            u({}, e),
+            {},
+            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [s.a.root, e.style], viewBox: '0 0 24 24' },
+          ),
+          a.a.createElement(
+            'g',
+            null,
+            a.a.createElement('path', {
+              d: 'M18.707 10.293l-6-6c-.39-.39-1.023-.39-1.414 0l-6 6c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L11 7.414V20c0 .553.447 1 1 1s1-.447 1-1V7.414l4.293 4.293c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414z',
+            }),
+          ),
+        )
+      }
+      ;(p.metadata = { width: 24, height: 24 }), (t.a = p)
     },
-    o52z: function (e, t, i) {
+    o52z: function (e, t, r) {
       'use strict'
-      i.d(t, 'a', function () {
-        return a
+      r.d(t, 'a', function () {
+        return i
       })
-      var n = i('VPAj'),
-        a = Object(n.a)([])
+      var n = r('VPAj'),
+        i = Object(n.a)([])
       Object(n.a)({})
     },
-    xAHt: function (e, t, i) {
+    xAHt: function (e, t, r) {
       'use strict'
-      i.r(t),
-        i.d(t, 'NewTweetsPill', function () {
-          return K
+      r.r(t),
+        r.d(t, 'NewTweetsPill', function () {
+          return B
         })
-      var n = i('yiKp'),
-        a = i.n(n),
-        r = i('VrFO'),
-        o = i.n(r),
-        s = i('Y9Ll'),
-        l = i.n(s),
-        c = i('1Pcy'),
-        u = i.n(c),
-        h = i('5Yy7'),
-        m = i.n(h),
-        p = i('2VqO'),
-        d = i.n(p),
-        w = i('KEM+'),
-        f = i.n(w),
-        y = (i('2G9S'), i('uFXj'), i('ERkP')),
-        _ = i.n(y),
-        v = (i('z84I'), i('lnti')),
-        b = i('hqKg'),
-        g = i('o52z'),
-        S = i('G6rE'),
-        D = i('rxPX'),
-        I = function (e, t) {
-          return (t.alert && t.alert.userIds) || Object(g.a)()
+      r('OZaJ'), r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
+      var n = r('VrFO'),
+        i = r.n(n),
+        o = r('Y9Ll'),
+        a = r.n(o),
+        s = r('1Pcy'),
+        c = r.n(s),
+        l = r('5Yy7'),
+        u = r.n(l),
+        p = r('N+ot'),
+        h = r.n(p),
+        m = r('AuHH'),
+        f = r.n(m),
+        d = r('KEM+'),
+        w = r.n(d),
+        y = (r('2G9S'), r('uFXj'), r('ERkP')),
+        b = r.n(y),
+        v = (r('z84I'), r('lnti')),
+        g = r('hqKg'),
+        O = r('o52z'),
+        _ = r('G6rE'),
+        j = r('rxPX'),
+        D = function (e, t) {
+          return (t.alert && t.alert.userIds) || Object(O.a)()
         },
-        T = Object(D.a)()
+        S = Object(j.a)()
           .propsFromState(function () {
             return {
-              userImageUrls: Object(b.createSelector)(S.e.selectAll, I, function (e, t) {
+              userImageUrls: Object(g.createSelector)(_.e.selectAll, D, function (e, t) {
                 return t
                   ? Object(v.a)(
                       t.map(function (t) {
-                        var i = e[t]
-                        return i ? i.profile_image_url_https : void 0
+                        var r = e[t]
+                        return r ? r.profile_image_url_https : void 0
                       }),
                     )
                   : []
@@ -88,61 +113,109 @@
             }
           })
           .withAnalytics(),
-        k = i('3XMw'),
-        A = i.n(k),
-        L = i('WXWl'),
-        C = i('IbOt'),
-        O = i('fs1G'),
-        E = i('rcen'),
-        x = i('MWbm'),
-        M = i('I4+6'),
-        j = i('rHpw'),
-        P = i('cm6r'),
-        R = i('MAI/'),
-        V = i('t62R'),
-        z = A.a.gdb8bdcc,
-        U = A.a.ac0f6491,
-        W = { component: 'new_tweet_prompt' },
-        F = {},
-        H = {},
-        K = (function (e) {
-          m()(i, e)
-          var t = d()(i)
-          function i() {
+        P = r('3XMw'),
+        I = r.n(P),
+        T = r('WXWl'),
+        k = r('IbOt'),
+        A = r('fs1G'),
+        E = r('rcen'),
+        L = r('MWbm'),
+        R = r('I4+6'),
+        x = r('rHpw'),
+        C = r('cm6r'),
+        M = r('MAI/'),
+        H = r('t62R')
+      function W(e, t) {
+        var r = Object.keys(e)
+        if (Object.getOwnPropertySymbols) {
+          var n = Object.getOwnPropertySymbols(e)
+          t &&
+            (n = n.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable
+            })),
+            r.push.apply(r, n)
+        }
+        return r
+      }
+      function F(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var r = null != arguments[t] ? arguments[t] : {}
+          t % 2
+            ? W(Object(r), !0).forEach(function (t) {
+                w()(e, t, r[t])
+              })
+            : Object.getOwnPropertyDescriptors
+            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
+            : W(Object(r)).forEach(function (t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+              })
+        }
+        return e
+      }
+      function V(e) {
+        var t = (function () {
+          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
+          if (Reflect.construct.sham) return !1
+          if ('function' == typeof Proxy) return !0
+          try {
+            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
+          } catch (e) {
+            return !1
+          }
+        })()
+        return function () {
+          var r,
+            n = f()(e)
+          if (t) {
+            var i = f()(this).constructor
+            r = Reflect.construct(n, arguments, i)
+          } else r = n.apply(this, arguments)
+          return h()(this, r)
+        }
+      }
+      var X = I.a.gdb8bdcc,
+        z = I.a.ac0f6491,
+        K = { component: 'new_tweet_prompt' },
+        N = {},
+        U = {},
+        B = (function (e) {
+          u()(r, e)
+          var t = V(r)
+          function r() {
             var e
-            o()(this, i)
-            for (var n = arguments.length, a = new Array(n), r = 0; r < n; r++) a[r] = arguments[r]
+            i()(this, r)
+            for (var n = arguments.length, o = new Array(n), a = 0; a < n; a++) o[a] = arguments[a]
             return (
-              (e = t.call.apply(t, [this].concat(a))),
-              f()(u()(e), 'state', { show: !1 }),
-              f()(u()(e), '_getLastShownTime', function () {
-                return H[e.props.timelineId]
+              (e = t.call.apply(t, [this].concat(o))),
+              w()(c()(e), 'state', { show: !1 }),
+              w()(c()(e), '_getLastShownTime', function () {
+                return U[e.props.timelineId]
               }),
-              f()(u()(e), '_attemptShow', function () {
+              w()(c()(e), '_attemptShow', function () {
                 var t = e.props,
-                  i = t.alert,
+                  r = t.alert,
                   n = t.isAtNewest,
-                  a = t.removeAlert,
-                  r = t.timelineId,
-                  o = t.unreadCount
-                if ((e._timeoutID && (clearTimeout(e._timeoutID), (e._timeoutID = null)), e._mounted && (i || o > 0))) {
+                  i = t.removeAlert,
+                  o = t.timelineId,
+                  a = t.unreadCount
+                if ((e._timeoutID && (clearTimeout(e._timeoutID), (e._timeoutID = null)), e._mounted && (r || a > 0))) {
                   var s = e._getDelayRemaining()
                   if (s <= 0) {
-                    if (i && n()) return void a()
-                    e.setState({ show: !0 }), (F[r] = Date.now()), e._scribeAction('show')
+                    if (r && n()) return void i()
+                    e.setState({ show: !0 }), (N[o] = Date.now()), e._scribeAction('show')
                   } else e._timeoutID = setTimeout(e._attemptShow, s)
                 }
               }),
-              f()(u()(e), '_handleScrollDown', function () {
+              w()(c()(e), '_handleScrollDown', function () {
                 var t = e.props,
-                  i = t.alert,
+                  r = t.alert,
                   n = t.remainVisibleInterval,
-                  a = t.timelineId,
-                  r = n
-                i && i.displayDurationMs && i.displayDurationMs > -1 && (r = i.displayDurationMs),
-                  e.state.show && Date.now() >= F[a] + r && (e._scribeAction('dismiss'), e._hide())
+                  i = t.timelineId,
+                  o = n
+                r && r.displayDurationMs && r.displayDurationMs > -1 && (o = r.displayDurationMs),
+                  e.state.show && Date.now() >= N[i] + o && (e._scribeAction('dismiss'), e._hide())
               }),
-              f()(u()(e), '_handleClick', function () {
+              w()(c()(e), '_handleClick', function () {
                 var t = e.props.applyNewTweetsBarInstructions
                 e._scribeAction('click'), window.scrollTo(0, 0), t && t(), e._hide()
               }),
@@ -150,33 +223,33 @@
             )
           }
           return (
-            l()(i, [
+            a()(r, [
               {
                 key: 'componentDidMount',
                 value: function () {
                   ;(this._mounted = !0),
                     this._getLastShownTime() || this._updateLastShownTime(this.props.timelineId),
                     this._attemptShow(),
-                    (this._cancelMomentum = Object(C.a)({ onUp: O.a, onDown: this._handleScrollDown }))
+                    (this._cancelMomentum = Object(k.a)({ onUp: A.a, onDown: this._handleScrollDown }))
                 },
               },
               {
                 key: 'componentDidUpdate',
                 value: function (e, t) {
-                  var i = this.props,
-                    n = i.alert,
-                    a = i.timelineId,
-                    r = i.unreadCount,
-                    o = e.timelineId !== a,
-                    s = o && !this._getLastShownTime()
-                  o
-                    ? (s && this._updateLastShownTime(a),
+                  var r = this.props,
+                    n = r.alert,
+                    i = r.timelineId,
+                    o = r.unreadCount,
+                    a = e.timelineId !== i,
+                    s = a && !this._getLastShownTime()
+                  a
+                    ? (s && this._updateLastShownTime(i),
                       t.show && this._updateLastShownTime(e.timelineId),
                       e.removeAlert && e.removeAlert(),
                       this.setState({ show: !1 }),
                       this._attemptShow())
-                    : (((n && !t.show) || r > e.unreadCount) && this._attemptShow(),
-                      (!e.alert && 0 !== r) || n || this._hide())
+                    : (((n && !t.show) || o > e.unreadCount) && this._attemptShow(),
+                      (!e.alert && 0 !== o) || n || this._hide())
                 },
               },
               {
@@ -184,10 +257,10 @@
                 value: function () {
                   var e = this.props,
                     t = e.removeAlert,
-                    i = e.timelineId
+                    r = e.timelineId
                   ;(this._mounted = !1),
                     this._timeoutID && clearTimeout(this._timeoutID),
-                    this.state.show && (this._updateLastShownTime(i), t && t()),
+                    this.state.show && (this._updateLastShownTime(r), t && t()),
                     this._cancelMomentum()
                 },
               },
@@ -196,46 +269,46 @@
                 value: function () {
                   var e,
                     t = this.props,
-                    i = t.alert,
+                    r = t.alert,
                     n = t.label,
-                    a = t.userImageUrls,
-                    r = this.state.show
-                  e = i
-                    ? i.richText && _.a.createElement(E.a, { entities: i.richText.entities, text: i.richText.text })
+                    i = t.userImageUrls,
+                    o = this.state.show
+                  e = r
+                    ? r.richText && b.a.createElement(E.a, { entities: r.richText.entities, text: r.richText.text })
                     : n
-                  var o = M.a.generate({
-                    backgroundColor: j.a.theme.colors.primary,
-                    color: j.a.theme.colors.whiteOnColor,
+                  var a = R.a.generate({
+                    backgroundColor: x.a.theme.colors.primary,
+                    color: x.a.theme.colors.whiteOnColor,
                   })
-                  return _.a.createElement(
-                    x.a,
+                  return b.a.createElement(
+                    L.a,
                     { accessibilityRole: 'status' },
-                    _.a.createElement(
-                      P.a,
+                    b.a.createElement(
+                      C.a,
                       {
-                        accessibilityHidden: !r,
-                        accessibilityLabel: U,
+                        accessibilityHidden: !o,
+                        accessibilityLabel: z,
                         accessibilityRole: 'button',
-                        interactiveStyles: o,
+                        interactiveStyles: a,
                         onClick: this._handleClick,
-                        style: [N.pill, r && N.show],
+                        style: [G.pill, o && G.show],
                       },
-                      _.a.createElement(
-                        x.a,
-                        { style: N.innerPill },
-                        _.a.createElement(L.a, { style: N.icon }),
-                        a && a.length > 0
-                          ? _.a.createElement(
-                              x.a,
-                              { style: N.facepile },
-                              _.a.createElement(R.a, {
+                      b.a.createElement(
+                        L.a,
+                        { style: G.innerPill },
+                        b.a.createElement(T.a, { style: G.icon }),
+                        i && i.length > 0
+                          ? b.a.createElement(
+                              L.a,
+                              { style: G.facepile },
+                              b.a.createElement(M.a, {
                                 borderColor: 'primary',
                                 userAvatarSize: 'large',
-                                userAvatarUrls: a,
+                                userAvatarUrls: i,
                               }),
                             )
                           : null,
-                        _.a.createElement(V.b, { color: 'whiteOnColor', numberOfLines: 1, style: N.pillText }, e),
+                        b.a.createElement(H.b, { color: 'whiteOnColor', numberOfLines: 1, style: G.pillText }, e),
                       ),
                     ),
                   )
@@ -246,15 +319,15 @@
                 value: function () {
                   var e = this.props,
                     t = e.alert,
-                    i = e.triggerDelay,
-                    n = (t && t.triggerDelayMs) || i
+                    r = e.triggerDelay,
+                    n = (t && t.triggerDelayMs) || r
                   return this._getLastShownTime() + n - Date.now()
                 },
               },
               {
                 key: '_updateLastShownTime',
                 value: function (e) {
-                  e && (H[e] = Date.now())
+                  e && (U[e] = Date.now())
                 },
               },
               {
@@ -262,12 +335,12 @@
                 value: function () {
                   var e = this.props,
                     t = e.alert,
-                    i = e.removeAlert,
+                    r = e.removeAlert,
                     n = e.timelineId
                   this._mounted && (this._updateLastShownTime(n), this.setState({ show: !1 })),
                     t &&
                       setTimeout(function () {
-                        return i()
+                        return r()
                       }, 500)
                 },
               },
@@ -275,26 +348,25 @@
                 key: '_scribeAction',
                 value: function (e) {
                   var t = this.props,
-                    i = t.analytics,
-                    n = t.scribeNamespace,
-                    r = a()(a()(a()({}, n), W), {}, { action: e })
-                  i.scribe(r)
+                    r = t.analytics,
+                    n = F(F(F({}, t.scribeNamespace), K), {}, { action: e })
+                  r.scribe(n)
                 },
               },
             ]),
-            i
+            r
           )
-        })(_.a.PureComponent)
-      f()(K, 'defaultProps', {
+        })(b.a.PureComponent)
+      w()(B, 'defaultProps', {
         isAtNewest: function () {
           return !0
         },
-        label: z,
+        label: X,
         remainVisibleInterval: 3e3,
         triggerDelay: 24e4,
         unreadCount: 0,
       })
-      var N = j.a.create(function (e) {
+      var G = x.a.create(function (e) {
           return {
             pill: {
               boxShadow: e.boxShadows.small,
@@ -324,8 +396,8 @@
             },
           }
         }),
-        X = T(K)
-      t.default = X
+        J = S(B)
+      t.default = J
     },
   },
 ])
