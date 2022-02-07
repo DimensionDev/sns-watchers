@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [172],
+  [173],
   {
     jHwr: function (e, t, n) {
       'use strict'
@@ -17,141 +17,92 @@
       'use strict'
       n.r(t),
         n.d(t, 'default', function () {
-          return z
+          return U
         })
-      n('OZaJ'), n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
-      var o = n('97Jx'),
+      var o = n('yiKp'),
         r = n.n(o),
-        i = n('VrFO'),
-        a = n.n(i),
+        a = n('97Jx'),
+        i = n.n(a),
+        d = n('VrFO'),
+        s = n.n(d),
         c = n('Y9Ll'),
-        s = n.n(c),
-        u = n('1Pcy'),
-        d = n.n(u),
-        l = n('5Yy7'),
+        u = n.n(c),
+        l = n('1Pcy'),
         p = n.n(l),
-        f = n('N+ot'),
-        h = n.n(f),
-        w = n('AuHH'),
+        h = n('5Yy7'),
+        f = n.n(h),
+        w = n('2VqO'),
         m = n.n(w),
         b = n('KEM+'),
-        y = n.n(b),
-        v = (n('yH/f'), n('2G9S'), n('ERkP')),
-        O = n.n(v),
-        g = n('zfvc'),
-        _ = n('siLd'),
-        C = n('jHwr'),
-        R = n('VY6S'),
-        k = n('w9LO'),
-        P = n('TCjc'),
-        x = n('nb/L'),
-        j = n('Oe3h'),
-        E = n('0FVZ'),
-        S = n('rHpw'),
-        A = n('i4Oy'),
+        v = n.n(b),
+        y = (n('yH/f'), n('2G9S'), n('ERkP')),
+        _ = n.n(y),
+        C = n('zfvc'),
+        g = n('siLd'),
+        k = n('jHwr'),
+        x = n('VY6S'),
+        E = n('w9LO'),
+        R = n('TCjc'),
+        A = n('nb/L'),
+        O = n('Oe3h'),
+        S = n('0FVZ'),
+        F = n('rHpw'),
+        P = n('i4Oy'),
         D = n('shC7'),
-        H = n('MWbm')
-      function F(e, t) {
-        var n = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var o = Object.getOwnPropertySymbols(e)
-          t &&
-            (o = o.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            n.push.apply(n, o)
-        }
-        return n
-      }
-      function L(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? F(Object(n), !0).forEach(function (t) {
-                y()(e, t, n[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : F(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-              })
-        }
-        return e
-      }
-      function U(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var n,
-            o = m()(e)
-          if (t) {
-            var r = m()(this).constructor
-            n = Reflect.construct(o, arguments, r)
-          } else n = o.apply(this, arguments)
-          return h()(this, n)
-        }
-      }
-      var z = (function (e) {
-          p()(n, e)
-          var t = U(n)
+        H = n('MWbm'),
+        U = (function (e) {
+          f()(n, e)
+          var t = m()(n)
           function n(e, o) {
-            var i
+            var r
             return (
-              a()(this, n),
-              (i = t.call(this, e, o)),
-              y()(d()(i), '_renderContent', function () {
-                var e = i.props,
+              s()(this, n),
+              (r = t.call(this, e, o)),
+              v()(p()(r), '_renderContent', function () {
+                var e = r.props,
                   t = e.animationDuration,
                   n = e.animationType,
                   o = e.enableClickOutsideToDismiss,
                   a = e.onAnimateComplete,
-                  c = e.onDismiss,
+                  d = e.onDismiss,
                   s = e.show,
-                  u = e.withArrow,
-                  d = e.withContentOverflow,
+                  c = e.withArrow,
+                  u = e.withContentOverflow,
                   l = e.withFixedPosition,
                   p = e.withFocusContainer,
-                  f = e.withMask,
-                  h = e.withRoundedSides,
+                  h = e.withMask,
+                  f = e.withRoundedSides,
                   w = e.withoutLayer,
-                  m = i.state,
+                  m = r.state,
                   b = m.bottom,
-                  y = m.left,
-                  v = m.right,
-                  _ = m.top,
-                  C = void 0 === _ && void 0 === b,
-                  R = C || !p ? O.a.Fragment : k.a,
-                  x = { top: _, bottom: b, left: y, right: v },
-                  E = [C ? N.initialRenderWrapper : l ? N.contentWrapperFixed : N.contentWrapperAbsolute, x],
-                  S = h ? N.infiniteCornerRadius : N.defaultCornerRadius,
-                  A = [N.contentRoot, S, !d && !u && N.overflowHidden]
-                return O.a.createElement(
-                  P.a.Provider,
+                  v = m.left,
+                  y = m.right,
+                  g = m.top,
+                  k = void 0 === g && void 0 === b,
+                  x = k || !p ? _.a.Fragment : E.a,
+                  A = { top: g, bottom: b, left: v, right: y },
+                  S = [k ? z.initialRenderWrapper : l ? z.contentWrapperFixed : z.contentWrapperAbsolute, A],
+                  F = f ? z.infiniteCornerRadius : z.defaultCornerRadius,
+                  P = [z.contentRoot, F, !u && !c && z.overflowHidden]
+                return _.a.createElement(
+                  R.a.Provider,
                   { value: { isInHoverCard: !0 } },
-                  o ? O.a.createElement(H.a, { onClick: c, style: [N.mask, f && N.withMask] }) : null,
-                  O.a.createElement(
+                  o ? _.a.createElement(H.a, { onClick: d, style: [z.mask, h && z.withMask] }) : null,
+                  _.a.createElement(
                     H.a,
-                    { onKeyUp: i._handleEsc, ref: i._setContentNode, style: E },
-                    O.a.createElement(
-                      R,
+                    { onKeyUp: r._handleEsc, ref: r._setContentNode, style: S },
+                    _.a.createElement(
+                      x,
                       null,
-                      O.a.createElement(
-                        g.b,
+                      _.a.createElement(
+                        C.b,
                         { animateMount: !0, duration: t || 'long', onAnimateComplete: a, show: s, type: n || 'fade' },
                         function (e) {
                           var t = e.isAnimating
-                          return f || w
-                            ? O.a.createElement(H.a, { style: A }, i._renderInnerBody())
-                            : O.a.createElement(j.a, { id: 'HoverCard', minimizeReporting: t }, function (e, t) {
-                                return O.a.createElement(H.a, r()({ ref: e() }, t({ style: A })), i._renderInnerBody())
+                          return h || w
+                            ? _.a.createElement(H.a, { style: P }, r._renderInnerBody())
+                            : _.a.createElement(O.a, { id: 'HoverCard', minimizeReporting: t }, function (e, t) {
+                                return _.a.createElement(H.a, i()({ ref: e() }, t({ style: P })), r._renderInnerBody())
                               })
                         },
                       ),
@@ -159,68 +110,68 @@
                   ),
                 )
               }),
-              y()(d()(i), '_renderInnerBody', function () {
-                var e = i.props,
+              v()(p()(r), '_renderInnerBody', function () {
+                var e = r.props,
                   t = e.children,
                   n = e.withArrow
-                return O.a.createElement(
-                  O.a.Fragment,
+                return _.a.createElement(
+                  _.a.Fragment,
                   null,
-                  n && O.a.createElement(x.a, { style: i._getArrowStyle() }),
+                  n && _.a.createElement(A.a, { style: r._getArrowStyle() }),
                   t,
                 )
               }),
-              y()(d()(i), '_setContentNode', function (e) {
-                ;(i._contentNode = e || void 0), i._scheduleUpdate()
+              v()(p()(r), '_setContentNode', function (e) {
+                ;(r._contentNode = e || void 0), r._scheduleUpdate()
               }),
-              y()(d()(i), '_handleEsc', function (e) {
-                var t = i.props.onDismiss,
+              v()(p()(r), '_handleEsc', function (e) {
+                var t = r.props.onDismiss,
                   n = e.altKey,
                   o = e.ctrlKey,
-                  r = e.key,
-                  a = e.metaKey
-                !(n || o || a) && 'Escape' === r && t && t()
+                  a = e.key,
+                  i = e.metaKey
+                !(n || o || i) && 'Escape' === a && t && t()
               }),
-              y()(d()(i), '_updatePosition', function () {
-                if (i._mounted) {
-                  var e = i.props,
+              v()(p()(r), '_updatePosition', function () {
+                if (r._mounted) {
+                  var e = r.props,
                     t = e.anchorNode,
                     n = e.preferredHorizontalOrientation,
                     o = e.preferredVerticalOrientation,
-                    r = e.withArrow,
-                    a = e.withFixedPosition,
-                    c = S.a.theme.borderRadiiPx.large,
-                    s = Object(_.d)({
+                    a = e.withArrow,
+                    i = e.withFixedPosition,
+                    d = F.a.theme.borderRadiiPx.large,
+                    s = Object(g.d)({
                       anchorNode: t,
-                      contentNode: i._contentNode,
+                      contentNode: r._contentNode,
                       preferredHorizontalOrientation: n,
                       preferredVerticalOrientation: o,
-                      withArrow: r,
-                      withFixedPosition: a,
-                      borderRadius: c,
+                      withArrow: a,
+                      withFixedPosition: i,
+                      borderRadius: d,
                     })
                   if (s) {
-                    var u = s.arrowPositionStart,
-                      d = s.bottom,
+                    var c = s.arrowPositionStart,
+                      u = s.bottom,
                       l = s.left,
                       p = s.right,
-                      f = s.top
-                    i.setState({ arrowPositionStart: u, bottom: d, left: l, right: p, top: f })
+                      h = s.top
+                    r.setState({ arrowPositionStart: c, bottom: u, left: l, right: p, top: h })
                   }
                 }
               }),
-              (i.state = Object.freeze({})),
-              (i._scheduleUpdate = Object(C.a)(i._updatePosition, window.requestAnimationFrame)),
-              (i._scheduleDebouncedUpdate = Object(R.a)(i._scheduleUpdate, 250)),
-              i
+              (r.state = Object.freeze({})),
+              (r._scheduleUpdate = Object(k.a)(r._updatePosition, window.requestAnimationFrame)),
+              (r._scheduleDebouncedUpdate = Object(x.a)(r._scheduleUpdate, 250)),
+              r
             )
           }
           return (
-            s()(n, [
+            u()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
-                  ;(this._mounted = !0), A.a.addEventListener('change', this._scheduleDebouncedUpdate)
+                  ;(this._mounted = !0), P.a.addEventListener('change', this._scheduleDebouncedUpdate)
                 },
               },
               {
@@ -234,7 +185,7 @@
                 key: 'componentWillUnmount',
                 value: function () {
                   var e = this.props.onHoverCardUnmount
-                  ;(this._mounted = !1), A.a.removeEventListener('change', this._scheduleDebouncedUpdate), e && e()
+                  ;(this._mounted = !1), P.a.removeEventListener('change', this._scheduleDebouncedUpdate), e && e()
                 },
               },
               {
@@ -242,7 +193,7 @@
                 value: function () {
                   return this.props.withoutLayer
                     ? this._renderContent()
-                    : O.a.createElement(E.a.Dropdown, null, this._renderContent())
+                    : _.a.createElement(S.a.Dropdown, null, this._renderContent())
                 },
               },
               {
@@ -253,8 +204,8 @@
                     n = t.arrowPositionStart,
                     o = t.bottom
                   if (n) {
-                    e = [N.arrow, o ? N.downArrow : N.upArrow]
-                    var r = 'calc('.concat(n, 'px - ').concat(x.a.metadata.width / 2, 'px)')
+                    e = [z.arrow, o ? z.downArrow : z.upArrow]
+                    var r = 'calc('.concat(n, 'px - ').concat(A.a.metadata.width / 2, 'px)')
                     D.a.getConstants().isRTL ? e.push({ right: r }) : e.push({ left: r })
                   }
                   return e
@@ -263,8 +214,8 @@
             ]),
             n
           )
-        })(O.a.Component),
-        N = S.a.create(function (e) {
+        })(_.a.Component),
+        z = F.a.create(function (e) {
           return {
             arrow: {
               color: e.colors.cellBackground,
@@ -275,7 +226,7 @@
                 .concat(e.colors.gray200, ')'),
               fontSize: e.fontSizes.subtext2,
               position: 'absolute',
-              width: ''.concat(x.a.metadata.width, 'px'),
+              width: ''.concat(A.a.metadata.width, 'px'),
             },
             contentWrapperAbsolute: { position: 'absolute' },
             contentWrapperFixed: { backfaceVisibility: 'hidden', position: 'fixed' },
@@ -284,7 +235,7 @@
             overflowHidden: { overflow: 'hidden' },
             defaultCornerRadius: { borderRadius: e.borderRadii.xLarge },
             infiniteCornerRadius: { borderRadius: e.borderRadii.infinite },
-            mask: L(L({}, S.a.absoluteFillObject), {}, { position: 'fixed', userSelect: 'none' }),
+            mask: r()(r()({}, F.a.absoluteFillObject), {}, { position: 'fixed', userSelect: 'none' }),
             withMask: { backgroundColor: e.colors.maskColor },
             downArrow: { bottom: '-'.concat(e.fontSizes.subtext3), transform: 'rotate(180deg)' },
             upArrow: { top: '-'.concat(e.fontSizes.subtext3) },

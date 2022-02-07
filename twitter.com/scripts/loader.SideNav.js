@@ -1,98 +1,74 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [179],
+  [180],
   {
     '0kTQ': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return l
+        return u
       })
-      var r,
-        a = n('KEM+'),
-        c = n.n(a),
-        o = n('k49u'),
-        i = n('LVU8'),
+      var a,
+        r = n('KEM+'),
+        c = n.n(r),
+        i = n('k49u'),
+        o = n('LVU8'),
         s = n('3XMw'),
-        u = n.n(s).a.b20a3893,
-        l =
-          ((r = {}),
-          c()(r, o.a.AppInReadOnlyMode, { customAction: i.b }),
-          c()(r, o.a.TargetUserNotFound, { toast: { text: u } }),
-          c()(r, 'showToast', !0),
-          r)
+        l = n.n(s).a.b20a3893,
+        u =
+          ((a = {}),
+          c()(a, i.a.AppInReadOnlyMode, { customAction: o.b }),
+          c()(a, i.a.TargetUserNotFound, { toast: { text: l } }),
+          c()(a, 'showToast', !0),
+          a)
     },
     '55jz': function (e, t, n) {
       'use strict'
-      n('OZaJ')
-      var r = n('VrFO'),
-        a = n.n(r),
+      var a = n('VrFO'),
+        r = n.n(a),
         c = n('Y9Ll'),
-        o = n.n(c),
-        i = n('1Pcy'),
-        s = n.n(i),
-        u = n('5Yy7'),
-        l = n.n(u),
-        d = n('N+ot'),
+        i = n.n(c),
+        o = n('1Pcy'),
+        s = n.n(o),
+        l = n('5Yy7'),
+        u = n.n(l),
+        d = n('2VqO'),
         p = n.n(d),
-        f = n('AuHH'),
-        h = n.n(f),
-        m = n('KEM+'),
-        g = n.n(m),
-        y = (n('2G9S'), n('z84I'), n('hBvt'), n('LW0h'), n('ho0z'), n('ERkP')),
-        v = n.n(y),
+        h = n('KEM+'),
+        m = n.n(h),
+        g = (n('2G9S'), n('z84I'), n('hBvt'), n('LW0h'), n('7x/C'), n('ho0z'), n('ERkP')),
+        f = n.n(g),
         _ = n('k49u'),
         w = n('3XMw'),
         E = n.n(w),
-        A = n('IMYl'),
+        y = n('IMYl'),
         b = n('fs1G'),
-        C = n('MWbm'),
-        S = n('Irs7'),
-        I = n('OOKO'),
-        M = n('CKsB'),
-        k = n('t62R'),
-        B = n('IMA+'),
-        T = n('Znyr'),
-        U = n('G1WX'),
-        x = n('rHpw')
-      function R(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var n,
-            r = h()(e)
-          if (t) {
-            var a = h()(this).constructor
-            n = Reflect.construct(r, arguments, a)
-          } else n = r.apply(this, arguments)
-          return p()(this, n)
-        }
-      }
-      var L = E.a.d86bbf0f,
-        H = E.a.h6beb5fa,
-        O = E.a.b7dc3884,
-        P = (function (e) {
-          l()(n, e)
-          var t = R(n)
+        v = n('MWbm'),
+        A = n('Irs7'),
+        C = n('OOKO'),
+        S = n('CKsB'),
+        I = n('t62R'),
+        M = n('IMA+'),
+        k = n('Znyr'),
+        T = n('G1WX'),
+        U = n('rHpw'),
+        x = E.a.d86bbf0f,
+        L = E.a.h6beb5fa,
+        B = E.a.b7dc3884,
+        H = (function (e) {
+          u()(n, e)
+          var t = p()(n)
           function n() {
             var e
-            a()(this, n)
-            for (var r = arguments.length, c = new Array(r), o = 0; o < r; o++) c[o] = arguments[o]
+            r()(this, n)
+            for (var a = arguments.length, c = new Array(a), i = 0; i < a; i++) c[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(c))),
-              g()(s()(e), '_renderAdditionalMenuItems', function () {
+              m()(s()(e), '_renderAdditionalMenuItems', function () {
                 return (e.props.additionalMenuItems || []).map(function (t, n) {
-                  return v.a.createElement(
-                    v.a.Fragment,
+                  return f.a.createElement(
+                    f.a.Fragment,
                     { key: n },
-                    0 === n ? v.a.createElement(I.a, null) : null,
-                    v.a.createElement(M.a, {
+                    0 === n ? f.a.createElement(C.a, null) : null,
+                    f.a.createElement(S.a, {
                       Icon: t.Icon,
                       actionText: t.actionText,
                       isSelected: t.isSelected,
@@ -104,29 +80,29 @@
                   )
                 })
               }),
-              g()(s()(e), '_renderTitle', function () {
+              m()(s()(e), '_renderTitle', function () {
                 var t = e.props.title
-                return t ? v.a.createElement(k.b, { size: 'headline1', style: F.title, weight: 'bold' }, t) : null
+                return t ? f.a.createElement(I.b, { size: 'headline1', style: O.title, weight: 'bold' }, t) : null
               }),
-              g()(s()(e), '_renderUserAccounts', function () {
+              m()(s()(e), '_renderUserAccounts', function () {
                 var t = e.props,
                   n = t.accountUsers,
-                  r = t.activeUser,
-                  a = t.withBadges,
-                  c = void 0 !== a && a
+                  a = t.activeUser,
+                  r = t.withBadges,
+                  c = void 0 !== r && r
                 return n.filter(function (e) {
-                  return e.user_id !== (null == r ? void 0 : r.id_str)
+                  return e.user_id !== (null == a ? void 0 : a.id_str)
                 }).length > 0
-                  ? v.a.createElement(
-                      v.a.Fragment,
+                  ? f.a.createElement(
+                      f.a.Fragment,
                       null,
                       n.map(function (t) {
-                        var n = t.user_id === r.id_str,
-                          a = t.badgeCount
-                        return v.a.createElement(B.a, {
-                          accessibilityLabel: n ? void 0 : O({ screenName: t.screen_name }),
+                        var n = t.user_id === a.id_str,
+                          r = t.badgeCount
+                        return f.a.createElement(M.a, {
+                          accessibilityLabel: n ? void 0 : B({ screenName: t.screen_name }),
                           avatarUri: t.avatar_image_url,
-                          decoration: e._renderUserDecoration({ badgeCount: a, withBadges: c, isActiveUser: n }),
+                          decoration: e._renderUserDecoration({ badgeCount: r, withBadges: c, isActiveUser: n }),
                           displayMode: 'UserCompact',
                           isProtected: t.is_protected,
                           isVerified: t.is_verified,
@@ -135,7 +111,7 @@
                           onCellClick: n
                             ? void 0
                             : e._handleMultiAccountSwitch({
-                                hasBadge: !!a,
+                                hasBadge: !!r,
                                 isProtected: t.is_protected,
                                 userId: t.user_id,
                               }),
@@ -145,75 +121,75 @@
                         })
                       }),
                     )
-                  : v.a.createElement(B.a, {
-                      avatarUri: r.profile_image_url_https,
+                  : f.a.createElement(M.a, {
+                      avatarUri: a.profile_image_url_https,
                       decoration: e._renderUserDecoration({ withBadges: c, isActiveUser: !0 }),
                       displayMode: 'UserCompact',
-                      isProtected: r.protected,
-                      isVerified: r.verified,
-                      name: r.name,
-                      screenName: r.screen_name,
-                      userId: r.id_str,
+                      isProtected: a.protected,
+                      isVerified: a.verified,
+                      name: a.name,
+                      screenName: a.screen_name,
+                      userId: a.id_str,
                       withLink: !1,
                     })
               }),
-              g()(s()(e), '_renderUserDecoration', function (e) {
+              m()(s()(e), '_renderUserDecoration', function (e) {
                 var t = e.badgeCount,
                   n = e.isActiveUser,
-                  r = e.withBadges
+                  a = e.withBadges
                 return n
-                  ? v.a.createElement(A.a, { style: [F.iconCheckMark, F.userDecoration] })
-                  : t && r
-                  ? v.a.createElement(T.a, {
+                  ? f.a.createElement(y.a, { style: [O.iconCheckMark, O.userDecoration] })
+                  : t && a
+                  ? f.a.createElement(k.a, {
                       count: t,
                       standalone: !0,
-                      style: F.userDecoration,
-                      truncatedCountFormatter: H,
-                      unreadCountLabel: L,
+                      style: O.userDecoration,
+                      truncatedCountFormatter: L,
+                      unreadCountLabel: x,
                     })
                   : void 0
               }),
-              g()(s()(e), '_handleMultiAccountSwitch', function (t) {
+              m()(s()(e), '_handleMultiAccountSwitch', function (t) {
                 var n = t.hasBadge,
-                  r = t.isProtected,
-                  a = t.userId
+                  a = t.isProtected,
+                  r = t.userId
                 return function () {
                   var t = e.props,
                     c = t.accountSwitch,
-                    o = t.onClose
-                  c({ hasBadge: n, isProtected: r, userId: a }), o()
+                    i = t.onClose
+                  c({ hasBadge: n, isProtected: a, userId: r }), i()
                 }
               }),
-              g()(s()(e), '_handleFetch', function () {
+              m()(s()(e), '_handleFetch', function () {
                 var t = e.props,
                   n = t.createLocalApiErrorHandlerAccountsFetch
-                ;(0, t.fetchAccounts)().catch(n(g()({}, _.a.AppInReadOnlyMode, { customAction: b.a })))
+                ;(0, t.fetchAccounts)().catch(n(m()({}, _.a.AppInReadOnlyMode, { customAction: b.a })))
               }),
-              g()(s()(e), '_handleMenuItemClick', function (t, n) {
+              m()(s()(e), '_handleMenuItemClick', function (t, n) {
                 return function () {
-                  var r = e.props,
-                    a = r.analytics,
-                    c = r.onClose
-                  t && a.scribe({ element: t, action: 'click' }), null == n || n(), c()
+                  var a = e.props,
+                    r = a.analytics,
+                    c = a.onClose
+                  t && r.scribe({ element: t, action: 'click' }), null == n || n(), c()
                 }
               }),
               e
             )
           }
           return (
-            o()(n, [
+            i()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.fetchStatus,
                     n = e.shouldDisplayFetchRenderer
-                  return v.a.createElement(
-                    C.a,
-                    { style: F.menuContainer },
+                  return f.a.createElement(
+                    v.a,
+                    { style: O.menuContainer },
                     this._renderTitle(),
                     n
-                      ? v.a.createElement(U.a, {
+                      ? f.a.createElement(T.a, {
                           fetchStatus: t,
                           onRequestRetry: this._handleFetch,
                           render: this._renderUserAccounts,
@@ -226,8 +202,8 @@
             ]),
             n
           )
-        })(v.a.Component),
-        F = x.a.create(function (e) {
+        })(f.a.Component),
+        O = U.a.create(function (e) {
           return {
             iconCheckMark: { color: e.colors.primary, flexShrink: 0 },
             menuContainer: { paddingVertical: e.spaces.space12 },
@@ -238,38 +214,35 @@
             },
           }
         })
-      t.a = Object(S.a)(P)
+      t.a = Object(A.a)(H)
     },
     LzTg: function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'default', function () {
-          return ce
+          return ee
         })
-      n('OZaJ')
-      var r = n('VrFO'),
-        a = n.n(r),
+      var a = n('VrFO'),
+        r = n.n(a),
         c = n('Y9Ll'),
-        o = n.n(c),
-        i = n('5Yy7'),
-        s = n.n(i),
-        u = n('N+ot'),
-        l = n.n(u),
-        d = n('AuHH'),
+        i = n.n(c),
+        o = n('5Yy7'),
+        s = n.n(o),
+        l = n('2VqO'),
+        u = n.n(l),
+        d = n('KEM+'),
         p = n.n(d),
-        f = n('KEM+'),
-        h = n.n(f),
-        m = n('ERkP'),
-        g = n.n(m),
-        y = n('1Pcy'),
-        v = n.n(y),
+        h = n('ERkP'),
+        m = n.n(h),
+        g = n('1Pcy'),
+        f = n.n(g),
         _ = (n('2G9S'), n('qtu+')),
         w = n('G6rE'),
         E = n('rxPX'),
-        A = n('0KEI'),
+        y = n('0KEI'),
         b = n('auX9'),
-        C = n('kGix'),
-        S = Object(E.a)()
+        v = n('kGix'),
+        A = Object(E.a)()
           .propsFromState(function () {
             return {
               fetchStatus: b.g,
@@ -280,10 +253,10 @@
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandlerAccountSwitch: Object(A.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandlerAccountSwitch: Object(y.createLocalApiErrorHandlerWithContextFactory)(
                 'ACCOUNT_SWITCHER_ACCOUNT_SWITCH',
               ),
-              createLocalApiErrorHandlerMultiListFetch: Object(A.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandlerMultiListFetch: Object(y.createLocalApiErrorHandlerWithContextFactory)(
                 'ACCOUNT_SWITCHER_MULTI_LIST_FETCH',
               ),
               fetchMultiAccountList: b.c,
@@ -293,82 +266,61 @@
           .adjustStateProps(function (e) {
             var t = e.fetchStatus,
               n = e.hasMultiAccountBadges,
-              r = e.loggedInUser,
-              a = e.multiAccountUsers
+              a = e.loggedInUser,
+              r = e.multiAccountUsers
             return {
-              fetchStatus: t === C.a.NONE ? C.a.LOADING : t,
-              hasMultiAccountBadges: !!r && n,
-              loggedInUser: r,
-              multiAccountUsers: a,
+              fetchStatus: t === v.a.NONE ? v.a.LOADING : t,
+              hasMultiAccountBadges: !!a && n,
+              loggedInUser: a,
+              multiAccountUsers: r,
             }
           })
           .withAnalytics({ page: 'nav', section: 'account_switcher' }),
-        I = n('3Wr5'),
-        M = n('55jz'),
-        k = n('0kTQ'),
-        B = 'SideNav_AccountSwitcher_Button',
-        T = 'AccountSwitcher_AddAccount_Button',
-        U = 'AccountSwitcher_Logout_Button',
-        x = 'AccountSwitcher_ManageAccounts_Button',
-        R = n('yrzJ'),
+        C = n('3Wr5'),
+        S = n('55jz'),
+        I = n('0kTQ'),
+        M = 'SideNav_AccountSwitcher_Button',
+        k = 'AccountSwitcher_AddAccount_Button',
+        T = 'AccountSwitcher_Logout_Button',
+        U = 'AccountSwitcher_ManageAccounts_Button',
+        x = n('yrzJ'),
         L = n('y8wG'),
-        H = n('v6aA'),
-        O = n('3XMw'),
-        P = n.n(O)
-      function F(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var n,
-            r = p()(e)
-          if (t) {
-            var a = p()(this).constructor
-            n = Reflect.construct(r, arguments, a)
-          } else n = r.apply(this, arguments)
-          return l()(this, n)
-        }
-      }
-      var N = P.a.j0a8da6e,
-        D = P.a.c6f2bf00,
-        W = function (e) {
-          return g.a.createElement(
-            P.a.I18NFormatMessage,
+        B = n('v6aA'),
+        H = n('3XMw'),
+        O = n.n(H),
+        F = O.a.j0a8da6e,
+        N = O.a.c6f2bf00,
+        P = function (e) {
+          return m.a.createElement(
+            O.a.I18NFormatMessage,
             { $i18n: 'i9bec47a' },
-            g.a.createElement(R.a, { color: 'normal', screenName: e }),
+            m.a.createElement(x.a, { color: 'normal', screenName: e }),
           )
         },
-        z = (function (e) {
+        D = (function (e) {
           s()(n, e)
-          var t = F(n)
+          var t = u()(n)
           function n() {
             var e
-            a()(this, n)
-            for (var r = arguments.length, c = new Array(r), o = 0; o < r; o++) c[o] = arguments[o]
+            r()(this, n)
+            for (var a = arguments.length, c = new Array(a), i = 0; i < a; i++) c[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(c))),
-              h()(v()(e), '_renderMenuSheet', function (t) {
+              p()(f()(e), '_renderMenuSheet', function (t) {
                 var n = e.props,
-                  r = n.createLocalApiErrorHandlerMultiListFetch,
-                  a = n.fetchMultiAccountList,
+                  a = n.createLocalApiErrorHandlerMultiListFetch,
+                  r = n.fetchMultiAccountList,
                   c = n.fetchStatus,
-                  o = n.loggedInUser,
-                  i = n.multiAccountUsers
-                return o
-                  ? g.a.createElement(M.a, {
+                  i = n.loggedInUser,
+                  o = n.multiAccountUsers
+                return i
+                  ? m.a.createElement(S.a, {
                       accountSwitch: e._multiAccountSwitch,
-                      accountUsers: i,
-                      activeUser: o,
+                      accountUsers: o,
+                      activeUser: i,
                       additionalMenuItems: e._getAdditionalAccountMenuItems(),
-                      createLocalApiErrorHandlerAccountsFetch: r,
-                      fetchAccounts: a,
+                      createLocalApiErrorHandlerAccountsFetch: a,
+                      fetchAccounts: r,
                       fetchStatus: c,
                       onClose: t,
                       shouldDisplayFetchRenderer: e._hasMultiAccountCookie(),
@@ -376,67 +328,67 @@
                     })
                   : null
               }),
-              h()(v()(e), '_multiAccountSwitch', function (t) {
+              p()(f()(e), '_multiAccountSwitch', function (t) {
                 var n = t.hasBadge,
-                  r = t.isProtected,
-                  a = t.userId,
+                  a = t.isProtected,
+                  r = t.userId,
                   c = e.props,
-                  o = c.analytics,
-                  i = c.createLocalApiErrorHandlerAccountSwitch,
+                  i = c.analytics,
+                  o = c.createLocalApiErrorHandlerAccountSwitch,
                   s = c.switchAccount
-                o.scribe({
-                  component: r ? 'switch_to_protected_account' : 'switch_account',
+                i.scribe({
+                  component: a ? 'switch_to_protected_account' : 'switch_account',
                   element: n ? 'account_badged' : 'account',
                   action: 'click',
                 }),
-                  s({ user_id: a }).catch(i(k.a))
+                  s({ user_id: r }).catch(o(I.a))
               }),
-              h()(v()(e), '_getAdditionalAccountMenuItems', function () {
+              p()(f()(e), '_getAdditionalAccountMenuItems', function () {
                 var t = e.props,
                   n = t.loggedInUser,
-                  r = t.multiAccountUsers,
-                  a = r.length > 1,
+                  a = t.multiAccountUsers,
+                  r = a.length > 1,
                   c = []
                 return (
-                  r.length >= 5 ||
+                  a.length >= 5 ||
                     c.push({
-                      actionText: N,
+                      actionText: F,
                       link: e.context.featureSwitches.isTrue('stateful_login_enabled')
                         ? '/i/flow/login'
                         : '/account/add',
                       scribeElement: 'add_existing_account',
-                      testID: T,
+                      testID: k,
                     }),
-                  a && c.push({ actionText: D, link: '/account/switch', scribeElement: 'manage_accounts', testID: x }),
-                  n && c.push({ actionText: W(n.screen_name), link: '/logout', scribeElement: 'log_out', testID: U }),
+                  r && c.push({ actionText: N, link: '/account/switch', scribeElement: 'manage_accounts', testID: U }),
+                  n && c.push({ actionText: P(n.screen_name), link: '/logout', scribeElement: 'log_out', testID: T }),
                   c
                 )
               }),
-              h()(v()(e), '_handleAccountSwitcherClick', function () {
+              p()(f()(e), '_handleAccountSwitcherClick', function () {
                 e.props.analytics.scribe({ action: 'click' })
               }),
-              h()(v()(e), '_hasMultiAccountCookie', function () {
-                return Object(I.a)().hasMultiAccountCookie
+              p()(f()(e), '_hasMultiAccountCookie', function () {
+                return Object(C.a)().hasMultiAccountCookie
               }),
               e
             )
           }
           return (
-            o()(n, [
+            i()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.analytics,
                     n = e.hasMultiAccountBadges,
-                    r = e.isExpanded,
-                    a = e.loggedInUser
-                  return g.a.createElement(L.a, {
+                    a = e.isExpanded,
+                    r = e.loggedInUser
+                  return m.a.createElement(L.a, {
                     analytics: t,
-                    currentUser: a,
+                    currentUser: r,
                     hasMultiAccountBadges: n,
-                    interactiveViewTestId: B,
-                    isExpanded: r,
+                    interactiveViewTestId: M,
+                    isExpanded: a,
                     renderMenuSheet: this._renderMenuSheet,
                   })
                 },
@@ -444,189 +396,151 @@
             ]),
             n
           )
-        })(g.a.Component)
-      h()(z, 'contextType', H.a)
-      var j = S(z),
-        V = n('1eTX'),
-        G = n('jwTb'),
-        X = n('Irs7'),
-        Y = n('eqgg')
-      function K(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var n,
-            r = p()(e)
-          if (t) {
-            var a = p()(this).constructor
-            n = Reflect.construct(r, arguments, a)
-          } else n = r.apply(this, arguments)
-          return l()(this, n)
-        }
-      }
-      var q = P.a.g34f2c63({ verb: '' }),
-        J = (function (e) {
+        })(m.a.Component)
+      p()(D, 'contextType', B.a)
+      var R = A(D),
+        W = n('1eTX'),
+        z = n('jwTb'),
+        V = n('Irs7'),
+        j = n('eqgg'),
+        G = O.a.g34f2c63({ verb: '' }),
+        q = (function (e) {
           s()(n, e)
-          var t = K(n)
+          var t = u()(n)
           function n() {
             var e
-            a()(this, n)
-            for (var r = arguments.length, c = new Array(r), o = 0; o < r; o++) c[o] = arguments[o]
+            r()(this, n)
+            for (var a = arguments.length, c = new Array(a), i = 0; i < a; i++) c[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(c))),
-              h()(v()(e), '_handlePress', function (t) {
+              p()(f()(e), '_handlePress', function (t) {
                 e.props.analytics.scribe({ component: 'new_tweet_button', action: 'click' })
               }),
               e
             )
           }
           return (
-            o()(n, [
+            i()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.composeOptions,
                     n = e.isExpanded,
-                    r = e.testID
-                  return g.a.createElement(Y.a, {
-                    icon: Z,
+                    a = e.testID
+                  return m.a.createElement(j.a, {
+                    icon: X,
                     isExpanded: n,
-                    label: q,
+                    label: G,
                     link: { pathname: '/compose/tweet', state: t },
                     onPress: this._handlePress,
-                    testID: r,
+                    testID: a,
                   })
                 },
               },
             ]),
             n
           )
-        })(g.a.Component),
-        Z = g.a.createElement(G.a, null),
-        Q = Object(X.a)(J),
-        $ = n('N5qz'),
-        ee = 'SideNav_NewTweet_Button',
-        te = n('MWbm'),
-        ne = n('cHvH'),
-        re = n('rHpw')
-      function ae(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
+        })(m.a.Component),
+        X = m.a.createElement(z.a, null),
+        Y = Object(V.a)(q),
+        K = n('N5qz'),
+        Q = 'SideNav_NewTweet_Button',
+        J = n('MWbm'),
+        Z = n('cHvH'),
+        $ = n('rHpw'),
+        ee = (function (e) {
+          s()(n, e)
+          var t = u()(n)
+          function n() {
+            return r()(this, n), t.apply(this, arguments)
           }
-        })()
-        return function () {
-          var n,
-            r = p()(e)
-          if (t) {
-            var a = p()(this).constructor
-            n = Reflect.construct(r, arguments, a)
-          } else n = r.apply(this, arguments)
-          return l()(this, n)
-        }
-      }
-      var ce = (function (e) {
-        s()(n, e)
-        var t = ae(n)
-        function n() {
-          return a()(this, n), t.apply(this, arguments)
-        }
-        return (
-          o()(n, [
-            {
-              key: 'render',
-              value: function () {
-                var e = this,
-                  t = this.props,
-                  n = t.SideNavButton,
-                  r = t.TabBar,
-                  a = t.TeamsSwitcher,
-                  c = t.history,
-                  o = t.isCollapsedSmall,
-                  i = t.isExpanded,
-                  s = t.isLoggedIn,
-                  u = t.isTwoColumn,
-                  l = t.location,
-                  d = t.logoButton,
-                  p = t.onTabRefresh,
-                  f = t.widthStyle,
-                  h = t.withTweetButton,
-                  m = [oe.root, f, o ? oe.rootPaddingSmall : oe.rootPaddingNormal],
-                  y = d || g.a.createElement(V.a, { onClick: p, pullLeft: !1, size: 'large' })
-                return g.a.createElement(ne.a, null, function (t) {
-                  var o = t.windowHeight
-                  return g.a.createElement(
-                    te.a,
-                    { style: m },
-                    g.a.createElement(
-                      te.a,
-                      { style: [oe.topSection, !i && oe.alignItemsCenter] },
-                      g.a.createElement(te.a, { style: oe.topControl }, y),
-                      g.a.createElement(
-                        te.a,
-                        { style: [oe.appTabBar, !i && oe.alignItemsCenter] },
-                        g.a.createElement(r, {
-                          history: c,
-                          layout: 'vertical',
-                          location: l,
-                          onTabRefresh: p,
-                          wideMode: u,
-                          withExtendedItems: !0,
-                          withLabel: i,
-                        }),
+          return (
+            i()(n, [
+              {
+                key: 'render',
+                value: function () {
+                  var e = this,
+                    t = this.props,
+                    n = t.SideNavButton,
+                    a = t.TabBar,
+                    r = t.TeamsSwitcher,
+                    c = t.history,
+                    i = t.isCollapsedSmall,
+                    o = t.isExpanded,
+                    s = t.isLoggedIn,
+                    l = t.isTwoColumn,
+                    u = t.location,
+                    d = t.logoButton,
+                    p = t.onTabRefresh,
+                    h = t.widthStyle,
+                    g = t.withTweetButton,
+                    f = [te.root, h, i ? te.rootPaddingSmall : te.rootPaddingNormal],
+                    _ = d || m.a.createElement(W.a, { onClick: p, pullLeft: !1, size: 'large' })
+                  return m.a.createElement(Z.a, null, function (t) {
+                    var i = t.windowHeight
+                    return m.a.createElement(
+                      J.a,
+                      { style: f },
+                      m.a.createElement(
+                        J.a,
+                        { style: [te.topSection, !o && te.alignItemsCenter] },
+                        m.a.createElement(J.a, { style: te.topControl }, _),
+                        m.a.createElement(
+                          J.a,
+                          { style: [te.appTabBar, !o && te.alignItemsCenter] },
+                          m.a.createElement(a, {
+                            history: c,
+                            layout: 'vertical',
+                            location: u,
+                            onTabRefresh: p,
+                            wideMode: l,
+                            withExtendedItems: !0,
+                            withLabel: o,
+                          }),
+                        ),
+                        s && (n || g) ? e._renderButton(i) : null,
                       ),
-                      s && (n || h) ? e._renderButton(o) : null,
-                    ),
-                    s
-                      ? g.a.createElement(
-                          te.a,
-                          { style: [oe.footerContainer, !i && oe.alignItemsCenter] },
-                          g.a.createElement(j, { isExpanded: i }),
-                          a ? g.a.createElement(a, { isExpanded: i }) : null,
-                        )
-                      : null,
+                      s
+                        ? m.a.createElement(
+                            J.a,
+                            { style: [te.footerContainer, !o && te.alignItemsCenter] },
+                            m.a.createElement(R, { isExpanded: o }),
+                            r ? m.a.createElement(r, { isExpanded: o }) : null,
+                          )
+                        : null,
+                    )
+                  })
+                },
+              },
+              {
+                key: '_renderButton',
+                value: function (e) {
+                  var t = this.props,
+                    n = t.SideNavButton,
+                    a = t.composeOptions,
+                    r = t.isExpanded
+                  return m.a.createElement(
+                    J.a,
+                    {
+                      style: [
+                        te.button,
+                        !r && te.alignItemsCenter,
+                        'tall' === K.a.getHeightMode(e) && te.withTallHeight,
+                      ],
+                    },
+                    n
+                      ? m.a.createElement(n, { isExpanded: r })
+                      : m.a.createElement(Y, { composeOptions: a, isExpanded: r, testID: Q }),
                   )
-                })
+                },
               },
-            },
-            {
-              key: '_renderButton',
-              value: function (e) {
-                var t = this.props,
-                  n = t.SideNavButton,
-                  r = t.composeOptions,
-                  a = t.isExpanded
-                return g.a.createElement(
-                  te.a,
-                  {
-                    style: [oe.button, !a && oe.alignItemsCenter, 'tall' === $.a.getHeightMode(e) && oe.withTallHeight],
-                  },
-                  n
-                    ? g.a.createElement(n, { isExpanded: a })
-                    : g.a.createElement(Q, { composeOptions: r, isExpanded: a, testID: ee }),
-                )
-              },
-            },
-          ]),
-          n
-        )
-      })(g.a.Component)
-      h()(ce, 'defaultProps', { withTweetButton: !0 })
-      var oe = re.a.create(function (e) {
+            ]),
+            n
+          )
+        })(m.a.Component)
+      p()(ee, 'defaultProps', { withTweetButton: !0 })
+      var te = $.a.create(function (e) {
         return {
           root: { height: '100%', overflowY: 'auto', justifyContent: 'space-between' },
           rootPaddingNormal: { paddingHorizontal: e.spaces.space12 },
@@ -645,23 +559,23 @@
     'qtu+': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return i
+        return o
       })
-      var r = n('4+NY'),
-        a = n('oEOe'),
+      var a = n('4+NY'),
+        r = n('oEOe'),
         c = n('5oBF'),
-        o = {
+        i = {
           REQUEST: 'rweb/multiAccount/SWITCH_REQUEST',
           SUCCESS: 'rweb/multiAccount/SWITCH_SUCCESS',
           FAILURE: 'rweb/multiAccount/SWITCH_FAILURE',
         },
-        i = function (e) {
-          return function (t, n, i) {
-            var s = i.api,
-              u = Object(a.b)(t, { request: s.Auth.switch, params: e })
+        o = function (e) {
+          return function (t, n, o) {
+            var s = o.api,
+              l = Object(r.b)(t, { request: s.Auth.switch, params: e })
             return t(Object(c.f)()).then(function () {
-              return t(Object(r.b)()).then(function () {
-                return u({ actionTypes: o, context: 'SWITCH' }).then(function () {
+              return t(Object(a.b)()).then(function () {
+                return l({ actionTypes: i, context: 'SWITCH' }).then(function () {
                   window.location.assign('/home')
                 })
               })
@@ -672,169 +586,145 @@
     y8wG: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return P
+        return H
       })
-      n('OZaJ')
-      var r = n('VrFO'),
-        a = n.n(r),
+      var a = n('VrFO'),
+        r = n.n(a),
         c = n('Y9Ll'),
-        o = n.n(c),
-        i = n('1Pcy'),
-        s = n.n(i),
-        u = n('5Yy7'),
-        l = n.n(u),
-        d = n('N+ot'),
+        i = n.n(c),
+        o = n('1Pcy'),
+        s = n.n(o),
+        l = n('5Yy7'),
+        u = n.n(l),
+        d = n('2VqO'),
         p = n.n(d),
-        f = n('AuHH'),
-        h = n.n(f),
-        m = n('KEM+'),
-        g = n.n(m),
-        y = (n('2G9S'), n('ho0z'), n('ERkP')),
-        v = n.n(y),
+        h = n('KEM+'),
+        m = n.n(h),
+        g = (n('2G9S'), n('ho0z'), n('ERkP')),
+        f = n.n(g),
         _ = n('ZUOq'),
         w = n('3XMw'),
         E = n.n(w),
-        A = n('ACHU'),
+        y = n('ACHU'),
         b = n('aWzz'),
-        C = n('MWbm'),
-        S = n('I4+6'),
-        I = n('rHpw'),
-        M = n('XP29'),
-        k = n('jV+4'),
-        B = n('Znyr'),
-        T = n('OiMc'),
-        U = n('cm6r')
-      function x(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var n,
-            r = h()(e)
-          if (t) {
-            var a = h()(this).constructor
-            n = Reflect.construct(r, arguments, a)
-          } else n = r.apply(this, arguments)
-          return p()(this, n)
-        }
-      }
-      var R = E.a.d86bbf0f,
-        L = E.a.h6beb5fa,
-        H = E.a.b8e1d524,
-        O = E.a.gef27c4c,
-        P = (function (e) {
-          l()(n, e)
-          var t = x(n)
+        v = n('MWbm'),
+        A = n('I4+6'),
+        C = n('rHpw'),
+        S = n('XP29'),
+        I = n('jV+4'),
+        M = n('Znyr'),
+        k = n('OiMc'),
+        T = n('cm6r'),
+        U = E.a.d86bbf0f,
+        x = E.a.h6beb5fa,
+        L = E.a.b8e1d524,
+        B = E.a.gef27c4c,
+        H = (function (e) {
+          u()(n, e)
+          var t = p()(n)
           function n() {
             var e
-            a()(this, n)
-            for (var r = arguments.length, c = new Array(r), o = 0; o < r; o++) c[o] = arguments[o]
+            r()(this, n)
+            for (var a = arguments.length, c = new Array(a), i = 0; i < a; i++) c[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(c))),
-              g()(s()(e), '_renderUser', function (t) {
+              m()(s()(e), '_renderUser', function (t) {
                 var n = e.props.isExpanded,
-                  r = t.name,
-                  a = t.profile_image_url_https,
+                  a = t.name,
+                  r = t.profile_image_url_https,
                   c = t.protected,
-                  o = t.screen_name,
-                  i = t.verified
-                return v.a.createElement(
-                  v.a.Fragment,
+                  i = t.screen_name,
+                  o = t.verified
+                return f.a.createElement(
+                  f.a.Fragment,
                   null,
-                  v.a.createElement(
-                    C.a,
+                  f.a.createElement(
+                    v.a,
                     null,
-                    v.a.createElement(M.a, { accessibilityLabel: r, screenName: o, size: 'xLarge', uri: a }),
+                    f.a.createElement(S.a, { accessibilityLabel: a, screenName: i, size: 'xLarge', uri: r }),
                     n ? null : e._renderBadge(),
                   ),
                   n
-                    ? v.a.createElement(
-                        v.a.Fragment,
+                    ? f.a.createElement(
+                        f.a.Fragment,
                         null,
-                        v.a.createElement(k.a, {
+                        f.a.createElement(I.a, {
                           isProtected: c,
-                          isVerified: i,
-                          name: r,
-                          screenName: o,
-                          style: F.userName,
+                          isVerified: o,
+                          name: a,
+                          screenName: i,
+                          style: O.userName,
                           withStackedLayout: !0,
                         }),
-                        v.a.createElement(
-                          C.a,
-                          { style: F.iconContainer },
-                          v.a.createElement(A.a, { style: F.icon }),
+                        f.a.createElement(
+                          v.a,
+                          { style: O.iconContainer },
+                          f.a.createElement(y.a, { style: O.icon }),
                           n ? e._renderBadge() : null,
                         ),
                       )
                     : null,
                 )
               }),
-              g()(s()(e), '_renderEmptyState', function () {
+              m()(s()(e), '_renderEmptyState', function () {
                 var t = e.props.renderEmptyState
-                return t ? v.a.createElement(C.a, { style: F.emptyStateWrapper }, t()) : null
+                return t ? f.a.createElement(v.a, { style: O.emptyStateWrapper }, t()) : null
               }),
-              g()(s()(e), '_renderBadge', function () {
+              m()(s()(e), '_renderBadge', function () {
                 var t = e.props,
                   n = t.hasMultiAccountBadges,
-                  r = t.isExpanded
+                  a = t.isExpanded
                 return n
-                  ? v.a.createElement(B.a, {
+                  ? f.a.createElement(M.a, {
                       pip: !0,
-                      style: r && F.pip,
-                      truncatedCountFormatter: L,
-                      unreadCountLabel: R,
+                      style: a && O.pip,
+                      truncatedCountFormatter: x,
+                      unreadCountLabel: U,
                     })
                   : null
               }),
-              g()(s()(e), '_handleAccountSwitcherClick', function () {
+              m()(s()(e), '_handleAccountSwitcherClick', function () {
                 e.props.analytics.scribe({ action: 'click' })
               }),
               e
             )
           }
           return (
-            o()(n, [
+            i()(n, [
               {
                 key: 'render',
                 value: function () {
                   var e = this.props,
                     t = e.accessibilityLabel,
                     n = e.currentUser,
-                    r = e.hoverLabel,
-                    a = e.interactiveViewTestId,
+                    a = e.hoverLabel,
+                    r = e.interactiveViewTestId,
                     c = e.isExpanded,
-                    o = e.renderEmptyState,
-                    i = e.renderMenuSheet
-                  return n || o
-                    ? v.a.createElement(
-                        T.a,
+                    i = e.renderEmptyState,
+                    o = e.renderMenuSheet
+                  return n || i
+                    ? f.a.createElement(
+                        k.a,
                         {
-                          contentStyle: F.menuContainer,
+                          contentStyle: O.menuContainer,
                           enableEnterKeyToggle: !0,
-                          renderContent: i,
+                          renderContent: o,
                           withArrow: !0,
                           withFixedPosition: !0,
                         },
-                        v.a.createElement(
-                          U.a,
+                        f.a.createElement(
+                          T.a,
                           {
-                            accessibilityLabel: t || O,
+                            accessibilityLabel: t || B,
                             accessibilityRole: 'button',
-                            hoverLabel: c ? void 0 : { label: r || H },
-                            interactiveStyles: S.a.generate({
+                            hoverLabel: c ? void 0 : { label: a || L },
+                            interactiveStyles: A.a.generate({
                               backgroundColor: 'transparent',
-                              color: I.a.theme.colors.text,
+                              color: C.a.theme.colors.text,
                             }),
                             onClick: this._handleAccountSwitcherClick,
-                            style: F.anchorContainer,
-                            testID: a,
+                            style: O.anchorContainer,
+                            testID: r,
                           },
                           n ? this._renderUser(n) : this._renderEmptyState(),
                         ),
@@ -845,9 +735,9 @@
             ]),
             n
           )
-        })(v.a.Component)
-      g()(P, 'contextTypes', { featureSwitches: b.object })
-      var F = I.a.create(function (e) {
+        })(f.a.Component)
+      m()(H, 'contextTypes', { featureSwitches: b.object })
+      var O = C.a.create(function (e) {
         return {
           anchorContainer: {
             alignItems: 'center',

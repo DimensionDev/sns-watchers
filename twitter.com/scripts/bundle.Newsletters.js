@@ -1,24 +1,24 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [69],
+  [70],
   {
-    dpj4: function (e, t, r) {
+    dpj4: function (e, t, a) {
       'use strict'
-      r.r(t),
-        r.d(t, 'NewsletterSubscribeSheet', function () {
-          return de
+      a.r(t),
+        a.d(t, 'NewsletterSubscribeSheet', function () {
+          return ue
         })
-      var a = r('ddV6'),
-        n = r.n(a),
-        c = (r('jQ3i'), r('x4t0'), r('ERkP')),
-        o = r.n(c),
-        i = (r('WNMA'), r('KqXw'), r('G6rE')),
-        l = r('rxPX'),
-        s = r('0KEI'),
-        u = r('+WwN'),
-        m = r('kGix'),
-        d = r('YeSc'),
+      var r = a('ddV6'),
+        n = a.n(r),
+        c = (a('jQ3i'), a('x4t0'), a('ERkP')),
+        o = a.n(c),
+        l = (a('KqXw'), a('WNMA'), a('G6rE')),
+        i = a('rxPX'),
+        s = a('0KEI'),
+        u = a('+WwN'),
+        m = a('kGix'),
+        d = a('YeSc'),
         p =
-          (r('yH/f'),
+          (a('yH/f'),
           Object.freeze({
             CONFIRM: 'CONFIRM',
             INITIAL_WITH_EMAIL: 'INITIAL_WITH_EMAIL',
@@ -31,79 +31,79 @@
           TWITTER_PROFILE: 'twitter profile',
         }),
         b = function (e, t) {
-          var r, a
-          return null == t || null === (r = t.match) || void 0 === r || null === (a = r.params) || void 0 === a
+          var a, r
+          return null == t || null === (a = t.match) || void 0 === a || null === (r = a.params) || void 0 === r
             ? void 0
-            : a.screenName
+            : r.screenName
         },
         v = function (e, t) {
-          var r = b(0, t)
-          return r ? i.e.selectByScreenName(e, r) : null
+          var a = b(0, t)
+          return a ? l.e.selectByScreenName(e, a) : null
         },
         E = function (e, t) {
-          var r = b(0, t)
-          return r ? i.e.selectIdByScreenName(e, r) : null
+          var a = b(0, t)
+          return a ? l.e.selectIdByScreenName(e, a) : null
         },
         _ = function (e, t) {
-          var r = b(0, t)
-          return r ? i.e.selectIsUserNotFound(e, r) : null
-        },
-        g = function (e, t) {
-          var r
-          return null === (r = t.location.state) || void 0 === r ? void 0 : r.revueAccountId
+          var a = b(0, t)
+          return a ? l.e.selectIsUserNotFound(e, a) : null
         },
         I = function (e, t) {
-          var r
-          return null === (r = t.location.state) || void 0 === r ? void 0 : r.newsletterTitle
+          var a
+          return null === (a = t.location.state) || void 0 === a ? void 0 : a.revueAccountId
+        },
+        g = function (e, t) {
+          var a
+          return null === (a = t.location.state) || void 0 === a ? void 0 : a.newsletterTitle
         },
         y = function (e, t) {
-          var r
-          return null === (r = t.location.state) || void 0 === r ? void 0 : r.sampleUrl
+          var a
+          return null === (a = t.location.state) || void 0 === a ? void 0 : a.sampleUrl
         },
         T = function (e, t) {
-          var r
-          return null === (r = t.location.state) || void 0 === r ? void 0 : r.profileUrl
+          var a
+          return null === (a = t.location.state) || void 0 === a ? void 0 : a.profileUrl
         },
         w = function (e, t) {
-          var r
-          return null === (r = t.location.state) || void 0 === r ? void 0 : r.subscribeSource
+          var a
+          return null === (a = t.location.state) || void 0 === a ? void 0 : a.subscribeSource
         },
         S = function (e, t) {
-          var r = g(0, t)
-          return r ? Object(u.c)(e, r) : void 0
+          var a = I(0, t)
+          return a ? Object(u.c)(e, a) : void 0
         },
         L = function (e, t) {
-          var r = E(e, t)
-          return r ? Object(d.f)(e, { userId: r }) : void 0
+          var a = E(e, t)
+          return a ? Object(d.f)(e, { userId: a }) : void 0
         },
         h = function (e, t) {
           if (b(0, t)) {
-            var r = (function (e, t) {
-                var r = E(e, t)
-                return r ? Object(d.e)(e, r) : void 0
+            var a = (function (e, t) {
+                var a = E(e, t)
+                return a ? Object(d.e)(e, a) : void 0
               })(e, t),
-              a = (function (e, t) {
-                var r = b(0, t)
-                return r ? i.e.selectFetchStatusByScreenName(e, r) : void 0
+              r = (function (e, t) {
+                var a = b(0, t)
+                return a ? l.e.selectFetchStatusByScreenName(e, a) : void 0
               })(e, t)
-            return Object(m.d)(r, a)
+            return Object(m.d)(a, r)
           }
-          return g(0, t)
+          return I(0, t)
             ? (function (e, t) {
-                var r = g(0, t)
-                return r ? Object(u.b)(e, r) : void 0
+                var a = I(0, t)
+                return a ? Object(u.b)(e, a) : void 0
               })(e, t)
             : m.a.NONE
         },
-        O = Object(l.a)()
+        N = Object(i.a)()
           .propsFromState(function () {
             return {
               fetchStatus: h,
               isUserNotFound: _,
               newsletter: L,
-              newsletterTitleFromLocationState: I,
+              newsletterTitleFromLocationState: g,
               profileUrlFromLocationState: T,
-              revueAccountIdFromLocationState: g,
+              revueAccountIdFromLocationState: I,
               revueCardContext: S,
               screenName: b,
               sampleUrlFromLocationState: y,
@@ -114,13 +114,13 @@
           })
           .adjustStateProps(function (e) {
             var t,
-              r,
               a,
+              r,
               n = e.fetchStatus,
               c = e.isUserNotFound,
               o = e.newsletter,
-              i = e.newsletterTitleFromLocationState,
-              l = e.profileUrlFromLocationState,
+              l = e.newsletterTitleFromLocationState,
+              i = e.profileUrlFromLocationState,
               s = e.revueAccountIdFromLocationState,
               u = e.revueCardContext,
               m = e.sampleUrlFromLocationState,
@@ -137,17 +137,17 @@
                   revuePrivacyUrl: o.context.terms_of_service.privacy_policy_url,
                   revueTermsUrl: o.context.terms_of_service.terms_of_service_url,
                   sampleUrl:
-                    null === (r = o.data) || void 0 === r || null === (a = r.sample_issue) || void 0 === a
+                    null === (a = o.data) || void 0 === a || null === (r = a.sample_issue) || void 0 === r
                       ? void 0
-                      : a.sample_issue_url,
+                      : r.sample_issue_url,
                   subscribeSource: f.TWITTER_PROFILE,
                 })
               : u &&
                 s &&
                 (t = {
                   maskedEmail: u.user_masked_email,
-                  newsletterTitle: i,
-                  profileUrl: l,
+                  newsletterTitle: l,
+                  profileUrl: i,
                   revueAccountId: s,
                   revuePrivacyUrl: u.terms_of_service.privacy_policy_url,
                   revueTermsUrl: u.terms_of_service.terms_of_service_url,
@@ -169,79 +169,52 @@
               createLocalApiErrorHandler: Object(s.createLocalApiErrorHandlerWithContextFactory)(
                 'NEWSLETTER_SUBSCRIBE_SHEET',
               ),
-              fetchOneUserByScreenNameIfNeeded: i.e.fetchOneByScreenNameIfNeeded,
+              fetchOneUserByScreenNameIfNeeded: l.e.fetchOneByScreenNameIfNeeded,
               fetchRevueAccount: u.a,
               fetchUserBizProfile: d.b,
             }
           })
           .withAnalytics({ page: 'profile' }),
-        k = r('v//M'),
-        N = r('jHSc'),
-        A = r('3XMw'),
-        B = r.n(A),
-        U = (r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn'), r('KEM+')),
-        C = r.n(U),
-        F = (r('2G9S'), r('uFXj'), r('hBvt'), r('v6aA')),
-        R = r('1YZw'),
-        M = Object(l.a)().propsFromActions(function () {
+        k = a('v//M'),
+        A = a('jHSc'),
+        U = a('3XMw'),
+        C = a.n(U),
+        B = a('yiKp'),
+        F = a.n(B),
+        R = (a('2G9S'), a('uFXj'), a('hBvt'), a('v6aA')),
+        O = a('1YZw'),
+        M = Object(i.a)().propsFromActions(function () {
           return {
-            addToast: R.b,
+            addToast: O.b,
             createLocalApiErrorHandler: Object(s.createLocalApiErrorHandlerWithContextFactory)(
               'NEWSLETTER_SUBSCRIBE_SHEET',
             ),
             subscribe: d.h,
           }
         }),
-        P = r('rHpw'),
-        j = r('t62R'),
-        H = r('/yvb'),
-        x = r('Qwev'),
-        W = r('cHvH'),
-        z = r('W55q'),
-        D = r('i4Oy'),
-        X = r('MWbm')
-      function $(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var a = Object.getOwnPropertySymbols(e)
-          t &&
-            (a = a.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, a)
-        }
-        return r
-      }
-      function G(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? $(Object(r), !0).forEach(function (t) {
-                C()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : $(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
-        }
-        return e
-      }
-      var K = B.a.cfd2f35d,
-        V = B.a.ia5e7487,
-        q = B.a.jdfb861a,
-        J = B.a.b6e3edd8,
-        Q = B.a.cd9a90aa,
-        Y = B.a.g30241f5,
-        Z = B.a.fcd1fdda,
-        ee = B.a.a976a91d,
-        te = B.a.ab0deccf,
-        re = B.a.h3281ce9,
-        ae = B.a.f05df263,
-        ne = B.a.b78d403f,
-        ce = B.a.d1bc4330,
-        oe = B.a.b6f9f574,
-        ie = P.a.create(function (e) {
+        H = a('rHpw'),
+        x = a('t62R'),
+        P = a('/yvb'),
+        W = a('Qwev'),
+        j = a('cHvH'),
+        z = a('W55q'),
+        D = a('i4Oy'),
+        X = a('MWbm'),
+        $ = C.a.cfd2f35d,
+        G = C.a.ia5e7487,
+        V = C.a.jdfb861a,
+        q = C.a.b6e3edd8,
+        K = C.a.cd9a90aa,
+        J = C.a.g30241f5,
+        Q = C.a.fcd1fdda,
+        Y = C.a.a976a91d,
+        Z = C.a.ab0deccf,
+        ee = C.a.h3281ce9,
+        te = C.a.f05df263,
+        ae = C.a.b78d403f,
+        re = C.a.d1bc4330,
+        ne = C.a.b6f9f574,
+        ce = H.a.create(function (e) {
           return {
             activityIndicator: { paddingBottom: e.spaces.space48 },
             link: { color: e.colors.link, marginTop: e.spaces.space16 },
@@ -258,13 +231,13 @@
             titleMobile: { marginBottom: e.spaces.space28 },
           }
         }),
-        le = M(function (e) {
+        oe = M(function (e) {
           var t = e.addToast,
-            r = e.createLocalApiErrorHandler,
-            a = e.currentPage,
+            a = e.createLocalApiErrorHandler,
+            r = e.currentPage,
             c = e.newsletterMetadata,
-            i = e.onClose,
-            l = e.scribeAction,
+            l = e.onClose,
+            i = e.scribeAction,
             s = e.setCurrentPage,
             u = e.subscribe,
             m = o.a.useState(void 0),
@@ -272,54 +245,54 @@
             b = d[0],
             v = d[1],
             E = o.a
-              .useContext(F.a)
+              .useContext(R.a)
               .featureSwitches.isTrue('responsive_web_newsletters_subscribe_double_opt_in_removal_enabled'),
             _ = c.maskedEmail,
-            g = c.newsletterTitle,
-            I = c.profileUrl,
+            I = c.newsletterTitle,
+            g = c.profileUrl,
             y = c.revueAccountId,
             T = c.revuePrivacyUrl,
             w = c.revueTermsUrl,
             S = c.sampleUrl,
             L = c.subscribeSource,
             h = function () {
-              return D.a.get('window').width <= P.a.theme.breakpoints.small ? z.a : z.b
+              return D.a.get('window').width <= H.a.theme.breakpoints.small ? z.a : z.b
             },
-            O = function (e) {
+            N = function (e) {
               return (function (e, t) {
                 return ''.concat(e, '&client=').concat(t)
               })(e, h())
             },
-            k = I && O(I),
-            N = S && ''.concat(O(S), '&element=read-sample-issue'),
-            A = function (e) {
+            k = g && N(g),
+            A = S && ''.concat(N(S), '&element=read-sample-issue'),
+            U = function (e) {
               return function () {
-                l('click', e)
+                i('click', e)
               }
             },
-            U = function () {
-              N && l('click', 'sample_issue', N)
+            B = function () {
+              A && i('click', 'sample_issue', A)
             },
-            C = a === p.INITIAL_WITH_EMAIL,
-            R = a === p.INITIAL_WITHOUT_EMAIL,
-            M = a === p.CONFIRM,
-            $ = a === p.SUBSCRIBED,
-            le = L === f.TWITTER_PROFILE,
+            O = r === p.INITIAL_WITH_EMAIL,
+            M = r === p.INITIAL_WITHOUT_EMAIL,
+            oe = r === p.CONFIRM,
+            le = r === p.SUBSCRIBED,
+            ie = L === f.TWITTER_PROFILE,
             se = function (e, t) {
               return o.a.createElement(
-                j.b,
+                x.b,
                 {
-                  align: $ ? 'center' : 'left',
+                  align: le ? 'center' : 'left',
                   color: 'normal',
                   size: 'title4',
-                  style: t ? ie.titleMobile : ie.titleDesktop,
+                  style: t ? ce.titleMobile : ce.titleDesktop,
                   weight: 'bold',
                 },
                 e,
               )
             },
             ue = function () {
-              return o.a.createElement(j.b, { color: 'gray700', dir: 'ltr', weight: E ? 'normal' : 'bold' }, _)
+              return o.a.createElement(x.b, { color: 'gray700', dir: 'ltr', weight: E ? 'normal' : 'bold' }, _)
             },
             me =
               E && _ && k
@@ -327,59 +300,59 @@
                     X.a,
                     null,
                     o.a.createElement(
-                      j.b,
-                      { color: 'gray700', size: 'subtext1', style: ie.marginTopLarge },
+                      x.b,
+                      { color: 'gray700', size: 'subtext1', style: ce.marginTopLarge },
                       o.a.createElement(
-                        B.a.I18NFormatMessage,
+                        C.a.I18NFormatMessage,
                         { $i18n: 'gd686e7e' },
                         o.a.createElement(ue, null),
                         o.a.createElement(
-                          j.b,
+                          x.b,
                           {
                             color: 'buttonBlack',
                             link: ''.concat(k, '&element=different-email'),
-                            onPress: A('different_email'),
+                            onPress: U('different_email'),
                             withUnderline: !0,
                           },
-                          B.a.g12413e9,
+                          C.a.g12413e9,
                         ),
                       ),
                     ),
                     o.a.createElement(
-                      j.b,
-                      { color: 'gray700', size: 'subtext1', style: ie.marginTopSubtext },
+                      x.b,
+                      { color: 'gray700', size: 'subtext1', style: ce.marginTopSubtext },
                       o.a.createElement(
-                        B.a.I18NFormatMessage,
+                        C.a.I18NFormatMessage,
                         { $i18n: 'b9c12eee' },
                         o.a.createElement(
-                          j.b,
-                          { color: 'buttonBlack', link: w, onPress: A('revue_terms'), withUnderline: !0 },
-                          B.a.jc9f083d,
+                          x.b,
+                          { color: 'buttonBlack', link: w, onPress: U('revue_terms'), withUnderline: !0 },
+                          C.a.jc9f083d,
                         ),
                         o.a.createElement(
-                          j.b,
-                          { color: 'buttonBlack', link: T, onPress: A('revue_privacy'), withUnderline: !0 },
-                          B.a.h75d5bd5,
+                          x.b,
+                          { color: 'buttonBlack', link: T, onPress: U('revue_privacy'), withUnderline: !0 },
+                          C.a.h75d5bd5,
                         ),
-                        g || '',
+                        I || '',
                       ),
                     ),
                   )
                 : o.a.createElement(
-                    j.b,
-                    { color: 'gray700', style: ie.marginTop },
+                    x.b,
+                    { color: 'gray700', style: ce.marginTop },
                     o.a.createElement(
-                      B.a.I18NFormatMessage,
+                      C.a.I18NFormatMessage,
                       { $i18n: 'efdeb336' },
                       o.a.createElement(
-                        j.b,
-                        { color: 'buttonBlack', link: w, onPress: A('revue_terms'), withUnderline: !0 },
-                        B.a.d1c4aeaf,
+                        x.b,
+                        { color: 'buttonBlack', link: w, onPress: U('revue_terms'), withUnderline: !0 },
+                        C.a.d1c4aeaf,
                       ),
                       o.a.createElement(
-                        j.b,
-                        { color: 'buttonBlack', link: T, onPress: A('revue_privacy'), withUnderline: !0 },
-                        B.a.a5d264ec,
+                        x.b,
+                        { color: 'buttonBlack', link: T, onPress: U('revue_privacy'), withUnderline: !0 },
+                        C.a.a5d264ec,
                       ),
                     ),
                   ),
@@ -387,58 +360,62 @@
               return o.a.createElement(
                 o.a.Fragment,
                 null,
-                se(oe, e),
+                se(ne, e),
                 E
                   ? null
                   : o.a.createElement(
                       X.a,
-                      { style: ie.marginBottom },
+                      { style: ce.marginBottom },
                       o.a.createElement(
-                        j.b,
+                        x.b,
                         { color: 'gray700' },
                         o.a.createElement(
-                          B.a.I18NFormatMessage,
+                          C.a.I18NFormatMessage,
                           { $i18n: 'bc543cd9' },
-                          g || '',
+                          I || '',
                           o.a.createElement(ue, null),
                         ),
                       ),
                       me,
                     ),
                 o.a.createElement(
-                  H.a,
+                  P.a,
                   {
                     onClick: function () {
                       if (y) {
-                        v(!0), l('click', 'subscribe_btn')
-                        var e = G(G({ revueAccountId: y, doubleOptIn: !E }, L ? { via: L } : null), {}, { client: h() })
+                        v(!0), i('click', 'subscribe_btn')
+                        var e = F()(
+                          F()({ revueAccountId: y, doubleOptIn: !E }, L ? { via: L } : null),
+                          {},
+                          { client: h() },
+                        )
                         u(e)
                           .then(function (e) {
-                            var r,
-                              a =
-                                null == e || null === (r = e.subscribe_to_revue_account) || void 0 === r
+                            var a,
+                              r =
+                                null == e || null === (a = e.subscribe_to_revue_account) || void 0 === a
                                   ? void 0
-                                  : r.subscription_status
-                            E ? (t({ text: ne }), i()) : (a === z.c.Subscribed ? s(p.SUBSCRIBED) : s(p.CONFIRM), v(!1)),
-                              l('impression', 'success_msg')
+                                  : a.subscription_status
+                            E ? (t({ text: ae }), l()) : (r === z.c.Subscribed ? s(p.SUBSCRIBED) : s(p.CONFIRM), v(!1)),
+                              i('impression', 'success_msg')
                           })
                           .catch(function (e) {
-                            var t = r({ showToast: !0 })
-                            l('impression', 'error_msg'), v(!1), t(e)
+                            var t = a({ showToast: !0 })
+                            i('impression', 'error_msg'), v(!1), t(e)
                           })
                       }
                     },
                     size: 'xLarge',
-                    style: !E && ie.marginTop,
+                    style: !E && ce.marginTop,
                     type: 'primaryFilled',
                   },
-                  E ? q : te,
+                  E ? V : Z,
                 ),
-                N && le
+                A && ie
                   ? o.a.createElement(
-                      H.a,
-                      { link: N, onClick: U, size: 'xLarge', style: ie.marginTop, type: 'primaryOutlined' },
-                      Z,
+                      P.a,
+                      { link: A, onClick: B, size: 'xLarge', style: ce.marginTop, type: 'primaryOutlined' },
+                      Q,
                     )
                   : null,
                 E && me,
@@ -447,90 +424,90 @@
             pe = function (e) {
               return o.a.createElement(
                 X.a,
-                { style: e ? ie.mobilePadding : ie.padding },
-                C ? de(e) : null,
-                R
-                  ? (function (e) {
-                      return o.a.createElement(
-                        o.a.Fragment,
-                        null,
-                        se(Q, e),
-                        o.a.createElement(j.b, { color: 'gray700', style: ie.marginBottom }, Y),
-                        k
-                          ? o.a.createElement(
-                              H.a,
-                              {
-                                link: ''.concat(k, '&element=subscribe-through-revue'),
-                                onClick: A('subscribe_revue_btn'),
-                                size: 'xLarge',
-                                style: ie.marginTop,
-                                type: 'primaryFilled',
-                              },
-                              ce,
-                            )
-                          : null,
-                        o.a.createElement(
-                          H.a,
-                          { onClick: i, size: 'xLarge', style: ie.marginTop, type: 'primaryOutlined' },
-                          K,
-                        ),
-                      )
-                    })(e)
-                  : null,
+                { style: e ? ce.mobilePadding : ce.padding },
+                O ? de(e) : null,
                 M
                   ? (function (e) {
                       return o.a.createElement(
                         o.a.Fragment,
                         null,
-                        se(q, e),
-                        o.a.createElement(j.b, { color: 'gray700', style: ie.marginBottom }, J),
+                        se(K, e),
+                        o.a.createElement(x.b, { color: 'gray700', style: ce.marginBottom }, J),
+                        k
+                          ? o.a.createElement(
+                              P.a,
+                              {
+                                link: ''.concat(k, '&element=subscribe-through-revue'),
+                                onClick: U('subscribe_revue_btn'),
+                                size: 'xLarge',
+                                style: ce.marginTop,
+                                type: 'primaryFilled',
+                              },
+                              re,
+                            )
+                          : null,
                         o.a.createElement(
-                          H.a,
-                          { onClick: i, size: 'xLarge', style: ie.marginTop, type: 'primaryOutlined' },
-                          V,
+                          P.a,
+                          { onClick: l, size: 'xLarge', style: ce.marginTop, type: 'primaryOutlined' },
+                          $,
                         ),
                       )
                     })(e)
                   : null,
-                $
+                oe
+                  ? (function (e) {
+                      return o.a.createElement(
+                        o.a.Fragment,
+                        null,
+                        se(V, e),
+                        o.a.createElement(x.b, { color: 'gray700', style: ce.marginBottom }, q),
+                        o.a.createElement(
+                          P.a,
+                          { onClick: l, size: 'xLarge', style: ce.marginTop, type: 'primaryOutlined' },
+                          G,
+                        ),
+                      )
+                    })(e)
+                  : null,
+                le
                   ? o.a.createElement(
                       o.a.Fragment,
                       null,
-                      se(re),
-                      o.a.createElement(j.b, { align: 'center', color: 'gray700' }, ae),
+                      se(ee),
+                      o.a.createElement(x.b, { align: 'center', color: 'gray700' }, te),
                       k
                         ? o.a.createElement(
-                            H.a,
-                            { link: k, size: 'xLarge', style: ie.marginTopLarge, type: 'primaryFilled' },
-                            ee,
+                            P.a,
+                            { link: k, size: 'xLarge', style: ce.marginTopLarge, type: 'primaryFilled' },
+                            Y,
                           )
                         : null,
                       o.a.createElement(
-                        H.a,
-                        { onClick: i, size: 'xLarge', style: ie.marginTop, type: 'primaryOutlined' },
-                        K,
+                        P.a,
+                        { onClick: l, size: 'xLarge', style: ce.marginTop, type: 'primaryOutlined' },
+                        $,
                       ),
                     )
                   : null,
               )
             }
           return b
-            ? o.a.createElement(x.a, { style: ie.activityIndicator })
-            : o.a.createElement(W.a, null, function (e) {
-                var t = e.windowWidth <= P.a.theme.breakpoints.small
+            ? o.a.createElement(W.a, { style: ce.activityIndicator })
+            : o.a.createElement(j.a, null, function (e) {
+                var t = e.windowWidth <= H.a.theme.breakpoints.small
                 return pe(t)
               })
         }),
-        se = r('5FtR'),
-        ue = r('Rp9C'),
-        me = B.a.i9028824,
-        de = function (e) {
+        le = a('5FtR'),
+        ie = a('Rp9C'),
+        se = C.a.i9028824,
+        ue = function (e) {
           var t,
-            r,
             a,
+            r,
             c = e.analytics,
-            i = e.createLocalApiErrorHandler,
-            l = e.fetchOneUserByScreenNameIfNeeded,
+            l = e.createLocalApiErrorHandler,
+            i = e.fetchOneUserByScreenNameIfNeeded,
             s = e.fetchRevueAccount,
             u = e.fetchStatus,
             d = e.fetchUserBizProfile,
@@ -538,8 +515,8 @@
             v = e.isUserNotFound,
             E = e.location,
             _ = e.newsletterMetadata,
-            g = e.revueAccountIdFromLocationState,
-            I = e.screenName,
+            I = e.revueAccountIdFromLocationState,
+            g = e.screenName,
             y = e.user,
             T = e.userId,
             w = o.a.useState(void 0),
@@ -548,33 +525,33 @@
             h = S[1]
           o.a.useEffect(
             function () {
-              I && l(I).catch(i())
+              g && i(g).catch(l())
             },
-            [i, l, I],
+            [l, i, g],
           )
-          var O = o.a.useCallback(
+          var N = o.a.useCallback(
             function () {
-              T && d(T).catch(i())
+              T && d(T).catch(l())
             },
-            [i, d, T],
-          )
-          o.a.useEffect(
-            function () {
-              O()
-            },
-            [O],
-          )
-          var A = o.a.useCallback(
-            function () {
-              g && s(g).catch(i())
-            },
-            [i, s, g],
+            [l, d, T],
           )
           o.a.useEffect(
             function () {
-              A()
+              N()
             },
-            [A],
+            [N],
+          )
+          var U = o.a.useCallback(
+            function () {
+              I && s(I).catch(l())
+            },
+            [l, s, I],
+          )
+          o.a.useEffect(
+            function () {
+              U()
+            },
+            [U],
           ),
             o.a.useEffect(
               function () {
@@ -583,7 +560,7 @@
               },
               [_],
             )
-          var B = o.a.useCallback(
+          var C = o.a.useCallback(
               function () {
                 switch (L) {
                   case p.INITIAL_WITH_EMAIL:
@@ -600,65 +577,65 @@
               },
               [L],
             ),
-            U = o.a.useCallback(
-              function (e, t, r) {
+            B = o.a.useCallback(
+              function (e, t, a) {
                 if (null != _ && _.revueAccountId) {
-                  var a = B(),
+                  var r = C(),
                     n = { id: _.revueAccountId }
                   if (y) {
-                    var o = ue.a.getUserItem(y),
-                      i = o.is_user_follows_viewer,
-                      l = o.is_viewer_follows_user
-                    ;(n.is_user_follows_viewer = i), (n.is_viewer_follows_user = l)
+                    var o = ie.a.getUserItem(y),
+                      l = o.is_user_follows_viewer,
+                      i = o.is_viewer_follows_user
+                    ;(n.is_user_follows_viewer = l), (n.is_viewer_follows_user = i)
                   }
                   _.subscribeSource && (n.newsletter_details = { subscribe_source: _.subscribeSource })
                   var s = _.subscribeSource === f.TWITTER_PROFILE ? 'profile_modules' : void 0
-                  c.scribe({ action: e, section: s, component: a, element: t, data: { items: [n], url: r } })
+                  c.scribe({ action: e, section: s, component: r, element: t, data: { items: [n], url: a } })
                 }
               },
-              [c, B, _, y],
+              [c, C, _, y],
             )
           o.a.useEffect(
             function () {
               if (L) {
                 var e = L === p.SUBSCRIBED ? 'youre_in_the_loop' : void 0
-                U('impression', e)
+                B('impression', e)
               }
             },
             [L],
           )
-          var C = u === m.a.LOADED || u === m.a.FAILED,
-            F =
-              I &&
+          var F = u === m.a.LOADED || u === m.a.FAILED,
+            R =
+              g &&
               (null === (t = E.state) ||
               void 0 === t ||
-              null === (r = t.previousPath) ||
-              void 0 === r ||
-              null === (a = r.includes) ||
-              void 0 === a
+              null === (a = t.previousPath) ||
+              void 0 === a ||
+              null === (r = a.includes) ||
+              void 0 === r
                 ? void 0
-                : a.call(r, '/'.concat(I))),
-            R = function () {
-              L === p.CONFIRM ? U('click', 'done') : U('dismiss'), b.goBack()
+                : r.call(a, '/'.concat(g))),
+            O = function () {
+              L === p.CONFIRM ? B('click', 'done') : B('dismiss'), b.goBack()
             }
-          return (!I || (I && C && v)) && (!g || (g && C && !_))
-            ? o.a.createElement(se.a, { to: '/home' })
-            : I && C && !F
-            ? o.a.createElement(se.a, { to: '/'.concat(I) })
+          return (!g || (g && F && v)) && (!I || (I && F && !_))
+            ? o.a.createElement(le.a, { to: '/home' })
+            : g && F && !R
+            ? o.a.createElement(le.a, { to: '/'.concat(g) })
             : o.a.createElement(k.a, {
-                accessibilityLabel: me,
+                accessibilityLabel: se,
                 fetchStatus: u,
-                onRequestRetry: I ? O : A,
+                onRequestRetry: g ? N : U,
                 render: function () {
                   return _
                     ? o.a.createElement(
-                        N.b,
-                        { history: b, onBackClick: R, withBottomBorder: !1 },
-                        o.a.createElement(le, {
+                        A.b,
+                        { history: b, onBackClick: O },
+                        o.a.createElement(oe, {
                           currentPage: L,
                           newsletterMetadata: _,
-                          onClose: R,
-                          scribeAction: U,
+                          onClose: O,
+                          scribeAction: B,
                           setCurrentPage: h,
                         }),
                       )
@@ -666,41 +643,41 @@
                 },
               })
         },
-        pe = O(de)
-      t.default = pe
+        me = N(ue)
+      t.default = me
     },
-    s9gk: function (e, t, r) {
+    s9gk: function (e, t, a) {
       'use strict'
-      r.r(t),
-        r.d(t, 'NewslettersScreen', function () {
+      a.r(t),
+        a.d(t, 'NewslettersScreen', function () {
           return w
         })
-      r('2G9S')
-      var a = r('ERkP'),
-        n = r.n(a),
-        c = r('jHSc'),
-        o = r.p + 'logo_revue.31c21585.svg',
-        i = r('7N4s'),
-        l = r('t62R'),
-        s = r('/yvb'),
-        u = r('rHpw'),
-        m = r('3XMw'),
-        d = r.n(m),
-        p = r('U+bB'),
-        f = r('MWbm'),
+      a('2G9S')
+      var r = a('ERkP'),
+        n = a.n(r),
+        c = a('jHSc'),
+        o = a.p + 'logo_revue.31c21585.svg',
+        l = a('7N4s'),
+        i = a('t62R'),
+        s = a('/yvb'),
+        u = a('rHpw'),
+        m = a('3XMw'),
+        d = a.n(m),
+        p = a('U+bB'),
+        f = a('MWbm'),
         b = d.a.d0a51fb1,
         v = d.a.e217e03c,
         E = d.a.fadf0f86,
         _ = d.a.f8df10b9,
-        g = d.a.hb47d72b,
-        I = d.a.dcbba9e7,
+        I = d.a.hb47d72b,
+        g = d.a.dcbba9e7,
         y = d.a.bf916530,
         T = d.a.af5cd00d,
         w = function (e) {
-          var t = n.a.useContext(i.b).isModal
+          var t = n.a.useContext(l.b).isModal
           return n.a.createElement(
             c.b,
-            { documentTitle: b, history: e.history, withBottomBorder: !1 },
+            { documentTitle: b, history: e.history },
             n.a.createElement(
               f.a,
               { style: t ? S.root : S.mobileRoot },
@@ -712,29 +689,29 @@
               n.a.createElement(
                 f.a,
                 { style: S.contentContainer },
-                n.a.createElement(l.b, { size: 'title4', style: S.newsletterHeader, weight: 'bold' }, v),
+                n.a.createElement(i.b, { size: 'title4', style: S.newsletterHeader, weight: 'bold' }, v),
                 n.a.createElement(
-                  l.b,
+                  i.b,
                   { style: S.descriptionContainer },
                   n.a.createElement(
                     d.a.I18NFormatMessage,
                     { $i18n: 'j28cabeb' },
-                    n.a.createElement(l.b, { link: '/revue' }, d.a.h8041a49),
+                    n.a.createElement(i.b, { link: '/revue' }, d.a.h8041a49),
                   ),
                 ),
                 n.a.createElement(
                   f.a,
                   { style: S.featuresList },
                   n.a.createElement(
-                    l.b,
+                    i.b,
                     null,
                     n.a.createElement(
                       'ul',
                       null,
                       n.a.createElement('li', null, E),
                       n.a.createElement('li', null, _),
-                      n.a.createElement('li', null, g),
                       n.a.createElement('li', null, I),
+                      n.a.createElement('li', null, g),
                       n.a.createElement('li', null, y),
                     ),
                   ),

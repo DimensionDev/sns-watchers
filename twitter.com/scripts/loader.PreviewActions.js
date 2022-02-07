@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [176],
+  [177],
   {
     WOwf: function (e, t, n) {
       'use strict'
@@ -57,7 +57,7 @@
         l = n('5oBF'),
         d = Object(s.a)()
           .propsFromState(function () {
-            return { previewTweet: l.d, undoTweetSettings: u.p }
+            return { previewTweet: l.d, undoTweetSettings: u.q }
           })
           .adjustStateProps(function (e) {
             var t,
@@ -92,18 +92,18 @@
           .withAnalytics({ page: 'undo_tweet_details', section: 'timeline' }),
         c = n('3XMw'),
         p = n.n(c)
-      var m = n('Ty5D'),
+      var m = n('zCf4'),
         w = n('MWbm'),
         f = n('t62R'),
-        y = n('aRdY'),
-        b = n('/yvb'),
+        b = n('aRdY'),
+        y = n('/yvb'),
         v = n('rHpw'),
         g = p.a.bc2ceaf2,
         S = p.a.gf5e9ea6,
         h = p.a.j4c40da3,
         T = p.a.b23688c7,
         E = function (e) {
-          var t = Object(m.g)(),
+          var t = Object(m.f)(),
             n = e.analytics,
             a = e.communityIdValue,
             r = e.inReplyToStatusId,
@@ -118,20 +118,20 @@
             W = E[0],
             x = E[1],
             _ = o.a.useState(),
-            D = i()(_, 2),
-            C = D[0],
-            R = D[1],
+            C = i()(_, 2),
+            D = C[0],
+            R = C[1],
             j = o.a.useState(!1),
             k = i()(j, 2),
-            F = k[0],
-            L = k[1]
+            q = k[0],
+            F = k[1]
           o.a.useEffect(
             function () {
               'number' == typeof d && x(Math.round(d - Date.now()))
             },
             [d],
           )
-          var P = (function (e) {
+          var L = (function (e) {
             var t = o.a.useState(0),
               n = i()(t, 2),
               a = n[0],
@@ -182,20 +182,20 @@
                   o.a.createElement(
                     w.a,
                     { style: I.timerWrapper },
-                    o.a.createElement(y.a, { accessibilityLabel: T, count: P, maxCount: 1 }),
+                    o.a.createElement(b.a, { accessibilityLabel: T, count: L, maxCount: 1 }),
                   ),
-                  !C || C < 470 ? null : o.a.createElement(f.b, { style: I.sendingLabel, weight: 'bold' }, g),
+                  !D || D < 470 ? null : o.a.createElement(f.b, { style: I.sendingLabel, weight: 'bold' }, g),
                 ),
                 o.a.createElement(
                   w.a,
                   { style: I.buttonWrapper },
                   o.a.createElement(
-                    b.a,
+                    y.a,
                     {
-                      disabled: F,
+                      disabled: q,
                       onClick: function () {
                         l(u),
-                          L(!0),
+                          F(!0),
                           n.scribe({
                             element: 'send_now',
                             action: 'send_now',
@@ -209,7 +209,7 @@
                     h,
                   ),
                   o.a.createElement(
-                    b.a,
+                    y.a,
                     {
                       onClick: function () {
                         n.scribe({

@@ -1,13 +1,13 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [98],
+  [99],
   {
     '6M1P': function (t, e, r) {
       'use strict'
       var n = r('WpDa'),
-        c = r('rJrz'),
-        a = r('ZNT5')
+        a = r('rJrz'),
+        c = r('ZNT5')
       e.a = function (t) {
-        return Object(a.a)({
+        return Object(c.a)({
           timelineId: 'retweetersGraphQL-'.concat(t),
           getEndpoint: function (t) {
             return t.TweetActivity.fetchRetweetedBy
@@ -20,7 +20,7 @@
           formatResponse: n.a,
           context: 'FETCH_TWEET_ACTIVITY_RETWEETS',
           perfKey: 'retweetersGraphQL',
-          staleIntervalMs: c.a,
+          staleIntervalMs: a.a,
         })
       }
     },
@@ -28,27 +28,24 @@
       'use strict'
       r.r(e),
         r.d(e, 'TweetActivityScreen', function () {
-          return P
+          return O
         })
-      r('OZaJ')
       var n = r('VrFO'),
-        c = r.n(n),
-        a = r('Y9Ll'),
-        o = r.n(a),
-        i = r('5Yy7'),
-        u = r.n(i),
-        s = r('N+ot'),
-        f = r.n(s),
-        p = r('AuHH'),
-        l = r.n(p),
-        d = (r('2G9S'), r('ERkP')),
-        y = r.n(d),
-        v = (r('WNMA'), r('KqXw'), r('hqKg')),
-        h = r('WpDa'),
-        w = r('rJrz'),
-        T = r('ZNT5'),
-        m = function (t) {
-          return Object(T.a)({
+        a = r.n(n),
+        c = r('Y9Ll'),
+        i = r.n(c),
+        o = r('5Yy7'),
+        s = r.n(o),
+        u = r('2VqO'),
+        f = r.n(u),
+        p = (r('2G9S'), r('ERkP')),
+        d = r.n(p),
+        l = (r('KqXw'), r('WNMA'), r('hqKg')),
+        y = r('WpDa'),
+        v = r('rJrz'),
+        w = r('ZNT5'),
+        T = function (t) {
+          return Object(w.a)({
             timelineId: 'favoritersGraphQL-'.concat(t),
             getEndpoint: function (t) {
               return t.TweetActivity.fetchLikedBy
@@ -58,16 +55,16 @@
                 n = e.cursor
               return { count: r, cursor: 'string' == typeof n ? n : void 0, tweetId: t }
             },
-            formatResponse: h.a,
+            formatResponse: y.a,
             context: 'FETCH_TWEET_ACTIVITY_LIKES',
             perfKey: 'favoritersGraphQL',
-            staleIntervalMs: w.a,
+            staleIntervalMs: v.a,
           })
         },
-        E = r('6M1P'),
-        b = r('oEGd'),
-        I = { likes: m, retweets: E.a },
-        g = Object(v.createSelector)(
+        m = r('6M1P'),
+        E = r('oEGd'),
+        h = { likes: T, retweets: m.a },
+        b = Object(l.createSelector)(
           function (t, e) {
             return e.match.params.activityType
           },
@@ -78,46 +75,25 @@
             return e.match.params.statusId
           },
           function (t, e, r) {
-            return { activityType: t, screenName: e, statusId: r, urtModule: I[t](r) }
+            return { activityType: t, screenName: e, statusId: r, urtModule: h[t](r) }
           },
         ),
-        L = Object(b.c)(g),
-        R = r('jHSc'),
-        k = r('3XMw'),
-        A = r.n(k),
-        J = r('fTQJ'),
-        M = r('7JQg')
-      function O(t) {
-        var e = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (t) {
-            return !1
-          }
-        })()
-        return function () {
-          var r,
-            n = l()(t)
-          if (e) {
-            var c = l()(this).constructor
-            r = Reflect.construct(n, arguments, c)
-          } else r = n.apply(this, arguments)
-          return f()(this, r)
-        }
-      }
-      var _ = { likes: A.a.b13974f0, retweets: A.a.hfb8fd58 },
-        N = { likes: A.a.f12858d3, retweets: A.a.d25289b4 },
-        P = (function (t) {
-          u()(r, t)
-          var e = O(r)
+        I = Object(E.c)(b),
+        g = r('jHSc'),
+        L = r('3XMw'),
+        k = r.n(L),
+        M = r('fTQJ'),
+        _ = r('7JQg'),
+        A = { likes: k.a.b13974f0, retweets: k.a.hfb8fd58 },
+        J = { likes: k.a.f12858d3, retweets: k.a.d25289b4 },
+        O = (function (t) {
+          s()(r, t)
+          var e = f()(r)
           function r() {
-            return c()(this, r), e.apply(this, arguments)
+            return a()(this, r), e.apply(this, arguments)
           }
           return (
-            o()(r, [
+            i()(r, [
               {
                 key: 'render',
                 value: function () {
@@ -125,20 +101,20 @@
                     e = t.activityType,
                     r = t.history,
                     n = t.screenName,
-                    c = t.statusId,
-                    a = t.urtModule
-                  return y.a.createElement(
-                    R.b,
-                    { backLocation: '/'.concat(n.toLowerCase(), '/status/').concat(c), history: r, title: N[e] },
-                    y.a.createElement(J.a, { loadingAccessibilityLabel: _[e], module: a, title: N[e] }),
+                    a = t.statusId,
+                    c = t.urtModule
+                  return d.a.createElement(
+                    g.b,
+                    { backLocation: '/'.concat(n.toLowerCase(), '/status/').concat(a), history: r, title: J[e] },
+                    d.a.createElement(M.a, { loadingAccessibilityLabel: A[e], module: c, title: J[e] }),
                   )
                 },
               },
             ]),
             r
           )
-        })(y.a.PureComponent)
-      e.default = Object(M.c)({ page: 'tweet_activity', section: 'tweet_activity' })(L(P))
+        })(d.a.PureComponent)
+      e.default = Object(_.c)({ page: 'tweet_activity', section: 'tweet_activity' })(I(O))
     },
     rJrz: function (t, e, r) {
       'use strict'

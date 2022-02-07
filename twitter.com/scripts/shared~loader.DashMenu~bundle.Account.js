@@ -1,9 +1,9 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
   [19],
   {
-    '45lU': function (e, t, r) {
+    '45lU': function (e, t, n) {
       'use strict'
-      var n = r('rHpw').a.create(function (e) {
+      var a = n('rHpw').a.create(function (e) {
         return {
           backgroundArea: { backgroundColor: e.colors.activeBlack },
           drawer: { maxWidth: '70%' },
@@ -53,862 +53,579 @@
           menuContentWidth: { width: 'calc('.concat(e.spaces.space64, ' * 4.25)') },
         }
       })
-      t.a = n
+      t.a = a
     },
-    '45mF': function (e, t, r) {
+    '45mF': function (e, t, n) {
       'use strict'
-      r.d(t, 'a', function () {
+      n.d(t, 'a', function () {
         return s
       })
-      r('2G9S')
-      var n = r('1YZw'),
-        a = r('pXBW'),
-        c = r('3XMw'),
-        i = r.n(c),
-        o = r('SrIh'),
-        l = i.a.a5d4fda0,
+      n('2G9S')
+      var a = n('1YZw'),
+        l = n('pXBW'),
+        i = n('3XMw'),
+        r = n.n(i),
+        c = n('SrIh'),
+        o = r.a.a5d4fda0,
         s = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l,
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : o,
             t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1]
           return {
-            customErrorHandler: function (r) {
-              var c = r.context
+            customErrorHandler: function (n) {
+              var i = n.context
               return (
-                !r instanceof a.a && (r.message = 'Strato error occurred in '.concat(c.id, ': ').concat(c.action)),
-                Object(o.a)(r, { extra: { context: c, isStrato: !0 } }),
-                t ? Object(n.b)({ text: e }) : []
+                !n instanceof l.a && (n.message = 'Strato error occurred in '.concat(i.id, ': ').concat(i.action)),
+                Object(c.a)(n, { extra: { context: i, isStrato: !0 } }),
+                t ? Object(a.b)({ text: e }) : []
               )
             },
           }
         }
     },
-    '4BrD': function (e, t, r) {
+    '4BrD': function (e, t, n) {
       'use strict'
-      r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
-      var n = r('KEM+'),
-        a = r.n(n),
-        c = r('ERkP'),
-        i = r.n(c),
-        o = r('Lsrn'),
-        l = r('k/Ka')
-      function s(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
+      var a = n('yiKp'),
+        l = n.n(a),
+        i = n('ERkP'),
+        r = n.n(i),
+        c = n('Lsrn'),
+        o = n('k/Ka'),
+        s = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(o.a)(
+            'svg',
+            l()(
+              l()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [c.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            r.a.createElement(
+              'g',
+              null,
+              r.a.createElement('path', {
+                d: 'M20.75 22H3.25C2.01 22 1 20.99 1 19.75V4.25C1 3.01 2.01 2 3.25 2h17.5C21.99 2 23 3.01 23 4.25v15.5c0 1.24-1.01 2.25-2.25 2.25zM3.25 3.5c-.414 0-.75.337-.75.75v15.5c0 .413.336.75.75.75h17.5c.414 0 .75-.337.75-.75V4.25c0-.413-.336-.75-.75-.75H3.25z',
+              }),
+              r.a.createElement('path', {
+                d: 'M16.758 6.982h-5.806c-.414 0-.75.336-.75.75s.336.75.75.75h3.995L6.92 16.508c-.292.293-.292.768 0 1.06.147.147.34.22.53.22s.385-.072.53-.22l8.027-8.025v3.995c0 .414.336.75.75.75s.75-.336.75-.75V7.732c0-.414-.335-.75-.75-.75z',
+              }),
+            ),
+          )
         }
-        return r
-      }
-      function u(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? s(Object(r), !0).forEach(function (t) {
-                a()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : s(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
-        }
-        return e
-      }
-      var d = function () {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(l.a)(
-          'svg',
-          u(
-            u({}, e),
-            {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [o.a.root, e.style], viewBox: '0 0 24 24' },
-          ),
-          i.a.createElement(
-            'g',
-            null,
-            i.a.createElement('path', {
-              d: 'M20.75 22H3.25C2.01 22 1 20.99 1 19.75V4.25C1 3.01 2.01 2 3.25 2h17.5C21.99 2 23 3.01 23 4.25v15.5c0 1.24-1.01 2.25-2.25 2.25zM3.25 3.5c-.414 0-.75.337-.75.75v15.5c0 .413.336.75.75.75h17.5c.414 0 .75-.337.75-.75V4.25c0-.413-.336-.75-.75-.75H3.25z',
-            }),
-            i.a.createElement('path', {
-              d: 'M16.758 6.982h-5.806c-.414 0-.75.336-.75.75s.336.75.75.75h3.995L6.92 16.508c-.292.293-.292.768 0 1.06.147.147.34.22.53.22s.385-.072.53-.22l8.027-8.025v3.995c0 .414.336.75.75.75s.75-.336.75-.75V7.732c0-.414-.335-.75-.75-.75z',
-            }),
-          ),
-        )
-      }
-      ;(d.metadata = { width: 24, height: 24 }), (t.a = d)
+      ;(s.metadata = { width: 24, height: 24 }), (t.a = s)
     },
-    '9qNn': function (e, t, r) {
+    '9qNn': function (e, t, n) {
       'use strict'
       t.a = { logout: 'logout', switcher: 'switcher', settings: 'settings', help: 'help' }
     },
-    Drq4: function (e, t, r) {
+    Drq4: function (e, t, n) {
       'use strict'
-      r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
-      var n = r('KEM+'),
-        a = r.n(n),
-        c = r('ERkP'),
-        i = r.n(c),
-        o = r('Lsrn'),
-        l = r('k/Ka')
-      function s(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
+      var a = n('yiKp'),
+        l = n.n(a),
+        i = n('ERkP'),
+        r = n.n(i),
+        c = n('Lsrn'),
+        o = n('k/Ka'),
+        s = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(o.a)(
+            'svg',
+            l()(
+              l()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [c.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            r.a.createElement(
+              'g',
+              null,
+              r.a.createElement('circle', { cx: '12', cy: '6.674', r: '1.889' }),
+              r.a.createElement('path', {
+                d: 'M9.828 14.817l-1.62 3.342c-.138.41.083.857.495.995s.858-.083.996-.495l1.602-3.176c.28-.557 1.076-.556 1.356 0l1.608 3.195c.138.41.584.632.996.494.412-.138.633-.584.495-.996l-1.62-3.342.032.07-.123-.262c-.483-1.027-.535-2.19-.16-3.24.106-.302.392-.505.712-.505h2.032c.434 0 .786-.353.786-.787 0-.434-.352-.786-.786-.786H7.37c-.435 0-.787.352-.787.786 0 .434.352.786.786.786h1.985c.32 0 .606.2.713.503.374 1.05.323 2.214-.158 3.24l-.125.263',
+              }),
+              r.a.createElement('path', {
+                d: 'M12 22.75C6.072 22.75 1.25 17.928 1.25 12S6.072 1.25 12 1.25 22.75 6.072 22.75 12 17.928 22.75 12 22.75zm0-20C6.9 2.75 2.75 6.9 2.75 12S6.9 21.25 12 21.25s9.25-4.15 9.25-9.25S17.1 2.75 12 2.75z',
+              }),
+            ),
+          )
         }
-        return r
-      }
-      function u(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? s(Object(r), !0).forEach(function (t) {
-                a()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : s(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
-        }
-        return e
-      }
-      var d = function () {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(l.a)(
-          'svg',
-          u(
-            u({}, e),
-            {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [o.a.root, e.style], viewBox: '0 0 24 24' },
-          ),
-          i.a.createElement(
-            'g',
-            null,
-            i.a.createElement('circle', { cx: '12', cy: '6.674', r: '1.889' }),
-            i.a.createElement('path', {
-              d: 'M9.828 14.817l-1.62 3.342c-.138.41.083.857.495.995s.858-.083.996-.495l1.602-3.176c.28-.557 1.076-.556 1.356 0l1.608 3.195c.138.41.584.632.996.494.412-.138.633-.584.495-.996l-1.62-3.342.032.07-.123-.262c-.483-1.027-.535-2.19-.16-3.24.106-.302.392-.505.712-.505h2.032c.434 0 .786-.353.786-.787 0-.434-.352-.786-.786-.786H7.37c-.435 0-.787.352-.787.786 0 .434.352.786.786.786h1.985c.32 0 .606.2.713.503.374 1.05.323 2.214-.158 3.24l-.125.263',
-            }),
-            i.a.createElement('path', {
-              d: 'M12 22.75C6.072 22.75 1.25 17.928 1.25 12S6.072 1.25 12 1.25 22.75 6.072 22.75 12 17.928 22.75 12 22.75zm0-20C6.9 2.75 2.75 6.9 2.75 12S6.9 21.25 12 21.25s9.25-4.15 9.25-9.25S17.1 2.75 12 2.75z',
-            }),
-          ),
-        )
-      }
-      ;(d.metadata = { width: 24, height: 24 }), (t.a = d)
+      ;(s.metadata = { width: 24, height: 24 }), (t.a = s)
     },
-    Q3sg: function (e, t, r) {
+    Q3sg: function (e, t, n) {
       'use strict'
-      r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
-      var n = r('KEM+'),
-        a = r.n(n),
-        c = r('ERkP'),
-        i = r.n(c),
-        o = r('Lsrn'),
-        l = r('k/Ka')
-      function s(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
+      var a = n('yiKp'),
+        l = n.n(a),
+        i = n('ERkP'),
+        r = n.n(i),
+        c = n('Lsrn'),
+        o = n('k/Ka'),
+        s = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(o.a)(
+            'svg',
+            l()(
+              l()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [c.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            r.a.createElement(
+              'g',
+              null,
+              r.a.createElement('path', {
+                d: 'M15.543 3H2.75c-.414 0-.75.336-.75.75v16.5c0 .414.336.75.75.75h12.886c1.534 0 2.853-.225 3.917-.72 1.048-.482 1.865-1.147 2.38-2.025.49-.833.733-1.75.733-2.732 0-1.25-.357-2.336-1.128-3.184-.317-.348-.69-.636-1.113-.868.302-.21.573-.455.809-.737.675-.806 1.014-1.755 1.014-2.814 0-1.49-.605-2.721-1.786-3.625C19.28 3.39 17.598 3 15.543 3zm.543 5.718c.499-.059.973-.189 1.414-.381l-.001.001c-.33.486-.747.912-1.228 1.254.005.104.008.21.008.313 0 3.203-2.476 6.895-7.006 6.895-1.39 0-2.683-.4-3.773-1.089.193.023.389.034.588.034 1.153 0 2.215-.387 3.058-1.038-1.078-.018-1.987-.72-2.3-1.682.15.028.304.043.463.043.224 0 .441-.03.648-.085-1.126-.222-1.974-1.202-1.974-2.376v-.031c.331.181.71.29 1.115.303-.66-.434-1.095-1.177-1.095-2.017 0-.443.121-.86.333-1.219 1.214 1.466 3.027 2.431 5.074 2.533-.041-.178-.063-.362-.063-.552 0-1.339 1.102-2.424 2.462-2.424.708 0 1.347.295 1.796.765.561-.108 1.088-.31 1.564-.588-.184.566-.574 1.042-1.083 1.341z',
+              }),
+            ),
+          )
         }
-        return r
-      }
-      function u(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? s(Object(r), !0).forEach(function (t) {
-                a()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : s(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
-        }
-        return e
-      }
-      var d = function () {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(l.a)(
-          'svg',
-          u(
-            u({}, e),
-            {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [o.a.root, e.style], viewBox: '0 0 24 24' },
-          ),
-          i.a.createElement(
-            'g',
-            null,
-            i.a.createElement('path', {
-              d: 'M15.543 3H2.75c-.414 0-.75.336-.75.75v16.5c0 .414.336.75.75.75h12.886c1.534 0 2.853-.225 3.917-.72 1.048-.482 1.865-1.147 2.38-2.025.49-.833.733-1.75.733-2.732 0-1.25-.357-2.336-1.128-3.184-.317-.348-.69-.636-1.113-.868.302-.21.573-.455.809-.737.675-.806 1.014-1.755 1.014-2.814 0-1.49-.605-2.721-1.786-3.625C19.28 3.39 17.598 3 15.543 3zm.543 5.718c.499-.059.973-.189 1.414-.381l-.001.001c-.33.486-.747.912-1.228 1.254.005.104.008.21.008.313 0 3.203-2.476 6.895-7.006 6.895-1.39 0-2.683-.4-3.773-1.089.193.023.389.034.588.034 1.153 0 2.215-.387 3.058-1.038-1.078-.018-1.987-.72-2.3-1.682.15.028.304.043.463.043.224 0 .441-.03.648-.085-1.126-.222-1.974-1.202-1.974-2.376v-.031c.331.181.71.29 1.115.303-.66-.434-1.095-1.177-1.095-2.017 0-.443.121-.86.333-1.219 1.214 1.466 3.027 2.431 5.074 2.533-.041-.178-.063-.362-.063-.552 0-1.339 1.102-2.424 2.462-2.424.708 0 1.347.295 1.796.765.561-.108 1.088-.31 1.564-.588-.184.566-.574 1.042-1.083 1.341z',
-            }),
-          ),
-        )
-      }
-      ;(d.metadata = { width: 24, height: 24 }), (t.a = d)
+      ;(s.metadata = { width: 24, height: 24 }), (t.a = s)
     },
-    SNyS: function (e, t, r) {
+    SNyS: function (e, t, n) {
       'use strict'
-      r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
-      var n = r('KEM+'),
-        a = r.n(n),
-        c = r('ERkP'),
-        i = r.n(c),
-        o = r('Lsrn'),
-        l = r('k/Ka')
-      function s(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
+      var a = n('yiKp'),
+        l = n.n(a),
+        i = n('ERkP'),
+        r = n.n(i),
+        c = n('Lsrn'),
+        o = n('k/Ka'),
+        s = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(o.a)(
+            'svg',
+            l()(
+              l()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [c.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            r.a.createElement(
+              'g',
+              null,
+              r.a.createElement('path', {
+                d: 'M12.025 22.75c-5.928 0-10.75-4.822-10.75-10.75S6.098 1.25 12.025 1.25 22.775 6.072 22.775 12s-4.822 10.75-10.75 10.75zm0-20c-5.1 0-9.25 4.15-9.25 9.25s4.15 9.25 9.25 9.25 9.25-4.15 9.25-9.25-4.15-9.25-9.25-9.25z',
+              }),
+              r.a.createElement('path', {
+                d: 'M13.064 17.47c0-.616-.498-1.114-1.114-1.114-.616 0-1.114.498-1.114 1.114 0 .615.498 1.114 1.114 1.114.616 0 1.114-.5 1.114-1.114zm3.081-7.528c0-2.312-1.882-4.194-4.194-4.194-2.312 0-4.194 1.882-4.194 4.194 0 .414.336.75.75.75s.75-.336.75-.75c0-1.485 1.21-2.694 2.695-2.694 1.486 0 2.695 1.21 2.695 2.694 0 1.486-1.21 2.695-2.694 2.695-.413 0-.75.336-.75.75v1.137c0 .414.337.75.75.75s.75-.336.75-.75v-.463c1.955-.354 3.445-2.06 3.445-4.118z',
+              }),
+            ),
+          )
         }
-        return r
-      }
-      function u(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? s(Object(r), !0).forEach(function (t) {
-                a()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : s(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
-        }
-        return e
-      }
-      var d = function () {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(l.a)(
-          'svg',
-          u(
-            u({}, e),
-            {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [o.a.root, e.style], viewBox: '0 0 24 24' },
-          ),
-          i.a.createElement(
-            'g',
-            null,
-            i.a.createElement('path', {
-              d: 'M12.025 22.75c-5.928 0-10.75-4.822-10.75-10.75S6.098 1.25 12.025 1.25 22.775 6.072 22.775 12s-4.822 10.75-10.75 10.75zm0-20c-5.1 0-9.25 4.15-9.25 9.25s4.15 9.25 9.25 9.25 9.25-4.15 9.25-9.25-4.15-9.25-9.25-9.25z',
-            }),
-            i.a.createElement('path', {
-              d: 'M13.064 17.47c0-.616-.498-1.114-1.114-1.114-.616 0-1.114.498-1.114 1.114 0 .615.498 1.114 1.114 1.114.616 0 1.114-.5 1.114-1.114zm3.081-7.528c0-2.312-1.882-4.194-4.194-4.194-2.312 0-4.194 1.882-4.194 4.194 0 .414.336.75.75.75s.75-.336.75-.75c0-1.485 1.21-2.694 2.695-2.694 1.486 0 2.695 1.21 2.695 2.694 0 1.486-1.21 2.695-2.694 2.695-.413 0-.75.336-.75.75v1.137c0 .414.337.75.75.75s.75-.336.75-.75v-.463c1.955-.354 3.445-2.06 3.445-4.118z',
-            }),
-          ),
-        )
-      }
-      ;(d.metadata = { width: 24, height: 24 }), (t.a = d)
+      ;(s.metadata = { width: 24, height: 24 }), (t.a = s)
     },
-    VN5n: function (e, t, r) {
+    VN5n: function (e, t, n) {
       'use strict'
-      r('OZaJ'), r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
-      var n = r('VrFO'),
-        a = r.n(n),
-        c = r('Y9Ll'),
-        i = r.n(c),
-        o = r('1Pcy'),
-        l = r.n(o),
-        s = r('5Yy7'),
-        u = r.n(s),
-        d = r('N+ot'),
-        h = r.n(d),
-        m = r('AuHH'),
-        b = r.n(m),
-        p = r('KEM+'),
-        f = r.n(p),
-        _ = (r('2G9S'), r('ERkP')),
-        v = r.n(_),
-        y = r('xQWt'),
-        O = r('RqPI'),
-        w = r('P1r1'),
-        g = r('li/m'),
-        k = r('G6rE'),
-        j = r('rxPX'),
-        C = r('0KEI'),
-        E = Object(j.a)()
+      var a = n('yiKp'),
+        l = n.n(a),
+        i = n('VrFO'),
+        r = n.n(i),
+        c = n('Y9Ll'),
+        o = n.n(c),
+        s = n('1Pcy'),
+        d = n.n(s),
+        m = n('5Yy7'),
+        u = n.n(m),
+        h = n('2VqO'),
+        _ = n.n(h),
+        b = n('KEM+'),
+        f = n.n(b),
+        p = (n('2G9S'), n('ERkP')),
+        v = n.n(p),
+        k = n('xQWt'),
+        w = n('RqPI'),
+        C = n('P1r1'),
+        g = n('li/m'),
+        I = n('G6rE'),
+        y = n('rxPX'),
+        E = n('0KEI'),
+        M = Object(y.a)()
           .propsFromState(function () {
             return {
-              communitiesActions: O.f,
+              communitiesActions: w.f,
               hasCommunityMemberships: g.d,
-              pendingFollowersInfo: y.f,
-              loggedInUser: k.e.selectLoggedInUser,
-              userFeatures: O.p,
-              settings: w.g,
+              pendingFollowersInfo: k.f,
+              loggedInUser: I.e.selectLoggedInUser,
+              userFeatures: w.p,
+              settings: C.g,
             }
           })
           .adjustStateProps(function (e) {
             var t = e.communitiesActions,
-              r = e.hasCommunityMemberships,
-              n = e.loggedInUser,
-              a = e.pendingFollowersInfo,
-              c = e.settings,
-              i = e.userFeatures,
-              o = a.acceptedIds,
-              l = a.ids
+              n = e.hasCommunityMemberships,
+              a = e.loggedInUser,
+              l = e.pendingFollowersInfo,
+              i = e.settings,
+              r = e.userFeatures,
+              c = l.acceptedIds,
+              o = l.ids
             return {
               communitiesActions: t,
-              acceptedFollowerCount: o.length,
-              hasCommunityMemberships: r,
-              loggedInUser: n,
-              pendingFollowerCount: l.length - o.length,
-              settings: c,
-              isMediaStudioLinkVisible: !(!i || !i.mediatool_studio_library),
+              acceptedFollowerCount: c.length,
+              hasCommunityMemberships: n,
+              loggedInUser: a,
+              pendingFollowerCount: o.length - c.length,
+              settings: i,
+              isMediaStudioLinkVisible: !(!r || !r.mediatool_studio_library),
             }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(C.createLocalApiErrorHandlerWithContextFactory)('DASH_MENU_CONTAINER'),
-              fetchPendingFollowersIfNeeded: y.d,
-              updateDataSaverMode: w.J,
+              createLocalApiErrorHandler: Object(E.createLocalApiErrorHandlerWithContextFactory)('DASH_MENU_CONTAINER'),
+              fetchPendingFollowersIfNeeded: k.d,
+              updateDataSaverMode: C.L,
             }
           })
           .withAnalytics(),
-        P = r('45mF'),
-        I = (r('hBvt'), r('3XMw')),
-        S = r.n(I),
-        M = r('45lU'),
-        D = r('MWbm'),
-        x = r('htQn'),
-        L = r('t62R'),
-        z = r('Znyr'),
-        H = S.a.d86bbf0f,
-        T = S.a.h6beb5fa,
-        B = function (e) {
+        S = n('45mF'),
+        x = (n('hBvt'), n('3XMw')),
+        z = n.n(x),
+        L = n('45lU'),
+        T = n('MWbm'),
+        B = n('htQn'),
+        A = n('t62R'),
+        H = n('Znyr'),
+        F = z.a.d86bbf0f,
+        O = z.a.h6beb5fa,
+        P = function (e) {
           var t = e.badgeCount,
-            r = e.icon,
-            n = e.iconColor,
-            a = e.label,
-            c = e.link,
-            i = e.onClick,
-            o = e.rightControl,
-            l = e.testID
+            n = e.icon,
+            a = e.iconColor,
+            l = e.label,
+            i = e.link,
+            r = e.onClick,
+            c = e.rightControl,
+            o = e.testID
           return v.a.createElement(
-            D.a,
-            { style: M.a.dashMenuItem },
+            T.a,
+            { style: L.a.dashMenuItem },
             v.a.createElement(
-              x.a,
-              { link: c, onClick: i, style: M.a.link, testID: l },
+              B.a,
+              { link: i, onClick: r, style: L.a.link, testID: o },
               v.a.createElement(
-                D.a,
-                { style: M.a.item },
-                r ? v.a.createElement(r, { style: n ? [M.a.icon, { color: n }] : M.a.icon }) : null,
-                v.a.createElement(L.b, { color: 'normal', numberOfLines: 1, style: M.a.itemLabel }, a),
+                T.a,
+                { style: L.a.item },
+                n ? v.a.createElement(n, { style: a ? [L.a.icon, { color: a }] : L.a.icon }) : null,
+                v.a.createElement(A.b, { color: 'normal', numberOfLines: 1, style: L.a.itemLabel }, l),
                 t
                   ? v.a.createElement(
-                      D.a,
-                      { style: M.a.itemAccessory },
-                      v.a.createElement(z.a, {
+                      T.a,
+                      { style: L.a.itemAccessory },
+                      v.a.createElement(H.a, {
                         count: t,
                         standalone: !0,
-                        truncatedCountFormatter: T,
-                        unreadCountLabel: H,
+                        truncatedCountFormatter: O,
+                        unreadCountLabel: F,
                       }),
                     )
                   : null,
               ),
             ),
-            o,
+            c,
           )
         },
-        F = r('3Wr5'),
-        A = r('Ig1G'),
-        R = r('rHpw'),
-        N = r('Lsrn'),
-        K = r('k/Ka')
-      function V(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
+        D = n('3Wr5'),
+        N = n('Ig1G'),
+        j = n('rHpw'),
+        R = n('Lsrn'),
+        V = n('k/Ka'),
+        K = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(V.a)(
+            'svg',
+            l()(
+              l()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [R.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            v.a.createElement(
+              'g',
+              null,
+              v.a.createElement('path', {
+                d: 'M15.692 11.205l6.383-7.216c.45-.45.45-1.18 0-1.628-.45-.45-1.178-.45-1.627 0l-7.232 6.402s.782.106 1.595.93c.548.558.882 1.51.882 1.51z',
+              }),
+              v.a.createElement('path', {
+                d: 'M17.45 22.28H3.673c-1.148 0-2.083-.946-2.083-2.11V7.926c0-1.165.934-2.112 2.082-2.112h5.836c.414 0 .75.336.75.75s-.336.75-.75.75H3.672c-.32 0-.583.274-.583.612V20.17c0 .336.26.61.582.61h13.78c.32 0 .583-.273.583-.61v-6.28c0-.415.336-.75.75-.75s.75.335.75.75v6.28c0 1.163-.934 2.11-2.084 2.11z',
+              }),
+            ),
+          )
         }
-        return r
-      }
-      function W(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? V(Object(r), !0).forEach(function (t) {
-                f()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : V(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
+      K.metadata = { width: 24, height: 24 }
+      var q = K,
+        U = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(V.a)(
+            'svg',
+            l()(
+              l()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [R.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            v.a.createElement(
+              'g',
+              null,
+              v.a.createElement('path', {
+                d: 'M8.18 16.99c-.19.154-.476.032-.504-.21-.137-1.214-.234-4.053 1.483-5.943.908-1 3.02-1.52 4.475-.198s1.14 3.473.23 4.473c-2.07 2.15-3.428.058-5.686 1.878z',
+              }),
+            ),
+          )
         }
-        return e
-      }
-      var q = function () {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(K.a)(
-          'svg',
-          W(
-            W({}, e),
-            {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [N.a.root, e.style], viewBox: '0 0 24 24' },
-          ),
-          v.a.createElement(
-            'g',
-            null,
-            v.a.createElement('path', {
-              d: 'M15.692 11.205l6.383-7.216c.45-.45.45-1.18 0-1.628-.45-.45-1.178-.45-1.627 0l-7.232 6.402s.782.106 1.595.93c.548.558.882 1.51.882 1.51z',
-            }),
-            v.a.createElement('path', {
-              d: 'M17.45 22.28H3.673c-1.148 0-2.083-.946-2.083-2.11V7.926c0-1.165.934-2.112 2.082-2.112h5.836c.414 0 .75.336.75.75s-.336.75-.75.75H3.672c-.32 0-.583.274-.583.612V20.17c0 .336.26.61.582.61h13.78c.32 0 .583-.273.583-.61v-6.28c0-.415.336-.75.75-.75s.75.335.75.75v6.28c0 1.163-.934 2.11-2.084 2.11z',
-            }),
-          ),
-        )
-      }
-      q.metadata = { width: 24, height: 24 }
-      var U = q
-      function G(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
-        }
-        return r
-      }
-      function Z(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? G(Object(r), !0).forEach(function (t) {
-                f()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : G(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
-        }
-        return e
-      }
-      var X = function () {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(K.a)(
-          'svg',
-          Z(
-            Z({}, e),
-            {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [N.a.root, e.style], viewBox: '0 0 24 24' },
-          ),
-          v.a.createElement(
-            'g',
-            null,
-            v.a.createElement('path', {
-              d: 'M8.18 16.99c-.19.154-.476.032-.504-.21-.137-1.214-.234-4.053 1.483-5.943.908-1 3.02-1.52 4.475-.198s1.14 3.473.23 4.473c-2.07 2.15-3.428.058-5.686 1.878z',
-            }),
-          ),
-        )
-      }
-      X.metadata = { width: 24, height: 24 }
-      var J = X,
-        Y = R.a.create(function (e) {
+      U.metadata = { width: 24, height: 24 }
+      var W = U,
+        G = j.a.create(function (e) {
           return { bristles: { color: e.colors.primary, position: 'absolute', top: 0, left: 0 } }
         }),
-        Q = function (e) {
+        Y = function (e) {
           var t = e.style
           return v.a.createElement(
-            D.a,
+            T.a,
             { accessibilityRole: 'none' },
-            v.a.createElement(U, { style: t }),
-            v.a.createElement(J, { style: [t, Y.bristles] }),
+            v.a.createElement(q, { style: t }),
+            v.a.createElement(W, { style: [t, G.bristles] }),
           )
         },
-        $ = r('fs1G'),
-        ee = r('Es6L'),
-        te = r('9qNn'),
-        re = r('aITJ'),
-        ne = r('TnY3'),
-        ae = r('v6aA'),
-        ce = r('CK8+'),
-        ie = r('OOKO'),
-        oe = r('boUI'),
-        le = r('+1/s'),
-        se = r('EweD'),
-        ue = r('sUoZ'),
-        de = r('/WPq'),
-        he = r('OGrp'),
-        me = r('5VjN'),
-        be = r('2lds'),
-        pe = r('78ol'),
-        fe = r('Q3sg'),
-        _e = r('PU7B')
-      function ve(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
+        Q = n('fs1G'),
+        X = n('Es6L'),
+        Z = n('9qNn'),
+        J = n('aITJ'),
+        $ = n('TnY3'),
+        ee = n('v6aA'),
+        te = n('CK8+'),
+        ne = n('OOKO'),
+        ae = n('boUI'),
+        le = n('+1/s'),
+        ie = n('EweD'),
+        re = n('sUoZ'),
+        ce = n('/WPq'),
+        oe = n('OGrp'),
+        se = n('5VjN'),
+        de = n('2lds'),
+        me = n('78ol'),
+        ue = n('Q3sg'),
+        he = n('PU7B'),
+        _e = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(V.a)(
+            'svg',
+            l()(
+              l()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [R.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            v.a.createElement(
+              'g',
+              null,
+              v.a.createElement('path', {
+                d: 'M6.016 16.97l-1.53 1.53c-.15.14-.34.22-.53.22s-.38-.08-.53-.22c-.29-.29-.29-.77 0-1.06l1.53-1.54c.3-.29.77-.29 1.06 0 .3.3.3.77 0 1.07zm2.12 2.12l-3.64 3.64c-.15.15-.34.22-.53.22s-.38-.07-.53-.22c-.29-.29-.29-.77 0-1.06l3.64-3.64c.3-.3.77-.3 1.06 0 .3.29.3.76 0 1.06z',
+              }),
+              v.a.createElement('path', {
+                d: 'M22.306 1.49c-.28-.28-.66-.44-1.06-.44 0 0-.09 0-.13.01-4.31.38-8.37 2.32-11.4 5.45h-.01c-2.68.54-5.12 1.86-7.09 3.84l-.93.93c-.46.47-.57 1.18-.27 1.76.27.5.78.8 1.33.8.09 0 .18-.01.27-.03l3.98-.73c.59.97 2.26 2.87 3.82 3.78l-.73 4.05c-.12.64.2 1.29.78 1.59.22.12.46.17.69.17.4 0 .78-.15 1.07-.44l.94-.94c1.96-1.99 3.27-4.48 3.8-7.21l.07-.06c0-.01.04-.04.04-.05 3.01-3.03 4.88-7.04 5.27-11.29.04-.44-.12-.88-.44-1.19zm-5.89 11.43c-.15.14-.3.28-.44.42v.02c-.41 2.6-1.63 5-3.48 6.87l-.93.94.88-4.89c.04-.22-.08-.42-.28-.52-1.03-.5-3.65-2.87-4.12-3.97-.09-.23-.32-.37-.56-.33l-4.74.88.93-.94c1.85-1.85 4.23-3.09 6.79-3.5.14-.17.3-.33.46-.48 2.88-2.9 6.55-4.53 10.32-4.87-.34 3.77-1.95 7.47-4.83 10.37z',
+              }),
+              v.a.createElement('path', {
+                d: 'M17.546 6.36c-.88-.88-2.3-.88-3.18 0s-.88 2.31 0 3.18c.88.88 2.3.88 3.18 0 .88-.87.88-2.3 0-3.18zm-1.06 2.12c-.29.3-.77.3-1.06 0-.29-.29-.29-.77 0-1.06.29-.29.77-.29 1.06 0s.29.77 0 1.06z',
+              }),
+            ),
+          )
         }
-        return r
-      }
-      function ye(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? ve(Object(r), !0).forEach(function (t) {
-                f()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : ve(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
+      _e.metadata = { width: 24, height: 24 }
+      var be = _e,
+        fe = n('2qZs'),
+        pe = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(V.a)(
+            'svg',
+            l()(
+              l()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [R.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            v.a.createElement(
+              'g',
+              null,
+              v.a.createElement('path', {
+                d: 'M8.417 11.816c1.355 0 2.872-.15 3.84-1.256.813-.93 1.077-2.367.806-4.392-.38-2.826-2.116-4.513-4.645-4.513-2.53 0-4.267 1.687-4.646 4.513-.273 2.025-.01 3.462.805 4.393.968 1.108 2.485 1.257 3.84 1.257zm-3.16-5.448c.16-1.2.786-3.212 3.16-3.212 2.373 0 2.998 2.013 3.16 3.212.207 1.55.056 2.627-.45 3.205-.455.52-1.266.743-2.71.743s-2.256-.223-2.71-.743c-.507-.578-.658-1.656-.45-3.205zm11.44 12.867c-.88-3.525-4.283-5.988-8.28-5.988-3.998 0-7.403 2.463-8.28 5.988-.172.693-.03 1.4.395 1.94.408.522 1.04.822 1.733.822H14.57c.69 0 1.323-.3 1.73-.82.425-.54.568-1.247.396-1.942zm-1.577 1.018c-.126.16-.316.245-.55.245H2.264c-.235 0-.426-.085-.552-.246-.137-.174-.18-.412-.12-.654.71-2.855 3.517-4.85 6.824-4.85s6.113 1.994 6.824 4.85c.06.24.017.48-.12.655zM23.24 3.47h-5.624l1.64-1.642c.315-.316.315-.827 0-1.143-.316-.315-.826-.316-1.143 0l-2.96 2.96c-.16.16-.238.366-.238.572 0 .207.08.414.237.57l2.96 2.962c.16.156.365.234.572.234s.413-.08.57-.236c.316-.316.316-.828 0-1.144l-1.64-1.64h5.623c.414 0 .75-.336.75-.75s-.334-.747-.748-.747z',
+              }),
+            ),
+          )
         }
-        return e
-      }
-      var Oe = function () {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(K.a)(
-          'svg',
-          ye(
-            ye({}, e),
-            {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [N.a.root, e.style], viewBox: '0 0 24 24' },
-          ),
-          v.a.createElement(
-            'g',
-            null,
-            v.a.createElement('path', {
-              d: 'M6.016 16.97l-1.53 1.53c-.15.14-.34.22-.53.22s-.38-.08-.53-.22c-.29-.29-.29-.77 0-1.06l1.53-1.54c.3-.29.77-.29 1.06 0 .3.3.3.77 0 1.07zm2.12 2.12l-3.64 3.64c-.15.15-.34.22-.53.22s-.38-.07-.53-.22c-.29-.29-.29-.77 0-1.06l3.64-3.64c.3-.3.77-.3 1.06 0 .3.29.3.76 0 1.06z',
-            }),
-            v.a.createElement('path', {
-              d: 'M22.306 1.49c-.28-.28-.66-.44-1.06-.44 0 0-.09 0-.13.01-4.31.38-8.37 2.32-11.4 5.45h-.01c-2.68.54-5.12 1.86-7.09 3.84l-.93.93c-.46.47-.57 1.18-.27 1.76.27.5.78.8 1.33.8.09 0 .18-.01.27-.03l3.98-.73c.59.97 2.26 2.87 3.82 3.78l-.73 4.05c-.12.64.2 1.29.78 1.59.22.12.46.17.69.17.4 0 .78-.15 1.07-.44l.94-.94c1.96-1.99 3.27-4.48 3.8-7.21l.07-.06c0-.01.04-.04.04-.05 3.01-3.03 4.88-7.04 5.27-11.29.04-.44-.12-.88-.44-1.19zm-5.89 11.43c-.15.14-.3.28-.44.42v.02c-.41 2.6-1.63 5-3.48 6.87l-.93.94.88-4.89c.04-.22-.08-.42-.28-.52-1.03-.5-3.65-2.87-4.12-3.97-.09-.23-.32-.37-.56-.33l-4.74.88.93-.94c1.85-1.85 4.23-3.09 6.79-3.5.14-.17.3-.33.46-.48 2.88-2.9 6.55-4.53 10.32-4.87-.34 3.77-1.95 7.47-4.83 10.37z',
-            }),
-            v.a.createElement('path', {
-              d: 'M17.546 6.36c-.88-.88-2.3-.88-3.18 0s-.88 2.31 0 3.18c.88.88 2.3.88 3.18 0 .88-.87.88-2.3 0-3.18zm-1.06 2.12c-.29.3-.77.3-1.06 0-.29-.29-.29-.77 0-1.06.29-.29.77-.29 1.06 0s.29.77 0 1.06z',
-            }),
-          ),
-        )
-      }
-      Oe.metadata = { width: 24, height: 24 }
-      var we = Oe,
-        ge = r('2qZs')
-      function ke(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
+      pe.metadata = { width: 24, height: 24 }
+      var ve = pe,
+        ke = n('4BrD'),
+        we = n('xrkw'),
+        Ce = n('nV1z'),
+        ge = n('M2x3'),
+        Ie = n('SNyS'),
+        ye = n('Drq4'),
+        Ee = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(V.a)(
+            'svg',
+            l()(
+              l()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [R.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            v.a.createElement(
+              'g',
+              null,
+              v.a.createElement('path', {
+                d: 'M20.602 17.158l-7.85-5.546V2c0-.418-.295-.75-.76-.752-1.705 0-3.41.417-4.935 1.206C1.793 5.18-.27 11.68 2.454 16.944c1.91 3.688 5.672 5.805 9.564 5.805 1.663 0 3.35-.39 4.925-1.205 1.527-.79 2.854-1.947 3.84-3.343.238-.338.157-.807-.18-1.045zm1.06-1.823c-.064 0-.13-.008-.195-.026-.4-.11-.637-.52-.53-.92.175-.655.28-1.328.307-2.004.018-.414.376-.736.78-.718.415.016.736.366.72.78-.034.786-.154 1.57-.358 2.33-.09.334-.393.555-.724.555zm-.327-6.17c-.302 0-.586-.185-.7-.483-.243-.633-.555-1.24-.928-1.8-.23-.346-.135-.812.21-1.04.345-.23.81-.136 1.04.21.434.653.797 1.357 1.08 2.093.147.387-.047.82-.434.97-.088.033-.178.05-.268.05zm-3.888-4.8c-.14 0-.282-.04-.408-.122-.57-.37-1.18-.676-1.813-.912-.388-.143-.585-.575-.44-.963.145-.388.578-.585.965-.44.736.275 1.443.63 2.103 1.06.348.225.446.69.22 1.037-.143.22-.384.34-.63.34z',
+              }),
+            ),
+          )
         }
-        return r
-      }
-      function je(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? ke(Object(r), !0).forEach(function (t) {
-                f()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : ke(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
+      Ee.metadata = { width: 24, height: 24 }
+      var Me = Ee,
+        Se = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(V.a)(
+            'svg',
+            l()(
+              l()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [R.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            v.a.createElement(
+              'g',
+              null,
+              v.a.createElement('path', {
+                d: 'M20.602 17.158l-7.85-5.546V2c0-.418-.295-.75-.76-.752-1.705 0-3.41.417-4.935 1.206C1.793 5.18-.27 11.68 2.454 16.944c1.91 3.688 5.672 5.805 9.564 5.805 1.663 0 3.35-.39 4.925-1.205 1.527-.79 2.854-1.947 3.84-3.343.238-.338.157-.807-.18-1.045zm-4.348 3.056c-4.53 2.346-10.122.57-12.468-3.96-2.345-4.53-.57-10.122 3.96-12.468 1.11-.575 2.27-.92 3.505-1.004V12c0 .253.126.476.318.612l7.52 5.313c-.782.94-1.726 1.715-2.833 2.29zm5.408-4.88c-.064 0-.13-.007-.195-.025-.4-.11-.637-.52-.53-.92.175-.655.28-1.328.307-2.004.018-.414.376-.736.78-.718.415.016.736.366.72.78-.034.786-.154 1.57-.358 2.33-.09.334-.393.555-.724.555zm-.327-6.17c-.302 0-.586-.184-.7-.482-.243-.633-.555-1.24-.928-1.8-.23-.346-.135-.812.21-1.04.345-.23.81-.136 1.04.21.434.653.797 1.357 1.08 2.093.147.387-.047.82-.434.97-.088.033-.178.05-.268.05zm-3.888-4.8c-.14 0-.282-.04-.408-.12-.57-.37-1.18-.677-1.813-.913-.388-.143-.585-.575-.44-.963.145-.388.578-.585.965-.44.736.275 1.443.63 2.103 1.06.348.225.446.69.22 1.037-.143.22-.384.34-.63.34z',
+              }),
+            ),
+          )
         }
-        return e
-      }
-      var Ce = function () {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(K.a)(
-          'svg',
-          je(
-            je({}, e),
-            {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [N.a.root, e.style], viewBox: '0 0 24 24' },
-          ),
-          v.a.createElement(
-            'g',
-            null,
-            v.a.createElement('path', {
-              d: 'M8.417 11.816c1.355 0 2.872-.15 3.84-1.256.813-.93 1.077-2.367.806-4.392-.38-2.826-2.116-4.513-4.645-4.513-2.53 0-4.267 1.687-4.646 4.513-.273 2.025-.01 3.462.805 4.393.968 1.108 2.485 1.257 3.84 1.257zm-3.16-5.448c.16-1.2.786-3.212 3.16-3.212 2.373 0 2.998 2.013 3.16 3.212.207 1.55.056 2.627-.45 3.205-.455.52-1.266.743-2.71.743s-2.256-.223-2.71-.743c-.507-.578-.658-1.656-.45-3.205zm11.44 12.867c-.88-3.525-4.283-5.988-8.28-5.988-3.998 0-7.403 2.463-8.28 5.988-.172.693-.03 1.4.395 1.94.408.522 1.04.822 1.733.822H14.57c.69 0 1.323-.3 1.73-.82.425-.54.568-1.247.396-1.942zm-1.577 1.018c-.126.16-.316.245-.55.245H2.264c-.235 0-.426-.085-.552-.246-.137-.174-.18-.412-.12-.654.71-2.855 3.517-4.85 6.824-4.85s6.113 1.994 6.824 4.85c.06.24.017.48-.12.655zM23.24 3.47h-5.624l1.64-1.642c.315-.316.315-.827 0-1.143-.316-.315-.826-.316-1.143 0l-2.96 2.96c-.16.16-.238.366-.238.572 0 .207.08.414.237.57l2.96 2.962c.16.156.365.234.572.234s.413-.08.57-.236c.316-.316.316-.828 0-1.144l-1.64-1.64h5.623c.414 0 .75-.336.75-.75s-.334-.747-.748-.747z',
-            }),
-          ),
-        )
-      }
-      Ce.metadata = { width: 24, height: 24 }
-      var Ee = Ce,
-        Pe = r('4BrD'),
-        Ie = r('xrkw'),
-        Se = r('nV1z'),
-        Me = r('M2x3'),
-        De = r('SNyS'),
-        xe = r('Drq4')
-      function Le(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
-        }
-        return r
-      }
-      function ze(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? Le(Object(r), !0).forEach(function (t) {
-                f()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : Le(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
-        }
-        return e
-      }
-      var He = function () {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(K.a)(
-          'svg',
-          ze(
-            ze({}, e),
-            {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [N.a.root, e.style], viewBox: '0 0 24 24' },
-          ),
-          v.a.createElement(
-            'g',
-            null,
-            v.a.createElement('path', {
-              d: 'M20.602 17.158l-7.85-5.546V2c0-.418-.295-.75-.76-.752-1.705 0-3.41.417-4.935 1.206C1.793 5.18-.27 11.68 2.454 16.944c1.91 3.688 5.672 5.805 9.564 5.805 1.663 0 3.35-.39 4.925-1.205 1.527-.79 2.854-1.947 3.84-3.343.238-.338.157-.807-.18-1.045zm1.06-1.823c-.064 0-.13-.008-.195-.026-.4-.11-.637-.52-.53-.92.175-.655.28-1.328.307-2.004.018-.414.376-.736.78-.718.415.016.736.366.72.78-.034.786-.154 1.57-.358 2.33-.09.334-.393.555-.724.555zm-.327-6.17c-.302 0-.586-.185-.7-.483-.243-.633-.555-1.24-.928-1.8-.23-.346-.135-.812.21-1.04.345-.23.81-.136 1.04.21.434.653.797 1.357 1.08 2.093.147.387-.047.82-.434.97-.088.033-.178.05-.268.05zm-3.888-4.8c-.14 0-.282-.04-.408-.122-.57-.37-1.18-.676-1.813-.912-.388-.143-.585-.575-.44-.963.145-.388.578-.585.965-.44.736.275 1.443.63 2.103 1.06.348.225.446.69.22 1.037-.143.22-.384.34-.63.34z',
-            }),
-          ),
-        )
-      }
-      He.metadata = { width: 24, height: 24 }
-      var Te = He
-      function Be(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
-        }
-        return r
-      }
-      function Fe(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? Be(Object(r), !0).forEach(function (t) {
-                f()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : Be(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
-        }
-        return e
-      }
-      var Ae = function () {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(K.a)(
-          'svg',
-          Fe(
-            Fe({}, e),
-            {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [N.a.root, e.style], viewBox: '0 0 24 24' },
-          ),
-          v.a.createElement(
-            'g',
-            null,
-            v.a.createElement('path', {
-              d: 'M20.602 17.158l-7.85-5.546V2c0-.418-.295-.75-.76-.752-1.705 0-3.41.417-4.935 1.206C1.793 5.18-.27 11.68 2.454 16.944c1.91 3.688 5.672 5.805 9.564 5.805 1.663 0 3.35-.39 4.925-1.205 1.527-.79 2.854-1.947 3.84-3.343.238-.338.157-.807-.18-1.045zm-4.348 3.056c-4.53 2.346-10.122.57-12.468-3.96-2.345-4.53-.57-10.122 3.96-12.468 1.11-.575 2.27-.92 3.505-1.004V12c0 .253.126.476.318.612l7.52 5.313c-.782.94-1.726 1.715-2.833 2.29zm5.408-4.88c-.064 0-.13-.007-.195-.025-.4-.11-.637-.52-.53-.92.175-.655.28-1.328.307-2.004.018-.414.376-.736.78-.718.415.016.736.366.72.78-.034.786-.154 1.57-.358 2.33-.09.334-.393.555-.724.555zm-.327-6.17c-.302 0-.586-.184-.7-.482-.243-.633-.555-1.24-.928-1.8-.23-.346-.135-.812.21-1.04.345-.23.81-.136 1.04.21.434.653.797 1.357 1.08 2.093.147.387-.047.82-.434.97-.088.033-.178.05-.268.05zm-3.888-4.8c-.14 0-.282-.04-.408-.12-.57-.37-1.18-.677-1.813-.913-.388-.143-.585-.575-.44-.963.145-.388.578-.585.965-.44.736.275 1.443.63 2.103 1.06.348.225.446.69.22 1.037-.143.22-.384.34-.63.34z',
-            }),
-          ),
-        )
-      }
-      Ae.metadata = { width: 24, height: 24 }
-      var Re = Ae
-      function Ne(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
-        }
-        return r
-      }
-      function Ke(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? Ne(Object(r), !0).forEach(function (t) {
-                f()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : Ne(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
-        }
-        return e
-      }
-      function Ve(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var r,
-            n = b()(e)
-          if (t) {
-            var a = b()(this).constructor
-            r = Reflect.construct(n, arguments, a)
-          } else r = n.apply(this, arguments)
-          return h()(this, r)
-        }
-      }
-      var We = S.a.c818c60c,
-        qe = S.a.b5711f09,
-        Ue = S.a.i3145aa0,
-        Ge = S.a.b5298d91,
-        Ze = S.a.a57a341b,
-        Xe = S.a.i83d4f13,
-        Je = 'Collaborate',
-        Ye = S.a.f66d24be,
-        Qe = S.a.c4881c66,
-        $e = S.a.h54e6137,
-        et = S.a.ae1bbb26,
-        tt = S.a.a58e0e51,
-        rt = S.a.deaf7e0a,
-        nt = S.a.b4af8c6a,
-        at = S.a.ed21f885,
-        ct = S.a.d0a51fb1,
-        it = S.a.fa98627a,
-        ot = S.a.fd442790,
-        lt = S.a.b8533bac,
-        st = S.a.b0041756,
-        ut = S.a.h02a6fe5,
-        dt = S.a.b7fa0cfd,
-        ht = S.a.ab38b896,
-        mt = S.a.c9d41313,
-        bt = (function (e) {
-          u()(r, e)
-          var t = Ve(r)
-          function r() {
+      Se.metadata = { width: 24, height: 24 }
+      var xe = Se,
+        ze = z.a.c818c60c,
+        Le = z.a.b5711f09,
+        Te = z.a.i3145aa0,
+        Be = z.a.b5298d91,
+        Ae = z.a.a57a341b,
+        He = z.a.i83d4f13,
+        Fe = 'Collaborate',
+        Oe = z.a.f66d24be,
+        Pe = z.a.c4881c66,
+        De = z.a.h54e6137,
+        Ne = z.a.ae1bbb26,
+        je = z.a.a58e0e51,
+        Re = z.a.deaf7e0a,
+        Ve = z.a.b4af8c6a,
+        Ke = z.a.ed21f885,
+        qe = z.a.d0a51fb1,
+        Ue = z.a.fa98627a,
+        We = z.a.fd442790,
+        Ge = z.a.b8533bac,
+        Ye = z.a.b0041756,
+        Qe = z.a.h02a6fe5,
+        Xe = z.a.b7fa0cfd,
+        Ze = z.a.ab38b896,
+        Je = z.a.c9d41313,
+        $e = (function (e) {
+          u()(n, e)
+          var t = _()(n)
+          function n() {
             var e
-            a()(this, r)
-            for (var n = arguments.length, c = new Array(n), i = 0; i < n; i++) c[i] = arguments[i]
+            r()(this, n)
+            for (var a = arguments.length, i = new Array(a), c = 0; c < a; c++) i[c] = arguments[c]
             return (
-              (e = t.call.apply(t, [this].concat(c))),
+              (e = t.call.apply(t, [this].concat(i))),
               f()(
-                l()(e),
+                d()(e),
                 '_collaborateEnabled',
                 e.context.featureSwitches.isTrue('responsive_web_gaggle_site_enabled'),
               ),
               f()(
-                l()(e),
+                d()(e),
                 '_leftNavRefreshConnectEnabled',
                 e.context.featureSwitches.isTrue('responsive_web_left_nav_refresh_connect_enabled'),
               ),
               f()(
-                l()(e),
+                d()(e),
                 '_leftNavRefreshTopicsEnabled',
                 e.context.featureSwitches.isTrue('responsive_web_left_nav_refresh_topics_enabled'),
               ),
               f()(
-                l()(e),
+                d()(e),
                 '_momentMakerEnabled',
                 e.context.featureSwitches.isTrue('responsive_web_moment_maker_enabled'),
               ),
               f()(
-                l()(e),
+                d()(e),
                 '_newslettersEnabled',
                 e.context.featureSwitches.isTrue('responsive_web_newsletters_menu_enabled'),
               ),
               f()(
-                l()(e),
+                d()(e),
                 '_twitterForProfessionalsEnabled',
                 e.context.featureSwitches.isTrue('responsive_web_edit_professional_profile_enabled'),
               ),
               f()(
-                l()(e),
+                d()(e),
                 '_birdwatchEnabled',
                 e.context.featureSwitches.isTrue('responsive_web_birdwatch_history_enabled'),
               ),
-              f()(l()(e), '_renderProfileItem', function (t) {
+              f()(d()(e), '_renderProfileItem', function (t) {
                 return t
-                  ? v.a.createElement(B, { icon: oe.a, label: it, link: '/'.concat(t), onClick: e._handleProfileClick })
+                  ? v.a.createElement(P, { icon: ae.a, label: Ue, link: '/'.concat(t), onClick: e._handleProfileClick })
                   : null
               }),
-              f()(l()(e), '_renderTopicsItem', function (t) {
+              f()(d()(e), '_renderTopicsItem', function (t) {
                 return t
-                  ? v.a.createElement(B, {
+                  ? v.a.createElement(P, {
                       icon: le.a,
-                      label: lt,
+                      label: Ge,
                       link: '/'.concat(t, '/topics'),
                       onClick: e._handleTopicsClick,
                     })
                   : null
               }),
-              f()(l()(e), '_renderConnectItem', function () {
-                return v.a.createElement(B, {
-                  icon: se.a,
-                  label: Ge,
+              f()(d()(e), '_renderConnectItem', function () {
+                return v.a.createElement(P, {
+                  icon: ie.a,
+                  label: Be,
                   link: '/i/connect_people',
                   onClick: e._handleConnectClick,
                 })
               }),
-              f()(l()(e), '_renderCollaborateItem', function () {
+              f()(d()(e), '_renderCollaborateItem', function () {
                 return e._collaborateEnabled
-                  ? v.a.createElement(B, {
-                      icon: ue.a,
-                      label: Je,
+                  ? v.a.createElement(P, {
+                      icon: re.a,
+                      label: Fe,
                       link: {
                         external: !0,
                         pathname: '/i/collaborate/home',
@@ -917,77 +634,77 @@
                     })
                   : null
               }),
-              f()(l()(e), '_renderListsItem', function (t) {
+              f()(d()(e), '_renderListsItem', function (t) {
                 return t
-                  ? v.a.createElement(B, {
-                      icon: de.a,
-                      label: st,
+                  ? v.a.createElement(P, {
+                      icon: ce.a,
+                      label: Ye,
                       link: '/'.concat(t, '/lists'),
                       onClick: e._handleListsClick,
                     })
                   : null
               }),
-              f()(l()(e), '_renderCommunitiesItem', function (t) {
+              f()(d()(e), '_renderCommunitiesItem', function (t) {
                 return t
-                  ? v.a.createElement(B, {
-                      icon: he.a,
-                      label: ut,
+                  ? v.a.createElement(P, {
+                      icon: oe.a,
+                      label: Qe,
                       link: '/'.concat(t, '/communities'),
                       onClick: e._handleCommunitiesClick,
                     })
                   : null
               }),
-              f()(l()(e), '_renderTopArticlesItem', function () {
-                return v.a.createElement(B, {
-                  icon: me.a,
-                  label: dt,
+              f()(d()(e), '_renderTopArticlesItem', function () {
+                return v.a.createElement(P, {
+                  icon: se.a,
+                  label: Xe,
                   link: '/i/articles',
                   onClick: e._handleTopArticlesClick,
                 })
               }),
-              f()(l()(e), '_renderBookmarksItem', function () {
-                return v.a.createElement(B, {
-                  icon: be.a,
-                  label: Ue,
+              f()(d()(e), '_renderBookmarksItem', function () {
+                return v.a.createElement(P, {
+                  icon: de.a,
+                  label: Te,
                   link: '/i/bookmarks',
                   onClick: e._handleBookmarksClick,
                 })
               }),
-              f()(l()(e), '_renderMomentsItem', function (t) {
-                var r = e._momentMakerEnabled ? '/i/moment_maker' : t ? '/'.concat(t, '/moments') : void 0
-                return r
-                  ? v.a.createElement(B, { icon: pe.a, label: nt, link: r, onClick: e._handleMomentsClick })
+              f()(d()(e), '_renderMomentsItem', function (t) {
+                var n = e._momentMakerEnabled ? '/i/moment_maker' : t ? '/'.concat(t, '/moments') : void 0
+                return n
+                  ? v.a.createElement(P, { icon: me.a, label: Ve, link: n, onClick: e._handleMomentsClick })
                   : null
               }),
-              f()(l()(e), '_renderTwitterBlueItem', function () {
+              f()(d()(e), '_renderTwitterBlueItem', function () {
                 var t = e.context.userClaims.isTwitterBlueSubscriber()
                 if (e.context.featureSwitches.isTrue('subscriptions_sign_up_enabled') || t) {
-                  var r = t ? '/settings/twitter_blue' : '/i/twitter_blue_sign_up'
-                  return v.a.createElement(B, {
-                    icon: fe.a,
-                    iconColor: R.a.theme.colors.brandColor,
-                    label: at,
-                    link: r,
+                  var n = t ? '/settings/twitter_blue' : '/i/twitter_blue_sign_up'
+                  return v.a.createElement(P, {
+                    icon: ue.a,
+                    iconColor: j.a.theme.colors.brandColor,
+                    label: Ke,
+                    link: n,
                     onClick: e._handleTwitterBlueClick,
                   })
                 }
                 return null
               }),
-              f()(l()(e), '_renderNewslettersItem', function () {
+              f()(d()(e), '_renderNewslettersItem', function () {
                 return e._newslettersEnabled
-                  ? v.a.createElement(B, {
-                      icon: _e.a,
-                      label: ct,
+                  ? v.a.createElement(P, {
+                      icon: he.a,
+                      label: qe,
                       link: '/i/newsletters',
                       onClick: e._handleNewslettersClick,
                     })
                   : null
               }),
-              f()(l()(e), '_renderTwitterForProfessionalsItem', function () {
+              f()(d()(e), '_renderTwitterForProfessionalsItem', function () {
                 return e._twitterForProfessionalsEnabled
-                  ? v.a.createElement(B, {
-                      icon: we,
-                      label: mt,
+                  ? v.a.createElement(P, {
+                      icon: be,
+                      label: Je,
                       link: {
                         pathname: '/i/flow/convert_to_professional',
                         state: { input: { requested_variant: 'navdrawer' } },
@@ -997,166 +714,166 @@
                     })
                   : null
               }),
-              f()(l()(e), '_renderBirdwatchItem', function () {
+              f()(d()(e), '_renderBirdwatchItem', function () {
                 return e._birdwatchEnabled
-                  ? v.a.createElement(B, {
-                      icon: ge.a,
-                      label: qe,
+                  ? v.a.createElement(P, {
+                      icon: fe.a,
+                      label: Le,
                       link: '/i/birdwatch',
                       onClick: e._handleBirdwatchClick,
                     })
                   : null
               }),
-              f()(l()(e), '_renderFollowerCountsItem', function () {
+              f()(d()(e), '_renderFollowerCountsItem', function () {
                 var t = e.props,
-                  r = t.acceptedFollowerCount,
-                  n = t.pendingFollowerCount
-                return n || r
-                  ? v.a.createElement(B, {
-                      badgeCount: n,
-                      icon: Ee,
-                      label: Xe,
+                  n = t.acceptedFollowerCount,
+                  a = t.pendingFollowerCount
+                return a || n
+                  ? v.a.createElement(P, {
+                      badgeCount: a,
+                      icon: ve,
+                      label: He,
                       link: '/follower_requests',
                       onClick: e._handleFollowerRequestsClick,
                     })
                   : null
               }),
-              f()(l()(e), '_renderTwitterAdsItem', function () {
-                return v.a.createElement(B, {
-                  icon: Pe.a,
-                  label: ht,
+              f()(d()(e), '_renderTwitterAdsItem', function () {
+                return v.a.createElement(P, {
+                  icon: ke.a,
+                  label: Ze,
                   link: 'https://ads.twitter.com/?ref=gl-tw-tw-twitter-ads-rweb',
                   onClick: e._handleTwitterAdsClick,
                 })
               }),
-              f()(l()(e), '_renderAnalyticsItem', function () {
-                return v.a.createElement(B, {
-                  icon: Ie.a,
-                  label: We,
+              f()(d()(e), '_renderAnalyticsItem', function () {
+                return v.a.createElement(P, {
+                  icon: we.a,
+                  label: ze,
                   link: 'https://analytics.twitter.com/',
                   onClick: e._handleAnalyticsClick,
                 })
               }),
-              f()(l()(e), '_renderMediaStudioItem', function () {
+              f()(d()(e), '_renderMediaStudioItem', function () {
                 return e.props.isMediaStudioLinkVisible
-                  ? v.a.createElement(B, {
-                      icon: Se.a,
-                      label: rt,
+                  ? v.a.createElement(P, {
+                      icon: Ce.a,
+                      label: Re,
                       link: 'https://studio.twitter.com/?ref=dotcom',
                       onClick: e._handleMediaStudioClick,
                     })
                   : null
               }),
-              f()(l()(e), '_renderSettingsItem', function () {
-                return v.a.createElement(B, {
-                  icon: Me.a,
-                  label: ot,
+              f()(d()(e), '_renderSettingsItem', function () {
+                return v.a.createElement(P, {
+                  icon: ge.a,
+                  label: We,
                   link: '/settings',
                   onClick: e._handleSettingsClick,
-                  testID: te.a.settings,
+                  testID: Z.a.settings,
                 })
               }),
-              f()(l()(e), '_renderHelpCenterItem', function () {
-                return v.a.createElement(B, {
-                  icon: De.a,
-                  label: Ye,
+              f()(d()(e), '_renderHelpCenterItem', function () {
+                return v.a.createElement(P, {
+                  icon: Ie.a,
+                  label: Oe,
                   link: 'https://support.twitter.com/',
                   onClick: e._handleHelpClick,
-                  testID: te.a.help,
+                  testID: Z.a.help,
                 })
               }),
-              f()(l()(e), '_renderDisplayItem', function () {
-                return v.a.createElement(B, { icon: Q, label: Qe, link: '/i/display', onClick: e._handleDisplayClick })
+              f()(d()(e), '_renderDisplayItem', function () {
+                return v.a.createElement(P, { icon: Y, label: Pe, link: '/i/display', onClick: e._handleDisplayClick })
               }),
-              f()(l()(e), '_renderKeyboardShortcuts', function () {
-                return re.b.isDesktopOS()
-                  ? v.a.createElement(B, {
-                      icon: xe.a,
-                      label: $e,
+              f()(d()(e), '_renderKeyboardShortcuts', function () {
+                return J.b.isDesktopOS()
+                  ? v.a.createElement(P, {
+                      icon: ye.a,
+                      label: De,
                       link: '/i/keyboard_shortcuts',
                       onClick: e._handleMenuItemClick('keyboard_shortcuts_overflow_item'),
                     })
                   : null
               }),
-              f()(l()(e), '_renderLabsItem', function () {
+              f()(d()(e), '_renderLabsItem', function () {
                 return null
               }),
-              f()(l()(e), '_renderLogoutItem', function (t) {
+              f()(d()(e), '_renderLogoutItem', function (t) {
                 return t
-                  ? v.a.createElement(B, {
-                      label: Object(F.a)().hasMultiAccountCookie ? tt({ screenName: t }) : et,
+                  ? v.a.createElement(P, {
+                      label: Object(D.a)().hasMultiAccountCookie ? je({ screenName: t }) : Ne,
                       link: '/logout',
                       onClick: e._handleLogoutScribingClick,
-                      testID: te.a.logout,
+                      testID: Z.a.logout,
                     })
                   : null
               }),
-              f()(l()(e), '_renderDataSaverItem', function () {
+              f()(d()(e), '_renderDataSaverItem', function () {
                 var t = e.props.settings,
-                  r = t.dataSaverMode ? Te : Re
-                return v.a.createElement(B, {
-                  icon: r,
-                  label: Ze,
+                  n = t.dataSaverMode ? Me : xe
+                return v.a.createElement(P, {
+                  icon: n,
+                  label: Ae,
                   link: '/settings/data',
                   onClick: e._handleDataSaverClick,
-                  rightControl: v.a.createElement(ce.a, {
-                    accessibilityLabel: Ze,
+                  rightControl: v.a.createElement(te.a, {
+                    accessibilityLabel: Ae,
                     onValueChange: e._handleDataSaverChanged,
-                    style: M.a.itemAccessory,
+                    style: L.a.itemAccessory,
                     value: t.dataSaverMode,
                   }),
                 })
               }),
-              f()(l()(e), '_handleDataSaverChanged', function (t) {
-                var r = e.props,
-                  n = r.analytics,
-                  a = r.createLocalApiErrorHandler,
-                  c = r.updateDataSaverMode
-                n.scribe({ element: 'dataSaverMode', action: t ? 'on' : 'off' }),
-                  c({ enabled: t }).catch(a(Ke(Ke({}, Object(P.a)()), {}, { showToast: !0 })))
+              f()(d()(e), '_handleDataSaverChanged', function (t) {
+                var n = e.props,
+                  a = n.analytics,
+                  i = n.createLocalApiErrorHandler,
+                  r = n.updateDataSaverMode
+                a.scribe({ element: 'dataSaverMode', action: t ? 'on' : 'off' }),
+                  r({ enabled: t }).catch(i(l()(l()({}, Object(S.a)()), {}, { showToast: !0 })))
               }),
-              f()(l()(e), '_handleMenuItemClick', function (t) {
+              f()(d()(e), '_handleMenuItemClick', function (t) {
                 return function () {
-                  var r = e.props,
-                    n = r.analytics,
-                    a = r.onClose
-                  t && n.scribe({ section: 'overflow_menu', element: t, action: 'click' }), a && a()
+                  var n = e.props,
+                    a = n.analytics,
+                    l = n.onClose
+                  t && a.scribe({ section: 'overflow_menu', element: t, action: 'click' }), l && l()
                 }
               }),
-              f()(l()(e), '_handleDataSaverClick', e._handleMenuItemClick('data_saver_overflow_item')),
-              f()(l()(e), '_handleProfileClick', e._handleMenuItemClick('profile_overflow_item')),
-              f()(l()(e), '_handleTopicsClick', e._handleMenuItemClick('topics_overflow_item')),
-              f()(l()(e), '_handleConnectClick', e._handleMenuItemClick('connect_overflow_item')),
-              f()(l()(e), '_handleFollowerRequestsClick', e._handleMenuItemClick('follower_requests_overflow_item')),
-              f()(l()(e), '_handleListsClick', e._handleMenuItemClick('lists_overflow_item')),
-              f()(l()(e), '_handleCommunitiesClick', e._handleMenuItemClick('communities_overflow_item')),
-              f()(l()(e), '_handleTopArticlesClick', e._handleMenuItemClick('top_articles_overflow_item')),
-              f()(l()(e), '_handleBookmarksClick', e._handleMenuItemClick('bookmarks_overflow_item')),
-              f()(l()(e), '_handleMomentsClick', e._handleMenuItemClick('moments_overflow_item')),
-              f()(l()(e), '_handleTwitterBlueClick', e._handleMenuItemClick('twitter_blue_overflow_item')),
-              f()(l()(e), '_handleSettingsClick', e._handleMenuItemClick('settings_overflow_item')),
-              f()(l()(e), '_handleSimpleClick', e._handleMenuItemClick()),
-              f()(l()(e), '_handleHelpClick', e._handleMenuItemClick('help_overflow_item')),
-              f()(l()(e), '_handleDisplayClick', e._handleMenuItemClick('display_overflow_item')),
-              f()(l()(e), '_handleLogoutScribingClick', e._handleMenuItemClick('logout_overflow_item')),
-              f()(l()(e), '_handleTwitterAdsClick', e._handleMenuItemClick('twitter_ads_item')),
-              f()(l()(e), '_handleAnalyticsClick', e._handleMenuItemClick('analytics_item')),
-              f()(l()(e), '_handleMediaStudioClick', e._handleMenuItemClick('media_studio')),
-              f()(l()(e), '_handleNewslettersClick', e._handleMenuItemClick('newsletters')),
-              f()(l()(e), '_handleTwitterForProfessionalsClick', e._handleMenuItemClick('twitter_for_professionals')),
-              f()(l()(e), '_handleBirdwatchClick', e._handleMenuItemClick('birdwatch')),
+              f()(d()(e), '_handleDataSaverClick', e._handleMenuItemClick('data_saver_overflow_item')),
+              f()(d()(e), '_handleProfileClick', e._handleMenuItemClick('profile_overflow_item')),
+              f()(d()(e), '_handleTopicsClick', e._handleMenuItemClick('topics_overflow_item')),
+              f()(d()(e), '_handleConnectClick', e._handleMenuItemClick('connect_overflow_item')),
+              f()(d()(e), '_handleFollowerRequestsClick', e._handleMenuItemClick('follower_requests_overflow_item')),
+              f()(d()(e), '_handleListsClick', e._handleMenuItemClick('lists_overflow_item')),
+              f()(d()(e), '_handleCommunitiesClick', e._handleMenuItemClick('communities_overflow_item')),
+              f()(d()(e), '_handleTopArticlesClick', e._handleMenuItemClick('top_articles_overflow_item')),
+              f()(d()(e), '_handleBookmarksClick', e._handleMenuItemClick('bookmarks_overflow_item')),
+              f()(d()(e), '_handleMomentsClick', e._handleMenuItemClick('moments_overflow_item')),
+              f()(d()(e), '_handleTwitterBlueClick', e._handleMenuItemClick('twitter_blue_overflow_item')),
+              f()(d()(e), '_handleSettingsClick', e._handleMenuItemClick('settings_overflow_item')),
+              f()(d()(e), '_handleSimpleClick', e._handleMenuItemClick()),
+              f()(d()(e), '_handleHelpClick', e._handleMenuItemClick('help_overflow_item')),
+              f()(d()(e), '_handleDisplayClick', e._handleMenuItemClick('display_overflow_item')),
+              f()(d()(e), '_handleLogoutScribingClick', e._handleMenuItemClick('logout_overflow_item')),
+              f()(d()(e), '_handleTwitterAdsClick', e._handleMenuItemClick('twitter_ads_item')),
+              f()(d()(e), '_handleAnalyticsClick', e._handleMenuItemClick('analytics_item')),
+              f()(d()(e), '_handleMediaStudioClick', e._handleMenuItemClick('media_studio')),
+              f()(d()(e), '_handleNewslettersClick', e._handleMenuItemClick('newsletters')),
+              f()(d()(e), '_handleTwitterForProfessionalsClick', e._handleMenuItemClick('twitter_for_professionals')),
+              f()(d()(e), '_handleBirdwatchClick', e._handleMenuItemClick('birdwatch')),
               e
             )
           }
           return (
-            i()(r, [
+            o()(n, [
               {
                 key: 'UNSAFE_componentWillMount',
                 value: function () {
                   var e = this.props,
                     t = e.fetchPendingFollowersIfNeeded,
-                    r = e.loggedInUser
-                  r && r.protected && t()
+                    n = e.loggedInUser
+                  n && n.protected && t()
                 },
               },
               {
@@ -1164,32 +881,32 @@
                 value: function () {
                   var e = this.props,
                     t = e.communitiesActions,
-                    r = e.hasCommunityMemberships,
-                    n = e.loggedInUser,
-                    a = e.withMoreSideNavOverflow,
-                    c = n && n.screen_name,
-                    i = this.context.userClaims.isTrueAndEnabled('subscriptions_feature_1007'),
-                    o = Object(A.e)({
+                    n = e.hasCommunityMemberships,
+                    a = e.loggedInUser,
+                    l = e.withMoreSideNavOverflow,
+                    i = a && a.screen_name,
+                    r = this.context.userClaims.isTrueAndEnabled('subscriptions_feature_1007'),
+                    c = Object(N.e)({
                       featureSwitches: this.context.featureSwitches,
                       communitiesActions: t,
-                      hasCommunityMemberships: r,
+                      hasCommunityMemberships: n,
                     })
                   return v.a.createElement(
                     v.a.Fragment,
                     null,
-                    Object(ee.a)()
+                    Object(X.a)()
                       ? v.a.createElement(
                           v.a.Fragment,
                           null,
                           this._renderFollowerCountsItem(),
-                          a || this._leftNavRefreshConnectEnabled || this._leftNavRefreshTopicsEnabled
+                          l || this._leftNavRefreshConnectEnabled || this._leftNavRefreshTopicsEnabled
                             ? this._renderBookmarksItem()
                             : null,
-                          o && i ? this._renderCommunitiesItem(c) : null,
-                          o || i || a ? this._renderListsItem(c) : null,
-                          this._leftNavRefreshConnectEnabled && a ? this._renderConnectItem() : null,
-                          this._leftNavRefreshTopicsEnabled && !a ? null : this._renderTopicsItem(c),
-                          this._renderMomentsItem(c),
+                          c && r ? this._renderCommunitiesItem(i) : null,
+                          c || r || l ? this._renderListsItem(i) : null,
+                          this._leftNavRefreshConnectEnabled && l ? this._renderConnectItem() : null,
+                          this._leftNavRefreshTopicsEnabled && !l ? null : this._renderTopicsItem(i),
+                          this._renderMomentsItem(i),
                           this._renderCollaborateItem(),
                           this._renderTwitterBlueItem(),
                           this._renderNewslettersItem(),
@@ -1198,7 +915,7 @@
                           this._renderAnalyticsItem(),
                           this._renderMediaStudioItem(),
                           this._renderBirdwatchItem(),
-                          v.a.createElement(ie.a, { spacing: 'space2' }),
+                          v.a.createElement(ne.a, { spacing: 'space2' }),
                           this._renderSettingsItem(),
                           this._renderHelpCenterItem(),
                           this._renderDisplayItem(),
@@ -1207,98 +924,74 @@
                       : v.a.createElement(
                           v.a.Fragment,
                           null,
-                          this._renderProfileItem(c),
-                          i ? this._renderTopArticlesItem() : null,
-                          this._renderListsItem(c),
-                          this._renderTopicsItem(c),
+                          this._renderProfileItem(i),
+                          r ? this._renderTopArticlesItem() : null,
+                          this._renderListsItem(i),
+                          this._renderTopicsItem(i),
                           this._renderBookmarksItem(),
-                          this._renderMomentsItem(c),
+                          this._renderMomentsItem(i),
                           this._renderCollaborateItem(),
                           this._renderTwitterBlueItem(),
                           this._renderNewslettersItem(),
                           this._renderFollowerCountsItem(),
-                          v.a.createElement(ie.a, { spacing: 'space2' }),
+                          v.a.createElement(ne.a, { spacing: 'space2' }),
                           this._renderTwitterForProfessionalsItem(),
                           this._renderTwitterAdsItem(),
                           this._renderAnalyticsItem(),
                           this._renderMediaStudioItem(),
                           this._renderBirdwatchItem(),
-                          v.a.createElement(ie.a, { spacing: 'space2' }),
+                          v.a.createElement(ne.a, { spacing: 'space2' }),
                           this._renderSettingsItem(),
                           this._renderHelpCenterItem(),
                           this._renderLabsItem(),
-                          v.a.createElement(ie.a, { spacing: 'space2' }),
+                          v.a.createElement(ne.a, { spacing: 'space2' }),
                           this._renderDataSaverItem(),
                           this._renderDisplayItem(),
                           this._renderKeyboardShortcuts(),
-                          v.a.createElement(ie.a, { spacing: 'space2' }),
-                          this._renderLogoutItem(c),
+                          v.a.createElement(ne.a, { spacing: 'space2' }),
+                          this._renderLogoutItem(i),
                         ),
                   )
                 },
               },
             ]),
-            r
+            n
           )
         })(v.a.Component)
-      f()(bt, 'contextType', ae.a), f()(bt, 'defaultProps', { onClose: $.a })
-      t.a = Object(ne.a)(E(bt))
+      f()($e, 'contextType', ee.a), f()($e, 'defaultProps', { onClose: Q.a })
+      t.a = Object($.a)(M($e))
     },
-    nV1z: function (e, t, r) {
+    nV1z: function (e, t, n) {
       'use strict'
-      r('+KXO'), r('1t7P'), r('LW0h'), r('daRM'), r('jwue'), r('+oxZ'), r('FtHn')
-      var n = r('KEM+'),
-        a = r.n(n),
-        c = r('ERkP'),
-        i = r.n(c),
-        o = r('Lsrn'),
-        l = r('k/Ka')
-      function s(e, t) {
-        var r = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            r.push.apply(r, n)
+      var a = n('yiKp'),
+        l = n.n(a),
+        i = n('ERkP'),
+        r = n.n(i),
+        c = n('Lsrn'),
+        o = n('k/Ka'),
+        s = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(o.a)(
+            'svg',
+            l()(
+              l()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [c.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            r.a.createElement(
+              'g',
+              null,
+              r.a.createElement('path', {
+                d: 'M19.75 2H4.25C3.01 2 2 3.01 2 4.25v15.5C2 20.99 3.01 22 4.25 22h15.5c1.24 0 2.25-1.01 2.25-2.25V4.25C22 3.01 20.99 2 19.75 2zM5.25 20.033h-1.5v-2.5h1.5v2.5zm0-4.55h-1.5v-2.5h1.5v2.5zm0-4.55h-1.5v-2.5h1.5v2.5zm0-4.55h-1.5v-2.5h1.5v2.5zM17 20.5H7v-7.75h10v7.75zm0-9.25H7V3.5h10v7.75zm3.25 8.783h-1.5v-2.5h1.5v2.5zm0-4.55h-1.5v-2.5h1.5v2.5zm0-4.55h-1.5v-2.5h1.5v2.5zm0-4.55h-1.5v-2.5h1.5v2.5z',
+              }),
+            ),
+          )
         }
-        return r
-      }
-      function u(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? s(Object(r), !0).forEach(function (t) {
-                a()(e, t, r[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : s(Object(r)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-              })
-        }
-        return e
-      }
-      var d = function () {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-        return Object(l.a)(
-          'svg',
-          u(
-            u({}, e),
-            {},
-            { accessibilityHidden: void 0 === e.accessibilityLabel, style: [o.a.root, e.style], viewBox: '0 0 24 24' },
-          ),
-          i.a.createElement(
-            'g',
-            null,
-            i.a.createElement('path', {
-              d: 'M19.75 2H4.25C3.01 2 2 3.01 2 4.25v15.5C2 20.99 3.01 22 4.25 22h15.5c1.24 0 2.25-1.01 2.25-2.25V4.25C22 3.01 20.99 2 19.75 2zM5.25 20.033h-1.5v-2.5h1.5v2.5zm0-4.55h-1.5v-2.5h1.5v2.5zm0-4.55h-1.5v-2.5h1.5v2.5zm0-4.55h-1.5v-2.5h1.5v2.5zM17 20.5H7v-7.75h10v7.75zm0-9.25H7V3.5h10v7.75zm3.25 8.783h-1.5v-2.5h1.5v2.5zm0-4.55h-1.5v-2.5h1.5v2.5zm0-4.55h-1.5v-2.5h1.5v2.5zm0-4.55h-1.5v-2.5h1.5v2.5z',
-            }),
-          ),
-        )
-      }
-      ;(d.metadata = { width: 24, height: 24 }), (t.a = d)
+      ;(s.metadata = { width: 24, height: 24 }), (t.a = s)
     },
   },
 ])

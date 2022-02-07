@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [168],
+  [169],
   {
     '0kTQ': function (e, t, n) {
       'use strict'
@@ -7,137 +7,88 @@
         return u
       })
       var a,
-        r = n('KEM+'),
-        i = n.n(r),
+        i = n('KEM+'),
+        r = n.n(i),
         o = n('k49u'),
-        c = n('LVU8'),
-        l = n('3XMw'),
-        s = n.n(l).a.b20a3893,
+        l = n('LVU8'),
+        c = n('3XMw'),
+        s = n.n(c).a.b20a3893,
         u =
           ((a = {}),
-          i()(a, o.a.AppInReadOnlyMode, { customAction: c.b }),
-          i()(a, o.a.TargetUserNotFound, { toast: { text: s } }),
-          i()(a, 'showToast', !0),
+          r()(a, o.a.AppInReadOnlyMode, { customAction: l.b }),
+          r()(a, o.a.TargetUserNotFound, { toast: { text: s } }),
+          r()(a, 'showToast', !0),
           a)
     },
     Ddqr: function (e, t, n) {
       'use strict'
-      n('OZaJ'), n('+KXO'), n('1t7P'), n('LW0h'), n('daRM'), n('jwue'), n('+oxZ'), n('FtHn')
-      var a = n('VrFO'),
-        r = n.n(a),
-        i = n('Y9Ll'),
-        o = n.n(i),
-        c = n('1Pcy'),
-        l = n.n(c),
-        s = n('5Yy7'),
+      var a = n('yiKp'),
+        i = n.n(a),
+        r = n('VrFO'),
+        o = n.n(r),
+        l = n('Y9Ll'),
+        c = n.n(l),
+        s = n('1Pcy'),
         u = n.n(s),
-        f = n('N+ot'),
-        d = n.n(f),
-        m = n('AuHH'),
-        h = n.n(m),
+        d = n('5Yy7'),
+        m = n.n(d),
+        f = n('2VqO'),
+        h = n.n(f),
         p = n('KEM+'),
         b = n.n(p),
-        y = (n('uFXj'), n('ERkP')),
-        g = n.n(y),
-        w = n('38/B'),
-        _ = n('xKuM'),
-        C = n('/yvb'),
-        v = n('w9LO'),
-        E = n('3XMw'),
-        k = n.n(E),
-        O = n('hOZg'),
-        M = n('0FVZ'),
-        A = n('rHpw'),
-        P = n('k/Ka'),
-        S = n('shC7'),
-        D = n('MWbm')
-      function L(e, t) {
-        var n = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var a = Object.getOwnPropertySymbols(e)
-          t &&
-            (a = a.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            n.push.apply(n, a)
-        }
-        return n
-      }
-      function T(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? L(Object(n), !0).forEach(function (t) {
-                b()(e, t, n[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
-            : L(Object(n)).forEach(function (t) {
-                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
-              })
-        }
-        return e
-      }
-      function x(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var n,
-            a = h()(e)
-          if (t) {
-            var r = h()(this).constructor
-            n = Reflect.construct(a, arguments, r)
-          } else n = a.apply(this, arguments)
-          return d()(this, n)
-        }
-      }
-      var j = k.a.af8fa2ad,
-        R = g.a.createElement(O.a, null),
-        U = (function (e) {
-          u()(n, e)
-          var t = x(n)
+        _ = (n('uFXj'), n('ERkP')),
+        g = n.n(_),
+        C = n('38/B'),
+        w = n('xKuM'),
+        y = n('/yvb'),
+        E = n('w9LO'),
+        k = n('3XMw'),
+        v = n.n(k),
+        M = n('hOZg'),
+        A = n('0FVZ'),
+        S = n('rHpw'),
+        O = n('k/Ka'),
+        T = n('shC7'),
+        L = n('MWbm'),
+        D = v.a.af8fa2ad,
+        P = g.a.createElement(M.a, null),
+        x = (function (e) {
+          m()(n, e)
+          var t = h()(n)
           function n(e) {
             var a
             return (
-              r()(this, n),
+              o()(this, n),
               (a = t.call(this)),
-              b()(l()(a), '_isMounted', !0),
-              b()(l()(a), '_setAnimationNode', function (e) {
+              b()(u()(a), '_isMounted', !0),
+              b()(u()(a), '_setAnimationNode', function (e) {
                 a._animationNode = e
               }),
-              b()(l()(a), '_handleTransitionEnd', function (e) {
+              b()(u()(a), '_handleTransitionEnd', function (e) {
                 !1 === a.state.isVisible &&
                   e.target instanceof window.HTMLElement &&
                   e.target === a._animationNode &&
                   a.props.onDismissed()
               }),
-              b()(l()(a), '_handleMaskClick', function () {
+              b()(u()(a), '_handleMaskClick', function () {
                 a._handleDismiss()
               }),
-              b()(l()(a), '_handleEsc', function (e) {
+              b()(u()(a), '_handleEsc', function (e) {
                 var t = e.altKey,
                   n = e.ctrlKey,
-                  r = e.key,
-                  i = e.metaKey
-                !(t || n || i) && 'Escape' === r && a._handleDismiss()
+                  i = e.key,
+                  r = e.metaKey
+                !(t || n || r) && 'Escape' === i && a._handleDismiss()
               }),
-              b()(l()(a), '_handleDismiss', function () {
-                a.setState({ isVisible: !1 }), w.a.reducedMotionEnabled && a.props.onDismissed()
+              b()(u()(a), '_handleDismiss', function () {
+                a.setState({ isVisible: !1 }), C.a.reducedMotionEnabled && a.props.onDismissed()
               }),
               (a.state = { isVisible: !1 }),
               a
             )
           }
           return (
-            o()(n, [
+            c()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -160,49 +111,48 @@
                     t = e.additionalControl,
                     n = e.align,
                     a = e.buttonType,
-                    r = e.children,
-                    i = e.style,
+                    i = e.children,
+                    r = e.style,
                     o = e.subtitle,
-                    c = e.title,
-                    l = this.state.isVisible,
-                    s = l
-                      ? N.visibleDrawer
-                      : ('left' === n) === S.a.getConstants().isRTL
-                      ? N.offscreenRightDrawer
-                      : N.offscreenLeftDrawer,
-                    u = l ? N.maskWithBg : N.maskTransparent,
-                    f = l ? N.animateOpen : N.animateClose,
-                    d = w.a.reducedMotionEnabled ? null : f
+                    l = e.title,
+                    c = this.state.isVisible,
+                    s = c
+                      ? I.visibleDrawer
+                      : ('left' === n) === T.a.getConstants().isRTL
+                      ? I.offscreenRightDrawer
+                      : I.offscreenLeftDrawer,
+                    u = c ? I.maskWithBg : I.maskTransparent,
+                    d = c ? I.animateOpen : I.animateClose,
+                    m = C.a.reducedMotionEnabled ? null : d
                   return g.a.createElement(
-                    M.a.Modal,
+                    A.a.Modal,
                     null,
                     g.a.createElement(
-                      v.a,
+                      E.a,
                       { withKeyboardNavigation: !0 },
                       g.a.createElement(
-                        D.a,
+                        L.a,
                         {
                           onClick: this._handleMaskClick,
                           onKeyUp: this._handleEsc,
-                          style: [N.mask, u, d, 'left' === n ? N.alignLeft : N.alignRight],
+                          style: [I.mask, u, m, 'left' === n ? I.alignLeft : I.alignRight],
                         },
-                        Object(P.a)('div', {
+                        Object(O.a)('div', {
                           accessibilityRole: 'dialog',
                           onTransitionEnd: this._handleTransitionEnd,
                           ref: this._setAnimationNode,
-                          onClick: I,
-                          style: [N.root, s, d, i],
+                          onClick: U,
+                          style: [I.root, s, m, r],
                           children: g.a.createElement(
                             g.a.Fragment,
                             null,
-                            g.a.createElement(_.a, {
+                            g.a.createElement(w.a, {
                               leftControl: 'left' === n ? t : 'right' === n ? this._renderCloseButton(a) : null,
                               rightControl: 'left' === n ? this._renderCloseButton(a) : 'right' === n ? t : null,
                               subtitle: o,
-                              title: c,
-                              withBottomBorder: !0,
+                              title: l,
                             }),
-                            g.a.createElement(D.a, { style: N.contentContainer }, r),
+                            g.a.createElement(L.a, { style: I.contentContainer }, i),
                           ),
                         }),
                       ),
@@ -213,9 +163,9 @@
               {
                 key: '_renderCloseButton',
                 value: function (e) {
-                  return g.a.createElement(C.a, {
-                    accessibilityLabel: j,
-                    icon: R,
+                  return g.a.createElement(y.a, {
+                    accessibilityLabel: D,
+                    icon: P,
                     onPress: this._handleMaskClick,
                     type: e,
                   })
@@ -225,14 +175,14 @@
             n
           )
         })(g.a.Component)
-      b()(U, 'defaultProps', { align: 'left', onDismissed: function () {} })
-      var I = function (e) {
+      b()(x, 'defaultProps', { align: 'left', onDismissed: function () {} })
+      var U = function (e) {
           e.stopPropagation()
         },
-        N = A.a.create(function (e) {
+        I = S.a.create(function (e) {
           return {
-            mask: T(
-              T({}, A.a.absoluteFillObject),
+            mask: i()(
+              i()({}, S.a.absoluteFillObject),
               {},
               { position: 'fixed', transitionProperty: 'background-color', transitionTimingFunction: 'ease' },
             ),
@@ -268,26 +218,26 @@
             },
           }
         })
-      t.a = U
+      t.a = x
     },
     'qtu+': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return c
+        return l
       })
       var a = n('4+NY'),
-        r = n('oEOe'),
-        i = n('5oBF'),
+        i = n('oEOe'),
+        r = n('5oBF'),
         o = {
           REQUEST: 'rweb/multiAccount/SWITCH_REQUEST',
           SUCCESS: 'rweb/multiAccount/SWITCH_SUCCESS',
           FAILURE: 'rweb/multiAccount/SWITCH_FAILURE',
         },
-        c = function (e) {
-          return function (t, n, c) {
-            var l = c.api,
-              s = Object(r.b)(t, { request: l.Auth.switch, params: e })
-            return t(Object(i.f)()).then(function () {
+        l = function (e) {
+          return function (t, n, l) {
+            var c = l.api,
+              s = Object(i.b)(t, { request: c.Auth.switch, params: e })
+            return t(Object(r.f)()).then(function () {
               return t(Object(a.b)()).then(function () {
                 return s({ actionTypes: o, context: 'SWITCH' }).then(function () {
                   window.location.assign('/home')
@@ -301,240 +251,216 @@
       'use strict'
       n.r(t),
         n.d(t, 'DashMenu', function () {
-          return $
+          return Q
         })
-      n('OZaJ')
       var a = n('VrFO'),
-        r = n.n(a),
-        i = n('Y9Ll'),
-        o = n.n(i),
-        c = n('1Pcy'),
-        l = n.n(c),
+        i = n.n(a),
+        r = n('Y9Ll'),
+        o = n.n(r),
+        l = n('1Pcy'),
+        c = n.n(l),
         s = n('5Yy7'),
         u = n.n(s),
-        f = n('N+ot'),
-        d = n.n(f),
-        m = n('AuHH'),
-        h = n.n(m),
-        p = n('KEM+'),
+        d = n('2VqO'),
+        m = n.n(d),
+        f = n('KEM+'),
+        h = n.n(f),
+        p = (n('2G9S'), n('ho0z'), n('z84I'), n('ERkP')),
         b = n.n(p),
-        y = (n('2G9S'), n('ho0z'), n('z84I'), n('ERkP')),
-        g = n.n(y),
-        w = n('H9MA'),
-        _ = n('qtu+'),
+        _ = n('H9MA'),
+        g = n('qtu+'),
         C = n('G6rE'),
-        v = n('rxPX'),
-        E = n('0KEI'),
-        k = n('auX9'),
-        O = Object(v.a)()
+        w = n('rxPX'),
+        y = n('0KEI'),
+        E = n('auX9'),
+        k = Object(w.a)()
           .propsFromState(function () {
-            return { loggedInUser: C.e.selectLoggedInUser, multiAccountUsers: k.k, showMultiAccountOverflowPip: k.i }
+            return { loggedInUser: C.e.selectLoggedInUser, multiAccountUsers: E.k, showMultiAccountOverflowPip: E.i }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(E.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(y.createLocalApiErrorHandlerWithContextFactory)(
                 'DASH_MENU_ACCOUNT_SWITCH',
               ),
-              fetchDataUsageSettingsIfNeeded: w.b,
-              switchAccount: _.a,
+              fetchDataUsageSettingsIfNeeded: _.b,
+              switchAccount: g.a,
             }
           })
           .withAnalytics({ page: 'dash' }),
-        M = n('VN5n'),
-        A = (n('JtPf'), n('7x/C'), n('87if'), n('lTEL'), n('kYxP'), n('zb92')),
-        P = Object(A.a)({
+        v = n('VN5n'),
+        M = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
+        A = Object(M.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(7), n.e(185)]).then(n.bind(null, 'sAnO'))
+            return Promise.all([n.e(0), n.e(20), n.e(186)]).then(n.bind(null, 'sAnO'))
           },
         }),
         S = n('3XMw'),
-        D = n.n(S),
-        L = n('0kTQ'),
-        T = n('Es6L'),
-        x = n('45lU'),
-        j = n('9qNn'),
-        R = n('MWbm'),
+        O = n.n(S),
+        T = n('0kTQ'),
+        L = n('Es6L'),
+        D = n('45lU'),
+        P = n('9qNn'),
+        x = n('MWbm'),
         U = n('jhWN'),
         I = n('/yvb'),
         N = n('Znyr'),
-        H = n('cm6r'),
-        F = n('jV+4'),
+        F = n('cm6r'),
+        H = n('jV+4'),
         W = n('wCd/'),
-        B = n('Ddqr'),
+        j = n('Ddqr'),
         V = n('v6aA'),
-        K = n('iY63'),
-        X = n('ACHU')
-      function Y(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var n,
-            a = h()(e)
-          if (t) {
-            var r = h()(this).constructor
-            n = Reflect.construct(a, arguments, r)
-          } else n = a.apply(this, arguments)
-          return d()(this, n)
-        }
-      }
-      var q = D.a.i5f7b6b8,
-        z = D.a.c5960556,
-        Z = D.a.da4691aa,
-        J = D.a.c7e55cce,
-        G = D.a.d86bbf0f,
-        Q = D.a.h6beb5fa,
-        $ = (function (e) {
+        R = n('iY63'),
+        K = n('ACHU'),
+        B = O.a.i5f7b6b8,
+        X = O.a.c5960556,
+        q = O.a.da4691aa,
+        Y = O.a.c7e55cce,
+        z = O.a.d86bbf0f,
+        G = O.a.h6beb5fa,
+        Q = (function (e) {
           u()(n, e)
-          var t = Y(n)
+          var t = m()(n)
           function n() {
             var e
-            r()(this, n)
-            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+            i()(this, n)
+            for (var a = arguments.length, r = new Array(a), o = 0; o < a; o++) r[o] = arguments[o]
             return (
-              (e = t.call.apply(t, [this].concat(i))),
-              b()(l()(e), '_renderMenuContent', function (t) {
+              (e = t.call.apply(t, [this].concat(r))),
+              h()(c()(e), '_renderMenuContent', function (t) {
                 var n = t.withPadding,
                   a = e.props,
-                  r = a.loggedInUser,
-                  i = a.multiAccountUsers,
+                  i = a.loggedInUser,
+                  r = a.multiAccountUsers,
                   o = a.onClose,
-                  c = a.showMultiAccountOverflowPip,
-                  l = a.withMoreSideNavOverflow
-                if (!r) return null
-                var s = r.followers_count,
-                  u = r.friends_count,
-                  f = r.name,
-                  d = r.profile_image_url_https,
-                  m = r.protected,
-                  h = r.screen_name,
-                  p = r.translator_type,
-                  b = r.verified
-                return Object(T.a)()
-                  ? g.a.createElement(M.a, { onClose: o, withMoreSideNavOverflow: l })
-                  : g.a.createElement(
-                      R.a,
-                      { style: [n && x.a.scrollableContentPadding, Object(T.a)() && x.a.menuContentWidth] },
-                      g.a.createElement(
-                        R.a,
-                        { style: x.a.header },
-                        g.a.createElement(
-                          R.a,
-                          { accessibilityHidden: !0, style: [x.a.item, x.a.itemAccount] },
-                          g.a.createElement(
-                            R.a,
-                            { style: x.a.avatarWrapper },
-                            g.a.createElement(U.a, {
+                  l = a.showMultiAccountOverflowPip,
+                  c = a.withMoreSideNavOverflow
+                if (!i) return null
+                var s = i.followers_count,
+                  u = i.friends_count,
+                  d = i.name,
+                  m = i.profile_image_url_https,
+                  f = i.protected,
+                  h = i.screen_name,
+                  p = i.translator_type,
+                  _ = i.verified
+                return Object(L.a)()
+                  ? b.a.createElement(v.a, { onClose: o, withMoreSideNavOverflow: c })
+                  : b.a.createElement(
+                      x.a,
+                      { style: [n && D.a.scrollableContentPadding, Object(L.a)() && D.a.menuContentWidth] },
+                      b.a.createElement(
+                        x.a,
+                        { style: D.a.header },
+                        b.a.createElement(
+                          x.a,
+                          { accessibilityHidden: !0, style: [D.a.item, D.a.itemAccount] },
+                          b.a.createElement(
+                            x.a,
+                            { style: D.a.avatarWrapper },
+                            b.a.createElement(U.a, {
                               onClick: e._handleProfileClick,
                               screenName: h,
                               size: 'xLarge',
-                              uri: d,
+                              uri: m,
                               withLink: !0,
                             }),
                           ),
                           e._renderMultiAccountUsers(),
-                          g.a.createElement(
-                            R.a,
+                          b.a.createElement(
+                            x.a,
                             null,
-                            g.a.createElement(I.a, {
-                              accessibilityLabel: Z,
-                              icon: 0 === i.length ? g.a.createElement(K.a, null) : g.a.createElement(X.a, null),
+                            b.a.createElement(I.a, {
+                              accessibilityLabel: q,
+                              icon: 0 === r.length ? b.a.createElement(R.a, null) : b.a.createElement(K.a, null),
                               link: '/account/switch',
                               onPress: e._handleSwitcherButton,
                               size: 'small',
-                              testID: j.a.switcher,
+                              testID: P.a.switcher,
                               type: 'primaryOutlined',
                             }),
-                            c
-                              ? g.a.createElement(N.a, { pip: !0, truncatedCountFormatter: Q, unreadCountLabel: G })
+                            l
+                              ? b.a.createElement(N.a, { pip: !0, truncatedCountFormatter: G, unreadCountLabel: z })
                               : null,
                           ),
                         ),
-                        g.a.createElement(
-                          R.a,
+                        b.a.createElement(
+                          x.a,
                           null,
-                          g.a.createElement(
-                            H.a,
+                          b.a.createElement(
+                            F.a,
                             {
-                              accessibilityLabel: q,
+                              accessibilityLabel: B,
                               interactiveStyles: null,
                               link: '/'.concat(h),
                               onClick: e._handleProfileClick,
-                              style: [x.a.item, x.a.userNames],
+                              style: [D.a.item, D.a.userNames],
                             },
-                            g.a.createElement(F.a, {
+                            b.a.createElement(H.a, {
                               badgeContext: 'account',
-                              isProtected: m,
-                              isVerified: b,
-                              name: f,
+                              isProtected: f,
+                              isVerified: _,
+                              name: d,
                               screenName: h,
                               translatorType: p,
                               withStackedLayout: !0,
                             }),
                           ),
                         ),
-                        Object(T.a)()
+                        Object(L.a)()
                           ? null
-                          : g.a.createElement(W.a, {
+                          : b.a.createElement(W.a, {
                               followersCount: s,
                               friendsCount: u,
                               screenName: h,
-                              style: [x.a.item, x.a.itemProfileStats],
+                              style: [D.a.item, D.a.itemProfileStats],
                             }),
                       ),
-                      g.a.createElement(M.a, { onClose: o }),
+                      b.a.createElement(v.a, { onClose: o }),
                     )
               }),
-              b()(l()(e), '_renderMultiAccountUsers', function () {
+              h()(c()(e), '_renderMultiAccountUsers', function () {
                 return e.props.multiAccountUsers.map(function (t) {
-                  return g.a.createElement(
-                    R.a,
+                  return b.a.createElement(
+                    x.a,
                     {
-                      accessibilityLabel: J({ screenname: t.screen_name }),
+                      accessibilityLabel: Y({ screenname: t.screen_name }),
                       accessibilityRole: 'button',
                       key: t.user_id,
                       onClick: e._handleMultiAccountSwitch(t.user_id, !!t.badgeCount, t.is_protected),
-                      style: x.a.multiAccountLink,
+                      style: D.a.multiAccountLink,
                     },
-                    g.a.createElement(U.a, { size: 'large', uri: t.avatar_image_url }),
+                    b.a.createElement(U.a, { size: 'large', uri: t.avatar_image_url }),
                     t.badgeCount
-                      ? g.a.createElement(N.a, { count: t.badgeCount, truncatedCountFormatter: Q, unreadCountLabel: G })
+                      ? b.a.createElement(N.a, { count: t.badgeCount, truncatedCountFormatter: G, unreadCountLabel: z })
                       : null,
                   )
                 })
               }),
-              b()(l()(e), '_handleMenuItemClick', function (t) {
+              h()(c()(e), '_handleMenuItemClick', function (t) {
                 return function () {
                   var n = e.props,
                     a = n.analytics,
-                    r = n.onClose
-                  t && a.scribe({ section: 'overflow_menu', element: t, action: 'click' }), r && r()
+                    i = n.onClose
+                  t && a.scribe({ section: 'overflow_menu', element: t, action: 'click' }), i && i()
                 }
               }),
-              b()(l()(e), '_handleProfileClick', e._handleMenuItemClick('profile_overflow_item')),
-              b()(l()(e), '_handleSimpleClick', e._handleMenuItemClick()),
-              b()(l()(e), '_handleMultiAccountSwitch', function (t, n, a) {
+              h()(c()(e), '_handleProfileClick', e._handleMenuItemClick('profile_overflow_item')),
+              h()(c()(e), '_handleSimpleClick', e._handleMenuItemClick()),
+              h()(c()(e), '_handleMultiAccountSwitch', function (t, n, a) {
                 return function () {
-                  var r = e.props,
-                    i = r.analytics,
-                    o = r.createLocalApiErrorHandler,
-                    c = r.switchAccount
-                  i.scribe({
+                  var i = e.props,
+                    r = i.analytics,
+                    o = i.createLocalApiErrorHandler,
+                    l = i.switchAccount
+                  r.scribe({
                     section: a ? 'switch_to_protected_account' : 'switch_account',
                     element: n ? 'account_bubble_badged' : 'account_bubble',
                     action: 'click',
                   }),
-                    c({ user_id: t }).catch(o(L.a))
+                    l({ user_id: t }).catch(o(T.a))
                 }
               }),
-              b()(l()(e), '_handleSwitcherButton', function () {
+              h()(c()(e), '_handleSwitcherButton', function () {
                 var t = e.props,
                   n = t.analytics,
                   a = t.onClose
@@ -559,9 +485,9 @@
                   var e = this.props,
                     t = e.alignMenu,
                     n = e.onClose
-                  return Object(T.a)()
-                    ? g.a.createElement(
-                        P,
+                  return Object(L.a)()
+                    ? b.a.createElement(
+                        A,
                         {
                           animateInDuration: 'long',
                           isFixed: !0,
@@ -571,9 +497,9 @@
                         },
                         this._renderMenuContent({ withPadding: !1 }),
                       )
-                    : g.a.createElement(
-                        B.a,
-                        { align: t, buttonType: 'primaryText', onDismissed: n, style: x.a.drawer, title: z },
+                    : b.a.createElement(
+                        j.a,
+                        { align: t, buttonType: 'primaryText', onDismissed: n, style: D.a.drawer, title: X },
                         this._renderMenuContent({ withPadding: !0 }),
                       )
                 },
@@ -581,10 +507,10 @@
             ]),
             n
           )
-        })(g.a.Component)
-      b()($, 'contextType', V.a)
-      var ee = O($)
-      t.default = ee
+        })(b.a.Component)
+      h()(Q, 'contextType', V.a)
+      var J = k(Q)
+      t.default = J
     },
   },
 ])

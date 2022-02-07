@@ -1,159 +1,135 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [227],
+  [229],
   {
     RH6X: function (e, t, n) {
       'use strict'
-      n('OZaJ')
       var r = n('VrFO'),
         o = n.n(r),
         a = n('Y9Ll'),
         i = n.n(a),
-        c = n('1Pcy'),
-        l = n.n(c),
+        l = n('1Pcy'),
+        c = n.n(l),
         s = n('5Yy7'),
         u = n.n(s),
-        d = n('N+ot'),
+        d = n('2VqO'),
         f = n.n(d),
-        p = n('AuHH'),
+        p = n('KEM+'),
         h = n.n(p),
-        g = n('KEM+'),
+        g = (n('2G9S'), n('849X'), n('TJCb'), n('ERkP')),
         y = n.n(g),
-        v = (n('2G9S'), n('ERkP')),
-        m = n.n(v),
-        C = n('oEoC'),
-        S = n('2dXj'),
-        E = n('4bHO'),
-        b = n('dzqK'),
-        x = n('GZwR'),
-        k = n('zpdM')
-      function T(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
+        v = n('oEoC'),
+        C = n('2dXj'),
+        m = n('4bHO'),
+        S = n('dzqK'),
+        E = n('GZwR'),
+        b = n('zpdM'),
+        x = (function (e) {
+          u()(n, e)
+          var t = f()(n)
+          function n() {
+            var e
+            o()(this, n)
+            for (var r = arguments.length, a = new Array(r), i = 0; i < r; i++) a[i] = arguments[i]
+            return (
+              (e = t.call.apply(t, [this].concat(a))),
+              h()(c()(e), 'state', { queryContext: void 0, canShowTypeahead: !1 }),
+              h()(c()(e), '_genericWrapperRef', y.a.createRef()),
+              h()(c()(e), 'render', function () {
+                var t = e.props,
+                  n = t.children,
+                  r = t.contextText,
+                  o = t.isInline,
+                  a = t.isInlineReply,
+                  i = t.onTypeaheadStateChange,
+                  l = t.source,
+                  c = e.state,
+                  s = c.canShowTypeahead,
+                  u = c.queryContext,
+                  d = s && u ? { word: u.word, resultType: u.resultType } : void 0
+                return y.a.createElement(
+                  C.a,
+                  {
+                    contextText: r,
+                    isInline: o,
+                    isInlineReply: a,
+                    onDismiss: e._handleDismiss,
+                    onSelectItem: e._handleSelectItem,
+                    onTypeaheadStateChange: i,
+                    query: d,
+                    ref: e._genericWrapperRef,
+                    source: l || E.d.Compose,
+                  },
+                  n(e._handleInputChange),
+                )
+              }),
+              h()(c()(e), '_getCaret', function (e) {
+                return e.getSelection().getStartOffset()
+              }),
+              h()(c()(e), '_getPlaintextFromCurrentBlock', function (e) {
+                var t = e.getSelection().anchorKey
+                return e.getCurrentContent().getBlockForKey(t).getText()
+              }),
+              h()(c()(e), '_handleSelectItem', function (t) {
+                var n = e.props.onTextUpdated,
+                  r = e.state.queryContext
+                if (r) {
+                  var o = Object(m.a)(t, r.resultType)
+                  n(e._replaceToken(o, r))
+                }
+                e._setQueryContext(void 0)
+              }),
+              h()(c()(e), '_handleInputChange', function (t) {
+                if (!Object(S.a)(t))
+                  throw new Error('RichTextTypeaheadComposeWrapper cannot handle plain text input changes')
+                var n = e.state.queryContext,
+                  r = n && n.word,
+                  o = e._getPlaintextFromCurrentBlock(t),
+                  a = v.c(e._getCaret(t), o),
+                  i = a.end,
+                  l = a.start,
+                  c = a.word,
+                  s = v.e(c || '', 'compose')
+                if ((null == s ? void 0 : s.q) !== r)
+                  if ((e._genericWrapperRef.current && e._genericWrapperRef.current.resetSelectedItem(), -1 === l))
+                    e._setQueryContext(void 0)
+                  else if (s) {
+                    var u = s.q,
+                      d = s.result_type
+                    e._setQueryContext({ word: u, resultType: d, editorState: t, startIndex: l, endIndex: i })
+                  } else e._setQueryContext(void 0)
+              }),
+              h()(c()(e), '_setQueryContext', function (t) {
+                return e.setState({ queryContext: t, canShowTypeahead: !!t })
+              }),
+              h()(c()(e), '_handleDismiss', function () {
+                return e.setState({ canShowTypeahead: !1 })
+              }),
+              e
+            )
           }
-        })()
-        return function () {
-          var n,
-            r = h()(e)
-          if (t) {
-            var o = h()(this).constructor
-            n = Reflect.construct(r, arguments, o)
-          } else n = r.apply(this, arguments)
-          return f()(this, n)
-        }
-      }
-      var w = (function (e) {
-        u()(n, e)
-        var t = T(n)
-        function n() {
-          var e
-          o()(this, n)
-          for (var r = arguments.length, a = new Array(r), i = 0; i < r; i++) a[i] = arguments[i]
           return (
-            (e = t.call.apply(t, [this].concat(a))),
-            y()(l()(e), 'state', { queryContext: void 0, canShowTypeahead: !1 }),
-            y()(l()(e), '_genericWrapperRef', m.a.createRef()),
-            y()(l()(e), 'render', function () {
-              var t = e.props,
-                n = t.children,
-                r = t.contextText,
-                o = t.isInline,
-                a = t.isInlineReply,
-                i = t.onTypeaheadStateChange,
-                c = t.source,
-                l = e.state,
-                s = l.canShowTypeahead,
-                u = l.queryContext,
-                d = s && u ? { word: u.word, resultType: u.resultType } : void 0
-              return m.a.createElement(
-                S.a,
-                {
-                  contextText: r,
-                  isInline: o,
-                  isInlineReply: a,
-                  onDismiss: e._handleDismiss,
-                  onSelectItem: e._handleSelectItem,
-                  onTypeaheadStateChange: i,
-                  query: d,
-                  ref: e._genericWrapperRef,
-                  source: c || x.d.Compose,
+            i()(n, [
+              {
+                key: '_replaceToken',
+                value: function (e, t) {
+                  var n = t.editorState,
+                    r = t.endIndex,
+                    o = t.startIndex,
+                    a = n
+                      .getSelection()
+                      .merge({ anchorKey: n.getSelection().getFocusKey(), anchorOffset: o, focusOffset: r }),
+                    i = b.Modifier.replaceText(n.getCurrentContent(), a, e),
+                    l = b.EditorState.push(n, i, 'insert-characters'),
+                    c = o + e.length,
+                    s = l.getSelection().merge({ anchorOffset: c, focusOffset: c })
+                  return b.EditorState.forceSelection(l, s)
                 },
-                n(e._handleInputChange),
-              )
-            }),
-            y()(l()(e), '_getCaret', function (e) {
-              return e.getSelection().getStartOffset()
-            }),
-            y()(l()(e), '_getPlaintextFromCurrentBlock', function (e) {
-              var t = e.getSelection().anchorKey
-              return e.getCurrentContent().getBlockForKey(t).getText()
-            }),
-            y()(l()(e), '_handleSelectItem', function (t) {
-              var n = e.props.onTextUpdated,
-                r = e.state.queryContext
-              if (r) {
-                var o = Object(E.a)(t, r.resultType)
-                n(e._replaceToken(o, r))
-              }
-              e._setQueryContext(void 0)
-            }),
-            y()(l()(e), '_handleInputChange', function (t) {
-              if (!Object(b.a)(t))
-                throw new Error('RichTextTypeaheadComposeWrapper cannot handle plain text input changes')
-              var n = e.state.queryContext,
-                r = n && n.word,
-                o = e._getPlaintextFromCurrentBlock(t),
-                a = C.c(e._getCaret(t), o),
-                i = a.end,
-                c = a.start,
-                l = a.word,
-                s = C.e(l || '', 'compose')
-              if ((null == s ? void 0 : s.q) !== r)
-                if ((e._genericWrapperRef.current && e._genericWrapperRef.current.resetSelectedItem(), -1 === c))
-                  e._setQueryContext(void 0)
-                else if (s) {
-                  var u = s.q,
-                    d = s.result_type
-                  e._setQueryContext({ word: u, resultType: d, editorState: t, startIndex: c, endIndex: i })
-                } else e._setQueryContext(void 0)
-            }),
-            y()(l()(e), '_setQueryContext', function (t) {
-              return e.setState({ queryContext: t, canShowTypeahead: !!t })
-            }),
-            y()(l()(e), '_handleDismiss', function () {
-              return e.setState({ canShowTypeahead: !1 })
-            }),
-            e
-          )
-        }
-        return (
-          i()(n, [
-            {
-              key: '_replaceToken',
-              value: function (e, t) {
-                var n = t.editorState,
-                  r = t.endIndex,
-                  o = t.startIndex,
-                  a = n
-                    .getSelection()
-                    .merge({ anchorKey: n.getSelection().getFocusKey(), anchorOffset: o, focusOffset: r }),
-                  i = k.Modifier.replaceText(n.getCurrentContent(), a, e),
-                  c = k.EditorState.push(n, i, 'insert-characters'),
-                  l = o + e.length,
-                  s = c.getSelection().merge({ anchorOffset: l, focusOffset: l })
-                return k.EditorState.forceSelection(c, s)
               },
-            },
-          ]),
-          n
-        )
-      })(m.a.Component)
-      t.a = w
+            ]),
+            n
+          )
+        })(y.a.Component)
+      t.a = x
     },
     Rk1B: function (e, t, n) {
       'use strict'
@@ -180,29 +156,29 @@
       n('2G9S'),
         Object.defineProperty(t, '__esModule', { value: !0 }),
         (t.default = function (e, t) {
-          var n = (0, c.default)(e, t)
+          var n = (0, l.default)(e, t)
             .concat((0, i.default)(e))
             .concat((0, a.default)(e, { checkUrlOverlap: !1 }))
             .concat((0, o.default)(e))
           if (0 == n.length) return []
-          return (0, l.default)(n), n
+          return (0, c.default)(n), n
         })
       var o = r(n('EW8Q')),
         a = r(n('yyPN')),
         i = r(n('YXS5')),
-        c = r(n('vwfs')),
-        l = r(n('c8jd'))
+        l = r(n('vwfs')),
+        c = r(n('c8jd'))
       e.exports = t.default
     },
     hHEM: function (e, t, n) {
       'use strict'
-      n('yH/f'), n('jwue'), n('+oxZ'), n('hBvt'), n('KqXw'), n('z84I')
+      n('yH/f'), n('jwue'), n('7x/C'), n('+oxZ'), n('hBvt'), n('KqXw'), n('z84I')
       var r = n('ERkP'),
         o = n.n(r),
         a = n('dWxr'),
         i = n.n(a),
-        c = n('rHpw'),
-        l = n('aITJ'),
+        l = n('rHpw'),
+        c = n('aITJ'),
         s = { clipPath: 'circle(0% at center)' },
         u = {
           strategy: function (e, t) {
@@ -210,7 +186,7 @@
               n[r].indices && 2 === n[r].indices.length && t(n[r].indices[0], n[r].indices[1])
           },
           component: function (e) {
-            return o.a.createElement('span', { style: { color: c.a.theme.colors.link } }, e.children)
+            return o.a.createElement('span', { style: { color: l.a.theme.colors.link } }, e.children)
           },
         },
         d = {
@@ -226,7 +202,7 @@
               n = e.contentState,
               r = e.entityKey,
               a = (r && n.getEntity(r)) || {}
-            return !(l.b.isFirefox() && l.b.firefoxVersion() < 49)
+            return !(c.b.isFirefox() && c.b.firefoxVersion() < 49)
               ? o.a.Children.map(t, function (e) {
                   var t,
                     n = o.a.Children.map(e, function (e) {
@@ -280,11 +256,11 @@
             o = n.getLastBlock(),
             a = t.blockKey,
             i = void 0 === a ? o.key : a,
-            c = t.offset,
-            l = void 0 === c ? o.getText().length : c,
+            l = t.offset,
+            c = void 0 === l ? o.getText().length : l,
             s = e
               .getSelection()
-              .merge({ anchorKey: r.key, anchorOffset: 0, focusKey: i, focusOffset: l, isBackward: !1 }),
+              .merge({ anchorKey: r.key, anchorOffset: 0, focusKey: i, focusOffset: c, isBackward: !1 }),
             u = h.Modifier.removeInlineStyle(e.getCurrentContent(), s, 'overflow')
           return h.EditorState.push(e, u, 'change-inline-style')
         },
@@ -293,9 +269,9 @@
             r = t.offset,
             o = e.getCurrentContent(),
             a = o.getLastBlock(),
-            i = m(o, n, r)
+            i = C(o, n, r)
           if (n) {
-            var c = e
+            var l = e
                 .getSelection()
                 .merge({
                   anchorKey: n,
@@ -304,12 +280,12 @@
                   focusOffset: a.getText().length,
                   isBackward: !1,
                 }),
-              l = h.Modifier.applyInlineStyle(o, c, 'overflow')
-            return h.EditorState.push(e, l, 'change-inline-style')
+              c = h.Modifier.applyInlineStyle(o, l, 'overflow')
+            return h.EditorState.push(e, c, 'change-inline-style')
           }
           return e
         },
-        m = function (e, t) {
+        C = function (e, t) {
           var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0,
             r = n,
             o = e.getBlockForKey(t)
@@ -317,13 +293,13 @@
             var a = o.getEntityAt(n)
             if (void 0 !== a) {
               var i = a && e.getEntity(a),
-                c = i && i.data && i.data.id
-              if (void 0 !== c)
-                for (var l = n - 1; l >= 0; l--) {
-                  var s = o.getEntityAt(l),
+                l = i && i.data && i.data.id
+              if (void 0 !== l)
+                for (var c = n - 1; c >= 0; c--) {
+                  var s = o.getEntityAt(c),
                     u = s && e.getEntity(s)
-                  if (!u || !u.data || u.data.id !== c) {
-                    r = l + 1
+                  if (!u || !u.data || u.data.id !== l) {
+                    r = c + 1
                     break
                   }
                 }
@@ -331,7 +307,7 @@
             return r
           }
         },
-        C = 'TWEMOJI',
+        m = 'TWEMOJI',
         S = 'IMMUTABLE',
         E = (t.a = {
           convertEmojiToEntities: function (e) {
@@ -342,20 +318,20 @@
               n.getBlocksAsArray().forEach(function (e) {
                 p.a.getTwemojiEntities(e.getText()).forEach(function (o) {
                   if (2 === (o.indices && o.indices.length)) {
-                    var a = n.createEntity(C, S, { url: o.url || null, id: r })
+                    var a = n.createEntity(m, S, { url: o.url || null, id: r })
                     r += 1
                     var i = a.getLastCreatedEntityKey(),
-                      c = e.getKey(),
-                      l = t
+                      l = e.getKey(),
+                      c = t
                         .getSelection()
                         .merge({
-                          anchorKey: c,
+                          anchorKey: l,
                           anchorOffset: o.indices[0],
-                          focusKey: c,
+                          focusKey: l,
                           focusOffset: o.indices[1],
                           isBackward: !1,
                         })
-                    n = h.Modifier.applyEntity(a, l, i)
+                    n = h.Modifier.applyEntity(a, c, i)
                   }
                 })
               }),
@@ -378,21 +354,21 @@
               o = h.Modifier.insertText(n, r, t)
             return h.EditorState.push(e, o, 'insert-characters')
           },
-          TWEMOJI_ENTITY_TYPE: C,
+          TWEMOJI_ENTITY_TYPE: m,
           updateOverflowStyle: function (e, t) {
             var n,
               r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
               o = e.getSelection(),
               a = h.EditorState.set(e, { allowUndo: !1 }),
               i = e.getCurrentContent().getSelectionBefore(),
-              c = e.getCurrentContent().getSelectionAfter(),
-              l = e.getCurrentContent(),
-              s = l.getBlocksAsArray(),
+              l = e.getCurrentContent().getSelectionAfter(),
+              c = e.getCurrentContent(),
+              s = c.getBlocksAsArray(),
               u = 'number' == typeof t && t > -1,
               d = u ? g(s, t) : Object.freeze({})
             if ((r && ((a = y(a, d)), (n = !0)), u && ((a = v(a, d)), (n = !0)), n)) {
               var f = (a = h.EditorState.forceSelection(a, o)).getCurrentContent()
-              ;(f = (f = f.set('selectionBefore', i)).set('selectionAfter', c)),
+              ;(f = (f = f.set('selectionBefore', i)).set('selectionAfter', l)),
                 (a = h.EditorState.set(e, { allowUndo: !0, currentContent: f }))
             }
             return a
@@ -401,30 +377,27 @@
     },
     keCP: function (e, t, n) {
       'use strict'
-      n('OZaJ')
       var r = n('VrFO'),
         o = n.n(r),
         a = n('Y9Ll'),
         i = n.n(a),
-        c = n('1Pcy'),
-        l = n.n(c),
+        l = n('1Pcy'),
+        c = n.n(l),
         s = n('5Yy7'),
         u = n.n(s),
-        d = n('N+ot'),
+        d = n('2VqO'),
         f = n.n(d),
-        p = n('AuHH'),
+        p = n('KEM+'),
         h = n.n(p),
-        g = n('KEM+'),
+        g = n('97Jx'),
         y = n.n(g),
-        v = n('97Jx'),
-        m = n.n(v),
-        C = (n('2G9S'), n('jwue'), n('+oxZ'), n('MvUL'), n('KqXw'), n('SV7d')),
-        S = n('rHpw'),
-        E = 'singleline',
-        b = function (e) {
+        v = (n('2G9S'), n('jwue'), n('7x/C'), n('+oxZ'), n('KqXw'), n('MvUL'), n('SV7d')),
+        C = n('rHpw'),
+        m = 'singleline',
+        S = function (e) {
           var t = e.placeholderTextColor,
-            n = void 0 === t ? S.a.theme.colors.gray700 : t,
-            r = S.a.theme.spaces.space2
+            n = void 0 === t ? C.a.theme.colors.gray700 : t,
+            r = C.a.theme.spaces.space2
           return '\n         .DraftEditor-editorContainer, .DraftEditor-root, .public-DraftEditor-content {\n            height: inherit;\n            max-height: inherit;\n            min-height: inherit;\n            overflow: auto;\n            text-align: initial;\n        }\n\n        .public-DraftEditor-content[contenteditable=true] {\n            -webkit-user-modify: read-write-plaintext-only\n        }\n\n        .DraftEditor-root {\n            width: 100%;\n            position: relative;\n            -webkit-user-select: none;\n        }\n\n        .DraftEditor-editorContainer {\n            background-color: rgba(255, 255, 255, 0);\n            border-left: .1px solid transparent;\n            position: relative;\n            z-index: 1;\n        }\n\n        .public-DraftEditor-block {\n            position: relative;\n        }\n\n        .DraftEditor-alignLeft .public-DraftStyleDefault-block {\n            text-align: left;\n        }\n\n        .DraftEditor-alignLeft .public-DraftEditorPlaceholder-root {\n            left: 0;\n            text-align: left;\n        }\n\n        .DraftEditor-alignCenter .public-DraftStyleDefault-block {\n            text-align: center\n        }\n\n        .DraftEditor-alignCenter .public-DraftEditorPlaceholder-root {\n            margin: 0 auto;\n            text-align: center;\n            width: 100%\n        }\n\n        .DraftEditor-alignRight .public-DraftStyleDefault-block {\n            text-align: right;\n        }\n\n        .DraftEditor-alignRight .public-DraftEditorPlaceholder-root {\n            right: 0;\n            text-align: right;\n        }\n\n        .public-DraftEditorPlaceholder-root {\n            color: '
             .concat(n, ';\n            padding-bottom: ')
             .concat(r, ';\n            padding-top: ')
@@ -442,52 +415,31 @@
               ";\n            position: relative;\n            white-space: pre-wrap;\n        }\n\n        /* Only a handful of CSS rules work on br tags and user-select isn't one */\n        div:only-child > .public-DraftStyleDefault-block br::selection {\n            background: transparent;\n        }\n\n        /*\n           Safari doesn't let you change ::selection on br elements,\n           but Chrome needs it here\n        */\n        div:only-child > .public-DraftStyleDefault-block::selection {\n            background: transparent;\n        }\n\n        .public-DraftStyleDefault-ltr {\n            direction: ltr;\n            text-align: left;\n        }\n\n        .public-DraftStyleDefault-rtl {\n            direction: rtl;\n            text-align: right;\n        }\n\n        .",
             )
             .concat(
-              E,
+              m,
               ' .public-DraftStyleDefault-block {\n            overflow-x: auto;\n            scrollbar-width: none;\n            white-space: nowrap;\n            -ms-overflow-style: none;\n        }\n        .',
             )
             .concat(
-              E,
+              m,
               ' .public-DraftStyleDefault-block::-webkit-scrollbar {\n            display: none;\n        }\n    ',
             )
         },
-        x = n('ERkP'),
-        k = n.n(x),
-        T = n('k/Ka'),
-        w = n('PxJJ'),
-        _ = n('w9LO'),
-        D = n('fs1G'),
-        R = (n('aWzz'), n('zpdM'))
-      function O(e) {
-        var t = (function () {
-          if ('undefined' == typeof Reflect || !Reflect.construct) return !1
-          if (Reflect.construct.sham) return !1
-          if ('function' == typeof Proxy) return !0
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0
-          } catch (e) {
-            return !1
-          }
-        })()
-        return function () {
-          var n,
-            r = h()(e)
-          if (t) {
-            var o = h()(this).constructor
-            n = Reflect.construct(r, arguments, o)
-          } else n = r.apply(this, arguments)
-          return f()(this, n)
-        }
-      }
-      var F = function (e) {
-          return Object(T.a)('div', e)
+        E = n('ERkP'),
+        b = n.n(E),
+        x = n('k/Ka'),
+        k = n('PxJJ'),
+        T = n('w9LO'),
+        w = n('fs1G'),
+        _ = n('zpdM'),
+        D = function (e) {
+          return Object(x.a)('div', e)
         },
-        P = !1,
-        K =
-          ((t.a = k.a.forwardRef(function (e, t) {
-            var n = C.d()
-            return k.a.createElement(
-              K,
-              m()({}, e, {
+        O = !1,
+        F =
+          ((t.a = b.a.forwardRef(function (e, t) {
+            var n = v.d()
+            return b.a.createElement(
+              F,
+              y()({}, e, {
                 onFocus: function (t) {
                   e.onFocus && e.onFocus(t), n('focus')
                 },
@@ -497,19 +449,19 @@
           })),
           (function (e) {
             u()(n, e)
-            var t = O(n)
+            var t = f()(n)
             function n() {
               var e
               o()(this, n)
               for (var r = arguments.length, a = new Array(r), i = 0; i < r; i++) a[i] = arguments[i]
               return (
                 (e = t.call.apply(t, [this].concat(a))),
-                y()(l()(e), '_setSelectionToStart', function () {
+                h()(c()(e), '_setSelectionToStart', function () {
                   var t = e.props.editorState,
                     n = t.getCurrentContent().getFirstBlock().getKey()
-                  return R.EditorState.acceptSelection(
+                  return _.EditorState.acceptSelection(
                     t,
-                    new R.SelectionState({
+                    new _.SelectionState({
                       anchorKey: n,
                       anchorOffset: 0,
                       focusKey: n,
@@ -518,46 +470,46 @@
                     }),
                   )
                 }),
-                y()(l()(e), '_setFocusToStart', function () {
+                h()(c()(e), '_setFocusToStart', function () {
                   var t = e._setSelectionToStart()
-                  return R.EditorState.forceSelection(t, t.getSelection())
+                  return _.EditorState.forceSelection(t, t.getSelection())
                 }),
-                y()(l()(e), '_setFocusToEnd', function () {
+                h()(c()(e), '_setFocusToEnd', function () {
                   var t = e.props,
                     n = t.autoFocus,
                     r = t.editorState,
                     o = t.onChange
                   n
-                    ? null == o || o(R.EditorState.moveFocusToEnd(r))
-                    : null == o || o(R.EditorState.moveSelectionToEnd(r))
+                    ? null == o || o(_.EditorState.moveFocusToEnd(r))
+                    : null == o || o(_.EditorState.moveSelectionToEnd(r))
                 }),
-                y()(l()(e), '_setDraftJsStyle', function () {
+                h()(c()(e), '_setDraftJsStyle', function () {
                   var t = e.props.placeholderTextColor,
                     n = document.createElement('style')
-                  n.innerHTML = b({ placeholderTextColor: t })
+                  n.innerHTML = S({ placeholderTextColor: t })
                   var r = document.head
                   r && r.insertBefore(n, r.firstChild)
                 }),
-                y()(l()(e), 'focus', function () {
+                h()(c()(e), 'focus', function () {
                   e._editor && e._editor.focus()
                 }),
-                y()(l()(e), 'blur', function () {
+                h()(c()(e), 'blur', function () {
                   e._editor && e._editor.blur()
                 }),
-                y()(l()(e), 'value', function () {
+                h()(c()(e), 'value', function () {
                   return e.props.editorState.getCurrentContent().getPlainText()
                 }),
-                y()(l()(e), 'getOffsetHeight', function () {
+                h()(c()(e), 'getOffsetHeight', function () {
                   var t = (e._editor || {}).editor
                   return (t && t.offsetHeight) || 0
                 }),
-                y()(l()(e), '_setEditorRef', function (t) {
+                h()(c()(e), '_setEditorRef', function (t) {
                   e._editor = t
                 }),
-                y()(l()(e), '_handleViewClick', function () {
+                h()(c()(e), '_handleViewClick', function () {
                   return e.focus()
                 }),
-                y()(l()(e), '_onPastedFiles', function (t) {
+                h()(c()(e), '_onPastedFiles', function (t) {
                   var n = e.props.onFilesAdded,
                     r = []
                   return (
@@ -567,45 +519,45 @@
                     r.length && (null == n ? void 0 : n(r)) ? 'handled' : 'not-handled'
                   )
                 }),
-                y()(l()(e), '_onPastedText', function (t, n, r) {
+                h()(c()(e), '_onPastedText', function (t, n, r) {
                   var o = e.props,
                     a = o.multiline,
                     i = o.onChange
                   return !a && i
                     ? (i(
-                        R.EditorState.push(
+                        _.EditorState.push(
                           r,
-                          R.Modifier.replaceText(r.getCurrentContent(), r.getSelection(), t.replace(/[\r\n]+/g, ' ')),
+                          _.Modifier.replaceText(r.getCurrentContent(), r.getSelection(), t.replace(/[\r\n]+/g, ' ')),
                           'insert-characters',
                         ),
                       ),
                       'handled')
                     : 'not-handled'
                 }),
-                y()(l()(e), '_myKeyBindingFn', function (t) {
+                h()(c()(e), '_myKeyBindingFn', function (t) {
                   var n = e.props,
                     r = n.dismissComposerCommandName,
                     o = n.sendTweetCommandName,
-                    a = R.KeyBindingUtil.hasCommandModifier
-                  return 13 === t.keyCode && a(t) ? o : 27 === t.keyCode ? r : Object(R.getDefaultKeyBinding)(t)
+                    a = _.KeyBindingUtil.hasCommandModifier
+                  return 13 === t.keyCode && a(t) ? o : 27 === t.keyCode ? r : Object(_.getDefaultKeyBinding)(t)
                 }),
-                y()(l()(e), '_onKeyCommand', function (t) {
+                h()(c()(e), '_onKeyCommand', function (t) {
                   var n = e.props.keyCommandHandlers,
                     r = n && n[t]
                   return r ? (r(), 'handled') : 'not-handled'
                 }),
-                y()(l()(e), '_onSingleLineReturn', function (t, n) {
+                h()(c()(e), '_onSingleLineReturn', function (t, n) {
                   var r = e.props.handleReturn
                   return null == r || r(t, n), 'handled'
                 }),
-                y()(l()(e), '_getContainerStyle', function () {
+                h()(c()(e), '_getContainerStyle', function () {
                   var t = e.props,
                     n = t.appTextSize,
                     r = t.maxNumberOfLines,
                     o = t.multiline,
                     a = t.numberOfLines,
                     i =
-                      S.a.theme.lineHeightsPx[
+                      C.a.theme.lineHeightsPx[
                         {
                           small: 'subtext2',
                           normal: 'body',
@@ -635,13 +587,13 @@
                         : n
                         ? null == t || t(this._setFocusToStart())
                         : this.props.autoFocus && this.focus(),
-                        P || (this._setDraftJsStyle(), (P = !0))
+                        O || (this._setDraftJsStyle(), (O = !0))
                     },
                   },
                   {
                     key: 'componentDidCatch',
                     value: function (e) {
-                      w.a.report(e, { tags: { userVisible: !0, draftJs: !0 } })
+                      k.a.report(e, { tags: { userVisible: !0, draftJs: !0 } })
                     },
                   },
                   {
@@ -654,43 +606,43 @@
                         o = t.ariaControls,
                         a = t.ariaLabel,
                         i = t.blockRenderMap,
-                        c = t.blockRendererFn,
-                        l = t.editorState,
+                        l = t.blockRendererFn,
+                        c = t.editorState,
                         s = t.handleReturn,
                         u = t.multiline,
                         d = t.onChange,
                         f = t.onFocus,
                         p = t.onKeyDown,
-                        h = t.onKeyPress,
-                        g = t.onKeyUp,
+                        g = t.onKeyPress,
+                        y = t.onKeyUp,
                         v = t.placeholder,
-                        m = t.spellCheck,
-                        C = t.stripPastedStyles,
-                        b = t.style,
-                        x = t.testID
-                      return k.a.createElement(
-                        F,
+                        S = t.spellCheck,
+                        E = t.stripPastedStyles,
+                        x = t.style,
+                        k = t.testID
+                      return b.a.createElement(
+                        D,
                         {
-                          className: u ? void 0 : E,
+                          className: u ? void 0 : m,
                           onClick: this._handleViewClick,
-                          style: [this._getContainerStyle(), b],
+                          style: [this._getContainerStyle(), x],
                         },
-                        k.a.createElement(R.Editor, {
+                        b.a.createElement(_.Editor, {
                           ariaActiveDescendantID: n,
                           ariaAutoComplete: r,
                           ariaControls: o,
                           ariaLabel: a,
                           ariaMultiline: u,
                           blockRenderMap: i,
-                          blockRendererFn: c,
+                          blockRendererFn: l,
                           customAttrs:
                             ((e = {}),
-                            y()(e, _.a.NO_REFOCUS_ATTRIBUTE, 'true'),
-                            y()(e, 'onKeyPress', h),
-                            y()(e, 'onKeyUp', g),
+                            h()(e, T.a.NO_REFOCUS_ATTRIBUTE, 'true'),
+                            h()(e, 'onKeyPress', g),
+                            h()(e, 'onKeyUp', y),
                             e),
-                          customStyleMap: I(S.a.theme),
-                          editorState: l,
+                          customStyleMap: K(C.a.theme),
+                          editorState: c,
                           handleKeyCommand: this._onKeyCommand,
                           handlePastedFiles: this._onPastedFiles,
                           handlePastedText: this._onPastedText,
@@ -701,10 +653,10 @@
                           onKeyDown: p,
                           placeholder: v,
                           ref: this._setEditorRef,
-                          spellCheck: 'false' !== m,
-                          stripPastedStyles: C,
+                          spellCheck: 'false' !== S,
+                          stripPastedStyles: E,
                           tabIndex: 0,
-                          webDriverTestID: x,
+                          webDriverTestID: k,
                         }),
                       )
                     },
@@ -721,21 +673,21 @@
               ),
               n
             )
-          })(k.a.Component))
-      y()(K, 'defaultProps', {
+          })(b.a.Component))
+      h()(F, 'defaultProps', {
         appTextSize: 'body',
         autoFocus: !1,
         keyCommandHandlers: {},
         maxNumberOfLines: 30,
         multiline: !0,
         numberOfLines: 6,
-        onFocus: D.a,
+        onFocus: w.a,
         positionCursorAtEnd: !1,
         spellCheck: 'true',
         stripPastedStyles: !0,
       }),
-        (K.propTypes = {})
-      var I = function (e) {
+        (F.propTypes = {})
+      var K = function (e) {
         return { overflow: { backgroundColor: e.colors.red200 } }
       }
     },

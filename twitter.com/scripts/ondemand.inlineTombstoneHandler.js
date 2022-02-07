@@ -1,168 +1,142 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [341],
+  [344],
   {
     'NO+D': function (e, t, o) {
       'use strict'
       o.r(t)
-      o('+KXO'), o('1t7P'), o('LW0h'), o('daRM'), o('jwue'), o('+oxZ'), o('FtHn')
-      var n = o('KEM+'),
+      var n = o('yiKp'),
         i = o.n(n),
-        r = o('ezF+'),
-        a = o('ERkP'),
-        c = o.n(a),
-        d = o('VPAj'),
+        a = o('ezF+'),
+        r = o('ERkP'),
+        d = o.n(r),
+        c = o('VPAj'),
         s = o('rcen'),
         l = o('ddV6'),
-        u = o.n(l),
-        v = o('xM7j'),
-        w = o('xZXe'),
+        v = o.n(l),
+        w = o('xM7j'),
+        u = o('xZXe'),
         f = o('P1oR'),
-        p = o('kY28'),
-        P = function (e) {
+        T = o('kY28'),
+        p = function (e) {
           var t = e.actionText,
             o = e.children,
             n = e.contextTweetId,
             i = e.conversationPosition,
-            r = e.conversationTreeMetadata,
-            a = e.ctaLink,
-            d = e.ctaText,
+            a = e.conversationTreeMetadata,
+            r = e.ctaLink,
+            c = e.ctaText,
             s = e.forwardPivotInfo,
             l = e.innerForwardPivotInfo,
-            P = e.isFocalTweet,
-            T = e.isReaderMode,
-            b = e.lang,
-            y = e.onTweetDismiss,
-            m = e.quotedTweetTombstoneInfo,
-            I = e.socialContext,
-            h = e.tweetId,
-            x = e.withHideReply,
-            O = c.a.useState(!0),
-            j = u()(O, 2),
-            g = j[0],
-            k = j[1]
-          c.a.useEffect(
+            p = e.isFocalTweet,
+            I = e.isReaderMode,
+            P = e.lang,
+            m = e.onTweetDismiss,
+            x = e.quotedTweetTombstoneInfo,
+            y = e.socialContext,
+            b = e.tweetId,
+            h = e.withHideReply,
+            k = d.a.useState(!0),
+            C = v()(k, 2),
+            F = C[0],
+            M = C[1]
+          d.a.useEffect(
             function () {
-              k(!0)
+              M(!0)
             },
-            [h],
+            [b],
           )
-          var D = c.a.useCallback(function () {
-            k(!1)
+          var R = d.a.useCallback(function () {
+            M(!1)
           }, [])
-          return g || !h
-            ? c.a.createElement(v.a, {
+          return F || !b
+            ? d.a.createElement(w.a, {
                 actionText: t,
                 children: o,
                 conversationPosition: i,
-                conversationTreeMetadata: r,
-                ctaLink: a,
-                ctaText: d,
-                lang: b,
-                onClick: D,
+                conversationTreeMetadata: a,
+                ctaLink: r,
+                ctaText: c,
+                lang: P,
+                onClick: R,
               })
-            : h
-            ? P && !T
-              ? c.a.createElement(f.b, {
+            : b
+            ? p && !I
+              ? d.a.createElement(f.b, {
                   contextTweetId: n,
                   forwardPivotInfo: s,
                   innerForwardPivotInfo: l,
-                  onTweetDismiss: y,
-                  quotedTweetTombstoneInfo: m,
-                  socialContext: I,
-                  tweetId: h,
-                  withHideReply: x,
+                  onTweetDismiss: m,
+                  quotedTweetTombstoneInfo: x,
+                  socialContext: y,
+                  tweetId: b,
+                  withHideReply: h,
                 })
-              : c.a.createElement(w.b, {
+              : d.a.createElement(u.b, {
                   conversationPosition: i,
-                  conversationTreeMetadata: r,
+                  conversationTreeMetadata: a,
                   displayBlocked: !0,
                   displayPromotedContent: !0,
                   forwardPivotInfo: s,
                   innerForwardPivotInfo: l,
-                  isReaderMode: T,
-                  onTweetDismiss: y,
-                  quotedTweetTombstoneInfo: m,
-                  replyContext: T ? p.a.ReplyContextTypes.None : void 0,
+                  isReaderMode: I,
+                  onTweetDismiss: m,
+                  quotedTweetTombstoneInfo: x,
+                  replyContext: I ? T.a.ReplyContextTypes.None : void 0,
                   shouldSelfThreadIncludeAvatar: !0,
-                  tweetId: h,
+                  tweetId: b,
                   withActions: !0,
-                  withHideReply: x,
+                  withHideReply: h,
                   withInlineMedia: !0,
                   withSocialContext: !0,
                 })
             : null
         },
-        T = c.a.memo(P)
-      function b(e, t) {
-        var o = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e)
-          t &&
-            (n = n.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            o.push.apply(o, n)
-        }
-        return o
-      }
-      Object(d.a)(!1)
-      var y = function (e) {
-        var t = e.alignment,
-          o = e.entities,
-          n = e.rtl,
-          i = e.text
-        return c.a.createElement(s.a, { alignment: t, entities: o, rtl: n, text: i })
-      }
+        I = d.a.memo(p),
+        P =
+          (Object(c.a)(!1),
+          function (e) {
+            var t = e.alignment,
+              o = e.entities,
+              n = e.rtl,
+              i = e.text
+            return d.a.createElement(s.a, { alignment: t, entities: o, rtl: n, text: i })
+          })
       t.default = function (e) {
         var t = e.createAdditionalProps,
-          o = void 0 === t ? Object(d.a)(null) : t
+          o = void 0 === t ? Object(c.a)(null) : t
         e.shouldDisplayBorder
-        return r.g({
+        return a.g({
           bindActions: function (e) {
             return { applyFeedbackAction: e.module.applyFeedbackAction }
           },
-          component: T,
+          component: I,
           createProps: function (e) {
             var t,
               n,
-              r,
               a,
-              c = e.actions,
-              d = e.entry,
-              s = d.content,
-              l = d.conversationPosition,
-              u = d.conversationTreeMetadata,
-              v = s.tombstoneInfo || {},
-              w = v.revealText,
-              f = v.richRevealText,
-              p = v.richText,
-              P = v.text
-            return (function (e) {
-              for (var t = 1; t < arguments.length; t++) {
-                var o = null != arguments[t] ? arguments[t] : {}
-                t % 2
-                  ? b(Object(o), !0).forEach(function (t) {
-                      i()(e, t, o[t])
-                    })
-                  : Object.getOwnPropertyDescriptors
-                  ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(o))
-                  : b(Object(o)).forEach(function (t) {
-                      Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(o, t))
-                    })
-              }
-              return e
-            })(
+              r,
+              d = e.actions,
+              c = e.entry,
+              s = c.content,
+              l = c.conversationPosition,
+              v = c.conversationTreeMetadata,
+              w = s.tombstoneInfo || {},
+              u = w.revealText,
+              f = w.richRevealText,
+              T = w.richText,
+              p = w.text
+            return i()(
               {
-                actionText: f ? y(f) : w,
-                children: p ? y(p) : P,
+                actionText: f ? P(f) : u,
+                children: T ? P(T) : p,
                 conversationPosition: l,
-                conversationTreeMetadata: u,
+                conversationTreeMetadata: v,
                 forwardPivotInfo: null === (t = s.tweet) || void 0 === t ? void 0 : t.forwardPivot,
                 innerForwardPivotInfo: null === (n = s.tweet) || void 0 === n ? void 0 : n.innerForwardPivot,
-                quotedTweetTombstoneInfo: null === (r = s.tweet) || void 0 === r ? void 0 : r.innerTombstoneInfo,
-                tweetId: null === (a = s.tweet) || void 0 === a ? void 0 : a.id,
+                quotedTweetTombstoneInfo: null === (a = s.tweet) || void 0 === a ? void 0 : a.innerTombstoneInfo,
+                tweetId: null === (r = s.tweet) || void 0 === r ? void 0 : r.id,
               },
-              o(d, c),
+              o(c, d),
             )
           },
           shouldDisplayBorder: function (e) {
