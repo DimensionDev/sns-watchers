@@ -10634,7 +10634,7 @@
         f = Object(s.a)({
           loader: function () {
             return l.a.emoji.then(function () {
-              return Promise.all([r.e(0), r.e(16), r.e(206)]).then(r.bind(null, '5RdJ'))
+              return Promise.all([r.e(0), r.e(17), r.e(206)]).then(r.bind(null, '5RdJ'))
             })
           },
           renderPlaceholder: function (t, e) {

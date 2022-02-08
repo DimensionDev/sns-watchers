@@ -175,26 +175,23 @@
           n = e.text
         return { query: { text: n ? P.shareTextPrefixFormatter({ prefix: n, url: t }) : t } }
       }
-      var D = n('T0aG'),
-        G = n.n(D),
-        H = n('mN6z')
-      var R = n('mjJ+'),
-        U = n('rHpw'),
-        K = { element: 'share' }
-      function Q(e) {
+      var D = n('mN6z')
+      var H = n('mjJ+'),
+        R = n('rHpw'),
+        G = { element: 'share' }
+      function U(e) {
         var t = (function (e) {
             var t = r.a.useRef({ previous: void 0 })
-            if ('object' !== G()(e)) return e
-            function n() {
+            function n(e) {
               return (t.current.previous = e), e
             }
             var a = t.current.previous
-            return a && (e === a || Object(H.a)(e, a)) ? a : n()
-          })(u()(u()({}, K), e.scribeNamespace)),
+            return a && (e === a || Object(D.a)(e, a)) ? a : n(e)
+          })(u()(u()({}, G), e.scribeNamespace)),
           n = N(u()(u()({}, e), {}, { scribeNamespace: t })),
           a = n.analytics,
           i = n.getActionItem
-        var o = e.ButtonComponent || V
+        var o = e.ButtonComponent || K
         return r.a.createElement(o, {
           onPress: function () {
             var e = u()(u()({}, t), {}, { action: 'share_menu_click' })
@@ -215,26 +212,26 @@
                     var t = i({ type: e })
                     t && n.push(t)
                   }),
-              r.a.createElement(R.a, { isFixed: e.isFixed, items: n, onCloseRequested: t, shouldCloseOnClick: !0 })
+              r.a.createElement(H.a, { isFixed: e.isFixed, items: n, onCloseRequested: t, shouldCloseOnClick: !0 })
             )
           },
         })
       }
-      function V(e) {
-        return r.a.createElement(v, c()({}, e, { style: q.button, testID: h }))
+      function K(e) {
+        return r.a.createElement(v, c()({}, e, { style: Q.button, testID: h }))
       }
-      var q = U.a.create(function (e) {
+      var Q = R.a.create(function (e) {
           return { button: { marginRight: e.spaces.space4 } }
         }),
-        J = ['copyLinkShareLabel', 'dmShareLabel', 'externalShareLabel', 'tweetShareLabel']
-      function W(e) {
+        V = ['copyLinkShareLabel', 'dmShareLabel', 'externalShareLabel', 'tweetShareLabel']
+      function q(e) {
         var t = e.copyLinkShareLabel,
           n = e.dmShareLabel,
           a = e.externalShareLabel,
           o = e.tweetShareLabel,
-          c = E()(e, J)
+          c = E()(e, V)
         return r.a.createElement(
-          Q,
+          U,
           c,
           r.a.createElement(i, { label: o, type: 'tweet' }),
           r.a.createElement(i, { label: n, type: 'dm' }),
@@ -242,8 +239,8 @@
           r.a.createElement(i, { label: a, type: 'via' }),
         )
       }
-      ;(W.Action = i), (W.Custom = Q)
-      t.a = W
+      ;(q.Action = i), (q.Custom = U)
+      t.a = q
     },
     UZjl: function (e, t, n) {
       'use strict'
@@ -356,9 +353,9 @@
           return { topic: P }
         }),
         D = n('PbbS'),
-        G = n('LWCC'),
-        H = n('IcAo'),
-        R = n('rJoH'),
+        H = n('LWCC'),
+        R = n('IcAo'),
+        G = n('rJoH'),
         U = n('I6Uj'),
         K = n('zfvc'),
         Q = function (e) {
@@ -386,7 +383,7 @@
             u = k(t, a),
             p = u.data,
             d = u.namespace,
-            f = Object(H.a)({}, r, d)
+            f = Object(R.a)({}, r, d)
           return i
             ? s.a.createElement(
                 I.b,
@@ -395,7 +392,7 @@
                   s.a.Fragment,
                   null,
                   c
-                    ? s.a.createElement(R.a, {
+                    ? s.a.createElement(G.a, {
                         canonical: Q(t),
                         description: i.description,
                         title: i.name,
@@ -412,7 +409,7 @@
                       s.a.createElement(
                         K.b,
                         { animateMount: !0, show: n, type: 'fade' },
-                        s.a.createElement(G.a, { size: 'medium', textMode: D.a.FollowTopic, topic: i }),
+                        s.a.createElement(H.a, { size: 'medium', textMode: D.a.FollowTopic, topic: i }),
                       ),
                     ),
                     l ? s.a.createElement(U.a, { copyLinkShareLabel: q, scribeNamespace: f, url: Q(t) }) : null,
@@ -608,7 +605,7 @@
         we = n('k/OQ'),
         Se = n('G8HL'),
         xe = ['entityToken'],
-        ke = 'controls',
+        ke = { viewType: 'controls' },
         Le = (function (e) {
           ae()(n, e)
           var t = ie()(n)
@@ -663,7 +660,7 @@
                     })
                   return s.a.createElement(
                     ge.a,
-                    { viewType: ke },
+                    { behavioralEventContext: ke },
                     s.a.createElement(we.a, { links: p, visibleItemIndex: c }),
                   )
                 }
@@ -726,10 +723,10 @@
         Pe = ['entityToken'],
         Fe = _.a.e9f1fbcb,
         De = s.a.createElement(p.a, null),
-        Ge = Object(be.a)(function (e, t) {
+        He = Object(be.a)(function (e, t) {
           return l()(l()({}, t), Object(je.a)({ isWide: e }))
         }),
-        He = function (e) {
+        Re = function (e) {
           var t = e.TabBar,
             n = e.backLocation,
             a = e.behavioralEventViewType,
@@ -759,10 +756,10 @@
             P = e.withOpenGraphMeta,
             F = e.withSearchBox,
             D = e.withTweetButton,
-            G = s.a.useState(!0),
-            R = r()(G, 2),
-            U = R[0],
-            K = R[1],
+            H = s.a.useState(!0),
+            G = r()(H, 2),
+            U = G[0],
+            K = G[1],
             Q = g || {},
             V = Q.header,
             q = Q.navBar,
@@ -782,7 +779,7 @@
                       }),
                 u = (null == l ? void 0 : l.scribeConfig) || {},
                 s = (u.entityToken, o()(u, Pe))
-              return Object(H.a)({}, n, r, s)
+              return Object(R.a)({}, n, r, s)
             })(L, g, b),
             $ = V ? s.a.createElement(O, { header: V, onHeaderVisible: K }) : null,
             ee = q
@@ -805,7 +802,7 @@
                   te,
                   null,
                   s.a.createElement(he, {
-                    entryConfiguration: Ge(t, i),
+                    entryConfiguration: He(t, i),
                     initialModule: v,
                     prerollDisplayLocation: y,
                     renderEmptyState: w,
@@ -845,7 +842,7 @@
             ),
           )
         }
-      He.defaultProps = {
+      Re.defaultProps = {
         entryConfiguration: y.b,
         renderEmptyState: function () {
           return s.a.createElement(_e.a, { header: Fe })
@@ -855,8 +852,8 @@
         withAppLinks: !1,
         withOpenGraphMeta: !1,
       }
-      var Re = g(He)
-      t.a = Re
+      var Ge = g(Re)
+      t.a = Ge
     },
     doI8: function (e, t, n) {
       'use strict'

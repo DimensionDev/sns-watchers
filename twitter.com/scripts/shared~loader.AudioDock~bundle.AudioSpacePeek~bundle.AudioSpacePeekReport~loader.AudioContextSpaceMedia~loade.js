@@ -1114,26 +1114,23 @@
           n = e.text
         return { query: { text: n ? z.shareTextPrefixFormatter({ prefix: n, url: t }) : t } }
       }
-      var B = n('T0aG'),
-        D = n.n(B),
-        N = n('mN6z')
-      var V = n('mjJ+'),
-        F = n('rHpw'),
-        U = { element: 'share' }
-      function q(e) {
+      var B = n('mN6z')
+      var D = n('mjJ+'),
+        N = n('rHpw'),
+        V = { element: 'share' }
+      function F(e) {
         var t = (function (e) {
             var t = r.a.useRef({ previous: void 0 })
-            if ('object' !== D()(e)) return e
-            function n() {
+            function n(e) {
               return (t.current.previous = e), e
             }
             var a = t.current.previous
-            return a && (e === a || Object(N.a)(e, a)) ? a : n()
-          })(l()(l()({}, U), e.scribeNamespace)),
+            return a && (e === a || Object(B.a)(e, a)) ? a : n(e)
+          })(l()(l()({}, V), e.scribeNamespace)),
           n = j(l()(l()({}, e), {}, { scribeNamespace: t })),
           a = n.analytics,
           i = n.getActionItem
-        var o = e.ButtonComponent || W
+        var o = e.ButtonComponent || U
         return r.a.createElement(o, {
           onPress: function () {
             var e = l()(l()({}, t), {}, { action: 'share_menu_click' })
@@ -1154,26 +1151,26 @@
                     var t = i({ type: e })
                     t && n.push(t)
                   }),
-              r.a.createElement(V.a, { isFixed: e.isFixed, items: n, onCloseRequested: t, shouldCloseOnClick: !0 })
+              r.a.createElement(D.a, { isFixed: e.isFixed, items: n, onCloseRequested: t, shouldCloseOnClick: !0 })
             )
           },
         })
       }
-      function W(e) {
-        return r.a.createElement(v, c()({}, e, { style: K.button, testID: g }))
+      function U(e) {
+        return r.a.createElement(v, c()({}, e, { style: q.button, testID: g }))
       }
-      var K = F.a.create(function (e) {
+      var q = N.a.create(function (e) {
           return { button: { marginRight: e.spaces.space4 } }
         }),
-        G = ['copyLinkShareLabel', 'dmShareLabel', 'externalShareLabel', 'tweetShareLabel']
-      function X(e) {
+        W = ['copyLinkShareLabel', 'dmShareLabel', 'externalShareLabel', 'tweetShareLabel']
+      function K(e) {
         var t = e.copyLinkShareLabel,
           n = e.dmShareLabel,
           a = e.externalShareLabel,
           o = e.tweetShareLabel,
-          c = S()(e, G)
+          c = S()(e, W)
         return r.a.createElement(
-          q,
+          F,
           c,
           r.a.createElement(i, { label: o, type: 'tweet' }),
           r.a.createElement(i, { label: n, type: 'dm' }),
@@ -1181,8 +1178,8 @@
           r.a.createElement(i, { label: a, type: 'via' }),
         )
       }
-      ;(X.Action = i), (X.Custom = q)
-      t.a = X
+      ;(K.Action = i), (K.Custom = F)
+      t.a = K
     },
     ISLN: function (e, t, n) {
       'use strict'
@@ -4851,7 +4848,7 @@
         v = Object(m.a)({
           loader: function () {
             return f.a.emoji.then(function () {
-              return Promise.all([n.e(16), n.e(224)]).then(n.bind(null, '4AX5'))
+              return Promise.all([n.e(17), n.e(224)]).then(n.bind(null, '4AX5'))
             })
           },
           renderPlaceholder: function (e, t) {

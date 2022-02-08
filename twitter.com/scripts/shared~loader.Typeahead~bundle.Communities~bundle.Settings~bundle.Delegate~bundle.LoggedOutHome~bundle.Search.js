@@ -374,7 +374,7 @@
     ZcYN: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return ge
+        return be
       })
       var a = n('VrFO'),
         r = n.n(a),
@@ -445,7 +445,7 @@
                   style: [O.root, !a && n && O.disabled],
                 },
                 v.a.createElement(S.b, { conversation: t, perspective: r }),
-                ge({ isSelected: a }),
+                be({ isSelected: a }),
               )
             : null
         }),
@@ -791,7 +791,8 @@
         fe = n('htQn'),
         me = n('iySH'),
         he = n('IMYl'),
-        ve = (function (e) {
+        ve = { viewType: 'typeahead_result' },
+        ye = (function (e) {
           u()(n, e)
           var t = p()(n)
           function n(e, a) {
@@ -852,7 +853,7 @@
                     o = e.style
                   return v.a.createElement(
                     y.a,
-                    { viewType: 'typeahead_result' },
+                    { behavioralEventContext: ve },
                     v.a.createElement(
                       F.a,
                       {
@@ -871,7 +872,7 @@
                           disabled: n,
                           focusable: !0,
                           onPress: this._handleClick,
-                          style: [a && ye.focused, ye.transitionStyles, this._loaded && ye.loaded, o],
+                          style: [a && ge.focused, ge.transitionStyles, this._loaded && ge.loaded, o],
                           viewRef: this._onViewRef,
                         },
                         this._renderResult(),
@@ -919,7 +920,7 @@
                       return this._withNewTypeaheadUI
                         ? v.a.createElement(W.a, {
                             image: u.primary_image && u.primary_image.original_info,
-                            style: ye.itemPadding,
+                            style: ge.itemPadding,
                             supportText: u.supporting_text,
                             title: u.topic,
                             withNewTypeaheadUI: !0,
@@ -939,7 +940,7 @@
                         query: d || '',
                         resultContext: p.result_context,
                         showIcon: f,
-                        style: f ? ye.itemPadding : void 0,
+                        style: f ? ge.itemPadding : void 0,
                         topic: p.topic,
                       })
                     case re.b.DMConversation:
@@ -956,21 +957,21 @@
                       var m = r.data.text
                       return v.a.createElement(
                         F.a,
-                        { style: ye.navigationLink },
-                        v.a.createElement(j.b, { style: ye.content, weight: 'bold' }, m),
-                        v.a.createElement(me.a, { style: ye.icon }),
+                        { style: ge.navigationLink },
+                        v.a.createElement(j.b, { style: ge.content, weight: 'bold' }, m),
+                        v.a.createElement(me.a, { style: ge.icon }),
                       )
                     case re.b.Setting:
                       var h = r.data.text
                       return v.a.createElement(
                         F.a,
-                        { style: ye.navigationLink },
-                        v.a.createElement(j.b, { style: ye.content }, h),
-                        v.a.createElement(me.a, { style: ye.icon }),
+                        { style: ge.navigationLink },
+                        v.a.createElement(j.b, { style: ge.content }, h),
+                        v.a.createElement(me.a, { style: ge.icon }),
                       )
                     case re.b.NoResult:
                       var y = r.data.text
-                      return v.a.createElement(j.b, { style: ye.noResult }, y)
+                      return v.a.createElement(j.b, { style: ge.noResult }, y)
                     default:
                       return null
                   }
@@ -986,8 +987,8 @@
             n
           )
         })(v.a.Component)
-      m()(ve, 'contextType', oe.a)
-      var ye = T.a.create(function (e) {
+      m()(ye, 'contextType', oe.a)
+      var ge = T.a.create(function (e) {
           return {
             checkIcon: { color: e.colors.primary },
             navigationLink: {
@@ -1009,10 +1010,10 @@
             transitionStyles: { transitionProperty: 'opacity', transitionDuration: '250ms', opacity: 0 },
           }
         }),
-        ge = function (e) {
-          return e.isSelected ? v.a.createElement(he.a, { accessibilityHidden: !0, style: ye.checkIcon }) : null
+        be = function (e) {
+          return e.isSelected ? v.a.createElement(he.a, { accessibilityHidden: !0, style: ge.checkIcon }) : null
         }
-      t.b = ve
+      t.b = ye
     },
     aA19: function (e, t, n) {
       'use strict'
@@ -1248,7 +1249,7 @@
     tAeL: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return M
+        return z
       })
       var a = n('VrFO'),
         r = n.n(a),
@@ -1310,7 +1311,8 @@
         L = n('oQhu'),
         j = n('w6IS'),
         P = n('MXDK'),
-        M = (function (e) {
+        M = { viewType: 'typeahead_dropdown' },
+        z = (function (e) {
           u()(n, e)
           var t = p()(n)
           function n(e, a) {
@@ -1437,7 +1439,7 @@
                   return u
                     ? v.a.createElement(
                         y.a,
-                        { viewType: 'typeahead_dropdown' },
+                        { behavioralEventContext: M },
                         v.a.createElement(
                           F.a,
                           { accessibilityMultiSelectable: p, accessibilityRole: 'listbox', nativeID: n, style: l },

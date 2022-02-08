@@ -218,7 +218,7 @@
         se = Object(re.a)({
           loader: function () {
             return (I.a.preload() || Promise.resolve()).then(function () {
-              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(9), n.e(83)]).then(n.bind(null, 'RrO2'))
+              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(10), n.e(83)]).then(n.bind(null, 'RrO2'))
             })
           },
           renderPlaceholder: function () {

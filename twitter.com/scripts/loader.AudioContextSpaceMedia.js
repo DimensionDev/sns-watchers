@@ -40,7 +40,7 @@
       'use strict'
       a.r(e),
         a.d(e, '__DANGEROUS_IMPORT__', function () {
-          return f
+          return B
         })
       var i = a('RhWx'),
         n = a.n(i),
@@ -57,7 +57,7 @@
         b = a('dgjd'),
         S = a('BXJq'),
         m = a('AooF'),
-        f = function (t) {
+        B = function (t) {
           var e,
             a = d.a.useContext(c.a).featureSwitches,
             i = Object(p.a)(t.audioSpaceId),
@@ -65,12 +65,14 @@
             s = o.handlers,
             u = o.space,
             v = o.utils,
-            f = v.state() === m.a.StateEnum.unavailable,
+            B = v.state() === m.a.StateEnum.unavailable,
             y = Object(S.a)(t.audioSpaceId),
             k = {}
           k =
             !1 === t.isInteractive
               ? { link: void 0, onButtonClick: void 0 }
+              : null != u && u.ticket_group_id
+              ? { link: i, withoutButton: !0 }
               : (t.withDirectJoin && v.is.Running) || v.is.replayable
               ? {
                   onClick: function () {
@@ -78,11 +80,11 @@
                   },
                 }
               : { link: i, onButtonClick: y.props.onClick }
-          var R = v.state(),
-            _ = (function (t) {
+          var _ = v.state(),
+            w = (function (t) {
               return t ? [t.host].concat(n()(t.cohosts), n()(t.participants.speakers)).filter(Boolean) : []
             })(u),
-            w = l()(
+            R = l()(
               {
                 disabled: y.isSubscribing,
                 hasReminderSet: y.props.hasReminderSet,
@@ -100,23 +102,23 @@
             g = u || {},
             P = g.ended_at,
             C = g.started_at
-          C && P && ((w.replayStartTime = C), (w.replayDuration = P - C))
+          C && P && ((R.replayStartTime = C), (R.replayDuration = P - C))
           var j = { shouldUseV2: !1, propsForV2: void 0 }
           2 === a.getValue('voice_rooms_card_version') &&
             ((j.shouldUseV2 = !0),
             (j.propsForV2 = l()(
-              l()({}, w),
+              l()({}, R),
               {},
               {
                 host: null == u ? void 0 : u.host,
-                participants: _.slice(0, 3),
+                participants: w.slice(0, 3),
                 palette: null == u ? void 0 : u.hostPalette,
                 total: null == u ? void 0 : u.participants.total,
-                state: R,
+                state: _,
                 button: void 0,
               },
             )),
-            v.is.joined && v.is.replayable && (j.propsForV2.button = d.a.createElement(B, j.propsForV2)))
+            v.is.joined && v.is.replayable && (j.propsForV2.button = d.a.createElement(f, j.propsForV2)))
           return d.a.createElement(
             h.a,
             {
@@ -130,18 +132,18 @@
                 {
                   disableInteractionsIfUnavailable: !0,
                   hostName: null == u || null === (e = u.host) || void 0 === e ? void 0 : e.display_name,
-                  isReplay: R === m.a.StateEnum.replay,
-                  isUnavailable: f,
-                  participants: _,
+                  isReplay: _ === m.a.StateEnum.replay,
+                  isUnavailable: B,
+                  participants: w,
                   state: null == u ? void 0 : u.state,
                 },
-                w,
+                R,
                 j,
               ),
             ),
           )
         }
-      function B(t) {
+      function f(t) {
         var e = v.a.usePlayButtonProps(),
           a = e.isPlaying,
           i = e.togglePlayback

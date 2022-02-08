@@ -666,7 +666,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'default', function () {
-          return je
+          return ze
         })
       var a = n('97Jx'),
         r = n.n(a),
@@ -679,43 +679,42 @@
         u = (n('7xRU'), n('v6aA')),
         p = n('3XMw'),
         h = n.n(p),
-        m = n('MWbm'),
-        f = n('t62R'),
-        g = n('rHpw')
-      function b(e) {
+        m = n('t62R'),
+        f = n('rHpw')
+      function g(e) {
         return o.a.createElement(
-          m.a,
-          { style: y.container },
-          o.a.createElement(f.b, { align: 'center', numberOfLines: 1, size: 'title4', weight: 'bold' }, v.connecting),
+          m.b,
+          { numberOfLines: 1, size: 'headline1', style: v.container, weight: 'bold' },
+          b.connecting,
         )
       }
-      var v = { connecting: h.a.e4e811fb },
-        y = g.a.create(function (e) {
+      var b = { connecting: h.a.e4e811fb },
+        v = f.a.create(function (e) {
           return { container: { paddingBottom: e.spaces.space48 } }
         }),
-        E = n('Pc/x'),
-        C = (n('z84I'), n('p3P5')),
-        S = n('m3Bd'),
-        w = n.n(S),
-        I = n('ddV6'),
-        _ = n.n(I),
-        k = n('hOZg'),
-        x = n('RqPI')
-      var P = n('zCf4'),
-        R = n('uDfI'),
-        L = n('dgjd'),
-        A = n('mjJ+'),
-        B = n('/yvb'),
-        D = n('FXw/'),
-        F = n('GCOQ')
-      function H(e) {
+        y = n('Pc/x'),
+        E = (n('z84I'), n('p3P5')),
+        C = n('m3Bd'),
+        S = n.n(C),
+        w = n('ddV6'),
+        I = n.n(w),
+        _ = n('hOZg'),
+        k = n('RqPI')
+      var x = n('zCf4'),
+        P = n('uDfI'),
+        R = n('dgjd'),
+        L = n('mjJ+'),
+        A = n('/yvb'),
+        B = n('FXw/'),
+        D = n('GCOQ')
+      function F(e) {
         var t = (function (e) {
-            var t = Object(P.f)(),
-              n = Object(L.a)(e).utils,
-              a = Object(R.d)(x.m),
+            var t = Object(x.f)(),
+              n = Object(R.a)(e).utils,
+              a = Object(P.d)(k.m),
               r = [],
               i = {
-                Icon: F.a,
+                Icon: D.a,
                 isEmphasized: !0,
                 onClick: function () {
                   n.scribe(':audiospace::caret:report:click'),
@@ -725,18 +724,18 @@
                       })(e),
                     )
                 },
-                text: O.reportThisSpace,
+                text: H.reportThisSpace,
               }
             a && r.push(i)
             return { items: r }
           })(e.audioSpaceId),
           n = o.a.useState(!1),
-          a = _()(n, 2),
+          a = I()(n, 2),
           r = a[0],
           i = a[1]
         if (t.items.length < 1) return null
         var s = r
-          ? o.a.createElement(A.a, {
+          ? o.a.createElement(L.a, {
               isFixed: !0,
               items: t.items,
               onCloseRequested: function () {
@@ -748,12 +747,12 @@
         return o.a.createElement(
           o.a.Fragment,
           null,
-          o.a.createElement(B.a, {
-            accessibilityLabel: O.more,
+          o.a.createElement(A.a, {
+            accessibilityLabel: H.more,
             borderColor: 'transparent',
             color: 'text',
-            hoverLabel: { label: O.more },
-            icon: o.a.createElement(D.a, null),
+            hoverLabel: { label: H.more },
+            icon: o.a.createElement(B.a, null),
             onPress: function () {
               return i(!0)
             },
@@ -763,10 +762,11 @@
           s,
         )
       }
-      var O = { more: h.a.h63a5c3b, reportThisSpace: h.a.b3481ffd },
-        T = n('0nhk'),
-        U = n('xVWt')
-      var j = n('sgih'),
+      var H = { more: h.a.h63a5c3b, reportThisSpace: h.a.b3481ffd },
+        O = n('0nhk'),
+        T = n('xVWt')
+      var U = n('MWbm'),
+        j = n('sgih'),
         N = ['Content', 'CustomHeader', 'withoutDescription', 'withoutPadding'],
         M = ['Content', 'CustomHeader', 'shellLayout', 'withoutDescription', 'withoutPadding']
       function z(e) {
@@ -785,7 +785,7 @@
           },
           l =
             ((t = o.a.useState(null)),
-            (n = _()(t, 2)),
+            (n = I()(t, 2)),
             (a = n[0]),
             (i = n[1]),
             (s = o.a.useMemo(
@@ -799,7 +799,7 @@
               [a],
             )),
             [a, s]),
-          d = _()(l, 2),
+          d = I()(l, 2),
           u = d[0],
           p = d[1],
           h = [V.sheetContainer, e.withoutPadding && V.withoutPadding]
@@ -807,9 +807,9 @@
           j.a,
           c,
           o.a.createElement(
-            m.a,
+            U.a,
             { onLayout: p, style: h },
-            o.a.createElement(m.a, { style: V.sheetSpacerTop }),
+            o.a.createElement(U.a, { style: V.sheetSpacerTop }),
             o.a.createElement(W, e),
             o.a.createElement(G, e),
             o.a.createElement(q, r()({}, e, { shellLayout: u })),
@@ -818,13 +818,13 @@
       }
       function W(e) {
         e.Content, e.CustomHeader, e.withoutDescription, e.withoutPadding
-        var t = w()(e, N),
+        var t = S()(e, N),
           n = o.a.createElement(
-            B.a,
+            A.a,
             r()(
               {
                 accessibilityLabel: X.close,
-                icon: o.a.createElement(k.a, { style: V.closeIcon }),
+                icon: o.a.createElement(_.a, { style: V.closeIcon }),
                 onPress: e.onClose,
                 pullLeft: !0,
               },
@@ -834,21 +834,21 @@
         if (e.CustomHeader) return o.a.createElement(e.CustomHeader, r()({}, t, { closeButton: n }))
         var a = e.space.rest_id
         return o.a.createElement(
-          m.a,
+          U.a,
           { style: V.header },
-          o.a.createElement(m.a, { style: V.headerLeft }, n),
+          o.a.createElement(U.a, { style: V.headerLeft }, n),
           o.a.createElement(
-            m.a,
+            U.a,
             { style: V.headerRight },
             o.a.createElement(
-              m.a,
+              U.a,
               { style: V.headerRightItem },
-              o.a.createElement(T.a, { audioSpaceId: a, type: 'icon-borderless' }),
+              o.a.createElement(O.a, { audioSpaceId: a, type: 'icon-borderless' }),
             ),
             o.a.createElement(
-              m.a,
+              U.a,
               { style: V.headerRightItem },
-              o.a.createElement(H, { audioSpaceId: a, pullRight: !0 }),
+              o.a.createElement(F, { audioSpaceId: a, pullRight: !0 }),
             ),
           ),
         )
@@ -857,18 +857,18 @@
         return e.withoutDescription
           ? null
           : o.a.createElement(
-              m.a,
+              U.a,
               { style: V.descriptionContainer },
-              o.a.createElement(U.b, { audioSpaceId: e.space.rest_id }),
+              o.a.createElement(T.b, { audioSpaceId: e.space.rest_id }),
             )
       }
       function q(e) {
         if (!e.Content) return null
         e.Content, e.CustomHeader
         var t = e.shellLayout,
-          n = (e.withoutDescription, e.withoutPadding, w()(e, M))
+          n = (e.withoutDescription, e.withoutPadding, S()(e, M))
         return o.a.createElement(
-          m.a,
+          U.a,
           { style: [V.content, e.withoutPadding && V.withoutPadding] },
           o.a.createElement(e.Content, r()({}, n, { onClose: e.onClose, shellLayout: t })),
         )
@@ -876,11 +876,11 @@
       function J(e) {
         return { sheetContainer: { paddingHorizontal: e.spacesPx.space16 } }
       }
-      var V = g.a.create(function (e) {
+      var V = f.a.create(function (e) {
           var t = J(e),
             n = { height: e.spacesPx.space24 },
             a = d()({ flex: 1 }, t.sheetContainer),
-            r = { flex: 1, alignItems: 'center', paddingVertical: e.spacesPx.space20 },
+            r = { flex: 1, paddingVertical: e.spacesPx.space20 },
             i = { marginLeft: e.spaces.space8 },
             o = { paddingVertical: e.spacesPx.space16 },
             s = e.spacesPx.space24
@@ -905,23 +905,23 @@
           r = t.width,
           i = t.height,
           o =
-            ((n = g.a.theme),
+            ((n = f.a.theme),
             (a = J(n)),
             {
               getHorizontal: function (e) {
                 return e - 2 * a.sheetContainer.paddingHorizontal
               },
             }),
-          s = Object(C.b)(g.a.theme),
-          c = g.a.theme.spacesPx.space40,
+          s = Object(E.b)(f.a.theme),
+          c = f.a.theme.spacesPx.space40,
           l = i * $ - c - e.height,
-          d = r > g.a.theme.breakpoints.medium ? Math.min(Q, r * Z) : r,
+          d = r > f.a.theme.breakpoints.medium ? Math.min(Q, r * Z) : r,
           u = o.getHorizontal(d),
           p = s.getHeight(),
           h = s.getWidth(),
           m = Math.min(4, Math.floor(l / p)),
-          f = 4 === m ? 3 : 4,
-          b = Math.min(f, Math.floor(u / h))
+          g = 4 === m ? 3 : 4,
+          b = Math.min(g, Math.floor(u / h))
         return { maxDisplayParticipantCount: b * m, dynamicParticipantWidth: u / b }
       }
       var Q = 600,
@@ -964,22 +964,22 @@
         )
           c.push(u[p])
         for (var h = 0; h < s.listeners.length && !(c.length >= a.maxDisplayParticipantCount); h++) {
-          var f = s.listeners[h]
-          f && e._temp_omitByScreenName !== f.twitter_screen_name && c.push({ user: f, kind: ae.a.listener })
+          var m = s.listeners[h]
+          m && e._temp_omitByScreenName !== m.twitter_screen_name && c.push({ user: m, kind: ae.a.listener })
         }
-        var g = s.total || l.length + u.length,
-          b = Math.max(0, g - c.length)
+        var f = s.total || l.length + u.length,
+          g = Math.max(0, f - c.length)
         return o.a.createElement(
           o.a.Fragment,
           null,
           o.a.createElement(
-            m.a,
+            U.a,
             { style: ie.participantsGridContainer },
             o.a.createElement(
-              m.a,
+              U.a,
               { style: ie.participantsGridContent },
               c.map(function (e, t) {
-                return o.a.createElement(C.a, {
+                return o.a.createElement(E.a, {
                   hasNftAvatar: e.user.has_nft_avatar,
                   isVerified: e.user.is_verified,
                   key: e.user.twitter_screen_name,
@@ -992,10 +992,10 @@
               }),
             ),
           ),
-          o.a.createElement(ee.a, { audioSpaceId: e.audioSpaceId, count: b, interactive: !1 }),
+          o.a.createElement(ee.a, { audioSpaceId: e.audioSpaceId, count: g, interactive: !1 }),
         )
       }
-      var ie = g.a.create(function (e) {
+      var ie = f.a.create(function (e) {
         return {
           participantsGridContainer: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center' },
           participantsGridContent: { flex: 1, flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start' },
@@ -1009,7 +1009,7 @@
       function ce(e) {
         var t = e.space
         if (!t) return null
-        var n = E.a.loggedInUser(),
+        var n = y.a.loggedInUser(),
           a = n && n.screen_name
         return o.a.createElement(
           o.a.Fragment,
@@ -1023,16 +1023,16 @@
             shellLayout: e.shellLayout,
           }),
           o.a.createElement(
-            m.a,
+            U.a,
             { style: de.joinSubtitleContainer },
             o.a.createElement(
-              f.b,
+              m.b,
               { align: 'center', numberOfLines: 1, size: 'subtext2', style: de.joinSubtitle },
               le.spaceJoinSubtitle,
             ),
           ),
           o.a.createElement(
-            m.a,
+            U.a,
             { style: de.joinButtonContainer },
             o.a.createElement(
               se.a,
@@ -1043,7 +1043,7 @@
                 },
               },
               o.a.createElement(
-                f.b,
+                m.b,
                 { align: 'center', color: 'white', numberOfLines: 1, size: 'headline1', weight: 'bold' },
                 le.spaceJoin,
               ),
@@ -1052,7 +1052,7 @@
         )
       }
       var le = { spaceJoin: h.a.cc8f82bb, spaceJoinSubtitle: h.a.e51df2e6 },
-        de = g.a.create(function (e) {
+        de = f.a.create(function (e) {
           return {
             joinSubtitleContainer: { width: '100%', marginTop: e.spacesPx.space20 },
             joinSubtitle: { lineHeight: e.lineHeightsPx.subtext2 },
@@ -1070,10 +1070,10 @@
       function fe(e) {
         var t = Object(ue.a)(e.broadcastId)
         return o.a.createElement(
-          m.a,
+          U.a,
           { style: ge.container },
           o.a.createElement(
-            m.a,
+            U.a,
             { style: ge.cardContainer },
             o.a.createElement(pe.a, { audioSpaceId: e.broadcastId, withoutButton: !0 }),
           ),
@@ -1091,80 +1091,87 @@
             }),
           ),
           o.a.createElement(
-            m.a,
+            U.a,
             { style: ge.shareButtonContainer },
-            o.a.createElement(T.a, { audioSpaceId: e.broadcastId }),
+            o.a.createElement(O.a, { audioSpaceId: e.broadcastId }),
           ),
         )
       }
-      var ge = g.a.create(function (e) {
-          var t = { width: '100%', paddingHorizontal: e.spaces.space8, paddingBottom: e.spaces.space48 }
-          return {
-            cardContainer: { paddingBottom: e.spaces.space32 },
-            container: t,
-            ctaButton: { width: '100%', marginTop: e.spaces.space32, borderRadius: e.borderRadii.infinite },
-            shareButtonContainer: { marginTop: e.spaces.space8 },
-          }
+      var ge = f.a.create(function (e) {
+        var t = { width: '100%', paddingHorizontal: e.spaces.space8, paddingBottom: e.spaces.space48 }
+        return {
+          cardContainer: { paddingBottom: e.spaces.space32 },
+          container: t,
+          ctaButton: { width: '100%', marginTop: e.spaces.space32, borderRadius: e.borderRadii.infinite },
+          shareButtonContainer: { marginTop: e.spaces.space8 },
+        }
+      })
+      function be(e) {
+        return o.a.createElement(m.b, { size: 'headline1', style: ye.container, weight: 'bold' }, ve.message)
+      }
+      var ve = { message: h.a.h87bdd64 },
+        ye = f.a.create(function (e) {
+          return { container: { paddingBottom: e.spaces.space48 } }
         }),
-        be = (n('LW0h'), n('7x/C'), n('cFuS'))
-      function ve(e) {
+        Ee = (n('LW0h'), n('7x/C'), n('cFuS'))
+      function Ce(e) {
         return o.a.createElement(
-          m.a,
-          { style: Ee.endedContainer },
+          U.a,
+          { style: we.endedContainer },
           o.a.createElement(
-            f.b,
-            { align: 'center', style: Ee.endedTitle },
+            m.b,
+            { align: 'center', style: we.endedTitle },
             o.a.createElement('span', { role: 'img' }, '🙉'),
           ),
-          o.a.createElement(f.b, { align: 'center', numberOfLines: 1, size: 'title4', weight: 'bold' }, ye.spaceEnded),
+          o.a.createElement(m.b, { align: 'center', numberOfLines: 1, size: 'title4', weight: 'bold' }, Se.spaceEnded),
           o.a.createElement(
-            f.b,
+            m.b,
             {
               align: 'center',
               color: 'gray700',
               numberOfLines: 1,
               size: 'body',
-              style: Ee.endedSubtitle,
+              style: we.endedSubtitle,
               weight: 'bold',
             },
-            ye.spaceEndedSubtitle,
+            Se.spaceEndedSubtitle,
           ),
         )
       }
-      var ye = { spaceEnded: h.a.cc5ab041, spaceEndedSubtitle: h.a.eadd5677 },
-        Ee = g.a.create(function (e) {
+      var Se = { spaceEnded: h.a.cc5ab041, spaceEndedSubtitle: h.a.eadd5677 },
+        we = f.a.create(function (e) {
           return {
             endedContainer: { paddingBottom: e.spaces.space48 },
             endedTitle: {
               paddingBottom: e.spaces.space32,
               fontSize: e.spaces.space64,
-              lineHeight: ''.concat(g.a.theme.spacesPx.space64 + g.a.theme.spacesPx.space20, 'px'),
+              lineHeight: ''.concat(f.a.theme.spacesPx.space64 + f.a.theme.spacesPx.space20, 'px'),
             },
             endedSubtitle: { paddingTop: e.spaces.space12 },
           }
         }),
-        Ce = n('hqDb'),
-        Se = n('cHvH'),
-        we = n('88ay'),
-        Ie = ['windowWidth']
-      function _e(e, t) {
-        return o.a.createElement(we.b, {
-          decoration: we.e,
+        Ie = n('hqDb'),
+        _e = n('cHvH'),
+        ke = n('88ay'),
+        xe = ['windowWidth']
+      function Pe(e, t) {
+        return o.a.createElement(ke.b, {
+          decoration: ke.e,
           displayMode: 'UserCompact',
           key: t,
-          promotedItemType: be.c.USER,
-          style: e ? Be.userCellWide : Be.userCell,
+          promotedItemType: Ee.c.USER,
+          style: e ? He.userCellWide : He.userCell,
           userId: t,
           withFollowsYou: !0,
         })
       }
-      function ke(e) {
-        return _e(!1, e)
+      function Re(e) {
+        return Pe(!1, e)
       }
-      function xe(e) {
-        return _e(!0, e)
+      function Le(e) {
+        return Pe(!0, e)
       }
-      function Pe(e) {
+      function Ae(e) {
         var t = e.isWide,
           n = e.label,
           a = e.style,
@@ -1172,28 +1179,28 @@
         return 0 === r.length
           ? null
           : o.a.createElement(
-              m.a,
+              U.a,
               { style: a },
               o.a.createElement(
-                f.b,
+                m.b,
                 {
                   numberOfLines: 1,
                   size: 'headline2',
-                  style: t ? Be.endedSubtitleWide : Be.endedSubtitle,
+                  style: t ? He.endedSubtitleWide : He.endedSubtitle,
                   weight: 'bold',
                 },
                 n,
               ),
-              o.a.createElement(Ce.a, { displayMode: 'UserCompact', renderUserCell: t ? xe : ke, userIds: r }),
+              o.a.createElement(Ie.a, { displayMode: 'UserCompact', renderUserCell: t ? Le : Re, userIds: r }),
             )
       }
-      function Re(e) {
+      function Be(e) {
         var t,
           n,
           a = e.windowWidth,
-          r = w()(e, Ie),
+          r = S()(e, xe),
           i = r.space
-        if (!i) return o.a.createElement(ve, r)
+        if (!i) return o.a.createElement(Ce, r)
         var s = function (e) {
             return Object(te.a)(
               (null == e
@@ -1209,37 +1216,37 @@
           c = null === (t = i.host) || void 0 === t || null === (n = t.user) || void 0 === n ? void 0 : n.rest_id,
           l = s(i.cohosts),
           d = s(i.participants.speakers),
-          u = a > g.a.theme.breakpoints.medium
+          u = a > f.a.theme.breakpoints.medium
         return o.a.createElement(
-          m.a,
-          { style: u ? Be.endedContainerWide : Be.endedContainer },
+          U.a,
+          { style: u ? He.endedContainerWide : He.endedContainer },
           o.a.createElement(
-            m.a,
-            { style: Be.overflow },
-            o.a.createElement(Pe, { isWide: u, label: Ae.host, users: c ? [c] : [] }),
-            o.a.createElement(Pe, {
+            U.a,
+            { style: He.overflow },
+            o.a.createElement(Ae, { isWide: u, label: Fe.host, users: c ? [c] : [] }),
+            o.a.createElement(Ae, {
               isWide: u,
-              label: Ae.cohosts({ hostCount: l.length }),
-              style: Be.userSectionPadding,
+              label: Fe.cohosts({ hostCount: l.length }),
+              style: He.userSectionPadding,
               users: l,
             }),
-            o.a.createElement(Pe, {
+            o.a.createElement(Ae, {
               isWide: u,
-              label: Ae.speakers({ speakerCount: d.length }),
-              style: Be.userSectionPadding,
+              label: Fe.speakers({ speakerCount: d.length }),
+              style: He.userSectionPadding,
               users: d,
             }),
           ),
         )
       }
-      function Le(e) {
-        return o.a.createElement(Se.a, null, function (t) {
+      function De(e) {
+        return o.a.createElement(_e.a, null, function (t) {
           var n = t.windowWidth
-          return o.a.createElement(Re, r()({ windowWidth: n }, e))
+          return o.a.createElement(Be, r()({ windowWidth: n }, e))
         })
       }
-      var Ae = { spaceEnded: h.a.ba55e824, host: h.a.cededf29, cohosts: h.a.aadbc746, speakers: h.a.hbd6035f },
-        Be = g.a.create(function (e) {
+      var Fe = { spaceEnded: h.a.ba55e824, host: h.a.cededf29, cohosts: h.a.aadbc746, speakers: h.a.hbd6035f },
+        He = f.a.create(function (e) {
           var t = { paddingTop: e.spaces.space12, paddingBottom: e.spaces.space4 },
             n = { width: '100%', maxHeight: 550, overflow: 'auto' }
           return {
@@ -1253,9 +1260,9 @@
             userSectionPadding: { paddingTop: e.spacesPx.space16 },
           }
         }),
-        De = n('21zW'),
-        Fe = n('MH+I')
-      function He(e) {
+        Oe = n('21zW'),
+        Te = n('MH+I')
+      function Ue(e) {
         var t,
           n,
           a = null === (t = e.space) || void 0 === t ? void 0 : t.ended_at,
@@ -1263,37 +1270,37 @@
           i = 0
         return (
           null != a && null != r && (i = a - r),
-          o.a.createElement(Se.a, null, function (t) {
+          o.a.createElement(_e.a, null, function (t) {
             var n,
               a = t.windowWidth
             return o.a.createElement(
-              m.a,
-              { style: a > g.a.theme.breakpoints.medium ? Te.endedHeaderWide : Te.endedHeader },
+              U.a,
+              { style: a > f.a.theme.breakpoints.medium ? Ne.endedHeaderWide : Ne.endedHeader },
               o.a.createElement(
-                m.a,
+                U.a,
                 null,
-                o.a.createElement(m.a, { style: Te.closeButton }, e.closeButton),
+                o.a.createElement(U.a, { style: Ne.closeButton }, e.closeButton),
                 o.a.createElement(
-                  m.a,
-                  { style: Te.row },
+                  U.a,
+                  { style: Ne.row },
                   o.a.createElement(
-                    f.b,
-                    { color: 'gray700', size: 'subtext1', style: [Te.endedLabel, Te.upper], weight: 'bold' },
-                    Oe.ended,
+                    m.b,
+                    { color: 'gray700', size: 'subtext1', style: [Ne.endedLabel, Ne.upper], weight: 'bold' },
+                    je.ended,
                     ' ',
-                    o.a.createElement(De.a, null),
+                    o.a.createElement(Oe.a, null),
                   ),
-                  o.a.createElement(Fe.a, {
+                  o.a.createElement(Te.a, {
                     color: 'gray700',
                     short: !0,
                     size: 'subtext1',
-                    style: Te.endedLabel,
+                    style: Ne.endedLabel,
                     timeMs: i,
                   }),
                 ),
               ),
               o.a.createElement(
-                f.b,
+                m.b,
                 { size: 'title2', weight: 'bold' },
                 null === (n = e.space) || void 0 === n ? void 0 : n.title,
               ),
@@ -1301,8 +1308,8 @@
           })
         )
       }
-      var Oe = { ended: h.a.ba55e824 },
-        Te = g.a.create(function (e) {
+      var je = { ended: h.a.ba55e824 },
+        Ne = f.a.create(function (e) {
           return {
             endedHeader: { paddingHorizontal: e.componentDimensions.gutterHorizontalPx },
             endedHeaderWide: { paddingHorizontal: 2 * e.componentDimensions.gutterHorizontalPx },
@@ -1313,58 +1320,61 @@
             closeButton: { alignItems: 'flex-start' },
           }
         })
-      function Ue(e) {
+      function Me(e) {
         var t,
-          n = null === (t = e.location.state) || void 0 === t ? void 0 : t.origin,
-          a = o.a.useContext(u.a).featureSwitches,
-          i = Object(L.a)(e.broadcastId || '')
+          n,
+          a = null === (t = e.location.state) || void 0 === t ? void 0 : t.origin,
+          i = o.a.useContext(u.a).featureSwitches,
+          s = Object(R.a)(e.broadcastId || '')
         o.a.useEffect(function () {
           var e
           return (
-            i.utils.is.joined && (e = setTimeout(c, 1e3)),
-            i.utils.scribe(':audiospace:preview:::impression', { origin: n }),
+            s.utils.is.joined && (e = setTimeout(l, 1e3)),
+            s.utils.scribe(':audiospace:preview:::impression', { origin: a }),
             function () {
               clearTimeout(e)
             }
           )
         }, [])
-        var s = i.space
-        if (!s) return null
-        function c() {
+        var c = s.space
+        if (!c) return null
+        function l() {
           e.history.goBackThroughModals()
         }
-        var l = d()(
+        var p = d()(
           d()({}, e),
           {},
           {
-            space: s,
-            onClose: c,
+            space: c,
+            onClose: l,
             onJoin: function () {
-              return i.handlers.join(n)
+              return s.handlers.join(a)
             },
           },
         )
-        return i.utils.is.joined
-          ? o.a.createElement(z, r()({}, l, { Content: b }))
-          : i.utils.is.Running
-          ? o.a.createElement(z, r()({}, l, { Content: ce }))
-          : i.utils.is.NotStarted || i.utils.is.PrePublished
-          ? o.a.createElement(z, r()({}, l, { Content: fe, withoutDescription: !0 }))
-          : i.utils.is.loaded
-          ? a.isTrue('voice_rooms_end_screen_participants')
+        return null !== (n = s.space) && void 0 !== n && n.ticket_group_id
+          ? o.a.createElement(z, r()({}, p, { Content: be }))
+          : s.utils.is.joined
+          ? o.a.createElement(z, r()({}, p, { Content: g }))
+          : s.utils.is.Running
+          ? o.a.createElement(z, r()({}, p, { Content: ce }))
+          : s.utils.is.NotStarted || s.utils.is.PrePublished
+          ? o.a.createElement(z, r()({}, p, { Content: fe, withoutDescription: !0 }))
+          : s.utils.is.loaded
+          ? i.isTrue('voice_rooms_end_screen_participants')
             ? o.a.createElement(
                 z,
-                r()({}, l, { Content: Le, CustomHeader: He, withoutDescription: !0, withoutPadding: !0 }),
+                r()({}, p, { Content: De, CustomHeader: Ue, withoutDescription: !0, withoutPadding: !0 }),
               )
-            : o.a.createElement(z, r()({}, l, { Content: ve }))
-          : o.a.createElement(z, r()({}, l, { Content: b }))
+            : o.a.createElement(z, r()({}, p, { Content: Ce }))
+          : o.a.createElement(z, r()({}, p, { Content: g }))
       }
-      function je(e) {
-        return o.a.createElement(s.a, e, o.a.createElement(Ne, e))
+      function ze(e) {
+        return o.a.createElement(s.a, e, o.a.createElement(We, e))
       }
-      function Ne(e) {
+      function We(e) {
         var t = Object(c.a)(e.match)
-        return o.a.createElement(Ue, r()({}, e, { broadcastId: t }))
+        return o.a.createElement(Me, r()({}, e, { broadcastId: t }))
       }
     },
     Z5jE: function (e, t, n) {

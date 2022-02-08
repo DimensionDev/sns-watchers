@@ -5,30 +5,30 @@
       'use strict'
       var r = n('ERkP'),
         a = n.n(r),
-        o = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
-        c = Object(o.a)({
+        c = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
+        o = Object(c.a)({
           loader: function () {
             return n.e(171).then(n.bind(null, 'ACNv'))
           },
         }),
         i = n('4bW+'),
-        l = n('IG7M'),
-        u = n('rHpw'),
-        s = n('Irs7'),
-        d = u.a.create(function (e) {
+        s = n('IG7M'),
+        l = n('rHpw'),
+        u = n('Irs7'),
+        d = l.a.create(function (e) {
           return { curationControl: { marginStart: e.spaces.space20 } }
         })
-      t.a = Object(s.a)(function (e) {
+      t.a = Object(u.a)(function (e) {
         var t = e.analytics,
           n = e.feedbackItems,
           r = e.isDisplayedOnMedia
         if (n && n.length > 0) {
-          return a.a.createElement(l.a, {
+          return a.a.createElement(s.a, {
             onClick: function () {
               return t.scribe({ element: 'caret', action: 'click' })
             },
             renderActionMenu: function (e) {
-              return a.a.createElement(c, { actionItems: n, onClose: e })
+              return a.a.createElement(o, { actionItems: n, onClose: e })
             },
             style: d.curationControl,
             testID: i.a.caret,
@@ -41,45 +41,73 @@
     oiEo: function (e, t, n) {
       'use strict'
       n.r(t)
-      var r = n('ezF+'),
-        a = n('VPAj'),
+      var r = n('yiKp'),
+        a = n.n(r),
+        c = n('ezF+'),
         o = n('ERkP'),
-        c = n.n(o),
-        i = n('RoyM'),
-        l = n('6vad'),
-        u = function (e) {
+        i = n.n(o),
+        s = n('VPAj'),
+        l = n('zh9S'),
+        u = n('RoyM'),
+        d = n('cm6r'),
+        m = n('6vad'),
+        b = function (e) {
           var t = e.entry,
             n = e.feedbackItems,
-            r = t.content.header,
-            a = r.icon,
-            o = r.landingUrl,
-            u = r.renderCustomControl,
-            s = r.socialContext,
-            d = r.text,
-            f = s && s.generalContext && s.generalContext.text,
-            m = c.a.useMemo(
+            r = e.onPress,
+            a = t.content.header,
+            c = a.icon,
+            o = a.landingUrl,
+            s = a.renderCustomControl,
+            l = a.socialContext,
+            b = a.text,
+            f = l && l.generalContext && l.generalContext.text,
+            p = i.a.useMemo(
               function () {
-                return u ? u() : c.a.createElement(i.a, { feedbackItems: n })
+                return s ? s() : i.a.createElement(u.a, { feedbackItems: n })
               },
-              [n, u],
+              [n, s],
             )
-          return c.a.createElement(l.b, { icon: a, landingUrl: o, rightControl: m, subtext: f, text: d })
+          return o
+            ? i.a.createElement(
+                d.a,
+                { interactive: !1, onPress: r },
+                i.a.createElement(m.b, { icon: c, landingUrl: o, rightControl: p, subtext: f, text: b }),
+              )
+            : i.a.createElement(m.b, { icon: c, landingUrl: o, rightControl: p, subtext: f, text: b })
         },
-        s = c.a.memo(u),
-        d = { viewType: 'module_header' },
-        f = r
-          .b({
-            component: s,
-            feedbackEntrySelector: function (e) {
-              return e.content.timelineModule
-            },
-            shouldDisplayBorder: Object(a.a)(!1),
-            getBehavioralEventContextOverride: function () {
-              return d
-            },
-          })
-          .getHandler()
-      t.default = f
+        f = i.a.memo(b),
+        p = { viewType: 'module_header' },
+        h = c.g({
+          shouldDisplayBorder: Object(s.a)(!1),
+          component: f,
+          bindActions: Object(s.a)({ scribe: l.c }),
+          createProps: function (e) {
+            var t = e.actions.scribe,
+              n = e.entry,
+              r = e.module,
+              c = e.scribeNamespace
+            return {
+              entry: n,
+              onPress: function () {
+                t(a()(a()({}, c), {}, { element: 'header', action: 'click' }))
+              },
+              module: r,
+            }
+          },
+          defaultScribeNamespace: { element: 'header' },
+          isFocusable: Object(s.a)(!0),
+          getBehavioralEventContextOverride: function () {
+            return p
+          },
+          onImpression: function (e) {
+            var t = e.actions.scribe,
+              n = e.entry,
+              r = e.scribeNamespace
+            n.content.header.landingUrl && t(a()(a()({}, r), {}, { element: 'header', action: 'impression' }))
+          },
+        })
+      t.default = h
     },
   },
 ])

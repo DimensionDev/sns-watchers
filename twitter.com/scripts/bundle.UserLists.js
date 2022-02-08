@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [107, 8, 11, 171, 174],
+  [107, 8, 9, 171, 174],
   {
     '1LLC': function (e, t, n) {
       'use strict'
@@ -1433,10 +1433,10 @@
       'use strict'
       n.r(t),
         n.d(t, 'TypeaheadInput', function () {
-          return B
+          return H
         }),
         n.d(t, 'styles', function () {
-          return H
+          return V
         })
       var a = n('VrFO'),
         r = n.n(a),
@@ -1473,7 +1473,8 @@
         D = n('cHvH'),
         F = n('oEoC'),
         j = I.a.f065ba8c,
-        U = function (e) {
+        U = { viewType: 'typeahead_input' },
+        N = function (e) {
           return L.a.isTwoColumnNormalLayout(e)
             ? {
                 width: g.a.columnWidths.secondary.normal + T.a.theme.spacesPx.space24,
@@ -1486,8 +1487,8 @@
               }
             : void 0
         },
-        N = 1,
-        B = (function (e) {
+        B = 1,
+        H = (function (e) {
           u()(n, e)
           var t = p()(n)
           function n(e, a) {
@@ -1515,20 +1516,20 @@
                   g = o.state.showTypeaheadDropdown || a
                 return b.a.createElement(
                   y.a,
-                  { viewType: 'typeahead_input' },
+                  { behavioralEventContext: U },
                   b.a.createElement(
                     k.a,
-                    { onLayout: o._handleLayout, ref: o._setRootContainerNode, style: [H.root, f] },
+                    { onLayout: o._handleLayout, ref: o._setRootContainerNode, style: [V.root, f] },
                     b.a.createElement(
                       O.a,
-                      { onKeyDown: o._handleKeyDown, style: H.keydownInputListener },
+                      { onKeyDown: o._handleKeyDown, style: V.keydownInputListener },
                       b.a.createElement(
                         _.a,
                         {
                           accessibilityLabel: u,
                           accessibilityRole: 'search',
                           onSubmit: o._handleFormSubmit,
-                          style: H.wrapper,
+                          style: V.wrapper,
                         },
                         b.a.createElement(
                           k.a,
@@ -1564,7 +1565,7 @@
                         ),
                         b.a.createElement(
                           k.a,
-                          { style: [H.typeaheadContainer, !p && H.topBorder] },
+                          { style: [V.typeaheadContainer, !p && V.topBorder] },
                           g ? o._renderDropdown(t) : null,
                         ),
                       ),
@@ -1603,14 +1604,14 @@
                   P = O.dropdownOffset,
                   A = O.query,
                   D = d
-                    ? H.modalDropdown
+                    ? V.modalDropdown
                     : [
-                        H.dropdown,
+                        V.dropdown,
                         !R && x && P ? [Object(F.d)(P), { height: 'calc(100vh - '.concat(P, 'px)') }] : null,
-                        (R || p) && H.wideModeDropdown,
-                        o._withNewTypeaheadUI && u && U(e),
-                        p && H.shortModeDropdown,
-                        !R && p && H.shortModeDropdownMobile,
+                        (R || p) && V.wideModeDropdown,
+                        o._withNewTypeaheadUI && u && N(e),
+                        p && V.shortModeDropdown,
+                        !R && p && V.shortModeDropdownMobile,
                       ],
                   j = {
                     ariaDescendantId: o.state.ariaDescendantId,
@@ -1747,8 +1748,8 @@
                 o._dropdownRef && o._dropdownRef.focusPrevious()
               }),
               (o.state = { ariaDescendantId: Object(F.b)(), query: e.initialValue, showTypeaheadDropdown: !1 }),
-              (o._dropdownDomId = 'typeaheadDropdown-'.concat(N)),
-              (N += 1),
+              (o._dropdownDomId = 'typeaheadDropdown-'.concat(B)),
+              (B += 1),
               (o._withNewTypeaheadUI = o.context.featureSwitches.isTrue(
                 'responsive_web_account_search_readability_enabled',
               )),
@@ -1797,15 +1798,15 @@
             n
           )
         })(b.a.Component)
-      m()(B, 'defaultProps', {
+      m()(H, 'defaultProps', {
         disableClearButton: !1,
         filter: [x.a.Users, x.a.Topics],
         isInSidebar: !1,
         initialValue: '',
         withSectionDivider: !0,
       }),
-        m()(B, 'contextType', R.a)
-      var H = T.a.create(function (e) {
+        m()(H, 'contextType', R.a)
+      var V = T.a.create(function (e) {
         return {
           root: { flex: 1, flexDirection: 'column', position: 'relative', zIndex: w.d + 1 },
           typeaheadContainer: { flex: 1, position: 'relative' },
@@ -1845,7 +1846,7 @@
           },
         }
       })
-      t.default = B
+      t.default = H
     },
     '5+NO': function (e, t, n) {
       'use strict'
@@ -3269,26 +3270,23 @@
           n = e.text
         return { query: { text: n ? F.shareTextPrefixFormatter({ prefix: n, url: t }) : t } }
       }
-      var U = n('T0aG'),
-        N = n.n(U),
-        B = n('mN6z')
-      var H = n('mjJ+'),
-        V = n('rHpw'),
-        K = { element: 'share' }
-      function W(e) {
+      var U = n('mN6z')
+      var N = n('mjJ+'),
+        B = n('rHpw'),
+        H = { element: 'share' }
+      function V(e) {
         var t = (function (e) {
             var t = r.a.useRef({ previous: void 0 })
-            if ('object' !== N()(e)) return e
-            function n() {
+            function n(e) {
               return (t.current.previous = e), e
             }
             var a = t.current.previous
-            return a && (e === a || Object(B.a)(e, a)) ? a : n()
-          })(l()(l()({}, K), e.scribeNamespace)),
+            return a && (e === a || Object(U.a)(e, a)) ? a : n(e)
+          })(l()(l()({}, H), e.scribeNamespace)),
           n = D(l()(l()({}, e), {}, { scribeNamespace: t })),
           a = n.analytics,
           o = n.getActionItem
-        var i = e.ButtonComponent || q
+        var i = e.ButtonComponent || K
         return r.a.createElement(i, {
           onPress: function () {
             var e = l()(l()({}, t), {}, { action: 'share_menu_click' })
@@ -3309,26 +3307,26 @@
                     var t = o({ type: e })
                     t && n.push(t)
                   }),
-              r.a.createElement(H.a, { isFixed: e.isFixed, items: n, onCloseRequested: t, shouldCloseOnClick: !0 })
+              r.a.createElement(N.a, { isFixed: e.isFixed, items: n, onCloseRequested: t, shouldCloseOnClick: !0 })
             )
           },
         })
       }
-      function q(e) {
-        return r.a.createElement(v, s()({}, e, { style: z.button, testID: b }))
+      function K(e) {
+        return r.a.createElement(v, s()({}, e, { style: W.button, testID: b }))
       }
-      var z = V.a.create(function (e) {
+      var W = B.a.create(function (e) {
           return { button: { marginRight: e.spaces.space4 } }
         }),
-        G = ['copyLinkShareLabel', 'dmShareLabel', 'externalShareLabel', 'tweetShareLabel']
-      function Y(e) {
+        q = ['copyLinkShareLabel', 'dmShareLabel', 'externalShareLabel', 'tweetShareLabel']
+      function z(e) {
         var t = e.copyLinkShareLabel,
           n = e.dmShareLabel,
           a = e.externalShareLabel,
           i = e.tweetShareLabel,
-          s = _()(e, G)
+          s = _()(e, q)
         return r.a.createElement(
-          W,
+          V,
           s,
           r.a.createElement(o, { label: i, type: 'tweet' }),
           r.a.createElement(o, { label: n, type: 'dm' }),
@@ -3336,8 +3334,8 @@
           r.a.createElement(o, { label: a, type: 'via' }),
         )
       }
-      ;(Y.Action = o), (Y.Custom = W)
-      t.a = Y
+      ;(z.Action = o), (z.Custom = V)
+      t.a = z
     },
     'Lwx/': function (e, t, n) {
       'use strict'

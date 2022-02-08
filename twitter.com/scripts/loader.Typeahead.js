@@ -18,7 +18,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'SearchBoxContainer', function () {
-          return st
+          return lt
         })
       var r = a('yiKp'),
         n = a.n(r),
@@ -505,7 +505,8 @@
         }),
         Fe = Ue,
         je = a('htQn'),
-        qe = (function (e) {
+        qe = { viewType: 'search_item' },
+        Ne = (function (e) {
           f()(a, e)
           var t = y()(a)
           function a(e, r) {
@@ -533,7 +534,7 @@
                       onItemClick: r,
                       onRemove: n._handleOnRemove,
                       ref: n._handleItemRef,
-                      style: Ne.itemPadding,
+                      style: He.itemPadding,
                       withNewTypeaheadUI: n._withNewTypeaheadUI,
                     })
                   : a.topic
@@ -590,7 +591,7 @@
                     r = e.testID
                   return I.a.createElement(
                     w.a,
-                    { viewType: 'search_item' },
+                    { behavioralEventContext: qe },
                     I.a.createElement(
                       je.a,
                       {
@@ -599,7 +600,7 @@
                         focusable: !0,
                         nativeID: t,
                         onClick: this._handleOnClick,
-                        style: [Ne.root, t && Ne.focused, !(null != a && a.user) && Ne.itemPadding],
+                        style: [He.root, t && He.focused, !(null != a && a.user) && He.itemPadding],
                         testID: r,
                       },
                       this._renderSearchItem(),
@@ -617,8 +618,8 @@
             a
           )
         })(I.a.Component)
-      S()(qe, 'contextType', _e.a)
-      var Ne = ae.a.create(function (e) {
+      S()(Ne, 'contextType', _e.a)
+      var He = ae.a.create(function (e) {
           return {
             root: { cursor: 'pointer' },
             itemPadding: {
@@ -628,17 +629,17 @@
             focused: { backgroundColor: e.colors.gray0 },
           }
         }),
-        He = qe,
-        Me = a('4ZbN'),
-        Pe = a('eb3s'),
-        Ve = a('MXDK'),
-        Ke = D.a.ee295fbe,
-        Qe = { headline: D.a.f45c425f, text: D.a.caae4dd9, confirmButtonLabel: D.a.dbd5d40f },
-        Be = D.a.a8d68f61,
-        We = D.a.c6530778,
-        ze = D.a.e047b8fa,
-        Ge = ['user', 'keyword'],
-        Ye = (function (e) {
+        Me = Ne,
+        Pe = a('4ZbN'),
+        Ve = a('eb3s'),
+        Ke = a('MXDK'),
+        Qe = D.a.ee295fbe,
+        Be = { headline: D.a.f45c425f, text: D.a.caae4dd9, confirmButtonLabel: D.a.dbd5d40f },
+        We = D.a.a8d68f61,
+        ze = D.a.c6530778,
+        Ge = D.a.e047b8fa,
+        Ye = ['user', 'keyword'],
+        Xe = (function (e) {
           f()(a, e)
           var t = y()(a)
           function a(e, r) {
@@ -672,8 +673,8 @@
                 return r
                   ? I.a.createElement(
                       ee.a,
-                      { style: Xe.emptyState, testID: Me.a.typeaheadEmptySearch },
-                      I.a.createElement(de.b, { align: 'center', color: 'gray700' }, Ke),
+                      { style: Ze.emptyState, testID: Pe.a.typeaheadEmptySearch },
+                      I.a.createElement(de.b, { align: 'center', color: 'gray700' }, Qe),
                     )
                   : I.a.createElement(
                       ee.a,
@@ -684,12 +685,12 @@
                             null,
                             I.a.createElement(
                               ee.a,
-                              { style: Xe.header, testID: Me.a.typeaheadRecentSearchesHeader },
-                              I.a.createElement(de.b, { numberOfLines: 1, size: 'headline1', weight: 'bold' }, Be),
+                              { style: Ze.header, testID: Pe.a.typeaheadRecentSearchesHeader },
+                              I.a.createElement(de.b, { numberOfLines: 1, size: 'headline1', weight: 'bold' }, We),
                               I.a.createElement(
                                 te.a,
                                 { onPress: c._handleClearAllClick, size: 'xSmall', type: 'brandText' },
-                                ze,
+                                Ge,
                               ),
                             ),
                             n.map(function (e, t) {
@@ -705,10 +706,10 @@
                               ee.a,
                               {
                                 accessibilityHidden: !0,
-                                style: [Xe.header, Xe.borderTop],
-                                testID: Me.a.typeaheadSavedSearchesHeader,
+                                style: [Ze.header, Ze.borderTop],
+                                testID: Pe.a.typeaheadSavedSearchesHeader,
                               },
-                              I.a.createElement(de.b, { numberOfLines: 1, size: 'headline1', weight: 'bold' }, We),
+                              I.a.createElement(de.b, { numberOfLines: 1, size: 'headline1', weight: 'bold' }, ze),
                             ),
                             c._renderSavedSearches(),
                           )
@@ -718,7 +719,7 @@
               S()(h()(c), '_renderRecentSearchItem', function (e, t) {
                 var a = c.props.ariaDescendantId,
                   r = c.state.focusIndex === t
-                return I.a.createElement(He, {
+                return I.a.createElement(Me, {
                   domId: r ? a : void 0,
                   index: t,
                   item: e,
@@ -726,7 +727,7 @@
                   onItemClick: c._handleOnItemClick,
                   onRemoveQuery: c._handleRemoveQuery,
                   ref: r ? c._setFocusedItemRef : void 0,
-                  testID: Me.a.typeaheadRecentSearchesItem,
+                  testID: Pe.a.typeaheadRecentSearchesItem,
                 })
               }),
               S()(h()(c), '_chooseKeyType', function (e, t) {
@@ -751,10 +752,10 @@
                   o.reverse(),
                   I.a.createElement(
                     ee.a,
-                    { testID: Me.a.typeaheadSavedSearchesContainer },
+                    { testID: Pe.a.typeaheadSavedSearchesContainer },
                     o.map(function (e, a) {
                       var o = r === a + n.length
-                      return I.a.createElement(He, {
+                      return I.a.createElement(Me, {
                         domId: o ? t : void 0,
                         index: a,
                         item: e,
@@ -762,7 +763,7 @@
                         onItemClick: c._handleOnItemClick,
                         onRemoveQuery: c._handleRemoveQuery,
                         ref: o ? c._setFocusedItemRef : void 0,
-                        testID: Me.a.typeaheadSavedSearchesItem,
+                        testID: Pe.a.typeaheadSavedSearchesItem,
                       })
                     }),
                   )
@@ -916,7 +917,7 @@
                 ;(c._focusedItemRef = e),
                   e &&
                     c._shouldScrollToFocusedItem &&
-                    (Object(Ve.c)(c._getScrollParent(), c._getFocusedItem()), (c._shouldScrollToFocusedItem = !1))
+                    (Object(Ke.c)(c._getScrollParent(), c._getFocusedItem()), (c._shouldScrollToFocusedItem = !1))
               }),
               S()(h()(c), 'hasFocusedItem', function () {
                 return c._getNumOfSearchItems() > 0
@@ -961,7 +962,7 @@
                 allowedRecentSearchItems:
                   ((o = !0 === l.getValueWithoutScribeImpression('responsive_web_recent_searches_topics_enabled')),
                   (s = !0 === l.getValueWithoutScribeImpression('responsive_web_recent_searches_events_enabled')),
-                  [].concat(Ge, [o ? 'topic' : '', s ? 'event' : ''])),
+                  [].concat(Ye, [o ? 'topic' : '', s ? 'event' : ''])),
               }),
               (c._withNewTypeaheadUI = c.context.featureSwitches.isTrue(
                 'responsive_web_account_search_readability_enabled',
@@ -1017,14 +1018,14 @@
                       render: this._render,
                     }),
                     n
-                      ? I.a.createElement(Pe.a, {
-                          confirmButtonLabel: Qe.confirmButtonLabel,
+                      ? I.a.createElement(Ve.a, {
+                          confirmButtonLabel: Be.confirmButtonLabel,
                           confirmButtonType: 'destructiveFilled',
-                          headline: Qe.headline,
+                          headline: Be.headline,
                           onCancel: this._handleOnClearAllCancel,
                           onConfirm: this._handleOnClearAllConfirm,
-                          testID: Me.a.deleteRecentSearchesDialog,
-                          text: Qe.text,
+                          testID: Pe.a.deleteRecentSearchesDialog,
+                          text: Be.text,
                         })
                       : null,
                     c
@@ -1040,7 +1041,7 @@
                 key: '_getScrollParent',
                 value: function () {
                   if (!this._scrollParent) {
-                    var e = Object(Ve.a)(Y.a.findDOMNode(this))
+                    var e = Object(Ke.a)(Y.a.findDOMNode(this))
                     this._scrollParent = e === window ? null : e
                   }
                   return this._scrollParent
@@ -1057,8 +1058,8 @@
             a
           )
         })(I.a.Component)
-      S()(Ye, 'contextType', _e.a)
-      var Xe = ae.a.create(function (e) {
+      S()(Xe, 'contextType', _e.a)
+      var Ze = ae.a.create(function (e) {
           return {
             emptyState: { padding: e.spaces.space12, paddingTop: e.spaces.space20 },
             borderTop: { borderTopColor: e.colors.borderColor, borderTopStyle: 'solid', borderTopWidth: 1 },
@@ -1071,19 +1072,20 @@
             },
           }
         }),
-        Ze = B.forwardRef(Ye),
-        Je = 'SearchBox_Search_Input',
-        $e = a('TnY3'),
-        et = a('GZwR'),
-        tt = a('4e/K'),
-        at = D.a.ib2e46ee,
-        rt = D.a.hbc99b02,
-        nt = /^(\w+)$/,
-        ct = [et.a.Events, et.a.Users, et.a.Topics],
-        ot = function (e) {
+        Je = B.forwardRef(Xe),
+        $e = 'SearchBox_Search_Input',
+        et = a('TnY3'),
+        tt = a('GZwR'),
+        at = a('4e/K'),
+        rt = D.a.ib2e46ee,
+        nt = D.a.hbc99b02,
+        ct = /^(\w+)$/,
+        ot = [tt.a.Events, tt.a.Users, tt.a.Topics],
+        st = function (e) {
           return '@' === e[0] ? e.substring(1) : e
         },
-        st = (function (e) {
+        it = { viewType: 'search_field' },
+        lt = (function (e) {
           f()(a, e)
           var t = y()(a)
           function a(e, r) {
@@ -1093,12 +1095,12 @@
               (s = t.call(this, e, r)),
               S()(h()(s), '_withNewTypeaheadUI', !1),
               S()(h()(s), '_reorderResults', function (e, t, a, r) {
-                var n = Object(et.f)(t, et.b.User),
-                  c = Object(et.f)(t, et.b.NoResult),
-                  o = Object(et.f)(a, et.b.Topic),
-                  i = Object(et.f)(a, et.b.NoResult),
-                  l = Object(et.f)(r, et.b.Event),
-                  d = [].concat(b()(Object(et.e)(o)), b()(Object(et.e)(n))),
+                var n = Object(tt.f)(t, tt.b.User),
+                  c = Object(tt.f)(t, tt.b.NoResult),
+                  o = Object(tt.f)(a, tt.b.Topic),
+                  i = Object(tt.f)(a, tt.b.NoResult),
+                  l = Object(tt.f)(r, tt.b.Event),
+                  d = [].concat(b()(Object(tt.e)(o)), b()(Object(tt.e)(n))),
                   u = (
                     't1' === s._rankedTypeaheadExperimentalValue
                       ? d.sort(function (e, t) {
@@ -1123,7 +1125,7 @@
                 return u.unshift.apply(u, b()(i)), u.unshift.apply(u, b()(l)), u.push.apply(u, b()(c)), e ? [e, u] : [u]
               }),
               S()(h()(s), '_renderSearchBoxEmptyState', function (e) {
-                return I.a.createElement(Ze, o()({}, e, { onItemClick: s._handleSearchItemClick }))
+                return I.a.createElement(Je, o()({}, e, { onItemClick: s._handleSearchItemClick }))
               }),
               S()(h()(s), '_handleSearchItemClick', function (e) {
                 var t = e.category,
@@ -1151,12 +1153,12 @@
               S()(h()(s), '_getUserExactMatch', function (e) {
                 e.hasResults, e.isLoaded
                 var t = e.query,
-                  a = ot(t)
-                if (a.match(nt))
+                  a = st(t)
+                if (a.match(ct))
                   return {
                     id: ''.concat(t, '_no_result_user'),
-                    type: et.b.NoResult,
-                    data: { text: rt({ screenName: a }), type: 'user' },
+                    type: tt.b.NoResult,
+                    data: { text: nt({ screenName: a }), type: 'user' },
                   }
               }),
               S()(h()(s), '_handleOnDismiss', function () {
@@ -1208,23 +1210,23 @@
                 var a = s.props.addQuery,
                   r = s.state.query
                 switch (e.type) {
-                  case et.b.User:
+                  case tt.b.User:
                     if (e.data.id_str) a({ user: { id: e.data.id_str, type: j.a.User } })
                     s._routeTransition({ pathname: '/'.concat(e.data.screen_name) })
                     break
-                  case et.b.Topic:
-                  case et.b.Hashtag:
+                  case tt.b.Topic:
+                  case tt.b.Hashtag:
                     s._submitQuery({ query: e.data.topic, shouldAddToRecentSearch: !0, src: O.a.TypeaheadClick })
                     break
-                  case et.b.Event:
+                  case tt.b.Event:
                     e.data && e.data.url
                       ? s._routeTransition({ pathname: T.b.parseInternalUrl(e.data.url) })
                       : s._submitQuery({ query: e.data.topic, src: O.a.TypeaheadClick })
                     break
-                  case et.b.NoResult:
+                  case tt.b.NoResult:
                     var n = e.data.type
                     'user' === n
-                      ? s._routeTransition({ pathname: '/'.concat(ot(r)) })
+                      ? s._routeTransition({ pathname: '/'.concat(st(r)) })
                       : 'topic' === n &&
                         s._submitQuery({ query: r, shouldAddToRecentSearch: !0, src: O.a.TypeaheadClick })
                 }
@@ -1315,17 +1317,17 @@
                       't1' === this._rankedTypeaheadExperimentalValue || 't3' === this._rankedTypeaheadExperimentalValue
                   return I.a.createElement(
                     w.a,
-                    { viewType: 'search_field' },
+                    { behavioralEventContext: it },
                     I.a.createElement(
                       ee.a,
-                      { style: it.root },
-                      I.a.createElement(tt.default, {
-                        filter: ct,
+                      { style: dt.root },
+                      I.a.createElement(at.default, {
+                        filter: ot,
                         forceVdlDisable: t,
-                        getTopicExactMatch: s ? et.h : void 0,
+                        getTopicExactMatch: s ? tt.h : void 0,
                         getUserExactMatch: s ? this._getUserExactMatch : void 0,
                         initialValue: l,
-                        inputStyle: it.input,
+                        inputStyle: dt.input,
                         isCompact: a,
                         isInSidebar: r,
                         isOnHomepage: n,
@@ -1343,8 +1345,8 @@
                         shouldAutoFocus: d,
                         shouldClearOnSelect: !0,
                         shouldDeferPrefetch: !0,
-                        source: et.d.SearchBox,
-                        testID: Je,
+                        source: tt.d.SearchBox,
+                        testID: $e,
                         withFixedPositioning: !0,
                         withFocusStyling: !0,
                         withSectionDivider: !this._withNewTypeaheadUI,
@@ -1357,21 +1359,21 @@
             a
           )
         })(I.a.Component)
-      S()(st, 'defaultProps', {
+      S()(lt, 'defaultProps', {
         initialValue: '',
         isInSidebar: !1,
-        placeholder: at,
+        placeholder: rt,
         searchRoute: '/search',
         forceVdlDisable: !0,
       }),
-        S()(st, 'contextType', _e.a)
-      var it = ae.a.create(function (e) {
+        S()(lt, 'contextType', _e.a)
+      var dt = ae.a.create(function (e) {
         return {
           root: { alignItems: 'stretch', flexBasis: 0, flexDirection: 'row', flexGrow: 1 },
           input: { flexShrink: 1 },
         }
       })
-      t.default = Object($e.a)(R(st))
+      t.default = Object(et.a)(R(lt))
     },
     UnyZ: function (e, t, a) {
       'use strict'
