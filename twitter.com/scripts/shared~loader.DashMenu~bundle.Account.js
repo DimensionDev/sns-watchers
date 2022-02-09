@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [19],
+  [20],
   {
     '45lU': function (e, t, n) {
       'use strict'
@@ -239,9 +239,9 @@
         h = n('2VqO'),
         _ = n.n(h),
         b = n('KEM+'),
-        f = n.n(b),
-        p = (n('2G9S'), n('ERkP')),
-        v = n.n(p),
+        p = n.n(b),
+        f = (n('2G9S'), n('ERkP')),
+        v = n.n(f),
         k = n('xQWt'),
         w = n('RqPI'),
         C = n('P1r1'),
@@ -289,14 +289,14 @@
           .withAnalytics(),
         S = n('45mF'),
         x = (n('hBvt'), n('3XMw')),
-        z = n.n(x),
-        L = n('45lU'),
-        T = n('MWbm'),
-        B = n('htQn'),
-        A = n('t62R'),
+        T = n.n(x),
+        z = n('45lU'),
+        A = n('MWbm'),
+        L = n('htQn'),
+        B = n('t62R'),
         H = n('Znyr'),
-        F = z.a.d86bbf0f,
-        O = z.a.h6beb5fa,
+        F = T.a.d86bbf0f,
+        O = T.a.h6beb5fa,
         P = function (e) {
           var t = e.badgeCount,
             n = e.icon,
@@ -307,20 +307,20 @@
             c = e.rightControl,
             o = e.testID
           return v.a.createElement(
-            T.a,
-            { style: L.a.dashMenuItem },
+            A.a,
+            { style: z.a.dashMenuItem },
             v.a.createElement(
-              B.a,
-              { link: i, onClick: r, style: L.a.link, testID: o },
+              L.a,
+              { link: i, onClick: r, style: z.a.link, testID: o },
               v.a.createElement(
-                T.a,
-                { style: L.a.item },
-                n ? v.a.createElement(n, { style: a ? [L.a.icon, { color: a }] : L.a.icon }) : null,
-                v.a.createElement(A.b, { color: 'normal', numberOfLines: 1, style: L.a.itemLabel }, l),
+                A.a,
+                { style: z.a.item },
+                n ? v.a.createElement(n, { style: a ? [z.a.icon, { color: a }] : z.a.icon }) : null,
+                v.a.createElement(B.b, { color: 'normal', numberOfLines: 1, style: z.a.itemLabel }, l),
                 t
                   ? v.a.createElement(
-                      T.a,
-                      { style: L.a.itemAccessory },
+                      A.a,
+                      { style: z.a.itemAccessory },
                       v.a.createElement(H.a, {
                         count: t,
                         standalone: !0,
@@ -366,7 +366,7 @@
         }
       K.metadata = { width: 24, height: 24 }
       var q = K,
-        U = function () {
+        W = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(V.a)(
             'svg',
@@ -388,18 +388,18 @@
             ),
           )
         }
-      U.metadata = { width: 24, height: 24 }
-      var W = U,
+      W.metadata = { width: 24, height: 24 }
+      var U = W,
         G = j.a.create(function (e) {
           return { bristles: { color: e.colors.primary, position: 'absolute', top: 0, left: 0 } }
         }),
         Y = function (e) {
           var t = e.style
           return v.a.createElement(
-            T.a,
+            A.a,
             { accessibilityRole: 'none' },
             v.a.createElement(q, { style: t }),
-            v.a.createElement(W, { style: [t, G.bristles] }),
+            v.a.createElement(U, { style: [t, G.bristles] }),
           )
         },
         Q = n('fs1G'),
@@ -451,8 +451,8 @@
         }
       _e.metadata = { width: 24, height: 24 }
       var be = _e,
-        fe = n('2qZs'),
-        pe = function () {
+        pe = n('2qZs'),
+        fe = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(V.a)(
             'svg',
@@ -474,8 +474,8 @@
             ),
           )
         }
-      pe.metadata = { width: 24, height: 24 }
-      var ve = pe,
+      fe.metadata = { width: 24, height: 24 }
+      var ve = fe,
         ke = n('4BrD'),
         we = n('xrkw'),
         Ce = n('nV1z'),
@@ -530,31 +530,32 @@
         }
       Se.metadata = { width: 24, height: 24 }
       var xe = Se,
-        ze = z.a.c818c60c,
-        Le = z.a.b5711f09,
-        Te = z.a.i3145aa0,
-        Be = z.a.b5298d91,
-        Ae = z.a.a57a341b,
-        He = z.a.i83d4f13,
+        Te = T.a.c818c60c,
+        ze = T.a.b5711f09,
+        Ae = T.a.i3145aa0,
+        Le = T.a.b5298d91,
+        Be = T.a.a57a341b,
+        He = T.a.i83d4f13,
         Fe = 'Collaborate',
-        Oe = z.a.f66d24be,
-        Pe = z.a.c4881c66,
-        De = z.a.h54e6137,
-        Ne = z.a.ae1bbb26,
-        je = z.a.a58e0e51,
-        Re = z.a.deaf7e0a,
-        Ve = z.a.b4af8c6a,
-        Ke = z.a.ed21f885,
-        qe = z.a.d0a51fb1,
-        Ue = z.a.fa98627a,
-        We = z.a.fd442790,
-        Ge = z.a.b8533bac,
-        Ye = z.a.b0041756,
-        Qe = z.a.h02a6fe5,
-        Xe = z.a.b7fa0cfd,
-        Ze = z.a.ab38b896,
-        Je = z.a.c9d41313,
-        $e = (function (e) {
+        Oe = T.a.f66d24be,
+        Pe = T.a.c4881c66,
+        De = T.a.h54e6137,
+        Ne = T.a.ae1bbb26,
+        je = T.a.a58e0e51,
+        Re = T.a.deaf7e0a,
+        Ve = T.a.b4af8c6a,
+        Ke = T.a.ed21f885,
+        qe = T.a.d0a51fb1,
+        We = 'Write',
+        Ue = T.a.fa98627a,
+        Ge = T.a.fd442790,
+        Ye = T.a.b8533bac,
+        Qe = T.a.b0041756,
+        Xe = T.a.h02a6fe5,
+        Ze = T.a.b7fa0cfd,
+        Je = T.a.ab38b896,
+        $e = T.a.c9d41313,
+        et = (function (e) {
           u()(n, e)
           var t = _()(n)
           function n() {
@@ -563,65 +564,70 @@
             for (var a = arguments.length, i = new Array(a), c = 0; c < a; c++) i[c] = arguments[c]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              f()(
+              p()(
                 d()(e),
                 '_collaborateEnabled',
                 e.context.featureSwitches.isTrue('responsive_web_gaggle_site_enabled'),
               ),
-              f()(
+              p()(
                 d()(e),
                 '_leftNavRefreshConnectEnabled',
                 e.context.featureSwitches.isTrue('responsive_web_left_nav_refresh_connect_enabled'),
               ),
-              f()(
+              p()(
                 d()(e),
                 '_leftNavRefreshTopicsEnabled',
                 e.context.featureSwitches.isTrue('responsive_web_left_nav_refresh_topics_enabled'),
               ),
-              f()(
+              p()(
                 d()(e),
                 '_momentMakerEnabled',
                 e.context.featureSwitches.isTrue('responsive_web_moment_maker_enabled'),
               ),
-              f()(
+              p()(
                 d()(e),
                 '_newslettersEnabled',
                 e.context.featureSwitches.isTrue('responsive_web_newsletters_menu_enabled'),
               ),
-              f()(
+              p()(
                 d()(e),
                 '_twitterForProfessionalsEnabled',
                 e.context.featureSwitches.isTrue('responsive_web_edit_professional_profile_enabled'),
               ),
-              f()(
+              p()(
                 d()(e),
                 '_birdwatchEnabled',
                 e.context.featureSwitches.isTrue('responsive_web_birdwatch_history_enabled'),
               ),
-              f()(d()(e), '_renderProfileItem', function (t) {
+              p()(
+                d()(e),
+                '_twitterArticlesComposeEnabled',
+                e.context.featureSwitches.isTrue('responsive_web_twitter_article_compose_enabled'),
+              ),
+              p()(d()(e), '_renderProfileItem', function (t) {
                 return t
                   ? v.a.createElement(P, { icon: ae.a, label: Ue, link: '/'.concat(t), onClick: e._handleProfileClick })
                   : null
               }),
-              f()(d()(e), '_renderTopicsItem', function (t) {
+              p()(d()(e), '_renderTopicsItem', function (t) {
                 return t
                   ? v.a.createElement(P, {
                       icon: le.a,
-                      label: Ge,
+                      label: Ye,
                       link: '/'.concat(t, '/topics'),
                       onClick: e._handleTopicsClick,
                     })
                   : null
               }),
-              f()(d()(e), '_renderConnectItem', function () {
+              p()(d()(e), '_renderConnectItem', function () {
                 return v.a.createElement(P, {
                   icon: ie.a,
-                  label: Be,
+                  label: Le,
                   link: '/i/connect_people',
                   onClick: e._handleConnectClick,
                 })
               }),
-              f()(d()(e), '_renderCollaborateItem', function () {
+              p()(d()(e), '_renderCollaborateItem', function () {
                 return e._collaborateEnabled
                   ? v.a.createElement(P, {
                       icon: re.a,
@@ -634,49 +640,49 @@
                     })
                   : null
               }),
-              f()(d()(e), '_renderListsItem', function (t) {
+              p()(d()(e), '_renderListsItem', function (t) {
                 return t
                   ? v.a.createElement(P, {
                       icon: ce.a,
-                      label: Ye,
+                      label: Qe,
                       link: '/'.concat(t, '/lists'),
                       onClick: e._handleListsClick,
                     })
                   : null
               }),
-              f()(d()(e), '_renderCommunitiesItem', function (t) {
+              p()(d()(e), '_renderCommunitiesItem', function (t) {
                 return t
                   ? v.a.createElement(P, {
                       icon: oe.a,
-                      label: Qe,
+                      label: Xe,
                       link: '/'.concat(t, '/communities'),
                       onClick: e._handleCommunitiesClick,
                     })
                   : null
               }),
-              f()(d()(e), '_renderTopArticlesItem', function () {
+              p()(d()(e), '_renderTopArticlesItem', function () {
                 return v.a.createElement(P, {
                   icon: se.a,
-                  label: Xe,
+                  label: Ze,
                   link: '/i/articles',
                   onClick: e._handleTopArticlesClick,
                 })
               }),
-              f()(d()(e), '_renderBookmarksItem', function () {
+              p()(d()(e), '_renderBookmarksItem', function () {
                 return v.a.createElement(P, {
                   icon: de.a,
-                  label: Te,
+                  label: Ae,
                   link: '/i/bookmarks',
                   onClick: e._handleBookmarksClick,
                 })
               }),
-              f()(d()(e), '_renderMomentsItem', function (t) {
+              p()(d()(e), '_renderMomentsItem', function (t) {
                 var n = e._momentMakerEnabled ? '/i/moment_maker' : t ? '/'.concat(t, '/moments') : void 0
                 return n
                   ? v.a.createElement(P, { icon: me.a, label: Ve, link: n, onClick: e._handleMomentsClick })
                   : null
               }),
-              f()(d()(e), '_renderTwitterBlueItem', function () {
+              p()(d()(e), '_renderTwitterBlueItem', function () {
                 var t = e.context.userClaims.isTwitterBlueSubscriber()
                 if (e.context.featureSwitches.isTrue('subscriptions_sign_up_enabled') || t) {
                   var n = t ? '/settings/twitter_blue' : '/i/twitter_blue_sign_up'
@@ -690,7 +696,7 @@
                 }
                 return null
               }),
-              f()(d()(e), '_renderNewslettersItem', function () {
+              p()(d()(e), '_renderNewslettersItem', function () {
                 return e._newslettersEnabled
                   ? v.a.createElement(P, {
                       icon: he.a,
@@ -700,11 +706,21 @@
                     })
                   : null
               }),
-              f()(d()(e), '_renderTwitterForProfessionalsItem', function () {
+              p()(d()(e), '_renderTwitterArticlesItem', function () {
+                return e._twitterArticlesComposeEnabled
+                  ? v.a.createElement(P, {
+                      icon: he.a,
+                      label: We,
+                      link: '/i/twitter-article-composer',
+                      onClick: e._handleTwitterArticlesClick,
+                    })
+                  : null
+              }),
+              p()(d()(e), '_renderTwitterForProfessionalsItem', function () {
                 return e._twitterForProfessionalsEnabled
                   ? v.a.createElement(P, {
                       icon: be,
-                      label: Je,
+                      label: $e,
                       link: {
                         pathname: '/i/flow/convert_to_professional',
                         state: { input: { requested_variant: 'navdrawer' } },
@@ -714,17 +730,17 @@
                     })
                   : null
               }),
-              f()(d()(e), '_renderBirdwatchItem', function () {
+              p()(d()(e), '_renderBirdwatchItem', function () {
                 return e._birdwatchEnabled
                   ? v.a.createElement(P, {
-                      icon: fe.a,
-                      label: Le,
+                      icon: pe.a,
+                      label: ze,
                       link: '/i/birdwatch',
                       onClick: e._handleBirdwatchClick,
                     })
                   : null
               }),
-              f()(d()(e), '_renderFollowerCountsItem', function () {
+              p()(d()(e), '_renderFollowerCountsItem', function () {
                 var t = e.props,
                   n = t.acceptedFollowerCount,
                   a = t.pendingFollowerCount
@@ -738,23 +754,23 @@
                     })
                   : null
               }),
-              f()(d()(e), '_renderTwitterAdsItem', function () {
+              p()(d()(e), '_renderTwitterAdsItem', function () {
                 return v.a.createElement(P, {
                   icon: ke.a,
-                  label: Ze,
+                  label: Je,
                   link: 'https://ads.twitter.com/?ref=gl-tw-tw-twitter-ads-rweb',
                   onClick: e._handleTwitterAdsClick,
                 })
               }),
-              f()(d()(e), '_renderAnalyticsItem', function () {
+              p()(d()(e), '_renderAnalyticsItem', function () {
                 return v.a.createElement(P, {
                   icon: we.a,
-                  label: ze,
+                  label: Te,
                   link: 'https://analytics.twitter.com/',
                   onClick: e._handleAnalyticsClick,
                 })
               }),
-              f()(d()(e), '_renderMediaStudioItem', function () {
+              p()(d()(e), '_renderMediaStudioItem', function () {
                 return e.props.isMediaStudioLinkVisible
                   ? v.a.createElement(P, {
                       icon: Ce.a,
@@ -764,16 +780,16 @@
                     })
                   : null
               }),
-              f()(d()(e), '_renderSettingsItem', function () {
+              p()(d()(e), '_renderSettingsItem', function () {
                 return v.a.createElement(P, {
                   icon: ge.a,
-                  label: We,
+                  label: Ge,
                   link: '/settings',
                   onClick: e._handleSettingsClick,
                   testID: Z.a.settings,
                 })
               }),
-              f()(d()(e), '_renderHelpCenterItem', function () {
+              p()(d()(e), '_renderHelpCenterItem', function () {
                 return v.a.createElement(P, {
                   icon: Ie.a,
                   label: Oe,
@@ -782,10 +798,10 @@
                   testID: Z.a.help,
                 })
               }),
-              f()(d()(e), '_renderDisplayItem', function () {
+              p()(d()(e), '_renderDisplayItem', function () {
                 return v.a.createElement(P, { icon: Y, label: Pe, link: '/i/display', onClick: e._handleDisplayClick })
               }),
-              f()(d()(e), '_renderKeyboardShortcuts', function () {
+              p()(d()(e), '_renderKeyboardShortcuts', function () {
                 return J.b.isDesktopOS()
                   ? v.a.createElement(P, {
                       icon: ye.a,
@@ -795,10 +811,10 @@
                     })
                   : null
               }),
-              f()(d()(e), '_renderLabsItem', function () {
+              p()(d()(e), '_renderLabsItem', function () {
                 return null
               }),
-              f()(d()(e), '_renderLogoutItem', function (t) {
+              p()(d()(e), '_renderLogoutItem', function (t) {
                 return t
                   ? v.a.createElement(P, {
                       label: Object(D.a)().hasMultiAccountCookie ? je({ screenName: t }) : Ne,
@@ -808,23 +824,23 @@
                     })
                   : null
               }),
-              f()(d()(e), '_renderDataSaverItem', function () {
+              p()(d()(e), '_renderDataSaverItem', function () {
                 var t = e.props.settings,
                   n = t.dataSaverMode ? Me : xe
                 return v.a.createElement(P, {
                   icon: n,
-                  label: Ae,
+                  label: Be,
                   link: '/settings/data',
                   onClick: e._handleDataSaverClick,
                   rightControl: v.a.createElement(te.a, {
-                    accessibilityLabel: Ae,
+                    accessibilityLabel: Be,
                     onValueChange: e._handleDataSaverChanged,
-                    style: L.a.itemAccessory,
+                    style: z.a.itemAccessory,
                     value: t.dataSaverMode,
                   }),
                 })
               }),
-              f()(d()(e), '_handleDataSaverChanged', function (t) {
+              p()(d()(e), '_handleDataSaverChanged', function (t) {
                 var n = e.props,
                   a = n.analytics,
                   i = n.createLocalApiErrorHandler,
@@ -832,7 +848,7 @@
                 a.scribe({ element: 'dataSaverMode', action: t ? 'on' : 'off' }),
                   r({ enabled: t }).catch(i(l()(l()({}, Object(S.a)()), {}, { showToast: !0 })))
               }),
-              f()(d()(e), '_handleMenuItemClick', function (t) {
+              p()(d()(e), '_handleMenuItemClick', function (t) {
                 return function () {
                   var n = e.props,
                     a = n.analytics,
@@ -840,28 +856,29 @@
                   t && a.scribe({ section: 'overflow_menu', element: t, action: 'click' }), l && l()
                 }
               }),
-              f()(d()(e), '_handleDataSaverClick', e._handleMenuItemClick('data_saver_overflow_item')),
-              f()(d()(e), '_handleProfileClick', e._handleMenuItemClick('profile_overflow_item')),
-              f()(d()(e), '_handleTopicsClick', e._handleMenuItemClick('topics_overflow_item')),
-              f()(d()(e), '_handleConnectClick', e._handleMenuItemClick('connect_overflow_item')),
-              f()(d()(e), '_handleFollowerRequestsClick', e._handleMenuItemClick('follower_requests_overflow_item')),
-              f()(d()(e), '_handleListsClick', e._handleMenuItemClick('lists_overflow_item')),
-              f()(d()(e), '_handleCommunitiesClick', e._handleMenuItemClick('communities_overflow_item')),
-              f()(d()(e), '_handleTopArticlesClick', e._handleMenuItemClick('top_articles_overflow_item')),
-              f()(d()(e), '_handleBookmarksClick', e._handleMenuItemClick('bookmarks_overflow_item')),
-              f()(d()(e), '_handleMomentsClick', e._handleMenuItemClick('moments_overflow_item')),
-              f()(d()(e), '_handleTwitterBlueClick', e._handleMenuItemClick('twitter_blue_overflow_item')),
-              f()(d()(e), '_handleSettingsClick', e._handleMenuItemClick('settings_overflow_item')),
-              f()(d()(e), '_handleSimpleClick', e._handleMenuItemClick()),
-              f()(d()(e), '_handleHelpClick', e._handleMenuItemClick('help_overflow_item')),
-              f()(d()(e), '_handleDisplayClick', e._handleMenuItemClick('display_overflow_item')),
-              f()(d()(e), '_handleLogoutScribingClick', e._handleMenuItemClick('logout_overflow_item')),
-              f()(d()(e), '_handleTwitterAdsClick', e._handleMenuItemClick('twitter_ads_item')),
-              f()(d()(e), '_handleAnalyticsClick', e._handleMenuItemClick('analytics_item')),
-              f()(d()(e), '_handleMediaStudioClick', e._handleMenuItemClick('media_studio')),
-              f()(d()(e), '_handleNewslettersClick', e._handleMenuItemClick('newsletters')),
-              f()(d()(e), '_handleTwitterForProfessionalsClick', e._handleMenuItemClick('twitter_for_professionals')),
-              f()(d()(e), '_handleBirdwatchClick', e._handleMenuItemClick('birdwatch')),
+              p()(d()(e), '_handleDataSaverClick', e._handleMenuItemClick('data_saver_overflow_item')),
+              p()(d()(e), '_handleProfileClick', e._handleMenuItemClick('profile_overflow_item')),
+              p()(d()(e), '_handleTopicsClick', e._handleMenuItemClick('topics_overflow_item')),
+              p()(d()(e), '_handleConnectClick', e._handleMenuItemClick('connect_overflow_item')),
+              p()(d()(e), '_handleFollowerRequestsClick', e._handleMenuItemClick('follower_requests_overflow_item')),
+              p()(d()(e), '_handleListsClick', e._handleMenuItemClick('lists_overflow_item')),
+              p()(d()(e), '_handleCommunitiesClick', e._handleMenuItemClick('communities_overflow_item')),
+              p()(d()(e), '_handleTopArticlesClick', e._handleMenuItemClick('top_articles_overflow_item')),
+              p()(d()(e), '_handleBookmarksClick', e._handleMenuItemClick('bookmarks_overflow_item')),
+              p()(d()(e), '_handleMomentsClick', e._handleMenuItemClick('moments_overflow_item')),
+              p()(d()(e), '_handleTwitterBlueClick', e._handleMenuItemClick('twitter_blue_overflow_item')),
+              p()(d()(e), '_handleSettingsClick', e._handleMenuItemClick('settings_overflow_item')),
+              p()(d()(e), '_handleSimpleClick', e._handleMenuItemClick()),
+              p()(d()(e), '_handleHelpClick', e._handleMenuItemClick('help_overflow_item')),
+              p()(d()(e), '_handleDisplayClick', e._handleMenuItemClick('display_overflow_item')),
+              p()(d()(e), '_handleLogoutScribingClick', e._handleMenuItemClick('logout_overflow_item')),
+              p()(d()(e), '_handleTwitterAdsClick', e._handleMenuItemClick('twitter_ads_item')),
+              p()(d()(e), '_handleAnalyticsClick', e._handleMenuItemClick('analytics_item')),
+              p()(d()(e), '_handleMediaStudioClick', e._handleMenuItemClick('media_studio')),
+              p()(d()(e), '_handleNewslettersClick', e._handleMenuItemClick('newsletters')),
+              p()(d()(e), '_handleTwitterArticlesClick', e._handleMenuItemClick('twitter_articles')),
+              p()(d()(e), '_handleTwitterForProfessionalsClick', e._handleMenuItemClick('twitter_for_professionals')),
+              p()(d()(e), '_handleBirdwatchClick', e._handleMenuItemClick('birdwatch')),
               e
             )
           }
@@ -909,7 +926,9 @@
                           this._renderMomentsItem(i),
                           this._renderCollaborateItem(),
                           this._renderTwitterBlueItem(),
-                          this._renderNewslettersItem(),
+                          this._twitterArticlesComposeEnabled
+                            ? this._renderTwitterArticlesItem()
+                            : this._renderNewslettersItem(),
                           this._renderTwitterForProfessionalsItem(),
                           this._renderTwitterAdsItem(),
                           this._renderAnalyticsItem(),
@@ -932,7 +951,9 @@
                           this._renderMomentsItem(i),
                           this._renderCollaborateItem(),
                           this._renderTwitterBlueItem(),
-                          this._renderNewslettersItem(),
+                          this._twitterArticlesComposeEnabled
+                            ? this._renderTwitterArticlesItem()
+                            : this._renderNewslettersItem(),
                           this._renderFollowerCountsItem(),
                           v.a.createElement(ne.a, { spacing: 'space2' }),
                           this._renderTwitterForProfessionalsItem(),
@@ -958,8 +979,8 @@
             n
           )
         })(v.a.Component)
-      f()($e, 'contextType', ee.a), f()($e, 'defaultProps', { onClose: Q.a })
-      t.a = Object($.a)(M($e))
+      p()(et, 'contextType', ee.a), p()(et, 'defaultProps', { onClose: Q.a })
+      t.a = Object($.a)(M(et))
     },
     nV1z: function (e, t, n) {
       'use strict'

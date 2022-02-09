@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [107, 8, 9, 171, 174],
+  [109, 8, 9, 173, 176],
   {
     '1LLC': function (e, t, n) {
       'use strict'
@@ -3153,21 +3153,19 @@
         I = n('CaKu'),
         C = n('y+lG'),
         w = n('SrIh'),
-        L = n('RqPI'),
-        S = n('Irs7'),
-        M = n('uDfI'),
-        x = n('zCf4'),
-        k = n('yUQf'),
-        R = n('jwTb'),
-        T = n('SOvA'),
-        O = n('I/9y'),
-        P = {
+        L = n('Irs7'),
+        S = n('uDfI'),
+        M = n('zCf4'),
+        x = n('jwTb'),
+        k = n('SOvA'),
+        R = n('I/9y'),
+        T = {
           tweet: {
             isAvailable: function () {
               return !0
             },
             scribeAction: 'share_via_tweet',
-            Icon: R.a,
+            Icon: x.a,
             text: d.a.fcc684a9,
             testID: g,
           },
@@ -3176,7 +3174,7 @@
               return !0
             },
             scribeAction: 'share_via_dm',
-            Icon: T.a,
+            Icon: k.a,
             text: d.a.f61c4bbf,
           },
           copy: {
@@ -3184,7 +3182,7 @@
               return I.a.isAvailable()
             },
             scribeAction: 'copy_link',
-            Icon: O.a,
+            Icon: R.a,
             text: d.a.e05c00b4,
           },
           via: {
@@ -3196,48 +3194,47 @@
             text: d.a.if23a251,
           },
         },
-        A = ['isAvailable', 'scribeAction']
-      function D(e) {
-        var t = Object(S.b)()
+        O = ['isAvailable', 'scribeAction']
+      function P(e) {
+        var t = Object(L.b)()
         return {
           getActionItem: (function (e, t) {
-            var n = Object(M.c)(),
-              a = Object(x.f)(),
-              o = Object(k.a)(L.v)
+            var n = Object(S.c)(),
+              a = Object(M.f)()
             return r.a.useMemo(
               function () {
                 return function (r) {
-                  var i = P[r.type],
-                    s = i.isAvailable,
-                    c = i.scribeAction,
-                    u = _()(i, A)
-                  if (!s()) return null
-                  var d = l()({}, u)
-                  function p() {
-                    var i = r.shareText || e.shareText,
-                      s = e.url,
-                      u = l()(l()({}, e.scribeNamespace), {}, { action: c }, r.scribeNamespace),
-                      d = { text: i, url: s },
-                      p = { analytics: t, dispatch: n, history: a, mergedScribeNamespace: u, sessionToken: o }
+                  var o = T[r.type],
+                    i = o.isAvailable,
+                    s = o.scribeAction,
+                    c = _()(o, O)
+                  if (!i()) return null
+                  var u = l()({}, c)
+                  function d() {
+                    var o = r.shareText || e.shareText,
+                      i = e.url,
+                      c = l()(l()({}, e.scribeNamespace), {}, { action: s }, r.scribeNamespace),
+                      u = { text: o, url: i },
+                      d = { analytics: t, dispatch: n, history: a, mergedScribeNamespace: c }
                     !(function (e, t, n) {
                       var a = function () {
                         return n.analytics.scribe(n.mergedScribeNamespace)
                       }
                       switch (e) {
                         case 'dm':
-                          return a(), void n.history.push(l()(l()({}, j(t)), {}, { pathname: '/messages/compose' }))
+                          return a(), void n.history.push(l()(l()({}, D(t)), {}, { pathname: '/messages/compose' }))
                         case 'copy':
                           return (
-                            I.a.setString(Object(C.a)(t.url, n.sessionToken)),
+                            I.a.setString(Object(C.a)(t.url)),
                             a(),
-                            void n.dispatch(Object(E.b)({ text: F.copyLinkSuccessMessage }))
+                            void n.dispatch(Object(E.b)({ text: A.copyLinkSuccessMessage }))
                           )
                         case 'tweet':
                           return (
                             a(),
                             void n.history.push(
                               l()(
-                                l()({ pathname: '/compose/tweet' }, j(t)),
+                                l()({ pathname: '/compose/tweet' }, D(t)),
                                 {},
                                 { state: { positionCursorAtBeginning: !0 } },
                               ),
@@ -3245,7 +3242,7 @@
                           )
                         case 'via':
                           return void window.navigator
-                            .share({ text: t.text, url: Object(C.a)(t.url, n.sessionToken) })
+                            .share({ text: t.text, url: Object(C.a)(t.url) })
                             .then(a)
                             .catch(function () {
                               n.analytics.scribe(l()(l()({}, n.mergedScribeNamespace), {}, { action: 'share_error' }))
@@ -3253,40 +3250,40 @@
                         default:
                           Object(w.a)('[ShareButton] Unexpected share type ['.concat(e, ']'))
                       }
-                    })(r.type, d, p)
+                    })(r.type, u, d)
                   }
-                  return r.label && (d.text = r.label), l()(l()({}, d), {}, { onClick: p })
+                  return r.label && (u.text = r.label), l()(l()({}, u), {}, { onClick: d })
                 }
               },
-              [t, n, a, o, e.scribeNamespace, e.shareText, e.url],
+              [t, n, a, e.scribeNamespace, e.shareText, e.url],
             )
           })(e, t),
           analytics: t,
         }
       }
-      var F = { copyLinkSuccessMessage: d.a.f88553c8, shareTextPrefixFormatter: d.a.gb5851d7 }
-      function j(e) {
+      var A = { copyLinkSuccessMessage: d.a.f88553c8, shareTextPrefixFormatter: d.a.gb5851d7 }
+      function D(e) {
         var t = e.url,
           n = e.text
-        return { query: { text: n ? F.shareTextPrefixFormatter({ prefix: n, url: t }) : t } }
+        return { query: { text: n ? A.shareTextPrefixFormatter({ prefix: n, url: t }) : t } }
       }
-      var U = n('mN6z')
-      var N = n('mjJ+'),
-        B = n('rHpw'),
-        H = { element: 'share' }
-      function V(e) {
+      var F = n('mN6z')
+      var j = n('mjJ+'),
+        U = n('rHpw'),
+        N = { element: 'share' }
+      function B(e) {
         var t = (function (e) {
             var t = r.a.useRef({ previous: void 0 })
             function n(e) {
               return (t.current.previous = e), e
             }
             var a = t.current.previous
-            return a && (e === a || Object(U.a)(e, a)) ? a : n(e)
-          })(l()(l()({}, H), e.scribeNamespace)),
-          n = D(l()(l()({}, e), {}, { scribeNamespace: t })),
+            return a && (e === a || Object(F.a)(e, a)) ? a : n(e)
+          })(l()(l()({}, N), e.scribeNamespace)),
+          n = P(l()(l()({}, e), {}, { scribeNamespace: t })),
           a = n.analytics,
           o = n.getActionItem
-        var i = e.ButtonComponent || K
+        var i = e.ButtonComponent || H
         return r.a.createElement(i, {
           onPress: function () {
             var e = l()(l()({}, t), {}, { action: 'share_menu_click' })
@@ -3307,26 +3304,26 @@
                     var t = o({ type: e })
                     t && n.push(t)
                   }),
-              r.a.createElement(N.a, { isFixed: e.isFixed, items: n, onCloseRequested: t, shouldCloseOnClick: !0 })
+              r.a.createElement(j.a, { isFixed: e.isFixed, items: n, onCloseRequested: t, shouldCloseOnClick: !0 })
             )
           },
         })
       }
-      function K(e) {
-        return r.a.createElement(v, s()({}, e, { style: W.button, testID: b }))
+      function H(e) {
+        return r.a.createElement(v, s()({}, e, { style: V.button, testID: b }))
       }
-      var W = B.a.create(function (e) {
+      var V = U.a.create(function (e) {
           return { button: { marginRight: e.spaces.space4 } }
         }),
-        q = ['copyLinkShareLabel', 'dmShareLabel', 'externalShareLabel', 'tweetShareLabel']
-      function z(e) {
+        K = ['copyLinkShareLabel', 'dmShareLabel', 'externalShareLabel', 'tweetShareLabel']
+      function W(e) {
         var t = e.copyLinkShareLabel,
           n = e.dmShareLabel,
           a = e.externalShareLabel,
           i = e.tweetShareLabel,
-          s = _()(e, q)
+          s = _()(e, K)
         return r.a.createElement(
-          V,
+          B,
           s,
           r.a.createElement(o, { label: i, type: 'tweet' }),
           r.a.createElement(o, { label: n, type: 'dm' }),
@@ -3334,8 +3331,8 @@
           r.a.createElement(o, { label: a, type: 'via' }),
         )
       }
-      ;(z.Action = o), (z.Custom = V)
-      t.a = z
+      ;(W.Action = o), (W.Custom = B)
+      t.a = W
     },
     'Lwx/': function (e, t, n) {
       'use strict'
@@ -4434,10 +4431,10 @@
         q = { page: 'spheres_create_members' },
         z = { page: 'spheres_edit_members' },
         G = Object(A.a)(function () {
-          return Promise.all([n.e(0), n.e(3), n.e(4), n.e(6), n.e(107)]).then(n.bind(null, 'YlLE'))
+          return Promise.all([n.e(0), n.e(3), n.e(4), n.e(6), n.e(109)]).then(n.bind(null, 'YlLE'))
         }),
         Y = Object(A.a)(function () {
-          return Promise.all([n.e(0), n.e(3), n.e(4), n.e(6), n.e(107)]).then(n.bind(null, 'o8dJ'))
+          return Promise.all([n.e(0), n.e(3), n.e(4), n.e(6), n.e(109)]).then(n.bind(null, 'o8dJ'))
         }),
         X = (function (e) {
           u()(n, e)
@@ -6117,7 +6114,7 @@
         Be = M.a.d8315ca0,
         He = M.a.e74be9ac,
         Ve = Object(Se.a)(function () {
-          return Promise.all([n.e(0), n.e(3), n.e(4), n.e(6), n.e(107)]).then(n.bind(null, '8+YY'))
+          return Promise.all([n.e(0), n.e(3), n.e(4), n.e(6), n.e(109)]).then(n.bind(null, '8+YY'))
         }),
         Ke = (function (e) {
           u()(n, e)

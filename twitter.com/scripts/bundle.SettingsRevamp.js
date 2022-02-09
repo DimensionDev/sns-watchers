@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [91],
+  [93],
   {
     '89Im': function (e, t, a) {
       'use strict'
@@ -62,8 +62,8 @@
             ),
           }
         }),
-        S = a('kGix'),
-        _ = a('v//M'),
+        _ = a('kGix'),
+        S = a('v//M'),
         w = a('5FtR'),
         A = (function (e) {
           u()(a, e)
@@ -119,13 +119,13 @@
                     t = e.fetchStatus,
                     a = e.renderChildren,
                     n = this.state.verificationRequired,
-                    r = t === S.a.FAILED && n
+                    r = t === _.a.FAILED && n
                   return p.a.createElement(
                     p.a.Fragment,
                     null,
                     r
                       ? p.a.createElement(w.a, { to: '/i/flow/verify_account_ownership' })
-                      : p.a.createElement(_.a, { fetchStatus: t, onRequestRetry: this._handleFetch, render: a }),
+                      : p.a.createElement(S.a, { fetchStatus: t, onRequestRetry: this._handleFetch, render: a }),
                   )
                 },
               },
@@ -160,8 +160,8 @@
         g = a.n(E),
         y = a('QJRq'),
         v = (a('1t7P'), a('jQ/y'), a('rxPX')),
-        S = Object(v.a)().withAnalytics(),
-        _ = a('lUZE'),
+        _ = Object(v.a)().withAnalytics(),
+        S = a('lUZE'),
         w = a('rHpw'),
         A = w.a.create(function (e) {
           return {
@@ -250,7 +250,7 @@
           { title: R.a.e427f632, description: R.a.a4d7cff9 },
         ],
         q = R.a.j24c37b2,
-        V = S(
+        V = _(
           (function (e) {
             m()(a, e)
             var t = f()(a)
@@ -378,7 +378,7 @@
                         withMask: !0,
                       },
                       g.a.createElement(k.a, {
-                        centeredLogo: g.a.createElement(_.a, { style: A.headerIcon }),
+                        centeredLogo: g.a.createElement(S.a, { style: A.headerIcon }),
                         leftControl: g.a.createElement(N.a, { backButtonType: 'close', onClick: this.props.onClose }),
                         withBackground: !0,
                       }),
@@ -475,8 +475,8 @@
         ge = R.a.d0a77c9a,
         ye = R.a.jade381b,
         ve = R.a.d1f6d336,
-        Se = R.a.a3841918,
-        _e = R.a.f70cd5ed,
+        _e = R.a.a3841918,
+        Se = R.a.f70cd5ed,
         we = R.a.ib6f1694,
         Ae = R.a.a8d0108d,
         Le = R.a.de32365f,
@@ -579,8 +579,8 @@
                         link: '/settings/screen_name',
                       })
                     : null,
-                  l ? g.a.createElement(fe.a, { description: s, label: _e, link: '/settings/phone' }) : null,
-                  l ? g.a.createElement(fe.a, { description: r, label: Se, link: '/settings/email' }) : null,
+                  l ? g.a.createElement(fe.a, { description: s, label: Se, link: '/settings/phone' }) : null,
+                  l ? g.a.createElement(fe.a, { description: r, label: _e, link: '/settings/email' }) : null,
                   l ? c._renderVerified() : null,
                   l
                     ? g.a.createElement(fe.a, {
@@ -695,14 +695,17 @@
                 )
               }),
               p()(u()(c), '_renderAutomation', function () {
-                if (c.context.featureSwitches.isTrue('account_taxonomy_automation_opt_in_enabled')) {
-                  var e = c.props.managingAccount,
-                    t = e ? Fe : Re,
-                    a = e ? '/settings/account/automation' : '/settings/your_twitter_data/account'
+                var e = c.context.featureSwitches,
+                  t = e.isTrue('account_taxonomy_automated_label_enabled'),
+                  a = e.isTrue('account_taxonomy_automation_opt_in_enabled')
+                if (t && a) {
+                  var n = c.props.managingAccount,
+                    r = n ? Fe : Re,
+                    o = n ? '/settings/account/automation' : '/settings/your_twitter_data/account'
                   return g.a.createElement(fe.a, {
-                    description: t,
+                    description: r,
                     label: xe,
-                    link: a,
+                    link: o,
                     onPress: c._handleAutomationOnPress,
                   })
                 }
@@ -907,10 +910,10 @@
           return v
         }),
         a.d(t, 'h', function () {
-          return S
+          return _
         }),
         a.d(t, 'd', function () {
-          return _
+          return S
         }),
         a.d(t, 'c', function () {
           return w
@@ -989,11 +992,11 @@
         v = function (e) {
           return e.userData.fetchStatus
         },
-        S = function (e) {
+        _ = function (e) {
           var t
           return 503 === (null === (t = e.userData.error) || void 0 === t ? void 0 : t.status)
         },
-        _ = function () {
+        S = function () {
           return function (e, t, a) {
             var n = a.api
             return Object(d.b)(e, { request: n.UserData.fetchDownloads })({
@@ -1114,8 +1117,8 @@
         g = a('ClNT'),
         y = a('MWbm'),
         v = a('t62R'),
-        S = a('0yYu'),
-        _ = a('3Ohe'),
+        _ = a('0yYu'),
+        S = a('3Ohe'),
         w = a('RKmr'),
         A = a('/yvb'),
         L = a('6vad'),
@@ -1157,8 +1160,8 @@
           return o.a.createElement(
             o.a.Fragment,
             null,
-            o.a.createElement(S.a, null),
-            o.a.createElement(_.a, { label: H, withBottomBorder: !0 }),
+            o.a.createElement(_.a, null),
+            o.a.createElement(S.a, { label: H, withBottomBorder: !0 }),
             o.a.createElement(w.a, { description: j }),
           )
         }
@@ -1172,7 +1175,7 @@
           u = e.fetchDownloads,
           d = e.fetchStatus,
           m = e.isUserDataUnavailable,
-          _ = e.location,
+          S = e.location,
           C = !!t,
           O = !C,
           H = m,
@@ -1260,7 +1263,7 @@
             null,
             o.a.createElement(
               p.a,
-              { location: _, screenType: 'secondaryDetail', title: x },
+              { location: S, screenType: 'secondaryDetail', title: x },
               o.a.createElement(w.a, { description: T }),
               J
                 ? o.a.createElement(g.a, {
@@ -1283,7 +1286,7 @@
                           }),
                           $(),
                         ),
-                        o.a.createElement(S.a, null),
+                        o.a.createElement(_.a, null),
                         o.a.createElement(
                           y.a,
                           null,
@@ -1356,97 +1359,97 @@
                 (function (e) {
                   switch (e) {
                     case 'ar':
-                      return a.e(246).then(a.t.bind(null, 'heBS', 3))
+                      return a.e(248).then(a.t.bind(null, 'heBS', 3))
                     case 'bg':
-                      return a.e(247).then(a.t.bind(null, '9kpF', 3))
+                      return a.e(249).then(a.t.bind(null, '9kpF', 3))
                     case 'bn':
-                      return a.e(248).then(a.t.bind(null, 'GG9y', 3))
+                      return a.e(250).then(a.t.bind(null, 'GG9y', 3))
                     case 'ca':
-                      return a.e(249).then(a.t.bind(null, 'icrD', 3))
+                      return a.e(251).then(a.t.bind(null, 'icrD', 3))
                     case 'cs':
-                      return a.e(250).then(a.t.bind(null, 'rxOR', 3))
+                      return a.e(252).then(a.t.bind(null, 'rxOR', 3))
                     case 'da':
-                      return a.e(251).then(a.t.bind(null, '6Nxr', 3))
+                      return a.e(253).then(a.t.bind(null, '6Nxr', 3))
                     case 'de':
-                      return a.e(252).then(a.t.bind(null, 'zSOo', 3))
+                      return a.e(254).then(a.t.bind(null, 'zSOo', 3))
                     case 'el':
-                      return a.e(253).then(a.t.bind(null, 'MOmn', 3))
+                      return a.e(255).then(a.t.bind(null, 'MOmn', 3))
                     case 'en-GB':
-                      return a.e(255).then(a.t.bind(null, 'vzeG', 3))
+                      return a.e(257).then(a.t.bind(null, 'vzeG', 3))
                     case 'en':
-                      return a.e(254).then(a.t.bind(null, 'WqZ6', 3))
+                      return a.e(256).then(a.t.bind(null, 'WqZ6', 3))
                     case 'es':
-                      return a.e(256).then(a.t.bind(null, 'v4/g', 3))
+                      return a.e(258).then(a.t.bind(null, 'v4/g', 3))
                     case 'eu':
-                      return a.e(257).then(a.t.bind(null, 'KXIK', 3))
+                      return a.e(259).then(a.t.bind(null, 'KXIK', 3))
                     case 'fa':
-                      return a.e(258).then(a.t.bind(null, 'vzCi', 3))
+                      return a.e(260).then(a.t.bind(null, 'vzCi', 3))
                     case 'fi':
-                      return a.e(259).then(a.t.bind(null, 'YthM', 3))
+                      return a.e(261).then(a.t.bind(null, 'YthM', 3))
                     case 'fil':
-                      return a.e(260).then(a.t.bind(null, 'AcRS', 3))
+                      return a.e(262).then(a.t.bind(null, 'AcRS', 3))
                     case 'fr':
-                      return a.e(261).then(a.t.bind(null, 'PuNY', 3))
+                      return a.e(263).then(a.t.bind(null, 'PuNY', 3))
                     case 'ga':
-                      return a.e(262).then(a.t.bind(null, 'FSy8', 3))
+                      return a.e(264).then(a.t.bind(null, 'FSy8', 3))
                     case 'gl':
-                      return a.e(263).then(a.t.bind(null, 'igcB', 3))
+                      return a.e(265).then(a.t.bind(null, 'igcB', 3))
                     case 'gu':
-                      return a.e(264).then(a.t.bind(null, 'DaQw', 3))
+                      return a.e(266).then(a.t.bind(null, 'DaQw', 3))
                     case 'he':
-                      return a.e(265).then(a.t.bind(null, '8mgg', 3))
+                      return a.e(267).then(a.t.bind(null, '8mgg', 3))
                     case 'hi':
-                      return a.e(266).then(a.t.bind(null, 'w88S', 3))
+                      return a.e(268).then(a.t.bind(null, 'w88S', 3))
                     case 'hr':
-                      return a.e(267).then(a.t.bind(null, 'dvLs', 3))
+                      return a.e(269).then(a.t.bind(null, 'dvLs', 3))
                     case 'hu':
-                      return a.e(268).then(a.t.bind(null, '9fGX', 3))
+                      return a.e(270).then(a.t.bind(null, '9fGX', 3))
                     case 'id':
-                      return a.e(269).then(a.t.bind(null, 'elf3', 3))
+                      return a.e(271).then(a.t.bind(null, 'elf3', 3))
                     case 'it':
-                      return a.e(270).then(a.t.bind(null, 'sxFK', 3))
+                      return a.e(272).then(a.t.bind(null, 'sxFK', 3))
                     case 'ja':
-                      return a.e(271).then(a.t.bind(null, '1/Dg', 3))
+                      return a.e(273).then(a.t.bind(null, '1/Dg', 3))
                     case 'kn':
-                      return a.e(272).then(a.t.bind(null, 'nFOI', 3))
+                      return a.e(274).then(a.t.bind(null, 'nFOI', 3))
                     case 'ko':
-                      return a.e(273).then(a.t.bind(null, 'RRUG', 3))
+                      return a.e(275).then(a.t.bind(null, 'RRUG', 3))
                     case 'mr':
-                      return a.e(274).then(a.t.bind(null, 'EpxJ', 3))
+                      return a.e(276).then(a.t.bind(null, 'EpxJ', 3))
                     case 'ms':
-                      return a.e(275).then(a.t.bind(null, 'cSS2', 3))
+                      return a.e(277).then(a.t.bind(null, 'cSS2', 3))
                     case 'nb':
-                      return a.e(276).then(a.t.bind(null, 'bg3k', 3))
+                      return a.e(278).then(a.t.bind(null, 'bg3k', 3))
                     case 'nl':
-                      return a.e(277).then(a.t.bind(null, 'eXnI', 3))
+                      return a.e(279).then(a.t.bind(null, 'eXnI', 3))
                     case 'pl':
-                      return a.e(278).then(a.t.bind(null, 'ACpo', 3))
+                      return a.e(280).then(a.t.bind(null, 'ACpo', 3))
                     case 'pt':
-                      return a.e(279).then(a.t.bind(null, 'J0At', 3))
+                      return a.e(281).then(a.t.bind(null, 'J0At', 3))
                     case 'ro':
-                      return a.e(280).then(a.t.bind(null, 'hxXa', 3))
+                      return a.e(282).then(a.t.bind(null, 'hxXa', 3))
                     case 'ru':
-                      return a.e(281).then(a.t.bind(null, 'gXfs', 3))
+                      return a.e(283).then(a.t.bind(null, 'gXfs', 3))
                     case 'sk':
-                      return a.e(282).then(a.t.bind(null, 'fy2h', 3))
+                      return a.e(284).then(a.t.bind(null, 'fy2h', 3))
                     case 'sr':
-                      return a.e(283).then(a.t.bind(null, 'FmvU', 3))
+                      return a.e(285).then(a.t.bind(null, 'FmvU', 3))
                     case 'sv':
-                      return a.e(284).then(a.t.bind(null, 'prb2', 3))
+                      return a.e(286).then(a.t.bind(null, 'prb2', 3))
                     case 'ta':
-                      return a.e(285).then(a.t.bind(null, '8KkY', 3))
+                      return a.e(287).then(a.t.bind(null, '8KkY', 3))
                     case 'th':
-                      return a.e(286).then(a.t.bind(null, 'g4c5', 3))
+                      return a.e(288).then(a.t.bind(null, 'g4c5', 3))
                     case 'tr':
-                      return a.e(287).then(a.t.bind(null, 'NngR', 3))
+                      return a.e(289).then(a.t.bind(null, 'NngR', 3))
                     case 'uk':
-                      return a.e(288).then(a.t.bind(null, '62bs', 3))
+                      return a.e(290).then(a.t.bind(null, '62bs', 3))
                     case 'ur':
-                      return a.e(289).then(a.t.bind(null, 'aKQ3', 3))
+                      return a.e(291).then(a.t.bind(null, 'aKQ3', 3))
                     case 'zh-Hant':
-                      return a.e(291).then(a.t.bind(null, 'Wk8C', 3))
+                      return a.e(293).then(a.t.bind(null, 'Wk8C', 3))
                     case 'zh':
-                      return a.e(290).then(a.t.bind(null, 'YXaK', 3))
+                      return a.e(292).then(a.t.bind(null, 'YXaK', 3))
                     default:
                       return Promise.reject(
                         new Error('Tried to import country names for unknown language key: '.concat(e)),
@@ -1484,7 +1487,7 @@
         g = a.n(E),
         y = a('Lsrn'),
         v = a('k/Ka'),
-        S = function () {
+        _ = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(v.a)(
             'svg',
@@ -1512,8 +1515,8 @@
             ),
           )
         }
-      S.metadata = { width: 24, height: 24 }
-      var _ = S,
+      _.metadata = { width: 24, height: 24 }
+      var S = _,
         w = l.a.eb75875d,
         A = l.a.a3f22d8d,
         L = l.a.i647fb03,
@@ -1523,7 +1526,7 @@
         x = { page: 'settings', section: 'notification' },
         T = [
           { description: I, label: L, link: '/settings/notifications/filters', Icon: p.a },
-          { description: O, label: C, link: '/settings/notifications/preferences', Icon: _ },
+          { description: O, label: C, link: '/settings/notifications/preferences', Icon: S },
         ]
       t.default = function (e) {
         var t = e.location
@@ -1596,8 +1599,8 @@
         }
       y.metadata = { width: 24, height: 24 }
       var v = y,
-        S = a('89Im'),
-        _ = a('wz7L'),
+        _ = a('89Im'),
+        S = a('wz7L'),
         w = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(g.a)(
@@ -1652,8 +1655,8 @@
                 return [
                   { description: N, label: k, link: '/settings/your_twitter_data/account', Icon: f.a },
                   { description: D, label: R, link: '/settings/password', Icon: v },
-                  { description: U, label: F, link: '/settings/download_your_data', Icon: S.a },
-                  { description: M, disabled: e, label: P, link: '/settings/teams', Icon: _.a },
+                  { description: U, label: F, link: '/settings/download_your_data', Icon: _.a },
+                  { description: M, disabled: e, label: P, link: '/settings/teams', Icon: S.a },
                   { description: B, label: z, link: '/settings/deactivate', Icon: A },
                 ]
               })(a)

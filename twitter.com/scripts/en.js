@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [121],
+    [123],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -23,7 +23,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(302).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(304).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -893,6 +893,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d6917e0c', function (e) {
             return 'Show ' + e.count + ' Tweet' + n(e.count, '', 's')
           }),
+          a('a682906d', function (e) {
+            return e.count + ' like' + n(e.count, '', 's') + ' to go'
+          }),
           a('afb4c24a', 'No items'),
           a('aaf2c6e9', 'Thanks. Twitter will use this to make your timeline better.'),
           a('a2a3824a', 'Topic'),
@@ -1159,9 +1162,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d751694c', 'When you mute a conversation, you won’t get any new notifications about it.'),
           a('ha35a1d2', 'Pin to your profile'),
           a('afac3b9d', 'Pin Tweet to profile?'),
-          a('e2d44ce9', 'This will appear at the top of your profile and replace any previously pinned Tweet.'),
-          a('aaef1b48', 'Your Tweet was pinned to your profile.')
-        a('f5cdcc2b', 'Not interested in this ad'),
+          a('e2d44ce9', 'This will appear at the top of your profile and replace any previously pinned Tweet.')
+        a('aaef1b48', 'Your Tweet was pinned to your profile.'),
+          a('f5cdcc2b', 'Not interested in this ad'),
           a('b99364a5', function (e) {
             return 'Remove @' + e.screenName + ' from Community'
           }),
@@ -1331,7 +1334,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b2e94283', function (e) {
             return 'via @' + e.viaScreenName
           }),
-          a('f70a36d0', 'Tweet all'),
           a('cb7c0987', 'Why did you get this?'),
           a(
             'de3bcf27',
@@ -1363,6 +1365,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('bea869b3', 'Tweet'),
           a('d3145da8', 'Thanks for letting us know.'),
+          a('f70a36d0', 'Tweet all'),
           a('g0b48670', 'This conversation has too many replies to show them all.'),
           a('e25a0c3a', 'Promoted Tweet'),
           a('de128a2f', 'Turn on Tweet notifications'),
@@ -2058,6 +2061,19 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cd133485', 'Invite'),
           a('hb1e378e', 'Invited'),
           a('bcd6bb0d', 'Member'),
+          a('addbb11e', 'No new membership requests'),
+          a('c38131de', 'You’re all caught up. When new requests come in, you’ll see them here.'),
+          a(
+            'g8907fde',
+            'You’ve blocked this person. If their membership is approved, you’ll need to unblock them to see their Tweets.',
+          ),
+          a(
+            'f69c2298',
+            'You’ve muted this person. If their membership is approved, you’ll need to unmute them to see their Tweets.',
+          ),
+          a('b7f1e58a', 'Follows you'),
+          a('i22835dd', 'Approve'),
+          a('cb59a0fd', 'Deny'),
           a('dffb0774', 'Nothing to review right now'),
           a('cbb2a93c', 'Moderators have taken care of all reported Tweets.'),
           a('f1d9930c', 'Hide'),
@@ -2235,16 +2251,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bcae496c', 'Off-Twitter activity'),
           a('h14ba864', 'Data sharing with business partners'),
           a('jabb9c9a', 'Location information'),
-          a('eb029cab', 'Add location information to your Tweets'),
-          a('bcd81cab', 'Preferences'),
+          a('eb029cab', 'Add location information to your Tweets')
+        a('bcd81cab', 'Preferences'),
           a('i647fb03', 'Filters'),
           a('cf9b1669', 'Accessibility, display, and languages'),
           a('a776eed7', 'Autoplay'),
           a('d495680d', 'Languages'),
           a('f953f53a', 'Change display language'),
           a('eafe3287', 'Data usage'),
-          a('afcad7f2', 'Download the app')
-        a('e8f57e07', 'Personalization and data'),
+          a('afcad7f2', 'Download the app'),
+          a('e8f57e07', 'Personalization and data'),
           a('gbde3534', 'Interests and ads data'),
           a('a54826c5', 'Inferred interests from partners'),
           a('e95b9448', 'General'),
@@ -3502,16 +3518,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a(
             'b8e49590',
             'When you mute accounts, their messages will be filtered and sent to the bottom of your message request list.',
-          ),
-          a('e565cad5', 'Learn more'),
+          )
+        a('e565cad5', 'Learn more'),
           a('hfb77cf5', 'Safety'),
           a('f350f0c0', 'Recommendations'),
           a('cb9bb63f', 'Select which languages you want recommended Tweets, people, and trends to include.'),
           a('hfc86556', 'Muted'),
           a('hc762e4a', 'Get the Twitter app on your mobile phone. It’s free.'),
           a('i8385a2c', 'Android'),
-          a('h201c4c1', 'iOS')
-        a('d383acfc', 'Windows Phone'),
+          a('h201c4c1', 'iOS'),
+          a('d383acfc', 'Windows Phone'),
           a(
             'd3a2bde7',
             'See information about your account, download an archive of your data, or learn about your account deactivation options',
@@ -4005,34 +4021,32 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c0348963', 'Introduction'),
           a('j3253319', 'Take a minute to say hello'),
           a('h1e80993', 'Make a good first impression with a quick intro message for your potential Super Followers.'),
-          a('b4a93a91', 'Super Follows Benefits'),
-          a('ea4c3496', 'VIP status'),
+          a('fcd2be23', 'Benefits'),
+          a('ifc9b709', 'Super Follower badge'),
           a(
-            'ea92cfe3',
-            'You’ll get a public Super Follower label on your Tweets so I can easily pick you out in a crowd.',
+            'b08bbeb4',
+            'You’ll get a public Super Follower badge that makes it easier to get noticed, chat, and connect.',
           ),
           a('ia9c37c4', 'Pricing'),
-          a('hc2c5a8b', 'Your Super Followers are charged the monthly fee you have set.'),
+          a('fb1e4eb6', 'You’ve set your monthly subscription fee at:'),
           a('be54a312', function (e) {
             return e.price + '/mo'
           }),
-          a('bc6d85b3', 'This price cannot currently be changed'),
+          a('cca48545', 'This price can’t be changed'),
           a(
-            'b7bc895e',
-            'In the future we plan to offer the ability to change your subscription price. If you would like to change this you will have to set up your Super Follow offering again and all your current subscribers will have to resubscribe.',
+            'de67bc6e',
+            'During this test period, you can’t change the price point you chose during setup. In the future, you’ll be able to update your subscription price.',
           ),
+          a('a46cead5', 'Connect with other creators'),
+          a('idd8ae44', 'Join our Super Follows community on Discord to connect with fellow creators.'),
+          a('b28a1b48', 'Get content tips and ideas'),
+          a('f2df375b', 'Check out our creator guide for tips, content ideas, and more.'),
           a('f3ce76c0', 'Need more help?'),
-          a('e9e3b3f7', 'If you have any questions please visit the support links below.'),
-          a('a79bf10a', 'Join the community & find best practices'),
-          a(
-            'a3932653',
-            'We’re inviting all Beta Creators and they’ll use the group to chat with each other, provide feedback, and ask questions / get support.',
-          ),
-          a('a1ef1964', 'View preview'),
-          a('c9f7c195', 'Help center'),
-          a('jfb2bf30', 'Join creators on Discord'),
-          a('a962b5d8', 'Creator guide'),
-          a('dba12b51', 'Deactivate Super Follows'),
+          a('i8982e7e', 'If you have questions, visit our Help Center or contact us.'),
+          a('ca5ca5ed', 'See preview'),
+          a('d14c7bbc', 'Join creator community'),
+          a('g867481d', 'View creator guide'),
+          a('be103b84', 'Active'),
           a('b422cb62', 'Get started with Super Follows'),
           a(
             'f08705e0',
@@ -4709,19 +4723,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j86184fd', 'Join the conversation.'),
           a('d9e109ae', 'Join Twitter today.'),
           a('f86f23b5', 'Sign in to Twitter'),
-          a('eba1b197', 'Happening now'),
-          a('fa811c30', 'Already have an account?'),
-          a('b0dbe914', 'Use phone, email or username'),
-          a('e5b0e543', 'Sign in'),
-          a('h0ff39da', 'Twitter. It’s what’s happening'),
-          a(
-            'j3f49ff6',
-            'From breaking news and entertainment to sports and politics, get the full story with all the live commentary.',
-          ),
-          a('ie4dd8d6', 'Sign up'),
-          a('fb9dd9b0', 'Sign in'),
-          a('g0ff1ca8', 'Join the conversation on Twitter'),
-          a('g3aa4a89', 'Log in to see what’s happening')
+          a('eba1b197', 'Happening now')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4738,7 +4740,19 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('jae84f3a', 'Currently Trending in your location'),
+        a('fa811c30', 'Already have an account?'),
+          a('b0dbe914', 'Use phone, email or username'),
+          a('e5b0e543', 'Sign in'),
+          a('h0ff39da', 'Twitter. It’s what’s happening'),
+          a(
+            'j3f49ff6',
+            'From breaking news and entertainment to sports and politics, get the full story with all the live commentary.',
+          ),
+          a('ie4dd8d6', 'Sign up'),
+          a('fb9dd9b0', 'Sign in'),
+          a('g0ff1ca8', 'Join the conversation on Twitter'),
+          a('g3aa4a89', 'Log in to see what’s happening'),
+          a('jae84f3a', 'Currently Trending in your location'),
           a('ae03a21c', 'See what’s happening'),
           a('d1cc8c05', 'Limit unwelcome interactions'),
           a('c1da34c2', function (e) {
@@ -5445,10 +5459,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j85d8d9f', 'No follow request pending for that user.'),
           a('ec2d8341', 'Decline'),
           a('b600eb88', 'Find your people and get recognized'),
-          a(
-            'b08bbeb4',
-            'You’ll get a public Super Follower badge that makes it easier to get noticed, chat, and connect.',
-          ),
           a('d2613122', function (e) {
             return 'Subscribe - ' + e.price + '/mo'
           }),
@@ -6013,8 +6023,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e431f1aa', 'Final'),
           a('a7391707', 'Postponed'),
           a('d2dbfa91', 'Cancelled'),
-          a('cd734f65', 'Today'),
-          a('c8891d06', 'Tomorrow'),
+          a('cd734f65', 'Today')
+        a('c8891d06', 'Tomorrow'),
           a('d6b930d3', 'Try again'),
           a('aafa48c2', 'Something went wrong.'),
           a('g5662c95', function (e) {
@@ -6023,8 +6033,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a0af935b', 'Liked'),
           a('fbaa28ef', 'Reacted'),
           a('f9be84f0', 'Downvoted'),
-          a('g23ce6f0', 'Retweeted')
-        a('b75196a4', 'Slide finger to pick a reaction'),
+          a('g23ce6f0', 'Retweeted'),
+          a('b75196a4', 'Slide finger to pick a reaction'),
           a('b03835c7', function (e) {
             return e.replyCount + ' repl' + n(e.replyCount, 'y', 'ies')
           }),
@@ -6123,8 +6133,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cfd13f46', 'Voice Dock')
         var c = o('ERkP'),
           s = [],
-          u = {}
-        function d(e) {
+          d = {}
+        function u(e) {
           return e
         }
         var f = (function (e) {
@@ -8568,7 +8578,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 get: function () {
                   var e,
                     t = c.Children.toArray(this.props.children),
-                    o = ((e = this.props.$i18n), s[u[e]] || d)
+                    o = ((e = this.props.$i18n), s[d[e]] || u)
                   return function (e, a, n) {
                     return e.concat(a, t[o(n)])
                   }

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [189],
+  [191],
   {
     '0W/e': function (e, t, a) {
       'use strict'
@@ -32,8 +32,8 @@
         h = a.n(b),
         y = a('+xEG'),
         v = a('aoyV'),
-        E = a('Zl35'),
-        g = a('fZNH'),
+        g = a('Zl35'),
+        E = a('fZNH'),
         S = a('ub6r'),
         C = a('0nHQ'),
         w = a('USG3'),
@@ -117,11 +117,11 @@
         }),
         ee = function (e) {
           var t = e.onClick,
-            a = h.a.useContext(E.b.PeriodicContext),
+            a = h.a.useContext(g.b.PeriodicContext),
             n = a.aspectRatio,
             r = a.playerState
           if (!r) return null
-          var l = Object(R.e)(r)
+          var l = Object(R.f)(r)
           if (!l || l.displayType !== W.c.AD) return null
           var i = l.durationMs,
             o = i < 7e3,
@@ -129,7 +129,7 @@
             s = c > 250,
             u = c < 0,
             p = Object(R.d)(l) || 0,
-            m = Object(R.f)(l) || 0,
+            m = Object(R.g)(l) || 0,
             d = (o ? m : 5) - p,
             f = Object(F.m)({ seconds: Object(F.q)(d) })
           return h.a.createElement(
@@ -227,7 +227,7 @@
                   n = t.isPlaying,
                   r = e.pause,
                   l = e.play,
-                  i = Object(R.e)(t)
+                  i = Object(R.f)(t)
                 return !i || i.isLive
                   ? null
                   : n || (a && 'PLAY_REQUESTED' === a.playState)
@@ -248,11 +248,11 @@
                 return h.a.createElement(D.a, null, F.o)
               }),
               f()(c()(e), '_renderTimePlayed', function () {
-                return h.a.createElement(E.a, { periodic: !0 }, function (e) {
+                return h.a.createElement(g.a, { periodic: !0 }, function (e) {
                   var t = e.playerState,
-                    a = Object(R.e)(t),
+                    a = Object(R.f)(t),
                     n = Object(R.d)(a),
-                    r = Object(R.f)(a)
+                    r = Object(R.g)(a)
                   return a && 'number' == typeof n && r && !a.isLive
                     ? h.a.createElement(D.a, null, ''.concat(Object(R.b)(n), ' / ').concat(Object(R.b)(r)))
                     : null
@@ -450,8 +450,8 @@
           return { root: { position: 'absolute', left: e.spaces.space12, top: e.spaces.space12 } }
         }),
         ve = he,
-        Ee = (a('z84I'), a('7x/C'), a('JtPf'), a('aNKf')),
-        ge = Q.a.create(function (e) {
+        ge = (a('z84I'), a('7x/C'), a('JtPf'), a('aNKf')),
+        Ee = Q.a.create(function (e) {
           return {
             root: { position: 'absolute', top: 0, left: 0, width: '100%' },
             gradientContainer: { padding: e.spaces.space16 },
@@ -463,20 +463,20 @@
           var t = e.children
           return h.a.createElement(
             Z.a,
-            { style: ge.root },
+            { style: Ee.root },
             h.a.createElement(
-              Ee.a,
+              ge.a,
               {
                 colors: [Q.a.theme.colors.translucentBlack77, Q.a.theme.colors.transparent],
-                style: ge.gradientContainer,
+                style: Ee.gradientContainer,
               },
               h.a.createElement(
                 Z.a,
-                { style: ge.flexRow },
+                { style: Ee.flexRow },
                 h.a.Children.toArray(t).map(function (e, t, a) {
                   var n = a.length,
                     r = 'LinearGradient-children-'.concat(t),
-                    l = t < n - 1 ? ge.rightSpacing : ''
+                    l = t < n - 1 ? Ee.rightSpacing : ''
                   return h.a.createElement(Z.a, { key: r, style: l }, e)
                 }),
               ),
@@ -599,7 +599,7 @@
                   n = a.playerApi,
                   r = a.playerState
                 if (!n || !r) return null
-                var l = Object(R.e)(r),
+                var l = Object(R.f)(r),
                   i = null == l ? void 0 : l.advertiserProfileImageUrl,
                   o = null == l ? void 0 : l.advertiserName,
                   c = null == l ? void 0 : l.cta
@@ -632,10 +632,10 @@
                 )
               }),
               f()(c()(e), '_renderLabels', function () {
-                return h.a.createElement(E.a, { periodic: !0 }, function (t) {
+                return h.a.createElement(g.a, { periodic: !0 }, function (t) {
                   var a = t.playerState,
-                    n = Object(R.e)(a),
-                    r = Object(R.f)(n),
+                    n = Object(R.f)(a),
+                    r = Object(R.g)(n),
                     l = Object(R.d)(n) || 0,
                     i = r ? r - l : null,
                     o = J.a.getConstants().isRTL,
@@ -767,12 +767,12 @@
                   i = n.poster,
                   o = n.useKeyboardShortcuts
                 if (!r || !l) return null
-                var c = Object(R.e)(l),
+                var c = Object(R.f)(l),
                   s = (null == c ? void 0 : c.displayType) === W.c.AD && (null == c ? void 0 : c.playbackCompleted),
                   u = null === (a = l.errorInfo) || void 0 === a ? void 0 : a.adFailed,
                   p = (null == c ? void 0 : c.displayType) === W.c.AD && (null == c ? void 0 : c.useRedesignedPrerollUx)
                 return p && (e.state.wasPrerollSkipped || s || u)
-                  ? h.a.createElement(E.a, null, function (t) {
+                  ? h.a.createElement(g.a, null, function (t) {
                       var a = t.aspectRatio,
                         n = i || l.posterImage
                       return h.a.createElement(ke.a, {
@@ -786,7 +786,7 @@
                   : h.a.createElement(
                       Oe.a,
                       { enabled: !!o, playerApi: r, playerState: l },
-                      h.a.createElement(g.a, { playerState: l }, e._renderVideo(t, !1)),
+                      h.a.createElement(E.a, { playerState: l }, e._renderVideo(t, !1)),
                     )
               }),
               f()(c()(e), '_renderVideo', function (t, a) {
@@ -803,20 +803,20 @@
                   d = l.playerDisplayOptions,
                   f = l.playerState,
                   b = l.poster,
-                  E = l.shouldShowAltLabel,
-                  g = l.showWatchAgain
+                  g = l.shouldShowAltLabel,
+                  E = l.showWatchAgain
                 if (!m || !f) return null
                 var T = t.Observer,
                   O = t.observed,
                   _ = Object(Ce.c)(f, O, Ce.b),
                   x = !!f.error,
-                  I = Object(R.e)(f),
+                  I = Object(R.f)(f),
                   P = (null == I ? void 0 : I.contentType) === W.a.GIF,
                   F = 'PLAY_REQUESTED' !== (null === (n = f.controls) || void 0 === n ? void 0 : n.playState),
-                  B = g && f.tracksFinished,
+                  B = E && f.tracksFinished,
                   N = _ && f.isPreview,
                   D = !(!_ || null == I || !I.isLive),
-                  M = E ? i : void 0,
+                  M = g ? i : void 0,
                   j = !(null != d && d.hideLeftBadges) && (!!M || P || N || D),
                   H = !(null != d && d.hideRightBadges) && _,
                   V = !(null != d && d.hidePosterImage),
@@ -850,7 +850,7 @@
                           : h.a.createElement(
                               h.a.Fragment,
                               null,
-                              !P && g && h.a.createElement(_e.a, { onScribeEvent: p, playerApi: m, playerState: f }),
+                              !P && E && h.a.createElement(_e.a, { onScribeEvent: p, playerApi: m, playerState: f }),
                               h.a.createElement(A.a, { guestsState: u, playerState: f }),
                               !P &&
                                 h.a.createElement(
@@ -968,9 +968,9 @@
         h = a.n(b),
         y = (a('2G9S'), a('ERkP')),
         v = a.n(y),
-        E = a('/yvb'),
-        g = a('3XMw'),
-        S = a.n(g),
+        g = a('/yvb'),
+        E = a('3XMw'),
+        S = a.n(E),
         C = a('rHpw'),
         w = a('MWbm'),
         R = S.a.f2d4e6f1,
@@ -1007,7 +1007,7 @@
                         w.a,
                         { onClick: this._handleOnClick, style: T.overlay },
                         v.a.createElement(
-                          E.a,
+                          g.a,
                           { accessibilityLabel: R, onPress: this._handleOnPress, type: 'onMediaDominantColorFilled' },
                           R,
                         ),
@@ -1102,8 +1102,8 @@
           h = o[1],
           y = s.animationStage,
           v = s.containerSize,
-          E = s.imageTransform,
-          g = c.a.useCallback(
+          g = s.imageTransform,
+          E = c.a.useCallback(
             function (e) {
               if (null != e) {
                 var a = e.getBoundingClientRect(),
@@ -1152,14 +1152,14 @@
           ),
           c.a.createElement(
             m.a,
-            { ref: g, style: p.a.absoluteFill },
+            { ref: E, style: p.a.absoluteFill },
             (function () {
-              if (null == v || null == E || !a) return null
+              if (null == v || null == g || !a) return null
               var e = { height: v.height, width: v.width },
-                t = E.scaleX,
-                n = E.scaleY,
-                r = E.translateX,
-                l = E.translateY,
+                t = g.scaleX,
+                n = g.scaleY,
+                r = g.translateX,
+                l = g.translateY,
                 o = { transform: 'matrix('.concat(t, ', 0, 0, ').concat(n, ', ').concat(r, ', ').concat(l, ')') },
                 s = i()(i()(i()({}, b.imageWrapperBaseStyles), e), o)
               return c.a.createElement(

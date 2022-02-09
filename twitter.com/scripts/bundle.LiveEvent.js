@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [61, 171],
+  [63, 173],
   {
     '0GAP': function (e, t, n) {
       'use strict'
@@ -316,7 +316,7 @@
         h = n.n(p),
         v = n('KEM+'),
         f = n.n(v),
-        b = (n('2G9S'), n('hBpG'), n('7x/C'), n('1t7P'), n('jQ/y'), n('ERkP')),
+        b = (n('2G9S'), n('hBpG'), n('7x/C'), n('1t7P'), n('jQ/y'), n('jwue'), n('+oxZ'), n('ERkP')),
         _ = n.n(b),
         y = n('k49u'),
         g = n('zI2C'),
@@ -969,12 +969,17 @@
                 value: function (e, t) {
                   var n = this.props,
                     a = n.liveEventDetails.eventId,
-                    r = n.timelineDetails.timelineId,
-                    i = e.liveEventDetails.eventId,
-                    o = e.timelineDetails.timelineId
-                  i !== a
+                    r = n.timelineDetails,
+                    i = r.timelineId,
+                    o = r.timelineLinks,
+                    l = e.liveEventDetails.eventId,
+                    c = e.timelineDetails,
+                    s = c.timelineId,
+                    u = c.timelineLinks
+                  l !== a
                     ? this._handleInitialFetch()
-                    : o !== r && (this._scribeTimelineTabChange(), this._scribeTimelineImpression())
+                    : s !== i && (this._scribeTimelineTabChange(), this._scribeTimelineImpression()),
+                    0 === u.length && o.length > 0 && this._scribeTimelineTabImpressions()
                 },
               },
               {
@@ -1176,6 +1181,19 @@
                       includeTimelineSource: !0,
                     }),
                   )
+                },
+              },
+              {
+                key: '_scribeTimelineTabImpressions',
+                value: function () {
+                  var e = this.props,
+                    t = e.liveEventDetails,
+                    n = e.scribeAction,
+                    a = e.scribeNamespace
+                  e.timelineDetails.timelineLinks.forEach(function (e) {
+                    var i = r()(r()({}, a), {}, { component: 'tabs', element: e.timelineId, action: 'impression' })
+                    n(i, se({ liveEventDetails: t }))
+                  })
                 },
               },
             ]),
@@ -2350,21 +2368,19 @@
         I = n('CaKu'),
         C = n('y+lG'),
         k = n('SrIh'),
-        w = n('RqPI'),
-        S = n('Irs7'),
-        x = n('uDfI'),
-        P = n('zCf4'),
-        D = n('yUQf'),
-        A = n('jwTb'),
-        T = n('SOvA'),
-        O = n('I/9y'),
-        L = {
+        w = n('Irs7'),
+        S = n('uDfI'),
+        x = n('zCf4'),
+        P = n('jwTb'),
+        D = n('SOvA'),
+        A = n('I/9y'),
+        T = {
           tweet: {
             isAvailable: function () {
               return !0
             },
             scribeAction: 'share_via_tweet',
-            Icon: A.a,
+            Icon: P.a,
             text: d.a.fcc684a9,
             testID: _,
           },
@@ -2373,7 +2389,7 @@
               return !0
             },
             scribeAction: 'share_via_dm',
-            Icon: T.a,
+            Icon: D.a,
             text: d.a.f61c4bbf,
           },
           copy: {
@@ -2381,7 +2397,7 @@
               return I.a.isAvailable()
             },
             scribeAction: 'copy_link',
-            Icon: O.a,
+            Icon: A.a,
             text: d.a.e05c00b4,
           },
           via: {
@@ -2393,48 +2409,47 @@
             text: d.a.if23a251,
           },
         },
-        R = ['isAvailable', 'scribeAction']
-      function M(e) {
-        var t = Object(S.b)()
+        O = ['isAvailable', 'scribeAction']
+      function L(e) {
+        var t = Object(w.b)()
         return {
           getActionItem: (function (e, t) {
-            var n = Object(x.c)(),
-              a = Object(P.f)(),
-              i = Object(D.a)(w.v)
+            var n = Object(S.c)(),
+              a = Object(x.f)()
             return r.a.useMemo(
               function () {
                 return function (r) {
-                  var o = L[r.type],
-                    l = o.isAvailable,
-                    c = o.scribeAction,
-                    u = g()(o, R)
-                  if (!l()) return null
-                  var d = s()({}, u)
-                  function m() {
-                    var o = r.shareText || e.shareText,
-                      l = e.url,
-                      u = s()(s()({}, e.scribeNamespace), {}, { action: c }, r.scribeNamespace),
-                      d = { text: o, url: l },
-                      m = { analytics: t, dispatch: n, history: a, mergedScribeNamespace: u, sessionToken: i }
+                  var i = T[r.type],
+                    o = i.isAvailable,
+                    l = i.scribeAction,
+                    c = g()(i, O)
+                  if (!o()) return null
+                  var u = s()({}, c)
+                  function d() {
+                    var i = r.shareText || e.shareText,
+                      o = e.url,
+                      c = s()(s()({}, e.scribeNamespace), {}, { action: l }, r.scribeNamespace),
+                      u = { text: i, url: o },
+                      d = { analytics: t, dispatch: n, history: a, mergedScribeNamespace: c }
                     !(function (e, t, n) {
                       var a = function () {
                         return n.analytics.scribe(n.mergedScribeNamespace)
                       }
                       switch (e) {
                         case 'dm':
-                          return a(), void n.history.push(s()(s()({}, F(t)), {}, { pathname: '/messages/compose' }))
+                          return a(), void n.history.push(s()(s()({}, M(t)), {}, { pathname: '/messages/compose' }))
                         case 'copy':
                           return (
-                            I.a.setString(Object(C.a)(t.url, n.sessionToken)),
+                            I.a.setString(Object(C.a)(t.url)),
                             a(),
-                            void n.dispatch(Object(E.b)({ text: B.copyLinkSuccessMessage }))
+                            void n.dispatch(Object(E.b)({ text: R.copyLinkSuccessMessage }))
                           )
                         case 'tweet':
                           return (
                             a(),
                             void n.history.push(
                               s()(
-                                s()({ pathname: '/compose/tweet' }, F(t)),
+                                s()({ pathname: '/compose/tweet' }, M(t)),
                                 {},
                                 { state: { positionCursorAtBeginning: !0 } },
                               ),
@@ -2442,7 +2457,7 @@
                           )
                         case 'via':
                           return void window.navigator
-                            .share({ text: t.text, url: Object(C.a)(t.url, n.sessionToken) })
+                            .share({ text: t.text, url: Object(C.a)(t.url) })
                             .then(a)
                             .catch(function () {
                               n.analytics.scribe(s()(s()({}, n.mergedScribeNamespace), {}, { action: 'share_error' }))
@@ -2450,40 +2465,40 @@
                         default:
                           Object(k.a)('[ShareButton] Unexpected share type ['.concat(e, ']'))
                       }
-                    })(r.type, d, m)
+                    })(r.type, u, d)
                   }
-                  return r.label && (d.text = r.label), s()(s()({}, d), {}, { onClick: m })
+                  return r.label && (u.text = r.label), s()(s()({}, u), {}, { onClick: d })
                 }
               },
-              [t, n, a, i, e.scribeNamespace, e.shareText, e.url],
+              [t, n, a, e.scribeNamespace, e.shareText, e.url],
             )
           })(e, t),
           analytics: t,
         }
       }
-      var B = { copyLinkSuccessMessage: d.a.f88553c8, shareTextPrefixFormatter: d.a.gb5851d7 }
-      function F(e) {
+      var R = { copyLinkSuccessMessage: d.a.f88553c8, shareTextPrefixFormatter: d.a.gb5851d7 }
+      function M(e) {
         var t = e.url,
           n = e.text
-        return { query: { text: n ? B.shareTextPrefixFormatter({ prefix: n, url: t }) : t } }
+        return { query: { text: n ? R.shareTextPrefixFormatter({ prefix: n, url: t }) : t } }
       }
-      var N = n('mN6z')
-      var j = n('mjJ+'),
-        V = n('rHpw'),
-        U = { element: 'share' }
-      function z(e) {
+      var B = n('mN6z')
+      var F = n('mjJ+'),
+        N = n('rHpw'),
+        j = { element: 'share' }
+      function V(e) {
         var t = (function (e) {
             var t = r.a.useRef({ previous: void 0 })
             function n(e) {
               return (t.current.previous = e), e
             }
             var a = t.current.previous
-            return a && (e === a || Object(N.a)(e, a)) ? a : n(e)
-          })(s()(s()({}, U), e.scribeNamespace)),
-          n = M(s()(s()({}, e), {}, { scribeNamespace: t })),
+            return a && (e === a || Object(B.a)(e, a)) ? a : n(e)
+          })(s()(s()({}, j), e.scribeNamespace)),
+          n = L(s()(s()({}, e), {}, { scribeNamespace: t })),
           a = n.analytics,
           i = n.getActionItem
-        var o = e.ButtonComponent || H
+        var o = e.ButtonComponent || U
         return r.a.createElement(o, {
           onPress: function () {
             var e = s()(s()({}, t), {}, { action: 'share_menu_click' })
@@ -2504,26 +2519,26 @@
                     var t = i({ type: e })
                     t && n.push(t)
                   }),
-              r.a.createElement(j.a, { isFixed: e.isFixed, items: n, onCloseRequested: t, shouldCloseOnClick: !0 })
+              r.a.createElement(F.a, { isFixed: e.isFixed, items: n, onCloseRequested: t, shouldCloseOnClick: !0 })
             )
           },
         })
       }
-      function H(e) {
-        return r.a.createElement(f, l()({}, e, { style: W.button, testID: b }))
+      function U(e) {
+        return r.a.createElement(f, l()({}, e, { style: z.button, testID: b }))
       }
-      var W = V.a.create(function (e) {
+      var z = N.a.create(function (e) {
           return { button: { marginRight: e.spaces.space4 } }
         }),
-        q = ['copyLinkShareLabel', 'dmShareLabel', 'externalShareLabel', 'tweetShareLabel']
-      function G(e) {
+        H = ['copyLinkShareLabel', 'dmShareLabel', 'externalShareLabel', 'tweetShareLabel']
+      function W(e) {
         var t = e.copyLinkShareLabel,
           n = e.dmShareLabel,
           a = e.externalShareLabel,
           o = e.tweetShareLabel,
-          l = g()(e, q)
+          l = g()(e, H)
         return r.a.createElement(
-          z,
+          V,
           l,
           r.a.createElement(i, { label: o, type: 'tweet' }),
           r.a.createElement(i, { label: n, type: 'dm' }),
@@ -2531,42 +2546,56 @@
           r.a.createElement(i, { label: a, type: 'via' }),
         )
       }
-      ;(G.Action = i), (G.Custom = z)
-      t.a = G
+      ;(W.Action = i), (W.Custom = V)
+      t.a = W
     },
     IJsT: function (e, t, n) {
       'use strict'
       n('hBvt')
       var a = n('ERkP'),
         r = n.n(a),
-        i = n('cm6r'),
-        o = n('rHpw'),
-        l = n('MWbm'),
-        c = function (e) {
+        i = n('I4+6'),
+        o = n('cm6r'),
+        l = n('rHpw'),
+        c = n('MWbm'),
+        s = function (e) {
           var t = e.accessibilityLabel,
             n = e.containerStyle,
             a = e.isCompact,
-            o = e.link,
-            c = e.lower,
-            u = e.onClick,
-            d = e.stackLayoutLowerStyle,
-            m = e.stackLayoutUpperStyle,
-            p = e.upper,
-            h = e.withInteractiveStyling,
-            v = r.a.createElement(
+            s = e.link,
+            d = e.lower,
+            m = e.onClick,
+            p = e.stackLayoutLowerStyle,
+            h = e.stackLayoutUpperStyle,
+            v = e.upper,
+            f = e.withInsetFocusRing,
+            b = e.withInteractiveStyling,
+            _ = i.a.generate({
+              backgroundColor: l.a.theme.colors.transparent,
+              color: l.a.theme.colors.primary,
+              insetFocusRing: f,
+            }),
+            y = r.a.createElement(
               r.a.Fragment,
               null,
-              r.a.createElement(l.a, { style: [s.defaultUpperContainerStyle, m, a && { height: 'auto' }] }, p),
-              c ? r.a.createElement(l.a, { style: [s.defaultLowerContainerStyle, d] }, c) : null,
+              r.a.createElement(c.a, { style: [u.defaultUpperContainerStyle, h, a && { height: 'auto' }] }, v),
+              d ? r.a.createElement(c.a, { style: [u.defaultLowerContainerStyle, p] }, d) : null,
             )
           return r.a.createElement(
-            i.a,
-            { accessibilityLabel: t, interactive: h, link: o, onClick: u, style: [s.root, n] },
-            v,
+            o.a,
+            {
+              accessibilityLabel: t,
+              interactive: b,
+              interactiveStyles: b ? _ : void 0,
+              link: s,
+              onClick: m,
+              style: [u.root, n],
+            },
+            y,
           )
         }
-      c.defaultProps = { withInteractiveStyling: !1 }
-      var s = o.a.create(function (e) {
+      s.defaultProps = { withInsetFocusRing: !0, withInteractiveStyling: !1 }
+      var u = l.a.create(function (e) {
         return {
           root: { padding: e.spaces.space12, borderRadius: e.borderRadii.large },
           defaultLowerContainerStyle: { marginTop: e.spaces.space12, justifyContent: 'flex-end' },
@@ -2577,7 +2606,7 @@
           },
         }
       })
-      t.a = c
+      t.a = s
     },
     Mhzv: function (e, t, n) {
       'use strict'
@@ -2587,7 +2616,7 @@
         i = n('zb92'),
         o = Object(i.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(5), n.e(16), n.e(21), n.e(190)]).then(n.bind(null, 'wHP+'))
+            return Promise.all([n.e(0), n.e(5), n.e(16), n.e(22), n.e(192)]).then(n.bind(null, 'wHP+'))
           },
           renderPlaceholder: function () {
             return r.a.createElement('div', null)
@@ -3171,8 +3200,14 @@
             var t = e.analytics,
               n = e.commerceItems,
               a = e.module,
-              r = t.contextualScribeData,
-              i = function (e, a) {
+              r = t.contextualScribeData
+            g.a.useEffect(
+              function () {
+                t.scribe({ action: 'impression', data: r })
+              },
+              [t, r],
+            )
+            var i = function (e, a) {
                 var i = X.a.addCommerceDetailsToItems(r, n, e)
                 t.scribe({ element: 'product', action: a, data: i })
               },
@@ -5536,7 +5571,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return n.e(220).then(n.bind(null, 'tFiq'))
+              return n.e(222).then(n.bind(null, 'tFiq'))
             },
             loaderKey: 'momentAnnoationLoader',
             strategy: n('XBtf').a.Critical,

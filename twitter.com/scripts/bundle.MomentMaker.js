@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [66, 3, 6, 8, 171],
+  [68, 3, 6, 8, 173],
   {
     '+/sI': function (e, t, n) {
       'use strict'
@@ -4348,7 +4348,7 @@
       var r = n('zb92'),
         a = Object(r.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(183)]).then(n.bind(null, 'MzK7'))
+            return Promise.all([n.e(0), n.e(185)]).then(n.bind(null, 'MzK7'))
           },
         })
       t.a = a
@@ -5661,7 +5661,7 @@
         v = function (e) {
           return {
             loader: function () {
-              return n.e(196).then(n.bind(null, '+93b'))
+              return n.e(198).then(n.bind(null, '+93b'))
             },
             loaderKey: 'defaultCarouselTimelineLoader',
             loaderOptions: e,
@@ -5682,7 +5682,7 @@
         }),
         g = {
           loader: function () {
-            return n.e(199).then(n.bind(null, 'GCNy'))
+            return n.e(201).then(n.bind(null, 'GCNy'))
           },
           loaderKey: 'conversationGapLoader',
           strategy: f.a.Critical,
@@ -5696,7 +5696,7 @@
         C = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(208)]).then(n.bind(null, 'RohR'))
+              return Promise.all([n.e(0), n.e(210)]).then(n.bind(null, 'RohR'))
             },
             loaderOptions: e,
             loaderKey: 'buttonFooterLoader',
@@ -5719,7 +5719,7 @@
                 ((r = { isInSidebar: a }),
                 {
                   loader: function () {
-                    return Promise.all([n.e(0), n.e(208)]).then(n.bind(null, 'pODo'))
+                    return Promise.all([n.e(0), n.e(210)]).then(n.bind(null, 'pODo'))
                   },
                   loaderOptions: r,
                   loaderKey: 'defaultModuleFooterLoader',
@@ -5732,7 +5732,7 @@
         },
         T = {
           loader: function () {
-            return n.e(219).then(n.bind(null, 'oiEo'))
+            return n.e(221).then(n.bind(null, 'oiEo'))
           },
           loaderKey: 'defaultModuleHeaderLoader',
           strategy: f.a.Critical,
@@ -5740,7 +5740,7 @@
         k = c.e(T),
         I = {
           loader: function () {
-            return n.e(211).then(n.bind(null, 'hKgB'))
+            return n.e(213).then(n.bind(null, 'hKgB'))
           },
           loaderKey: 'defaultImpressionPlaceholderLoader',
           strategy: f.a.Critical,
@@ -5749,7 +5749,7 @@
         x = function (e) {
           return {
             loader: function () {
-              return n.e(234).then(n.bind(null, 'D9QQ'))
+              return n.e(236).then(n.bind(null, 'D9QQ'))
             },
             loaderOptions: e,
             loaderKey: 'defaultModuleShowMoreLoader',
@@ -6055,7 +6055,7 @@
         te = q,
         ne = {
           loader: function () {
-            return n.e(243).then(n.bind(null, 'VzRj'))
+            return n.e(245).then(n.bind(null, 'VzRj'))
           },
           loaderKey: 'defaultVerticalGridListLoader',
           strategy: f.a.Critical,
@@ -6142,7 +6142,7 @@
         },
         ce = {
           loader: function () {
-            return n.e(244).then(n.bind(null, 'JKhl'))
+            return n.e(246).then(n.bind(null, 'JKhl'))
           },
           loaderKey: 'defaultVerticalGridRowLoader',
           strategy: f.a.Critical,
@@ -6344,7 +6344,7 @@
         c = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(351)]).then(n.bind(null, 'YMZp'))
+              return Promise.all([n.e(0), n.e(353)]).then(n.bind(null, 'YMZp'))
             },
             loaderOptions: e,
             loaderKey: 'topicCellLoader',
@@ -6354,7 +6354,7 @@
         l = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(351)]).then(n.bind(null, 'zWr2'))
+              return Promise.all([n.e(0), n.e(353)]).then(n.bind(null, 'zWr2'))
             },
             loaderOptions: e,
             loaderKey: 'topicPillLoader',
@@ -11933,7 +11933,7 @@
         J = (n('lTEL'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         Z = Object(J.a)({
           loader: function () {
-            return n.e(177).then(n.bind(null, 'mL9d'))
+            return n.e(179).then(n.bind(null, 'mL9d'))
           },
         }),
         $ = n('m3Bd'),
@@ -13210,7 +13210,9 @@
                   l = n.withCardLinks,
                   u = n.withInlineMedia,
                   d = n.withQuotedTweetLinks,
-                  p = Wt.a.getOriginalTweet(s)
+                  p = Wt.a.getOriginalTweet(s),
+                  h = Wt.a.hasInteractiveText(p),
+                  m = c || (h ? 'title4' : t.size)
                 return C.a.createElement(
                   It,
                   null,
@@ -13221,9 +13223,10 @@
                       hitHighlights: a,
                       linkify: i,
                       onEntityClick: e.props.onEntityClick,
-                      size: c || t.size,
+                      size: m,
                       transformUrl: e._transformUrl,
                       unmentionedUserIds: p.unmentioned_user_ids,
+                      weight: h ? 'heavy' : t.weight,
                       withCardLinks: l,
                       withMediaLinks: !u,
                       withQuoteLinks: d || Wt.a.isQuotedTweetUnavailable(p),
@@ -15923,7 +15926,7 @@
       }
       var T = {
           load: function () {
-            return n.e(217).then(n.t.bind(null, 'Ys2B', 7))
+            return n.e(219).then(n.t.bind(null, 'Ys2B', 7))
           },
         },
         k = (function (e) {
@@ -17638,34 +17641,48 @@
       n('hBvt')
       var r = n('ERkP'),
         a = n.n(r),
-        i = n('cm6r'),
-        o = n('rHpw'),
-        s = n('MWbm'),
-        c = function (e) {
+        i = n('I4+6'),
+        o = n('cm6r'),
+        s = n('rHpw'),
+        c = n('MWbm'),
+        l = function (e) {
           var t = e.accessibilityLabel,
             n = e.containerStyle,
             r = e.isCompact,
-            o = e.link,
-            c = e.lower,
-            u = e.onClick,
-            d = e.stackLayoutLowerStyle,
-            p = e.stackLayoutUpperStyle,
-            h = e.upper,
-            m = e.withInteractiveStyling,
-            f = a.a.createElement(
+            l = e.link,
+            d = e.lower,
+            p = e.onClick,
+            h = e.stackLayoutLowerStyle,
+            m = e.stackLayoutUpperStyle,
+            f = e.upper,
+            v = e.withInsetFocusRing,
+            y = e.withInteractiveStyling,
+            b = i.a.generate({
+              backgroundColor: s.a.theme.colors.transparent,
+              color: s.a.theme.colors.primary,
+              insetFocusRing: v,
+            }),
+            g = a.a.createElement(
               a.a.Fragment,
               null,
-              a.a.createElement(s.a, { style: [l.defaultUpperContainerStyle, p, r && { height: 'auto' }] }, h),
-              c ? a.a.createElement(s.a, { style: [l.defaultLowerContainerStyle, d] }, c) : null,
+              a.a.createElement(c.a, { style: [u.defaultUpperContainerStyle, m, r && { height: 'auto' }] }, f),
+              d ? a.a.createElement(c.a, { style: [u.defaultLowerContainerStyle, h] }, d) : null,
             )
           return a.a.createElement(
-            i.a,
-            { accessibilityLabel: t, interactive: m, link: o, onClick: u, style: [l.root, n] },
-            f,
+            o.a,
+            {
+              accessibilityLabel: t,
+              interactive: y,
+              interactiveStyles: y ? b : void 0,
+              link: l,
+              onClick: p,
+              style: [u.root, n],
+            },
+            g,
           )
         }
-      c.defaultProps = { withInteractiveStyling: !1 }
-      var l = o.a.create(function (e) {
+      l.defaultProps = { withInsetFocusRing: !0, withInteractiveStyling: !1 }
+      var u = s.a.create(function (e) {
         return {
           root: { padding: e.spaces.space12, borderRadius: e.borderRadii.large },
           defaultLowerContainerStyle: { marginTop: e.spaces.space12, justifyContent: 'flex-end' },
@@ -17676,7 +17693,7 @@
           },
         }
       })
-      t.a = c
+      t.a = l
     },
     'IMA+': function (e, t, n) {
       'use strict'
@@ -18744,7 +18761,7 @@
         o = n('RuTB'),
         s = Object(i.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(182)]).then(n.bind(null, 'VeNJ'))
+            return Promise.all([n.e(0), n.e(184)]).then(n.bind(null, 'VeNJ'))
           },
           renderPlaceholder: function (e, t) {
             return a.a.createElement(o.a, { hasError: e, onRetry: t })
@@ -18982,7 +18999,7 @@
         c = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(240)]).then(n.bind(null, 'lX7a'))
+              return Promise.all([n.e(0), n.e(242)]).then(n.bind(null, 'lX7a'))
             },
             loaderKey: 'defaultUserLoader',
             loaderOptions: e,
@@ -20173,7 +20190,7 @@
         i = n('zb92'),
         o = Object(i.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(5), n.e(16), n.e(21), n.e(190)]).then(n.bind(null, 'wHP+'))
+            return Promise.all([n.e(0), n.e(5), n.e(16), n.e(22), n.e(192)]).then(n.bind(null, 'wHP+'))
           },
           renderPlaceholder: function () {
             return a.a.createElement('div', null)
@@ -21836,7 +21853,7 @@
         a = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(218)]).then(n.bind(null, 'J23q'))
+              return Promise.all([n.e(0), n.e(220)]).then(n.bind(null, 'J23q'))
             },
             loaderKey: 'defaultMessageLoader',
             loaderOptions: e,
@@ -21854,14 +21871,14 @@
         c = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf')),
         l = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(209)]).then(n.bind(null, 'Xl5C'))
+            return Promise.all([n.e(0), n.e(211)]).then(n.bind(null, 'Xl5C'))
           },
           loaderKey: 'defaultGapLoader',
           strategy: c.a.Critical,
         },
         u = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(209)]).then(n.bind(null, 'ex5I'))
+            return Promise.all([n.e(0), n.e(211)]).then(n.bind(null, 'ex5I'))
           },
           loaderKey: 'showMoreGapLoader',
           strategy: c.a.Critical,
@@ -21869,7 +21886,7 @@
         d = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(209)]).then(n.bind(null, 'zXWy'))
+              return Promise.all([n.e(0), n.e(211)]).then(n.bind(null, 'zXWy'))
             },
             loaderKey: 'showMoreThreadsPromptGapLoader',
             loaderOptions: e,
@@ -21904,7 +21921,7 @@
               ((r = { onLowQualityCursorShown: m, transparentCursorsEnabled: p, withRuxInjections: !!s }),
               {
                 loader: function () {
-                  return Promise.all([n.e(0), n.e(209)]).then(n.bind(null, 'aqRH'))
+                  return Promise.all([n.e(0), n.e(211)]).then(n.bind(null, 'aqRH'))
                 },
                 loaderKey: 'showMoreThreadsGapLoader',
                 loaderOptions: r,
@@ -22060,89 +22077,102 @@
     QIgh: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return A
+        return F
       })
-      var r = n('KEM+'),
-        a = n.n(r),
-        i = n('yiKp'),
-        o = n.n(i),
-        s = n('PnFR'),
-        c = n('wrlS'),
-        l = n('rpbw'),
-        u = n('S/Qv'),
-        d = n('ezF+'),
-        p = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf')),
-        h = {
+      var r,
+        a = n('KEM+'),
+        i = n.n(a),
+        o = n('yiKp'),
+        s = n.n(o),
+        c = n('PnFR'),
+        l = n('wrlS'),
+        u = n('rpbw'),
+        d = n('S/Qv'),
+        p = n('ezF+'),
+        h = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf')),
+        m = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(346)]).then(n.bind(null, 'jv0Q'))
+            return Promise.all([n.e(0), n.e(348)]).then(n.bind(null, 'jv0Q'))
           },
           loaderKey: 'defaultNewEntriesGapLoader',
-          strategy: p.a.Critical,
+          strategy: h.a.Critical,
         },
-        m = d.e(h),
-        f = n('TEXq'),
-        v = (n('yH/f'), Object.freeze({ RelevancePrompt: 'relevancePrompt' })),
-        y = {
+        f = p.e(m),
+        v = n('TEXq'),
+        y =
+          (n('yH/f'),
+          Object.freeze({
+            RelevancePrompt: 'relevancePrompt',
+            OnboardingLikesStartPrompt: 'onboardingLikesStartPrompt',
+          })),
+        b = {
           loader: function () {
-            return n.e(349).then(n.bind(null, '3ukl'))
+            return n.e(350).then(n.bind(null, 'YIsX'))
+          },
+          loaderKey: 'onboardingLikesStartPromptLoader',
+          strategy: h.a.Critical,
+        },
+        g = {
+          loader: function () {
+            return n.e(350).then(n.bind(null, '3ukl'))
           },
           loaderKey: 'relevancePromptLoader',
-          strategy: p.a.Critical,
+          strategy: h.a.Critical,
         },
-        b = d.c({
+        _ = p.c({
           selectDisplayType: function (e) {
-            return Object(f.a)(e.content) || ''
+            return Object(v.a)(e.content) || ''
           },
-          handlers: a()({}, v.RelevancePrompt, y),
+          handlers: ((r = {}), i()(r, y.RelevancePrompt, g), i()(r, y.OnboardingLikesStartPrompt, b), r),
         }),
-        g = n('5Y9N'),
-        _ = n('91Nr'),
-        w = n('67iF'),
-        C = {
+        w = n('5Y9N'),
+        C = n('91Nr'),
+        E = n('67iF'),
+        T = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(237)]).then(n.bind(null, 'VSZh'))
+            return Promise.all([n.e(0), n.e(239)]).then(n.bind(null, 'VSZh'))
           },
           loaderKey: 'topicFollowPromptDefaultLoader',
-          strategy: p.a.Critical,
+          strategy: h.a.Critical,
         },
-        E = d.e(C),
-        T = n('Yy//'),
-        k = n('ERkP'),
-        I = n.n(k),
-        S = n('t62R'),
-        x = n('xM7j'),
-        O = n('Ka9G'),
-        P = {
+        k = p.e(T),
+        I = n('Yy//'),
+        S = n('ERkP'),
+        x = n.n(S),
+        O = n('t62R'),
+        P = n('xM7j'),
+        R = n('Ka9G'),
+        L = {
           loader: function () {
-            return n.e(242).then(n.bind(null, 'bXO0'))
+            return n.e(244).then(n.bind(null, 'bXO0'))
           },
           loaderKey: 'topicTileLoader',
-          strategy: p.a.Critical,
+          strategy: h.a.Critical,
         },
-        R = n('zF9o'),
-        L = d.c({
+        M = n('zF9o'),
+        A = p.c({
           selectDisplayType: function (e) {
-            return Object(f.a)(e.content.content) || ''
+            return Object(v.a)(e.content.content) || ''
           },
-          handlers: a()({}, R.c.TopicTile, P),
+          handlers: i()({}, M.c.TopicTile, L),
         }),
-        M = n('8UdT'),
-        A = function (e) {
+        D = n('8UdT'),
+        F = function (e) {
           var t,
             n,
             r = e.allowDownvote,
-            i = void 0 !== r && r,
-            p = e.displayBlocked,
-            h = void 0 !== p && p,
-            f = e.shouldSelfThreadIncludeAvatar,
-            v = void 0 !== f && f,
+            a = void 0 !== r && r,
+            o = e.displayBlocked,
+            h = void 0 !== o && o,
+            m = e.shouldSelfThreadIncludeAvatar,
+            v = void 0 !== m && m,
             y = e.shouldStoreTypeaheadItem,
-            C = e.showWithheldBannerOnMyTweets,
-            k = void 0 === C || C,
-            P = e.tweetDismissable,
-            R = void 0 !== P && P,
-            A = e.withMessageGaps,
-            D = void 0 === A || A,
+            b = e.showWithheldBannerOnMyTweets,
+            g = void 0 === b || b,
+            T = e.tweetDismissable,
+            S = void 0 !== T && T,
+            L = e.withMessageGaps,
+            M = void 0 === L || L,
             F = e.withMuteConversation,
             B = void 0 !== F && F,
             j = e.withRemoveFromBookmarks,
@@ -22153,26 +22183,26 @@
             z = void 0 !== V && V,
             W = e.bookmarkFolderId,
             K = void 0 === W ? void 0 : W
-          return o()(
-            o()({}, Object(g.a)({})),
+          return s()(
+            s()({}, Object(w.a)({})),
             {},
             ((t = {}),
-            a()(t, M.b.Message, Object(u.a)({ withGaps: D })),
-            a()(t, M.a.NewEntries, m),
-            a()(t, M.b.Prompt, b),
-            a()(t, M.b.TimelineCursor, Object(s.a)({})),
-            a()(t, M.b.Tombstone, _.a),
-            a()(t, M.b.Topic, Object(w.a)({ shouldStoreTypeaheadItem: y })),
-            a()(t, M.b.TopicFollowPrompt, E),
-            a()(
+            i()(t, D.b.Message, Object(d.a)({ withGaps: M })),
+            i()(t, D.a.NewEntries, f),
+            i()(t, D.b.Prompt, _),
+            i()(t, D.b.TimelineCursor, Object(c.a)({})),
+            i()(t, D.b.Tombstone, C.a),
+            i()(t, D.b.Topic, Object(E.a)({ shouldStoreTypeaheadItem: y })),
+            i()(t, D.b.TopicFollowPrompt, k),
+            i()(
               t,
-              M.b.Tweet,
-              Object(T.a)({
-                allowDownvote: i,
+              D.b.Tweet,
+              Object(I.a)({
+                allowDownvote: a,
                 displayBlocked: h,
-                dismissable: R,
+                dismissable: S,
                 shouldSelfThreadIncludeAvatar: v,
-                showWithheldBannerOnMyTweets: k,
+                showWithheldBannerOnMyTweets: g,
                 shouldStoreTypeaheadItem: y,
                 withActionsDisabled: U,
                 withMuteConversation: B,
@@ -22181,20 +22211,20 @@
                 bookmarkFolderId: K,
               }),
             ),
-            a()(t, M.b.TwitterList, Object(l.a)({})),
-            a()(
+            i()(t, D.b.TwitterList, Object(u.a)({})),
+            i()(
               t,
-              M.a.Unsupported,
-              ((n = c.c.isTrue('responsive_web_unsupported_entry_tombstone')),
-              d.e(
+              D.a.Unsupported,
+              ((n = l.c.isTrue('responsive_web_unsupported_entry_tombstone')),
+              p.e(
                 n
-                  ? d.d({
+                  ? p.d({
                       render: function (e) {
-                        return I.a.createElement(
-                          x.a,
+                        return x.a.createElement(
+                          P.a,
                           null,
-                          I.a.createElement(
-                            S.b,
+                          x.a.createElement(
+                            O.b,
                             null,
                             (function (e) {
                               var t = 'Failed to parse item: '.concat(e.content.displayType)
@@ -22204,15 +22234,15 @@
                         )
                       },
                     })
-                  : d.a(),
+                  : p.a(),
               )),
             ),
-            a()(t, M.b.User, Object(O.a)({ shouldStoreTypeaheadItem: y })),
-            a()(t, M.b.VerticalGridItem, L),
+            i()(t, D.b.User, Object(R.a)({ shouldStoreTypeaheadItem: y })),
+            i()(t, D.b.VerticalGridItem, A),
             t),
           )
         }
-      t.b = A({ displayBlocked: !1 })
+      t.b = F({ displayBlocked: !1 })
     },
     R7KY: function (e, t, n) {
       'use strict'
@@ -26344,8 +26374,14 @@
             var t = e.analytics,
               n = e.commerceItems,
               r = e.module,
-              a = t.contextualScribeData,
-              i = function (e, r) {
+              a = t.contextualScribeData
+            _.a.useEffect(
+              function () {
+                t.scribe({ action: 'impression', data: a })
+              },
+              [t, a],
+            )
+            var i = function (e, r) {
                 var i = Y.a.addCommerceDetailsToItems(a, n, e)
                 t.scribe({ element: 'product', action: r, data: i })
               },
@@ -34985,7 +35021,7 @@
         x = (n('JtPf'), n('XBtf')),
         O = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(201)]).then(n.bind(null, 'zxwU'))
+            return Promise.all([n.e(0), n.e(203)]).then(n.bind(null, 'zxwU'))
           },
           loaderKey: 'dividerEntryLoader',
           strategy: x.a.Critical,
@@ -35065,7 +35101,7 @@
         B = n.n(F),
         j = {
           loader: function () {
-            return n.e(236).then(n.bind(null, 'WunU'))
+            return n.e(238).then(n.bind(null, 'WunU'))
           },
           loaderKey: 'tombstonedEntryLoader',
           strategy: x.a.Critical,
@@ -38551,7 +38587,7 @@
         m = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(221)]).then(n.bind(null, 'Pb8P'))
+              return Promise.all([n.e(0), n.e(223)]).then(n.bind(null, 'Pb8P'))
             },
             loaderOptions: e,
             loaderKey: 'momentSummaryLoader',
@@ -38880,7 +38916,7 @@
         c = n('RuTB'),
         l = Object(s.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(162)]).then(n.bind(null, 'FwSR'))
+            return Promise.all([n.e(0), n.e(164)]).then(n.bind(null, 'FwSR'))
           },
           renderPlaceholder: function (e, t) {
             return o.a.createElement(c.a, { hasError: e, onRetry: t })
@@ -38932,7 +38968,7 @@
       var r = n('zb92')
       t.a = Object(r.a)({
         loader: function () {
-          return Promise.all([n.e(0), n.e(7), n.e(214)]).then(n.bind(null, '57t6'))
+          return Promise.all([n.e(0), n.e(7), n.e(216)]).then(n.bind(null, '57t6'))
         },
       })
     },
@@ -39579,7 +39615,7 @@
         c = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(207)]).then(n.bind(null, 'uuEz'))
+              return Promise.all([n.e(0), n.e(17), n.e(209)]).then(n.bind(null, 'uuEz'))
             },
             loaderOptions: e,
             loaderKey: 'eventSummaryDefaultLoader',
@@ -43007,7 +43043,7 @@
         E = n('RuTB'),
         T = Object(C.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(5), n.e(16), n.e(175)])
+            return Promise.all([n.e(0), n.e(5), n.e(177)])
               .then(n.bind(null, 'EOJ2'))
               .then(function (e) {
                 return { default: e.__DANGEROUS_IMPORT_VIDEOPLAYER__ }
@@ -45478,7 +45514,7 @@
         p = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(22), n.e(216)]).then(n.bind(null, '1Ws7'))
+              return Promise.all([n.e(0), n.e(17), n.e(23), n.e(218)]).then(n.bind(null, '1Ws7'))
             },
             loaderKey: 'listLoader',
             loaderOptions: e,
@@ -45487,7 +45523,7 @@
         },
         h = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(22), n.e(216)]).then(n.bind(null, 'O4YN'))
+            return Promise.all([n.e(0), n.e(17), n.e(23), n.e(218)]).then(n.bind(null, 'O4YN'))
           },
           loaderKey: 'tileLoader',
           strategy: d.a.Critical,
@@ -46596,7 +46632,7 @@
         a = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(344)]).then(n.bind(null, 'NO+D'))
+              return Promise.all([n.e(0), n.e(346)]).then(n.bind(null, 'NO+D'))
             },
             loaderOptions: e,
             loaderKey: 'inlineTombstoneLoader',
@@ -46605,14 +46641,14 @@
         },
         i = {
           loader: function () {
-            return n.e(353).then(n.bind(null, '1Tet'))
+            return n.e(355).then(n.bind(null, '1Tet'))
           },
           loaderKey: 'tweetUnavailableTombstoneLoader',
           strategy: r.a.Critical,
         },
         o = {
           loader: function () {
-            return n.e(292).then(n.bind(null, '08qV'))
+            return n.e(294).then(n.bind(null, '08qV'))
           },
           loaderKey: 'disconnectedRepliesTombstoneLoader',
           strategy: r.a.Critical,
@@ -51402,7 +51438,9 @@
                   h = ue.a.getClickTrackingEmbedDetails(p, n)
                 if (u) {
                   var m =
-                    u === Ie.b.URL_CLICK && e.target instanceof window.HTMLElement ? { url: e.target.href } : void 0
+                    u === Ie.b.URL_CLICK && e.currentTarget instanceof window.HTMLElement
+                      ? { url: e.currentTarget.href }
+                      : void 0
                   i._handleAsyncPromotedEvent(u, m)
                 }
                 if (t === _e.a.MEDIA) return i._handleTweetClick(e)
@@ -52518,7 +52556,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return n.e(220).then(n.bind(null, 'tFiq'))
+              return n.e(222).then(n.bind(null, 'tFiq'))
             },
             loaderKey: 'momentAnnoationLoader',
             strategy: n('XBtf').a.Critical,

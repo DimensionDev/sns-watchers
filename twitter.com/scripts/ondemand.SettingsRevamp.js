@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [232],
+  [234],
   {
     '1Uii': function (e, t, a) {
       'use strict'
@@ -3338,20 +3338,20 @@
                         name: 'result',
                         plural: !1,
                         selections: [
-                          (c = {
+                          {
                             kind: 'InlineFragment',
                             selections: [
-                              {
+                              (c = {
                                 alias: null,
                                 args: null,
                                 kind: 'ScalarField',
                                 name: 'super_follows_application_status',
                                 storageKey: null,
-                              },
+                              }),
                             ],
                             type: 'User',
                             abstractKey: null,
-                          }),
+                          },
                         ],
                         storageKey: null,
                       },
@@ -3397,7 +3397,15 @@
                         plural: !1,
                         selections: [
                           { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null },
-                          c,
+                          {
+                            kind: 'InlineFragment',
+                            selections: [
+                              c,
+                              { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null },
+                            ],
+                            type: 'User',
+                            abstractKey: null,
+                          },
                         ],
                         storageKey: null,
                       },
@@ -3410,7 +3418,7 @@
             ],
           },
           params: {
-            id: 'QEgD7hJZS5CRxfrKIrhM2Q',
+            id: '4rEP9orRCxK8D1HOYZv9jw',
             metadata: {},
             name: 'MonetizationSettingsQuery',
             operationKind: 'query',

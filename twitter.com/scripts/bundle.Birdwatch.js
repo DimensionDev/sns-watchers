@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [37, 171],
+  [39, 173],
   {
     '/ZwF': function (e, t, a) {
       'use strict'
@@ -6785,7 +6785,7 @@
           a('kYxP'),
           {
             loader: function () {
-              return a.e(225).then(a.bind(null, 'SdtT'))
+              return a.e(227).then(a.bind(null, 'SdtT'))
             },
             loaderKey: 'pivotLabelLoader',
             strategy: a('XBtf').a.Critical,

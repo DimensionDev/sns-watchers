@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [58],
+  [60],
   {
     '3GUV': function (e, t, a) {
       'use strict'

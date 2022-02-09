@@ -57,7 +57,9 @@
               }),
               v()(c()(o), '_handleTouchMove', function (e) {
                 var t = e.touches.length
-                2 === t ? o._handlePinchMove(e) : 1 === t && ((o._moved = !0), o._handlePanMove(e)), e.preventDefault()
+                2 === t
+                  ? (e.preventDefault(), o._handlePinchMove(e))
+                  : 1 === t && ((o._moved = !0), o._handlePanMove(e))
               }),
               v()(c()(o), '_handleTouchEnd', function (e) {
                 var t = o.props,

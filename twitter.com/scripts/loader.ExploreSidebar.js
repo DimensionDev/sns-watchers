@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [170],
+  [172],
   {
     '+Bsv': function (e, t, n) {
       'use strict'
@@ -49,7 +49,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return n.e(230).then(n.bind(null, 'QPD4'))
+              return n.e(232).then(n.bind(null, 'QPD4'))
             },
             loaderKey: 'defaultScoreEventSummaryLoader',
             strategy: n('XBtf').a.Critical,
@@ -496,7 +496,7 @@
           o = void 0 !== i && i
         return r.e({
           loader: function () {
-            return n.e(239).then(n.bind(null, '+92Z'))
+            return n.e(241).then(n.bind(null, '+92Z'))
           },
           loaderKey: 'trendDefaultLoader',
           loaderOptions: { withThirdPartyCards: o, errorContext: t },

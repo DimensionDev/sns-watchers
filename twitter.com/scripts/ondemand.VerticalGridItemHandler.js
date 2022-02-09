@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [242],
+  [244],
   {
     Dfuf: function (e, t, n) {
       'use strict'
@@ -91,34 +91,48 @@
       n('hBvt')
       var a = n('ERkP'),
         r = n.n(a),
-        o = n('cm6r'),
-        i = n('rHpw'),
-        c = n('MWbm'),
-        l = function (e) {
+        o = n('I4+6'),
+        i = n('cm6r'),
+        c = n('rHpw'),
+        l = n('MWbm'),
+        s = function (e) {
           var t = e.accessibilityLabel,
             n = e.containerStyle,
             a = e.isCompact,
-            i = e.link,
-            l = e.lower,
-            u = e.onClick,
-            d = e.stackLayoutLowerStyle,
-            p = e.stackLayoutUpperStyle,
-            b = e.upper,
-            m = e.withInteractiveStyling,
-            f = r.a.createElement(
+            s = e.link,
+            d = e.lower,
+            p = e.onClick,
+            b = e.stackLayoutLowerStyle,
+            m = e.stackLayoutUpperStyle,
+            f = e.upper,
+            y = e.withInsetFocusRing,
+            w = e.withInteractiveStyling,
+            g = o.a.generate({
+              backgroundColor: c.a.theme.colors.transparent,
+              color: c.a.theme.colors.primary,
+              insetFocusRing: y,
+            }),
+            h = r.a.createElement(
               r.a.Fragment,
               null,
-              r.a.createElement(c.a, { style: [s.defaultUpperContainerStyle, p, a && { height: 'auto' }] }, b),
-              l ? r.a.createElement(c.a, { style: [s.defaultLowerContainerStyle, d] }, l) : null,
+              r.a.createElement(l.a, { style: [u.defaultUpperContainerStyle, m, a && { height: 'auto' }] }, f),
+              d ? r.a.createElement(l.a, { style: [u.defaultLowerContainerStyle, b] }, d) : null,
             )
           return r.a.createElement(
-            o.a,
-            { accessibilityLabel: t, interactive: m, link: i, onClick: u, style: [s.root, n] },
-            f,
+            i.a,
+            {
+              accessibilityLabel: t,
+              interactive: w,
+              interactiveStyles: w ? g : void 0,
+              link: s,
+              onClick: p,
+              style: [u.root, n],
+            },
+            h,
           )
         }
-      l.defaultProps = { withInteractiveStyling: !1 }
-      var s = i.a.create(function (e) {
+      s.defaultProps = { withInsetFocusRing: !0, withInteractiveStyling: !1 }
+      var u = c.a.create(function (e) {
         return {
           root: { padding: e.spaces.space12, borderRadius: e.borderRadii.large },
           defaultLowerContainerStyle: { marginTop: e.spaces.space12, justifyContent: 'flex-end' },
@@ -129,7 +143,7 @@
           },
         }
       })
-      t.a = l
+      t.a = s
     },
     bXO0: function (e, t, n) {
       'use strict'
@@ -165,9 +179,9 @@
         E = n('Dfuf'),
         R = n('gaoh'),
         S = g.a.je808a16,
-        L = g.a.ge8f3043,
-        x = g.a.aa576cbf,
-        I = y(function (e) {
+        I = g.a.ge8f3043,
+        L = g.a.aa576cbf,
+        x = y(function (e) {
           var t = e.analytics,
             n = e.createLocalApiErrorHandler,
             a = e.follow,
@@ -179,7 +193,7 @@
             s = i.following,
             u = i.id,
             p = i.name,
-            m = s ? x({ topicName: p }) : L({ topicName: p }),
+            m = s ? L({ topicName: p }) : I({ topicName: p }),
             f = b.a.useRef(!1),
             y = function (e, t, n) {
               return i.following ? e(g(n)) : e(w(t))
@@ -200,7 +214,7 @@
                   t.scribeAction('unfollow')
               }
             },
-            I = function (e) {
+            x = function (e) {
               t.scribeAction('click')
             }
           return b.a.createElement(v.a, { customText: p, displayMode: h.a.topic }, function (e) {
@@ -216,7 +230,7 @@
                 : (function (e) {
                     return {
                       accessibilityLabel: S({ topicName: p }),
-                      onClick: e(I),
+                      onClick: e(x),
                       link: (null == l ? void 0 : l.url) || ((t = u), '/i/topics/'.concat(t)),
                       text: p,
                     }
@@ -246,7 +260,7 @@
               },
             }
           },
-          component: I,
+          component: x,
           createProps: function (e) {
             var t = e.data.topic,
               n = e.entry.content.content.topicTile,

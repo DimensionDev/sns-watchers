@@ -1,11 +1,11 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [95],
+  [97],
   {
     '9RBu': function (e, a, l) {
       'use strict'
       l.r(a),
         l.d(a, 'superFollowsSubscribeQuery', function () {
-          return Y
+          return Z
         })
       var n,
         t = l('ERkP'),
@@ -229,8 +229,8 @@
         W = l('/yvb'),
         I = l('cHvH'),
         A = l('sgih'),
-        H = C.a.cbc8ce27,
-        V = C.a.b600eb88,
+        V = C.a.cbc8ce27,
+        H = C.a.b600eb88,
         M = C.a.b08bbeb4,
         z = C.a.d2613122,
         O = C.a.g61ed8a4,
@@ -260,7 +260,7 @@
             wide: { maxHeight: '600px', paddingHorizontal: e.spaces.space64 },
           }
         }),
-        $ = function (e) {
+        Y = function (e) {
           var a = e.fetchStatus,
             l = e.onRetry,
             n = e.screenName,
@@ -304,7 +304,7 @@
                 ).find(function (e) {
                   return 'ExclusiveContent' === e.benefit_type
                 }),
-                v = null !== (p = null == w ? void 0 : w.title) && void 0 !== p ? p : H,
+                v = null !== (p = null == w ? void 0 : w.title) && void 0 !== p ? p : V,
                 h = null !== (g = null == w ? void 0 : w.description) && void 0 !== g ? g : void 0
               return r.a.createElement(
                 r.a.Fragment,
@@ -313,7 +313,7 @@
                 r.a.createElement(D, { description: h, style: J.titleDescription, title: v }),
                 r.a.createElement(B.a, { imageUrl: k, screenName: f, style: J.signature }),
                 r.a.createElement(o.a, { style: J.demoTweet }),
-                r.a.createElement(D, { description: M, style: J.titleDescription, title: V }),
+                r.a.createElement(D, { description: M, style: J.titleDescription, title: H }),
                 u ? r.a.createElement(E, { style: [J.demoTweet, J.demoVIPTweetMarginTop], viewer: u }) : null,
                 r.a.createElement(P, { style: J.disclaimer }),
                 r.a.createElement(
@@ -359,9 +359,9 @@
             )
           })
         },
-        Z = l('n0Rl'),
-        Y = void 0 !== _ ? _ : (_ = l('kbWR')),
-        ee = Object(Z.b)(Y, { errorConfig: { context: 'SUPER_FOLLOWS_SUBSCRIPTION_SCREEN' } })
+        $ = l('n0Rl'),
+        Z = void 0 !== _ ? _ : (_ = l('kbWR')),
+        ee = Object($.b)(Z, { errorConfig: { context: 'SUPER_FOLLOWS_SUBSCRIPTION_SCREEN' } })
       a.default = function () {
         var e = Object(j.h)().screenName || '',
           a = { screenName: Object(i.a)(e) }
@@ -378,7 +378,7 @@
                 null == i || null === (n = i.viewer) || void 0 === n || null === (t = n.user_results) || void 0 === t
                   ? void 0
                   : t.result
-            return r.a.createElement($, {
+            return r.a.createElement(Y, {
               fetchStatus: Object(s.b)(
                 o,
                 'User' === (null == u ? void 0 : u.__typename) && 'User' === (null == d ? void 0 : d.__typename),
@@ -451,7 +451,8 @@
         o,
         c,
         u,
-        d = {
+        d,
+        m = {
           fragment: {
             argumentDefinitions: (n = [{ defaultValue: null, kind: 'LocalArgument', name: 'screenName' }]),
             kind: 'Fragment',
@@ -623,6 +624,7 @@
                             ],
                             storageKey: null,
                           },
+                          (d = { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null }),
                         ],
                         type: 'User',
                         abstractKey: null,
@@ -678,6 +680,7 @@
                                 storageKey: null,
                               },
                               u,
+                              d,
                             ],
                             type: 'User',
                             abstractKey: null,
@@ -694,14 +697,14 @@
             ],
           },
           params: {
-            id: 'g6C_poFBLH_FXmCORGNnrQ',
+            id: 'nU_7pFGPA06cqofY2unTYQ',
             metadata: {},
             name: 'SuperFollowsSubscribeQuery',
             operationKind: 'query',
             text: null,
           },
         }
-      ;(d.hash = '36f9c29d7da37ccc152178fe9dd49f46'), (a.default = d)
+      ;(m.hash = '36f9c29d7da37ccc152178fe9dd49f46'), (a.default = m)
     },
     l62v: function (e, a, l) {
       'use strict'

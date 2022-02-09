@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [109],
+  [111],
   {
     '++ci': function (e, a, n) {
       'use strict'
@@ -136,8 +136,8 @@
         _ = n('3XMw'),
         h = n.n(_),
         b = n('2doW'),
-        E = n('UPvq'),
-        F = (n('uFXj'), n('t62R')),
+        F = n('UPvq'),
+        E = (n('uFXj'), n('t62R')),
         C = n('pjBI'),
         S = n('rHpw'),
         K = n('jAXQ'),
@@ -145,8 +145,8 @@
         w = n('U+bB'),
         N = n('MWbm'),
         I = h.a.e83b141e,
-        L = void 0 !== t ? t : (t = n('PfIX')),
-        R = function (e) {
+        R = void 0 !== t ? t : (t = n('PfIX')),
+        D = function (e) {
           var a,
             n,
             t,
@@ -156,7 +156,7 @@
             s = void 0 === o ? 'normal' : o,
             c = e.isCondensed,
             u = e.openseaNftMetadataData,
-            d = T()(L, u)
+            d = T()(R, u)
           if (
             !(
               (null != d && null !== (a = d.collection) && void 0 !== a && a.name) ||
@@ -175,33 +175,33 @@
             y = f.verified,
             k = c || !y,
             v = k ? 'subtext1' : 'body',
-            _ = k ? D.collectionImageInline : D.collectionImage,
+            _ = k ? L.collectionImageInline : L.collectionImage,
             b =
               ((m = null === (i = d.collection) || void 0 === i ? void 0 : i.name),
               (p = d.creator_username),
               m && p
                 ? r.a.createElement(
-                    F.b,
+                    E.b,
                     { color: s, size: v, weight: 'bold' },
                     r.a.createElement(h.a.I18NFormatMessage, { $i18n: 'fbe06ae0' }, m, p),
                   )
                 : m
-                ? r.a.createElement(F.b, { color: s, size: v }, m)
+                ? r.a.createElement(E.b, { color: s, size: v }, m)
                 : null)
           return r.a.createElement(
             N.a,
-            { style: D.collectionTitle },
+            { style: L.collectionTitle },
             g && r.a.createElement(w.a, { alt: '', source: g, style: _ }),
             r.a.createElement(
               N.a,
               null,
               k
-                ? r.a.createElement(C.a, { color: s }, b, y ? r.a.createElement(F.b, { color: s, size: v }, I) : null)
-                : r.a.createElement(r.a.Fragment, null, b, y ? r.a.createElement(F.b, { color: 'gray700' }, I) : null),
+                ? r.a.createElement(C.a, { color: s }, b, y ? r.a.createElement(E.b, { color: s, size: v }, I) : null)
+                : r.a.createElement(r.a.Fragment, null, b, y ? r.a.createElement(E.b, { color: 'gray700' }, I) : null),
             ),
           )
         },
-        D = S.a.create(function (e) {
+        L = S.a.create(function (e) {
           return {
             collectionImage: {
               height: e.spaces.space40,
@@ -222,12 +222,12 @@
         P = n('Wc+h')
       function x(e) {
         var a = e.text
-        return r.a.createElement(F.b, { size: 'headline2', style: A.heading, weight: 'bold' }, a)
+        return r.a.createElement(E.b, { size: 'headline2', style: O.heading, weight: 'bold' }, a)
       }
-      var A = S.a.create(function (e) {
+      var O = S.a.create(function (e) {
           return { heading: { marginTop: e.spaces.space24, marginBottom: e.spaces.space12 } }
         }),
-        O =
+        A =
           (n('2G9S'),
           function (e) {
             if (e.length > 11) {
@@ -240,20 +240,20 @@
         B = n('Irs7')
       function U(e) {
         var a = e.children
-        return r.a.createElement(N.a, { style: z.list }, a)
+        return r.a.createElement(N.a, { style: W.list }, a)
       }
       function Q(e) {
         var a = e.children
-        return r.a.createElement(N.a, { style: z.item }, a)
+        return r.a.createElement(N.a, { style: W.item }, a)
       }
       function j(e) {
         var a = e.children,
           n = e.style
-        return r.a.createElement(F.b, { style: [n, z.itemTitle] }, a)
+        return r.a.createElement(E.b, { style: [n, W.itemTitle] }, a)
       }
       var q,
-        W,
-        z = S.a.create(function (e) {
+        z,
+        W = S.a.create(function (e) {
           return {
             list: { display: 'flex', flexWrap: 'wrap', flexDirection: 'row', justifyContent: 'space-between' },
             item: { width: '40%', marginBottom: e.spaces.space16 },
@@ -266,7 +266,7 @@
         Y = h.a.accae48c,
         X = h.a.h8fe11ab,
         Z = void 0 !== q ? q : (q = n('EPqq')),
-        J = void 0 !== W ? W : (W = n('EWGL')),
+        J = void 0 !== z ? z : (z = n('EWGL')),
         $ = function (e) {
           var a = Object(B.b)(),
             n = T()(Z, e.nft),
@@ -288,7 +288,7 @@
                     null,
                     r.a.createElement(j, null, V),
                     r.a.createElement(
-                      F.b,
+                      E.b,
                       {
                         color: 'normal',
                         link: 'https://etherscan.io/address/'.concat(l.address),
@@ -297,7 +297,7 @@
                         },
                         weight: 'medium',
                       },
-                      O(l.address),
+                      A(l.address),
                       r.a.createElement(P.a, null),
                     ),
                   ),
@@ -305,19 +305,19 @@
                     Q,
                     null,
                     r.a.createElement(j, null, Y),
-                    r.a.createElement(F.b, { weight: 'medium' }, O(n.token_id)),
+                    r.a.createElement(E.b, { weight: 'medium' }, A(n.token_id)),
                   ),
                   r.a.createElement(
                     Q,
                     null,
                     r.a.createElement(j, null, H),
-                    r.a.createElement(F.b, { weight: 'medium' }, l.network),
+                    r.a.createElement(E.b, { weight: 'medium' }, l.network),
                   ),
                   r.a.createElement(
                     Q,
                     null,
                     r.a.createElement(j, null, X),
-                    r.a.createElement(F.b, { weight: 'medium' }, l.__typename),
+                    r.a.createElement(E.b, { weight: 'medium' }, l.__typename),
                   ),
                 ),
               )
@@ -326,7 +326,7 @@
         ee = (n('1t7P'), n('jQ/y'), n('hBvt'), h.a.ffd9cfe6)
       function ae(e) {
         var a = e.onPress
-        return r.a.createElement(F.b, { color: 'link', onPress: a, style: ge.link, weight: 'bold' }, ee)
+        return r.a.createElement(E.b, { color: 'link', onPress: a, style: ge.link, weight: 'bold' }, ee)
       }
       var ne,
         te,
@@ -376,8 +376,8 @@
             N.a,
             null,
             r.a.createElement(x, { text: ye }),
-            r.a.createElement(R, { openseaNftMetadataData: i }),
-            g ? r.a.createElement(F.b, { getTextOverflow: u, numberOfLines: p ? void 0 : 4 }, g) : null,
+            r.a.createElement(D, { openseaNftMetadataData: i }),
+            g ? r.a.createElement(E.b, { getTextOverflow: u, numberOfLines: p ? void 0 : 4 }, g) : null,
             g && c && !p
               ? r.a.createElement(ae, {
                   onPress: function () {
@@ -390,7 +390,7 @@
         _e = h.a.e6aa52a9,
         he = void 0 !== te ? te : (te = n('Gaii')),
         be = void 0 !== le ? le : (le = n('6o1g')),
-        Ee = function (e) {
+        Fe = function (e) {
           var a = Object(B.b)(),
             n = T()(he, e.openseaNftMetadataData),
             t = T()(be, e.smartContractData),
@@ -410,7 +410,7 @@
                 r.a.createElement(x, { text: _e }),
                 l
                   ? r.a.createElement(
-                      F.b,
+                      E.b,
                       {
                         color: 'normal',
                         link: s,
@@ -419,17 +419,17 @@
                         },
                         weight: 'bold',
                       },
-                      O(l),
+                      A(l),
                       s ? r.a.createElement(P.a, null) : null,
                     )
                   : null,
                 o && i
-                  ? r.a.createElement(C.a, null, r.a.createElement(F.b, null, i), r.a.createElement(F.b, null, o))
+                  ? r.a.createElement(C.a, null, r.a.createElement(E.b, null, i), r.a.createElement(E.b, null, o))
                   : null,
               )
             : null
         },
-        Fe = h.a.e36287c6,
+        Ee = h.a.e36287c6,
         Ce = function (e) {
           var a = T()(void 0 !== re ? re : (re = n('++ci')), e.openseaNftMetadataData),
             t = r.a.useState(!1),
@@ -444,9 +444,9 @@
             ? r.a.createElement(
                 N.a,
                 null,
-                r.a.createElement(x, { text: Fe }),
+                r.a.createElement(x, { text: Ee }),
                 r.a.createElement(
-                  F.b,
+                  E.b,
                   { getTextOverflow: o, numberOfLines: u ? void 0 : 4 },
                   null == a ? void 0 : a.description,
                 ),
@@ -466,7 +466,7 @@
         we = h.a.i859a9d3,
         Ne = void 0 !== ie ? ie : (ie = n('R+uT')),
         Ie = void 0 !== oe ? oe : (oe = n('1Oiz')),
-        Le = function (e) {
+        Re = function (e) {
           var a = Object(B.b)(),
             n = r.a.useState(!1),
             t = y()(n, 2),
@@ -490,12 +490,12 @@
             N.a,
             null,
             r.a.createElement(x, { text: Se }),
-            r.a.createElement(F.b, { getTextOverflow: i, numberOfLines: c ? void 0 : 4 }, Ke),
+            r.a.createElement(E.b, { getTextOverflow: i, numberOfLines: c ? void 0 : 4 }, Ke),
             r.a.createElement(
-              F.b,
+              E.b,
               {
                 link: 'https://help.twitter.com/en/using-twitter/twitter-blue-labs#nft',
-                style: Re.helpLink,
+                style: De.helpLink,
                 weight: 'bold',
               },
               we,
@@ -509,9 +509,9 @@
               : null,
             r.a.createElement(
               N.a,
-              { style: Re.topBorder },
+              { style: De.topBorder },
               r.a.createElement(
-                F.b,
+                E.b,
                 {
                   align: 'center',
                   color: 'normal',
@@ -527,7 +527,7 @@
             ),
           )
         },
-        Re = S.a.create(function (e) {
+        De = S.a.create(function (e) {
           return {
             helpLink: { marginVertical: e.spaces.space16 },
             topBorder: {
@@ -539,15 +539,15 @@
             },
           }
         }),
-        De = n('v6aA'),
+        Le = n('v6aA'),
         Me = n('cFuS'),
         Pe = n('88ay'),
         xe = n('IMA+'),
-        Ae = void 0 !== se ? se : (se = n('M2DF')),
-        Oe = h.a.c6000492,
+        Oe = void 0 !== se ? se : (se = n('M2DF')),
+        Ae = h.a.c6000492,
         Be = function (e) {
-          var a = T()(Ae, e.user).legacy,
-            n = r.a.useContext(De.a).loggedInUserId,
+          var a = T()(Oe, e.user).legacy,
+            n = r.a.useContext(Le.a).loggedInUserId,
             t = null == a ? void 0 : a.profile_image_url_https,
             l = a.name,
             i = a.screen_name,
@@ -556,7 +556,7 @@
             ? r.a.createElement(
                 N.a,
                 null,
-                r.a.createElement(x, { text: Oe }),
+                r.a.createElement(x, { text: Ae }),
                 r.a.createElement(xe.a, {
                   avatarUri: t,
                   decoration: o,
@@ -580,7 +580,7 @@
         Qe = h.a.e83b141e,
         je = void 0 !== ce ? ce : (ce = n('QKWn')),
         qe = void 0 !== ue ? ue : (ue = n('H2N0')),
-        We = function (e) {
+        ze = function (e) {
           var a,
             n,
             t,
@@ -594,7 +594,7 @@
               C.a,
               null,
               r.a.createElement(
-                F.b,
+                E.b,
                 { size: 'subtext1', weight: 'bold' },
                 (null == i || null === (a = i.collection) || void 0 === a || null === (n = a.metadata) || void 0 === n
                   ? void 0
@@ -606,16 +606,16 @@
                 null !== (l = t.metadata) &&
                 void 0 !== l &&
                 l.verified
-                ? r.a.createElement(F.b, { color: 'gray700', size: 'subtext1' }, Qe)
+                ? r.a.createElement(E.b, { color: 'gray700', size: 'subtext1' }, Qe)
                 : null,
             ),
-            r.a.createElement(F.b, { size: 'title3', weight: 'bold' }, (null == i ? void 0 : i.name) || '#'.concat(o)),
+            r.a.createElement(E.b, { size: 'title3', weight: 'bold' }, (null == i ? void 0 : i.name) || '#'.concat(o)),
           )
         },
-        ze = (n('M+/F'), void 0 !== de ? de : (de = n('TP6m'))),
+        We = (n('M+/F'), void 0 !== de ? de : (de = n('TP6m'))),
         Ge = h.a.eadbd438,
         He = function (e) {
-          var a = T()(ze, e.openseaNftMetadataData),
+          var a = T()(We, e.openseaNftMetadataData),
             n = r.a.useState(!1),
             t = y()(n, 2),
             l = t[0],
@@ -641,7 +641,7 @@
                   Q,
                   { key: e.trait_type },
                   e.trait_type ? r.a.createElement(j, { style: Ve.uppercase }, e.trait_type) : null,
-                  r.a.createElement(F.b, { weight: 'medium' }, e.value),
+                  r.a.createElement(E.b, { weight: 'medium' }, e.value),
                 )
               }),
             ),
@@ -696,11 +696,11 @@
           return r.a.createElement(
             N.a,
             { style: [Xe.root, i] },
-            r.a.createElement(We, {
+            r.a.createElement(ze, {
               nft: t.nft_avatar_metadata,
               openseaNftMetadataData: t.nft_avatar_metadata.metadata,
             }),
-            r.a.createElement(Ee, {
+            r.a.createElement(Fe, {
               openseaNftMetadataData: t.nft_avatar_metadata.metadata,
               smartContractData: t.nft_avatar_metadata.smart_contract,
             }),
@@ -709,7 +709,7 @@
             r.a.createElement(ve, { openseaNftMetadataData: t.nft_avatar_metadata.metadata }),
             r.a.createElement(He, { openseaNftMetadataData: t.nft_avatar_metadata.metadata }),
             r.a.createElement($, { nft: t.nft_avatar_metadata, smartContract: t.nft_avatar_metadata.smart_contract }),
-            r.a.createElement(Le, { nft: t.nft_avatar_metadata, smartContract: t.nft_avatar_metadata.smart_contract }),
+            r.a.createElement(Re, { nft: t.nft_avatar_metadata, smartContract: t.nft_avatar_metadata.smart_contract }),
           )
         },
         Je = n('wiP2'),
@@ -760,38 +760,38 @@
             K = r.a.useState(!1),
             w = y()(K, 2),
             I = w[0],
-            L = w[1],
-            D = r.a.useState(!0),
-            P = y()(D, 2),
+            R = w[1],
+            L = r.a.useState(!0),
+            P = y()(L, 2),
             x = P[0],
-            A = P[1],
-            O = Object(ea.h)(),
-            U = O.handleMediaDetailZoomed,
-            Q = O.handleMediaItemTapped,
-            j = O.hideButtons,
+            O = P[1],
+            A = Object(ea.h)(),
+            U = A.handleMediaDetailZoomed,
+            Q = A.handleMediaItemTapped,
+            j = A.hideButtons,
             q = Object(m.f)(),
-            W = T()(sa, S),
-            z = k.a.get('window').width - M.a > M.b
-          if (null == W || null === (a = W.legacy) || void 0 === a || !a.profile_image_url_https) return null
+            z = T()(sa, S),
+            W = k.a.get('window').width - M.a > M.b
+          if (null == z || null === (a = z.legacy) || void 0 === a || !a.profile_image_url_https) return null
           var G = {
-              id_str: null == W || null === (n = W.legacy) || void 0 === n ? void 0 : n.id_str,
-              expanded_url: null == W || null === (t = W.legacy) || void 0 === t ? void 0 : t.profile_image_url_https,
+              id_str: null == z || null === (n = z.legacy) || void 0 === n ? void 0 : n.id_str,
+              expanded_url: null == z || null === (t = z.legacy) || void 0 === t ? void 0 : t.profile_image_url_https,
               media_url_https:
-                null == W || null === (l = W.legacy) || void 0 === l ? void 0 : l.profile_image_url_https,
+                null == z || null === (l = z.legacy) || void 0 === l ? void 0 : l.profile_image_url_https,
               ext_alt_text: '',
               type: 'photo',
               original_info: { width: 400, height: 400 },
             },
             H =
               'ApiMediaExtensions' ===
-              (null == W ||
-              null === (i = W.legacy) ||
+              (null == z ||
+              null === (i = z.legacy) ||
               void 0 === i ||
               null === (o = i.profile_image_extensions) ||
               void 0 === o
                 ? void 0
                 : o.__typename)
-                ? null == W || null === (s = W.legacy) || void 0 === s
+                ? null == z || null === (s = z.legacy) || void 0 === s
                   ? void 0
                   : s.profile_image_extensions
                 : {},
@@ -816,7 +816,7 @@
               q.goBack({ backLocation: '/'.concat(C) })
             },
             J = function (e) {
-              _.scribe({ element: 'details_button', action: 'click' }), e.stopPropagation(), e.preventDefault(), L(!0)
+              _.scribe({ element: 'details_button', action: 'click' }), e.stopPropagation(), e.preventDefault(), R(!0)
             },
             $ = function () {
               return r.a.createElement(b.a, {
@@ -833,7 +833,7 @@
               return r.a.createElement(c.a, { to: '/'.concat(C) })
             },
             ae = function () {
-              A(!x)
+              O(!x)
             },
             ne = function (e) {
               return e
@@ -853,33 +853,33 @@
                 t,
                 l,
                 i =
-                  null != W && null !== (a = W.legacy) && void 0 !== a && a.profile_image_url_https
-                    ? W.legacy.profile_image_url_https
+                  null != z && null !== (a = z.legacy) && void 0 !== a && a.profile_image_url_https
+                    ? z.legacy.profile_image_url_https
                     : void 0
               return r.a.createElement(
-                E.a,
+                F.a,
                 {
                   backgroundColor: X,
                   footerButtons:
                     !I &&
                     e &&
                     ('OpenseaNFTMetadata' ===
-                    (null === (n = W.nft_avatar_metadata) || void 0 === n || null === (t = n.metadata) || void 0 === t
+                    (null === (n = z.nft_avatar_metadata) || void 0 === n || null === (t = n.metadata) || void 0 === t
                       ? void 0
                       : t.__typename)
                       ? r.a.createElement(
                           N.a,
                           { style: ca.footer },
                           r.a.createElement(
-                            F.b,
+                            E.b,
                             { color: 'white', size: 'title4', style: ca.footerTitle },
-                            W.nft_avatar_metadata.metadata.name,
+                            z.nft_avatar_metadata.metadata.name,
                           ),
-                          r.a.createElement(R, {
+                          r.a.createElement(D, {
                             color: 'white',
                             isCondensed: !0,
                             openseaNftMetadataData:
-                              null === (l = W.nft_avatar_metadata) || void 0 === l ? void 0 : l.metadata,
+                              null === (l = z.nft_avatar_metadata) || void 0 === l ? void 0 : l.metadata,
                           }),
                           r.a.createElement($e.a, { onPress: J, type: 'onMediaOutlined' }, ta),
                         )
@@ -896,12 +896,12 @@
           return r.a.createElement(
             Je.a.Configure,
             { headerless: !0 },
-            z
+            W
               ? r.a.createElement(
                   N.a,
                   { style: ca.container },
                   r.a.createElement(N.a, { style: ca.media }, te()),
-                  x ? r.a.createElement(Ze, { user: W }) : null,
+                  x ? r.a.createElement(Ze, { user: z }) : null,
                 )
               : r.a.createElement(
                   N.a,
@@ -911,7 +911,7 @@
                     ? r.a.createElement(
                         N.a,
                         { style: ca.bottomDrawerContainer },
-                        r.a.createElement(Ze, { isBottomDrawer: !0, user: W }),
+                        r.a.createElement(Ze, { isBottomDrawer: !0, user: z }),
                       )
                     : null,
                 ),
@@ -1344,6 +1344,7 @@
                             ],
                             storageKey: null,
                           },
+                          { alias: null, args: null, kind: 'ScalarField', name: 'id', storageKey: null },
                         ],
                         type: 'User',
                         abstractKey: null,
@@ -1357,7 +1358,7 @@
             ],
           },
           params: {
-            id: '2WV2fm-gpUaL85bIxx14vQ',
+            id: 'x57PpySOqqq70naY41cRgw',
             metadata: {},
             name: 'userNftContainer_Query',
             operationKind: 'query',
@@ -1496,8 +1497,8 @@
         _ = n('97Jx'),
         h = n.n(_),
         b = (n('1t7P'), n('jQ/y'), n('ho0z'), n('2G9S'), n('hBpG'), n('7x/C'), n('ERkP')),
-        E = n.n(b),
-        F = n('6rlp'),
+        F = n.n(b),
+        E = n('6rlp'),
         C = n('zh9S'),
         S = n('G6rE'),
         K = n('rxPX'),
@@ -1520,42 +1521,42 @@
           .propsFromActions(function () {
             return {
               createLocalApiErrorHandler: Object(T.createLocalApiErrorHandlerWithContextFactory)('USER_CELL_CONTAINER'),
-              log: F.a,
+              log: E.a,
               scribeAction: C.c,
             }
           }),
-        L = n('I57f'),
-        R = n('vMjK'),
-        D = n('MWbm'),
+        R = n('I57f'),
+        D = n('vMjK'),
+        L = n('MWbm'),
         M = n('IG7M'),
         P = n('rHpw'),
         x = function (e) {
           var a = e.children,
             n = e.promotedContent,
             t = e.user
-          return E.a.createElement(
-            D.a,
-            { style: A.decorationWrapper },
+          return F.a.createElement(
+            L.a,
+            { style: O.decorationWrapper },
             a,
-            E.a.createElement(M.a, {
+            F.a.createElement(M.a, {
               renderActionMenu: function (e) {
-                return E.a.createElement(R.b, { onClose: e, promotedContent: n, user: t, view: 'follower' })
+                return F.a.createElement(D.b, { onClose: e, promotedContent: n, user: t, view: 'follower' })
               },
-              style: A.actionMenu,
+              style: O.actionMenu,
             }),
           )
         },
-        A = P.a.create(function (e) {
+        O = P.a.create(function (e) {
           return { decorationWrapper: { flexDirection: 'row' }, actionMenu: { marginLeft: e.spaces.space12 } }
         }),
-        O = n('uIZp'),
+        A = n('uIZp'),
         B = n('mN6z'),
         U = n('caTy'),
         Q = n('3IPs'),
         j = n('Rp9C'),
         q = n('X04g'),
-        W = n('Re5t'),
-        z = n('TnY3'),
+        z = n('Re5t'),
+        W = n('TnY3'),
         G = n('hxu0'),
         H = n('v6aA'),
         V = n('7JQg'),
@@ -1593,7 +1594,7 @@
         J = function (e) {
           var a = e.user
           return a && a.profile_image_url_https
-            ? E.a.createElement(
+            ? F.a.createElement(
                 te,
                 h()({}, e, {
                   avatarUri: a.profile_image_url_https,
@@ -1622,7 +1623,7 @@
       J.defaultProps = {
         cellClickable: !0,
         decoration: null,
-        displayMode: W.a.UserCompact,
+        displayMode: z.a.UserCompact,
         followRequestReceived: !1,
         hideBlocked: !1,
         promotedItemType: X.c.USER,
@@ -1633,23 +1634,23 @@
       var $ = function (e) {
           var a = e.isDeviceFollowing,
             n = e.userId
-          return E.a.createElement(L.a, { isFollowing: a, style: le.followButton, userId: n })
+          return F.a.createElement(R.a, { isFollowing: a, style: le.followButton, userId: n })
         },
         ee = function (e) {
           var a = e.loggedInUserId,
             n = e.promotedContent,
             t = e.userId
           return a !== t
-            ? E.a.createElement(O.a, { promotedContent: n, size: 'small', style: le.followButton, userId: t })
+            ? F.a.createElement(A.a, { promotedContent: n, size: 'small', style: le.followButton, userId: t })
             : null
         },
         ae = function (e) {
-          return E.a.createElement(x, { promotedContent: e.promotedContent, user: e.user }, ee(e))
+          return F.a.createElement(x, { promotedContent: e.promotedContent, user: e.user }, ee(e))
         },
         ne = function (e) {
-          return E.a.createElement(M.a, {
+          return F.a.createElement(M.a, {
             renderActionMenu: function (a) {
-              return E.a.createElement(R.b, {
+              return F.a.createElement(D.b, {
                 onClose: a,
                 promotedContent: e.promotedContent,
                 user: e.user,
@@ -1767,7 +1768,7 @@
                     i = e.user,
                     o = l()(e, Z)
                   return this._shouldRender()
-                    ? E.a.createElement(
+                    ? F.a.createElement(
                         Y.a,
                         h()({}, o, {
                           avatarDecoration: a,
@@ -1908,12 +1909,12 @@
             ]),
             n
           )
-        })(E.a.Component)
+        })(F.a.Component)
       v()(te, 'contextType', H.a), v()(te, 'defaultProps', J.defaultProps)
       var le = P.a.create(function (e) {
           return { followButton: { marginLeft: e.spaces.space12 } }
         }),
-        re = Object(z.a)(Object(G.a)(I(J)))
+        re = Object(W.a)(Object(G.a)(I(J)))
       a.b = Object(V.c)({ element: 'user' })(re)
     },
     EPqq: function (e, a, n) {
@@ -2395,9 +2396,9 @@
             return n
           }),
           b = h[0],
-          E = h[1]
-        n !== b && (f.current.add(n), E(n), _(n))
-        var F = u(
+          F = h[1]
+        n !== b && (f.current.add(n), F(n), _(n))
+        var E = u(
             function () {
               c.current && (f.current.add(g), _(g))
             },
@@ -2479,7 +2480,7 @@
             },
             [e],
           ),
-          ['NullQueryReference' === v.kind ? null : v, C, F]
+          ['NullQueryReference' === v.kind ? null : v, C, E]
         )
       }
     },
@@ -2549,7 +2550,7 @@
     n0Rl: function (e, a, n) {
       'use strict'
       n.d(a, 'b', function () {
-        return A
+        return O
       })
       var t = n('ddV6'),
         l = n.n(t),
@@ -2570,10 +2571,10 @@
         _ = n('pXBW'),
         h = n('6/RC'),
         b = n('UIzd'),
-        E = n.n(b),
-        F = n('kGix')
+        F = n.n(b),
+        E = n('kGix')
       n.d(a, 'a', function () {
-        return F.a
+        return E.a
       })
       var C = n('fs1G'),
         S = n('0KEI'),
@@ -2582,11 +2583,11 @@
         w = n('21nk'),
         N = n.n(w),
         I = n('bCEw'),
-        L = n.n(I),
-        R = n('Ud88'),
-        D = n.n(R),
+        R = n.n(I),
+        D = n('Ud88'),
+        L = n.n(D),
         M = function (e) {
-          return (0, e.render)({ fetchStatus: F.a.LOADING, data: null, error: null, retry: C.a })
+          return (0, e.render)({ fetchStatus: E.a.LOADING, data: null, error: null, retry: C.a })
         },
         P = (function (e) {
           m()(n, e)
@@ -2632,16 +2633,16 @@
             n = e.queryRef,
             t = e.render,
             l = N()(a, n)
-          return t({ fetchStatus: F.a.LOADED, data: l, error: null, retry: C.a })
+          return t({ fetchStatus: E.a.LOADED, data: l, error: null, retry: C.a })
         },
-        A = function (e, a) {
+        O = function (e, a) {
           if (h.canUseDOM)
             return function (n) {
               var t = n.fetchPolicy,
                 r = void 0 === t ? 'store-or-network' : t,
                 i = n.render,
                 o = n.variables,
-                s = L()(e),
+                s = R()(e),
                 c = l()(s, 2),
                 u = c[0],
                 d = c[1],
@@ -2670,7 +2671,7 @@
                         { errorHandler: m(a.errorConfig.options || {}), key: u.fetchKey, retry: g },
                         function (a, n) {
                           return a
-                            ? i({ fetchStatus: F.a.FAILED, error: a, data: null, retry: n })
+                            ? i({ fetchStatus: E.a.FAILED, error: a, data: null, retry: n })
                             : v.a.createElement(x, { query: e, queryRef: u, render: i })
                         },
                       ),
@@ -2683,23 +2684,23 @@
             t.fetchPolicy
             var r = t.render,
               i = t.variables,
-              o = D()(),
+              o = L()(),
               s = Object(S.useCreateLocalApiErrorHandler)(a.errorConfig.context),
               c = T()(i),
               u = l()(c, 1)[0],
               d = n.get(o)
             if (d) return d
             var m = v.a.lazy(function () {
-              return E()(o, e, u)
+              return F()(o, e, u)
                 .toPromise()
                 .then(
                   function (e) {
-                    return r({ fetchStatus: F.a.LOADED, data: e, error: null, retry: C.a })
+                    return r({ fetchStatus: E.a.LOADED, data: e, error: null, retry: C.a })
                   },
                   function (e) {
                     return e instanceof _.a
                       ? (s(a.errorConfig.options || {})(e),
-                        r({ fetchStatus: F.a.FAILED, data: null, error: e, retry: C.a }))
+                        r({ fetchStatus: E.a.FAILED, data: null, error: e, retry: C.a }))
                       : v.a.createElement(function () {
                           throw e
                         })

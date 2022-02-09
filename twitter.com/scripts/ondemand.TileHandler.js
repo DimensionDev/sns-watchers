@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [235],
+  [237],
   {
     CdHO: function (e, t, a) {
       'use strict'
@@ -13,88 +13,50 @@
     FYbo: function (e, t, a) {
       'use strict'
       a.r(t)
-      var n = a('yiKp'),
-        r = a.n(n),
-        c = a('ezF+'),
-        o = a('VPAj'),
+      var n = a('ezF+'),
+        r = a('VPAj'),
+        c = a('ERkP'),
+        o = a.n(c),
         i = a('GliE'),
         l = a('caTy'),
-        s = a('zh9S'),
-        u = a('Rp9C'),
-        d = a('rHpw'),
-        m = a('jUPy'),
-        p = Object(o.a)({ scribe: s.c }),
-        f = function (e) {
-          var t = e.itemMetadata.clientEventInfo,
-            a = u.a.getAllSurfaceDetails(t)
-          return a ? { items: [a] } : void 0
-        },
-        b = function (e) {
+        s = a('jUPy'),
+        u = a('fvaz'),
+        d = a('VkVE'),
+        m = function (e) {
           var t = e.entry,
-            a = e.scribe,
-            n = e.scribeNamespace
-          return function () {
-            var e = f(t)
-            a(r()(r()({}, n), {}, { element: 'tile', action: 'click' }), e)
-          }
-        },
-        g = d.a.create(function (e) {
-          return { containerStyle: { width: 'calc('.concat(e.spaces.space36, '*5)') } }
-        }),
-        y = c.g({
-          bindActions: p,
-          component: m.a,
-          createProps: function (e) {
-            var t = e.actions.scribe,
-              a = e.entry,
-              n = e.scribeNamespace
-            if (
-              !(
-                a &&
-                a.content &&
-                a.content.content &&
-                a.content.content.scoreCard &&
-                a.content.content.scoreCard.scoreEventSummary &&
-                a.content.content.scoreCard.scoreEventSummary.scoreEvent
-              )
+            a = (t.content.content.scoreCard && t.content.content.scoreCard.scoreEventSummary.scoreEvent) || {},
+            n = a.category,
+            r = a.eventState,
+            c = a.gameClock,
+            m = a.gameClockPeriod,
+            p = a.participants,
+            f = a.startTimeMillis,
+            b = a.winnerId,
+            g = Object(d.a)(t).handleTileClick,
+            y = t.content.url,
+            h = o.a.useMemo(
+              function () {
+                return y ? Object(l.b)(y) : ''
+              },
+              [y],
             )
-              return null
-            var r = a.content,
-              c = r.content,
-              o = r.url,
-              s = c.scoreCard.scoreEventSummary.scoreEvent,
-              u = s.category,
-              d = s.eventState,
-              m = s.gameClock,
-              p = s.gameClockPeriod,
-              f = s.participants,
-              y = s.startTimeMillis,
-              h = s.winnerId
-            return {
-              accessibilityLabel: Object(i.a)(u, d, f, p, h),
-              category: u,
-              containerStyle: g.containerStyle,
-              gameState: d,
-              gameClock: m,
-              gameClockPeriod: p,
-              startTimeMillis: y,
-              teams: f,
-              winnerId: h,
-              link: o ? Object(l.b)(o) : '',
-              onClick: b({ scribeNamespace: n, scribe: t, entry: a }),
-            }
-          },
-          shouldDisplayBorder: Object(o.a)(!1),
-          isFocusable: Object(o.a)(!0),
-          onImpression: function (e) {
-            var t = e.actions.scribe,
-              a = e.entry,
-              n = e.scribeNamespace,
-              c = f(a)
-            t(r()(r()({}, n), {}, { element: 'tile', action: 'impression' }), c)
-          },
-        })
-      t.default = y
+          return o.a.createElement(s.a, {
+            accessibilityLabel: Object(i.a)(n, r, p, m, b),
+            category: n,
+            containerStyle: u.a.containerStyle,
+            gameClock: c,
+            gameClockPeriod: m,
+            gameState: r,
+            link: h,
+            onClick: g,
+            startTimeMillis: f,
+            teams: p,
+            winnerId: b,
+          })
+        },
+        p = o.a.memo(m),
+        f = n.b({ component: p, shouldDisplayBorder: Object(r.a)(!1), isFocusable: Object(r.a)(!0) }).getHandler()
+      t.default = f
     },
     GliE: function (e, t, a) {
       'use strict'
@@ -138,34 +100,48 @@
       a('hBvt')
       var n = a('ERkP'),
         r = a.n(n),
-        c = a('cm6r'),
-        o = a('rHpw'),
-        i = a('MWbm'),
-        l = function (e) {
+        c = a('I4+6'),
+        o = a('cm6r'),
+        i = a('rHpw'),
+        l = a('MWbm'),
+        s = function (e) {
           var t = e.accessibilityLabel,
             a = e.containerStyle,
             n = e.isCompact,
-            o = e.link,
-            l = e.lower,
-            u = e.onClick,
-            d = e.stackLayoutLowerStyle,
-            m = e.stackLayoutUpperStyle,
-            p = e.upper,
-            f = e.withInteractiveStyling,
-            b = r.a.createElement(
+            s = e.link,
+            d = e.lower,
+            m = e.onClick,
+            p = e.stackLayoutLowerStyle,
+            f = e.stackLayoutUpperStyle,
+            b = e.upper,
+            g = e.withInsetFocusRing,
+            y = e.withInteractiveStyling,
+            h = c.a.generate({
+              backgroundColor: i.a.theme.colors.transparent,
+              color: i.a.theme.colors.primary,
+              insetFocusRing: g,
+            }),
+            v = r.a.createElement(
               r.a.Fragment,
               null,
-              r.a.createElement(i.a, { style: [s.defaultUpperContainerStyle, m, n && { height: 'auto' }] }, p),
-              l ? r.a.createElement(i.a, { style: [s.defaultLowerContainerStyle, d] }, l) : null,
+              r.a.createElement(l.a, { style: [u.defaultUpperContainerStyle, f, n && { height: 'auto' }] }, b),
+              d ? r.a.createElement(l.a, { style: [u.defaultLowerContainerStyle, p] }, d) : null,
             )
           return r.a.createElement(
-            c.a,
-            { accessibilityLabel: t, interactive: f, link: o, onClick: u, style: [s.root, a] },
-            b,
+            o.a,
+            {
+              accessibilityLabel: t,
+              interactive: y,
+              interactiveStyles: y ? h : void 0,
+              link: s,
+              onClick: m,
+              style: [u.root, a],
+            },
+            v,
           )
         }
-      l.defaultProps = { withInteractiveStyling: !1 }
-      var s = o.a.create(function (e) {
+      s.defaultProps = { withInsetFocusRing: !0, withInteractiveStyling: !1 }
+      var u = i.a.create(function (e) {
         return {
           root: { padding: e.spaces.space12, borderRadius: e.borderRadii.large },
           defaultLowerContainerStyle: { marginTop: e.spaces.space12, justifyContent: 'flex-end' },
@@ -176,7 +152,7 @@
           },
         }
       })
-      t.a = l
+      t.a = s
     },
     Nxr7: function (e, t, a) {
       'use strict'
@@ -211,11 +187,11 @@
         k = S.a.ccaa970e,
         I = S.a.d725a288,
         _ = S.a.db355331,
-        P = S.a.a8428d5e,
-        O = S.a.a7aad8b9,
-        L = S.a.e431f1aa,
-        R = S.a.a7391707,
-        T = S.a.d2dbfa91,
+        O = S.a.a8428d5e,
+        P = S.a.a7aad8b9,
+        R = S.a.e431f1aa,
+        T = S.a.a7391707,
+        L = S.a.d2dbfa91,
         j = S.a.cd734f65,
         x = S.a.c8891d06,
         z = (function (e) {
@@ -306,15 +282,15 @@
                             (function (e) {
                               switch (e) {
                                 case E.a.Scheduled:
-                                  return P
-                                case E.a.InProgress:
                                   return O
+                                case E.a.InProgress:
+                                  return P
                                 case E.a.Completed:
-                                  return L
-                                case E.a.Postponed:
                                   return R
-                                case E.a.Cancelled:
+                                case E.a.Postponed:
                                   return T
+                                case E.a.Cancelled:
+                                  return L
                                 default:
                                   return null
                               }
@@ -339,7 +315,7 @@
         c = (a('lTEL'), a('7x/C'), a('JtPf'), a('87if'), a('kYxP'), a('zb92')),
         o = Object(c.a)({
           loader: function () {
-            return a.e(171).then(a.bind(null, 'ACNv'))
+            return a.e(173).then(a.bind(null, 'ACNv'))
           },
         }),
         i = a('4bW+'),
@@ -369,6 +345,40 @@
         return null
       })
     },
+    VkVE: function (e, t, a) {
+      'use strict'
+      a.d(t, 'a', function () {
+        return u
+      })
+      var n = a('yiKp'),
+        r = a.n(n),
+        c = a('ERkP'),
+        o = a.n(c),
+        i = a('Rp9C'),
+        l = a('Irs7'),
+        s = { element: 'tile' },
+        u = function (e) {
+          var t = Object(l.b)(),
+            a = (function (e) {
+              var t = e.itemMetadata.clientEventInfo,
+                a = i.a.getAllSurfaceDetails(t)
+              return a ? { items: [a] } : void 0
+            })(e)
+          return (
+            o.a.useEffect(function () {
+              t.scribe(r()(r()({}, s), {}, { action: 'impression', data: a }))
+            }, []),
+            {
+              handleTileClick: o.a.useCallback(
+                function () {
+                  t.scribe(r()(r()({}, s), {}, { action: 'click', data: a }))
+                },
+                [t, a],
+              ),
+            }
+          )
+        }
+    },
     XjXc: function (e, t, a) {
       'use strict'
       a('2G9S'), a('ho0z')
@@ -379,47 +389,30 @@
         i = function (e, t) {
           if (t.entry.content.content.broadcast) return c.e.select(e, t.entry.content.content.broadcast.userId)
         },
-        l = Object(o.a)()
-          .propsFromState(function () {
-            return { broadcastUser: i }
-          })
-          .withAnalytics({ element: 'tile' }),
+        l = Object(o.a)().propsFromState(function () {
+          return { broadcastUser: i }
+        }),
         s = a('RoyM'),
         u = a('caTy'),
-        d = a('Rp9C'),
-        m = a('lzTJ'),
-        p = a('iSF/'),
-        f = a('rHpw'),
+        d = a('fvaz'),
+        m = a('VkVE'),
+        p = a('lzTJ'),
+        f = a('iSF/'),
         b = function (e) {
-          var t = e.itemMetadata.clientEventInfo,
-            a = d.a.getAllSurfaceDetails(t)
-          return a ? { items: [a] } : void 0
-        },
-        g = function (e) {
           var t,
             a,
             n,
-            c = e.analytics,
-            o = e.broadcastUser,
-            i = e.entry,
-            l = e.feedbackItems,
-            d = i.content,
-            f = d.content,
-            g = d.image,
-            h = d.url
-          f.standard
-            ? ((t = f.standard.title), (a = f.standard.badge), (n = t))
-            : f.broadcast && ((t = o && ''.concat(o.name, ' ').concat(o.screen_name)), (a = f.broadcast.badge)),
-            r.a.useEffect(function () {
-              c.scribe({ action: 'impression', data: b(i) })
-            }, [])
-          var v = r.a.useCallback(
-              function () {
-                c.scribe({ action: 'click', data: b(i) })
-              },
-              [c, i],
-            ),
-            C = r.a.useMemo(
+            c = e.broadcastUser,
+            o = e.entry,
+            i = e.feedbackItems,
+            l = o.content,
+            b = l.content,
+            g = l.image,
+            y = l.url
+          b.standard
+            ? ((t = b.standard.title), (a = b.standard.badge), (n = t))
+            : b.broadcast && ((t = c && ''.concat(c.name, ' ').concat(c.screen_name)), (a = b.broadcast.badge))
+          var h = r.a.useMemo(
               function () {
                 var e,
                   t,
@@ -427,7 +420,7 @@
                 return n
                   ? {
                       backgroundColor:
-                        Object(m.a)((null === (t = a) || void 0 === t ? void 0 : t.backgroundColorName) || '') ||
+                        Object(p.a)((null === (t = a) || void 0 === t ? void 0 : t.backgroundColorName) || '') ||
                         void 0,
                       text: n,
                     }
@@ -435,34 +428,32 @@
               },
               [a],
             ),
+            v = Object(m.a)(o).handleTileClick,
+            C = r.a.useMemo(
+              function () {
+                return y ? Object(u.b)(y) : ''
+              },
+              [y],
+            ),
             S = r.a.useMemo(
               function () {
-                return h ? Object(u.b)(h) : ''
+                return n ? r.a.createElement(s.a, { feedbackItems: i }) : null
               },
-              [h],
-            ),
-            w = r.a.useMemo(
-              function () {
-                return n ? r.a.createElement(s.a, { feedbackItems: l }) : null
-              },
-              [n, l],
+              [n, i],
             )
-          return r.a.createElement(p.a, {
+          return r.a.createElement(f.a, {
             accessibilityLabel: t || '',
-            attribution: o,
-            badge: C,
-            containerStyle: y.containerStyle,
+            attribution: c,
+            badge: h,
+            containerStyle: d.a.containerStyle,
             description: n,
             image: g,
-            link: S,
+            link: C,
             onClick: v,
-            rightControl: w,
+            rightControl: S,
           })
-        },
-        y = f.a.create(function (e) {
-          return { containerStyle: { width: 'calc('.concat(e.spaces.space36, '*5)') } }
-        })
-      t.a = l(r.a.memo(g))
+        }
+      t.a = l(r.a.memo(b))
     },
     ajvb: function (e, t, a) {
       'use strict'
@@ -490,6 +481,15 @@
             return ''
         }
       }
+    },
+    fvaz: function (e, t, a) {
+      'use strict'
+      a.d(t, 'a', function () {
+        return n
+      })
+      var n = a('rHpw').a.create(function (e) {
+        return { containerStyle: { width: 'calc('.concat(e.spaces.space36, '*5)') } }
+      })
     },
     gmfB: function (e, t, a) {
       'use strict'
@@ -565,10 +565,10 @@
                 return t
                   ? g.a.createElement(
                       I.a,
-                      { style: P.accountContainer },
+                      { style: O.accountContainer },
                       g.a.createElement(
                         I.a,
-                        { style: P.avatarContainer },
+                        { style: O.avatarContainer },
                         g.a.createElement(E.a, {
                           accessibilityHidden: !0,
                           focusable: !1,
@@ -579,7 +579,7 @@
                       ),
                       g.a.createElement(
                         I.a,
-                        { style: P.groupContainer },
+                        { style: O.groupContainer },
                         g.a.createElement(k.a, {
                           isVerified: t.verified,
                           name: t.name,
@@ -601,13 +601,13 @@
                 return a
                   ? g.a.createElement(
                       I.a,
-                      { style: P.eventDescription },
+                      { style: O.eventDescription },
                       g.a.createElement(
                         h.b,
                         { numberOfLines: 2, size: 'subtext2', style: { width: '100%' }, weight: 'bold' },
                         a,
                       ),
-                      g.a.createElement(I.a, { style: P.rightControl }, n || null),
+                      g.a.createElement(I.a, { style: O.rightControl }, n || null),
                     )
                   : null
               }),
@@ -639,7 +639,7 @@
             a
           )
         })(g.a.Component),
-        P = w.a.create(function (e) {
+        O = w.a.create(function (e) {
           return {
             accountContainer: { flexDirection: 'row' },
             avatarContainer: { marginRight: e.spaces.space4 },
@@ -653,7 +653,7 @@
     jUPy: function (e, t, a) {
       'use strict'
       a.d(t, 'a', function () {
-        return L
+        return R
       })
       var n = a('VrFO'),
         r = a.n(n),
@@ -692,7 +692,7 @@
                 var t = e.props.team.shortName
                 return g.a.createElement(
                   k.a,
-                  { style: P.teamNameContainer },
+                  { style: O.teamNameContainer },
                   g.a.createElement(C.b, { color: 'white', numberOfLines: 1, weight: 'heavy' }, t),
                 )
               }),
@@ -703,11 +703,11 @@
                   r = n.imageUrl,
                   c = n.logo,
                   o = e.state.imageError,
-                  i = (!c && !r) || o ? P.translucent : {},
+                  i = (!c && !r) || o ? O.translucent : {},
                   l = c ? S.a.exact(c.width / c.height) : S.a.SQUARE
                 return g.a.createElement(
                   k.a,
-                  { style: [P.imageContainer, i, a && P.compactImageContainer] },
+                  { style: [O.imageContainer, i, a && O.compactImageContainer] },
                   g.a.createElement(v.a, {
                     accessibilityLabel: '',
                     aspectMode: l,
@@ -737,7 +737,7 @@
                 return d
                   ? g.a.createElement(
                       k.a,
-                      { style: [P.teamScore, u && P.losingTeamScore] },
+                      { style: [O.teamScore, u && O.losingTeamScore] },
                       g.a.createElement(C.b, { color: 'white', numberOfLines: 1, size: m, weight: 'heavy' }, o),
                       i
                         ? g.a.createElement(C.b, { color: 'white', numberOfLines: 1, size: p, weight: 'bold' }, i)
@@ -783,7 +783,7 @@
                     o = !a || !c
                   return g.a.createElement(
                     k.a,
-                    { style: [P.root, r, a && P.compactRoot] },
+                    { style: [O.root, r, a && O.compactRoot] },
                     this._renderImage(),
                     o ? this._renderTeamName() : null,
                     this._renderScore(),
@@ -795,7 +795,7 @@
           )
         })(g.a.Component)
       f()(_, 'defaultProps', { isCompact: !1 })
-      var P = E.a.create(function (e) {
+      var O = E.a.create(function (e) {
           return {
             root: { flexDirection: 'row', height: e.spaces.space48, paddingHorizontal: e.spaces.space12 },
             imageContainer: { alignSelf: 'center', width: e.spaces.space32, marginRight: e.spaces.space12 },
@@ -812,8 +812,8 @@
             translucent: { borderRadius: e.borderRadii.infinite, backgroundColor: e.colors.white, opacity: 0.4 },
           }
         }),
-        O = _,
-        L = (function (e) {
+        P = _,
+        R = (function (e) {
           u()(a, e)
           var t = m()(a)
           function a() {
@@ -849,7 +849,7 @@
                   c = n.isCompact,
                   o = n.winnerId,
                   i = t.id
-                return g.a.createElement(O, {
+                return g.a.createElement(P, {
                   fallbackColor: a % 2 == 0 ? 'gray300' : 'gray700',
                   gameState: r,
                   isCompact: c,
@@ -893,7 +893,7 @@
             a
           )
         })(g.a.Component)
-      f()(L, 'defaultProps', { isCompact: !1 })
+      f()(R, 'defaultProps', { isCompact: !1 })
     },
     kthL: function (e, t, a) {
       'use strict'

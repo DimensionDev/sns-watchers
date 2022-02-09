@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [70],
+  [72],
   {
     dpj4: function (e, t, a) {
       'use strict'

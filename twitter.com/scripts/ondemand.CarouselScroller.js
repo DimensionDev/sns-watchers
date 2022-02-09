@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [195],
+  [197],
   {
     '0xZH': function (e, n, t) {
       'use strict'
@@ -113,7 +113,7 @@
         c = t('X3+4'),
         s = t('7nmT'),
         l = t.n(s),
-        d = t('Resy'),
+        d = t('c/W/'),
         f = t('7n04'),
         v = t('Irs7'),
         g = t('Fz18'),
@@ -161,9 +161,9 @@
             z = F[1],
             X = o.a.useRef(new R.a.Value(50)).current,
             _ = o.a.useRef({}).current,
-            D = o.a.useRef({}),
-            G = o.a.useRef(0),
-            W = Object(v.b)(),
+            W = o.a.useRef({}),
+            D = o.a.useRef(0),
+            G = Object(v.b)(),
             J = Object(h.a)().width < m.a.theme.breakpoints.small,
             Z = o.a.useCallback(
               function (e) {
@@ -187,7 +187,7 @@
             }
           }),
             o.a.useEffect(function () {
-              var e = D.current[T]
+              var e = W.current[T]
               if (e) {
                 var n = e.getBoundingClientRect().height
                 X.setValue(n)
@@ -199,7 +199,7 @@
                 for (
                   var e = function (e) {
                       return function (n) {
-                        n && (D.current[e] = n)
+                        n && (W.current[e] = n)
                       }
                     },
                     n = function (e) {
@@ -228,7 +228,7 @@
                     )
                   t.push(l)
                 }
-                return (G.current = t.length), t
+                return (D.current = t.length), t
               },
               [_, r, i, N],
             ),
@@ -251,10 +251,10 @@
               function (e) {
                 var n = e.index,
                   t = e.intersectionRatio
-                n === G.current - 1 && t >= u.c && W.scribeAction('reached_end'),
+                n === D.current - 1 && t >= u.c && G.scribeAction('reached_end'),
                   n !== T && 1 === t && (z(n), U({ index: n, shouldSavePosition: !0 }))
               },
-              [W, U, G, T],
+              [G, U, D, T],
             ),
             q = o.a.useCallback(
               function (e) {
@@ -271,14 +271,14 @@
               function (e) {
                 var n = e.next,
                   t = e.previous
-                t > n ? W.scribeAction('scroll_left') : t < n && W.scribeAction('scroll_right')
+                t > n ? G.scribeAction('scroll_left') : t < n && G.scribeAction('scroll_right')
               },
-              [W],
+              [G],
             )
           if (
             (o.a.useEffect(
               function () {
-                var e = D.current[T]
+                var e = W.current[T]
                 if (!p.a.reducedMotionEnabled && e) {
                   var n = e.getBoundingClientRect().height
                   X.setValue(n)

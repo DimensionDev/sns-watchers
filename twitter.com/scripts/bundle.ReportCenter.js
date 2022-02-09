@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [82],
+  [84],
   {
     '+hxm': function (e, l, n) {
       'use strict'
@@ -12,7 +12,8 @@
         u,
         o,
         c,
-        d = {
+        d,
+        m = {
           fragment: {
             argumentDefinitions: (t = [{ defaultValue: null, kind: 'LocalArgument', name: 'reportId' }]),
             kind: 'Fragment',
@@ -210,6 +211,13 @@
                                                     kind: 'LinkedHandle',
                                                     name: 'legacy',
                                                   }),
+                                                  (d = {
+                                                    alias: null,
+                                                    args: null,
+                                                    kind: 'ScalarField',
+                                                    name: 'id',
+                                                    storageKey: null,
+                                                  }),
                                                 ],
                                                 type: 'Tweet',
                                                 abstractKey: null,
@@ -262,6 +270,7 @@
                                                     storageKey: null,
                                                   },
                                                   c,
+                                                  d,
                                                 ],
                                                 type: 'User',
                                                 abstractKey: null,
@@ -279,6 +288,7 @@
                                 ],
                                 storageKey: null,
                               },
+                              d,
                             ],
                             type: 'User',
                             abstractKey: null,
@@ -295,14 +305,14 @@
             ],
           },
           params: {
-            id: 'djG2wDBJChzZtjeD4fxDHQ',
+            id: 'dscPUcrQ-QsIqQof15ikkg',
             metadata: {},
             name: 'ReportDetailQuery',
             operationKind: 'query',
             text: null,
           },
         }
-      ;(d.hash = 'd2facc36a120a5e92d74ef8c67b6b283'), (l.default = d)
+      ;(m.hash = 'd2facc36a120a5e92d74ef8c67b6b283'), (l.default = m)
     },
     '2MR/': function (e, l, n) {
       'use strict'
@@ -525,19 +535,19 @@
           )
         },
         S = n('IAZG'),
-        D = n('MWbm'),
-        I = n('/yvb'),
-        x = n('pjBI'),
+        I = n('MWbm'),
+        x = n('/yvb'),
+        D = n('pjBI'),
         U = n('zCf4'),
         z = p.a.e37836f8,
-        j = p.a.ccf2f24e,
-        C = p.a.d7b32a4d,
-        A = p.a.b772cd65,
-        G = 'gray700',
-        H = void 0 !== i ? i : (i = n('+hxm')),
-        V = function (e) {
+        C = p.a.ccf2f24e,
+        j = p.a.d7b32a4d,
+        Q = p.a.b772cd65,
+        A = 'gray700',
+        V = void 0 !== i ? i : (i = n('+hxm')),
+        G = function (e) {
           return o.a.createElement(
-            I.a,
+            x.a,
             {
               disabled: !1,
               onPress: function () {
@@ -546,15 +556,15 @@
               size: 'small',
               type: 'primaryFilled',
             },
-            A,
+            Q,
           )
         },
-        B = function () {
+        H = function () {
           var e,
             l,
             n,
             t = Object(U.h)(),
-            a = Object(S.a)(H, { reportId: t.reportId || '' }),
+            a = Object(S.a)(V, { reportId: t.reportId || '' }),
             r =
               null == a ||
               null === (e = a.viewer_v2) ||
@@ -577,37 +587,37 @@
             o.a.Fragment,
             null,
             o.a.createElement(
-              x.a,
-              { color: G },
-              o.a.createElement(w.b, { color: G, weight: 'bold' }, j),
-              o.a.createElement(w.b, { color: G }, s),
+              D.a,
+              { color: A },
+              o.a.createElement(w.b, { color: A, weight: 'bold' }, C),
+              o.a.createElement(w.b, { color: A }, s),
             ),
             o.a.createElement(w.b, { size: 'title3', weight: 'heavy' }, i),
             d ? o.a.createElement(L, { report: Object(c.a)(d) }) : null,
-            o.a.createElement(w.b, { size: 'headline2', weight: 'heavy' }, C),
-            o.a.createElement(w.b, { color: G, size: 'subtext2', weight: 'normal' }, u),
+            o.a.createElement(w.b, { size: 'headline2', weight: 'heavy' }, j),
+            o.a.createElement(w.b, { color: A, size: 'subtext2', weight: 'normal' }, u),
           )
         },
-        J =
+        O =
           ((l.default = function () {
             var e = Object(U.f)()
             return o.a.createElement(
               d.b,
               {
                 backButtonType: 'close',
-                containerStyle: J.root,
+                containerStyle: O.root,
                 documentTitle: z,
                 history: e,
-                rightControl: V(e),
+                rightControl: G(e),
                 title: z,
               },
               o.a.createElement(
-                D.a,
-                { style: J.parentContainer },
+                I.a,
+                { style: O.parentContainer },
                 o.a.createElement(
-                  D.a,
-                  { style: J.innerContainer },
-                  o.a.createElement(y.a, { errorConfig: { context: 'REPORT_DETAIL' } }, o.a.createElement(B, null)),
+                  I.a,
+                  { style: O.innerContainer },
+                  o.a.createElement(y.a, { errorConfig: { context: 'REPORT_DETAIL' } }, o.a.createElement(H, null)),
                 ),
               ),
             )
