@@ -1004,7 +1004,7 @@
                     { namespace: r },
                     b.a.createElement(
                       Ye.a,
-                      { locationKey: r.page },
+                      { behavioralEventViewType: 'home', locationKey: r.page },
                       b.a.createElement(Ct.a, {
                         centeredLogo: a,
                         documentTitle: s,

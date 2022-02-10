@@ -1,49 +1,49 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
   [75],
   {
-    '+Bsv': function (e, t, n) {
+    '+Bsv': function (t, e, n) {
       'use strict'
       var a = n('ERkP'),
         i = n.n(a),
-        o = n('3XMw'),
-        r = n.n(o),
+        r = n('3XMw'),
+        o = n.n(r),
         s = n('M2x3'),
         c = 'settingsAppBar',
         u = n('/yvb'),
         l = n('rHpw'),
-        d = r.a.bb081ea1,
+        d = o.a.bb081ea1,
         p = { viewType: 'settings_button' },
-        f = i.a.memo(function (e) {
-          var t = e.onPress,
-            n = e.pullRight,
-            a = e.to
+        f = i.a.memo(function (t) {
+          var e = t.onPress,
+            n = t.pullRight,
+            a = t.to
           return i.a.createElement(u.a, {
             accessibilityLabel: d,
             behavioralEventContext: p,
             hoverLabel: { label: d },
             icon: i.a.createElement(s.a, null),
             link: a,
-            onPress: t,
+            onPress: e,
             pullRight: n,
             style: m.button,
             testID: c,
             type: 'primaryText',
           })
         }),
-        m = l.a.create(function (e) {
-          return { button: { marginVertical: 'calc(-'.concat(e.spaces.space12, ')') } }
+        m = l.a.create(function (t) {
+          return { button: { marginVertical: 'calc(-'.concat(t.spaces.space12, ')') } }
         })
-      t.a = f
+      e.a = f
     },
-    QuZr: function (e, t, n) {
+    QuZr: function (t, e, n) {
       'use strict'
-      n.d(t, 'a', function () {
-        return ge
+      n.d(e, 'a', function () {
+        return gt
       })
       var a,
         i,
-        o,
         r,
+        o,
         s = n('97Jx'),
         c = n.n(s),
         u = n('VrFO'),
@@ -63,17 +63,17 @@
         E = n('oQhu'),
         I = n('z2Pn'),
         A = n('rxPX'),
-        P = Object(E.a)(function (e, t) {
-          return t && t.notificationsModule(e)
+        P = Object(E.a)(function (t, e) {
+          return e && e.notificationsModule(t)
         }),
-        x = n('FIs5'),
-        C = n('yiKp'),
-        M = n.n(C),
-        O = n('ezF+'),
-        k = n('QIgh'),
-        L = n('8UdT'),
-        S = n('AP4B'),
-        j =
+        C = n('FIs5'),
+        M = n('yiKp'),
+        O = n.n(M),
+        S = n('ezF+'),
+        x = n('QIgh'),
+        k = n('8UdT'),
+        L = n('AP4B'),
+        V =
           (n('lTEL'),
           n('7x/C'),
           n('JtPf'),
@@ -86,24 +86,24 @@
             loaderKey: 'defaultNotificationLoader',
             strategy: n('XBtf').a.Critical,
           }),
-        R = O.e(j),
-        N = n('meql'),
-        U = n('b5s6'),
-        V = function (e) {
-          return Object(N.a)(M()(M()({}, e), {}, { component: U.a }))
+        j = S.e(V),
+        R = n('meql'),
+        N = n('b5s6'),
+        U = function (t) {
+          return Object(R.a)(O()(O()({}, t), {}, { component: N.a }))
         },
         B = n('rHpw'),
         D = n('VrCx'),
         Q = n('ReVx'),
         F =
           ((i = {}),
-          _()(i, L.b.Notification, R),
+          _()(i, k.b.Notification, j),
           _()(
             i,
-            L.b.Tweet,
-            O.c({
-              selectDisplayType: function (e) {
-                return e.content.displayType
+            k.b.Tweet,
+            S.c({
+              selectDisplayType: function (t) {
+                return t.content.displayType
               },
               handlers:
                 ((a = {}),
@@ -112,15 +112,15 @@
                   D.a.Tweet,
                   Object(Q.a)({
                     allowDownvote: !0,
-                    createAdditionalProps: function (e, t) {
-                      return { isUnread: t.isUnread }
+                    createAdditionalProps: function (t, e) {
+                      return { isUnread: e.isUnread }
                     },
-                    selectData: function (e) {
-                      var t = e.entry,
-                        n = e.module
+                    selectData: function (t) {
+                      var e = t.entry,
+                        n = t.module
                       return {
-                        isUnread: function (e) {
-                          return n.selectIsUnread(e, t.entryId)
+                        isUnread: function (t) {
+                          return n.selectIsUnread(t, e.entryId)
                         },
                       }
                     },
@@ -130,8 +130,8 @@
                 _()(
                   a,
                   D.a.QuotedTweet,
-                  V({
-                    createAdditionalProps: function (e) {
+                  U({
+                    createAdditionalProps: function (t) {
                       return { isCondensed: !0, style: J.quotedTweet }
                     },
                   }),
@@ -140,13 +140,13 @@
             }),
           ),
           i),
-        H = M()(M()(M()({}, Object(k.a)({ tweetDismissable: !0, withMuteConversation: !0 })), F), S.a),
-        J = B.a.create(function (e) {
+        H = O()(O()(O()({}, Object(x.a)({ tweetDismissable: !0, withMuteConversation: !0 })), F), L.a),
+        J = B.a.create(function (t) {
           return {
             quotedTweet: {
-              marginHorizontal: e.componentDimensions.gutterHorizontal,
+              marginHorizontal: t.componentDimensions.gutterHorizontal,
               marginTop: 0,
-              marginBottom: e.componentDimensions.gutterVertical,
+              marginBottom: t.componentDimensions.gutterVertical,
             },
           }
         }),
@@ -159,7 +159,7 @@
         W = n('yoO3'),
         Z = n('fTQJ'),
         $ = n('v6aA'),
-        ee =
+        tt =
           (n('jQ3i'),
           {
             notifications_alt_a: [
@@ -197,115 +197,119 @@
               },
             ],
           }),
-        te = {
+        et = {
           notifications_alt_a:
-            ((o = {}),
-            _()(o, Y.a.All, { headerMessage: K.a.b6a43e77, bodyMessage: K.a.f269c47d, buttonText: K.a.g6871092 }),
-            _()(o, Y.a.Mentions, { headerMessage: K.a.e577e1a1, bodyMessage: K.a.b91e5a3a }),
-            o),
-          notifications_alt_b:
             ((r = {}),
-            _()(r, Y.a.All, { headerMessage: K.a.g264f125, bodyMessage: K.a.a3420a9b, buttonText: K.a.g6871092 }),
-            _()(r, Y.a.Mentions, { headerMessage: K.a.ef0b8028, bodyMessage: K.a.b91e5a3a }),
+            _()(r, Y.a.All, { headerMessage: K.a.b6a43e77, bodyMessage: K.a.f269c47d, buttonText: K.a.g6871092 }),
+            _()(r, Y.a.Mentions, { headerMessage: K.a.e577e1a1, bodyMessage: K.a.b91e5a3a }),
             r),
+          notifications_alt_b:
+            ((o = {}),
+            _()(o, Y.a.All, { headerMessage: K.a.g264f125, bodyMessage: K.a.a3420a9b, buttonText: K.a.g6871092 }),
+            _()(o, Y.a.Mentions, { headerMessage: K.a.ef0b8028, bodyMessage: K.a.b91e5a3a }),
+            o),
         },
-        ne = function (e) {
-          return ['control', 'notifications_alt_a', 'notifications_alt_b'].includes(e)
+        nt = function (t) {
+          return ['control', 'notifications_alt_a', 'notifications_alt_b'].includes(t)
         },
-        ae = function (e) {
-          return ee[e]
+        at = function (t) {
+          return tt[t]
         },
-        ie = function (e, t, n) {
+        it = function (t, e, n) {
           var a, i
-          return null === (a = te[t]) || void 0 === a || null === (i = a[n]) || void 0 === i ? void 0 : i[e]
+          return null === (a = et[e]) || void 0 === a || null === (i = a[n]) || void 0 === i ? void 0 : i[t]
         },
-        oe = function (e, t) {
-          return ie('headerMessage', e, t)
+        rt = function (t, e) {
+          return it('headerMessage', t, e)
         },
-        re = function (e, t) {
-          return ie('bodyMessage', e, t)
+        ot = function (t, e) {
+          return it('bodyMessage', t, e)
         },
-        se = function (e, t) {
-          return ie('buttonText', e, t)
+        st = function (t, e) {
+          return it('buttonText', t, e)
         },
-        ce = K.a.eb75875d,
-        ue = K.a.e9f1fbcb,
-        le = K.a.f287bb3a,
-        de = K.a.h994ec4f,
-        pe = K.a.c06d4305,
-        fe = K.a.bfdb3c12,
-        me = K.a.h1d919eb,
-        ye = K.a.ib4510fd,
-        he = (function (e) {
-          h()(n, e)
-          var t = g()(n)
+        ct = K.a.eb75875d,
+        ut = K.a.e9f1fbcb,
+        lt = K.a.f287bb3a,
+        dt = K.a.h994ec4f,
+        pt = K.a.c06d4305,
+        ft = K.a.bfdb3c12,
+        mt = K.a.h1d919eb,
+        yt = K.a.ib4510fd,
+        ht = (function (t) {
+          h()(n, t)
+          var e = g()(n)
           function n() {
-            var e
+            var t
             l()(this, n)
-            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+            for (var a = arguments.length, i = new Array(a), r = 0; r < a; r++) i[r] = arguments[r]
             return (
-              (e = t.call.apply(t, [this].concat(i))),
-              _()(m()(e), '_getNewItemsPillLabel', function () {
-                switch (e.props.notificationsType) {
+              (t = e.call.apply(e, [this].concat(i))),
+              _()(m()(t), '_getNewItemsPillLabel', function () {
+                switch (t.props.notificationsType) {
                   case Y.a.All:
-                    return ye
+                    return yt
                   default:
                     return
                 }
               }),
-              _()(m()(e), '_getEmptyMessageBody', function () {
-                var t = e.context.featureSwitches.isTrue('responsive_web_reactions_enabled'),
-                  n = e.context.featureSwitches.getStringValue(
-                    'responsive_web_notifications_empty_state_redesign_variant',
-                  )
-                switch (e.props.notificationsType) {
+              _()(m()(t), '_getEmptyMessageBody', function () {
+                var e = t.context.featureSwitches.isTrue('responsive_web_reactions_enabled')
+                switch (t.props.notificationsType) {
                   case Y.a.Mentions:
-                    return ne(n) && 'control' !== n ? re(n, e.props.notificationsType) : pe
+                    return nt(t._emptyStateVariant) && 'control' !== t._emptyStateVariant
+                      ? ot(t._emptyStateVariant, t.props.notificationsType)
+                      : pt
                   case Y.a.Verified:
-                    return t ? me : fe
+                    return e ? mt : ft
                   default:
-                    return ne(n) && 'control' !== n ? re(n, e.props.notificationsType) : t ? de : le
+                    return nt(t._emptyStateVariant) && 'control' !== t._emptyStateVariant
+                      ? ot(t._emptyStateVariant, t.props.notificationsType)
+                      : e
+                      ? dt
+                      : lt
                 }
               }),
-              _()(m()(e), '_getEmptyMessageHeader', function () {
-                var t = e.context.featureSwitches.getStringValue(
-                  'responsive_web_notifications_empty_state_redesign_variant',
-                )
-                return ne(t) && 'control' !== t ? oe(t, e.props.notificationsType) : ue
+              _()(m()(t), '_getEmptyMessageHeader', function () {
+                return nt(t._emptyStateVariant) && 'control' !== t._emptyStateVariant
+                  ? rt(t._emptyStateVariant, t.props.notificationsType)
+                  : ut
               }),
-              _()(m()(e), '_renderEmptyTimeline', function () {
-                var t = e.context.featureSwitches.getStringValue(
-                  'responsive_web_notifications_empty_state_redesign_variant',
-                )
-                if (ne(t) && 'control' !== t) {
-                  var n = se(t, e.props.notificationsType)
+              _()(m()(t), '_renderEmptyTimeline', function () {
+                if (
+                  ((t._emptyStateVariant = t.context.featureSwitches.getStringValue(
+                    'responsive_web_notifications_empty_state_redesign_variant',
+                  )),
+                  nt(t._emptyStateVariant) && 'control' !== t._emptyStateVariant)
+                ) {
+                  var e = st(t._emptyStateVariant, t.props.notificationsType)
                   return T.a.createElement(
-                    x.a,
-                    c()({}, n && { buttonLink: '/i/connect_people', buttonText: n }, {
-                      header: e._getEmptyMessageHeader(),
-                      imageVariants: ae(t),
-                      message: e._getEmptyMessageBody(),
-                      onButtonPress: e._handleEmptyTimelineButtonPress,
-                      onImpression: e._handleEmptyTimelineImpression,
+                    C.a,
+                    c()({}, e && { buttonLink: '/i/connect_people', buttonText: e }, {
+                      header: t._getEmptyMessageHeader(),
+                      imageVariants: at(t._emptyStateVariant),
+                      message: t._getEmptyMessageBody(),
+                      onButtonPress: t._handleEmptyTimelineButtonPress,
+                      onImpression: t._handleEmptyTimelineImpression,
                     }),
                   )
                 }
-                return T.a.createElement(x.a, {
-                  header: e._getEmptyMessageHeader(),
-                  message: e._getEmptyMessageBody(),
-                  onImpression: e._handleEmptyTimelineImpression,
+                return T.a.createElement(C.a, {
+                  header: t._getEmptyMessageHeader(),
+                  message: t._getEmptyMessageBody(),
+                  onImpression: t._handleEmptyTimelineImpression,
                 })
               }),
-              _()(m()(e), '_handleEmptyTimelineImpression', function () {
-                e.props.analytics.scribe({ component: 'empty_message', action: 'impression' })
+              _()(m()(t), '_handleEmptyTimelineImpression', function () {
+                t.props.analytics.scribe({ component: 'empty_message', action: 'impression' })
               }),
-              _()(m()(e), '_handleEmptyTimelineButtonPress', function () {
-                e.props.analytics.scribe({ component: 'empty_message', element: 'primary_cta', action: 'click' })
+              _()(m()(t), '_handleEmptyTimelineButtonPress', function () {
+                t.props.analytics.scribe({ component: 'empty_message', element: 'primary_cta', action: 'click' })
               }),
-              _()(m()(e), '_handleAtTop', function () {
-                e._updateLastReadIfNeeded()
+              _()(m()(t), '_handleAtTop', function () {
+                t._updateLastReadIfNeeded()
               }),
-              e
+              t
             )
           }
           return (
@@ -313,37 +317,37 @@
               {
                 key: 'componentDidMount',
                 value: function () {
-                  var e = this.props,
-                    t = e.notificationsType
-                  ;(0, e.setNotificationsType)(t)
+                  var t = this.props,
+                    e = t.notificationsType
+                  ;(0, t.setNotificationsType)(e)
                 },
               },
               {
                 key: 'componentWillUnmount',
                 value: function () {
-                  var e = this.props,
-                    t = e.markAllAsRead,
-                    n = e.notificationsType
-                  this._updateLastReadIfNeeded(), n === Y.a.All && t()
+                  var t = this.props,
+                    e = t.markAllAsRead,
+                    n = t.notificationsType
+                  this._updateLastReadIfNeeded(), n === Y.a.All && e()
                 },
               },
               {
                 key: 'render',
                 value: function () {
-                  var e = this.props.notificationsModule
-                  return e
+                  var t = this.props.notificationsModule
+                  return t
                     ? T.a.createElement(
                         W.a,
                         null,
                         T.a.createElement(Z.a, {
                           entryConfiguration: H,
                           key: 'notification-timeline',
-                          module: e,
+                          module: t,
                           newTweetsPillLabel: this._getNewItemsPillLabel(),
                           newTweetsPillMode: q.a.CLIENT,
                           onAtTop: this._handleAtTop,
                           renderEmptyState: this._renderEmptyTimeline,
-                          title: ce,
+                          title: ct,
                         }),
                       )
                     : null
@@ -352,75 +356,75 @@
               {
                 key: '_updateLastReadIfNeeded',
                 value: function () {
-                  var e = this.props,
-                    t = e.notificationsType,
-                    n = e.unreadCount,
-                    a = e.updateLastRead
-                  n && a(t)
+                  var t = this.props,
+                    e = t.notificationsType,
+                    n = t.unreadCount,
+                    a = t.updateLastRead
+                  n && a(e)
                 },
               },
             ]),
             n
           )
         })(T.a.Component)
-      _()(he, 'contextType', $.a)
-      var be = function (e) {
+      _()(ht, 'contextType', $.a)
+      var bt = function (t) {
           return Object(X.a)(
-            (function (e) {
+            (function (t) {
               return Object(A.a)()
                 .propsFromState(function () {
                   return {
-                    unreadCount: function (t, n) {
+                    unreadCount: function (e, n) {
                       var a,
                         i = n.ntabData
-                      return null === (a = P(e, i)) || void 0 === a ? void 0 : a.selectUnreadEntriesCount(t)
+                      return null === (a = P(t, i)) || void 0 === a ? void 0 : a.selectUnreadEntriesCount(e)
                     },
                   }
                 })
-                .adjustStateProps(function (t, n) {
-                  var a = t.unreadCount,
+                .adjustStateProps(function (e, n) {
+                  var a = e.unreadCount,
                     i = n.ntabData
-                  return { ntabData: null, notificationsModule: P(e, i), notificationsType: e, unreadCount: a }
+                  return { ntabData: null, notificationsModule: P(t, i), notificationsType: t, unreadCount: a }
                 })
-                .propsFromActions(function (t) {
+                .propsFromActions(function (e) {
                   var n,
-                    a = t.ntabData
+                    a = e.ntabData
                   return {
-                    markAllAsRead: null === (n = P(e, a)) || void 0 === n ? void 0 : n.markAllAsRead,
+                    markAllAsRead: null === (n = P(t, a)) || void 0 === n ? void 0 : n.markAllAsRead,
                     updateLastRead: a && a.updateLastSeenCursor,
                     setNotificationsType: I.j,
                   }
                 })
-                .withAnalytics({ page: 'ntab', section: e })
-            })(e)(he),
+                .withAnalytics({ page: 'ntab', section: t })
+            })(t)(ht),
             { ntabData: z.a },
           )
         },
-        ge = function (e) {
-          var t = e.notificationsType
-          return be(t)
+        gt = function (t) {
+          var e = t.notificationsType
+          return bt(e)
         }
     },
-    WR6I: function (e, t, n) {
+    WR6I: function (t, e, n) {
       'use strict'
-      n.r(t),
-        n.d(t, 'NotificationsScreen', function () {
-          return V
+      n.r(e),
+        n.d(e, 'NotificationsScreen', function () {
+          return U
         })
       n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('2G9S')
       var a = n('ERkP'),
         i = n.n(a),
-        o = n('v6aA'),
-        r = n('es0u'),
+        r = n('v6aA'),
+        o = n('es0u'),
         s = n('G6rE'),
         c = n('rxPX'),
         u = Object(c.a)()
           .propsFromState(function () {
             return { loggedInUser: s.e.selectLoggedInUser }
           })
-          .adjustStateProps(function (e) {
-            var t = e.loggedInUser
-            return { isLoggedInUserVerified: !!t && t.verified }
+          .adjustStateProps(function (t) {
+            var e = t.loggedInUser
+            return { isLoggedInUserVerified: !!e && e.verified }
           }),
         l = n('pnqf'),
         d = n('dwig'),
@@ -439,70 +443,70 @@
         I = m.a.f8321d82,
         A = m.a.cdb53d79,
         P = m.a.h3290871,
-        x = m.a.a98ba778,
-        C = '/notifications',
-        M = '/notifications/mentions',
-        O = '/notifications/verified',
-        k = i.a.createElement(b.a, { pullRight: !0, to: '/settings/notifications' }),
-        L = m.a.eb75875d,
-        S = Object(l.a)(
+        C = m.a.a98ba778,
+        M = '/notifications',
+        O = '/notifications/mentions',
+        S = '/notifications/verified',
+        x = i.a.createElement(b.a, { pullRight: !0, to: '/settings/notifications' }),
+        k = m.a.eb75875d,
+        L = Object(l.a)(
           Object(h.a)(function () {
             return Promise.resolve().then(n.bind(null, 'hCg+'))
           }),
         ),
-        j = Object(l.a)(
+        V = Object(l.a)(
           Object(h.a)(function () {
             return Promise.resolve().then(n.bind(null, 'lGAB'))
           }),
         ),
-        R = Object(l.a)(
+        j = Object(l.a)(
           Object(h.a)(function () {
             return Promise.resolve().then(n.bind(null, 'srGC'))
           }),
         ),
-        N = [
-          { to: C, key: I, label: I, retainScrollPosition: !1 },
-          { to: M, key: A, label: A, retainScrollPosition: !1 },
+        R = [
+          { to: M, key: I, label: I, retainScrollPosition: !1 },
+          { to: O, key: A, label: A, retainScrollPosition: !1 },
         ],
-        U = [].concat(N, [{ to: O, key: P, label: P, retainScrollPosition: !1 }]),
-        V = function (e) {
-          var t,
+        N = [].concat(R, [{ to: S, key: P, label: P, retainScrollPosition: !1 }]),
+        U = function (t) {
+          var e,
             n,
             a = i.a
-              .useContext(o.a)
+              .useContext(r.a)
               .featureSwitches.isTrue('responsive_web_ntab_verified_mentions_vit_internal_dogfood'),
-            s = e.history,
-            c = e.isLoggedInUserVerified,
-            u = e.location,
+            s = t.history,
+            c = t.isLoggedInUserVerified,
+            u = t.location,
             l = c || a,
             f = i.a.createElement(
               T.d,
               null,
-              i.a.createElement(T.b, { component: S, exact: !0, path: C }),
-              i.a.createElement(T.b, { component: j, exact: !0, path: M }),
-              i.a.createElement(T.b, { component: R, exact: !0, path: O }),
+              i.a.createElement(T.b, { component: L, exact: !0, path: M }),
+              i.a.createElement(T.b, { component: V, exact: !0, path: O }),
+              i.a.createElement(T.b, { component: j, exact: !0, path: S }),
             )
-          return u.pathname !== O || l
+          return u.pathname !== S || l
             ? i.a.createElement(g.a, {
                 documentTitle: E,
                 history: s,
                 primaryContent:
                   ((n = i.a.createElement(p.a, { history: s })), i.a.createElement(d.a, { component: _.a, fab: n }, f)),
-                rightControl: k,
-                secondaryBar: ((t = l ? U : N), i.a.createElement(w.a, { accessibilityLabel: x, links: t })),
-                sidebarContent: i.a.createElement(r.a, null),
-                title: L,
+                rightControl: x,
+                secondaryBar: ((e = l ? N : R), i.a.createElement(w.a, { accessibilityLabel: C, links: e })),
+                sidebarContent: i.a.createElement(o.a, null),
+                title: k,
               })
-            : i.a.createElement(y.a, { to: C })
+            : i.a.createElement(y.a, { to: M })
         }
-      t.default = Object(v.c)({ page: 'ntab' })(u(V))
+      e.default = Object(v.c)({ page: 'ntab' })(u(U))
     },
-    b5s6: function (e, t, n) {
+    b5s6: function (t, e, n) {
       'use strict'
       var a = n('97Jx'),
         i = n.n(a),
-        o = n('m3Bd'),
-        r = n.n(o),
+        r = n('m3Bd'),
+        o = n.n(r),
         s = n('ERkP'),
         c = n.n(s),
         u = n('v6aA'),
@@ -510,13 +514,13 @@
         d = n('eSoz'),
         p = n('rxPX'),
         f = n('0KEI'),
-        m = function (e, t) {
-          return t.tweetId
+        m = function (t, e) {
+          return e.tweetId
         },
-        y = function (e, t) {
-          var n = t.tweetId,
-            a = n && l.a.select(e, n)
-          return a ? Object(d.g)(e, a) : void 0
+        y = function (t, e) {
+          var n = e.tweetId,
+            a = n && l.a.select(t, n)
+          return a ? Object(d.g)(t, a) : void 0
         },
         h = Object(p.a)()
           .propsFromState(function () {
@@ -534,24 +538,24 @@
         g = n('uCxL'),
         v = n('x5Pi'),
         _ = ['community', 'createLocalApiErrorHandler', 'fetchCommunityIfNeeded', 'hydratedTweet', 'tweetId'],
-        w = h(function (e) {
-          var t = e.community,
-            n = e.createLocalApiErrorHandler,
-            a = e.fetchCommunityIfNeeded,
-            o = e.hydratedTweet,
-            s = (e.tweetId, r()(e, _)),
+        w = h(function (t) {
+          var e = t.community,
+            n = t.createLocalApiErrorHandler,
+            a = t.fetchCommunityIfNeeded,
+            r = t.hydratedTweet,
+            s = (t.tweetId, o()(t, _)),
             l = c.a.useContext(u.a),
             d = l.featureSwitches,
             p = l.loggedInUserId,
-            f = null == o ? void 0 : o.community_id_str
+            f = null == r ? void 0 : r.community_id_str
           c.a.useEffect(
             function () {
-              f && Object(b.a)(t) && a(f).catch(n())
+              f && Object(b.a)(e) && a(f).catch(n())
             },
-            [t, f, n, a],
+            [e, f, n, a],
           )
           var m = d.isTrue('responsive_web_alt_text_badge_enabled'),
-            y = o && Object(v.f)(o, p, t),
+            y = r && Object(v.f)(r, p, e),
             h = y && Object(v.e)(y),
             w = d.isTrue('responsive_web_reactions_enabled')
           return c.a.createElement(
@@ -560,22 +564,22 @@
               loggedInUserId: p,
               shouldShowAltLabelAlways: m,
               socialContextProps: h,
-              tweet: o,
+              tweet: r,
               withReactions: w,
             }),
           )
         })
-      t.a = w
+      e.a = w
     },
-    f42t: function (e, t, n) {
+    f42t: function (t, e, n) {
       'use strict'
-      n.d(t, 'a', function () {
+      n.d(e, 'a', function () {
         return _
       })
       var a = n('97Jx'),
         i = n.n(a),
-        o = n('VrFO'),
-        r = n.n(o),
+        r = n('VrFO'),
+        o = n.n(r),
         s = n('Y9Ll'),
         c = n.n(s),
         u = n('1Pcy'),
@@ -598,14 +602,14 @@
           n('KOtZ'),
           n('ERkP')),
         g = n.n(b),
-        v = (function (e) {
-          p()(n, e)
-          var t = m()(n)
+        v = (function (t) {
+          p()(n, t)
+          var e = m()(n)
           function n() {
-            var e
-            r()(this, n)
-            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
-            return (e = t.call.apply(t, [this].concat(i))), h()(l()(e), 'state', { isLoaded: !1 }), e
+            var t
+            o()(this, n)
+            for (var a = arguments.length, i = new Array(a), r = 0; r < a; r++) i[r] = arguments[r]
+            return (t = e.call.apply(e, [this].concat(i))), h()(l()(t), 'state', { isLoaded: !1 }), t
           }
           return (
             c()(n, [
@@ -617,8 +621,8 @@
               },
               {
                 key: 'componentDidUpdate',
-                value: function (e) {
-                  return this.props.modules === e.modules ? null : this.load()
+                value: function (t) {
+                  return this.props.modules === t.modules ? null : this.load()
                 },
               },
               {
@@ -630,72 +634,72 @@
               {
                 key: 'load',
                 value: function () {
-                  var e = this
+                  var t = this
                   this.setState({ isLoaded: !1 })
-                  var t = this.props.modules,
-                    n = Object.keys(t)
+                  var e = this.props.modules,
+                    n = Object.keys(e)
                   return Promise.all(
-                    n.map(function (e) {
-                      return t[e]()
+                    n.map(function (t) {
+                      return e[t]()
                     }),
                   )
-                    .then(function (e) {
-                      return n.reduce(function (t, n, a) {
-                        return (t[n] = e[a]), t
+                    .then(function (t) {
+                      return n.reduce(function (e, n, a) {
+                        return (e[n] = t[a]), e
                       }, {})
                     })
-                    .then(function (t) {
-                      if (!e._isMounted) return null
-                      e.setState({ modules: t, isLoaded: !0 })
+                    .then(function (e) {
+                      if (!t._isMounted) return null
+                      t.setState({ modules: e, isLoaded: !0 })
                     })
                 },
               },
               {
                 key: 'render',
                 value: function () {
-                  var e = this.state.isLoaded ? this.state.modules : {}
-                  return g.a.Children.only(this.props.children(e || {}))
+                  var t = this.state.isLoaded ? this.state.modules : {}
+                  return g.a.Children.only(this.props.children(t || {}))
                 },
               },
             ]),
             n
           )
         })(g.a.Component),
-        _ = function (e, t) {
+        _ = function (t, e) {
           return function (n) {
-            return g.a.createElement(v, { modules: t }, function (t) {
-              return g.a.createElement(e, i()({}, t, n))
+            return g.a.createElement(v, { modules: e }, function (e) {
+              return g.a.createElement(t, i()({}, e, n))
             })
           }
         }
     },
-    'hCg+': function (e, t, n) {
+    'hCg+': function (t, e, n) {
       'use strict'
-      n.r(t)
+      n.r(e)
       var a = n('5waQ'),
         i = n('QuZr')
-      t.default = Object(i.a)({ notificationsType: a.a.All })
+      e.default = Object(i.a)({ notificationsType: a.a.All })
     },
-    lGAB: function (e, t, n) {
+    lGAB: function (t, e, n) {
       'use strict'
-      n.r(t)
+      n.r(e)
       var a = n('5waQ'),
         i = n('QuZr')
-      t.default = Object(i.a)({ notificationsType: a.a.Mentions })
+      e.default = Object(i.a)({ notificationsType: a.a.Mentions })
     },
-    qJ6t: function (e, t, n) {
+    qJ6t: function (t, e, n) {
       'use strict'
-      n.r(t),
-        n.d(t, 'notificationsModule', function () {
+      n.r(e),
+        n.d(e, 'notificationsModule', function () {
           return g
         }),
-        n.d(t, 'updateLastSeenCursor', function () {
+        n.d(e, 'updateLastSeenCursor', function () {
           return v
         })
       var a = n('KEM+'),
         i = n.n(a),
-        o = n('yiKp'),
-        r = n.n(o),
+        r = n('yiKp'),
+        o = n.n(r),
         s = n('m3Bd'),
         c = n.n(s),
         u = n('vWJI'),
@@ -708,16 +712,16 @@
         h = ['polling'],
         b = 'APP_UPDATE_NOTIFICATION_LAST_READ',
         g = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : m.a.All
+          var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : m.a.All
           return Object(y.a)({
-            timelineId: 'notifications-'.concat(e),
-            getEndpoint: function (e) {
-              return e.URT.fetchNotifications
+            timelineId: 'notifications-'.concat(t),
+            getEndpoint: function (t) {
+              return t.URT.fetchNotifications
             },
-            getEndpointParams: function (t) {
-              t.polling
-              var n = c()(t, h)
-              return r()({ type: e }, n)
+            getEndpointParams: function (e) {
+              e.polling
+              var n = c()(e, h)
+              return o()({ type: t }, n)
             },
             context: 'FETCH_NOTIFICATIONS_TIMELINE',
             perfKey: 'notifications',
@@ -726,30 +730,30 @@
           })
         },
         v = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : m.a.All
-          return function (t, n, a) {
-            var o = a.api,
-              r = g(e),
-              s = r && u.e(r.selectEntries(n()))
+          var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : m.a.All
+          return function (e, n, a) {
+            var r = a.api,
+              o = g(t),
+              s = o && u.e(o.selectEntries(n()))
             if (s) {
-              var c = { cursor: u.g(s), type: e },
-                p = t(
+              var c = { cursor: u.g(s), type: t },
+                p = e(
                   Object(d.createLocalApiErrorHandlerWithContextFactory)(b)(
                     i()({}, l.a.AppInReadOnlyMode, { customAction: f.a }),
                   ),
                 )
-              o.URT.updateNotificationsLastSeenCursor(c).catch(p)
+              r.URT.updateNotificationsLastSeenCursor(c).catch(p)
             }
           }
         }
-      t.default = g(m.a.All)
+      e.default = g(m.a.All)
     },
-    srGC: function (e, t, n) {
+    srGC: function (t, e, n) {
       'use strict'
-      n.r(t)
+      n.r(e)
       var a = n('5waQ'),
         i = n('QuZr')
-      t.default = Object(i.a)({ notificationsType: a.a.Verified })
+      e.default = Object(i.a)({ notificationsType: a.a.Verified })
     },
   },
 ])

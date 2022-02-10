@@ -4,25 +4,25 @@
     '+hxm': function (e, l, n) {
       'use strict'
       n.r(l)
-      var t,
-        a,
+      var a,
+        t,
         r,
-        s,
         i,
+        s,
         u,
         o,
         c,
         d,
         m = {
           fragment: {
-            argumentDefinitions: (t = [{ defaultValue: null, kind: 'LocalArgument', name: 'reportId' }]),
+            argumentDefinitions: (a = [{ defaultValue: null, kind: 'LocalArgument', name: 'reportId' }]),
             kind: 'Fragment',
             metadata: null,
             name: 'ReportDetailQuery',
             selections: [
               {
                 alias: null,
-                args: (a = [{ kind: 'Literal', name: 's', value: 24 }]),
+                args: (t = [{ kind: 'Literal', name: 's', value: 24 }]),
                 concreteType: 'Viewer',
                 kind: 'LinkedField',
                 name: 'viewer_v2',
@@ -57,14 +57,14 @@
                                 name: 'submitted_report',
                                 plural: !1,
                                 selections: [
-                                  (s = {
+                                  (i = {
                                     alias: null,
                                     args: null,
                                     kind: 'ScalarField',
                                     name: 'create_time',
                                     storageKey: null,
                                   }),
-                                  (i = {
+                                  (s = {
                                     alias: null,
                                     args: null,
                                     kind: 'ScalarField',
@@ -116,13 +116,13 @@
           },
           kind: 'Request',
           operation: {
-            argumentDefinitions: t,
+            argumentDefinitions: a,
             kind: 'Operation',
             name: 'ReportDetailQuery',
             selections: [
               {
                 alias: null,
-                args: a,
+                args: t,
                 concreteType: 'Viewer',
                 kind: 'LinkedField',
                 name: 'viewer_v2',
@@ -156,8 +156,8 @@
                                 name: 'submitted_report',
                                 plural: !1,
                                 selections: [
-                                  s,
                                   i,
+                                  s,
                                   u,
                                   {
                                     alias: null,
@@ -316,38 +316,38 @@
     },
     '2MR/': function (e, l, n) {
       'use strict'
-      var t = n('ddV6'),
-        a = n.n(t),
+      var a = n('ddV6'),
+        t = n.n(a),
         r = n('ERkP'),
-        s = n.n(r),
-        i = n('3XMw'),
-        u = n.n(i),
+        i = n.n(r),
+        s = n('3XMw'),
+        u = n.n(s),
         o = n('v302'),
         c = u.a.b05a39b2,
         d = u.a.c566d3a5,
         m = function (e) {
-          return s.a.createElement(o.a, e)
+          return i.a.createElement(o.a, e)
         },
         p = function (e) {
           var l = e.children,
             n = e.hideLabel,
-            t = void 0 === n ? d : n,
+            a = void 0 === n ? d : n,
             r = e.label,
-            i = e.lang,
+            s = e.lang,
             u = e.render,
             o = void 0 === u ? m : u,
             p = e.revealLabel,
-            y = void 0 === p ? c : p,
-            g = s.a.useState(!1),
-            k = a()(g, 2),
+            g = void 0 === p ? c : p,
+            y = i.a.useState(!1),
+            k = t()(y, 2),
             f = k[0],
-            _ = k[1]
+            b = k[1]
           return o({
-            actionText: f ? t : y,
+            actionText: f ? a : g,
             children: f ? l : r,
-            lang: i,
+            lang: s,
             onActionClick: function () {
-              return _(!f)
+              return b(!f)
             },
           })
         }
@@ -356,7 +356,7 @@
     '6mUz': function (e, l, n) {
       'use strict'
       n.r(l)
-      var t = {
+      var a = {
         argumentDefinitions: [],
         kind: 'Fragment',
         metadata: { plural: !0 },
@@ -366,12 +366,12 @@
         abstractKey: '__isReportEntityResults',
         hash: 'b18415d0f89c2df57f81abcb4600f199',
       }
-      l.default = t
+      l.default = a
     },
     Gi4s: function (e, l, n) {
       'use strict'
       n.r(l)
-      var t = {
+      var a = {
         argumentDefinitions: [],
         kind: 'Fragment',
         metadata: null,
@@ -411,12 +411,12 @@
         abstractKey: null,
         hash: '17b312610a3872b4c354fd17e3fc8227',
       }
-      l.default = t
+      l.default = a
     },
     'r/Jf': function (e, l, n) {
       'use strict'
       n.r(l)
-      var t = {
+      var a = {
         argumentDefinitions: [],
         kind: 'Fragment',
         metadata: null,
@@ -459,95 +459,105 @@
         abstractKey: null,
         hash: 'e905ec0e6e9e70201856a135fa2a1b48',
       }
-      l.default = t
+      l.default = a
     },
     sjuR: function (e, l, n) {
       'use strict'
       n.r(l)
-      n('Blm6')
-      var t,
-        a,
+      n('Blm6'), n('2G9S')
+      var a,
+        t,
         r,
-        s,
         i,
+        s,
         u = n('ERkP'),
         o = n.n(u),
         c = n('lnti'),
         d = n('jHSc'),
         m = (n('enFi'), n('3XMw')),
         p = n.n(m),
-        y = n('Fr3L'),
-        g = (n('z84I'), n('97Jx')),
-        k = n.n(g),
-        f = n('jAXQ'),
-        _ = n.n(f),
-        b = n('v302'),
-        F = n('2MR/'),
-        v = n('rHpw'),
-        R = p.a.a78f7bd9,
-        K = function (e) {
+        g = n('Fr3L'),
+        y = n.p + 'report-detail-ear.0518acc5.png',
+        k = (n('z84I'), n('97Jx')),
+        f = n.n(k),
+        b = n('jAXQ'),
+        _ = n.n(b),
+        F = n('7N4s'),
+        v = n('v302'),
+        R = n('2MR/'),
+        w = n('rHpw'),
+        K = p.a.a78f7bd9,
+        E = function (e) {
           var l,
-            a,
+            t,
             r = e.tweet_results,
-            s = _()(void 0 !== t ? t : (t = n('Gi4s')), r),
-            i = o.a.useCallback(function (e) {
-              return o.a.createElement(b.a, k()({}, e, { style: E.tombstone }))
-            }, [])
-          return null != s &&
-            null !== (l = s.result) &&
+            i = _()(void 0 !== a ? a : (a = n('Gi4s')), r),
+            s = o.a.useContext(F.b).isModal,
+            u = o.a.useCallback(
+              function (e) {
+                return o.a.createElement(v.a, f()({}, e, { style: [h.tombstone, s && h.wideScreen] }))
+              },
+              [s],
+            )
+          return null != i &&
+            null !== (l = i.result) &&
             void 0 !== l &&
-            null !== (a = l.legacy) &&
-            void 0 !== a &&
-            a.full_text
-            ? o.a.createElement(F.a, { label: R, render: i }, s.result.legacy.full_text)
+            null !== (t = l.legacy) &&
+            void 0 !== t &&
+            t.full_text
+            ? o.a.createElement(R.a, { label: K, render: u }, i.result.legacy.full_text)
             : null
         },
-        E = v.a.create(function (e) {
-          return { tombstone: { border: 'none', marginHorizontal: e.spaces.space32, marginVertical: e.spaces.space20 } }
+        h = w.a.create(function (e) {
+          return {
+            tombstone: { border: 'none', marginVertical: e.spaces.space20 },
+            wideScreen: { marginHorizontal: e.spaces.space32 },
+          }
         }),
-        w = n('t62R'),
-        T = function (e) {
+        T = n('t62R'),
+        L = function (e) {
           var l = e.user_results,
-            t = _()(void 0 !== a ? a : (a = n('r/Jf')), l)
-          return o.a.createElement(w.b, null, t.__typename)
+            a = _()(void 0 !== t ? t : (t = n('r/Jf')), l)
+          return o.a.createElement(T.b, null, a.__typename)
         },
-        h = function (e) {
+        S = function (e) {
           var l = e.report_entity_results,
-            t = _()(void 0 !== r ? r : (r = n('xYG4')), l)
-          switch (t.__typename) {
+            a = _()(void 0 !== r ? r : (r = n('xYG4')), l)
+          switch (a.__typename) {
             case 'TweetResults':
-              return o.a.createElement(K, { tweet_results: t })
+              return o.a.createElement(E, { tweet_results: a })
             case 'UserResults':
-              return o.a.createElement(T, { user_results: t })
+              return o.a.createElement(L, { user_results: a })
             default:
               return null
           }
         },
-        L = function (e) {
+        x = function (e) {
           var l = e.report,
-            t = _()(void 0 !== s ? s : (s = n('6mUz')), l)
+            a = _()(void 0 !== i ? i : (i = n('6mUz')), l)
           return o.a.createElement(
             o.a.Fragment,
             null,
-            t.map(function (e, l) {
-              return o.a.createElement(h, { key: l, report_entity_results: e })
+            a.map(function (e, l) {
+              return o.a.createElement(S, { key: l, report_entity_results: e })
             }),
           )
         },
-        S = n('IAZG'),
-        I = n('MWbm'),
-        x = n('/yvb'),
-        D = n('pjBI'),
-        U = n('zCf4'),
-        z = p.a.e37836f8,
-        C = p.a.ccf2f24e,
-        j = p.a.d7b32a4d,
-        Q = p.a.b772cd65,
-        A = 'gray700',
-        V = void 0 !== i ? i : (i = n('+hxm')),
-        G = function (e) {
+        I = n('IAZG'),
+        D = n('MWbm'),
+        U = n('/yvb'),
+        C = n('pjBI'),
+        z = n('3rX5'),
+        B = n('zCf4'),
+        j = p.a.e37836f8,
+        Q = p.a.ccf2f24e,
+        A = p.a.d7b32a4d,
+        G = p.a.b772cd65,
+        H = 'gray700',
+        M = void 0 !== s ? s : (s = n('+hxm')),
+        O = function (e) {
           return o.a.createElement(
-            x.a,
+            U.a,
             {
               disabled: !1,
               onPress: function () {
@@ -556,18 +566,18 @@
               size: 'small',
               type: 'primaryFilled',
             },
-            Q,
+            G,
           )
         },
-        H = function () {
+        V = function () {
           var e,
             l,
             n,
-            t = Object(U.h)(),
-            a = Object(S.a)(V, { reportId: t.reportId || '' }),
+            a = Object(B.h)(),
+            t = Object(I.a)(M, { reportId: a.reportId || '' }),
             r =
-              null == a ||
-              null === (e = a.viewer_v2) ||
+              null == t ||
+              null === (e = t.viewer_v2) ||
               void 0 === e ||
               null === (l = e.user_results) ||
               void 0 === l ||
@@ -575,58 +585,72 @@
               void 0 === n
                 ? void 0
                 : n.submitted_report,
-            s = new Date(parseInt(null == r ? void 0 : r.create_time, 10) || 0).toLocaleDateString(void 0, {
+            i = new Date(parseInt(null == r ? void 0 : r.create_time, 10) || 0).toLocaleDateString(void 0, {
               year: 'numeric',
               month: 'long',
               day: 'numeric',
             }),
-            i = null == r ? void 0 : r.header,
+            s = null == r ? void 0 : r.header,
             u = null == r ? void 0 : r.follow_up_text,
             d = null == r ? void 0 : r.report_entities_results
           return o.a.createElement(
             o.a.Fragment,
             null,
             o.a.createElement(
-              D.a,
-              { color: A },
-              o.a.createElement(w.b, { color: A, weight: 'bold' }, C),
-              o.a.createElement(w.b, { color: A }, s),
+              C.a,
+              { color: H },
+              o.a.createElement(T.b, { color: H, weight: 'bold' }, Q),
+              o.a.createElement(T.b, { color: H }, i),
             ),
-            o.a.createElement(w.b, { size: 'title3', weight: 'heavy' }, i),
-            d ? o.a.createElement(L, { report: Object(c.a)(d) }) : null,
-            o.a.createElement(w.b, { size: 'headline2', weight: 'heavy' }, j),
-            o.a.createElement(w.b, { color: A, size: 'subtext2', weight: 'normal' }, u),
+            o.a.createElement(T.b, { size: 'title3', weight: 'heavy' }, s),
+            d ? o.a.createElement(x, { report: Object(c.a)(d) }) : null,
+            o.a.createElement(T.b, { size: 'headline2', style: P.headline, weight: 'heavy' }, A),
+            o.a.createElement(T.b, { color: H, size: 'subtext2', weight: 'normal' }, u),
           )
         },
-        O =
+        P =
           ((l.default = function () {
-            var e = Object(U.f)()
+            var e = Object(B.f)(),
+              l = o.a.useContext(F.b).isModal
             return o.a.createElement(
               d.b,
               {
                 backButtonType: 'close',
-                containerStyle: O.root,
-                documentTitle: z,
+                containerStyle: P.root,
+                documentTitle: j,
                 history: e,
-                rightControl: G(e),
-                title: z,
+                rightControl: O(e),
+                title: j,
               },
               o.a.createElement(
-                I.a,
-                { style: O.parentContainer },
+                D.a,
+                { style: P.parentContainer },
                 o.a.createElement(
-                  I.a,
-                  { style: O.innerContainer },
-                  o.a.createElement(y.a, { errorConfig: { context: 'REPORT_DETAIL' } }, o.a.createElement(H, null)),
+                  D.a,
+                  { style: P.imageContainer },
+                  o.a.createElement(z.a, { accessibilityLabel: '', source: y, style: P.image }),
+                ),
+                o.a.createElement(
+                  D.a,
+                  { style: [P.innerContainer, l ? P.wideScreen : P.narrowScreen] },
+                  o.a.createElement(g.a, { errorConfig: { context: 'REPORT_DETAIL' } }, o.a.createElement(V, null)),
                 ),
               ),
             )
           }),
-          v.a.create(function (e) {
+          w.a.create(function (e) {
             return {
               root: { flexShrink: 1, flexGrow: 1, paddingBottom: e.spaces.space32 },
               parentContainer: { alignItems: 'center' },
-              innerContainer: { marginHorizontal: e.spaces.space72, alignItems: 'left' },
+              innerContainer: { alignItems: 'left' },
+              headline: { marginBottom: e.spaces.space12 },
+              image: { height: '100%', width: '100%' },
+              imageContainer: { height: '150px', width: '150px', marginBottom: e.spaces.space12 },
+              wideScreen: { marginBottom: e.spaces.space48, marginHorizontal: e.spaces.space72 },
+              narrowScreen: {
+                marginBottom: 'calc('.concat(e.spaces.space48, ' + ').concat(w.a.iPhoneOffsetBottom, ')'),
+                marginHorizontal: e.spaces.space32,
+              },
               tombstone: { border: 'none', marginHorizontal: e.spaces.space32, marginVertical: e.spaces.space20 },
             }
           }))
@@ -634,7 +658,7 @@
     xYG4: function (e, l, n) {
       'use strict'
       n.r(l)
-      var t = {
+      var a = {
         argumentDefinitions: [],
         kind: 'Fragment',
         metadata: null,
@@ -648,7 +672,7 @@
         abstractKey: '__isReportEntityResults',
         hash: '5341a800b22c6e54bfa4fe619fd32529',
       }
-      l.default = t
+      l.default = a
     },
   },
 ])

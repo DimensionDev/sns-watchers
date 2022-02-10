@@ -9165,17 +9165,18 @@
         o = n('XnpN'),
         s = n('3XMw'),
         c = n.n(s),
-        l = n('rHpw'),
-        u = n('TIdA'),
-        d = n('A91F'),
-        p = n('jhWN'),
-        m = n('9Xij'),
-        h = n('Znyr'),
-        f = n('cm6r'),
-        v = n('U+bB'),
-        g = n('MWbm'),
-        y = c.a.fd48249b,
-        b = l.a.create(function (e) {
+        l = n('aI6n'),
+        u = n('rHpw'),
+        d = n('TIdA'),
+        p = n('A91F'),
+        m = n('jhWN'),
+        h = n('9Xij'),
+        f = n('Znyr'),
+        v = n('cm6r'),
+        g = n('U+bB'),
+        y = n('MWbm'),
+        b = c.a.fd48249b,
+        _ = u.a.create(function (e) {
           return {
             circle: { borderRadius: e.borderRadii.infinite, overflow: 'hidden' },
             container: { height: 'auto', width: '100%' },
@@ -9191,7 +9192,7 @@
             },
           }
         }),
-        _ = l.a.create(function (e) {
+        E = u.a.create(function (e) {
           return {
             container: { flexDirection: 'row' },
             left: { flex: 1 },
@@ -9202,31 +9203,31 @@
             },
           }
         }),
-        E = l.a.create(function (e) {
+        S = u.a.create(function (e) {
           return {
             container: { flexDirection: 'column' },
             top: { flex: 1, marginBottom: e.borderWidths.small },
             bottom: { flex: 1 },
           }
         }),
-        S = function (e) {
+        C = function (e) {
           var t = e.left,
             n = e.right
           return a.a.createElement(
-            g.a,
-            { style: _.container },
-            a.a.createElement(g.a, { style: _.left }, t),
-            a.a.createElement(g.a, { style: _.right }, n),
+            y.a,
+            { style: E.container },
+            a.a.createElement(y.a, { style: E.left }, t),
+            a.a.createElement(y.a, { style: E.right }, n),
           )
         },
-        C = function (e) {
+        R = function (e) {
           var t = e.bottom,
             n = e.top
           return a.a.createElement(
-            g.a,
-            { style: E.container },
-            a.a.createElement(g.a, { style: E.top }, n),
-            a.a.createElement(g.a, { style: E.bottom }, t),
+            y.a,
+            { style: S.container },
+            a.a.createElement(y.a, { style: S.top }, n),
+            a.a.createElement(y.a, { style: S.bottom }, t),
           )
         }
       t.a = function (e) {
@@ -9234,9 +9235,9 @@
             var n = e.size,
               r = e.withVDLRefresh ? 'xxxLarge' : 'xxLarge'
             return a.a.createElement(
-              g.a,
-              { key: t.id_str, style: b.container },
-              a.a.createElement(p.a, { size: n || r, uri: t.profile_image_url_https }),
+              y.a,
+              { key: t.id_str, style: _.container },
+              a.a.createElement(m.a, { size: n || r, uri: t.profile_image_url_https }),
             )
           },
           n = function (e) {
@@ -9244,9 +9245,9 @@
               n = e.map(function (e, n) {
                 var r = 2 === t || (3 === t && 0 === n) ? 0.5 : 1
                 return a.a.createElement(
-                  g.a,
-                  { key: e.id_str, style: b.container },
-                  a.a.createElement(p.a, {
+                  y.a,
+                  { key: e.id_str, style: _.container },
+                  a.a.createElement(m.a, {
                     aspectRatio: r,
                     shape: 'none',
                     size: 'custom',
@@ -9254,43 +9255,43 @@
                   }),
                 )
               })
-            if (2 === t) return a.a.createElement(m.a, { ratio: 1 }, a.a.createElement(S, { left: n[1], right: n[0] }))
-            var r = a.a.createElement(C, { bottom: n[2], top: n[1] }),
+            if (2 === t) return a.a.createElement(h.a, { ratio: 1 }, a.a.createElement(C, { left: n[1], right: n[0] }))
+            var r = a.a.createElement(R, { bottom: n[2], top: n[1] }),
               i = n[0]
-            return a.a.createElement(S, { left: r, right: i })
+            return a.a.createElement(C, { left: r, right: i })
           },
           r = e.conversation,
           s = e.link,
           c = e.perspective,
-          _ = e.withBadge,
-          E = r && r.avatar_image_https,
-          R = r
+          E = e.withBadge,
+          S = r && r.avatar_image_https,
+          k = r
             ? Object(o.a)(r, c).map(function (e) {
                 return e.user
               })
             : [],
-          k = R.slice(0, 3),
-          w =
+          w = k.slice(0, 3),
+          x =
             (function (e) {
               var t = e && e.avatar && e.avatar.image && e.avatar.image.original_info
               return t
-                ? a.a.createElement(u.a, {
+                ? a.a.createElement(d.a, {
                     accessibilityLabel: '',
-                    aspectMode: d.a.SQUARE,
-                    backgroundColor: l.a.theme.colors.gray50,
+                    aspectMode: p.a.SQUARE,
+                    backgroundColor: u.a.theme.colors.gray50,
                     image: t,
                     rounded: !0,
                   })
                 : null
             })(r) ||
             (function (e) {
-              return e ? a.a.createElement(v.a, { source: e }) : null
-            })(E) ||
+              return e ? a.a.createElement(g.a, { source: e }) : null
+            })(S) ||
             (function (e) {
               var r = e.length
-              return 0 === r ? null : 1 === r ? t(e[0]) : a.a.createElement(g.a, { style: b.circle }, n(e))
-            })(k),
-          x =
+              return 0 === r ? null : 1 === r ? t(e[0]) : a.a.createElement(y.a, { style: _.circle }, n(e))
+            })(w),
+          T =
             s ||
             (function (e, t) {
               if (e)
@@ -9299,39 +9300,47 @@
                   : e.type === i.a.ONE_TO_ONE
                   ? '/'.concat(t[0].screen_name)
                   : void 0
-            })(r, R),
-          T = _ && null != r && r.participants ? Object.keys(r.participants).length - 1 : 0
-        return w
+            })(r, k),
+          A = E && null != r && r.participants ? Object.keys(r.participants).length - 1 : 0
+        return x
           ? a.a.createElement(
               a.a.Fragment,
               null,
               a.a.createElement(
-                m.a,
+                h.a,
                 { ratio: 1 },
-                x ? a.a.createElement(f.a, { interactiveStyles: null, link: x }, w) : w,
+                T ? a.a.createElement(v.a, { interactiveStyles: null, link: T, testID: l.a.conversationAvatar }, x) : x,
               ),
-              T
+              A
                 ? (function (e) {
                     var t = e.badgeCount
                     return a.a.createElement(
-                      g.a,
-                      { style: b.itemAccessory },
-                      a.a.createElement(h.a, {
+                      y.a,
+                      { style: _.itemAccessory },
+                      a.a.createElement(f.a, {
                         count: t,
                         standalone: !0,
-                        style: b.userDecoration,
+                        style: _.userDecoration,
                         textColor: 'normal',
                         truncatedCountFormatter: function () {
                           return ''
                         },
-                        unreadCountLabel: y,
+                        unreadCountLabel: b,
                         withTruncatedCount: !1,
                       }),
                     )
-                  })({ badgeCount: T })
+                  })({ badgeCount: A })
                 : null,
             )
           : null
+      }
+    },
+    aI6n: function (e, t, n) {
+      'use strict'
+      t.a = {
+        conversationAvatar: 'DM_Conversation_Avatar',
+        newDM: 'NewDM_Button',
+        untrustedThumbnail: 'DM_Untrusted_Thumbnail',
       }
     },
     b9JY: function (e, t, n) {
@@ -9532,6 +9541,9 @@
     cOtO: function (e, t, n) {
       'use strict'
       n.r(t),
+        n.d(t, 'conversationInfoLabel', function () {
+          return J
+        }),
         n.d(t, 'DMConversationScreen', function () {
           return ee
         })
@@ -11338,7 +11350,7 @@
               {
                 key: 'componentWillUnmount',
                 value: function () {
-                  this._unlockReload()
+                  this._unlockReload && this._unlockReload()
                 },
               },
               {

@@ -1535,13 +1535,13 @@ window.__SCRIPTS_LOADED__.i18n &&
           O = n('mXq/'),
           I = n('n8uP'),
           C = n('Wms4'),
-          k = n('rHpw'),
-          A = n('3XMw'),
-          R = n.n(A),
-          x = R.a.g97a046c,
-          L = R.a.df1b0707,
-          P = R.a.ac4c73d8,
-          D = R.a.d58baa7e,
+          k = n('855f'),
+          A = n('rHpw'),
+          R = n('3XMw'),
+          x = n.n(R),
+          L = x.a.g97a046c,
+          P = x.a.df1b0707,
+          D = x.a.ac4c73d8,
           j = 'animated_gif',
           M = (function (e) {
             l()(n, e)
@@ -1563,7 +1563,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       o = e.onClick,
                       c = e.poster,
                       s = e.previewMode,
-                      u = e.videoType === j ? L : x,
+                      u = e.videoType === j ? P : L,
                       l = this._getLabels()
                     return v.a.createElement(
                       E.a,
@@ -1613,7 +1613,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                     return v.a.createElement(
                       C.a,
                       null,
-                      v.a.createElement(R.a.I18NFormatMessage, { $i18n: 'd6d818a1', viewerCount: D(e) }),
+                      v.a.createElement(x.a.I18NFormatMessage, {
+                        $i18n: 'd6d818a1',
+                        viewerCount: k.a.getTruncatedCount(e, !0),
+                      }),
                     )
                   },
                 },
@@ -1636,10 +1639,10 @@ window.__SCRIPTS_LOADED__.i18n &&
               n
             )
           })(v.a.Component)
-        m()(M, 'defaultProps', { accessibilityLabel: P, onClick: b.a, hidePlayButton: !1, previewMode: !1 })
-        var N = k.a.create(function (e) {
+        m()(M, 'defaultProps', { accessibilityLabel: D, onClick: b.a, hidePlayButton: !1, previewMode: !1 })
+        var N = A.a.create(function (e) {
           return {
-            root: i()(i()({}, k.a.absoluteFillObject), {}, { justifyContent: 'center', alignItems: 'center' }),
+            root: i()(i()({}, A.a.absoluteFillObject), {}, { justifyContent: 'center', alignItems: 'center' }),
             hashtagHighlight: { bottom: e.spaces.space12, display: 'flex', maxWidth: '80%', position: 'absolute' },
           }
         })
@@ -3766,13 +3769,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '0Mjh': function (e, t) {
         e.exports = {
-          queryId: 'TXh2QwCvF3qyMLv_KoUEww',
+          queryId: 'lyGrSC6aYPP9C-7lU3-9cA',
           operationName: 'CommunityModeratorsTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -3852,12 +3855,12 @@ window.__SCRIPTS_LOADED__.i18n &&
           T = E.a.c600045f,
           S = n('lnti'),
           O = (n('uFXj'), n('i4Oy')),
-          I = E.a.aeb6f0a0,
-          C = E.a.bf162f1e,
-          k = E.a.e68a6c62,
-          A = E.a.fae82d22,
-          R = E.a.c9aa7c7b,
-          x = E.a.d58baa7e,
+          I = n('855f'),
+          C = E.a.aeb6f0a0,
+          k = E.a.bf162f1e,
+          A = E.a.e68a6c62,
+          R = E.a.fae82d22,
+          x = E.a.c9aa7c7b,
           L = E.a.if1b6f14,
           P = function (e, t) {
             return ''.concat(e, '&client=').concat(t)
@@ -5407,16 +5410,16 @@ window.__SCRIPTS_LOADED__.i18n &&
                     y = (function (e) {
                       if (e) {
                         var t = parseInt(e, 10),
-                          n = x(t)
+                          n = Object(I.c)(t)
                         return L({ count: t, formattedCount: n })
                       }
                     })(Object(p.o)(a, 'string_value', 'subscriber_count')),
-                    E = Object(S.a)([R, y]),
+                    E = Object(S.a)([x, y]),
                     w = Object(p.o)(a, 'string_value', 'sample_url'),
                     T = Object(p.f)(a, 'boolean_value', 'fetched_subscription_status'),
                     O = Object(p.f)(a, 'boolean_value', 'is_subscribed'),
-                    N = O ? k : I,
-                    F = O ? A : C,
+                    N = O ? A : C,
+                    F = O ? R : k,
                     U = O ? 'link' : 'button'
                   return {
                     state: u.c.DEFAULT,
@@ -7413,7 +7416,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             identity_verification_educational_prompt_enabled: !0,
             identity_verification_intake_enabled: !0,
             identity_verification_notable_demo_survey: !0,
-            interactive_text: !0,
+            interactive_text_enabled: !0,
             live_event_docking_enabled: !0,
             live_event_multi_video_auto_advance_dock_enabled: !0,
             live_event_multi_video_auto_advance_enabled: !0,
@@ -7670,6 +7673,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             subscriptions_feature_1007: !0,
             subscriptions_feature_1009: !0,
             subscriptions_feature_labs_1001: !0,
+            subscriptions_long_video_rweb_new_copy_enabled: !0,
             subscriptions_long_video_upload: !0,
             subscriptions_management_enabled: !0,
             subscriptions_settings_item_enabled: !0,
@@ -9334,13 +9338,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '3WSQ': function (e, t) {
         e.exports = {
-          queryId: '27FyLr2Fjyvs7gqjA8yUsA',
+          queryId: 'mniGd6_axifet4xOnU7Orw',
           operationName: 'ListsDiscovery',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -9430,13 +9434,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '3hxR': function (e, t) {
         e.exports = {
-          queryId: 'I7dCvfDGdFbZZ1yLnyybIQ',
+          queryId: '2LihRHg6vFSQi44FaooC5A',
           operationName: 'HomeTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -10022,13 +10026,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '45/a': function (e, t) {
         e.exports = {
-          queryId: 'PHUarqOSBs7tZu_H7u5MSA',
+          queryId: 'PfqhiMt3pVZnn4fj2yTnwQ',
           operationName: 'CommunityModerationTweetCasesSlice',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -11986,13 +11990,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '711x': function (e, t) {
         e.exports = {
-          queryId: '6kyu8wuH2LXoCHO0M-t2kw',
+          queryId: 'CGi6XMG2CFR2Pt4MZbfs3Q',
           operationName: 'CommunityTweetsTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -12236,13 +12240,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '7i0Y': function (e, t) {
         e.exports = {
-          queryId: 'SB-0cpOhAtwYi0RyXfOdXg',
+          queryId: 'ON_tdgWFFOVG6uQQ2nQvtQ',
           operationName: 'ArticleTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -12280,13 +12284,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '7sDX': function (e, t) {
         e.exports = {
-          queryId: '0SJiR25hD5GL0yF3hRsUOQ',
+          queryId: 'SEMVQ1SG1AmasKZAngOGAg',
           operationName: 'GenericTimelineById',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -12646,8 +12650,8 @@ window.__SCRIPTS_LOADED__.i18n &&
           i = n.n(r),
           a = i.a.d58baa7e,
           o = i.a.ia24dc8c,
-          c = function (e) {
-            return e >= 1e4 ? a(e) : o(e)
+          c = function (e, t) {
+            return t || e >= 1e4 ? a(e) : o(e)
           },
           s = function (e) {
             return o(e)
@@ -12778,13 +12782,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '8T6S': function (e, t) {
         e.exports = {
-          queryId: 'pykMAVqs7JwMuCaHTWz1dA',
+          queryId: 'uJxTbwBQr5woqeaWXaiiJg',
           operationName: 'CommunityMembersTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -13235,13 +13239,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '8igc': function (e, t) {
         e.exports = {
-          queryId: 'v4WOl2LnMcysrDZiLO8y0A',
+          queryId: 'wSNYFF36n3VqBLxEBMnUfQ',
           operationName: 'ListOwnerships',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -15478,13 +15482,8 @@ window.__SCRIPTS_LOADED__.i18n &&
           $l = n('LX9I'),
           ed = n.n($l),
           td = function (e) {
-            var t,
-              n,
-              r =
-                null == e || null === (t = e.viewer) || void 0 === t || null === (n = t.user_results) || void 0 === n
-                  ? void 0
-                  : n.result
-            if ('User' === (null == r ? void 0 : r.__typename)) return null == r ? void 0 : r.twitter_articles_slice
+            var t = null == e ? void 0 : e.user.result
+            if ('User' === (null == t ? void 0 : t.__typename)) return null == t ? void 0 : t.twitter_articles_slice
           },
           nd = n('pYwk'),
           rd = n.n(nd),
@@ -27538,7 +27537,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         component: qS,
                         exact: !0,
                         key: 'profile',
-                        path: '/'.concat(wh.J, '/(with_replies|superfollows)?'),
+                        path: '/'.concat(wh.J, '/(with_replies|superfollows|twitter-articles)?'),
                       }),
                       um.a.createElement(_m.b, {
                         component: eO,
@@ -29137,7 +29136,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           },
           j = function (e) {
             var t = e && Object(_.h)(e)
-            return t === v.A.EmailVerification || t === v.A.PhoneVerification
+            return t === v.B.EmailVerification || t === v.B.PhoneVerification
           },
           M = function (e) {
             return (
@@ -29445,7 +29444,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   }
                 })(c)(i || ''),
                 h = r && r.action,
-                _ = h === v.z.ResendSms || h === v.z.ResendVoice || h === v.z.ResendEmail
+                _ = h === v.A.ResendSms || h === v.A.ResendVoice || h === v.A.ResendEmail
               'clear' === h && i && (p[i] = {})
               var b = j(m) && (!h || _)
               e({
@@ -31558,13 +31557,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       AFas: function (e, t) {
         e.exports = {
-          queryId: 'J6c-wbWzBJuUXFqaYm95Gg',
+          queryId: 's5QxBbJRvhLR1Lv8WMbCuw',
           operationName: 'BlockedAccountsImported',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -31586,13 +31585,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       AMCR: function (e, t) {
         e.exports = {
-          queryId: 'FqBiGq-bKNXYoayrE3KUuw',
+          queryId: 'QXYpO7KVSWExCfpFdQdK3A',
           operationName: 'ListMembers',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -32785,13 +32784,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       AseN: function (e, t) {
         e.exports = {
-          queryId: 'SO3eQXFHZTpF7G80b79HlA',
+          queryId: 'ANrxkT1YvbtKDfdmgQ7TRQ',
           operationName: 'TopicsPickerPageById',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -33835,13 +33834,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       BD2j: function (e, t) {
         e.exports = {
-          queryId: 'CGoktTVIixw49hitg0xFNA',
+          queryId: '2VfIzV5h9W5MJlPetENohQ',
           operationName: 'RitoFlaggedTweetsTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -34604,13 +34603,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       'C0/a': function (e, t) {
         e.exports = {
-          queryId: 'WIZppQMcXx58hnBOA7F_kw',
+          queryId: 'p7TR2wd8Ejr4qj_9y_62Jg',
           operationName: 'ViewingOtherUsersTopicsPage',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -36141,13 +36140,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       ELjp: function (e, t) {
         e.exports = {
-          queryId: 'Z0of1KY1DCcW7bt7VVcQ6A',
+          queryId: 'QJIZUTgt53ViJ4x_ZkWrKg',
           operationName: 'ListsManagementPageTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -36225,13 +36224,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       ETkL: function (e, t) {
         e.exports = {
-          queryId: 'dTfi13sI6IAcD0NdUierNQ',
+          queryId: 'wXcj4q2pvaFVfMp6Jij9KA',
           operationName: 'CommunitiesMembershipsTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -37685,6 +37684,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           T = E.a.create(function (e) {
             return {
               highlight: {
+                alignItems: 'center',
                 borderRadius: e.borderRadii.infinite,
                 boxDecorationBreak: 'clone',
                 display: 'inline-flex',
@@ -38350,13 +38350,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       FzU8: function (e, t) {
         e.exports = {
-          queryId: 'LeNdP_AN7c8vuObS8VxU-A',
+          queryId: 'O6X-KjotjzQZ6r5CTANBLg',
           operationName: 'ListRankedTweetsTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -40199,13 +40199,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       HDd8: function (e, t) {
         e.exports = {
-          queryId: '6pHFKRjX9UeZuihKAyi6Mg',
+          queryId: 'tZVKo5b1c9ZD1BvRCu11xw',
           operationName: 'CommunityDiscoveryTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -41432,13 +41432,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       JAMG: function (e, t) {
         e.exports = {
-          queryId: '2kFERZQ5jSy2gKTxpDBdkg',
+          queryId: '90pBXmwTCt2fPlXYqZyo6w',
           operationName: 'Likes',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -41446,13 +41446,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       JMnv: function (e, t) {
         e.exports = {
-          queryId: '5CA3QsXgVSa88HVJ-GcUPg',
+          queryId: 'fRXv0R0DE1QGUPB6ZHcAhw',
           operationName: 'TopicTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -42786,13 +42786,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       KlJi: function (e, t) {
         e.exports = {
-          queryId: 'P6juCvNTvkumzESR_O6n2A',
+          queryId: 'qQsGHNinJBksFGT7ltCqAw',
           operationName: 'CommunitiesMainPageTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -45603,13 +45603,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       NOIf: function (e, t) {
         e.exports = {
-          queryId: 'cbaut9S_292kt6LqaZWF9Q',
+          queryId: 'hv4DbWuPpELXebqZ5H7usA',
           operationName: 'ListSubscribers',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -46608,13 +46608,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       O6fG: function (e, t) {
         e.exports = {
-          queryId: 'MHGs1eovOYL2L87Jkx2PHQ',
+          queryId: 'HiziTD-eoXgwq5qLdiUt7g',
           operationName: 'CommunityTweetsRankedTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -47131,13 +47131,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       OpJD: function (e, t) {
         e.exports = {
-          queryId: 'Lrl15J84h2FHGmRqwvue2g',
+          queryId: 'rzAgxqjkwjZRTYuUo2qCIg',
           operationName: 'ArticleTweetsTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -48005,13 +48005,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       PQjc: function (e, t) {
         e.exports = {
-          queryId: 'p7wJK2i9-MO44epVn-C6GA',
+          queryId: '1aRw6GuJ8dDlOMUHIfDHoA',
           operationName: 'BookmarkFolderTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -48983,13 +48983,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       Q6XB: function (e, t) {
         e.exports = {
-          queryId: 'wBqwFbQejCSDePVocpKxQQ',
+          queryId: 'I3Zrgtzyx8ckasbyk6jlfQ',
           operationName: 'UserTweetsAndReplies',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -49917,13 +49917,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       QK8Q: function (e, t) {
         e.exports = {
-          queryId: 'HSylXW3ZlW7AChGf0DV8dA',
+          queryId: 'rL0pFvDGa7L1mdHluTOq_A',
           operationName: 'Followers',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -51251,13 +51251,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       RgYM: function (e, t) {
         e.exports = {
-          queryId: 'W-p1xpJgL6QVHJImYf9rpg',
+          queryId: 'Isft0m0WemLg0OkKP8vbAA',
           operationName: 'ListMemberships',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -52400,7 +52400,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       Rumh: function (e, t, n) {
         'use strict'
         n.d(t, 'a', function () {
-          return L
+          return P
         })
         var r = n('KEM+'),
           i = n.n(r),
@@ -52410,67 +52410,72 @@ window.__SCRIPTS_LOADED__.i18n &&
           s = n.n(c),
           u = (n('90N4'), n('3XMw')),
           l = n.n(u),
-          d = { truncate0: l.a.g08cbaba, truncate1: l.a.d58baa7e }
-        function p(e) {
-          return e < 1e3 ? String(e) : 2 === Math.floor(Math.log10(e)) % 3 ? d.truncate0(e) : d.truncate1(e)
+          d = n('855f'),
+          p = { truncate0: l.a.g08cbaba }
+        function f(e) {
+          return e < 1e3
+            ? String(e)
+            : 2 === Math.floor(Math.log10(e)) % 3
+            ? p.truncate0(e)
+            : d.a.getTruncatedCount(e, !0)
         }
-        var f = n('cm6r'),
-          m = n('wD1h'),
-          h = n('Oe3h'),
-          v = n('0FVZ'),
-          _ = n('t62R')
-        function b(e) {
+        var m = n('cm6r'),
+          h = n('wD1h'),
+          v = n('Oe3h'),
+          _ = n('0FVZ'),
+          b = n('t62R')
+        function g(e) {
           var t = s.a.useMemo(
             function () {
-              return b.generateText(e)
+              return g.generateText(e)
             },
             [e.count, e.labelType],
           )
-          return s.a.createElement(_.b, { numberOfLines: 1 }, t)
+          return s.a.createElement(b.b, { numberOfLines: 1 }, t)
         }
-        b.generateText = function (e) {
-          var t = p(Math.max(0, e.count))
+        g.generateText = function (e) {
+          var t = f(Math.max(0, e.count))
           switch (e.labelType) {
             case 'otherListeners':
-              return g.otherListeners({ count: t })
+              return y.otherListeners({ count: t })
             case 'others':
             default:
-              return g.plusOthers({ count: t })
+              return y.plusOthers({ count: t })
           }
         }
-        var g = { others: l.a.gfe2830e, otherListeners: l.a.f70a6835, here: l.a.bfb44f89, plusOthers: l.a.dc718e53 },
-          y = n('FBXD')
-        function E(e) {
-          return Object(y.a)(function (t) {
+        var y = { others: l.a.gfe2830e, otherListeners: l.a.f70a6835, here: l.a.bfb44f89, plusOthers: l.a.dc718e53 },
+          E = n('FBXD')
+        function w(e) {
+          return Object(E.a)(function (t) {
             'function' == typeof e && e()
           })
         }
-        var w = n('/yvb'),
-          T = n('hOZg'),
-          S = n('21zW'),
-          O = n('Xyrk'),
-          I = n('rHpw'),
-          C = n('MWbm')
-        function k(e) {
-          var t = E(e.onRequestClose)
+        var T = n('/yvb'),
+          S = n('hOZg'),
+          O = n('21zW'),
+          I = n('Xyrk'),
+          C = n('rHpw'),
+          k = n('MWbm')
+        function A(e) {
+          var t = w(e.onRequestClose)
           return s.a.createElement(
-            C.a,
-            { style: x.container },
-            s.a.createElement(C.a, { style: x.gradientBar }, s.a.createElement(O.a.Animated, null)),
+            k.a,
+            { style: L.container },
+            s.a.createElement(k.a, { style: L.gradientBar }, s.a.createElement(I.a.Animated, null)),
             s.a.createElement(
-              C.a,
-              { style: x.content },
+              k.a,
+              { style: L.content },
               s.a.createElement(
-                C.a,
-                { style: x.text },
-                s.a.createElement(C.a, { style: x.participantsRow }, e.activeSpeakers),
-                s.a.createElement(_.b, { color: 'gray700', numberOfLines: 1 }, s.a.createElement(A, e)),
+                k.a,
+                { style: L.text },
+                s.a.createElement(k.a, { style: L.participantsRow }, e.activeSpeakers),
+                s.a.createElement(b.b, { color: 'gray700', numberOfLines: 1 }, s.a.createElement(R, e)),
               ),
-              s.a.createElement(w.a, {
-                accessibilityLabel: R.close,
+              s.a.createElement(T.a, {
+                accessibilityLabel: x.close,
                 borderColor: 'transparent',
                 color: 'text',
-                icon: s.a.createElement(T.a, null),
+                icon: s.a.createElement(S.a, null),
                 onPress: t,
                 size: 'medium',
                 testID: 'close',
@@ -52478,19 +52483,19 @@ window.__SCRIPTS_LOADED__.i18n &&
             ),
           )
         }
-        function A(e) {
+        function R(e) {
           return e.totalParticipants
             ? s.a.createElement(
                 s.a.Fragment,
                 null,
-                s.a.createElement(b, { count: e.totalParticipants - 1, labelType: 'others' }),
-                s.a.createElement(S.a, null),
+                s.a.createElement(g, { count: e.totalParticipants - 1, labelType: 'others' }),
+                s.a.createElement(O.a, null),
                 e.title,
               )
             : e.title
         }
-        var R = { close: l.a.af8fa2ad },
-          x = I.a.create(function (e) {
+        var x = { close: l.a.af8fa2ad },
+          L = C.a.create(function (e) {
             return {
               container: { borderRadius: 'inherit', overflow: 'hidden' },
               gradientBar: { position: 'absolute', height: '50%', width: '100%' },
@@ -52513,22 +52518,22 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             }
           })
-        function L(e) {
+        function P(e) {
           var t = e.isWide,
             n = e.wideDockMaxWidth,
-            r = t ? v.a.DesktopVoiceTweetDock : v.a.MobileVoiceTweetDock,
-            i = t ? [M.root, { maxWidth: n }] : null
+            r = t ? _.a.DesktopVoiceTweetDock : _.a.MobileVoiceTweetDock,
+            i = t ? [N.root, { maxWidth: n }] : null
           return s.a.createElement(
             r,
             null,
-            s.a.createElement(h.a, { id: 'SpaceDock' }, function (t, n) {
-              return s.a.createElement(C.a, o()({ ref: t() }, n({ style: i })), s.a.createElement(P, e))
+            s.a.createElement(v.a, { id: 'SpaceDock' }, function (t, n) {
+              return s.a.createElement(k.a, o()({ ref: t() }, n({ style: i })), s.a.createElement(D, e))
             }),
           )
         }
-        function P(e) {
+        function D(e) {
           var t = s.a.useRef(null),
-            n = e.isWide && M.borderRadius
+            n = e.isWide && N.borderRadius
           var r = s.a.useMemo(function () {
             return function () {
               t.current && t.current.focus()
@@ -52550,32 +52555,32 @@ window.__SCRIPTS_LOADED__.i18n &&
               [t.current],
             ),
             s.a.createElement(
-              m.a,
-              { enabled: !0, handlers: i()({}, m.a.shortcuts.audio.dock, r) },
+              h.a,
+              { enabled: !0, handlers: i()({}, h.a.shortcuts.audio.dock, r) },
               s.a.createElement(
-                f.a,
+                m.a,
                 {
-                  accessibilityLabel: D.dock,
-                  onPress: E(e.onDockPress),
+                  accessibilityLabel: j.dock,
+                  onPress: w(e.onDockPress),
                   ref: function (e) {
                     t.current = e
                   },
-                  style: [j.container, n],
+                  style: [M.container, n],
                 },
-                s.a.createElement(C.a, { style: [j.innerContainer, n] }, s.a.createElement(k, e)),
+                s.a.createElement(k.a, { style: [M.innerContainer, n] }, s.a.createElement(A, e)),
               ),
             )
           )
         }
-        ;(L.formatCountShort = p), (L.ParticipantsCount = b)
-        var D = { dock: l.a.jbc5f47a },
-          j = I.a.create(function (e) {
+        ;(P.formatCountShort = f), (P.ParticipantsCount = g)
+        var j = { dock: l.a.jbc5f47a },
+          M = C.a.create(function (e) {
             return {
               container: { backgroundColor: e.colors.navigationBackground, boxShadow: e.boxShadows.xSmall },
               innerContainer: { backgroundColor: e.colors.navigationBackground },
             }
           }),
-          M = I.a.create(function (e) {
+          N = C.a.create(function (e) {
             return {
               root: {
                 alignSelf: 'flex-end',
@@ -54321,13 +54326,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       THIS: function (e, t) {
         e.exports = {
-          queryId: 'vTZ1Zp2QzJwyM3SCwyuTLg',
+          queryId: 'vSm80lpWTvL4cb-Jzncx_g',
           operationName: 'RitoFlaggedAccountsTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -55108,7 +55113,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   e.isTrue('voice_consumption_enabled') && 'voiceInfo',
                   !0 === e.getValueWithoutScribeImpression('responsive_web_birdwatch_pivots_enabled') &&
                     'birdwatchPivot',
-                  e.isTrue('interactive_text') && 'enrichments',
+                  e.isTrue('interactive_text_enabled') && 'enrichments',
                   (e.isTrue('super_follow_tweet_api_enabled') || e.isTrue('super_follow_user_api_enabled')) &&
                     'superFollowMetadata',
                 ]),
@@ -55976,13 +55981,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       UuZj: function (e, t) {
         e.exports = {
-          queryId: 'bN69Hwb89rOqaokLAjvqnw',
+          queryId: 'gJD-T6AiYlHLdaiBqj6iaQ',
           operationName: 'Bookmarks',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -58039,13 +58044,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       WusG: function (e, t) {
         e.exports = {
-          queryId: 'aawqU6k-SPeCcFq_NpuGHw',
+          queryId: 'I8Txbvh9nEjlZkM81A7-Qw',
           operationName: 'BirdwatchFetchContributorNotesSlice',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -61286,13 +61291,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       Y9iu: function (e, t) {
         e.exports = {
-          queryId: 'KztOvgFG7p2_FGFJ6LLljg',
+          queryId: '2MAqT-Ep2knWQOHr7Cvs1Q',
           operationName: 'HomeLatestTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -61637,49 +61642,49 @@ window.__SCRIPTS_LOADED__.i18n &&
             subtask_back_navigation_link: null,
             callbacks: null,
             progress_indication: null,
-            action_list: l.A.ActionList,
-            alert_dialog: l.A.AlertDialog,
-            alert_dialog_suppress_client_events: l.A.AlertDialogSupressClientEvents,
-            app_download_cta: l.A.AppDownloadCTA,
-            cta: l.A.CallToAction,
-            check_logged_in_account: l.A.CheckLoggedInAccount,
-            choice_selection: l.A.ChoiceSelection,
-            contacts_live_sync_permission_prompt: l.A.ContactsLiveSyncPermissionPrompt,
-            email_contacts_sync: l.A.EmailContactsSync,
-            enter_date: l.A.EnterDate,
-            enter_email: l.A.EnterEmail,
-            enter_phone: l.A.EnterPhone,
-            email_verification: l.A.EmailVerification,
-            enter_password: l.A.EnterPassword,
-            enter_text: l.A.EnterText,
-            enter_username: l.A.EnterUsername,
-            end_flow: l.A.EndFlow,
-            fetch_temporary_password: l.A.FetchPassword,
-            interest_picker: l.A.InterestPicker,
-            js_instrumentation: l.A.JsInstrumentation,
-            generic_urt: l.A.GenericURT,
-            menu_dialog: l.A.MenuDialog,
-            notifications_permission_prompt: l.A.NotificationsPermissionPrompt,
-            open_account: l.A.OpenAccount,
-            open_home_timeline: l.A.OpenHomeTimeline,
-            open_link: l.A.OpenLink,
-            phone_verification: l.A.PhoneVerification,
-            privacy_options: l.A.PrivacyOptions,
-            recaptcha: l.A.Recaptcha,
-            security_key: l.A.SecurityKey,
-            select_avatar: l.A.SelectAvatar,
-            select_banner: l.A.SelectBanner,
-            settings_list: l.A.SettingsList,
-            show_code: l.A.ShowCode,
-            sign_up: l.A.Signup,
-            sign_up_review: l.A.SignupReview,
-            topics_selector: l.A.TopicsSelector,
-            tweet_selection_urt: l.A.TweetSelectionURT,
-            update_users: l.A.UpdateUsers,
-            upload_media: l.A.UploadMedia,
-            user_recommendations_list: l.A.UserRecommendations,
-            user_recommendations_urt: l.A.UserRecommendationsURT,
-            wait_spinner: l.A.WaitSpinner,
+            action_list: l.B.ActionList,
+            alert_dialog: l.B.AlertDialog,
+            alert_dialog_suppress_client_events: l.B.AlertDialogSupressClientEvents,
+            app_download_cta: l.B.AppDownloadCTA,
+            cta: l.B.CallToAction,
+            check_logged_in_account: l.B.CheckLoggedInAccount,
+            choice_selection: l.B.ChoiceSelection,
+            contacts_live_sync_permission_prompt: l.B.ContactsLiveSyncPermissionPrompt,
+            email_contacts_sync: l.B.EmailContactsSync,
+            enter_date: l.B.EnterDate,
+            enter_email: l.B.EnterEmail,
+            enter_phone: l.B.EnterPhone,
+            email_verification: l.B.EmailVerification,
+            enter_password: l.B.EnterPassword,
+            enter_text: l.B.EnterText,
+            enter_username: l.B.EnterUsername,
+            end_flow: l.B.EndFlow,
+            fetch_temporary_password: l.B.FetchPassword,
+            interest_picker: l.B.InterestPicker,
+            js_instrumentation: l.B.JsInstrumentation,
+            generic_urt: l.B.GenericURT,
+            menu_dialog: l.B.MenuDialog,
+            notifications_permission_prompt: l.B.NotificationsPermissionPrompt,
+            open_account: l.B.OpenAccount,
+            open_home_timeline: l.B.OpenHomeTimeline,
+            open_link: l.B.OpenLink,
+            phone_verification: l.B.PhoneVerification,
+            privacy_options: l.B.PrivacyOptions,
+            recaptcha: l.B.Recaptcha,
+            security_key: l.B.SecurityKey,
+            select_avatar: l.B.SelectAvatar,
+            select_banner: l.B.SelectBanner,
+            settings_list: l.B.SettingsList,
+            show_code: l.B.ShowCode,
+            sign_up: l.B.Signup,
+            sign_up_review: l.B.SignupReview,
+            topics_selector: l.B.TopicsSelector,
+            tweet_selection_urt: l.B.TweetSelectionURT,
+            update_users: l.B.UpdateUsers,
+            upload_media: l.B.UploadMedia,
+            user_recommendations_list: l.B.UserRecommendations,
+            user_recommendations_urt: l.B.UserRecommendationsURT,
+            wait_spinner: l.B.WaitSpinner,
           },
           g = {
             contacts_live_sync_permission_prompt:
@@ -61689,7 +61694,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             wait_spinner: 1,
             cta: 4,
           },
-          y = Object(c.a)([l.A.AlertDialogSupressClientEvents]),
+          y = Object(c.a)([l.B.AlertDialogSupressClientEvents]),
           E = function (e) {
             return (
               (e &&
@@ -62775,13 +62780,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       'ZOA/': function (e, t) {
         e.exports = {
-          queryId: 'vj-x0V5P9wItF63wXbA6uQ',
+          queryId: 'T-nXuyBKKCBPtYZhVDa61g',
           operationName: 'Retweeters',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -64063,13 +64068,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       a4I6: function (e, t) {
         e.exports = {
-          queryId: 'b6wPMcDnykulPTxt939GGw',
+          queryId: 'F5LhaqVfinoPEDajqa1MhQ',
           operationName: 'Favoriters',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -64077,13 +64082,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       'a5E+': function (e, t) {
         e.exports = {
-          queryId: 'c_VAi1AkTMe3A8PljhlS5w',
+          queryId: 'Blv74CR5AY0yIL9iUvKh9w',
           operationName: 'TopicsManagementPage',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -66070,13 +66075,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       'af/2': function (e, t) {
         e.exports = {
-          queryId: 'tXFFoOYy6ovwDaAnr9iT8g',
+          queryId: 'aRpxQrFzyKglVgR5MxI31g',
           operationName: 'UserTweets',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -66227,13 +66232,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       amUk: function (e, t) {
         e.exports = {
-          queryId: 'zyF6_UsMF5Fb4yDn_Wyirg',
+          queryId: 'ZCMC80wpD1YvqYKPZrMaSg',
           operationName: 'BlockedAccountsAll',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -67081,7 +67086,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           M =
             ((j = D),
             function (e) {
-              return E.a.createElement(Qt.Context.Consumer, null, function (t) {
+              return E.a.createElement(Kt.Context.Consumer, null, function (t) {
                 return E.a.createElement(j, i()({}, e, t))
               })
             }),
@@ -67219,7 +67224,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           }),
           V = (function (e) {
             return function (t) {
-              return E.a.createElement(Qt.Context.Consumer, null, function (n) {
+              return E.a.createElement(Kt.Context.Consumer, null, function (n) {
                 return E.a.createElement(e, i()({}, t, n))
               })
             }
@@ -67251,11 +67256,11 @@ window.__SCRIPTS_LOADED__.i18n &&
           K = n('X00g'),
           Y = n('MAI/'),
           Q = n('nBUg'),
-          J = n('wrVO'),
-          X = n('cm6r'),
-          Z = n('3XMw'),
-          $ = n.n(Z),
-          ee = $.a.d58baa7e,
+          J = n('3XMw'),
+          X = n.n(J),
+          Z = n('wrVO'),
+          $ = n('855f'),
+          ee = n('cm6r'),
           te = { viewType: 'community_card' },
           ne = '5px',
           re = function (e) {
@@ -67303,7 +67308,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 g.a,
                 { behavioralEventContext: te },
                 E.a.createElement(
-                  X.a,
+                  ee.a,
                   { interactive: !1, link: t, onClick: n, style: [ie.wrapper, i] },
                   E.a.createElement(
                     F.a,
@@ -67312,7 +67317,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       W,
                       {
                         color: 'white',
-                        dir: Object(J.j)(o.is_rtl),
+                        dir: Object(Z.j)(o.is_rtl),
                         numberOfLines: A.a.shouldLimitTextToSingleLine() ? 1 : c,
                         size: 'headline1',
                         type: 'title',
@@ -67328,7 +67333,11 @@ window.__SCRIPTS_LOADED__.i18n &&
                     E.a.createElement(
                       q.b,
                       { color: 'white', style: ie.count },
-                      E.a.createElement($.a.I18NFormatMessage, { $i18n: 'd6b02328', formattedCount: ee(r), count: r }),
+                      E.a.createElement(X.a.I18NFormatMessage, {
+                        $i18n: 'd6b02328',
+                        formattedCount: Object($.c)(r),
+                        count: r,
+                      }),
                     ),
                   ),
                   E.a.createElement(F.a, { style: [N.a.absoluteFill, ie.backgroundColor, d] }),
@@ -67359,7 +67368,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       var i = t.link,
                         a = t.onClick
                       return E.a.createElement(
-                        X.a,
+                        ee.a,
                         {
                           accessibilityHidden: n,
                           accessibilityLabel: r,
@@ -67421,7 +67430,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       n
                         ? E.a.createElement(
                             W,
-                            { dir: Object(J.j)(n.is_rtl), numberOfLines: 1, type: 'description' },
+                            { dir: Object(Z.j)(n.is_rtl), numberOfLines: 1, type: 'description' },
                             n.content,
                           )
                         : null,
@@ -67432,7 +67441,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         ? E.a.createElement(
                             W,
                             {
-                              dir: Object(J.j)(p.is_rtl),
+                              dir: Object(Z.j)(p.is_rtl),
                               numberOfLines: A.a.shouldLimitTextToSingleLine() ? 1 : f,
                               type: 'title',
                             },
@@ -67443,7 +67452,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         ? E.a.createElement(
                             W,
                             {
-                              dir: Object(J.j)(i.is_rtl),
+                              dir: Object(Z.j)(i.is_rtl),
                               numberOfLines: A.a.shouldLimitTextToSingleLine() ? 1 : a,
                               type: 'description',
                             },
@@ -67507,7 +67516,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   i
                     ? E.a.createElement(
                         W,
-                        { dir: Object(J.j)(i.is_rtl), numberOfLines: c, size: s, type: 'title', weight: 'bold' },
+                        { dir: Object(Z.j)(i.is_rtl), numberOfLines: c, size: s, type: 'title', weight: 'bold' },
                         i.content,
                       )
                     : null,
@@ -67533,7 +67542,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                           W,
                           {
                             color: 'normal',
-                            dir: Object(J.j)(t.is_rtl),
+                            dir: Object(Z.j)(t.is_rtl),
                             numberOfLines: A.a.shouldLimitTextToSingleLine() ? 1 : 2,
                             type: 'description',
                           },
@@ -67553,14 +67562,17 @@ window.__SCRIPTS_LOADED__.i18n &&
               function (e) {
                 var t = e.link,
                   n = e.onClick
-                return E.a.createElement(X.a, { interactive: !1, link: t, onClick: n, style: fe.detailItemsWrapper }, c)
+                return E.a.createElement(
+                  ee.a,
+                  { interactive: !1, link: t, onClick: n, style: fe.detailItemsWrapper },
+                  c,
+                )
               },
             )
           },
           he = n('wpLu'),
-          ve = $.a.d58baa7e,
-          _e = $.a.c5954d30,
-          be = N.a.create(function (e) {
+          ve = X.a.c5954d30,
+          _e = N.a.create(function (e) {
             return {
               contentWrapper: { flexGrow: 1, flexShrink: 1, justifyContent: 'center' },
               attributionWrapper: { alignItems: 'flex-start' },
@@ -67572,7 +67584,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               innerRow: { flexDirection: 'row', flexShrink: 1 },
             }
           }),
-          ge = function (e) {
+          be = function (e) {
             var t = e.attribution,
               n = e.destination,
               r = e.memberCount,
@@ -67583,39 +67595,43 @@ window.__SCRIPTS_LOADED__.i18n &&
               var n = e.link,
                 c = e.onClick
               return E.a.createElement(
-                X.a,
+                ee.a,
                 {
                   interactive: !1,
                   link: n,
                   onClick: c,
-                  style: [be.contentWrapper, be.wrapperPadding, be.bottomPadding, i],
+                  style: [_e.contentWrapper, _e.wrapperPadding, _e.bottomPadding, i],
                 },
                 E.a.createElement(
                   F.a,
-                  { style: [be.innerRow, be.spaceBelow] },
+                  { style: [_e.innerRow, _e.spaceBelow] },
                   E.a.createElement(
                     de.a,
                     null,
                     E.a.createElement(
                       q.b,
                       { color: 'gray700', size: 'subtext2', weight: 'bold' },
-                      E.a.createElement(he.a, { style: be.icon }),
-                      _e,
+                      E.a.createElement(he.a, { style: _e.icon }),
+                      ve,
                     ),
                     E.a.createElement(
                       q.b,
                       { color: 'gray700', size: 'subtext2' },
-                      E.a.createElement($.a.I18NFormatMessage, { $i18n: 'd6b02328', formattedCount: ve(r), count: r }),
+                      E.a.createElement(X.a.I18NFormatMessage, {
+                        $i18n: 'd6b02328',
+                        formattedCount: Object($.c)(r),
+                        count: r,
+                      }),
                     ),
                   ),
                 ),
                 E.a.createElement(
                   F.a,
-                  { style: be.spaceBelow },
+                  { style: _e.spaceBelow },
                   E.a.createElement(
                     W,
                     {
-                      dir: Object(J.j)(a.is_rtl),
+                      dir: Object(Z.j)(a.is_rtl),
                       numberOfLines: A.a.shouldLimitTextToSingleLine() ? 1 : o,
                       type: 'title',
                       weight: 'bold',
@@ -67632,21 +67648,21 @@ window.__SCRIPTS_LOADED__.i18n &&
                   profileImageUrl: t.profile_image_url_https,
                   screenName: t.screen_name,
                   screenNameSize: 'subtext2',
-                  style: be.attributionWrapper,
+                  style: _e.attributionWrapper,
                   withLink: !1,
                 }),
               )
             })
           },
-          ye = n('9Xij'),
-          Ee = n('a6qo'),
-          we = n('8WKW'),
-          Te = n('mXq/'),
-          Se = n('0wXR'),
-          Oe = n('PU7B'),
-          Ie = n('GcQN'),
-          Ce = 'image',
-          ke = (function (e) {
+          ge = n('9Xij'),
+          ye = n('a6qo'),
+          Ee = n('8WKW'),
+          we = n('mXq/'),
+          Te = n('0wXR'),
+          Se = n('PU7B'),
+          Oe = n('GcQN'),
+          Ie = 'image',
+          Ce = (function (e) {
             m()(n, e)
             var t = v()(n)
             function n(e) {
@@ -67679,7 +67695,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   key: 'render',
                   value: function () {
                     var e = this
-                    return E.a.createElement(Qt.Context.Consumer, null, function (t) {
+                    return E.a.createElement(Kt.Context.Consumer, null, function (t) {
                       return e.props.enableDestinationWrapper
                         ? e._renderDestinationWrapper(t)
                         : e.shouldRenderImage
@@ -67701,17 +67717,17 @@ window.__SCRIPTS_LOADED__.i18n &&
                       u = a.destination,
                       l = a.mediaEntity,
                       d = a.style,
-                      p = Object(J.n)(l),
-                      f = p && Object(we.g)(o()(o()({}, p.rgb), {}, { alpha: 1 })),
+                      p = Object(Z.n)(l),
+                      f = p && Object(Ee.g)(o()(o()({}, p.rgb), {}, { alpha: 1 })),
                       m = i ? {} : { backgroundColor: f },
-                      h = [d, Ae.root, m],
-                      v = [Ae.root, Ae.mediaMissing],
+                      h = [d, ke.root, m],
+                      v = [ke.root, ke.mediaMissing],
                       _ = this.shouldRenderImage ? h : v
-                    return E.a.createElement(M, { componentType: s || Ce, destinationKey: u }, function (n) {
+                    return E.a.createElement(M, { componentType: s || Ie, destinationKey: u }, function (n) {
                       var i = n.link,
                         a = n.onClick
                       return E.a.createElement(
-                        X.a,
+                        ee.a,
                         { accessibilityHidden: c, interactive: !1, link: i, onClick: a, style: _ },
                         t.shouldRenderImage ? (r ? t._renderIcon('media') : t._renderImage(e)) : t._renderIcon('news'),
                       )
@@ -67759,17 +67775,17 @@ window.__SCRIPTS_LOADED__.i18n &&
                   key: '_renderIcon',
                   value: function (e) {
                     return E.a.createElement(
-                      ye.a,
+                      ge.a,
                       { ratio: this.props.ratio || 1 },
                       E.a.createElement(
                         F.a,
-                        { style: [Ae.image, Ae.mediaMissingIconContainer] },
+                        { style: [ke.image, ke.mediaMissingIconContainer] },
                         (function () {
                           switch (e) {
                             case 'media':
-                              return E.a.createElement(Se.a, { style: Ae.offIcon })
+                              return E.a.createElement(Te.a, { style: ke.offIcon })
                             case 'news':
-                              return E.a.createElement(Oe.a, { style: Ae.newsIcon })
+                              return E.a.createElement(Se.a, { style: ke.newsIcon })
                             default:
                               return null
                           }
@@ -67787,11 +67803,11 @@ window.__SCRIPTS_LOADED__.i18n &&
                     if (!t) return null
                     switch (t.type) {
                       case P.h.MOMENTS:
-                        return E.a.createElement(Ee.a, { align: 'left', square: !0 }, E.a.createElement(Ie.a, null))
+                        return E.a.createElement(ye.a, { align: 'left', square: !0 }, E.a.createElement(Oe.a, null))
                       case P.h.PLAY:
-                        return E.a.createElement(F.a, { style: Ae.playOverlay }, E.a.createElement(Te.a, { size: n }))
+                        return E.a.createElement(F.a, { style: ke.playOverlay }, E.a.createElement(we.a, { size: n }))
                       case P.h.LABEL:
-                        return E.a.createElement(Ee.a, { align: 'left' }, t.text)
+                        return E.a.createElement(ye.a, { align: 'left' }, t.text)
                       default:
                         return null
                     }
@@ -67801,8 +67817,8 @@ window.__SCRIPTS_LOADED__.i18n &&
               n
             )
           })(E.a.Component)
-        b()(ke, 'defaultProps', { playOverlaySize: 'small', componentType: Ce, enableDestinationWrapper: !0 })
-        var Ae = N.a.create(function (e) {
+        b()(Ce, 'defaultProps', { playOverlaySize: 'small', componentType: Ie, enableDestinationWrapper: !0 })
+        var ke = N.a.create(function (e) {
             return {
               root: { width: '100%', overflow: 'hidden' },
               image: { width: '100%', height: '100%' },
@@ -67820,9 +67836,9 @@ window.__SCRIPTS_LOADED__.i18n &&
               offIcon: { color: e.colors.white, opacity: 0.3, height: '40%' },
             }
           }),
-          Re = ke,
-          xe = n('bPFD')
-        var Le = function (e) {
+          Ae = Ce,
+          Re = n('bPFD')
+        var xe = function (e) {
             var t = e.accessibilityHidden,
               n = e.forcedMediaAspectRatio,
               r = e.hideImageDataSaverOverlay,
@@ -67842,7 +67858,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 h = m.height,
                 v = m.width,
                 _ = n || l || (p ? Math.max(v / h, 1) : void 0)
-              return E.a.createElement(Re, {
+              return E.a.createElement(Ae, {
                 accessibilityHidden: t,
                 destination: u ? d : void 0,
                 hideImageDataSaverOverlay: r,
@@ -67855,9 +67871,9 @@ window.__SCRIPTS_LOADED__.i18n &&
             }
             return 'iframe' === p.type
               ? E.a.createElement(
-                  ye.a,
+                  ge.a,
                   { ratio: Math.max(p.aspect_ratio, 1) },
-                  E.a.createElement(xe.a, { src: p.url, style: Pe.iframe }),
+                  E.a.createElement(Re.a, { src: p.url, style: Le.iframe }),
                 )
               : ('video' === p.type ||
                   'uc_video' === p.type ||
@@ -67865,21 +67881,20 @@ window.__SCRIPTS_LOADED__.i18n &&
                   'vine' === p.type ||
                   'tweet_video' === p.type) &&
                 c
-              ? E.a.createElement(Qt.Context.Consumer, null, function (e) {
+              ? E.a.createElement(Kt.Context.Consumer, null, function (e) {
                   var t = e.isDataSaverEnabled,
                     n = e.isPromoted
                   return c(p, t ? (n ? 'suboptimal' : 'preview') : void 0)
                 })
               : null
           },
-          Pe = N.a.create({ iframe: { height: '100%' } }),
-          De = n('855f'),
-          je = n('RhWx'),
-          Me = n.n(je),
-          Ne = n('6Rrp'),
-          Fe = $.a.e86732e3,
-          Ue = $.a.f668e928,
-          Be = N.a.create(function (e) {
+          Le = N.a.create({ iframe: { height: '100%' } }),
+          Pe = n('RhWx'),
+          De = n.n(Pe),
+          je = n('6Rrp'),
+          Me = X.a.e86732e3,
+          Ne = X.a.f668e928,
+          Fe = N.a.create(function (e) {
             return {
               choice: {
                 alignItems: 'center',
@@ -67902,7 +67917,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               choicePercentage: { paddingStart: e.spaces.space12 },
             }
           }),
-          He = function (e) {
+          Ue = function (e) {
             var t = e.isFinal,
               n = e.isSelected,
               r = e.isWinner,
@@ -67916,31 +67931,31 @@ window.__SCRIPTS_LOADED__.i18n &&
               d = o / 100
             return E.a.createElement(
               F.a,
-              { style: Be.choice },
+              { style: Fe.choice },
               E.a.createElement(F.a, {
                 style: [
-                  Be.choicePercentageBar,
+                  Fe.choicePercentageBar,
                   l && { backgroundColor: N.a.theme.colors.gray50 },
-                  (t || c || a) && Be.choicePercentageBarRoundCorners,
-                  r && Be.choicePercentageBarWinner,
+                  (t || c || a) && Fe.choicePercentageBarRoundCorners,
+                  r && Fe.choicePercentageBarWinner,
                   { width: u },
                 ],
               }),
               E.a.createElement(
                 F.a,
-                { style: Be.choiceLabel },
+                { style: Fe.choiceLabel },
                 E.a.createElement(
                   q.b,
                   { weight: s },
                   i,
                   n ? ' ' : null,
-                  n ? E.a.createElement(Ne.a, { accessibilityLabel: Fe }) : null,
+                  n ? E.a.createElement(je.a, { accessibilityLabel: Me }) : null,
                 ),
               ),
-              E.a.createElement(F.a, { style: Be.choicePercentage }, E.a.createElement(q.b, { weight: s }, Ue(d))),
+              E.a.createElement(F.a, { style: Fe.choicePercentage }, E.a.createElement(q.b, { weight: s }, Ne(d))),
             )
           },
-          ze = (function (e) {
+          Be = (function (e) {
             m()(n, e)
             var t = v()(n)
             function n() {
@@ -67957,7 +67972,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       r = t.totalVotes,
                       i = Math.max.apply(
                         Math,
-                        Me()(
+                        De()(
                           n.map(function (e) {
                             return e.count
                           }),
@@ -67969,7 +67984,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       n.map(function (t, n) {
                         return E.a.createElement(
                           F.a,
-                          { accessibilityRole: 'listitem', key: t.index, style: 0 !== n && Ve.topMargin },
+                          { accessibilityRole: 'listitem', key: t.index, style: 0 !== n && He.topMargin },
                           e._renderChoiceResult(t, r, i),
                         )
                       }),
@@ -67983,7 +67998,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       i = r.isFinal,
                       a = r.selectedChoice,
                       o = Math.round((e.count / t) * 1e3) / 10 || 0
-                    return E.a.createElement(He, {
+                    return E.a.createElement(Ue, {
                       isFinal: i,
                       isSelected: a === e.index,
                       isWinner: i && e.count === n,
@@ -67997,21 +68012,21 @@ window.__SCRIPTS_LOADED__.i18n &&
               n
             )
           })(E.a.Component),
-          Ve = N.a.create(function (e) {
+          He = N.a.create(function (e) {
             return { topMargin: { marginTop: e.spaces.space4 } }
           }),
-          qe = ze,
-          Ge = 'cardPoll',
-          We = n('876e'),
-          Ke = n('XurV'),
-          Ye = $.a.fe64170b,
-          Qe = $.a.g10ace37,
-          Je = $.a.a3edf99a,
-          Xe = $.a.c2b81e9c,
-          Ze = N.a.create(function (e) {
+          ze = Be,
+          Ve = 'cardPoll',
+          qe = n('876e'),
+          Ge = n('XurV'),
+          We = X.a.fe64170b,
+          Ke = X.a.g10ace37,
+          Ye = X.a.a3edf99a,
+          Qe = X.a.c2b81e9c,
+          Je = N.a.create(function (e) {
             return { pollDescription: { display: 'none' }, pollStatus: { marginTop: e.spaces.space12 } }
           }),
-          $e = function (e) {
+          Xe = function (e) {
             var t,
               n = e.choices,
               r = e.endDatetimeUtc,
@@ -68022,19 +68037,19 @@ window.__SCRIPTS_LOADED__.i18n &&
               s = e.style,
               u = e.totalVotes,
               l = e.votingDisabled,
-              d = Object(Ke.useOpaqueIdentifier)()
+              d = Object(Ge.useOpaqueIdentifier)()
             return E.a.createElement(
               F.a,
-              { style: s, testID: Ge },
+              { style: s, testID: Ve },
               c || a || i
-                ? E.a.createElement(qe, { choices: n, isFinal: a, selectedChoice: c, totalVotes: u })
+                ? E.a.createElement(ze, { choices: n, isFinal: a, selectedChoice: c, totalVotes: u })
                 : E.a.createElement(
                     E.a.Fragment,
                     null,
-                    E.a.createElement(q.b, { nativeID: d, style: Ze.pollDescription }, Ye),
+                    E.a.createElement(q.b, { nativeID: d, style: Je.pollDescription }, We),
                     E.a.createElement(V, {
                       accessibilityDescribedBy: d,
-                      accessibilityLabel: Qe,
+                      accessibilityLabel: Ke,
                       accessibilityRole: 'radiogroup',
                       buttonSize: 'DEPRECATED_normalCompact',
                       buttons: n.map(function (e) {
@@ -68048,20 +68063,20 @@ window.__SCRIPTS_LOADED__.i18n &&
                   ),
               E.a.createElement(
                 q.b,
-                { color: 'gray700', size: o, style: Ze.pollStatus },
+                { color: 'gray700', size: o, style: Je.pollStatus },
                 E.a.createElement(
                   de.a,
                   null,
-                  E.a.createElement(q.b, null, Xe({ count: (t = u), formattedCount: Object(De.b)(t) })),
-                  E.a.createElement(q.b, null, a ? Je : We.a.getTimeLeftLabel(r)),
+                  E.a.createElement(q.b, null, Qe({ count: (t = u), formattedCount: Object($.b)(t) })),
+                  E.a.createElement(q.b, null, a ? Ye : qe.a.getTimeLeftLabel(r)),
                 ),
               ),
             )
           },
-          et = n('htQn'),
-          tt = n('ONCy'),
-          nt = n('A8Te'),
-          rt = function (e, t) {
+          Ze = n('htQn'),
+          $e = n('ONCy'),
+          et = n('A8Te'),
+          tt = function (e, t) {
             var n = t.createBoundRenderVideoPlayer,
               r = t.currentSlide,
               i = t.forcedMediaAspectRatio,
@@ -68090,7 +68105,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     accessibilityHidden: !f,
                     key: o.id,
                     onLayout: e(_),
-                    style: [at.video, 'first' === u && at.firstImage, 'last' === u && at.lastImage],
+                    style: [rt.video, 'first' === u && rt.firstImage, 'last' === u && rt.lastImage],
                     testID: 'videoContainer',
                   },
                   g(),
@@ -68100,7 +68115,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             return E.a.createElement(
               F.a,
               { key: o.id, onLayout: e(_) },
-              E.a.createElement(Re, {
+              E.a.createElement(Ae, {
                 accessibilityHidden: !f,
                 componentType: 'swipeable_media',
                 destination: m ? p : void 0,
@@ -68109,11 +68124,11 @@ window.__SCRIPTS_LOADED__.i18n &&
                 overlay: o.overlay,
                 playOverlaySize: s,
                 ratio: i,
-                style: [at.video, 'first' === u && at.firstImage, 'last' === u && at.lastImage],
+                style: [rt.video, 'first' === u && rt.firstImage, 'last' === u && rt.lastImage],
               }),
             )
           },
-          it = function (e) {
+          nt = function (e) {
             var t,
               n = e.playOverlaySize,
               r = e.renderVideoPlayer,
@@ -68138,7 +68153,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               d = null === (t = i[0]) || void 0 === t ? void 0 : t.media_entity
             return 'photo' !== d.type && 'uc_video' !== d.type
               ? null
-              : E.a.createElement(nt.b, {
+              : E.a.createElement(et.b, {
                   getClientEventData: function (e) {
                     return { currentMediaIndex: e.currentIndex + 1, previousMediaIndex: e.previousIndex + 1 }
                   },
@@ -68151,21 +68166,21 @@ window.__SCRIPTS_LOADED__.i18n &&
                   playOverlaySize: n,
                   renderSlide: function () {
                     for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++) t[n] = arguments[n]
-                    return rt.apply(void 0, [u].concat(t))
+                    return tt.apply(void 0, [u].concat(t))
                   },
                   renderVideoPlayer: r,
                 })
           },
-          at = N.a.create(function (e) {
+          rt = N.a.create(function (e) {
             return {
               video: { overflow: 'hidden', maxHeight: '100%' },
               firstImage: { borderTopLeftRadius: e.borderRadii.xLarge },
               lastImage: { borderTopRightRadius: e.borderRadii.xLarge },
             }
           }),
-          ot = n('Pt08'),
-          ct = Object.freeze({ CONTROL: 'control', GRAY_DETAILS: 'gray_details' }),
-          st = (function (e) {
+          it = n('Pt08'),
+          at = Object.freeze({ CONTROL: 'control', GRAY_DETAILS: 'gray_details' }),
+          ot = (function (e) {
             m()(n, e)
             var t = v()(n)
             function n(e) {
@@ -68174,10 +68189,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                 s()(this, n),
                 (r = t.call(this, e)),
                 b()(p()(r), '_mounted', !0),
-                b()(p()(r), 'cardDetailNativeId', Object(Ke.createOpaqueIdentifier)()),
-                b()(p()(r), 'cardMediaNativeId', Object(Ke.createOpaqueIdentifier)()),
+                b()(p()(r), 'cardDetailNativeId', Object(Ge.createOpaqueIdentifier)()),
+                b()(p()(r), 'cardMediaNativeId', Object(Ge.createOpaqueIdentifier)()),
                 b()(p()(r), '_updateSizes', function (e) {
-                  if (r._mounted && Object(ot.e)(r._previousWidth, e)) {
+                  if (r._mounted && Object(it.e)(r._previousWidth, e)) {
                     r._previousWidth = e
                     var t = r.props,
                       n = t.buttons,
@@ -68187,7 +68202,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       c = a.descriptionMaxLines,
                       s = a.playOverlaySize,
                       u = a.titleMaxLines,
-                      l = Object(ot.a)({
+                      l = Object(it.a)({
                         hasButtons: !!n,
                         details: i,
                         titleMaxLines: u,
@@ -68207,8 +68222,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                   e && r._updateSizes(e.clientWidth)
                 }),
                 (r.state = o()(
-                  o()({}, Object(tt.a)(e.details ? Object(ot.d)('large', 500, e.details) : null)),
-                  Object(tt.a)(e.buttons ? { buttonSize: Object(ot.b)(500) } : null),
+                  o()({}, Object($e.a)(e.details ? Object(it.d)('large', 500, e.details) : null)),
+                  Object($e.a)(e.buttons ? { buttonSize: Object(it.b)(500) } : null),
                 )),
                 r
               )
@@ -68243,16 +68258,16 @@ window.__SCRIPTS_LOADED__.i18n &&
                       v = !n && !f,
                       _ = n && !f,
                       b = !!(u || t || r) && !f,
-                      g = a === ct.GRAY_DETAILS
+                      g = a === at.GRAY_DETAILS
                     return E.a.createElement(
-                      et.a,
+                      Ze.a,
                       {
                         accessibilityLabelledBy: [this.cardMediaNativeId, this.cardDetailNativeId],
                         nativeID: c,
                         onHoverIn: s,
                         onLayout: this._handleLayout,
                         onPressIn: s,
-                        style: [i && lt[i], v && lt.border, p && ut[p], f && lt.rootWithCarousel, g && lt.grayDetails],
+                        style: [i && st[i], v && st.border, p && ct[p], f && st.rootWithCarousel, g && st.grayDetails],
                         testID: null == l ? void 0 : l.wrapper,
                         viewRef: this._setRootNode,
                         withFocusWithinFocusRing: !0,
@@ -68266,11 +68281,11 @@ window.__SCRIPTS_LOADED__.i18n &&
                               accessibilityHidden: !0,
                               nativeID: this.cardMediaNativeId,
                               style: [
-                                lt.media,
-                                _ && lt.border,
-                                b && lt.mediaBottomBorder,
-                                h && lt.mediaBottomSpace,
-                                !!r && ut.both,
+                                st.media,
+                                _ && st.border,
+                                b && st.mediaBottomBorder,
+                                h && st.mediaBottomSpace,
+                                !!r && ct.both,
                               ],
                               testID: null == l ? void 0 : l.layoutLarge.media,
                             },
@@ -68279,7 +68294,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         : null,
                       E.a.createElement(
                         F.a,
-                        { nativeID: this.cardDetailNativeId, style: f && lt.carouselBottomContent },
+                        { nativeID: this.cardDetailNativeId, style: f && st.carouselBottomContent },
                         this._renderDetail(),
                         this._renderDetailWithMiddotGroup(),
                         this._renderCommunityDetail(),
@@ -68378,7 +68393,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       r = e.destination,
                       i = e.memberCount,
                       a = e.title
-                    return E.a.createElement(ge, {
+                    return E.a.createElement(be, {
                       attribution: n,
                       destination: r,
                       memberCount: i,
@@ -68401,7 +68416,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   key: '_renderPoll',
                   value: function () {
                     var e = this.props.poll
-                    return e ? E.a.createElement($e, e) : null
+                    return e ? E.a.createElement(Xe, e) : null
                   },
                 },
                 {
@@ -68411,7 +68426,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       t = e.renderVideoPlayer,
                       n = e.swipeableMedia
                     return n
-                      ? E.a.createElement(it, {
+                      ? E.a.createElement(nt, {
                           playOverlaySize: this.state.playOverlaySize,
                           renderVideoPlayer: t,
                           swipeableMedia: n,
@@ -68427,27 +68442,27 @@ window.__SCRIPTS_LOADED__.i18n &&
                       n = e.media,
                       r = e.renderVideoPlayer,
                       i = this.state.playOverlaySize
-                    return E.a.createElement(Le, { locationKey: t, media: n, playOverlaySize: i, renderVideoPlayer: r })
+                    return E.a.createElement(xe, { locationKey: t, media: n, playOverlaySize: i, renderVideoPlayer: r })
                   },
                 },
               ]),
               n
             )
           })(E.a.Component)
-        b()(st, 'defaultProps', {
-          highlightDetailsExperimentBucket: ct.CONTROL,
+        b()(ot, 'defaultProps', {
+          highlightDetailsExperimentBucket: at.CONTROL,
           isPromoted: !1,
           withInteractiveStyling: !0,
         }),
-          (st.propTypes = {})
-        var ut = N.a.create(function (e) {
+          (ot.propTypes = {})
+        var ct = N.a.create(function (e) {
             return {
               both: { borderBottomRightRadius: e.borderRadii.none, borderBottomLeftRadius: e.borderRadii.none },
               left: { borderBottomLeftRadius: e.borderRadii.none },
               right: { borderBottomRightRadius: e.borderRadii.none },
             }
           }),
-          lt = N.a.create(function (e) {
+          st = N.a.create(function (e) {
             return {
               grayDetails: { backgroundColor: e.colors.gray50 },
               media: { display: 'block' },
@@ -68477,12 +68492,12 @@ window.__SCRIPTS_LOADED__.i18n &&
               received: { borderColor: e.colors.gray200 },
             }
           }),
-          dt = st,
-          pt = $.a.hdf426f5,
-          ft = $.a.a3efd2c3,
-          mt = $.a.b91c8e53,
-          ht = $.a.b3826294,
-          vt = (function (e) {
+          ut = ot,
+          lt = X.a.hdf426f5,
+          dt = X.a.a3efd2c3,
+          pt = X.a.b91c8e53,
+          ft = X.a.b3826294,
+          mt = (function (e) {
             m()(n, e)
             var t = v()(n)
             function n(e) {
@@ -68490,23 +68505,23 @@ window.__SCRIPTS_LOADED__.i18n &&
               s()(this, n),
                 (r = t.call(this, e)),
                 b()(p()(r), '_mounted', !0),
-                b()(p()(r), 'cardDetailNativeId', Object(Ke.createOpaqueIdentifier)()),
-                b()(p()(r), 'cardMediaNativeId', Object(Ke.createOpaqueIdentifier)()),
+                b()(p()(r), 'cardDetailNativeId', Object(Ge.createOpaqueIdentifier)()),
+                b()(p()(r), 'cardMediaNativeId', Object(Ge.createOpaqueIdentifier)()),
                 b()(p()(r), '_composeTopicCardAccessibilityLabel', function (e, t) {
                   return t && t.content && t.content.length > 0
-                    ? ht({ title: e.content, description: t.content })
-                    : mt({ title: e.content })
+                    ? ft({ title: e.content, description: t.content })
+                    : pt({ title: e.content })
                 }),
                 b()(p()(r), '_updateSizes', function (e) {
-                  if (r._mounted && Object(ot.e)(r._previousWidth, e)) {
+                  if (r._mounted && Object(it.e)(r._previousWidth, e)) {
                     r._previousWidth = e
                     var t = r.state,
                       n = t.descriptionMaxLines,
                       i = t.imageWidthStyle,
                       a = t.titleMaxLines,
                       o = r.props.details,
-                      c = Object(ot.d)('small', e, o, r._getLinesForWidthOptions()),
-                      s = Object(ot.c)(e, o),
+                      c = Object(it.d)('small', e, o, r._getLinesForWidthOptions()),
+                      s = Object(it.c)(e, o),
                       u = c.descriptionMaxLines,
                       l = c.titleMaxLines
                     ;(s === i && l === a && u === n) ||
@@ -68525,10 +68540,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                   return o()({ alwaysShowDescription: e }, e ? { capMaxTitleLines: 2 } : null)
                 })
               var i = e.details,
-                a = Object(ot.d)('small', 500, i, r._getLinesForWidthOptions()),
+                a = Object(it.d)('small', 500, i, r._getLinesForWidthOptions()),
                 c = a.descriptionMaxLines,
                 u = a.titleMaxLines
-              return (r.state = { descriptionMaxLines: c, titleMaxLines: u, imageWidthStyle: Object(ot.c)(500, i) }), r
+              return (r.state = { descriptionMaxLines: c, titleMaxLines: u, imageWidthStyle: Object(it.c)(500, i) }), r
             }
             return (
               l()(n, [
@@ -68553,7 +68568,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       u = this.state.imageWidthStyle,
                       l = E.a.createElement(
                         F.a,
-                        { key: 'details', style: bt.details },
+                        { key: 'details', style: vt.details },
                         n ? this._renderTopicDetail() : this._renderDetail(),
                       ),
                       d = E.a.createElement(
@@ -68562,20 +68577,20 @@ window.__SCRIPTS_LOADED__.i18n &&
                           accessibilityHidden: !0,
                           key: 'media',
                           nativeID: this.cardMediaNativeId,
-                          style: [bt.media, { width: u }, s && _t[s], a ? bt.mediaLeftBorder : bt.mediaRightBorder],
+                          style: [vt.media, { width: u }, s && ht[s], a ? vt.mediaLeftBorder : vt.mediaRightBorder],
                           testID: null == o ? void 0 : o.layoutSmall.media,
                         },
                         this._renderMedia(),
                       )
                     return E.a.createElement(
-                      et.a,
+                      Ze.a,
                       {
                         accessibilityLabelledBy: [this.cardMediaNativeId, this.cardDetailNativeId],
                         nativeID: r,
                         onHoverIn: i,
                         onLayout: this._handleLayout,
                         onPressIn: i,
-                        style: [bt.root, s && _t[s], t && bt[t]],
+                        style: [vt.root, s && ht[s], t && vt[t]],
                         testID: null == o ? void 0 : o.wrapper,
                         viewRef: this._setRootNode,
                         withFocusWithinFocusRing: !0,
@@ -68624,7 +68639,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       o = r.title,
                       c = {
                         is_rtl: (null == i ? void 0 : i.is_rtl) || (null == o ? void 0 : o.is_rtl),
-                        content: i && i.content ? pt({ description: i.content }) : ft,
+                        content: i && i.content ? lt({ description: i.content }) : dt,
                       }
                     return E.a.createElement(le, {
                       accessibilityLabel: o ? this._composeTopicCardAccessibilityLabel(o, i) : void 0,
@@ -68648,11 +68663,11 @@ window.__SCRIPTS_LOADED__.i18n &&
                       a = n.overlay
                     return i && 'photo' !== i.type
                       ? null
-                      : E.a.createElement(Qt.Context.Consumer, null, function (e) {
+                      : E.a.createElement(Kt.Context.Consumer, null, function (e) {
                           var n = e.isDataSaverEnabled,
                             o = e.isPromoted,
                             c = n && !o
-                          return E.a.createElement(Re, {
+                          return E.a.createElement(Ae, {
                             destination: r,
                             locationKey: t && ''.concat(t, '-smallCard'),
                             mediaEntity: i,
@@ -68667,15 +68682,15 @@ window.__SCRIPTS_LOADED__.i18n &&
               n
             )
           })(E.a.Component)
-        b()(vt, 'defaultProps', { withInteractiveStyling: !0 }), (vt.propTypes = {})
-        var _t = N.a.create(function (e) {
+        b()(mt, 'defaultProps', { withInteractiveStyling: !0 }), (mt.propTypes = {})
+        var ht = N.a.create(function (e) {
             return {
               both: { borderBottomRightRadius: e.borderRadii.none, borderBottomLeftRadius: e.borderRadii.none },
               left: { borderBottomLeftRadius: e.borderRadii.none },
               right: { borderBottomRightRadius: e.borderRadii.none },
             }
           }),
-          bt = N.a.create(function (e) {
+          vt = N.a.create(function (e) {
             return {
               root: {
                 borderColor: e.colors.nestedBorderColor,
@@ -68706,13 +68721,13 @@ window.__SCRIPTS_LOADED__.i18n &&
               received: { borderColor: e.colors.gray200 },
             }
           }),
-          gt = vt,
-          yt = 'calc('
+          _t = mt,
+          bt = 'calc('
             .concat(N.a.theme.spaces.space80, ' + ')
             .concat(N.a.theme.spaces.space48, ' + ')
             .concat(N.a.theme.spaces.space4, ')'),
-          Et = 'calc('.concat(N.a.theme.spaces.space40, ' + ').concat(N.a.theme.spaces.space20, ')'),
-          wt = N.a.create(function (e) {
+          gt = 'calc('.concat(N.a.theme.spaces.space40, ' + ').concat(N.a.theme.spaces.space20, ')'),
+          yt = N.a.create(function (e) {
             return {
               root: {
                 borderColor: e.colors.nestedBorderColor,
@@ -68725,7 +68740,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               mobileLayout: { flexDirection: 'column', width: '100%' },
               media: {
                 alignSelf: 'flex-start',
-                borderColor: Object(we.c)(N.a.theme.colors.borderColor, 0.7),
+                borderColor: Object(Ee.c)(N.a.theme.colors.borderColor, 0.7),
                 borderRadius: e.borderRadii.medium,
                 borderWidth: e.borderWidths.small,
                 display: 'block',
@@ -68744,7 +68759,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               bottomPadding: { paddingBottom: e.spaces.space12 },
             }
           }),
-          Tt = function (e) {
+          Et = function (e) {
             var t = e.button,
               n = e.detailsWithMiddotGroup,
               r = e.locationKey,
@@ -68767,10 +68782,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                 })
               },
               m = function (e) {
-                var t = e ? Et : yt
+                var t = e ? gt : bt
                 return E.a.createElement(
                   F.a,
-                  { accessibilityHidden: !0, style: [wt.media, { width: t }], testID: 'mediaContainer' },
+                  { accessibilityHidden: !0, style: [yt.media, { width: t }], testID: 'mediaContainer' },
                   (function () {
                     var e = i || {},
                       t = e.destination,
@@ -68778,11 +68793,11 @@ window.__SCRIPTS_LOADED__.i18n &&
                       a = e.overlay
                     return n && 'photo' !== n.type
                       ? null
-                      : E.a.createElement(Qt.Context.Consumer, null, function (e) {
+                      : E.a.createElement(Kt.Context.Consumer, null, function (e) {
                           var i = e.isDataSaverEnabled,
                             o = e.isPromoted,
                             c = i && !o
-                          return E.a.createElement(Re, {
+                          return E.a.createElement(Ae, {
                             destination: t,
                             locationKey: r && ''.concat(r, '-smallCardWithButton'),
                             mediaEntity: n,
@@ -68796,7 +68811,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
               h = function (e) {
                 return t
-                  ? E.a.createElement(V, { buttons: [t], style: [wt.buttonPadding, !e && wt.buttonLeftAlign] })
+                  ? E.a.createElement(V, { buttons: [t], style: [yt.buttonPadding, !e && yt.buttonLeftAlign] })
                   : null
               },
               v = function () {
@@ -68808,14 +68823,14 @@ window.__SCRIPTS_LOADED__.i18n &&
                         var n = e.link,
                           r = e.onClick
                         return E.a.createElement(
-                          X.a,
+                          ee.a,
                           { interactive: !1, link: n, onClick: r },
                           E.a.createElement(
                             F.a,
-                            { style: [wt.descriptionMobileLayout, !t && wt.bottomPadding] },
+                            { style: [yt.descriptionMobileLayout, !t && yt.bottomPadding] },
                             E.a.createElement(
                               W,
-                              { color: 'normal', dir: Object(J.j)(u.is_rtl), numberOfLines: 3, type: 'description' },
+                              { color: 'normal', dir: Object(Z.j)(u.is_rtl), numberOfLines: 3, type: 'description' },
                               u.content,
                             ),
                           ),
@@ -68827,12 +68842,12 @@ window.__SCRIPTS_LOADED__.i18n &&
             return E.a.createElement(pe.a, null, function (e) {
               var t = e.windowWidth <= N.a.theme.breakpoints.small
               return E.a.createElement(
-                et.a,
+                Ze.a,
                 {
                   nativeID: a,
                   onHoverIn: o,
                   onPressIn: o,
-                  style: [wt.root, t ? wt.mobileLayout : wt.desktopLayout],
+                  style: [yt.root, t ? yt.mobileLayout : yt.desktopLayout],
                   testID: null == c ? void 0 : c.wrapper,
                   withFocusWithinFocusRing: !0,
                   withInteractiveStyling: s,
@@ -68848,20 +68863,20 @@ window.__SCRIPTS_LOADED__.i18n &&
                         null,
                         E.a.createElement(
                           F.a,
-                          { style: wt.detailsImageContainer },
-                          E.a.createElement(F.a, { style: wt.details }, t),
+                          { style: yt.detailsImageContainer },
+                          E.a.createElement(F.a, { style: yt.details }, t),
                           n,
                         ),
                         v(),
                         r,
                       )
-                    : E.a.createElement(E.a.Fragment, null, E.a.createElement(F.a, { style: wt.details }, t, r), n)
+                    : E.a.createElement(E.a.Fragment, null, E.a.createElement(F.a, { style: yt.details }, t, r), n)
                 })(t),
               )
             })
           },
-          St = n('0eWs'),
-          Ot =
+          wt = n('0eWs'),
+          Tt =
             (n('jwue'),
             n('7x/C'),
             n('+oxZ'),
@@ -68884,13 +68899,13 @@ window.__SCRIPTS_LOADED__.i18n &&
                   }
               }
             }),
-          It = function (e, t, n) {
+          St = function (e, t, n) {
             return 'destination_key_'.concat(e, '_').concat(t, '_').concat(n)
           },
-          Ct = function (e, t, n) {
+          Ot = function (e, t, n) {
             return ''.concat(e, '_').concat(t, '_').concat(n)
           },
-          kt =
+          It =
             (n('TJCb'),
             n('DZ+c'),
             n('lZm3'),
@@ -68901,10 +68916,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                 i = e.componentIndex,
                 a = e.slideIndex,
                 o = {},
-                c = It(a, i, 0),
-                s = r.destination_obj ? Ot(r.destination_obj) : {}
+                c = St(a, i, 0),
+                s = r.destination_obj ? Tt(r.destination_obj) : {}
               o[c] = s
-              var u = Ct('media', a, i),
+              var u = Ot('media', a, i),
                 l = [u],
                 d = {},
                 p = { type: P.d.MEDIA, data: { destination: c, id: r.media.media_id } }
@@ -68995,7 +69010,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 componentsData: d,
               }
             }),
-          At = function (e) {
+          Ct = function (e) {
             var t,
               n,
               r,
@@ -69032,7 +69047,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                           n = e.componentIndex,
                           r = e.slideIndex,
                           i = {},
-                          a = Ct('button_group', r, n),
+                          a = Ot('button_group', r, n),
                           o = {
                             type: P.d.BUTTON_GROUP,
                             data: {
@@ -69041,8 +69056,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                                   o,
                                   c,
                                   s = null === (a = e.destination_obj) || void 0 === a ? void 0 : a.__typename,
-                                  u = It(r, n, t),
-                                  l = e.destination_obj ? Ot(e.destination_obj) : {}
+                                  u = St(r, n, t),
+                                  l = e.destination_obj ? Tt(e.destination_obj) : {}
                                 return (
                                   (i[u] = l),
                                   {
@@ -69079,12 +69094,12 @@ window.__SCRIPTS_LOADED__.i18n &&
                     case 'CardDetailsComponent':
                       break
                     case 'CardMediaComponent':
-                      r = kt({ component: e, slideIndex: n, componentIndex: t })
+                      r = It({ component: e, slideIndex: n, componentIndex: t })
                   }
                   return (
                     (u.componentsData = o()(o()({}, u.componentsData), r.componentsData)),
-                    (u.componentKeys = [].concat(Me()(u.componentKeys), Me()(r.componentKeys))),
-                    (u.staticComponentKeys = [].concat(Me()(u.staticComponentKeys), Me()(r.staticComponentKeys))),
+                    (u.componentKeys = [].concat(De()(u.componentKeys), De()(r.componentKeys))),
+                    (u.staticComponentKeys = [].concat(De()(u.staticComponentKeys), De()(r.staticComponentKeys))),
                     (u.destinationObjects = o()(o()({}, u.destinationObjects), r.destinationObjects)),
                     (u.mediaEntities = o()(o()({}, u.mediaEntities), r.mediaEntities)),
                     r.componentKeys[0]
@@ -69127,12 +69142,12 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             }
           },
-          Rt = n('K1iM'),
+          kt = n('K1iM'),
+          At = n.n(kt),
+          Rt = n('m3Bd'),
           xt = n.n(Rt),
-          Lt = n('m3Bd'),
-          Pt = n.n(Lt),
-          Dt = (n('7xRU'), n('hCOa'), n('87if'), n('JqK0')),
-          jt = N.a.create(function (e) {
+          Lt = (n('7xRU'), n('hCOa'), n('87if'), n('JqK0')),
+          Pt = N.a.create(function (e) {
             return {
               media: { display: 'block' },
               mediaBottomSpace: { marginBottom: e.spaces.space12 },
@@ -69148,7 +69163,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               overflowHidden: { overflow: 'hidden' },
             }
           }),
-          Mt = function (e) {
+          Dt = function (e) {
             var t = e.accessibilityHidden,
               n = e.card,
               r = e.cardWidth,
@@ -69173,17 +69188,17 @@ window.__SCRIPTS_LOADED__.i18n &&
               T = m ? n.components_data[m].type : void 0,
               S = 'media' === y.type,
               O = [
-                d && (!S || u) && jt.roundedTopLeft,
-                d && (!S || l) && jt.roundedTopRight,
-                s && (!S || u) && jt.roundedBottomLeft,
-                s && (!S || l) && jt.roundedBottomRight,
+                d && (!S || u) && Pt.roundedTopLeft,
+                d && (!S || l) && Pt.roundedTopRight,
+                s && (!S || u) && Pt.roundedBottomLeft,
+                s && (!S || l) && Pt.roundedBottomRight,
               ],
               I = n.destinations,
               C = n.media_entities,
               k = r < P.i ? 'small' : 'normal'
             if ('details' === y.type || 'topic_details' === y.type || 'app_store_details' === y.type) {
               var A = y.data,
-                R = Object(J.d)(r, I, A)
+                R = Object(Z.d)(r, I, A)
               return E.a.createElement(
                 le,
                 i()({}, A, R, {
@@ -69197,13 +69212,13 @@ window.__SCRIPTS_LOADED__.i18n &&
             }
             if ('twitter_list_details' === y.type) {
               var x = y.data,
-                L = Object(ot.d)('large', r, x).titleMaxLines
-              return E.a.createElement(ge, i()({}, x, { style: O, titleMaxLines: L }))
+                L = Object(it.d)('large', r, x).titleMaxLines
+              return E.a.createElement(be, i()({}, x, { style: O, titleMaxLines: L }))
             }
             if ('swipeable_media' === y.type) {
               if (!_) return null
-              var D = Object(J.p)(y.data.media_list, C)
-              w = E.a.createElement(it, { playOverlaySize: k, renderVideoPlayer: h, swipeableMedia: D })
+              var D = Object(Z.p)(y.data.media_list, C)
+              w = E.a.createElement(nt, { playOverlaySize: k, renderVideoPlayer: h, swipeableMedia: D })
             } else if ('media' === y.type) {
               var j,
                 M = y.data,
@@ -69213,9 +69228,9 @@ window.__SCRIPTS_LOADED__.i18n &&
                 H = M.id && C[M.id],
                 z = !1
               if (!b && 'uc_video' === (null === (j = H) || void 0 === j ? void 0 : j.type) && M.id)
-                (H = C[Object(Dt.b)(M.id)]), (z = !0)
+                (H = C[Object(Lt.b)(M.id)]), (z = !0)
               if (!H) return null
-              w = E.a.createElement(Le, {
+              w = E.a.createElement(xe, {
                 accessibilityHidden: t,
                 forcedMediaAspectRatio: c,
                 hideImageDataSaverOverlay: z,
@@ -69233,7 +69248,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 {
                   accessibilityHidden: !0,
                   nativeID: f,
-                  style: [jt.media, O, !q && jt.border, jt.overflowHidden, 'poll' === T && jt.mediaBottomSpace],
+                  style: [Pt.media, O, !q && Pt.border, Pt.overflowHidden, 'poll' === T && Pt.mediaBottomSpace],
                   testID: null == g ? void 0 : g.layoutLarge.media,
                 },
                 w,
@@ -69242,16 +69257,16 @@ window.__SCRIPTS_LOADED__.i18n &&
             if ('button_group' === y.type) {
               var G = y.data.buttons
               if (!G) return null
-              var W = Object(ot.b)(r)
+              var W = Object(it.b)(r)
               return E.a.createElement(V, { buttonSize: W, buttons: G, chromeless: a, style: O })
             }
             if ('poll' === y.type) {
               var K = y.data
-              return E.a.createElement($e, i()({}, K, { style: O }))
+              return E.a.createElement(Xe, i()({}, K, { style: O }))
             }
             return null
           },
-          Nt = [
+          jt = [
             'componentNames',
             'isCurrentSlide',
             'isFirst',
@@ -69261,10 +69276,10 @@ window.__SCRIPTS_LOADED__.i18n &&
             'shouldRenderSwipeableMedia',
             'withInteractiveStyling',
           ],
-          Ft = function (e, t) {
-            return Object(ot.e)(e, t) ? t : e
+          Mt = function (e, t) {
+            return Object(it.e)(e, t) ? t : e
           },
-          Ut = N.a.create(function (e) {
+          Nt = N.a.create(function (e) {
             return {
               container: { flexGrow: 1, alignItems: 'space-between' },
               containerWithChrome: {
@@ -69273,7 +69288,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             }
           }),
-          Bt = function (e) {
+          Ft = function (e) {
             var t,
               n = e.componentNames,
               r = e.isCurrentSlide,
@@ -69283,8 +69298,8 @@ window.__SCRIPTS_LOADED__.i18n &&
               s = e.onLikelyInteraction,
               u = e.shouldRenderSwipeableMedia,
               l = e.withInteractiveStyling,
-              d = Pt()(e, Nt),
-              p = E.a.useReducer(Ft, 0),
+              d = xt()(e, jt),
+              p = E.a.useReducer(Mt, 0),
               f = k()(p, 2),
               m = f[0],
               h = f[1],
@@ -69298,13 +69313,13 @@ window.__SCRIPTS_LOADED__.i18n &&
               g = E.a.useMemo(
                 function () {
                   return Array.from({ length: b }, function () {
-                    return Object(Ke.createOpaqueIdentifier)()
+                    return Object(Ge.createOpaqueIdentifier)()
                   })
                 },
                 [b],
               )
             return E.a.createElement(
-              et.a,
+              Ze.a,
               {
                 accessibilityHidden: !r,
                 accessibilityLabelledBy: g,
@@ -69312,7 +69327,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 onHoverIn: s,
                 onLayout: v,
                 onPressIn: s,
-                style: [!d.chromeless && Ut.containerWithChrome, Ut.container],
+                style: [!d.chromeless && Nt.containerWithChrome, Nt.container],
                 testID: null === (t = d.testIDs) || void 0 === t ? void 0 : t.wrapper,
                 viewRef: _,
                 withFocusWithinFocusRing: !0,
@@ -69321,7 +69336,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
               n.map(function (e, t) {
                 return E.a.createElement(
-                  Mt,
+                  Dt,
                   i()({}, d, {
                     accessibilityHidden: !r,
                     cardWidth: m,
@@ -69339,17 +69354,17 @@ window.__SCRIPTS_LOADED__.i18n &&
               }),
             )
           },
-          Ht = ['card', 'layoutData', 'playOverlaySize', 'renderVideoPlayer', 'shouldRenderVideo'],
-          zt = N.a.create(function (e) {
+          Ut = ['card', 'layoutData', 'playOverlaySize', 'renderVideoPlayer', 'shouldRenderVideo'],
+          Bt = N.a.create(function (e) {
             return { stackContainer: { flexGrow: 1 } }
           }),
-          Vt = function (e) {
+          Ht = function (e) {
             var t = e.card,
               n = e.layoutData,
               r = e.playOverlaySize,
               a = e.renderVideoPlayer,
               o = e.shouldRenderVideo,
-              c = Pt()(e, Ht),
+              c = xt()(e, Ut),
               s = E.a.useState(0),
               u = k()(s, 2),
               l = u[0],
@@ -69366,7 +69381,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     var r,
                       i,
                       a,
-                      o = xt()(e)
+                      o = At()(e)
                     try {
                       for (o.s(); !(a = o.n()).done; ) {
                         var c = a.value,
@@ -69391,7 +69406,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               )
             if (1 === f.length)
               return E.a.createElement(
-                Bt,
+                Ft,
                 i()({}, c, {
                   card: t,
                   componentNames: n.slides[0],
@@ -69402,7 +69417,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   shouldRenderVideo: o,
                 }),
               )
-            return E.a.createElement(nt.b, {
+            return E.a.createElement(et.b, {
               fullHeightSlides: !0,
               getClientEventData: function (e) {
                 return { currentSlideIndex: e.currentIndex + 1, previousSlideIndex: e.previousIndex + 1 }
@@ -69440,11 +69455,11 @@ window.__SCRIPTS_LOADED__.i18n &&
                   {
                     key: u.key,
                     onLayout: h ? p(v) : void 0,
-                    style: zt.stackContainer,
+                    style: Bt.stackContainer,
                     testID: 'LayoutCardCarousel-slide',
                   },
                   E.a.createElement(
-                    Bt,
+                    Ft,
                     i()({}, c, {
                       card: t,
                       componentNames: u.componentNames,
@@ -69463,11 +69478,11 @@ window.__SCRIPTS_LOADED__.i18n &&
               shouldRenderAll: !0,
             })
           },
-          qt = n('bNYH'),
-          Gt = { viewType: 'card' },
-          Wt = !1,
-          Kt = { swipeable: Vt },
-          Yt = (function (e) {
+          zt = n('bNYH'),
+          Vt = { viewType: 'card' },
+          qt = !1,
+          Gt = { swipeable: Ht },
+          Wt = (function (e) {
             m()(n, e)
             var t = v()(n)
             function n(e) {
@@ -69517,7 +69532,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 b()(p()(r), '_onPromotedLogEvent', function (e) {
                   var t = r.props.onPromotedLogEvent,
                     n = r.state.promotedLogData
-                  t && t(o()(o()({}, Object(tt.a)(n || null)), e))
+                  t && t(o()(o()({}, Object($e.a)(n || null)), e))
                 }),
                 b()(p()(r), '_requestCardUpdate', function () {
                   var e = r.props.requestCardUpdate,
@@ -69575,10 +69590,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                         C = s.testIDs,
                         k = s.transformUrl,
                         A = s.withSquareBottomBorderRadius
-                      if (this.props.card && qt.a.isAudioSpaceCard(this.props.card)) {
-                        var R = qt.a.getAudioSpaceIdFromCard(this.props.card)
+                      if (this.props.card && zt.a.isAudioSpaceCard(this.props.card)) {
+                        var R = zt.a.getAudioSpaceIdFromCard(this.props.card)
                         if (R)
-                          return E.a.createElement(qt.a, {
+                          return E.a.createElement(zt.a, {
                             audioSpaceId: R,
                             isInteractive: m,
                             withSquareBottomBorderRadius: A,
@@ -69622,7 +69637,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       if (K)
                         P &&
                           (J = E.a.createElement(
-                            Tt,
+                            Et,
                             i()({}, V, {
                               button: U && U.length > 0 ? U[0] : void 0,
                               detailsWithMiddotGroup: P,
@@ -69633,7 +69648,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         Q &&
                           N &&
                           (J = E.a.createElement(
-                            gt,
+                            _t,
                             i()({}, V, {
                               details: Q,
                               dmSentOrReceived: l,
@@ -69643,8 +69658,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                               withSquareBottomBorderRadius: A,
                             }),
                           ))
-                      else if (r.ucLayout && Kt.hasOwnProperty(r.ucLayout.type)) {
-                        var X = Kt[r.ucLayout.type]
+                      else if (r.ucLayout && Gt.hasOwnProperty(r.ucLayout.type)) {
+                        var X = Gt[r.ucLayout.type]
                         J = E.a.createElement(
                           X,
                           i()({}, V, {
@@ -69657,7 +69672,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         )
                       } else
                         J = E.a.createElement(
-                          dt,
+                          ut,
                           i()({}, V, {
                             buttons: U || void 0,
                             chromeless: x.chromeless,
@@ -69678,7 +69693,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         )
                       return E.a.createElement(
                         g.b,
-                        { behavioralEventContext: Gt },
+                        { behavioralEventContext: Vt },
                         E.a.createElement(
                           n.Context.Provider,
                           {
@@ -69734,7 +69749,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         t = this.state,
                         n = t.card,
                         r = t.state,
-                        i = Object(J.h)(P.d.BUTTON_GROUP, n, r)
+                        i = Object(Z.h)(P.d.BUTTON_GROUP, n, r)
                       return null == i || null === (e = i.data) || void 0 === e ? void 0 : e.buttons
                     },
                   },
@@ -69745,9 +69760,9 @@ window.__SCRIPTS_LOADED__.i18n &&
                         t = this.state,
                         n = t.card,
                         r = t.state,
-                        i = Object(J.h)(P.d.SWIPEABLE_MEDIA, n, r),
+                        i = Object(Z.h)(P.d.SWIPEABLE_MEDIA, n, r),
                         a = null == i || null === (e = i.data) || void 0 === e ? void 0 : e.media_list
-                      if (a) return Object(J.p)(a, n.media_entities)
+                      if (a) return Object(Z.p)(a, n.media_entities)
                     },
                   },
                   {
@@ -69756,9 +69771,9 @@ window.__SCRIPTS_LOADED__.i18n &&
                       var e = this.state,
                         t = e.card,
                         n = e.state,
-                        r = Object(J.h)(P.d.DETAILS, t, n),
+                        r = Object(Z.h)(P.d.DETAILS, t, n),
                         i = null == r ? void 0 : r.data
-                      return i ? Object(J.i)(i, t.destinations) : null
+                      return i ? Object(Z.i)(i, t.destinations) : null
                     },
                   },
                   {
@@ -69767,7 +69782,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       var e = this.state,
                         t = e.card,
                         n = e.state,
-                        r = Object(J.h)(P.d.DETAILS_WITH_MIDDOT_GROUP, t, n)
+                        r = Object(Z.h)(P.d.DETAILS_WITH_MIDDOT_GROUP, t, n)
                       return null == r ? void 0 : r.data
                     },
                   },
@@ -69777,9 +69792,9 @@ window.__SCRIPTS_LOADED__.i18n &&
                       var e = this.state,
                         t = e.card,
                         n = e.state,
-                        r = Object(J.h)(P.d.APP_STORE_DETAILS, t, n),
+                        r = Object(Z.h)(P.d.APP_STORE_DETAILS, t, n),
                         i = null == r ? void 0 : r.data
-                      return i ? Object(J.i)(i, t.destinations) : null
+                      return i ? Object(Z.i)(i, t.destinations) : null
                     },
                   },
                   {
@@ -69788,7 +69803,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       var e = this.state,
                         t = e.card,
                         n = e.state,
-                        r = Object(J.h)(P.d.COMMUNITY_DETAILS, t, n)
+                        r = Object(Z.h)(P.d.COMMUNITY_DETAILS, t, n)
                       return null == r ? void 0 : r.data
                     },
                   },
@@ -69798,7 +69813,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       var e = this.state,
                         t = e.card,
                         n = e.state,
-                        r = Object(J.h)(P.d.TWITTER_LIST_DETAILS, t, n)
+                        r = Object(Z.h)(P.d.TWITTER_LIST_DETAILS, t, n)
                       return null == r ? void 0 : r.data
                     },
                   },
@@ -69808,7 +69823,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       var e = this.state,
                         t = e.card,
                         n = e.state,
-                        r = Object(J.h)(P.d.TOPIC_DETAILS, t, n)
+                        r = Object(Z.h)(P.d.TOPIC_DETAILS, t, n)
                       return null == r ? void 0 : r.data
                     },
                   },
@@ -69818,9 +69833,9 @@ window.__SCRIPTS_LOADED__.i18n &&
                       var e = this.state,
                         t = e.card,
                         n = e.state,
-                        r = Object(J.h)(P.d.MEDIA, t, n),
+                        r = Object(Z.h)(P.d.MEDIA, t, n),
                         i = null == r ? void 0 : r.data
-                      return i ? Object(J.m)(i, t.media_entities) : null
+                      return i ? Object(Z.m)(i, t.media_entities) : null
                     },
                   },
                   {
@@ -69829,7 +69844,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       var e = this.state,
                         t = e.card,
                         n = e.state,
-                        r = Object(J.h)(P.d.POLL, t, n)
+                        r = Object(Z.h)(P.d.POLL, t, n)
                       return null == r ? void 0 : r.data
                     },
                   },
@@ -69848,7 +69863,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         c = a.data.url_data.domain || a.data.url_data.vanity
                       if (!c) return null
                       var s = r || i,
-                        u = r && i && Wt
+                        u = r && i && qt
                       return s
                         ? E.a.createElement(
                             E.a.Fragment,
@@ -69872,12 +69887,12 @@ window.__SCRIPTS_LOADED__.i18n &&
                         s = e.unifiedCard,
                         u = (this.context || {}).shouldRemoveLegacyCardConverters
                       t = s
-                        ? At({
+                        ? Ct({
                             card: s,
                             cardContext: o()(o()({}, r), {}, { shouldConvertMDCtoSingleCard: c }),
                             users: {},
                           })
-                        : Object(St.a)(
+                        : Object(wt.a)(
                             n,
                             o()(
                               o()({}, r),
@@ -69897,7 +69912,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   {
                     key: 'setAllowPrerender',
                     value: function (e) {
-                      Wt = e
+                      qt = e
                     },
                   },
                 ],
@@ -69905,16 +69920,16 @@ window.__SCRIPTS_LOADED__.i18n &&
               n
             )
           })(E.a.Component)
-        b()(Yt, 'defaultProps', {
+        b()(Wt, 'defaultProps', {
           isDataSaverEnabled: !1,
           isInteractive: !0,
           isPromoted: !1,
           withInteractiveStyling: !0,
         }),
-          b()(Yt, 'contextType', Q.a),
-          b()(Yt, 'Context', E.a.createContext(Object.freeze({}))),
-          (Yt.propTypes = {})
-        var Qt = (t.a = Yt)
+          b()(Wt, 'contextType', Q.a),
+          b()(Wt, 'Context', E.a.createContext(Object.freeze({}))),
+          (Wt.propTypes = {})
+        var Kt = (t.a = Wt)
       },
       bbT0: function (e, t) {
         e.exports = {
@@ -70500,13 +70515,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       cD5x: function (e, t) {
         e.exports = {
-          queryId: 'XZ-TKbXrIMon-NDzJdJoxw',
+          queryId: 'tdKnENaI4Ic5lOTV8hYIuw',
           operationName: 'ListEditRecommendedUsers',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -72364,13 +72379,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       dFJg: function (e, t) {
         e.exports = {
-          queryId: '9UowN1lxVyxQ5jZuLbsC8Q',
+          queryId: 'wFv9FwVmAIhWZP4NK7a8bg',
           operationName: 'TopicLandingPage',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -74730,13 +74745,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       ebf4: function (e, t) {
         e.exports = {
-          queryId: 'Q-r06-ILHx0qZ7oAEHKvtQ',
+          queryId: 'kQXrM16sq0tkZkCaYKSkCg',
           operationName: 'FollowersYouKnow',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -75400,13 +75415,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       f8pP: function (e, t) {
         e.exports = {
-          queryId: 'ewlRqC0hu1Vg3s4B5xT6Pw',
+          queryId: 'v50US3IwIkhxqk8pAAhuRA',
           operationName: 'TweetResultByRestId',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -75540,13 +75555,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       'fT+L': function (e, t) {
         e.exports = {
-          queryId: 'Eya2JBNcKrYRyXgfxK32BA',
+          queryId: '5UyNTn93vdqubgy3MeukIQ',
           operationName: 'AudioSpaceById',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -76916,7 +76931,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     var t = this._getOverrides().filter(function (t) {
                       return t.name === e
                     })[0]
-                    return t && (t.value || 'boolean' == typeof t.value) ? t.value : null
+                    return t && (t.value || 0 === t.value || 'boolean' == typeof t.value) ? t.value : null
                   },
                 },
                 {
@@ -77084,13 +77099,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       hcTZ: function (e, t) {
         e.exports = {
-          queryId: 'ML6RnGKdl4A5WipVr3c0lQ',
+          queryId: '7zuVSi2F_xTYnpwuDWgV8w',
           operationName: 'TopicToFollowSidebar',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -77808,7 +77823,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       huyt: function (e, t) {
         e.exports = {
-          queryId: 'zWJcNBQOFtvXkaElSfCiHw',
+          queryId: 'k3RQ-pfT58Y3ocQ-QI5_Fw',
           operationName: 'TwitterArticlesSlice',
           operationType: 'query',
           metadata: { featureSwitches: {} },
@@ -79114,13 +79129,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       jUmP: function (e, t) {
         e.exports = {
-          queryId: 'ul20FTKlqVcx3KANoUaqIQ',
+          queryId: 'xQoYRtA7YCzdFFi5vd6t0Q',
           operationName: 'MutedAccounts',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -80629,13 +80644,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       kE67: function (e, t) {
         e.exports = {
-          queryId: 'Mz6iVuJ257IPxIBgNQ2bIg',
+          queryId: 'Gnr8sKAiMMicpvLl4oNgNQ',
           operationName: 'NoteworthyAccountsPage',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -81152,13 +81167,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       kzpb: function (e, t) {
         e.exports = {
-          queryId: 'J1Cf8HHHCzMo3BrFl3IqGw',
+          queryId: 'QfSsBop6188wJ7x2zwDN7w',
           operationName: 'SuperFollowers',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -81313,13 +81328,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       lMsn: function (e, t) {
         e.exports = {
-          queryId: '3uNOYXpEHSblQPa6kP7z9A',
+          queryId: 'A3eBDVSIHuEkHdNjc-pQUw',
           operationName: 'ForYouExplore',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -82037,19 +82052,20 @@ window.__SCRIPTS_LOADED__.i18n &&
               return h.b(t, { params: e, request: i.DirectMessages.fetchConversation })(
                 { actionTypes: F, context: a, meta: { conversationId: o, direction: Object(A.b)(e) } },
                 function (e) {
-                  if (e) {
-                    var t = e.entities,
-                      n = t.cards,
-                      r = t.entries,
-                      i = t.tweets,
-                      a = t.users,
-                      o = e.result.conversation_timeline,
-                      c = o.conversations,
-                      s = o.max_entry_id,
-                      u = o.min_entry_id,
-                      l = o.status,
-                      d = ne(c, { max_entry_id: s, min_entry_id: u, status: l })
-                    return Object(k.a)({ conversations: d, entries: r, users: a, tweets: i, cards: n })
+                  var t
+                  if (null != e && null !== (t = e.result) && void 0 !== t && t.conversation_timeline) {
+                    var n = e.entities,
+                      r = n.cards,
+                      i = n.entries,
+                      a = n.tweets,
+                      o = n.users,
+                      c = e.result.conversation_timeline,
+                      s = c.conversations,
+                      u = c.max_entry_id,
+                      l = c.min_entry_id,
+                      d = c.status,
+                      p = ne(s, { max_entry_id: u, min_entry_id: l, status: d })
+                    return Object(k.a)({ conversations: p, entries: i, users: o, tweets: a, cards: r })
                   }
                 },
               )
@@ -82773,13 +82789,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       mGYQ: function (e, t) {
         e.exports = {
-          queryId: 'FbYHECRNHfnLzIEGiuWt0Q',
+          queryId: 'pZF-zKdvZHgehIZ19gOYhg',
           operationName: 'CommunityAboutTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -82803,13 +82819,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       mRBj: function (e, t) {
         e.exports = {
-          queryId: 'jOIS0UIyPMVaWR8_c7VCTQ',
+          queryId: 'dMeZN-ZTZwB-o_mr47QvGQ',
           operationName: 'CombinedLists',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -84721,13 +84737,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       oG0O: function (e, t) {
         e.exports = {
-          queryId: 'Iy5Z7aVZOdQOkiuxx1gwLg',
+          queryId: 'LBvHLm6n4deUwBwtwRO73Q',
           operationName: 'RitoActionedTweetsTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -85562,13 +85578,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       pFPO: function (e, t) {
         e.exports = {
-          queryId: 'TwEDskk60EKGQk4eC4q6mA',
+          queryId: 'q0z_vxarQfl2SiZAdirCfQ',
           operationName: 'UserMedia',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -85576,13 +85592,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       pG5d: function (e, t) {
         e.exports = {
-          queryId: '5JQKhzLzlqGGeH6w8pL3rA',
+          queryId: 'kRETk1Y5h5vmXz1peWGjvA',
           operationName: 'BirdwatchFetchGlobalTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -85622,13 +85638,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       pKwR: function (e, t) {
         e.exports = {
-          queryId: 'k-58IgdYxWPBnRRFXLZTJg',
+          queryId: '3Bw23tFDDl49AT7GgGB1mA',
           operationName: 'UserSuperFollowTweets',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -87430,7 +87446,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         n.d(t, 'm', function () {
           return i
         }),
-          n.d(t, 'x', function () {
+          n.d(t, 'y', function () {
             return a
           }),
           n.d(t, 'a', function () {
@@ -87451,7 +87467,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           n.d(t, 'w', function () {
             return d
           }),
-          n.d(t, 'A', function () {
+          n.d(t, 'B', function () {
             return p
           }),
           n.d(t, 'n', function () {
@@ -87469,53 +87485,56 @@ window.__SCRIPTS_LOADED__.i18n &&
           n.d(t, 't', function () {
             return _
           }),
-          n.d(t, 'v', function () {
+          n.d(t, 'x', function () {
             return b
           }),
-          n.d(t, 'l', function () {
+          n.d(t, 'v', function () {
             return g
           }),
-          n.d(t, 'e', function () {
+          n.d(t, 'l', function () {
             return y
           }),
-          n.d(t, 'j', function () {
+          n.d(t, 'e', function () {
             return E
           }),
-          n.d(t, 'h', function () {
+          n.d(t, 'j', function () {
             return w
           }),
-          n.d(t, 'k', function () {
+          n.d(t, 'h', function () {
             return T
           }),
-          n.d(t, 'z', function () {
+          n.d(t, 'k', function () {
             return S
           }),
-          n.d(t, 'B', function () {
+          n.d(t, 'A', function () {
             return O
           }),
-          n.d(t, 'y', function () {
+          n.d(t, 'C', function () {
             return I
           }),
-          n.d(t, 'o', function () {
+          n.d(t, 'z', function () {
             return C
           }),
-          n.d(t, 'D', function () {
+          n.d(t, 'o', function () {
             return k
           }),
-          n.d(t, 'C', function () {
+          n.d(t, 'E', function () {
             return A
           }),
-          n.d(t, 'i', function () {
+          n.d(t, 'D', function () {
             return R
           }),
-          n.d(t, 'b', function () {
+          n.d(t, 'i', function () {
             return x
           }),
-          n.d(t, 'r', function () {
+          n.d(t, 'b', function () {
             return L
           }),
-          n.d(t, 'p', function () {
+          n.d(t, 'r', function () {
             return P
+          }),
+          n.d(t, 'p', function () {
+            return D
           })
         n('yH/f')
         var r = n('zrOZ'),
@@ -87645,12 +87664,13 @@ window.__SCRIPTS_LOADED__.i18n &&
             NextButton: 'next_button',
             UserIdentifier: 'user_identifier',
           }),
-          b = Object.freeze({ Qr: 'qr', Text: 'text' }),
-          g = Object.freeze({ Avatar: 'avatar', Banner: 'banner' }),
-          y = Object.freeze({ Success: 'success', NotFound: 'not_found', Error: 'error' }),
-          E = Object.freeze({ Favorite: 'favorite', Follow: 'follow', Reply: 'reply', Retweet: 'retweet' }),
-          w = Object.freeze({ Checkbox: 'checkbox', Follow: 'follow' }),
-          T =
+          b = Object.freeze({ UnorderedList: 'UnorderedList', ListItem: 'ListItem' }),
+          g = Object.freeze({ Qr: 'qr', Text: 'text' }),
+          y = Object.freeze({ Avatar: 'avatar', Banner: 'banner' }),
+          E = Object.freeze({ Success: 'success', NotFound: 'not_found', Error: 'error' }),
+          w = Object.freeze({ Favorite: 'favorite', Follow: 'follow', Reply: 'reply', Retweet: 'retweet' }),
+          T = Object.freeze({ Checkbox: 'checkbox', Follow: 'follow' }),
+          S =
             (Object.freeze({ Always: 'always', Never: 'never', Preprompt: 'preprompt' }),
             Object.freeze({
               Email: 'email',
@@ -87659,16 +87679,16 @@ window.__SCRIPTS_LOADED__.i18n &&
               Telephone: 'telephone',
               Text: 'text',
             })),
-          S = Object.freeze({ ResendSms: 'resend_sms', ResendVoice: 'resend_voice', ResendEmail: 'resend_email' }),
-          O = Object.freeze({ Password: 'password', NewPassword: 'new_password', Text: 'text' }),
-          I = Object.freeze({ Normal: 'normal', Compact: 'compact' }),
-          C = Object.freeze({ Username: 'username', Password: 'password', NewPassword: 'new_password', Text: 'text' }),
-          k = Object.freeze({ Mismatch: 'mismatch' }),
-          A = Object.freeze({ compact: 'compact', stacked: 'stacked' }),
-          R = Object.freeze({ Fixed: 'fixed', Floating: 'floating', FloatingLarge: 'floating_large' }),
-          x = Object.freeze({ Default: 'default', GoogleSSO: 'google_sso', AppleSSO: 'apple_sso' }),
-          L = Object.freeze({ enrollment: 'enrollment', verification: 'verification' }),
-          P = Object.freeze({ Impression: 'impression', Click: 'click' })
+          O = Object.freeze({ ResendSms: 'resend_sms', ResendVoice: 'resend_voice', ResendEmail: 'resend_email' }),
+          I = Object.freeze({ Password: 'password', NewPassword: 'new_password', Text: 'text' }),
+          C = Object.freeze({ Normal: 'normal', Compact: 'compact' }),
+          k = Object.freeze({ Username: 'username', Password: 'password', NewPassword: 'new_password', Text: 'text' }),
+          A = Object.freeze({ Mismatch: 'mismatch' }),
+          R = Object.freeze({ compact: 'compact', stacked: 'stacked' }),
+          x = Object.freeze({ Fixed: 'fixed', Floating: 'floating', FloatingLarge: 'floating_large' }),
+          L = Object.freeze({ Default: 'default', GoogleSSO: 'google_sso', AppleSSO: 'apple_sso' }),
+          P = Object.freeze({ enrollment: 'enrollment', verification: 'verification' }),
+          D = Object.freeze({ Impression: 'impression', Click: 'click' })
       },
       q83S: function (e, t, n) {
         var r = n('treY')
@@ -88003,13 +88023,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       qpTX: function (e, t) {
         e.exports = {
-          queryId: '2Yl6p0OvAoSFP_bXh4i51w',
+          queryId: 'aIWAOPMuSEkXXkhRM5LBSw',
           operationName: 'CreateTweet',
           operationType: 'mutation',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -88845,13 +88865,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       r5Aa: function (e, t) {
         e.exports = {
-          queryId: 'B3VPKBX6Kawtz1B1rwYE7g',
+          queryId: 'F-RAgpg7b4scqPhztJ5i_Q',
           operationName: 'ModeratedTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -89113,13 +89133,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       rEPq: function (e, t) {
         e.exports = {
-          queryId: 'vvyskfwHomcl4JojItnncw',
+          queryId: 'CkJ244z6XVmNSxtX8uD1Sw',
           operationName: 'UrtFixtures',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -91070,13 +91090,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       t8Fd: function (e, t) {
         e.exports = {
-          queryId: 'HD_Zf8Zodep2q-Nw3UXyPA',
+          queryId: '3gMEE48HIFfckvnMpWL00g',
           operationName: 'ListLatestTweetsTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -94495,13 +94515,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       vLWf: function (e, t) {
         e.exports = {
-          queryId: '3N-DzXt-P8APynNrFIm4Ug',
+          queryId: 'jPtiIv5mx9tPh8srjKN73g',
           operationName: 'TopicsPickerPage',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -94509,13 +94529,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       vSDp: function (e, t) {
         e.exports = {
-          queryId: 'nfKEynBNBfKPNvGsuuDscg',
+          queryId: 'a23fcG0yDFd64s18iu0asQ',
           operationName: 'ListCreationRecommendedUsers',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -100116,13 +100136,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       xdo5: function (e, t) {
         e.exports = {
-          queryId: '1JUN1SoMOh6UA7bT3Gpumg',
+          queryId: 'XrikZCLHmoub3DTPTBFPCA',
           operationName: 'Following',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -100152,13 +100172,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       xlqx: function (e, t) {
         e.exports = {
-          queryId: 'fMww3mjnMWewdn8nhZRmgA',
+          queryId: 'TSRjlCSKzGiO6JWQewm7hQ',
           operationName: 'BlockedAccountsAutoBlock',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -100257,13 +100277,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       y1NS: function (e, t) {
         e.exports = {
-          queryId: 'wDCRUcLGXiL9ZcMEbbQ33A',
+          queryId: 'gug89AOSslpC4t-upzaNsw',
           operationName: 'DmMutedTimeline',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },
@@ -101033,13 +101053,13 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       ydqi: function (e, t) {
         e.exports = {
-          queryId: 'HEfZnIRi_ScYrnBBNvDr9g',
+          queryId: 'L5bZJ8DPGqZjl6dXJ8lApw',
           operationName: 'TweetDetail',
           operationType: 'query',
           metadata: {
             featureSwitches: {
               __fs_dont_mention_me_view_api_enabled: 'dont_mention_me_view_api_enabled',
-              __fs_interactive_text: 'interactive_text',
+              __fs_interactive_text_enabled: 'interactive_text_enabled',
               __fs_responsive_web_uc_gql_enabled: 'responsive_web_uc_gql_enabled',
             },
           },

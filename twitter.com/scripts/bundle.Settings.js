@@ -118,7 +118,7 @@
                   c = t.withMarginBottom
                 return b.a.createElement(
                   x.a,
-                  { style: [P.contentRoot, c && P.withMarginBottom] },
+                  { style: [T.contentRoot, c && T.withMarginBottom] },
                   n,
                   a
                     ? b.a.createElement(
@@ -127,8 +127,8 @@
                         b.a.createElement(O.a, null),
                         b.a.createElement(
                           x.a,
-                          { style: P.buttonContainer },
-                          b.a.createElement(A.a, { disabled: r, onPress: a, style: P.button, testID: I, type: i }, o),
+                          { style: T.buttonContainer },
+                          b.a.createElement(A.a, { disabled: r, onPress: a, style: T.button, testID: I, type: i }, o),
                         ),
                       )
                     : null,
@@ -194,7 +194,7 @@
           )
         })(b.a.Component)
       h()(L, 'defaultProps', { submitLabel: F, submitType: 'brandFilled', withMarginBottom: !0 })
-      var P = D.a.create(function (e) {
+      var T = D.a.create(function (e) {
         return {
           contentRoot: {
             backgroundColor: e.colors.cellBackground,
@@ -264,8 +264,8 @@
         D = n.n(A),
         F = n('7FtF'),
         L = n('3cwy'),
-        P = n('MWbm'),
-        T = n('3JAx'),
+        T = n('MWbm'),
+        P = n('3JAx'),
         B = n('t62R'),
         R = n('6v1f'),
         N = D.a.a776eed7,
@@ -321,9 +321,9 @@
                     F.a,
                     { location: t, title: N },
                     y.a.createElement(
-                      P.a,
+                      T.a,
                       null,
-                      y.a.createElement(T.a, {
+                      y.a.createElement(P.a, {
                         description: y.a.createElement(
                           y.a.Fragment,
                           null,
@@ -402,46 +402,6 @@
       function p(e) {
         var t = Object(r.a)(e)
         return !t || !u(t) || !d(t) || t.consent_version < 2 || t.text_version < o
-      }
-    },
-    BUB3: function (e, t, n) {
-      'use strict'
-      var a = n('yiKp'),
-        r = n.n(a),
-        o = n('m3Bd'),
-        i = n.n(o),
-        c = n('ERkP'),
-        l = n.n(c),
-        s = n('sNn6'),
-        u = n('rHpw'),
-        d = n('MWbm'),
-        p = ['children'],
-        f = u.a.create(function (e) {
-          return {
-            activeRoot: { backgroundColor: e.colors.gray0 },
-            overlay: r()(
-              r()({}, u.a.absoluteFillObject),
-              {},
-              {
-                borderRightStyle: 'solid',
-                borderRightWidth: e.borderWidths.medium,
-                borderRightColor: e.colors.primary,
-                zIndex: 1,
-              },
-            ),
-          }
-        })
-      t.a = function (e) {
-        var t = e.children,
-          n = i()(e, p)
-        return l.a.createElement(s.a, n, function (e) {
-          return l.a.createElement(
-            d.a,
-            { style: e && f.activeRoot },
-            'function' == typeof t ? t(e) : t,
-            e ? l.a.createElement(d.a, { pointerEvents: 'none', style: f.overlay }) : null,
-          )
-        })
       }
     },
     ClNT: function (e, t, n) {
@@ -617,7 +577,7 @@
         D = n('TnY3'),
         F = n('cHvH'),
         L = n('3xLC'),
-        P = [
+        T = [
           'children',
           'leftControl',
           'screenType',
@@ -626,7 +586,7 @@
           'withBottomBorder',
           'withDetailOpen',
         ],
-        T = (function (e) {
+        P = (function (e) {
           p()(n, e)
           var t = h()(n)
           function n() {
@@ -677,7 +637,7 @@
                       e.showSubtitleOnWideDetail,
                       e.withBottomBorder,
                       e.withDetailOpen,
-                      r()(e, P))
+                      r()(e, T))
                   return E.a.createElement(
                     E.a.Fragment,
                     null,
@@ -729,11 +689,11 @@
                     D = n.withSearchBox,
                     F = n.withTweetButton,
                     L = 'root' === h,
-                    P = 'secondaryRoot' === h,
-                    T = 'primaryDetail' === h,
-                    B = (T && v) || (L && y),
-                    R = L || (T && t),
-                    N = L ? g.c : T ? g.a : void 0,
+                    T = 'secondaryRoot' === h,
+                    P = 'primaryDetail' === h,
+                    B = (P && v) || (L && y),
+                    R = L || (P && t),
+                    N = L ? g.c : P ? g.a : void 0,
                     M = E.a.createElement(
                       O.a,
                       { style: x.appBarContainer },
@@ -755,7 +715,7 @@
                       }),
                     ),
                     H =
-                      L || (P && A)
+                      L || (T && A)
                         ? null
                         : E.a.createElement(S.a.Configure, {
                             SideNavButton: a,
@@ -780,9 +740,9 @@
             n
           )
         })(E.a.Component)
-      b()(T, 'contextType', L.a),
-        b()(T, 'defaultProps', { screenType: 'secondaryDetail', showSubtitleOnWideDetail: !0 })
-      t.a = Object(D.a)(T)
+      b()(P, 'contextType', L.a),
+        b()(P, 'defaultProps', { screenType: 'secondaryDetail', showSubtitleOnWideDetail: !0 })
+      t.a = Object(D.a)(P)
     },
     NyKK: function (e, t, n) {
       'use strict'
@@ -960,8 +920,8 @@
         D = C.a.cfd2f35d,
         F = C.a.fc5bfd95,
         L = C.a.gee8110d,
-        P = C.a.c326f156,
-        T = C.a.c9fe9b56,
+        T = C.a.c326f156,
+        P = C.a.c9fe9b56,
         B = C.a.j54b679a,
         R = C.a.ac63840c,
         N = C.a.bcd9b0ed,
@@ -1006,7 +966,7 @@
                     o = r.size_b,
                     i = r.url,
                     c = B({ size: n.getSizeLabel(o) }),
-                    l = t ? P : L
+                    l = t ? T : L
                   return b.a.createElement(
                     I.a,
                     null,
@@ -1030,7 +990,7 @@
                                 cancelButtonLabel: D,
                                 confirmButtonLabel: F,
                                 confirmButtonLink: { pathname: i || '', external: !0 },
-                                headline: T,
+                                headline: P,
                                 onCancel: this._handleCancel,
                                 onConfirm: this._handleConfirm,
                                 text: c,
@@ -1307,8 +1267,8 @@
         D = n('7FtF'),
         F = n('3cwy'),
         L = 'dataSaverBooleanItem',
-        P = n('v6aA'),
-        T = n('RKmr'),
+        T = n('v6aA'),
+        P = n('RKmr'),
         B = n('e0ey'),
         R = n('csss'),
         N = O.a.eafe3287,
@@ -1357,7 +1317,7 @@
                     y.a.createElement(
                       D.a,
                       { location: n, screenType: 'secondaryDetail', title: N },
-                      y.a.createElement(T.a, { description: M }),
+                      y.a.createElement(P.a, { description: M }),
                       y.a.createElement(B.a, {
                         checked: t,
                         helpText: j,
@@ -1381,7 +1341,7 @@
             n
           )
         })(y.a.Component)
-      b()(V, 'contextType', P.a)
+      b()(V, 'contextType', T.a)
       t.default = C(V)
     },
     REKA: function (e, t, n) {
@@ -1439,8 +1399,8 @@
         D = n('OySi'),
         F = n('3cwy'),
         L = 'accessibilityScreen',
-        P = n('MWbm'),
-        T = n('38/B'),
+        T = n('MWbm'),
+        P = n('38/B'),
         B = n('rHpw'),
         R = n('RKmr'),
         N = n('6vad'),
@@ -1486,7 +1446,7 @@
                 o.context.featureSwitches.isTrue('responsive_web_settings_timeline_polling_enabled'),
               ),
               h()(l()(o), '_handleReducedMotionChanged', function (e, t) {
-                o._handleSettingChanged(e, t), T.a.setReducedMotion(t)
+                o._handleSettingChanged(e, t), P.a.setReducedMotion(t)
               }),
               h()(l()(o), '_handleHighContrastChanged', function (e, t) {
                 o._handleSettingChanged(e, t), B.a.setHighContrast(t)
@@ -1531,7 +1491,7 @@
                       A.a,
                       { location: r, screenType: 'secondaryDetail', title: V },
                       b.a.createElement(
-                        P.a,
+                        T.a,
                         { testID: L },
                         b.a.createElement(R.a, { description: W }),
                         b.a.createElement(N.b, { text: K }),
@@ -1545,7 +1505,7 @@
                       ),
                       this._showVideoAutoplaySetting
                         ? b.a.createElement(
-                            P.a,
+                            T.a,
                             null,
                             b.a.createElement(H.a, null),
                             b.a.createElement(N.b, { text: U }),
@@ -1567,7 +1527,7 @@
                         : null,
                       this._showAltTextNudgeSetting
                         ? b.a.createElement(
-                            P.a,
+                            T.a,
                             null,
                             b.a.createElement(H.a, null),
                             b.a.createElement(N.b, { text: G }),
@@ -1582,7 +1542,7 @@
                         : null,
                       this._maybeRenderTimelineSettings(),
                       b.a.createElement(
-                        P.a,
+                        T.a,
                         null,
                         b.a.createElement(H.a, null),
                         b.a.createElement(N.b, { text: ne }),
@@ -1726,8 +1686,8 @@
           })
           .withAnalytics({ page: 'settings' }),
         L = n('VY6S'),
-        P = n('v//M'),
-        T = n('uD2z'),
+        T = n('v//M'),
+        P = n('uD2z'),
         B = n('3XMw'),
         R = n.n(B),
         N = n('KQzH'),
@@ -1834,9 +1794,9 @@
             D = v.a.useRef(null),
             F = v.a.useRef(null),
             L = v.a.useState(!1),
-            P = ee()(L, 2),
-            T = P[0],
-            B = P[1],
+            T = ee()(L, 2),
+            P = T[0],
+            B = T[1],
             R = v.a.useState(null),
             N = ee()(R, 2),
             M = N[0],
@@ -1856,7 +1816,7 @@
             Q = function (e) {
               var t,
                 n = oe.a.getCount() > 0
-              ;(null != O && null !== (t = O.current) && void 0 !== t && t.contains(e.target)) || n || (T && $())
+              ;(null != O && null !== (t = O.current) && void 0 !== t && t.contains(e.target)) || n || (P && $())
             }
           v.a.useEffect(function () {
             return (
@@ -1896,7 +1856,7 @@
             ge = function () {
               W(Object(ue.b)())
             },
-            ye = T || t
+            ye = P || t
           return v.a.createElement(
             re.a,
             { onLayout: J, ref: O, style: [me.root, I] },
@@ -1919,7 +1879,7 @@
                         return (
                           null === (o = F.current) || void 0 === o || o.selectFocusedItem(), void e.preventDefault()
                         )
-                      T || B(!0)
+                      P || B(!0)
                     } else $()
                   }
                 },
@@ -1986,7 +1946,7 @@
                     styleType: E ? 'pill' : 'selection',
                     testID: x,
                     value: q,
-                    withClearButton: !a && T,
+                    withClearButton: !a && P,
                   }),
                 ),
                 v.a.createElement(
@@ -2042,8 +2002,8 @@
         De = R.a.c4881c66,
         Fe = R.a.eafe3287,
         Le = R.a.f458a3b1,
-        Pe = R.a.e8f57e07,
-        Te = R.a.b7fde2b8,
+        Te = R.a.e8f57e07,
+        Pe = R.a.b7fde2b8,
         Be = R.a.ja94f34d,
         Re = R.a.d0b74a5a,
         Ne = R.a.gd4302ec,
@@ -2101,10 +2061,10 @@
                   v.a.createElement(ye.b, { text: Le }),
                   v.a.createElement(N.a, {
                     description: e ? o._renderPersonalizationDescription() : void 0,
-                    label: Pe,
+                    label: Te,
                     link: '/settings/account/personalization',
                   }),
-                  v.a.createElement(N.a, { label: Te, link: '/settings/your_twitter_data' }),
+                  v.a.createElement(N.a, { label: Pe, link: '/settings/your_twitter_data' }),
                   o.context.featureSwitches.isTrue('responsive_web_cookie_compliance_banner_enabled')
                     ? v.a.createElement(N.a, { description: Ne, label: Re, link: '/settings/cookie_preferences' })
                     : null,
@@ -2275,7 +2235,7 @@
                       j.a,
                       { location: n, onBackClick: this._handleBackClicked, screenType: 'root', title: xe },
                       this._isUserLoggedIn() || Object(_e.c)(this.context.featureSwitches) === _e.a.AcceptAllCookies
-                        ? v.a.createElement(P.a, {
+                        ? v.a.createElement(T.a, {
                             fetchStatus: t,
                             onRequestRetry: this._handleFetchPreferences,
                             render: this.context.loggedInUserId ? this._renderLoggedIn : this._renderLoggedOut,
@@ -2289,7 +2249,7 @@
                 key: '_renderPersonalizationDescription',
                 value: function () {
                   var e = this.props.personalizationPreferences
-                  return Object(T.a)(e)
+                  return Object(P.a)(e)
                 },
               },
             ]),
@@ -2747,8 +2707,8 @@
         D = n.n(A),
         F = n('yoO3'),
         L = n('7FtF'),
-        P = 'privacyAndSafetyScreen',
-        T = n('MWbm'),
+        T = 'privacyAndSafetyScreen',
+        P = n('MWbm'),
         B = n('Irs7'),
         R = n('v6aA'),
         N = n('6vad'),
@@ -2846,7 +2806,7 @@
                   r = Q[a.allow_media_tagging],
                   o = Ee[a.allow_contributor_request]
                 return b.a.createElement(
-                  T.a,
+                  P.a,
                   null,
                   b.a.createElement(N.b, { text: W }),
                   b.a.createElement(M.a, {
@@ -2954,8 +2914,8 @@
                     a = e.location,
                     r = n ? Y : G
                   return b.a.createElement(
-                    T.a,
-                    { testID: P },
+                    P.a,
+                    { testID: T },
                     b.a.createElement(
                       L.a,
                       { location: a, screenType: 'primaryDetail', title: V },

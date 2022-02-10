@@ -14,28 +14,28 @@
         })
       n('ho0z'), n('uFXj')
       var i = n('ERkP'),
-        r = n.n(i),
-        a = n('MWbm'),
+        a = n.n(i),
+        r = n('MWbm'),
         o = n('GcQN'),
         c = n('PU7B'),
-        l = n('/WPq'),
-        s = n('78ol'),
+        s = n('/WPq'),
+        l = n('78ol'),
         d = n('jV+4'),
         u = n('rHpw'),
         m = function (e) {
           var t = e.author,
             n = e.color,
             i = void 0 === n ? 'normal' : n,
-            a = e.size,
-            o = void 0 === a ? 'subtext2' : a,
+            r = e.size,
+            o = void 0 === r ? 'subtext2' : r,
             c = e.style,
-            l = e.withHoverCard,
-            s = void 0 === l || l,
+            s = e.withHoverCard,
+            l = void 0 === s || s,
             u = e.withLink,
             m = void 0 !== u && u,
             h = e.withScreenName,
             p = void 0 !== h && h
-          return r.a.createElement(d.a, {
+          return a.a.createElement(d.a, {
             avatarSize: { subtext2: 'small', body: 'medium', headline1: 'large' }[o],
             color: i,
             isProtected: t.protected,
@@ -46,29 +46,29 @@
             screenName: t.screen_name,
             screenNameSize: o,
             style: [f.authorUserName, c],
-            withHoverCard: s,
+            withHoverCard: l,
             withLink: m,
             withScreenName: p,
           })
         },
         h = function (e) {
           var t = e.style
-          return r.a.createElement(
-            a.a,
+          return a.a.createElement(
+            r.a,
             { style: [f.lightningBadge, t] },
-            r.a.createElement(o.a, { style: f.lightningIcon }),
+            a.a.createElement(o.a, { style: f.lightningIcon }),
           )
         },
         p = function (e) {
           var t = e.icon
-          return r.a.createElement(
-            a.a,
+          return a.a.createElement(
+            r.a,
             { style: f.placeholderIconContainer },
             'news' === t
-              ? r.a.createElement(c.a, { style: f.placeholderIcon })
+              ? a.a.createElement(c.a, { style: f.placeholderIcon })
               : 'lists' === t
-              ? r.a.createElement(l.a, { style: f.placeholderIcon })
-              : r.a.createElement(s.a, { style: f.placeholderIcon }),
+              ? a.a.createElement(s.a, { style: f.placeholderIcon })
+              : a.a.createElement(l.a, { style: f.placeholderIcon }),
           )
         },
         f = u.a.create(function (e) {
@@ -105,13 +105,13 @@
       'use strict'
       n.r(t)
       var i = n('VrFO'),
-        r = n.n(i),
-        a = n('Y9Ll'),
-        o = n.n(a),
+        a = n.n(i),
+        r = n('Y9Ll'),
+        o = n.n(r),
         c = n('1Pcy'),
-        l = n.n(c),
-        s = n('5Yy7'),
-        d = n.n(s),
+        s = n.n(c),
+        l = n('5Yy7'),
+        d = n.n(l),
         u = n('2VqO'),
         m = n.n(u),
         h = n('KEM+'),
@@ -124,25 +124,25 @@
         C = n('mjJ+'),
         _ = n('eb3s'),
         w = g.a.cfd2f35d,
-        E = (function (e) {
+        I = (function (e) {
           d()(n, e)
           var t = m()(n)
           function n() {
             var e
-            r()(this, n)
-            for (var i = arguments.length, a = new Array(i), o = 0; o < i; o++) a[o] = arguments[o]
+            a()(this, n)
+            for (var i = arguments.length, r = new Array(i), o = 0; o < i; o++) r[o] = arguments[o]
             return (
-              (e = t.call.apply(t, [this].concat(a))),
-              p()(l()(e), 'state', { activeConfirmation: null }),
-              p()(l()(e), '_handleConfirm', function (t) {
+              (e = t.call.apply(t, [this].concat(r))),
+              p()(s()(e), 'state', { activeConfirmation: null }),
+              p()(s()(e), '_handleConfirm', function (t) {
                 e.setState({ activeConfirmation: t })
               }),
-              p()(l()(e), '_handleConfirmed', function () {
+              p()(s()(e), '_handleConfirmed', function () {
                 e.state.activeConfirmation && e.state.activeConfirmation.callback(),
                   e.setState({ activeConfirmation: null }),
                   e.props.onClose()
               }),
-              p()(l()(e), '_handleCancelConfirm', function () {
+              p()(s()(e), '_handleCancelConfirm', function () {
                 e.setState({ activeConfirmation: null })
               }),
               e
@@ -171,16 +171,16 @@
                   var t = e || {},
                     n = t.confirmButtonType,
                     i = t.headline,
-                    r = t.label,
-                    a = t.text,
+                    a = t.label,
+                    r = t.text,
                     o = t.withCancelButton
                   return b.a.createElement(_.a, {
-                    confirmButtonLabel: r,
+                    confirmButtonLabel: a,
                     confirmButtonType: n,
                     headline: i,
                     onCancel: this._handleCancelConfirm,
                     onConfirm: this._handleConfirmed,
-                    text: a,
+                    text: r,
                     withCancelButton: o,
                   })
                 },
@@ -192,47 +192,47 @@
                     t = e.actionItems,
                     n = e.dividerIndices,
                     i = e.onClose
-                  return I(t, n, i, this._handleConfirm)
+                  return k(t, n, i, this._handleConfirm)
                 },
               },
             ]),
             n
           )
         })(b.a.Component),
-        I = Object(y.a)(function (e, t, n, i) {
-          return e.reduce(function (e, r, a) {
-            var o = r.Icon,
-              c = r.behavioralEventContext,
-              l = r.confirmation,
-              s = r.disabled,
-              d = r.excludeFromActionMenu,
-              u = r.isEmphasized,
-              m = r.link,
-              h = r.onClick,
-              p = r.subText,
-              f = r.testID,
-              b = r.text
-            r.withCancelButton
+        k = Object(y.a)(function (e, t, n, i) {
+          return e.reduce(function (e, a, r) {
+            var o = a.Icon,
+              c = a.behavioralEventContext,
+              s = a.confirmation,
+              l = a.disabled,
+              d = a.excludeFromActionMenu,
+              u = a.isEmphasized,
+              m = a.link,
+              h = a.onClick,
+              p = a.subText,
+              f = a.testID,
+              b = a.text
+            a.withCancelButton
             if (!d) {
               var v = h
                 ? function () {
-                    l
-                      ? l.render
-                        ? i({ callback: h, render: l.render })
+                    s
+                      ? s.render
+                        ? i({ callback: h, render: s.render })
                         : i({
                             callback: h,
-                            text: l.text,
-                            headline: l.headline,
-                            label: l.label,
-                            confirmButtonType: l.confirmButtonType,
-                            withCancelButton: l.withCancelButton,
+                            text: s.text,
+                            headline: s.headline,
+                            label: s.label,
+                            confirmButtonType: s.confirmButtonType,
+                            withCancelButton: s.withCancelButton,
                           })
                       : (h(), n())
                   }
                 : n
               e.push({
                 behavioralEventContext: c,
-                disabled: s,
+                disabled: l,
                 Icon: o,
                 isEmphasized: u,
                 testID: f,
@@ -240,64 +240,24 @@
                 text: b,
                 onClick: v,
                 link: m,
-                withBottomBorder: t && t.includes(a),
+                withBottomBorder: t && t.includes(r),
               })
             }
             return e
           }, [])
         })
-      t.default = E
-    },
-    BUB3: function (e, t, n) {
-      'use strict'
-      var i = n('yiKp'),
-        r = n.n(i),
-        a = n('m3Bd'),
-        o = n.n(a),
-        c = n('ERkP'),
-        l = n.n(c),
-        s = n('sNn6'),
-        d = n('rHpw'),
-        u = n('MWbm'),
-        m = ['children'],
-        h = d.a.create(function (e) {
-          return {
-            activeRoot: { backgroundColor: e.colors.gray0 },
-            overlay: r()(
-              r()({}, d.a.absoluteFillObject),
-              {},
-              {
-                borderRightStyle: 'solid',
-                borderRightWidth: e.borderWidths.medium,
-                borderRightColor: e.colors.primary,
-                zIndex: 1,
-              },
-            ),
-          }
-        })
-      t.a = function (e) {
-        var t = e.children,
-          n = o()(e, m)
-        return l.a.createElement(s.a, n, function (e) {
-          return l.a.createElement(
-            u.a,
-            { style: e && h.activeRoot },
-            'function' == typeof t ? t(e) : t,
-            e ? l.a.createElement(u.a, { pointerEvents: 'none', style: h.overlay }) : null,
-          )
-        })
-      }
+      t.default = I
     },
     MREw: function (e, t, n) {
       'use strict'
       var i = n('yiKp'),
-        r = n.n(i),
-        a = n('VrFO'),
-        o = n.n(a),
+        a = n.n(i),
+        r = n('VrFO'),
+        o = n.n(r),
         c = n('Y9Ll'),
-        l = n.n(c),
-        s = n('1Pcy'),
-        d = n.n(s),
+        s = n.n(c),
+        l = n('1Pcy'),
+        d = n.n(l),
         u = n('5Yy7'),
         m = n.n(u),
         h = n('2VqO'),
@@ -312,8 +272,8 @@
         w = g.a.forwardRef(function (e, t) {
           var n = e.icon,
             i = e.link,
-            r = e.onPress,
-            a = e.size,
+            a = e.onPress,
+            r = e.size,
             o = e.style,
             c = e.type
           return g.a.createElement(y.a, {
@@ -321,40 +281,40 @@
             hoverLabel: { label: _ },
             icon: n,
             link: i,
-            onPress: r,
+            onPress: a,
             pullRight: !0,
             ref: t,
-            size: a,
+            size: r,
             style: o,
             type: c || 'primaryText',
           })
         }),
-        E = n('TW8A'),
-        I = n('hACr'),
-        k = n('Vgm9'),
+        I = n('TW8A'),
+        k = n('hACr'),
+        E = n('Vgm9'),
         M = n('ObVQ'),
         x = n('Rp9C'),
-        O = n('MWbm'),
-        P = n('Irs7'),
-        S = n('rHpw'),
-        A = (function (e) {
+        A = n('MWbm'),
+        O = n('Irs7'),
+        P = n('rHpw'),
+        S = (function (e) {
           m()(n, e)
           var t = p()(n)
           function n() {
             var e
             o()(this, n)
-            for (var i = arguments.length, a = new Array(i), c = 0; c < i; c++) a[c] = arguments[c]
+            for (var i = arguments.length, r = new Array(i), c = 0; c < i; c++) r[c] = arguments[c]
             return (
-              (e = t.call.apply(t, [this].concat(a))),
+              (e = t.call.apply(t, [this].concat(r))),
               b()(d()(e), '_editButton', g.a.createRef()),
               b()(d()(e), '_handleClickEdit', function () {
                 e._scribeAction('edit_button', 'click')
               }),
               b()(d()(e), '_scribeAction', function (t, n) {
                 var i = e.props,
-                  a = i.analytics,
+                  r = i.analytics,
                   o = i.scribeNamespace
-                a.scribe(r()(r()({ action: n, data: { items: [e._getScribeMomentItem()] } }, o), {}, { element: t }))
+                r.scribe(a()(a()({ action: n, data: { items: [e._getScribeMomentItem()] } }, o), {}, { element: t }))
               }),
               b()(d()(e), '_focusOnEditButton', function () {
                 var t, n
@@ -364,21 +324,21 @@
               }),
               b()(d()(e), '_getEditIcon', function () {
                 var t = e.props.withGrayIcons && T.colorDeepGray
-                return g.a.createElement(E.a, { style: t })
+                return g.a.createElement(I.a, { style: t })
               }),
               b()(d()(e), '_getScribeMomentItem', function () {
                 var t = e.props,
                   n = t.isTOO,
                   i = t.lastPublishedTime,
-                  r = t.momentId,
-                  a = t.visibilityMode
-                return x.a.getMomentItem(r, a, i, n)
+                  a = t.momentId,
+                  r = t.visibilityMode
+                return x.a.getMomentItem(a, r, i, n)
               }),
               e
             )
           }
           return (
-            l()(n, [
+            s()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -386,41 +346,41 @@
                     t = e.author,
                     n = e.momentId,
                     i = e.redirectOnDelete,
-                    r = e.scribeNamespace,
-                    a = e.size,
+                    a = e.scribeNamespace,
+                    r = e.size,
                     o = e.title,
                     c = e.withGrayIcons,
-                    l = e.withLinkAction,
-                    s = this._getEditIcon()
+                    s = e.withLinkAction,
+                    l = this._getEditIcon()
                   return g.a.createElement(
-                    O.a,
+                    A.a,
                     { style: T.buttonContainer },
                     g.a.createElement(
-                      I.a,
+                      k.a,
                       { handlers: b()({}, M.b.rightEditingPreviewPanel, this._focusOnEditButton) },
                       g.a.createElement(w, {
-                        icon: s,
+                        icon: l,
                         link: '/i/moment_maker/edit/'.concat(n),
                         onPress: this._handleClickEdit,
                         ref: this._editButton,
-                        size: a,
+                        size: r,
                         style: T.button,
                         type: c ? 'brandText' : void 0,
                       }),
                     ),
-                    g.a.createElement(k.a, {
+                    g.a.createElement(E.a, {
                       author: t,
                       eventId: n,
                       iconStyle: c ? T.colorDeepGray : void 0,
                       redirectOnDelete: i,
                       scribeMomentItem: this._getScribeMomentItem(),
-                      scribeNamespace: r,
-                      size: a,
+                      scribeNamespace: a,
+                      size: r,
                       style: T.buttonExtraSpace,
                       title: o,
                       type: c ? 'brandText' : void 0,
                       withEditAction: !1,
-                      withLinkAction: l,
+                      withLinkAction: s,
                     }),
                   )
                 },
@@ -429,7 +389,7 @@
             n
           )
         })(g.a.Component),
-        T = S.a.create(function (e) {
+        T = P.a.create(function (e) {
           return {
             buttonContainer: { flexDirection: 'row' },
             button: { marginRight: e.spaces.space4 },
@@ -437,7 +397,7 @@
             colorDeepGray: { color: e.colors.gray700 },
           }
         })
-      t.a = Object(P.a)(A)
+      t.a = Object(O.a)(S)
     },
     ObVQ: function (e, t, n) {
       'use strict'
@@ -445,12 +405,12 @@
         return c
       }),
         n.d(t, 'a', function () {
-          return l
+          return s
         })
       n('yH/f')
       var i = n('3XMw'),
-        r = n.n(i),
-        a = n('oQhu'),
+        a = n.n(i),
+        r = n('oQhu'),
         o = n('OrGc'),
         c = Object.freeze({
           editingPanelNextItem: 'w',
@@ -461,20 +421,20 @@
           addTweet: 'i t',
           removeTweet: 'd t',
         }),
-        l = Object(a.a)(function (e) {
+        s = Object(r.a)(function (e) {
           return [
-            { description: r.a.d5696fcb, keys: o.e.openKeyboardShortcuts, universal: !0 },
-            { description: r.a.e814ed10, keys: c.editingPanelNextItem, universal: !0 },
-            { description: r.a.c1250b41, keys: c.editingPanelPreviousItem, universal: !0 },
-            { description: r.a.ddd4bf24, keys: o.e.nextItem, universal: !0 },
-            { description: r.a.ia2742f9, keys: o.e.previousItem, universal: !0 },
-            { description: r.a.a8b6f61a, keys: 'space', universal: !1 },
-            { description: r.a.dfe59ab8, keys: 'esc', universal: !1 },
-            { description: r.a.c602967d, keys: c.rightEditingPreviewPanel, universal: !1 },
-            { description: r.a.g42208cb, keys: c.leftNavigationMenuPanel, universal: !1 },
-            { description: r.a.gf73b335, keys: c.tweetDiscoveryPanel, universal: !1 },
-            { description: r.a.g45af04e, keys: c.addTweet, universal: !1 },
-            { description: r.a.ee9c4013, keys: c.removeTweet, universal: !1 },
+            { description: a.a.d5696fcb, keys: o.e.openKeyboardShortcuts, universal: !0 },
+            { description: a.a.e814ed10, keys: c.editingPanelNextItem, universal: !0 },
+            { description: a.a.c1250b41, keys: c.editingPanelPreviousItem, universal: !0 },
+            { description: a.a.ddd4bf24, keys: o.e.nextItem, universal: !0 },
+            { description: a.a.ia2742f9, keys: o.e.previousItem, universal: !0 },
+            { description: a.a.a8b6f61a, keys: 'space', universal: !1 },
+            { description: a.a.dfe59ab8, keys: 'esc', universal: !1 },
+            { description: a.a.c602967d, keys: c.rightEditingPreviewPanel, universal: !1 },
+            { description: a.a.g42208cb, keys: c.leftNavigationMenuPanel, universal: !1 },
+            { description: a.a.gf73b335, keys: c.tweetDiscoveryPanel, universal: !1 },
+            { description: a.a.g45af04e, keys: c.addTweet, universal: !1 },
+            { description: a.a.ee9c4013, keys: c.removeTweet, universal: !1 },
           ]
         })
     },
@@ -482,12 +442,12 @@
       'use strict'
       n.r(t)
       var i,
-        r,
         a,
+        r,
         o = n('yiKp'),
         c = n.n(o),
-        l = (n('Blm6'), n('1t7P'), n('jQ/y'), n('ezF+')),
-        s = n('VPAj'),
+        s = (n('Blm6'), n('1t7P'), n('jQ/y'), n('ezF+')),
+        l = n('VPAj'),
         d = n('Fg8X'),
         u = n('VrFO'),
         m = n.n(u),
@@ -501,62 +461,62 @@
         C = n.n(y),
         _ = n('KEM+'),
         w = n.n(_),
-        E = (n('2G9S'), n('0mK8')),
-        I = n('ERkP'),
-        k = n.n(I),
+        I = (n('2G9S'), n('0mK8')),
+        k = n('ERkP'),
+        E = n.n(k),
         M = n('BUB3'),
         x = n('3XMw'),
-        O = n.n(x),
-        P = n('MREw'),
-        S = n('MWbm'),
-        A = n('htQn'),
+        A = n.n(x),
+        O = n('MREw'),
+        P = n('MWbm'),
+        S = n('htQn'),
         T = n('pjBI'),
         L = n('t62R'),
-        B = n('GBcw'),
-        R = n('3dad'),
-        z = n('TIdA'),
+        z = n('GBcw'),
+        B = n('3dad'),
+        R = n('TIdA'),
         D = n('A91F'),
         j = n('9Xij'),
         N = n('Wms4'),
         V = n('rHpw'),
         H = n('29/U'),
-        W = n('TnY3'),
-        F = { page: 'moment_maker', section: 'landing', component: 'moment_summary' },
-        G = O.a.a1d5303c,
-        K = O.a.cc8f8a8f,
-        U = O.a.c33a97d6,
-        Y = O.a.i7e9ecf2,
-        q = O.a.jceadc3e,
+        F = n('TnY3'),
+        G = { page: 'moment_maker', section: 'landing', component: 'moment_summary' },
+        W = A.a.a1d5303c,
+        K = A.a.cc8f8a8f,
+        U = A.a.c33a97d6,
+        Y = A.a.i7e9ecf2,
+        q = A.a.jceadc3e,
         X =
           ((i = {}),
           w()(i, H.d.private, 'magenta500'),
           w()(i, H.d.public, 'green500'),
           w()(i, H.d.unlisted, 'gray700'),
           i),
-        Q = ((r = {}), w()(r, H.d.private, G), w()(r, H.d.public, U), w()(r, H.d.unlisted, K), r),
+        Q = ((a = {}), w()(a, H.d.private, W), w()(a, H.d.public, U), w()(a, H.d.unlisted, K), a),
         J =
-          ((a = {}),
-          w()(a, H.b.CurationStudio, 'Curation Studio'),
-          w()(a, H.b.MomentMakerPro, 'Moment Maker Pro'),
-          w()(a, H.b.MomentMakerLite, void 0),
-          w()(a, H.b.MomentMakerMobile, void 0),
-          a),
+          ((r = {}),
+          w()(r, H.b.CurationStudio, 'Curation Studio'),
+          w()(r, H.b.MomentMakerPro, 'Moment Maker Pro'),
+          w()(r, H.b.MomentMakerLite, void 0),
+          w()(r, H.b.MomentMakerMobile, void 0),
+          r),
         Z = (function (e) {
           g()(n, e)
           var t = C()(n)
           function n() {
             var e
             m()(this, n)
-            for (var i = arguments.length, r = new Array(i), a = 0; a < i; a++) r[a] = arguments[a]
+            for (var i = arguments.length, a = new Array(i), r = 0; r < i; r++) a[r] = arguments[r]
             return (
-              (e = t.call.apply(t, [this].concat(r))),
+              (e = t.call.apply(t, [this].concat(a))),
               w()(b()(e), '_renderAuthorMomentSummary', function () {
                 var t = e.props.onClick,
                   n = e._getLinkToPreview(),
                   i = { pathname: n, anchorless: !0 }
-                return k.a.createElement(M.a, { exact: !1, path: n }, function (n) {
-                  return k.a.createElement(
-                    A.a,
+                return E.a.createElement(M.a, { exact: !1, path: n }, function (n) {
+                  return E.a.createElement(
+                    S.a,
                     {
                       accessibilityRole: 'tab',
                       accessibilityState: { selected: n },
@@ -564,33 +524,33 @@
                       onClick: t,
                       style: ne.root,
                     },
-                    k.a.createElement(
-                      S.a,
+                    E.a.createElement(
+                      P.a,
                       { style: ne.leftContainer },
                       e._renderTitle(),
                       e._renderDescription(),
-                      k.a.createElement(
-                        S.a,
+                      E.a.createElement(
+                        P.a,
                         { style: ne.topMargin },
-                        k.a.createElement(T.a, null, e._renderVisibilityLabel(), e._renderCreationSource()),
+                        E.a.createElement(T.a, null, e._renderVisibilityLabel(), e._renderCreationSource()),
                       ),
                       e._renderLastModifiedTime(),
                     ),
-                    k.a.createElement(S.a, { style: ne.rightContainer }, e._renderCoverImage(), e._renderButtons()),
+                    E.a.createElement(P.a, { style: ne.rightContainer }, e._renderCoverImage(), e._renderButtons()),
                   )
                 })
               }),
               w()(b()(e), '_renderViewerMomentSummary', function () {
                 var t = e.props.onClick
-                return k.a.createElement(
-                  A.a,
+                return E.a.createElement(
+                  S.a,
                   { link: e._getLinkToMoment(), onClick: t, style: ne.root },
-                  k.a.createElement(
-                    S.a,
+                  E.a.createElement(
+                    P.a,
                     { style: ne.leftContainer },
                     e._renderAuthorCategory(),
                     e._renderTitle(),
-                    k.a.createElement(S.a, { style: ne.topMarginSmall }, e._renderVisibilityLabel()),
+                    E.a.createElement(P.a, { style: ne.topMarginSmall }, e._renderVisibilityLabel()),
                   ),
                   e._renderCoverImage(),
                 )
@@ -599,23 +559,23 @@
                 var t = e.props,
                   n = t.author,
                   i = t.category,
-                  r = t.isTOO,
-                  a = t.lastPublishedTime,
-                  o = r
+                  a = t.isTOO,
+                  r = t.lastPublishedTime,
+                  o = a
                     ? i
-                      ? k.a.createElement(L.b, { color: 'gray700', size: 'subtext2' }, i)
+                      ? E.a.createElement(L.b, { color: 'gray700', size: 'subtext2' }, i)
                       : null
                     : n
-                    ? k.a.createElement(E.a, { author: n, size: 'subtext2' })
+                    ? E.a.createElement(I.a, { author: n, size: 'subtext2' })
                     : null
-                return k.a.createElement(
-                  S.a,
+                return E.a.createElement(
+                  P.a,
                   { style: ne.authorCategoryContainer },
-                  k.a.createElement(
+                  E.a.createElement(
                     T.a,
                     { style: ne.horizontalContainer },
                     o,
-                    a ? k.a.createElement(L.b, { size: 'subtext2' }, k.a.createElement(B.a, { timestamp: a })) : null,
+                    r ? E.a.createElement(L.b, { size: 'subtext2' }, E.a.createElement(z.a, { timestamp: r })) : null,
                   ),
                 )
               }),
@@ -623,22 +583,22 @@
                 var t = e.props,
                   n = t.title,
                   i = t.withAuthorControls,
-                  r = n || q
+                  a = n || q
                 return i
-                  ? k.a.createElement(
+                  ? E.a.createElement(
                       L.b,
                       { numberOfLines: 2, size: 'headline1', weight: 'heavy', withHashflags: !0 },
-                      r,
+                      a,
                     )
-                  : k.a.createElement(L.b, { weight: 'bold', withHashflags: !0 }, r)
+                  : E.a.createElement(L.b, { weight: 'bold', withHashflags: !0 }, a)
               }),
               w()(b()(e), '_renderDescription', function () {
                 var t = e.props.description
                 return t
-                  ? k.a.createElement(
-                      S.a,
+                  ? E.a.createElement(
+                      P.a,
                       { style: ne.topMargin },
-                      k.a.createElement(
+                      E.a.createElement(
                         L.b,
                         { color: 'gray700', numberOfLines: 3, size: 'body', withHashflags: !0 },
                         t,
@@ -648,46 +608,46 @@
               }),
               w()(b()(e), '_renderCoverImage', function () {
                 var t = e.props.coverMedia,
-                  n = t && R.a.getOriginalImage(t)
-                return k.a.createElement(
-                  S.a,
+                  n = t && B.a.getOriginalImage(t)
+                return E.a.createElement(
+                  P.a,
                   { style: ne.coverContainer },
                   n && t
-                    ? k.a.createElement(z.a, {
+                    ? E.a.createElement(R.a, {
                         accessibilityLabel: '',
                         aspectMode: D.a.SQUARE,
-                        backgroundColor: R.a.getBackgroundColor(t),
-                        cropCandidates: R.a.getCropCandidates(t),
+                        backgroundColor: B.a.getBackgroundColor(t),
+                        cropCandidates: B.a.getCropCandidates(t),
                         image: n,
                       })
-                    : k.a.createElement(j.a, { ratio: 1 }, k.a.createElement(E.c, { icon: 'lightning' })),
-                  t ? k.a.createElement(E.b, { style: ne.lightningBadge }) : null,
+                    : E.a.createElement(j.a, { ratio: 1 }, E.a.createElement(I.c, { icon: 'lightning' })),
+                  t ? E.a.createElement(I.b, { style: ne.lightningBadge }) : null,
                 )
               }),
               w()(b()(e), '_renderButtons', function () {
                 var t = e.props,
                   n = t.author,
                   i = t.isCurationStudioMoment,
-                  r = t.isTOO,
-                  a = t.lastPublishedTime,
+                  a = t.isTOO,
+                  r = t.lastPublishedTime,
                   o = t.location.pathname,
                   c = t.momentId,
-                  l = t.title,
-                  s = t.visibilityMode,
+                  s = t.title,
+                  l = t.visibilityMode,
                   d = o === e._getLinkToPreview()
-                return k.a.createElement(
-                  S.a,
+                return E.a.createElement(
+                  P.a,
                   { style: ne.buttonContainer },
-                  k.a.createElement(P.a, {
+                  E.a.createElement(O.a, {
                     author: n,
-                    isTOO: r,
-                    lastPublishedTime: a,
+                    isTOO: a,
+                    lastPublishedTime: r,
                     momentId: c,
                     redirectOnDelete: d ? '/i/moment_maker' : void 0,
-                    scribeNamespace: F,
+                    scribeNamespace: G,
                     size: 'xSmall',
-                    title: l,
-                    visibilityMode: s,
+                    title: s,
+                    visibilityMode: l,
                     withGrayIcons: !0,
                     withLinkAction: !i,
                   }),
@@ -698,31 +658,31 @@
                   n = t.visibilityMode
                 if (t.withAuthorControls || n !== H.d.public) {
                   var i = X[n],
-                    r = Q[n]
-                  return i && r ? k.a.createElement(L.b, { color: i, weight: 'bold' }, r) : null
+                    a = Q[n]
+                  return i && a ? E.a.createElement(L.b, { color: i, weight: 'bold' }, a) : null
                 }
               }),
               w()(b()(e), '_renderCreationSource', function () {
                 var t = e.props.creationSource,
                   n = t && J[t]
-                return n ? k.a.createElement(L.b, { color: 'gray700' }, n) : null
+                return n ? E.a.createElement(L.b, { color: 'gray700' }, n) : null
               }),
               w()(b()(e), '_renderLastModifiedTime', function () {
                 var t = e.props,
                   n = t.hasUnpublishedChanges,
                   i = t.lastModifiedTime,
-                  r = t.visibilityMode
+                  a = t.visibilityMode
                 return i
-                  ? k.a.createElement(
-                      S.a,
+                  ? E.a.createElement(
+                      P.a,
                       { style: ne.horizontalContainer },
-                      n && r !== H.d.private
-                        ? k.a.createElement(N.a, { background: 'orange500', style: ne.pendingChangesLabel }, Y)
+                      n && a !== H.d.private
+                        ? E.a.createElement(N.a, { background: 'orange500', style: ne.pendingChangesLabel }, Y)
                         : null,
-                      k.a.createElement(
+                      E.a.createElement(
                         L.b,
                         { color: 'gray700', size: 'subtext2' },
-                        k.a.createElement(B.a, { humanReadable: !0, timestamp: i }),
+                        E.a.createElement(z.a, { humanReadable: !0, timestamp: i }),
                       ),
                     )
                   : null
@@ -751,7 +711,7 @@
             ]),
             n
           )
-        })(k.a.Component),
+        })(E.a.Component),
         $ = '15%',
         ee = '100px',
         te = '70px',
@@ -791,15 +751,15 @@
             buttonContainer: { marginTop: e.spaces.space16, width: '100%' },
           }
         }),
-        ie = Object(W.a)(Z),
-        re = n('zh9S'),
-        ae = n('Rp9C'),
+        ie = Object(F.a)(Z),
+        ae = n('zh9S'),
+        re = n('Rp9C'),
         oe = n('RqPI'),
         ce = function (e) {
           e.errorContext
-          return Object(s.a)({ scribe: re.c })
+          return Object(l.a)({ scribe: ae.c })
         },
-        le = function (e) {
+        se = function (e) {
           var t = e.entry
           return {
             author: function (e) {
@@ -823,34 +783,34 @@
             },
           }
         },
-        se = function (e) {
+        le = function (e) {
           var t = e.withAuthorControls
           return function (e) {
             var n = e.actions.scribe,
               i = e.data,
-              r = i.author,
-              a = i.coverMedia,
+              a = i.author,
+              r = i.coverMedia,
               o = i.isCurationStudioMoment,
-              l = (i.isLoggedIn, i.isTOO),
-              s = i.moment,
+              s = (i.isLoggedIn, i.isTOO),
+              l = i.moment,
               d = i.visibilityMode,
               u = e.entry,
               m = e.scribeNamespace
-            if (!s) return null
+            if (!l) return null
             var h = (function (e) {
               var t = e.entry,
                 n = e.moment,
                 i = c()(
-                  c()({}, ae.a.getMomentItem(n.id, n.visibility_mode, n.last_publish_time, !n.author)),
-                  ae.a.getAllSurfaceDetails(t.itemMetadata.clientEventInfo),
+                  c()({}, re.a.getMomentItem(n.id, n.visibility_mode, n.last_publish_time, !n.author)),
+                  re.a.getAllSurfaceDetails(t.itemMetadata.clientEventInfo),
                 ),
-                r =
+                a =
                   t.itemMetadata &&
                   t.itemMetadata.clientEventInfo &&
                   t.itemMetadata.clientEventInfo.details &&
                   t.itemMetadata.clientEventInfo.details.momentsDetails
-              if (r) {
-                var a = r.contextScribeInfo && r.contextScribeInfo.position
+              if (a) {
+                var r = a.contextScribeInfo && a.contextScribeInfo.position
                 return c()(
                   c()({}, i),
                   {},
@@ -858,30 +818,30 @@
                     moments_details: c()(
                       c()({}, i.moments_details),
                       {},
-                      { guide_category_id: r.guideCategoryId, impression_id: r.impressionId },
+                      { guide_category_id: a.guideCategoryId, impression_id: a.impressionId },
                     ),
-                    position: a ? parseInt(a, 10) : void 0,
+                    position: r ? parseInt(r, 10) : void 0,
                   },
                 )
               }
               return i
-            })({ entry: u, moment: s })
+            })({ entry: u, moment: l })
             return {
-              author: r,
-              category: s.subcategory_string,
-              coverMedia: a,
-              creationSource: s.creation_source,
-              description: s.description || '',
+              author: a,
+              category: l.subcategory_string,
+              coverMedia: r,
+              creationSource: l.creation_source,
+              description: l.description || '',
               isCurationStudioMoment: o,
-              isTOO: l,
-              hasUnpublishedChanges: s.has_unpublished_changes,
-              lastModifiedTime: s.last_modified_time,
-              lastPublishedTime: s.last_publish_time,
-              momentId: s.id,
+              isTOO: s,
+              hasUnpublishedChanges: l.has_unpublished_changes,
+              lastModifiedTime: l.last_modified_time,
+              lastPublishedTime: l.last_publish_time,
+              momentId: l.id,
               onClick: function () {
                 n(c()(c()({}, m), {}, { component: 'moment_summary', action: 'click' }), { items: [h] })
               },
-              title: s.title || '',
+              title: l.title || '',
               visibilityMode: d,
               withAuthorControls: t,
             }
@@ -890,12 +850,12 @@
       t.default = function (e) {
         var t = e.errorContext,
           n = e.withAuthorControls
-        return l.g({
-          isFocusable: Object(s.a)(!0),
+        return s.g({
+          isFocusable: Object(l.a)(!0),
           component: ie,
           bindActions: ce({ errorContext: t }),
-          selectData: le,
-          createProps: se({ withAuthorControls: n }),
+          selectData: se,
+          createProps: le({ withAuthorControls: n }),
         })
       }
     },
@@ -905,13 +865,13 @@
         return $
       })
       var i = n('VrFO'),
-        r = n.n(i),
-        a = n('Y9Ll'),
-        o = n.n(a),
+        a = n.n(i),
+        r = n('Y9Ll'),
+        o = n.n(r),
         c = n('1Pcy'),
-        l = n.n(c),
-        s = n('5Yy7'),
-        d = n.n(s),
+        s = n.n(c),
+        l = n('5Yy7'),
+        d = n.n(l),
         u = n('2VqO'),
         m = n.n(u),
         h = n('KEM+'),
@@ -924,66 +884,66 @@
         C = n.n(y),
         _ = n('1YZw'),
         w = n('Fg8X'),
-        E = n('n4jD'),
-        I = n('RqPI'),
-        k = n('iUle'),
+        I = n('n4jD'),
+        k = n('RqPI'),
+        E = n('iUle'),
         M = function (e) {
           return function (t, n, i) {
-            var r = i.api,
-              a = n(),
-              o = Object(I.q)(a) || '',
-              c = Object(E.c)(a),
-              l = Object(k.a)(o),
-              s = { moment_id: e, teamUserId: c }
-            return r.Moments.delete(s).then(function () {
-              t([w.a.deleteOne(e), l.removeEntry('moment-'.concat(e))])
+            var a = i.api,
+              r = n(),
+              o = Object(k.q)(r) || '',
+              c = Object(I.c)(r),
+              s = Object(E.a)(o),
+              l = { moment_id: e, teamUserId: c }
+            return a.Moments.delete(l).then(function () {
+              t([w.a.deleteOne(e), s.removeEntry('moment-'.concat(e))])
             })
           }
         },
         x = n('rxPX'),
-        O = Object(x.a)()
+        A = Object(x.a)()
           .propsFromState(function () {
-            return { activeTeamId: E.c }
+            return { activeTeamId: I.c }
           })
           .propsFromActions(function () {
             return { addToast: _.b, deleteMoment: M }
           })
           .withAnalytics({ component: 'action_sheet' }),
-        P = n('ACNv'),
-        S = n('3XMw'),
-        A = n.n(S),
+        O = n('ACNv'),
+        P = n('3XMw'),
+        S = n.n(P),
         T = n('Rp9C'),
         L = n('TnY3'),
-        B = n('v6aA'),
-        R = n('hiGS'),
-        z = n('I/9y'),
+        z = n('v6aA'),
+        B = n('hiGS'),
+        R = n('I/9y'),
         D = n('TW8A'),
         j = n('xrkw'),
         N = n('zIWA'),
-        V = A.a.e8dff578,
-        H = A.a.fcc64f01,
-        W = A.a.ea193d66,
-        F = A.a.e5227fe0,
-        G = A.a.d0df844c,
-        K = A.a.fd61ab81,
-        U = A.a.aaae5e7f,
-        Y = A.a.d96cf7cd,
-        q = A.a.e7718461,
+        V = S.a.e8dff578,
+        H = S.a.fcc64f01,
+        F = S.a.ea193d66,
+        G = S.a.e5227fe0,
+        W = S.a.d0df844c,
+        K = S.a.fd61ab81,
+        U = S.a.aaae5e7f,
+        Y = S.a.d96cf7cd,
+        q = S.a.e7718461,
         X = (function (e) {
           d()(n, e)
           var t = m()(n)
           function n() {
             var e
-            r()(this, n)
-            for (var i = arguments.length, a = new Array(i), o = 0; o < i; o++) a[o] = arguments[o]
+            a()(this, n)
+            for (var i = arguments.length, r = new Array(i), o = 0; o < i; o++) r[o] = arguments[o]
             return (
-              (e = t.call.apply(t, [this].concat(a))),
-              p()(l()(e), '_getActionItems', function () {
+              (e = t.call.apply(t, [this].concat(r))),
+              p()(s()(e), '_getActionItems', function () {
                 var t = e.props,
                   n = t.author,
                   i = t.id,
-                  r = t.withEditAction,
-                  a = t.withLinkAction,
+                  a = t.withEditAction,
+                  r = t.withLinkAction,
                   o = []
                 return (
                   e._isOwner()
@@ -991,78 +951,78 @@
                         confirmation: { label: Y, headline: K, text: U, confirmButtonType: 'destructiveFilled' },
                         isEmphasized: !0,
                         onClick: e._handleDeleteConfirm,
-                        text: W,
-                        Icon: R.a,
+                        text: F,
+                        Icon: B.a,
                       }),
-                      a && o.push({ link: '/i/events/'.concat(i), onClick: e._handleClickLink, text: F, Icon: z.a }),
-                      r && o.push({ link: '/i/moment_maker/edit/'.concat(i), text: V, Icon: D.a }),
+                      r && o.push({ link: '/i/events/'.concat(i), onClick: e._handleClickLink, text: G, Icon: R.a }),
+                      a && o.push({ link: '/i/moment_maker/edit/'.concat(i), text: V, Icon: D.a }),
                       o.push({
                         link: '/i/moments/'.concat(i, '/analytics'),
                         onClick: e._handleNavigateAnalytics,
-                        text: G,
+                        text: W,
                         Icon: j.a,
                       }))
                     : n && o.push({ onClick: e._handleReport, text: H, Icon: N.a }),
                   o
                 )
               }),
-              p()(l()(e), '_handleReport', function () {
+              p()(s()(e), '_handleReport', function () {
                 var t = e.props,
                   n = t.analytics.contextualScribeNamespace,
                   i = t.history,
-                  r = t.id,
-                  a = t.scribeNamespace,
-                  o = C()(C()({}, n), a)
+                  a = t.id,
+                  r = t.scribeNamespace,
+                  o = C()(C()({}, n), r)
                 i.push({
-                  pathname: '/i/report/moment/'.concat(r),
+                  pathname: '/i/report/moment/'.concat(a),
                   state: { clientReferer: window.location.pathname, isMedia: !0, scribeNamespace: o },
                 })
               }),
-              p()(l()(e), '_handleClickLink', function () {
+              p()(s()(e), '_handleClickLink', function () {
                 e._scribeAction('click', 'link_button')
               }),
-              p()(l()(e), '_handleNavigateAnalytics', function () {
+              p()(s()(e), '_handleNavigateAnalytics', function () {
                 e._scribeAction('moment_analytics')
               }),
-              p()(l()(e), '_handleDeleteConfirm', function () {
+              p()(s()(e), '_handleDeleteConfirm', function () {
                 var t = e.props,
                   n = t.addToast,
                   i = t.deleteMoment,
-                  r = t.history,
-                  a = t.id,
+                  a = t.history,
+                  r = t.id,
                   o = t.redirectOnDelete
-                i(a).then(function () {
+                i(r).then(function () {
                   e._scribeAction('delete'),
                     n({ text: q }),
-                    o && r.goBack({ backLocation: o, shouldReplaceOnFallback: !0 })
+                    o && a.goBack({ backLocation: o, shouldReplaceOnFallback: !0 })
                 })
               }),
-              p()(l()(e), '_scribeAction', function (t, n) {
+              p()(s()(e), '_scribeAction', function (t, n) {
                 var i = e.props,
-                  r = i.analytics,
-                  a = i.id,
+                  a = i.analytics,
+                  r = i.id,
                   o = i.scribeMomentItem,
                   c = i.scribeNamespace,
-                  l = C()(
-                    C()({}, r.contextualScribeData),
+                  s = C()(
+                    C()({}, a.contextualScribeData),
                     {},
                     {
                       items: [].concat(
-                        g()(r.contextualScribeData && r.contextualScribeData.items ? r.contextualScribeData.items : []),
-                        [o || T.a.getMomentItem(a)],
+                        g()(a.contextualScribeData && a.contextualScribeData.items ? a.contextualScribeData.items : []),
+                        [o || T.a.getMomentItem(r)],
                       ),
                     },
                   )
-                r.scribe(C()({ action: t, data: l, element: n }, c))
+                a.scribe(C()({ action: t, data: s, element: n }, c))
               }),
-              p()(l()(e), '_isOwner', function () {
+              p()(s()(e), '_isOwner', function () {
                 var t = e.props,
                   n = t.activeTeamId,
                   i = t.author,
-                  r = e.context.loggedInUserId,
-                  a = r && (null == i ? void 0 : i.id_str) === r,
+                  a = e.context.loggedInUserId,
+                  r = a && (null == i ? void 0 : i.id_str) === a,
                   o = n && (null == i ? void 0 : i.id_str) === n
-                return !!a || !!o
+                return !!r || !!o
               }),
               e
             )
@@ -1073,7 +1033,7 @@
                 key: 'render',
                 value: function () {
                   return this.context.loggedInUserId
-                    ? b.a.createElement(P.default, { actionItems: this._getActionItems(), onClose: this.props.onClose })
+                    ? b.a.createElement(O.default, { actionItems: this._getActionItems(), onClose: this.props.onClose })
                     : null
                 },
               },
@@ -1081,8 +1041,8 @@
             n
           )
         })(b.a.Component)
-      p()(X, 'contextType', B.a)
-      var Q = O(X),
+      p()(X, 'contextType', z.a)
+      var Q = A(X),
         J = Object(L.a)(Q),
         Z = n('2G3J'),
         $ = (function (e) {
@@ -1090,29 +1050,29 @@
           var t = m()(n)
           function n() {
             var e
-            r()(this, n)
-            for (var i = arguments.length, a = new Array(i), o = 0; o < i; o++) a[o] = arguments[o]
+            a()(this, n)
+            for (var i = arguments.length, r = new Array(i), o = 0; o < i; o++) r[o] = arguments[o]
             return (
-              (e = t.call.apply(t, [this].concat(a))),
-              p()(l()(e), '_renderMenu', function (t) {
+              (e = t.call.apply(t, [this].concat(r))),
+              p()(s()(e), '_renderMenu', function (t) {
                 var n = e.props,
                   i = n.author,
-                  r = n.eventId,
-                  a = n.redirectOnDelete,
+                  a = n.eventId,
+                  r = n.redirectOnDelete,
                   o = n.scribeMomentItem,
                   c = n.scribeNamespace,
-                  l = n.title,
-                  s = n.withEditAction,
+                  s = n.title,
+                  l = n.withEditAction,
                   d = n.withLinkAction
                 return b.a.createElement(J, {
                   author: i,
-                  id: r,
+                  id: a,
                   onClose: t,
-                  redirectOnDelete: a,
+                  redirectOnDelete: r,
                   scribeMomentItem: o,
                   scribeNamespace: c,
-                  title: l,
-                  withEditAction: s,
+                  title: s,
+                  withEditAction: l,
                   withLinkAction: d,
                 })
               }),
@@ -1128,15 +1088,15 @@
                     t = e.iconStyle,
                     n = e.onPress,
                     i = e.size,
-                    r = e.style,
-                    a = e.type
+                    a = e.style,
+                    r = e.type
                   return b.a.createElement(Z.a, {
                     iconStyle: t,
                     onPress: n,
                     renderMenu: this._renderMenu,
                     size: i,
-                    style: r,
-                    type: a,
+                    style: a,
+                    type: r,
                   })
                 },
               },
@@ -1149,17 +1109,17 @@
     hiGS: function (e, t, n) {
       'use strict'
       var i = n('yiKp'),
-        r = n.n(i),
-        a = n('ERkP'),
-        o = n.n(a),
+        a = n.n(i),
+        r = n('ERkP'),
+        o = n.n(r),
         c = n('Lsrn'),
-        l = n('k/Ka'),
-        s = function () {
+        s = n('k/Ka'),
+        l = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(l.a)(
+          return Object(s.a)(
             'svg',
-            r()(
-              r()({}, e),
+            a()(
+              a()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
@@ -1179,7 +1139,7 @@
             ),
           )
         }
-      ;(s.metadata = { width: 24, height: 24 }), (t.a = s)
+      ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
     },
   },
 ])

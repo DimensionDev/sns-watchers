@@ -1861,7 +1861,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bec3b8f9', 'Share Community'),
           a('b139b549', 'Invite members'),
           a('d601fc2f', 'Latest'),
-          a('hb9400db', 'See More'),
+          a('e6057013', 'Ask to join'),
           a('aa7ae3f6', 'Joined'),
           a('hafa07f2', 'Participation is limited'),
           a('c15bee31', 'You’ve been removed from this Community'),
@@ -1874,6 +1874,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a0e0a52b', function (e) {
             return '' + e.offendingRule
           }),
+          a('hb9400db', 'See More'),
           a('c18e3a3e', 'There aren’t any Tweets in this Community'),
           a('d68146c0', 'When anyone in this Community Tweets, they’ll show up here.'),
           a('h5245afa', 'Community'),
@@ -1917,6 +1918,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g30bc699', function (e) {
             return 'View @' + e.screenName + ' profile'
           }),
+          a('ef4602eb', 'Something went wrong. Please try again later.'),
           a('c9d56b71', 'Tell us a little about your Community. You can always change these details later.'),
           a('c1ad5a11', 'Looks like we’re having trouble creating your new Community. Please try again later.'),
           a('h3e55b40', 'Community name'),
@@ -2249,10 +2251,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d035a8d0', 'Ads preferences'),
           a('d0b74a5a', 'Cookie preferences'),
           a('bcae496c', 'Off-Twitter activity'),
-          a('h14ba864', 'Data sharing with business partners'),
-          a('jabb9c9a', 'Location information'),
-          a('eb029cab', 'Add location information to your Tweets')
-        a('bcd81cab', 'Preferences'),
+          a('h14ba864', 'Data sharing with business partners')
+        a('jabb9c9a', 'Location information'),
+          a('eb029cab', 'Add location information to your Tweets'),
+          a('bcd81cab', 'Preferences'),
           a('i647fb03', 'Filters'),
           a('cf9b1669', 'Accessibility, display, and languages'),
           a('a776eed7', 'Autoplay'),
@@ -3224,9 +3226,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d93271e2', 'Show category'),
           a('h26379fe', 'If enabled, the category will be visible in your profile.'),
           a('f386777a', 'Switch account type'),
-          a('db48309f', 'Switched to Personal account'),
-          a('c701200b', 'Switched to Business account'),
-          a('acd8da09', 'Switched to Creator account'),
           a('ia492079', 'Yes, switch'),
           a('a9b5e3a9', 'No, cancel'),
           a('cb55eccd', 'Switch to Personal account'),
@@ -3241,6 +3240,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d0c3f02d', 'Switch to Creator account'),
           a('a01e84ef', 'Switch to a Creator account?'),
           a('e8af8ef3', 'This is best for public figures, artists, and influencers.'),
+          a('db48309f', 'Switched to Personal account'),
+          a('c701200b', 'Switched to Business account'),
+          a('acd8da09', 'Switched to Creator account'),
           a('aaafffd9', 'Muted notifications'),
           a('j29ab12f', 'Mute notifications from people:'),
           a('jdfc82f6', 'You don’t follow'),
@@ -3513,13 +3515,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ba4aaa9d', 'Unmute phrase?'),
           a('f837ed7d', 'This phrase will now be allowed in your notifications and Home timeline.'),
           a('a6194d10', 'Loading muted accounts'),
-          a('ga3ef87d', 'You aren’t muting anyone'),
-          a('cd9701d3', 'When you mute accounts, you won’t see their Tweets in your timeline.'),
+          a('ga3ef87d', 'You aren’t muting anyone')
+        a('cd9701d3', 'When you mute accounts, you won’t see their Tweets in your timeline.'),
           a(
             'b8e49590',
             'When you mute accounts, their messages will be filtered and sent to the bottom of your message request list.',
-          )
-        a('e565cad5', 'Learn more'),
+          ),
+          a('e565cad5', 'Learn more'),
           a('hfb77cf5', 'Safety'),
           a('f350f0c0', 'Recommendations'),
           a('cb9bb63f', 'Select which languages you want recommended Tweets, people, and trends to include.'),
@@ -4179,6 +4181,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('a99d8e60', 'Upload longer videos'),
           a('fb00a8ee', 'From your desktop, you can upload and Tweet videos that are up to 10-minutes long.'),
+          a('h7693c0d', 'You can upload and Tweet videos that are up to 10-minutes long.'),
           a('baf97715', 'Your features will be available for the remainder of your billing period.'),
           a('fff413dc', 'Manage payment and subscription info'),
           a('h80834de', 'other'),
@@ -4720,10 +4723,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c3e6226a', 'Remove member'),
           a('a62c9c33', 'Follow your interests.'),
           a('cf39fca2', 'Hear what people are talking about.'),
-          a('j86184fd', 'Join the conversation.'),
-          a('d9e109ae', 'Join Twitter today.'),
-          a('f86f23b5', 'Sign in to Twitter'),
-          a('eba1b197', 'Happening now')
+          a('j86184fd', 'Join the conversation.')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4740,7 +4740,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('fa811c30', 'Already have an account?'),
+        a('d9e109ae', 'Join Twitter today.'),
+          a('f86f23b5', 'Sign in to Twitter'),
+          a('eba1b197', 'Happening now'),
+          a('fa811c30', 'Already have an account?'),
           a('b0dbe914', 'Use phone, email or username'),
           a('e5b0e543', 'Sign in'),
           a('h0ff39da', 'Twitter. It’s what’s happening'),
@@ -4875,7 +4878,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g9079b93', 'You may only view analytics about your own Tweets.'),
           a('a57daeb1', 'Tweet Analytics'),
           a('i976aff3', 'Update daily budget info to match your billing currency.'),
-          a('ef4602eb', 'Something went wrong. Please try again later.'),
           a('e5fe61ef', 'Impressions'),
           a('f6162a32', 'Times this Tweet was seen on Twitter'),
           a('dbe9353d', 'Engagements'),
@@ -6021,10 +6023,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a8428d5e', 'Upcoming'),
           a('a7aad8b9', 'Live'),
           a('e431f1aa', 'Final'),
-          a('a7391707', 'Postponed'),
-          a('d2dbfa91', 'Cancelled'),
-          a('cd734f65', 'Today')
-        a('c8891d06', 'Tomorrow'),
+          a('a7391707', 'Postponed')
+        a('d2dbfa91', 'Cancelled'),
+          a('cd734f65', 'Today'),
+          a('c8891d06', 'Tomorrow'),
           a('d6b930d3', 'Try again'),
           a('aafa48c2', 'Something went wrong.'),
           a('g5662c95', function (e) {

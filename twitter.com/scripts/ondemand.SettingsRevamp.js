@@ -1493,7 +1493,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'T1LabsScreen', function () {
-          return C
+          return T
         })
       a('z84I')
       var n = a('ERkP'),
@@ -1521,8 +1521,9 @@
         S = d.a.e4b3f520,
         _ = d.a.db8346ee,
         w = d.a.a99d8e60,
-        k = d.a.fb00a8ee
-      function C(e) {
+        k = d.a.fb00a8ee,
+        C = d.a.h7693c0d
+      function T(e) {
         var t = e.userClaimsFetchStatus,
           a = Object(p.g)(),
           n = r.a.useContext(c.a),
@@ -1531,9 +1532,10 @@
           l = o.isTrueAndEnabled('subscriptions_feature_labs_1001'),
           u = o.isTrueAndEnabled('subscriptions_long_video_upload'),
           d = i.isTrue('dm_conversation_labels_pinned_enabled'),
-          C = [
+          T = i.isTrue('subscriptions_long_video_rweb_new_copy_enabled'),
+          O = [
             { label: S, subtext: _, shouldRender: l && !d },
-            { label: w, subtext: k, shouldRender: u },
+            { label: w, subtext: T ? C : k, shouldRender: u },
           ]
         return r.a.createElement(s.a, {
           accessibilityLabel: y,
@@ -1547,7 +1549,7 @@
                 { location: a, title: g },
                 r.a.createElement(b.a, { description: v }),
                 r.a.createElement(h.a, null),
-                C.map(function (e) {
+                O.map(function (e) {
                   var t = e.label,
                     a = e.shouldRender,
                     n = e.subtext
@@ -1558,7 +1560,7 @@
           },
         })
       }
-      t.default = l(C)
+      t.default = l(T)
     },
     LtDK: function (e, t, a) {
       'use strict'

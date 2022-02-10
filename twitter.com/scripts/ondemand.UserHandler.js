@@ -22,8 +22,8 @@
         r = o.n(n),
         i = o('yiKp'),
         a = o.n(i),
-        c = o('VrFO'),
-        l = o.n(c),
+        l = o('VrFO'),
+        c = o.n(l),
         s = o('Y9Ll'),
         d = o.n(s),
         u = o('1Pcy'),
@@ -34,11 +34,11 @@
         f = o.n(v),
         b = o('KEM+'),
         C = o.n(b),
-        _ = o('97Jx'),
-        y = o.n(_),
-        g = (o('1t7P'), o('jQ/y'), o('ho0z'), o('2G9S'), o('hBpG'), o('7x/C'), o('ERkP')),
-        k = o.n(g),
-        I = o('6rlp'),
+        k = o('97Jx'),
+        y = o.n(k),
+        _ = (o('1t7P'), o('jQ/y'), o('ho0z'), o('2G9S'), o('hBpG'), o('7x/C'), o('ERkP')),
+        I = o.n(_),
+        g = o('6rlp'),
         S = o('zh9S'),
         w = o('G6rE'),
         A = o('rxPX'),
@@ -49,7 +49,7 @@
         T = function (e, t) {
           return t.promotedContent
         },
-        B = Object(A.a)()
+        P = Object(A.a)()
           .propsFromState(function () {
             return { promotedContent: T, user: R }
           })
@@ -61,48 +61,48 @@
           .propsFromActions(function () {
             return {
               createLocalApiErrorHandler: Object(E.createLocalApiErrorHandlerWithContextFactory)('USER_CELL_CONTAINER'),
-              log: I.a,
+              log: g.a,
               scribeAction: S.c,
             }
           }),
-        P = o('I57f'),
+        B = o('I57f'),
         x = o('vMjK'),
         F = o('MWbm'),
         L = o('IG7M'),
-        D = o('rHpw'),
-        M = function (e) {
+        M = o('rHpw'),
+        D = function (e) {
           var t = e.children,
             o = e.promotedContent,
             n = e.user
-          return k.a.createElement(
+          return I.a.createElement(
             F.a,
             { style: N.decorationWrapper },
             t,
-            k.a.createElement(L.a, {
+            I.a.createElement(L.a, {
               renderActionMenu: function (e) {
-                return k.a.createElement(x.b, { onClose: e, promotedContent: o, user: n, view: 'follower' })
+                return I.a.createElement(x.b, { onClose: e, promotedContent: o, user: n, view: 'follower' })
               },
               style: N.actionMenu,
             }),
           )
         },
-        N = D.a.create(function (e) {
+        N = M.a.create(function (e) {
           return { decorationWrapper: { flexDirection: 'row' }, actionMenu: { marginLeft: e.spaces.space12 } }
         }),
         U = o('uIZp'),
         j = o('mN6z'),
         O = o('caTy'),
-        q = o('3IPs'),
-        H = o('Rp9C'),
-        K = o('X04g'),
-        G = o('Re5t'),
+        H = o('3IPs'),
+        q = o('Rp9C'),
+        Y = o('X04g'),
+        K = o('Re5t'),
         z = o('TnY3'),
-        J = o('hxu0'),
-        W = o('v6aA'),
-        Y = o('7JQg'),
+        G = o('hxu0'),
+        J = o('v6aA'),
+        W = o('7JQg'),
         V = o('IMA+'),
-        Q = o('cFuS'),
-        X = [
+        X = o('cFuS'),
+        Q = [
           'avatarDecoration',
           'bottomControl',
           'cellClickable',
@@ -134,7 +134,7 @@
         Z = function (e) {
           var t = e.user
           return t && t.profile_image_url_https
-            ? k.a.createElement(
+            ? I.a.createElement(
                 ne,
                 y()({}, e, {
                   avatarUri: t.profile_image_url_https,
@@ -163,10 +163,10 @@
       Z.defaultProps = {
         cellClickable: !0,
         decoration: null,
-        displayMode: G.a.UserCompact,
+        displayMode: K.a.UserCompact,
         followRequestReceived: !1,
         hideBlocked: !1,
-        promotedItemType: Q.c.USER,
+        promotedItemType: X.c.USER,
         shouldScribeProfileClick: !0,
         shouldScribeImpression: !1,
         withFollowsYou: !1,
@@ -174,23 +174,23 @@
       var $ = function (e) {
           var t = e.isDeviceFollowing,
             o = e.userId
-          return k.a.createElement(P.a, { isFollowing: t, style: re.followButton, userId: o })
+          return I.a.createElement(B.a, { isFollowing: t, style: re.followButton, userId: o })
         },
         ee = function (e) {
           var t = e.loggedInUserId,
             o = e.promotedContent,
             n = e.userId
           return t !== n
-            ? k.a.createElement(U.a, { promotedContent: o, size: 'small', style: re.followButton, userId: n })
+            ? I.a.createElement(U.a, { promotedContent: o, size: 'small', style: re.followButton, userId: n })
             : null
         },
         te = function (e) {
-          return k.a.createElement(M, { promotedContent: e.promotedContent, user: e.user }, ee(e))
+          return I.a.createElement(D, { promotedContent: e.promotedContent, user: e.user }, ee(e))
         },
         oe = function (e) {
-          return k.a.createElement(L.a, {
+          return I.a.createElement(L.a, {
             renderActionMenu: function (t) {
-              return k.a.createElement(x.b, {
+              return I.a.createElement(x.b, {
                 onClose: t,
                 promotedContent: e.promotedContent,
                 user: e.user,
@@ -204,7 +204,7 @@
           var t = f()(o)
           function o() {
             var e
-            l()(this, o)
+            c()(this, o)
             for (var n = arguments.length, r = new Array(n), i = 0; i < n; i++) r[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(r))),
@@ -212,7 +212,7 @@
                 var t = e.props.shouldScribeProfileClick
                 e._handleSaveAsRecentSearch(),
                   t && e._scribeAction({ element: 'avatar', action: 'profile_click' }),
-                  e._handleAsyncPromotedEvent(Q.b.PROFILE_IMAGE_CLICK)
+                  e._handleAsyncPromotedEvent(X.b.PROFILE_IMAGE_CLICK)
               }),
               C()(p()(e), '_handleCellClick', function () {
                 var t = e.props,
@@ -229,33 +229,33 @@
                 var t = e.props.shouldScribeProfileClick
                 e._handleSaveAsRecentSearch(),
                   t && e._scribeAction({ action: 'profile_click' }),
-                  e._handleAsyncPromotedEvent(Q.b.SCREEN_NAME_CLICK)
+                  e._handleAsyncPromotedEvent(X.b.SCREEN_NAME_CLICK)
               }),
               C()(p()(e), '_handleSaveAsRecentSearch', function () {
                 var t = e.props,
                   o = t.saveAsRecentSearch,
                   n = t.shouldStoreTypeaheadItem,
                   r = t.userId
-                o && n && n(K.a.ItemType.USER) && o({ user: { id: r, type: q.a.User } })
+                o && n && n(Y.a.ItemType.USER) && o({ user: { id: r, type: H.a.User } })
               }),
               C()(p()(e), '_scribeAction', function (t) {
                 var o,
                   n = e.props,
                   r = n.promotedContent,
                   i = n.scribeAction,
-                  c = n.scribeData,
-                  l = n.scribeNamespace,
+                  l = n.scribeData,
+                  c = n.scribeNamespace,
                   s = n.user,
                   d = n.userId,
                   u =
-                    null == c || null === (o = c.items) || void 0 === o
+                    null == l || null === (o = l.items) || void 0 === o
                       ? void 0
                       : o.find(function (e) {
-                          return e.item_type === K.a.ItemType.USER && e.id === d
+                          return e.item_type === Y.a.ItemType.USER && e.id === d
                         }),
-                  p = c.search_details,
-                  m = { items: [a()(a()({}, u), H.a.getUserItem(s, r))], profile_id: d, search_details: p }
-                i(a()(a()({}, l), t), m)
+                  p = l.search_details,
+                  m = { items: [a()(a()({}, u), q.a.getUserItem(s, r))], profile_id: d, search_details: p }
+                i(a()(a()({}, c), t), m)
               }),
               e
             )
@@ -306,11 +306,11 @@
                       e.shouldStoreTypeaheadItem,
                       e.socialContext),
                     a = e.user,
-                    c = r()(e, X)
+                    l = r()(e, Q)
                   return this._shouldRender()
-                    ? k.a.createElement(
+                    ? I.a.createElement(
                         V.a,
-                        y()({}, c, {
+                        y()({}, l, {
                           avatarDecoration: t,
                           bottomControl: this._renderBottomControl(),
                           decoration: this._renderDecoration(),
@@ -353,8 +353,8 @@
                     r = o.followRequestReceived,
                     i = o.isAutoblocking,
                     a = o.isBlocking,
-                    c = o.isDeviceFollowing,
-                    l = o.isFollowing,
+                    l = o.isDeviceFollowing,
+                    c = o.isFollowing,
                     s = o.promotedContent,
                     d = o.screenName,
                     u = o.user,
@@ -365,8 +365,8 @@
                         followRequestReceived: r,
                         isAutoblocking: i,
                         isBlocking: a,
-                        isDeviceFollowing: !!c,
-                        isFollowing: !!l,
+                        isDeviceFollowing: !!l,
+                        isFollowing: !!c,
                         loggedInUserId: t,
                         promotedContent: s,
                         screenName: d,
@@ -402,7 +402,7 @@
                   var e = this.props,
                     t = e.promotedContent,
                     o = e.promotedItemType
-                  return t && o === Q.c.TWEET ? { promotedTweetState: t } : null
+                  return t && o === X.c.TWEET ? { promotedTweetState: t } : null
                 },
               },
               {
@@ -414,11 +414,11 @@
                     r = t.promotedContent,
                     i = t.promotedItemId,
                     a = t.promotedItemType,
-                    c = t.userId
+                    l = t.userId
                   r &&
                     n({
                       disclosureType: r.disclosure_type,
-                      itemId: i || c,
+                      itemId: i || l,
                       itemType: a,
                       params: { event: e, impression_id: r.impression_id },
                     }).catch(o())
@@ -434,14 +434,14 @@
                     r = e.promotedItemType,
                     i = e.shouldScribeImpression,
                     a = e.userId
-                  if (n && r === Q.c.USER) {
-                    var c = n.disclosure_type,
-                      l = n.impression_id
+                  if (n && r === X.c.USER) {
+                    var l = n.disclosure_type,
+                      c = n.impression_id
                     o({
-                      disclosureType: c,
+                      disclosureType: l,
                       itemId: a,
-                      itemType: Q.c.USER,
-                      params: { event: Q.b.IMPRESSION, impression_id: l },
+                      itemType: X.c.USER,
+                      params: { event: X.b.IMPRESSION, impression_id: c },
                     }).catch(t())
                   } else i && this._scribeAction({ action: 'impression' })
                 },
@@ -449,13 +449,13 @@
             ]),
             o
           )
-        })(k.a.Component)
-      C()(ne, 'contextType', W.a), C()(ne, 'defaultProps', Z.defaultProps)
-      var re = D.a.create(function (e) {
+        })(I.a.Component)
+      C()(ne, 'contextType', J.a), C()(ne, 'defaultProps', Z.defaultProps)
+      var re = M.a.create(function (e) {
           return { followButton: { marginLeft: e.spaces.space12 } }
         }),
-        ie = Object(z.a)(Object(J.a)(B(Z)))
-      t.b = Object(Y.c)({ element: 'user' })(ie)
+        ie = Object(z.a)(Object(G.a)(P(Z)))
+      t.b = Object(W.c)({ element: 'user' })(ie)
     },
     hxu0: function (e, t, o) {
       'use strict'
@@ -463,10 +463,10 @@
         r = o.n(n),
         i = o('ERkP'),
         a = o.n(i),
-        c = o('vqbU')
+        l = o('vqbU')
       t.a = function (e) {
         return function (t) {
-          return a.a.createElement(c.a.Consumer, null, function (o) {
+          return a.a.createElement(l.a.Consumer, null, function (o) {
             return a.a.createElement(e, r()({}, t, { isInSidebar: o }))
           })
         }
@@ -477,85 +477,108 @@
       o.r(t)
       o('jQ3i'), o('x4t0')
       var n = o('ezF+'),
-        r = o('wtjx'),
-        i = o('RgK2'),
-        a = o.n(i),
-        c = o('cFuS'),
-        l = o('Rp9C'),
-        s = o('Re5t'),
-        d = o('VPAj'),
-        u = o('fs1G'),
-        p = o('88ay'),
-        m = function (e) {
+        r = o('VPAj'),
+        i = function (e) {
           return e ? { disclosure_type: e.disclosureType, impression_id: e.impressionId } : void 0
         },
-        h = [p.e, p.f]
+        a = o('Rp9C'),
+        l = o('ERkP'),
+        c = o.n(l),
+        s = o('wtjx'),
+        d = o('rxPX'),
+        u = Object(d.a)()
+          .propsFromActions(function () {
+            return { saveAsRecentSearch: s.a }
+          })
+          .withAnalytics(),
+        p = o('cFuS'),
+        m = o('88ay'),
+        h = function (e) {
+          var t = e.analytics,
+            o = e.cellClickable,
+            n = e.decoration,
+            r = e.entry,
+            a = e.onClick,
+            l = e.saveAsRecentSearch,
+            s = e.shouldScribeImpression,
+            d = e.shouldScribeProfileClick,
+            u = e.shouldStoreTypeaheadItem,
+            h = e.withFollowsYou,
+            v = e.withLink,
+            f = r.content,
+            b = f.id,
+            C = f.promotedMetadata,
+            k = f.socialContext,
+            y = n || m.e,
+            _ = i(C),
+            I = (k && k.generalContext) || void 0,
+            g = e.displayMode
+          return c.a.createElement(m.a, {
+            cellClickable: o,
+            decoration: y,
+            displayMode: g,
+            onClick: a,
+            promotedContent: _,
+            promotedItemType: p.c.USER,
+            saveAsRecentSearch: l,
+            scribeData: t.contextualScribeData,
+            scribeNamespace: t.contextualScribeNamespace,
+            shouldScribeImpression: s,
+            shouldScribeProfileClick: d,
+            shouldStoreTypeaheadItem: u,
+            socialContext: I,
+            userId: b,
+            withFollowsYou: h,
+            withLink: v,
+          })
+        },
+        v = u(c.a.memo(h)),
+        f = o('Re5t'),
+        b = [m.e, m.f]
       t.default = function (e) {
         var t = e.cellClickable,
           o = void 0 === t || t,
-          i = e.decoration,
-          v = e.displayMode,
-          f = void 0 === v ? s.a.UserCompact : v,
-          b = e.onClick,
-          C = e.shouldScribeProfileClick,
-          _ = void 0 === C || C,
-          y = e.shouldScribeImpression,
-          g = void 0 !== y && y,
-          k = e.shouldStoreTypeaheadItem,
-          I = e.withLink,
-          S = void 0 === I || I,
-          w = i || p.e
-        return n.g({
-          component: p.a,
-          selectData: Object(d.a)(a.a),
-          bindActions: function () {
-            return { saveAsRecentSearch: r.a }
-          },
-          defaultScribeNamespace: { element: 'user' },
-          createProps: function (e) {
-            var t = e.actions.saveAsRecentSearch,
-              n = e.entry,
-              r = e.scribeData,
-              i = e.scribeNamespace,
-              a = n.content,
-              l = a.id,
-              s = a.promotedMetadata,
-              d = a.socialContext,
-              u = m(s),
-              p = (d && d.generalContext) || void 0
+          l = e.decoration,
+          c = e.displayMode,
+          s = void 0 === c ? f.a.UserCompact : c,
+          d = e.onClick,
+          u = e.shouldScribeProfileClick,
+          p = void 0 === u || u,
+          m = e.shouldScribeImpression,
+          h = void 0 !== m && m,
+          C = e.shouldStoreTypeaheadItem,
+          k = e.withLink,
+          y = void 0 === k || k
+        return n
+          .b({
+            component: v,
+            defaultScribeNamespace: { element: 'user' },
+            getScribeDataItem: function (e) {
+              var t = e.content,
+                o = t.id,
+                n = t.promotedMetadata,
+                r = e.cursor,
+                l = e.itemMetadata,
+                c = e.position,
+                s = l.clientEventInfo,
+                d = i(n)
+              return a.a.getUserItem({ id_str: o, promoted_content: d }, void 0, c, r, s)
+            },
+            isFocusable: Object(r.a)(!0),
+          })
+          .getHandler(function () {
             return {
-              decoration: w,
-              displayMode: f,
-              shouldStoreTypeaheadItem: k,
-              promotedContent: u,
-              promotedItemType: c.c.USER,
-              scribeData: r,
-              scribeNamespace: i,
-              userId: l,
-              withFollowsYou: h.includes(w),
-              socialContext: p,
-              withLink: S,
               cellClickable: o,
-              shouldScribeProfileClick: _,
-              shouldScribeImpression: g,
-              onClick: b,
-              saveAsRecentSearch: t,
+              decoration: l,
+              displayMode: s,
+              onClick: d,
+              shouldScribeProfileClick: p,
+              shouldScribeImpression: h,
+              shouldStoreTypeaheadItem: C,
+              withLink: y,
+              withFollowsYou: !l || b.includes(l),
             }
-          },
-          onImpression: u.a,
-          getScribeDataItem: function (e) {
-            var t = e.content,
-              o = t.id,
-              n = t.promotedMetadata,
-              r = e.cursor,
-              i = e.itemMetadata,
-              a = e.position,
-              c = i.clientEventInfo,
-              s = m(n)
-            return l.a.getUserItem({ id_str: o, promoted_content: s }, void 0, a, r, c)
-          },
-          isFocusable: Object(d.a)(!0),
-        })
+          })
       }
     },
   },
