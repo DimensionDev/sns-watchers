@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [242],
+  [243],
   {
     '88ay': function (e, t, o) {
       'use strict'
@@ -455,7 +455,7 @@
           return { followButton: { marginLeft: e.spaces.space12 } }
         }),
         ie = Object(z.a)(Object(G.a)(P(Z)))
-      t.b = Object(W.c)({ element: 'user' })(ie)
+      t.b = Object(W.a)({ element: 'user' })(ie)
     },
     hxu0: function (e, t, o) {
       'use strict'

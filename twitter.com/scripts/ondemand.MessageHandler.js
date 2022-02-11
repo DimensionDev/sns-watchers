@@ -117,7 +117,8 @@
         A = n('caTy'),
         T = n('Lz2T'),
         w = n('ywYn'),
-        R = [
+        R = n('FGLp'),
+        B = [
           'analytics',
           'createLocalApiErrorHandler',
           'entry',
@@ -131,7 +132,7 @@
           'removeEntry',
           'secondaryButtonAction',
         ],
-        B = I(function (e) {
+        D = I(function (e) {
           var t = e.analytics,
             n = e.createLocalApiErrorHandler,
             r = (e.entry, e.entryId),
@@ -142,7 +143,7 @@
             u = e.processCallback,
             p = e.removeEntry,
             m = e.secondaryButtonAction,
-            y = c()(e, R),
+            y = c()(e, B),
             f = t.contextualScribeNamespace.element,
             g = n(),
             b = function (e, n) {
@@ -174,21 +175,21 @@
             k =
               null != o && o.length ? s.a.createElement(P.a, { feedbackItems: o, isDisplayedOnMedia: !!e.image }) : null
           return (
-            s.a.useEffect(function () {
+            Object(R.a)(function () {
               t.scribeAction('impression'), l && i({ entryId: r, callbacks: l })
-            }, []),
+            }),
             s.a.createElement(T.a, a()({}, y, { primaryAction: h, rightControl: k, secondaryAction: v }))
           )
         }),
-        D = n('Rp9C')
+        O = n('Rp9C')
       t.default = function (e) {
         var t = e.withGaps
         return r
           .b({
-            component: B,
+            component: D,
             divider: { bottom: t, top: t },
             getScribeDataItem: function (e) {
-              return D.a.forMessage(e.itemMetadata.clientEventInfo)
+              return O.a.forMessage(e.itemMetadata.clientEventInfo)
             },
           })
           .getHandler()

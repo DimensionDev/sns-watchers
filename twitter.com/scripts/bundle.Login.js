@@ -479,7 +479,7 @@
           gutter: { marginVertical: e.componentDimensions.gutterVertical },
         }
       })
-      t.default = Object(pe.c)(Ee)(P(we))
+      t.default = Object(pe.a)(Ee)(P(we))
     },
     Lam0: function (e, t, n) {
       'use strict'

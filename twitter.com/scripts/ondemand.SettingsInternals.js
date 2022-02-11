@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [233],
+  [234],
   {
     '+GrA': function (e, t, n) {
       'use strict'
@@ -1426,10 +1426,10 @@
         y = n('rxPX'),
         S = n('0KEI'),
         v = function (e, t) {
-          return Object(b.z)(e, b.o)
+          return Object(b.A)(e, b.o)
         },
         w = function (e, t) {
-          return Object(b.z)(e, b.u)
+          return Object(b.A)(e, b.u)
         },
         C = Object(y.a)()
           .propsFromState(function () {
@@ -2013,7 +2013,7 @@
                     a = e.fetchStatus,
                     r = e.location
                   return g.a.createElement(
-                    G.b,
+                    G.c,
                     { namespace: re },
                     g.a.createElement(
                       V.a,
@@ -2819,7 +2819,7 @@
                   B()(!!e, 'loggedInUserId must be defined')
                   var n = R(e)
                   return h.a.createElement(
-                    Y.b,
+                    Y.c,
                     { namespace: X },
                     h.a.createElement(
                       G.a,
@@ -3150,7 +3150,7 @@
         var t = e.browserPushAllowed,
           n = e.location
         return r.a.createElement(
-          f.b,
+          f.c,
           { namespace: S },
           r.a.createElement(
             d.a,
@@ -3807,7 +3807,7 @@
             n
           )
         })(E.a.Component)
-      t.default = Object(G.c)({ page: 'settings', section: 'temporary_password' })(F(Z))
+      t.default = Object(G.a)({ page: 'settings', section: 'temporary_password' })(F(Z))
     },
     Rdmj: function (e, t, n) {
       'use strict'
@@ -4210,7 +4210,7 @@
             i = e.supportUrl
           return v(function (e) {
             return b.a.createElement(
-              se.b,
+              se.c,
               { namespace: r },
               b.a.createElement(
                 _e,
@@ -4560,7 +4560,7 @@
                     n = e.discoverableByMobilePhone,
                     a = e.location
                   return E.a.createElement(
-                    k.b,
+                    k.c,
                     { namespace: q },
                     E.a.createElement(
                       A.a,
@@ -4828,7 +4828,7 @@
             n
           )
         })(E.a.Component)
-      t.default = Object(j.c)({ page: 'settings', section: 'backup_code' })(F(Z))
+      t.default = Object(j.a)({ page: 'settings', section: 'backup_code' })(F(Z))
     },
     W0Ti: function (e, t, n) {
       'use strict'
@@ -4980,7 +4980,7 @@
       t.default = function (e) {
         var t = e.location
         return r.a.createElement(
-          i.b,
+          i.c,
           { namespace: E },
           r.a.createElement(
             o.a,
@@ -6800,7 +6800,7 @@
           a = e.universalQualityFilteringEnabled,
           o = e.updateSettings
         return i.a.createElement(
-          h.b,
+          h.c,
           { namespace: C },
           i.a.createElement(
             p.a,
@@ -6892,7 +6892,7 @@
           var f = !!u && o !== u,
             k = u || o
           return i.a.createElement(
-            m.b,
+            m.c,
             { namespace: A },
             i.a.createElement(
               p.a,
@@ -7419,13 +7419,13 @@
         P = '/settings/blocked/imported',
         R = { page: 'settings', section: 'blocked_accounts' },
         N = Object(y.a)(function () {
-          return Promise.all([n.e(0), n.e(15), n.e(25), n.e(233)]).then(n.bind(null, 'XFGu'))
+          return Promise.all([n.e(0), n.e(15), n.e(25), n.e(234)]).then(n.bind(null, 'XFGu'))
         }),
         M = Object(y.a)(function () {
-          return Promise.all([n.e(0), n.e(15), n.e(25), n.e(233)]).then(n.bind(null, 'tJyY'))
+          return Promise.all([n.e(0), n.e(15), n.e(25), n.e(234)]).then(n.bind(null, 'tJyY'))
         }),
         x = Object(y.a)(function () {
-          return Promise.all([n.e(0), n.e(15), n.e(25), n.e(233)]).then(n.bind(null, 'aaHS'))
+          return Promise.all([n.e(0), n.e(15), n.e(25), n.e(234)]).then(n.bind(null, 'aaHS'))
         }),
         D = (function (e) {
           u()(n, e)
@@ -7458,7 +7458,7 @@
                 key: 'render',
                 value: function () {
                   return E.a.createElement(
-                    S.b,
+                    S.c,
                     { namespace: R },
                     E.a.createElement(
                       b.a,
@@ -7774,7 +7774,7 @@
                     t = e.fetchStatus,
                     n = e.location
                   return g.a.createElement(
-                    D.b,
+                    D.c,
                     { namespace: be },
                     g.a.createElement(
                       U.a,
@@ -9383,7 +9383,7 @@
           )
         })(g.a.Component)
       E()(Le, 'contextType', x.a)
-      t.default = Object(D.c)({ page: 'settings', section: 'loginVerification' })(w(Le))
+      t.default = Object(D.a)({ page: 'settings', section: 'loginVerification' })(w(Le))
     },
     oXNP: function (e, t, n) {
       'use strict'
@@ -10677,7 +10677,7 @@
                     n = e.protectPasswordReset,
                     a = this.state.showPasswordDialog
                   return g.a.createElement(
-                    k.b,
+                    k.c,
                     { namespace: B },
                     g.a.createElement(
                       T.a,

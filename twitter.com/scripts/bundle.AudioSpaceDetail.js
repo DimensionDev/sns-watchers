@@ -4,7 +4,7 @@
     'Fg/a': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return H
+        return M
       })
       var i = n('VrFO'),
         r = n.n(i),
@@ -22,17 +22,17 @@
         v = n.n(m),
         g = n('Pc/x'),
         S = n('6/RC'),
-        b = (n('KqXw'), n('WNMA'), n('Z5jE')),
-        y = n('rxPX'),
+        y = (n('KqXw'), n('WNMA'), n('Z5jE')),
+        b = n('rxPX'),
         k = function (e, t) {
-          return Object(b.a)(t.match)
+          return Object(y.a)(t.match)
         },
         P = function (e) {
           return function (t, n, i) {
             return i.api.AudioSpaces.byId(e, { isMetatagsQuery: !0 })
           }
         },
-        E = Object(y.a)()
+        E = Object(b.a)()
           .propsFromState(function () {
             return { broadcastId: k }
           })
@@ -40,11 +40,11 @@
             return { fetchAudioSpace: P }
           }),
         w = (n('1t7P'), n('jQ/y'), n('3XMw')),
-        A = n.n(w),
-        T = n('rJoH'),
-        _ = n('Rumh'),
-        C = n('AooF')
-      function j(e) {
+        T = n.n(w),
+        A = n('rJoH'),
+        _ = n('fzjU'),
+        j = n('Tg44')
+      function C(e) {
         var t = e.space
         if (!t) return null
         var n = (function (e) {
@@ -54,25 +54,25 @@
                 i,
                 r,
                 a = null == e || null === (t = e.host) || void 0 === t ? void 0 : t.display_name,
-                c = a ? F.hostSpace({ name: a }) : F.hostSpaceFallback,
+                c = a ? O.hostSpace({ name: a }) : O.hostSpaceFallback,
                 o = e.title || c,
-                s = F.descriptionGeneric,
+                s = O.descriptionGeneric,
                 u = (null == e ? void 0 : e.participants.total) || 0,
                 l = _.a.formatCountShort(u),
-                p = F.descriptionListening({ count: l })
-              if (e.state === C.a.SpaceState.Running)
-                (n = F.titleRunning({ spaceTitle: o })),
-                  (i = F.descriptionFormatRunning({ hostSpace: c, descriptionListening: p, descriptionGeneric: s })),
-                  (r = O.ttl.Frequent)
-              else if (e.state === C.a.SpaceState.NotStarted || e.state === C.a.SpaceState.PrePublished) {
-                var h = F.scheduledSpaceGeneric
-                ;(n = F.titleScheduled({ date: h, spaceTitle: o })),
-                  (i = F.descriptionFormatScheduled({ hostSpace: c, descriptionGeneric: s })),
-                  (r = O.ttl.Frequent)
+                p = O.descriptionListening({ count: l })
+              if (e.state === j.a.SpaceState.Running)
+                (n = O.titleRunning({ spaceTitle: o })),
+                  (i = O.descriptionFormatRunning({ hostSpace: c, descriptionListening: p, descriptionGeneric: s })),
+                  (r = F.ttl.Frequent)
+              else if (e.state === j.a.SpaceState.NotStarted || e.state === j.a.SpaceState.PrePublished) {
+                var h = O.scheduledSpaceGeneric
+                ;(n = O.titleScheduled({ date: h, spaceTitle: o })),
+                  (i = O.descriptionFormatScheduled({ hostSpace: c, descriptionGeneric: s })),
+                  (r = F.ttl.Frequent)
               } else
-                (n = F.titleEnded({ spaceTitle: o })),
-                  (i = F.descriptionFormatEnded({ hostSpace: c, descriptionGeneric: s })),
-                  (r = O.ttl.LongLivedCache)
+                (n = O.titleEnded({ spaceTitle: o })),
+                  (i = O.descriptionFormatEnded({ hostSpace: c, descriptionGeneric: s })),
+                  (r = F.ttl.LongLivedCache)
               var d = 'https://twitter.com/i/spaces/'.concat(e.rest_id)
               return { title: n, canonical: d, description: i, ttl: r }
             })(e),
@@ -85,39 +85,39 @@
             canonical: n,
             title: r,
             description: i,
-            image: O.image.url,
-            imageType: O.image.type,
-            imageW: O.image.width,
-            imageH: O.image.height,
-            imageAlt: O.image.alt,
+            image: F.image.url,
+            imageType: F.image.type,
+            imageW: F.image.width,
+            imageH: F.image.height,
+            imageAlt: F.image.alt,
             ttl: a,
           }
         })(t)
-        return v.a.createElement(T.a, n)
+        return v.a.createElement(A.a, n)
       }
-      var F = {
-          twitterSpaces: A.a.gaa01f2c,
-          hostSpace: A.a.b6d3e0ee,
-          hostSpaceFallback: A.a.ab4fc8bb,
-          descriptionGeneric: A.a.fec3c1ef,
-          descriptionListeners: A.a.ce447fcb,
-          descriptionListening: A.a.ef7da97e,
-          scheduledSpaceGeneric: A.a.f8464691,
-          titleRunning: A.a.a065e7e7,
-          titleScheduled: A.a.hd5e7b20,
-          titleEnded: A.a.f826f7ee,
-          descriptionFormatRunning: A.a.b2a94e92,
-          descriptionFormatScheduled: A.a.f6432ce5,
-          descriptionFormatEnded: A.a.f6432ce5,
+      var O = {
+          twitterSpaces: T.a.gaa01f2c,
+          hostSpace: T.a.b6d3e0ee,
+          hostSpaceFallback: T.a.ab4fc8bb,
+          descriptionGeneric: T.a.fec3c1ef,
+          descriptionListeners: T.a.ce447fcb,
+          descriptionListening: T.a.ef7da97e,
+          scheduledSpaceGeneric: T.a.f8464691,
+          titleRunning: T.a.a065e7e7,
+          titleScheduled: T.a.hd5e7b20,
+          titleEnded: T.a.f826f7ee,
+          descriptionFormatRunning: T.a.b2a94e92,
+          descriptionFormatScheduled: T.a.f6432ce5,
+          descriptionFormatEnded: T.a.f6432ce5,
         },
-        O = {
+        F = {
           ttl: { Frequent: 300, LongLivedCache: 86400 },
           image: {
             type: 'image/jpeg',
             url: 'https://abs.twimg.com/sticky/cards/TwitterSpacesCardImage.2.jpg',
             width: 1200,
             height: 630,
-            alt: F.twitterSpaces,
+            alt: O.twitterSpaces,
           },
         },
         I = n('G8HL'),
@@ -153,7 +153,7 @@
                     v.a.Fragment,
                     null,
                     v.a.createElement(L, this.props),
-                    v.a.createElement(j, { space: this.state.space }),
+                    v.a.createElement(C, { space: this.state.space }),
                   )
                 },
               },
@@ -169,7 +169,7 @@
           e.children
         )
       }
-      var H = E(Object(I.a)(x))
+      var M = E(Object(I.a)(x))
     },
     'Pc/x': function (e, t, n) {
       'use strict'
@@ -209,35 +209,35 @@
           return c()(n)
         })(v()(Error))
       l()(S, 'displayName', 'ProxseeApiError')
-      var b,
-        y,
+      var y,
+        b,
         k = n('epkG'),
         P = n('SrIh'),
         E = n('RqPI'),
         w = 0,
-        A = (function () {
+        T = (function () {
           function e() {
             var t = this,
               n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : I
             r()(this, e),
               l()(this, 'reportSpaceFor', {
                 SelfHarm: function (e) {
-                  return t._reportSpace(s()({ abuse_type: H.SelfHarm }, e))
+                  return t._reportSpace(s()({ abuse_type: M.SelfHarm }, e))
                 },
                 Violence: function (e) {
-                  return t._reportSpace(s()({ abuse_type: H.Violence }, e))
+                  return t._reportSpace(s()({ abuse_type: M.Violence }, e))
                 },
                 SexualContent: function (e) {
-                  return t._reportSpace(s()({ abuse_type: H.SexualContent }, e))
+                  return t._reportSpace(s()({ abuse_type: M.SexualContent }, e))
                 },
                 ChildSafety: function (e) {
-                  return t._reportSpace(s()({ abuse_type: H.ChildSafety }, e))
+                  return t._reportSpace(s()({ abuse_type: M.ChildSafety }, e))
                 },
                 PrivateInformation: function (e) {
-                  return t._reportSpace(s()({ abuse_type: H.PrivateInformation }, e))
+                  return t._reportSpace(s()({ abuse_type: M.PrivateInformation }, e))
                 },
                 AbusiveBehavior: function (e) {
-                  return t._reportSpace(s()({ abuse_type: H.AbusiveBehavior }, e))
+                  return t._reportSpace(s()({ abuse_type: M.AbusiveBehavior }, e))
                 },
               })
             var i = n.httpConfig
@@ -248,13 +248,13 @@
               {
                 key: 'init',
                 value: function (e) {
-                  y = e
+                  b = e
                 },
               },
               {
                 key: 'initialized',
                 value: function () {
-                  return !!y
+                  return !!b
                 },
               },
               {
@@ -267,7 +267,7 @@
                 key: 'isTwitterAuthenticated',
                 value: function () {
                   if (!this.initialized()) return !1
-                  var e = y.store.getState()
+                  var e = b.store.getState()
                   return Object(E.m)(e)
                 },
               },
@@ -290,7 +290,7 @@
                 value: function (e, t) {
                   var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
                     i = n.params,
-                    r = Object.assign(F(), n.headers),
+                    r = Object.assign(O(), n.headers),
                     a = JSON.stringify(s()(s()({}, t), {}, { cookie: this._authToken })),
                     c = 'Twitter' === this._authUserType ? 'twitter/'.concat(e) : e
                   return this.dispatch({ method: 'POST', path: '/api/v2/'.concat(c), headers: r, params: i, data: a })
@@ -306,7 +306,7 @@
                     ? this.isTwitterAuthenticated()
                       ? this.isLoggedIn()
                         ? Promise.resolve()
-                        : ((this._authPromise = y.api.Auth.authenticatePeriscope()
+                        : ((this._authPromise = b.api.Auth.authenticatePeriscope()
                             .then(function (t) {
                               return e.loginTwitterToken(t.token)
                             })
@@ -329,7 +329,7 @@
               {
                 key: 'loginTwitterToken',
                 value: function (e) {
-                  var t = { jwt: e, vendor_id: O, create_user: !1, direct: !0 }
+                  var t = { jwt: e, vendor_id: F, create_user: !1, direct: !0 }
                   return this.post('loginTwitterToken', t)
                 },
               },
@@ -355,7 +355,7 @@
                     n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
                   return this.login().then(function () {
                     var i = n.params,
-                      r = Object.assign(F(), n.headers),
+                      r = Object.assign(O(), n.headers),
                       a = JSON.stringify({ access_token: e.access_token, cursor: e.cursor, limit: 1e3, since: null })
                     return t.dispatch({ method: 'POST', host: e.host, path: e.path, headers: r, params: i, data: a })
                   })
@@ -391,19 +391,19 @@
             e
           )
         })(),
-        T = 'X-Idempotence',
+        A = 'X-Idempotence',
         _ = 'X-Periscope-User-Agent',
-        C = 'X-Attempt',
-        j = ((b = {}), l()(b, _, 'Twitter/m5'), l()(b, C, 1), b)
-      function F() {
+        j = 'X-Attempt',
+        C = ((y = {}), l()(y, _, 'Twitter/m5'), l()(y, j, 1), y)
+      function O() {
         var e,
           t = Date.now()
         return (
           (w = t <= w ? w + 1 : t),
-          Object.assign({}, j, ((e = {}), l()(e, T, w), l()(e, 'content-type', 'application/json'), e))
+          Object.assign({}, C, ((e = {}), l()(e, A, w), l()(e, 'content-type', 'application/json'), e))
         )
       }
-      var O = 'm5-proxsee-login-a2011357b73e',
+      var F = 'm5-proxsee-login-a2011357b73e',
         I = {},
         x = {
           host: 'https://proxsee.pscp.tv',
@@ -424,7 +424,7 @@
           },
         }
       var L,
-        H = Object.freeze({
+        M = Object.freeze({
           SelfHarm: 'SELF_HARM',
           Violence: 'VIOLENCE',
           SexualContent: 'SEXUAL_CONTENT',
@@ -432,19 +432,19 @@
           PrivateInformation: 'PRIVATE_INFO',
           AbusiveBehavior: 'HARASSMENT',
         }),
-        M = new A(),
+        z = new T(),
         G = n('G6rE'),
-        N = new Error('[AudioModule] config not initialized'),
+        H = new Error('[AudioModule] config not initialized'),
         R = new ((function () {
           function e() {
-            r()(this, e), (this.proxsee = M)
+            r()(this, e), (this.proxsee = z)
           }
           return (
             c()(e, [
               {
                 key: 'init',
                 value: function (e) {
-                  ;(L = e), M.init(L)
+                  ;(L = e), z.init(L)
                 },
               },
               {
@@ -465,25 +465,25 @@
               {
                 key: 'audioSpace',
                 value: function (e) {
-                  return L ? L.api.AudioSpaces.byId(e) : Promise.reject(N)
+                  return L ? L.api.AudioSpaces.byId(e) : Promise.reject(H)
                 },
               },
               {
                 key: 'subscribeToScheduledSpace',
                 value: function (e) {
-                  return L ? L.api.AudioSpaces.subscribeToScheduledSpaceById(e) : Promise.reject(N)
+                  return L ? L.api.AudioSpaces.subscribeToScheduledSpaceById(e) : Promise.reject(H)
                 },
               },
               {
                 key: 'unsubscribeFromScheduledSpace',
                 value: function (e) {
-                  return L ? L.api.AudioSpaces.unsubscribeFromScheduledSpaceById(e) : Promise.reject(N)
+                  return L ? L.api.AudioSpaces.unsubscribeFromScheduledSpaceById(e) : Promise.reject(H)
                 },
               },
               {
                 key: 'searchAudioSpace',
                 value: function (e, t) {
-                  return L ? L.api.AudioSpaces.search(e, t) : Promise.reject(N)
+                  return L ? L.api.AudioSpaces.search(e, t) : Promise.reject(H)
                 },
               },
             ]),
@@ -517,7 +517,7 @@
         l = n.n(u),
         p = n('VS6U'),
         h = n('MWbm'),
-        d = n('bNYH')
+        d = n('VRZ4')
       function f(e) {
         return r.a.createElement(a.a, e, r.a.createElement(m, e))
       }

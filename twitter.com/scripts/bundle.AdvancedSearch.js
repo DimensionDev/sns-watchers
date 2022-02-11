@@ -761,7 +761,7 @@
           )
         })(_.a.Component),
         ve =
-          ((t.default = Object(ee.c)({ page: 'search_advanced' })(S(ye))),
+          ((t.default = Object(ee.a)({ page: 'search_advanced' })(S(ye))),
           $.a.create(function (e) {
             return {
               root: { paddingBottom: e.spaces.space16 },

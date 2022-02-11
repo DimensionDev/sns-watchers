@@ -40,8 +40,8 @@
         S = a('MWbm'),
         E = a('mjJ+'),
         g = a('t62R'),
-        b = a('CK8+'),
-        m = a('rHpw'),
+        m = a('CK8+'),
+        b = a('rHpw'),
         y = d.a.c6cb90eb,
         h = d.a.a37e9b09,
         v = d.a.ccafffde,
@@ -85,7 +85,7 @@
             },
             [d],
           )
-          var m = function () {
+          var b = function () {
               d.scribe({ action: 'click', element: 'disabled' }),
                 i('none')
                   .then(function () {
@@ -132,11 +132,11 @@
                   { style: w.safetyModeToggleContainer },
                   r.a.createElement(g.b, { color: 'normal' }, y),
                   a
-                    ? r.a.createElement(b.a, { onValueChange: m, value: a })
+                    ? r.a.createElement(m.a, { onValueChange: b, value: a })
                     : r.a.createElement(
                         p.a,
                         { accessibilityLabel: y, renderMenu: v() },
-                        r.a.createElement(b.a, { onValueChange: f.a, value: a }),
+                        r.a.createElement(m.a, { onValueChange: f.a, value: a }),
                       ),
                 ),
                 r.a.createElement(
@@ -161,7 +161,7 @@
         }),
         w =
           ((t.a = M),
-          m.a.create(function (e) {
+          b.a.create(function (e) {
             return {
               border: {
                 borderStyle: 'solid',
@@ -209,13 +209,13 @@
         S = a.n(f),
         E = (a('2G9S'), a('1t7P'), a('jQ/y'), a('hBvt'), a('ERkP')),
         g = a.n(E),
-        b = a('oEOe'),
-        m = 'rweb/'.concat('convertRitoSuggestedActions'),
-        y = Object(b.a)(m, 'CALL_CONVERT_RITO_SUGGESTED_ACTIONS'),
+        m = a('oEOe'),
+        b = 'rweb/'.concat('convertRitoSuggestedActions'),
+        y = Object(m.a)(b, 'CALL_CONVERT_RITO_SUGGESTED_ACTIONS'),
         h = function (e) {
           return function (t, a, n) {
             var r = n.api
-            return Object(b.b)(t, {
+            return Object(m.b)(t, {
               request: r.ConvertRitoSuggestedActions.callConvertRitoSuggestedActions,
               params: { userId: e },
             })({ actionTypes: y, context: 'CALL_CONVERT_RITO_SUGGESTED_ACTIONS', meta: { userId: e } })
@@ -226,7 +226,7 @@
         _ = (a('M+/F'), a('z84I'), a('Ssj5')),
         C = 'ritoSuggestedActionsFacePile',
         A = 'rweb/'.concat(C),
-        F = Object(b.a)(A, 'FETCH_RITO_SUGGESTED_ACTIONS_FACEPILE'),
+        F = Object(m.a)(A, 'FETCH_RITO_SUGGESTED_ACTIONS_FACEPILE'),
         O = {}
       _.a.register(
         S()({}, C, function () {
@@ -251,7 +251,7 @@
         M = function (e) {
           return function (t, a, n) {
             var r = n.api
-            return Object(b.b)(t, {
+            return Object(m.b)(t, {
               request: r.RitoSuggestedActionsFacePile.fetchRitoSuggestedActionsFacePile,
               params: { userId: e },
             })({ actionTypes: F, context: 'FETCH_RITO_SUGGESTED_ACTIONS_FACEPILE', meta: { userId: e } })
@@ -380,7 +380,7 @@
                     var o,
                       c = t.screenWidth
                     return g.a.createElement(
-                      N.b,
+                      N.c,
                       { namespace: Z },
                       g.a.createElement(
                         P.b,
@@ -515,10 +515,10 @@
         return g
       }),
         a.d(t, 'b', function () {
-          return b
+          return m
         }),
         a.d(t, 'd', function () {
-          return m
+          return b
         }),
         a.d(t, 'a', function () {
           return y
@@ -574,10 +574,10 @@
       var g = function (e) {
           return e.safetyMode || {}
         },
-        b = function (e) {
+        m = function (e) {
           return e.safetyMode.fetchSettingsFetchStatus
         },
-        m = function (e) {
+        b = function (e) {
           return e.safetyMode.updateSettingsFetchStatus
         },
         y = function () {

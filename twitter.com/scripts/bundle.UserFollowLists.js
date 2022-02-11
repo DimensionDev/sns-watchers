@@ -455,7 +455,7 @@
           return { followButton: { marginLeft: e.spaces.space12 } }
         }),
         le = Object(W.a)(Object(Q.a)(L(Z)))
-      o.b = Object(z.c)({ element: 'user' })(le)
+      o.b = Object(z.a)({ element: 'user' })(le)
     },
     hxu0: function (e, o, t) {
       'use strict'

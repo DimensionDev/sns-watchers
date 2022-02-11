@@ -103,7 +103,7 @@
       'use strict'
       t.r(n),
         t.d(n, 'PagedCarouselScroller', function () {
-          return S
+          return V
         })
       var r = t('ddV6'),
         a = t.n(r),
@@ -117,15 +117,16 @@
         f = t('7n04'),
         v = t('Irs7'),
         g = t('Fz18'),
-        h = t('0ig/'),
-        m = t('rHpw'),
-        p = t('38/B'),
-        b = t('6iuV'),
-        R = t('WrBE'),
-        w = t('MWbm'),
-        E = t('0zXz'),
-        y = t('fs1G'),
-        S = o.a.forwardRef(function (e, n) {
+        h = t('FGLp'),
+        m = t('0ig/'),
+        p = t('rHpw'),
+        b = t('38/B'),
+        R = t('6iuV'),
+        w = t('WrBE'),
+        E = t('MWbm'),
+        y = t('0zXz'),
+        S = t('fs1G'),
+        V = o.a.forwardRef(function (e, n) {
           e.assumedItemHeight
           var t = e.anchoring,
             r = (void 0 === t && f.a, e.identityFunction),
@@ -135,17 +136,17 @@
               e.nearEndProximityRatio,
               e.nearStartProximityRatio,
               e.noItemsRenderer),
-            S = void 0 === s ? E.a : s,
-            C = (e.preferredOffscreenToViewportRatio, e.onAtEnd),
-            x = (void 0 === C && y.a, e.onAtStart),
-            k = (void 0 === x && y.a, e.onItemsRendered),
-            I = void 0 === k ? y.a : k,
-            P = e.onNearEnd,
-            A = (void 0 === P && y.a, e.onNearStart),
-            O = (void 0 === A && y.a, e.onPositionRestored),
-            M = void 0 === O ? y.a : O,
-            N = e.renderer,
-            j = o.a.useRef(),
+            V = void 0 === s ? y.a : s,
+            x = (e.preferredOffscreenToViewportRatio, e.onAtEnd),
+            k = (void 0 === x && S.a, e.onAtStart),
+            I = (void 0 === k && S.a, e.onItemsRendered),
+            P = void 0 === I ? S.a : I,
+            A = e.onNearEnd,
+            O = (void 0 === A && S.a, e.onNearStart),
+            M = (void 0 === O && S.a, e.onPositionRestored),
+            N = void 0 === M ? S.a : M,
+            j = e.renderer,
+            F = o.a.useRef(),
             H = Object(g.b)(),
             B = o.a.useState(function () {
               var e = H.getSavedPosition()
@@ -156,16 +157,16 @@
                 })
               return t > -1 ? t : 0
             }),
-            F = a()(B, 2),
-            T = F[0],
-            z = F[1],
-            X = o.a.useRef(new R.a.Value(50)).current,
-            _ = o.a.useRef({}).current,
+            T = a()(B, 2),
+            z = T[0],
+            X = T[1],
+            _ = o.a.useRef(new w.a.Value(50)).current,
+            G = o.a.useRef({}).current,
             W = o.a.useRef({}),
             D = o.a.useRef(0),
-            G = Object(v.b)(),
-            J = Object(h.a)().width < m.a.theme.breakpoints.small,
-            Z = o.a.useCallback(
+            J = Object(v.b)(),
+            Z = Object(m.a)().width < p.a.theme.breakpoints.small,
+            K = o.a.useCallback(
               function (e) {
                 var n,
                   t = null === (n = i[e]) || void 0 === n ? void 0 : n.entryId
@@ -179,22 +180,22 @@
                 return !0
               },
               scrollToNewest: function () {
-                return Object(y.a)()
+                return Object(S.a)()
               },
               adjustFocusBy: function (e) {
-                return Object(y.a)()
+                return Object(S.a)()
               },
             }
           }),
-            o.a.useEffect(function () {
-              var e = W.current[T]
+            Object(h.a)(function () {
+              var e = W.current[z]
               if (e) {
                 var n = e.getBoundingClientRect().height
-                X.setValue(n)
+                _.setValue(n)
               }
-              M(), U({ index: T, shouldSavePosition: !1 })
-            }, [])
-          var K = o.a.useMemo(
+              N(), U({ index: z, shouldSavePosition: !1 })
+            })
+          var L = o.a.useMemo(
               function () {
                 for (
                   var e = function (e) {
@@ -204,33 +205,33 @@
                     },
                     n = function (e) {
                       return (
-                        (_[e] = new R.a.Value(0)),
+                        (G[e] = new w.a.Value(0)),
                         {
-                          opacity: _[e].interpolate({ inputRange: [0, 1], outputRange: [1, 0] }),
+                          opacity: G[e].interpolate({ inputRange: [0, 1], outputRange: [1, 0] }),
                           transform: [
-                            { rotate: _[e].interpolate({ inputRange: [0, 1], outputRange: ['0deg', '-2deg'] }) },
+                            { rotate: G[e].interpolate({ inputRange: [0, 1], outputRange: ['0deg', '-2deg'] }) },
                           ],
                         }
                       )
                     },
                     t = [],
-                    a = p.a.reducedMotionEnabled ? w.a : R.a.View,
+                    a = b.a.reducedMotionEnabled ? E.a : w.a.View,
                     u = 0;
                   u < i.length;
                   u += 1
                 ) {
                   var c = i[u],
-                    s = p.a.reducedMotionEnabled ? void 0 : n(u),
+                    s = b.a.reducedMotionEnabled ? void 0 : n(u),
                     l = o.a.createElement(
                       a,
                       { key: u, ref: e(u), style: s },
-                      o.a.createElement(o.a.Fragment, { key: r(c) }, N(c)),
+                      o.a.createElement(o.a.Fragment, { key: r(c) }, j(c)),
                     )
                   t.push(l)
                 }
                 return (D.current = t.length), t
               },
-              [_, r, i, N],
+              [G, r, i, j],
             ),
             U = o.a.useCallback(
               function (e) {
@@ -242,81 +243,81 @@
                       t = n.height,
                       r = n.top
                     return new d.a(r, t)
-                  })(j)
-                I({ positions: [{ id: i[n].entryId, rectangle: r }], viewport: r }), t && Z(n)
+                  })(F)
+                P({ positions: [{ id: i[n].entryId, rectangle: r }], viewport: r }), t && K(n)
               },
-              [i, I, Z],
+              [i, P, K],
             ),
             Y = o.a.useCallback(
               function (e) {
                 var n = e.index,
                   t = e.intersectionRatio
-                n === D.current - 1 && t >= u.c && G.scribeAction('reached_end'),
-                  n !== T && 1 === t && (z(n), U({ index: n, shouldSavePosition: !0 }))
+                n === D.current - 1 && t >= u.c && J.scribeAction('reached_end'),
+                  n !== z && 1 === t && (X(n), U({ index: n, shouldSavePosition: !0 }))
               },
-              [G, U, D, T],
+              [J, U, D, z],
             ),
             q = o.a.useCallback(
               function (e) {
                 var n
-                p.a.reducedMotionEnabled ||
-                  R.a.spring(_[T], { toValue: 1, bounciness: 2 }).start(function () {
-                    _[T].setValue(0)
+                b.a.reducedMotionEnabled ||
+                  w.a.spring(G[z], { toValue: 1, bounciness: 2 }).start(function () {
+                    G[z].setValue(0)
                   }),
-                  null === (n = j.current) || void 0 === n || n.handleNextSlide(e)
+                  null === (n = F.current) || void 0 === n || n.handleNextSlide(e)
               },
-              [_, j, T],
+              [G, F, z],
             ),
-            L = o.a.useCallback(
+            Q = o.a.useCallback(
               function (e) {
                 var n = e.next,
                   t = e.previous
-                t > n ? G.scribeAction('scroll_left') : t < n && G.scribeAction('scroll_right')
+                t > n ? J.scribeAction('scroll_left') : t < n && J.scribeAction('scroll_right')
               },
-              [G],
+              [J],
             )
           if (
             (o.a.useEffect(
               function () {
-                var e = W.current[T]
-                if (!p.a.reducedMotionEnabled && e) {
+                var e = W.current[z]
+                if (!b.a.reducedMotionEnabled && e) {
                   var n = e.getBoundingClientRect().height
-                  X.setValue(n)
+                  _.setValue(n)
                 }
               },
-              [J, T, X],
+              [Z, z, _],
             ),
             !i.length)
           )
-            return S()
-          var Q = o.a.createElement(
+            return V()
+          var $ = o.a.createElement(
             c.a.Provider,
             { value: { handleNextSlide: q } },
             o.a.createElement(
-              b.a,
+              R.a,
               {
-                childrenStyle: V.children,
-                onScroll: L,
+                childrenStyle: C.children,
+                onScroll: Q,
                 onVisibleRangeChange: Y,
-                ref: j,
+                ref: F,
                 scrollToCenter: !0,
-                style: p.a.reducedMotionEnabled ? V.root : V.rootInheritHeight,
-                visibleItemIndex: T,
+                style: b.a.reducedMotionEnabled ? C.root : C.rootInheritHeight,
+                visibleItemIndex: z,
                 withAddedNavButtonClickArea: !0,
               },
-              K,
+              L,
             ),
           )
-          return p.a.reducedMotionEnabled ? Q : o.a.createElement(R.a.View, { style: [V.root, { height: X }] }, Q)
+          return b.a.reducedMotionEnabled ? $ : o.a.createElement(w.a.View, { style: [C.root, { height: _ }] }, $)
         }),
-        V = m.a.create(function (e) {
+        C = p.a.create(function (e) {
           return {
             root: { marginHorizontal: e.spaces.space4, marginBottom: e.componentDimensions.gutterVertical },
             rootInheritHeight: { height: 'inherit' },
             children: { overflowY: 'hidden', scrollSnapAlign: 'center', scrollSnapStop: 'always', width: '100%' },
           }
         })
-      n.default = S
+      n.default = V
     },
     'X3+4': function (e, n, t) {
       'use strict'

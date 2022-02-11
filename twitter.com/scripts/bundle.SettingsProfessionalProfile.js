@@ -450,7 +450,7 @@
                 alias: null,
                 args: (r = [
                   { kind: 'Variable', name: 'display_category', variableName: 'displayCategory' },
-                  { kind: 'Literal', name: 's', value: 22 },
+                  { kind: 'Literal', name: 's', value: 23 },
                   { kind: 'Variable', name: 'user_id', variableName: 'userId' },
                 ]),
                 concreteType: 'UserProfessionalCategoriesDisplayUpdateResponse',
@@ -680,7 +680,7 @@
                 alias: 'user',
                 args: (t = [
                   { kind: 'Variable', name: 'rest_id', variableName: 'rest_id' },
-                  { kind: 'Literal', name: 's', value: 22 },
+                  { kind: 'Literal', name: 's', value: 23 },
                 ]),
                 concreteType: 'UserResults',
                 kind: 'LinkedField',
@@ -823,7 +823,7 @@
               {
                 alias: null,
                 args: (t = [
-                  { kind: 'Literal', name: 's', value: 22 },
+                  { kind: 'Literal', name: 's', value: 23 },
                   { kind: 'Variable', name: 'user_id', variableName: 'userId' },
                 ]),
                 concreteType: 'SwitchToNonProfessionalResponse',
@@ -1025,7 +1025,7 @@
                 alias: null,
                 args: (r = [
                   { kind: 'Variable', name: 'professional_type', variableName: 'professionalType' },
-                  { kind: 'Literal', name: 's', value: 22 },
+                  { kind: 'Literal', name: 's', value: 23 },
                   { kind: 'Variable', name: 'user_id', variableName: 'userId' },
                 ]),
                 concreteType: 'UserProfessionalTypeUpdateResponse',

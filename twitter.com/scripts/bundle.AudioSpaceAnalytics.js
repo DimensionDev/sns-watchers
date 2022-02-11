@@ -42,8 +42,8 @@
         A = (n('1t7P'), n('jQ/y'), n('3XMw')),
         E = n.n(A),
         T = n('rJoH'),
-        _ = n('Rumh'),
-        j = n('AooF')
+        _ = n('fzjU'),
+        j = n('Tg44')
       function O(e) {
         var t = e.space
         if (!t) return null
@@ -63,16 +63,16 @@
               if (e.state === j.a.SpaceState.Running)
                 (n = C.titleRunning({ spaceTitle: c })),
                   (i = C.descriptionFormatRunning({ hostSpace: o, descriptionListening: p, descriptionGeneric: s })),
-                  (r = F.ttl.Frequent)
+                  (r = I.ttl.Frequent)
               else if (e.state === j.a.SpaceState.NotStarted || e.state === j.a.SpaceState.PrePublished) {
                 var h = C.scheduledSpaceGeneric
                 ;(n = C.titleScheduled({ date: h, spaceTitle: c })),
                   (i = C.descriptionFormatScheduled({ hostSpace: o, descriptionGeneric: s })),
-                  (r = F.ttl.Frequent)
+                  (r = I.ttl.Frequent)
               } else
                 (n = C.titleEnded({ spaceTitle: c })),
                   (i = C.descriptionFormatEnded({ hostSpace: o, descriptionGeneric: s })),
-                  (r = F.ttl.LongLivedCache)
+                  (r = I.ttl.LongLivedCache)
               var d = 'https://twitter.com/i/spaces/'.concat(e.rest_id)
               return { title: n, canonical: d, description: i, ttl: r }
             })(e),
@@ -85,11 +85,11 @@
             canonical: n,
             title: r,
             description: i,
-            image: F.image.url,
-            imageType: F.image.type,
-            imageW: F.image.width,
-            imageH: F.image.height,
-            imageAlt: F.image.alt,
+            image: I.image.url,
+            imageType: I.image.type,
+            imageW: I.image.width,
+            imageH: I.image.height,
+            imageAlt: I.image.alt,
             ttl: a,
           }
         })(t)
@@ -110,7 +110,7 @@
           descriptionFormatScheduled: E.a.f6432ce5,
           descriptionFormatEnded: E.a.f6432ce5,
         },
-        F = {
+        I = {
           ttl: { Frequent: 300, LongLivedCache: 86400 },
           image: {
             type: 'image/jpeg',
@@ -120,7 +120,7 @@
             alt: C.twitterSpaces,
           },
         },
-        I = n('G8HL'),
+        F = n('G8HL'),
         x = (function (e) {
           l()(n, e)
           var t = h()(n)
@@ -169,12 +169,12 @@
           e.children
         )
       }
-      var G = w(Object(I.a)(x))
+      var G = w(Object(F.a)(x))
     },
     'Pc/x': function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return z
+        return N
       })
       var i = n('VrFO'),
         r = n.n(i),
@@ -218,7 +218,7 @@
         E = (function () {
           function e() {
             var t = this,
-              n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : I
+              n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : F
             r()(this, e),
               l()(this, 'reportSpaceFor', {
                 SelfHarm: function (e) {
@@ -329,7 +329,7 @@
               {
                 key: 'loginTwitterToken',
                 value: function (e) {
-                  var t = { jwt: e, vendor_id: F, create_user: !1, direct: !0 }
+                  var t = { jwt: e, vendor_id: I, create_user: !1, direct: !0 }
                   return this.post('loginTwitterToken', t)
                 },
               },
@@ -403,8 +403,8 @@
           Object.assign({}, O, ((e = {}), l()(e, T, A), l()(e, 'content-type', 'application/json'), e))
         )
       }
-      var F = 'm5-proxsee-login-a2011357b73e',
-        I = {},
+      var I = 'm5-proxsee-login-a2011357b73e',
+        F = {},
         x = {
           host: 'https://proxsee.pscp.tv',
           errorFilter: function (e, t) {
@@ -433,9 +433,9 @@
           AbusiveBehavior: 'HARASSMENT',
         }),
         R = new E(),
-        M = n('G6rE'),
-        N = new Error('[AudioModule] config not initialized'),
-        z = new ((function () {
+        z = n('G6rE'),
+        M = new Error('[AudioModule] config not initialized'),
+        N = new ((function () {
           function e() {
             r()(this, e), (this.proxsee = R)
           }
@@ -458,32 +458,32 @@
                 value: function () {
                   if (this.initialized()) {
                     var e = L.store.getState()
-                    return M.e.selectLoggedInUser(e)
+                    return z.e.selectLoggedInUser(e)
                   }
                 },
               },
               {
                 key: 'audioSpace',
                 value: function (e) {
-                  return L ? L.api.AudioSpaces.byId(e) : Promise.reject(N)
+                  return L ? L.api.AudioSpaces.byId(e) : Promise.reject(M)
                 },
               },
               {
                 key: 'subscribeToScheduledSpace',
                 value: function (e) {
-                  return L ? L.api.AudioSpaces.subscribeToScheduledSpaceById(e) : Promise.reject(N)
+                  return L ? L.api.AudioSpaces.subscribeToScheduledSpaceById(e) : Promise.reject(M)
                 },
               },
               {
                 key: 'unsubscribeFromScheduledSpace',
                 value: function (e) {
-                  return L ? L.api.AudioSpaces.unsubscribeFromScheduledSpaceById(e) : Promise.reject(N)
+                  return L ? L.api.AudioSpaces.unsubscribeFromScheduledSpaceById(e) : Promise.reject(M)
                 },
               },
               {
                 key: 'searchAudioSpace',
                 value: function (e, t) {
-                  return L ? L.api.AudioSpaces.search(e, t) : Promise.reject(N)
+                  return L ? L.api.AudioSpaces.search(e, t) : Promise.reject(M)
                 },
               },
             ]),

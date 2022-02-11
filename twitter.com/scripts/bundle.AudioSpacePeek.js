@@ -70,29 +70,29 @@
         D = n('MWbm'),
         F = n('IG7M'),
         H = n('rHpw'),
-        O = function (e) {
+        T = function (e) {
           var t = e.children,
             n = e.promotedContent,
             a = e.user
           return S.a.createElement(
             D.a,
-            { style: T.decorationWrapper },
+            { style: O.decorationWrapper },
             t,
             S.a.createElement(F.a, {
               renderActionMenu: function (e) {
                 return S.a.createElement(B.b, { onClose: e, promotedContent: n, user: a, view: 'follower' })
               },
-              style: T.actionMenu,
+              style: O.actionMenu,
             }),
           )
         },
-        T = H.a.create(function (e) {
+        O = H.a.create(function (e) {
           return { decorationWrapper: { flexDirection: 'row' }, actionMenu: { marginLeft: e.spaces.space12 } }
         }),
         U = n('uIZp'),
         j = n('mN6z'),
-        N = n('caTy'),
-        M = n('3IPs'),
+        M = n('caTy'),
+        N = n('3IPs'),
         z = n('Rp9C'),
         W = n('X04g'),
         G = n('Re5t'),
@@ -185,7 +185,7 @@
             : null
         },
         te = function (e) {
-          return S.a.createElement(O, { promotedContent: e.promotedContent, user: e.user }, ee(e))
+          return S.a.createElement(T, { promotedContent: e.promotedContent, user: e.user }, ee(e))
         },
         ne = function (e) {
           return S.a.createElement(F.a, {
@@ -236,7 +236,7 @@
                   n = t.saveAsRecentSearch,
                   a = t.shouldStoreTypeaheadItem,
                   r = t.userId
-                n && a && a(W.a.ItemType.USER) && n({ user: { id: r, type: M.a.User } })
+                n && a && a(W.a.ItemType.USER) && n({ user: { id: r, type: N.a.User } })
               }),
               v()(p()(e), '_scribeAction', function (t) {
                 var n,
@@ -323,7 +323,7 @@
                             ? {
                                 contextType: i.contextType,
                                 text: i.text,
-                                link: i.landingUrl ? Object(N.b)(i.landingUrl) : void 0,
+                                link: i.landingUrl ? Object(M.b)(i.landingUrl) : void 0,
                               }
                             : void 0,
                           withDarkerInteractiveBackground: a,
@@ -455,7 +455,7 @@
           return { followButton: { marginLeft: e.spaces.space12 } }
         }),
         ie = Object(q.a)(Object(J.a)(L(Z)))
-      t.b = Object(K.c)({ element: 'user' })(ie)
+      t.b = Object(K.a)({ element: 'user' })(ie)
     },
     BXJq: function (e, t, n) {
       'use strict'
@@ -533,8 +533,8 @@
         I = (n('1t7P'), n('jQ/y'), n('3XMw')),
         _ = n.n(I),
         k = n('rJoH'),
-        x = n('Rumh'),
-        P = n('AooF')
+        x = n('fzjU'),
+        P = n('Tg44')
       function R(e) {
         var t = e.space
         if (!t) return null
@@ -763,12 +763,12 @@
         )
       }
       var H = { more: h.a.h63a5c3b, reportThisSpace: h.a.b3481ffd },
-        O = n('0nhk'),
-        T = n('xVWt')
+        T = n('0nhk'),
+        O = n('xVWt')
       var U = n('MWbm'),
         j = n('sgih'),
-        N = ['Content', 'CustomHeader', 'withoutDescription', 'withoutPadding'],
-        M = ['Content', 'CustomHeader', 'shellLayout', 'withoutDescription', 'withoutPadding']
+        M = ['Content', 'CustomHeader', 'withoutDescription', 'withoutPadding'],
+        N = ['Content', 'CustomHeader', 'shellLayout', 'withoutDescription', 'withoutPadding']
       function z(e) {
         var t,
           n,
@@ -818,7 +818,7 @@
       }
       function W(e) {
         e.Content, e.CustomHeader, e.withoutDescription, e.withoutPadding
-        var t = S()(e, N),
+        var t = S()(e, M),
           n = o.a.createElement(
             A.a,
             r()(
@@ -843,7 +843,7 @@
             o.a.createElement(
               U.a,
               { style: V.headerRightItem },
-              o.a.createElement(O.a, { audioSpaceId: a, type: 'icon-borderless' }),
+              o.a.createElement(T.a, { audioSpaceId: a, type: 'icon-borderless' }),
             ),
             o.a.createElement(
               U.a,
@@ -859,14 +859,14 @@
           : o.a.createElement(
               U.a,
               { style: V.descriptionContainer },
-              o.a.createElement(T.b, { audioSpaceId: e.space.rest_id }),
+              o.a.createElement(O.b, { audioSpaceId: e.space.rest_id }),
             )
       }
       function q(e) {
         if (!e.Content) return null
         e.Content, e.CustomHeader
         var t = e.shellLayout,
-          n = (e.withoutDescription, e.withoutPadding, S()(e, M))
+          n = (e.withoutDescription, e.withoutPadding, S()(e, N))
         return o.a.createElement(
           U.a,
           { style: [V.content, e.withoutPadding && V.withoutPadding] },
@@ -1064,9 +1064,9 @@
           }
         }),
         ue = n('BXJq'),
-        pe = n('bNYH'),
-        he = n('Xyrk'),
-        me = n('AooF')
+        pe = n('VRZ4'),
+        he = n('CDzS'),
+        me = n('Tg44')
       function fe(e) {
         var t = Object(ue.a)(e.broadcastId)
         return o.a.createElement(
@@ -1093,7 +1093,7 @@
           o.a.createElement(
             U.a,
             { style: ge.shareButtonContainer },
-            o.a.createElement(O.a, { audioSpaceId: e.broadcastId }),
+            o.a.createElement(T.a, { audioSpaceId: e.broadcastId }),
           ),
         )
       }
@@ -1260,8 +1260,8 @@
             userSectionPadding: { paddingTop: e.spacesPx.space16 },
           }
         }),
-        Oe = n('21zW'),
-        Te = n('MH+I')
+        Te = n('21zW'),
+        Oe = n('MH+I')
       function Ue(e) {
         var t,
           n,
@@ -1275,26 +1275,26 @@
               a = t.windowWidth
             return o.a.createElement(
               U.a,
-              { style: a > f.a.theme.breakpoints.medium ? Ne.endedHeaderWide : Ne.endedHeader },
+              { style: a > f.a.theme.breakpoints.medium ? Me.endedHeaderWide : Me.endedHeader },
               o.a.createElement(
                 U.a,
                 null,
-                o.a.createElement(U.a, { style: Ne.closeButton }, e.closeButton),
+                o.a.createElement(U.a, { style: Me.closeButton }, e.closeButton),
                 o.a.createElement(
                   U.a,
-                  { style: Ne.row },
+                  { style: Me.row },
                   o.a.createElement(
                     m.b,
-                    { color: 'gray700', size: 'subtext1', style: [Ne.endedLabel, Ne.upper], weight: 'bold' },
+                    { color: 'gray700', size: 'subtext1', style: [Me.endedLabel, Me.upper], weight: 'bold' },
                     je.ended,
                     ' ',
-                    o.a.createElement(Oe.a, null),
+                    o.a.createElement(Te.a, null),
                   ),
-                  o.a.createElement(Te.a, {
+                  o.a.createElement(Oe.a, {
                     color: 'gray700',
                     short: !0,
                     size: 'subtext1',
-                    style: Ne.endedLabel,
+                    style: Me.endedLabel,
                     timeMs: i,
                   }),
                 ),
@@ -1309,7 +1309,7 @@
         )
       }
       var je = { ended: h.a.ba55e824 },
-        Ne = f.a.create(function (e) {
+        Me = f.a.create(function (e) {
           return {
             endedHeader: { paddingHorizontal: e.componentDimensions.gutterHorizontalPx },
             endedHeaderWide: { paddingHorizontal: 2 * e.componentDimensions.gutterHorizontalPx },
@@ -1320,7 +1320,7 @@
             closeButton: { alignItems: 'flex-start' },
           }
         })
-      function Me(e) {
+      function Ne(e) {
         var t,
           n,
           a = null === (t = e.location.state) || void 0 === t ? void 0 : t.origin,
@@ -1374,7 +1374,7 @@
       }
       function We(e) {
         var t = Object(c.a)(e.match)
-        return o.a.createElement(Me, r()({}, e, { broadcastId: t }))
+        return o.a.createElement(Ne, r()({}, e, { broadcastId: t }))
       }
     },
     Z5jE: function (e, t, n) {
@@ -1458,11 +1458,11 @@
         D = n.n(B),
         F = n('pQ3Z'),
         H = n.n(F),
-        O = (n('z84I'), n('cFuS')),
-        T = n('Re5t'),
+        T = (n('z84I'), n('cFuS')),
+        O = n('Re5t'),
         U = n('MWbm'),
         j = n('88ay'),
-        N = function (e) {
+        M = function (e) {
           var t = e.displayMode,
             n = e.renderUserCell,
             a = e.userIds
@@ -1477,15 +1477,15 @@
                     decoration: j.e,
                     displayMode: t,
                     key: e,
-                    promotedItemType: O.c.USER,
+                    promotedItemType: T.c.USER,
                     userId: e,
                     withFollowsYou: !0,
                   })
             }),
           )
         }
-      N.defaultProps = { displayMode: T.a.UserDetailed, withFinalItemBorder: !0, withItemBorder: !1 }
-      var M = N,
+      M.defaultProps = { displayMode: O.a.UserDetailed, withFinalItemBorder: !0, withItemBorder: !1 }
+      var N = M,
         z = ['availableUserIds', 'createLocalApiErrorHandler', 'fetchStatus', 'fetchUsersIfNeeded', 'userIds'],
         W = D.a.f5b426c2,
         G = { viewType: 'user_list' },
@@ -1504,7 +1504,7 @@
                   var t = e.props,
                     n = t.availableUserIds,
                     a = (t.createLocalApiErrorHandler, t.fetchStatus, t.fetchUsersIfNeeded, t.userIds, o()(t, z))
-                  return E.a.createElement(M, r()({}, a, { userIds: n }))
+                  return E.a.createElement(N, r()({}, a, { userIds: n }))
                 }),
                 v()(p()(e), '_handleFetch', function () {
                   e._fetchUsersIfNeeded()

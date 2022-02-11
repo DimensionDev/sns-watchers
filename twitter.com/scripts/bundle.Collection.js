@@ -23,7 +23,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return n.e(247).then(n.bind(null, 'U0EQ'))
+              return n.e(248).then(n.bind(null, 'U0EQ'))
             },
             loaderKey: 'collectionHeaderLoader',
             strategy: n('XBtf').a.Critical,
@@ -40,7 +40,7 @@
         g = n('7JQg'),
         T = C.a.f8cafdc1,
         v = C.a.ddf0ba7e
-      t.default = Object(g.c)({ page: 'collection', section: 'tweets' })(function (e) {
+      t.default = Object(g.a)({ page: 'collection', section: 'tweets' })(function (e) {
         var t = e.history,
           n = e.match.params.collectionId
         return o.a.createElement(

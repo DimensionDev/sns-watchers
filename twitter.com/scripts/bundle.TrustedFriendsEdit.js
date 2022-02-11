@@ -26,7 +26,7 @@
           n = t[1],
           o = Object(d.f)()
         return r.a.createElement(
-          s.b,
+          s.c,
           null,
           a
             ? r.a.createElement(p.b, {

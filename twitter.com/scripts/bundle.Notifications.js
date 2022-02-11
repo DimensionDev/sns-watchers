@@ -435,9 +435,9 @@
         h = n('wytG'),
         b = n('+Bsv'),
         g = n('VS6U'),
-        v = n('7JQg'),
-        _ = n('mw9i'),
-        w = n('k/OQ'),
+        v = n('mw9i'),
+        _ = n('k/OQ'),
+        w = n('7JQg'),
         T = n('zCf4'),
         E = m.a.eb75875d,
         I = m.a.f8321d82,
@@ -491,15 +491,15 @@
                 documentTitle: E,
                 history: s,
                 primaryContent:
-                  ((n = i.a.createElement(p.a, { history: s })), i.a.createElement(d.a, { component: _.a, fab: n }, f)),
+                  ((n = i.a.createElement(p.a, { history: s })), i.a.createElement(d.a, { component: v.a, fab: n }, f)),
                 rightControl: x,
-                secondaryBar: ((e = l ? N : R), i.a.createElement(w.a, { accessibilityLabel: C, links: e })),
+                secondaryBar: ((e = l ? N : R), i.a.createElement(_.a, { accessibilityLabel: C, links: e })),
                 sidebarContent: i.a.createElement(o.a, null),
                 title: k,
               })
             : i.a.createElement(y.a, { to: M })
         }
-      e.default = Object(v.c)({ page: 'ntab' })(u(U))
+      e.default = Object(w.a)({ page: 'ntab' })(u(U))
     },
     b5s6: function (t, e, n) {
       'use strict'

@@ -6,146 +6,142 @@
       r.r(t)
       var a,
         n,
-        o,
-        i = r('yiKp'),
-        c = r.n(i),
+        i,
+        o = r('yiKp'),
+        c = r.n(o),
         s = r('ezF+'),
         l = r('ERkP'),
         d = r.n(l),
         u = r('Fmkq'),
-        m = r('VrFO'),
-        b = r.n(m),
+        b = r('VrFO'),
+        m = r.n(b),
         p = r('Y9Ll'),
         y = r.n(p),
         f = r('5Yy7'),
         h = r.n(f),
-        E = r('2VqO'),
-        v = r.n(E),
-        C = r('KEM+'),
-        R = r.n(C),
-        P = r('rpbw'),
-        T = (r('lTEL'), r('7x/C'), r('JtPf'), r('87if'), r('kYxP'), r('XBtf')),
-        g = {
+        C = r('2VqO'),
+        v = r.n(C),
+        E = r('KEM+'),
+        R = r.n(E),
+        T = r('rpbw'),
+        g = (r('lTEL'), r('7x/C'), r('JtPf'), r('87if'), r('kYxP'), r('XBtf')),
+        A = {
           loader: function () {
             return r.e(225).then(r.bind(null, 'kh1t'))
           },
           loaderKey: 'feedbackItemLoader',
-          strategy: T.a.Critical,
+          strategy: g.a.Critical,
         },
-        O = r('TEXq'),
-        A = r('PlEh'),
-        w = (r('yH/f'), Object.freeze({ PagedCarouselFeedbackItem: 'pagedCarouselFeedbackItem', Message: 'message' })),
-        S = s.c({
+        P = r('TEXq'),
+        I = r('PlEh'),
+        O = (r('yH/f'), Object.freeze({ PagedCarouselFeedbackItem: 'pagedCarouselFeedbackItem', Message: 'message' })),
+        w = s.c({
           selectDisplayType: function (e) {
-            return Object(O.a)(e.content.content) || ''
+            return Object(P.a)(e.content.content) || ''
           },
           handlers:
-            ((a = {}), R()(a, w.PagedCarouselFeedbackItem, g), R()(a, w.Message, Object(A.a)({ withGaps: !1 })), a),
+            ((a = {}), R()(a, O.PagedCarouselFeedbackItem, A), R()(a, O.Message, Object(I.a)({ withGaps: !1 })), a),
         }),
-        D = r('VPAj'),
-        I = r('yDHe'),
-        k = s.d({
-          render: function (e, t) {
-            var r = e.content,
-              a = r.dismissedEntry,
-              n = r.feedbackKeys,
-              o = t.module
-            return d.a.createElement(I.a, { carousel: !0, entry: a, feedbackKeys: n, module: o })
+        S = {
+          loader: function () {
+            return r.e(232).then(r.bind(null, 'Itzz'))
           },
-          shouldDisplayBorder: Object(D.a)(!1),
-        }),
-        F = Object.freeze({
+          loaderKey: 'carouselTombstoneLoader',
+          strategy: g.a.Critical,
+        },
+        F = s.e(S),
+        D = Object.freeze({
           ScoreCard: 'scoreCard',
           Standard: 'standard',
           Broadcast: 'broadcast',
           CallToAction: 'callToAction',
         }),
-        j = {
+        k = {
           loader: function () {
-            return r.e(237).then(r.bind(null, 'CdHO'))
+            return r.e(238).then(r.bind(null, 'CdHO'))
           },
           loaderKey: 'standardHandlerLoader',
-          strategy: T.a.Critical,
+          strategy: g.a.Critical,
         },
         M = {
           loader: function () {
-            return r.e(237).then(r.bind(null, 'vKPG'))
+            return r.e(238).then(r.bind(null, 'vKPG'))
           },
           loaderKey: 'broadcastLoader',
-          strategy: T.a.Critical,
+          strategy: g.a.Critical,
+        },
+        j = {
+          loader: function () {
+            return r.e(238).then(r.bind(null, 'kthL'))
+          },
+          loaderKey: 'callToActionLoader',
+          strategy: g.a.Critical,
         },
         K = {
           loader: function () {
-            return r.e(237).then(r.bind(null, 'kthL'))
-          },
-          loaderKey: 'callToActionLoader',
-          strategy: T.a.Critical,
-        },
-        L = {
-          loader: function () {
-            return r.e(237).then(r.bind(null, 'FYbo'))
+            return r.e(238).then(r.bind(null, 'FYbo'))
           },
           loaderKey: 'scoreCardLoader',
-          strategy: T.a.Critical,
+          strategy: g.a.Critical,
         },
-        x = s.c({
+        L = s.c({
           selectDisplayType: function (e) {
-            return Object(O.a)(e.content.content) || ''
+            return Object(P.a)(e.content.content) || ''
           },
           handlers:
             ((n = {}),
-            R()(n, F.Standard, j),
-            R()(n, F.ScoreCard, L),
-            R()(n, F.Broadcast, M),
-            R()(n, F.CallToAction, K),
+            R()(n, D.Standard, k),
+            R()(n, D.ScoreCard, K),
+            R()(n, D.Broadcast, M),
+            R()(n, D.CallToAction, j),
             n),
         }),
-        B = r('67iF'),
-        H = r('8UdT'),
-        z =
-          ((o = {}),
-          R()(o, H.b.PagedCarouselItem, S),
-          R()(o, H.b.Tile, x),
-          R()(o, H.b.Topic, Object(B.a)({})),
-          R()(o, H.b.TwitterList, Object(P.a)({})),
-          R()(o, H.a.Tombstone, s.e(k)),
-          o),
+        z = r('67iF'),
+        x = r('8UdT'),
+        B =
+          ((i = {}),
+          R()(i, x.b.PagedCarouselItem, w),
+          R()(i, x.b.Tile, L),
+          R()(i, x.b.Topic, Object(z.a)({})),
+          R()(i, x.b.TwitterList, Object(T.a)({})),
+          R()(i, x.a.Tombstone, F),
+          i),
         V = r('FIs5'),
-        J = r('MDbM'),
+        H = r('MDbM'),
         N = r('eXtP'),
         X = r('3XMw'),
-        Y = r.n(X),
-        G = r('fs1G'),
-        q = r('zb92'),
-        U = r('RuTB'),
-        W = Object(q.a)({
+        G = r.n(X),
+        J = r('fs1G'),
+        Y = r('zb92'),
+        q = r('RuTB'),
+        U = Object(Y.a)({
           loader: function () {
             return Promise.all([r.e(0), r.e(197)]).then(r.bind(null, 'DO1+'))
           },
           renderPlaceholder: function (e, t) {
-            return d.a.createElement(U.a, { hasError: e, onRetry: t })
+            return d.a.createElement(q.a, { hasError: e, onRetry: t })
           },
         }),
-        Z = r('BKvV'),
-        _ = r('b1wW'),
-        Q = r('Fz18'),
-        $ = r('JfS+'),
-        ee = Object(q.a)({
+        W = r('BKvV'),
+        Z = r('b1wW'),
+        _ = r('Fz18'),
+        Q = r('JfS+'),
+        $ = Object(Y.a)({
           loader: function () {
             return Promise.all([r.e(0), r.e(197)]).then(r.bind(null, '0xZH'))
           },
           renderPlaceholder: function (e, t) {
-            return d.a.createElement(U.a, { hasError: e, onRetry: t })
+            return d.a.createElement(q.a, { hasError: e, onRetry: t })
           },
         }),
-        te = r('v6aA'),
-        re = G.a,
-        ae = Y.a.afb4c24a,
-        ne = (function (e) {
+        ee = r('v6aA'),
+        te = J.a,
+        re = G.a.afb4c24a,
+        ae = (function (e) {
           h()(r, e)
           var t = v()(r)
           function r() {
-            return b()(this, r), t.apply(this, arguments)
+            return m()(this, r), t.apply(this, arguments)
           }
           return (
             y()(r, [
@@ -157,40 +153,40 @@
                     r = e.canRefresh,
                     a = e.dismissedEntries,
                     n = e.items,
-                    o = e.module,
-                    i = e.moduleEntryId,
+                    i = e.module,
+                    o = e.moduleEntryId,
                     s = e.numRowsFromMetadata,
                     l = e.renderEmptyState,
                     u = e.richScribeAction,
-                    m = e.scribe,
-                    b = e.scribeNamespace,
+                    b = e.scribe,
+                    m = e.scribeNamespace,
                     p = e.scrollerDisplayType
                   return d.a.createElement(
-                    Z.b.Provider,
+                    W.b.Provider,
                     { value: c()({ numRowsFromMetadata: s, scrollerDisplayType: p }, this.context) },
-                    d.a.createElement(N.a, { dismissedEntries: a, entries: n, entryConfiguration: z }, function (e, a) {
+                    d.a.createElement(N.a, { dismissedEntries: a, entries: n, entryConfiguration: B }, function (e, a) {
                       return d.a.createElement(
-                        Q.a,
-                        { identifier: i },
-                        d.a.createElement($.a, {
+                        _.a,
+                        { identifier: o },
+                        d.a.createElement(Q.a, {
                           applyReactionInstructions: t,
                           canRefresh: r,
-                          clearActiveCover: G.a,
+                          clearActiveCover: J.a,
                           entries: a,
                           handlerRegistry: e,
-                          initialFetchStatus: J.a.LOADED,
-                          module: o,
-                          onAtTop: G.a,
-                          onRef: G.a,
-                          processCallback: re,
+                          initialFetchStatus: H.a.LOADED,
+                          module: i,
+                          onAtTop: J.a,
+                          onRef: J.a,
+                          processCallback: te,
                           refreshControl: null,
-                          removeAlert: G.a,
+                          removeAlert: J.a,
                           renderEmptyState: l,
                           richScribeAction: u,
-                          scribeAction: m,
-                          scribeNamespace: b,
-                          scroller: p === _.a.PagedCarousel ? W : ee,
-                          timelineId: i,
+                          scribeAction: b,
+                          scribeNamespace: m,
+                          scroller: p === Z.a.PagedCarousel ? U : $,
+                          timelineId: o,
                           title: 'Carousel',
                           withKeyboardShortcuts: !1,
                         }),
@@ -203,17 +199,18 @@
             r
           )
         })(d.a.PureComponent)
-      R()(ne, 'contextType', te.a),
-        R()(ne, 'defaultProps', {
+      R()(ae, 'contextType', ee.a),
+        R()(ae, 'defaultProps', {
           renderEmptyState: function () {
-            return d.a.createElement(V.a, { message: ae })
+            return d.a.createElement(V.a, { message: re })
           },
-          scrollerDisplayType: _.a.Vertical,
+          scrollerDisplayType: Z.a.Vertical,
         })
-      var oe = ne,
+      var ne = ae,
         ie = r('zh9S'),
-        ce = r('Rp9C'),
-        se = r('X04g')
+        oe = r('Rp9C'),
+        ce = r('X04g'),
+        se = r('VPAj')
       t.default = function (e) {
         var t = e.scrollerDisplayType
         return s.g({
@@ -224,7 +221,7 @@
               scribe: ie.c,
             }
           },
-          component: oe,
+          component: ne,
           selectData: function (e) {
             e.entry
             var t = e.module
@@ -241,26 +238,26 @@
             var r,
               a = e.data,
               n = a.dismissedEntries,
-              o = void 0 === n ? {} : n,
-              i = a.canRefresh,
+              i = void 0 === n ? {} : n,
+              o = a.canRefresh,
               c = e.entry,
               s = c.content.items,
               l = c.entryId,
               d = c.itemMetadata.moduleMetadata,
               u = e.scribeNamespace,
-              m = e.actions,
-              b = m.applyReactionInstructions,
-              p = m.richScribeAction,
-              y = m.scribe
+              b = e.actions,
+              m = b.applyReactionInstructions,
+              p = b.richScribeAction,
+              y = b.scribe
             return {
-              applyReactionInstructions: b,
-              canRefresh: i,
-              dismissedEntries: o,
+              applyReactionInstructions: m,
+              canRefresh: o,
+              dismissedEntries: i,
               items: s || [],
               module: e.module,
               moduleEntryId: l,
               numRowsFromMetadata:
-                t === _.a.GridCarousel
+                t === Z.a.GridCarousel
                   ? null == d || null === (r = d.gridCarouselMetadata) || void 0 === r
                     ? void 0
                     : r.numRows
@@ -275,12 +272,12 @@
             var t = e.actions.scribe,
               r = e.entry.itemMetadata.clientEventInfo,
               a = e.scribeNamespace,
-              n = ce.a.getAllSurfaceDetails(r),
-              o = n ? { items: [c()({ item_type: se.a.ItemType.CAROUSEL }, n)] } : void 0
-            t(c()(c()({}, a), {}, { action: 'impression' }), o)
+              n = oe.a.getAllSurfaceDetails(r),
+              i = n ? { items: [c()({ item_type: ce.a.ItemType.CAROUSEL }, n)] } : void 0
+            t(c()(c()({}, a), {}, { action: 'impression' }), i)
           },
-          isFocusable: Object(D.a)(!0),
-          getBehavioralEventContextOverride: G.a,
+          isFocusable: Object(se.a)(!0),
+          getBehavioralEventContextOverride: J.a,
         })
       }
     },
@@ -292,40 +289,15 @@
       r('FtHn')
       var a = r('ERkP'),
         n = r.n(a),
-        o = r('b1wW'),
-        i = r('v6aA'),
+        i = r('b1wW'),
+        o = r('v6aA'),
         c = n.a.createContext(
           Object.create(
-            i.c,
-            Object.getOwnPropertyDescriptors({ numRowsFromMetadata: void 0, scrollerDisplayType: o.a.Carousel }),
+            o.c,
+            Object.getOwnPropertyDescriptors({ numRowsFromMetadata: void 0, scrollerDisplayType: i.a.Carousel }),
           ),
         )
       t.b = c
-    },
-    yDHe: function (e, t, r) {
-      'use strict'
-      r('lTEL'), r('7x/C'), r('JtPf'), r('87if'), r('kYxP')
-      var a = r('ERkP'),
-        n = r.n(a),
-        o = r('zb92'),
-        i = r('RuTB'),
-        c = r('rHpw').a.create(function (e) {
-          return { root: { minHeight: 200 } }
-        }),
-        s = function (e) {
-          var t = e.hasError,
-            r = e.onRetry
-          return n.a.createElement(i.a, { hasError: t, onRetry: r, style: c.root })
-        },
-        l = Object(o.a)({
-          loader: function () {
-            return r.e(174).then(r.bind(null, '6l+S'))
-          },
-          renderPlaceholder: function (e, t) {
-            return n.a.createElement(s, { hasError: e, onRetry: t })
-          },
-        })
-      t.a = l
     },
   },
 ])

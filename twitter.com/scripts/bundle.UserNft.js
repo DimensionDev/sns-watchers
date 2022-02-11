@@ -938,7 +938,7 @@
               return m && 'User' === m.__typename && !m.has_nft_avatar
                 ? r.a.createElement(c.a, { to: '/'.concat(Object(o.a)(e), '/photo') })
                 : r.a.createElement(
-                    d.b,
+                    d.c,
                     { namespace: { page: 'nft', section: 'avatar' } },
                     r.a.createElement(
                       s.a,
@@ -978,7 +978,7 @@
               {
                 alias: 'user',
                 args: (l = [
-                  { kind: 'Literal', name: 's', value: 46 },
+                  { kind: 'Literal', name: 's', value: 47 },
                   { kind: 'Variable', name: 'screen_name', variableName: 'screenName' },
                 ]),
                 concreteType: 'UserResults',
@@ -1915,7 +1915,7 @@
           return { followButton: { marginLeft: e.spaces.space12 } }
         }),
         re = Object(W.a)(Object(G.a)(I(J)))
-      a.b = Object(V.c)({ element: 'user' })(re)
+      a.b = Object(V.a)({ element: 'user' })(re)
     },
     EPqq: function (e, a, n) {
       'use strict'

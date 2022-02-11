@@ -72,7 +72,7 @@
         b = r('rHpw').a.create(function (e) {
           return { flexGrow: { flexGrow: 1 } }
         }),
-        G = Object(g.c)()(function (e) {
+        G = Object(g.a)()(function (e) {
           var t = e.children,
             r = e.containerStyle,
             n = e.documentTitle,

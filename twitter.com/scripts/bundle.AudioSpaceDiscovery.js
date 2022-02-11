@@ -21,7 +21,7 @@
         m = n('mAxt'),
         v = n.n(m),
         y = (n('2G9S'), n('CEs6')),
-        b = (function (e) {
+        g = (function (e) {
           h()(n, e)
           var t = d()(n)
           function n(e, a, i) {
@@ -38,8 +38,8 @@
           }
           return o()(n)
         })(v()(Error))
-      l()(b, 'displayName', 'ProxseeApiError')
-      var g,
+      l()(g, 'displayName', 'ProxseeApiError')
+      var b,
         S,
         k = n('epkG'),
         E = n('SrIh'),
@@ -222,9 +222,9 @@
           )
         })(),
         P = 'X-Idempotence',
-        A = 'X-Periscope-User-Agent',
-        T = 'X-Attempt',
-        x = ((g = {}), l()(g, A, 'Twitter/m5'), l()(g, T, 1), g)
+        T = 'X-Periscope-User-Agent',
+        A = 'X-Attempt',
+        x = ((b = {}), l()(b, T, 'Twitter/m5'), l()(b, A, 1), b)
       function I() {
         var e,
           t = Date.now()
@@ -245,7 +245,7 @@
                       var n = e.uri,
                         a = t.status,
                         r = Object(y.a)(t)
-                      return new b(n, a, r.msg)
+                      return new g(n, a, r.msg)
                     })(e, t),
                   )
                 : t
@@ -341,8 +341,8 @@
         m = n('KEM+'),
         v = n.n(m),
         y = (n('2G9S'), n('KqXw'), n('LJOr'), n('ERkP')),
-        b = n.n(y),
-        g = n('sTyV'),
+        g = n.n(y),
+        b = n('sTyV'),
         S = n('6/RC'),
         k = n('sebV'),
         E = n('G6rE'),
@@ -357,8 +357,8 @@
           }),
         O = n('3XMw'),
         P = n.n(O),
-        A = n('OrGc'),
-        T = n('QK5w'),
+        T = n('OrGc'),
+        A = n('QK5w'),
         x = n('aITJ'),
         I = n('MWbm'),
         j = n('TnY3'),
@@ -407,15 +407,15 @@
                   },
                   s =
                     ((t = {}),
-                    v()(t, A.e.search, c()),
-                    v()(t, A.e.goToUser, c('@')),
-                    v()(t, A.e.openKeyboardShortcuts, function () {
+                    v()(t, T.e.search, c()),
+                    v()(t, T.e.goToUser, c('@')),
+                    v()(t, T.e.openKeyboardShortcuts, function () {
                       return i.push('/i/keyboard_shortcuts')
                     }),
-                    v()(t, A.e.goExplore, function () {
+                    v()(t, T.e.goExplore, function () {
                       return i.push('/explore')
                     }),
-                    v()(t, A.e.goSettings, function () {
+                    v()(t, T.e.goSettings, function () {
                       return i.push('/settings')
                     }),
                     t),
@@ -423,13 +423,13 @@
                     var t
                     return (
                       (t = {}),
-                      v()(t, A.e.goProfile, function () {
+                      v()(t, T.e.goProfile, function () {
                         return i.push('/'.concat(e))
                       }),
-                      v()(t, A.e.goLikes, function () {
+                      v()(t, T.e.goLikes, function () {
                         return i.push('/'.concat(e, '/likes'))
                       }),
-                      v()(t, A.e.goLists, function () {
+                      v()(t, T.e.goLists, function () {
                         return i.push('/'.concat(e, '/lists'))
                       }),
                       t
@@ -441,7 +441,7 @@
                       ? r()(
                           r()({}, u(o)),
                           {},
-                          v()({}, A.e.goTopArticles, function () {
+                          v()({}, T.e.goTopArticles, function () {
                             return i.push('/i/articles')
                           }),
                         )
@@ -452,37 +452,37 @@
                     r()(r()({}, s), p),
                     {},
                     ((n = {}),
-                    v()(n, A.e.goHome, function () {
+                    v()(n, T.e.goHome, function () {
                       return i.push('/home')
                     }),
-                    v()(n, A.e.goDisplay, function () {
+                    v()(n, T.e.goDisplay, function () {
                       return i.push('/i/display')
                     }),
-                    v()(n, A.e.goNotifications, function () {
+                    v()(n, T.e.goNotifications, function () {
                       return i.push('/notifications')
                     }),
-                    v()(n, A.e.goMentions, function () {
+                    v()(n, T.e.goMentions, function () {
                       return i.push('/notifications/mentions')
                     }),
-                    v()(n, A.e.goMessages, function () {
+                    v()(n, T.e.goMessages, function () {
                       return i.push('/messages')
                     }),
-                    v()(n, A.e.newMessage, function () {
+                    v()(n, T.e.newMessage, function () {
                       return i.push('/messages/compose')
                     }),
-                    v()(n, A.e.newTweet, function () {
+                    v()(n, T.e.newTweet, function () {
                       return i.push('/compose/tweet')
                     }),
-                    v()(n, A.e.goMomentMaker, function () {
+                    v()(n, T.e.goMomentMaker, function () {
                       return i.push('/i/moment_maker')
                     }),
-                    v()(n, A.e.goBookmarks, function () {
+                    v()(n, T.e.goBookmarks, function () {
                       return i.push('/i/bookmarks')
                     }),
                     n),
                   ),
                   f = e.props.loggedInUserScreenName ? h : s
-                e._unbindKeyboardShortcuts = Object(g.a)(f)
+                e._unbindKeyboardShortcuts = Object(b.a)(f)
               }),
               v()(l()(e), '_handleKeyDown', function (t) {
                 H(t) ||
@@ -494,7 +494,7 @@
                   t.preventDefault(), t.stopPropagation()
                   var n = e._backspaceDown,
                     a = !!Object(R.a)(n) && Date.now() - n < 500,
-                    r = Object(T.a)({}, { location: e.props.location })
+                    r = Object(A.a)({}, { location: e.props.location })
                   a && r ? e.props.history.goBack() : window.close()
                 }
               }),
@@ -527,11 +527,11 @@
                 key: 'render',
                 value: function () {
                   return this.props.loggedInUserScreenName
-                    ? b.a.createElement(
+                    ? g.a.createElement(
                         I.a,
                         { accessibilityLevel: 2, accessibilityRole: 'heading', style: C.a.visuallyHidden },
-                        b.a.createElement(L.b, null, B),
-                        b.a.createElement(L.b, { focusable: !1, link: '/i/keyboard_shortcuts' }, z),
+                        g.a.createElement(L.b, null, B),
+                        g.a.createElement(L.b, { focusable: !1, link: '/i/keyboard_shortcuts' }, z),
                       )
                     : null
                 },
@@ -539,7 +539,7 @@
             ]),
             n
           )
-        })(b.a.Component)
+        })(g.a.Component)
       v()(M, 'contextType', D.a)
       var q = _(M),
         Q = S.canUseDOM ? Object(j.a)(q) : Object(V.a)(null)
@@ -549,7 +549,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'AudioSpaceDiscovery', function () {
-          return be
+          return ge
         })
       var a = n('ERkP'),
         r = n.n(a),
@@ -566,9 +566,9 @@
         m = n('RgK2'),
         v = n.n(m),
         y = n('Irs7'),
-        b = n('MWbm'),
-        g = n('t62R'),
-        S = n('AooF'),
+        g = n('MWbm'),
+        b = n('t62R'),
+        S = n('Tg44'),
         k = n('6iuV'),
         E = n('FIs5'),
         w = n('rHpw'),
@@ -581,25 +581,25 @@
           i = t
             ? null
             : r.a.createElement(
-                g.b,
+                b.b,
                 { size: 'subtext1', style: I.title },
                 O.emptySectionText({ section: n, searchQuery: a }),
               )
         return r.a.createElement(
           r.a.Fragment,
           null,
-          r.a.createElement(g.b, { size: 'title4', style: t && I.title, weight: 'heavy' }, n),
+          r.a.createElement(b.b, { size: 'title4', style: t && I.title, weight: 'heavy' }, n),
           i,
         )
       }
-      function A(e) {
+      function T(e) {
         var t = e.shouldFetch,
           n = e.spaceId
         return t
           ? r.a.createElement(d.a, { audioSpaceId: n })
           : r.a.createElement(S.a, { propsForV2: v.a, shouldUseV2: !0 })
       }
-      function T(e) {
+      function A(e) {
         var t = e.items,
           n = e.name,
           a = e.searchQuery,
@@ -625,7 +625,7 @@
                 },
                 t.map(function (e, t) {
                   var n = t - 3 < c
-                  return r.a.createElement(A, { key: e, shouldFetch: n, spaceId: e })
+                  return r.a.createElement(T, { key: e, shouldFetch: n, spaceId: e })
                 }),
               )
             : null,
@@ -645,16 +645,16 @@
           return !!e.items.length
         })
           ? r.a.createElement(
-              b.a,
+              g.a,
               { style: I.root },
               t.sections.map(function (e) {
                 var t = e.items,
                   a = e.name
-                return r.a.createElement(T, { items: t, key: ''.concat(n).concat(a), name: a, searchQuery: n })
+                return r.a.createElement(A, { items: t, key: ''.concat(n).concat(a), name: a, searchQuery: n })
               }),
             )
           : r.a.createElement(E.a, { header: O.emptyStateTitle({ searchQuery: n }), message: O.emptyStateBody })
-        return r.a.createElement(p.b, { namespace: _ }, i)
+        return r.a.createElement(p.c, { namespace: _ }, i)
       }
       var I = w.a.create(function (e) {
           return {
@@ -752,13 +752,13 @@
               },
             })
           return r.a.createElement(
-            p.b,
+            p.c,
             { namespace: d },
             r.a.createElement(
               r.a.Fragment,
               null,
               r.a.createElement(i.a, { deepLink: F(n, a) }),
-              r.a.createElement(b.a, { style: H.root }, m || v),
+              r.a.createElement(g.a, { style: H.root }, m || v),
             ),
           )
         },
@@ -801,7 +801,7 @@
           l = u[0],
           p = u[1]
         return r.a.createElement(
-          b.a,
+          g.a,
           { style: ie.horizontal },
           r.a.createElement(
             W.a,
@@ -845,7 +845,7 @@
           return { wrapper: { alignItems: 'stretch', flex: 1 }, horizontal: { flex: 1, flexDirection: 'row' } }
         }),
         oe = function (e) {
-          return r.a.createElement(p.b, { namespace: te }, r.a.createElement(re, e))
+          return r.a.createElement(p.c, { namespace: te }, r.a.createElement(re, e))
         },
         ce = n('m3Bd'),
         se = n.n(ce),
@@ -890,7 +890,7 @@
         me = r.a.createElement(M.a, { withSearchBox: !1, withTrends: !1 }),
         ve = r.a.createElement(de, null),
         ye = l.a.f5774e3a
-      function be(e) {
+      function ge(e) {
         var t = e.history
         return r.a.createElement(
           X.a,
@@ -908,8 +908,8 @@
           }),
         )
       }
-      var ge = Q(be)
-      t.default = ge
+      var be = Q(ge)
+      t.default = be
     },
     woHV: function (e, t, n) {
       'use strict'

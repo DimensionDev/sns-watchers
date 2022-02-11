@@ -455,7 +455,7 @@
           return { followButton: { marginLeft: e.spaces.space12 } }
         }),
         ae = Object(W.a)(Object(V.a)(L(Z)))
-      t.b = Object(X.c)({ element: 'user' })(ae)
+      t.b = Object(X.a)({ element: 'user' })(ae)
     },
     hqDb: function (e, t, r) {
       'use strict'

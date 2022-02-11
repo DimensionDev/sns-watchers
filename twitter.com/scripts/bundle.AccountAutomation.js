@@ -6,9 +6,9 @@
       var a = n('VrFO'),
         o = n.n(a),
         r = n('Y9Ll'),
-        i = n.n(r),
-        c = n('1Pcy'),
-        l = n.n(c),
+        c = n.n(r),
+        i = n('1Pcy'),
+        l = n.n(i),
         u = n('5Yy7'),
         s = n.n(u),
         d = n('2VqO'),
@@ -26,7 +26,7 @@
           function n() {
             var e
             o()(this, n)
-            for (var a = arguments.length, r = new Array(a), i = 0; i < a; i++) r[i] = arguments[i]
+            for (var a = arguments.length, r = new Array(a), c = 0; c < a; c++) r[c] = arguments[c]
             return (
               (e = t.call.apply(t, [this].concat(r))),
               m()(l()(e), '_renderSubtextAndLink', function () {
@@ -43,7 +43,7 @@
             )
           }
           return (
-            i()(n, [
+            c()(n, [
               {
                 key: 'render',
                 value: function () {
@@ -91,9 +91,9 @@
       var a = n('VrFO'),
         o = n.n(a),
         r = n('Y9Ll'),
-        i = n.n(r),
-        c = n('1Pcy'),
-        l = n.n(c),
+        c = n.n(r),
+        i = n('1Pcy'),
+        l = n.n(i),
         u = n('5Yy7'),
         s = n.n(u),
         d = n('2VqO'),
@@ -132,7 +132,7 @@
           function n() {
             var e
             o()(this, n)
-            for (var a = arguments.length, r = new Array(a), i = 0; i < a; i++) r[i] = arguments[i]
+            for (var a = arguments.length, r = new Array(a), c = 0; c < a; c++) r[c] = arguments[c]
             return (
               (e = t.call.apply(t, [this].concat(r))),
               m()(l()(e), '_renderWithFetchSettings', function () {
@@ -145,11 +145,11 @@
                   a = t.onSubmit,
                   o = t.submitDisabled,
                   r = t.submitLabel,
-                  i = t.submitType,
-                  c = t.withMarginBottom
+                  c = t.submitType,
+                  i = t.withMarginBottom
                 return f.a.createElement(
                   B.a,
-                  { style: [U.contentRoot, c && U.withMarginBottom] },
+                  { style: [U.contentRoot, i && U.withMarginBottom] },
                   n,
                   a
                     ? f.a.createElement(
@@ -159,7 +159,7 @@
                         f.a.createElement(
                           B.a,
                           { style: U.buttonContainer },
-                          f.a.createElement(T.a, { disabled: o, onPress: a, style: U.button, testID: A, type: i }, r),
+                          f.a.createElement(T.a, { disabled: o, onPress: a, style: U.button, testID: A, type: c }, r),
                         ),
                       )
                     : null,
@@ -174,7 +174,7 @@
             )
           }
           return (
-            i()(n, [
+            c()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -199,8 +199,8 @@
                     a = e.rightControl,
                     o = e.screenType,
                     r = e.secondaryBar,
-                    i = e.title,
-                    c = e.withBottomBorder,
+                    c = e.title,
+                    i = e.withBottomBorder,
                     l = this.getBackLocation(),
                     u = t ? '@'.concat(t.screen_name) : void 0
                   return f.a.createElement(
@@ -213,8 +213,8 @@
                       secondaryBar: r,
                       showSubtitleOnWideDetail: !1,
                       subtitle: u,
-                      title: i,
-                      withBottomBorder: c,
+                      title: c,
+                      withBottomBorder: i,
                     },
                     t ? this._renderWithFetchSettings() : this._render(),
                   )
@@ -269,8 +269,8 @@
       var a = n('KEM+'),
         o = n.n(a),
         r = n('yiKp'),
-        i = n.n(r),
-        c = (n('yH/f'), n('oEOe')),
+        c = n.n(r),
+        i = (n('yH/f'), n('oEOe')),
         l = n('iD2S'),
         u = n.n(l),
         s = n('kGix'),
@@ -295,19 +295,19 @@
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
             case m.REQUEST:
-              return i()(
-                i()({}, e),
+              return c()(
+                c()({}, e),
                 {},
-                { account_label: i()(i()({}, e.account_label), {}, { fetchStatus: s.a.LOADING }) },
+                { account_label: c()(c()({}, e.account_label), {}, { fetchStatus: s.a.LOADING }) },
               )
             case m.SUCCESS:
               var n, a, o
-              return i()(
-                i()({}, e),
+              return c()(
+                c()({}, e),
                 {},
                 {
-                  account_label: i()(
-                    i()(
+                  account_label: c()(
+                    c()(
                       {},
                       null == t ||
                         null === (n = t.payload) ||
@@ -325,28 +325,28 @@
                 },
               )
             case m.FAILURE:
-              return i()(
-                i()({}, e),
+              return c()(
+                c()({}, e),
                 {},
-                { account_label: i()(i()({}, e.account_label), {}, { fetchStatus: s.a.FAILED }) },
+                { account_label: c()(c()({}, e.account_label), {}, { fetchStatus: s.a.FAILED }) },
               )
             case p.REQUEST:
-              return i()(
-                i()({}, e),
+              return c()(
+                c()({}, e),
                 {},
-                { account_label: i()(i()({}, e.account_label), {}, { disableStatus: s.a.LOADING }) },
+                { account_label: c()(c()({}, e.account_label), {}, { disableStatus: s.a.LOADING }) },
               )
             case p.SUCCESS:
-              return i()(
-                i()({}, e),
+              return c()(
+                c()({}, e),
                 {},
                 { account_label: { managed_label: void 0, fetchStatus: s.a.LOADED, disableStatus: s.a.LOADED } },
               )
             case p.FAILURE:
-              return i()(
-                i()({}, e),
+              return c()(
+                c()({}, e),
                 {},
-                { account_label: i()(i()({}, e.account_label), {}, { disableStatus: s.a.FAILED }) },
+                { account_label: c()(c()({}, e.account_label), {}, { disableStatus: s.a.FAILED }) },
               )
             default:
               return e
@@ -383,7 +383,7 @@
         C = function (e) {
           return function (t, n, a) {
             var o = a.api
-            return Object(c.b)(t, { request: o.AccountTaxonomy.fetchUserAccountLabel, params: { userId: e } })({
+            return Object(i.b)(t, { request: o.AccountTaxonomy.fetchUserAccountLabel, params: { userId: e } })({
               actionTypes: m,
               context: 'FETCH_USER_ACCOUNT_LABEL',
             })
@@ -392,7 +392,7 @@
         _ = function () {
           return function (e, t, n) {
             var a = n.api
-            return Object(c.b)(e, { request: a.AccountTaxonomy.disableUserAccountLabel, params: {} })({
+            return Object(i.b)(e, { request: a.AccountTaxonomy.disableUserAccountLabel, params: {} })({
               actionTypes: p,
               context: 'DISABLE_USER_ACCOUNT_LABEL',
             })
@@ -404,9 +404,9 @@
       var a = n('m3Bd'),
         o = n.n(a),
         r = n('VrFO'),
-        i = n.n(r),
-        c = n('Y9Ll'),
-        l = n.n(c),
+        c = n.n(r),
+        i = n('Y9Ll'),
+        l = n.n(i),
         u = n('1Pcy'),
         s = n.n(u),
         d = n('5Yy7'),
@@ -456,7 +456,7 @@
           var t = m()(n)
           function n() {
             var e
-            i()(this, n)
+            c()(this, n)
             for (var a = arguments.length, o = new Array(a), r = 0; r < a; r++) o[r] = arguments[r]
             return (
               (e = t.call.apply(t, [this].concat(o))),
@@ -533,8 +533,8 @@
                     a = n.SideNavButton,
                     o = n.TabBar,
                     r = n.TeamsSwitcher,
-                    i = n.backLocation,
-                    c = n.documentTitle,
+                    c = n.backLocation,
+                    i = n.documentTitle,
                     l = n.headerless,
                     u = n.history,
                     s = n.leftControl,
@@ -563,7 +563,7 @@
                       O.a,
                       { style: B.appBarContainer },
                       C.a.createElement(y.a, {
-                        backLocation: i,
+                        backLocation: c,
                         fixed: !1,
                         hideBackButton: R,
                         history: u,
@@ -586,8 +586,8 @@
                             SideNavButton: a,
                             TabBar: o,
                             TeamsSwitcher: r,
-                            backLocation: i,
-                            documentTitle: c,
+                            backLocation: c,
+                            documentTitle: i,
                             headerless: l,
                             middleControl: d,
                             onBackClick: h,
@@ -629,9 +629,9 @@
       var a = n('97Jx'),
         o = n.n(a),
         r = n('m3Bd'),
-        i = n.n(r),
-        c = n('ERkP'),
-        l = n.n(c),
+        c = n.n(r),
+        i = n('ERkP'),
+        l = n.n(i),
         u = n('t62R'),
         s = n('I4+6'),
         d = n('cm6r'),
@@ -654,7 +654,7 @@
           n = void 0 === t ? 'center' : t,
           a = e.color,
           r = e.label,
-          c = i()(e, m),
+          i = c()(e, m),
           f = s.a.generate({
             backgroundColor: h.a.theme.colors.transparent,
             color: h.a.theme.colors[a],
@@ -665,7 +665,7 @@
           { style: p.container },
           l.a.createElement(
             d.a,
-            o()({}, c, { interactiveStyles: f, style: p.root }),
+            o()({}, i, { interactiveStyles: f, style: p.root }),
             l.a.createElement(u.b, { align: n, color: a }, r),
           ),
         )
@@ -681,14 +681,14 @@
           return K
         }),
         n.d(t, 'AccountAutomationScreen', function () {
-          return ce
+          return ie
         })
       var a = n('yiKp'),
         o = n.n(a),
         r = n('VrFO'),
-        i = n.n(r),
-        c = n('Y9Ll'),
-        l = n.n(c),
+        c = n.n(r),
+        i = n('Y9Ll'),
+        l = n.n(i),
         u = n('1Pcy'),
         s = n.n(u),
         d = n('5Yy7'),
@@ -752,14 +752,14 @@
         ae = A.a.df035b80,
         oe = A.a.bd12cf34,
         re = A.a.cfd2f35d,
-        ie = '/i/flow/enable_automated_account',
-        ce = (function (e) {
+        ce = '/i/flow/enable_automated_account',
+        ie = (function (e) {
           h()(n, e)
           var t = m()(n)
           function n(e, a) {
             var o
             return (
-              i()(this, n),
+              c()(this, n),
               (o = t.call(this, e, a)),
               f()(s()(o), '_handleHideCallout', function () {
                 o.setState({ showCallout: !1 })
@@ -797,7 +797,7 @@
                 return E.a.createElement(
                   D.a,
                   null,
-                  E.a.createElement(U.a, { description: q, label: K, link: ie }),
+                  E.a.createElement(U.a, { description: q, label: K, link: ce }),
                   o.state.showCallout && o._renderCallout(),
                 )
               }),
@@ -806,7 +806,7 @@
                   D.a,
                   null,
                   E.a.createElement(x.a, { label: Y, subtext: o.props.managingAccount || '', withBottomBorder: !1 }),
-                  E.a.createElement(U.a, { label: G, link: ie }),
+                  E.a.createElement(U.a, { label: G, link: ce }),
                   o.state.showCallout && o._renderCallout(),
                   E.a.createElement(I.a, null),
                   E.a.createElement(R.a, { color: 'red500', label: Q, onPress: o._handleToggleDisableConfirmation }),
@@ -871,21 +871,21 @@
                   var n = this.props,
                     a = n.disableAccountLabelStatus,
                     r = n.managingAccount,
-                    i = n.managingAccountFetchStatus,
-                    c = e.disableAccountLabelStatus,
+                    c = n.managingAccountFetchStatus,
+                    i = e.disableAccountLabelStatus,
                     l = e.managingAccount,
                     u = e.managingAccountFetchStatus,
                     s = this.state.hasExitedOCF,
                     d = l && r !== l,
-                    h = u === v.a.LOADED || i === v.a.LOADED
+                    h = u === v.a.LOADED || c === v.a.LOADED
                   if (
                     (d &&
                       h &&
                       s &&
                       (this._handleShowCallout(J), this._scribe(o()(o()({}, ee), {}, { action: 'enabled' }))),
-                    a !== c)
+                    a !== i)
                   )
-                    switch (c) {
+                    switch (i) {
                       case v.a.LOADED:
                         this._handleShowCallout(Z), this._scribe(o()(o()({}, ee), {}, { action: 'disabled' }))
                         break
@@ -901,7 +901,7 @@
                 value: function () {
                   var e = this.props.managingAccountFetchStatus
                   return E.a.createElement(
-                    O.b,
+                    O.c,
                     { namespace: ee },
                     E.a.createElement(
                       B.a,
@@ -920,11 +920,11 @@
             n
           )
         })(E.a.Component)
-      f()(ce, 'contextType', H.a)
+      f()(ie, 'contextType', H.a)
       var le = P.a.create(function (e) {
         return { inlineCallout: { paddingLeft: e.spaces.space16, paddingRight: e.spaces.space16 } }
       })
-      t.default = Object(k.a)(S(ce))
+      t.default = Object(k.a)(S(ie))
     },
   },
 ])

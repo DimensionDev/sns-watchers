@@ -135,7 +135,7 @@
         C = S.a.create(function (e) {
           return { iframe: { flexGrow: 1, flexShrink: 1 } }
         })
-      t.default = Object(j.c)({ page: 'ntab', section: 'safety_report_notification' })(x)
+      t.default = Object(j.a)({ page: 'ntab', section: 'safety_report_notification' })(x)
     },
   },
 ])

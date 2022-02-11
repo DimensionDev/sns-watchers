@@ -280,7 +280,7 @@
       var Q = F.a.create(function (e) {
         return { icon: { color: e.colors.brandColor, height: e.spaces.space40 } }
       })
-      t.default = Object(G.c)({ page: 'logout' })(_(z))
+      t.default = Object(G.a)({ page: 'logout' })(_(z))
     },
   },
 ])

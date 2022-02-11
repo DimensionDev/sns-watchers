@@ -231,7 +231,7 @@
             titleTextContainer: { marginBottom: e.spaces.space16 },
           }
         })
-      t.default = Object(I.c)({ page: 'moments_analytics' })(E(F))
+      t.default = Object(I.a)({ page: 'moments_analytics' })(E(F))
     },
     DBID: function (e, t, a) {
       'use strict'

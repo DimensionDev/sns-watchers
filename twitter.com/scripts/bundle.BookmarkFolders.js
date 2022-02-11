@@ -104,8 +104,8 @@
             return { loggedInUserScreenName: null == t ? void 0 : t.screen_name, sliceModule: a, isLoggedInUser: !!t }
           })
           .withAnalytics({ page: 'bookmark_folders' }),
-        B = a('97Jx'),
-        L = a.n(B),
+        L = a('97Jx'),
+        B = a.n(L),
         T = a('m3Bd'),
         S = a.n(T),
         P = a('ZGdk'),
@@ -119,7 +119,7 @@
         }),
         V = i.a.f8fc0b47,
         M = r.a.createElement(P.a, { style: R.icon }),
-        K = function (e) {
+        j = function (e) {
           var t = e.history,
             a = e.onCreateButtonClick,
             n = e.style,
@@ -128,7 +128,7 @@
             l = S()(e, H)
           return r.a.createElement(
             z.a,
-            L()({ accessibilityLabel: V, hoverLabel: { label: V } }, l, {
+            B()({ accessibilityLabel: V, hoverLabel: { label: V } }, l, {
               icon: M,
               onPress: function () {
                 a(), t.push({ pathname: '/i/bookmarks/create_folder' })
@@ -140,7 +140,7 @@
             }),
           )
         },
-        j = a('yoO3'),
+        K = a('yoO3'),
         O = a('VS6U'),
         D = a('FS1z'),
         A = a('HQ0t'),
@@ -198,7 +198,7 @@
               },
               [i, c, t],
             ),
-            u = r.a.createElement(K, {
+            u = r.a.createElement(j, {
               accessibilityLabel: N,
               history: a,
               onCreateButtonClick: function () {
@@ -206,7 +206,7 @@
               },
             })
           return r.a.createElement(
-            j.a,
+            K.a,
             null,
             r.a.createElement(O.a, {
               backLocation: '/home',
@@ -339,8 +339,8 @@
         E = a('U+bB'),
         I = a('Irs7'),
         F = a('htQn'),
-        B = a('t62R'),
-        L = a('rHpw'),
+        L = a('t62R'),
+        B = a('rHpw'),
         T = C.a.e41c9b4f,
         S = C.a.a2e7377e,
         P = _(function (e) {
@@ -401,11 +401,11 @@
               style: [z.root, z.paddingHorizontal, z.contentContainer],
             },
             u ? f.a.createElement(E.a, { source: u, style: z.thumbnailContainer }) : null,
-            f.a.createElement(B.b, { style: z.content }, d),
+            f.a.createElement(L.b, { style: z.content }, d),
             p ? f.a.createElement(w.a, { style: z.icon }) : null,
           )
         }),
-        z = L.a.create(function (e) {
+        z = B.a.create(function (e) {
           return {
             root: {
               justifyContent: 'space-between',
@@ -414,7 +414,7 @@
               borderBottomStyle: 'solid',
               borderBottomColor: e.colors.borderColor,
               minHeight: 'calc('
-                .concat(L.a.theme.lineHeights.headline1, ' + 2 * ')
+                .concat(B.a.theme.lineHeights.headline1, ' + 2 * ')
                 .concat(e.componentDimensions.gutterVertical, ')'),
             },
             contentContainer: { alignItems: 'center', flexDirection: 'row', flexGrow: 1 },
@@ -440,7 +440,7 @@
             ? void 0
             : n.tweet_id
         },
-        K = Object(k.a)().propsFromState(function () {
+        j = Object(k.a)().propsFromState(function () {
           return {
             sliceModule: Object(R.createSelector)(V.e.selectLoggedInUser, M, function (e, t) {
               return null != e && e.id_str ? Object(H.a)(e.id_str, t) : void 0
@@ -448,7 +448,7 @@
             tweetId: M,
           }
         }),
-        j = a('jHSc'),
+        K = a('jHSc'),
         O = a('FS1z'),
         D = a('HQ0t'),
         A = a('MWbm'),
@@ -506,7 +506,7 @@
                   var e = this.props.sliceModule
                   return e
                     ? f.a.createElement(
-                        j.b,
+                        K.b,
                         {
                           backButtonType: 'close',
                           documentTitle: X,
@@ -527,7 +527,7 @@
                             { style: ae.thumbnail },
                             f.a.createElement(N.a, { style: ae.allBookmarks }),
                           ),
-                          f.a.createElement(B.b, { style: ae.content }, Q),
+                          f.a.createElement(L.b, { style: ae.content }, Q),
                           f.a.createElement(w.a, { style: ae.checkmark }),
                         ),
                         f.a.createElement(O.a, {
@@ -545,10 +545,10 @@
             a
           )
         })(f.a.Component),
-        te = K(ee),
+        te = j(ee),
         ae =
           ((t.default = te),
-          L.a.create(function (e) {
+          B.a.create(function (e) {
             return {
               root: {
                 justifyContent: 'space-between',
@@ -632,8 +632,8 @@
         E = y.a.i2209530,
         I = y.a.h18f86a4,
         F = y.a.f4ea9679,
-        B = y.a.b670aa62,
-        L = y.a.aece5462,
+        L = y.a.b670aa62,
+        B = y.a.aece5462,
         T = y.a.e3299b93,
         S = y.a.c09ea713,
         P = y.a.gee78815,
@@ -655,10 +655,10 @@
             R = i()(H, 2),
             V = R[0],
             M = R[1],
-            K = c.a.useState(!0),
-            j = i()(K, 2),
-            O = j[0],
-            D = j[1],
+            j = c.a.useState(!0),
+            K = i()(j, 2),
+            O = K[0],
+            D = K[1],
             A = c.a.useState(!1),
             U = i()(A, 2),
             W = U[0],
@@ -687,7 +687,7 @@
                       D(!0),
                       u(N, { name: g })
                         .then(function () {
-                          a({ text: L }), m.goBack()
+                          a({ text: B }), m.goBack()
                         })
                         .catch(function (e) {
                           l(
@@ -713,7 +713,7 @@
               invalid: !!V,
               label: w,
               maxLength: 25,
-              name: B,
+              name: L,
               onChange: function (e) {
                 var t = e.target.value
                 y(t), D('' === t.trim() || t.trim() === o)
@@ -916,8 +916,8 @@
         E = a('3XMw'),
         I = a.n(E),
         F = a('tI3i'),
-        B = a.n(F),
-        L = a('oQhu'),
+        L = a.n(F),
+        B = a('oQhu'),
         T = a('rHpw'),
         S = a('aITJ'),
         P = a('MWbm'),
@@ -926,7 +926,7 @@
         R = a('Oib4'),
         V = a('WtWS'),
         M = a('ioan'),
-        K = [
+        j = [
           'Icon',
           'accessibilityLabel',
           'calculateLength',
@@ -949,11 +949,11 @@
           'type',
           'validLength',
         ],
-        j = function (e) {
+        K = function (e) {
           return e.length
         },
         O = function (e) {
-          var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : j
+          var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : K
           return t(e)
         },
         D = I.a.de540c32,
@@ -975,7 +975,7 @@
               y()(
                 m()(n),
                 '_getTextInputStyle',
-                Object(L.a)(function (e) {
+                Object(B.a)(function (e) {
                   return [W.root, !e && W.disabled]
                 }),
               ),
@@ -1085,12 +1085,12 @@
                   o = !!n,
                   i = 'string' == typeof e.value,
                   l = 'string' == typeof t
-                B()(
+                L()(
                   !(!l && i && !o),
                   'A controlled component, a component with a value prop, must have an onChange handler. The value prop cannot be undefined.',
                 ),
-                  B()(!(a && r && r > a), 'Max length should be equal or greater than valid length.'),
-                  B()(
+                  L()(!(a && r && r > a), 'Max length should be equal or greater than valid length.'),
+                  L()(
                     !((void 0 !== a && a <= 0) || (void 0 !== r && r <= 0)),
                     'Set editable to false instead of limiting the valid character count to 0.',
                   )
@@ -1114,7 +1114,7 @@
             return (
               (n.state = {
                 displayCount: n._calculateLength(o),
-                actualCount: j(o),
+                actualCount: K(o),
                 isFocused: !1,
                 isPasswordRevealed: !1,
                 previousValue: o,
@@ -1239,7 +1239,7 @@
                         e.onSubmitEditing,
                         e.showPasswordVisibilityIcon,
                         e.showValidationIcon),
-                      o = (e.style, e.type, e.validLength, i()(e, K))
+                      o = (e.style, e.type, e.validLength, i()(e, j))
                     return v.a.createElement(
                       P.a,
                       { style: W.container },
@@ -1504,7 +1504,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'CreateBookmarkFolderModal', function () {
-          return L
+          return T
         })
       var n = a('KEM+'),
         r = a.n(n),
@@ -1544,15 +1544,16 @@
         y = a.n(g),
         k = a('SrIh'),
         v = a('k89r'),
-        _ = a('/yvb'),
-        x = a('p+r5'),
-        C = y.a.f8fc0b47,
-        w = y.a.i6e7e298,
-        E = y.a.d4e220b3,
-        I = y.a.a0ea2fa5,
-        F = y.a.eec37eab,
+        _ = a('FGLp'),
+        x = a('/yvb'),
+        C = a('p+r5'),
+        w = y.a.f8fc0b47,
+        E = y.a.i6e7e298,
+        I = y.a.d4e220b3,
+        F = y.a.a0ea2fa5,
+        L = y.a.eec37eab,
         B = y.a.e41c9b4f,
-        L = function (e) {
+        T = function (e) {
           var t = e.addToast,
             a = e.addTweetToBookmarkFolder,
             n = e.createBookmarkFolder,
@@ -1564,9 +1565,9 @@
             p = m[0],
             h = m[1],
             b = Object(v.a)()
-          c.a.useEffect(function () {
+          Object(_.a)(function () {
             b.scribePageImpression({ component: 'bookmark_folders_create', action: 'show' })
-          }, [])
+          })
           var g = function (e) {
               b.scribe({ component: 'bookmark_folders_create', element: 'done', action: 'click' })
               var r = p.trim()
@@ -1597,29 +1598,29 @@
             y = function (e) {
               var t
               b.scribe({ component: 'bookmark_folders_create', action: 'error' }),
-                o(((t = {}), r()(t, s.a.GenericBadRequest, { toast: { text: F } }), r()(t, 'showToast', !0), t))(e)
+                o(((t = {}), r()(t, s.a.GenericBadRequest, { toast: { text: L } }), r()(t, 'showToast', !0), t))(e)
             }
           return c.a.createElement(
             f.b,
             {
               backButtonType: 'back',
-              documentTitle: C,
+              documentTitle: w,
               onBackClick: function () {
                 b.scribe({ component: 'bookmark_folders_create', element: 'cancel', action: 'click' }), l.goBack()
               },
               rightControl: c.a.createElement(
-                _.a,
+                x.a,
                 { disabled: '' === p.trim(), onPress: g, size: 'small', type: 'primaryFilled' },
-                w,
+                E,
               ),
-              title: C,
+              title: w,
             },
-            c.a.createElement(x.a, {
-              accessibilityLabel: E,
+            c.a.createElement(C.a, {
+              accessibilityLabel: I,
               autoFocus: !0,
-              errorText: I,
+              errorText: F,
               invalid: p.length > 0 && '' === p.trim(),
-              label: E,
+              label: I,
               maxLength: 25,
               name: 'name',
               onChange: function (e) {
@@ -1629,8 +1630,8 @@
             }),
           )
         },
-        T = b(L)
-      t.default = T
+        S = b(T)
+      t.default = S
     },
   },
 ])

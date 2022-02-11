@@ -148,7 +148,7 @@
             t
           )
         })(y.a.Component)
-      g()(A, 'contextType', x.b), (a.default = Object(_.c)({ page: 'display' })(A))
+      g()(A, 'contextType', x.b), (a.default = Object(_.a)({ page: 'display' })(A))
       var L = P.a.create(function (e) {
         return {
           root: { paddingBottom: e.spaces.space32, paddingHorizontal: e.spaces.space32 },

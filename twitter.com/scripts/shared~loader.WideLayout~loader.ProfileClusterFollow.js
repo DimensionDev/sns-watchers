@@ -455,7 +455,7 @@
           return { followButton: { marginLeft: e.spaces.space12 } }
         }),
         ie = Object(J.a)(Object(W.a)(R(Z)))
-      t.b = Object(z.c)({ element: 'user' })(ie)
+      t.b = Object(z.a)({ element: 'user' })(ie)
     },
     Xs4Y: function (e, t, r) {
       'use strict'

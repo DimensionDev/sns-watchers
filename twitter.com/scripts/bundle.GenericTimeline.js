@@ -88,7 +88,7 @@
               )
             : a.a.createElement(T.a, { to: '/' })
         }
-      t.default = Object(K.c)({ page: 'generic_timeline' })(U)
+      t.default = Object(K.a)({ page: 'generic_timeline' })(U)
     },
     PH3B: function (e, t, n) {
       'use strict'
@@ -100,14 +100,14 @@
         u = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf')),
         l = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(347)]).then(n.bind(null, 'a+ad'))
+            return Promise.all([n.e(0), n.e(348)]).then(n.bind(null, 'a+ad'))
           },
           loaderKey: 'newsCellLoader',
           strategy: u.a.Critical,
         },
         s = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(349)]).then(n.bind(null, 'hX2d'))
+            return Promise.all([n.e(0), n.e(350)]).then(n.bind(null, 'hX2d'))
           },
           loaderKey: 'newsPreviewCardLoader',
           strategy: u.a.Critical,

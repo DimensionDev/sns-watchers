@@ -1588,7 +1588,7 @@
           },
         }
       })
-      t.default = Object(k.c)({ page: 'media_tag', component: 'media_tagger' })(b(L))
+      t.default = Object(k.a)({ page: 'media_tag', component: 'media_tagger' })(b(L))
     },
     i8hi: function (e, t, a) {
       'use strict'
@@ -1837,7 +1837,7 @@
         })(c.a.Component),
         q = a('rxPX'),
         Q = function (e, t) {
-          return Object(w.z)(e, w.a)
+          return Object(w.A)(e, w.a)
         },
         X = Object(q.a)()
           .propsFromState(function () {
@@ -2346,7 +2346,7 @@
                     o = this._getCurrentTab(),
                     s = this._getMemoizedCurrentTabMetadata(o, r)
                   return c.a.createElement(
-                    oe.b,
+                    oe.c,
                     { namespace: s.namespace },
                     c.a.createElement(
                       re.b,
@@ -2791,7 +2791,7 @@
                       i,
                     )
                   return c.a.createElement(
-                    oe.b,
+                    oe.c,
                     { namespace: o.namespace },
                     c.a.createElement(
                       re.b,

@@ -209,7 +209,7 @@
                     t = e.fetchStatus,
                     a = e.location
                   return b.a.createElement(
-                    R.b,
+                    R.c,
                     { namespace: ee },
                     b.a.createElement(
                       L.a,
@@ -417,7 +417,7 @@
                     t = e.fetchStatus,
                     a = e.location
                   return b.a.createElement(
-                    T.b,
+                    T.c,
                     { namespace: V },
                     b.a.createElement(
                       L.a,
@@ -467,7 +467,7 @@
             ),
           )
         }
-      t.default = Object(d.c)({ page: 'settings', section: 'your_twitter_data', component: 'account_activity' })(p)
+      t.default = Object(d.a)({ page: 'settings', section: 'your_twitter_data', component: 'account_activity' })(p)
     },
     E7qF: function (e, t, a) {
       'use strict'
@@ -1006,7 +1006,7 @@
                     t = e.fetchStatus,
                     a = e.location
                   return g.a.createElement(
-                    P.b,
+                    P.c,
                     { namespace: se },
                     g.a.createElement(
                       C.a,
@@ -1924,7 +1924,7 @@
                     t = e.fetchStatus,
                     a = e.location
                   return b.a.createElement(
-                    x.b,
+                    x.c,
                     { namespace: V },
                     b.a.createElement(
                       F.a,
@@ -2140,7 +2140,7 @@
                     t = e.fetchStatus,
                     a = e.location
                   return b.a.createElement(
-                    O.b,
+                    O.c,
                     { namespace: $ },
                     b.a.createElement(
                       L.a,
@@ -2810,7 +2810,7 @@
         var t = e.location,
           a = !!r.a.useContext(c.a).loggedInUserId
         return r.a.createElement(
-          d.b,
+          d.c,
           { namespace: I },
           r.a.createElement(
             s.a,

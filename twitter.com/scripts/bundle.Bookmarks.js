@@ -107,7 +107,7 @@
                     n = this.context.userClaims.isTrueAndEnabled('subscriptions_feature_1002'),
                     a = t ? void 0 : k.a.createElement(O.a, { accessibilityLabel: T, renderMenu: this._renderMenu })
                   return k.a.createElement(
-                    I.b,
+                    I.c,
                     { namespace: x },
                     k.a.createElement(
                       g.a,

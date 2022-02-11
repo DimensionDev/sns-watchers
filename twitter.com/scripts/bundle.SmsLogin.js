@@ -243,7 +243,7 @@
           submitButton: { alignSelf: 'center' },
         }
       })
-      t.default = Object(V.c)({ page: 'login_sms' })(O(Q))
+      t.default = Object(V.a)({ page: 'login_sms' })(O(Q))
     },
     '6oVL': function (e, t, n) {
       'use strict'

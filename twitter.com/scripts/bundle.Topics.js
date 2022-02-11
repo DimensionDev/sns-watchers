@@ -125,7 +125,7 @@
           s = null != o && o.name ? K({ topicName: null == o ? void 0 : o.name }) : B,
           u = null != o && o.name ? G({ topicName: null == o ? void 0 : o.name }) : X
         return i.a.createElement(
-          x.b,
+          x.c,
           { data: k(a, c) },
           i.a.createElement(
             i.a.Fragment,

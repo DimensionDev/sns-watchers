@@ -23,7 +23,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'HomeTimeline', function () {
-          return on
+          return cn
         })
       var a = n('yiKp'),
         i = n.n(a),
@@ -683,15 +683,16 @@
         Bt = (n('enFi'), n('Fr3L')),
         Kt = n('lnL+'),
         zt = n('Rp9C'),
-        Rt = n('jAXQ'),
-        jt = n.n(Rt),
-        Dt = function (e) {
-          var t = jt()(void 0 !== Je ? Je : (Je = n('/n9r')), e.topic),
+        Rt = n('FGLp'),
+        jt = n('jAXQ'),
+        Dt = n.n(jt),
+        Ht = function (e) {
+          var t = Dt()(void 0 !== Je ? Je : (Je = n('/n9r')), e.topic),
             a = t.name,
             i = t.topic_id
-          b.a.useEffect(function () {
+          Object(Rt.a)(function () {
             e.analytics.scribe({ element: 'topic', action: 'impression', data: { items: [zt.a.forTopic(i)] } })
-          }, [])
+          })
           var l = b.a.useCallback(
             function () {
               e.analytics.scribe({ element: 'topic', action: 'click', data: { items: [zt.a.forTopic(i)] } })
@@ -700,14 +701,14 @@
           )
           return b.a.createElement(Kt.a, { link: '/i/topics/'.concat(i), onClick: l, text: a })
         },
-        Ht = n('Irs7'),
-        Ut = n('yUQf'),
-        Vt = n('DQzJ'),
-        Qt = n('6iuV'),
-        Jt = A.a.ffd9cfe6,
-        Wt = void 0 !== We ? We : (We = n('yKhE')),
-        Nt = { context: 'TOPIC_PIVOTS_CAROUSEL' },
-        qt = function () {
+        Ut = n('Irs7'),
+        Vt = n('yUQf'),
+        Qt = n('DQzJ'),
+        Jt = n('6iuV'),
+        Wt = A.a.ffd9cfe6,
+        Nt = void 0 !== We ? We : (We = n('yKhE')),
+        qt = { context: 'TOPIC_PIVOTS_CAROUSEL' },
+        Gt = function () {
           var e,
             t,
             n,
@@ -716,9 +717,9 @@
             l,
             r,
             s = b.a.useRef(0),
-            o = Object(Ht.b)(),
-            c = Object(Ut.a)(P.e.selectLoggedInUser),
-            u = Object(Vt.a)(Wt, {}).data,
+            o = Object(Ut.b)(),
+            c = Object(Vt.a)(P.e.selectLoggedInUser),
+            u = Object(Qt.a)(Nt, {}).data,
             d = (
               ('User' ===
                 (null == u ||
@@ -743,7 +744,7 @@
                   : r.items)) ||
               []
             ).map(function (e, t) {
-              return null != e && e.topic ? b.a.createElement(Dt, { analytics: o, key: t, topic: e.topic }) : null
+              return null != e && e.topic ? b.a.createElement(Ht, { analytics: o, key: t, topic: e.topic }) : null
             }),
             m = b.a.useCallback(
               function () {
@@ -767,9 +768,9 @@
               },
               [o],
             )
-          b.a.useEffect(function () {
+          Object(Rt.a)(function () {
             d.length > 0 && m()
-          }, []),
+          }),
             b.a.useEffect(
               function () {
                 s.current = d.length + 1
@@ -786,17 +787,17 @@
             g = b.a.createElement(
               U.a,
               { borderColor: 'primary', color: 'primary', key: 'seeMorePivot', link: _, onClick: f },
-              Jt,
+              Wt,
             )
           return d.length > 0
             ? b.a.createElement(
-                Qt.a,
-                { childrenStyle: Gt.childrenStyle, onScroll: p, onVisibleRangeChange: h, style: Gt.carousel },
+                Jt.a,
+                { childrenStyle: Yt.childrenStyle, onScroll: p, onVisibleRangeChange: h, style: Yt.carousel },
                 [].concat(Ot()(d), [g]),
               )
             : null
         },
-        Gt = V.a.create(function (e) {
+        Yt = V.a.create(function (e) {
           return {
             carousel: {
               marginHorizontal: 'calc('.concat(e.spaces.space12, ' - ').concat(e.spaces.space2, ')'),
@@ -807,20 +808,20 @@
             childrenStyle: { marginHorizontal: e.spaces.space4, marginVertical: e.spaces.space12 },
           }
         }),
-        Yt = function () {
-          return b.a.createElement(Bt.a, { errorConfig: Nt }, b.a.createElement(qt, null))
+        Xt = function () {
+          return b.a.createElement(Bt.a, { errorConfig: qt }, b.a.createElement(Gt, null))
         },
-        Xt = n('aITJ'),
-        Zt = n('0yYu'),
-        $t = n('mw9i'),
-        en = n('k/OQ'),
-        tn = A.a.i5f7b6b8,
-        nn = A.a.d126cb7c,
-        an = A.a.ha8209bb,
-        ln = { page: 'home' },
-        rn = { page: 'home_latest' },
-        sn = { section: 'topics_navigator', component: 'suggest_topics_module' },
-        on = (function (e) {
+        Zt = n('aITJ'),
+        $t = n('0yYu'),
+        en = n('mw9i'),
+        tn = n('k/OQ'),
+        nn = A.a.i5f7b6b8,
+        an = A.a.d126cb7c,
+        ln = A.a.ha8209bb,
+        rn = { page: 'home' },
+        sn = { page: 'home_latest' },
+        on = { section: 'topics_navigator', component: 'suggest_topics_module' },
+        cn = (function (e) {
           m()(a, e)
           var t = h()(a)
           function a(e, n) {
@@ -831,11 +832,11 @@
               _()(u()(l), '_unmounted', !1),
               _()(u()(l), '_getTimelineMetadata', function () {
                 var e = l._isLatestActive(),
-                  t = e ? rn : ln
+                  t = e ? sn : rn
                 return (
                   l.context.featureSwitches.isTrue('responsive_web_home_namespace_update_enabled') &&
-                    (t = i()(i()({}, ln), {}, { section: e ? 'latest' : 'home' })),
-                  { scribeNamespace: t, title: e ? nn : an }
+                    (t = i()(i()({}, rn), {}, { section: e ? 'latest' : 'home' })),
+                  { scribeNamespace: t, title: e ? an : ln }
                 )
               }),
               _()(u()(l), '_getLink', function (e, t) {
@@ -863,8 +864,8 @@
               }),
               _()(u()(l), '_getLinks', function () {
                 var e = l.props.useLatest,
-                  t = l._getLink(oe.a.HOME, an),
-                  n = e ? l._getLink(oe.a.HOME_LATEST, nn) : void 0
+                  t = l._getLink(oe.a.HOME, ln),
+                  n = e ? l._getLink(oe.a.HOME_LATEST, an) : void 0
                 return [t].concat([n])
               }),
               _()(u()(l), '_isLatestActive', function () {
@@ -885,7 +886,7 @@
                   S.a,
                   null,
                   l.context.featureSwitches.isTrue('home_timeline_topics_navigator_enabled')
-                    ? b.a.createElement(Ft.b, { namespace: sn }, b.a.createElement(Yt, null))
+                    ? b.a.createElement(Ft.c, { namespace: on }, b.a.createElement(Xt, null))
                     : null,
                   b.a.createElement(xt, {
                     isLatestActive: e,
@@ -909,14 +910,14 @@
                         b.a.Fragment,
                         null,
                         b.a.createElement(se, { history: n, location: a }),
-                        b.a.createElement(Zt.a, null),
+                        b.a.createElement($t.a, null),
                       )
                     : null,
                   b.a.createElement(
                     x.a,
-                    { component: $t.a, fab: r },
-                    Xt.b.isKaiOS()
-                      ? b.a.createElement(Pt.a, { leftText: tn, onLeftClick: l._handleSoftLeftClick })
+                    { component: en.a, fab: r },
+                    Zt.b.isKaiOS()
+                      ? b.a.createElement(Pt.a, { leftText: nn, onLeftClick: l._handleSoftLeftClick })
                       : null,
                     b.a.createElement(F.a, { fetchStatus: t, render: l._renderTimeline }),
                   ),
@@ -954,11 +955,11 @@
                     this._pinnedListsEnabled && this.props.fetchPins(),
                     this.context.featureSwitches.isTrue('responsive_web_framerate_tracking_home_enabled'))
                   ) {
-                    var t = Xt.b.isDesktopOS() ? '' : '_mobile',
+                    var t = Zt.b.isDesktopOS() ? '' : '_mobile',
                       a = 'home'.concat(t)
                     ;(Ge()
                       ? n
-                          .e(345)
+                          .e(346)
                           .then(n.bind(null, 'Iid0'))
                           .then(function (e) {
                             return e.default
@@ -991,16 +992,16 @@
                   var e = this.props.history,
                     t = this._isLatestPinned(),
                     n = Object(It.a)(),
-                    a = !n && t ? b.a.createElement(qe.a, { style: cn.iconTwitter }) : void 0,
+                    a = !n && t ? b.a.createElement(qe.a, { style: un.iconTwitter }) : void 0,
                     i = this._latestTimelineSwitchEnabled ? b.a.createElement(Ne, null) : void 0,
                     l = this._getTimelineMetadata(),
                     r = l.scribeNamespace,
                     s = l.title,
                     o = n || !t ? s : null,
                     c = t ? this._getLinks() : [],
-                    u = c.length > 1 ? b.a.createElement(en.a, { links: c }) : void 0
+                    u = c.length > 1 ? b.a.createElement(tn.a, { links: c }) : void 0
                   return b.a.createElement(
-                    Ft.b,
+                    Ft.c,
                     { namespace: r },
                     b.a.createElement(
                       Ye.a,
@@ -1024,11 +1025,11 @@
             a
           )
         })(b.a.Component)
-      _()(on, 'contextType', he.a)
-      var cn = V.a.create(function (e) {
+      _()(cn, 'contextType', he.a)
+      var un = V.a.create(function (e) {
         return { iconTwitter: { flexGrow: 1, height: '1.75rem', color: e.colors.primary } }
       })
-      t.default = L(on)
+      t.default = L(cn)
     },
     yKhE: function (e, t, n) {
       'use strict'
@@ -1051,7 +1052,7 @@
             selections: [
               {
                 alias: 'viewer',
-                args: (i = [{ kind: 'Literal', name: 's', value: 22 }]),
+                args: (i = [{ kind: 'Literal', name: 's', value: 23 }]),
                 concreteType: 'Viewer',
                 kind: 'LinkedField',
                 name: 'viewer_v2',
@@ -1164,7 +1165,7 @@
                     storageKey: null,
                   },
                 ],
-                storageKey: 'viewer_v2(s:22)',
+                storageKey: 'viewer_v2(s:23)',
               },
             ],
             type: 'Query',
@@ -1296,7 +1297,7 @@
                     storageKey: null,
                   },
                 ],
-                storageKey: 'viewer_v2(s:22)',
+                storageKey: 'viewer_v2(s:23)',
               },
             ],
           },

@@ -19,8 +19,8 @@
         c = i.n(d),
         u = (i('Wd/2'), i('M+/F'), i('2G9S'), i('ERkP')),
         f = i.n(u),
-        v = i('TGcR'),
-        h = i('t62R'),
+        h = i('TGcR'),
+        v = i('t62R'),
         p = i('a6qo'),
         m = i('rHpw'),
         b = 'animated_gif',
@@ -43,12 +43,12 @@
                   if (a === b || 'vine' === a)
                     e =
                       a === b
-                        ? f.a.createElement(h.b, { weight: 'bold' }, 'GIF')
-                        : f.a.createElement(v.a, { style: w.icon })
+                        ? f.a.createElement(v.b, { weight: 'bold' }, 'GIF')
+                        : f.a.createElement(h.a, { style: w.icon })
                   else if (a === y && i) {
                     var n = Math.trunc(i / 6e4),
                       r = '0'.concat(Math.trunc((i % 6e4) / 1e3)).slice(-2)
-                    e = f.a.createElement(h.b, { color: 'white' }, ''.concat(n, ':').concat(r))
+                    e = f.a.createElement(v.b, { color: 'white' }, ''.concat(n, ':').concat(r))
                   }
                   return e ? f.a.createElement(p.a, { align: 'left' }, e) : null
                 },
@@ -74,8 +74,8 @@
         c = i.n(d),
         u = i('1Pcy'),
         f = i.n(u),
-        v = i('5Yy7'),
-        h = i.n(v),
+        h = i('5Yy7'),
+        v = i.n(h),
         p = i('2VqO'),
         m = i.n(p),
         b = i('KEM+'),
@@ -89,9 +89,9 @@
         M = i('rHpw'),
         R = ['accept', 'disabled', 'multiple', 'onChange', 'testID'],
         C = I.a.i5450beb,
-        k = I.a.f7432494,
-        O = (function (e) {
-          h()(i, e)
+        O = I.a.f7432494,
+        k = (function (e) {
+          v()(i, e)
           var t = m()(i)
           function i() {
             var e
@@ -132,7 +132,7 @@
                     null,
                     w.a.createElement(
                       E.a,
-                      n()({ hoverLabel: t ? { label: s ? k : C } : void 0 }, o, {
+                      n()({ hoverLabel: t ? { label: s ? O : C } : void 0 }, o, {
                         disabled: i,
                         onPress: this._handlePress,
                       }),
@@ -155,13 +155,13 @@
             i
           )
         })(w.a.Component)
-      y()(O, 'defaultProps', { disabled: !1, multiple: !1 })
+      y()(k, 'defaultProps', { disabled: !1, multiple: !1 })
       var V = M.a.create(function (e) {
         return {
           input: { width: '0.1px', height: '0.1px', opacity: 0, overflow: 'hidden', position: 'absolute', zIndex: -1 },
         }
       })
-      t.a = O
+      t.a = k
     },
     GCOQ: function (e, t, i) {
       'use strict'
@@ -210,8 +210,8 @@
         c = i.n(d),
         u = i('2VqO'),
         f = i.n(u),
-        v = i('KEM+'),
-        h = i.n(v),
+        h = i('KEM+'),
+        v = i.n(h),
         p = (i('yH/f'), i('2G9S'), i('uFXj'), i('ERkP')),
         m = i.n(p),
         b = i('3XMw'),
@@ -225,7 +225,7 @@
         M = i('MWbm'),
         R = y.a.gff1f69e,
         C = Object.freeze({ INFINITE: 'infinite', MEDIUM: 'medium', NONE: 'none' }),
-        k = (function (e) {
+        O = (function (e) {
           c()(i, e)
           var t = f()(i)
           function i() {
@@ -234,8 +234,8 @@
             for (var a = arguments.length, r = new Array(a), l = 0; l < a; l++) r[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(r))),
-              h()(s()(e), 'state', { imagePreviewUrl: null }),
-              h()(s()(e), '_getImageSrc', function () {
+              v()(s()(e), 'state', { imagePreviewUrl: null }),
+              v()(s()(e), '_getImageSrc', function () {
                 var t = e.props,
                   i = t.enableGif,
                   a = t.mediaItem,
@@ -282,7 +282,7 @@
                     l = (this.state || {}).imagePreviewUrl,
                     o = a.mediaFile && a.mediaFile.isGif && !i && !l,
                     s = a.needsProcessing || o,
-                    d = [V.root, O[t], s && V.loadingBorder],
+                    d = [V.root, k[t], s && V.loadingBorder],
                     c = this._getImageSrc()
                   return m.a.createElement(
                     M.a,
@@ -297,14 +297,14 @@
             i
           )
         })(m.a.Component)
-      h()(k, 'defaultProps', { borderRadius: C.NONE, enableGif: !0, resizeMode: 'cover' })
-      var O = E.a.create(function (e) {
+      v()(O, 'defaultProps', { borderRadius: C.NONE, enableGif: !0, resizeMode: 'cover' })
+      var k = E.a.create(function (e) {
           var t
           return (
             (t = {}),
-            h()(t, C.INFINITE, { borderRadius: e.borderRadii.infinite }),
-            h()(t, C.MEDIUM, { borderRadius: e.borderRadii.small }),
-            h()(t, C.NONE, { borderRadius: e.borderRadii.none }),
+            v()(t, C.INFINITE, { borderRadius: e.borderRadii.infinite }),
+            v()(t, C.MEDIUM, { borderRadius: e.borderRadii.small }),
+            v()(t, C.NONE, { borderRadius: e.borderRadii.none }),
             t
           )
         }),
@@ -324,7 +324,7 @@
             activityIndicator: { height: '100%' },
           }
         })
-      t.b = k
+      t.b = O
     },
     pKoL: function (e, t, i) {
       'use strict'
@@ -338,8 +338,8 @@
         c = i.n(d),
         u = i('2VqO'),
         f = i.n(u),
-        v = i('KEM+'),
-        h = i.n(v),
+        h = i('KEM+'),
+        v = i.n(h),
         p = (i('2G9S'), i('ERkP')),
         m = i.n(p),
         b = i('HPNB'),
@@ -347,9 +347,10 @@
         g = i('3XMw'),
         w = i.n(g),
         E = i('LCtV'),
-        P = (i('lTEL'), i('7x/C'), i('JtPf'), i('87if'), i('kYxP'), i('zb92')),
-        _ = i('RuTB'),
-        I = Object(P.a)({
+        P = i('eyty'),
+        _ = (i('lTEL'), i('7x/C'), i('JtPf'), i('87if'), i('kYxP'), i('zb92')),
+        I = i('RuTB'),
+        M = Object(_.a)({
           loader: function () {
             return Promise.all([i.e(0), i.e(5), i.e(177)])
               .then(i.bind(null, 'EOJ2'))
@@ -358,18 +359,18 @@
               })
           },
           renderPlaceholder: function (e, t) {
-            return m.a.createElement(_.a, { hasError: e, onRetry: t })
+            return m.a.createElement(I.a, { hasError: e, onRetry: t })
           },
         }),
-        M = i('yiKp'),
-        R = i.n(M),
-        C = i('m3Bd'),
-        k = i.n(C),
-        O = (i('z84I'), i('k/Ka')),
-        V = i('eXeu'),
-        G = i('iOGT'),
-        F = ['children', 'dataSaverMode', 'getVideoRef', 'style', 'variants'],
-        L = (function (e) {
+        R = i('yiKp'),
+        C = i.n(R),
+        O = i('m3Bd'),
+        k = i.n(O),
+        V = (i('z84I'), i('k/Ka')),
+        G = i('eXeu'),
+        F = i('iOGT'),
+        L = ['children', 'dataSaverMode', 'getVideoRef', 'style', 'variants'],
+        x = (function (e) {
           c()(i, e)
           var t = f()(i)
           function i() {
@@ -378,7 +379,7 @@
             for (var a = arguments.length, r = new Array(a), l = 0; l < a; l++) r[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(r))),
-              h()(s()(e), '_setVideoRef', function (t) {
+              v()(s()(e), '_setVideoRef', function (t) {
                 var i = e.props.getVideoRef
                 i && i(t)
               }),
@@ -395,17 +396,17 @@
                     i = e.dataSaverMode,
                     a = (e.getVideoRef, e.style),
                     n = e.variants,
-                    r = k()(e, F),
-                    l = Object(G.b)(n, i ? G.a.MEDIUM : G.a.HIGH) || [],
-                    o = Object(V.f)(
+                    r = k()(e, L),
+                    l = Object(F.b)(n, i ? F.a.MEDIUM : F.a.HIGH) || [],
+                    o = Object(G.f)(
                       l.map(function (e) {
                         return { src: e.url, type: e.content_type }
                       }),
                     )
-                  return Object(O.a)(
+                  return Object(V.a)(
                     'video',
-                    R()(
-                      R()({}, r),
+                    C()(
+                      C()({}, r),
                       {},
                       {
                         children: [
@@ -425,29 +426,29 @@
             i
           )
         })(m.a.Component)
-      h()(L, 'defaultProps', { dataSaverMode: !1, variants: [] })
-      var x = i('62wY'),
-        S = i('sjK1'),
+      v()(x, 'defaultProps', { dataSaverMode: !1, variants: [] })
+      var S = i('62wY'),
+        j = i('sjK1'),
         B = i('v6aA'),
-        j = i('cHvH'),
-        z = i('mXq/'),
-        D = i('/yvb'),
-        N = i('a6qo'),
+        z = i('cHvH'),
+        D = i('mXq/'),
+        N = i('/yvb'),
+        H = i('a6qo'),
         T = i('rHpw'),
         U = i('hOZg'),
         W = i('GCOQ'),
-        H = i('tuke'),
-        K = i('U+bB'),
-        Y = i('MWbm'),
-        A = i('+/sI'),
-        J = w.a.gd80afba,
-        q = w.a.j322caee,
-        X = w.a.abd845fd,
-        Q = w.a.df1b0707,
-        Z = w.a.cd959e5b,
-        $ = w.a.e68b09b4,
-        ee = w.a.add55c97,
-        te = (function (e) {
+        K = i('tuke'),
+        Y = i('U+bB'),
+        A = i('MWbm'),
+        J = i('+/sI'),
+        q = w.a.gd80afba,
+        X = w.a.j322caee,
+        Q = w.a.abd845fd,
+        Z = w.a.df1b0707,
+        $ = w.a.cd959e5b,
+        ee = w.a.e68b09b4,
+        te = w.a.add55c97,
+        ie = (function (e) {
           c()(i, e)
           var t = f()(i)
           function i() {
@@ -456,11 +457,11 @@
             for (var a = arguments.length, r = new Array(a), l = 0; l < a; l++) r[l] = arguments[l]
             return (
               (e = t.call.apply(t, [this].concat(r))),
-              h()(s()(e), 'state', { isVideoPaused: !0, playGif: !1 }),
-              h()(s()(e), '_handleGifClick', function () {
+              v()(s()(e), 'state', { isVideoPaused: !0, playGif: !1 }),
+              v()(s()(e), '_handleGifClick', function () {
                 e.setState({ playGif: !e.state.playGif })
               }),
-              h()(s()(e), '_handleMediaPreviewLayout', function (t) {
+              v()(s()(e), '_handleMediaPreviewLayout', function (t) {
                 var i = e.props,
                   a = i.mediaItem,
                   n = i.resizeIfNeeded,
@@ -478,19 +479,19 @@
                       : 'height' === n && e._mediaContainer.setNativeProps({ style: { height: s / c } }))
                 }
               }),
-              h()(s()(e), '_handleVideoOnPlay', function (t) {
+              v()(s()(e), '_handleVideoOnPlay', function (t) {
                 e.setState({ isVideoPaused: !1 })
               }),
-              h()(s()(e), '_handleVideoOnPause', function (t) {
+              v()(s()(e), '_handleVideoOnPause', function (t) {
                 e.setState({ isVideoPaused: !0 })
               }),
-              h()(s()(e), '_setMediaContainerRef', function (t) {
+              v()(s()(e), '_setMediaContainerRef', function (t) {
                 e._mediaContainer = t
               }),
-              h()(s()(e), '_setVideoRef', function (t) {
+              v()(s()(e), '_setVideoRef', function (t) {
                 e._video = t
               }),
-              h()(s()(e), 'playVideo', function () {
+              v()(s()(e), 'playVideo', function () {
                 if (e._video) {
                   var t = e._video.play()
                   void 0 !== t &&
@@ -501,7 +502,7 @@
                       .catch()
                 }
               }),
-              h()(s()(e), 'pauseVideo', function () {
+              v()(s()(e), 'pauseVideo', function () {
                 e._video && (e._video.pause(), e._handleVideoOnPause())
               }),
               e
@@ -525,66 +526,66 @@
                     c = i.style,
                     u = i.withAltTextLabel,
                     f = i.withCloseButton,
-                    v = i.withEditButton,
-                    h = i.withEditIcon,
+                    h = i.withEditButton,
+                    v = i.withEditIcon,
                     p = i.withEditSensitiveWarningButton,
                     g = this.state.playGif,
                     w = l.externalMediaDetails && l.externalMediaDetails.mediaType === y.a,
                     E = w || (r && l.mediaFile && l.mediaFile.isGif),
                     P = !(null === (e = l.mediaFile) || void 0 === e || !e.isVideo)
-                  return m.a.createElement(j.a, null, function (e) {
+                  return m.a.createElement(z.a, null, function (e) {
                     var i = e.windowWidth,
-                      r = void 0 !== h ? h : !b.a.isTwoColumnLayout(i)
+                      r = void 0 !== v ? v : !b.a.isTwoColumnLayout(i)
                     return m.a.createElement(
-                      Y.a,
+                      A.a,
                       {
-                        accessibilityLabel: a || ee,
+                        accessibilityLabel: a || te,
                         accessibilityRole: n,
                         onLayout: t._handleMediaPreviewLayout,
                         ref: t._setMediaContainerRef,
-                        style: [c, ie.cursor, w && ie.gifPlayButton],
+                        style: [c, ae.cursor, w && ae.gifPlayButton],
                       },
                       t._renderPreview(),
                       w &&
                         !g &&
-                        m.a.createElement(z.a, { accessibilityLabel: Q, onPress: t._handleGifClick, size: 'small' }),
+                        m.a.createElement(D.a, { accessibilityLabel: Z, onPress: t._handleGifClick, size: 'small' }),
                       f
-                        ? m.a.createElement(D.a, {
-                            accessibilityLabel: Z,
-                            hoverLabel: { label: $ },
+                        ? m.a.createElement(N.a, {
+                            accessibilityLabel: $,
+                            hoverLabel: { label: ee },
                             icon: m.a.createElement(U.a, null),
                             onPress: d,
                             size: 'small',
-                            style: ie.close,
+                            style: ae.close,
                             type: 'onMediaDominantColorFilled',
                           })
                         : null,
-                      E ? m.a.createElement(A.c, { type: A.a }) : null,
-                      u && !P ? m.a.createElement(N.a, { align: 'left', altLabel: a }) : null,
-                      v
+                      E ? m.a.createElement(J.c, { type: J.a }) : null,
+                      u && !P ? m.a.createElement(H.a, { align: 'left', altLabel: a }) : null,
+                      h
                         ? m.a.createElement(
-                            Y.a,
-                            { style: [ie.editMedia, P ? ie.editVideo : ie.editImage] },
+                            A.a,
+                            { style: [ae.editMedia, P ? ae.editVideo : ae.editImage] },
                             p
-                              ? m.a.createElement(D.a, {
-                                  accessibilityLabel: q,
-                                  icon: m.a.createElement(W.a, { style: ie.editSensitiveWarningIcon }),
+                              ? m.a.createElement(N.a, {
+                                  accessibilityLabel: X,
+                                  icon: m.a.createElement(W.a, { style: ae.editSensitiveWarningIcon }),
                                   onPress: s,
                                   size: 'small',
-                                  style: ie.editSensitiveWarningButton,
+                                  style: ae.editSensitiveWarningButton,
                                   type: 'onMediaDominantColorFilled',
                                 })
                               : null,
                             m.a.createElement(
-                              D.a,
+                              N.a,
                               {
-                                accessibilityLabel: J,
-                                icon: r ? m.a.createElement(H.a, null) : void 0,
+                                accessibilityLabel: q,
+                                icon: r ? m.a.createElement(K.a, null) : void 0,
                                 onPress: o,
                                 size: r ? 'xSmall' : 'small',
                                 type: 'onMediaDominantColorFilled',
                               },
-                              r ? void 0 : X,
+                              r ? void 0 : Q,
                             ),
                           )
                         : null,
@@ -604,7 +605,7 @@
                   }
                   return null !== (e = t.mediaFile) && void 0 !== e && e.isVideo
                     ? this._renderVideoPreview(t.mediaFile.type, t.mediaFile.url, t.id, t.mediaFile)
-                    : m.a.createElement(Y.a, { style: T.a.absoluteFill }, this._renderImagePreview())
+                    : m.a.createElement(A.a, { style: T.a.absoluteFill }, this._renderImagePreview())
                 },
               },
               {
@@ -612,9 +613,9 @@
                 value: function (e, t) {
                   var i = { uri: this.state.playGif ? e : t }
                   return m.a.createElement(
-                    Y.a,
+                    A.a,
                     { onClick: this._handleGifClick, style: T.a.absoluteFill },
-                    m.a.createElement(K.a, { resizeMode: 'cover', source: i, style: ie.video }),
+                    m.a.createElement(Y.a, { resizeMode: 'cover', source: i, style: ae.video }),
                   )
                 },
               },
@@ -645,10 +646,10 @@
                   )
                   var r = this.props.mediaItem,
                     l = null === (n = r.mediaMetadata) || void 0 === n ? void 0 : n.subtitles
-                  if (this._configurableVideoPlayerEnabled && a instanceof S.c) {
-                    var o = [{ src: t, type: e }],
+                  if (this._configurableVideoPlayerEnabled && a instanceof j.c) {
+                    var o = Object(P.h)(a.fileHandle) ? [{ src: t, type: e }] : [],
                       s = ''.concat(i)
-                    return m.a.createElement(I, {
+                    return m.a.createElement(M, {
                       mediaFile: a,
                       mediaId: s,
                       subtitles: l,
@@ -657,13 +658,13 @@
                     })
                   }
                   var d,
-                    c = [{ content_type: e, url: t }],
+                    c = Object(P.h)(a.fileHandle) ? [{ content_type: e, url: t }] : [],
                     u =
-                      (null == l || null === (d = l.upload) || void 0 === d ? void 0 : d.mediaFile) instanceof x.b
+                      (null == l || null === (d = l.upload) || void 0 === d ? void 0 : d.mediaFile) instanceof S.b
                         ? l.upload.mediaFile.vtt
                         : void 0
                   return m.a.createElement(
-                    L,
+                    x,
                     {
                       autoPlay: !1,
                       controls: !0,
@@ -673,8 +674,8 @@
                       onPause: this._handleVideoOnPause,
                       onPlay: this._handleVideoOnPlay,
                       playsInline: !0,
-                      poster: a instanceof S.c ? a.thumbnail : '',
-                      style: ie.video,
+                      poster: a instanceof j.c ? a.thumbnail : '',
+                      style: ae.video,
                       variants: c,
                     },
                     l && u
@@ -693,15 +694,15 @@
             i
           )
         })(m.a.Component)
-      h()(te, 'contextType', B.a),
-        h()(te, 'defaultProps', {
+      v()(ie, 'contextType', B.a),
+        v()(ie, 'defaultProps', {
           enableGif: !0,
           withCloseButton: !0,
           withAltTextLabel: !1,
           withEditButton: !1,
           withEditSensitiveWarningButton: !1,
         })
-      var ie = T.a.create(function (e) {
+      var ae = T.a.create(function (e) {
         return {
           close: { position: 'absolute', left: e.spaces.space4, top: e.spaces.space4 },
           cursor: { cursor: 'pointer' },
@@ -714,7 +715,7 @@
           video: { height: '100%', width: '100%' },
         }
       })
-      t.a = te
+      t.a = ie
     },
     tuke: function (e, t, i) {
       'use strict'

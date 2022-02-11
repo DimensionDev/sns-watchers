@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [349],
+  [350],
   {
     '0mK8': function (e, t, n) {
       'use strict'
@@ -164,7 +164,7 @@
                   d.b,
                   null,
                   l.map(function (e, t) {
-                    return i.a.createElement(h.b, { key: 'events_textpart_'.concat(t), linkify: !0, part: e })
+                    return i.a.createElement(h.c, { key: 'events_textpart_'.concat(t), linkify: !0, part: e })
                   }),
                 )
               : null,

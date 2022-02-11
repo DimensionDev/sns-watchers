@@ -1940,7 +1940,7 @@
             date: { marginVertical: 0, marginTop: e.spaces.space2 },
           }
         })
-      t.default = Object(z.c)(re)(I(oe))
+      t.default = Object(z.a)(re)(I(oe))
     },
     nS1w: function (e, t, a) {
       'use strict'

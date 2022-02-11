@@ -193,7 +193,7 @@
           o = void 0 !== i && i
         return r.e({
           loader: function () {
-            return n.e(241).then(n.bind(null, '+92Z'))
+            return n.e(242).then(n.bind(null, '+92Z'))
           },
           loaderKey: 'trendDefaultLoader',
           loaderOptions: { withThirdPartyCards: o, errorContext: e },
@@ -236,16 +236,16 @@
         O = n('fTQJ'),
         x = n('+Bsv'),
         P = n('VS6U'),
-        j = n('7JQg'),
-        R = n('FIs5'),
-        S = n('mw9i'),
+        j = n('FIs5'),
+        R = n('mw9i'),
+        S = n('7JQg'),
         k = T.a.c5f4befa,
         I = T.a.ae05f268,
         L = function () {
           return i.a.createElement(C.a, null)
         },
         B = function () {
-          return i.a.createElement(R.a, { message: I })
+          return i.a.createElement(j.a, { message: I })
         },
         X = function (t) {
           var e = t.history,
@@ -260,7 +260,7 @@
               history: e,
               primaryContent: i.a.createElement(
                 y.a,
-                { component: S.a, fab: r },
+                { component: R.a, fab: r },
                 i.a.createElement(O.a, {
                   entryConfiguration: g,
                   module: Object(m.f)(n),
@@ -275,7 +275,7 @@
             }),
           )
         }
-      e.default = Object(j.c)({ page: 'guide', section: 'all_trends' })(X)
+      e.default = Object(S.a)({ page: 'guide', section: 'all_trends' })(X)
     },
   },
 ])

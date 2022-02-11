@@ -19,8 +19,8 @@
         m = a.n(y),
         p = (a('7xRU'), a('z84I'), a('ERkP')),
         v = a.n(p),
-        b = a('RhWx'),
-        S = a.n(b),
+        S = a('RhWx'),
+        b = a.n(S),
         _ = a('yiKp'),
         E = a.n(_),
         w = (a('tQbP'), a('zh9S')),
@@ -56,7 +56,7 @@
                           E()({}, e),
                           {},
                           {
-                            thumbnail_images: S()(e.thumbnail_images).sort(function (e, t) {
+                            thumbnail_images: b()(e.thumbnail_images).sort(function (e, t) {
                               return t.height * t.width - e.height * e.width
                             }),
                           },
@@ -278,8 +278,8 @@
                     y = e.preview_image,
                     p = y.height,
                     v = y.url,
-                    b = y.width,
-                    S = m()(e.thumbnail_images, 1)[0],
+                    S = y.width,
+                    b = m()(e.thumbnail_images, 1)[0],
                     _ = e.url,
                     E = a({
                       mediaCategory: o === B.a.Composition ? Q.b.TweetGif : Q.b.DMGif,
@@ -287,8 +287,8 @@
                       previewMediaType: 'video/mp4',
                       previewUrl: v,
                       sourceUrl: g,
-                      stillMediaUrl: S.still_image_url,
-                      width: b,
+                      stillMediaUrl: b.still_image_url,
+                      width: S,
                       height: p,
                     }).map(function (e) {
                       return e.id
@@ -424,8 +424,8 @@
         m = { fetchInitialIfNeeded: g.fetchInitialIfNeeded, fetchNextIfNeeded: g.fetchNextIfNeeded, scribeAction: l.c },
         p = Object(f.g)(y, m),
         v = a('v//M'),
-        b = a('jHSc'),
-        S = a('x5W0'),
+        S = a('jHSc'),
+        b = a('x5W0'),
         _ = a('ij+d'),
         E = a('3XMw'),
         w = a.n(E),
@@ -458,7 +458,7 @@
           return n.a.createElement(
             C.a,
             { onPress: l, style: [k.category, o && k.leftMargin] },
-            n.a.createElement(N.a, { source: u, style: [k.categoryImage, { backgroundColor: Object(S.a)(i) }] }),
+            n.a.createElement(N.a, { source: u, style: [k.categoryImage, { backgroundColor: Object(b.a)(i) }] }),
             n.a.createElement(
               P.a,
               { style: k.categoryNameContainer },
@@ -482,7 +482,7 @@
             },
           }
         }),
-        A = Object(I.c)({ element: 'category' })(
+        A = Object(I.a)({ element: 'category' })(
           p(function (e) {
             var t,
               a = e.categories,
@@ -553,7 +553,7 @@
                 [g],
               ),
               n.a.createElement(
-                b.b,
+                S.b,
                 { documentTitle: M, history: c, middleControl: f, onBackClick: m },
                 n.a.createElement(v.a, { fetchStatus: l, onRequestRetry: g, render: p }),
               )
@@ -614,7 +614,7 @@
                     u = this.state.shouldAutoPlayGifOverride,
                     l = Object(W.c)(u, c)
                   return n.a.createElement(
-                    b.b,
+                    S.b,
                     { backButtonType: 'back', documentTitle: X({ query: i }), history: a, middleControl: o },
                     n.a.createElement(Q.a, {
                       location: r,
@@ -636,7 +636,7 @@
             a
           )
         })(n.a.Component),
-        Z = Object(I.c)({ element: 'gallery' })(J)
+        Z = Object(I.a)({ element: 'gallery' })(J)
       t.default = function (e) {
         var t = e.gifSearchKey,
           a = e.history,
@@ -674,16 +674,16 @@
         m = a.n(y),
         p = a('P1r1'),
         v = a('0KEI'),
-        b = a('oEGd'),
-        S = {
+        S = a('oEGd'),
+        b = {
           createLocalApiErrorHandler: Object(v.createLocalApiErrorHandlerWithContextFactory)(
             'FOUND_MEDIA_AUTOPLAY_TOGGLE',
           ),
           updateSettings: p.N,
         },
-        _ = Object(b.g)(function () {
+        _ = Object(S.g)(function () {
           return {}
-        }, S),
+        }, b),
         E = a('3XMw'),
         w = a.n(E),
         C = a('fHOo'),
@@ -778,14 +778,14 @@
         m = a.n(y),
         p = a('38/B'),
         v = a('hqKg'),
-        b = a('H9MA'),
-        S = a('zHh/'),
+        S = a('H9MA'),
+        b = a('zHh/'),
         _ = a('oEGd'),
         E = a('P1r1'),
-        w = Object(v.createSelector)(E.g, E.k, b.d, function (e, t, a) {
+        w = Object(v.createSelector)(E.g, E.k, S.d, function (e, t, a) {
           return {
             isDataSaverEnabled: t,
-            shouldAutoPlayGif: (e.shouldAutoPlayGif || Object(S.a)(a)) && !p.a.reducedMotionEnabled,
+            shouldAutoPlayGif: (e.shouldAutoPlayGif || Object(b.a)(a)) && !p.a.reducedMotionEnabled,
           }
         }),
         C = Object(_.c)(w),
@@ -897,7 +897,7 @@
                     i = this._gifSearchKey ? this._gifSearchKey : void 0
                   return this._gifSearchKey
                     ? m.a.createElement(
-                        A.b,
+                        A.c,
                         { namespace: this._getScribeNamespace(i) },
                         m.a.createElement(
                           D.d,
@@ -1005,8 +1005,8 @@
         m = a.n(y),
         p = a('hiCj'),
         v = a('pX0s'),
-        b = a('jHSc'),
-        S = a('EP6G'),
+        S = a('jHSc'),
+        b = a('EP6G'),
         _ = a('3XMw'),
         E = a.n(_),
         w = a('7JQg'),
@@ -1044,7 +1044,7 @@
                     u = this.state.shouldAutoPlayGifOverride,
                     l = Object(C.c)(u, i)
                   return m.a.createElement(
-                    b.b,
+                    S.b,
                     { backButtonType: 'back', documentTitle: x({ category: c }), history: a, middleControl: n },
                     m.a.createElement(p.a, {
                       location: r,
@@ -1052,7 +1052,7 @@
                       shouldAutoPlayGif: l,
                     }),
                     !!o &&
-                      m.a.createElement(S.a, {
+                      m.a.createElement(b.a, {
                         gifSearchKey: t,
                         history: a,
                         module: v.b,
@@ -1066,7 +1066,7 @@
             a
           )
         })(m.a.Component)
-      t.default = Object(w.c)({ element: 'gallery' })(O)
+      t.default = Object(w.a)({ element: 'gallery' })(O)
     },
     pX0s: function (e, t, a) {
       'use strict'
@@ -1095,7 +1095,7 @@
         m = ['fetchStatus'],
         p = {},
         v = { cursor: {}, items: [], initialFetchStatus: f.a.NONE, nextFetchStatus: f.a.NONE },
-        b = function (e) {
+        S = function (e) {
           var t = e.defaultQuery,
             a = e.getApiMethod,
             r = e.getParams,
@@ -1178,7 +1178,7 @@
             selectQueryState: g,
           }
         },
-        S = a('Ssj5'),
+        b = a('Ssj5'),
         _ = function (e) {
           return e.filter(function (e) {
             var t = e.original_image,
@@ -1187,7 +1187,7 @@
             return a > 0 && r > 0
           })
         },
-        E = b({
+        E = S({
           defaultQuery: 'categories',
           getApiMethod: function (e) {
             return e.GifSearch.categories
@@ -1204,7 +1204,7 @@
           },
           localNamespace: 'categories',
         }),
-        w = b({
+        w = S({
           getApiMethod: function (e) {
             return e.GifSearch.category
           },
@@ -1220,7 +1220,7 @@
           },
           localNamespace: 'category',
         }),
-        C = b({
+        C = S({
           getApiMethod: function (e) {
             return e.GifSearch.search
           },
@@ -1237,7 +1237,7 @@
           localNamespace: 'search',
         }),
         x = Object(l.c)({ categories: E.reducer, category: w.reducer, search: C.reducer })
-      S.a.register(n()({}, g, x))
+      b.a.register(n()({}, g, x))
     },
     x5W0: function (e, t, a) {
       'use strict'

@@ -25247,6 +25247,16 @@ object-assign
           },
         )
       },
+      ssvU: function (e, t, n) {
+        n('ax0f')(
+          { target: 'Number', stat: !0 },
+          {
+            isNaN: function (e) {
+              return e != e
+            },
+          },
+        )
+      },
       't/tF': function (e, t, n) {
         var r = n('cLeC'),
           i = n('lhaq'),

@@ -1294,8 +1294,8 @@
             return o.a.createElement(s.a, { hasError: e, onRetry: t })
           },
         }),
-        p = n.p + 'twemoji_sprite.2c504925.png',
-        f = n.p + 'twemoji_sprite_high_res.0e490215.png',
+        p = n.p + 'twemoji_sprite.8d8021b5.png',
+        f = n.p + 'twemoji_sprite_high_res.709fdfa5.png',
         m = n('rHpw'),
         v = n('U+bB'),
         h = n('kLqS'),

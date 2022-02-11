@@ -2216,16 +2216,6 @@
         }
       n({ global: !0, bind: !0, forced: u }, { setTimeout: h(a.setTimeout), setInterval: h(a.setInterval) })
     },
-    ssvU: function (t, e, i) {
-      i('ax0f')(
-        { target: 'Number', stat: !0 },
-        {
-          isNaN: function (t) {
-            return t != t
-          },
-        },
-      )
-    },
   },
 ])
 //# sourceMappingURL=WIPED

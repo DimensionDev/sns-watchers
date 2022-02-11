@@ -2284,7 +2284,7 @@
       t.default = function (e) {
         var t = e.location
         return r.a.createElement(
-          s.b,
+          s.c,
           { namespace: m },
           r.a.createElement(
             c.a,
@@ -2379,7 +2379,7 @@
             return !e.link
           })
         return r.a.createElement(
-          S.b,
+          S.c,
           { namespace: O },
           r.a.createElement(
             p.a,
@@ -2422,7 +2422,7 @@
           ),
         )
       }
-      t.default = Object(S.c)(O)(l(D))
+      t.default = Object(S.a)(O)(l(D))
     },
     htPi: function (e, t, n) {
       'use strict'
@@ -2484,7 +2484,7 @@
             colorPicker: { paddingVertical: e.spaces.space4 },
           }
         })
-      t.default = Object(o.c)({ page: 'settings', section: 'display' })(k)
+      t.default = Object(o.a)({ page: 'settings', section: 'display' })(k)
     },
     iCwC: function (e, t, n) {
       'use strict'

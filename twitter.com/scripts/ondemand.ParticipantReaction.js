@@ -8,7 +8,7 @@
         t = n.n(o),
         a = n('G/+M'),
         r = n('+cai'),
-        u = n('jrwN'),
+        u = n('x7CM'),
         s = n('rHpw')
       e.default = function (i) {
         var e = i.reaction,
@@ -139,7 +139,7 @@
         p = n('3rX5'),
         k = n('VbCG'),
         h = n('rHpw'),
-        j = (function (i) {
+        g = (function (i) {
           s()(n, i)
           var e = c()(n)
           function n() {
@@ -163,7 +163,7 @@
                         draggable: !1,
                         resizeMode: 'stretch',
                         source: a,
-                        style: [g.root, t],
+                        style: [j.root, t],
                       })
                     : null
                 },
@@ -172,10 +172,10 @@
             n
           )
         })(m.a.PureComponent),
-        g = h.a.create(function (i) {
+        j = h.a.create(function (i) {
           return { root: { height: k.c.EmojiHeight, width: k.c.EmojiWidth } }
         })
-      e.a = j
+      e.a = g
     },
     faxe: function (i, e, n) {
       'use strict'
@@ -244,7 +244,54 @@
         }
       }
     },
-    jrwN: function (i, e, n) {
+    r728: function (i, e, n) {
+      'use strict'
+      n.d(e, 'a', function () {
+        return s
+      })
+      n('jwue'), n('7x/C'), n('+oxZ'), n('KqXw'), n('Ysgh'), n('vrRf'), n('ho0z'), n('7xRU'), n('0zG9'), n('LJOr')
+      var o = n('iChn'),
+        t = { name: 'a', keywords: 'j', sprite_position: 'k', skin_variations: 'l' },
+        a = { unified: 'key', skin_tone: 'd', sprite_position: 'k' },
+        r = function (i) {
+          var e = [],
+            n = function (i, n) {
+              i &&
+                (Array.isArray(i) ? i : [i]).forEach(function (i) {
+                  ;(n ? i.split(/[-|_|\s]+/) : [i]).forEach(function (i) {
+                    var n = i.toLowerCase()
+                    ;-1 === e.indexOf(n) && e.push(n)
+                  })
+                })
+            }
+          return n(i.short_names, !0), n(i.name, !0), n(i.keywords, !1), e.join(',')
+        },
+        u = function (i, e) {
+          for (var n in e) (i[n] = i[e[n]]), delete i[e[n]]
+        },
+        s = function (i) {
+          var e = JSON.parse(JSON.stringify(i))
+          for (var n in ((e.compressed = !1), e.emojis)) {
+            var s = e.emojis[n]
+            u(s, t),
+              (s.id = n),
+              (s.unified = n),
+              (s.short_names = [n]),
+              s.text || (s.text = ''),
+              (s.search = r(s)),
+              s.skin_variations &&
+                (s.skin_variations.forEach(function (i) {
+                  u(i, a)
+                }),
+                (s.skin_variations = Object(o.a)(s.skin_variations, function (i) {
+                  for (var e = i.skin_tone, n = e[0], o = 1; o < e.length; o++) n += '+'.concat(e[o])
+                  return n
+                })))
+          }
+          return e
+        }
+    },
+    x7CM: function (i, e, n) {
       'use strict'
       n.d(e, 'a', function () {
         return k
@@ -339,7 +386,7 @@
             u.a.View,
             {
               style: [
-                j.container,
+                g.container,
                 i.style,
                 {
                   transform: [
@@ -351,63 +398,16 @@
                 },
               ],
             },
-            r.a.createElement(l, { emojiInfo: i.emojiInfo, emojiString: i.reaction, style: j.emoji }),
+            r.a.createElement(l, { emojiInfo: i.emojiInfo, emojiString: i.reaction, style: g.emoji }),
           )
         )
       }
       function h(i) {
         return t()(t()({}, i), {}, { bounciness: 2, useNativeDriver: !1 })
       }
-      var j = p.a.create(function (i) {
+      var g = p.a.create(function (i) {
         return { container: { boxShadow: i.boxShadows.xSmall }, emoji: { width: '67%', height: '67%' } }
       })
-    },
-    r728: function (i, e, n) {
-      'use strict'
-      n.d(e, 'a', function () {
-        return s
-      })
-      n('jwue'), n('7x/C'), n('+oxZ'), n('KqXw'), n('Ysgh'), n('vrRf'), n('ho0z'), n('7xRU'), n('0zG9'), n('LJOr')
-      var o = n('iChn'),
-        t = { name: 'a', keywords: 'j', sprite_position: 'k', skin_variations: 'l' },
-        a = { unified: 'key', skin_tone: 'd', sprite_position: 'k' },
-        r = function (i) {
-          var e = [],
-            n = function (i, n) {
-              i &&
-                (Array.isArray(i) ? i : [i]).forEach(function (i) {
-                  ;(n ? i.split(/[-|_|\s]+/) : [i]).forEach(function (i) {
-                    var n = i.toLowerCase()
-                    ;-1 === e.indexOf(n) && e.push(n)
-                  })
-                })
-            }
-          return n(i.short_names, !0), n(i.name, !0), n(i.keywords, !1), e.join(',')
-        },
-        u = function (i, e) {
-          for (var n in e) (i[n] = i[e[n]]), delete i[e[n]]
-        },
-        s = function (i) {
-          var e = JSON.parse(JSON.stringify(i))
-          for (var n in ((e.compressed = !1), e.emojis)) {
-            var s = e.emojis[n]
-            u(s, t),
-              (s.id = n),
-              (s.unified = n),
-              (s.short_names = [n]),
-              s.text || (s.text = ''),
-              (s.search = r(s)),
-              s.skin_variations &&
-                (s.skin_variations.forEach(function (i) {
-                  u(i, a)
-                }),
-                (s.skin_variations = Object(o.a)(s.skin_variations, function (i) {
-                  for (var e = i.skin_tone, n = e[0], o = 1; o < e.length; o++) n += '+'.concat(e[o])
-                  return n
-                })))
-          }
-          return e
-        }
     },
   },
 ])

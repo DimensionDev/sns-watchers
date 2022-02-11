@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [243],
+  [244],
   {
     '+PaE': function (e, l, a) {
       'use strict'
@@ -2387,13 +2387,13 @@
         ul = a('wytG'),
         ol = a('k/OQ'),
         cl = Object(ul.a)(function () {
-          return Promise.all([a.e(0), a.e(243)]).then(a.bind(null, '8KtR'))
+          return Promise.all([a.e(0), a.e(244)]).then(a.bind(null, '8KtR'))
         }),
         dl = Object(ul.a)(function () {
-          return Promise.all([a.e(0), a.e(243)]).then(a.bind(null, 'ivpD'))
+          return Promise.all([a.e(0), a.e(244)]).then(a.bind(null, 'ivpD'))
         }),
         gl = Object(ul.a)(function () {
-          return Promise.all([a.e(0), a.e(243)]).then(a.bind(null, 'ylAD'))
+          return Promise.all([a.e(0), a.e(244)]).then(a.bind(null, 'ylAD'))
         }),
         ml = 'likes',
         yl = 'media',
@@ -2544,7 +2544,7 @@
                 Ge.b,
                 { align: 'center', color: 'gray700', dir: 'auto' },
                 c.map(function (e, l) {
-                  return R.a.createElement(Ll.b, {
+                  return R.a.createElement(Ll.c, {
                     key: 'user_'.concat(o, '_textpart_').concat(l),
                     linkify: !0,
                     part: e,
@@ -2600,7 +2600,7 @@
               Ge.b,
               { align: 'center', color: 'gray700', dir: 'auto' },
               s.map(function (e, l) {
-                return R.a.createElement(Ll.b, { key: 'user_'.concat(i, '_textpart_').concat(l), linkify: !0, part: e })
+                return R.a.createElement(Ll.c, { key: 'user_'.concat(i, '_textpart_').concat(l), linkify: !0, part: e })
               }),
             )
           return R.a.createElement(Xe, { header: Ml, message: u })

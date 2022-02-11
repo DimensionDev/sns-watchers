@@ -1781,7 +1781,7 @@
                 alias: null,
                 args: (r = [
                   { kind: 'Variable', name: 'rest_id', variableName: 'restId' },
-                  { kind: 'Literal', name: 's', value: 43 },
+                  { kind: 'Literal', name: 's', value: 44 },
                 ]),
                 concreteType: 'TweetResults',
                 kind: 'LinkedField',

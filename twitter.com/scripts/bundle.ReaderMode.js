@@ -681,7 +681,7 @@
                   withForceTopNav: n,
                 }),
                 i.a.createElement(
-                  Le.b,
+                  Le.c,
                   { data: { tweet_id: s }, namespace: Ve },
                   i.a.createElement(
                     B.a,

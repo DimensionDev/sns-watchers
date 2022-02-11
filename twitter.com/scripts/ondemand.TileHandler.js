@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [237],
+  [238],
   {
     CdHO: function (e, t, a) {
       'use strict'
@@ -31,8 +31,8 @@
             m = a.gameClockPeriod,
             p = a.participants,
             f = a.startTimeMillis,
-            b = a.winnerId,
-            g = Object(d.a)(t).handleTileClick,
+            g = a.winnerId,
+            b = Object(d.a)(t).handleTileClick,
             y = t.content.url,
             h = o.a.useMemo(
               function () {
@@ -41,17 +41,17 @@
               [y],
             )
           return o.a.createElement(s.a, {
-            accessibilityLabel: Object(i.a)(n, r, p, m, b),
+            accessibilityLabel: Object(i.a)(n, r, p, m, g),
             category: n,
             containerStyle: u.a.containerStyle,
             gameClock: c,
             gameClockPeriod: m,
             gameState: r,
             link: h,
-            onClick: g,
+            onClick: b,
             startTimeMillis: f,
             teams: p,
-            winnerId: b,
+            winnerId: g,
           })
         },
         p = o.a.memo(m),
@@ -88,11 +88,11 @@
             m = Object(n.a)(t),
             p = e || '',
             f = a && a[0] ? u(a[0]) : '',
-            b = a && a[1] ? u(a[1]) : '',
-            g = r || '',
+            g = a && a[1] ? u(a[1]) : '',
+            b = r || '',
             y = d ? l({ winner: d.fullName }) : '',
-            h = t === o.a.Completed ? (d ? y : i) : g
-          return s({ gameCategory: p, gameState: m, accessibleGameClockPeriod: h, teamOneLabel: f, teamTwoLabel: b })
+            h = t === o.a.Completed ? (d ? y : i) : b
+          return s({ gameCategory: p, gameState: m, accessibleGameClockPeriod: h, teamOneLabel: f, teamTwoLabel: g })
         }
     },
     IJsT: function (e, t, a) {
@@ -113,18 +113,18 @@
             m = e.onClick,
             p = e.stackLayoutLowerStyle,
             f = e.stackLayoutUpperStyle,
-            b = e.upper,
-            g = e.withInsetFocusRing,
+            g = e.upper,
+            b = e.withInsetFocusRing,
             y = e.withInteractiveStyling,
             h = c.a.generate({
               backgroundColor: i.a.theme.colors.transparent,
               color: i.a.theme.colors.primary,
-              insetFocusRing: g,
+              insetFocusRing: b,
             }),
             v = r.a.createElement(
               r.a.Fragment,
               null,
-              r.a.createElement(l.a, { style: [u.defaultUpperContainerStyle, f, n && { height: 'auto' }] }, b),
+              r.a.createElement(l.a, { style: [u.defaultUpperContainerStyle, f, n && { height: 'auto' }] }, g),
               d ? r.a.createElement(l.a, { style: [u.defaultLowerContainerStyle, p] }, d) : null,
             )
           return r.a.createElement(
@@ -171,8 +171,8 @@
         m = a.n(d),
         p = a('KEM+'),
         f = a.n(p),
-        b = (a('2G9S'), a('Blm6'), a('hBpG'), a('7x/C'), a('ERkP')),
-        g = a.n(b),
+        g = (a('2G9S'), a('Blm6'), a('hBpG'), a('7x/C'), a('ERkP')),
+        b = a.n(g),
         y = a('t62R'),
         h = 864e5,
         v = function (e) {
@@ -206,7 +206,7 @@
               f()(l()(e), '_renderCategory', function () {
                 var t = e.props.category
                 return t
-                  ? g.a.createElement(y.b, { align: 'left', numberOfLines: 1, size: 'subtext2', weight: 'bold' }, t)
+                  ? b.a.createElement(y.b, { align: 'left', numberOfLines: 1, size: 'subtext2', weight: 'bold' }, t)
                   : null
               }),
               f()(l()(e), '_renderGameScheduledDateTime', function () {
@@ -220,28 +220,28 @@
               }),
               f()(l()(e), '_renderTodayTomorrow', function (e, t) {
                 var a = I(t)
-                return g.a.createElement(
+                return b.a.createElement(
                   w.a,
                   null,
-                  g.a.createElement(y.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }, 0 === e ? j : x),
-                  g.a.createElement(y.b, { color: 'gray700', size: 'subtext2' }, a),
+                  b.a.createElement(y.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }, 0 === e ? j : x),
+                  b.a.createElement(y.b, { color: 'gray700', size: 'subtext2' }, a),
                 )
               }),
               f()(l()(e), '_renderDateTime', function (e) {
                 var t = I(e),
                   a = k(e)
-                return g.a.createElement(
+                return b.a.createElement(
                   w.a,
                   null,
-                  g.a.createElement(y.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }, a),
-                  g.a.createElement(y.b, { color: 'gray700', size: 'subtext2' }, t),
+                  b.a.createElement(y.b, { color: 'gray700', size: 'subtext2', weight: 'bold' }, a),
+                  b.a.createElement(y.b, { color: 'gray700', size: 'subtext2' }, t),
                 )
               }),
               f()(l()(e), '_renderGameStateValue', function (t, a) {
                 var n = e.props.gameClockPeriod,
                   r = e._getWinnerName(),
                   c = t && r ? _({ team: r }) : a && n ? n : void 0
-                return c ? g.a.createElement(y.b, { color: 'gray700', numberOfLines: 1, size: 'subtext2' }, c) : null
+                return c ? b.a.createElement(y.b, { color: 'gray700', numberOfLines: 1, size: 'subtext2' }, c) : null
               }),
               f()(l()(e), '_getWinnerName', function () {
                 var t = e.props,
@@ -268,15 +268,15 @@
                     n = t === E.a.Scheduled,
                     r = t === E.a.InProgress,
                     c = t === E.a.Completed
-                  return g.a.createElement(
-                    g.a.Fragment,
+                  return b.a.createElement(
+                    b.a.Fragment,
                     null,
                     n
                       ? this._renderGameScheduledDateTime()
-                      : g.a.createElement(
+                      : b.a.createElement(
                           w.a,
                           null,
-                          g.a.createElement(
+                          b.a.createElement(
                             y.b,
                             { color: r ? 'magenta500' : 'gray700', numberOfLines: 1, size: 'subtext2', weight: 'bold' },
                             (function (e) {
@@ -305,7 +305,7 @@
             ]),
             a
           )
-        })(g.a.Component)
+        })(b.a.Component)
       f()(z, 'defaultProps', { withCategory: !0 })
     },
     RoyM: function (e, t, a) {
@@ -348,7 +348,7 @@
     VkVE: function (e, t, a) {
       'use strict'
       a.d(t, 'a', function () {
-        return u
+        return d
       })
       var n = a('yiKp'),
         r = a.n(n),
@@ -358,25 +358,24 @@
         l = a('Irs7'),
         s = { element: 'tile' },
         u = function (e) {
-          var t = Object(l.b)(),
-            a = (function (e) {
-              var t = e.itemMetadata.clientEventInfo,
-                a = i.a.getAllSurfaceDetails(t)
-              return a ? { items: [a] } : void 0
-            })(e)
-          return (
-            o.a.useEffect(function () {
-              t.scribe(r()(r()({}, s), {}, { action: 'impression', data: a }))
-            }, []),
-            {
-              handleTileClick: o.a.useCallback(
-                function () {
-                  t.scribe(r()(r()({}, s), {}, { action: 'click', data: a }))
-                },
-                [t, a],
-              ),
-            }
+          var t = e.itemMetadata.clientEventInfo,
+            a = i.a.getAllSurfaceDetails(t)
+          return a ? { items: [a] } : void 0
+        },
+        d = function (e) {
+          var t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1],
+            a = Object(l.b)(),
+            n = u(e)
+          o.a.useEffect(function () {
+            t && a.scribe(r()(r()({}, s), {}, { action: 'impression', data: n }))
+          }, [])
+          var c = o.a.useCallback(
+            function () {
+              a.scribe(r()(r()({}, s), {}, { action: 'click', data: n }))
+            },
+            [a, n],
           )
+          return { handleTileClick: c }
         }
     },
     XjXc: function (e, t, a) {
@@ -398,7 +397,7 @@
         m = a('VkVE'),
         p = a('lzTJ'),
         f = a('iSF/'),
-        b = function (e) {
+        g = function (e) {
           var t,
             a,
             n,
@@ -406,12 +405,12 @@
             o = e.entry,
             i = e.feedbackItems,
             l = o.content,
-            b = l.content,
-            g = l.image,
+            g = l.content,
+            b = l.image,
             y = l.url
-          b.standard
-            ? ((t = b.standard.title), (a = b.standard.badge), (n = t))
-            : b.broadcast && ((t = c && ''.concat(c.name, ' ').concat(c.screen_name)), (a = b.broadcast.badge))
+          g.standard
+            ? ((t = g.standard.title), (a = g.standard.badge), (n = t))
+            : g.broadcast && ((t = c && ''.concat(c.name, ' ').concat(c.screen_name)), (a = g.broadcast.badge))
           var h = r.a.useMemo(
               function () {
                 var e,
@@ -447,13 +446,13 @@
             badge: h,
             containerStyle: d.a.containerStyle,
             description: n,
-            image: g,
+            image: b,
             link: C,
             onClick: v,
             rightControl: S,
           })
         }
-      t.a = l(r.a.memo(b))
+      t.a = l(r.a.memo(g))
     },
     ajvb: function (e, t, a) {
       'use strict'
@@ -521,8 +520,8 @@
         m = a.n(d),
         p = a('KEM+'),
         f = a.n(p),
-        b = (a('2G9S'), a('ho0z'), a('1t7P'), a('jQ/y'), a('hBvt'), a('ERkP')),
-        g = a.n(b),
+        g = (a('2G9S'), a('ho0z'), a('1t7P'), a('jQ/y'), a('hBvt'), a('ERkP')),
+        b = a.n(g),
         y = a('TIdA'),
         h = a('t62R'),
         v = a('A91F'),
@@ -550,12 +549,12 @@
                   n = t.badge,
                   r = t.image
                 return r
-                  ? g.a.createElement(
-                      g.a.Fragment,
+                  ? b.a.createElement(
+                      b.a.Fragment,
                       null,
-                      g.a.createElement(y.a, { accessibilityLabel: a, aspectMode: v.a.COVER, image: r }),
+                      b.a.createElement(y.a, { accessibilityLabel: a, aspectMode: v.a.COVER, image: r }),
                       n
-                        ? g.a.createElement(S.a, { align: 'left', background: n.backgroundColor, bold: !0 }, n.text)
+                        ? b.a.createElement(S.a, { align: 'left', background: n.backgroundColor, bold: !0 }, n.text)
                         : null,
                     )
                   : null
@@ -563,13 +562,13 @@
               f()(l()(e), '_renderUserAvatar', function () {
                 var t = e.props.attribution
                 return t
-                  ? g.a.createElement(
+                  ? b.a.createElement(
                       I.a,
                       { style: O.accountContainer },
-                      g.a.createElement(
+                      b.a.createElement(
                         I.a,
                         { style: O.avatarContainer },
-                        g.a.createElement(E.a, {
+                        b.a.createElement(E.a, {
                           accessibilityHidden: !0,
                           focusable: !1,
                           size: 'xLarge',
@@ -577,10 +576,10 @@
                           withLink: !1,
                         }),
                       ),
-                      g.a.createElement(
+                      b.a.createElement(
                         I.a,
                         { style: O.groupContainer },
-                        g.a.createElement(k.a, {
+                        b.a.createElement(k.a, {
                           isVerified: t.verified,
                           name: t.name,
                           nameSize: 'subtext2',
@@ -599,15 +598,15 @@
                   a = t.description,
                   n = t.rightControl
                 return a
-                  ? g.a.createElement(
+                  ? b.a.createElement(
                       I.a,
                       { style: O.eventDescription },
-                      g.a.createElement(
+                      b.a.createElement(
                         h.b,
                         { numberOfLines: 2, size: 'subtext2', style: { width: '100%' }, weight: 'bold' },
                         a,
                       ),
-                      g.a.createElement(I.a, { style: O.rightControl }, n || null),
+                      b.a.createElement(I.a, { style: O.rightControl }, n || null),
                     )
                   : null
               }),
@@ -624,7 +623,7 @@
                     a = e.containerStyle,
                     n = e.link,
                     r = e.onClick
-                  return g.a.createElement(C.a, {
+                  return b.a.createElement(C.a, {
                     accessibilityLabel: t,
                     containerStyle: a,
                     link: n,
@@ -638,7 +637,7 @@
             ]),
             a
           )
-        })(g.a.Component),
+        })(b.a.Component),
         O = w.a.create(function (e) {
           return {
             accountContainer: { flexDirection: 'row' },
@@ -667,8 +666,8 @@
         m = a.n(d),
         p = a('KEM+'),
         f = a.n(p),
-        b = (a('2G9S'), a('hBvt'), a('z84I'), a('ERkP')),
-        g = a.n(b),
+        g = (a('2G9S'), a('hBvt'), a('z84I'), a('ERkP')),
+        b = a.n(g),
         y = a('IJsT'),
         h = a('Nxr7'),
         v = (a('yH/f'), a('TIdA')),
@@ -690,10 +689,10 @@
               f()(l()(e), 'state', { imageError: !1 }),
               f()(l()(e), '_renderTeamName', function () {
                 var t = e.props.team.shortName
-                return g.a.createElement(
+                return b.a.createElement(
                   k.a,
                   { style: O.teamNameContainer },
-                  g.a.createElement(C.b, { color: 'white', numberOfLines: 1, weight: 'heavy' }, t),
+                  b.a.createElement(C.b, { color: 'white', numberOfLines: 1, weight: 'heavy' }, t),
                 )
               }),
               f()(l()(e), '_renderImage', function () {
@@ -705,10 +704,10 @@
                   o = e.state.imageError,
                   i = (!c && !r) || o ? O.translucent : {},
                   l = c ? S.a.exact(c.width / c.height) : S.a.SQUARE
-                return g.a.createElement(
+                return b.a.createElement(
                   k.a,
                   { style: [O.imageContainer, i, a && O.compactImageContainer] },
-                  g.a.createElement(v.a, {
+                  b.a.createElement(v.a, {
                     accessibilityLabel: '',
                     aspectMode: l,
                     image: c || r || '',
@@ -735,12 +734,12 @@
                   m = e._getTeamScoreSize(I.SCORE),
                   p = i ? e._getTeamScoreSize(I.SECONDARY_SCORE) : void 0
                 return d
-                  ? g.a.createElement(
+                  ? b.a.createElement(
                       k.a,
                       { style: [O.teamScore, u && O.losingTeamScore] },
-                      g.a.createElement(C.b, { color: 'white', numberOfLines: 1, size: m, weight: 'heavy' }, o),
+                      b.a.createElement(C.b, { color: 'white', numberOfLines: 1, size: m, weight: 'heavy' }, o),
                       i
-                        ? g.a.createElement(C.b, { color: 'white', numberOfLines: 1, size: p, weight: 'bold' }, i)
+                        ? b.a.createElement(C.b, { color: 'white', numberOfLines: 1, size: p, weight: 'bold' }, i)
                         : null,
                     )
                   : null
@@ -781,7 +780,7 @@
                     },
                     c = this._shouldRenderScore(),
                     o = !a || !c
-                  return g.a.createElement(
+                  return b.a.createElement(
                     k.a,
                     { style: [O.root, r, a && O.compactRoot] },
                     this._renderImage(),
@@ -793,7 +792,7 @@
             ]),
             a
           )
-        })(g.a.Component)
+        })(b.a.Component)
       f()(_, 'defaultProps', { isCompact: !1 })
       var O = E.a.create(function (e) {
           return {
@@ -832,7 +831,7 @@
                   i = t.startTimeMillis,
                   l = t.teams,
                   s = t.winnerId
-                return g.a.createElement(h.a, {
+                return b.a.createElement(h.a, {
                   category: a,
                   gameClock: n,
                   gameClockPeriod: r,
@@ -849,7 +848,7 @@
                   c = n.isCompact,
                   o = n.winnerId,
                   i = t.id
-                return g.a.createElement(P, {
+                return b.a.createElement(P, {
                   fallbackColor: a % 2 == 0 ? 'gray300' : 'gray700',
                   gameState: r,
                   isCompact: c,
@@ -875,7 +874,7 @@
                     o = e.teams
                   if (o) {
                     var i = o && o.map(this._renderTeamRow)
-                    return g.a.createElement(y.a, {
+                    return b.a.createElement(y.a, {
                       accessibilityLabel: t,
                       containerStyle: a,
                       isCompact: n,
@@ -892,69 +891,35 @@
             ]),
             a
           )
-        })(g.a.Component)
+        })(b.a.Component)
       f()(R, 'defaultProps', { isCompact: !1 })
     },
     kthL: function (e, t, a) {
       'use strict'
       a.r(t)
-      var n = a('yiKp'),
-        r = a.n(n),
-        c = a('ezF+'),
-        o = a('VPAj'),
+      var n = a('ezF+'),
+        r = a('VPAj'),
+        c = a('ERkP'),
+        o = a.n(c),
         i = a('caTy'),
-        l = a('zh9S'),
-        s = a('Rp9C'),
-        u = a('rHpw'),
-        d = a('tod0'),
-        m = Object(o.a)({ scribe: l.c }),
-        p = function (e) {
-          var t = e.itemMetadata.clientEventInfo,
-            a = s.a.getAllSurfaceDetails(t)
-          return a ? { items: [a] } : void 0
-        },
-        f = function (e) {
+        l = a('tod0'),
+        s = a('fvaz'),
+        u = a('VkVE'),
+        d = function (e) {
           var t = e.entry,
-            a = e.scribe,
-            n = e.scribeNamespace
-          return function () {
-            var e = p(t)
-            a(r()(r()({}, n), {}, { element: 'tile', action: 'click' }), e)
-          }
+            a = (t.content.content.callToAction && t.content.content.callToAction.text) || '',
+            n = t.content.url,
+            r = o.a.useMemo(
+              function () {
+                return n ? Object(i.b)(n) : void 0
+              },
+              [n],
+            ),
+            c = Object(u.a)(t, !!r).handleTileClick
+          return r ? o.a.createElement(l.a, { containerStyle: s.a.containerStyle, link: r, onClick: c, text: a }) : null
         },
-        b = u.a.create(function (e) {
-          return { containerStyle: { width: 'calc('.concat(e.spaces.space36, '*5)') } }
-        }),
-        g = c.g({
-          bindActions: m,
-          component: d.a,
-          createProps: function (e) {
-            var t = e.actions.scribe,
-              a = e.entry,
-              n = e.scribeNamespace
-            if (!(a && a.content && a.content.content && a.content.content.callToAction)) return null
-            var r = a.content.url,
-              c = a.content.content.callToAction.text,
-              o = r && Object(i.b)(r)
-            return c && o
-              ? {
-                  containerStyle: b.containerStyle,
-                  link: o,
-                  text: c,
-                  onClick: f({ entry: a, scribe: t, scribeNamespace: n }),
-                }
-              : null
-          },
-          shouldDisplayBorder: Object(o.a)(!1),
-          onImpression: function (e) {
-            var t = e.actions.scribe,
-              a = e.entry,
-              n = e.scribeNamespace,
-              c = p(a)
-            t(r()(r()({}, n), {}, { element: 'tile', action: 'impression' }), c)
-          },
-        })
-      t.default = g
+        m = n.b({ component: d, shouldDisplayBorder: Object(r.a)(!1) }).getHandler()
+      t.default = m
     },
     qB1G: function (e, t, a) {
       'use strict'

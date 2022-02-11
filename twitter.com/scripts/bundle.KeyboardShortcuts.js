@@ -188,7 +188,7 @@
             moduleHeader: { paddingLeft: e.spaces.space12 },
           }
         })
-      t.default = Object(E.c)({ page: 'keyboard_shortcuts' })(p(H))
+      t.default = Object(E.a)({ page: 'keyboard_shortcuts' })(p(H))
     },
     ObVQ: function (e, t, a) {
       'use strict'

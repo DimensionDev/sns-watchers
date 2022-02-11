@@ -5374,7 +5374,7 @@
                         return (
                           u !== e._isNarrow && (e._isNarrow = u),
                           $.a.createElement(
-                            Gs.b,
+                            Gs.c,
                             {
                               data: e._getMemoizedVerificationScribeData({
                                 accessStatus: a,

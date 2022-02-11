@@ -462,7 +462,7 @@
               {
                 alias: 'user',
                 args: (t = [
-                  { kind: 'Literal', name: 's', value: 46 },
+                  { kind: 'Literal', name: 's', value: 47 },
                   { kind: 'Variable', name: 'screen_name', variableName: 'screenName' },
                 ]),
                 concreteType: 'UserResults',
@@ -488,7 +488,7 @@
               },
               {
                 alias: 'viewer',
-                args: (i = [{ kind: 'Literal', name: 's', value: 22 }]),
+                args: (i = [{ kind: 'Literal', name: 's', value: 23 }]),
                 concreteType: 'Viewer',
                 kind: 'LinkedField',
                 name: 'viewer_v2',
@@ -519,7 +519,7 @@
                     storageKey: null,
                   },
                 ],
-                storageKey: 'viewer_v2(s:22)',
+                storageKey: 'viewer_v2(s:23)',
               },
             ],
             type: 'Query',
@@ -692,7 +692,7 @@
                     storageKey: null,
                   },
                 ],
-                storageKey: 'viewer_v2(s:22)',
+                storageKey: 'viewer_v2(s:23)',
               },
             ],
           },

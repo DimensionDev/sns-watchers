@@ -621,7 +621,7 @@
               M.b,
               null,
               o.map(function (e, t) {
-                return v.a.createElement(B.b, { key: ''.concat(e.text).concat(t), part: e })
+                return v.a.createElement(B.c, { key: ''.concat(e.text).concat(t), part: e })
               }),
             ),
             s = v.a.createElement(
@@ -1091,12 +1091,11 @@
         }
       t.a = function (e) {
         var t = function (t) {
-            var n = e.size,
-              a = e.withVDLRefresh ? 'xxxLarge' : 'xxLarge'
+            var n = e.size
             return r.a.createElement(
               g.a,
               { key: t.id_str, style: _.container },
-              r.a.createElement(f.a, { size: n || a, uri: t.profile_image_url_https }),
+              r.a.createElement(f.a, { size: n || 'xxLarge', uri: t.profile_image_url_https }),
             )
           },
           n = function (e) {

@@ -312,7 +312,7 @@
           k.a,
           { style: A.root },
           s.a.createElement(
-            I.b,
+            I.c,
             { data: u, namespace: p },
             s.a.createElement(w.a, {
               displayType: a,
@@ -383,7 +383,7 @@
             f = Object(G.a)({}, r, d)
           return i
             ? s.a.createElement(
-                I.b,
+                I.c,
                 { data: p, namespace: f },
                 s.a.createElement(
                   s.a.Fragment,
@@ -545,7 +545,7 @@
                       v = this._getRefreshIntervalSecForCurrentTab(),
                       h = v ? 1e3 * v : void 0
                     return s.a.createElement(
-                      I.b,
+                      I.c,
                       { namespace: this._getTimelineNamespace() },
                       s.a.createElement(me.a, {
                         behavioralEventContext: b,
@@ -814,7 +814,7 @@
             ae = c ? s.a.createElement(C.a, { component: Me.a, fab: c }, ne) : ne,
             re = l && u ? s.a.createElement(Oe, { getTabLink: l, module: v, selectedTabId: k }) : void 0
           return s.a.createElement(
-            I.b,
+            I.c,
             { namespace: X },
             s.a.createElement(
               z.a,

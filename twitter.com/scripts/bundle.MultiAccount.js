@@ -281,7 +281,7 @@
           whiteBackground: { backgroundColor: e.colors.cellBackground },
         }
       })
-      t.default = Object(J.c)(se)(F(le))
+      t.default = Object(J.a)(se)(F(le))
     },
     EPsT: function (e, t, n) {
       'use strict'
@@ -560,7 +560,7 @@
           errorMessage: { marginHorizontal: e.spaces.space12 },
         }
       })
-      t.default = Object(B.c)({ page: 'account_switcher', section: 'login' })(A(R))
+      t.default = Object(B.a)({ page: 'account_switcher', section: 'login' })(A(R))
     },
     jtO7: function (e, t, n) {
       'use strict'

@@ -474,7 +474,7 @@
           return { followButton: { marginLeft: e.spaces.space12 } }
         }),
         ie = Object(W.a)(Object(z.a)(P(Z)))
-      t.b = Object(Y.c)({ element: 'user' })(ie)
+      t.b = Object(Y.a)({ element: 'user' })(ie)
     },
     gemt: function (e, t, n) {
       'use strict'
@@ -724,7 +724,7 @@
                     t = e.fetchStatus,
                     n = e.history
                   return y.a.createElement(
-                    K.b,
+                    K.c,
                     { namespace: X },
                     y.a.createElement(
                       M.b,

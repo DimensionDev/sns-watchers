@@ -114,7 +114,7 @@
             r
           )
         })(d.a.PureComponent)
-      e.default = Object(_.c)({ page: 'tweet_activity', section: 'tweet_activity' })(I(O))
+      e.default = Object(_.a)({ page: 'tweet_activity', section: 'tweet_activity' })(I(O))
     },
     rJrz: function (t, e, r) {
       'use strict'

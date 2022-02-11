@@ -29,8 +29,8 @@
         w = (n('KqXw'), n('WNMA'), n('8Lfv')),
         C = n('G6rE'),
         I = n('rxPX'),
-        T = n('0KEI'),
-        P = ['loggedInUser'],
+        P = n('0KEI'),
+        T = ['loggedInUser'],
         S = function (e, t) {
           return t.match.params.statusId
         },
@@ -46,12 +46,12 @@
           })
           .adjustStateProps(function (e) {
             var t = e.loggedInUser,
-              n = E()(e, P)
+              n = E()(e, T)
             return v()({ loggedInScreenName: t ? t.screen_name : void 0 }, n)
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(T.createLocalApiErrorHandlerWithContextFactory)('HIDDEN_REPLIES_PAGE'),
+              createLocalApiErrorHandler: Object(P.createLocalApiErrorHandlerWithContextFactory)('HIDDEN_REPLIES_PAGE'),
               clearTimelineCache: function (e) {
                 return Object(w.a)(e)
               },
@@ -59,12 +59,12 @@
           })
           .withAnalytics({ page: 'tweet', section: 'moderated_replies' }),
         L = n('QIgh'),
-        j = n('8UdT'),
-        A = n('IcAo'),
+        A = n('8UdT'),
+        j = n('IcAo'),
         D = n('VrCx'),
         B = n('ReVx'),
-        F = n('WU0f'),
-        M = n('oQhu'),
+        M = n('WU0f'),
+        F = n('oQhu'),
         R = n('yoO3'),
         q = n('fTQJ'),
         N = n('VS6U'),
@@ -73,8 +73,8 @@
         U = n('3XMw'),
         V = n.n(U),
         G = V.a.d806aa19,
-        W = V.a.d80c77dc,
-        Q = V.a.ef939f4b,
+        Q = V.a.d80c77dc,
+        W = V.a.ef939f4b,
         K = V.a.f7f2db4f,
         X = h.a.createElement(
           V.a.I18NFormatMessage,
@@ -99,8 +99,8 @@
               g()(
                 l()(a),
                 '_getMemoizedModule',
-                Object(M.a)(function (e) {
-                  return Object(F.a)(e)
+                Object(F.a)(function (e) {
+                  return Object(M.a)(e)
                 }),
               ),
               g()(l()(a), '_getModule', function () {
@@ -130,7 +130,7 @@
                           history: t,
                           primaryContent: this._renderPrimaryContent(),
                           sidebarContent: h.a.createElement(b.a, null),
-                          subtitle: a === n ? W : Q({ screenName: a }),
+                          subtitle: a === n ? Q : W({ screenName: a }),
                           title: G,
                         }),
                       )
@@ -149,10 +149,10 @@
                     entryConfiguration:
                       ((e = { withUnhideReply: r === a }),
                       (t = e.withUnhideReply),
-                      Object(A.a)(
+                      Object(j.a)(
                         {},
                         L.b,
-                        g()({}, j.b.Tweet, {
+                        g()({}, A.b.Tweet, {
                           handlers: g()(
                             {},
                             D.a.Tweet,
@@ -202,7 +202,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'QuickPromoteScreen', function () {
-          return po
+          return vo
         })
       var a = n('VrFO'),
         r = n.n(a),
@@ -244,10 +244,10 @@
         I = function (e) {
           return e.quickPromote.budget.dailyBudget
         },
-        T = function (e) {
+        P = function (e) {
           return e.quickPromote.budget.durationDays
         },
-        P = function (e) {
+        T = function (e) {
           return e.quickPromote.budget.errorMessage
         },
         S = function (e) {
@@ -276,12 +276,12 @@
           .propsFromState(function () {
             return {
               dailyBudget: I,
-              durationDays: T,
+              durationDays: P,
               availableBudgets: S,
               lang: _.o,
               currency: k,
               audience: x,
-              errorMessage: P,
+              errorMessage: T,
             }
           })
           .propsFromActions(function () {
@@ -297,8 +297,8 @@
           })
           .withAnalytics({ page: 'quick_promote' }),
         L = (n('1t7P'), n('jQ/y'), n('MWbm')),
-        j = n('t62R'),
-        A = n('rHpw'),
+        A = n('t62R'),
+        j = n('rHpw'),
         D = function (e) {
           var t = e.children,
             n = e.description,
@@ -310,13 +310,13 @@
           return h.a.createElement(
             L.a,
             { style: [B.descriptionItem, i ? B.bottomBorder : void 0] },
-            !!o && h.a.createElement(j.b, { weight: 'bold' }, o),
+            !!o && h.a.createElement(A.b, { weight: 'bold' }, o),
             !!n &&
               h.a.createElement(
                 L.a,
                 { style: B.descriptionContainer },
                 h.a.createElement(
-                  j.b,
+                  A.b,
                   { color: 'gray700', dir: a, size: 'subtext2', style: B.descriptionContainer, testID: r },
                   n,
                 ),
@@ -324,7 +324,7 @@
             t,
           )
         },
-        B = A.a.create(function (e) {
+        B = j.a.create(function (e) {
           return {
             descriptionItem: {
               backgroundColor: e.colors.cellBackground,
@@ -335,13 +335,14 @@
             bottomBorder: { borderBottomWidth: 1, borderBottomStyle: 'solid', borderBottomColor: e.colors.borderColor },
           }
         }),
-        F = n('E6XO'),
-        M = n('WM1P'),
-        R = function (e) {
+        M = n('E6XO'),
+        F = n('WM1P'),
+        R = n('FGLp'),
+        q = function (e) {
           return (
             (function (e) {
-              Object(M.c)(function () {
-                var t = F.e(),
+              Object(R.a)(function () {
+                var t = M.e(),
                   n = function () {
                     t.resume()
                   },
@@ -352,7 +353,7 @@
                   window.addEventListener('focus', n),
                   window.addEventListener('blur', a),
                   function () {
-                    F.c(''.concat(M.a, ':dwell:').concat(e), t.end()),
+                    M.c(''.concat(F.a, ':dwell:').concat(e), t.end()),
                       window.removeEventListener('focus', n),
                       window.removeEventListener('blur', a)
                   }
@@ -362,17 +363,17 @@
             null
           )
         },
-        q = n('Gpeq'),
-        N = n('tevE'),
-        H = function (e) {
+        N = n('Gpeq'),
+        H = n('tevE'),
+        z = function (e) {
           var t = e.primaryLabel,
             n = e.subtitle,
             a = e.title
           return h.a.createElement(
             L.a,
-            { style: [z.bottomBorder, z.titleContainer] },
+            { style: [U.bottomBorder, U.titleContainer] },
             h.a.createElement(
-              j.b,
+              A.b,
               {
                 accessibilityLevel: 1,
                 accessibilityRole: 'heading',
@@ -385,17 +386,17 @@
             !!t &&
               h.a.createElement(
                 L.a,
-                { style: z.primaryLabelContainer },
-                h.a.createElement(j.b, { align: 'center', color: 'primary', size: 'title4' }, t),
+                { style: U.primaryLabelContainer },
+                h.a.createElement(A.b, { align: 'center', color: 'primary', size: 'title4' }, t),
               ),
             h.a.createElement(
               L.a,
-              { style: z.subtitleContainer },
-              h.a.createElement(N.a, { align: 'center', color: 'gray700' }, n),
+              { style: U.subtitleContainer },
+              h.a.createElement(H.a, { align: 'center', color: 'gray700' }, n),
             ),
           )
         },
-        z = A.a.create(function (e) {
+        U = j.a.create(function (e) {
           return {
             titleContainer: { paddingVertical: e.spaces.space32 },
             primaryLabelContainer: { marginTop: e.spaces.space12 },
@@ -403,133 +404,133 @@
             bottomBorder: { borderBottomWidth: 1, borderBottomStyle: 'solid', borderBottomColor: e.colors.borderColor },
           }
         }),
-        U = n('3XMw'),
-        V = n.n(U),
-        G = 'introButton',
+        V = n('3XMw'),
+        G = n.n(V),
+        Q = 'introButton',
         W = 'nextButton',
-        Q = 'objectiveScreen',
-        K = 'targetingScreen',
-        X = function (e) {
+        K = 'objectiveScreen',
+        X = 'targetingScreen',
+        J = function (e) {
           return 'targetingScreenGender'.concat(e)
         },
-        J = function (e) {
+        Y = function (e) {
           return 'objectiveScreenObjective'.concat(e)
         },
-        Y = 'targetingLocationScreen',
-        Z = 'budgetSelectScreen',
-        $ = 'reviewScreen',
-        ee = 'reviewButton',
-        te = 'reviewObjectiveDescription',
-        ne = 'reviewTargetingDescription',
-        ae = 'reviewBudgetAndDurationDescription',
-        re = 'reviewPaymentPivot',
-        oe = 'reviewPromotionTotalDescription',
-        ce = 'targetingLocationPivot',
-        ie = 'backButton',
-        le = 'targetingLocationSearch',
-        se = 'targetingLocationItem',
-        ue = 'paymentMethodSelect',
-        de = n('4zmP'),
-        me = n('9RkS'),
-        pe = n('v6aA'),
-        ge = n('Xrkv'),
-        fe = n('SrIh'),
-        he = V.a.c4d0434a,
-        be = V.a.dc4a9413,
-        ye = V.a.bad70c09,
-        ve = V.a.c133a39b,
-        _e = V.a.ee5da8f4,
-        Ee = V.a.g4bf9cb7,
-        we = V.a.gc3ce5d9,
-        Ce = V.a.c1778029,
-        Ie = V.a.cb51c854,
-        Te = V.a.bb7b39e1,
-        Pe = V.a.eb9466d0,
-        Se = V.a.c21037d0,
-        ke = V.a.b07cc9f1,
-        xe = V.a.ce309bed,
-        Oe = V.a.c6c16a51,
-        Le = V.a.cc49d03f,
-        je = V.a.dbe9353d,
-        Ae = V.a.c64974fb,
-        De = V.a.i638f89c
-      function Be(e) {
+        Z = 'targetingLocationScreen',
+        $ = 'budgetSelectScreen',
+        ee = 'reviewScreen',
+        te = 'reviewButton',
+        ne = 'reviewObjectiveDescription',
+        ae = 'reviewTargetingDescription',
+        re = 'reviewBudgetAndDurationDescription',
+        oe = 'reviewPaymentPivot',
+        ce = 'reviewPromotionTotalDescription',
+        ie = 'targetingLocationPivot',
+        le = 'backButton',
+        se = 'targetingLocationSearch',
+        ue = 'targetingLocationItem',
+        de = 'paymentMethodSelect',
+        me = n('4zmP'),
+        pe = n('9RkS'),
+        ge = n('v6aA'),
+        fe = n('Xrkv'),
+        he = n('SrIh'),
+        be = G.a.c4d0434a,
+        ye = G.a.dc4a9413,
+        ve = G.a.bad70c09,
+        _e = G.a.c133a39b,
+        Ee = G.a.ee5da8f4,
+        we = G.a.g4bf9cb7,
+        Ce = G.a.gc3ce5d9,
+        Ie = G.a.c1778029,
+        Pe = G.a.cb51c854,
+        Te = G.a.bb7b39e1,
+        Se = G.a.eb9466d0,
+        ke = G.a.c21037d0,
+        xe = G.a.b07cc9f1,
+        Oe = G.a.ce309bed,
+        Le = G.a.c6c16a51,
+        Ae = G.a.cc49d03f,
+        je = G.a.dbe9353d,
+        De = G.a.c64974fb,
+        Be = G.a.i638f89c
+      function Me(e) {
         switch (e) {
           case 'AnyGender':
-            return Ie
+            return Pe
           case 'Male':
             return Te
           case 'Female':
-            return Pe
+            return Se
           default:
-            return Object(fe.a)('Unknown gender: '.concat(e)), e
+            return Object(he.a)('Unknown gender: '.concat(e)), e
         }
       }
       function Fe(e) {
         switch (e) {
           case 'COUNTRIES':
-            return Se
-          case 'REGIONS':
             return ke
-          case 'METROS':
+          case 'REGIONS':
             return xe
-          case 'CITIES':
+          case 'METROS':
             return Oe
-          case 'POSTAL_CODES':
+          case 'CITIES':
             return Le
+          case 'POSTAL_CODES':
+            return Ae
           default:
-            return Object(fe.a)('Unknown targeting locationType: '.concat(e)), e
+            return Object(he.a)('Unknown targeting locationType: '.concat(e)), e
         }
       }
-      function Me(e) {
+      function Re(e) {
         var t = e.amount,
           n = e.currency,
           a = e.fractionDigits,
           r = e.lang
-        return t.toLocaleString(Object(q.a)(r), {
+        return t.toLocaleString(Object(N.a)(r), {
           currency: n,
           style: 'currency',
           maximumFractionDigits: void 0 !== a ? a : 2,
           minimumFractionDigits: void 0 !== a ? a : 2,
         })
       }
-      function Re(e) {
+      function qe(e) {
         var t = e.currency,
           n = e.durationDays,
           a = e.lang,
-          r = Me({ amount: e.totalBudgetNum, lang: a, currency: t, fractionDigits: 0 })
-        return be({ totalBudget: r, durationLabel: He({ durationDays: n }) })
+          r = Re({ amount: e.totalBudgetNum, lang: a, currency: t, fractionDigits: 0 })
+        return ye({ totalBudget: r, durationLabel: ze({ durationDays: n }) })
       }
-      function qe(e) {
+      function Ne(e) {
         var t = e.currency,
           n = e.dailyBudgetNum,
           a = e.durationDays,
-          r = Me({ amount: n, lang: e.lang, currency: t, fractionDigits: 0 })
-        return he({ dailyBudget: r, durationLabel: He({ durationDays: a }) })
-      }
-      function Ne(e) {
-        var t = e.numLocations,
-          n = V.a.ia24dc8c(t)
-        return ye({ numLocations: n })
+          r = Re({ amount: n, lang: e.lang, currency: t, fractionDigits: 0 })
+        return be({ dailyBudget: r, durationLabel: ze({ durationDays: a }) })
       }
       function He(e) {
-        var t = e.durationDays,
-          n = V.a.ia24dc8c(t)
-        return Ee({ durationDays: n })
+        var t = e.numLocations,
+          n = G.a.ia24dc8c(t)
+        return ve({ numLocations: n })
       }
-      var ze = n('yE5w'),
-        Ue = V.a.a3a09d48,
-        Ve = V.a.e7eb3683,
-        Ge = V.a.d9f6e3cd,
-        We = V.a.d9d6e10e,
-        Qe = V.a.b3954ec9,
-        Ke = V.a.e1b48db4,
-        Xe = Array(30)
+      function ze(e) {
+        var t = e.durationDays,
+          n = G.a.ia24dc8c(t)
+        return we({ durationDays: n })
+      }
+      var Ue = n('yE5w'),
+        Ve = G.a.a3a09d48,
+        Ge = G.a.e7eb3683,
+        Qe = G.a.d9f6e3cd,
+        We = G.a.d9d6e10e,
+        Ke = G.a.b3954ec9,
+        Xe = G.a.e1b48db4,
+        Je = Array(30)
           .fill(null)
           .map(function (e, t) {
             return t + 1
           }),
-        Je = (function (e) {
+        Ye = (function (e) {
           u()(n, e)
           var t = m()(n)
           function n() {
@@ -552,9 +553,9 @@
                   a = n.analytics,
                   r = n.durationDays,
                   o = n.setBudgetDuration,
-                  c = Xe[t]
+                  c = Je[t]
                 r !== c &&
-                  (Object(ze.p)(a)(ze.n.setBudgetDuration(''.concat(c))), o(c), e._fetchForecastedAudienceIfNeeded())
+                  (Object(Ue.p)(a)(Ue.n.setBudgetDuration(''.concat(c))), o(c), e._fetchForecastedAudienceIfNeeded())
               }),
               g()(l()(e), '_handleBudgetSlider', function (t) {
                 var n = e.props,
@@ -564,7 +565,7 @@
                   c = n.setDailyBudget,
                   i = r[t]
                 o !== i &&
-                  (Object(ze.p)(a)(ze.n.setDailyBudget(''.concat(i))), c(i), e._fetchForecastedAudienceIfNeeded())
+                  (Object(Ue.p)(a)(Ue.n.setDailyBudget(''.concat(i))), c(i), e._fetchForecastedAudienceIfNeeded())
               }),
               e
             )
@@ -575,7 +576,7 @@
                 key: 'componentDidMount',
                 value: function () {
                   var e = this.props.analytics
-                  Object(ze.p)(e)(ze.n.budgetSelectPageLoad()), this._fetchForecastedAudienceIfNeeded()
+                  Object(Ue.p)(e)(Ue.n.budgetSelectPageLoad()), this._fetchForecastedAudienceIfNeeded()
                 },
               },
               {
@@ -600,13 +601,13 @@
                     u = o.durationDays,
                     d = o.errorMessage,
                     m = o.lang,
-                    p = s.toLocaleString(Object(q.a)(m), {
+                    p = s.toLocaleString(Object(N.a)(m), {
                       currency: l,
                       style: 'currency',
                       maximumFractionDigits: 0,
                       minimumFractionDigits: 0,
                     }),
-                    g = i[0].toLocaleString(Object(q.a)(m), {
+                    g = i[0].toLocaleString(Object(N.a)(m), {
                       currency: l,
                       style: 'currency',
                       maximumFractionDigits: 0,
@@ -614,7 +615,7 @@
                     }),
                     f = i
                       .slice(-1)[0]
-                      .toLocaleString(Object(q.a)(m), {
+                      .toLocaleString(Object(N.a)(m), {
                         currency: l,
                         style: 'currency',
                         maximumFractionDigits: 0,
@@ -623,40 +624,40 @@
                     b = c
                       ? ((t = (e = c).high),
                         (n = e.low),
-                        (a = V.a.cf8abf58(n)),
-                        (r = V.a.cf8abf58(t)),
-                        we({ audienceLow: a, audienceHigh: r }))
+                        (a = G.a.cf8abf58(n)),
+                        (r = G.a.cf8abf58(t)),
+                        Ce({ audienceLow: a, audienceHigh: r }))
                       : ' ',
-                    y = He({ durationDays: u }),
-                    _ = He({ durationDays: Xe[0] }),
-                    E = He({ durationDays: Xe.slice(-1)[0] }),
+                    y = ze({ durationDays: u }),
+                    _ = ze({ durationDays: Je[0] }),
+                    E = ze({ durationDays: Je.slice(-1)[0] }),
                     w = this._getSliderProps(i, s),
-                    C = this._getSliderProps(Xe, u),
+                    C = this._getSliderProps(Je, u),
                     I = this.context.featureSwitches.isTrue('responsive_web_qp_welcome_coupon_enabled')
-                      ? qe({ dailyBudgetNum: s, durationDays: u, lang: m, currency: l })
-                      : Re({ totalBudgetNum: s * u, durationDays: u, lang: m, currency: l })
+                      ? Ne({ dailyBudgetNum: s, durationDays: u, lang: m, currency: l })
+                      : qe({ totalBudgetNum: s * u, durationDays: u, lang: m, currency: l })
                   return h.a.createElement(
                     L.a,
-                    { style: Ye.qpContainer, testID: Z },
-                    h.a.createElement(R, { screenType: ze.c.BudgetSelect }),
+                    { style: Ze.qpContainer, testID: $ },
+                    h.a.createElement(q, { screenType: Ue.c.BudgetSelect }),
                     d &&
                       h.a.createElement(
                         L.a,
-                        { style: Ye.gutter },
-                        h.a.createElement(de.a, { text: d, type: 'danger' }),
+                        { style: Ze.gutter },
+                        h.a.createElement(me.a, { text: d, type: 'danger' }),
                       ),
-                    h.a.createElement(H, { primaryLabel: I, subtitle: b, title: Ue }),
+                    h.a.createElement(z, { primaryLabel: I, subtitle: b, title: Ve }),
                     h.a.createElement(
                       D,
-                      { label: Ve },
+                      { label: Ge },
                       h.a.createElement(
                         L.a,
-                        { style: Ye.childSpacing },
+                        { style: Ze.childSpacing },
                         h.a.createElement(
-                          me.a,
-                          v()({ accessibilityLabel: Ge, accessibilityLabelValueText: '"'.concat(p, '"') }, w, {
-                            maxIcon: h.a.createElement(j.b, { style: Ye.iconText }, f),
-                            minIcon: h.a.createElement(j.b, { style: Ye.iconText }, g),
+                          pe.a,
+                          v()({ accessibilityLabel: Qe, accessibilityLabelValueText: '"'.concat(p, '"') }, w, {
+                            maxIcon: h.a.createElement(A.b, { style: Ze.iconText }, f),
+                            minIcon: h.a.createElement(A.b, { style: Ze.iconText }, g),
                             onChange: this._handleBudgetSlider,
                             thumbLabel: p,
                           }),
@@ -668,12 +669,12 @@
                       { label: We },
                       h.a.createElement(
                         L.a,
-                        { style: Ye.childSpacing },
+                        { style: Ze.childSpacing },
                         h.a.createElement(
-                          me.a,
-                          v()({ accessibilityLabel: Qe, accessibilityLabelValueText: '"'.concat(y, '"') }, C, {
-                            maxIcon: h.a.createElement(j.b, { style: Ye.iconText }, E),
-                            minIcon: h.a.createElement(j.b, { style: Ye.iconText }, _),
+                          pe.a,
+                          v()({ accessibilityLabel: Ke, accessibilityLabelValueText: '"'.concat(y, '"') }, C, {
+                            maxIcon: h.a.createElement(A.b, { style: Ze.iconText }, E),
+                            minIcon: h.a.createElement(A.b, { style: Ze.iconText }, _),
                             onChange: this._handleDurationSlider,
                             thumbLabel: y,
                           }),
@@ -682,8 +683,8 @@
                     ),
                     h.a.createElement(
                       L.a,
-                      { style: Ye.disclaimer },
-                      h.a.createElement(N.a, { align: 'center', color: 'gray700', size: 'subtext2' }, Ke),
+                      { style: Ze.disclaimer },
+                      h.a.createElement(H.a, { align: 'center', color: 'gray700', size: 'subtext2' }, Xe),
                     ),
                   )
                 },
@@ -692,8 +693,8 @@
             n
           )
         })(h.a.PureComponent)
-      g()(Je, 'contextType', pe.a)
-      var Ye = A.a.create(function (e) {
+      g()(Ye, 'contextType', ge.a)
+      var Ze = j.a.create(function (e) {
           return {
             qpContainer: { flex: 1 },
             disclaimer: {
@@ -708,41 +709,41 @@
             iconText: { textAlignVertical: 'text-bottom' },
           }
         }),
-        Ze = O(Je),
-        $e = n('kGix'),
-        et = n('XOJV'),
-        tt = function (e, t) {
+        $e = O(Ye),
+        et = n('kGix'),
+        tt = n('XOJV'),
+        nt = function (e, t) {
           return t.match.params.statusId
         },
-        nt = function (e, t) {
-          return et.a.selectHydrated(e, tt(0, t))
-        },
         at = function (e, t) {
-          return Object($e.d)(
-            et.a.selectFetchStatus(e, tt(0, t)),
+          return tt.a.selectHydrated(e, nt(0, t))
+        },
+        rt = function (e, t) {
+          return Object(et.d)(
+            tt.a.selectFetchStatus(e, nt(0, t)),
             e.quickPromote.budget.availableBudgetsFetchStatus,
             e.quickPromote.targeting.initialTargetedLocationsFetchStatus,
             e.quickPromote.account.accountDataFetchStatus,
           )
         },
-        rt = function (e, t) {
+        ot = function (e, t) {
           return e.quickPromote.promoteStatus
         },
-        ot = function (e, t) {
+        ct = function (e, t) {
           return e.quickPromote.promoteErrorCode
         },
-        ct = function (e, t) {
+        it = function (e, t) {
           return e.quickPromote.account.campaigns
         },
-        it = Object(E.a)()
+        lt = Object(E.a)()
           .propsFromState(function () {
             return {
-              statusId: tt,
-              fetchStatus: at,
-              tweet: nt,
-              campaigns: ct,
-              promoteFetchStatus: rt,
-              promoteErrorCode: ot,
+              statusId: nt,
+              fetchStatus: rt,
+              tweet: at,
+              campaigns: it,
+              promoteFetchStatus: ot,
+              promoteErrorCode: ct,
             }
           })
           .propsFromActions(function (e) {
@@ -750,7 +751,7 @@
               createLocalApiErrorHandler: Object(w.createLocalApiErrorHandlerWithContextFactory)(
                 'QUICK_PROMOTE_SCREEN',
               ),
-              fetchTweetIfNeeded: et.a.fetchOneIfNeeded,
+              fetchTweetIfNeeded: tt.a.fetchOneIfNeeded,
               fetchCurrentTargetingLocationIfNeeded: C.g,
               fetchAvailableBudgetsIfNeeded: C.e,
               fetchAdsAccountDataIfNeeded: C.d,
@@ -774,13 +775,13 @@
               setPromoteFetchStatus: C.O,
             }
           })
-          .withAnalytics(ze.o),
-        lt = Object(E.a)().withAnalytics(ze.o),
-        st = n('feu+'),
-        ut = V.a.e1bca506,
-        dt = V.a.e4a4c608,
-        mt = V.a.a219e217,
-        pt = (function (e) {
+          .withAnalytics(Ue.o),
+        st = Object(E.a)().withAnalytics(Ue.o),
+        ut = n('feu+'),
+        dt = G.a.e1bca506,
+        mt = G.a.e4a4c608,
+        pt = G.a.a219e217,
+        gt = (function (e) {
           u()(n, e)
           var t = m()(n)
           function n() {
@@ -796,7 +797,7 @@
                   r = a.quickPromotePlatform,
                   o = a.screenName,
                   c = a.statusId
-                Object(ze.l)(n)(o, c, r)
+                Object(Ue.l)(n)(o, c, r)
               }),
               g()(l()(e), '_handleClose', function () {
                 e.props.history.goBackThroughModals()
@@ -810,7 +811,7 @@
                 key: 'componentDidMount',
                 value: function () {
                   var e = this.props.analytics
-                  Object(ze.p)(e)(ze.n.donePageLoad())
+                  Object(Ue.p)(e)(Ue.n.donePageLoad())
                 },
               },
               {
@@ -819,14 +820,14 @@
                   return h.a.createElement(
                     h.a.Fragment,
                     null,
-                    h.a.createElement(R, { screenType: ze.c.Done }),
-                    h.a.createElement(st.a, {
-                      actionLabel: mt,
-                      headline: ut,
+                    h.a.createElement(q, { screenType: Ue.c.Done }),
+                    h.a.createElement(ut.a, {
+                      actionLabel: pt,
+                      headline: dt,
                       isFullHeightOnMobile: !0,
                       onAction: this._handleGoToAnalytics,
                       onClose: this._handleClose,
-                      subtext: dt,
+                      subtext: mt,
                       withCloseButton: !1,
                     }),
                   )
@@ -836,64 +837,64 @@
             n
           )
         })(h.a.PureComponent)
-      g()(pt, 'contextType', pe.a)
-      var gt = lt(pt),
-        ft = n('v//M'),
-        ht = n('W5XZ'),
-        bt = n('jHSc'),
-        yt =
+      g()(gt, 'contextType', ge.a)
+      var ft = st(gt),
+        ht = n('v//M'),
+        bt = n('W5XZ'),
+        yt = n('jHSc'),
+        vt =
           (n('Cm4o'),
           n('KrtT'),
           function (e) {
             return !!e.quickPromote.account.selectedFundingInstrument
           }),
-        vt = function (e) {
+        _t = function (e) {
           return e.quickPromote.coupons
         },
-        _t = function (e) {
+        Et = function (e) {
           return e.quickPromote.budget.currency || 'USD'
         },
-        Et = Object(E.a)()
+        wt = Object(E.a)()
           .propsFromState(function () {
-            return { hasFundingInstrument: yt, coupons: vt, lang: _.o, currency: _t }
+            return { hasFundingInstrument: vt, coupons: _t, lang: _.o, currency: Et }
           })
-          .withAnalytics(ze.o),
-        wt = n.p + 'desktop_header_image.bfa9e365.png',
-        Ct = n('TIdA'),
-        It = n('A91F')
+          .withAnalytics(Ue.o),
+        Ct = n.p + 'desktop_header_image.bfa9e365.png',
+        It = n('TIdA'),
+        Pt = n('A91F')
       function Tt(e) {
         var t = e.style
         return h.a.createElement(
           L.a,
           { style: t },
-          h.a.createElement(Ct.a, { accessibilityLabel: '', aspectMode: It.a.exact(750 / 306), image: wt }),
+          h.a.createElement(It.a, { accessibilityLabel: '', aspectMode: Pt.a.exact(750 / 306), image: Ct }),
         )
       }
-      var Pt = n.p + 'mobile_header_image.431e8465.png'
-      function St(e) {
+      var St = n.p + 'mobile_header_image.431e8465.png'
+      function kt(e) {
         var t = e.style
         return h.a.createElement(
           L.a,
           { style: t },
-          h.a.createElement(Ct.a, { accessibilityLabel: '', aspectMode: It.a.COVER, image: Pt }),
+          h.a.createElement(It.a, { accessibilityLabel: '', aspectMode: Pt.a.COVER, image: St }),
         )
       }
-      var kt = n('cHvH')
-      function xt(e) {
+      var xt = n('cHvH')
+      function Ot(e) {
         var t = e.style
-        return h.a.createElement(kt.a, null, function (e) {
+        return h.a.createElement(xt.a, null, function (e) {
           var n = e.windowHeight
-          return e.windowWidth > A.a.theme.breakpoints.medium
+          return e.windowWidth > j.a.theme.breakpoints.medium
             ? h.a.createElement(Tt, { style: t })
-            : h.a.createElement(St, { style: [t, { height: 0.5 * n }] })
+            : h.a.createElement(kt, { style: [t, { height: 0.5 * n }] })
         })
       }
-      var Ot = V.a.dcfb0332,
-        Lt = V.a.db841200,
-        jt = V.a.hc67be9d,
-        At = V.a.e8702fea,
-        Dt = V.a.i2e3c1ce,
-        Bt = V.a.dcfb0332,
+      var Lt = G.a.dcfb0332,
+        At = G.a.db841200,
+        jt = G.a.hc67be9d,
+        Dt = G.a.e8702fea,
+        Bt = G.a.i2e3c1ce,
+        Mt = G.a.dcfb0332,
         Ft = (function (e) {
           u()(n, e)
           var t = m()(n)
@@ -911,7 +912,7 @@
                   o = a.screenName,
                   c = a.statusId,
                   i = e.context.featureSwitches.isTrue('responsive_web_qp_objective_picker_enabled')
-                n.push(Object(ze.j)(o, c, r, i ? ze.c.Objective : ze.c.Targeting))
+                n.push(Object(Ue.j)(o, c, r, i ? Ue.c.Objective : Ue.c.Targeting))
               }),
               g()(l()(e), '_handleClose', function () {
                 e.props.history.goBackThroughModals()
@@ -947,8 +948,8 @@
                     m = 'other' === d ? (null === (t = i.state) || void 0 === t ? void 0 : t.previousPath) : void 0,
                     p = (null == o || null === (n = o.eligible_coupon) || void 0 === n ? void 0 : n.total_amount) || 0,
                     g = this.context.featureSwitches.isTrue('responsive_web_qp_welcome_coupon_enabled') && p > 0
-                  Object(ze.p)(r)(
-                    ze.n.introPageLoad({ hasFundingInstrument: c, entryPoint: d, otherEntryPoint: m, withCoupon: g }),
+                  Object(Ue.p)(r)(
+                    Ue.n.introPageLoad({ hasFundingInstrument: c, entryPoint: d, otherEntryPoint: m, withCoupon: g }),
                   )
                 },
               },
@@ -961,9 +962,9 @@
                     a = n.coupons,
                     r = n.currency,
                     o = n.lang,
-                    c = n.match.params.quickPromotePlatform === ze.a.Rweb,
+                    c = n.match.params.quickPromotePlatform === Ue.a.Rweb,
                     i = (null == a || null === (e = a.eligible_coupon) || void 0 === e ? void 0 : e.total_amount) || 0,
-                    l = Me({
+                    l = Re({
                       amount: i,
                       currency:
                         (null == a || null === (t = a.eligible_coupon) || void 0 === t ? void 0 : t.currency_code) || r,
@@ -971,22 +972,22 @@
                       fractionDigits: 0,
                     }),
                     s = this.context.featureSwitches.isTrue('responsive_web_qp_welcome_coupon_enabled') && i > 0,
-                    u = s ? At({ couponAmount: l }) : Ot,
-                    d = s ? Dt({ couponAmount: l }) : Lt,
-                    m = s ? Bt : jt
+                    u = s ? Dt({ couponAmount: l }) : Lt,
+                    d = s ? Bt({ couponAmount: l }) : At,
+                    m = s ? Mt : jt
                   return h.a.createElement(
                     h.a.Fragment,
                     null,
-                    h.a.createElement(R, { screenType: ze.c.Intro }),
-                    h.a.createElement(st.a, {
+                    h.a.createElement(q, { screenType: Ue.c.Intro }),
+                    h.a.createElement(ut.a, {
                       actionLabel: m,
-                      graphic: xt,
+                      graphic: Ot,
                       graphicDisplayMode: 'illustrationFullWidth',
                       headline: u,
                       isFullHeightOnMobile: !0,
                       onAction: this._handleGoToNextPage,
                       onClose: this._handleClose,
-                      primaryButtonTestID: G,
+                      primaryButtonTestID: Q,
                       subtext: d,
                       withCloseButton: c,
                     }),
@@ -997,36 +998,36 @@
             n
           )
         })(h.a.PureComponent)
-      g()(Ft, 'contextType', pe.a)
-      var Mt = Et(Ft),
-        Rt = n('yiKp'),
-        qt = n.n(Rt),
-        Nt = n('RhWx'),
-        Ht = n.n(Nt),
-        zt = function (e, t) {
+      g()(Ft, 'contextType', ge.a)
+      var Rt = wt(Ft),
+        qt = n('yiKp'),
+        Nt = n.n(qt),
+        Ht = n('RhWx'),
+        zt = n.n(Ht),
+        Ut = function (e, t) {
           return e.quickPromote.objective
         },
-        Ut = function (e, t) {
-          return et.a.selectHydrated(
+        Vt = function (e, t) {
+          return tt.a.selectHydrated(
             e,
             (function (e, t) {
               return t.match.params.statusId
             })(0, t),
           )
         },
-        Vt = Object(E.a)()
+        Gt = Object(E.a)()
           .propsFromState(function () {
-            return { selectedObjective: zt, tweet: Ut }
+            return { selectedObjective: Ut, tweet: Vt }
           })
           .propsFromActions(function () {
             return { setObjective: C.K }
           })
-          .withAnalytics(ze.o),
-        Gt = n('h0NW'),
-        Wt = V.a.d7d55f3b,
-        Qt = V.a.b25fd3d6,
-        Kt = V.a.bf214f47,
-        Xt = function (e) {
+          .withAnalytics(Ue.o),
+        Qt = n('h0NW'),
+        Wt = G.a.d7d55f3b,
+        Kt = G.a.b25fd3d6,
+        Xt = G.a.bf214f47,
+        Jt = function (e) {
           var t = e.infoItems,
             n = e.onClose,
             a = e.onLoad
@@ -1034,50 +1035,50 @@
             h.a.useEffect(function () {
               return a()
             }, []),
-            h.a.createElement(st.a, {
-              actionLabel: Kt,
+            h.a.createElement(ut.a, {
+              actionLabel: Xt,
               children: h.a.createElement(
                 L.a,
-                { style: Jt.infoItemGroup },
-                h.a.createElement(Gt.a, { containerStyle: Jt.infoItem, items: t }),
+                { style: Yt.infoItemGroup },
+                h.a.createElement(Qt.a, { containerStyle: Yt.infoItem, items: t }),
               ),
-              contentStyle: Jt.heading,
+              contentStyle: Yt.heading,
               graphicDisplayMode: 'none',
               headline: Wt,
               onAction: n,
               onClose: n,
-              subtext: Qt,
+              subtext: Kt,
               withCloseButton: !1,
             })
           )
         },
-        Jt = A.a.create(function (e) {
+        Yt = j.a.create(function (e) {
           return {
             heading: { marginBottom: e.spaces.space40 },
             infoItemGroup: { marginBottom: e.spaces.space20 },
             infoItem: { paddingHorizontal: 0, paddingVertical: 0, marginBottom: e.spaces.space24 },
           }
         }),
-        Yt = n('W2FU'),
-        Zt = n('E0cF'),
-        $t = n('gSL+'),
-        en = n('RKmr'),
-        tn = n('Oib4'),
-        nn = n('Dcm7'),
-        an = n('iEUn'),
-        rn = n('pwey'),
-        on = n('Lsrn'),
-        cn = n('k/Ka'),
-        ln = function () {
+        Zt = n('W2FU'),
+        $t = n('E0cF'),
+        en = n('gSL+'),
+        tn = n('RKmr'),
+        nn = n('Oib4'),
+        an = n('Dcm7'),
+        rn = n('iEUn'),
+        on = n('pwey'),
+        cn = n('Lsrn'),
+        ln = n('k/Ka'),
+        sn = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(cn.a)(
+          return Object(ln.a)(
             'svg',
-            qt()(
-              qt()({}, e),
+            Nt()(
+              Nt()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [on.a.root, e.style],
+                style: [cn.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
@@ -1093,24 +1094,24 @@
             ),
           )
         }
-      ln.metadata = { width: 24, height: 24 }
-      var sn = ln,
-        un = V.a.fcc839b5,
-        dn = V.a.d80964aa,
-        mn = V.a.d4f57cce,
-        pn = V.a.g06d6bf8,
-        gn = V.a.c1a1817b,
-        fn = V.a.efc9b3fe,
-        hn = tn.a,
-        bn = V.a.h277a2e8,
-        yn = V.a.gd429fea,
-        vn = nn.a,
-        _n = V.a.icb22cdd,
-        En = V.a.i859a9d3,
-        wn = V.a.e974b2d4,
-        Cn = V.a.b9c9b214,
-        In = V.a.i0e569bf,
-        Tn = A.a.create(function (e) {
+      sn.metadata = { width: 24, height: 24 }
+      var un = sn,
+        dn = G.a.fcc839b5,
+        mn = G.a.d80964aa,
+        pn = G.a.d4f57cce,
+        gn = G.a.g06d6bf8,
+        fn = G.a.c1a1817b,
+        hn = G.a.efc9b3fe,
+        bn = nn.a,
+        yn = G.a.h277a2e8,
+        vn = G.a.gd429fea,
+        _n = an.a,
+        En = G.a.icb22cdd,
+        wn = G.a.i859a9d3,
+        Cn = G.a.e974b2d4,
+        In = G.a.b9c9b214,
+        Pn = G.a.i0e569bf,
+        Tn = j.a.create(function (e) {
           return {
             labelContainer: { flexGrow: 1, paddingVertical: e.spaces.space16 },
             qpContainer: { flex: 1 },
@@ -1123,36 +1124,36 @@
             goalSelectionCallout: { marginHorizontal: 'auto', marginTop: 'auto', marginBottom: e.spaces.space36 },
           }
         }),
-        Pn = {
-          label: dn,
-          value: Yt.c.Engagements,
-          decoration: h.a.createElement(an.a, { style: [Tn.icon, Tn.engagementIcon] }),
-          testID: J(Yt.c.Engagements),
-        },
         Sn = {
           label: mn,
-          value: Yt.c.Followers,
-          decoration: h.a.createElement(rn.a, { style: [Tn.icon, Tn.followersIcon] }),
-          testID: J(Yt.c.Followers),
+          value: Zt.c.Engagements,
+          decoration: h.a.createElement(rn.a, { style: [Tn.icon, Tn.engagementIcon] }),
+          testID: Y(Zt.c.Engagements),
         },
         kn = {
           label: pn,
-          value: Yt.c.WebsiteClicks,
-          decoration: h.a.createElement(sn, { style: [Tn.icon, Tn.websiteClicksIcon] }),
-          testID: J(Yt.c.WebsiteClicks),
+          value: Zt.c.Followers,
+          decoration: h.a.createElement(on.a, { style: [Tn.icon, Tn.followersIcon] }),
+          testID: Y(Zt.c.Followers),
         },
-        xn = [
-          { label: dn, description: wn, decoration: h.a.createElement(an.a, { style: [Tn.icon, Tn.engagementIcon] }) },
-          { label: mn, description: Cn, decoration: h.a.createElement(rn.a, { style: [Tn.icon, Tn.followersIcon] }) },
-          { label: pn, description: In, decoration: h.a.createElement(sn, { style: [Tn.icon, Tn.websiteClicksIcon] }) },
+        xn = {
+          label: gn,
+          value: Zt.c.WebsiteClicks,
+          decoration: h.a.createElement(un, { style: [Tn.icon, Tn.websiteClicksIcon] }),
+          testID: Y(Zt.c.WebsiteClicks),
+        },
+        On = [
+          { label: mn, description: Cn, decoration: h.a.createElement(rn.a, { style: [Tn.icon, Tn.engagementIcon] }) },
+          { label: pn, description: In, decoration: h.a.createElement(on.a, { style: [Tn.icon, Tn.followersIcon] }) },
+          { label: gn, description: Pn, decoration: h.a.createElement(un, { style: [Tn.icon, Tn.websiteClicksIcon] }) },
         ]
-      function On() {
-        return h.a.createElement(de.a, { Icon: hn, headline: gn, text: fn, type: 'warning' })
-      }
       function Ln() {
-        return h.a.createElement(de.a, { Icon: vn, headline: bn, text: yn, type: 'danger' })
+        return h.a.createElement(me.a, { Icon: bn, headline: fn, text: hn, type: 'warning' })
       }
-      var jn = Vt(function (e) {
+      function An() {
+        return h.a.createElement(me.a, { Icon: _n, headline: yn, text: vn, type: 'danger' })
+      }
+      var jn = Gt(function (e) {
           var t,
             n,
             a,
@@ -1166,7 +1167,7 @@
             d = e.selectedObjective,
             m = e.setObjective,
             p = e.tweet,
-            g = p ? Zt.a.getOriginalTweet(p) : p,
+            g = p ? $t.a.getOriginalTweet(p) : p,
             f =
               null !=
                 (null == g || null === (t = g.entities) || void 0 === t || null === (n = t.media) || void 0 === n
@@ -1188,7 +1189,7 @@
               (null != g && g.in_reply_to_user)
             )
           h.a.useEffect(function () {
-            Object(ze.p)(l)(ze.n.goalSelectionPageLoad())
+            Object(Ue.p)(l)(Ue.n.goalSelectionPageLoad())
           }, [])
           var v = h.a.useMemo(
               function () {
@@ -1197,18 +1198,18 @@
                     n = e.tweetContainsLinks,
                     a = e.tweetHasMedia,
                     r = e.tweetIsReply
-                  return [Pn]
+                  return [Sn]
                     .concat(
-                      Ht()(
-                        r ? [] : [qt()(qt()({}, Sn), {}, { description: a && t === Yt.c.Followers ? On() : void 0 })],
+                      zt()(
+                        r ? [] : [Nt()(Nt()({}, kn), {}, { description: a && t === Zt.c.Followers ? Ln() : void 0 })],
                       ),
-                      [qt()(qt()({}, kn), {}, { disabled: !n, description: !n && Ln() })],
+                      [Nt()(Nt()({}, xn), {}, { disabled: !n, description: !n && An() })],
                     )
                     .map(function (e) {
-                      return qt()(
-                        qt()({}, e),
+                      return Nt()(
+                        Nt()({}, e),
                         {},
-                        { label: h.a.createElement(j.b, { size: 'headline2', weight: 'bold' }, e.label) },
+                        { label: h.a.createElement(A.b, { size: 'headline2', weight: 'bold' }, e.label) },
                       )
                     })
                 })({ tweetHasMedia: f, tweetContainsLinks: b, selectedObjective: d, tweetIsReply: y })
@@ -1217,30 +1218,30 @@
             ),
             _ = h.a.useCallback(
               function (e, t) {
-                m(t), Object(ze.p)(l)(ze.n.setPromoteGoal(t))
+                m(t), Object(Ue.p)(l)(Ue.n.setPromoteGoal(t))
               },
               [l, m],
             )
           return h.a.createElement(
             L.a,
-            { style: Tn.qpContainer, testID: Q },
-            h.a.createElement(R, { screenType: ze.c.Objective }),
+            { style: Tn.qpContainer, testID: K },
+            h.a.createElement(q, { screenType: Ue.c.Objective }),
             h.a.createElement(
               L.a,
               { style: Tn.titleContainer },
-              h.a.createElement(j.b, { align: 'center', size: 'headline1', weight: 'bold' }, un),
+              h.a.createElement(A.b, { align: 'center', size: 'headline1', weight: 'bold' }, dn),
             ),
             h.a.createElement(
               L.a,
               null,
-              h.a.createElement($t.a, { name: 'objective-picker', onChange: _, options: v, value: d }),
+              h.a.createElement(en.a, { name: 'objective-picker', onChange: _, options: v, value: d }),
             ),
             h.a.createElement(
               L.a,
               { style: Tn.goalSelectionCallout },
-              h.a.createElement(en.a, {
-                description: _n,
-                learnMoreLabel: En,
+              h.a.createElement(tn.a, {
+                description: En,
+                learnMoreLabel: wn,
                 learnMoreLink: {
                   external: !1,
                   method: 'replace',
@@ -1250,49 +1251,53 @@
               }),
             ),
             null !== (i = u.state) && void 0 !== i && i.showEducationInterstitial
-              ? h.a.createElement(Xt, {
-                  infoItems: xn,
+              ? h.a.createElement(Jt, {
+                  infoItems: On,
                   onClose: function () {
                     return s.replace(u.pathname, { showEducationInterstitial: !1 })
                   },
                   onLoad: function () {
-                    return Object(ze.p)(l)(ze.n.educationInterstitialLoad())
+                    return Object(Ue.p)(l)(Ue.n.educationInterstitialLoad())
                   },
                 })
               : null,
           )
         }),
-        An = n('ddV6'),
-        Dn = n.n(An),
-        Bn = function (e) {
+        Dn = n('ddV6'),
+        Bn = n.n(Dn),
+        Mn = function (e) {
           return e.quickPromote.paymentMethods
         },
         Fn = Object(E.a)()
           .propsFromState(function () {
-            return { paymentMethods: Bn, selectedPaymentMethod: C.p }
+            return { paymentMethods: Mn, selectedPaymentMethod: C.p }
           })
           .propsFromActions(function () {
             return { setSelectedPaymentMethod: C.Q, deletePaymentMethod: C.b }
           })
-          .withAnalytics(ze.o),
-        Mn = n('YeIG'),
-        Rn = n('JYMr'),
-        qn = n('cm6r'),
-        Nn = n('mjJ+'),
-        Hn = n('3rX5'),
-        zn = n('Wms4'),
-        Un = n('IG7M'),
-        Vn = n('I4+6'),
-        Gn = n('iY63'),
-        Wn = n('HsFH'),
-        Qn = V.a.de43b66f,
-        Kn = V.a.hb4773af,
-        Xn = V.a.aa2a3dd3,
-        Jn = V.a.b1c5b63c,
-        Yn = function (e, t) {
+          .withAnalytics(Ue.o),
+        Rn = n('YeIG'),
+        qn = n('JYMr'),
+        Nn = n('cm6r'),
+        Hn = n('mjJ+'),
+        zn = n('3rX5'),
+        Un = n('Wms4'),
+        Vn = n('IG7M'),
+        Gn = n('sgih'),
+        Qn = n('/yvb'),
+        Wn = n('I4+6'),
+        Kn = n('iY63'),
+        Xn = n('HsFH'),
+        Jn = G.a.de43b66f,
+        Yn = G.a.hb4773af,
+        Zn = G.a.aa2a3dd3,
+        $n = G.a.b1c5b63c,
+        ea = G.a.affb5877,
+        ta = G.a.cfd2f35d,
+        na = function (e, t) {
           return e.map(function (e) {
             return {
-              label: h.a.createElement(Zn, {
+              label: h.a.createElement(aa, {
                 deletePaymentMethodHandler: t,
                 id: e.id,
                 imgSrcUrl: e.imgSrcUrl,
@@ -1300,18 +1305,18 @@
                 status: e.cardStatus,
               }),
               value: e.id,
-              containerStyle: [ea.paymentMethodRadioContainer, ea.bottomBorder],
+              containerStyle: [ca.paymentMethodRadioContainer, ca.bottomBorder],
             }
           })
         },
-        Zn = function (e) {
+        aa = function (e) {
           var t = e.deletePaymentMethodHandler
             ? function (t) {
-                return h.a.createElement(Nn.a, {
+                return h.a.createElement(Hn.a, {
                   items: [
                     {
-                      Icon: Wn.a,
-                      text: Xn,
+                      Icon: Xn.a,
+                      text: Zn,
                       onClick: function () {
                         t(), e.deletePaymentMethodHandler && e.deletePaymentMethodHandler(e.id)
                       },
@@ -1324,47 +1329,65 @@
             : void 0
           return h.a.createElement(
             L.a,
-            { style: ea.paymentMethod },
+            { style: ca.paymentMethod },
             h.a.createElement(
               L.a,
-              { style: [ea.descriptionItemContainer, e.paymentDescriptionStyle] },
+              { style: [ca.descriptionItemContainer, e.paymentDescriptionStyle] },
               e.imgSrcUrl
                 ? h.a.createElement(
                     L.a,
-                    { style: ea.cardImageContainer },
-                    h.a.createElement(Hn.a, { source: e.imgSrcUrl, style: ea.cardImage }),
+                    { style: ca.cardImageContainer },
+                    h.a.createElement(zn.a, { source: e.imgSrcUrl, style: ca.cardImage }),
                   )
-                : h.a.createElement(j.b, { size: 'body' }, 'Card'),
+                : h.a.createElement(A.b, { size: 'body' }, 'Card'),
               h.a.createElement(
                 L.a,
-                { style: ea.descriptionContainer },
+                { style: ca.descriptionContainer },
                 h.a.createElement(
-                  j.b,
+                  A.b,
                   { color: 'gray700', size: 'subtext1' },
-                  ''.concat(Jn, ' ').concat(e.lastFourDigits),
+                  ''.concat($n, ' ').concat(e.lastFourDigits),
                 ),
               ),
-              'Expired' === e.status &&
+              ('Expired' === e.status || 'Invalid' === e.status) &&
                 h.a.createElement(
                   L.a,
-                  { style: ea.statusBadgeContainer },
+                  { style: ca.statusBadgeContainer },
                   h.a.createElement(
-                    zn.a,
-                    { style: ea.expiredBadge },
-                    h.a.createElement(j.b, { size: 'subtext3', style: ea.expiredBadge, weight: 'bold' }, e.status),
+                    Un.a,
+                    { style: ca.expiredBadge },
+                    h.a.createElement(A.b, { size: 'subtext3', style: ca.expiredBadge, weight: 'bold' }, e.status),
                   ),
                 ),
             ),
             e.deletePaymentMethodHandler &&
-              h.a.createElement(Un.a, { renderActionMenu: t, style: ea.actionMenuContainer }),
+              h.a.createElement(Vn.a, { renderActionMenu: t, style: ca.actionMenuContainer }),
           )
         },
-        $n = Vn.a.generate({
-          backgroundColor: A.a.theme.colors.transparent,
-          color: A.a.theme.colors.primary,
+        ra = function (e) {
+          var t = e.cancelDeletePaymentMethodHandler,
+            n = e.confirmDeletePaymentMethodHandler
+          return h.a.createElement(
+            Gn.a,
+            { onMaskClick: t, type: 'bottom', withMask: !0 },
+            h.a.createElement(
+              L.a,
+              { style: ca.deleteCardConfirmContainer },
+              h.a.createElement(
+                Qn.a,
+                { icon: h.a.createElement(Xn.a, null), onPress: n, style: ca.modalButton, type: 'destructiveOutlined' },
+                ea,
+              ),
+              h.a.createElement(Qn.a, { onPress: t, style: ca.modalButton, type: 'primaryOutlined' }, ta),
+            ),
+          )
+        },
+        oa = Wn.a.generate({
+          backgroundColor: j.a.theme.colors.transparent,
+          color: j.a.theme.colors.primary,
           insetFocusRing: !0,
         }),
-        ea = A.a.create(function (e) {
+        ca = j.a.create(function (e) {
           return {
             qpContainer: { flex: 1, overflow: 'auto' },
             paymentMethod: { flexDirection: 'row', justifyContent: 'space-between' },
@@ -1399,9 +1422,10 @@
             expiredBadge: { backgroundColor: e.colors.red50, color: e.colors.red900 },
             cardImageContainer: { height: '20px', flexDirection: 'row', width: '32px', margin: e.spaces.space2 },
             cardImage: { resizeMode: 'contain', flex: 1 },
+            modalButton: { margin: e.spaces.space8 },
           }
         }),
-        ta = Fn(function (e) {
+        ia = Fn(function (e) {
           var t = e.deletePaymentMethod,
             n = e.history,
             a = e.match.params,
@@ -1412,21 +1436,25 @@
             l = e.selectedPaymentMethod,
             s = e.setSelectedPaymentMethod,
             u = h.a.useState(!1),
-            d = Dn()(u, 2),
+            d = Bn()(u, 2),
             m = d[0],
-            p = d[1]
+            p = d[1],
+            g = h.a.useState(null),
+            f = Bn()(g, 2),
+            b = f[0],
+            y = f[1]
           return h.a.createElement(
             h.a.Fragment,
             null,
             h.a.createElement(
               L.a,
-              { style: ea.qpContainer, testID: ue },
-              m ? h.a.createElement(Rn.a, { indeterminate: !0 }) : null,
+              { style: ca.qpContainer, testID: de },
+              m ? h.a.createElement(qn.a, { indeterminate: !0 }) : null,
               h.a.createElement(
                 L.a,
-                { style: ea.titleContainer },
+                { style: ca.titleContainer },
                 h.a.createElement(
-                  j.b,
+                  A.b,
                   {
                     accessibilityLevel: 1,
                     accessibilityRole: 'heading',
@@ -1434,91 +1462,112 @@
                     size: 'headline1',
                     weight: 'heavy',
                   },
-                  Qn,
+                  Jn,
                 ),
               ),
-              h.a.createElement($t.a, {
+              h.a.createElement(en.a, {
                 disabled: m,
-                name: Qn,
+                name: Jn,
                 onChange: function (e, t) {
-                  if (!Object(Mn.a)(i)) {
+                  if (!Object(Rn.a)(i)) {
                     var n =
                       i.find(function (e) {
                         return e.id === t
                       }) || null
-                    s(n)
+                    ;(n && 'Invalid' === n.cardStatus) || s(n)
                   }
                 },
-                options: Yn(i, function (e) {
-                  e &&
-                    (p(!0),
-                    t(e).finally(function () {
-                      return p(!1)
-                    }))
+                options: na(i, function (e) {
+                  return y(e)
                 }),
                 value: l ? l.id : '',
               }),
               h.a.createElement(
                 L.a,
-                { style: ea.addPaymentMethodContainer },
+                { style: ca.addPaymentMethodContainer },
                 h.a.createElement(
-                  qn.a,
+                  Nn.a,
                   {
                     disabled: m,
                     interactive: m,
-                    interactiveStyles: $n,
+                    interactiveStyles: oa,
                     onPress: function () {
-                      return n.push(Object(ze.j)(o, c, r, ze.c.Payment))
+                      return n.push(''.concat(Object(Ue.j)(o, c, r, Ue.c.Payment), '?isAddingPayment=true'))
                     },
-                    style: ea.addPaymentMethodInteractiveContainer,
+                    style: ca.addPaymentMethodInteractiveContainer,
                   },
-                  h.a.createElement(Gn.a, { style: ea.plusIcon }),
-                  h.a.createElement(j.b, { align: 'left', color: 'primary' }, Kn),
+                  h.a.createElement(Kn.a, { style: ca.plusIcon }),
+                  h.a.createElement(A.b, { align: 'left', color: 'primary' }, Yn),
                 ),
               ),
+              b &&
+                h.a.createElement(ra, {
+                  cancelDeletePaymentMethodHandler: function () {
+                    return y(null)
+                  },
+                  confirmDeletePaymentMethodHandler: function () {
+                    b &&
+                      (y(null),
+                      p(!0),
+                      t(b).finally(function () {
+                        p(!1)
+                      }))
+                  },
+                }),
             ),
           )
         }),
-        na = (n('ho0z'), n('zh9S')),
-        aa = n('y0iL'),
-        ra = function (e, t) {
+        la = (n('LJOr'), n('ho0z'), n('zh9S')),
+        sa = n('y0iL'),
+        ua = function (e, t) {
           return t.match.params.statusId
         },
-        oa = function (e, t) {
-          return et.a.selectHydrated(e, ra(0, t))
+        da = function (e, t) {
+          return tt.a.selectHydrated(e, ua(0, t))
         },
-        ca = function (e, t) {
-          return et.a.selectFetchStatus(e, ra(0, t))
+        ma = function (e, t) {
+          return tt.a.selectFetchStatus(e, ua(0, t))
         },
-        ia = function (e, t) {
+        pa = function (e, t) {
           return e.quickPromote.account.adsAccount
         },
-        la = function (e, t) {
+        ga = function (e, t) {
           return e.quickPromote.account.selectedFundingInstrument
         },
-        sa = Object(E.a)()
+        fa = function (e) {
+          return e.quickPromote.account.vatInfo
+        },
+        ha = Object(E.a)()
           .propsFromState(function () {
-            return { fetchStatus: ca, tweet: oa, adsAccount: ia, fundingInstrument: la }
+            return {
+              fetchStatus: ma,
+              tweet: da,
+              adsAccount: pa,
+              fundingInstrument: ga,
+              selectedPaymentMethod: C.p,
+              vatInfo: fa,
+            }
           })
           .propsFromActions(function (e) {
             return {
               createLocalApiErrorHandler: Object(w.createLocalApiErrorHandlerWithContextFactory)(
                 'QUICK_PROMOTE_PAYMENT_SCREEN',
               ),
-              fetchTweetIfNeeded: et.a.fetchOneIfNeeded,
-              scribeAction: na.c,
+              fetchTweetIfNeeded: tt.a.fetchOneIfNeeded,
+              scribeAction: la.c,
               savePlatformRedirectBackState: function () {
-                return Object(aa.l)(e.match.params.quickPromotePlatform)
+                return Object(sa.l)(e.match.params.quickPromotePlatform)
               },
-              fetchAdsAccountDataIfNeeded: aa.d,
+              fetchAdsAccountDataIfNeeded: sa.d,
+              fetchPaymentMethodsIfNeeded: sa.i,
             }
           })
-          .withAnalytics(ze.o),
-        ua = n('tI3i'),
-        da = n.n(ua),
-        ma = n('Rp9C'),
-        pa = n('bPFD'),
-        ga = (function (e) {
+          .withAnalytics(Ue.o),
+        ba = n('tI3i'),
+        ya = n.n(ba),
+        va = n('Rp9C'),
+        _a = n('bPFD'),
+        Ea = (function (e) {
           u()(n, e)
           var t = m()(n)
           function n() {
@@ -1527,33 +1576,54 @@
             for (var a = arguments.length, o = new Array(a), c = 0; c < a; c++) o[c] = arguments[c]
             return (
               (e = t.call.apply(t, [this].concat(o))),
+              g()(
+                l()(e),
+                'isPaymentSelectEnabled',
+                e.context.featureSwitches.isTrue('responsive_web_qp_payment_select_enabled'),
+              ),
+              g()(l()(e), '_getIsAddingPayment', function () {
+                var t = e._getQueryParameter('isAddingPayment')
+                return !!t && 'true' === t
+              }),
+              g()(l()(e), '_getQueryParameter', function (t) {
+                var n = e.props.location.search
+                return new URLSearchParams(n).get(t)
+              }),
               g()(l()(e), '_setAppBarRef', function (t) {
                 e._appBarRef = t
               }),
               g()(l()(e), '_handleIFrameMessage', function (t) {
                 var n = e.props,
                   a = n.analytics,
-                  r = n.tweet
+                  r = n.tweet,
+                  o = e._getIsAddingPayment()
                 if (t && 'quick_promote' === t.name)
                   if ('scribe' === t.type) {
-                    var o = (r && Zt.a.getOriginalTweet(r)) || void 0,
-                      c = o ? [ma.a.getTweetItem(o)] : [],
-                      i = t.scribeData || {},
-                      l = 'string' == typeof i.component ? i.component : 'quick_promote',
-                      s = 'string' == typeof i.uiEvent ? i.uiEvent : ''
-                    a.scribe({ component: l, action: s, data: { items: c } })
+                    var c = (r && $t.a.getOriginalTweet(r)) || void 0,
+                      i = c ? [va.a.getTweetItem(c)] : [],
+                      l = t.scribeData || {},
+                      s = 'string' == typeof l.component ? l.component : 'quick_promote',
+                      u = 'string' == typeof l.uiEvent ? l.uiEvent : ''
+                    a.scribe({ component: s, action: u, data: { items: i } })
                   } else if ('navigation' === t.type) {
-                    var u = e.props,
-                      d = u.createLocalApiErrorHandler,
-                      m = u.fetchAdsAccountDataIfNeeded,
-                      p = u.history,
-                      g = u.match.params,
-                      f = g.quickPromotePlatform,
-                      h = g.screenName,
-                      b = g.statusId
-                    da()(!!e.context.loggedInUserId, 'loggedInUserId must be defined'),
-                      m(e.context.loggedInUserId, !0).catch(d()),
-                      p.push('/'.concat(h, '/status/').concat(b, '/').concat(f, '/').concat(ze.c.Review))
+                    var d = e.props,
+                      m = d.createLocalApiErrorHandler,
+                      p = d.fetchAdsAccountDataIfNeeded,
+                      g = d.fetchPaymentMethodsIfNeeded,
+                      f = d.history,
+                      h = d.match.params,
+                      b = h.quickPromotePlatform,
+                      y = h.screenName,
+                      v = h.statusId
+                    ya()(!!e.context.loggedInUserId, 'loggedInUserId must be defined'),
+                      e.isPaymentSelectEnabled ? g(!0).catch(m()) : p(e.context.loggedInUserId, !0).catch(m()),
+                      f.push(
+                        '/'
+                          .concat(y, '/status/')
+                          .concat(v, '/')
+                          .concat(b, '/')
+                          .concat(e.isPaymentSelectEnabled && o ? Ue.c.PaymentSelect : Ue.c.Review),
+                      )
                   } else 'close' === t.type && e._appBarRef && e._appBarRef.goBack()
               }),
               e
@@ -1574,8 +1644,9 @@
                     i = c.quickPromotePlatform,
                     l = c.statusId
                   o()
-                  var s = Object(ze.i)(i, t, l, a)
-                  Object(ze.p)(n)(ze.n.paymentPageLoad(s.url)), s.isSameHost || (window.location.href = s.url)
+                  var s = this._getIsAddingPayment(),
+                    u = Object(Ue.i)(i, t, l, a, s)
+                  Object(Ue.p)(n)(Ue.n.paymentPageLoad(u.url)), u.isSameHost || (window.location.href = u.url)
                 },
               },
               {
@@ -1584,21 +1655,23 @@
                   var e = this.props,
                     t = e.adsAccount,
                     n = e.fundingInstrument,
-                    a = e.match.params,
-                    r = a.quickPromotePlatform,
-                    o = a.statusId,
-                    c = Object(ze.i)(r, t, o, n)
-                  return c.isSameHost
+                    a = e.match,
+                    r = this._getIsAddingPayment(),
+                    o = a.params,
+                    c = o.quickPromotePlatform,
+                    i = o.statusId,
+                    l = Object(Ue.i)(c, t, i, n, r)
+                  return l.isSameHost
                     ? h.a.createElement(
                         h.a.Fragment,
                         null,
-                        h.a.createElement(R, { screenType: ze.c.Payment }),
-                        h.a.createElement(pa.a, {
+                        h.a.createElement(q, { screenType: Ue.c.Payment }),
+                        h.a.createElement(_a.a, {
                           dangerouslyDisableSandbox: !0,
                           onMessage: this._handleIFrameMessage,
-                          reportError: fe.a,
-                          src: c.url,
-                          style: fa.iframe,
+                          reportError: he.a,
+                          src: l.url,
+                          style: wa.iframe,
                         }),
                       )
                     : null
@@ -1608,82 +1681,82 @@
             n
           )
         })(h.a.PureComponent)
-      g()(ga, 'contextType', pe.a)
-      var fa = A.a.create(function (e) {
+      g()(Ea, 'contextType', ge.a)
+      var wa = j.a.create(function (e) {
           return { iframe: { flexGrow: 1, paddingTop: 0 } }
         }),
-        ha = sa(ga)
-      function ba(e) {
+        Ca = ha(Ea)
+      function Ia(e) {
         new Image().src = e
       }
-      function ya() {
-        return h.a.createElement(kt.a, null, function (e) {
+      function Pa() {
+        return h.a.createElement(xt.a, null, function (e) {
           e.windowHeight
-          return ba(e.windowWidth > A.a.theme.breakpoints.medium ? wt : Pt), null
+          return Ia(e.windowWidth > j.a.theme.breakpoints.medium ? Ct : St), null
         })
       }
-      var va = n('0zXz'),
-        _a = function (e) {
+      var Ta = n('0zXz'),
+        Sa = function (e) {
           return e.quickPromote.objective
         },
-        Ea = function (e, t) {
+        ka = function (e, t) {
           return e.quickPromote.targeting.targetedLocations
         },
-        wa = function (e, t) {
+        xa = function (e, t) {
           return e.quickPromote.targeting.ageBucket
         },
-        Ca = function (e, t) {
+        Oa = function (e, t) {
           return e.quickPromote.targeting.gender
         },
-        Ia = function (e, t) {
+        La = function (e, t) {
           return e.quickPromote.budget.dailyBudget
         },
-        Ta = function (e, t) {
+        Aa = function (e, t) {
           return e.quickPromote.budget.durationDays
         },
-        Pa = function (e) {
+        ja = function (e) {
           return e.quickPromote.budget.currency || 'USD'
         },
-        Sa = function (e) {
+        Da = function (e) {
           return e.quickPromote.account.selectedFundingInstrument
         },
-        ka = function (e) {
+        Ba = function (e) {
           return e.quickPromote.account.vatInfo
         },
-        xa = function (e) {
+        Ma = function (e) {
           return e.quickPromote.account.adsAccount
         },
-        Oa = function (e) {
+        Fa = function (e) {
           return e.quickPromote.promoteStatus
         },
-        La = function (e) {
+        Ra = function (e) {
           return e.quickPromote.promoteErrorCode
         },
-        ja = function (e) {
+        qa = function (e) {
           return e.quickPromote.coupons
         },
-        Aa = function (e) {
+        Na = function (e) {
           return e.quickPromote.enrollCouponErrorCode
         },
-        Da = Object(E.a)()
+        Ha = Object(E.a)()
           .propsFromState(function () {
             return {
-              objective: _a,
-              targetedLocations: Ea,
-              ageBucket: wa,
-              gender: Ca,
-              dailyBudget: Ia,
-              durationDays: Ta,
+              objective: Sa,
+              targetedLocations: ka,
+              ageBucket: xa,
+              gender: Oa,
+              dailyBudget: La,
+              durationDays: Aa,
               lang: _.o,
               country: C.q,
-              currency: Pa,
-              fundingInstrument: Sa,
-              vatInfo: ka,
-              adsAccount: xa,
-              promoteStatus: Oa,
-              promoteErrorCode: La,
-              coupons: ja,
-              enrollCouponErrorCode: Aa,
+              currency: ja,
+              fundingInstrument: Da,
+              vatInfo: Ba,
+              adsAccount: Ma,
+              promoteStatus: Fa,
+              promoteErrorCode: Ra,
+              coupons: qa,
+              enrollCouponErrorCode: Na,
               selectedPaymentMethod: C.p,
             }
           })
@@ -1710,34 +1783,33 @@
             }
             var t, n, a
           })
-          .withAnalytics(ze.o),
-        Ba = n('csss'),
-        Fa = n('/yvb'),
-        Ma = n('shC7'),
-        Ra = V.a.c3c57e3e,
-        qa = V.a.h06724b4,
-        Na = V.a.a96f811e,
-        Ha = V.a.b069d89c,
-        za = V.a.a3a09d48,
-        Ua = V.a.fbd44e96,
-        Va = V.a.e36bce63,
-        Ga = V.a.c602f5b8,
-        Wa = V.a.ia83756b,
-        Qa = V.a.cc217a04,
-        Ka = V.a.c602f5b8,
-        Xa = V.a.g4f2b588,
-        Ja = V.a.i41612d9,
-        Ya = V.a.cdae1af0,
-        Za = V.a.ed8bb5af,
-        $a = V.a.fc640c20,
-        er = V.a.be2dc078,
-        tr = V.a.iaefd4de,
-        nr = V.a.e5e42640,
-        ar = V.a.da2805d1,
-        rr = V.a.ef4602eb,
-        or = V.a.a4db098b,
-        cr = V.a.ef7e3916,
-        ir = (function (e) {
+          .withAnalytics(Ue.o),
+        za = n('csss'),
+        Ua = n('shC7'),
+        Va = G.a.c3c57e3e,
+        Ga = G.a.h06724b4,
+        Qa = G.a.a96f811e,
+        Wa = G.a.b069d89c,
+        Ka = G.a.a3a09d48,
+        Xa = G.a.fbd44e96,
+        Ja = G.a.e36bce63,
+        Ya = G.a.c602f5b8,
+        Za = G.a.ia83756b,
+        $a = G.a.cc217a04,
+        er = G.a.c602f5b8,
+        tr = G.a.g4f2b588,
+        nr = G.a.i41612d9,
+        ar = G.a.cdae1af0,
+        rr = G.a.ed8bb5af,
+        or = G.a.fc640c20,
+        cr = G.a.be2dc078,
+        ir = G.a.iaefd4de,
+        lr = G.a.e5e42640,
+        sr = G.a.da2805d1,
+        ur = G.a.ef4602eb,
+        dr = G.a.a4db098b,
+        mr = G.a.ef7e3916,
+        pr = (function (e) {
           u()(n, e)
           var t = m()(n)
           function n() {
@@ -1748,13 +1820,13 @@
               (e = t.call.apply(t, [this].concat(o))),
               g()(l()(e), '_getPaymentDescription', function (t, n) {
                 var a = e.props.adsAccount
-                return a && a.timezone && a.country_code ? (t ? Ya : n ? $a : Za) : n ? tr : er
+                return a && a.timezone && a.country_code ? (t ? ar : n ? or : rr) : n ? ir : cr
               }),
               g()(l()(e), '_handlePromote', function () {
                 var t = e.props,
                   n = t.analytics,
                   a = t.createPromotion
-                Object(ze.p)(n)(ze.n.promotionClick()), a(n)
+                Object(Ue.p)(n)(Ue.n.promotionClick()), a(n)
               }),
               g()(l()(e), '_handleEnrollCoupon', function () {
                 var t = e.props,
@@ -1769,16 +1841,16 @@
                 var t = e.props,
                   n = t.promoteErrorCode,
                   a = t.promoteStatus
-                if (!n) return a === $e.a.LOADED ? ar : null
+                if (!n) return a === et.a.LOADED ? sr : null
                 switch (n) {
                   case 'MissingFundingInstrument':
                   case 'InvalidPaymentMethod':
-                    return cr
+                    return mr
                   case 'CampaignCreationFailed':
                   case 'PromotionIneligible':
-                    return or
+                    return dr
                   default:
-                    return rr
+                    return ur
                 }
               }),
               g()(l()(e), '_getCouponErrorMessage', function () {
@@ -1788,7 +1860,7 @@
                   case 'AccountIneligible':
                   case 'MissingAdsAccount':
                   default:
-                    return nr
+                    return lr
                 }
               }),
               e
@@ -1807,7 +1879,7 @@
                     o = this.context.featureSwitches.isTrue('responsive_web_qp_payment_select_enabled')
                   n()
                   var c = o ? !!r : !!a
-                  Object(ze.p)(t)(ze.n.reviewPageLoad({ hasFundingInstrument: c })), this._handleEnrollCoupon()
+                  Object(Ue.p)(t)(Ue.n.reviewPageLoad({ hasFundingInstrument: c })), this._handleEnrollCoupon()
                 },
               },
               {
@@ -1834,31 +1906,31 @@
                     _ = a.vatInfo,
                     E = this.context.featureSwitches.isTrue('responsive_web_qp_payment_select_enabled'),
                     w =
-                      ((e = Yt.e[r]),
+                      ((e = Zt.e[r]),
                       (t = e.maxAge),
                       (n = e.minAge),
-                      t ? ve({ minAge: n, maxAge: t }) : _e({ minAge: n })),
+                      t ? _e({ minAge: n, maxAge: t }) : Ee({ minAge: n })),
                     I = (function (e) {
                       switch (e) {
                         case 'Engagements':
                           return je
                         case 'Followers':
-                          return Ae
-                        case 'WebsiteClicks':
                           return De
+                        case 'WebsiteClicks':
+                          return Be
                         default:
                           throw b()
                       }
                     })(g),
-                    T = (function (e) {
+                    P = (function (e) {
                       var t = e.formattedAge,
                         n = e.gender,
                         a = e.locations,
                         r = a.length
-                      return Ce({
+                      return Ie({
                         newlinePlaceholder: '\n',
-                        locations: Object(ge.a)(a),
-                        locationsHeading: Ne({ numLocations: r }),
+                        locations: Object(fe.a)(a),
+                        locationsHeading: He({ numLocations: r }),
                         formattedAge: t,
                         gender: n,
                       })
@@ -1867,147 +1939,147 @@
                         return e.localized_name
                       }),
                       formattedAge: w,
-                      gender: Be(d),
+                      gender: Me(d),
                     }),
-                    P = this.context.featureSwitches.isTrue('responsive_web_qp_welcome_coupon_enabled'),
-                    S = P
-                      ? qe({ dailyBudgetNum: l, durationDays: s, lang: m, currency: i })
-                      : Re({ totalBudgetNum: l * s, durationDays: s, lang: m, currency: i }),
+                    T = this.context.featureSwitches.isTrue('responsive_web_qp_welcome_coupon_enabled'),
+                    S = T
+                      ? Ne({ dailyBudgetNum: l, durationDays: s, lang: m, currency: i })
+                      : qe({ totalBudgetNum: l * s, durationDays: s, lang: m, currency: i }),
                     k =
                       u && null != c && c.existing_balance.length
                         ? c.existing_balance.find(function (e) {
                             return e.currency_code === u.currency
                           })
                         : null,
-                    x = k ? '' : Me({ amount: l * s, lang: m, currency: i }),
+                    x = k ? '' : Re({ amount: l * s, lang: m, currency: i }),
                     O = p.params,
-                    A = O.quickPromotePlatform,
+                    j = O.quickPromotePlatform,
                     B = O.screenName,
-                    F = O.statusId,
-                    M = this._getPromoteErrorMessage(),
-                    q = this._getCouponErrorMessage(),
-                    z = this.context.featureSwitches.isTrue('responsive_web_qp_objective_picker_enabled'),
+                    M = O.statusId,
+                    F = this._getPromoteErrorMessage(),
+                    R = this._getCouponErrorMessage(),
+                    N = this.context.featureSwitches.isTrue('responsive_web_qp_objective_picker_enabled'),
                     U = _ && null === _.tax_id && null === _.tax_exemption_id && 'NOT_SET' === _.tax_category,
-                    G = E ? !!y : !!u,
-                    W = !(null == c || !c.eligible_coupon)
+                    V = E ? !!y : !!u,
+                    Q = !(null == c || !c.eligible_coupon)
                   return h.a.createElement(
                     h.a.Fragment,
                     null,
-                    h.a.createElement(R, { screenType: ze.c.Review }),
+                    h.a.createElement(q, { screenType: Ue.c.Review }),
                     h.a.createElement(
                       L.a,
-                      { style: sr.qpContainer, testID: $ },
-                      M &&
+                      { style: fr.qpContainer, testID: ee },
+                      F &&
                         h.a.createElement(
                           L.a,
-                          { style: sr.gutter },
-                          h.a.createElement(de.a, { text: M, type: 'danger' }),
+                          { style: fr.gutter },
+                          h.a.createElement(me.a, { text: F, type: 'danger' }),
                         ),
-                      q &&
+                      R &&
                         h.a.createElement(
                           L.a,
-                          { style: sr.gutter },
-                          h.a.createElement(de.a, { text: q, type: 'warning' }),
+                          { style: fr.gutter },
+                          h.a.createElement(me.a, { text: R, type: 'warning' }),
                         ),
-                      h.a.createElement(H, { subtitle: qa, title: Ra }),
-                      z &&
+                      h.a.createElement(z, { subtitle: Ga, title: Va }),
+                      N &&
                         h.a.createElement(D, {
                           description: I,
-                          descriptionTestID: te,
-                          label: Na,
+                          descriptionTestID: ne,
+                          label: Qa,
                           withBottomBorder: !1,
                         }),
-                      h.a.createElement(D, { description: T, descriptionTestID: ne, label: Ha, withBottomBorder: !1 }),
+                      h.a.createElement(D, { description: P, descriptionTestID: ae, label: Wa, withBottomBorder: !1 }),
                       h.a.createElement(D, {
                         description: S,
-                        descriptionDir: Ma.a.getConstants().isRTL ? 'rtl' : 'ltr',
-                        descriptionTestID: ae,
-                        label: P ? Ua : za,
+                        descriptionDir: Ua.a.getConstants().isRTL ? 'rtl' : 'ltr',
+                        descriptionTestID: re,
+                        label: T ? Xa : Ka,
                         withBottomBorder: !1,
                       }),
                       E
-                        ? h.a.createElement(Ba.a, {
+                        ? h.a.createElement(za.a, {
                             description:
                               y && !U
-                                ? h.a.createElement(Zn, {
+                                ? h.a.createElement(aa, {
                                     id: y.id,
                                     imgSrcUrl: y.imgSrcUrl,
                                     lastFourDigits: y.lastFourDigits,
-                                    paymentDescriptionStyle: sr.paymentDescription,
+                                    paymentDescriptionStyle: fr.paymentDescription,
                                     status: y.cardStatus,
                                   })
                                 : h.a.createElement(
-                                    j.b,
+                                    A.b,
                                     { color: 'primary', size: 'subtext2' },
-                                    this._getPaymentDescription(G, W),
+                                    this._getPaymentDescription(V, Q),
                                   ),
-                            label: h.a.createElement(j.b, { weight: 'bold' }, Va),
+                            label: h.a.createElement(A.b, { weight: 'bold' }, Ja),
                             link:
-                              !y || U ? Object(ze.j)(B, F, A, ze.c.Payment) : Object(ze.j)(B, F, A, ze.c.PaymentSelect),
-                            testID: re,
+                              !y || U ? Object(Ue.j)(B, M, j, Ue.c.Payment) : Object(Ue.j)(B, M, j, Ue.c.PaymentSelect),
+                            testID: oe,
                           })
-                        : h.a.createElement(Ba.a, {
+                        : h.a.createElement(za.a, {
                             description:
                               u && !U
                                 ? u.description
                                 : h.a.createElement(
-                                    j.b,
+                                    A.b,
                                     { color: 'primary', size: 'subtext2' },
-                                    this._getPaymentDescription(G, W),
+                                    this._getPaymentDescription(V, Q),
                                   ),
-                            label: h.a.createElement(j.b, { weight: 'bold' }, Va),
-                            link: !u || U ? Object(ze.j)(B, F, A, ze.c.Payment) : void 0,
-                            testID: re,
+                            label: h.a.createElement(A.b, { weight: 'bold' }, Ja),
+                            link: !u || U ? Object(Ue.j)(B, M, j, Ue.c.Payment) : void 0,
+                            testID: oe,
                           }),
-                      P
+                      T
                         ? h.a.createElement(
                             D,
-                            { description: x, descriptionTestID: oe, label: Ga, withBottomBorder: !1 },
+                            { description: x, descriptionTestID: ce, label: Ya, withBottomBorder: !1 },
                             k
                               ? (function (e) {
                                   var t = e.balance,
                                     n = e.currency,
                                     a = e.lang,
                                     r = e.subtotal,
-                                    o = Me({ amount: r, currency: n, lang: a }),
-                                    c = Me({ amount: Math.min(r, t), currency: n, lang: a }),
-                                    i = Me({ amount: Math.max(0, r - t), currency: n, lang: a }),
-                                    l = t > r ? Me({ amount: t - r, currency: n, lang: a }) : null
+                                    o = Re({ amount: r, currency: n, lang: a }),
+                                    c = Re({ amount: Math.min(r, t), currency: n, lang: a }),
+                                    i = Re({ amount: Math.max(0, r - t), currency: n, lang: a }),
+                                    l = t > r ? Re({ amount: t - r, currency: n, lang: a }) : null
                                   return h.a.createElement(
                                     h.a.Fragment,
                                     null,
                                     h.a.createElement(
                                       L.a,
-                                      { style: sr.promotionTotalRow },
-                                      h.a.createElement(j.b, { color: 'gray700', size: 'subtext2' }, Wa),
-                                      h.a.createElement(j.b, { color: 'gray700', size: 'subtext2' }, o),
+                                      { style: fr.promotionTotalRow },
+                                      h.a.createElement(A.b, { color: 'gray700', size: 'subtext2' }, Za),
+                                      h.a.createElement(A.b, { color: 'gray700', size: 'subtext2' }, o),
                                     ),
                                     h.a.createElement(
                                       L.a,
-                                      { style: sr.promotionTotalRow },
-                                      h.a.createElement(j.b, { color: 'blue500', size: 'subtext2' }, Qa),
-                                      h.a.createElement(j.b, { color: 'blue500', size: 'subtext2' }, '-', c),
+                                      { style: fr.promotionTotalRow },
+                                      h.a.createElement(A.b, { color: 'blue500', size: 'subtext2' }, $a),
+                                      h.a.createElement(A.b, { color: 'blue500', size: 'subtext2' }, '-', c),
                                     ),
                                     h.a.createElement(
                                       L.a,
-                                      { style: sr.promotionTotalRow },
+                                      { style: fr.promotionTotalRow },
                                       h.a.createElement(
-                                        j.b,
+                                        A.b,
                                         { color: 'gray700', size: 'subtext2', weight: 'bold' },
-                                        Ka,
+                                        er,
                                       ),
                                       h.a.createElement(
-                                        j.b,
-                                        { color: 'gray700', size: 'subtext2', testID: oe, weight: 'bold' },
+                                        A.b,
+                                        { color: 'gray700', size: 'subtext2', testID: ce, weight: 'bold' },
                                         i,
                                       ),
                                     ),
                                     l &&
                                       h.a.createElement(
                                         L.a,
-                                        { style: sr.promotionTotalRow },
-                                        h.a.createElement(j.b, { color: 'gray700', size: 'subtext2' }, Xa),
-                                        h.a.createElement(j.b, { color: 'gray700', size: 'subtext2' }, l),
+                                        { style: fr.promotionTotalRow },
+                                        h.a.createElement(A.b, { color: 'gray700', size: 'subtext2' }, tr),
+                                        h.a.createElement(A.b, { color: 'gray700', size: 'subtext2' }, l),
                                       ),
                                   )
                                 })({ subtotal: l * s, balance: k.total_amount || 0, currency: i, lang: m })
@@ -2017,33 +2089,33 @@
                     ),
                     h.a.createElement(
                       L.a,
-                      { style: sr.bottomElements },
+                      { style: fr.bottomElements },
                       h.a.createElement(
-                        Fa.a,
+                        Qn.a,
                         {
-                          disabled: !u || U || C.X.includes(f),
+                          disabled: (E && !y) || !u || U || C.X.includes(f),
                           onPress: this._handlePromote,
                           size: 'xLarge',
-                          testID: ee,
+                          testID: te,
                           type: 'brandFilled',
                         },
-                        Ja,
+                        nr,
                       ),
                       h.a.createElement(
-                        N.a,
-                        { style: sr.terms },
+                        H.a,
+                        { style: fr.terms },
                         (function (e, t) {
                           return t
                             ? h.a.createElement(
-                                V.a.I18NFormatMessage,
+                                G.a.I18NFormatMessage,
                                 { $i18n: 'cace9784' },
-                                h.a.createElement(j.b, { link: Object(ze.k)(e) }, V.a.acff74af),
-                                h.a.createElement(j.b, { link: Object(ze.g)(e) }, V.a.cb8d4ace),
+                                h.a.createElement(A.b, { link: Object(Ue.k)(e) }, G.a.acff74af),
+                                h.a.createElement(A.b, { link: Object(Ue.g)(e) }, G.a.cb8d4ace),
                               )
                             : h.a.createElement(
-                                V.a.I18NFormatMessage,
+                                G.a.I18NFormatMessage,
                                 { $i18n: 'c99d7100' },
-                                h.a.createElement(j.b, { link: Object(ze.k)(e) }, V.a.d56b5ac3),
+                                h.a.createElement(A.b, { link: Object(Ue.k)(e) }, G.a.d56b5ac3),
                               )
                         })(o, !!k),
                       ),
@@ -2055,9 +2127,9 @@
             n
           )
         })(h.a.PureComponent)
-      g()(ir, 'contextType', pe.a)
-      var lr,
-        sr = A.a.create(function (e) {
+      g()(pr, 'contextType', ge.a)
+      var gr,
+        fr = j.a.create(function (e) {
           return {
             qpContainer: { flex: 1, overflow: 'auto' },
             bottomElements: { marginHorizontal: e.spaces.space12, marginVertical: e.spaces.space32 },
@@ -2080,39 +2152,39 @@
             },
           }
         }),
-        ur = Da(ir),
-        dr = n('zCf4'),
-        mr =
+        hr = Ha(pr),
+        br = n('zCf4'),
+        yr =
           (n('yH/f'),
           n('7xRU'),
           n('LW0h'),
           function (e, t) {
-            var n = gr(e, t)
+            var n = _r(e, t)
             return e.ads.typeahead.targetingLocation[n]
           }),
-        pr = function (e, t) {
+        vr = function (e, t) {
           var n,
-            a = gr(e, t)
+            a = _r(e, t)
           return null === (n = e.ads.typeahead.targetingLocation[a]) || void 0 === n ? void 0 : n.fetchStatus
         },
-        gr = function (e, t) {
+        _r = function (e, t) {
           return e.quickPromote.targeting.locationQuery
         },
-        fr = function (e, t) {
+        Er = function (e, t) {
           return e.quickPromote.targeting.targetedLocations
         },
-        hr = function (e, t) {
+        wr = function (e, t) {
           return e.quickPromote.account.campaigns
         },
-        br = Object(E.a)()
+        Cr = Object(E.a)()
           .propsFromState(function () {
             return {
-              targetingLocationQuery: gr,
-              targetingLocations: mr,
-              targetedLocations: fr,
-              fetchStatus: pr,
+              targetingLocationQuery: _r,
+              targetingLocations: yr,
+              targetedLocations: Er,
+              fetchStatus: vr,
               userCountry: _.y,
-              campaigns: hr,
+              campaigns: wr,
             }
           })
           .propsFromActions(function () {
@@ -2125,24 +2197,24 @@
               ),
             }
           })
-          .withAnalytics(ze.o),
-        yr = n('VwDm'),
-        vr = n('G1WX'),
-        _r = n('e0ey'),
-        Er = n('xKuM'),
-        wr = n('5Vk4'),
-        Cr = n('6OUF'),
-        Ir = n('zrOZ'),
-        Tr = n('kevv'),
-        Pr = V.a.cc642518,
-        Sr = V.a.i0e8c3c6,
-        kr = V.a.deaf5b15,
-        xr = V.a.f69ad048,
-        Or = Object.freeze({ COUNTRIES: 0, REGIONS: 1, METROS: 2, CITIES: 3, POSTAL_CODES: 4 }),
-        Lr = Object.freeze(
-          ((lr = {}), g()(lr, ze.e.CurrentCountryMatch, 0), g()(lr, ze.e.Match, 1), g()(lr, ze.e.NoMatch, 2), lr),
+          .withAnalytics(Ue.o),
+        Ir = n('VwDm'),
+        Pr = n('G1WX'),
+        Tr = n('e0ey'),
+        Sr = n('xKuM'),
+        kr = n('5Vk4'),
+        xr = n('6OUF'),
+        Or = n('zrOZ'),
+        Lr = n('kevv'),
+        Ar = G.a.cc642518,
+        jr = G.a.i0e8c3c6,
+        Dr = G.a.deaf5b15,
+        Br = G.a.f69ad048,
+        Mr = Object.freeze({ COUNTRIES: 0, REGIONS: 1, METROS: 2, CITIES: 3, POSTAL_CODES: 4 }),
+        Fr = Object.freeze(
+          ((gr = {}), g()(gr, Ue.e.CurrentCountryMatch, 0), g()(gr, Ue.e.Match, 1), g()(gr, Ue.e.NoMatch, 2), gr),
         ),
-        jr = (function (e) {
+        Rr = (function (e) {
           u()(n, e)
           var t = m()(n)
           function n() {
@@ -2157,15 +2229,15 @@
                   n = t.fetchStatus,
                   a = t.targetingLocationQuery
                 return h.a.createElement(
-                  Ar,
+                  qr,
                   {
                     onBack: e._handleGoBack,
                     onChange: e._handleTargetingLocationChange,
                     onClear: e._handleClear,
                     targetingLocationQuery: a,
                   },
-                  h.a.createElement(L.a, null, h.a.createElement(j.b, { style: Dr.headingText, weight: 'heavy' }, Sr)),
-                  h.a.createElement(vr.a, { fetchStatus: n, render: e._renderSearchList, retryMessage: kr }),
+                  h.a.createElement(L.a, null, h.a.createElement(A.b, { style: Nr.headingText, weight: 'heavy' }, jr)),
+                  h.a.createElement(Pr.a, { fetchStatus: n, render: e._renderSearchList, retryMessage: Dr }),
                 )
               }),
               g()(l()(e), '_handleClear', function () {
@@ -2173,7 +2245,7 @@
               }),
               g()(l()(e), '_renderSearchList', function () {
                 var t = e.props.targetedLocations,
-                  n = Object(Ir.a)(
+                  n = Object(Or.a)(
                     t.map(function (e) {
                       return e.targeting_value
                     }),
@@ -2181,19 +2253,19 @@
                   a = e._getTargetingLocationOptions()
                 return h.a.createElement(
                   L.a,
-                  { style: Dr.overflow },
+                  { style: Nr.overflow },
                   a.map(function (t) {
                     var a = t.localized_name,
                       r = t.location_type,
                       o = t.targeting_value
-                    return h.a.createElement(_r.a, {
+                    return h.a.createElement(Tr.a, {
                       checked: n.has(o),
                       helpText: Fe(r),
                       key: o,
                       label: a,
                       name: o,
                       onChange: e._handleSearchSelect,
-                      testID: se,
+                      testID: ue,
                     })
                   }),
                 )
@@ -2214,34 +2286,34 @@
                           : a.locations) && void 0 !== t
                       ? t
                       : [],
-                  s = Object(ze.h)(i || 'US'),
+                  s = Object(Ue.h)(i || 'US'),
                   u = l.filter(function (e) {
                     var t = e.country_code,
                       n = e.localized_name
-                    return s(n, t, o) !== ze.e.NoMatch
+                    return s(n, t, o) !== Ue.e.NoMatch
                   })
-                return Object(Tr.a)(
+                return Object(Lr.a)(
                   u,
                   [
                     function (e) {
                       var t = e.country_code,
                         n = e.localized_name,
                         a = s(n, t, o)
-                      return Lr[a]
+                      return Fr[a]
                     },
                     function (e) {
                       e.localized_name
                       var t,
                         n = e.location_type
-                      return null !== (t = Or[n]) && void 0 !== t
+                      return null !== (t = Mr[n]) && void 0 !== t
                         ? t
                         : (function (e) {
-                            Object(fe.a)(
+                            Object(he.a)(
                               'Quick Promote: Unknown location type: '
                                 .concat(e, '. Expected one of {')
-                                .concat(Object.keys(Or).join(', '), '}'),
+                                .concat(Object.keys(Mr).join(', '), '}'),
                             )
-                          })(n) || Object.keys(Or).length
+                          })(n) || Object.keys(Mr).length
                     },
                     function (e) {
                       return e.localized_name
@@ -2261,8 +2333,8 @@
                     return e.targeting_value === t
                   })
                   i
-                    ? (Object(ze.p)(r)(
-                        ze.n.setTargetingLocation({
+                    ? (Object(Ue.p)(r)(
+                        Ue.n.setTargetingLocation({
                           id: i.targeting_value,
                           locationType: i.location_type,
                           countryCode: i.country_code,
@@ -2270,8 +2342,8 @@
                       ),
                       o([i]),
                       e._handleGoBack())
-                    : Object(fe.a)('Quick Promote: could not find "'.concat(t, '" in list of targeting options'))
-                } else Object(ze.p)(r)(ze.n.targetingLocationError()), e.setState({ errorMessage: xr })
+                    : Object(he.a)('Quick Promote: could not find "'.concat(t, '" in list of targeting options'))
+                } else Object(Ue.p)(r)(Ue.n.targetingLocationError()), e.setState({ errorMessage: Br })
                 c('')
               }),
               g()(l()(e), '_renderSelected', function () {
@@ -2280,7 +2352,7 @@
                   a = t.targetingLocationQuery,
                   r = e.state.errorMessage
                 return h.a.createElement(
-                  Ar,
+                  qr,
                   {
                     onBack: e._handleGoBack,
                     onChange: e._handleTargetingLocationChange,
@@ -2293,10 +2365,10 @@
                     r &&
                       h.a.createElement(
                         L.a,
-                        { style: Dr.gutter },
-                        h.a.createElement(de.a, { text: r, type: 'danger' }),
+                        { style: Nr.gutter },
+                        h.a.createElement(me.a, { text: r, type: 'danger' }),
                       ),
-                    h.a.createElement(j.b, { style: Dr.headingText, weight: 'heavy' }, Ne({ numLocations: n.length })),
+                    h.a.createElement(A.b, { style: Nr.headingText, weight: 'heavy' }, He({ numLocations: n.length })),
                   ),
                   h.a.createElement(
                     L.a,
@@ -2305,14 +2377,14 @@
                       var n = t.localized_name,
                         a = t.location_type,
                         r = t.targeting_value
-                      return h.a.createElement(_r.a, {
+                      return h.a.createElement(Tr.a, {
                         checked: !0,
                         helpText: Fe(a),
                         key: r,
                         label: n,
                         name: r,
                         onChange: e._handleSearchSelect,
-                        testID: se,
+                        testID: ue,
                       })
                     }),
                   ),
@@ -2332,7 +2404,7 @@
                   d =
                     e.context.featureSwitches.isTrue('responsive_web_qp_intro_experiment_enabled') &&
                     !(null == n || !n.length)
-                Object(ze.m)(a, r)(l, s, c, i, u, d)
+                Object(Ue.m)(a, r)(l, s, c, i, u, d)
               }),
               g()(l()(e), '_handleTargetingLocationChange', function (t) {
                 var n = t.target.value,
@@ -2340,7 +2412,7 @@
                   r = a.analytics,
                   o = a.createLocalApiErrorHandler,
                   c = a.setAndFetchTargetingLocationQuery
-                Object(ze.p)(r)(ze.n.targetingLocationSearch(n)), c(n).catch(o())
+                Object(Ue.p)(r)(Ue.n.targetingLocationSearch(n)), c(n).catch(o())
               }),
               e
             )
@@ -2351,7 +2423,7 @@
                 key: 'componentDidMount',
                 value: function () {
                   var e = this.props.analytics
-                  Object(ze.p)(e)(ze.n.targetingLocationPageLoad())
+                  Object(Ue.p)(e)(Ue.n.targetingLocationPageLoad())
                 },
               },
               {
@@ -2367,7 +2439,7 @@
                   return h.a.createElement(
                     h.a.Fragment,
                     null,
-                    h.a.createElement(R, { screenType: ze.c.TargetingLocation }),
+                    h.a.createElement(q, { screenType: Ue.c.TargetingLocation }),
                     e ? this._renderSearch() : this._renderSelected(),
                   )
                 },
@@ -2376,8 +2448,8 @@
             n
           )
         })(h.a.PureComponent)
-      g()(jr, 'contextType', pe.a)
-      var Ar = function (e) {
+      g()(Rr, 'contextType', ge.a)
+      var qr = function (e) {
           var t = e.children,
             n = e.onBack,
             a = e.onChange,
@@ -2385,18 +2457,18 @@
             o = e.targetingLocationQuery
           return h.a.createElement(
             L.a,
-            { style: Dr.qpContainer, testID: Y },
-            h.a.createElement(Er.a, {
-              leftControl: h.a.createElement(wr.a, { onClick: n }),
-              middleControl: h.a.createElement(Cr.a, {
-                Icon: yr.a,
+            { style: Nr.qpContainer, testID: Z },
+            h.a.createElement(Sr.a, {
+              leftControl: h.a.createElement(kr.a, { onClick: n }),
+              middleControl: h.a.createElement(xr.a, {
+                Icon: Ir.a,
                 autoFocus: !0,
                 name: 'locationTargetingInput',
                 onChange: a,
                 onClear: r,
-                placeholder: Pr,
-                style: Dr.input,
-                testID: le,
+                placeholder: Ar,
+                style: Nr.input,
+                testID: se,
                 value: o,
                 withClearButton: !0,
               }),
@@ -2404,7 +2476,7 @@
             t,
           )
         },
-        Dr = A.a.create(function (e) {
+        Nr = j.a.create(function (e) {
           return {
             qpContainer: { flex: 1 },
             input: { marginVertical: e.spaces.space12 },
@@ -2426,50 +2498,50 @@
             overflow: { flex: '1 1 200px', overflowY: 'auto' },
           }
         }),
-        Br = br(jr),
-        Fr = function (e, t) {
+        Hr = Cr(Rr),
+        zr = function (e, t) {
           return e.quickPromote.targeting.targetedLocations
         },
-        Mr = function (e, t) {
+        Ur = function (e, t) {
           return e.quickPromote.targeting.gender
         },
-        Rr = function (e, t) {
+        Vr = function (e, t) {
           return e.quickPromote.targeting.ageBucket
         },
-        qr = Object(E.a)()
+        Gr = Object(E.a)()
           .propsFromState(function () {
-            return { targetedLocations: Fr, selectedGender: Mr, selectedAgeBucket: Rr }
+            return { targetedLocations: zr, selectedGender: Ur, selectedAgeBucket: Vr }
           })
           .propsFromActions(function () {
             return { setTargetedAgeBucket: C.R, setTargetedGender: C.S }
           })
-          .withAnalytics(ze.o),
-        Nr = n('JiIh'),
-        Hr = n('fyvP'),
-        zr = n('J4ZH'),
-        Ur = n('tn7R'),
-        Vr = n('mN6z'),
-        Gr = V.a.hba1d105,
-        Wr = V.a.cba0133d,
-        Qr = V.a.e1efbead,
-        Kr = V.a.c6ff7c1f,
-        Xr = V.a.b555fb45,
-        Jr = V.a.a8d0108d,
-        Yr = [Yt.b.Any, Yt.b.Female, Yt.b.Male].map(function (e) {
-          return { label: Be(e), value: e, testID: X(e) }
+          .withAnalytics(Ue.o),
+        Qr = n('JiIh'),
+        Wr = n('fyvP'),
+        Kr = n('J4ZH'),
+        Xr = n('tn7R'),
+        Jr = n('mN6z'),
+        Yr = G.a.hba1d105,
+        Zr = G.a.cba0133d,
+        $r = G.a.e1efbead,
+        eo = G.a.c6ff7c1f,
+        to = G.a.b555fb45,
+        no = G.a.a8d0108d,
+        ao = [Zt.b.Any, Zt.b.Female, Zt.b.Male].map(function (e) {
+          return { label: Me(e), value: e, testID: J(e) }
         }),
-        Zr = V.a.j2c03e12,
-        $r = ['13', '18', '21', '25', '35', '50'],
-        eo = [void 0, void 0, void 0, '24', '34', '49', '54'],
-        to = Object(zr.a)(Object(Ur.a)(Yt.e), function (e) {
+        ro = G.a.j2c03e12,
+        oo = ['13', '18', '21', '25', '35', '50'],
+        co = [void 0, void 0, void 0, '24', '34', '49', '54'],
+        io = Object(Kr.a)(Object(Xr.a)(Zt.e), function (e) {
           return e.maxAge || 'over'
         }),
-        no = eo.length
-      function ao(e, t) {
+        lo = co.length
+      function so(e, t) {
         var n
-        if (e && t) return null === (n = Yt.d[e]) || void 0 === n ? void 0 : n[t]
+        if (e && t) return null === (n = Zt.d[e]) || void 0 === n ? void 0 : n[t]
       }
-      var ro = (function (e) {
+      var uo = (function (e) {
         u()(n, e)
         var t = m()(n)
         function n() {
@@ -2481,10 +2553,10 @@
             g()(l()(e), '_handleGenderChange', function (t, n) {
               var a = e.props,
                 r = a.analytics
-              ;(0, a.setTargetedGender)(n), Object(ze.p)(r)(ze.n.setTargetingGender(n))
+              ;(0, a.setTargetedGender)(n), Object(Ue.p)(r)(Ue.n.setTargetingGender(n))
             }),
             g()(l()(e), '_handleAgeBucketChange', function (t, n) {
-              var a = Dn()(t, 2),
+              var a = Bn()(t, 2),
                 r = a[0],
                 o = a[1],
                 c = e.props,
@@ -2492,23 +2564,23 @@
                 l = c.selectedAgeBucket,
                 s = c.setTargetedAgeBucket,
                 u = e._sliderValueFromSelectedAgeBucket(l)
-              if (!Object(Vr.a)(u, [r, o]))
+              if (!Object(Jr.a)(u, [r, o]))
                 if (n) {
-                  var d = $r[r]
+                  var d = oo[r]
                   if (!d) return
-                  var m = ao(d, o === no ? 'over' : eo[o])
-                  if (m) Object(ze.p)(i)(ze.n.setTargetingAgeBucket(m)), s(m)
+                  var m = so(d, o === lo ? 'over' : co[o])
+                  if (m) Object(Ue.p)(i)(Ue.n.setTargetingAgeBucket(m)), s(m)
                   else {
-                    var p = Object.keys(Yt.d[d])[0]
+                    var p = Object.keys(Zt.d[d])[0]
                     e._setAgeBucket({ minAge: d, maxAge: p })
                   }
                 } else {
-                  var g = o === no ? 'over' : eo[o]
+                  var g = o === lo ? 'over' : co[o]
                   if (!g) return
-                  var f = ao($r[r], g)
-                  if (f) Object(ze.p)(i)(ze.n.setTargetingAgeBucket(f)), s(f)
+                  var f = so(oo[r], g)
+                  if (f) Object(Ue.p)(i)(Ue.n.setTargetingAgeBucket(f)), s(f)
                   else {
-                    var h = to[g].slice(-1)[0].minAge
+                    var h = io[g].slice(-1)[0].minAge
                     e._setAgeBucket({ minAge: h, maxAge: g })
                   }
                 }
@@ -2519,12 +2591,12 @@
                 r = e.props,
                 o = r.analytics,
                 c = r.setTargetedAgeBucket,
-                i = Yt.d[a][n || 'over']
+                i = Zt.d[a][n || 'over']
               if (!i)
                 throw new Error(
                   'Age bucket not found for minAge: "'.concat(a, '", maxAge: "').concat(n || '<empty>', '"'),
                 )
-              Object(ze.p)(o)(ze.n.setTargetingAgeBucket(i)), c(i)
+              Object(Ue.p)(o)(Ue.n.setTargetingAgeBucket(i)), c(i)
             }),
             e
           )
@@ -2535,16 +2607,16 @@
               key: 'componentDidMount',
               value: function () {
                 var e = this.props.analytics
-                Object(ze.p)(e)(ze.n.targetingPageLoad())
+                Object(Ue.p)(e)(Ue.n.targetingPageLoad())
               },
             },
             {
               key: '_sliderValueFromSelectedAgeBucket',
               value: function (e) {
-                var t = Yt.e[e],
+                var t = Zt.e[e],
                   n = t.maxAge,
                   a = t.minAge
-                return [$r.indexOf(a), n ? eo.indexOf(n) : no]
+                return [oo.indexOf(a), n ? co.indexOf(n) : lo]
               },
             },
             {
@@ -2559,41 +2631,41 @@
                   c = o.quickPromotePlatform,
                   i = o.screenName,
                   l = o.statusId,
-                  s = Ne({ numLocations: r.length }),
-                  u = Yt.e[n],
+                  s = He({ numLocations: r.length }),
+                  u = Zt.e[n],
                   d = u.maxAge,
                   m = u.minAge,
                   p = this._sliderValueFromSelectedAgeBucket(n),
-                  g = d || Zr
+                  g = d || ro
                 return h.a.createElement(
                   L.a,
-                  { style: oo.qpContainer, testID: K },
-                  h.a.createElement(R, { screenType: ze.c.Targeting }),
-                  h.a.createElement(H, { subtitle: Wr, title: Gr }),
-                  h.a.createElement(Ba.a, {
-                    description: Object(ge.a)(
+                  { style: mo.qpContainer, testID: X },
+                  h.a.createElement(q, { screenType: Ue.c.Targeting }),
+                  h.a.createElement(z, { subtitle: Zr, title: Yr }),
+                  h.a.createElement(za.a, {
+                    description: Object(fe.a)(
                       r.map(function (e) {
                         return e.localized_name
                       }),
                     ),
-                    label: h.a.createElement(j.b, { weight: 'bold' }, s),
-                    link: Object(ze.j)(i, l, c, ze.c.TargetingLocation),
-                    testID: ce,
+                    label: h.a.createElement(A.b, { weight: 'bold' }, s),
+                    link: Object(Ue.j)(i, l, c, Ue.c.TargetingLocation),
+                    testID: ie,
                   }),
                   h.a.createElement(
                     D,
-                    { label: Qr },
+                    { label: $r },
                     h.a.createElement(
                       L.a,
-                      { style: oo.ageRangeSlider },
-                      h.a.createElement(Nr.a, {
-                        endThumbAccessibilityLabel: Xr,
+                      { style: mo.ageRangeSlider },
+                      h.a.createElement(Qr.a, {
+                        endThumbAccessibilityLabel: to,
                         endThumbAccessibilityLabelValueText: '"'.concat(g, '"'),
                         endThumbLabel: g,
-                        max: no,
+                        max: lo,
                         min: 0,
                         onChange: this._handleAgeBucketChange,
-                        startThumbAccessibilityLabel: Kr,
+                        startThumbAccessibilityLabel: eo,
                         startThumbAccessibilityLabelValueText: '"'.concat(m, '"'),
                         startThumbLabel: m,
                         value: p,
@@ -2602,14 +2674,14 @@
                   ),
                   h.a.createElement(
                     D,
-                    { label: Jr, withBottomBorder: !1 },
+                    { label: no, withBottomBorder: !1 },
                     h.a.createElement(
                       L.a,
-                      { style: oo.genderSelection },
-                      h.a.createElement(Hr.a, {
+                      { style: mo.genderSelection },
+                      h.a.createElement(Wr.a, {
                         name: 'gender',
                         onChange: this._handleGenderChange,
-                        options: Yr,
+                        options: ao,
                         value: a,
                       }),
                     ),
@@ -2621,8 +2693,8 @@
           n
         )
       })(h.a.PureComponent)
-      g()(ro, 'contextType', pe.a)
-      var oo = A.a.create(function (e) {
+      g()(uo, 'contextType', ge.a)
+      var mo = j.a.create(function (e) {
           return {
             qpContainer: { flex: 1 },
             genderSelection: { marginTop: e.spaces.space4 },
@@ -2630,13 +2702,13 @@
             iconText: { textAlignVertical: 'text-bottom' },
           }
         }),
-        co = qr(ro),
-        io = n('q9Zt'),
-        lo = V.a.a065172e,
-        so = V.a.cfcdb4a1,
-        uo = V.a.dcfb0332,
-        mo = V.a.c1df579e,
-        po = (function (e) {
+        po = Gr(uo),
+        go = n('q9Zt'),
+        fo = G.a.a065172e,
+        ho = G.a.cfcdb4a1,
+        bo = G.a.dcfb0332,
+        yo = G.a.c1df579e,
+        vo = (function (e) {
           u()(n, e)
           var t = m()(n)
           function n() {
@@ -2648,20 +2720,20 @@
               g()(l()(e), 'state', { isLoaded: !1 }),
               g()(l()(e), '_getRetweetOrTweet', function () {
                 var t = e.props.tweet
-                return t ? Zt.a.getOriginalTweet(t) : t
+                return t ? $t.a.getOriginalTweet(t) : t
               }),
               g()(l()(e), '_render', function () {
                 var t = e.props.history,
                   n = e._getRetweetOrTweet()
                 return !n || (n && n.user.id_str !== e.context.loggedInUserId)
                   ? h.a.createElement(
-                      bt.b,
-                      { history: t, onBackClick: e._handleGoBack, title: uo },
-                      h.a.createElement(io.a, { onRetry: null, title: lo }),
+                      yt.b,
+                      { history: t, onBackClick: e._handleGoBack, title: bo },
+                      h.a.createElement(go.a, { onRetry: null, title: fo }),
                     )
                   : e._renderPage()
               }),
-              g()(l()(e), '_renderHeader', va.a),
+              g()(l()(e), '_renderHeader', Ta.a),
               g()(l()(e), '_renderPage', function () {
                 var t = e.props,
                   n = t.history,
@@ -2675,35 +2747,35 @@
                   u = c.statusId,
                   d = e.context.featureSwitches.isTrue('responsive_web_qp_objective_picker_enabled'),
                   m = e.context.featureSwitches.isTrue('responsive_web_qp_payment_select_enabled'),
-                  p = d ? ze.d : ze.b,
+                  p = d ? Ue.d : Ue.b,
                   g = function (e) {
-                    return Object(ze.j)(s, u, i, e)
+                    return Object(Ue.j)(s, u, i, e)
                   }
                 switch (l) {
                   case 'intro':
                     return e._renderSplashPage()
                   case 'objective':
                     if (d) {
-                      var f = g(ze.c.Targeting)
-                      return e._renderProgressPage(ze.d.Objective, f)
+                      var f = g(Ue.c.Targeting)
+                      return e._renderProgressPage(Ue.d.Objective, f)
                     }
-                    n.replace(Object(ze.j)(s, u, i, ze.c.Targeting))
+                    n.replace(Object(Ue.j)(s, u, i, Ue.c.Targeting))
                     break
                   case 'targeting':
-                    var h = g(ze.c.BudgetSelect)
+                    var h = g(Ue.c.BudgetSelect)
                     return e._renderProgressPage(p.Targeting, h)
                   case 'budget_select':
-                    var y = g(ze.c.Review)
+                    var y = g(Ue.c.Review)
                     return e._renderProgressPage(p.BudgetSelect, y)
                   case 'review':
-                    var v = [$e.a.LOADING, $e.a.LOADED].includes(o) && !r
+                    var v = [et.a.LOADING, et.a.LOADED].includes(o) && !r
                     return e._renderProgressPage(v ? p.Finish : p.Review)
                   case 'payment':
                     return e._renderProgressPage(p.Review)
                   case 'targeting_location':
                     return e._renderPopupPage()
                   case 'payment_select':
-                    return m || n.replace(Object(ze.j)(s, u, i, ze.c.Review)), e._renderNavigationPage()
+                    return m || n.replace(Object(Ue.j)(s, u, i, Ue.c.Review)), e._renderNavigationPage()
                   case 'done':
                     return e._renderSplashPage()
                   default:
@@ -2713,32 +2785,32 @@
               g()(l()(e), '_renderProgressPage', function (t, n) {
                 var a = e.props.history
                 return h.a.createElement(
-                  bt.b,
-                  { documentTitle: uo, history: a, renderHeader: e._renderHeader },
-                  h.a.createElement(Er.a, {
-                    leftControl: h.a.createElement(wr.a, { autofocus: !0, onClick: e._handleGoBack, testID: ie }),
-                    rightControl: n && h.a.createElement(Fa.a, { link: n, testID: W, type: 'brandText' }, mo),
+                  yt.b,
+                  { documentTitle: bo, history: a, renderHeader: e._renderHeader },
+                  h.a.createElement(Sr.a, {
+                    leftControl: h.a.createElement(kr.a, { autofocus: !0, onClick: e._handleGoBack, testID: le }),
+                    rightControl: n && h.a.createElement(Qn.a, { link: n, testID: W, type: 'brandText' }, yo),
                   }),
-                  h.a.createElement(Rn.a, { progress: t, style: go.progressBar }),
-                  h.a.createElement(L.a, { style: go.noScrollView }, e._renderRoutes()),
+                  h.a.createElement(qn.a, { progress: t, style: _o.progressBar }),
+                  h.a.createElement(L.a, { style: _o.noScrollView }, e._renderRoutes()),
                 )
               }),
               g()(l()(e), '_renderNavigationPage', function () {
                 var t = e.props.history
                 return h.a.createElement(
-                  bt.b,
-                  { documentTitle: uo, history: t, renderHeader: e._renderHeader },
-                  h.a.createElement(Er.a, {
-                    leftControl: h.a.createElement(wr.a, { autofocus: !0, onClick: e._handleGoBack, testID: ie }),
+                  yt.b,
+                  { documentTitle: bo, history: t, renderHeader: e._renderHeader },
+                  h.a.createElement(Sr.a, {
+                    leftControl: h.a.createElement(kr.a, { autofocus: !0, onClick: e._handleGoBack, testID: le }),
                   }),
-                  h.a.createElement(L.a, { style: go.noScrollView }, e._renderRoutes()),
+                  h.a.createElement(L.a, { style: _o.noScrollView }, e._renderRoutes()),
                 )
               }),
               g()(l()(e), '_renderPopupPage', function () {
                 var t = e.props.history
                 return h.a.createElement(
-                  bt.b,
-                  { documentTitle: uo, history: t, renderHeader: e._renderHeader },
+                  yt.b,
+                  { documentTitle: bo, history: t, renderHeader: e._renderHeader },
                   e._renderRoutes(),
                 )
               }),
@@ -2749,23 +2821,23 @@
                 var t = e.props.match.params.quickPromoteScreenName
                 switch (t) {
                   case 'intro':
-                    return h.a.createElement(dr.b, { component: Mt })
+                    return h.a.createElement(br.b, { component: Rt })
                   case 'objective':
-                    return h.a.createElement(dr.b, { component: jn })
+                    return h.a.createElement(br.b, { component: jn })
                   case 'targeting':
-                    return h.a.createElement(dr.b, { component: co })
+                    return h.a.createElement(br.b, { component: po })
                   case 'targeting_location':
-                    return h.a.createElement(dr.b, { component: Br })
+                    return h.a.createElement(br.b, { component: Hr })
                   case 'budget_select':
-                    return h.a.createElement(dr.b, { component: Ze })
+                    return h.a.createElement(br.b, { component: $e })
                   case 'review':
-                    return h.a.createElement(dr.b, { component: ur })
+                    return h.a.createElement(br.b, { component: hr })
                   case 'payment':
-                    return h.a.createElement(dr.b, { component: ha })
+                    return h.a.createElement(br.b, { component: Ca })
                   case 'payment_select':
-                    return h.a.createElement(dr.b, { component: ta })
+                    return h.a.createElement(br.b, { component: ia })
                   case 'done':
-                    return h.a.createElement(dr.b, { component: gt })
+                    return h.a.createElement(br.b, { component: ft })
                   default:
                     throw b()
                 }
@@ -2785,13 +2857,13 @@
                   m =
                     e.context.featureSwitches.isTrue('responsive_web_qp_intro_experiment_enabled') &&
                     !(null == a || !a.length)
-                Object(ze.p)(n)(ze.n.back(l)), Object(ze.m)(r, o)(s, u, i, l, d, m)
+                Object(Ue.p)(n)(Ue.n.back(l)), Object(Ue.m)(r, o)(s, u, i, l, d, m)
               }),
               g()(l()(e), '_handleRequestRetry', function () {
                 var t = e.props,
                   n = t.analytics,
                   a = t.match.params.quickPromoteScreenName
-                Object(ze.p)(n)(ze.n.reload(a)), window.location.reload()
+                Object(Ue.p)(n)(Ue.n.reload(a)), window.location.reload()
               }),
               e
             )
@@ -2820,8 +2892,8 @@
                     h = this.context.loggedInUserId,
                     b = this.context.featureSwitches.isTrue('responsive_web_qp_payment_select_enabled')
                   return h
-                    ? ($e.a.LOADED === m && f !== ze.c.Done && p($e.a.NONE),
-                      Object(M.b)(
+                    ? (et.a.LOADED === m && f !== Ue.c.Done && p(et.a.NONE),
+                      Object(F.b)(
                         'initial-load',
                         Promise.all([u(g), i(), r(h), c(), s({ statusId: g }), b ? l() : Promise.resolve()])
                           .then(function () {
@@ -2832,7 +2904,7 @@
                           }),
                       )
                         .catch(function (e) {
-                          a(ht.a)(e), Object(ze.p)(n)(ze.n.pageLoadFail(e.message))
+                          a(bt.a)(e), Object(Ue.p)(n)(Ue.n.pageLoadFail(e.message))
                         })
                         .finally(function () {
                           e.setState({ isLoaded: !0 })
@@ -2847,24 +2919,24 @@
                     t = e.fetchStatus,
                     n = e.history
                   if (!this.context.loggedInUserId) return this._render()
-                  var a = Object($e.d)(t, this.state.isLoaded ? $e.a.LOADED : $e.a.LOADING)
-                  return a !== $e.a.LOADED
+                  var a = Object(et.d)(t, this.state.isLoaded ? et.a.LOADED : et.a.LOADING)
+                  return a !== et.a.LOADED
                     ? h.a.createElement(
-                        bt.b,
-                        { documentTitle: uo, history: n, renderHeader: this._renderHeader },
-                        h.a.createElement(ya, null),
-                        h.a.createElement(ft.a, {
+                        yt.b,
+                        { documentTitle: bo, history: n, renderHeader: this._renderHeader },
+                        h.a.createElement(Pa, null),
+                        h.a.createElement(ht.a, {
                           fetchStatus: a,
                           onRequestRetry: this._handleRequestRetry,
                           render: this._render,
-                          retryMessage: so,
+                          retryMessage: ho,
                         }),
                       )
-                    : h.a.createElement(ft.a, {
+                    : h.a.createElement(ht.a, {
                         fetchStatus: a,
                         onRequestRetry: this._handleRequestRetry,
                         render: this._render,
-                        retryMessage: so,
+                        retryMessage: ho,
                       })
                 },
               },
@@ -2872,12 +2944,12 @@
             n
           )
         })(h.a.PureComponent)
-      g()(po, 'contextType', pe.a)
-      var go = A.a.create(function (e) {
+      g()(vo, 'contextType', ge.a)
+      var _o = j.a.create(function (e) {
           return { progressBar: { backgroundColor: e.colors.gray50 }, noScrollView: { overflowX: 'hidden', flex: 1 } }
         }),
-        fo = it(po)
-      t.default = fo
+        Eo = lt(vo)
+      t.default = Eo
     },
     kevv: function (e, t, n) {
       'use strict'
@@ -2960,23 +3032,23 @@
         w = (n('WNMA'), n('6/RC')),
         C = n('x5Pi'),
         I = n('8Lfv'),
-        T = n('QK5w'),
-        P = n('eSoz'),
+        P = n('QK5w'),
+        T = n('eSoz'),
         S = n('RqPI'),
         k = n('9D1O'),
         x = n('pNZL'),
         O = n('XOJV'),
         L = n('G6rE'),
-        j = n('rxPX'),
-        A = n('0KEI'),
+        A = n('rxPX'),
+        j = n('0KEI'),
         D = n('Mx3A'),
         B = function (e, t) {
           return e.location && e.location.state && e.location.state[t]
         },
-        F = function (e, t) {
+        M = function (e, t) {
           return 'PUSH' === t.history.action
         },
-        M = function (e, t) {
+        F = function (e, t) {
           var n = B(t, 'focal')
           return n || R(e, t)
         },
@@ -3010,15 +3082,15 @@
         G = function (e, t) {
           return B(t, 'contextualClientEventInfo')
         },
-        W = function (e, t) {
+        Q = function (e, t) {
           var n = B(t, 'referrer'),
-            a = M(e, t)
+            a = F(e, t)
           return !!n && n.includes('/i/topics/tweet/'.concat(a))
         },
-        Q = function (e, t) {
+        W = function (e, t) {
           if (!w.canUseDOM) return !1
           var n = t.location.query,
-            a = Object(T.a)(e, t)
+            a = Object(P.a)(e, t)
           return (
             Object(D.b)({
               query: n,
@@ -3029,25 +3101,25 @@
           )
         },
         K = function (e, t) {
-          return O.a.selectHydrated(e, M(e, t))
+          return O.a.selectHydrated(e, F(e, t))
         },
         X = function (e, t) {
-          var n = M(e, t),
+          var n = F(e, t),
             a = O.a.selectHydrated(e, n)
           return a && a.conversation_id_str ? O.a.selectHydrated(e, a.conversation_id_str) : null
         },
         J = function (e, t) {
-          return O.a.selectFetchStatus(e, M(e, t))
+          return O.a.selectFetchStatus(e, F(e, t))
         },
         Y = function (e, t) {
           return t.location.query && 'string' == typeof t.location.query.cxt ? t.location.query.cxt : void 0
         }
       function Z(e, t) {
         var n = K(e, t),
-          a = n ? Object(P.g)(e, n) : void 0
+          a = n ? Object(T.g)(e, n) : void 0
         return n && a ? Object(C.c)(n, a) : void 0
       }
-      var $ = Object(j.a)()
+      var $ = Object(A.a)()
           .propsFromState(function () {
             return {
               communitySocialContextOfFocalTweet: Z,
@@ -3055,9 +3127,9 @@
               contextualClientEventInfo: G,
               focalTweet: K,
               initialFetchStatus: J,
-              isForwardNavigation: F,
-              isReferralSource: Q,
-              isReferredFromExploreTopics: W,
+              isForwardNavigation: M,
+              isReferralSource: W,
+              isReferredFromExploreTopics: Q,
               userLanguage: S.o,
               loggedInUser: L.e.selectLoggedInUser,
               overflowCount: V,
@@ -3068,14 +3140,14 @@
               selectedTweetId: R,
               socialContext: N,
               startLocation: k.t,
-              statusId: M,
+              statusId: F,
               topicFollowPrompt: H,
               tweetDetailNav: x.a,
             }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(A.createLocalApiErrorHandlerWithContextFactory)('CONVERSATION_SCREEN'),
+              createLocalApiErrorHandler: Object(j.createLocalApiErrorHandlerWithContextFactory)('CONVERSATION_SCREEN'),
               clearTimelineCache: function (e, t) {
                 return Object(I.a)(e, t)
               },
@@ -3138,19 +3210,19 @@
         we = n('PeW/'),
         Ce = n('AUxQ'),
         Ie = n('Rp9C'),
-        Te = n('7JQg'),
-        Pe = n('VS6U'),
+        Pe = n('7JQg'),
+        Te = n('VS6U'),
         Se = n('tocL'),
         ke = n('HBr9'),
         xe = n('2fY8'),
         Oe = n('MWbm'),
         Le = n('G8HL'),
-        je = n('pxuL'),
-        Ae = n('t62R'),
+        Ae = n('pxuL'),
+        je = n('t62R'),
         De = n('rHpw'),
         Be = n('oQhu'),
-        Fe = n('mN6z'),
-        Me = ie.a.ea831526,
+        Me = n('mN6z'),
+        Fe = ie.a.ea831526,
         Re = ie.a.a90e1e67({ noun: '' }),
         qe = ie.a.c299a6cf,
         Ne = ie.a.c2ed3314,
@@ -3161,10 +3233,10 @@
         Ge = Object(Be.a)(function (e, t) {
           return { items: [Ie.a.forTweet(e, t)], tweet_id: e }
         }),
-        We = Object(Be.a)(function (e) {
+        Qe = Object(Be.a)(function (e) {
           return Object(te.a)(e)
         }),
-        Qe = Object(Be.a)(function (e, t, n, a, r) {
+        We = Object(Be.a)(function (e, t, n, a, r) {
           var o, c
           return {
             referrer: e,
@@ -3192,7 +3264,7 @@
         switch (t.contextType) {
           case Se.a.Community:
             var n = t.landingUrl ? Object(Ee.b)(t.landingUrl) : void 0
-            return b.a.createElement(Ae.b, { link: n }, t.text)
+            return b.a.createElement(je.b, { link: n }, t.text)
           default:
             return null
         }
@@ -3226,7 +3298,7 @@
                 a = e.richLandingContextId,
                 r = e.tweetDetailNav,
                 c = o._shouldRenderRuxInjections()
-              return Qe(r, t, n, c, a)
+              return We(r, t, n, c, a)
             }),
             g()(l()(o), '_getModule', function () {
               var e = o.props.statusId,
@@ -3289,7 +3361,7 @@
             {
               key: 'shouldComponentUpdate',
               value: function (e) {
-                return !Object(Fe.a)(e, this.props)
+                return !Object(Me.a)(e, this.props)
               },
             },
             {
@@ -3343,7 +3415,7 @@
                   })(d, i),
                   f = g && b.a.createElement(Je, { context: g })
                 return b.a.createElement(
-                  Te.b,
+                  Pe.c,
                   { data: Ge(m, u), namespace: this._getScribeNamespace() },
                   b.a.createElement(
                     _e.a,
@@ -3381,7 +3453,7 @@
                     b.a.createElement(
                       C.b.Provider,
                       { value: null == g ? void 0 : g.contextType },
-                      b.a.createElement(Pe.a, {
+                      b.a.createElement(Te.a, {
                         backLocation: '/',
                         documentTitle: e,
                         history: s,
@@ -3449,9 +3521,9 @@
                   d = { selectedTweetId: i }
                 return b.a.createElement(
                   ke.a,
-                  { collectionName: Me },
+                  { collectionName: Fe },
                   b.a.createElement(Ce.a, {
-                    apiErrorHandlerMap: We(c),
+                    apiErrorHandlerMap: Qe(c),
                     contextTweetId: t,
                     fetchOptions: this._getNavigationParams(),
                     focalTweet: n,
@@ -3487,14 +3559,14 @@
                   a = n.clearTimelineCache,
                   r = n.createLocalApiErrorHandler,
                   o = n.screenName
-                a(e, t).catch(r(We(o)))
+                a(e, t).catch(r(Qe(o)))
               },
             },
           ]),
           n
         )
       })(b.a.Component)
-      g()(Ze, 'contextType', je.a), g()(Ze, 'defaultProps', { recordTTFL: f.c })
+      g()(Ze, 'contextType', Ae.a), g()(Ze, 'defaultProps', { recordTTFL: f.c })
       var $e = De.a.create(function (e) {
         return {
           mobileAppBarRightControl: {
