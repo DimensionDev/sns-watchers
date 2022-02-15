@@ -3450,7 +3450,7 @@ window.__SCRIPTS_LOADED__.polyfills &&
           n('Ysgh'),
           Object.defineProperty(t, '__esModule', { value: !0 }),
           (t.default = void 0)
-        var i = r(n('ssRi')),
+        var i = r(n('q3/s')),
           o = r(n('W92z')),
           a = {
             toAscii: function (e) {

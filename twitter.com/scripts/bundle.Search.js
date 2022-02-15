@@ -1400,7 +1400,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'SearchBoxContainer', function () {
-          return lt
+          return ut
         })
       var a = n('yiKp'),
         r = n.n(a),
@@ -1421,8 +1421,8 @@
         v = n('RhWx'),
         S = n.n(v),
         _ =
-          (n('2G9S'),
-          n('tQbP'),
+          (n('tQbP'),
+          n('2G9S'),
           n('z84I'),
           n('hBvt'),
           n('ho0z'),
@@ -1430,36 +1430,36 @@
           n('WNMA'),
           n('MvUL'),
           n('3uku'),
+          n('jQ3i'),
           n('ERkP')),
         E = n.n(_),
         w = n('+Kfv'),
-        C = n('wtjx'),
-        k = n('rxPX'),
-        I = Object(k.a)()
+        C = n('lnti'),
+        k = n('wtjx'),
+        I = n('rxPX'),
+        x = Object(I.a)()
           .propsFromActions(function () {
-            return { addQuery: C.a }
+            return { addQuery: k.a }
           })
           .withAnalytics({ component: 'search_box' }),
-        x = n('Hw0q'),
-        T = n('3XMw'),
-        O = n.n(T),
-        R = n('8jkQ'),
-        L = n('u3ZE'),
-        B = n('rRIm'),
-        P = n('Rp9C'),
-        F =
+        T = n('Hw0q'),
+        O = n('3XMw'),
+        R = n.n(O),
+        L = n('8jkQ'),
+        B = n('u3ZE'),
+        P = n('rRIm'),
+        F = n('Rp9C'),
+        D =
           (n('LW0h'),
           n('7x/C'),
           n('vrRf'),
           n('5BYb'),
           n('+KXO'),
-          n('jQ3i'),
           n('x4t0'),
           n('M+/F'),
           n('wFPu'),
           n('vfdX'),
-          n('lnti')),
-        D = n('hqKg'),
+          n('hqKg')),
         A = n('3IPs'),
         M = n('M0jS'),
         U = n('G6rE'),
@@ -1475,10 +1475,10 @@
             Object(j.c)(e, j.a.AddressBookLookupNotFound)
           )
         },
-        W = Object(k.a)()
+        W = Object(I.a)()
           .propsFromState(function () {
-            var e = Object(D.createSelector)(C.g, U.e.selectFetchStatuses, function (e, t) {
-                var n = Object(F.a)(
+            var e = Object(D.createSelector)(k.g, U.e.selectFetchStatuses, function (e, t) {
+                var n = Object(C.a)(
                   e.map(function (e) {
                     var n,
                       a = null === (n = e.user) || void 0 === n ? void 0 : n.id
@@ -1517,7 +1517,7 @@
                   ? N.a.FAILED
                   : N.a.NONE
               }),
-              o = Object(D.createSelector)(C.g, function (e) {
+              o = Object(D.createSelector)(k.g, function (e) {
                 return e.map(function (e) {
                   return r()(r()({}, e), {}, { category: A.b.RecentSearch })
                 })
@@ -1528,7 +1528,7 @@
                 })
               })
             return {
-              isRecentSearchDataLoaded: C.e,
+              isRecentSearchDataLoaded: k.e,
               recentSearches: o,
               usersFetchStatus: a,
               invalidRecentSearchUserIds: n,
@@ -1558,14 +1558,14 @@
           })
           .propsFromActions(function () {
             return {
-              clearAll: C.b,
+              clearAll: k.b,
               createLocalApiErrorHandler: Object(H.createLocalApiErrorHandlerWithContextFactory)('SEARCH_ONE_CLICK'),
               deleteSavedSearch: z.a,
-              fetchRecentSearchesIfNeeded: C.c,
+              fetchRecentSearchesIfNeeded: k.c,
               fetchSavedSearchesIfNeeded: z.b,
               fetchUsersIfNeeded: U.e.fetchManyIfNeeded,
               fetchUsersPresenceIfNeeded: M.b.fetchManyIfNeeded,
-              removeQuery: C.d,
+              removeQuery: k.d,
             }
           })
           .withAnalytics({ element: 'typeahead' }),
@@ -1581,7 +1581,7 @@
         te = n('/yvb'),
         ne = n('rHpw'),
         ae = ['id', 'onRemove'],
-        re = O.a.e68b09b4,
+        re = R.a.e68b09b4,
         oe = (function (e) {
           m()(n, e)
           var t = g()(n)
@@ -1643,7 +1643,7 @@
         ue = n('t62R'),
         de = n('EHV7'),
         pe = E.a.createElement(Z.a, null),
-        he = O.a.e68b09b4,
+        he = R.a.e68b09b4,
         me = (function (e) {
           m()(n, e)
           var t = g()(n)
@@ -1716,14 +1716,14 @@
         ye = function (e, t) {
           return Object(M.c)(e, t.id)
         },
-        be = Object(k.a)().propsFromState(function () {
+        be = Object(I.a)().propsFromState(function () {
           return { user: ge, userSpace: ye }
         }),
         ve = n('v6aA'),
         Se = n('IMA+'),
         _e = E.a.createElement(Z.a, null),
-        Ee = O.a.e68b09b4,
-        we = O.a.fd06b02f,
+        Ee = R.a.e68b09b4,
+        we = R.a.fd06b02f,
         Ce = (function (e) {
           m()(n, e)
           var t = g()(n)
@@ -2015,11 +2015,11 @@
         He = n('4ZbN'),
         ze = n('eb3s'),
         Ne = n('MXDK'),
-        Ve = O.a.ee295fbe,
-        We = { headline: O.a.f45c425f, text: O.a.caae4dd9, confirmButtonLabel: O.a.dbd5d40f },
-        Ke = O.a.a8d68f61,
-        Qe = O.a.c6530778,
-        Ge = O.a.e047b8fa,
+        Ve = R.a.ee295fbe,
+        We = { headline: R.a.f45c425f, text: R.a.caae4dd9, confirmButtonLabel: R.a.dbd5d40f },
+        Ke = R.a.a8d68f61,
+        Qe = R.a.c6530778,
+        Ge = R.a.e047b8fa,
         Xe = ['user', 'keyword'],
         Ye = (function (e) {
           m()(n, e)
@@ -2191,7 +2191,7 @@
                   case A.b.RecentSearch:
                     var i = { keyword: e.keyword, user: e.user, topic: e.topic, event: e.event }
                     r(i), o._resetFocus()
-                    var c = P.a.forRecentSearchResult(i, t),
+                    var c = F.a.forRecentSearchResult(i, t),
                       s = o._handleRemoveAction(e)
                     c && a.scribe({ action: s, data: { items: [c] } })
                     break
@@ -2234,7 +2234,7 @@
                   c = a[i]
                 if (r) {
                   n(r)
-                  var s = c && P.a.forSavedSearchResult(c.keyword.query, i)
+                  var s = c && F.a.forSavedSearchResult(c.keyword.query, i)
                   s && t.scribe({ element: 'saved_search', action: 'delete', data: { items: [s] } })
                 }
                 o.setState({ shouldShowDeleteSavedSearchConfirmation: !1, savedSearchIdToDelete: void 0 })
@@ -2252,9 +2252,9 @@
                   t = e.analytics,
                   n = e.recentSearches
                 if (n && n.length) {
-                  var a = Object(F.a)(
+                  var a = Object(C.a)(
                     n.map(function (e, t) {
-                      return P.a.forRecentSearchResult(e, t)
+                      return F.a.forRecentSearchResult(e, t)
                     }),
                   )
                   t.scribe({ action: 'impression', data: { items: a } })
@@ -2265,9 +2265,9 @@
                   t = e.analytics,
                   n = e.savedSearches
                 if (n && n.length) {
-                  var a = Object(F.a)(
+                  var a = Object(C.a)(
                     n.map(function (e, t) {
-                      return P.a.forSavedSearchResult(e.keyword.query, t)
+                      return F.a.forSavedSearchResult(e.keyword.query, t)
                     }),
                   )
                   t.scribe({ element: 'saved_search', action: 'impression', data: { items: a } })
@@ -2277,7 +2277,7 @@
                 var n = o.props.analytics
                 switch (e.category) {
                   case A.b.SavedSearch:
-                    var a = P.a.forSavedSearchResult(e.query, t)
+                    var a = F.a.forSavedSearchResult(e.query, t)
                     n.scribe({ element: 'typeahead', action: 'click', data: { targets: [a] } })
                     break
                   case A.b.RecentSearch:
@@ -2291,7 +2291,7 @@
                           : e.recentSearchType === A.a.Topic && e.queryMetadata && e.queryMetadata.name
                           ? { topic: r()(r()({}, e.queryMetadata), {}, { type: A.a.Topic, id: e.query }) }
                           : { keyword: { type: A.a.Keyword, query: e.query } })
-                    var c = i && P.a.forRecentSearchResult(i, t)
+                    var c = i && F.a.forRecentSearchResult(i, t)
                     c && n.scribe({ action: 'click', data: { targets: [c] } })
                 }
               }),
@@ -2459,15 +2459,16 @@
         et = n('TnY3'),
         tt = n('GZwR'),
         nt = n('4e/K'),
-        at = O.a.ib2e46ee,
-        rt = O.a.hbc99b02,
+        at = R.a.ib2e46ee,
+        rt = R.a.hbc99b02,
         ot = /^(\w+)$/,
         it = [tt.a.Events, tt.a.Users, tt.a.Topics],
         ct = function (e) {
           return '@' === e[0] ? e.substring(1) : e
         },
         st = { viewType: 'search_field' },
-        lt = (function (e) {
+        lt = ['t1', 't3', 't4'],
+        ut = (function (e) {
           m()(n, e)
           var t = g()(n)
           function n(e, a) {
@@ -2476,7 +2477,24 @@
               s()(this, n),
               (c = t.call(this, e, a)),
               b()(p()(c), '_withNewTypeaheadUI', !1),
+              b()(p()(c), '_orderResults', function (e, t, n, a) {
+                return 't4' === c._rankedTypeaheadExperimentalValue
+                  ? c._reorderResults(e, t, n, a)
+                  : c._flattenResults(e, t, n, a)
+              }),
               b()(p()(c), '_reorderResults', function (e, t, n, a) {
+                var r = Object(tt.f)(t, tt.b.User),
+                  o = Object(tt.f)(t, tt.b.NoResult),
+                  i = r.sort(function (e, t) {
+                    var n = e.rounded_score,
+                      a = void 0 === n ? 0 : n,
+                      r = t.rounded_score
+                    return (void 0 === r ? 0 : r) - a
+                  }),
+                  c = [].concat(S()(i), S()(o))
+                return Object(C.a)([e, a.length ? a : void 0, n.length ? n : void 0, c.length ? c : void 0])
+              }),
+              b()(p()(c), '_flattenResults', function (e, t, n, a) {
                 var r = Object(tt.f)(t, tt.b.User),
                   o = Object(tt.f)(t, tt.b.NoResult),
                   i = Object(tt.f)(n, tt.b.Topic),
@@ -2517,9 +2535,9 @@
                   i = e.recentSearchType,
                   s = c.props.addQuery
                 t === A.b.SavedSearch
-                  ? c._submitQuery({ query: a, shouldAddToRecentSearch: !1, src: L.a.SavedSearchClick })
+                  ? c._submitQuery({ query: a, shouldAddToRecentSearch: !1, src: B.a.SavedSearchClick })
                   : i === A.a.Keyword
-                  ? c._submitQuery({ query: a, shouldAddToRecentSearch: !0, src: L.a.RecentSearchClick })
+                  ? c._submitQuery({ query: a, shouldAddToRecentSearch: !0, src: B.a.RecentSearchClick })
                   : i === A.a.Event
                   ? (c._routeTransition({ pathname: '/i/events/'.concat(a) }),
                     o && o.title && s({ event: r()(r()({}, o), {}, { id: a, type: A.a.Event }) }))
@@ -2584,7 +2602,7 @@
                 ;/^\s*$/.test(n) ||
                   (a.scribe({
                     action: 'search',
-                    data: { items: P.a.forTypeaheadResults(t), search_details: { query: n } },
+                    data: { items: F.a.forTypeaheadResults(t), search_details: { query: n } },
                   }),
                   c._submitQuery({ query: n, shouldAddToRecentSearch: !0 }))
               }),
@@ -2598,19 +2616,19 @@
                     break
                   case tt.b.Topic:
                   case tt.b.Hashtag:
-                    c._submitQuery({ query: e.data.topic, shouldAddToRecentSearch: !0, src: L.a.TypeaheadClick })
+                    c._submitQuery({ query: e.data.topic, shouldAddToRecentSearch: !0, src: B.a.TypeaheadClick })
                     break
                   case tt.b.Event:
                     e.data && e.data.url
-                      ? c._routeTransition({ pathname: R.b.parseInternalUrl(e.data.url) })
-                      : c._submitQuery({ query: e.data.topic, src: L.a.TypeaheadClick })
+                      ? c._routeTransition({ pathname: L.b.parseInternalUrl(e.data.url) })
+                      : c._submitQuery({ query: e.data.topic, src: B.a.TypeaheadClick })
                     break
                   case tt.b.NoResult:
                     var r = e.data.type
                     'user' === r
                       ? c._routeTransition({ pathname: '/'.concat(ct(a)) })
                       : 'topic' === r &&
-                        c._submitQuery({ query: a, shouldAddToRecentSearch: !0, src: L.a.TypeaheadClick })
+                        c._submitQuery({ query: a, shouldAddToRecentSearch: !0, src: B.a.TypeaheadClick })
                 }
               }),
               b()(p()(c), '_handleItemsChanged', function (e) {
@@ -2641,7 +2659,7 @@
                   n = e.shouldAddToRecentSearch,
                   a = void 0 !== n && n,
                   r = e.src,
-                  o = void 0 === r ? L.a.Typed : r,
+                  o = void 0 === r ? B.a.Typed : r,
                   i = c.props,
                   s = i.addQuery,
                   l = i.mode,
@@ -2658,7 +2676,7 @@
               (c.state = {
                 query: e.initialValue,
                 items: [],
-                lastSubmittedQuery: Object(x.a)(null === (o = e.location.query) || void 0 === o ? void 0 : o.q),
+                lastSubmittedQuery: Object(T.a)(null === (o = e.location.query) || void 0 === o ? void 0 : o.q),
               }),
               (c._withNewTypeaheadUI = c.context.featureSwitches.isTrue(
                 'responsive_web_account_search_readability_enabled',
@@ -2672,7 +2690,7 @@
                 key: 'componentDidMount',
                 value: function () {
                   this.props.shouldHandleSearchShortcut &&
-                    (this._unregisterSearchShortcutHandler = Object(B.b)(this._handleSearchShortcut))
+                    (this._unregisterSearchShortcutHandler = Object(P.b)(this._handleSearchShortcut))
                 },
               },
               {
@@ -2695,21 +2713,20 @@
                     s = (o.state || {}).searchPrefill,
                     l = this.props.initialValue || s,
                     u = !!o.state && !!o.state.searchFocused,
-                    d =
-                      't1' === this._rankedTypeaheadExperimentalValue || 't3' === this._rankedTypeaheadExperimentalValue
+                    d = lt.includes(this._rankedTypeaheadExperimentalValue)
                   return E.a.createElement(
                     w.a,
                     { behavioralEventContext: st },
                     E.a.createElement(
                       ee.a,
-                      { style: ut.root },
+                      { style: dt.root },
                       E.a.createElement(nt.default, {
                         filter: it,
                         forceVdlDisable: t,
                         getTopicExactMatch: c ? tt.h : void 0,
                         getUserExactMatch: c ? this._getUserExactMatch : void 0,
                         initialValue: l,
-                        inputStyle: ut.input,
+                        inputStyle: dt.input,
                         isCompact: n,
                         isInSidebar: a,
                         isOnHomepage: r,
@@ -2719,7 +2736,7 @@
                         onItemsChanged: this._handleItemsChanged,
                         onQueryChange: this._handleChange,
                         onSubmit: this._handleTypeaheadSubmit,
-                        orderResults: d ? this._reorderResults : void 0,
+                        orderResults: d ? this._orderResults : void 0,
                         placeholder: i,
                         ref: this._setInputRef,
                         renderEmptyState: this._renderSearchBoxEmptyState,
@@ -2741,21 +2758,21 @@
             n
           )
         })(E.a.Component)
-      b()(lt, 'defaultProps', {
+      b()(ut, 'defaultProps', {
         initialValue: '',
         isInSidebar: !1,
         placeholder: at,
         searchRoute: '/search',
         forceVdlDisable: !0,
       }),
-        b()(lt, 'contextType', ve.a)
-      var ut = ne.a.create(function (e) {
+        b()(ut, 'contextType', ve.a)
+      var dt = ne.a.create(function (e) {
         return {
           root: { alignItems: 'stretch', flexBasis: 0, flexDirection: 'row', flexGrow: 1 },
           input: { flexShrink: 1 },
         }
       })
-      t.default = Object(et.a)(I(lt))
+      t.default = Object(et.a)(x(ut))
     },
     AS3p: function (e, t, n) {
       'use strict'

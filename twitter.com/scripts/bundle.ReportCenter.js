@@ -13,7 +13,9 @@
         o,
         c,
         d,
-        m = {
+        g,
+        m,
+        p = {
           fragment: {
             argumentDefinitions: (a = [{ defaultValue: null, kind: 'LocalArgument', name: 'reportId' }]),
             kind: 'Fragment',
@@ -187,6 +189,123 @@
                                                   {
                                                     alias: null,
                                                     args: null,
+                                                    concreteType: 'TweetCore',
+                                                    kind: 'LinkedField',
+                                                    name: 'core',
+                                                    plural: !1,
+                                                    selections: [
+                                                      {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: 'UserResults',
+                                                        kind: 'LinkedField',
+                                                        name: 'user_results',
+                                                        plural: !1,
+                                                        selections: [
+                                                          {
+                                                            alias: null,
+                                                            args: null,
+                                                            concreteType: null,
+                                                            kind: 'LinkedField',
+                                                            name: 'result',
+                                                            plural: !1,
+                                                            selections: [
+                                                              o,
+                                                              {
+                                                                kind: 'InlineFragment',
+                                                                selections: [
+                                                                  {
+                                                                    alias: null,
+                                                                    args: null,
+                                                                    concreteType: 'ApiUser',
+                                                                    kind: 'LinkedField',
+                                                                    name: 'legacy',
+                                                                    plural: !1,
+                                                                    selections: [
+                                                                      (c = {
+                                                                        alias: null,
+                                                                        args: null,
+                                                                        kind: 'ScalarField',
+                                                                        name: 'description',
+                                                                        storageKey: null,
+                                                                      }),
+                                                                      {
+                                                                        alias: null,
+                                                                        args: null,
+                                                                        kind: 'ScalarField',
+                                                                        name: 'profile_image_url_https',
+                                                                        storageKey: null,
+                                                                      },
+                                                                      {
+                                                                        alias: null,
+                                                                        args: null,
+                                                                        kind: 'ScalarField',
+                                                                        name: 'protected',
+                                                                        storageKey: null,
+                                                                      },
+                                                                      {
+                                                                        alias: null,
+                                                                        args: null,
+                                                                        kind: 'ScalarField',
+                                                                        name: 'screen_name',
+                                                                        storageKey: null,
+                                                                      },
+                                                                      (d = {
+                                                                        alias: null,
+                                                                        args: null,
+                                                                        kind: 'ScalarField',
+                                                                        name: 'name',
+                                                                        storageKey: null,
+                                                                      }),
+                                                                      {
+                                                                        alias: null,
+                                                                        args: null,
+                                                                        kind: 'ScalarField',
+                                                                        name: 'url',
+                                                                        storageKey: null,
+                                                                      },
+                                                                      {
+                                                                        alias: null,
+                                                                        args: null,
+                                                                        kind: 'ScalarField',
+                                                                        name: 'verified',
+                                                                        storageKey: null,
+                                                                      },
+                                                                    ],
+                                                                    storageKey: null,
+                                                                  },
+                                                                  (g = {
+                                                                    alias: null,
+                                                                    args: null,
+                                                                    filters: null,
+                                                                    handle: 'defaultScalars',
+                                                                    key: '',
+                                                                    kind: 'LinkedHandle',
+                                                                    name: 'legacy',
+                                                                  }),
+                                                                  (m = {
+                                                                    alias: null,
+                                                                    args: null,
+                                                                    kind: 'ScalarField',
+                                                                    name: 'id',
+                                                                    storageKey: null,
+                                                                  }),
+                                                                ],
+                                                                type: 'User',
+                                                                abstractKey: null,
+                                                              },
+                                                            ],
+                                                            storageKey: null,
+                                                          },
+                                                        ],
+                                                        storageKey: null,
+                                                      },
+                                                    ],
+                                                    storageKey: null,
+                                                  },
+                                                  {
+                                                    alias: null,
+                                                    args: null,
                                                     concreteType: 'LegacyTweet',
                                                     kind: 'LinkedField',
                                                     name: 'legacy',
@@ -196,28 +315,35 @@
                                                         alias: null,
                                                         args: null,
                                                         kind: 'ScalarField',
+                                                        name: 'created_at',
+                                                        storageKey: null,
+                                                      },
+                                                      {
+                                                        alias: null,
+                                                        args: null,
+                                                        kind: 'ScalarField',
+                                                        name: 'display_text_range',
+                                                        storageKey: null,
+                                                      },
+                                                      {
+                                                        alias: null,
+                                                        args: null,
+                                                        kind: 'ScalarField',
                                                         name: 'full_text',
+                                                        storageKey: null,
+                                                      },
+                                                      {
+                                                        alias: null,
+                                                        args: null,
+                                                        kind: 'ScalarField',
+                                                        name: 'id_str',
                                                         storageKey: null,
                                                       },
                                                     ],
                                                     storageKey: null,
                                                   },
-                                                  (c = {
-                                                    alias: null,
-                                                    args: null,
-                                                    filters: null,
-                                                    handle: 'defaultScalars',
-                                                    key: '',
-                                                    kind: 'LinkedHandle',
-                                                    name: 'legacy',
-                                                  }),
-                                                  (d = {
-                                                    alias: null,
-                                                    args: null,
-                                                    kind: 'ScalarField',
-                                                    name: 'id',
-                                                    storageKey: null,
-                                                  }),
+                                                  g,
+                                                  m,
                                                 ],
                                                 type: 'Tweet',
                                                 abstractKey: null,
@@ -251,26 +377,11 @@
                                                     kind: 'LinkedField',
                                                     name: 'legacy',
                                                     plural: !1,
-                                                    selections: [
-                                                      {
-                                                        alias: null,
-                                                        args: null,
-                                                        kind: 'ScalarField',
-                                                        name: 'name',
-                                                        storageKey: null,
-                                                      },
-                                                      {
-                                                        alias: null,
-                                                        args: null,
-                                                        kind: 'ScalarField',
-                                                        name: 'description',
-                                                        storageKey: null,
-                                                      },
-                                                    ],
+                                                    selections: [d, c],
                                                     storageKey: null,
                                                   },
-                                                  c,
-                                                  d,
+                                                  g,
+                                                  m,
                                                 ],
                                                 type: 'User',
                                                 abstractKey: null,
@@ -288,7 +399,7 @@
                                 ],
                                 storageKey: null,
                               },
-                              d,
+                              m,
                             ],
                             type: 'User',
                             abstractKey: null,
@@ -305,14 +416,14 @@
             ],
           },
           params: {
-            id: 'dscPUcrQ-QsIqQof15ikkg',
+            id: 'kg6EzGqLSgv6hu9FVlILGg',
             metadata: {},
             name: 'ReportDetailQuery',
             operationKind: 'query',
             text: null,
           },
         }
-      ;(m.hash = 'd2facc36a120a5e92d74ef8c67b6b283'), (l.default = m)
+      ;(p.hash = 'd2facc36a120a5e92d74ef8c67b6b283'), (l.default = p)
     },
     '2MR/': function (e, l, n) {
       'use strict'
@@ -325,33 +436,33 @@
         o = n('v302'),
         c = u.a.b05a39b2,
         d = u.a.c566d3a5,
-        m = function (e) {
+        g = function (e) {
           return i.a.createElement(o.a, e)
         },
-        p = function (e) {
+        m = function (e) {
           var l = e.children,
             n = e.hideLabel,
             a = void 0 === n ? d : n,
             r = e.label,
             s = e.lang,
             u = e.render,
-            o = void 0 === u ? m : u,
-            p = e.revealLabel,
-            g = void 0 === p ? c : p,
+            o = void 0 === u ? g : u,
+            m = e.revealLabel,
+            p = void 0 === m ? c : m,
             y = i.a.useState(!1),
-            k = t()(y, 2),
-            f = k[0],
-            b = k[1]
+            _ = t()(y, 2),
+            k = _[0],
+            f = _[1]
           return o({
-            actionText: f ? a : g,
-            children: f ? l : r,
+            actionText: k ? a : p,
+            children: k ? l : r,
             lang: s,
             onActionClick: function () {
-              return b(!f)
+              return f(!k)
             },
           })
         }
-      ;(p.displayName = 'TweetDisclosure'), (l.a = p)
+      ;(m.displayName = 'TweetDisclosure'), (l.a = m)
     },
     '6mUz': function (e, l, n) {
       'use strict'
@@ -392,11 +503,104 @@
                   {
                     alias: null,
                     args: null,
+                    concreteType: 'TweetCore',
+                    kind: 'LinkedField',
+                    name: 'core',
+                    plural: !1,
+                    selections: [
+                      {
+                        alias: null,
+                        args: null,
+                        concreteType: 'UserResults',
+                        kind: 'LinkedField',
+                        name: 'user_results',
+                        plural: !1,
+                        selections: [
+                          {
+                            alias: null,
+                            args: null,
+                            concreteType: null,
+                            kind: 'LinkedField',
+                            name: 'result',
+                            plural: !1,
+                            selections: [
+                              {
+                                kind: 'InlineFragment',
+                                selections: [
+                                  {
+                                    alias: null,
+                                    args: null,
+                                    concreteType: 'ApiUser',
+                                    kind: 'LinkedField',
+                                    name: 'legacy',
+                                    plural: !1,
+                                    selections: [
+                                      {
+                                        alias: null,
+                                        args: null,
+                                        kind: 'ScalarField',
+                                        name: 'description',
+                                        storageKey: null,
+                                      },
+                                      {
+                                        alias: null,
+                                        args: null,
+                                        kind: 'ScalarField',
+                                        name: 'profile_image_url_https',
+                                        storageKey: null,
+                                      },
+                                      {
+                                        alias: null,
+                                        args: null,
+                                        kind: 'ScalarField',
+                                        name: 'protected',
+                                        storageKey: null,
+                                      },
+                                      {
+                                        alias: null,
+                                        args: null,
+                                        kind: 'ScalarField',
+                                        name: 'screen_name',
+                                        storageKey: null,
+                                      },
+                                      { alias: null, args: null, kind: 'ScalarField', name: 'name', storageKey: null },
+                                      { alias: null, args: null, kind: 'ScalarField', name: 'url', storageKey: null },
+                                      {
+                                        alias: null,
+                                        args: null,
+                                        kind: 'ScalarField',
+                                        name: 'verified',
+                                        storageKey: null,
+                                      },
+                                    ],
+                                    storageKey: null,
+                                  },
+                                ],
+                                type: 'User',
+                                abstractKey: null,
+                              },
+                            ],
+                            storageKey: null,
+                          },
+                        ],
+                        storageKey: null,
+                      },
+                    ],
+                    storageKey: null,
+                  },
+                  {
+                    alias: null,
+                    args: null,
                     concreteType: 'LegacyTweet',
                     kind: 'LinkedField',
                     name: 'legacy',
                     plural: !1,
-                    selections: [{ alias: null, args: null, kind: 'ScalarField', name: 'full_text', storageKey: null }],
+                    selections: [
+                      { alias: null, args: null, kind: 'ScalarField', name: 'created_at', storageKey: null },
+                      { alias: null, args: null, kind: 'ScalarField', name: 'display_text_range', storageKey: null },
+                      { alias: null, args: null, kind: 'ScalarField', name: 'full_text', storageKey: null },
+                      { alias: null, args: null, kind: 'ScalarField', name: 'id_str', storageKey: null },
+                    ],
                     storageKey: null,
                   },
                 ],
@@ -409,7 +613,7 @@
         ],
         type: 'TweetResults',
         abstractKey: null,
-        hash: '17b312610a3872b4c354fd17e3fc8227',
+        hash: 'f9dceef3811b2f8971d80c1e329fdc0a',
       }
       l.default = a
     },
@@ -474,90 +678,208 @@
         o = n.n(u),
         c = n('lnti'),
         d = n('jHSc'),
-        m = (n('enFi'), n('3XMw')),
-        p = n.n(m),
-        g = n('Fr3L'),
+        g = (n('enFi'), n('3XMw')),
+        m = n.n(g),
+        p = n('Fr3L'),
         y = n.p + 'report-detail-ear.0518acc5.png',
-        k = (n('z84I'), n('97Jx')),
-        f = n.n(k),
-        b = n('jAXQ'),
-        _ = n.n(b),
-        F = n('7N4s'),
-        v = n('v302'),
-        R = n('2MR/'),
-        w = n('rHpw'),
-        K = p.a.a78f7bd9,
-        E = function (e) {
+        _ = (n('z84I'), n('yiKp')),
+        k = n.n(_),
+        f = n('97Jx'),
+        F = n.n(f),
+        b = (n('1t7P'), n('jQ/y'), n('ho0z'), n('uFXj'), n('MWbm')),
+        K = n('jAXQ'),
+        v = n.n(K),
+        w = n('7N4s'),
+        h = n('2MR/'),
+        R = n('v302'),
+        S = n('r7g+'),
+        E = n('rHpw'),
+        T = m.a.a78f7bd9,
+        L = {
+          display_text_range: [0, 24],
+          favorite_count: 0,
+          favorited: !1,
+          id: 0,
+          lang: 'en',
+          permalink: '',
+          reply_count: 0,
+          retweet_count: 0,
+          retweeted: !1,
+        },
+        x = {
+          created_at: '',
+          default_profile: !1,
+          default_profile_image: !1,
+          fast_followers_count: 0,
+          favourites_count: 0,
+          follow_request_sent: !1,
+          has_custom_timelines: !1,
+          id: 0,
+          listed_count: 0,
+          location: '',
+          media_count: 0,
+          normal_followers_count: 0,
+          notifications: !1,
+          profile_banner_url: '',
+          show_all_inline_media: !1,
+          statuses_count: 0,
+          time_zone: '',
+          url: '',
+          utc_offset: 0,
+          withheld_in_countries: [],
+          entities: {},
+          followed_by: !1,
+          followers_count: 0,
+          following: !1,
+          friends_count: 0,
+          id_str: '0',
+          is_translator: !1,
+          translator_type: 'none',
+          withheld_scope: '',
+        },
+        I = function (e) {
           var l,
             t,
             r = e.tweet_results,
-            i = _()(void 0 !== a ? a : (a = n('Gi4s')), r),
-            s = o.a.useContext(F.b).isModal,
-            u = o.a.useCallback(
-              function (e) {
-                return o.a.createElement(v.a, f()({}, e, { style: [h.tombstone, s && h.wideScreen] }))
+            i = v()(void 0 !== a ? a : (a = n('Gi4s')), r),
+            s = o.a.useContext(w.b).isModal,
+            u =
+              null == i || null === (l = i.result) || void 0 === l || null === (t = l.legacy) || void 0 === t
+                ? void 0
+                : t.full_text,
+            c = o.a.useCallback(
+              function () {
+                return o.a.createElement(
+                  h.a,
+                  {
+                    label: T,
+                    render: function (e) {
+                      return o.a.createElement(R.a, F()({}, e, { style: C.tombstone }))
+                    },
+                  },
+                  u || '',
+                )
               },
-              [s],
+              [u],
             )
-          return null != i &&
-            null !== (l = i.result) &&
-            void 0 !== l &&
-            null !== (t = l.legacy) &&
-            void 0 !== t &&
-            t.full_text
-            ? o.a.createElement(R.a, { label: K, render: u }, i.result.legacy.full_text)
+          return null != i && i.result
+            ? (function (e) {
+                var l, n
+                if (
+                  null !== (l = e.core) &&
+                  void 0 !== l &&
+                  null !== (n = l.user_results.result) &&
+                  void 0 !== n &&
+                  n.legacy &&
+                  e.legacy
+                ) {
+                  var a = e.core.user_results.result.legacy,
+                    t = {
+                      tweet: k()(
+                        k()({}, L),
+                        {},
+                        {
+                          id_str: e.legacy.id_str || '',
+                          created_at: e.legacy.created_at || '',
+                          text: e.legacy.full_text || '',
+                          tombstoneInfo: {
+                            richText: { text: 'abc', entities: [] },
+                            richRevealText: { rtl: !1, text: 'View', entities: [] },
+                            text: 'abc',
+                          },
+                          user: k()(
+                            k()({}, x),
+                            {},
+                            {
+                              description: a.description || '',
+                              profile_image_url_https: a.profile_image_url_https || '',
+                              protected: a.protected || !1,
+                              screen_name: a.screen_name || '',
+                              name: a.name || '',
+                              url: a.url || '',
+                              verified: a.verified || !1,
+                            },
+                          ),
+                        },
+                      ),
+                    }
+                  return o.a.createElement(
+                    b.a,
+                    { style: [C.tweet, s && C.wideScreen] },
+                    o.a.createElement(
+                      S.a,
+                      F()({}, t, {
+                        renderActionsBar: function () {
+                          return null
+                        },
+                        renderTombstone: function () {
+                          return c()
+                        },
+                      }),
+                    ),
+                  )
+                }
+                return null
+              })(i.result)
             : null
         },
-        h = w.a.create(function (e) {
+        U = o.a.memo(I),
+        C = E.a.create(function (e) {
           return {
-            tombstone: { border: 'none', marginVertical: e.spaces.space20 },
+            tweet: {
+              borderWidth: e.borderWidths.small,
+              borderColor: e.colors.gray100,
+              borderStyle: 'solid',
+              borderRadius: e.borderRadii.xLarge,
+              marginVertical: e.spaces.space32,
+            },
+            tombstone: { border: 'none', marginVertical: e.spaces.space8 },
             wideScreen: { marginHorizontal: e.spaces.space32 },
           }
         }),
-        T = n('t62R'),
-        L = function (e) {
+        D = n('t62R'),
+        z = function (e) {
           var l = e.user_results,
-            a = _()(void 0 !== t ? t : (t = n('r/Jf')), l)
-          return o.a.createElement(T.b, null, a.__typename)
+            a = v()(void 0 !== t ? t : (t = n('r/Jf')), l)
+          return o.a.createElement(D.b, null, a.__typename)
         },
-        S = function (e) {
+        B = function (e) {
           var l = e.report_entity_results,
-            a = _()(void 0 !== r ? r : (r = n('xYG4')), l)
+            a = v()(void 0 !== r ? r : (r = n('xYG4')), l)
           switch (a.__typename) {
             case 'TweetResults':
-              return o.a.createElement(E, { tweet_results: a })
+              return o.a.createElement(U, { tweet_results: a })
             case 'UserResults':
-              return o.a.createElement(L, { user_results: a })
+              return o.a.createElement(z, { user_results: a })
             default:
               return null
           }
         },
-        x = function (e) {
+        j = function (e) {
           var l = e.report,
-            a = _()(void 0 !== i ? i : (i = n('6mUz')), l)
+            a = v()(void 0 !== i ? i : (i = n('6mUz')), l)
           return o.a.createElement(
             o.a.Fragment,
             null,
             a.map(function (e, l) {
-              return o.a.createElement(S, { key: l, report_entity_results: e })
+              return o.a.createElement(B, { key: l, report_entity_results: e })
             }),
           )
         },
-        I = n('IAZG'),
-        D = n('MWbm'),
-        U = n('/yvb'),
-        C = n('pjBI'),
-        z = n('3rX5'),
-        B = n('zCf4'),
-        j = p.a.e37836f8,
-        Q = p.a.ccf2f24e,
-        A = p.a.d7b32a4d,
-        G = p.a.b772cd65,
-        H = 'gray700',
-        M = void 0 !== s ? s : (s = n('+hxm')),
-        O = function (e) {
+        A = n('IAZG'),
+        V = n('/yvb'),
+        G = n('pjBI'),
+        H = n('3rX5'),
+        M = n('zCf4'),
+        O = m.a.e37836f8,
+        P = m.a.ccf2f24e,
+        Q = m.a.d7b32a4d,
+        J = m.a.b772cd65,
+        X = 'gray700',
+        q = void 0 !== s ? s : (s = n('+hxm')),
+        N = function (e) {
           return o.a.createElement(
-            U.a,
+            V.a,
             {
               disabled: !1,
               onPress: function () {
@@ -566,15 +888,15 @@
               size: 'small',
               type: 'primaryFilled',
             },
-            G,
+            J,
           )
         },
-        V = function () {
+        W = function () {
           var e,
             l,
             n,
-            a = Object(B.h)(),
-            t = Object(I.a)(M, { reportId: a.reportId || '' }),
+            a = Object(M.h)(),
+            t = Object(A.a)(q, { reportId: a.reportId || '' }),
             r =
               null == t ||
               null === (e = t.viewer_v2) ||
@@ -597,48 +919,48 @@
             o.a.Fragment,
             null,
             o.a.createElement(
-              C.a,
-              { color: H },
-              o.a.createElement(T.b, { color: H, weight: 'bold' }, Q),
-              o.a.createElement(T.b, { color: H }, i),
+              G.a,
+              { color: X },
+              o.a.createElement(D.b, { color: X, weight: 'bold' }, P),
+              o.a.createElement(D.b, { color: X }, i),
             ),
-            o.a.createElement(T.b, { size: 'title3', weight: 'heavy' }, s),
-            d ? o.a.createElement(x, { report: Object(c.a)(d) }) : null,
-            o.a.createElement(T.b, { size: 'headline2', style: P.headline, weight: 'heavy' }, A),
-            o.a.createElement(T.b, { color: H, size: 'subtext2', weight: 'normal' }, u),
+            o.a.createElement(D.b, { size: 'title3', weight: 'heavy' }, s),
+            d ? o.a.createElement(j, { report: Object(c.a)(d) }) : null,
+            o.a.createElement(D.b, { size: 'headline2', style: Y.headline, weight: 'heavy' }, Q),
+            o.a.createElement(D.b, { color: X, size: 'subtext2', weight: 'normal' }, u),
           )
         },
-        P =
+        Y =
           ((l.default = function () {
-            var e = Object(B.f)(),
-              l = o.a.useContext(F.b).isModal
+            var e = Object(M.f)(),
+              l = o.a.useContext(w.b).isModal
             return o.a.createElement(
               d.b,
               {
                 backButtonType: 'close',
-                containerStyle: P.root,
-                documentTitle: j,
+                containerStyle: Y.root,
+                documentTitle: O,
                 history: e,
-                rightControl: O(e),
-                title: j,
+                rightControl: N(e),
+                title: O,
               },
               o.a.createElement(
-                D.a,
-                { style: P.parentContainer },
+                b.a,
+                { style: Y.parentContainer },
                 o.a.createElement(
-                  D.a,
-                  { style: P.imageContainer },
-                  o.a.createElement(z.a, { accessibilityLabel: '', source: y, style: P.image }),
+                  b.a,
+                  { style: Y.imageContainer },
+                  o.a.createElement(H.a, { accessibilityLabel: '', source: y, style: Y.image }),
                 ),
                 o.a.createElement(
-                  D.a,
-                  { style: [P.innerContainer, l ? P.wideScreen : P.narrowScreen] },
-                  o.a.createElement(g.a, { errorConfig: { context: 'REPORT_DETAIL' } }, o.a.createElement(V, null)),
+                  b.a,
+                  { style: [Y.innerContainer, l ? Y.wideScreen : Y.narrowScreen] },
+                  o.a.createElement(p.a, { errorConfig: { context: 'REPORT_DETAIL' } }, o.a.createElement(W, null)),
                 ),
               ),
             )
           }),
-          w.a.create(function (e) {
+          E.a.create(function (e) {
             return {
               root: { flexShrink: 1, flexGrow: 1, paddingBottom: e.spaces.space32 },
               parentContainer: { alignItems: 'center' },
@@ -648,7 +970,7 @@
               imageContainer: { height: '150px', width: '150px', marginBottom: e.spaces.space12 },
               wideScreen: { marginBottom: e.spaces.space48, marginHorizontal: e.spaces.space72 },
               narrowScreen: {
-                marginBottom: 'calc('.concat(e.spaces.space48, ' + ').concat(w.a.iPhoneOffsetBottom, ')'),
+                marginBottom: 'calc('.concat(e.spaces.space48, ' + ').concat(E.a.iPhoneOffsetBottom, ')'),
                 marginHorizontal: e.spaces.space32,
               },
               tombstone: { border: 'none', marginHorizontal: e.spaces.space32, marginVertical: e.spaces.space20 },

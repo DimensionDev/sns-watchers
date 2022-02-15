@@ -25658,112 +25658,109 @@
     'S3l+': function (e, t, n) {
       'use strict'
       n.d(t, 'q', function () {
-        return $
+        return Z
       }),
         n.d(t, 'o', function () {
-          return ee
+          return $
         }),
         n.d(t, 'r', function () {
-          return te
+          return ee
         }),
         n.d(t, 's', function () {
-          return ne
+          return te
         }),
         n.d(t, 'p', function () {
-          return re
+          return ne
         }),
         n.d(t, 'U', function () {
-          return ie
+          return re
         }),
         n.d(t, 'y', function () {
-          return oe
+          return ie
         }),
         n.d(t, 'u', function () {
-          return ae
+          return oe
         }),
         n.d(t, 'W', function () {
-          return se
+          return ae
         }),
         n.d(t, 'B', function () {
-          return ce
-        }),
-        n.d(t, 'I', function () {
-          return le
-        }),
-        n.d(t, 'P', function () {
-          return ue
-        }),
-        n.d(t, 't', function () {
-          return de
+          return se
         }),
         n.d(t, 'J', function () {
-          return pe
+          return ce
+        }),
+        n.d(t, 'Q', function () {
+          return le
+        }),
+        n.d(t, 't', function () {
+          return ue
+        }),
+        n.d(t, 'K', function () {
+          return de
         }),
         n.d(t, 'T', function () {
-          return fe
+          return pe
         }),
         n.d(t, 'V', function () {
-          return he
+          return fe
         }),
         n.d(t, 'R', function () {
-          return me
+          return he
         }),
         n.d(t, 'S', function () {
-          return ve
+          return me
         }),
         n.d(t, 'x', function () {
-          return ge
+          return ve
         }),
         n.d(t, 'w', function () {
-          return ye
+          return ge
         }),
         n.d(t, 'E', function () {
-          return be
+          return ye
         }),
         n.d(t, 'z', function () {
-          return _e
+          return be
         }),
         n.d(t, 'A', function () {
-          return we
+          return _e
         }),
         n.d(t, 'k', function () {
+          return we
+        }),
+        n.d(t, 'G', function () {
           return Ee
         }),
-        n.d(t, 'F', function () {
+        n.d(t, 'D', function () {
           return Ce
         }),
-        n.d(t, 'D', function () {
+        n.d(t, 'C', function () {
           return ke
         }),
-        n.d(t, 'C', function () {
+        n.d(t, 'I', function () {
           return Se
         }),
         n.d(t, 'H', function () {
           return Te
         }),
-        n.d(t, 'G', function () {
+        n.d(t, 'P', function () {
           return xe
         }),
         n.d(t, 'O', function () {
           return Ie
         }),
-        n.d(t, 'N', function () {
+        n.d(t, 'j', function () {
           return Oe
         }),
-        n.d(t, 'j', function () {
+        n.d(t, 'L', function () {
           return Re
         }),
-        n.d(t, 'K', function () {
+        n.d(t, 'M', function () {
           return Ae
         }),
-        n.d(t, 'L', function () {
+        n.d(t, 'N', function () {
           return Pe
-        }),
-        n.d(t, 'M', function () {
-          return Le
-        }),
-        n.d(t, 'Q', function () {
-          return Me
         })
       var r = n('KEM+'),
         i = n.n(r),
@@ -25820,8 +25817,11 @@
         n.d(t, 'v', function () {
           return y.m
         }),
-        n.d(t, 'X', function () {
+        n.d(t, 'F', function () {
           return y.n
+        }),
+        n.d(t, 'X', function () {
+          return y.o
         })
       var b = ['targetedLocations'],
         _ = {
@@ -25890,18 +25890,17 @@
         G = 'rweb/quickPromote/setPromoteErrorCode',
         Y = 'rweb/quickPromote/paymentMethods',
         X = 'rweb/quickPromote/setPaymentMethodsFetchStatus',
-        Q = 'rweb/quickPromote/setSelectedPaymentMethod',
-        J = Object.freeze({
+        Q = Object.freeze({
           REQUEST: 'rweb/quickPromote/eligibilityRequest',
           SUCCESS: 'rweb/quickPromote/eligibilitySuccess',
           FAILURE: 'rweb/quickPromote/eligibilityFailure',
         }),
-        Z = Object.freeze({
+        J = Object.freeze({
           REQUEST: 'rweb/quickPromote/promoteRequest',
           SUCCESS: 'rweb/quickPromote/promoteSuccess',
           FAILURE: 'rweb/quickPromote/promoteFailure',
         }),
-        $ = function (e) {
+        Z = function (e) {
           var t,
             n,
             r =
@@ -25912,7 +25911,7 @@
               'US'
           return 'XX' === r ? 'US' : r.toUpperCase()
         },
-        ee = function (e) {
+        $ = function (e) {
           var t = e.quickPromote,
             n = t.targeting,
             r = u()(n.targetedLocations, 1)[0].targeting_value,
@@ -25924,18 +25923,18 @@
             p = Object(v.a)(i, ['initialTargetedLocationsFetchStatus', 'locationQuery'])
           return JSON.stringify(a()(a()({}, p), {}, { location: r, dailyBudget: l, currency: s, objective: d }))
         },
-        te = function (e, t) {
+        ee = function (e, t) {
           var n
           return null === (n = e.quickPromote.eligibility[t]) || void 0 === n ? void 0 : n.eligibility
         },
-        ne = function (e, t) {
+        te = function (e, t) {
           var n
           return (
             (null === (n = e.quickPromote.eligibility[t]) || void 0 === n ? void 0 : n.eligibilityFetchStatus) ||
             p.a.NONE
           )
         },
-        re = function (e) {
+        ne = function (e) {
           return e.quickPromote.selectedPaymentMethod
             ? e.quickPromote.selectedPaymentMethod
             : Object(g.a)(e.quickPromote.paymentMethods)
@@ -25948,111 +25947,108 @@
               }) ||
               null
         },
-        ie = function (e) {
+        re = function (e) {
           return { type: I, payload: { targeting: e } }
         },
-        oe = function (e) {
+        ie = function (e) {
           return { type: M, payload: { budget: e } }
         },
-        ae = function (e) {
+        oe = function (e) {
           return { type: E, payload: { adsAccount: e } }
         },
-        se = function (e) {
+        ae = function (e) {
           return { type: k, payload: { vatInfo: e } }
         },
-        ce = function (e) {
+        se = function (e) {
           return { type: S, payload: { campaigns: e } }
         },
-        le = function (e) {
+        ce = function (e) {
           return { type: C, payload: { fundingInstruments: e } }
         },
-        ue = function (e) {
+        le = function (e) {
           return { type: T, payload: { selectedFundingInstrument: e } }
         },
-        de = function (e) {
+        ue = function (e) {
           return { type: x, payload: { fetchStatus: e } }
         },
-        pe = function (e) {
+        de = function (e) {
           return { type: R, payload: { fetchStatus: e } }
         },
-        fe = function (e) {
+        pe = function (e) {
           return { type: A, payload: { targetedLocations: e } }
         },
-        he = function (e) {
+        fe = function (e) {
           return { type: O, payload: { locationQuery: e } }
         },
-        me = function (e) {
+        he = function (e) {
           return { type: P, payload: { ageBucket: e } }
         },
-        ve = function (e) {
+        me = function (e) {
           return { type: L, payload: { gender: e } }
         },
-        ge = function (e) {
+        ve = function (e) {
           return { type: D, payload: { fetchStatus: e } }
         },
-        ye = function (e, t) {
+        ge = function (e, t) {
           return { type: F, payload: { availableBudgets: e, currency: t } }
         },
-        be = function (e) {
+        ye = function (e) {
           return { type: B, payload: { dailyBudget: e } }
         },
-        _e = function (e) {
+        be = function (e) {
           return { type: N, payload: { durationDays: e } }
         },
-        we = function (e) {
+        _e = function (e) {
           return { type: j, payload: { errorMessage: e } }
         },
-        Ee = function (e) {
+        we = function (e) {
           return function (t, n, r) {
             var i = r.api
             return Object(d.b)(t, { request: i.QuickPromote.getQuickPromoteEligibility, params: e })({
-              actionTypes: J,
+              actionTypes: Q,
               context: 'FETCH_ELIGIBILITY',
               meta: e,
             })
           }
         },
-        Ce = function (e, t) {
+        Ee = function (e, t) {
           return { type: W, payload: { eligibility: t, tweetId: e } }
         },
-        ke = function (e) {
+        Ce = function (e) {
           return { type: H, payload: { fetchStatus: e } }
         },
-        Se = function (e) {
+        ke = function (e) {
           return { type: K, payload: { coupons: e } }
         },
-        Te = function (e) {
+        Se = function (e) {
           return { type: z, payload: { enrollCouponStatus: e } }
         },
-        xe = function (e) {
+        Te = function (e) {
           return { type: V, payload: { enrollCouponErrorCode: e } }
         },
-        Ie = function (e) {
+        xe = function (e) {
           return { type: q, payload: { promoteFetchStatus: e } }
         },
-        Oe = function (e) {
+        Ie = function (e) {
           return { type: G, payload: { promoteErrorCode: e } }
         },
-        Re = function (e) {
+        Oe = function (e) {
           return function (t, n, r) {
             var i = r.api
             return Object(d.b)(t, { request: i.QuickPromote.createPromotion, params: e })({
-              actionTypes: Z,
+              actionTypes: J,
               context: 'FETCH_PROMOTE',
             })
           }
         },
-        Ae = function (e) {
+        Re = function (e) {
           return { type: U, payload: { objective: e } }
         },
-        Pe = function (e) {
+        Ae = function (e) {
           return { type: Y, payload: { paymentMethods: e } }
         },
-        Le = function (e) {
+        Pe = function (e) {
           return { type: X, payload: { fetchStatus: e } }
-        },
-        Me = function (e) {
-          return { type: Q, payload: { selectedPaymentMethod: e } }
         }
       f.a.register(
         i()({}, 'quickPromote', function () {
@@ -26155,62 +26151,62 @@
               break
             case F:
               if (t.payload) {
-                var $ = t.payload,
-                  ee = $.availableBudgets,
-                  te = $.currency
+                var Z = t.payload,
+                  $ = Z.availableBudgets,
+                  ee = Z.currency
                 return a()(
                   a()({}, e),
                   {},
-                  { budget: a()(a()({}, e.budget), {}, { availableBudgets: ee, currency: te }) },
+                  { budget: a()(a()({}, e.budget), {}, { availableBudgets: $, currency: ee }) },
                 )
               }
               break
             case B:
               if (t.payload) {
-                var ne = t.payload.dailyBudget
-                return a()(a()({}, e), {}, { budget: a()(a()({}, e.budget), {}, { dailyBudget: ne }) })
+                var te = t.payload.dailyBudget
+                return a()(a()({}, e), {}, { budget: a()(a()({}, e.budget), {}, { dailyBudget: te }) })
               }
               break
             case N:
               if (t.payload) {
-                var re = t.payload.durationDays
-                return a()(a()({}, e), {}, { budget: a()(a()({}, e.budget), {}, { durationDays: re }) })
+                var ne = t.payload.durationDays
+                return a()(a()({}, e), {}, { budget: a()(a()({}, e.budget), {}, { durationDays: ne }) })
               }
               break
             case j:
               if (t.payload) {
-                var ie = t.payload.errorMessage
-                return a()(a()({}, e), {}, { budget: a()(a()({}, e.budget), {}, { errorMessage: ie }) })
+                var re = t.payload.errorMessage
+                return a()(a()({}, e), {}, { budget: a()(a()({}, e.budget), {}, { errorMessage: re }) })
               }
               break
             case W:
               if (t.payload) {
-                var oe = t.payload,
-                  ae = oe.eligibility,
-                  se = oe.tweetId
+                var ie = t.payload,
+                  oe = ie.eligibility,
+                  ae = ie.tweetId
                 return a()(
                   a()({}, e),
                   {},
-                  { eligibility: i()({}, se, a()(a()({}, e.eligibility[se]), {}, { eligibility: ae })) },
+                  { eligibility: i()({}, ae, a()(a()({}, e.eligibility[ae]), {}, { eligibility: oe })) },
                 )
               }
               break
-            case J.REQUEST:
+            case Q.REQUEST:
+              var se = t.meta.tweetId
+              return a()(
+                a()({}, e),
+                {},
+                { eligibility: a()(a()({}, e.eligibility), {}, i()({}, se, { eligibilityFetchStatus: p.a.LOADING })) },
+              )
+            case Q.FAILURE:
               var ce = t.meta.tweetId
               return a()(
                 a()({}, e),
                 {},
-                { eligibility: a()(a()({}, e.eligibility), {}, i()({}, ce, { eligibilityFetchStatus: p.a.LOADING })) },
+                { eligibility: a()(a()({}, e.eligibility), {}, i()({}, ce, { eligibilityFetchStatus: p.a.FAILED })) },
               )
-            case J.FAILURE:
+            case Q.SUCCESS:
               var le = t.meta.tweetId
-              return a()(
-                a()({}, e),
-                {},
-                { eligibility: a()(a()({}, e.eligibility), {}, i()({}, le, { eligibilityFetchStatus: p.a.FAILED })) },
-              )
-            case J.SUCCESS:
-              var ue = t.meta.tweetId
               return a()(
                 a()({}, e),
                 {},
@@ -26218,75 +26214,69 @@
                   eligibility: a()(
                     a()({}, e.eligibility),
                     {},
-                    i()({}, ue, { eligibilityFetchStatus: p.a.LOADED, eligibility: t.payload }),
+                    i()({}, le, { eligibilityFetchStatus: p.a.LOADED, eligibility: t.payload }),
                   ),
                 },
               )
             case H:
               if (t.payload) {
-                var de = t.payload.fetchStatus
-                return a()(a()({}, e), {}, { couponsFetchStatus: de })
+                var ue = t.payload.fetchStatus
+                return a()(a()({}, e), {}, { couponsFetchStatus: ue })
               }
               break
             case K:
               if (t.payload) {
-                var pe = t.payload.coupons
-                return a()(a()({}, e), {}, { coupons: pe })
+                var de = t.payload.coupons
+                return a()(a()({}, e), {}, { coupons: de })
               }
               break
             case U:
               if (t.payload) {
-                var fe = t.payload.objective
-                return a()(a()({}, e), {}, { objective: fe })
+                var pe = t.payload.objective
+                return a()(a()({}, e), {}, { objective: pe })
               }
               break
             case q:
               if (t.payload) {
-                var he = t.payload.promoteFetchStatus
-                return a()(a()({}, e), {}, { promoteStatus: he })
+                var fe = t.payload.promoteFetchStatus
+                return a()(a()({}, e), {}, { promoteStatus: fe })
               }
               break
             case G:
               if (t.payload) {
-                var me = t.payload.promoteErrorCode
-                return a()(a()({}, e), {}, { promoteErrorCode: me })
+                var he = t.payload.promoteErrorCode
+                return a()(a()({}, e), {}, { promoteErrorCode: he })
               }
               break
             case z:
               if (t.payload) {
-                var ve = t.payload.enrollCouponStatus
-                return a()(a()({}, e), {}, { enrollCouponStatus: ve })
+                var me = t.payload.enrollCouponStatus
+                return a()(a()({}, e), {}, { enrollCouponStatus: me })
               }
               break
             case V:
               if (t.payload) {
-                var ge = t.payload.enrollCouponErrorCode
-                return a()(a()({}, e), {}, { enrollCouponErrorCode: ge })
+                var ve = t.payload.enrollCouponErrorCode
+                return a()(a()({}, e), {}, { enrollCouponErrorCode: ve })
               }
               break
             case Y:
               if (t.payload) {
-                var ye = t.payload.paymentMethods
-                return a()(a()({}, e), {}, { paymentMethods: ye })
+                var ge = t.payload.paymentMethods
+                return a()(a()({}, e), {}, { paymentMethods: ge })
               }
               break
             case X:
               if (t.payload) {
-                var be = t.payload.fetchStatus
-                return a()(a()({}, e), {}, { paymentMethodsFetchStatus: be })
+                var ye = t.payload.fetchStatus
+                return a()(a()({}, e), {}, { paymentMethodsFetchStatus: ye })
               }
               break
-            case Q:
-              if (t.payload) {
-                var _e = t.payload.selectedPaymentMethod
-                return a()(a()({}, e), {}, { selectedPaymentMethod: _e })
-              }
-              break
-            case Z.REQUEST:
+            case J.REQUEST:
               return a()(a()({}, e), {}, { promoteStatus: p.a.LOADING })
-            case Z.FAILURE:
+            case J.FAILURE:
               return a()(a()({}, e), {}, { promoteStatus: p.a.FAILED })
-            case Z.SUCCESS:
+            case J.SUCCESS:
               return a()(a()({}, e), {}, { promoteStatus: p.a.LOADED })
             default:
               return t.type, e
@@ -35345,15 +35335,16 @@
         C = function (e) {
           var t = e.client,
             n = e.doubleOptIn,
-            r = e.revueAccountId,
-            i = e.via
-          return function (e, o, a) {
-            var c = a.api,
-              l = { doubleOptIn: n, revueAccountId: r, via: i, client: t }
-            return Object(s.b)(e, { params: l, request: c.BizProfiles.subscribeToRevueNewsletter })({
+            r = e.element,
+            i = e.revueAccountId,
+            o = e.via
+          return function (e, a, c) {
+            var l = c.api,
+              u = { doubleOptIn: n, revueAccountId: i, via: o, client: t, element: r }
+            return Object(s.b)(e, { params: u, request: l.BizProfiles.subscribeToRevueNewsletter })({
               actionTypes: h,
               context: 'SUBSCRIBE_TO_REVUE_NEWSLETTER',
-              meta: { revueAccountId: r },
+              meta: { revueAccountId: i },
             })
           }
         }
@@ -55451,7 +55442,7 @@
                         : c(h.id_str, { promotedContent: f })
                       )
                         .then(function () {
-                          a < 2 && t.isTrue('focused_timeline_actions_like_toasts_enabled')
+                          a + 1 < t.getNumberValue('focused_timeline_actions_onboarding_likes')
                             ? i.props.addToast({ text: Ht })
                             : i.props.addToast({ ariaOnly: !0, text: Kt }),
                             l && l()
@@ -55693,7 +55684,7 @@
                 var e = i.props,
                   t = e.misinfoNudgeActionTaken,
                   n = e.sessionToken
-                J.a.setString(Object(Be.a)('https://twitter.com'.concat(i.props.tweet.permalink), n)),
+                J.a.setString(Object(Be.a)(i.props.tweet.permalink, n)),
                   i.props.addToast({ text: an }),
                   i._scribeAction('copy_link'),
                   i._scribeMisInfoNudgeAction({
@@ -55719,18 +55710,17 @@
                   o = n.sessionToken,
                   a = n.tweet,
                   s = st.a.getOriginalTweet(a),
-                  c = Object(Be.a)('https://twitter.com'.concat(s.permalink), o),
-                  l = {
-                    title: Dt({ fullName: s.user.name, screenName: s.user.screen_name }),
-                    text: Ft({
-                      fullName: s.user.name,
-                      screenName: s.user.screen_name,
-                      tweet: ((e = s.text), (t = document.createElement('textarea')), (t.innerHTML = e), t.value),
-                    }),
-                    url: c,
-                  }
+                  c = i.context.featureSwitches.isTrue('responsive_web_share_only_tweet_url_omit_title_and_text'),
+                  l = Object(Be.a)(s.permalink, o),
+                  u = Dt({ fullName: s.user.name, screenName: s.user.screen_name }),
+                  d = Ft({
+                    fullName: s.user.name,
+                    screenName: s.user.screen_name,
+                    tweet: ((e = s.text), (t = document.createElement('textarea')), (t.innerHTML = e), t.value),
+                  }),
+                  p = c ? { url: l } : { title: u, text: d, url: l }
                 navigator
-                  .share(l)
+                  .share(p)
                   .then(function () {
                     i._scribeAction('share'),
                       i._scribeMisInfoNudgeAction({
@@ -57711,7 +57701,7 @@
     },
     y0iL: function (e, t, n) {
       'use strict'
-      n.d(t, 'n', function () {
+      n.d(t, 'o', function () {
         return N
       }),
         n.d(t, 'a', function () {
@@ -57752,6 +57742,9 @@
         }),
         n.d(t, 'b', function () {
           return ne
+        }),
+        n.d(t, 'n', function () {
+          return re
         })
       var r = n('ddV6'),
         i = n.n(r),
@@ -57864,70 +57857,68 @@
         N = [a.a.LOADING, a.a.LOADED],
         j = function (e, t, n, r, o) {
           return function (a, s, c) {
-            c.api
+            c.api, c.featureSwitches
             var l,
-              d = c.featureSwitches.isTrue('responsive_web_qp_payment_select_enabled'),
-              f = H(s()),
-              m = s(),
-              v = m.session.user_id,
-              g = m.quickPromote,
-              y = g.targeting,
-              b = y.ageBucket,
-              _ = y.gender,
-              w = i()(y.targetedLocations, 1)[0].targeting_value,
-              E = g.budget,
-              C = E.dailyBudget,
-              k = E.durationDays,
-              S = g.account.selectedFundingInstrument,
-              T = g.objective,
-              x = g.coupons,
-              I = null === (l = s().quickPromote.account.adsAccount) || void 0 === l ? void 0 : l.id,
-              O = Object(h.p)(s()),
-              A = d ? (null == O ? void 0 : O.id) : null == S ? void 0 : S.id
+              d = H(s()),
+              f = s(),
+              m = f.session.user_id,
+              v = f.quickPromote,
+              g = v.targeting,
+              y = g.ageBucket,
+              b = g.gender,
+              _ = i()(g.targetedLocations, 1)[0].targeting_value,
+              w = v.budget,
+              E = w.dailyBudget,
+              C = w.durationDays,
+              k = v.account.selectedFundingInstrument,
+              S = v.objective,
+              T = v.coupons,
+              x = null === (l = s().quickPromote.account.adsAccount) || void 0 === l ? void 0 : l.id,
+              I = null == k ? void 0 : k.id
             if (N.includes(s().quickPromote.promoteStatus)) return Promise.resolve()
-            if (!I || !v)
+            if (!x || !m)
               return (
-                Object(R.p)(o)(R.n.promotionError('Unauthorized')), a(Object(h.N)('Unauthorized')), Promise.resolve()
+                Object(R.p)(o)(R.n.promotionError('Unauthorized')), a(Object(h.O)('Unauthorized')), Promise.resolve()
               )
-            if (!A)
+            if (!I)
               return (
                 Object(R.p)(o)(R.n.promotionError('MissingFundingInstrument')),
-                a(Object(h.N)('MissingFundingInstrument')),
+                a(Object(h.O)('MissingFundingInstrument')),
                 Promise.resolve()
               )
-            a(Object(h.N)(null))
-            var P = Math.round(1e6 * C),
-              L = P * k,
-              M = !(null == x || !x.existing_balance.length)
+            a(Object(h.O)(null))
+            var O = Math.round(1e6 * E),
+              A = O * C,
+              P = !(null == T || !T.existing_balance.length)
             return (
               Object(R.p)(o)(
                 R.n.promotionCall({
-                  dailyBudgetMicros: P,
-                  totalBudgetMicros: L,
-                  ageBucket: b,
-                  gender: _,
-                  location: w,
-                  objective: T,
-                  withCoupon: M,
+                  dailyBudgetMicros: O,
+                  totalBudgetMicros: A,
+                  ageBucket: y,
+                  gender: b,
+                  location: _,
+                  objective: S,
+                  withCoupon: P,
                 }),
               ),
               Object(u.b)(
                 'fetchPromote',
                 a(
                   Object(h.j)({
-                    userId: v,
-                    accountId: I,
-                    fundingInstrumentId: A,
+                    userId: m,
+                    accountId: x,
+                    fundingInstrumentId: I,
                     tweetId: n,
-                    budget: { daily_local_micros: ''.concat(P), total_local_micros: ''.concat(L) },
-                    targeting: f,
-                    objective: T,
+                    budget: { daily_local_micros: ''.concat(O), total_local_micros: ''.concat(A) },
+                    targeting: d,
+                    objective: S,
                   }),
                 ),
               )
                 .catch(function () {
                   return (
-                    a(Object(h.N)('NetworkError')), Object(R.p)(o)(R.n.promotionError('NetworkError')), { type: 'fail' }
+                    a(Object(h.O)('NetworkError')), Object(R.p)(o)(R.n.promotionError('NetworkError')), { type: 'fail' }
                   )
                 })
                 .then(function (i) {
@@ -57939,27 +57930,27 @@
                       (null === (s = i.quick_promote_campaign_v2) || void 0 === s ? void 0 : s.__typename)
                     )
                       return (
-                        a(Object(h.N)(i.quick_promote_campaign_v2.error_code)),
+                        a(Object(h.O)(i.quick_promote_campaign_v2.error_code)),
                         Object(R.p)(o)(
                           R.n.promotionError(
                             (null === (u = i.quick_promote_campaign_v2) || void 0 === u ? void 0 : u.error_code) ||
                               'QuickPromoteError',
                           ),
                         ),
-                        a(W(v, !0))
+                        a(W(m, !0))
                       )
                     if (
                       'PromotionIneligible' ===
                       (null === (c = i.quick_promote_campaign_v2) || void 0 === c ? void 0 : c.response_code)
                     )
-                      Object(R.p)(o)(R.n.promotionError('PromotionIneligible')), a(Object(h.N)('PromotionIneligible'))
+                      Object(R.p)(o)(R.n.promotionError('PromotionIneligible')), a(Object(h.O)('PromotionIneligible'))
                     else if (null !== (l = i.quick_promote_campaign_v2) && void 0 !== l && l.response_code) {
                       var d = i.quick_promote_campaign_v2.campaign
                       return (
                         Object(R.p)(o)(R.n.promotionSuccess(null == d ? void 0 : d.rest_id)),
                         e.push(Object(R.j)(t, n, r, R.c.Done)),
                         a(p.a.setTweetPromotionRunning(n)),
-                        void a(Object(h.F)(n, 'IneligibleCampaignRunning'))
+                        void a(Object(h.G)(n, 'IneligibleCampaignRunning'))
                       )
                     }
                   }
@@ -58186,7 +58177,7 @@
                       var t = e.account
                       n(Object(h.u)(t))
                       var r = Object(u.b)('fetchFundingInstrumentsForAccount', G(o)(t.id)).then(function (e) {
-                          n(Object(h.I)(e)), n(Object(h.P)(e[0] || null))
+                          n(Object(h.J)(e)), n(Object(h.Q)(e[0] || null))
                         }),
                         i = Object(u.b)('fetchVatInfoForAccount', X(o)(t.id)).then(function (e) {
                           n(Object(h.W)(e))
@@ -58281,7 +58272,7 @@
             var i = Object(D.y)(t()) || 'US',
               o = Object(D.o)(t())
             return (
-              e(Object(h.J)(a.a.LOADING)),
+              e(Object(h.K)(a.a.LOADING)),
               Object(u.b)(
                 'fetchCurrentTargetingLocation',
                 r.AaProxy.getTargetableLocations({ countryCode: i, lang: o, locationType: 'COUNTRIES' })
@@ -58297,10 +58288,10 @@
                       throw (Object(d.a)(r), r)
                     }
                     if (t().quickPromote.targeting.targetedLocations.length) return Promise.resolve()
-                    e(Object(h.T)(n)), e(Object(h.J)(a.a.LOADED))
+                    e(Object(h.T)(n)), e(Object(h.K)(a.a.LOADED))
                   }),
               ).catch(function (t) {
-                throw (e(Object(h.J)(a.a.FAILED)), t)
+                throw (e(Object(h.K)(a.a.FAILED)), t)
               })
             )
           }
@@ -58350,7 +58341,7 @@
             var o = n().quickPromote.enrollCouponStatus
             return N.includes(o)
               ? Promise.resolve()
-              : (t(Object(h.H)(a.a.LOADING)),
+              : (t(Object(h.I)(a.a.LOADING)),
                 Object(u.b)(
                   'enrollCoupon',
                   i.QuickPromote.enrollCoupon({})
@@ -58361,7 +58352,7 @@
                         (null === (r = n.quick_promote_enroll_coupons) || void 0 === r ? void 0 : r.__typename)
                       ) {
                         var o = n.quick_promote_enroll_coupons.error_code
-                        t(Object(h.G)(o)), Object(R.p)(e)(R.n.enrollCouponFail(o))
+                        t(Object(h.H)(o)), Object(R.p)(e)(R.n.enrollCouponFail(o))
                       } else if (
                         'QuickPromoteCouponEnrollmentDetails' ===
                         (null === (i = n.quick_promote_enroll_coupons) || void 0 === i ? void 0 : i.__typename)
@@ -58372,13 +58363,13 @@
                           return { currency_code: t, total_amount: n ? n / 1e6 : 0 }
                         })
                         t(Object(h.C)({ existing_balance: s })),
-                          t(Object(h.G)(null)),
+                          t(Object(h.H)(null)),
                           Object(R.p)(e)(R.n.enrollCouponSuccess())
                       }
-                      t(Object(h.H)(a.a.LOADED))
+                      t(Object(h.I)(a.a.LOADED))
                     })
                     .catch(function (e) {
-                      throw (t(Object(h.H)(a.a.FAILED)), e)
+                      throw (t(Object(h.I)(a.a.FAILED)), e)
                     }),
                 ))
           }
@@ -58386,26 +58377,18 @@
         te = function (e) {
           return function (t, n, r) {
             var i = r.api,
-              o = n().quickPromote,
-              s = o.paymentMethodsFetchStatus,
-              c = o.selectedPaymentMethod
-            return !e && N.includes(s)
+              o = n().quickPromote.paymentMethodsFetchStatus
+            return !e && N.includes(o)
               ? Promise.resolve()
-              : (t(Object(h.M)(a.a.LOADING)),
+              : (t(Object(h.N)(a.a.LOADING)),
                 Object(u.b)(
                   'fetchPaymentMethods',
                   i.QuickPromote.getPaymentMethods({})
                     .then(function (e) {
-                      t(Object(h.L)(e)),
-                        t(Object(h.M)(a.a.LOADED)),
-                        c &&
-                          !e.find(function (e) {
-                            return e.id === c.id
-                          }) &&
-                          t(Object(h.Q)(null))
+                      t(Object(h.M)(e)), t(Object(h.N)(a.a.LOADED))
                     })
                     .catch(function (e) {
-                      throw (t(Object(h.M)(a.a.FAILED)), e)
+                      throw (t(Object(h.N)(a.a.FAILED)), e)
                     }),
                 ))
           }
@@ -58423,6 +58406,30 @@
                       'Error deleting payment method '.concat(
                         (null === (r = e.delete_payment_method) || void 0 === r ? void 0 : r.reason) || '',
                       ),
+                    )
+                  return t(te(!0))
+                })
+                .catch(function (e) {
+                  throw (t(Object(o.b)({ text: B })), e)
+                }),
+            )
+          }
+        },
+        re = function (e) {
+          return function (t, n, r) {
+            var i = r.api
+            return Object(u.b)(
+              'setDefaultPaymentMethod',
+              i.QuickPromote.setDefaultPaymentMethod({ payment_method_id: e })
+                .then(function (n) {
+                  var r, i
+                  if (n && (null === (r = n.set_payment_method_as_default) || void 0 === r || !r.changed))
+                    throw Error(
+                      'Error setting payment method '
+                        .concat(e, ' as default because ')
+                        .concat(
+                          (null === (i = n.set_payment_method_as_default) || void 0 === i ? void 0 : i.reason) || '',
+                        ),
                     )
                   return t(te(!0))
                 })

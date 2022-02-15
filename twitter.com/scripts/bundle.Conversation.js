@@ -73,8 +73,8 @@
         U = n('3XMw'),
         V = n.n(U),
         G = V.a.d806aa19,
-        Q = V.a.d80c77dc,
-        W = V.a.ef939f4b,
+        W = V.a.d80c77dc,
+        Q = V.a.ef939f4b,
         K = V.a.f7f2db4f,
         X = h.a.createElement(
           V.a.I18NFormatMessage,
@@ -130,7 +130,7 @@
                           history: t,
                           primaryContent: this._renderPrimaryContent(),
                           sidebarContent: h.a.createElement(b.a, null),
-                          subtitle: a === n ? Q : W({ screenName: a }),
+                          subtitle: a === n ? W : Q({ screenName: a }),
                           title: G,
                         }),
                       )
@@ -406,8 +406,8 @@
         }),
         V = n('3XMw'),
         G = n.n(V),
-        Q = 'introButton',
-        W = 'nextButton',
+        W = 'introButton',
+        Q = 'nextButton',
         K = 'objectiveScreen',
         X = 'targetingScreen',
         J = function (e) {
@@ -521,8 +521,8 @@
       var Ue = n('yE5w'),
         Ve = G.a.a3a09d48,
         Ge = G.a.e7eb3683,
-        Qe = G.a.d9f6e3cd,
-        We = G.a.d9d6e10e,
+        We = G.a.d9f6e3cd,
+        Qe = G.a.d9d6e10e,
         Ke = G.a.b3954ec9,
         Xe = G.a.e1b48db4,
         Je = Array(30)
@@ -655,7 +655,7 @@
                         { style: Ze.childSpacing },
                         h.a.createElement(
                           pe.a,
-                          v()({ accessibilityLabel: Qe, accessibilityLabelValueText: '"'.concat(p, '"') }, w, {
+                          v()({ accessibilityLabel: We, accessibilityLabelValueText: '"'.concat(p, '"') }, w, {
                             maxIcon: h.a.createElement(A.b, { style: Ze.iconText }, f),
                             minIcon: h.a.createElement(A.b, { style: Ze.iconText }, g),
                             onChange: this._handleBudgetSlider,
@@ -666,7 +666,7 @@
                     ),
                     h.a.createElement(
                       D,
-                      { label: We },
+                      { label: Qe },
                       h.a.createElement(
                         L.a,
                         { style: Ze.childSpacing },
@@ -772,7 +772,7 @@
                   return Object(C.m)(i, l, o, c, n, s, t)
                 })(e)
               },
-              setPromoteFetchStatus: C.O,
+              setPromoteFetchStatus: C.P,
             }
           })
           .withAnalytics(Ue.o),
@@ -987,7 +987,7 @@
                       isFullHeightOnMobile: !0,
                       onAction: this._handleGoToNextPage,
                       onClose: this._handleClose,
-                      primaryButtonTestID: Q,
+                      primaryButtonTestID: W,
                       subtext: d,
                       withCloseButton: c,
                     }),
@@ -1020,11 +1020,11 @@
             return { selectedObjective: Ut, tweet: Vt }
           })
           .propsFromActions(function () {
-            return { setObjective: C.K }
+            return { setObjective: C.L }
           })
           .withAnalytics(Ue.o),
-        Qt = n('h0NW'),
-        Wt = G.a.d7d55f3b,
+        Wt = n('h0NW'),
+        Qt = G.a.d7d55f3b,
         Kt = G.a.b25fd3d6,
         Xt = G.a.bf214f47,
         Jt = function (e) {
@@ -1040,11 +1040,11 @@
               children: h.a.createElement(
                 L.a,
                 { style: Yt.infoItemGroup },
-                h.a.createElement(Qt.a, { containerStyle: Yt.infoItem, items: t }),
+                h.a.createElement(Wt.a, { containerStyle: Yt.infoItem, items: t }),
               ),
               contentStyle: Yt.heading,
               graphicDisplayMode: 'none',
-              headline: Wt,
+              headline: Qt,
               onAction: n,
               onClose: n,
               subtext: Kt,
@@ -1273,7 +1273,7 @@
             return { paymentMethods: Mn, selectedPaymentMethod: C.p }
           })
           .propsFromActions(function () {
-            return { setSelectedPaymentMethod: C.Q, deletePaymentMethod: C.b }
+            return { setSelectedPaymentMethod: C.F, deletePaymentMethod: C.b }
           })
           .withAnalytics(Ue.o),
         Rn = n('YeIG'),
@@ -1284,8 +1284,8 @@
         Un = n('Wms4'),
         Vn = n('IG7M'),
         Gn = n('sgih'),
-        Qn = n('/yvb'),
-        Wn = n('I4+6'),
+        Wn = n('/yvb'),
+        Qn = n('I4+6'),
         Kn = n('iY63'),
         Xn = n('HsFH'),
         Jn = G.a.de43b66f,
@@ -1374,15 +1374,15 @@
               L.a,
               { style: ca.deleteCardConfirmContainer },
               h.a.createElement(
-                Qn.a,
+                Wn.a,
                 { icon: h.a.createElement(Xn.a, null), onPress: n, style: ca.modalButton, type: 'destructiveOutlined' },
                 ea,
               ),
-              h.a.createElement(Qn.a, { onPress: t, style: ca.modalButton, type: 'primaryOutlined' }, ta),
+              h.a.createElement(Wn.a, { onPress: t, style: ca.modalButton, type: 'primaryOutlined' }, ta),
             ),
           )
         },
-        oa = Wn.a.generate({
+        oa = Qn.a.generate({
           backgroundColor: j.a.theme.colors.transparent,
           color: j.a.theme.colors.primary,
           insetFocusRing: !0,
@@ -1474,7 +1474,11 @@
                       i.find(function (e) {
                         return e.id === t
                       }) || null
-                    ;(n && 'Invalid' === n.cardStatus) || s(n)
+                    ;(n && 'Invalid' === n.cardStatus) ||
+                      (p(!0),
+                      s(t).finally(function () {
+                        p(!1)
+                      }))
                   }
                 },
                 options: na(i, function (e) {
@@ -1788,8 +1792,8 @@
         Ua = n('shC7'),
         Va = G.a.c3c57e3e,
         Ga = G.a.h06724b4,
-        Qa = G.a.a96f811e,
-        Wa = G.a.b069d89c,
+        Wa = G.a.a96f811e,
+        Qa = G.a.b069d89c,
         Ka = G.a.a3a09d48,
         Xa = G.a.fbd44e96,
         Ja = G.a.e36bce63,
@@ -1961,7 +1965,7 @@
                     N = this.context.featureSwitches.isTrue('responsive_web_qp_objective_picker_enabled'),
                     U = _ && null === _.tax_id && null === _.tax_exemption_id && 'NOT_SET' === _.tax_category,
                     V = E ? !!y : !!u,
-                    Q = !(null == c || !c.eligible_coupon)
+                    W = !(null == c || !c.eligible_coupon)
                   return h.a.createElement(
                     h.a.Fragment,
                     null,
@@ -1986,10 +1990,10 @@
                         h.a.createElement(D, {
                           description: I,
                           descriptionTestID: ne,
-                          label: Qa,
+                          label: Wa,
                           withBottomBorder: !1,
                         }),
-                      h.a.createElement(D, { description: P, descriptionTestID: ae, label: Wa, withBottomBorder: !1 }),
+                      h.a.createElement(D, { description: P, descriptionTestID: ae, label: Qa, withBottomBorder: !1 }),
                       h.a.createElement(D, {
                         description: S,
                         descriptionDir: Ua.a.getConstants().isRTL ? 'rtl' : 'ltr',
@@ -2011,7 +2015,7 @@
                                 : h.a.createElement(
                                     A.b,
                                     { color: 'primary', size: 'subtext2' },
-                                    this._getPaymentDescription(V, Q),
+                                    this._getPaymentDescription(V, W),
                                   ),
                             label: h.a.createElement(A.b, { weight: 'bold' }, Ja),
                             link:
@@ -2025,7 +2029,7 @@
                                 : h.a.createElement(
                                     A.b,
                                     { color: 'primary', size: 'subtext2' },
-                                    this._getPaymentDescription(V, Q),
+                                    this._getPaymentDescription(V, W),
                                   ),
                             label: h.a.createElement(A.b, { weight: 'bold' }, Ja),
                             link: !u || U ? Object(Ue.j)(B, M, j, Ue.c.Payment) : void 0,
@@ -2091,7 +2095,7 @@
                       L.a,
                       { style: fr.bottomElements },
                       h.a.createElement(
-                        Qn.a,
+                        Wn.a,
                         {
                           disabled: (E && !y) || !u || U || C.X.includes(f),
                           onPress: this._handlePromote,
@@ -2516,8 +2520,8 @@
             return { setTargetedAgeBucket: C.R, setTargetedGender: C.S }
           })
           .withAnalytics(Ue.o),
-        Qr = n('JiIh'),
-        Wr = n('fyvP'),
+        Wr = n('JiIh'),
+        Qr = n('fyvP'),
         Kr = n('J4ZH'),
         Xr = n('tn7R'),
         Jr = n('mN6z'),
@@ -2658,7 +2662,7 @@
                     h.a.createElement(
                       L.a,
                       { style: mo.ageRangeSlider },
-                      h.a.createElement(Qr.a, {
+                      h.a.createElement(Wr.a, {
                         endThumbAccessibilityLabel: to,
                         endThumbAccessibilityLabelValueText: '"'.concat(g, '"'),
                         endThumbLabel: g,
@@ -2678,7 +2682,7 @@
                     h.a.createElement(
                       L.a,
                       { style: mo.genderSelection },
-                      h.a.createElement(Wr.a, {
+                      h.a.createElement(Qr.a, {
                         name: 'gender',
                         onChange: this._handleGenderChange,
                         options: ao,
@@ -2789,7 +2793,7 @@
                   { documentTitle: bo, history: a, renderHeader: e._renderHeader },
                   h.a.createElement(Sr.a, {
                     leftControl: h.a.createElement(kr.a, { autofocus: !0, onClick: e._handleGoBack, testID: le }),
-                    rightControl: n && h.a.createElement(Qn.a, { link: n, testID: W, type: 'brandText' }, yo),
+                    rightControl: n && h.a.createElement(Wn.a, { link: n, testID: Q, type: 'brandText' }, yo),
                   }),
                   h.a.createElement(qn.a, { progress: t, style: _o.progressBar }),
                   h.a.createElement(L.a, { style: _o.noScrollView }, e._renderRoutes()),
@@ -3082,12 +3086,12 @@
         G = function (e, t) {
           return B(t, 'contextualClientEventInfo')
         },
-        Q = function (e, t) {
+        W = function (e, t) {
           var n = B(t, 'referrer'),
             a = F(e, t)
           return !!n && n.includes('/i/topics/tweet/'.concat(a))
         },
-        W = function (e, t) {
+        Q = function (e, t) {
           if (!w.canUseDOM) return !1
           var n = t.location.query,
             a = Object(P.a)(e, t)
@@ -3128,8 +3132,8 @@
               focalTweet: K,
               initialFetchStatus: J,
               isForwardNavigation: M,
-              isReferralSource: W,
-              isReferredFromExploreTopics: Q,
+              isReferralSource: Q,
+              isReferredFromExploreTopics: W,
               userLanguage: S.o,
               loggedInUser: L.e.selectLoggedInUser,
               overflowCount: V,
@@ -3233,10 +3237,10 @@
         Ge = Object(Be.a)(function (e, t) {
           return { items: [Ie.a.forTweet(e, t)], tweet_id: e }
         }),
-        Qe = Object(Be.a)(function (e) {
+        We = Object(Be.a)(function (e) {
           return Object(te.a)(e)
         }),
-        We = Object(Be.a)(function (e, t, n, a, r) {
+        Qe = Object(Be.a)(function (e, t, n, a, r) {
           var o, c
           return {
             referrer: e,
@@ -3298,7 +3302,7 @@
                 a = e.richLandingContextId,
                 r = e.tweetDetailNav,
                 c = o._shouldRenderRuxInjections()
-              return We(r, t, n, c, a)
+              return Qe(r, t, n, c, a)
             }),
             g()(l()(o), '_getModule', function () {
               var e = o.props.statusId,
@@ -3523,7 +3527,7 @@
                   ke.a,
                   { collectionName: Fe },
                   b.a.createElement(Ce.a, {
-                    apiErrorHandlerMap: Qe(c),
+                    apiErrorHandlerMap: We(c),
                     contextTweetId: t,
                     fetchOptions: this._getNavigationParams(),
                     focalTweet: n,
@@ -3559,7 +3563,7 @@
                   a = n.clearTimelineCache,
                   r = n.createLocalApiErrorHandler,
                   o = n.screenName
-                a(e, t).catch(r(Qe(o)))
+                a(e, t).catch(r(We(o)))
               },
             },
           ]),

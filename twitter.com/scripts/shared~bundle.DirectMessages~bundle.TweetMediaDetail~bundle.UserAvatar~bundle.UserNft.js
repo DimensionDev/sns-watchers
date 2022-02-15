@@ -26,9 +26,9 @@
         S = n('MWbm'),
         D = n('Enqy'),
         x = w.a.isTouchSupported(),
-        k = { zoom: 1, lastX: 0, lastY: 0, zoomCenter: { x: 0, y: 0 } },
-        E = { height: 0, width: 0, left: 0, right: 0, top: 0, bottom: 0 },
-        T = function (e, t, n) {
+        T = { zoom: 1, lastX: 0, lastY: 0, zoomCenter: { x: 0, y: 0 } },
+        k = { height: 0, width: 0, left: 0, right: 0, top: 0, bottom: 0 },
+        E = function (e, t, n) {
           return Math.min(t, Math.max(e, n))
         },
         P = function (e, t) {
@@ -42,7 +42,7 @@
             return (
               r()(this, n),
               (o = t.call(this, e)),
-              v()(c()(o), '_itemDimensions', E),
+              v()(c()(o), '_itemDimensions', k),
               v()(c()(o), '_ref', _.a.createRef()),
               v()(c()(o), '_setTouchableNode', function (e) {
                 o._touchableNode !== e &&
@@ -66,7 +66,7 @@
                   n = t.maxZoom,
                   a = t.minZoom,
                   i = t.onTap,
-                  r = T(a, n, o.state.zoom),
+                  r = E(a, n, o.state.zoom),
                   s = o.state.zoom
                 s !== r && 1 === r ? o.resetZoom() : o.setState({ lastX: 0, lastY: 0, zoom: r }),
                   0 === e.touches.length
@@ -76,7 +76,7 @@
                       (o._lastTouchTime = e.timeStamp))
                     : e.preventDefault()
               }),
-              (o.state = a()({}, k)),
+              (o.state = a()({}, T)),
               o
             )
           }
@@ -143,7 +143,7 @@
                 {
                   key: 'resetZoom',
                   value: function () {
-                    this.props.onZoomed(!1), this.setState({ zoom: k.zoom })
+                    this.props.onZoomed(!1), this.setState({ zoom: T.zoom })
                   },
                 },
                 {
@@ -205,7 +205,7 @@
                     if (0 !== o.x || 0 !== o.y) {
                       var u = P(e.touches[0], e.touches[1]),
                         c = this._lastDistance ? u / this._lastDistance : 1,
-                        d = T(s - l, i + r, n * c)
+                        d = E(s - l, i + r, n * c)
                       ;(this._lastDistance = u), this.setState({ zoom: d })
                     } else 2 === e.touches.length && this._handlePinchStart(e)
                   },
@@ -226,7 +226,7 @@
                     1 !== this.state.zoom
                       ? this.resetZoom()
                       : (this._updateWindowDimensions(),
-                        this.setState({ zoom: n, zoomCenter: this._tapCenter || k.zoomCenter }),
+                        this.setState({ zoom: n, zoomCenter: this._tapCenter || T.zoomCenter }),
                         o(!0))
                   },
                 },
@@ -249,7 +249,7 @@
                 {
                   key: 'getDerivedStateFromProps',
                   value: function (e, t) {
-                    return x && e.resetZoom ? (e.onZoomed(!1), a()({}, k)) : t
+                    return x && e.resetZoom ? (e.onZoomed(!1), a()({}, T)) : t
                   },
                 },
               ],
@@ -296,17 +296,17 @@
         S = n('yiKp'),
         D = n.n(S),
         x = (n('2G9S'), n('7x/C'), n('JtPf'), n('3XMw')),
-        k = n.n(x),
-        E = n('mN6z'),
-        T = n('U+bB'),
+        T = n.n(x),
+        k = n('mN6z'),
+        E = n('U+bB'),
         P = n('MWbm'),
         M = n('0Ki6'),
         I = n('3dad'),
         Z = n('r1lV'),
         z = n('rHpw'),
         L = n('JYMr'),
-        Y = k.a.b327c129,
-        B = k.a.gff1f69e,
+        Y = T.a.b327c129,
+        B = T.a.gff1f69e,
         V = (function (e) {
           c()(n, e)
           var t = h()(n)
@@ -343,7 +343,7 @@
                   key: 'componentDidUpdate',
                   value: function (e, t) {
                     var o = this
-                    Object(E.a)(e.photo, this.props.photo) ||
+                    Object(k.a)(e.photo, this.props.photo) ||
                       (this.setState({ loadingVariant: null }),
                       n._selectCachedVariant(this.props.photo).then(function (e) {
                         return o.setState({ loadingVariant: e })
@@ -367,7 +367,7 @@
                       h = this.state.loadingVariant,
                       m = (t && h && Math.max(h.width, h.height) >= 680 ? h.uri : null) || n._selectSource(l)
                     if (!m || null === h) return null
-                    var p = v.a.createElement(T.a, {
+                    var p = v.a.createElement(E.a, {
                       accessibilityLabel: l.ext_alt_text ? l.ext_alt_text : Y,
                       defaultSource: h && h.uri,
                       draggable: !0,
@@ -451,7 +451,7 @@
                   return v.a.createElement(
                     P.a,
                     { style: e },
-                    v.a.createElement(P.a, { style: F.root }, this._renderVideo()),
+                    v.a.createElement(P.a, { style: K.root }, this._renderVideo()),
                   )
                 },
               },
@@ -485,8 +485,8 @@
             n
           )
         })(v.a.PureComponent),
-        F = z.a.create({ root: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: 'center' } }),
-        K = N,
+        K = z.a.create({ root: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: 'center' } }),
+        F = N,
         G = { startX: 0, startY: 0 },
         U = (function (e) {
           c()(n, e)
@@ -558,7 +558,7 @@
         q = n('7N4s'),
         H = n('q9Zt'),
         J = ['isAvatar', 'isCurrentlyDisplayed', 'mediaDetail', 'onDismiss', 'onTap', 'promotedContent', 'videoId'],
-        Q = k.a.ac85c6b1,
+        Q = T.a.ac85c6b1,
         $ = function (e) {
           var t = e.isAvatar,
             n = e.isCurrentlyDisplayed,
@@ -581,10 +581,10 @@
             S = C.height,
             D = C.width,
             x = f.height,
-            k = f.width,
-            E =
+            T = f.width,
+            k =
               g || t
-                ? Object(R.f)({ mediaWidth: D, mediaHeight: S, containerWidth: k, containerHeight: x }, t)
+                ? Object(R.f)({ mediaWidth: D, mediaHeight: S, containerWidth: T, containerHeight: x }, t)
                 : ee.mediaItem
           v.a.useEffect(
             function () {
@@ -625,7 +625,7 @@
                     onClick: function (e) {
                       e.stopPropagation()
                     },
-                    style: E,
+                    style: k,
                   },
                   'photo' === o.type
                     ? v.a.createElement(
@@ -645,7 +645,7 @@
                         }),
                       )
                     : A.a.isVideo(o) && s
-                    ? v.a.createElement(K, {
+                    ? v.a.createElement(F, {
                         isCurrentlyDisplayed: n,
                         promotedContent: r,
                         style: ee.container,
@@ -673,7 +673,7 @@
           }
         }),
         te = v.a.memo($, function (e, t) {
-          return Object(E.a)(e, t)
+          return Object(k.a)(e, t)
         }),
         ne = n('lklz'),
         oe = n('v6aA'),
@@ -715,7 +715,7 @@
               {
                 key: 'shouldComponentUpdate',
                 value: function (e, t) {
-                  return !Object(E.a)(e, this.props) || !Object(E.a)(t, this.state)
+                  return !Object(k.a)(e, this.props) || !Object(k.a)(t, this.state)
                 },
               },
               {
@@ -771,9 +771,12 @@
                           dominantButtonColor: n,
                           isLocked: r,
                           onVisibleRangeChange: this._handleChangeV2,
+                          scrollToCenter: !0,
                           style: le.dimensions,
                           visibleItemIndex: o,
                           withAddedNavButtonClickArea: !s,
+                          withGlobalKeyboardNavigation: !0,
+                          withWraparound: !1,
                         },
                         e,
                       )
@@ -833,9 +836,9 @@
         S = n('MWbm'),
         D = n('mw9i'),
         x = n('cm6r'),
-        k = n('/yvb'),
-        E = n('7N4s'),
-        T = n('rHpw'),
+        T = n('/yvb'),
+        k = n('7N4s'),
+        E = n('rHpw'),
         P = C.a.ia5e7487,
         M = (function (e) {
           h()(n, e)
@@ -904,7 +907,7 @@
                         style: [I.buttonWrapper, I.buttonWrapperLeft, g.a, s && I.fadeOut],
                       },
                       function (t) {
-                        return _.a.createElement(k.a, {
+                        return _.a.createElement(T.a, {
                           accessibilityLabel: P,
                           dominantColor: n.rgb,
                           hoverLabel: { label: P },
@@ -932,8 +935,8 @@
             n
           )
         })(_.a.Component)
-      v()(M, 'contextType', E.b), v()(M, 'defaultProps', { hideButtons: !1 })
-      var I = T.a.create(function (e) {
+      v()(M, 'contextType', k.b), v()(M, 'defaultProps', { hideButtons: !1 })
+      var I = E.a.create(function (e) {
         return {
           root: { overflowX: 'hidden', overflowY: 'hidden', height: '100%', width: '100%' },
           buttonWrapper: {
@@ -948,7 +951,7 @@
           buttonWrapperRight: { right: 0 },
           fadeOut: { opacity: 0 },
           footerButtons: { width: '100%', alignSelf: 'center' },
-          footerButtonsAbsolute: { position: 'absolute', bottom: 0, paddingBottom: T.a.iPhoneOffsetBottom, zIndex: 1 },
+          footerButtonsAbsolute: { position: 'absolute', bottom: 0, paddingBottom: E.a.iPhoneOffsetBottom, zIndex: 1 },
         }
       })
     },

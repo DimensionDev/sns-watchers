@@ -28,7 +28,7 @@
         f = Object.freeze({
           NEWSLETTER_ISSUE_CARD: 'twitter-issue-card',
           NEWSLETTER_PUBLICATION_CARD: 'twitter-publication-card',
-          TWITTER_PROFILE: 'twitter profile',
+          TWITTER_PROFILE: 'twitter-profile',
         }),
         b = function (e, t) {
           var a, r
@@ -256,7 +256,7 @@
             S = c.sampleUrl,
             L = c.subscribeSource,
             h = function () {
-              return D.a.get('window').width <= H.a.theme.breakpoints.small ? z.a : z.b
+              return D.a.get('window').width <= H.a.theme.breakpoints.small ? z.b : z.a
             },
             N = function (e) {
               return (function (e, t) {
@@ -387,7 +387,7 @@
                         var e = F()(
                           F()({ revueAccountId: y, doubleOptIn: !E }, L ? { via: L } : null),
                           {},
-                          { client: h() },
+                          { client: h(), element: 'twitter-confirm' },
                         )
                         u(e)
                           .then(function (e) {

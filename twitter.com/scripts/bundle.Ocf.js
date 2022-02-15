@@ -10741,17 +10741,19 @@
         is = a('kY28'),
         os = a('CUXw'),
         ss = function (e) {
-          var t = e.onClick
+          var t = e.onClick,
+            a = e.selectedTweetIds
           return ns.g({
             component: os.a,
             createProps: function (e) {
-              var a = e.entry
+              var n = e.entry
               return {
-                index: a.index,
-                tweetId: a.content.id,
+                index: n.index,
+                tweetId: n.content.id,
                 onClick: t,
                 replyContext: is.a.ReplyContextTypes.None,
                 withActions: !1,
+                isSelected: a.includes(n.content.id),
               }
             },
             isClickable: Object(rs.a)(!0),
@@ -10815,22 +10817,34 @@
               function () {
                 return (function (e) {
                   var t,
-                    a = e.handleTweetClick
+                    a,
+                    n = e.handleTweetClick,
+                    r = e.selectedTweetIds
                   return o()(
                     o()({}, Xn.b),
                     {},
-                    ((t = {}),
-                    v()(t, ls.b.Tombstone, ns.e(ns.a())),
+                    ((a = {}),
+                    v()(a, ls.b.Tombstone, ns.e(ns.a())),
                     v()(
-                      t,
+                      a,
                       ls.b.Tweet,
-                      o()(o()({}, Xn.b[ls.b.Tweet]), {}, { handlers: v()({}, cs.a.Tweet, ss({ onClick: a })) }),
+                      o()(
+                        o()({}, Xn.b[ls.b.Tweet]),
+                        {},
+                        {
+                          handlers:
+                            ((t = {}),
+                            v()(t, cs.a.Tweet, ss({ onClick: n, selectedTweetIds: r })),
+                            v()(t, cs.a.QuotedTweet, ss({ onClick: n, selectedTweetIds: r })),
+                            t),
+                        },
+                      ),
                     ),
-                    t),
+                    a),
                   )
-                })({ handleTweetClick: w })
+                })({ handleTweetClick: w, selectedTweetIds: f })
               },
-              [w],
+              [w, f],
             ),
             E = k.a.useMemo(
               function () {

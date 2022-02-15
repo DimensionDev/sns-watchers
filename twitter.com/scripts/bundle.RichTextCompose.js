@@ -4696,27 +4696,18 @@
                     o || r,
                     null == a ? void 0 : a.conversation_id_str,
                   ).then(function (e) {
-                    var t,
-                      n,
-                      a,
-                      r,
-                      o,
-                      i,
-                      l,
-                      c = s.context.featureSwitches.getValueWithoutScribeImpression(
-                        'responsive_web_reply_nudge_supported_languages',
-                      )
+                    var t, n, a, r, o, i, l
                     if (
-                      !c ||
-                      !Array.isArray(c) ||
-                      !c.includes(
-                        null === (t = e.create_nudge) || void 0 === t || null === (n = t.nudge) || void 0 === n
-                          ? void 0
-                          : n.proposed_tweet_language,
-                      )
+                      !s.context.featureSwitches
+                        .getArrayValue('responsive_web_reply_nudge_supported_languages')
+                        .includes(
+                          null === (t = e.create_nudge) || void 0 === t || null === (n = t.nudge) || void 0 === n
+                            ? void 0
+                            : n.proposed_tweet_language,
+                        )
                     )
                       return !1
-                    var u =
+                    var c =
                         null == e ||
                         null === (a = e.create_nudge) ||
                         void 0 === a ||
@@ -4726,7 +4717,7 @@
                         void 0 === o
                           ? void 0
                           : o.__typename,
-                      d =
+                      u =
                         null == e ||
                         null === (i = e.create_nudge) ||
                         void 0 === i ||
@@ -4734,7 +4725,7 @@
                         void 0 === l
                           ? void 0
                           : l.id
-                    return d && s.setState({ nudgeId: d }), !!u
+                    return u && s.setState({ nudgeId: u }), !!c
                   }),
                   l = new Promise(function (e, t) {
                     return setTimeout(e, 1e3, !1)
@@ -4761,16 +4752,14 @@
                     !s._getSingleComposerDataWithLatestText(t[0]).scheduledFor &&
                     s.isReply &&
                     !n &&
-                    s.context.featureSwitches.getValueWithoutScribeImpression('responsive_web_reply_nudge_enabled') &&
+                    s.context.featureSwitches.isTrue('responsive_web_reply_nudge_enabled') &&
                     !a
                   )
                 )
                   return s._handleSendTweet()
                 s._checkToxicReply().then(function (e) {
                   if (!e) return s._handleSendTweet()
-                  s.context.featureSwitches.isTrue('responsive_web_reply_nudge_enabled'),
-                    s.context.featureSwitches.getArrayValue('responsive_web_reply_nudge_supported_languages'),
-                    s._showToxicReplyNudge()
+                  s.context.featureSwitches.isTrue('responsive_web_reply_nudge_show_nudge') && s._showToxicReplyNudge()
                 })
               }),
               b()(h()(s), '_handleSendTweet', function () {

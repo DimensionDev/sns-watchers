@@ -124,7 +124,7 @@
               },
               withInteractiveStyling: !1,
             },
-            o.a.createElement(E.b, { color: 'gray700', key: n, link: i, size: 'body', style: R.searchTrend }, n),
+            o.a.createElement(E.b, { color: 'gray700', key: n, link: i, size: 'body', style: T.searchTrend }, n),
           )
         },
         x = function (e) {
@@ -135,7 +135,7 @@
             {
               accessibilityLabel: w,
               accessibilityRole: 'list',
-              style: [R.searchTrends, 'left' === t && R.searchTrendsLeft],
+              style: [T.searchTrends, 'left' === t && T.searchTrendsLeft],
             },
             n.map(function (e, t) {
               return o.a.createElement(I, { key: e, position: t, trend: e })
@@ -143,11 +143,11 @@
             o.a.createElement(
               _.a,
               { accessibilityRole: 'listitem', withInteractiveStyling: !1 },
-              o.a.createElement(E.b, { link: '/explore', style: R.searchTrend }, k),
+              o.a.createElement(E.b, { link: '/explore', style: T.searchTrend }, k),
             ),
           )
         },
-        T = function (e) {
+        R = function (e) {
           var t = e.alignment,
             n = e.deviceSize,
             a = e.trendResults,
@@ -156,21 +156,21 @@
             h.a,
             {
               style: [
-                R.searchBoxTrendsContainer,
-                r && R.searchBoxTrendsContainerMobile,
-                'tablet' === n && R.searchBoxTrendsContainerTablet,
-                'desktop' === n && R.searchBoxTrendsContainerDesktop,
+                T.searchBoxTrendsContainer,
+                r && T.searchBoxTrendsContainerMobile,
+                'tablet' === n && T.searchBoxTrendsContainerTablet,
+                'desktop' === n && T.searchBoxTrendsContainerDesktop,
               ],
             },
             o.a.createElement(
               h.a,
-              { style: R.searchBox },
+              { style: T.searchBox },
               o.a.createElement(S.default, { forceVdlDisable: !1, isOnHomepage: !0, shouldHandleSearchShortcut: !0 }),
             ),
             a && o.a.createElement(x, { alignment: t, deviceSize: n, trendResults: a }),
           )
         },
-        R = p.a.create(function (e) {
+        T = p.a.create(function (e) {
           return {
             bottomBarForMobile: {
               backgroundColor: e.colors.navigationBackground,
@@ -232,31 +232,31 @@
             o.a.Fragment,
             null,
             'desktop' !== t
-              ? o.a.createElement(i.a, { style: R.bottomBarForMobile }, r())
+              ? o.a.createElement(i.a, { style: T.bottomBarForMobile }, r())
               : o.a.createElement(
                   h.a,
-                  { style: R.searchNavBar },
-                  o.a.createElement(h.a, { style: R.searchNavButtons }, r()),
+                  { style: T.searchNavBar },
+                  o.a.createElement(h.a, { style: T.searchNavButtons }, r()),
                 ),
             o.a.createElement(
               h.a,
-              { style: [R.searchRoot, 'desktop' !== t && R.searchRootMobile] },
-              o.a.createElement(u.a, { style: R.twitterIconSearch }),
-              o.a.createElement(T, { deviceSize: t, trendResults: a }),
+              { style: [T.searchRoot, 'desktop' !== t && T.searchRootMobile] },
+              o.a.createElement(u.a, { style: T.twitterIconSearch }),
+              o.a.createElement(R, { deviceSize: t, trendResults: a }),
             ),
             o.a.createElement(
               c.CookieComplianceBannerPadder,
               null,
               o.a.createElement(
                 h.a,
-                { style: [R.searchHomeFooter, 'desktop' !== t && R.searchHomeFooterMobile] },
+                { style: [T.searchHomeFooter, 'desktop' !== t && T.searchHomeFooterMobile] },
                 o.a.createElement(g.a, { align: 'center' }),
               ),
             ),
           )
         },
-        L = l.a.g0ff1ca8,
-        O = l.a.g3aa4a89,
+        O = l.a.g0ff1ca8,
+        L = l.a.g3aa4a89,
         D = p.a.create(function (e) {
           return {
             bottomBarBanner: {
@@ -275,9 +275,9 @@
             null,
             o.a.createElement(
               h.a,
-              { style: [R.searchRoot, 'desktop' !== t && R.searchRootMobile, D.searchRootWithBanner] },
-              o.a.createElement(u.a, { style: R.twitterIconSearch }),
-              o.a.createElement(T, { deviceSize: t, trendResults: n }),
+              { style: [T.searchRoot, 'desktop' !== t && T.searchRootMobile, D.searchRootWithBanner] },
+              o.a.createElement(u.a, { style: T.twitterIconSearch }),
+              o.a.createElement(R, { deviceSize: t, trendResults: n }),
             ),
             o.a.createElement(
               c.CookieComplianceBannerPadder,
@@ -285,7 +285,7 @@
               o.a.createElement(
                 i.a,
                 { style: D.bottomBarBanner },
-                o.a.createElement(d.a, { buttonSize: 'large', fullWidth: !0, subtext: O, text: L }),
+                o.a.createElement(d.a, { buttonSize: 'large', fullWidth: !0, subtext: L, text: O }),
               ),
             ),
           )
@@ -293,10 +293,10 @@
         A = n('n0Rl'),
         F = n('RgK2'),
         U = n.n(F),
-        z = n('kGix'),
-        N = (n('enFi'), n('ddV6')),
-        H = n.n(N),
-        j = (n('0zG9'), n('UpKB')),
+        N = n('kGix'),
+        z = (n('enFi'), n('ddV6')),
+        j = n.n(z),
+        H = (n('0zG9'), n('UpKB')),
         M = n('v6aA'),
         q = n('5P4+'),
         V = n('kG2l'),
@@ -317,7 +317,7 @@
             r = o.a.useContext(M.a).featureSwitches,
             i = Object(G.c)(r) === G.a.AcceptAllCookies,
             c = o.a.useState(i),
-            s = H()(c, 2),
+            s = j()(c, 2),
             l = s[0],
             u = s[1],
             d = 'tablet' !== a && 'desktop' !== a
@@ -334,7 +334,7 @@
               },
               style: [ne.ctaButton, ne.ssoButtonStyles, d && ne.containerThin],
             }),
-            o.a.createElement(j.a, {
+            o.a.createElement(H.a, {
               buttonSize: 'medium',
               buttonState: t,
               style: [ne.ctaButton, ne.ssoButtonStyles, { marginBottom: 0 }, d && ne.containerThin],
@@ -391,7 +391,7 @@
             a = e.scribeNamespace,
             r = e.trendResults,
             i = o.a.useState(X.a.SignUp),
-            s = H()(i, 2),
+            s = j()(i, 2),
             d = s[0],
             p = s[1],
             m = Object(v.b)(),
@@ -509,7 +509,7 @@
               null,
               o.a.createElement(
                 h.a,
-                { style: [R.searchHomeFooter, { marginBottom: '0' }] },
+                { style: [T.searchHomeFooter, { marginBottom: '0' }] },
                 o.a.createElement(g.a, { align: 'center' }),
               ),
             )
@@ -538,7 +538,7 @@
                       'desktop' === n && ne.headerDesktop,
                     ],
                   },
-                  o.a.createElement(u.a, { style: [R.twitterIconSearch, ne.twitterIconSearchLeft] }),
+                  o.a.createElement(u.a, { style: [T.twitterIconSearch, ne.twitterIconSearchLeft] }),
                   o.a.createElement(
                     E.b,
                     {
@@ -549,7 +549,7 @@
                     $,
                   ),
                 ),
-                o.a.createElement(T, { alignment: 'left', deviceSize: n, trendResults: r }),
+                o.a.createElement(R, { alignment: 'left', deviceSize: n, trendResults: r }),
               ),
               o.a.createElement(
                 h.a,
@@ -583,7 +583,7 @@
               s = e.fetchStatus,
               l =
                 (e.retry,
-                s === z.a.LOADED
+                s === N.a.LOADED
                   ? null == c || null === (i = c.logged_out_trends_list) || void 0 === i
                     ? void 0
                     : i.trends
@@ -662,7 +662,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'SearchBoxContainer', function () {
-          return lt
+          return ut
         })
       var a = n('yiKp'),
         r = n.n(a),
@@ -683,8 +683,8 @@
         S = n('RhWx'),
         v = n.n(S),
         _ =
-          (n('2G9S'),
-          n('tQbP'),
+          (n('tQbP'),
+          n('2G9S'),
           n('z84I'),
           n('hBvt'),
           n('ho0z'),
@@ -692,62 +692,62 @@
           n('WNMA'),
           n('MvUL'),
           n('3uku'),
+          n('jQ3i'),
           n('ERkP')),
         E = n.n(_),
         k = n('+Kfv'),
-        w = n('wtjx'),
-        C = n('rxPX'),
-        I = Object(C.a)()
+        w = n('lnti'),
+        C = n('wtjx'),
+        I = n('rxPX'),
+        x = Object(I.a)()
           .propsFromActions(function () {
-            return { addQuery: w.a }
+            return { addQuery: C.a }
           })
           .withAnalytics({ component: 'search_box' }),
-        x = n('Hw0q'),
+        R = n('Hw0q'),
         T = n('3XMw'),
-        R = n.n(T),
-        B = n('8jkQ'),
+        B = n.n(T),
+        O = n('8jkQ'),
         L = n('u3ZE'),
-        O = n('rRIm'),
-        D = n('Rp9C'),
-        P =
+        D = n('rRIm'),
+        P = n('Rp9C'),
+        A =
           (n('LW0h'),
           n('7x/C'),
           n('vrRf'),
           n('5BYb'),
           n('+KXO'),
-          n('jQ3i'),
           n('x4t0'),
           n('M+/F'),
           n('wFPu'),
           n('vfdX'),
-          n('lnti')),
-        A = n('hqKg'),
+          n('hqKg')),
         F = n('3IPs'),
         U = n('M0jS'),
-        z = n('G6rE'),
-        N = n('k49u'),
-        H = n('J4ZH'),
-        j = n('0KEI'),
+        N = n('G6rE'),
+        z = n('k49u'),
+        j = n('J4ZH'),
+        H = n('0KEI'),
         M = n('v4XE'),
         q = n('kGix'),
         V = function (e) {
           return (
-            Object(N.c)(e, N.a.GenericUserNotFound) ||
-            Object(N.c)(e, N.a.OtherUserSuspended) ||
-            Object(N.c)(e, N.a.AddressBookLookupNotFound)
+            Object(z.c)(e, z.a.GenericUserNotFound) ||
+            Object(z.c)(e, z.a.OtherUserSuspended) ||
+            Object(z.c)(e, z.a.AddressBookLookupNotFound)
           )
         },
-        W = Object(C.a)()
+        W = Object(I.a)()
           .propsFromState(function () {
-            var e = Object(A.createSelector)(w.g, z.e.selectFetchStatuses, function (e, t) {
-                var n = Object(P.a)(
+            var e = Object(A.createSelector)(C.g, N.e.selectFetchStatuses, function (e, t) {
+                var n = Object(w.a)(
                   e.map(function (e) {
                     var n,
                       a = null === (n = e.user) || void 0 === n ? void 0 : n.id
                     return a && t[a] ? { id: a, fetchStatus: t[a] } : void 0
                   }),
                 )
-                return Object(H.a)(n, function (e) {
+                return Object(j.a)(n, function (e) {
                   return e.fetchStatus
                 })
               }),
@@ -756,7 +756,7 @@
                   return e.id
                 })
               }),
-              n = Object(A.createSelector)(e, z.e.selectErrors, function (e, t) {
+              n = Object(A.createSelector)(e, N.e.selectErrors, function (e, t) {
                 return (e[q.a.FAILED] || [])
                   .filter(function (e) {
                     var n = e.id
@@ -766,7 +766,7 @@
                     return e.id
                   })
               }),
-              a = Object(A.createSelector)(e, z.e.selectErrors, function (e, t) {
+              a = Object(A.createSelector)(e, N.e.selectErrors, function (e, t) {
                 var n = (e[q.a.FAILED] || []).filter(function (e) {
                   var n = e.id
                   return !V(t[n] || {})
@@ -779,7 +779,7 @@
                   ? q.a.FAILED
                   : q.a.NONE
               }),
-              o = Object(A.createSelector)(w.g, function (e) {
+              o = Object(A.createSelector)(C.g, function (e) {
                 return e.map(function (e) {
                   return r()(r()({}, e), {}, { category: F.b.RecentSearch })
                 })
@@ -790,7 +790,7 @@
                 })
               })
             return {
-              isRecentSearchDataLoaded: w.e,
+              isRecentSearchDataLoaded: C.e,
               recentSearches: o,
               usersFetchStatus: a,
               invalidRecentSearchUserIds: n,
@@ -820,14 +820,14 @@
           })
           .propsFromActions(function () {
             return {
-              clearAll: w.b,
-              createLocalApiErrorHandler: Object(j.createLocalApiErrorHandlerWithContextFactory)('SEARCH_ONE_CLICK'),
+              clearAll: C.b,
+              createLocalApiErrorHandler: Object(H.createLocalApiErrorHandlerWithContextFactory)('SEARCH_ONE_CLICK'),
               deleteSavedSearch: M.a,
-              fetchRecentSearchesIfNeeded: w.c,
+              fetchRecentSearchesIfNeeded: C.c,
               fetchSavedSearchesIfNeeded: M.b,
-              fetchUsersIfNeeded: z.e.fetchManyIfNeeded,
+              fetchUsersIfNeeded: N.e.fetchManyIfNeeded,
               fetchUsersPresenceIfNeeded: U.b.fetchManyIfNeeded,
-              removeQuery: w.d,
+              removeQuery: C.d,
             }
           })
           .withAnalytics({ element: 'typeahead' }),
@@ -843,7 +843,7 @@
         te = n('/yvb'),
         ne = n('rHpw'),
         ae = ['id', 'onRemove'],
-        re = R.a.e68b09b4,
+        re = B.a.e68b09b4,
         oe = (function (e) {
           m()(n, e)
           var t = g()(n)
@@ -905,7 +905,7 @@
         ue = n('t62R'),
         de = n('EHV7'),
         pe = E.a.createElement(Z.a, null),
-        he = R.a.e68b09b4,
+        he = B.a.e68b09b4,
         me = (function (e) {
           m()(n, e)
           var t = g()(n)
@@ -973,19 +973,19 @@
           }
         }),
         ge = function (e, t) {
-          return z.e.select(e, t.id)
+          return N.e.select(e, t.id)
         },
         be = function (e, t) {
           return Object(U.c)(e, t.id)
         },
-        ye = Object(C.a)().propsFromState(function () {
+        ye = Object(I.a)().propsFromState(function () {
           return { user: ge, userSpace: be }
         }),
         Se = n('v6aA'),
         ve = n('IMA+'),
         _e = E.a.createElement(Z.a, null),
-        Ee = R.a.e68b09b4,
-        ke = R.a.fd06b02f,
+        Ee = B.a.e68b09b4,
+        ke = B.a.fd06b02f,
         we = (function (e) {
           m()(n, e)
           var t = g()(n)
@@ -1072,14 +1072,14 @@
       var Ce = ye.forwardRef(we),
         Ie = n('oQhu'),
         xe = n('hiGS'),
-        Te = n('Gfoi'),
-        Re = E.a.createElement(Z.a, null),
+        Re = n('Gfoi'),
+        Te = E.a.createElement(Z.a, null),
         Be = E.a.createElement(xe.a, null),
-        Le = Object(Ie.a)(function (e) {
+        Oe = Object(Ie.a)(function (e) {
           return e === F.b.SavedSearch ? 'destructiveText' : 'brandText'
         }),
-        Oe = Object(Ie.a)(function (e) {
-          return e === F.b.SavedSearch ? Be : Re
+        Le = Object(Ie.a)(function (e) {
+          return e === F.b.SavedSearch ? Be : Te
         }),
         De = (function (e) {
           m()(n, e)
@@ -1092,11 +1092,11 @@
               (e = t.call.apply(t, [this].concat(r))),
               y()(p()(e), '_getButtonType', function () {
                 var t = e.props.category
-                return Le(t)
+                return Oe(t)
               }),
               y()(p()(e), '_getRemoveIcon', function () {
                 var t = e.props.category
-                return Oe(t)
+                return Le(t)
               }),
               e
             )
@@ -1110,7 +1110,7 @@
                     t = e.onRemove,
                     n = e.query,
                     a = e.withNewTypeaheadUI ? 'xxxLarge' : 'xLarge',
-                    r = E.a.createElement(se.a, { Icon: Te.a, color: 'neutral', size: a, style: Pe.searchIcon })
+                    r = E.a.createElement(se.a, { Icon: Re.a, color: 'neutral', size: a, style: Pe.searchIcon })
                   return E.a.createElement(
                     le.a,
                     { avatarCell: r, avatarSize: a, cellStyle: Pe.bodyColumn },
@@ -1150,7 +1150,7 @@
         Ae = De,
         Fe = n('htQn'),
         Ue = { viewType: 'search_item' },
-        ze = (function (e) {
+        Ne = (function (e) {
           m()(n, e)
           var t = g()(n)
           function n(e, a) {
@@ -1178,7 +1178,7 @@
                       onItemClick: a,
                       onRemove: r._handleOnRemove,
                       ref: r._handleItemRef,
-                      style: Ne.itemPadding,
+                      style: ze.itemPadding,
                       withNewTypeaheadUI: r._withNewTypeaheadUI,
                     })
                   : n.topic
@@ -1244,7 +1244,7 @@
                         focusable: !0,
                         nativeID: t,
                         onClick: this._handleOnClick,
-                        style: [Ne.root, t && Ne.focused, !(null != n && n.user) && Ne.itemPadding],
+                        style: [ze.root, t && ze.focused, !(null != n && n.user) && ze.itemPadding],
                         testID: a,
                       },
                       this._renderSearchItem(),
@@ -1262,8 +1262,8 @@
             n
           )
         })(E.a.Component)
-      y()(ze, 'contextType', Se.a)
-      var Ne = ne.a.create(function (e) {
+      y()(Ne, 'contextType', Se.a)
+      var ze = ne.a.create(function (e) {
           return {
             root: { cursor: 'pointer' },
             itemPadding: {
@@ -1273,15 +1273,15 @@
             focused: { backgroundColor: e.colors.gray0 },
           }
         }),
-        He = ze,
-        je = n('4ZbN'),
+        je = Ne,
+        He = n('4ZbN'),
         Me = n('eb3s'),
         qe = n('MXDK'),
-        Ve = R.a.ee295fbe,
-        We = { headline: R.a.f45c425f, text: R.a.caae4dd9, confirmButtonLabel: R.a.dbd5d40f },
-        Ke = R.a.a8d68f61,
-        Qe = R.a.c6530778,
-        Ge = R.a.e047b8fa,
+        Ve = B.a.ee295fbe,
+        We = { headline: B.a.f45c425f, text: B.a.caae4dd9, confirmButtonLabel: B.a.dbd5d40f },
+        Ke = B.a.a8d68f61,
+        Qe = B.a.c6530778,
+        Ge = B.a.e047b8fa,
         Xe = ['user', 'keyword'],
         Je = (function (e) {
           m()(n, e)
@@ -1317,7 +1317,7 @@
                 return a
                   ? E.a.createElement(
                       ee.a,
-                      { style: Ye.emptyState, testID: je.a.typeaheadEmptySearch },
+                      { style: Ye.emptyState, testID: He.a.typeaheadEmptySearch },
                       E.a.createElement(ue.b, { align: 'center', color: 'gray700' }, Ve),
                     )
                   : E.a.createElement(
@@ -1329,7 +1329,7 @@
                             null,
                             E.a.createElement(
                               ee.a,
-                              { style: Ye.header, testID: je.a.typeaheadRecentSearchesHeader },
+                              { style: Ye.header, testID: He.a.typeaheadRecentSearchesHeader },
                               E.a.createElement(ue.b, { numberOfLines: 1, size: 'headline1', weight: 'bold' }, Ke),
                               E.a.createElement(
                                 te.a,
@@ -1351,7 +1351,7 @@
                               {
                                 accessibilityHidden: !0,
                                 style: [Ye.header, Ye.borderTop],
-                                testID: je.a.typeaheadSavedSearchesHeader,
+                                testID: He.a.typeaheadSavedSearchesHeader,
                               },
                               E.a.createElement(ue.b, { numberOfLines: 1, size: 'headline1', weight: 'bold' }, Qe),
                             ),
@@ -1363,7 +1363,7 @@
               y()(p()(o), '_renderRecentSearchItem', function (e, t) {
                 var n = o.props.ariaDescendantId,
                   a = o.state.focusIndex === t
-                return E.a.createElement(He, {
+                return E.a.createElement(je, {
                   domId: a ? n : void 0,
                   index: t,
                   item: e,
@@ -1371,7 +1371,7 @@
                   onItemClick: o._handleOnItemClick,
                   onRemoveQuery: o._handleRemoveQuery,
                   ref: a ? o._setFocusedItemRef : void 0,
-                  testID: je.a.typeaheadRecentSearchesItem,
+                  testID: He.a.typeaheadRecentSearchesItem,
                 })
               }),
               y()(p()(o), '_chooseKeyType', function (e, t) {
@@ -1396,10 +1396,10 @@
                   i.reverse(),
                   E.a.createElement(
                     ee.a,
-                    { testID: je.a.typeaheadSavedSearchesContainer },
+                    { testID: He.a.typeaheadSavedSearchesContainer },
                     i.map(function (e, n) {
                       var i = a === n + r.length
-                      return E.a.createElement(He, {
+                      return E.a.createElement(je, {
                         domId: i ? t : void 0,
                         index: n,
                         item: e,
@@ -1407,7 +1407,7 @@
                         onItemClick: o._handleOnItemClick,
                         onRemoveQuery: o._handleRemoveQuery,
                         ref: i ? o._setFocusedItemRef : void 0,
-                        testID: je.a.typeaheadSavedSearchesItem,
+                        testID: He.a.typeaheadSavedSearchesItem,
                       })
                     }),
                   )
@@ -1453,7 +1453,7 @@
                   case F.b.RecentSearch:
                     var i = { keyword: e.keyword, user: e.user, topic: e.topic, event: e.event }
                     r(i), o._resetFocus()
-                    var c = D.a.forRecentSearchResult(i, t),
+                    var c = P.a.forRecentSearchResult(i, t),
                       s = o._handleRemoveAction(e)
                     c && a.scribe({ action: s, data: { items: [c] } })
                     break
@@ -1496,7 +1496,7 @@
                   c = a[i]
                 if (r) {
                   n(r)
-                  var s = c && D.a.forSavedSearchResult(c.keyword.query, i)
+                  var s = c && P.a.forSavedSearchResult(c.keyword.query, i)
                   s && t.scribe({ element: 'saved_search', action: 'delete', data: { items: [s] } })
                 }
                 o.setState({ shouldShowDeleteSavedSearchConfirmation: !1, savedSearchIdToDelete: void 0 })
@@ -1514,9 +1514,9 @@
                   t = e.analytics,
                   n = e.recentSearches
                 if (n && n.length) {
-                  var a = Object(P.a)(
+                  var a = Object(w.a)(
                     n.map(function (e, t) {
-                      return D.a.forRecentSearchResult(e, t)
+                      return P.a.forRecentSearchResult(e, t)
                     }),
                   )
                   t.scribe({ action: 'impression', data: { items: a } })
@@ -1527,9 +1527,9 @@
                   t = e.analytics,
                   n = e.savedSearches
                 if (n && n.length) {
-                  var a = Object(P.a)(
+                  var a = Object(w.a)(
                     n.map(function (e, t) {
-                      return D.a.forSavedSearchResult(e.keyword.query, t)
+                      return P.a.forSavedSearchResult(e.keyword.query, t)
                     }),
                   )
                   t.scribe({ element: 'saved_search', action: 'impression', data: { items: a } })
@@ -1539,7 +1539,7 @@
                 var n = o.props.analytics
                 switch (e.category) {
                   case F.b.SavedSearch:
-                    var a = D.a.forSavedSearchResult(e.query, t)
+                    var a = P.a.forSavedSearchResult(e.query, t)
                     n.scribe({ element: 'typeahead', action: 'click', data: { targets: [a] } })
                     break
                   case F.b.RecentSearch:
@@ -1553,7 +1553,7 @@
                           : e.recentSearchType === F.a.Topic && e.queryMetadata && e.queryMetadata.name
                           ? { topic: r()(r()({}, e.queryMetadata), {}, { type: F.a.Topic, id: e.query }) }
                           : { keyword: { type: F.a.Keyword, query: e.query } })
-                    var c = i && D.a.forRecentSearchResult(i, t)
+                    var c = i && P.a.forRecentSearchResult(i, t)
                     c && n.scribe({ action: 'click', data: { targets: [c] } })
                 }
               }),
@@ -1668,7 +1668,7 @@
                           headline: We.headline,
                           onCancel: this._handleOnClearAllCancel,
                           onConfirm: this._handleOnClearAllConfirm,
-                          testID: je.a.deleteRecentSearchesDialog,
+                          testID: He.a.deleteRecentSearchesDialog,
                           text: We.text,
                         })
                       : null,
@@ -1721,15 +1721,16 @@
         et = n('TnY3'),
         tt = n('GZwR'),
         nt = n('4e/K'),
-        at = R.a.ib2e46ee,
-        rt = R.a.hbc99b02,
+        at = B.a.ib2e46ee,
+        rt = B.a.hbc99b02,
         ot = /^(\w+)$/,
         it = [tt.a.Events, tt.a.Users, tt.a.Topics],
         ct = function (e) {
           return '@' === e[0] ? e.substring(1) : e
         },
         st = { viewType: 'search_field' },
-        lt = (function (e) {
+        lt = ['t1', 't3', 't4'],
+        ut = (function (e) {
           m()(n, e)
           var t = g()(n)
           function n(e, a) {
@@ -1738,7 +1739,24 @@
               s()(this, n),
               (c = t.call(this, e, a)),
               y()(p()(c), '_withNewTypeaheadUI', !1),
+              y()(p()(c), '_orderResults', function (e, t, n, a) {
+                return 't4' === c._rankedTypeaheadExperimentalValue
+                  ? c._reorderResults(e, t, n, a)
+                  : c._flattenResults(e, t, n, a)
+              }),
               y()(p()(c), '_reorderResults', function (e, t, n, a) {
+                var r = Object(tt.f)(t, tt.b.User),
+                  o = Object(tt.f)(t, tt.b.NoResult),
+                  i = r.sort(function (e, t) {
+                    var n = e.rounded_score,
+                      a = void 0 === n ? 0 : n,
+                      r = t.rounded_score
+                    return (void 0 === r ? 0 : r) - a
+                  }),
+                  c = [].concat(v()(i), v()(o))
+                return Object(w.a)([e, a.length ? a : void 0, n.length ? n : void 0, c.length ? c : void 0])
+              }),
+              y()(p()(c), '_flattenResults', function (e, t, n, a) {
                 var r = Object(tt.f)(t, tt.b.User),
                   o = Object(tt.f)(t, tt.b.NoResult),
                   i = Object(tt.f)(n, tt.b.Topic),
@@ -1846,7 +1864,7 @@
                 ;/^\s*$/.test(n) ||
                   (a.scribe({
                     action: 'search',
-                    data: { items: D.a.forTypeaheadResults(t), search_details: { query: n } },
+                    data: { items: P.a.forTypeaheadResults(t), search_details: { query: n } },
                   }),
                   c._submitQuery({ query: n, shouldAddToRecentSearch: !0 }))
               }),
@@ -1864,7 +1882,7 @@
                     break
                   case tt.b.Event:
                     e.data && e.data.url
-                      ? c._routeTransition({ pathname: B.b.parseInternalUrl(e.data.url) })
+                      ? c._routeTransition({ pathname: O.b.parseInternalUrl(e.data.url) })
                       : c._submitQuery({ query: e.data.topic, src: L.a.TypeaheadClick })
                     break
                   case tt.b.NoResult:
@@ -1920,7 +1938,7 @@
               (c.state = {
                 query: e.initialValue,
                 items: [],
-                lastSubmittedQuery: Object(x.a)(null === (o = e.location.query) || void 0 === o ? void 0 : o.q),
+                lastSubmittedQuery: Object(R.a)(null === (o = e.location.query) || void 0 === o ? void 0 : o.q),
               }),
               (c._withNewTypeaheadUI = c.context.featureSwitches.isTrue(
                 'responsive_web_account_search_readability_enabled',
@@ -1934,7 +1952,7 @@
                 key: 'componentDidMount',
                 value: function () {
                   this.props.shouldHandleSearchShortcut &&
-                    (this._unregisterSearchShortcutHandler = Object(O.b)(this._handleSearchShortcut))
+                    (this._unregisterSearchShortcutHandler = Object(D.b)(this._handleSearchShortcut))
                 },
               },
               {
@@ -1957,21 +1975,20 @@
                     s = (o.state || {}).searchPrefill,
                     l = this.props.initialValue || s,
                     u = !!o.state && !!o.state.searchFocused,
-                    d =
-                      't1' === this._rankedTypeaheadExperimentalValue || 't3' === this._rankedTypeaheadExperimentalValue
+                    d = lt.includes(this._rankedTypeaheadExperimentalValue)
                   return E.a.createElement(
                     k.a,
                     { behavioralEventContext: st },
                     E.a.createElement(
                       ee.a,
-                      { style: ut.root },
+                      { style: dt.root },
                       E.a.createElement(nt.default, {
                         filter: it,
                         forceVdlDisable: t,
                         getTopicExactMatch: c ? tt.h : void 0,
                         getUserExactMatch: c ? this._getUserExactMatch : void 0,
                         initialValue: l,
-                        inputStyle: ut.input,
+                        inputStyle: dt.input,
                         isCompact: n,
                         isInSidebar: a,
                         isOnHomepage: r,
@@ -1981,7 +1998,7 @@
                         onItemsChanged: this._handleItemsChanged,
                         onQueryChange: this._handleChange,
                         onSubmit: this._handleTypeaheadSubmit,
-                        orderResults: d ? this._reorderResults : void 0,
+                        orderResults: d ? this._orderResults : void 0,
                         placeholder: i,
                         ref: this._setInputRef,
                         renderEmptyState: this._renderSearchBoxEmptyState,
@@ -2003,21 +2020,21 @@
             n
           )
         })(E.a.Component)
-      y()(lt, 'defaultProps', {
+      y()(ut, 'defaultProps', {
         initialValue: '',
         isInSidebar: !1,
         placeholder: at,
         searchRoute: '/search',
         forceVdlDisable: !0,
       }),
-        y()(lt, 'contextType', Se.a)
-      var ut = ne.a.create(function (e) {
+        y()(ut, 'contextType', Se.a)
+      var dt = ne.a.create(function (e) {
         return {
           root: { alignItems: 'stretch', flexBasis: 0, flexDirection: 'row', flexGrow: 1 },
           input: { flexShrink: 1 },
         }
       })
-      t.default = Object(et.a)(I(lt))
+      t.default = Object(et.a)(x(ut))
     },
     AS3p: function (e, t, n) {
       'use strict'
@@ -2171,11 +2188,11 @@
       function I(e) {
         return r.a.createElement(
           h.a,
-          { style: T.cookieComplianceMessageWrap },
+          { style: R.cookieComplianceMessageWrap },
           r.a.createElement(m.b, { color: 'buttonWhite', size: 'headline2', weight: 'medium' }, e.title),
           r.a.createElement(
             m.b,
-            { color: 'buttonWhite', size: 'subtext2', style: T.cookieComplianceExpandedDetails },
+            { color: 'buttonWhite', size: 'subtext2', style: R.cookieComplianceExpandedDetails },
             e.body,
           ),
         )
@@ -2230,18 +2247,18 @@
                 var n = e.windowWidth < g.a.theme.breakpoints.xLarge
                 return r.a.createElement(
                   h.a,
-                  { ref: t, style: [T.root, n && T.rootNarrow] },
+                  { ref: t, style: [R.root, n && R.rootNarrow] },
                   s ? r.a.createElement(w, null) : r.a.createElement(C, { onExpand: i }),
                   r.a.createElement(
                     h.a,
-                    { style: [T.buttonContainer, n && T.buttonContainerNarrow] },
+                    { style: [R.buttonContainer, n && R.buttonContainerNarrow] },
                     r.a.createElement(
                       b.a,
                       {
                         dominantColor: 'buttonAlwaysBlack',
                         onPress: y,
                         size: 'medium',
-                        style: [T.ctaButton, n && T.ctaButtonNarrow],
+                        style: [R.ctaButton, n && R.ctaButtonNarrow],
                         type: g.a.isDarkMode() ? 'onMediaDominantColorFilled' : 'onMediaWhiteFilled',
                       },
                       v,
@@ -2252,7 +2269,7 @@
                         dominantColor: 'buttonAlwaysBlack',
                         onPress: E,
                         size: 'medium',
-                        style: [T.ctaButton, n && T.ctaButtonNarrow],
+                        style: [R.ctaButton, n && R.ctaButtonNarrow],
                         type: g.a.isDarkMode() ? 'onMediaDominantColorFilled' : 'onMediaWhiteFilled',
                       },
                       _,
@@ -2262,7 +2279,7 @@
               })
             : null
         }),
-        T = g.a.create(function (e) {
+        R = g.a.create(function (e) {
           return {
             root: {
               alignItems: 'center',
@@ -2305,20 +2322,20 @@
             background: { backgroundColor: e.colors.buttonBlack },
           }
         }),
-        R = n('97Jx'),
-        B = n.n(R),
-        L = n('VrFO'),
-        O = n.n(L),
+        T = n('97Jx'),
+        B = n.n(T),
+        O = n('VrFO'),
+        L = n.n(O),
         D = n('Y9Ll'),
         P = n.n(D),
         A = n('1Pcy'),
         F = n.n(A),
         U = n('5Yy7'),
-        z = n.n(U),
-        N = n('2VqO'),
-        H = n.n(N),
-        j = n('KEM+'),
-        M = n.n(j),
+        N = n.n(U),
+        z = n('2VqO'),
+        j = n.n(z),
+        H = n('KEM+'),
+        M = n.n(H),
         q = (n('hBvt'), n('RqPI')),
         V = n('rxPX'),
         W = Object(V.a)().propsFromState(function () {
@@ -2333,11 +2350,11 @@
           }),
         X = S.a.ia5e7487,
         J = (function (e) {
-          z()(n, e)
-          var t = H()(n)
+          N()(n, e)
+          var t = j()(n)
           function n(e, a) {
             var o
-            O()(this, n),
+            L()(this, n),
               (o = t.call(this, e, a)),
               M()(F()(o), 'state', { euWarningIsOpen: !1 }),
               M()(F()(o), '_renderMessage', function () {
@@ -2513,14 +2530,14 @@
         C = n('1zbE'),
         I = n('Ukpf'),
         x = n('cnVF'),
-        T = n('TnY3'),
-        R = n('0+0m'),
+        R = n('TnY3'),
+        T = n('0+0m'),
         B = n('v6aA'),
-        L = n('2qJZ'),
-        O = E.a.ib65b1c6,
+        O = n('2qJZ'),
+        L = E.a.ib65b1c6,
         D = E.a.f55cebb7,
         P = E.a.g61ed8a4,
-        A = { clientId: R.a, scope: 'name email', usePopup: !0 },
+        A = { clientId: T.a, scope: 'name email', usePopup: !0 },
         F = (function (e) {
           p()(n, e)
           var t = m()(n)
@@ -2539,7 +2556,7 @@
               g()(u()(e), '_initAppleIDAuth', function () {
                 var t = window.AppleID,
                   n = e.props.fetchSsoInitToken,
-                  a = Object(L.c)(e.context.featureSwitches) ? 'https://'.concat(L.b) : 'https://'.concat(L.a)
+                  a = Object(O.c)(e.context.featureSwitches) ? 'https://'.concat(O.b) : 'https://'.concat(O.a)
                 t &&
                   n(x.A.Apple).then(function (e) {
                     var n = e.state
@@ -2588,7 +2605,7 @@
                     })
                     .catch(function (t) {
                       var n = e.props.addToast
-                      t.error !== R.f
+                      t.error !== T.f
                         ? (a.scribe({ component: 'apple_sign_in', element: r, action: 'failure' }), n({ text: P }))
                         : a.scribe({ component: 'apple_sign_in', element: 'auth', action: 'user_closed_popup' })
                     })
@@ -2620,7 +2637,7 @@
                     n = e.buttonState,
                     a = e.style,
                     r = this.state.isScriptLoaded,
-                    o = n === C.a.SignUp ? O : D
+                    o = n === C.a.SignUp ? L : D
                   return this._is3rdPartyIntegrationDisabled
                     ? null
                     : y.a.createElement(S.a, {
@@ -2642,7 +2659,7 @@
         })(y.a.PureComponent)
       g()(F, 'contextType', B.a),
         g()(F, 'defaultProps', { buttonSize: 'xLarge', buttonState: 'signup' }),
-        (t.a = Object(T.a)(Object(v.a)(F)))
+        (t.a = Object(R.a)(Object(v.a)(F)))
     },
     bCEw: function (e, t, n) {
       'use strict'
@@ -2801,26 +2818,26 @@
         C = n('zh9S'),
         I = n('RqPI'),
         x = n('rxPX'),
-        T = Object(x.a)()
+        R = Object(x.a)()
           .propsFromState(function () {
             return { userLanguage: I.o }
           })
           .propsFromActions(function () {
             return { scribeAction: C.c }
           }),
-        R = n('H1k/'),
+        T = n('H1k/'),
         B = n('SrtL'),
-        L = n('FQwk'),
-        O = n('kG2l'),
+        O = n('FQwk'),
+        L = n('kG2l'),
         D = n('muX9'),
         P = n('6oVL'),
         A = n('rJoH'),
         F = n('yoO3'),
         U = n('Es6L'),
-        z = n('JkIr'),
-        N = n('MWbm'),
-        H = n('t62R'),
-        j = n('/yvb'),
+        N = n('JkIr'),
+        z = n('MWbm'),
+        j = n('t62R'),
+        H = n('/yvb'),
         M = n('0yYu'),
         q = n('cHvH'),
         V = n('TIdA'),
@@ -2870,8 +2887,8 @@
           v.a.Fragment,
           null,
           v.a.createElement(w.a.Configure, { hideCookieBannerPicker: !0 }),
-          v.a.createElement(k.a, null, v.a.createElement(R.a, { onHeightChange: o })),
-          v.a.createElement(N.a, { style: [{ marginBottom: a }, we.bannerPadderChildren] }, e.children),
+          v.a.createElement(k.a, null, v.a.createElement(T.a, { onHeightChange: o })),
+          v.a.createElement(z.a, { style: [{ marginBottom: a }, we.bannerPadderChildren] }, e.children),
         )
       }
       var Ee = (function (e) {
@@ -2915,7 +2932,7 @@
             g()(u()(o), '_renderLoginSignupButtons', function (e) {
               var t = e ? we.ctaButton : we.ctaButtonMobile
               return v.a.createElement(
-                N.a,
+                z.a,
                 { style: !o._thirdPartySsoButtonsEnabled && 'tablet' === e && we.ctaButtonContainer },
                 o._thirdPartySsoButtonsEnabled
                   ? v.a.createElement(
@@ -2930,25 +2947,25 @@
                       v.a.Fragment,
                       null,
                       v.a.createElement(
-                        j.a,
+                        H.a,
                         {
                           link: '/i/flow/signup',
                           onPress: o._handleSignupButton,
                           size: 'xLarge',
                           style: [t, 'tablet' === e && we.ctaButtonSplitSpacing],
-                          testID: z.a.signupButton,
+                          testID: N.a.signupButton,
                           type: 'brandFilled',
                         },
                         pe,
                       ),
                       v.a.createElement(
-                        j.a,
+                        H.a,
                         {
                           link: '/login',
                           onPress: o._handleLoginButton,
                           size: 'xLarge',
                           style: t,
-                          testID: z.a.loginButton,
+                          testID: N.a.loginButton,
                           type: 'brandOutlined',
                         },
                         fe,
@@ -2964,7 +2981,7 @@
               return v.a.createElement(
                 v.a.Fragment,
                 null,
-                v.a.createElement(O.a, {
+                v.a.createElement(L.a, {
                   buttonSize: 'medium',
                   buttonState: n,
                   displayType: o._googleOneTapEverywhereEnabled ? Y.e.Button : void 0,
@@ -2991,12 +3008,12 @@
                 v.a.Fragment,
                 null,
                 v.a.createElement(
-                  N.a,
+                  z.a,
                   { style: we.gapContainer },
-                  v.a.createElement(M.a, { label: v.a.createElement(H.b, { children: ve }) }),
+                  v.a.createElement(M.a, { label: v.a.createElement(j.b, { children: ve }) }),
                 ),
                 v.a.createElement(
-                  j.a,
+                  H.a,
                   {
                     link: {
                       pathname: '/i/flow/signup',
@@ -3005,24 +3022,24 @@
                     onPress: o._handleSignupButton,
                     size: 'medium',
                     style: [t, 'tablet' === e && we.ctaButtonSplitSpacing, we.ssoButtonStyles],
-                    testID: z.a.signupButton,
+                    testID: N.a.signupButton,
                     type: 'brandFilled',
                   },
                   he,
                 ),
-                v.a.createElement(H.b, { color: 'gray700', size: 'subtext3', style: [t, { width: Y.b }] }, oe.c),
+                v.a.createElement(j.b, { color: 'gray700', size: 'subtext3', style: [t, { width: Y.b }] }, oe.c),
                 v.a.createElement(
-                  N.a,
+                  z.a,
                   { style: we.signInButtonContainer },
-                  v.a.createElement(H.b, { size: 'headline2', style: t, weight: 'bold' }, me),
+                  v.a.createElement(j.b, { size: 'headline2', style: t, weight: 'bold' }, me),
                   v.a.createElement(
-                    j.a,
+                    H.a,
                     {
                       link: '/login',
                       onPress: o._handleLoginButton,
                       size: 'medium',
                       style: [t, 'tablet' === e && we.ctaButtonSplitSpacing, we.ssoButtonStyles],
-                      testID: z.a.loginButton,
+                      testID: N.a.loginButton,
                       type: 'brandOutlined',
                     },
                     be,
@@ -3041,7 +3058,7 @@
                 v.a.Fragment,
                 null,
                 v.a.createElement(
-                  j.a,
+                  H.a,
                   {
                     backgroundColor: 'white',
                     borderColor: 'gray200',
@@ -3050,19 +3067,19 @@
                     onPress: r,
                     size: 'medium',
                     style: [n, 'tablet' === e && we.ctaButtonSplitSpacing, we.ssoButtonStyles],
-                    testID: t === oe.a.LogIn ? z.a.loginButton : z.a.signupButton,
+                    testID: t === oe.a.LogIn ? N.a.loginButton : N.a.signupButton,
                   },
                   i,
                 ),
                 t === oe.a.SignUp
-                  ? v.a.createElement(H.b, { color: 'gray700', size: 'subtext2', style: n }, oe.c)
+                  ? v.a.createElement(j.b, { color: 'gray700', size: 'subtext2', style: n }, oe.c)
                   : null,
-                v.a.createElement(H.b, { testID: z.a.logInSignUpFooter }, o._getLoginSignupFooter()),
+                v.a.createElement(j.b, { testID: N.a.logInSignUpFooter }, o._getLoginSignupFooter()),
               )
             }),
             g()(u()(o), '_renderUsernameInputField', function () {
               return v.a.createElement(
-                N.a,
+                z.a,
                 { style: ke.inputContainer },
                 v.a.createElement(ie.b, {
                   onChange: o._handleUsernameChange,
@@ -3074,11 +3091,11 @@
             g()(u()(o), '_renderHalfForm', function () {
               var e = o.state.usernameValue
               return v.a.createElement(
-                N.a,
+                z.a,
                 { style: [ke.container, ke.halfForm] },
                 o._renderUsernameInputField(),
                 v.a.createElement(
-                  j.a,
+                  H.a,
                   {
                     link: { pathname: '/login', query: { username_or_email: e } },
                     onPress: o._handleHalfFormLoginClick,
@@ -3124,7 +3141,7 @@
                     v.a.createElement(
                       $.a.I18NFormatMessage,
                       { $i18n: 'c83ef3f5' },
-                      v.a.createElement(H.b, { color: 'link', onPress: e }, $.a.fb9dd9b0),
+                      v.a.createElement(j.b, { color: 'link', onPress: e }, $.a.fb9dd9b0),
                     )
                   )
                 case oe.a.LogIn:
@@ -3133,7 +3150,7 @@
                     return v.a.createElement(
                       $.a.I18NFormatMessage,
                       { $i18n: 'i89d7b70' },
-                      v.a.createElement(H.b, { color: 'link', onPress: t }, $.a.ie4dd8d6),
+                      v.a.createElement(j.b, { color: 'link', onPress: t }, $.a.ie4dd8d6),
                     )
                   })({
                     onPress: function () {
@@ -3235,7 +3252,7 @@
                       c = i.deviceSize,
                       s = i.showLoginForm
                     return v.a.createElement(
-                      N.a,
+                      z.a,
                       { style: we.root },
                       n
                         ? v.a.createElement(re.b, {
@@ -3249,12 +3266,12 @@
                             v.a.Fragment,
                             null,
                             v.a.createElement(
-                              N.a,
+                              z.a,
                               { style: [we.main, 'desktop' === c && we.mainWide] },
                               e._renderCTA({ deviceSize: c, showLoginForm: s }),
                               e._renderHero(c),
                             ),
-                            v.a.createElement(_e, null, v.a.createElement(L.a, { align: 'center' })),
+                            v.a.createElement(_e, null, v.a.createElement(O.a, { align: 'center' })),
                           ),
                     )
                   }),
@@ -3268,10 +3285,10 @@
                   n = t.original,
                   a = t.variants
                 return v.a.createElement(
-                  N.a,
+                  z.a,
                   { style: [we.block, we.communication, we.blockHero] },
                   v.a.createElement(
-                    N.a,
+                    z.a,
                     { style: we.blockImg },
                     v.a.createElement(V.a, {
                       accessibilityLabel: '',
@@ -3291,18 +3308,18 @@
               value: function () {
                 var e = ce.length
                 return v.a.createElement(
-                  N.a,
+                  z.a,
                   { style: we.communicationItems },
                   ce.map(function (t, n) {
                     var a = t.Icon,
                       r = t.text,
                       o = n + 1 === e
                     return v.a.createElement(
-                      N.a,
+                      z.a,
                       { key: r, style: [we.communicationItem, o && we.communicationItemLast] },
                       v.a.createElement(a, { style: we.communicationItemIcon }),
                       v.a.createElement(
-                        H.b,
+                        j.b,
                         { color: 'white', size: 'headline1', style: we.communicationItemText, weight: 'bold' },
                         r,
                       ),
@@ -3318,20 +3335,20 @@
                   n = e.showLoginForm,
                   a = this.state.buttonState
                 return v.a.createElement(
-                  N.a,
+                  z.a,
                   { style: [we.block, we.blockCTA, 'tablet' === t && we.blockTabletCTA] },
                   n ? this._renderLoginForm() : null,
                   v.a.createElement(
-                    N.a,
+                    z.a,
                     { style: [we.blockInnerWrapper, 'desktop' === t && we.blockInnerWrapperWide] },
                     v.a.createElement(ae.a, { style: we.twitterIcon }),
                     v.a.createElement(
-                      H.b,
+                      j.b,
                       { extendedWidth: !0, style: t ? we.ctaTitleLarge : we.ctaTitle, weight: 'bold' },
                       de,
                     ),
                     v.a.createElement(
-                      H.b,
+                      j.b,
                       {
                         extendedWidth: !0,
                         size: t ? 'title2' : 'title4',
@@ -3360,7 +3377,7 @@
                   ? this._renderHalfForm()
                   : o
                   ? v.a.createElement(
-                      N.a,
+                      z.a,
                       { style: ke.container },
                       v.a.createElement(
                         P.a,
@@ -3373,11 +3390,11 @@
                         },
                         this._renderUsernameInputField(),
                         v.a.createElement(
-                          N.a,
+                          z.a,
                           { style: ke.inputContainer },
                           v.a.createElement(ie.a, { onSubmitEditing: this._handleSubmitEditing, style: ke.input }),
                           v.a.createElement(
-                            H.b,
+                            j.b,
                             {
                               link: {
                                 pathname: 'https://twitter.com/account/begin_password_reset'.concat(a),
@@ -3495,7 +3512,7 @@
             bannerPadderChildren: { transitionProperty: 'margin-bottom', transitionDuration: '100ms' },
           }
         })
-      t.default = Object(J.a)({ page: 'front' })(T(Ee))
+      t.default = Object(J.a)({ page: 'front' })(R(Ee))
     },
     hiGS: function (e, t, n) {
       'use strict'
@@ -3634,12 +3651,12 @@
         C = n('0KEI'),
         I = n('lU4h'),
         x = n.n(I),
-        T = n('21nk'),
-        R = n.n(T),
+        R = n('21nk'),
+        T = n.n(R),
         B = n('bCEw'),
-        L = n.n(B),
-        O = n('Ud88'),
-        D = n.n(O),
+        O = n.n(B),
+        L = n('Ud88'),
+        D = n.n(L),
         P = function (e) {
           return (0, e.render)({ fetchStatus: k.a.LOADING, data: null, error: null, retry: w.a })
         },
@@ -3686,7 +3703,7 @@
           var t = e.query,
             n = e.queryRef,
             a = e.render,
-            r = R()(t, n)
+            r = T()(t, n)
           return a({ fetchStatus: k.a.LOADED, data: r, error: null, retry: w.a })
         },
         U = function (e, t) {
@@ -3696,7 +3713,7 @@
                 o = void 0 === a ? 'store-or-network' : a,
                 i = n.render,
                 c = n.variables,
-                s = L()(e),
+                s = O()(e),
                 l = r()(s, 2),
                 u = l[0],
                 d = l[1],
@@ -3905,20 +3922,20 @@
         C = n('3XMw'),
         I = n.n(C),
         x = n('OrGc'),
-        T = n('QK5w'),
-        R = n('aITJ'),
+        R = n('QK5w'),
+        T = n('aITJ'),
         B = n('MWbm'),
-        L = n('TnY3'),
-        O = n('rHpw'),
+        O = n('TnY3'),
+        L = n('rHpw'),
         D = n('t62R'),
         P = n('v6aA'),
         A = n('uScj'),
         F = n('fs1G'),
         U = n('BcsE'),
-        z = n('VPAj'),
-        N = I.a.b47e760d,
-        H = I.a.fd2c7b43,
-        j = new A.a(),
+        N = n('VPAj'),
+        z = I.a.b47e760d,
+        j = I.a.fd2c7b43,
+        H = new A.a(),
         M = function (e) {
           if (e.target instanceof HTMLInputElement) {
             var t = e.target.tagName.toLowerCase()
@@ -3927,7 +3944,7 @@
           return !1
         },
         q = function (e) {
-          return v.canUseDOM ? j.subscribe(e).unsubscribe : F.a
+          return v.canUseDOM ? H.subscribe(e).unsubscribe : F.a
         },
         V = (function (e) {
           p()(n, e)
@@ -3947,8 +3964,8 @@
                   c = function (e) {
                     return function (t) {
                       t.preventDefault(),
-                        j.getListeners().length
-                          ? j.notify(e)
+                        H.getListeners().length
+                          ? H.notify(e)
                           : o.push({ pathname: '/explore', state: { searchFocused: !0, searchPrefill: e } })
                     }
                   },
@@ -4041,7 +4058,7 @@
                   t.preventDefault(), t.stopPropagation()
                   var n = e._backspaceDown,
                     a = !!Object(U.a)(n) && Date.now() - n < 500,
-                    r = Object(T.a)({}, { location: e.props.location })
+                    r = Object(R.a)({}, { location: e.props.location })
                   a && r ? e.props.history.goBack() : window.close()
                 }
               }),
@@ -4054,7 +4071,7 @@
                 key: 'componentDidMount',
                 value: function () {
                   this._bindKeyboardShortcuts(),
-                    R.b.isKaiOS() &&
+                    T.b.isKaiOS() &&
                       _.a.isStandaloneApp() &&
                       (document.addEventListener('keydown', this._handleKeyDown),
                       document.addEventListener('keyup', this._handleKeyUp))
@@ -4064,7 +4081,7 @@
                 key: 'componentWillUnmount',
                 value: function () {
                   this._unbindKeyboardShortcuts && this._unbindKeyboardShortcuts(),
-                    R.b.isKaiOS() &&
+                    T.b.isKaiOS() &&
                       _.a.isStandaloneApp() &&
                       (document.removeEventListener('keydown', this._handleKeyDown),
                       document.removeEventListener('keyup', this._handleKeyUp))
@@ -4076,9 +4093,9 @@
                   return this.props.loggedInUserScreenName
                     ? y.a.createElement(
                         B.a,
-                        { accessibilityLevel: 2, accessibilityRole: 'heading', style: O.a.visuallyHidden },
-                        y.a.createElement(D.b, null, N),
-                        y.a.createElement(D.b, { focusable: !1, link: '/i/keyboard_shortcuts' }, H),
+                        { accessibilityLevel: 2, accessibilityRole: 'heading', style: L.a.visuallyHidden },
+                        y.a.createElement(D.b, null, z),
+                        y.a.createElement(D.b, { focusable: !1, link: '/i/keyboard_shortcuts' }, j),
                       )
                     : null
                 },
@@ -4089,7 +4106,7 @@
         })(y.a.Component)
       g()(V, 'contextType', P.a)
       var W = w(V),
-        K = v.canUseDOM ? Object(L.a)(W) : Object(z.a)(null)
+        K = v.canUseDOM ? Object(O.a)(W) : Object(N.a)(null)
       t.a = K
     },
     sYRn: function (e, t, n) {

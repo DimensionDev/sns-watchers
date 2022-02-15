@@ -29072,9 +29072,12 @@
     },
     ZcYN: function (e, t, n) {
       'use strict'
-      n.d(t, 'a', function () {
-        return ge
-      })
+      n.d(t, 'b', function () {
+        return be
+      }),
+        n.d(t, 'a', function () {
+          return we
+        })
       var r = n('VrFO'),
         a = n.n(r),
         i = n('Y9Ll'),
@@ -29144,7 +29147,7 @@
                   style: [P.root, !r && n && P.disabled],
                 },
                 v.a.createElement(S.b, { conversation: t, perspective: a }),
-                ge({ isSelected: r }),
+                we({ isSelected: r }),
               )
             : null
         }),
@@ -29491,203 +29494,209 @@
         me = n('iySH'),
         fe = n('IMYl'),
         ve = { viewType: 'typeahead_result' },
-        ye = (function (e) {
-          u()(n, e)
-          var t = p()(n)
-          function n(e, r) {
-            var i
-            return (
-              a()(this, n),
-              (i = t.call(this, e, r)),
-              m()(c()(i), '_onViewRef', function (e) {
-                i._viewRef = e
-                var t = i.props.onRef
-                t && t(e)
-              }),
-              m()(c()(i), '_handleClick', function () {
-                var e = i.props.item
-                e.type !== ae.b.User && i.props.onClick && i.props.onClick(e, i.isDisabled)
-              }),
-              (i._withNewTypeaheadUI =
-                i.context.featureSwitches.isTrue('responsive_web_account_search_readability_enabled') &&
-                e.source === ae.d.SearchBox),
-              i
-            )
-          }
+        ye = function (e) {
+          return e.children
+        }
+      function be(e) {
+        return v.a.createElement(ye, { item: e.item }, v.a.createElement(ge, e))
+      }
+      var ge = (function (e) {
+        u()(n, e)
+        var t = p()(n)
+        function n(e, r) {
+          var i
           return (
-            o()(n, [
-              {
-                key: 'componentDidMount',
-                value: function () {
-                  var e = this
-                  ;(this._loaded = !0),
-                    this._viewRef &&
-                      (this._rafId = window.requestAnimationFrame(function () {
-                        e._viewRef && e._viewRef.setNativeProps({ style: { opacity: 1 } })
-                      }))
-                },
-              },
-              {
-                key: 'componentDidUpdate',
-                value: function (e) {
-                  var t = this.props.onRef
-                  t && t !== e.onRef && this._viewRef && t(this._viewRef)
-                },
-              },
-              {
-                key: 'componentWillUnmount',
-                value: function () {
-                  this._rafId && window.cancelAnimationFrame(this._rafId)
-                },
-              },
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.domId,
-                    n = e.isDisabled,
-                    r = e.isFocused,
-                    a = e.isInMultiSelect,
-                    i = e.isSelected,
-                    o = e.style
-                  return v.a.createElement(
-                    y.a,
-                    { behavioralEventContext: ve },
-                    v.a.createElement(
-                      L.a,
-                      {
-                        accessibilityRole: 'option',
-                        accessibilityState: {
-                          checked: !(!a || !i) || void 0,
-                          selected: n ? void 0 : (a && i) || (!a && !!r),
-                        },
-                        nativeID: t,
-                        testID: b,
-                      },
-                      v.a.createElement(
-                        he.a,
-                        {
-                          accessibilityRole: a ? 'checkbox' : 'button',
-                          disabled: n,
-                          focusable: !0,
-                          onPress: this._handleClick,
-                          style: [r && be.focused, be.transitionStyles, this._loaded && be.loaded, o],
-                          viewRef: this._onViewRef,
-                        },
-                        this._renderResult(),
-                      ),
-                    ),
-                  )
-                },
-              },
-              {
-                key: '_renderResult',
-                value: function () {
-                  var e = this.props,
-                    t = e.disabledMessage,
-                    n = e.isDisabled,
-                    r = e.isSelected,
-                    a = e.item,
-                    i = e.onClick,
-                    o = e.renderUserDecoration,
-                    s = e.source
-                  switch (a.type) {
-                    case ae.b.User:
-                      var c = a.data,
-                        l = o ? o({ userId: c.id_str, isSelected: r }) : void 0
-                      return v.a.createElement(pe, {
-                        avatarUri: c.profile_image_url_https,
-                        canDm: !!c.can_dm,
-                        canMediaTag: !!c.can_media_tag,
-                        decoration: l || void 0,
-                        disabledMessage: t,
-                        isDisabled: n,
-                        isProtected: !!c.protected,
-                        isVerified: !!c.verified,
-                        item: a,
-                        name: c.name,
-                        onItemClick: i,
-                        resultContext: c.result_context,
-                        screenName: c.screen_name,
-                        socialContext: c.social_context,
-                        source: s,
-                        userId: c.id_str,
-                        withNewTypeaheadUI: this._withNewTypeaheadUI,
-                      })
-                    case ae.b.Event:
-                      var u = a.data
-                      return this._withNewTypeaheadUI
-                        ? v.a.createElement(V.a, {
-                            image: u.primary_image && u.primary_image.original_info,
-                            style: be.itemPadding,
-                            supportText: u.supporting_text,
-                            title: u.topic,
-                            withNewTypeaheadUI: !0,
-                          })
-                        : v.a.createElement(U, {
-                            event: u.topic,
-                            image: u.primary_image && u.primary_image.original_info,
-                            supportText: u.supporting_text,
-                          })
-                    case ae.b.Hashtag:
-                    case ae.b.Topic:
-                      var d = this.props.query,
-                        p = a.data,
-                        h = s === ae.d.SearchBox
-                      return v.a.createElement(Q, {
-                        isDisabled: n,
-                        query: d || '',
-                        resultContext: p.result_context,
-                        showIcon: h,
-                        style: h ? be.itemPadding : void 0,
-                        topic: p.topic,
-                      })
-                    case ae.b.DMConversation:
-                      return (
-                        !!this.context.loggedInUserId &&
-                        v.a.createElement(R, {
-                          conversationId: a.id,
-                          isDisabled: n,
-                          isSelected: r,
-                          perspective: this.context.loggedInUserId,
-                        })
-                      )
-                    case ae.b.SettingGroup:
-                      var m = a.data.text
-                      return v.a.createElement(
-                        L.a,
-                        { style: be.navigationLink },
-                        v.a.createElement(A.b, { style: be.content, weight: 'bold' }, m),
-                        v.a.createElement(me.a, { style: be.icon }),
-                      )
-                    case ae.b.Setting:
-                      var f = a.data.text
-                      return v.a.createElement(
-                        L.a,
-                        { style: be.navigationLink },
-                        v.a.createElement(A.b, { style: be.content }, f),
-                        v.a.createElement(me.a, { style: be.icon }),
-                      )
-                    case ae.b.NoResult:
-                      var y = a.data.text
-                      return v.a.createElement(A.b, { style: be.noResult }, y)
-                    default:
-                      return null
-                  }
-                },
-              },
-              {
-                key: 'isDisabled',
-                get: function () {
-                  return !!this.props.isDisabled
-                },
-              },
-            ]),
-            n
+            a()(this, n),
+            (i = t.call(this, e, r)),
+            m()(c()(i), '_onViewRef', function (e) {
+              i._viewRef = e
+              var t = i.props.onRef
+              t && t(e)
+            }),
+            m()(c()(i), '_handleClick', function () {
+              var e = i.props.item
+              e.type !== ae.b.User && i.props.onClick && i.props.onClick(e, i.isDisabled)
+            }),
+            (i._withNewTypeaheadUI =
+              i.context.featureSwitches.isTrue('responsive_web_account_search_readability_enabled') &&
+              e.source === ae.d.SearchBox),
+            i
           )
-        })(v.a.Component)
-      m()(ye, 'contextType', oe.a)
-      var be = O.a.create(function (e) {
+        }
+        return (
+          o()(n, [
+            {
+              key: 'componentDidMount',
+              value: function () {
+                var e = this
+                ;(this._loaded = !0),
+                  this._viewRef &&
+                    (this._rafId = window.requestAnimationFrame(function () {
+                      e._viewRef && e._viewRef.setNativeProps({ style: { opacity: 1 } })
+                    }))
+              },
+            },
+            {
+              key: 'componentDidUpdate',
+              value: function (e) {
+                var t = this.props.onRef
+                t && t !== e.onRef && this._viewRef && t(this._viewRef)
+              },
+            },
+            {
+              key: 'componentWillUnmount',
+              value: function () {
+                this._rafId && window.cancelAnimationFrame(this._rafId)
+              },
+            },
+            {
+              key: 'render',
+              value: function () {
+                var e = this.props,
+                  t = e.domId,
+                  n = e.isDisabled,
+                  r = e.isFocused,
+                  a = e.isInMultiSelect,
+                  i = e.isSelected,
+                  o = e.style
+                return v.a.createElement(
+                  y.a,
+                  { behavioralEventContext: ve },
+                  v.a.createElement(
+                    L.a,
+                    {
+                      accessibilityRole: 'option',
+                      accessibilityState: {
+                        checked: !(!a || !i) || void 0,
+                        selected: n ? void 0 : (a && i) || (!a && !!r),
+                      },
+                      nativeID: t,
+                      testID: b,
+                    },
+                    v.a.createElement(
+                      he.a,
+                      {
+                        accessibilityRole: a ? 'checkbox' : 'button',
+                        disabled: n,
+                        focusable: !0,
+                        onPress: this._handleClick,
+                        style: [r && _e.focused, _e.transitionStyles, this._loaded && _e.loaded, o],
+                        viewRef: this._onViewRef,
+                      },
+                      this._renderResult(),
+                    ),
+                  ),
+                )
+              },
+            },
+            {
+              key: '_renderResult',
+              value: function () {
+                var e = this.props,
+                  t = e.disabledMessage,
+                  n = e.isDisabled,
+                  r = e.isSelected,
+                  a = e.item,
+                  i = e.onClick,
+                  o = e.renderUserDecoration,
+                  s = e.source
+                switch (a.type) {
+                  case ae.b.User:
+                    var c = a.data,
+                      l = o ? o({ userId: c.id_str, isSelected: r }) : void 0
+                    return v.a.createElement(pe, {
+                      avatarUri: c.profile_image_url_https,
+                      canDm: !!c.can_dm,
+                      canMediaTag: !!c.can_media_tag,
+                      decoration: l || void 0,
+                      disabledMessage: t,
+                      isDisabled: n,
+                      isProtected: !!c.protected,
+                      isVerified: !!c.verified,
+                      item: a,
+                      name: c.name,
+                      onItemClick: i,
+                      resultContext: c.result_context,
+                      screenName: c.screen_name,
+                      socialContext: c.social_context,
+                      source: s,
+                      userId: c.id_str,
+                      withNewTypeaheadUI: this._withNewTypeaheadUI,
+                    })
+                  case ae.b.Event:
+                    var u = a.data
+                    return this._withNewTypeaheadUI
+                      ? v.a.createElement(V.a, {
+                          image: u.primary_image && u.primary_image.original_info,
+                          style: _e.itemPadding,
+                          supportText: u.supporting_text,
+                          title: u.topic,
+                          withNewTypeaheadUI: !0,
+                        })
+                      : v.a.createElement(U, {
+                          event: u.topic,
+                          image: u.primary_image && u.primary_image.original_info,
+                          supportText: u.supporting_text,
+                        })
+                  case ae.b.Hashtag:
+                  case ae.b.Topic:
+                    var d = this.props.query,
+                      p = a.data,
+                      h = s === ae.d.SearchBox
+                    return v.a.createElement(Q, {
+                      isDisabled: n,
+                      query: d || '',
+                      resultContext: p.result_context,
+                      showIcon: h,
+                      style: h ? _e.itemPadding : void 0,
+                      topic: p.topic,
+                    })
+                  case ae.b.DMConversation:
+                    return (
+                      !!this.context.loggedInUserId &&
+                      v.a.createElement(R, {
+                        conversationId: a.id,
+                        isDisabled: n,
+                        isSelected: r,
+                        perspective: this.context.loggedInUserId,
+                      })
+                    )
+                  case ae.b.SettingGroup:
+                    var m = a.data.text
+                    return v.a.createElement(
+                      L.a,
+                      { style: _e.navigationLink },
+                      v.a.createElement(A.b, { style: _e.content, weight: 'bold' }, m),
+                      v.a.createElement(me.a, { style: _e.icon }),
+                    )
+                  case ae.b.Setting:
+                    var f = a.data.text
+                    return v.a.createElement(
+                      L.a,
+                      { style: _e.navigationLink },
+                      v.a.createElement(A.b, { style: _e.content }, f),
+                      v.a.createElement(me.a, { style: _e.icon }),
+                    )
+                  case ae.b.NoResult:
+                    var y = a.data.text
+                    return v.a.createElement(A.b, { style: _e.noResult }, y)
+                  default:
+                    return null
+                }
+              },
+            },
+            {
+              key: 'isDisabled',
+              get: function () {
+                return !!this.props.isDisabled
+              },
+            },
+          ]),
+          n
+        )
+      })(v.a.Component)
+      m()(ge, 'contextType', oe.a)
+      var _e = O.a.create(function (e) {
           return {
             checkIcon: { color: e.colors.primary },
             navigationLink: {
@@ -29709,10 +29718,9 @@
             transitionStyles: { transitionProperty: 'opacity', transitionDuration: '250ms', opacity: 0 },
           }
         }),
-        ge = function (e) {
-          return e.isSelected ? v.a.createElement(fe.a, { accessibilityHidden: !0, style: be.checkIcon }) : null
+        we = function (e) {
+          return e.isSelected ? v.a.createElement(fe.a, { accessibilityHidden: !0, style: _e.checkIcon }) : null
         }
-      t.b = ye
     },
     Zejx: function (e, t, n) {
       'use strict'
@@ -49794,7 +49802,7 @@
                         : c(m.id_str, { promotedContent: h })
                       )
                         .then(function () {
-                          o < 2 && t.isTrue('focused_timeline_actions_like_toasts_enabled')
+                          o + 1 < t.getNumberValue('focused_timeline_actions_onboarding_likes')
                             ? a.props.addToast({ text: Ut })
                             : a.props.addToast({ ariaOnly: !0, text: Vt }),
                             l && l()
@@ -50036,7 +50044,7 @@
                 var e = a.props,
                   t = e.misinfoNudgeActionTaken,
                   n = e.sessionToken
-                J.a.setString(Object(Be.a)('https://twitter.com'.concat(a.props.tweet.permalink), n)),
+                J.a.setString(Object(Be.a)(a.props.tweet.permalink, n)),
                   a.props.addToast({ text: on }),
                   a._scribeAction('copy_link'),
                   a._scribeMisInfoNudgeAction({
@@ -50062,18 +50070,17 @@
                   i = n.sessionToken,
                   o = n.tweet,
                   s = st.a.getOriginalTweet(o),
-                  c = Object(Be.a)('https://twitter.com'.concat(s.permalink), i),
-                  l = {
-                    title: Dt({ fullName: s.user.name, screenName: s.user.screen_name }),
-                    text: Ft({
-                      fullName: s.user.name,
-                      screenName: s.user.screen_name,
-                      tweet: ((e = s.text), (t = document.createElement('textarea')), (t.innerHTML = e), t.value),
-                    }),
-                    url: c,
-                  }
+                  c = a.context.featureSwitches.isTrue('responsive_web_share_only_tweet_url_omit_title_and_text'),
+                  l = Object(Be.a)(s.permalink, i),
+                  u = Dt({ fullName: s.user.name, screenName: s.user.screen_name }),
+                  d = Ft({
+                    fullName: s.user.name,
+                    screenName: s.user.screen_name,
+                    tweet: ((e = s.text), (t = document.createElement('textarea')), (t.innerHTML = e), t.value),
+                  }),
+                  p = c ? { url: l } : { title: u, text: d, url: l }
                 navigator
-                  .share(l)
+                  .share(p)
                   .then(function () {
                     a._scribeAction('share'),
                       a._scribeMisInfoNudgeAction({

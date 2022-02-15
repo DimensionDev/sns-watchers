@@ -1889,13 +1889,21 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'e8fcdd3a',
             'We start you out with some basic settings, but your Community is completely customizable. We’ll get into that next.',
           ),
-          a('h54d99da', 'Your Community is invite-only'),
-          a('f30c8202', 'Everyone can discover your Community. To join, people must be invited.'),
+          a('b37d580e', 'Your Community is Restricted'),
+          a(
+            'cafca4b2',
+            'All Communities are visible to everyone on Twitter. People must ask to join your Community, or be invited by the mod team or (if allowed) existing members.',
+          ),
+          a('ea3b38fa', 'Your Community is Open'),
+          a(
+            'jd667130',
+            'All Communities are visible to everyone on Twitter. Anyone can join and/or be invited to your Community.',
+          ),
           a('ca7eeabf', 'Your starter Community rules are'),
           a('acae4034', 'Settings can be changed in Admin Tools'),
           a('e2186ee2', 'Not feeling your settings? No problem. It’s easy enough to change.'),
-          a('a841c4ea', 'Finish setting up!'),
-          a('fd36e4f7', 'You’re not yet done. Try these steps to get the most out of your Community.'),
+          a('c66b37f9', 'Community checklist'),
+          a('g2768d0e', 'Just a few things to get your Community in good shape for its debut ...'),
           a('b192b58b', 'Dismiss Checklist'),
           a('gd30278f', 'Check out the community I created:'),
           a('cbdddb09', 'Completed'),
@@ -1904,6 +1912,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a01e1a7c', 'Personalize your Community'),
           a('j538604d', 'Tweet your Community'),
           a('h4fbfa57', 'Agree and join'),
+          a('ea8cfb1d', 'Agree and ask to join'),
           a('dc1b14a1', function (e) {
             return 'Review and agree to ' + e.communityName + ' Rules'
           }),
@@ -2252,11 +2261,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f2bd9c47', 'Content you see'),
           a('c6cb90eb', 'Safety Mode'),
           a('cbd449af', 'Mute and block'),
-          a('daef29b7', 'Muted accounts'),
-          a('i0dd9b9d', 'Muted words'),
+          a('daef29b7', 'Muted accounts')
+        a('i0dd9b9d', 'Muted words'),
           a('a5f32aa2', 'Blocked accounts'),
-          a('i58a274b', 'Direct messages')
-        a('fd4d9068', 'Discoverability and contacts'),
+          a('i58a274b', 'Direct messages'),
+          a('fd4d9068', 'Discoverability and contacts'),
           a('bbcafbd9', 'Manage contacts'),
           a('aeddb289', 'Content preferences'),
           a('d035a8d0', 'Ads preferences'),
@@ -3514,13 +3523,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'This is a pretty common word, and shows up in lots of Tweets, but you can mute it if you want.',
           ),
           a('e456bd5f', 'Learn more'),
-          a('cab9274e', 'You aren’t muting any words'),
-          a('e506aa92', 'Add muted word or phrase'),
+          a('cab9274e', 'You aren’t muting any words')
+        a('e506aa92', 'Add muted word or phrase'),
           a('cbd04965', function (e) {
             return 'Unmuted "' + e.keyword + '"'
           }),
-          a('eb4e810a', 'Expired')
-        a('cabeb6c1', 'Forever'),
+          a('eb4e810a', 'Expired'),
+          a('cabeb6c1', 'Forever'),
           a('f9bce916', 'Mute words'),
           a('f12c13b5', 'Learn more'),
           a('ba4aaa9d', 'Unmute phrase?'),
@@ -4078,6 +4087,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'a15b98ec',
             'Nothing to change or edit here. All of your Super Followers will automatically get a public badge when they subscribe.',
           ),
+          a('b600eb88', 'Find your people and get recognized'),
           a('e18b7a71', 'Review'),
           a('be76dc33', 'Add description'),
           a('ef5406e3', 'Add introduction'),
@@ -4723,11 +4733,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i9a4ca8a', 'Tweet status page'),
           a('d6d9aab6', 'Add Bookmark'),
           a('bb89cf45', 'Remove Bookmark'),
-          a('a739d4ba', 'Add to Bookmark Folder'),
-          a('d5270434', 'Exit'),
-          a('jcf3ff56', 'Large Text'),
-          a('f1252ac7', 'Medium Text'),
-          a('daa0da04', 'Small Text')
+          a('a739d4ba', 'Add to Bookmark Folder')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4744,7 +4750,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('ba5256b1', 'Text Size'),
+        a('d5270434', 'Exit'),
+          a('jcf3ff56', 'Large Text'),
+          a('f1252ac7', 'Medium Text'),
+          a('daa0da04', 'Small Text'),
+          a('ba5256b1', 'Text Size'),
           a('e37836f8', 'Report Detail'),
           a('d7b32a4d', 'What’s Next'),
           a('a78f7bd9', 'Tweet Content Hidden'),
@@ -5474,7 +5484,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d441fe05', 'When someone requests to follow you, it’ll show up here.'),
           a('j85d8d9f', 'No follow request pending for that user.'),
           a('ec2d8341', 'Decline'),
-          a('b600eb88', 'Find your people and get recognized'),
           a('d2613122', function (e) {
             return 'Subscribe - ' + e.price + '/mo'
           }),
@@ -6022,11 +6031,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h13ffc87', 'Voice'),
           a('f5d461f7', 'Voice Tweet'),
           a('de8c5eb2', 'Play audio'),
-          a('ec286028', 'Pause audio'),
-          a('ad77feb5', 'Captions unavailable'),
+          a('ec286028', 'Pause audio')
+        a('ad77feb5', 'Captions unavailable'),
           a('d636ebc6', 'Like'),
-          a('bd83592a', 'Haha')
-        a('f84f0fa8', 'Hmm'),
+          a('bd83592a', 'Haha'),
+          a('f84f0fa8', 'Hmm'),
           a('g47ce0e4', 'Sad'),
           a('fc8a13c5', 'Cheer'),
           a('e557ad8d', 'Active'),
