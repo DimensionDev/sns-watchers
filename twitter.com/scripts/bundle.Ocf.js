@@ -2080,7 +2080,7 @@
                     })
                     .catch(function (t) {
                       var a = e.props.addToast
-                      t.error !== F.f
+                      t.error !== F.g
                         ? (n.scribe({ component: 'apple_sign_in', element: r, action: 'failure' }), a({ text: D }))
                         : n.scribe({ component: 'apple_sign_in', element: 'auth', action: 'user_closed_popup' })
                     })
@@ -5596,7 +5596,7 @@
                         case y.u.SettingsGroup:
                           return e._renderSettingsGroup()
                         case y.u.StaticText:
-                          return e._renderHeader()
+                          return e._renderStaticText()
                         case y.u.TextField:
                           return e._renderTextField()
                         case y.u.DestructiveAction:
@@ -5623,7 +5623,7 @@
                           case y.u.Separator:
                           case y.u.Button:
                           case y.u.Tweet:
-                            return e._renderHeader()
+                            return e._renderStaticText()
                           default:
                             return k.a.createElement(k.a.Fragment, null)
                         }
@@ -5639,7 +5639,7 @@
                 },
               },
               {
-                key: '_renderHeader',
+                key: '_renderStaticText',
                 value: function () {
                   var e = this.props,
                     t = e.onNavigate,
@@ -5649,7 +5649,7 @@
                     o = a.secondary_text
                   return k.a.createElement(
                     N.a,
-                    { style: sn.header },
+                    { style: i && sn.header },
                     i
                       ? k.a.createElement(
                           re,
@@ -5663,7 +5663,7 @@
                             color: 'gray700',
                             onNavigate: t,
                             size: 'body',
-                            style: sn.secondaryText,
+                            style: i && sn.secondaryText,
                             subtaskInputs: n,
                           }),
                         )

@@ -3587,7 +3587,7 @@
                     })
                     .catch(function (t) {
                       var n = e.props.addToast
-                      t.error !== O.f
+                      t.error !== O.g
                         ? (a.scribe({ component: 'apple_sign_in', element: r, action: 'failure' }), n({ text: F }))
                         : a.scribe({ component: 'apple_sign_in', element: 'auth', action: 'user_closed_popup' })
                     })
@@ -3906,11 +3906,6 @@
               '_searchHomePageVariation',
               o.context.featureSwitches.getStringValue('responsive_web_search_home_page_design_variation'),
             ),
-            g()(
-              u()(o),
-              '_googleOneTapEverywhereEnabled',
-              o.context.featureSwitches.isTrue('responsive_web_google_one_tap_everywhere_enabled'),
-            ),
             g()(u()(o), '_renderLoginSignupButtons', function (e) {
               var t = e ? Ce.ctaButton : Ce.ctaButtonMobile
               return S.a.createElement(
@@ -3966,7 +3961,7 @@
                 S.a.createElement(B.a, {
                   buttonSize: 'medium',
                   buttonState: n,
-                  displayType: o._googleOneTapEverywhereEnabled ? J.e.Button : void 0,
+                  displayType: J.e.Button,
                   isCookieCompliant:
                     o._cookieComplianceGingersnapEnabled && o._isPlaceholderSIWGButtonEnabled ? a : void 0,
                   onPress: o._handleCookieCompliance,

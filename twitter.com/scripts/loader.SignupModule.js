@@ -8,60 +8,60 @@
         s = n('VrFO'),
         o = n.n(s),
         r = n('Y9Ll'),
-        c = n.n(r),
-        l = n('1Pcy'),
-        p = n.n(l),
+        l = n.n(r),
+        c = n('1Pcy'),
+        p = n.n(c),
         u = n('5Yy7'),
         d = n.n(u),
-        b = n('2VqO'),
-        m = n.n(b),
-        g = n('KEM+'),
-        y = n.n(g),
+        m = n('2VqO'),
+        b = n.n(m),
+        y = n('KEM+'),
+        g = n.n(y),
         h = (n('2G9S'), n('ho0z'), n('0zG9'), n('ERkP')),
         _ = n.n(h),
         f = n('/yvb'),
-        v = n('hUVV'),
-        w = n('3XMw'),
-        S = n.n(w),
+        w = n('hUVV'),
+        S = n('3XMw'),
+        v = n.n(S),
         k = n('iKTg'),
         z = n('TaB8'),
         E = n('1zbE'),
         P = n('Ukpf'),
         A = n('cnVF'),
         C = n('TnY3'),
-        I = n('0+0m'),
-        L = n('v6aA'),
-        O = n('2qJZ'),
-        T = S.a.ib65b1c6,
-        B = S.a.f55cebb7,
-        j = S.a.g61ed8a4,
-        x = { clientId: I.a, scope: 'name email', usePopup: !0 },
+        B = n('0+0m'),
+        I = n('v6aA'),
+        L = n('2qJZ'),
+        O = v.a.ib65b1c6,
+        T = v.a.f55cebb7,
+        j = v.a.g61ed8a4,
+        x = { clientId: B.a, scope: 'name email', usePopup: !0 },
         R = (function (e) {
           d()(n, e)
-          var t = m()(n)
+          var t = b()(n)
           function n() {
             var e
             o()(this, n)
             for (var a = arguments.length, s = new Array(a), r = 0; r < a; r++) s[r] = arguments[r]
             return (
               (e = t.call.apply(t, [this].concat(s))),
-              y()(p()(e), 'state', { isScriptLoaded: !1 }),
-              y()(
+              g()(p()(e), 'state', { isScriptLoaded: !1 }),
+              g()(
                 p()(e),
                 '_is3rdPartyIntegrationDisabled',
                 Object(z.a)('responsive_web_3rd_party_category_sign_in_with_apple', e.context.featureSwitches),
               ),
-              y()(p()(e), '_initAppleIDAuth', function () {
+              g()(p()(e), '_initAppleIDAuth', function () {
                 var t = window.AppleID,
                   n = e.props.fetchSsoInitToken,
-                  a = Object(O.c)(e.context.featureSwitches) ? 'https://'.concat(O.b) : 'https://'.concat(O.a)
+                  a = Object(L.c)(e.context.featureSwitches) ? 'https://'.concat(L.b) : 'https://'.concat(L.a)
                 t &&
                   n(A.A.Apple).then(function (e) {
                     var n = e.state
                     t.auth.init(i()(i()({}, x), {}, { redirectURI: a, state: n }))
                   })
               }),
-              y()(p()(e), '_handleOnPress', function () {
+              g()(p()(e), '_handleOnPress', function () {
                 var t = window.AppleID,
                   n = e.props,
                   a = n.analytics,
@@ -69,12 +69,12 @@
                   s = n.history,
                   o = n.personalizationSettings,
                   r = n.shouldPropagateP13nSettings,
-                  c = n.ssoInitTokens,
-                  l = o || {},
-                  p = l.allowCookieUse,
-                  u = l.allowDeviceAccess,
-                  d = l.allowPartnerships,
-                  b = l.allowPersonalization
+                  l = n.ssoInitTokens,
+                  c = o || {},
+                  p = c.allowCookieUse,
+                  u = c.allowDeviceAccess,
+                  d = c.allowPartnerships,
+                  m = c.allowPersonalization
                 a.scribe({ component: 'apple_sign_in', element: i, action: 'click' }),
                   t.auth
                     .signIn()
@@ -89,13 +89,13 @@
                               allow_cookie_use: !!p,
                               allow_device_personalization: !!u,
                               allow_partnerships: !!d,
-                              allow_ads_personalization: !!b,
+                              allow_ads_personalization: !!m,
                             },
                             requested_variant: JSON.stringify({
                               display_name: t && ''.concat(e.user.name.firstName, ' ').concat(e.user.name.lastName),
                               id_token: e.authorization.id_token,
                               provider: A.A.Apple,
-                              state: c[A.A.Apple],
+                              state: l[A.A.Apple],
                             }),
                           },
                         },
@@ -103,7 +103,7 @@
                     })
                     .catch(function (t) {
                       var n = e.props.addToast
-                      t.error !== I.f
+                      t.error !== B.g
                         ? (a.scribe({ component: 'apple_sign_in', element: i, action: 'failure' }), n({ text: j }))
                         : a.scribe({ component: 'apple_sign_in', element: 'auth', action: 'user_closed_popup' })
                     })
@@ -112,7 +112,7 @@
             )
           }
           return (
-            c()(n, [
+            l()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -135,7 +135,7 @@
                     n = e.buttonState,
                     a = e.style,
                     i = this.state.isScriptLoaded,
-                    s = n === E.a.SignUp ? T : B
+                    s = n === E.a.SignUp ? O : T
                   return this._is3rdPartyIntegrationDisabled
                     ? null
                     : _.a.createElement(f.a, {
@@ -155,9 +155,9 @@
             n
           )
         })(_.a.PureComponent)
-      y()(R, 'contextType', L.a),
-        y()(R, 'defaultProps', { buttonSize: 'xLarge', buttonState: 'signup' }),
-        (t.a = Object(C.a)(Object(v.a)(R)))
+      g()(R, 'contextType', I.a),
+        g()(R, 'defaultProps', { buttonSize: 'xLarge', buttonState: 'signup' }),
+        (t.a = Object(C.a)(Object(w.a)(R)))
     },
     iKTg: function (e, t, n) {
       'use strict'
@@ -166,10 +166,10 @@
         s = n('ERkP'),
         o = n.n(s),
         r = n('Lsrn'),
-        c = n('k/Ka'),
-        l = function () {
+        l = n('k/Ka'),
+        c = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(c.a)(
+          return Object(l.a)(
             'svg',
             i()(
               i()({}, e),
@@ -189,45 +189,47 @@
             ),
           )
         }
-      ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
+      ;(c.metadata = { width: 24, height: 24 }), (t.a = c)
     },
     sojc: function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'SignupModuleContainer', function () {
-          return R
+          return D
         })
       var a = n('VrFO'),
         i = n.n(a),
         s = n('Y9Ll'),
         o = n.n(s),
         r = n('1Pcy'),
-        c = n.n(r),
-        l = n('5Yy7'),
-        p = n.n(l),
+        l = n.n(r),
+        c = n('5Yy7'),
+        p = n.n(c),
         u = n('2VqO'),
         d = n.n(u),
-        b = n('KEM+'),
-        m = n.n(b),
-        g = (n('2G9S'), n('ERkP')),
-        y = n.n(g),
+        m = n('KEM+'),
+        b = n.n(m),
+        y = (n('2G9S'), n('ERkP')),
+        g = n.n(y),
         h = (n('0zG9'), n('UpKB')),
         _ = n('v6aA'),
         f = n('kG2l'),
-        v = n('3XMw'),
-        w = n.n(v),
-        S = n('MWbm'),
-        k = n('rHpw'),
-        z = n('6vad'),
-        E = n('t62R'),
-        P = n('/yvb'),
-        A = n('0+0m'),
-        C = n('1zbE'),
-        I = w.a.a565833d,
-        L = w.a.aa95ddc0,
-        O = w.a.b50ea616,
-        T = w.a.ie8e1ffc,
-        B = k.a.create(function (e) {
+        w = n('3XMw'),
+        S = n.n(w),
+        v = n('N5qz'),
+        k = n('MWbm'),
+        z = n('rHpw'),
+        E = n('6vad'),
+        P = n('t62R'),
+        A = n('cHvH'),
+        C = n('/yvb'),
+        B = n('0+0m'),
+        I = n('1zbE'),
+        L = S.a.a565833d,
+        O = S.a.aa95ddc0,
+        T = S.a.b50ea616,
+        j = S.a.ie8e1ffc,
+        x = z.a.create(function (e) {
           return {
             buttonContainer: {
               marginTop: e.spaces.space16,
@@ -236,80 +238,84 @@
               marginRight: e.spaces.space12,
             },
             ssoButtonStyles: { marginBottom: e.spaces.space12 },
-            buttonStyles: { width: A.b, height: e.spaces.space40 },
+            buttonStyles: { width: B.b, height: e.spaces.space40 },
+            narrowButtonStyles: { width: B.f },
             moduleContent: { paddingLeft: e.spaces.space12, paddingRight: e.spaces.space12 },
             footerLabel: { marginBottom: e.spaces.space16 },
           }
         }),
-        j = function (e) {
+        R = function (e) {
           var t = e.onSignupClick,
-            n = y.a.useContext(_.a).featureSwitches,
-            a = n.isTrue('responsive_web_third_party_sso_buttons_enabled'),
-            i = n.isTrue('responsive_web_google_one_tap_everywhere_enabled')
-          return y.a.createElement(
-            S.a,
-            { accessibilityLabel: I, accessibilityRole: 'summary' },
-            y.a.createElement(z.b, { text: O }),
-            y.a.createElement(E.b, { color: 'gray700', size: 'subtext2', style: B.moduleContent }, T),
-            y.a.createElement(
-              S.a,
-              { style: B.buttonContainer },
-              a
-                ? y.a.createElement(
-                    y.a.Fragment,
-                    null,
-                    y.a.createElement(f.a, {
-                      buttonSize: 'medium',
-                      buttonState: C.a.SignUp,
-                      displayType: i ? A.e.Button : void 0,
-                      style: [B.ssoButtonStyles, B.buttonStyles],
-                    }),
-                    y.a.createElement(h.a, {
-                      buttonSize: 'medium',
-                      buttonState: C.a.SignUp,
-                      style: [B.ssoButtonStyles, B.buttonStyles],
-                    }),
-                    y.a.createElement(
-                      P.a,
+            n = g.a.useContext(_.a).featureSwitches.isTrue('responsive_web_third_party_sso_buttons_enabled')
+          return g.a.createElement(
+            k.a,
+            { accessibilityLabel: L, accessibilityRole: 'summary' },
+            g.a.createElement(E.b, { text: T }),
+            g.a.createElement(P.b, { color: 'gray700', size: 'subtext2', style: x.moduleContent }, j),
+            g.a.createElement(A.a, null, function (e) {
+              var a = e.windowWidth,
+                i = v.a.isTwoColumnSmallLayout(a)
+              return g.a.createElement(
+                k.a,
+                { style: x.buttonContainer },
+                n
+                  ? g.a.createElement(
+                      g.a.Fragment,
+                      null,
+                      g.a.createElement(f.a, {
+                        buttonSize: 'medium',
+                        buttonState: I.a.SignUp,
+                        customWidth: i ? B.f : void 0,
+                        displayType: B.e.Button,
+                        style: [x.ssoButtonStyles, x.buttonStyles, i && x.narrowButtonStyles],
+                      }),
+                      g.a.createElement(h.a, {
+                        buttonSize: 'medium',
+                        buttonState: I.a.SignUp,
+                        style: [x.ssoButtonStyles, x.buttonStyles, i && x.narrowButtonStyles],
+                      }),
+                      g.a.createElement(
+                        C.a,
+                        {
+                          accessibilityRole: 'link',
+                          backgroundColor: 'white',
+                          borderColor: 'gray200',
+                          color: 'gray1100',
+                          link: {
+                            pathname: '/i/flow/signup',
+                            state: { input: { requested_variant: JSON.stringify({ signup_type: I.b }) } },
+                          },
+                          onPress: t,
+                          size: 'medium',
+                          style: [x.buttonStyles, i && x.narrowButtonStyles],
+                        },
+                        O,
+                      ),
+                    )
+                  : g.a.createElement(
+                      C.a,
                       {
                         accessibilityRole: 'link',
-                        backgroundColor: 'white',
-                        borderColor: 'gray200',
-                        color: 'gray1100',
-                        link: {
-                          pathname: '/i/flow/signup',
-                          state: { input: { requested_variant: JSON.stringify({ signup_type: C.b }) } },
-                        },
+                        link: '/i/flow/signup',
                         onPress: t,
                         size: 'medium',
-                        style: B.buttonStyles,
+                        type: 'brandFilled',
                       },
                       L,
                     ),
-                  )
-                : y.a.createElement(
-                    P.a,
-                    {
-                      accessibilityRole: 'link',
-                      link: '/i/flow/signup',
-                      onPress: t,
-                      size: 'medium',
-                      type: 'brandFilled',
-                    },
-                    I,
-                  ),
-            ),
-            a
-              ? y.a.createElement(
-                  E.b,
-                  { color: 'gray700', size: 'subtext2', style: [B.moduleContent, B.footerLabel] },
-                  C.c,
+              )
+            }),
+            n
+              ? g.a.createElement(
+                  P.b,
+                  { color: 'gray700', size: 'subtext2', style: [x.moduleContent, x.footerLabel] },
+                  I.c,
                 )
               : null,
           )
         },
-        x = n('Irs7'),
-        R = (function (e) {
+        U = n('Irs7'),
+        D = (function (e) {
           p()(n, e)
           var t = d()(n)
           function n() {
@@ -318,7 +324,7 @@
             for (var a = arguments.length, s = new Array(a), o = 0; o < a; o++) s[o] = arguments[o]
             return (
               (e = t.call.apply(t, [this].concat(s))),
-              m()(c()(e), '_handleSignupClick', function () {
+              b()(l()(e), '_handleSignupClick', function () {
                 e.props.analytics.scribeAction('signup')
               }),
               e
@@ -329,14 +335,14 @@
               {
                 key: 'render',
                 value: function () {
-                  return y.a.createElement(j, { onSignupClick: this._handleSignupClick })
+                  return g.a.createElement(R, { onSignupClick: this._handleSignupClick })
                 },
               },
             ]),
             n
           )
-        })(y.a.Component)
-      t.default = Object(x.a)(R, { component: 'signup_module' })
+        })(g.a.Component)
+      t.default = Object(U.a)(D, { component: 'signup_module' })
     },
   },
 ])

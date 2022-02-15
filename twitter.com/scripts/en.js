@@ -1844,12 +1844,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a7c2e06c', function (e) {
             return e.communityName + ' Community'
           }),
-          a('fcef2921', 'Anyone can join this Community.'),
-          a('c93dd2c8', 'To join this Community, you must ask and be approved.'),
           a('cc683fb9', 'About Community'),
           a('af7c11a9', 'Community Info'),
           a('db1b9462', 'Only members can Tweet, like, or reply.'),
           a('ea49402d', 'Everyone can view Tweets within any Community on Twitter.'),
+          a('fcef2921', 'Anyone can join this Community.'),
+          a('c93dd2c8', 'To join this Community, you must ask and be approved.'),
           a('gedb877c', 'All Communities are publicly visible.'),
           a('e3f04700', function (e) {
             return e.count + ' new Tweet' + n(e.count, '', 's') + ' to review'
@@ -1929,10 +1929,27 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e442bbb4', 'Community Members'),
           a('e9488b0d', 'Loading Moderators'),
           a('j43fea20', 'Loading Members'),
+          a('hd8c22d2', 'Mod'),
+          a('c3153100', 'Admin'),
           a('g30bc699', function (e) {
             return 'View @' + e.screenName + ' profile'
           }),
-          a('ef4602eb', 'Something went wrong. Please try again later.'),
+          a('e585d844', 'Add to mod team'),
+          a('cab7c6f8', 'Add to the mod team?'),
+          a('e96d5254', function (e) {
+            return '@' + e.screenName + ' is now a moderator.'
+          }),
+          a('f348a395', function (e) {
+            return 'We can’t add @' + e.screenName + ' to the mod team right now. Please try again later.'
+          }),
+          a('c3a1aebd', 'Remove from mod team'),
+          a('c273c8a6', 'Remove from mod team?'),
+          a('c0eb2a52', function (e) {
+            return '@' + e.screenName + ' is no longer a moderator.'
+          }),
+          a('a5808125', function (e) {
+            return 'We can’t remove @' + e.screenName + ' from the mod team right now. Please try again later.'
+          }),
           a('c9d56b71', 'Tell us a little about your Community. You can always change these details later.'),
           a('c1ad5a11', 'Looks like we’re having trouble creating your new Community. Please try again later.'),
           a('h3e55b40', 'Community name'),
@@ -1966,6 +1983,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('fd67f7c8', 'Edit Community name, purpose, and more'),
           a('gc00d212', 'Support and resources'),
           a('a997eca0', 'Help when you need it'),
+          a('c6ea29a1', 'Leave moderation team'),
+          a('a6e13fac', 'Are you sure you want to leave the mod team?'),
+          a(
+            'e538848b',
+            'You’ll no longer have access to the moderation tools. If you change your mind, you’ll have to be invited as a moderator again.',
+          ),
+          a('j49e6aa2', 'Yes, I want to leave'),
           a('j8af8ea9', 'Membership type'),
           a('d5f01115', 'Purpose'),
           a('c3c04b70', 'Color theme'),
@@ -2248,8 +2272,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('de43eaf2', 'Undo Tweet'),
           a('f6e88161', 'Labs'),
           a('ib35705d', 'Manage Subscription'),
-          a('f8645654', 'Security and account access'),
-          a('j95edf76', 'Security'),
+          a('f8645654', 'Security and account access')
+        a('j95edf76', 'Security'),
           a('dd703318', 'Two-factor authentication'),
           a('b1686800', 'Manage security keys'),
           a('ae72d4c4', 'Apps and sessions'),
@@ -2261,8 +2285,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f2bd9c47', 'Content you see'),
           a('c6cb90eb', 'Safety Mode'),
           a('cbd449af', 'Mute and block'),
-          a('daef29b7', 'Muted accounts')
-        a('i0dd9b9d', 'Muted words'),
+          a('daef29b7', 'Muted accounts'),
+          a('i0dd9b9d', 'Muted words'),
           a('a5f32aa2', 'Blocked accounts'),
           a('i58a274b', 'Direct messages'),
           a('fd4d9068', 'Discoverability and contacts'),
@@ -3500,8 +3524,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e7d47b00', 'From people you don’t follow'),
           a('c67e3fc1', 'Home timeline'),
           a('d9d6e10e', 'Duration'),
-          a('gfa5008d', 'Extend mute time'),
-          a('c5595dfe', 'Change mute time'),
+          a('gfa5008d', 'Extend mute time')
+        a('c5595dfe', 'Change mute time'),
           a('he6804e0', 'Until you unmute the word'),
           a('a268406c', '24 hours'),
           a('fc638aa2', '7 days'),
@@ -3523,8 +3547,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'This is a pretty common word, and shows up in lots of Tweets, but you can mute it if you want.',
           ),
           a('e456bd5f', 'Learn more'),
-          a('cab9274e', 'You aren’t muting any words')
-        a('e506aa92', 'Add muted word or phrase'),
+          a('cab9274e', 'You aren’t muting any words'),
+          a('e506aa92', 'Add muted word or phrase'),
           a('cbd04965', function (e) {
             return 'Unmuted "' + e.keyword + '"'
           }),
@@ -4415,6 +4439,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Your timeline is the best place to see what’s happening with the people and Topics you care about. Check out our suggested follows to start filling your timeline with Tweets.',
           ),
           a('b34cb956', 'Fill your timeline'),
+          a('i0560231', 'See more Topics'),
           a('g2b8acd4', 'Log in to Twitter'),
           a('bdc9d8a2', 'Login on Twitter'),
           a(
@@ -4713,8 +4738,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e854ad27', function (e) {
             return 'Topic - ' + e.title
           }),
-          a('b5474bd2', 'Hmmm... something went wrong.'),
-          a('a9b8fb38', 'Please use the Twitter app to go back and request a new verification email.'),
+          a('b5474bd2', 'Hmmm... something went wrong.')
+        function r(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var a = t[o]
+            ;(a.enumerable = a.enumerable || !1),
+              (a.configurable = !0),
+              'value' in a && (a.writable = !0),
+              Object.defineProperty(e, a.key, a)
+          }
+        }
+        function i(e, t) {
+          return (i =
+            Object.setPrototypeOf ||
+            function (e, t) {
+              return (e.__proto__ = t), e
+            })(e, t)
+        }
+        a('a9b8fb38', 'Please use the Twitter app to go back and request a new verification email.'),
           a('f4a654a3', 'View on Foursquare'),
           a('c09de2d4', 'Search timeline'),
           a('ae111c99', function (e) {
@@ -4733,24 +4774,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('i9a4ca8a', 'Tweet status page'),
           a('d6d9aab6', 'Add Bookmark'),
           a('bb89cf45', 'Remove Bookmark'),
-          a('a739d4ba', 'Add to Bookmark Folder')
-        function r(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var a = t[o]
-            ;(a.enumerable = a.enumerable || !1),
-              (a.configurable = !0),
-              'value' in a && (a.writable = !0),
-              Object.defineProperty(e, a.key, a)
-          }
-        }
-        function i(e, t) {
-          return (i =
-            Object.setPrototypeOf ||
-            function (e, t) {
-              return (e.__proto__ = t), e
-            })(e, t)
-        }
-        a('d5270434', 'Exit'),
+          a('a739d4ba', 'Add to Bookmark Folder'),
+          a('d5270434', 'Exit'),
           a('jcf3ff56', 'Large Text'),
           a('f1252ac7', 'Medium Text'),
           a('daa0da04', 'Small Text'),
@@ -4901,6 +4926,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g9079b93', 'You may only view analytics about your own Tweets.'),
           a('a57daeb1', 'Tweet Analytics'),
           a('i976aff3', 'Update daily budget info to match your billing currency.'),
+          a('ef4602eb', 'Something went wrong. Please try again later.'),
           a('e5fe61ef', 'Impressions'),
           a('f6162a32', 'Times this Tweet was seen on Twitter'),
           a('dbe9353d', 'Engagements'),
@@ -6008,8 +6034,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ccd32093', 'Now'),
           a('abfcce0d', function (e) {
             return e.amountOfTime + ' ago'
-          }),
-          a('jb767df7', 'You Retweeted'),
+          })
+        a('jb767df7', 'You Retweeted'),
           a('bb3323fa', 'Pinned Tweet'),
           a('db0798ed', function (e) {
             return e.topicName + ' Topic'
@@ -6031,8 +6057,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h13ffc87', 'Voice'),
           a('f5d461f7', 'Voice Tweet'),
           a('de8c5eb2', 'Play audio'),
-          a('ec286028', 'Pause audio')
-        a('ad77feb5', 'Captions unavailable'),
+          a('ec286028', 'Pause audio'),
+          a('ad77feb5', 'Captions unavailable'),
           a('d636ebc6', 'Like'),
           a('bd83592a', 'Haha'),
           a('f84f0fa8', 'Hmm'),
@@ -7060,6 +7086,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'jb124a07',
                 get: function () {
                   return ['A moderator removed you for violating this Community rule: ']
+                },
+              },
+              {
+                key: 'd46c6e8f',
+                get: function () {
+                  return ['Are you sure you want to make ', ' a moderator?']
+                },
+              },
+              {
+                key: 'c3a1f2be',
+                get: function () {
+                  return ['Are you sure you want to remove ', ' as a moderator?']
                 },
               },
               {

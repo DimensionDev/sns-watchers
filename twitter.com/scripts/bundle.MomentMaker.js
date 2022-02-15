@@ -31861,44 +31861,47 @@
             r = e.onClose,
             a = e.primaryButtonConfig,
             i = e.secondaryButtonConfig,
-            o = e.title,
-            s = v.a.useState(!1),
-            c = S()(s, 2),
-            l = c[0],
-            u = c[1],
-            d = function () {
-              u(function (e) {
+            o = e.style,
+            s = e.title,
+            c = v.a.useState(!1),
+            l = S()(c, 2),
+            u = l[0],
+            d = l[1],
+            p = function () {
+              d(function (e) {
                 return !e
               })
             },
-            p = v.a.createElement(xe.a, {
+            h = v.a.createElement(xe.a, {
               accessibilityLabel: Me,
               icon: De,
               onPress: n,
               pullLeft: !0,
               type: 'primaryText',
             }),
-            h = v.a.createElement(xe.a, {
+            m = v.a.createElement(xe.a, {
               accessibilityLabel: Ae,
               icon: Fe,
               onPress: r,
               pullLeft: !0,
               type: 'primaryText',
             }),
-            m = v.a.createElement(
-              xe.a,
-              {
-                accessibilityLabel: a.label,
-                disabled: l || a.forceDisabled,
-                onClick: function () {
-                  d(), a.onClick(d)
-                },
-                size: 'small',
-                type: 'primaryFilled',
-              },
-              a.label,
-            ),
-            f = i
+            f = a
+              ? v.a.createElement(
+                  xe.a,
+                  {
+                    accessibilityLabel: a.label,
+                    disabled: u || a.forceDisabled,
+                    onClick: function () {
+                      p(), null == a || a.onClick(p)
+                    },
+                    size: 'small',
+                    type: 'primaryFilled',
+                  },
+                  a.label,
+                )
+              : null,
+            y = i
               ? v.a.createElement(
                   xe.a,
                   {
@@ -31911,18 +31914,18 @@
                   i.label,
                 )
               : null,
-            y = v.a.createElement(F.a, { style: Be.buttonContainer }, m, f)
+            b = v.a.createElement(F.a, { style: Be.buttonContainer }, f, y)
           return v.a.createElement(
             Oe.a,
             {
               enableMaskForDismiss: !0,
               onMaskClick: r,
-              style: Be.sheet,
+              style: [Be.sheet, o],
               type: 'full',
               withKeyboardNavigation: !0,
               withMask: !0,
             },
-            v.a.createElement(Pe.a, { leftControl: n ? p : h, rightControl: y, title: o }),
+            v.a.createElement(Pe.a, { leftControl: n ? h : m, rightControl: b, title: s }),
             v.a.createElement(F.a, { style: Be.content }, t),
           )
         },

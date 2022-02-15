@@ -23,7 +23,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'HomeTimeline', function () {
-          return cn
+          return un
         })
       var a = n('yiKp'),
         i = n.n(a),
@@ -706,9 +706,10 @@
         Qt = n('DQzJ'),
         Jt = n('6iuV'),
         Wt = A.a.ffd9cfe6,
-        Nt = void 0 !== We ? We : (We = n('yKhE')),
-        qt = { context: 'TOPIC_PIVOTS_CAROUSEL' },
-        Gt = function () {
+        Nt = A.a.i0560231,
+        qt = void 0 !== We ? We : (We = n('yKhE')),
+        Gt = { context: 'TOPIC_PIVOTS_CAROUSEL' },
+        Yt = function () {
           var e,
             t,
             n,
@@ -719,7 +720,7 @@
             s = b.a.useRef(0),
             o = Object(Ut.b)(),
             c = Object(Vt.a)(P.e.selectLoggedInUser),
-            u = Object(Qt.a)(Nt, {}).data,
+            u = Object(Qt.a)(qt, {}).data,
             d = (
               ('User' ===
                 (null == u ||
@@ -786,18 +787,25 @@
             _ = c ? '/'.concat(c.screen_name, '/topics') : '/i/topics/picker',
             g = b.a.createElement(
               U.a,
-              { borderColor: 'primary', color: 'primary', key: 'seeMorePivot', link: _, onClick: f },
+              {
+                accessibilityLabel: Nt,
+                borderColor: 'primary',
+                color: 'primary',
+                key: 'seeMorePivot',
+                link: _,
+                onClick: f,
+              },
               Wt,
             )
           return d.length > 0
             ? b.a.createElement(
                 Jt.a,
-                { childrenStyle: Yt.childrenStyle, onScroll: p, onVisibleRangeChange: h, style: Yt.carousel },
+                { childrenStyle: Xt.childrenStyle, onScroll: p, onVisibleRangeChange: h, style: Xt.carousel },
                 [].concat(Ot()(d), [g]),
               )
             : null
         },
-        Yt = V.a.create(function (e) {
+        Xt = V.a.create(function (e) {
           return {
             carousel: {
               marginHorizontal: 'calc('.concat(e.spaces.space12, ' - ').concat(e.spaces.space2, ')'),
@@ -808,20 +816,20 @@
             childrenStyle: { marginHorizontal: e.spaces.space4, marginVertical: e.spaces.space12 },
           }
         }),
-        Xt = function () {
-          return b.a.createElement(Bt.a, { errorConfig: qt }, b.a.createElement(Gt, null))
+        Zt = function () {
+          return b.a.createElement(Bt.a, { errorConfig: Gt }, b.a.createElement(Yt, null))
         },
-        Zt = n('aITJ'),
-        $t = n('0yYu'),
-        en = n('mw9i'),
-        tn = n('k/OQ'),
-        nn = A.a.i5f7b6b8,
-        an = A.a.d126cb7c,
-        ln = A.a.ha8209bb,
-        rn = { page: 'home' },
-        sn = { page: 'home_latest' },
-        on = { section: 'topics_navigator', component: 'suggest_topics_module' },
-        cn = (function (e) {
+        $t = n('aITJ'),
+        en = n('0yYu'),
+        tn = n('mw9i'),
+        nn = n('k/OQ'),
+        an = A.a.i5f7b6b8,
+        ln = A.a.d126cb7c,
+        rn = A.a.ha8209bb,
+        sn = { page: 'home' },
+        on = { page: 'home_latest' },
+        cn = { section: 'topics_navigator', component: 'suggest_topics_module' },
+        un = (function (e) {
           m()(a, e)
           var t = h()(a)
           function a(e, n) {
@@ -832,11 +840,11 @@
               _()(u()(l), '_unmounted', !1),
               _()(u()(l), '_getTimelineMetadata', function () {
                 var e = l._isLatestActive(),
-                  t = e ? sn : rn
+                  t = e ? on : sn
                 return (
                   l.context.featureSwitches.isTrue('responsive_web_home_namespace_update_enabled') &&
-                    (t = i()(i()({}, rn), {}, { section: e ? 'latest' : 'home' })),
-                  { scribeNamespace: t, title: e ? an : ln }
+                    (t = i()(i()({}, sn), {}, { section: e ? 'latest' : 'home' })),
+                  { scribeNamespace: t, title: e ? ln : rn }
                 )
               }),
               _()(u()(l), '_getLink', function (e, t) {
@@ -864,8 +872,8 @@
               }),
               _()(u()(l), '_getLinks', function () {
                 var e = l.props.useLatest,
-                  t = l._getLink(oe.a.HOME, ln),
-                  n = e ? l._getLink(oe.a.HOME_LATEST, an) : void 0
+                  t = l._getLink(oe.a.HOME, rn),
+                  n = e ? l._getLink(oe.a.HOME_LATEST, ln) : void 0
                 return [t].concat([n])
               }),
               _()(u()(l), '_isLatestActive', function () {
@@ -886,7 +894,7 @@
                   S.a,
                   null,
                   l.context.featureSwitches.isTrue('home_timeline_topics_navigator_enabled')
-                    ? b.a.createElement(Ft.c, { namespace: on }, b.a.createElement(Xt, null))
+                    ? b.a.createElement(Ft.c, { namespace: cn }, b.a.createElement(Zt, null))
                     : null,
                   b.a.createElement(xt, {
                     isLatestActive: e,
@@ -910,14 +918,14 @@
                         b.a.Fragment,
                         null,
                         b.a.createElement(se, { history: n, location: a }),
-                        b.a.createElement($t.a, null),
+                        b.a.createElement(en.a, null),
                       )
                     : null,
                   b.a.createElement(
                     x.a,
-                    { component: en.a, fab: r },
-                    Zt.b.isKaiOS()
-                      ? b.a.createElement(Pt.a, { leftText: nn, onLeftClick: l._handleSoftLeftClick })
+                    { component: tn.a, fab: r },
+                    $t.b.isKaiOS()
+                      ? b.a.createElement(Pt.a, { leftText: an, onLeftClick: l._handleSoftLeftClick })
                       : null,
                     b.a.createElement(F.a, { fetchStatus: t, render: l._renderTimeline }),
                   ),
@@ -955,7 +963,7 @@
                     this._pinnedListsEnabled && this.props.fetchPins(),
                     this.context.featureSwitches.isTrue('responsive_web_framerate_tracking_home_enabled'))
                   ) {
-                    var t = Zt.b.isDesktopOS() ? '' : '_mobile',
+                    var t = $t.b.isDesktopOS() ? '' : '_mobile',
                       a = 'home'.concat(t)
                     ;(Ge()
                       ? n
@@ -992,14 +1000,14 @@
                   var e = this.props.history,
                     t = this._isLatestPinned(),
                     n = Object(It.a)(),
-                    a = !n && t ? b.a.createElement(qe.a, { style: un.iconTwitter }) : void 0,
+                    a = !n && t ? b.a.createElement(qe.a, { style: dn.iconTwitter }) : void 0,
                     i = this._latestTimelineSwitchEnabled ? b.a.createElement(Ne, null) : void 0,
                     l = this._getTimelineMetadata(),
                     r = l.scribeNamespace,
                     s = l.title,
                     o = n || !t ? s : null,
                     c = t ? this._getLinks() : [],
-                    u = c.length > 1 ? b.a.createElement(tn.a, { links: c }) : void 0
+                    u = c.length > 1 ? b.a.createElement(nn.a, { links: c }) : void 0
                   return b.a.createElement(
                     Ft.c,
                     { namespace: r },
@@ -1025,11 +1033,11 @@
             a
           )
         })(b.a.Component)
-      _()(cn, 'contextType', he.a)
-      var un = V.a.create(function (e) {
+      _()(un, 'contextType', he.a)
+      var dn = V.a.create(function (e) {
         return { iconTwitter: { flexGrow: 1, height: '1.75rem', color: e.colors.primary } }
       })
-      t.default = L(cn)
+      t.default = L(un)
     },
     yKhE: function (e, t, n) {
       'use strict'
