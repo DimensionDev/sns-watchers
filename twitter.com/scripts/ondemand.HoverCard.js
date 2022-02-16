@@ -1376,166 +1376,171 @@
       'use strict'
       n.r(t),
         n.d(t, 'UserProfileCardContainer', function () {
-          return j
+          return D
         })
-      var r = n('VrFO'),
+      var r = n('yiKp'),
         o = n.n(r),
-        a = n('Y9Ll'),
+        a = n('VrFO'),
         i = n.n(a),
-        s = n('1Pcy'),
+        s = n('Y9Ll'),
         l = n.n(s),
-        c = n('5Yy7'),
+        c = n('1Pcy'),
         u = n.n(c),
-        d = n('2VqO'),
+        d = n('5Yy7'),
         p = n.n(d),
-        m = n('KEM+'),
+        m = n('2VqO'),
         f = n.n(m),
-        h = (n('2G9S'), n('1t7P'), n('jQ/y'), n('ho0z'), n('ERkP')),
+        h = n('KEM+'),
         w = n.n(h),
-        v = n('XnvM'),
-        b = n('SwJK'),
-        g = n('P1r1'),
-        _ = n('rxPX'),
-        y = n('0KEI'),
-        E = n('G6rE'),
-        C = Object(E.g)([E.a]),
-        k = function (e, t) {
-          return C(e, t.screenName)
-        },
-        S = function (e, t) {
-          return E.e.selectByScreenName(e, t.screenName)
-        },
+        v = (n('2G9S'), n('1t7P'), n('jQ/y'), n('ho0z'), n('ERkP')),
+        b = n.n(v),
+        g = n('XnvM'),
+        _ = n('SwJK'),
+        y = n('P1r1'),
+        E = n('rxPX'),
+        C = n('0KEI'),
+        k = n('G6rE'),
+        S = Object(k.g)([k.a]),
         F = function (e, t) {
-          return E.e.selectIsUserNotFound(e, t.screenName)
+          return S(e, t.screenName)
         },
         N = function (e, t) {
-          return E.e.selectIsUserSuspended(e, t.screenName)
+          return k.e.selectByScreenName(e, t.screenName)
         },
         A = function (e, t) {
-          return E.e.selectIsUserWithheld(e, t.screenName)
+          return k.e.selectIsUserNotFound(e, t.screenName)
         },
         I = function (e, t) {
-          var n = S(e, t)
-          return null == n ? void 0 : n.highlightedLabel
+          return k.e.selectIsUserSuspended(e, t.screenName)
         },
         x = function (e, t) {
-          var n = (function (e, t) {
-            return E.e.selectIdByScreenName(e, t.screenName)
-          })(e, t)
-          return { avatarUrls: b.a(e, n), count: b.b(e, n), names: b.c(e, n) }
+          return k.e.selectIsUserWithheld(e, t.screenName)
         },
-        U = Object(_.a)()
+        U = function (e, t) {
+          var n = N(e, t)
+          return null == n ? void 0 : n.highlightedLabel
+        },
+        L = function (e, t) {
+          var n = (function (e, t) {
+            return k.e.selectIdByScreenName(e, t.screenName)
+          })(e, t)
+          return { avatarUrls: _.a(e, n), count: _.b(e, n), names: _.c(e, n) }
+        },
+        T = Object(E.a)()
           .propsFromState(function () {
             return {
-              displaySensitiveMedia: g.l,
-              fetchStatus: k,
-              isNotFound: F,
-              isSuspended: N,
-              isWithheld: A,
-              knownFollowers: x,
-              user: S,
-              userHighlightedLabel: I,
+              displaySensitiveMedia: y.l,
+              fetchStatus: F,
+              isNotFound: A,
+              isSuspended: I,
+              isWithheld: x,
+              knownFollowers: L,
+              user: N,
+              userHighlightedLabel: U,
             }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(y.createLocalApiErrorHandlerWithContextFactory)('USER_PROFILE_CARD'),
-              fetchOneUserByScreenNameIfNeeded: E.e.fetchOneByScreenNameIfNeeded,
-              fetchKnownFollowersIfNeeded: v.a,
+              createLocalApiErrorHandler: Object(C.createLocalApiErrorHandlerWithContextFactory)('USER_PROFILE_CARD'),
+              fetchOneUserByScreenNameIfNeeded: k.e.fetchOneByScreenNameIfNeeded,
+              fetchKnownFollowersIfNeeded: g.a,
             }
           })
           .withAnalytics(),
-        L = n('GOQE'),
-        T = n('kGix'),
-        P = n('v//M'),
-        B = n('uIZp'),
-        O = n('Jkc4'),
-        W = n('ZQ2e'),
-        M = n('v6aA'),
-        V = n('7wqI'),
-        j = (function (e) {
-          u()(n, e)
-          var t = p()(n)
+        P = n('GOQE'),
+        B = n('kGix'),
+        O = n('v//M'),
+        W = n('uIZp'),
+        M = n('Jkc4'),
+        V = n('ZQ2e'),
+        j = n('v6aA'),
+        H = n('7wqI'),
+        D = (function (e) {
+          p()(n, e)
+          var t = f()(n)
           function n() {
             var e
-            o()(this, n)
-            for (var r = arguments.length, a = new Array(r), i = 0; i < r; i++) a[i] = arguments[i]
+            i()(this, n)
+            for (var r = arguments.length, a = new Array(r), s = 0; s < r; s++) a[s] = arguments[s]
             return (
               (e = t.call.apply(t, [this].concat(a))),
-              f()(l()(e), '_renderUserProfileCard', function () {
+              w()(u()(e), '_renderUserProfileCard', function () {
                 var t = e.props,
                   n = t.displaySensitiveMedia,
                   r = t.isNotFound,
-                  o = t.isSuspended,
-                  a = t.isWithheld,
-                  i = t.knownFollowers,
-                  s = t.onAvatarClick,
-                  l = t.onScreenNameClick,
-                  c = t.promotedContent,
-                  u = t.screenName,
-                  d = t.user,
-                  p = t.userHighlightedLabel
-                if (o)
-                  return w.a.createElement(W.a.Suspended, { onAvatarClick: s, onScreenNameClick: l, userScreenName: u })
-                if (!d) return null
-                var m = e.context.loggedInUserId,
-                  f = Object(V.a)({
+                  a = t.isSuspended,
+                  i = t.isWithheld,
+                  s = t.knownFollowers,
+                  l = t.onAvatarClick,
+                  c = t.onScreenNameClick,
+                  u = t.promotedContent,
+                  d = t.screenName,
+                  p = t.user,
+                  m = t.userHighlightedLabel
+                if (a)
+                  return b.a.createElement(V.a.Suspended, { onAvatarClick: l, onScreenNameClick: c, userScreenName: d })
+                if (!p) return null
+                var f = e.context.loggedInUserId,
+                  h = !!f && f === p.id_str,
+                  w = Object(H.b)({ isOwnProfile: h, user: p }),
+                  v = e.context.featureSwitches.isTrue('account_taxonomy_automated_label_enabled'),
+                  g = 'AutomatedLabel' === (null == m ? void 0 : m.userLabelType),
+                  _ = Object(H.a)({
                     displaySensitiveMedia: n,
                     isNotFound: r,
-                    isSuspended: o,
-                    isWithheld: a,
-                    loggedInUserId: m,
-                    user: d,
+                    isSuspended: a,
+                    isWithheld: i,
+                    loggedInUserId: f,
+                    user: p,
                   }),
-                  h = !!m && m === d.id_str,
-                  v = Object(V.b)({ isOwnProfile: h, user: d })
-                return w.a.createElement(O.a, null, function (t) {
-                  return w.a.createElement(W.a, {
+                  y = o()(o()({}, _), {}, { label: _.label && (!g || v) })
+                return b.a.createElement(M.a, null, function (t) {
+                  return b.a.createElement(V.a, {
                     followButton: e._renderFollowUserButton(),
-                    isAllowedToViewOptions: f,
-                    isLoggedIn: !!m,
-                    isUserProtected: d.protected,
-                    isUserStatsWithLink: v,
-                    isUserVerified: d.verified,
-                    knownFollowers: i,
-                    onAvatarClick: s,
-                    onScreenNameClick: l,
+                    isAllowedToViewOptions: y,
+                    isLoggedIn: !!f,
+                    isUserProtected: p.protected,
+                    isUserStatsWithLink: w,
+                    isUserVerified: p.verified,
+                    knownFollowers: s,
+                    onAvatarClick: l,
+                    onScreenNameClick: c,
                     onUserStatsPress: t(),
-                    promotedContent: c,
-                    userAvatarUri: d.profile_image_url_https,
-                    userDescription: d.description,
-                    userEntities: d.entities,
-                    userFollowersCount: d.followers_count,
-                    userFriendsCount: d.friends_count,
-                    userHighlightedLabel: p,
-                    userId: d.id_str,
-                    userName: d.name,
-                    userScreenName: u,
-                    userTranslatorType: d.translator_type,
-                    userWithFollowsYou: d.followed_by,
-                    userWithheldDescription: d.withheld_description,
-                    userWithheldEntities: d.withheld_entities,
+                    promotedContent: u,
+                    userAvatarUri: p.profile_image_url_https,
+                    userDescription: p.description,
+                    userEntities: p.entities,
+                    userFollowersCount: p.followers_count,
+                    userFriendsCount: p.friends_count,
+                    userHighlightedLabel: m,
+                    userId: p.id_str,
+                    userName: p.name,
+                    userScreenName: d,
+                    userTranslatorType: p.translator_type,
+                    userWithFollowsYou: p.followed_by,
+                    userWithheldDescription: p.withheld_description,
+                    userWithheldEntities: p.withheld_entities,
                   })
                 })
               }),
-              f()(l()(e), '_renderFollowUserButton', function () {
+              w()(u()(e), '_renderFollowUserButton', function () {
                 var t = e.props,
                   n = t.promotedContent,
                   r = t.showRelationshipChangeConfirmation,
                   o = t.user,
                   a = null == o ? void 0 : o.id_str
                 return a
-                  ? w.a.createElement(B.a, { promotedContent: n, showRelationshipChangeConfirmation: r, userId: a })
+                  ? b.a.createElement(W.a, { promotedContent: n, showRelationshipChangeConfirmation: r, userId: a })
                   : void 0
               }),
-              f()(l()(e), '_handleFetchUser', function () {
+              w()(u()(e), '_handleFetchUser', function () {
                 var t = e.props,
                   n = t.createLocalApiErrorHandler
                 ;(0, t.fetchOneUserByScreenNameIfNeeded)(t.screenName).catch(function (e) {
-                  n(L.a)(e)
+                  n(P.a)(e)
                 })
               }),
-              f()(l()(e), '_handleFetchKnownFollowers', function () {
+              w()(u()(e), '_handleFetchKnownFollowers', function () {
                 var t = e.props,
                   n = t.createLocalApiErrorHandler,
                   r = t.fetchKnownFollowersIfNeeded,
@@ -1547,7 +1552,7 @@
             )
           }
           return (
-            i()(n, [
+            l()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -1569,8 +1574,8 @@
                   var e = this.props,
                     t = e.fetchStatus,
                     n = e.isSuspended
-                  return w.a.createElement(P.a, {
-                    fetchStatus: n ? T.a.LOADED : t,
+                  return b.a.createElement(O.a, {
+                    fetchStatus: n ? B.a.LOADED : t,
                     onRequestRetry: this._handleFetchUser,
                     render: this._renderUserProfileCard,
                   })
@@ -1579,10 +1584,10 @@
             ]),
             n
           )
-        })(w.a.Component)
-      f()(j, 'contextType', M.a)
-      var H = U(j)
-      t.default = H
+        })(b.a.Component)
+      w()(D, 'contextType', j.a)
+      var R = T(D)
+      t.default = R
     },
   },
 ])

@@ -1998,12 +1998,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f713fbd1', 'Membership'),
           a('a49f884d', 'Community Banner'),
           a('ea965b81', 'Edit Community Banner'),
-          a('c1ca95bd', 'Crop Banner'),
-          a('e71cdf4d', 'Crop Thumbnail'),
           a('gea6cc19', 'Are you sure?'),
           a('j35d3ad6', 'Remove and replace'),
           a('f1e8fb21', 'Your banner will be removed and replaced with the default banner.'),
           a('e405ec21', 'Looks like we’re having trouble saving your banner image. Please try again later.'),
+          a('b7fb6bd9', 'Crop Image'),
+          a('e71cdf4d', 'Crop Thumbnail'),
           a('a753a87f', 'Apply'),
           a('b87ca51a', 'Remove photo'),
           a('eebff22c', 'Crop photo'),
@@ -6136,6 +6136,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('jc9298a8', 'Share Tweet'),
           a('b09adb0c', 'See conversation'),
           a('c2637ef5', 'Got it'),
+          a('b4cb0be1', 'This user is currently in an active Space, Click to join'),
+          a('g6520dde', function (e) {
+            return '@' + e.screenName + ' is currently in an active Space, Click to join'
+          }),
           a('d9fd5570', 'Hidden replies'),
           a('c566d3a5', 'Hide'),
           a('e9c24489', function (e) {
@@ -6146,10 +6150,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('ce97544c', 'Tweet unavailable'),
           a('ffeb2fc6', 'Up next'),
-          a('b4cb0be1', 'This user is currently in an active Space, Click to join'),
-          a('g6520dde', function (e) {
-            return '@' + e.screenName + ' is currently in an active Space, Click to join'
-          }),
           a('e8d6014e', function (e) {
             return '' + e.formattedCount
           }),

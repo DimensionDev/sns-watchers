@@ -272,6 +272,45 @@
           }
         })
     },
+    '2MR/': function (e, t, a) {
+      'use strict'
+      var n = a('ddV6'),
+        r = a.n(n),
+        i = a('ERkP'),
+        o = a.n(i),
+        s = a('3XMw'),
+        l = a.n(s),
+        c = a('v302'),
+        u = l.a.b05a39b2,
+        d = l.a.c566d3a5,
+        p = function (e) {
+          return o.a.createElement(c.a, e)
+        },
+        h = function (e) {
+          var t = e.children,
+            a = e.hideLabel,
+            n = void 0 === a ? d : a,
+            i = e.label,
+            s = e.lang,
+            l = e.render,
+            c = void 0 === l ? p : l,
+            h = e.revealLabel,
+            m = void 0 === h ? u : h,
+            _ = o.a.useState(!1),
+            b = r()(_, 2),
+            f = b[0],
+            v = b[1]
+          return c({
+            actionText: f ? n : m,
+            children: f ? t : i,
+            lang: s,
+            onActionClick: function () {
+              return v(!f)
+            },
+          })
+        }
+      ;(h.displayName = 'TweetDisclosure'), (t.a = h)
+    },
     '4BrD': function (e, t, a) {
       'use strict'
       var n = a('yiKp'),
@@ -5478,7 +5517,7 @@
         }),
         tn = $a,
         an = a('KNZn'),
-        nn = a('LKCq'),
+        nn = a('2MR/'),
         rn = jt.a.dd4a83a5,
         on = (function (e) {
           m()(a, e)
@@ -5631,8 +5670,8 @@
                     r
                       ? k.a.createElement(
                           N.a,
-                          { style: sn.interstitial },
-                          k.a.createElement(nn.a, { label: k.a.createElement(k.a.Fragment, null, rn) }, o()),
+                          { style: sn.tweetDisclosure },
+                          k.a.createElement(nn.a, { label: rn }, o()),
                         )
                       : o(),
                   )
@@ -5913,7 +5952,7 @@
             settingGroup: { marginTop: e.spaces.space12 },
             textField: { width: '100%' },
             textFieldDetails: { marginBottom: e.spaces.space4 },
-            interstitial: { marginTop: e.spaces.space12 },
+            tweetDisclosure: { marginTop: e.spaces.space12 },
           }
         }),
         ln = (function (e) {

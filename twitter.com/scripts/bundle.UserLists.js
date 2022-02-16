@@ -2576,23 +2576,19 @@
       'use strict'
       var a = n('ddV6'),
         r = n.n(a),
-        o = n('yiKp'),
+        o = n('VrFO'),
         i = n.n(o),
-        s = n('m3Bd'),
+        s = n('Y9Ll'),
         c = n.n(s),
-        l = n('VrFO'),
+        l = n('1Pcy'),
         u = n.n(l),
-        d = n('Y9Ll'),
+        d = n('5Yy7'),
         p = n.n(d),
-        h = n('1Pcy'),
+        h = n('2VqO'),
         m = n.n(h),
-        f = n('5Yy7'),
+        f = n('KEM+'),
         v = n.n(f),
-        b = n('2VqO'),
-        g = n.n(b),
-        y = n('KEM+'),
-        _ = n.n(y),
-        E =
+        b =
           (n('1t7P'),
           n('jQ/y'),
           n('ho0z'),
@@ -2603,108 +2599,103 @@
           n('kYxP'),
           n('KqXw'),
           n('MvUL'),
-          n('kH1Z'),
-          n('6U7i'),
           n('ERkP')),
-        I = n.n(E),
-        C = n('k49u'),
-        w = n('AspN'),
-        L = n('iPch'),
-        S = n('1YZw'),
-        M = n('/NU0'),
-        x = n('kHBp'),
-        k = n('rxPX'),
-        R = n('0KEI'),
-        T = function (e, t) {
+        g = n.n(b),
+        y = n('k49u'),
+        _ = n('AspN'),
+        E = n('iPch'),
+        I = n('1YZw'),
+        C = n('/NU0'),
+        w = n('kHBp'),
+        L = n('rxPX'),
+        S = n('0KEI'),
+        M = function (e, t) {
           var n = t.listId,
-            a = x.a.selectLocalMediaId(e, n || '-1'),
-            o = Object(M.a)(a) ? w.k(e, a) : []
+            a = w.a.selectLocalMediaId(e, n || '-1'),
+            o = Object(C.a)(a) ? _.k(e, a) : []
           return r()(o, 1)[0]
         },
-        O = function (e, t) {
+        x = function (e, t) {
           var n = t.listId
-          return n ? L.h(e, n) : void 0
+          return n ? E.h(e, n) : void 0
         },
-        P = function (e, t) {
+        k = function (e, t) {
           var n = t.listId,
-            a = n && x.a.select(e, n)
+            a = n && w.a.select(e, n)
           return a ? a.defaultBanner : void 0
         },
-        A = function (e, t) {
+        R = function (e, t) {
           var n
           return null === (n = t.location.state) || void 0 === n ? void 0 : n.suggestedUser
         },
-        D = Object(k.a)()
+        T = Object(L.a)()
           .propsFromState(function () {
-            return { suggestedUser: A, uploadedMedia: T, customMedia: O, defaultMedia: P }
+            return { suggestedUser: R, uploadedMedia: M, customMedia: x, defaultMedia: k }
           })
           .propsFromActions(function (e) {
             var t = e.context
             return {
-              createLocalApiErrorHandler: Object(R.createLocalApiErrorHandlerWithContextFactory)(t),
-              addToast: S.b,
-              addLocalMediaId: x.a.addLocalMediaId,
-              createList: x.a.createList,
-              deleteListMedia: x.a.deleteListMedia,
-              editList: x.a.editList,
-              editListMedia: x.a.editListMedia,
-              removeMediaUpload: w.i,
-              removeLocalMediaId: x.a.removeLocalMediaId,
+              createLocalApiErrorHandler: Object(S.createLocalApiErrorHandlerWithContextFactory)(t),
+              addToast: I.b,
+              addLocalMediaId: w.a.addLocalMediaId,
+              createList: w.a.createList,
+              deleteListMedia: w.a.deleteListMedia,
+              editList: w.a.editList,
+              editListMedia: w.a.editListMedia,
+              removeMediaUpload: _.i,
+              removeLocalMediaId: w.a.removeLocalMediaId,
             }
           })
           .withAnalytics(),
-        F = n('3XMw'),
-        j = n.n(F),
-        U = n('fS8x'),
-        N = n('YeIG'),
-        B = n('KePI'),
-        H = n('P68U'),
-        V = n('eyty'),
-        K = n('MWbm'),
-        W = n('GWvE'),
-        q = n('9Xij'),
-        z = n('rHpw'),
-        G = n('TIdA'),
-        Y = n('A91F'),
-        X = n('p+r5'),
-        Q = n('e0ey'),
-        J = n('v6aA'),
-        Z = n('jTgF'),
-        $ = ['cropData', 'id', 'mediaFile', 'originalMediaFile'],
-        ee = 'public',
-        te = 'private',
-        ne = j.a.d4e220b3,
-        ae = j.a.e36287c6,
-        re = j.a.f30edc68,
-        oe = j.a.df31d76a,
-        ie = j.a.c1ca95bd,
-        se = j.a.e71cdf4d,
-        ce = j.a.h51a2cf5,
-        le = j.a.bb10280e,
-        ue = j.a.h8885a22,
-        de = j.a.f8132983,
-        pe = (function (e) {
-          v()(n, e)
-          var t = g()(n)
+        O = n('3XMw'),
+        P = n.n(O),
+        A = n('JAeQ'),
+        D = n('YeIG'),
+        F = n('KePI'),
+        j = n('P68U'),
+        U = n('eyty'),
+        N = n('MWbm'),
+        B = n('GWvE'),
+        H = n('9Xij'),
+        V = n('rHpw'),
+        K = n('TIdA'),
+        W = n('A91F'),
+        q = n('p+r5'),
+        z = n('e0ey'),
+        G = n('v6aA'),
+        Y = n('jTgF'),
+        X = 'public',
+        Q = 'private',
+        J = P.a.d4e220b3,
+        Z = P.a.e36287c6,
+        $ = P.a.f30edc68,
+        ee = P.a.df31d76a,
+        te = P.a.h51a2cf5,
+        ne = P.a.bb10280e,
+        ae = P.a.h8885a22,
+        re = P.a.f8132983,
+        oe = (function (e) {
+          p()(n, e)
+          var t = m()(n)
           function n(e, a) {
             var o
-            u()(this, n),
+            i()(this, n),
               (o = t.call(this, e, a)),
-              _()(m()(o), '_hasListDataChanged', function () {
+              v()(u()(o), '_hasListDataChanged', function () {
                 var e = o.state,
                   t = e.description,
                   n = e.isPrivate,
                   a = e.name,
                   r = o.props.list,
-                  i = (null == r ? void 0 : r.mode) === te
+                  i = (null == r ? void 0 : r.mode) === Q
                 return t !== (null == r ? void 0 : r.description) || a !== (null == r ? void 0 : r.name) || n !== i
               }),
-              _()(m()(o), '_hasMediaChanged', function () {
+              v()(u()(o), '_hasMediaChanged', function () {
                 var e = o.props.uploadedMedia,
                   t = o.state.shouldDeleteBanner
                 return !(null == e || !e.uploader) || t
               }),
-              _()(m()(o), 'save', function () {
+              v()(u()(o), 'save', function () {
                 var e = o.state,
                   t = e.description,
                   n = e.isPrivate,
@@ -2720,13 +2711,13 @@
                 o.setState({ isSaving: !0 }), s.scribeAction('save')
                 var h = []
                 if (r && p) {
-                  var m = l(p).catch(c({ defaultToast: { text: ce }, showToast: !0 }))
+                  var m = l(p).catch(c({ defaultToast: { text: te }, showToast: !0 }))
                   h.push(m)
                 }
                 if ((o._hasMediaChanged() && d && h.push(o._handleUploadMedia(d)), o._hasListDataChanged() && p)) {
-                  var f = u(p, { description: t, mode: n ? te : ee, name: a }).catch(
+                  var f = u(p, { description: t, mode: n ? Q : X, name: a }).catch(
                     c(
-                      _()({ defaultToast: { text: le }, showToast: !0 }, C.a.ValidationFailure, {
+                      v()({ defaultToast: { text: ne }, showToast: !0 }, y.a.ValidationFailure, {
                         customAction: o._handleListUpdateFailure,
                       }),
                     ),
@@ -2738,7 +2729,7 @@
                 }),
                   o.setState({ isSaving: !1 })
               }),
-              _()(m()(o), 'create', function () {
+              v()(u()(o), 'create', function () {
                 var e = o.state,
                   t = e.description,
                   n = e.isPrivate,
@@ -2749,7 +2740,7 @@
                   c = r.createLocalApiErrorHandler,
                   l = r.onError,
                   u = r.suggestedUser,
-                  d = n ? te : ee
+                  d = n ? Q : X
                 o.setState({ isSaving: !0 }),
                   i.scribeAction('create'),
                   s({ name: a, description: t, mode: d }).then(
@@ -2761,7 +2752,7 @@
                             var t = o.props.history,
                               n = {
                                 pathname: ''.concat(e.uri, '/members/suggested'),
-                                state: { previousStep: B.a.Creation, suggestedUser: u },
+                                state: { previousStep: F.a.Creation, suggestedUser: u },
                               }
                             u ? t.push(n) : t.replace(n)
                           }
@@ -2771,7 +2762,7 @@
                     function (e) {
                       l && l(),
                         c(
-                          _()({ defaultToast: { text: le }, showToast: !0 }, C.a.ValidationFailure, {
+                          v()({ defaultToast: { text: ne }, showToast: !0 }, y.a.ValidationFailure, {
                             customAction: o._handleListUpdateFailure,
                           }),
                         )(e)
@@ -2779,14 +2770,14 @@
                   ),
                   o.setState({ isSaving: !1 })
               }),
-              _()(m()(o), '_goBackToListDetail', function () {
+              v()(u()(o), '_goBackToListDetail', function () {
                 var e = o.props,
                   t = e.history,
                   n = e.listId,
                   a = n && '/i/lists/'.concat(n)
                 t.goBack({ backLocation: a, shouldReplaceOnFallback: !0 })
               }),
-              _()(m()(o), '_handleUploadMedia', function (e) {
+              v()(u()(o), '_handleUploadMedia', function (e) {
                 var t = o.props,
                   n = t.editListMedia,
                   a = t.removeMediaUpload,
@@ -2796,118 +2787,85 @@
                 return r && r.uploader && s
                   ? n({ listId: s, mediaId: r.id, iconCrop: i }).then(function () {
                       return a(r.id), Promise.resolve(e)
-                    }, o._handleMediaUpdateFailure(r, le))
+                    }, o._handleMediaUpdateFailure(r, ne))
                   : Promise.resolve(e)
               }),
-              _()(m()(o), '_renderIconCropper', function () {
-                var e = o.state.showIconCropper,
-                  t = o.props.uploadedMedia
-                if (!t) return null
-                t.cropData, t.id
-                var n = t.mediaFile,
-                  a = (t.originalMediaFile, c()(t, $)),
-                  r = i()(i()({}, a), {}, { id: Number.MAX_SAFE_INTEGER, originalMediaFile: n, mediaFile: n })
-                return e
-                  ? I.a.createElement(U.a, {
-                      defaultAspectRatio: 1,
-                      media: r,
-                      onCancel: o._handleIconCropCancel,
-                      onCropDone: o._handleIconCropData,
-                      onDone: o._handleIconCropDone,
-                      title: se,
-                      withZoomControl: !1,
-                    })
-                  : null
+              v()(u()(o), '_handleIconCropCancel', function () {
+                o.setState({ iconCrop: void 0 })
               }),
-              _()(m()(o), '_handleIconCropCancel', function () {
-                o.setState({ showBannerCropper: !0, showIconCropper: !1, iconCrop: void 0 })
+              v()(u()(o), '_handleIconCropDone', function (e) {
+                var t = o.props.analytics
+                Object(D.a)(e) || o.setState({ iconCrop: e }), t.scribe({ element: 'banner_image', action: 'select' })
               }),
-              _()(m()(o), '_handleIconCropDone', function () {
-                o.props.analytics.scribe({ element: 'banner_image', action: 'select' }),
-                  o.setState({ showIconCropper: !1 })
-              }),
-              _()(m()(o), '_handleIconCropData', function (e) {
-                Object(N.a)(e) || o.setState({ iconCrop: e })
-              }),
-              _()(m()(o), '_handleBannerCropDone', function () {
-                o.setState({ showBannerCropper: !1, showIconCropper: !0 })
-              }),
-              _()(m()(o), '_handleBannerCropCancel', function () {
-                o.setState({ showBannerCropper: !1 })
-              }),
-              _()(m()(o), '_handlePrivacyChange', function (e, t) {
+              v()(u()(o), '_handlePrivacyChange', function (e, t) {
                 o.setState({ isPrivate: t })
               }),
-              _()(m()(o), '_handleNameChange', function (e) {
+              v()(u()(o), '_handleNameChange', function (e) {
                 o.setState({ name: e.target.value, nameError: void 0 })
               }),
-              _()(m()(o), '_handleDescriptionChange', function (e) {
+              v()(u()(o), '_handleDescriptionChange', function (e) {
                 o.setState({ description: e.target.value })
               }),
-              _()(m()(o), '_handleBannerMediaRemove', function () {
+              v()(u()(o), '_handleBannerMediaRemove', function () {
                 var e = o.props,
                   t = e.analytics,
                   n = e.uploadedMedia
                 t.scribe({ element: 'banner_image', action: 'remove' }),
                   n ? o._clearBannerMedia(n.id) : o.setState({ shouldDeleteBanner: !0 })
               }),
-              _()(m()(o), '_handleBannerMediaChange', function (e) {
+              v()(u()(o), '_handleBannerMediaChange', function (e) {
                 var t = r()(e, 1)[0],
                   n = o.props,
                   a = n.addLocalMediaId,
                   i = n.listId,
                   s = n.uploadedMedia
-                s && o._clearBannerMedia(s.id),
-                  a({ listId: i || '-1', mediaId: t }),
-                  o.setState({ showBannerCropper: !0 })
+                s && o._clearBannerMedia(s.id), a({ listId: i || '-1', mediaId: t })
               }),
-              _()(m()(o), '_handleBannerMediaFailure', function (e) {
+              v()(u()(o), '_handleBannerMediaFailure', function (e) {
                 o._clearBannerMedia(e)
               }),
-              _()(m()(o), '_clearBannerMedia', function (e) {
+              v()(u()(o), '_clearBannerMedia', function (e) {
                 var t = o.props,
                   n = t.removeMediaUpload,
                   a = t.uploadedMedia
                 ;(a && a.uploading) || n(e), o.setState({ mediaId: void 0 })
               }),
-              _()(m()(o), '_handleMediaUpdateFailure', function (e, t) {
+              v()(u()(o), '_handleMediaUpdateFailure', function (e, t) {
                 return function (n) {
                   var a = o.props,
                     r = a.addToast,
                     i = a.createLocalApiErrorHandler,
                     s = a.removeMediaUpload,
-                    c = Object(Z.a)(n)
+                    c = Object(Y.a)(n)
                   if (c) {
-                    var l = Object(Z.b)(c, t)
+                    var l = Object(Y.b)(c, t)
                     l && r(l)
                   } else i({ showToast: !0 })(n)
                   s(e.id), o.setState({ isSaving: !1 })
                 }
               }),
-              _()(m()(o), '_handleListUpdateFailure', function (e) {
-                o.setState({ nameError: e.message || ue })
+              v()(u()(o), '_handleListUpdateFailure', function (e) {
+                o.setState({ nameError: e.message || ae })
               })
             var s = e.list,
-              l = (null == s ? void 0 : s.name) || '',
-              d = (null == s ? void 0 : s.description) || '',
-              p = (null == s ? void 0 : s.mode) === te
+              c = (null == s ? void 0 : s.name) || '',
+              l = (null == s ? void 0 : s.description) || '',
+              d = (null == s ? void 0 : s.mode) === Q
             return (
               (o.state = {
-                description: d,
-                isPrivate: p,
+                description: l,
+                isPrivate: d,
                 isSaving: !1,
-                name: l,
+                name: c,
                 nameError: '',
                 showConfirmation: !1,
-                showBannerCropper: !1,
-                showIconCropper: !1,
                 shouldDeleteBanner: !1,
               }),
               o
             )
           }
           return (
-            p()(n, [
+            c()(n, [
               {
                 key: 'componentWillUnmount',
                 value: function () {
@@ -2927,7 +2885,7 @@
                     o = a.name
                   n(
                     !(
-                      !!(!o || !o.length || Object(W.a)(o)) ||
+                      !!(!o || !o.length || Object(B.a)(o)) ||
                       (!this._hasListDataChanged() && !this._hasMediaChanged()) ||
                       r
                     ),
@@ -2947,38 +2905,37 @@
                     s = r.name,
                     c = r.nameError,
                     l = r.shouldDeleteBanner,
-                    u = r.showBannerCropper,
-                    d = !Object(N.a)(null == t ? void 0 : t.image),
-                    p = l || !d ? (null == n ? void 0 : n.image) : null == t ? void 0 : t.image,
-                    h = I.a.createElement(
-                      q.a,
-                      { ratio: z.a.theme.aspectRatios.profileBanner },
-                      p ? I.a.createElement(G.a, { accessibilityLabel: '', aspectMode: Y.a.exact(3), image: p }) : null,
+                    u = !Object(D.a)(null == t ? void 0 : t.image),
+                    d = l || !u ? (null == n ? void 0 : n.image) : null == t ? void 0 : t.image,
+                    p = g.a.createElement(
+                      H.a,
+                      { ratio: V.a.theme.aspectRatios.profileBanner },
+                      d ? g.a.createElement(K.a, { accessibilityLabel: '', aspectMode: W.a.exact(3), image: d }) : null,
                     )
-                  return I.a.createElement(
-                    K.a,
+                  return g.a.createElement(
+                    N.a,
                     null,
-                    I.a.createElement(H.default, {
-                      accessibilityLabel: oe,
+                    g.a.createElement(j.default, {
+                      accessibilityLabel: ee,
                       aspectRatio: 3,
-                      currentContent: h,
-                      location: V.d.ListBanner,
+                      currentContent: p,
+                      location: U.d.ListBanner,
                       mediaItem: a,
                       onChange: this._handleBannerMediaChange,
                       onFailure: this._handleBannerMediaFailure,
-                      onRemove: d || a ? this._handleBannerMediaRemove : void 0,
+                      onRemove: u || a ? this._handleBannerMediaRemove : void 0,
                     }),
-                    I.a.createElement(X.a, {
+                    g.a.createElement(q.a, {
                       errorText: c,
                       invalid: !!c,
-                      label: ne,
+                      label: J,
                       maxLength: 25,
                       name: 'name',
                       onChange: this._handleNameChange,
                       value: s,
                     }),
-                    I.a.createElement(X.a, {
-                      label: ae,
+                    g.a.createElement(q.a, {
+                      label: Z,
                       maxLength: 100,
                       multiline: !0,
                       name: 'description',
@@ -2986,20 +2943,18 @@
                       onChange: this._handleDescriptionChange,
                       value: o,
                     }),
-                    u
-                      ? I.a.createElement(U.a, {
-                          defaultAspectRatio: 3,
+                    a
+                      ? g.a.createElement(A.a, {
+                          aspectRatio: 3,
                           media: a,
-                          onCancel: this._handleBannerCropCancel,
-                          onDone: this._handleBannerCropDone,
-                          title: ie,
+                          onCancel: this._handleIconCropCancel,
+                          onCropDone: this._handleIconCropDone,
                         })
                       : null,
-                    a ? this._renderIconCropper() : null,
-                    I.a.createElement(Q.a, {
+                    g.a.createElement(z.a, {
                       checked: i,
-                      helpText: de,
-                      label: re,
+                      helpText: re,
+                      label: $,
                       name: 'isPrivate',
                       onChange: this._handlePrivacyChange,
                     }),
@@ -3009,10 +2964,10 @@
             ]),
             n
           )
-        })(I.a.Component)
-      _()(pe, 'contextType', J.a)
-      var he = D.forwardRef(pe)
-      t.a = he
+        })(g.a.Component)
+      v()(oe, 'contextType', G.a)
+      var ie = T.forwardRef(oe)
+      t.a = ie
     },
     EeFI: function (e, t, n) {
       'use strict'
@@ -3333,6 +3288,89 @@
       }
       ;(W.Action = o), (W.Custom = B)
       t.a = W
+    },
+    JAeQ: function (e, t, n) {
+      'use strict'
+      n.d(t, 'a', function () {
+        return f
+      })
+      var a = n('yiKp'),
+        r = n.n(a),
+        o = n('ddV6'),
+        i = n.n(o),
+        s = (n('yH/f'), n('kH1Z'), n('6U7i'), n('ERkP')),
+        c = n.n(s),
+        l = n('3XMw'),
+        u = n.n(l),
+        d = n('fS8x'),
+        p = u.a.b7fb6bd9,
+        h = u.a.e71cdf4d,
+        m = Object.freeze({ NotStarted: 'not_started', Started: 'started', Completed: 'completed' })
+      function f(e) {
+        var t = e.aspectRatio,
+          n = e.media,
+          a = e.onCancel,
+          o = e.onCropDone,
+          s = c.a.useState({ status: 'not_started' }),
+          l = i()(s, 2),
+          u = l[0],
+          f = l[1],
+          v = c.a.useState(!1),
+          b = i()(v, 2),
+          g = b[0],
+          y = b[1],
+          _ = c.a.useState(!1),
+          E = i()(_, 2),
+          I = E[0],
+          C = E[1],
+          w = u.croppedMediaId,
+          L = void 0 === w ? void 0 : w,
+          S = u.status
+        c.a.useEffect(
+          function () {
+            S === m.NotStarted && (y(!0), f({ status: 'started' })),
+              S === m.Completed && n.id !== L && f({ status: 'not_started', croppedMediaId: void 0 })
+          },
+          [S, n, L],
+        )
+        var M = c.a.useCallback(
+            function () {
+              y(!1), f({ status: m.Completed, croppedMediaId: n.id }), a()
+            },
+            [a, n],
+          ),
+          x = c.a.useCallback(function () {
+            y(!1), C(!0)
+          }, []),
+          k = c.a.useCallback(function () {
+            C(!1), y(!0)
+          }, []),
+          R = c.a.useCallback(function () {
+            C(!1)
+          }, []),
+          T = c.a.useCallback(
+            function (e) {
+              f({ status: m.Completed, croppedMediaId: n.id }), null == o || o(e)
+            },
+            [o, n],
+          ),
+          O = r()(r()({}, n), {}, { id: Number.MAX_SAFE_INTEGER, originalMediaFile: n.mediaFile, cropData: void 0 })
+        return c.a.createElement(
+          c.a.Fragment,
+          null,
+          g ? c.a.createElement(d.a, { defaultAspectRatio: t, media: n, onCancel: M, onDone: x, title: p }) : null,
+          I
+            ? c.a.createElement(d.a, {
+                defaultAspectRatio: 1,
+                media: O,
+                onCancel: k,
+                onCropDone: T,
+                onDone: R,
+                title: h,
+              })
+            : null,
+        )
+      }
     },
     'Lwx/': function (e, t, n) {
       'use strict'

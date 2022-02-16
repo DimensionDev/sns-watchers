@@ -23425,15 +23425,8 @@
                     var t = e.element
                     i._scribeAction({ element: t, action: 'click' })
                   },
-                },
-                d = {
-                  promotedContent: i.context.featureSwitches.isTrue(
-                    'responsive_web_add_impression_id_to_mute_engagement_enabled',
-                  )
-                    ? a
-                    : void 0,
                 }
-              return Object(Ce.a)(_()(_()({}, u), {}, { mute: o, unmute: c, user: l }, d))
+              return Object(Ce.a)(_()(_()({}, u), {}, { mute: o, unmute: c, user: l, promotedContent: a }))
             }),
             y()(
               p()(i),
@@ -53085,11 +53078,8 @@
                   r = t.createLocalApiErrorHandler,
                   i = t.mute,
                   o = t.promotedContent,
-                  a = t.user,
-                  s = e.context.featureSwitches.isTrue('responsive_web_add_impression_id_to_mute_engagement_enabled')
-                    ? { promotedContent: o }
-                    : {}
-                i(a.id_str, s).then(function () {
+                  a = t.user
+                i(a.id_str, { promotedContent: o }).then(function () {
                   n({ action: { label: ye.a, onAction: e._handleUnmuteUser }, text: Object(A.b)(a.screen_name) })
                 }, r({ showToast: !0 })),
                   e._scribeAction('mute_user')
@@ -53100,11 +53090,8 @@
                   r = t.createLocalApiErrorHandler,
                   i = t.promotedContent,
                   o = t.unmute,
-                  a = t.user,
-                  s = e.context.featureSwitches.isTrue('responsive_web_add_impression_id_to_mute_engagement_enabled')
-                    ? { promotedContent: i }
-                    : {}
-                o(a.id_str, s).then(function () {
+                  a = t.user
+                o(a.id_str, { promotedContent: i }).then(function () {
                   n({ text: Object(A.d)(a.screen_name) })
                 }, r({ showToast: !0 })),
                   e._scribeAction('unmute_user')
@@ -56917,14 +56904,8 @@
                       o._scribeAction({ element: t, action: 'click' })
                     },
                   },
-                  u = {
-                    promotedContent: o.context.featureSwitches.isTrue(
-                      'responsive_web_add_impression_id_to_mute_engagement_enabled',
-                    )
-                      ? o._getPromotedContent()
-                      : void 0,
-                  }
-                return Object(ce.a)(E()(E()({}, l), {}, { mute: i, unmute: s, user: c }, u))
+                  u = o._getPromotedContent()
+                return Object(ce.a)(E()(E()({}, l), {}, { mute: i, unmute: s, user: c, promotedContent: u }))
               }),
               _()(h()(o), '_renderConversationControlsTooltip', function () {
                 var e = o.context.loggedInUserId,

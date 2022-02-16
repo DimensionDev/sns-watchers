@@ -51280,14 +51280,8 @@
                       i._scribeAction({ element: t, action: 'click' })
                     },
                   },
-                  u = {
-                    promotedContent: i.context.featureSwitches.isTrue(
-                      'responsive_web_add_impression_id_to_mute_engagement_enabled',
-                    )
-                      ? i._getPromotedContent()
-                      : void 0,
-                  }
-                return Object(ce.a)(C()(C()({}, l), {}, { mute: a, unmute: s, user: c }, u))
+                  u = i._getPromotedContent()
+                return Object(ce.a)(C()(C()({}, l), {}, { mute: a, unmute: s, user: c, promotedContent: u }))
               }),
               _()(m()(i), '_renderConversationControlsTooltip', function () {
                 var e = i.context.loggedInUserId,

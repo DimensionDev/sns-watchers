@@ -590,7 +590,7 @@
           onImpression: function (e) {
             var t = e.actions.scribe,
               n = e.scribeNamespace
-            t(r()(r()({}, n), {}, { element: 'onboarding_likes_start_prompt', action: 'impression' }))
+            t(r()(r()({}, n), {}, { action: 'impression' }))
           },
         })
       t.default = g
