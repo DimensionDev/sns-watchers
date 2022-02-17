@@ -335,48 +335,50 @@
         g = i.a.a4ed9071,
         h = function (e, t) {
           var r,
-            a = e.imageUrl,
-            o = e.onChange,
-            i = e.style,
-            h = e.value,
-            w = e.valueMaxLength,
-            E = Object(s.b)().windowWidth > u.a.theme.breakpoints.small
+            a = e.autoFocus,
+            o = e.imageUrl,
+            i = e.onChange,
+            h = e.style,
+            w = e.value,
+            E = e.valueMaxLength,
+            v = Object(s.b)().windowWidth > u.a.theme.breakpoints.small
           return n.a.createElement(
             l.a,
-            { style: [b.root, i] },
-            a
-              ? n.a.createElement(d.a, { size: E ? 'xxxLarge' : 'xLarge', uri: a })
-              : n.a.createElement(m.a, { Icon: c.a }),
+            { style: [b.root, h] },
             o
+              ? n.a.createElement(d.a, { size: v ? 'xxxLarge' : 'xLarge', uri: o })
+              : n.a.createElement(m.a, { Icon: c.a }),
+            i
               ? n.a.createElement(
                   n.a.Fragment,
                   null,
                   n.a.createElement(p.a, {
-                    inputStyle: [b.creatorIntroInput, w && b.creatorIntroInputWithCountdownCircle],
+                    autoFocus: a,
+                    inputStyle: [b.creatorIntroInput, E && b.creatorIntroInputWithCountdownCircle],
                     isCompact: !0,
                     leftAligned: !0,
                     maxNumberOfLines: Number.MAX_SAFE_INTEGER,
                     multiline: !0,
                     name: 'creatorIntro',
                     numberOfLines: 1,
-                    onChange: o,
+                    onChange: i,
                     placeholder: g,
                     ref: t,
                     style: b.creatorIntro,
-                    value: h,
+                    value: w,
                   }),
-                  w &&
+                  E &&
                     n.a.createElement(
                       l.a,
                       { style: b.countdownCircle },
                       n.a.createElement(f.a, {
-                        count: null !== (r = null == h ? void 0 : h.length) && void 0 !== r ? r : 0,
-                        maxCount: w,
-                        warningCount: w - 10,
+                        count: null !== (r = null == w ? void 0 : w.length) && void 0 !== r ? r : 0,
+                        maxCount: E,
+                        warningCount: E - 10,
                       }),
                     ),
                 )
-              : n.a.createElement(y.b, { style: [b.creatorIntro, b.creatorIntroReadOnly] }, h),
+              : n.a.createElement(y.b, { style: [b.creatorIntro, b.creatorIntroReadOnly] }, w),
           )
         },
         w = n.a.forwardRef(h),
@@ -842,8 +844,8 @@
         I = r.n(T),
         S = r('bCEw'),
         L = r.n(S),
-        B = r('Ud88'),
-        F = r.n(B),
+        F = r('Ud88'),
+        B = r.n(F),
         H = function (e) {
           return (0, e.render)({ fetchStatus: x.a.LOADING, data: null, error: null, retry: C.a })
         },
@@ -942,7 +944,7 @@
             a.fetchPolicy
             var o = a.render,
               i = a.variables,
-              c = F()(),
+              c = B()(),
               l = Object(R.useCreateLocalApiErrorHandler)(t.errorConfig.context),
               s = W()(i),
               u = n()(s, 1)[0],

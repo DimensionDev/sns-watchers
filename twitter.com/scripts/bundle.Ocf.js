@@ -12781,7 +12781,7 @@
               paddingHorizontal: e.spaces.space32,
             },
             invisible: { visibility: 'hidden' },
-            flexViewport: { flex: '1 1 100px', overflow: 'auto' },
+            flexViewport: { flexGrow: 1, flexShrink: 1, flexBasis: '100px', overflow: 'auto' },
             visualViewport: {
               position: 'absolute',
               left: 0,

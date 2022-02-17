@@ -1408,13 +1408,13 @@
         })(b.a.Component),
         pe = S.a.create(function (e) {
           return {
-            root: { flex: '1 1' },
+            root: { flex: 1 },
             overlay: r()(r()({}, S.a.absoluteFillObject), {}, { alignItems: 'center', justifyContent: 'center' }),
-            video: { alignItems: 'center', flex: '1 1', justifyContent: 'center', width: '100%' },
+            video: { alignItems: 'center', flex: 1, justifyContent: 'center', width: '100%' },
             videoContainer: {
               alignItems: 'center',
               backgroundColor: e.colors.gray0,
-              flex: '1 1',
+              flex: 1,
               padding: e.spaces.space20,
               width: '100%',
             },

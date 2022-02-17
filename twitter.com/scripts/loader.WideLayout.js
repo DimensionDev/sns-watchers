@@ -113,14 +113,14 @@
                     n = e.position,
                     i = e.stickyThreshold,
                     o = e.stickyTop,
-                    r = E[n],
+                    r = R[n],
                     a = window.devicePixelRatio || 1,
                     s = k({ cssPixels: i, dpr: a }),
                     c = k({ cssPixels: t, dpr: a }),
                     l = { top: o ? ''.concat(s, 'px') : null, bottom: o ? null : ''.concat(s, 'px') }
                   return v.a.createElement(
                     O.a,
-                    { ref: this._setContainerRef, style: [E.container, { minHeight: this.state.contentHeight }] },
+                    { ref: this._setContainerRef, style: [R.container, { minHeight: this.state.contentHeight }] },
                     v.a.createElement(O.a, { style: { marginTop: ''.concat(c, 'px') } }),
                     v.a.createElement(
                       O.a,
@@ -209,7 +209,7 @@
           )
         })(v.a.PureComponent)
       f()(x, 'contextType', _.a), f()(x, 'defaultProps', { distanceFromBottom: 10 })
-      var E = w.a.create(function (e) {
+      var R = w.a.create(function (e) {
         return {
           container: { height: '100%' },
           sticky: { position: 'sticky' },
@@ -246,8 +246,8 @@
         O = n('3XMw'),
         k = n.n(O),
         x = n('Rp9C'),
-        E = n('rHpw'),
-        R = n('MWbm'),
+        R = n('rHpw'),
+        E = n('MWbm'),
         I = n('lP98'),
         H = n('RqPI'),
         P = n('rxPX'),
@@ -290,7 +290,7 @@
         B = k.a.a526aa66,
         Y = k.a.ef62501f,
         K = k.a.d228a9a0,
-        V = Object(D.a)(function (e) {
+        q = Object(D.a)(function (e) {
           var t = e.isInSidebar,
             n = e.userId,
             i = e.userIds,
@@ -298,14 +298,14 @@
             r = i.length > 3,
             a = '/i/connect_people?user_id='.concat(n)
           return _.a.createElement(
-            R.a,
+            E.a,
             { accessibilityLabel: B, accessibilityRole: 'complementary' },
             _.a.createElement(j.b, { text: o ? Y : B }),
             _.a.createElement(A.a, { displayMode: U.a.UserCompact, userIds: i.slice(0, 3), withItemBorder: !0 }),
             r && _.a.createElement(W.a, { link: a, text: K, withBottomRadius: !0, withDarkerInteractiveBackground: t }),
           )
         }),
-        q = k.a.fd6473fa,
+        V = k.a.fd6473fa,
         z = { element: 'user', action: 'results' },
         X = { viewType: 'who_to_follow' },
         J = (function (e) {
@@ -327,7 +327,7 @@
                     n.map(function (e) {
                       return e.user
                     })
-                return _.a.createElement(V, { userId: i, userIds: r, withProfileHeaderText: o })
+                return _.a.createElement(q, { userId: i, userIds: r, withProfileHeaderText: o })
               }),
               v()(d()(e), '_handleImpression', function (t) {
                 var n = e.props.analytics,
@@ -367,10 +367,10 @@
                   return t === w.a.FAILED || this._hasEmptySuggestionList()
                     ? null
                     : _.a.createElement(
-                        R.a,
+                        E.a,
                         { style: [G.root, n] },
                         _.a.createElement(b.a, {
-                          accessibilityLabel: q,
+                          accessibilityLabel: V,
                           behavioralEventContext: X,
                           fetchStatus: t,
                           render: this._renderContent,
@@ -401,7 +401,7 @@
             n
           )
         })(_.a.PureComponent),
-        G = E.a.create(function (e) {
+        G = R.a.create(function (e) {
           return { root: { minHeight: '15rem' } }
         }),
         Z = F(J)
@@ -448,8 +448,8 @@
         O = n('jHwr'),
         k = n('VY6S'),
         x = n('w9LO'),
-        E = n('//dC'),
-        R = n('lHOd'),
+        R = n('//dC'),
+        E = n('lHOd'),
         I = n('Oe3h'),
         H = n('0FVZ'),
         P = n('7N4s'),
@@ -542,10 +542,10 @@
                     O = l - p >= t,
                     k = c - f >= e,
                     x = o.props.preferredVerticalOrientation,
-                    E = (function (e) {
+                    R = (function (e) {
                       return N.a.getConstants().isRTL ? ('left' === e ? 'right' : 'left') : e
                     })(o.props.preferredHorizontalOrientation),
-                    R =
+                    E =
                       o.state.verticalOrientation ||
                       (function (e) {
                         var t = e.canOrientDown,
@@ -560,12 +560,12 @@
                           n = e.canOrientRight,
                           i = e.horizontalPreference
                         return !t || ('left' !== i && n) ? 'right' : 'left'
-                      })({ horizontalPreference: E, canOrientLeft: w, canOrientRight: O }),
+                      })({ horizontalPreference: R, canOrientLeft: w, canOrientRight: O }),
                     H = o.props.isFixed ? p : y,
                     P = o.props.isFixed ? f : g,
-                    L = 'up' === R ? P + h - e : P,
+                    L = 'up' === E ? P + h - e : P,
                     S = 'left' === I ? l - H - m - v : l - H - t - v
-                  o.setState({ top: Math.max(L, 0), right: S, verticalOrientation: R, horizontalOrientation: I })
+                  o.setState({ top: Math.max(L, 0), right: S, verticalOrientation: E, horizontalOrientation: I })
                 }
               }),
               (o.state = Object.freeze({})),
@@ -621,11 +621,11 @@
                     w.a.createElement(
                       H.a.Dropdown,
                       null,
-                      w.a.createElement(R.a.Consumer, null, function (t) {
+                      w.a.createElement(E.a.Consumer, null, function (t) {
                         return w.a.createElement(P.b.Consumer, null, function (a) {
                           var l = a.isModal
                           return w.a.createElement(
-                            E.a,
+                            R.a,
                             { history: t, isModal: l, onDismiss: s },
                             w.a.createElement(
                               x.a,
@@ -711,44 +711,66 @@
         o = n.n(i),
         r = n('RhWx'),
         a = n.n(r),
-        s = (n('z84I'), n('2G9S'), n('VAyw')),
-        c = n('XOJV'),
-        l = n('s1N3'),
-        d = n('rxPX'),
-        u = function (e) {
-          var t, n
-          return (
-            (null === (t = e.entities) || void 0 === t || null === (n = t.user_mentions) || void 0 === n
-              ? void 0
-              : n.map(function (e) {
-                  return e.id_str
-                })) || []
-          )
-        },
+        s = (n('z84I'), n('jQ3i'), n('x4t0'), n('LW0h'), n('7x/C'), n('2G9S'), n('RqPI')),
+        c = n('VAyw'),
+        l = n('XOJV'),
+        d = n('s1N3'),
+        u = n('rxPX'),
         h = function (e, t) {
           return t.focalTweetId
         },
-        p = Object(d.a)()
+        p = Object(u.a)()
           .propsFromState(function () {
-            return { tweetMap: c.a.selectAll, focalTweetId: h }
+            return { focalTweetId: h, loggedInUserId: s.q, tweetMap: l.a.selectAll }
           })
           .adjustStateProps(function (e) {
             var t = e.focalTweetId,
-              n = e.tweetMap,
-              i = t && n[t]
-            if (!i) return { participantIds: [] }
-            var o,
-              r = [i.user].concat(
-                a()(u(i)),
+              n = e.loggedInUserId,
+              i = e.tweetMap,
+              o = t && i[t]
+            if (!o) return { participantIds: [] }
+            var r,
+              s = function (e, t) {
+                var i,
+                  o = n === t,
+                  r = null === (i = e.unmentioned_user_ids) || void 0 === i ? void 0 : i.includes(t)
+                return o || !r
+              },
+              l = function (e) {
+                var t
+                return (
+                  ((null === (t = e.entities) || void 0 === t ? void 0 : t.user_mentions) || [])
+                    .filter(function (t) {
+                      return s(e, t.id_str)
+                    })
+                    .map(function (e) {
+                      return e.id_str
+                    }) || []
+                )
+              },
+              u = [o.user].concat(
+                a()(l(o)),
                 a()(
-                  ((o = i),
-                  s.a.mergeTaggedUsers((o.extended_entities && o.extended_entities.media) || []).map(function (e) {
+                  ((r = o),
+                  c.a.mergeTaggedUsers((r.extended_entities && r.extended_entities.media) || []).map(function (e) {
                     return e.user_id
                   })),
                 ),
               ),
-              c = i.quoted_status && n[i.quoted_status]
-            return c && (r.push(c.user), r.push.apply(r, a()(u(c)))), { participantIds: Object(l.a)(r) }
+              h = o.quoted_status && i[o.quoted_status]
+            return (
+              h &&
+                (u.push.apply(
+                  u,
+                  a()(
+                    (function (e) {
+                      return s(e, e.user) ? [e.user] : []
+                    })(h),
+                  ),
+                ),
+                u.push.apply(u, a()(l(h)))),
+              { participantIds: Object(d.a)(u) }
+            )
           })
           .withAnalytics({ component: 'in_this_conversation' }),
         f = (n('M+/F'), n('3XMw')),

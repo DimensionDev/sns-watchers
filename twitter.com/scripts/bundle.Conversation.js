@@ -2499,7 +2499,7 @@
               paddingHorizontal: e.componentDimensions.gutterHorizontal,
               paddingVertical: e.componentDimensions.gutterVertical,
             },
-            overflow: { flex: '1 1 200px', overflowY: 'auto' },
+            overflow: { flexGrow: 1, flexShrink: 1, flexBasis: '200px', overflowY: 'auto' },
           }
         }),
         Hr = Cr(Rr),

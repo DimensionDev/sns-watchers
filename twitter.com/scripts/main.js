@@ -3796,7 +3796,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '0Mjh': function (e, t) {
         e.exports = {
-          queryId: 'F-xBp_9FyNegpHt9ZAPtDQ',
+          queryId: 'KScjz7XUZtQkMziCoA2vnA',
           operationName: 'CommunityModeratorsTimeline',
           operationType: 'query',
           metadata: {
@@ -6561,6 +6561,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             lightPrimaryWithOpacity: r.a.color.baseColor.blue300,
             primary0: r.a.color.baseColor.blue0,
             primary50: r.a.color.baseColor.blue50,
+            primary900: r.a.color.baseColor.blue900,
             link: '#1B95E0',
             unreadCellBackground: r.a.color.baseColor.blue0,
             gray1100: r.a.color.baseColor.gray1100,
@@ -6584,7 +6585,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           },
           l = function (e) {
             return {
-              buttonDestructionOutlinedBorder: r.a.color.baseColor.magenta600,
+              buttonDestructionOutlinedBorder: r.a.color.baseColor.red100,
               buttonLightText: e !== i.b.light ? r.a.color.baseColor.gray1100 : a,
             }
           },
@@ -6622,42 +6623,53 @@ window.__SCRIPTS_LOADED__.i18n &&
           blue500: 'blue500',
           blue600: 'blue600',
           blue700: 'blue700',
-          gray1100: 'gray1100',
+          blue900: 'blue900',
           gray700: 'gray700',
+          gray900: 'gray900',
+          gray1100: 'gray1100',
           green300: 'green300',
           green500: 'green500',
           green600: 'green600',
           green700: 'green700',
+          green900: 'green900',
           link: 'link',
           magenta300: 'magenta300',
           magenta500: 'magenta500',
           magenta600: 'magenta600',
           magenta700: 'magenta700',
+          magenta900: 'magenta900',
           orange300: 'orange300',
           orange500: 'orange500',
           orange600: 'orange600',
           orange700: 'orange700',
+          orange900: 'orange900',
           plum300: 'plum300',
           plum500: 'plum500',
           plum600: 'plum600',
           plum700: 'plum700',
+          plum900: 'plum900',
           purple300: 'purple300',
           purple600: 'purple600',
           purple700: 'purple700',
+          purple900: 'purple900',
           primary: 'primary',
+          primary900: 'primary900',
           primaryOnWhite: 'primaryOnWhite',
           red300: 'red300',
           red500: 'red500',
           red600: 'red600',
           red700: 'red700',
+          red900: 'red900',
           teal300: 'teal300',
           teal600: 'teal600',
           teal700: 'teal700',
+          teal900: 'teal900',
           white: 'white',
           whiteOnColor: 'whiteOnColor',
           yellow200: 'yellow200',
           yellow600: 'yellow600',
           yellow700: 'yellow700',
+          yellow900: 'yellow900',
           buttonBlack: 'buttonBlack',
           buttonWhite: 'buttonWhite',
           buttonAlwaysBlack: 'buttonAlwaysBlack',
@@ -7488,6 +7500,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             responsive_web_birdwatch_contribution_enabled: !0,
             responsive_web_birdwatch_hcomp_user: !0,
             responsive_web_birdwatch_history_enabled: !0,
+            responsive_web_birdwatch_impressions_enabled: !0,
             responsive_web_birdwatch_note_awards_enabled: !0,
             responsive_web_birdwatch_note_writing_enabled: !0,
             responsive_web_birdwatch_pivots_enabled: !0,
@@ -7692,6 +7705,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             scribe_web_nav_sample_size: !0,
             sensitive_tweet_warnings_enabled: !0,
             settings_revamp_search_bar_enabled: !0,
+            social_context_and_topic_context_refresh_alignment_enabled: !0,
             stateful_login_enabled: !0,
             subscriptions_blue_premium_labeling_enabled: !0,
             subscriptions_enabled: !0,
@@ -7737,7 +7751,6 @@ window.__SCRIPTS_LOADED__.i18n &&
             tweet_limited_actions_config_non_compliant: !0,
             tweet_with_visibility_results_prefer_gql_soft_interventions_enabled: !0,
             tweet_with_visibility_results_prefer_gql_tombstones_enabled: !0,
-            unified_cards_multi_destination_carousels_convert_to_single_card: !0,
             user_display_name_max_limit: !0,
             voice_consumption_enabled: !0,
             voice_rooms_card_version: !0,
@@ -9361,7 +9374,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '3WSQ': function (e, t) {
         e.exports = {
-          queryId: 'D7oyL0uWHoNFKxQZlCFOIQ',
+          queryId: 'CtNOw90oHm3SE5Hac_xXEg',
           operationName: 'ListsDiscovery',
           operationType: 'query',
           metadata: {
@@ -9457,7 +9470,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '3hxR': function (e, t) {
         e.exports = {
-          queryId: 'g0lpXt8f6e34e-WWW3-BLA',
+          queryId: 'tlk_HXZr7Lhv3hI7e9dV8g',
           operationName: 'HomeTimeline',
           operationType: 'query',
           metadata: {
@@ -10049,7 +10062,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '45/a': function (e, t) {
         e.exports = {
-          queryId: '22d8Op6OHgCm7h7o6I1V1w',
+          queryId: 'tBp6RFlGPtUWW48wGTHUWA',
           operationName: 'CommunityModerationTweetCasesSlice',
           operationType: 'query',
           metadata: {
@@ -11985,7 +11998,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '711x': function (e, t) {
         e.exports = {
-          queryId: 'SSjXnkcOBiP_pc48tkIgqw',
+          queryId: 'kWwFvVDRTFYThdpPrF7U3Q',
           operationName: 'CommunityTweetsTimeline',
           operationType: 'query',
           metadata: {
@@ -12235,7 +12248,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '7i0Y': function (e, t) {
         e.exports = {
-          queryId: 'mu48Cg3fnLhYrHSa-Qr4lA',
+          queryId: 'SshTR8MmcNjFb2PbkMEWrA',
           operationName: 'ArticleTimeline',
           operationType: 'query',
           metadata: {
@@ -12271,7 +12284,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '7sDX': function (e, t) {
         e.exports = {
-          queryId: 'KjlpDW9lN86hu4AmfuI7gw',
+          queryId: 'qzQ0Q5sQHdmMeEZyLlZIbA',
           operationName: 'GenericTimelineById',
           operationType: 'query',
           metadata: {
@@ -12769,7 +12782,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '8T6S': function (e, t) {
         e.exports = {
-          queryId: '7HWkt-jdOHhFLnii05cWww',
+          queryId: 'LUVMd2FPBRyE_VWfdSRVDQ',
           operationName: 'CommunityMembersTimeline',
           operationType: 'query',
           metadata: {
@@ -13226,7 +13239,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '8igc': function (e, t) {
         e.exports = {
-          queryId: 'VcDUmpHNbOYiEoXcgq1pHA',
+          queryId: 'xGQ3yL1GmDwJD3ZjZ5Y8aA',
           operationName: 'ListOwnerships',
           operationType: 'query',
           metadata: {
@@ -28178,6 +28191,9 @@ window.__SCRIPTS_LOADED__.i18n &&
             get scribe() {
               return LC
             },
+            get relayEnvironment() {
+              return RC
+            },
             userPersistence: ZI,
             devicePersistence: JI,
             sentry:
@@ -30789,7 +30805,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       '9jzZ': function (e, t) {
         e.exports = {
-          queryId: 'c23JJ-QcYStnzuEIc8KIAw',
+          queryId: 'L2c6Zn6hWRRuO5NUDxkv1w',
           operationName: 'BirdwatchCreateNote',
           operationType: 'mutation',
           metadata: { featureSwitches: {} },
@@ -31598,7 +31614,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       AFas: function (e, t) {
         e.exports = {
-          queryId: 'yY2MtqAa9BwXJsvQT8AT4A',
+          queryId: '_PoQlyjlnqr2yWRFXq72Tg',
           operationName: 'BlockedAccountsImported',
           operationType: 'query',
           metadata: {
@@ -31626,7 +31642,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       AMCR: function (e, t) {
         e.exports = {
-          queryId: 'MTHRRqt2VqjF20MzEm-YhQ',
+          queryId: 'KxddEnvwz0ikC-_4Ml29tA',
           operationName: 'ListMembers',
           operationType: 'query',
           metadata: {
@@ -31681,7 +31697,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       AseN: function (e, t) {
         e.exports = {
-          queryId: 'GfEUht8uf6FSABvrHYGhDQ',
+          queryId: 'q9wCsiMcdtWfPTIbw6xR0g',
           operationName: 'TopicsPickerPageById',
           operationType: 'query',
           metadata: {
@@ -32753,7 +32769,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       BD2j: function (e, t) {
         e.exports = {
-          queryId: 'BCxG6VgquR6soAvtScpy6w',
+          queryId: 'gKMnKJX68mjgsC-KCeAouA',
           operationName: 'RitoFlaggedTweetsTimeline',
           operationType: 'query',
           metadata: {
@@ -33522,7 +33538,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       'C0/a': function (e, t) {
         e.exports = {
-          queryId: 'ssSatPoP1g2QpuEvoWLDgw',
+          queryId: 'yXFX5_AAkp5wV5JAQrxevQ',
           operationName: 'ViewingOtherUsersTopicsPage',
           operationType: 'query',
           metadata: {
@@ -36320,7 +36336,6 @@ window.__SCRIPTS_LOADED__.i18n &&
           l = [
             'created_at',
             'ext_has_birdwatch_notes',
-            'ext_unmention_info',
             'extended_entities',
             'in_reply_to_screen_name',
             'in_reply_to_user_id_str',
@@ -36402,47 +36417,47 @@ window.__SCRIPTS_LOADED__.i18n &&
             S,
             O,
             I,
-            C = Object(c.a)(e, t, n),
-            k = C.created_at,
-            A = C.ext_has_birdwatch_notes,
-            R = C.ext_unmention_info,
-            x = C.extended_entities,
-            L = C.in_reply_to_screen_name,
-            P = C.in_reply_to_user_id_str,
-            D = C.quoted_status_id_str,
-            j = C.retweeted_status_id_str,
-            M = C.user_id_str,
-            N = i()(C, l),
-            F = o()({}, N),
-            U = e.birdwatch_pivot,
-            B = e.entities,
-            H = e.ext,
-            z = e.full_text,
-            K = e.has_birdwatch_notes,
-            V = e.source,
-            q = e.unmentioned_user_ids,
+            C,
+            k,
+            A = Object(c.a)(e, t, n),
+            R = A.created_at,
+            x = A.ext_has_birdwatch_notes,
+            L = A.extended_entities,
+            P = A.in_reply_to_screen_name,
+            D = A.in_reply_to_user_id_str,
+            j = A.quoted_status_id_str,
+            M = A.retweeted_status_id_str,
+            N = A.user_id_str,
+            F = i()(A, l),
+            U = o()({}, F),
+            B = e.birdwatch_pivot,
+            H = e.entities,
+            z = e.ext,
+            K = e.full_text,
+            V = e.has_birdwatch_notes,
+            q = e.source,
             G = e.withheld_entities,
             W = e.withheld_text
           ;(W &&
-            ((F.text = W), (F.full_text = W), (F.entities = G || {}), (F.withheld_text = z), (F.withheld_entities = B)),
-          x && (F.extended_entities = o()(o()({}, x), {}, { media: m(null == x ? void 0 : x.media) })),
-          null != H && null !== (r = H.voiceInfo) && void 0 !== r && null !== (a = r.r) && void 0 !== a && a.ok) &&
-            ((F.voiceInfo =
-              null == H || null === (S = H.voiceInfo) || void 0 === S || null === (O = S.r) || void 0 === O
+            ((U.text = W), (U.full_text = W), (U.entities = G || {}), (U.withheld_text = K), (U.withheld_entities = H)),
+          L && (U.extended_entities = o()(o()({}, L), {}, { media: m(null == L ? void 0 : L.media) })),
+          null != z && null !== (r = z.voiceInfo) && void 0 !== r && null !== (a = r.r) && void 0 !== a && a.ok) &&
+            ((U.voiceInfo =
+              null == z || null === (I = z.voiceInfo) || void 0 === I || null === (C = I.r) || void 0 === C
                 ? void 0
-                : O.ok),
-            null == H || delete H.voiceInfo)
-          ;(F.text = F.full_text || F.text || ''),
-            (F.display_text_range = F.display_text_range || [0, F.text.length]),
-            F.entities &&
-              F.entities.media &&
-              (F.entities = o()(
-                o()({}, B),
+                : C.ok),
+            null == z || delete z.voiceInfo)
+          ;(U.text = U.full_text || U.text || ''),
+            (U.display_text_range = U.display_text_range || [0, U.text.length]),
+            U.entities &&
+              U.entities.media &&
+              (U.entities = o()(
+                o()({}, H),
                 {},
                 {
                   media:
-                    ((I = F.entities.media),
-                    I.reduce(function (e, t) {
+                    ((k = U.entities.media),
+                    k.reduce(function (e, t) {
                       var n = t.indices
                       return e.some(function (e) {
                         var r
@@ -36456,18 +36471,18 @@ window.__SCRIPTS_LOADED__.i18n &&
                     }, [])),
                 },
               )),
-            k && (F.created_at = Object(u.a)(k) || '')
-          var Y = String(V).match(/<a href="(.*?)" rel="nofollow">(.*?)<\/a>/)
-          Y && ((F.source_name = Y[2]), (F.source_url = Y[1])),
-            j && !F.retweeted_status && (F.retweeted_status = j),
-            D && !F.quoted_status && (F.quoted_status = D),
-            M && !F.user && (F.user = M),
-            (F.in_reply_to_user_id_str = P),
-            (F.in_reply_to_screen_name = L),
-            P && L && !F.in_reply_to_user && (F.in_reply_to_user = { id_str: P, screen_name: L })
+            R && (U.created_at = Object(u.a)(R) || '')
+          var Y = String(q).match(/<a href="(.*?)" rel="nofollow">(.*?)<\/a>/)
+          Y && ((U.source_name = Y[2]), (U.source_url = Y[1])),
+            M && !U.retweeted_status && (U.retweeted_status = M),
+            j && !U.quoted_status && (U.quoted_status = j),
+            N && !U.user && (U.user = N),
+            (U.in_reply_to_user_id_str = D),
+            (U.in_reply_to_screen_name = P),
+            D && P && !U.in_reply_to_user && (U.in_reply_to_user = { id_str: D, screen_name: P })
           var Q =
-              null == H ||
-              null === (d = H.signalsReactionMetadata) ||
+              null == z ||
+              null === (d = z.signalsReactionMetadata) ||
               void 0 === d ||
               null === (p = d.r) ||
               void 0 === p ||
@@ -36478,8 +36493,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                     return { type: e[0], count: e[1] }
                   }),
             J =
-              null == H ||
-              null === (h = H.signalsReactionPerspective) ||
+              null == z ||
+              null === (h = z.signalsReactionPerspective) ||
               void 0 === h ||
               null === (v = h.r) ||
               void 0 === v ||
@@ -36488,10 +36503,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                 ? void 0
                 : _.reactionType
           Q &&
-            'non_compliant' !== F.limited_actions &&
-            (null == H || delete H.signalsReactionMetadata, (F.reaction_count = Q)),
-            J && (null == H || delete H.signalsReactionPerspective, (F.reacted = J || null))
-          var X = null == H ? void 0 : H.replyvotingDownvotePerspective
+            'non_compliant' !== U.limited_actions &&
+            (null == z || delete z.signalsReactionMetadata, (U.reaction_count = Q)),
+            J && (null == z || delete z.signalsReactionPerspective, (U.reacted = J || null))
+          var X = null == z ? void 0 : z.replyvotingDownvotePerspective
           if (X) {
             var Z,
               $,
@@ -36500,37 +36515,40 @@ window.__SCRIPTS_LOADED__.i18n &&
                   ? void 0
                   : $.isDownvoted,
               )
-            null == H || delete H.replyvotingDownvotePerspective, (F.isDownvoted = ee)
+            null == z || delete z.replyvotingDownvotePerspective, (U.isDownvoted = ee)
           }
           var te =
-            null == H || null === (b = H.birdwatchPivot) || void 0 === b || null === (g = b.r) || void 0 === g
+            null == z || null === (b = z.birdwatchPivot) || void 0 === b || null === (g = b.r) || void 0 === g
               ? void 0
               : g.ok
-          ;(F.birdwatch_pivot = void 0 !== U ? U : te),
-            (F.has_birdwatch_notes = void 0 !== K ? K : A),
-            (F.unmentioned_user_ids = null != q ? q : null == R ? void 0 : R.unmentioned_users)
+          ;(U.birdwatch_pivot = void 0 !== B ? B : te), (U.has_birdwatch_notes = void 0 !== V ? V : x)
           var ne =
-            null == H || null === (y = H.superFollowMetadata) || void 0 === y || null === (E = y.r) || void 0 === E
+            null == z || null === (y = z.unmentionInfo) || void 0 === y || null === (E = y.r) || void 0 === E
               ? void 0
               : E.ok
-          ne &&
-            (null == H || delete H.superFollowMetadata,
-            ne.exclusiveTweetCreatorScreenName &&
-              (F.exclusivity_info = { screen_name: ne.exclusiveTweetCreatorScreenName }),
-            (F.has_super_follower = !(
-              !ne.superFollowsConversationUserScreenName && !ne.superFollowsQuotedUserScreenName
+          ne && (null == z || delete z.unmentionInfo, (U.unmentioned_user_ids = ne.unmentionedUsers))
+          var re =
+            null == z || null === (w = z.superFollowMetadata) || void 0 === w || null === (T = w.r) || void 0 === T
+              ? void 0
+              : T.ok
+          re &&
+            (null == z || delete z.superFollowMetadata,
+            re.exclusiveTweetCreatorScreenName &&
+              (U.exclusivity_info = { screen_name: re.exclusiveTweetCreatorScreenName }),
+            (U.has_super_follower = !(
+              !re.superFollowsConversationUserScreenName && !re.superFollowsQuotedUserScreenName
             )))
-          var re,
-            ie =
-              null == H || null === (w = H.enrichments) || void 0 === w || null === (T = w.r) || void 0 === T
+          var ie,
+            ae =
+              null == z || null === (S = z.enrichments) || void 0 === S || null === (O = S.r) || void 0 === O
                 ? void 0
-                : T.ok
+                : O.ok
           if (
-            ie &&
-            (null == H || delete H.enrichments,
-            null !== (re = ie.interactiveTextEnrichment) && void 0 !== re && re.interactiveTexts)
+            ae &&
+            (null == z || delete z.enrichments,
+            null !== (ie = ae.interactiveTextEnrichment) && void 0 !== ie && ie.interactiveTexts)
           ) {
-            var ae = ie.interactiveTextEnrichment.interactiveTexts
+            var oe = ae.interactiveTextEnrichment.interactiveTexts
               .filter(function (e) {
                 return void 0 !== e.id && e.target
               })
@@ -36559,9 +36577,9 @@ window.__SCRIPTS_LOADED__.i18n &&
                   target: i,
                 }
               })
-            F.enrichments = { interactive_text_enrichment: { interactive_texts: ae } }
+            U.enrichments = { interactive_text_enrichment: { interactive_texts: oe } }
           }
-          return Object(s.a)(H) && delete F.ext, void 0 === F.tombstoneInfo && delete F.tombstoneInfo, F
+          return Object(s.a)(z) && delete U.ext, void 0 === U.tombstoneInfo && delete U.tombstoneInfo, U
         }
       },
       DJv7: function (e, t) {
@@ -37246,7 +37264,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       ELjp: function (e, t) {
         e.exports = {
-          queryId: 'EumjmUVVeG4qTAm4eNDQHg',
+          queryId: 'uT_0uqTJ-tVC5mk0HGzigQ',
           operationName: 'ListsManagementPageTimeline',
           operationType: 'query',
           metadata: {
@@ -37330,7 +37348,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       ETkL: function (e, t) {
         e.exports = {
-          queryId: '20eDgCmZJ5o3GHjGeGMvRg',
+          queryId: 'YiTDc9QQXcEQ-9eXV4WqyQ',
           operationName: 'CommunitiesMembershipsTimeline',
           operationType: 'query',
           metadata: {
@@ -38853,16 +38871,21 @@ window.__SCRIPTS_LOADED__.i18n &&
             )
           },
           F = function (e) {
-            var t,
-              n = window.getSelection()
-            if (0 !== n.rangeCount) {
-              var r = n.getRangeAt(0).cloneContents()
-              r.querySelectorAll(M).forEach(function (e) {
-                return (e.textContent = String(e.getAttribute(j)))
-              }),
-                null === (t = e.clipboardData) || void 0 === t || t.setData('text/plain', r.textContent),
-                e.preventDefault(),
-                e.stopImmediatePropagation()
+            var t = window.getSelection()
+            if (0 !== t.rangeCount) {
+              for (var n, r = '', i = !1, a = 0; a < t.rangeCount; a++) {
+                var o = t.getRangeAt(a).cloneContents(),
+                  s = o.querySelectorAll(M)
+                s.length > 0 && (i = !0),
+                  s.forEach(function (e) {
+                    return (e.textContent = String(e.getAttribute(j)))
+                  }),
+                  (r += o.textContent)
+              }
+              if (i)
+                null === (n = e.clipboardData) || void 0 === n || n.setData('text/plain', r),
+                  e.preventDefault(),
+                  e.stopImmediatePropagation()
             }
           },
           U = function () {
@@ -39506,7 +39529,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       FzU8: function (e, t) {
         e.exports = {
-          queryId: 'rF03r75D4lWu5ydbEZqNxA',
+          queryId: 'mFJ-nonvJLlC4ML9BaGC1g',
           operationName: 'ListRankedTweetsTimeline',
           operationType: 'query',
           metadata: {
@@ -41365,7 +41388,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       HDd8: function (e, t) {
         e.exports = {
-          queryId: 'qqF5r1KbjJdQDT48kzwv7w',
+          queryId: 'jC1JBO24zj5gESqL-VAh2Q',
           operationName: 'CommunityDiscoveryTimeline',
           operationType: 'query',
           metadata: {
@@ -42598,7 +42621,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       JAMG: function (e, t) {
         e.exports = {
-          queryId: 'OC1-QXV8d7SQdD39pVCelQ',
+          queryId: 'QxkT7VaDXdX23vClDN0u9w',
           operationName: 'Likes',
           operationType: 'query',
           metadata: {
@@ -42612,7 +42635,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       JMnv: function (e, t) {
         e.exports = {
-          queryId: 'qaObtFDV9kr_J8yfMgQkeQ',
+          queryId: '4zW1arYfVxHyYc4b9gbNYA',
           operationName: 'TopicTimeline',
           operationType: 'query',
           metadata: {
@@ -43315,19 +43338,18 @@ window.__SCRIPTS_LOADED__.i18n &&
             return ''.concat(e, '_static')
           },
           P = function (e) {
+            e.cardContext
             var t,
               n,
               r,
               a,
               s,
               u,
-              d = e.cardContext,
-              _ = e.cardId,
-              E = e.cardType,
-              O = e.data,
-              x = d.shouldConvertMDCtoSingleCard,
-              P = R(O)
-            if (!P)
+              d = e.cardId,
+              _ = e.cardType,
+              E = e.data,
+              O = R(E)
+            if (!O)
               return {
                 state: b.c.DEFAULT,
                 layout:
@@ -43337,8 +43359,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                   c()(s, b.c.STATIC, { size: 'large' }),
                   s),
                 card: {
-                  id: _,
-                  card_name: E,
+                  id: d,
+                  card_name: _,
                   card_url: void 0,
                   components: ((u = {}), c()(u, b.c.DEFAULT, []), c()(u, b.c.STATIC, []), u),
                   components_data: {},
@@ -43348,36 +43370,29 @@ window.__SCRIPTS_LOADED__.i18n &&
                   ucLayout: void 0,
                 },
               }
-            var D = P
-            x &&
-              (D = (function (e) {
-                if (!e.layout) return e
-                var t = e.layout.data.slides[0]
-                return delete e.layout, (e.components = t), e
-              })(P))
-            var j,
+            var x,
+              P,
+              D,
+              j,
               M,
               N,
               F,
               U,
-              B,
-              H,
-              z,
-              K = D,
-              V = K.app_store_data,
-              q = K.component_objects,
-              G = K.components,
-              W = K.destination_objects,
-              Y = K.layout,
-              Q = K.media_entities,
-              J = K.users,
-              X =
-                ((j = W),
-                (M = V),
-                Object.keys(j).reduce(function (e, t) {
-                  var n = j[t]
+              B = O,
+              H = B.app_store_data,
+              z = B.component_objects,
+              K = B.components,
+              V = B.destination_objects,
+              q = B.layout,
+              G = B.media_entities,
+              W = B.users,
+              Y =
+                ((x = V),
+                (P = H),
+                Object.keys(x).reduce(function (e, t) {
+                  var n = x[t]
                   if ('app_store_with_docked_media' === n.type || 'app_store' === n.type) {
-                    var r = w(M[n.data.app_id])
+                    var r = w(P[n.data.app_id])
                     e[t] = {
                       type: 'browser',
                       data: {
@@ -43389,7 +43404,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   } else e[t] = p()(p()({}, n), {}, { data: p()(p()({}, n.data), {}, { url_data: p()({ vanity: f.a.getDefaultVanityUrl() }, n.data.url_data), scribe: 'open_link', promoted_log: v.a.UNIFIED_CARD_COMPONENT_URL_CLICK }) })
                   return e
                 }, {})),
-              Z = (function (e) {
+              Q = (function (e) {
                 var t = {},
                   n = {}
                 for (var r in e) {
@@ -43449,58 +43464,58 @@ window.__SCRIPTS_LOADED__.i18n &&
                   }
                 }
                 return { mediaEntities: t, photoEntitiesFromVideo: n }
-              })(Q),
-              $ = Z.mediaEntities,
-              ee = Z.photoEntitiesFromVideo,
-              te = null != Y && null !== (t = Y.data) && void 0 !== t && t.slides ? Object(m.a)(Y.data.slides) : G,
-              ne = {},
-              re = [],
-              ie = [],
-              ae = o()(te)
+              })(G),
+              J = Q.mediaEntities,
+              X = Q.photoEntitiesFromVideo,
+              Z = null != q && null !== (t = q.data) && void 0 !== t && t.slides ? Object(m.a)(q.data.slides) : K,
+              $ = {},
+              ee = [],
+              te = [],
+              ne = o()(Z)
             try {
-              for (ae.s(); !(U = ae.n()).done; ) {
-                var oe = U.value,
-                  se = q[oe]
-                if (se)
-                  switch (se.type) {
+              for (ne.s(); !(M = ne.n()).done; ) {
+                var re = M.value,
+                  ie = z[re]
+                if (ie)
+                  switch (ie.type) {
                     case 'media_with_details_horizontal':
-                      return A(se, X, E, _, O, $, Y)
+                      return A(ie, Y, _, d, E, J, q)
                     case 'details':
-                      ne[oe] =
-                        ((H = void 0),
-                        (z = void 0),
-                        (z = (B = se) ? B.data.destination : void 0),
-                        B && (H = p()({}, B.data.title)),
-                        { type: 'details', data: { title: H, footer: void 0, destination: z } })
+                      $[re] =
+                        ((F = void 0),
+                        (U = void 0),
+                        (U = (N = ie) ? N.data.destination : void 0),
+                        N && (F = p()({}, N.data.title)),
+                        { type: 'details', data: { title: F, footer: void 0, destination: U } })
                       break
                     case 'community_details':
-                      ne[oe] = S(se, J)
+                      $[re] = S(ie, W)
                       break
                     case 'twitter_list_details':
-                      ne[oe] = C(se, J)
+                      $[re] = C(ie, W)
                       break
                     case 'app_store_details':
-                      ne[oe] = T(se, V)
+                      $[re] = T(ie, H)
                       break
                     case 'button_group':
-                      ne[oe] = k(se, W)
+                      $[re] = k(ie, V)
                       break
                     case 'swipeable_media':
-                      ;(ne[oe] = se), (N = oe), (F = se)
+                      ;($[re] = ie), (D = re), (j = ie)
                       break
                     case 'media':
-                      ne[oe] = se
-                      var ce = $[se.data.id],
-                        ue = ce && 'uc_video' === ce.type,
-                        le = L(oe)
-                      if ((ue && (re.push(le), ie.push(oe)), ue)) {
-                        var de = ce ? ce.original_info.width / ce.original_info.height : null
-                        ne[le] = {
+                      $[re] = ie
+                      var ae = J[ie.data.id],
+                        oe = ae && 'uc_video' === ae.type,
+                        se = L(re)
+                      if ((oe && (ee.push(se), te.push(re)), oe)) {
+                        var ce = ae ? ae.original_info.width / ae.original_info.height : null
+                        $[se] = {
                           type: b.d.MEDIA,
                           data: {
-                            aspect_ratio: de || void 0,
-                            destination: se.data.destination || void 0,
-                            id: L(se.data.id),
+                            aspect_ratio: ce || void 0,
+                            destination: ie.data.destination || void 0,
+                            id: L(ie.data.id),
                             overlay: { type: b.h.PLAY },
                           },
                         }
@@ -43510,33 +43525,33 @@ window.__SCRIPTS_LOADED__.i18n &&
                       continue
                   }
               }
-            } catch (me) {
-              ae.e(me)
+            } catch (de) {
+              ne.e(de)
             } finally {
-              ae.f()
+              ne.f()
             }
-            var pe =
-              null === (n = F) || void 0 === n
+            var ue =
+              null === (n = j) || void 0 === n
                 ? void 0
                 : n.data.media_list.some(function (e) {
-                    return e.id && 'uc_video' === $[e.id].type
+                    return e.id && 'uc_video' === J[e.id].type
                   })
-            pe &&
-              F &&
-              (ne[b.b.SWIPEABLE_MEDIA_STATIC] = {
+            ue &&
+              j &&
+              ($[b.b.SWIPEABLE_MEDIA_STATIC] = {
                 type: b.d.SWIPEABLE_MEDIA,
                 data: {
-                  media_list: F.data.media_list.map(function (e) {
+                  media_list: j.data.media_list.map(function (e) {
                     return { destination: e.destination, id: L(e.id), overlay: { type: b.h.PLAY } }
                   }),
                 },
               })
-            var fe = [].concat(
-              i()(re.length ? re : []),
-              i()(pe ? [b.b.SWIPEABLE_MEDIA_STATIC] : []),
+            var le = [].concat(
+              i()(ee.length ? ee : []),
+              i()(ue ? [b.b.SWIPEABLE_MEDIA_STATIC] : []),
               i()(
-                te.filter(function (e) {
-                  return !(ie.includes(e) || (pe && e === N))
+                Z.filter(function (e) {
+                  return !(te.includes(e) || (ue && e === D))
                 }),
               ),
             )
@@ -43549,16 +43564,16 @@ window.__SCRIPTS_LOADED__.i18n &&
                 c()(r, b.c.STATIC, { size: 'large' }),
                 r),
               card: {
-                card_name: E,
-                card_url: Object(h.o)(O, 'string_value', 'card_url'),
-                displayOptions: { shouldAutoAdvance: I(D) },
+                card_name: _,
+                card_url: Object(h.o)(E, 'string_value', 'card_url'),
+                displayOptions: { shouldAutoAdvance: I(B) },
                 on_visibility: { scribe: 'show' },
-                id: _,
-                components: ((a = {}), c()(a, b.c.DEFAULT, te), c()(a, b.c.STATIC, fe), a),
-                destinations: X,
-                media_entities: p()(p()({}, $), ee),
-                components_data: ne,
-                ucLayout: Y,
+                id: d,
+                components: ((a = {}), c()(a, b.c.DEFAULT, Z), c()(a, b.c.STATIC, le), a),
+                destinations: Y,
+                media_entities: p()(p()({}, J), X),
+                components_data: $,
+                ucLayout: q,
               },
             }
           }
@@ -43952,7 +43967,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       KlJi: function (e, t) {
         e.exports = {
-          queryId: 'e2aTIkQ04X6LN5VpzfiWVQ',
+          queryId: '48WsOuE7UuashccevMJ5hw',
           operationName: 'CommunitiesMainPageTimeline',
           operationType: 'query',
           metadata: {
@@ -46769,7 +46784,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       NOIf: function (e, t) {
         e.exports = {
-          queryId: 'Cw1-blGE1bVaONZ3EFYmUw',
+          queryId: 'cgHXQ5tSx5PxIeVbGrL-aA',
           operationName: 'ListSubscribers',
           operationType: 'query',
           metadata: {
@@ -47774,7 +47789,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       O6fG: function (e, t) {
         e.exports = {
-          queryId: 'bDyRATRYVtxjFGOm-qnNBQ',
+          queryId: 'VxazCfRZhDV07GqMRiq-9g',
           operationName: 'CommunityTweetsRankedTimeline',
           operationType: 'query',
           metadata: {
@@ -47960,7 +47975,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       'OY+N': function (e, t) {
         e.exports = {
-          queryId: 'x3gPPlGDQcqAnD4BCHSLlA',
+          queryId: '1LDO0lzuwKKM2pB5R6W9gA',
           operationName: 'BirdwatchFetchNotes',
           operationType: 'query',
           metadata: { featureSwitches: {} },
@@ -48297,7 +48312,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       OpJD: function (e, t) {
         e.exports = {
-          queryId: 'r1Df6P15AwN6_8yXUIkmig',
+          queryId: 'f0X_2sMt8W0OltZD30worQ',
           operationName: 'ArticleTweetsTimeline',
           operationType: 'query',
           metadata: {
@@ -49171,7 +49186,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       PQjc: function (e, t) {
         e.exports = {
-          queryId: 'Px83xHNlmEIdKTAHEaHAyQ',
+          queryId: '2fhuAahRe1jCpBtOAjY2fQ',
           operationName: 'BookmarkFolderTimeline',
           operationType: 'query',
           metadata: {
@@ -50149,7 +50164,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       Q6XB: function (e, t) {
         e.exports = {
-          queryId: 'JcZcq5xBrxFlc_bIso0v0g',
+          queryId: 'PzdyGkGs-qgdiuj0lCHO7Q',
           operationName: 'UserTweetsAndReplies',
           operationType: 'query',
           metadata: {
@@ -51083,7 +51098,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       QK8Q: function (e, t) {
         e.exports = {
-          queryId: '9Ch-Xvk78Oioa-La1gW25A',
+          queryId: 'Lu1NrNw85tgj2FTdTATuzg',
           operationName: 'Followers',
           operationType: 'query',
           metadata: {
@@ -51319,17 +51334,14 @@ window.__SCRIPTS_LOADED__.i18n &&
           se = ['promotedContent'],
           ce = Object.freeze({ SINGLE_TWEET: 'off', FIRST_TWEET: 'first', SUBSEQUENT_TWEET: 'subsequent' }),
           ue = function (e) {
-            return o()(
-              {
-                cards_platform: c.c,
-                include_cards: 1,
-                include_ext_alt_text: !0,
-                include_quote_count: !0,
-                include_reply_count: 1,
-                tweet_mode: 'extended',
-              },
-              e.isTrue('dont_mention_me_view_api_enabled') && { include_ext_unmention_info: 1 },
-            )
+            return {
+              cards_platform: c.c,
+              include_cards: 1,
+              include_ext_alt_text: !0,
+              include_quote_count: !0,
+              include_reply_count: 1,
+              tweet_mode: 'extended',
+            }
           },
           le = function (e) {
             return o()(
@@ -52418,7 +52430,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       RgYM: function (e, t) {
         e.exports = {
-          queryId: 'LQgGEfm4d2pShguY3gzA-g',
+          queryId: 'Mod3wIEL-nORtnso3HvRtA',
           operationName: 'ListMemberships',
           operationType: 'query',
           metadata: {
@@ -55298,7 +55310,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       THIS: function (e, t) {
         e.exports = {
-          queryId: 'Xh4eEWou3yk_3wwneSvbrQ',
+          queryId: 'N1ArSVEDLApeGStTbR5oQw',
           operationName: 'RitoFlaggedAccountsTimeline',
           operationType: 'query',
           metadata: {
@@ -57217,6 +57229,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   e.isTrue('interactive_text_enabled') && 'enrichments',
                   (e.isTrue('super_follow_tweet_api_enabled') || e.isTrue('super_follow_user_api_enabled')) &&
                     'superFollowMetadata',
+                  e.isTrue('dont_mention_me_view_api_enabled') && 'unmentionInfo',
                 ]),
               ).join(','),
             }
@@ -58082,7 +58095,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       UuZj: function (e, t) {
         e.exports = {
-          queryId: 'mR_WE7EVgq4mhIhMVjpKQA',
+          queryId: 'JoImRRFn60tpHa6FK8yNyg',
           operationName: 'Bookmarks',
           operationType: 'query',
           metadata: {
@@ -60237,7 +60250,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       WusG: function (e, t) {
         e.exports = {
-          queryId: 'f0KrgDkOvo2j1ChXUL4AQQ',
+          queryId: 'gFHJk2TJZ0B-fBRfZKy9nA',
           operationName: 'BirdwatchFetchContributorNotesSlice',
           operationType: 'query',
           metadata: {
@@ -63392,7 +63405,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       Y9iu: function (e, t) {
         e.exports = {
-          queryId: 'O7n0qi7Fk7I7KJft6Qp0qQ',
+          queryId: 'ogi_DcyNpq3VHrlInzlDXA',
           operationName: 'HomeLatestTimeline',
           operationType: 'query',
           metadata: {
@@ -64881,7 +64894,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       'ZOA/': function (e, t) {
         e.exports = {
-          queryId: '66M8O8_q7spqdVT2QBVnig',
+          queryId: 'HS-MPqLyrhn0QFiItv8pkA',
           operationName: 'Retweeters',
           operationType: 'query',
           metadata: {
@@ -66169,7 +66182,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       a4I6: function (e, t) {
         e.exports = {
-          queryId: 'vzR4L_cwe6KVwdLFxuIzXQ',
+          queryId: 'OCBAgHInL2LkyBLI2Vq6gg',
           operationName: 'Favoriters',
           operationType: 'query',
           metadata: {
@@ -66183,7 +66196,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       'a5E+': function (e, t) {
         e.exports = {
-          queryId: 'ZjYHL0_yTq3lv11GzWXKLQ',
+          queryId: 'Lc9Bb6Ms11AsiiY_uaPbcQ',
           operationName: 'TopicsManagementPage',
           operationType: 'query',
           metadata: {
@@ -67486,14 +67499,6 @@ window.__SCRIPTS_LOADED__.i18n &&
                 ),
                 w()(
                   v()(s),
-                  '_shouldConvertMDCtoSingleCard',
-                  !!s._isMultiDestinationCarouselCard() &&
-                    s.context.featureSwitches.isTrue(
-                      'unified_cards_multi_destination_carousels_convert_to_single_card',
-                    ),
-                ),
-                w()(
-                  v()(s),
                   '_highlightDetailsExperimentBucket',
                   s._shouldUseHighlightDetails()
                     ? s.context.featureSwitches.getStringValue('responsive_web_highlight_details_experiment_bucket')
@@ -67966,7 +67971,6 @@ window.__SCRIPTS_LOADED__.i18n &&
                           promotedContent: l,
                           renderVideoPlayer: e._renderVideoPlayer,
                           requestCardUpdate: e._handleRequestCardUpdate(),
-                          shouldConvertMDCtoSingleCard: e._shouldConvertMDCtoSingleCard,
                           shouldUseCarouselV2: e.context.featureSwitches.isTrue(
                             'responsive_web_carousel_v2_cards_enabled',
                           ),
@@ -68176,7 +68180,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       'af/2': function (e, t) {
         e.exports = {
-          queryId: 'e23E8AnAqLzgwygJfC0ghQ',
+          queryId: 'y3KhIGmsE79hC1zGtPdAOQ',
           operationName: 'UserTweets',
           operationType: 'query',
           metadata: {
@@ -68333,7 +68337,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       amUk: function (e, t) {
         e.exports = {
-          queryId: 'QZy4hWkB-WDX5i52WAIUDg',
+          queryId: 'u3lshR1j7jRCr2KGoLUsIg',
           operationName: 'BlockedAccountsAll',
           operationType: 'query',
           metadata: {
@@ -71242,6 +71246,41 @@ window.__SCRIPTS_LOADED__.i18n &&
                           }
                         )
                       })({ component: e, slideIndex: n, componentIndex: t })
+                      break
+                    case 'CardTwitterListDetailsComponent':
+                      r = (function (e) {
+                        var t,
+                          n = e.component,
+                          r = e.componentIndex,
+                          i = e.slideIndex,
+                          a = Ct('twitter_list_details', i, r),
+                          o = It(i, r, 0),
+                          s = n.destination_obj ? Lt(n.destination_obj) : {},
+                          c = b()({}, o, s),
+                          u = {},
+                          l = null === (t = n.user_results) || void 0 === t ? void 0 : t.result
+                        l &&
+                          l.legacy &&
+                          (u = {
+                            id_str: l.id,
+                            profile_image_url_https: l.legacy.profile_image_url_https || '',
+                            protected: !!l.legacy.protected,
+                            verified: !!l.legacy.verified,
+                            name: l.legacy.name || '',
+                            screen_name: l.legacy.screen_name || '',
+                          })
+                        var d = {
+                          type: P.d.TWITTER_LIST_DETAILS,
+                          data: { title: n.name, destination: o, memberCount: n.member_count, attribution: u },
+                        }
+                        return {
+                          componentKeys: [a],
+                          staticComponentKeys: [a],
+                          destinationObjects: c,
+                          mediaEntities: {},
+                          componentsData: b()({}, a, d),
+                        }
+                      })({ component: e, slideIndex: n, componentIndex: t })
                   }
                   return (
                     (a.componentsData = o()(o()({}, a.componentsData), r.componentsData)),
@@ -71323,7 +71362,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       ucLayout: void 0,
                     },
                   }
-                })({ component: l, cardId: i.id, cardType: i.card_type })
+                })({ component: l, cardId: i.card_uri || '', cardType: i.card_type })
               s({ components: u.components, slideIndex: 0 })
             }
             return {
@@ -71339,7 +71378,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 card_url: '',
                 displayOptions: { shouldAutoAdvance: !1 },
                 on_visibility: { scribe: 'show' },
-                id: i.id,
+                id: i.card_uri || '',
                 components:
                   ((n = {}), b()(n, P.c.DEFAULT, a.componentKeys), b()(n, P.c.STATIC, a.staticComponentKeys), n),
                 destinations: a.destinationObjects,
@@ -72090,28 +72129,16 @@ window.__SCRIPTS_LOADED__.i18n &&
                         r = e.cardContext,
                         i = e.cardState,
                         a = e.initialCarouselIndex,
-                        s = e.shouldConvertMDCtoSingleCard,
-                        c = e.unifiedCard,
-                        u = (this.context || {}).shouldRemoveLegacyCardConverters
-                      t = c
-                        ? jt({
-                            card: c,
-                            cardContext: o()(o()({}, r), {}, { shouldConvertMDCtoSingleCard: s }),
-                            users: {},
-                          })
+                        s = e.unifiedCard,
+                        c = (this.context || {}).shouldRemoveLegacyCardConverters
+                      t = s
+                        ? jt({ card: s, cardContext: r, users: {} })
                         : Object(wt.a)(
                             n,
-                            o()(
-                              o()({}, r),
-                              {},
-                              {
-                                shouldConvertMDCtoSingleCard: s,
-                                shouldRemoveLegacyCardConverters: null == u ? void 0 : u(),
-                              },
-                            ),
+                            o()(o()({}, r), {}, { shouldRemoveLegacyCardConverters: null == c ? void 0 : c() }),
                           )
-                      var l = i || (!!this.state && this.state.state) || (t && t.state) || void 0
-                      return t && l ? o()(o()({}, t), {}, { state: l, carouselIndex: a }) : null
+                      var u = i || (!!this.state && this.state.state) || (t && t.state) || void 0
+                      return t && u ? o()(o()({}, t), {}, { state: u, carouselIndex: a }) : null
                     },
                   },
                 ],
@@ -72722,7 +72749,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       cD5x: function (e, t) {
         e.exports = {
-          queryId: 'Ru4yf-e4CEHCWQkrcryLMA',
+          queryId: '7dGwNLRyA0OxK_8bbuTJ8A',
           operationName: 'ListEditRecommendedUsers',
           operationType: 'query',
           metadata: {
@@ -74589,7 +74616,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       dFJg: function (e, t) {
         e.exports = {
-          queryId: 'rMTKnUktuK9QApTxtyM0og',
+          queryId: 'm_XCPEXa0Y4HRS2M5T2uWw',
           operationName: 'TopicLandingPage',
           operationType: 'query',
           metadata: {
@@ -76971,7 +76998,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       ebf4: function (e, t) {
         e.exports = {
-          queryId: 'c7HhoNbqM9ZxTLpH-dFQ1A',
+          queryId: '41zPcz2COURB369TEqkuCQ',
           operationName: 'FollowersYouKnow',
           operationType: 'query',
           metadata: {
@@ -77647,7 +77674,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       f8pP: function (e, t) {
         e.exports = {
-          queryId: 'ZrBBYuciJ1J6Dkg8C9oHeA',
+          queryId: 's1kQbXtZdOOxop-1JPqxag',
           operationName: 'TweetResultByRestId',
           operationType: 'query',
           metadata: {
@@ -77787,7 +77814,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       'fT+L': function (e, t) {
         e.exports = {
-          queryId: 'Op-TslebuLroekRhXOtvGA',
+          queryId: 'RQOAqBrDA0tkPTrfN3L6xA',
           operationName: 'AudioSpaceById',
           operationType: 'query',
           metadata: {
@@ -79527,7 +79554,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       hcTZ: function (e, t) {
         e.exports = {
-          queryId: 'hWrVamn8-vnsjd2a0p-sfA',
+          queryId: 'BH8L7hFiMlrrvUQxlHf4cg',
           operationName: 'TopicToFollowSidebar',
           operationType: 'query',
           metadata: {
@@ -81557,7 +81584,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       jUmP: function (e, t) {
         e.exports = {
-          queryId: 'YwSIWDQv3BaGZky0-7v9vQ',
+          queryId: 'skVraJ5BAoNoqpLC5XNX2A',
           operationName: 'MutedAccounts',
           operationType: 'query',
           metadata: {
@@ -83079,7 +83106,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       kE67: function (e, t) {
         e.exports = {
-          queryId: 'MjW64HvsLgs3NjiOTUrz1w',
+          queryId: 'Mt6lc-b_gN6XRcAKFGt5Qw',
           operationName: 'NoteworthyAccountsPage',
           operationType: 'query',
           metadata: {
@@ -83602,7 +83629,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       kzpb: function (e, t) {
         e.exports = {
-          queryId: 'n1khoAW_g0K2t3yYj9xR_w',
+          queryId: '0kI29QQDz6KjAD5w6w_BSA',
           operationName: 'SuperFollowers',
           operationType: 'query',
           metadata: {
@@ -83763,7 +83790,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       lMsn: function (e, t) {
         e.exports = {
-          queryId: 'YqEXGonugJecD0DUextM3A',
+          queryId: '58z7C7QG6ameAlaVt1VBiw',
           operationName: 'ForYouExplore',
           operationType: 'query',
           metadata: {
@@ -84741,7 +84768,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       lSTV: function (e, t) {
         e.exports = {
-          queryId: 'WSjrepF8HvynG26_v-mypg',
+          queryId: 'ZRprxoSeUeRc9BEqX8LnmA',
           operationName: 'BirdwatchFetchOneNote',
           operationType: 'query',
           metadata: { featureSwitches: {} },
@@ -85224,7 +85251,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       mGYQ: function (e, t) {
         e.exports = {
-          queryId: 'pg4tphrteR0pY8JaC1YwCw',
+          queryId: 'FB6JU44KoSMiqOkB1sCckg',
           operationName: 'CommunityAboutTimeline',
           operationType: 'query',
           metadata: {
@@ -85254,7 +85281,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       mRBj: function (e, t) {
         e.exports = {
-          queryId: 'erwyaobYxeptx66P4KwIyg',
+          queryId: 'dn0mbDdMKHCh-1IOFC9HYg',
           operationName: 'CombinedLists',
           operationType: 'query',
           metadata: {
@@ -86582,6 +86609,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 shouldUseSmallFontForHashtagHighlight: !1,
                 shouldRemoveLegacyCardConverters: !1,
                 tweetRendersPromotedContentBadgeBelowHeader: !1,
+                socialContextRefreshEnabled: !1,
               },
               s,
             ),
@@ -87470,7 +87498,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       oG0O: function (e, t) {
         e.exports = {
-          queryId: 'iuW1JYpyY7l0PRQ8EwN7aA',
+          queryId: 't6pLzfwMKHcOmyvvLFh5nw',
           operationName: 'RitoActionedTweetsTimeline',
           operationType: 'query',
           metadata: {
@@ -88311,7 +88339,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       pFPO: function (e, t) {
         e.exports = {
-          queryId: 'kH1ddOBJNB5a8p799E2Mlg',
+          queryId: 'jXYMT4bY4em12bbmSnSZkQ',
           operationName: 'UserMedia',
           operationType: 'query',
           metadata: {
@@ -88325,7 +88353,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       pG5d: function (e, t) {
         e.exports = {
-          queryId: 'q_dLuAAiAXkizzLt9dfRxQ',
+          queryId: '_M6gOxXnd9Aqd4NuMItPQg',
           operationName: 'BirdwatchFetchGlobalTimeline',
           operationType: 'query',
           metadata: {
@@ -88371,7 +88399,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       pKwR: function (e, t) {
         e.exports = {
-          queryId: '7GlyT5P-cHZXn5gZEwP46A',
+          queryId: 'GMxh5F0Tn3AYSCdpRgI_Ew',
           operationName: 'UserSuperFollowTweets',
           operationType: 'query',
           metadata: {
@@ -90909,7 +90937,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       qpTX: function (e, t) {
         e.exports = {
-          queryId: 'oSFTDEqGQQ1P5bTZ0OawmQ',
+          queryId: 'UoGtTjZf4kIgz9ZtwaD2aw',
           operationName: 'CreateTweet',
           operationType: 'mutation',
           metadata: {
@@ -91751,7 +91779,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       r5Aa: function (e, t) {
         e.exports = {
-          queryId: 'fc-ZQwZyn0h_g3W5l2llew',
+          queryId: 'vjT0VtLUAmRRs2rbrAdjiw',
           operationName: 'ModeratedTimeline',
           operationType: 'query',
           metadata: {
@@ -91766,16 +91794,16 @@ window.__SCRIPTS_LOADED__.i18n &&
       r7ya: function (e, t, n) {
         'use strict'
         n.d(t, 'c', function () {
-          return b
+          return g
         }),
           n.d(t, 'a', function () {
-            return y
+            return E
           }),
           n.d(t, 'b', function () {
-            return w
+            return T
           }),
           n.d(t, 'd', function () {
-            return S
+            return O
           })
         var r = n('yiKp'),
           i = n.n(r),
@@ -91800,20 +91828,23 @@ window.__SCRIPTS_LOADED__.i18n &&
             return Object(a.a)(Object(c.d)(t)[e], 0.58)
           },
           m = function (e, t) {
-            return Object(c.d)(t)[''.concat(e.slice(0, -1))]
+            return Object(c.d)(t)[''.concat(e.slice(0, -3), '900')]
           },
           h = function (e, t) {
+            return Object(c.d)(t)[''.concat(e.slice(0, -1))]
+          },
+          v = function (e, t) {
             return Object(c.d)(t)[''.concat(e.slice(0, -3), '0')]
           },
-          v = function (e, t, n) {
+          _ = function (e, t, n) {
             return u(t, n)[e]
           },
-          _ = function (e, t, n) {
+          b = function (e, t, n) {
             var r = u(t, n),
               i = t === s.b.light ? 0.1 : t === s.b.darker ? 0.14 : 0.12
             return Object(a.a)(r[e], i)
           },
-          b = Object.freeze(
+          g = Object.freeze(
             i()(
               i()({}, u(s.b.light)),
               {},
@@ -91841,15 +91872,15 @@ window.__SCRIPTS_LOADED__.i18n &&
                 buttonBlack: o.a.color.baseColor.gray1100,
                 buttonWhite: c.c,
                 buttonOutlinedBorder: o.a.color.baseColor.gray200,
-                buttonDestructionOutlinedBorder: o.a.color.baseColor.magenta50,
+                buttonDestructionOutlinedBorder: o.a.color.baseColor.red100,
                 appBarBackground: c.h.white(0.85),
                 appBarFirefoxBackground: c.h.white(0.97),
               },
             ),
           ),
-          g = Object.freeze(
+          y = Object.freeze(
             i()(
-              i()(i()({}, b), u(s.b.light, !0)),
+              i()(i()({}, g), u(s.b.light, !0)),
               {},
               {
                 text: '#141D26',
@@ -91869,7 +91900,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             ),
           ),
-          y = Object.freeze(
+          E = Object.freeze(
             i()(
               i()({}, u(s.b.dark)),
               {},
@@ -91909,9 +91940,9 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             ),
           ),
-          E = Object.freeze(
+          w = Object.freeze(
             i()(
-              i()(i()({}, y), u(s.b.dark, !0)),
+              i()(i()({}, E), u(s.b.dark, !0)),
               {},
               {
                 gray700: '#B8CBD9',
@@ -91929,7 +91960,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             ),
           ),
-          w = Object.freeze(
+          T = Object.freeze(
             i()(
               i()({}, u(s.b.darker)),
               {},
@@ -91970,9 +92001,9 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             ),
           ),
-          T = Object.freeze(
+          S = Object.freeze(
             i()(
-              i()(i()({}, w), u(s.b.darker, !0)),
+              i()(i()({}, T), u(s.b.darker, !0)),
               {},
               {
                 gray700: '#929ca6',
@@ -91996,22 +92027,23 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             ),
           ),
-          S = function (e, t, n) {
+          O = function (e, t, n) {
             var r
             return (
-              (r = t === s.b.light ? (n ? g : b) : t === s.b.dark ? (n ? E : y) : n ? T : w),
+              (r = t === s.b.light ? (n ? y : g) : t === s.b.dark ? (n ? w : E) : n ? S : T),
               i()(
                 i()({}, r),
                 {},
                 {
                   primary: l(e, t, n),
                   primaryOnWhite: d(e, t, n),
-                  primary0: h(e, t),
-                  primary50: m(e, t),
+                  primary0: v(e, t),
+                  primary50: h(e, t),
+                  primary900: m(e, t),
                   lightPrimary: p(e, t, n),
                   lightPrimaryWithOpacity: f(e, t),
-                  link: v(e, t, n),
-                  unreadCellBackground: _(e, t, n),
+                  link: _(e, t, n),
+                  unreadCellBackground: b(e, t, n),
                 },
               )
             )
@@ -92019,7 +92051,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       rEPq: function (e, t) {
         e.exports = {
-          queryId: 'VtuPCIuf-vd9PIbs9xvMTQ',
+          queryId: 'YT78t612RZm-TZI5WN_SPg',
           operationName: 'UrtFixtures',
           operationType: 'query',
           metadata: {
@@ -93823,7 +93855,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       t8Fd: function (e, t) {
         e.exports = {
-          queryId: '1bxsEUN3N5VrkS9dTpzSpA',
+          queryId: 'AdErE7eHG6pOmrg8ZZ8JEQ',
           operationName: 'ListLatestTweetsTimeline',
           operationType: 'query',
           metadata: {
@@ -96997,7 +97029,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       vLWf: function (e, t) {
         e.exports = {
-          queryId: 'NNLzjT_qjnEnDwWkXGzVLA',
+          queryId: 'GTWAtRsJLL1ovEdhIytCeg',
           operationName: 'TopicsPickerPage',
           operationType: 'query',
           metadata: {
@@ -97011,7 +97043,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       vSDp: function (e, t) {
         e.exports = {
-          queryId: 'wn5-ffzDuQIjTxIMkYnKcg',
+          queryId: 'ZikJhYu5NH3U_p_v9GpBkw',
           operationName: 'ListCreationRecommendedUsers',
           operationType: 'query',
           metadata: {
@@ -102631,7 +102663,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       xdo5: function (e, t) {
         e.exports = {
-          queryId: 'b1Qn-2u5gaU3kVjGmS4JPw',
+          queryId: 'rmZGQ1NwDXKVmRB1XBfm2w',
           operationName: 'Following',
           operationType: 'query',
           metadata: {
@@ -102667,7 +102699,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       xlqx: function (e, t) {
         e.exports = {
-          queryId: 'IGmyBRf5m290OCgsqQi0zg',
+          queryId: 'zIFhnZSTNd9zWxgC2XGSYA',
           operationName: 'BlockedAccountsAutoBlock',
           operationType: 'query',
           metadata: {
@@ -102772,7 +102804,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       y1NS: function (e, t) {
         e.exports = {
-          queryId: '6hpKAmPvcWLYth02qI0HFA',
+          queryId: 'Z525g3wXhSar0k3XDoOA0Q',
           operationName: 'DmMutedTimeline',
           operationType: 'query',
           metadata: {
@@ -103557,7 +103589,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       ydqi: function (e, t) {
         e.exports = {
-          queryId: 'ePDgA3hzOjUOfH2TtKM8MA',
+          queryId: 'Aoy5rLCeCwmV9Xw0huS6IQ',
           operationName: 'TweetDetail',
           operationType: 'query',
           metadata: {

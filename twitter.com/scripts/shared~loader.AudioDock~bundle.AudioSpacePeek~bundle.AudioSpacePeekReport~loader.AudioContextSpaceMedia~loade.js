@@ -6497,7 +6497,7 @@
       function Ft(e) {
         var t = e.item
         return h.a.createElement(Ut, {
-          hasVerifiedAvatar: t.user.has_nft_avatar,
+          hasNftAvatar: t.user.has_nft_avatar,
           isVerified: t.user.is_verified,
           key: t.key,
           kind: t.kind,

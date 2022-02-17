@@ -23,19 +23,19 @@
     '88ay': function (e, t, n) {
       'use strict'
       n.d(t, 'c', function () {
-        return $
+        return ee
       }),
         n.d(t, 'e', function () {
-          return ee
-        }),
-        n.d(t, 'f', function () {
           return te
         }),
-        n.d(t, 'd', function () {
+        n.d(t, 'f', function () {
           return ne
         }),
+        n.d(t, 'd', function () {
+          return re
+        }),
         n.d(t, 'a', function () {
-          return ie
+          return ae
         })
       var r = n('m3Bd'),
         o = n.n(r),
@@ -51,10 +51,10 @@
         f = n.n(h),
         m = n('2VqO'),
         v = n.n(m),
-        y = n('KEM+'),
-        g = n.n(y),
-        _ = n('97Jx'),
-        b = n.n(_),
+        _ = n('KEM+'),
+        g = n.n(_),
+        y = n('97Jx'),
+        b = n.n(y),
         I = (n('1t7P'), n('jQ/y'), n('ho0z'), n('2G9S'), n('hBpG'), n('7x/C'), n('ERkP')),
         C = n.n(I),
         E = n('6rlp'),
@@ -86,18 +86,18 @@
           }),
         L = n('I57f'),
         T = n('vMjK'),
-        O = n('MWbm'),
-        B = n('IG7M'),
-        N = n('rHpw'),
-        x = function (e) {
+        x = n('MWbm'),
+        O = n('IG7M'),
+        B = n('rHpw'),
+        N = function (e) {
           var t = e.children,
             n = e.promotedContent,
             r = e.user
           return C.a.createElement(
-            O.a,
+            x.a,
             { style: D.decorationWrapper },
             t,
-            C.a.createElement(B.a, {
+            C.a.createElement(O.a, {
               renderActionMenu: function (e) {
                 return C.a.createElement(T.b, { onClose: e, promotedContent: n, user: r, view: 'follower' })
               },
@@ -105,7 +105,7 @@
             }),
           )
         },
-        D = N.a.create(function (e) {
+        D = B.a.create(function (e) {
           return { decorationWrapper: { flexDirection: 'row' }, actionMenu: { marginLeft: e.spaces.space12 } }
         }),
         U = n('uIZp'),
@@ -119,9 +119,10 @@
         z = n('hxu0'),
         J = n('v6aA'),
         Y = n('7JQg'),
-        Q = n('IMA+'),
-        V = n('cFuS'),
-        X = [
+        Q = n('nBUg'),
+        V = n('IMA+'),
+        X = n('cFuS'),
+        Z = [
           'avatarDecoration',
           'bottomControl',
           'cellClickable',
@@ -150,11 +151,11 @@
           'socialContext',
           'user',
         ],
-        Z = function (e) {
+        $ = function (e) {
           var t = e.user
           return t && t.profile_image_url_https
             ? C.a.createElement(
-                re,
+                oe,
                 b()({}, e, {
                   avatarUri: t.profile_image_url_https,
                   description: t.description,
@@ -179,35 +180,35 @@
               )
             : null
         }
-      Z.defaultProps = {
+      $.defaultProps = {
         cellClickable: !0,
         decoration: null,
         displayMode: G.a.UserCompact,
         followRequestReceived: !1,
         hideBlocked: !1,
-        promotedItemType: V.c.USER,
+        promotedItemType: X.c.USER,
         shouldScribeProfileClick: !0,
         shouldScribeImpression: !1,
         withFollowsYou: !1,
       }
-      var $ = function (e) {
+      var ee = function (e) {
           var t = e.isDeviceFollowing,
             n = e.userId
-          return C.a.createElement(L.a, { isFollowing: t, style: oe.followButton, userId: n })
+          return C.a.createElement(L.a, { isFollowing: t, style: ie.followButton, userId: n })
         },
-        ee = function (e) {
+        te = function (e) {
           var t = e.loggedInUserId,
             n = e.promotedContent,
             r = e.userId
           return t !== r
-            ? C.a.createElement(U.a, { promotedContent: n, size: 'small', style: oe.followButton, userId: r })
+            ? C.a.createElement(U.a, { promotedContent: n, size: 'small', style: ie.followButton, userId: r })
             : null
         },
-        te = function (e) {
-          return C.a.createElement(x, { promotedContent: e.promotedContent, user: e.user }, ee(e))
-        },
         ne = function (e) {
-          return C.a.createElement(B.a, {
+          return C.a.createElement(N, { promotedContent: e.promotedContent, user: e.user }, te(e))
+        },
+        re = function (e) {
+          return C.a.createElement(O.a, {
             renderActionMenu: function (t) {
               return C.a.createElement(T.b, {
                 onClose: t,
@@ -218,7 +219,7 @@
             },
           })
         },
-        re = (function (e) {
+        oe = (function (e) {
           f()(n, e)
           var t = v()(n)
           function n() {
@@ -231,7 +232,7 @@
                 var t = e.props.shouldScribeProfileClick
                 e._handleSaveAsRecentSearch(),
                   t && e._scribeAction({ element: 'avatar', action: 'profile_click' }),
-                  e._handleAsyncPromotedEvent(V.b.PROFILE_IMAGE_CLICK)
+                  e._handleAsyncPromotedEvent(X.b.PROFILE_IMAGE_CLICK)
               }),
               g()(p()(e), '_handleCellClick', function () {
                 var t = e.props,
@@ -248,7 +249,7 @@
                 var t = e.props.shouldScribeProfileClick
                 e._handleSaveAsRecentSearch(),
                   t && e._scribeAction({ action: 'profile_click' }),
-                  e._handleAsyncPromotedEvent(V.b.SCREEN_NAME_CLICK)
+                  e._handleAsyncPromotedEvent(X.b.SCREEN_NAME_CLICK)
               }),
               g()(p()(e), '_handleSaveAsRecentSearch', function () {
                 var t = e.props,
@@ -296,57 +297,70 @@
               {
                 key: 'render',
                 value: function () {
-                  var e = this.props,
-                    t = e.avatarDecoration,
-                    n = (e.bottomControl, e.cellClickable),
-                    r =
-                      (e.createLocalApiErrorHandler,
-                      e.decoration,
-                      e.followRequestReceived,
-                      e.hideBlocked,
-                      e.history,
-                      e.isAutoblocking,
-                      e.isBlockedBy,
-                      e.isBlocking,
-                      e.isDeviceFollowing,
-                      e.isFollowing,
-                      e.isInSidebar),
+                  var e = this,
+                    t = this.props,
+                    n = t.avatarDecoration,
+                    r = (t.bottomControl, t.cellClickable),
                     i =
-                      (e.location,
-                      e.log,
-                      e.onClick,
-                      e.promotedItemId,
-                      e.saveAsRecentSearch,
-                      e.scribeAction,
-                      e.scribeData,
-                      e.scribeNamespace,
-                      e.shouldScribeImpression,
-                      e.shouldScribeProfileClick,
-                      e.shouldStoreTypeaheadItem,
-                      e.socialContext),
-                    a = e.user,
-                    c = o()(e, X)
+                      (t.createLocalApiErrorHandler,
+                      t.decoration,
+                      t.followRequestReceived,
+                      t.hideBlocked,
+                      t.history,
+                      t.isAutoblocking,
+                      t.isBlockedBy,
+                      t.isBlocking,
+                      t.isDeviceFollowing,
+                      t.isFollowing,
+                      t.isInSidebar),
+                    a =
+                      (t.location,
+                      t.log,
+                      t.onClick,
+                      t.promotedItemId,
+                      t.saveAsRecentSearch,
+                      t.scribeAction,
+                      t.scribeData,
+                      t.scribeNamespace,
+                      t.shouldScribeImpression,
+                      t.shouldScribeProfileClick,
+                      t.shouldStoreTypeaheadItem,
+                      t.socialContext),
+                    c = t.user,
+                    l = o()(t, Z)
                   return this._shouldRender()
                     ? C.a.createElement(
-                        Q.a,
-                        b()({}, c, {
-                          avatarDecoration: t,
-                          bottomControl: this._renderBottomControl(),
-                          decoration: this._renderDecoration(),
-                          highlightedLabel: this._getHighlightedLabel(),
-                          isBlocking: a.blocking,
-                          onAvatarClick: this._handleAvatarClick,
-                          onCellClick: n ? this._handleCellClick : void 0,
-                          onScreenNameClick: this._handleScreenNameClick,
-                          socialContext: i
-                            ? {
-                                contextType: i.contextType,
-                                text: i.text,
-                                link: i.landingUrl ? Object(j.b)(i.landingUrl) : void 0,
-                              }
-                            : void 0,
-                          withDarkerInteractiveBackground: r,
-                        }),
+                        Q.b.Provider,
+                        {
+                          value: {
+                            socialContextRefreshEnabled: function () {
+                              return e.context.featureSwitches.isTrue(
+                                'social_context_and_topic_context_refresh_alignment_enabled',
+                              )
+                            },
+                          },
+                        },
+                        C.a.createElement(
+                          V.a,
+                          b()({}, l, {
+                            avatarDecoration: n,
+                            bottomControl: this._renderBottomControl(),
+                            decoration: this._renderDecoration(),
+                            highlightedLabel: this._getHighlightedLabel(),
+                            isBlocking: c.blocking,
+                            onAvatarClick: this._handleAvatarClick,
+                            onCellClick: r ? this._handleCellClick : void 0,
+                            onScreenNameClick: this._handleScreenNameClick,
+                            socialContext: a
+                              ? {
+                                  contextType: a.contextType,
+                                  text: a.text,
+                                  link: a.landingUrl ? Object(j.b)(a.landingUrl) : void 0,
+                                }
+                              : void 0,
+                            withDarkerInteractiveBackground: i,
+                          }),
+                        ),
                       )
                     : null
                 },
@@ -421,7 +435,7 @@
                   var e = this.props,
                     t = e.promotedContent,
                     n = e.promotedItemType
-                  return t && n === V.c.TWEET ? { promotedTweetState: t } : null
+                  return t && n === X.c.TWEET ? { promotedTweetState: t } : null
                 },
               },
               {
@@ -453,14 +467,14 @@
                     o = e.promotedItemType,
                     i = e.shouldScribeImpression,
                     a = e.userId
-                  if (r && o === V.c.USER) {
+                  if (r && o === X.c.USER) {
                     var c = r.disclosure_type,
                       l = r.impression_id
                     n({
                       disclosureType: c,
                       itemId: a,
-                      itemType: V.c.USER,
-                      params: { event: V.b.IMPRESSION, impression_id: l },
+                      itemType: X.c.USER,
+                      params: { event: X.b.IMPRESSION, impression_id: l },
                     }).catch(t())
                   } else i && this._scribeAction({ action: 'impression' })
                 },
@@ -469,12 +483,12 @@
             n
           )
         })(C.a.Component)
-      g()(re, 'contextType', J.a), g()(re, 'defaultProps', Z.defaultProps)
-      var oe = N.a.create(function (e) {
+      g()(oe, 'contextType', J.a), g()(oe, 'defaultProps', $.defaultProps)
+      var ie = B.a.create(function (e) {
           return { followButton: { marginLeft: e.spaces.space12 } }
         }),
-        ie = Object(W.a)(Object(z.a)(P(Z)))
-      t.b = Object(Y.a)({ element: 'user' })(ie)
+        ae = Object(W.a)(Object(z.a)(P($)))
+      t.b = Object(Y.a)({ element: 'user' })(ae)
     },
     gemt: function (e, t, n) {
       'use strict'
@@ -496,9 +510,9 @@
         f = n('KEM+'),
         m = n.n(f),
         v = (n('2G9S'), n('ERkP')),
-        y = n.n(v),
+        _ = n.n(v),
         g = (n('z84I'), n('xQWt')),
-        _ = n('hqKg'),
+        y = n('hqKg'),
         b = n('rxPX'),
         I = n('0KEI'),
         C = n('kGix'),
@@ -509,7 +523,7 @@
           .propsFromState(function () {
             return {
               followerRequestIds: E,
-              fetchStatus: Object(_.createSelector)(g.f, g.g, g.h, function (e, t, n) {
+              fetchStatus: Object(y.createSelector)(g.f, g.g, g.h, function (e, t, n) {
                 var r = e.hydratedIds,
                   o = e.ids
                 return t === C.a.LOADED ? (o.length && r.length !== o.length ? n || C.a.LOADING : C.a.LOADED) : t
@@ -550,12 +564,12 @@
         P = n.n(F),
         L = P.a.j85d8d9f,
         T = ((r = {}), m()(r, R.a.NoFollowRequest, { toast: { text: L } }), m()(r, 'showToast', !0), r),
-        O = n('MWbm'),
-        B = n('/yvb'),
-        N = n('rHpw'),
-        x = P.a.da878dcf,
+        x = n('MWbm'),
+        O = n('/yvb'),
+        B = n('rHpw'),
+        N = P.a.da878dcf,
         D = P.a.ec2d8341,
-        U = N.a.create(function (e) {
+        U = B.a.create(function (e) {
           return {
             root: { paddingTop: e.spaces.space4, flexDirection: 'row', flexGrow: 1, justifyContent: 'center' },
             declineButton: { marginRight: e.spaces.space12 },
@@ -565,11 +579,11 @@
         q = function (e) {
           var t = e.onAccept,
             n = e.onDecline
-          return y.a.createElement(
-            O.a,
+          return _.a.createElement(
+            x.a,
             { style: U.root },
-            y.a.createElement(
-              B.a,
+            _.a.createElement(
+              O.a,
               {
                 accessibilityLabel: D,
                 onPress: n,
@@ -579,16 +593,16 @@
               },
               D,
             ),
-            y.a.createElement(
-              B.a,
+            _.a.createElement(
+              O.a,
               {
-                accessibilityLabel: x,
+                accessibilityLabel: N,
                 onPress: t,
                 size: 'small',
                 style: U.followerRequestActionButton,
                 type: 'brandOutlined',
               },
-              x,
+              N,
             ),
           )
         },
@@ -621,13 +635,13 @@
                 {
                   key: 'render',
                   value: function () {
-                    return y.a.createElement(q, { onAccept: this._handleAccept, onDecline: this._handleDecline })
+                    return _.a.createElement(q, { onAccept: this._handleAccept, onDecline: this._handleDecline })
                   },
                 },
               ]),
               n
             )
-          })(y.a.Component),
+          })(_.a.Component),
         ),
         M = n('jHSc'),
         H = n('TEoO'),
@@ -652,7 +666,7 @@
           return Z(e) ? null : Object(J.e)(e)
         },
         ee = function (e) {
-          return Z(e) ? y.a.createElement(j, { userId: e.userId }) : null
+          return Z(e) ? _.a.createElement(j, { userId: e.userId }) : null
         },
         te = (function (e) {
           u()(n, e)
@@ -665,7 +679,7 @@
               (e = t.call.apply(t, [this].concat(o))),
               m()(s()(e), '_render', function () {
                 var t = e.props.timeline
-                return y.a.createElement(H.a, {
+                return _.a.createElement(H.a, {
                   accessibilityTitle: V,
                   assumedItemHeight: 75,
                   cacheKey: 'userFollowerRequests',
@@ -677,7 +691,7 @@
                 })
               }),
               m()(s()(e), '_renderEmptyState', function () {
-                return y.a.createElement(k.a, { header: Y, message: Q })
+                return _.a.createElement(k.a, { header: Y, message: Q })
               }),
               m()(s()(e), '_handleFetch', function () {
                 var t = e.props,
@@ -690,10 +704,10 @@
               }),
               m()(s()(e), '_itemRenderer', function (e) {
                 return 'user_cell' === e.type
-                  ? y.a.createElement(
-                      O.a,
+                  ? _.a.createElement(
+                      x.a,
                       null,
-                      y.a.createElement(J.b, {
+                      _.a.createElement(J.b, {
                         bottomControl: ee,
                         decoration: $,
                         displayMode: z.a.UserDetailed,
@@ -723,13 +737,13 @@
                   var e = this.props,
                     t = e.fetchStatus,
                     n = e.history
-                  return y.a.createElement(
+                  return _.a.createElement(
                     K.c,
                     { namespace: X },
-                    y.a.createElement(
+                    _.a.createElement(
                       M.b,
                       { history: n, title: V },
-                      y.a.createElement(S.a, {
+                      _.a.createElement(S.a, {
                         fetchStatus: t,
                         onRequestRetry: this._handleFetch,
                         render: this._render,
@@ -741,7 +755,7 @@
             ]),
             n
           )
-        })(y.a.Component),
+        })(_.a.Component),
         ne = w(te)
       t.default = ne
     },

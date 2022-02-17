@@ -460,7 +460,7 @@
               paddingVertical: e.componentDimensions.gutterVertical,
             },
             narrowContainer: { marginHorizontal: e.spaces.space16 },
-            scrollableContainer: { flex: '1 1 0', overflowY: 'auto' },
+            scrollableContainer: { flexGrow: 1, flexShrink: 1, flexBasis: 0, overflowY: 'auto' },
             subheading: { paddingTop: e.spaces.space24 },
             subtext: { paddingTop: e.spaces.space4 },
             text: { paddingTop: e.spaces.space12 },

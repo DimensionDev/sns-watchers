@@ -100,10 +100,10 @@
         I = n.n(P),
         M = n('caTy'),
         j = n('+Bsv'),
-        L = n('MWbm'),
-        R = n('Irs7'),
-        A = n('hxu0'),
-        D = n('6vad'),
+        R = n('MWbm'),
+        L = n('Irs7'),
+        D = n('hxu0'),
+        A = n('6vad'),
         B = n('rC8y'),
         U = I.a.c5f4befa,
         F = I.a.d228a9a0,
@@ -153,9 +153,9 @@
                     r = e.isInSidebar,
                     a = m.a.createElement(j.a, { to: '/settings/trends' })
                   return m.a.createElement(
-                    L.a,
+                    R.a,
                     null,
-                    m.a.createElement(D.b, { rightControl: a, text: n || U }),
+                    m.a.createElement(A.b, { rightControl: a, text: n || U }),
                     this._renderTrends(),
                     this.canShowMoreTrends()
                       ? m.a.createElement(B.a, {
@@ -188,7 +188,7 @@
             n
           )
         })(m.a.Component),
-        X = Object(R.a)(Object(A.a)(z)),
+        X = Object(L.a)(Object(D.a)(z)),
         H = n('zh9S'),
         K = E.g({
           bindActions: function () {
@@ -302,20 +302,21 @@
               {
                 key: 'componentDidMount',
                 value: function () {
-                  G.a.addEventListener('change', this._onAppForegrounded)
+                  this._listener = G.a.addEventListener('change', this._onAppForegrounded)
                 },
               },
               {
                 key: 'componentWillUnmount',
                 value: function () {
-                  G.a.removeEventListener('change', this._onAppForegrounded)
+                  var e
+                  null === (e = this._listener) || void 0 === e || e.remove()
                 },
               },
               {
                 key: 'render',
                 value: function () {
                   return m.a.createElement(
-                    L.a,
+                    R.a,
                     null,
                     m.a.createElement(V.a, {
                       entryConfiguration: q,

@@ -219,19 +219,19 @@
     '88ay': function (e, t, n) {
       'use strict'
       n.d(t, 'c', function () {
-        return $
+        return ee
       }),
         n.d(t, 'e', function () {
-          return ee
-        }),
-        n.d(t, 'f', function () {
           return te
         }),
-        n.d(t, 'd', function () {
+        n.d(t, 'f', function () {
           return ne
         }),
+        n.d(t, 'd', function () {
+          return ae
+        }),
         n.d(t, 'a', function () {
-          return oe
+          return ie
         })
       var a = n('m3Bd'),
         r = n.n(a),
@@ -315,9 +315,10 @@
         G = n('hxu0'),
         K = n('v6aA'),
         X = n('7JQg'),
-        Q = n('IMA+'),
-        Y = n('cFuS'),
-        J = [
+        Q = n('nBUg'),
+        Y = n('IMA+'),
+        J = n('cFuS'),
+        Z = [
           'avatarDecoration',
           'bottomControl',
           'cellClickable',
@@ -346,11 +347,11 @@
           'socialContext',
           'user',
         ],
-        Z = function (e) {
+        $ = function (e) {
           var t = e.user
           return t && t.profile_image_url_https
             ? w.a.createElement(
-                ae,
+                re,
                 b()({}, e, {
                   avatarUri: t.profile_image_url_https,
                   description: t.description,
@@ -375,34 +376,34 @@
               )
             : null
         }
-      Z.defaultProps = {
+      $.defaultProps = {
         cellClickable: !0,
         decoration: null,
         displayMode: W.a.UserCompact,
         followRequestReceived: !1,
         hideBlocked: !1,
-        promotedItemType: Y.c.USER,
+        promotedItemType: J.c.USER,
         shouldScribeProfileClick: !0,
         shouldScribeImpression: !1,
         withFollowsYou: !1,
       }
-      var $ = function (e) {
+      var ee = function (e) {
           var t = e.isDeviceFollowing,
             n = e.userId
-          return w.a.createElement(P.a, { isFollowing: t, style: re.followButton, userId: n })
+          return w.a.createElement(P.a, { isFollowing: t, style: oe.followButton, userId: n })
         },
-        ee = function (e) {
+        te = function (e) {
           var t = e.loggedInUserId,
             n = e.promotedContent,
             a = e.userId
           return t !== a
-            ? w.a.createElement(N.a, { promotedContent: n, size: 'small', style: re.followButton, userId: a })
+            ? w.a.createElement(N.a, { promotedContent: n, size: 'small', style: oe.followButton, userId: a })
             : null
         },
-        te = function (e) {
-          return w.a.createElement(B, { promotedContent: e.promotedContent, user: e.user }, ee(e))
-        },
         ne = function (e) {
+          return w.a.createElement(B, { promotedContent: e.promotedContent, user: e.user }, te(e))
+        },
+        ae = function (e) {
           return w.a.createElement(M.a, {
             renderActionMenu: function (t) {
               return w.a.createElement(O.b, {
@@ -414,7 +415,7 @@
             },
           })
         },
-        ae = (function (e) {
+        re = (function (e) {
           h()(n, e)
           var t = g()(n)
           function n() {
@@ -427,7 +428,7 @@
                 var t = e.props.shouldScribeProfileClick
                 e._handleSaveAsRecentSearch(),
                   t && e._scribeAction({ element: 'avatar', action: 'profile_click' }),
-                  e._handleAsyncPromotedEvent(Y.b.PROFILE_IMAGE_CLICK)
+                  e._handleAsyncPromotedEvent(J.b.PROFILE_IMAGE_CLICK)
               }),
               y()(m()(e), '_handleCellClick', function () {
                 var t = e.props,
@@ -444,7 +445,7 @@
                 var t = e.props.shouldScribeProfileClick
                 e._handleSaveAsRecentSearch(),
                   t && e._scribeAction({ action: 'profile_click' }),
-                  e._handleAsyncPromotedEvent(Y.b.SCREEN_NAME_CLICK)
+                  e._handleAsyncPromotedEvent(J.b.SCREEN_NAME_CLICK)
               }),
               y()(m()(e), '_handleSaveAsRecentSearch', function () {
                 var t = e.props,
@@ -492,57 +493,70 @@
               {
                 key: 'render',
                 value: function () {
-                  var e = this.props,
-                    t = e.avatarDecoration,
-                    n = (e.bottomControl, e.cellClickable),
-                    a =
-                      (e.createLocalApiErrorHandler,
-                      e.decoration,
-                      e.followRequestReceived,
-                      e.hideBlocked,
-                      e.history,
-                      e.isAutoblocking,
-                      e.isBlockedBy,
-                      e.isBlocking,
-                      e.isDeviceFollowing,
-                      e.isFollowing,
-                      e.isInSidebar),
+                  var e = this,
+                    t = this.props,
+                    n = t.avatarDecoration,
+                    a = (t.bottomControl, t.cellClickable),
                     o =
-                      (e.location,
-                      e.log,
-                      e.onClick,
-                      e.promotedItemId,
-                      e.saveAsRecentSearch,
-                      e.scribeAction,
-                      e.scribeData,
-                      e.scribeNamespace,
-                      e.shouldScribeImpression,
-                      e.shouldScribeProfileClick,
-                      e.shouldStoreTypeaheadItem,
-                      e.socialContext),
-                    i = e.user,
-                    s = r()(e, J)
+                      (t.createLocalApiErrorHandler,
+                      t.decoration,
+                      t.followRequestReceived,
+                      t.hideBlocked,
+                      t.history,
+                      t.isAutoblocking,
+                      t.isBlockedBy,
+                      t.isBlocking,
+                      t.isDeviceFollowing,
+                      t.isFollowing,
+                      t.isInSidebar),
+                    i =
+                      (t.location,
+                      t.log,
+                      t.onClick,
+                      t.promotedItemId,
+                      t.saveAsRecentSearch,
+                      t.scribeAction,
+                      t.scribeData,
+                      t.scribeNamespace,
+                      t.shouldScribeImpression,
+                      t.shouldScribeProfileClick,
+                      t.shouldStoreTypeaheadItem,
+                      t.socialContext),
+                    s = t.user,
+                    l = r()(t, Z)
                   return this._shouldRender()
                     ? w.a.createElement(
-                        Q.a,
-                        b()({}, s, {
-                          avatarDecoration: t,
-                          bottomControl: this._renderBottomControl(),
-                          decoration: this._renderDecoration(),
-                          highlightedLabel: this._getHighlightedLabel(),
-                          isBlocking: i.blocking,
-                          onAvatarClick: this._handleAvatarClick,
-                          onCellClick: n ? this._handleCellClick : void 0,
-                          onScreenNameClick: this._handleScreenNameClick,
-                          socialContext: o
-                            ? {
-                                contextType: o.contextType,
-                                text: o.text,
-                                link: o.landingUrl ? Object(j.b)(o.landingUrl) : void 0,
-                              }
-                            : void 0,
-                          withDarkerInteractiveBackground: a,
-                        }),
+                        Q.b.Provider,
+                        {
+                          value: {
+                            socialContextRefreshEnabled: function () {
+                              return e.context.featureSwitches.isTrue(
+                                'social_context_and_topic_context_refresh_alignment_enabled',
+                              )
+                            },
+                          },
+                        },
+                        w.a.createElement(
+                          Y.a,
+                          b()({}, l, {
+                            avatarDecoration: n,
+                            bottomControl: this._renderBottomControl(),
+                            decoration: this._renderDecoration(),
+                            highlightedLabel: this._getHighlightedLabel(),
+                            isBlocking: s.blocking,
+                            onAvatarClick: this._handleAvatarClick,
+                            onCellClick: a ? this._handleCellClick : void 0,
+                            onScreenNameClick: this._handleScreenNameClick,
+                            socialContext: i
+                              ? {
+                                  contextType: i.contextType,
+                                  text: i.text,
+                                  link: i.landingUrl ? Object(j.b)(i.landingUrl) : void 0,
+                                }
+                              : void 0,
+                            withDarkerInteractiveBackground: o,
+                          }),
+                        ),
                       )
                     : null
                 },
@@ -617,7 +631,7 @@
                   var e = this.props,
                     t = e.promotedContent,
                     n = e.promotedItemType
-                  return t && n === Y.c.TWEET ? { promotedTweetState: t } : null
+                  return t && n === J.c.TWEET ? { promotedTweetState: t } : null
                 },
               },
               {
@@ -649,14 +663,14 @@
                     r = e.promotedItemType,
                     o = e.shouldScribeImpression,
                     i = e.userId
-                  if (a && r === Y.c.USER) {
+                  if (a && r === J.c.USER) {
                     var s = a.disclosure_type,
                       l = a.impression_id
                     n({
                       disclosureType: s,
                       itemId: i,
-                      itemType: Y.c.USER,
-                      params: { event: Y.b.IMPRESSION, impression_id: l },
+                      itemType: J.c.USER,
+                      params: { event: J.b.IMPRESSION, impression_id: l },
                     }).catch(t())
                   } else o && this._scribeAction({ action: 'impression' })
                 },
@@ -665,12 +679,12 @@
             n
           )
         })(w.a.Component)
-      y()(ae, 'contextType', K.a), y()(ae, 'defaultProps', Z.defaultProps)
-      var re = L.a.create(function (e) {
+      y()(re, 'contextType', K.a), y()(re, 'defaultProps', $.defaultProps)
+      var oe = L.a.create(function (e) {
           return { followButton: { marginLeft: e.spaces.space12 } }
         }),
-        oe = Object(q.a)(Object(G.a)(k(Z)))
-      t.b = Object(X.a)({ element: 'user' })(oe)
+        ie = Object(q.a)(Object(G.a)(k($)))
+      t.b = Object(X.a)({ element: 'user' })(ie)
     },
     '8A5z': function (e, t, n) {
       'use strict'

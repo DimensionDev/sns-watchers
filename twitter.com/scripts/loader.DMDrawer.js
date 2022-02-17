@@ -11578,6 +11578,8 @@
             unreadMessagePip: {
               backgroundColor: e.colors.blue500,
               marginTop: 'calc('.concat(e.spaces.space8, ' - ').concat(e.spaces.space1, ')'),
+              height: e.baseFontSize - 5,
+              width: e.baseFontSize - 5,
             },
             vdlXButton: {
               border: 'none',
