@@ -978,7 +978,7 @@
               {
                 alias: 'user',
                 args: (l = [
-                  { kind: 'Literal', name: 's', value: 47 },
+                  { kind: 'Literal', name: 's', value: 48 },
                   { kind: 'Variable', name: 'screen_name', variableName: 'screenName' },
                 ]),
                 concreteType: 'UserResults',

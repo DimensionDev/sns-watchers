@@ -47,16 +47,16 @@
         v = d.a.ccafffde,
         T = d.a.j2e184d8,
         _ = d.a.fc638aa2,
-        C = d.a.d94b2246,
-        A = d.a.bfea13ab,
+        A = d.a.d94b2246,
+        C = d.a.bfea13ab,
         F = d.a.fc209bb7,
         O = d.a.ee95bb8d,
-        I = [
+        M = [
           { label: v, value: 'OneDay' },
           { label: T, value: 'ThreeDays' },
           { label: _, value: 'SevenDays' },
         ]
-      var M = s(function (e) {
+      var I = s(function (e) {
           var t = e.createLocalApiErrorHandler,
             a = e.enabled,
             n = e.expiration,
@@ -92,12 +92,12 @@
                     return u()
                   })
                   .catch(function (e) {
-                    t({ showToast: !0, defaultToast: { text: A } })(e)
+                    t({ showToast: !0, defaultToast: { text: C } })(e)
                   })
             },
             v = function () {
               return function (e) {
-                var a = I.map(function (e) {
+                var a = M.map(function (e) {
                   return {
                     text: e.label,
                     onClick: function () {
@@ -110,7 +110,7 @@
                                 return u()
                               })
                               .catch(function (e) {
-                                t({ showToast: !0, defaultToast: { text: A } })(e)
+                                t({ showToast: !0, defaultToast: { text: C } })(e)
                               }))
                       })(e)
                     },
@@ -149,7 +149,7 @@
                         (function (e, t) {
                           return Math.floor(Math.abs((t || Date.now()) - e) / 36e5) <= 1
                         })(e)
-                          ? C
+                          ? A
                           : O({ date: F(e) }),
                       )
                     : null,
@@ -160,7 +160,7 @@
           })
         }),
         w =
-          ((t.a = M),
+          ((t.a = I),
           b.a.create(function (e) {
             return {
               border: {
@@ -193,7 +193,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'SafetyModeModal', function () {
-          return ce
+          return se
         })
       var n = a('VrFO'),
         r = a.n(n),
@@ -207,7 +207,7 @@
         p = a.n(d),
         f = a('KEM+'),
         S = a.n(f),
-        E = (a('2G9S'), a('1t7P'), a('jQ/y'), a('hBvt'), a('ERkP')),
+        E = (a('2G9S'), a('KqXw'), a('WNMA'), a('1t7P'), a('jQ/y'), a('hBvt'), a('ERkP')),
         g = a.n(E),
         m = a('oEOe'),
         b = 'rweb/'.concat('convertRitoSuggestedActions'),
@@ -224,12 +224,12 @@
         v = a('yiKp'),
         T = a.n(v),
         _ = (a('M+/F'), a('z84I'), a('Ssj5')),
-        C = 'ritoSuggestedActionsFacePile',
-        A = 'rweb/'.concat(C),
-        F = Object(m.a)(A, 'FETCH_RITO_SUGGESTED_ACTIONS_FACEPILE'),
+        A = 'ritoSuggestedActionsFacePile',
+        C = 'rweb/'.concat(A),
+        F = Object(m.a)(C, 'FETCH_RITO_SUGGESTED_ACTIONS_FACEPILE'),
         O = {}
       _.a.register(
-        S()({}, C, function () {
+        S()({}, A, function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : O,
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
@@ -245,10 +245,10 @@
           }
         }),
       )
-      var I = function (e, t) {
+      var M = function (e, t) {
           return e.ritoSuggestedActionsFacePile[t]
         },
-        M = function (e) {
+        I = function (e) {
           return function (t, a, n) {
             var r = n.api
             return Object(m.b)(t, {
@@ -261,13 +261,13 @@
         D = a('RqPI'),
         R = a('rxPX'),
         U = a('0KEI'),
-        L = function (e) {
+        x = function (e) {
           var t = Object(D.q)(e)
           return t
             ? (function (e, t) {
                 var a,
                   n = t
-                    ? null === (a = I(e, t)) || void 0 === a
+                    ? null === (a = M(e, t)) || void 0 === a
                       ? void 0
                       : a.facepileUsers
                           .map(function (e) {
@@ -279,18 +279,18 @@
               })(e, t)
             : void 0
         },
-        x = function (e) {
+        L = function (e) {
           var t = Object(D.q)(e)
           return t
             ? (function (e, t) {
                 var a
-                return t ? (null === (a = I(e, t)) || void 0 === a ? void 0 : a.userCount) : void 0
+                return t ? (null === (a = M(e, t)) || void 0 === a ? void 0 : a.userCount) : void 0
               })(e, t)
             : void 0
         },
-        k = Object(R.a)()
+        P = Object(R.a)()
           .propsFromState(function () {
-            return { facepileUrls: L, count: x, userId: D.q, safetyModeSettings: w.c }
+            return { facepileUrls: x, count: L, userId: D.q, safetyModeSettings: w.c }
           })
           .adjustStateProps(function (e) {
             var t = e.count,
@@ -304,35 +304,37 @@
               createLocalApiErrorHandler: Object(U.createLocalApiErrorHandlerWithContextFactory)(
                 'FETCH_RITO_SUGGESTED_ACTIONS_FACEPILE',
               ),
-              fetchRitoSuggestedActionsFacePile: M,
+              fetchRitoSuggestedActionsFacePile: I,
               callConvertRitoSuggestedActions: h,
             }
           })
           .withAnalytics({ section: 'safety_mode_prompt' }),
-        P = a('jHSc'),
+        k = a('jHSc'),
         j = a('iySH'),
         H = a.p + 'safety-mode-cone.b7ef2f95.png',
-        G = a('OsOl'),
-        N = a('7JQg'),
-        z = a('855f'),
-        B = a('t62R'),
-        q = a('cHvH'),
-        Q = a('Wd7d'),
+        G = a('/de5'),
+        N = a('OsOl'),
+        z = a('7JQg'),
+        B = a('855f'),
+        q = a('t62R'),
+        Q = a('cHvH'),
+        W = a('Wd7d'),
         Y = a('MAI/'),
-        W = a('/yvb'),
+        K = a('/yvb'),
         V = a('rHpw'),
-        K = a('3XMw'),
-        X = a.n(K),
-        J = a('U+bB'),
-        $ = a('MWbm'),
-        Z = { section: 'safety_mode_prompt' },
-        ee = X.a.d1cc8c05,
-        te = X.a.b772cd65,
-        ae = X.a.c1da34c2,
-        ne = X.a.j85176c1,
-        re = X.a.ga7fce66,
-        oe = X.a.g42fd3ad,
-        ce = (function (e) {
+        X = a('v6aA'),
+        J = a('3XMw'),
+        $ = a.n(J),
+        Z = a('U+bB'),
+        ee = a('MWbm'),
+        te = { section: 'safety_mode_prompt' },
+        ae = $.a.d1cc8c05,
+        ne = $.a.b772cd65,
+        re = $.a.c1da34c2,
+        oe = $.a.j85176c1,
+        ce = $.a.ga7fce66,
+        ie = $.a.g42fd3ad,
+        se = (function (e) {
           u()(a, e)
           var t = p()(a)
           function a() {
@@ -341,6 +343,11 @@
             for (var n = arguments.length, o = new Array(n), c = 0; c < n; c++) o[c] = arguments[c]
             return (
               (e = t.call.apply(t, [this].concat(o))),
+              S()(
+                s()(e),
+                '_isSafetyModePromptEnabled',
+                e.context.featureSwitches.isTrue('rito_safety_mode_modal_prompt_enabled'),
+              ),
               S()(s()(e), '_handleBackClick', function () {
                 var t = e.props,
                   a = t.callConvertRitoSuggestedActions,
@@ -365,7 +372,7 @@
                     t = e.createLocalApiErrorHandler,
                     a = e.fetchRitoSuggestedActionsFacePile,
                     n = e.userId
-                  n && a(n).catch(t())
+                  n && this._isSafetyModePromptEnabled && a(n).catch(t())
                 },
               },
               {
@@ -375,112 +382,117 @@
                     t = this.props,
                     a = t.count,
                     n = t.facepileUrls,
-                    r = t.history
-                  return g.a.createElement(q.a, null, function (t) {
-                    var o,
-                      c = t.screenWidth
-                    return g.a.createElement(
-                      N.c,
-                      { namespace: Z },
-                      g.a.createElement(
-                        P.b,
-                        { history: r, onBackClick: e._handleBackClick },
-                        g.a.createElement(
-                          $.a,
-                          { style: Q.a.isNarrowScreenWidth(c) ? se.narrowScreen : se.wideScreen },
-                          g.a.createElement(J.a, { accessibilityLabel: '', source: H, style: se.image }),
+                    r = t.history,
+                    o = t.location,
+                    c = t.match
+                  return this._isSafetyModePromptEnabled
+                    ? g.a.createElement(Q.a, null, function (t) {
+                        var o,
+                          c = t.screenWidth
+                        return g.a.createElement(
+                          z.c,
+                          { namespace: te },
                           g.a.createElement(
-                            $.a,
-                            { style: se.header },
-                            g.a.createElement(B.b, { size: 'title2', weight: 'heavy' }, ee),
-                          ),
-                          n && a
-                            ? g.a.createElement(
-                                g.a.Fragment,
-                                null,
-                                g.a.createElement(Y.a, {
-                                  style: se.facepile,
-                                  userAvatarSize: 'large',
-                                  userAvatarUrls: n,
-                                }),
+                            k.b,
+                            { history: r, onBackClick: e._handleBackClick },
+                            g.a.createElement(
+                              ee.a,
+                              { style: W.a.isNarrowScreenWidth(c) ? ue.narrowScreen : ue.wideScreen },
+                              g.a.createElement(Z.a, { accessibilityLabel: '', source: H, style: ue.image }),
+                              g.a.createElement(
+                                ee.a,
+                                { style: ue.header },
+                                g.a.createElement(q.b, { size: 'title2', weight: 'heavy' }, ae),
+                              ),
+                              n && a
+                                ? g.a.createElement(
+                                    g.a.Fragment,
+                                    null,
+                                    g.a.createElement(Y.a, {
+                                      style: ue.facepile,
+                                      userAvatarSize: 'large',
+                                      userAvatarUrls: n,
+                                    }),
+                                    g.a.createElement(
+                                      q.b,
+                                      { style: ue.description },
+                                      (function (e) {
+                                        return e <= 10
+                                          ? re({ count: B.a.getFormattedCount(e) })
+                                          : oe({ count: B.a.getFormattedCount(e) })
+                                      })(a),
+                                    ),
+                                    g.a.createElement(
+                                      q.b,
+                                      null,
+                                      g.a.createElement(
+                                        $.a.I18NFormatMessage,
+                                        { $i18n: 'f81ca1f4' },
+                                        g.a.createElement(
+                                          q.b,
+                                          { link: '/i/safety_mode/flagged_accounts', size: 'body', weight: 'bold' },
+                                          $.a.ac9bde9a,
+                                        ),
+                                      ),
+                                      g.a.createElement(j.a, { style: ue.chevronIcon }),
+                                    ),
+                                  )
+                                : null,
+                              g.a.createElement(
+                                ee.a,
+                                { style: ue.header },
+                                g.a.createElement(q.b, { size: 'title3', weight: 'heavy' }, ce),
+                              ),
+                              g.a.createElement(N.a, { withBorder: !0 }),
+                              g.a.createElement(
+                                ee.a,
+                                { style: ue.link },
+                                ((o = e._handleScribeOnClick),
                                 g.a.createElement(
-                                  B.b,
-                                  { style: se.description },
-                                  (function (e) {
-                                    return e <= 10
-                                      ? ae({ count: z.a.getFormattedCount(e) })
-                                      : ne({ count: z.a.getFormattedCount(e) })
-                                  })(a),
-                                ),
-                                g.a.createElement(
-                                  B.b,
+                                  q.b,
                                   null,
                                   g.a.createElement(
-                                    X.a.I18NFormatMessage,
-                                    { $i18n: 'f81ca1f4' },
+                                    $.a.I18NFormatMessage,
+                                    { $i18n: 'j449c95b' },
                                     g.a.createElement(
-                                      B.b,
-                                      { link: '/i/safety_mode/flagged_accounts', size: 'body', weight: 'bold' },
-                                      X.a.ac9bde9a,
+                                      q.b,
+                                      {
+                                        color: 'normal',
+                                        link: '/settings/safety_mode/about',
+                                        onPress: o,
+                                        size: 'subtext1',
+                                        withUnderline: !0,
+                                      },
+                                      $.a.ed5457da,
                                     ),
                                   ),
-                                  g.a.createElement(j.a, { style: se.chevronIcon }),
-                                ),
-                              )
-                            : null,
-                          g.a.createElement(
-                            $.a,
-                            { style: se.header },
-                            g.a.createElement(B.b, { size: 'title3', weight: 'heavy' }, re),
-                          ),
-                          g.a.createElement(G.a, { withBorder: !0 }),
-                          g.a.createElement(
-                            $.a,
-                            { style: se.link },
-                            ((o = e._handleScribeOnClick),
-                            g.a.createElement(
-                              B.b,
-                              null,
+                                )),
+                              ),
                               g.a.createElement(
-                                X.a.I18NFormatMessage,
-                                { $i18n: 'j449c95b' },
+                                ee.a,
+                                null,
                                 g.a.createElement(
-                                  B.b,
-                                  {
-                                    color: 'normal',
-                                    link: '/settings/safety_mode/about',
-                                    onPress: o,
-                                    size: 'subtext1',
-                                    withUnderline: !0,
-                                  },
-                                  X.a.ed5457da,
+                                  K.a,
+                                  { onPress: e._handleBackClick, style: ue.button, type: 'primaryFilled' },
+                                  ne,
                                 ),
                               ),
-                            )),
-                          ),
-                          g.a.createElement(
-                            $.a,
-                            null,
-                            g.a.createElement(
-                              W.a,
-                              { onPress: e._handleBackClick, style: se.button, type: 'primaryFilled' },
-                              te,
+                              g.a.createElement(q.b, { style: ue.description }, ie),
                             ),
                           ),
-                          g.a.createElement(B.b, { style: se.description }, oe),
-                        ),
-                      ),
-                    )
-                  })
+                        )
+                      })
+                    : g.a.createElement(G.b, { history: r, location: o, match: c })
                 },
               },
             ]),
             a
           )
-        })(g.a.Component),
-        ie = k(ce),
-        se =
-          ((t.default = ie),
+        })(g.a.Component)
+      S()(se, 'contextType', X.a)
+      var le = P(se),
+        ue =
+          ((t.default = le),
           V.a.create(function (e) {
             return {
               wideScreen: { marginBottom: e.spaces.space48, marginHorizontal: e.spaces.space80 },

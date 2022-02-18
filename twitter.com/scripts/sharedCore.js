@@ -5745,65 +5745,37 @@
           strategy: m.a.Critical,
         },
         _ = c.e(b),
-        w =
-          (n('yH/f'),
-          n('ERkP'),
-          Object.freeze({ Classic: 'Classic', ContextEmphasis: 'ContextEmphasis' }),
-          Object.freeze({ Classic: 'Classic', Footnote: 'Footnote', Button: 'Button' })),
-        E = function (e) {
+        w = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(210)]).then(n.bind(null, 'RohR'))
+              return Promise.all([n.e(0), n.e(210)]).then(n.bind(null, '3Rb8'))
             },
             loaderOptions: e,
-            loaderKey: 'buttonFooterLoader',
+            loaderKey: 'defaultModuleFooterLoader',
             strategy: m.a.Critical,
           }
         },
-        C = function (e) {
-          var t,
-            r,
-            i = e.isInSidebar
-          return c.c({
-            selectDisplayType: function (e) {
-              return e.content.displayType
-            },
-            handlers:
-              ((t = {}),
-              o()(
-                t,
-                w.Classic,
-                ((r = { isInSidebar: i }),
-                {
-                  loader: function () {
-                    return Promise.all([n.e(0), n.e(210)]).then(n.bind(null, 'pODo'))
-                  },
-                  loaderOptions: r,
-                  loaderKey: 'defaultModuleFooterLoader',
-                  strategy: m.a.Critical,
-                }),
-              ),
-              o()(t, w.Button, E({ isInSidebar: i })),
-              t),
-          })
+        E = function (e) {
+          var t = e.isInSidebar
+          return c.e(w({ isInSidebar: t }))
         },
-        k = {
+        C = {
           loader: function () {
             return n.e(221).then(n.bind(null, 'oiEo'))
           },
           loaderKey: 'defaultModuleHeaderLoader',
           strategy: m.a.Critical,
         },
-        S = c.e(k),
-        T = {
+        k = c.e(C),
+        S = {
           loader: function () {
             return n.e(213).then(n.bind(null, 'hKgB'))
           },
           loaderKey: 'defaultImpressionPlaceholderLoader',
           strategy: m.a.Critical,
         },
-        x = c.e(T),
-        I = function (e) {
+        T = c.e(S),
+        x = function (e) {
           return {
             loader: function () {
               return n.e(237).then(n.bind(null, 'D9QQ'))
@@ -5813,26 +5785,26 @@
             strategy: m.a.Critical,
           }
         },
-        O = function (e) {
+        I = function (e) {
           var t = e.isInSidebar
-          return c.e(I({ isInSidebar: t }))
+          return c.e(x({ isInSidebar: t }))
         },
-        R = n('m3Bd'),
-        A = n.n(R),
-        P = (n('dlmX'), n('5BYb'), n('2G9S'), n('jwue'), n('+oxZ'), n('z84I'), n('RhWx')),
-        L = n.n(P),
-        M = n('VrFO'),
-        D = n.n(M),
-        F = n('Y9Ll'),
-        B = n.n(F),
-        N =
+        O = n('m3Bd'),
+        R = n.n(O),
+        A = (n('dlmX'), n('5BYb'), n('2G9S'), n('jwue'), n('+oxZ'), n('z84I'), n('RhWx')),
+        P = n.n(A),
+        L = n('VrFO'),
+        M = n.n(L),
+        D = n('Y9Ll'),
+        F = n.n(D),
+        B =
           (n('Ee2X'),
           n('vrRf'),
           n('SrIh'),
           (function () {
             function e(t) {
               var n, r
-              D()(this, e),
+              M()(this, e),
                 o()(this, 'depth', 1),
                 o()(this, 'isAnchorChild', !1),
                 o()(this, 'hasAnchorChild', !1),
@@ -5851,7 +5823,7 @@
                 (this.isIndented = !(null === (r = t.treeDisplay) || void 0 === r || !r.indentFromParent))
             }
             return (
-              B()(e, [
+              F()(e, [
                 {
                   key: 'addChild',
                   value: function (e) {
@@ -5881,20 +5853,20 @@
               e
             )
           })()),
-        j = (function () {
+        N = (function () {
           function e(t) {
             var n = this,
               r = t.entries,
               i = t.isRootEntryPresent,
               a = t.maxIndent,
               s = t.selectedTweetId
-            D()(this, e),
+            M()(this, e),
               o()(this, '_roots', []),
               (this._lookup = {}),
               (this._maxIndent = a),
               (this._isRootEntryPresent = i),
               r.forEach(function (e, t) {
-                n._lookup[e.entryId] = new N(e)
+                n._lookup[e.entryId] = new B(e)
               }),
               r.forEach(function (e, t) {
                 var o = (function (e) {
@@ -5920,7 +5892,7 @@
               })
           }
           return (
-            B()(e, [
+            F()(e, [
               {
                 key: 'toArray',
                 value: function () {
@@ -5928,8 +5900,8 @@
                     t = []
                   return (
                     this._roots.forEach(function (n) {
-                      return H(n, function (r) {
-                        U(r, e._isRootEntryPresent ? n : void 0, e._maxIndent),
+                      return U(n, function (r) {
+                        j(r, e._isRootEntryPresent ? n : void 0, e._maxIndent),
                           (r.conversationTreeMetadata.indents.length < e._maxIndent ||
                             (r.conversationTreeMetadata.indents.length === e._maxIndent &&
                               r.parent &&
@@ -5946,7 +5918,7 @@
             e
           )
         })(),
-        U = function (e, t, n) {
+        j = function (e, t, n) {
           var r = e.entry,
             i = e.parent,
             o = r.treeDisplay
@@ -5959,7 +5931,7 @@
                 u = !0
               u = 'boolean' == typeof c ? c : i === t ? i.hasAnchorChild : i.children.length > 1
               var d = e.conversationTreeMetadata
-              ;(d.indents = L()(i.conversationTreeMetadata.indents)),
+              ;(d.indents = P()(i.conversationTreeMetadata.indents)),
                 u
                   ? (d.indents.push({ parentId: s, displayType: a }), (d.ancestorConnector = 'side'))
                   : (d.ancestorConnector =
@@ -5972,27 +5944,27 @@
             e.isAnchorChild && (p.ancestorConnector = 'top')
           }
         },
-        H = function e(t, n) {
+        U = function e(t, n) {
           n(t),
             t.children.forEach(function (t) {
               return e(t, n)
             })
         },
-        K = n('zrc3'),
-        z = n('RgK2'),
-        V = n.n(z),
-        W = function (e, t, n, r) {
+        H = n('zrc3'),
+        K = n('RgK2'),
+        z = n.n(K),
+        V = function (e, t, n, r) {
           return {
             type: l.a.ModuleImpressionPlaceholder,
             entryId: 'impressionPlaceholder-'.concat(e),
-            content: V.a,
+            content: z.a,
             itemMetadata: t,
             sortIndex: n,
             moduleBehavioralEventView: r,
           }
         },
-        q = ['socialContext'],
-        G = c.f({
+        W = ['socialContext'],
+        q = c.f({
           splice: function (e) {
             var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
               n = e.content.items,
@@ -6007,14 +5979,14 @@
               }, []),
               u = []
             if (0 === l.length) return u
-            u.push(W(r, { clientEventInfo: o }, s))
+            u.push(V(r, { clientEventInfo: o }, s))
             var d = l.some(function (e) {
               return e.treeDisplay
             })
-            return u.concat(d ? X(l, s) : Y(l, c, e))
+            return u.concat(d ? Y(l, s) : G(l, c, e))
           },
         }),
-        Y = function (e, t, n) {
+        G = function (e, t, n) {
           var r = [],
             i = n.sortIndex
           return (
@@ -6022,25 +5994,25 @@
               var s = 0 === a,
                 c = s ? void 0 : e[a - 1],
                 u = !1
-              c && c.type === l.b.Tweet && o.type === l.b.Tweet && (u = Q(c, o, t)) && r.push(ee(n, t, c.content.id))
+              c && c.type === l.b.Tweet && o.type === l.b.Tweet && (u = X(c, o, t)) && r.push($(n, t, c.content.id))
               var d = { isStart: s, isEnd: a === e.length - 1, position: 'descendant', showReplyContext: s || u },
                 p =
                   o.type === l.b.Tweet
-                    ? Z({
+                    ? J({
                         item: o,
                         conversationPosition: d,
                         conversationTreeMetadata: void 0,
                         isFirst: s,
                         sortIndex: i,
                       })
-                    : J({ item: o, conversationPosition: d, sortIndex: i })
+                    : Q({ item: o, conversationPosition: d, sortIndex: i })
               r.push(p)
             }),
             r
           )
         },
-        X = function (e, t) {
-          var n = new j({
+        Y = function (e, t) {
+          var n = new N({
               entries: e.map(function (e) {
                 return e.treeDisplay && (e.treeDisplay.isAnchorChild = !0), e
               }),
@@ -6058,28 +6030,28 @@
                 d = { isStart: !1, isEnd: i === e.length - 1 },
                 p =
                   a.type === l.b.Tweet
-                    ? Z({ isFirst: c, item: a, conversationPosition: d, conversationTreeMetadata: u, sortIndex: t })
-                    : J({ item: a, conversationPosition: d, conversationTreeMetadata: u, sortIndex: t })
+                    ? J({ isFirst: c, item: a, conversationPosition: d, conversationTreeMetadata: u, sortIndex: t })
+                    : Q({ item: a, conversationPosition: d, conversationTreeMetadata: u, sortIndex: t })
               r.push(p)
             }),
             r
           )
         },
-        Q = function (e, t, n) {
-          var r = Object(K.a)(n, function (t) {
+        X = function (e, t, n) {
+          var r = Object(H.a)(n, function (t) {
               return t === e.content.id
             }),
             i = r >= 0 && r < n.length - 1 && n[r + 1]
           return !!i && i !== t.content.id
         },
-        J = function (e) {
+        Q = function (e) {
           var t = e.conversationPosition,
             n = e.conversationTreeMetadata,
             r = e.item,
             i = e.sortIndex
           return s()(s()({}, r), {}, { conversationPosition: t, conversationTreeMetadata: n, sortIndex: i })
         },
-        Z = function (e) {
+        J = function (e) {
           var t = e.conversationPosition,
             n = e.conversationTreeMetadata,
             r = e.isFirst,
@@ -6087,7 +6059,7 @@
             o = e.sortIndex,
             a = i.content,
             c = a.socialContext,
-            l = A()(a, q)
+            l = R()(a, W)
           return s()(
             s()({}, i),
             {},
@@ -6099,26 +6071,26 @@
             },
           )
         },
-        $ = {},
-        ee = function (e, t, n) {
+        Z = {},
+        $ = function (e, t, n) {
           return {
             entryId: ''.concat(e.entryId, '-gap-').concat(n),
             type: l.a.ConversationModuleGap,
             content: { allTweetIds: t, focalTweetId: n },
-            itemMetadata: $,
+            itemMetadata: Z,
             sortIndex: e.sortIndex,
           }
         },
-        te = G,
-        ne = {
+        ee = q,
+        te = {
           loader: function () {
             return n.e(246).then(n.bind(null, 'VzRj'))
           },
           loaderKey: 'defaultVerticalGridListLoader',
           strategy: m.a.Critical,
         },
-        re = c.e(ne),
-        ie =
+        ne = c.e(te),
+        re =
           (n('M+/F'),
           function (e, t, n, r, i) {
             return {
@@ -6130,7 +6102,7 @@
               moduleBehavioralEventView: i,
             }
           }),
-        oe = function (e, t, n, r, i) {
+        ie = function (e, t, n, r, i) {
           return {
             type: l.a.ModuleVerticalGridList,
             sortIndex: t,
@@ -6140,7 +6112,7 @@
             moduleBehavioralEventView: i,
           }
         },
-        ae = function (e, t, n, r, i, o, a, s, c) {
+        oe = function (e, t, n, r, i, o, a, s, c) {
           return {
             type: l.a.ModuleVerticalGridTimelineRow,
             entryId: 'verticalGridRow-'.concat(s, '-').concat(e),
@@ -6157,7 +6129,7 @@
             moduleBehavioralEventView: i,
           }
         },
-        se = function (e) {
+        ae = function (e) {
           var t = e.isWide
           return c.f({
             splice: function (e) {
@@ -6177,7 +6149,7 @@
                   viewType: i,
                   entityToken: null === (n = f.clientEventInfo) || void 0 === n ? void 0 : n.entityToken,
                 }
-              m.push(W(u, e.itemMetadata, h, v)), a && m.push(p(u, a, e, h, v))
+              m.push(V(u, e.itemMetadata, h, v)), a && m.push(p(u, a, e, h, v))
               for (
                 var g = t ? 3 : 2, y = c || (null == l ? void 0 : l.initialItemsCount) || s.length, b = '', _ = 0;
                 _ < y;
@@ -6185,27 +6157,27 @@
               )
                 b += 'verticalGridItem-'.concat(_, '-').concat(u, ' ')
               var w = !!l && y < s.length
-              m.push(oe(u, h, b, f, v))
+              m.push(ie(u, h, b, f, v))
               for (var E = 0; E < y; E += g) {
                 var C = E / g,
                   k = s.slice(E, Math.min(y, E + g)),
                   S = w && E + g >= y
-                m.push(ae(u, f, k, h, v, null == l ? void 0 : l.entryToFocus, g, C, S))
+                m.push(oe(u, f, k, h, v, null == l ? void 0 : l.entryToFocus, g, C, S))
               }
-              return l && w && m.push(ie(u, l, e, h, v)), o && m.push(d(u, o, e.itemMetadata, h, v)), m
+              return l && w && m.push(re(u, l, e, h, v)), o && m.push(d(u, o, e.itemMetadata, h, v)), m
             },
             divider: { top: !0, bottom: !0 },
           })
         },
-        ce = {
+        se = {
           loader: function () {
             return n.e(247).then(n.bind(null, 'JKhl'))
           },
           loaderKey: 'defaultVerticalGridRowLoader',
           strategy: m.a.Critical,
         },
-        le = c.e(ce),
-        ue = c.f({
+        ce = c.e(se),
+        le = c.f({
           splice: function (e) {
             var t,
               n = e.content,
@@ -6222,11 +6194,11 @@
                 entityToken: null === (t = l.clientEventInfo) || void 0 === t ? void 0 : t.entityToken,
               }
             return (
-              f.push(W(c, e.itemMetadata, u, h)),
+              f.push(V(c, e.itemMetadata, u, h)),
               o && f.push(p(c, o, e, u, h)),
               f.push.apply(
                 f,
-                L()(
+                P()(
                   a.map(function (e) {
                     return s()(s()({}, e), {}, { sortIndex: u, moduleBehavioralEventView: h })
                   }),
@@ -6238,7 +6210,7 @@
           },
           divider: { top: !0, bottom: !0 },
         }),
-        de = function (e) {
+        ue = function (e) {
           var t = e.customHandlers,
             n = e.customSelectDisplayType,
             r = e.isWide
@@ -6255,9 +6227,9 @@
                 Carousel: h(g.a.Carousel),
                 GridCarousel: h(g.a.GridCarousel),
                 PagedCarousel: h(g.a.PagedCarousel),
-                Vertical: ue,
-                VerticalConversation: te,
-                VerticalGrid: se({ isWide: r }),
+                Vertical: le,
+                VerticalConversation: ee,
+                VerticalGrid: ae({ isWide: r }),
               },
             ),
           })
@@ -6273,15 +6245,15 @@
           c = void 0 !== s && s
         return (
           (e = {}),
-          o()(e, l.b.TimelineModule, de({ customHandlers: n, customSelectDisplayType: r, isWide: c })),
-          o()(e, l.a.ModuleImpressionPlaceholder, x),
-          o()(e, l.a.ModuleHeader, S),
-          o()(e, l.a.ModuleFooter, C({ isInSidebar: a })),
-          o()(e, l.a.ModuleShowMore, O({ isInSidebar: a })),
+          o()(e, l.b.TimelineModule, ue({ customHandlers: n, customSelectDisplayType: r, isWide: c })),
+          o()(e, l.a.ModuleImpressionPlaceholder, T),
+          o()(e, l.a.ModuleHeader, k),
+          o()(e, l.a.ModuleFooter, E({ isInSidebar: a })),
+          o()(e, l.a.ModuleShowMore, I({ isInSidebar: a })),
           o()(e, l.a.ConversationModuleGap, _),
           o()(e, l.a.ModuleCarouselTimeline, y),
-          o()(e, l.a.ModuleVerticalGridList, re),
-          o()(e, l.a.ModuleVerticalGridTimelineRow, le),
+          o()(e, l.a.ModuleVerticalGridList, ne),
+          o()(e, l.a.ModuleVerticalGridTimelineRow, ce),
           e
         )
       }
@@ -12858,6 +12830,7 @@
                       linkify: o,
                       onEntityClick: e.props.onEntityClick,
                       size: h,
+                      style: f && Rn.interactiveHighlightSpacer,
                       transformUrl: e._transformUrl,
                       unmentionedUserIds: p.unmentioned_user_ids,
                       weight: f ? 'heavy' : t.weight,
@@ -12925,6 +12898,7 @@
                         quotedTweetId: f.quoted_status && f.quoted_status.id_str,
                         quotedTweetPermalink: f.quoted_status_permalink,
                         size: m,
+                        style: h && Rn.interactiveHighlightSpacer,
                         text: f.text,
                         transformUrl: e._transformUrl,
                         unmentionedUserIds: f.unmentioned_user_ids,
@@ -13132,36 +13106,41 @@
                         var a = i()(t, 2),
                           c = a[0],
                           m = a[1],
-                          b =
+                          b = N
+                            ? Vt.a.hasInteractiveText(A)
+                              ? Rn.promotedIndicatorBelowHeaderWithInteractiveHighlights
+                              : Rn.promotedIndicatorBelowHeader
+                            : Rn.promotedIndicator,
+                          _ =
                             h && B
                               ? E.a.createElement(Jt.a, {
                                   contentAuthorId: M.id_str,
                                   nativeID: c.promotedLabel,
                                   promotedContent: h,
-                                  style: N ? Rn.promotedIndicatorBelowHeader : Rn.promotedIndicator,
+                                  style: b,
                                   withCircleIcon: j,
                                 })
                               : null,
-                          _ = H
+                          T = H
                             ? E.a.createElement(lt, {
                                 nativeID: c.promotionStatusLabel,
                                 status: e._getTweetPromotionStatus(D),
                                 style: Rn.promotionStatus,
                               })
                             : null,
-                          T = n
+                          L = n
                             ? E.a.createElement(
                                 x.b,
                                 { nativeID: c.conversationLevel, style: R.a.visuallyHidden },
                                 Sn({ conversationTreeDepth: n.depth.toString() }),
                               )
                             : null,
-                          L = A.tombstoneInfo || w.tombstoneInfo,
-                          F = E.a.createElement(
+                          F = A.tombstoneInfo || w.tombstoneInfo,
+                          K = E.a.createElement(
                             E.a.Fragment,
                             null,
-                            L ? e._renderTombstone(L) : null,
-                            l || !L
+                            F ? e._renderTombstone(F) : null,
+                            l || !F
                               ? E.a.createElement(
                                   E.a.Fragment,
                                   null,
@@ -13210,9 +13189,9 @@
                                 withUnreadStyles: I,
                               },
                               N && l ? e._renderPromotedDetails(j) : null,
-                              N && !l ? b : null,
-                              T,
-                              F,
+                              N && !l ? _ : null,
+                              L,
+                              K,
                               U &&
                                 'inline' === J &&
                                 E.a.createElement(
@@ -13225,7 +13204,7 @@
                                   },
                                   e._getPromoteButtonText(D),
                                 ),
-                              e._renderFocalContent(N, U, _),
+                              e._renderFocalContent(N, U, T),
                               'inline' === J &&
                                 E.a.createElement(it, {
                                   conversationControlLabelNativeID: c.conversationControlLabel,
@@ -13250,8 +13229,8 @@
                                     withCount: !l,
                                   }),
                               e._renderReaderModeButton(),
-                              N || l ? null : b,
-                              l ? null : _,
+                              N || l ? null : _,
+                              l ? null : T,
                               'detail' === J &&
                                 E.a.createElement(it, {
                                   conversationControlLabelNativeID: c.conversationControlLabel,
@@ -14082,6 +14061,7 @@
           tweetActivityPromoteButton: { marginVertical: e.spaces.space8 },
           promotedIndicator: { marginTop: e.spaces.space12 },
           promotedIndicatorBelowHeader: { marginBottom: e.spaces.space8 },
+          promotedIndicatorBelowHeaderWithInteractiveHighlights: { marginBottom: e.spaces.space4 },
           promotedDetails: { marginTop: e.spaces.space4 },
           promotionStatus: { marginTop: e.spaces.space12 },
           socialContext: { marginBottom: e.spaces.space4, marginTop: '-'.concat(e.spaces.space4) },
@@ -14091,6 +14071,7 @@
           footerContainer: { marginVertical: e.spaces.space16 },
           footerContent: { alignItems: 'center', flexDirection: 'row', justifyContent: 'space-between' },
           footerIcons: { flexDirection: 'row' },
+          interactiveHighlightSpacer: { marginTop: e.spaces.space8 },
           readerBottomBar: {
             borderBottomColor: e.colors.nestedBorderColor,
             borderBottomStyle: 'solid',
@@ -17612,14 +17593,13 @@
               {
                 key: 'componentDidMount',
                 value: function () {
-                  this._listener = y.a.addEventListener('change', this._onAppForegrounded)
+                  y.a.addEventListener('change', this._onAppForegrounded)
                 },
               },
               {
                 key: 'componentWillUnmount',
                 value: function () {
-                  var e
-                  null === (e = this._listener) || void 0 === e || e.remove()
+                  y.a.removeEventListener('change', this._onAppForegrounded)
                 },
               },
               {
@@ -48359,7 +48339,7 @@
                     : null
                 },
                 renderPromotedIndicator: function (e) {
-                  return re && d.a.isPromoted(re) && !ce.retweeted_status
+                  return re && d.a.isPromoted(re)
                     ? f(i()({ contentAuthorId: ue.user.id_str, nativeID: fe.promotedLabel, promotedContent: re }, e))
                     : null
                 },
@@ -48589,7 +48569,13 @@
               withTopLine: b.withTopLine,
               withUnreadStyles: b.withUnreadStyles,
             },
-            I ? b.renderPromotedIndicator({ style: oe.promotedIndicatorBelowHeader }) : null,
+            I
+              ? b.renderPromotedIndicator({
+                  style: h.a.hasInteractiveText(w)
+                    ? oe.promotedIndicatorBelowHeaderWithInteractiveHighlights
+                    : oe.promotedIndicatorBelowHeader,
+                })
+              : null,
             A,
             null !== P
               ? P
@@ -48629,6 +48615,7 @@
           socialContextIcon: { marginBottom: e.spaces.space4 },
           promotedIndicator: { marginTop: e.spaces.space12 },
           promotedIndicatorBelowHeader: { marginBottom: e.spaces.space8 },
+          promotedIndicatorBelowHeaderWithInteractiveHighlights: { marginBottom: e.spaces.space4 },
           tombstone: { marginVertical: e.spaces.space4 },
         }
       })

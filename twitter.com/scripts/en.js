@@ -427,6 +427,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cfd94063', function (e) {
             return e.peopleCount + ' people'
           }),
+          a('b93ba92c', function (e) {
+            return e.peopleCount + ' pe' + n(e.peopleCount, 'rson', 'ople')
+          }),
           a('b5b7fb93', 'Group'),
           a('g755fcde', 'You'),
           a('f6b1ff81', function (e) {
@@ -1161,9 +1164,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j9552760', 'Mute conversation'),
           a('d751694c', 'When you mute a conversation, you won’t get any new notifications about it.'),
           a('ha35a1d2', 'Pin to your profile'),
-          a('afac3b9d', 'Pin Tweet to profile?'),
-          a('e2d44ce9', 'This will appear at the top of your profile and replace any previously pinned Tweet.')
-        a('aaef1b48', 'Your Tweet was pinned to your profile.'),
+          a('afac3b9d', 'Pin Tweet to profile?')
+        a('e2d44ce9', 'This will appear at the top of your profile and replace any previously pinned Tweet.'),
+          a('aaef1b48', 'Your Tweet was pinned to your profile.'),
           a('f5cdcc2b', 'Not interested in this ad'),
           a('b99364a5', function (e) {
             return 'Remove @' + e.screenName + ' from Community'
@@ -1181,6 +1184,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('eb2d59f3', 'This will no longer appear automatically at the top of your profile.'),
           a('i0086d6b', 'Your Tweet was unpinned from your profile'),
           a('f9478972', 'View hidden replies'),
+          a('bb16cc75', 'Leave this conversation'),
+          a('de21174c', 'You’ve left this conversation'),
+          a('j33c9fc6', 'Never mind, I’ll stay'),
+          a('aed79c53', 'Let’s get you out of this conversation'),
+          a('h12044a3', 'Sometimes you just don’t wanna engage. Leaving a conversation will…'),
+          a('f100e566', 'Untag your username'),
+          a('f094f6d6', 'Your username stays, but it’ll be untagged from the original Tweet and all replies.'),
+          a('b00255b5', 'Stop future mentions'),
+          a('geea29ee', 'People can’t mention you again in this conversation.'),
+          a('c54678e7', 'Stop notifications'),
+          a('ga4fa180', 'You won’t receive further notifications, but can still see the conversation.'),
+          a('h8dde771', 'No one will be notified if you leave a conversation.'),
           a('ff9bd692', 'Report Tweet'),
           a('e3fd237d', 'Report ad'),
           a('d1e2161f', 'Report NetzDG Violation'),
@@ -1366,7 +1381,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bea869b3', 'Tweet'),
           a('d3145da8', 'Thanks for letting us know.'),
           a('f70a36d0', 'Tweet all'),
-          a('de21174c', 'You’ve left this conversation'),
           a(
             'haebcf51',
             'People can’t mention you again in this conversation and you won’t receive further notifications.',
@@ -1794,8 +1808,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c8c1fa6d', 'Clear all Bookmarks'),
           a('jf748f4f', 'Clear all Bookmarks?'),
           a('cc0f2f4f', 'This can’t be undone and you’ll remove all Tweets you’ve added to your Bookmarks.'),
-          a('e38b760f', 'You haven’t added any Tweets to your Bookmarks yet'),
-          a('ea1715cf', 'When you do, they’ll show up here.'),
+          a('cd343e15', 'Save Tweets for later'),
+          a('f47e39e8', 'Don’t let the good ones fly away! Bookmark Tweets to easily find them again in the future.'),
           a('ee8589ad', 'Compose a Tweet'),
           a('f075b0e8', 'Edit Folder'),
           a('beba2a0d', 'Create a new Bookmark Folder'),
@@ -1849,6 +1863,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a7c2e06c', function (e) {
             return e.communityName + ' Community'
           }),
+          a('a94092a1', 'You now have access to moderation tools'),
+          a('i1fda797', 'As a Community mod, you can add and remove members. Use your power wisely.'),
           a('cc683fb9', 'About Community'),
           a('af7c11a9', 'Community Info'),
           a('db1b9462', 'Only members can Tweet, like, or reply.'),
@@ -1868,8 +1884,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('dce5e1b3', 'Admin tools'),
           a('c5d8c93d', 'Moderator tools'),
           a('a0e3ece4', 'Community Detail'),
-          a('bec3b8f9', 'Share Community'),
-          a('b139b549', 'Invite members'),
           a('d601fc2f', 'Latest'),
           a('e6057013', 'Ask to join'),
           a('aa7ae3f6', 'Joined'),
@@ -1884,6 +1898,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a0e0a52b', function (e) {
             return '' + e.offendingRule
           }),
+          a('b139b549', 'Invite members'),
+          a('bec3b8f9', 'Share Community'),
           a('hb9400db', 'See More'),
           a('c18e3a3e', 'There aren’t any Tweets in this Community'),
           a('d68146c0', 'When anyone in this Community Tweets, they’ll show up here.'),
@@ -2261,8 +2277,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f56af9cc', 'Download an archive of your data'),
           a('d13e165c', 'TweetDeck Teams'),
           a('hfb92b14', 'Deactivate your account'),
-          a('bf96fda4', 'Age'),
-          a('j9d10268', 'Account activity'),
+          a('bf96fda4', 'Age')
+        a('j9d10268', 'Account activity'),
           a('i6b3f59a', 'Account history'),
           a('da202f9a', 'Your advertiser list'),
           a('hc36dbba', 'Logged-in devices and apps'),
@@ -2275,8 +2291,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b7fde2b8', 'Your Twitter data'),
           a('d299431b', 'Monetization'),
           a('a6777c1b', 'Super Follows'),
-          a('de43eaf2', 'Undo Tweet')
-        a('f6e88161', 'Labs'),
+          a('de43eaf2', 'Undo Tweet'),
+          a('f6e88161', 'Labs'),
           a('ib35705d', 'Manage Subscription'),
           a('f8645654', 'Security and account access'),
           a('j95edf76', 'Security'),
@@ -2855,7 +2871,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b51afbb2', 'Authenticity Method'),
           a('cc87b01c', 'Review and submit'),
           a('d12d42db', 'Automation'),
-          a('ja854816', 'Manage your automated account'),
+          a('ad31b476', 'Manage your automated account.'),
           a('a2981062', 'Managing account'),
           a('aff4540e', 'Change managing account'),
           a('b8b9d10f', 'Set up account automation'),
@@ -3503,8 +3519,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e5a4a538', 'Learn more'),
           a('icbb92d0', 'Apps page'),
           a('a9bec4ef', 'Learn more'),
-          a('gc8f2e13', 'You can opt out of interest-based advertising in your personalization and data settings.'),
-          a('f04e17dd', 'Learn more'),
+          a('gc8f2e13', 'You can opt out of interest-based advertising in your personalization and data settings.')
+        a('f04e17dd', 'Learn more'),
           a('d3310e48', function (e) {
             return (
               'A file with all the information associated with your account will be sent to ' + e.primaryEmail + '.'
@@ -3527,8 +3543,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h43e2ea7', 'Muted word'),
           a('da8c044f', 'Mute from'),
           a('defb4aa9', 'From anyone'),
-          a('e7d47b00', 'From people you don’t follow')
-        a('c67e3fc1', 'Home timeline'),
+          a('e7d47b00', 'From people you don’t follow'),
+          a('c67e3fc1', 'Home timeline'),
           a('d9d6e10e', 'Duration'),
           a('gfa5008d', 'Extend mute time'),
           a('c5595dfe', 'Change mute time'),
@@ -3593,8 +3609,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('hbd12156', 'Request Verification'),
           a('f70d5780', 'Yes.'),
           a('dc62d3c6', 'No.'),
-          a('ab22c36c', 'Disabled'),
-          a('j3a1cff6', 'Enabled'),
           a('f445dc78', 'Protected Tweets'),
           a(
             'd6d80990',
@@ -4720,8 +4734,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e4ff75a9', 'Something went wrong. Check your connection and try again.'),
           a('e4f6bd9e', 'Oops, something went wrong. Please try again later.'),
           a('hc72e1fc', 'Please enter a valid email.'),
-          a('fa69a1ca', 'Reveal password'),
-          a('aacf5085', 'Hide password'),
+          a('fa69a1ca', 'Reveal password')
+        function r(e, t) {
+          for (var o = 0; o < t.length; o++) {
+            var a = t[o]
+            ;(a.enumerable = a.enumerable || !1),
+              (a.configurable = !0),
+              'value' in a && (a.writable = !0),
+              Object.defineProperty(e, a.key, a)
+          }
+        }
+        function i(e, t) {
+          return (i =
+            Object.setPrototypeOf ||
+            function (e, t) {
+              return (e.__proto__ = t), e
+            })(e, t)
+        }
+        a('aacf5085', 'Hide password'),
           a('c52be451', 'Yes, remove'),
           a(
             'i769e50a',
@@ -4739,24 +4769,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('f134915f', function (e) {
             return e.count + ' selected items'
-          })
-        function r(e, t) {
-          for (var o = 0; o < t.length; o++) {
-            var a = t[o]
-            ;(a.enumerable = a.enumerable || !1),
-              (a.configurable = !0),
-              'value' in a && (a.writable = !0),
-              Object.defineProperty(e, a.key, a)
-          }
-        }
-        function i(e, t) {
-          return (i =
-            Object.setPrototypeOf ||
-            function (e, t) {
-              return (e.__proto__ = t), e
-            })(e, t)
-        }
-        a('b8fb87e0', 'View selected topics'),
+          }),
+          a('b8fb87e0', 'View selected topics'),
           a('e854ad27', function (e) {
             return 'Topic - ' + e.title
           }),
@@ -5992,6 +6006,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d7e50a66', 'Learn more'),
           a('a35a5b10', 'Followers you know'),
           a('fc8cd112', 'Not followed by anyone you’re following'),
+          a('gaeb997d', 'More'),
           a('f4393d0f', function (e) {
             return 'Attributed to ' + e.name
           }),
@@ -6010,11 +6025,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               c.createElement(c.Fragment, null, '', e.secondName),
               e.otherUsersCount + ' others',
             )
-          }),
-          a('gaeb997d', 'More'),
-          a('f1a1b790', function (e) {
-            return 'Promoted by ' + e.fullName
-          }),
+          })
+        a('f1a1b790', function (e) {
+          return 'Promoted by ' + e.fullName
+        }),
           a('if2bf8b3', 'Promoted'),
           a('f3624b5c', 'Promoted (political)'),
           a('b4b3b113', function (e) {
@@ -6035,8 +6049,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('gdd51574', 'Pull to refresh'),
           a('c9d7235d', 'Quote Tweet'),
-          a('a8b58cf3', 'Show this thread')
-        a('i5f742fd', 'Show this poll'),
+          a('a8b58cf3', 'Show this thread'),
+          a('i5f742fd', 'Show this poll'),
           a('ccd32093', 'Now'),
           a('abfcce0d', function (e) {
             return e.amountOfTime + ' ago'
@@ -6190,8 +6204,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cfd13f46', 'Voice Dock')
         var c = o('ERkP'),
           s = [],
-          d = {}
-        function u(e) {
+          u = {}
+        function d(e) {
           return e
         }
         var f = (function (e) {
@@ -8659,7 +8673,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 get: function () {
                   var e,
                     t = c.Children.toArray(this.props.children),
-                    o = ((e = this.props.$i18n), s[d[e]] || u)
+                    o = ((e = this.props.$i18n), s[u[e]] || d)
                   return function (e, a, n) {
                     return e.concat(a, t[o(n)])
                   }
@@ -10948,6 +10962,31 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               },
             },
           )),
+          (l.a1989241728 = p(
+            { 1: l('en').numberFormatter({ raw: '0' }) },
+            {
+              pattern: 'MMMM d, y',
+              timeSeparator: ':',
+              months: {
+                M: {
+                  4: {
+                    1: 'January',
+                    2: 'February',
+                    3: 'March',
+                    4: 'April',
+                    5: 'May',
+                    6: 'June',
+                    7: 'July',
+                    8: 'August',
+                    9: 'September',
+                    10: 'October',
+                    11: 'November',
+                    12: 'December',
+                  },
+                },
+              },
+            },
+          )),
           (l.a878419275 = w(l('en').dateToPartsFormatter({ skeleton: 'MMMd' }))),
           (l.b965415715 = w(l('en').dateToPartsFormatter({ skeleton: 'hm' }))),
           (l.a1434444438 = w(l('en').dateToPartsFormatter({ skeleton: 'MMMEd' }))),
@@ -10965,6 +11004,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           (l.b1998581093 = w(l('en').dateToPartsFormatter({ datetime: 'medium' }))),
           (l.a1830739137 = w(l('en').dateToPartsFormatter({ datetime: 'full' }))),
           (l.a1286203598 = w(l('en').dateToPartsFormatter({ date: 'medium' }))),
+          (l.b490808361 = w(l('en').dateToPartsFormatter({ skeleton: 'yMMMMd' }))),
           (l.b687161418 = g(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
             'relativeTime-type-future': {
               'relativeTimePattern-count-one': 'in {0} day',
@@ -11177,6 +11217,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d0a77c9a', l.b1998581093),
           a('g8d1b99b', l.a1830739137),
           a('h3629782', l.a1286203598),
+          a('a1061083', l.b490808361),
           a('ja781451', l.a71710728),
           a('cfa1a7b8', l.a605057387),
           a('cf8abf58', l.b1158699306),

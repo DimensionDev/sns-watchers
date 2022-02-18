@@ -1,10 +1,10 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
   [84],
   {
-    '+hxm': function (e, l, n) {
+    '+hxm': function (e, l, a) {
       'use strict'
-      n.r(l)
-      var a,
+      a.r(l)
+      var n,
         t,
         r,
         i,
@@ -13,12 +13,14 @@
         o,
         c,
         d,
-        m,
         g,
+        m,
+        p,
         y,
-        p = {
+        _,
+        k = {
           fragment: {
-            argumentDefinitions: (a = [{ defaultValue: null, kind: 'LocalArgument', name: 'reportId' }]),
+            argumentDefinitions: (n = [{ defaultValue: null, kind: 'LocalArgument', name: 'reportId' }]),
             kind: 'Fragment',
             metadata: null,
             name: 'ReportDetailQuery',
@@ -119,7 +121,7 @@
           },
           kind: 'Request',
           operation: {
-            argumentDefinitions: a,
+            argumentDefinitions: n,
             kind: 'Operation',
             name: 'ReportDetailQuery',
             selections: [
@@ -194,7 +196,7 @@
                                                     kind: 'LinkedField',
                                                     name: 'tweet',
                                                     plural: !1,
-                                                    selections: (y = [
+                                                    selections: (_ = [
                                                       {
                                                         alias: null,
                                                         args: null,
@@ -238,13 +240,13 @@
                                                                             name: 'description',
                                                                             storageKey: null,
                                                                           }),
-                                                                          {
+                                                                          (d = {
                                                                             alias: null,
                                                                             args: null,
                                                                             kind: 'ScalarField',
                                                                             name: 'profile_image_url_https',
                                                                             storageKey: null,
-                                                                          },
+                                                                          }),
                                                                           {
                                                                             alias: null,
                                                                             args: null,
@@ -252,14 +254,14 @@
                                                                             name: 'protected',
                                                                             storageKey: null,
                                                                           },
-                                                                          {
+                                                                          (g = {
                                                                             alias: null,
                                                                             args: null,
                                                                             kind: 'ScalarField',
                                                                             name: 'screen_name',
                                                                             storageKey: null,
-                                                                          },
-                                                                          (d = {
+                                                                          }),
+                                                                          (m = {
                                                                             alias: null,
                                                                             args: null,
                                                                             kind: 'ScalarField',
@@ -283,7 +285,7 @@
                                                                         ],
                                                                         storageKey: null,
                                                                       },
-                                                                      (m = {
+                                                                      (p = {
                                                                         alias: null,
                                                                         args: null,
                                                                         filters: null,
@@ -292,7 +294,7 @@
                                                                         kind: 'LinkedHandle',
                                                                         name: 'legacy',
                                                                       }),
-                                                                      (g = {
+                                                                      (y = {
                                                                         alias: null,
                                                                         args: null,
                                                                         kind: 'ScalarField',
@@ -351,8 +353,8 @@
                                                         ],
                                                         storageKey: null,
                                                       },
-                                                      m,
-                                                      g,
+                                                      p,
+                                                      y,
                                                     ]),
                                                     storageKey: null,
                                                   },
@@ -362,7 +364,7 @@
                                               },
                                               {
                                                 kind: 'InlineFragment',
-                                                selections: y,
+                                                selections: _,
                                                 type: 'Tweet',
                                                 abstractKey: null,
                                               },
@@ -395,11 +397,23 @@
                                                     kind: 'LinkedField',
                                                     name: 'legacy',
                                                     plural: !1,
-                                                    selections: [d, c],
+                                                    selections: [
+                                                      c,
+                                                      {
+                                                        alias: 'idStr',
+                                                        args: null,
+                                                        kind: 'ScalarField',
+                                                        name: 'id_str',
+                                                        storageKey: null,
+                                                      },
+                                                      m,
+                                                      d,
+                                                      g,
+                                                    ],
                                                     storageKey: null,
                                                   },
-                                                  m,
-                                                  g,
+                                                  p,
+                                                  y,
                                                 ],
                                                 type: 'User',
                                                 abstractKey: null,
@@ -417,7 +431,7 @@
                                 ],
                                 storageKey: null,
                               },
-                              g,
+                              y,
                             ],
                             type: 'User',
                             abstractKey: null,
@@ -434,45 +448,45 @@
             ],
           },
           params: {
-            id: 'RfIZsqztZlfVJKEmkVkPwg',
+            id: 'vrDXaqJB6ZIXZQkhuvi8Kw',
             metadata: {},
             name: 'ReportDetailQuery',
             operationKind: 'query',
             text: null,
           },
         }
-      ;(p.hash = 'a6d24222c1869199e6c00d8d9cd2f20a'), (l.default = p)
+      ;(k.hash = 'a6d24222c1869199e6c00d8d9cd2f20a'), (l.default = k)
     },
-    '2MR/': function (e, l, n) {
+    '2MR/': function (e, l, a) {
       'use strict'
-      var a = n('ddV6'),
-        t = n.n(a),
-        r = n('ERkP'),
-        i = n.n(r),
-        s = n('3XMw'),
-        u = n.n(s),
-        o = n('v302'),
+      var n = a('ddV6'),
+        t = a.n(n),
+        r = a('ERkP'),
+        i = a.n(r),
+        s = a('3XMw'),
+        u = a.n(s),
+        o = a('v302'),
         c = u.a.b05a39b2,
         d = u.a.c566d3a5,
-        m = function (e) {
+        g = function (e) {
           return i.a.createElement(o.a, e)
         },
-        g = function (e) {
+        m = function (e) {
           var l = e.children,
-            n = e.hideLabel,
-            a = void 0 === n ? d : n,
+            a = e.hideLabel,
+            n = void 0 === a ? d : a,
             r = e.label,
             s = e.lang,
             u = e.render,
-            o = void 0 === u ? m : u,
-            g = e.revealLabel,
-            y = void 0 === g ? c : g,
-            p = i.a.useState(!1),
-            _ = t()(p, 2),
+            o = void 0 === u ? g : u,
+            m = e.revealLabel,
+            p = void 0 === m ? c : m,
+            y = i.a.useState(!1),
+            _ = t()(y, 2),
             k = _[0],
             f = _[1]
           return o({
-            actionText: k ? a : y,
+            actionText: k ? n : p,
             children: k ? l : r,
             lang: s,
             onActionClick: function () {
@@ -480,12 +494,12 @@
             },
           })
         }
-      ;(g.displayName = 'TweetDisclosure'), (l.a = g)
+      ;(m.displayName = 'TweetDisclosure'), (l.a = m)
     },
-    '6mUz': function (e, l, n) {
+    '6mUz': function (e, l, a) {
       'use strict'
-      n.r(l)
-      var a = {
+      a.r(l)
+      var n = {
         argumentDefinitions: [],
         kind: 'Fragment',
         metadata: { plural: !0 },
@@ -495,12 +509,12 @@
         abstractKey: '__isReportEntityResults',
         hash: 'b18415d0f89c2df57f81abcb4600f199',
       }
-      l.default = a
+      l.default = n
     },
-    Gi4s: function (e, l, n) {
+    Gi4s: function (e, l, a) {
       'use strict'
-      n.r(l)
-      var a,
+      a.r(l)
+      var n,
         t,
         r,
         i = {
@@ -509,7 +523,7 @@
           metadata: null,
           name: 'ReportEntityTweet_tweetResults',
           selections: [
-            (a = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
+            (n = { alias: null, args: null, kind: 'ScalarField', name: '__typename', storageKey: null }),
             {
               alias: null,
               args: null,
@@ -521,7 +535,7 @@
                 {
                   kind: 'InlineFragment',
                   selections: [
-                    a,
+                    n,
                     {
                       alias: null,
                       args: null,
@@ -669,10 +683,10 @@
         }
       ;(i.hash = '7f71f3b7eba1f3557c37027057803ab1'), (l.default = i)
     },
-    'r/Jf': function (e, l, n) {
+    'r/Jf': function (e, l, a) {
       'use strict'
-      n.r(l)
-      var a = {
+      a.r(l)
+      var n = {
         argumentDefinitions: [],
         kind: 'Fragment',
         metadata: null,
@@ -698,8 +712,17 @@
                     name: 'legacy',
                     plural: !1,
                     selections: [
-                      { alias: null, args: null, kind: 'ScalarField', name: 'name', storageKey: null },
                       { alias: null, args: null, kind: 'ScalarField', name: 'description', storageKey: null },
+                      { alias: 'idStr', args: null, kind: 'ScalarField', name: 'id_str', storageKey: null },
+                      { alias: null, args: null, kind: 'ScalarField', name: 'name', storageKey: null },
+                      {
+                        alias: null,
+                        args: null,
+                        kind: 'ScalarField',
+                        name: 'profile_image_url_https',
+                        storageKey: null,
+                      },
+                      { alias: null, args: null, kind: 'ScalarField', name: 'screen_name', storageKey: null },
                     ],
                     storageKey: null,
                   },
@@ -713,40 +736,40 @@
         ],
         type: 'UserResults',
         abstractKey: null,
-        hash: 'e905ec0e6e9e70201856a135fa2a1b48',
+        hash: 'fd6bd3ce65fc643c13eaf27668e8d085',
       }
-      l.default = a
+      l.default = n
     },
-    sjuR: function (e, l, n) {
+    sjuR: function (e, l, a) {
       'use strict'
-      n.r(l)
-      n('Blm6'), n('2G9S')
-      var a,
+      a.r(l)
+      a('Blm6'), a('2G9S')
+      var n,
         t,
         r,
         i,
         s,
-        u = n('ERkP'),
-        o = n.n(u),
-        c = n('lnti'),
-        d = n('jHSc'),
-        m = (n('enFi'), n('3XMw')),
-        g = n.n(m),
-        y = n('Fr3L'),
-        p = n.p + 'report-detail-ear.0518acc5.png',
-        _ = (n('z84I'), n('yiKp')),
-        k = n.n(_),
-        f = n('97Jx'),
-        F = n.n(f),
-        b = (n('1t7P'), n('jQ/y'), n('ho0z'), n('uFXj'), n('MWbm')),
-        K = n('jAXQ'),
-        w = n.n(K),
-        v = n('7N4s'),
-        h = n('2MR/'),
-        R = n('v302'),
-        T = n('r7g+'),
-        S = n('rHpw'),
-        E = g.a.a098fa3c,
+        u = a('ERkP'),
+        o = a.n(u),
+        c = a('lnti'),
+        d = a('jHSc'),
+        g = (a('enFi'), a('3XMw')),
+        m = a.n(g),
+        p = a('Fr3L'),
+        y = a.p + 'report-detail-ear.0518acc5.png',
+        _ = (a('z84I'), a('yiKp')),
+        k = a.n(_),
+        f = a('97Jx'),
+        F = a.n(f),
+        b = (a('1t7P'), a('jQ/y'), a('ho0z'), a('uFXj'), a('MWbm')),
+        K = a('jAXQ'),
+        v = a.n(K),
+        w = a('7N4s'),
+        h = a('2MR/'),
+        R = a('v302'),
+        S = a('r7g+'),
+        T = a('rHpw'),
+        E = m.a.a098fa3c,
         L = {
           display_text_range: [0, 24],
           favorite_count: 0,
@@ -794,8 +817,8 @@
             t,
             r,
             i = e.tweet_results,
-            s = w()(void 0 !== a ? a : (a = n('Gi4s')), i),
-            u = o.a.useContext(v.b).isModal,
+            s = v()(void 0 !== n ? n : (n = a('Gi4s')), i),
+            u = o.a.useContext(w.b).isModal,
             c =
               'TweetWithVisibilityResults' ===
               (null == s || null === (l = s.result) || void 0 === l ? void 0 : l.__typename)
@@ -804,7 +827,7 @@
                   : t.tweet
                 : s.result,
             d = null == c || null === (r = c.legacy) || void 0 === r ? void 0 : r.full_text,
-            m = o.a.useCallback(
+            g = o.a.useCallback(
               function () {
                 return o.a.createElement(
                   h.a,
@@ -820,17 +843,17 @@
               [d],
             )
           return (function (e) {
-            var l, n
+            var l, a
             if (
               null != e &&
               null !== (l = e.core) &&
               void 0 !== l &&
-              null !== (n = l.user_results.result) &&
-              void 0 !== n &&
-              n.legacy &&
+              null !== (a = l.user_results.result) &&
+              void 0 !== a &&
+              a.legacy &&
               e.legacy
             ) {
-              var a = e.core.user_results.result.legacy,
+              var n = e.core.user_results.result.legacy,
                 t = {
                   tweet: k()(
                     k()({}, L),
@@ -848,13 +871,13 @@
                         k()({}, x),
                         {},
                         {
-                          description: a.description || '',
-                          profile_image_url_https: a.profile_image_url_https || '',
-                          protected: a.protected || !1,
-                          screen_name: a.screen_name || '',
-                          name: a.name || '',
-                          url: a.url || '',
-                          verified: a.verified || !1,
+                          description: n.description || '',
+                          profile_image_url_https: n.profile_image_url_https || '',
+                          protected: n.protected || !1,
+                          screen_name: n.screen_name || '',
+                          name: n.name || '',
+                          url: n.url || '',
+                          verified: n.verified || !1,
                         },
                       ),
                     },
@@ -864,12 +887,12 @@
                 b.a,
                 { style: [C.tweet, u && C.wideScreen] },
                 o.a.createElement(
-                  T.a,
+                  S.a,
                   F()({}, t, {
                     renderActionsBar: function () {
                       return null
                     },
-                    renderTombstone: m,
+                    renderTombstone: g,
                   }),
                 ),
               )
@@ -878,7 +901,7 @@
           })(c)
         },
         U = o.a.memo(I),
-        C = S.a.create(function (e) {
+        C = T.a.create(function (e) {
           return {
             tweet: {
               borderWidth: e.borderWidths.small,
@@ -891,52 +914,88 @@
             wideScreen: { marginHorizontal: e.spaces.space32 },
           }
         }),
-        D = n('t62R'),
+        D = a('IMA+'),
         z = function (e) {
-          var l = e.user_results,
-            a = w()(void 0 !== t ? t : (t = n('r/Jf')), l)
-          return o.a.createElement(D.b, null, a.__typename)
+          var l,
+            n = e.userResults,
+            r = v()(void 0 !== t ? t : (t = a('r/Jf')), n),
+            i = o.a.useContext(w.b).isModal,
+            s = null == r || null === (l = r.result) || void 0 === l ? void 0 : l.legacy,
+            u = (null == s ? void 0 : s.idStr) || '',
+            c = (null == s ? void 0 : s.description) || '',
+            d = (null == s ? void 0 : s.name) || '',
+            g = (null == s ? void 0 : s.profile_image_url_https) || '',
+            m = (null == s ? void 0 : s.screen_name) || ''
+          return u
+            ? o.a.createElement(
+                b.a,
+                { style: [V.userCellContainer, i && V.wideScreen] },
+                o.a.createElement(D.a, {
+                  avatarUri: g,
+                  description: c,
+                  displayMode: 'UserDetailed',
+                  entities: {},
+                  name: d,
+                  screenName: m,
+                  userId: u,
+                }),
+              )
+            : null
         },
-        V = function (e) {
+        V = T.a.create(function (e) {
+          return {
+            userCellContainer: {
+              marginTop: e.spaces.space12,
+              borderWidth: e.borderWidths.small,
+              borderColor: e.colors.gray100,
+              borderStyle: 'solid',
+              borderRadius: e.borderRadii.xLarge,
+            },
+            wideScreen: { marginHorizontal: e.spaces.space32 },
+          }
+        }),
+        B = function (e) {
           var l = e.report_entity_results,
-            a = w()(void 0 !== r ? r : (r = n('xYG4')), l)
-          switch (a.__typename) {
+            n = v()(void 0 !== r ? r : (r = a('xYG4')), l)
+          switch (n.__typename) {
             case 'TweetResults':
-              return o.a.createElement(U, { tweet_results: a })
+              return o.a.createElement(U, { tweet_results: n })
             case 'UserResults':
-              return o.a.createElement(z, { user_results: a })
+              return o.a.createElement(z, { userResults: n })
             default:
               return null
           }
         },
-        B = function (e) {
+        A = function (e) {
           var l = e.report,
-            a = w()(void 0 !== i ? i : (i = n('6mUz')), l)
+            n = v()(void 0 !== i ? i : (i = a('6mUz')), l)
           return o.a.createElement(
             b.a,
             { style: j.entityList },
-            a.map(function (e, l) {
-              return o.a.createElement(V, { key: l, report_entity_results: e })
+            n.map(function (e, l) {
+              return o.a.createElement(B, { key: l, report_entity_results: e })
             }),
           )
         },
-        j = S.a.create(function (e) {
+        j = T.a.create(function (e) {
           return { entityList: { marginVertical: e.spaces.space32 } }
         }),
-        A = n('IAZG'),
-        G = n('/yvb'),
-        H = n('pjBI'),
-        M = n('3rX5'),
-        O = n('zCf4'),
-        P = g.a.e37836f8,
-        J = g.a.ccf2f24e,
-        Q = g.a.e238c59f,
-        W = g.a.b772cd65,
-        X = 'gray700',
-        q = void 0 !== s ? s : (s = n('+hxm')),
-        N = function (e) {
+        M = a('IAZG'),
+        H = a('/yvb'),
+        W = a('pjBI'),
+        G = a('t62R'),
+        O = a('3rX5'),
+        Q = a('zCf4'),
+        X = m.a.e37836f8,
+        J = m.a.ccf2f24e,
+        P = m.a.e238c59f,
+        q = m.a.b772cd65,
+        N = 'gray700',
+        Z = m.a.a1061083,
+        Y = void 0 !== s ? s : (s = a('+hxm')),
+        $ = function (e) {
           return o.a.createElement(
-            G.a,
+            H.a,
             {
               disabled: !1,
               onPress: function () {
@@ -945,79 +1004,80 @@
               size: 'small',
               type: 'primaryFilled',
             },
-            W,
+            q,
           )
         },
-        Z = function () {
+        ee = function () {
           var e,
             l,
+            a,
             n,
-            a = Object(O.h)(),
-            t = Object(A.a)(q, { reportId: a.reportId || '' }),
-            r =
-              null == t ||
-              null === (e = t.viewer_v2) ||
+            t,
+            r = Object(Q.h)(),
+            i = Object(M.a)(Y, { reportId: r.reportId || '' }),
+            s =
+              null == i ||
+              null === (e = i.viewer_v2) ||
               void 0 === e ||
               null === (l = e.user_results) ||
               void 0 === l ||
-              null === (n = l.result) ||
-              void 0 === n
+              null === (a = l.result) ||
+              void 0 === a
                 ? void 0
-                : n.submitted_report,
-            i = new Date(parseInt(null == r ? void 0 : r.create_time, 10) || 0).toLocaleDateString(void 0, {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric',
-            }),
-            s = null == r ? void 0 : r.header,
-            u = null == r ? void 0 : r.follow_up_text,
-            d = null == r ? void 0 : r.report_entities_results
+                : a.submitted_report,
+            u =
+              null != s && s.create_time
+                ? ((n = null == s ? void 0 : s.create_time), (t = parseInt(n, 10)), Z(new Date(t)))
+                : '',
+            d = null == s ? void 0 : s.header,
+            g = null == s ? void 0 : s.follow_up_text,
+            m = null == s ? void 0 : s.report_entities_results
           return o.a.createElement(
             o.a.Fragment,
             null,
             o.a.createElement(
-              H.a,
-              { color: X },
-              o.a.createElement(D.b, { color: X, weight: 'bold' }, J),
-              o.a.createElement(D.b, { color: X }, i),
+              W.a,
+              { color: N },
+              o.a.createElement(G.b, { color: N, weight: 'bold' }, J),
+              o.a.createElement(G.b, { color: N }, u),
             ),
-            o.a.createElement(D.b, { size: 'title3', weight: 'heavy' }, s),
-            d ? o.a.createElement(B, { report: Object(c.a)(d) }) : null,
-            o.a.createElement(D.b, { size: 'headline2', style: Y.headline, weight: 'heavy' }, Q),
-            o.a.createElement(D.b, { color: X, size: 'subtext2', weight: 'normal' }, u),
+            o.a.createElement(G.b, { size: 'title3', weight: 'heavy' }, d),
+            m ? o.a.createElement(A, { report: Object(c.a)(m) }) : null,
+            o.a.createElement(G.b, { size: 'headline2', style: le.headline, weight: 'heavy' }, P),
+            o.a.createElement(G.b, { color: N, size: 'subtext2', weight: 'normal' }, g),
           )
         },
-        Y =
+        le =
           ((l.default = function () {
-            var e = Object(O.f)(),
-              l = o.a.useContext(v.b).isModal
+            var e = Object(Q.f)(),
+              l = o.a.useContext(w.b).isModal
             return o.a.createElement(
               d.b,
               {
                 backButtonType: 'close',
-                containerStyle: Y.root,
-                documentTitle: P,
+                containerStyle: le.root,
+                documentTitle: X,
                 history: e,
-                rightControl: N(e),
-                title: P,
+                rightControl: $(e),
+                title: X,
               },
               o.a.createElement(
                 b.a,
-                { style: Y.parentContainer },
+                { style: le.parentContainer },
                 o.a.createElement(
                   b.a,
-                  { style: Y.imageContainer },
-                  o.a.createElement(M.a, { accessibilityLabel: '', source: p, style: Y.image }),
+                  { style: le.imageContainer },
+                  o.a.createElement(O.a, { accessibilityLabel: '', source: y, style: le.image }),
                 ),
                 o.a.createElement(
                   b.a,
-                  { style: [Y.innerContainer, l ? Y.wideScreen : Y.narrowScreen] },
-                  o.a.createElement(y.a, { errorConfig: { context: 'REPORT_DETAIL' } }, o.a.createElement(Z, null)),
+                  { style: [le.innerContainer, l ? le.wideScreen : le.narrowScreen] },
+                  o.a.createElement(p.a, { errorConfig: { context: 'REPORT_DETAIL' } }, o.a.createElement(ee, null)),
                 ),
               ),
             )
           }),
-          S.a.create(function (e) {
+          T.a.create(function (e) {
             return {
               root: { flexShrink: 1, flexGrow: 1, paddingBottom: e.spaces.space32 },
               parentContainer: { alignItems: 'center' },
@@ -1027,17 +1087,17 @@
               imageContainer: { height: '150px', width: '150px', marginBottom: e.spaces.space12 },
               wideScreen: { marginBottom: e.spaces.space48, marginHorizontal: e.spaces.space72 },
               narrowScreen: {
-                marginBottom: 'calc('.concat(e.spaces.space48, ' + ').concat(S.a.iPhoneOffsetBottom, ')'),
+                marginBottom: 'calc('.concat(e.spaces.space48, ' + ').concat(T.a.iPhoneOffsetBottom, ')'),
                 marginHorizontal: e.spaces.space32,
               },
               tombstone: { border: 'none', marginHorizontal: e.spaces.space32, marginVertical: e.spaces.space20 },
             }
           }))
     },
-    xYG4: function (e, l, n) {
+    xYG4: function (e, l, a) {
       'use strict'
-      n.r(l)
-      var a = {
+      a.r(l)
+      var n = {
         argumentDefinitions: [],
         kind: 'Fragment',
         metadata: null,
@@ -1051,7 +1111,7 @@
         abstractKey: '__isReportEntityResults',
         hash: '5341a800b22c6e54bfa4fe619fd32529',
       }
-      l.default = a
+      l.default = n
     },
   },
 ])

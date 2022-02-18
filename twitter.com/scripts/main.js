@@ -2384,6 +2384,39 @@ window.__SCRIPTS_LOADED__.i18n &&
             },
           ],
           h = { initialized: !1, flags: {} }
+        var v = function (e) {
+            return { type: f, payload: null != e ? e : {} }
+          },
+          _ = function (e, t, n) {
+            return function (r, i, a) {
+              a.userPersistence
+              var o = i()
+              return Object(u.m)(o)
+                ? (r({ payload: { communityIds: 'string' == typeof e ? [e] : e, name: t, value: n }, type: p }),
+                  r(function (e, t, n) {
+                    var r = n.userPersistence,
+                      i = t().communityFlags.flags
+                    return (
+                      r.set(d, i).catch(function () {
+                        return Promise.resolve()
+                      }),
+                      Promise.resolve()
+                    )
+                  }))
+                : Promise.resolve()
+            }
+          },
+          b = function (e, t, n) {
+            var r,
+              i,
+              a = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+              o = e.communityFlags
+            return null !== (r = null === (i = o.flags[t]) || void 0 === i ? void 0 : i[n]) && void 0 !== r ? r : a
+          },
+          g = function (e, t) {
+            var n
+            return null !== (n = e.communityFlags.flags[t.community.id_str]) && void 0 !== n ? n : {}
+          }
         c.a.register(
           i()({}, l, function () {
             var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : h,
@@ -2437,55 +2470,23 @@ window.__SCRIPTS_LOADED__.i18n &&
                 return e
             }
           }),
-        )
-        var v = function (e) {
-            return { type: f, payload: null != e ? e : {} }
-          },
-          _ = function (e, t, n) {
-            return function (r, i, a) {
-              a.userPersistence
-              return r(b()).then(function () {
-                r({ payload: { communityIds: 'string' == typeof e ? [e] : e, name: t, value: n }, type: p })
-                var a,
-                  o = i()
-                return Object(u.m)(o)
-                  ? r(
-                      ((a = o.communityFlags.flags),
-                      function (e, t, n) {
-                        return n.userPersistence.set(d, a).catch(function () {
-                          Promise.resolve()
-                        })
-                      }),
-                    )
-                  : Promise.resolve()
-              })
-            }
-          },
-          b = function () {
+          function () {
             return function (e, t, n) {
-              n.userPersistence
-              return t().communityFlags.initialized
-                ? Promise.resolve()
-                : e(function (e, t, n) {
-                    var r = n.userPersistence,
-                      i = t()
-                    return Object(u.m)(i)
-                      ? r
-                          .get(d)
-                          .then(function (t) {
-                            e(v(t))
-                          })
-                          .catch(function () {
-                            e(v())
-                          })
-                      : (e(v()), Promise.resolve())
-                  })
+              var r = n.userPersistence,
+                i = t()
+              return Object(u.m)(i)
+                ? r
+                    .get(d)
+                    .then(function (t) {
+                      e(v(t))
+                    })
+                    .catch(function () {
+                      e(v())
+                    })
+                : (e(v()), Promise.resolve())
             }
           },
-          g = function (e, t) {
-            var n
-            return null !== (n = e.communityFlags.flags[t.community.id_str]) && void 0 !== n ? n : {}
-          }
+        )
       },
       '/kEJ': function (e, t, n) {
         'use strict'
@@ -7423,6 +7424,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             dm_vdl_enabled: !0,
             dm_vdl_inbox_p0_enabled: !0,
             dm_voice_rendering_enabled: !0,
+            dont_mention_me_enabled: !0,
             dont_mention_me_view_api_enabled: !0,
             employee_role: !0,
             enable_label_appealing_misinfo_enabled: !0,
@@ -7628,6 +7630,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             responsive_web_prerolls_fullscreen_disabled_on_ios: !0,
             responsive_web_professional_journeys_holdback_enabled: !0,
             responsive_web_profile_spotlight_v0_display: !0,
+            responsive_web_promoted_account_card_enabled: !0,
             responsive_web_promoted_badge_below_header: !0,
             responsive_web_promoted_badge_use_circle_icon: !0,
             responsive_web_promoted_tweet_param_append_enabled: !0,
@@ -9708,32 +9711,53 @@ window.__SCRIPTS_LOADED__.i18n &&
             l = n.canPerformAction,
             d = void 0 === l ? k : l,
             p = n.succeedIfError,
-            f = n.mapResponseToActions,
-            v = void 0 === f ? L : f,
-            _ = arguments.length > 3 ? arguments[3] : void 0,
-            b = arguments.length > 4 ? arguments[4] : void 0,
-            g = arguments.length > 5 ? arguments[5] : void 0
+            f = n.relayStoreUpdater,
+            v = n.mapResponseToActions,
+            _ = void 0 === v ? L : v,
+            b = arguments.length > 3 ? arguments[3] : void 0,
+            g = arguments.length > 4 ? arguments[4] : void 0,
+            y = arguments.length > 5 ? arguments[5] : void 0
           return function (n, r, a) {
             var s = a.api,
               l = a.featureSwitches,
-              f = r()
+              v = a.relayEnvironment,
+              w = r()
             if (d) {
-              var y = _(f, e)
-              if (!d(y, b(f))) return Promise.resolve()
+              var T = b(w, e)
+              if (!d(T, g(w))) return Promise.resolve()
             }
-            var w = i(e, t, r)
-            return h.c(n, { params: w, request: o(s, l) })(
-              {
-                actionTypes: g,
-                bypassFailureOnErrors: p
-                  ? function (e) {
-                      return Object(E.c)(e, p)
-                    }
-                  : void 0,
-                context: u,
-                meta: m()({ entityId: e }, c(e, t, f)),
+            var S = i(e, t, r),
+              O = h.c(n, { params: S, request: o(s, l) }),
+              I = p
+                ? function (e) {
+                    return Object(E.c)(e, p)
+                  }
+                : void 0,
+              C = m()({ entityId: e }, c(e, t, w)),
+              k = f
+                ? v.applyUpdate({
+                    storeUpdater: function (e) {
+                      return f(e, C, !0)
+                    },
+                  })
+                : void 0
+            return O(
+              { actionTypes: y, bypassFailureOnErrors: I, context: u, meta: m()({ entityId: e }, c(e, t, w)) },
+              _(e, t, r),
+            ).then(
+              function (e) {
+                return (
+                  null == k || k.dispose(),
+                  f &&
+                    v.commitUpdate(function (e) {
+                      return f(e, C, !1)
+                    }),
+                  e
+                )
               },
-              v(e, t, r),
+              function (e) {
+                throw (null == k || k.dispose(), e)
+              },
             )
           }
         }
@@ -14128,7 +14152,7 @@ window.__SCRIPTS_LOADED__.i18n &&
           xr = n('6Tsf'),
           Lr = ['__typename', 'community_update'],
           Pr = { result: [], entities: {}, slice_info: {} },
-          Dr = { id_str: '', tweet_case_count: 0 },
+          Dr = { id_str: '', tweet_case_count: 0, pending_join_request_count: 0 },
           jr = 'GQL Communities: Failed to Create Community',
           Mr = void 0 !== Ir ? Ir : (Ir = n('z2F0'))
         function Nr(e, t, n, r) {
@@ -17098,7 +17122,19 @@ window.__SCRIPTS_LOADED__.i18n &&
                         }, 'GQL Communities: Failed to fetch Moderation Cases Slice'),
                       )
                       .then(function (e) {
-                        return e.community_by_rest_id.moderation || Dr
+                        var t = e.community_by_rest_id,
+                          n = t.join_requests_result,
+                          r = t.moderation
+                        return r
+                          ? i()(
+                              i()({}, r),
+                              {},
+                              {
+                                pending_join_request_count:
+                                  'CommunityJoinRequests' === n.__typename ? n.pending_join_request_count : 0,
+                              },
+                            )
+                          : Dr
                       })
                   },
                   keepCommunityTweet: function (n) {
@@ -25909,250 +25945,253 @@ window.__SCRIPTS_LOADED__.i18n &&
           PT = function (e) {
             return vm.a.createElement(xT, jm()({ component: LT }, e))
           }
-        var DT = Object(Ph.a)(
+        var DT = '/i/safety_mode',
+          jT = encodeURIComponent(
+            JSON.stringify({ requested_variant: btoa(JSON.stringify({ redirect_after_login: DT })) }),
+          ),
+          MT = Object(Ph.a)(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(86)]).then(n.bind(null, 'U1iA'))
             }),
-          ),
-          jT = function (e) {
-            return vm.a.createElement(
-              vv.a,
-              jm()({}, e, { component: DT, featureSwitchName: 'rito_safety_mode_modal_prompt_enabled' }),
-            )
-          }
-        var MT = Object(xh.a)(function () {
+            {
+              getReplacePath: function () {
+                return '/i/flow/login?input_flow_data='.concat(jT)
+              },
+            },
+          )
+        var NT = Object(xh.a)(function () {
             return Promise.all([n.e(0), n.e(6), n.e(8), n.e(7), n.e(87)]).then(n.bind(null, '0E8n'))
           }),
-          NT = Object(xh.a)(function () {
+          FT = Object(xh.a)(function () {
             return Promise.all([n.e(0), n.e(6), n.e(8), n.e(7), n.e(87)]).then(n.bind(null, 'kix0'))
           }),
-          FT = Object(xh.a)(function () {
+          UT = Object(xh.a)(function () {
             return Promise.all([n.e(0), n.e(31)]).then(n.bind(null, 'D9cE'))
           }),
-          UT = function (e) {
+          BT = function (e) {
             var t = e.match.params.unsafeSearchQuery
             return t
               ? vm.a.createElement(p_, { to: { pathname: '/search', query: { q: t } } })
               : vm.a.createElement(p_, { to: '/explore' })
           }
-        var BT = Object(xh.a)(function () {
+        var HT = Object(xh.a)(function () {
           return n.e(96).then(n.bind(null, '4Rvi'))
         })
-        var HT = function () {
+        var zT = function () {
             return vm.a.createElement(Rh.a, {
-              component: BT,
+              component: HT,
               exact: !0,
               modalSize: Hh.a.dynamic,
               path: '/i/superfollows/manage',
               shouldAlwaysDisplayModal: Object(jp.a)(!0),
             })
           },
-          zT = Object(Ph.a)(
+          KT = Object(Ph.a)(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(12), n.e(98)]).then(n.bind(null, 'Ih+Y'))
             }),
           ),
-          KT = Object(Ph.a)(
+          VT = Object(Ph.a)(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(57)]).then(n.bind(null, 'gRxV'))
             }),
           ),
-          VT = Object(Ph.a)(
+          qT = Object(Ph.a)(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(12), n.e(98)]).then(n.bind(null, 'XsZp'))
             }),
           ),
-          qT = Object(Ph.a)(
+          GT = Object(Ph.a)(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(12), n.e(98)]).then(n.bind(null, 'BO6E'))
             }),
           ),
-          GT = Object(Ph.a)(
+          WT = Object(Ph.a)(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(12), n.e(98)]).then(n.bind(null, 'SQcl'))
             }),
           ),
-          WT = Object(xh.a)(function () {
+          YT = Object(xh.a)(function () {
             return Promise.all([n.e(0), n.e(12), n.e(98)]).then(n.bind(null, '7mm0'))
           }),
-          YT = function (e) {
+          QT = function (e) {
             return vm.a.createElement(
               vv.a,
               jm()({}, e, {
-                component: GT,
+                component: WT,
                 fallbackComponent: nv.b,
                 featureSwitchName: 'topics_discovery_topic_picker_page_enabled',
               }),
             )
           },
-          QT = function (e) {
+          JT = function (e) {
             return vm.a.createElement(
               vv.a,
               jm()({}, e, {
-                component: VT,
-                fallbackComponent: WT,
+                component: qT,
+                fallbackComponent: YT,
                 featureSwitchName: 'noteworthy_accounts_screen_enabled',
               }),
             )
           },
-          JT = function (e) {
+          XT = function (e) {
             return e.match.params.statusId
               ? vm.a.createElement(p_, { to: '/i/status/'.concat(e.match.params.statusId), withReferrer: !0 })
               : vm.a.createElement(nv.b, e)
           }
-        var XT = Object(xh.a)(function () {
+        var ZT = Object(xh.a)(function () {
           return Promise.all([n.e(0), n.e(99)]).then(n.bind(null, 'iBrK'))
         })
-        var ZT = Object(xh.a)(function () {
+        var $T = Object(xh.a)(function () {
           return n.e(100).then(n.bind(null, 'LgYn'))
         })
-        function $T(e) {
+        function eS(e) {
           return vm.a.createElement(
             vv.a,
             jm()({}, e, {
-              component: ZT,
+              component: $T,
               fallbackComponent: nv.a,
               featureSwitchName: 'trusted_friends_tweet_creation_enabled',
             }),
           )
         }
-        var eS = function () {
+        var tS = function () {
             return vm.a.createElement(Rh.a, {
-              component: $T,
+              component: eS,
               exact: !0,
               modalSize: Hh.a.dynamic,
               path: '/i/twittercircle/edit',
               shouldAlwaysDisplayModal: Object(jp.a)(!0),
             })
           },
-          tS = function (e) {
+          nS = function (e) {
             var t = e.match
             return t.params && t.params.screenName && t.params.statusId
               ? '/'.concat(t.params.screenName, '/status/').concat(t.params.statusId)
               : t.url
           },
-          nS = function (e) {
+          rS = function (e) {
             var t = e.pathname.split('/')[1]
             return t ? '/'.concat(t) : '/'
           },
-          rS = function (e) {
-            var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : nS
+          iS = function (e) {
+            var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : rS
             return function (n) {
               return vm.a.createElement(Ph.b, jm()({}, n, { component: e, getReplacePath: t }))
             }
           },
-          iS = function (e) {
+          aS = function (e) {
             var t = e.pathname.match(/\/@?([_\w\d]+)\/status(?:es)?\/([\d]+)\/?/) || []
             return Ud()(t, 1)[0] || e.pathname
           },
-          aS = Object(xh.a)(function () {
+          oS = Object(xh.a)(function () {
             return Promise.all([n.e(0), n.e(48)]).then(n.bind(null, 'z4TA'))
           }),
-          oS = Object(xh.a)(function () {
+          sS = Object(xh.a)(function () {
             return Promise.all([n.e(0), n.e(50)]).then(n.bind(null, 'DL4F'))
           }),
-          sS = Object(xh.a)(function () {
+          cS = Object(xh.a)(function () {
             return Promise.all([n.e(0), n.e(48)]).then(n.bind(null, 'aH1V'))
           }),
-          cS = Object(xh.a)(function () {
+          uS = Object(xh.a)(function () {
             return Promise.all([n.e(0), n.e(48)]).then(n.bind(null, 'AEu/'))
           }),
-          uS = Object(xh.a)(function () {
+          lS = Object(xh.a)(function () {
             return Promise.all([n.e(0), n.e(104)]).then(n.bind(null, 'nDeN'))
           }),
-          lS = Object(xh.a)(function () {
+          dS = Object(xh.a)(function () {
             return Promise.all([n.e(0), n.e(49)]).then(n.bind(null, 'gLwk'))
           }),
-          dS = Object(xh.a)(function () {
+          pS = Object(xh.a)(function () {
             return Promise.all([n.e(0), n.e(11), n.e(103)]).then(n.bind(null, 'u1Qz'))
           }),
-          pS = rS(
+          fS = iS(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(81)]).then(n.bind(null, 'SCGq'))
             }),
-            iS,
+            aS,
           ),
-          fS = rS(
+          mS = iS(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(101)]).then(n.bind(null, 'Tt1Q'))
             }),
-            iS,
+            aS,
           ),
-          mS = rS(
+          hS = iS(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(102)]).then(n.bind(null, 'jv9/'))
             }),
-            iS,
+            aS,
           ),
-          hS = function (e) {
+          vS = function (e) {
             return vm.a.createElement(
               vv.a,
-              jm()({}, e, { component: mS, featureSwitchName: 'responsive_web_reactions_enabled' }),
+              jm()({}, e, { component: hS, featureSwitchName: 'responsive_web_reactions_enabled' }),
             )
           },
-          vS = function (e) {
+          _S = function (e) {
             return e.location.query.tweet_id
-              ? vm.a.createElement(aS, e)
+              ? vm.a.createElement(oS, e)
               : vm.a.createElement(nv.b, { history: e.history, location: e.location, match: e.match })
           },
-          _S = function (e) {
+          bS = function (e) {
             return (function (e) {
               var t = e.location
               return !Object(zh.a)({}, { location: t })
             })(e)
-              ? vm.a.createElement(p_, { to: tS(e) })
-              : vm.a.createElement(dS, e)
+              ? vm.a.createElement(p_, { to: nS(e) })
+              : vm.a.createElement(pS, e)
           }
-        var bS = Object(Ph.a)(
+        var gS = Object(Ph.a)(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(13), n.e(105)]).then(n.bind(null, 'QdNu'))
             }),
           ),
-          gS = Object(xh.a)(function () {
+          yS = Object(xh.a)(function () {
             return Promise.all([n.e(0), n.e(13), n.e(105)]).then(n.bind(null, '4k/t'))
           }),
-          yS = Object(Ph.a)(
+          ES = Object(Ph.a)(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(13), n.e(105)]).then(n.bind(null, 'taB0'))
             }),
           ),
-          ES = Object(Ph.a)(
+          wS = Object(Ph.a)(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(13), n.e(105)]).then(n.bind(null, 'uy10'))
             }),
           ),
-          wS = function (e) {
+          TS = function (e) {
             return vm.a.createElement(
               Sm.d,
               null,
-              vm.a.createElement(Sm.b, { component: yS, path: '/i/twitter-article-composer' }),
+              vm.a.createElement(Sm.b, { component: ES, path: '/i/twitter-article-composer' }),
             )
           },
-          TS = function () {
+          SS = function () {
             return vm.a.createElement(
               $h,
-              { perColumnScroll: !0, rootComponent: wS, rootDetailContent: ES },
-              vm.a.createElement(Sm.b, { component: bS, path: '/i/twitter-article-composer/edit/'.concat(Ah.V) }),
-            )
-          },
-          SS = function (e) {
-            return vm.a.createElement(
-              vv.a,
-              jm()({}, e, { component: TS, featureSwitchName: 'responsive_web_twitter_article_compose_enabled' }),
+              { perColumnScroll: !0, rootComponent: TS, rootDetailContent: wS },
+              vm.a.createElement(Sm.b, { component: gS, path: '/i/twitter-article-composer/edit/'.concat(Ah.V) }),
             )
           },
           OS = function (e) {
             return vm.a.createElement(
               vv.a,
-              jm()({}, e, { component: gS, featureSwitchName: 'responsive_web_twitter_article_view_enabled' }),
+              jm()({}, e, { component: SS, featureSwitchName: 'responsive_web_twitter_article_compose_enabled' }),
+            )
+          },
+          IS = function (e) {
+            return vm.a.createElement(
+              vv.a,
+              jm()({}, e, { component: yS, featureSwitchName: 'responsive_web_twitter_article_view_enabled' }),
             )
           }
-        var IS = Object(Ph.a)(
+        var CS = Object(Ph.a)(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(67)]).then(n.bind(null, 'OzKQ'))
             }),
           ),
-          CS = function (e) {
+          kS = function (e) {
             var t = vm.a.useContext(_m.a).featureSwitches.isTrue('subscriptions_sign_up_enabled')
             return vm.a.createElement(
               iv,
@@ -26161,7 +26200,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   return vm.a.createElement(Nv.a, { to: '/settings/twitter_blue' })
                 },
                 fallbackComponent: t
-                  ? IS
+                  ? CS
                   : function () {
                       return vm.a.createElement(Nv.a, { to: '/home' })
                     },
@@ -26169,16 +26208,16 @@ window.__SCRIPTS_LOADED__.i18n &&
               }),
             )
           }
-        var kS = Object(Ph.a)(
+        var AS = Object(Ph.a)(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(67)]).then(n.bind(null, 'DBID'))
             }),
           ),
-          AS = function (e) {
+          RS = function (e) {
             return vm.a.createElement(
               vv.a,
               jm()({}, e, {
-                component: kS,
+                component: AS,
                 fallbackComponent: function () {
                   return vm.a.createElement(Nv.a, { to: '/home' })
                 },
@@ -26186,16 +26225,16 @@ window.__SCRIPTS_LOADED__.i18n &&
               }),
             )
           }
-        var RS = Object(Ph.a)(
+        var xS = Object(Ph.a)(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(67)]).then(n.bind(null, 'yEpk'))
             }),
           ),
-          xS = function (e) {
+          LS = function (e) {
             return vm.a.createElement(
               vv.a,
               jm()({}, e, {
-                component: RS,
+                component: xS,
                 fallbackComponent: function () {
                   return vm.a.createElement(Nv.a, { to: '/home' })
                 },
@@ -26203,65 +26242,65 @@ window.__SCRIPTS_LOADED__.i18n &&
               }),
             )
           }
-        var LS = Object(Bm.a)({
+        var PS = Object(Bm.a)({
             loader: function () {
               return Promise.all([n.e(0), n.e(17), n.e(23), n.e(207)]).then(n.bind(null, 'RlHt'))
             },
           }),
-          PS = Object(xh.a)(function () {
+          DS = Object(xh.a)(function () {
             return Promise.all([n.e(0), n.e(3), n.e(4), n.e(6), n.e(109)]).then(n.bind(null, '2bUi'))
           }),
-          DS = Object(xh.a)(function () {
+          jS = Object(xh.a)(function () {
             return Promise.all([n.e(0), n.e(3), n.e(4), n.e(6), n.e(109)]).then(n.bind(null, 'ow85'))
           }),
-          jS = Object(xh.a)(function () {
+          MS = Object(xh.a)(function () {
             return Promise.all([n.e(0), n.e(3), n.e(4), n.e(6), n.e(109)]).then(n.bind(null, 'axJj'))
           }),
-          MS = Object(Ph.a)(
+          NS = Object(Ph.a)(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(3), n.e(4), n.e(6), n.e(109)]).then(n.bind(null, '5+NO'))
             }),
           ),
-          NS = Object(Ph.a)(
+          FS = Object(Ph.a)(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(3), n.e(4), n.e(6), n.e(109)]).then(n.bind(null, 'uefr'))
             }),
           ),
-          FS = Object(Ph.a)(
+          US = Object(Ph.a)(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(3), n.e(4), n.e(6), n.e(109)]).then(n.bind(null, 'pVpi'))
             }),
           ),
-          US = Object(Ph.a)(
+          BS = Object(Ph.a)(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(3), n.e(4), n.e(6), n.e(109)]).then(n.bind(null, 'AWJ/'))
             }),
           ),
-          BS = Object(Ph.a)(
+          HS = Object(Ph.a)(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(3), n.e(4), n.e(6), n.e(109)]).then(n.bind(null, 'R2Jb'))
             }),
           ),
-          HS = Object(Ph.a)(
+          zS = Object(Ph.a)(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(3), n.e(4), n.e(6), n.e(109)]).then(n.bind(null, 'MXGL'))
             }),
           )
-        var zS = Object(xh.a)(function () {
+        var KS = Object(xh.a)(function () {
           return Promise.all([n.e(0), n.e(110)]).then(n.bind(null, 'DghG'))
         })
-        var KS = {
+        var VS = {
             '/favorites': '/likes',
             '/followers': '/followers',
             '/following': '/following',
             '/who_to_follow': '/who_to_follow',
           },
-          VS = function (e, t) {
+          qS = function (e, t) {
             var n = h_.e.selectLoggedInUser(e)
             return n && n.screen_name
           },
-          qS = Object(qm.a)().propsFromState(function () {
-            return { loggedInUserScreenName: VS }
+          GS = Object(qm.a)().propsFromState(function () {
+            return { loggedInUserScreenName: qS }
           })(
             (function (e) {
               wf()(n, e)
@@ -26278,7 +26317,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         t = e.history,
                         n = e.location,
                         r = e.loggedInUserScreenName
-                      r ? t.replace('/'.concat(r).concat(KS[n.pathname])) : t.replace('/')
+                      r ? t.replace('/'.concat(r).concat(VS[n.pathname])) : t.replace('/')
                     },
                   },
                   {
@@ -26292,131 +26331,131 @@ window.__SCRIPTS_LOADED__.i18n &&
               )
             })(vm.a.Component),
           ),
-          GS = Object(xh.a)(function () {
+          WS = Object(xh.a)(function () {
             return Promise.all([n.e(0), n.e(11), n.e(107)]).then(n.bind(null, '3Zg8'))
           }),
-          WS = Object(xh.a)(function () {
+          YS = Object(xh.a)(function () {
             return Promise.all([n.e(0), n.e(11), n.e(111)]).then(n.bind(null, '2DRG'))
           }),
-          YS = Object(xh.a)(function () {
+          QS = Object(xh.a)(function () {
             return Promise.all([n.e(0), n.e(11), n.e(107)]).then(n.bind(null, 'ac3p'))
           }),
-          QS = Object(xh.a)(function () {
+          JS = Object(xh.a)(function () {
             return Promise.all([n.e(0), n.e(112)]).then(n.bind(null, 'll/Q'))
           }),
-          JS = Object(xh.a)(function () {
+          XS = Object(xh.a)(function () {
             return Promise.all([n.e(0), n.e(244)]).then(n.bind(null, 'x3bd'))
           }),
-          XS = function (e) {
+          ZS = function (e) {
             return vm.a.createElement(
               vv.a,
-              jm()({}, e, { component: JS, fallbackComponent: QS, featureSwitchName: 'responsive_web_relay_users' }),
+              jm()({}, e, { component: XS, fallbackComponent: JS, featureSwitchName: 'responsive_web_relay_users' }),
             )
           },
-          ZS = Object(xh.a)(function () {
+          $S = Object(xh.a)(function () {
             return n.e(113).then(n.bind(null, 'rFDg'))
           }),
-          $S = rS(
+          eO = iS(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(108)]).then(n.bind(null, 'k1Tk'))
             }),
           ),
-          eO = Object(Ph.a)(
+          tO = Object(Ph.a)(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(58)]).then(n.bind(null, 'gemt'))
             }),
           ),
-          tO = rS(XS),
-          nO = Object(Ph.a)(
+          nO = iS(ZS),
+          rO = Object(Ph.a)(
             Object(xh.a)(function () {
               return n.e(80).then(n.bind(null, 'dgvO'))
             }),
           ),
-          rO = function (e) {
+          iO = function (e) {
             return e.location.query.screen_name
-              ? vm.a.createElement(XS, e)
+              ? vm.a.createElement(ZS, e)
               : e.location.query.user_id
               ? vm.a.createElement(p_, { to: '/i/user/'.concat(e.location.query.user_id.toString()) })
               : vm.a.createElement(nv.b, { history: e.history, location: e.location, match: e.match })
           },
-          iO = Object(Ph.a)(
+          aO = Object(Ph.a)(
             Object(xh.a)(function () {
               return Promise.all([n.e(0), n.e(26), n.e(97)]).then(n.bind(null, '9RBu'))
             }),
           ),
-          aO = function (e) {
-            return vm.a.createElement(
-              vv.a,
-              jm()({}, e, { component: iO, featureSwitchName: 'super_follow_android_web_subscription_enabled' }),
-            )
-          },
           oO = function (e) {
             return vm.a.createElement(
               vv.a,
-              jm()({}, e, { component: WS, featureSwitchName: 'responsive_web_nft_avatar' }),
+              jm()({}, e, { component: aO, featureSwitchName: 'super_follow_android_web_subscription_enabled' }),
             )
           },
           sO = function (e) {
             return vm.a.createElement(
               vv.a,
-              jm()({}, e, { component: QS, featureSwitchName: 'profile_foundations_about_tab_enabled' }),
+              jm()({}, e, { component: YS, featureSwitchName: 'responsive_web_nft_avatar' }),
+            )
+          },
+          cO = function (e) {
+            return vm.a.createElement(
+              vv.a,
+              jm()({}, e, { component: JS, featureSwitchName: 'profile_foundations_about_tab_enabled' }),
             )
           }
-        var cO = n('oEGd'),
-          uO = { scribeAction: a.c },
-          lO = Object(cO.b)(uO),
-          dO = function (e) {
+        var uO = n('oEGd'),
+          lO = { scribeAction: a.c },
+          dO = Object(uO.b)(lO),
+          pO = function (e) {
             var t = e.query,
               n = t && t.original_referer,
               r = op.canUseDOM && document.referrer
             return n || r || ''
           },
-          pO = lO(function (e) {
+          fO = dO(function (e) {
             var t = e.location,
               n = e.scribeAction,
               r = i()(
                 i()({}, t),
                 {},
-                { query: i()(i()({}, t.query), {}, { url: t.query.url || dO(t) }), pathname: '/intent/tweet' },
+                { query: i()(i()({}, t.query), {}, { url: t.query.url || pO(t) }), pathname: '/intent/tweet' },
               )
             return n({ page: 'compose', action: 'redirect_share_route' }), vm.a.createElement(p_, { to: r })
           }),
-          fO = function (e) {
+          mO = function (e) {
             return vm.a.createElement(p_, { to: '/'.concat(e.location.pathname.replace(/^\/@/, '')) })
           },
-          mO = function (e) {
+          hO = function (e) {
             return e.match.params.screenName
               ? vm.a.createElement(p_, { to: '/'.concat(e.match.params.screenName, '/lists') })
               : vm.a.createElement(nv.b, e)
           },
-          hO = function (e) {
+          vO = function (e) {
             return e.match.params.screenName
               ? vm.a.createElement(p_, { to: '/'.concat(e.match.params.screenName, '/lists/memberships') })
               : vm.a.createElement(nv.b, e)
           },
-          vO = function (e) {
+          _O = function (e) {
             return e.match.params.screenName
               ? vm.a.createElement(p_, { to: '/'.concat(e.match.params.screenName, '/likes') })
               : vm.a.createElement(nv.b, e)
           },
-          _O = function (e) {
+          bO = function (e) {
             return e.match.params.screenName
               ? vm.a.createElement(p_, { to: '/'.concat(e.match.params.screenName, '/following') })
               : vm.a.createElement(nv.b, e)
           },
-          bO = function (e) {
+          gO = function (e) {
             return e.match.params.screenName
               ? vm.a.createElement(p_, { to: '/'.concat(e.match.params.screenName, '/media') })
               : vm.a.createElement(nv.b, e)
           },
-          gO = function (e) {
+          yO = function (e) {
             return e.match.params.screenName && e.match.params.statusId
               ? vm.a.createElement(p_, {
                   to: '/'.concat(e.match.params.screenName, '/status/').concat(e.match.params.statusId),
                 })
               : vm.a.createElement(nv.b, e)
           },
-          yO = function (e) {
+          EO = function (e) {
             return e.match.params.screenName && e.match.params.statusId && e.match.params.unsafeOther
               ? vm.a.createElement(p_, {
                   to: '/'
@@ -26426,30 +26465,30 @@ window.__SCRIPTS_LOADED__.i18n &&
                 })
               : vm.a.createElement(nv.b, e)
           },
-          EO = function (e) {
+          wO = function (e) {
             return e.location.query && e.location.query.tweet_id
               ? vm.a.createElement(p_, { to: '/i/status/'.concat(e.location.query.tweet_id.toString()) })
               : vm.a.createElement(nv.b, e)
           },
-          wO = function (e) {
-            return vm.a.createElement(pO, e)
-          },
           TO = function (e) {
+            return vm.a.createElement(fO, e)
+          },
+          SO = function (e) {
             return e.match.params.screenName
               ? vm.a.createElement(p_, { to: '/'.concat(e.match.params.screenName) })
               : vm.a.createElement(nv.b, e)
           },
-          SO = function (e) {
+          OO = function (e) {
             return e.match.params.screenName
               ? vm.a.createElement(p_, { to: '/messages/create/'.concat(e.match.params.screenName) })
               : vm.a.createElement(nv.b, e)
           },
-          OO = function (e) {
+          IO = function (e) {
             return e.match.params.statusId
               ? vm.a.createElement(p_, { to: '/i/status/'.concat(e.match.params.statusId, '/analytics') })
               : vm.a.createElement(nv.b, e)
           },
-          IO = function () {
+          CO = function () {
             return vm.a.createElement(
               Sm.d,
               null,
@@ -26507,37 +26546,37 @@ window.__SCRIPTS_LOADED__.i18n &&
                 from: '/settings/your_twitter_data/logins',
                 to: '/settings/your_twitter_data/login_history',
               }),
-              vm.a.createElement(Sm.b, { path: '/@*', render: fO }),
-              vm.a.createElement(Sm.b, { exact: !0, path: '/share', render: wO }),
-              vm.a.createElement(Sm.b, { exact: !0, path: '/'.concat(Ah.J, '/favorites'), render: vO }),
-              vm.a.createElement(Sm.b, { exact: !0, path: '/'.concat(Ah.J, '/followings'), render: _O }),
-              vm.a.createElement(Sm.b, { exact: !0, path: '/'.concat(Ah.J, '/media/grid'), render: bO }),
+              vm.a.createElement(Sm.b, { path: '/@*', render: mO }),
+              vm.a.createElement(Sm.b, { exact: !0, path: '/share', render: TO }),
+              vm.a.createElement(Sm.b, { exact: !0, path: '/'.concat(Ah.J, '/favorites'), render: _O }),
+              vm.a.createElement(Sm.b, { exact: !0, path: '/'.concat(Ah.J, '/followings'), render: bO }),
+              vm.a.createElement(Sm.b, { exact: !0, path: '/'.concat(Ah.J, '/media/grid'), render: gO }),
               vm.a.createElement(Sm.b, {
                 exact: !0,
                 path: '/'.concat(Ah.J, '/status/').concat(Ah.O, '/photo'),
-                render: gO,
+                render: yO,
               }),
               vm.a.createElement(Sm.b, {
                 exact: !0,
                 path: '/'.concat(Ah.J, '/status/').concat(Ah.O, '/photos'),
-                render: gO,
-              }),
-              vm.a.createElement(Sm.b, { exact: !0, path: '/'.concat(Ah.J, '/statuses/').concat(Ah.O), render: gO }),
-              vm.a.createElement(Sm.b, {
-                path: '/'.concat(Ah.J, '/statuses/').concat(Ah.O, '/').concat(Ah.X),
                 render: yO,
               }),
-              vm.a.createElement(Sm.b, { exact: !0, path: '/'.concat(Ah.J, '/tweets'), render: TO }),
-              vm.a.createElement(Sm.b, { exact: !0, path: '/'.concat(Ah.J, '/memberships'), render: hO }),
-              vm.a.createElement(Sm.b, { exact: !0, path: '/'.concat(Ah.J, '/subscriptions'), render: mO }),
+              vm.a.createElement(Sm.b, { exact: !0, path: '/'.concat(Ah.J, '/statuses/').concat(Ah.O), render: yO }),
+              vm.a.createElement(Sm.b, {
+                path: '/'.concat(Ah.J, '/statuses/').concat(Ah.O, '/').concat(Ah.X),
+                render: EO,
+              }),
+              vm.a.createElement(Sm.b, { exact: !0, path: '/'.concat(Ah.J, '/tweets'), render: SO }),
+              vm.a.createElement(Sm.b, { exact: !0, path: '/'.concat(Ah.J, '/memberships'), render: vO }),
+              vm.a.createElement(Sm.b, { exact: !0, path: '/'.concat(Ah.J, '/subscriptions'), render: hO }),
               vm.a.createElement(p_, { from: '/account/settings', to: '/settings/account' }),
-              vm.a.createElement(Sm.b, { exact: !0, path: '/direct_messages/create/'.concat(Ah.J), render: SO }),
+              vm.a.createElement(Sm.b, { exact: !0, path: '/direct_messages/create/'.concat(Ah.J), render: OO }),
               vm.a.createElement(p_, { exact: !0, from: '/session/new', to: '/login' }),
               vm.a.createElement(p_, { exact: !0, from: '/i/moments', to: '/explore' }),
               vm.a.createElement(p_, { exact: !0, from: '/search-home', to: '/search' }),
-              vm.a.createElement(Sm.b, { path: '/i/tfb/v1/quick_promote/'.concat(Ah.C, '/').concat(Ah.O), render: OO }),
+              vm.a.createElement(Sm.b, { path: '/i/tfb/v1/quick_promote/'.concat(Ah.C, '/').concat(Ah.O), render: IO }),
               vm.a.createElement(Sm.b, { component: kh, exact: !0, path: '/i/redirect' }),
-              vm.a.createElement(Sm.b, { exact: !0, path: '/i/view', render: EO }),
+              vm.a.createElement(Sm.b, { exact: !0, path: '/i/view', render: wO }),
               vm.a.createElement(p_, { exact: !0, from: '/i/reader_mode', to: '/home' }),
               vm.a.createElement(
                 Sm.b,
@@ -27037,12 +27076,12 @@ window.__SCRIPTS_LOADED__.i18n &&
                     ],
                     [
                       vm.a.createElement(Sm.b, {
-                        component: SS,
+                        component: OS,
                         key: 'twitter_article_composer',
                         path: '/i/twitter-article-composer',
                       }),
                       vm.a.createElement(Sm.b, {
-                        component: OS,
+                        component: IS,
                         exact: !0,
                         key: 'twitter_article_viewer',
                         path: '/i/twitter-articles/'.concat(Ah.V),
@@ -27051,7 +27090,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     ((v = '/i/twitter_blue_sign_up'),
                     [
                       vm.a.createElement(Rh.a, {
-                        component: CS,
+                        component: kS,
                         exact: !0,
                         key: v,
                         modalSize: 'dynamic',
@@ -27063,7 +27102,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       var e = '/i/twitter_blue_sign_up/welcome'
                       return [
                         vm.a.createElement(Rh.a, {
-                          component: xS,
+                          component: LS,
                           exact: !0,
                           key: e,
                           modalSize: 'dynamic',
@@ -27076,7 +27115,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       var e = '/i/twitter_blue_sign_up/unsuccessful'
                       return [
                         vm.a.createElement(Rh.a, {
-                          component: AS,
+                          component: RS,
                           exact: !0,
                           key: e,
                           modalSize: 'dynamic',
@@ -27177,34 +27216,29 @@ window.__SCRIPTS_LOADED__.i18n &&
                         path: '/i/reports/'.concat(Ah.G),
                       }),
                     ],
-                    vm.a.createElement(Rh.a, {
-                      component: jT,
-                      exact: !0,
-                      key: 'safety-mode-modal',
-                      path: '/i/safety_mode',
-                    }),
+                    vm.a.createElement(Rh.a, { component: MT, exact: !0, key: 'safety-mode-modal', path: DT }),
                     [
                       vm.a.createElement(Sm.b, {
                         exact: !0,
                         key: '/search/:searchQuery',
                         path: '/search/'.concat(Ah.Y),
-                        render: UT,
+                        render: BT,
                       }),
-                      vm.a.createElement(Sm.b, { component: MT, key: '/search', path: '/search' }),
+                      vm.a.createElement(Sm.b, { component: NT, key: '/search', path: '/search' }),
                       vm.a.createElement(Sm.b, {
-                        component: MT,
+                        component: NT,
                         key: '/hashtag/:unsafeHashtagQuery',
                         path: '/hashtag/'.concat(Ah.W),
                       }),
                       vm.a.createElement(Rh.a, {
-                        component: NT,
+                        component: FT,
                         defaultBackgroundPath: '/explore',
                         key: '/i/search_filters',
                         modalSize: 'dynamic',
                         path: '/i/search_filters',
                       }),
                       vm.a.createElement(Rh.a, {
-                        component: FT,
+                        component: UT,
                         defaultBackgroundPath: '/explore',
                         exact: !0,
                         key: '/search-advanced',
@@ -27278,7 +27312,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         exact: !0,
                         key: '/i/topics/picker',
                         path: ['/i/topics/picker', '/i/topics/picker/'.concat(Ah.P)],
-                        render: YT,
+                        render: QT,
                       }),
                       vm.a.createElement(Rh.a, {
                         defaultBackgroundPath: '/home',
@@ -27286,10 +27320,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                         key: '/i/topics/education',
                         modalSize: 'dynamic',
                         path: '/i/topics/education',
-                        render: zT,
+                        render: KT,
                       }),
                       vm.a.createElement(Sm.b, {
-                        component: QT,
+                        component: JT,
                         exact: !0,
                         key: '/i/topics/:topicId/noteworthy_accounts',
                         path: '/i/topics/'.concat(Ah.T, '/noteworthy_accounts'),
@@ -27297,16 +27331,16 @@ window.__SCRIPTS_LOADED__.i18n &&
                       vm.a.createElement(Sm.b, {
                         key: '/i/topics/tweet/:statusId',
                         path: '/i/topics/tweet/'.concat(Ah.O),
-                        render: JT,
+                        render: XT,
                       }),
                       vm.a.createElement(Sm.b, {
-                        component: KT,
+                        component: VT,
                         exact: !0,
                         key: '/i/topics/:taxonomy/:topicId',
                         path: '/i/topics/'.concat(Ah.Q, '/').concat(Ah.T),
                       }),
                       vm.a.createElement(Sm.b, {
-                        component: WT,
+                        component: YT,
                         exact: !0,
                         key: '/i/topics/:topicId',
                         path: '/i/topics/'.concat(Ah.T),
@@ -27318,98 +27352,98 @@ window.__SCRIPTS_LOADED__.i18n &&
                           '/'.concat(Ah.J, '/topics/').concat(Ah.P),
                           '/'.concat(Ah.J, '/topics/(not_interested)?'),
                         ],
-                        render: qT,
+                        render: GT,
                       }),
                     ],
-                    vm.a.createElement(Sm.b, { component: XT, exact: !0, path: '/i/trends' }),
+                    vm.a.createElement(Sm.b, { component: ZT, exact: !0, path: '/i/trends' }),
                     [
                       vm.a.createElement(Sm.b, {
-                        component: aS,
+                        component: oS,
                         exact: !0,
                         key: 'permalink1',
                         path: '/i/web/status/'.concat(Ah.O),
                       }),
                       vm.a.createElement(Sm.b, {
-                        component: aS,
+                        component: oS,
                         exact: !0,
                         key: 'permalink2',
                         path: '/i/thread/'.concat(Ah.O),
                       }),
                       vm.a.createElement(Sm.b, {
-                        component: aS,
+                        component: oS,
                         exact: !0,
                         key: 'permalink3',
                         path: '/'.concat(Ah.J, '/status/').concat(Ah.O),
                       }),
                       vm.a.createElement(Rh.a, {
-                        component: oS,
+                        component: sS,
                         exact: !0,
                         key: 'analytics',
                         path: '/'.concat(Ah.J, '/status/').concat(Ah.O, '/analytics'),
                       }),
                       vm.a.createElement(Sm.b, {
-                        component: sS,
+                        component: cS,
                         exact: !0,
                         key: 'quickPromote',
                         path: '/'.concat(Ah.J, '/status/').concat(Ah.O, '/').concat(Ah.E, '/').concat(Ah.F),
                       }),
                       vm.a.createElement(Rh.a, {
-                        component: sS,
+                        component: cS,
                         exact: !0,
                         key: 'quickPromoteRweb',
                         path: '/'.concat(Ah.J, '/status/').concat(Ah.O, '/').concat(Ah.D, '/').concat(Ah.F),
                       }),
                       vm.a.createElement(Sm.b, {
-                        component: cS,
+                        component: uS,
                         exact: !0,
                         key: 'hiddenReplies',
                         path: '/'.concat(Ah.J, '/status/').concat(Ah.O, '/hidden'),
                       }),
                       vm.a.createElement(Rh.a, {
-                        component: uS,
+                        component: lS,
                         exact: !0,
                         key: 'mediatags',
                         path: '/'.concat(Ah.J, '/status/').concat(Ah.O, '/media_tags'),
                       }),
                       vm.a.createElement(Rh.a, {
-                        component: lS,
+                        component: dS,
                         exact: !0,
                         key: 'participants',
                         path: '/'.concat(Ah.J, '/status/').concat(Ah.O, '/people'),
                       }),
                       vm.a.createElement(Rh.a, {
-                        component: fS,
+                        component: mS,
                         exact: !0,
                         key: 'activitytype',
                         path: '/'.concat(Ah.J, '/status/').concat(Ah.O, '/').concat(Ah.a),
                       }),
                       vm.a.createElement(Rh.a, {
-                        component: hS,
+                        component: vS,
                         exact: !0,
                         key: 'TweetActivityReactionsScreen',
                         path: '/'.concat(Ah.J, '/status/').concat(Ah.O, '/reactions'),
                       }),
                       vm.a.createElement(Rh.a, {
-                        component: _S,
+                        component: bS,
                         exact: !0,
                         key: 'mediadetail',
                         modalSize: Hh.a.full,
                         path: '/'.concat(Ah.J, '/status/').concat(Ah.O, '/').concat(Ah.t, '/').concat(Ah.s),
                       }),
                       vm.a.createElement(Sm.b, {
-                        component: vS,
+                        component: _S,
                         exact: !0,
                         key: 'like_intent',
                         path: '/intent/(like|favorite)',
                       }),
                       vm.a.createElement(Sm.b, {
-                        component: vS,
+                        component: _S,
                         exact: !0,
                         key: 'retweet_intent',
                         path: '/intent/retweet',
                       }),
                       vm.a.createElement(Sm.b, {
-                        component: pS,
+                        component: fS,
                         exact: !0,
                         key: 'quote_tweet',
                         path: '/'.concat(Ah.J, '/status/').concat(Ah.O, '/retweets/with_comments'),
@@ -27466,10 +27500,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                     vm.a.createElement(Sm.b, { component: yT, exact: !0, path: '/places/'.concat(Ah.B) }),
                     vm.a.createElement(Rh.a, { component: lw, modalSize: 'dynamic', path: '/i/keyboard_shortcuts' }),
                     Object(dv.b)(),
-                    HT(),
+                    zT(),
                     vm.a.createElement(Sm.b, { component: nv.b, exact: !0, path: '/404' }),
                     vm.a.createElement(Sm.b, { component: sw, exact: !0, path: '/'.concat(Ah.J, '/unfollow_sms') }),
-                    vm.a.createElement(Sm.b, { component: zS, exact: !0, path: '/'.concat(Ah.J, '/moments') }),
+                    vm.a.createElement(Sm.b, { component: KS, exact: !0, path: '/'.concat(Ah.J, '/moments') }),
                     ((e = '/i/lists/'.concat(Ah.r)),
                     (t = '/i/lists/'.concat(Ah.r, '/info')),
                     (n = '/i/lists/'.concat(Ah.r, '/subscribers')),
@@ -27478,7 +27512,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     (a = '/'.concat(Ah.J, '/lists/').concat(Ah.M, '/').concat(Ah.N)),
                     (o = '/'.concat(Ah.J, '/lists/pinned/edit')),
                     [
-                      vm.a.createElement(Rh.a, { component: LS, exact: !0, key: o, path: o }),
+                      vm.a.createElement(Rh.a, { component: PS, exact: !0, key: o, path: o }),
                       vm.a.createElement(p_, {
                         exact: !0,
                         from: '/lists/add_member',
@@ -27493,123 +27527,123 @@ window.__SCRIPTS_LOADED__.i18n &&
                       }),
                       vm.a.createElement(p_, { exact: !0, from: n, key: n, to: r }),
                       vm.a.createElement(Rh.a, {
-                        component: MS,
+                        component: NS,
                         exact: !0,
                         key: '/i/lists/add_member',
                         path: '/i/lists/add_member',
                       }),
                       vm.a.createElement(Rh.a, {
-                        component: NS,
+                        component: FS,
                         exact: !0,
                         key: '/i/lists/create',
                         path: '/i/lists/create',
                       }),
-                      vm.a.createElement(Rh.a, { component: FS, exact: !0, key: t, path: t }),
+                      vm.a.createElement(Rh.a, { component: US, exact: !0, key: t, path: t }),
                       vm.a.createElement(Rh.a, {
-                        component: BS,
+                        component: HS,
                         exact: !0,
                         key: '/i/lists/'.concat(Ah.r, '/members/:type'),
                         path: '/i/lists/'.concat(Ah.r, '/members/(suggested)?'),
                       }),
-                      vm.a.createElement(Rh.a, { component: US, exact: !0, key: r, path: r }),
-                      vm.a.createElement(Sm.b, { component: PS, key: e, path: e }),
+                      vm.a.createElement(Rh.a, { component: BS, exact: !0, key: r, path: r }),
+                      vm.a.createElement(Sm.b, { component: DS, key: e, path: e }),
                       vm.a.createElement(Sm.b, {
-                        component: DS,
+                        component: jS,
                         exact: !0,
                         key: '/:screenName/lists/:type',
                         path: '/'.concat(Ah.J, '/lists/(memberships)?'),
                       }),
                       vm.a.createElement(Sm.b, {
-                        component: HS,
+                        component: zS,
                         exact: !0,
                         key: '/i/lists/suggested',
                         path: '/i/lists/suggested',
                       }),
-                      vm.a.createElement(Sm.b, { component: jS, key: a, path: a }),
-                      vm.a.createElement(Sm.b, { component: jS, exact: !0, key: i, path: i }),
+                      vm.a.createElement(Sm.b, { component: MS, key: a, path: a }),
+                      vm.a.createElement(Sm.b, { component: MS, exact: !0, key: i, path: i }),
                     ]),
                     [
                       vm.a.createElement(Sm.b, {
-                        component: ZS,
+                        component: $S,
                         exact: !0,
                         key: 'user_redirect',
                         path: '/i/user/'.concat(Ah.Z),
                       }),
                       vm.a.createElement(Sm.b, {
-                        component: qS,
+                        component: GS,
                         exact: !0,
                         key: 'legacy_redirects',
                         path: '/(favorites|followers|following|who_to_follow)',
                       }),
                       vm.a.createElement(Rh.a, {
-                        component: eO,
+                        component: tO,
                         exact: !0,
                         key: 'follower_requests',
                         path: '/follower_requests',
                       }),
                       vm.a.createElement(Rh.a, {
-                        component: GS,
+                        component: WS,
                         exact: !0,
                         key: 'photo',
                         modalSize: Hh.a.full,
                         path: '/'.concat(Ah.J, '/photo'),
                       }),
                       vm.a.createElement(Rh.a, {
-                        component: oO,
+                        component: sO,
                         exact: !0,
                         key: 'nft',
                         modalSize: Hh.a.full,
                         path: '/'.concat(Ah.J, '/nft'),
                       }),
                       vm.a.createElement(Rh.a, {
-                        component: YS,
+                        component: QS,
                         exact: !0,
                         key: 'header_photo',
                         modalSize: Hh.a.full,
                         path: '/'.concat(Ah.J, '/header_photo'),
                       }),
                       vm.a.createElement(Sm.b, {
-                        component: $S,
+                        component: eO,
                         exact: !0,
                         key: 'followers',
                         path: '/'.concat(Ah.J, '/').concat(Ah.n),
                       }),
                       vm.a.createElement(Sm.b, {
-                        component: tO,
+                        component: nO,
                         exact: !0,
                         key: '(likes|media|reactions)',
                         path: '/'.concat(Ah.J, '/(likes|media|reactions)'),
                       }),
                       vm.a.createElement(Sm.b, {
-                        component: rO,
+                        component: iO,
                         exact: !0,
                         key: 'follow_intent',
                         path: '/intent/(user|follow)',
                       }),
                       vm.a.createElement(Sm.b, {
-                        component: XS,
+                        component: ZS,
                         exact: !0,
                         key: 'profile',
                         path: '/'.concat(Ah.J, '/(with_replies|superfollows|twitter-articles)?'),
                       }),
                       vm.a.createElement(Sm.b, {
-                        component: sO,
+                        component: cO,
                         exact: !0,
                         key: 'about',
                         path: '/'.concat(Ah.J, '/about'),
                       }),
                       vm.a.createElement(Rh.a, {
                         clickMaskToClose: !1,
-                        component: aO,
+                        component: oO,
                         exact: !0,
                         key: 'superfollows/subscribe',
                         modalSize: Hh.a.full,
                         path: '/'.concat(Ah.J, '/superfollows/subscribe'),
                         shouldAlwaysDisplayModal: Object(jp.a)(!0),
                       }),
-                      vm.a.createElement(Sm.b, { component: nO, exact: !0, key: 'own_profile', path: '/i/profile' }),
+                      vm.a.createElement(Sm.b, { component: rO, exact: !0, key: 'own_profile', path: '/i/profile' }),
                     ],
-                    eS(),
+                    tS(),
                     vm.a.createElement(Sm.b, { component: nv.b }),
                   ),
                 ),
@@ -27617,8 +27651,8 @@ window.__SCRIPTS_LOADED__.i18n &&
             )
             var e, t, n, r, i, a, o, s, c, u, l, d, p, f, m, h, v
           },
-          CO = n('7lsG'),
-          kO = Object(Bm.a)({
+          kO = n('7lsG'),
+          AO = Object(Bm.a)({
             loader: function () {
               return Promise.all([n.e(0), n.e(5), n.e(167)])
                 .then(n.bind(null, 'NBL7'))
@@ -27627,15 +27661,15 @@ window.__SCRIPTS_LOADED__.i18n &&
                 })
             },
           }),
-          AO = n('+Kfv'),
-          RO = n('tRj+'),
-          xO = n('aX4+'),
-          LO = n('7JQg'),
-          PO = n('wrlS'),
-          DO = n('GKOv'),
-          jO = n('E4xM'),
-          MO = Rd.a.b41ba996,
-          NO = (function (e) {
+          RO = n('+Kfv'),
+          xO = n('tRj+'),
+          LO = n('aX4+'),
+          PO = n('7JQg'),
+          DO = n('wrlS'),
+          jO = n('GKOv'),
+          MO = n('E4xM'),
+          NO = Rd.a.b41ba996,
+          FO = (function (e) {
             wf()(n, e)
             var t = Sf()(n)
             function n() {
@@ -27647,11 +27681,11 @@ window.__SCRIPTS_LOADED__.i18n &&
                 u()(yf()(e), '_renderContent', function () {
                   return vm.a.createElement(
                     ym.a,
-                    { style: FO.root },
-                    vm.a.createElement(DO.a, {
+                    { style: UO.root },
+                    vm.a.createElement(jO.a, {
                       showRelationshipChangeConfirmation: !1,
                       topicId: e.props.topicId,
-                      topicLandingContext: MO,
+                      topicLandingContext: NO,
                       withDivider: !1,
                     }),
                   )
@@ -27667,80 +27701,80 @@ window.__SCRIPTS_LOADED__.i18n &&
                     var e = this.props,
                       t = e.children,
                       n = e.wrapperStyle
-                    return vm.a.createElement(jO.a, { renderContent: this._renderContent, wrapperStyle: n }, t)
+                    return vm.a.createElement(MO.a, { renderContent: this._renderContent, wrapperStyle: n }, t)
                   },
                 },
               ]),
               n
             )
           })(vm.a.PureComponent),
-          FO = th.a.create(function (e) {
+          UO = th.a.create(function (e) {
             return { root: { minHeight: 130, width: Nm.a.cardWidth.normal } }
           }),
-          UO = NO,
-          BO = n('q2Cp'),
-          HO = (n('avOP'), n('tmUV'), n('xM7j')),
-          zO = Rd.a.e4c6c309,
-          KO = function () {
-            return vm.a.createElement(HO.a, { inline: !0 }, zO)
+          BO = FO,
+          HO = n('q2Cp'),
+          zO = (n('avOP'), n('tmUV'), n('xM7j')),
+          KO = Rd.a.e4c6c309,
+          VO = function () {
+            return vm.a.createElement(zO.a, { inline: !0 }, KO)
           },
-          VO = n('k89r'),
-          qO = n('aV5u'),
-          GO = n('pynj'),
-          WO = n('Modb')
+          qO = n('k89r'),
+          GO = n('aV5u'),
+          WO = n('pynj'),
+          YO = n('Modb')
         n('/NU0'), n('876e'), n('iOGT'), Object.freeze(['googlebot'])
-        var YO = function (e, t) {
+        var QO = function (e, t) {
             return e
           },
-          QO = n('Cqiq'),
-          JO = n('t62R'),
-          XO = n('PxJJ'),
-          ZO = n('bU1N'),
-          $O = n('yDX5'),
-          eI = n('XIXT'),
-          tI = n('iX4X'),
-          nI = n('SV7d'),
-          rI = n('wD1h'),
-          iI = n('k2KP'),
-          aI = n('gK2g'),
-          oI = n('VRZ4'),
-          sI = n('wnTO'),
-          cI = n('UzHQ'),
-          uI = n('diSD'),
-          lI = n('IV4V'),
-          dI = n('Y6la'),
-          pI = n('ZkMC'),
-          fI = Object(Xd.a)(function (e) {
+          JO = n('Cqiq'),
+          XO = n('t62R'),
+          ZO = n('PxJJ'),
+          $O = n('bU1N'),
+          eI = n('yDX5'),
+          tI = n('XIXT'),
+          nI = n('iX4X'),
+          rI = n('SV7d'),
+          iI = n('wD1h'),
+          aI = n('k2KP'),
+          oI = n('gK2g'),
+          sI = n('VRZ4'),
+          cI = n('wnTO'),
+          uI = n('UzHQ'),
+          lI = n('diSD'),
+          dI = n('IV4V'),
+          pI = n('Y6la'),
+          fI = n('ZkMC'),
+          mI = Object(Xd.a)(function (e) {
             var t = e.getState(),
-              n = Object(PO.d)(t)
+              n = Object(DO.d)(t)
             oh.a.setReducedMotion(Object(Np.x)(t)),
               sh.a.set(Object(Np.k)(t)),
-              JO.b.setLanguage(Object(y.o)(t) || 'en'),
-              XO.a.set(Te.a),
-              ZO.a.setAllowPrerender(n.isTrue('responsive_web_card_preload_mode'))
-            $O.a.set(function (e) {
-              return vm.a.createElement(GO.a, e)
-            })
+              XO.b.setLanguage(Object(y.o)(t) || 'en'),
+              ZO.a.set(Te.a),
+              $O.a.setAllowPrerender(n.isTrue('responsive_web_card_preload_mode'))
             eI.a.set(function (e) {
-              return vm.a.createElement(UO, e)
+              return vm.a.createElement(WO.a, e)
+            })
+            tI.a.set(function (e) {
+              return vm.a.createElement(BO, e)
             }),
-              tI.a.set(xO.a),
-              nI.c.set({ provider: AO.a, loggerHook: qO.a, viewImpressor: RO.a }),
-              rI.a.set(Bh.a),
-              iI.a.set({ component: pI.a, sensitiveMediaConfig: pI.b, sensitiveMediaWarningConfig: pI.c }),
-              aI.a.set({ provider: LO.c, analyticsHook: VO.a }),
-              oI.a.set(CO.a),
-              sI.a.set(YO(BO.a)),
-              cI.a.set(KO),
-              uI.a.set(YO(WO.a)),
-              lI.a.set(kO),
-              dI.a.set(QO.a),
+              nI.a.set(LO.a),
+              rI.c.set({ provider: RO.a, loggerHook: GO.a, viewImpressor: xO.a }),
+              iI.a.set(Bh.a),
+              aI.a.set({ component: fI.a, sensitiveMediaConfig: fI.b, sensitiveMediaWarningConfig: fI.c }),
+              oI.a.set({ provider: PO.c, analyticsHook: qO.a }),
+              sI.a.set(kO.a),
+              cI.a.set(QO(HO.a)),
+              uI.a.set(VO),
+              lI.a.set(QO(YO.a)),
+              dI.a.set(AO),
+              pI.a.set(JO.a),
               e.subscribe(function () {
                 sh.a.set(Object(Np.k)(t))
               }),
               Object(sm.b)()
           }),
-          mI = function () {
+          hI = function () {
             var e = document.documentElement,
               t = document.body,
               n = document.querySelector('meta[name="theme-color"]')
@@ -27751,11 +27785,11 @@ window.__SCRIPTS_LOADED__.i18n &&
               i = th.a.theme.colors.gray0
             t && (t.style.scrollbarColor = ''.concat(r, ' ').concat(i))
           }
-        var hI = n('n09L'),
-          vI = n.n(hI),
-          _I = n('z0QA'),
-          bI = n('shC7')
-        function gI(e) {
+        var vI = n('n09L'),
+          _I = n.n(vI),
+          bI = n('z0QA'),
+          gI = n('shC7')
+        function yI(e) {
           var t = e.featureSwitches,
             n = e.isRTL,
             r = e.node,
@@ -27764,33 +27798,33 @@ window.__SCRIPTS_LOADED__.i18n &&
             o = e.themePaletteName,
             s = e.userClaims
           return (
-            bI.a.setPreferredLanguageRTL(n),
-            vI.a.setGlobalDir(n ? 'RTL' : 'LTR'),
+            gI.a.setPreferredLanguageRTL(n),
+            _I.a.setGlobalDir(n ? 'RTL' : 'LTR'),
             (function (e) {
               var t = document.documentElement,
                 n = document.body
               th.a.setTheme(e),
-                n && (mI(), th.a.onThemeChange(mI)),
+                n && (hI(), th.a.onThemeChange(hI)),
                 t && (t.style.fontSize = ''.concat(th.a.theme.baseFontSize, 'px'))
             })(o),
-            fI(a),
+            mI(a),
             new Promise(function (e) {
               var n = {
                 featureSwitches: t,
                 relayEnvironment: i,
-                routes: IO(),
+                routes: CO(),
                 store: a,
                 themePaletteName: o,
                 userClaims: s,
               }
-              _I.a.runApplication('App', { callback: e, hydrate: !0, initialProps: n, rootTag: r })
+              bI.a.runApplication('App', { callback: e, hydrate: !0, initialProps: n, rootTag: r })
             })
           )
         }
-        _I.a.registerComponent('App', function () {
+        bI.a.registerComponent('App', function () {
           return Pm
         })
-        var yI = (function () {
+        var EI = (function () {
             function e() {
               var t = this
               k()(this, e),
@@ -27854,11 +27888,11 @@ window.__SCRIPTS_LOADED__.i18n &&
               e
             )
           })(),
-          EI = 6e5
-        function wI(e) {
+          wI = 6e5
+        function TI(e) {
           return !isNaN(e) && e >= 0
         }
-        function TI(e) {
+        function SI(e) {
           return (function (e) {
             if (!e) return
             var t = 0,
@@ -27875,13 +27909,13 @@ window.__SCRIPTS_LOADED__.i18n &&
                     u = parseInt(c, 10)
                   switch (s.toLowerCase()) {
                     case 'backoff':
-                      wI(u) && (t = Math.min(u, 1e4))
+                      TI(u) && (t = Math.min(u, 1e4))
                       break
                     case 'serial-duration':
-                      wI(u) && (n = Math.min(u, EI))
+                      TI(u) && (n = Math.min(u, wI))
                       break
                     case 'serial-delay':
-                      wI(u) && (r = Math.min(u, 3e3))
+                      TI(u) && (r = Math.min(u, 3e3))
                       break
                     case 'no-retry':
                       'true' === c && (i = !0)
@@ -27892,7 +27926,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             )
           })(e['backoff-policy'])
         }
-        var SI = (function () {
+        var OI = (function () {
             function e() {
               k()(this, e),
                 u()(this, 'queue', []),
@@ -27990,14 +28024,14 @@ window.__SCRIPTS_LOADED__.i18n &&
               e
             )
           })(),
-          OI = {},
-          II = new URL(Fe.b).host
-        function CI(e, t) {
-          var n = TI(e)
-          n && (OI[t] || (OI[t] = new SI()), OI[t].applyBackoffPolicy(n))
+          II = {},
+          CI = new URL(Fe.b).host
+        function kI(e, t) {
+          var n = SI(e)
+          n && (II[t] || (II[t] = new OI()), II[t].applyBackoffPolicy(n))
         }
         n('iKE+'), n('1LXv'), n('e/gN')
-        var kI = [
+        var AI = [
           'top.GLOBALS',
           'originalCreateNotification',
           'canvas.contentDocument',
@@ -28023,30 +28057,30 @@ window.__SCRIPTS_LOADED__.i18n &&
           'ResizeObserver loop limit exceeded',
           'ResizeObserver loop completed with undelivered notifications',
         ]
-        function AI(e) {
+        function RI(e) {
           if ('string' != typeof e) return !1
           var t = e.toLowerCase()
-          return kI.some(function (n) {
+          return AI.some(function (n) {
             return 'string' == typeof n ? -1 !== t.indexOf(n.toLowerCase()) : n instanceof RegExp && n.test(e)
           })
         }
-        var RI,
-          xI = function (e) {
+        var xI,
+          LI = function (e) {
             return function (t) {
               var n = t.error,
                 r = t.tags
-              if (!AI(n.toString())) {
+              if (!RI(n.toString())) {
                 var i = Object(Te.b)(n),
                   o = { page: 'app', element: null != r && r.userVisible ? 'visible' : void 0, action: 'error' }
                 e.dispatch(a.c(o, { event_info: i }))
               }
             }
           }
-        var LI = op.canUseDOM ? window : self,
-          PI = (null == LI || null === (RI = LI.__META_DATA__) || void 0 === RI ? void 0 : RI.tags) || {},
-          DI = function (e) {
+        var PI = op.canUseDOM ? window : self,
+          DI = (null == PI || null === (xI = PI.__META_DATA__) || void 0 === xI ? void 0 : xI.tags) || {},
+          jI = function (e) {
             var t = e.ignore,
-              n = void 0 === t ? AI : t,
+              n = void 0 === t ? RI : t,
               r = e.splunkLogger
             return function (e) {
               var t = e.extra,
@@ -28059,19 +28093,19 @@ window.__SCRIPTS_LOADED__.i18n &&
               n(u) || n(c) || r.log('error', c, a, s, i)
             }
           }
-        var jI = function () {
+        var MI = function () {
             return Yd.a.currentState
           },
-          MI = function () {
-            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : jI
+          NI = function () {
+            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : MI
             return function (t, n) {
               var r = 'background' === e() ? 'no' : 'yes'
               return (t.headers['x-twitter-active-user'] = r), n(t)
             }
           }
-        var NI,
-          FI,
-          UI = function (e) {
+        var FI,
+          UI,
+          BI = function (e) {
             var t = Object(Te.b)(e)
             return 'TypeError' === t &&
               dm.b.isFirefox() &&
@@ -28079,7 +28113,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               ? 'FFNetworkError'
               : t
           },
-          BI = function (e, t, n, r, i) {
+          HI = function (e, t, n, r, i) {
             var a = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : {},
               o = arguments.length > 6 && void 0 !== arguments[6] ? arguments[6] : {},
               s = new Date(),
@@ -28093,18 +28127,18 @@ window.__SCRIPTS_LOADED__.i18n &&
               r && (c.source.sha = r),
               i instanceof Error &&
                 ((c.source.error_details = i.stack),
-                (c.tag = UI(i)),
+                (c.tag = BI(i)),
                 a.userVisible && ((c.tag = ''.concat(c.tag, '/userVisible')), (c.source.userVisible = !0))),
               c
             )
           },
-          HI = (function () {
+          zI = (function () {
             function e(t) {
               var n = t.transport,
                 r = t.splunkIndexPrefix,
                 i = t.env,
                 a = t.format,
-                o = void 0 === a ? BI : a,
+                o = void 0 === a ? HI : a,
                 s = t.sourceExtras,
                 c = t.sha
               if ((k()(this, e), !n)) throw new Error('transport required')
@@ -28135,30 +28169,29 @@ window.__SCRIPTS_LOADED__.i18n &&
               e
             )
           })(),
-          zI = n('9EWH')
-        Object(zI.b)(), Object(zI.c)(!1), m.a.register(Fp)
-        var KI = s.a(window.__INITIAL_STATE__ || {}, E.a)
+          KI = n('9EWH')
+        Object(KI.b)(), Object(KI.c)(!1), m.a.register(Fp)
+        var VI = s.a(window.__INITIAL_STATE__ || {}, E.a)
         delete window.__INITIAL_STATE__
-        var VI = document.getElementById('react-root'),
-          qI =
+        var qI = document.getElementById('react-root'),
+          GI =
             'rtl' ===
-            (null === (NI = document) || void 0 === NI || null === (FI = NI.documentElement) || void 0 === FI
+            (null === (FI = document) || void 0 === FI || null === (UI = FI.documentElement) || void 0 === UI
               ? void 0
-              : FI.getAttribute('dir')),
-          GI = Object(Bc.a)(),
-          WI = GI.hasMultiAccountCookie,
-          YI = GI.isLoggedIn,
-          QI = GI.unsupportedEngine
+              : UI.getAttribute('dir')),
+          WI = Object(Bc.a)(),
+          YI = WI.hasMultiAccountCookie,
+          QI = WI.isLoggedIn,
+          JI = WI.unsupportedEngine
         _.g(S.a.location, S.a.listen),
           Yd.a.addEventListener('change', function (e) {
             _.b(), _.a()
           })
-        var JI = new gp.a(bp.a),
-          XI = KI && KI.session && KI.session.user_id,
-          ZI = new gp.a(bp.a, XI || null)
-        XI && Object(ka.c)(bp.a, XI)
-        var $I,
-          eC,
+        var XI = new gp.a(bp.a),
+          ZI = VI && VI.session && VI.session.user_id,
+          $I = new gp.a(bp.a, ZI || null)
+        ZI && Object(ka.c)(bp.a, ZI)
+        var eC,
           tC,
           nC,
           rC,
@@ -28178,66 +28211,67 @@ window.__SCRIPTS_LOADED__.i18n &&
           _C,
           bC,
           gC,
-          yC = Dp(KI, {
+          yC,
+          EC = Dp(VI, {
             get api() {
-              return xC
-            },
-            get featureSwitches() {
-              return EC
-            },
-            get userClaims() {
-              return wC
-            },
-            get scribe() {
               return LC
             },
-            get relayEnvironment() {
-              return RC
+            get featureSwitches() {
+              return wC
             },
-            userPersistence: ZI,
-            devicePersistence: JI,
+            get userClaims() {
+              return TC
+            },
+            get scribe() {
+              return PC
+            },
+            get relayEnvironment() {
+              return xC
+            },
+            userPersistence: $I,
+            devicePersistence: XI,
             sentry:
-              (($I = window.Sentry),
-              (eC = function () {
-                void 0 !== $I &&
-                  $I.configureScope(function (e) {
-                    e.setTags(PI)
+              ((eC = window.Sentry),
+              (tC = function () {
+                void 0 !== eC &&
+                  eC.configureScope(function (e) {
+                    e.setTags(DI)
                   })
               }),
               {
                 addFeatureSwitch: function (e, t) {
                   var n = 'fs_'.concat(e.replace('responsive_web', 'rweb')).substring(0, 32)
-                  ;(PI[n] = t), eC()
+                  ;(DI[n] = t), tC()
                 },
                 addTag: function (e, t) {
                   var n = e.substring(0, 32)
-                  ;(PI[n] = t), eC()
+                  ;(DI[n] = t), tC()
                 },
-                init: eC,
+                init: tC,
               }),
           }),
-          EC = Object(PO.b)(yC),
-          wC = $d(yC, EC),
-          TC = Object(PO.a)(yC),
-          SC = function () {
+          wC = Object(DO.b)(EC),
+          TC = $d(EC, wC),
+          SC = Object(DO.a)(EC),
+          OC = function () {
             return (
-              tC ||
-                (tC = new Wf(function () {
-                  return xC.Auth.requestGuestToken().then(function (e) {
+              nC ||
+                (nC = new Wf(function () {
+                  return LC.Auth.requestGuestToken().then(function (e) {
                     return e.guest_token
                   })
-                }, EC)),
-              tC
+                }, wC)),
+              nC
             )
           },
-          OC = new yI(),
-          IC = _i.d,
-          CC = window.location.host,
-          kC =
-            ((nC = function () {
-              return EC.getArrayValue('traffic_rewrite_map')
+          IC = new EI(),
+          CC = _i.d,
+          kC = window.location.host,
+          AC =
+            ((rC = function () {
+              return wC.getArrayValue('traffic_rewrite_map')
             }),
-            (rC = Object(Xd.a)(Uf)),
+            (iC = Object(Xd.a)(Uf)),
             {
               getReplacementHost: function (e) {
                 return (function (e, t) {
@@ -28252,19 +28286,19 @@ window.__SCRIPTS_LOADED__.i18n &&
                     )
                       return r.replacementHost
                   }
-                })(e, rC(nC()))
+                })(e, iC(rC()))
               },
             }),
-          AC = new Fe.a(EC, {
+          RC = new Fe.a(wC, {
             dispatcher: zc.b,
             retryFilter:
-              ((mC = SC),
+              ((hC = OC),
               function (e, t) {
                 var n = i()({}, e)
                 return t(e).catch(function (e) {
                   if (Object(Mt.c)(e, Mt.a.DeniedByApiCsrfProtection)) return t(n)
-                  if (Object(Mt.c)(e, Mt.a.BadGuestToken) && mC())
-                    return mC()
+                  if (Object(Mt.c)(e, Mt.a.BadGuestToken) && hC())
+                    return hC()
                       .refresh()
                       .then(function () {
                         return t(n)
@@ -28273,7 +28307,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 })
               }),
             filters: [
-              ((fC = {}),
+              ((mC = {}),
               function (e, t) {
                 return (function (e, t, n) {
                   var r = Object(vs.stringify)(e.params),
@@ -28293,7 +28327,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                             return delete n[s], Promise.reject(e)
                           }))
                     : t(e)
-                })(e, t, fC)
+                })(e, t, mC)
               }),
               (function (e, t, n, r) {
                 return function (a, o) {
@@ -28309,27 +28343,27 @@ window.__SCRIPTS_LOADED__.i18n &&
                     })
                   )
                 }
-              })(IC, !!YI, null, SC),
-              ((pC = function () {
-                return yC
+              })(CC, !!QI, null, OC),
+              ((fC = function () {
+                return EC
               }),
               function (e, t) {
                 if (e.host === Fe.b || e.host === Ut) {
-                  var n = pC(),
+                  var n = fC(),
                     r = Object(y.s)(n.getState())
                   r && (e.headers['x-twitter-client-language'] = Object(em.c)(r))
                 }
                 return t(e)
               }),
-              MI(),
-              ((lC = function () {
-                return EC.isTrue('responsive_web_zipkin_api_requests_enabled')
+              NI(),
+              ((dC = function () {
+                return wC.isTrue('responsive_web_zipkin_api_requests_enabled')
               }),
-              (dC = function () {
-                return EC.getArrayValue('responsive_web_zipkin_api_requests_paths_allowlist')
+              (pC = function () {
+                return wC.getArrayValue('responsive_web_zipkin_api_requests_paths_allowlist')
               }),
               function (e, t) {
-                if (e.host === Fe.b && lC() && dC().includes(e.path)) {
+                if (e.host === Fe.b && dC() && pC().includes(e.path)) {
                   var n = i()(i()({}, e.headers), {}, { 'x-b3-flags': '1' })
                   return t(i()(i()({}, e), {}, { headers: n }))
                 }
@@ -28354,56 +28388,56 @@ window.__SCRIPTS_LOADED__.i18n &&
                   }
                 return t(e)
               },
-              OC.filter,
-              ((uC = function () {
-                return 'host' === EC.getStringValue('network_layer_503_backoff_mode')
+              IC.filter,
+              ((lC = function () {
+                return 'host' === wC.getStringValue('network_layer_503_backoff_mode')
               }),
               function (e, t) {
-                if (!uC()) return t(e)
+                if (!lC()) return t(e)
                 if ('text/event-stream' === e.headers.accept) return t(e)
                 var n = new URL(e.uri)
-                if (n.host === II && '/1.1/help/settings.json' === n.pathname) return t(e)
+                if (n.host === CI && '/1.1/help/settings.json' === n.pathname) return t(e)
                 var r = (function (e) {
                     var t = e.host,
                       n = e.pathname
-                    return t === II && n.startsWith('/1.1/jot/') ? 'scribe.twitter.com' : t
+                    return t === CI && n.startsWith('/1.1/jot/') ? 'scribe.twitter.com' : t
                   })(n),
-                  i = OI[r]
+                  i = II[r]
                 return (i ? i.enqueueRequest(e, t) : t(e)).then(
                   function (e) {
-                    return CI(e.headers, r), e
+                    return kI(e.headers, r), e
                   },
                   function (e) {
-                    throw (e instanceof At.a && CI(e.headers, r), e)
+                    throw (e instanceof At.a && kI(e.headers, r), e)
                   },
                 )
               }),
-              ((cC = kC),
+              ((uC = AC),
               function (e, t) {
-                var n = cC.getReplacementHost(new URL(e.uri))
+                var n = uC.getReplacementHost(new URL(e.uri))
                 if (void 0 === n) return t(e)
                 var r = 'https://'.concat(n),
                   a = r + e.path
                 return t(i()(i()({}, e), {}, { host: r, uri: a }))
               }),
-              ((iC = {
+              ((aC = {
                 isApiTransitionEnabled: function () {
-                  return EC.isTrue('responsive_web_api_transition_enabled')
+                  return wC.isTrue('responsive_web_api_transition_enabled')
                 },
                 getWindowLocationHost: function () {
-                  return CC
+                  return kC
                 },
                 isLocalDevelopment: function () {
-                  return CC.indexOf('localhost') > -1
+                  return kC.indexOf('localhost') > -1
                 },
               }),
-              (aC = iC.getWindowLocationHost),
-              (oC = iC.isApiTransitionEnabled),
-              (sC = iC.isLocalDevelopment),
+              (oC = aC.getWindowLocationHost),
+              (sC = aC.isApiTransitionEnabled),
+              (cC = aC.isLocalDevelopment),
               function (e, t) {
-                if (!oC() || sC() || e.host !== Fe.b || Up.includes(e.path) || e.headers['x-act-as-user-id'])
+                if (!sC() || cC() || e.host !== Fe.b || Up.includes(e.path) || e.headers['x-act-as-user-id'])
                   return t(e)
-                var n = 'https://'.concat(aC()),
+                var n = 'https://'.concat(oC()),
                   r = '/i/api'.concat(e.path),
                   a = n + r
                 return t(i()(i()({}, e), {}, { host: n, path: r, uri: a }))
@@ -28430,20 +28464,20 @@ window.__SCRIPTS_LOADED__.i18n &&
                   }
                   return n(i()(i()({}, t), {}, { headers: i()(i()({}, t.headers), r) }))
                 }
-              })(EC),
+              })(wC),
             ],
           }),
-          RC = vf(AC),
-          xC = new Gd(AC, RC),
-          LC =
-            ((hC = xC),
-            (_C = Object(np.a)()),
-            (bC = _C.clientAppId),
-            (gC = _C.clientName),
-            Df(i()({ clientName: gC, eventTransformer: Mf(bC), transport: jf(hC), unloadTransport: bf(window) }, vC)))
-        ap({ api: xC, behavioralEventAllowlist: TC, featureSwitches: EC })
-        var PC = new Yf(xC, 3e5)
-        EC.isTrue('responsive_web_send_cookies_metadata_enabled') &&
+          xC = vf(RC),
+          LC = new Gd(RC, xC),
+          PC =
+            ((vC = LC),
+            (bC = Object(np.a)()),
+            (gC = bC.clientAppId),
+            (yC = bC.clientName),
+            Df(i()({ clientName: yC, eventTransformer: Mf(gC), transport: jf(vC), unloadTransport: bf(window) }, _C)))
+        ap({ api: LC, behavioralEventAllowlist: SC, featureSwitches: wC })
+        var DC = new Yf(LC, 3e5)
+        wC.isTrue('responsive_web_send_cookies_metadata_enabled') &&
           (function (e) {
             var t = Object(Bc.a)().cookies.fetchedTime
             e.Jot.clientEvent({
@@ -28452,9 +28486,9 @@ window.__SCRIPTS_LOADED__.i18n &&
                 { description: ''.concat(_i.t, ':cookiesMetadata:load'), product: _i.t, event_value: Date.now() - t },
               ]),
             }).catch(function () {})
-          })(xC)
-        var DC, jC, MC
-        ;(DC = yC.dispatch),
+          })(LC)
+        var jC, MC, NC
+        ;(jC = EC.dispatch),
           window.apkInterface &&
             ((window.openApkDeeplink = function (e) {
               var t = w.b.parseInternalUrl(e)
@@ -28475,7 +28509,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   r = e.uri
                 S.a && S.a.push(r),
                   a.c &&
-                    DC(
+                    jC(
                       Object(a.c)(
                         { page: 'app', section: 'push', element: n || 'unknown', action: 'open' },
                         { impression_id: t },
@@ -28485,13 +28519,13 @@ window.__SCRIPTS_LOADED__.i18n &&
             window.apkInterface.isOsAdsTrackingOn &&
               !window.apkInterface.isOsAdsTrackingOn() &&
               T().then(function (e) {
-                return DC(e.updateSettings({ allowPersonalization: !1 }))
+                return jC(e.updateSettings({ allowPersonalization: !1 }))
               })),
-          (jC = LC),
-          (MC = EC.isTrue('responsive_web_install_banner_show_immediate')),
+          (MC = PC),
+          (NC = wC.isTrue('responsive_web_install_banner_show_immediate')),
           om.a.bindHandlers(function (e) {
             var t = function (e) {
-              jC.log({ page: 'app', section: 'permissions', component: 'install_banner', action: e })
+              MC.log({ page: 'app', section: 'permissions', component: 'install_banner', action: e })
             }
             t('impression'),
               e.userChoice.then(
@@ -28502,17 +28536,17 @@ window.__SCRIPTS_LOADED__.i18n &&
                   t('permissions_error')
                 },
               )
-          }, MC)
-        var NC,
-          FC = !0 === EC.getValueWithoutScribeImpression('responsive_web_linger_refactor_enabled'),
-          UC = [
+          }, NC)
+        var FC,
+          UC = !0 === wC.getValueWithoutScribeImpression('responsive_web_linger_refactor_enabled'),
+          BC = [
             !1,
-            xI(yC),
-            Object(Sp.a)(EC),
-            Qf(PC),
-            void 0 === QI &&
-              DI({
-                splunkLogger: new HI({
+            LI(EC),
+            Object(Sp.a)(wC),
+            Qf(DC),
+            void 0 === JI &&
+              jI({
+                splunkLogger: new zI({
                   env: Gf.a,
                   sha: Gf.c,
                   splunkIndexPrefix: _i.z,
@@ -28520,7 +28554,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     return function (t) {
                       return e.Jot.errorLog({ log: JSON.stringify(t) }).catch(Af.a)
                     }
-                  })(xC),
+                  })(LC),
                   sourceExtras: function () {
                     var e = window.navigator.userAgent || '',
                       t = {
@@ -28532,15 +28566,15 @@ window.__SCRIPTS_LOADED__.i18n &&
                         url: document.location.href,
                       },
                       n = {}
-                    return FC && (n.impressionTrackerV2Enabled = !0), i()(i()({}, t), n)
+                    return UC && (n.impressionTrackerV2Enabled = !0), i()(i()({}, t), n)
                   },
                 }),
               }),
           ].filter(Boolean)
-        Te.c(UC),
-          (NC = Te.a),
+        Te.c(BC),
+          (FC = Te.a),
           window.addEventListener('unhandledrejection', function (e) {
-            NC(e.reason, { extra: { unhandledPromiseRejection: !0 }, tags: { unhandledPromiseRejection: !0 } })
+            FC(e.reason, { extra: { unhandledPromiseRejection: !0 }, tags: { unhandledPromiseRejection: !0 } })
           }),
           (function (e) {
             var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : window,
@@ -28553,17 +28587,17 @@ window.__SCRIPTS_LOADED__.i18n &&
                 o = n[r] && n[r](i)
               o ? e.dispatch(o(a)) : Object(Te.a)('No injector defined for key '.concat(r))
             })
-          })(yC)
-        var BC,
-          HC,
-          zC = o.b(EC) || (window.matchMedia('(prefers-color-scheme: dark)').matches ? o.a.dark : o.a.default)
-        ;((BC = yC),
-        (HC = b.e()),
+          })(EC)
+        var HC,
+          zC,
+          KC = o.b(wC) || (window.matchMedia('(prefers-color-scheme: dark)').matches ? o.a.dark : o.a.default)
+        ;((HC = EC),
+        (zC = b.e()),
         Promise.resolve().then(function () {
-          BC.dispatch(Jf.b())
-          var e = [BC.dispatch(pm.c())]
+          HC.dispatch(Jf.b())
+          var e = [HC.dispatch(pm.c())]
           return Promise.all(e).then(function () {
-            b.c('init:storePrepare', HC.end())
+            b.c('init:storePrepare', zC.end())
           })
         }))
           .catch(function (e) {
@@ -28571,9 +28605,9 @@ window.__SCRIPTS_LOADED__.i18n &&
           })
           .then(function () {
             return (
-              b.b(xC),
-              im(yC),
-              yC.dispatch(
+              b.b(LC),
+              im(EC),
+              EC.dispatch(
                 (function (e) {
                   return function (t, n, r) {
                     var i = r.featureSwitches,
@@ -28594,17 +28628,17 @@ window.__SCRIPTS_LOADED__.i18n &&
                           })
                       : Promise.resolve(null)
                   }
-                })(xC),
+                })(LC),
               ),
-              VI &&
-                gI({
-                  featureSwitches: EC,
-                  userClaims: wC,
-                  store: yC,
-                  node: VI,
-                  isRTL: qI,
-                  relayEnvironment: RC,
-                  themePaletteName: zC,
+              qI &&
+                yI({
+                  featureSwitches: wC,
+                  userClaims: TC,
+                  store: EC,
+                  node: qI,
+                  isRTL: GI,
+                  relayEnvironment: xC,
+                  themePaletteName: KC,
                 })
             )
           })
@@ -28614,21 +28648,21 @@ window.__SCRIPTS_LOADED__.i18n &&
               _.f(),
                 (function () {
                   if (ep.a.isStandaloneApp()) {
-                    var e = y.q(yC.getState()),
-                      t = yC.dispatch(Object(cd.createLocalApiErrorHandlerWithContextFactory)('APP')({}))
-                    YI &&
+                    var e = y.q(EC.getState()),
+                      t = EC.dispatch(Object(cd.createLocalApiErrorHandlerWithContextFactory)('APP')({}))
+                    QI &&
                       e &&
-                      xC.Ocf.setUserPwaLaunched({ userId: e })
+                      LC.Ocf.setUserPwaLaunched({ userId: e })
                         .catch(function (e) {
-                          return Object(zf.e)(yC.dispatch, e, 'OCF_SET_USER_PWA_LAUNCHED')
+                          return Object(zf.e)(EC.dispatch, e, 'OCF_SET_USER_PWA_LAUNCHED')
                         })
                         .catch(t)
                     var n = a.c({ page: 'app', action: 'launch' })
-                    yC.dispatch(n)
+                    EC.dispatch(n)
                   }
                 })(),
                 (function () {
-                  if (g.g() && YI) {
+                  if (g.g() && QI) {
                     if ('denied' === g.d()) {
                       var e = a.c({
                         page: 'app',
@@ -28637,32 +28671,32 @@ window.__SCRIPTS_LOADED__.i18n &&
                         element: 'global',
                         action: 'permissions_denied',
                       })
-                      yC.dispatch(e)
+                      EC.dispatch(e)
                     }
                     Object($f.a)().then(function (e) {
-                      yC.dispatch(e.loadPushPromptSettingsIfNeeded()),
-                        yC.dispatch(e.pushCheckinIfNeeded()),
-                        ep.a.isTwitterLite() && ep.a.isFirstLaunch() && yC.dispatch(e.pushSubscribe())
+                      EC.dispatch(e.loadPushPromptSettingsIfNeeded()),
+                        EC.dispatch(e.pushCheckinIfNeeded()),
+                        ep.a.isTwitterLite() && ep.a.isFirstLaunch() && EC.dispatch(e.pushSubscribe())
                     })
                   }
                 })(),
-                (e = EC.getNumberValue('scribe_api_error_sample_size') / 1e4),
-                (t = EC.getNumberValue('scribe_api_sample_size') / 1e4),
-                (r = EC.getNumberValue('scribe_cdn_sample_size') / 1e4),
-                (i = EC.getNumberValue('scribe_web_nav_sample_size') / 1e4),
-                (o = EC.getArrayValue('scribe_cdn_host_list')),
+                (e = wC.getNumberValue('scribe_api_error_sample_size') / 1e4),
+                (t = wC.getNumberValue('scribe_api_sample_size') / 1e4),
+                (r = wC.getNumberValue('scribe_cdn_sample_size') / 1e4),
+                (i = wC.getNumberValue('scribe_web_nav_sample_size') / 1e4),
+                (o = wC.getArrayValue('scribe_cdn_host_list')),
                 n
                   .e(70)
                   .then(n.bind(null, 'ujfh'))
                   .then(function (n) {
-                    var a = new (0, n.default)(LC, {
+                    var a = new (0, n.default)(PC, {
                       apiErrorSampleSize: e,
                       apiSampleSize: t,
                       cdnSampleSize: r,
                       navSampleSize: i,
                       cdnHostList: o,
                     })
-                    OC.addHandler(a.scribeRequest)
+                    IC.addHandler(a.scribeRequest)
                   }),
                 Object(Wd.h)().then(function (e) {
                   var t = e.AudioModule,
@@ -28677,18 +28711,18 @@ window.__SCRIPTS_LOADED__.i18n &&
                     l = e.redirectEmailUser,
                     d = e.scribeExternalReferer,
                     p = e.userPresence
-                  i.init(yC, EC),
-                    a(yC),
-                    p.init(yC),
+                  i.init(EC, wC),
+                    a(EC),
+                    p.init(EC),
                     c.initialize(),
-                    d(xC, EC, LC, yC),
-                    n.isSupported(EC) && n.create(EC, xC, kC),
+                    d(LC, wC, PC, EC),
+                    n.isSupported(wC) && n.create(wC, LC, AC),
                     o.init(document),
-                    l(EC, yC.getState()),
-                    WI && u(yC),
-                    r(EC, xC, yC.dispatch),
-                    s(yC),
-                    t.init({ api: xC, featureSwitches: EC, store: yC })
+                    l(wC, EC.getState()),
+                    YI && u(EC),
+                    r(wC, LC, EC.dispatch),
+                    s(EC),
+                    t.init({ api: LC, featureSwitches: wC, store: EC })
                 }),
                 mm(),
                 dm.b.isChrome() && (dm.b.chromeVersion() <= 50 || 66 === dm.b.chromeVersion())
@@ -28705,7 +28739,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       r.initBranchSdk(e, t, n)
                     })
                   }, 0)
-                })(EC, xC, yC),
+                })(wC, LC, EC),
                 setTimeout(function () {
                   Rd.a.emoji.then(function () {
                     return n
@@ -28729,9 +28763,9 @@ window.__SCRIPTS_LOADED__.i18n &&
                       })
                   })
                 }, 5e3),
-                yC.dispatch(y.b()),
-                yC.dispatch(y.d()),
-                yC.dispatch(Object(Np.e)())
+                EC.dispatch(y.b()),
+                EC.dispatch(y.d()),
+                EC.dispatch(Object(Np.e)())
             },
             function (e) {
               return Object(Te.a)(e, { tags: { clientInit: 'render' } }), Promise.resolve()
@@ -36577,7 +36611,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   target: i,
                 }
               })
-            U.enrichments = { interactive_text_enrichment: { interactive_texts: oe } }
+            oe.length > 0 && (U.enrichments = { interactive_text_enrichment: { interactive_texts: oe } })
           }
           return Object(s.a)(z) && delete U.ext, void 0 === U.tombstoneInfo && delete U.tombstoneInfo, U
         }
@@ -37812,17 +37846,21 @@ window.__SCRIPTS_LOADED__.i18n &&
                     c.subtitle && (ce.subtitle = Object(_.a)(se, c.subtitle)),
                     (W.birdwatch_pivot = ce)
                 }
-                return (
-                  m &&
-                    (W.enrichments = {
-                      interactive_text_enrichment: {
-                        interactive_texts: m.interactive_text_enrichment.interactive_texts.filter(function (e) {
-                          return void 0 !== e.id && e.target
-                        }),
-                      },
-                    }),
-                  Object(g.a)(W, t, n)
-                )
+                if (m) {
+                  var ue,
+                    le,
+                    de =
+                      null === (ue = m.interactive_text_enrichment) ||
+                      void 0 === ue ||
+                      null === (le = ue.interactive_texts) ||
+                      void 0 === le
+                        ? void 0
+                        : le.filter(function (e) {
+                            return void 0 !== e.id && e.target
+                          })
+                  de && de.length > 0 && (W.enrichments = { interactive_text_enrichment: { interactive_texts: de } })
+                }
+                return Object(g.a)(W, t, n)
               },
             },
           ),
@@ -38751,16 +38789,16 @@ window.__SCRIPTS_LOADED__.i18n &&
       FiRh: function (e, t, n) {
         'use strict'
         n.d(t, 'b', function () {
-          return U
+          return K
         }),
           n.d(t, 'e', function () {
-            return G
+            return J
           }),
           n.d(t, 'd', function () {
-            return W
+            return X
           }),
           n.d(t, 'a', function () {
-            return Y
+            return Z
           })
         var r = n('yiKp'),
           i = n.n(r),
@@ -38795,11 +38833,37 @@ window.__SCRIPTS_LOADED__.i18n &&
           b = n('OIC0'),
           g = n('EMYB'),
           y = n('lHOd'),
-          E = n('iySH'),
+          E = n('shC7'),
           w = n('I4+6'),
           T = n('cm6r'),
           S = n('rHpw'),
-          O = function (e) {
+          O = n('Lsrn'),
+          I = function () {
+            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+            return Object(_.a)(
+              'svg',
+              i()(
+                i()({}, e),
+                {},
+                {
+                  accessibilityHidden: void 0 === e.accessibilityLabel,
+                  style: [O.a.root, e.style, E.a.getConstants().isRTL && O.a.iconRTL],
+                  viewBox: '0 0 24 24',
+                },
+              ),
+              m.a.createElement(
+                'g',
+                null,
+                m.a.createElement('path', {
+                  d: 'M8.914 12l6.793-6.793c.39-.39.39-1.023 0-1.414s-1.023-.39-1.414 0l-7.5 7.5c-.39.39-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414L8.914 12z',
+                }),
+              ),
+            )
+          }
+        I.metadata = { width: 24, height: 24 }
+        var C = I,
+          k = n('iySH'),
+          A = function (e) {
             var t = e.onClick,
               n = e.part,
               r = n.color,
@@ -38808,52 +38872,56 @@ window.__SCRIPTS_LOADED__.i18n &&
               o =
                 S.a.theme.colors[''.concat(r.toLowerCase()).concat('200')] ||
                 S.a.theme.colors[''.concat('blue').concat('200')],
-              s = w.a.generate({ backgroundColor: o, color: S.a.theme.colors.text })
+              s = w.a.generate({ backgroundColor: o, color: S.a.theme.colors.text }),
+              c = E.a.getConstants().isRTL
             return m.a.createElement(
               T.a,
               {
                 interactiveStyles: s,
                 link: { openInSameFrame: !1, pathname: a },
                 onClick: t,
-                style: [{ backgroundColor: o }, I.highlight],
+                style: [{ backgroundColor: o }, R.highlight, c && R.highlightRTL],
               },
-              m.a.createElement(h.b, { dir: 'ltr', style: I.normalWrap }, i),
-              m.a.createElement(E.a, { style: I.chevronAlign }),
+              m.a.createElement(h.b, { dir: 'ltr', style: R.normalWrap }, i),
+              c
+                ? m.a.createElement(C, { style: [R.chevronAlign, R.chevronAlignRTL] })
+                : m.a.createElement(k.a, { style: R.chevronAlign }),
             )
           },
-          I = S.a.create(function (e) {
+          R = S.a.create(function (e) {
             return {
               highlight: {
-                alignItems: 'center',
                 borderRadius: e.borderRadii.infinite,
                 boxDecorationBreak: 'clone',
-                display: 'inline-flex',
-                flexDirection: 'row',
-                marginBottom: e.spaces.space2,
-                paddingHorizontal: e.spaces.space12,
+                display: 'inline',
+                paddingLeft: e.spaces.space12,
                 whiteSpace: 'nowrap',
+                lineHeight: 'calc('.concat(e.lineHeights.title4, ' + 2px)'),
               },
+              highlightRTL: { paddingLeft: 0, paddingRight: e.spaces.space12 },
               normalWrap: { whiteSpace: 'normal' },
               chevronAlign: {
-                fontSize: '85%',
-                marginRight: 'calc('.concat(e.spaces.space12, '/-2)'),
-                textAlignVertical: '-3px',
+                fontSize: '87%',
+                marginLeft: e.spaces.space2,
+                marginRight: 'calc('.concat(e.spaces.space2, '/2)'),
+                textAlignVertical: '-'.concat(e.spaces.space4),
               },
+              chevronAlignRTL: { marginLeft: 'calc('.concat(e.spaces.space2, '/2)'), marginRight: e.spaces.space2 },
             }
           }),
-          C = n('4w6w'),
-          k = n('yDX5'),
-          A = n('oECP'),
-          R = n('mN6z'),
-          x = n('oQhu'),
-          L = /&amp;|&gt;|&lt;|&quot;|&#39;/g,
-          P = { '&amp;': '&', '&gt;': '>', '&lt;': '<', '&quot;': '"', '&#39;': "'" },
-          D = function (e) {
+          x = n('4w6w'),
+          L = n('yDX5'),
+          P = n('oECP'),
+          D = n('mN6z'),
+          j = n('oQhu'),
+          M = /&amp;|&gt;|&lt;|&quot;|&#39;/g,
+          N = { '&amp;': '&', '&gt;': '>', '&lt;': '<', '&quot;': '"', '&#39;': "'" },
+          F = function (e) {
             return Object(_.a)('span', e)
           },
-          j = 'data-emoji-text',
-          M = '['.concat(j, ']'),
-          N = function (e) {
+          U = 'data-emoji-text',
+          B = '['.concat(U, ']'),
+          H = function (e) {
             var t,
               n = e.accessibilityLabel,
               r = e.source,
@@ -38863,22 +38931,22 @@ window.__SCRIPTS_LOADED__.i18n &&
             return Object(_.a)(
               'img',
               ((t = { alt: n || '', draggable: !1 }),
-              l()(t, j, a),
+              l()(t, U, a),
               l()(t, 'src', r),
               l()(t, 'style', i),
               l()(t, 'title', o),
               t),
             )
           },
-          F = function (e) {
+          z = function (e) {
             var t = window.getSelection()
             if (0 !== t.rangeCount) {
               for (var n, r = '', i = !1, a = 0; a < t.rangeCount; a++) {
                 var o = t.getRangeAt(a).cloneContents(),
-                  s = o.querySelectorAll(M)
+                  s = o.querySelectorAll(B)
                 s.length > 0 && (i = !0),
                   s.forEach(function (e) {
-                    return (e.textContent = String(e.getAttribute(j)))
+                    return (e.textContent = String(e.getAttribute(U)))
                   }),
                   (r += o.textContent)
               }
@@ -38888,15 +38956,15 @@ window.__SCRIPTS_LOADED__.i18n &&
                   e.stopImmediatePropagation()
             }
           },
-          U = function () {
+          K = function () {
             return (
-              v.canUseDOM && document.addEventListener('copy', F),
+              v.canUseDOM && document.addEventListener('copy', z),
               function () {
-                document.removeEventListener('copy', F)
+                document.removeEventListener('copy', z)
               }
             )
           }
-        var B = function (e, t, n) {
+        var V = function (e, t, n) {
             var r = t.prefix,
               i = t.text,
               a = t.textDirection
@@ -38904,8 +38972,8 @@ window.__SCRIPTS_LOADED__.i18n &&
             var o = (function (e) {
                 return (
                   e &&
-                  e.replace(L, function (e) {
-                    return P[e]
+                  e.replace(M, function (e) {
+                    return N[e]
                   })
                 )
               })(i.substring(e.startIndex, e.endIndex)),
@@ -38916,7 +38984,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               ''.concat(s).concat(o),
             )
           },
-          H = function (e, t) {
+          q = function (e, t) {
             if (!e || 0 === e.length) return [{ startIndex: 0, endIndex: t.length, bolded: !1 }]
             var n = [],
               r = 0
@@ -38933,7 +39001,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               n
             )
           },
-          z = function (e, t) {
+          G = function (e, t) {
             e.displayUrl || (e.displayUrl = e.expandedUrl)
             var n = (function (e) {
               var t = e.displayUrl,
@@ -38961,7 +39029,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 ? null
                 : m.a.createElement(
                     h.b,
-                    { accessibilityHidden: !0, style: $.copyableButHidden, withoutTwemojiAndHashflags: !0 },
+                    { accessibilityHidden: !0, style: re.copyableButHidden, withoutTwemojiAndHashflags: !0 },
                     n.protocol,
                   ),
               n.precedingEllipsis
@@ -38974,7 +39042,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               n.precedingDisplayUrl
                 ? m.a.createElement(
                     h.b,
-                    { accessibilityHidden: !0, style: $.copyableButHidden, withoutTwemojiAndHashflags: !0 },
+                    { accessibilityHidden: !0, style: re.copyableButHidden, withoutTwemojiAndHashflags: !0 },
                     n.precedingDisplayUrl,
                   )
                 : null,
@@ -38982,7 +39050,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               n.followingDisplayUrl
                 ? m.a.createElement(
                     h.b,
-                    { accessibilityHidden: !0, style: $.copyableButHidden, withoutTwemojiAndHashflags: !0 },
+                    { accessibilityHidden: !0, style: re.copyableButHidden, withoutTwemojiAndHashflags: !0 },
                     n.followingDisplayUrl,
                   )
                 : null,
@@ -38995,51 +39063,51 @@ window.__SCRIPTS_LOADED__.i18n &&
                 : null,
             )
           },
-          K = function (e) {
+          W = function (e) {
             var t = e.entity,
               n = e.isHashFlag,
               r = t.text ? t.text : '',
-              i = r ? q[r] : void 0
+              i = r ? Q[r] : void 0
             return t.url
-              ? m.a.createElement(N, {
+              ? m.a.createElement(H, {
                   accessibilityLabel: i || r,
                   draggable: !1,
                   resizeMode: 'stretch',
                   source: t.url,
-                  style: [$.twemoji, n && $.hashFlag],
+                  style: [re.twemoji, n && re.hashFlag],
                   text: r,
                   title: i,
                 })
               : m.a.createElement('span', {
-                  'data-nonrendered-emoji': Object(C.toCodePoints)(r)
+                  'data-nonrendered-emoji': Object(x.toCodePoints)(r)
                     .map(function (e) {
                       return 'U+'.concat(e)
                     })
                     .join('-'),
                 })
           },
-          V = {},
-          q = {},
-          G = function (e) {
-            V = e
+          Y = {},
+          Q = {},
+          J = function (e) {
+            Y = e
           },
-          W = function (e) {
-            q = e
+          X = function (e) {
+            Q = e
           },
-          Y = { linkColor: 'link', linkify: !1, underlineLinks: !1 },
-          Q = function (e, t) {
+          Z = { linkColor: 'link', linkify: !1, underlineLinks: !1 },
+          $ = function (e, t) {
             return (
-              (t.part.entityType !== b.a.HASHTAG || !t.part.text || !V[t.part.text.toLowerCase()]) && Object(R.a)(e, t)
+              (t.part.entityType !== b.a.HASHTAG || !t.part.text || !Y[t.part.text.toLowerCase()]) && Object(D.a)(e, t)
             )
           },
-          J = Object(x.a)(function (e, t) {
+          ee = Object(j.a)(function (e, t) {
             return { viewState: { type: 'tweetEntity', entityId: e }, viewType: t }
           }),
-          X = function (e, t, n) {
-            var r = J(n, t)
+          te = function (e, t, n) {
+            var r = ee(n, t)
             return m.a.createElement(d.a, { behavioralEventContext: r }, e)
           },
-          Z = m.a.memo(function (e) {
+          ne = m.a.memo(function (e) {
             var t,
               n,
               r,
@@ -39047,9 +39115,9 @@ window.__SCRIPTS_LOADED__.i18n &&
               o,
               s = m.a.useContext(y.a),
               c = {
-                linkColor: e.linkColor || Y.linkColor,
-                linkify: e.linkify || Y.linkify,
-                underlineLinks: e.underlineLinks || Y.underlineLinks,
+                linkColor: e.linkColor || Z.linkColor,
+                linkify: e.linkify || Z.linkify,
+                underlineLinks: e.underlineLinks || Z.underlineLinks,
               },
               u = function (t) {
                 e.onClick && e.part.entityType && e.onClick(t, e.part.entityType)
@@ -39062,7 +39130,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             switch (e.part.entityType) {
               case b.a.URL:
                 return (function (e, t, n, r) {
-                  var a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : A.a,
+                  var a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : P.a,
                     o = e.linkColor,
                     s = e.linkify,
                     c = e.underlineLinks,
@@ -39082,12 +39150,12 @@ window.__SCRIPTS_LOADED__.i18n &&
                           hoverLabel: { label: v.expandedUrl },
                           link: s ? f : void 0,
                           onClick: s ? n({ originalUrl: p, embeddedUrl: f, expandedUrl: u }) : void 0,
-                          style: s && c ? $.underlinedLink : void 0,
+                          style: s && c ? re.underlinedLink : void 0,
                           withoutTwemojiAndHashflags: !0,
                         },
-                        z(v, _),
+                        G(v, _),
                       )
-                    return X(b, 'link', d)
+                    return te(b, 'link', d)
                   })
                 })(c, e.part, l, s.hostname, e.transformUrl)
               case b.a.MEDIA:
@@ -39108,10 +39176,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                         hoverLabel: { label: s },
                         link: a ? l : void 0,
                         onClick: a ? n : void 0,
-                        style: a && o ? $.underlinedLink : void 0,
+                        style: a && o ? re.underlinedLink : void 0,
                         withoutTwemojiAndHashflags: !0,
                       },
-                      z(t),
+                      G(t),
                     )
                   })
                 })(c, e.part, u, s.hostname)
@@ -39125,7 +39193,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     c = t.text,
                     u = t.textDirection,
                     l = t.url,
-                    d = H(o, c).map(function (e, t) {
+                    d = q(o, c).map(function (e, t) {
                       var o = 0 === t ? s : ''
                       return m.a.createElement(
                         h.b,
@@ -39135,15 +39203,15 @@ window.__SCRIPTS_LOADED__.i18n &&
                           key: t.toString(),
                           link: i ? l : void 0,
                           onClick: i ? n : void 0,
-                          style: i && a ? $.underlinedLink : void 0,
+                          style: i && a ? re.underlinedLink : void 0,
                           weight: e.bolded ? 'bold' : void 0,
                           withoutTwemojiAndHashflags: !0,
                         },
                         ''.concat(o).concat(c.substring(e.startIndex, e.endIndex)),
                       )
                     }),
-                    p = m.a.createElement(D, { style: $.entityWrapper }, d)
-                  return X(p, 'cashtag', c)
+                    p = m.a.createElement(F, { style: re.entityWrapper }, d)
+                  return te(p, 'cashtag', c)
                 })(c, e.part, u)
               case b.a.HASHTAG:
                 return (function (e, t, n) {
@@ -39158,8 +39226,8 @@ window.__SCRIPTS_LOADED__.i18n &&
                     d = t.url,
                     p = null,
                     f = Object(g.b)(u, r)
-                  f[0] && (p = K({ entity: f[0], isHashFlag: !0 }))
-                  var v = H(s, u),
+                  f[0] && (p = W({ entity: f[0], isHashFlag: !0 }))
+                  var v = q(s, u),
                     _ = v.map(function (e, t) {
                       var r = 0 === t ? c : '',
                         s = t === v.length - 1 ? p : void 0
@@ -39171,7 +39239,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                           key: t.toString(),
                           link: a ? d : void 0,
                           onClick: a ? n({ text: u }) : void 0,
-                          style: [a && o ? $.underlinedLink : void 0, s ? $.hashflagDisplay : void 0],
+                          style: [a && o ? re.underlinedLink : void 0, s ? re.hashflagDisplay : void 0],
                           weight: e.bolded ? 'bold' : void 0,
                           withoutTwemojiAndHashflags: !0,
                         },
@@ -39179,12 +39247,12 @@ window.__SCRIPTS_LOADED__.i18n &&
                         s,
                       )
                     }),
-                    b = m.a.createElement(D, { style: $.entityWrapper }, _)
-                  return X(b, 'hashtag', u)
-                })(c, e.part, l, V)
+                    b = m.a.createElement(F, { style: re.entityWrapper }, _)
+                  return te(b, 'hashtag', u)
+                })(c, e.part, l, Y)
               case b.a.INTERACTIVE_HIGHLIGHT:
                 return (function (e, t) {
-                  return m.a.createElement(O, { onClick: t({ id: e.id }), part: e })
+                  return m.a.createElement(A, { onClick: t({ id: e.id }), part: e })
                 })(e.part, l)
               case b.a.MENTION:
                 return (function (e, t, n) {
@@ -39198,7 +39266,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     l = t.text,
                     d = t.textDirection,
                     p = t.url,
-                    f = H(s, l).map(function (e, t) {
+                    f = q(s, l).map(function (e, t) {
                       var o = 0 === t ? u : ''
                       return m.a.createElement(
                         h.b,
@@ -39208,38 +39276,38 @@ window.__SCRIPTS_LOADED__.i18n &&
                           key: t.toString(),
                           link: i ? p : void 0,
                           onClick: i ? n({ text: l, id_str: c }) : void 0,
-                          style: i && a ? $.underlinedLink : void 0,
+                          style: i && a ? re.underlinedLink : void 0,
                           weight: e.bolded ? 'bold' : void 0,
                           withoutTwemojiAndHashflags: !0,
                         },
                         ''.concat(o).concat(l.substring(e.startIndex, e.endIndex)),
                       )
                     }),
-                    v = m.a.createElement(D, { style: $.entityWrapper }, f),
-                    _ = i && o === b.a.MENTION ? m.a.createElement(k.a, { screenName: l }, v) : v
-                  return X(_, 'user_mention', c)
+                    v = m.a.createElement(F, { style: re.entityWrapper }, f),
+                    _ = i && o === b.a.MENTION ? m.a.createElement(L.a, { screenName: l }, v) : v
+                  return te(_, 'user_mention', c)
                 })(c, e.part, l)
               case b.a.EMOJI:
-                return (o = e.part), K({ entity: o })
+                return (o = e.part), W({ entity: o })
               case b.a.TEXT:
                 return (
                   (t = e.part),
                   (n = t.highlights || []),
                   (r = t.text),
-                  (a = H(n, r)),
+                  (a = q(n, r)),
                   m.a.createElement(
                     m.a.Fragment,
                     null,
                     a.map(function (e, n) {
-                      return B(e, t, n)
+                      return V(e, t, n)
                     }),
                   )
                 )
               default:
                 return null
             }
-          }, Q),
-          $ = S.a.create(function (e) {
+          }, $),
+          re = S.a.create(function (e) {
             return {
               twemoji: {
                 height: '1.2em',
@@ -39256,7 +39324,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               hashflagDisplay: { whiteSpace: 'nowrap' },
             }
           })
-        t.c = Z
+        t.c = ne
       },
       Fz18: function (e, t, n) {
         'use strict'
@@ -42617,6 +42685,14 @@ window.__SCRIPTS_LOADED__.i18n &&
               })(t, o.a.createElement(u, { originalRef: r, passedProps: n, wrappedComponent: e }))
             }),
           )
+        }
+      },
+      J3Tr: function (e, t) {
+        e.exports = {
+          queryId: 'xVW9j3OqoBRY9d6_2OONEg',
+          operationName: 'UnmentionUserFromConversation',
+          operationType: 'mutation',
+          metadata: { featureSwitches: {} },
         }
       },
       JAMG: function (e, t) {
@@ -51257,10 +51333,10 @@ window.__SCRIPTS_LOADED__.i18n &&
       Qfne: function (e, t, n) {
         'use strict'
         n.d(t, 'a', function () {
-          return ce
+          return le
         }),
           n.d(t, 'c', function () {
-            return ue
+            return de
           })
         var r = n('m3Bd'),
           i = n.n(r),
@@ -51323,17 +51399,19 @@ window.__SCRIPTS_LOADED__.i18n &&
           J = n('F5gZ'),
           X = n('6si+'),
           Z = n.n(X),
-          $ = n('/TTe'),
+          $ = n('J3Tr'),
           ee = n.n($),
-          te = n('fEA7'),
+          te = n('/TTe'),
           ne = n.n(te),
-          re = n('F3pd'),
-          ie = ['__typename'],
-          ae = ['__typename', 'tweet'],
-          oe = ['promotedContent'],
-          se = ['promotedContent'],
-          ce = Object.freeze({ SINGLE_TWEET: 'off', FIRST_TWEET: 'first', SUBSEQUENT_TWEET: 'subsequent' }),
-          ue = function (e) {
+          re = n('fEA7'),
+          ie = n.n(re),
+          ae = n('F3pd'),
+          oe = ['__typename'],
+          se = ['__typename', 'tweet'],
+          ce = ['promotedContent'],
+          ue = ['promotedContent'],
+          le = Object.freeze({ SINGLE_TWEET: 'off', FIRST_TWEET: 'first', SUBSEQUENT_TWEET: 'subsequent' }),
+          de = function (e) {
             return {
               cards_platform: c.c,
               include_cards: 1,
@@ -51343,9 +51421,9 @@ window.__SCRIPTS_LOADED__.i18n &&
               tweet_mode: 'extended',
             }
           },
-          le = function (e) {
+          pe = function (e) {
             return o()(
-              o()(o()({}, s.b), ue(e)),
+              o()(o()({}, s.b), de(e)),
               {},
               {
                 simple_quoted_tweet: !0,
@@ -51355,44 +51433,44 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             )
           },
-          de = { tweet_mode: 'extended' },
-          pe = function (e, t) {
+          fe = { tweet_mode: 'extended' },
+          me = function (e, t) {
             var n,
               r = null == t || null === (n = t.create_reaction) || void 0 === n ? void 0 : n.success
             return r || Object(G.a)('GQL Reactions: Failed to create tweet reaction'), !r && Object(I.c)(e)
           },
-          fe = function (e, t) {
+          he = function (e, t) {
             var n,
               r = null == t || null === (n = t.delete_reaction) || void 0 === n ? void 0 : n.success
             return r || Object(G.a)('GQL Reactions: Failed to delete tweet reaction'), !r && Object(I.c)(e)
           },
-          me = function (e, t) {
+          ve = function (e, t) {
             var n,
               r = null == t || null === (n = t.create_downvote) || void 0 === n ? void 0 : n.success
             return r || Object(G.a)('GQL Reactions: Failed to create tweet downvote'), !r && Object(I.c)(e)
           },
-          he = function (e, t) {
+          _e = function (e, t) {
             var n,
               r = null == t || null === (n = t.delete_downvote) || void 0 === n ? void 0 : n.success
             return r || Object(G.a)('GQL Reactions: Failed to delete tweet downvote'), !r && Object(I.c)(e)
           },
-          ve = function (e, t) {
+          be = function (e, t) {
             var n = 'Done' === (null == t ? void 0 : t.favorite_tweet)
             return n || Object(G.a)('GQL Favorites: Failed to favorite tweet'), !n && Object(I.c)(e)
           },
-          _e = function (e, t) {
+          ge = function (e, t) {
             var n = 'Done' === (null == t ? void 0 : t.tweet_bookmark_put)
             return n || Object(G.a)('GQL Bookmarks: Failed to create bookmark'), !n && Object(I.c)(e)
           },
-          be = function (e, t) {
+          ye = function (e, t) {
             var n = 'Done' === (null == t ? void 0 : t.tweet_bookmark_delete)
             return n || Object(G.a)('GQL Bookmarks: Failed to delete bookmark'), !n && Object(I.c)(e)
           },
-          ge = function (e, t) {
+          Ee = function (e, t) {
             var n = 'Done' === (null == t ? void 0 : t.unfavorite_tweet)
             return n || Object(G.a)('GQL Favorites: Failed to unfavorite tweet'), !n && Object(I.c)(e)
           },
-          ye = function (e, t) {
+          we = function (e, t) {
             var n,
               r,
               i = !(
@@ -51405,7 +51483,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               )
             return i || Object(G.a)('GQL retweet: Failed to retweet'), !i && Object(I.c)(e)
           },
-          Ee = function (e, t) {
+          Te = function (e, t) {
             var n,
               r,
               i = !(
@@ -51418,21 +51496,28 @@ window.__SCRIPTS_LOADED__.i18n &&
               )
             return i || Object(G.a)('GQL retweet: Failed to retweet'), !i && Object(I.c)(e)
           },
-          we = function (e, t) {
+          Se = function (e, t) {
             var n = 'Done' === (null == t ? void 0 : t.tweet_conversation_control_put)
             return (
               n || Object(G.a)('GQL Update Convo Controls: Failed to update conversation controls'),
               !n && Object(I.c)(e)
             )
           },
-          Te = function (e, t) {
+          Oe = function (e, t) {
             var n = 'Done' === (null == t ? void 0 : t.tweet_conversation_control_delete)
             return (
               n || Object(G.a)('GQL Delete Convo Controls: Failed to delete conversation controls'),
               !n && Object(I.c)(e)
             )
           },
-          Se = function (e, t) {
+          Ie = function (e, t) {
+            var n = 'Done' === (null == t ? void 0 : t.unmention_user)
+            return (
+              n || Object(G.a)('GQL UnmentionUserFromConversation: Failed to unmention user from conversation'),
+              !n && Object(I.c)(e)
+            )
+          },
+          Ce = function (e, t) {
             var n = e ? (null == e ? void 0 : e.split(',')) : void 0,
               r = n ? n[0] : void 0,
               i = r
@@ -51456,13 +51541,13 @@ window.__SCRIPTS_LOADED__.i18n &&
                   })
               : void 0
           },
-          Oe = function (e, t) {
+          ke = function (e, t) {
             var n,
-              r = Se(e.media_ids, e.media_tags),
+              r = Ce(e.media_ids, e.media_tags),
               i =
                 e.exclude_reply_user_ids && e.exclude_reply_user_ids.length ? e.exclude_reply_user_ids.split(',') : [],
               a = (function (e) {
-                return e === ce.FIRST_TWEET ? 'BatchFirst' : e === ce.SUBSEQUENT_TWEET ? 'BatchSubsequent' : void 0
+                return e === le.FIRST_TWEET ? 'BatchFirst' : e === le.SUBSEQUENT_TWEET ? 'BatchSubsequent' : void 0
               })(e.batch_mode),
               s = (function (e) {
                 return e && 0 !== e.length
@@ -51505,7 +51590,7 @@ window.__SCRIPTS_LOADED__.i18n &&
         t.b = function (e, t) {
           return {
             fetch: function (n, r) {
-              return e.get('statuses/lookup', o()(o()(o()({}, le(t)), n), Object(z.a)(t)), r).then(function (e) {
+              return e.get('statuses/lookup', o()(o()(o()({}, pe(t)), n), Object(z.a)(t)), r).then(function (e) {
                 return Object(q.b)(e, [Q.a])
               })
             },
@@ -51541,7 +51626,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                           : r.__typename)
                       ) {
                         var d = t.tweetResult.result,
-                          p = (d.__typename, i()(d, ie))
+                          p = (d.__typename, i()(d, oe))
                         if (!e) return Object(q.b)(p, J.a)
                         var f = Object(B.a)({}, p, {})
                         return o()(o()({}, Object(q.b)(p, J.a)), {}, { visibilityResults: f })
@@ -51555,7 +51640,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                         var m,
                           h = t.tweetResult.result,
                           v = (h.__typename, h.tweet),
-                          _ = i()(h, ae)
+                          _ = i()(h, se)
                         if (!e) return Object(q.b)(v, J.a)
                         var b = Object(B.a)(_, v, {}),
                           g =
@@ -51617,17 +51702,17 @@ window.__SCRIPTS_LOADED__.i18n &&
             },
             mute: function (t, n) {
               var r = t.id
-              return e.post('mutes/conversations/create', o()(o()({}, de), {}, { tweet_id: r }), {}, n)
+              return e.post('mutes/conversations/create', o()(o()({}, fe), {}, { tweet_id: r }), {}, n)
             },
             unmute: function (t, n) {
               var r = t.id
-              return e.post('mutes/conversations/destroy', o()(o()({}, de), {}, { tweet_id: r }), {}, n)
+              return e.post('mutes/conversations/destroy', o()(o()({}, fe), {}, { tweet_id: r }), {}, n)
             },
             like: function (t, n) {
               var r,
                 i = t.promotedContent,
                 a = t.id,
-                s = Object(re.b)(i)
+                s = Object(ae.b)(i)
               return e.graphQL(
                 U.a,
                 o()(
@@ -51635,14 +51720,14 @@ window.__SCRIPTS_LOADED__.i18n &&
                   (null == s || null === (r = s.engagement_request) || void 0 === r ? void 0 : r.impression_id) &&
                     o()({}, s),
                 ),
-                ve,
+                be,
               )
             },
             unlike: function (t, n) {
               var r,
                 i = t.promotedContent,
                 a = t.id,
-                s = Object(re.b)(i)
+                s = Object(ae.b)(i)
               return e.graphQL(
                 Z.a,
                 o()(
@@ -51650,16 +51735,16 @@ window.__SCRIPTS_LOADED__.i18n &&
                   (null == s || null === (r = s.engagement_request) || void 0 === r ? void 0 : r.impression_id) &&
                     o()({}, s),
                 ),
-                ge,
+                Ee,
               )
             },
             downvote: function (t, n) {
               var r = t.id
-              return e.graphQL(T.a, { tweet_id: r }, me)
+              return e.graphQL(T.a, { tweet_id: r }, ve)
             },
             undownvote: function (t, n) {
               var r = t.id
-              return e.graphQL(D.a, { tweet_id: r }, he)
+              return e.graphQL(D.a, { tweet_id: r }, _e)
             },
             react: function (t, n) {
               var r = t.id,
@@ -51667,7 +51752,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 a = t.reactionType
               if (a) {
                 var s,
-                  c = Object(re.b)(i)
+                  c = Object(ae.b)(i)
                 return e.graphQL(
                   O.a,
                   o()(
@@ -51675,7 +51760,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                     (null == c || null === (s = c.engagement_request) || void 0 === s ? void 0 : s.impression_id) &&
                       o()({}, c),
                   ),
-                  pe,
+                  me,
                 )
               }
             },
@@ -51683,7 +51768,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               var r,
                 i = t.id,
                 a = t.promotedContent,
-                s = Object(re.b)(a)
+                s = Object(ae.b)(a)
               return e.graphQL(
                 M.a,
                 o()(
@@ -51691,18 +51776,18 @@ window.__SCRIPTS_LOADED__.i18n &&
                   (null == s || null === (r = s.engagement_request) || void 0 === r ? void 0 : r.impression_id) &&
                     o()({}, s),
                 ),
-                fe,
+                he,
               )
             },
             retweet: function (n, r) {
               var a = n.promotedContent,
-                s = i()(n, oe),
+                s = i()(n, ce),
                 c = n.id,
-                u = Object(re.a)(a),
+                u = Object(ae.a)(a),
                 l = t.getStringValue('graphql_mutation_retweet_mode')
               if ('graphql_only' === l) {
                 var d,
-                  p = Object(re.b)(a)
+                  p = Object(ae.b)(a)
                 return e.graphQL(
                   g.a,
                   o()(
@@ -51714,13 +51799,13 @@ window.__SCRIPTS_LOADED__.i18n &&
                     {},
                     { dark_request: !1 },
                   ),
-                  ye,
+                  we,
                 )
               }
               if ('dual_test' === l) {
                 var f,
-                  m = ne.a.v4(),
-                  h = Object(re.b)(a)
+                  m = ie.a.v4(),
+                  h = Object(ae.b)(a)
                 return (
                   e.graphQL(
                     g.a,
@@ -51734,35 +51819,35 @@ window.__SCRIPTS_LOADED__.i18n &&
                       { dark_request: !0 },
                     ),
                   ),
-                  e.post('statuses/retweet', o()(o()(o()(o()({}, de), h), s), {}, { comparison_id: m }), {}, r)
+                  e.post('statuses/retweet', o()(o()(o()(o()({}, fe), h), s), {}, { comparison_id: m }), {}, r)
                 )
               }
-              return e.post('statuses/retweet', o()(o()(o()({}, de), u), s), {}, r)
+              return e.post('statuses/retweet', o()(o()(o()({}, fe), u), s), {}, r)
             },
             unretweet: function (n, r) {
               var a = n.id,
                 s = n.promotedContent,
-                c = i()(n, se),
-                u = Object(re.a)(s),
+                c = i()(n, ue),
+                u = Object(ae.a)(s),
                 l = t.getStringValue('graphql_mutation_unretweet_mode')
-              if ('graphql_only' === l) return e.graphQL(R.a, { source_tweet_id: a, dark_request: !1 }, Ee)
+              if ('graphql_only' === l) return e.graphQL(R.a, { source_tweet_id: a, dark_request: !1 }, Te)
               if ('dual_test' === l) {
-                var d = ne.a.v4()
+                var d = ie.a.v4()
                 return (
                   e.graphQL(R.a, { source_tweet_id: a, comparison_id: d, dark_request: !0 }),
-                  e.post('statuses/unretweet', o()(o()(o()(o()({}, de), u), c), {}, { comparison_id: d }), {}, r)
+                  e.post('statuses/unretweet', o()(o()(o()(o()({}, fe), u), c), {}, { comparison_id: d }), {}, r)
                 )
               }
-              return e.post('statuses/unretweet', o()(o()(o()({}, de), u), c), {}, r)
+              return e.post('statuses/unretweet', o()(o()(o()({}, fe), u), c), {}, r)
             },
             bookmark: function (n, r) {
               var i = n.id,
                 a = t.isTrue('responsive_web_trigger_test_backoff_on_bookmark')
               return t.isTrue('responsive_web_graphql_mutation_bookmarks')
-                ? e.graphQL(_.a, { tweet_id: i }, _e)
+                ? e.graphQL(_.a, { tweet_id: i }, ge)
                 : e.post(
                     'bookmark/entries/add',
-                    o()(o()({}, de), {}, { tweet_id: i }),
+                    o()(o()({}, fe), {}, { tweet_id: i }),
                     {},
                     a ? o()(o()({}, r), {}, { 'x-tfe-bot-test': 'backoff_decoration' }) : r,
                   )
@@ -51770,20 +51855,20 @@ window.__SCRIPTS_LOADED__.i18n &&
             unbookmark: function (n, r) {
               var i = n.id
               return t.isTrue('responsive_web_graphql_mutation_bookmarks')
-                ? e.graphQL(k.a, { tweet_id: i }, be)
-                : e.post('bookmark/entries/remove', o()(o()({}, de), {}, { tweet_id: i }), {}, r)
+                ? e.graphQL(k.a, { tweet_id: i }, ye)
+                : e.post('bookmark/entries/remove', o()(o()({}, fe), {}, { tweet_id: i }), {}, r)
             },
             removeAllBookmarks: function (t) {
               var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
-              return e.post('bookmark/destroy', o()(o()({}, de), t), {}, n)
+              return e.post('bookmark/destroy', o()(o()({}, fe), t), {}, n)
             },
             pin: function (t) {
               var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
-              return e.post('account/pin_tweet', o()(o()({}, de), t), {}, n)
+              return e.post('account/pin_tweet', o()(o()({}, fe), t), {}, n)
             },
             unpin: function (t) {
               var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
-              return e.post('account/unpin_tweet', o()(o()({}, de), t), {}, n)
+              return e.post('account/unpin_tweet', o()(o()({}, fe), t), {}, n)
             },
             hideReplyGraphQL: function (t) {
               var n = t.id
@@ -51791,18 +51876,18 @@ window.__SCRIPTS_LOADED__.i18n &&
             },
             unhideReplyGraphQL: function (t) {
               var n = t.id
-              return e.graphQL(ee.a, { tweetId: n })
+              return e.graphQL(ne.a, { tweetId: n })
             },
             removeTag: function (t, n) {
-              return e.post('media/media_tags/delete', o()(o()({}, de), t), {}, n)
+              return e.post('media/media_tags/delete', o()(o()({}, fe), t), {}, n)
             },
             sendTweet: function (n) {
               var r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-                i = o()(o()(o()({}, le(t)), de), n),
-                a = Object(re.b)(i.promotedContent),
+                i = o()(o()(o()({}, pe(t)), fe), n),
+                a = Object(ae.b)(i.promotedContent),
                 s = 'dual_test' === t.getStringValue('graphql_mutation_update_mode')
               '' === i.media_ids && delete i.media_ids,
-                i.promotedContent && delete (i = o()(o()({}, i), Object(re.a)(i.promotedContent))).promotedContent,
+                i.promotedContent && delete (i = o()(o()({}, i), Object(ae.a)(i.promotedContent))).promotedContent,
                 i.exclusive_tweet_control_options &&
                   (t.isTrue('super_follow_exclusive_tweet_creation_api_enabled') &&
                     (i = o()(o()({}, i), {}, { exclusive_tweet_content: i.exclusive_tweet_control_options })),
@@ -51810,7 +51895,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               var c = o()(o()({}, i), {}, { media_tags: i.media_tags ? JSON.stringify(i.media_tags) : void 0 })
               if ('graphql_only' === t.getStringValue('graphql_mutation_update_mode')) {
                 var u,
-                  l = Oe(n, t)
+                  l = ke(n, t)
                 return e
                   .graphQL(
                     E.a,
@@ -51846,8 +51931,8 @@ window.__SCRIPTS_LOADED__.i18n &&
               }
               if (s) {
                 var d,
-                  p = Oe(n, t),
-                  f = ne.a.v4()
+                  p = ke(n, t),
+                  f = ie.a.v4()
                 return (
                   e.graphQL(
                     E.a,
@@ -51875,26 +51960,30 @@ window.__SCRIPTS_LOADED__.i18n &&
               return e.graphQL(d.a, t)
             },
             destroy: function (n, r) {
-              var i = ne.a.v4(),
+              var i = ie.a.v4(),
                 a = t.getStringValue('graphql_mutation_destroy_mode'),
                 s = n.id
               return 'graphql_only' === a
                 ? e.graphQL(L.a, { tweet_id: s, dark_request: !1 })
                 : 'dual_test' === a
                 ? (e.graphQL(L.a, { tweet_id: s, comparison_id: i, dark_request: !0 }),
-                  e.post('statuses/destroy', o()(o()(o()({}, de), n), {}, { comparison_id: i }), {}, r))
-                : e.post('statuses/destroy', o()(o()({}, de), n), {}, r)
+                  e.post('statuses/destroy', o()(o()(o()({}, fe), n), {}, { comparison_id: i }), {}, r))
+                : e.post('statuses/destroy', o()(o()({}, fe), n), {}, r)
             },
             changeConversationControls: function (t) {
               var n,
                 r = t.id,
                 i = t.policy
               if (('community' === i ? (n = 'Community') : 'by_invitation' === i && (n = 'ByInvitation'), void 0 !== n))
-                return e.graphQL(f.a, { tweet_id: r, mode: n }, we)
+                return e.graphQL(f.a, { tweet_id: r, mode: n }, Se)
             },
             removeConversationControls: function (t) {
               var n = t.id
-              return e.graphQL(h.a, { tweet_id: n }, Te)
+              return e.graphQL(h.a, { tweet_id: n }, Oe)
+            },
+            unmentionUserFromConversation: function (t) {
+              var n = t.id
+              return e.graphQL(ee.a, { tweet_id: n }, Ie)
             },
           }
         }
@@ -61509,7 +61598,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                       n = (null == t ? void 0 : t.bottom) || 0,
                       r = Object(P.b)() ? 10 : 0,
                       i = 100 - (n / this.videoTag.offsetHeight) * 100 - r
-                    i !== e.line && !1 === e.snapToLines && ((e.line = 'auto'), (e.line = i))
+                    i !== e.line && ((e.line = 'auto'), isFinite(i) && !1 === e.snapToLines && (e.line = i))
                   },
                 },
                 {
@@ -62023,6 +62112,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             n('1IsZ'),
             n('z84I'),
             n('KOtZ'),
+            n('2G9S'),
             n('jwue'),
             n('+oxZ'),
             n('+KXO'),
@@ -62057,18 +62147,19 @@ window.__SCRIPTS_LOADED__.i18n &&
           E = n('lMB6'),
           w = n('WU0f'),
           T = n('wrlS'),
-          S = n('G6rE'),
-          O = 'rweb.conversationHeadsUp',
-          I = function (e) {
+          S = n('RqPI'),
+          O = n('G6rE'),
+          I = 'rweb.conversationHeadsUp',
+          C = function (e) {
             var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
             return c()({ id: e }, t)
           },
-          C = function (e, t) {
+          k = function (e, t) {
             var n = e[t],
               r = n.retweeted_status || t
             return r === t ? n : e[r]
           },
-          k = function (e, t, n, r) {
+          A = function (e, t, n, r) {
             return /_REQUEST$/.test(t.type) && n
               ? c()(
                   c()({}, e),
@@ -62077,23 +62168,23 @@ window.__SCRIPTS_LOADED__.i18n &&
                 )
               : e
           },
-          A = function (e, t, n) {
-            var r = t.meta.entityId,
-              i = C(e.entities, r)
-            return k(e, t, i, n)
-          },
           R = function (e, t, n) {
-            return k(e, t, e.entities[t.meta.entityId], n)
+            var r = t.meta.entityId,
+              i = k(e.entities, r)
+            return A(e, t, i, n)
           },
-          x = function (e, t) {
+          x = function (e, t, n) {
+            return A(e, t, e.entities[t.meta.entityId], n)
+          },
+          L = function (e, t) {
             return Object.values(e).filter(function (e) {
               return e.conversation_id_str === t
             })
           },
-          L = {
+          P = {
             react: {
               reducer: function (e, t) {
-                return A(e, t, function (e) {
+                return R(e, t, function (e) {
                   var n,
                     r = t.meta.reactionType
                   return {
@@ -62111,7 +62202,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   }
                 })
               },
-              getParams: I,
+              getParams: C,
               getApiMethod: function (e) {
                 return e.Tweets.react
               },
@@ -62122,7 +62213,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             },
             unreact: {
               reducer: function (e, t) {
-                return A(e, t, function (e) {
+                return R(e, t, function (e) {
                   var t,
                     n = e.reacted
                   return {
@@ -62140,9 +62231,9 @@ window.__SCRIPTS_LOADED__.i18n &&
                   }
                 })
               },
-              getParams: I,
+              getParams: C,
               canPerformAction: function (e, t) {
-                var n = C(t.entities, e.id_str)
+                var n = k(t.entities, e.id_str)
                 return n && (n.reacted || n.favorited)
               },
               getApiMethod: function (e) {
@@ -62160,12 +62251,12 @@ window.__SCRIPTS_LOADED__.i18n &&
                       },
                     }
                   },
-                  r = A(e, t, n)
-                return x(e.entities, t.meta.entityId).reduce(function (e, r) {
-                  return k(e, t, r, n)
+                  r = R(e, t, n)
+                return L(e.entities, t.meta.entityId).reduce(function (e, r) {
+                  return A(e, t, r, n)
                 }, r)
               },
-              getParams: I,
+              getParams: C,
               getApiMethod: function (e) {
                 return e.Tweets.changeConversationControls
               },
@@ -62179,12 +62270,12 @@ window.__SCRIPTS_LOADED__.i18n &&
                 var n = function (e) {
                     return { conversation_control: void 0 }
                   },
-                  r = A(e, t, n)
-                return x(e.entities, t.meta.entityId).reduce(function (e, r) {
-                  return k(e, t, r, n)
+                  r = R(e, t, n)
+                return L(e.entities, t.meta.entityId).reduce(function (e, r) {
+                  return A(e, t, r, n)
                 }, r)
               },
-              getParams: I,
+              getParams: C,
               getApiMethod: function (e) {
                 return e.Tweets.removeConversationControls
               },
@@ -62192,37 +62283,37 @@ window.__SCRIPTS_LOADED__.i18n &&
             },
             like: {
               reducer: function (e, t) {
-                return A(e, t, function (e) {
+                return R(e, t, function (e) {
                   return { favorited: !0, favorite_count: e.favorite_count + 1 }
                 })
               },
-              getParams: I,
+              getParams: C,
               getApiMethod: function (e) {
                 return e.Tweets.like
               },
               context: 'ACTION_LIKE',
               canPerformAction: function (e, t) {
-                var n = C(t.entities, e.id_str)
+                var n = k(t.entities, e.id_str)
                 return n && !n.favorited
               },
               mapResponseToActions: function (e, t, n) {
                 return function (e) {
-                  var t = S.e.selectLoggedInUser(n())
+                  var t = O.e.selectLoggedInUser(n())
                   if (e && t)
-                    return [S.e.updateOne(t.id_str, c()(c()({}, t), {}, { favourites_count: t.favourites_count + 1 }))]
+                    return [O.e.updateOne(t.id_str, c()(c()({}, t), {}, { favourites_count: t.favourites_count + 1 }))]
                 }
               },
               succeedIfError: h.a.DuplicateFavorite,
             },
             unlike: {
               reducer: function (e, t) {
-                return A(e, t, function (e) {
+                return R(e, t, function (e) {
                   return { favorited: !1, favorite_count: e.favorite_count - 1 }
                 })
               },
-              getParams: I,
+              getParams: C,
               canPerformAction: function (e, t) {
-                var n = C(t.entities, e.id_str)
+                var n = k(t.entities, e.id_str)
                 return n && n.favorited
               },
               getApiMethod: function (e) {
@@ -62231,10 +62322,10 @@ window.__SCRIPTS_LOADED__.i18n &&
               context: 'ACTION_UNLIKE',
               mapResponseToActions: function (e, t, n) {
                 return function (e) {
-                  var t = S.e.selectLoggedInUser(n())
+                  var t = O.e.selectLoggedInUser(n())
                   if (e && t)
                     return [
-                      S.e.updateOne(
+                      O.e.updateOne(
                         t.id_str,
                         c()(c()({}, t), {}, { favourites_count: Math.max(0, t.favourites_count - 1) }),
                       ),
@@ -62244,29 +62335,29 @@ window.__SCRIPTS_LOADED__.i18n &&
             },
             downvote: {
               reducer: function (e, t) {
-                return A(e, t, function (e) {
+                return R(e, t, function (e) {
                   return { isDownvoted: !0 }
                 })
               },
-              getParams: I,
+              getParams: C,
               getApiMethod: function (e) {
                 return e.Tweets.downvote
               },
               context: 'ACTION_DOWNVOTE',
               canPerformAction: function (e, t) {
-                var n = C(t.entities, e.id_str)
+                var n = k(t.entities, e.id_str)
                 return n && !n.isDownvoted
               },
             },
             undownvote: {
               reducer: function (e, t) {
-                return A(e, t, function (e) {
+                return R(e, t, function (e) {
                   return { isDownvoted: !1 }
                 })
               },
-              getParams: I,
+              getParams: C,
               canPerformAction: function (e, t) {
-                var n = C(t.entities, e.id_str)
+                var n = k(t.entities, e.id_str)
                 return n && n.isDownvoted
               },
               getApiMethod: function (e) {
@@ -62276,30 +62367,30 @@ window.__SCRIPTS_LOADED__.i18n &&
             },
             retweet: {
               reducer: function (e, t) {
-                return A(e, t, function (e) {
+                return R(e, t, function (e) {
                   return { retweeted: !0, retweet_count: e.retweet_count + 1 }
                 })
               },
-              getParams: I,
+              getParams: C,
               getApiMethod: function (e) {
                 return e.Tweets.retweet
               },
               context: 'ACTION_RETWEET',
               canPerformAction: function (e, t) {
-                return !C(t.entities, e.id_str).retweeted
+                return !k(t.entities, e.id_str).retweeted
               },
               succeedIfError: h.a.AlreadyRetweeted,
             },
             unretweet: {
               reducer: function (e, t) {
-                return A(e, t, function (e) {
+                return R(e, t, function (e) {
                   return { retweeted: !1, retweet_count: e.retweet_count - 1 }
                 })
               },
               getParams: function (e) {
                 var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
                   n = arguments.length > 2 ? arguments[2] : void 0,
-                  r = C(n().entities.tweets.entities, e)
+                  r = k(n().entities.tweets.entities, e)
                 return c()({ id: r.id_str }, t)
               },
               getApiMethod: function (e) {
@@ -62307,16 +62398,16 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
               context: 'ACTION_UNRETWEET',
               canPerformAction: function (e, t) {
-                return C(t.entities, e.id_str).retweeted
+                return k(t.entities, e.id_str).retweeted
               },
             },
             bookmark: {
               reducer: function (e, t) {
-                return R(e, t, function (e) {
+                return x(e, t, function (e) {
                   return { isBookmarked: !0 }
                 })
               },
-              getParams: I,
+              getParams: C,
               getApiMethod: function (e) {
                 return e.Tweets.bookmark
               },
@@ -62324,11 +62415,11 @@ window.__SCRIPTS_LOADED__.i18n &&
             },
             unbookmark: {
               reducer: function (e, t) {
-                return R(e, t, function (e) {
+                return x(e, t, function (e) {
                   return { isBookmarked: !1 }
                 })
               },
-              getParams: I,
+              getParams: C,
               getApiMethod: function (e) {
                 return e.Tweets.unbookmark
               },
@@ -62338,7 +62429,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               reducer: function (e, t) {
                 return e
               },
-              getParams: I,
+              getParams: C,
               getApiMethod: function (e) {
                 return e.Tweets.hideReplyGraphQL
               },
@@ -62363,7 +62454,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               reducer: function (e, t) {
                 return e
               },
-              getParams: I,
+              getParams: C,
               getApiMethod: function (e) {
                 return e.Tweets.unhideReplyGraphQL
               },
@@ -62384,23 +62475,49 @@ window.__SCRIPTS_LOADED__.i18n &&
             },
             mute: {
               reducer: function (e, t) {
-                return R(e, t, function (e) {
+                return x(e, t, function (e) {
                   return { conversation_muted: !0 }
                 })
               },
-              getParams: I,
+              getParams: C,
               getApiMethod: function (e) {
                 return e.Tweets.mute
               },
               context: 'ACTION_MUTE_TWEET',
             },
+            unmentionUserFromConversation: {
+              reducer: function (e, t) {
+                var n = t.meta.loggedInUserId,
+                  r = k(e.entities, t.meta.entityId).conversation_id_str,
+                  a = function (e) {
+                    var t
+                    return {
+                      unmentioned_user_ids: [n].concat(
+                        i()(null !== (t = e.unmentioned_user_ids) && void 0 !== t ? t : []),
+                      ),
+                    }
+                  },
+                  o = R(e, t, a)
+                return L(e.entities, r).reduce(function (e, n) {
+                  return A(e, t, n, a)
+                }, o)
+              },
+              getParams: C,
+              getApiMethod: function (e) {
+                return e.Tweets.unmentionUserFromConversation
+              },
+              getMeta: function (e, t, n) {
+                return { loggedInUserId: Object(S.q)(n) }
+              },
+              context: 'ACTION_LEAVE_CONVERSATION',
+            },
             unmute: {
               reducer: function (e, t) {
-                return R(e, t, function (e) {
+                return x(e, t, function (e) {
                   return { conversation_muted: !1 }
                 })
               },
-              getParams: I,
+              getParams: C,
               getApiMethod: function (e) {
                 return e.Tweets.unmute
               },
@@ -62408,7 +62525,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             },
             removeTag: {
               reducer: function (e, t) {
-                return R(e, t, function (n) {
+                return x(e, t, function (n) {
                   return {
                     extended_entities: c()(
                       c()({}, e.entities[n.id_str].extended_entities),
@@ -62452,7 +62569,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   }
                 })
               },
-              getParams: I,
+              getParams: C,
               getApiMethod: function (e) {
                 return e.Tweets.removeTag
               },
@@ -62463,11 +62580,11 @@ window.__SCRIPTS_LOADED__.i18n &&
             },
             delete: {
               reducer: function (e, t) {
-                return R(e, t, function (e) {
+                return x(e, t, function (e) {
                   return { isDeleted: !0 }
                 })
               },
-              getParams: I,
+              getParams: C,
               getApiMethod: function (e) {
                 return e.Tweets.destroy
               },
@@ -62475,7 +62592,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             },
             deletePreview: {
               reducer: function (e, t) {
-                return R(e, t, function (e) {
+                return x(e, t, function (e) {
                   return { isDeleted: !0 }
                 })
               },
@@ -62506,15 +62623,15 @@ window.__SCRIPTS_LOADED__.i18n &&
             },
             setTweetPromotionRunning: {
               reducer: function (e, t) {
-                return R(e, t, function (e) {
+                return x(e, t, function (e) {
                   return { quick_promote_eligibility: { eligibility: 'IneligibleCampaignRunning' } }
                 })
               },
-              getParams: I,
+              getParams: C,
               context: 'ACTION_SET_TWEET_PROMOTION_RUNNING',
             },
           },
-          P = Object(y.f)({
+          D = Object(y.f)({
             namespace: 'tweets',
             fetchOneEndpoint: function (e) {
               return e.Tweets.show
@@ -62524,16 +62641,16 @@ window.__SCRIPTS_LOADED__.i18n &&
               return e.Tweets.fetch
             },
             fetchManyContext: 'FETCH_TWEETS',
-            customActions: L,
+            customActions: P,
           })
-        ;(P.fetchOneWithVisibilityResults = function (e) {
+        ;(D.fetchOneWithVisibilityResults = function (e) {
           return function (t, n, r) {
             var i = r.api
             return u.b(t, { request: i.Tweets.show, params: { id: e, withVisibilityResults: !0 } })(
               {
-                actionTypes: P.actionTypes.FETCH_ONE,
+                actionTypes: D.actionTypes.FETCH_ONE,
                 context: 'FETCH_TWEET_WITH_VISIBILITY_RESULTS',
-                meta: { entityNamespace: P.namespace, entityIds: [e] },
+                meta: { entityNamespace: D.namespace, entityIds: [e] },
               },
               function (t) {
                 return t && t.entities
@@ -62548,15 +62665,15 @@ window.__SCRIPTS_LOADED__.i18n &&
             )
           }
         }),
-          (P.markAsReported = function (e, t) {
+          (D.markAsReported = function (e, t) {
             return function (n, r) {
-              var i = C(r().entities.tweets.entities, e).id_str
-              n(P.updateOne(i, { isReported: !0, reportingVisibility: t }))
+              var i = k(r().entities.tweets.entities, e).id_str
+              n(D.updateOne(i, { isReported: !0, reportingVisibility: t }))
             }
           }),
-          (P.updateCounts = function (e, t) {
+          (D.updateCounts = function (e, t) {
             return function (n, r) {
-              var i = C(r().entities.tweets.entities, e).id_str,
+              var i = k(r().entities.tweets.entities, e).id_str,
                 a = t.likeCount,
                 o = t.replyCount,
                 s = t.retweetCount,
@@ -62565,70 +62682,70 @@ window.__SCRIPTS_LOADED__.i18n &&
                 a && (c.favorite_count = parseInt(a, 10)),
                 s && (c.retweet_count = parseInt(s, 10)),
                 o && (c.reply_count = parseInt(o, 10)),
-                n(P.updateOne(i, c))
+                n(D.updateOne(i, c))
               )
             }
           }),
-          (P.updateHeadsUp = function (e) {
+          (D.updateHeadsUp = function (e) {
             return function (t, n, r) {
               var i = r.userPersistence,
-                a = C(n().entities.tweets.entities, e).id_str
-              i.get(O).then(function (e) {
+                a = k(n().entities.tweets.entities, e).id_str
+              i.get(I).then(function (e) {
                 var n,
                   r = null !== (n = null == e ? void 0 : e.count) && void 0 !== n ? n : 0,
                   o = null == e ? void 0 : e.updatedTime,
                   s = Date.now(),
                   c = s - 864e5
                 return !o || o < c
-                  ? (i.set(O, { count: 1, updatedTime: s }), t(P.updateOne(a, { headsUp: { showBanner: !0 } })))
+                  ? (i.set(I, { count: 1, updatedTime: s }), t(D.updateOne(a, { headsUp: { showBanner: !0 } })))
                   : r >= 3 && o > c
-                  ? (i.set(O, { count: r, updatedTime: o }), t(P.updateOne(a, { headsUp: { showBanner: !1 } })))
-                  : (i.set(O, { count: r + 1, updatedTime: o }), t(P.updateOne(a, { headsUp: { showBanner: !0 } })))
+                  ? (i.set(I, { count: r, updatedTime: o }), t(D.updateOne(a, { headsUp: { showBanner: !1 } })))
+                  : (i.set(I, { count: r + 1, updatedTime: o }), t(D.updateOne(a, { headsUp: { showBanner: !0 } })))
               })
             }
           }),
-          (P.selectHydrated = Object(b.createSelector)(
-            P.selectAll,
+          (D.selectHydrated = Object(b.createSelector)(
+            D.selectAll,
             v.a.selectAll,
-            S.e.selectAll,
+            O.e.selectAll,
             function (e, t) {
               return t
             },
             g.a,
           ))
-        var D = {}
-        ;(P.selectHydratedMemoized = Object(b.createSelector)(
-          P.selectAll,
+        var j = {}
+        ;(D.selectHydratedMemoized = Object(b.createSelector)(
+          D.selectAll,
           v.a.selectAll,
-          S.e.selectAll,
+          O.e.selectAll,
           function (e, t) {
             return t
           },
           function (e, t, n, r) {
-            return D[r] || (D[r] = Object(g.a)(e, t, n, r)), D[r]
+            return j[r] || (j[r] = Object(g.a)(e, t, n, r)), j[r]
           },
         )),
-          (P.createHydratedSelector = Object(b.createSelector)(
-            P.selectAll,
+          (D.createHydratedSelector = Object(b.createSelector)(
+            D.selectAll,
             v.a.selectAll,
-            S.e.selectAll,
+            O.e.selectAll,
             function (e, t, n) {
               return function (r) {
                 return Object(g.a)(e, t, n, r)
               }
             },
           )),
-          (P.createHydratorForTweet = function (e) {
-            return Object(b.createSelector)(P.selectAll, v.a.selectAll, S.e.selectAll, function (t, n, r) {
+          (D.createHydratorForTweet = function (e) {
+            return Object(b.createSelector)(D.selectAll, v.a.selectAll, O.e.selectAll, function (t, n, r) {
               return Object(g.a)(t, n, r, e)
             })
           }),
-          (P.createHydratedTweetSelector = function (e) {
-            return Object(b.createSelector)(P.selectAll, v.a.selectAll, S.e.selectAll, e, function (e, t, n, r) {
+          (D.createHydratedTweetSelector = function (e) {
+            return Object(b.createSelector)(D.selectAll, v.a.selectAll, O.e.selectAll, e, function (e, t, n, r) {
               return Object(g.a)(e, t, n, r)
             })
           })
-        t.a = E.a.register(P)
+        t.a = E.a.register(D)
       },
       XORh: function (e, t, n) {
         ;(function (t) {
@@ -71008,7 +71125,6 @@ window.__SCRIPTS_LOADED__.i18n &&
                     type: 'uc_video',
                     id: Number.isNaN(p) ? 0 : p,
                     id_str: r.media.media_id || '',
-                    indices: [0, 0],
                     ext_media_color: { palette: null != d && d.color_info ? d.color_info.palette : [] },
                     media_url: (null == d ? void 0 : d.original_img_url) || '',
                     media_url_https: (null == d ? void 0 : d.original_img_url) || '',
@@ -78804,46 +78920,48 @@ window.__SCRIPTS_LOADED__.i18n &&
       h3MB: function (e, t, n) {
         'use strict'
         n.d(t, 'b', function () {
-          return l
+          return p
         })
         var r = n('yiKp'),
           i = n.n(r),
-          a = (n('yH/f'), n('LW0h'), n('7x/C'), n('z84I'), n('XS8g')),
-          o = n('NjAB'),
-          s = n('MMRb'),
-          c = Object.freeze({ GROUP: 'GroupDm', ONE_TO_ONE: 'OneToOneDm', UNKNOWN: 'Unknown' }),
-          u = Object.freeze({
-            MessageCreate: s.ENTRY_TYPE.MESSAGE,
-            ParticipantsJoin: s.ENTRY_TYPE.PARTICIPANTS_JOIN,
-            ParticipantsLeave: s.ENTRY_TYPE.PARTICIPANTS_LEAVE,
-            ConversationNameUpdate: s.ENTRY_TYPE.CONVERSATION_NAME_UPDATE,
-            JoinConversation: s.ENTRY_TYPE.JOIN_CONVERSATION,
+          a = n('K1iM'),
+          o = n.n(a),
+          s = (n('yH/f'), n('Blm6'), n('ho0z'), n('XS8g')),
+          c = n('NjAB'),
+          u = n('MMRb'),
+          l = Object.freeze({ GROUP: 'GroupDm', ONE_TO_ONE: 'OneToOneDm', UNKNOWN: 'Unknown' }),
+          d = Object.freeze({
+            MessageCreate: u.ENTRY_TYPE.MESSAGE,
+            ParticipantsJoin: u.ENTRY_TYPE.PARTICIPANTS_JOIN,
+            ParticipantsLeave: u.ENTRY_TYPE.PARTICIPANTS_LEAVE,
+            ConversationNameUpdate: u.ENTRY_TYPE.CONVERSATION_NAME_UPDATE,
+            JoinConversation: u.ENTRY_TYPE.JOIN_CONVERSATION,
           }),
-          l = new o.c.Entity(
+          p = new c.c.Entity(
             'entries',
             {},
             {
               processStrategy: function (e, t, n) {
                 var r,
                   i,
+                  a,
                   o,
-                  s,
                   c,
-                  l = (null == e ? void 0 : e.dm_event) || {},
-                  d = l.legacy,
-                  p = l.rest_id,
-                  f = null == d ? void 0 : d.event_type,
-                  m = d || {},
+                  u = (null == e ? void 0 : e.dm_event) || {},
+                  l = u.legacy,
+                  p = u.rest_id,
+                  f = null == l ? void 0 : l.event_type,
+                  m = l || {},
                   h = m.affects_sort,
                   v = m.request_id,
                   _ = 'Unknown'
-                f in u && (_ = u[f])
-                var b = null == d || null === (r = d.conversation) || void 0 === r ? void 0 : r.rest_id,
-                  g = null == d || null === (i = d.event_detail) || void 0 === i ? void 0 : i.dm,
+                f in d && (_ = d[f])
+                var b = null == l || null === (r = l.conversation) || void 0 === r ? void 0 : r.rest_id,
+                  g = null == l || null === (i = l.event_detail) || void 0 === i ? void 0 : i.dm,
                   y = {
                     affects_sort: h,
                     request_id: v,
-                    time: null == d ? void 0 : d.created_at_millis,
+                    time: null == l ? void 0 : l.created_at_millis,
                     type: _,
                     conversation_id: b,
                     message_data: {
@@ -78851,18 +78969,18 @@ window.__SCRIPTS_LOADED__.i18n &&
                       text: null == g ? void 0 : g.text,
                       recipient_id:
                         null == g ||
-                        null === (o = g.recipient_results) ||
-                        void 0 === o ||
-                        null === (s = o.result) ||
-                        void 0 === s
+                        null === (a = g.recipient_results) ||
+                        void 0 === a ||
+                        null === (o = a.result) ||
+                        void 0 === o
                           ? void 0
-                          : s.rest_id,
+                          : o.rest_id,
                       sender_id:
                         null == g || null === (c = g.sender_results) || void 0 === c ? void 0 : c.result.rest_id,
                     },
                     id: p,
                   }
-                return Object(a.a)(y, t, n)
+                return Object(s.a)(y, t, n)
               },
               idAttribute: function (e) {
                 var t
@@ -78870,57 +78988,74 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             },
           ),
-          d = new o.c.Entity(
+          f = new c.c.Entity(
             'conversations',
             {},
             {
               processStrategy: function (e, t, n) {
                 var r,
-                  o,
-                  u,
-                  l,
-                  d = e || {},
-                  p = d.id,
-                  f = d.labels,
-                  m = d.legacy,
-                  h = {},
-                  v =
-                    null == m || null === (r = m.participants_metadata) || void 0 === r
-                      ? void 0
-                      : r
-                          .map(function (e) {
-                            var t,
-                              n = null == e || null === (t = e.user_results) || void 0 === t ? void 0 : t.result,
-                              r = null == n ? void 0 : n.legacy
-                            return r
-                              ? ((h[n.rest_id] = i()(i()({}, r), {}, { user_id: n.rest_id, id: n.rest_id })),
-                                i()(i()({}, r), {}, { user_id: n.rest_id, id: n.rest_id }))
-                              : null
-                          })
-                          .filter(function (e) {
-                            return null !== e
-                          }),
-                  _ = null == m || null === (o = m.metadata) || void 0 === o ? void 0 : o.avatar,
-                  b = null === (u = _) || void 0 === u ? void 0 : u.media_info
-                if (b) {
-                  var g = b || {},
-                    y = g.original_img_height,
-                    E = g.original_img_url
-                  _ = { image: { original_info: { height: y, width: g.original_img_width, url: E } } }
+                  a,
+                  c,
+                  d,
+                  p = e || {},
+                  f = p.id,
+                  m = p.labels,
+                  h = p.legacy,
+                  v = {},
+                  _ = {},
+                  b = o()(null == h ? void 0 : h.participants_metadata)
+                try {
+                  for (b.s(); !(d = b.n()).done; ) {
+                    var g,
+                      y = d.value,
+                      E = null == y || null === (g = y.user_results) || void 0 === g ? void 0 : g.result
+                    if (E && E.legacy) {
+                      var w = {
+                        blocking: !1,
+                        created_at: '',
+                        description: 'Test description',
+                        entities: {},
+                        followed_by: !1,
+                        followers_count: 0,
+                        following: !1,
+                        friends_count: 0,
+                        id_str: E.legacy.id_str,
+                        id: parseInt(E.rest_id, 10),
+                        name: E.legacy.name,
+                        profile_image_url_https: E.legacy.profile_image_url_https || '',
+                        protected: !1,
+                        screen_name: E.legacy.screen_name,
+                        verified: !1,
+                      }
+                      ;(v[E.rest_id] = w), (_[E.rest_id] = { user: w })
+                    }
+                  }
+                } catch (R) {
+                  b.e(R)
+                } finally {
+                  b.f()
                 }
-                var w =
-                    (null == m || null === (l = m.metadata) || void 0 === l ? void 0 : l.conversation_type) === c.GROUP
-                      ? s.CONVERSATION_TYPE.GROUP
-                      : s.CONVERSATION_TYPE.ONE_TO_ONE,
-                  T = i()(
+                var T = null == h || null === (r = h.metadata) || void 0 === r ? void 0 : r.avatar,
+                  S = null === (a = T) || void 0 === a ? void 0 : a.media_info
+                if (S) {
+                  var O = S || {},
+                    I = O.original_img_height,
+                    C = O.original_img_url
+                  T = { image: { original_info: { height: I, width: O.original_img_width, url: C } } }
+                }
+                var k =
+                    (null == h || null === (c = h.metadata) || void 0 === c ? void 0 : c.conversation_type) === l.GROUP
+                      ? u.CONVERSATION_TYPE.GROUP
+                      : u.CONVERSATION_TYPE.ONE_TO_ONE,
+                  A = i()(
                     i()(
-                      i()({}, null == m ? void 0 : m.perspectival_conversation_metadata),
-                      null == m ? void 0 : m.metadata,
+                      i()({}, null == h ? void 0 : h.perspectival_conversation_metadata),
+                      null == h ? void 0 : h.metadata,
                     ),
                     {},
-                    { id: p, avatar: _, labels: f, type: w, participants: v, users: h },
+                    { id: f, avatar: T, labels: m, type: k, participants: _, users: v },
                   )
-                return Object(a.a)(T, t, n)
+                return Object(s.a)(A, t, n)
               },
               idAttribute: function (e) {
                 var t
@@ -78928,7 +79063,7 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             },
           )
-        d.define({ entities: l }), (t.a = d)
+        f.define({ entities: p }), (t.a = f)
       },
       h7FZ: function (e, t, n) {
         'use strict'
@@ -83731,7 +83866,7 @@ window.__SCRIPTS_LOADED__.i18n &&
       },
       lHB9: function (e, t) {
         e.exports = {
-          queryId: 'JYtcr25M9b2_eGjDTOkfkA',
+          queryId: 'ztJOm25C-qTLNjDZTTl2Ew',
           operationName: 'CommunityModerationData',
           operationType: 'query',
           metadata: { featureSwitches: {} },
@@ -87854,14 +87989,15 @@ window.__SCRIPTS_LOADED__.i18n &&
                     n = a.props,
                     r = n.enableEnterKeyToggle,
                     i = n.onOpen,
-                    o = e.altKey,
-                    s = e.ctrlKey,
-                    c = e.key,
-                    u = e.metaKey,
-                    l = !(o || s || u) && 'Enter' === c
-                  t && !(o || s || u) && 'Escape' === c
-                    ? a._handleDismiss()
-                    : r && l && (a._handleAnchorClick(e), i && i(A.a.keyboard))
+                    o = n.visibilityBehavior,
+                    s = e.altKey,
+                    c = e.ctrlKey,
+                    u = e.key,
+                    l = e.metaKey,
+                    d = !(s || c || l) && 'Escape' === u,
+                    p = !(s || c || l) && 'Enter' === u,
+                    f = o === A.b.forceVisible || o === A.b.forceHidden
+                  t && d ? a._handleDismiss() : r && !f && p && (a._handleAnchorClick(e), i && i(A.a.keyboard))
                 }),
                 m()(c()(a), '_handleLongPress', function () {
                   var e = a.state.isAnchorActive,
@@ -103308,7 +103444,16 @@ window.__SCRIPTS_LOADED__.i18n &&
         function ae(e) {
           return (e && ie[e]) || 'https://legal.twitter.com/ads-terms/international.html'
         }
-        var oe = Object.freeze({ US: 'https://business.twitter.com/en/campaign/quick-promote-coupon-terms.html' })
+        var oe = Object.freeze({
+          en: 'https://business.twitter.com/en/campaign/quick-promote-coupon-terms.html',
+          de: 'https://business.twitter.com/de/campaign/quick-promote-coupon-terms.html',
+          es: 'https://business.twitter.com/es/campaign/quick-promote-coupon-terms.html',
+          fr: 'https://business.twitter.com/fr/campaign/quick-promote-coupon-terms.html',
+          ja: 'https://business.twitter.com/ja/campaign/quick-promote-coupon-terms.html',
+          pt: 'https://business.twitter.com/pt/campaign/quick-promote-coupon-terms.html',
+          ar: 'https://business.twitter.com/ar/campaign/quick-promote-coupon-terms.html',
+          'zh-cn': 'https://business.twitter.com/zh-cn/campaign/quick-promote-coupon-terms.html',
+        })
         function se(e) {
           return (e && oe[e]) || 'https://business.twitter.com/en/campaign/quick-promote-coupon-terms.html'
         }

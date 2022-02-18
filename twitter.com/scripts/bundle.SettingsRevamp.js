@@ -140,7 +140,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'AccountInformation', function () {
-          return Ve
+          return qe
         })
       var n = a('yiKp'),
         r = a.n(n),
@@ -488,28 +488,27 @@
         ke = R.a.b7ec04f3,
         Ne = R.a.f70d5780,
         De = R.a.dc62d3c6,
-        Re = R.a.ab22c36c,
-        Fe = R.a.j3a1cff6,
-        Ue = R.a.i62a03aa,
-        Pe = R.a.c119dee8,
-        Me = g.a.createElement(
+        Re = R.a.ad31b476,
+        Fe = R.a.i62a03aa,
+        Ue = R.a.c119dee8,
+        Pe = g.a.createElement(
           R.a.I18NFormatMessage,
           { $i18n: 'f1a3d63c' },
           g.a.createElement(C.b, { link: '/i/profile' }, R.a.c036653e),
         ),
-        ze = R.a.bf96fda4,
-        Be = R.a.d495680d,
-        He = R.a.f445dc78,
-        je = R.a.d6d80990,
-        Ge = g.a.createElement(
+        Me = R.a.bf96fda4,
+        ze = R.a.d495680d,
+        Be = R.a.f445dc78,
+        He = R.a.d6d80990,
+        je = g.a.createElement(
           R.a.I18NFormatMessage,
           { $i18n: 'f2df3f23' },
           g.a.createElement(C.b, { link: '/settings/account/personalization' }, R.a.bad6cf6e),
         ),
-        Ke = R.a.i859a9d3,
-        We = { page: 'settings', section: 'account_information' },
-        qe = { page: 'account_type_landing' },
-        Ve = (function (e) {
+        Ge = R.a.i859a9d3,
+        Ke = { page: 'settings', section: 'account_information' },
+        We = { page: 'account_type_landing' },
+        qe = (function (e) {
           m()(a, e)
           var t = f()(a)
           function a(e, n) {
@@ -584,8 +583,8 @@
                   l ? c._renderVerified() : null,
                   l
                     ? g.a.createElement(fe.a, {
-                        description: l.protected ? ke : Ue,
-                        label: He,
+                        description: l.protected ? ke : Fe,
+                        label: Be,
                         link: '/settings/audience_and_tagging',
                       })
                     : null,
@@ -605,7 +604,7 @@
                       )
                     : null,
                   l ? g.a.createElement(fe.a, { description: n, label: Ce, link: '/settings/country' }) : null,
-                  g.a.createElement(fe.a, { description: f, label: Be, link: '/settings/languages' }),
+                  g.a.createElement(fe.a, { description: f, label: ze, link: '/settings/languages' }),
                   g.a.createElement(fe.a, {
                     description: c._renderGender(o.value),
                     label: Ae,
@@ -615,21 +614,21 @@
                     ? g.a.createElement(
                         I.a,
                         { style: [me.infoItem, me.bottomBorder], testID: 'birthday' },
-                        g.a.createElement(C.b, { color: 'normal' }, Pe),
+                        g.a.createElement(C.b, { color: 'normal' }, Ue),
                         a ? g.a.createElement(C.b, { color: 'gray700', size: 'subtext2' }, b) : null,
-                        g.a.createElement(C.b, { color: 'gray700', style: me.helpText }, Me),
+                        g.a.createElement(C.b, { color: 'gray700', style: me.helpText }, Pe),
                       )
                     : null,
-                  g.a.createElement(fe.a, { description: m, label: ze, link: '/settings/your_twitter_data/age' }),
+                  g.a.createElement(fe.a, { description: m, label: Me, link: '/settings/your_twitter_data/age' }),
                   l ? c._renderAutomation() : null,
                   l
                     ? null
                     : g.a.createElement(
                         I.a,
                         { style: me.infoItem, testID: 'loggedOutHelp' },
-                        g.a.createElement(C.b, { color: 'gray700', style: me.helpText }, je),
+                        g.a.createElement(C.b, { color: 'gray700', style: me.helpText }, He),
                         g.a.createElement('br', null),
-                        g.a.createElement(C.b, { color: 'gray700', style: me.helpText }, Ge),
+                        g.a.createElement(C.b, { color: 'gray700', style: me.helpText }, je),
                       ),
                 )
               }),
@@ -647,7 +646,7 @@
                 var e,
                   t = g.a.createElement(he.a, {
                     label: Oe,
-                    learnMoreLabel: Ke,
+                    learnMoreLabel: Ge,
                     learnMoreLink: 'https://help.twitter.com/managing-your-account/about-twitter-verified-accounts',
                     subtext: null !== (e = c.props.loggedInUser) && void 0 !== e && e.verified ? Ne : De,
                   })
@@ -674,9 +673,9 @@
               }),
               p()(u()(c), '_handleAutomationOnPress', function () {
                 var e = c.props.analytics
-                e.scribe(r()(r()({}, We), {}, { element: 'automation', action: 'click' })),
+                e.scribe(r()(r()({}, Ke), {}, { element: 'automation', action: 'click' })),
                   c.props.managingAccount ||
-                    (e.scribe(r()(r()({}, qe), {}, { action: 'impression' })),
+                    (e.scribe(r()(r()({}, We), {}, { action: 'impression' })),
                     c.setState({ showAutomationOnboardingModal: !0 }))
               }),
               p()(u()(c), '_handleCloseAutomationModal', function () {
@@ -686,12 +685,12 @@
                 var e = c.props,
                   t = e.analytics,
                   a = e.history
-                t.scribe(r()(r()({}, qe), {}, { element: 'call_to_action', action: 'click' })),
+                t.scribe(r()(r()({}, We), {}, { element: 'call_to_action', action: 'click' })),
                   a.push('/settings/account/automation')
               }),
               p()(u()(c), '_handleFaqClick', function () {
                 c.props.analytics.scribe(
-                  r()(r()({}, qe), {}, { component: 'link', element: 'help_faqs', action: 'click' }),
+                  r()(r()({}, We), {}, { component: 'link', element: 'help_faqs', action: 'click' }),
                 )
               }),
               p()(u()(c), '_renderAutomation', function () {
@@ -699,13 +698,13 @@
                   t = e.isTrue('account_taxonomy_automated_label_enabled'),
                   a = e.isTrue('account_taxonomy_automation_opt_in_enabled')
                 if (t && a) {
-                  var n = c.props.managingAccount,
-                    r = n ? Fe : Re,
-                    o = n ? '/settings/account/automation' : '/settings/your_twitter_data/account'
+                  var n = c.props.managingAccount
+                    ? '/settings/account/automation'
+                    : '/settings/your_twitter_data/account'
                   return g.a.createElement(fe.a, {
-                    description: r,
+                    description: Re,
                     label: xe,
-                    link: o,
+                    link: n,
                     onPress: c._handleAutomationOnPress,
                   })
                 }
@@ -725,7 +724,7 @@
                     a = e.location
                   return g.a.createElement(
                     ue.c,
-                    { namespace: We },
+                    { namespace: Ke },
                     g.a.createElement(
                       le.a,
                       null,
@@ -742,8 +741,8 @@
             a
           )
         })(g.a.Component)
-      p()(Ve, 'contextType', pe.a)
-      t.default = Object(be.a)(ie(Ve))
+      p()(qe, 'contextType', pe.a)
+      t.default = Object(be.a)(ie(qe))
     },
     Fcaw: function (e, t, a) {
       'use strict'
