@@ -56,8 +56,8 @@
         E = n.n(y),
         C = n('1YZw'),
         I = n('CaKu'),
-        T = n('y+lG'),
-        w = n('SrIh'),
+        w = n('y+lG'),
+        T = n('SrIh'),
         S = n('Irs7'),
         x = n('uDfI'),
         L = n('zCf4'),
@@ -130,7 +130,7 @@
                           return a(), void n.history.push(u()(u()({}, N(t)), {}, { pathname: '/messages/compose' }))
                         case 'copy':
                           return (
-                            I.a.setString(Object(T.a)(t.url)),
+                            I.a.setString(Object(w.a)(t.url)),
                             a(),
                             void n.dispatch(Object(C.b)({ text: M.copyLinkSuccessMessage }))
                           )
@@ -147,13 +147,13 @@
                           )
                         case 'via':
                           return void window.navigator
-                            .share({ text: t.text, url: Object(T.a)(t.url) })
+                            .share({ text: t.text, url: Object(w.a)(t.url) })
                             .then(a)
                             .catch(function () {
                               n.analytics.scribe(u()(u()({}, n.mergedScribeNamespace), {}, { action: 'share_error' }))
                             })
                         default:
-                          Object(w.a)('[ShareButton] Unexpected share type ['.concat(e, ']'))
+                          Object(T.a)('[ShareButton] Unexpected share type ['.concat(e, ']'))
                       }
                     })(r.type, s, p)
                   }
@@ -271,8 +271,8 @@
         E = n('s14A'),
         C = n('dwig'),
         I = (n('uFXj'), n('7JQg')),
-        T = n('rHpw'),
-        w = n('GKOv'),
+        w = n('rHpw'),
+        T = n('GKOv'),
         S = n('Rp9C'),
         x = n('Irs7')
       function L(e, t) {
@@ -314,7 +314,7 @@
           s.a.createElement(
             I.c,
             { data: u, namespace: p },
-            s.a.createElement(w.a, {
+            s.a.createElement(T.a, {
               displayType: a,
               facepile: r,
               onFollowHeaderOffscreen: function (e) {
@@ -328,7 +328,7 @@
           ),
         )
       }
-      var A = T.a.create(function (e) {
+      var A = w.a.create(function (e) {
           return {
             root: {
               borderBottomWidth: e.borderWidths.small,
@@ -362,7 +362,7 @@
           return 'twitter://topics_timeline?id='.concat(e)
         },
         J = j.a.ed88e742
-      var W = T.a.create(function (e) {
+      var W = w.a.create(function (e) {
           return {
             rightControl: { flexDirection: 'row' },
             followButtonContainer: { justifyContent: 'center', paddingEnd: e.spaces.space4 },
@@ -533,30 +533,32 @@
                       p = n.selectedTab,
                       d = n.timelinePrefix,
                       f = n.title,
-                      b = {
+                      b = n.withoutHeadroom,
+                      m = {
                         token: null == i || null === (e = i.scribeConfig) || void 0 === e ? void 0 : e.entityToken,
                       },
-                      m = this._getModule(
+                      v = this._getModule(
                         p,
                         null == i || null === (t = i.tabs) || void 0 === t ? void 0 : t.initialTabId,
                         r,
                         d,
                       ),
-                      v = this._getRefreshIntervalSecForCurrentTab(),
-                      h = v ? 1e3 * v : void 0
+                      h = this._getRefreshIntervalSecForCurrentTab(),
+                      g = h ? 1e3 * h : void 0
                     return s.a.createElement(
                       I.c,
                       { namespace: this._getTimelineNamespace() },
                       s.a.createElement(me.a, {
-                        behavioralEventContext: b,
+                        behavioralEventContext: m,
                         entryConfiguration: a,
-                        module: m,
-                        pollingIntervalMsOverride: h,
+                        module: v,
+                        pollingIntervalMsOverride: g,
                         prerollDisplayLocation: o,
                         refreshControl: c,
                         renderEmptyState: l,
                         renderUnavailable: u,
                         title: f,
+                        withoutHeadroom: b,
                       }),
                     )
                   },
@@ -598,8 +600,8 @@
             }
           })
           .withAnalytics(),
-        Te = n('Nhmk'),
-        we = n('k/OQ'),
+        we = n('Nhmk'),
+        Te = n('k/OQ'),
         Se = n('G8HL'),
         xe = ['entityToken'],
         Le = { viewType: 'controls' },
@@ -621,7 +623,7 @@
                   o = i ? i.scribeConfig : void 0
                 return r().then(function (t) {
                   t.performed && n.scribe(l()(l()({}, e._getScribeNamespace(o)), {}, { action: 'get_initial' }))
-                }, a(Te.a))
+                }, a(we.a))
               }),
               ce()(te()(e), '_render', function () {
                 var t = e.props,
@@ -658,7 +660,7 @@
                   return s.a.createElement(
                     ge.a,
                     { behavioralEventContext: Le },
-                    s.a.createElement(we.a, { links: p, visibleItemIndex: c }),
+                    s.a.createElement(Te.a, { links: p, visibleItemIndex: c }),
                   )
                 }
                 return null
@@ -739,7 +741,7 @@
             h = e.onBackClick,
             g = e.pageConfiguration,
             y = e.prerollDisplayLocation,
-            w = e.renderEmptyState,
+            T = e.renderEmptyState,
             S = e.renderUnavailable,
             x = e.rightControl,
             L = e.searchBoxRef,
@@ -790,7 +792,7 @@
               : null,
             te = N ? E.a : s.a.Fragment,
             ne = s.a.createElement(Be.a, null, function (e) {
-              var t = e.windowWidth >= T.a.theme.breakpoints.medium
+              var t = e.windowWidth >= w.a.theme.breakpoints.medium
               return s.a.createElement(
                 s.a.Fragment,
                 null,
@@ -802,11 +804,12 @@
                     entryConfiguration: He(t, i),
                     initialModule: v,
                     prerollDisplayLocation: y,
-                    renderEmptyState: w,
+                    renderEmptyState: T,
                     renderUnavailable: S,
                     selectedTabId: k,
                     timelinePrefix: _,
                     title: j,
+                    withoutHeadroom: !0,
                   }),
                 ),
               )

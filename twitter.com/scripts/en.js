@@ -1865,13 +1865,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('a94092a1', 'You now have access to moderation tools'),
           a('i1fda797', 'As a Community mod, you can add and remove members. Use your power wisely.'),
-          a('cc683fb9', 'About Community'),
-          a('af7c11a9', 'Community Info'),
-          a('db1b9462', 'Only members can Tweet, like, or reply.'),
-          a('ea49402d', 'Everyone can view Tweets within any Community on Twitter.'),
-          a('fcef2921', 'Anyone can join this Community.'),
-          a('c93dd2c8', 'To join this Community, you must ask and be approved.'),
-          a('gedb877c', 'All Communities are publicly visible.'),
           a('e3f04700', function (e) {
             return e.count + ' new Tweet' + n(e.count, '', 's') + ' to review'
           }),
@@ -1883,6 +1876,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c8c6c4e9', 'Learn more about Communities'),
           a('dce5e1b3', 'Admin tools'),
           a('c5d8c93d', 'Moderator tools'),
+          a('cc683fb9', 'About Community'),
+          a('af7c11a9', 'Community Info'),
+          a('db1b9462', 'Only members can Tweet, like, or reply.'),
+          a('ea49402d', 'Everyone can view Tweets within any Community on Twitter.'),
+          a('fcef2921', 'Anyone can join this Community.'),
+          a('c93dd2c8', 'To join this Community, you must ask and be approved.'),
+          a('gedb877c', 'All Communities are publicly visible.'),
           a('a0e3ece4', 'Community Detail'),
           a('d601fc2f', 'Latest'),
           a('e6057013', 'Ask to join'),
@@ -2124,8 +2124,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bcd6bb0d', 'Member'),
           a('addbb11e', 'No new membership requests'),
           a('c38131de', 'You’re all caught up. When new requests come in, you’ll see them here.'),
-          a('b9bd56d4', function (e) {
-            return '@' + e.screenName + ' was approved and can now join your Community'
+          a('d7f13fb8', function (e) {
+            return '@' + e.screenName + ' was approved and is now a member of your Community'
           }),
           a('a340df66', function (e) {
             return '@' + e.screenName + ' was denied and can’t join your Community'
@@ -4931,6 +4931,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               ' on Twitter.'
             )
           }),
+          a('ad964e3f', 'Edit your Twitter Circle'),
+          a('f0ab07f4', function (e) {
+            return 'Members (' + e.memberCount + ')'
+          }),
+          a('c7323afe', 'There isn’t anyone in your Twitter Circle — yet'),
+          a('dab58e31', 'When you add people, they’ll show up here.'),
+          a('fe3a4dcb', 'Learn more'),
           a('ea831526', 'Tweet with replies'),
           a('a90e1e67', function (e) {
             return 'Tweet' + e.noun
@@ -5274,9 +5281,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a1668a61', 'There aren’t any followers of this List'),
           a('ab1bed40', 'When people follow, they’ll show up here.'),
           a('b197a56c', 'List followers'),
-          a('f0ab07f4', function (e) {
-            return 'Members (' + e.memberCount + ')'
-          }),
           a('h9ce3405', 'List members'),
           a('dfeaeb26', 'Add to your List'),
           a('dc24ae43', 'When people get added, they’ll show up here.'),
@@ -6009,8 +6013,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('gaeb997d', 'More'),
           a('f4393d0f', function (e) {
             return 'Attributed to ' + e.name
-          }),
-          a('f8e8e32d', 'You'),
+          })
+        a('f8e8e32d', 'You'),
           a('df6703d2', 'You'),
           a('c20f7e9e', function (e) {
             return n(
@@ -6025,10 +6029,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               c.createElement(c.Fragment, null, '', e.secondName),
               e.otherUsersCount + ' others',
             )
-          })
-        a('f1a1b790', function (e) {
-          return 'Promoted by ' + e.fullName
-        }),
+          }),
+          a('f1a1b790', function (e) {
+            return 'Promoted by ' + e.fullName
+          }),
           a('if2bf8b3', 'Promoted'),
           a('f3624b5c', 'Promoted (political)'),
           a('b4b3b113', function (e) {
@@ -8299,6 +8303,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'e1d95725',
                 get: function () {
                   return ['You can always unfollow from ', '.']
+                },
+              },
+              {
+                key: 'hfbff3d1',
+                get: function () {
+                  return ['People won’t be notified when you make changes to your Twitter Circle. ', '.']
                 },
               },
               {
@@ -10962,31 +10972,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               },
             },
           )),
-          (l.a1989241728 = p(
-            { 1: l('en').numberFormatter({ raw: '0' }) },
-            {
-              pattern: 'MMMM d, y',
-              timeSeparator: ':',
-              months: {
-                M: {
-                  4: {
-                    1: 'January',
-                    2: 'February',
-                    3: 'March',
-                    4: 'April',
-                    5: 'May',
-                    6: 'June',
-                    7: 'July',
-                    8: 'August',
-                    9: 'September',
-                    10: 'October',
-                    11: 'November',
-                    12: 'December',
-                  },
-                },
-              },
-            },
-          )),
           (l.a878419275 = w(l('en').dateToPartsFormatter({ skeleton: 'MMMd' }))),
           (l.b965415715 = w(l('en').dateToPartsFormatter({ skeleton: 'hm' }))),
           (l.a1434444438 = w(l('en').dateToPartsFormatter({ skeleton: 'MMMEd' }))),
@@ -11004,7 +10989,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           (l.b1998581093 = w(l('en').dateToPartsFormatter({ datetime: 'medium' }))),
           (l.a1830739137 = w(l('en').dateToPartsFormatter({ datetime: 'full' }))),
           (l.a1286203598 = w(l('en').dateToPartsFormatter({ date: 'medium' }))),
-          (l.b490808361 = w(l('en').dateToPartsFormatter({ skeleton: 'yMMMMd' }))),
           (l.b687161418 = g(l('en').numberFormatter({}), l('en').pluralGenerator({}), {
             'relativeTime-type-future': {
               'relativeTimePattern-count-one': 'in {0} day',
@@ -11217,7 +11201,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d0a77c9a', l.b1998581093),
           a('g8d1b99b', l.a1830739137),
           a('h3629782', l.a1286203598),
-          a('a1061083', l.b490808361),
           a('ja781451', l.a71710728),
           a('cfa1a7b8', l.a605057387),
           a('cf8abf58', l.b1158699306),

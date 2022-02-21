@@ -302,42 +302,43 @@
                   var e = this,
                     t = this.props,
                     n = t.displayType,
-                    r = t.topic
-                  return r
+                    r = t.showRelationshipChangeConfirmation,
+                    o = t.topic
+                  return o
                     ? w.a.createElement(V.a, null, function (t) {
-                        var o = t.windowWidth,
-                          a = j.a.isNarrowScreenWidth(o) ? G.mainViewSmall : G.mainView,
-                          i = e._additionalControlsEnabled
-                            ? j.a.isNarrowScreenWidth(o)
+                        var a = t.windowWidth,
+                          i = j.a.isNarrowScreenWidth(a) ? G.mainViewSmall : G.mainView,
+                          s = e._additionalControlsEnabled
+                            ? j.a.isNarrowScreenWidth(a)
                               ? G.followButtonSmall
                               : G.followButton
                             : null,
-                          s = j.a.isNarrowScreenWidth(o) ? G.notInterestButtonSmall : G.notInterestButton
+                          l = j.a.isNarrowScreenWidth(a) ? G.notInterestButtonSmall : G.notInterestButton
                         return w.a.createElement(
                           w.a.Fragment,
                           null,
-                          r.not_interested && e._additionalControlsEnabled
+                          o.not_interested && e._additionalControlsEnabled
                             ? e._renderTopicContextTombstone()
                             : n === B.c.Basic
                             ? w.a.createElement(
                                 O.a,
-                                { style: a },
-                                !e._additionalControlsEnabled || r.following || r.not_interested
+                                { style: i },
+                                !e._additionalControlsEnabled || o.following || o.not_interested
                                   ? null
                                   : w.a.createElement(x.a, {
                                       size: 'medium',
-                                      style: s,
+                                      style: l,
                                       text: D,
-                                      topicId: r.id,
+                                      topicId: o.id,
                                       type: 'primaryOutlined',
                                       withIconOnly: !1,
                                     }),
                                 w.a.createElement(S.a, {
-                                  showRelationshipChangeConfirmation: !0,
+                                  showRelationshipChangeConfirmation: r,
                                   size: 'medium',
-                                  style: i,
+                                  style: s,
                                   textMode: e._followButtonTextVariant,
-                                  topic: r,
+                                  topic: o,
                                 }),
                               )
                             : null,

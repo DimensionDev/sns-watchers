@@ -9184,10 +9184,7 @@
                 n._viewport && n._viewport.scrollBy(n._viewport.getRect().getHeight())
               }),
               v()(p()(n), '_handleViewportSet', function (e) {
-                var t = n.props,
-                  a = t.isModal
-                t.subtask.scroll_hint &&
-                  a &&
+                n.props.subtask.scroll_hint &&
                   ((n._viewport = e), n._viewport && n._viewport.addScrollListener(n._handleViewportScroll))
               }),
               v()(
@@ -9205,6 +9202,9 @@
                   if (a) return t.top >= a.getTop() && t.bottom <= a.getBottom()
                 }
                 return !1
+              }),
+              v()(p()(n), '_isPrompt', function () {
+                return 'prompt' === n.props.subtask.style
               }),
               v()(p()(n), '_setSettingsRef', function (e) {
                 return function (t) {
@@ -9286,6 +9286,7 @@
                   t.subtask.scroll_hint &&
                     !a &&
                     e &&
+                    this._isPrompt() &&
                     ((this._viewport = e),
                     (this._removeScrollListener = this._viewport.addScrollListener(this._handleViewportScroll))),
                     this._updateFlow()
@@ -9317,7 +9318,7 @@
                     c = t.subtaskInputs,
                     u = this.state.lastSettingSeen,
                     d = !!!s.scroll_hint || u,
-                    p = 'prompt' === s.style,
+                    p = this._isPrompt(),
                     h = this._renderNavigationButtons(d),
                     m = s.scroll_hint,
                     _ =
@@ -12736,11 +12737,12 @@
         O = function (e) {
           var t = e.children,
             a = e.control,
-            n = b.a.useRef(null),
-            r = b.a.useState(null),
-            i = S()(r, 2),
-            o = i[0],
-            s = i[1]
+            n = e.onViewportSet,
+            r = b.a.useRef(null),
+            i = b.a.useState(null),
+            o = S()(i, 2),
+            s = o[0],
+            l = o[1]
           A(function () {
             var e,
               t = window.visualViewport
@@ -12748,23 +12750,23 @@
               window.innerHeight) -
               t.height >
             100
-              ? null != n.current && t.height - t.offsetTop < n.current
-                ? s(null)
-                : s(t.height + t.offsetTop - (n.current || 75))
-              : s(null)
+              ? null != r.current && t.height - t.offsetTop < r.current
+                ? l(null)
+                : l(t.height + t.offsetTop - (r.current || 75))
+              : l(null)
           })
-          var l = [N.bottomControl, N.fixed].concat(I()(y.b.isIOS() && o ? [N.visualViewport, { top: o }] : []))
+          var c = [N.bottomControl, N.fixed].concat(I()(y.b.isIOS() && s ? [N.visualViewport, { top: s }] : []))
           return b.a.createElement(
             b.a.Fragment,
             null,
-            b.a.createElement(w.a, { style: N.flexViewport }, t),
+            b.a.createElement(C.a, { onViewportSet: n, style: N.flexViewport }, t),
             b.a.createElement(
               w.a,
               {
                 ref: function (e) {
-                  e && !n.current && (n.current = e.getBoundingClientRect().height)
+                  e && !r.current && (r.current = e.getBoundingClientRect().height)
                 },
-                style: l,
+                style: c,
                 testID: F,
               },
               a,
@@ -12857,7 +12859,7 @@
                             n && b.a.createElement(w.a, { style: M.bottomControl }, n),
                           )
                         : n
-                        ? b.a.createElement(O, { control: n }, t)
+                        ? b.a.createElement(O, { control: n, onViewportSet: this._handleViewportSet }, t)
                         : t,
                       i ? null : r,
                     ),

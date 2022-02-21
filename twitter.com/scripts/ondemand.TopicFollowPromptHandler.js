@@ -4,38 +4,61 @@
     VSZh: function (e, t, n) {
       'use strict'
       n.r(t)
-      var i = n('yiKp'),
-        o = n.n(i),
-        a = n('ezF+'),
-        c = n('zh9S'),
-        r = n('Rp9C'),
-        s = (n('uFXj'), n('ERkP')),
-        l = n.n(s),
-        p = n('fRsM'),
-        d = (n('yH/f'), Object.freeze({ IncentiveFocus: 'IncentiveFocus', TopicFocus: 'TopicFocus' })),
-        u = n('MWbm'),
-        m = n('t62R'),
-        h = function (e) {
-          var t = e.displayType,
-            n = e.subtext,
-            i = e.title,
-            o = e.topic,
-            a = t === d.IncentiveFocus
-          return l.a.createElement(
-            u.a,
-            { style: a && I.incentiveFocus },
-            l.a.createElement(p.a, { educateOnFollow: !0, nameWeight: a ? void 0 : 'heavy', topic: o, withIcon: !0 }),
-            i || n
-              ? l.a.createElement(
-                  u.a,
-                  { style: [I.text, a ? I.noMarginBottom : I.border] },
-                  i ? l.a.createElement(m.b, { size: 'headline1', weight: 'bold' }, i) : null,
-                  n ? l.a.createElement(m.b, { color: 'gray700' }, n) : null,
+      var i = n('ezF+'),
+        o = n('Rp9C'),
+        a = (n('uFXj'), n('ERkP')),
+        c = n.n(a),
+        r = n('Zejx'),
+        s = n('rxPX'),
+        l = function (e, t) {
+          return r.a.select(e, t.entry.content.topicId)
+        },
+        p = Object(s.a)().propsFromState(function () {
+          return { topic: l }
+        }),
+        d = n('fRsM'),
+        u = (n('yH/f'), Object.freeze({ IncentiveFocus: 'IncentiveFocus', TopicFocus: 'TopicFocus' })),
+        m = n('Irs7'),
+        h = n('MWbm'),
+        I = n('t62R'),
+        f = n('rHpw'),
+        b = function (e) {
+          var t = e.entry,
+            n = e.topic,
+            i = Object(m.b)(),
+            o = t.content,
+            a = o.displayType,
+            r = o.followIncentiveText,
+            s = o.followIncentiveTitle,
+            l = a === u.IncentiveFocus
+          return (
+            c.a.useEffect(function () {
+              n && i.scribeAction('impression')
+            }, []),
+            n
+              ? c.a.createElement(
+                  h.a,
+                  { style: l && v.incentiveFocus },
+                  c.a.createElement(d.a, {
+                    educateOnFollow: !0,
+                    nameWeight: l ? void 0 : 'heavy',
+                    topic: n,
+                    withIcon: !0,
+                  }),
+                  s || r
+                    ? c.a.createElement(
+                        h.a,
+                        { style: [v.text, l ? v.noMarginBottom : v.border] },
+                        s ? c.a.createElement(I.b, { size: 'headline1', weight: 'bold' }, s) : null,
+                        r ? c.a.createElement(I.b, { color: 'gray700' }, r) : null,
+                      )
+                    : null,
                 )
-              : null,
+              : null
           )
         },
-        I = n('rHpw').a.create(function (e) {
+        g = p(c.a.memo(b)),
+        v = f.a.create(function (e) {
           return {
             border: {
               borderTopStyle: 'solid',
@@ -52,43 +75,15 @@
             },
           }
         }),
-        f = n('Zejx'),
-        b = a.g({
-          component: h,
-          bindActions: function () {
-            return { scribe: c.c }
-          },
-          selectData: function (e) {
-            var t = e.entry.content
-            return {
-              topic: function (e) {
-                return f.a.select(e, t.topicId)
-              },
-            }
-          },
-          createProps: function (e) {
-            var t = e.data.topic,
-              n = e.entry
-            if (!t) return null
-            var i = n.content
-            return {
-              displayType: i.displayType,
-              subtext: i.followIncentiveText,
-              title: i.followIncentiveTitle,
-              topic: t,
-            }
-          },
-          getScribeDataItem: function (e) {
-            return r.a.forTopic(e.content.topicId, e.itemMetadata.clientEventInfo)
-          },
-          onImpression: function (e) {
-            var t = e.actions.scribe,
-              n = e.scribeData,
-              i = e.scribeNamespace
-            t(o()(o()({}, i), {}, { action: 'impression' }), n)
-          },
-        })
-      t.default = b
+        y = i
+          .b({
+            component: g,
+            getScribeDataItem: function (e) {
+              return o.a.forTopic(e.content.topicId, e.itemMetadata.clientEventInfo)
+            },
+          })
+          .getHandler()
+      t.default = y
     },
     fRsM: function (e, t, n) {
       'use strict'
@@ -110,21 +105,21 @@
         g = n.n(b),
         v = n('LWCC'),
         y = n('3XMw'),
-        D = n.n(y),
-        w = n('EHV7'),
+        w = n.n(y),
+        D = n('EHV7'),
         _ = n('YICZ'),
-        x = n('3IPs'),
-        k = n('X04g'),
+        k = n('3IPs'),
+        x = n('X04g'),
         E = n('MWbm'),
         S = n('Irs7'),
         T = n('hxu0'),
-        C = n('htQn'),
-        L = n('t62R'),
-        R = n('j7Bv'),
-        F = n('rHpw'),
-        O = n('v6aA'),
-        B = D.a.a2a3824a,
-        z = 0,
+        O = n('htQn'),
+        C = n('t62R'),
+        F = n('j7Bv'),
+        L = n('rHpw'),
+        R = n('v6aA'),
+        B = w.a.a2a3824a,
+        j = 0,
         P = (function (e) {
           u()(n, e)
           var t = h()(n)
@@ -153,16 +148,16 @@
                   r = i.name
                 t &&
                   n &&
-                  n(k.a.ItemType.TOPIC) &&
-                  t({ topic: { id: c, name: r, description: o || '', type: x.a.Topic } }),
+                  n(x.a.ItemType.TOPIC) &&
+                  t({ topic: { id: c, name: r, description: o || '', type: k.a.Topic } }),
                   a._handleScribe('click')
               }),
-              (a._topicDomId = 'topic'.concat(z)),
-              (a._nameDomId = 'topic-name'.concat(z)),
-              (a._descriptionDomId = 'topic-description'.concat(z)),
-              (a._followButtonDomId = 'topic-follow-button'.concat(z)),
-              (a._notInterestedButtonDomId = 'topic-not-interested-button'.concat(z)),
-              (z += 1),
+              (a._topicDomId = 'topic'.concat(j)),
+              (a._nameDomId = 'topic-name'.concat(j)),
+              (a._descriptionDomId = 'topic-description'.concat(j)),
+              (a._followButtonDomId = 'topic-follow-button'.concat(j)),
+              (a._notInterestedButtonDomId = 'topic-not-interested-button'.concat(j)),
+              (j += 1),
               a
             )
           }
@@ -181,7 +176,7 @@
                     r = a.name,
                     s = this.context.loggedInUserId
                   return g.a.createElement(
-                    C.a,
+                    O.a,
                     {
                       accessibilityLabelledBy: [
                         this._topicDomId,
@@ -193,25 +188,25 @@
                       interactiveStyles: this._topicLink ? void 0 : null,
                       link: this._topicLink,
                       onClick: this._topicLink ? this._handleOnClick : void 0,
-                      style: [j.root, j.flexStart],
+                      style: [z.root, z.flexStart],
                       withDarkerInteractiveBackground: n,
                     },
                     g.a.createElement(
                       E.a,
-                      { style: j.topic },
+                      { style: z.topic },
                       g.a.createElement(E.a, { accessibilityLabel: B, nativeID: this._topicDomId }),
                       this._renderIcon(),
                       g.a.createElement(
                         E.a,
-                        { style: j.text },
+                        { style: z.text },
                         g.a.createElement(
-                          L.b,
+                          C.b,
                           { nativeID: this._nameDomId, weight: i, withInteractiveStyling: !!this._topicLink },
                           r,
                         ),
                         c
                           ? g.a.createElement(
-                              L.b,
+                              C.b,
                               { color: 'gray700', nativeID: this._descriptionDomId, numberOfLines: 2 },
                               c,
                             )
@@ -220,13 +215,13 @@
                     ),
                     g.a.createElement(
                       E.a,
-                      { style: j.buttons },
+                      { style: z.buttons },
                       g.a.createElement(v.a, { educateOnFollow: t, nativeID: this._followButtonDomId, topic: a }),
                       s && o
                         ? g.a.createElement(_.a, {
                             nativeID: this._notInterestedButtonDomId,
                             onPress: o,
-                            style: j.marginLeft,
+                            style: z.marginLeft,
                             topicId: a.id,
                           })
                         : null,
@@ -238,7 +233,7 @@
                 key: '_renderIcon',
                 value: function () {
                   return this.props.withIcon
-                    ? g.a.createElement(R.a, { Icon: w.a, size: 'large', style: j.icon })
+                    ? g.a.createElement(F.a, { Icon: D.a, size: 'large', style: z.icon })
                     : null
                 },
               },
@@ -252,8 +247,8 @@
             n
           )
         })(g.a.Component)
-      f()(P, 'contextType', O.a), f()(P, 'defaultProps', { nameWeight: 'bold', withIcon: !0 })
-      var j = F.a.create(function (e) {
+      f()(P, 'contextType', R.a), f()(P, 'defaultProps', { nameWeight: 'bold', withIcon: !0 })
+      var z = L.a.create(function (e) {
         return {
           root: {
             flexDirection: 'row',

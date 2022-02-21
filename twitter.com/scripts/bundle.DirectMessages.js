@@ -60,37 +60,38 @@
       'use strict'
       n.r(t),
         n.d(t, 'DmConversationTimelineQuery', function () {
-          return _
+          return k
         }),
         n.d(t, 'default', function () {
-          return S
+          return w
         })
       var a = n('yiKp'),
         r = n.n(a),
-        i = (n('lTEL'), n('7x/C'), n('kYxP'), n('wFPu'), n('uFXj'), n('ERkP')),
-        o = n.n(i),
-        s = n('i4Oy'),
-        l = n('mw9i'),
-        c = n('4AMG'),
-        u = n('sl05')
-      function d(e) {
+        i = (n('lTEL'), n('7x/C'), n('kYxP'), n('wFPu'), n('uFXj'), n('zh9S')),
+        o = n('ERkP'),
+        s = n.n(o),
+        l = n('i4Oy'),
+        c = n('mw9i'),
+        u = n('4AMG'),
+        d = n('sl05')
+      function p(e) {
         var t = e.conversation,
           n = e.isWide,
           a = e.perspective
-        return o.a.useCallback(
+        return s.a.useCallback(
           function (e) {
             return t
-              ? o.a.createElement(
-                  l.a,
-                  { style: u.a.root },
-                  o.a.createElement(c.a, {
+              ? s.a.createElement(
+                  c.a,
+                  { style: d.a.root },
+                  s.a.createElement(u.a, {
                     conversation: t,
                     inboxType: 'primary',
                     isWide: n,
                     onHistoryRequest: function () {},
                     perspective: a,
                     scribeNamespace: {},
-                    style: u.a.activity,
+                    style: d.a.activity,
                   }),
                 )
               : null
@@ -98,90 +99,102 @@
           [t, n, a],
         )(e)
       }
-      var p,
-        m = n('qBaR'),
-        h = n('v//M'),
-        f = (n('enFi'), n('NjAB')),
-        v = n('rHpw'),
-        g = n('n0Rl'),
-        b = n('h3MB'),
-        y = n('zCf4'),
-        _ = void 0 !== p ? p : (p = n('GjeS')),
-        E = Object(g.b)(_, { errorConfig: { context: 'DM_CONVERSATION_TIMELINE' } })
-      function S(e) {
+      var m,
+        h = n('qBaR'),
+        f = n('v//M'),
+        v = (n('enFi'), n('NjAB')),
+        g = n('z2Pn'),
+        b = n('rHpw'),
+        y = n('pNZL'),
+        _ = n('n0Rl'),
+        E = n('h3MB'),
+        S = n('zCf4'),
+        C = { page: 'messages', section: 'thread' },
+        k = void 0 !== m ? m : (m = n('GjeS')),
+        I = Object(_.b)(k, { errorConfig: { context: 'DM_CONVERSATION_TIMELINE' } })
+      function w(e) {
         var t = e.richTextInputContext,
           n = e.typeaheadWrapper,
-          a = Object(y.f)(),
-          i = Object(y.g)(),
-          l = Object(y.h)().conversationId,
-          c = o.a.useCallback(
-            function (e) {
-              var l = e.fetchStatus,
-                c = e.retry,
-                u = (function (e) {
-                  var t, n, a, i, o
-                  if (!e) return null
-                  var s =
-                    null == e ||
-                    null === (t = e.dm_conversation_by_rest_id) ||
-                    void 0 === t ||
-                    null === (n = t.legacy_conversation_slice) ||
-                    void 0 === n
-                      ? void 0
-                      : n.items
-                  if (!s || !s.length) return null
-                  var l,
-                    c =
-                      null === (a = s[0]) ||
-                      void 0 === a ||
-                      null === (i = a.dm_event) ||
-                      void 0 === i ||
-                      null === (o = i.legacy) ||
-                      void 0 === o
-                        ? void 0
-                        : o.conversation,
-                    u = Object(f.b)(s, [b.b]).entities.entries,
-                    d = Object(f.b)([c], [b.a]).entities.conversations
-                  for (var p in d) {
-                    l = d[p]
-                    break
-                  }
-                  var m = []
-                  for (var h in u) m.push(u[h])
-                  return m.reverse(), r()(r()({}, l), {}, { entries: m, social_proof: [] })
-                })((null == e ? void 0 : e.data) || null),
-                p = 'string' == typeof i.query.text ? i.query.text : void 0,
-                g = s.a.get('window').width >= v.a.theme.breakpoints.small
-              return o.a.createElement(h.a, {
-                fetchStatus: l,
-                onRequestRetry: c,
-                render: function () {
-                  return u
-                    ? o.a.createElement(
-                        m.a,
-                        {
-                          conversation: u,
-                          conversationId: u.conversation_id,
-                          newConversationParticipants: [],
-                          perspective: '',
-                        },
-                        o.a.createElement(d, {
-                          conversation: u,
-                          history: a,
-                          isWide: g,
-                          perspective: '',
-                          prefillText: p,
-                          richTextInputContext: t,
-                          typeaheadWrapper: n,
-                        }),
-                      )
-                    : null
-                },
-              })
+          a = Object(S.f)(),
+          o = Object(S.g)(),
+          c = Object(S.h)().conversationId
+        s.a.useEffect(function () {
+          i.d(C), i.a(C), Object(y.b)(C)
+        }, []),
+          s.a.useEffect(
+            function () {
+              Object(g.h)(o.pathname)
             },
-            [a, i.query.text, t, n],
+            [o.pathname],
           )
-        return l ? o.a.createElement(E, { fetchPolicy: 'store-and-network', render: c, variables: { id: l } }) : null
+        var u = s.a.useCallback(
+          function (e) {
+            var i = e.fetchStatus,
+              c = e.retry,
+              u = (function (e) {
+                var t, n, a, i, o
+                if (!e) return null
+                var s =
+                  null == e ||
+                  null === (t = e.dm_conversation_by_rest_id) ||
+                  void 0 === t ||
+                  null === (n = t.legacy_conversation_slice) ||
+                  void 0 === n
+                    ? void 0
+                    : n.items
+                if (!s || !s.length) return null
+                var l,
+                  c =
+                    null === (a = s[0]) ||
+                    void 0 === a ||
+                    null === (i = a.dm_event) ||
+                    void 0 === i ||
+                    null === (o = i.legacy) ||
+                    void 0 === o
+                      ? void 0
+                      : o.conversation,
+                  u = Object(v.b)(s, [E.b]).entities.entries,
+                  d = Object(v.b)([c], [E.a]).entities.conversations
+                for (var p in d) {
+                  l = d[p]
+                  break
+                }
+                var m = []
+                for (var h in u) m.push(u[h])
+                return m.reverse(), r()(r()({}, l), {}, { entries: m, social_proof: [] })
+              })((null == e ? void 0 : e.data) || null),
+              d = 'string' == typeof o.query.text ? o.query.text : void 0,
+              m = l.a.get('window').width >= b.a.theme.breakpoints.small
+            return s.a.createElement(f.a, {
+              fetchStatus: i,
+              onRequestRetry: c,
+              render: function () {
+                return u
+                  ? s.a.createElement(
+                      h.a,
+                      {
+                        conversation: u,
+                        conversationId: u.conversation_id,
+                        newConversationParticipants: [],
+                        perspective: '',
+                      },
+                      s.a.createElement(p, {
+                        conversation: u,
+                        history: a,
+                        isWide: m,
+                        perspective: '',
+                        prefillText: d,
+                        richTextInputContext: t,
+                        typeaheadWrapper: n,
+                      }),
+                    )
+                  : null
+              },
+            })
+          },
+          [a, o.query.text, t, n],
+        )
+        return c ? s.a.createElement(I, { fetchPolicy: 'store-and-network', render: u, variables: { id: c } }) : null
       }
     },
     '06eB': function (e, t, n) {

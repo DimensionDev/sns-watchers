@@ -929,7 +929,7 @@
           return u
             ? o.a.createElement(
                 b.a,
-                { style: [V.userCellContainer, i && V.wideScreen] },
+                { style: [B.userCellContainer, i && B.wideScreen] },
                 o.a.createElement(D.a, {
                   avatarUri: g,
                   description: c,
@@ -942,7 +942,7 @@
               )
             : null
         },
-        V = T.a.create(function (e) {
+        B = T.a.create(function (e) {
           return {
             userCellContainer: {
               marginTop: e.spaces.space12,
@@ -954,7 +954,7 @@
             wideScreen: { marginHorizontal: e.spaces.space32 },
           }
         }),
-        B = function (e) {
+        V = function (e) {
           var l = e.report_entity_results,
             n = v()(void 0 !== r ? r : (r = a('xYG4')), l)
           switch (n.__typename) {
@@ -966,58 +966,43 @@
               return null
           }
         },
-        A = function (e) {
+        j = function (e) {
           var l = e.report,
             n = v()(void 0 !== i ? i : (i = a('6mUz')), l)
           return o.a.createElement(
             b.a,
-            { style: j.entityList },
+            { style: A.entityList },
             n.map(function (e, l) {
-              return o.a.createElement(B, { key: l, report_entity_results: e })
+              return o.a.createElement(V, { key: l, report_entity_results: e })
             }),
           )
         },
-        j = T.a.create(function (e) {
+        A = T.a.create(function (e) {
           return { entityList: { marginVertical: e.spaces.space32 } }
         }),
-        M = a('IAZG'),
-        H = a('/yvb'),
-        W = a('pjBI'),
-        G = a('t62R'),
-        O = a('3rX5'),
+        H = a('IAZG'),
+        M = a('Irs7'),
+        O = a('pjBI'),
+        W = a('t62R'),
+        G = a('3rX5'),
         Q = a('zCf4'),
         X = m.a.e37836f8,
         J = m.a.ccf2f24e,
         P = m.a.e238c59f,
-        q = m.a.b772cd65,
-        N = 'gray700',
-        Z = m.a.a1061083,
-        Y = void 0 !== s ? s : (s = a('+hxm')),
-        $ = function (e) {
-          return o.a.createElement(
-            H.a,
-            {
-              disabled: !1,
-              onPress: function () {
-                return e.goBack()
-              },
-              size: 'small',
-              type: 'primaryFilled',
-            },
-            q,
-          )
-        },
-        ee = function () {
+        q = 'gray700',
+        N = void 0 !== s ? s : (s = a('+hxm')),
+        Z = function () {
           var e,
             l,
             a,
             n,
             t,
-            r = Object(Q.h)(),
-            i = Object(M.a)(Y, { reportId: r.reportId || '' }),
-            s =
-              null == i ||
-              null === (e = i.viewer_v2) ||
+            r,
+            i = Object(Q.h)(),
+            s = Object(H.a)(N, { reportId: i.reportId || '' }),
+            u =
+              null == s ||
+              null === (e = s.viewer_v2) ||
               void 0 === e ||
               null === (l = e.user_results) ||
               void 0 === l ||
@@ -1025,63 +1010,64 @@
               void 0 === a
                 ? void 0
                 : a.submitted_report,
-            u =
-              null != s && s.create_time
-                ? ((n = null == s ? void 0 : s.create_time), (t = parseInt(n, 10)), Z(new Date(t)))
+            d =
+              null != u && u.create_time
+                ? ((n = null == u ? void 0 : u.create_time), (t = m.a.ba2e82a1), (r = parseInt(n, 10)), t(new Date(r)))
                 : '',
-            d = null == s ? void 0 : s.header,
-            g = null == s ? void 0 : s.follow_up_text,
-            m = null == s ? void 0 : s.report_entities_results
+            g = null == u ? void 0 : u.header,
+            p = null == u ? void 0 : u.follow_up_text,
+            y = null == u ? void 0 : u.report_entities_results
           return o.a.createElement(
             o.a.Fragment,
             null,
             o.a.createElement(
-              W.a,
-              { color: N },
-              o.a.createElement(G.b, { color: N, weight: 'bold' }, J),
-              o.a.createElement(G.b, { color: N }, u),
+              O.a,
+              { color: q },
+              o.a.createElement(W.b, { color: q, weight: 'bold' }, J),
+              o.a.createElement(W.b, { color: q }, d),
             ),
-            o.a.createElement(G.b, { size: 'title3', weight: 'heavy' }, d),
-            m ? o.a.createElement(A, { report: Object(c.a)(m) }) : null,
-            o.a.createElement(G.b, { size: 'headline2', style: le.headline, weight: 'heavy' }, P),
-            o.a.createElement(G.b, { color: N, size: 'subtext2', weight: 'normal' }, g),
+            o.a.createElement(W.b, { size: 'title3', weight: 'heavy' }, g),
+            y ? o.a.createElement(j, { report: Object(c.a)(y) }) : null,
+            o.a.createElement(W.b, { size: 'headline2', style: Y.headline, weight: 'heavy' }, P),
+            o.a.createElement(W.b, { color: q, size: 'subtext2', weight: 'normal' }, p),
           )
         },
-        le =
-          ((l.default = function () {
-            var e = Object(Q.f)(),
-              l = o.a.useContext(w.b).isModal
-            return o.a.createElement(
-              d.b,
-              {
-                backButtonType: 'close',
-                containerStyle: le.root,
-                documentTitle: X,
-                history: e,
-                rightControl: $(e),
-                title: X,
-              },
-              o.a.createElement(
-                b.a,
-                { style: le.parentContainer },
+        Y =
+          ((l.default = Object(M.a)(
+            function () {
+              var e = Object(Q.f)(),
+                l = o.a.useContext(w.b).isModal
+              return o.a.createElement(
+                d.b,
+                { backButtonType: 'close', containerStyle: Y.root, documentTitle: X, history: e, title: X },
                 o.a.createElement(
                   b.a,
-                  { style: le.imageContainer },
-                  o.a.createElement(O.a, { accessibilityLabel: '', source: y, style: le.image }),
+                  { style: Y.parentContainer },
+                  o.a.createElement(
+                    b.a,
+                    { style: Y.contentHeader },
+                    o.a.createElement(
+                      b.a,
+                      { style: Y.imageContainer },
+                      o.a.createElement(G.a, { accessibilityLabel: '', source: y, style: Y.image }),
+                    ),
+                  ),
+                  o.a.createElement(
+                    b.a,
+                    { style: [Y.contentBody, l ? Y.wideScreen : Y.narrowScreen] },
+                    o.a.createElement(p.a, { errorConfig: { context: 'REPORT_DETAIL' } }, o.a.createElement(Z, null)),
+                  ),
                 ),
-                o.a.createElement(
-                  b.a,
-                  { style: [le.innerContainer, l ? le.wideScreen : le.narrowScreen] },
-                  o.a.createElement(p.a, { errorConfig: { context: 'REPORT_DETAIL' } }, o.a.createElement(ee, null)),
-                ),
-              ),
-            )
-          }),
+              )
+            },
+            { page: 'report_center', component: 'report_detail' },
+          )),
           T.a.create(function (e) {
             return {
               root: { flexShrink: 1, flexGrow: 1, paddingBottom: e.spaces.space32 },
-              parentContainer: { alignItems: 'center' },
-              innerContainer: { alignItems: 'left' },
+              parentContainer: { alignItems: 'left' },
+              contentHeader: { alignItems: 'center' },
+              contentBody: { alignItems: 'left' },
               headline: { marginBottom: e.spaces.space12 },
               image: { height: '100%', width: '100%' },
               imageContainer: { height: '150px', width: '150px', marginBottom: e.spaces.space12 },

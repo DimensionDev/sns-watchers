@@ -2081,14 +2081,7 @@
                   u = s.toLocaleLowerCase().trim(),
                   d = !!u.length,
                   p = function (e, n) {
-                    if (
-                      !(
-                        e.id === xe.a.Monetization ||
-                        e.id === xe.a.SuperFollows ||
-                        e.id === xe.a.SuperFollowsManagement
-                      ) ||
-                      t
-                    ) {
+                    if (!(e.id === xe.a.Monetization || e.id === xe.a.SuperFollows) || t) {
                       var r = {
                         id: e.id,
                         type: 'setting',

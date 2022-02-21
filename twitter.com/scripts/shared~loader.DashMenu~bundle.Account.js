@@ -121,6 +121,38 @@
       'use strict'
       t.a = { logout: 'logout', switcher: 'switcher', settings: 'settings', help: 'help' }
     },
+    Cp2k: function (e, t, n) {
+      'use strict'
+      var a = n('yiKp'),
+        l = n.n(a),
+        i = n('ERkP'),
+        r = n.n(i),
+        c = n('Lsrn'),
+        o = n('k/Ka'),
+        s = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(o.a)(
+            'svg',
+            l()(
+              l()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [c.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            r.a.createElement(
+              'g',
+              null,
+              r.a.createElement('path', {
+                d: 'M12.341 20.5H23V22H10.842l1.088-1.088zm-9.265 1.248h-.073a.75.75 0 01-.746-.823l.543-5.562a2.745 2.745 0 01.8-1.676l11.155-11.16a2.385 2.385 0 013.182 0l3.535 3.536a2.248 2.248 0 010 3.18L10.313 20.407a2.756 2.756 0 01-1.675.792zM14.667 4.736l4.6 4.6 1.151-1.151a.747.747 0 000-1.06l-3.542-3.538a.81.81 0 00-1.061 0zM3.839 20.165l4.652-.459a1.253 1.253 0 00.762-.36l.555-.555 8.394-8.4-4.6-4.6-8.946 8.957a1.251 1.251 0 00-.36.761z',
+              }),
+            ),
+          )
+        }
+      ;(s.metadata = { width: 24, height: 24 }), (t.a = s)
+    },
     Drq4: function (e, t, n) {
       'use strict'
       var a = n('yiKp'),
@@ -289,14 +321,14 @@
           .withAnalytics(),
         S = n('45mF'),
         x = (n('hBvt'), n('3XMw')),
-        T = n.n(x),
-        z = n('45lU'),
-        A = n('MWbm'),
-        L = n('htQn'),
+        z = n.n(x),
+        L = n('45lU'),
+        T = n('MWbm'),
+        A = n('htQn'),
         B = n('t62R'),
         H = n('Znyr'),
-        F = T.a.d86bbf0f,
-        O = T.a.h6beb5fa,
+        F = z.a.d86bbf0f,
+        O = z.a.h6beb5fa,
         P = function (e) {
           var t = e.badgeCount,
             n = e.icon,
@@ -307,20 +339,20 @@
             c = e.rightControl,
             o = e.testID
           return v.a.createElement(
-            A.a,
-            { style: z.a.dashMenuItem },
+            T.a,
+            { style: L.a.dashMenuItem },
             v.a.createElement(
-              L.a,
-              { link: i, onClick: r, style: z.a.link, testID: o },
+              A.a,
+              { link: i, onClick: r, style: L.a.link, testID: o },
               v.a.createElement(
-                A.a,
-                { style: z.a.item },
-                n ? v.a.createElement(n, { style: a ? [z.a.icon, { color: a }] : z.a.icon }) : null,
-                v.a.createElement(B.b, { color: 'normal', numberOfLines: 1, style: z.a.itemLabel }, l),
+                T.a,
+                { style: L.a.item },
+                n ? v.a.createElement(n, { style: a ? [L.a.icon, { color: a }] : L.a.icon }) : null,
+                v.a.createElement(B.b, { color: 'normal', numberOfLines: 1, style: L.a.itemLabel }, l),
                 t
                   ? v.a.createElement(
-                      A.a,
-                      { style: z.a.itemAccessory },
+                      T.a,
+                      { style: L.a.itemAccessory },
                       v.a.createElement(H.a, {
                         count: t,
                         standalone: !0,
@@ -396,7 +428,7 @@
         Y = function (e) {
           var t = e.style
           return v.a.createElement(
-            A.a,
+            T.a,
             { accessibilityRole: 'none' },
             v.a.createElement(q, { style: t }),
             v.a.createElement(U, { style: [t, G.bristles] }),
@@ -421,7 +453,8 @@
         me = n('78ol'),
         ue = n('Q3sg'),
         he = n('PU7B'),
-        _e = function () {
+        _e = n('Cp2k'),
+        be = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(V.a)(
             'svg',
@@ -449,10 +482,10 @@
             ),
           )
         }
-      _e.metadata = { width: 24, height: 24 }
-      var be = _e,
-        pe = n('2qZs'),
-        fe = function () {
+      be.metadata = { width: 24, height: 24 }
+      var pe = be,
+        fe = n('2qZs'),
+        ve = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(V.a)(
             'svg',
@@ -474,15 +507,15 @@
             ),
           )
         }
-      fe.metadata = { width: 24, height: 24 }
-      var ve = fe,
-        ke = n('4BrD'),
-        we = n('xrkw'),
-        Ce = n('nV1z'),
-        ge = n('M2x3'),
-        Ie = n('SNyS'),
-        ye = n('Drq4'),
-        Ee = function () {
+      ve.metadata = { width: 24, height: 24 }
+      var ke = ve,
+        we = n('4BrD'),
+        Ce = n('xrkw'),
+        ge = n('nV1z'),
+        Ie = n('M2x3'),
+        ye = n('SNyS'),
+        Ee = n('Drq4'),
+        Me = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(V.a)(
             'svg',
@@ -504,9 +537,9 @@
             ),
           )
         }
-      Ee.metadata = { width: 24, height: 24 }
-      var Me = Ee,
-        Se = function () {
+      Me.metadata = { width: 24, height: 24 }
+      var Se = Me,
+        xe = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(V.a)(
             'svg',
@@ -528,34 +561,34 @@
             ),
           )
         }
-      Se.metadata = { width: 24, height: 24 }
-      var xe = Se,
-        Te = T.a.c818c60c,
-        ze = T.a.b5711f09,
-        Ae = T.a.i3145aa0,
-        Le = T.a.b5298d91,
-        Be = T.a.a57a341b,
-        He = T.a.i83d4f13,
-        Fe = 'Collaborate',
-        Oe = T.a.f66d24be,
-        Pe = T.a.c4881c66,
-        De = T.a.h54e6137,
-        Ne = T.a.ae1bbb26,
-        je = T.a.a58e0e51,
-        Re = T.a.deaf7e0a,
-        Ve = T.a.b4af8c6a,
-        Ke = T.a.ed21f885,
-        qe = T.a.d0a51fb1,
-        We = 'Write',
-        Ue = T.a.fa98627a,
-        Ge = T.a.fd442790,
-        Ye = T.a.b8533bac,
-        Qe = T.a.b0041756,
-        Xe = T.a.h02a6fe5,
-        Ze = T.a.b7fa0cfd,
-        Je = T.a.ab38b896,
-        $e = T.a.c9d41313,
-        et = (function (e) {
+      xe.metadata = { width: 24, height: 24 }
+      var ze = xe,
+        Le = z.a.c818c60c,
+        Te = z.a.b5711f09,
+        Ae = z.a.i3145aa0,
+        Be = z.a.b5298d91,
+        He = z.a.a57a341b,
+        Fe = z.a.i83d4f13,
+        Oe = 'Collaborate',
+        Pe = z.a.f66d24be,
+        De = z.a.c4881c66,
+        Ne = z.a.h54e6137,
+        je = z.a.ae1bbb26,
+        Re = z.a.a58e0e51,
+        Ve = z.a.deaf7e0a,
+        Ke = z.a.b4af8c6a,
+        qe = z.a.ed21f885,
+        We = z.a.d0a51fb1,
+        Ue = 'Write',
+        Ge = z.a.fa98627a,
+        Ye = z.a.fd442790,
+        Qe = z.a.b8533bac,
+        Xe = z.a.b0041756,
+        Ze = z.a.h02a6fe5,
+        Je = z.a.b7fa0cfd,
+        $e = z.a.ab38b896,
+        et = z.a.c9d41313,
+        tt = (function (e) {
           u()(n, e)
           var t = _()(n)
           function n() {
@@ -606,14 +639,14 @@
               ),
               p()(d()(e), '_renderProfileItem', function (t) {
                 return t
-                  ? v.a.createElement(P, { icon: ae.a, label: Ue, link: '/'.concat(t), onClick: e._handleProfileClick })
+                  ? v.a.createElement(P, { icon: ae.a, label: Ge, link: '/'.concat(t), onClick: e._handleProfileClick })
                   : null
               }),
               p()(d()(e), '_renderTopicsItem', function (t) {
                 return t
                   ? v.a.createElement(P, {
                       icon: le.a,
-                      label: Ye,
+                      label: Qe,
                       link: '/'.concat(t, '/topics'),
                       onClick: e._handleTopicsClick,
                     })
@@ -622,7 +655,7 @@
               p()(d()(e), '_renderConnectItem', function () {
                 return v.a.createElement(P, {
                   icon: ie.a,
-                  label: Le,
+                  label: Be,
                   link: '/i/connect_people',
                   onClick: e._handleConnectClick,
                 })
@@ -631,7 +664,7 @@
                 return e._collaborateEnabled
                   ? v.a.createElement(P, {
                       icon: re.a,
-                      label: Fe,
+                      label: Oe,
                       link: {
                         external: !0,
                         pathname: '/i/collaborate/home',
@@ -644,7 +677,7 @@
                 return t
                   ? v.a.createElement(P, {
                       icon: ce.a,
-                      label: Qe,
+                      label: Xe,
                       link: '/'.concat(t, '/lists'),
                       onClick: e._handleListsClick,
                     })
@@ -654,7 +687,7 @@
                 return t
                   ? v.a.createElement(P, {
                       icon: oe.a,
-                      label: Xe,
+                      label: Ze,
                       link: '/'.concat(t, '/communities'),
                       onClick: e._handleCommunitiesClick,
                     })
@@ -663,7 +696,7 @@
               p()(d()(e), '_renderTopArticlesItem', function () {
                 return v.a.createElement(P, {
                   icon: se.a,
-                  label: Ze,
+                  label: Je,
                   link: '/i/articles',
                   onClick: e._handleTopArticlesClick,
                 })
@@ -679,7 +712,7 @@
               p()(d()(e), '_renderMomentsItem', function (t) {
                 var n = e._momentMakerEnabled ? '/i/moment_maker' : t ? '/'.concat(t, '/moments') : void 0
                 return n
-                  ? v.a.createElement(P, { icon: me.a, label: Ve, link: n, onClick: e._handleMomentsClick })
+                  ? v.a.createElement(P, { icon: me.a, label: Ke, link: n, onClick: e._handleMomentsClick })
                   : null
               }),
               p()(d()(e), '_renderTwitterBlueItem', function () {
@@ -689,7 +722,7 @@
                   return v.a.createElement(P, {
                     icon: ue.a,
                     iconColor: j.a.theme.colors.brandColor,
-                    label: Ke,
+                    label: qe,
                     link: n,
                     onClick: e._handleTwitterBlueClick,
                   })
@@ -700,7 +733,7 @@
                 return e._newslettersEnabled
                   ? v.a.createElement(P, {
                       icon: he.a,
-                      label: qe,
+                      label: We,
                       link: '/i/newsletters',
                       onClick: e._handleNewslettersClick,
                     })
@@ -709,8 +742,8 @@
               p()(d()(e), '_renderTwitterArticlesItem', function () {
                 return e._twitterArticlesComposeEnabled
                   ? v.a.createElement(P, {
-                      icon: he.a,
-                      label: We,
+                      icon: _e.a,
+                      label: Ue,
                       link: '/i/twitter-article-composer',
                       onClick: e._handleTwitterArticlesClick,
                     })
@@ -719,8 +752,8 @@
               p()(d()(e), '_renderTwitterForProfessionalsItem', function () {
                 return e._twitterForProfessionalsEnabled
                   ? v.a.createElement(P, {
-                      icon: be,
-                      label: $e,
+                      icon: pe,
+                      label: et,
                       link: {
                         pathname: '/i/flow/convert_to_professional',
                         state: { input: { requested_variant: 'navdrawer' } },
@@ -733,8 +766,8 @@
               p()(d()(e), '_renderBirdwatchItem', function () {
                 return e._birdwatchEnabled
                   ? v.a.createElement(P, {
-                      icon: pe.a,
-                      label: ze,
+                      icon: fe.a,
+                      label: Te,
                       link: '/i/birdwatch',
                       onClick: e._handleBirdwatchClick,
                     })
@@ -747,8 +780,8 @@
                 return a || n
                   ? v.a.createElement(P, {
                       badgeCount: a,
-                      icon: ve,
-                      label: He,
+                      icon: ke,
+                      label: Fe,
                       link: '/follower_requests',
                       onClick: e._handleFollowerRequestsClick,
                     })
@@ -756,16 +789,16 @@
               }),
               p()(d()(e), '_renderTwitterAdsItem', function () {
                 return v.a.createElement(P, {
-                  icon: ke.a,
-                  label: Je,
+                  icon: we.a,
+                  label: $e,
                   link: 'https://ads.twitter.com/?ref=gl-tw-tw-twitter-ads-rweb',
                   onClick: e._handleTwitterAdsClick,
                 })
               }),
               p()(d()(e), '_renderAnalyticsItem', function () {
                 return v.a.createElement(P, {
-                  icon: we.a,
-                  label: Te,
+                  icon: Ce.a,
+                  label: Le,
                   link: 'https://analytics.twitter.com/',
                   onClick: e._handleAnalyticsClick,
                 })
@@ -773,8 +806,8 @@
               p()(d()(e), '_renderMediaStudioItem', function () {
                 return e.props.isMediaStudioLinkVisible
                   ? v.a.createElement(P, {
-                      icon: Ce.a,
-                      label: Re,
+                      icon: ge.a,
+                      label: Ve,
                       link: 'https://studio.twitter.com/?ref=dotcom',
                       onClick: e._handleMediaStudioClick,
                     })
@@ -782,8 +815,8 @@
               }),
               p()(d()(e), '_renderSettingsItem', function () {
                 return v.a.createElement(P, {
-                  icon: ge.a,
-                  label: Ge,
+                  icon: Ie.a,
+                  label: Ye,
                   link: '/settings',
                   onClick: e._handleSettingsClick,
                   testID: Z.a.settings,
@@ -791,21 +824,21 @@
               }),
               p()(d()(e), '_renderHelpCenterItem', function () {
                 return v.a.createElement(P, {
-                  icon: Ie.a,
-                  label: Oe,
+                  icon: ye.a,
+                  label: Pe,
                   link: 'https://support.twitter.com/',
                   onClick: e._handleHelpClick,
                   testID: Z.a.help,
                 })
               }),
               p()(d()(e), '_renderDisplayItem', function () {
-                return v.a.createElement(P, { icon: Y, label: Pe, link: '/i/display', onClick: e._handleDisplayClick })
+                return v.a.createElement(P, { icon: Y, label: De, link: '/i/display', onClick: e._handleDisplayClick })
               }),
               p()(d()(e), '_renderKeyboardShortcuts', function () {
                 return J.b.isDesktopOS()
                   ? v.a.createElement(P, {
-                      icon: ye.a,
-                      label: De,
+                      icon: Ee.a,
+                      label: Ne,
                       link: '/i/keyboard_shortcuts',
                       onClick: e._handleMenuItemClick('keyboard_shortcuts_overflow_item'),
                     })
@@ -817,7 +850,7 @@
               p()(d()(e), '_renderLogoutItem', function (t) {
                 return t
                   ? v.a.createElement(P, {
-                      label: Object(D.a)().hasMultiAccountCookie ? je({ screenName: t }) : Ne,
+                      label: Object(D.a)().hasMultiAccountCookie ? Re({ screenName: t }) : je,
                       link: '/logout',
                       onClick: e._handleLogoutScribingClick,
                       testID: Z.a.logout,
@@ -826,16 +859,16 @@
               }),
               p()(d()(e), '_renderDataSaverItem', function () {
                 var t = e.props.settings,
-                  n = t.dataSaverMode ? Me : xe
+                  n = t.dataSaverMode ? Se : ze
                 return v.a.createElement(P, {
                   icon: n,
-                  label: Be,
+                  label: He,
                   link: '/settings/data',
                   onClick: e._handleDataSaverClick,
                   rightControl: v.a.createElement(te.a, {
-                    accessibilityLabel: Be,
+                    accessibilityLabel: He,
                     onValueChange: e._handleDataSaverChanged,
-                    style: z.a.itemAccessory,
+                    style: L.a.itemAccessory,
                     value: t.dataSaverMode,
                   }),
                 })
@@ -979,8 +1012,8 @@
             n
           )
         })(v.a.Component)
-      p()(et, 'contextType', ee.a), p()(et, 'defaultProps', { onClose: Q.a })
-      t.a = Object($.a)(M(et))
+      p()(tt, 'contextType', ee.a), p()(tt, 'defaultProps', { onClose: Q.a })
+      t.a = Object($.a)(M(tt))
     },
     nV1z: function (e, t, n) {
       'use strict'
