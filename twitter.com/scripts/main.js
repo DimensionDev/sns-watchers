@@ -40387,17 +40387,17 @@ window.__SCRIPTS_LOADED__.i18n &&
           },
           R = function (e) {
             return function (t, n) {
-              var r = Y.select(t, n),
+              var r = J.select(t, n),
                 i = A(r, e),
-                a = Y.selectFetchStatus(t, n)
+                a = J.selectFetchStatus(t, n)
               return i ? p.a.LOADED : a === p.a.LOADED ? p.a.NONE : a
             }
           },
           x = function (e) {
             return function (t, n) {
-              var r = Y.selectByScreenName(t, n),
+              var r = J.selectByScreenName(t, n),
                 i = A(r, e),
-                a = Y.selectFetchStatusByScreenName(t, n)
+                a = J.selectFetchStatusByScreenName(t, n)
               return i ? p.a.LOADED : a === p.a.LOADED ? p.a.NONE : a
             }
           },
@@ -40512,7 +40512,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             mapResponseToActions: function (e, t, n) {
               return function (t) {
                 if (t) {
-                  var r = Y.select(n(), e)
+                  var r = J.select(n(), e)
                   return r ? [c.a([o()(o()({}, r), {}, { following: !0 })])] : []
                 }
               }
@@ -40537,7 +40537,55 @@ window.__SCRIPTS_LOADED__.i18n &&
             },
             context: 'PROTECTED_FOLLOW',
           }),
-          K = {
+          K = function (e, t) {
+            M(
+              e,
+              t,
+              function (e) {
+                var t,
+                  n = e.targetUserLegacy
+                ;(n.setValue(!1, 'followed_by'), void 0 !== n.getValue('friends_count')) &&
+                  n.setValue(
+                    (null !== (t = Object(S.a)(n, 'friends_count')) && void 0 !== t ? t : 0) - 1,
+                    'friends_count',
+                  )
+              },
+              function (e) {
+                var t,
+                  n = e.sourceUserLegacy
+                void 0 !== n.getValue('followers_count') &&
+                  n.setValue(
+                    (null !== (t = Object(S.a)(n, 'followers_count')) && void 0 !== t ? t : 0) - 1,
+                    'followers_count',
+                  )
+              },
+            )
+          },
+          V = function (e, t) {
+            M(
+              e,
+              t,
+              function (e) {
+                var t,
+                  n = e.targetUserLegacy
+                ;(n.setValue(!1, 'following'), void 0 !== n.getValue('followers_count')) &&
+                  n.setValue(
+                    (null !== (t = Object(S.a)(n, 'followers_count')) && void 0 !== t ? t : 0) - 1,
+                    'followers_count',
+                  )
+              },
+              function (e) {
+                var t,
+                  n = e.sourceUserLegacy
+                void 0 !== n.getValue('friends_count') &&
+                  n.setValue(
+                    (null !== (t = Object(S.a)(n, 'friends_count')) && void 0 !== t ? t : 0) - 1,
+                    'friends_count',
+                  )
+              },
+            )
+          },
+          q = {
             removeFollower: Object(T.c)(F, 'removeFollower', {
               getParams: function (e) {
                 var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
@@ -40560,11 +40608,13 @@ window.__SCRIPTS_LOADED__.i18n &&
                   },
                 )
               },
+              relayStoreUpdater: K,
             }),
             block: Object(T.c)(F, 'block', {
               getParams: function (e, t) {
                 return o()({ id_str: e }, t)
               },
+              getMeta: N,
               getApiMethod: function (e) {
                 return e.Users.block
               },
@@ -40574,6 +40624,19 @@ window.__SCRIPTS_LOADED__.i18n &&
                 })
               },
               context: 'ACTION_BLOCK',
+              relayStoreUpdater: function (e, t, n) {
+                if (
+                  (j(e, t, function (e) {
+                    var t = e.targetUserLegacy
+                    t.setValue(!0, 'blocking'), t.setValue(!0, 'smart_blocking')
+                  }),
+                  !n)
+                ) {
+                  var r = t.entityId ? e.get(D(t.entityId)) : void 0,
+                    i = null == r ? void 0 : r.getLinkedRecord('legacy')
+                  null != i && i.getValue('following') && V(e, t), null != i && i.getValue('followed_by') && K(e, t)
+                }
+              },
               mapResponseToActions: function (e, t, n) {
                 return function (t) {
                   var r,
@@ -40585,9 +40648,9 @@ window.__SCRIPTS_LOADED__.i18n &&
                         : i.entities) && a.entities.users.entities[e],
                     c = [],
                     u = s && s.following
-                  t && u && c.push({ type: V.unfollow.REQUEST, meta: o()({ entityId: e }, N(0, 0, a)) })
+                  t && u && c.push({ type: G.unfollow.REQUEST, meta: o()({ entityId: e }, N(0, 0, a)) })
                   var l = s && s.followed_by
-                  return t && l && c.push({ type: V.removeFollower.REQUEST, meta: o()({ entityId: e }, N(0, 0, a)) }), c
+                  return t && l && c.push({ type: G.removeFollower.REQUEST, meta: o()({ entityId: e }, N(0, 0, a)) }), c
                 }
               },
             }),
@@ -40601,6 +40664,12 @@ window.__SCRIPTS_LOADED__.i18n &&
               reducer: function (e, t) {
                 return L(e, t, function (e) {
                   return { blocking: !1, smart_blocking: !1 }
+                })
+              },
+              relayStoreUpdater: function (e, t) {
+                j(e, t, function (e) {
+                  var t = e.targetUserLegacy
+                  t.setValue(!1, 'blocking'), t.setValue(!1, 'smart_blocking')
                 })
               },
               context: 'ACTION_UNBLOCK',
@@ -40625,30 +40694,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                   },
                 )
               },
-              relayStoreUpdater: function (e, t) {
-                M(
-                  e,
-                  t,
-                  function (e) {
-                    var t,
-                      n = e.targetUserLegacy
-                    ;(n.setValue(!1, 'following'), void 0 !== n.getValue('followers_count')) &&
-                      n.setValue(
-                        (null !== (t = Object(S.a)(n, 'followers_count')) && void 0 !== t ? t : 0) - 1,
-                        'followers_count',
-                      )
-                  },
-                  function (e) {
-                    var t,
-                      n = e.sourceUserLegacy
-                    void 0 !== n.getValue('friends_count') &&
-                      n.setValue(
-                        (null !== (t = Object(S.a)(n, 'friends_count')) && void 0 !== t ? t : 0) - 1,
-                        'friends_count',
-                      )
-                  },
-                )
-              },
+              relayStoreUpdater: V,
               context: 'ACTION_UNFOLLOW',
               mapResponseToActions: function (e) {
                 return function (t) {
@@ -40812,19 +40858,19 @@ window.__SCRIPTS_LOADED__.i18n &&
               context: 'ACTION_SWITCH_TO_NON_PROFESSIONAL',
             }),
           },
-          V = Object(T.e)(K),
-          q = function (e) {
+          G = Object(T.e)(q),
+          W = function (e) {
             return function (t) {
               return function (n, r, i) {
                 i.api
                 var a = r(),
                   o = Object(_.a)(t),
-                  s = Y.selectByScreenName(a, o)
-                return A(s, e) ? Promise.resolve() : n(Y.fetchOneByScreenName(o))
+                  s = J.selectByScreenName(a, o)
+                return A(s, e) ? Promise.resolve() : n(J.fetchOneByScreenName(o))
               }
             }
           },
-          G = {
+          Y = {
             patchUser: function (e, t) {
               return function (n, r) {
                 return n(Object(u.c)({ users: i()({}, e, t) }))
@@ -40835,7 +40881,7 @@ window.__SCRIPTS_LOADED__.i18n &&
                 a.api
                 var o,
                   s = a.relayEnvironment,
-                  c = Y.select(i(), e)
+                  c = J.select(i(), e)
                 if (c) o = c.protected
                 else {
                   var u = (function (e, t, n) {
@@ -40851,7 +40897,7 @@ window.__SCRIPTS_LOADED__.i18n &&
             fetchOneByScreenName: function (e) {
               return function (t, n, r) {
                 var i = r.api,
-                  a = (r.featureSwitches, Y.selectIdByScreenName(n(), e)),
+                  a = (r.featureSwitches, J.selectIdByScreenName(n(), e)),
                   o = Object(_.a)(e),
                   c = { user_id: a, screen_name: o },
                   l = s.b(t, { request: i.UsersGraphQL.fetchOneUserByScreenName, params: c }),
@@ -40859,9 +40905,9 @@ window.__SCRIPTS_LOADED__.i18n &&
                 a && d.push(a)
                 return l(
                   {
-                    actionTypes: Y.actionTypes.FETCH_ONE,
+                    actionTypes: J.actionTypes.FETCH_ONE,
                     context: 'FETCH_USER_BY_SCREEN_NAME',
-                    meta: { entityNamespace: Y.namespace, entityIds: d },
+                    meta: { entityNamespace: J.namespace, entityIds: d },
                   },
                   function (e) {
                     return e && e.entities ? [Object(u.c)(e.entities)] : []
@@ -40869,10 +40915,10 @@ window.__SCRIPTS_LOADED__.i18n &&
                 )
               }
             },
-            fetchOneByScreenNameIfNeeded: q([O]),
-            createFetchOneByScreenNameWithExtraFieldsIfNeeded: q,
+            fetchOneByScreenNameIfNeeded: W([O]),
+            createFetchOneByScreenNameWithExtraFieldsIfNeeded: W,
           },
-          W = {
+          Q = {
             selectIdByScreenName: Object(l.createSelector)(
               F.selectAll,
               function (e, t) {
@@ -40888,23 +40934,23 @@ window.__SCRIPTS_LOADED__.i18n &&
               },
             ),
             selectByScreenName: function (e, t) {
-              var n = Y.selectIdByScreenName(e, t)
-              return n ? Y.select(e, n) : void 0
+              var n = J.selectIdByScreenName(e, t)
+              return n ? J.select(e, n) : void 0
             },
             selectErrorsByScreenName: function (e, t) {
-              return Y.selectFetchStatusByScreenName(e, t) === p.a.FAILED ? Y.selectErrors(e)[Object(_.a)(t)] : null
+              return J.selectFetchStatusByScreenName(e, t) === p.a.FAILED ? J.selectErrors(e)[Object(_.a)(t)] : null
             },
             selectIsUserNotFound: function (e, t) {
-              var n = Y.selectErrorsByScreenName(e, t) || {}
+              var n = J.selectErrorsByScreenName(e, t) || {}
               return Object(w.c)(n, w.a.GenericUserNotFound)
             },
             selectIsUserSuspended: function (e, t) {
-              var n = Y.selectErrorsByScreenName(e, t) || {}
+              var n = J.selectErrorsByScreenName(e, t) || {}
               return Object(w.c)(n, w.a.OtherUserSuspended)
             },
             selectUserSuspendMessage: function (e, t) {
               var n,
-                r = Y.selectErrorsByScreenName(e, t) || {}
+                r = J.selectErrorsByScreenName(e, t) || {}
               if (Object(w.c)(r, w.a.OtherUserSuspended))
                 try {
                   var i = r
@@ -40917,20 +40963,20 @@ window.__SCRIPTS_LOADED__.i18n &&
               return n
             },
             selectIsUserWithheld: function (e, t) {
-              var n = Y.selectByScreenName(e, t)
+              var n = J.selectByScreenName(e, t)
               return !(!n || !n.withheld_scope)
             },
             selectFetchStatusByScreenName: function (e, t) {
-              var n = Y.selectIdByScreenName(e, t)
-              return n ? Y.selectFetchStatus(e, n) : Y.selectFetchStatus(e, Object(_.a)(t))
+              var n = J.selectIdByScreenName(e, t)
+              return n ? J.selectFetchStatus(e, n) : J.selectFetchStatus(e, Object(_.a)(t))
             },
             selectLoggedInUser: function (e) {
               var t = Object(E.q)(e)
-              return t ? Y.select(e, t) : void 0
+              return t ? J.select(e, t) : void 0
             },
           },
-          Y = o()(o()(o()(o()(o()(o()({}, F), U), B), G), W), K)
-        t.e = d.a.register(Y)
+          J = o()(o()(o()(o()(o()(o()({}, F), U), B), Y), Q), q)
+        t.e = d.a.register(J)
       },
       GKOv: function (e, t, n) {
         'use strict'

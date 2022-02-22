@@ -4459,6 +4459,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Your timeline is the best place to see what’s happening with the people and Topics you care about. Check out our suggested follows to start filling your timeline with Tweets.',
           ),
           a('b34cb956', 'Fill your timeline'),
+          a('j0310b9b', 'Browse Topics'),
           a('i0560231', 'See more Topics'),
           a('g2b8acd4', 'Log in to Twitter'),
           a('bdc9d8a2', 'Login on Twitter'),
@@ -4733,8 +4734,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('cea71013', 'We’re loading your contacts...'),
           a('e4ff75a9', 'Something went wrong. Check your connection and try again.'),
           a('e4f6bd9e', 'Oops, something went wrong. Please try again later.'),
-          a('hc72e1fc', 'Please enter a valid email.'),
-          a('fa69a1ca', 'Reveal password')
+          a('hc72e1fc', 'Please enter a valid email.')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4751,7 +4751,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('aacf5085', 'Hide password'),
+        a('fa69a1ca', 'Reveal password'),
+          a('aacf5085', 'Hide password'),
           a('c52be451', 'Yes, remove'),
           a(
             'i769e50a',
@@ -4990,6 +4991,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j6daea85', 'Your promotion is paused'),
           a('hf9ed10f', function (e) {
             return e.endTimeString + ' · ' + e.endDateString
+          }),
+          a('f42a198d', function (e) {
+            return e.spentBudget + ' of ' + e.totalBudget + ' spent'
           }),
           a('a63a89fe', 'Your promotion is complete'),
           a('j401e4bc', function (e) {
@@ -6009,12 +6013,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e6e16811', 'Square'),
           a('d7e50a66', 'Learn more'),
           a('a35a5b10', 'Followers you know'),
-          a('fc8cd112', 'Not followed by anyone you’re following'),
-          a('gaeb997d', 'More'),
+          a('fc8cd112', 'Not followed by anyone you’re following')
+        a('gaeb997d', 'More'),
           a('f4393d0f', function (e) {
             return 'Attributed to ' + e.name
-          })
-        a('f8e8e32d', 'You'),
+          }),
+          a('f8e8e32d', 'You'),
           a('df6703d2', 'You'),
           a('c20f7e9e', function (e) {
             return n(

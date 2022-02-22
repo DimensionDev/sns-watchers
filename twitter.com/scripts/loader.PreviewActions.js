@@ -50,7 +50,7 @@
         })
       var a = n('ddV6'),
         i = n.n(a),
-        r = (n('uFXj'), n('ERkP')),
+        r = (n('Blm6'), n('uFXj'), n('ERkP')),
         o = n.n(r),
         u = n('qlwE'),
         s = n('rxPX'),
@@ -113,50 +113,42 @@
             d = e.timeToSend,
             c = e.undoPeriod,
             p = e.undoTweet,
-            v = o.a.useState(0),
+            v = o.a.useState(),
             E = i()(v, 2),
             W = E[0],
             x = E[1],
-            _ = o.a.useState(),
+            _ = o.a.useState(!1),
             C = i()(_, 2),
-            D = C[0],
-            R = C[1],
-            j = o.a.useState(!1),
-            k = i()(j, 2),
-            q = k[0],
-            F = k[1]
-          o.a.useEffect(
-            function () {
-              'number' == typeof d && x(Math.round(d - Date.now()))
-            },
-            [d],
-          )
-          var L = (function (e) {
-            var t = o.a.useState(0),
-              n = i()(t, 2),
-              a = n[0],
-              r = n[1],
-              u = o.a.useRef()
-            return (
-              o.a.useEffect(
-                function () {
-                  var t = Date.now()
-                  return (
-                    (u.current = window.requestAnimationFrame(function n() {
-                      var a = Math.min(1, (Date.now() - t) / e)
-                      a < 1 && (r(a), (u.current = window.requestAnimationFrame(n)))
-                    })),
-                    function () {
-                      window.cancelAnimationFrame(u.current)
-                    }
-                  )
-                },
-                [e],
-              ),
-              a
-            )
-          })(W)
-          if (W <= 0 || !W) return null
+            R = C[0],
+            j = C[1],
+            k = o.a.useState(1e3 * parseInt(c, 10)),
+            D = i()(k, 1)[0],
+            q = o.a.useState(parseInt(d, 10) - D),
+            F = (function (e, t) {
+              var n = o.a.useState(0),
+                a = i()(n, 2),
+                r = a[0],
+                u = a[1],
+                s = o.a.useRef()
+              return (
+                o.a.useEffect(
+                  function () {
+                    return (
+                      (s.current = window.requestAnimationFrame(function n() {
+                        var a = Math.min(1, (Date.now() - t) / e)
+                        a < 1 && (u(a), (s.current = window.requestAnimationFrame(n)))
+                      })),
+                      function () {
+                        window.cancelAnimationFrame(s.current)
+                      }
+                    )
+                  },
+                  [t, e],
+                ),
+                r
+              )
+            })(D, i()(q, 1)[0])
+          if (F >= 1) return null
           return 'number' != typeof d
             ? null
             : o.a.createElement(
@@ -164,7 +156,7 @@
                 {
                   onLayout: function (e) {
                     var t, n
-                    R(
+                    x(
                       (null == e ||
                       null === (t = e.nativeEvent) ||
                       void 0 === t ||
@@ -182,9 +174,9 @@
                   o.a.createElement(
                     w.a,
                     { style: I.timerWrapper },
-                    o.a.createElement(b.a, { accessibilityLabel: T, count: L, maxCount: 1 }),
+                    o.a.createElement(b.a, { accessibilityLabel: T, count: F, maxCount: 1 }),
                   ),
-                  !D || D < 470 ? null : o.a.createElement(f.b, { style: I.sendingLabel, weight: 'bold' }, g),
+                  !W || W < 470 ? null : o.a.createElement(f.b, { style: I.sendingLabel, weight: 'bold' }, g),
                 ),
                 o.a.createElement(
                   w.a,
@@ -192,10 +184,10 @@
                   o.a.createElement(
                     y.a,
                     {
-                      disabled: q,
+                      disabled: R,
                       onClick: function () {
                         l(u),
-                          F(!0),
+                          j(!0),
                           n.scribe({
                             element: 'send_now',
                             action: 'send_now',
