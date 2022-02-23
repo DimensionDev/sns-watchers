@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [169],
+  [170],
   {
     'Pc/x': function (e, t, n) {
       'use strict'
@@ -40,8 +40,8 @@
         })(y()(Error))
       l()(g, 'displayName', 'ProxseeApiError')
       var b,
-        P,
-        k = n('epkG'),
+        k,
+        P = n('epkG'),
         _ = n('SrIh'),
         S = n('RqPI'),
         A = 0,
@@ -71,20 +71,20 @@
                 },
               })
             var i = n.httpConfig
-            ;(this.client = new k.a(c()(c()({}, H), i))), (this._authToken = void 0), (this._authPromise = null)
+            ;(this.client = new P.a(c()(c()({}, H), i))), (this._authToken = void 0), (this._authPromise = null)
           }
           return (
             o()(e, [
               {
                 key: 'init',
                 value: function (e) {
-                  P = e
+                  k = e
                 },
               },
               {
                 key: 'initialized',
                 value: function () {
-                  return !!P
+                  return !!k
                 },
               },
               {
@@ -97,7 +97,7 @@
                 key: 'isTwitterAuthenticated',
                 value: function () {
                   if (!this.initialized()) return !1
-                  var e = P.store.getState()
+                  var e = k.store.getState()
                   return Object(S.m)(e)
                 },
               },
@@ -136,7 +136,7 @@
                     ? this.isTwitterAuthenticated()
                       ? this.isLoggedIn()
                         ? Promise.resolve()
-                        : ((this._authPromise = P.api.Auth.authenticatePeriscope()
+                        : ((this._authPromise = k.api.Auth.authenticatePeriscope()
                             .then(function (t) {
                               return e.loginTwitterToken(t.token)
                             })
@@ -186,7 +186,13 @@
                   return this.login().then(function () {
                     var i = n.params,
                       r = Object.assign(I(), n.headers),
-                      a = JSON.stringify({ access_token: e.access_token, cursor: e.cursor, limit: 1e3, since: null })
+                      a = JSON.stringify({
+                        access_token: e.access_token,
+                        cursor: e.cursor,
+                        limit: 1e3,
+                        since: null,
+                        quick_get: !0,
+                      })
                     return t.dispatch({ method: 'POST', host: e.host, path: e.path, headers: r, params: i, data: a })
                   })
                 },
@@ -355,8 +361,8 @@
         m = n('fs1G'),
         g = n('mf9H'),
         b = n('lklz'),
-        P = n('MWbm'),
-        k = n('HT/6'),
+        k = n('MWbm'),
+        P = n('HT/6'),
         _ = n('Zl35'),
         S = n('rHpw')
       function A(e) {
@@ -369,8 +375,8 @@
           p = e.onPlayerApi,
           f = e.onPlayerState,
           v = e.requestedTimecode,
-          P = c.a.useState(null),
-          _ = o()(P, 2),
+          k = c.a.useState(null),
+          _ = o()(k, 2),
           S = _[0],
           A = _[1],
           C = c.a.useRef({ playbackCoordinationEmitter: null, previousPlayerState: null }),
@@ -429,7 +435,7 @@
                 : function () {
                     return t.pause()
                   },
-              c = n && u ? k.a.SPACE : k.a.NORMAL
+              c = n && u ? P.a.SPACE : P.a.NORMAL
             C.current.playbackCoordinationEmitter = (function (e, t) {
               var n = {
                 onAutoPlayRequest: function () {},
@@ -502,7 +508,7 @@
       }
       function T(e) {
         var t = e.playerConfig
-        return c.a.createElement(P.a, { style: I.displayNone }, c.a.createElement(_.b, t))
+        return c.a.createElement(k.a, { style: I.displayNone }, c.a.createElement(_.b, t))
       }
       var C = A,
         w = f(A),

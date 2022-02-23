@@ -220,7 +220,8 @@
         vt = 'periscope',
         yt = 'vine',
         _t = 'vmap',
-        ft = {
+        ft = (((n = {})[yt] = 2), (n[ut] = 3), (n[_t] = 1), (n[ht] = 1), (n[dt] = 1), (n[vt] = 5), (n[lt] = 1), n),
+        mt = {
           event: 'url',
           go_to: 'url',
           image: 'url',
@@ -232,79 +233,79 @@
           watch: 'url',
           watch_now: 'watch',
         },
-        mt = 1,
-        gt = 2,
-        bt = 3,
-        Tt = 4,
-        Et = 5,
-        Pt = 6,
-        Mt = 7,
-        kt = 8
-      function wt(t) {
-        return It(t, t.source.trackId)
-      }
+        gt = 1,
+        bt = 2,
+        Tt = 3,
+        Et = 4,
+        Pt = 5,
+        Mt = 6,
+        kt = 7,
+        wt = 8
       function St(t) {
-        return It(t, t.currentTrackId)
+        return At(t, t.source.trackId)
       }
-      function It(t, e) {
+      function It(t) {
+        return At(t, t.currentTrackId)
+      }
+      function At(t, e) {
         return t.tracks.find(function (t) {
           return e === t.id
         })
       }
-      function At(t) {
+      function Ct(t) {
         return t.tracks.find(function (t) {
           return ot === t.displayType
         })
       }
-      function Ct(t) {
+      function Lt(t) {
         return Boolean(t) && t.isPlaying && !t.isSeeking && !t.isMuted
       }
-      function Lt(t) {
+      function Vt(t) {
         var e
         switch (t) {
           case 0.25:
-            e = Et
-            break
-          case 0.5:
-            e = mt
-            break
-          case 0.75:
             e = Pt
             break
-          case 1.25:
+          case 0.5:
+            e = gt
+            break
+          case 0.75:
             e = Mt
             break
-          case 1.5:
-            e = bt
-            break
-          case 1.75:
+          case 1.25:
             e = kt
             break
-          case 2:
+          case 1.5:
             e = Tt
             break
+          case 1.75:
+            e = wt
+            break
+          case 2:
+            e = Et
+            break
           default:
-            e = gt
+            e = bt
         }
         return e
       }
-      var Vt =
-          (((n = {})[st] = 'creativeView'),
-          (n[R] = 'firstQuartile'),
-          (n[H] = 'midpoint'),
-          (n[U] = 'thirdQuartile'),
-          (n[Y] = 'complete'),
-          (n[x] = 'resume'),
-          (n[F] = 'pause'),
-          (n[J] = 'rewind'),
-          (n[E] = 'adError'),
-          n),
-        Nt = (function () {
+      var Nt =
+          (((a = {})[st] = 'creativeView'),
+          (a[R] = 'firstQuartile'),
+          (a[H] = 'midpoint'),
+          (a[U] = 'thirdQuartile'),
+          (a[Y] = 'complete'),
+          (a[x] = 'resume'),
+          (a[F] = 'pause'),
+          (a[J] = 'rewind'),
+          (a[E] = 'adError'),
+          a),
+        Wt = (function () {
           function t(t) {
             var e = this
-            Object.keys(Vt).forEach(function (i) {
+            Object.keys(Nt).forEach(function (i) {
               t.on(i, function (t) {
-                e.fireBeacon(Vt[i], t)
+                e.fireBeacon(Nt[i], t)
               })
             }),
               t.on(q, this.onPlaybackStart.bind(this))
@@ -315,7 +316,7 @@
               this.fireBeacon('start', t), this.fireBeacon('adImpression', t)
             }),
             (e.fireBeacon = function (t, e) {
-              var i = St(e)
+              var i = It(e)
               if (void 0 !== i && void 0 !== i.beacons && void 0 !== i.beacons[t])
                 for (var n, a = y(i.beacons[t]); !(n = a()).done; ) {
                   var s = n.value
@@ -325,7 +326,7 @@
             t
           )
         })(),
-        Wt = (function () {
+        Ot = (function () {
           function t(t) {
             ;(this.analytics = t), this.analytics.on(tt, this.onTickEvent.bind(this))
           }
@@ -340,7 +341,7 @@
             t
           )
         })(),
-        Ot = (function () {
+        Dt = (function () {
           function t(t) {
             ;(this.analytics = t),
               (this.hasFiredOnTrackMap = {}),
@@ -354,7 +355,7 @@
             t
           )
         })(),
-        Dt = (function () {
+        Ft = (function () {
           function t(t) {
             ;(this.analytics = t),
               (this.hasStarted = !1),
@@ -389,7 +390,7 @@
             t
           )
         })(),
-        Ft = (function () {
+        xt = (function () {
           function t(t) {
             ;(this.bufferingCount = 0),
               (this.bufferingDurationMs = 0),
@@ -407,7 +408,7 @@
               this.reset(t)
             }),
             (e.onTickEvent = function (t) {
-              var e = St(t)
+              var e = It(t)
               void 0 !== e &&
                 (e.isBuffering && null == this.bufferingBeginTimeMs
                   ? ((this.bufferingBeginTimeMs = Date.now()), this.bufferingCount++)
@@ -417,7 +418,7 @@
                     (this.bufferingBeginTimeMs = void 0)))
             }),
             (e.getBufferTime = function (t) {
-              var e = St(t)
+              var e = It(t)
               if (void 0 !== e) {
                 var i = this.bufferingDurationMs
                 return (
@@ -426,7 +427,7 @@
               }
             }),
             (e.reset = function (t) {
-              var e = St(t)
+              var e = It(t)
               void 0 !== e &&
                 ((this.bufferingBeginTimeMs = e.isBuffering ? Date.now() : void 0),
                 (this.bufferingCount = e.isBuffering ? 1 : 0),
@@ -435,17 +436,17 @@
             t
           )
         })()
-      function xt(t) {
+      function Bt(t) {
         return 'number' != typeof t || Number.isNaN(t) || t === 1 / 0 || t === -1 / 0
           ? 'string' == typeof t
             ? t
             : void 0
           : t.toString()
       }
-      var Bt = (function () {
+      var Rt = (function () {
         function t(t) {
           ;(this.analytics = t),
-            (this.bufferingDurationListener = new Ft(t)),
+            (this.bufferingDurationListener = new xt(t)),
             (this.lastKnownDataUsageBytes = 0),
             (this.audibleDuration = 0),
             (this.bitrateHistory = []),
@@ -464,7 +465,7 @@
         var e = t.prototype
         return (
           (e.onTickEvent = function (t) {
-            var e = St(t)
+            var e = It(t)
             if (void 0 !== e) {
               if (
                 (this.updateTimesOnTick(e, t),
@@ -486,7 +487,7 @@
             this.startPolling(t), (this.lastKnownPlayerState = t), (this.hasPlaybackStarted = !0)
           }),
           (e.onTrackFinishedEvent = function (t) {
-            ;(this.hasPlaybackStarted = !1), void 0 !== St(t) && (this.stopPolling(), (this.lastKnownPlayerState = t))
+            ;(this.hasPlaybackStarted = !1), void 0 !== It(t) && (this.stopPolling(), (this.lastKnownPlayerState = t))
           }),
           (e.onErrorEvent = function (t, e) {
             e &&
@@ -514,12 +515,12 @@
                 t.contentType === lt || t.contentType === dt || t.contentType === vt
                   ? t.absoluteTimeMs
                   : t.currentTimeMs) &&
-              (Ct(e) && void 0 !== this.lastTimeMs && (this.audibleDuration += i - this.lastTimeMs),
+              (Lt(e) && void 0 !== this.lastTimeMs && (this.audibleDuration += i - this.lastTimeMs),
               (this.lastTimeMs = i),
               void 0 === this.startTimeMs && (this.startTimeMs = i))
           }),
           (e.startPolling = function (t) {
-            var e = wt(t)
+            var e = St(t)
             void 0 === this.intervalId &&
               void 0 !== e &&
               e.contentType !== yt &&
@@ -546,7 +547,7 @@
           (e.onHeartbeat = function () {
             var t = this.lastKnownPlayerState
             if (t) {
-              var e = St(t),
+              var e = It(t),
                 i = this.getProgramDateTimeMs()
               if (void 0 !== i && void 0 !== e) {
                 var n = e.currentBitrate ? { sampled_bitrate: e.currentBitrate } : {},
@@ -570,20 +571,20 @@
                     o,
                   ),
                   h = {
-                    buffering_duration_millis: xt(l),
+                    buffering_duration_millis: Bt(l),
                     buffering_count: c,
                     percent_in_view: u,
                     sampled_bits_per_second: e.currentBitrate,
-                    data_usage_bytes: xt(o.data_usage_bytes),
-                    start_program_date_time_millis: xt(i.start_program_date_time_millis),
-                    end_program_date_time_millis: xt(i.end_program_date_time_millis),
-                    audible_duration_millis: xt(i.audible_duration_millis),
-                    bandwidth_estimate_bps: xt(t.bandwidthEstimateBps),
+                    data_usage_bytes: Bt(o.data_usage_bytes),
+                    start_program_date_time_millis: Bt(i.start_program_date_time_millis),
+                    end_program_date_time_millis: Bt(i.end_program_date_time_millis),
+                    audible_duration_millis: Bt(i.audible_duration_millis),
+                    bandwidth_estimate_bps: Bt(t.bandwidthEstimateBps),
                     bitrate_metrics:
                       ((s = this.bitrateHistory),
-                      (r = Ht(s)),
+                      (r = Ut(s)),
                       r && { min_bps: Math.round(r.min), max_bps: Math.round(r.max), avg_bps: Math.round(r.avg) }),
-                    live_or_non_live_heartbeat_metrics: Rt(e.isLive, this.latencyHistory),
+                    live_or_non_live_heartbeat_metrics: Ht(e.isLive, this.latencyHistory),
                   }
                 this.analytics.emit(k, t, d, h)
               }
@@ -609,8 +610,8 @@
           t
         )
       })()
-      function Rt(t, e) {
-        var i = Ht(e)
+      function Ht(t, e) {
+        var i = Ut(e)
         return t
           ? {
               live_heartbeat_metrics: {
@@ -623,7 +624,7 @@
             }
           : { non_live_heartbeat_metrics: {} }
       }
-      function Ht(t) {
+      function Ut(t) {
         if (t && t.length) {
           var e = (function (t) {
             if (!t || 0 === t.length) return [Math.min(), Math.max()]
@@ -653,7 +654,7 @@
           }
         }
       }
-      var Ut = (function () {
+      var Kt = (function () {
           function t(t) {
             ;(this.analytics = t),
               (this.hasFiredOnTrackMap = {}),
@@ -668,25 +669,25 @@
                 ((this.hasFiredOnTrackMap[t.currentTrackId] = !0), this.analytics.emit(I, t))
             }),
             (e.onTrackFinishedEvent = function (t) {
-              var e = St(t)
+              var e = It(t)
               e && (e.shouldLoop || (this.hasFiredOnTrackMap[t.currentTrackId] = !1))
             }),
             t
           )
         })(),
-        Kt = (function () {
+        Yt = (function () {
           function t(t) {
             ;(this.analytics = t), this.analytics.on(et, this.onTrackFinishedEvent.bind(this))
           }
           return (
             (t.prototype.onTrackFinishedEvent = function (t) {
-              var e = St(t)
+              var e = It(t)
               void 0 !== e && e.shouldLoop && this.analytics.emit(C, t)
             }),
             t
           )
         })(),
-        Yt = {
+        Gt = {
           home: 'HomeTimeline',
           list: 'Lists',
           live_broadcast: 'BroadcastPage',
@@ -697,29 +698,29 @@
           profile: 'UserTimeline',
           search: 'Search',
         },
-        Gt = function (t) {
+        jt = function (t) {
           return '/api/v2/' + t
         }
-      function jt(t, e, i, n) {
-        return { start: { method: t, path: Gt(e) }, ping: { method: t, path: Gt(i) }, stop: { method: t, path: Gt(n) } }
+      function zt(t, e, i, n) {
+        return { start: { method: t, path: jt(e) }, ping: { method: t, path: jt(i) }, stop: { method: t, path: jt(n) } }
       }
-      var zt,
-        qt = {
+      var qt,
+        Xt = {
           public: {
-            live: jt('GET', 'startPublic', 'pingPublic', 'stopPublic'),
-            replay: jt('GET', 'replayViewedPublic', 'pingReplayViewedPublic', 'endReplayViewedPublic'),
+            live: zt('GET', 'startPublic', 'pingPublic', 'stopPublic'),
+            replay: zt('GET', 'replayViewedPublic', 'pingReplayViewedPublic', 'endReplayViewedPublic'),
           },
           auth: {
-            live: jt('POST', 'startWatching', 'pingWatching', 'stopWatching'),
-            replay: jt('POST', 'replayViewed', 'pingReplayViewed', 'endReplayViewed'),
+            live: zt('POST', 'startWatching', 'pingWatching', 'stopWatching'),
+            replay: zt('POST', 'replayViewed', 'pingReplayViewed', 'endReplayViewed'),
           },
         },
-        Xt = (function () {
+        Jt = (function () {
           function t(t, e) {
             if (
               ((this.httpClient = t),
               (this.authToken = null == e ? void 0 : e.periscopeAuthToken),
-              (this.lifecycles = this.authToken ? qt.auth : qt.public),
+              (this.lifecycles = this.authToken ? Xt.auth : Xt.public),
               (null == e ? void 0 : e.scribeContext) && (null == e ? void 0 : e.periscopeComponent))
             ) {
               var i = e.scribeContext,
@@ -731,12 +732,12 @@
           return (
             (e.getPageContext = function (t) {
               var e = t.page
-              return 'permalink_overlay' === t.section ? 'TweetCard' : Yt[e] || ''
+              return 'permalink_overlay' === t.section ? 'TweetCard' : Gt[e] || ''
             }),
             (e.call = function (t, e) {
               var i = Date.now(),
                 n = {
-                  'X-Idempotence': (zt = i <= zt ? zt + 1 : i),
+                  'X-Idempotence': (qt = i <= qt ? qt + 1 : i),
                   'X-Attempt': 1,
                   'X-Periscope-User-Agent': 'Twitter/video-analytics',
                   'content-type': 'application/json',
@@ -793,8 +794,8 @@
             t
           )
         })(),
-        Jt = 3e3
-      var Zt = (function () {
+        Zt = 3e3
+      var Qt = (function () {
           function t(t) {
             ;(this.api = t),
               (this.handleStartWatching = this.handleStartWatching.bind(this)),
@@ -809,7 +810,7 @@
               this.session = t
             }),
             (e.setStartWatchingTimer = function () {
-              this.startWatchingTimer = setTimeout(this.handleStartWatching, Jt)
+              this.startWatchingTimer = setTimeout(this.handleStartWatching, Zt)
             }),
             (e.clearStartWatchingTimer = function () {
               this.startWatchingTimer && clearTimeout(this.startWatchingTimer)
@@ -867,13 +868,13 @@
             t
           )
         })(),
-        Qt = [g, x, F, et, $],
-        $t = (function () {
+        $t = [g, x, F, et, $],
+        te = (function () {
           function t(t, e) {
             var i = this
             ;(this.analytics = t),
               (this.lifecycleController = e),
-              Qt.map(function (t) {
+              $t.map(function (t) {
                 return i.analytics.on(t, i.possiblyHandleEvent.bind(i, t))
               })
           }
@@ -881,7 +882,7 @@
           return (
             (e.possiblyHandleEvent = function (t, e) {
               if (this.shouldSendPeriscopeAnalytics(e)) {
-                var i = St(e)
+                var i = It(e)
                 switch (t) {
                   case g:
                     this.updateLifecycleToken(e), this.updateReplayState(!i.isLive)
@@ -901,11 +902,11 @@
               }
             }),
             (e.shouldSendPeriscopeAnalytics = function (t) {
-              var e = St(t)
+              var e = It(t)
               return void 0 !== e && (e.contentType === vt || e.contentType === lt)
             }),
             (e.getLifecycleToken = function (t) {
-              return St(t).lifecycleToken
+              return It(t).lifecycleToken
             }),
             (e.updateLifecycleToken = function (t) {
               var e = this.getLifecycleToken(t)
@@ -929,7 +930,7 @@
             t
           )
         })(),
-        te = (function () {
+        ee = (function () {
           function t(t) {
             ;(this.analytics = t),
               (this.lapseMap = {}),
@@ -941,26 +942,26 @@
           var e = t.prototype
           return (
             (e.onTrackFinishedEvent = function (t) {
-              var e = St(t)
+              var e = It(t)
               if (void 0 !== e) {
                 var i = this.lapseMap[e.id]
                 if (void 0 !== i) {
                   i.timePlayedToMs = 0
-                  var n = wt(t)
+                  var n = St(t)
                   n && n.contentType !== ut && !e.shouldLoop && (this.emit(i, t), (i.viewFired = !1))
                 }
               }
             }),
             (e.onAdSkipEvent = function (t) {
               this.onTickEvent(t)
-              var e = St(t)
+              var e = It(t)
               if (void 0 !== e) {
                 var i = this.lapseMap[e.id]
                 this.emit(i, t)
               }
             }),
             (e.onVideoViewEvent = function (t) {
-              var e = St(t)
+              var e = It(t)
               if (void 0 !== e) {
                 var i = this.lapseMap[e.id]
                 void 0 === i && ((i = this.initializeLapseMapForTrack(e)), (this.lapseMap[e.id] = i)),
@@ -968,7 +969,7 @@
               }
             }),
             (e.onTickEvent = function (t) {
-              var e = St(t)
+              var e = It(t)
               if (void 0 !== e) {
                 var i = this.lapseMap[e.id]
                 void 0 === i && ((i = this.initializeLapseMapForTrack(e)), (this.lapseMap[e.id] = i)),
@@ -988,7 +989,7 @@
               t.timePlayedMs > 1e4 && this.emit(t, e)
             }),
             (e.emit = function (t, e) {
-              var i = wt(e),
+              var i = St(e),
                 n = t.viewFired,
                 a = t.timePlayedMs
               n &&
@@ -1000,7 +1001,7 @@
             t
           )
         })(),
-        ee = function (t) {
+        ie = function (t) {
           return (
             (e = 'AD_CTA_TO_ENGAGEMENT_MAPPING_ERROR'),
             ((i = new Error('Unable to map CTA type to engagement type for: ' + t)).name = e),
@@ -1008,7 +1009,7 @@
           )
           var e, i
         },
-        ie = (function () {
+        ne = (function () {
           function t() {}
           return (
             (t.set = function (e) {
@@ -1017,31 +1018,36 @@
             t
           )
         })()
-      h()(ie, 'report', function (t) {})
-      var ne =
-          (((a = {})[q] = 'playback_start'),
-          (a[R] = 'playback_25'),
-          (a[H] = 'playback_50'),
-          (a[U] = 'playback_75'),
-          (a[K] = 'playback_95'),
-          (a[Y] = 'playback_complete'),
-          (a[V] = 'mrc_view'),
-          (a[M] = 'groupm_view'),
-          (a[W] = '1sec_view'),
-          (a[O] = '6sec_view'),
-          (a[D] = 'short_form_complete'),
-          (a[st] = 'view'),
-          (a[B] = 'play_from_tap'),
-          (a[rt] = 'view_threshold'),
-          a),
-        ae = (function () {
+      h()(ne, 'report', function (t) {})
+      var ae =
+          (((s = {})[q] = 'playback_start'),
+          (s[R] = 'playback_25'),
+          (s[H] = 'playback_50'),
+          (s[U] = 'playback_75'),
+          (s[K] = 'playback_95'),
+          (s[Y] = 'playback_complete'),
+          (s[V] = 'mrc_view'),
+          (s[M] = 'groupm_view'),
+          (s[W] = '1sec_view'),
+          (s[O] = '6sec_view'),
+          (s[D] = 'short_form_complete'),
+          (s[st] = 'view'),
+          (s[B] = 'play_from_tap'),
+          (s[rt] = 'view_threshold'),
+          s),
+        se = (function () {
           function t(t, e) {
             var i = this
             ;(this.promotedLogHandler = e),
-              Object.keys(ne).forEach(function (e) {
+              Object.keys(ae).forEach(function (e) {
                 t.on(e, function (t, n) {
-                  var a = St(t)
-                  void 0 !== a && i.log(i.buildEventName(e, a), t, n)
+                  var a = It(t)
+                  if (void 0 !== a) {
+                    var s = a.displayType === ot
+                    i.log(i.buildEventName(e, a), t, n, {
+                      video_details: { is_preroll_video: s, video_type: ft[a.contentType] },
+                    })
+                  }
                 })
               }),
               t.on(q, this.logImpression.bind(this)),
@@ -1051,12 +1057,12 @@
           var e = t.prototype
           return (
             (e.buildEventName = function (t, e) {
-              var i = ne[t]
+              var i = ae[t]
               return 'video_' + e.displayType + '_' + i
             }),
             (e.log = function (t, e, i, n) {
               void 0 === i && (i = {})
-              var a = St(e),
+              var a = It(e),
                 s = this.getPromotedEventData(e, a)
               if (void 0 !== s.impression_id) {
                 var r = this.getAmplifyDetailsData(e, a, i),
@@ -1067,14 +1073,14 @@
               }
             }),
             (e.logImpression = function (t) {
-              var e = St(t)
+              var e = It(t)
               this.isPromotedTrack(t, e) && this.log('impression', t)
             }),
             (e.onCtaClickEvent = function (t) {
-              var e = St(t),
+              var e = It(t),
                 i = null == e ? void 0 : e.cta,
-                n = ft[null == i ? void 0 : i.type]
-              if (!n) return ie.report(ee(null == i ? void 0 : i.type))
+                n = mt[null == i ? void 0 : i.type]
+              if (!n) return ne.report(ie(null == i ? void 0 : i.type))
               e.displayType === ot
                 ? this.log('video_' + e.displayType + '_cta_' + n + '_click', t)
                 : this.log('video_cta_' + n + '_click', t)
@@ -1090,14 +1096,15 @@
               return { impression_id: e.impressionId || t.impressionId, earned: 'earned' === i }
             }),
             (e.getAmplifyDetailsData = function (t, e, i) {
-              var n = wt(t),
-                a = At(t) || {}
+              var n = St(t),
+                a = Ct(t) || {}
               return Object.assign(
                 {
                   content_id: n.contentId,
                   dynamic_preroll_type: a.dynamicPrerollType,
                   preroll_uuid: a.contentId,
                   preroll_owner_id: a.publisherId,
+                  video_owner_id: e.publisherId,
                   video_uuid: e.contentId,
                   video_type: e.displayType === ct ? 'video' : 'ad',
                   video_is_muted: t.isMuted,
@@ -1109,13 +1116,13 @@
             t
           )
         })(),
-        se = (function () {
+        re = (function () {
           function t(t) {
             ;(this.analytics = t), this.analytics.on(tt, this.onTickEvent.bind(this))
           }
           return (
             (t.prototype.onTickEvent = function (t) {
-              var e = St(t)
+              var e = It(t)
               void 0 !== e &&
                 (t.isSeeking && void 0 === this.seekingStartTime
                   ? (this.seekingStartTime = e.currentTimeMs)
@@ -1127,51 +1134,51 @@
             t
           )
         })(),
-        re =
-          (((s = {})[st] = 'video_view'),
-          (s[B] = 'play_from_tap'),
-          (s[rt] = 'view_threshold'),
-          (s[L] = 'video_mrc_audible_view'),
-          (s[V] = 'video_mrc_view'),
-          (s[O] = 'video_6sec_view'),
-          (s[D] = 'video_short_form_complete'),
-          (s[q] = 'playback_start'),
-          (s[R] = 'playback_25'),
-          (s[H] = 'playback_50'),
-          (s[U] = 'playback_75'),
-          (s[K] = 'playback_95'),
-          (s[Y] = 'playback_complete'),
-          (s[I] = 'intent_to_play'),
-          (s[x] = 'play'),
-          (s[F] = 'pause'),
-          (s[X] = 'replay'),
-          (s[C] = 'loop'),
-          (s[N] = 'mute'),
-          (s[it] = 'unmute'),
-          (s[P] = 'full_screen'),
-          (s[Z] = 'shrink'),
-          (s[j] = 'playback_lapse'),
-          (s[G] = 'error'),
-          (s[Q] = 'playback_startup_error'),
-          (s[at] = 'video_quality_view'),
-          (s[f] = 'video_ad_skip'),
-          s),
-        oe = ['playback_lapse', 'video_1sec_view', 'shrink', 'full_screen'].reduce(function (t, e) {
+        oe =
+          (((r = {})[st] = 'video_view'),
+          (r[B] = 'play_from_tap'),
+          (r[rt] = 'view_threshold'),
+          (r[L] = 'video_mrc_audible_view'),
+          (r[V] = 'video_mrc_view'),
+          (r[O] = 'video_6sec_view'),
+          (r[D] = 'video_short_form_complete'),
+          (r[q] = 'playback_start'),
+          (r[R] = 'playback_25'),
+          (r[H] = 'playback_50'),
+          (r[U] = 'playback_75'),
+          (r[K] = 'playback_95'),
+          (r[Y] = 'playback_complete'),
+          (r[I] = 'intent_to_play'),
+          (r[x] = 'play'),
+          (r[F] = 'pause'),
+          (r[X] = 'replay'),
+          (r[C] = 'loop'),
+          (r[N] = 'mute'),
+          (r[it] = 'unmute'),
+          (r[P] = 'full_screen'),
+          (r[Z] = 'shrink'),
+          (r[j] = 'playback_lapse'),
+          (r[G] = 'error'),
+          (r[Q] = 'playback_startup_error'),
+          (r[at] = 'video_quality_view'),
+          (r[f] = 'video_ad_skip'),
+          r),
+        ce = ['playback_lapse', 'video_1sec_view', 'shrink', 'full_screen'].reduce(function (t, e) {
           return (t[e] = !0), t
         }, {}),
-        ce = 'tweet',
-        le = 'client_event',
-        ue = 'live_video_heartbeat_event',
-        de = 7,
-        he = 13,
-        pe = 16,
-        ve = 26,
-        ye = 28,
-        _e = 1,
-        fe = 2,
-        me = 1,
-        ge = 2,
-        be = [
+        le = 'tweet',
+        ue = 'client_event',
+        de = 'live_video_heartbeat_event',
+        he = 7,
+        pe = 13,
+        ve = 16,
+        ye = 26,
+        _e = 28,
+        fe = 1,
+        me = 2,
+        ge = 1,
+        be = 2,
+        Te = [
           'appplayer',
           'poll2choice_video',
           'poll3choice_video',
@@ -1180,16 +1187,16 @@
           'promo_video_website',
           'video_direct_message',
         ],
-        Te = /^([0-9]{1,2})_([0-9]+)$/,
-        Ee = (function () {
+        Ee = /^([0-9]{1,2})_([0-9]+)$/,
+        Pe = (function () {
           function t(t, e, i) {
             var n = this
             ;(this.scribeHandler = e),
               (this.context = i || {}),
-              (this.isAdFormatsCard = -1 !== be.indexOf(this.context.cardType)),
-              Object.keys(re).forEach(function (e) {
+              (this.isAdFormatsCard = -1 !== Te.indexOf(this.context.cardType)),
+              Object.keys(oe).forEach(function (e) {
                 t.on(e, function (t, i, a) {
-                  n.scribe(re[e], t, i, a)
+                  n.scribe(oe[e], t, i, a)
                 })
               }),
               t.on(b, this.onCtaClickEvent.bind(this)),
@@ -1203,35 +1210,35 @@
             (e.onCaptionsToggledEvent = function (t, e) {
               var i = e ? 'enable' : 'disable',
                 n = { page: 'settings', section: 'captions', element: 'display_audio_transcriptions', action: i }
-              this.scribe(i, t, {}, {}, le, n)
+              this.scribe(i, t, {}, {}, ue, n)
             }),
             (e.onCtaClickEvent = function (t) {
-              var e = St(t).cta,
-                i = ft[null == e ? void 0 : e.type]
-              if (!i) return ie.report(ee(null == e ? void 0 : e.type))
+              var e = It(t).cta,
+                i = mt[null == e ? void 0 : e.type]
+              if (!i) return ne.report(ie(null == e ? void 0 : e.type))
               var n =
                 null != (null == e ? void 0 : e.click_tracking_embed_details)
                   ? { click_tracking_embed_details: null == e ? void 0 : e.click_tracking_embed_details }
                   : {}
-              this.scribe('cta_' + i + '_click', t, {}, {}, le, null, n)
+              this.scribe('cta_' + i + '_click', t, {}, {}, ue, null, n)
             }),
             (e.onCtaImpressionEvent = function (t) {
-              var e = St(t).cta,
-                i = ft[null == e ? void 0 : e.type]
-              if (!i) return ie.report(ee(null == e ? void 0 : e.type))
+              var e = It(t).cta,
+                i = mt[null == e ? void 0 : e.type]
+              if (!i) return ne.report(ie(null == e ? void 0 : e.type))
               this.scribe('cta_' + i + '_impression', t)
             }),
             (e.onHeartbeatEvent = function (t, e, i) {
-              var n = wt(t)
+              var n = St(t)
               if (void 0 !== n) {
                 var a
                 switch (n.contentType) {
                   case dt:
                   case lt:
-                    a = ue
+                    a = de
                     break
                   default:
-                    a = le
+                    a = ue
                 }
                 this.scribe('heartbeat', t, e, i, a)
               }
@@ -1239,20 +1246,20 @@
             (e.onPlaybackSpeedChangeEvent = function (t, e) {
               var i = e.newSpeed,
                 n = e.oldSpeed,
-                a = { newSpeed: Lt(i), oldSpeed: Lt(n) }
+                a = { newSpeed: Vt(i), oldSpeed: Vt(n) }
               this.scribe('playback_speed_change', t, {}, a)
             }),
             (e.scribe = function (t, e, i, n, a, s, r) {
               void 0 === i && (i = {}),
                 void 0 === n && (n = {}),
-                void 0 === a && (a = le),
+                void 0 === a && (a = ue),
                 void 0 === s && (s = null),
                 void 0 === r && (r = {})
               var o,
                 c,
-                l = wt(e) || {},
-                u = St(e) || {},
-                d = At(e) || {},
+                l = St(e) || {},
+                u = It(e) || {},
+                d = Ct(e) || {},
                 h = e.session || {},
                 p =
                   (e.features || {}).isLiveTimecodeEnabled && u.requestedTimecode > 0
@@ -1263,21 +1270,21 @@
                   media_client_event_type: ((c = {}), (c[t] = n), c),
                   session_state: {
                     session_id: h.id,
-                    content_video_identifier: Me(this.getContentIdentifier(l), this.context.scribeContext),
+                    content_video_identifier: ke(this.getContentIdentifier(l), this.context.scribeContext),
                     video_ads_passthrough_data: e.videoAnalyticsScribePassthrough,
                     live_event_identifier: this.getLiveEventIdentifier(e, l.contentType),
                     tweet_id: this.getTweetId(e.source, l.contentType),
                   },
                   playing_media_state: {
-                    video_type: u.displayType === ct ? fe : _e,
+                    video_type: u.displayType === ct ? me : fe,
                     media_asset_url: this.getVariantUrl(u),
-                    media_timecode_millis: xt(p),
+                    media_timecode_millis: Bt(p),
                     media_metadata: {
                       broadcast_id: u.broadcastId,
-                      twitter_publisher_id: xt(u.publisherId),
-                      publisher_identifier: ke(u.publisherId, u.periscopePublisherId, this.context.scribeContext),
+                      twitter_publisher_id: Bt(u.publisherId),
+                      publisher_identifier: we(u.publisherId, u.periscopePublisherId, this.context.scribeContext),
                     },
-                    broadcast_media_state: we(u.contentType, u.isLive),
+                    broadcast_media_state: Se(u.contentType, u.isLive),
                   },
                   player_state: { is_muted: e.isMuted },
                 })
@@ -1334,7 +1341,7 @@
               }
             }),
             (e.parseMediaKeyString = function (t) {
-              var e = Te.exec(t) || [],
+              var e = Ee.exec(t) || [],
                 i = e[1],
                 n = e[2],
                 a = +i
@@ -1349,18 +1356,18 @@
             (e.getMediaEntityCategoryUsingPlaybackUrl = function (t) {
               var e = this.getVariantUrl(t)
               if (e) {
-                if (-1 !== e.indexOf('amplify_video')) return he
-                if (-1 !== e.indexOf('ext_tw_video')) return de
+                if (-1 !== e.indexOf('amplify_video')) return pe
+                if (-1 !== e.indexOf('ext_tw_video')) return he
               }
             }),
             (e.defaultMediaCategory = function (t) {
               switch (t.contentType) {
                 case ut:
-                  return pe
-                case dt:
                   return ve
-                case lt:
+                case dt:
                   return ye
+                case lt:
+                  return _e
                 case ht:
                   return this.getMediaEntityCategoryUsingPlaybackUrl(t)
                 default:
@@ -1375,7 +1382,7 @@
                 : void 0
             }),
             (e.getTweetId = function (t, e) {
-              return e === lt || e === dt ? t.tweetId : t.type === ce ? t.id : void 0
+              return e === lt || e === dt ? t.tweetId : t.type === le ? t.id : void 0
             }),
             (e.getScribeElement = function (t) {
               switch (t.contentType) {
@@ -1401,7 +1408,7 @@
               var i = this.context.baseScribeItem
               return (
                 i ||
-                (t.type === ce
+                (t.type === le
                   ? { id: t.id, item_type: '0' }
                   : t.tweetId
                   ? { id: t.tweetId, item_type: '0' }
@@ -1433,32 +1440,32 @@
               return e && e.src
             }),
             (e.isActionSupportedInClientMediaEvent = function (t) {
-              return !oe[t]
+              return !ce[t]
             }),
             t
           )
         })()
-      function Pe(t) {
+      function Me(t) {
         return t && 'messages' === t.page
       }
-      function Me(t, e) {
-        return Pe(e) ? { scrubbed_identifier: {} } : t
+      function ke(t, e) {
+        return Me(e) ? { scrubbed_identifier: {} } : t
       }
-      function ke(t, e, i) {
-        return Pe(i)
+      function we(t, e, i) {
+        return Me(i)
           ? { scrubbed_publisher_identifier: {} }
           : t && e
-          ? { twitter_periscope_publisher_identifier: { twitter_id: xt(t), periscope_id: e } }
+          ? { twitter_periscope_publisher_identifier: { twitter_id: Bt(t), periscope_id: e } }
           : t
-          ? { twitter_publisher_identifier: { id: xt(t) } }
+          ? { twitter_publisher_identifier: { id: Bt(t) } }
           : e
           ? { periscope_publisher_identifier: { id: e } }
           : { unknown_publisher_identifier: {} }
       }
-      function we(t, e) {
-        if (t === lt || t === dt || t === vt) return { broadcast_state: e ? me : ge }
+      function Se(t, e) {
+        if (t === lt || t === dt || t === vt) return { broadcast_state: e ? ge : be }
       }
-      var Se = (function () {
+      var Ie = (function () {
           function t(t) {
             ;(this.analytics = t),
               this.analytics.on(X, this.onReplayEvent.bind(this)),
@@ -1485,29 +1492,29 @@
             t
           )
         })(),
-        Ie = [
+        Ae = [
           { progress: 0.25, event: R },
           { progress: 0.5, event: H },
           { progress: 0.75, event: U },
           { progress: 0.95, event: K },
           { progress: 1, event: Y },
         ],
-        Ae = (function () {
+        Ce = (function () {
           function t(t) {
             ;(this.analytics = t),
               (this.eventMap = {}),
-              (this.playbackLatencyListener = new Se(t)),
+              (this.playbackLatencyListener = new Ie(t)),
               this.analytics.on(et, this.onTrackFinishedEvent.bind(this)),
               this.analytics.on(tt, this.onTickEvent.bind(this))
           }
           var e = t.prototype
           return (
             (e.onTrackFinishedEvent = function (t) {
-              var e = St(t)
+              var e = It(t)
               void 0 !== e && (e.shouldLoop || (this.eventMap[t.currentTrackId] = {}))
             }),
             (e.onTickEvent = function (t) {
-              var e = St(t)
+              var e = It(t)
               if (void 0 !== e && e.durationMs) {
                 var i = this.eventMap[e.id]
                 void 0 === i && ((i = {}), (this.eventMap[e.id] = i)), this.checkAllTentpoles(e, i, t)
@@ -1524,7 +1531,7 @@
             }),
             (e.checkProgressTentpoles = function (t, e, i, n) {
               var a = this
-              Ie.forEach(function (s) {
+              Ae.forEach(function (s) {
                 var r = s.progress * t
                 e >= r - 1e3 && e <= r + 1e3 && a.emitOnce(s.event, i, n)
               })
@@ -1535,8 +1542,7 @@
             t
           )
         })(),
-        Ce = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100],
-        Le = (((r = {})[yt] = 2), (r[ut] = 3), (r[_t] = 1), (r[ht] = 1), (r[dt] = 1), (r[vt] = 5), (r[lt] = 1), r),
+        Le = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100],
         Ve = (function () {
           function t(t) {
             ;(this.analytics = t),
@@ -1551,22 +1557,22 @@
           var e = t.prototype
           return (
             (e.onTickEvent = function (t) {
-              var e = St(t)
+              var e = It(t)
               if (void 0 !== e) {
                 var i = this.getOrCreateNewSessionDataForTrack(e, t)
                 t.isSeeking ? (i.currentTimeMs = e.currentTimeMs) : this.updateViewData(e, i, t)
               }
             }),
             (e.onFullscreenEvent = function (t) {
-              var e = St(t)
+              var e = It(t)
               void 0 !== e && (this.getOrCreateNewSessionDataForTrack(e, t).isFullscreenMode = !0)
             }),
             (e.onShrinkEvent = function (t) {
-              var e = St(t)
+              var e = It(t)
               void 0 !== e && (this.getOrCreateNewSessionDataForTrack(e, t).isFullscreenMode = !1)
             }),
             (e.onTrackFinishedEvent = function (t) {
-              var e = St(t)
+              var e = It(t)
               if (void 0 !== e) {
                 var i = this.sessionDataStore[e.id]
                 if (void 0 !== i)
@@ -1581,7 +1587,7 @@
               }
             }),
             (e.onTrackInterrupt = function (t) {
-              var e = St(t)
+              var e = It(t)
               if (void 0 !== e) {
                 var i = this.sessionDataStore[e.id]
                 if (void 0 !== i) {
@@ -1616,19 +1622,19 @@
               )
             }),
             (e.generateNewAggregateHistogram = function () {
-              for (var t, e = {}, i = y(Ce); !(t = i()).done; ) {
+              for (var t, e = {}, i = y(Le); !(t = i()).done; ) {
                 e[t.value] = 0
               }
               return e
             }),
             (e.generateNewMaxContinuousHistogram = function () {
-              for (var t, e = {}, i = y(Ce); !(t = i()).done; ) {
+              for (var t, e = {}, i = y(Le); !(t = i()).done; ) {
                 e[t.value] = { current: 0, max: 0 }
               }
               return e
             }),
             (e.resetContinuousViewDataForHistogram = function (t) {
-              for (var e, i = y(Ce); !(e = i()).done; ) {
+              for (var e, i = y(Le); !(e = i()).done; ) {
                 var n = e.value
                 this.resetContinuousViewDataForBucket(t[n])
               }
@@ -1656,14 +1662,14 @@
             }),
             (e.updateAggregateHistogram = function (t, e, i) {
               if (0 !== e)
-                for (var n, a = 100 * e, s = y(Ce); !(n = s()).done; ) {
+                for (var n, a = 100 * e, s = y(Le); !(n = s()).done; ) {
                   var r = n.value
                   a >= r && (t[r] += i)
                 }
             }),
             (e.updateMaxContinuousHistogram = function (t, e, i) {
               if (0 !== e)
-                for (var n, a = 100 * e, s = y(Ce); !(n = s()).done; ) {
+                for (var n, a = 100 * e, s = y(Le); !(n = s()).done; ) {
                   var r = n.value
                   a >= r ? (t[r].current += i) : t[r].current > 0 && this.resetContinuousViewDataForBucket(t[r])
                 }
@@ -1679,7 +1685,7 @@
                   time_watched_with_audio: Math.round(t.timeWatchedWithAudioMs),
                   time_watched_fullscreen_with_audio: Math.round(t.timeWatchedFullscreenWithAudioMs),
                   time_watched_100_with_audio: Math.round(t.watchedWithAudioMsByInViewPct[100]),
-                  video_type: Le[e.contentType],
+                  video_type: ft[e.contentType],
                   watched_ms_by_in_view_pct: this.constructAggregateHistogramPayload(t.watchedMsByInViewPct),
                   watched_with_audio_ms_by_in_view_pct: this.constructAggregateHistogramPayload(
                     t.watchedWithAudioMsByInViewPct,
@@ -1699,14 +1705,14 @@
               }
             }),
             (e.constructAggregateHistogramPayload = function (t) {
-              for (var e, i = {}, n = y(Ce); !(e = n()).done; ) {
+              for (var e, i = {}, n = y(Le); !(e = n()).done; ) {
                 var a = e.value
                 i[a] = Math.round(t[a])
               }
               return { histogram: i }
             }),
             (e.constructMaxContinuousHistogramPayload = function (t) {
-              for (var e, i = {}, n = y(Ce); !(e = n()).done; ) {
+              for (var e, i = {}, n = y(Le); !(e = n()).done; ) {
                 var a = e.value,
                   s = t[a]
                 i[a] = Math.round(Math.max(s.current, s.max))
@@ -1734,14 +1740,14 @@
           var e = t.prototype
           return (
             (e.onTrackFinishedEvent = function (t) {
-              var e = St(t)
+              var e = It(t)
               if (void 0 !== e) {
                 var i = this.eventMap[e.id]
                 void 0 !== i && (e.shouldLoop ? (i.timePlayedToMs = 0) : (this.eventMap[e.id] = void 0))
               }
             }),
             (e.onPlaybackComplete = function (t) {
-              var e = St(t)
+              var e = It(t)
               if (void 0 !== e) {
                 var i = this.eventMap[e.id]
                 void 0 !== i && this.context && this.context.enableShortFormCompleteLogging && this.emitOnce(D, i, t)
@@ -1751,7 +1757,7 @@
               this.resetContinuousViewEventTimingData(t)
             }),
             (e.onTickEvent = function (t) {
-              var e = St(t)
+              var e = It(t)
               if (void 0 !== e) {
                 var i = this.eventMap[e.id]
                 if (void 0 === i) {
@@ -1773,7 +1779,7 @@
               var a = i.percentVisible
               a >= 1 && (e[rt].timePlayedMs += n),
                 a >= 1 ? (e[W].timePlayedMs += n) : (e[W].timePlayedMs = 0),
-                a >= 0.5 && Ct(i) ? (e[L].timePlayedMs += n) : (e[L].timePlayedMs = 0),
+                a >= 0.5 && Lt(i) ? (e[L].timePlayedMs += n) : (e[L].timePlayedMs = 0),
                 a >= 0.5 ? (e[V].timePlayedMs += n) : (e[V].timePlayedMs = 0),
                 a >= 1 && !i.isMuted && (e[M].timePlayedMs += n),
                 a >= 0.5 ? (e[at].timePlayedMs += n) : (e[at].timePlayedMs = 0),
@@ -1791,7 +1797,7 @@
             (e.checkViewEvents = function (t, e, i) {
               var n
               e[rt].timePlayedMs >=
-                (!(n = t).isLive && n.durationMs > 0 && !n.shouldLoop ? Math.min(n.durationMs - 500, Jt) : Jt) &&
+                (!(n = t).isLive && n.durationMs > 0 && !n.shouldLoop ? Math.min(n.durationMs - 500, Zt) : Zt) &&
                 (this.emitOnce(rt, e, i), this.emitOnce(st, e, i)),
                 e[W].timePlayedMs >= 1e3 && this.emitOnce(W, e, i),
                 e[M].timePlayedMs >=
@@ -1831,23 +1837,23 @@
         De = (function (t) {
           function e(e, i, n, a) {
             var s
-            ;((s = t.call(this) || this).scribeListener = new Ee(c()(s), e, a)),
-              (s.promotedLogListener = new ae(c()(s), i)),
-              (s.tentpoleListener = new Ae(c()(s))),
+            ;((s = t.call(this) || this).scribeListener = new Pe(c()(s), e, a)),
+              (s.promotedLogListener = new se(c()(s), i)),
+              (s.tentpoleListener = new Ce(c()(s))),
               (s.viewListener = new Oe(c()(s), a)),
-              (s.playbackLapseListener = new te(c()(s))),
-              (s.errorListener = new Dt(c()(s))),
-              (s.beaconListener = new Nt(c()(s))),
-              (s.rewindListener = new se(c()(s))),
-              (s.heartbeatListener = new Bt(c()(s))),
-              (s.loopListener = new Kt(c()(s))),
-              (s.intendToPlayListener = new Ut(c()(s))),
+              (s.playbackLapseListener = new ee(c()(s))),
+              (s.errorListener = new Ft(c()(s))),
+              (s.beaconListener = new Wt(c()(s))),
+              (s.rewindListener = new re(c()(s))),
+              (s.heartbeatListener = new Rt(c()(s))),
+              (s.loopListener = new Yt(c()(s))),
+              (s.intendToPlayListener = new Kt(c()(s))),
               (s.videoSessionListener = new Ve(c()(s))),
-              (s.ctaImpressionListener = new Ot(c()(s))),
-              (s.captionsListener = new Wt(c()(s)))
-            var r = new Xt(n, a),
-              o = new Zt(r)
-            return (s.lifecycleListener = new $t(c()(s), o)), s
+              (s.ctaImpressionListener = new Dt(c()(s))),
+              (s.captionsListener = new Ot(c()(s)))
+            var r = new Jt(n, a),
+              o = new Qt(r)
+            return (s.lifecycleListener = new te(c()(s), o)), s
           }
           u()(e, t)
           var i = e.prototype
@@ -1856,7 +1862,7 @@
               this.emit(tt, t)
             }),
             (i.onReplay = function (t) {
-              var e = St(t)
+              var e = It(t)
               void 0 !== e && (e.shouldLoop || this.emit(X, t))
             }),
             (i.onTrackFinished = function (t) {

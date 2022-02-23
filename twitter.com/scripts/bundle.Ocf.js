@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [77, 176],
+  [77, 177],
   {
     '0ULw': function (e, t, a) {
       'use strict'
@@ -3049,76 +3049,86 @@
                 (l = 10 * D.a.theme.lineHeightsPx.body),
                 (c = s ? (l * s.image.image_info.width) / s.image.image_info.height : 'initial'),
                 (u = v && s && 'icon' === s.image_type))
-              : ((n = h), (i = _)),
-            k.a.createElement(
-              N.a,
-              { style: u ? me.headerImageContainer : void 0 },
-              v && s
-                ? k.a.createElement(
-                    N.a,
-                    {
-                      style: {
-                        marginHorizontal:
-                          'full_width' === s.image_type || 'full_bleed_top' === s.image_type
-                            ? '-'.concat(D.a.theme.spaces.space32)
-                            : 'initial',
-                        height: u ? l : 'initial',
-                        width: u ? c : 'initial',
-                      },
-                    },
-                    k.a.createElement(de.a, {
-                      accessibilityLabel: s.image.image_info.alt_text || '',
-                      aspectMode: pe.a.exact(s.image.image_info.width / s.image.image_info.height),
-                      image: s.image.image_info,
-                    }),
-                  )
-                : null,
-              n
-                ? k.a.createElement(
-                    re,
-                    r()({}, n, {
-                      nativeID: w.b,
-                      onNavigate: p,
-                      size: null != m ? m : 'title4',
-                      style: le.headline,
-                      subtaskInputs: b,
-                      weight: 'bold',
-                    }),
-                  )
-                : null,
-              k.a.createElement(
-                N.a,
-                { style: [le.subHeader, g && me.subHeaderRightAlignedButton] },
-                k.a.createElement(
+              : ((n = 'string' == typeof h ? { text: h } : h), (i = 'string' == typeof _ ? { text: _ } : _)),
+            s || n || i || o
+              ? k.a.createElement(
                   N.a,
-                  { style: g && me.secondaryTextRightAlignedButton },
-                  i ? k.a.createElement(re, r()({}, i, { color: 'gray700', onNavigate: p, subtaskInputs: b })) : null,
-                ),
-                null != d && d.header_button
-                  ? k.a.createElement(
-                      N.a,
-                      { style: g && me.containerRightAlignedButton },
-                      k.a.createElement(ue, {
-                        button: d.header_button,
-                        onNavigate: p,
-                        style: g && me.buttonRightAligned,
-                        subtaskInputs: b,
-                      }),
-                    )
-                  : null,
-              ),
-              o
-                ? null != f
-                  ? f
-                  : k.a.createElement(he.a, {
-                      avatarUri: o.profile_image_url_https,
-                      displayMode: 'UserCompact',
-                      name: o.name,
-                      screenName: o.screen_name,
-                      userId: o.id_str,
-                    })
-                : null,
-            )
+                  { style: u ? me.headerImageContainer : void 0 },
+                  v && s
+                    ? k.a.createElement(
+                        N.a,
+                        {
+                          style: {
+                            marginHorizontal:
+                              'full_width' === s.image_type || 'full_bleed_top' === s.image_type
+                                ? '-'.concat(D.a.theme.spaces.space32)
+                                : 'initial',
+                            height: u ? l : 'initial',
+                            width: u ? c : 'initial',
+                          },
+                        },
+                        k.a.createElement(de.a, {
+                          accessibilityLabel: s.image.image_info.alt_text || '',
+                          aspectMode: pe.a.exact(s.image.image_info.width / s.image.image_info.height),
+                          image: s.image.image_info,
+                        }),
+                      )
+                    : null,
+                  k.a.createElement(
+                    N.a,
+                    null,
+                    n
+                      ? k.a.createElement(
+                          re,
+                          r()({}, n, {
+                            nativeID: w.b,
+                            onNavigate: p,
+                            size: null != m ? m : 'title4',
+                            style: le.headline,
+                            subtaskInputs: b,
+                            weight: 'bold',
+                          }),
+                        )
+                      : null,
+                    i || (null != d && d.header_button)
+                      ? k.a.createElement(
+                          N.a,
+                          { style: [le.subHeader, g && me.subHeaderRightAlignedButton] },
+                          k.a.createElement(
+                            N.a,
+                            { style: g && me.secondaryTextRightAlignedButton },
+                            i
+                              ? k.a.createElement(re, r()({}, i, { color: 'gray700', onNavigate: p, subtaskInputs: b }))
+                              : null,
+                          ),
+                          null != d && d.header_button
+                            ? k.a.createElement(
+                                N.a,
+                                { style: g && me.containerRightAlignedButton },
+                                k.a.createElement(ue, {
+                                  button: d.header_button,
+                                  onNavigate: p,
+                                  style: g && me.buttonRightAligned,
+                                  subtaskInputs: b,
+                                }),
+                              )
+                            : null,
+                        )
+                      : null,
+                    o
+                      ? null != f
+                        ? f
+                        : k.a.createElement(he.a, {
+                            avatarUri: o.profile_image_url_https,
+                            displayMode: 'UserCompact',
+                            name: o.name,
+                            screenName: o.screen_name,
+                            userId: o.id_str,
+                          })
+                      : null,
+                  ),
+                )
+              : null
           )
         },
         be = a('mCZD'),
@@ -9553,7 +9563,7 @@
           }
         }),
         zi = function () {
-          return a.e(352).then(a.t.bind(null, 'OHEV', 7))
+          return a.e(353).then(a.t.bind(null, 'OHEV', 7))
         }
       function Hi(e) {
         var t = e.errorDialog,

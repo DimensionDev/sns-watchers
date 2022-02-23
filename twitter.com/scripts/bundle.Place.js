@@ -250,14 +250,14 @@
         o = (r('lTEL'), r('7x/C'), r('JtPf'), r('87if'), r('kYxP'), r('XBtf')),
         s = {
           loader: function () {
-            return Promise.all([r.e(0), r.e(348)]).then(r.bind(null, 'a+ad'))
+            return Promise.all([r.e(0), r.e(349)]).then(r.bind(null, 'a+ad'))
           },
           loaderKey: 'newsCellLoader',
           strategy: o.a.Critical,
         },
         u = {
           loader: function () {
-            return Promise.all([r.e(0), r.e(350)]).then(r.bind(null, 'hX2d'))
+            return Promise.all([r.e(0), r.e(351)]).then(r.bind(null, 'hX2d'))
           },
           loaderKey: 'newsPreviewCardLoader',
           strategy: o.a.Critical,
@@ -297,7 +297,7 @@
         k = (r('lTEL'), r('7x/C'), r('JtPf'), r('87if'), r('kYxP'), r('XBtf')),
         P = {
           loader: function () {
-            return r.e(230).then(r.bind(null, 'sc5C'))
+            return r.e(231).then(r.bind(null, 'sc5C'))
           },
           loaderKey: 'relatedSearchDefaultLoader',
           strategy: k.a.Critical,
@@ -306,21 +306,21 @@
         x = (r('yH/f'), Object.freeze({ Expand: 'Expand', Replace: 'Replace', Suggest: 'Suggest' })),
         O = {
           loader: function () {
-            return r.e(353).then(r.bind(null, '5aND'))
+            return r.e(354).then(r.bind(null, '5aND'))
           },
           loaderKey: 'spellingExpandLoader',
           strategy: k.a.Critical,
         },
         M = {
           loader: function () {
-            return r.e(353).then(r.bind(null, '77Dd'))
+            return r.e(354).then(r.bind(null, '77Dd'))
           },
           loaderKey: 'spellingReplaceLoader',
           strategy: k.a.Critical,
         },
         L = {
           loader: function () {
-            return r.e(353).then(r.bind(null, 'D4Iv'))
+            return r.e(354).then(r.bind(null, 'D4Iv'))
           },
           loaderKey: 'spellingSuggestLoader',
           strategy: k.a.Critical,
@@ -576,7 +576,7 @@
           r('kYxP'),
           {
             loader: function () {
-              return r.e(222).then(r.bind(null, 'tFiq'))
+              return r.e(223).then(r.bind(null, 'tFiq'))
             },
             loaderKey: 'momentAnnoationLoader',
             strategy: r('XBtf').a.Critical,

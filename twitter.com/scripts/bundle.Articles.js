@@ -48,7 +48,7 @@
           n('87if'),
           {
             loader: function () {
-              return n.e(202).then(n.bind(null, 'QvpQ'))
+              return n.e(203).then(n.bind(null, 'QvpQ'))
             },
             loaderKey: 'defaultArticleLoader',
             strategy: n('XBtf').a.Critical,

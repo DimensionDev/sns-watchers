@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [100],
+  [101],
   {
     '/uhu': function (e, t, a) {
       'use strict'
@@ -23,10 +23,10 @@
         p = l.a.ba5a88e3,
         h = { page: 'trusted_friends_edit' },
         E = Object(u.a)(function () {
-          return Promise.all([a.e(0), a.e(3), a.e(4), a.e(6), a.e(109)]).then(a.bind(null, 'gzLP'))
+          return Promise.all([a.e(0), a.e(3), a.e(4), a.e(6), a.e(110)]).then(a.bind(null, 'gzLP'))
         }),
         k = Object(u.a)(function () {
-          return Promise.all([a.e(0), a.e(3), a.e(4), a.e(6), a.e(109)]).then(a.bind(null, 'W8UM'))
+          return Promise.all([a.e(0), a.e(3), a.e(4), a.e(6), a.e(110)]).then(a.bind(null, 'W8UM'))
         }),
         w = function (e) {
           var t = e.history,

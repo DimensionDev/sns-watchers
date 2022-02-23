@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [123],
+    [124],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -23,7 +23,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(305).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(306).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -1886,6 +1886,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a0e3ece4', 'Community Detail'),
           a('d601fc2f', 'Latest'),
           a('e6057013', 'Ask to join'),
+          a('b533478f', 'Pending'),
           a('aa7ae3f6', 'Joined'),
           a('hafa07f2', 'Participation is limited'),
           a('c15bee31', 'You’ve been removed from this Community'),
@@ -2033,14 +2034,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'ccfafe8c',
             'Everyone can discover your Community. To join, people must be invited by a member or moderator.',
           ),
+          a('c5d1634d', 'Okay, I understand'),
+          a('b983f9e0', 'Heads up'),
+          a('a1c93d73', 'Looks like we’re having trouble saving your changes. Please try again later.'),
           a('a0a16d37', 'Anyone can join and/or be invited to the Community.'),
           a('f1b189f9', 'People must ask to join, and the mod team must approve those requests.'),
           a('c85960a0', 'Allow members to issue invitations'),
           a('ca373cd2', 'People invited by existing members are automatically approved.'),
           a('d42d9318', 'People invited by the mod team are automatically approved.'),
-          a('c5d1634d', 'Okay, I understand'),
-          a('b983f9e0', 'Heads up'),
-          a('a1c93d73', 'Looks like we’re having trouble saving your changes. Please try again later.'),
           a('b1066579', 'Keep in mind all Communities are visible to everyone on Twitter.'),
           a(
             'daedd9fa',
@@ -2276,9 +2277,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e731db59', 'Password reset'),
           a('f56af9cc', 'Download an archive of your data'),
           a('d13e165c', 'TweetDeck Teams'),
-          a('hfb92b14', 'Deactivate your account'),
-          a('bf96fda4', 'Age')
-        a('j9d10268', 'Account activity'),
+          a('hfb92b14', 'Deactivate your account')
+        a('bf96fda4', 'Age'),
+          a('j9d10268', 'Account activity'),
           a('i6b3f59a', 'Account history'),
           a('da202f9a', 'Your advertiser list'),
           a('hc36dbba', 'Logged-in devices and apps'),
@@ -3309,6 +3310,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('db48309f', 'Switched to Personal account'),
           a('c701200b', 'Switched to Business account'),
           a('acd8da09', 'Switched to Creator account'),
+          a('d4b6a6ef', 'Profile Spotlight'),
           a('aaafffd9', 'Muted notifications'),
           a('j29ab12f', 'Mute notifications from people:'),
           a('jdfc82f6', 'You don’t follow'),
@@ -3517,10 +3519,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e27e4fcd', 'Unknown location'),
           a('ib55eb69', 'Connected apps'),
           a('e5a4a538', 'Learn more'),
-          a('icbb92d0', 'Apps page'),
-          a('a9bec4ef', 'Learn more'),
-          a('gc8f2e13', 'You can opt out of interest-based advertising in your personalization and data settings.')
-        a('f04e17dd', 'Learn more'),
+          a('icbb92d0', 'Apps page')
+        a('a9bec4ef', 'Learn more'),
+          a('gc8f2e13', 'You can opt out of interest-based advertising in your personalization and data settings.'),
+          a('f04e17dd', 'Learn more'),
           a('d3310e48', function (e) {
             return (
               'A file with all the information associated with your account will be sent to ' + e.primaryEmail + '.'
@@ -4732,9 +4734,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bb347bbb', 'help center'),
           a('e0876919', 'You weren’t able to give access to the App. Go back and try logging in again.'),
           a('cea71013', 'We’re loading your contacts...'),
-          a('e4ff75a9', 'Something went wrong. Check your connection and try again.'),
-          a('e4f6bd9e', 'Oops, something went wrong. Please try again later.'),
-          a('hc72e1fc', 'Please enter a valid email.')
+          a('e4ff75a9', 'Something went wrong. Check your connection and try again.')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4751,7 +4751,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('fa69a1ca', 'Reveal password'),
+        a('e4f6bd9e', 'Oops, something went wrong. Please try again later.'),
+          a('hc72e1fc', 'Please enter a valid email.'),
+          a('fa69a1ca', 'Reveal password'),
           a('aacf5085', 'Hide password'),
           a('c52be451', 'Yes, remove'),
           a(
@@ -6011,10 +6013,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e547b368', 'Original'),
           a('f7571204', 'Wide'),
           a('e6e16811', 'Square'),
-          a('d7e50a66', 'Learn more'),
-          a('a35a5b10', 'Followers you know'),
-          a('fc8cd112', 'Not followed by anyone you’re following')
-        a('gaeb997d', 'More'),
+          a('d7e50a66', 'Learn more')
+        a('a35a5b10', 'Followers you know'),
+          a('fc8cd112', 'Not followed by anyone you’re following'),
+          a('gaeb997d', 'More'),
           a('f4393d0f', function (e) {
             return 'Attributed to ' + e.name
           }),

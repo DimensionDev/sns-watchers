@@ -11,14 +11,14 @@
         l = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf')),
         u = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(348)]).then(n.bind(null, 'a+ad'))
+            return Promise.all([n.e(0), n.e(349)]).then(n.bind(null, 'a+ad'))
           },
           loaderKey: 'newsCellLoader',
           strategy: l.a.Critical,
         },
         d = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(350)]).then(n.bind(null, 'hX2d'))
+            return Promise.all([n.e(0), n.e(351)]).then(n.bind(null, 'hX2d'))
           },
           loaderKey: 'newsPreviewCardLoader',
           strategy: l.a.Critical,

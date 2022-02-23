@@ -1,11 +1,11 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [98],
+  [99],
   {
     '7mm0': function (e, t, n) {
       'use strict'
       n.r(t),
         n.d(t, 'TopicLandingPage', function () {
-          return Z
+          return Q
         })
       n('ho0z')
       var a = n('ERkP'),
@@ -98,55 +98,57 @@
           }
           return { items: t ? [l()({}, j.a.forTopic(t))] : void 0, referring_event: n }
         }),
-        F = n('3XMw'),
-        L = n.n(F),
-        A = n('rJoH'),
-        R = n('UZjl'),
-        x = n('7JQg'),
-        U = function (e) {
+        F = n('9Bb1'),
+        L = n('3XMw'),
+        A = n.n(L),
+        R = n('rJoH'),
+        x = n('UZjl'),
+        U = n('7JQg'),
+        H = function (e) {
           return 'https://twitter.com/i/topics/'.concat(e)
         },
-        H = function (e) {
+        M = function (e) {
           return 'twitter://topics_timeline?id='.concat(e)
         },
-        M = L.a.a2a3824a,
-        B = L.a.f68f0fc7,
-        K = L.a.ieb6f5c1,
-        X = L.a.d848d612,
-        G = L.a.j70f0f35,
-        W = i.a.createElement(o.a, { withWhoToFollow: !1 }),
-        q = { page: 'topic_landing', section: 'main' }
-      function Z(e) {
+        B = A.a.a2a3824a,
+        K = A.a.f68f0fc7,
+        X = A.a.ieb6f5c1,
+        G = A.a.d848d612,
+        W = A.a.j70f0f35,
+        q = i.a.createElement(o.a, { withWhoToFollow: !1 }),
+        Z = { page: 'topic_landing', section: 'main' }
+      function Q(e) {
         var t = e.history,
           n = e.module,
           a = e.referringScribeNamespace,
           o = e.topic,
           c = e.topicId,
-          s = null != o && o.name ? K({ topicName: null == o ? void 0 : o.name }) : B,
-          u = null != o && o.name ? G({ topicName: null == o ? void 0 : o.name }) : X
+          s = null != o && o.name ? X({ topicName: null == o ? void 0 : o.name }) : K,
+          u = null != o && o.name ? W({ topicName: null == o ? void 0 : o.name }) : G
         return i.a.createElement(
-          x.c,
+          U.c,
           { data: k(a, c) },
           i.a.createElement(
             i.a.Fragment,
             null,
-            i.a.createElement(A.a, { canonical: U(c), description: u, title: s, type: 'article' }),
-            i.a.createElement(r.a, { deepLink: H(c) }),
-            i.a.createElement(R.a, {
+            i.a.createElement(F.a, { description: u, title: s }),
+            i.a.createElement(R.a, { canonical: H(c), description: u, title: s, type: 'article' }),
+            i.a.createElement(r.a, { deepLink: M(c) }),
+            i.a.createElement(x.a, {
               backLocation: '/',
               entryConfiguration: C,
               history: t,
-              initialPageNamespace: q,
+              initialPageNamespace: Z,
               module: n,
-              sidebarContent: W,
+              sidebarContent: q,
               timelinePrefix: g,
-              title: M,
+              title: B,
             }),
           ),
         )
       }
-      var Q = y(Z)
-      t.default = Q
+      var Y = y(Q)
+      t.default = Y
     },
     BO6E: function (e, t, n) {
       'use strict'

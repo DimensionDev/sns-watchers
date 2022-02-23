@@ -81,7 +81,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return Promise.all([n.e(5), n.e(224)]).then(n.bind(null, 'RfPh'))
+              return Promise.all([n.e(5), n.e(225)]).then(n.bind(null, 'RfPh'))
             },
             loaderKey: 'defaultNotificationLoader',
             strategy: n('XBtf').a.Critical,

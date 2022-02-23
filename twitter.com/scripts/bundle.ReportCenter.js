@@ -13,8 +13,8 @@
         o,
         c,
         d,
-        g,
         m,
+        g,
         p,
         y,
         _,
@@ -254,14 +254,14 @@
                                                                             name: 'protected',
                                                                             storageKey: null,
                                                                           },
-                                                                          (g = {
+                                                                          (m = {
                                                                             alias: null,
                                                                             args: null,
                                                                             kind: 'ScalarField',
                                                                             name: 'screen_name',
                                                                             storageKey: null,
                                                                           }),
-                                                                          (m = {
+                                                                          (g = {
                                                                             alias: null,
                                                                             args: null,
                                                                             kind: 'ScalarField',
@@ -406,9 +406,9 @@
                                                         name: 'id_str',
                                                         storageKey: null,
                                                       },
-                                                      m,
-                                                      d,
                                                       g,
+                                                      d,
+                                                      m,
                                                     ],
                                                     storageKey: null,
                                                   },
@@ -468,19 +468,19 @@
         o = a('v302'),
         c = u.a.b05a39b2,
         d = u.a.c566d3a5,
-        g = function (e) {
+        m = function (e) {
           return i.a.createElement(o.a, e)
         },
-        m = function (e) {
+        g = function (e) {
           var l = e.children,
             a = e.hideLabel,
             n = void 0 === a ? d : a,
             r = e.label,
             s = e.lang,
             u = e.render,
-            o = void 0 === u ? g : u,
-            m = e.revealLabel,
-            p = void 0 === m ? c : m,
+            o = void 0 === u ? m : u,
+            g = e.revealLabel,
+            p = void 0 === g ? c : g,
             y = i.a.useState(!1),
             _ = t()(y, 2),
             k = _[0],
@@ -494,7 +494,7 @@
             },
           })
         }
-      ;(m.displayName = 'TweetDisclosure'), (l.a = m)
+      ;(g.displayName = 'TweetDisclosure'), (l.a = g)
     },
     '6mUz': function (e, l, a) {
       'use strict'
@@ -753,8 +753,8 @@
         o = a.n(u),
         c = a('lnti'),
         d = a('jHSc'),
-        g = (a('enFi'), a('3XMw')),
-        m = a.n(g),
+        m = (a('enFi'), a('3XMw')),
+        g = a.n(m),
         p = a('Fr3L'),
         y = a.p + 'report-detail-ear.0518acc5.png',
         _ = (a('z84I'), a('yiKp')),
@@ -769,7 +769,7 @@
         R = a('v302'),
         S = a('r7g+'),
         T = a('rHpw'),
-        E = m.a.a098fa3c,
+        E = g.a.a098fa3c,
         L = {
           display_text_range: [0, 24],
           favorite_count: 0,
@@ -827,7 +827,7 @@
                   : t.tweet
                 : s.result,
             d = null == c || null === (r = c.legacy) || void 0 === r ? void 0 : r.full_text,
-            g = o.a.useCallback(
+            m = o.a.useCallback(
               function () {
                 return o.a.createElement(
                   h.a,
@@ -892,7 +892,10 @@
                     renderActionsBar: function () {
                       return null
                     },
-                    renderTombstone: g,
+                    renderTimestamp: function (e) {
+                      return o.a.createElement(S.a.Timestamp, F()({}, e, { link: void 0 }))
+                    },
+                    renderTombstone: m,
                   }),
                 ),
               )
@@ -924,19 +927,19 @@
             u = (null == s ? void 0 : s.idStr) || '',
             c = (null == s ? void 0 : s.description) || '',
             d = (null == s ? void 0 : s.name) || '',
-            g = (null == s ? void 0 : s.profile_image_url_https) || '',
-            m = (null == s ? void 0 : s.screen_name) || ''
+            m = (null == s ? void 0 : s.profile_image_url_https) || '',
+            g = (null == s ? void 0 : s.screen_name) || ''
           return u
             ? o.a.createElement(
                 b.a,
                 { style: [B.userCellContainer, i && B.wideScreen] },
                 o.a.createElement(D.a, {
-                  avatarUri: g,
+                  avatarUri: m,
                   description: c,
                   displayMode: 'UserDetailed',
                   entities: {},
                   name: d,
-                  screenName: m,
+                  screenName: g,
                   userId: u,
                 }),
               )
@@ -986,9 +989,9 @@
         W = a('t62R'),
         G = a('3rX5'),
         Q = a('zCf4'),
-        X = m.a.e37836f8,
-        J = m.a.ccf2f24e,
-        P = m.a.e238c59f,
+        X = g.a.e37836f8,
+        J = g.a.ccf2f24e,
+        P = g.a.e238c59f,
         q = 'gray700',
         N = void 0 !== s ? s : (s = a('+hxm')),
         Z = function () {
@@ -1012,9 +1015,9 @@
                 : a.submitted_report,
             d =
               null != u && u.create_time
-                ? ((n = null == u ? void 0 : u.create_time), (t = m.a.ba2e82a1), (r = parseInt(n, 10)), t(new Date(r)))
+                ? ((n = null == u ? void 0 : u.create_time), (t = g.a.ba2e82a1), (r = parseInt(n, 10)), t(new Date(r)))
                 : '',
-            g = null == u ? void 0 : u.header,
+            m = null == u ? void 0 : u.header,
             p = null == u ? void 0 : u.follow_up_text,
             y = null == u ? void 0 : u.report_entities_results
           return o.a.createElement(
@@ -1026,7 +1029,7 @@
               o.a.createElement(W.b, { color: q, weight: 'bold' }, J),
               o.a.createElement(W.b, { color: q }, d),
             ),
-            o.a.createElement(W.b, { size: 'title3', weight: 'heavy' }, g),
+            o.a.createElement(W.b, { size: 'title3', weight: 'heavy' }, m),
             y ? o.a.createElement(j, { report: Object(c.a)(y) }) : null,
             o.a.createElement(W.b, { size: 'headline2', style: Y.headline, weight: 'heavy' }, P),
             o.a.createElement(W.b, { color: q, size: 'subtext2', weight: 'normal' }, p),

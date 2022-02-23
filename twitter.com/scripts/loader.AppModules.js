@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [165],
+  [166],
   {
     '+Aie': function (e, t, n) {
       var r
@@ -1138,7 +1138,13 @@
                   return this.login().then(function () {
                     var r = n.params,
                       o = Object.assign(A(), n.headers),
-                      i = JSON.stringify({ access_token: e.access_token, cursor: e.cursor, limit: 1e3, since: null })
+                      i = JSON.stringify({
+                        access_token: e.access_token,
+                        cursor: e.cursor,
+                        limit: 1e3,
+                        since: null,
+                        quick_get: !0,
+                      })
                     return t.dispatch({ method: 'POST', host: e.host, path: e.path, headers: o, params: r, data: i })
                   })
                 },

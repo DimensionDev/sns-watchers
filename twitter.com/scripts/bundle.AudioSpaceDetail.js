@@ -356,7 +356,13 @@
                   return this.login().then(function () {
                     var i = n.params,
                       r = Object.assign(O(), n.headers),
-                      a = JSON.stringify({ access_token: e.access_token, cursor: e.cursor, limit: 1e3, since: null })
+                      a = JSON.stringify({
+                        access_token: e.access_token,
+                        cursor: e.cursor,
+                        limit: 1e3,
+                        since: null,
+                        quick_get: !0,
+                      })
                     return t.dispatch({ method: 'POST', host: e.host, path: e.path, headers: r, params: i, data: a })
                   })
                 },
