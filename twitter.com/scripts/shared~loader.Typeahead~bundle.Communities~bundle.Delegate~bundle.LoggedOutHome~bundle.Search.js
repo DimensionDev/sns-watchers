@@ -35,17 +35,17 @@
         E = n('N5qz'),
         R = n('Es6L'),
         T = n('OEYw'),
-        x = n('GZwR'),
-        O = n('MWbm'),
+        O = n('GZwR'),
+        x = n('MWbm'),
         S = n('v6aA'),
         j = n('rHpw'),
         N = n('xoZN'),
         k = n('6OUF'),
         F = n('pf9B'),
         P = n('cHvH'),
-        U = n('oEoC'),
-        L = D.a.f065ba8c,
-        q = { viewType: 'typeahead_input' },
+        q = n('oEoC'),
+        U = D.a.f065ba8c,
+        L = { viewType: 'typeahead_input' },
         A = function (e) {
           return E.a.isTwoColumnNormalLayout(e)
             ? {
@@ -88,9 +88,9 @@
                   v = a.state.showTypeaheadDropdown || o
                 return _.a.createElement(
                   w.a,
-                  { behavioralEventContext: q },
+                  { behavioralEventContext: L },
                   _.a.createElement(
-                    O.a,
+                    x.a,
                     { onLayout: a._handleLayout, ref: a._setRootContainerNode, style: [V.root, m] },
                     _.a.createElement(
                       N.a,
@@ -104,14 +104,14 @@
                           style: V.wrapper,
                         },
                         _.a.createElement(
-                          O.a,
+                          x.a,
                           { ref: a._setInputContainerNode, style: i },
                           _.a.createElement(k.a, {
                             Icon: g.a,
                             ariaActiveDescendant: a.state.ariaDescendantId,
                             ariaAutocomplete: 'list',
                             ariaExpanded: v,
-                            ariaLabel: L,
+                            ariaLabel: U,
                             ariaOwns: a._dropdownDomId,
                             ariaRole: 'combobox',
                             autoComplete: 'off',
@@ -136,7 +136,7 @@
                           }),
                         ),
                         _.a.createElement(
-                          O.a,
+                          x.a,
                           { style: [V.typeaheadContainer, !p && V.topBorder] },
                           v ? a._renderDropdown(t) : null,
                         ),
@@ -169,8 +169,8 @@
                   g = t.selectedItems,
                   C = t.shouldDeferPrefetch,
                   E = t.source,
-                  x = t.withFixedPositioning,
-                  O = t.withSectionDivider,
+                  O = t.withFixedPositioning,
+                  x = t.withSectionDivider,
                   S = e >= j.a.theme.breakpoints.medium || Object(R.a)(),
                   N = a.state,
                   k = N.dropdownOffset,
@@ -179,13 +179,13 @@
                     ? V.modalDropdown
                     : [
                         V.dropdown,
-                        !S && x && k ? [Object(U.d)(k), { height: 'calc(100vh - '.concat(k, 'px)') }] : null,
+                        !S && O && k ? [Object(q.d)(k), { height: 'calc(100vh - '.concat(k, 'px)') }] : null,
                         (S || p) && V.wideModeDropdown,
                         a._withNewTypeaheadUI && d && A(e),
                         p && V.shortModeDropdown,
                         !S && p && V.shortModeDropdownMobile,
                       ],
-                  L = {
+                  U = {
                     ariaDescendantId: a.state.ariaDescendantId,
                     domId: a._dropdownDomId,
                     onDismiss: a._handleOnEmptyStateDismiss,
@@ -194,7 +194,7 @@
                     style: P,
                   }
                 return w && !F
-                  ? w(L)
+                  ? w(U)
                   : _.a.createElement(T.a, {
                       ariaDescendantId: a.state.ariaDescendantId,
                       communityId: n,
@@ -221,7 +221,7 @@
                       shouldDeferPrefetch: C,
                       source: E,
                       style: P,
-                      withSectionDivider: O,
+                      withSectionDivider: x,
                     })
               }),
               f()(c()(a), '_dismissDropdown', function () {
@@ -263,7 +263,7 @@
               f()(c()(a), '_handleKeyDown', function (e) {
                 var t = e.key,
                   n = a.state.showTypeaheadDropdown
-                if (Object(U.g)(e)) {
+                if (Object(q.g)(e)) {
                   if (t === m.a) return a._focusNext(), void e.preventDefault()
                   if (t === m.b) return a._focusPrevious(), void e.preventDefault()
                   if (t === m.d) return a._dismissDropdown(), void e.preventDefault()
@@ -275,7 +275,7 @@
                 }
               }),
               f()(c()(a), '_handleItemFocusChanged', function () {
-                a.setState({ ariaDescendantId: Object(U.b)() })
+                a.setState({ ariaDescendantId: Object(q.b)() })
               }),
               f()(c()(a), '_handleInputClear', function () {
                 a.setQuery('')
@@ -319,7 +319,7 @@
               f()(c()(a), '_focusPrevious', function () {
                 a._dropdownRef && a._dropdownRef.focusPrevious()
               }),
-              (a.state = { ariaDescendantId: Object(U.b)(), query: e.initialValue, showTypeaheadDropdown: !1 }),
+              (a.state = { ariaDescendantId: Object(q.b)(), query: e.initialValue, showTypeaheadDropdown: !1 }),
               (a._dropdownDomId = 'typeaheadDropdown-'.concat(M)),
               (M += 1),
               (a._withNewTypeaheadUI = a.context.featureSwitches.isTrue(
@@ -372,7 +372,7 @@
         })(_.a.Component)
       f()(H, 'defaultProps', {
         disableClearButton: !1,
-        filter: [x.a.Users, x.a.Topics],
+        filter: [O.a.Users, O.a.Topics],
         isInSidebar: !1,
         initialValue: '',
         withSectionDivider: !0,
@@ -447,8 +447,8 @@
         E = n('o52z'),
         R = n('kGix'),
         T = n('M0jS'),
-        x = n('Qyxo'),
-        O = n('lnti'),
+        O = n('Qyxo'),
+        x = n('lnti'),
         S = n('rxPX'),
         j = n('0KEI'),
         N =
@@ -466,9 +466,9 @@
         k = n('oEOe'),
         F = n('vy4g'),
         P = n('3A2y'),
-        U = n('Y6L+'),
-        L = n('9EWH'),
-        q = n('Ssj5'),
+        q = n('Y6L+'),
+        U = n('9EWH'),
+        L = n('Ssj5'),
         A = n('GZwR'),
         M = ['rounded_score', 'tokens'],
         H = ['rounded_score', 'tokens'],
@@ -507,7 +507,7 @@
               o = e.tokens,
               r = s()(e, H),
               a = A.b.Event,
-              i = null == r || null === (t = r.url) || void 0 === t ? void 0 : t.match(U.A.id)
+              i = null == r || null === (t = r.url) || void 0 === t ? void 0 : t.match(q.A.id)
             return { id: (null == i ? void 0 : i[0]) || '', type: a, tokens: o, rounded_score: n, data: r }
           })
         },
@@ -538,17 +538,26 @@
                 return t ? [Object(N.c)(t)] : void 0
               })
             }
+            if (c.includes(A.a.CommunityMembers) && i) {
+              return Object(k.b)(n, {
+                params: { communityId: i, prefix: e.q },
+                request: a.Typeahead.fetchCommunityMembers,
+              })(u, function (e) {
+                var t = ((null == e ? void 0 : e.user_community_relationships) || {}).entities
+                return t ? [Object(N.c)(t)] : void 0
+              })
+            }
             return Object(k.b)(n, { params: e, request: a.Typeahead.fetch })(u)
           }
         }
-      q.a.register(
+      L.a.register(
         v()({}, V, function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Y,
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
             case B.REQUEST:
               var n = t.meta.queryId
-              return Object(L.a)(e, function (e) {
+              return Object(U.a)(e, function (e) {
                 e.remoteResults[n] || (e.remoteResults[n] = { fetchStatus: R.a.NONE }),
                   (e.remoteResults[n].fetchStatus = R.a.LOADING)
               })
@@ -568,7 +577,7 @@
                   users: Object(A.i)(a),
                   timestamp: Date.now(),
                 }
-              return Object(L.a)(e, function (e) {
+              return Object(U.a)(e, function (e) {
                 ;(e.cachedIds = e.cachedIds.filter(function (e) {
                   return e !== o
                 })),
@@ -579,7 +588,7 @@
               })
             case B.FAILURE:
               var i = t.meta.queryId
-              return Object(L.a)(e, function (e) {
+              return Object(U.a)(e, function (e) {
                 e.remoteResults[i].fetchStatus = R.a.FAILED
               })
             default:
@@ -662,7 +671,7 @@
               return t.userLimit
             },
             function (e, t, n, o, r, a, s) {
-              var i = Object(x.a)(o || [], function (e) {
+              var i = Object(O.a)(o || [], function (e) {
                   return e.type === A.b.User ? e.data.id_str : void 0
                 }),
                 c = t.filter(function (e) {
@@ -729,7 +738,7 @@
               var a = o && o.length ? o : null,
                 s = r
                   ? r(a, e, t, n)
-                  : Object(O.a)([a, n.length ? n : void 0, t.length ? t : void 0, e.length ? e : void 0])
+                  : Object(x.a)([a, n.length ? n : void 0, t.length ? t : void 0, e.length ? e : void 0])
               return t.length || e.length || n.length ? s : a ? [a] : Object(E.a)()
             },
           )

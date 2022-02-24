@@ -77,7 +77,7 @@
         v = (n('JtPf'), n('XBtf')),
         g = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(204)]).then(n.bind(null, 'zxwU'))
+            return Promise.all([n.e(0), n.e(205)]).then(n.bind(null, 'zxwU'))
           },
           loaderKey: 'dividerEntryLoader',
           strategy: v.a.Critical,
@@ -88,7 +88,7 @@
         w = n('SrIh'),
         E = {
           loader: function () {
-            return n.e(240).then(n.bind(null, 'WunU'))
+            return n.e(241).then(n.bind(null, 'WunU'))
           },
           loaderKey: 'tombstonedEntryLoader',
           strategy: v.a.Critical,
@@ -4145,7 +4145,7 @@
       var r = n('zb92'),
         i = Object(r.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(182)]).then(n.bind(null, 'iT+n'))
+            return Promise.all([n.e(0), n.e(183)]).then(n.bind(null, 'iT+n'))
           },
         })
       t.a = i
@@ -5033,7 +5033,7 @@
       var r = n('zb92'),
         i = Object(r.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(186)]).then(n.bind(null, 'MzK7'))
+            return Promise.all([n.e(0), n.e(187)]).then(n.bind(null, 'MzK7'))
           },
         })
       t.a = i
@@ -5718,7 +5718,7 @@
         v = function (e) {
           return {
             loader: function () {
-              return n.e(199).then(n.bind(null, '+93b'))
+              return n.e(200).then(n.bind(null, '+93b'))
             },
             loaderKey: 'defaultCarouselTimelineLoader',
             loaderOptions: e,
@@ -5739,7 +5739,7 @@
         }),
         b = {
           loader: function () {
-            return n.e(202).then(n.bind(null, 'GCNy'))
+            return n.e(203).then(n.bind(null, 'GCNy'))
           },
           loaderKey: 'conversationGapLoader',
           strategy: m.a.Critical,
@@ -5748,7 +5748,7 @@
         w = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(211)]).then(n.bind(null, '3Rb8'))
+              return Promise.all([n.e(0), n.e(212)]).then(n.bind(null, '3Rb8'))
             },
             loaderOptions: e,
             loaderKey: 'defaultModuleFooterLoader',
@@ -5761,7 +5761,7 @@
         },
         C = {
           loader: function () {
-            return n.e(222).then(n.bind(null, 'oiEo'))
+            return n.e(223).then(n.bind(null, 'oiEo'))
           },
           loaderKey: 'defaultModuleHeaderLoader',
           strategy: m.a.Critical,
@@ -5769,7 +5769,7 @@
         k = c.e(C),
         S = {
           loader: function () {
-            return n.e(214).then(n.bind(null, 'hKgB'))
+            return n.e(215).then(n.bind(null, 'hKgB'))
           },
           loaderKey: 'defaultImpressionPlaceholderLoader',
           strategy: m.a.Critical,
@@ -5778,7 +5778,7 @@
         x = function (e) {
           return {
             loader: function () {
-              return n.e(238).then(n.bind(null, 'D9QQ'))
+              return n.e(239).then(n.bind(null, 'D9QQ'))
             },
             loaderOptions: e,
             loaderKey: 'defaultModuleShowMoreLoader',
@@ -6084,7 +6084,7 @@
         ee = q,
         te = {
           loader: function () {
-            return n.e(247).then(n.bind(null, 'VzRj'))
+            return n.e(248).then(n.bind(null, 'VzRj'))
           },
           loaderKey: 'defaultVerticalGridListLoader',
           strategy: m.a.Critical,
@@ -6171,7 +6171,7 @@
         },
         se = {
           loader: function () {
-            return n.e(248).then(n.bind(null, 'JKhl'))
+            return n.e(249).then(n.bind(null, 'JKhl'))
           },
           loaderKey: 'defaultVerticalGridRowLoader',
           strategy: m.a.Critical,
@@ -6386,7 +6386,7 @@
         c = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(355)]).then(n.bind(null, 'YMZp'))
+              return Promise.all([n.e(0), n.e(356)]).then(n.bind(null, 'YMZp'))
             },
             loaderOptions: e,
             loaderKey: 'topicCellLoader',
@@ -6396,7 +6396,7 @@
         l = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(355)]).then(n.bind(null, 'zWr2'))
+              return Promise.all([n.e(0), n.e(356)]).then(n.bind(null, 'zWr2'))
             },
             loaderOptions: e,
             loaderKey: 'topicPillLoader',
@@ -7139,7 +7139,7 @@
         l = n('RqPI'),
         u = n('pIB9'),
         d = n('3zvM'),
-        p = Object(d.f)({ namespace: 'twitterArticles' }),
+        p = Object(d.e)({ namespace: 'twitterArticles' }),
         f = function (e) {
           return u.a.selectSliceModule(e, !1)
         },
@@ -10173,14 +10173,8 @@
         i = n.n(r),
         o = n('muX9')
       t.a = function (e) {
-        var t = e.description,
-          n = e.title
-        return i.a.createElement(
-          o.a,
-          null,
-          i.a.createElement('meta', { content: t, name: 'description' }),
-          i.a.createElement('meta', { content: n, name: 'title' }),
-        )
+        var t = e.description
+        return i.a.createElement(o.a, null, i.a.createElement('meta', { content: t, name: 'description' }))
       }
     },
     '9EbC': function (e, t, n) {
@@ -10652,7 +10646,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return Promise.all([n.e(0), n.e(216)]).then(n.bind(null, 'tzdO'))
+              return Promise.all([n.e(0), n.e(217)]).then(n.bind(null, 'tzdO'))
             },
             loaderKey: 'defaultInlinePromptLoader',
             strategy: n('XBtf').a.Critical,
@@ -10876,14 +10870,14 @@
       var r = n('XBtf'),
         i = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(242)]).then(n.bind(null, '8JvP'))
+            return Promise.all([n.e(0), n.e(243)]).then(n.bind(null, '8JvP'))
           },
           loaderKey: 'transparentLabelLoader',
           strategy: r.a.Critical,
         },
         o = {
           loader: function () {
-            return n.e(218).then(n.bind(null, 'rtVL'))
+            return n.e(219).then(n.bind(null, 'rtVL'))
           },
           loaderKey: 'defaultLabelLoader',
           strategy: r.a.Critical,
@@ -11489,7 +11483,7 @@
         Z = (n('lTEL'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         $ = Object(Z.a)({
           loader: function () {
-            return n.e(180).then(n.bind(null, 'mL9d'))
+            return n.e(181).then(n.bind(null, 'mL9d'))
           },
         }),
         ee = n('m3Bd'),
@@ -11583,7 +11577,7 @@
         Se = n('3zvM'),
         Te = n('lMB6'),
         xe = n('iChn'),
-        Ie = Object(Se.f)({
+        Ie = Object(Se.e)({
           namespace: 'translationsTweets',
           fetchOneContext: 'FETCH_TWEET_TRANSLATION',
           fetchOneEndpoint: function (e) {
@@ -14334,38 +14328,15 @@
     },
     BV3T: function (e, t, n) {
       'use strict'
-      var r = n('VrFO'),
+      var r = n('ERkP'),
         i = n.n(r),
-        o = n('Y9Ll'),
-        a = n.n(o),
-        s = n('5Yy7'),
-        c = n.n(s),
-        l = n('2VqO'),
-        u = n.n(l),
-        d = n('ERkP'),
-        p = n.n(d),
-        f = n('q9Zt'),
-        h = n('3XMw'),
-        m = n.n(h).a.b2311b7f,
-        v = (function (e) {
-          c()(n, e)
-          var t = u()(n)
-          function n() {
-            return i()(this, n), t.apply(this, arguments)
-          }
-          return (
-            a()(n, [
-              {
-                key: 'render',
-                value: function () {
-                  return p.a.createElement(f.a, { onRetry: null, title: m })
-                },
-              },
-            ]),
-            n
-          )
-        })(p.a.PureComponent)
-      t.a = v
+        o = n('q9Zt'),
+        a = n('3XMw'),
+        s = n.n(a).a.b2311b7f
+      function c() {
+        return i.a.createElement(o.a, { onRetry: null, title: s })
+      }
+      t.a = i.a.memo(c)
     },
     BedV: function (e, t, n) {
       'use strict'
@@ -15673,7 +15644,7 @@
       }
       var k = {
           load: function () {
-            return n.e(220).then(n.t.bind(null, 'Ys2B', 7))
+            return n.e(221).then(n.t.bind(null, 'Ys2B', 7))
           },
         },
         S = (function (e) {
@@ -15907,7 +15878,7 @@
         S = n('3zvM'),
         T = n('lMB6'),
         x = n('iChn'),
-        I = Object(S.f)({
+        I = Object(S.e)({
           namespace: 'translationsProfiles',
           fetchOneContext: 'FETCH_PROFILE_TRANSLATION',
           fetchOneEndpoint: function (e) {
@@ -18095,7 +18066,7 @@
           SUCCESS: 'rweb/bookmarkFolders/CREATE_BOOKMARK_FOLDERS_SUCCESS',
           FAILURE: 'rweb/bookmarkFolders/CREATE_BOOKMARK_FOLDERS_FAILURE',
         }),
-        b = Object(h.f)({ namespace: 'bookmarkFolders' }),
+        b = Object(h.e)({ namespace: 'bookmarkFolders' }),
         _ = Object(m.a)(function (e) {
           return Object(l.a)(e)
         }),
@@ -18256,7 +18227,7 @@
             return Promise.resolve(r([Object(u.a)(e).removeTweets(i()({}, t, !0)), o.injectItems([e])]))
           }
         },
-        S = a()(a()(a()({}, b), w), {}, { customActionTypes: Object(h.e)(w) })
+        S = a()(a()(a()({}, b), w), {}, { customActionTypes: Object(h.d)(w) })
       t.b = p.a.register(S)
     },
     HsFH: function (e, t, n) {
@@ -19132,6 +19103,148 @@
       })
       var r = n('3XMw'),
         i = { defaultToast: { text: n.n(r).a.e639775e }, showToast: !0 }
+    },
+    IZ3v: function (e, t, n) {
+      'use strict'
+      n.d(t, 'b', function () {
+        return h
+      }),
+        n.d(t, 'c', function () {
+          return m
+        }),
+        n.d(t, 'a', function () {
+          return g
+        })
+      var r = n('K1iM'),
+        i = n.n(r),
+        o = n('yiKp'),
+        a = n.n(o),
+        s = n('ddV6'),
+        c = n.n(s),
+        l = (n('yH/f'), n('2G9S'), n('z84I'), n('M+/F'), n('hBpG'), n('7x/C'), n('+KXO'), n('uuwS')),
+        u = n.n(l),
+        d = n('tZIO'),
+        p = Object.freeze({
+          Cashtag: 'cashtag',
+          Hashtag: 'hashtag',
+          Mention: 'mention',
+          Url: 'url',
+          List: 'twitterList',
+        }),
+        f = Object.freeze({ CashtagClick: 'cashtag_click', HashtagClick: 'hashtag_click' })
+      function h(e) {
+        return e.screenName ? p.Mention : e.hashtag ? p.Hashtag : e.cashtag ? p.Cashtag : e.url ? p.Url : null
+      }
+      function m(e, t) {
+        switch (e) {
+          case p.Cashtag:
+            return 'https://twitter.com/search?q='
+              .concat(encodeURIComponent(''.concat(t)), '&src=')
+              .concat(f.CashtagClick)
+          case p.Hashtag:
+            return 'https://twitter.com/search?q='
+              .concat(encodeURIComponent(''.concat(t)), '&src=')
+              .concat(f.HashtagClick)
+          case p.Mention:
+            return 'https://twitter.com/'.concat(t)
+          case p.List:
+            return 'https://twitter.com/i/lists/'.concat(t)
+          case p.Url:
+            return t
+        }
+      }
+      var v = {
+        cashtag: function (e, t) {
+          return {
+            color: 'link',
+            link: m(p.Cashtag, '$'.concat(t.text)),
+            ref: t,
+            text: '$'.concat(t.text),
+            type: p.Cashtag,
+          }
+        },
+        hashtag: function (e, t) {
+          return {
+            color: 'link',
+            link: m(p.Hashtag, '#'.concat(t.text)),
+            ref: t,
+            text: '#'.concat(t.text),
+            type: p.Hashtag,
+          }
+        },
+        mention: function (e, t) {
+          return {
+            color: 'link',
+            link: m(p.Mention, t.screenName),
+            ref: t,
+            text: '@'.concat(t.screenName),
+            type: p.Mention,
+          }
+        },
+        text: function (e, t) {
+          return {
+            ref: {},
+            text: d.a.replaceCarriageReturns(e),
+            type: 'text',
+            weight: 'Strong' === t ? 'bold' : void 0,
+          }
+        },
+        twitterList: function (e, t) {
+          return { color: 'normal', link: m(p.List, t.id), ref: t, text: e, type: p.List, weight: 'bold' }
+        },
+        url: function (e, t) {
+          return { color: 'link', link: m(p.Url, t.url), ref: t, text: e, type: p.Url }
+        },
+        user: function (e, t) {
+          return { ref: t, text: e, type: 'user', weight: 'bold' }
+        },
+      }
+      function g(e, t) {
+        var n = []
+        if (t.length) {
+          var r,
+            o = (function (e, t) {
+              return e.map(function (e) {
+                var n = u()(t, e.fromIndex, e.toIndex),
+                  r = c()(n, 2),
+                  i = r[0],
+                  o = r[1]
+                return a()(a()({}, e), {}, { fromIndex: i, toIndex: o })
+              })
+            })(t, e),
+            s = 0,
+            l = i()(o)
+          try {
+            var d = function () {
+              var t = r.value,
+                i = t.format,
+                o = t.fromIndex,
+                a = t.ref,
+                c = t.toIndex
+              c !== s && o > s && n.push(v.text(e.slice(s, o)))
+              var l = e.slice(o, c)
+              if (a) {
+                var u = Object.keys(a).find(function (e) {
+                  return null != a[e]
+                })
+                if (u) {
+                  var d = v[u]
+                  d ? n.push(d(l, a[u])) : n.push(v.text(l))
+                }
+              } else n.push(v.text(l, i))
+              s = c
+            }
+            for (l.s(); !(r = l.n()).done; ) d()
+          } catch (f) {
+            l.e(f)
+          } finally {
+            l.f()
+          }
+          var p = e.length
+          s < p && n.push(v.text(e.slice(s)))
+        } else n.push(v.text(e))
+        return n
+      }
     },
     IbSy: function (e, t, n) {
       'use strict'
@@ -20254,7 +20367,7 @@
         a = n('RuTB'),
         s = Object(o.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(185)]).then(n.bind(null, 'VeNJ'))
+            return Promise.all([n.e(0), n.e(186)]).then(n.bind(null, 'VeNJ'))
           },
           renderPlaceholder: function (e, t) {
             return i.a.createElement(a.a, { hasError: e, onRetry: t })
@@ -20795,7 +20908,7 @@
         c = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(244)]).then(n.bind(null, 'lX7a'))
+              return Promise.all([n.e(0), n.e(245)]).then(n.bind(null, 'lX7a'))
             },
             loaderKey: 'defaultUserLoader',
             loaderOptions: e,
@@ -23158,7 +23271,7 @@
         ne = (n('JtPf'), n('zb92')),
         re = Object(ne.a)({
           loader: function () {
-            return n.e(205).then(n.bind(null, '5Yok'))
+            return n.e(206).then(n.bind(null, '5Yok'))
           },
         }),
         ie = (n('uFXj'), n('IqLm')),
@@ -23211,7 +23324,7 @@
         ye = n('RuTB'),
         be = Object(ne.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(3), n.e(4), n.e(10), n.e(79)]).then(n.bind(null, 'x8Sc'))
+            return Promise.all([n.e(0), n.e(3), n.e(4), n.e(13), n.e(79)]).then(n.bind(null, 'x8Sc'))
           },
           renderPlaceholder: function (e, t) {
             return E.a.createElement(ye.a, { hasError: e, onRetry: t })
@@ -23219,7 +23332,7 @@
         }),
         _e = Object(ne.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(3), n.e(4), n.e(10), n.e(85)]).then(n.bind(null, 'RrO2'))
+            return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(85)]).then(n.bind(null, 'RrO2'))
           },
           renderPlaceholder: function (e, t) {
             return E.a.createElement(ye.a, { hasError: e, onRetry: t })
@@ -23259,7 +23372,7 @@
         Ne = n('v6aA'),
         je = n('E0cF'),
         Ue = n('OIC0'),
-        He = n('qqET'),
+        He = n('+pKb'),
         Ke = n('/Ikv'),
         ze = n('7JQg'),
         Ve = n('cFuS'),
@@ -24655,7 +24768,7 @@
         i = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(221)]).then(n.bind(null, 'J23q'))
+              return Promise.all([n.e(0), n.e(222)]).then(n.bind(null, 'J23q'))
             },
             loaderKey: 'defaultMessageLoader',
             loaderOptions: e,
@@ -24673,14 +24786,14 @@
         c = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf')),
         l = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(212)]).then(n.bind(null, 'Xl5C'))
+            return Promise.all([n.e(0), n.e(213)]).then(n.bind(null, 'Xl5C'))
           },
           loaderKey: 'defaultGapLoader',
           strategy: c.a.Critical,
         },
         u = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(212)]).then(n.bind(null, 'ex5I'))
+            return Promise.all([n.e(0), n.e(213)]).then(n.bind(null, 'ex5I'))
           },
           loaderKey: 'showMoreGapLoader',
           strategy: c.a.Critical,
@@ -24688,7 +24801,7 @@
         d = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(212)]).then(n.bind(null, 'zXWy'))
+              return Promise.all([n.e(0), n.e(213)]).then(n.bind(null, 'zXWy'))
             },
             loaderKey: 'showMoreThreadsPromptGapLoader',
             loaderOptions: e,
@@ -24723,7 +24836,7 @@
               ((r = { onLowQualityCursorShown: h, transparentCursorsEnabled: p, withRuxInjections: !!s }),
               {
                 loader: function () {
-                  return Promise.all([n.e(0), n.e(212)]).then(n.bind(null, 'aqRH'))
+                  return Promise.all([n.e(0), n.e(213)]).then(n.bind(null, 'aqRH'))
                 },
                 loaderKey: 'showMoreThreadsGapLoader',
                 loaderOptions: r,
@@ -25194,7 +25307,7 @@
         f = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf')),
         h = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(350)]).then(n.bind(null, 'jv0Q'))
+            return Promise.all([n.e(0), n.e(351)]).then(n.bind(null, 'jv0Q'))
           },
           loaderKey: 'defaultNewEntriesGapLoader',
           strategy: f.a.Critical,
@@ -25209,14 +25322,14 @@
           })),
         y = {
           loader: function () {
-            return n.e(352).then(n.bind(null, 'YIsX'))
+            return n.e(353).then(n.bind(null, 'YIsX'))
           },
           loaderKey: 'onboardingLikesStartPromptLoader',
           strategy: f.a.Critical,
         },
         b = {
           loader: function () {
-            return n.e(352).then(n.bind(null, '3ukl'))
+            return n.e(353).then(n.bind(null, '3ukl'))
           },
           loaderKey: 'relevancePromptLoader',
           strategy: f.a.Critical,
@@ -25232,7 +25345,7 @@
         C = n('67iF'),
         k = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(241)]).then(n.bind(null, 'VSZh'))
+            return Promise.all([n.e(0), n.e(242)]).then(n.bind(null, 'VSZh'))
           },
           loaderKey: 'topicFollowPromptDefaultLoader',
           strategy: f.a.Critical,
@@ -25246,7 +25359,7 @@
         A = n('Ka9G'),
         P = {
           loader: function () {
-            return n.e(246).then(n.bind(null, 'bXO0'))
+            return n.e(247).then(n.bind(null, 'bXO0'))
           },
           loaderKey: 'topicTileLoader',
           strategy: f.a.Critical,
@@ -25725,109 +25838,109 @@
     },
     'S3l+': function (e, t, n) {
       'use strict'
-      n.d(t, 'q', function () {
+      n.d(t, 'p', function () {
         return Z
       }),
-        n.d(t, 'o', function () {
+        n.d(t, 'n', function () {
           return $
         }),
-        n.d(t, 'r', function () {
+        n.d(t, 'q', function () {
           return ee
         }),
-        n.d(t, 's', function () {
+        n.d(t, 'r', function () {
           return te
         }),
-        n.d(t, 'p', function () {
+        n.d(t, 'o', function () {
           return ne
         }),
-        n.d(t, 'U', function () {
+        n.d(t, 'T', function () {
           return re
         }),
-        n.d(t, 'y', function () {
+        n.d(t, 'x', function () {
           return ie
         }),
-        n.d(t, 'u', function () {
+        n.d(t, 't', function () {
           return oe
         }),
-        n.d(t, 'W', function () {
+        n.d(t, 'V', function () {
           return ae
         }),
-        n.d(t, 'B', function () {
+        n.d(t, 'A', function () {
           return se
         }),
-        n.d(t, 'J', function () {
+        n.d(t, 'I', function () {
           return ce
         }),
-        n.d(t, 'Q', function () {
+        n.d(t, 'P', function () {
           return le
         }),
-        n.d(t, 't', function () {
+        n.d(t, 's', function () {
           return ue
         }),
-        n.d(t, 'K', function () {
+        n.d(t, 'J', function () {
           return de
         }),
-        n.d(t, 'T', function () {
+        n.d(t, 'S', function () {
           return pe
         }),
-        n.d(t, 'V', function () {
+        n.d(t, 'U', function () {
           return fe
         }),
-        n.d(t, 'R', function () {
+        n.d(t, 'Q', function () {
           return he
         }),
-        n.d(t, 'S', function () {
+        n.d(t, 'R', function () {
           return me
         }),
-        n.d(t, 'x', function () {
+        n.d(t, 'w', function () {
           return ve
         }),
-        n.d(t, 'w', function () {
+        n.d(t, 'v', function () {
           return ge
         }),
-        n.d(t, 'E', function () {
+        n.d(t, 'D', function () {
           return ye
         }),
-        n.d(t, 'z', function () {
+        n.d(t, 'y', function () {
           return be
         }),
-        n.d(t, 'A', function () {
+        n.d(t, 'z', function () {
           return _e
         }),
-        n.d(t, 'k', function () {
+        n.d(t, 'j', function () {
           return we
         }),
-        n.d(t, 'G', function () {
+        n.d(t, 'F', function () {
           return Ee
         }),
-        n.d(t, 'D', function () {
+        n.d(t, 'C', function () {
           return Ce
         }),
-        n.d(t, 'C', function () {
+        n.d(t, 'B', function () {
           return ke
         }),
-        n.d(t, 'I', function () {
+        n.d(t, 'H', function () {
           return Se
         }),
-        n.d(t, 'H', function () {
+        n.d(t, 'G', function () {
           return Te
         }),
-        n.d(t, 'P', function () {
+        n.d(t, 'O', function () {
           return xe
         }),
-        n.d(t, 'O', function () {
+        n.d(t, 'N', function () {
           return Ie
         }),
-        n.d(t, 'j', function () {
+        n.d(t, 'i', function () {
           return Oe
         }),
-        n.d(t, 'L', function () {
+        n.d(t, 'K', function () {
           return Re
         }),
-        n.d(t, 'M', function () {
+        n.d(t, 'L', function () {
           return Ae
         }),
-        n.d(t, 'N', function () {
+        n.d(t, 'M', function () {
           return Pe
         })
       var r = n('KEM+'),
@@ -25870,7 +25983,7 @@
         n.d(t, 'h', function () {
           return y.h
         }),
-        n.d(t, 'i', function () {
+        n.d(t, 'k', function () {
           return y.i
         }),
         n.d(t, 'l', function () {
@@ -25879,17 +25992,14 @@
         n.d(t, 'm', function () {
           return y.k
         }),
-        n.d(t, 'n', function () {
+        n.d(t, 'u', function () {
           return y.l
         }),
-        n.d(t, 'v', function () {
+        n.d(t, 'E', function () {
           return y.m
         }),
-        n.d(t, 'F', function () {
+        n.d(t, 'W', function () {
           return y.n
-        }),
-        n.d(t, 'X', function () {
-          return y.o
         })
       var b = ['targetedLocations'],
         _ = {
@@ -30361,7 +30471,7 @@
         H = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         K = Object(H.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(21), n.e(189)]).then(n.bind(null, '0af8'))
+            return Promise.all([n.e(0), n.e(21), n.e(190)]).then(n.bind(null, '0af8'))
           },
         }),
         z = 'primaryColumn',
@@ -31430,85 +31540,48 @@
     },
     WWyu: function (e, t, n) {
       'use strict'
-      n.d(t, 'a', function () {
-        return w
-      })
-      var r = n('VrFO'),
+      n('6U7i')
+      var r = n('ERkP'),
         i = n.n(r),
-        o = n('Y9Ll'),
-        a = n.n(o),
-        s = n('5Yy7'),
-        c = n.n(s),
-        l = n('2VqO'),
-        u = n.n(l),
-        d = (n('6U7i'), n('ERkP')),
-        p = n.n(d),
-        f = function (e, t, n) {
+        o = function (e, t, n) {
           return new Date(e, t, n)
         },
-        h = n('3XMw'),
-        m = n.n(h),
-        v = m.a.a46f80ab,
-        g = m.a.c7905f88,
-        y = m.a.ba2e82a1,
-        b = m.a.da44942d,
-        _ = m.a.d7d71244,
-        w = (function (e) {
-          c()(n, e)
-          var t = u()(n)
-          function n() {
-            return i()(this, n), t.apply(this, arguments)
-          }
-          return (
-            a()(n, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.birthdate,
-                    n = t.day,
-                    r = t.month,
-                    i = t.year,
-                    o = e.withBornPrefixText,
-                    a = !!i,
-                    s = !!r,
-                    c = !!n,
-                    l = !a && s && c,
-                    u = a && (!s || !c)
-                  return a && s && c
-                    ? this._getFullBirthdate(Number(i), Number(r), Number(n), o)
-                    : l
-                    ? this._getMonthDayBirthdate(Number(r), Number(n), o)
-                    : u
-                    ? this._getYearOnlyBirthdate(Number(i), o)
-                    : null
-                },
-              },
-              {
-                key: '_getFullBirthdate',
-                value: function (e, t, n, r) {
-                  var i = f(e, t - 1, n)
-                  return r ? v({ birthdate: y(i) }) : y(i)
-                },
-              },
-              {
-                key: '_getMonthDayBirthdate',
-                value: function (e, t, n) {
-                  var r = f(0, e - 1, t)
-                  return n ? v({ birthdate: b(r) }) : b(r)
-                },
-              },
-              {
-                key: '_getYearOnlyBirthdate',
-                value: function (e, t) {
-                  var n = f(e, 0, 1)
-                  return t ? g({ year: _(n) }) : _(n)
-                },
-              },
-            ]),
-            n
-          )
-        })(p.a.PureComponent)
+        a = n('3XMw'),
+        s = n.n(a),
+        c = s.a.a46f80ab,
+        l = s.a.c7905f88,
+        u = s.a.ba2e82a1,
+        d = s.a.da44942d,
+        p = s.a.d7d71244
+      function f(e) {
+        var t = e.birthdate,
+          n = e.withBornPrefixText,
+          r = t.day,
+          i = t.month,
+          a = t.year,
+          s = !!a,
+          f = !!i,
+          h = !!r,
+          m = !s && f && h,
+          v = s && (!f || !h)
+        return s && f && h
+          ? (function (e, t, n, r) {
+              var i = o(e, t - 1, n)
+              return r ? c({ birthdate: u(i) }) : u(i)
+            })(Number(a), Number(i), Number(r), n)
+          : m
+          ? (function (e, t, n) {
+              var r = o(0, e - 1, t)
+              return n ? c({ birthdate: d(r) }) : d(r)
+            })(Number(i), Number(r), n)
+          : v
+          ? (function (e, t) {
+              var n = o(e, 0, 1)
+              return t ? l({ year: p(n) }) : p(n)
+            })(Number(a), n)
+          : null
+      }
+      t.a = i.a.memo(f)
     },
     WbhC: function (e, t, n) {
       'use strict'
@@ -35864,7 +35937,7 @@
         c = n.n(s),
         l = (n('7x/C'), n('JtPf'), n('KqXw'), n('3uku'), n('lMB6')),
         u = n('3zvM'),
-        d = Object(u.f)({ namespace: 'topics' }),
+        d = Object(u.e)({ namespace: 'topics' }),
         p = Object(u.b)(d, {
           context: 'FETCH_TOPIC',
           endpoint: function (e) {
@@ -35950,7 +36023,7 @@
             context: 'UNDO_NOT_INTERESTED_TOPIC',
           }),
         },
-        v = a()(a()(a()(a()(a()({}, d), p), f), m), {}, { customActionTypes: Object(u.e)(m) })
+        v = a()(a()(a()(a()(a()({}, d), p), f), m), {}, { customActionTypes: Object(u.d)(m) })
       t.a = l.a.register(v)
     },
     ZlNV: function (e, t, n) {
@@ -37538,18 +37611,18 @@
     },
     dCqJ: function (e, t, n) {
       'use strict'
-      var r = n('VrFO'),
+      var r = n('ERkP'),
         i = n.n(r),
-        o = n('Y9Ll'),
-        a = n.n(o),
-        s = n('5Yy7'),
-        c = n.n(s),
-        l = n('2VqO'),
-        u = n.n(l),
-        d = n('ERkP'),
-        p = n.n(d),
-        f = n('cm6r'),
-        h = n('1Pcy'),
+        o = n('cm6r'),
+        a = n('VrFO'),
+        s = n.n(a),
+        c = n('Y9Ll'),
+        l = n.n(c),
+        u = n('1Pcy'),
+        d = n.n(u),
+        p = n('5Yy7'),
+        f = n.n(p),
+        h = n('2VqO'),
         m = n.n(h),
         v = n('KEM+'),
         g = n.n(v),
@@ -37562,72 +37635,72 @@
         k = 'NO_SPONSORSHIP',
         S = 'ISSUE',
         T = (function (e) {
-          c()(n, e)
-          var t = u()(n)
+          f()(n, e)
+          var t = m()(n)
           function n() {
             var e
-            i()(this, n)
+            s()(this, n)
             for (var r = arguments.length, o = new Array(r), a = 0; a < r; a++) o[a] = arguments[a]
             return (
               (e = t.call.apply(t, [this].concat(o))),
-              g()(m()(e), '_renderDisclaimerDetails', function () {
+              g()(d()(e), '_renderDisclaimerDetails', function () {
                 var t = e.props,
                   n = t.onPoliticalSponsorWebsiteClick,
                   r = t.promotedContent
                 if (!r.adMetadataContainer) return null
-                var i = r.adMetadataContainer,
-                  o = i.disclaimerType,
-                  a = i.sponsorshipCandidate,
-                  s = i.sponsorshipOrganization,
-                  c = i.sponsorshipOrganizationWebsite,
-                  l = i.sponsorshipType,
-                  u =
-                    c && o !== S
-                      ? p.a.createElement(y.b, { link: c, onClick: n })
-                      : p.a.createElement(y.b, { color: 'gray700', size: 'subtext2' })
-                if (!s) return null
-                var d = p.a.createElement(
+                var o = r.adMetadataContainer,
+                  a = o.disclaimerType,
+                  s = o.sponsorshipCandidate,
+                  c = o.sponsorshipOrganization,
+                  l = o.sponsorshipOrganizationWebsite,
+                  u = o.sponsorshipType,
+                  d =
+                    l && a !== S
+                      ? i.a.createElement(y.b, { link: l, onClick: n })
+                      : i.a.createElement(y.b, { color: 'gray700', size: 'subtext2' })
+                if (!c) return null
+                var p = i.a.createElement(
                     w.a.I18NFormatMessage,
                     { $i18n: 'e1e348dc' },
-                    p.a.cloneElement(u, null, w.a.b1e5bc63({ sponsorshipOrganization: s })),
+                    i.a.cloneElement(d, null, w.a.b1e5bc63({ sponsorshipOrganization: c })),
                   ),
-                  f = p.a.createElement(
+                  f = i.a.createElement(
                     w.a.I18NFormatMessage,
                     { $i18n: 'c7dea0d0' },
-                    p.a.cloneElement(u, null, w.a.a84fcff2({ sponsorshipOrganization: s })),
+                    i.a.cloneElement(d, null, w.a.a84fcff2({ sponsorshipOrganization: c })),
                   ),
-                  h = a
-                    ? p.a.createElement(
+                  h = s
+                    ? i.a.createElement(
                         w.a.I18NFormatMessage,
-                        { $i18n: 'b5c2371a', sponsorshipCandidate: a },
-                        p.a.cloneElement(u, null, w.a.fd985325({ sponsorshipOrganization: s })),
+                        { $i18n: 'b5c2371a', sponsorshipCandidate: s },
+                        i.a.cloneElement(d, null, w.a.fd985325({ sponsorshipOrganization: c })),
                       )
                     : null
-                return p.a.createElement(
+                return i.a.createElement(
                   y.b,
                   { color: 'gray700', size: 'subtext2' },
-                  o === S ? d : l === k ? f : l === C ? h : d,
+                  a === S ? p : u === k ? f : u === C ? h : p,
                 )
               }),
-              g()(m()(e), '_renderLearnMoreLink', function () {
+              g()(d()(e), '_renderLearnMoreLink', function () {
                 var t = e.props,
                   n = t.onPromotedDisclaimerLearnMoreClick,
                   r = t.promotedContent,
-                  i = t.tweet,
-                  o = (r.adMetadataContainer || {}).disclaimerType === S ? 'issue_ad' : 'political_ad',
-                  a = 'http://ads.twitter.com/transparency/ads/'.concat(i.user.screen_name, '/tweet/').concat(i.id_str)
-                return p.a.createElement(y.b, { link: a, onClick: n(o), size: 'subtext2', style: x.learnMore }, E)
+                  o = t.tweet,
+                  a = (r.adMetadataContainer || {}).disclaimerType === S ? 'issue_ad' : 'political_ad',
+                  s = 'http://ads.twitter.com/transparency/ads/'.concat(o.user.screen_name, '/tweet/').concat(o.id_str)
+                return i.a.createElement(y.b, { link: s, onClick: n(a), size: 'subtext2', style: x.learnMore }, E)
               }),
               e
             )
           }
           return (
-            a()(n, [
+            l()(n, [
               {
                 key: 'render',
                 value: function () {
-                  return p.a.createElement(
-                    p.a.Fragment,
+                  return i.a.createElement(
+                    i.a.Fragment,
                     null,
                     this._renderDisclaimerDetails(),
                     this._renderLearnMoreLink(),
@@ -37637,77 +37710,60 @@
             ]),
             n
           )
-        })(p.a.Component),
+        })(i.a.Component),
         x = b.a.create(function (e) {
           return { learnMore: { alignSelf: 'flex-start' } }
         }),
         I = n('e5HP'),
         O = n('Z6aJ'),
-        R = n('MWbm'),
-        A = (function (e) {
-          c()(n, e)
-          var t = u()(n)
-          function n() {
-            return i()(this, n), t.apply(this, arguments)
-          }
-          return (
-            a()(n, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.onPoliticalSponsorWebsiteClick,
-                    n = e.onPromotedDisclaimerLearnMoreClick,
-                    r = e.onPromotedIndicatorClick,
-                    i = e.promotedContent,
-                    o = e.promotedContentAdvertiser,
-                    a = e.style,
-                    s = e.testID,
-                    c = e.tweet,
-                    l = e.withCircleIcon,
-                    u = O.a.isPromoted(i),
-                    d =
-                      !!i &&
-                      ((i.adMetadataContainer &&
-                        ('POLITICAL' === i.adMetadataContainer.disclaimerType ||
-                          'ISSUE' === i.adMetadataContainer.disclaimerType)) ||
-                        'political' === O.a.getDisclosureType(i) ||
-                        'issue' === O.a.getDisclosureType(i))
-                  return u
-                    ? p.a.createElement(
-                        R.a,
-                        { style: a, testID: s },
-                        o && i
-                          ? p.a.createElement(
-                              f.a,
-                              {
-                                interactiveStyles: null,
-                                link: {
-                                  pathname: 'https://twitter.com/'.concat(o.screen_name),
-                                  state: { promotedTweetState: i },
-                                },
-                                onPress: r,
-                              },
-                              p.a.createElement(I.a, { promotedContent: i, withCircleIcon: l }),
-                            )
-                          : !!i && p.a.createElement(I.a, { promotedContent: i }),
-                        d && i
-                          ? p.a.createElement(T, {
-                              onPoliticalSponsorWebsiteClick: t,
-                              onPromotedDisclaimerLearnMoreClick: n,
-                              promotedContent: i,
-                              tweet: c,
-                            })
-                          : null,
-                      )
-                    : null
-                },
-              },
-            ]),
-            n
-          )
-        })(p.a.PureComponent)
-      t.a = A
+        R = n('MWbm')
+      t.a = function (e) {
+        var t = e.onPoliticalSponsorWebsiteClick,
+          n = e.onPromotedDisclaimerLearnMoreClick,
+          r = e.onPromotedIndicatorClick,
+          a = e.promotedContent,
+          s = e.promotedContentAdvertiser,
+          c = e.style,
+          l = e.testID,
+          u = e.tweet,
+          d = e.withCircleIcon,
+          p = O.a.isPromoted(a),
+          f =
+            !!a &&
+            ((a.adMetadataContainer &&
+              ('POLITICAL' === a.adMetadataContainer.disclaimerType ||
+                'ISSUE' === a.adMetadataContainer.disclaimerType)) ||
+              'political' === O.a.getDisclosureType(a) ||
+              'issue' === O.a.getDisclosureType(a))
+        return p
+          ? i.a.createElement(
+              R.a,
+              { style: c, testID: l },
+              s && a
+                ? i.a.createElement(
+                    o.a,
+                    {
+                      interactiveStyles: null,
+                      link: {
+                        pathname: 'https://twitter.com/'.concat(s.screen_name),
+                        state: { promotedTweetState: a },
+                      },
+                      onPress: r,
+                    },
+                    i.a.createElement(I.a, { promotedContent: a, withCircleIcon: d }),
+                  )
+                : !!a && i.a.createElement(I.a, { promotedContent: a }),
+              f && a
+                ? i.a.createElement(T, {
+                    onPoliticalSponsorWebsiteClick: t,
+                    onPromotedDisclaimerLearnMoreClick: n,
+                    promotedContent: a,
+                    tweet: u,
+                  })
+                : null,
+            )
+          : null
+      }
     },
     dFWS: function (e, t, n) {
       'use strict'
@@ -38908,7 +38964,7 @@
         P = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         L = Object(P.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(173)]).then(n.bind(null, 'A+RP'))
+            return Promise.all([n.e(0), n.e(174)]).then(n.bind(null, 'A+RP'))
           },
         }),
         M = n('FQwk'),
@@ -38918,7 +38974,7 @@
         N = n('XTNN'),
         j = Object(P.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(184)]).then(n.bind(null, 'sojc'))
+            return Promise.all([n.e(0), n.e(185)]).then(n.bind(null, 'sojc'))
           },
         }),
         U = function (e, t) {
@@ -38964,7 +39020,7 @@
         ne = n('ZNT5'),
         re = Object(P.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(21), n.e(189)]).then(n.bind(null, 'LHcr'))
+            return Promise.all([n.e(0), n.e(21), n.e(190)]).then(n.bind(null, 'LHcr'))
           },
         }),
         ie = n('v6aA'),
@@ -43061,7 +43117,7 @@
         c = n('RuTB'),
         l = Object(s.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(165)]).then(n.bind(null, 'FwSR'))
+            return Promise.all([n.e(0), n.e(166)]).then(n.bind(null, 'FwSR'))
           },
           renderPlaceholder: function (e, t) {
             return a.a.createElement(c.a, { hasError: e, onRetry: t })
@@ -43113,7 +43169,7 @@
       var r = n('zb92')
       t.a = Object(r.a)({
         loader: function () {
-          return Promise.all([n.e(0), n.e(7), n.e(217)]).then(n.bind(null, '57t6'))
+          return Promise.all([n.e(0), n.e(7), n.e(218)]).then(n.bind(null, '57t6'))
         },
       })
     },
@@ -43567,26 +43623,27 @@
                         value: e.value,
                       },
                       z = { maxRows: b || C, minRows: C, useCacheForDOMMeasurements: H },
-                      V = { enterkeyhint: M, type: U },
-                      W = [G.alignLeft],
-                      q = w ? z : V,
-                      Y = w ? [] : W,
-                      X = Object.assign(
+                      V = [G.alignLeft],
+                      W = { enterkeyhint: M, type: U },
+                      q = [G.alignLeft],
+                      Y = w ? z : W,
+                      X = w ? V : q,
+                      Q = Object.assign(
                         {},
                         a()(
-                          a()(a()({}, K), q),
+                          a()(a()({}, K), Y),
                           {},
                           {
                             dir: 'auto',
                             onChange: S,
                             onPaste: this._onPaste,
                             ref: this._setTextInputRef,
-                            style: [G.root, F, { placeholderTextColor: L }].concat(i()(Y)),
+                            style: [G.root, F, { placeholderTextColor: L }].concat(i()(X)),
                           },
                         ),
                       ),
-                      Q = w ? N : 'input'
-                    return Object(j.a)(Q, X)
+                      J = w ? N : 'input'
+                    return Object(j.a)(J, Q)
                   },
                 },
                 {
@@ -43837,7 +43894,7 @@
         c = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(17), n.e(210)]).then(n.bind(null, 'uuEz'))
+              return Promise.all([n.e(0), n.e(17), n.e(211)]).then(n.bind(null, 'uuEz'))
             },
             loaderOptions: e,
             loaderKey: 'eventSummaryDefaultLoader',
@@ -44249,7 +44306,7 @@
       var r = n('zb92'),
         i = Object(r.a)({
           loader: function () {
-            return n.e(229).then(n.bind(null, 'hIbf'))
+            return n.e(230).then(n.bind(null, 'hIbf'))
           },
         })
       t.a = i
@@ -44833,7 +44890,7 @@
         P = n('wqZ5'),
         L = d.a('lists', 'UPLOAD_MEDIA'),
         M = d.a('lists', 'UPDATE_MEDIA'),
-        D = Object(R.f)({ namespace: 'lists' }),
+        D = Object(R.e)({ namespace: 'lists' }),
         F = Object(R.b)(D, {
           context: 'FETCH_LIST',
           endpoint: function (e) {
@@ -49331,7 +49388,7 @@
         p = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(17), n.e(23), n.e(219)]).then(n.bind(null, '1Ws7'))
+              return Promise.all([n.e(0), n.e(17), n.e(23), n.e(220)]).then(n.bind(null, '1Ws7'))
             },
             loaderKey: 'listLoader',
             loaderOptions: e,
@@ -49340,7 +49397,7 @@
         },
         f = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(17), n.e(23), n.e(219)]).then(n.bind(null, 'O4YN'))
+            return Promise.all([n.e(0), n.e(17), n.e(23), n.e(220)]).then(n.bind(null, 'O4YN'))
           },
           loaderKey: 'tileLoader',
           strategy: d.a.Critical,
@@ -49420,48 +49477,26 @@
     },
     s4rk: function (e, t, n) {
       'use strict'
-      var r = n('VrFO'),
+      n('z84I')
+      var r = n('ERkP'),
         i = n.n(r),
-        o = n('Y9Ll'),
-        a = n.n(o),
-        s = n('5Yy7'),
-        c = n.n(s),
-        l = n('2VqO'),
-        u = n.n(l),
-        d = (n('z84I'), n('ERkP')),
-        p = n.n(d),
-        f = n('muX9'),
-        h = n('ikiw'),
-        m = n('O6Yq'),
-        v = (function (e) {
-          c()(n, e)
-          var t = u()(n)
-          function n() {
-            return i()(this, n), t.apply(this, arguments)
-          }
-          return (
-            a()(n, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props.canonical,
-                    t = Object(m.c)(e),
-                    n = Object(m.b)(e)
-                  return p.a.createElement(
-                    f.a,
-                    null,
-                    p.a.createElement('link', { href: n, hrefLang: 'x-default', rel: 'alternate' }),
-                    h.d.map(function (e) {
-                      return p.a.createElement('link', { href: t[e], hrefLang: e, key: e, rel: 'alternate' })
-                    }),
-                  )
-                },
-              },
-            ]),
-            n
-          )
-        })(p.a.PureComponent)
-      t.a = v
+        o = n('muX9'),
+        a = n('ikiw'),
+        s = n('O6Yq')
+      function c(e) {
+        var t = e.canonical,
+          n = Object(s.c)(t),
+          r = Object(s.b)(t)
+        return i.a.createElement(
+          o.a,
+          null,
+          i.a.createElement('link', { href: r, hrefLang: 'x-default', rel: 'alternate' }),
+          a.d.map(function (e) {
+            return i.a.createElement('link', { href: n[e], hrefLang: e, key: e, rel: 'alternate' })
+          }),
+        )
+      }
+      t.a = i.a.memo(c)
     },
     sIe2: function (e, t, n) {
       'use strict'
@@ -50076,163 +50111,51 @@
     tLTi: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return y
+        return s
       })
       n('z84I'), n('hBvt'), n('2G9S')
       var r = n('ERkP'),
         i = n.n(r),
         o = n('t62R'),
-        a = n('K1iM'),
-        s = n.n(a),
-        c = n('yiKp'),
-        l = n.n(c),
-        u = n('ddV6'),
-        d = n.n(u),
-        p = (n('yH/f'), n('M+/F'), n('hBpG'), n('7x/C'), n('+KXO'), n('uuwS')),
-        f = n.n(p),
-        h = n('tZIO'),
-        m = Object.freeze({ CashtagClick: 'cashtag_click', HashtagClick: 'hashtag_click' }),
-        v = {
-          cashtag: function (e, t) {
-            return {
-              color: 'link',
-              link: 'https://twitter.com/search?q='
-                .concat(encodeURIComponent('$'.concat(t.text)), '&src=')
-                .concat(m.CashtagClick),
-              ref: t,
-              text: '$'.concat(t.text),
-              type: 'cashtag',
-            }
-          },
-          hashtag: function (e, t) {
-            return {
-              color: 'link',
-              link: 'https://twitter.com/search?q='
-                .concat(encodeURIComponent('#'.concat(t.text)), '&src=')
-                .concat(m.HashtagClick),
-              ref: t,
-              text: '#'.concat(t.text),
-              type: 'hashtag',
-            }
-          },
-          mention: function (e, t) {
-            return {
-              color: 'link',
-              link: 'https://twitter.com/'.concat(t.screenName),
-              ref: t,
-              text: '@'.concat(t.screenName),
-              type: 'mention',
-            }
-          },
-          text: function (e, t) {
-            return {
-              ref: {},
-              text: h.a.replaceCarriageReturns(e),
-              type: 'text',
-              weight: 'Strong' === t ? 'bold' : void 0,
-            }
-          },
-          twitterList: function (e, t) {
-            return {
-              color: 'normal',
-              link: 'https://twitter.com/i/lists/'.concat(t.id),
-              ref: t,
-              text: e,
-              type: 'twitterList',
-              weight: 'bold',
-            }
-          },
-          url: function (e, t) {
-            return { color: 'link', link: t.url, ref: t, text: e, type: 'url' }
-          },
-          user: function (e, t) {
-            return { ref: t, text: e, type: 'user', weight: 'bold' }
-          },
-        }
-      function g(e, t) {
-        var n = []
-        if (t.length) {
-          var r,
-            i = (function (e, t) {
-              return e.map(function (e) {
-                var n = f()(t, e.fromIndex, e.toIndex),
-                  r = d()(n, 2),
-                  i = r[0],
-                  o = r[1]
-                return l()(l()({}, e), {}, { fromIndex: i, toIndex: o })
-              })
-            })(t, e),
-            o = 0,
-            a = s()(i)
-          try {
-            var c = function () {
-              var t = r.value,
-                i = t.format,
-                a = t.fromIndex,
-                s = t.ref,
-                c = t.toIndex
-              c !== o && a > o && n.push(v.text(e.slice(o, a)))
-              var l = e.slice(a, c)
-              if (s) {
-                var u = Object.keys(s).find(function (e) {
-                  return null != s[e]
-                })
-                if (u) {
-                  var d = v[u]
-                  d ? n.push(d(l, s[u])) : n.push(v.text(l))
-                }
-              } else n.push(v.text(l, i))
-              o = c
-            }
-            for (a.s(); !(r = a.n()).done; ) c()
-          } catch (p) {
-            a.e(p)
-          } finally {
-            a.f()
-          }
-          var u = e.length
-          o < u && n.push(v.text(e.slice(o)))
-        } else n.push(v.text(e))
-        return n
-      }
-      function y(e) {
+        a = n('IZ3v')
+      function s(e) {
         var t = e.accessibilityRole,
           n = e.align,
           r = e.color,
-          a = e.dir,
-          s = e.entities,
-          c = e.nativeID,
-          l = e.onEntityClick,
-          u = e.renderFragment,
-          d = void 0 === u ? {} : u,
-          p = e.size,
-          f = e.style,
-          h = e.text,
-          m = e.weight,
-          v = e.withHashflags,
-          y = g(h, s)
+          s = e.dir,
+          c = e.entities,
+          l = e.nativeID,
+          u = e.onEntityClick,
+          d = e.renderFragment,
+          p = void 0 === d ? {} : d,
+          f = e.size,
+          h = e.style,
+          m = e.text,
+          v = e.weight,
+          g = e.withHashflags,
+          y = Object(a.a)(m, c)
         return i.a.createElement(
           o.b,
           {
             accessibilityRole: t,
             align: n,
             color: r,
-            dir: a,
-            nativeID: c,
-            size: p,
-            style: f,
-            weight: m,
-            withHashflags: v,
+            dir: s,
+            nativeID: l,
+            size: f,
+            style: h,
+            weight: v,
+            withHashflags: g,
           },
           y.map(function (e, t) {
-            var n = d[e.type],
+            var n = p[e.type],
               r = {
                 children: e.text,
                 color: e.color,
                 link: e.link,
-                onClick: e.link ? l : void 0,
+                onClick: e.link ? u : void 0,
                 weight: e.weight,
-                withHashflags: v,
+                withHashflags: g,
               }
             return i.a.createElement(
               i.a.Fragment,
@@ -50242,7 +50165,7 @@
           }),
         )
       }
-      ;(y.internal_parseRichTextEntities = g), (y.TextFragment = o.b)
+      ;(s.internal_parseRichTextEntities = a.a), (s.TextFragment = o.b)
     },
     tO3r: function (e, t, n) {
       'use strict'
@@ -50623,7 +50546,7 @@
       var r = n('zb92'),
         i = Object(r.a)({
           loader: function () {
-            return n.e(196).then(n.bind(null, '6N3x'))
+            return n.e(197).then(n.bind(null, '6N3x'))
           },
         })
       t.a = i
@@ -50741,7 +50664,7 @@
         i = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(348)]).then(n.bind(null, 'NO+D'))
+              return Promise.all([n.e(0), n.e(349)]).then(n.bind(null, 'NO+D'))
             },
             loaderOptions: e,
             loaderKey: 'inlineTombstoneLoader',
@@ -50750,14 +50673,14 @@
         },
         o = {
           loader: function () {
-            return n.e(357).then(n.bind(null, '1Tet'))
+            return n.e(358).then(n.bind(null, '1Tet'))
           },
           loaderKey: 'tweetUnavailableTombstoneLoader',
           strategy: r.a.Critical,
         },
         a = {
           loader: function () {
-            return n.e(296).then(n.bind(null, '08qV'))
+            return n.e(297).then(n.bind(null, '08qV'))
           },
           loaderKey: 'disconnectedRepliesTombstoneLoader',
           strategy: r.a.Critical,
@@ -56608,7 +56531,7 @@
         ye = n('v6aA'),
         be = n('E0cF'),
         _e = n('OIC0'),
-        we = n('qqET'),
+        we = n('+pKb'),
         Ee = n('/Ikv'),
         Ce = n('Z6aJ'),
         ke = n('lHOd'),
@@ -57738,7 +57661,7 @@
     },
     y0iL: function (e, t, n) {
       'use strict'
-      n.d(t, 'o', function () {
+      n.d(t, 'n', function () {
         return N
       }),
         n.d(t, 'a', function () {
@@ -57747,19 +57670,19 @@
         n.d(t, 'h', function () {
           return U
         }),
-        n.d(t, 'l', function () {
+        n.d(t, 'k', function () {
           return K
         }),
-        n.d(t, 'k', function () {
+        n.d(t, 'j', function () {
           return z
         }),
-        n.d(t, 'j', function () {
+        n.d(t, 'i', function () {
           return V
         }),
         n.d(t, 'd', function () {
           return W
         }),
-        n.d(t, 'm', function () {
+        n.d(t, 'l', function () {
           return Q
         }),
         n.d(t, 'g', function () {
@@ -57774,13 +57697,10 @@
         n.d(t, 'c', function () {
           return ee
         }),
-        n.d(t, 'i', function () {
-          return te
-        }),
         n.d(t, 'b', function () {
           return ne
         }),
-        n.d(t, 'n', function () {
+        n.d(t, 'm', function () {
           return re
         })
       var r = n('ddV6'),
@@ -57915,15 +57835,15 @@
             if (N.includes(s().quickPromote.promoteStatus)) return Promise.resolve()
             if (!x || !m)
               return (
-                Object(R.p)(o)(R.n.promotionError('Unauthorized')), a(Object(h.O)('Unauthorized')), Promise.resolve()
+                Object(R.p)(o)(R.n.promotionError('Unauthorized')), a(Object(h.N)('Unauthorized')), Promise.resolve()
               )
             if (!I)
               return (
                 Object(R.p)(o)(R.n.promotionError('MissingFundingInstrument')),
-                a(Object(h.O)('MissingFundingInstrument')),
+                a(Object(h.N)('MissingFundingInstrument')),
                 Promise.resolve()
               )
-            a(Object(h.O)(null))
+            a(Object(h.N)(null))
             var O = Math.round(1e6 * E),
               A = O * C,
               P = !(null == T || !T.existing_balance.length)
@@ -57942,7 +57862,7 @@
               Object(u.b)(
                 'fetchPromote',
                 a(
-                  Object(h.j)({
+                  Object(h.i)({
                     userId: m,
                     accountId: x,
                     fundingInstrumentId: I,
@@ -57955,7 +57875,7 @@
               )
                 .catch(function () {
                   return (
-                    a(Object(h.O)('NetworkError')), Object(R.p)(o)(R.n.promotionError('NetworkError')), { type: 'fail' }
+                    a(Object(h.N)('NetworkError')), Object(R.p)(o)(R.n.promotionError('NetworkError')), { type: 'fail' }
                   )
                 })
                 .then(function (i) {
@@ -57967,7 +57887,7 @@
                       (null === (s = i.quick_promote_campaign_v2) || void 0 === s ? void 0 : s.__typename)
                     )
                       return (
-                        a(Object(h.O)(i.quick_promote_campaign_v2.error_code)),
+                        a(Object(h.N)(i.quick_promote_campaign_v2.error_code)),
                         Object(R.p)(o)(
                           R.n.promotionError(
                             (null === (u = i.quick_promote_campaign_v2) || void 0 === u ? void 0 : u.error_code) ||
@@ -57980,14 +57900,14 @@
                       'PromotionIneligible' ===
                       (null === (c = i.quick_promote_campaign_v2) || void 0 === c ? void 0 : c.response_code)
                     )
-                      Object(R.p)(o)(R.n.promotionError('PromotionIneligible')), a(Object(h.O)('PromotionIneligible'))
+                      Object(R.p)(o)(R.n.promotionError('PromotionIneligible')), a(Object(h.N)('PromotionIneligible'))
                     else if (null !== (l = i.quick_promote_campaign_v2) && void 0 !== l && l.response_code) {
                       var d = i.quick_promote_campaign_v2.campaign
                       return (
                         Object(R.p)(o)(R.n.promotionSuccess(null == d ? void 0 : d.rest_id)),
                         e.push(Object(R.j)(t, n, r, R.c.Done)),
                         a(p.a.setTweetPromotionRunning(n)),
-                        void a(Object(h.G)(n, 'IneligibleCampaignRunning'))
+                        void a(Object(h.F)(n, 'IneligibleCampaignRunning'))
                       )
                     }
                   }
@@ -58004,7 +57924,7 @@
               l = r().quickPromote.budget,
               d = l.currency,
               p = l.dailyBudget,
-              f = Object(h.o)(r()),
+              f = Object(h.n)(r()),
               m = r().session.user_id,
               v = null === (a = r().quickPromote.account.adsAccount) || void 0 === a ? void 0 : a.id,
               g = r().quickPromote.targeting,
@@ -58161,11 +58081,11 @@
                     E = d.platformType,
                     C = d.targetedLocations,
                     k = u().quickPromote.budget.currency
-                  c(Object(h.U)({ ageBucket: g, gender: w, targetedLocations: C })),
+                  c(Object(h.T)({ ageBucket: g, gender: w, targetedLocations: C })),
                     y === k
-                      ? (c(Object(h.y)({ dailyBudget: b, durationDays: _ })),
+                      ? (c(Object(h.x)({ dailyBudget: b, durationDays: _ })),
                         i.replace(Object(R.j)(e, t, E, R.c.Review)))
-                      : (c(Object(h.y)({ errorMessage: F })), i.replace(Object(R.j)(e, t, E, R.c.BudgetSelect)))
+                      : (c(Object(h.x)({ errorMessage: F })), i.replace(Object(R.j)(e, t, E, R.c.BudgetSelect)))
                 } else {
                   var S,
                     T = null === (S = u().quickPromote.account.campaigns) || void 0 === S ? void 0 : S.length,
@@ -58199,7 +58119,7 @@
               )
                 return Promise.resolve()
             }
-            return Object(u.b)('fetchQuickPromoteEligibility', e(Object(h.k)({ tweetId: t })), 'shared-promise')
+            return Object(u.b)('fetchQuickPromoteEligibility', e(Object(h.j)({ tweetId: t })), 'shared-promise')
           }
         },
         W = function (e, t) {
@@ -58207,29 +58127,29 @@
             var o = i.api
             return !t && N.includes(r().quickPromote.account.accountDataFetchStatus)
               ? Promise.resolve()
-              : (n(Object(h.t)(a.a.LOADING)),
+              : (n(Object(h.s)(a.a.LOADING)),
                 Object(u.b)('fetchAdsAccountForUser', q(o)(e))
                   .then(function (e) {
                     if (e) {
                       var t = e.account
-                      n(Object(h.u)(t))
+                      n(Object(h.t)(t))
                       var r = Object(u.b)('fetchFundingInstrumentsForAccount', G(o)(t.id)).then(function (e) {
-                          n(Object(h.J)(e)), n(Object(h.Q)(e[0] || null))
+                          n(Object(h.I)(e)), n(Object(h.P)(e[0] || null))
                         }),
                         i = Object(u.b)('fetchVatInfoForAccount', X(o)(t.id)).then(function (e) {
-                          n(Object(h.W)(e))
+                          n(Object(h.V)(e))
                         }),
                         a = Object(u.b)('fetchCampaignsForAccount', Y(o)(t.id)).then(function (e) {
-                          n(Object(h.B)(e))
+                          n(Object(h.A)(e))
                         })
-                      return Promise.all([r, i, a])
+                      return Promise.all([r, i, a, n(te(!0))])
                     }
                   })
                   .then(function () {
-                    return n(Object(h.t)(a.a.LOADED))
+                    return n(Object(h.s)(a.a.LOADED))
                   })
                   .catch(function (e) {
-                    throw (n(Object(h.t)(a.a.FAILED)), e)
+                    throw (n(Object(h.s)(a.a.FAILED)), e)
                   }))
           }
         },
@@ -58292,7 +58212,7 @@
         },
         Q = function (e) {
           return function (t, n) {
-            t(Object(h.V)(e))
+            t(Object(h.U)(e))
             var r = Object(D.o)(n())
             return Object(u.b)('targetingLocation', t(S.getTypeaheadResults(e, { query: e, lang: r })))
           }
@@ -58309,7 +58229,7 @@
             var i = Object(D.y)(t()) || 'US',
               o = Object(D.o)(t())
             return (
-              e(Object(h.K)(a.a.LOADING)),
+              e(Object(h.J)(a.a.LOADING)),
               Object(u.b)(
                 'fetchCurrentTargetingLocation',
                 r.AaProxy.getTargetableLocations({ countryCode: i, lang: o, locationType: 'COUNTRIES' })
@@ -58325,10 +58245,10 @@
                       throw (Object(d.a)(r), r)
                     }
                     if (t().quickPromote.targeting.targetedLocations.length) return Promise.resolve()
-                    e(Object(h.T)(n)), e(Object(h.K)(a.a.LOADED))
+                    e(Object(h.S)(n)), e(Object(h.J)(a.a.LOADED))
                   }),
               ).catch(function (t) {
-                throw (e(Object(h.K)(a.a.FAILED)), t)
+                throw (e(Object(h.J)(a.a.FAILED)), t)
               })
             )
           }
@@ -58337,17 +58257,17 @@
           return function (e, t, n) {
             var r = n.api
             if (N.includes(t().quickPromote.budget.availableBudgetsFetchStatus)) return Promise.resolve()
-            e(Object(h.x)(a.a.LOADING))
-            var i = Object(h.q)(t())
+            e(Object(h.w)(a.a.LOADING))
+            var i = Object(h.p)(t())
             return Object(u.b)('fetchAvailableBudgets', r.QuickPromote.getBudgets({ countryCode: i }))
               .then(function (t) {
                 var n = t.budgets,
                   r = t.currencyCode,
                   i = t.defaultBudget
-                e(Object(h.w)(n, r)), e(Object(h.E)(i)), e(Object(h.x)(a.a.LOADED))
+                e(Object(h.v)(n, r)), e(Object(h.D)(i)), e(Object(h.w)(a.a.LOADED))
               })
               .catch(function (t) {
-                throw (e(Object(h.x)(a.a.FAILED)), t)
+                throw (e(Object(h.w)(a.a.FAILED)), t)
               })
           }
         },
@@ -58358,15 +58278,15 @@
             var i = t().quickPromote.couponsFetchStatus
             return N.includes(i)
               ? Promise.resolve()
-              : (e(Object(h.D)(a.a.LOADING)),
+              : (e(Object(h.C)(a.a.LOADING)),
                 Object(u.b)(
                   'fetchCoupons',
                   r.QuickPromote.getCoupons({})
                     .then(function (t) {
-                      e(Object(h.C)(t)), e(Object(h.D)(a.a.LOADED))
+                      e(Object(h.B)(t)), e(Object(h.C)(a.a.LOADED))
                     })
                     .catch(function (t) {
-                      throw (e(Object(h.D)(a.a.FAILED)), t)
+                      throw (e(Object(h.C)(a.a.FAILED)), t)
                     }),
                 ))
           }
@@ -58378,7 +58298,7 @@
             var o = n().quickPromote.enrollCouponStatus
             return N.includes(o)
               ? Promise.resolve()
-              : (t(Object(h.I)(a.a.LOADING)),
+              : (t(Object(h.H)(a.a.LOADING)),
                 Object(u.b)(
                   'enrollCoupon',
                   i.QuickPromote.enrollCoupon({})
@@ -58389,7 +58309,7 @@
                         (null === (r = n.quick_promote_enroll_coupons) || void 0 === r ? void 0 : r.__typename)
                       ) {
                         var o = n.quick_promote_enroll_coupons.error_code
-                        t(Object(h.H)(o)), Object(R.p)(e)(R.n.enrollCouponFail(o))
+                        t(Object(h.G)(o)), Object(R.p)(e)(R.n.enrollCouponFail(o))
                       } else if (
                         'QuickPromoteCouponEnrollmentDetails' ===
                         (null === (i = n.quick_promote_enroll_coupons) || void 0 === i ? void 0 : i.__typename)
@@ -58399,14 +58319,14 @@
                             n = e.total_amount
                           return { currency_code: t, total_amount: n ? n / 1e6 : 0 }
                         })
-                        t(Object(h.C)({ existing_balance: s })),
-                          t(Object(h.H)(null)),
+                        t(Object(h.B)({ existing_balance: s })),
+                          t(Object(h.G)(null)),
                           Object(R.p)(e)(R.n.enrollCouponSuccess())
                       }
-                      t(Object(h.I)(a.a.LOADED))
+                      t(Object(h.H)(a.a.LOADED))
                     })
                     .catch(function (e) {
-                      throw (t(Object(h.I)(a.a.FAILED)), e)
+                      throw (t(Object(h.H)(a.a.FAILED)), e)
                     }),
                 ))
           }
@@ -58414,20 +58334,25 @@
         te = function (e) {
           return function (t, n, r) {
             var i = r.api,
-              o = n().quickPromote.paymentMethodsFetchStatus
-            return !e && N.includes(o)
-              ? Promise.resolve()
-              : (t(Object(h.N)(a.a.LOADING)),
-                Object(u.b)(
-                  'fetchPaymentMethods',
-                  i.QuickPromote.getPaymentMethods({})
-                    .then(function (e) {
-                      t(Object(h.M)(e)), t(Object(h.N)(a.a.LOADED))
-                    })
-                    .catch(function (e) {
-                      throw (t(Object(h.N)(a.a.FAILED)), e)
-                    }),
-                ))
+              o = r.featureSwitches,
+              s = n().quickPromote,
+              c = s.account.adsAccount,
+              l = s.paymentMethodsFetchStatus
+            if (!o.isTrue('responsive_web_qp_payment_select_enabled') || (!e && N.includes(l))) return Promise.resolve()
+            if (null == c || !c.id) throw (t(Object(h.M)(a.a.FAILED)), Error('Missing ads account id'))
+            return (
+              t(Object(h.M)(a.a.LOADING)),
+              Object(u.b)(
+                'fetchPaymentMethods',
+                i.QuickPromote.getPaymentMethods({ ads_account_id: c.id })
+                  .then(function (e) {
+                    t(Object(h.L)(e)), t(Object(h.M)(a.a.LOADED))
+                  })
+                  .catch(function (e) {
+                    throw (t(Object(h.M)(a.a.FAILED)), e)
+                  }),
+              )
+            )
           }
         },
         ne = function (e) {
@@ -58569,7 +58494,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return n.e(356).then(n.bind(null, '0rTF'))
+              return n.e(357).then(n.bind(null, '0rTF'))
             },
             loaderKey: 'defaultTweetComposerLoader',
             strategy: n('XBtf').a.Critical,
@@ -59577,7 +59502,7 @@
       var r = n('zb92'),
         i = Object(r.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(21), n.e(181)]).then(n.bind(null, 'Gffe'))
+            return Promise.all([n.e(0), n.e(21), n.e(182)]).then(n.bind(null, 'Gffe'))
           },
         })
       t.a = i

@@ -165,7 +165,7 @@
     CDB5: function (e, t, n) {
       'use strict'
       n.d(t, 'm', function () {
-        return T
+        return M
       }),
         n.d(t, 'l', function () {
           return P
@@ -270,7 +270,7 @@
             time: d,
           }
         },
-        T = function (e) {
+        M = function (e) {
           return function (t, n, r) {
             var i = r.api,
               c = e || {},
@@ -281,8 +281,8 @@
               b = c.recipients,
               S = void 0 === b ? [] : b,
               O = c.requestId,
-              T = void 0 === O ? w.a.v1() : O,
-              M = c.tweetAttachment,
+              M = void 0 === O ? w.a.v1() : O,
+              T = c.tweetAttachment,
               P = c.quickReply,
               D = s()(c, I)
             t(Z(l))
@@ -315,7 +315,7 @@
                       : Promise.resolve()
                   ).then(
                     function () {
-                      var n = (M || {}).id_str,
+                      var n = (T || {}).id_str,
                         r = {}
                       if (c) {
                         var o = c.mediaFile,
@@ -329,12 +329,12 @@
                           : f.isGif
                           ? (r.animated_gif = p()(p()({}, g), {}, { media_url_https: s, type: 'animated_gif' }))
                           : f.isVideo && (r.video = p()(p()({}, g), {}, { media_url_https: f.url, type: 'video' }))
-                      } else M && (r.tweet = { status: n })
+                      } else T && (r.tweet = { status: n })
                       var _ = (c || {}).uploadId,
                         b = k({
                           attachment: r,
                           conversation_id: l,
-                          id: T,
+                          id: M,
                           recipient_ids: z,
                           sender_id: u,
                           text: e.text,
@@ -347,7 +347,7 @@
                             !n && { media_id: _ },
                           ),
                           {},
-                          { recipient_ids: z, request_id: T, tweet_id: n },
+                          { recipient_ids: z, request_id: M, tweet_id: n },
                         )
                       P &&
                         ((w['quick_reply_response[options][id]'] = P.id),
@@ -356,7 +356,7 @@
                         ee(l),
                         { type: h.c.REQUEST },
                         { type: 'rweb/dmComposer/SEND_MESSAGE_REQUEST' },
-                        l && Object(C.b)(l, T, b),
+                        l && Object(C.b)(l, M, b),
                       ])
                       return (
                         t(I),
@@ -372,7 +372,7 @@
                             var d = Object(E.a)(
                               [{ type: h.c.SUCCESS }].concat(
                                 a()(Object(m.a)({ conversations: u, entries: o, users: s, tweets: c, cards: i })),
-                                [{ type: 'rweb/dmComposer/SEND_MESSAGE_SUCCESS' }, l && Object(C.j)(l, T, e), j(l)],
+                                [{ type: 'rweb/dmComposer/SEND_MESSAGE_SUCCESS' }, l && Object(C.j)(l, M, e), j(l)],
                               ),
                             )
                             return t(d), Promise.resolve(Object.values(n.entities.entries)[0].conversation_id)
@@ -382,7 +382,7 @@
                                 attachment: r,
                                 conversation_id: l,
                                 error: !0,
-                                id: T,
+                                id: M,
                                 localMediaId: R,
                                 recipient_ids: z,
                                 sender_id: u,
@@ -391,7 +391,7 @@
                               i = Object(E.a)([
                                 { type: h.c.SUCCESS },
                                 { type: 'rweb/dmComposer/SEND_MESSAGE_FAILURE' },
-                                l && Object(C.b)(l, T, a),
+                                l && Object(C.b)(l, M, a),
                               ])
                             return t(i), Object(v.e)(t, n, 'ACTION_SEND_DM')
                           },
@@ -410,11 +410,11 @@
             )
           }
         },
-        M = function (e, t) {
+        T = function (e, t) {
           return e.dmComposer[t]
         },
         P = function (e, t) {
-          var n = M(e, t)
+          var n = T(e, t)
           return n ? n.text : null
         },
         D = 'rweb/dmComposer/SAVE_TEXT',
@@ -426,7 +426,7 @@
           return { type: R, conversationId: e }
         },
         A = function (e, t) {
-          var n = M(e, t)
+          var n = T(e, t)
           return n ? n.cardUrl : null
         },
         L = 'rweb/dmComposer/SAVE_CARD_URL',
@@ -434,7 +434,7 @@
           return { type: L, conversationId: e, cardUrl: t }
         },
         B = function (e, t) {
-          var n = M(e, t)
+          var n = T(e, t)
           return n ? n.mediaId : null
         },
         V = function (e, t) {
@@ -442,14 +442,14 @@
           return n.length > 0 ? n[0] : null
         },
         z = function (e, t) {
-          var n = M(e, t)
+          var n = T(e, t)
           return !!n && n.isUploading
         },
         K = function (e, t) {
           return f.l(e, B(e, t))
         },
         q = function (e, t) {
-          var n = M(e, t)
+          var n = T(e, t)
           return n ? n.gifMetadata : null
         },
         H = 'rweb/dmComposer/ADD_MEDIA',
@@ -614,8 +614,8 @@
         S = n('9HgX'),
         O = ['acceptGifs', 'acceptImages', 'acceptVideo', 'customMimeTypes', 'icon', 'style', 'withIcon'],
         k = b.a.b9960f31,
-        T = { viewType: 'media_picker' },
-        M = y.a.createElement(w.a, null),
+        M = { viewType: 'media_picker' },
+        T = y.a.createElement(w.a, null),
         P = function (e) {
           var t = e.acceptGifs,
             n = e.acceptImages,
@@ -648,7 +648,7 @@
                     x.a,
                     a()({}, d, {
                       accept: l,
-                      behavioralEventContext: T,
+                      behavioralEventContext: M,
                       icon: u ? c : void 0,
                       style: [U.root, s],
                       testID: C,
@@ -666,7 +666,7 @@
         acceptVideo: !0,
         customMimeTypes: [],
         accessibilityLabel: k,
-        icon: M,
+        icon: T,
         size: 'medium',
         withIcon: !0,
       })
@@ -804,21 +804,21 @@
                       autoFocus: !0,
                       onFocus: this._handleOnFocus,
                       readOnly: !0,
-                      style: T.linkInput,
+                      style: M.linkInput,
                       value: i,
                     })
                   return a.a.createElement(
                     E.a,
-                    { onMaskClick: o, style: T.container, type: 'center', withMask: !0 },
+                    { onMaskClick: o, style: M.container, type: 'center', withMask: !0 },
                     r &&
                       a.a.createElement(
                         x.b,
-                        { align: 'center', color: 'normal', style: T.headerText, weight: 'bold' },
+                        { align: 'center', color: 'normal', style: M.headerText, weight: 'bold' },
                         r,
                       ),
-                    n && a.a.createElement(x.b, { align: 'center', color: 'gray700', style: T.labelText }, n),
+                    n && a.a.createElement(x.b, { align: 'center', color: 'gray700', style: M.labelText }, n),
                     c,
-                    a.a.createElement(I.a, { onPress: o, size: 'xLarge', style: T.cancelButton, type: 'brandText' }, t),
+                    a.a.createElement(I.a, { onPress: o, size: 'xLarge', style: M.cancelButton, type: 'brandText' }, t),
                   )
                 },
               },
@@ -827,7 +827,7 @@
           )
         })(a.a.Component)
       _()(k, 'defaultProps', { cancelButtonLabel: O })
-      var T = S.a.create(function (e) {
+      var M = S.a.create(function (e) {
           return {
             container: {
               alignItems: 'center',
@@ -849,7 +849,7 @@
             cancelButton: { width: '100%' },
           }
         }),
-        M = k,
+        T = k,
         P = n('I/9y'),
         D = n('mjJ+'),
         U = n('cm6r'),
@@ -907,7 +907,7 @@
                         a.a.Fragment,
                         null,
                         e
-                          ? a.a.createElement(M, {
+                          ? a.a.createElement(T, {
                               description: L({ providerName: i }),
                               headerText: A,
                               link: n,
@@ -1039,8 +1039,8 @@
             }
           }),
         k = n('KqB4'),
-        T = n.n(k),
-        M = n('aX4+'),
+        M = n.n(k),
+        T = n('aX4+'),
         P = n('3XMw'),
         D = n.n(P),
         U = n('hOZg'),
@@ -1054,7 +1054,7 @@
         z = D.a.f6fec9f6,
         K = /^https?:\/\//i,
         q = function (e) {
-          var t = T()(e)
+          var t = M()(e)
           if (t.length)
             return t.map(function (e) {
               return (!K.test(e) && 'http://'.concat(e)) || e
@@ -1126,7 +1126,7 @@
                     ? h.a.createElement(
                         j.a,
                         { style: r },
-                        h.a.createElement(M.a, {
+                        h.a.createElement(T.a, {
                           card: { name: t.name, url: t.url, binding_values: t.binding_values },
                           cardContext: { tweetUserId: a },
                           isInteractive: !1,
@@ -1287,7 +1287,7 @@
         l = Object(c.a)({
           loader: function () {
             return d.a.emoji.then(function () {
-              return Promise.all([n.e(0), n.e(18), n.e(209)]).then(n.bind(null, '5RdJ'))
+              return Promise.all([n.e(0), n.e(18), n.e(210)]).then(n.bind(null, '5RdJ'))
             })
           },
           renderPlaceholder: function (e, t) {
@@ -1656,8 +1656,12 @@
           n('7x/C'),
           n('+oxZ'),
           n('ho0z'),
+          n('jQ3i'),
+          n('x4t0'),
           n('LW0h'),
           n('2G9S'),
+          n('kFen'),
+          n('qd3W'),
           n('z84I'),
           n('5BYb'),
           n('DfhM'),
@@ -1677,33 +1681,43 @@
             r = e.inReplyToStatus,
             i = e.loggedInUserId,
             c = r.retweeted_status,
-            s = (c || r).entities,
-            u = (r.retweeted_status || r).user,
-            l = c ? c.user : {},
-            m = c ? r.user : {},
-            h = (null == s ? void 0 : s.user_mentions) || [],
-            g = d.a.mergeTaggedUsers((null == s ? void 0 : s.media) || []),
-            y = v(c || r) || {},
-            _ = ((t = {}), o()(t, l.id_str, l), o()(t, m.id_str, m), o()(t, u.id_str, u), o()(t, y.id_str, y), t)
-          h.forEach(function (e) {
-            _[e.id_str] = e
+            s = c || r,
+            u = s.entities,
+            l = s.unmentioned_user_ids,
+            m = s.user,
+            h = c ? c.user : {},
+            g = c ? r.user : {},
+            y = (null == u ? void 0 : u.user_mentions) || [],
+            _ = d.a.mergeTaggedUsers((null == u ? void 0 : u.media) || []),
+            b = v(c || r) || {},
+            w = ((t = {}), o()(t, h.id_str, h), o()(t, g.id_str, g), o()(t, m.id_str, m), o()(t, b.id_str, b), t)
+          y.forEach(function (e) {
+            w[e.id_str] = e
           }),
-            g.forEach(function (e) {
+            _.forEach(function (e) {
               var t = e.name,
                 n = e.screen_name,
                 r = e.user_id
-              _[r] = { id_str: r, name: t, screen_name: n }
+              w[r] = { id_str: r, name: t, screen_name: n }
             })
-          var b = Object(p.a)(
+          var C = function (e) {
+              var t = null == l ? void 0 : l.includes(e.id_str),
+                n = e.id_str === m.id_str
+              return !t || n ? [e.id_str] : []
+            },
+            E = Object(p.a)(
               Object(f.a)(
-                [l.id_str, m.id_str, u.id_str].concat(
+                [].concat(
+                  a()(C(h)),
+                  a()(C(g)),
+                  [m.id_str],
                   a()(
-                    h.map(function (e) {
-                      return e.id_str
+                    y.flatMap(function (e) {
+                      return C(e)
                     }),
                   ),
                   a()(
-                    g.map(function (e) {
+                    _.map(function (e) {
                       return e.user_id
                     }),
                   ),
@@ -1712,14 +1726,14 @@
             ).filter(function (e) {
               return e !== i
             }),
-            w = i && u.id_str === i ? [i].concat(a()(b)) : b
+            x = i && m.id_str === i ? [i].concat(a()(E)) : E
           return (
             n &&
-              (w = w.filter(function (e) {
-                return e !== u.id_str
+              (x = x.filter(function (e) {
+                return e !== m.id_str
               })),
-            w.map(function (e) {
-              return _[e]
+            x.map(function (e) {
+              return w[e]
             })
           )
         },

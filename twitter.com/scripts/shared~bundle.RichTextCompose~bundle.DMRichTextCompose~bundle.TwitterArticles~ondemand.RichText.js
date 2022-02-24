@@ -1,0 +1,725 @@
+;(window.webpackJsonp = window.webpackJsonp || []).push([
+  [11],
+  {
+    LQrL: function (e, t, n) {
+      'use strict'
+      n.d(t, 'd', function () {
+        return h
+      }),
+        n.d(t, 'c', function () {
+          return g
+        }),
+        n.d(t, 'b', function () {
+          return y
+        }),
+        n.d(t, 'e', function () {
+          return v
+        }),
+        n.d(t, 'a', function () {
+          return m
+        })
+      n('hBvt'), n('KqXw'), n('z84I')
+      var r = n('ERkP'),
+        o = n.n(r),
+        a = n('t62R'),
+        i = n('dWxr'),
+        l = n.n(i),
+        c = n('hHEM'),
+        s = n('rHpw'),
+        u = n('aITJ'),
+        d = n('IZ3v'),
+        f = function (e, t) {
+          for (var n = l()(e.getText()), r = 0; r < n.length; r++)
+            n[r].indices && 2 === n[r].indices.length && t(n[r].indices[0], n[r].indices[1])
+        },
+        p = { clipPath: 'circle(0% at center)' },
+        h = {
+          strategy: function (e, t, n) {
+            e.findEntityRanges(function (e) {
+              var t = e.getEntity(),
+                r = t ? n.getEntity(t) : null
+              return !!r && 'LINK' === r.getType()
+            }, t)
+          },
+          component: function (e) {
+            return e.entityKey
+              ? o.a.createElement(a.b, { link: e.contentState.getEntity(e.entityKey).getData().url }, e.children)
+              : null
+          },
+        },
+        g = {
+          strategy: f,
+          component: function (e) {
+            var t = l()(e.decoratedText)[0]
+            if (!t) return null
+            var n = Object(d.b)(t)
+            return n ? o.a.createElement(a.b, { link: Object(d.c)(n, e.decoratedText) }, e.children) : null
+          },
+        },
+        y = {
+          strategy: f,
+          component: function (e) {
+            return o.a.createElement('span', { style: { color: s.a.theme.colors.link } }, e.children)
+          },
+        },
+        v = {
+          strategy: function (e, t, n) {
+            e.findEntityRanges(function (e) {
+              var t = e.getEntity(),
+                r = t && n.getEntity(t)
+              return !(!r || r.type !== c.a.TWEMOJI_ENTITY_TYPE)
+            }, t)
+          },
+          component: function (e) {
+            var t = e.children,
+              n = e.contentState,
+              r = e.entityKey,
+              a = (r && n.getEntity(r)) || {}
+            return !(u.b.isFirefox() && u.b.firefoxVersion() < 49)
+              ? o.a.Children.map(t, function (e) {
+                  var t,
+                    n = o.a.Children.map(e, function (e) {
+                      return o.a.createElement('span', { style: p }, e)
+                    })[0]
+                  return o.a.cloneElement(
+                    o.a.createElement('span', null),
+                    {
+                      style:
+                        ((t = (a.data && a.data.url) || ''),
+                        {
+                          backgroundImage: 'url("'.concat(t, '")'),
+                          backgroundSize: '1em 1em',
+                          padding: '0.15em',
+                          backgroundPosition: 'center',
+                          backgroundRepeat: 'no-repeat',
+                          WebkitTextFillColor: 'transparent',
+                        }),
+                    },
+                    n,
+                  )
+                })
+              : t
+          },
+        },
+        m = {
+          strategy: function (e, t) {
+            var n = (function (e, t, n) {
+              for (var r, o, a = t.getText(); (r = e.exec(a)); ) n((o = r.index), o + r[0].length)
+            })(/\r/g, e, t)
+            if (n) return t(n, n + 1)
+          },
+          component: function () {
+            return '\n'
+          },
+        }
+    },
+    RH6X: function (e, t, n) {
+      'use strict'
+      var r = n('VrFO'),
+        o = n.n(r),
+        a = n('Y9Ll'),
+        i = n.n(a),
+        l = n('1Pcy'),
+        c = n.n(l),
+        s = n('5Yy7'),
+        u = n.n(s),
+        d = n('2VqO'),
+        f = n.n(d),
+        p = n('KEM+'),
+        h = n.n(p),
+        g = (n('2G9S'), n('849X'), n('TJCb'), n('ERkP')),
+        y = n.n(g),
+        v = n('oEoC'),
+        m = n('2dXj'),
+        C = n('4bHO'),
+        S = n('dzqK'),
+        b = n('GZwR'),
+        E = n('zpdM'),
+        x = (function (e) {
+          u()(n, e)
+          var t = f()(n)
+          function n() {
+            var e
+            o()(this, n)
+            for (var r = arguments.length, a = new Array(r), i = 0; i < r; i++) a[i] = arguments[i]
+            return (
+              (e = t.call.apply(t, [this].concat(a))),
+              h()(c()(e), 'state', { queryContext: void 0, canShowTypeahead: !1 }),
+              h()(c()(e), '_genericWrapperRef', y.a.createRef()),
+              h()(c()(e), 'render', function () {
+                var t = e.props,
+                  n = t.children,
+                  r = t.contextText,
+                  o = t.isInline,
+                  a = t.isInlineReply,
+                  i = t.onTypeaheadStateChange,
+                  l = t.source,
+                  c = e.state,
+                  s = c.canShowTypeahead,
+                  u = c.queryContext,
+                  d = s && u ? { word: u.word, resultType: u.resultType } : void 0
+                return y.a.createElement(
+                  m.a,
+                  {
+                    contextText: r,
+                    isInline: o,
+                    isInlineReply: a,
+                    onDismiss: e._handleDismiss,
+                    onSelectItem: e._handleSelectItem,
+                    onTypeaheadStateChange: i,
+                    query: d,
+                    ref: e._genericWrapperRef,
+                    source: l || b.d.Compose,
+                  },
+                  n(e._handleInputChange),
+                )
+              }),
+              h()(c()(e), '_getCaret', function (e) {
+                return e.getSelection().getStartOffset()
+              }),
+              h()(c()(e), '_getPlaintextFromCurrentBlock', function (e) {
+                var t = e.getSelection().anchorKey
+                return e.getCurrentContent().getBlockForKey(t).getText()
+              }),
+              h()(c()(e), '_handleSelectItem', function (t) {
+                var n = e.props.onTextUpdated,
+                  r = e.state.queryContext
+                if (r) {
+                  var o = Object(C.a)(t, r.resultType)
+                  n(e._replaceToken(o, r))
+                }
+                e._setQueryContext(void 0)
+              }),
+              h()(c()(e), '_handleInputChange', function (t) {
+                if (!Object(S.a)(t))
+                  throw new Error('RichTextTypeaheadComposeWrapper cannot handle plain text input changes')
+                var n = e.state.queryContext,
+                  r = n && n.word,
+                  o = e._getPlaintextFromCurrentBlock(t),
+                  a = v.c(e._getCaret(t), o),
+                  i = a.end,
+                  l = a.start,
+                  c = a.word,
+                  s = v.e(c || '', 'compose')
+                if ((null == s ? void 0 : s.q) !== r)
+                  if ((e._genericWrapperRef.current && e._genericWrapperRef.current.resetSelectedItem(), -1 === l))
+                    e._setQueryContext(void 0)
+                  else if (s) {
+                    var u = s.q,
+                      d = s.result_type
+                    e._setQueryContext({ word: u, resultType: d, editorState: t, startIndex: l, endIndex: i })
+                  } else e._setQueryContext(void 0)
+              }),
+              h()(c()(e), '_setQueryContext', function (t) {
+                return e.setState({ queryContext: t, canShowTypeahead: !!t })
+              }),
+              h()(c()(e), '_handleDismiss', function () {
+                return e.setState({ canShowTypeahead: !1 })
+              }),
+              e
+            )
+          }
+          return (
+            i()(n, [
+              {
+                key: '_replaceToken',
+                value: function (e, t) {
+                  var n = t.editorState,
+                    r = t.endIndex,
+                    o = t.startIndex,
+                    a = n
+                      .getSelection()
+                      .merge({ anchorKey: n.getSelection().getFocusKey(), anchorOffset: o, focusOffset: r }),
+                    i = E.Modifier.replaceText(n.getCurrentContent(), a, e),
+                    l = E.EditorState.push(n, i, 'insert-characters'),
+                    c = o + e.length,
+                    s = l.getSelection().merge({ anchorOffset: c, focusOffset: c })
+                  return E.EditorState.forceSelection(l, s)
+                },
+              },
+            ]),
+            n
+          )
+        })(y.a.Component)
+      t.a = x
+    },
+    dWxr: function (e, t, n) {
+      'use strict'
+      var r = n('IGGJ')
+      n('2G9S'),
+        Object.defineProperty(t, '__esModule', { value: !0 }),
+        (t.default = function (e, t) {
+          var n = (0, l.default)(e, t)
+            .concat((0, i.default)(e))
+            .concat((0, a.default)(e, { checkUrlOverlap: !1 }))
+            .concat((0, o.default)(e))
+          if (0 == n.length) return []
+          return (0, c.default)(n), n
+        })
+      var o = r(n('EW8Q')),
+        a = r(n('yyPN')),
+        i = r(n('YXS5')),
+        l = r(n('vwfs')),
+        c = r(n('c8jd'))
+      e.exports = t.default
+    },
+    hHEM: function (e, t, n) {
+      'use strict'
+      n('yH/f'), n('jwue'), n('7x/C'), n('+oxZ')
+      var r = n('z4Oz'),
+        o = n('LQrL'),
+        a = n('zpdM'),
+        i = function (e, t) {
+          for (var n = 0, r = 0; r < e.length; r++) {
+            var o = e[r],
+              a = o.getText().length
+            if (n + a >= t) return { blockKey: o.key, offset: t - n }
+            n += a + 1
+          }
+          return Object.freeze({})
+        },
+        l = function (e, t) {
+          var n = e.getCurrentContent(),
+            r = n.getFirstBlock(),
+            o = n.getLastBlock(),
+            i = t.blockKey,
+            l = void 0 === i ? o.key : i,
+            c = t.offset,
+            s = void 0 === c ? o.getText().length : c,
+            u = e
+              .getSelection()
+              .merge({ anchorKey: r.key, anchorOffset: 0, focusKey: l, focusOffset: s, isBackward: !1 }),
+            d = a.Modifier.removeInlineStyle(e.getCurrentContent(), u, 'overflow')
+          return a.EditorState.push(e, d, 'change-inline-style')
+        },
+        c = function (e, t) {
+          var n = t.blockKey,
+            r = t.offset,
+            o = e.getCurrentContent(),
+            i = o.getLastBlock(),
+            l = s(o, n, r)
+          if (n) {
+            var c = e
+                .getSelection()
+                .merge({
+                  anchorKey: n,
+                  anchorOffset: l,
+                  focusKey: i.key,
+                  focusOffset: i.getText().length,
+                  isBackward: !1,
+                }),
+              u = a.Modifier.applyInlineStyle(o, c, 'overflow')
+            return a.EditorState.push(e, u, 'change-inline-style')
+          }
+          return e
+        },
+        s = function (e, t) {
+          var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0,
+            r = n,
+            o = e.getBlockForKey(t)
+          if (o) {
+            var a = o.getEntityAt(n)
+            if (void 0 !== a) {
+              var i = a && e.getEntity(a),
+                l = i && i.data && i.data.id
+              if (void 0 !== l)
+                for (var c = n - 1; c >= 0; c--) {
+                  var s = o.getEntityAt(c),
+                    u = s && e.getEntity(s)
+                  if (!u || !u.data || u.data.id !== l) {
+                    r = c + 1
+                    break
+                  }
+                }
+            }
+            return r
+          }
+        },
+        u = 'TWEMOJI',
+        d = 'IMMUTABLE'
+      t.a = {
+        convertEmojiToEntities: function (e) {
+          var t = a.EditorState.set(e, { allowUndo: !1 }),
+            n = t.getCurrentContent(),
+            o = 0
+          return (
+            n.getBlocksAsArray().forEach(function (e) {
+              r.a.getTwemojiEntities(e.getText()).forEach(function (r) {
+                if (2 === (r.indices && r.indices.length)) {
+                  var i = n.createEntity(u, d, { url: r.url || null, id: o })
+                  o += 1
+                  var l = i.getLastCreatedEntityKey(),
+                    c = e.getKey(),
+                    s = t
+                      .getSelection()
+                      .merge({
+                        anchorKey: c,
+                        anchorOffset: r.indices[0],
+                        focusKey: c,
+                        focusOffset: r.indices[1],
+                        isBackward: !1,
+                      })
+                  n = a.Modifier.applyEntity(i, s, l)
+                }
+              })
+            }),
+            a.EditorState.set(t, { allowUndo: !0, currentContent: n })
+          )
+        },
+        getRelativeOffset: i,
+        initEditorState: function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : '',
+            t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : { decorators: [o.b, o.e, o.a] },
+            n = t.decorators,
+            r = a.EditorState.createWithContent(
+              'string' == typeof e ? a.ContentState.createFromText(e) : Object(a.convertFromRaw)(e),
+              new a.CompositeDecorator(n),
+            )
+          return a.EditorState.moveSelectionToEnd(r)
+        },
+        insertTextAtCursor: function (e, t) {
+          var n = e.getCurrentContent(),
+            r = e.getSelection(),
+            o = a.Modifier.insertText(n, r, t)
+          return a.EditorState.push(e, o, 'insert-characters')
+        },
+        TWEMOJI_ENTITY_TYPE: u,
+        updateOverflowStyle: function (e, t) {
+          var n,
+            r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+            o = e.getSelection(),
+            s = a.EditorState.set(e, { allowUndo: !1 }),
+            u = e.getCurrentContent().getSelectionBefore(),
+            d = e.getCurrentContent().getSelectionAfter(),
+            f = e.getCurrentContent(),
+            p = f.getBlocksAsArray(),
+            h = 'number' == typeof t && t > -1,
+            g = h ? i(p, t) : Object.freeze({})
+          if ((r && ((s = l(s, g)), (n = !0)), h && ((s = c(s, g)), (n = !0)), n)) {
+            var y = (s = a.EditorState.forceSelection(s, o)).getCurrentContent()
+            ;(y = (y = y.set('selectionBefore', u)).set('selectionAfter', d)),
+              (s = a.EditorState.set(e, { allowUndo: !0, currentContent: y }))
+          }
+          return s
+        },
+      }
+    },
+    keCP: function (e, t, n) {
+      'use strict'
+      var r = n('VrFO'),
+        o = n.n(r),
+        a = n('Y9Ll'),
+        i = n.n(a),
+        l = n('1Pcy'),
+        c = n.n(l),
+        s = n('5Yy7'),
+        u = n.n(s),
+        d = n('2VqO'),
+        f = n.n(d),
+        p = n('KEM+'),
+        h = n.n(p),
+        g = n('97Jx'),
+        y = n.n(g),
+        v = (n('2G9S'), n('jwue'), n('7x/C'), n('+oxZ'), n('KqXw'), n('MvUL'), n('SV7d')),
+        m = n('rHpw'),
+        C = 'singleline',
+        S = function (e) {
+          var t = e.placeholderTextColor,
+            n = void 0 === t ? m.a.theme.colors.gray700 : t,
+            r = m.a.theme.spaces.space2
+          return '\n         .DraftEditor-editorContainer, .DraftEditor-root, .public-DraftEditor-content {\n            height: inherit;\n            max-height: inherit;\n            min-height: inherit;\n            overflow: auto;\n            text-align: initial;\n        }\n\n        .public-DraftEditor-content[contenteditable=true] {\n            -webkit-user-modify: read-write-plaintext-only\n        }\n\n        .DraftEditor-root {\n            width: 100%;\n            position: relative;\n            -webkit-user-select: none;\n        }\n\n        .DraftEditor-editorContainer {\n            background-color: rgba(255, 255, 255, 0);\n            border-left: .1px solid transparent;\n            position: relative;\n            z-index: 1;\n        }\n\n        .public-DraftEditor-block {\n            position: relative;\n        }\n\n        .DraftEditor-alignLeft .public-DraftStyleDefault-block {\n            text-align: left;\n        }\n\n        .DraftEditor-alignLeft .public-DraftEditorPlaceholder-root {\n            left: 0;\n            text-align: left;\n        }\n\n        .DraftEditor-alignCenter .public-DraftStyleDefault-block {\n            text-align: center\n        }\n\n        .DraftEditor-alignCenter .public-DraftEditorPlaceholder-root {\n            margin: 0 auto;\n            text-align: center;\n            width: 100%\n        }\n\n        .DraftEditor-alignRight .public-DraftStyleDefault-block {\n            text-align: right;\n        }\n\n        .DraftEditor-alignRight .public-DraftEditorPlaceholder-root {\n            right: 0;\n            text-align: right;\n        }\n\n        .public-DraftEditorPlaceholder-root {\n            color: '
+            .concat(n, ';\n            padding-bottom: ')
+            .concat(r, ';\n            padding-top: ')
+            .concat(
+              r,
+              ';\n            position: absolute;\n            z-index: 1;\n        }\n\n        .public-DraftEditorPlaceholder-inner {\n            user-select: none;\n            -webkit-user-select: none;\n        }\n\n        .public-DraftEditorPlaceholder-hasFocus {\n            color: ',
+            )
+            .concat(
+              n,
+              ';\n        }\n\n        .DraftEditorPlaceholder-hidden {\n            display: none;\n        }\n\n        .public-DraftStyleDefault-block {\n            overflow:hidden;\n            padding-bottom: ',
+            )
+            .concat(r, ';\n            padding-top: ')
+            .concat(
+              r,
+              ";\n            position: relative;\n            white-space: pre-wrap;\n        }\n\n        /* Only a handful of CSS rules work on br tags and user-select isn't one */\n        div:only-child > .public-DraftStyleDefault-block br::selection {\n            background: transparent;\n        }\n\n        /*\n           Safari doesn't let you change ::selection on br elements,\n           but Chrome needs it here\n        */\n        div:only-child > .public-DraftStyleDefault-block::selection {\n            background: transparent;\n        }\n\n        .public-DraftStyleDefault-ltr {\n            direction: ltr;\n            text-align: left;\n        }\n\n        .public-DraftStyleDefault-rtl {\n            direction: rtl;\n            text-align: right;\n        }\n\n        .",
+            )
+            .concat(
+              C,
+              ' .public-DraftStyleDefault-block {\n            overflow-x: auto;\n            scrollbar-width: none;\n            white-space: nowrap;\n            -ms-overflow-style: none;\n        }\n        .',
+            )
+            .concat(
+              C,
+              ' .public-DraftStyleDefault-block::-webkit-scrollbar {\n            display: none;\n        }\n    ',
+            )
+        },
+        b = n('ERkP'),
+        E = n.n(b),
+        x = n('k/Ka'),
+        k = n('PxJJ'),
+        T = n('w9LO'),
+        w = n('fs1G'),
+        _ = n('zpdM'),
+        D = function (e) {
+          return Object(x.a)('div', e)
+        },
+        O = !1,
+        K =
+          ((t.a = E.a.forwardRef(function (e, t) {
+            var n = v.d()
+            return E.a.createElement(
+              K,
+              y()({}, e, {
+                onFocus: function (t) {
+                  e.onFocus && e.onFocus(t), n('focus')
+                },
+                ref: t,
+              }),
+            )
+          })),
+          (function (e) {
+            u()(n, e)
+            var t = f()(n)
+            function n() {
+              var e
+              o()(this, n)
+              for (var r = arguments.length, a = new Array(r), i = 0; i < r; i++) a[i] = arguments[i]
+              return (
+                (e = t.call.apply(t, [this].concat(a))),
+                h()(c()(e), '_setSelectionToStart', function () {
+                  var t = e.props.editorState,
+                    n = t.getCurrentContent().getFirstBlock().getKey()
+                  return _.EditorState.acceptSelection(
+                    t,
+                    new _.SelectionState({
+                      anchorKey: n,
+                      anchorOffset: 0,
+                      focusKey: n,
+                      focusOffset: 0,
+                      isBackward: !1,
+                    }),
+                  )
+                }),
+                h()(c()(e), '_setFocusToStart', function () {
+                  var t = e._setSelectionToStart()
+                  return _.EditorState.forceSelection(t, t.getSelection())
+                }),
+                h()(c()(e), '_setFocusToEnd', function () {
+                  var t = e.props,
+                    n = t.autoFocus,
+                    r = t.editorState,
+                    o = t.onChange
+                  n
+                    ? null == o || o(_.EditorState.moveFocusToEnd(r))
+                    : null == o || o(_.EditorState.moveSelectionToEnd(r))
+                }),
+                h()(c()(e), '_setDraftJsStyle', function () {
+                  var t = e.props.placeholderTextColor,
+                    n = document.createElement('style')
+                  n.innerHTML = S({ placeholderTextColor: t })
+                  var r = document.head
+                  r && r.insertBefore(n, r.firstChild)
+                }),
+                h()(c()(e), 'focus', function () {
+                  e._editor && e._editor.focus()
+                }),
+                h()(c()(e), 'blur', function () {
+                  e._editor && e._editor.blur()
+                }),
+                h()(c()(e), 'value', function () {
+                  return e.props.editorState.getCurrentContent().getPlainText()
+                }),
+                h()(c()(e), 'getOffsetHeight', function () {
+                  var t = (e._editor || {}).editor
+                  return (t && t.offsetHeight) || 0
+                }),
+                h()(c()(e), '_setEditorRef', function (t) {
+                  e._editor = t
+                }),
+                h()(c()(e), '_handleViewClick', function () {
+                  return e.focus()
+                }),
+                h()(c()(e), '_onPastedFiles', function (t) {
+                  var n = e.props.onFilesAdded,
+                    r = []
+                  return (
+                    t.forEach(function (e) {
+                      e instanceof File && r.push(e)
+                    }),
+                    r.length && (null == n ? void 0 : n(r)) ? 'handled' : 'not-handled'
+                  )
+                }),
+                h()(c()(e), '_onPastedText', function (t, n, r) {
+                  var o = e.props,
+                    a = o.multiline,
+                    i = o.onChange
+                  return !a && i
+                    ? (i(
+                        _.EditorState.push(
+                          r,
+                          _.Modifier.replaceText(r.getCurrentContent(), r.getSelection(), t.replace(/[\r\n]+/g, ' ')),
+                          'insert-characters',
+                        ),
+                      ),
+                      'handled')
+                    : 'not-handled'
+                }),
+                h()(c()(e), '_myKeyBindingFn', function (t) {
+                  var n = e.props,
+                    r = n.dismissComposerCommandName,
+                    o = n.sendTweetCommandName,
+                    a = _.KeyBindingUtil.hasCommandModifier
+                  return 13 === t.keyCode && a(t) ? o : 27 === t.keyCode ? r : Object(_.getDefaultKeyBinding)(t)
+                }),
+                h()(c()(e), '_onKeyCommand', function (t) {
+                  var n = e.props.keyCommandHandlers,
+                    r = n && n[t]
+                  return r ? (r(), 'handled') : 'not-handled'
+                }),
+                h()(c()(e), '_onSingleLineReturn', function (t, n) {
+                  var r = e.props.handleReturn
+                  return null == r || r(t, n), 'handled'
+                }),
+                h()(c()(e), '_getContainerStyle', function () {
+                  var t = e.props,
+                    n = t.appTextSize,
+                    r = t.maxNumberOfLines,
+                    o = t.multiline,
+                    a = t.numberOfLines,
+                    i =
+                      m.a.theme.lineHeightsPx[
+                        {
+                          small: 'subtext2',
+                          normal: 'body',
+                          large: 'headline1',
+                          subtext2: 'subtext2',
+                          body: 'body',
+                          headline1: 'headline1',
+                        }[n]
+                      ]
+                  return { minHeight: (o && a ? a : 1) * i, maxHeight: (o && r ? r : 1) * i }
+                }),
+                e
+              )
+            }
+            return (
+              i()(
+                n,
+                [
+                  {
+                    key: 'componentDidMount',
+                    value: function () {
+                      var e = this.props,
+                        t = e.onChange,
+                        n = e.positionCursorAtBeginning
+                      e.positionCursorAtEnd
+                        ? this._setFocusToEnd()
+                        : n
+                        ? null == t || t(this._setFocusToStart())
+                        : this.props.autoFocus && this.focus(),
+                        O || (this._setDraftJsStyle(), (O = !0))
+                    },
+                  },
+                  {
+                    key: 'componentDidCatch',
+                    value: function (e) {
+                      k.a.report(e, { tags: { userVisible: !0, draftJs: !0 } })
+                    },
+                  },
+                  {
+                    key: 'render',
+                    value: function () {
+                      var e,
+                        t = this.props,
+                        n = t.ariaActiveDescendant,
+                        r = t.ariaAutocomplete,
+                        o = t.ariaControls,
+                        a = t.ariaLabel,
+                        i = t.blockRenderMap,
+                        l = t.blockRendererFn,
+                        c = t.editorState,
+                        s = t.handleReturn,
+                        u = t.multiline,
+                        d = t.onChange,
+                        f = t.onFocus,
+                        p = t.onKeyDown,
+                        g = t.onKeyPress,
+                        y = t.onKeyUp,
+                        v = t.placeholder,
+                        S = t.spellCheck,
+                        b = t.stripPastedStyles,
+                        x = t.style,
+                        k = t.testID
+                      return E.a.createElement(
+                        D,
+                        {
+                          className: u ? void 0 : C,
+                          onClick: this._handleViewClick,
+                          style: [this._getContainerStyle(), x],
+                        },
+                        E.a.createElement(_.Editor, {
+                          ariaActiveDescendantID: n,
+                          ariaAutoComplete: r,
+                          ariaControls: o,
+                          ariaLabel: a,
+                          ariaMultiline: u,
+                          blockRenderMap: i,
+                          blockRendererFn: l,
+                          customAttrs:
+                            ((e = {}),
+                            h()(e, T.a.NO_REFOCUS_ATTRIBUTE, 'true'),
+                            h()(e, 'onKeyPress', g),
+                            h()(e, 'onKeyUp', y),
+                            e),
+                          customStyleMap: F(m.a.theme),
+                          editorState: c,
+                          handleKeyCommand: this._onKeyCommand,
+                          handlePastedFiles: this._onPastedFiles,
+                          handlePastedText: this._onPastedText,
+                          handleReturn: u ? s : this._onSingleLineReturn,
+                          keyBindingFn: this._myKeyBindingFn,
+                          onChange: d,
+                          onFocus: f,
+                          onKeyDown: p,
+                          placeholder: v,
+                          ref: this._setEditorRef,
+                          spellCheck: 'false' !== S,
+                          stripPastedStyles: b,
+                          tabIndex: 0,
+                          webDriverTestID: k,
+                        }),
+                      )
+                    },
+                  },
+                ],
+                [
+                  {
+                    key: 'getDerivedStateFromError',
+                    value: function () {
+                      return {}
+                    },
+                  },
+                ],
+              ),
+              n
+            )
+          })(E.a.Component))
+      h()(K, 'defaultProps', {
+        appTextSize: 'body',
+        autoFocus: !1,
+        keyCommandHandlers: {},
+        maxNumberOfLines: 30,
+        multiline: !0,
+        numberOfLines: 6,
+        onFocus: w.a,
+        positionCursorAtEnd: !1,
+        spellCheck: 'true',
+        stripPastedStyles: !0,
+      }),
+        (K.propTypes = {})
+      var F = function (e) {
+        return { overflow: { backgroundColor: e.colors.red200 } }
+      }
+    },
+  },
+])
+//# sourceMappingURL=WIPED

@@ -49,7 +49,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return n.e(234).then(n.bind(null, 'QPD4'))
+              return n.e(235).then(n.bind(null, 'QPD4'))
             },
             loaderKey: 'defaultScoreEventSummaryLoader',
             strategy: n('XBtf').a.Critical,
@@ -219,14 +219,14 @@
         l = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf')),
         s = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(349)]).then(n.bind(null, 'a+ad'))
+            return Promise.all([n.e(0), n.e(350)]).then(n.bind(null, 'a+ad'))
           },
           loaderKey: 'newsCellLoader',
           strategy: l.a.Critical,
         },
         u = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(351)]).then(n.bind(null, 'hX2d'))
+            return Promise.all([n.e(0), n.e(352)]).then(n.bind(null, 'hX2d'))
           },
           loaderKey: 'newsPreviewCardLoader',
           strategy: l.a.Critical,
@@ -248,7 +248,7 @@
           o = void 0 !== i && i
         return a.e({
           loader: function () {
-            return n.e(243).then(n.bind(null, '+92Z'))
+            return n.e(244).then(n.bind(null, '+92Z'))
           },
           loaderKey: 'trendDefaultLoader',
           loaderOptions: { withThirdPartyCards: o, errorContext: t },

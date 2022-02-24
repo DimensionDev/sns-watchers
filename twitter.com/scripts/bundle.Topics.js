@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [99],
+  [100],
   {
     '7mm0': function (e, t, n) {
       'use strict'
@@ -131,11 +131,12 @@
           i.a.createElement(
             i.a.Fragment,
             null,
-            i.a.createElement(F.a, { description: u, title: s }),
+            i.a.createElement(F.a, { description: u }),
             i.a.createElement(R.a, { canonical: H(c), description: u, title: s, type: 'article' }),
             i.a.createElement(r.a, { deepLink: M(c) }),
             i.a.createElement(x.a, {
               backLocation: '/',
+              documentTitle: s,
               entryConfiguration: C,
               history: t,
               initialPageNamespace: Z,

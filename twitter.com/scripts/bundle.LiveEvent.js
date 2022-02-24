@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [63, 174],
+  [63, 175],
   {
     '0GAP': function (e, t, n) {
       'use strict'
@@ -1343,7 +1343,7 @@
         B = n.n(M),
         F = n('3zvM'),
         N = n('lMB6'),
-        j = Object(F.f)({
+        j = Object(F.e)({
           namespace: 'broadcasts',
           fetchOneContext: 'FETCH_BROADCAST',
           fetchOneEndpoint: function (e) {
@@ -2368,7 +2368,7 @@
         i = n('zb92'),
         o = Object(i.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(5), n.e(16), n.e(22), n.e(193)]).then(n.bind(null, 'wHP+'))
+            return Promise.all([n.e(0), n.e(5), n.e(16), n.e(22), n.e(194)]).then(n.bind(null, 'wHP+'))
           },
           renderPlaceholder: function () {
             return r.a.createElement('div', null)
@@ -2847,7 +2847,7 @@
         },
         L = n('3zvM'),
         R = n('lMB6'),
-        M = Object(L.f)({ namespace: 'commerceItems' }),
+        M = Object(L.e)({ namespace: 'commerceItems' }),
         B = o()({}, M),
         F = R.a.register(B),
         N = n('rxPX'),
@@ -5305,7 +5305,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return n.e(223).then(n.bind(null, 'tFiq'))
+              return n.e(224).then(n.bind(null, 'tFiq'))
             },
             loaderKey: 'momentAnnoationLoader',
             strategy: n('XBtf').a.Critical,

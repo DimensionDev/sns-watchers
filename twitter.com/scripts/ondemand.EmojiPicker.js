@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [209],
+  [210],
   {
     '5RdJ': function (e, t, n) {
       'use strict'
@@ -102,57 +102,32 @@
     },
     a6L8: function (e, t, n) {
       'use strict'
-      var o = n('VrFO'),
+      n('ho0z')
+      var o = n('ERkP'),
         r = n.n(o),
-        i = n('Y9Ll'),
-        a = n.n(i),
-        s = n('5Yy7'),
-        c = n.n(s),
-        l = n('2VqO'),
-        u = n.n(l),
-        d = (n('ho0z'), n('ERkP')),
-        f = n.n(d),
-        h = n('faxe'),
-        m = n('3rX5'),
-        v = n('VbCG'),
-        p = n('rHpw'),
-        y = (function (e) {
-          c()(n, e)
-          var t = u()(n)
-          function n() {
-            return r()(this, n), t.apply(this, arguments)
-          }
-          return (
-            a()(n, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.accessibilityLabel,
-                    n = e.emoji,
-                    o = e.skinTone,
-                    r = e.style,
-                    i = Object(h.b)(n, o)
-                  return i
-                    ? f.a.createElement(m.a, {
-                        accessibilityLabel: t,
-                        alt: n.name,
-                        draggable: !1,
-                        resizeMode: 'stretch',
-                        source: i,
-                        style: [g.root, r],
-                      })
-                    : null
-                },
-              },
-            ]),
-            n
-          )
-        })(f.a.PureComponent),
-        g = p.a.create(function (e) {
-          return { root: { height: v.c.EmojiHeight, width: v.c.EmojiWidth } }
-        })
-      t.a = y
+        i = n('faxe'),
+        a = n('3rX5'),
+        s = n('VbCG')
+      var c = n('rHpw').a.create(function (e) {
+        return { root: { height: s.c.EmojiHeight, width: s.c.EmojiWidth } }
+      })
+      t.a = function (e) {
+        var t = e.accessibilityLabel,
+          n = e.emoji,
+          o = e.skinTone,
+          s = e.style,
+          l = Object(i.b)(n, o)
+        return l
+          ? r.a.createElement(a.a, {
+              accessibilityLabel: t,
+              alt: n.name,
+              draggable: !1,
+              resizeMode: 'stretch',
+              source: l,
+              style: [c.root, s],
+            })
+          : null
+      }
     },
     faxe: function (e, t, n) {
       'use strict'
@@ -243,7 +218,7 @@
         k = n.n(_),
         w = n('KEM+'),
         S = n.n(w),
-        C =
+        j =
           (n('z84I'),
           n('ho0z'),
           n('jwue'),
@@ -256,13 +231,13 @@
           n('LW0h'),
           n('IAdD'),
           n('ERkP')),
-        j = n.n(C),
+        C = n.n(j),
         b = n('py1r'),
         E = n('I4+6'),
         R = n('oLZl'),
         I = n('rHpw'),
-        P = n('MWbm'),
-        T = E.a.generate({ backgroundColor: 'transparent', color: I.a.theme.colors.primary }),
+        T = n('MWbm'),
+        P = E.a.generate({ backgroundColor: 'transparent', color: I.a.theme.colors.primary }),
         D = (function (e) {
           g()(n, e)
           var t = k()(n)
@@ -297,15 +272,15 @@
                     n = t.icon,
                     o = t.isActive,
                     r = t.isDisabled
-                  return j.a.createElement(b.a, { disabled: r }, function (t) {
+                  return C.a.createElement(b.a, { disabled: r }, function (t) {
                     var i = t.isFocused,
                       a = t.isHovered,
                       s = t.isPressed
-                    return j.a.createElement(
-                      P.a,
+                    return C.a.createElement(
+                      T.a,
                       { style: F.container },
-                      j.a.createElement(
-                        P.a,
+                      C.a.createElement(
+                        T.a,
                         {
                           accessibilityDisabled: r,
                           accessibilityRole: 'button',
@@ -314,15 +289,15 @@
                           style: [
                             F.iconWrapper,
                             a || o ? void 0 : F.faded,
-                            T.transitionStyle,
-                            a && T.hoverStyle,
-                            s && T.pressedStyle,
-                            i && T.focusedStyle,
+                            P.transitionStyle,
+                            a && P.hoverStyle,
+                            s && P.pressedStyle,
+                            i && P.focusedStyle,
                           ],
                         },
                         n,
                       ),
-                      j.a.createElement(P.a, {
+                      C.a.createElement(T.a, {
                         style: [F.border, o ? { backgroundColor: I.a.theme.colors.primary } : null],
                       }),
                     )
@@ -332,7 +307,7 @@
             ]),
             n
           )
-        })(j.a.PureComponent),
+        })(C.a.PureComponent),
         F = I.a.create(function (e) {
           return {
             container: { flex: 1 },
@@ -371,8 +346,8 @@
                     o = t.categories,
                     r = t.disableAll,
                     i = t.onAnchorClick
-                  return j.a.createElement(
-                    P.a,
+                  return C.a.createElement(
+                    T.a,
                     { style: M.root },
                     o.map(function (t) {
                       var o = t.anchorless,
@@ -383,7 +358,7 @@
                         u = !!n && t.id === n.id
                       return o
                         ? null
-                        : j.a.createElement(x, {
+                        : C.a.createElement(x, {
                             category: t,
                             icon: e._getIcon(s, c),
                             isActive: u,
@@ -399,13 +374,13 @@
                 key: '_getIcon',
                 value: function (e, t) {
                   var n = this.props.emojiData[O[e]]
-                  return j.a.createElement(L.a, { accessibilityLabel: t, emoji: n })
+                  return C.a.createElement(L.a, { accessibilityLabel: t, emoji: n })
                 },
               },
             ]),
             n
           )
-        })(j.a.PureComponent),
+        })(C.a.PureComponent),
         M = I.a.create(function (e) {
           return { root: { flexDirection: 'row', justifyContent: 'space-between' } }
         }),
@@ -473,15 +448,15 @@
                         .concat(100 * this.props.spriteSheetColumns, '% ')
                         .concat(100 * this.props.spriteSheetRows, '%'),
                     }
-                  return j.a.createElement(
+                  return C.a.createElement(
                     b.a,
                     { onFocusRingGained: this._handleFocus, onHoverIn: this._handleHover },
                     function (t) {
                       var i = t.isFocused,
                         s = t.isHovered,
                         c = t.isPressed
-                      return j.a.createElement(
-                        P.a,
+                      return C.a.createElement(
+                        T.a,
                         {
                           accessibilityLabel: r || o.name,
                           accessibilityRole: 'option',
@@ -489,14 +464,14 @@
                           nativeID: n,
                           onClick: e._handleClick,
                           style: [
-                            Y.container,
+                            J.container,
                             G.transitionStyle,
                             s && G.hoverStyle,
                             c && G.pressedStyle,
                             (i || n) && G.focusedStyle,
                           ],
                         },
-                        j.a.createElement(P.a, { style: [a, Y.emoji] }),
+                        C.a.createElement(T.a, { style: [a, J.emoji] }),
                       )
                     },
                   )
@@ -505,9 +480,9 @@
             ]),
             n
           )
-        })(j.a.PureComponent),
+        })(C.a.PureComponent),
         G = E.a.generate({ backgroundColor: I.a.theme.colors.transparent, color: I.a.theme.colors.gray700 }),
-        Y = I.a.create(function (e) {
+        J = I.a.create(function (e) {
           return {
             container: {
               alignItems: 'center',
@@ -519,7 +494,7 @@
           }
         }),
         q = W,
-        J = n('FIs5'),
+        Y = n('FIs5'),
         Z = n('mtvn'),
         X = n('7nmT'),
         Q = n.n(X),
@@ -538,13 +513,13 @@
                     t = e.children,
                     n = e.style,
                     o = e.withTopBorder
-                  return j.a.createElement(P.a, { style: [ee.root, o && ee.topBorder, n] }, t)
+                  return C.a.createElement(T.a, { style: [ee.root, o && ee.topBorder, n] }, t)
                 },
               },
             ]),
             n
           )
-        })(j.a.PureComponent)
+        })(C.a.PureComponent)
       S()($, 'defaultProps', { withTopBorder: !1 })
       var ee = I.a.create(function (e) {
           return {
@@ -592,7 +567,7 @@
                   a = o.codepoint,
                   s = r.skin_variations,
                   l = [
-                    j.a.createElement(
+                    C.a.createElement(
                       q,
                       u()({}, i, {
                         emoji: c()({}, r),
@@ -608,7 +583,7 @@
                       h = f.sprite_position,
                       m = f.unified
                     l.push(
-                      j.a.createElement(
+                      C.a.createElement(
                         q,
                         u()({}, i, {
                           emoji: c()(c()({}, r), {}, { text: m }),
@@ -623,11 +598,11 @@
               }),
               S()(p()(e), 'renderEmojis', function (t) {
                 var n = ie(e._getEmojisForActiveSkinTone(t), 10)
-                return j.a.createElement(
-                  P.a,
+                return C.a.createElement(
+                  T.a,
                   { style: ue.emojisContainer },
                   n.map(function (e, t) {
-                    return j.a.createElement(P.a, { key: t, style: ue.row }, e)
+                    return C.a.createElement(T.a, { key: t, style: ue.row }, e)
                   }),
                 )
               }),
@@ -642,17 +617,17 @@
                   var e = this.props,
                     t = (e.activeSkinTone, e.emoji),
                     n = (e.onSelect, oe()(e, ce))
-                  return j.a.createElement(
+                  return C.a.createElement(
                     ae.a,
                     { contentStyle: ue.contentStyle, renderContent: this.renderEmojis, withArrow: !0 },
-                    j.a.createElement(q, u()({}, n, { emoji: t, spritePosition: t.sprite_position })),
+                    C.a.createElement(q, u()({}, n, { emoji: t, spritePosition: t.sprite_position })),
                   )
                 },
               },
             ]),
             n
           )
-        })(j.a.PureComponent),
+        })(C.a.PureComponent),
         ue = I.a.create(function (e) {
           return {
             row: { flexDirection: 'row' },
@@ -661,43 +636,27 @@
           }
         }),
         de = le,
-        fe = ['activeSkinTone'],
-        he = (function (e) {
-          g()(n, e)
-          var t = k()(n)
-          function n() {
-            return f()(this, n), t.apply(this, arguments)
-          }
-          return (
-            m()(n, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.activeSkinTone,
-                    n = oe()(e, fe),
-                    o = this.props.emoji,
-                    r = o.skin_variations,
-                    i = t.codepoint,
-                    a = Object(re.c)(r, i),
-                    s = i && r && r[i]
-                  return 0 !== a || s
-                    ? 1 === a && s
-                      ? j.a.createElement(q, u()({}, n, { spritePosition: s.sprite_position }))
-                      : j.a.createElement(de, u()({}, n, { activeSkinTone: t }))
-                    : j.a.createElement(q, u()({}, n, { spritePosition: o.sprite_position }))
-                },
-              },
-            ]),
-            n
-          )
-        })(j.a.PureComponent),
-        me = j.a.forwardRef(function (e, t) {
-          var n = j.a.useState(!0),
+        fe = ['activeSkinTone']
+      var he = function (e) {
+          var t = e.activeSkinTone,
+            n = oe()(e, fe),
+            o = e.emoji,
+            r = o.skin_variations,
+            i = t.codepoint,
+            a = Object(re.c)(r, i),
+            s = i && r && r[i]
+          return 0 !== a || s
+            ? 1 === a && s
+              ? C.a.createElement(q, u()({}, n, { spritePosition: s.sprite_position }))
+              : C.a.createElement(de, u()({}, n, { activeSkinTone: t }))
+            : C.a.createElement(q, u()({}, n, { spritePosition: o.sprite_position }))
+        },
+        me = C.a.forwardRef(function (e, t) {
+          var n = C.a.useState(!0),
             o = K()(n, 2),
             r = o[0],
             i = o[1],
-            a = j.a.useRef({
+            a = C.a.useRef({
               containerRef: null,
               intersectionObserver:
                 window.IntersectionObserver &&
@@ -710,13 +669,13 @@
                     (n.disconnect(), i(!1))
                 }),
             })
-          j.a.useLayoutEffect(
+          C.a.useLayoutEffect(
             function () {
               r && e.isActiveCategory && i(!1)
             },
             [r, e.isActiveCategory],
           ),
-            j.a.useEffect(
+            C.a.useEffect(
               function () {
                 var e = a.current,
                   t = e.containerRef,
@@ -725,7 +684,7 @@
               },
               [a.current.containerRef, a.current.intersectionObserver],
             )
-          var s = j.a.useMemo(
+          var s = C.a.useMemo(
             function () {
               return function (e) {
                 var n = Q.a.findDOMNode(e)
@@ -736,8 +695,8 @@
             [t],
           )
           return r
-            ? j.a.createElement(ve, u()({ ref: s }, e, { withPlaceholder: !0 }))
-            : j.a.createElement(ve, u()({}, e, { ref: t }))
+            ? C.a.createElement(ve, u()({ ref: s }, e, { withPlaceholder: !0 }))
+            : C.a.createElement(ve, u()({}, e, { ref: t }))
         }),
         ve = (function (e) {
           g()(n, e)
@@ -752,7 +711,7 @@
               S()(p()(o), '_renderEmptyState', function () {
                 var e = V.f.notFoundHeader,
                   t = V.f.notFoundMessage
-                return j.a.createElement(J.a, { header: e, message: t })
+                return C.a.createElement(Y.a, { header: e, message: t })
               }),
               S()(p()(o), 'updatePosition', function () {
                 var e = Q.a.findDOMNode(o._containerRef.current),
@@ -775,7 +734,7 @@
                 var t = Q.a.findDOMNode(o._containerRef.current)
                 t && t instanceof window.HTMLElement && t.style && (t.style.display = e ? 'flex' : 'none')
               }),
-              (o._containerRef = j.a.createRef()),
+              (o._containerRef = C.a.createRef()),
               o
             )
           }
@@ -803,11 +762,11 @@
                     r = e.onStickyHeaderRef,
                     i = e.withEmptyState,
                     a = t.length > 0 || i
-                  return j.a.createElement(
-                    P.a,
+                  return C.a.createElement(
+                    T.a,
                     { key: o, ref: this._containerRef },
-                    j.a.createElement(
-                      P.a,
+                    C.a.createElement(
+                      T.a,
                       {
                         accessibilityLabel: o,
                         accessibilityRole: 'group',
@@ -815,17 +774,17 @@
                         ref: this._containerRef,
                         style: a ? pe.shown : pe.hidden,
                       },
-                      j.a.createElement(
-                        P.a,
+                      C.a.createElement(
+                        T.a,
                         { ref: r, style: pe.headerContainer },
-                        j.a.createElement(
+                        C.a.createElement(
                           te,
                           { style: pe.headerSection, withTopBorder: !0 },
-                          j.a.createElement(z.b, { size: 'headline2', style: pe.header, weight: 'bold' }, o),
+                          C.a.createElement(z.b, { size: 'headline2', style: pe.header, weight: 'bold' }, o),
                           n,
                         ),
                       ),
-                      i ? this._renderEmptyState() : j.a.createElement(te, null, this._renderEmojis()),
+                      i ? this._renderEmptyState() : C.a.createElement(te, null, this._renderEmojis()),
                     ),
                   )
                 },
@@ -839,16 +798,16 @@
                     o = t.rowSize,
                     r = Math.ceil(n.length / o),
                     i = Object(Z.a)(0, r)
-                  return j.a.createElement(
-                    P.a,
+                  return C.a.createElement(
+                    T.a,
                     { style: pe.emojiGroup },
                     i.map(function (t) {
                       var r = n.slice(t * o, (t + 1) * o)
-                      return j.a.createElement(
-                        P.a,
+                      return C.a.createElement(
+                        T.a,
                         { key: 'emoji-row-'.concat(t), style: pe.emojiRow },
                         e.props.withPlaceholder
-                          ? j.a.createElement(P.a, { style: [pe.rowItem, pe.spacer] })
+                          ? C.a.createElement(T.a, { style: [pe.rowItem, pe.spacer] })
                           : e._renderRow(r),
                       )
                     }),
@@ -872,10 +831,10 @@
                   return Object(Z.a)(0, d).map(function (t) {
                     var d = e[t]
                     if (!d)
-                      return j.a.createElement(
-                        P.a,
+                      return C.a.createElement(
+                        T.a,
                         { key: 'row-spacer-'.concat(t), style: pe.rowItem },
-                        j.a.createElement(P.a, { style: pe.spacer }),
+                        C.a.createElement(T.a, { style: pe.spacer }),
                       )
                     var h = r.emojis[d.toLowerCase()]
                     if (!h) return null
@@ -892,10 +851,10 @@
                         spriteSheetRows: p,
                         spriteSheetColumns: v,
                       }
-                    return j.a.createElement(
-                      P.a,
+                    return C.a.createElement(
+                      T.a,
                       { key: h.unified, ref: d === i ? c : void 0, style: pe.rowItem },
-                      m ? j.a.createElement(he, u()({}, y, { activeSkinTone: n })) : j.a.createElement(q, y),
+                      m ? C.a.createElement(he, u()({}, y, { activeSkinTone: n })) : C.a.createElement(q, y),
                     )
                   })
                 },
@@ -903,7 +862,7 @@
             ]),
             n
           )
-        })(j.a.PureComponent)
+        })(C.a.PureComponent)
       S()(ve, 'defaultProps', { headerButton: null, rowSize: V.b, withEmptyState: !1 })
       var pe = I.a.create(function (e) {
           return {
@@ -1082,8 +1041,8 @@
         })(),
         we = n('xoZN'),
         Se = (n('KqXw'), n('LJOr'), n('Ysgh'), n('tQbP'), n('s1N3')),
-        Ce = n('tn7R')
-      function je(e, t) {
+        je = n('tn7R')
+      function Ce(e, t) {
         for (var n = a()(t), o = 0, r = e; o < n.length; ) {
           var i = r.children[n[o]]
           if (!i) break
@@ -1092,7 +1051,7 @@
         return { node: r, tail: n.slice(o) }
       }
       function be(e, t, n) {
-        var o = je(e, t),
+        var o = Ce(e, t),
           r = o.node,
           i = o.tail,
           a = r
@@ -1103,7 +1062,7 @@
           a.results ? a.results.push(n) : (a.results = [n])
       }
       function Ee(e, t) {
-        var n = je(e, t),
+        var n = Ce(e, t),
           o = n.node,
           r = n.tail
         if (!o || r.length > 0) return []
@@ -1111,7 +1070,7 @@
         return (
           (function e(t) {
             t.results.length && i.push.apply(i, a()(t.results)),
-              Object(Ce.a)(t.children).forEach(function (t) {
+              Object(je.a)(t.children).forEach(function (t) {
                 return e(t)
               })
           })(o),
@@ -1180,12 +1139,12 @@
             return o.indexOf(e) >= 0
           })
         },
-        Pe = Re,
-        Te = n('6OUF'),
+        Te = Re,
+        Pe = n('6OUF'),
         De = n('VwDm'),
         Fe = n('fs1G'),
         xe = n('VY6S'),
-        Le = j.a.forwardRef(function (e, t) {
+        Le = C.a.forwardRef(function (e, t) {
           var n = e.autoFocus,
             o = void 0 !== n && n,
             r = e.maxResults,
@@ -1195,14 +1154,14 @@
             c = e.data,
             l = e.ariaActiveDescendant,
             u = e.categoriesDomId,
-            d = j.a.useState('')[1],
-            f = j.a.useMemo(
+            d = C.a.useState('')[1],
+            f = C.a.useMemo(
               function () {
-                return new Pe(c)
+                return new Te(c)
               },
               [c],
             ),
-            h = j.a.useMemo(
+            h = C.a.useMemo(
               function () {
                 return Object(xe.a)(function (e) {
                   var t = f.search(e, { maxResults: i })
@@ -1211,23 +1170,23 @@
               },
               [f, i, s],
             ),
-            m = j.a.useCallback(
+            m = C.a.useCallback(
               function (e) {
                 var t = (e.target && e.target.value) || ''
                 d(t), h(t)
               },
               [d, h],
             ),
-            v = j.a.useCallback(
+            v = C.a.useCallback(
               function () {
                 d(''), h('')
               },
               [d, h],
             )
-          return j.a.createElement(
-            P.a,
+          return C.a.createElement(
+            T.a,
             { accessibilityRole: 'combobox' },
-            j.a.createElement(Te.a, {
+            C.a.createElement(Pe.a, {
               Icon: De.a,
               ariaActiveDescendant: l,
               ariaControls: u,
@@ -1248,7 +1207,7 @@
         Oe = I.a.create(function (e) {
           return { fieldTextInput: { margin: e.spaces.space4 } }
         }),
-        He = j.a.memo(Le),
+        He = C.a.memo(Le),
         Me = n('IMYl'),
         Ae = (function (e) {
           g()(n, e)
@@ -1312,7 +1271,7 @@
                     i = t.skinTone,
                     a = t.style,
                     s = E.a.generate({ backgroundColor: i.color, color: I.a.theme.colors.white })
-                  return j.a.createElement(
+                  return C.a.createElement(
                     b.a,
                     {
                       onFocusRingGained: this._handleFocus,
@@ -1324,8 +1283,8 @@
                       var c = t.isFocused,
                         l = t.isHovered,
                         u = t.isPressed
-                      return j.a.createElement(
-                        P.a,
+                      return C.a.createElement(
+                        T.a,
                         {
                           accessibilityLabel: n,
                           accessibilityRole: o || 'button',
@@ -1335,8 +1294,8 @@
                           onKeyDown: c ? e._handleKeyDown : void 0,
                           style: a,
                         },
-                        j.a.createElement(
-                          P.a,
+                        C.a.createElement(
+                          T.a,
                           {
                             style: [
                               ze.root,
@@ -1346,7 +1305,7 @@
                               (u || r) && ze.selected,
                             ],
                           },
-                          r ? j.a.createElement(Me.a, { style: ze.checkmarkIcon }) : null,
+                          r ? C.a.createElement(Me.a, { style: ze.checkmarkIcon }) : null,
                         ),
                       )
                     },
@@ -1356,7 +1315,7 @@
             ]),
             n
           )
-        })(j.a.Component),
+        })(C.a.Component),
         ze = I.a.create(function (e) {
           return {
             outer: { paddingLeft: e.spaces.space4 },
@@ -1384,12 +1343,12 @@
               S()(p()(e), 'state', { showPalette: !1, focusedOption: void 0, hoveredOption: void 0 }),
               S()(p()(e), '_renderPalette', function () {
                 var t = e.props.activeSkinTone
-                return j.a.createElement(
-                  P.a,
+                return C.a.createElement(
+                  T.a,
                   { accessibilityRole: 'radiogroup', style: Ne.palette },
-                  Object(Ce.a)(V.e).map(function (n) {
+                  Object(je.a)(V.e).map(function (n) {
                     var o = n === t
-                    return j.a.createElement(Be, {
+                    return C.a.createElement(Be, {
                       accessibilityLabel: n.name,
                       accessibilityRole: 'radio',
                       isSelected: o,
@@ -1407,7 +1366,7 @@
               }),
               S()(p()(e), '_renderCurrentSkinTone', function () {
                 var t = e.props.activeSkinTone
-                return j.a.createElement(Be, {
+                return C.a.createElement(Be, {
                   accessibilityLabel: V.f.skintext,
                   isSelected: !0,
                   onSelect: e._handleShowPaletteClick,
@@ -1446,13 +1405,13 @@
                 value: function () {
                   var e = this.state.showPalette,
                     t = this.props.style
-                  return j.a.createElement(P.a, { style: t }, e ? this._renderPalette() : this._renderCurrentSkinTone())
+                  return C.a.createElement(T.a, { style: t }, e ? this._renderPalette() : this._renderCurrentSkinTone())
                 },
               },
             ]),
             n
           )
-        })(j.a.Component),
+        })(C.a.Component),
         Ne = I.a.create(function (e) {
           return { palette: { flexDirection: 'row' }, skinToneOption: { paddingHorizontal: e.spaces.space2 } }
         }),
@@ -1460,9 +1419,9 @@
         Ve = n('r728'),
         We = n('Qyxo'),
         Ge = n('Iok7'),
-        Ye = 'emojiPicker2',
+        Je = 'emojiPicker2',
         qe = [V.a.Search, V.a.Recent],
-        Je = 'emoji_picker_categories_dom_id',
+        Ye = 'emoji_picker_categories_dom_id',
         Ze = (function (e) {
           g()(n, e)
           var t = k()(n)
@@ -1471,8 +1430,8 @@
             f()(this, n),
               (o = t.call(this, e)),
               S()(p()(o), '_categoryRefs', {}),
-              S()(p()(o), '_scrollRef', j.a.createRef()),
-              S()(p()(o), '_searchRef', j.a.createRef()),
+              S()(p()(o), '_scrollRef', C.a.createRef()),
+              S()(p()(o), '_searchRef', C.a.createRef()),
               S()(p()(o), '_selectedEmojis', []),
               S()(p()(o), '_shouldScrollToFocusedItem', !0),
               S()(p()(o), '_shouldUpdateScrollPosition', !1),
@@ -1480,7 +1439,7 @@
                 var t = o.state,
                   n = t.activeCategory,
                   r = t.query
-                return j.a.createElement(A, {
+                return C.a.createElement(A, {
                   activeCategory: r ? void 0 : n,
                   categories: e,
                   disableAll: !!r,
@@ -1489,10 +1448,10 @@
                 })
               }),
               S()(p()(o), '_renderSearch', function () {
-                return j.a.createElement(He, {
+                return C.a.createElement(He, {
                   ariaActiveDescendant: o.state.ariaDescendantId,
                   autoFocus: !0,
-                  categoriesDomId: Je,
+                  categoriesDomId: Ye,
                   data: o._uncompressedData,
                   onSearch: o._handleSearch,
                   ref: o._searchRef,
@@ -1509,11 +1468,11 @@
                   l = i.focusCategoryId,
                   d = i.focusItem,
                   f = i.query
-                return j.a.createElement(
+                return C.a.createElement(
                   Ge.a,
                   {
                     accessibilityRole: 'listbox',
-                    nativeID: Je,
+                    nativeID: Ye,
                     onMouseLeave: o._handleClearPreview,
                     onScroll: o._handleScroll,
                     ref: o._scrollRef,
@@ -1542,7 +1501,7 @@
                       }
                     return (
                       e.id === V.a.Recent &&
-                        (m.headerButton = j.a.createElement(
+                        (m.headerButton = C.a.createElement(
                           B.a,
                           {
                             accessibilityLabel: V.f.clear,
@@ -1553,7 +1512,7 @@
                           V.f.clear,
                         )),
                       e.id === V.a.Search && (m.withEmptyState = !e.emojis.length && !!f),
-                      j.a.createElement(
+                      C.a.createElement(
                         me,
                         u()({}, m, { key: e.name, ref: o._setCategoryRef('category-'.concat(e.id)) }),
                       )
@@ -1596,9 +1555,9 @@
                   r = e.previewSkinTone,
                   i = n || o._defaultPreviewEmoji,
                   a = r || t
-                return j.a.createElement(B.a, {
+                return C.a.createElement(B.a, {
                   accessibilityLabel: i.name,
-                  icon: j.a.createElement(L.a, { emoji: i, skinTone: a, style: Xe.twemoji }),
+                  icon: C.a.createElement(L.a, { emoji: i, skinTone: a, style: Xe.twemoji }),
                   onClick: o._handlePreviewClick,
                   type: 'brandText',
                 })
@@ -1610,7 +1569,7 @@
               S()(p()(o), '_renderEmojiDescription', function () {
                 var e = o.state.previewEmoji
                 return e
-                  ? j.a.createElement(
+                  ? C.a.createElement(
                       z.b,
                       {
                         align: 'left',
@@ -1625,12 +1584,12 @@
               }),
               S()(p()(o), '_renderFooter', function () {
                 var e = o.state.withDescription
-                return j.a.createElement(
-                  P.a,
+                return C.a.createElement(
+                  T.a,
                   { style: Xe.footer },
                   o._renderPreview(),
                   e ? o._renderEmojiDescription() : null,
-                  j.a.createElement(Ke, {
+                  C.a.createElement(Ke, {
                     activeSkinTone: o.state.activeSkinTone,
                     onPreview: o._handleSkinTonePreview,
                     onSelect: o._handleSkinToneSelect,
@@ -1682,7 +1641,7 @@
                       return e.unified
                     })
                   : []
-                Object(Ce.a)(o._categoryRefs).forEach(function (t) {
+                Object(je.a)(o._categoryRefs).forEach(function (t) {
                   t && 'search' !== t.props.id && t.updateDisplay(!e)
                 }),
                   o.setState({ searchResults: n, query: e }),
@@ -1748,7 +1707,7 @@
               S()(p()(o), '_handleAnchorClick', function (e) {
                 o._shouldUpdateScrollPosition &&
                   ((o._shouldUpdateScrollPosition = !1),
-                  Object(Ce.a)(o._categoryRefs).forEach(function (e) {
+                  Object(je.a)(o._categoryRefs).forEach(function (e) {
                     return e.updatePosition()
                   }))
                 var t = o._categoryRefs['category-'.concat(e.id)]
@@ -1804,7 +1763,7 @@
               {
                 key: 'componentWillUnmount',
                 value: function () {
-                  U.a.set(Ye, {
+                  U.a.set(Je, {
                     recentlyUsed: this._getUpdatedRecentlyUsedEmojiList(),
                     activeSkinToneId: this.state.activeSkinTone.id,
                   })
@@ -1814,7 +1773,7 @@
                 key: 'componentDidMount',
                 value: function () {
                   var e = this
-                  U.a.get(Ye).then(function (t) {
+                  U.a.get(Je).then(function (t) {
                     if (t && 'object' === r()(t)) {
                       var n = t.recentlyUsed,
                         o = void 0 === n ? [] : n,
@@ -1891,20 +1850,20 @@
                     s = this._staticCategories(),
                     l = [r, i].concat(s),
                     u = [r, i, s[0]]
-                  return j.a.createElement(
+                  return C.a.createElement(
                     we.a,
                     { onKeyDown: this._handleKeyDown, style: Xe.root },
-                    j.a.createElement(te, { style: Xe.searchSection }, this._renderSearch()),
-                    j.a.createElement(te, { style: Xe.anchorsSection }, this._renderAnchors(l)),
+                    C.a.createElement(te, { style: Xe.searchSection }, this._renderSearch()),
+                    C.a.createElement(te, { style: Xe.anchorsSection }, this._renderAnchors(l)),
                     this._renderCategories(e ? u : l),
-                    j.a.createElement(te, { style: Xe.footerContainer, withTopBorder: !0 }, this._renderFooter()),
+                    C.a.createElement(te, { style: Xe.footerContainer, withTopBorder: !0 }, this._renderFooter()),
                   )
                 },
               },
             ]),
             n
           )
-        })(j.a.PureComponent)
+        })(C.a.PureComponent)
       S()(Ze, 'defaultProps', {
         defaultSkinTone: V.d.None,
         partialRender: !1,

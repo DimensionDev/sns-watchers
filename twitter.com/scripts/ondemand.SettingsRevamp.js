@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [236],
+  [237],
   {
     '1Uii': function (e, t, a) {
       'use strict'
@@ -55,9 +55,9 @@
         O = y.a.bcae496c,
         F = y.a.acc60551,
         R = y.a.f80a33af,
-        L = y.a.b276596b,
-        A = y.a.c966aaf4,
-        I = y.a.e8313b32,
+        I = y.a.b276596b,
+        L = y.a.c966aaf4,
+        A = y.a.e8313b32,
         P = y.a.f1d46fd5,
         M = y.a.cfd2f35d,
         U = y.a.f6c8ccc7,
@@ -110,7 +110,7 @@
               u.a.createElement(C.a, {
                 checked: d.enabled,
                 disabled: d.controlDisabled,
-                helpText: n ? A : L,
+                helpText: n ? L : I,
                 label: R,
                 learnMoreLink: 'https://support.twitter.com/articles/20169421',
                 name: 'allowCookieUse',
@@ -131,7 +131,7 @@
                 confirmButtonLabel: P,
                 onCancel: d._handleConfirmationCancel,
                 onConfirm: d._handleConfirmationConfirm,
-                text: I,
+                text: A,
               }),
           ),
         )
@@ -331,7 +331,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'monetizationSettingsQuery', function () {
-          return I
+          return A
         })
       var n = a('ERkP'),
         r = a.n(n),
@@ -382,10 +382,10 @@
         O = i.a.b255df58,
         F = i.a.b3f834c7,
         R = i.a.i724fb49,
-        L = i.a.f66d24be,
-        A = { Approved: C, NotStarted: null, Rejected: T, Submitted: O, Waitlisted: F },
-        I = void 0 !== f ? f : (f = a('jN9l')),
-        P = Object(E.b)(I, { errorConfig: { context: 'MONETIZATION_SETTINGS' } })
+        I = i.a.f66d24be,
+        L = { Approved: C, NotStarted: null, Rejected: T, Submitted: O, Waitlisted: F },
+        A = void 0 !== f ? f : (f = a('jN9l')),
+        P = Object(E.b)(A, { errorConfig: { context: 'MONETIZATION_SETTINGS' } })
       t.default = function () {
         var e = Object(h.g)()
         return r.a.createElement(P, {
@@ -409,7 +409,7 @@
                     ? void 0
                     : i.super_follows_application_status)) ||
                 'NotStarted',
-              d = s ? k : A[u]
+              d = s ? k : L[u]
             return r.a.createElement(
               p.a,
               null,
@@ -420,7 +420,7 @@
                 r.a.createElement(v.b, { Icon: m, description: d, label: w, link: '/settings/superfollows' }),
                 r.a.createElement(y.a, null),
                 r.a.createElement(g.b, { text: R }),
-                r.a.createElement(v.a, { label: L, link: 'https://help.twitter.com/forms/paid-features/superfollows' }),
+                r.a.createElement(v.a, { label: I, link: 'https://help.twitter.com/forms/paid-features/superfollows' }),
               ),
             )
           },
@@ -474,9 +474,9 @@
         O = m.a.f0853ba6,
         F = m.a.bca1de49,
         R = m.a.c3aa76c3,
-        L = m.a.b2a77838,
-        A = m.a.c3aa76c3,
-        I = { page: 'settings', section: 'languages' }
+        I = m.a.b2a77838,
+        L = m.a.c3aa76c3,
+        A = { page: 'settings', section: 'languages' }
       function P(e) {
         var t = e.createLocalApiErrorHandler,
           a = e.fetchAvailableLanguagesIfNeeded,
@@ -493,7 +493,7 @@
           ),
           r.a.createElement(
             b.c,
-            { namespace: I },
+            { namespace: A },
             r.a.createElement(
               p.a,
               null,
@@ -510,8 +510,8 @@
                 r.a.createElement(y.a, { label: F, link: '/i/flow/language_selector' }),
                 r.a.createElement(v.a, null),
                 r.a.createElement(g.b, { text: R }),
-                r.a.createElement(E.a, { description: L }),
-                r.a.createElement(y.a, { label: A, link: '/settings/your_twitter_data/language' }),
+                r.a.createElement(E.a, { description: I }),
+                r.a.createElement(y.a, { label: L, link: '/settings/your_twitter_data/language' }),
               ),
             ),
           )
@@ -606,9 +606,9 @@
         O = a('mw9i'),
         F = a('0yYu'),
         R = a('/yvb'),
-        L = a('rHpw'),
-        A = k.a.i2209530,
-        I = (function (e) {
+        I = a('rHpw'),
+        L = k.a.i2209530,
+        A = (function (e) {
           u()(a, e)
           var t = f()(a)
           function a() {
@@ -706,8 +706,8 @@
             a
           )
         })(h.a.Component)
-      p()(I, 'defaultProps', { submitLabel: A, submitType: 'brandFilled', withMarginBottom: !0 })
-      var P = L.a.create(function (e) {
+      p()(A, 'defaultProps', { submitLabel: L, submitType: 'brandFilled', withMarginBottom: !0 })
+      var P = I.a.create(function (e) {
         return {
           contentRoot: {
             backgroundColor: e.colors.cellBackground,
@@ -725,11 +725,11 @@
           },
           button: { marginVertical: 0, marginHorizontal: e.spaces.space12 },
           withMarginBottom: {
-            marginBottom: 'calc('.concat(e.spaces.space64, ' + ').concat(L.a.iPhoneOffsetBottom, ')'),
+            marginBottom: 'calc('.concat(e.spaces.space64, ' + ').concat(I.a.iPhoneOffsetBottom, ')'),
           },
         }
       })
-      t.a = S(I)
+      t.a = S(A)
     },
     '899o': function (e, t, a) {
       'use strict'
@@ -771,11 +771,11 @@
         O = a('TnO6'),
         F = v.a.f154bd64,
         R = { page: 'settings', component: 'autoblocked_account_tweets' },
-        L = { context: 'safety_mode' },
-        A = v.a.e9f1fbcb,
-        I = v.a.de9b6641,
+        I = { context: 'safety_mode' },
+        L = v.a.e9f1fbcb,
+        A = v.a.de9b6641,
         P = function () {
-          return c.a.createElement(o.a, { header: A, message: I })
+          return c.a.createElement(o.a, { header: L, message: A })
         }
       t.default = function (e) {
         var t = e.history,
@@ -811,7 +811,7 @@
             : null
         return c.a.createElement(
           C.c,
-          { data: L, namespace: R },
+          { data: I, namespace: R },
           c.a.createElement(
             S.a,
             null,
@@ -922,9 +922,9 @@
         O = a('fyvP'),
         F = a('rHpw'),
         R = g.a.de43eaf2,
-        L = g.a.b6ab9962,
-        A = g.a.jdceda6f,
-        I = g.a.j45978a8,
+        I = g.a.b6ab9962,
+        L = g.a.jdceda6f,
+        A = g.a.j45978a8,
         P = g.a.i9028824,
         M = g.a.j905e6fe,
         U = g.a.e2c39a4c
@@ -951,7 +951,7 @@
           Q = [5, 10, 20, 30, 60].map(function (e) {
             return { label: K(e), value: e.toString() }
           })
-        function W(e, n) {
+        function X(e, n) {
           if ('period' !== e) {
             var c = { undoPreview: i()(i()({}, t), {}, r()({}, e, !t[e])) }
             a(c).catch(D({}))
@@ -969,13 +969,13 @@
                     S.a,
                     { location: p, title: R },
                     l.a.createElement(C.a, { description: U }),
-                    l.a.createElement(T.a, { checked: void 0 === o || o, label: L, name: 'original', onChange: W }),
-                    l.a.createElement(T.a, { checked: void 0 === d || d, label: A, name: 'reply', onChange: W }),
-                    B && l.a.createElement(T.a, { checked: void 0 === u || u, label: I, name: 'quote', onChange: W }),
+                    l.a.createElement(T.a, { checked: void 0 === o || o, label: I, name: 'original', onChange: X }),
+                    l.a.createElement(T.a, { checked: void 0 === d || d, label: L, name: 'reply', onChange: X }),
+                    B && l.a.createElement(T.a, { checked: void 0 === u || u, label: A, name: 'quote', onChange: X }),
                     l.a.createElement(
                       k.a,
                       { style: H.radioGroup },
-                      l.a.createElement(O.a, { label: M, name: 'period', onChange: W, options: Q, value: j }),
+                      l.a.createElement(O.a, { label: M, name: 'period', onChange: X, options: Q, value: j }),
                     ),
                   ),
                 )
@@ -987,6 +987,58 @@
         return { radioGroup: { padding: e.spaces.space16 } }
       })
       t.default = p(x)
+    },
+    CiSv: function (e, t, a) {
+      'use strict'
+      a.r(t)
+      var n = a('ERkP'),
+        r = a.n(n),
+        c = a('3XMw'),
+        i = a.n(c),
+        o = a('7FtF'),
+        l = a('G6rE'),
+        s = a('rxPX'),
+        u = Object(s.a)()
+          .propsFromState(function () {
+            return { loggedInUser: l.e.selectLoggedInUser }
+          })
+          .adjustStateProps(function (e) {
+            var t = e.loggedInUser
+            return { loggedInUserScreenName: t ? t.screen_name : void 0 }
+          }),
+        d = a('FIs5'),
+        f = a('RKmr'),
+        m = i.a.gaac7109,
+        p = i.a.ga055179,
+        b = i.a.ea1715cf,
+        h = [
+          {
+            height: 200,
+            uri: 'https://abs.twimg.com/sticky/illustrations/empty-states/parrot-400x200.v1.png',
+            width: 400,
+          },
+          {
+            height: 400,
+            uri: 'https://abs.twimg.com/sticky/illustrations/empty-states/parrot-800x400.v1.png',
+            width: 800,
+          },
+          {
+            height: 600,
+            uri: 'https://abs.twimg.com/sticky/illustrations/empty-states/parrot-1200x600.v1.png',
+            width: 1200,
+          },
+        ]
+      var E = u(function (e) {
+        var t = e.loggedInUserScreenName,
+          a = t ? '@'.concat(t) : ''
+        return r.a.createElement(
+          o.a,
+          { screenType: 'primaryDetail', title: m, withMarginBottom: !1 },
+          r.a.createElement(f.a, { description: a }),
+          r.a.createElement(d.a, { header: p, imageVariants: h, message: b }),
+        )
+      })
+      t.default = E
     },
     DFUC: function (e, t, a) {
       'use strict'
@@ -1071,8 +1123,8 @@
       var O = T,
         F = a('qz6Z'),
         R = a('SOvA'),
-        L = a('qo8F'),
-        A = function () {
+        I = a('qo8F'),
+        L = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(w.a)(
             'svg',
@@ -1097,8 +1149,8 @@
             ),
           )
         }
-      A.metadata = { width: 24, height: 24 }
-      var I = A,
+      L.metadata = { width: 24, height: 24 }
+      var A = L,
         P = a('4BrD'),
         M = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
@@ -1158,8 +1210,8 @@
         B = s.a.df5fa1d0,
         K = s.a.a244ed50,
         Q = s.a.e908903a,
-        W = s.a.h7a0dfbe,
-        X = s.a.b38d81ae,
+        X = s.a.h7a0dfbe,
+        W = s.a.b38d81ae,
         G = s.a.f8d4746b,
         V = s.a.f2bd9c47,
         q = s.a.b2810ee7,
@@ -1222,14 +1274,14 @@
                     a = void 0 !== t && t,
                     n = e.includeSpacesSection
                   return [
-                    { label: Q, description: W, link: '/settings/audience_and_tagging', Icon: g.a },
-                    { label: X, description: G, link: '/settings/your_tweets', Icon: y.a },
+                    { label: Q, description: X, link: '/settings/audience_and_tagging', Icon: g.a },
+                    { label: W, description: G, link: '/settings/your_tweets', Icon: y.a },
                     { label: V, description: q, link: '/settings/content_you_see', Icon: C },
                     a ? { label: Y, description: J, link: '/settings/safety_mode', Icon: O } : void 0,
                     { label: Z, description: $, link: '/settings/mute_and_block', Icon: F.a },
                     { label: ee, description: te, link: '/settings/direct_messages', Icon: R.a },
-                    n ? { label: ae, description: ne, link: '/settings/spaces', Icon: L.a } : void 0,
-                    { label: re, description: ce, link: '/settings/contacts', Icon: I },
+                    n ? { label: ae, description: ne, link: '/settings/spaces', Icon: I.a } : void 0,
+                    { label: re, description: ce, link: '/settings/contacts', Icon: A },
                   ].filter(Boolean)
                 })({ includeSafetyMode: s, includeSpacesSection: v }).map(function (e) {
                   return i.a.createElement(D.b, r()({}, e, { key: e.label }))
@@ -1321,15 +1373,15 @@
         O = l.a.e3719c15,
         F = l.a.f371a361,
         R = l.a.c4881c66,
-        L = l.a.a5ce82a4,
-        A = l.a.d495680d,
-        I = l.a.f9c98140,
+        I = l.a.a5ce82a4,
+        L = l.a.d495680d,
+        A = l.a.f9c98140,
         P = l.a.eafe3287,
         M = l.a.d76fe4fc,
         U = [
           { label: O, description: F, link: '/settings/accessibility', Icon: S },
-          { label: R, description: L, link: '/settings/display', Icon: _.a },
-          { label: A, description: I, link: '/settings/languages', Icon: w.a },
+          { label: R, description: I, link: '/settings/display', Icon: _.a },
+          { label: L, description: A, link: '/settings/languages', Icon: w.a },
           { label: P, description: M, link: '/settings/data', Icon: k.a },
         ],
         x = { page: 'settings', section: 'accessibility_display_and_languages' }
@@ -1675,9 +1727,9 @@
         }),
         F = a('MWbm'),
         R = a('yw4N'),
-        L = a('TnY3'),
-        A = a('cHvH'),
-        I = a('3xLC'),
+        I = a('TnY3'),
+        L = a('cHvH'),
+        A = a('3xLC'),
         P = [
           'children',
           'leftControl',
@@ -1720,7 +1772,7 @@
                 key: 'render',
                 value: function () {
                   var e = this
-                  return y.a.createElement(A.a, null, function (t) {
+                  return y.a.createElement(L.a, null, function (t) {
                     var a = t.windowWidth
                     return v.a.isTwoColumnLayout(a) ? e._renderForTwoColumnLayout() : e._renderForOneColumnLayout()
                   })
@@ -1787,14 +1839,14 @@
                     C = a.titleIconCell,
                     T = a.titleIconCellSize,
                     R = a.withDetailOpen,
-                    L = a.withSearchBox,
-                    A = a.withTweetButton,
-                    I = 'root' === p,
+                    I = a.withSearchBox,
+                    L = a.withTweetButton,
+                    A = 'root' === p,
                     P = 'secondaryRoot' === p,
                     M = 'primaryDetail' === p,
-                    U = (M && v) || (I && g),
-                    x = I || (M && t),
-                    H = I ? E.c : M ? E.a : void 0,
+                    U = (M && v) || (A && g),
+                    x = A || (M && t),
+                    H = A ? E.c : M ? E.a : void 0,
                     N = y.a.createElement(
                       F.a,
                       { style: O.appBarContainer },
@@ -1816,7 +1868,7 @@
                       }),
                     ),
                     j =
-                      I || (P && R)
+                      A || (P && R)
                         ? null
                         : y.a.createElement(_.a.Configure, {
                             SideNavButton: n,
@@ -1831,8 +1883,8 @@
                             searchBoxOptions: b,
                             subtitle: w,
                             title: k,
-                            withSearchBox: L,
-                            withTweetButton: A,
+                            withSearchBox: I,
+                            withTweetButton: L,
                           })
                   return y.a.createElement(y.a.Fragment, null, j, N)
                 },
@@ -1841,9 +1893,9 @@
             a
           )
         })(y.a.Component)
-      h()(M, 'contextType', I.a),
+      h()(M, 'contextType', A.a),
         h()(M, 'defaultProps', { screenType: 'secondaryDetail', showSubtitleOnWideDetail: !0 })
-      t.a = Object(L.a)(M)
+      t.a = Object(I.a)(M)
     },
     OsOl: function (e, t, a) {
       'use strict'
@@ -1970,10 +2022,10 @@
               var e = new Date(parseInt(n, 10))
               return r.a.createElement(
                 p.a,
-                { style: l && L.border },
+                { style: l && I.border },
                 r.a.createElement(
                   p.a,
-                  { style: L.safetyModeToggleContainer },
+                  { style: I.safetyModeToggleContainer },
                   r.a.createElement(h.b, { color: 'normal' }, y),
                   a
                     ? r.a.createElement(E.a, { onValueChange: g, value: a })
@@ -1985,11 +2037,11 @@
                 ),
                 r.a.createElement(
                   p.a,
-                  { style: L.safetyModeDescriptionContainer },
+                  { style: I.safetyModeDescriptionContainer },
                   a && n
                     ? r.a.createElement(
                         h.b,
-                        { color: 'gray700', size: 'subtext2', style: L.safetyModeExpiration },
+                        { color: 'gray700', size: 'subtext2', style: I.safetyModeExpiration },
                         (function (e, t) {
                           return Math.floor(Math.abs((t || Date.now()) - e) / 36e5) <= 1
                         })(e)
@@ -1997,13 +2049,13 @@
                           : O({ date: T(e) }),
                       )
                     : null,
-                  r.a.createElement(h.b, { color: 'gray700', size: 'subtext2', style: L.settingDescription }, v),
+                  r.a.createElement(h.b, { color: 'gray700', size: 'subtext2', style: I.settingDescription }, v),
                 ),
               )
             },
           })
         }),
-        L =
+        I =
           ((t.a = R),
           g.a.create(function (e) {
             return {
@@ -2087,9 +2139,9 @@
         O = E.a.h7a0dfbe,
         F = E.a.f5e59e90,
         R = E.a.e860ff84,
-        L = { headline: E.a.j8bf07ab, text: E.a.ca8034b3, confirmButtonLabel: E.a.c5d4192a },
-        A = { headline: E.a.gea6cc19, text: E.a.j7fc0afc, confirmButtonLabel: E.a.f527b322 },
-        I = E.a.f56d108e,
+        I = { headline: E.a.j8bf07ab, text: E.a.ca8034b3, confirmButtonLabel: E.a.c5d4192a },
+        L = { headline: E.a.gea6cc19, text: E.a.j7fc0afc, confirmButtonLabel: E.a.f527b322 },
+        A = E.a.f56d108e,
         P = { all: E.a.d165c992, following: E.a.ea339390, none: E.a.e3a761ee },
         M = { page: 'settings', section: 'audience_and_tagging' }
       function U(e, t, a, n) {
@@ -2133,7 +2185,7 @@
           i = e.protectedEnabled,
           o = U(a, 0, c, e.updateSettings),
           s = P[t],
-          u = n ? A : L
+          u = n ? L : I
         return l.a.createElement(
           y.c,
           { namespace: M },
@@ -2152,7 +2204,7 @@
                 name: 'protected',
                 onChange: o._handleChanged,
               }),
-              l.a.createElement(k.a, { description: s, label: I, link: '/settings/tagging' }),
+              l.a.createElement(k.a, { description: s, label: A, link: '/settings/tagging' }),
             ),
             o.showConfirmation
               ? l.a.createElement(C.a, {
@@ -2264,9 +2316,9 @@
         O = g.a.e1f2f8bd,
         F = g.a.e68b09b4,
         R = g.a.hc676c4a,
-        L = g.a.badf3f34,
-        A = g.a.ca95bd23,
-        I = g.a.bbe47125,
+        I = g.a.badf3f34,
+        L = g.a.ca95bd23,
+        A = g.a.bbe47125,
         P = '/settings/safety_mode/autoblocked',
         M = '/i/safety_mode/flagged_accounts',
         U = Object.freeze({ ActionedTweets: 'actioned_tweets', PreviewFlaggedTweets: 'preview_flagged_tweets' }),
@@ -2292,13 +2344,13 @@
               backLocation: P,
               confirmationSheetHeadline: Object(_.e)({ screenName: f }),
               label: T,
-              toastLabel: A({ screenName: f }),
+              toastLabel: L({ screenName: f }),
             }),
             r()(t, U.PreviewFlaggedTweets, {
               backLocation: M,
               confirmationSheetHeadline: O({ screenName: f }),
               label: C,
-              toastLabel: L({ screenName: f }),
+              toastLabel: I({ screenName: f }),
             }),
             t),
           )
@@ -2306,7 +2358,7 @@
           color: 'primary',
           confirmationSheetConfirmButtonLabel: F,
           confirmationSheetHeadline: p[u].confirmationSheetHeadline,
-          confirmationSheetText: I,
+          confirmationSheetText: A,
           label: p[u].label,
           onConfirmationSheetConfirm: function () {
             u === U.ActionedTweets
@@ -2402,7 +2454,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'LocationInformation', function () {
-          return A
+          return L
         })
       var n = a('KEM+'),
         r = a.n(n),
@@ -2445,8 +2497,8 @@
         O = b.a.d9138165,
         F = b.a.eb029cab,
         R = b.a.j018f2a1,
-        L = { page: 'settings', section: 'location_information' }
-      function A(e) {
+        I = { page: 'settings', section: 'location_information' }
+      function L(e) {
         var t = e.allowLocationHistoryUseEnabled,
           a = e.createLocalApiErrorHandler,
           n = e.location,
@@ -2455,7 +2507,7 @@
           u = l.a.useContext(s.a)
         return l.a.createElement(
           E.c,
-          { namespace: L },
+          { namespace: I },
           l.a.createElement(
             h.a,
             null,
@@ -2470,7 +2522,7 @@
                   label: C,
                   name: 'allowLocationHistoryUse',
                   onChange: function (e, t) {
-                    o.scribe(i()(i()({}, L), {}, { element: e, action: t ? 'enable' : 'disable' })),
+                    o.scribe(i()(i()({}, I), {}, { element: e, action: t ? 'enable' : 'disable' })),
                       c(r()({}, e, t)).catch(a())
                   },
                 }),
@@ -2481,8 +2533,8 @@
           ),
         )
       }
-      var I = m(A)
-      t.default = I
+      var A = m(L)
+      t.default = A
     },
     XOb8: function (e, t, a) {
       'use strict'
@@ -2815,9 +2867,9 @@
         O = b.a.cfda8c44,
         F = b.a.e6c411d7,
         R = b.a.g558101a,
-        L = b.a.d9172541,
-        A = b.a.bd557505,
-        I = { page: 'settings', section: 'direct_messages' }
+        I = b.a.d9172541,
+        L = b.a.bd557505,
+        A = { page: 'settings', section: 'direct_messages' }
       function P(e) {
         var t = e.allowDmsFrom,
           a = e.createLocalApiErrorHandler,
@@ -2830,13 +2882,13 @@
           m = Object(y.a)()
         function p(t, n) {
           var c = '/messages/settings' === e.location.pathname ? 'dm_tab' : 'global_settings_menu'
-          m.scribe(i()(i()({}, I), {}, { element: t, data: { entry_point: c }, action: n })),
+          m.scribe(i()(i()({}, A), {}, { element: t, data: { entry_point: c }, action: n })),
             f(r()({}, t, n)).catch(a({ showToast: !0 }))
         }
         var b = l.a.useContext(s.a).featureSwitches.isTrue('dm_conversations_nsfw_media_filter_enabled')
         return l.a.createElement(
           E.c,
-          { namespace: I },
+          { namespace: A },
           l.a.createElement(
             h.a,
             null,
@@ -2873,7 +2925,7 @@
                     name: 'ext_dm_nsfw_media_filter',
                     onChange: function (e, t) {
                       m.scribe(
-                        i()(i()({}, I), {}, { element: 'dm_nsfw_filter_setting', action: t ? 'enable' : 'disable' }),
+                        i()(i()({}, A), {}, { element: 'dm_nsfw_filter_setting', action: t ? 'enable' : 'disable' }),
                       ),
                         d(t)
                     },
@@ -2881,8 +2933,8 @@
                 : null,
               l.a.createElement(S.a, {
                 checked: 'all_enabled' === c,
-                helpText: A,
-                label: L,
+                helpText: L,
+                label: I,
                 learnMoreLink: 'https://help.twitter.com/using-twitter/direct-messages#receipts',
                 name: 'dm_receipt_setting',
                 onChange: function (e, t) {
@@ -3023,7 +3075,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'AdsPreferences', function () {
-          return L
+          return I
         })
       var n = a('KEM+'),
         r = a.n(n),
@@ -3066,7 +3118,7 @@
         O = p.a.h1f01a24,
         F = p.a.da202f9a,
         R = { page: 'settings', section: 'ads_preferences' }
-      function L(e) {
+      function I(e) {
         var t,
           a = e.allowPersonalizationEnabled,
           n = e.createLocalApiErrorHandler,
@@ -3109,8 +3161,8 @@
           ),
         )
       }
-      var A = f(L)
-      t.default = A
+      var L = f(I)
+      t.default = L
     },
     cQiO: function (e, t, a) {
       'use strict'
@@ -3156,10 +3208,10 @@
         O = a('RKmr'),
         F = a('t62R'),
         R = a('FIs5'),
-        L = a('csss'),
-        A = a('rHpw'),
-        I = a('3XMw'),
-        P = a.n(I),
+        I = a('csss'),
+        L = a('rHpw'),
+        A = a('3XMw'),
+        P = a.n(A),
         M = a('U+bB'),
         U = a('MWbm'),
         x = P.a.jc02ae67,
@@ -3201,7 +3253,7 @@
                   t.length ? null : h.a.createElement(R.a, { header: N, message: D }),
                   t.map(function (e, t) {
                     var a = '/settings/applications/'.concat(e.app_id)
-                    return h.a.createElement(L.a, {
+                    return h.a.createElement(I.a, {
                       description: e.organization ? j({ name: e.organization }) : null,
                       key: e.app_id,
                       label: e.name,
@@ -3253,11 +3305,11 @@
           )
         })(h.a.Component)
       p()(K, 'defaultProps', { applications: [] })
-      var Q = A.a.create(function (e) {
+      var Q = L.a.create(function (e) {
           return { avatar: { borderRadius: e.borderRadii.small, height: '100%', width: '100%' } }
         }),
-        W = _(K)
-      t.default = W
+        X = _(K)
+      t.default = X
     },
     ehR8: function (e, t, a) {
       'use strict'
@@ -3474,9 +3526,9 @@
         O = a('yoO3'),
         F = a('VIKJ'),
         R = a('7JQg'),
-        L = a('ZvNX'),
-        A = a('eM8g'),
-        I = a('7FtF'),
+        I = a('ZvNX'),
+        L = a('eM8g'),
+        A = a('7FtF'),
         P = a('MWbm'),
         M = a('RKmr'),
         U = a('6vad'),
@@ -3489,8 +3541,8 @@
         B = j.a.bca43fd0,
         K = j.a.bef6fc56,
         Q = j.a.bbe9579b,
-        W = j.a.b850cbd0,
-        X = j.a.ae1bbb26,
+        X = j.a.b850cbd0,
+        W = j.a.ae1bbb26,
         G = j.a.i859a9d3,
         V = j.a.e5e8a899,
         q = j.a.cf3e3164,
@@ -3523,7 +3575,7 @@
               }),
               h()(u()(e), '_renderSession', function (e, t) {
                 var a = '/settings/sessions/'.concat(encodeURIComponent(e.token))
-                return g.a.createElement(L.a, {
+                return g.a.createElement(I.a, {
                   key: e.token,
                   link: a,
                   session: e,
@@ -3556,7 +3608,7 @@
                       O.a,
                       null,
                       g.a.createElement(
-                        I.a,
+                        A.a,
                         { location: n, title: D },
                         g.a.createElement(T.a, {
                           accessibilityLabel: V,
@@ -3589,13 +3641,13 @@
                         null,
                         g.a.createElement(M.a, { description: K }),
                         g.a.createElement(U.b, { text: z }),
-                        g.a.createElement(A.a, null, Q),
+                        g.a.createElement(L.a, null, Q),
                         i[0] ? this._renderSession(i[0], !1) : null,
                         g.a.createElement(x.a, null),
                         g.a.createElement(U.b, { text: B }),
-                        g.a.createElement(A.a, null, W),
+                        g.a.createElement(L.a, null, X),
                         g.a.createElement(
-                          A.a,
+                          L.a,
                           null,
                           g.a.createElement(
                             j.a.I18NFormatMessage,
@@ -3612,7 +3664,7 @@
                         ),
                         g.a.createElement(y.a, {
                           align: 'left',
-                          confirmationSheetConfirmButtonLabel: X,
+                          confirmationSheetConfirmButtonLabel: W,
                           confirmationSheetConfirmButtonType: 'primary',
                           confirmationSheetHeadline: Y,
                           confirmationSheetText: $,
@@ -3669,10 +3721,10 @@
         O = a.n(T),
         F = a('21nk'),
         R = a.n(F),
-        L = a('bCEw'),
-        A = a.n(L),
-        I = a('Ud88'),
-        P = a.n(I),
+        I = a('bCEw'),
+        L = a.n(I),
+        A = a('Ud88'),
+        P = a.n(A),
         M = function (e) {
           return (0, e.render)({ fetchStatus: w.a.LOADING, data: null, error: null, retry: k.a })
         },
@@ -3729,7 +3781,7 @@
                 c = void 0 === n ? 'store-or-network' : n,
                 i = a.render,
                 o = a.variables,
-                l = A()(e),
+                l = L()(e),
                 s = r()(l, 2),
                 u = s[0],
                 d = s[1],
@@ -3814,7 +3866,7 @@
           return K
         }),
         a.d(t, 'topArticlesLabel', function () {
-          return X
+          return W
         }),
         a.d(t, 'adFreeHelpScribeElement', function () {
           return re
@@ -3868,10 +3920,10 @@
         O = a('yiKp'),
         F = a.n(O),
         R = a('Lsrn'),
-        L = a('k/Ka'),
-        A = function () {
+        I = a('k/Ka'),
+        L = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(L.a)(
+          return Object(I.a)(
             'svg',
             F()(
               F()({}, e),
@@ -3891,8 +3943,8 @@
             ),
           )
         }
-      A.metadata = { width: 24, height: 24 }
-      var I = A,
+      L.metadata = { width: 24, height: 24 }
+      var A = L,
         P = a('5VjN'),
         M = a('vMn4'),
         U = a('tH6R'),
@@ -3905,8 +3957,8 @@
         B = m.a.hd885aef,
         K = m.a.je4ccd3a,
         Q = m.a.f6e88161,
-        W = m.a.e4972a1a,
-        X = m.a.b7fa0cfd,
+        X = m.a.e4972a1a,
+        W = m.a.b7fa0cfd,
         G = m.a.adcaa213,
         V = m.a.i9028824,
         q = m.a.e5fff0c7,
@@ -3936,13 +3988,13 @@
           O = k.isTwitterBlueSubscriber(),
           F = k.isTrueAndEnabled('subscriptions_feature_1003'),
           R = k.isTrueAndEnabled('subscriptions_feature_1009'),
-          L = k.isTrueAndEnabled('subscriptions_feature_1007'),
-          A = k.isTrueAndEnabled('subscriptions_feature_1006'),
+          I = k.isTrueAndEnabled('subscriptions_feature_1007'),
+          L = k.isTrueAndEnabled('subscriptions_feature_1006'),
           oe = m.isTrue('subscriptions_management_enabled'),
           se = [
             { label: j, description: J, link: '/settings/undo_tweet', Icon: T.a, shouldRender: F },
-            { label: Q, description: W, link: '/settings/t1_labs', Icon: I, shouldRender: R },
-            { label: X, description: G, link: '/i/articles', Icon: P.a, shouldRender: L },
+            { label: Q, description: X, link: '/settings/t1_labs', Icon: A, shouldRender: R },
+            { label: W, description: G, link: '/i/articles', Icon: P.a, shouldRender: I },
           ],
           ue = function () {
             fe(ie)
@@ -3981,7 +4033,7 @@
                         ? r.a.createElement(x.b, { Icon: t, description: a, key: n, label: n, link: c })
                         : null
                     }),
-                    A &&
+                    L &&
                       r.a.createElement(
                         r.a.Fragment,
                         null,
@@ -4039,7 +4091,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'ContentYouSee', function () {
-          return A
+          return L
         })
       var n = a('KEM+'),
         r = a.n(n),
@@ -4086,8 +4138,8 @@
         O = b.a.h1f01a24,
         F = b.a.j018f2a1,
         R = b.a.h1ef00db,
-        L = { page: 'settings', section: 'content_you_see' }
-      function A(e) {
+        I = { page: 'settings', section: 'content_you_see' }
+      function L(e) {
         var t = e.createLocalApiErrorHandler,
           a = e.displaySensitiveMediaEnabled,
           n = e.location,
@@ -4097,7 +4149,7 @@
         return void 0 !== c
           ? l.a.createElement(
               E.c,
-              { namespace: L },
+              { namespace: I },
               l.a.createElement(
                 h.a,
                 null,
@@ -4110,7 +4162,7 @@
                     label: C,
                     name: 'display_sensitive_media',
                     onChange: function (e, a) {
-                      s.scribe(i()(i()({}, L), {}, { element: e, action: a ? 'enable' : 'disable' })),
+                      s.scribe(i()(i()({}, I), {}, { element: e, action: a ? 'enable' : 'disable' })),
                         o(r()({}, e, a)).catch(t({ showToast: !0 }))
                     },
                   }),
@@ -4123,8 +4175,8 @@
             )
           : null
       }
-      var I = m(A)
-      t.default = I
+      var A = m(L)
+      t.default = A
     },
     sZlh: function (e, t, a) {
       'use strict'
@@ -4678,9 +4730,9 @@
         O = s.a.f8645654,
         F = s.a.b02df747,
         R = s.a.a2197725,
-        L = s.a.j95edf76,
-        A = s.a.g2841de4,
-        I = s.a.ae72d4c4,
+        I = s.a.j95edf76,
+        L = s.a.g2841de4,
+        A = s.a.ae72d4c4,
         P = s.a.h1abfbcd,
         M = s.a.j748604a,
         U = { page: 'settings', section: 'security_and_account_access' }
@@ -4688,8 +4740,8 @@
         var t = e.location,
           a = (function (e) {
             return [
-              { label: L, description: R, link: '/settings/security', Icon: _ },
-              { label: I, description: A, link: '/settings/apps_and_sessions', Icon: k },
+              { label: I, description: R, link: '/settings/security', Icon: _ },
+              { label: A, description: L, link: '/settings/apps_and_sessions', Icon: k },
               e.isTrue('responsive_web_disconnect_third_party_sso_enabled')
                 ? { label: P, description: M, link: '/settings/connected_accounts', Icon: C.a }
                 : void 0,
@@ -5025,9 +5077,9 @@
           O = 'Expire' === (null == u ? void 0 : u.state) ? ''.concat(C, ' ').concat(T) : C,
           F = d.a.fff413dc,
           R = d.a.h201c4c1,
-          L = d.a.i8385a2c,
-          A = d.a.h80834de,
-          I = d.a.ib8ebf3b,
+          I = d.a.i8385a2c,
+          L = d.a.h80834de,
+          A = d.a.ib8ebf3b,
           P = function () {
             c()
           }
@@ -5066,8 +5118,8 @@
                 render: function () {
                   var e,
                     t = null == u ? void 0 : u.payment_source
-                  t && t !== p.Stripe && (e = t === p.AppleAppStore ? R : t === p.GooglePlay ? L : A)
-                  var a = I({ mobilePlatform: e })
+                  t && t !== p.Stripe && (e = t === p.AppleAppStore ? R : t === p.GooglePlay ? I : L)
+                  var a = A({ mobilePlatform: e })
                   return r.a.createElement(
                     r.a.Fragment,
                     null,

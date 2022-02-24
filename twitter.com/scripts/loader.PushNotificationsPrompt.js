@@ -1,12 +1,12 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [182],
+  [183],
   {
     Lz2T: function (e, t, n) {
       'use strict'
       var o = n('97Jx'),
-        r = n.n(o),
-        i = n('yiKp'),
-        a = n.n(i),
+        i = n.n(o),
+        r = n('yiKp'),
+        a = n.n(r),
         s = n('m3Bd'),
         c = n.n(s),
         l = n('ERkP'),
@@ -21,38 +21,38 @@
         var t = e.bodyRichText,
           n = e.bodyText,
           o = e.onImpression,
-          i = e.primaryAction,
+          r = e.primaryAction,
           s = e.titleRichText,
           l = e.titleText,
           b = c()(e, y),
           g = Object(f.a)(),
-          C = function () {
+          v = function () {
             g.scribe({ action: 'click' })
           },
-          v = s
-            ? p.a.createElement(h.a, { entities: s.entities, onEntityClick: C, text: s.text })
+          C = s
+            ? p.a.createElement(h.a, { entities: s.entities, onEntityClick: v, text: s.text })
             : l && l.length
             ? l
             : null,
-          P = t
-            ? p.a.createElement(h.a, { entities: t.entities, onEntityClick: C, text: t.text })
+          w = t
+            ? p.a.createElement(h.a, { entities: t.entities, onEntityClick: v, text: t.text })
             : n && n.length
             ? n
             : null,
-          w = function (e) {
+          P = function (e) {
             return a()(
-              a()({}, i),
+              a()({}, r),
               {},
               {
                 onClick: function (t) {
-                  ;(null == i ? void 0 : i.onClick) && i.onClick(t), e(t)
+                  ;(null == r ? void 0 : r.onClick) && r.onClick(t), e(t)
                 },
               },
             )
           },
           x = p.a.createElement(m.a.Consumer, null, function (e) {
             var t = e.handleNextSlide
-            return p.a.createElement(d.a, r()({}, b, { headline: v, primaryAction: i ? w(t) : void 0, subtext: P }))
+            return p.a.createElement(d.a, i()({}, b, { headline: C, primaryAction: r ? P(t) : void 0, subtext: w }))
           })
         return 'function' == typeof o ? p.a.createElement(u.a, { onImpression: o }, x) : x
       }
@@ -64,9 +64,9 @@
         return k
       })
       var o = n('VrFO'),
-        r = n.n(o),
-        i = n('Y9Ll'),
-        a = n.n(i),
+        i = n.n(o),
+        r = n('Y9Ll'),
+        a = n.n(r),
         s = n('1Pcy'),
         c = n.n(s),
         l = n('5Yy7'),
@@ -79,10 +79,10 @@
         y = n.n(f),
         b = n('TIdA'),
         g = n('t62R'),
-        C = n('A91F'),
-        v = n('/yvb'),
-        P = n('rHpw'),
-        w = 'inlinePrompt',
+        v = n('A91F'),
+        C = n('/yvb'),
+        w = n('rHpw'),
+        P = 'inlinePrompt',
         x = 'inlinePrompt-primaryAction',
         A = 'inlinePrompt-secondaryAction',
         E = 'inlinePrompt-centeredImageContainer',
@@ -92,14 +92,14 @@
           var t = u()(n)
           function n() {
             var e
-            r()(this, n)
-            for (var o = arguments.length, i = new Array(o), a = 0; a < o; a++) i[a] = arguments[a]
+            i()(this, n)
+            for (var o = arguments.length, r = new Array(o), a = 0; a < o; a++) r[a] = arguments[a]
             return (
-              (e = t.call.apply(t, [this].concat(i))),
+              (e = t.call.apply(t, [this].concat(r))),
               h()(c()(e), '_renderImage', function (e) {
                 var t = y.a.createElement(b.a, {
                   accessibilityLabel: '',
-                  aspectMode: C.a.exact(e.width / e.height),
+                  aspectMode: v.a.exact(e.width / e.height),
                   backgroundColor: e.backgroundColor,
                   image: e,
                 })
@@ -145,8 +145,8 @@
               h()(c()(e), '_renderAction', function (t) {
                 var n = t.action,
                   o = t.buttonSize,
-                  r = t.buttonType,
-                  i = t.style,
+                  i = t.buttonType,
+                  r = t.style,
                   a = t.testID,
                   s = e.props.secondaryAction,
                   c = n.link,
@@ -154,10 +154,10 @@
                   p = n.text
                 return y.a.createElement(
                   T.a,
-                  { style: [e.styles.actionContainer, i, { justifyContent: 'flex-start' }], testID: a },
+                  { style: [e.styles.actionContainer, r, { justifyContent: 'flex-start' }], testID: a },
                   y.a.createElement(
-                    v.a,
-                    { link: c, onPress: l, size: o, style: { width: s ? '100%' : 'auto' }, type: r },
+                    C.a,
+                    { link: c, onPress: l, size: o, style: { width: s ? '100%' : 'auto' }, type: i },
                     p,
                   ),
                 )
@@ -174,18 +174,18 @@
                     t = e.image,
                     n = e.primaryAction,
                     o = e.rightControl,
-                    r = e.secondaryAction,
-                    i = e.shouldRenderBorder
+                    i = e.secondaryAction,
+                    r = e.shouldRenderBorder
                   return y.a.createElement(
                     T.a,
-                    { style: i ? [S.root, S.rootMargin] : _.root },
+                    { style: r ? [S.root, S.rootMargin] : _.root },
                     y.a.createElement(
                       y.a.Fragment,
                       null,
                       t ? this._renderImage(t) : null,
                       y.a.createElement(
                         T.a,
-                        { style: this.styles.rootPadding, testID: w },
+                        { style: this.styles.rootPadding, testID: P },
                         this._renderTitle(),
                         this._renderBodyText(),
                         n
@@ -197,9 +197,9 @@
                               testID: x,
                             })
                           : null,
-                        r
+                        i
                           ? this._renderAction({
-                              action: r,
+                              action: i,
                               buttonType: 'primaryOutlined',
                               style: this.styles.secondaryAction,
                               buttonSize: 'large',
@@ -223,7 +223,7 @@
           )
         })(y.a.Component)
       h()(k, 'defaultProps', { shouldRenderBorder: !1 })
-      var _ = P.a.create(function (e) {
+      var _ = w.a.create(function (e) {
           return {
             root: { backgroundColor: e.colors.cellBackground },
             flexGrow: { flexGrow: 1 },
@@ -237,7 +237,7 @@
             },
           }
         }),
-        S = P.a.create(function (e) {
+        S = w.a.create(function (e) {
           return {
             root: {
               borderColor: e.colors.nestedBorderColor,
@@ -248,7 +248,7 @@
             rootMargin: { marginLeft: e.spaces.space16, marginRight: e.spaces.space16 },
           }
         }),
-        I = P.a.create(function (e) {
+        I = w.a.create(function (e) {
           return {
             rootPadding: { padding: e.spaces.space32 },
             body: { marginTop: e.spaces.space8 },
@@ -257,7 +257,7 @@
             secondaryAction: { marginTop: e.spaces.space16 },
           }
         }),
-        D = P.a.create(function (e) {
+        D = w.a.create(function (e) {
           return {
             rootPadding: { padding: e.spaces.space16 },
             body: { marginTop: e.spaces.space2 },
@@ -273,9 +273,9 @@
         return a
       })
       var o = n('ERkP'),
-        r = n.n(o),
-        i = n('fs1G'),
-        a = r.a.createContext({ handleNextSlide: i.a })
+        i = n.n(o),
+        r = n('fs1G'),
+        a = i.a.createContext({ handleNextSlide: r.a })
     },
     'iT+n': function (e, t, n) {
       'use strict'
@@ -284,9 +284,9 @@
           return G
         })
       var o = n('VrFO'),
-        r = n.n(o),
-        i = n('Y9Ll'),
-        a = n.n(i),
+        i = n.n(o),
+        r = n('Y9Ll'),
+        a = n.n(r),
         s = n('1Pcy'),
         c = n.n(s),
         l = n('5Yy7'),
@@ -299,52 +299,38 @@
         y = n.n(f),
         b = n('/yvb'),
         g = n('3XMw'),
-        C = n.n(g),
-        v = n('hOZg'),
-        P = C.a.ia5e7487,
-        w = { viewType: 'close_button' },
-        x = (function (e) {
-          p()(n, e)
-          var t = u()(n)
-          function n() {
-            return r()(this, n), t.apply(this, arguments)
-          }
-          return (
-            a()(n, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.ariaLabel,
-                    n = e.closeIcon,
-                    o = e.color,
-                    r = e.disabled,
-                    i = e.isOnMedia,
-                    a = e.onClose,
-                    s = e.size,
-                    c = e.style,
-                    l = e.testID,
-                    p = n || y.a.createElement(v.a, { testID: l })
-                  return y.a.createElement(b.a, {
-                    accessibilityLabel: t || P,
-                    behavioralEventContext: w,
-                    borderColor: 'transparent',
-                    color: o,
-                    disabled: r,
-                    icon: p,
-                    onPress: a,
-                    size: s,
-                    style: c,
-                    type: i ? 'onMediaDominantColorFilled' : void 0,
-                  })
-                },
-              },
-            ]),
-            n
-          )
-        })(y.a.PureComponent)
-      h()(x, 'defaultProps', { color: 'white', disabled: !1, size: 'medium' })
-      var A = x,
+        v = n.n(g),
+        C = n('hOZg'),
+        w = v.a.ia5e7487,
+        P = { viewType: 'close_button' }
+      function x(e) {
+        var t = e.ariaLabel,
+          n = e.closeIcon,
+          o = e.color,
+          i = void 0 === o ? 'white' : o,
+          r = e.disabled,
+          a = void 0 !== r && r,
+          s = e.isOnMedia,
+          c = e.onClose,
+          l = e.size,
+          p = void 0 === l ? 'medium' : l,
+          d = e.style,
+          u = e.testID,
+          m = n || y.a.createElement(C.a, { testID: u })
+        return y.a.createElement(b.a, {
+          accessibilityLabel: t || w,
+          behavioralEventContext: P,
+          borderColor: 'transparent',
+          color: i,
+          disabled: a,
+          icon: m,
+          onPress: c,
+          size: p,
+          style: d,
+          type: s ? 'onMediaDominantColorFilled' : void 0,
+        })
+      }
+      var A = y.a.memo(x),
         E = n('vEo5'),
         T = n('1YZw'),
         k = n('rxPX'),
@@ -364,43 +350,43 @@
         I = n('feu+'),
         D = n('fs1G'),
         R = n('Lz2T'),
-        z = C.a.hee41732,
-        L = C.a.b813e4db,
-        B = C.a.e71e09ec,
-        F = C.a.e71e09ec,
-        M = C.a.hd50e063,
-        O = C.a.g4850f43,
-        N = C.a.dc397181,
+        z = v.a.hee41732,
+        L = v.a.b813e4db,
+        B = v.a.e71e09ec,
+        F = v.a.e71e09ec,
+        M = v.a.hd50e063,
+        O = v.a.g4850f43,
+        N = v.a.dc397181,
         G = (function (e) {
           p()(n, e)
           var t = u()(n)
           function n(e, o) {
-            var i
+            var r
             return (
-              r()(this, n),
-              (i = t.call(this, e, o)),
-              h()(c()(i), '_messageRightControl', function () {
-                return y.a.createElement(A, { color: 'gray700', onClose: i._handleCancel })
+              i()(this, n),
+              (r = t.call(this, e, o)),
+              h()(c()(r), '_messageRightControl', function () {
+                return y.a.createElement(A, { color: 'gray700', onClose: r._handleCancel })
               }),
-              h()(c()(i), '_handleConfirm', function () {
-                var e = i.props,
+              h()(c()(r), '_handleConfirm', function () {
+                var e = r.props,
                   t = e.addToast,
                   n = e.pushSubscribe
-                i._scribeAction('click'),
+                r._scribeAction('click'),
                   n().then(function (e) {
                     e &&
-                      (i.setState({ forceShowPrompt: !1 }),
+                      (r.setState({ forceShowPrompt: !1 }),
                       t({ action: { label: N, link: '/settings/push_notifications' }, text: O }))
                   })
               }),
-              h()(c()(i), '_handleCancel', function () {
-                var e = i.props,
+              h()(c()(r), '_handleCancel', function () {
+                var e = r.props,
                   t = e.dismissPushNotificationsPrompt,
                   n = e.onDismiss
-                t(), i.setState({ forceShowPrompt: !1 }), i._scribeAction('dismiss'), n()
+                t(), r.setState({ forceShowPrompt: !1 }), r._scribeAction('dismiss'), n()
               }),
-              (i.state = { forceShowPrompt: e.promptAllowed }),
-              i
+              (r.state = { forceShowPrompt: e.promptAllowed }),
+              r
             )
           }
           return (
@@ -410,9 +396,9 @@
                 value: function (e, t) {
                   var n = this.props,
                     o = n.dismissPushNotificationsPrompt,
-                    r = n.promptAllowed
+                    i = n.promptAllowed
                   !e.promptAllowed &&
-                    r &&
+                    i &&
                     (this._scribeAction('impression'), o(), this.setState({ forceShowPrompt: !0 }))
                 },
               },

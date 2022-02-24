@@ -95,7 +95,7 @@
         A = n('/yvb'),
         D = n('rHpw'),
         F = C.a.i2209530,
-        L = (function (e) {
+        T = (function (e) {
           u()(n, e)
           var t = p()(n)
           function n() {
@@ -118,7 +118,7 @@
                   c = t.withMarginBottom
                 return b.a.createElement(
                   x.a,
-                  { style: [T.contentRoot, c && T.withMarginBottom] },
+                  { style: [L.contentRoot, c && L.withMarginBottom] },
                   n,
                   a
                     ? b.a.createElement(
@@ -127,8 +127,8 @@
                         b.a.createElement(O.a, null),
                         b.a.createElement(
                           x.a,
-                          { style: T.buttonContainer },
-                          b.a.createElement(A.a, { disabled: r, onPress: a, style: T.button, testID: I, type: i }, o),
+                          { style: L.buttonContainer },
+                          b.a.createElement(A.a, { disabled: r, onPress: a, style: L.button, testID: I, type: i }, o),
                         ),
                       )
                     : null,
@@ -193,8 +193,8 @@
             n
           )
         })(b.a.Component)
-      h()(L, 'defaultProps', { submitLabel: F, submitType: 'brandFilled', withMarginBottom: !0 })
-      var T = D.a.create(function (e) {
+      h()(T, 'defaultProps', { submitLabel: F, submitType: 'brandFilled', withMarginBottom: !0 })
+      var L = D.a.create(function (e) {
         return {
           contentRoot: {
             backgroundColor: e.colors.cellBackground,
@@ -216,7 +216,7 @@
           },
         }
       })
-      t.a = w(L)
+      t.a = w(T)
     },
     ALyI: function (e, t, n) {
       'use strict'
@@ -263,8 +263,8 @@
         A = n('3XMw'),
         D = n.n(A),
         F = n('7FtF'),
-        L = n('3cwy'),
-        T = n('MWbm'),
+        T = n('3cwy'),
+        L = n('MWbm'),
         P = n('3JAx'),
         B = n('t62R'),
         R = n('6v1f'),
@@ -308,7 +308,7 @@
                     n = e.googleAnalyticsPageView
                   ;(0, e.scribePageImpression)(j),
                     n(j),
-                    (!t && Object(L.a)()) || this.props.history.replace('/settings/data')
+                    (!t && Object(T.a)()) || this.props.history.replace('/settings/data')
                 },
               },
               {
@@ -321,7 +321,7 @@
                     F.a,
                     { location: t, title: N },
                     y.a.createElement(
-                      T.a,
+                      L.a,
                       null,
                       y.a.createElement(P.a, {
                         description: y.a.createElement(
@@ -576,8 +576,8 @@
         A = n('yw4N'),
         D = n('TnY3'),
         F = n('cHvH'),
-        L = n('3xLC'),
-        T = [
+        T = n('3xLC'),
+        L = [
           'children',
           'leftControl',
           'screenType',
@@ -637,7 +637,7 @@
                       e.showSubtitleOnWideDetail,
                       e.withBottomBorder,
                       e.withDetailOpen,
-                      r()(e, T))
+                      r()(e, L))
                   return E.a.createElement(
                     E.a.Fragment,
                     null,
@@ -688,12 +688,12 @@
                     A = n.withDetailOpen,
                     D = n.withSearchBox,
                     F = n.withTweetButton,
-                    L = 'root' === h,
-                    T = 'secondaryRoot' === h,
+                    T = 'root' === h,
+                    L = 'secondaryRoot' === h,
                     P = 'primaryDetail' === h,
-                    B = (P && v) || (L && y),
-                    R = L || (P && t),
-                    N = L ? g.c : P ? g.a : void 0,
+                    B = (P && v) || (T && y),
+                    R = T || (P && t),
+                    N = T ? g.c : P ? g.a : void 0,
                     M = E.a.createElement(
                       O.a,
                       { style: x.appBarContainer },
@@ -715,7 +715,7 @@
                       }),
                     ),
                     H =
-                      L || (T && A)
+                      T || (L && A)
                         ? null
                         : E.a.createElement(S.a.Configure, {
                             SideNavButton: a,
@@ -740,7 +740,7 @@
             n
           )
         })(E.a.Component)
-      b()(P, 'contextType', L.a),
+      b()(P, 'contextType', T.a),
         b()(P, 'defaultProps', { screenType: 'secondaryDetail', showSubtitleOnWideDetail: !0 })
       t.a = Object(D.a)(P)
     },
@@ -919,8 +919,8 @@
         A = n('855f'),
         D = C.a.cfd2f35d,
         F = C.a.fc5bfd95,
-        L = C.a.gee8110d,
-        T = C.a.c326f156,
+        T = C.a.gee8110d,
+        L = C.a.c326f156,
         P = C.a.c9fe9b56,
         B = C.a.j54b679a,
         R = C.a.ac63840c,
@@ -966,7 +966,7 @@
                     o = r.size_b,
                     i = r.url,
                     c = B({ size: n.getSizeLabel(o) }),
-                    l = t ? T : L
+                    l = t ? L : T
                   return b.a.createElement(
                     I.a,
                     null,
@@ -1266,8 +1266,8 @@
         A = n('yoO3'),
         D = n('7FtF'),
         F = n('3cwy'),
-        L = 'dataSaverBooleanItem',
-        T = n('v6aA'),
+        T = 'dataSaverBooleanItem',
+        L = n('v6aA'),
         P = n('RKmr'),
         B = n('e0ey'),
         R = n('csss'),
@@ -1324,7 +1324,7 @@
                         label: H,
                         name: 'dataSaverMode',
                         onChange: this._handleDataSaverChanged,
-                        testID: L,
+                        testID: T,
                       }),
                       this._showVideoAutoplaySetting &&
                         y.a.createElement(R.a, {
@@ -1341,7 +1341,7 @@
             n
           )
         })(y.a.Component)
-      b()(V, 'contextType', T.a)
+      b()(V, 'contextType', L.a)
       t.default = C(V)
     },
     REKA: function (e, t, n) {
@@ -1398,8 +1398,8 @@
         A = n('7FtF'),
         D = n('OySi'),
         F = n('3cwy'),
-        L = 'accessibilityScreen',
-        T = n('MWbm'),
+        T = 'accessibilityScreen',
+        L = n('MWbm'),
         P = n('38/B'),
         B = n('rHpw'),
         R = n('RKmr'),
@@ -1491,8 +1491,8 @@
                       A.a,
                       { location: r, screenType: 'secondaryDetail', title: V },
                       b.a.createElement(
-                        T.a,
-                        { testID: L },
+                        L.a,
+                        { testID: T },
                         b.a.createElement(R.a, { description: W }),
                         b.a.createElement(N.b, { text: K }),
                         b.a.createElement(M.a, {
@@ -1505,7 +1505,7 @@
                       ),
                       this._showVideoAutoplaySetting
                         ? b.a.createElement(
-                            T.a,
+                            L.a,
                             null,
                             b.a.createElement(H.a, null),
                             b.a.createElement(N.b, { text: G }),
@@ -1527,7 +1527,7 @@
                         : null,
                       this._showAltTextNudgeSetting
                         ? b.a.createElement(
-                            T.a,
+                            L.a,
                             null,
                             b.a.createElement(H.a, null),
                             b.a.createElement(N.b, { text: U }),
@@ -1542,7 +1542,7 @@
                         : null,
                       this._maybeRenderTimelineSettings(),
                       b.a.createElement(
-                        T.a,
+                        L.a,
                         null,
                         b.a.createElement(H.a, null),
                         b.a.createElement(N.b, { text: ne }),
@@ -1625,7 +1625,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'SettingsPage', function () {
-          return Ze
+          return $e
         })
       var a = n('K1iM'),
         r = n.n(a),
@@ -1656,14 +1656,14 @@
         A = n('G6rE'),
         D = n('rxPX'),
         F = n('0KEI'),
-        L = ['featureSwitches'],
-        T = Object(I.createSelector)(k.m, C.selectPreferencesFetchStatus, function (e, t) {
+        T = ['featureSwitches'],
+        L = Object(I.createSelector)(k.m, C.selectPreferencesFetchStatus, function (e, t) {
           return e ? x.a.LOADED : t
         }),
         P = Object(D.a)()
           .propsFromState(function () {
             return {
-              fetchStatus: T,
+              fetchStatus: L,
               loggedInUser: A.e.selectLoggedInUser,
               isActiveCreator: k.l,
               personalizationPreferences: C.selectUserPreferences,
@@ -1672,7 +1672,7 @@
           })
           .adjustStateProps(function (e) {
             var t = e.featureSwitches,
-              n = _()(e, L)
+              n = _()(e, T)
             return i()({ withEditableFSes: Object.keys(t.debug).length > 0 }, n)
           })
           .propsFromActions(function () {
@@ -1790,10 +1790,10 @@
             A = v.a.useRef(null),
             D = v.a.useRef(null),
             F = v.a.useRef(null),
-            L = v.a.useState(!1),
-            T = ae()(L, 2),
-            P = T[0],
-            B = T[1],
+            T = v.a.useState(!1),
+            L = ae()(T, 2),
+            P = L[0],
+            B = L[1],
             R = v.a.useState(null),
             N = ae()(R, 2),
             M = N[0],
@@ -1995,8 +1995,8 @@
         Ae = H.a.cad53943,
         De = H.a.bb081ea1,
         Fe = H.a.e95b9448,
-        Le = H.a.eb75875d,
-        Te = H.a.c4881c66,
+        Te = H.a.eb75875d,
+        Le = H.a.c4881c66,
         Pe = H.a.eafe3287,
         Be = H.a.f458a3b1,
         Re = H.a.e8f57e07,
@@ -2011,11 +2011,12 @@
         Ge = H.a.df483b47,
         Ue = H.a.d299431b,
         Ye = H.a.ed21f885,
-        qe = H.a.e435cdff,
-        Xe = H.a.b92a21d8,
-        Qe = H.a.c170a564,
-        Je = H.a.ba8f6f81,
-        Ze = (function (e) {
+        qe = H.a.gaac7109,
+        Xe = H.a.e435cdff,
+        Qe = H.a.b92a21d8,
+        Je = H.a.c170a564,
+        Ze = H.a.ba8f6f81,
+        $e = (function (e) {
           h()(n, e)
           var t = b()(n)
           function n(e, a) {
@@ -2039,7 +2040,8 @@
                         o._renderTwitterBlue(),
                         v.a.createElement(j.a, { label: Ve, link: '/settings/security_and_account_access', testID: X }),
                         v.a.createElement(j.a, { label: Ae, link: '/settings/privacy_and_safety', testID: Q }),
-                        v.a.createElement(j.a, { label: Le, link: '/settings/notifications', testID: J }),
+                        o._renderReportCenter(),
+                        v.a.createElement(j.a, { label: Te, link: '/settings/notifications', testID: J }),
                         v.a.createElement(j.a, {
                           label: We,
                           link: '/settings/accessibility_display_and_languages',
@@ -2115,21 +2117,21 @@
                 return v.a.createElement(Ee, {
                   alwaysOpen: l,
                   dropdownPosition: 'inline',
-                  inputStyle: $e.input,
+                  inputStyle: et.input,
                   items: a,
                   onBackClicked: Object(U.a)() ? o._handleSearchInputBackClicked : void 0,
                   onFocus: o._handleSearchInputFocus,
                   onItemClick: o._handleSearchItemClicked,
                   onQueryChange: o._handleSearchQueryChanged,
-                  placeholder: Je,
+                  placeholder: Ze,
                   renderEmptyState: function (e) {
                     var t = e.style
                     return d
-                      ? v.a.createElement(_e.a, { header: Xe({ query: s }), message: Qe, style: t })
+                      ? v.a.createElement(_e.a, { header: Qe({ query: s }), message: Je, style: t })
                       : v.a.createElement(
                           ce.a,
-                          { style: [t, $e.searchEmptyState] },
-                          v.a.createElement(Se.b, { align: 'center', color: 'gray700' }, qe),
+                          { style: [t, et.searchEmptyState] },
+                          v.a.createElement(Se.b, { align: 'center', color: 'gray700' }, Xe),
                         )
                   },
                   rounded: !0,
@@ -2145,7 +2147,7 @@
                   v.a.createElement(we.b, { text: Fe }),
                   o._renderFeatureSwitch(),
                   o._isUserLoggedIn()
-                    ? v.a.createElement(j.a, { label: Te, link: '/settings/display', testID: ee })
+                    ? v.a.createElement(j.a, { label: Le, link: '/settings/display', testID: ee })
                     : null,
                   o._isUserLoggedIn()
                     ? v.a.createElement(j.a, { label: Pe, link: '/settings/data', testID: te })
@@ -2184,6 +2186,11 @@
                       ? void 0
                       : e.path
                 return t ? v.a.createElement(j.a, { label: Ye, link: t }) : null
+              }),
+              y()(p()(o), '_renderReportCenter', function () {
+                return o.context.featureSwitches.isTrue('report_center_mvp_r2_enabled')
+                  ? v.a.createElement(j.a, { label: qe, link: '/settings/report-center' })
+                  : null
               }),
               y()(p()(o), '_handleBackClicked', function () {
                 var e = o.props.history
@@ -2261,14 +2268,14 @@
             n
           )
         })(v.a.Component)
-      y()(Ze, 'contextType', ke.a)
-      var $e = pe.a.create(function (e) {
+      y()($e, 'contextType', ke.a)
+      var et = pe.a.create(function (e) {
         return {
           searchEmptyState: { padding: e.spaces.space12, paddingTop: e.spaces.space20 },
           input: { flexShrink: 1, paddingVertical: e.spacesPx.space8, paddingHorizontal: e.spacesPx.space8 },
         }
       })
-      t.default = P(Ze)
+      t.default = P($e)
     },
     ctla: function (e, t, n) {
       'use strict'
@@ -2711,8 +2718,8 @@
         A = n('3XMw'),
         D = n.n(A),
         F = n('yoO3'),
-        L = n('7FtF'),
-        T = 'privacyAndSafetyScreen',
+        T = n('7FtF'),
+        L = 'privacyAndSafetyScreen',
         P = n('MWbm'),
         B = n('Irs7'),
         R = n('v6aA'),
@@ -2920,9 +2927,9 @@
                     r = n ? Y : U
                   return b.a.createElement(
                     P.a,
-                    { testID: T },
+                    { testID: L },
                     b.a.createElement(
-                      L.a,
+                      T.a,
                       { location: a, screenType: 'primaryDetail', title: V },
                       b.a.createElement(
                         F.a,

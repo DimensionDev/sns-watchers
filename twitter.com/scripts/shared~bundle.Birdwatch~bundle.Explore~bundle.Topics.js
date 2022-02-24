@@ -56,8 +56,8 @@
         E = n.n(y),
         C = n('1YZw'),
         I = n('CaKu'),
-        w = n('y+lG'),
-        T = n('SrIh'),
+        T = n('y+lG'),
+        w = n('SrIh'),
         S = n('Irs7'),
         x = n('uDfI'),
         L = n('zCf4'),
@@ -130,7 +130,7 @@
                           return a(), void n.history.push(u()(u()({}, N(t)), {}, { pathname: '/messages/compose' }))
                         case 'copy':
                           return (
-                            I.a.setString(Object(w.a)(t.url)),
+                            I.a.setString(Object(T.a)(t.url)),
                             a(),
                             void n.dispatch(Object(C.b)({ text: M.copyLinkSuccessMessage }))
                           )
@@ -147,13 +147,13 @@
                           )
                         case 'via':
                           return void window.navigator
-                            .share({ text: t.text, url: Object(w.a)(t.url) })
+                            .share({ text: t.text, url: Object(T.a)(t.url) })
                             .then(a)
                             .catch(function () {
                               n.analytics.scribe(u()(u()({}, n.mergedScribeNamespace), {}, { action: 'share_error' }))
                             })
                         default:
-                          Object(T.a)('[ShareButton] Unexpected share type ['.concat(e, ']'))
+                          Object(w.a)('[ShareButton] Unexpected share type ['.concat(e, ']'))
                       }
                     })(r.type, s, p)
                   }
@@ -271,8 +271,8 @@
         E = n('s14A'),
         C = n('dwig'),
         I = (n('uFXj'), n('7JQg')),
-        w = n('rHpw'),
-        T = n('GKOv'),
+        T = n('rHpw'),
+        w = n('GKOv'),
         S = n('Rp9C'),
         x = n('Irs7')
       function L(e, t) {
@@ -314,7 +314,7 @@
           s.a.createElement(
             I.c,
             { data: u, namespace: p },
-            s.a.createElement(T.a, {
+            s.a.createElement(w.a, {
               displayType: a,
               facepile: r,
               onFollowHeaderOffscreen: function (e) {
@@ -328,7 +328,7 @@
           ),
         )
       }
-      var A = w.a.create(function (e) {
+      var A = T.a.create(function (e) {
           return {
             root: {
               borderBottomWidth: e.borderWidths.small,
@@ -362,7 +362,7 @@
           return 'twitter://topics_timeline?id='.concat(e)
         },
         J = j.a.ed88e742
-      var W = w.a.create(function (e) {
+      var W = T.a.create(function (e) {
           return {
             rightControl: { flexDirection: 'row' },
             followButtonContainer: { justifyContent: 'center', paddingEnd: e.spaces.space4 },
@@ -600,8 +600,8 @@
             }
           })
           .withAnalytics(),
-        we = n('Nhmk'),
-        Te = n('k/OQ'),
+        Te = n('Nhmk'),
+        we = n('k/OQ'),
         Se = n('G8HL'),
         xe = ['entityToken'],
         Le = { viewType: 'controls' },
@@ -623,7 +623,7 @@
                   o = i ? i.scribeConfig : void 0
                 return r().then(function (t) {
                   t.performed && n.scribe(l()(l()({}, e._getScribeNamespace(o)), {}, { action: 'get_initial' }))
-                }, a(we.a))
+                }, a(Te.a))
               }),
               ce()(te()(e), '_render', function () {
                 var t = e.props,
@@ -660,7 +660,7 @@
                   return s.a.createElement(
                     ge.a,
                     { behavioralEventContext: Le },
-                    s.a.createElement(Te.a, { links: p, visibleItemIndex: c }),
+                    s.a.createElement(we.a, { links: p, visibleItemIndex: c }),
                   )
                 }
                 return null
@@ -729,43 +729,44 @@
           var t = e.TabBar,
             n = e.backLocation,
             a = e.behavioralEventViewType,
-            i = e.entryConfiguration,
-            c = e.fab,
-            l = e.getTabLink,
-            u = e.hasTabNavigation,
-            p = e.history,
-            d = e.initialFetchStatus,
-            b = e.initialPageNamespace,
-            m = e.logoButton,
-            v = e.module,
-            h = e.onBackClick,
-            g = e.pageConfiguration,
-            y = e.prerollDisplayLocation,
-            T = e.renderEmptyState,
-            S = e.renderUnavailable,
-            x = e.rightControl,
-            L = e.searchBoxRef,
-            k = e.selectedTabId,
-            A = e.sidebarContent,
-            _ = e.timelinePrefix,
-            j = e.title,
-            B = e.withAppLinks,
-            M = e.withBottomLoginSignupBar,
-            N = e.withDeferredView,
-            P = e.withOpenGraphMeta,
-            F = e.withSearchBox,
-            D = e.withTweetButton,
-            H = s.a.useState(!0),
-            R = r()(H, 2),
-            U = R[0],
-            K = R[1],
-            Q = g || {},
-            V = Q.header,
-            J = Q.navBar,
-            W = Q.subtitle,
-            Z = Q.title,
-            Y = d === f.a.LOADED ? Z || j : '',
-            X = (function (e, t, n) {
+            i = e.documentTitle,
+            c = e.entryConfiguration,
+            l = e.fab,
+            u = e.getTabLink,
+            p = e.hasTabNavigation,
+            d = e.history,
+            b = e.initialFetchStatus,
+            m = e.initialPageNamespace,
+            v = e.logoButton,
+            h = e.module,
+            g = e.onBackClick,
+            y = e.pageConfiguration,
+            w = e.prerollDisplayLocation,
+            S = e.renderEmptyState,
+            x = e.renderUnavailable,
+            L = e.rightControl,
+            k = e.searchBoxRef,
+            A = e.selectedTabId,
+            _ = e.sidebarContent,
+            j = e.timelinePrefix,
+            B = e.title,
+            M = e.withAppLinks,
+            N = e.withBottomLoginSignupBar,
+            P = e.withDeferredView,
+            F = e.withOpenGraphMeta,
+            D = e.withSearchBox,
+            H = e.withTweetButton,
+            R = s.a.useState(!0),
+            U = r()(R, 2),
+            K = U[0],
+            Q = U[1],
+            V = y || {},
+            J = V.header,
+            W = V.navBar,
+            Z = V.subtitle,
+            Y = V.title,
+            X = b === f.a.LOADED ? Y || B : '',
+            $ = (function (e, t, n) {
               var a = (null == t ? void 0 : t.scribeConfig) || {},
                 r = (a.entityToken, o()(a, Ne)),
                 i = null == t ? void 0 : t.tabs,
@@ -779,65 +780,66 @@
                 u = (null == l ? void 0 : l.scribeConfig) || {},
                 s = (u.entityToken, o()(u, Pe))
               return Object(G.a)({}, n, r, s)
-            })(k, g, b),
-            $ = V ? s.a.createElement(O, { header: V, onHeaderVisible: K }) : null,
-            ee = J
+            })(A, y, m),
+            ee = J ? s.a.createElement(O, { header: J, onHeaderVisible: Q }) : null,
+            te = W
               ? s.a.createElement(q, {
-                  isHeaderOffscreen: !U,
-                  navBar: J,
-                  pageNamespace: X,
-                  withAppLinks: B,
-                  withOpenGraphMeta: P,
+                  isHeaderOffscreen: !K,
+                  navBar: W,
+                  pageNamespace: $,
+                  withAppLinks: M,
+                  withOpenGraphMeta: F,
                 })
               : null,
-            te = N ? E.a : s.a.Fragment,
-            ne = s.a.createElement(Be.a, null, function (e) {
-              var t = e.windowWidth >= w.a.theme.breakpoints.medium
+            ne = P ? E.a : s.a.Fragment,
+            ae = s.a.createElement(Be.a, null, function (e) {
+              var t = e.windowWidth >= T.a.theme.breakpoints.medium
               return s.a.createElement(
                 s.a.Fragment,
                 null,
-                $,
+                ee,
                 s.a.createElement(
-                  te,
+                  ne,
                   null,
                   s.a.createElement(he, {
-                    entryConfiguration: He(t, i),
-                    initialModule: v,
-                    prerollDisplayLocation: y,
-                    renderEmptyState: T,
-                    renderUnavailable: S,
-                    selectedTabId: k,
-                    timelinePrefix: _,
-                    title: j,
+                    entryConfiguration: He(t, c),
+                    initialModule: h,
+                    prerollDisplayLocation: w,
+                    renderEmptyState: S,
+                    renderUnavailable: x,
+                    selectedTabId: A,
+                    timelinePrefix: j,
+                    title: B,
                     withoutHeadroom: !0,
                   }),
                 ),
               )
             }),
-            ae = c ? s.a.createElement(C.a, { component: Me.a, fab: c }, ne) : ne,
-            re = l && u ? s.a.createElement(Oe, { getTabLink: l, module: v, selectedTabId: k }) : void 0
+            re = l ? s.a.createElement(C.a, { component: Me.a, fab: l }, ae) : ae,
+            ie = u && p ? s.a.createElement(Oe, { getTabLink: u, module: h, selectedTabId: A }) : void 0
           return s.a.createElement(
             I.c,
-            { namespace: X },
+            { namespace: $ },
             s.a.createElement(
               z.a,
               { behavioralEventViewType: a },
               s.a.createElement(Ae.a, {
                 TabBar: t,
                 backLocation: n,
-                history: p,
-                logoButton: m,
-                onBackClick: h,
-                primaryContent: ae,
-                rightControl: ee || x,
-                searchBoxRef: L,
-                secondaryBar: re,
-                sidebarContent: A,
-                subtitle: W,
-                title: $ && U ? j : Y,
-                withBottomLoginSignupBar: M,
-                withSearchBox: F,
-                withTweetButton: D,
+                documentTitle: i,
+                history: d,
+                logoButton: v,
+                onBackClick: g,
+                primaryContent: re,
+                rightControl: te || L,
+                searchBoxRef: k,
+                secondaryBar: ie,
+                sidebarContent: _,
+                subtitle: Z,
+                title: ee && K ? B : X,
+                withBottomLoginSignupBar: N,
+                withSearchBox: D,
+                withTweetButton: H,
               }),
             ),
           )

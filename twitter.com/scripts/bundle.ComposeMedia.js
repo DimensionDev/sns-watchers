@@ -713,67 +713,8 @@
         D = a.n(P),
         L = (a('hCOa'), a('87if'), a('t62R')),
         O = a('shC7'),
-        j = a('MWbm'),
-        U = (function (e) {
-          m()(a, e)
-          var t = h()(a)
-          function a() {
-            return o()(this, a), t.apply(this, arguments)
-          }
-          return (
-            c()(a, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.duration,
-                    a = e.trimmerWidth,
-                    n = R(t, a),
-                    r = n.intervalStrings,
-                    i = n.numIntervals,
-                    o = n.numSubintervals,
-                    s = O.a.getConstants().isRTL ? F.borderRight : F.borderLeft,
-                    c = (100 * Math.ceil(i)) / i
-                  return b.a.createElement(
-                    j.a,
-                    { style: F.root },
-                    b.a.createElement(
-                      j.a,
-                      { style: [F.intervalRow, F.intervalRowStrings, { width: ''.concat(c, '%') }] },
-                      r.map(function (e, t) {
-                        return b.a.createElement(
-                          L.b,
-                          {
-                            color: 'gray700',
-                            key: t,
-                            size: 'subtext3',
-                            style: [{ width: ''.concat(0 === t ? a / i / 2 : a / i, 'px') }, F.intervalStrings],
-                          },
-                          0 !== t ? e : null,
-                        )
-                      }),
-                    ),
-                    b.a.createElement(
-                      j.a,
-                      { style: [F.intervalRow, F.intervalRowTicks] },
-                      r.map(function (e, t) {
-                        return b.a.createElement(
-                          j.a,
-                          { key: t, style: [{ width: ''.concat(100 / i, '%') }, F.bigTicks, 0 !== t && s] },
-                          Array.from({ length: o }, function (e, t) {
-                            return b.a.createElement(j.a, { key: t, style: [F.smallTicks, 0 !== t && s] })
-                          }),
-                        )
-                      }),
-                    ),
-                  )
-                },
-              },
-            ]),
-            a
-          )
-        })(b.a.PureComponent),
-        F = S.a.create(function (e) {
+        j = a('MWbm')
+      var U = S.a.create(function (e) {
           return {
             root: {
               flexDirection: 'column',
@@ -793,19 +734,61 @@
             intervalStrings: { display: 'flex', justifyContent: 'center' },
           }
         }),
-        W = U,
-        B = a('Wms4'),
-        V = (a('jQ3i'), a('x4t0'), a('uFXj'), a('oLZl')),
-        z = 'decrease',
-        G = 'increase',
-        K = 'left',
-        H = 'right',
-        N = a('7ep7'),
-        q = D.a.a394f904,
-        Q = D.a.f42c0c8f,
-        X = D.a.i667afe8,
-        J = D.a.c0bdd345,
-        Z = (function (e) {
+        F = function (e) {
+          var t = e.duration,
+            a = e.trimmerWidth,
+            n = R(t, a),
+            r = n.intervalStrings,
+            i = n.numIntervals,
+            o = n.numSubintervals,
+            s = O.a.getConstants().isRTL ? U.borderRight : U.borderLeft,
+            c = (100 * Math.ceil(i)) / i
+          return b.a.createElement(
+            j.a,
+            { style: U.root },
+            b.a.createElement(
+              j.a,
+              { style: [U.intervalRow, U.intervalRowStrings, { width: ''.concat(c, '%') }] },
+              r.map(function (e, t) {
+                return b.a.createElement(
+                  L.b,
+                  {
+                    color: 'gray700',
+                    key: t,
+                    size: 'subtext3',
+                    style: [{ width: ''.concat(0 === t ? a / i / 2 : a / i, 'px') }, U.intervalStrings],
+                  },
+                  0 !== t ? e : null,
+                )
+              }),
+            ),
+            b.a.createElement(
+              j.a,
+              { style: [U.intervalRow, U.intervalRowTicks] },
+              r.map(function (e, t) {
+                return b.a.createElement(
+                  j.a,
+                  { key: t, style: [{ width: ''.concat(100 / i, '%') }, U.bigTicks, 0 !== t && s] },
+                  Array.from({ length: o }, function (e, t) {
+                    return b.a.createElement(j.a, { key: t, style: [U.smallTicks, 0 !== t && s] })
+                  }),
+                )
+              }),
+            ),
+          )
+        },
+        W = a('Wms4'),
+        B = (a('jQ3i'), a('x4t0'), a('uFXj'), a('oLZl')),
+        V = 'decrease',
+        z = 'increase',
+        G = 'left',
+        K = 'right',
+        H = a('7ep7'),
+        N = D.a.a394f904,
+        q = D.a.f42c0c8f,
+        Q = D.a.i667afe8,
+        X = D.a.c0bdd345,
+        J = (function (e) {
           m()(a, e)
           var t = h()(a)
           function a() {
@@ -817,7 +800,7 @@
               f()(
                 d()(e),
                 '_panResponders',
-                N.a.create({
+                H.a.create({
                   onStartShouldSetPanResponder: function () {
                     return !0
                   },
@@ -847,26 +830,26 @@
               f()(d()(e), '_handleOnKeyDown', function (t, a) {
                 var n = e.props.onKeyDown,
                   r = t.key,
-                  i = r === V.a.ArrowUp || r === V.a.ArrowRight,
-                  o = r === V.a.ArrowDown || r === V.a.ArrowLeft
-                ;(i || o) && (t.preventDefault(), n(i ? G : z, a))
+                  i = r === B.a.ArrowUp || r === B.a.ArrowRight,
+                  o = r === B.a.ArrowDown || r === B.a.ArrowLeft
+                ;(i || o) && (t.preventDefault(), n(i ? z : V, a))
               }),
               f()(d()(e), '_handleOnKeyUp', function (t) {
                 var a = e.props.onKeyUp,
                   n = t.key
-                ;[V.a.ArrowDown, V.a.ArrowLeft, V.a.ArrowRight, V.a.ArrowUp].includes(n) && a()
+                ;[B.a.ArrowDown, B.a.ArrowLeft, B.a.ArrowRight, B.a.ArrowUp].includes(n) && a()
               }),
               f()(d()(e), '_generateBorderStyles', function () {
                 var t = e.props.side,
                   a = O.a.getConstants().isRTL
-                return t === K
+                return t === G
                   ? a
-                    ? Y.rightScrubberRadius
-                    : Y.leftScrubberRadius
-                  : t === H
+                    ? Z.rightScrubberRadius
+                    : Z.leftScrubberRadius
+                  : t === K
                   ? a
-                    ? Y.leftScrubberRadius
-                    : Y.rightScrubberRadius
+                    ? Z.leftScrubberRadius
+                    : Z.rightScrubberRadius
                   : void 0
               }),
               e
@@ -888,13 +871,13 @@
                     C.a,
                     I()(
                       {
-                        accessibilityLabel: i === K ? X : Q,
+                        accessibilityLabel: i === G ? Q : q,
                         accessibilityRole: 'adjustable',
                         accessibilityValue: {
-                          max: J(n / 1e3),
-                          min: J(r / 1e3),
-                          now: J(a / 1e3),
-                          text: q({ seconds: J(a / 1e3) }),
+                          max: X(n / 1e3),
+                          min: X(r / 1e3),
+                          now: X(a / 1e3),
+                          text: N({ seconds: X(a / 1e3) }),
                         },
                         focusable: !0,
                         interactiveStyles: T.a.generate({
@@ -911,7 +894,7 @@
                         onKeyUp: function (t) {
                           return e._handleOnKeyUp(t)
                         },
-                        style: [Y.root, this._generateBorderStyles(), o],
+                        style: [Z.root, this._generateBorderStyles(), o],
                       },
                       this._panResponders.panHandlers,
                     ),
@@ -923,10 +906,10 @@
                         b.a.Fragment,
                         null,
                         b.a.createElement(j.a, {
-                          style: [Y.trimmerScrubberGrips, (t || a || n) && Y.trimmerScrubberGripsOpacity],
+                          style: [Z.trimmerScrubberGrips, (t || a || n) && Z.trimmerScrubberGripsOpacity],
                         }),
                         b.a.createElement(j.a, {
-                          style: [Y.trimmerScrubberGrips, (t || a || n) && Y.trimmerScrubberGripsOpacity],
+                          style: [Z.trimmerScrubberGrips, (t || a || n) && Z.trimmerScrubberGripsOpacity],
                         }),
                       )
                     },
@@ -937,7 +920,7 @@
             a
           )
         })(b.a.Component),
-        Y = S.a.create(function (e) {
+        Z = S.a.create(function (e) {
           return {
             root: {
               backgroundColor: e.colors.primary,
@@ -966,15 +949,15 @@
             trimmerScrubberGripsOpacity: { opacity: 0.8 },
           }
         }),
-        $ = Z,
-        ee = D.a.af2a65d8,
-        te = D.a.d46781ae,
-        ae = D.a.e8733ed8,
-        ne = D.a.j3d49e93,
-        re = function (e, t) {
+        Y = J,
+        $ = D.a.af2a65d8,
+        ee = D.a.d46781ae,
+        te = D.a.e8733ed8,
+        ae = D.a.j3d49e93,
+        ne = function (e, t) {
           return ''.concat((e / t) * 100, '%')
         },
-        ie = (function (e) {
+        re = (function (e) {
           m()(a, e)
           var t = h()(a)
           function a() {
@@ -988,7 +971,7 @@
               f()(
                 d()(e),
                 '_panResponderTermination',
-                N.a.create({
+                H.a.create({
                   onMoveShouldSetPanResponderCapture: function (t, a) {
                     var n = a.dx
                     return e._shouldTerminateChildrenPanResponders(n)
@@ -1001,9 +984,9 @@
                   a = t.endTime - t.startTime
                 if (a >= 6e4) {
                   var n = k(a)
-                  return ne({ timestamp: n })
+                  return ae({ timestamp: n })
                 }
-                return a < 4e3 ? te(Math.floor((10 * a) / 1e3) / 10) : ae(Math.floor(a / 1e3))
+                return a < 4e3 ? ee(Math.floor((10 * a) / 1e3) / 10) : te(Math.floor(a / 1e3))
               }),
               f()(d()(e), '_getTrimmerScrubberWidth', function () {
                 return 2 * S.a.theme.spacesPx.space4 + 3 * S.a.theme.spacesPx.space2
@@ -1011,7 +994,7 @@
               f()(d()(e), '_handleKeyDown', function (t, a) {
                 var n = e.state.trimmerWidth
                 1 === e._keyPressValueDelta && e._handlePanResponderGrant(a),
-                  (e._keyPressAccumulatedDistance += e._keyPressValueDelta * (t === G ? 1 : -1)),
+                  (e._keyPressAccumulatedDistance += e._keyPressValueDelta * (t === z ? 1 : -1)),
                   e._handlePanResponderChange(e._keyPressAccumulatedDistance, a)
                 var r = 0.05 * n
                 e._keyPressValueDelta = Math.min(1.4 * e._keyPressValueDelta, r)
@@ -1032,7 +1015,7 @@
                 var a = e.props,
                   n = a.endTime,
                   r = a.startTime
-                ;(e._baseTime = t === K ? r : n), e.setState({ isActive: !0 })
+                ;(e._baseTime = t === G ? r : n), e.setState({ isActive: !0 })
               }),
               f()(d()(e), '_renderTimestampLabel', function () {
                 var t,
@@ -1048,14 +1031,14 @@
                   j.a,
                   {
                     style: [
-                      oe.labelWrapper,
-                      ((t = {}), f()(t, c, re(o, r)), f()(t, l, re(r - i, r)), f()(t, 'width', re(i - o, r)), t),
+                      ie.labelWrapper,
+                      ((t = {}), f()(t, c, ne(o, r)), f()(t, l, ne(r - i, r)), f()(t, 'width', ne(i - o, r)), t),
                     ],
                   },
                   b.a.createElement(
-                    B.a,
-                    { background: 'maskColor', style: [oe.label, !a && oe.visibilityHidden] },
-                    ee({ timestamp: e._generateTimestampLabelString() }),
+                    W.a,
+                    { background: 'maskColor', style: [ie.label, !a && ie.visibilityHidden] },
+                    $({ timestamp: e._generateTimestampLabelString() }),
                   ),
                 )
               }),
@@ -1082,13 +1065,13 @@
                   s = n.startTime,
                   c = e._baseTime + e._scaleDistanceByTrimmerWidth(t),
                   l = 1e3
-                if (a === K) {
+                if (a === G) {
                   var d = c
-                  c <= 0 ? (d = 0) : i - l <= c && (d = i - l), o(K, d)
+                  c <= 0 ? (d = 0) : i - l <= c && (d = i - l), o(G, d)
                 }
-                if (a === H) {
+                if (a === K) {
                   var u = c
-                  c >= r ? (u = r) : c - s <= l && (u = s + l), o(H, u)
+                  c >= r ? (u = r) : c - s <= l && (u = s + l), o(K, u)
                 }
               }),
               e
@@ -1120,26 +1103,26 @@
                   return b.a.createElement(
                     j.a,
                     I()(
-                      { ref: this._setRootRef, style: [oe.root, o && oe.cursorGrab] },
+                      { ref: this._setRootRef, style: [ie.root, o && ie.cursorGrab] },
                       this._panResponderTermination.panHandlers,
                     ),
                     this._renderTimestampLabel(),
                     b.a.createElement(
                       j.a,
-                      { onLayout: this._handleLayout, style: oe.trimmerWrapper },
+                      { onLayout: this._handleLayout, style: ie.trimmerWrapper },
                       b.a.createElement(
                         j.a,
-                        { style: oe.intervalsContainer },
-                        b.a.createElement(W, { duration: t, trimmerWidth: s }),
+                        { style: ie.intervalsContainer },
+                        b.a.createElement(F, { duration: t, trimmerWidth: s }),
                       ),
                       b.a.createElement(
                         b.a.Fragment,
                         null,
-                        b.a.createElement(j.a, { style: [oe.discardArea, oe.transition, { width: re(r, t) }] }),
+                        b.a.createElement(j.a, { style: [ie.discardArea, ie.transition, { width: ne(r, t) }] }),
                         b.a.createElement(
                           j.a,
-                          { style: oe.keepArea },
-                          b.a.createElement($, {
+                          { style: ie.keepArea },
+                          b.a.createElement(Y, {
                             currentValue: r,
                             maxValue: a,
                             minValue: 0,
@@ -1148,19 +1131,19 @@
                             onMoveChange: this._handlePanResponderChange,
                             onMoveEnd: this._handlePanResponderEnd,
                             onMoveStart: this._handlePanResponderGrant,
-                            side: K,
-                            style: [oe.trimmerScrubber, f()({}, d, '-'.concat(c, 'px'))],
+                            side: G,
+                            style: [ie.trimmerScrubber, f()({}, d, '-'.concat(c, 'px'))],
                           }),
                           b.a.createElement(
                             j.a,
-                            { style: oe.keepAreaCenter },
+                            { style: ie.keepAreaCenter },
                             o
                               ? null
                               : b.a.createElement(j.a, {
-                                  style: [oe.playBarArea, oe.transition, { width: re(n, a - r) }],
+                                  style: [ie.playBarArea, ie.transition, { width: ne(n, a - r) }],
                                 }),
                           ),
-                          b.a.createElement($, {
+                          b.a.createElement(Y, {
                             currentValue: a,
                             maxValue: t,
                             minValue: r,
@@ -1169,12 +1152,12 @@
                             onMoveChange: this._handlePanResponderChange,
                             onMoveEnd: this._handlePanResponderEnd,
                             onMoveStart: this._handlePanResponderGrant,
-                            side: H,
-                            style: [oe.trimmerScrubber, f()({}, u, '-'.concat(c, 'px'))],
+                            side: K,
+                            style: [ie.trimmerScrubber, f()({}, u, '-'.concat(c, 'px'))],
                           }),
                         ),
                         b.a.createElement(j.a, {
-                          style: [oe.discardArea, oe.transition, { width: 'calc(100% - '.concat(re(a, t), ')') }],
+                          style: [ie.discardArea, ie.transition, { width: 'calc(100% - '.concat(ne(a, t), ')') }],
                         }),
                       ),
                     ),
@@ -1185,7 +1168,7 @@
             a
           )
         })(b.a.Component),
-        oe = S.a.create(function (e) {
+        ie = S.a.create(function (e) {
           return {
             root: { paddingHorizontal: e.spaces.space40, width: '100%' },
             cursorGrab: { cursor: 'grab' },
@@ -1231,12 +1214,12 @@
             visibilityHidden: { visibility: 'hidden' },
           }
         }),
-        se = ie,
-        ce = a('mXq/'),
-        le = a('/run'),
-        de = a('KwSe'),
-        ue = new E.a({}),
-        me = (function (e) {
+        oe = re,
+        se = a('mXq/'),
+        ce = a('/run'),
+        le = a('KwSe'),
+        de = new E.a({}),
+        ue = (function (e) {
           m()(a, e)
           var t = h()(a)
           function a() {
@@ -1260,7 +1243,7 @@
                     o = n.endTime,
                     s = n.startTime,
                     c = i.props.video.duration,
-                    l = t === K
+                    l = t === G
                   if (e) {
                     var d = l ? a : s,
                       u = l ? o : a
@@ -1329,16 +1312,16 @@
                     c = a.startTime
                   return b.a.createElement(
                     j.a,
-                    { style: pe.root },
+                    { style: me.root },
                     b.a.createElement(
-                      de.a,
+                      le.a,
                       null,
                       b.a.createElement(
                         j.a,
-                        { style: pe.videoContainer },
+                        { style: me.videoContainer },
                         b.a.createElement(
                           j.a,
-                          { onLayout: this._handleOnVideoContainerLayout, style: pe.video },
+                          { onLayout: this._handleOnVideoContainerLayout, style: me.video },
                           b.a.createElement(
                             y.a,
                             { ratio: t.width / t.height, style: n && r && { height: n, width: r } },
@@ -1346,11 +1329,11 @@
                               _.b,
                               {
                                 aspectRatio: t.width / t.height,
-                                basePlayerClass: le.a,
+                                basePlayerClass: ce.a,
                                 configType: 'static',
                                 contentId: '',
                                 contentType: 'media_entity',
-                                httpClient: ue,
+                                httpClient: de,
                                 onStateUpdate: this._handlePlayerStateUpdate,
                                 playerId: 'trimmer',
                                 size: 'fill',
@@ -1371,18 +1354,18 @@
                                       insetFocusRing: !0,
                                     }),
                                     onClick: e._handleVideoClick(a),
-                                    style: pe.overlay,
+                                    style: me.overlay,
                                   },
-                                  o ? null : b.a.createElement(ce.a, null),
+                                  o ? null : b.a.createElement(se.a, null),
                                 )
                               },
                             ),
                           ),
                         ),
                       ),
-                      b.a.createElement(de.a.MetadataSubscriber, { playerId: 'trimmer' }, function (a) {
+                      b.a.createElement(le.a.MetadataSubscriber, { playerId: 'trimmer' }, function (a) {
                         var n = a.playerApi
-                        return b.a.createElement(se, {
+                        return b.a.createElement(oe, {
                           duration: t.duration,
                           endTime: i,
                           onScrub: e._handleScrub(n),
@@ -1406,7 +1389,7 @@
             a
           )
         })(b.a.Component),
-        pe = S.a.create(function (e) {
+        me = S.a.create(function (e) {
           return {
             root: { flex: 1 },
             overlay: r()(r()({}, S.a.absoluteFillObject), {}, { alignItems: 'center', justifyContent: 'center' }),
@@ -1420,7 +1403,7 @@
             },
           }
         })
-      t.a = me
+      t.a = ue
     },
     eIif: function (e, t, a) {
       'use strict'

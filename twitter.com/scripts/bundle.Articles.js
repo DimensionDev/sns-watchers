@@ -48,7 +48,7 @@
           n('87if'),
           {
             loader: function () {
-              return n.e(203).then(n.bind(null, 'QvpQ'))
+              return n.e(204).then(n.bind(null, 'QvpQ'))
             },
             loaderKey: 'defaultArticleLoader',
             strategy: n('XBtf').a.Critical,
@@ -520,7 +520,7 @@
         c = n('v6aA'),
         s = (n('TJCb'), n('7x/C'), n('DZ+c'), n('3zvM')),
         u = n('lMB6'),
-        m = Object(s.f)({ namespace: 'articles' }),
+        m = Object(s.e)({ namespace: 'articles' }),
         d = u.a.register(m),
         p = n('rxPX'),
         f = n('0KEI'),

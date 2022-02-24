@@ -218,7 +218,7 @@
         se = Object(re.a)({
           loader: function () {
             return (I.a.preload() || Promise.resolve()).then(function () {
-              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(10), n.e(85)]).then(n.bind(null, 'RrO2'))
+              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(85)]).then(n.bind(null, 'RrO2'))
             })
           },
           renderPlaceholder: function () {
@@ -976,7 +976,7 @@
                       a = 'home'.concat(t)
                     ;(Ge()
                       ? n
-                          .e(347)
+                          .e(348)
                           .then(n.bind(null, 'Iid0'))
                           .then(function (e) {
                             return e.default

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [227],
+  [228],
   {
     '4AX5': function (i, e, n) {
       'use strict'
@@ -9,7 +9,7 @@
         a = n('G/+M'),
         r = n('+cai'),
         u = n('x7CM'),
-        s = n('rHpw')
+        d = n('rHpw')
       e.default = function (i) {
         var e = i.reaction,
           n = i.size
@@ -19,10 +19,10 @@
             a.a(e)
           },
           reaction: e.emoji,
-          style: [d.reaction, { height: n, width: n }],
+          style: [s.reaction, { height: n, width: n }],
         })
       }
-      var d = s.a.create(function (i) {
+      var s = d.a.create(function (i) {
         return {
           reaction: {
             position: 'absolute',
@@ -62,8 +62,8 @@
         a = n('KEM+'),
         r = n.n(a),
         u = n('3XMw'),
-        s = n.n(u),
-        d = n('rHpw'),
+        d = n.n(u),
+        s = n('rHpw'),
         c = {
           None: 'none',
           Light: 'light',
@@ -82,31 +82,31 @@
           o),
         m =
           ((t = {}),
-          r()(t, c.None, { id: c.None, name: s.a.ff3dd27b, color: '#FFDC5D' }),
-          r()(t, c.Light, { codepoint: f[c.Light], id: c.Light, name: s.a.b554fcf3, color: '#F7DECE' }),
+          r()(t, c.None, { id: c.None, name: d.a.ff3dd27b, color: '#FFDC5D' }),
+          r()(t, c.Light, { codepoint: f[c.Light], id: c.Light, name: d.a.b554fcf3, color: '#F7DECE' }),
           r()(t, c.MediumLight, {
             codepoint: f[c.MediumLight],
             id: c.MediumLight,
-            name: s.a.j590b148,
+            name: d.a.j590b148,
             color: '#F3D2A2',
           }),
-          r()(t, c.Medium, { codepoint: f[c.Medium], id: c.Medium, name: s.a.e7d4ee85, color: '#D5AB88' }),
-          r()(t, c.MediumDark, { codepoint: f[c.MediumDark], id: c.MediumDark, name: s.a.ia423ebb, color: '#AF7E57' }),
-          r()(t, c.Dark, { codepoint: f[c.Dark], id: c.Dark, name: s.a.a2cf0941, color: '#7C533E' }),
+          r()(t, c.Medium, { codepoint: f[c.Medium], id: c.Medium, name: d.a.e7d4ee85, color: '#D5AB88' }),
+          r()(t, c.MediumDark, { codepoint: f[c.MediumDark], id: c.MediumDark, name: d.a.ia423ebb, color: '#AF7E57' }),
+          r()(t, c.Dark, { codepoint: f[c.Dark], id: c.Dark, name: d.a.a2cf0941, color: '#7C533E' }),
           t),
         l = {
-          search: s.a.j824dc05,
-          notFoundHeader: s.a.e39c4391,
-          notFoundMessage: s.a.f2625275,
-          skintext: s.a.d67ad795,
-          clear: s.a.e6388bfa,
-          recentCategoryName: s.a.j7c67ec9,
-          searchCategoryName: s.a.da539d38,
+          search: d.a.j824dc05,
+          notFoundHeader: d.a.e39c4391,
+          notFoundMessage: d.a.f2625275,
+          skintext: d.a.d67ad795,
+          clear: d.a.e6388bfa,
+          recentCategoryName: d.a.j7c67ec9,
+          searchCategoryName: d.a.da539d38,
         },
         p = {
-          EmojiWidth: d.a.theme.spaces.space20,
-          EmojiHeight: d.a.theme.spaces.space20,
-          EmojiGutter: d.a.theme.spaces.space4,
+          EmojiWidth: s.a.theme.spaces.space20,
+          EmojiHeight: s.a.theme.spaces.space20,
+          EmojiGutter: s.a.theme.spaces.space4,
         },
         k = {
           Search: 'search',
@@ -125,57 +125,32 @@
     },
     a6L8: function (i, e, n) {
       'use strict'
-      var o = n('VrFO'),
+      n('ho0z')
+      var o = n('ERkP'),
         t = n.n(o),
-        a = n('Y9Ll'),
-        r = n.n(a),
-        u = n('5Yy7'),
-        s = n.n(u),
-        d = n('2VqO'),
-        c = n.n(d),
-        f = (n('ho0z'), n('ERkP')),
-        m = n.n(f),
-        l = n('faxe'),
-        p = n('3rX5'),
-        k = n('VbCG'),
-        h = n('rHpw'),
-        g = (function (i) {
-          s()(n, i)
-          var e = c()(n)
-          function n() {
-            return t()(this, n), e.apply(this, arguments)
-          }
-          return (
-            r()(n, [
-              {
-                key: 'render',
-                value: function () {
-                  var i = this.props,
-                    e = i.accessibilityLabel,
-                    n = i.emoji,
-                    o = i.skinTone,
-                    t = i.style,
-                    a = Object(l.b)(n, o)
-                  return a
-                    ? m.a.createElement(p.a, {
-                        accessibilityLabel: e,
-                        alt: n.name,
-                        draggable: !1,
-                        resizeMode: 'stretch',
-                        source: a,
-                        style: [j.root, t],
-                      })
-                    : null
-                },
-              },
-            ]),
-            n
-          )
-        })(m.a.PureComponent),
-        j = h.a.create(function (i) {
-          return { root: { height: k.c.EmojiHeight, width: k.c.EmojiWidth } }
-        })
-      e.a = g
+        a = n('faxe'),
+        r = n('3rX5'),
+        u = n('VbCG')
+      var d = n('rHpw').a.create(function (i) {
+        return { root: { height: u.c.EmojiHeight, width: u.c.EmojiWidth } }
+      })
+      e.a = function (i) {
+        var e = i.accessibilityLabel,
+          n = i.emoji,
+          o = i.skinTone,
+          u = i.style,
+          s = Object(a.b)(n, o)
+        return s
+          ? t.a.createElement(r.a, {
+              accessibilityLabel: e,
+              alt: n.name,
+              draggable: !1,
+              resizeMode: 'stretch',
+              source: s,
+              style: [d.root, u],
+            })
+          : null
+      }
     },
     faxe: function (i, e, n) {
       'use strict'
@@ -189,10 +164,10 @@
           return u
         }),
         n.d(e, 'a', function () {
-          return s
+          return d
         }),
         n.d(e, 'e', function () {
-          return d
+          return s
         })
       n('vrRf'), n('ho0z')
       var o = n('z4Oz'),
@@ -220,10 +195,10 @@
             u = r ? r.unified : i.unified
           return { id: i.id || o[0], name: n, text: a || u, unified: u }
         },
-        s = function () {
+        d = function () {
           return 'emojiPicker-'.concat(Math.random())
         }
-      function d(i, e) {
+      function s(i, e) {
         var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0
         if (i && e) {
           var o = i.getBoundingClientRect(),
@@ -231,14 +206,14 @@
             a = o.top,
             r = a + n,
             u = e.getBoundingClientRect(),
-            s = u.bottom,
-            d = u.top,
+            d = u.bottom,
+            s = u.top,
             c = t + a
-          if (d < r) {
-            var f = r - d
+          if (s < r) {
+            var f = r - s
             i.scrollTop = Math.max(0, i.scrollTop - f)
-          } else if (d > c || s > c) {
-            var m = s - c
+          } else if (s > c || d > c) {
+            var m = d - c
             i.scrollTop = Math.max(0, i.scrollTop + m)
           }
         }
@@ -247,7 +222,7 @@
     r728: function (i, e, n) {
       'use strict'
       n.d(e, 'a', function () {
-        return s
+        return d
       })
       n('jwue'), n('7x/C'), n('+oxZ'), n('KqXw'), n('Ysgh'), n('vrRf'), n('ho0z'), n('7xRU'), n('0zG9'), n('LJOr')
       var o = n('iChn'),
@@ -269,21 +244,21 @@
         u = function (i, e) {
           for (var n in e) (i[n] = i[e[n]]), delete i[e[n]]
         },
-        s = function (i) {
+        d = function (i) {
           var e = JSON.parse(JSON.stringify(i))
           for (var n in ((e.compressed = !1), e.emojis)) {
-            var s = e.emojis[n]
-            u(s, t),
-              (s.id = n),
-              (s.unified = n),
-              (s.short_names = [n]),
-              s.text || (s.text = ''),
-              (s.search = r(s)),
-              s.skin_variations &&
-                (s.skin_variations.forEach(function (i) {
+            var d = e.emojis[n]
+            u(d, t),
+              (d.id = n),
+              (d.unified = n),
+              (d.short_names = [n]),
+              d.text || (d.text = ''),
+              (d.search = r(d)),
+              d.skin_variations &&
+                (d.skin_variations.forEach(function (i) {
                   u(i, a)
                 }),
-                (s.skin_variations = Object(o.a)(s.skin_variations, function (i) {
+                (d.skin_variations = Object(o.a)(d.skin_variations, function (i) {
                   for (var e = i.skin_tone, n = e[0], o = 1; o < e.length; o++) n += '+'.concat(e[o])
                   return n
                 })))
@@ -301,8 +276,8 @@
         a = n('ERkP'),
         r = n.n(a),
         u = n('WrBE'),
-        s = n('VbCG')
-      function d(i) {
+        d = n('VbCG')
+      function s(i) {
         var e,
           n,
           o = (function (i) {
@@ -310,30 +285,30 @@
           })(i)
         return {
           rootQualifiedEmoji: o ? (null === (e = c[i]) || void 0 === e ? void 0 : e.qualifiedRootEmoji) : i,
-          skinToneOption: o ? (null === (n = c[i]) || void 0 === n ? void 0 : n.skinToneOption) : s.e[s.d.None],
+          skinToneOption: o ? (null === (n = c[i]) || void 0 === n ? void 0 : n.skinToneOption) : d.e[d.d.None],
         }
       }
       var c = {
-          '👏🏻': { qualifiedRootEmoji: '👏', skinToneOption: s.e[s.d.Light] },
-          '👏🏼': { qualifiedRootEmoji: '👏', skinToneOption: s.e[s.d.MediumLight] },
-          '👏🏽': { qualifiedRootEmoji: '👏', skinToneOption: s.e[s.d.Medium] },
-          '👏🏾': { qualifiedRootEmoji: '👏', skinToneOption: s.e[s.d.MediumDark] },
-          '👏🏿': { qualifiedRootEmoji: '👏', skinToneOption: s.e[s.d.Dark] },
-          '✊🏻': { qualifiedRootEmoji: '✊', skinToneOption: s.e[s.d.Light] },
-          '✊🏼': { qualifiedRootEmoji: '✊', skinToneOption: s.e[s.d.MediumLight] },
-          '✊🏽': { qualifiedRootEmoji: '✊', skinToneOption: s.e[s.d.Medium] },
-          '✊🏾': { qualifiedRootEmoji: '✊', skinToneOption: s.e[s.d.MediumDark] },
-          '✊🏿': { qualifiedRootEmoji: '✊', skinToneOption: s.e[s.d.Dark] },
-          '✌🏻': { qualifiedRootEmoji: '✌️', skinToneOption: s.e[s.d.Light] },
-          '✌🏼': { qualifiedRootEmoji: '✌️', skinToneOption: s.e[s.d.MediumLight] },
-          '✌🏽': { qualifiedRootEmoji: '✌️', skinToneOption: s.e[s.d.Medium] },
-          '✌🏾': { qualifiedRootEmoji: '✌️', skinToneOption: s.e[s.d.MediumDark] },
-          '✌🏿': { qualifiedRootEmoji: '✌️', skinToneOption: s.e[s.d.Dark] },
-          '👋🏻': { qualifiedRootEmoji: '👋', skinToneOption: s.e[s.d.Light] },
-          '👋🏼': { qualifiedRootEmoji: '👋', skinToneOption: s.e[s.d.MediumLight] },
-          '👋🏽': { qualifiedRootEmoji: '👋', skinToneOption: s.e[s.d.Medium] },
-          '👋🏾': { qualifiedRootEmoji: '👋', skinToneOption: s.e[s.d.MediumDark] },
-          '👋🏿': { qualifiedRootEmoji: '👋', skinToneOption: s.e[s.d.Dark] },
+          '👏🏻': { qualifiedRootEmoji: '👏', skinToneOption: d.e[d.d.Light] },
+          '👏🏼': { qualifiedRootEmoji: '👏', skinToneOption: d.e[d.d.MediumLight] },
+          '👏🏽': { qualifiedRootEmoji: '👏', skinToneOption: d.e[d.d.Medium] },
+          '👏🏾': { qualifiedRootEmoji: '👏', skinToneOption: d.e[d.d.MediumDark] },
+          '👏🏿': { qualifiedRootEmoji: '👏', skinToneOption: d.e[d.d.Dark] },
+          '✊🏻': { qualifiedRootEmoji: '✊', skinToneOption: d.e[d.d.Light] },
+          '✊🏼': { qualifiedRootEmoji: '✊', skinToneOption: d.e[d.d.MediumLight] },
+          '✊🏽': { qualifiedRootEmoji: '✊', skinToneOption: d.e[d.d.Medium] },
+          '✊🏾': { qualifiedRootEmoji: '✊', skinToneOption: d.e[d.d.MediumDark] },
+          '✊🏿': { qualifiedRootEmoji: '✊', skinToneOption: d.e[d.d.Dark] },
+          '✌🏻': { qualifiedRootEmoji: '✌️', skinToneOption: d.e[d.d.Light] },
+          '✌🏼': { qualifiedRootEmoji: '✌️', skinToneOption: d.e[d.d.MediumLight] },
+          '✌🏽': { qualifiedRootEmoji: '✌️', skinToneOption: d.e[d.d.Medium] },
+          '✌🏾': { qualifiedRootEmoji: '✌️', skinToneOption: d.e[d.d.MediumDark] },
+          '✌🏿': { qualifiedRootEmoji: '✌️', skinToneOption: d.e[d.d.Dark] },
+          '👋🏻': { qualifiedRootEmoji: '👋', skinToneOption: d.e[d.d.Light] },
+          '👋🏼': { qualifiedRootEmoji: '👋', skinToneOption: d.e[d.d.MediumLight] },
+          '👋🏽': { qualifiedRootEmoji: '👋', skinToneOption: d.e[d.d.Medium] },
+          '👋🏾': { qualifiedRootEmoji: '👋', skinToneOption: d.e[d.d.MediumDark] },
+          '👋🏿': { qualifiedRootEmoji: '👋', skinToneOption: d.e[d.d.Dark] },
         },
         f = n('a6L8'),
         m = n('r728')
@@ -345,7 +320,7 @@
             [i.emojiInfo],
           ),
           n = (function (i, e) {
-            var n = d(i),
+            var n = s(i),
               o = n.rootQualifiedEmoji,
               t = n.skinToneOption
             return { emojiData: o && e ? e[o] : void 0, skinTone: t }

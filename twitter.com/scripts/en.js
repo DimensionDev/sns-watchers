@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [124],
+    [125],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -23,7 +23,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(306).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(307).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -1601,9 +1601,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('eac7b6ab', 'Contribute to build understanding'),
           a('b0381cfb', 'Act in good faith'),
           a('f0addddc', 'Be helpful, even to those who disagree'),
-          a('a05667aa', 'Your note has been posted to Birdwatch. Other contributors can now read and rate your note. '),
+          a('cc42580e', 'Birdwatch contributors can now see your note'),
+          a('gc1a5bce', 'They’ll rate it for helpfulness'),
+          a(
+            'bd9e5451',
+            'If enough people from different points of view rate it as helpful, it will be shown as context on Twitter',
+          ),
           a('j5a1d85a', 'See your note'),
-          a('ace99891', 'Your note is live!'),
+          a('b25b64d5', 'Your note was submitted!'),
+          a('a4ec7003', 'Here’s what happens now:'),
+          a('cb67d37a', 'About Birdwatch notes after submission'),
           a('h8335712', 'Your note'),
           a('fe27c1e1', 'Notes'),
           a('c59107c3', 'Tweet with notes'),
@@ -1974,6 +1981,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('c9d56b71', 'Tell us a little about your Community. You can always change these details later.'),
           a('c1ad5a11', 'Looks like we’re having trouble creating your new Community. Please try again later.'),
+          a('f713fbd1', 'Membership'),
           a('h3e55b40', 'Community name'),
           a('dd71d9c9', function (e) {
             return (
@@ -1993,6 +2001,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e988475f', function (e) {
             return 'Purpose must be between ' + e.minCharacterCount + ' and ' + e.maxCharacterCount + ' characters'
           }),
+          a('a0a16d37', 'Anyone can join and/or be invited to the Community.'),
+          a('ce0523a8', 'Restricted'),
+          a('f1b189f9', 'People must ask to join, and the mod team must approve those requests.'),
+          a('c85960a0', 'Allow members to issue invitations'),
+          a('ca373cd2', 'People invited by existing members are automatically approved.'),
+          a('d42d9318', 'People invited by the mod team are automatically approved.'),
+          a('b1066579', 'Keep in mind all Communities are visible to everyone on Twitter.'),
           a('c8c7f9fc', 'Review needed'),
           a('c045c7b6', 'Reported Tweets'),
           a('a87df2ee', 'Community management'),
@@ -2015,9 +2030,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j8af8ea9', 'Membership type'),
           a('d5f01115', 'Purpose'),
           a('c3c04b70', 'Color theme'),
-          a('ce0523a8', 'Restricted'),
           a('f4a98e9e', 'Community information'),
-          a('f713fbd1', 'Membership'),
           a('a49f884d', 'Community Banner'),
           a('ea965b81', 'Edit Community Banner'),
           a('gea6cc19', 'Are you sure?'),
@@ -2037,12 +2050,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c5d1634d', 'Okay, I understand'),
           a('b983f9e0', 'Heads up'),
           a('a1c93d73', 'Looks like we’re having trouble saving your changes. Please try again later.'),
-          a('a0a16d37', 'Anyone can join and/or be invited to the Community.'),
-          a('f1b189f9', 'People must ask to join, and the mod team must approve those requests.'),
-          a('c85960a0', 'Allow members to issue invitations'),
-          a('ca373cd2', 'People invited by existing members are automatically approved.'),
-          a('d42d9318', 'People invited by the mod team are automatically approved.'),
-          a('b1066579', 'Keep in mind all Communities are visible to everyone on Twitter.'),
           a(
             'daedd9fa',
             'This will allow anyone to join your Community. All pending requests to join will be automatically approved.',
@@ -2273,12 +2280,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f15bfdb3', 'Account information'),
           a('a3841918', 'Email'),
           a('c21037d0', 'Country'),
-          a('ab1f7eef', 'Change your password'),
-          a('e731db59', 'Password reset'),
+          a('ab1f7eef', 'Change your password')
+        a('e731db59', 'Password reset'),
           a('f56af9cc', 'Download an archive of your data'),
           a('d13e165c', 'TweetDeck Teams'),
-          a('hfb92b14', 'Deactivate your account')
-        a('bf96fda4', 'Age'),
+          a('hfb92b14', 'Deactivate your account'),
+          a('bf96fda4', 'Age'),
           a('j9d10268', 'Account activity'),
           a('i6b3f59a', 'Account history'),
           a('da202f9a', 'Your advertiser list'),
@@ -2321,6 +2328,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h14ba864', 'Data sharing with business partners'),
           a('jabb9c9a', 'Location information'),
           a('eb029cab', 'Add location information to your Tweets'),
+          a('gaac7109', 'Report Center'),
           a('bcd81cab', 'Preferences'),
           a('i647fb03', 'Filters'),
           a('cf9b1669', 'Accessibility, display, and languages'),
@@ -3293,6 +3301,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d93271e2', 'Show category'),
           a('h26379fe', 'If enabled, the category will be visible in your profile.'),
           a('f386777a', 'Switch account type'),
+          a('d4b6a6ef', 'Profile Spotlight'),
+          a('d834aec4', 'Newsletter'),
           a('ia492079', 'Yes, switch'),
           a('a9b5e3a9', 'No, cancel'),
           a('cb55eccd', 'Switch to Personal account'),
@@ -3310,7 +3320,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('db48309f', 'Switched to Personal account'),
           a('c701200b', 'Switched to Business account'),
           a('acd8da09', 'Switched to Creator account'),
-          a('d4b6a6ef', 'Profile Spotlight'),
           a('aaafffd9', 'Muted notifications'),
           a('j29ab12f', 'Mute notifications from people:'),
           a('jdfc82f6', 'You don’t follow'),
@@ -3513,14 +3522,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('ddefdd1c', 'Remove places you’ve been?'),
           a('hea740ac', 'This will take some time, and can’t be undone.'),
-          a('a26e0d52', 'Got it. These places will be removed.'),
-          a('he447966', 'No places currently found.'),
+          a('a26e0d52', 'Got it. These places will be removed.')
+        a('he447966', 'No places currently found.'),
           a('eb0d4501', 'location settings'),
           a('e27e4fcd', 'Unknown location'),
           a('ib55eb69', 'Connected apps'),
           a('e5a4a538', 'Learn more'),
-          a('icbb92d0', 'Apps page')
-        a('a9bec4ef', 'Learn more'),
+          a('icbb92d0', 'Apps page'),
+          a('a9bec4ef', 'Learn more'),
           a('gc8f2e13', 'You can opt out of interest-based advertising in your personalization and data settings.'),
           a('f04e17dd', 'Learn more'),
           a('d3310e48', function (e) {
@@ -3848,6 +3857,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'ea28ca63',
             'When enabled, pictures and videos you Tweet will be marked as sensitive for people who don’t want to see sensitive content.',
           ),
+          a('ga055179', 'You haven’t created any reports'),
+          a('ea1715cf', 'When you do, they’ll show up here.'),
           a('f154bd64', 'Autoblocked Tweets'),
           a('de9b6641', 'If we autoblock an account, it’ll show up here.'),
           a('cd702bc3', 'Report account'),
@@ -4724,17 +4735,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'Notifications help you stay up-to-date on what’s happening on Twitter for you. Retweets, recommendations, and more will show up here as you follow more people.',
           ),
           a('ef0b8028', 'You rang?'),
-          a('c380d684', 'Your report'),
-          a('c7714935', 'We flagged these Tweets as sensitive content'),
-          a('bfaadb2c', function (e) {
-            return e.appName + ' wants to access your Twitter account'
-          }),
-          a('f4392d00', 'Authorize app'),
-          a('ee4dca3c', 'cancel link'),
-          a('bb347bbb', 'help center'),
-          a('e0876919', 'You weren’t able to give access to the App. Go back and try logging in again.'),
-          a('cea71013', 'We’re loading your contacts...'),
-          a('e4ff75a9', 'Something went wrong. Check your connection and try again.')
+          a('c380d684', 'Your report')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4751,7 +4752,18 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('e4f6bd9e', 'Oops, something went wrong. Please try again later.'),
+        a('c7714935', 'We flagged these Tweets as sensitive content'),
+          a('bfaadb2c', function (e) {
+            return e.appName + ' wants to access your Twitter account'
+          }),
+          a('f4392d00', 'Authorize app'),
+          a('ee4dca3c', 'cancel link'),
+          a('bb347bbb', 'help center'),
+          a('eeee7736', 'To use this App you have to be logged in to Twitter.'),
+          a('e0876919', 'You weren’t able to give access to the App. Go back and try logging in again.'),
+          a('cea71013', 'We’re loading your contacts...'),
+          a('e4ff75a9', 'Something went wrong. Check your connection and try again.'),
+          a('e4f6bd9e', 'Oops, something went wrong. Please try again later.'),
           a('hc72e1fc', 'Please enter a valid email.'),
           a('fa69a1ca', 'Reveal password'),
           a('aacf5085', 'Hide password'),
@@ -4792,6 +4804,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return 'Showing results for "' + e.suggestion + '"'
           }),
           a('i1801686', 'This is an invalid search query. Please try a different one.'),
+          a('d1baa95d', 'Location Spotlight'),
           a('af9c8a3d', 'Open app'),
           a('c299a6cf', 'Thread'),
           a('i9a4ca8a', 'Tweet status page'),
@@ -5396,7 +5409,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'b74bd6c6',
             'This account is verified because it’s notable in government, news, entertainment, or another designated category.',
           ),
-          a('d834aec4', 'Newsletter'),
           a('caeab0f7', 'Start reading'),
           a('cb339f26', 'Caution: This account has been behaving in an unusual manner'),
           a(
@@ -6004,8 +6016,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('da5e3194', 'Twitter is legally required to provide this notice.'),
           a('e461d0ee', 'Get the latest'),
           a('d1386940', 'Stay informed'),
-          a('ecda5f9d', 'Misleading'),
-          a('a423473b', 'Legally Required Notice'),
+          a('ecda5f9d', 'Misleading')
+        a('a423473b', 'Legally Required Notice'),
           a('d85bc1b8', 'Zoom in or out on your image.'),
           a('f596ace8', 'Aspect ratio: original'),
           a('df031fca', 'Aspect ratio: wide'),
@@ -6013,8 +6025,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e547b368', 'Original'),
           a('f7571204', 'Wide'),
           a('e6e16811', 'Square'),
-          a('d7e50a66', 'Learn more')
-        a('a35a5b10', 'Followers you know'),
+          a('d7e50a66', 'Learn more'),
+          a('a35a5b10', 'Followers you know'),
           a('fc8cd112', 'Not followed by anyone you’re following'),
           a('gaeb997d', 'More'),
           a('f4393d0f', function (e) {
@@ -6957,9 +6969,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'bf02aba9',
+                key: 'd9f77781',
                 get: function () {
-                  return [this.props.impressions + '+ views on the Tweet']
+                  return [this.props.impressions + '+ views']
                 },
               },
               {
@@ -8249,9 +8261,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'a0b6818f',
+                key: 'b004e8bf',
                 get: function () {
-                  return ['Learn more about 3rd party app permissions in the ', '.']
+                  return ['Learn more about 3rd party app access in the ', '.']
                 },
               },
               {

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [68, 3, 6, 8, 174],
+  [68, 3, 6, 8, 175],
   {
     '+/sI': function (e, t, n) {
       'use strict'
@@ -130,7 +130,7 @@
         v = (n('JtPf'), n('XBtf')),
         y = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(204)]).then(n.bind(null, 'zxwU'))
+            return Promise.all([n.e(0), n.e(205)]).then(n.bind(null, 'zxwU'))
           },
           loaderKey: 'dividerEntryLoader',
           strategy: v.a.Critical,
@@ -141,7 +141,7 @@
         w = n('SrIh'),
         C = {
           loader: function () {
-            return n.e(240).then(n.bind(null, 'WunU'))
+            return n.e(241).then(n.bind(null, 'WunU'))
           },
           loaderKey: 'tombstonedEntryLoader',
           strategy: v.a.Critical,
@@ -4367,7 +4367,7 @@
       var r = n('zb92'),
         a = Object(r.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(186)]).then(n.bind(null, 'MzK7'))
+            return Promise.all([n.e(0), n.e(187)]).then(n.bind(null, 'MzK7'))
           },
         })
       t.a = a
@@ -5680,7 +5680,7 @@
         v = function (e) {
           return {
             loader: function () {
-              return n.e(199).then(n.bind(null, '+93b'))
+              return n.e(200).then(n.bind(null, '+93b'))
             },
             loaderKey: 'defaultCarouselTimelineLoader',
             loaderOptions: e,
@@ -5701,7 +5701,7 @@
         }),
         g = {
           loader: function () {
-            return n.e(202).then(n.bind(null, 'GCNy'))
+            return n.e(203).then(n.bind(null, 'GCNy'))
           },
           loaderKey: 'conversationGapLoader',
           strategy: f.a.Critical,
@@ -5710,7 +5710,7 @@
         w = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(211)]).then(n.bind(null, '3Rb8'))
+              return Promise.all([n.e(0), n.e(212)]).then(n.bind(null, '3Rb8'))
             },
             loaderOptions: e,
             loaderKey: 'defaultModuleFooterLoader',
@@ -5723,7 +5723,7 @@
         },
         E = {
           loader: function () {
-            return n.e(222).then(n.bind(null, 'oiEo'))
+            return n.e(223).then(n.bind(null, 'oiEo'))
           },
           loaderKey: 'defaultModuleHeaderLoader',
           strategy: f.a.Critical,
@@ -5731,7 +5731,7 @@
         T = c.e(E),
         k = {
           loader: function () {
-            return n.e(214).then(n.bind(null, 'hKgB'))
+            return n.e(215).then(n.bind(null, 'hKgB'))
           },
           loaderKey: 'defaultImpressionPlaceholderLoader',
           strategy: f.a.Critical,
@@ -5740,7 +5740,7 @@
         S = function (e) {
           return {
             loader: function () {
-              return n.e(238).then(n.bind(null, 'D9QQ'))
+              return n.e(239).then(n.bind(null, 'D9QQ'))
             },
             loaderOptions: e,
             loaderKey: 'defaultModuleShowMoreLoader',
@@ -6046,7 +6046,7 @@
         ee = G,
         te = {
           loader: function () {
-            return n.e(247).then(n.bind(null, 'VzRj'))
+            return n.e(248).then(n.bind(null, 'VzRj'))
           },
           loaderKey: 'defaultVerticalGridListLoader',
           strategy: f.a.Critical,
@@ -6133,7 +6133,7 @@
         },
         se = {
           loader: function () {
-            return n.e(248).then(n.bind(null, 'JKhl'))
+            return n.e(249).then(n.bind(null, 'JKhl'))
           },
           loaderKey: 'defaultVerticalGridRowLoader',
           strategy: f.a.Critical,
@@ -6335,7 +6335,7 @@
         c = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(355)]).then(n.bind(null, 'YMZp'))
+              return Promise.all([n.e(0), n.e(356)]).then(n.bind(null, 'YMZp'))
             },
             loaderOptions: e,
             loaderKey: 'topicCellLoader',
@@ -6345,7 +6345,7 @@
         l = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(355)]).then(n.bind(null, 'zWr2'))
+              return Promise.all([n.e(0), n.e(356)]).then(n.bind(null, 'zWr2'))
             },
             loaderOptions: e,
             loaderKey: 'topicPillLoader',
@@ -12043,7 +12043,7 @@
         Z = (n('lTEL'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         $ = Object(Z.a)({
           loader: function () {
-            return n.e(180).then(n.bind(null, 'mL9d'))
+            return n.e(181).then(n.bind(null, 'mL9d'))
           },
         }),
         ee = n('m3Bd'),
@@ -12137,7 +12137,7 @@
         ke = n('3zvM'),
         Ie = n('lMB6'),
         Se = n('iChn'),
-        xe = Object(ke.f)({
+        xe = Object(ke.e)({
           namespace: 'translationsTweets',
           fetchOneContext: 'FETCH_TWEET_TRANSLATION',
           fetchOneEndpoint: function (e) {
@@ -16122,7 +16122,7 @@
       }
       var T = {
           load: function () {
-            return n.e(220).then(n.t.bind(null, 'Ys2B', 7))
+            return n.e(221).then(n.t.bind(null, 'Ys2B', 7))
           },
         },
         k = (function (e) {
@@ -17501,7 +17501,7 @@
           SUCCESS: 'rweb/bookmarkFolders/CREATE_BOOKMARK_FOLDERS_SUCCESS',
           FAILURE: 'rweb/bookmarkFolders/CREATE_BOOKMARK_FOLDERS_FAILURE',
         }),
-        g = Object(m.f)({ namespace: 'bookmarkFolders' }),
+        g = Object(m.e)({ namespace: 'bookmarkFolders' }),
         _ = Object(f.a)(function (e) {
           return Object(l.a)(e)
         }),
@@ -17662,7 +17662,7 @@
             return Promise.resolve(r([Object(u.a)(e).removeTweets(a()({}, t, !0)), i.injectItems([e])]))
           }
         },
-        k = o()(o()(o()({}, g), w), {}, { customActionTypes: Object(m.e)(w) })
+        k = o()(o()(o()({}, g), w), {}, { customActionTypes: Object(m.d)(w) })
       t.b = p.a.register(k)
     },
     HwrL: function (e, t, n) {
@@ -18236,6 +18236,148 @@
       })
       var r = n('3XMw'),
         a = { defaultToast: { text: n.n(r).a.e639775e }, showToast: !0 }
+    },
+    IZ3v: function (e, t, n) {
+      'use strict'
+      n.d(t, 'b', function () {
+        return m
+      }),
+        n.d(t, 'c', function () {
+          return f
+        }),
+        n.d(t, 'a', function () {
+          return y
+        })
+      var r = n('K1iM'),
+        a = n.n(r),
+        i = n('yiKp'),
+        o = n.n(i),
+        s = n('ddV6'),
+        c = n.n(s),
+        l = (n('yH/f'), n('2G9S'), n('z84I'), n('M+/F'), n('hBpG'), n('7x/C'), n('+KXO'), n('uuwS')),
+        u = n.n(l),
+        d = n('tZIO'),
+        p = Object.freeze({
+          Cashtag: 'cashtag',
+          Hashtag: 'hashtag',
+          Mention: 'mention',
+          Url: 'url',
+          List: 'twitterList',
+        }),
+        h = Object.freeze({ CashtagClick: 'cashtag_click', HashtagClick: 'hashtag_click' })
+      function m(e) {
+        return e.screenName ? p.Mention : e.hashtag ? p.Hashtag : e.cashtag ? p.Cashtag : e.url ? p.Url : null
+      }
+      function f(e, t) {
+        switch (e) {
+          case p.Cashtag:
+            return 'https://twitter.com/search?q='
+              .concat(encodeURIComponent(''.concat(t)), '&src=')
+              .concat(h.CashtagClick)
+          case p.Hashtag:
+            return 'https://twitter.com/search?q='
+              .concat(encodeURIComponent(''.concat(t)), '&src=')
+              .concat(h.HashtagClick)
+          case p.Mention:
+            return 'https://twitter.com/'.concat(t)
+          case p.List:
+            return 'https://twitter.com/i/lists/'.concat(t)
+          case p.Url:
+            return t
+        }
+      }
+      var v = {
+        cashtag: function (e, t) {
+          return {
+            color: 'link',
+            link: f(p.Cashtag, '$'.concat(t.text)),
+            ref: t,
+            text: '$'.concat(t.text),
+            type: p.Cashtag,
+          }
+        },
+        hashtag: function (e, t) {
+          return {
+            color: 'link',
+            link: f(p.Hashtag, '#'.concat(t.text)),
+            ref: t,
+            text: '#'.concat(t.text),
+            type: p.Hashtag,
+          }
+        },
+        mention: function (e, t) {
+          return {
+            color: 'link',
+            link: f(p.Mention, t.screenName),
+            ref: t,
+            text: '@'.concat(t.screenName),
+            type: p.Mention,
+          }
+        },
+        text: function (e, t) {
+          return {
+            ref: {},
+            text: d.a.replaceCarriageReturns(e),
+            type: 'text',
+            weight: 'Strong' === t ? 'bold' : void 0,
+          }
+        },
+        twitterList: function (e, t) {
+          return { color: 'normal', link: f(p.List, t.id), ref: t, text: e, type: p.List, weight: 'bold' }
+        },
+        url: function (e, t) {
+          return { color: 'link', link: f(p.Url, t.url), ref: t, text: e, type: p.Url }
+        },
+        user: function (e, t) {
+          return { ref: t, text: e, type: 'user', weight: 'bold' }
+        },
+      }
+      function y(e, t) {
+        var n = []
+        if (t.length) {
+          var r,
+            i = (function (e, t) {
+              return e.map(function (e) {
+                var n = u()(t, e.fromIndex, e.toIndex),
+                  r = c()(n, 2),
+                  a = r[0],
+                  i = r[1]
+                return o()(o()({}, e), {}, { fromIndex: a, toIndex: i })
+              })
+            })(t, e),
+            s = 0,
+            l = a()(i)
+          try {
+            var d = function () {
+              var t = r.value,
+                a = t.format,
+                i = t.fromIndex,
+                o = t.ref,
+                c = t.toIndex
+              c !== s && i > s && n.push(v.text(e.slice(s, i)))
+              var l = e.slice(i, c)
+              if (o) {
+                var u = Object.keys(o).find(function (e) {
+                  return null != o[e]
+                })
+                if (u) {
+                  var d = v[u]
+                  d ? n.push(d(l, o[u])) : n.push(v.text(l))
+                }
+              } else n.push(v.text(l, a))
+              s = c
+            }
+            for (l.s(); !(r = l.n()).done; ) d()
+          } catch (h) {
+            l.e(h)
+          } finally {
+            l.f()
+          }
+          var p = e.length
+          s < p && n.push(v.text(e.slice(s)))
+        } else n.push(v.text(e))
+        return n
+      }
     },
     Iok7: function (e, t, n) {
       'use strict'
@@ -18964,7 +19106,7 @@
         o = n('RuTB'),
         s = Object(i.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(185)]).then(n.bind(null, 'VeNJ'))
+            return Promise.all([n.e(0), n.e(186)]).then(n.bind(null, 'VeNJ'))
           },
           renderPlaceholder: function (e, t) {
             return a.a.createElement(o.a, { hasError: e, onRetry: t })
@@ -19202,7 +19344,7 @@
         c = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(244)]).then(n.bind(null, 'lX7a'))
+              return Promise.all([n.e(0), n.e(245)]).then(n.bind(null, 'lX7a'))
             },
             loaderKey: 'defaultUserLoader',
             loaderOptions: e,
@@ -20393,7 +20535,7 @@
         i = n('zb92'),
         o = Object(i.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(5), n.e(16), n.e(22), n.e(193)]).then(n.bind(null, 'wHP+'))
+            return Promise.all([n.e(0), n.e(5), n.e(16), n.e(22), n.e(194)]).then(n.bind(null, 'wHP+'))
           },
           renderPlaceholder: function () {
             return a.a.createElement('div', null)
@@ -20853,6 +20995,15 @@
                 request: i.Typeahead.fetchCommunityInviteUsers,
               })(l, function (e) {
                 var t = ((null == e ? void 0 : e.invite_action_results) || {}).entities
+                return t ? [Object(L.c)(t)] : void 0
+              })
+            }
+            if (c.includes(N.a.CommunityMembers) && s) {
+              return Object(M.b)(n, {
+                params: { communityId: s, prefix: e.q },
+                request: i.Typeahead.fetchCommunityMembers,
+              })(l, function (e) {
+                var t = ((null == e ? void 0 : e.user_community_relationships) || {}).entities
                 return t ? [Object(L.c)(t)] : void 0
               })
             }
@@ -22086,7 +22237,7 @@
         a = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(221)]).then(n.bind(null, 'J23q'))
+              return Promise.all([n.e(0), n.e(222)]).then(n.bind(null, 'J23q'))
             },
             loaderKey: 'defaultMessageLoader',
             loaderOptions: e,
@@ -22104,14 +22255,14 @@
         c = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf')),
         l = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(212)]).then(n.bind(null, 'Xl5C'))
+            return Promise.all([n.e(0), n.e(213)]).then(n.bind(null, 'Xl5C'))
           },
           loaderKey: 'defaultGapLoader',
           strategy: c.a.Critical,
         },
         u = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(212)]).then(n.bind(null, 'ex5I'))
+            return Promise.all([n.e(0), n.e(213)]).then(n.bind(null, 'ex5I'))
           },
           loaderKey: 'showMoreGapLoader',
           strategy: c.a.Critical,
@@ -22119,7 +22270,7 @@
         d = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(212)]).then(n.bind(null, 'zXWy'))
+              return Promise.all([n.e(0), n.e(213)]).then(n.bind(null, 'zXWy'))
             },
             loaderKey: 'showMoreThreadsPromptGapLoader',
             loaderOptions: e,
@@ -22154,7 +22305,7 @@
               ((r = { onLowQualityCursorShown: m, transparentCursorsEnabled: p, withRuxInjections: !!s }),
               {
                 loader: function () {
-                  return Promise.all([n.e(0), n.e(212)]).then(n.bind(null, 'aqRH'))
+                  return Promise.all([n.e(0), n.e(213)]).then(n.bind(null, 'aqRH'))
                 },
                 loaderKey: 'showMoreThreadsGapLoader',
                 loaderOptions: r,
@@ -22325,7 +22476,7 @@
         h = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('XBtf')),
         m = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(350)]).then(n.bind(null, 'jv0Q'))
+            return Promise.all([n.e(0), n.e(351)]).then(n.bind(null, 'jv0Q'))
           },
           loaderKey: 'defaultNewEntriesGapLoader',
           strategy: h.a.Critical,
@@ -22340,14 +22491,14 @@
           })),
         b = {
           loader: function () {
-            return n.e(352).then(n.bind(null, 'YIsX'))
+            return n.e(353).then(n.bind(null, 'YIsX'))
           },
           loaderKey: 'onboardingLikesStartPromptLoader',
           strategy: h.a.Critical,
         },
         g = {
           loader: function () {
-            return n.e(352).then(n.bind(null, '3ukl'))
+            return n.e(353).then(n.bind(null, '3ukl'))
           },
           loaderKey: 'relevancePromptLoader',
           strategy: h.a.Critical,
@@ -22363,7 +22514,7 @@
         E = n('67iF'),
         T = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(241)]).then(n.bind(null, 'VSZh'))
+            return Promise.all([n.e(0), n.e(242)]).then(n.bind(null, 'VSZh'))
           },
           loaderKey: 'topicFollowPromptDefaultLoader',
           strategy: h.a.Critical,
@@ -22377,7 +22528,7 @@
         P = n('Ka9G'),
         L = {
           loader: function () {
-            return n.e(246).then(n.bind(null, 'bXO0'))
+            return n.e(247).then(n.bind(null, 'bXO0'))
           },
           loaderKey: 'topicTileLoader',
           strategy: h.a.Critical,
@@ -26521,7 +26672,7 @@
         },
         M = n('3zvM'),
         A = n('lMB6'),
-        D = Object(M.f)({ namespace: 'commerceItems' }),
+        D = Object(M.e)({ namespace: 'commerceItems' }),
         F = o()({}, D),
         B = A.a.register(F),
         j = n('rxPX'),
@@ -29883,7 +30034,7 @@
         c = n.n(s),
         l = (n('7x/C'), n('JtPf'), n('KqXw'), n('3uku'), n('lMB6')),
         u = n('3zvM'),
-        d = Object(u.f)({ namespace: 'topics' }),
+        d = Object(u.e)({ namespace: 'topics' }),
         p = Object(u.b)(d, {
           context: 'FETCH_TOPIC',
           endpoint: function (e) {
@@ -29969,7 +30120,7 @@
             context: 'UNDO_NOT_INTERESTED_TOPIC',
           }),
         },
-        v = o()(o()(o()(o()(o()({}, d), p), h), f), {}, { customActionTypes: Object(u.e)(f) })
+        v = o()(o()(o()(o()(o()({}, d), p), h), f), {}, { customActionTypes: Object(u.d)(f) })
       t.a = l.a.register(v)
     },
     aA19: function (e, t, n) {
@@ -34336,18 +34487,18 @@
     },
     dCqJ: function (e, t, n) {
       'use strict'
-      var r = n('VrFO'),
+      var r = n('ERkP'),
         a = n.n(r),
-        i = n('Y9Ll'),
-        o = n.n(i),
-        s = n('5Yy7'),
-        c = n.n(s),
-        l = n('2VqO'),
-        u = n.n(l),
-        d = n('ERkP'),
-        p = n.n(d),
-        h = n('cm6r'),
-        m = n('1Pcy'),
+        i = n('cm6r'),
+        o = n('VrFO'),
+        s = n.n(o),
+        c = n('Y9Ll'),
+        l = n.n(c),
+        u = n('1Pcy'),
+        d = n.n(u),
+        p = n('5Yy7'),
+        h = n.n(p),
+        m = n('2VqO'),
         f = n.n(m),
         v = n('KEM+'),
         y = n.n(v),
@@ -34360,72 +34511,72 @@
         T = 'NO_SPONSORSHIP',
         k = 'ISSUE',
         I = (function (e) {
-          c()(n, e)
-          var t = u()(n)
+          h()(n, e)
+          var t = f()(n)
           function n() {
             var e
-            a()(this, n)
+            s()(this, n)
             for (var r = arguments.length, i = new Array(r), o = 0; o < r; o++) i[o] = arguments[o]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              y()(f()(e), '_renderDisclaimerDetails', function () {
+              y()(d()(e), '_renderDisclaimerDetails', function () {
                 var t = e.props,
                   n = t.onPoliticalSponsorWebsiteClick,
                   r = t.promotedContent
                 if (!r.adMetadataContainer) return null
-                var a = r.adMetadataContainer,
-                  i = a.disclaimerType,
-                  o = a.sponsorshipCandidate,
-                  s = a.sponsorshipOrganization,
-                  c = a.sponsorshipOrganizationWebsite,
-                  l = a.sponsorshipType,
-                  u =
-                    c && i !== k
-                      ? p.a.createElement(b.b, { link: c, onClick: n })
-                      : p.a.createElement(b.b, { color: 'gray700', size: 'subtext2' })
-                if (!s) return null
-                var d = p.a.createElement(
+                var i = r.adMetadataContainer,
+                  o = i.disclaimerType,
+                  s = i.sponsorshipCandidate,
+                  c = i.sponsorshipOrganization,
+                  l = i.sponsorshipOrganizationWebsite,
+                  u = i.sponsorshipType,
+                  d =
+                    l && o !== k
+                      ? a.a.createElement(b.b, { link: l, onClick: n })
+                      : a.a.createElement(b.b, { color: 'gray700', size: 'subtext2' })
+                if (!c) return null
+                var p = a.a.createElement(
                     w.a.I18NFormatMessage,
                     { $i18n: 'e1e348dc' },
-                    p.a.cloneElement(u, null, w.a.b1e5bc63({ sponsorshipOrganization: s })),
+                    a.a.cloneElement(d, null, w.a.b1e5bc63({ sponsorshipOrganization: c })),
                   ),
-                  h = p.a.createElement(
+                  h = a.a.createElement(
                     w.a.I18NFormatMessage,
                     { $i18n: 'c7dea0d0' },
-                    p.a.cloneElement(u, null, w.a.a84fcff2({ sponsorshipOrganization: s })),
+                    a.a.cloneElement(d, null, w.a.a84fcff2({ sponsorshipOrganization: c })),
                   ),
-                  m = o
-                    ? p.a.createElement(
+                  m = s
+                    ? a.a.createElement(
                         w.a.I18NFormatMessage,
-                        { $i18n: 'b5c2371a', sponsorshipCandidate: o },
-                        p.a.cloneElement(u, null, w.a.fd985325({ sponsorshipOrganization: s })),
+                        { $i18n: 'b5c2371a', sponsorshipCandidate: s },
+                        a.a.cloneElement(d, null, w.a.fd985325({ sponsorshipOrganization: c })),
                       )
                     : null
-                return p.a.createElement(
+                return a.a.createElement(
                   b.b,
                   { color: 'gray700', size: 'subtext2' },
-                  i === k ? d : l === T ? h : l === E ? m : d,
+                  o === k ? p : u === T ? h : u === E ? m : p,
                 )
               }),
-              y()(f()(e), '_renderLearnMoreLink', function () {
+              y()(d()(e), '_renderLearnMoreLink', function () {
                 var t = e.props,
                   n = t.onPromotedDisclaimerLearnMoreClick,
                   r = t.promotedContent,
-                  a = t.tweet,
-                  i = (r.adMetadataContainer || {}).disclaimerType === k ? 'issue_ad' : 'political_ad',
-                  o = 'http://ads.twitter.com/transparency/ads/'.concat(a.user.screen_name, '/tweet/').concat(a.id_str)
-                return p.a.createElement(b.b, { link: o, onClick: n(i), size: 'subtext2', style: S.learnMore }, C)
+                  i = t.tweet,
+                  o = (r.adMetadataContainer || {}).disclaimerType === k ? 'issue_ad' : 'political_ad',
+                  s = 'http://ads.twitter.com/transparency/ads/'.concat(i.user.screen_name, '/tweet/').concat(i.id_str)
+                return a.a.createElement(b.b, { link: s, onClick: n(o), size: 'subtext2', style: S.learnMore }, C)
               }),
               e
             )
           }
           return (
-            o()(n, [
+            l()(n, [
               {
                 key: 'render',
                 value: function () {
-                  return p.a.createElement(
-                    p.a.Fragment,
+                  return a.a.createElement(
+                    a.a.Fragment,
                     null,
                     this._renderDisclaimerDetails(),
                     this._renderLearnMoreLink(),
@@ -34435,77 +34586,60 @@
             ]),
             n
           )
-        })(p.a.Component),
+        })(a.a.Component),
         S = g.a.create(function (e) {
           return { learnMore: { alignSelf: 'flex-start' } }
         }),
         x = n('e5HP'),
         O = n('Z6aJ'),
-        R = n('MWbm'),
-        P = (function (e) {
-          c()(n, e)
-          var t = u()(n)
-          function n() {
-            return a()(this, n), t.apply(this, arguments)
-          }
-          return (
-            o()(n, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.onPoliticalSponsorWebsiteClick,
-                    n = e.onPromotedDisclaimerLearnMoreClick,
-                    r = e.onPromotedIndicatorClick,
-                    a = e.promotedContent,
-                    i = e.promotedContentAdvertiser,
-                    o = e.style,
-                    s = e.testID,
-                    c = e.tweet,
-                    l = e.withCircleIcon,
-                    u = O.a.isPromoted(a),
-                    d =
-                      !!a &&
-                      ((a.adMetadataContainer &&
-                        ('POLITICAL' === a.adMetadataContainer.disclaimerType ||
-                          'ISSUE' === a.adMetadataContainer.disclaimerType)) ||
-                        'political' === O.a.getDisclosureType(a) ||
-                        'issue' === O.a.getDisclosureType(a))
-                  return u
-                    ? p.a.createElement(
-                        R.a,
-                        { style: o, testID: s },
-                        i && a
-                          ? p.a.createElement(
-                              h.a,
-                              {
-                                interactiveStyles: null,
-                                link: {
-                                  pathname: 'https://twitter.com/'.concat(i.screen_name),
-                                  state: { promotedTweetState: a },
-                                },
-                                onPress: r,
-                              },
-                              p.a.createElement(x.a, { promotedContent: a, withCircleIcon: l }),
-                            )
-                          : !!a && p.a.createElement(x.a, { promotedContent: a }),
-                        d && a
-                          ? p.a.createElement(I, {
-                              onPoliticalSponsorWebsiteClick: t,
-                              onPromotedDisclaimerLearnMoreClick: n,
-                              promotedContent: a,
-                              tweet: c,
-                            })
-                          : null,
-                      )
-                    : null
-                },
-              },
-            ]),
-            n
-          )
-        })(p.a.PureComponent)
-      t.a = P
+        R = n('MWbm')
+      t.a = function (e) {
+        var t = e.onPoliticalSponsorWebsiteClick,
+          n = e.onPromotedDisclaimerLearnMoreClick,
+          r = e.onPromotedIndicatorClick,
+          o = e.promotedContent,
+          s = e.promotedContentAdvertiser,
+          c = e.style,
+          l = e.testID,
+          u = e.tweet,
+          d = e.withCircleIcon,
+          p = O.a.isPromoted(o),
+          h =
+            !!o &&
+            ((o.adMetadataContainer &&
+              ('POLITICAL' === o.adMetadataContainer.disclaimerType ||
+                'ISSUE' === o.adMetadataContainer.disclaimerType)) ||
+              'political' === O.a.getDisclosureType(o) ||
+              'issue' === O.a.getDisclosureType(o))
+        return p
+          ? a.a.createElement(
+              R.a,
+              { style: c, testID: l },
+              s && o
+                ? a.a.createElement(
+                    i.a,
+                    {
+                      interactiveStyles: null,
+                      link: {
+                        pathname: 'https://twitter.com/'.concat(s.screen_name),
+                        state: { promotedTweetState: o },
+                      },
+                      onPress: r,
+                    },
+                    a.a.createElement(x.a, { promotedContent: o, withCircleIcon: d }),
+                  )
+                : !!o && a.a.createElement(x.a, { promotedContent: o }),
+              h && o
+                ? a.a.createElement(I, {
+                    onPoliticalSponsorWebsiteClick: t,
+                    onPromotedDisclaimerLearnMoreClick: n,
+                    promotedContent: o,
+                    tweet: u,
+                  })
+                : null,
+            )
+          : null
+      }
     },
     dFWS: function (e, t, n) {
       'use strict'
@@ -38738,7 +38872,7 @@
         m = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(224)]).then(n.bind(null, 'Pb8P'))
+              return Promise.all([n.e(0), n.e(225)]).then(n.bind(null, 'Pb8P'))
             },
             loaderOptions: e,
             loaderKey: 'momentSummaryLoader',
@@ -39067,7 +39201,7 @@
         c = n('RuTB'),
         l = Object(s.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(165)]).then(n.bind(null, 'FwSR'))
+            return Promise.all([n.e(0), n.e(166)]).then(n.bind(null, 'FwSR'))
           },
           renderPlaceholder: function (e, t) {
             return o.a.createElement(c.a, { hasError: e, onRetry: t })
@@ -39119,7 +39253,7 @@
       var r = n('zb92')
       t.a = Object(r.a)({
         loader: function () {
-          return Promise.all([n.e(0), n.e(7), n.e(217)]).then(n.bind(null, '57t6'))
+          return Promise.all([n.e(0), n.e(7), n.e(218)]).then(n.bind(null, '57t6'))
         },
       })
     },
@@ -39525,26 +39659,27 @@
                         value: e.value,
                       },
                       z = { maxRows: g || E, minRows: E, useCacheForDOMMeasurements: U },
-                      W = { enterkeyhint: A, type: H },
-                      K = [q.alignLeft],
-                      G = w ? z : W,
-                      Y = w ? [] : K,
-                      X = Object.assign(
+                      W = [q.alignLeft],
+                      K = { enterkeyhint: A, type: H },
+                      G = [q.alignLeft],
+                      Y = w ? z : K,
+                      X = w ? W : G,
+                      Q = Object.assign(
                         {},
                         o()(
-                          o()(o()({}, V), G),
+                          o()(o()({}, V), Y),
                           {},
                           {
                             dir: 'auto',
                             onChange: k,
                             onPaste: this._onPaste,
                             ref: this._setTextInputRef,
-                            style: [q.root, F, { placeholderTextColor: M }].concat(a()(Y)),
+                            style: [q.root, F, { placeholderTextColor: M }].concat(a()(X)),
                           },
                         ),
                       ),
-                      Q = w ? j : 'input'
-                    return Object(N.a)(Q, X)
+                      J = w ? j : 'input'
+                    return Object(N.a)(J, Q)
                   },
                 },
                 {
@@ -39766,7 +39901,7 @@
         c = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(17), n.e(210)]).then(n.bind(null, 'uuEz'))
+              return Promise.all([n.e(0), n.e(17), n.e(211)]).then(n.bind(null, 'uuEz'))
             },
             loaderOptions: e,
             loaderKey: 'eventSummaryDefaultLoader',
@@ -40608,7 +40743,7 @@
         L = n('wqZ5'),
         M = d.a('lists', 'UPLOAD_MEDIA'),
         A = d.a('lists', 'UPDATE_MEDIA'),
-        D = Object(R.f)({ namespace: 'lists' }),
+        D = Object(R.e)({ namespace: 'lists' }),
         F = Object(R.b)(D, {
           context: 'FETCH_LIST',
           endpoint: function (e) {
@@ -43195,7 +43330,7 @@
         T = n('RuTB'),
         k = Object(E.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(5), n.e(178)])
+            return Promise.all([n.e(0), n.e(5), n.e(179)])
               .then(n.bind(null, 'EOJ2'))
               .then(function (e) {
                 return { default: e.__DANGEROUS_IMPORT_VIDEOPLAYER__ }
@@ -45667,7 +45802,7 @@
         p = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(17), n.e(23), n.e(219)]).then(n.bind(null, '1Ws7'))
+              return Promise.all([n.e(0), n.e(17), n.e(23), n.e(220)]).then(n.bind(null, '1Ws7'))
             },
             loaderKey: 'listLoader',
             loaderOptions: e,
@@ -45676,7 +45811,7 @@
         },
         h = {
           loader: function () {
-            return Promise.all([n.e(0), n.e(17), n.e(23), n.e(219)]).then(n.bind(null, 'O4YN'))
+            return Promise.all([n.e(0), n.e(17), n.e(23), n.e(220)]).then(n.bind(null, 'O4YN'))
           },
           loaderKey: 'tileLoader',
           strategy: d.a.Critical,
@@ -46544,163 +46679,51 @@
     tLTi: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return b
+        return s
       })
       n('z84I'), n('hBvt'), n('2G9S')
       var r = n('ERkP'),
         a = n.n(r),
         i = n('t62R'),
-        o = n('K1iM'),
-        s = n.n(o),
-        c = n('yiKp'),
-        l = n.n(c),
-        u = n('ddV6'),
-        d = n.n(u),
-        p = (n('yH/f'), n('M+/F'), n('hBpG'), n('7x/C'), n('+KXO'), n('uuwS')),
-        h = n.n(p),
-        m = n('tZIO'),
-        f = Object.freeze({ CashtagClick: 'cashtag_click', HashtagClick: 'hashtag_click' }),
-        v = {
-          cashtag: function (e, t) {
-            return {
-              color: 'link',
-              link: 'https://twitter.com/search?q='
-                .concat(encodeURIComponent('$'.concat(t.text)), '&src=')
-                .concat(f.CashtagClick),
-              ref: t,
-              text: '$'.concat(t.text),
-              type: 'cashtag',
-            }
-          },
-          hashtag: function (e, t) {
-            return {
-              color: 'link',
-              link: 'https://twitter.com/search?q='
-                .concat(encodeURIComponent('#'.concat(t.text)), '&src=')
-                .concat(f.HashtagClick),
-              ref: t,
-              text: '#'.concat(t.text),
-              type: 'hashtag',
-            }
-          },
-          mention: function (e, t) {
-            return {
-              color: 'link',
-              link: 'https://twitter.com/'.concat(t.screenName),
-              ref: t,
-              text: '@'.concat(t.screenName),
-              type: 'mention',
-            }
-          },
-          text: function (e, t) {
-            return {
-              ref: {},
-              text: m.a.replaceCarriageReturns(e),
-              type: 'text',
-              weight: 'Strong' === t ? 'bold' : void 0,
-            }
-          },
-          twitterList: function (e, t) {
-            return {
-              color: 'normal',
-              link: 'https://twitter.com/i/lists/'.concat(t.id),
-              ref: t,
-              text: e,
-              type: 'twitterList',
-              weight: 'bold',
-            }
-          },
-          url: function (e, t) {
-            return { color: 'link', link: t.url, ref: t, text: e, type: 'url' }
-          },
-          user: function (e, t) {
-            return { ref: t, text: e, type: 'user', weight: 'bold' }
-          },
-        }
-      function y(e, t) {
-        var n = []
-        if (t.length) {
-          var r,
-            a = (function (e, t) {
-              return e.map(function (e) {
-                var n = h()(t, e.fromIndex, e.toIndex),
-                  r = d()(n, 2),
-                  a = r[0],
-                  i = r[1]
-                return l()(l()({}, e), {}, { fromIndex: a, toIndex: i })
-              })
-            })(t, e),
-            i = 0,
-            o = s()(a)
-          try {
-            var c = function () {
-              var t = r.value,
-                a = t.format,
-                o = t.fromIndex,
-                s = t.ref,
-                c = t.toIndex
-              c !== i && o > i && n.push(v.text(e.slice(i, o)))
-              var l = e.slice(o, c)
-              if (s) {
-                var u = Object.keys(s).find(function (e) {
-                  return null != s[e]
-                })
-                if (u) {
-                  var d = v[u]
-                  d ? n.push(d(l, s[u])) : n.push(v.text(l))
-                }
-              } else n.push(v.text(l, a))
-              i = c
-            }
-            for (o.s(); !(r = o.n()).done; ) c()
-          } catch (p) {
-            o.e(p)
-          } finally {
-            o.f()
-          }
-          var u = e.length
-          i < u && n.push(v.text(e.slice(i)))
-        } else n.push(v.text(e))
-        return n
-      }
-      function b(e) {
+        o = n('IZ3v')
+      function s(e) {
         var t = e.accessibilityRole,
           n = e.align,
           r = e.color,
-          o = e.dir,
-          s = e.entities,
-          c = e.nativeID,
-          l = e.onEntityClick,
-          u = e.renderFragment,
-          d = void 0 === u ? {} : u,
-          p = e.size,
-          h = e.style,
-          m = e.text,
-          f = e.weight,
-          v = e.withHashflags,
-          b = y(m, s)
+          s = e.dir,
+          c = e.entities,
+          l = e.nativeID,
+          u = e.onEntityClick,
+          d = e.renderFragment,
+          p = void 0 === d ? {} : d,
+          h = e.size,
+          m = e.style,
+          f = e.text,
+          v = e.weight,
+          y = e.withHashflags,
+          b = Object(o.a)(f, c)
         return a.a.createElement(
           i.b,
           {
             accessibilityRole: t,
             align: n,
             color: r,
-            dir: o,
-            nativeID: c,
-            size: p,
-            style: h,
-            weight: f,
-            withHashflags: v,
+            dir: s,
+            nativeID: l,
+            size: h,
+            style: m,
+            weight: v,
+            withHashflags: y,
           },
           b.map(function (e, t) {
-            var n = d[e.type],
+            var n = p[e.type],
               r = {
                 children: e.text,
                 color: e.color,
                 link: e.link,
-                onClick: e.link ? l : void 0,
+                onClick: e.link ? u : void 0,
                 weight: e.weight,
-                withHashflags: v,
+                withHashflags: y,
               }
             return a.a.createElement(
               a.a.Fragment,
@@ -46710,7 +46733,7 @@
           }),
         )
       }
-      ;(b.internal_parseRichTextEntities = y), (b.TextFragment = i.b)
+      ;(s.internal_parseRichTextEntities = o.a), (s.TextFragment = i.b)
     },
     tevE: function (e, t, n) {
       'use strict'
@@ -46785,7 +46808,7 @@
         a = function (e) {
           return {
             loader: function () {
-              return Promise.all([n.e(0), n.e(348)]).then(n.bind(null, 'NO+D'))
+              return Promise.all([n.e(0), n.e(349)]).then(n.bind(null, 'NO+D'))
             },
             loaderOptions: e,
             loaderKey: 'inlineTombstoneLoader',
@@ -46794,14 +46817,14 @@
         },
         i = {
           loader: function () {
-            return n.e(357).then(n.bind(null, '1Tet'))
+            return n.e(358).then(n.bind(null, '1Tet'))
           },
           loaderKey: 'tweetUnavailableTombstoneLoader',
           strategy: r.a.Critical,
         },
         o = {
           loader: function () {
-            return n.e(296).then(n.bind(null, '08qV'))
+            return n.e(297).then(n.bind(null, '08qV'))
           },
           loaderKey: 'disconnectedRepliesTombstoneLoader',
           strategy: r.a.Critical,
@@ -50971,7 +50994,7 @@
         be = n('v6aA'),
         ge = n('E0cF'),
         _e = n('OIC0'),
-        we = n('qqET'),
+        we = n('+pKb'),
         Ce = n('/Ikv'),
         Ee = n('Z6aJ'),
         Te = n('lHOd'),
@@ -52705,7 +52728,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return n.e(223).then(n.bind(null, 'tFiq'))
+              return n.e(224).then(n.bind(null, 'tFiq'))
             },
             loaderKey: 'momentAnnoationLoader',
             strategy: n('XBtf').a.Critical,

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [215],
+  [216],
   {
     '64vW': function (e, t, n) {
       'use strict'
@@ -83,12 +83,12 @@
         V = function (e) {
           e.stopPropagation()
         },
-        U = function (e) {
+        j = function (e) {
           var t = e.children,
             n = e.testID
           return I.a.createElement(D.a, { onClick: V, style: x.a.absoluteFill, testID: n }, t)
         },
-        j = n('epkG'),
+        U = n('epkG'),
         N = n('mN6z'),
         z = (n('2G9S'), n('gZV8')),
         q = n('ylrv'),
@@ -151,7 +151,7 @@
         })(),
         G = n('vF3p'),
         W = n('S4UJ'),
-        J = (function (e) {
+        X = (function (e) {
           m()(n, e)
           var t = f()(n)
           function n() {
@@ -244,8 +244,8 @@
             n
           )
         })(I.a.Component)
-      P()(J, 'defaultProps', { obstructionDetection: G.a })
-      var X = Object(W.a)(J),
+      P()(X, 'defaultProps', { obstructionDetection: G.a })
+      var J = Object(W.a)(X),
         Y = n('efbI'),
         K = n('mf9H'),
         Z = n('zHh/'),
@@ -257,7 +257,7 @@
         re = n('HT/6'),
         ae = n('v6aA'),
         ie = n('iOGT'),
-        oe = new j.a({}),
+        oe = new U.a({}),
         le = (function (e) {
           m()(n, e)
           var t = f()(n)
@@ -552,7 +552,7 @@
                     ne.a,
                     { ratio: e, style: se.aspectRatio },
                     I.a.createElement(
-                      X,
+                      J,
                       { onChange: this._handlePlacementChange, ref: this._setPlacementAPI, style: x.a.absoluteFill },
                       this._renderPlayer(),
                     ),
@@ -601,7 +601,7 @@
                         )) ||
                       [],
                   }
-                  return I.a.createElement(U, { testID: Q }, this._renderHorizonPlayer(d))
+                  return I.a.createElement(j, { testID: Q }, this._renderHorizonPlayer(d))
                 },
               },
               {
@@ -635,7 +635,7 @@
         ce = n('fs1G'),
         ue = n('64vW'),
         pe = n('gOg7'),
-        de = n('4oeU'),
+        de = n('r1tX'),
         ye = ['createLocalApiErrorHandler', 'getTwitterAuthedHttpClient', 'playbackPriority', 'tweetAdProvider'],
         _e = (function (e) {
           m()(n, e)

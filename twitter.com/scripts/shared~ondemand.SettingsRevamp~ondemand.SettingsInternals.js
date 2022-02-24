@@ -55,9 +55,9 @@
         b = n('KEM+'),
         g = n.n(b),
         E = n('97Jx'),
-        y = n.n(E),
-        S = (n('1t7P'), n('jQ/y'), n('ho0z'), n('2G9S'), n('hBpG'), n('7x/C'), n('ERkP')),
-        C = n.n(S),
+        S = n.n(E),
+        y = (n('1t7P'), n('jQ/y'), n('ho0z'), n('2G9S'), n('hBpG'), n('7x/C'), n('ERkP')),
+        C = n.n(y),
         _ = n('6rlp'),
         k = n('zh9S'),
         I = n('G6rE'),
@@ -119,9 +119,9 @@
         G = n('TnY3'),
         q = n('hxu0'),
         J = n('v6aA'),
-        Y = n('7JQg'),
-        W = n('nBUg'),
-        X = n('IMA+'),
+        W = n('7JQg'),
+        X = n('nBUg'),
+        Y = n('IMA+'),
         Q = n('cFuS'),
         Z = [
           'avatarDecoration',
@@ -157,7 +157,7 @@
           return t && t.profile_image_url_https
             ? C.a.createElement(
                 oe,
-                y()({}, e, {
+                S()({}, e, {
                   avatarUri: t.profile_image_url_https,
                   description: t.description,
                   entities: t.entities,
@@ -331,7 +331,7 @@
                     s = o()(t, Z)
                   return this._shouldRender()
                     ? C.a.createElement(
-                        W.b.Provider,
+                        X.b.Provider,
                         {
                           value: {
                             socialContextRefreshEnabled: function () {
@@ -342,8 +342,8 @@
                           },
                         },
                         C.a.createElement(
-                          X.a,
-                          y()({}, s, {
+                          Y.a,
+                          S()({}, s, {
                             avatarDecoration: n,
                             bottomControl: this._renderBottomControl(),
                             decoration: this._renderDecoration(),
@@ -489,7 +489,7 @@
           return { followButton: { marginLeft: e.spaces.space12 } }
         }),
         ie = Object(G.a)(Object(q.a)(R($)))
-      t.b = Object(Y.a)({ element: 'user' })(ie)
+      t.b = Object(W.a)({ element: 'user' })(ie)
     },
     EPsT: function (e, t, n) {
       'use strict'
@@ -627,10 +627,10 @@
         },
         E = function () {
           return function (e, t) {
-            return t()[h].fetchStatus === s.a.LOADED ? Promise.resolve() : e(y())
+            return t()[h].fetchStatus === s.a.LOADED ? Promise.resolve() : e(S())
           }
         },
-        y = function (e) {
+        S = function (e) {
           return function (t, n, r) {
             var o = r.api
             return c.b(t, { params: e, meta: { lang: Object(d.o)(n()) }, request: o.FeatureSwitch.fetchLanguages })({
@@ -642,46 +642,22 @@
     },
     FR63: function (e, t, n) {
       'use strict'
-      var r = n('VrFO'),
+      var r = n('ERkP'),
         o = n.n(r),
-        a = n('Y9Ll'),
-        i = n.n(a),
-        c = n('5Yy7'),
-        s = n.n(c),
-        l = n('2VqO'),
-        u = n.n(l),
-        d = n('ERkP'),
-        h = n.n(d),
-        p = n('rHpw'),
-        m = n('MWbm'),
-        f = (function (e) {
-          s()(n, e)
-          var t = u()(n)
-          function n() {
-            return o()(this, n), t.apply(this, arguments)
-          }
-          return (
-            i()(n, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props.children
-                  return h.a.createElement(m.a, { style: v.root }, e)
-                },
-              },
-            ]),
-            n
-          )
-        })(h.a.PureComponent),
-        v = p.a.create(function (e) {
-          return {
-            root: {
-              paddingHorizontal: e.componentDimensions.gutterHorizontal,
-              paddingVertical: e.componentDimensions.gutterVertical,
-            },
-          }
-        })
-      t.a = f
+        a = n('rHpw'),
+        i = n('MWbm')
+      var c = a.a.create(function (e) {
+        return {
+          root: {
+            paddingHorizontal: e.componentDimensions.gutterHorizontal,
+            paddingVertical: e.componentDimensions.gutterVertical,
+          },
+        }
+      })
+      t.a = function (e) {
+        var t = e.children
+        return o.a.createElement(i.a, { style: c.root }, t)
+      }
     },
     OySi: function (e, t, n) {
       'use strict'
@@ -771,97 +747,97 @@
                 (function (e) {
                   switch (e) {
                     case 'ar':
-                      return n.e(250).then(n.t.bind(null, 'heBS', 3))
+                      return n.e(251).then(n.t.bind(null, 'heBS', 3))
                     case 'bg':
-                      return n.e(251).then(n.t.bind(null, '9kpF', 3))
+                      return n.e(252).then(n.t.bind(null, '9kpF', 3))
                     case 'bn':
-                      return n.e(252).then(n.t.bind(null, 'GG9y', 3))
+                      return n.e(253).then(n.t.bind(null, 'GG9y', 3))
                     case 'ca':
-                      return n.e(253).then(n.t.bind(null, 'icrD', 3))
+                      return n.e(254).then(n.t.bind(null, 'icrD', 3))
                     case 'cs':
-                      return n.e(254).then(n.t.bind(null, 'rxOR', 3))
+                      return n.e(255).then(n.t.bind(null, 'rxOR', 3))
                     case 'da':
-                      return n.e(255).then(n.t.bind(null, '6Nxr', 3))
+                      return n.e(256).then(n.t.bind(null, '6Nxr', 3))
                     case 'de':
-                      return n.e(256).then(n.t.bind(null, 'zSOo', 3))
+                      return n.e(257).then(n.t.bind(null, 'zSOo', 3))
                     case 'el':
-                      return n.e(257).then(n.t.bind(null, 'MOmn', 3))
+                      return n.e(258).then(n.t.bind(null, 'MOmn', 3))
                     case 'en-GB':
-                      return n.e(259).then(n.t.bind(null, 'vzeG', 3))
+                      return n.e(260).then(n.t.bind(null, 'vzeG', 3))
                     case 'en':
-                      return n.e(258).then(n.t.bind(null, 'WqZ6', 3))
+                      return n.e(259).then(n.t.bind(null, 'WqZ6', 3))
                     case 'es':
-                      return n.e(260).then(n.t.bind(null, 'v4/g', 3))
+                      return n.e(261).then(n.t.bind(null, 'v4/g', 3))
                     case 'eu':
-                      return n.e(261).then(n.t.bind(null, 'KXIK', 3))
+                      return n.e(262).then(n.t.bind(null, 'KXIK', 3))
                     case 'fa':
-                      return n.e(262).then(n.t.bind(null, 'vzCi', 3))
+                      return n.e(263).then(n.t.bind(null, 'vzCi', 3))
                     case 'fi':
-                      return n.e(263).then(n.t.bind(null, 'YthM', 3))
+                      return n.e(264).then(n.t.bind(null, 'YthM', 3))
                     case 'fil':
-                      return n.e(264).then(n.t.bind(null, 'AcRS', 3))
+                      return n.e(265).then(n.t.bind(null, 'AcRS', 3))
                     case 'fr':
-                      return n.e(265).then(n.t.bind(null, 'PuNY', 3))
+                      return n.e(266).then(n.t.bind(null, 'PuNY', 3))
                     case 'ga':
-                      return n.e(266).then(n.t.bind(null, 'FSy8', 3))
+                      return n.e(267).then(n.t.bind(null, 'FSy8', 3))
                     case 'gl':
-                      return n.e(267).then(n.t.bind(null, 'igcB', 3))
+                      return n.e(268).then(n.t.bind(null, 'igcB', 3))
                     case 'gu':
-                      return n.e(268).then(n.t.bind(null, 'DaQw', 3))
+                      return n.e(269).then(n.t.bind(null, 'DaQw', 3))
                     case 'he':
-                      return n.e(269).then(n.t.bind(null, '8mgg', 3))
+                      return n.e(270).then(n.t.bind(null, '8mgg', 3))
                     case 'hi':
-                      return n.e(270).then(n.t.bind(null, 'w88S', 3))
+                      return n.e(271).then(n.t.bind(null, 'w88S', 3))
                     case 'hr':
-                      return n.e(271).then(n.t.bind(null, 'dvLs', 3))
+                      return n.e(272).then(n.t.bind(null, 'dvLs', 3))
                     case 'hu':
-                      return n.e(272).then(n.t.bind(null, '9fGX', 3))
+                      return n.e(273).then(n.t.bind(null, '9fGX', 3))
                     case 'id':
-                      return n.e(273).then(n.t.bind(null, 'elf3', 3))
+                      return n.e(274).then(n.t.bind(null, 'elf3', 3))
                     case 'it':
-                      return n.e(274).then(n.t.bind(null, 'sxFK', 3))
+                      return n.e(275).then(n.t.bind(null, 'sxFK', 3))
                     case 'ja':
-                      return n.e(275).then(n.t.bind(null, '1/Dg', 3))
+                      return n.e(276).then(n.t.bind(null, '1/Dg', 3))
                     case 'kn':
-                      return n.e(276).then(n.t.bind(null, 'nFOI', 3))
+                      return n.e(277).then(n.t.bind(null, 'nFOI', 3))
                     case 'ko':
-                      return n.e(277).then(n.t.bind(null, 'RRUG', 3))
+                      return n.e(278).then(n.t.bind(null, 'RRUG', 3))
                     case 'mr':
-                      return n.e(278).then(n.t.bind(null, 'EpxJ', 3))
+                      return n.e(279).then(n.t.bind(null, 'EpxJ', 3))
                     case 'ms':
-                      return n.e(279).then(n.t.bind(null, 'cSS2', 3))
+                      return n.e(280).then(n.t.bind(null, 'cSS2', 3))
                     case 'nb':
-                      return n.e(280).then(n.t.bind(null, 'bg3k', 3))
+                      return n.e(281).then(n.t.bind(null, 'bg3k', 3))
                     case 'nl':
-                      return n.e(281).then(n.t.bind(null, 'eXnI', 3))
+                      return n.e(282).then(n.t.bind(null, 'eXnI', 3))
                     case 'pl':
-                      return n.e(282).then(n.t.bind(null, 'ACpo', 3))
+                      return n.e(283).then(n.t.bind(null, 'ACpo', 3))
                     case 'pt':
-                      return n.e(283).then(n.t.bind(null, 'J0At', 3))
+                      return n.e(284).then(n.t.bind(null, 'J0At', 3))
                     case 'ro':
-                      return n.e(284).then(n.t.bind(null, 'hxXa', 3))
+                      return n.e(285).then(n.t.bind(null, 'hxXa', 3))
                     case 'ru':
-                      return n.e(285).then(n.t.bind(null, 'gXfs', 3))
+                      return n.e(286).then(n.t.bind(null, 'gXfs', 3))
                     case 'sk':
-                      return n.e(286).then(n.t.bind(null, 'fy2h', 3))
+                      return n.e(287).then(n.t.bind(null, 'fy2h', 3))
                     case 'sr':
-                      return n.e(287).then(n.t.bind(null, 'FmvU', 3))
+                      return n.e(288).then(n.t.bind(null, 'FmvU', 3))
                     case 'sv':
-                      return n.e(288).then(n.t.bind(null, 'prb2', 3))
+                      return n.e(289).then(n.t.bind(null, 'prb2', 3))
                     case 'ta':
-                      return n.e(289).then(n.t.bind(null, '8KkY', 3))
+                      return n.e(290).then(n.t.bind(null, '8KkY', 3))
                     case 'th':
-                      return n.e(290).then(n.t.bind(null, 'g4c5', 3))
+                      return n.e(291).then(n.t.bind(null, 'g4c5', 3))
                     case 'tr':
-                      return n.e(291).then(n.t.bind(null, 'NngR', 3))
+                      return n.e(292).then(n.t.bind(null, 'NngR', 3))
                     case 'uk':
-                      return n.e(292).then(n.t.bind(null, '62bs', 3))
+                      return n.e(293).then(n.t.bind(null, '62bs', 3))
                     case 'ur':
-                      return n.e(293).then(n.t.bind(null, 'aKQ3', 3))
+                      return n.e(294).then(n.t.bind(null, 'aKQ3', 3))
                     case 'zh-Hant':
-                      return n.e(295).then(n.t.bind(null, 'Wk8C', 3))
+                      return n.e(296).then(n.t.bind(null, 'Wk8C', 3))
                     case 'zh':
-                      return n.e(294).then(n.t.bind(null, 'YXaK', 3))
+                      return n.e(295).then(n.t.bind(null, 'YXaK', 3))
                     default:
                       return Promise.reject(
                         new Error('Tried to import country names for unknown language key: '.concat(e)),
@@ -922,8 +898,8 @@
           )
         }
       E.metadata = { width: 24, height: 24 }
-      var y = E,
-        S = function () {
+      var S = E,
+        y = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(g.a)(
             'svg',
@@ -948,8 +924,8 @@
             ),
           )
         }
-      S.metadata = { width: 24, height: 24 }
-      var C = S,
+      y.metadata = { width: 24, height: 24 }
+      var C = y,
         _ = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(g.a)(
@@ -993,7 +969,7 @@
                     case 'mobile':
                       return h.a.createElement(p.a, { Icon: m.a, color: 'neutral' })
                     case 'laptop':
-                      return h.a.createElement(p.a, { Icon: y, color: 'neutral' })
+                      return h.a.createElement(p.a, { Icon: S, color: 'neutral' })
                     case 'tablet':
                       return h.a.createElement(p.a, { Icon: C, color: 'neutral' })
                     default:
@@ -1106,7 +1082,7 @@
         b = 'rweb/'.concat(v),
         g = c.a(b, 'FETCH_APPLICATIONS'),
         E = { fetchStatus: h.a.NONE }
-      function y() {
+      function S() {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E,
           t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}
         switch (t.type) {
@@ -1120,8 +1096,8 @@
             return e
         }
       }
-      m.a.register(o()({}, v, y))
-      var S = {
+      m.a.register(o()({}, v, S))
+      var y = {
           revokeApplication: {
             reducer: function (e, t) {
               if (t.type === C.customActionTypes.revokeApplication.SUCCESS) {
@@ -1165,7 +1141,7 @@
             },
           },
         },
-        C = Object(u.f)({ namespace: 'applications', customActions: S })
+        C = Object(u.e)({ namespace: 'applications', customActions: y })
       ;(C.selectUniqUnrevokedApps = Object(l.createSelector)(C.selectAll, function (e) {
         var t = Object.values(e).filter(function (e) {
           return !0 !== e.revoked
@@ -1388,7 +1364,7 @@
         b = c.a(f, 'REVOKE_SESSION'),
         g = c.a(f, 'REVOKE_ALL_SESSIONS'),
         E = { fetchStatus: l.a.NONE, sessions: {} }
-      function y() {
+      function S() {
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E,
           t = arguments.length > 1 ? arguments[1] : void 0
         switch (t.type) {
@@ -1414,8 +1390,8 @@
             return e
         }
       }
-      d.a.register(o()({}, m, y))
-      function S(e) {
+      d.a.register(o()({}, m, S))
+      function y(e) {
         return {
           token: e.hashed_token,
           name: e.device_name,
@@ -1440,7 +1416,7 @@
             : null !== (o = e.viewer) && void 0 !== o && null !== (a = o.user) && void 0 !== a && a.sessions_list
             ? e.viewer.user.sessions_list
             : e.sessions
-            ? e.sessions.map(S)
+            ? e.sessions.map(y)
             : []
         },
         _ = function (e) {
