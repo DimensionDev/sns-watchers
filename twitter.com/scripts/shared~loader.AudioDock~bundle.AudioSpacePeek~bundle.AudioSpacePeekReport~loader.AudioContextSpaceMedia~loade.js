@@ -6370,10 +6370,10 @@
               {
                 panResponder: h.a.useRef(
                   rt.a.create({
-                    onMoveShouldSetPanResponder: function () {
-                      return !0
+                    onMoveShouldSetPanResponder: function (e, t) {
+                      return Math.abs(t.dy) > 5
                     },
-                    onPanResponderGrant: function () {
+                    onPanResponderGrant: function (e, t) {
                       a.current.animatedPanOffset = c._value
                     },
                     onPanResponderMove: function (e, t) {

@@ -148,55 +148,62 @@
     bXO0: function (e, t, n) {
       'use strict'
       n.r(t)
-      var a = n('yiKp'),
-        r = n.n(a),
-        o = n('ezF+'),
-        i = n('VPAj'),
-        c = n('zh9S'),
-        l = n('Rp9C'),
-        s = n('Zejx'),
-        u = n('97Jx'),
-        d = n.n(u),
-        p = (n('ho0z'), n('ERkP')),
+      var a = n('ezF+'),
+        r = n('VPAj'),
+        o = n('Rp9C'),
+        i = n('ERkP'),
+        c = n.n(i),
+        l = n('Zejx'),
+        s = n('rxPX'),
+        u = function (e, t) {
+          var n
+          if (t.entry.content.content.topicTile)
+            return l.a.select(e, null === (n = t.entry.content.content) || void 0 === n ? void 0 : n.topicTile.topicId)
+        },
+        d = Object(s.a)()
+          .propsFromState(function () {
+            return { topic: u }
+          })
+          .withAnalytics(),
+        p = n('97Jx'),
         b = n.n(p),
-        m = n('rxPX'),
-        f = n('0KEI'),
-        y = Object(m.a)()
+        m = (n('ho0z'), n('0KEI')),
+        f = Object(s.a)()
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(f.createLocalApiErrorHandlerWithContextFactory)('TOPIC_TILE_CONTEXT'),
-              follow: s.a.follow,
-              unfollow: s.a.unfollow,
+              createLocalApiErrorHandler: Object(m.createLocalApiErrorHandlerWithContextFactory)('TOPIC_TILE_CONTEXT'),
+              follow: l.a.follow,
+              unfollow: l.a.unfollow,
             }
           })
           .withAnalytics(),
-        w = n('3XMw'),
-        g = n.n(w),
-        h = n('Tp1h'),
-        v = n('Jkc4'),
+        y = n('3XMw'),
+        w = n.n(y),
+        g = n('Tp1h'),
+        h = n('Jkc4'),
         k = n('gwY8'),
-        C = n('zF9o'),
-        E = n('Dfuf'),
-        R = n('gaoh'),
-        S = g.a.je808a16,
-        I = g.a.ge8f3043,
-        L = g.a.aa576cbf,
-        x = y(function (e) {
+        v = n('zF9o'),
+        C = n('Dfuf'),
+        E = n('gaoh'),
+        R = w.a.je808a16,
+        S = w.a.ge8f3043,
+        I = w.a.aa576cbf,
+        L = f(function (e) {
           var t = e.analytics,
             n = e.createLocalApiErrorHandler,
             a = e.follow,
             r = e.isRecommended,
             o = e.style,
             i = e.topic,
-            c = e.unfollow,
-            l = e.url,
-            s = i.following,
-            u = i.id,
+            l = e.unfollow,
+            s = e.url,
+            u = i.following,
+            d = i.id,
             p = i.name,
-            m = s ? L({ topicName: p }) : I({ topicName: p }),
-            f = b.a.useRef(!1),
+            m = u ? I({ topicName: p }) : S({ topicName: p }),
+            f = c.a.useRef(!1),
             y = function (e, t, n) {
-              return i.following ? e(g(n)) : e(w(t))
+              return i.following ? e(L(n)) : e(w(t))
             },
             w = function (e) {
               return function (r) {
@@ -206,9 +213,9 @@
                   t.scribeAction('follow')
               }
             },
-            g = function (e) {
+            L = function (e) {
               return function (a) {
-                c(i.id)
+                l(i.id)
                   .catch(n())
                   .then(e && e(i.id)),
                   t.scribeAction('unfollow')
@@ -217,73 +224,65 @@
             x = function (e) {
               t.scribeAction('click')
             }
-          return b.a.createElement(v.a, { customText: p, displayMode: h.a.topic }, function (e) {
-            return b.a.createElement(k.a.Consumer, null, function (t) {
+          return c.a.createElement(h.a, { customText: p, displayMode: g.a.topic }, function (e) {
+            return c.a.createElement(k.a.Consumer, null, function (t) {
               var n = t.onFollow,
                 a = t.onInitialize,
                 i = t.onUnfollow
-              a && !f.current && (a(u, s), (f.current = !0))
-              var c = r
+              a && !f.current && (a(d, u), (f.current = !0))
+              var l = r
                 ? (function (e, t, n) {
                     return { accessibilityLabel: m, onClick: y(e, t, n), text: p }
                   })(e, n, i)
                 : (function (e) {
                     return {
-                      accessibilityLabel: S({ topicName: p }),
+                      accessibilityLabel: R({ topicName: p }),
                       onClick: e(x),
-                      link: (null == l ? void 0 : l.url) || ((t = u), '/i/topics/'.concat(t)),
+                      link: (null == s ? void 0 : s.url) || ((t = d), '/i/topics/'.concat(t)),
                       text: p,
                     }
                     var t
                   })(e)
-              return b.a.createElement(
-                b.a.Fragment,
+              return c.a.createElement(
+                c.a.Fragment,
                 null,
-                o === C.a.DoubleStateDefault
-                  ? b.a.createElement(E.a, d()({}, c, { isSelected: s }))
-                  : b.a.createElement(R.a, c),
+                o === v.a.DoubleStateDefault
+                  ? c.a.createElement(C.a, b()({}, l, { isSelected: u }))
+                  : c.a.createElement(E.a, l),
               )
             })
           })
         }),
-        T = o.g({
-          bindActions: function (e) {
-            e.module
-            return { scribe: c.c }
-          },
-          selectData: function (e) {
-            var t = e.entry
-            return {
-              topic: function (e) {
-                var n
-                return s.a.select(e, null === (n = t.content.content) || void 0 === n ? void 0 : n.topicTile.topicId)
-              },
-            }
-          },
-          component: x,
-          createProps: function (e) {
-            var t = e.data.topic,
-              n = e.entry.content.content.topicTile,
-              a = n.functionalityType,
-              r = n.style,
-              o = n.url
-            return t ? { topic: t, isRecommended: a === C.b.Recommendation, style: r, url: o } : null
-          },
-          getScribeDataItem: function (e) {
-            var t = e.content.content.topicTile.topicId,
-              n = e.itemMetadata.clientEventInfo
-            return l.a.forTopic(t, n)
-          },
-          onImpression: function (e) {
-            var t = e.actions.scribe,
-              n = e.scribeData,
-              a = e.scribeNamespace
-            t(r()(r()({}, a), {}, { action: 'impression' }), n)
-          },
-          shouldDisplayBorder: Object(i.a)(!1),
-          isFocusable: Object(i.a)(!0),
-        })
-      t.default = T
+        x = n('Irs7'),
+        T = function (e) {
+          var t = e.entry,
+            n = (e.feedbackItems, e.module, e.topic),
+            a = Object(x.b)(),
+            r = t.content.content.topicTile,
+            o = r.functionalityType,
+            i = r.style,
+            l = r.url,
+            s = o === v.b.Recommendation
+          return (
+            c.a.useEffect(function () {
+              a.scribe({ action: 'impression' })
+            }, []),
+            n ? c.a.createElement(L, { isRecommended: s, style: i, topic: n, url: l }) : null
+          )
+        },
+        F = d(c.a.memo(T)),
+        O = a
+          .b({
+            component: F,
+            shouldDisplayBorder: Object(r.a)(!1),
+            isFocusable: Object(r.a)(!0),
+            getScribeDataItem: function (e) {
+              var t = e.content.content.topicTile.topicId
+              return o.a.forTopic(t, e.itemMetadata.clientEventInfo)
+            },
+          })
+          .getHandler()
+      t.default = O
     },
     gaoh: function (e, t, n) {
       'use strict'

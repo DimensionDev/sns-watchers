@@ -528,14 +528,14 @@
             : M(e)
         },
         C = function (e) {
-          var t = y.l(e).reduce(function (e, t) {
+          var t = y.k(e).reduce(function (e, t) {
             return e.concat(t.mediaIds)
           }, [])
           return Object(E.k)(e, t)
         },
         M = function (e) {
-          var t = y.j(e),
-            a = y.l(e)[t]
+          var t = y.i(e),
+            a = y.k(e)[t]
           return Object(E.k)(e, a.mediaIds)
         },
         S = function (e, t) {
@@ -1426,8 +1426,8 @@
         v = a('oEGd'),
         f = Object(u.createSelector)(
           function (e) {
-            var t = d.j(e)
-            return d.l(e)[t].mediaTags
+            var t = d.i(e)
+            return d.k(e)[t].mediaTags
           },
           function (e) {
             return (function (e) {
@@ -1447,7 +1447,7 @@
             return { existingTags: e, injections: t }
           },
         ),
-        g = { updateSingleComposer: d.x },
+        g = { updateSingleComposer: d.w },
         b = Object(v.g)(f, g),
         y = a('jHSc'),
         _ = a('3XMw'),

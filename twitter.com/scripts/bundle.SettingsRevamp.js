@@ -49,9 +49,9 @@
         d = a('2VqO'),
         m = a.n(d),
         b = a('KEM+'),
-        h = a.n(b),
-        f = (a('2G9S'), a('ERkP')),
-        p = a.n(f),
+        f = a.n(b),
+        h = (a('2G9S'), a('ERkP')),
+        p = a.n(h),
         E = a('k49u'),
         g = a('rxPX'),
         y = a('0KEI'),
@@ -74,8 +74,8 @@
             for (var n = arguments.length, c = new Array(n), o = 0; o < n; o++) c[o] = arguments[o]
             return (
               (e = t.call.apply(t, [this].concat(c))),
-              h()(l()(e), 'state', { verificationRequired: !1 }),
-              h()(l()(e), '_handleFetch', function () {
+              f()(l()(e), 'state', { verificationRequired: !1 }),
+              f()(l()(e), '_handleFetch', function () {
                 var t,
                   a = e.props,
                   n = a.createLocalApiErrorHandler
@@ -86,17 +86,17 @@
                   .catch(
                     n(
                       ((t = {}),
-                      h()(t, E.a.GenericForbidden, {
+                      f()(t, E.a.GenericForbidden, {
                         customAction: function () {
                           e.setState({ verificationRequired: !0 })
                         },
                       }),
-                      h()(t, E.a.PasswordVerificationRequired, {
+                      f()(t, E.a.PasswordVerificationRequired, {
                         customAction: function () {
                           e.setState({ verificationRequired: !0 })
                         },
                       }),
-                      h()(t, 'showToast', !1),
+                      f()(t, 'showToast', !1),
                       t),
                     ),
                   )
@@ -153,9 +153,9 @@
         d = a('5Yy7'),
         m = a.n(d),
         b = a('2VqO'),
-        h = a.n(b),
-        f = a('KEM+'),
-        p = a.n(f),
+        f = a.n(b),
+        h = a('KEM+'),
+        p = a.n(h),
         E = (a('lTEL'), a('7x/C'), a('JtPf'), a('87if'), a('kYxP'), a('7xRU'), a('z84I'), a('2G9S'), a('ERkP')),
         g = a.n(E),
         y = a('QJRq'),
@@ -213,8 +213,8 @@
         I = a('t62R'),
         O = a('3rX5'),
         x = a('/yvb'),
-        T = a('h0NW'),
-        N = a('sgih'),
+        N = a('h0NW'),
+        T = a('sgih'),
         k = a('xKuM'),
         D = a('5Vk4'),
         R = a('3XMw'),
@@ -251,7 +251,7 @@
         Y = _(
           (function (e) {
             m()(a, e)
-            var t = h()(a)
+            var t = f()(a)
             function a() {
               var e
               o()(this, a)
@@ -353,7 +353,7 @@
                       description: t.description,
                     }
                   })
-                  return g.a.createElement(T.a, { items: t })
+                  return g.a.createElement(N.a, { items: t })
                 }),
                 e
               )
@@ -364,7 +364,7 @@
                   key: 'render',
                   value: function () {
                     return g.a.createElement(
-                      N.a,
+                      T.a,
                       {
                         allowBackNavigation: !0,
                         enableMaskForDismiss: !0,
@@ -462,8 +462,8 @@
             },
           }
         }),
-        he = a('Irs7'),
-        fe = a('csss'),
+        fe = a('Irs7'),
+        he = a('csss'),
         pe = a('3Ohe'),
         Ee = a('v6aA'),
         ge = F.a.f15bfdb3,
@@ -478,8 +478,8 @@
         Ie = F.a.b6ab31bd,
         Oe = F.a.c21037d0,
         xe = F.a.h3290871,
-        Te = F.a.d12d42db,
-        Ne = F.a.hbd12156,
+        Ne = F.a.d12d42db,
+        Te = F.a.hbd12156,
         ke = F.a.b7ec04f3,
         De = F.a.f70d5780,
         Re = F.a.dc62d3c6,
@@ -505,7 +505,7 @@
         qe = { page: 'account_type_landing' },
         Ve = (function (e) {
           m()(a, e)
-          var t = h()(a)
+          var t = f()(a)
           function a(e, n) {
             var c
             return (
@@ -549,7 +549,7 @@
                     })
                     .join(', '),
                   b = a && ve(new Date(''.concat(a, 'T00:00:00'))),
-                  h = i
+                  f = i
                     .map(function (e) {
                       return e.display
                     })
@@ -565,7 +565,7 @@
                       onFaqClick: c._handleFaqClick,
                     }),
                   l
-                    ? g.a.createElement(fe.a, {
+                    ? g.a.createElement(he.a, {
                         description:
                           l.screen_name &&
                           g.a.createElement(I.b, { color: 'gray700', size: 'subtext2' }, '@'.concat(l.screen_name)),
@@ -573,11 +573,11 @@
                         link: '/settings/screen_name',
                       })
                     : null,
-                  l ? g.a.createElement(fe.a, { description: s, label: Ae, link: '/settings/phone' }) : null,
-                  l ? g.a.createElement(fe.a, { description: r, label: Se, link: '/settings/email' }) : null,
+                  l ? g.a.createElement(he.a, { description: s, label: Ae, link: '/settings/phone' }) : null,
+                  l ? g.a.createElement(he.a, { description: r, label: Se, link: '/settings/email' }) : null,
                   l ? c._renderVerified() : null,
                   l
-                    ? g.a.createElement(fe.a, {
+                    ? g.a.createElement(he.a, {
                         description: l.protected ? ke : Ue,
                         label: He,
                         link: '/settings/audience_and_tagging',
@@ -598,9 +598,9 @@
                           : null,
                       )
                     : null,
-                  l ? g.a.createElement(fe.a, { description: n, label: Oe, link: '/settings/country' }) : null,
-                  g.a.createElement(fe.a, { description: h, label: Be, link: '/settings/languages' }),
-                  g.a.createElement(fe.a, {
+                  l ? g.a.createElement(he.a, { description: n, label: Oe, link: '/settings/country' }) : null,
+                  g.a.createElement(he.a, { description: f, label: Be, link: '/settings/languages' }),
+                  g.a.createElement(he.a, {
                     description: c._renderGender(o.value),
                     label: Le,
                     link: '/settings/your_twitter_data/gender',
@@ -614,7 +614,7 @@
                         g.a.createElement(I.b, { color: 'gray700', style: be.helpText }, Me),
                       )
                     : null,
-                  g.a.createElement(fe.a, { description: m, label: ze, link: '/settings/your_twitter_data/age' }),
+                  g.a.createElement(he.a, { description: m, label: ze, link: '/settings/your_twitter_data/age' }),
                   l ? c._renderAutomation() : null,
                   l
                     ? null
@@ -655,7 +655,7 @@
                       n = De
                       break
                     default:
-                      ;(a = Ne), (n = Re)
+                      ;(a = Te), (n = Re)
                   }
                   return g.a.createElement(pe.a, {
                     label: xe,
@@ -696,9 +696,9 @@
                   var n = c.props.managingAccount
                     ? '/settings/account/automation'
                     : '/settings/your_twitter_data/account'
-                  return g.a.createElement(fe.a, {
+                  return g.a.createElement(he.a, {
                     description: Fe,
-                    label: Te,
+                    label: Ne,
                     link: n,
                     onPress: c._handleAutomationOnPress,
                   })
@@ -737,7 +737,7 @@
           )
         })(g.a.Component)
       p()(Ve, 'contextType', Ee.a)
-      t.default = Object(he.a)(le(Ve))
+      t.default = Object(fe.a)(le(Ve))
     },
     Fcaw: function (e, t, a) {
       'use strict'
@@ -769,12 +769,12 @@
         b =
           ('rweb/'.concat(m),
           s()({ account_label: { disableStatus: u.a.NONE, fetchStatus: u.a.NONE, managed_label: void 0 } })),
-        h = Object.freeze({
+        f = Object.freeze({
           REQUEST: 'rweb/accountTaxonomy/FETCH_USER_ACCOUNT_LABEL_REQUEST',
           SUCCESS: 'rweb/accountTaxonomy/FETCH_USER_ACCOUNT_LABEL_SUCCESS',
           FAILURE: 'rweb/accountTaxonomy/FETCH_USER_ACCOUNT_LABEL_FAILURE',
         }),
-        f = Object.freeze({
+        h = Object.freeze({
           REQUEST: 'rweb/accountTaxonomy/DISABLE_USER_ACCOUNT_LABEL_REQUEST',
           SUCCESS: 'rweb/accountTaxonomy/DISABLE_USER_ACCOUNT_LABEL_SUCCESS',
           FAILURE: 'rweb/accountTaxonomy/DISABLE_USER_ACCOUNT_LABEL_FAILURE',
@@ -784,13 +784,13 @@
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : b,
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
-            case h.REQUEST:
+            case f.REQUEST:
               return o()(
                 o()({}, e),
                 {},
                 { account_label: o()(o()({}, e.account_label), {}, { fetchStatus: u.a.LOADING }) },
               )
-            case h.SUCCESS:
+            case f.SUCCESS:
               var a, n, r
               return o()(
                 o()({}, e),
@@ -814,25 +814,25 @@
                   ),
                 },
               )
-            case h.FAILURE:
+            case f.FAILURE:
               return o()(
                 o()({}, e),
                 {},
                 { account_label: o()(o()({}, e.account_label), {}, { fetchStatus: u.a.FAILED }) },
               )
-            case f.REQUEST:
+            case h.REQUEST:
               return o()(
                 o()({}, e),
                 {},
                 { account_label: o()(o()({}, e.account_label), {}, { disableStatus: u.a.LOADING }) },
               )
-            case f.SUCCESS:
+            case h.SUCCESS:
               return o()(
                 o()({}, e),
                 {},
                 { account_label: { managed_label: void 0, fetchStatus: u.a.LOADED, disableStatus: u.a.LOADED } },
               )
-            case f.FAILURE:
+            case h.FAILURE:
               return o()(
                 o()({}, e),
                 {},
@@ -874,7 +874,7 @@
           return function (t, a, n) {
             var r = n.api
             return Object(i.b)(t, { request: r.AccountTaxonomy.fetchUserAccountLabel, params: { userId: e } })({
-              actionTypes: h,
+              actionTypes: f,
               context: 'FETCH_USER_ACCOUNT_LABEL',
             })
           }
@@ -883,7 +883,7 @@
           return function (e, t, a) {
             var n = a.api
             return Object(i.b)(e, { request: n.AccountTaxonomy.disableUserAccountLabel, params: {} })({
-              actionTypes: f,
+              actionTypes: h,
               context: 'DISABLE_USER_ACCOUNT_LABEL',
             })
           }
@@ -926,8 +926,8 @@
         d = a('oEOe'),
         m = 'userData',
         b = 'rweb/'.concat(m),
-        h = Object(d.a)(b, 'FETCH_DOWNLOADS'),
-        f = Object(d.a)(b, 'CREATE_DOWNLOAD'),
+        f = Object(d.a)(b, 'FETCH_DOWNLOADS'),
+        h = Object(d.a)(b, 'CREATE_DOWNLOAD'),
         p = Object.freeze({
           NEW: 'NEW',
           INPROGRESS: 'INPROGRESS',
@@ -947,7 +947,7 @@
             t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : g,
             a = arguments.length > 1 ? arguments[1] : void 0
           switch (a.type) {
-            case h.SUCCESS:
+            case f.SUCCESS:
               var n = a.payload || [],
                 r = n.filter(function (e) {
                   return 'FAILED' !== e.status
@@ -957,11 +957,11 @@
                 {},
                 { fetchStatus: s.a.LOADED, downloads: l()(l()({}, t.downloads), {}, { all: n, nonFailed: r }) },
               )
-            case h.REQUEST:
+            case f.REQUEST:
               return l()(l()({}, t), {}, { fetchStatus: s.a.LOADING })
-            case h.FAILURE:
+            case f.FAILURE:
               return l()(l()({}, t), {}, { error: a.payload, fetchStatus: s.a.FAILED })
-            case f.SUCCESS:
+            case h.SUCCESS:
               return l()(
                 l()({}, t),
                 {},
@@ -973,7 +973,7 @@
                   ),
                 },
               )
-            case f.FAILURE:
+            case h.FAILURE:
               return l()(l()({}, t), {}, { fetchStatus: s.a.NONE })
             default:
               return t
@@ -994,7 +994,7 @@
           return function (e, t, a) {
             var n = a.api
             return Object(d.b)(e, { request: n.UserData.fetchDownloads })({
-              actionTypes: h,
+              actionTypes: f,
               context: 'FETCH_DOWNLOADS',
             })
           }
@@ -1003,7 +1003,7 @@
           return function (e, t, a) {
             var n = a.api
             return Object(d.b)(e, { request: n.UserData.createDataDownload })({
-              actionTypes: f,
+              actionTypes: h,
               context: 'CREATE_DOWNLOAD',
             })
           }
@@ -1018,7 +1018,7 @@
     OySi: function (e, t, a) {
       'use strict'
       a.d(t, 'b', function () {
-        return f
+        return h
       }),
         a.d(t, 'a', function () {
           return p
@@ -1034,12 +1034,12 @@
         d = ['Icon'],
         m = ['link'],
         b = function (e) {
-          return l.a.createElement(e.Icon, { style: h.thumbnail })
+          return l.a.createElement(e.Icon, { style: f.thumbnail })
         },
-        h = s.a.create(function (e) {
+        f = s.a.create(function (e) {
           return { thumbnail: { color: e.colors.gray700 } }
         })
-      function f(e) {
+      function h(e) {
         var t = e.Icon,
           a = o()(e, d)
         return l.a.createElement(
@@ -1085,8 +1085,8 @@
           })
           .withAnalytics({ page: 'settings', section: 'account', component: 'download_your_data' }),
         b = a('fs1G'),
-        h = a('yoO3'),
-        f = a('7JQg'),
+        f = a('yoO3'),
+        h = a('7JQg'),
         p = a('7FtF'),
         E = a('rHpw').a.create(function (e) {
           return {
@@ -1120,8 +1120,8 @@
         I = a('3XMw'),
         O = a.n(I),
         x = O.a.f56af9cc,
-        T = O.a.cce24bf3,
-        N = O.a.d6eb9b9a,
+        N = O.a.cce24bf3,
+        T = O.a.d6eb9b9a,
         k = O.a.d2fb334b,
         D = O.a.b708417b,
         R = O.a.jbf5843d,
@@ -1193,7 +1193,7 @@
             u = a === s.b.COMPLETE && !n,
             d = u ? Q.UNAVAILABLE : a,
             m = a === s.b.NONE ? Z : b.a,
-            h = function () {
+            f = function () {
               return o.a.createElement(
                 w.a,
                 {
@@ -1246,19 +1246,19 @@
                 })(d),
               ),
             ),
-            o.a.createElement(y.a, { style: E.noShrink }, o.a.createElement(h, null)),
+            o.a.createElement(y.a, { style: E.noShrink }, o.a.createElement(f, null)),
           )
         }
         return o.a.createElement(
-          f.c,
+          h.c,
           { namespace: Y },
           o.a.createElement(
-            h.a,
+            f.a,
             null,
             o.a.createElement(
               p.a,
               { location: S, screenType: 'secondaryDetail', title: x },
-              o.a.createElement(A.a, { description: T }),
+              o.a.createElement(A.a, { description: N }),
               J
                 ? o.a.createElement(g.a, {
                     fetch: function () {
@@ -1272,7 +1272,7 @@
                         o.a.createElement(
                           y.a,
                           null,
-                          o.a.createElement(L.b, { text: N }),
+                          o.a.createElement(L.b, { text: T }),
                           o.a.createElement(A.a, {
                             description: D,
                             learnMoreLabel: W,
@@ -1309,10 +1309,10 @@
         return b
       }),
         a.d(t, 'b', function () {
-          return h
+          return f
         }),
         a.d(t, 'a', function () {
-          return f
+          return h
         })
       var n = a('KEM+'),
         r = a.n(n),
@@ -1341,11 +1341,11 @@
       var b = function (e) {
           return e.countryNames.countries
         },
-        h = function (e, t) {
+        f = function (e, t) {
           var a = t && t.toUpperCase()
           return e.countryNames.countries[a]
         },
-        f = function e(t) {
+        h = function e(t) {
           return function (n, r) {
             return r().countryNames.fetchStatus === i.a.LOADED
               ? Promise.resolve()
@@ -1474,8 +1474,8 @@
         d = a('RKmr'),
         m = a('7FtF'),
         b = a('OySi'),
-        h = 'notificationsScreen',
-        f = a('MWbm'),
+        f = 'notificationsScreen',
+        h = a('MWbm'),
         p = a('+RfI'),
         E = a('yiKp'),
         g = a.n(E),
@@ -1518,7 +1518,7 @@
         I = l.a.bcd81cab,
         O = l.a.da867c58,
         x = { page: 'settings', section: 'notification' },
-        T = [
+        N = [
           { description: C, label: L, link: '/settings/notifications/filters', Icon: p.a },
           { description: O, label: I, link: '/settings/notifications/preferences', Icon: S },
         ]
@@ -1534,10 +1534,10 @@
               m.a,
               { location: t, screenType: 'primaryDetail', title: A },
               o.a.createElement(
-                f.a,
-                { testID: h },
+                h.a,
+                { testID: f },
                 o.a.createElement(d.a, { description: w }),
-                T.map(function (e) {
+                N.map(function (e) {
                   return o.a.createElement(b.b, r()({}, e, { key: e.link }))
                 }),
               ),
@@ -1561,9 +1561,9 @@
         d = a('OySi'),
         m = 'accountScreen',
         b = a('MWbm'),
-        h = a('boUI'),
-        f = a('yiKp'),
-        p = a.n(f),
+        f = a('boUI'),
+        h = a('yiKp'),
+        p = a.n(h),
         E = a('Lsrn'),
         g = a('k/Ka'),
         y = function () {
@@ -1624,8 +1624,8 @@
         I = a('4zmP'),
         O = a('rHpw'),
         x = i.a.hc73f03f,
-        T = i.a.d3a2bde7,
-        N = i.a.f15bfdb3,
+        N = i.a.d3a2bde7,
+        T = i.a.f15bfdb3,
         k = i.a.idca4741,
         D = i.a.b6ded35d,
         R = i.a.ab1f7eef,
@@ -1636,8 +1636,10 @@
         z = i.a.hfb92b14,
         B = i.a.i203df96,
         H = { page: 'settings', section: 'account' },
-        j = { label: 'Go to Security settings', link: '/settings/security_and_account_access' },
-        G = O.a.create(function (e) {
+        j = i.a.j0b9ec86,
+        G = i.a.eaf134dd,
+        K = { label: i.a.iacafa08, link: '/settings/security_and_account_access' },
+        W = O.a.create(function (e) {
           return { callout: { marginHorizontal: e.componentDimensions.gutterHorizontal, width: 'auto' } }
         })
       t.default = function (e) {
@@ -1647,7 +1649,7 @@
             function () {
               return (function (e) {
                 return [
-                  { description: k, label: N, link: '/settings/your_twitter_data/account', Icon: h.a },
+                  { description: k, label: T, link: '/settings/your_twitter_data/account', Icon: f.a },
                   { description: D, label: R, link: '/settings/password', Icon: v },
                   { description: U, label: F, link: '/settings/download_your_data', Icon: _.a },
                   { description: M, disabled: e, label: P, link: '/settings/teams', Icon: S.a },
@@ -1669,7 +1671,7 @@
               r.a.createElement(
                 b.a,
                 { testID: m },
-                r.a.createElement(C.a, { description: T }),
+                r.a.createElement(C.a, { description: N }),
                 n.map(function (e) {
                   return r.a.createElement(
                     b.a,
@@ -1677,13 +1679,7 @@
                     r.a.createElement(d.b, e),
                     e.disabled &&
                       '/settings/teams' === e.link &&
-                      r.a.createElement(I.a, {
-                        Icon: L.a,
-                        action: j,
-                        headline: 'TweetDeck Teams moved',
-                        style: G.callout,
-                        text: "We're moving the Teams feature to Twitter Delegate in your Security and account access settings.",
-                      }),
+                      r.a.createElement(I.a, { Icon: L.a, action: K, headline: j, style: W.callout, text: G }),
                   )
                 }),
               ),

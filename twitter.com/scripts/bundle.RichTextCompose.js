@@ -1303,7 +1303,7 @@
               addEducationFlag: function () {
                 return Object(me.w)(me.f)
               },
-              updateSingleComposer: se.x,
+              updateSingleComposer: se.w,
               fetchOrCreateTrustedFriendsList: we,
             }
           }),
@@ -3109,7 +3109,9 @@
                   d = t.setActiveParentKey,
                   p = !!u,
                   m = !s && !r,
-                  h = !s && !o
+                  h = !s && !o,
+                  f = i.context.featureSwitches.isTrue('responsive_web_reply_storm_enabled'),
+                  g = (!l || c || f) && e
                 return T.a.createElement(
                   W.a,
                   { style: zt.toolBar, testID: Xn },
@@ -3132,14 +3134,13 @@
                     W.a,
                     { style: zt.toolBarIconsContainer },
                     e ? i._renderCountdownCircle() : null,
-                    (l && !c) || !e
-                      ? null
-                      : T.a.createElement(
-                          T.a.Fragment,
-                          null,
-                          T.a.createElement(W.a, { style: zt.separator }),
-                          i._renderAddComposerButton(),
-                        ),
+                    g &&
+                      T.a.createElement(
+                        T.a.Fragment,
+                        null,
+                        T.a.createElement(W.a, { style: zt.separator }),
+                        i._renderAddComposerButton(),
+                      ),
                     n,
                   ),
                 )
@@ -3658,21 +3659,21 @@
                 key: '_renderAddComposerButton',
                 value: function () {
                   var e = this.props,
-                    t = e.disableAddTweet,
-                    n = e.isCommunityTweetFromProtectedUser,
-                    a = e.isInline,
+                    t = e.addComposerLink,
+                    n = e.disableAddTweet,
+                    a = e.isCommunityTweetFromProtectedUser,
                     r = e.loggedInUser,
                     i = e.onAddComposer,
                     o = this._isEmpty(),
                     s = this._isScheduled(),
-                    l = t || o || s || !r || n
+                    l = n || o || s || !r || a
                   return T.a.createElement(q.a, {
                     accessibilityLabel: La,
                     behavioralEventContext: ar,
                     disabled: l,
                     hoverLabel: { label: Pa },
                     icon: Za,
-                    link: !a || o || l ? void 0 : '/compose/tweet',
+                    link: l ? void 0 : t,
                     onPress: i,
                     size: 'xSmall',
                     testID: Nn,
@@ -4070,15 +4071,15 @@
         },
         Pr = function (e, t) {
           var n = Or(t)
-          return se.l(e, n)
+          return se.k(e, n)
         },
         Fr = function (e, t) {
           var n = Or(t)
-          return se.m(e, n)
+          return se.l(e, n)
         },
         Mr = function (e, t) {
           var n = Or(t)
-          return se.k(e, n)
+          return se.j(e, n)
         },
         Br = function (e, t) {
           var n = Kr(e, t),
@@ -4089,11 +4090,11 @@
         },
         Nr = function (e, t) {
           var n = Or(t)
-          return se.n(e, n)
+          return se.m(e, n)
         },
         Vr = function (e, t) {
           var n = Or(t)
-          return se.j(e, n)
+          return se.i(e, n)
         },
         jr = function (e) {
           return function (t, n) {
@@ -4212,23 +4213,22 @@
           deletePreviewTweet: wr.c,
           fetchAutotaggedLocationIfNeeded: Er.a,
           fetchTweetIfNeeded: Ir.a.fetchOneIfNeeded,
-          removeComposer: se.f,
-          resetDraft: se.g,
+          removeComposer: se.e,
+          resetDraft: se.f,
           retweet: Ir.a.retweet,
-          schedule: se.i,
-          draftTweet: se.e,
-          send: se.r,
-          updateActiveComposerIndex: se.t,
-          updateAudienceControlsValue: se.u,
+          schedule: se.h,
+          draftTweet: se.d,
+          send: se.q,
+          updateActiveComposerIndex: se.s,
+          updateAudienceControlsValue: se.t,
           updateConvoCardState: br.b,
           preUploadMedia: Ar.e,
           addMedia: Ar.b,
           processMultipleMedia: Ar.g,
           removeMediaUpload: Ar.i,
-          updateSingleComposer: se.x,
-          setActiveParentKey: se.s,
+          updateSingleComposer: se.w,
+          setActiveParentKey: se.r,
           copyDataFromInlineComposerToModalComposer: se.c,
-          copyDataFromInlineReplyComposerToModalComposer: se.d,
         },
         li = Object(kr.e)(function () {
           return Object(ue.createStructuredSelector)({
@@ -4254,9 +4254,9 @@
             prepopulatedText: $r,
             previewTweetId: Jr,
             promotedContent: ii,
-            scheduledFor: se.o,
+            scheduledFor: se.n,
             selectedCommunityName: Br,
-            sendingProgress: se.p,
+            sendingProgress: se.o,
             convoCardData: Qr,
             undoTweetSettings: Sr.q,
             userLanguage: pe.o,
@@ -4877,6 +4877,21 @@
                   tweetText: t,
                 })
               }),
+              b()(h()(s), '_handleAddComposer', function () {
+                var e = s.props,
+                  t = e.addComposer,
+                  n = e.copyDataFromInlineComposerToModalComposer,
+                  a = e.isInline,
+                  r = e.parentTweetId
+                s.isInlineReply ? n(r) : a && n(xr.a.homeTimeline), t()
+              }),
+              b()(
+                h()(s),
+                '_makeAddComposerLink',
+                Object(qt.a)(function (e, t, n) {
+                  return Object(bo.c)({ isInline: e, isSelfThreadReply: t, parentTweetId: n })
+                }),
+              ),
               b()(h()(s), '_handleReplyNudgeDeleteTweet', function () {
                 s._hideToxicReplyNudge(), s._handleConfirmDiscardTweet()
               }),
@@ -5650,7 +5665,7 @@
                   var n = this.props,
                     a = n.addToast,
                     r = n.composerData,
-                    i = n.copyDataFromInlineReplyComposerToModalComposer,
+                    i = n.copyDataFromInlineComposerToModalComposer,
                     o = n.externalMedia,
                     s = n.externalMediaFiles,
                     l = n.onRef,
@@ -5683,65 +5698,63 @@
                     n = this,
                     a = this.props,
                     i = a.activeUser,
-                    o = a.addComposer,
-                    s = a.addToast,
-                    l = a.audienceControlsValue,
-                    c = a.composeHeader,
-                    u = a.composerData,
-                    d = a.copyDataFromInlineComposerToModalComposer,
-                    p = a.customizePropsForSingleComposerItem,
-                    m = a.geoEnabled,
-                    h = a.history,
-                    f = a.inReplyToStatus,
-                    g = a.isInline,
-                    v = a.isModal,
-                    y = a.isSelfThreadReply,
-                    _ = a.isSending,
-                    b = a.isSuperFollowsCreator,
-                    C = a.parentTweetId,
-                    w = a.positionCursorAtBeginning,
-                    x = a.richTextInputContext,
-                    E = a.scheduledFor,
-                    S = a.typeaheadWrapper,
-                    I = a.userLanguage,
-                    R = a.windowWidth,
-                    A = this.state,
-                    k = A.errorMessage,
-                    D = A.focused,
-                    L = A.shouldDisableButton,
-                    O = A.showAltTextPrompt,
-                    P = A.showDiscardTweetConfirmation,
-                    F = A.showToxicReplyNudge,
-                    M = A.typeaheadActive,
-                    B = !v && M,
-                    N = g ? 0 : this.props.activeComposerIndex,
-                    V = B || g ? [u[N]] : u,
-                    j = this._areComposersValid(),
-                    H = this.hasNonCompliantQuote && this.isRetweet,
-                    U = g ? W.a : po.a,
-                    z = g ? {} : { onAnimateComplete: v ? void 0 : this._handleAnimateComplete },
-                    K = L || !j || H || this.isCommunityTweetFromProtectedUser,
-                    G = (g && bi.a.isOneColumnSquishedLayout(R)) || this.isCommunityTweet,
-                    Q = (g && bi.a.isOneColumnSquishedLayout(R)) || this.isCommunityTweet || this.isExclusiveTweet
+                    o = a.addToast,
+                    s = a.audienceControlsValue,
+                    l = a.composeHeader,
+                    c = a.composerData,
+                    u = a.customizePropsForSingleComposerItem,
+                    d = a.geoEnabled,
+                    p = a.history,
+                    m = a.inReplyToStatus,
+                    h = a.isInline,
+                    f = a.isModal,
+                    g = a.isSelfThreadReply,
+                    v = a.isSending,
+                    y = a.isSuperFollowsCreator,
+                    _ = a.parentTweetId,
+                    b = a.positionCursorAtBeginning,
+                    C = a.richTextInputContext,
+                    w = a.scheduledFor,
+                    x = a.typeaheadWrapper,
+                    E = a.userLanguage,
+                    S = a.windowWidth,
+                    I = this.state,
+                    R = I.errorMessage,
+                    A = I.focused,
+                    k = I.shouldDisableButton,
+                    D = I.showAltTextPrompt,
+                    L = I.showDiscardTweetConfirmation,
+                    O = I.showToxicReplyNudge,
+                    P = I.typeaheadActive,
+                    F = !f && P,
+                    M = h ? 0 : this.props.activeComposerIndex,
+                    B = F || h ? [c[M]] : c,
+                    N = this._areComposersValid(),
+                    V = this.hasNonCompliantQuote && this.isRetweet,
+                    j = h ? W.a : po.a,
+                    H = h ? {} : { onAnimateComplete: f ? void 0 : this._handleAnimateComplete },
+                    U = k || !N || V || this.isCommunityTweetFromProtectedUser,
+                    z = (h && bi.a.isOneColumnSquishedLayout(S)) || this.isCommunityTweet,
+                    K = (h && bi.a.isOneColumnSquishedLayout(S)) || this.isCommunityTweet || this.isExclusiveTweet
                   return T.a.createElement(
                     W.a,
-                    { ref: this._setRootRef, style: !C && $o.root },
-                    g ? this._renderProgressBar() : null,
-                    k &&
+                    { ref: this._setRootRef, style: !_ && $o.root },
+                    h ? this._renderProgressBar() : null,
+                    R &&
                       T.a.createElement(
                         W.a,
                         { style: $o.inlineCallout },
                         T.a.createElement(tt.a, {
                           action:
-                            null !== (e = k.action) &&
+                            null !== (e = R.action) &&
                             void 0 !== e &&
                             e.label &&
-                            null !== (t = k.action) &&
+                            null !== (t = R.action) &&
                             void 0 !== t &&
                             t.link
-                              ? { label: k.action.label, link: k.action.link }
+                              ? { label: R.action.label, link: R.action.link }
                               : void 0,
-                          text: k.text,
+                          text: R.text,
                           type: 'danger',
                         }),
                       ),
@@ -5749,33 +5762,33 @@
                       W.a,
                       {
                         onFocus: this._handleFocus,
-                        style: [$o.content, C && $o.contentInlineReply, v && $o.contentModal],
+                        style: [$o.content, _ && $o.contentInlineReply, f && $o.contentModal],
                       },
-                      f ? this._renderReplyContext() : null,
-                      c,
+                      m ? this._renderReplyContext() : null,
+                      l,
                       T.a.createElement(
-                        U,
-                        z,
-                        V.map(function (e, t) {
+                        j,
+                        H,
+                        B.map(function (e, t) {
                           var a = Object(jt.h)(e.scheduledFor),
-                            c = u.indexOf(e),
-                            C = p(e, t, V),
-                            A =
-                              v || g
+                            l = c.indexOf(e),
+                            I = u(e, t, B),
+                            R =
+                              f || h
                                 ? T.a.createElement(
                                     q.a,
                                     {
                                       behavioralEventContext: Yo,
-                                      disabled: K,
+                                      disabled: U,
                                       onPress: n.handleTweetOrRetweet,
                                       size: 'medium',
                                       style: $o.inlineSendButton,
-                                      testID: v ? Ci : Ti,
+                                      testID: f ? Ci : Ti,
                                       type: 'brandFilled',
                                     },
                                     Object(bo.b)({
-                                      inReplyToStatus: !!f,
-                                      isSelfThreadReply: !!y,
+                                      inReplyToStatus: !!m,
+                                      isSelfThreadReply: !!g,
                                       isQuoteTweet: !!n.isQuoteTweet,
                                       isRetweet: !!n.isRetweet,
                                       isScheduled: !!a,
@@ -5791,58 +5804,59 @@
                               or,
                               r()(
                                 {
-                                  addToast: s,
-                                  additionalToolbarContent: A,
-                                  audienceControlsValue: l,
-                                  autoFocus: n.isInlineReply && D,
+                                  addComposerLink: n._makeAddComposerLink(h, g, _),
+                                  addToast: o,
+                                  additionalToolbarContent: R,
+                                  audienceControlsValue: s,
+                                  autoFocus: n.isInlineReply && A,
                                   data: k,
-                                  disableAddTweet: u.length >= 25,
-                                  editable: !_ && !!i,
+                                  disableAddTweet: c.length >= 25,
+                                  editable: !v && !!i,
                                   fetchAutotaggedLocationIfNeeded: n._fetchAutotaggedLocationIfNeeded,
-                                  geoEnabled: m,
-                                  hidePoll: G,
-                                  hideScheduling: Q,
-                                  history: h,
-                                  index: c,
-                                  isActive: c === N && !_,
+                                  geoEnabled: d,
+                                  hidePoll: z,
+                                  hideScheduling: K,
+                                  history: p,
+                                  index: l,
+                                  isActive: l === M && !v,
                                   isCommunityTweetFromProtectedUser: n.isCommunityTweetFromProtectedUser,
                                   isExpanded: 0 !== t || n._shouldBeExpanded(),
-                                  isInline: g,
+                                  isInline: h,
                                   isInlineReply: n.isInlineReply,
-                                  isLast: g || c === u.length - 1,
-                                  isReply: !!f || n.isInlineReply,
-                                  isSelfThreadReply: !!y,
-                                  isSuperFollowsCreator: b,
+                                  isLast: h || l === c.length - 1,
+                                  isReply: !!m || n.isInlineReply,
+                                  isSelfThreadReply: !!g,
+                                  isSuperFollowsCreator: y,
                                   keyCommandHandlers: n._getKeyCommandHandlers(),
                                   loggedInUser: i,
-                                  onAddComposer: g ? d : o,
-                                  onFilesAdded: n._handleAddMediaFiles(c),
+                                  onAddComposer: n._handleAddComposer,
+                                  onFilesAdded: n._handleAddMediaFiles(l),
                                   onFocus: n._handleComposerFocus,
                                   onRemoveComposer: n._handleRemoveComposer,
                                   onRemoveMedia: n._handleMediaRemove,
                                   onTextChange: n._handleTextChange,
                                   onTextInputBlur: n._handleTextOnBlur(k.key, t),
                                   onTypeaheadStateChange: n._handleTypeaheadStateChange,
-                                  positionCursorAtBeginning: !!w,
-                                  ref: n._setComposerRef(c),
-                                  richTextInputContext: x,
-                                  scheduledFor: E,
+                                  positionCursorAtBeginning: !!b,
+                                  ref: n._setComposerRef(l),
+                                  richTextInputContext: C,
+                                  scheduledFor: w,
                                   setActiveParentKey: n._setActiveParentKey,
                                   twitterTextConfigurationVersion: 'version3',
-                                  typeaheadActive: M,
-                                  typeaheadWrapper: S,
+                                  typeaheadActive: P,
+                                  typeaheadWrapper: x,
                                   updateAudienceControlsValue: n._updateAudienceControlsValue,
                                   updateSingleComposer: n._updateSingleComposer,
-                                  userLanguage: I,
-                                  windowWidth: R,
+                                  userLanguage: E,
+                                  windowWidth: S,
                                 },
-                                C,
+                                I,
                               ),
                             ),
                           )
                         }),
                       ),
-                      P
+                      L
                         ? this._canSaveDraft
                           ? T.a.createElement(co.a, {
                               cancelButtonLabel: Bo,
@@ -5862,9 +5876,9 @@
                               text: Mo,
                             })
                         : null,
-                      O ? this._renderAltTextPrompt() : null,
-                      F ? this._renderToxicReplyNudge() : null,
-                      T.a.createElement(W.a, { style: _ && $o.mask }),
+                      D ? this._renderAltTextPrompt() : null,
+                      O ? this._renderToxicReplyNudge() : null,
+                      T.a.createElement(W.a, { style: v && $o.mask }),
                     ),
                   )
                 },
@@ -6126,6 +6140,9 @@
       }),
         n.d(t, 'a', function () {
           return u
+        }),
+        n.d(t, 'c', function () {
+          return d
         })
       n('jQ3i'), n('x4t0')
       var a = n('3XMw'),
@@ -6142,6 +6159,12 @@
           return function () {
             t.pathname.includes('/home') ? window.scrollTo(0, 0) : e.push('/home', { lockScroll: !0 })
           }
+        },
+        d = function (e) {
+          var t = e.isInline,
+            n = e.isSelfThreadReply,
+            a = e.parentTweetId
+          return t ? { pathname: '/compose/tweet', state: { inReplyToStatusId: a, isSelfThreadReply: n } } : void 0
         }
     },
     'p+r5': function (e, t, n) {
@@ -6824,7 +6847,7 @@
         }),
         G = Object(k.createSelector)(
           function (e) {
-            return w.l(e, '')
+            return w.k(e, '')
           },
           function (e, t) {
             var n = j(e, t)
@@ -6866,10 +6889,10 @@
           isIntentRoute: V,
           isSelfThreadReply: U,
           isSending: function (e) {
-            return w.n(e, '')
+            return w.m(e, '')
           },
           scheduledTweets: O.f,
-          sendingProgress: w.p,
+          sendingProgress: w.o,
           composeSemanticCoreId: F(function (e) {
             return e.composeSemanticCoreId
           }),
@@ -6889,7 +6912,7 @@
           addCommunityAudienceEducationFlag: function () {
             return Object(R.w)(R.e)
           },
-          updateAudienceControlsValue: w.u,
+          updateAudienceControlsValue: w.t,
         },
         Y = Object(D.g)(Q, X),
         J = n('RgK2'),

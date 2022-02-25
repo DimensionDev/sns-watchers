@@ -84,7 +84,7 @@
             fetchInitialIfNeeded: r.fetchInitialIfNeeded,
             fetchNextIfNeeded: r.fetchNextIfNeeded,
             scribeAction: w.c,
-            updateSingleComposerV2: C.x,
+            updateSingleComposerV2: C.w,
           }
         }),
         k = a('v//M'),

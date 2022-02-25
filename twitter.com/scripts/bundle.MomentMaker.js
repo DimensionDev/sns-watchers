@@ -6789,8 +6789,8 @@
                     I = E.dismissComposerCommandName,
                     S = E.editorState,
                     O = E.element,
-                    R = E.sendTweetCommandName,
-                    L = E.stripPastedStyles,
+                    R = E.pastedStylesAllowlist,
+                    L = E.sendTweetCommandName,
                     M = [G.root, G.rich, _ === H && G.richRoot]
                   return O && S
                     ? C.a.createElement(
@@ -6819,14 +6819,14 @@
                           onKeyDown: this._handleKeyDown,
                           onKeyPress: this._handleKeyPress,
                           onKeyUp: this._handleKeyUp,
+                          pastedStylesAllowlist: R,
                           placeholder: f,
                           placeholderTextColor: x.a.theme.colors.gray700,
                           positionCursorAtBeginning: v,
                           positionCursorAtEnd: y,
                           ref: this._setRichTextInputRef,
-                          sendTweetCommandName: R,
+                          sendTweetCommandName: L,
                           spellCheck: g,
-                          stripPastedStyles: L,
                           style: M,
                           testID: w,
                         }),
@@ -17819,27 +17819,29 @@
           o = void 0 === i ? 'normal' : i,
           d = e.isDisabled,
           p = e.onClick,
-          h = e.renderActionMenu,
-          m = e.style,
-          f = e.testID,
-          v = e.withDarkBackground,
-          y = void 0 !== v && v
+          h = e.preventFocusShift,
+          m = e.renderActionMenu,
+          f = e.style,
+          v = e.testID,
+          y = e.withDarkBackground,
+          b = void 0 !== y && y
         return a.a.createElement(c.a, {
           Icon: r,
           accessibilityLabel: l,
-          activeColor: t || (y ? 'white' : void 0),
-          backgroundColor: y ? 'translucentBlack77' : 'transparent',
+          activeColor: t || (b ? 'white' : void 0),
+          backgroundColor: b ? 'translucentBlack77' : 'transparent',
           behavioralEventContext: u,
-          color: y ? 'white' : 'gray700',
+          color: b ? 'white' : 'gray700',
           hoverLabel: { label: l },
           iconSize: o,
           isDisabled: d,
           onPress: function (e) {
             e && e.preventDefault(), p && p(e)
           },
-          renderMenu: h,
-          style: m,
-          testID: f,
+          preventFocusShift: h,
+          renderMenu: m,
+          style: f,
+          testID: v,
         })
       }
     },
@@ -29561,12 +29563,13 @@
           }
         }),
         J = function (e) {
-          var t = e.isDisabled,
-            n = e.query,
-            r = e.resultContext,
-            a = e.showIcon,
-            i = e.style,
-            o = (function (e, t) {
+          var t = v.a.useContext(g.a).featureSwitches,
+            n = e.isDisabled,
+            r = e.query,
+            a = e.resultContext,
+            i = e.showIcon,
+            o = e.style,
+            s = (function (e, t) {
               var n,
                 r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
                 a = K()(e),
@@ -29621,33 +29624,33 @@
                 })
               }
               return n
-            })(e.topic, n, true),
-            s = v.a.createElement(
+            })(e.topic, t.isTrue('responsive_web_typeahead_reverse_bolding_enabled') ? r : '', true),
+            c = v.a.createElement(
               D.b,
               null,
-              o.map(function (e, t) {
+              s.map(function (e, t) {
                 return v.a.createElement(G.c, { key: ''.concat(e.text).concat(t), part: e })
               }),
             ),
-            c = v.a.createElement(
+            l = v.a.createElement(
               v.a.Fragment,
               null,
-              s,
-              r
+              c,
+              a
                 ? v.a.createElement(
                     M.a,
                     { style: Q.context },
-                    r && r.types[0] && 'followable_topic' === r.types[0].type
+                    a && a.types[0] && 'followable_topic' === a.types[0].type
                       ? v.a.createElement(Y.a, { style: Q.icon })
                       : null,
-                    v.a.createElement(D.b, { color: 'gray700' }, r.display_string || ' '),
+                    v.a.createElement(D.b, { color: 'gray700' }, a.display_string || ' '),
                   )
                 : null,
             )
           return v.a.createElement(
             M.a,
-            { style: [Q.root, t && Q.disabled, i] },
-            a
+            { style: [Q.root, n && Q.disabled, o] },
+            i
               ? (function (e) {
                   var t = v.a.createElement(q.a, { Icon: X.a, color: 'neutral', size: 'xxxLarge', style: Q.searchIcon })
                   return v.a.createElement(
@@ -29660,8 +29663,8 @@
                     },
                     e,
                   )
-                })(c)
-              : c,
+                })(l)
+              : l,
           )
         },
         Z = (n('yH/f'), n('M0jS')),
@@ -48735,31 +48738,32 @@
                     l = n.isPresentational,
                     u = n.keyboardShortcut,
                     d = n.link,
-                    p = n.renderMenu,
-                    h = n.renderWrapper,
-                    m = void 0 === h ? y.a.Fragment : h,
-                    v = n.style,
-                    g = n.testID,
-                    _ = !k.a.theme.highContrastEnabled && !b.a.reducedMotionEnabled,
-                    w = null == i ? void 0 : i.token,
-                    T = null == i ? void 0 : i.viewState,
-                    I = null !== (e = null == i ? void 0 : i.viewType) && void 0 !== e ? e : 'tweet_action',
-                    S = this._getMemoizedBehavioralEventContext(w, T, I)
+                    p = n.preventFocusShift,
+                    h = n.renderMenu,
+                    m = n.renderWrapper,
+                    v = void 0 === m ? y.a.Fragment : m,
+                    g = n.style,
+                    _ = n.testID,
+                    w = !k.a.theme.highContrastEnabled && !b.a.reducedMotionEnabled,
+                    T = null == i ? void 0 : i.token,
+                    I = null == i ? void 0 : i.viewState,
+                    S = null !== (e = null == i ? void 0 : i.viewType) && void 0 !== e ? e : 'tweet_action',
+                    x = this._getMemoizedBehavioralEventContext(T, I, S)
                   return y.a.createElement(
                     f.a,
-                    { behavioralEventContext: S },
+                    { behavioralEventContext: x },
                     y.a.createElement(
                       D.a,
-                      { style: [N.root, v] },
+                      { style: [N.root, g] },
                       y.a.createElement(
-                        m,
+                        v,
                         null,
                         l
                           ? this._renderContent(s)
                           : y.a.createElement(
                               C.a,
                               {
-                                accessibilityHasPopup: p ? 'menu' : void 0,
+                                accessibilityHasPopup: h ? 'menu' : void 0,
                                 accessibilityLabel: r,
                                 disabled: c,
                                 enableKeyboardShortcuts: o,
@@ -48768,9 +48772,10 @@
                                 keyboardShortcut: u,
                                 link: d,
                                 onClick: this._handlePress,
-                                renderMenu: p,
+                                preventFocusShift: p,
+                                renderMenu: h,
                                 style: [N.triggerAreaRoot, N.outlineNone],
-                                testID: g,
+                                testID: _,
                               },
                               function (e) {
                                 var n = e.isFocused,
@@ -48781,7 +48786,7 @@
                               },
                             ),
                       ),
-                      _ ? y.a.createElement(E.a.Prepare, null) : null,
+                      w ? y.a.createElement(E.a.Prepare, null) : null,
                     ),
                   )
                 },
@@ -49140,7 +49145,7 @@
           return Object(ce.y)(e, ce.l)
         },
         _e = function (e) {
-          return Z.l(e, '')
+          return Z.k(e, '')
         },
         we = function (e, t) {
           return Object(fe.a)(e, t.tweet.id_str)
@@ -49276,7 +49281,7 @@
               removeTweetFromBookmarkFolder: le.b.removeTweetFromBookmarkFolder,
               removeTweetFromBookmarkFolderTimeline: le.d,
               updateCounts: ve.a.updateCounts,
-              resetDraft: Z.g,
+              resetDraft: Z.f,
               setArticlesVisited: he.e,
               setReplyVotingSurveyClicked: pe.K,
               setTweetMisinfoActionTaken: me.b,

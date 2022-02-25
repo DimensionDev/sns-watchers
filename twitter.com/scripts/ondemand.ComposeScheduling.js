@@ -488,7 +488,7 @@
               deleteScheduledTweet: I.a,
               fetchDraftTweets: x.c,
               fetchScheduledTweets: I.c,
-              updateSingleComposer: T.x,
+              updateSingleComposer: T.w,
             }
           })
           .withAnalytics({ page: 'unsent_tweets' }),
@@ -1645,17 +1645,17 @@
         D = a('RqPI'),
         C = a('oEGd'),
         S = Object(w.createSelector)(
-          _.o,
+          _.n,
           function (e) {
-            var t = _.j(e)
-            return _.l(e)[t].scheduledTweetId
+            var t = _.i(e)
+            return _.k(e)[t].scheduledTweetId
           },
           D.o,
           function (e, t, a) {
             return { scheduledFor: e, scheduledTweetId: t, language: a }
           },
         ),
-        x = { addToast: v.b, deleteScheduledTweet: T.a, updateSingleComposer: _.x, scribeAction: E.c },
+        x = { addToast: v.b, deleteScheduledTweet: T.a, updateSingleComposer: _.w, scribeAction: E.c },
         I = Object(C.g)(S, x),
         F = a('jHSc'),
         k = a('Gpeq'),

@@ -272,13 +272,6 @@
                                                                             alias: null,
                                                                             args: null,
                                                                             kind: 'ScalarField',
-                                                                            name: 'url',
-                                                                            storageKey: null,
-                                                                          },
-                                                                          {
-                                                                            alias: null,
-                                                                            args: null,
-                                                                            kind: 'ScalarField',
                                                                             name: 'verified',
                                                                             storageKey: null,
                                                                           },
@@ -448,7 +441,7 @@
             ],
           },
           params: {
-            id: 'vrDXaqJB6ZIXZQkhuvi8Kw',
+            id: '_g_y5D5OkBCYzWu4oD-YSg',
             metadata: {},
             name: 'ReportDetailQuery',
             operationKind: 'query',
@@ -618,13 +611,6 @@
                                               alias: null,
                                               args: null,
                                               kind: 'ScalarField',
-                                              name: 'url',
-                                              storageKey: null,
-                                            },
-                                            {
-                                              alias: null,
-                                              args: null,
-                                              kind: 'ScalarField',
                                               name: 'verified',
                                               storageKey: null,
                                             },
@@ -681,7 +667,7 @@
           type: 'TweetResults',
           abstractKey: null,
         }
-      ;(i.hash = '7f71f3b7eba1f3557c37027057803ab1'), (l.default = i)
+      ;(i.hash = '1aead3da6c12e083450a2f87e779a5f8'), (l.default = i)
     },
     'r/Jf': function (e, l, a) {
       'use strict'
@@ -876,7 +862,6 @@
                           protected: n.protected || !1,
                           screen_name: n.screen_name || '',
                           name: n.name || '',
-                          url: n.url || '',
                           verified: n.verified || !1,
                         },
                       ),
@@ -896,6 +881,7 @@
                       return o.a.createElement(S.a.Timestamp, F()({}, e, { link: void 0 }))
                     },
                     renderTombstone: m,
+                    staticLinkConfig: null,
                   }),
                 ),
               )
@@ -989,12 +975,12 @@
         W = a('t62R'),
         G = a('3rX5'),
         Q = a('zCf4'),
-        X = g.a.e37836f8,
-        J = g.a.ccf2f24e,
-        P = g.a.e238c59f,
-        q = 'gray700',
-        N = void 0 !== s ? s : (s = a('+hxm')),
-        Z = function () {
+        J = g.a.e37836f8,
+        P = g.a.ccf2f24e,
+        X = g.a.e238c59f,
+        N = 'gray700',
+        Y = void 0 !== s ? s : (s = a('+hxm')),
+        q = function () {
           var e,
             l,
             a,
@@ -1002,7 +988,7 @@
             t,
             r,
             i = Object(Q.h)(),
-            s = Object(H.a)(N, { reportId: i.reportId || '' }),
+            s = Object(H.a)(Y, { reportId: i.reportId || '' }),
             u =
               null == s ||
               null === (e = s.viewer_v2) ||
@@ -1025,40 +1011,40 @@
             null,
             o.a.createElement(
               O.a,
-              { color: q },
-              o.a.createElement(W.b, { color: q, weight: 'bold' }, J),
-              o.a.createElement(W.b, { color: q }, d),
+              { color: N },
+              o.a.createElement(W.b, { color: N, weight: 'bold' }, P),
+              o.a.createElement(W.b, { color: N }, d),
             ),
             o.a.createElement(W.b, { size: 'title3', weight: 'heavy' }, m),
             y ? o.a.createElement(j, { report: Object(c.a)(y) }) : null,
-            o.a.createElement(W.b, { size: 'headline2', style: Y.headline, weight: 'heavy' }, P),
-            o.a.createElement(W.b, { color: q, size: 'subtext2', weight: 'normal' }, p),
+            o.a.createElement(W.b, { size: 'headline2', style: Z.headline, weight: 'heavy' }, X),
+            o.a.createElement(W.b, { color: N, size: 'subtext2', weight: 'normal' }, p),
           )
         },
-        Y =
+        Z =
           ((l.default = Object(M.a)(
             function () {
               var e = Object(Q.f)(),
                 l = o.a.useContext(w.b).isModal
               return o.a.createElement(
                 d.b,
-                { backButtonType: 'close', containerStyle: Y.root, documentTitle: X, history: e, title: X },
+                { backButtonType: 'close', containerStyle: Z.root, documentTitle: J, history: e, title: J },
                 o.a.createElement(
                   b.a,
-                  { style: Y.parentContainer },
+                  { style: Z.parentContainer },
                   o.a.createElement(
                     b.a,
-                    { style: Y.contentHeader },
+                    { style: Z.contentHeader },
                     o.a.createElement(
                       b.a,
-                      { style: Y.imageContainer },
-                      o.a.createElement(G.a, { accessibilityLabel: '', source: y, style: Y.image }),
+                      { style: Z.imageContainer },
+                      o.a.createElement(G.a, { accessibilityLabel: '', source: y, style: Z.image }),
                     ),
                   ),
                   o.a.createElement(
                     b.a,
-                    { style: [Y.contentBody, l ? Y.wideScreen : Y.narrowScreen] },
-                    o.a.createElement(p.a, { errorConfig: { context: 'REPORT_DETAIL' } }, o.a.createElement(Z, null)),
+                    { style: [Z.contentBody, l ? Z.wideScreen : Z.narrowScreen] },
+                    o.a.createElement(p.a, { errorConfig: { context: 'REPORT_DETAIL' } }, o.a.createElement(q, null)),
                   ),
                 ),
               )

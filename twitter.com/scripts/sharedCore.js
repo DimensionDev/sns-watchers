@@ -6840,8 +6840,8 @@
                     T = C.dismissComposerCommandName,
                     x = C.editorState,
                     O = C.element,
-                    R = C.sendTweetCommandName,
-                    P = C.stripPastedStyles,
+                    R = C.pastedStylesAllowlist,
+                    P = C.sendTweetCommandName,
                     L = [q.root, q.rich, _ === U && q.richRoot]
                   return O && x
                     ? E.a.createElement(
@@ -6870,14 +6870,14 @@
                           onKeyDown: this._handleKeyDown,
                           onKeyPress: this._handleKeyPress,
                           onKeyUp: this._handleKeyUp,
+                          pastedStylesAllowlist: R,
                           placeholder: m,
                           placeholderTextColor: I.a.theme.colors.gray700,
                           positionCursorAtBeginning: v,
                           positionCursorAtEnd: g,
                           ref: this._setRichTextInputRef,
-                          sendTweetCommandName: R,
+                          sendTweetCommandName: P,
                           spellCheck: b,
-                          stripPastedStyles: P,
                           style: L,
                           testID: w,
                         }),
@@ -7201,6 +7201,18 @@
               }
             },
           }),
+          updateCoverImage: Object(d.c)(p, 'updateCoverImage', {
+            getParams: function (e) {
+              var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
+                n = t.mediaId
+              return { twitterArticleId: e, mediaId: n }
+            },
+            getApiMethod: function (e) {
+              return e.TwitterArticles.updateTwitterArticleCoverImage
+            },
+            context: 'UPDATE_TWITTER_ARTICLE_COVER_IMAGE',
+            mapResponseToActions: m,
+          }),
           updateData: Object(d.c)(p, 'updateData', {
             getParams: function (e) {
               var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
@@ -7211,6 +7223,18 @@
               return e.TwitterArticles.updateTwitterArticleData
             },
             context: 'UPDATE_TWITTER_ARTICLE_DATA',
+            mapResponseToActions: m,
+          }),
+          updateMedia: Object(d.c)(p, 'updateMedia', {
+            getParams: function (e) {
+              var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
+                n = t.mediaKeys
+              return { twitterArticleId: e, mediaKeys: n }
+            },
+            getApiMethod: function (e) {
+              return e.TwitterArticles.updateTwitterArticleMedia
+            },
+            context: 'UPDATE_TWITTER_ARTICLE_MEDIA',
             mapResponseToActions: m,
           }),
           updateTitle: Object(d.c)(p, 'updateTitle', {
@@ -18745,27 +18769,29 @@
           a = void 0 === o ? 'normal' : o,
           d = e.isDisabled,
           p = e.onClick,
-          f = e.renderActionMenu,
-          h = e.style,
-          m = e.testID,
-          v = e.withDarkBackground,
-          g = void 0 !== v && v
+          f = e.preventFocusShift,
+          h = e.renderActionMenu,
+          m = e.style,
+          v = e.testID,
+          g = e.withDarkBackground,
+          y = void 0 !== g && g
         return i.a.createElement(c.a, {
           Icon: r,
           accessibilityLabel: l,
-          activeColor: t || (g ? 'white' : void 0),
-          backgroundColor: g ? 'translucentBlack77' : 'transparent',
+          activeColor: t || (y ? 'white' : void 0),
+          backgroundColor: y ? 'translucentBlack77' : 'transparent',
           behavioralEventContext: u,
-          color: g ? 'white' : 'gray700',
+          color: y ? 'white' : 'gray700',
           hoverLabel: { label: l },
           iconSize: a,
           isDisabled: d,
           onPress: function (e) {
             e && e.preventDefault(), p && p(e)
           },
-          renderMenu: f,
-          style: h,
-          testID: m,
+          preventFocusShift: f,
+          renderMenu: h,
+          style: m,
+          testID: v,
         })
       }
     },
@@ -54272,31 +54298,32 @@
                     l = n.isPresentational,
                     u = n.keyboardShortcut,
                     d = n.link,
-                    p = n.renderMenu,
-                    f = n.renderWrapper,
-                    h = void 0 === f ? g.a.Fragment : f,
-                    v = n.style,
-                    b = n.testID,
-                    _ = !S.a.theme.highContrastEnabled && !y.a.reducedMotionEnabled,
-                    w = null == o ? void 0 : o.token,
-                    k = null == o ? void 0 : o.viewState,
-                    T = null !== (e = null == o ? void 0 : o.viewType) && void 0 !== e ? e : 'tweet_action',
-                    x = this._getMemoizedBehavioralEventContext(w, k, T)
+                    p = n.preventFocusShift,
+                    f = n.renderMenu,
+                    h = n.renderWrapper,
+                    v = void 0 === h ? g.a.Fragment : h,
+                    b = n.style,
+                    _ = n.testID,
+                    w = !S.a.theme.highContrastEnabled && !y.a.reducedMotionEnabled,
+                    k = null == o ? void 0 : o.token,
+                    T = null == o ? void 0 : o.viewState,
+                    x = null !== (e = null == o ? void 0 : o.viewType) && void 0 !== e ? e : 'tweet_action',
+                    I = this._getMemoizedBehavioralEventContext(k, T, x)
                   return g.a.createElement(
                     m.a,
-                    { behavioralEventContext: x },
+                    { behavioralEventContext: I },
                     g.a.createElement(
                       D.a,
-                      { style: [j.root, v] },
+                      { style: [j.root, b] },
                       g.a.createElement(
-                        h,
+                        v,
                         null,
                         l
                           ? this._renderContent(s)
                           : g.a.createElement(
                               E.a,
                               {
-                                accessibilityHasPopup: p ? 'menu' : void 0,
+                                accessibilityHasPopup: f ? 'menu' : void 0,
                                 accessibilityLabel: r,
                                 disabled: c,
                                 enableKeyboardShortcuts: a,
@@ -54305,9 +54332,10 @@
                                 keyboardShortcut: u,
                                 link: d,
                                 onClick: this._handlePress,
-                                renderMenu: p,
+                                preventFocusShift: p,
+                                renderMenu: f,
                                 style: [j.triggerAreaRoot, j.outlineNone],
-                                testID: b,
+                                testID: _,
                               },
                               function (e) {
                                 var n = e.isFocused,
@@ -54318,7 +54346,7 @@
                               },
                             ),
                       ),
-                      _ ? g.a.createElement(C.a.Prepare, null) : null,
+                      w ? g.a.createElement(C.a.Prepare, null) : null,
                     ),
                   )
                 },
@@ -54677,7 +54705,7 @@
           return Object(ce.y)(e, ce.l)
         },
         _e = function (e) {
-          return Z.l(e, '')
+          return Z.k(e, '')
         },
         we = function (e, t) {
           return Object(me.a)(e, t.tweet.id_str)
@@ -54813,7 +54841,7 @@
               removeTweetFromBookmarkFolder: le.b.removeTweetFromBookmarkFolder,
               removeTweetFromBookmarkFolderTimeline: le.d,
               updateCounts: ve.a.updateCounts,
-              resetDraft: Z.g,
+              resetDraft: Z.f,
               setArticlesVisited: fe.e,
               setReplyVotingSurveyClicked: pe.K,
               setTweetMisinfoActionTaken: he.b,

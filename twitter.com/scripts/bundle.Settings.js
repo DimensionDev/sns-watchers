@@ -1756,6 +1756,7 @@
               borderTopWidth: e.borderWidths.small,
             },
             inputContainer: { flexDirection: 'row', alignItems: 'center' },
+            inputWrapper: { flex: 1 },
             backButton: { marginRight: e.spaces.space4 },
           }
         }),
@@ -1770,93 +1771,94 @@
             l = e.isModal,
             s = e.items,
             u = e.onBackClicked,
-            d = e.onDismiss,
-            p = e.onFocus,
-            f = e.onItemClick,
-            h = e.onQueryChange,
-            m = e.onSubmit,
-            b = e.placeholder,
-            g = e.renderEmptyState,
-            y = e.renderInSearchField,
-            E = e.rounded,
-            w = e.shouldAutoFocus,
-            S = e.shouldClearOnSelect,
-            _ = e.shouldFocusOnClear,
-            C = e.shouldRenderEmptyState,
-            k = e.source,
-            I = e.style,
-            x = e.testID,
-            O = v.a.useRef(null),
+            d = e.onClick,
+            p = e.onDismiss,
+            f = e.onFocus,
+            h = e.onItemClick,
+            m = e.onQueryChange,
+            b = e.onSubmit,
+            g = e.placeholder,
+            y = e.renderEmptyState,
+            E = e.renderInSearchField,
+            w = e.rounded,
+            S = e.shouldAutoFocus,
+            _ = e.shouldClearOnSelect,
+            C = e.shouldFocusOnClear,
+            k = e.shouldRenderEmptyState,
+            I = e.source,
+            x = e.style,
+            O = e.testID,
             A = v.a.useRef(null),
             D = v.a.useRef(null),
             F = v.a.useRef(null),
-            T = v.a.useState(!1),
-            L = ae()(T, 2),
-            P = L[0],
-            B = L[1],
-            R = v.a.useState(null),
-            N = ae()(R, 2),
-            M = N[0],
-            H = N[1],
-            j = v.a.useState(Object(fe.b)()),
-            z = ae()(j, 2),
-            V = z[0],
-            W = z[1],
-            K = v.a.useState(function () {
+            T = v.a.useRef(null),
+            L = v.a.useState(!1),
+            P = ae()(L, 2),
+            B = P[0],
+            R = P[1],
+            N = v.a.useState(null),
+            M = ae()(N, 2),
+            H = M[0],
+            j = M[1],
+            z = v.a.useState(Object(fe.b)()),
+            V = ae()(z, 2),
+            W = V[0],
+            K = V[1],
+            G = v.a.useState(function () {
               return Object(fe.f)()
             }),
-            G = ae()(K, 1)[0],
-            U = v.a.useState(''),
-            Y = ae()(U, 2),
-            q = Y[0],
-            X = Y[1],
-            Q = function (e) {
+            U = ae()(G, 1)[0],
+            Y = v.a.useState(''),
+            q = ae()(Y, 2),
+            X = q[0],
+            Q = q[1],
+            J = function (e) {
               var t,
                 n = le.a.getCount() > 0
-              ;(null != O && null !== (t = O.current) && void 0 !== t && t.contains(e.target)) || n || (P && $())
+              ;(null != A && null !== (t = A.current) && void 0 !== t && t.contains(e.target)) || n || (B && ee())
             }
           v.a.useEffect(function () {
             return (
-              window.document.addEventListener('click', Q, !0),
+              window.document.addEventListener('click', J, !0),
               function () {
-                window.document.removeEventListener('click', Q, !0)
+                window.document.removeEventListener('click', J, !0)
               }
             )
           })
-          var J = function () {
-              if (null != A && A.current) {
-                var e = A.current.getBoundingClientRect().bottom
-                e !== M && H(e)
+          var Z = function () {
+              if (null != D && D.current) {
+                var e = D.current.getBoundingClientRect().bottom
+                e !== H && j(e)
               }
             },
-            Z = function (e) {
-              X(e), null == h || h(e)
-            },
-            $ = function () {
-              B(!1), null == d || d()
+            $ = function (e) {
+              Q(e), null == m || m(e)
             },
             ee = function () {
-              var e
-              $(), null == D || null === (e = D.current) || void 0 === e || e.blur()
+              R(!1), null == p || p()
             },
-            te = function (e, t) {
+            te = function () {
+              var e
+              ee(), null == F || null === (e = F.current) || void 0 === e || e.blur()
+            },
+            ne = function (e, t) {
               var n,
                 a,
-                r = S ? '' : q
-              ;(B(!1), D.current) &&
-                (S && _
-                  ? D.current.focus()
-                  : (S && (null === (n = D.current.textInput) || void 0 === n || n.clear()),
-                    null === (a = D.current) || void 0 === a || a.blur()))
-              Z(r), null == d || d(), null == f || f(e, t)
+                r = _ ? '' : X
+              ;(R(!1), F.current) &&
+                (_ && C
+                  ? F.current.focus()
+                  : (_ && (null === (n = F.current.textInput) || void 0 === n || n.clear()),
+                    null === (a = F.current) || void 0 === a || a.blur()))
+              $(r), null == p || p(), null == h || h(e, t)
             },
-            ne = function () {
-              W(Object(fe.b)())
+            pe = function () {
+              K(Object(fe.b)())
             },
-            pe = P || t
+            Ee = B || t
           return v.a.createElement(
             ce.a,
-            { onLayout: J, ref: O, style: [ye.root, I] },
+            { onLayout: Z, ref: A, style: [ye.root, x] },
             v.a.createElement(
               se.a,
               {
@@ -1866,18 +1868,18 @@
                   if (Object(fe.g)(e)) {
                     var a, r
                     if (n === re.a)
-                      return null === (a = F.current) || void 0 === a || a.focusNext(), void e.preventDefault()
+                      return null === (a = T.current) || void 0 === a || a.focusNext(), void e.preventDefault()
                     if (n === re.b)
-                      return null === (r = F.current) || void 0 === r || r.focusPrevious(), void e.preventDefault()
-                    if (n === re.d) return $(), void e.preventDefault()
+                      return null === (r = T.current) || void 0 === r || r.focusPrevious(), void e.preventDefault()
+                    if (n === re.d) return ee(), void e.preventDefault()
                     if (n !== re.f) {
                       var o
-                      if (n === re.c && null !== (t = F.current) && void 0 !== t && t.hasFocusedItem())
+                      if (n === re.c && null !== (t = T.current) && void 0 !== t && t.hasFocusedItem())
                         return (
-                          null === (o = F.current) || void 0 === o || o.selectFocusedItem(), void e.preventDefault()
+                          null === (o = T.current) || void 0 === o || o.selectFocusedItem(), void e.preventDefault()
                         )
-                      P || B(!0)
-                    } else $()
+                      B || R(!0)
+                    } else ee()
                   }
                 },
                 style: ye.keydownInputListener,
@@ -1885,94 +1887,98 @@
               v.a.createElement(
                 oe.a,
                 {
-                  accessibilityLabel: b,
+                  accessibilityLabel: g,
                   accessibilityRole: 'search',
                   onSubmit: function (e) {
                     var t
                     e.preventDefault(),
                       e.stopPropagation(),
-                      null == D || null === (t = D.current) || void 0 === t || t.blur(),
-                      B(!1),
-                      null == d || d(),
-                      null == m || m()
+                      null == F || null === (t = F.current) || void 0 === t || t.blur(),
+                      R(!1),
+                      null == p || p(),
+                      null == b || b()
                   },
                   style: ye.wrapper,
                 },
                 v.a.createElement(
                   ce.a,
-                  { ref: A, style: [ye.inputContainer, i] },
-                  pe && u
+                  { ref: D, style: [ye.inputContainer, i] },
+                  Ee && u
                     ? v.a.createElement(ue.a, {
                         accessibilityLabel: ge,
                         icon: v.a.createElement(he.a, null),
-                        onClick: function () {
-                          $(), null == u || u()
+                        onClick: function (e) {
+                          null == e || e.stopPropagation(), ee(), null == u || u()
                         },
                         style: ye.backButton,
                         type: 'primaryText',
                       })
                     : null,
-                  v.a.createElement(de.a, {
-                    Icon: me.a,
-                    ariaActiveDescendant: V,
-                    ariaAutocomplete: 'list',
-                    ariaExpanded: pe,
-                    ariaLabel: be,
-                    ariaOwns: G,
-                    ariaRole: 'combobox',
-                    autoComplete: 'off',
-                    autoCorrect: !1,
-                    autoFocus: w,
-                    contentBelow: null == y ? void 0 : y(),
-                    focusOnClear: _,
-                    isCompact: c,
-                    onChange: function (e) {
-                      Z(e.target.value), J()
-                    },
-                    onClear: function () {
-                      Z('')
-                    },
-                    onFocus: function () {
-                      B(!0), J(), null == p || p()
-                    },
-                    onLayout: J,
-                    placeholder: b,
-                    ref: D,
-                    returnKeyType: 'search',
-                    spellCheck: 'false',
-                    styleType: E ? 'pill' : 'selection',
-                    testID: x,
-                    value: q,
-                    withClearButton: !a && P,
-                  }),
+                  v.a.createElement(
+                    ce.a,
+                    { onClick: d, style: ye.inputWrapper },
+                    v.a.createElement(de.a, {
+                      Icon: me.a,
+                      ariaActiveDescendant: W,
+                      ariaAutocomplete: 'list',
+                      ariaExpanded: Ee,
+                      ariaLabel: be,
+                      ariaOwns: U,
+                      ariaRole: 'combobox',
+                      autoComplete: 'off',
+                      autoCorrect: !1,
+                      autoFocus: S,
+                      contentBelow: null == E ? void 0 : E(),
+                      focusOnClear: C,
+                      isCompact: c,
+                      onChange: function (e) {
+                        $(e.target.value), Z()
+                      },
+                      onClear: function () {
+                        $('')
+                      },
+                      onFocus: function () {
+                        R(!0), Z(), null == f || f()
+                      },
+                      onLayout: Z,
+                      placeholder: g,
+                      ref: F,
+                      returnKeyType: 'search',
+                      spellCheck: 'false',
+                      styleType: w ? 'pill' : 'selection',
+                      testID: O,
+                      value: X,
+                      withClearButton: !a && B,
+                    }),
+                  ),
                 ),
                 v.a.createElement(
                   ce.a,
-                  { style: [ye.typeaheadContainer, !E && ye.topBorder] },
-                  pe
+                  { style: [ye.typeaheadContainer, !w && ye.topBorder] },
+                  Ee
                     ? (function () {
                         var e
                         return (
                           'cover' === o
-                            ? (e = [ye.dropdown, M ? Object(fe.d)(M) : ye.wideModeDropdown])
+                            ? (e = [ye.dropdown, H ? Object(fe.d)(H) : ye.wideModeDropdown])
                             : 'overlap' === o && (e = l ? ye.modalDropdown : [ye.dropdown, ye.wideModeDropdown]),
-                          g && C
-                            ? g({
-                                ariaDescendantId: V,
-                                domId: G,
-                                onDismiss: ee,
-                                onItemFocusChanged: ne,
-                                ref: F,
+                          y && k
+                            ? y({
+                                ariaDescendantId: W,
+                                domId: U,
+                                onDismiss: te,
+                                onItemFocusChanged: pe,
+                                ref: T,
                                 style: e,
                               })
                             : v.a.createElement(ie.a, {
-                                ariaDescendantId: V,
-                                domId: G,
+                                ariaDescendantId: W,
+                                domId: U,
                                 items: s,
-                                onItemClick: te,
-                                onItemFocusChanged: ne,
-                                ref: F,
-                                source: k,
+                                onItemClick: ne,
+                                onItemFocusChanged: pe,
+                                ref: T,
+                                source: I,
                                 style: e,
                               })
                         )
@@ -2120,7 +2126,8 @@
                   inputStyle: et.input,
                   items: a,
                   onBackClicked: Object(U.a)() ? o._handleSearchInputBackClicked : void 0,
-                  onFocus: o._handleSearchInputFocus,
+                  onClick: o._handleSearchInputClick,
+                  onFocus: s ? o._handleSearchInputClick : void 0,
                   onItemClick: o._handleSearchItemClicked,
                   onQueryChange: o._handleSearchQueryChanged,
                   placeholder: Ze,
@@ -2135,7 +2142,7 @@
                         )
                   },
                   rounded: !0,
-                  shouldRenderEmptyState: !d || 0 === a.length,
+                  shouldRenderEmptyState: l && (!d || 0 === a.length),
                   source: ve.d.SearchBox,
                 })
               }),
@@ -2207,11 +2214,11 @@
               y()(p()(o), '_isUserLoggedIn', function () {
                 return !!o.props.loggedInUser
               }),
-              y()(p()(o), '_handleSearchInputFocus', function () {
+              y()(p()(o), '_handleSearchInputClick', function () {
                 o.setState({ isSearching: !0 })
               }),
               y()(p()(o), '_handleSearchQueryChanged', function (e) {
-                o.setState({ searchQuery: e })
+                o.setState({ searchQuery: e, isSearching: !0 })
               }),
               y()(p()(o), '_handleSearchItemClicked', function (e) {
                 var t = o.props.history

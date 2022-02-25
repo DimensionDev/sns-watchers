@@ -5,7 +5,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'MomentAnalyticsScreen', function () {
-          return F
+          return x
         })
       var r = a('VrFO'),
         n = a.n(r),
@@ -48,18 +48,18 @@
         C = a('LVU8'),
         _ = a('jHSc'),
         U = a('MWbm'),
-        T = a('t62R'),
-        O = a('MtXG'),
+        O = a('t62R'),
+        T = a('MtXG'),
         R = a('855f'),
-        w = a('rHpw'),
-        I = a('7JQg'),
+        I = a('rHpw'),
+        w = a('7JQg'),
         L = a('3XMw'),
         P = a.n(L),
-        A = P.a.e2e35f0d,
+        D = P.a.e2e35f0d,
         k = P.a.icfe5fe3,
-        D = P.a.a52a1fb9,
-        B = P.a.if221231,
-        F = (function (e) {
+        A = P.a.a52a1fb9,
+        F = P.a.if221231,
+        x = (function (e) {
           l()(a, e)
           var t = u()(a)
           function a(e) {
@@ -124,93 +124,93 @@
                         { backButtonType: 'close', backLocation: g, documentTitle: E, history: t, title: E },
                         m.a.createElement(
                           U.a,
-                          { style: x.container },
+                          { style: B.container },
                           m.a.createElement(
                             U.a,
-                            { style: x.titleTextContainer },
-                            m.a.createElement(T.b, { style: x.titleText, weight: 'bold' }, c),
+                            { style: B.titleTextContainer },
+                            m.a.createElement(O.b, { style: B.titleText, weight: 'bold' }, c),
                           ),
                           m.a.createElement(
-                            O.a.Group,
+                            T.a.Group,
                             null,
                             m.a.createElement(
                               U.a,
                               null,
                               m.a.createElement(
                                 U.a,
-                                { style: x.analytic },
+                                { style: B.analytic },
                                 m.a.createElement(
-                                  O.a,
+                                  T.a,
                                   null,
                                   m.a.createElement(
                                     P.a.I18NFormatMessage,
                                     { $i18n: 'gfc363c4' },
                                     m.a.createElement(
-                                      O.a.Value,
+                                      T.a.Value,
                                       null,
                                       P.a.f22fc1cb({ formattedCount: R.a.getFormattedCount(Number(s)) }),
                                     ),
-                                    m.a.createElement(O.a.Value, null, P.a.c71523ef({ count: s })),
+                                    m.a.createElement(T.a.Value, null, P.a.c71523ef({ count: s })),
                                   ),
                                 ),
-                                m.a.createElement(T.b, { color: 'gray700' }, A),
+                                m.a.createElement(O.b, { color: 'gray700' }, D),
                               ),
                               m.a.createElement(
                                 U.a,
-                                { style: x.analytic },
+                                { style: B.analytic },
                                 m.a.createElement(
-                                  O.a,
+                                  T.a,
                                   null,
                                   m.a.createElement(
                                     P.a.I18NFormatMessage,
                                     { $i18n: 'e79f5450' },
                                     m.a.createElement(
-                                      O.a.Value,
+                                      T.a.Value,
                                       null,
                                       P.a.eca2dfe8({ formattedCount: R.a.getFormattedCount(Number(d)) }),
                                     ),
-                                    m.a.createElement(O.a.Value, null, P.a.a77bd6f4({ count: d })),
+                                    m.a.createElement(T.a.Value, null, P.a.a77bd6f4({ count: d })),
                                   ),
                                 ),
-                                m.a.createElement(T.b, { color: 'gray700' }, k),
+                                m.a.createElement(O.b, { color: 'gray700' }, k),
                               ),
                               m.a.createElement(
                                 U.a,
-                                { style: x.analytic },
+                                { style: B.analytic },
                                 m.a.createElement(
-                                  O.a,
+                                  T.a,
                                   null,
                                   m.a.createElement(
                                     P.a.I18NFormatMessage,
                                     { $i18n: 'fcbb0929' },
                                     m.a.createElement(
-                                      O.a.Value,
+                                      T.a.Value,
                                       null,
                                       P.a.cb22dca4({ formattedCount: R.a.getFormattedCount(Number(h)) }),
                                     ),
-                                    m.a.createElement(O.a.Value, null, P.a.a30d7c4d({ count: h })),
+                                    m.a.createElement(T.a.Value, null, P.a.a30d7c4d({ count: h })),
                                   ),
                                 ),
-                                m.a.createElement(T.b, { color: 'gray700' }, D),
+                                m.a.createElement(O.b, { color: 'gray700' }, A),
                               ),
                               m.a.createElement(
                                 U.a,
-                                { style: x.analytic },
+                                { style: B.analytic },
                                 m.a.createElement(
-                                  O.a,
+                                  T.a,
                                   null,
                                   m.a.createElement(
                                     P.a.I18NFormatMessage,
                                     { $i18n: 'afba3eba' },
                                     m.a.createElement(
-                                      O.a.Value,
+                                      T.a.Value,
                                       null,
                                       P.a.e5463c29({ formattedCount: R.a.getFormattedCount(f) }),
                                     ),
-                                    m.a.createElement(O.a.Value, null, P.a.j20f66ed({ count: f })),
+                                    m.a.createElement(T.a.Value, null, P.a.j20f66ed({ count: f })),
                                   ),
                                 ),
-                                m.a.createElement(T.b, { color: 'gray700' }, B),
+                                m.a.createElement(O.b, { color: 'gray700' }, F),
                               ),
                             ),
                           ),
@@ -223,7 +223,7 @@
             a
           )
         })(m.a.Component),
-        x = w.a.create(function (e) {
+        B = I.a.create(function (e) {
           return {
             analytic: { marginBottom: e.spaces.space16 },
             container: { height: '100%', padding: 20 },
@@ -231,7 +231,7 @@
             titleTextContainer: { marginBottom: e.spaces.space16 },
           }
         })
-      t.default = Object(I.a)({ page: 'moments_analytics' })(E(F))
+      t.default = Object(w.a)({ page: 'moments_analytics' })(E(x))
     },
     DBID: function (e, t, a) {
       'use strict'
@@ -301,233 +301,223 @@
       'use strict'
       a.r(t),
         a.d(t, 'getReferringPage', function () {
-          return Y
+          return ae
         }),
         a.d(t, 'TwitterBlueSignUpScreen', function () {
-          return Z
+          return ne
         })
-      var r = a('ddV6'),
+      var r = a('yiKp'),
         n = a.n(r),
-        i = (a('M+/F'), a('1t7P'), a('jQ/y'), a('z84I'), a('ERkP')),
+        i = a('ddV6'),
         c = a.n(i),
-        o = a('v6aA'),
-        l = a('XOb8'),
-        s = a('rxPX'),
-        u = a('su2V'),
-        d = Object(s.a)()
-          .propsFromState(function () {
-            return {
-              productDetailsFetchStatus: function (e) {
-                return Object(u.l)(e, l.d)
-              },
-              productDetails: function (e) {
-                return Object(u.k)(e, l.d)
-              },
-              checkoutUrlFetchStatus: function (e) {
-                return Object(u.f)(e, l.d)
-              },
-              checkoutUrl: function (e) {
-                return Object(u.e)(e, l.d)
-              },
-            }
-          })
-          .propsFromActions(function () {
-            return { fetchSubscriptionProductDetails: u.d, fetchSubscriptionProductCheckoutUrl: u.b }
-          })
-          .withAnalytics({ page: 'subscriptions', section: 'marketing' }),
-        m = a('v//M'),
-        p = a('3XMw'),
-        f = a.n(p),
-        b = a.p + 'undo_tweet_illustration.0e0907c5.svg',
-        h = a('yiKp'),
-        g = a.n(h),
-        E = a('Lsrn'),
-        v = a('k/Ka'),
-        y = function () {
+        o = (a('M+/F'), a('1t7P'), a('jQ/y'), a('z84I'), a('ERkP')),
+        l = a.n(o),
+        s = a('v6aA'),
+        u = a('3XMw'),
+        d = a.n(u),
+        m = a.p + 'undo_tweet_illustration.0e0907c5.svg',
+        p = a('Lsrn'),
+        f = a('k/Ka'),
+        b = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(v.a)(
+          return Object(f.a)(
             'svg',
-            g()(
-              g()({}, e),
+            n()(
+              n()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [E.a.root, e.style],
+                style: [p.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
-            c.a.createElement(
+            l.a.createElement(
               'g',
               null,
-              c.a.createElement('path', {
+              l.a.createElement('path', {
                 d: 'M22.906 6.356c-.26-.124-.568-.088-.794.093l-2.737 2.207V5.283c0-1.24-1.01-2.25-2.25-2.25H3.167c-1.24 0-2.25 1.01-2.25 2.25v14.5c0 1.24 1.01 2.25 2.25 2.25h13.958c1.24 0 2.25-1.01 2.25-2.25V16.41l2.737 2.207c.136.11.303.166.47.166.11 0 .222-.024.324-.073.26-.125.427-.388.427-.677v-11c0-.29-.166-.552-.427-.677zm-5.03 13.427c0 .413-.338.75-.75.75H3.165c-.412 0-.75-.337-.75-.75v-14.5c0-.413.338-.75.75-.75h13.96c.412 0 .75.337.75.75v14.5zm3.957-3.318l-2.458-1.983v-3.897l2.458-1.983v7.863z',
               }),
-              c.a.createElement('path', {
+              l.a.createElement('path', {
                 d: 'M10.146 17.395c-2.68 0-4.86-2.18-4.86-4.86s2.18-4.862 4.86-4.862 4.86 2.18 4.86 4.86-2.18 4.862-4.86 4.862zm0-8.223c-1.853 0-3.36 1.508-3.36 3.36s1.508 3.362 3.36 3.362c1.854 0 3.36-1.508 3.36-3.36S12 9.17 10.147 9.17z',
               }),
             ),
           )
         }
-      y.metadata = { width: 24, height: 24 }
-      var S = y,
-        C = a('ShJ/'),
-        _ = a('g7Ra'),
-        U = a('pu5c'),
-        T = a('5VjN'),
-        O = a('JzwX'),
-        R = function () {
+      b.metadata = { width: 24, height: 24 }
+      var h = b,
+        g = a('ShJ/'),
+        E = a('g7Ra'),
+        v = a('pu5c'),
+        y = a('5VjN'),
+        S = a('JzwX'),
+        C = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(v.a)(
+          return Object(f.a)(
             'svg',
-            g()(
-              g()({}, e),
+            n()(
+              n()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [E.a.root, e.style],
+                style: [p.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
-            c.a.createElement(
+            l.a.createElement(
               'g',
               null,
-              c.a.createElement('path', {
+              l.a.createElement('path', {
                 d: 'M19.745 1H8.503C7.261 1 6.248 2.014 6.248 3.258v1.385H4.255C3.012 4.643 2 5.657 2 6.901v15.345c0 .281.16.542.411.672s.551.1.782-.06l6.683-4.877 6.683 4.877c.13.09.281.141.441.141.12 0 .23-.03.341-.08.251-.13.411-.391.411-.672v-5.259l3.046 2.218c.14.1.291.151.451.151.11 0 .231-.03.341-.09.25-.122.41-.383.41-.664V3.258C22 2.014 20.988 1 19.745 1zm-3.497 19.771l-5.471-3.994-.461-.331c-.261-.191-.621-.191-.882 0l-3.166 2.308-2.765 2.017V6.901c0-.412.341-.753.752-.753h11.242c.411 0 .752.341.752.753v13.87zm4.249-3.653l-2.745-1.997v-8.22c0-1.244-1.012-2.258-2.255-2.258H7.752V3.258c0-.412.331-.753.752-.753h11.242c.411 0 .752.341.752.753v13.86z',
               }),
-              c.a.createElement('path', { d: 'M0 0h24v24H0z', fill: 'none' }),
+              l.a.createElement('path', { d: 'M0 0h24v24H0z', fill: 'none' }),
             ),
           )
         }
-      R.metadata = { width: 24, height: 24 }
-      var w = R,
-        I = a('hBoh'),
-        L = function () {
+      C.metadata = { width: 24, height: 24 }
+      var _ = C,
+        U = a('hBoh'),
+        O = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(v.a)(
+          return Object(f.a)(
             'svg',
-            g()(
-              g()({}, e),
+            n()(
+              n()({}, e),
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [E.a.root, e.style],
+                style: [p.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
-            c.a.createElement(
+            l.a.createElement(
               'g',
               null,
-              c.a.createElement('path', {
+              l.a.createElement('path', {
                 d: 'M8.18 16.99c-.19.154-.476.032-.504-.21-.137-1.214-.234-4.053 1.483-5.943.908-1 3.02-1.52 4.475-.198s1.14 3.473.23 4.473c-2.07 2.15-3.428.058-5.686 1.878zm7.512-5.785l6.383-7.216c.45-.45.45-1.18 0-1.628-.45-.45-1.178-.45-1.627 0l-7.232 6.402s.782.106 1.595.93c.548.558.882 1.51.882 1.51z',
               }),
-              c.a.createElement('path', {
+              l.a.createElement('path', {
                 d: 'M17.45 22.28H3.673c-1.148 0-2.083-.946-2.083-2.11V7.926c0-1.165.934-2.112 2.082-2.112h5.836c.414 0 .75.336.75.75s-.336.75-.75.75H3.672c-.32 0-.583.274-.583.612V20.17c0 .336.26.61.582.61h13.78c.32 0 .583-.273.583-.61v-6.28c0-.415.336-.75.75-.75s.75.335.75.75v6.28c0 1.163-.934 2.11-2.084 2.11z',
               }),
             ),
           )
         }
-      L.metadata = { width: 24, height: 24 }
-      var P = L,
-        A = function (e, t, a) {
-          var r = [{ icon: S, heading: f.a.a99d8e60, description: f.a.gdd8144c, platformAvailabilityLabel: ['Web'] }]
+      O.metadata = { width: 24, height: 24 }
+      var T = O,
+        R = function (e, t, a) {
+          var r = [{ icon: h, heading: d.a.a99d8e60, description: d.a.gdd8144c, platformAvailabilityLabel: ['Web'] }]
           return (
             a &&
               r.push({
-                icon: C.a,
-                heading: f.a.e4b3f520,
-                description: f.a.h73af45f,
+                icon: g.a,
+                heading: d.a.e4b3f520,
+                description: d.a.h73af45f,
                 platformAvailabilityLabel: ['iOS'],
               }),
             [
               {
-                blurb: f.a.c4debbdf,
+                blurb: d.a.c4debbdf,
                 features: [
                   [
                     {
-                      icon: _.a,
-                      heading: f.a.de43eaf2,
-                      description: f.a.g52ab673,
+                      icon: E.a,
+                      heading: d.a.de43eaf2,
+                      description: d.a.g52ab673,
                       platformAvailabilityLabel: ['iOS', 'Android', 'Web'],
                     },
-                    { illustrationName: b },
+                    { illustrationName: m },
                   ],
                 ],
               },
               {
-                blurb: f.a.ae3f4564,
+                blurb: d.a.ae3f4564,
                 features: [
                   [
                     {
-                      icon: U.a,
-                      heading: f.a.i65802df,
-                      description: f.a.h0f8563b,
+                      icon: v.a,
+                      heading: d.a.i65802df,
+                      description: d.a.h0f8563b,
                       platformAvailabilityLabel: ['iOS', 'Web'],
                     },
                     {
-                      icon: T.a,
-                      heading: f.a.b7fa0cfd,
-                      description: f.a.a7f3dfc9,
+                      icon: y.a,
+                      heading: d.a.b7fa0cfd,
+                      description: d.a.a7f3dfc9,
                       platformAvailabilityLabel: e ? ['iOS', 'Android', 'Web'] : ['Android', 'Web'],
                     },
                   ],
                   [
                     {
-                      icon: O.a,
-                      heading: f.a.b62d6e4c,
-                      description: f.a.a24965fb,
+                      icon: S.a,
+                      heading: d.a.b62d6e4c,
+                      description: d.a.a24965fb,
                       platformAvailabilityLabel: ['iOS', 'Android', 'Web'],
                     },
                   ],
                 ],
               },
               {
-                blurb: f.a.cd2b9647,
+                blurb: d.a.cd2b9647,
                 features: [
                   [
                     {
-                      icon: w,
-                      heading: f.a.hdc87500,
-                      description: f.a.gaf181e0,
+                      icon: _,
+                      heading: d.a.hdc87500,
+                      description: d.a.gaf181e0,
                       platformAvailabilityLabel: t ? ['iOS', 'Android', 'Web'] : ['iOS', 'Android'],
                     },
-                    { icon: C.a, heading: f.a.i9223e6f, description: f.a.c1935a33, platformAvailabilityLabel: ['iOS'] },
+                    { icon: g.a, heading: d.a.i9223e6f, description: d.a.c1935a33, platformAvailabilityLabel: ['iOS'] },
                   ],
                   [
-                    { icon: I.a, heading: f.a.gc8d916e, description: f.a.a353aeee, platformAvailabilityLabel: ['iOS'] },
-                    { icon: P, heading: f.a.f39aef7b, description: f.a.b4a97be8, platformAvailabilityLabel: ['iOS'] },
+                    { icon: U.a, heading: d.a.gc8d916e, description: d.a.a353aeee, platformAvailabilityLabel: ['iOS'] },
+                    { icon: T, heading: d.a.f39aef7b, description: d.a.b4a97be8, platformAvailabilityLabel: ['iOS'] },
                   ],
                 ],
               },
-              { blurb: f.a.h52ee955, features: [r] },
+              { blurb: d.a.h52ee955, features: [r] },
             ]
           )
         },
-        k = a.p + 'twitter-blue-wave.d1b48db5.svg',
-        D = a('aITJ'),
-        B = a('MWbm'),
-        F = a('t62R'),
-        x = a('Wms4'),
-        H = a('/yvb'),
-        N = a('sgih'),
-        M = a('xKuM'),
-        z = a('rHpw'),
-        j = a('hOZg'),
-        V = a('lUZE'),
-        W = a('tH6R'),
-        K = a('zCf4'),
-        Q = f.a.b9238e88,
-        G = f.a.a0b7009f,
-        J = {
-          USD: f.a.d0783e70,
-          EUR: f.a.e8c823d2,
-          GBP: f.a.gbf0e6c6,
-          CAD: f.a.j16ccfa2,
-          AUD: f.a.c93cb976,
-          NZD: f.a.c32b252a,
+        I = a('cnVF'),
+        w = a('rxPX'),
+        L = a('su2V'),
+        P = Object(w.a)()
+          .propsFromState(function () {
+            return {
+              productDetailsFetchStatus: function (e) {
+                return Object(L.l)(e, I.D)
+              },
+              productDetails: function (e) {
+                return Object(L.k)(e, I.D)
+              },
+              checkoutUrlFetchStatus: function (e) {
+                return Object(L.f)(e, I.D)
+              },
+              checkoutUrl: function (e) {
+                return Object(L.e)(e, I.D)
+              },
+            }
+          })
+          .propsFromActions(function () {
+            return { fetchSubscriptionProductDetails: L.d, fetchSubscriptionProductCheckoutUrl: L.b }
+          })
+          .withAnalytics({ page: 'subscriptions', section: 'marketing' }),
+        D = a('v//M'),
+        k = a('MWbm'),
+        A = a('t62R'),
+        F = a('/yvb'),
+        x = a('rHpw'),
+        B = a('zCf4'),
+        H = a('VKnd'),
+        N = d.a.b9238e88,
+        M = {
+          USD: d.a.d0783e70,
+          EUR: d.a.e8c823d2,
+          GBP: d.a.gbf0e6c6,
+          CAD: d.a.j16ccfa2,
+          AUD: d.a.c93cb976,
+          NZD: d.a.c32b252a,
         },
-        X = f.a.b08821f3,
-        q = f.a.ed21f885,
-        Y = function (e) {
+        z = function (e) {
           var t,
             a,
             r,
@@ -540,261 +530,8 @@
                   : r.slice(1)) ||
                 ''
         },
-        Z = function (e) {
-          var t = e.analytics,
-            a = e.checkoutUrl,
-            r = e.checkoutUrlFetchStatus,
-            i = e.fetchSubscriptionProductCheckoutUrl,
-            s = e.fetchSubscriptionProductDetails,
-            u = e.productDetails,
-            d = e.productDetailsFetchStatus,
-            p = c.a.useContext(o.a).featureSwitches,
-            b = p.isTrue('subscriptions_twitter_blue_logo_enabled'),
-            h = p.isTrue('subscriptions_top_articles_on_ios_enabled'),
-            g = p.isTrue('subscriptions_feature_1002'),
-            E = !p.isTrue('dm_conversation_labels_pinned_enabled') && p.isTrue('subscriptions_feature_labs_1001'),
-            v = Object(K.f)(),
-            y = Object(K.g)(),
-            S = c.a.useState(!1),
-            C = n()(S, 2),
-            _ = C[0],
-            U = C[1],
-            T = function () {
-              t.scribe({ action: 'start', element: 'fetch_product', data: { referring_page: Y(y) } }),
-                s(l.d)
-                  .then(function () {
-                    t.scribe({ action: 'success', element: 'fetch_product', data: { referring_page: Y(y) } })
-                  })
-                  .catch(function () {
-                    t.scribe({ action: 'failure', element: 'fetch_product', data: { referring_page: Y(y) } })
-                  })
-            }
-          c.a.useEffect(
-            function () {
-              T()
-            },
-            [s],
-          ),
-            c.a.useEffect(function () {
-              var e = Date.now()
-              return (
-                t.scribe({ action: 'impression', data: { referring_page: Y(y) } }),
-                function () {
-                  var a = Math.floor((Date.now() - e) / 1e3)
-                  t.scribe({
-                    action: 'end_session',
-                    data: { end_session_reason: _ ? 'purchased' : 'page_left', session_duration_in_s: a },
-                  })
-                }
-              )
-            }, [])
-          var O = function () {
-              return v.goBack()
-            },
-            R = function () {
-              if ((U(!0), t.scribe({ action: 'click', element: 'subscribe', data: { referring_page: Y(y) } }), u)) {
-                var e,
-                  a = null != u && null !== (e = u.prices) && void 0 !== e && e.length ? u.prices[0] : null,
-                  r = null == a ? void 0 : a.external_price_id
-                r && i(l.d, r, l.c, l.a)
-              }
-            },
-            w = function (e, t) {
-              var a = e.map(function (e, t) {
-                return (function (e, t) {
-                  if (e.illustrationName) {
-                    var a = D.b.isMobileOS() ? '100px' : 'initial'
-                    return c.a.createElement(
-                      c.a.Fragment,
-                      { key: e.illustrationName },
-                      c.a.createElement(B.a, { style: $.widthDivider }),
-                      c.a.createElement(B.a, {
-                        style: [
-                          $.feature,
-                          $.illustration,
-                          {
-                            backgroundImage: 'url('.concat(null == e ? void 0 : e.illustrationName, ')'),
-                            maxHeight: a,
-                          },
-                        ],
-                      }),
-                    )
-                  }
-                  if (e.icon) {
-                    var r = e.icon
-                    return c.a.createElement(
-                      B.a,
-                      { key: t, style: $.feature, testID: 'feature' },
-                      c.a.createElement(B.a, null, c.a.createElement(r, { style: $.featureIcon })),
-                      c.a.createElement(
-                        B.a,
-                        { style: $.featureContent },
-                        c.a.createElement(F.b, { size: 'body', weight: 'bold' }, e.heading),
-                        c.a.createElement(
-                          F.b,
-                          { color: 'gray700', size: 'body', style: $.featureDescription },
-                          e.description,
-                        ),
-                        c.a.createElement(
-                          B.a,
-                          { style: $.labelWrapper },
-                          e.platformAvailabilityLabel.map(function (e) {
-                            return c.a.createElement(
-                              x.a,
-                              { background: 'maskColor', bold: !0, key: e, style: $.labelStyle },
-                              c.a.createElement(F.b, { color: 'gray700' }, e),
-                            )
-                          }),
-                        ),
-                      ),
-                    )
-                  }
-                  return null
-                })(e, t)
-              })
-              return c.a.createElement(B.a, { key: t, style: $.featureRow, testID: 'featureRow' }, a)
-            },
-            I = A(h, g, E).map(function (e, t) {
-              return (function (e, t) {
-                var a = e.features.map(function (e, t) {
-                  return w(e, t)
-                })
-                return c.a.createElement(
-                  B.a,
-                  { key: t, style: $.featureGroup },
-                  c.a.createElement(F.b, { size: 'title3', testID: 'featureGroup', weight: 'heavy' }, e.blurb),
-                  a,
-                )
-              })(e, t)
-            })
-          return c.a.createElement(
-            N.a,
-            {
-              allowBackNavigation: !0,
-              enableMaskForDismiss: !0,
-              onMaskClick: O,
-              style: $.root,
-              type: 'full',
-              withMask: !0,
-            },
-            c.a.createElement(
-              B.a,
-              { style: $.appBarContainer },
-              c.a.createElement(M.a, {
-                centeredLogo: c.a.createElement(V.a, { style: $.twitterLogo }),
-                leftControl: c.a.createElement(H.a, {
-                  accessibilityLabel: X,
-                  borderColor: 'transparent',
-                  hoverLabel: { label: X },
-                  icon: c.a.createElement(j.a, { style: $.topIcons }),
-                  onPress: O,
-                  pullLeft: !0,
-                  size: 'medium',
-                }),
-                style: $.appBar,
-                withBackground: !1,
-              }),
-            ),
-            c.a.createElement(
-              B.a,
-              { style: $.contentWrapper },
-              c.a.createElement(
-                B.a,
-                { style: $.bgImage },
-                c.a.createElement(
-                  B.a,
-                  { style: [$.topContent, { paddingTop: D.b.isMobileOS() ? '26px' : '50px' }] },
-                  b
-                    ? c.a.createElement(
-                        B.a,
-                        { style: $.contentBlueIcon },
-                        c.a.createElement(W.a, { style: $.iconTwitterBlue }),
-                      )
-                    : c.a.createElement(F.b, { size: 'title1', weight: 'heavy' }, q),
-                  c.a.createElement(F.b, { size: 'headline1', style: $.subtitle }, G),
-                ),
-              ),
-              c.a.createElement(B.a, { style: $.content }, I),
-            ),
-            c.a.createElement(m.a, {
-              fetchStatus: d,
-              onRequestRetry: function () {
-                T()
-              },
-              render: function () {
-                var e = null != u && u.prices && u.prices.length ? u.prices[0] : null,
-                  t = null == e ? void 0 : e.currency_code.toUpperCase(),
-                  a = null != e && e.amount_local_micro ? e.amount_local_micro / 1e6 : null
-                if (!t || !a) return null
-                var n = (0, J[t])(a),
-                  i = Q({ price: n })
-                return c.a.createElement(
-                  B.a,
-                  { style: $.buttonWrapper },
-                  c.a.createElement(
-                    B.a,
-                    { style: $.termsOfService },
-                    c.a.createElement(
-                      F.b,
-                      { align: 'center', color: 'gray700', size: 'subtext3' },
-                      c.a.createElement(
-                        f.a.I18NFormatMessage,
-                        { $i18n: 'h73408b9' },
-                        c.a.createElement(
-                          F.b,
-                          { link: 'https://legal.twitter.com/purchaser-terms' },
-                          'Terms & Conditions',
-                        ),
-                      ),
-                    ),
-                  ),
-                  c.a.createElement(
-                    H.a,
-                    {
-                      accessibilityLabel: i,
-                      disabled: !u || 'loading' === r,
-                      onPress: R,
-                      style: $.button,
-                      type: 'primaryFilled',
-                    },
-                    i,
-                  ),
-                )
-              },
-              retryable: !0,
-            }),
-            c.a.createElement(m.a, {
-              fetchStatus: r,
-              onRequestRetry: function () {
-                if (u) {
-                  var e,
-                    t = null != u && null !== (e = u.prices) && void 0 !== e && e.length ? u.prices[0] : null,
-                    a = null == t ? void 0 : t.external_price_id
-                  a && i(l.d, a, l.c, l.a)
-                }
-              },
-              render: function () {
-                return a && (window.location.href = a), null
-              },
-              retryable: !0,
-            }),
-          )
-        },
-        $ = z.a.create(function (e) {
+        j = x.a.create(function (e) {
           return {
-            root: { minHeight: 400 },
-            appBar: { zIndex: '2' },
-            appBarContainer: { backgroundColor: e.colors.white },
-            bgImage: { backgroundImage: 'url('.concat(k, ')'), backgroundRepeat: 'no-repeat' },
-            iconTwitterBlue: { transform: [{ scale: 1.5 }], transformOrigin: 'bottom left' },
-            illustration: {
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-              borderRadius: 8,
-              boxShadow: '0 2px 4px 1px rgb(1 1 1 / 9%)',
-            },
-            contentBlueIcon: { display: 'flex', justifyContent: 'flexStart', flexDirection: 'row' },
-            spacer: { width: e.spaces.space24 },
             buttonWrapper: {
               alignItems: 'center',
               paddingTop: e.spaces.space16,
@@ -809,8 +546,316 @@
               paddingLeft: 16,
               paddingRight: 16,
             },
-            topIcons: { color: '#000' },
             button: { width: '75%', cursor: 'pointer', alignItems: 'center' },
+          }
+        }),
+        V = P(function (e) {
+          var t = e.analytics,
+            a = e.buttonStyle,
+            r = e.checkoutUrl,
+            n = e.checkoutUrlFetchStatus,
+            i = e.fetchSubscriptionProductCheckoutUrl,
+            c = e.fetchSubscriptionProductDetails,
+            o = e.onClick,
+            s = e.productDetails,
+            u = e.productDetailsFetchStatus,
+            m = e.style,
+            p = e.termsOfServiceStyle,
+            f = Object(B.g)(),
+            b = function () {
+              t.scribe({ action: 'start', element: 'fetch_product', data: { referring_page: z(f) } }),
+                c(I.D)
+                  .then(function () {
+                    t.scribe({ action: 'success', element: 'fetch_product', data: { referring_page: z(f) } })
+                  })
+                  .catch(function () {
+                    t.scribe({ action: 'failure', element: 'fetch_product', data: { referring_page: z(f) } })
+                  })
+            }
+          l.a.useEffect(
+            function () {
+              b()
+            },
+            [c],
+          )
+          var h = l.a.useCallback(
+            function () {
+              if ((t.scribe({ action: 'click', element: 'subscribe', data: { referring_page: z(f) } }), s)) {
+                var e,
+                  a = null != s && null !== (e = s.prices) && void 0 !== e && e.length ? s.prices[0] : null,
+                  r = null == a ? void 0 : a.external_price_id
+                r && i(I.D, r, H.c, H.a)
+              }
+              o && o()
+            },
+            [o, t, f, i, s],
+          )
+          return l.a.createElement(
+            l.a.Fragment,
+            null,
+            l.a.createElement(D.a, {
+              fetchStatus: u,
+              onRequestRetry: function () {
+                b()
+              },
+              render: function () {
+                var e = null != s && s.prices && s.prices.length ? s.prices[0] : null,
+                  t = null == e ? void 0 : e.currency_code.toUpperCase(),
+                  r = null != e && e.amount_local_micro ? e.amount_local_micro / 1e6 : null
+                if (!t || !r) return null
+                var i = (0, M[t])(r),
+                  c = N({ price: i })
+                return l.a.createElement(
+                  k.a,
+                  { style: [j.buttonWrapper, m] },
+                  l.a.createElement(
+                    k.a,
+                    { style: [j.termsOfService, p] },
+                    l.a.createElement(
+                      A.b,
+                      { align: 'center', color: 'gray700', size: 'subtext3' },
+                      l.a.createElement(
+                        d.a.I18NFormatMessage,
+                        { $i18n: 'h73408b9' },
+                        l.a.createElement(
+                          A.b,
+                          { link: 'https://legal.twitter.com/purchaser-terms' },
+                          'Terms & Conditions',
+                        ),
+                      ),
+                    ),
+                  ),
+                  l.a.createElement(
+                    F.a,
+                    {
+                      accessibilityLabel: c,
+                      disabled: !s || 'loading' === n,
+                      onPress: h,
+                      style: [j.button, a],
+                      type: 'primaryFilled',
+                    },
+                    c,
+                  ),
+                )
+              },
+              retryable: !0,
+            }),
+            l.a.createElement(D.a, {
+              fetchStatus: n,
+              onRequestRetry: function () {
+                if (s) {
+                  var e,
+                    t = null != s && null !== (e = s.prices) && void 0 !== e && e.length ? s.prices[0] : null,
+                    a = null == t ? void 0 : t.external_price_id
+                  a && i(I.D, a, H.c, H.a)
+                }
+              },
+              render: function () {
+                return r && (window.location.href = r), null
+              },
+              retryable: !0,
+            }),
+          )
+        }),
+        K = a.p + 'twitter-blue-wave.d1b48db5.svg',
+        W = a('Irs7'),
+        Q = a('aITJ'),
+        q = a('Wms4'),
+        G = a('sgih'),
+        J = a('xKuM'),
+        X = a('hOZg'),
+        Y = a('lUZE'),
+        Z = a('tH6R'),
+        $ = d.a.a0b7009f,
+        ee = d.a.b08821f3,
+        te = d.a.ed21f885,
+        ae = function (e) {
+          var t,
+            a,
+            r,
+            n = null === (t = e.query) || void 0 === t ? void 0 : t.referring_page
+          return Array.isArray(n)
+            ? ''
+            : n ||
+                (null == e || null === (a = e.state) || void 0 === a || null === (r = a.previousPath) || void 0 === r
+                  ? void 0
+                  : r.slice(1)) ||
+                ''
+        },
+        re = { page: 'subscriptions', section: 'marketing' },
+        ne = function (e) {
+          var t = Object(W.b)(),
+            a = l.a.useContext(s.a).featureSwitches,
+            r = a.isTrue('subscriptions_twitter_blue_logo_enabled'),
+            i = a.isTrue('subscriptions_top_articles_on_ios_enabled'),
+            o = a.isTrue('subscriptions_feature_1002'),
+            u = !a.isTrue('dm_conversation_labels_pinned_enabled') && a.isTrue('subscriptions_feature_labs_1001'),
+            d = Object(B.f)(),
+            m = Object(B.g)(),
+            p = l.a.useState(!1),
+            f = c()(p, 2),
+            b = f[0],
+            h = f[1]
+          l.a.useEffect(function () {
+            var e = Date.now()
+            return (
+              t.scribe(n()(n()({}, re), {}, { action: 'impression', data: { referring_page: ae(m) } })),
+              function () {
+                var a = Math.floor((Date.now() - e) / 1e3)
+                t.scribe(
+                  n()(
+                    n()({}, re),
+                    {},
+                    {
+                      action: 'end_session',
+                      data: { end_session_reason: b ? 'purchased' : 'page_left', session_duration_in_s: a },
+                    },
+                  ),
+                )
+              }
+            )
+          }, [])
+          var g = function () {
+              return d.goBack()
+            },
+            E = l.a.useCallback(function () {
+              h(!0)
+            }, []),
+            v = function (e, t) {
+              var a = e.map(function (e, t) {
+                return (function (e, t) {
+                  if (e.illustrationName) {
+                    var a = Q.b.isMobileOS() ? '100px' : 'initial'
+                    return l.a.createElement(
+                      l.a.Fragment,
+                      { key: e.illustrationName },
+                      l.a.createElement(k.a, { style: ie.widthDivider }),
+                      l.a.createElement(k.a, {
+                        style: [
+                          ie.feature,
+                          ie.illustration,
+                          {
+                            backgroundImage: 'url('.concat(null == e ? void 0 : e.illustrationName, ')'),
+                            maxHeight: a,
+                          },
+                        ],
+                      }),
+                    )
+                  }
+                  if (e.icon) {
+                    var r = e.icon
+                    return l.a.createElement(
+                      k.a,
+                      { key: t, style: ie.feature, testID: 'feature' },
+                      l.a.createElement(k.a, null, l.a.createElement(r, { style: ie.featureIcon })),
+                      l.a.createElement(
+                        k.a,
+                        { style: ie.featureContent },
+                        l.a.createElement(A.b, { size: 'body', weight: 'bold' }, e.heading),
+                        l.a.createElement(
+                          A.b,
+                          { color: 'gray700', size: 'body', style: ie.featureDescription },
+                          e.description,
+                        ),
+                        l.a.createElement(
+                          k.a,
+                          { style: ie.labelWrapper },
+                          e.platformAvailabilityLabel.map(function (e) {
+                            return l.a.createElement(
+                              q.a,
+                              { background: 'maskColor', bold: !0, key: e, style: ie.labelStyle },
+                              l.a.createElement(A.b, { color: 'gray700' }, e),
+                            )
+                          }),
+                        ),
+                      ),
+                    )
+                  }
+                  return null
+                })(e, t)
+              })
+              return l.a.createElement(k.a, { key: t, style: ie.featureRow, testID: 'featureRow' }, a)
+            },
+            y = R(i, o, u).map(function (e, t) {
+              return (function (e, t) {
+                var a = e.features.map(function (e, t) {
+                  return v(e, t)
+                })
+                return l.a.createElement(
+                  k.a,
+                  { key: t, style: ie.featureGroup },
+                  l.a.createElement(A.b, { size: 'title3', testID: 'featureGroup', weight: 'heavy' }, e.blurb),
+                  a,
+                )
+              })(e, t)
+            })
+          return l.a.createElement(
+            G.a,
+            {
+              allowBackNavigation: !0,
+              enableMaskForDismiss: !0,
+              onMaskClick: g,
+              style: ie.root,
+              type: 'full',
+              withMask: !0,
+            },
+            l.a.createElement(
+              k.a,
+              { style: ie.appBarContainer },
+              l.a.createElement(J.a, {
+                centeredLogo: l.a.createElement(Y.a, { style: ie.twitterLogo }),
+                leftControl: l.a.createElement(F.a, {
+                  accessibilityLabel: ee,
+                  borderColor: 'transparent',
+                  hoverLabel: { label: ee },
+                  icon: l.a.createElement(X.a, { style: ie.topIcons }),
+                  onPress: g,
+                  pullLeft: !0,
+                  size: 'medium',
+                }),
+                style: ie.appBar,
+                withBackground: !1,
+              }),
+            ),
+            l.a.createElement(
+              k.a,
+              { style: ie.contentWrapper },
+              l.a.createElement(
+                k.a,
+                { style: ie.bgImage },
+                l.a.createElement(
+                  k.a,
+                  { style: [ie.topContent, { paddingTop: Q.b.isMobileOS() ? '26px' : '50px' }] },
+                  r
+                    ? l.a.createElement(
+                        k.a,
+                        { style: ie.contentBlueIcon },
+                        l.a.createElement(Z.a, { style: ie.iconTwitterBlue }),
+                      )
+                    : l.a.createElement(A.b, { size: 'title1', weight: 'heavy' }, te),
+                  l.a.createElement(A.b, { size: 'headline1', style: ie.subtitle }, $),
+                ),
+              ),
+              l.a.createElement(k.a, { style: ie.content }, y),
+            ),
+            l.a.createElement(V, { onClick: E }),
+          )
+        },
+        ie = x.a.create(function (e) {
+          return {
+            root: { minHeight: 400 },
+            appBar: { zIndex: '2' },
+            appBarContainer: { backgroundColor: e.colors.white },
+            bgImage: { backgroundImage: 'url('.concat(K, ')'), backgroundRepeat: 'no-repeat' },
+            iconTwitterBlue: { transform: [{ scale: 1.5 }], transformOrigin: 'bottom left' },
+            illustration: {
+              backgroundSize: 'contain',
+              backgroundRepeat: 'no-repeat',
+              borderRadius: 8,
+              boxShadow: '0 2px 4px 1px rgb(1 1 1 / 9%)',
+            },
+            contentBlueIcon: { display: 'flex', justifyContent: 'flexStart', flexDirection: 'row' },
+            topIcons: { color: '#000' },
             content: { paddingTop: 10, paddingLeft: 50, paddingRight: 50 },
             topContent: { paddingLeft: 50, paddingRight: 50 },
             contentWrapper: { height: 400, overflowY: 'auto' },
@@ -826,9 +871,8 @@
             twitterLogo: { color: e.colors.blue500, transform: [{ scale: 1.5 }], transformOrigin: 'center center' },
             widthDivider: { width: 24 },
           }
-        }),
-        ee = d(Z)
-      t.default = ee
+        })
+      t.default = ne
     },
     'ShJ/': function (e, t, a) {
       'use strict'
@@ -862,30 +906,22 @@
         }
       ;(s.metadata = { width: 24, height: 24 }), (t.a = s)
     },
-    XOb8: function (e, t, a) {
+    VKnd: function (e, t, a) {
       'use strict'
-      a.d(t, 'd', function () {
-        return r
+      a.d(t, 'b', function () {
+        return n
       }),
-        a.d(t, 'e', function () {
-          return n
-        }),
-        a.d(t, 'b', function () {
-          return c
-        }),
         a.d(t, 'a', function () {
-          return o
+          return i
         }),
         a.d(t, 'c', function () {
-          return l
+          return c
         })
-      var r = 'V2ViU3Vic2NyaXB0aW9uUHJvZHVjdERldGFpbHM6cHJvZF9LT21pYTlJYXRWVG1JNQ==',
-        n = 'rogue-one',
-        i = 'https://'.concat(window.location.host),
-        c = ''.concat(i, '/settings/subscription'),
-        o = ''.concat(i, '/i/twitter_blue_sign_up'),
-        l = ''.concat(o, '/welcome')
-      ''.concat(o, '/unsuccessful')
+      var r = 'https://'.concat(window.location.host),
+        n = ''.concat(r, '/settings/subscription'),
+        i = ''.concat(r, '/i/twitter_blue_sign_up'),
+        c = ''.concat(i, '/welcome')
+      ''.concat(i, '/unsuccessful')
     },
     g7Ra: function (e, t, a) {
       'use strict'
@@ -985,10 +1021,10 @@
           return U
         }),
         a.d(t, 'b', function () {
-          return T
+          return O
         }),
         a.d(t, 'a', function () {
-          return O
+          return T
         }),
         a.d(t, 'c', function () {
           return R
@@ -1072,7 +1108,7 @@
               : i({ actionTypes: d, context: 'FETCH_SUBSCRIPTION_PRODUCT_DETAILS', meta: { id: e } })
           }
         },
-        T = function (e, t, a, r) {
+        O = function (e, t, a, r) {
           return function (n, i, c) {
             var l = c.api,
               u = Object(o.b)(n, {
@@ -1085,7 +1121,7 @@
               : u({ actionTypes: m, context: 'FETCH_SUBSCRIPTION_PRODUCT_CHECKOUT_URL', meta: { id: e } })
           }
         },
-        O = function () {
+        T = function () {
           return function (e, t, a) {
             var r = a.api,
               n = Object(o.b)(e, { params: {}, request: r.SubscriptionPayments.fetchProductSubscriptions }),
@@ -1254,7 +1290,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'TwitterBlueSignUpSuccess', function () {
-          return w
+          return I
         })
       var r = a('ddV6'),
         n = a.n(r),
@@ -1282,10 +1318,10 @@
         C = a('U+bB'),
         _ = a('MWbm'),
         U = p.a.ia5e7487,
-        T = p.a.a219e217,
-        O = p.a.f0e32de5,
+        O = p.a.a219e217,
+        T = p.a.f0e32de5,
         R = p.a.gc6e8c17
-      function w(e) {
+      function I(e) {
         var t = e.analytics,
           a = e.fetchUserClaims,
           r = Object(h.f)(),
@@ -1305,13 +1341,13 @@
         function S() {
           r.push('/home')
         }
-        function w() {
+        function I() {
           return c.a.createElement(
             c.a.Fragment,
             null,
-            c.a.createElement(E.b, { size: 'title2', style: I.title, weight: 'heavy' }, O),
-            c.a.createElement(E.b, { style: I.subtitle }, R),
-            c.a.createElement(v.a, { onPress: S, size: 'xLarge', type: 'primaryFilled' }, T),
+            c.a.createElement(E.b, { size: 'title2', style: w.title, weight: 'heavy' }, T),
+            c.a.createElement(E.b, { style: w.subtitle }, R),
+            c.a.createElement(v.a, { onPress: S, size: 'xLarge', type: 'primaryFilled' }, O),
           )
         }
         return (
@@ -1323,14 +1359,14 @@
           }, []),
           c.a.createElement(
             y.a,
-            { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: S, style: I.root, type: 'full' },
+            { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: S, style: w.root, type: 'full' },
             c.a.createElement(
               _.a,
-              { style: I.topBar },
+              { style: w.topBar },
               c.a.createElement(v.a, {
                 accessibilityLabel: U,
                 hoverLabel: { label: U },
-                icon: c.a.createElement(f.a, { style: I.topIcons }),
+                icon: c.a.createElement(f.a, { style: w.topIcons }),
                 onPress: S,
                 pullRight: !0,
                 size: 'medium',
@@ -1339,14 +1375,14 @@
             ),
             c.a.createElement(
               _.a,
-              { style: g.b.isMobileOS() ? I.contentSmall : I.content },
-              c.a.createElement(C.a, { source: b, style: I.img }),
-              c.a.createElement(d.a, { fetchStatus: u, onRequestRetry: p, render: w, retryable: !0 }),
+              { style: g.b.isMobileOS() ? w.contentSmall : w.content },
+              c.a.createElement(C.a, { source: b, style: w.img }),
+              c.a.createElement(d.a, { fetchStatus: u, onRequestRetry: p, render: I, retryable: !0 }),
             ),
           )
         )
       }
-      var I = S.a.create(function (e) {
+      var w = S.a.create(function (e) {
           return {
             root: { minHeight: 600 },
             topBar: { alignItems: 'flex-start', flexDirection: 'row', paddingTop: 15, paddingLeft: 15 },
@@ -1360,7 +1396,7 @@
             closeButton: { paddingTop: 15 },
           }
         }),
-        L = u(w)
+        L = u(I)
       t.default = L
     },
   },

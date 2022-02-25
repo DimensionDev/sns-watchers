@@ -4150,10 +4150,11 @@
             i.a.createElement(C.a, {
               accessibilityLabel: f,
               behavioralEventContext: U,
+              hoverLabel: { label: f },
               icon: i.a.createElement(g, null),
               link: d ? '/i/communities/'.concat(n, '/tools') : void 0,
               renderMenu: d ? void 0 : p,
-              size: 'xLarge',
+              size: 'medium',
               type: 'primaryText',
             }),
             m && l > 0

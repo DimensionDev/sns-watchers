@@ -1035,7 +1035,7 @@
               ),
               fetchCardPreviewIfNeeded: E.a.fetchCardPreviewIfNeeded,
               updateDMComposer: w.e,
-              updateTweetComposer: C.x,
+              updateTweetComposer: C.w,
             }
           }),
         k = n('KqB4'),
