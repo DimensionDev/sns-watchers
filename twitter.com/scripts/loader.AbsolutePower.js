@@ -534,41 +534,48 @@
               ),
               p()(d()(r), '_getInitialRenderedItems', function () {
                 var e = r.props,
-                  t = e.initialAnchor,
-                  n = e.list,
-                  i = []
-                if (!t) return i
-                if (t.type === b.FocusedItem) {
-                  var o = Object(_e.a)(n, function (e) {
-                    return e.id === t.itemId ? new K(e.id, 0, !0, e.canBeAnchor) : void 0
+                  t = e.centerInitialAnchor,
+                  n = e.initialAnchor,
+                  i = e.list,
+                  o = []
+                if (!n) return o
+                if (n.type === b.FocusedItem) {
+                  var a = 0
+                  if (t) {
+                    var s = r._getDocumentViewportHeight(),
+                      c = r._getHeightForItemId(n.itemId)
+                    a = Math.ceil(s / 2) - c / 2
+                  }
+                  var u = Object(_e.a)(i, function (e) {
+                    return e.id === n.itemId ? new K(e.id, a, !0, e.canBeAnchor) : void 0
                   })
-                  o && i.push(o)
-                } else if (t.type === b.Anchor && Object(pe.a)(t.anchor.distanceToViewportTop)) {
+                  u && o.push(u)
+                } else if (n.type === b.Anchor && Object(pe.a)(n.anchor.distanceToViewportTop)) {
                   for (
-                    var a = t.anchor,
-                      s = r._getDocumentViewportHeight(),
-                      c = a.distanceToViewportTop || 0,
-                      u = n.findIndex(function (e) {
-                        return e.id === a.id
+                    var d = n.anchor,
+                      l = r._getDocumentViewportHeight(),
+                      h = d.distanceToViewportTop || 0,
+                      f = i.findIndex(function (e) {
+                        return e.id === d.id
                       }),
-                      d = c,
-                      l = u;
-                    l > -1 && l < n.length && d < s;
+                      m = h,
+                      _ = f;
+                    _ > -1 && _ < i.length && m < l;
 
                   ) {
-                    var h = n[l],
-                      f = r._heights.get(h.id)
-                    if (!Object(pe.a)(f)) break
-                    i.push(new K(h.id, d, !0, h.canBeAnchor)), (d += f), (l += 1)
+                    var p = i[_],
+                      g = r._heights.get(p.id)
+                    if (!Object(pe.a)(g)) break
+                    o.push(new K(p.id, m, !0, p.canBeAnchor)), (m += g), (_ += 1)
                   }
-                  for (d = c, l = u - 1; l > -1 && d > 0; ) {
-                    var m = n[l],
-                      _ = r._heights.get(m.id)
-                    if (!Object(pe.a)(_)) break
-                    ;(d -= _), i.unshift(new K(m.id, d, !0, m.canBeAnchor)), (l -= 1)
+                  for (m = h, _ = f - 1; _ > -1 && m > 0; ) {
+                    var v = i[_],
+                      I = r._heights.get(v.id)
+                    if (!Object(pe.a)(I)) break
+                    ;(m -= I), o.unshift(new K(v.id, m, !0, v.canBeAnchor)), (_ -= 1)
                   }
                 }
-                return i
+                return o
               }),
               p()(d()(r), '_getViewportOffsetCorrection', function () {
                 var e = r._rootRef.current && r._rootRef.current.getBoundingClientRect()
@@ -1107,6 +1114,7 @@
                         return e.id === G.a
                       }) &&
                       this._getHeightForItemId(G.a) > 0 &&
+                      !this.props.centerInitialAnchor &&
                       this.scrollToNewest()
                 },
               },
@@ -1129,15 +1137,18 @@
                     var n = this._getDocumentViewportHeight()
                     this.setState({ renderedItems: t, shouldAnimate: !0, listHeightWithHeadroom: n }, function () {
                       var t = e.props.initialAnchor
-                      t && t.type === b.Anchor
-                        ? (e._viewport.scrollBy(e._getViewportOffsetCorrection()),
-                          t.anchor.wasFocused && e._updateFocusToItem(t.anchor.id))
-                        : t && t.type === b.FocusedItem && e._updateFocusToItem(t.itemId),
-                        window.requestAnimationFrame(function () {
-                          return window.requestAnimationFrame(function () {
-                            return e._scheduleCriticalUpdate()
-                          })
+                      if (t && t.type === b.Anchor)
+                        e._viewport.scrollBy(e._getViewportOffsetCorrection()),
+                          t.anchor.wasFocused && e._updateFocusToItem(t.anchor.id)
+                      else if (t && t.type === b.FocusedItem) {
+                        var n = e.props.centerInitialAnchor ? { behavior: 'smooth', block: 'center' } : void 0
+                        e._updateFocusToItem(t.itemId, n)
+                      }
+                      window.requestAnimationFrame(function () {
+                        return window.requestAnimationFrame(function () {
+                          return e._scheduleCriticalUpdate()
                         })
+                      })
                     })
                   } else this._update()
                 },
@@ -1174,6 +1185,7 @@
         })(v.a.Component)
       p()(Re, 'contextType', ee.a),
         p()(Re, 'defaultProps', {
+          centerInitialAnchor: !1,
           nearEndProximityRatio: 1.75,
           nearStartProximityRatio: 0.25,
           assumedItemHeight: 400,
@@ -1253,24 +1265,25 @@
                   a = i.assumedItemHeight,
                   s = i.cacheKey,
                   c = i.canBeAnchorFunction,
-                  u = i.footer,
-                  d = i.hasNewContentAtBottom,
-                  l = i.header,
-                  h = i.identityFunction,
-                  f = i.initialAnchor,
-                  m = i.items,
-                  _ = i.renderer,
-                  g = i.sortIndexFunction,
-                  I = i.withKeyboardShortcuts,
-                  w = i.withoutHeadroom,
-                  b = o._scrollRestorationAnchor[s],
-                  T = b ? y(b) : f ? R(f.id) : void 0
+                  u = i.centerInitialAnchor,
+                  d = i.footer,
+                  l = i.hasNewContentAtBottom,
+                  h = i.header,
+                  f = i.identityFunction,
+                  m = i.initialAnchor,
+                  _ = i.items,
+                  g = i.renderer,
+                  I = i.sortIndexFunction,
+                  w = i.withKeyboardShortcuts,
+                  b = i.withoutHeadroom,
+                  T = o._scrollRestorationAnchor[s],
+                  S = T ? y(T) : m ? R(m.id) : void 0
                 return (
                   n && ((o._isModal = !0), (Ae = !0)),
                   v.a.createElement(
                     H.a,
                     {
-                      enabled: I,
+                      enabled: w,
                       handlers:
                         ((t = {}),
                         p()(t, A.e.refresh, o._handleKeyboardRefresh),
@@ -1281,17 +1294,18 @@
                     v.a.createElement(He, {
                       assumedItemHeight: a,
                       cacheKey: s,
-                      hasNewContentAtBottom: d,
-                      initialAnchor: T,
+                      centerInitialAnchor: u,
+                      hasNewContentAtBottom: l,
+                      initialAnchor: S,
                       isManualScrollRestoration: window.history && 'manual' === window.history.scrollRestoration,
                       key: s,
-                      list: o._getList(l, u, m, _, c, h, g),
+                      list: o._getList(h, d, _, g, c, f, I),
                       onPositionUpdate: o._handlePositionUpdate,
                       onScrollEnd: o._handleScrollEnd,
                       pinToNewestWhenAtNewest: r.pinToNewestWhenAtNewest,
                       ref: o._renderer,
                       viewport: o._viewport,
-                      withoutHeadroom: w,
+                      withoutHeadroom: b,
                     }),
                   )
                 )
@@ -1457,6 +1471,7 @@
       p()(Oe, 'contextTypes', { viewport: F.object, getCustomLocation: F.func }),
         p()(Oe, 'defaultProps', {
           anchoring: S.a,
+          centerInitialAnchor: !1,
           hasNewContentAtBottom: !1,
           onPositionRestored: C.a,
           onAtEnd: C.a,

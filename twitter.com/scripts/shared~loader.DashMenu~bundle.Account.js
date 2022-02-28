@@ -936,7 +936,7 @@
                     l = e.withMoreSideNavOverflow,
                     i = a && a.screen_name,
                     r = this.context.userClaims.isTrueAndEnabled('subscriptions_feature_1007'),
-                    c = Object(N.e)({
+                    c = Object(N.f)({
                       featureSwitches: this.context.featureSwitches,
                       communitiesActions: t,
                       hasCommunityMemberships: n,

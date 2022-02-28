@@ -3605,18 +3605,13 @@
                   var e,
                     t = this.props.suspendMessage
                   return (
-                    (e =
-                      this.context.featureSwitches.isTrue('suspended_profile_tombstone_enabled') && t
-                        ? i.a.createElement(wt.a, { entities: t.entities, rtl: t.rtl, text: t.text })
-                        : i.a.createElement(
-                            X.a.I18NFormatMessage,
-                            { $i18n: 'f6fa2033' },
-                            i.a.createElement(
-                              We.b,
-                              { link: 'https://support.twitter.com/articles/18311' },
-                              X.a.f3b1bdc1,
-                            ),
-                          )),
+                    (e = t
+                      ? i.a.createElement(wt.a, { entities: t.entities, rtl: t.rtl, text: t.text })
+                      : i.a.createElement(
+                          X.a.I18NFormatMessage,
+                          { $i18n: 'f6fa2033' },
+                          i.a.createElement(We.b, { link: 'https://support.twitter.com/articles/18311' }, X.a.f3b1bdc1),
+                        )),
                     this._renderEmptyState({ header: dr, message: e })
                   )
                 },
