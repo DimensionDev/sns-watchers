@@ -63,7 +63,7 @@
           logout: M.a,
           logoutAll: M.b,
           scribeAction: C.c,
-          sendAllPreviews: w.f,
+          sendAllPreviews: w.g,
           switchAccount: A.a,
         },
         F = Object(k.g)(I, T),
@@ -626,7 +626,7 @@
           return function (t, n, i) {
             var u = i.api,
               s = Object(r.b)(t, { request: u.Auth.switch, params: e })
-            return t(Object(o.f)()).then(function () {
+            return t(Object(o.g)()).then(function () {
               return t(Object(a.b)()).then(function () {
                 return s({ actionTypes: c, context: 'SWITCH' }).then(function () {
                   window.location.assign('/home')

@@ -325,7 +325,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'AdvancedSearchScreen', function () {
-          return ye
+          return ge
         })
       var n = a('yiKp'),
         r = a.n(n),
@@ -357,29 +357,34 @@
           a('ERkP')),
         _ = a.n(v),
         x = (a('LW0h'), a('vrRf'), a('hqKg')),
-        C = a('0KEI'),
-        E = a('oEGd'),
+        C = a('rxPX'),
+        E = a('0KEI'),
         I = a('FDFL'),
         T = ['en-gb', 'fil', 'gl', 'ga', 'msa'],
-        D = Object(x.createSelector)(I.c, function (e) {
-          return {
-            languageList: e.filter(function (e) {
-              return -1 === T.indexOf(e.code)
-            }),
-          }
-        }),
-        L = {
-          createLocalApiErrorHandler: Object(C.createLocalApiErrorHandlerWithContextFactory)('ADVANCED_SEARCH'),
-          fetchAvailableLanguagesIfNeeded: I.a,
-        },
-        S = Object(E.g)(D, L),
-        k = a('3EFP'),
-        w = a('jHSc'),
-        F = a('3XMw'),
-        R = a.n(F),
-        O = a('oQhu'),
-        V = a('u3ZE'),
-        P =
+        D = Object(C.a)()
+          .propsFromState(function () {
+            return {
+              languageList: Object(x.createSelector)(I.c, function (e) {
+                return e.filter(function (e) {
+                  return -1 === T.indexOf(e.code)
+                })
+              }),
+            }
+          })
+          .propsFromActions(function () {
+            return {
+              createLocalApiErrorHandler: Object(E.createLocalApiErrorHandlerWithContextFactory)('ADVANCED_SEARCH'),
+              fetchAvailableLanguagesIfNeeded: I.a,
+            }
+          })
+          .withAnalytics({ page: 'search_advanced' }),
+        L = a('3EFP'),
+        S = a('jHSc'),
+        k = a('3XMw'),
+        w = a.n(k),
+        F = a('oQhu'),
+        R = a('u3ZE'),
+        O =
           (a('yH/f'),
           Object.freeze({
             AllOfTheseWords: 'allOfTheseWords',
@@ -399,27 +404,27 @@
             ReplyFilter: 'replyFilter',
             LinkFilter: 'linkFilter',
           })),
-        A = 'any',
-        z = {
+        V = 'any',
+        P = {
           wordsFields: [
-            { label: R.a.b621568f, name: P.AllOfTheseWords, description: R.a.cceffa5d },
-            { label: R.a.f1c5faee, name: P.ThisExactPhrase, description: R.a.ad10780e },
-            { label: R.a.a555a3f3, name: P.AnyOfTheseWords, description: R.a.ee8a2b6f },
-            { label: R.a.f51fe348, name: P.NoneOfTheseWords, description: R.a.hb657ad3 },
-            { label: R.a.d10da5da, name: P.TheseHashtags, description: R.a.f0b52b50 },
+            { label: w.a.b621568f, name: O.AllOfTheseWords, description: w.a.cceffa5d },
+            { label: w.a.f1c5faee, name: O.ThisExactPhrase, description: w.a.ad10780e },
+            { label: w.a.a555a3f3, name: O.AnyOfTheseWords, description: w.a.ee8a2b6f },
+            { label: w.a.f51fe348, name: O.NoneOfTheseWords, description: w.a.hb657ad3 },
+            { label: w.a.d10da5da, name: O.TheseHashtags, description: w.a.f0b52b50 },
           ],
           peopleFields: [
-            { label: R.a.e292598a, name: P.FromTheseAccounts, description: R.a.d84ed90c },
-            { label: R.a.g2c27394, name: P.ToTheseAccounts, description: R.a.b62d36b2 },
-            { label: R.a.a10e323f, name: P.MentioningTheseAccounts, description: R.a.daaf2c71 },
+            { label: w.a.e292598a, name: O.FromTheseAccounts, description: w.a.d84ed90c },
+            { label: w.a.g2c27394, name: O.ToTheseAccounts, description: w.a.b62d36b2 },
+            { label: w.a.a10e323f, name: O.MentioningTheseAccounts, description: w.a.daaf2c71 },
           ],
           engagementFields: [
-            { label: R.a.b18366ba, name: P.MinReplies, description: R.a.a76c9844 },
-            { label: R.a.ib3ddbd4, name: P.MinLikes, description: R.a.dec3293c },
-            { label: R.a.i6e5440d, name: P.MinRetweets, description: R.a.b6dc8434 },
+            { label: w.a.b18366ba, name: O.MinReplies, description: w.a.a76c9844 },
+            { label: w.a.ib3ddbd4, name: O.MinLikes, description: w.a.dec3293c },
+            { label: w.a.i6e5440d, name: O.MinRetweets, description: w.a.b6dc8434 },
           ],
         },
-        B =
+        A =
           (a('jwue'),
           a('+oxZ'),
           a('Ysgh'),
@@ -430,52 +435,51 @@
               return '' !== e
             })
           }),
-        K = function (e) {
+        z = function (e) {
           return e.replace(/#+/g, '')
         },
-        M = function (e) {
+        B = function (e) {
           return e.replace(/@+/g, '')
         },
-        H = function (e) {
+        K = function (e) {
           return '('.concat(e, ')')
         },
-        j = a('MWbm'),
-        W = a('6vad'),
-        G = a('p+r5'),
-        U = a('6XNv'),
-        Y = a('nS1w'),
-        N = a('/yvb'),
-        q = a('xoZN'),
-        X = a('0yYu'),
-        Q = a('oFxb'),
-        J = a('t62R'),
-        Z = a('S8sr'),
-        $ = a('rHpw'),
-        ee = a('7JQg'),
-        te = R.a.d8496336,
-        ae = R.a.j622effd,
-        ne = R.a.d3938be7,
-        re = R.a.i647fb03,
-        oe = R.a.e0dded5d,
-        ie = R.a.b8e1d524,
-        le = R.a.a097f7ba,
-        se = R.a.a9ae1e78,
-        ce = R.a.a03dacaa,
-        ue = R.a.c03f15ca,
-        de = R.a.c647aac8,
-        pe = R.a.ac6ce1cf,
-        he = R.a.cb334136,
-        fe = R.a.jdceda6f,
-        ge = { day: void 0, month: void 0, year: void 0 },
-        me = [
-          { label: R.a.e8f38622, value: '' },
-          { label: R.a.ie23eef9, value: 'filter:links' },
+        M = a('MWbm'),
+        H = a('6vad'),
+        j = a('p+r5'),
+        W = a('6XNv'),
+        G = a('nS1w'),
+        U = a('/yvb'),
+        Y = a('xoZN'),
+        N = a('0yYu'),
+        q = a('oFxb'),
+        X = a('t62R'),
+        Q = a('S8sr'),
+        J = a('rHpw'),
+        Z = w.a.d8496336,
+        $ = w.a.j622effd,
+        ee = w.a.d3938be7,
+        te = w.a.i647fb03,
+        ae = w.a.e0dded5d,
+        ne = w.a.b8e1d524,
+        re = w.a.a097f7ba,
+        oe = w.a.a9ae1e78,
+        ie = w.a.a03dacaa,
+        le = w.a.c03f15ca,
+        se = w.a.c647aac8,
+        ce = w.a.ac6ce1cf,
+        ue = w.a.cb334136,
+        de = w.a.jdceda6f,
+        pe = { day: void 0, month: void 0, year: void 0 },
+        he = [
+          { label: w.a.e8f38622, value: '' },
+          { label: w.a.ie23eef9, value: 'filter:links' },
         ],
-        be = [
-          { label: R.a.ge10bfa1, value: '' },
-          { label: R.a.ab870903, value: 'filter:replies' },
+        fe = [
+          { label: w.a.ge10bfa1, value: '' },
+          { label: w.a.ab870903, value: 'filter:replies' },
         ],
-        ye = (function (e) {
+        ge = (function (e) {
           f()(a, e)
           var t = m()(a)
           function a(e, n) {
@@ -484,20 +488,20 @@
               s()(this, a),
               (o = t.call(this, e, n)),
               y()(p()(o), '_renderSectionTitle', function (e) {
-                return _.a.createElement(W.b, { text: e })
+                return _.a.createElement(H.b, { text: e })
               }),
               y()(p()(o), '_renderField', function (e) {
                 var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 'text'
                 return _.a.createElement(
-                  j.a,
+                  M.a,
                   { key: e.name },
-                  _.a.createElement(G.a, {
+                  _.a.createElement(j.a, {
                     helperText: e.description,
                     label: e.label,
                     name: e.name,
                     numberOfLines: 1,
                     ref: o._setFormTextInputRef,
-                    style: ve.field,
+                    style: be.field,
                     type: t,
                   }),
                 )
@@ -514,19 +518,19 @@
               y()(p()(o), '_renderLanguages', function () {
                 var e = o._getFormattedLanguageList(o.props.languageList)
                 return e.length
-                  ? _.a.createElement(U.a, {
-                      label: ce,
+                  ? _.a.createElement(W.a, {
+                      label: ie,
                       onChange: o._handleLanguageChange,
                       options: e,
-                      style: ve.languageSelector,
+                      style: be.languageSelector,
                     })
                   : null
               }),
               y()(
                 p()(o),
                 '_getFormattedLanguageList',
-                Object(O.a)(function (e) {
-                  var t = { label: ue, value: A },
+                Object(F.a)(function (e) {
+                  var t = { label: le, value: V },
                     a = e.map(function (e) {
                       return { label: e.name, value: e.code }
                     })
@@ -534,7 +538,7 @@
                 }),
               ),
               y()(p()(o), '_handleOnKeyDown', function (e) {
-                e.key === k.c && (e.preventDefault(), o._executeSearch())
+                e.key === L.c && (e.preventDefault(), o._executeSearch())
               }),
               y()(p()(o), '_handleOnSearchPress', function () {
                 o._executeSearch()
@@ -557,53 +561,53 @@
                       var o = e[r]
                       if (o)
                         switch (r) {
-                          case P.ThisExactPhrase:
+                          case O.ThisExactPhrase:
                             n.push('"'.concat(o, '"'))
                             break
-                          case P.AnyOfTheseWords:
-                            ;(t = o.split(' ')), (a = B(t)), n.push(H(a.join(' OR ')))
+                          case O.AnyOfTheseWords:
+                            ;(t = o.split(' ')), (a = A(t)), n.push(K(a.join(' OR ')))
                             break
-                          case P.NoneOfTheseWords:
-                            ;(t = '-'.concat(o).split(' ')), (a = B(t)), n.push(a.join(' -'))
+                          case O.NoneOfTheseWords:
+                            ;(t = '-'.concat(o).split(' ')), (a = A(t)), n.push(a.join(' -'))
                             break
-                          case P.TheseHashtags:
-                            ;(t = '#'.concat(K(o)).split(' ')), (a = B(t)), n.push(H(a.join(' OR #')))
+                          case O.TheseHashtags:
+                            ;(t = '#'.concat(z(o)).split(' ')), (a = A(t)), n.push(K(a.join(' OR #')))
                             break
-                          case P.FromTheseAccounts:
-                            ;(t = 'from:'.concat(M(o)).split(' ')), (a = B(t)), n.push(H(a.join(' OR from:')))
+                          case O.FromTheseAccounts:
+                            ;(t = 'from:'.concat(B(o)).split(' ')), (a = A(t)), n.push(K(a.join(' OR from:')))
                             break
-                          case P.ToTheseAccounts:
-                            ;(t = 'to:'.concat(M(o)).split(' ')), (a = B(t)), n.push(H(a.join(' OR to:')))
+                          case O.ToTheseAccounts:
+                            ;(t = 'to:'.concat(B(o)).split(' ')), (a = A(t)), n.push(K(a.join(' OR to:')))
                             break
-                          case P.MentioningTheseAccounts:
-                            ;(t = '@'.concat(M(o)).split(' ')), (a = B(t)), n.push(H(a.join(' OR @')))
+                          case O.MentioningTheseAccounts:
+                            ;(t = '@'.concat(B(o)).split(' ')), (a = A(t)), n.push(K(a.join(' OR @')))
                             break
-                          case P.FromThisDate:
+                          case O.FromThisDate:
                             n.push('since:'.concat(o))
                             break
-                          case P.ToThisDate:
+                          case O.ToThisDate:
                             n.push('until:'.concat(o))
                             break
-                          case P.Language:
-                            o !== A && n.push('lang:'.concat(o))
+                          case O.Language:
+                            o !== V && n.push('lang:'.concat(o))
                             break
-                          case P.MinReplies:
+                          case O.MinReplies:
                             n.push('min_replies:'.concat(o))
                             break
-                          case P.MinLikes:
+                          case O.MinLikes:
                             n.push('min_faves:'.concat(o))
                             break
-                          case P.MinRetweets:
+                          case O.MinRetweets:
                             n.push('min_retweets:'.concat(o))
                             break
-                          case P.AllOfTheseWords:
-                          case P.LinkFilter:
-                          case P.ReplyFilter:
+                          case O.AllOfTheseWords:
+                          case O.LinkFilter:
+                          case O.ReplyFilter:
                             n.push(o)
                         }
                     }),
                     n.join(' ').trim())
-                c && l.replace({ pathname: '/search', query: r()(r()({}, s.query), {}, { q: c, src: V.a.Typed }) })
+                c && l.replace({ pathname: '/search', query: r()(r()({}, s.query), {}, { q: c, src: R.a.Typed }) })
               }),
               y()(p()(o), '_setFormTextInputRef', function (e) {
                 e && e.props && (o._formTextInputRefs[e.props.name] = e)
@@ -620,21 +624,21 @@
                     var a = o._formTextInputRefs[t]
                     return a && a.getValue() && (e[t] = a.getValue()), e
                   }, {}),
-                  u = Y.a.getFormattedDateValue(s.day, s.month, s.year),
-                  d = Y.a.getFormattedDateValue(a.day, a.month, a.year)
+                  u = G.a.getFormattedDateValue(s.day, s.month, s.year),
+                  d = G.a.getFormattedDateValue(a.day, a.month, a.year)
                 return r()(
                   r()({}, c),
                   {},
                   ((e = { language: n }),
-                  y()(e, P.ToThisDate, u),
-                  y()(e, P.FromThisDate, d),
-                  y()(e, P.LinkFilter, i),
-                  y()(e, P.ReplyFilter, l),
+                  y()(e, O.ToThisDate, u),
+                  y()(e, O.FromThisDate, d),
+                  y()(e, O.LinkFilter, i),
+                  y()(e, O.ReplyFilter, l),
                   e),
                 )
               }),
               (o._formTextInputRefs = {}),
-              (o.state = { language: A, linkFilter: '', replyFilter: '', toDate: ge, fromDate: ge }),
+              (o.state = { language: V, linkFilter: '', replyFilter: '', toDate: pe, fromDate: pe }),
               o
             )
           }
@@ -657,68 +661,68 @@
                     n = a.linkFilter,
                     r = a.replyFilter,
                     o = _.a.createElement(
-                      N.a,
+                      U.a,
                       { onPress: this._handleOnSearchPress, size: 'small', type: 'primaryFilled' },
-                      se,
+                      oe,
                     )
                   return _.a.createElement(
-                    w.a,
-                    { backLocation: '/explore', documentTitle: te, history: t, rightControl: o, title: ae },
+                    S.a,
+                    { backLocation: '/explore', documentTitle: Z, history: t, rightControl: o, title: $ },
                     _.a.createElement(
-                      j.a,
-                      { style: ve.root },
+                      M.a,
+                      { style: be.root },
                       _.a.createElement(
-                        q.a,
+                        Y.a,
                         { onKeyDown: this._handleOnKeyDown },
-                        this._renderSectionTitle(ne),
+                        this._renderSectionTitle(ee),
                         _.a.createElement(
-                          j.a,
-                          { style: ve.section },
-                          z.wordsFields.map(function (t) {
+                          M.a,
+                          { style: be.section },
+                          P.wordsFields.map(function (t) {
                             return e._renderField(t)
                           }),
                           this._renderLanguages(),
                         ),
-                        _.a.createElement(X.a, null),
-                        this._renderSectionTitle(ie),
+                        _.a.createElement(N.a, null),
+                        this._renderSectionTitle(ne),
                         _.a.createElement(
-                          j.a,
-                          { style: ve.section },
-                          z.peopleFields.map(function (t) {
+                          M.a,
+                          { style: be.section },
+                          P.peopleFields.map(function (t) {
                             return e._renderField(t)
                           }),
                         ),
-                        _.a.createElement(X.a, null),
-                        this._renderSectionTitle(re),
-                        _.a.createElement(Q.a, {
-                          label: fe,
+                        _.a.createElement(N.a, null),
+                        this._renderSectionTitle(te),
+                        _.a.createElement(q.a, {
+                          label: de,
                           name: 'replyFilter',
                           offValue: '-filter:replies',
                           onChange: this._handleFilterChanged,
-                          options: be,
+                          options: fe,
                           value: r,
                         }),
-                        _.a.createElement(j.a, { style: ve.divider }),
-                        _.a.createElement(Q.a, {
-                          label: he,
+                        _.a.createElement(M.a, { style: be.divider }),
+                        _.a.createElement(q.a, {
+                          label: ue,
                           name: 'linkFilter',
                           offValue: '-filter:links',
                           onChange: this._handleFilterChanged,
-                          options: me,
+                          options: he,
                           value: n,
                         }),
-                        _.a.createElement(X.a, null),
-                        this._renderSectionTitle(oe),
+                        _.a.createElement(N.a, null),
+                        this._renderSectionTitle(ae),
                         _.a.createElement(
-                          j.a,
-                          { style: ve.section },
-                          z.engagementFields.map(function (t) {
+                          M.a,
+                          { style: be.section },
+                          P.engagementFields.map(function (t) {
                             return e._renderField(t, 'number')
                           }),
                         ),
-                        _.a.createElement(X.a, null),
-                        this._renderSectionTitle(le),
-                        _.a.createElement(j.a, { style: ve.section }, this._renderDateInputs()),
+                        _.a.createElement(N.a, null),
+                        this._renderSectionTitle(re),
+                        _.a.createElement(M.a, { style: be.section }, this._renderDateInputs()),
                       ),
                     ),
                   )
@@ -731,26 +735,26 @@
                     t = e.fromDate,
                     a = e.toDate
                   return _.a.createElement(
-                    j.a,
-                    { style: ve.dateInputs },
-                    _.a.createElement(J.b, null, pe),
-                    _.a.createElement(Z.a, {
+                    M.a,
+                    { style: be.dateInputs },
+                    _.a.createElement(X.b, null, ce),
+                    _.a.createElement(Q.a, {
                       day: t.day,
-                      label: pe,
+                      label: ce,
                       minSelectableYear: 2006,
                       month: t.month,
                       onChange: this._handleFromDateChange,
-                      style: ve.fromDateInput,
+                      style: be.fromDateInput,
                       year: t.year,
                     }),
-                    _.a.createElement(J.b, null, de),
-                    _.a.createElement(Z.a, {
+                    _.a.createElement(X.b, null, se),
+                    _.a.createElement(Q.a, {
                       day: a.day,
-                      label: de,
+                      label: se,
                       minSelectableYear: 2006,
                       month: a.month,
                       onChange: this._handleToDateChange,
-                      style: ve.toDateInput,
+                      style: be.toDateInput,
                       year: a.year,
                     }),
                   )
@@ -760,9 +764,10 @@
             a
           )
         })(_.a.Component),
-        ve =
-          ((t.default = Object(ee.a)({ page: 'search_advanced' })(S(ye))),
-          $.a.create(function (e) {
+        me = D(ge),
+        be =
+          ((t.default = me),
+          J.a.create(function (e) {
             return {
               root: { paddingBottom: e.spaces.space16 },
               section: { paddingHorizontal: e.spaces.space16 },

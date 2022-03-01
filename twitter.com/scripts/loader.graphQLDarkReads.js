@@ -5,7 +5,7 @@
       'use strict'
       i.r(t),
         i.d(t, 'GraphQLDarkRead', function () {
-          return N
+          return J
         }),
         i.d(t, 'compareURTData', function () {
           return w
@@ -13,10 +13,10 @@
         i.d(t, 'compareData', function () {
           return s
         })
-      i('ho0z')
+      i('ho0z'), i('7x/C'), i('JtPf')
       var a = i('T0aG'),
         n = i.n(a),
-        r = (i('yH/f'), i('jwue'), i('7x/C'), i('+oxZ'), i('+KXO'), i('mN6z')),
+        r = (i('yH/f'), i('jwue'), i('+oxZ'), i('+KXO'), i('mN6z')),
         o = Object.freeze({})
       function s(e, t, i) {
         var a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : o
@@ -76,14 +76,14 @@
             reply_count: 'ignoreValue',
           },
         },
-        b = function (e, t, i) {
+        f = function (e, t, i) {
           s(e, t, i, d)
           var a = t.entities
-          a && (e.pushObjectFieldPath('entities'), f(e, a, i.entities), e.popPath())
+          a && (e.pushObjectFieldPath('entities'), b(e, a, i.entities), e.popPath())
           var n = t.extended_entities
-          n && (e.pushObjectFieldPath('extended_entities'), f(e, n, i.extended_entities), e.popPath())
+          n && (e.pushObjectFieldPath('extended_entities'), b(e, n, i.extended_entities), e.popPath())
         },
-        f = function (e, t, i) {
+        b = function (e, t, i) {
           Object.keys(t).forEach(function (a) {
             m(e, a, t[a], i ? i[a] : void 0)
           })
@@ -100,7 +100,7 @@
                 var n = t[a],
                   r = i[a]
                 n && r
-                  ? (e.pushObjectFieldPath(a), b(e, n, r), e.popPath())
+                  ? (e.pushObjectFieldPath(a), f(e, n, r), e.popPath())
                   : r || (e.pushObjectFieldPath(a), e.reportTypeMismatch('object', 'undefined'), e.popPath())
               })
             : e.reportTypeMismatch('object', 'undefined')
@@ -276,23 +276,23 @@
             )
           })()),
         I = i('SrIh'),
-        N = function (e) {
+        J = function (e) {
           var t = e.apiResponse,
             i = e.compare,
             a = e.createRequest,
             n = e.featureSwitches,
             r = e.name,
             o = n.getNumberValue('responsive_web_graphql_dark_reads_probability') || 0
-          Math.random() < o &&
-            a &&
-            a().then(function (e) {
-              if (!Object(v.a)(e)) {
-                var a = new D()
-                i(a, t, e), z(r, a.typeMismatches()), z(''.concat(r, ' values'), a.valueMismatches())
-              }
-            })
+          return Math.random() < o && a
+            ? a().then(function (e) {
+                if (!Object(v.a)(e)) {
+                  var a = new D()
+                  i(a, t, e), N(r, a.typeMismatches()), N(''.concat(r, ' values'), a.valueMismatches())
+                }
+              })
+            : Promise.resolve()
         },
-        z = function (e, t) {
+        N = function (e, t) {
           if (t.length) {
             var i = { name: e, mismatchedFields: t },
               a = new R(e, t)

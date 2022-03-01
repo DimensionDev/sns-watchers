@@ -15,7 +15,7 @@
         u = n('yiKp'),
         d = n.n(u),
         p = n('ezF+'),
-        f =
+        m =
           (n('lTEL'),
           n('7x/C'),
           n('JtPf'),
@@ -28,37 +28,42 @@
             loaderKey: 'collectionHeaderLoader',
             strategy: n('XBtf').a.Critical,
           }),
-        m = p.e(f),
+        f = p.e(m),
         y = n('8UdT'),
         w = n('QIgh'),
-        I = d()(d()({}, w.b), {}, l()({}, y.a.CollectionHeader, m)),
-        b = n('3XMw'),
-        C = n.n(b),
+        I = d()(d()({}, w.b), {}, l()({}, y.a.CollectionHeader, f)),
+        C = n('3XMw'),
+        b = n.n(C),
         x = n('yoO3'),
         E = n('fTQJ'),
-        h = n('VS6U'),
-        g = n('7JQg'),
-        T = C.a.f8cafdc1,
-        v = C.a.ddf0ba7e
-      t.default = Object(g.a)({ page: 'collection', section: 'tweets' })(function (e) {
+        h = n('7JQg'),
+        g = n('VS6U'),
+        T = b.a.f8cafdc1,
+        v = b.a.ddf0ba7e,
+        O = { page: 'collection', section: 'tweets' }
+      t.default = function (e) {
         var t = e.history,
           n = e.match.params.collectionId
         return o.a.createElement(
-          x.a,
-          null,
-          o.a.createElement(h.a, {
-            backLocation: '/',
-            history: t,
-            primaryContent: o.a.createElement(
-              c.a,
-              null,
-              o.a.createElement(E.a, { entryConfiguration: I, module: Object(a.a)(n), title: T }),
-            ),
-            sidebarContent: o.a.createElement(i.a, null),
-            title: v,
-          }),
+          h.c,
+          { namespace: O },
+          o.a.createElement(
+            x.a,
+            null,
+            o.a.createElement(g.a, {
+              backLocation: '/',
+              history: t,
+              primaryContent: o.a.createElement(
+                c.a,
+                null,
+                o.a.createElement(E.a, { entryConfiguration: I, module: Object(a.a)(n), title: T }),
+              ),
+              sidebarContent: o.a.createElement(i.a, null),
+              title: v,
+            }),
+          ),
         )
-      })
+      }
     },
     SslV: function (e, t, n) {
       'use strict'
@@ -72,8 +77,8 @@
         u = n('vWJI'),
         d = n('8UdT'),
         p = n('9/1j'),
-        f = n('t0aI'),
-        m = n('VrCx'),
+        m = n('t0aI'),
+        f = n('VrCx'),
         y = n('Qyxo'),
         w = function (e, t) {
           if (0 !== e.length) {
@@ -87,13 +92,13 @@
         I = function (e, t) {
           var n = e.result.response.timeline,
             r = Object(y.a)(n, function (e) {
-              return e.tweet ? C(e.tweet) : void 0
+              return e.tweet ? b(e.tweet) : void 0
             }),
             o = w(r, function (e, t) {
-              return -Object(f.a)(e.sortIndex, t.sortIndex)
+              return -Object(m.a)(e.sortIndex, t.sortIndex)
             }),
             a = w(r, function (e, t) {
-              return Object(f.a)(e.sortIndex, t.sortIndex)
+              return Object(m.a)(e.sortIndex, t.sortIndex)
             }),
             i = (e.result.response.position || {}).min_position,
             c = i && a && x(i, a.sortIndex)
@@ -101,11 +106,11 @@
           var l = e.result.response.timeline_id.replace('custom-', ''),
             u = e.entities,
             d = u.cards,
-            m = u.collections,
+            f = u.collections,
             I = u.tweets,
             E = u.users,
-            h = m && m[l],
-            g = !t.cursor && h && b(l, o ? o.sortIndex : '0', h),
+            h = f && f[l],
+            g = !t.cursor && h && C(l, o ? o.sortIndex : '0', h),
             T = g ? [g].concat(s()(r)) : r
           return {
             globalObjects: { cards: d || {}, tweets: I || {}, users: E || {} },
@@ -115,7 +120,7 @@
             },
           }
         },
-        b = function (e, t, n) {
+        C = function (e, t, n) {
           return {
             type: 'legacy_CollectionHeader',
             entryId: 'header-'.concat(e),
@@ -124,13 +129,13 @@
             content: { authorId: n.user_id, name: n.name, description: n.description },
           }
         },
-        C = function (e) {
+        b = function (e) {
           return {
             type: 'tweet',
             entryId: 'tweet-'.concat(e.id),
             sortIndex: e.sort_index,
             itemMetadata: {},
-            content: { id: e.id, displayType: m.a.Tweet },
+            content: { id: e.id, displayType: f.a.Tweet },
           }
         },
         x = function (e, t) {

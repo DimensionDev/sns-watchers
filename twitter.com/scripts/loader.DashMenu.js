@@ -32,12 +32,12 @@
         u = n.n(s),
         d = n('5Yy7'),
         m = n.n(d),
-        f = n('2VqO'),
-        h = n.n(f),
+        h = n('2VqO'),
+        f = n.n(h),
         p = n('KEM+'),
         b = n.n(p),
-        _ = (n('uFXj'), n('ERkP')),
-        g = n.n(_),
+        g = (n('uFXj'), n('ERkP')),
+        _ = n.n(g),
         C = n('38/B'),
         w = n('xKuM'),
         y = n('/yvb'),
@@ -51,10 +51,10 @@
         T = n('shC7'),
         L = n('MWbm'),
         D = v.a.af8fa2ad,
-        P = g.a.createElement(M.a, null),
+        P = _.a.createElement(M.a, null),
         x = (function (e) {
           m()(n, e)
-          var t = h()(n)
+          var t = f()(n)
           function n(e) {
             var a
             return (
@@ -124,13 +124,13 @@
                     u = c ? I.maskWithBg : I.maskTransparent,
                     d = c ? I.animateOpen : I.animateClose,
                     m = C.a.reducedMotionEnabled ? null : d
-                  return g.a.createElement(
+                  return _.a.createElement(
                     A.a.Modal,
                     null,
-                    g.a.createElement(
+                    _.a.createElement(
                       E.a,
                       { withKeyboardNavigation: !0 },
-                      g.a.createElement(
+                      _.a.createElement(
                         L.a,
                         {
                           onClick: this._handleMaskClick,
@@ -143,16 +143,16 @@
                           ref: this._setAnimationNode,
                           onClick: U,
                           style: [I.root, s, m, r],
-                          children: g.a.createElement(
-                            g.a.Fragment,
+                          children: _.a.createElement(
+                            _.a.Fragment,
                             null,
-                            g.a.createElement(w.a, {
+                            _.a.createElement(w.a, {
                               leftControl: 'left' === n ? t : 'right' === n ? this._renderCloseButton(a) : null,
                               rightControl: 'left' === n ? this._renderCloseButton(a) : 'right' === n ? t : null,
                               subtitle: o,
                               title: l,
                             }),
-                            g.a.createElement(L.a, { style: I.contentContainer }, i),
+                            _.a.createElement(L.a, { style: I.contentContainer }, i),
                           ),
                         }),
                       ),
@@ -163,7 +163,7 @@
               {
                 key: '_renderCloseButton',
                 value: function (e) {
-                  return g.a.createElement(y.a, {
+                  return _.a.createElement(y.a, {
                     accessibilityLabel: D,
                     icon: P,
                     onPress: this._handleMaskClick,
@@ -174,7 +174,7 @@
             ]),
             n
           )
-        })(g.a.Component)
+        })(_.a.Component)
       b()(x, 'defaultProps', { align: 'left', onDismissed: function () {} })
       var U = function (e) {
           e.stopPropagation()
@@ -237,7 +237,7 @@
           return function (t, n, l) {
             var c = l.api,
               s = Object(i.b)(t, { request: c.Auth.switch, params: e })
-            return t(Object(r.f)()).then(function () {
+            return t(Object(r.g)()).then(function () {
               return t(Object(a.b)()).then(function () {
                 return s({ actionTypes: o, context: 'SWITCH' }).then(function () {
                   window.location.assign('/home')
@@ -263,12 +263,12 @@
         u = n.n(s),
         d = n('2VqO'),
         m = n.n(d),
-        f = n('KEM+'),
-        h = n.n(f),
+        h = n('KEM+'),
+        f = n.n(h),
         p = (n('2G9S'), n('ho0z'), n('z84I'), n('ERkP')),
         b = n.n(p),
-        _ = n('H9MA'),
-        g = n('qtu+'),
+        g = n('H9MA'),
+        _ = n('qtu+'),
         C = n('G6rE'),
         w = n('rxPX'),
         y = n('0KEI'),
@@ -282,8 +282,8 @@
               createLocalApiErrorHandler: Object(y.createLocalApiErrorHandlerWithContextFactory)(
                 'DASH_MENU_ACCOUNT_SWITCH',
               ),
-              fetchDataUsageSettingsIfNeeded: _.b,
-              switchAccount: g.a,
+              fetchDataUsageSettingsIfNeeded: g.b,
+              switchAccount: _.a,
             }
           })
           .withAnalytics({ page: 'dash' }),
@@ -326,7 +326,7 @@
             for (var a = arguments.length, r = new Array(a), o = 0; o < a; o++) r[o] = arguments[o]
             return (
               (e = t.call.apply(t, [this].concat(r))),
-              h()(c()(e), '_renderMenuContent', function (t) {
+              f()(c()(e), '_renderMenuContent', function (t) {
                 var n = t.withPadding,
                   a = e.props,
                   i = a.loggedInUser,
@@ -339,10 +339,10 @@
                   u = i.friends_count,
                   d = i.name,
                   m = i.profile_image_url_https,
-                  f = i.protected,
-                  h = i.screen_name,
+                  h = i.protected,
+                  f = i.screen_name,
                   p = i.translator_type,
-                  _ = i.verified
+                  g = i.verified
                 return Object(L.a)()
                   ? b.a.createElement(v.a, { onClose: o, withMoreSideNavOverflow: c })
                   : b.a.createElement(
@@ -359,7 +359,7 @@
                             { style: D.a.avatarWrapper },
                             b.a.createElement(U.a, {
                               onClick: e._handleProfileClick,
-                              screenName: h,
+                              screenName: f,
                               size: 'xLarge',
                               uri: m,
                               withLink: !0,
@@ -391,16 +391,16 @@
                             {
                               accessibilityLabel: B,
                               interactiveStyles: null,
-                              link: '/'.concat(h),
+                              link: '/'.concat(f),
                               onClick: e._handleProfileClick,
                               style: [D.a.item, D.a.userNames],
                             },
                             b.a.createElement(H.a, {
                               badgeContext: 'account',
-                              isProtected: f,
-                              isVerified: _,
+                              isProtected: h,
+                              isVerified: g,
                               name: d,
-                              screenName: h,
+                              screenName: f,
                               translatorType: p,
                               withStackedLayout: !0,
                             }),
@@ -411,14 +411,14 @@
                           : b.a.createElement(W.a, {
                               followersCount: s,
                               friendsCount: u,
-                              screenName: h,
+                              screenName: f,
                               style: [D.a.item, D.a.itemProfileStats],
                             }),
                       ),
                       b.a.createElement(v.a, { onClose: o }),
                     )
               }),
-              h()(c()(e), '_renderMultiAccountUsers', function () {
+              f()(c()(e), '_renderMultiAccountUsers', function () {
                 return e.props.multiAccountUsers.map(function (t) {
                   return b.a.createElement(
                     x.a,
@@ -436,7 +436,7 @@
                   )
                 })
               }),
-              h()(c()(e), '_handleMenuItemClick', function (t) {
+              f()(c()(e), '_handleMenuItemClick', function (t) {
                 return function () {
                   var n = e.props,
                     a = n.analytics,
@@ -444,9 +444,9 @@
                   t && a.scribe({ section: 'overflow_menu', element: t, action: 'click' }), i && i()
                 }
               }),
-              h()(c()(e), '_handleProfileClick', e._handleMenuItemClick('profile_overflow_item')),
-              h()(c()(e), '_handleSimpleClick', e._handleMenuItemClick()),
-              h()(c()(e), '_handleMultiAccountSwitch', function (t, n, a) {
+              f()(c()(e), '_handleProfileClick', e._handleMenuItemClick('profile_overflow_item')),
+              f()(c()(e), '_handleSimpleClick', e._handleMenuItemClick()),
+              f()(c()(e), '_handleMultiAccountSwitch', function (t, n, a) {
                 return function () {
                   var i = e.props,
                     r = i.analytics,
@@ -460,7 +460,7 @@
                     l({ user_id: t }).catch(o(T.a))
                 }
               }),
-              h()(c()(e), '_handleSwitcherButton', function () {
+              f()(c()(e), '_handleSwitcherButton', function () {
                 var t = e.props,
                   n = t.analytics,
                   a = t.onClose
@@ -508,7 +508,7 @@
             n
           )
         })(b.a.Component)
-      h()(Q, 'contextType', V.a)
+      f()(Q, 'contextType', V.a)
       var J = k(Q)
       t.default = J
     },

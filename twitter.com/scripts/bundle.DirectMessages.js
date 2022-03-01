@@ -60,10 +60,10 @@
       'use strict'
       n.r(t),
         n.d(t, 'DmConversationMetadataQuery', function () {
-          return R
+          return A
         }),
         n.d(t, 'default', function () {
-          return M
+          return F
         })
       n('uFXj')
       var a,
@@ -129,47 +129,50 @@
       }
       var E,
         S = n('qBaR'),
-        C = n('z2Pn'),
-        k = n('rHpw'),
-        I = n('pNZL'),
-        w = n('IAZG'),
-        x = n('zCf4'),
-        T = { page: 'messages', section: 'thread' },
-        R = void 0 !== E ? E : (E = n('q2o4')),
-        O = { context: 'DM_CONVERSATION_TIMELINE' }
-      function A(e) {
+        C = n('RqPI'),
+        k = n('z2Pn'),
+        I = n('rHpw'),
+        w = n('pNZL'),
+        x = n('IAZG'),
+        T = n('uDfI'),
+        R = n('zCf4'),
+        O = { page: 'messages', section: 'thread' },
+        A = void 0 !== E ? E : (E = n('q2o4')),
+        M = { context: 'DM_CONVERSATION_TIMELINE' }
+      function L(e) {
         var t = e.richTextInputContext,
           n = e.typeaheadWrapper,
-          a = Object(x.f)(),
-          i = Object(x.g)(),
-          l = Object(x.h)().conversationId,
-          c = Object(w.a)(R, { id: l || '' })
+          a = Object(R.f)(),
+          i = Object(R.g)(),
+          l = Object(R.h)().conversationId,
+          c = Object(x.a)(A, { id: l || '' })
         o.a.useEffect(function () {
-          r.d(T), r.a(T), Object(I.b)(T)
+          r.d(O), r.a(O), Object(w.b)(O)
         }, []),
           o.a.useEffect(
             function () {
-              Object(C.h)(i.pathname)
+              Object(k.h)(i.pathname)
             },
             [i.pathname],
           )
         var u = 'string' == typeof i.query.text ? i.query.text : void 0,
-          d = s.a.get('window').width >= k.a.theme.breakpoints.small,
-          h = (function (e) {
+          d = s.a.get('window').width >= I.a.theme.breakpoints.small,
+          h = Object(T.d)(C.q) || '',
+          f = (function (e) {
             if (!e) return null
             var t = Object(m.b)([e.dm_conversation_by_rest_id], [p.a]).entities.conversations
             for (var n in t) return t[n]
             return null
           })(c)
-        return h && h.conversation_id
+        return f && f.conversation_id
           ? o.a.createElement(
               S.a,
-              { conversation: h, conversationId: h.conversation_id, newConversationParticipants: [], perspective: '' },
+              { conversation: f, conversationId: f.conversation_id, newConversationParticipants: [], perspective: h },
               o.a.createElement(_, {
-                conversation: h,
+                conversation: f,
                 history: a,
                 isWide: d,
-                perspective: '',
+                perspective: h,
                 prefillText: u,
                 richTextInputContext: t,
                 typeaheadWrapper: n,
@@ -177,8 +180,8 @@
             )
           : null
       }
-      function M(e) {
-        return o.a.createElement(h.a, { errorConfig: O }, o.a.createElement(A, e))
+      function F(e) {
+        return o.a.createElement(h.a, { errorConfig: M }, o.a.createElement(L, e))
       }
     },
     '06eB': function (e, t, n) {

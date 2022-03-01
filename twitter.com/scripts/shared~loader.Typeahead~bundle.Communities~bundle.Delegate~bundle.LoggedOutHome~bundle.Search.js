@@ -42,10 +42,10 @@
         N = n('xoZN'),
         k = n('6OUF'),
         F = n('pf9B'),
-        P = n('cHvH'),
-        q = n('oEoC'),
-        U = D.a.f065ba8c,
-        L = { viewType: 'typeahead_input' },
+        U = n('cHvH'),
+        L = n('oEoC'),
+        P = D.a.f065ba8c,
+        q = { viewType: 'typeahead_input' },
         A = function (e) {
           return E.a.isTwoColumnNormalLayout(e)
             ? {
@@ -88,7 +88,7 @@
                   v = a.state.showTypeaheadDropdown || o
                 return _.a.createElement(
                   w.a,
-                  { behavioralEventContext: L },
+                  { behavioralEventContext: q },
                   _.a.createElement(
                     x.a,
                     { onLayout: a._handleLayout, ref: a._setRootContainerNode, style: [V.root, m] },
@@ -111,7 +111,7 @@
                             ariaActiveDescendant: a.state.ariaDescendantId,
                             ariaAutocomplete: 'list',
                             ariaExpanded: v,
-                            ariaLabel: U,
+                            ariaLabel: P,
                             ariaOwns: a._dropdownDomId,
                             ariaRole: 'combobox',
                             autoComplete: 'off',
@@ -152,40 +152,41 @@
                   r = t.getItemDisabledMessage,
                   s = t.getItemIsDisabled,
                   i = t.getTopicExactMatch,
-                  c = t.getUserExactMatch,
-                  u = t.injectedItems,
-                  d = t.isInSidebar,
-                  l = t.isModal,
-                  p = t.isOnHomepage,
-                  h = t.maxEvents,
-                  f = t.maxTopics,
-                  m = t.onItemsChanged,
-                  y = t.orderResults,
-                  v = t.renderCallout,
-                  w = t.renderEmptyState,
-                  I = t.renderHeader,
-                  b = t.renderNoResultsState,
-                  D = t.renderUserDecoration,
-                  g = t.selectedItems,
-                  C = t.shouldDeferPrefetch,
-                  E = t.source,
-                  O = t.withFixedPositioning,
-                  x = t.withSectionDivider,
-                  S = e >= j.a.theme.breakpoints.medium || Object(R.a)(),
-                  N = a.state,
-                  k = N.dropdownOffset,
-                  F = N.query,
-                  P = l
+                  c = t.getUserDisplayNameLabel,
+                  u = t.getUserExactMatch,
+                  d = t.injectedItems,
+                  l = t.isInSidebar,
+                  p = t.isModal,
+                  h = t.isOnHomepage,
+                  f = t.maxEvents,
+                  m = t.maxTopics,
+                  y = t.onItemsChanged,
+                  v = t.orderResults,
+                  w = t.renderCallout,
+                  I = t.renderEmptyState,
+                  b = t.renderHeader,
+                  D = t.renderNoResultsState,
+                  g = t.renderUserDecoration,
+                  C = t.selectedItems,
+                  E = t.shouldDeferPrefetch,
+                  O = t.source,
+                  x = t.withFixedPositioning,
+                  S = t.withSectionDivider,
+                  N = e >= j.a.theme.breakpoints.medium || Object(R.a)(),
+                  k = a.state,
+                  F = k.dropdownOffset,
+                  U = k.query,
+                  P = p
                     ? V.modalDropdown
                     : [
                         V.dropdown,
-                        !S && O && k ? [Object(q.d)(k), { height: 'calc(100vh - '.concat(k, 'px)') }] : null,
-                        (S || p) && V.wideModeDropdown,
-                        a._withNewTypeaheadUI && d && A(e),
-                        p && V.shortModeDropdown,
-                        !S && p && V.shortModeDropdownMobile,
+                        !N && x && F ? [Object(L.d)(F), { height: 'calc(100vh - '.concat(F, 'px)') }] : null,
+                        (N || h) && V.wideModeDropdown,
+                        a._withNewTypeaheadUI && l && A(e),
+                        h && V.shortModeDropdown,
+                        !N && h && V.shortModeDropdownMobile,
                       ],
-                  U = {
+                  q = {
                     ariaDescendantId: a.state.ariaDescendantId,
                     domId: a._dropdownDomId,
                     onDismiss: a._handleOnEmptyStateDismiss,
@@ -193,8 +194,8 @@
                     ref: a._handleDropdownRef,
                     style: P,
                   }
-                return w && !F
-                  ? w(U)
+                return I && !U
+                  ? I(q)
                   : _.a.createElement(T.a, {
                       ariaDescendantId: a.state.ariaDescendantId,
                       communityId: n,
@@ -203,25 +204,26 @@
                       getItemDisabledMessage: r,
                       getItemIsDisabled: s,
                       getTopicExactMatch: i,
-                      getUserExactMatch: c,
-                      injectedItems: u,
-                      maxEvents: h,
-                      maxTopics: f,
+                      getUserDisplayNameLabel: c,
+                      getUserExactMatch: u,
+                      injectedItems: d,
+                      maxEvents: f,
+                      maxTopics: m,
                       onItemClick: a._handleItemClick,
                       onItemFocusChanged: a._handleItemFocusChanged,
-                      onItemsChanged: m,
-                      orderResults: y,
-                      query: F,
+                      onItemsChanged: y,
+                      orderResults: v,
+                      query: U,
                       ref: a._handleDropdownRef,
-                      renderCallout: v,
-                      renderHeader: I,
-                      renderNoResultsState: b,
-                      renderUserDecoration: D,
-                      selectedItems: g,
-                      shouldDeferPrefetch: C,
-                      source: E,
+                      renderCallout: w,
+                      renderHeader: b,
+                      renderNoResultsState: D,
+                      renderUserDecoration: g,
+                      selectedItems: C,
+                      shouldDeferPrefetch: E,
+                      source: O,
                       style: P,
-                      withSectionDivider: x,
+                      withSectionDivider: S,
                     })
               }),
               f()(c()(a), '_dismissDropdown', function () {
@@ -263,7 +265,7 @@
               f()(c()(a), '_handleKeyDown', function (e) {
                 var t = e.key,
                   n = a.state.showTypeaheadDropdown
-                if (Object(q.g)(e)) {
+                if (Object(L.g)(e)) {
                   if (t === m.a) return a._focusNext(), void e.preventDefault()
                   if (t === m.b) return a._focusPrevious(), void e.preventDefault()
                   if (t === m.d) return a._dismissDropdown(), void e.preventDefault()
@@ -275,7 +277,7 @@
                 }
               }),
               f()(c()(a), '_handleItemFocusChanged', function () {
-                a.setState({ ariaDescendantId: Object(q.b)() })
+                a.setState({ ariaDescendantId: Object(L.b)() })
               }),
               f()(c()(a), '_handleInputClear', function () {
                 a.setQuery('')
@@ -319,7 +321,7 @@
               f()(c()(a), '_focusPrevious', function () {
                 a._dropdownRef && a._dropdownRef.focusPrevious()
               }),
-              (a.state = { ariaDescendantId: Object(q.b)(), query: e.initialValue, showTypeaheadDropdown: !1 }),
+              (a.state = { ariaDescendantId: Object(L.b)(), query: e.initialValue, showTypeaheadDropdown: !1 }),
               (a._dropdownDomId = 'typeaheadDropdown-'.concat(M)),
               (M += 1),
               (a._withNewTypeaheadUI = a.context.featureSwitches.isTrue(
@@ -351,7 +353,7 @@
               {
                 key: 'render',
                 value: function () {
-                  return _.a.createElement(P.a, null, this._render)
+                  return _.a.createElement(U.a, null, this._render)
                 },
               },
               {
@@ -465,10 +467,10 @@
           n('/kEJ')),
         k = n('oEOe'),
         F = n('vy4g'),
-        P = n('3A2y'),
-        q = n('Y6L+'),
-        U = n('9EWH'),
-        L = n('Ssj5'),
+        U = n('3A2y'),
+        L = n('Y6L+'),
+        P = n('9EWH'),
+        q = n('Ssj5'),
         A = n('GZwR'),
         M = ['rounded_score', 'tokens'],
         H = ['rounded_score', 'tokens'],
@@ -507,7 +509,7 @@
               o = e.tokens,
               r = s()(e, H),
               a = A.b.Event,
-              i = null == r || null === (t = r.url) || void 0 === t ? void 0 : t.match(q.A.id)
+              i = null == r || null === (t = r.url) || void 0 === t ? void 0 : t.match(L.A.id)
             return { id: (null == i ? void 0 : i[0]) || '', type: a, tokens: o, rounded_score: n, data: r }
           })
         },
@@ -550,14 +552,14 @@
             return Object(k.b)(n, { params: e, request: a.Typeahead.fetch })(u)
           }
         }
-      L.a.register(
+      q.a.register(
         v()({}, V, function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Y,
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
             case B.REQUEST:
               var n = t.meta.queryId
-              return Object(U.a)(e, function (e) {
+              return Object(P.a)(e, function (e) {
                 e.remoteResults[n] || (e.remoteResults[n] = { fetchStatus: R.a.NONE }),
                   (e.remoteResults[n].fetchStatus = R.a.LOADING)
               })
@@ -577,18 +579,18 @@
                   users: Object(A.i)(a),
                   timestamp: Date.now(),
                 }
-              return Object(U.a)(e, function (e) {
+              return Object(P.a)(e, function (e) {
                 ;(e.cachedIds = e.cachedIds.filter(function (e) {
                   return e !== o
                 })),
                   e.cachedIds.push(o),
                   e.cachedIds.length >= 25 &&
-                    (e.remoteResults = Object(P.a)(e.remoteResults, e.cachedIds.splice(0, 1))),
+                    (e.remoteResults = Object(U.a)(e.remoteResults, e.cachedIds.splice(0, 1))),
                   (e.remoteResults[o] = s)
               })
             case B.FAILURE:
               var i = t.meta.queryId
-              return Object(U.a)(e, function (e) {
+              return Object(P.a)(e, function (e) {
                 e.remoteResults[i].fetchStatus = R.a.FAILED
               })
             default:

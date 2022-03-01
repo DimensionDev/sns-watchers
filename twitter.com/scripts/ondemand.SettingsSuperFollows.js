@@ -12,7 +12,7 @@
         selections: [
           {
             kind: 'InlineDataFragmentSpread',
-            name: 'clientOnlyState_viewer',
+            name: 'superFollowsShared_viewer',
             selections: [
               {
                 kind: 'ClientExtension',
@@ -46,7 +46,7 @@
         ],
         type: 'Viewer',
         abstractKey: null,
-        hash: '55cd0beb19747f9f51eb603808953534',
+        hash: '47d942c03c899c9d3a5429a1041379c9',
       }
       a.default = t
     },
@@ -108,7 +108,7 @@
         selections: [
           {
             kind: 'InlineDataFragmentSpread',
-            name: 'clientOnlyState_viewer',
+            name: 'superFollowsShared_viewer',
             selections: [
               {
                 kind: 'ClientExtension',
@@ -148,7 +148,7 @@
         ],
         type: 'Viewer',
         abstractKey: null,
-        hash: '01c6511cbc1b8fc1f300b50bd8bec34f',
+        hash: '6127e1fe3ccc90c8fc8f954981afd53b',
       }
       a.default = t
     },
@@ -215,41 +215,10 @@
         metadata: null,
         name: 'SuperFollowsOnboardingSwitch_user',
         selections: [
-          {
-            alias: null,
-            args: null,
-            concreteType: 'AudienceRewardsBenefitsData',
-            kind: 'LinkedField',
-            name: 'super_follow_creator_benefits',
-            plural: !1,
-            selections: [
-              { alias: null, args: null, kind: 'ScalarField', name: 'creator_intro', storageKey: null },
-              {
-                alias: null,
-                args: null,
-                concreteType: 'AudienceRewardsBenefitInfo',
-                kind: 'LinkedField',
-                name: 'benefits_data',
-                plural: !0,
-                selections: [
-                  { alias: null, args: null, kind: 'ScalarField', name: 'benefit_type', storageKey: null },
-                  { alias: null, args: null, kind: 'ScalarField', name: 'description', storageKey: null },
-                ],
-                storageKey: null,
-              },
-            ],
-            storageKey: null,
-          },
-          {
-            alias: null,
-            args: null,
-            concreteType: 'SuperFollowsSelectedPrice',
-            kind: 'LinkedField',
-            name: 'super_follow_creator_price_metadata',
-            plural: !1,
-            selections: [{ alias: null, args: null, kind: 'ScalarField', name: 'selected_price', storageKey: null }],
-            storageKey: null,
-          },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingCreatorIntro_user' },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingDescription_user' },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingSelectedPrice_user' },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsBlockOnboardingNavigation_user' },
           { args: null, kind: 'FragmentSpread', name: 'SuperFollowsOnboardingGetStartedScreen_user' },
           { args: null, kind: 'FragmentSpread', name: 'SuperFollowsOnboardingPerksBadgesScreen_user' },
           { args: null, kind: 'FragmentSpread', name: 'SuperFollowsOnboardingPerksIntroScreen_user' },
@@ -258,7 +227,7 @@
         ],
         type: 'User',
         abstractKey: null,
-        hash: '225d709f425ee45942383084a6afa7c6',
+        hash: 'de4b2addf8047ad2870c65fb8c542507',
       }
       a.default = t
     },
@@ -286,29 +255,13 @@
         metadata: null,
         name: 'SuperFollowsOnboardingPricingConfirmScreen_viewer',
         selections: [
-          {
-            kind: 'ClientExtension',
-            selections: [
-              {
-                alias: null,
-                args: null,
-                concreteType: 'SuperFollowsOnboardingDraft',
-                kind: 'LinkedField',
-                name: 'super_follows_onboarding_draft',
-                plural: !1,
-                selections: [
-                  { alias: null, args: null, kind: 'ScalarField', name: 'creator_intro', storageKey: null },
-                  { alias: null, args: null, kind: 'ScalarField', name: 'description', storageKey: null },
-                  { alias: null, args: null, kind: 'ScalarField', name: 'selected_price', storageKey: null },
-                ],
-                storageKey: null,
-              },
-            ],
-          },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingDraftCreatorIntro_viewer' },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingDraftDescription_viewer' },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingDraftSelectedPrice_viewer' },
         ],
         type: 'Viewer',
         abstractKey: null,
-        hash: '12548aff81a962bdc47dabcad89df823',
+        hash: 'a3742e5cfba091e6f073b741c7c725a1',
       }
       a.default = t
     },
@@ -331,28 +284,28 @@
         h = n('P1r1'),
         y = n('G6rE'),
         w = n('rxPX'),
-        _ = n('0KEI'),
-        v = Object(w.a)()
+        v = n('0KEI'),
+        S = Object(w.a)()
           .propsFromState(function () {
             return { fetchStatus: h.o, loggedInUser: y.e.selectLoggedInUser }
           })
           .propsFromActions(function () {
             return {
               fetchSettingsIfNeeded: h.f,
-              createLocalApiErrorHandler: Object(_.createLocalApiErrorHandlerWithContextFactory)('SETTINGS_LOADER'),
+              createLocalApiErrorHandler: Object(v.createLocalApiErrorHandlerWithContextFactory)('SETTINGS_LOADER'),
             }
           }),
-        S = n('v//M'),
+        _ = n('v//M'),
         k = n('3XMw'),
         F = n.n(k),
         E = n('M2mT'),
         C = 'settingsDetailSave',
         x = n('mw9i'),
         K = n('0yYu'),
-        L = n('/yvb'),
-        T = n('rHpw'),
-        P = F.a.i2209530,
-        O = (function (e) {
+        P = n('/yvb'),
+        L = n('rHpw'),
+        D = F.a.i2209530,
+        T = (function (e) {
           u()(n, e)
           var a = p()(n)
           function n() {
@@ -363,7 +316,7 @@
               (e = a.call.apply(a, [this].concat(l))),
               g()(s()(e), '_renderWithFetchSettings', function () {
                 var a = e.props.fetchStatus
-                return b.a.createElement(S.a, { fetchStatus: a, onRequestRetry: e._handleFetch, render: e._render })
+                return b.a.createElement(_.a, { fetchStatus: a, onRequestRetry: e._handleFetch, render: e._render })
               }),
               g()(s()(e), '_render', function () {
                 var a = e.props,
@@ -375,7 +328,7 @@
                   o = a.withMarginBottom
                 return b.a.createElement(
                   x.a,
-                  { style: [D.contentRoot, o && D.withMarginBottom] },
+                  { style: [O.contentRoot, o && O.withMarginBottom] },
                   n,
                   t
                     ? b.a.createElement(
@@ -384,8 +337,8 @@
                         b.a.createElement(K.a, null),
                         b.a.createElement(
                           x.a,
-                          { style: D.buttonContainer },
-                          b.a.createElement(L.a, { disabled: r, onPress: t, style: D.button, testID: C, type: i }, l),
+                          { style: O.buttonContainer },
+                          b.a.createElement(P.a, { disabled: r, onPress: t, style: O.button, testID: C, type: i }, l),
                         ),
                       )
                     : null,
@@ -450,8 +403,8 @@
             n
           )
         })(b.a.Component)
-      g()(O, 'defaultProps', { submitLabel: P, submitType: 'brandFilled', withMarginBottom: !0 })
-      var D = T.a.create(function (e) {
+      g()(T, 'defaultProps', { submitLabel: D, submitType: 'brandFilled', withMarginBottom: !0 })
+      var O = L.a.create(function (e) {
         return {
           contentRoot: {
             backgroundColor: e.colors.cellBackground,
@@ -469,11 +422,11 @@
           },
           button: { marginVertical: 0, marginHorizontal: e.spaces.space12 },
           withMarginBottom: {
-            marginBottom: 'calc('.concat(e.spaces.space64, ' + ').concat(T.a.iPhoneOffsetBottom, ')'),
+            marginBottom: 'calc('.concat(e.spaces.space64, ' + ').concat(L.a.iPhoneOffsetBottom, ')'),
           },
         }
       })
-      a.a = v(O)
+      a.a = S(T)
     },
     '9SqB': function (e, a, n) {
       'use strict'
@@ -662,7 +615,7 @@
         selections: [
           {
             kind: 'InlineDataFragmentSpread',
-            name: 'clientOnlyState_viewer',
+            name: 'superFollowsShared_viewer',
             selections: [
               {
                 kind: 'ClientExtension',
@@ -670,25 +623,11 @@
               },
             ],
           },
-          {
-            kind: 'ClientExtension',
-            selections: [
-              {
-                alias: null,
-                args: null,
-                concreteType: 'SuperFollowsOnboardingDraft',
-                kind: 'LinkedField',
-                name: 'super_follows_onboarding_draft',
-                plural: !1,
-                selections: [{ alias: null, args: null, kind: 'ScalarField', name: 'creator_intro', storageKey: null }],
-                storageKey: null,
-              },
-            ],
-          },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingDraftCreatorIntro_viewer' },
         ],
         type: 'Viewer',
         abstractKey: null,
-        hash: '092140d55d803d1874ea1c3de447b1cd',
+        hash: '837cd51625531128d0020203d44d4364',
       }
       a.default = t
     },
@@ -783,7 +722,6 @@
                 plural: !0,
                 selections: [
                   { alias: null, args: null, kind: 'ScalarField', name: 'benefit_type', storageKey: null },
-                  { alias: null, args: null, kind: 'ScalarField', name: 'title', storageKey: null },
                   { alias: null, args: null, kind: 'ScalarField', name: 'description', storageKey: null },
                 ],
                 storageKey: null,
@@ -794,7 +732,7 @@
         ],
         type: 'User',
         abstractKey: null,
-        hash: 'a870a52d2192078949a9299576e8b226',
+        hash: 'f63f3bedef01a304535ac954b5279837',
       }
       a.default = t
     },
@@ -1007,7 +945,6 @@
                                         name: 'description',
                                         storageKey: null,
                                       }),
-                                      { alias: null, args: null, kind: 'ScalarField', name: 'title', storageKey: null },
                                     ],
                                     storageKey: null,
                                   },
@@ -1129,7 +1066,7 @@
             ],
           },
           params: {
-            id: '0-heqLY1OV4T-8MISRvN9Q',
+            id: 'oBB1cAU62MzNbryV4Sh8Yw',
             metadata: {},
             name: 'SuperFollowsSettingsQuery',
             operationKind: 'query',
@@ -1149,7 +1086,7 @@
         selections: [
           {
             kind: 'InlineDataFragmentSpread',
-            name: 'clientOnlyState_viewer',
+            name: 'superFollowsShared_viewer',
             selections: [
               {
                 kind: 'ClientExtension',
@@ -1175,7 +1112,7 @@
         ],
         type: 'Viewer',
         abstractKey: null,
-        hash: '12221550738bb9a9e2d43bc4ad78d9c0',
+        hash: 'df25ea9ad03b5f8d07759b33364597f8',
       }
       a.default = t
     },
@@ -1209,7 +1146,7 @@
         selections: [
           {
             kind: 'InlineDataFragmentSpread',
-            name: 'clientOnlyState_viewer',
+            name: 'superFollowsShared_viewer',
             selections: [
               {
                 kind: 'ClientExtension',
@@ -1237,7 +1174,40 @@
         ],
         type: 'Viewer',
         abstractKey: null,
-        hash: '63ef624d384eef22524153c672b8543c',
+        hash: '227407cdf4acefeb0694bbfa4c8fd4b6',
+      }
+      a.default = t
+    },
+    'K7/K': function (e, a, n) {
+      'use strict'
+      n.r(a)
+      var t = {
+        argumentDefinitions: [],
+        kind: 'Fragment',
+        metadata: null,
+        name: 'useSuperFollowsOnboardingDraftSelectedPrice_viewer',
+        selections: [
+          {
+            kind: 'ClientExtension',
+            selections: [
+              {
+                alias: null,
+                args: null,
+                concreteType: 'SuperFollowsOnboardingDraft',
+                kind: 'LinkedField',
+                name: 'super_follows_onboarding_draft',
+                plural: !1,
+                selections: [
+                  { alias: null, args: null, kind: 'ScalarField', name: 'selected_price', storageKey: null },
+                ],
+                storageKey: null,
+              },
+            ],
+          },
+        ],
+        type: 'Viewer',
+        abstractKey: null,
+        hash: '465d5034703427b8cee56d8d91b4f27a',
       }
       a.default = t
     },
@@ -1260,9 +1230,9 @@
         h = (n('2G9S'), n('i4UL'), n('+/5o')),
         y = n('ERkP'),
         w = n.n(y),
-        _ = n('HPNB'),
-        v = n('VAZu'),
-        S = n('wiP2'),
+        v = n('HPNB'),
+        S = n('VAZu'),
+        _ = n('wiP2'),
         k = n('Es6L'),
         F = n('yiKp'),
         E = n.n(F),
@@ -1280,11 +1250,11 @@
           }
         }),
         K = n('MWbm'),
-        L = n('yw4N'),
-        T = n('TnY3'),
-        P = n('cHvH'),
-        O = n('3xLC'),
-        D = [
+        P = n('yw4N'),
+        L = n('TnY3'),
+        D = n('cHvH'),
+        T = n('3xLC'),
+        O = [
           'children',
           'leftControl',
           'screenType',
@@ -1309,7 +1279,7 @@
                       K.a,
                       { style: x.fill },
                       w.a.createElement(
-                        L.a,
+                        P.a,
                         { style: x.viewportView },
                         e._renderInlineNav({ isTwoColumnLayout: !0 }),
                         a,
@@ -1326,9 +1296,9 @@
                 key: 'render',
                 value: function () {
                   var e = this
-                  return w.a.createElement(P.a, null, function (a) {
+                  return w.a.createElement(D.a, null, function (a) {
                     var n = a.windowWidth
-                    return _.a.isTwoColumnLayout(n) ? e._renderForTwoColumnLayout() : e._renderForOneColumnLayout()
+                    return v.a.isTwoColumnLayout(n) ? e._renderForTwoColumnLayout() : e._renderForOneColumnLayout()
                   })
                 },
               },
@@ -1344,13 +1314,13 @@
                       e.showSubtitleOnWideDetail,
                       e.withBottomBorder,
                       e.withDetailOpen,
-                      r()(e, D))
+                      r()(e, O))
                   return w.a.createElement(
                     w.a.Fragment,
                     null,
                     Object(k.a)()
                       ? this._renderInlineNav({ isTwoColumnLayout: !1 })
-                      : w.a.createElement(S.a.Configure, n),
+                      : w.a.createElement(_.a.Configure, n),
                     a,
                   )
                 },
@@ -1387,24 +1357,24 @@
                     f = n.searchBoxOptions,
                     b = n.secondaryBar,
                     y = n.showSubtitleOnRoot,
-                    _ = n.showSubtitleOnWideDetail,
+                    v = n.showSubtitleOnWideDetail,
                     k = n.subtitle,
                     F = n.title,
                     E = n.titleIconCell,
                     C = n.titleIconCellSize,
-                    L = n.withDetailOpen,
-                    T = n.withSearchBox,
-                    P = n.withTweetButton,
-                    O = 'root' === g,
-                    D = 'secondaryRoot' === g,
+                    P = n.withDetailOpen,
+                    L = n.withSearchBox,
+                    D = n.withTweetButton,
+                    T = 'root' === g,
+                    O = 'secondaryRoot' === g,
                     I = 'primaryDetail' === g,
-                    B = (I && _) || (O && y),
-                    R = O || (I && a),
-                    V = O ? h.c : I ? h.a : void 0,
+                    B = (I && v) || (T && y),
+                    R = T || (I && a),
+                    V = T ? h.c : I ? h.a : void 0,
                     z = w.a.createElement(
                       K.a,
                       { style: x.appBarContainer },
-                      w.a.createElement(v.a, {
+                      w.a.createElement(S.a, {
                         backLocation: i,
                         fixed: !1,
                         hideBackButton: R,
@@ -1422,9 +1392,9 @@
                       }),
                     ),
                     A =
-                      O || (D && L)
+                      T || (O && P)
                         ? null
-                        : w.a.createElement(S.a.Configure, {
+                        : w.a.createElement(_.a.Configure, {
                             SideNavButton: t,
                             TabBar: r,
                             TeamsSwitcher: l,
@@ -1437,8 +1407,8 @@
                             searchBoxOptions: f,
                             subtitle: k,
                             title: F,
-                            withSearchBox: T,
-                            withTweetButton: P,
+                            withSearchBox: L,
+                            withTweetButton: D,
                           })
                   return w.a.createElement(w.a.Fragment, null, A, z)
                 },
@@ -1447,9 +1417,9 @@
             n
           )
         })(w.a.Component)
-      b()(I, 'contextType', O.a),
+      b()(I, 'contextType', T.a),
         b()(I, 'defaultProps', { screenType: 'secondaryDetail', showSubtitleOnWideDetail: !0 })
-      a.a = Object(T.a)(I)
+      a.a = Object(L.a)(I)
     },
     M3aw: function (e, a, n) {
       'use strict'
@@ -1460,26 +1430,12 @@
         metadata: null,
         name: 'SuperFollowsManagementPerksDescriptionScreen_viewer',
         selections: [
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingDraftDescription_viewer' },
           { args: null, kind: 'FragmentSpread', name: 'SuperFollowsPerksDescriptionCore_viewer' },
-          {
-            kind: 'ClientExtension',
-            selections: [
-              {
-                alias: null,
-                args: null,
-                concreteType: 'SuperFollowsOnboardingDraft',
-                kind: 'LinkedField',
-                name: 'super_follows_onboarding_draft',
-                plural: !1,
-                selections: [{ alias: null, args: null, kind: 'ScalarField', name: 'description', storageKey: null }],
-                storageKey: null,
-              },
-            ],
-          },
         ],
         type: 'Viewer',
         abstractKey: null,
-        hash: '1711669f9b840d77c3e278ed7f9807a2',
+        hash: '02f161584b8d9666df3acdf1f3ef817e',
       }
       a.default = t
     },
@@ -1515,6 +1471,25 @@
       }
       a.default = t
     },
+    N6s9: function (e, a, n) {
+      'use strict'
+      n.r(a)
+      var t = {
+        argumentDefinitions: [],
+        kind: 'Fragment',
+        metadata: null,
+        name: 'useSuperFollowsBlockOnboardingNavigation_user',
+        selections: [
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingCreatorIntro_user' },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingDescription_user' },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingSelectedPrice_user' },
+        ],
+        type: 'User',
+        abstractKey: null,
+        hash: 'd4ef5c7a8bf68d8b8b6c7c99cadedfba',
+      }
+      a.default = t
+    },
     NmgE: function (e, a, n) {
       'use strict'
       n.r(a)
@@ -1528,12 +1503,6 @@
         abstractKey: null,
         hash: '6b86ff0ca3746915c797a2c459408f86',
       }
-      a.default = t
-    },
-    PlkH: function (e, a, n) {
-      'use strict'
-      n.r(a)
-      var t = { kind: 'InlineDataFragment', name: 'clientOnlyState_viewer', hash: '339dd7e582bd34b9ab5ab7f2f43bfa62' }
       a.default = t
     },
     QmjQ: function (e, a, n) {
@@ -1560,26 +1529,12 @@
         metadata: null,
         name: 'SuperFollowsManagementPerksIntroScreen_viewer',
         selections: [
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingDraftCreatorIntro_viewer' },
           { args: null, kind: 'FragmentSpread', name: 'SuperFollowsPerksIntroCore_viewer' },
-          {
-            kind: 'ClientExtension',
-            selections: [
-              {
-                alias: null,
-                args: null,
-                concreteType: 'SuperFollowsOnboardingDraft',
-                kind: 'LinkedField',
-                name: 'super_follows_onboarding_draft',
-                plural: !1,
-                selections: [{ alias: null, args: null, kind: 'ScalarField', name: 'creator_intro', storageKey: null }],
-                storageKey: null,
-              },
-            ],
-          },
         ],
         type: 'Viewer',
         abstractKey: null,
-        hash: '0cdbbb12c21101c1cdd0dd7021e1b813',
+        hash: 'faf9eb7aeb9b7090c7004522c7522a48',
       }
       a.default = t
     },
@@ -1611,7 +1566,7 @@
         selections: [
           {
             kind: 'InlineDataFragmentSpread',
-            name: 'clientOnlyState_viewer',
+            name: 'superFollowsShared_viewer',
             selections: [
               {
                 kind: 'ClientExtension',
@@ -1619,25 +1574,11 @@
               },
             ],
           },
-          {
-            kind: 'ClientExtension',
-            selections: [
-              {
-                alias: null,
-                args: null,
-                concreteType: 'SuperFollowsOnboardingDraft',
-                kind: 'LinkedField',
-                name: 'super_follows_onboarding_draft',
-                plural: !1,
-                selections: [{ alias: null, args: null, kind: 'ScalarField', name: 'description', storageKey: null }],
-                storageKey: null,
-              },
-            ],
-          },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingDraftDescription_viewer' },
         ],
         type: 'Viewer',
         abstractKey: null,
-        hash: '3fc142458266ca3bffb38b9075c53786',
+        hash: '6e7aad3b00b93acae78cf80d430838ee',
       }
       a.default = t
     },
@@ -1696,26 +1637,12 @@
         metadata: null,
         name: 'SuperFollowsOnboardingPerksIntroScreen_viewer',
         selections: [
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingDraftCreatorIntro_viewer' },
           { args: null, kind: 'FragmentSpread', name: 'SuperFollowsPerksIntroCore_viewer' },
-          {
-            kind: 'ClientExtension',
-            selections: [
-              {
-                alias: null,
-                args: null,
-                concreteType: 'SuperFollowsOnboardingDraft',
-                kind: 'LinkedField',
-                name: 'super_follows_onboarding_draft',
-                plural: !1,
-                selections: [{ alias: null, args: null, kind: 'ScalarField', name: 'creator_intro', storageKey: null }],
-                storageKey: null,
-              },
-            ],
-          },
         ],
         type: 'Viewer',
         abstractKey: null,
-        hash: 'f601d73f459672946c6004f212f0d961',
+        hash: '8a45db7030e196c1e405633700fe386d',
       }
       a.default = t
     },
@@ -1778,7 +1705,7 @@
         selections: [
           {
             kind: 'InlineDataFragmentSpread',
-            name: 'clientOnlyState_viewer',
+            name: 'superFollowsShared_viewer',
             selections: [
               {
                 kind: 'ClientExtension',
@@ -1804,7 +1731,7 @@
         ],
         type: 'Viewer',
         abstractKey: null,
-        hash: '852624662798db5d799e10a2aaf34c6b',
+        hash: '433c12e9ed3b6ce573165b9a21c2fd91',
       }
       a.default = t
     },
@@ -1834,6 +1761,37 @@
       }
       a.default = t
     },
+    ZaCQ: function (e, a, n) {
+      'use strict'
+      n.r(a)
+      var t = {
+        argumentDefinitions: [],
+        kind: 'Fragment',
+        metadata: null,
+        name: 'useSuperFollowsOnboardingDraftDescription_viewer',
+        selections: [
+          {
+            kind: 'ClientExtension',
+            selections: [
+              {
+                alias: null,
+                args: null,
+                concreteType: 'SuperFollowsOnboardingDraft',
+                kind: 'LinkedField',
+                name: 'super_follows_onboarding_draft',
+                plural: !1,
+                selections: [{ alias: null, args: null, kind: 'ScalarField', name: 'description', storageKey: null }],
+                storageKey: null,
+              },
+            ],
+          },
+        ],
+        type: 'Viewer',
+        abstractKey: null,
+        hash: '6f17367ec2cf59e4facac9cf8d0483cb',
+      }
+      a.default = t
+    },
     aREQ: function (e, a, n) {
       'use strict'
       n.r(a)
@@ -1860,7 +1818,7 @@
         selections: [
           {
             kind: 'InlineDataFragmentSpread',
-            name: 'clientOnlyState_viewer',
+            name: 'superFollowsShared_viewer',
             selections: [
               {
                 kind: 'ClientExtension',
@@ -1868,28 +1826,12 @@
               },
             ],
           },
-          {
-            kind: 'ClientExtension',
-            selections: [
-              {
-                alias: null,
-                args: null,
-                concreteType: 'SuperFollowsOnboardingDraft',
-                kind: 'LinkedField',
-                name: 'super_follows_onboarding_draft',
-                plural: !1,
-                selections: [
-                  { alias: null, args: null, kind: 'ScalarField', name: 'creator_intro', storageKey: null },
-                  { alias: null, args: null, kind: 'ScalarField', name: 'description', storageKey: null },
-                ],
-                storageKey: null,
-              },
-            ],
-          },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingDraftCreatorIntro_viewer' },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingDraftDescription_viewer' },
         ],
         type: 'Viewer',
         abstractKey: null,
-        hash: '7bff4288ccc51437d7299d5819a68082',
+        hash: 'adc1229000e86018aeed874a5c91a089',
       }
       a.default = t
     },
@@ -1905,7 +1847,7 @@
           selections: [
             {
               kind: 'InlineDataFragmentSpread',
-              name: 'clientOnlyState_viewer',
+              name: 'superFollowsShared_viewer',
               selections: [
                 {
                   kind: 'ClientExtension',
@@ -1913,6 +1855,7 @@
                 },
               ],
             },
+            { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsBlockOnboardingNavigation_viewer' },
             { args: null, kind: 'FragmentSpread', name: 'SuperFollowsManagementPerksIntroScreen_viewer' },
             { args: null, kind: 'FragmentSpread', name: 'SuperFollowsManagementPerksDescriptionScreen_viewer' },
             { args: null, kind: 'FragmentSpread', name: 'SuperFollowsManagementPerksConfirmScreen_viewer' },
@@ -1935,7 +1878,7 @@
           type: 'Viewer',
           abstractKey: null,
         }
-      ;(r.hash = 'e56518dbb90a1348585c398e96155404'), (a.default = r)
+      ;(r.hash = '2d462164983df8bbdf54c547f4c8f097'), (a.default = r)
     },
     dGIC: function (e, a, n) {
       'use strict'
@@ -1975,7 +1918,7 @@
           selections: [
             {
               kind: 'InlineDataFragmentSpread',
-              name: 'clientOnlyState_viewer',
+              name: 'superFollowsShared_viewer',
               selections: [
                 {
                   kind: 'ClientExtension',
@@ -1983,6 +1926,7 @@
                 },
               ],
             },
+            { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsBlockOnboardingNavigation_viewer' },
             { args: null, kind: 'FragmentSpread', name: 'SuperFollowsOnboardingGetStartedScreen_viewer' },
             { args: null, kind: 'FragmentSpread', name: 'SuperFollowsOnboardingPerksIntroScreen_viewer' },
             { args: null, kind: 'FragmentSpread', name: 'SuperFollowsOnboardingPerksDescriptionScreen_viewer' },
@@ -2008,7 +1952,36 @@
           type: 'Viewer',
           abstractKey: null,
         }
-      ;(r.hash = '65fbfb20b12d67ce9db48b414ecbd3af'), (a.default = r)
+      ;(r.hash = '9518ed5436554b04d556e1d7292d246a'), (a.default = r)
+    },
+    h3lO: function (e, a, n) {
+      'use strict'
+      n.r(a)
+      var t = {
+        argumentDefinitions: [],
+        kind: 'Fragment',
+        metadata: null,
+        name: 'useSuperFollowsBlockOnboardingNavigation_viewer',
+        selections: [
+          {
+            kind: 'InlineDataFragmentSpread',
+            name: 'superFollowsShared_viewer',
+            selections: [
+              {
+                kind: 'ClientExtension',
+                selections: [{ alias: null, args: null, kind: 'ScalarField', name: '__id', storageKey: null }],
+              },
+            ],
+          },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingDraftCreatorIntro_viewer' },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingDraftDescription_viewer' },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingDraftSelectedPrice_viewer' },
+        ],
+        type: 'Viewer',
+        abstractKey: null,
+        hash: 'f9188152a6d877d6a0ff16e4cfbd2cb2',
+      }
+      a.default = t
     },
     hGtx: function (e, a, n) {
       'use strict'
@@ -2113,7 +2086,7 @@
             s = e.label,
             c = e.name,
             w = e.onChange,
-            _ = m.a.generate({
+            v = m.a.generate({
               backgroundColor: f.a.theme.colors.transparent,
               color: r ? f.a.theme.colors.primary : f.a.theme.colors.gray700,
               withFocusWithinFocusRing: !0,
@@ -2136,7 +2109,7 @@
                   { style: h.radioContainer },
                   i.a.createElement(
                     g.a,
-                    { disabled: l, interactiveStyles: _, interactivityState: e, style: h.radioBackground },
+                    { disabled: l, interactiveStyles: v, interactivityState: e, style: h.radioBackground },
                     i.a.createElement(
                       b.a,
                       {
@@ -2177,6 +2150,37 @@
         )
       }
     },
+    krsm: function (e, a, n) {
+      'use strict'
+      n.r(a)
+      var t = {
+        argumentDefinitions: [],
+        kind: 'Fragment',
+        metadata: null,
+        name: 'useSuperFollowsOnboardingDraftCreatorIntro_viewer',
+        selections: [
+          {
+            kind: 'ClientExtension',
+            selections: [
+              {
+                alias: null,
+                args: null,
+                concreteType: 'SuperFollowsOnboardingDraft',
+                kind: 'LinkedField',
+                name: 'super_follows_onboarding_draft',
+                plural: !1,
+                selections: [{ alias: null, args: null, kind: 'ScalarField', name: 'creator_intro', storageKey: null }],
+                storageKey: null,
+              },
+            ],
+          },
+        ],
+        type: 'Viewer',
+        abstractKey: null,
+        hash: '17a492d43e8514a76d7864a04c0ed95c',
+      }
+      a.default = t
+    },
     kz1e: function (e, a, n) {
       'use strict'
       n.r(a)
@@ -2186,13 +2190,23 @@
         metadata: null,
         name: 'SuperFollowsManagementPerksDescriptionScreen_user',
         selections: [
-          { args: null, kind: 'FragmentSpread', name: 'SuperFollowsPerksDescriptionCore_user' },
           { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingDescription_user' },
           { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsSaveOnboarding_user' },
+          { args: null, kind: 'FragmentSpread', name: 'SuperFollowsPerksDescriptionCore_user' },
         ],
         type: 'User',
         abstractKey: null,
-        hash: '867c9b598cb16cde4fe54a44d91927b1',
+        hash: '04ba46becf16dda65f26d3268fcf0e8a',
+      }
+      a.default = t
+    },
+    'l/EB': function (e, a, n) {
+      'use strict'
+      n.r(a)
+      var t = {
+        kind: 'InlineDataFragment',
+        name: 'superFollowsShared_viewer',
+        hash: '7d93eb3778f44bb69f422e49ec09cd27',
       }
       a.default = t
     },
@@ -2239,7 +2253,7 @@
           selections: [
             {
               kind: 'InlineDataFragmentSpread',
-              name: 'clientOnlyState_viewer',
+              name: 'superFollowsShared_viewer',
               selections: [
                 {
                   kind: 'ClientExtension',
@@ -2273,7 +2287,7 @@
           type: 'Viewer',
           abstractKey: null,
         }
-      ;(r.hash = 'c3b696a2f27a89cc27c1f255357e536c'), (a.default = r)
+      ;(r.hash = '8f7f25ee72f87f2e8a9830a5880189c5'), (a.default = r)
     },
     mDly: function (e, a, n) {
       'use strict'
@@ -2299,41 +2313,10 @@
         metadata: null,
         name: 'SuperFollowsManagementSwitch_user',
         selections: [
-          {
-            alias: null,
-            args: null,
-            concreteType: 'AudienceRewardsBenefitsData',
-            kind: 'LinkedField',
-            name: 'super_follow_creator_benefits',
-            plural: !1,
-            selections: [
-              { alias: null, args: null, kind: 'ScalarField', name: 'creator_intro', storageKey: null },
-              {
-                alias: null,
-                args: null,
-                concreteType: 'AudienceRewardsBenefitInfo',
-                kind: 'LinkedField',
-                name: 'benefits_data',
-                plural: !0,
-                selections: [
-                  { alias: null, args: null, kind: 'ScalarField', name: 'benefit_type', storageKey: null },
-                  { alias: null, args: null, kind: 'ScalarField', name: 'description', storageKey: null },
-                ],
-                storageKey: null,
-              },
-            ],
-            storageKey: null,
-          },
-          {
-            alias: null,
-            args: null,
-            concreteType: 'SuperFollowsSelectedPrice',
-            kind: 'LinkedField',
-            name: 'super_follow_creator_price_metadata',
-            plural: !1,
-            selections: [{ alias: null, args: null, kind: 'ScalarField', name: 'selected_price', storageKey: null }],
-            storageKey: null,
-          },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingCreatorIntro_user' },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingDescription_user' },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingSelectedPrice_user' },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsBlockOnboardingNavigation_user' },
           { args: null, kind: 'FragmentSpread', name: 'SuperFollowsManagementSummaryScreen_user' },
           { args: null, kind: 'FragmentSpread', name: 'SuperFollowsManagementPerksIntroScreen_user' },
           { args: null, kind: 'FragmentSpread', name: 'SuperFollowsManagementPerksDescriptionScreen_user' },
@@ -2341,7 +2324,7 @@
         ],
         type: 'User',
         abstractKey: null,
-        hash: '639ed4135796f9b7b9afb2b9db03f992',
+        hash: '5e1002a53061aa856a8f30d974ad6150',
       }
       a.default = t
     },
@@ -2356,7 +2339,7 @@
         selections: [
           {
             kind: 'InlineDataFragmentSpread',
-            name: 'clientOnlyState_viewer',
+            name: 'superFollowsShared_viewer',
             selections: [
               {
                 kind: 'ClientExtension',
@@ -2364,27 +2347,11 @@
               },
             ],
           },
-          {
-            kind: 'ClientExtension',
-            selections: [
-              {
-                alias: null,
-                args: null,
-                concreteType: 'SuperFollowsOnboardingDraft',
-                kind: 'LinkedField',
-                name: 'super_follows_onboarding_draft',
-                plural: !1,
-                selections: [
-                  { alias: null, args: null, kind: 'ScalarField', name: 'selected_price', storageKey: null },
-                ],
-                storageKey: null,
-              },
-            ],
-          },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingDraftSelectedPrice_viewer' },
         ],
         type: 'Viewer',
         abstractKey: null,
-        hash: '539c7296bcbf0532a3a4975dc3fdf47a',
+        hash: '247efb82ea8bcfad59ed75a1750f152a',
       }
       a.default = t
     },
@@ -2392,15 +2359,15 @@
       'use strict'
       n.r(a),
         n.d(a, 'superFollowsSettingsQuery', function () {
-          return zu
+          return ld
         })
       var t = {}
       n.r(t),
         n.d(t, 'Arrow', function () {
-          return J
+          return Z
         }),
         n.d(t, 'Arrow2x', function () {
-          return Z
+          return J
         }),
         n.d(t, 'Arrow3x', function () {
           return $
@@ -2466,13 +2433,13 @@
           return we
         }),
         n.d(t, 'PaperAirplane3x', function () {
-          return _e
-        }),
-        n.d(t, 'Pricing', function () {
           return ve
         }),
-        n.d(t, 'Pricing2x', function () {
+        n.d(t, 'Pricing', function () {
           return Se
+        }),
+        n.d(t, 'Pricing2x', function () {
+          return _e
         }),
         n.d(t, 'Pricing3x', function () {
           return ke
@@ -2493,19 +2460,19 @@
           return Ke
         }),
         n.d(t, 'Thumbsup3x', function () {
-          return Le
-        }),
-        n.d(t, 'TrafficLight', function () {
-          return Te
-        }),
-        n.d(t, 'TrafficLight2x', function () {
           return Pe
         }),
+        n.d(t, 'TrafficLight', function () {
+          return Le
+        }),
+        n.d(t, 'TrafficLight2x', function () {
+          return De
+        }),
         n.d(t, 'TrafficLight3x', function () {
-          return Oe
+          return Te
         }),
         n.d(t, 'Uturn', function () {
-          return De
+          return Oe
         }),
         n.d(t, 'Uturn2x', function () {
           return Ie
@@ -2516,184 +2483,184 @@
       var r = {}
       n.r(r),
         n.d(r, 'Chat', function () {
-          return bi
-        }),
-        n.d(r, 'Chat2x', function () {
-          return hi
-        }),
-        n.d(r, 'Chat3x', function () {
-          return yi
-        }),
-        n.d(r, 'Cog', function () {
-          return wi
-        }),
-        n.d(r, 'Cog2x', function () {
-          return _i
-        }),
-        n.d(r, 'Cog3x', function () {
-          return vi
-        }),
-        n.d(r, 'Coin', function () {
-          return Si
-        }),
-        n.d(r, 'Coin2x', function () {
-          return ki
-        }),
-        n.d(r, 'Coin3x', function () {
-          return Fi
-        }),
-        n.d(r, 'CoinPurse', function () {
-          return Ei
-        }),
-        n.d(r, 'CoinPurse2x', function () {
-          return Ci
-        }),
-        n.d(r, 'CoinPurse3x', function () {
-          return xi
-        }),
-        n.d(r, 'Cone', function () {
-          return Ki
-        }),
-        n.d(r, 'Cone2x', function () {
-          return Li
-        }),
-        n.d(r, 'Cone3x', function () {
           return Ti
         }),
-        n.d(r, 'Cross', function () {
-          return Pi
-        }),
-        n.d(r, 'Cross2x', function () {
+        n.d(r, 'Chat2x', function () {
           return Oi
         }),
-        n.d(r, 'Cross3x', function () {
-          return Di
-        }),
-        n.d(r, 'FirstAid', function () {
+        n.d(r, 'Chat3x', function () {
           return Ii
         }),
-        n.d(r, 'FirstAid2x', function () {
+        n.d(r, 'Cog', function () {
           return Bi
         }),
-        n.d(r, 'FirstAid3x', function () {
+        n.d(r, 'Cog2x', function () {
           return Ri
         }),
-        n.d(r, 'Heart', function () {
+        n.d(r, 'Cog3x', function () {
           return Vi
         }),
-        n.d(r, 'Heart2x', function () {
+        n.d(r, 'Coin', function () {
           return zi
         }),
-        n.d(r, 'Heart3x', function () {
+        n.d(r, 'Coin2x', function () {
           return Ai
         }),
-        n.d(r, 'LifeSaver', function () {
+        n.d(r, 'Coin3x', function () {
           return Mi
         }),
-        n.d(r, 'LifeSaver2x', function () {
+        n.d(r, 'CoinPurse', function () {
           return Ui
         }),
-        n.d(r, 'LifeSaver3x', function () {
+        n.d(r, 'CoinPurse2x', function () {
           return Hi
         }),
-        n.d(r, 'Lightbulb', function () {
-          return ji
-        }),
-        n.d(r, 'Lightbulb2x', function () {
-          return Wi
-        }),
-        n.d(r, 'Lightbulb3x', function () {
+        n.d(r, 'CoinPurse3x', function () {
           return Ni
         }),
-        n.d(r, 'NoEntry', function () {
+        n.d(r, 'Cone', function () {
+          return ji
+        }),
+        n.d(r, 'Cone2x', function () {
+          return Wi
+        }),
+        n.d(r, 'Cone3x', function () {
           return Gi
         }),
-        n.d(r, 'NoEntry2x', function () {
+        n.d(r, 'Cross', function () {
           return qi
         }),
-        n.d(r, 'NoEntry3x', function () {
+        n.d(r, 'Cross2x', function () {
           return Qi
         }),
-        n.d(r, 'Pencil', function () {
+        n.d(r, 'Cross3x', function () {
           return Xi
         }),
-        n.d(r, 'Pencil2x', function () {
+        n.d(r, 'FirstAid', function () {
           return Yi
         }),
-        n.d(r, 'Pencil3x', function () {
-          return Ji
-        }),
-        n.d(r, 'PiggyBank', function () {
+        n.d(r, 'FirstAid2x', function () {
           return Zi
         }),
-        n.d(r, 'PiggyBank2x', function () {
+        n.d(r, 'FirstAid3x', function () {
+          return Ji
+        }),
+        n.d(r, 'Heart', function () {
           return $i
         }),
-        n.d(r, 'PiggyBank3x', function () {
+        n.d(r, 'Heart2x', function () {
           return eo
         }),
-        n.d(r, 'Plant', function () {
+        n.d(r, 'Heart3x', function () {
           return ao
         }),
-        n.d(r, 'Plant2x', function () {
+        n.d(r, 'LifeSaver', function () {
           return no
         }),
-        n.d(r, 'Plant3x', function () {
+        n.d(r, 'LifeSaver2x', function () {
           return to
         }),
-        n.d(r, 'Puzzle', function () {
+        n.d(r, 'LifeSaver3x', function () {
           return ro
         }),
-        n.d(r, 'Puzzle2x', function () {
+        n.d(r, 'Lightbulb', function () {
           return lo
         }),
-        n.d(r, 'Puzzle3x', function () {
+        n.d(r, 'Lightbulb2x', function () {
           return io
         }),
-        n.d(r, 'Ribbon', function () {
+        n.d(r, 'Lightbulb3x', function () {
           return oo
         }),
-        n.d(r, 'Ribbon2x', function () {
+        n.d(r, 'NoEntry', function () {
           return so
         }),
-        n.d(r, 'Ribbon3x', function () {
+        n.d(r, 'NoEntry2x', function () {
           return co
         }),
-        n.d(r, 'Spheres', function () {
+        n.d(r, 'NoEntry3x', function () {
           return uo
         }),
-        n.d(r, 'Spheres2x', function () {
+        n.d(r, 'Pencil', function () {
           return po
         }),
-        n.d(r, 'Spheres3x', function () {
+        n.d(r, 'Pencil2x', function () {
           return mo
         }),
-        n.d(r, 'Star', function () {
+        n.d(r, 'Pencil3x', function () {
           return go
         }),
-        n.d(r, 'Star2x', function () {
+        n.d(r, 'PiggyBank', function () {
           return fo
         }),
-        n.d(r, 'Star3x', function () {
+        n.d(r, 'PiggyBank2x', function () {
           return bo
         }),
-        n.d(r, 'TrashCan', function () {
+        n.d(r, 'PiggyBank3x', function () {
           return ho
         }),
-        n.d(r, 'TrashCan2x', function () {
+        n.d(r, 'Plant', function () {
           return yo
         }),
-        n.d(r, 'TrashCan3x', function () {
+        n.d(r, 'Plant2x', function () {
           return wo
         }),
-        n.d(r, 'Wallet', function () {
-          return _o
-        }),
-        n.d(r, 'Wallet2x', function () {
+        n.d(r, 'Plant3x', function () {
           return vo
         }),
-        n.d(r, 'Wallet3x', function () {
+        n.d(r, 'Puzzle', function () {
           return So
+        }),
+        n.d(r, 'Puzzle2x', function () {
+          return _o
+        }),
+        n.d(r, 'Puzzle3x', function () {
+          return ko
+        }),
+        n.d(r, 'Ribbon', function () {
+          return Fo
+        }),
+        n.d(r, 'Ribbon2x', function () {
+          return Eo
+        }),
+        n.d(r, 'Ribbon3x', function () {
+          return Co
+        }),
+        n.d(r, 'Spheres', function () {
+          return xo
+        }),
+        n.d(r, 'Spheres2x', function () {
+          return Ko
+        }),
+        n.d(r, 'Spheres3x', function () {
+          return Po
+        }),
+        n.d(r, 'Star', function () {
+          return Lo
+        }),
+        n.d(r, 'Star2x', function () {
+          return Do
+        }),
+        n.d(r, 'Star3x', function () {
+          return To
+        }),
+        n.d(r, 'TrashCan', function () {
+          return Oo
+        }),
+        n.d(r, 'TrashCan2x', function () {
+          return Io
+        }),
+        n.d(r, 'TrashCan3x', function () {
+          return Bo
+        }),
+        n.d(r, 'Wallet', function () {
+          return Ro
+        }),
+        n.d(r, 'Wallet2x', function () {
+          return Vo
+        }),
+        n.d(r, 'Wallet3x', function () {
+          return zo
         })
       var l,
         i,
@@ -2710,31 +2677,31 @@
         h = n.n(b),
         y = n('jHSc'),
         w = n('lUZE'),
-        _ = 'https://help.twitter.com/using-twitter/super-follows-creator',
-        v = ''.concat(_, '#pricechange'),
-        S = n('/yvb'),
+        v = 'https://help.twitter.com/using-twitter/super-follows-creator',
+        S = ''.concat(v, '#pricechange'),
+        _ = n('/yvb'),
         k = n('6s7X'),
         F = function () {
-          return c.a.createElement(S.a, { icon: c.a.createElement(k.a, null), link: _, type: 'primaryText' })
+          return c.a.createElement(_.a, { icon: c.a.createElement(k.a, null), link: v, type: 'primaryText' })
         },
         E = n('zCf4'),
         C = n('MWbm'),
         x = n('JYMr'),
         K = n('rHpw'),
-        L = ['leftControlShouldClose', 'percentageComplete', 'rightControl', 'withCenteredLogo', 'withInfoButton'],
-        T = p.a.a6777c1b,
-        P = function (e) {
+        P = ['leftControlShouldClose', 'percentageComplete', 'rightControl', 'withCenteredLogo', 'withInfoButton'],
+        L = p.a.a6777c1b,
+        D = function (e) {
           var a = e.leftControlShouldClose,
             n = e.percentageComplete,
             t = e.rightControl,
             r = e.withCenteredLogo,
             l = e.withInfoButton,
-            i = h()(e, L),
+            i = h()(e, P),
             o = Object(E.f)(),
             s = a ? 'close' : 'back',
-            u = a ? '/settings/monetization' : void 0,
-            d = r ? c.a.createElement(w.a, { style: O.iconTwitter }) : void 0,
-            p = l ? c.a.createElement(C.a, { style: O.rightControl }, c.a.createElement(F, null), t) : t,
+            u = '/settings/monetization',
+            d = r ? c.a.createElement(w.a, { style: T.iconTwitter }) : void 0,
+            p = l ? c.a.createElement(C.a, { style: T.rightControl }, c.a.createElement(F, null), t) : t,
             m = n ? c.a.createElement(x.a, { progress: n }) : void 0
           return c.a.createElement(
             y.b,
@@ -2742,29 +2709,29 @@
               backButtonType: s,
               backLocation: u,
               centeredLogo: d,
-              documentTitle: T,
+              documentTitle: L,
               onBackClick: function () {
-                a ? o.push('/settings/monetization') : o.goBack()
+                a ? o.goBackThroughModals({ fallbackPath: u }) : o.goBack({ backLocation: u })
               },
               rightControl: p,
               secondaryBar: m,
             }),
           )
         },
-        O = K.a.create(function (e) {
+        T = K.a.create(function (e) {
           return {
             iconTwitter: { color: e.colors.primary, flexGrow: 1, height: '1.75rem' },
             rightControl: { alignItems: 'center', flexDirection: 'row', gap: e.spaces.space4 },
           }
         }),
-        D = n('5FtR'),
+        O = n('5FtR'),
         I = (n('849X'), n('TJCb'), n('v6aA')),
         B = p.a.g92a2343,
         R = p.a.a91bb144,
         V = function () {
           var e = Object(E.f)(),
             a = c.a.createElement(
-              S.a,
+              _.a,
               {
                 onPress: function () {
                   e.push('/settings/superfollows/application/submit')
@@ -2773,30 +2740,30 @@
               },
               R,
             )
-          return c.a.createElement(P, { rightControl: a, title: B })
+          return c.a.createElement(D, { rightControl: a, title: B })
         },
-        z = (n('jQ3i'), n('x4t0'), n('z84I'), n('KqXw'), n('3uku'), n('855f')),
-        A = n('t62R'),
+        z = (n('jQ3i'), n('x4t0'), n('855f')),
+        A = (n('z84I'), n('t62R')),
         M = n('WtWS'),
         U = n('0ULw'),
         H = function (e) {
           var a = e.items
           return c.a.createElement(
             C.a,
-            { style: j.root },
+            { style: N.root },
             a.map(function (e) {
               return c.a.createElement(
                 C.a,
-                { key: e.label, style: j.item },
-                c.a.createElement(A.b, { style: j.label, weight: 'bold' }, e.label),
+                { key: e.label, style: N.item },
+                c.a.createElement(A.b, { style: N.label, weight: 'bold' }, e.label),
                 e.checked
-                  ? c.a.createElement(M.a, { style: j.iconChecked })
-                  : c.a.createElement(U.a, { style: j.iconUnchecked }),
+                  ? c.a.createElement(M.a, { style: N.iconChecked })
+                  : c.a.createElement(U.a, { style: N.iconUnchecked }),
               )
             }),
           )
         },
-        j = K.a.create(function (e) {
+        N = K.a.create(function (e) {
           return {
             root: { gap: e.spaces.space24 },
             item: { flexDirection: 'row' },
@@ -2805,7 +2772,7 @@
             iconUnchecked: { color: e.colors.gray200 },
           }
         }),
-        W = function () {
+        j = function () {
           return c.a.createElement(
             A.b,
             { align: 'center', color: 'gray700' },
@@ -2820,8 +2787,8 @@
             ),
           )
         },
-        N = n('ddV6'),
-        G = n.n(N),
+        W = n('ddV6'),
+        G = n.n(W),
         q = (n('7x/C'), n('JtPf'), n('Qavd'), ['disabled', 'label', 'onPress', 'path']),
         Q = function (e) {
           var a = e.disabled,
@@ -2838,7 +2805,7 @@
               i.push(r)
             }
           return c.a.createElement(
-            S.a,
+            _.a,
             f()({}, l, {
               disabled: u || a,
               onPress: function (e) {
@@ -2857,8 +2824,8 @@
         },
         X = n('jAXQ'),
         Y = n.n(X),
-        J = (n('yH/f'), n('KOtZ'), n.p + 'Arrow.e8910965.png'),
-        Z = n.p + 'Arrow@2x.8af675c5.png',
+        Z = (n('yH/f'), n('KOtZ'), n.p + 'Arrow.e8910965.png'),
+        J = n.p + 'Arrow@2x.8af675c5.png',
         $ = n.p + 'Arrow@3x.949d4365.png',
         ee = n.p + 'Bench.ed26a435.png',
         ae = n.p + 'Bench@2x.ef9fb7d5.png',
@@ -2880,20 +2847,20 @@
         he = n.p + 'OneFinger@3x.7f22c175.png',
         ye = n.p + 'PaperAirplane.1ef48a05.png',
         we = n.p + 'PaperAirplane@2x.2923eb15.png',
-        _e = n.p + 'PaperAirplane@3x.47e4b145.png',
-        ve = n.p + 'Pricing.ec5962d5.png',
-        Se = n.p + 'Pricing@2x.f8284265.png',
+        ve = n.p + 'PaperAirplane@3x.47e4b145.png',
+        Se = n.p + 'Pricing.ec5962d5.png',
+        _e = n.p + 'Pricing@2x.f8284265.png',
         ke = n.p + 'Pricing@3x.b6cf0185.png',
         Fe = n.p + 'Puzzle.aa045515.png',
         Ee = n.p + 'Puzzle@2x.5be7ab15.png',
         Ce = n.p + 'Puzzle@3x.1796b225.png',
         xe = n.p + 'Thumbsup.f5be79d5.png',
         Ke = n.p + 'Thumbsup@2x.6d106945.png',
-        Le = n.p + 'Thumbsup@3x.6a81e6d5.png',
-        Te = n.p + 'TrafficLight.11644b65.png',
-        Pe = n.p + 'TrafficLight@2x.5657de25.png',
-        Oe = n.p + 'TrafficLight@3x.a5a35335.png',
-        De = n.p + 'Uturn.c8267f55.png',
+        Pe = n.p + 'Thumbsup@3x.6a81e6d5.png',
+        Le = n.p + 'TrafficLight.11644b65.png',
+        De = n.p + 'TrafficLight@2x.5657de25.png',
+        Te = n.p + 'TrafficLight@3x.a5a35335.png',
+        Oe = n.p + 'Uturn.c8267f55.png',
         Ie = n.p + 'Uturn@2x.db3f94d5.png',
         Be = n.p + 'Uturn@3x.22f27905.png',
         Re = n('tn7R'),
@@ -2929,7 +2896,7 @@
             e
           )
         }, {}),
-        je = function (e) {
+        Ne = function (e) {
           var a = e.type,
             n = e.width,
             t = void 0 === n ? Ae : n,
@@ -2940,7 +2907,7 @@
             s = { width: t, height: Math.round(t / l) }
           return c.a.createElement(
             C.a,
-            { style: [We.illustration, s] },
+            { style: [je.illustration, s] },
             c.a.createElement(Ve.a, {
               accessibilityLabel: '',
               aspectMode: ze.a.exact(l),
@@ -2950,10 +2917,10 @@
             }),
           )
         },
-        We = K.a.create(function (e) {
+        je = K.a.create(function (e) {
           return { illustration: { alignSelf: 'center' } }
         }),
-        Ne = function (e) {
+        We = function (e) {
           var a = e.align,
             n = e.headline,
             t = e.illustration,
@@ -2961,7 +2928,7 @@
           return c.a.createElement(
             c.a.Fragment,
             null,
-            t && c.a.createElement(je, { type: t, width: 311 }),
+            t && c.a.createElement(Ne, { type: t, width: 311 }),
             c.a.createElement(
               A.b,
               {
@@ -2984,72 +2951,44 @@
         Qe = p.a.bac156a6,
         Xe = p.a.a3a20a10,
         Ye = p.a.b26ae507,
-        Je = p.a.a753a87f,
-        Ze = p.a.abfaa527,
+        Ze = p.a.a753a87f,
+        Je = p.a.abfaa527,
         $e = z.a.getTruncatedCount(1e4),
         ea = p.a.fdd95737({ minFollowersCount: $e }),
         aa = z.a.getTruncatedCount(25),
-        na = [
-          {
-            label: ea,
-            test: function (e) {
-              var a
-              return !(
-                null != e &&
-                null !== (a = e.super_following_eligibility) &&
-                void 0 !== a &&
-                a.includes('followers')
-              )
-            },
-          },
-          {
-            label: p.a.a0dcad86({ minTweetsCount: aa }),
-            test: function (e) {
-              var a
-              return !(
-                null != e &&
-                null !== (a = e.super_following_eligibility) &&
-                void 0 !== a &&
-                a.includes('tweets')
-              )
-            },
-          },
-          {
-            label: p.a.c27f57ac,
-            test: function (e) {
-              var a
-              return !(null != e && null !== (a = e.super_following_eligibility) && void 0 !== a && a.includes('age'))
-            },
-          },
-        ],
-        ta = void 0 !== l ? l : (l = n('RLjm')),
-        ra = function (e) {
+        na = p.a.a0dcad86({ minTweetsCount: aa }),
+        ta = p.a.c27f57ac,
+        ra = void 0 !== l ? l : (l = n('RLjm')),
+        la = function (e) {
           var a = e.user,
-            n = Y()(ta, a),
-            t = 0 === ((null == n ? void 0 : n.super_following_eligibility) || []).length,
-            r = t ? Ue.Arrow : Ue.TrafficLight,
-            l = t ? qe : Xe,
-            i = t ? Qe : Ye,
-            o = na.map(function (e) {
-              return { label: e.label, checked: (0, e.test)(n) }
-            })
+            n = Y()(ra, a),
+            t = (null == n ? void 0 : n.super_following_eligibility) || [],
+            r = 0 === t.length,
+            l = r ? Ue.Arrow : Ue.TrafficLight,
+            i = r ? qe : Xe,
+            o = r ? Qe : Ye,
+            s = [
+              { label: ea, checked: !t.includes('followers') },
+              { label: na, checked: !t.includes('tweets') },
+              { label: ta, checked: !t.includes('age') },
+            ]
           return c.a.createElement(
-            P,
+            D,
             { withInfoButton: !0 },
-            c.a.createElement(Ne, { headline: l, illustration: r, subtext: i }),
-            c.a.createElement(H, { items: o }),
-            t && c.a.createElement(W, null),
+            c.a.createElement(We, { headline: i, illustration: l, subtext: o }),
+            c.a.createElement(H, { items: s }),
+            r && c.a.createElement(j, null),
             c.a.createElement(Q, {
-              disabled: !t,
-              label: Je,
+              disabled: !r,
+              label: Ze,
               path: '/settings/superfollows/application/one_more_thing',
             }),
-            c.a.createElement(Q, { label: Ze, path: '/settings/superfollows/application/one_more_thing' }),
+            c.a.createElement(Q, { label: Je, path: '/settings/superfollows/application/one_more_thing' }),
           )
         },
-        la = n('9RkS'),
-        ia = p.a.bbb89925,
-        oa = function (e) {
+        ia = n('9RkS'),
+        oa = p.a.bbb89925,
+        sa = function (e) {
           var a = e.followersCount,
             n = e.max,
             t = e.min,
@@ -3063,7 +3002,7 @@
             m = Math.round(a * r * (u / 100))
           return c.a.createElement(
             C.a,
-            { style: sa.container },
+            { style: ca.container },
             c.a.createElement(
               A.b,
               { accessibilityLevel: 3, accessibilityRole: 'heading', size: 'headline2' },
@@ -3073,37 +3012,37 @@
                 c.a.createElement(A.b, { weight: 'bold' }, p.a.a7dd00ea),
                 c.a.createElement(
                   A.b,
-                  { style: sa.earnings, weight: 'heavy' },
+                  { style: ca.earnings, weight: 'heavy' },
                   p.a.c62c1d30({ earnings: '$'.concat(z.a.getTruncatedCount(m)) }),
                 ),
-                c.a.createElement(A.b, { color: 'green500', style: sa.asteriskLeft }, p.a.e0fb982b),
+                c.a.createElement(A.b, { color: 'green500', style: ca.asteriskLeft }, p.a.e0fb982b),
               ),
             ),
             c.a.createElement(
               C.a,
-              { style: sa.slider },
-              c.a.createElement(la.a, {
+              { style: ca.slider },
+              c.a.createElement(ia.a, {
                 accessibilityLabel: '',
                 max: n,
                 min: t,
                 onChange: d,
                 step: l,
-                thumbLabel: ia({ percent: u }),
+                thumbLabel: oa({ percent: u }),
                 value: u,
               }),
             ),
             c.a.createElement(
               A.b,
-              { color: 'green500', size: 'subtext3', style: sa.footnote },
+              { color: 'green500', size: 'subtext3', style: ca.footnote },
               c.a.createElement(
                 p.a.I18NFormatMessage,
                 { $i18n: 'caf67b9b', price: '$'.concat(r) },
-                c.a.createElement(A.b, { style: sa.asteriskRight }, p.a.e263c38e),
+                c.a.createElement(A.b, { style: ca.asteriskRight }, p.a.e263c38e),
               ),
             ),
           )
         },
-        sa = K.a.create(function (e) {
+        ca = K.a.create(function (e) {
           return {
             container: {
               backgroundColor: e.colors.green50,
@@ -3123,21 +3062,21 @@
             footnote: { marginTop: e.spaces.space24 },
           }
         }),
-        ca = n('6iuV'),
-        ua = (n('1t7P'), n('jQ/y'), n('j7Bv')),
-        da = function (e) {
+        ua = n('6iuV'),
+        da = (n('1t7P'), n('jQ/y'), n('j7Bv')),
+        pa = function (e) {
           var a = e.Icon,
             n = e.description,
             t = e.title
           return c.a.createElement(
             C.a,
-            { style: pa.container },
-            c.a.createElement(ua.a, { Icon: a, color: 'neutral' }),
-            c.a.createElement(A.b, { size: 'headline2', style: pa.title, weight: 'bold' }, t),
-            c.a.createElement(A.b, { color: 'gray700', style: pa.description }, n),
+            { style: ma.container },
+            c.a.createElement(da.a, { Icon: a, color: 'neutral' }),
+            c.a.createElement(A.b, { size: 'headline2', style: ma.title, weight: 'bold' }, t),
+            c.a.createElement(A.b, { color: 'gray700', style: ma.description }, n),
           )
         },
-        pa = K.a.create(function (e) {
+        ma = K.a.create(function (e) {
           return {
             container: {
               borderRadius: e.borderRadii.medium,
@@ -3150,118 +3089,114 @@
             description: { marginTop: e.spaces.space4 },
           }
         }),
-        ma = n('sUoZ'),
-        ga = n('witV'),
-        fa = n('ACHU'),
-        ba = [
-          { Icon: ma.a, title: p.a.d31c5997, description: p.a.hda1e780 },
-          { Icon: ga.a, title: p.a.d08d0bb2, description: p.a.cbd8b105 },
-          { Icon: fa.a, title: p.a.becb4930, description: p.a.g743ef96 },
+        ga = n('sUoZ'),
+        fa = n('witV'),
+        ba = n('ACHU'),
+        ha = [
+          { Icon: ga.a, title: p.a.d31c5997, description: p.a.hda1e780 },
+          { Icon: fa.a, title: p.a.d08d0bb2, description: p.a.cbd8b105 },
+          { Icon: ba.a, title: p.a.becb4930, description: p.a.g743ef96 },
         ],
-        ha = function () {
+        ya = function () {
           return c.a.createElement(
-            ca.a,
+            ua.a,
             null,
-            ba.map(function (e) {
-              return c.a.createElement(da, f()({}, e, { key: e.title }))
+            ha.map(function (e) {
+              return c.a.createElement(pa, f()({}, e, { key: e.title }))
             }),
           )
         },
-        ya = p.a.a6777c1b,
-        wa = p.a.j5dc36d7,
-        _a = p.a.c45b2f06,
-        va = p.a.hb6b432e,
-        Sa = p.a.cd5cae15,
-        ka = p.a.f7239f4c,
-        Fa = p.a.g8cdf707,
-        Ea = p.a.bff8472e,
-        Ca = p.a.e533715d,
-        xa = void 0 !== i ? i : (i = n('xd+q')),
-        Ka = function (e) {
+        wa = p.a.a6777c1b,
+        va = p.a.j5dc36d7,
+        Sa = p.a.c45b2f06,
+        _a = p.a.hb6b432e,
+        ka = p.a.cd5cae15,
+        Fa = p.a.f7239f4c,
+        Ea = p.a.g8cdf707,
+        Ca = p.a.bff8472e,
+        xa = p.a.e533715d,
+        Ka = void 0 !== i ? i : (i = n('xd+q')),
+        Pa = function (e) {
           var a = e.user,
-            n = Y()(xa, a).legacy.followers_count
+            n = Y()(Ka, a).legacy.followers_count
           return c.a.createElement(
-            P,
+            D,
             { leftControlShouldClose: !0, withCenteredLogo: !0 },
             c.a.createElement(
               A.b,
               { accessibilityLevel: 1, accessibilityRole: 'heading', size: 'title4', weight: 'heavy' },
-              ya,
+              wa,
             ),
-            c.a.createElement(A.b, null, wa),
-            c.a.createElement(
-              A.b,
-              { accessibilityLevel: 2, accessibilityRole: 'heading', size: 'title4', weight: 'heavy' },
-              _a,
-            ),
-            c.a.createElement(A.b, { color: 'gray700' }, va),
-            c.a.createElement(je, { type: Ue.HandCoins }),
+            c.a.createElement(A.b, null, va),
             c.a.createElement(
               A.b,
               { accessibilityLevel: 2, accessibilityRole: 'heading', size: 'title4', weight: 'heavy' },
               Sa,
             ),
-            c.a.createElement(ha, null),
+            c.a.createElement(A.b, { color: 'gray700' }, _a),
+            c.a.createElement(Ne, { type: Ue.HandCoins }),
             c.a.createElement(
               A.b,
               { accessibilityLevel: 2, accessibilityRole: 'heading', size: 'title4', weight: 'heavy' },
               ka,
             ),
-            c.a.createElement(oa, { followersCount: n, max: 10, min: 1, price: 4.99, value: 2 }),
+            c.a.createElement(ya, null),
             c.a.createElement(
               A.b,
               { accessibilityLevel: 2, accessibilityRole: 'heading', size: 'title4', weight: 'heavy' },
               Fa,
             ),
-            c.a.createElement(A.b, { color: 'gray700' }, Ea),
+            c.a.createElement(sa, { followersCount: n, max: 10, min: 1, price: 4.99, value: 2 }),
+            c.a.createElement(
+              A.b,
+              { accessibilityLevel: 2, accessibilityRole: 'heading', size: 'title4', weight: 'heavy' },
+              Ea,
+            ),
+            c.a.createElement(A.b, { color: 'gray700' }, Ca),
             c.a.createElement(Q, {
               color: 'plum500',
-              label: Ca,
+              label: xa,
               path: '/settings/superfollows/application/eligibility',
             }),
           )
         },
         La = p.a.d0fc4890,
-        Ta = p.a.c64384b6,
-        Pa = p.a.c3d89aca,
+        Da = p.a.c64384b6,
+        Ta = p.a.c3d89aca,
         Oa = function () {
           return c.a.createElement(
-            P,
+            D,
             { withInfoButton: !0 },
-            c.a.createElement(Ne, { align: 'center', headline: La, illustration: Ue.OneFinger, subtext: Ta }),
-            c.a.createElement(Q, { label: Pa, path: '/settings/superfollows/application/complete_profile' }),
+            c.a.createElement(We, { align: 'center', headline: La, illustration: Ue.OneFinger, subtext: Da }),
+            c.a.createElement(Q, { label: Ta, path: '/settings/superfollows/application/complete_profile' }),
           )
         },
-        Da = n('tI3i'),
-        Ia = n.n(Da),
-        Ba = n('FGLp'),
-        Ra = (n('2G9S'), n('Hsf0')),
-        Va = n.n(Ra),
-        za = 'super_follows_application_draft',
-        Aa = 'super_follows_onboarding_draft',
-        Ma = function (e) {
-          return Va()(void 0 !== o ? o : (o = n('PlkH')), e).__id
+        Ia = n('tI3i'),
+        Ba = n.n(Ia),
+        Ra = n('FGLp'),
+        Va = (n('2G9S'), n('Hsf0')),
+        za = n.n(Va),
+        Aa = function (e) {
+          return za()(void 0 !== o ? o : (o = n('l/EB')), e).__id
         },
-        Ua = function (e, a) {
-          var n = Ma(a),
+        Ma = function (e, a) {
+          var n = Aa(a),
             t = e.get(n)
-          return Ia()(t, 'viewer must be defined'), t
+          return Ba()(t, 'viewer must be defined'), t
         },
+        Ua = 'super_follows_application_draft',
         Ha = function (e, a) {
-          return Ua(e, a).getLinkedRecord(za)
+          return Ma(e, a).getLinkedRecord(Ua)
         },
-        ja = function (e, a) {
-          return Ua(e, a).getLinkedRecord(Aa)
-        },
-        Wa = n('HG4m'),
-        Na = n.n(Wa),
-        Ga = n('Ud88'),
-        qa = n.n(Ga)
-      function Qa(e, a) {
-        var n = qa()()
-        Object(Ba.a)(function () {
-          Ia()(e, 'viewerRef must be defined'),
-            Na()(n, function (n) {
+        Na = n('HG4m'),
+        ja = n.n(Na),
+        Wa = n('Ud88'),
+        Ga = n.n(Wa)
+      function qa(e, a) {
+        var n = Ga()()
+        Object(Ra.a)(function () {
+          Ba()(e, 'viewerRef must be defined'),
+            ja()(n, function (n) {
               !(function (e, a) {
                 var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
                   t = n.content_category,
@@ -3278,10 +3213,10 @@
                   g = void 0 === m ? [] : m,
                   f = n.purpose,
                   b = void 0 === f ? null : f,
-                  h = Ma(a),
-                  y = Ua(e, a)
+                  h = Aa(a),
+                  y = Ma(e, a)
                 if (!Ha(e, a)) {
-                  var w = e.create(''.concat(h, ':').concat(za), 'SuperFollowsApplicationDraft')
+                  var w = e.create(''.concat(h, ':').concat(Ua), 'SuperFollowsApplicationDraft')
                   w.setValue(r, 'content_category'),
                     w.setValue(i, 'content_category_other'),
                     w.setValue(s, 'content_creation_platform'),
@@ -3289,69 +3224,31 @@
                     w.setValue(b, 'purpose'),
                     w.setValue(p, 'ethnicity'),
                     w.setValue(g, 'gender'),
-                    y.setLinkedRecord(w, za)
+                    y.setLinkedRecord(w, Ua)
                 }
               })(n, e, a)
             })
         })
       }
-      function Xa(e, a) {
-        var n = qa()()
-        Object(Ba.a)(function () {
-          Ia()(e, 'viewerRef must be defined'),
-            Na()(n, function (n) {
-              !(function (e, a) {
-                var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
-                  t = n.creator_intro,
-                  r = void 0 === t ? null : t,
-                  l = n.description,
-                  i = void 0 === l ? null : l,
-                  o = n.selected_price,
-                  s = void 0 === o ? null : o,
-                  c = Ma(a),
-                  u = Ua(e, a)
-                if (!ja(e, a)) {
-                  var d = e.create(''.concat(c, ':').concat(Aa), 'SuperFollowsOnboardingDraft')
-                  d.setValue(r, 'creator_intro'),
-                    d.setValue(i, 'description'),
-                    d.setValue(s, 'selected_price'),
-                    u.setLinkedRecord(d, 'super_follows_onboarding_draft')
-                }
-              })(n, e, a)
-            })
-        })
-      }
-      function Ya(e, a) {
-        var n = qa()()
+      function Qa(e, a) {
+        var n = Ga()()
         return c.a.useCallback(
           function (t) {
-            Ia()(e, 'viewerRef must be defined'),
-              Na()(n, function (n) {
+            Ba()(e, 'viewerRef must be defined'),
+              ja()(n, function (n) {
                 !(function (e, a, n, t) {
                   var r = Ha(e, a)
-                  Ia()(r, 'applicationDraft must be defined'), r.setValue(t, n)
+                  Ba()(r, 'applicationDraft must be defined'), r.setValue(t, n)
                 })(n, e, a, t)
               })
           },
           [n, a, e],
         )
       }
-      function Ja(e, a) {
-        var n = qa()()
-        return c.a.useCallback(
-          function (t) {
-            Ia()(e, 'viewerId must be defined'),
-              Na()(n, function (n) {
-                !(function (e, a, n, t) {
-                  var r = ja(e, a)
-                  Ia()(r, 'onboardingDraft must be defined'), r.setValue(t, n)
-                })(n, e, a, t)
-              })
-          },
-          [n, a, e],
-        )
-      }
-      var Za,
+      var Xa,
+        Ya,
+        Za,
+        Ja,
         $a,
         en,
         an,
@@ -3362,65 +3259,17 @@
         on,
         sn,
         cn,
-        un,
-        dn,
-        pn,
-        mn,
-        gn,
-        fn,
-        bn,
-        hn,
-        yn,
-        wn,
-        _n,
-        vn,
-        Sn,
-        kn,
-        Fn,
-        En,
-        Cn,
-        xn,
-        Kn,
-        Ln,
-        Tn,
-        Pn,
-        On,
-        Dn,
-        In,
-        Bn,
-        Rn,
-        Vn,
-        zn,
-        An,
-        Mn,
-        Un,
-        Hn,
-        jn,
-        Wn,
-        Nn,
-        Gn,
-        qn,
-        Qn,
-        Xn,
-        Yn,
-        Jn,
-        Zn,
-        $n,
-        et,
-        at,
-        nt,
-        tt,
-        rt = n('p+r5'),
-        lt = p.a.f7997b16,
-        it = p.a.fc00ab5b,
-        ot = p.a.c249167f,
-        st = p.a.b772cd65,
-        ct = void 0 !== Za ? Za : (Za = n('xhT1')),
-        ut = function (e) {
+        un = n('p+r5'),
+        dn = p.a.f7997b16,
+        pn = p.a.fc00ab5b,
+        mn = p.a.c249167f,
+        gn = p.a.b772cd65,
+        fn = void 0 !== Xa ? Xa : (Xa = n('xhT1')),
+        bn = function (e) {
           var a,
             n,
             t = e.viewer,
-            r = Y()(ct, t),
+            r = Y()(fn, t),
             l =
               null !==
                 (a =
@@ -3429,32 +3278,32 @@
                     : n.content_category_other) && void 0 !== a
                 ? a
                 : '',
-            i = Ya(r, 'content_category_other')
+            i = Qa(r, 'content_category_other')
           return c.a.createElement(
-            P,
-            { title: lt },
-            c.a.createElement(rt.a, {
-              helperText: ot,
-              label: it,
+            D,
+            { title: dn },
+            c.a.createElement(un.a, {
+              helperText: mn,
+              label: pn,
               name: 'otherCategory',
               onChange: function (e) {
                 i(e.currentTarget.value)
               },
               value: l,
             }),
-            c.a.createElement(S.a, null, st),
+            c.a.createElement(_.a, null, gn),
           )
         },
-        dt = n('fyvP'),
-        pt = n('csss'),
-        mt = function (e) {
+        hn = n('fyvP'),
+        yn = n('csss'),
+        wn = function (e) {
           var a = e.description,
             n = e.disabled,
             t = e.history,
             r = e.label,
             l = e.path,
             i = Object(E.f)()
-          return c.a.createElement(pt.a, {
+          return c.a.createElement(yn.a, {
             description: a,
             disabled: n,
             label: r,
@@ -3463,9 +3312,9 @@
             },
           })
         },
-        gt = p.a.f7997b16,
-        ft = p.a.c144fa52,
-        bt = [
+        vn = p.a.f7997b16,
+        Sn = p.a.c144fa52,
+        _n = [
           p.a.b1f2e8ce,
           p.a.jfec3aa0,
           p.a.e08a6e6f,
@@ -3496,30 +3345,30 @@
           p.a.fc64990d,
           p.a.hb5f1d64,
         ],
-        ht = p.a.c365dcc5,
-        yt = p.a.bd44a8a8,
-        wt = void 0 !== $a ? $a : ($a = n('JB6R')),
-        _t = function (e) {
+        kn = p.a.c365dcc5,
+        Fn = p.a.bd44a8a8,
+        En = void 0 !== Ya ? Ya : (Ya = n('JB6R')),
+        Cn = function (e) {
           var a,
             n,
             t = e.viewer,
-            r = Y()(wt, t),
+            r = Y()(En, t),
             l =
               null !==
                 (a = null === (n = r.super_follows_application_draft) || void 0 === n ? void 0 : n.content_category) &&
               void 0 !== a
                 ? a
                 : [],
-            i = Ya(r, 'content_category'),
-            o = bt.map(function (e) {
+            i = Qa(r, 'content_category'),
+            o = _n.map(function (e) {
               return { label: e, value: e }
             })
           return c.a.createElement(
-            P,
-            { title: gt },
-            c.a.createElement(dt.a, {
-              description: ft,
-              label: ft,
+            D,
+            { title: vn },
+            c.a.createElement(hn.a, {
+              description: Sn,
+              label: Sn,
               name: 'categories',
               onChange: function (e, a) {
                 i([a])
@@ -3527,16 +3376,16 @@
               options: o,
               value: l[0],
             }),
-            c.a.createElement(mt, {
-              helpText: yt,
-              label: ht,
+            c.a.createElement(wn, {
+              helpText: Fn,
+              label: kn,
               path: '/settings/superfollows/application/submit_categories_other',
             }),
           )
         },
-        vt = p.a.d94a9a17,
-        St = p.a.a35394b3,
-        kt = [
+        xn = p.a.d94a9a17,
+        Kn = p.a.a35394b3,
+        Pn = [
           p.a.e375c2df,
           p.a.gf30371a,
           p.a.b3773d47,
@@ -3548,27 +3397,27 @@
           p.a.ab09972f,
           p.a.jafe3705,
         ],
-        Ft = void 0 !== en ? en : (en = n('H1we')),
-        Et = function (e) {
+        Ln = void 0 !== Za ? Za : (Za = n('H1we')),
+        Dn = function (e) {
           var a,
             n,
             t = e.viewer,
-            r = Y()(Ft, t),
+            r = Y()(Ln, t),
             l =
               null !== (a = null === (n = r.super_follows_application_draft) || void 0 === n ? void 0 : n.ethnicity) &&
               void 0 !== a
                 ? a
                 : [],
-            i = Ya(r, 'ethnicity'),
-            o = kt.map(function (e) {
+            i = Qa(r, 'ethnicity'),
+            o = Pn.map(function (e) {
               return { label: e, value: e }
             })
           return c.a.createElement(
-            P,
-            { title: vt },
-            c.a.createElement(dt.a, {
-              description: St,
-              label: St,
+            D,
+            { title: xn },
+            c.a.createElement(hn.a, {
+              description: Kn,
+              label: Kn,
               name: 'ethnicities',
               onChange: function (e, a) {
                 i([a])
@@ -3578,9 +3427,9 @@
             }),
           )
         },
-        Ct = p.a.a8d0108d,
-        xt = p.a.a35394b3,
-        Kt = [
+        Tn = p.a.a8d0108d,
+        On = p.a.a35394b3,
+        In = [
           p.a.de32365f,
           p.a.b6ab31bd,
           p.a.ffc23188,
@@ -3590,27 +3439,27 @@
           p.a.he3f1435,
           p.a.c3c16abb,
         ],
-        Lt = void 0 !== an ? an : (an = n('VG5i')),
-        Tt = function (e) {
+        Bn = void 0 !== Ja ? Ja : (Ja = n('VG5i')),
+        Rn = function (e) {
           var a,
             n,
             t = e.viewer,
-            r = Y()(Lt, t),
+            r = Y()(Bn, t),
             l =
               null !== (a = null === (n = r.super_follows_application_draft) || void 0 === n ? void 0 : n.gender) &&
               void 0 !== a
                 ? a
                 : [],
-            i = Ya(r, 'gender'),
-            o = Kt.map(function (e) {
+            i = Qa(r, 'gender'),
+            o = In.map(function (e) {
               return { label: e, value: e }
             })
           return c.a.createElement(
-            P,
-            { title: Ct },
-            c.a.createElement(dt.a, {
-              description: xt,
-              label: xt,
+            D,
+            { title: Tn },
+            c.a.createElement(hn.a, {
+              description: On,
+              label: On,
               name: 'genders',
               onChange: function (e, a) {
                 i([a])
@@ -3620,16 +3469,16 @@
             }),
           )
         },
-        Pt = p.a.da8ea7da,
-        Ot = p.a.d7081f91,
-        Dt = p.a.j349548f,
-        It = p.a.b772cd65,
-        Bt = void 0 !== nn ? nn : (nn = n('+OUG')),
-        Rt = function (e) {
+        Vn = p.a.da8ea7da,
+        zn = p.a.d7081f91,
+        An = p.a.j349548f,
+        Mn = p.a.b772cd65,
+        Un = void 0 !== $a ? $a : ($a = n('+OUG')),
+        Hn = function (e) {
           var a,
             n,
             t = e.viewer,
-            r = Y()(Bt, t),
+            r = Y()(Un, t),
             l =
               null !==
                 (a =
@@ -3638,33 +3487,33 @@
                     : n.content_creation_platform_other) && void 0 !== a
                 ? a
                 : '',
-            i = Ya(r, 'content_creation_platform_other')
+            i = Qa(r, 'content_creation_platform_other')
           return c.a.createElement(
-            P,
-            { title: Pt },
-            c.a.createElement(rt.a, {
-              helperText: Dt,
-              label: Ot,
+            D,
+            { title: Vn },
+            c.a.createElement(un.a, {
+              helperText: An,
+              label: zn,
               name: 'otherPlatform',
               onChange: function (e) {
                 i(e.currentTarget.value)
               },
               value: l,
             }),
-            c.a.createElement(S.a, null, It),
+            c.a.createElement(_.a, null, Mn),
           )
         },
-        Vt = p.a.da8ea7da,
-        zt = p.a.d4062c9a,
-        At = [p.a.a3021317, p.a.eb4a600d, p.a.d4d74bb3, p.a.fc738909, p.a.d8552c1a, p.a.ca07aa46],
-        Mt = p.a.c365dcc5,
-        Ut = p.a.bd44a8a8,
-        Ht = void 0 !== tn ? tn : (tn = n('xnrs')),
-        jt = function (e) {
+        Nn = p.a.da8ea7da,
+        jn = p.a.d4062c9a,
+        Wn = [p.a.a3021317, p.a.eb4a600d, p.a.d4d74bb3, p.a.fc738909, p.a.d8552c1a, p.a.ca07aa46],
+        Gn = p.a.c365dcc5,
+        qn = p.a.bd44a8a8,
+        Qn = void 0 !== en ? en : (en = n('xnrs')),
+        Xn = function (e) {
           var a,
             n,
             t = e.viewer,
-            r = Y()(Ht, t),
+            r = Y()(Qn, t),
             l =
               null !==
                 (a =
@@ -3673,16 +3522,16 @@
                     : n.content_creation_platform) && void 0 !== a
                 ? a
                 : [],
-            i = Ya(r, 'content_creation_platform'),
-            o = At.map(function (e) {
+            i = Qa(r, 'content_creation_platform'),
+            o = Wn.map(function (e) {
               return { label: e, value: e }
             })
           return c.a.createElement(
-            P,
-            { title: Vt },
-            c.a.createElement(dt.a, {
-              description: zt,
-              label: zt,
+            D,
+            { title: Nn },
+            c.a.createElement(hn.a, {
+              description: jn,
+              label: jn,
               name: 'platforms',
               onChange: function (e, a) {
                 i([a])
@@ -3690,28 +3539,28 @@
               options: o,
               value: l[0],
             }),
-            c.a.createElement(mt, {
-              helpText: Ut,
-              label: Mt,
+            c.a.createElement(wn, {
+              helpText: qn,
+              label: Gn,
               path: '/settings/superfollows/application/submit_platforms_other',
             }),
           )
         },
-        Wt = (n('tVqn'), n('uFXj'), p.a.f4f4dd6f),
-        Nt = p.a.f448cbcb,
-        Gt = function (e) {
+        Yn = (n('tVqn'), n('uFXj'), p.a.f4f4dd6f),
+        Zn = p.a.f448cbcb,
+        Jn = function (e) {
           var a = e.title,
             n = e.type,
             t = 'required' === n ? 'red500' : 'optional' === n ? 'gray700' : void 0,
-            r = 'required' === n ? Wt : 'optional' === n ? Nt : void 0
+            r = 'required' === n ? Yn : 'optional' === n ? Zn : void 0
           return c.a.createElement(
             C.a,
-            { style: qt.container },
+            { style: $n.container },
             c.a.createElement(A.b, { size: 'headline1', weight: 'heavy' }, a),
-            r && c.a.createElement(A.b, { color: t, size: 'subtext2', style: qt.subtext }, r),
+            r && c.a.createElement(A.b, { color: t, size: 'subtext2', style: $n.subtext }, r),
           )
         },
-        qt = K.a.create(function (e) {
+        $n = K.a.create(function (e) {
           return {
             container: {
               borderColor: e.colors.borderColor,
@@ -3724,32 +3573,32 @@
             subtext: { marginTop: e.spaces.space2 },
           }
         }),
-        Qt = n('jV+4'),
-        Xt = n('Xrkv'),
-        Yt = n('9SqB'),
-        Jt = n.n(Yt),
-        Zt = p.a.e873f0ae,
-        $t = p.a.f095a24a,
-        er = p.a.i5f7b6b8,
-        ar = p.a.d1f6d336,
-        nr = p.a.f7997b16,
-        tr = p.a.c144fa52,
-        rr = p.a.f1bf337d,
-        lr = p.a.da8ea7da,
-        ir = p.a.d4062c9a,
-        or = p.a.e963d587,
-        sr = p.a.ede0ac3e,
-        cr = p.a.ffb6cb88,
-        ur = p.a.b2159e8e,
-        dr = p.a.feacb49d,
-        pr = p.a.je17c987,
-        mr = p.a.d94a9a17,
-        gr = p.a.a8d0108d,
-        fr = p.a.gfc80842,
-        br = void 0 !== rn ? rn : (rn = n('pLb/')),
-        hr = void 0 !== ln ? ln : (ln = n('3qCL')),
-        yr = void 0 !== on ? on : (on = n('AyUU')),
-        wr = function (e) {
+        et = n('jV+4'),
+        at = n('Xrkv'),
+        nt = n('9SqB'),
+        tt = n.n(nt),
+        rt = p.a.e873f0ae,
+        lt = p.a.f095a24a,
+        it = p.a.i5f7b6b8,
+        ot = p.a.d1f6d336,
+        st = p.a.f7997b16,
+        ct = p.a.c144fa52,
+        ut = p.a.f1bf337d,
+        dt = p.a.da8ea7da,
+        pt = p.a.d4062c9a,
+        mt = p.a.e963d587,
+        gt = p.a.ede0ac3e,
+        ft = p.a.ffb6cb88,
+        bt = p.a.b2159e8e,
+        ht = p.a.feacb49d,
+        yt = p.a.je17c987,
+        wt = p.a.d94a9a17,
+        vt = p.a.a8d0108d,
+        St = p.a.gfc80842,
+        _t = void 0 !== an ? an : (an = n('pLb/')),
+        kt = void 0 !== nn ? nn : (nn = n('3qCL')),
+        Ft = void 0 !== tn ? tn : (tn = n('AyUU')),
+        Et = function (e) {
           var a,
             n,
             t,
@@ -3759,9 +3608,9 @@
             o,
             s = e.user,
             u = e.viewer,
-            d = Y()(br, s),
+            d = Y()(_t, s),
             p = null == d ? void 0 : d.legacy.screen_name,
-            m = Y()(hr, u),
+            m = Y()(kt, u),
             g = m.super_follows_application_draft,
             f = (null !== (a = null == g ? void 0 : g.content_category) && void 0 !== a ? a : []).concat(
               null !== (n = null == g ? void 0 : g.content_category_other) && void 0 !== n ? n : [],
@@ -3772,59 +3621,59 @@
             h = null !== (l = null == g ? void 0 : g.purpose) && void 0 !== l ? l : '',
             y = null !== (i = null == g ? void 0 : g.ethnicity) && void 0 !== i ? i : [],
             w = null !== (o = null == g ? void 0 : g.gender) && void 0 !== o ? o : [],
-            _ = f.length && b.length && h.trim(),
-            v = Ya(m, 'purpose'),
-            S = Jt()(yr),
-            k = G()(S, 2),
+            v = f.length && b.length && h.trim(),
+            S = Qa(m, 'purpose'),
+            _ = tt()(Ft),
+            k = G()(_, 2),
             F = k[0],
             E = k[1]
           return c.a.createElement(
-            P,
+            D,
             { withInfoButton: !0 },
-            c.a.createElement(Ne, { headline: Zt, illustration: Ue.Clipboard, subtext: $t }),
-            c.a.createElement(Gt, { title: er }),
-            c.a.createElement(A.b, null, ar),
-            p && c.a.createElement(Qt.a, { screenName: p }),
-            c.a.createElement(Gt, { title: nr, type: 'required' }),
-            c.a.createElement(A.b, { color: 'gray700' }, tr),
-            c.a.createElement(mt, {
-              description: Object(Xt.a)(f, !0),
-              label: rr,
+            c.a.createElement(We, { headline: rt, illustration: Ue.Clipboard, subtext: lt }),
+            c.a.createElement(Jn, { title: it }),
+            c.a.createElement(A.b, null, ot),
+            p && c.a.createElement(et.a, { screenName: p }),
+            c.a.createElement(Jn, { title: st, type: 'required' }),
+            c.a.createElement(A.b, { color: 'gray700' }, ct),
+            c.a.createElement(wn, {
+              description: Object(at.a)(f, !0),
+              label: ut,
               path: '/settings/superfollows/application/submit_categories',
             }),
-            c.a.createElement(Gt, { title: lr, type: 'required' }),
-            c.a.createElement(A.b, { color: 'gray700' }, ir),
-            c.a.createElement(mt, {
-              description: Object(Xt.a)(b, !0),
-              label: or,
+            c.a.createElement(Jn, { title: dt, type: 'required' }),
+            c.a.createElement(A.b, { color: 'gray700' }, pt),
+            c.a.createElement(wn, {
+              description: Object(at.a)(b, !0),
+              label: mt,
               path: '/settings/superfollows/application/submit_platforms',
             }),
-            c.a.createElement(Gt, { title: sr, type: 'required' }),
-            c.a.createElement(rt.a, {
-              helperText: ur,
-              label: cr,
+            c.a.createElement(Jn, { title: gt, type: 'required' }),
+            c.a.createElement(un.a, {
+              helperText: bt,
+              label: ft,
               name: 'plannedUsage',
               onChange: function (e) {
-                v(e.currentTarget.value)
+                S(e.currentTarget.value)
               },
               value: h,
             }),
-            c.a.createElement(Gt, { title: dr, type: 'optional' }),
-            c.a.createElement(A.b, { color: 'gray700' }, pr),
-            c.a.createElement(mt, {
-              description: Object(Xt.a)(y, !0),
-              label: mr,
+            c.a.createElement(Jn, { title: ht, type: 'optional' }),
+            c.a.createElement(A.b, { color: 'gray700' }, yt),
+            c.a.createElement(wn, {
+              description: Object(at.a)(y, !0),
+              label: wt,
               path: '/settings/superfollows/application/submit_ethnicities',
             }),
-            c.a.createElement(mt, {
-              description: Object(Xt.a)(w, !0),
-              label: gr,
+            c.a.createElement(wn, {
+              description: Object(at.a)(w, !0),
+              label: vt,
               path: '/settings/superfollows/application/submit_genders',
             }),
-            c.a.createElement(W, null),
+            c.a.createElement(j, null),
             c.a.createElement(Q, {
-              disabled: !_ || E,
-              label: fr,
+              disabled: !v || E,
+              label: St,
               onPress: function () {
                 return new Promise(function (e, a) {
                   F({
@@ -3840,25 +3689,25 @@
             }),
           )
         },
-        _r = void 0 !== sn ? sn : (sn = n('o/nB')),
-        vr = void 0 !== cn ? cn : (cn = n('lZLw')),
-        Sr = function (e) {
+        Ct = void 0 !== rn ? rn : (rn = n('o/nB')),
+        xt = void 0 !== ln ? ln : (ln = n('lZLw')),
+        Kt = function (e) {
           var a = e.user,
             n = e.viewer,
             t = c.a.useContext(I.a).featureSwitches,
-            r = Y()(_r, a),
-            l = Y()(vr, n)
-          if ((Qa(l), !t.isTrue('super_follow_web_application_enabled')))
+            r = Y()(Ct, a),
+            l = Y()(xt, n)
+          if ((qa(l), !t.isTrue('super_follow_web_application_enabled')))
             throw new Error('Super Follows application is not enabled')
           return null == l.super_follows_application_draft
-            ? c.a.createElement(D.a, { to: '/settings/superfollows' })
+            ? c.a.createElement(O.a, { to: '/settings/superfollows' })
             : c.a.createElement(
                 E.d,
                 null,
                 c.a.createElement(
                   E.b,
                   { exact: !0, path: '/settings/superfollows/application/eligibility' },
-                  c.a.createElement(ra, { user: r }),
+                  c.a.createElement(la, { user: r }),
                 ),
                 c.a.createElement(
                   E.b,
@@ -3873,75 +3722,140 @@
                 c.a.createElement(
                   E.b,
                   { exact: !0, path: '/settings/superfollows/application/submit' },
-                  c.a.createElement(wr, { user: r, viewer: l }),
+                  c.a.createElement(Et, { user: r, viewer: l }),
                 ),
                 c.a.createElement(
                   E.b,
                   { exact: !0, path: '/settings/superfollows/application/submit_categories' },
-                  c.a.createElement(_t, { viewer: l }),
+                  c.a.createElement(Cn, { viewer: l }),
                 ),
                 c.a.createElement(
                   E.b,
                   { exact: !0, path: '/settings/superfollows/application/submit_categories_other' },
-                  c.a.createElement(ut, { viewer: l }),
+                  c.a.createElement(bn, { viewer: l }),
                 ),
                 c.a.createElement(
                   E.b,
                   { exact: !0, path: '/settings/superfollows/application/submit_platforms' },
-                  c.a.createElement(jt, { viewer: l }),
+                  c.a.createElement(Xn, { viewer: l }),
                 ),
                 c.a.createElement(
                   E.b,
                   { exact: !0, path: '/settings/superfollows/application/submit_platforms_other' },
-                  c.a.createElement(Rt, { viewer: l }),
+                  c.a.createElement(Hn, { viewer: l }),
                 ),
                 c.a.createElement(
                   E.b,
                   { exact: !0, path: '/settings/superfollows/application/submit_ethnicities' },
-                  c.a.createElement(Et, { viewer: l }),
+                  c.a.createElement(Dn, { viewer: l }),
                 ),
                 c.a.createElement(
                   E.b,
                   { exact: !0, path: '/settings/superfollows/application/submit_genders' },
-                  c.a.createElement(Tt, { viewer: l }),
+                  c.a.createElement(Rn, { viewer: l }),
                 ),
                 c.a.createElement(
                   E.b,
                   { path: '/settings/superfollows/application' },
-                  c.a.createElement(Ka, { user: r }),
+                  c.a.createElement(Pa, { user: r }),
                 ),
               )
         },
-        kr = (n('hBpG'), n('cHvH')),
-        Fr = function (e) {
+        Pt = (n('KqXw'), n('MvUL'), n('eb3s')),
+        Lt = p.a.af4d0a80,
+        Dt = p.a.c701e5cc,
+        Tt = p.a.a649778b,
+        Ot = p.a.d4ab68e2,
+        It = function (e) {
+          var a = e.onNavigation,
+            n = e.shouldBlockNavigation,
+            t = Object(E.f)(),
+            r = c.a.useState(void 0),
+            l = G()(r, 2),
+            i = l[0],
+            o = l[1],
+            s = c.a.useCallback(
+              function (e, a) {
+                return !n(e, a) || (o({ nextLocation: e, action: a }), !1)
+              },
+              [o, n],
+            )
+          c.a.useEffect(
+            function () {
+              return t.block(s)
+            },
+            [s, t],
+          )
+          var u = c.a.useCallback(
+              function () {
+                o(void 0)
+              },
+              [o],
+            ),
+            d = c.a.useCallback(
+              function () {
+                null == a || a(),
+                  o(function (e) {
+                    if (null != e) {
+                      var a = e.action,
+                        n = e.nextLocation
+                      switch (a) {
+                        case 'PUSH':
+                          t.push(n)
+                          break
+                        case 'REPLACE':
+                          t.replace(n)
+                          break
+                        case 'POP':
+                          t.goBackThroughModals({ fallbackPath: '/settings/monetization' })
+                      }
+                    }
+                  })
+              },
+              [t, a, o],
+            )
+          return i
+            ? c.a.createElement(Pt.a, {
+                cancelButtonLabel: Tt,
+                confirmButtonLabel: Ot,
+                confirmButtonType: 'destructiveFilled',
+                headline: Lt,
+                onCancel: u,
+                onConfirm: d,
+                text: Dt,
+              })
+            : null
+        },
+        Bt = n('cHvH'),
+        Rt = function (e) {
           var a = e.children,
             n = e.style,
-            t = Object(kr.b)().windowWidth > K.a.theme.breakpoints.medium ? Er.marginWide : Er.marginNarrow
+            t = Object(Bt.b)().windowWidth > K.a.theme.breakpoints.medium ? Vt.marginWide : Vt.marginNarrow
           return c.a.createElement(C.a, { style: [n, t] }, a)
         },
-        Er = K.a.create(function (e) {
+        Vt = K.a.create(function (e) {
           return {
             marginWide: { marginHorizontal: e.spaces.space80 },
             marginNarrow: { marginHorizontal: e.spaces.space16 },
           }
         }),
-        Cr = (n('ho0z'), n('+7VC')),
-        xr = n('1k08'),
-        Kr = ['style'],
-        Lr = p.a.b600eb88,
-        Tr = p.a.b08bbeb4,
-        Pr = function (e) {
+        zt = (n('ho0z'), n('+7VC')),
+        At = n('1k08'),
+        Mt = ['style'],
+        Ut = p.a.b600eb88,
+        Ht = p.a.b08bbeb4,
+        Nt = function (e) {
           var a = e.style,
-            n = h()(e, Kr),
-            t = Object(kr.b)().windowWidth > K.a.theme.breakpoints.medium
+            n = h()(e, Mt),
+            t = Object(Bt.b)().windowWidth > K.a.theme.breakpoints.medium
           return c.a.createElement(
             C.a,
-            { style: [Or.root, t && Or.rootWide, a] },
-            c.a.createElement(xr.a, { description: Tr, title: Lr }),
-            c.a.createElement(Cr.a, f()({}, n, { style: Or.exclusiveDemoVIPContent })),
+            { style: [jt.root, t && jt.rootWide, a] },
+            c.a.createElement(At.a, { description: Ht, title: Ut }),
+            c.a.createElement(zt.a, f()({}, n, { style: jt.exclusiveDemoVIPContent })),
           )
         },
-        Or = K.a.create(function (e) {
+        jt = K.a.create(function (e) {
           return {
             description: { marginTop: e.spaces.space8 },
             exclusiveDemoVIPContent: { alignSelf: 'center', marginTop: e.spaces.space32 },
@@ -3953,44 +3867,44 @@
             rootWide: { paddingHorizontal: e.spaces.space48 },
           }
         }),
-        Dr = function (e) {
+        Wt = function (e) {
           var a = e.children,
             n = e.style
           return c.a.createElement(
             C.a,
-            { style: [Rr.frame, n] },
+            { style: [Qt.frame, n] },
             c.a.createElement(
               C.a,
-              { style: Rr.browserBar },
+              { style: Qt.browserBar },
               c.a.createElement(
                 C.a,
-                { style: Rr.browserBarButtons },
-                c.a.createElement(C.a, { style: Rr.browserBarButton }),
-                c.a.createElement(C.a, { style: Rr.browserBarButton }),
-                c.a.createElement(C.a, { style: Rr.browserBarButton }),
+                { style: Qt.browserBarButtons },
+                c.a.createElement(C.a, { style: Qt.browserBarButton }),
+                c.a.createElement(C.a, { style: Qt.browserBarButton }),
+                c.a.createElement(C.a, { style: Qt.browserBarButton }),
               ),
               c.a.createElement(
                 C.a,
-                { style: Rr.browserBarUrlInputWrapper },
-                c.a.createElement(C.a, { style: Rr.browserBarUrlInput }),
+                { style: Qt.browserBarUrlInputWrapper },
+                c.a.createElement(C.a, { style: Qt.browserBarUrlInput }),
               ),
             ),
             a,
           )
         },
-        Ir = function (e) {
+        Gt = function (e) {
           var a = e.children,
             n = e.style
-          return c.a.createElement(C.a, { style: n }, c.a.createElement(C.a, { style: Rr.content }, a))
+          return c.a.createElement(C.a, { style: n }, c.a.createElement(C.a, { style: Qt.content }, a))
         },
-        Br = function (e) {
+        qt = function (e) {
           var a = e.children,
             n = e.style
-          return Object(kr.b)().windowWidth > K.a.theme.breakpoints.medium
-            ? c.a.createElement(Dr, { style: n }, c.a.createElement(Ir, { style: Rr.contentWide }, a))
-            : c.a.createElement(Ir, { style: n }, a)
+          return Object(Bt.b)().windowWidth > K.a.theme.breakpoints.medium
+            ? c.a.createElement(Wt, { style: n }, c.a.createElement(Gt, { style: Qt.contentWide }, a))
+            : c.a.createElement(Gt, { style: n }, a)
         },
-        Rr = K.a.create(function (e) {
+        Qt = K.a.create(function (e) {
           return {
             frame: {
               backgroundColor: e.colors.gray50,
@@ -4043,12 +3957,12 @@
             },
           }
         }),
-        Vr = n('lD8l'),
-        zr = (n('kH1Z'), n('6U7i'), n('9VLy')),
-        Ar = n('6OUF'),
-        Mr = n('yTN1'),
-        Ur = p.a.a329ce87,
-        Hr = function (e, a) {
+        Xt = n('lD8l'),
+        Yt = (n('kH1Z'), n('6U7i'), n('9VLy')),
+        Zt = n('6OUF'),
+        Jt = n('yTN1'),
+        $t = p.a.a329ce87,
+        er = function (e, a) {
           var n,
             t = e.autoFocus,
             r = e.imageUrl,
@@ -4059,11 +3973,11 @@
             u = e.valueMaxLength
           return c.a.createElement(
             C.a,
-            { style: [Wr.root, o] },
+            { style: [nr.root, o] },
             l
-              ? c.a.createElement(Ar.a, {
+              ? c.a.createElement(Zt.a, {
                   autoFocus: t,
-                  inputStyle: Wr.descriptionInput,
+                  inputStyle: nr.descriptionInput,
                   isCompact: !0,
                   leftAligned: !0,
                   maxNumberOfLines: Number.MAX_SAFE_INTEGER,
@@ -4071,19 +3985,19 @@
                   name: 'description',
                   numberOfLines: 1,
                   onChange: l,
-                  placeholder: Ur,
+                  placeholder: $t,
                   ref: a,
-                  style: Wr.description,
+                  style: nr.description,
                   value: s,
                 })
-              : c.a.createElement(A.b, { color: 'gray700', style: Wr.description }, s),
+              : c.a.createElement(A.b, { color: 'gray700', style: nr.description }, s),
             c.a.createElement(
               C.a,
-              { style: Wr.signatureWrapper },
-              c.a.createElement(zr.a, { imageUrl: r, screenName: i, style: [Wr.signature, !s && Wr.visibilityHidden] }),
+              { style: nr.signatureWrapper },
+              c.a.createElement(Yt.a, { imageUrl: r, screenName: i, style: [nr.signature, !s && nr.visibilityHidden] }),
               l &&
                 u &&
-                c.a.createElement(Mr.a, {
+                c.a.createElement(Jt.a, {
                   count: null !== (n = null == s ? void 0 : s.length) && void 0 !== n ? n : 0,
                   maxCount: u,
                   warningCount: u - 10,
@@ -4091,8 +4005,8 @@
             ),
           )
         },
-        jr = c.a.forwardRef(Hr),
-        Wr = K.a.create(function (e) {
+        ar = c.a.forwardRef(er),
+        nr = K.a.create(function (e) {
           return {
             root: { display: 'inline-flex', alignItems: 'start', flexDirection: 'column' },
             description: { borderRadius: 0, borderColor: 'transparent', minHeight: 0, width: '100%' },
@@ -4114,25 +4028,25 @@
             visibilityHidden: { visibility: 'hidden' },
           }
         }),
-        Nr = ['style'],
-        Gr = p.a.cbc8ce27,
-        qr = function (e, a) {
+        tr = ['style'],
+        rr = p.a.cbc8ce27,
+        lr = function (e, a) {
           var n = e.style,
-            t = h()(e, Nr),
-            r = Object(kr.b)().windowWidth > K.a.theme.breakpoints.medium
+            t = h()(e, tr),
+            r = Object(Bt.b)().windowWidth > K.a.theme.breakpoints.medium
           return c.a.createElement(
             C.a,
-            { style: [Xr.root, r && Xr.rootWide, n] },
+            { style: [or.root, r && or.rootWide, n] },
             c.a.createElement(
               A.b,
               { accessibilityLevel: 2, accessibilityRole: 'heading', size: 'title4', weight: 'heavy' },
-              Gr,
+              rr,
             ),
-            c.a.createElement(jr, f()({}, t, { ref: a, style: Xr.description })),
+            c.a.createElement(ar, f()({}, t, { ref: a, style: or.description })),
           )
         },
-        Qr = c.a.forwardRef(qr),
-        Xr = K.a.create(function (e) {
+        ir = c.a.forwardRef(lr),
+        or = K.a.create(function (e) {
           return {
             root: {
               paddingBottom: e.spaces.space16,
@@ -4143,19 +4057,19 @@
             description: { marginTop: e.spaces.space8 },
           }
         }),
-        Yr = ['style'],
-        Jr = function (e, a) {
+        sr = ['style'],
+        cr = function (e, a) {
           e.style
-          var n = h()(e, Yr)
+          var n = h()(e, sr)
           return c.a.createElement(
             c.a.Fragment,
             null,
-            c.a.createElement(Qr, f()({}, n, { ref: a })),
-            c.a.createElement(Vr.a, { style: $r.exclusiveDemoBonusContent }),
+            c.a.createElement(ir, f()({}, n, { ref: a })),
+            c.a.createElement(Xt.a, { style: dr.exclusiveDemoBonusContent }),
           )
         },
-        Zr = c.a.forwardRef(Jr),
-        $r = K.a.create(function (e) {
+        ur = c.a.forwardRef(cr),
+        dr = K.a.create(function (e) {
           return {
             exclusiveDemoBonusContent: {
               alignSelf: 'center',
@@ -4164,51 +4078,168 @@
             },
           }
         }),
-        el = n('MAc7'),
-        al = void 0 !== un ? un : (un = n('STrk')),
-        nl = void 0 !== dn ? dn : (dn = n('bWed')),
-        tl = function (e) {
+        pr = n('MAc7'),
+        mr = 'super_follows_onboarding_draft',
+        gr = function (e, a) {
+          return Ma(e, a).getLinkedRecord(mr)
+        }
+      function fr(e, a) {
+        var n = Ga()()
+        Object(Ra.a)(function () {
+          Ba()(e, 'viewerRef must be defined'),
+            ja()(n, function (n) {
+              !(function (e, a) {
+                var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
+                  t = n.creator_intro,
+                  r = void 0 === t ? null : t,
+                  l = n.description,
+                  i = void 0 === l ? null : l,
+                  o = n.selected_price,
+                  s = void 0 === o ? null : o,
+                  c = Aa(a),
+                  u = Ma(e, a)
+                if (!gr(e, a)) {
+                  var d = e.create(''.concat(c, ':').concat(mr), 'SuperFollowsOnboardingDraft')
+                  d.setValue(r, 'creator_intro'),
+                    d.setValue(i, 'description'),
+                    d.setValue(s, 'selected_price'),
+                    u.setLinkedRecord(d, 'super_follows_onboarding_draft')
+                }
+              })(n, e, a)
+            })
+        })
+      }
+      function br(e, a) {
+        var n = Ga()()
+        return c.a.useCallback(
+          function (t) {
+            Ba()(e, 'viewerId must be defined'),
+              ja()(n, function (n) {
+                !(function (e, a, n, t) {
+                  var r = gr(e, a)
+                  Ba()(r, 'onboardingDraft must be defined'), r.setValue(t, n)
+                })(n, e, a, t)
+              })
+          },
+          [n, a, e],
+        )
+      }
+      var hr,
+        yr,
+        wr,
+        vr,
+        Sr,
+        _r,
+        kr,
+        Fr,
+        Er,
+        Cr,
+        xr,
+        Kr,
+        Pr,
+        Lr,
+        Dr,
+        Tr,
+        Or,
+        Ir,
+        Br,
+        Rr,
+        Vr,
+        zr,
+        Ar,
+        Mr,
+        Ur,
+        Hr,
+        Nr,
+        jr,
+        Wr,
+        Gr,
+        qr,
+        Qr,
+        Xr,
+        Yr,
+        Zr,
+        Jr,
+        $r,
+        el,
+        al,
+        nl,
+        tl,
+        rl,
+        ll,
+        il,
+        ol,
+        sl,
+        cl,
+        ul,
+        dl,
+        pl,
+        ml = function (e) {
+          var a, t
+          return null !==
+            (a =
+              null === (t = Y()(void 0 !== on ? on : (on = n('krsm')), e).super_follows_onboarding_draft) ||
+              void 0 === t
+                ? void 0
+                : t.creator_intro) && void 0 !== a
+            ? a
+            : ''
+        },
+        gl = function (e) {
+          var a, t
+          return null !==
+            (a =
+              null === (t = Y()(void 0 !== sn ? sn : (sn = n('ZaCQ')), e).super_follows_onboarding_draft) ||
+              void 0 === t
+                ? void 0
+                : t.description) && void 0 !== a
+            ? a
+            : ''
+        },
+        fl = function (e) {
+          var a, t
+          return null !==
+            (a =
+              null === (t = Y()(void 0 !== cn ? cn : (cn = n('K7/K')), e).super_follows_onboarding_draft) ||
+              void 0 === t
+                ? void 0
+                : t.selected_price) && void 0 !== a
+            ? a
+            : null
+        },
+        bl = void 0 !== hr ? hr : (hr = n('STrk')),
+        hl = void 0 !== yr ? yr : (yr = n('bWed')),
+        yl = function (e) {
           var a,
             n,
-            t,
-            r,
-            l = e.user,
-            i = e.viewer,
-            o = Y()(al, l),
-            s = Y()(nl, i),
-            u = (null == o ? void 0 : o.legacy) || {},
-            d = u.name,
-            p = u.profile_image_url_https,
-            m = u.screen_name,
-            g =
-              null !==
-                (a = null === (n = s.super_follows_onboarding_draft) || void 0 === n ? void 0 : n.creator_intro) &&
-              void 0 !== a
-                ? a
-                : '',
-            f =
-              null !== (t = null === (r = s.super_follows_onboarding_draft) || void 0 === r ? void 0 : r.description) &&
-              void 0 !== t
-                ? t
-                : ''
+            t = e.user,
+            r = e.viewer,
+            l = Y()(bl, t),
+            i = Y()(hl, r),
+            o = (null == l ? void 0 : l.legacy) || {},
+            s = o.name,
+            u = o.profile_image_url_https,
+            d = o.screen_name,
+            p = null !== (a = ml(i)) && void 0 !== a ? a : '',
+            m = null !== (n = gl(i)) && void 0 !== n ? n : ''
           return (
-            Ia()('string' == typeof p, 'imageUrl must be defined'),
-            Ia()('string' == typeof d, 'name must be defined'),
-            Ia()('string' == typeof m, 'screenName must be defined'),
+            Ba()('string' == typeof u, 'imageUrl must be defined'),
+            Ba()('string' == typeof s, 'name must be defined'),
+            Ba()('string' == typeof d, 'screenName must be defined'),
             c.a.createElement(
-              Br,
+              qt,
               null,
               c.a.createElement(
                 C.a,
-                { style: rl.browserContent },
-                c.a.createElement(el.a, { imageUrl: p, name: d, value: g }),
-                c.a.createElement(Zr, { imageUrl: p, screenName: m, value: f }),
-                c.a.createElement(Pr, { user: o }),
+                { style: wl.browserContent },
+                c.a.createElement(pr.a, { imageUrl: u, name: s, value: p }),
+                c.a.createElement(ur, { imageUrl: u, screenName: d, value: m }),
+                c.a.createElement(Nt, { user: l }),
               ),
             )
           )
         },
-        rl = K.a.create(function (e) {
+        wl = K.a.create(function (e) {
           return {
             browserContent: { paddingBottom: e.spaces.space48 },
             interstitial: { marginBottom: e.spaces.space28, marginTop: e.spaces.space32 },
@@ -4216,11 +4247,11 @@
             blob: { paddingTop: 0, paddingBottom: 0, paddingLeft: 0, paddingRight: 0 },
           }
         }),
-        ll = ['label', 'path'],
-        il = function (e) {
+        vl = ['label', 'path'],
+        Sl = function (e) {
           var a = e.label,
             n = e.path,
-            t = h()(e, ll),
+            t = h()(e, vl),
             r = Object(E.f)()
           return c.a.createElement(
             A.b,
@@ -4235,45 +4266,45 @@
             a,
           )
         },
-        ol = p.a.hf6f2913,
-        sl = p.a.i859a9d3,
-        cl = K.a.create(function (e) {
+        _l = p.a.hf6f2913,
+        kl = p.a.i859a9d3,
+        Fl = K.a.create(function (e) {
           return { root: { alignItems: 'center', flexDirection: 'row', justifyContent: 'space-between' } }
         }),
-        ul = function (e) {
+        El = function (e) {
           var a = e.path,
             n = e.style
           return c.a.createElement(
             C.a,
-            { style: [cl.root, n] },
-            c.a.createElement(A.b, { size: 'headline2', weight: 'heavy' }, ol),
-            c.a.createElement(il, { label: sl, path: a }),
+            { style: [Fl.root, n] },
+            c.a.createElement(A.b, { size: 'headline2', weight: 'heavy' }, _l),
+            c.a.createElement(Sl, { label: kl, path: a }),
           )
         },
-        dl = n('0yYu'),
-        pl = p.a.iba08a94,
-        ml = p.a.ef354e83,
-        gl = void 0 !== pn ? pn : (pn = n('UFp0')),
-        fl = void 0 !== mn ? mn : (mn = n('NmgE')),
-        bl = function (e) {
+        Cl = n('0yYu'),
+        xl = p.a.iba08a94,
+        Kl = p.a.ef354e83,
+        Pl = void 0 !== wr ? wr : (wr = n('UFp0')),
+        Ll = void 0 !== vr ? vr : (vr = n('NmgE')),
+        Dl = function (e) {
           var a = e.user,
             n = e.viewer,
-            t = Y()(gl, a),
-            r = Y()(fl, n)
+            t = Y()(Pl, a),
+            r = Y()(Ll, n)
           return c.a.createElement(
             c.a.Fragment,
             null,
-            c.a.createElement(Fr, { style: hl.interstitial }, c.a.createElement(Ne, { headline: pl, subtext: ml })),
-            c.a.createElement(dl.a, null),
+            c.a.createElement(Rt, { style: Tl.interstitial }, c.a.createElement(We, { headline: xl, subtext: Kl })),
+            c.a.createElement(Cl.a, null),
             c.a.createElement(
-              Fr,
-              { style: hl.previewCallout },
-              c.a.createElement(ul, { path: '/settings/superfollows/perks_preview' }),
+              Rt,
+              { style: Tl.previewCallout },
+              c.a.createElement(El, { path: '/settings/superfollows/perks_preview' }),
             ),
-            c.a.createElement(C.a, { style: hl.summaryFramed }, c.a.createElement(tl, { user: t, viewer: r })),
+            c.a.createElement(C.a, { style: Tl.summaryFramed }, c.a.createElement(yl, { user: t, viewer: r })),
           )
         },
-        hl = K.a.create(function (e) {
+        Tl = K.a.create(function (e) {
           return {
             interstitial: { marginBottom: e.spaces.space28, marginTop: e.spaces.space32 },
             previewCallout: { marginBottom: e.spaces.space4, marginTop: e.spaces.space20 },
@@ -4285,91 +4316,85 @@
             },
           }
         }),
-        yl = p.a.hf6f2913,
-        wl = void 0 !== gn ? gn : (gn = n('MvEh')),
-        _l = void 0 !== fn ? fn : (fn = n('U5ka')),
-        vl = function (e) {
+        Ol = p.a.hf6f2913,
+        Il = void 0 !== Sr ? Sr : (Sr = n('MvEh')),
+        Bl = void 0 !== _r ? _r : (_r = n('U5ka')),
+        Rl = function (e) {
           var a = e.user,
             n = e.viewer,
-            t = Y()(wl, a),
-            r = Y()(_l, n)
-          return c.a.createElement(P, { title: yl, withInfoButton: !0 }, c.a.createElement(bl, { user: t, viewer: r }))
+            t = Y()(Il, a),
+            r = Y()(Bl, n)
+          return c.a.createElement(D, { title: Ol, withInfoButton: !0 }, c.a.createElement(Dl, { user: t, viewer: r }))
         },
-        Sl = ['style'],
-        kl = function (e, a) {
+        Vl = ['style'],
+        zl = function (e, a) {
           var n = e.style,
-            t = h()(e, Sl)
+            t = h()(e, Vl)
           return c.a.createElement(
-            Br,
+            qt,
             { style: n },
-            c.a.createElement(c.a.Fragment, null, c.a.createElement(Zr, f()({}, t, { ref: a }))),
+            c.a.createElement(c.a.Fragment, null, c.a.createElement(ur, f()({}, t, { ref: a }))),
           )
         },
-        Fl = c.a.forwardRef(kl),
-        El = p.a.gf32cca1,
-        Cl = p.a.j8ba99b3,
-        xl = p.a.j679dcda,
-        Kl = void 0 !== bn ? bn : (bn = n('yjSu')),
-        Ll = void 0 !== hn ? hn : (hn = n('RTdz')),
-        Tl = function (e, a) {
-          var n,
-            t,
-            r = e.autoFocus,
-            l = e.descriptionMaxLength,
-            i = e.user,
-            o = e.viewer,
-            s = c.a.useRef()
-          Object(Ba.a)(function () {
+        Al = c.a.forwardRef(zl),
+        Ml = p.a.gf32cca1,
+        Ul = p.a.j8ba99b3,
+        Hl = p.a.j679dcda,
+        Nl = void 0 !== kr ? kr : (kr = n('yjSu')),
+        jl = void 0 !== Fr ? Fr : (Fr = n('RTdz')),
+        Wl = function (e, a) {
+          var n = e.autoFocus,
+            t = e.descriptionMaxLength,
+            r = e.user,
+            l = e.viewer,
+            i = c.a.useRef()
+          Object(Ra.a)(function () {
             var e
-            r && null !== (e = s.current) && void 0 !== e && e.scrollIntoView && s.current.scrollIntoView()
+            n && null !== (e = i.current) && void 0 !== e && e.scrollIntoView && i.current.scrollIntoView()
           })
-          var u = Y()(Kl, i),
-            d = Y()(Ll, o),
-            p = u.legacy,
-            m = p.profile_image_url_https,
-            g = p.screen_name,
-            f =
-              null !== (n = null === (t = d.super_follows_onboarding_draft) || void 0 === t ? void 0 : t.description) &&
-              void 0 !== n
-                ? n
-                : '',
-            b = Ja(d, 'description')
+          var o = Y()(Nl, r),
+            s = Y()(jl, l),
+            u = o.legacy,
+            d = u.profile_image_url_https,
+            p = u.screen_name,
+            m = gl(s),
+            g = br(s, 'description')
           return (
-            Ia()('string' == typeof m, 'imageUrl must be defined'),
-            Ia()('string' == typeof g, 'screenName must be defined'),
+            Ba()('string' == typeof d, 'imageUrl must be defined'),
+            Ba()('string' == typeof p, 'screenName must be defined'),
             c.a.createElement(
               c.a.Fragment,
               null,
-              c.a.createElement(Fr, { style: Ol.interstitial }, c.a.createElement(Ne, { headline: El, subtext: Cl })),
+              c.a.createElement(Rt, { style: ql.interstitial }, c.a.createElement(We, { headline: Ml, subtext: Ul })),
               c.a.createElement(
-                Fr,
-                { style: Ol.examplesLink },
-                c.a.createElement(il, { label: xl, path: '/settings/superfollows/perks_description_examples' }),
+                Rt,
+                { style: ql.examplesLink },
+                c.a.createElement(Sl, { label: Hl, path: '/settings/superfollows/perks_description_examples' }),
               ),
-              c.a.createElement(dl.a, null),
+              c.a.createElement(Cl.a, null),
               c.a.createElement(
-                Fr,
-                { style: Ol.previewCallout },
-                c.a.createElement(ul, { path: '/settings/superfollows/perks_preview' }),
+                Rt,
+                { style: ql.previewCallout },
+                c.a.createElement(El, { path: '/settings/superfollows/perks_preview' }),
               ),
-              c.a.createElement(Fl, {
-                autoFocus: r,
-                imageUrl: m,
+              c.a.createElement(Al, {
+                autoFocus: n,
+                imageUrl: d,
                 onChange: function (e) {
-                  b(e.currentTarget.value)
+                  g(e.currentTarget.value)
                 },
                 ref: a,
-                screenName: g,
-                style: Ol.preview,
-                value: f,
-                valueMaxLength: l,
+                screenName: p,
+                style: ql.preview,
+                value: m,
+                valueMaxLength: t,
               }),
-              c.a.createElement(C.a, { ref: s }),
+              c.a.createElement(C.a, { ref: i }),
             )
           )
         },
-        Pl = c.a.forwardRef(Tl),
-        Ol = K.a.create(function (e) {
+        Gl = c.a.forwardRef(Wl),
+        ql = K.a.create(function (e) {
           return {
             interstitial: { marginTop: e.spaces.space32 },
             examplesLink: { marginBottom: e.spaces.space28, marginTop: e.spaces.space24 },
@@ -4377,27 +4402,28 @@
             preview: { margin: e.spaces.space16 },
           }
         }),
-        Dl =
-          (n('5BYb'),
+        Ql =
+          (n('hBpG'),
+          n('5BYb'),
           function (e) {
             var a, t
             return null !==
               (a =
-                null === (t = Y()(void 0 !== wn ? wn : (wn = n('WDhg')), e).super_follow_creator_benefits) ||
+                null === (t = Y()(void 0 !== Cr ? Cr : (Cr = n('WDhg')), e).super_follow_creator_benefits) ||
                 void 0 === t
                   ? void 0
                   : t.creator_intro) && void 0 !== a
               ? a
-              : void 0
+              : ''
           }),
-        Il = function (e) {
+        Xl = function (e) {
           var a,
             t,
             r,
             l = (
               null !==
                 (a =
-                  null === (t = Y()(void 0 !== _n ? _n : (_n = n('G/nI')), e).super_follow_creator_benefits) ||
+                  null === (t = Y()(void 0 !== xr ? xr : (xr = n('G/nI')), e).super_follow_creator_benefits) ||
                   void 0 === t
                     ? void 0
                     : t.benefits_data) && void 0 !== a
@@ -4406,177 +4432,173 @@
             ).find(function (e) {
               return 'ExclusiveContent' === e.benefit_type
             })
-          return null !== (r = null == l ? void 0 : l.description) && void 0 !== r ? r : void 0
+          return null !== (r = null == l ? void 0 : l.description) && void 0 !== r ? r : ''
         },
-        Bl = (n('jwue'), n('+oxZ'), void 0 !== Sn ? Sn : (Sn = n('rwq4'))),
-        Rl = void 0 !== kn ? kn : (kn = n('E9LA')),
-        Vl = function (e, a) {
-          var t,
-            r,
-            l = a.creatorIntro,
-            i = a.description,
-            o = Y()(Bl, e),
-            s = (function (e) {
+        Yl = function (e) {
+          var a, t
+          return null !==
+            (a =
+              null === (t = Y()(void 0 !== Kr ? Kr : (Kr = n('dGIC')), e).super_follow_creator_price_metadata) ||
+              void 0 === t
+                ? void 0
+                : t.selected_price) && void 0 !== a
+            ? a
+            : null
+        },
+        Zl = (n('jwue'), n('+oxZ'), void 0 !== Pr ? Pr : (Pr = n('rwq4'))),
+        Jl = void 0 !== Lr ? Lr : (Lr = n('E9LA')),
+        $l = function (e, a) {
+          var t = a.creatorIntro,
+            r = a.description,
+            l = Y()(Zl, e),
+            i = (function (e) {
               var a
-              return null === (a = Y()(void 0 !== yn ? yn : (yn = n('lWeI')), e).super_follow_creator_benefits) ||
+              return null === (a = Y()(void 0 !== Er ? Er : (Er = n('lWeI')), e).super_follow_creator_benefits) ||
                 void 0 === a
                 ? void 0
                 : a.__id
-            })(o),
-            u = Dl(o),
-            d = Il(o),
-            p = null !== (t = l || u) && void 0 !== t ? t : '',
-            m = null !== (r = i || d) && void 0 !== r ? r : '',
-            g = Jt()(Rl),
-            f = G()(g, 2),
-            b = f[0],
-            h = f[1]
+            })(l),
+            o = Ql(l),
+            s = Xl(l),
+            u = t || o,
+            d = r || s,
+            p = tt()(Jl),
+            m = G()(p, 2),
+            g = m[0],
+            f = m[1]
           return [
             c.a.useCallback(
               function () {
                 return new Promise(function (e, a) {
-                  b({
+                  g({
                     variables: {
-                      creator_intro: p,
-                      benefits_data: [{ benefit_type: 'ExclusiveContent', title: '', description: m }],
+                      creator_intro: u,
+                      benefits_data: [{ benefit_type: 'ExclusiveContent', title: '', description: d }],
                     },
                     onCompleted: function (a, n) {
                       return e()
                     },
                     onError: a,
                     updater: function (e) {
-                      Ia()(s, 'benefitsId must be specified')
-                      var a = e.get(s)
+                      Ba()(i, 'benefitsId must be specified')
+                      var a = e.get(i)
                       if (
-                        (Ia()(a, 'benefitsRecord must be specified'),
-                        p !== u && a.setValue(p, 'creator_intro'),
-                        m !== d)
+                        (Ba()(a, 'benefitsRecord must be specified'),
+                        u !== o && a.setValue(u, 'creator_intro'),
+                        d !== s)
                       ) {
                         var n = a.getLinkedRecords('benefits_data')
                         null == n ||
                           n.forEach(function (e) {
                             'ExclusiveContent' === (null == e ? void 0 : e.getValue('benefit_type')) &&
-                              (null == e || e.setValue(m, 'description'))
+                              (null == e || e.setValue(d, 'description'))
                           })
                       }
                     },
                   })
                 })
               },
-              [s, p, m, u, d, b],
+              [i, u, d, o, s, g],
             ),
-            h,
+            f,
           ]
         },
-        zl = p.a.cd5cae15,
-        Al = p.a.e36287c6,
-        Ml = p.a.b772cd65,
-        Ul = void 0 !== Fn ? Fn : (Fn = n('kz1e')),
-        Hl = void 0 !== En ? En : (En = n('M3aw')),
-        jl = function (e) {
-          var a,
-            n,
-            t = e.user,
-            r = e.viewer,
-            l = Y()(Ul, t),
-            i = Y()(Hl, r),
-            o = Il(l),
-            s =
-              null !== (a = null === (n = i.super_follows_onboarding_draft) || void 0 === n ? void 0 : n.description) &&
-              void 0 !== a
-                ? a
-                : '',
-            u = s.length > 0 && s.length <= 140 && s !== o,
-            d = Vl(l, { description: s }),
-            p = G()(d, 2),
-            m = p[0],
-            g = p[1],
-            b = {
-              disabled: !u || g,
-              label: Ml,
-              onPress: m,
+        ei = p.a.cd5cae15,
+        ai = p.a.e36287c6,
+        ni = p.a.b772cd65,
+        ti = void 0 !== Dr ? Dr : (Dr = n('kz1e')),
+        ri = void 0 !== Tr ? Tr : (Tr = n('M3aw')),
+        li = function (e) {
+          var a = e.user,
+            n = e.viewer,
+            t = Y()(ti, a),
+            r = Y()(ri, n),
+            l = Xl(t),
+            i = gl(r),
+            o = i.length > 0 && i.length <= 140 && i !== l,
+            s = $l(t, { description: i }),
+            u = G()(s, 2),
+            d = u[0],
+            p = u[1],
+            m = {
+              disabled: !o || p,
+              label: ni,
+              onPress: d,
               path: '/settings/superfollows/management',
               type: 'primaryFilled',
             },
-            h = c.a.createElement(Q, f()({}, b, { size: 'small' }))
+            g = c.a.createElement(Q, f()({}, m, { size: 'small' }))
           return c.a.createElement(
-            P,
-            { rightControl: h, subtitle: Al, title: zl },
-            c.a.createElement(Pl, { autoFocus: !0, descriptionMaxLength: 140, user: l, viewer: i }),
+            D,
+            { rightControl: g, subtitle: ai, title: ei },
+            c.a.createElement(Gl, { autoFocus: !0, descriptionMaxLength: 140, user: t, viewer: r }),
           )
         },
-        Wl = ['style'],
-        Nl = function (e, a) {
+        ii = ['style'],
+        oi = function (e, a) {
           var n = e.style,
-            t = h()(e, Wl)
-          return c.a.createElement(Br, { style: n }, c.a.createElement(el.a, f()({}, t, { ref: a })))
+            t = h()(e, ii)
+          return c.a.createElement(qt, { style: n }, c.a.createElement(pr.a, f()({}, t, { ref: a })))
         },
-        Gl = c.a.forwardRef(Nl),
-        ql = p.a.j3253319,
-        Ql = p.a.h1e80993,
-        Xl = p.a.j679dcda,
-        Yl = void 0 !== Cn ? Cn : (Cn = n('hGtx')),
-        Jl = void 0 !== xn ? xn : (xn = n('DWSt')),
-        Zl = function (e, a) {
-          var n,
-            t,
-            r = e.autoFocus,
-            l = e.introMaxLength,
-            i = e.user,
-            o = e.viewer,
-            s = c.a.useRef()
-          Object(Ba.a)(function () {
+        si = c.a.forwardRef(oi),
+        ci = p.a.j3253319,
+        ui = p.a.h1e80993,
+        di = p.a.j679dcda,
+        pi = void 0 !== Or ? Or : (Or = n('hGtx')),
+        mi = void 0 !== Ir ? Ir : (Ir = n('DWSt')),
+        gi = function (e, a) {
+          var n = e.autoFocus,
+            t = e.introMaxLength,
+            r = e.user,
+            l = e.viewer,
+            i = c.a.useRef()
+          Object(Ra.a)(function () {
             var e
-            r && null !== (e = s.current) && void 0 !== e && e.scrollIntoView && s.current.scrollIntoView()
+            n && null !== (e = i.current) && void 0 !== e && e.scrollIntoView && i.current.scrollIntoView()
           })
-          var u = Y()(Yl, i),
-            d = Y()(Jl, o),
-            p = u.legacy,
-            m = p.name,
-            g = p.profile_image_url_https,
-            f =
-              null !==
-                (n = null === (t = d.super_follows_onboarding_draft) || void 0 === t ? void 0 : t.creator_intro) &&
-              void 0 !== n
-                ? n
-                : '',
-            b = Ja(d, 'creator_intro')
+          var o = Y()(pi, r),
+            s = Y()(mi, l),
+            u = o.legacy,
+            d = u.name,
+            p = u.profile_image_url_https,
+            m = ml(s),
+            g = br(s, 'creator_intro')
           return (
-            Ia()('string' == typeof g, 'imageUrl must be defined'),
-            Ia()('string' == typeof m, 'name must be defined'),
+            Ba()('string' == typeof p, 'imageUrl must be defined'),
+            Ba()('string' == typeof d, 'name must be defined'),
             c.a.createElement(
               c.a.Fragment,
               null,
-              c.a.createElement(Fr, { style: ei.interstitial }, c.a.createElement(Ne, { headline: ql, subtext: Ql })),
+              c.a.createElement(Rt, { style: bi.interstitial }, c.a.createElement(We, { headline: ci, subtext: ui })),
               c.a.createElement(
-                Fr,
-                { style: ei.examplesLink },
-                c.a.createElement(il, { label: Xl, path: '/settings/superfollows/perks_intro_examples' }),
+                Rt,
+                { style: bi.examplesLink },
+                c.a.createElement(Sl, { label: di, path: '/settings/superfollows/perks_intro_examples' }),
               ),
-              c.a.createElement(dl.a, null),
+              c.a.createElement(Cl.a, null),
               c.a.createElement(
-                Fr,
-                { style: ei.previewCallout },
-                c.a.createElement(ul, { path: '/settings/superfollows/perks_preview' }),
+                Rt,
+                { style: bi.previewCallout },
+                c.a.createElement(El, { path: '/settings/superfollows/perks_preview' }),
               ),
-              c.a.createElement(Gl, {
-                autoFocus: r,
-                imageUrl: g,
-                name: m,
+              c.a.createElement(si, {
+                autoFocus: n,
+                imageUrl: p,
+                name: d,
                 onChange: function (e) {
-                  b(e.currentTarget.value)
+                  g(e.currentTarget.value)
                 },
                 ref: a,
-                style: ei.preview,
-                value: f,
-                valueMaxLength: l,
+                style: bi.preview,
+                value: m,
+                valueMaxLength: t,
               }),
-              c.a.createElement(C.a, { ref: s }),
+              c.a.createElement(C.a, { ref: i }),
             )
           )
         },
-        $l = c.a.forwardRef(Zl),
-        ei = K.a.create(function (e) {
+        fi = c.a.forwardRef(gi),
+        bi = K.a.create(function (e) {
           return {
             interstitial: { marginTop: e.spaces.space32 },
             examplesLink: { marginBottom: e.spaces.space28, marginTop: e.spaces.space24 },
@@ -4584,57 +4606,50 @@
             preview: { margin: e.spaces.space16 },
           }
         }),
-        ai = p.a.cd5cae15,
-        ni = p.a.c0348963,
-        ti = p.a.b772cd65,
-        ri = void 0 !== Kn ? Kn : (Kn = n('oyMe')),
-        li = void 0 !== Ln ? Ln : (Ln = n('RL7R')),
-        ii = function (e) {
-          var a,
-            n,
-            t = e.user,
-            r = e.viewer,
-            l = Y()(ri, t),
-            i = Y()(li, r),
-            o = Dl(l),
-            s =
-              null !==
-                (a = null === (n = i.super_follows_onboarding_draft) || void 0 === n ? void 0 : n.creator_intro) &&
-              void 0 !== a
-                ? a
-                : '',
-            u = s.length > 0 && s.length <= 140 && s !== o,
-            d = Vl(l, { creatorIntro: s }),
-            p = G()(d, 2),
-            m = p[0],
-            g = p[1],
-            b = {
-              disabled: !u || g,
-              label: ti,
-              onPress: m,
+        hi = p.a.cd5cae15,
+        yi = p.a.c0348963,
+        wi = p.a.b772cd65,
+        vi = void 0 !== Br ? Br : (Br = n('oyMe')),
+        Si = void 0 !== Rr ? Rr : (Rr = n('RL7R')),
+        _i = function (e) {
+          var a = e.user,
+            n = e.viewer,
+            t = Y()(vi, a),
+            r = Y()(Si, n),
+            l = Ql(t),
+            i = ml(r),
+            o = i.length > 0 && i.length <= 140 && i !== l,
+            s = $l(t, { creatorIntro: i }),
+            u = G()(s, 2),
+            d = u[0],
+            p = u[1],
+            m = {
+              disabled: !o || p,
+              label: wi,
+              onPress: d,
               path: '/settings/superfollows/management',
               type: 'primaryFilled',
             },
-            h = c.a.createElement(Q, f()({}, b, { size: 'small' }))
+            g = c.a.createElement(Q, f()({}, m, { size: 'small' }))
           return c.a.createElement(
-            P,
-            { rightControl: h, subtitle: ni, title: ai },
-            c.a.createElement($l, { autoFocus: !0, introMaxLength: 140, user: l, viewer: i }),
+            D,
+            { rightControl: g, subtitle: yi, title: hi },
+            c.a.createElement(fi, { autoFocus: !0, introMaxLength: 140, user: t, viewer: r }),
           )
         },
-        oi = n('Nh1N'),
-        si = n('yoO3'),
-        ci = n('7FtF'),
-        ui = p.a.be103b84,
-        di = function () {
+        ki = n('Nh1N'),
+        Fi = n('yoO3'),
+        Ei = n('7FtF'),
+        Ci = p.a.be103b84,
+        xi = function () {
           return c.a.createElement(
             C.a,
-            { style: pi.root },
-            c.a.createElement(M.a, { style: pi.icon }),
-            c.a.createElement(A.b, { size: 'subtext2', weight: 'bold' }, ui),
+            { style: Ki.root },
+            c.a.createElement(M.a, { style: Ki.icon }),
+            c.a.createElement(A.b, { size: 'subtext2', weight: 'bold' }, Ci),
           )
         },
-        pi = K.a.create(function (e) {
+        Ki = K.a.create(function (e) {
           return {
             root: {
               alignItems: 'center',
@@ -4649,23 +4664,23 @@
             icon: { color: e.colors.plum500, height: e.spaces.space16 },
           }
         }),
-        mi = function (e) {
+        Pi = function (e) {
           var a = e.children,
             n = e.headline,
             t = e.rightControl
           return c.a.createElement(
             C.a,
-            { style: gi.root },
+            { style: Li.root },
             c.a.createElement(
               C.a,
-              { style: gi.header },
+              { style: Li.header },
               c.a.createElement(
                 A.b,
                 {
                   accessibilityLevel: 4,
                   accessibilityRole: 'heading',
                   size: 'headline2',
-                  style: gi.headline,
+                  style: Li.headline,
                   weight: 'heavy',
                 },
                 n,
@@ -4675,76 +4690,76 @@
             t,
           )
         },
-        gi = K.a.create(function (e) {
+        Li = K.a.create(function (e) {
           return {
             root: { alignItems: 'start', flexDirection: 'row', gap: e.spaces.space8 },
             header: { flex: 1 },
             headline: { marginBottom: e.spaces.space8 },
           }
         }),
-        fi = n('4zmP'),
-        bi = n.p + 'Chat.62494e65.png',
-        hi = n.p + 'Chat@2x.f6eeca05.png',
-        yi = n.p + 'Chat@3x.dd8438c5.png',
-        wi = n.p + 'Cog.788d3515.png',
-        _i = n.p + 'Cog@2x.3528d165.png',
-        vi = n.p + 'Cog@3x.e4185e95.png',
-        Si = n.p + 'Coin.684ea185.png',
-        ki = n.p + 'Coin@2x.9e020695.png',
-        Fi = n.p + 'Coin@3x.d5ecbc95.png',
-        Ei = n.p + 'CoinPurse.5e7e5f25.png',
-        Ci = n.p + 'CoinPurse@2x.62abfad5.png',
-        xi = n.p + 'CoinPurse@3x.6b9f5d05.png',
-        Ki = n.p + 'Cone.e7e68c95.png',
-        Li = n.p + 'Cone@2x.94d66a15.png',
-        Ti = n.p + 'Cone@3x.f4718655.png',
-        Pi = n.p + 'Cross.eed0ff55.png',
-        Oi = n.p + 'Cross@2x.68249435.png',
-        Di = n.p + 'Cross@3x.59595055.png',
-        Ii = n.p + 'FirstAid.962ae7e5.png',
-        Bi = n.p + 'FirstAid@2x.09640055.png',
-        Ri = n.p + 'FirstAid@3x.b6884b15.png',
-        Vi = n.p + 'Heart.a7bdca85.png',
-        zi = n.p + 'Heart@2x.a3108ce5.png',
-        Ai = n.p + 'Heart@3x.2866f2f5.png',
-        Mi = n.p + 'LifeSaver.19af1fb5.png',
-        Ui = n.p + 'LifeSaver@2x.5f9465a5.png',
-        Hi = n.p + 'LifeSaver@3x.3cde1ca5.png',
-        ji = n.p + 'Lightbulb.632a0de5.png',
-        Wi = n.p + 'Lightbulb@2x.ea0a7dc5.png',
-        Ni = n.p + 'Lightbulb@3x.d47fac75.png',
-        Gi = n.p + 'NoEntry.89a117a5.png',
-        qi = n.p + 'NoEntry@2x.6460d275.png',
-        Qi = n.p + 'NoEntry@3x.cf8e9465.png',
-        Xi = n.p + 'Pencil.6ac7a9a5.png',
-        Yi = n.p + 'Pencil@2x.e6d394c5.png',
-        Ji = n.p + 'Pencil@3x.7e45c2e5.png',
-        Zi = n.p + 'PiggyBank.571af825.png',
-        $i = n.p + 'PiggyBank@2x.f6b3cb15.png',
-        eo = n.p + 'PiggyBank@3x.f166bc15.png',
-        ao = n.p + 'Plant.2e93bbb5.png',
-        no = n.p + 'Plant@2x.5660c145.png',
-        to = n.p + 'Plant@3x.60b66855.png',
-        ro = n.p + 'Puzzle.59175915.png',
-        lo = n.p + 'Puzzle@2x.d2394395.png',
-        io = n.p + 'Puzzle@3x.ed9bd735.png',
-        oo = n.p + 'Ribbon.a0d66a65.png',
-        so = n.p + 'Ribbon@2x.d981e095.png',
-        co = n.p + 'Ribbon@3x.d6c8e505.png',
-        uo = n.p + 'Spheres.c33c7b95.png',
-        po = n.p + 'Spheres@2x.6b6732f5.png',
-        mo = n.p + 'Spheres@3x.5e58c985.png',
-        go = n.p + 'Star.2714eb95.png',
-        fo = n.p + 'Star@2x.25a57fd5.png',
-        bo = n.p + 'Star@3x.206f9d85.png',
-        ho = n.p + 'TrashCan.7ed17045.png',
-        yo = n.p + 'TrashCan@2x.79c8ba35.png',
-        wo = n.p + 'TrashCan@3x.91184ba5.png',
-        _o = n.p + 'Wallet.0ca99435.png',
-        vo = n.p + 'Wallet@2x.d3b05545.png',
-        So = n.p + 'Wallet@3x.90c942f5.png',
-        ko = [1, 2, 3],
-        Fo = Object.freeze({
+        Di = n('4zmP'),
+        Ti = n.p + 'Chat.62494e65.png',
+        Oi = n.p + 'Chat@2x.f6eeca05.png',
+        Ii = n.p + 'Chat@3x.dd8438c5.png',
+        Bi = n.p + 'Cog.788d3515.png',
+        Ri = n.p + 'Cog@2x.3528d165.png',
+        Vi = n.p + 'Cog@3x.e4185e95.png',
+        zi = n.p + 'Coin.684ea185.png',
+        Ai = n.p + 'Coin@2x.9e020695.png',
+        Mi = n.p + 'Coin@3x.d5ecbc95.png',
+        Ui = n.p + 'CoinPurse.5e7e5f25.png',
+        Hi = n.p + 'CoinPurse@2x.62abfad5.png',
+        Ni = n.p + 'CoinPurse@3x.6b9f5d05.png',
+        ji = n.p + 'Cone.e7e68c95.png',
+        Wi = n.p + 'Cone@2x.94d66a15.png',
+        Gi = n.p + 'Cone@3x.f4718655.png',
+        qi = n.p + 'Cross.eed0ff55.png',
+        Qi = n.p + 'Cross@2x.68249435.png',
+        Xi = n.p + 'Cross@3x.59595055.png',
+        Yi = n.p + 'FirstAid.962ae7e5.png',
+        Zi = n.p + 'FirstAid@2x.09640055.png',
+        Ji = n.p + 'FirstAid@3x.b6884b15.png',
+        $i = n.p + 'Heart.a7bdca85.png',
+        eo = n.p + 'Heart@2x.a3108ce5.png',
+        ao = n.p + 'Heart@3x.2866f2f5.png',
+        no = n.p + 'LifeSaver.19af1fb5.png',
+        to = n.p + 'LifeSaver@2x.5f9465a5.png',
+        ro = n.p + 'LifeSaver@3x.3cde1ca5.png',
+        lo = n.p + 'Lightbulb.632a0de5.png',
+        io = n.p + 'Lightbulb@2x.ea0a7dc5.png',
+        oo = n.p + 'Lightbulb@3x.d47fac75.png',
+        so = n.p + 'NoEntry.89a117a5.png',
+        co = n.p + 'NoEntry@2x.6460d275.png',
+        uo = n.p + 'NoEntry@3x.cf8e9465.png',
+        po = n.p + 'Pencil.6ac7a9a5.png',
+        mo = n.p + 'Pencil@2x.e6d394c5.png',
+        go = n.p + 'Pencil@3x.7e45c2e5.png',
+        fo = n.p + 'PiggyBank.571af825.png',
+        bo = n.p + 'PiggyBank@2x.f6b3cb15.png',
+        ho = n.p + 'PiggyBank@3x.f166bc15.png',
+        yo = n.p + 'Plant.2e93bbb5.png',
+        wo = n.p + 'Plant@2x.5660c145.png',
+        vo = n.p + 'Plant@3x.60b66855.png',
+        So = n.p + 'Puzzle.59175915.png',
+        _o = n.p + 'Puzzle@2x.d2394395.png',
+        ko = n.p + 'Puzzle@3x.ed9bd735.png',
+        Fo = n.p + 'Ribbon.a0d66a65.png',
+        Eo = n.p + 'Ribbon@2x.d981e095.png',
+        Co = n.p + 'Ribbon@3x.d6c8e505.png',
+        xo = n.p + 'Spheres.c33c7b95.png',
+        Ko = n.p + 'Spheres@2x.6b6732f5.png',
+        Po = n.p + 'Spheres@3x.5e58c985.png',
+        Lo = n.p + 'Star.2714eb95.png',
+        Do = n.p + 'Star@2x.25a57fd5.png',
+        To = n.p + 'Star@3x.206f9d85.png',
+        Oo = n.p + 'TrashCan.7ed17045.png',
+        Io = n.p + 'TrashCan@2x.79c8ba35.png',
+        Bo = n.p + 'TrashCan@3x.91184ba5.png',
+        Ro = n.p + 'Wallet.0ca99435.png',
+        Vo = n.p + 'Wallet@2x.d3b05545.png',
+        zo = n.p + 'Wallet@3x.90c942f5.png',
+        Ao = [1, 2, 3],
+        Mo = Object.freeze({
           Chat: 'Chat',
           Cog: 'Cog',
           Coin: 'Coin',
@@ -4766,25 +4781,25 @@
           TrashCan: 'TrashCan',
           Wallet: 'Wallet',
         }),
-        Eo = Object(Re.a)(Fo),
-        Co = Eo.reduce(function (e, a) {
-          var n = Math.max.apply(Math, ko)
+        Uo = Object(Re.a)(Mo),
+        Ho = Uo.reduce(function (e, a) {
+          var n = Math.max.apply(Math, Ao)
           return (
             (e[a] = {
               aspectRatio: 1,
               image: { url: r[a], width: 36 * n, height: 36 * n },
-              customVariants: ko.map(function (e) {
+              customVariants: Ao.map(function (e) {
                 return { uri: r[a + (1 !== e ? ''.concat(e, 'x') : '')], width: 36 * e, height: 36 * e }
               }),
             }),
             e
           )
         }, {}),
-        xo = function (e) {
+        No = function (e) {
           var a = e.type,
             n = e.width,
             t = void 0 === n ? 36 : n,
-            r = Co[a],
+            r = Ho[a],
             l = r.aspectRatio,
             i = r.customVariants,
             o = r.image,
@@ -4801,7 +4816,7 @@
             }),
           )
         },
-        Ko = function (e) {
+        jo = function (e) {
           var a = e.children,
             n = e.childrenStyle,
             t = e.headline,
@@ -4809,18 +4824,18 @@
             l = e.rightControl
           return c.a.createElement(
             C.a,
-            { style: Lo.root },
-            r && c.a.createElement(xo, { type: r, width: 36 }),
+            { style: Wo.root },
+            r && c.a.createElement(No, { type: r, width: 36 }),
             c.a.createElement(
               C.a,
-              { style: Lo.header },
+              { style: Wo.header },
               c.a.createElement(
                 A.b,
                 {
                   accessibilityLevel: 3,
                   accessibilityRole: 'heading',
                   size: 'headline1',
-                  style: Lo.headline,
+                  style: Wo.headline,
                   weight: 'heavy',
                 },
                 t,
@@ -4830,7 +4845,7 @@
             c.a.createElement(C.a, { style: n }, a),
           )
         },
-        Lo = K.a.create(function (e) {
+        Wo = K.a.create(function (e) {
           return {
             root: {
               marginHorizontal: e.componentDimensions.gutterHorizontal,
@@ -4841,181 +4856,166 @@
             headline: { marginVertical: e.spaces.space12 },
           }
         }),
-        To = ['$refType'],
-        Po = p.a.a6777c1b,
-        Oo = p.a.a384fda0,
-        Do = p.a.i4313618,
-        Io = p.a.c0348963,
-        Bo = p.a.ic624ab2,
-        Ro = p.a.ifc9b709,
-        Vo = p.a.b08bbeb4,
-        zo = p.a.ia9c37c4,
-        Ao = p.a.fb1e4eb6,
-        Mo = p.a.be54a312,
-        Uo = p.a.cca48545,
-        Ho = p.a.de67bc6e,
-        jo = p.a.a46cead5,
-        Wo = p.a.idd8ae44,
-        No = p.a.b28a1b48,
-        Go = p.a.f2df375b,
-        qo = p.a.f3ce76c0,
-        Qo = p.a.i8982e7e,
-        Xo = p.a.ca5ca5ed,
-        Yo = p.a.abd845fd,
-        Jo = p.a.i859a9d3,
-        Zo = p.a.d14c7bbc,
-        $o = p.a.g867481d,
-        es = p.a.f66d24be,
-        as = p.a.g5925628,
-        ns = void 0 !== Tn ? Tn : (Tn = n('EM6u')),
-        ts = void 0 !== Pn ? Pn : (Pn = n('oNwH')),
-        rs = function (e) {
+        Go = ['$refType'],
+        qo = p.a.a6777c1b,
+        Qo = p.a.a384fda0,
+        Xo = p.a.i4313618,
+        Yo = p.a.c0348963,
+        Zo = p.a.ic624ab2,
+        Jo = p.a.ifc9b709,
+        $o = p.a.b08bbeb4,
+        es = p.a.ia9c37c4,
+        as = p.a.fb1e4eb6,
+        ns = p.a.be54a312,
+        ts = p.a.cca48545,
+        rs = p.a.de67bc6e,
+        ls = p.a.a46cead5,
+        is = p.a.idd8ae44,
+        os = p.a.b28a1b48,
+        ss = p.a.f2df375b,
+        cs = p.a.f3ce76c0,
+        us = p.a.i8982e7e,
+        ds = p.a.ca5ca5ed,
+        ps = p.a.abd845fd,
+        ms = p.a.i859a9d3,
+        gs = p.a.d14c7bbc,
+        fs = p.a.g867481d,
+        bs = p.a.f66d24be,
+        hs = p.a.g5925628,
+        ys = void 0 !== Vr ? Vr : (Vr = n('EM6u')),
+        ws = void 0 !== zr ? zr : (zr = n('oNwH')),
+        vs = function (e) {
           var a,
+            n,
             t,
-            r,
-            l = e.priceOfferings,
-            i = e.user,
-            o = Object(E.g)(),
-            s = Y()(ns, l),
-            u = (s.$refType, h()(s, To)),
-            d = Y()(ts, i),
-            p = Dl(d),
-            m = Il(d),
-            g =
-              null !==
-                (a = (function (e) {
-                  var a, t
-                  return null !==
-                    (a =
-                      null ===
-                        (t = Y()(void 0 !== vn ? vn : (vn = n('dGIC')), e).super_follow_creator_price_metadata) ||
-                      void 0 === t
-                        ? void 0
-                        : t.selected_price) && void 0 !== a
-                    ? a
-                    : void 0
-                })(d)) && void 0 !== a
-                ? a
-                : 'offer2',
-            f = null !== (t = d.legacy.profile_image_url_https) && void 0 !== t ? t : void 0,
-            b = null !== (r = d.legacy.screen_name) && void 0 !== r ? r : void 0,
-            y = c.a.createElement(il, {
-              label: Xo,
+            r = e.priceOfferings,
+            l = e.user,
+            i = Object(E.g)(),
+            o = Y()(ys, r),
+            s = (o.$refType, h()(o, Go)),
+            u = Y()(ws, l),
+            d = Ql(u),
+            p = Xl(u),
+            m = null !== (a = Yl(u)) && void 0 !== a ? a : 'offer2',
+            g = null !== (n = u.legacy.profile_image_url_https) && void 0 !== n ? n : void 0,
+            f = null !== (t = u.legacy.screen_name) && void 0 !== t ? t : void 0,
+            b = c.a.createElement(Sl, {
+              label: ds,
               path: '/settings/superfollows/management/perks_confirm',
               size: 'subtext1',
             }),
-            w = c.a.createElement(Q, {
-              label: Yo,
+            y = c.a.createElement(Q, {
+              label: ps,
               path: '/settings/superfollows/management/perks_intro',
               size: 'small',
               type: 'primaryOutlined',
             }),
-            k = c.a.createElement(Q, {
-              label: Yo,
+            w = c.a.createElement(Q, {
+              label: ps,
               path: '/settings/superfollows/management/perks_description',
               size: 'small',
               type: 'primaryOutlined',
             })
           return c.a.createElement(
-            si.a,
+            Fi.a,
             null,
             c.a.createElement(
-              ci.a,
-              { location: o, screenType: 'secondaryDetail', title: Po },
+              Ei.a,
+              { location: i, screenType: 'secondaryDetail', title: qo },
               c.a.createElement(
                 C.a,
-                { style: ls.title },
+                { style: Ss.title },
                 c.a.createElement(
                   A.b,
                   { accessibilityLevel: 2, accessibilityRole: 'heading', size: 'title3', weight: 'heavy' },
-                  Po,
+                  qo,
                 ),
-                c.a.createElement(di, null),
+                c.a.createElement(xi, null),
               ),
-              c.a.createElement(dl.a, null),
+              c.a.createElement(Cl.a, null),
               c.a.createElement(
-                Ko,
-                { childrenStyle: ls.benefits, headline: Oo, illustration: Fo.Ribbon, rightControl: y },
-                c.a.createElement(A.b, { color: 'gray700' }, Do),
+                jo,
+                { childrenStyle: Ss.benefits, headline: Qo, illustration: Mo.Ribbon, rightControl: b },
+                c.a.createElement(A.b, { color: 'gray700' }, Xo),
                 c.a.createElement(
-                  mi,
-                  { headline: Io, rightControl: w },
-                  c.a.createElement(jr, { imageUrl: f, screenName: b, value: p }),
+                  Pi,
+                  { headline: Yo, rightControl: y },
+                  c.a.createElement(ar, { imageUrl: g, screenName: f, value: d }),
                 ),
                 c.a.createElement(
-                  mi,
-                  { headline: Bo, rightControl: k },
-                  c.a.createElement(jr, { imageUrl: f, screenName: b, value: m }),
+                  Pi,
+                  { headline: Zo, rightControl: w },
+                  c.a.createElement(ar, { imageUrl: g, screenName: f, value: p }),
                 ),
-                c.a.createElement(mi, { headline: Ro }, c.a.createElement(A.b, { color: 'gray700' }, Vo)),
+                c.a.createElement(Pi, { headline: Jo }, c.a.createElement(A.b, { color: 'gray700' }, $o)),
               ),
-              c.a.createElement(dl.a, null),
+              c.a.createElement(Cl.a, null),
               c.a.createElement(
-                Ko,
-                { childrenStyle: ls.other, headline: zo, illustration: Fo.PiggyBank },
-                c.a.createElement(A.b, { color: 'gray700' }, Ao),
-                c.a.createElement(A.b, { size: 'headline2', weight: 'heavy' }, Mo({ price: u[g] })),
-                c.a.createElement(fi.a, { Icon: oi.a, action: { label: Jo, link: v }, headline: Uo, text: Ho }),
+                jo,
+                { childrenStyle: Ss.other, headline: es, illustration: Mo.PiggyBank },
+                c.a.createElement(A.b, { color: 'gray700' }, as),
+                c.a.createElement(A.b, { size: 'headline2', weight: 'heavy' }, ns({ price: s[m] })),
+                c.a.createElement(Di.a, { Icon: ki.a, action: { label: ms, link: S }, headline: ts, text: rs }),
               ),
-              c.a.createElement(dl.a, null),
+              c.a.createElement(Cl.a, null),
               c.a.createElement(
-                Ko,
-                { childrenStyle: ls.other, headline: jo, illustration: Fo.Chat },
-                c.a.createElement(A.b, { color: 'gray700' }, Wo),
+                jo,
+                { childrenStyle: Ss.other, headline: ls, illustration: Mo.Chat },
+                c.a.createElement(A.b, { color: 'gray700' }, is),
                 c.a.createElement(
                   C.a,
-                  { style: ls.buttons },
+                  { style: Ss.buttons },
                   c.a.createElement(
-                    S.a,
+                    _.a,
                     {
                       dominantColor: '#5865F2',
                       link: 'https://t.co/jPqvg6tFrDJG',
-                      style: ls.button,
+                      style: Ss.button,
                       type: 'onMediaDominantColorFilled',
                     },
-                    Zo,
+                    gs,
                   ),
                 ),
               ),
-              c.a.createElement(dl.a, null),
+              c.a.createElement(Cl.a, null),
               c.a.createElement(
-                Ko,
-                { childrenStyle: ls.other, headline: No, illustration: Fo.Lightbulb },
-                c.a.createElement(A.b, { color: 'gray700' }, Go),
+                jo,
+                { childrenStyle: Ss.other, headline: os, illustration: Mo.Lightbulb },
+                c.a.createElement(A.b, { color: 'gray700' }, ss),
                 c.a.createElement(
                   C.a,
-                  { style: ls.buttons },
+                  { style: Ss.buttons },
                   c.a.createElement(
-                    S.a,
-                    { link: 'https://t.co/RL2NN3bEVkes', style: ls.button, type: 'primaryOutlined' },
-                    $o,
+                    _.a,
+                    { link: 'https://t.co/RL2NN3bEVkes', style: Ss.button, type: 'primaryOutlined' },
+                    fs,
                   ),
                 ),
               ),
-              c.a.createElement(dl.a, null),
+              c.a.createElement(Cl.a, null),
               c.a.createElement(
-                Ko,
-                { childrenStyle: ls.other, headline: qo, illustration: Fo.LifeSaver },
-                c.a.createElement(A.b, { color: 'gray700' }, Qo),
+                jo,
+                { childrenStyle: Ss.other, headline: cs, illustration: Mo.LifeSaver },
+                c.a.createElement(A.b, { color: 'gray700' }, us),
                 c.a.createElement(
                   C.a,
-                  { style: ls.buttons },
-                  c.a.createElement(S.a, { link: _, style: ls.button, type: 'primaryOutlined' }, es),
+                  { style: Ss.buttons },
+                  c.a.createElement(_.a, { link: v, style: Ss.button, type: 'primaryOutlined' }, bs),
                   c.a.createElement(
-                    S.a,
+                    _.a,
                     {
                       link: 'https://help.twitter.com/forms/paid-features/superfollows',
-                      style: ls.button,
+                      style: Ss.button,
                       type: 'primaryOutlined',
                     },
-                    as,
+                    hs,
                   ),
                 ),
               ),
             ),
           )
         },
-        ls = K.a.create(function (e) {
+        Ss = K.a.create(function (e) {
           return {
             title: {
               alignItems: 'center',
@@ -5030,374 +5030,365 @@
             button: { flex: '1 1 '.concat(e.breakpoints.micro, 'px') },
           }
         }),
-        is = void 0 !== On ? On : (On = n('MXCg')),
-        os = void 0 !== Dn ? Dn : (Dn = n('mEFY')),
-        ss = void 0 !== In ? In : (In = n('d8Sa')),
-        cs = function (e) {
-          var a,
-            n,
-            t,
-            r,
-            l = e.priceOfferings,
-            i = e.user,
-            o = e.viewer,
-            s = c.a.useContext(I.a).featureSwitches,
-            u = Y()(is, l),
-            d = Y()(os, i),
-            p = Y()(ss, o),
-            m = null === (a = d.super_follow_creator_benefits) || void 0 === a ? void 0 : a.creator_intro,
-            g = (
-              null !==
-                (n =
-                  null == d || null === (t = d.super_follow_creator_benefits) || void 0 === t
-                    ? void 0
-                    : t.benefits_data) && void 0 !== n
-                ? n
-                : []
-            ).find(function (e) {
-              return 'ExclusiveContent' === e.benefit_type
-            })
+        _s = void 0 !== Ar ? Ar : (Ar = n('N6s9')),
+        ks = void 0 !== Mr ? Mr : (Mr = n('h3lO')),
+        Fs = function (e) {
+          var a = e.rootPath,
+            n = e.user,
+            t = e.viewer,
+            r = Y()(_s, n),
+            l = Y()(ks, t),
+            i = Ql(r),
+            o = Xl(r),
+            s = Yl(r),
+            u = ml(l),
+            d = gl(l),
+            p = fl(l),
+            m = br(l, 'creator_intro'),
+            g = br(l, 'description'),
+            f = br(l, 'selected_price')
+          return {
+            shouldBlockNavigation: c.a.useCallback(
+              function (e, n) {
+                return e.pathname === a && 'POP' === n && (u !== i || d !== o || p !== s)
+              },
+              [u, d, p, i, o, s, a],
+            ),
+            discardChanges: c.a.useCallback(
+              function () {
+                m(i), g(o), f(s)
+              },
+              [i, o, s, m, g, f],
+            ),
+          }
+        },
+        Es = void 0 !== Ur ? Ur : (Ur = n('MXCg')),
+        Cs = void 0 !== Hr ? Hr : (Hr = n('mEFY')),
+        xs = void 0 !== Nr ? Nr : (Nr = n('d8Sa')),
+        Ks = function (e) {
+          var a = e.priceOfferings,
+            n = e.user,
+            t = e.viewer,
+            r = c.a.useContext(I.a).featureSwitches,
+            l = Y()(Es, a),
+            i = Y()(Cs, n),
+            o = Y()(xs, t),
+            s = Ql(i),
+            u = Xl(i),
+            d = Yl(i),
+            p = Fs({ rootPath: '/settings/superfollows/management', user: i, viewer: o }),
+            m = p.discardChanges,
+            g = p.shouldBlockNavigation
           if (
-            (Xa(p, {
-              creator_intro: m,
-              description: null == g ? void 0 : g.description,
-              selected_price:
-                null === (r = d.super_follow_creator_price_metadata) || void 0 === r ? void 0 : r.selected_price,
-            }),
-            !s.isTrue('super_follow_web_edit_perks_enabled'))
+            (fr(o, { creator_intro: s, description: u, selected_price: d }),
+            !r.isTrue('super_follow_web_edit_perks_enabled'))
           )
             throw new Error('Super Follows management is not enabled')
-          return null == p.super_follows_onboarding_draft
-            ? c.a.createElement(D.a, { to: '/settings/superfollows' })
+          return null == o.super_follows_onboarding_draft
+            ? c.a.createElement(O.a, { to: '/settings/superfollows' })
             : c.a.createElement(
-                E.d,
+                c.a.Fragment,
                 null,
+                c.a.createElement(It, { onNavigation: m, shouldBlockNavigation: g }),
                 c.a.createElement(
-                  E.b,
-                  { exact: !0, path: '/settings/superfollows/management/perks_intro' },
-                  c.a.createElement(ii, { user: d, viewer: p }),
-                ),
-                c.a.createElement(
-                  E.b,
-                  { exact: !0, path: '/settings/superfollows/management/perks_description' },
-                  c.a.createElement(jl, { user: d, viewer: p }),
-                ),
-                c.a.createElement(
-                  E.b,
-                  { exact: !0, path: '/settings/superfollows/management/perks_confirm' },
-                  c.a.createElement(vl, { user: d, viewer: p }),
-                ),
-                c.a.createElement(
-                  E.b,
-                  { path: '/settings/superfollows/management' },
-                  c.a.createElement(rs, { priceOfferings: u, user: d }),
+                  E.d,
+                  null,
+                  c.a.createElement(
+                    E.b,
+                    { exact: !0, path: '/settings/superfollows/management/perks_intro' },
+                    c.a.createElement(_i, { user: i, viewer: o }),
+                  ),
+                  c.a.createElement(
+                    E.b,
+                    { exact: !0, path: '/settings/superfollows/management/perks_description' },
+                    c.a.createElement(li, { user: i, viewer: o }),
+                  ),
+                  c.a.createElement(
+                    E.b,
+                    { exact: !0, path: '/settings/superfollows/management/perks_confirm' },
+                    c.a.createElement(Rl, { user: i, viewer: o }),
+                  ),
+                  c.a.createElement(
+                    E.b,
+                    { path: '/settings/superfollows/management' },
+                    c.a.createElement(vs, { priceOfferings: l, user: i }),
+                  ),
                 ),
               )
         },
-        us = p.a.b422cb62,
-        ds = p.a.f08705e0,
-        ps = p.a.e2cd700f,
-        ms = p.a.fbfd7397,
-        gs = p.a.c1df579e,
-        fs = [
-          {
-            label: p.a.d8637c96,
-            test: function (e) {
-              var a,
-                n = null !== (a = e.viewer.super_follows_onboarding_draft) && void 0 !== a ? a : {},
-                t = n.creator_intro,
-                r = n.description
-              return !!t && !!r
-            },
-          },
-          {
-            label: p.a.b92892dc,
-            test: function (e) {
-              var a
-              return !(null === (a = e.viewer.super_follows_onboarding_draft) || void 0 === a || !a.selected_price)
-            },
-          },
-          {
-            label: p.a.b123a502,
-            test: function (e) {
-              return 'Completed' === e.user.stripe_account_status
-            },
-          },
-        ],
-        bs = void 0 !== Bn ? Bn : (Bn = n('wQp3')),
-        hs = void 0 !== Rn ? Rn : (Rn = n('tfBr')),
-        ys = function (e) {
-          var a = e.percentageComplete,
-            n = e.user,
-            t = e.viewer,
-            r = Y()(bs, n),
-            l = Y()(hs, t),
-            i = fs.map(function (e) {
-              return { label: e.label, checked: (0, e.test)({ user: r, viewer: l }) }
-            }),
-            o = i.some(function (e) {
-              return e.checked
-            }),
-            s = c.a.createElement(Q, {
-              label: gs,
-              path: '/settings/superfollows/onboarding/perks_intro',
-              size: 'small',
-              type: 'primaryFilled',
-            })
-          return c.a.createElement(
-            P,
-            {
-              leftControlShouldClose: !0,
-              percentageComplete: a,
-              rightControl: s,
-              withCenteredLogo: !0,
-              withInfoButton: !0,
-            },
-            c.a.createElement(
-              Fr,
-              { style: ws.interstitial },
-              c.a.createElement(Ne, {
-                headline: o ? ps : us,
-                illustration: o ? Ue.Puzzle : Ue.Cat,
-                subtext: o ? ms : ds,
-              }),
-            ),
-            c.a.createElement(Fr, { style: ws.checks }, c.a.createElement(H, { items: i })),
-          )
-        },
-        ws = K.a.create(function (e) {
-          return { interstitial: { marginTop: e.spaces.space32 }, checks: { marginVertical: e.spaces.space32 } }
-        }),
-        _s = ['style'],
-        vs = function (e) {
-          var a = e.style,
-            n = h()(e, _s)
-          return c.a.createElement(
-            Br,
-            { style: a },
-            c.a.createElement(Pr, f()({ style: Ss.exclusiveDemoVIPContentHeader }, n)),
-          )
-        },
-        Ss = K.a.create(function (e) {
-          return { exclusiveDemoVIPContentHeader: { alignSelf: 'center', marginBottom: e.spaces.space16 } }
-        }),
-        ks = p.a.cda6bb6d,
-        Fs = p.a.a15b98ec,
-        Es = void 0 !== Vn ? Vn : (Vn = n('mDly')),
-        Cs = function (e) {
-          var a = e.user,
-            n = Y()(Es, a)
-          return c.a.createElement(
-            c.a.Fragment,
-            null,
-            c.a.createElement(Fr, { style: xs.interstitial }, c.a.createElement(Ne, { headline: ks, subtext: Fs })),
-            c.a.createElement(dl.a, null),
-            c.a.createElement(
-              Fr,
-              { style: xs.previewCallout },
-              c.a.createElement(ul, { path: '/settings/superfollows/perks_preview' }),
-            ),
-            c.a.createElement(vs, { style: xs.preview, user: n }),
-          )
-        },
-        xs = K.a.create(function (e) {
-          return {
-            interstitial: { marginBottom: e.spaces.space28, marginTop: e.spaces.space32 },
-            previewCallout: { marginBottom: e.spaces.space4, marginTop: e.spaces.space20 },
-            preview: { margin: e.spaces.space16 },
-          }
-        }),
-        Ks = p.a.cd5cae15,
-        Ls = p.a.ad4a92a2,
-        Ts = p.a.c1df579e,
-        Ps = void 0 !== zn ? zn : (zn = n('QmjQ')),
-        Os = function (e) {
-          var a = e.percentageComplete,
-            n = e.user,
-            t = { label: Ts, path: '/settings/superfollows/onboarding/perks_confirm', type: 'primaryFilled' },
-            r = c.a.createElement(Q, t),
-            l = c.a.createElement(Q, f()({}, t, { size: 'small' })),
-            i = Y()(Ps, n)
-          return c.a.createElement(
-            P,
-            { percentageComplete: a, rightControl: l, subtitle: Ls, title: Ks },
-            c.a.createElement(Cs, { user: i }),
-            c.a.createElement(Fr, { style: Ds.buttons }, r),
-          )
-        },
-        Ds = K.a.create(function (e) {
-          return { buttons: { gap: e.spaces.space16, marginBottom: e.spaces.space32, marginTop: e.spaces.space16 } }
-        }),
-        Is = p.a.cd5cae15,
-        Bs = p.a.e18b7a71,
-        Rs = p.a.c1df579e,
-        Vs = void 0 !== An ? An : (An = n('Rthh')),
-        zs = void 0 !== Mn ? Mn : (Mn = n('aREQ')),
+        Ps = p.a.b422cb62,
+        Ls = p.a.f08705e0,
+        Ds = p.a.e2cd700f,
+        Ts = p.a.fbfd7397,
+        Os = p.a.c1df579e,
+        Is = p.a.d8637c96,
+        Bs = p.a.b92892dc,
+        Rs = p.a.b123a502,
+        Vs = void 0 !== jr ? jr : (jr = n('wQp3')),
+        zs = void 0 !== Wr ? Wr : (Wr = n('tfBr')),
         As = function (e) {
           var a = e.percentageComplete,
             n = e.user,
             t = e.viewer,
             r = Y()(Vs, n),
             l = Y()(zs, t),
-            i = { label: Rs, path: '/settings/superfollows/onboarding/pricing', type: 'primaryFilled' },
-            o = c.a.createElement(Q, i),
-            s = c.a.createElement(Q, f()({}, i, { size: 'small' }))
+            i = r.stripe_account_status,
+            o = ml(l),
+            s = gl(l),
+            u = fl(l),
+            d = [
+              { label: Is, checked: !!o && !!s },
+              { label: Bs, checked: !!u },
+              { label: Rs, checked: 'Completed' === i },
+            ],
+            p = d.some(function (e) {
+              return e.checked
+            }),
+            m = c.a.createElement(Q, {
+              label: Os,
+              path: '/settings/superfollows/onboarding/perks_intro',
+              size: 'small',
+              type: 'primaryFilled',
+            })
           return c.a.createElement(
-            P,
-            { percentageComplete: a, rightControl: s, subtitle: Bs, title: Is },
-            c.a.createElement(bl, { user: r, viewer: l }),
-            c.a.createElement(Fr, { style: Ms.buttons }, o),
+            D,
+            {
+              leftControlShouldClose: !0,
+              percentageComplete: a,
+              rightControl: m,
+              withCenteredLogo: !0,
+              withInfoButton: !0,
+            },
+            c.a.createElement(
+              Rt,
+              { style: Ms.interstitial },
+              c.a.createElement(We, {
+                headline: p ? Ds : Ps,
+                illustration: p ? Ue.Puzzle : Ue.Cat,
+                subtext: p ? Ts : Ls,
+              }),
+            ),
+            c.a.createElement(Rt, { style: Ms.checks }, c.a.createElement(H, { items: d })),
           )
         },
         Ms = K.a.create(function (e) {
-          return { buttons: { gap: e.spaces.space16, marginBottom: e.spaces.space32, marginTop: e.spaces.space16 } }
+          return { interstitial: { marginTop: e.spaces.space32 }, checks: { marginVertical: e.spaces.space32 } }
         }),
-        Us = p.a.cd5cae15,
-        Hs = p.a.e36287c6,
-        js = p.a.be76dc33,
-        Ws = p.a.c1df579e,
-        Ns = void 0 !== Un ? Un : (Un = n('6rkJ')),
-        Gs = void 0 !== Hn ? Hn : (Hn = n('tJ4s')),
-        qs = function (e) {
-          var a,
-            n,
-            t = e.percentageComplete,
-            r = e.user,
-            l = e.viewer,
-            i = c.a.useRef(),
-            o = Y()(Gs, l),
-            s = Y()(Ns, r),
-            u =
-              null !== (a = null === (n = o.super_follows_onboarding_draft) || void 0 === n ? void 0 : n.description) &&
-              void 0 !== a
-                ? a
-                : '',
-            d = u.length > 0 && u.length <= 140,
-            p = {
-              disabled: !d,
-              label: Ws,
-              path: '/settings/superfollows/onboarding/perks_badges',
-              type: 'primaryFilled',
-            },
-            m = c.a.createElement(Q, p),
-            g = c.a.createElement(Q, f()({}, p, { size: 'small' })),
-            b = {
-              children: js,
-              onClick: function () {
-                var e
-                null == i || null === (e = i.current) || void 0 === e || e.focus()
-              },
-              type: 'primaryFilled',
-            },
-            h = c.a.createElement(S.a, b),
-            y = c.a.createElement(S.a, f()({}, b, { size: 'small' }))
+        Us = ['style'],
+        Hs = function (e) {
+          var a = e.style,
+            n = h()(e, Us)
           return c.a.createElement(
-            P,
-            { percentageComplete: t, rightControl: d ? g : y, subtitle: Hs, title: Us },
-            c.a.createElement(Pl, { descriptionMaxLength: 140, ref: i, user: s, viewer: o }),
-            c.a.createElement(Fr, { style: Qs.buttons }, d ? m : h),
+            qt,
+            { style: a },
+            c.a.createElement(Nt, f()({ style: Ns.exclusiveDemoVIPContentHeader }, n)),
+          )
+        },
+        Ns = K.a.create(function (e) {
+          return { exclusiveDemoVIPContentHeader: { alignSelf: 'center', marginBottom: e.spaces.space16 } }
+        }),
+        js = p.a.cda6bb6d,
+        Ws = p.a.a15b98ec,
+        Gs = void 0 !== Gr ? Gr : (Gr = n('mDly')),
+        qs = function (e) {
+          var a = e.user,
+            n = Y()(Gs, a)
+          return c.a.createElement(
+            c.a.Fragment,
+            null,
+            c.a.createElement(Rt, { style: Qs.interstitial }, c.a.createElement(We, { headline: js, subtext: Ws })),
+            c.a.createElement(Cl.a, null),
+            c.a.createElement(
+              Rt,
+              { style: Qs.previewCallout },
+              c.a.createElement(El, { path: '/settings/superfollows/perks_preview' }),
+            ),
+            c.a.createElement(Hs, { style: Qs.preview, user: n }),
           )
         },
         Qs = K.a.create(function (e) {
-          return { buttons: { gap: e.spaces.space16, marginBottom: e.spaces.space32, marginTop: e.spaces.space16 } }
+          return {
+            interstitial: { marginBottom: e.spaces.space28, marginTop: e.spaces.space32 },
+            previewCallout: { marginBottom: e.spaces.space4, marginTop: e.spaces.space20 },
+            preview: { margin: e.spaces.space16 },
+          }
         }),
         Xs = p.a.cd5cae15,
-        Ys = p.a.c0348963,
-        Js = p.a.ef5406e3,
+        Ys = p.a.ad4a92a2,
         Zs = p.a.c1df579e,
-        $s = void 0 !== jn ? jn : (jn = n('02qo')),
-        ec = void 0 !== Wn ? Wn : (Wn = n('TXsE')),
-        ac = function (e) {
-          var a,
-            n,
-            t = e.percentageComplete,
-            r = e.user,
-            l = e.viewer,
-            i = c.a.useRef(),
-            o = Y()($s, r),
-            s = Y()(ec, l),
-            u =
-              null !==
-                (a = null === (n = s.super_follows_onboarding_draft) || void 0 === n ? void 0 : n.creator_intro) &&
-              void 0 !== a
-                ? a
-                : '',
-            d = u.length > 0 && u.length <= 140,
-            p = {
-              disabled: !d,
-              label: Zs,
-              path: '/settings/superfollows/onboarding/perks_description',
+        Js = void 0 !== qr ? qr : (qr = n('QmjQ')),
+        $s = function (e) {
+          var a = e.percentageComplete,
+            n = e.user,
+            t = { label: Zs, path: '/settings/superfollows/onboarding/perks_confirm', type: 'primaryFilled' },
+            r = c.a.createElement(Q, t),
+            l = c.a.createElement(Q, f()({}, t, { size: 'small' })),
+            i = Y()(Js, n)
+          return c.a.createElement(
+            D,
+            { percentageComplete: a, rightControl: l, subtitle: Ys, title: Xs },
+            c.a.createElement(qs, { user: i }),
+            c.a.createElement(Rt, { style: ec.buttons }, r),
+          )
+        },
+        ec = K.a.create(function (e) {
+          return { buttons: { gap: e.spaces.space16, marginBottom: e.spaces.space32, marginTop: e.spaces.space16 } }
+        }),
+        ac = p.a.cd5cae15,
+        nc = p.a.e18b7a71,
+        tc = p.a.c1df579e,
+        rc = void 0 !== Qr ? Qr : (Qr = n('Rthh')),
+        lc = void 0 !== Xr ? Xr : (Xr = n('aREQ')),
+        ic = function (e) {
+          var a = e.percentageComplete,
+            n = e.user,
+            t = e.viewer,
+            r = Y()(rc, n),
+            l = Y()(lc, t),
+            i = { label: tc, path: '/settings/superfollows/onboarding/pricing', type: 'primaryFilled' },
+            o = c.a.createElement(Q, i),
+            s = c.a.createElement(Q, f()({}, i, { size: 'small' }))
+          return c.a.createElement(
+            D,
+            { percentageComplete: a, rightControl: s, subtitle: nc, title: ac },
+            c.a.createElement(Dl, { user: r, viewer: l }),
+            c.a.createElement(Rt, { style: oc.buttons }, o),
+          )
+        },
+        oc = K.a.create(function (e) {
+          return { buttons: { gap: e.spaces.space16, marginBottom: e.spaces.space32, marginTop: e.spaces.space16 } }
+        }),
+        sc = p.a.cd5cae15,
+        cc = p.a.e36287c6,
+        uc = p.a.be76dc33,
+        dc = p.a.c1df579e,
+        pc = void 0 !== Yr ? Yr : (Yr = n('6rkJ')),
+        mc = void 0 !== Zr ? Zr : (Zr = n('tJ4s')),
+        gc = function (e) {
+          var a = e.percentageComplete,
+            n = e.user,
+            t = e.viewer,
+            r = c.a.useRef(),
+            l = Y()(mc, t),
+            i = Y()(pc, n),
+            o = gl(l),
+            s = o.length > 0 && o.length <= 140,
+            u = {
+              disabled: !s,
+              label: dc,
+              path: '/settings/superfollows/onboarding/perks_badges',
               type: 'primaryFilled',
             },
-            m = c.a.createElement(Q, p),
-            g = c.a.createElement(Q, f()({}, p, { size: 'small' })),
-            b = {
-              children: Js,
+            d = c.a.createElement(Q, u),
+            p = c.a.createElement(Q, f()({}, u, { size: 'small' })),
+            m = {
+              children: uc,
               onClick: function () {
                 var e
-                null == i || null === (e = i.current) || void 0 === e || e.focus()
+                null == r || null === (e = r.current) || void 0 === e || e.focus()
               },
               type: 'primaryFilled',
             },
-            h = c.a.createElement(S.a, b),
-            y = c.a.createElement(S.a, f()({}, b, { size: 'small' }))
+            g = c.a.createElement(_.a, m),
+            b = c.a.createElement(_.a, f()({}, m, { size: 'small' }))
           return c.a.createElement(
-            P,
-            { percentageComplete: t, rightControl: d ? g : y, subtitle: Ys, title: Xs },
-            c.a.createElement($l, { introMaxLength: 140, ref: i, user: o, viewer: s }),
-            c.a.createElement(Fr, { style: nc.buttons }, d ? m : h),
+            D,
+            { percentageComplete: a, rightControl: s ? p : b, subtitle: cc, title: sc },
+            c.a.createElement(Gl, { descriptionMaxLength: 140, ref: r, user: i, viewer: l }),
+            c.a.createElement(Rt, { style: fc.buttons }, s ? d : g),
           )
         },
-        nc = K.a.create(function (e) {
+        fc = K.a.create(function (e) {
           return { buttons: { gap: e.spaces.space16, marginBottom: e.spaces.space32, marginTop: e.spaces.space16 } }
         }),
-        tc = ['$refType'],
-        rc = p.a.ea8a3d2d,
-        lc = p.a.f77bb178,
-        ic = p.a.cd75a5d4,
-        oc = p.a.g9677c6d,
-        sc = p.a.abd845fd,
-        cc = void 0 !== Nn ? Nn : (Nn = n('IeZm')),
-        uc = void 0 !== Gn ? Gn : (Gn = n('7ESn')),
-        dc = void 0 !== qn ? qn : (qn = n('By/j')),
-        pc = function (e) {
-          var a,
-            n,
-            t,
-            r = e.percentageComplete,
-            l = e.priceOfferings,
-            i = e.viewer,
-            o = Y()(cc, l),
-            s = (o.$refType, h()(o, tc)),
-            u = Y()(uc, i).super_follows_onboarding_draft,
-            d = null !== (a = null == u ? void 0 : u.creator_intro) && void 0 !== a ? a : '',
-            p = null !== (n = null == u ? void 0 : u.description) && void 0 !== n ? n : '',
-            m = null !== (t = null == u ? void 0 : u.selected_price) && void 0 !== t ? t : s[0],
-            g = Jt()(dc),
-            f = G()(g, 2),
-            b = f[0],
-            y = f[1]
+        bc = p.a.cd5cae15,
+        hc = p.a.c0348963,
+        yc = p.a.ef5406e3,
+        wc = p.a.c1df579e,
+        vc = void 0 !== Jr ? Jr : (Jr = n('02qo')),
+        Sc = void 0 !== $r ? $r : ($r = n('TXsE')),
+        _c = function (e) {
+          var a = e.percentageComplete,
+            n = e.user,
+            t = e.viewer,
+            r = c.a.useRef(),
+            l = Y()(vc, n),
+            i = Y()(Sc, t),
+            o = ml(i),
+            s = o.length > 0 && o.length <= 140,
+            u = {
+              disabled: !s,
+              label: wc,
+              path: '/settings/superfollows/onboarding/perks_description',
+              type: 'primaryFilled',
+            },
+            d = c.a.createElement(Q, u),
+            p = c.a.createElement(Q, f()({}, u, { size: 'small' })),
+            m = {
+              children: yc,
+              onClick: function () {
+                var e
+                null == r || null === (e = r.current) || void 0 === e || e.focus()
+              },
+              type: 'primaryFilled',
+            },
+            g = c.a.createElement(_.a, m),
+            b = c.a.createElement(_.a, f()({}, m, { size: 'small' }))
           return c.a.createElement(
-            P,
-            { percentageComplete: r, title: rc, withInfoButton: !0 },
+            D,
+            { percentageComplete: a, rightControl: s ? p : b, subtitle: hc, title: bc },
+            c.a.createElement(fi, { introMaxLength: 140, ref: r, user: l, viewer: i }),
+            c.a.createElement(Rt, { style: kc.buttons }, s ? d : g),
+          )
+        },
+        kc = K.a.create(function (e) {
+          return { buttons: { gap: e.spaces.space16, marginBottom: e.spaces.space32, marginTop: e.spaces.space16 } }
+        }),
+        Fc = ['$refType'],
+        Ec = p.a.ea8a3d2d,
+        Cc = p.a.f77bb178,
+        xc = p.a.cd75a5d4,
+        Kc = p.a.g9677c6d,
+        Pc = p.a.abd845fd,
+        Lc = void 0 !== el ? el : (el = n('IeZm')),
+        Dc = void 0 !== al ? al : (al = n('7ESn')),
+        Tc = void 0 !== nl ? nl : (nl = n('By/j')),
+        Oc = function (e) {
+          var a,
+            n = e.percentageComplete,
+            t = e.priceOfferings,
+            r = e.viewer,
+            l = Y()(Lc, t),
+            i = (l.$refType, h()(l, Fc)),
+            o = Y()(Dc, r),
+            s = ml(o),
+            u = gl(o),
+            d = null !== (a = fl(o)) && void 0 !== a ? a : i[0],
+            p = tt()(Tc),
+            m = G()(p, 2),
+            g = m[0],
+            f = m[1]
+          return c.a.createElement(
+            D,
+            { percentageComplete: n, title: Ec, withInfoButton: !0 },
             c.a.createElement(
-              Fr,
-              { style: mc.interstitial },
-              c.a.createElement(Ne, { headline: lc({ price: s[m] }), illustration: Ue.Pricing, subtext: ic }),
+              Rt,
+              { style: Ic.interstitial },
+              c.a.createElement(We, { headline: Cc({ price: i[d] }), illustration: Ue.Pricing, subtext: xc }),
             ),
             c.a.createElement(
-              Fr,
-              { style: mc.buttons },
+              Rt,
+              { style: Ic.buttons },
               c.a.createElement(Q, {
-                disabled: y,
-                label: oc,
+                disabled: f,
+                label: Kc,
                 onPress: function () {
                   return new Promise(function (e, a) {
-                    b({
+                    g({
                       variables: {
-                        creator_intro: d,
-                        benefits_data: [{ benefit_type: 'ExclusiveContent', title: '', description: p }],
-                        selected_price: m,
+                        creator_intro: s,
+                        benefits_data: [{ benefit_type: 'ExclusiveContent', title: '', description: u }],
+                        selected_price: d,
                       },
                       onCompleted: function (a, n) {
                         return e()
@@ -5410,131 +5401,130 @@
                 type: 'primaryFilled',
               }),
               c.a.createElement(Q, {
-                disabled: y,
-                label: sc,
+                disabled: f,
+                label: Pc,
                 path: '/settings/superfollows/onboarding/pricing',
                 type: 'primaryOutlined',
               }),
             ),
           )
         },
-        mc = K.a.create(function (e) {
+        Ic = K.a.create(function (e) {
           return {
             interstitial: { marginTop: e.spaces.space32 },
             buttons: { marginTop: e.spaces.space32, gap: e.spaces.space16 },
           }
         }),
-        gc = (n('+KXO'), n('7xRU'), n('hznd')),
-        fc = ['$refType'],
-        bc = p.a.ea8a3d2d,
-        hc = p.a.ic9124bf,
-        yc = p.a.g5923869,
-        wc = {
+        Bc = (n('+KXO'), n('7xRU'), n('hznd')),
+        Rc = ['$refType'],
+        Vc = p.a.ea8a3d2d,
+        zc = p.a.ic9124bf,
+        Ac = p.a.g5923869,
+        Mc = {
           offer1: [p.a.f025ab39, p.a.c5602dfd],
           offer2: [p.a.ib075804, p.a.j8a72f06],
           offer3: [p.a.c246656e, p.a.a92ab16c],
         },
-        _c = p.a.c1df579e,
-        vc = void 0 !== Qn ? Qn : (Qn = n('5jO1')),
-        Sc = void 0 !== Xn ? Xn : (Xn = n('mKqc')),
-        kc = function (e) {
+        Uc = p.a.c1df579e,
+        Hc = void 0 !== tl ? tl : (tl = n('5jO1')),
+        Nc = void 0 !== rl ? rl : (rl = n('mKqc')),
+        jc = function (e) {
           var a = e.percentageComplete,
             n = e.priceOfferings,
             t = e.viewer,
-            r = Y()(vc, n),
-            l = (r.$refType, h()(r, fc)),
-            i = Y()(Sc, t),
-            o = i.super_follows_onboarding_draft,
-            s = null == o ? void 0 : o.selected_price,
-            u = Ja(i, 'selected_price'),
-            d = c.a.createElement(
+            r = Y()(Hc, n),
+            l = (r.$refType, h()(r, Rc)),
+            i = Y()(Nc, t),
+            o = fl(i),
+            s = br(i, 'selected_price'),
+            u = c.a.createElement(
               p.a.I18NFormatMessage,
               { $i18n: 'geee69de' },
-              c.a.createElement(A.b, { link: _ }, p.a.c336b06a),
+              c.a.createElement(A.b, { link: v }, p.a.c336b06a),
             ),
-            m = Object.keys(l).map(function (e) {
-              return { label: yc({ price: l[e] }), value: e, helpText: wc[e].join(' ') }
+            d = Object.keys(l).map(function (e) {
+              return { label: Ac({ price: l[e] }), value: e, helpText: Mc[e].join(' ') }
             }),
-            g = c.a.createElement(Q, {
-              disabled: !s,
-              label: _c,
+            m = c.a.createElement(Q, {
+              disabled: !o,
+              label: Uc,
               path: '/settings/superfollows/onboarding/pricing_confirm',
               size: 'small',
               type: 'primaryFilled',
             })
           return c.a.createElement(
-            P,
-            { percentageComplete: a, rightControl: g, title: bc, withInfoButton: !0 },
-            c.a.createElement(Fr, { style: Fc.interstitial }, c.a.createElement(Ne, { headline: hc, subtext: d })),
+            D,
+            { percentageComplete: a, rightControl: m, title: Vc, withInfoButton: !0 },
+            c.a.createElement(Rt, { style: Wc.interstitial }, c.a.createElement(We, { headline: zc, subtext: u })),
             c.a.createElement(
-              Fr,
-              { style: Fc.prices },
-              c.a.createElement(gc.a, {
-                accessibilityLabel: hc,
+              Rt,
+              { style: Wc.prices },
+              c.a.createElement(Bc.a, {
+                accessibilityLabel: zc,
                 name: 'selectedPrice',
                 onChange: function (e, a) {
-                  u(a)
+                  s(a)
                 },
-                options: m,
-                value: s,
+                options: d,
+                value: o,
               }),
             ),
           )
         },
-        Fc = K.a.create(function (e) {
+        Wc = K.a.create(function (e) {
           return {
             interstitial: { marginTop: e.spaces.space32 },
             prices: { marginBottom: e.spaces.space32, marginTop: e.spaces.space28 },
           }
         }),
-        Ec = p.a.f1cb36b8,
-        Cc = p.a.e20f6661,
-        xc = p.a.a9ee1ecc,
-        Kc = p.a.b772cd65,
-        Lc = function (e) {
+        Gc = p.a.f1cb36b8,
+        qc = p.a.e20f6661,
+        Qc = p.a.a9ee1ecc,
+        Xc = p.a.b772cd65,
+        Yc = function (e) {
           var a = e.percentageComplete
           return c.a.createElement(
-            P,
-            { leftControlShouldClose: !0, percentageComplete: a, title: Ec, withInfoButton: !0 },
+            D,
+            { leftControlShouldClose: !0, percentageComplete: a, title: Gc, withInfoButton: !0 },
             c.a.createElement(
-              Fr,
-              { style: Tc.interstitial },
-              c.a.createElement(Ne, { headline: Cc, illustration: Ue.Thumbsup, subtext: xc }),
+              Rt,
+              { style: Zc.interstitial },
+              c.a.createElement(We, { headline: qc, illustration: Ue.Thumbsup, subtext: Qc }),
             ),
             c.a.createElement(
-              Fr,
-              { style: Tc.buttons },
-              c.a.createElement(Q, { label: Kc, path: '/settings/monetization', type: 'primaryFilled' }),
+              Rt,
+              { style: Zc.buttons },
+              c.a.createElement(Q, { label: Xc, path: '/settings/monetization', type: 'primaryFilled' }),
             ),
           )
         },
-        Tc = K.a.create(function (e) {
+        Zc = K.a.create(function (e) {
           return {
             interstitial: { marginTop: e.spaces.space32 },
             buttons: { gap: e.spaces.space16, marginVertical: e.spaces.space32 },
           }
         }),
-        Pc = p.a.e2cd700f,
-        Oc = p.a.d6bfb60c,
-        Dc = p.a.b9cbb370,
-        Ic = function () {
+        Jc = p.a.e2cd700f,
+        $c = p.a.d6bfb60c,
+        eu = p.a.b9cbb370,
+        au = function () {
           return c.a.createElement(
-            P,
+            D,
             { withInfoButton: !0 },
-            c.a.createElement(Ne, { headline: Pc, illustration: Ue.Puzzle, subtext: Oc }),
-            c.a.createElement(Q, { label: Dc, path: '/settings/superfollows/onboarding/stripe_setup' }),
+            c.a.createElement(We, { headline: Jc, illustration: Ue.Puzzle, subtext: $c }),
+            c.a.createElement(Q, { label: eu, path: '/settings/superfollows/onboarding/stripe_setup' }),
           )
         },
-        Bc = n('8jkQ'),
-        Rc = p.a.f1cb36b8,
-        Vc = p.a.ja884230,
-        zc = p.a.af1b808d,
-        Ac = p.a.fe339750,
-        Mc = p.a.j912510a,
-        Uc = void 0 !== Yn ? Yn : (Yn = n('xHLM')),
-        Hc = function (e) {
+        nu = n('8jkQ'),
+        tu = p.a.f1cb36b8,
+        ru = p.a.ja884230,
+        lu = p.a.af1b808d,
+        iu = p.a.fe339750,
+        ou = p.a.j912510a,
+        su = void 0 !== ll ? ll : (ll = n('xHLM')),
+        cu = function (e) {
           var a = e.percentageComplete,
-            n = Jt()(Uc),
+            n = tt()(su),
             t = G()(n, 2),
             r = t[0],
             l = t[1],
@@ -5543,191 +5533,181 @@
                 variables: {},
                 onCompleted: function (e, a) {
                   var n = e.stripe_account_create_onboarding_url
-                  n && Bc.b.navigateTo(n)
+                  n && nu.b.navigateTo(n)
                 },
               })
             }
           return c.a.createElement(
-            P,
-            { percentageComplete: a, title: Rc, withInfoButton: !0 },
+            D,
+            { percentageComplete: a, title: tu, withInfoButton: !0 },
             c.a.createElement(
-              Fr,
-              { style: jc.interstitial },
-              c.a.createElement(Ne, { headline: Vc, illustration: Ue.CoinStairs, subtext: zc }),
+              Rt,
+              { style: uu.interstitial },
+              c.a.createElement(We, { headline: ru, illustration: Ue.CoinStairs, subtext: lu }),
             ),
             c.a.createElement(
-              Fr,
-              { style: jc.buttons },
-              c.a.createElement(S.a, { disabled: l, onPress: i, type: 'primaryFilled' }, Ac),
-              c.a.createElement(S.a, { disabled: l, onPress: i, type: 'primaryOutlined' }, Mc),
+              Rt,
+              { style: uu.buttons },
+              c.a.createElement(_.a, { disabled: l, onPress: i, type: 'primaryFilled' }, iu),
+              c.a.createElement(_.a, { disabled: l, onPress: i, type: 'primaryOutlined' }, ou),
             ),
           )
         },
-        jc = K.a.create(function (e) {
+        uu = K.a.create(function (e) {
           return {
             interstitial: { marginTop: e.spaces.space32 },
             buttons: { gap: e.spaces.space16, marginVertical: e.spaces.space32 },
           }
         }),
-        Wc = void 0 !== Jn ? Jn : (Jn = n('UNVS')),
-        Nc = void 0 !== Zn ? Zn : (Zn = n('6byF')),
-        Gc = void 0 !== $n ? $n : ($n = n('dNhZ')),
-        qc = function (e) {
+        du = void 0 !== il ? il : (il = n('UNVS')),
+        pu = void 0 !== ol ? ol : (ol = n('6byF')),
+        mu = void 0 !== sl ? sl : (sl = n('dNhZ')),
+        gu = function (e) {
           return e / 8
         },
-        Qc = function (e) {
-          var a,
-            n,
-            t,
-            r,
-            l = e.priceOfferings,
-            i = e.user,
-            o = e.viewer,
-            s = c.a.useContext(I.a).featureSwitches,
-            u = Y()(Wc, l),
-            d = Y()(Nc, i),
-            p = Y()(Gc, o),
-            m = null === (a = d.super_follow_creator_benefits) || void 0 === a ? void 0 : a.creator_intro,
-            g = (
-              null !==
-                (n =
-                  null == d || null === (t = d.super_follow_creator_benefits) || void 0 === t
-                    ? void 0
-                    : t.benefits_data) && void 0 !== n
-                ? n
-                : []
-            ).find(function (e) {
-              return 'ExclusiveContent' === e.benefit_type
-            })
+        fu = function (e) {
+          var a = e.priceOfferings,
+            n = e.user,
+            t = e.viewer,
+            r = c.a.useContext(I.a).featureSwitches,
+            l = Y()(du, a),
+            i = Y()(pu, n),
+            o = Y()(mu, t),
+            s = Ql(i),
+            u = Xl(i),
+            d = Yl(i),
+            p = Fs({ rootPath: '/settings/monetization', user: i, viewer: o }),
+            m = p.discardChanges,
+            g = p.shouldBlockNavigation
           if (
-            (Xa(p, {
-              creator_intro: m,
-              description: null == g ? void 0 : g.description,
-              selected_price:
-                null === (r = d.super_follow_creator_price_metadata) || void 0 === r ? void 0 : r.selected_price,
-            }),
-            !s.isTrue('super_follow_web_onboarding_enabled'))
+            (fr(o, { creator_intro: s, description: u, selected_price: d }),
+            !r.isTrue('super_follow_web_onboarding_enabled'))
           )
             throw new Error('Super Follows onboarding is not enabled')
-          return null == p.super_follows_onboarding_draft
-            ? c.a.createElement(D.a, { to: '/settings/superfollows' })
+          return null == o.super_follows_onboarding_draft
+            ? c.a.createElement(O.a, { to: '/settings/superfollows' })
             : c.a.createElement(
-                E.d,
+                c.a.Fragment,
                 null,
+                c.a.createElement(It, { onNavigation: m, shouldBlockNavigation: g }),
                 c.a.createElement(
-                  E.b,
-                  { exact: !0, path: '/settings/superfollows/onboarding/perks_intro' },
-                  c.a.createElement(ac, { percentageComplete: qc(1), user: d, viewer: p }),
-                ),
-                c.a.createElement(
-                  E.b,
-                  { exact: !0, path: '/settings/superfollows/onboarding/perks_description' },
-                  c.a.createElement(qs, { percentageComplete: qc(2), user: d, viewer: p }),
-                ),
-                c.a.createElement(
-                  E.b,
-                  { exact: !0, path: '/settings/superfollows/onboarding/perks_badges' },
-                  c.a.createElement(Os, { percentageComplete: qc(3), user: d }),
-                ),
-                c.a.createElement(
-                  E.b,
-                  { exact: !0, path: '/settings/superfollows/onboarding/perks_confirm' },
-                  c.a.createElement(As, { percentageComplete: qc(4), user: d, viewer: p }),
-                ),
-                c.a.createElement(
-                  E.b,
-                  { exact: !0, path: '/settings/superfollows/onboarding/pricing' },
-                  c.a.createElement(kc, { percentageComplete: qc(5), priceOfferings: u, viewer: p }),
-                ),
-                c.a.createElement(
-                  E.b,
-                  { exact: !0, path: '/settings/superfollows/onboarding/pricing_confirm' },
-                  c.a.createElement(pc, { percentageComplete: qc(6), priceOfferings: u, viewer: p }),
-                ),
-                c.a.createElement(
-                  E.b,
-                  { exact: !0, path: '/settings/superfollows/onboarding/stripe_setup' },
-                  c.a.createElement(Hc, { percentageComplete: qc(7) }),
-                ),
-                c.a.createElement(
-                  E.b,
-                  { exact: !0, path: '/settings/superfollows/onboarding/stripe_incomplete' },
-                  c.a.createElement(Ic, null),
-                ),
-                c.a.createElement(
-                  E.b,
-                  { exact: !0, path: '/settings/superfollows/onboarding/stripe_completed' },
-                  c.a.createElement(Lc, { percentageComplete: qc(8) }),
-                ),
-                c.a.createElement(
-                  E.b,
-                  { path: '/settings/superfollows/onboarding' },
-                  c.a.createElement(ys, { percentageComplete: qc(0), user: d, viewer: p }),
+                  E.d,
+                  null,
+                  c.a.createElement(
+                    E.b,
+                    { exact: !0, path: '/settings/superfollows/onboarding/perks_intro' },
+                    c.a.createElement(_c, { percentageComplete: gu(1), user: i, viewer: o }),
+                  ),
+                  c.a.createElement(
+                    E.b,
+                    { exact: !0, path: '/settings/superfollows/onboarding/perks_description' },
+                    c.a.createElement(gc, { percentageComplete: gu(2), user: i, viewer: o }),
+                  ),
+                  c.a.createElement(
+                    E.b,
+                    { exact: !0, path: '/settings/superfollows/onboarding/perks_badges' },
+                    c.a.createElement($s, { percentageComplete: gu(3), user: i }),
+                  ),
+                  c.a.createElement(
+                    E.b,
+                    { exact: !0, path: '/settings/superfollows/onboarding/perks_confirm' },
+                    c.a.createElement(ic, { percentageComplete: gu(4), user: i, viewer: o }),
+                  ),
+                  c.a.createElement(
+                    E.b,
+                    { exact: !0, path: '/settings/superfollows/onboarding/pricing' },
+                    c.a.createElement(jc, { percentageComplete: gu(5), priceOfferings: l, viewer: o }),
+                  ),
+                  c.a.createElement(
+                    E.b,
+                    { exact: !0, path: '/settings/superfollows/onboarding/pricing_confirm' },
+                    c.a.createElement(Oc, { percentageComplete: gu(6), priceOfferings: l, viewer: o }),
+                  ),
+                  c.a.createElement(
+                    E.b,
+                    { exact: !0, path: '/settings/superfollows/onboarding/stripe_setup' },
+                    c.a.createElement(cu, { percentageComplete: gu(7) }),
+                  ),
+                  c.a.createElement(
+                    E.b,
+                    { exact: !0, path: '/settings/superfollows/onboarding/stripe_incomplete' },
+                    c.a.createElement(au, null),
+                  ),
+                  c.a.createElement(
+                    E.b,
+                    { exact: !0, path: '/settings/superfollows/onboarding/stripe_completed' },
+                    c.a.createElement(Yc, { percentageComplete: gu(8) }),
+                  ),
+                  c.a.createElement(
+                    E.b,
+                    { path: '/settings/superfollows/onboarding' },
+                    c.a.createElement(As, { percentageComplete: gu(0), user: i, viewer: o }),
+                  ),
                 ),
               )
         },
-        Xc = p.a.ebfb897c,
-        Yc = p.a.dc4feb19,
-        Jc = p.a.c183d271,
-        Zc = p.a.ic130fd5,
-        $c = p.a.dd913e24,
-        eu = p.a.h580543e,
-        au = function () {
+        bu = p.a.ebfb897c,
+        hu = p.a.dc4feb19,
+        yu = p.a.c183d271,
+        wu = p.a.ic130fd5,
+        vu = p.a.dd913e24,
+        Su = p.a.h580543e,
+        _u = function () {
           return c.a.createElement(
-            P,
-            { title: Xc },
-            c.a.createElement(Fr, { style: nu.interstitial }, c.a.createElement(Ne, { headline: Yc, subtext: Jc })),
+            D,
+            { title: bu },
+            c.a.createElement(Rt, { style: ku.interstitial }, c.a.createElement(We, { headline: hu, subtext: yu })),
             c.a.createElement(
-              Fr,
-              { style: nu.exampleDescriptions },
-              c.a.createElement(dl.a, null),
-              c.a.createElement(jr, { value: Zc }),
-              c.a.createElement(dl.a, null),
-              c.a.createElement(jr, { value: $c }),
-              c.a.createElement(dl.a, null),
-              c.a.createElement(jr, { value: eu }),
+              Rt,
+              { style: ku.exampleDescriptions },
+              c.a.createElement(Cl.a, null),
+              c.a.createElement(ar, { value: wu }),
+              c.a.createElement(Cl.a, null),
+              c.a.createElement(ar, { value: vu }),
+              c.a.createElement(Cl.a, null),
+              c.a.createElement(ar, { value: Su }),
             ),
           )
         },
-        nu = K.a.create(function (e) {
+        ku = K.a.create(function (e) {
           return {
             interstitial: { marginTop: e.spaces.space32 },
             exampleDescriptions: { gap: e.spaces.space32, marginVertical: e.spaces.space36 },
           }
         }),
-        tu = n('JWc1'),
-        ru = p.a.ebfb897c,
-        lu = p.a.dc4feb19,
-        iu = p.a.a0bb2076,
-        ou = p.a.ace46d40,
-        su = p.a.h2c4511f,
-        cu = p.a.hbe4f99e,
-        uu = K.a.create(function (e) {
+        Fu = n('JWc1'),
+        Eu = p.a.ebfb897c,
+        Cu = p.a.dc4feb19,
+        xu = p.a.a0bb2076,
+        Ku = p.a.ace46d40,
+        Pu = p.a.h2c4511f,
+        Lu = p.a.hbe4f99e,
+        Du = K.a.create(function (e) {
           return {
             interstitial: { marginTop: e.spaces.space32 },
             exampleIntros: { gap: e.spaces.space24, marginVertical: e.spaces.space36 },
           }
         }),
-        du = function () {
+        Tu = function () {
           return c.a.createElement(
-            P,
-            { title: ru },
-            c.a.createElement(Fr, { style: uu.interstitial }, c.a.createElement(Ne, { headline: lu, subtext: iu })),
+            D,
+            { title: Eu },
+            c.a.createElement(Rt, { style: Du.interstitial }, c.a.createElement(We, { headline: Cu, subtext: xu })),
             c.a.createElement(
-              Fr,
-              { style: uu.exampleIntros },
-              c.a.createElement(tu.a, { value: ou }),
-              c.a.createElement(tu.a, { value: su }),
-              c.a.createElement(tu.a, { value: cu }),
+              Rt,
+              { style: Du.exampleIntros },
+              c.a.createElement(Fu.a, { value: Ku }),
+              c.a.createElement(Fu.a, { value: Pu }),
+              c.a.createElement(Fu.a, { value: Lu }),
             ),
           )
         },
-        pu = n('VTDR'),
-        mu = n('a2Fh'),
-        gu = p.a.hf6f2913,
-        fu = p.a.fb278c81,
-        bu = p.a.e6b60e94,
-        hu = K.a.create(function (e) {
+        Ou = n('VTDR'),
+        Iu = n('a2Fh'),
+        Bu = p.a.hf6f2913,
+        Ru = p.a.fb278c81,
+        Vu = p.a.e6b60e94,
+        zu = K.a.create(function (e) {
           return {
             interstitial: { marginTop: e.spaces.space32 },
             preview: {
@@ -5738,35 +5718,35 @@
             subheader: { marginTop: e.spaces.space8 },
           }
         }),
-        yu = function () {
+        Au = function () {
           return c.a.createElement(
-            P,
-            { title: gu },
-            c.a.createElement(Fr, { style: hu.interstitial }, c.a.createElement(Ne, { headline: fu, subtext: bu })),
+            D,
+            { title: Bu },
+            c.a.createElement(Rt, { style: zu.interstitial }, c.a.createElement(We, { headline: Ru, subtext: Vu })),
             c.a.createElement(
-              Br,
-              { style: hu.preview },
+              qt,
+              { style: zu.preview },
               c.a.createElement(
-                pu.a,
+                Ou.a,
                 null,
-                c.a.createElement(mu.a, {
+                c.a.createElement(Iu.a, {
                   color: 'text',
                   lineHeightPx: 30,
                   wordHeightPx: 7,
                   wordPercentWidths: [18, 17],
                   wordSpacingPx: 15,
                 }),
-                c.a.createElement(mu.a, {
+                c.a.createElement(Iu.a, {
                   color: 'text',
                   lineHeightPx: 30,
                   wordHeightPx: 7,
                   wordPercentWidths: [17, 20],
                   wordSpacingPx: 15,
                 }),
-                c.a.createElement(mu.a, {
+                c.a.createElement(Iu.a, {
                   color: 'text',
                   lineHeightPx: 20,
-                  style: hu.subheader,
+                  style: zu.subheader,
                   withBorderRadius: !0,
                   withLineWrap: !0,
                   wordHeightPx: 5,
@@ -5776,70 +5756,70 @@
             ),
           )
         },
-        wu = p.a.aa7e35ed,
-        _u = p.a.f67e69bf,
-        vu = function () {
+        Mu = p.a.aa7e35ed,
+        Uu = p.a.f67e69bf,
+        Hu = function () {
           if (!c.a.useContext(I.a).featureSwitches.isTrue('super_follow_web_application_enabled'))
             throw new Error('Super Follows application is not enabled')
           return c.a.createElement(
-            P,
+            D,
             { leftControlShouldClose: !0, withCenteredLogo: !0, withInfoButton: !0 },
             c.a.createElement(
-              Fr,
-              { style: Su.interstitial },
-              c.a.createElement(Ne, { headline: wu, illustration: Ue.Uturn, subtext: _u }),
+              Rt,
+              { style: Nu.interstitial },
+              c.a.createElement(We, { headline: Mu, illustration: Ue.Uturn, subtext: Uu }),
             ),
           )
         },
-        Su = K.a.create(function (e) {
+        Nu = K.a.create(function (e) {
           return { interstitial: { marginVertical: e.spaces.space32 } }
         }),
-        ku = p.a.d3d6c52c,
-        Fu = p.a.c53e9129,
-        Eu = function () {
+        ju = p.a.d3d6c52c,
+        Wu = p.a.c53e9129,
+        Gu = function () {
           if (!c.a.useContext(I.a).featureSwitches.isTrue('super_follow_web_application_enabled'))
             throw new Error('Super Follows application is not enabled')
           return c.a.createElement(
-            P,
+            D,
             { leftControlShouldClose: !0, withInfoButton: !0 },
             c.a.createElement(
-              Fr,
-              { style: Cu.interstitial },
-              c.a.createElement(Ne, { headline: ku, illustration: Ue.PaperAirplane, subtext: Fu }),
+              Rt,
+              { style: qu.interstitial },
+              c.a.createElement(We, { headline: ju, illustration: Ue.PaperAirplane, subtext: Wu }),
             ),
           )
         },
-        Cu = K.a.create(function (e) {
+        qu = K.a.create(function (e) {
           return { interstitial: { marginVertical: e.spaces.space32 } }
         }),
-        xu = p.a.j274e6aa,
-        Ku = p.a.d7f65127,
-        Lu = function () {
+        Qu = p.a.j274e6aa,
+        Xu = p.a.d7f65127,
+        Yu = function () {
           if (!c.a.useContext(I.a).featureSwitches.isTrue('super_follow_web_application_enabled'))
             throw new Error('Super Follows application is not enabled')
           return c.a.createElement(
-            P,
+            D,
             { leftControlShouldClose: !0, withCenteredLogo: !0, withInfoButton: !0 },
             c.a.createElement(
-              Fr,
-              { style: Tu.interstitial },
-              c.a.createElement(Ne, { headline: xu, illustration: Ue.Bench, subtext: Ku }),
+              Rt,
+              { style: Zu.interstitial },
+              c.a.createElement(We, { headline: Qu, illustration: Ue.Bench, subtext: Xu }),
             ),
           )
         },
-        Tu = K.a.create(function (e) {
+        Zu = K.a.create(function (e) {
           return { interstitial: { marginVertical: e.spaces.space32 } }
         }),
-        Pu = void 0 !== et ? et : (et = n('nEN5')),
-        Ou = void 0 !== at ? at : (at = n('toKZ')),
-        Du = void 0 !== nt ? nt : (nt = n('ucRr')),
-        Iu = function (e) {
+        Ju = void 0 !== cl ? cl : (cl = n('nEN5')),
+        $u = void 0 !== ul ? ul : (ul = n('toKZ')),
+        ed = void 0 !== dl ? dl : (dl = n('ucRr')),
+        ad = function (e) {
           var a = e.priceOfferings,
             n = e.user,
             t = e.viewer,
-            r = Y()(Pu, a),
-            l = Y()(Ou, n),
-            i = Y()(Du, t),
+            r = Y()(Ju, a),
+            l = Y()($u, n),
+            i = Y()(ed, t),
             o = (function (e) {
               var a = e.isActiveCreator,
                 n = e.stripeAccountStatus,
@@ -5875,57 +5855,57 @@
             c.a.createElement(
               E.b,
               { path: '/settings/superfollows/application' },
-              c.a.createElement(Sr, { user: l, viewer: i }),
+              c.a.createElement(Kt, { user: l, viewer: i }),
             ),
             c.a.createElement(
               E.b,
               { path: '/settings/superfollows/onboarding' },
-              c.a.createElement(Qc, { priceOfferings: r, user: l, viewer: i }),
+              c.a.createElement(fu, { priceOfferings: r, user: l, viewer: i }),
             ),
             c.a.createElement(
               E.b,
               { path: '/settings/superfollows/management' },
-              c.a.createElement(cs, { priceOfferings: r, user: l, viewer: i }),
+              c.a.createElement(Ks, { priceOfferings: r, user: l, viewer: i }),
             ),
             c.a.createElement(
               E.b,
               { exact: !0, path: '/settings/superfollows/submitted' },
-              c.a.createElement(Eu, null),
+              c.a.createElement(Gu, null),
             ),
             c.a.createElement(
               E.b,
               { exact: !0, path: '/settings/superfollows/waitlisted' },
-              c.a.createElement(Lu, null),
+              c.a.createElement(Yu, null),
             ),
-            c.a.createElement(E.b, { exact: !0, path: '/settings/superfollows/rejected' }, c.a.createElement(vu, null)),
+            c.a.createElement(E.b, { exact: !0, path: '/settings/superfollows/rejected' }, c.a.createElement(Hu, null)),
             c.a.createElement(
               E.b,
               { exact: !0, path: '/settings/superfollows/perks_intro_examples' },
-              c.a.createElement(du, null),
+              c.a.createElement(Tu, null),
             ),
             c.a.createElement(
               E.b,
               { exact: !0, path: '/settings/superfollows/perks_description_examples' },
-              c.a.createElement(au, null),
+              c.a.createElement(_u, null),
             ),
             c.a.createElement(
               E.b,
               { exact: !0, path: '/settings/superfollows/perks_preview' },
-              c.a.createElement(yu, null),
+              c.a.createElement(Au, null),
             ),
-            c.a.createElement(E.b, { exact: !0, path: '/settings/superfollows' }, c.a.createElement(D.a, { to: o })),
+            c.a.createElement(E.b, { exact: !0, path: '/settings/superfollows' }, c.a.createElement(O.a, { to: o })),
           )
         },
-        Bu = n('n0Rl'),
-        Ru = n('q9Zt'),
-        Vu = p.a.hae1c933,
-        zu = void 0 !== tt ? tt : (tt = n('G8I5')),
-        Au = Object(Bu.b)(zu, { errorConfig: { context: 'SUPER_FOLLOWS_SETTINGS' } }),
-        Mu = K.a.create(function (e) {
+        nd = n('n0Rl'),
+        td = n('q9Zt'),
+        rd = p.a.hae1c933,
+        ld = void 0 !== pl ? pl : (pl = n('G8I5')),
+        id = Object(nd.b)(ld, { errorConfig: { context: 'SUPER_FOLLOWS_SETTINGS' } }),
+        od = K.a.create(function (e) {
           return { error: { marginHorizontal: e.spaces.space32 } }
         })
       a.default = function () {
-        return c.a.createElement(Au, {
+        return c.a.createElement(id, {
           render: function (e) {
             var a,
               n,
@@ -5944,10 +5924,10 @@
               render: function () {
                 return null == i || 'User' !== (null == o ? void 0 : o.__typename) || null == s
                   ? null
-                  : c.a.createElement(Iu, { priceOfferings: i, user: o, viewer: s })
+                  : c.a.createElement(ad, { priceOfferings: i, user: o, viewer: s })
               },
               renderFailure: function () {
-                return c.a.createElement(P, null, c.a.createElement(Ru.a, { onRetry: l, style: Mu.error, title: Vu }))
+                return c.a.createElement(D, null, c.a.createElement(td.a, { onRetry: l, style: od.error, title: rd }))
               },
               retryable: !1,
             })
@@ -6034,20 +6014,20 @@
         metadata: null,
         name: 'SuperFollowsManagementPerksIntroScreen_user',
         selections: [
-          { args: null, kind: 'FragmentSpread', name: 'SuperFollowsPerksIntroCore_user' },
           { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingCreatorIntro_user' },
           { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsSaveOnboarding_user' },
+          { args: null, kind: 'FragmentSpread', name: 'SuperFollowsPerksIntroCore_user' },
         ],
         type: 'User',
         abstractKey: null,
-        hash: '17ab5877e44f1eadee5db2ce800fcaab',
+        hash: '256ae68f663dd663c27261e9bbf6e769',
       }
       a.default = t
     },
     'p+r5': function (e, a, n) {
       'use strict'
       n.d(a, 'a', function () {
-        return j
+        return N
       })
       n('yiKp')
       var t = n('97Jx'),
@@ -6067,20 +6047,20 @@
         h = n('KEM+'),
         y = n.n(h),
         w = (n('2G9S'), n('ERkP')),
-        _ = n.n(w),
-        v = n('38/B'),
-        S = n('t62R'),
+        v = n.n(w),
+        S = n('38/B'),
+        _ = n('t62R'),
         k = n('/yvb'),
         F = n('piX5'),
         E = n('3XMw'),
         C = n.n(E),
         x = n('tI3i'),
         K = n.n(x),
-        L = n('oQhu'),
-        T = n('rHpw'),
-        P = n('aITJ'),
-        O = n('MWbm'),
-        D = n('n5fo'),
+        P = n('oQhu'),
+        L = n('rHpw'),
+        D = n('aITJ'),
+        T = n('MWbm'),
+        O = n('n5fo'),
         I = n('5emT'),
         B = n('Oib4'),
         R = n('WtWS'),
@@ -6117,7 +6097,7 @@
         },
         U = C.a.de540c32,
         H = C.a.b4abfdb3,
-        j = (function (e) {
+        N = (function (e) {
           g()(n, e)
           var a = b()(n)
           function n(e) {
@@ -6134,8 +6114,8 @@
               y()(
                 p()(t),
                 '_getTextInputStyle',
-                Object(L.a)(function (e) {
-                  return [W.root, !e && W.disabled]
+                Object(P.a)(function (e) {
+                  return [j.root, !e && j.disabled]
                 }),
               ),
               y()(p()(t), '_getTextInputType', function () {
@@ -6218,11 +6198,11 @@
               y()(p()(t), '_handleKeyDown', function (e) {
                 var a = t.props.onKeyDown,
                   n = 0 === t.state.displayCount
-                P.b.isKaiOS() && 'Backspace' === e.key && n ? (t._blurOnBackspaceKeyUpForKaiOS = n) : a && a(e)
+                D.b.isKaiOS() && 'Backspace' === e.key && n ? (t._blurOnBackspaceKeyUpForKaiOS = n) : a && a(e)
               }),
               y()(p()(t), '_handleKeyUp', function (e) {
                 var a = t.props.onKeyUp
-                P.b.isKaiOS() &&
+                D.b.isKaiOS() &&
                   'Backspace' === e.key &&
                   t._blurOnBackspaceKeyUpForKaiOS &&
                   (e.preventDefault(), t.blur()),
@@ -6312,41 +6292,41 @@
                       l = e.style,
                       i = this.state.isFocused,
                       o = this._isFormInvalid()
-                    return _.a.createElement(
-                      O.a,
-                      { style: [N.root, l] },
-                      _.a.createElement(
-                        O.a,
+                    return v.a.createElement(
+                      T.a,
+                      { style: [W.root, l] },
+                      v.a.createElement(
+                        T.a,
                         {
                           accessibilityLabel: a,
                           accessibilityRole: 'label',
                           style: [
                             F.a.border,
-                            N.textInputFormStyle,
+                            W.textInputFormStyle,
                             o && F.a.invalidBorderColor,
                             i && o && F.a.focusedBorderInvalid,
                             i && !o && F.a.focusedBorderValid,
                             !n && F.a.disabled,
                           ],
                         },
-                        _.a.createElement(
-                          O.a,
-                          { style: N.textInputFormWrapper },
-                          _.a.createElement(
-                            O.a,
-                            { style: N.textInputHeader },
+                        v.a.createElement(
+                          T.a,
+                          { style: W.textInputFormWrapper },
+                          v.a.createElement(
+                            T.a,
+                            { style: W.textInputHeader },
                             this._renderLabel(),
                             this._shouldRenderDisplayCount() ? this._renderDisplayCount() : null,
                           ),
                           this._renderTextInput(),
                         ),
                       ),
-                      _.a.createElement(
-                        O.a,
-                        { style: [N.sidePadding, N.underTextInputForm] },
-                        _.a.createElement(
-                          O.a,
-                          { style: N.subtextWrapper },
+                      v.a.createElement(
+                        T.a,
+                        { style: [W.sidePadding, W.underTextInputForm] },
+                        v.a.createElement(
+                          T.a,
+                          { style: W.subtextWrapper },
                           r ? this._renderHelperText() : null,
                           o && t ? this._renderErrorText() : null,
                         ),
@@ -6361,16 +6341,16 @@
                       a = this.state.isFocused ? 'primary' : 'gray700',
                       n = this._isFormInvalid() ? 'red500' : a,
                       t = this._isLabelLarge()
-                    return _.a.createElement(
-                      S.b,
+                    return v.a.createElement(
+                      _.b,
                       {
                         color: t ? 'gray700' : n,
                         numberOfLines: 1,
                         size: t ? 'headline1' : 'subtext2',
                         style: [
-                          N.textInputHeaderItem,
-                          t && N.placeholderText,
-                          !v.a.reducedMotionEnabled && N.transition,
+                          W.textInputHeaderItem,
+                          t && W.placeholderText,
+                          !S.a.reducedMotionEnabled && W.transition,
                         ],
                       },
                       e,
@@ -6399,14 +6379,14 @@
                         e.showPasswordVisibilityIcon,
                         e.showValidationIcon),
                       l = (e.style, e.type, e.validLength, i()(e, z))
-                    return _.a.createElement(
-                      O.a,
-                      { style: W.container },
+                    return v.a.createElement(
+                      T.a,
+                      { style: j.container },
                       a && !this._isLabelLarge() ? this._renderIcon() : null,
-                      _.a.createElement(
-                        S.b,
-                        { size: 'headline1', style: W.wrapper },
-                        _.a.createElement(
+                      v.a.createElement(
+                        _.b,
+                        { size: 'headline1', style: j.wrapper },
+                        v.a.createElement(
                           V.a,
                           r()({}, l, {
                             editable: n,
@@ -6436,14 +6416,14 @@
                       n = e.type,
                       t = this.state.isPasswordRevealed
                     return 'password' === n && a
-                      ? _.a.createElement(
-                          O.a,
-                          { style: N.passwordVisibilityIconContainer },
-                          _.a.createElement(k.a, {
+                      ? v.a.createElement(
+                          T.a,
+                          { style: W.passwordVisibilityIconContainer },
+                          v.a.createElement(k.a, {
                             accessibilityLabel: t ? H : U,
                             focusable: !0,
                             hoverLabel: { label: t ? H : U },
-                            icon: t ? _.a.createElement(D.a, null) : _.a.createElement(I.a, null),
+                            icon: t ? v.a.createElement(O.a, null) : v.a.createElement(I.a, null),
                             onPress: this._handlePasswordVisibilityClick,
                             size: 'smallCompact',
                             type: 'primaryText',
@@ -6455,12 +6435,12 @@
                 {
                   key: '_renderHelperText',
                   value: function () {
-                    return _.a.createElement(
-                      O.a,
+                    return v.a.createElement(
+                      T.a,
                       { accessibilityLiveRegion: 'polite' },
-                      _.a.createElement(
-                        S.b,
-                        { color: 'gray700', size: 'subtext2', style: N.subtext },
+                      v.a.createElement(
+                        _.b,
+                        { color: 'gray700', size: 'subtext2', style: W.subtext },
                         this.props.helperText,
                       ),
                     )
@@ -6469,12 +6449,12 @@
                 {
                   key: '_renderErrorText',
                   value: function () {
-                    return _.a.createElement(
-                      O.a,
+                    return v.a.createElement(
+                      T.a,
                       { accessibilityLiveRegion: 'assertive' },
-                      _.a.createElement(
-                        S.b,
-                        { color: 'red500', size: 'subtext2', style: N.subtext },
+                      v.a.createElement(
+                        _.b,
+                        { color: 'red500', size: 'subtext2', style: W.subtext },
                         this.props.errorText,
                       ),
                     )
@@ -6488,11 +6468,11 @@
                       n = this._exceedsValidLength(e),
                       t = a && C.a.ia24dc8c(a),
                       r = C.a.ia24dc8c(e)
-                    return _.a.createElement(
-                      O.a,
-                      { accessibilityLiveRegion: 'polite', style: [N.textInputHeaderItem, N.displayCount] },
-                      _.a.createElement(
-                        S.b,
+                    return v.a.createElement(
+                      T.a,
+                      { accessibilityLiveRegion: 'polite', style: [W.textInputHeaderItem, W.displayCount] },
+                      v.a.createElement(
+                        _.b,
                         { color: n ? 'red500' : 'gray700', size: 'subtext2' },
                         t ? ''.concat(r, ' / ').concat(t) : '',
                       ),
@@ -6504,16 +6484,16 @@
                   value: function () {
                     var e = this.props.Icon,
                       a = this.state.isFocused,
-                      n = [N.icon, a && N.focusedIcon]
-                    return e && _.a.createElement(e, { style: n })
+                      n = [W.icon, a && W.focusedIcon]
+                    return e && v.a.createElement(e, { style: n })
                   },
                 },
                 {
                   key: '_renderValidationIcon',
                   value: function () {
                     return this._isFormInvalid()
-                      ? _.a.createElement(B.a, { style: [N.validationIcon, F.a.invalidColor] })
-                      : _.a.createElement(R.a, { style: [N.validationIcon, F.a.validColor] })
+                      ? v.a.createElement(B.a, { style: [W.validationIcon, F.a.invalidColor] })
+                      : v.a.createElement(R.a, { style: [W.validationIcon, F.a.validColor] })
                   },
                 },
                 {
@@ -6566,10 +6546,10 @@
             ),
             n
           )
-        })(_.a.Component)
-      y()(j, 'defaultProps', { autoComplete: 'on', autoCorrect: !0, autoFocus: !1, editable: !0, invalid: !1 }),
-        (j.propTypes = {})
-      var W = T.a.create(function (e) {
+        })(v.a.Component)
+      y()(N, 'defaultProps', { autoComplete: 'on', autoCorrect: !0, autoFocus: !1, editable: !0, invalid: !1 }),
+        (N.propTypes = {})
+      var j = L.a.create(function (e) {
           return {
             container: {
               flexDirection: 'row',
@@ -6597,7 +6577,7 @@
             disabled: { color: e.colors.gray700 },
           }
         }),
-        N = T.a.create(function (e) {
+        W = L.a.create(function (e) {
           return {
             root: {
               paddingHorizontal: e.componentDimensions.gutterHorizontal,
@@ -6713,26 +6693,12 @@
         metadata: null,
         name: 'SuperFollowsOnboardingPerksDescriptionScreen_viewer',
         selections: [
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingDraftDescription_viewer' },
           { args: null, kind: 'FragmentSpread', name: 'SuperFollowsPerksDescriptionCore_viewer' },
-          {
-            kind: 'ClientExtension',
-            selections: [
-              {
-                alias: null,
-                args: null,
-                concreteType: 'SuperFollowsOnboardingDraft',
-                kind: 'LinkedField',
-                name: 'super_follows_onboarding_draft',
-                plural: !1,
-                selections: [{ alias: null, args: null, kind: 'ScalarField', name: 'description', storageKey: null }],
-                storageKey: null,
-              },
-            ],
-          },
         ],
         type: 'Viewer',
         abstractKey: null,
-        hash: '14f43a5a4607d106a815a1d9ac6f3202',
+        hash: '31b6d2f42f854c50a0cc1df5fcd2773c',
       }
       a.default = t
     },
@@ -6745,29 +6711,13 @@
         metadata: null,
         name: 'SuperFollowsOnboardingGetStartedScreen_viewer',
         selections: [
-          {
-            kind: 'ClientExtension',
-            selections: [
-              {
-                alias: null,
-                args: null,
-                concreteType: 'SuperFollowsOnboardingDraft',
-                kind: 'LinkedField',
-                name: 'super_follows_onboarding_draft',
-                plural: !1,
-                selections: [
-                  { alias: null, args: null, kind: 'ScalarField', name: 'creator_intro', storageKey: null },
-                  { alias: null, args: null, kind: 'ScalarField', name: 'description', storageKey: null },
-                  { alias: null, args: null, kind: 'ScalarField', name: 'selected_price', storageKey: null },
-                ],
-                storageKey: null,
-              },
-            ],
-          },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingDraftCreatorIntro_viewer' },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingDraftDescription_viewer' },
+          { args: null, kind: 'FragmentSpread', name: 'useSuperFollowsOnboardingDraftSelectedPrice_viewer' },
         ],
         type: 'Viewer',
         abstractKey: null,
-        hash: 'edc848fe657e8dd7b1c0f47d400a82d7',
+        hash: 'e8e04ad2010f6832e9b6a8a33fb5a760',
       }
       a.default = t
     },
@@ -6903,7 +6853,7 @@
         selections: [
           {
             kind: 'InlineDataFragmentSpread',
-            name: 'clientOnlyState_viewer',
+            name: 'superFollowsShared_viewer',
             selections: [
               {
                 kind: 'ClientExtension',
@@ -6931,7 +6881,7 @@
         ],
         type: 'Viewer',
         abstractKey: null,
-        hash: '3abdf03b827490342dcb1cd466cb6120',
+        hash: '2a5ad7b1a1b9a1015040e349406c25ec',
       }
       a.default = t
     },
@@ -6946,7 +6896,7 @@
         selections: [
           {
             kind: 'InlineDataFragmentSpread',
-            name: 'clientOnlyState_viewer',
+            name: 'superFollowsShared_viewer',
             selections: [
               {
                 kind: 'ClientExtension',
@@ -6974,7 +6924,7 @@
         ],
         type: 'Viewer',
         abstractKey: null,
-        hash: 'b499e804fb129a1620e7d1f71e30ebc8',
+        hash: '6e38d8b984911ba4cb1bef210114e76b',
       }
       a.default = t
     },

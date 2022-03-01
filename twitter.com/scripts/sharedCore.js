@@ -11667,6 +11667,7 @@
         Ue = [
           'createLocalApiErrorHandler',
           'disableTranslation',
+          'enrichments',
           'fetchTranslation',
           'header',
           'style',
@@ -11675,6 +11676,7 @@
           'translationFetchStatus',
           'tweetId',
           'userLanguage',
+          'weight',
           'withOriginalText',
         ],
         He = [
@@ -11722,12 +11724,13 @@
                     n =
                       (t.createLocalApiErrorHandler,
                       t.disableTranslation,
+                      t.enrichments,
                       t.fetchTranslation,
                       t.header,
                       t.style,
                       t.supplementalLang,
                       t.translation),
-                    r = (t.translationFetchStatus, t.tweetId, t.userLanguage, t.withOriginalText, te()(t, Ue))
+                    r = (t.translationFetchStatus, t.tweetId, t.userLanguage, t.weight, t.withOriginalText, te()(t, Ue))
                   if (n)
                     return E.a.createElement(
                       Ne.a,
@@ -31590,26 +31593,6 @@
           return r.d(''.concat(i, ':').concat(n, ':').concat(e), t)
         }
     },
-    WVvL: function (e, t, n) {
-      'use strict'
-      t.a = {
-        follow: function (e) {
-          return ''.concat(e, '-follow')
-        },
-        unfollow: function (e) {
-          return ''.concat(e, '-unfollow')
-        },
-        block: function (e) {
-          return ''.concat(e, '-block')
-        },
-        unblock: function (e) {
-          return ''.concat(e, '-unblock')
-        },
-        cancel: function (e) {
-          return ''.concat(e, '-cancel')
-        },
-      }
-    },
     WWyu: function (e, t, n) {
       'use strict'
       n('6U7i')
@@ -39925,8 +39908,13 @@
               c()(
                 R()(e),
                 '_getMemoizedBehavioralEventContext',
-                Object(p.a)(function (e, t) {
-                  return { token: e, viewType: t }
+                Object(p.a)(function (e, t, n, r) {
+                  var o = { viewType: e, token: t }
+                  if (n && r) {
+                    var a = { type: 'serversideContextKey', serversideContextId: n, serversideContextType: r }
+                    o = i()(i()({}, o), {}, { clientEntity: a })
+                  }
+                  return o
                 }),
               ),
               c()(
@@ -40090,22 +40078,30 @@
                 value: function () {
                   var e,
                     t,
-                    n = this.props,
-                    r = n.config,
-                    i = n.entry,
-                    o = r.getBehavioralEventContextOverride
-                      ? r.getBehavioralEventContextOverride(i)
+                    n,
+                    r,
+                    i = this.props,
+                    o = i.config,
+                    a = i.entry,
+                    s = o.getBehavioralEventContextOverride
+                      ? o.getBehavioralEventContextOverride(a)
                       : {
-                          viewType: i.type,
+                          viewType: a.type,
                           token:
-                            null === (e = i.itemMetadata) ||
+                            null === (e = a.itemMetadata) ||
                             void 0 === e ||
                             null === (t = e.clientEventInfo) ||
                             void 0 === t
                               ? void 0
                               : t.entityToken,
                         }
-                  if (o) return this._getMemoizedBehavioralEventContext(o.token, o.viewType)
+                  if (s)
+                    return this._getMemoizedBehavioralEventContext(
+                      s.viewType,
+                      null == s ? void 0 : s.token,
+                      null == s || null === (n = s.clientEntity) || void 0 === n ? void 0 : n.serversideContextId,
+                      null == s || null === (r = s.clientEntity) || void 0 === r ? void 0 : r.serversideContextType,
+                    )
                 },
               },
               {
@@ -51796,7 +51792,7 @@
         k = n('rxPX'),
         S = n('0KEI'),
         T = function (e, t) {
-          return C.e.select(e, t.userId)
+          return t.user || C.e.select(e, t.userId)
         },
         x = Object(k.a)()
           .propsFromState(function () {
@@ -51821,23 +51817,37 @@
         A = n('Tp1h'),
         P = n('Rp9C'),
         L = n('Jkc4'),
-        M = n('WVvL'),
-        D = n('X04g'),
-        F = n('u0B7'),
-        B = n('tJZD'),
-        N = n('PSpH'),
-        j = n('TnY3'),
-        U = n('eb3s'),
-        H = n('CGyZ'),
-        K = R.a.hbe4feb4,
-        z = R.a.df4c86bf,
-        V = R.a.bba40ffa,
-        W = R.a.f558829d,
-        q = R.a.a6941096,
-        G = R.a.j24c37b2,
-        Y = R.a.if8cd2a3,
-        X = R.a.b597226f,
-        Q = (function (e) {
+        M = function (e) {
+          return ''.concat(e, '-follow')
+        },
+        D = function (e) {
+          return ''.concat(e, '-unfollow')
+        },
+        F = function (e) {
+          return ''.concat(e, '-block')
+        },
+        B = function (e) {
+          return ''.concat(e, '-unblock')
+        },
+        N = function (e) {
+          return ''.concat(e, '-cancel')
+        },
+        j = n('X04g'),
+        U = n('u0B7'),
+        H = n('tJZD'),
+        K = n('PSpH'),
+        z = n('TnY3'),
+        V = n('eb3s'),
+        W = n('CGyZ'),
+        q = R.a.hbe4feb4,
+        G = R.a.df4c86bf,
+        Y = R.a.bba40ffa,
+        X = R.a.f558829d,
+        Q = R.a.a6941096,
+        J = R.a.j24c37b2,
+        Z = R.a.if8cd2a3,
+        $ = R.a.b597226f,
+        ee = (function (e) {
           p()(n, e)
           var t = h()(n)
           function n(e) {
@@ -51849,8 +51859,9 @@
                 var e = r.props,
                   t = e.createLocalApiErrorHandler,
                   n = e.fetchOneUserIfNeeded,
-                  i = e.userId
-                i && n(i).catch(t(I.a))
+                  i = e.isRelay,
+                  o = e.userId
+                o && !i && n(o).catch(t(I.a))
               }),
               v()(u()(r), '_handleClose', function () {
                 r.setState({ showDialog: !1, dialogText: void 0, dialogHeadline: void 0 })
@@ -51860,7 +51871,7 @@
                   t = e.cancelPendingFollow,
                   n = e.createLocalApiErrorHandler,
                   i = e.user
-                i && t(i.id_str).catch(n({ defaultToast: { text: X }, showToast: !0 }))
+                i && t(i.id_str).catch(n({ defaultToast: { text: $ }, showToast: !0 }))
               }),
               v()(u()(r), '_handleLoggedInFollow', function () {
                 var e = r.props,
@@ -51871,7 +51882,7 @@
                   s = e.user
                 s &&
                   o(s.id_str, { promotedContent: a }).then(function () {
-                    return s.protected && t({ text: K({ screenName: s.screen_name }) }), r._scribe({ action: 'follow' })
+                    return s.protected && t({ text: q({ screenName: s.screen_name }) }), r._scribe({ action: 'follow' })
                   }, n(i()(i()({}, r._followApiErrorHandlingConfiguration), {}, { showToast: !0 })))
               }),
               v()(u()(r), '_handleLoggedOutFollow', function () {
@@ -51891,7 +51902,7 @@
                   n = e.promotedContent,
                   i = e.unblock,
                   o = e.user
-                o && (i(o.id_str, { promotedContent: n }).catch(t(F.a)), r._scribe({ action: 'unblock' }))
+                o && (i(o.id_str, { promotedContent: n }).catch(t(U.a)), r._scribe({ action: 'unblock' }))
               }),
               v()(u()(r), '_handleUnfollow', function () {
                 var e = r.props,
@@ -51899,7 +51910,7 @@
                   n = e.promotedContent,
                   i = e.unfollow,
                   o = e.user
-                if (o) return i(o.id_str, { promotedContent: n }).catch(t(B.a)), r._scribe({ action: 'unfollow' })
+                if (o) return i(o.id_str, { promotedContent: n }).catch(t(H.a)), r._scribe({ action: 'unfollow' })
               }),
               v()(u()(r), '_handleUnSuperFollow', function () {
                 var e = r.props.history
@@ -51921,22 +51932,22 @@
                     t = this
                   this._fetchUserIfNeeded(),
                     (this._followApiErrorHandlingConfiguration = i()(
-                      i()({}, N.a),
+                      i()({}, K.a),
                       {},
                       ((e = {}),
                       v()(e, b.a.UserMustBeAlcoholAgeScreened, {
                         customAction: function () {
-                          t.setState({ showDialog: !0, dialogText: Y, dialogHeadline: V })
+                          t.setState({ showDialog: !0, dialogText: Z, dialogHeadline: Y })
                         },
                       }),
                       v()(e, b.a.CannotFollowFromCountry, {
                         customAction: function () {
-                          t.setState({ showDialog: !0, dialogText: q, dialogHeadline: V })
+                          t.setState({ showDialog: !0, dialogText: Q, dialogHeadline: Y })
                         },
                       }),
                       v()(e, b.a.BirthdateRequired, {
                         customAction: function () {
-                          t.setState({ showDialog: !0, dialogText: W, dialogHeadline: z })
+                          t.setState({ showDialog: !0, dialogText: X, dialogHeadline: G })
                         },
                       }),
                       e),
@@ -51960,13 +51971,7 @@
                     d = c.showDialog,
                     p = null == a ? void 0 : a.screen_name,
                     f = p ? '/'.concat(p) : '',
-                    h = {
-                      follow: M.a.follow(s),
-                      unfollow: M.a.unfollow(s),
-                      cancel: M.a.cancel(s),
-                      block: M.a.block(s),
-                      unblock: M.a.unblock(s),
-                    },
+                    h = { follow: M(s), unfollow: D(s), cancel: N(s), block: F(s), unblock: B(s) },
                     m = !(null == a || !a.follow_request_sent || !a.protected || a.following)
                   return (
                     !!a &&
@@ -51974,8 +51979,8 @@
                       y.a.Fragment,
                       null,
                       d
-                        ? y.a.createElement(U.a, {
-                            confirmButtonLabel: G,
+                        ? y.a.createElement(V.a, {
+                            confirmButtonLabel: J,
                             headline: l,
                             onCancel: this._handleClose,
                             onConfirm: this._handleClose,
@@ -51987,7 +51992,7 @@
                         L.a,
                         { displayMode: A.a.follow, postLoginPath: f, userFullName: a.name, userId: s },
                         function (t) {
-                          return y.a.createElement(H.a, {
+                          return y.a.createElement(W.a, {
                             isAutoblocking: a.smart_blocking,
                             isBlocking: a.blocking,
                             isFollowRequestSent: m,
@@ -52027,7 +52032,7 @@
                       null == l
                         ? void 0
                         : l.find(function (e) {
-                            return e.item_type === D.a.ItemType.USER && e.id === (null == c ? void 0 : c.id_str)
+                            return e.item_type === j.a.ItemType.USER && e.id === (null == c ? void 0 : c.id_str)
                           }),
                     d = []
                   c ? d.push(i()(i()({}, u), P.a.getUserItem(c, s))) : u && d.push(u)
@@ -52039,7 +52044,7 @@
             n
           )
         })(y.a.Component)
-      t.a = Object(j.a)(x(Q))
+      t.a = Object(z.a)(x(ee))
     },
     uJSo: function (e, t, n) {
       'use strict'

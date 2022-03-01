@@ -30,7 +30,7 @@
             return {
               createLocalApiErrorHandler: Object(b.createLocalApiErrorHandlerWithContextFactory)('LOGOUT_ERROR_SCREEN'),
               logout: y.a,
-              sendAllPreviews: L.f,
+              sendAllPreviews: L.g,
             }
           })
           .withAnalytics({ page: 'logout_error' }),
@@ -158,7 +158,7 @@
         O = {
           createLocalApiErrorHandler: Object(A.createLocalApiErrorHandlerWithContextFactory)('LOGOUT_SCREEN'),
           logout: L.a,
-          sendAllPreviews: v.f,
+          sendAllPreviews: v.g,
         },
         _ = Object(w.g)(m, O),
         S = n('kGix'),

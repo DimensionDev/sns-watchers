@@ -4624,49 +4624,50 @@
                   a = t.getItemDisabledMessage,
                   o = t.getItemIsDisabled,
                   s = t.getTopicExactMatch,
-                  c = t.getUserExactMatch,
-                  l = t.injectedItems,
-                  u = t.isInSidebar,
-                  d = t.isModal,
-                  p = t.isOnHomepage,
-                  h = t.maxEvents,
-                  m = t.maxTopics,
-                  f = t.onItemsChanged,
-                  v = t.orderResults,
-                  b = t.renderCallout,
-                  g = t.renderEmptyState,
-                  _ = t.renderHeader,
-                  w = t.renderNoResultsState,
-                  C = t.renderUserDecoration,
-                  E = t.selectedItems,
-                  T = t.shouldDeferPrefetch,
-                  k = t.source,
-                  x = t.withFixedPositioning,
-                  O = t.withSectionDivider,
-                  R = e >= P.a.theme.breakpoints.medium || Object(I.a)(),
-                  L = i.state,
-                  M = L.dropdownOffset,
-                  A = L.query,
-                  D = d
+                  c = t.getUserDisplayNameLabel,
+                  l = t.getUserExactMatch,
+                  u = t.injectedItems,
+                  d = t.isInSidebar,
+                  p = t.isModal,
+                  h = t.isOnHomepage,
+                  m = t.maxEvents,
+                  f = t.maxTopics,
+                  v = t.onItemsChanged,
+                  b = t.orderResults,
+                  g = t.renderCallout,
+                  _ = t.renderEmptyState,
+                  w = t.renderHeader,
+                  C = t.renderNoResultsState,
+                  E = t.renderUserDecoration,
+                  T = t.selectedItems,
+                  k = t.shouldDeferPrefetch,
+                  x = t.source,
+                  O = t.withFixedPositioning,
+                  R = t.withSectionDivider,
+                  L = e >= P.a.theme.breakpoints.medium || Object(I.a)(),
+                  M = i.state,
+                  A = M.dropdownOffset,
+                  D = M.query,
+                  B = p
                     ? V.modalDropdown
                     : [
                         V.dropdown,
-                        !R && x && M ? [Object(F.d)(M), { height: 'calc(100vh - '.concat(M, 'px)') }] : null,
-                        (R || p) && V.wideModeDropdown,
-                        i._withNewTypeaheadUI && u && j(e),
-                        p && V.shortModeDropdown,
-                        !R && p && V.shortModeDropdownMobile,
+                        !L && O && A ? [Object(F.d)(A), { height: 'calc(100vh - '.concat(A, 'px)') }] : null,
+                        (L || h) && V.wideModeDropdown,
+                        i._withNewTypeaheadUI && d && j(e),
+                        h && V.shortModeDropdown,
+                        !L && h && V.shortModeDropdownMobile,
                       ],
-                  B = {
+                  N = {
                     ariaDescendantId: i.state.ariaDescendantId,
                     domId: i._dropdownDomId,
                     onDismiss: i._handleOnEmptyStateDismiss,
                     onItemFocusChanged: i._handleItemFocusChanged,
                     ref: i._handleDropdownRef,
-                    style: D,
+                    style: B,
                   }
-                return g && !A
-                  ? g(B)
+                return _ && !D
+                  ? _(N)
                   : y.a.createElement(S.a, {
                       ariaDescendantId: i.state.ariaDescendantId,
                       communityId: n,
@@ -4675,25 +4676,26 @@
                       getItemDisabledMessage: a,
                       getItemIsDisabled: o,
                       getTopicExactMatch: s,
-                      getUserExactMatch: c,
-                      injectedItems: l,
-                      maxEvents: h,
-                      maxTopics: m,
+                      getUserDisplayNameLabel: c,
+                      getUserExactMatch: l,
+                      injectedItems: u,
+                      maxEvents: m,
+                      maxTopics: f,
                       onItemClick: i._handleItemClick,
                       onItemFocusChanged: i._handleItemFocusChanged,
-                      onItemsChanged: f,
-                      orderResults: v,
-                      query: A,
+                      onItemsChanged: v,
+                      orderResults: b,
+                      query: D,
                       ref: i._handleDropdownRef,
-                      renderCallout: b,
-                      renderHeader: _,
-                      renderNoResultsState: w,
-                      renderUserDecoration: C,
-                      selectedItems: E,
-                      shouldDeferPrefetch: T,
-                      source: k,
-                      style: D,
-                      withSectionDivider: O,
+                      renderCallout: g,
+                      renderHeader: w,
+                      renderNoResultsState: C,
+                      renderUserDecoration: E,
+                      selectedItems: T,
+                      shouldDeferPrefetch: k,
+                      source: x,
+                      style: B,
+                      withSectionDivider: R,
                     })
               }),
               m()(c()(i), '_dismissDropdown', function () {
@@ -12203,6 +12205,7 @@
         He = [
           'createLocalApiErrorHandler',
           'disableTranslation',
+          'enrichments',
           'fetchTranslation',
           'header',
           'style',
@@ -12211,6 +12214,7 @@
           'translationFetchStatus',
           'tweetId',
           'userLanguage',
+          'weight',
           'withOriginalText',
         ],
         Ue = [
@@ -12258,12 +12262,13 @@
                     n =
                       (t.createLocalApiErrorHandler,
                       t.disableTranslation,
+                      t.enrichments,
                       t.fetchTranslation,
                       t.header,
                       t.style,
                       t.supplementalLang,
                       t.translation),
-                    r = (t.translationFetchStatus, t.tweetId, t.userLanguage, t.withOriginalText, te()(t, He))
+                    r = (t.translationFetchStatus, t.tweetId, t.userLanguage, t.weight, t.withOriginalText, te()(t, He))
                   if (n)
                     return C.a.createElement(
                       Ne.a,
@@ -36200,8 +36205,13 @@
               c()(
                 R()(e),
                 '_getMemoizedBehavioralEventContext',
-                Object(p.a)(function (e, t) {
-                  return { token: e, viewType: t }
+                Object(p.a)(function (e, t, n, r) {
+                  var i = { viewType: e, token: t }
+                  if (n && r) {
+                    var o = { type: 'serversideContextKey', serversideContextId: n, serversideContextType: r }
+                    i = a()(a()({}, i), {}, { clientEntity: o })
+                  }
+                  return i
                 }),
               ),
               c()(
@@ -36365,22 +36375,30 @@
                 value: function () {
                   var e,
                     t,
-                    n = this.props,
-                    r = n.config,
-                    a = n.entry,
-                    i = r.getBehavioralEventContextOverride
-                      ? r.getBehavioralEventContextOverride(a)
+                    n,
+                    r,
+                    a = this.props,
+                    i = a.config,
+                    o = a.entry,
+                    s = i.getBehavioralEventContextOverride
+                      ? i.getBehavioralEventContextOverride(o)
                       : {
-                          viewType: a.type,
+                          viewType: o.type,
                           token:
-                            null === (e = a.itemMetadata) ||
+                            null === (e = o.itemMetadata) ||
                             void 0 === e ||
                             null === (t = e.clientEventInfo) ||
                             void 0 === t
                               ? void 0
                               : t.entityToken,
                         }
-                  if (i) return this._getMemoizedBehavioralEventContext(i.token, i.viewType)
+                  if (s)
+                    return this._getMemoizedBehavioralEventContext(
+                      s.viewType,
+                      null == s ? void 0 : s.token,
+                      null == s || null === (n = s.clientEntity) || void 0 === n ? void 0 : n.serversideContextId,
+                      null == s || null === (r = s.clientEntity) || void 0 === r ? void 0 : r.serversideContextType,
+                    )
                 },
               },
               {

@@ -573,7 +573,7 @@
           return function (t, n, o) {
             var s = o.api,
               l = Object(r.b)(t, { request: s.Auth.switch, params: e })
-            return t(Object(c.f)()).then(function () {
+            return t(Object(c.g)()).then(function () {
               return t(Object(a.b)()).then(function () {
                 return l({ actionTypes: i, context: 'SWITCH' }).then(function () {
                   window.location.assign('/home')

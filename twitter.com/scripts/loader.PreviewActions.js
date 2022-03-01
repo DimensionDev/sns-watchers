@@ -57,7 +57,7 @@
         l = n('5oBF'),
         d = Object(s.a)()
           .propsFromState(function () {
-            return { previewTweet: l.d, undoTweetSettings: u.q }
+            return { previewTweet: l.e, undoTweetSettings: u.q }
           })
           .adjustStateProps(function (e) {
             var t,
@@ -87,7 +87,7 @@
             }
           })
           .propsFromActions(function () {
-            return { undoTweet: l.h, sendNow: l.g }
+            return { undoTweet: l.i, sendNow: l.h }
           })
           .withAnalytics({ page: 'undo_tweet_details', section: 'timeline' }),
         c = n('3XMw'),
@@ -98,8 +98,8 @@
         b = n('aRdY'),
         y = n('/yvb'),
         v = n('rHpw'),
-        g = p.a.bc2ceaf2,
-        S = p.a.gf5e9ea6,
+        S = p.a.bc2ceaf2,
+        g = p.a.gf5e9ea6,
         h = p.a.j4c40da3,
         T = p.a.b23688c7,
         E = function (e) {
@@ -176,7 +176,7 @@
                     { style: I.timerWrapper },
                     o.a.createElement(b.a, { accessibilityLabel: T, count: F, maxCount: 1 }),
                   ),
-                  !W || W < 470 ? null : o.a.createElement(f.b, { style: I.sendingLabel, weight: 'bold' }, g),
+                  !W || W < 470 ? null : o.a.createElement(f.b, { style: I.sendingLabel, weight: 'bold' }, S),
                 ),
                 o.a.createElement(
                   w.a,
@@ -223,7 +223,7 @@
                       size: 'xSmall',
                       type: 'brandFilled',
                     },
-                    S,
+                    g,
                   ),
                 ),
               )

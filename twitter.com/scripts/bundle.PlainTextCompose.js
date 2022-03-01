@@ -5610,8 +5610,10 @@
                     t,
                     n,
                     a,
-                    i = this.props.undoTweetSettings,
-                    r =
+                    i,
+                    r,
+                    o = this.props.undoTweetSettings,
+                    s =
                       null == this ||
                       null === (e = this.context) ||
                       void 0 === e ||
@@ -5619,20 +5621,29 @@
                       void 0 === t
                         ? void 0
                         : t.isTrueAndEnabled('subscriptions_feature_1003'),
-                    o =
+                    l =
                       null == this ||
                       null === (n = this.context) ||
                       void 0 === n ||
                       null === (a = n.featureSwitches) ||
                       void 0 === a
                         ? void 0
-                        : a.isTrue('subscriptions_undo_quote_tweets_enabled')
+                        : a.isTrue('subscriptions_undo_quote_tweets_enabled'),
+                    c =
+                      null == this ||
+                      null === (i = this.context) ||
+                      void 0 === i ||
+                      null === (r = i.featureSwitches) ||
+                      void 0 === r
+                        ? void 0
+                        : r.isTrue('subscriptions_undo_thread_tweets_enabled')
                   return (
-                    r &&
+                    s &&
                     ('original' === this.tweetType ||
                       'reply' === this.tweetType ||
-                      ('quote' === this.tweetType && o)) &&
-                    (!i || void 0 === i[this.tweetType] || i[this.tweetType])
+                      ('quote' === this.tweetType && l) ||
+                      ('thread' === this.tweetType && c)) &&
+                    (!o || void 0 === o[this.tweetType] || o[this.tweetType])
                   )
                 },
               },
