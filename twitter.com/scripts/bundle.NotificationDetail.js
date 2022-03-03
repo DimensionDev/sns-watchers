@@ -5,7 +5,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'SafetyReportNotificationScreen', function () {
-          return x
+          return q
         })
       var a = n('VrFO'),
         i = n.n(a),
@@ -38,15 +38,15 @@
         w = n.n(_),
         k = n('8jkQ'),
         g = n('5FtR'),
+        S = n('Irs7'),
         U = n('/yvb'),
         O = n('bPFD'),
-        S = n('rHpw'),
-        j = n('7JQg'),
-        E = w.a.c380d684,
-        P = w.a.f15bfdb3,
-        R = w.a.c7714935,
-        q = w.a.b772cd65,
-        x = (function (e) {
+        j = n('rHpw'),
+        x = w.a.c380d684,
+        E = w.a.f15bfdb3,
+        P = w.a.c7714935,
+        R = w.a.b772cd65,
+        q = (function (e) {
           p()(n, e)
           var t = u()(n)
           function n() {
@@ -70,7 +70,7 @@
                     t = this._getSafeUrl(),
                     n = this._getTitle(t),
                     a = this._getParams(),
-                    i = h.a.createElement(U.a, { onPress: this._handleDone, size: 'small', type: 'brandFilled' }, q),
+                    i = h.a.createElement(U.a, { onPress: this._handleDone, size: 'small', type: 'brandFilled' }, R),
                     r = -1 !== (null == t ? void 0 : t.indexOf('appealable_label'))
                   return t
                     ? h.a.createElement(
@@ -103,16 +103,16 @@
                 key: '_getTitle',
                 value: function (e) {
                   return null != e && e.endsWith('review_settings')
-                    ? P
+                    ? E
                     : -1 !== (null == e ? void 0 : e.indexOf('appealable_label'))
-                    ? R
-                    : E
+                    ? P
+                    : x
                 },
               },
               {
                 key: '_getParams',
                 value: function () {
-                  var e = this.props.scribeNamespace,
+                  var e = this.props.analytics.contextualScribeNamespace,
                     t = {
                       client_location: [e.page, e.section, e.component].join(':'),
                       client_referer: window.location.pathname,
@@ -132,10 +132,10 @@
             n
           )
         })(h.a.PureComponent),
-        C = S.a.create(function (e) {
+        C = j.a.create(function (e) {
           return { iframe: { flexGrow: 1, flexShrink: 1 } }
         })
-      t.default = Object(j.a)({ page: 'ntab', section: 'safety_report_notification' })(x)
+      t.default = Object(S.a)(q, { page: 'ntab', section: 'safety_report_notification' })
     },
   },
 ])

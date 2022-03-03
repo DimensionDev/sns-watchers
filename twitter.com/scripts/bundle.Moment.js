@@ -5,7 +5,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'MomentAnalyticsScreen', function () {
-          return x
+          return F
         })
       var r = a('VrFO'),
         n = a.n(r),
@@ -41,7 +41,8 @@
               ),
               fetchAnalytics: g,
             }
-          }),
+          })
+          .withAnalytics({ page: 'moments_analytics' }),
         v = a('KEM+'),
         y = a.n(v),
         S = a('k49u'),
@@ -51,15 +52,14 @@
         O = a('t62R'),
         T = a('MtXG'),
         R = a('855f'),
-        I = a('rHpw'),
-        w = a('7JQg'),
-        L = a('3XMw'),
-        P = a.n(L),
-        D = P.a.e2e35f0d,
-        k = P.a.icfe5fe3,
-        A = P.a.a52a1fb9,
-        F = P.a.if221231,
-        x = (function (e) {
+        w = a('rHpw'),
+        I = a('3XMw'),
+        L = a.n(I),
+        P = L.a.e2e35f0d,
+        D = L.a.icfe5fe3,
+        k = L.a.a52a1fb9,
+        A = L.a.if221231,
+        F = (function (e) {
           l()(a, e)
           var t = u()(a)
           function a(e) {
@@ -114,7 +114,7 @@
                     b = o.shares_from_capsule,
                     h = void 0 === b ? 0 : b,
                     g = a ? '/i/moments/'.concat(String(a)) : '/i/explore',
-                    E = P.a.ab0f5140
+                    E = L.a.ab0f5140
                   return m.a.createElement(
                     m.a.Fragment,
                     null,
@@ -124,11 +124,11 @@
                         { backButtonType: 'close', backLocation: g, documentTitle: E, history: t, title: E },
                         m.a.createElement(
                           U.a,
-                          { style: B.container },
+                          { style: x.container },
                           m.a.createElement(
                             U.a,
-                            { style: B.titleTextContainer },
-                            m.a.createElement(O.b, { style: B.titleText, weight: 'bold' }, c),
+                            { style: x.titleTextContainer },
+                            m.a.createElement(O.b, { style: x.titleText, weight: 'bold' }, c),
                           ),
                           m.a.createElement(
                             T.a.Group,
@@ -138,79 +138,79 @@
                               null,
                               m.a.createElement(
                                 U.a,
-                                { style: B.analytic },
+                                { style: x.analytic },
                                 m.a.createElement(
                                   T.a,
                                   null,
                                   m.a.createElement(
-                                    P.a.I18NFormatMessage,
+                                    L.a.I18NFormatMessage,
                                     { $i18n: 'gfc363c4' },
                                     m.a.createElement(
                                       T.a.Value,
                                       null,
-                                      P.a.f22fc1cb({ formattedCount: R.a.getFormattedCount(Number(s)) }),
+                                      L.a.f22fc1cb({ formattedCount: R.a.getFormattedCount(Number(s)) }),
                                     ),
-                                    m.a.createElement(T.a.Value, null, P.a.c71523ef({ count: s })),
+                                    m.a.createElement(T.a.Value, null, L.a.c71523ef({ count: s })),
+                                  ),
+                                ),
+                                m.a.createElement(O.b, { color: 'gray700' }, P),
+                              ),
+                              m.a.createElement(
+                                U.a,
+                                { style: x.analytic },
+                                m.a.createElement(
+                                  T.a,
+                                  null,
+                                  m.a.createElement(
+                                    L.a.I18NFormatMessage,
+                                    { $i18n: 'e79f5450' },
+                                    m.a.createElement(
+                                      T.a.Value,
+                                      null,
+                                      L.a.eca2dfe8({ formattedCount: R.a.getFormattedCount(Number(d)) }),
+                                    ),
+                                    m.a.createElement(T.a.Value, null, L.a.a77bd6f4({ count: d })),
                                   ),
                                 ),
                                 m.a.createElement(O.b, { color: 'gray700' }, D),
                               ),
                               m.a.createElement(
                                 U.a,
-                                { style: B.analytic },
+                                { style: x.analytic },
                                 m.a.createElement(
                                   T.a,
                                   null,
                                   m.a.createElement(
-                                    P.a.I18NFormatMessage,
-                                    { $i18n: 'e79f5450' },
+                                    L.a.I18NFormatMessage,
+                                    { $i18n: 'fcbb0929' },
                                     m.a.createElement(
                                       T.a.Value,
                                       null,
-                                      P.a.eca2dfe8({ formattedCount: R.a.getFormattedCount(Number(d)) }),
+                                      L.a.cb22dca4({ formattedCount: R.a.getFormattedCount(Number(h)) }),
                                     ),
-                                    m.a.createElement(T.a.Value, null, P.a.a77bd6f4({ count: d })),
+                                    m.a.createElement(T.a.Value, null, L.a.a30d7c4d({ count: h })),
                                   ),
                                 ),
                                 m.a.createElement(O.b, { color: 'gray700' }, k),
                               ),
                               m.a.createElement(
                                 U.a,
-                                { style: B.analytic },
+                                { style: x.analytic },
                                 m.a.createElement(
                                   T.a,
                                   null,
                                   m.a.createElement(
-                                    P.a.I18NFormatMessage,
-                                    { $i18n: 'fcbb0929' },
-                                    m.a.createElement(
-                                      T.a.Value,
-                                      null,
-                                      P.a.cb22dca4({ formattedCount: R.a.getFormattedCount(Number(h)) }),
-                                    ),
-                                    m.a.createElement(T.a.Value, null, P.a.a30d7c4d({ count: h })),
-                                  ),
-                                ),
-                                m.a.createElement(O.b, { color: 'gray700' }, A),
-                              ),
-                              m.a.createElement(
-                                U.a,
-                                { style: B.analytic },
-                                m.a.createElement(
-                                  T.a,
-                                  null,
-                                  m.a.createElement(
-                                    P.a.I18NFormatMessage,
+                                    L.a.I18NFormatMessage,
                                     { $i18n: 'afba3eba' },
                                     m.a.createElement(
                                       T.a.Value,
                                       null,
-                                      P.a.e5463c29({ formattedCount: R.a.getFormattedCount(f) }),
+                                      L.a.e5463c29({ formattedCount: R.a.getFormattedCount(f) }),
                                     ),
-                                    m.a.createElement(T.a.Value, null, P.a.j20f66ed({ count: f })),
+                                    m.a.createElement(T.a.Value, null, L.a.j20f66ed({ count: f })),
                                   ),
                                 ),
-                                m.a.createElement(O.b, { color: 'gray700' }, F),
+                                m.a.createElement(O.b, { color: 'gray700' }, A),
                               ),
                             ),
                           ),
@@ -223,15 +223,16 @@
             a
           )
         })(m.a.Component),
-        B = I.a.create(function (e) {
+        x = w.a.create(function (e) {
           return {
             analytic: { marginBottom: e.spaces.space16 },
             container: { height: '100%', padding: 20 },
             titleText: { fontSize: e.fontSizes.title4 },
             titleTextContainer: { marginBottom: e.spaces.space16 },
           }
-        })
-      t.default = Object(w.a)({ page: 'moments_analytics' })(E(x))
+        }),
+        B = E(F)
+      t.default = B
     },
     DBID: function (e, t, a) {
       'use strict'
@@ -477,23 +478,23 @@
             ]
           )
         },
-        I = a('cnVF'),
-        w = a('rxPX'),
+        w = a('cnVF'),
+        I = a('rxPX'),
         L = a('su2V'),
-        P = Object(w.a)()
+        P = Object(I.a)()
           .propsFromState(function () {
             return {
               productDetailsFetchStatus: function (e) {
-                return Object(L.l)(e, I.D)
+                return Object(L.l)(e, w.D)
               },
               productDetails: function (e) {
-                return Object(L.k)(e, I.D)
+                return Object(L.k)(e, w.D)
               },
               checkoutUrlFetchStatus: function (e) {
-                return Object(L.f)(e, I.D)
+                return Object(L.f)(e, w.D)
               },
               checkoutUrl: function (e) {
-                return Object(L.e)(e, I.D)
+                return Object(L.e)(e, w.D)
               },
             }
           })
@@ -564,7 +565,7 @@
             f = Object(B.g)(),
             b = function () {
               t.scribe({ action: 'start', element: 'fetch_product', data: { referring_page: z(f) } }),
-                c(I.D)
+                c(w.D)
                   .then(function () {
                     t.scribe({ action: 'success', element: 'fetch_product', data: { referring_page: z(f) } })
                   })
@@ -584,7 +585,7 @@
                 var e,
                   a = null != s && null !== (e = s.prices) && void 0 !== e && e.length ? s.prices[0] : null,
                   r = null == a ? void 0 : a.external_price_id
-                r && i(I.D, r, H.c, H.a)
+                r && i(w.D, r, H.c, H.a)
               }
               o && o()
             },
@@ -616,12 +617,8 @@
                       { align: 'center', color: 'gray700', size: 'subtext3' },
                       l.a.createElement(
                         d.a.I18NFormatMessage,
-                        { $i18n: 'h73408b9' },
-                        l.a.createElement(
-                          A.b,
-                          { link: 'https://legal.twitter.com/purchaser-terms' },
-                          'Terms & Conditions',
-                        ),
+                        { $i18n: 'a66ed614' },
+                        l.a.createElement(A.b, { link: 'https://legal.twitter.com/purchaser-terms' }, d.a.ea6a437a),
                       ),
                     ),
                   ),
@@ -647,7 +644,7 @@
                   var e,
                     t = null != s && null !== (e = s.prices) && void 0 !== e && e.length ? s.prices[0] : null,
                     a = null == t ? void 0 : t.external_price_id
-                  a && i(I.D, a, H.c, H.a)
+                  a && i(w.D, a, H.c, H.a)
                 }
               },
               render: function () {
@@ -662,8 +659,8 @@
         Q = a('aITJ'),
         q = a('Wms4'),
         G = a('sgih'),
-        J = a('xKuM'),
-        X = a('hOZg'),
+        X = a('xKuM'),
+        J = a('hOZg'),
         Y = a('lUZE'),
         Z = a('tH6R'),
         $ = d.a.a0b7009f,
@@ -802,13 +799,13 @@
             l.a.createElement(
               k.a,
               { style: ie.appBarContainer },
-              l.a.createElement(J.a, {
+              l.a.createElement(X.a, {
                 centeredLogo: l.a.createElement(Y.a, { style: ie.twitterLogo }),
                 leftControl: l.a.createElement(F.a, {
                   accessibilityLabel: ee,
                   borderColor: 'transparent',
                   hoverLabel: { label: ee },
-                  icon: l.a.createElement(X.a, { style: ie.topIcons }),
+                  icon: l.a.createElement(J.a, { style: ie.topIcons }),
                   onPress: g,
                   pullLeft: !0,
                   size: 'medium',
@@ -1290,7 +1287,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'TwitterBlueSignUpSuccess', function () {
-          return I
+          return w
         })
       var r = a('ddV6'),
         n = a.n(r),
@@ -1321,7 +1318,7 @@
         O = p.a.a219e217,
         T = p.a.f0e32de5,
         R = p.a.gc6e8c17
-      function I(e) {
+      function w(e) {
         var t = e.analytics,
           a = e.fetchUserClaims,
           r = Object(h.f)(),
@@ -1341,12 +1338,12 @@
         function S() {
           r.push('/home')
         }
-        function I() {
+        function w() {
           return c.a.createElement(
             c.a.Fragment,
             null,
-            c.a.createElement(E.b, { size: 'title2', style: w.title, weight: 'heavy' }, T),
-            c.a.createElement(E.b, { style: w.subtitle }, R),
+            c.a.createElement(E.b, { size: 'title2', style: I.title, weight: 'heavy' }, T),
+            c.a.createElement(E.b, { style: I.subtitle }, R),
             c.a.createElement(v.a, { onPress: S, size: 'xLarge', type: 'primaryFilled' }, O),
           )
         }
@@ -1359,14 +1356,14 @@
           }, []),
           c.a.createElement(
             y.a,
-            { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: S, style: w.root, type: 'full' },
+            { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: S, style: I.root, type: 'full' },
             c.a.createElement(
               _.a,
-              { style: w.topBar },
+              { style: I.topBar },
               c.a.createElement(v.a, {
                 accessibilityLabel: U,
                 hoverLabel: { label: U },
-                icon: c.a.createElement(f.a, { style: w.topIcons }),
+                icon: c.a.createElement(f.a, { style: I.topIcons }),
                 onPress: S,
                 pullRight: !0,
                 size: 'medium',
@@ -1375,14 +1372,14 @@
             ),
             c.a.createElement(
               _.a,
-              { style: g.b.isMobileOS() ? w.contentSmall : w.content },
-              c.a.createElement(C.a, { source: b, style: w.img }),
-              c.a.createElement(d.a, { fetchStatus: u, onRequestRetry: p, render: I, retryable: !0 }),
+              { style: g.b.isMobileOS() ? I.contentSmall : I.content },
+              c.a.createElement(C.a, { source: b, style: I.img }),
+              c.a.createElement(d.a, { fetchStatus: u, onRequestRetry: p, render: w, retryable: !0 }),
             ),
           )
         )
       }
-      var w = S.a.create(function (e) {
+      var I = S.a.create(function (e) {
           return {
             root: { minHeight: 600 },
             topBar: { alignItems: 'flex-start', flexDirection: 'row', paddingTop: 15, paddingLeft: 15 },
@@ -1396,7 +1393,7 @@
             closeButton: { paddingTop: 15 },
           }
         }),
-        L = u(I)
+        L = u(w)
       t.default = L
     },
   },

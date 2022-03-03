@@ -656,13 +656,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a551bf7d', 'You’ll need to unpin one conversation to pin another.'),
           a('d98e066b', 'Conversation pinned.'),
           a('j302dba7', 'Conversation unpinned.'),
-          a('e5b0063d', function (e) {
-            return 'Timeline: ' + e.title
-          }),
-          a('cb367657', 'Conversation failed to pin. Try again.'),
-          a('ie9a7e48', 'Conversation failed to pin. Check your connection and try again.'),
-          a('hd3927c6', 'Conversation failed to unpin. Try again.'),
-          a('f1ac0968', 'Conversation failed to unpin. Check your connection and try again.'),
           a('b9dae4f4', 'Try a different search term'),
           a('e7fb2027', 'No more results'),
           a('b92a21d8', function (e) {
@@ -680,7 +673,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g2fd3205', 'People'),
           a('fb3c8e74', 'Recent searches'),
           a('ffd9cfe6', 'See more'),
+          a('e5b0063d', function (e) {
+            return 'Timeline: ' + e.title
+          }),
           a('i9028824', 'Loading'),
+          a('cb367657', 'Conversation failed to pin. Try again.'),
+          a('ie9a7e48', 'Conversation failed to pin. Check your connection and try again.'),
+          a('hd3927c6', 'Conversation failed to unpin. Try again.'),
+          a('f1ac0968', 'Conversation failed to unpin. Check your connection and try again.'),
           a('h845f281', 'Direct Message'),
           a('f325afc3', 'Compose a DM'),
           a('e51be7c0', 'Learn more'),
@@ -1408,8 +1408,13 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             return e.topicName + ' Topic'
           }),
           a('d6e2f9bd', 'Loading timeline'),
-          a('e2462db4', 'Most shared in your network · Last 24 hours'),
+          a('jbd22d48', function (e) {
+            return 'Most shared in your network · Last ' + n(e.count, 'hour', e.count + ' hours')
+          }),
           a('e950f6ef', 'No articles have been shared in your network.'),
+          a('e15e5636', function (e) {
+            return 'Last ' + n(e.count, 'hour', e.count + ' hours')
+          }),
           a('e7dcfb8f', 'more accounts'),
           a('g4782c0a', 'with Twitter Blue'),
           a('gaa01f2c', 'Twitter Spaces'),
@@ -1780,18 +1785,24 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           ),
           a('c87f3cf8', 'Note'),
           a('a5b19492', 'This note does not exist'),
-          a('a225549d', 'Meet Birdwatch'),
           a(
-            'bc203ca1',
-            'People want reliable information on what’s happening in the world, and they often come to Twitter to find it. To help our community stay informed, we’re testing out the Birdwatch pilot program, a way for people on Twitter to identify and provide valuable context on misleading information.',
+            'df4bead0',
+            'Birdwatch is a pilot program that aims to create a better-informed world. It empowers people on Twitter to collaboratively add helpful notes to Tweets that might be misleading.',
           ),
+          a('jdb52860', 'Contributors write and rate notes'),
           a(
-            'iea72310',
-            'Contributors to Birdwatch sign up to join the pilot program, then can create notes that explain why they think a Tweet is misleading — and include what they believe the correct information is.',
+            'b468ea24',
+            'Contributors are people on Twitter, just like you, who chose to enroll in the pilot to write and rate notes. The more people that participate, the better the program becomes.',
           ),
+          a('b25fcbe4', 'Only notes that people find helpful appear on a Tweet'),
           a(
-            'c337f3d1',
-            'We hope that by empowering our community with the right tools, everyone can be better informed.',
+            'f6d0427f',
+            'In order to be shown publicly as context on the Tweet, a note needs to be rated helpful by enough people from different points of view. This approach helps avoid bias and manipulation, and helps find notes that are helpful to many people.',
+          ),
+          a('c8c2c891', 'Twitter doesn’t choose what shows up, the people do'),
+          a(
+            'g98ea6c0',
+            'Twitter doesn’t write, rate or moderate notes (unless they break the Twitter rules). We believe giving people voice to make these choices together is a fair and effective way to add information that helps people stay better informed.',
           ),
           a('e72533f5', 'Birdwatch is built on data transparency'),
           a(
@@ -2274,14 +2285,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('d4b7cff7', function (e) {
             return e.distance + ' km'
-          }),
-          a('b211849e', function (e) {
-            return e.distance + ' m'
-          }),
+          })
+        a('b211849e', function (e) {
+          return e.distance + ' m'
+        }),
           a('b25fe02d', 'You don’t have a message selected'),
           a('b81d9b9b', 'Choose one from your existing messages, or start a new one.'),
-          a('hc73f03f', 'Your Account')
-        a('f15bfdb3', 'Account information'),
+          a('hc73f03f', 'Your Account'),
+          a('f15bfdb3', 'Account information'),
           a('a3841918', 'Email'),
           a('c21037d0', 'Country'),
           a('ab1f7eef', 'Change your password'),
@@ -2354,12 +2365,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('bdc6f5b7', 'Your account'),
           a('bdfa2b8c', 'Additional resources'),
           a('df483b47', 'Feature switches'),
-          a('e435cdff', 'Try searching for password reset, notifications, etc'),
-          a('c170a564', 'The term you entered did not bring up any results. Try a different search term.'),
-          a('ba8f6f81', 'Search Settings'),
           a('dae57a41', 'Allow all'),
           a('i7cbc154', 'Allow some'),
           a('e3a761ee', 'Off'),
+          a('e435cdff', 'Try searching for password reset, notifications, etc'),
+          a('c170a564', 'The term you entered did not bring up any results. Try a different search term.'),
+          a('ba8f6f81', 'Search Settings'),
           a('cedbb01c', 'Legal'),
           a('b4f917d0', 'Miscellaneous'),
           a(
@@ -2888,10 +2899,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('a2981062', 'Managing account'),
           a('aff4540e', 'Change managing account'),
           a('b8b9d10f', 'Set up account automation'),
-          a(
-            'f21474bc',
-            'Connect a managing account so your automated account receives an automated account label. All automated accounts must be connected to a managing account.',
-          ),
           a('e0bc51f5', 'Turn off account automation'),
           a('b92190c1', 'Managing account connected'),
           a('fb03b399', 'Managing account disconnected'),
@@ -2899,6 +2906,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e91c15f5', 'Disconnect your managing account?'),
           a('df035b80', 'Your automated account will lose its label if you disconnect your managing account.'),
           a('bd12cf34', 'Yes, disconnect'),
+          a('f79acef1', 'Learn more'),
           a(
             'a45d71b8',
             'These are the social accounts you connected to your Twitter account to log in. You can disable access here.',
@@ -3515,15 +3523,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'If you haven’t already specified a gender, this is the one associated with your account based on your profile and activity. This information won’t be displayed publicly.',
           ),
           a('de32365f', 'Female'),
-          a('b6ab31bd', 'Male'),
-          a('b4568a3a', 'Add your gender'),
+          a('b6ab31bd', 'Male')
+        a('b4568a3a', 'Add your gender'),
           a('c0be743d', 'Gender updated'),
           a('b7cb74e0', 'This is the gender that Twitter has most strongly associated with you.'),
-          a('cdb0d3e6', 'Do not use this gender for personalization.')
-        a(
-          'd1a276bc',
-          'These are the places Twitter uses to show you more relevant content. You won’t see places listed here if you turned off “Personalize based on places you’ve been”.',
-        ),
+          a('cdb0d3e6', 'Do not use this gender for personalization.'),
+          a(
+            'd1a276bc',
+            'These are the places Twitter uses to show you more relevant content. You won’t see places listed here if you turned off “Personalize based on places you’ve been”.',
+          ),
           a('ddefdd1c', 'Remove places you’ve been?'),
           a('hea740ac', 'This will take some time, and can’t be undone.'),
           a('a26e0d52', 'Got it. These places will be removed.'),
@@ -4724,15 +4732,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('gb18f22f', 'Original'),
           a('f6326a45', 'Publish Moment to see added Tweets'),
           a('gce85231', 'Update Moment to see pending changes'),
-          a('ae7600c8', 'Moment is up to date'),
-          a('fea74b66', function (e) {
-            return '@' + e.screenName + '’s Moments'
-          }),
-          a('e14206c3', 'You haven’t created any Moments'),
-          a('d1e5e327', 'When you do, it’ll show up here.'),
-          a('ee75768c', function (e) {
-            return '@' + e.screenName + ' hasn’t created any Moments'
-          })
+          a('ae7600c8', 'Moment is up to date')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4749,7 +4749,15 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('f5978663', 'When they do, they’ll show up here.'),
+        a('fea74b66', function (e) {
+          return '@' + e.screenName + '’s Moments'
+        }),
+          a('e14206c3', 'You haven’t created any Moments'),
+          a('d1e5e327', 'When you do, it’ll show up here.'),
+          a('ee75768c', function (e) {
+            return '@' + e.screenName + ' hasn’t created any Moments'
+          }),
+          a('f5978663', 'When they do, they’ll show up here.'),
           a('a357d876', 'This account’s Moments are unavailable.'),
           a('i7e9ecf2', 'Pending changes'),
           a('e2e35f0d', 'The number of times your Moment was viewed'),
@@ -5311,6 +5319,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b9238e88', function (e) {
             return 'Subscribe for ' + e.price + '/mo'
           }),
+          a('ea6a437a', 'Terms & Conditions'),
           a('fce91ab4', 'Hmmm - that didn’t work.'),
           a(
             'gc7637d3',
@@ -6008,8 +6017,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('b140e3b1', 'Some conversations can get heavy'),
           a('icbb05dc', 'Don’t forget the human behind the screen.'),
-          a('g4d12383', 'Heads up'),
-          a('fe5ab73c', 'Conversations like this can be intense. Don’t forget the human behind the screen.'),
+          a('g4d12383', 'Heads up')
+        a('fe5ab73c', 'Conversations like this can be intense. Don’t forget the human behind the screen.'),
           a('fe0c6436', function (e) {
             return 'Only @' + e.screenName + '’s Twitter Circle can see this Tweet'
           }),
@@ -6021,8 +6030,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d7e50a66', 'Learn more'),
           a('e5e32275', function (e) {
             return 'Only people in @' + e.screenName + '’s Twitter Circle can see this Tweet'
-          })
-        a('affbaf62', 'More information'),
+          }),
+          a('affbaf62', 'More information'),
           a('c388d026', 'OK'),
           a('d9687d23', function (e) {
             return 'Down by ' + e.trendValueNegativePercent
@@ -7887,6 +7896,14 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
+                key: 'd79b6b7b',
+                get: function () {
+                  return [
+                    'Connect a managing account so your automated account receives an automated account label. All automated accounts must be connected to a managing account. ',
+                  ]
+                },
+              },
+              {
                 key: 'f3c4e2c5',
                 get: function () {
                   return ['Your new email ' + this.props.unverifiedEmail + ' has not been confirmed. ']
@@ -8457,7 +8474,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 },
               },
               {
-                key: 'h73408b9',
+                key: 'a66ed614',
                 get: function () {
                   return [
                     'By clicking Subscribe you agree to the ',

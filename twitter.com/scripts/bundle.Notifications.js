@@ -94,8 +94,8 @@
         },
         B = n('rHpw'),
         D = n('VrCx'),
-        Q = n('ReVx'),
-        F =
+        F = n('ReVx'),
+        Q =
           ((i = {}),
           _()(i, k.b.Notification, j),
           _()(
@@ -110,7 +110,7 @@
                 _()(
                   a,
                   D.a.Tweet,
-                  Object(Q.a)({
+                  Object(F.a)({
                     allowDownvote: !0,
                     createAdditionalProps: function (t, e) {
                       return { isUnread: e.isUnread }
@@ -140,7 +140,7 @@
             }),
           ),
           i),
-        H = O()(O()(O()({}, Object(x.a)({ tweetDismissable: !0, withMuteConversation: !0 })), F), L.a),
+        H = O()(O()(O()({}, Object(x.a)({ tweetDismissable: !0, withMuteConversation: !0 })), Q), L.a),
         J = B.a.create(function (t) {
           return {
             quotedTweet: {
@@ -425,19 +425,20 @@
           .adjustStateProps(function (t) {
             var e = t.loggedInUser
             return { isLoggedInUserVerified: !!e && e.verified }
-          }),
+          })
+          .withAnalytics({ page: 'ntab' }),
         l = n('pnqf'),
         d = n('dwig'),
         p = n('0+qk'),
         f = n('3XMw'),
         m = n.n(f),
-        y = n('5FtR'),
-        h = n('wytG'),
-        b = n('+Bsv'),
-        g = n('VS6U'),
-        v = n('mw9i'),
-        _ = n('k/OQ'),
-        w = n('7JQg'),
+        y = n('yoO3'),
+        h = n('5FtR'),
+        b = n('wytG'),
+        g = n('+Bsv'),
+        v = n('VS6U'),
+        _ = n('mw9i'),
+        w = n('k/OQ'),
         T = n('zCf4'),
         E = m.a.eb75875d,
         I = m.a.f8321d82,
@@ -447,20 +448,20 @@
         M = '/notifications',
         O = '/notifications/mentions',
         S = '/notifications/verified',
-        x = i.a.createElement(b.a, { pullRight: !0, to: '/settings/notifications' }),
+        x = i.a.createElement(g.a, { pullRight: !0, to: '/settings/notifications' }),
         k = m.a.eb75875d,
         L = Object(l.a)(
-          Object(h.a)(function () {
+          Object(b.a)(function () {
             return Promise.resolve().then(n.bind(null, 'hCg+'))
           }),
         ),
         V = Object(l.a)(
-          Object(h.a)(function () {
+          Object(b.a)(function () {
             return Promise.resolve().then(n.bind(null, 'lGAB'))
           }),
         ),
         j = Object(l.a)(
-          Object(h.a)(function () {
+          Object(b.a)(function () {
             return Promise.resolve().then(n.bind(null, 'srGC'))
           }),
         ),
@@ -487,19 +488,24 @@
               i.a.createElement(T.b, { component: j, exact: !0, path: S }),
             )
           return u.pathname !== S || l
-            ? i.a.createElement(g.a, {
-                documentTitle: E,
-                history: s,
-                primaryContent:
-                  ((n = i.a.createElement(p.a, { history: s })), i.a.createElement(d.a, { component: v.a, fab: n }, f)),
-                rightControl: x,
-                secondaryBar: ((e = l ? N : R), i.a.createElement(_.a, { accessibilityLabel: C, links: e })),
-                sidebarContent: i.a.createElement(o.a, null),
-                title: k,
-              })
-            : i.a.createElement(y.a, { to: M })
+            ? i.a.createElement(
+                y.a,
+                null,
+                i.a.createElement(v.a, {
+                  documentTitle: E,
+                  history: s,
+                  primaryContent:
+                    ((n = i.a.createElement(p.a, { history: s })),
+                    i.a.createElement(d.a, { component: _.a, fab: n }, f)),
+                  rightControl: x,
+                  secondaryBar: ((e = l ? N : R), i.a.createElement(w.a, { accessibilityLabel: C, links: e })),
+                  sidebarContent: i.a.createElement(o.a, null),
+                  title: k,
+                }),
+              )
+            : i.a.createElement(h.a, { to: M })
         }
-      e.default = Object(w.a)({ page: 'ntab' })(u(U))
+      e.default = u(U)
     },
     b5s6: function (t, e, n) {
       'use strict'

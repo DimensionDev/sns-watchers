@@ -9,8 +9,8 @@
         c = n.n(r),
         i = n('1Pcy'),
         l = n.n(i),
-        u = n('5Yy7'),
-        s = n.n(u),
+        s = n('5Yy7'),
+        u = n.n(s),
         d = n('2VqO'),
         h = n.n(d),
         b = n('KEM+'),
@@ -21,7 +21,7 @@
         E = n('rHpw'),
         C = n('MWbm'),
         _ = (function (e) {
-          s()(n, e)
+          u()(n, e)
           var t = h()(n)
           function n() {
             var e
@@ -94,8 +94,8 @@
         c = n.n(r),
         i = n('1Pcy'),
         l = n.n(i),
-        u = n('5Yy7'),
-        s = n.n(u),
+        s = n('5Yy7'),
+        u = n.n(s),
         d = n('2VqO'),
         h = n.n(d),
         b = n('KEM+'),
@@ -127,7 +127,7 @@
         D = n('rHpw'),
         k = w.a.i2209530,
         F = (function (e) {
-          s()(n, e)
+          u()(n, e)
           var t = h()(n)
           function n() {
             var e
@@ -202,7 +202,7 @@
                     c = e.title,
                     i = e.withBottomBorder,
                     l = this.getBackLocation(),
-                    u = t ? '@'.concat(t.screen_name) : void 0
+                    s = t ? '@'.concat(t.screen_name) : void 0
                   return f.a.createElement(
                     L.a,
                     {
@@ -212,7 +212,7 @@
                       screenType: o,
                       secondaryBar: r,
                       showSubtitleOnWideDetail: !1,
-                      subtitle: u,
+                      subtitle: s,
                       title: c,
                       withBottomBorder: i,
                     },
@@ -272,13 +272,13 @@
         c = n.n(r),
         i = (n('yH/f'), n('oEOe')),
         l = n('iD2S'),
-        u = n.n(l),
-        s = n('kGix'),
+        s = n.n(l),
+        u = n('kGix'),
         d = n('Ssj5'),
         h = 'accountTaxonomy',
         b =
           ('rweb/'.concat(h),
-          u()({ account_label: { disableStatus: s.a.NONE, fetchStatus: s.a.NONE, managed_label: void 0 } })),
+          s()({ account_label: { disableStatus: u.a.NONE, fetchStatus: u.a.NONE, managed_label: void 0 } })),
         m = Object.freeze({
           REQUEST: 'rweb/accountTaxonomy/FETCH_USER_ACCOUNT_LABEL_REQUEST',
           SUCCESS: 'rweb/accountTaxonomy/FETCH_USER_ACCOUNT_LABEL_SUCCESS',
@@ -298,7 +298,7 @@
               return c()(
                 c()({}, e),
                 {},
-                { account_label: c()(c()({}, e.account_label), {}, { fetchStatus: s.a.LOADING }) },
+                { account_label: c()(c()({}, e.account_label), {}, { fetchStatus: u.a.LOADING }) },
               )
             case m.SUCCESS:
               var n, a, o
@@ -320,7 +320,7 @@
                         : o.account_label,
                     ),
                     {},
-                    { fetchStatus: s.a.LOADED },
+                    { fetchStatus: u.a.LOADED },
                   ),
                 },
               )
@@ -328,25 +328,25 @@
               return c()(
                 c()({}, e),
                 {},
-                { account_label: c()(c()({}, e.account_label), {}, { fetchStatus: s.a.FAILED }) },
+                { account_label: c()(c()({}, e.account_label), {}, { fetchStatus: u.a.FAILED }) },
               )
             case p.REQUEST:
               return c()(
                 c()({}, e),
                 {},
-                { account_label: c()(c()({}, e.account_label), {}, { disableStatus: s.a.LOADING }) },
+                { account_label: c()(c()({}, e.account_label), {}, { disableStatus: u.a.LOADING }) },
               )
             case p.SUCCESS:
               return c()(
                 c()({}, e),
                 {},
-                { account_label: { managed_label: void 0, fetchStatus: s.a.LOADED, disableStatus: s.a.LOADED } },
+                { account_label: { managed_label: void 0, fetchStatus: u.a.LOADED, disableStatus: u.a.LOADED } },
               )
             case p.FAILURE:
               return c()(
                 c()({}, e),
                 {},
-                { account_label: c()(c()({}, e.account_label), {}, { disableStatus: s.a.FAILED }) },
+                { account_label: c()(c()({}, e.account_label), {}, { disableStatus: u.a.FAILED }) },
               )
             default:
               return e
@@ -369,7 +369,7 @@
           return (
             (null === (t = e.accountTaxonomy) || void 0 === t || null === (n = t.account_label) || void 0 === n
               ? void 0
-              : n.fetchStatus) || s.a.NONE
+              : n.fetchStatus) || u.a.NONE
           )
         },
         E = function (e) {
@@ -377,7 +377,7 @@
           return (
             (null === (t = e.accountTaxonomy) || void 0 === t || null === (n = t.account_label) || void 0 === n
               ? void 0
-              : n.disableStatus) || s.a.NONE
+              : n.disableStatus) || u.a.NONE
           )
         },
         C = function (e) {
@@ -407,8 +407,8 @@
         c = n.n(r),
         i = n('Y9Ll'),
         l = n.n(i),
-        u = n('1Pcy'),
-        s = n.n(u),
+        s = n('1Pcy'),
+        u = n.n(s),
         d = n('5Yy7'),
         h = n.n(d),
         b = n('2VqO'),
@@ -460,7 +460,7 @@
             for (var a = arguments.length, o = new Array(a), r = 0; r < a; r++) o[r] = arguments[r]
             return (
               (e = t.call.apply(t, [this].concat(o))),
-              f()(s()(e), '_renderChildren', function () {
+              f()(u()(e), '_renderChildren', function () {
                 var t = e.props.children
                 return e.context.rootDetailPerColumnScroll
                   ? C.a.createElement(
@@ -536,8 +536,8 @@
                     c = n.backLocation,
                     i = n.documentTitle,
                     l = n.headerless,
-                    u = n.history,
-                    s = n.leftControl,
+                    s = n.history,
+                    u = n.leftControl,
                     d = n.middleControl,
                     h = n.onBackClick,
                     b = n.rightControl,
@@ -566,8 +566,8 @@
                         backLocation: c,
                         fixed: !1,
                         hideBackButton: R,
-                        history: u,
-                        leftControl: s,
+                        history: s,
+                        leftControl: u,
                         middleControl: d,
                         onBackClick: h,
                         rightControl: b,
@@ -632,8 +632,8 @@
         c = n.n(r),
         i = n('ERkP'),
         l = n.n(i),
-        u = n('t62R'),
-        s = n('I4+6'),
+        s = n('t62R'),
+        u = n('I4+6'),
         d = n('cm6r'),
         h = n('rHpw'),
         b = n('MWbm'),
@@ -655,7 +655,7 @@
           a = e.color,
           r = e.label,
           i = c()(e, m),
-          f = s.a.generate({
+          f = u.a.generate({
             backgroundColor: h.a.theme.colors.transparent,
             color: h.a.theme.colors[a],
             insetFocusRing: !0,
@@ -666,7 +666,7 @@
           l.a.createElement(
             d.a,
             o()({}, i, { interactiveStyles: f, style: p.root }),
-            l.a.createElement(u.b, { align: n, color: a }, r),
+            l.a.createElement(s.b, { align: n, color: a }, r),
           ),
         )
       }
@@ -675,13 +675,13 @@
       'use strict'
       n.r(t),
         n.d(t, 'changeManagingAccountLabel', function () {
-          return G
-        }),
-        n.d(t, 'setManagingAccountLabel', function () {
           return K
         }),
+        n.d(t, 'setManagingAccountLabel', function () {
+          return q
+        }),
         n.d(t, 'AccountAutomationScreen', function () {
-          return ie
+          return le
         })
       var a = n('yiKp'),
         o = n.n(a),
@@ -689,8 +689,8 @@
         c = n.n(r),
         i = n('Y9Ll'),
         l = n.n(i),
-        u = n('1Pcy'),
-        s = n.n(u),
+        s = n('1Pcy'),
+        u = n.n(s),
         d = n('5Yy7'),
         h = n.n(d),
         b = n('2VqO'),
@@ -717,43 +717,56 @@
           .withAnalytics({ page: 'settings', section: 'account_automation' }),
         v = n('kGix'),
         w = n('v//M'),
-        L = n('3XMw'),
-        A = n.n(L),
-        B = n('yoO3'),
-        O = n('7JQg'),
-        T = n('7FtF'),
-        D = n('MWbm'),
-        k = n('Irs7'),
-        F = n('4zmP'),
-        U = n('csss'),
-        x = n('3Ohe'),
-        I = n('0yYu'),
-        R = n('jtO7'),
-        M = n('feu+'),
-        N = n('RKmr'),
-        P = n('rHpw'),
-        H = n('v6aA'),
-        j = n('Oib4'),
-        V = n('WtWS'),
-        z = A.a.d12d42db,
-        W = A.a.ad31b476,
-        Y = A.a.a2981062,
-        G = A.a.aff4540e,
-        K = A.a.b8b9d10f,
-        q = A.a.f21474bc,
-        Q = A.a.e0bc51f5,
-        X = A.a.i9028824,
-        J = A.a.b92190c1,
-        Z = A.a.fb03b399,
-        $ = A.a.bd51ddfa,
-        ee = { page: 'settings', section: 'account_information', component: 'automation' },
-        te = { page: 'system', section: 'message' },
-        ne = A.a.e91c15f5,
-        ae = A.a.df035b80,
-        oe = A.a.bd12cf34,
-        re = A.a.cfd2f35d,
-        ce = '/i/flow/enable_automated_account',
-        ie = (function (e) {
+        L = n('yoO3'),
+        A = n('7JQg'),
+        B = n('7FtF'),
+        O = n('MWbm'),
+        T = n('Irs7'),
+        D = n('t62R'),
+        k = n('4zmP'),
+        F = n('csss'),
+        U = n('3Ohe'),
+        x = n('0yYu'),
+        I = n('jtO7'),
+        R = n('feu+'),
+        M = n('RKmr'),
+        N = n('rHpw'),
+        P = n('v6aA'),
+        H = n('3XMw'),
+        j = n.n(H),
+        V = n('Oib4'),
+        z = n('WtWS'),
+        W = j.a.d12d42db,
+        Y = j.a.ad31b476,
+        G = j.a.a2981062,
+        K = j.a.aff4540e,
+        q = j.a.b8b9d10f,
+        Q = E.a.createElement(
+          D.b,
+          { color: 'gray700', size: 'subtext2' },
+          E.a.createElement(
+            j.a.I18NFormatMessage,
+            { $i18n: 'd79b6b7b' },
+            E.a.createElement(
+              D.b,
+              { link: 'https://help.twitter.com/using-twitter/automated-account-labels', size: 'subtext2' },
+              j.a.f79acef1,
+            ),
+          ),
+        ),
+        X = j.a.e0bc51f5,
+        J = j.a.i9028824,
+        Z = j.a.b92190c1,
+        $ = j.a.fb03b399,
+        ee = j.a.bd51ddfa,
+        te = { page: 'settings', section: 'account_information', component: 'automation' },
+        ne = { page: 'system', section: 'message' },
+        ae = j.a.e91c15f5,
+        oe = j.a.df035b80,
+        re = j.a.bd12cf34,
+        ce = j.a.cfd2f35d,
+        ie = '/i/flow/enable_automated_account',
+        le = (function (e) {
           h()(n, e)
           var t = m()(n)
           function n(e, a) {
@@ -761,85 +774,85 @@
             return (
               c()(this, n),
               (o = t.call(this, e, a)),
-              f()(s()(o), '_handleHideCallout', function () {
+              f()(u()(o), '_handleHideCallout', function () {
                 o.setState({ showCallout: !1 })
               }),
-              f()(s()(o), '_handleShowCallout', function (e) {
+              f()(u()(o), '_handleShowCallout', function (e) {
                 var t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1]
                 o.setState({ showCallout: !0, calloutIsError: t, calloutLabel: e })
               }),
-              f()(s()(o), '_renderCallout', function () {
+              f()(u()(o), '_renderCallout', function () {
                 var e = o.state,
                   t = e.calloutIsError,
                   n = e.calloutLabel,
-                  a = t ? j.a : V.a,
+                  a = t ? V.a : z.a,
                   r = t ? 'danger' : 'success'
                 return E.a.createElement(
-                  D.a,
-                  { style: le.inlineCallout },
-                  E.a.createElement(F.a, { Icon: a, headline: n || '', onClose: o._handleHideCallout, type: r }),
+                  O.a,
+                  { style: se.inlineCallout },
+                  E.a.createElement(k.a, { Icon: a, headline: n || '', onClose: o._handleHideCallout, type: r }),
                 )
               }),
-              f()(s()(o), '_handleFetchUserAccountLabel', function () {
+              f()(u()(o), '_handleFetchUserAccountLabel', function () {
                 var e = o.props,
                   t = e.fetchUserAccountLabel,
                   n = e.user,
                   a = null == n ? void 0 : n.id_str
                 a && t(a)
               }),
-              f()(s()(o), '_handleDisableUserAccountLabel', function () {
+              f()(u()(o), '_handleDisableUserAccountLabel', function () {
                 ;(0, o.props.disableUserAccountLabel)(), o._handleToggleDisableConfirmation()
               }),
-              f()(s()(o), '_handleToggleDisableConfirmation', function () {
+              f()(u()(o), '_handleToggleDisableConfirmation', function () {
                 o.setState({ showDisableConfirmation: !o.state.showDisableConfirmation })
               }),
-              f()(s()(o), '_renderUnassignedManagingAccountView', function () {
+              f()(u()(o), '_renderUnassignedManagingAccountView', function () {
                 return E.a.createElement(
-                  D.a,
+                  O.a,
                   null,
-                  E.a.createElement(U.a, { description: q, label: K, link: ce }),
+                  E.a.createElement(F.a, { description: Q, label: q, link: ie }),
                   o.state.showCallout && o._renderCallout(),
                 )
               }),
-              f()(s()(o), '_renderAssignedManagingAccountView', function () {
+              f()(u()(o), '_renderAssignedManagingAccountView', function () {
                 return E.a.createElement(
-                  D.a,
+                  O.a,
                   null,
-                  E.a.createElement(x.a, { label: Y, subtext: o.props.managingAccount || '', withBottomBorder: !1 }),
-                  E.a.createElement(U.a, { label: G, link: ce }),
+                  E.a.createElement(U.a, { label: G, subtext: o.props.managingAccount || '', withBottomBorder: !1 }),
+                  E.a.createElement(F.a, { label: K, link: ie }),
                   o.state.showCallout && o._renderCallout(),
-                  E.a.createElement(I.a, null),
-                  E.a.createElement(R.a, { color: 'red500', label: Q, onPress: o._handleToggleDisableConfirmation }),
+                  E.a.createElement(x.a, null),
+                  E.a.createElement(I.a, { color: 'red500', label: X, onPress: o._handleToggleDisableConfirmation }),
                 )
               }),
-              f()(s()(o), '_renderDisconnectConfirmation', function () {
-                return E.a.createElement(M.a, {
-                  actionLabel: oe,
+              f()(u()(o), '_renderDisconnectConfirmation', function () {
+                return E.a.createElement(R.a, {
+                  actionLabel: re,
                   graphicDisplayMode: 'none',
-                  headline: ne,
+                  headline: ae,
                   onAction: o._handleDisableUserAccountLabel,
                   onClose: o._handleToggleDisableConfirmation,
                   onSecondaryAction: o._handleToggleDisableConfirmation,
-                  secondaryActionLabel: re,
-                  subtext: ae,
+                  secondaryActionLabel: ce,
+                  subtext: oe,
                   useBrandedActionButtons: !0,
                   withCloseButton: !0,
                 })
               }),
-              f()(s()(o), '_render', function () {
+              f()(u()(o), '_render', function () {
                 var e = o.props.managingAccount
                     ? o._renderAssignedManagingAccountView()
                     : o._renderUnassignedManagingAccountView(),
                   t = o.state.showDisableConfirmation
                 return E.a.createElement(
-                  T.a,
-                  { title: z },
+                  B.a,
+                  { title: W },
                   t && o._renderDisconnectConfirmation(),
-                  E.a.createElement(N.a, { description: W }),
+                  E.a.createElement(M.a, { description: Y }),
                   e,
                 )
               }),
-              f()(s()(o), '_scribe', function (e) {
+              f()(u()(o), '_scribe', function (e) {
                 o.props.analytics.scribe(e)
               }),
               (o._initialPath = o._previousPath = window.location.pathname),
@@ -874,24 +887,24 @@
                     c = n.managingAccountFetchStatus,
                     i = e.disableAccountLabelStatus,
                     l = e.managingAccount,
-                    u = e.managingAccountFetchStatus,
-                    s = this.state.hasExitedOCF,
+                    s = e.managingAccountFetchStatus,
+                    u = this.state.hasExitedOCF,
                     d = l && r !== l,
-                    h = u === v.a.LOADED || c === v.a.LOADED
+                    h = s === v.a.LOADED || c === v.a.LOADED
                   if (
                     (d &&
                       h &&
-                      s &&
-                      (this._handleShowCallout(J), this._scribe(o()(o()({}, ee), {}, { action: 'enabled' }))),
+                      u &&
+                      (this._handleShowCallout(Z), this._scribe(o()(o()({}, te), {}, { action: 'enabled' }))),
                     a !== i)
                   )
                     switch (i) {
                       case v.a.LOADED:
-                        this._handleShowCallout(Z), this._scribe(o()(o()({}, ee), {}, { action: 'disabled' }))
+                        this._handleShowCallout($), this._scribe(o()(o()({}, te), {}, { action: 'disabled' }))
                         break
                       case v.a.FAILED:
-                        this._handleShowCallout($, !0),
-                          this._scribe(o()(o()({}, te), {}, { element: 'automation_opt_out_error', action: 'view' }))
+                        this._handleShowCallout(ee, !0),
+                          this._scribe(o()(o()({}, ne), {}, { element: 'automation_opt_out_error', action: 'view' }))
                     }
                   return e !== this.props || t !== this.state
                 },
@@ -901,13 +914,13 @@
                 value: function () {
                   var e = this.props.managingAccountFetchStatus
                   return E.a.createElement(
-                    O.c,
-                    { namespace: ee },
+                    A.c,
+                    { namespace: te },
                     E.a.createElement(
-                      B.a,
+                      L.a,
                       null,
                       E.a.createElement(w.a, {
-                        accessibilityLabel: X,
+                        accessibilityLabel: J,
                         fetchStatus: e,
                         onRequestRetry: this._handleFetchUserAccountLabel,
                         render: this._render,
@@ -920,11 +933,11 @@
             n
           )
         })(E.a.Component)
-      f()(ie, 'contextType', H.a)
-      var le = P.a.create(function (e) {
+      f()(le, 'contextType', P.a)
+      var se = N.a.create(function (e) {
         return { inlineCallout: { paddingLeft: e.spaces.space16, paddingRight: e.spaces.space16 } }
       })
-      t.default = Object(k.a)(S(ie))
+      t.default = Object(T.a)(S(le))
     },
   },
 ])

@@ -24,7 +24,7 @@
       'use strict'
       r.r(t),
         r.d(t, 'PlaceScreen', function () {
-          return K
+          return D
         })
       r('uFXj')
       var a = r('ERkP'),
@@ -64,7 +64,8 @@
               createLocalApiErrorHandler: Object(v.createLocalApiErrorHandlerWithContextFactory)('PLACE_SCREEN'),
               fetchPlaceIfNeeded: m.fetchOneIfNeeded,
             }
-          }),
+          })
+          .withAnalytics({ page: 'place' }),
         _ = r('v//M'),
         C = r('3XMw'),
         S = r.n(C),
@@ -74,24 +75,23 @@
         P = r('3IPs'),
         I = r('VS6U'),
         x = r('MWbm'),
-        O = r('G8HL'),
-        M = r('/yvb'),
+        M = r('G8HL'),
+        O = r('/yvb'),
         L = r('t62R'),
         z = r('k/OQ'),
         H = r('cHvH'),
         F = r('rHpw'),
-        R = r('7JQg'),
-        q = S.a.jaaa8984,
-        j = S.a.bab1f8b0,
-        V = S.a.add55c97,
+        R = S.a.jaaa8984,
+        q = S.a.bab1f8b0,
+        j = S.a.add55c97,
         A = S.a.f4a654a3,
-        D = function (e) {
+        V = function (e) {
           var t = {}
           'foursquare' === e.vendor &&
             (t = (function (e) {
               var t = e.data.venue_id
               return {
-                attributionDetails: n.a.createElement(w.a, { style: B.icon }),
+                attributionDetails: n.a.createElement(w.a, { style: K.icon }),
                 href: 'https://foursquare.com/v/'.concat(t),
                 buttonText: A,
               }
@@ -102,12 +102,12 @@
             i = r.href
           return n.a.createElement(
             x.a,
-            { style: B.attribution },
-            n.a.createElement(x.a, { style: B.attributionDetails }, a),
-            n.a.createElement(M.a, { link: i, size: 'xSmall', type: 'brandOutlined' }, c),
+            { style: K.attribution },
+            n.a.createElement(x.a, { style: K.attributionDetails }, a),
+            n.a.createElement(O.a, { link: i, size: 'xSmall', type: 'brandOutlined' }, c),
           )
         },
-        K = function (e) {
+        D = function (e) {
           var t = e.createLocalApiErrorHandler,
             r = e.fetchPlaceIfNeeded,
             a = e.history,
@@ -115,7 +115,7 @@
             o = e.place,
             s = e.placeFetchStatus,
             u = e.placeId,
-            d = o ? o.full_name : q
+            d = o ? o.full_name : R
           n.a.useEffect(
             function () {
               r(u).catch(t())
@@ -129,10 +129,10 @@
                 r = e.street_address
               return n.a.createElement(
                 x.a,
-                { style: B.locationDetails },
+                { style: K.locationDetails },
                 n.a.createElement(L.b, { size: 'headline1', weight: 'bold' }, o.full_name),
                 r ? n.a.createElement(L.b, { color: 'gray700', size: 'body' }, r) : null,
-                t ? D(t) : null,
+                t ? V(t) : null,
               )
             },
             p = function () {
@@ -140,13 +140,13 @@
             },
             m = function () {
               var e = [
-                { isActive: v, key: j, retainScrollPosition: !1, to: l.pathname, label: j },
+                { isActive: v, key: q, retainScrollPosition: !1, to: l.pathname, label: q },
                 {
                   isActive: p,
-                  key: V,
+                  key: j,
                   retainScrollPosition: !1,
                   to: { query: { f: 'media' }, pathname: l.pathname },
-                  label: V,
+                  label: j,
                 },
               ]
               return n.a.createElement(z.a, { links: e })
@@ -173,19 +173,19 @@
                   null,
                   n.a.createElement(
                     x.a,
-                    { style: B.header },
+                    { style: K.header },
                     n.a.createElement(_.a, { fetchStatus: s, render: h }),
                     m(),
                   ),
                   f(),
                 ),
                 sidebarContent: n.a.createElement(i.a, null),
-                title: r ? null : q,
+                title: r ? null : R,
               })
             }),
           )
         },
-        B = F.a.create(function (e) {
+        K = F.a.create(function (e) {
           return {
             header: { backgroundColor: e.colors.cellBackground, zIndex: e.componentZIndices.appBarZIndex },
             locationDetails: {
@@ -205,8 +205,9 @@
             },
             attributionDetails: { flexShrink: 1, marginRight: e.spaces.space12 },
           }
-        })
-      t.default = Object(R.a)({ page: 'place' })(E(Object(O.a)(K)))
+        }),
+        B = E(Object(M.a)(D))
+      t.default = B
     },
     JFx8: function (e, t, r) {
       'use strict'
@@ -304,14 +305,14 @@
         },
         I = E.e(P),
         x = (r('yH/f'), Object.freeze({ Expand: 'Expand', Replace: 'Replace', Suggest: 'Suggest' })),
-        O = {
+        M = {
           loader: function () {
             return r.e(355).then(r.bind(null, '5aND'))
           },
           loaderKey: 'spellingExpandLoader',
           strategy: k.a.Critical,
         },
-        M = {
+        O = {
           loader: function () {
             return r.e(355).then(r.bind(null, '77Dd'))
           },
@@ -329,7 +330,7 @@
           selectDisplayType: function (e) {
             return e.content.spellingAction
           },
-          handlers: ((a = {}), f()(a, x.Expand, O), f()(a, x.Replace, M), f()(a, x.Suggest, L), a),
+          handlers: ((a = {}), f()(a, x.Expand, M), f()(a, x.Replace, O), f()(a, x.Suggest, L), a),
         }),
         H = function (e) {
           var t = e.shouldStoreTypeaheadItem,
@@ -366,8 +367,8 @@
         R = r('oQhu'),
         q = r('EUHl'),
         j = r('7BdX'),
-        V = r('fTQJ'),
-        A = r('i6OR'),
+        A = r('fTQJ'),
+        V = r('i6OR'),
         D = r('X04g'),
         K = r('t62R'),
         B = r('FIs5'),
@@ -375,12 +376,12 @@
         X = r('3XMw'),
         N = r.n(X),
         J = N.a.c09de2d4,
-        Q = y.a.createElement(
+        W = y.a.createElement(
           N.a.I18NFormatMessage,
           { $i18n: 'f0089e9c' },
           y.a.createElement(K.b, { link: '/settings/search' }, N.a.d2918e88),
         ),
-        W = N.a.ae111c99,
+        Q = N.a.ae111c99,
         Y = (function (e) {
           d()(r, e)
           var t = p()(r)
@@ -416,13 +417,13 @@
                 var t = e.props,
                   r = t.emptyStateComponent,
                   a = t.query
-                return r || y.a.createElement(B.a, { header: W({ query: a }), message: Q })
+                return r || y.a.createElement(B.a, { header: Q({ query: a }), message: W })
               }),
               f()(
                 s()(e),
                 '_getMemoizedModule',
                 Object(R.a)(function (e, t, r, a, n, c) {
-                  return Object(A.b)({
+                  return Object(V.b)({
                     query: e,
                     searchMode: r,
                     querySource: t,
@@ -447,7 +448,7 @@
               {
                 key: 'render',
                 value: function () {
-                  return y.a.createElement(V.a, {
+                  return y.a.createElement(A.a, {
                     apiErrorHandlerMap: F.a,
                     entryConfiguration: this._getMemoizedEntryConfiguration(this.props.withUserPresence),
                     fetchOptions: this.props.fetchOptions,

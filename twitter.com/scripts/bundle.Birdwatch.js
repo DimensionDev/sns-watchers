@@ -1492,13 +1492,13 @@
       'use strict'
       a.r(t),
         a.d(t, 'BirdwatchAboutScreen', function () {
-          return T
+          return z
         })
-      a('z84I'), a('uFXj')
+      a('uFXj')
       var n = a('ERkP'),
         r = a.n(n),
         o = a('v6aA'),
-        i = a.p + 'birdwatch_logo.0a5315e5.png',
+        i = a.p + 'birdwatch_banner.3097f8b5.png',
         l = a('vZpt'),
         c = a('L5MV'),
         s = a('3XMw'),
@@ -1506,60 +1506,83 @@
         d = a('yoO3'),
         p = a('7JQg'),
         b = a('VS6U'),
-        m = a('t62R'),
-        f = a('/yvb'),
-        h = a('rHpw'),
-        g = a('U+bB'),
-        v = a('MWbm'),
-        E = u.a.b721eb37,
-        y = u.a.a225549d,
-        w = [u.a.bc203ca1, u.a.iea72310, u.a.c337f3d1],
-        _ = u.a.ff3e0be2,
-        C = u.a.i859a9d3,
-        S = { external: !0, pathname: 'https://twitter.github.io/birdwatch' },
-        I = { page: 'birdwatch', section: 'about' },
-        T = function (e) {
+        m = a('MWbm'),
+        f = a('t62R'),
+        h = a('h0NW'),
+        g = a('/yvb'),
+        v = a('rHpw'),
+        E = a('yiKp'),
+        y = a.n(E),
+        w = a('Lsrn'),
+        _ = a('k/Ka'),
+        C = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(_.a)(
+            'svg',
+            y()(
+              y()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [w.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            r.a.createElement(
+              'g',
+              null,
+              r.a.createElement('path', {
+                d: 'M22.132 7.653c0-.6-.234-1.166-.66-1.59l-3.535-3.536c-.85-.85-2.333-.85-3.182 0L3.417 13.865c-.323.323-.538.732-.63 1.25l-.534 5.816c-.02.223.06.442.217.6.14.142.332.22.53.22.023 0 .046 0 .068-.003l5.884-.544c.45-.082.86-.297 1.184-.62l11.337-11.34c.425-.424.66-.99.66-1.59zm-17.954 8.69l3.476 3.476-3.825.35.348-3.826zm16.235-8.16l-1.15 1.15-4.595-4.596 1.15-1.15c.14-.14.33-.22.53-.22s.388.08.53.22l3.535 3.536c.142.142.22.33.22.53s-.08.39-.22.53z',
+              }),
+            ),
+          )
+        }
+      C.metadata = { width: 24, height: 24 }
+      var S = C,
+        I = a('sUoZ'),
+        T = a('fBGZ'),
+        x = u.a.b721eb37,
+        A = u.a.b5711f09,
+        L = u.a.df4bead0,
+        O = u.a.jdb52860,
+        k = u.a.b468ea24,
+        B = u.a.b25fcbe4,
+        R = u.a.f6d0427f,
+        N = u.a.c8c2c891,
+        F = u.a.g98ea6c0,
+        D = u.a.ff3e0be2,
+        M = u.a.i859a9d3,
+        H = { external: !0, pathname: 'https://twitter.github.io/birdwatch' },
+        P = { page: 'birdwatch', section: 'about' },
+        z = function (e) {
           var t = e.history,
             a = r.a.useContext(o.a).featureSwitches,
             n = r.a.createElement(
               r.a.Fragment,
               null,
+              r.a.createElement(m.a, { style: [j.header, { backgroundImage: 'url('.concat(i, ')') }] }),
               r.a.createElement(
-                v.a,
-                { style: x.header },
-                r.a.createElement(
-                  v.a,
-                  { style: x.imageContainer },
-                  r.a.createElement(g.a, { source: i, style: x.image }),
-                ),
+                m.a,
+                { style: j.content },
+                r.a.createElement(f.b, { size: 'title4', style: j.textSection, weight: 'heavy' }, A),
+                r.a.createElement(f.b, { color: 'gray700', style: j.textSection }, L),
+                r.a.createElement(h.a, U),
               ),
-              r.a.createElement(
-                v.a,
-                { style: x.content },
-                r.a.createElement(m.b, { size: 'title4', style: x.textSection, weight: 'heavy' }, y),
-                w.map(function (e, t) {
-                  return r.a.createElement(
-                    m.b,
-                    { color: 'gray700', key: 'aboutText'.concat(t), style: x.textSection },
-                    e,
-                  )
-                }),
-              ),
-              r.a.createElement(v.a, { style: x.learnMore }, r.a.createElement(m.b, { link: S }, C)),
+              r.a.createElement(m.a, { style: j.learnMore }, r.a.createElement(f.b, { link: H }, M)),
               !a.isTrue('responsive_web_birdwatch_note_writing_enabled') &&
                 r.a.createElement(
-                  v.a,
-                  { style: x.buttonContainer },
+                  m.a,
+                  { style: j.buttonContainer },
                   r.a.createElement(
-                    f.a,
-                    { accessibilityLabel: _, link: '/i/flow/join-birdwatch', style: x.button, type: 'brandFilled' },
-                    _,
+                    g.a,
+                    { accessibilityLabel: D, link: '/i/flow/join-birdwatch', style: j.button, type: 'brandFilled' },
+                    D,
                   ),
                 ),
             )
           return r.a.createElement(
             p.c,
-            { namespace: I },
+            { namespace: P },
             r.a.createElement(
               d.a,
               null,
@@ -1569,26 +1592,34 @@
                 logoButton: r.a.createElement(r.a.Fragment, null),
                 primaryContent: n,
                 sidebarContent: r.a.createElement(l.a, null),
-                title: E,
+                title: x,
                 withTweetButton: !1,
               }),
             ),
           )
         },
-        x = h.a.create(function (e) {
+        j = v.a.create(function (e) {
           return {
             button: { marginTop: e.spaces.space20 },
             buttonContainer: { alignItems: 'center' },
             content: { margin: e.spaces.space20 },
             header: {
-              alignItems: 'center',
-              backgroundColor: '#EAF5FD',
+              backgroundSize: 'cover',
+              backgroundPosition: '50% 50%',
               height: '167px',
               justifyContent: 'center',
               width: '100%',
             },
-            image: { height: '100%', width: '100%' },
-            imageContainer: { height: '90px', width: '90px' },
+            icon: {
+              backgroundColor: e.colors.primary,
+              color: e.colors.white,
+              borderRadius: e.borderRadii.infinite,
+              height: e.spaces.space16,
+              marginRight: e.spaces.space12,
+              padding: e.spaces.space8,
+              width: e.spaces.space16,
+            },
+            infoItemContainer: { paddingHorizontal: 0 },
             learnMore: {
               borderColor: e.colors.borderColor,
               borderStyle: 'solid',
@@ -1599,8 +1630,17 @@
             },
             textSection: { marginBottom: e.spaces.space16 },
           }
-        })
-      t.default = T
+        }),
+        U = {
+          accessibilityLabel: x,
+          containerStyle: j.infoItemContainer,
+          items: [
+            { label: O, decoration: r.a.createElement(S, { style: j.icon }), description: k },
+            { label: B, decoration: r.a.createElement(I.a, { style: j.icon }), description: R },
+            { label: N, decoration: r.a.createElement(T.a, { style: j.icon }), description: F },
+          ],
+        }
+      t.default = z
     },
     L5MV: function (e, t, a) {
       'use strict'

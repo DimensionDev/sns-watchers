@@ -5737,7 +5737,13 @@
         },
         d = function (e, t) {
           return function () {
-            t.pathname.includes('/home') ? window.scrollTo(0, 0) : e.push('/home', { lockScroll: !0 })
+            var n,
+              a,
+              i =
+                (null === (n = t.state) || void 0 === n || null === (a = n.previousPath) || void 0 === a
+                  ? void 0
+                  : a.includes('/home')) && '/compose/tweet' === t.pathname
+            t.pathname.includes('/home') || i ? window.scrollTo(0, 0) : e.push('/home', { lockScroll: !0 })
           }
         },
         u = function (e) {

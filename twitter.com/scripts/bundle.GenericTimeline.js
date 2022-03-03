@@ -53,11 +53,11 @@
         C = l()(l()({}, Object(f.a)({ withMuteConversation: !0 })), w),
         P = n('3XMw'),
         h = n.n(P),
-        O = n('yoO3'),
-        T = n('5FtR'),
-        I = n('fTQJ'),
+        I = n('yoO3'),
+        O = n('5FtR'),
+        T = n('fTQJ'),
         j = n('VS6U'),
-        K = n('7JQg'),
+        K = n('Irs7'),
         L = h.a.a6d5b010,
         U = function (e) {
           var t = e.history,
@@ -75,20 +75,20 @@
             )
           return l
             ? a.a.createElement(
-                O.a,
+                I.a,
                 null,
                 a.a.createElement(j.a, {
                   backLocation: '/',
                   history: t,
-                  primaryContent: a.a.createElement(I.a, { entryConfiguration: C, module: l, title: i }),
+                  primaryContent: a.a.createElement(T.a, { entryConfiguration: C, module: l, title: i }),
                   sidebarContent: a.a.createElement(c.a, { withWhoToFollow: !1 }),
                   subtitle: u,
                   title: i,
                 }),
               )
-            : a.a.createElement(T.a, { to: '/' })
+            : a.a.createElement(O.a, { to: '/' })
         }
-      t.default = Object(K.a)({ page: 'generic_timeline' })(U)
+      t.default = Object(K.a)(U, { page: 'generic_timeline' })
     },
     PH3B: function (e, t, n) {
       'use strict'

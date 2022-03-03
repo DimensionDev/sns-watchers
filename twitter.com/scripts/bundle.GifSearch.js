@@ -26,11 +26,11 @@
         w = (a('tQbP'), a('zh9S')),
         C = a('xVN5'),
         x = a('CDB5'),
-        O = a('Qyxo'),
-        I = a('hqKg'),
+        I = a('Qyxo'),
+        O = a('hqKg'),
         N = a('AspN'),
         P = a('oEGd'),
-        M = Object(I.createSelector)(
+        M = Object(O.createSelector)(
           function (e, t) {
             var a = t.module,
               r = t.query
@@ -50,7 +50,7 @@
             return {
               initialFetchStatus: e,
               items: Array.isArray(t)
-                ? Object(O.a)(t, function (e) {
+                ? Object(I.a)(t, function (e) {
                     return e.url
                       ? E()(
                           E()({}, e),
@@ -89,11 +89,11 @@
         }),
         k = a('v//M'),
         A = a('x5W0'),
-        R = a('U+bB'),
-        F = a('XOY5'),
+        F = a('U+bB'),
+        R = a('XOY5'),
         q = a('cm6r'),
-        j = a('rHpw'),
-        T = (function (e) {
+        T = a('rHpw'),
+        j = (function (e) {
           s()(a, e)
           var t = d()(a)
           function a() {
@@ -126,7 +126,7 @@
                     n = e.shouldAutoPlayGif,
                     i = e.stillMediaUrl,
                     o = { height: r, width: e.width, uri: n ? a : i }
-                  return v.a.createElement(R.a, { accessibilityLabel: t, source: o, testID: F.a.gifSearchGifImage })
+                  return v.a.createElement(F.a, { accessibilityLabel: t, source: o, testID: R.a.gifSearchGifImage })
                 },
               },
             ]),
@@ -134,23 +134,23 @@
           )
         })(v.a.Component),
         K = function (e, t, a) {
-          return j.a.create(function (r) {
+          return T.a.create(function (r) {
             return { background: { backgroundColor: e, height: t, width: a } }
           })
         },
-        L = j.a.create(function (e) {
+        L = T.a.create(function (e) {
           return { imageContainer: { marginHorizontal: '1px', overflow: 'hidden', flexShrink: 1 } }
         }),
-        D = T,
+        D = j,
         B = a('MLl7'),
         V = a('3XMw'),
         U = a.n(V),
         H = a('TEoO'),
-        Q = a('eyty'),
-        Y = a('7nmT'),
-        z = a.n(Y),
-        W = a('MWbm'),
-        X =
+        Y = a('eyty'),
+        Q = a('7nmT'),
+        W = a.n(Q),
+        X = a('MWbm'),
+        z =
           (a('KOtZ'),
           a('7x/C'),
           a('LW0h'),
@@ -167,7 +167,7 @@
             function (e, r, n) {
               return (
                 e[e.length - 1].push(E()(E()({}, r), {}, { index: n })),
-                e[e.length - 1].length > 0 && X(e[e.length - 1], a) < t && e.push([]),
+                e[e.length - 1].length > 0 && z(e[e.length - 1], a) < t && e.push([]),
                 e
               )
             },
@@ -194,11 +194,11 @@
         oe = [],
         ce = Object($.a)(function (e, t, a) {
           return function (r) {
-            var n = X(r, t),
+            var n = z(r, t),
               i = t - 2 * r.length - 1,
               o = 0
             return v.a.createElement(
-              W.a,
+              X.a,
               { style: [se.imageRow, { height: n }] },
               r.map(function (t, c) {
                 var u = m()(t.thumbnail_images, 1)[0],
@@ -282,7 +282,7 @@
                     b = m()(e.thumbnail_images, 1)[0],
                     _ = e.url,
                     E = a({
-                      mediaCategory: o === B.a.Composition ? Q.b.TweetGif : Q.b.DMGif,
+                      mediaCategory: o === B.a.Composition ? Y.b.TweetGif : Y.b.DMGif,
                       mediaType: 'image/gif',
                       previewMediaType: 'video/mp4',
                       previewUrl: v,
@@ -323,7 +323,7 @@
               }),
               g()(u()(i), '_brickLayout', Object($.a)(J)),
               g()(u()(i), '_setRootNode', function (e) {
-                i._rootNode = z.a.findDOMNode(e)
+                i._rootNode = W.a.findDOMNode(e)
               }),
               (i.state = { width: 0 }),
               i
@@ -370,7 +370,7 @@
           )
         })(v.a.Component)
       g()(le, 'defaultProps', { fromSearch: !1 })
-      var se = j.a.create(function (e) {
+      var se = T.a.create(function (e) {
         return {
           emptyItem: {
             display: 'inline-block',
@@ -393,50 +393,49 @@
         n = a.n(r),
         i = a('ddV6'),
         o = a.n(i),
-        c = a('yiKp'),
-        u = a.n(c),
-        l = (a('2G9S'), a('7x/C'), a('JtPf'), a('z84I'), a('zh9S')),
-        s = a('pX0s'),
-        h = a('lnti'),
-        d = a('hqKg'),
-        f = a('oEGd'),
-        g = s.a,
-        y = Object(d.createSelector)(
-          function (e) {
-            return g.selectItems(e)
-          },
-          function (e) {
-            return g.selectInitialFetchStatus(e)
-          },
-          function (e, t) {
+        c = (a('2G9S'), a('7x/C'), a('JtPf'), a('z84I'), a('pX0s')),
+        u = a('lnti'),
+        l = a('hqKg'),
+        s = a('rxPX'),
+        h = c.a,
+        d = function (e, t) {
+          return h.selectItems(e)
+        },
+        f = function (e) {
+          return h.selectInitialFetchStatus(e)
+        },
+        g = Object(s.a)()
+          .propsFromState(function () {
             return {
-              categories:
-                e &&
-                Object(h.a)(
-                  e.map(function (e) {
-                    return e.display_name ? e : void 0
-                  }),
-                ),
-              initialFetchStatus: t,
+              categories: Object(l.createSelector)(d, function (e) {
+                return e
+                  ? Object(u.a)(
+                      e.map(function (e) {
+                        return e.display_name ? e : void 0
+                      }),
+                    )
+                  : void 0
+              }),
+              initialFetchStatus: f,
             }
-          },
-        ),
-        m = { fetchInitialIfNeeded: g.fetchInitialIfNeeded, fetchNextIfNeeded: g.fetchNextIfNeeded, scribeAction: l.c },
-        p = Object(f.g)(y, m),
-        v = a('v//M'),
-        S = a('jHSc'),
-        b = a('x5W0'),
-        _ = a('ij+d'),
-        E = a('3XMw'),
-        w = a.n(E),
-        C = a('cm6r'),
-        x = a('t62R'),
-        O = a('rHpw'),
-        I = a('7JQg'),
-        N = a('U+bB'),
-        P = a('MWbm'),
-        M = w.a.c6f5ac52,
-        G = n.a.memo(function (e) {
+          })
+          .propsFromActions(function () {
+            return { fetchInitialIfNeeded: h.fetchInitialIfNeeded, fetchNextIfNeeded: h.fetchNextIfNeeded }
+          })
+          .withAnalytics({ element: 'category' }),
+        y = a('v//M'),
+        m = a('jHSc'),
+        p = a('x5W0'),
+        v = a('ij+d'),
+        S = a('3XMw'),
+        b = a.n(S),
+        _ = a('cm6r'),
+        E = a('t62R'),
+        w = a('rHpw'),
+        C = a('U+bB'),
+        x = a('MWbm'),
+        I = b.a.c6f5ac52,
+        O = n.a.memo(function (e) {
           var t = e.category,
             a = e.gifSearchKey,
             r = e.history,
@@ -449,24 +448,24 @@
                 var e,
                   n = null === (e = r.location.state) || void 0 === e ? void 0 : e.dmConversationId
                 r.push({
-                  pathname: ''.concat(_.GifSearchPaths.category, '/').concat(t.id),
+                  pathname: ''.concat(v.GifSearchPaths.category, '/').concat(t.id),
                   state: { category: t, gifSearchKey: a, dmConversationId: n },
                 })
               },
               [r, t, a],
             )
           return n.a.createElement(
-            C.a,
-            { onPress: l, style: [k.category, o && k.leftMargin] },
-            n.a.createElement(N.a, { source: u, style: [k.categoryImage, { backgroundColor: Object(b.a)(i) }] }),
+            _.a,
+            { onPress: l, style: [N.category, o && N.leftMargin] },
+            n.a.createElement(C.a, { source: u, style: [N.categoryImage, { backgroundColor: Object(p.a)(i) }] }),
             n.a.createElement(
-              P.a,
-              { style: k.categoryNameContainer },
-              n.a.createElement(x.b, { color: 'white', size: 'headline1', weight: 'bold' }, c),
+              x.a,
+              { style: N.categoryNameContainer },
+              n.a.createElement(E.b, { color: 'white', size: 'headline1', weight: 'bold' }, c),
             ),
           )
         }),
-        k = O.a.create(function (e) {
+        N = w.a.create(function (e) {
           return {
             row: { flexDirection: 'row', marginTop: e.spaces.space4 },
             firstRow: { marginTop: 0 },
@@ -482,125 +481,123 @@
             },
           }
         }),
-        A = Object(I.a)({ element: 'category' })(
-          p(function (e) {
-            var t,
-              a = e.categories,
-              r = e.fetchInitialIfNeeded,
-              i = e.gifSearchKey,
-              c = e.history,
-              l = e.initialFetchStatus,
-              s = e.location,
-              h = e.scribeAction,
-              d = e.scribeNamespace,
-              f = e.searchBox,
-              g = n.a.useCallback(
-                function () {
-                  r()
-                },
-                [r],
-              ),
-              y = null == s || null === (t = s.state) || void 0 === t ? void 0 : t.searchFocused,
-              m = n.a.useCallback(
-                function () {
-                  y || h(u()(u()({}, d), {}, { action: 'cancel' })), c.goBack({ backLocation: '/' })
-                },
-                [c, y, h, d],
-              ),
-              p = n.a.useCallback(
-                function () {
-                  var e = []
-                  if (a) for (var t = 0; t < a.length; t += 2) e.push([a[t], a[t + 1]])
-                  return n.a.createElement(
-                    P.a,
-                    null,
-                    n.a.Children.toArray(
-                      e.map(function (e, t) {
-                        var a = o()(e, 2),
-                          r = a[0],
-                          u = a[1]
-                        return n.a.createElement(
-                          P.a,
-                          { style: [k.row, 0 === t && k.firstRow] },
-                          n.a.createElement(G, {
-                            category: r,
-                            gifSearchKey: i,
-                            history: c,
-                            index: 2 * t,
-                            withLeftMargin: !1,
-                          }),
-                          u
-                            ? n.a.createElement(G, {
-                                category: u,
-                                gifSearchKey: i,
-                                history: c,
-                                index: 2 * t + 1,
-                                withLeftMargin: !0,
-                              })
-                            : null,
-                        )
-                      }),
-                    ),
-                  )
-                },
-                [a, i, c],
-              )
-            return (
-              n.a.useEffect(
-                function () {
-                  g()
-                },
-                [g],
-              ),
-              n.a.createElement(
-                S.b,
-                { documentTitle: M, history: c, middleControl: f, onBackClick: m },
-                n.a.createElement(v.a, { fetchStatus: l, onRequestRetry: g, render: p }),
-              )
+        P = g(function (e) {
+          var t,
+            a = e.analytics,
+            r = e.categories,
+            i = e.fetchInitialIfNeeded,
+            c = e.gifSearchKey,
+            u = e.history,
+            l = e.initialFetchStatus,
+            s = e.location,
+            h = e.searchBox,
+            d = n.a.useCallback(
+              function () {
+                i()
+              },
+              [i],
+            ),
+            f = null == s || null === (t = s.state) || void 0 === t ? void 0 : t.searchFocused,
+            g = n.a.useCallback(
+              function () {
+                f || a.scribeAction('cancel'), u.goBack({ backLocation: '/' })
+              },
+              [a, u, f],
+            ),
+            p = n.a.useCallback(
+              function () {
+                var e = []
+                if (r) for (var t = 0; t < r.length; t += 2) e.push([r[t], r[t + 1]])
+                return n.a.createElement(
+                  x.a,
+                  null,
+                  n.a.Children.toArray(
+                    e.map(function (e, t) {
+                      var a = o()(e, 2),
+                        r = a[0],
+                        i = a[1]
+                      return n.a.createElement(
+                        x.a,
+                        { style: [N.row, 0 === t && N.firstRow] },
+                        n.a.createElement(O, {
+                          category: r,
+                          gifSearchKey: c,
+                          history: u,
+                          index: 2 * t,
+                          withLeftMargin: !1,
+                        }),
+                        i
+                          ? n.a.createElement(O, {
+                              category: i,
+                              gifSearchKey: c,
+                              history: u,
+                              index: 2 * t + 1,
+                              withLeftMargin: !0,
+                            })
+                          : null,
+                      )
+                    }),
+                  ),
+                )
+              },
+              [r, c, u],
             )
-          }),
-        ),
-        R = a('VrFO'),
-        F = a.n(R),
-        q = a('Y9Ll'),
-        j = a.n(q),
-        T = a('1Pcy'),
-        K = a.n(T),
-        L = a('5Yy7'),
+          return (
+            n.a.useEffect(
+              function () {
+                d()
+              },
+              [d],
+            ),
+            n.a.createElement(
+              m.b,
+              { documentTitle: I, history: u, middleControl: h, onBackClick: g },
+              n.a.createElement(y.a, { fetchStatus: l, onRequestRetry: d, render: p }),
+            )
+          )
+        }),
+        M = a('VrFO'),
+        G = a.n(M),
+        k = a('Y9Ll'),
+        A = a.n(k),
+        F = a('1Pcy'),
+        R = a.n(F),
+        q = a('5Yy7'),
+        T = a.n(q),
+        j = a('2VqO'),
+        K = a.n(j),
+        L = a('KEM+'),
         D = a.n(L),
-        B = a('2VqO'),
-        V = a.n(B),
-        U = a('KEM+'),
-        H = a.n(U),
-        Q = a('hiCj'),
-        Y = a('VAZu'),
-        z = a('EP6G'),
-        W = a('MLl7'),
-        X = w.a.ab468378,
-        J = (function (e) {
-          D()(a, e)
-          var t = V()(a)
+        B = a('hiCj'),
+        V = a('VAZu'),
+        U = a('EP6G'),
+        H = a('Irs7'),
+        Y = a('MLl7'),
+        Q = b.a.ab468378,
+        W = (function (e) {
+          T()(a, e)
+          var t = K()(a)
           function a() {
             var e
-            F()(this, a)
+            G()(this, a)
             for (var r = arguments.length, i = new Array(r), o = 0; o < r; o++) i[o] = arguments[o]
             return (
               (e = t.call.apply(t, [this].concat(i))),
-              H()(K()(e), 'state', { shouldAutoPlayGifOverride: null }),
-              H()(K()(e), '_handleToggleChange', function (t) {
+              D()(R()(e), 'state', { shouldAutoPlayGifOverride: null }),
+              D()(R()(e), '_handleToggleChange', function (t) {
                 e.setState({ shouldAutoPlayGifOverride: t })
               }),
-              H()(K()(e), '_renderHeader', function () {
+              D()(R()(e), '_renderHeader', function () {
                 var t = e.props,
                   a = t.history,
                   r = t.searchBox
-                return n.a.createElement(Y.a, { history: a, middleControl: r })
+                return n.a.createElement(V.a, { history: a, middleControl: r })
               }),
               e
             )
           }
           return (
-            j()(a, [
+            A()(a, [
               {
                 key: 'render',
                 value: function () {
@@ -610,24 +607,24 @@
                     r = e.location,
                     i = e.query,
                     o = e.searchBox,
-                    c = e.shouldAutoPlayGif,
-                    u = this.state.shouldAutoPlayGifOverride,
-                    l = Object(W.c)(u, c)
+                    u = e.shouldAutoPlayGif,
+                    l = this.state.shouldAutoPlayGifOverride,
+                    s = Object(Y.c)(l, u)
                   return n.a.createElement(
-                    S.b,
-                    { backButtonType: 'back', documentTitle: X({ query: i }), history: a, middleControl: o },
-                    n.a.createElement(Q.a, {
+                    m.b,
+                    { backButtonType: 'back', documentTitle: Q({ query: i }), history: a, middleControl: o },
+                    n.a.createElement(B.a, {
                       location: r,
                       onToggleChange: this._handleToggleChange,
-                      shouldAutoPlayGif: l,
+                      shouldAutoPlayGif: s,
                     }),
-                    n.a.createElement(z.a, {
+                    n.a.createElement(U.a, {
                       fromSearch: !0,
                       gifSearchKey: t,
                       history: a,
-                      module: s.c,
+                      module: c.c,
                       query: i,
-                      shouldAutoPlayGif: l,
+                      shouldAutoPlayGif: s,
                     }),
                   )
                 },
@@ -636,7 +633,7 @@
             a
           )
         })(n.a.Component),
-        Z = Object(I.a)({ element: 'gallery' })(J)
+        X = Object(H.a)(W, { element: 'gallery' })
       t.default = function (e) {
         var t = e.gifSearchKey,
           a = e.history,
@@ -645,7 +642,7 @@
           o = e.shouldAutoPlayGif,
           c = r.state && r.state.query
         return c
-          ? n.a.createElement(Z, {
+          ? n.a.createElement(X, {
               gifSearchKey: t,
               history: a,
               location: r,
@@ -653,7 +650,7 @@
               searchBox: i,
               shouldAutoPlayGif: o,
             })
-          : n.a.createElement(A, { gifSearchKey: t, history: a, location: r, searchBox: i })
+          : n.a.createElement(P, { gifSearchKey: t, history: a, location: r, searchBox: i })
       }
     },
     hiCj: function (e, t, a) {
@@ -688,8 +685,8 @@
         w = a.n(E),
         C = a('fHOo'),
         x = a('MWbm'),
-        O = a('t62R'),
-        I = a('CK8+'),
+        I = a('t62R'),
+        O = a('CK8+'),
         N = a('rHpw'),
         P = w.a.j7fc4f9b,
         M = (function (e) {
@@ -724,8 +721,8 @@
                     ? m.a.createElement(
                         x.a,
                         { style: G.root },
-                        m.a.createElement(O.b, { color: 'gray700' }, P),
-                        m.a.createElement(I.a, {
+                        m.a.createElement(I.b, { color: 'gray700' }, P),
+                        m.a.createElement(O.a, {
                           accessibilityLabel: P,
                           onValueChange: this._handleSwitchChanged,
                           value: a,
@@ -747,10 +744,10 @@
       'use strict'
       a.r(t),
         a.d(t, 'GifSearchPaths', function () {
-          return Q
+          return Y
         }),
         a.d(t, 'GifSearchScreen', function () {
-          return Y
+          return Q
         })
       var r = a('VrFO'),
         n = a.n(r),
@@ -790,32 +787,32 @@
         }),
         C = Object(_.c)(w),
         x = a('Y6L+'),
-        O = a('3XMw'),
-        I = a.n(O),
+        I = a('3XMw'),
+        O = a.n(I),
         N = a('VwDm'),
         P = a('MLl7'),
         M = a('/de5'),
         G = a('5FtR'),
         k = a('wytG'),
         A = a('7JQg'),
-        R = a('XOY5'),
-        F = a('MWbm'),
+        F = a('XOY5'),
+        R = a('MWbm'),
         q = a('6OUF'),
-        j = a('/yvb'),
-        T = a('rHpw'),
+        T = a('/yvb'),
+        j = a('rHpw'),
         K = a('oQhu'),
         L = a('VY6S'),
         D = a('zCf4'),
-        B = I.a.a50ba821,
-        V = I.a.a9ae1e78,
+        B = O.a.a50ba821,
+        V = O.a.a9ae1e78,
         U = Object(k.a)(function () {
           return Promise.resolve().then(a.bind(null, 'XYn1'))
         }),
         H = Object(k.a)(function () {
           return Promise.resolve().then(a.bind(null, 'k5pS'))
         }),
-        Q = { category: '/i/foundmedia/category', search: '/i/foundmedia/search' },
-        Y = (function (e) {
+        Y = { category: '/i/foundmedia/category', search: '/i/foundmedia/search' },
+        Q = (function (e) {
           s()(a, e)
           var t = d()(a)
           function a(e) {
@@ -844,8 +841,8 @@
                   t = e.history,
                   a = e.isDataSaverEnabled,
                   n = e.location,
-                  i = n.pathname.startsWith(Q.category),
-                  o = n.pathname === Q.search && n.state && n.state.query
+                  i = n.pathname.startsWith(Y.category),
+                  o = n.pathname === Y.search && n.state && n.state.query
                 !a && (i || o) ? t.goBack() : a && r.setState({ searchDisabled: !0 })
               }),
               g()(u()(r), '_handleSubmit', function () {
@@ -862,10 +859,10 @@
                   n = t.isDataSaverEnabled,
                   i = t.location,
                   o = {}
-                o.pathname = Q.search
+                o.pathname = Y.search
                 var c = i.state && i.state.query,
-                  u = i.pathname === Q.search && !c,
-                  l = i.pathname.startsWith(Q.category) || (i.pathname === Q.search && c),
+                  u = i.pathname === Y.search && !c,
+                  l = i.pathname.startsWith(Y.category) || (i.pathname === Y.search && c),
                   s = !n && l,
                   h = i.state && i.state.dmConversationId
                 e ? ((o.state = { dmConversationId: h, query: e }), u ? a.push(o) : a.replace(o)) : s && a.goBack()
@@ -902,10 +899,10 @@
                         m.a.createElement(
                           D.d,
                           null,
-                          m.a.createElement(D.b, { exact: !0, path: Q.search }, m.a.createElement(U, n)),
+                          m.a.createElement(D.b, { exact: !0, path: Y.search }, m.a.createElement(U, n)),
                           m.a.createElement(
                             D.b,
-                            { exact: !0, path: ''.concat(Q.category, '/').concat(x.o) },
+                            { exact: !0, path: ''.concat(Y.category, '/').concat(x.o) },
                             m.a.createElement(H, n),
                           ),
                           m.a.createElement(D.b, { component: M.b }),
@@ -938,8 +935,8 @@
                   var e = this.state.searchDisabled,
                     t = this._getQueryOrCategory()
                   return m.a.createElement(
-                    F.a,
-                    { style: z.searchContainer },
+                    R.a,
+                    { style: W.searchContainer },
                     m.a.createElement(q.a, {
                       Icon: N.a,
                       autoFocus: !0,
@@ -950,19 +947,19 @@
                       onSubmitEditing: this._handleSearch,
                       placeholder: B,
                       ref: this._setTextInputRef,
-                      style: z.searchInput,
-                      testID: R.a.gifSearchSearchInput,
+                      style: W.searchInput,
+                      testID: F.a.gifSearchSearchInput,
                       withClearButton: !0,
                     }),
                     this._shouldRenderResultsOnChange
                       ? null
                       : m.a.createElement(
-                          j.a,
+                          T.a,
                           {
                             disabled: e,
                             onPress: this._handleSubmit,
                             size: 'small',
-                            style: z.searchButton,
+                            style: W.searchButton,
                             type: 'brandFilled',
                           },
                           V,
@@ -974,20 +971,20 @@
             a
           )
         })(m.a.Component),
-        z = T.a.create(function (e) {
+        W = j.a.create(function (e) {
           return {
             searchContainer: { alignItems: 'center', flex: 1, flexDirection: 'row', marginVertical: e.spaces.space8 },
             searchInput: { height: '100%' },
             searchButton: { marginStart: e.spaces.space12 },
           }
         })
-      t.default = C(Y)
+      t.default = C(Q)
     },
     k5pS: function (e, t, a) {
       'use strict'
       a.r(t),
         a.d(t, 'GifSearchCategory', function () {
-          return O
+          return I
         })
       var r = a('VrFO'),
         n = a.n(r),
@@ -1009,10 +1006,10 @@
         b = a('EP6G'),
         _ = a('3XMw'),
         E = a.n(_),
-        w = a('7JQg'),
+        w = a('Irs7'),
         C = a('MLl7'),
         x = E.a.f5ff0d6f,
-        O = (function (e) {
+        I = (function (e) {
           s()(a, e)
           var t = d()(a)
           function a() {
@@ -1066,7 +1063,7 @@
             a
           )
         })(m.a.Component)
-      t.default = Object(w.a)({ element: 'gallery' })(O)
+      t.default = Object(w.a)(I, { element: 'gallery' })
     },
     pX0s: function (e, t, a) {
       'use strict'

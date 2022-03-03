@@ -48327,18 +48327,18 @@
     wqZ5: function (e, t, n) {
       'use strict'
       n.d(t, 'e', function () {
-        return g
+        return _
       }),
-        n.d(t, 'a', function () {
-          return C
+        n.d(t, 'f', function () {
+          return w
         }),
-        n.d(t, 'g', function () {
+        n.d(t, 'a', function () {
           return E
         }),
-        n.d(t, 'b', function () {
+        n.d(t, 'g', function () {
           return T
         }),
-        n.d(t, 'f', function () {
+        n.d(t, 'b', function () {
           return k
         }),
         n.d(t, 'c', function () {
@@ -48368,29 +48368,30 @@
         f = n('Ssj5'),
         v = n('f1iL'),
         y = 'pinnedLists',
-        b = Object.freeze({
+        b = Object.freeze([]),
+        g = Object.freeze({
           REQUEST: 'rweb/pinnedLists/FETCH_REMOTE_PINS_REQUEST',
           SUCCESS: 'rweb/pinnedLists/FETCH_REMOTE_PINS_SUCCESS',
           FAILURE: 'rweb/pinnedLists/FETCH_REMOTE_PINS_FAILURE',
         }),
-        g = function (e) {
+        _ = function (e) {
           return e.pinnedLists.count
         },
-        _ = function (e) {
-          return e.pinnedLists.remote
-        },
-        w = function () {
-          return p.c.getNumberValue('home_timeline_spheres_max_user_owned_or_subscribed_lists_count', 5)
+        w = function (e) {
+          return e.pinnedLists.remote || b
         },
         C = function () {
+          return p.c.getNumberValue('home_timeline_spheres_max_user_owned_or_subscribed_lists_count', 5)
+        },
+        E = function () {
           return function (e, t, n) {
             return n.userPersistence.delete('rweb.pinnedLists')
           }
         },
-        E = function () {
+        T = function () {
           return function (e, t) {
             var n = t(),
-              r = g(n)
+              r = _(n)
             if (null === r) {
               var a,
                 i = v.b.selectEntries(n).filter(function (e) {
@@ -48405,20 +48406,17 @@
             }
           }
         },
-        T = function (e) {
-          var t = w(),
-            n = g(e)
+        k = function (e) {
+          var t = C(),
+            n = _(e)
           return !n || n < t
         },
-        k = function (e) {
-          return _(e) || []
-        },
-        I = Object.freeze({ remote: void 0, count: null, fetchStatus: m.a.NONE })
+        I = Object.freeze({ remote: void 0, count: 0, fetchStatus: m.a.NONE })
       var S = function () {
           return function (e, t, n) {
             var r = n.api
             return l.b(e, { request: r.Lists.fetchPins })(
-              { actionTypes: b, context: 'FETCH_REMOTE_PINS' },
+              { actionTypes: g, context: 'FETCH_REMOTE_PINS' },
               function (e) {
                 return e
                   ? Object(d.a)([
@@ -48479,9 +48477,9 @@
                   return e.filter(function (e) {
                     return t !== e
                   })
-                })(_(n) || [], r),
+                })(w(n), r),
               },
-              o = g(n)
+              o = _(n)
             a.push(R(i)), a.push(Object(v.d)(v.a.pinnedListModule, r)), o && a.push(M(o - 1))
           }
           return a
@@ -48494,11 +48492,11 @@
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : I,
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
-            case b.REQUEST:
+            case g.REQUEST:
               return o()(o()({}, e), {}, { fetchStatus: m.a.LOADING })
-            case b.FAILURE:
+            case g.FAILURE:
               return o()(o()({}, e), {}, { error: t.payload, fetchStatus: m.a.FAILED })
-            case b.SUCCESS:
+            case g.SUCCESS:
               return o()(o()({}, e), {}, { error: null, fetchStatus: m.a.LOADED })
             case O:
             case P:

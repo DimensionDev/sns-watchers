@@ -1023,7 +1023,7 @@
                 vn.b,
                 {
                   color: 'text',
-                  link: 'https://help.twitter.com/using-twitter/mentions-and-replies',
+                  link: 'https://help.twitter.com/using-twitter/mentions-and-replies#mention-control',
                   style: Rn.footerLearnMoreLink,
                   withUnderline: !0,
                 },

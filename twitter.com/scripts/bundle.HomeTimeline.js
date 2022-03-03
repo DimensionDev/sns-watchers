@@ -47,8 +47,7 @@
         k = n('wqZ5'),
         w = n('rxPX'),
         E = function (e) {
-          var t = Object(k.f)(e)
-          return T.a.selectMany(e, t) || []
+          return T.a.selectMany(e, Object(k.f)(e))
         },
         L = Object(w.a)()
           .propsFromState(function () {
@@ -62,11 +61,11 @@
         x = n('dwig'),
         F = n('v//M'),
         C = n('0+qk'),
-        I = (n('7x/C'), n('JtPf'), n('lTEL'), n('87if'), n('kYxP'), n('2dXj')),
-        P = (n('ho0z'), n('G6rE')),
+        P = (n('7x/C'), n('JtPf'), n('lTEL'), n('87if'), n('kYxP'), n('2dXj')),
+        I = (n('ho0z'), n('G6rE')),
         M = Object(w.a)()
           .propsFromState(function () {
-            return { loggedInUser: P.e.selectLoggedInUser }
+            return { loggedInUser: I.e.selectLoggedInUser }
           })
           .adjustStateProps(function (e) {
             var t = e.loggedInUser
@@ -79,9 +78,9 @@
         j = n('cHvH'),
         z = n('5mJL'),
         R = n('DNho'),
-        D = n('XP29'),
-        H = n('t62R'),
-        U = n('/yvb'),
+        U = n('XP29'),
+        D = n('t62R'),
+        H = n('/yvb'),
         V = n('rHpw'),
         Q = n('cjZk'),
         J = n('3rWK'),
@@ -145,27 +144,27 @@
               {
                 avatarCell: b.a.createElement(R.a.Consumer, null, function (e) {
                   var n = e.avatarSize
-                  return b.a.createElement(D.a, { size: n, style: ie.avatar, uri: t })
+                  return b.a.createElement(U.a, { size: n, style: ie.avatar, uri: t })
                 }),
                 avatarCellStyle: ie.avatarColumn,
                 cellStyle: ie.body,
                 style: ie.root,
               },
-              b.a.createElement(H.b, { color: 'gray700', numberOfLines: 1, size: 'headline1', style: ie.fakeInput }, Z),
+              b.a.createElement(D.b, { color: 'gray700', numberOfLines: 1, size: 'headline1', style: ie.fakeInput }, Z),
               b.a.createElement(
                 K.a,
                 { style: ie.toolbar },
                 b.a.createElement(
                   K.a,
                   { style: [ie.toolbarSection, ie.iconContainer] },
-                  b.a.createElement(U.a, {
+                  b.a.createElement(H.a, {
                     disabled: !0,
                     icon: X,
                     size: 'medium',
                     style: [ie.toolBarButton, ie.firstToolBarButton],
                     type: 'brandText',
                   }),
-                  b.a.createElement(U.a, {
+                  b.a.createElement(H.a, {
                     disabled: !0,
                     icon: $,
                     size: 'medium',
@@ -173,7 +172,7 @@
                     type: 'brandText',
                   }),
                   a
-                    ? b.a.createElement(U.a, {
+                    ? b.a.createElement(H.a, {
                         disabled: !0,
                         icon: ee,
                         size: 'medium',
@@ -181,7 +180,7 @@
                         type: 'brandText',
                       })
                     : null,
-                  b.a.createElement(U.a, {
+                  b.a.createElement(H.a, {
                     disabled: !0,
                     icon: te,
                     size: 'medium',
@@ -189,7 +188,7 @@
                     type: 'brandText',
                   }),
                   a
-                    ? b.a.createElement(U.a, {
+                    ? b.a.createElement(H.a, {
                         disabled: !0,
                         icon: ne,
                         size: 'medium',
@@ -197,7 +196,7 @@
                         type: 'brandText',
                       })
                     : null,
-                  b.a.createElement(U.a, {
+                  b.a.createElement(H.a, {
                     disabled: !0,
                     icon: ae,
                     size: 'medium',
@@ -208,7 +207,7 @@
                 b.a.createElement(
                   K.a,
                   { style: ie.toolbarSection },
-                  b.a.createElement(U.a, { disabled: !0, style: ie.tweetButton, type: 'brandFilled' }, Y),
+                  b.a.createElement(H.a, { disabled: !0, style: ie.tweetButton, type: 'brandFilled' }, Y),
                 ),
               ),
             )
@@ -217,7 +216,7 @@
         re = n('zb92'),
         se = Object(re.a)({
           loader: function () {
-            return (I.a.preload() || Promise.resolve()).then(function () {
+            return (P.a.preload() || Promise.resolve()).then(function () {
               return Promise.all([n.e(0), n.e(3), n.e(4), n.e(11), n.e(85)]).then(n.bind(null, 'RrO2'))
             })
           },
@@ -242,7 +241,7 @@
             a = e.onPress,
             i = e.renderMenu,
             l = b.a.createElement(de.a, null)
-          return b.a.createElement(U.a, {
+          return b.a.createElement(H.a, {
             accessibilityLabel: t,
             hoverLabel: { label: n },
             icon: l,
@@ -343,8 +342,8 @@
         xe = A.a.d126cb7c,
         Fe = A.a.c41ecf3c,
         Ce = A.a.d18aa6d4,
-        Ie = A.a.c90dcfa2,
-        Pe = A.a.bc52b0cd,
+        Pe = A.a.c90dcfa2,
+        Ie = A.a.bc52b0cd,
         Me = A.a.j6382fe9,
         Oe = A.a.f89f6785,
         Ae = A.a.e4acfd11,
@@ -368,7 +367,7 @@
                 return b.a.createElement(pe.a, {
                   DescriptionIcon: i,
                   description: a,
-                  descriptionStyle: De.description,
+                  descriptionStyle: Ue.description,
                   isFixed: !0,
                   items: e._getActionMenuItems(),
                   onCloseRequested: t,
@@ -385,8 +384,8 @@
               _()(u()(e), '_getContent', function () {
                 var t = e.props.useLatest
                 return e.context.featureSwitches.isTrue('responsive_web_home_pinned_timelines_latest_enabled')
-                  ? { description: t ? Ie : Fe, subText: t ? ze : Ke, text: t ? je : Be }
-                  : { description: t ? Ce : Fe, subText: t ? Ae : Oe, text: t ? Pe : Me }
+                  ? { description: t ? Pe : Fe, subText: t ? ze : Ke, text: t ? je : Be }
+                  : { description: t ? Ce : Fe, subText: t ? Ae : Oe, text: t ? Ie : Me }
               }),
               _()(u()(e), '_handleTimelineSwitch', function (t) {
                 var n = e.props.onToggle
@@ -422,7 +421,7 @@
           )
         })(b.a.PureComponent)
       _()(Re, 'contextType', he.a)
-      var De = V.a.create(function (e) {
+      var Ue = V.a.create(function (e) {
           return {
             description: {
               fontSize: e.fontSizes.headline1,
@@ -432,8 +431,8 @@
             },
           }
         }),
-        He = Re,
-        Ue = A.a.e4c6d14c,
+        De = Re,
+        He = A.a.e4c6d14c,
         Ve = A.a.bffa2da7,
         Qe = (function (e) {
           m()(n, e)
@@ -456,7 +455,7 @@
                   u = l.useLatest
                 a.scrollToTop(),
                   s.scribe({ component: 'customize', element: u ? 'see_top' : 'see_latest', action: 'click' })
-                var d = u ? Ue : Ve
+                var d = u ? He : Ve
                 c(
                   i()(
                     i()(
@@ -489,7 +488,7 @@
                 key: 'render',
                 value: function () {
                   var e = this.props.useLatest
-                  return b.a.createElement(He, {
+                  return b.a.createElement(De, {
                     onContentPreferencesSelect: this._handleContentPreferencesSelect,
                     onPress: this._handleSwitchPress,
                     onToggle: this._handleToggle,
@@ -540,14 +539,26 @@
         it = n('8UdT'),
         lt = n('iu0J'),
         rt = n('AP4B'),
-        st = i()(
-          i()(
-            i()({}, Object(at.a)({ allowDownvote: !0, tweetDismissable: !0, shouldSelfThreadIncludeAvatar: !0 })),
-            rt.a,
-          ),
-          {},
-          _()({}, it.b.EventSummary, Object(lt.a)({})),
-        ),
+        st = function (e) {
+          var t = e.withUserPresence,
+            n = void 0 !== t && t
+          return i()(
+            i()(
+              i()(
+                {},
+                Object(at.a)({
+                  allowDownvote: !0,
+                  tweetDismissable: !0,
+                  shouldSelfThreadIncludeAvatar: !0,
+                  withUserPresence: n,
+                }),
+              ),
+              rt.a,
+            ),
+            {},
+            _()({}, it.b.EventSummary, Object(lt.a)({})),
+          )
+        },
         ot = n('MDbM'),
         ct = n('97Jx'),
         ut = n.n(ct),
@@ -640,43 +651,46 @@
             l = e.shouldFetchLoadedContentOnMount,
             r = void 0 === l || l,
             s = e.timelineRef,
-            o = b.a.useRef(!0),
-            c = function () {
+            o = e.withUserPresence,
+            c = void 0 !== o && o,
+            u = b.a.useRef(!0),
+            d = function () {
               t.scribe({ component: 'empty_message', action: 'impression' })
             },
-            u = function () {
+            m = function () {
               t.scribe({ component: 'empty_message', element: 'primary_cta', action: 'click' })
             },
-            d = b.a.useCallback(
+            p = b.a.useCallback(
               function (e) {
                 var t = e.entries
-                if ((e.fetchStatus === ot.a.FAILED && (o.current = !1), o.current && t.length)) {
+                if ((e.fetchStatus === ot.a.FAILED && (u.current = !1), u.current && t.length)) {
                   var n = t.some(function (e) {
                     return e.type === it.b.Tweet
                   })
-                  ;(o.current = !1), n && i()
+                  ;(u.current = !1), n && i()
                 }
               },
-              [i, o],
+              [i, u],
             )
           return b.a.createElement(Lt.a, {
-            entryConfiguration: st,
+            entryConfiguration: st({ withUserPresence: c }),
             fetchTopOptions: St,
             module: n,
             newTweetsPillMode: wt.a.URT,
-            onEntriesRendered: d,
+            onEntriesRendered: p,
             prerollDisplayLocation: Et.c.TIMELINE_HOME,
             renderEmptyState: function () {
-              return b.a.createElement(kt, { onButtonPress: u, onImpression: c })
+              return b.a.createElement(kt, { onButtonPress: m, onImpression: d })
             },
             shouldFetchLoadedContentOnMount: r,
             timelineRef: s,
             title: xt,
+            withUserPresence: c,
           })
         }),
         Ct = n('7JQg'),
-        It = n('VS6U'),
-        Pt = n('Es6L'),
+        Pt = n('VS6U'),
+        It = n('Es6L'),
         Mt = n('LsPn'),
         Ot = n('RhWx'),
         At = n.n(Ot),
@@ -685,10 +699,10 @@
         jt = n('lnL+'),
         zt = n('Rp9C'),
         Rt = n('FGLp'),
-        Dt = n('jAXQ'),
-        Ht = n.n(Dt),
-        Ut = function (e) {
-          var t = Ht()(void 0 !== Je ? Je : (Je = n('/n9r')), e.topic),
+        Ut = n('jAXQ'),
+        Dt = n.n(Ut),
+        Ht = function (e) {
+          var t = Dt()(void 0 !== Je ? Je : (Je = n('/n9r')), e.topic),
             a = t.name,
             i = t.topic_id
           Object(Rt.a)(function () {
@@ -721,7 +735,7 @@
             r,
             s = b.a.useRef(0),
             o = Object(Vt.b)(),
-            c = Object(Qt.a)(P.e.selectLoggedInUser),
+            c = Object(Qt.a)(I.e.selectLoggedInUser),
             u = Object(Jt.a)(Yt, {}).data,
             d = (
               ('User' ===
@@ -747,7 +761,7 @@
                   : r.items)) ||
               []
             ).map(function (e, t) {
-              return null != e && e.topic ? b.a.createElement(Ut, { analytics: o, key: t, topic: e.topic }) : null
+              return null != e && e.topic ? b.a.createElement(Ht, { analytics: o, key: t, topic: e.topic }) : null
             }),
             m = b.a.useCallback(
               function () {
@@ -788,7 +802,7 @@
             ),
             _ = c ? '/'.concat(c.screen_name, '/topics') : '/i/topics/picker',
             g = b.a.createElement(
-              U.a,
+              H.a,
               {
                 accessibilityLabel: Gt,
                 borderColor: 'primary',
@@ -898,7 +912,8 @@
                 )
               }),
               _()(u()(l), '_renderTimeline', function () {
-                var e = l._isLatestActive()
+                var e = l._isLatestActive(),
+                  t = !!l.context.featureSwitches.isTrue('responsive_web_audio_space_ring_home_timeline')
                 return b.a.createElement(
                   S.a,
                   null,
@@ -909,6 +924,7 @@
                     isLatestActive: e,
                     shouldFetchLoadedContentOnMount: e,
                     timelineRef: l._setTimelineRef,
+                    withUserPresence: t,
                   }),
                 )
               }),
@@ -922,7 +938,7 @@
                 return b.a.createElement(
                   b.a.Fragment,
                   null,
-                  Object(Pt.a)() && !i
+                  Object(It.a)() && !i
                     ? b.a.createElement(
                         b.a.Fragment,
                         null,
@@ -1008,7 +1024,7 @@
                 value: function () {
                   var e = this.props.history,
                     t = this._isLatestPinned(),
-                    n = Object(Pt.a)(),
+                    n = Object(It.a)(),
                     a = !n && t ? b.a.createElement(qe.a, { style: hn.iconTwitter }) : void 0,
                     i = this._latestTimelineSwitchEnabled ? b.a.createElement(Ne, null) : void 0,
                     l = this._getTimelineMetadata(),
@@ -1023,7 +1039,7 @@
                     b.a.createElement(
                       Ye.a,
                       { behavioralEventViewType: cn, locationKey: r.page },
-                      b.a.createElement(It.a, {
+                      b.a.createElement(Pt.a, {
                         centeredLogo: a,
                         documentTitle: s,
                         history: e,

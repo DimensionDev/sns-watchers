@@ -644,38 +644,6 @@
         }
       ;(l.hash = '1c2a2bab04f7a0662a8ed2956c2bfa8b'), (t.default = l)
     },
-    Bg9b: function (e, t, n) {
-      'use strict'
-      var a = n('yiKp'),
-        l = n.n(a),
-        r = n('ERkP'),
-        i = n.n(r),
-        o = n('Lsrn'),
-        c = n('k/Ka'),
-        s = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(c.a)(
-            'svg',
-            l()(
-              l()({}, e),
-              {},
-              {
-                accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [o.a.root, e.style],
-                viewBox: '0 0 24 24',
-              },
-            ),
-            i.a.createElement(
-              'g',
-              null,
-              i.a.createElement('path', {
-                d: 'M22.498 6.008c-.02-.718-.537-1.326-1.24-1.447-4.102-.626-8.048-3.065-8.468-3.328-.44-.293-1.074-.324-1.572 0-.04.02-4.19 2.672-8.497 3.33-.683.12-1.2.728-1.22 1.467 0 .495.03 12.174 9.933 16.85.195.08.39.12.566.12.243 0 .458-.07.595-.132 10.118-4.776 9.913-16.79 9.903-16.86zm-11.23 15.1C2.984 16.634 2.964 6.484 2.944 6.058c3.516-.535 6.876-2.286 8.32-3.106v18.156h.002zm1.464 0V2.952c1.465.84 4.815 2.58 8.302 3.117 0 .1.214 10.453-8.302 15.038z',
-              }),
-            ),
-          )
-        }
-      ;(s.metadata = { width: 24, height: 24 }), (t.a = s)
-    },
     C2fM: function (e, t, n) {
       'use strict'
       n.r(t)
@@ -1108,8 +1076,8 @@
         D = _.a.cf4898a0,
         U = _.a.a3b3939a,
         V = _.a.db4f0cc9,
-        q = _.a.h252ede6,
-        z = _.a.a5cd93f9,
+        z = _.a.h252ede6,
+        q = _.a.a5cd93f9,
         Q = _.a.ba5a88e3,
         W = _.a.i6568549,
         J = _.a.b772cd65,
@@ -1223,9 +1191,9 @@
                           case 'UserIsMember':
                             return V({ screen_name: l })
                           case 'ViewerOutOfInvites':
-                            return q
+                            return z
                           default:
-                            return null !== (t = r.message) && void 0 !== t ? t : z({ screen_name: l })
+                            return null !== (t = r.message) && void 0 !== t ? t : q({ screen_name: l })
                         }
                     }
                   },
@@ -2058,96 +2026,107 @@
       'use strict'
       n.r(t),
         n.d(t, 'ToolsPeopleScreen', function () {
-          return k
+          return C
         })
-      n('vrRf')
-      var a = n('ERkP'),
+      var a = n('ddV6'),
         l = n.n(a),
-        r = n('LgBi'),
-        i = n('UZ0O'),
-        o = n('rxPX'),
-        c = Object(o.a)().withAnalytics({ page: 'communities', section: 'people' }),
-        s = n('3XMw'),
-        u = n.n(s),
-        m = n('gDCe'),
-        d = n('yoO3'),
-        y = n('k/OQ'),
-        p = n('mWs5'),
-        g = n('MWbm'),
-        f = n('krnS'),
-        b = n('zCf4'),
-        h = u.a.dc6ce7b4,
-        _ = u.a.f8321d82,
-        v = u.a.ga2aa43c,
-        k = function (e) {
+        r = (n('vrRf'), n('ERkP')),
+        i = n.n(r),
+        o = n('LgBi'),
+        c = n('UZ0O'),
+        s = n('rxPX'),
+        u = Object(s.a)().withAnalytics({ page: 'communities', section: 'people' }),
+        m = n('3XMw'),
+        d = n.n(m),
+        y = n('gDCe'),
+        p = n('yoO3'),
+        g = n('k/OQ'),
+        f = n('mWs5'),
+        b = n('MWbm'),
+        h = n('krnS'),
+        _ = n('zCf4'),
+        v = d.a.dc6ce7b4,
+        k = d.a.f8321d82,
+        E = d.a.ga2aa43c,
+        C = function (e) {
           var t = e.community,
             n = e.communityId,
             a = e.location,
-            o = (null == a ? void 0 : a.pathname) && a.pathname.indexOf('members') > 0,
-            c = o ? _ : v,
-            s = l.a.useMemo(
+            r = i.a.useState(!1),
+            s = l()(r, 2),
+            u = s[0],
+            m = s[1],
+            d = (null == a ? void 0 : a.pathname) && a.pathname.indexOf('members') > 0,
+            C = d ? k : E,
+            S = i.a.useMemo(
               function () {
                 var e = n
                   ? [
                       {
                         to: { pathname: '/i/communities/'.concat(n, '/tools/members'), state: a.state },
-                        label: _,
-                        key: _,
+                        label: k,
+                        key: k,
                       },
                       {
                         to: { pathname: '/i/communities/'.concat(n, '/tools/moderators'), state: a.state },
-                        label: v,
-                        key: v,
+                        label: E,
+                        key: E,
                       },
                     ]
                   : []
-                return l.a.createElement(y.a, { accessibilityLabel: c, links: e })
+                return i.a.createElement(g.a, { accessibilityLabel: C, links: e })
               },
-              [n, c, a],
+              [n, C, a],
             )
-          return l.a.createElement(
-            d.a,
+          return i.a.createElement(
+            p.a,
             null,
-            l.a.createElement(
-              p.a,
+            i.a.createElement(
+              f.a,
               {
                 communityId: t.id_str,
-                rightControl: o ? l.a.createElement(r.a, { communityId: n }) : void 0,
-                title: h,
+                rightControl: d ? i.a.createElement(o.a, { communityId: n }) : void 0,
+                title: v,
               },
-              l.a.createElement(
-                g.a,
+              i.a.createElement(
+                b.a,
                 null,
-                l.a.createElement(i.a, { community: t, communityId: n }),
-                s,
-                l.a.createElement(
-                  b.d,
-                  null,
-                  l.a.createElement(
-                    b.b,
-                    { exact: !0, path: '/i/communities/'.concat(t.id_str, '/tools/members') },
-                    l.a.createElement(f.b, {
-                      communityId: t.id_str,
-                      mode: f.a.Members,
-                      userRole: null == t ? void 0 : t.role,
-                    }),
-                  ),
-                  l.a.createElement(
-                    b.b,
-                    { exact: !0, path: '/i/communities/'.concat(t.id_str, '/tools/moderators') },
-                    l.a.createElement(m.a, { community: t }),
-                    l.a.createElement(f.b, {
-                      communityId: t.id_str,
-                      mode: f.a.Moderators,
-                      userRole: null == t ? void 0 : t.role,
-                    }),
-                  ),
-                ),
+                i.a.createElement(c.a, { community: t, communityId: n, onIsSearchingChange: m }),
+                u
+                  ? null
+                  : i.a.createElement(
+                      i.a.Fragment,
+                      null,
+                      S,
+                      i.a.createElement(
+                        _.d,
+                        null,
+                        i.a.createElement(
+                          _.b,
+                          { exact: !0, path: '/i/communities/'.concat(t.id_str, '/tools/members') },
+                          i.a.createElement(h.b, {
+                            communityId: t.id_str,
+                            mode: h.a.Members,
+                            userRole: null == t ? void 0 : t.role,
+                          }),
+                        ),
+                        i.a.createElement(
+                          _.b,
+                          { exact: !0, path: '/i/communities/'.concat(t.id_str, '/tools/moderators') },
+                          i.a.createElement(y.a, { community: t }),
+                          i.a.createElement(h.b, {
+                            communityId: t.id_str,
+                            mode: h.a.Moderators,
+                            userRole: null == t ? void 0 : t.role,
+                          }),
+                        ),
+                      ),
+                    ),
               ),
             ),
           )
         }
-      t.default = c(k)
+      t.default = u(C)
     },
     'Fq/Z': function (e, t, n) {
       'use strict'
@@ -2340,8 +2319,8 @@
         D = n('G1WX'),
         U = n('yoO3'),
         V = n('VS6U'),
-        q = n('0KEI'),
-        z = ['analytics', 'community', 'fetchCommunity', 'fetchStatus', 'fetchTweet', 'loggedInUser', 'tweet', 'type'],
+        z = n('0KEI'),
+        q = ['analytics', 'community', 'fetchCommunity', 'fetchStatus', 'fetchTweet', 'loggedInUser', 'tweet', 'type'],
         Q = S.a.jf99d610,
         W = { viewType: 'community' },
         J = Object.freeze({ HiddenTweet: 'hidden_tweet', RemovedMember: 'removed_member' })
@@ -2354,7 +2333,7 @@
           d = e.loggedInUser,
           y = e.tweet,
           p = e.type,
-          g = i()(e, z),
+          g = i()(e, q),
           f = function (e) {
             var t, a
             switch (e) {
@@ -2388,8 +2367,8 @@
           b = e.match.params,
           h = b.communityId,
           _ = b.tweetId,
-          v = Object(q.useCreateLocalApiErrorHandler)('HIDDEN_TWEET_FEEDBACK_SCREEN'),
-          k = Object(q.useCreateLocalApiErrorHandler)('REMOVED_MEMBER_FEEDBACK_SCREEN_CONTEXT'),
+          v = Object(z.useCreateLocalApiErrorHandler)('HIDDEN_TWEET_FEEDBACK_SCREEN'),
+          k = Object(z.useCreateLocalApiErrorHandler)('REMOVED_MEMBER_FEEDBACK_SCREEN_CONTEXT'),
           E = c.a.useEffect(
             function () {
               _ && o(_).catch(v)
@@ -3191,8 +3170,8 @@
             D = B[1],
             U = i.a.useState(F(r)),
             V = l()(U, 2),
-            q = V[0],
-            z = V[1],
+            z = V[0],
+            q = V[1],
             Q = i.a.useState(void 0),
             W = l()(Q, 2),
             J = W[0],
@@ -3209,23 +3188,23 @@
                   $(!0),
                   x(t),
                   K(a),
-                  g({ description: H, name: a, valid: !t && !q })
+                  g({ description: H, name: a, valid: !t && !z })
               },
-              [n, H, g, q, C],
+              [n, H, g, z, C],
             ),
             te = i.a.useCallback(
               function (e) {
                 var t = !1,
                   n = e.target.value
                 F(n) && ((t = !0), X(k({ maxCharacterCount: a }))),
-                  z(t),
+                  q(t),
                   D(n),
                   g({ name: T, description: n, valid: !t && !L })
               },
               [a, T, g, L, F],
             ),
             ne = L && j ? void 0 : b({ minCharacterCount: 3, maxCharacterCount: n }),
-            ae = q ? void 0 : v({ maxCharacterCount: a }),
+            ae = z ? void 0 : v({ maxCharacterCount: a }),
             le = c
               ? i.a.createElement(
                   m.a,
@@ -3258,7 +3237,7 @@
               calculateLength: d.b,
               errorText: J,
               helperText: ae,
-              invalid: q,
+              invalid: z,
               label: _,
               name: 'typedRuleDescription',
               onChange: te,
@@ -4184,7 +4163,7 @@
             },
           }
         }),
-        q = Object(b.a)(function (e) {
+        z = Object(b.a)(function (e) {
           var t = e.canModerate,
             n = e.communityId,
             a = e.count,
@@ -4245,7 +4224,7 @@
               : null,
           )
         })
-      var z,
+      var q,
         Q,
         W,
         J,
@@ -4268,7 +4247,7 @@
               },
               [r, o, c, a, n],
             ),
-            i.a.createElement(q, { canModerate: n, communityId: a, count: t ? m + d : d, userRole: u })
+            i.a.createElement(z, { canModerate: n, communityId: a, count: t ? m + d : d, userRole: u })
           )
         }),
         Y = n('m3Bd'),
@@ -4321,7 +4300,7 @@
         pe = n.n(ye),
         ge = function (e) {
           var t,
-            a = pe()(void 0 !== z ? z : (z = n('pChJ')), e.community),
+            a = pe()(void 0 !== q ? q : (q = n('pChJ')), e.community),
             l = i.a.useMemo(
               function () {
                 return new Date(a.created_at).toLocaleString('default', {
@@ -4356,7 +4335,7 @@
             : null
         },
         fe = i.a.memo(ge),
-        be = n('cPMa'),
+        be = n('s8G+'),
         he = n('6vad'),
         _e = n('csss'),
         ve = n('h0NW'),
@@ -4438,20 +4417,20 @@
         De = n('Fr3L'),
         Ue = n('fTQJ'),
         Ve = (n('z84I'), n('PKbs')),
-        qe = n('X00g'),
-        ze = function (e) {
+        ze = n('X00g'),
+        qe = function (e) {
           var t = pe()(void 0 !== W ? W : (W = n('DCZs')), e),
             a = t.custom_theme,
             l = t.default_theme,
             r = null != a ? a : l
           return i.a.useMemo(
             function () {
-              return qe.a.getCommunityTheme(r)
+              return ze.a.getCommunityTheme(r)
             },
             [r],
           )
         },
-        Qe = ze,
+        Qe = qe,
         We = n('rC8y'),
         Je = void 0 !== J ? J : (J = n('BX8b')),
         Xe = v.a.gfca5254,
@@ -4702,7 +4681,7 @@
             t
               ? i.a.createElement(
                   k.a,
-                  { style: qt.offendingRule },
+                  { style: zt.offendingRule },
                   (function (e) {
                     return i.a.createElement(
                       v.a.I18NFormatMessage,
@@ -4715,10 +4694,10 @@
             i.a.createElement(de.b, null, Ut),
           )
         },
-        qt = F.a.create(function (e) {
+        zt = F.a.create(function (e) {
           return { offendingRule: { display: 'flex', marginBottom: e.spaces.space12 } }
         }),
-        zt = v.a.hafa07f2,
+        qt = v.a.hafa07f2,
         Qt = v.a.fa94c9da,
         Wt = v.a.c15bee31,
         Jt = v.a.i859676b,
@@ -4814,7 +4793,7 @@
                               text: i.a.createElement(Vt, { offendingRule: null == n ? void 0 : n.name }),
                             })
                           case nn.ViewerNotInvited:
-                            return c({ headline: zt, text: Qt })
+                            return c({ headline: qt, text: Qt })
                           case nn.ViewerIsProtected:
                             return t ? c({ headline: Jt, text: Xt }) : o()
                           case nn.ViewerJoinRequestRequired:
@@ -5042,7 +5021,7 @@
                 F.a.absoluteFill,
                 jn.backgroundColor,
                 (function (e, t) {
-                  if (d) return qe.a.getCommunityGradientStyle(t, An)
+                  if (d) return ze.a.getCommunityGradientStyle(t, An)
                   var n = e && xn.a.get(e),
                     a = n ? (null == n ? void 0 : n.rgb) : On,
                     l = 'rgba('.concat(a.red, ',').concat(a.green, ',').concat(a.blue, ', 0.9)'),
@@ -5076,10 +5055,10 @@
         },
         Un = i.a.memo(Dn),
         Vn = n('LgBi'),
-        qn = n('CaKu'),
-        zn = n('1YZw'),
+        zn = n('CaKu'),
+        qn = n('1YZw'),
         Qn = Object(u.a)().propsFromActions(function () {
-          return { addToast: zn.b }
+          return { addToast: qn.b }
         }),
         Wn = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
@@ -5136,7 +5115,7 @@
             o = Object(h.g)(r),
             c = i.a.useCallback(
               function (e) {
-                qn.a.setString('https://twitter.com/i/communities/'.concat(l)), e(), a({ text: ia })
+                zn.a.setString('https://twitter.com/i/communities/'.concat(l)), e(), a({ text: ia })
               },
               [a, l],
             ),
@@ -5318,8 +5297,8 @@
               }
               return n
             })(r),
-            s = ze(a),
-            u = l ? qe.a.getCommunityBackgroundColorName(s) : void 0
+            s = qe(a),
+            u = l ? ze.a.getCommunityBackgroundColorName(s) : void 0
           return i.a.createElement(
             Oa.a,
             { interactiveStyles: Na, link: '/i/communities/'.concat(o, '/members'), style: Pa.membersContainer },
@@ -5344,8 +5323,8 @@
         Va = function (e) {
           return i.a.createElement(De.a, { errorConfig: Ha }, i.a.createElement(Ua, { communityId: e.communityId }))
         },
-        qa = n('k/OQ'),
-        za = v.a.a0e3ece4,
+        za = n('k/OQ'),
+        qa = v.a.a0e3ece4,
         Qa = v.a.ha8209bb,
         Wa = v.a.d601fc2f,
         Ja = v.a.b721eb37,
@@ -5383,8 +5362,8 @@
                     { to: '/i/communities/'.concat(t, '/latest'), label: Wa, key: Wa },
                     { to: '/i/communities/'.concat(t, '/about'), label: Ja, key: Ja },
                   ]
-                return i.a.createElement(qa.a, {
-                  accessibilityLabel: za,
+                return i.a.createElement(za.a, {
+                  accessibilityLabel: qa,
                   links: e._isTimelinesRankingEnabled
                     ? n
                     : (function (e) {
@@ -5694,8 +5673,8 @@
             .propsFromActions(function () {
               return { setFlag: ae.c }
             })),
-        ql = n('hOZg'),
-        zl = n('WtWS'),
+        zl = n('hOZg'),
+        ql = n('WtWS'),
         Ql = n('0ULw'),
         Wl = v.a.c66b37f9,
         Jl = v.a.g2768d0e,
@@ -5769,7 +5748,7 @@
               i.a.createElement(de.b, { size: 'title3', weight: 'bold' }, Wl),
               i.a.createElement(C.a, {
                 accessibilityLabel: Xl,
-                icon: i.a.createElement(ql.a, { style: tr.close }),
+                icon: i.a.createElement(zl.a, { style: tr.close }),
                 onClick: o,
                 pullRight: !0,
                 size: 'medium',
@@ -5795,7 +5774,7 @@
                   },
                   i.a.createElement(de.b, { weight: 'bold' }, e.title),
                   t
-                    ? i.a.createElement(zl.a, { accessibilityLabel: Yl, style: tr.iconCompleted })
+                    ? i.a.createElement(ql.a, { accessibilityLabel: Yl, style: tr.iconCompleted })
                     : i.a.createElement(Ql.a, { accessibilityLabel: Zl, style: tr.iconUncompleted }),
                 )
               }),
@@ -6085,7 +6064,7 @@
         h = n.n(b),
         _ = n('0weh'),
         v = n('5FtR'),
-        k = n('cPMa'),
+        k = n('s8G+'),
         E = n('MWbm'),
         C = n('/yvb'),
         S = n('4zmP'),
@@ -6120,16 +6099,16 @@
             D = c.a.useState(''),
             U = i()(D, 2),
             V = U[0],
-            q = U[1],
-            z = c.a.useState(null),
-            Q = i()(z, 2),
+            z = U[1],
+            q = c.a.useState(null),
+            Q = i()(q, 2),
             W = Q[0],
             J = Q[1],
             X = c.a.useCallback(function (e, t) {
               H(e), p(t)
             }, []),
             G = c.a.useCallback(function (e, t) {
-              q(e), 0 === e.length ? I(!1) : I(t)
+              z(e), 0 === e.length ? I(!1) : I(t)
             }, []),
             Y = Object(w.e)(),
             Z = i()(Y, 2),
@@ -6258,39 +6237,72 @@
         k = [v.a.CommunityMembers]
       function E(e) {
         var t = u.a.useContext(m.a).featureSwitches.isTrue('c9s_members_list_search_enabled'),
-          n = u.a.useState({}),
-          a = c()(n, 2),
-          r = a[0],
-          o = a[1],
-          s = u.a.useCallback(
+          n = e.community,
+          a = e.communityId,
+          r = e.onIsSearchingChange,
+          o = (null == n ? void 0 : n.role) === _.a.Admin,
+          s = u.a.useState(!1),
+          d = c()(s, 2),
+          y = d[0],
+          p = d[1],
+          g = u.a.useState(''),
+          f = c()(g, 2),
+          E = f[0],
+          S = f[1],
+          F = u.a.useState({}),
+          I = c()(F, 2),
+          w = I[0],
+          T = I[1],
+          K = u.a.useCallback(
             function (e, t) {
-              o(function (n) {
+              T(function (n) {
                 return i()(i()({}, n), {}, l()({}, e, t))
               })
             },
-            [o],
+            [T],
           ),
-          d = e.community,
-          y = e.communityId,
-          p = (null == d ? void 0 : d.role) === _.a.Admin
-        if (!y) return null
-        return t && p
+          M = u.a.useCallback(
+            function () {
+              p(!0), r(!0)
+            },
+            [r],
+          ),
+          R = u.a.useCallback(
+            function (e) {
+              S(e)
+              var t = !!e
+              r(t), p(t)
+            },
+            [r],
+          ),
+          L = u.a.useCallback(
+            function () {
+              E || (r(!1), p(!1))
+            },
+            [r, E],
+          )
+        if (!a) return null
+        return t && o
           ? u.a.createElement(h.default, {
-              alwaysOpen: !0,
-              communityId: y,
+              alwaysOpen: y,
+              communityId: a,
               filter: k,
               getUserDisplayNameLabel: function (e) {
                 if ('user' === e.type) {
                   var t = e.data.id_str,
-                    n = r[t]
+                    n = w[t]
                   if (n) return Object(_.d)(n.role)
                 }
               },
               inputStyle: C.textInput,
+              isModal: !0,
+              onDismiss: L,
+              onFocus: M,
+              onQueryChange: R,
               placeholder: 'Search for members',
               renderUserDecoration: function (e) {
                 var t = e.userId
-                return u.a.createElement(b, { communityId: y, onCommunityRoleChange: s, userId: t })
+                return u.a.createElement(b, { communityId: a, onCommunityRoleChange: K, userId: t })
               },
               rounded: !0,
               source: v.d.CommunityMemberSearch,
@@ -7348,21 +7360,6 @@
           },
         }
       ;(u.hash = 'd5eb23d40bcb19e36e32afc95695f334'), (t.default = u)
-    },
-    cPMa: function (e, t, n) {
-      'use strict'
-      var a = n('ERkP'),
-        l = n.n(a),
-        r = n('v6aA')
-      t.a = function (e) {
-        var t = l.a.useContext(r.a).featureSwitches
-        return l.a.useMemo(
-          function () {
-            return t.isTrue(e)
-          },
-          [e, t],
-        )
-      }
     },
     'cz/h': function (e, t, n) {
       'use strict'
@@ -8642,8 +8639,8 @@
         D = _.a.c5d8c93d,
         U = _.a.c8c7f9fc,
         V = _.a.c045c7b6,
-        q = _.a.a87df2ee,
-        z = _.a.dc6ce7b4,
+        z = _.a.a87df2ee,
+        q = _.a.dc6ce7b4,
         Q = _.a.gfca5254,
         W = _.a.bb081ea1,
         J = _.a.h6beb5fa,
@@ -8753,10 +8750,10 @@
                       thumbnail: ie,
                     })
                   : null,
-                l.a.createElement(I.b, { text: q }),
+                l.a.createElement(I.b, { text: z }),
                 l.a.createElement(v.a, {
                   description: G({ memberCount: s.member_count }),
-                  label: z,
+                  label: q,
                   link: '/i/communities/'.concat(u, '/tools/members'),
                   thumbnail: se,
                 }),
@@ -8887,8 +8884,8 @@
         D = (n('7x/C'), n('JtPf'), n('849X'), n('TJCb'), n('9SqB')),
         U = n.n(D),
         V = void 0 !== a ? a : (a = n('Dm5+')),
-        q = void 0 !== l ? l : (l = n('C2fM')),
-        z = I.a.i22835dd,
+        z = void 0 !== l ? l : (l = n('C2fM')),
+        q = I.a.i22835dd,
         Q = I.a.cb59a0fd,
         W = I.a.ic7db4ea,
         J = void 0 !== r ? r : (r = n('PMbW')),
@@ -8930,7 +8927,7 @@
             s = c[0],
             u = c[1],
             m = (function () {
-              var e = U()(q),
+              var e = U()(z),
                 t = x()(e, 2),
                 n = t[0],
                 a = t[1]
@@ -8983,7 +8980,7 @@
             j.a,
             { style: G.buttons },
             p.a.createElement(N.a, { disabled: !h || b, onPress: v, style: G.button, type: 'destructiveOutlined' }, Q),
-            p.a.createElement(N.a, { disabled: !_ || b, onPress: k, style: G.button, type: 'primaryOutlined' }, z),
+            p.a.createElement(N.a, { disabled: !_ || b, onPress: k, style: G.button, type: 'primaryOutlined' }, q),
           )
         },
         G = P.a.create(function (e) {
@@ -9190,8 +9187,8 @@
         }),
         Ue = n('855f'),
         Ve = n('cHvH'),
-        qe = n('5mJL'),
-        ze = n('efqG'),
+        ze = n('5mJL'),
+        qe = n('efqG'),
         Qe = n('21zW'),
         We = function (e) {
           return (function (e) {
@@ -9228,7 +9225,7 @@
                     userId: l.id_str,
                   }),
                   p.a.createElement(
-                    qe.a,
+                    ze.a,
                     { avatarCell: null },
                     p.a.createElement($.b, { color: 'gray700', size: 'subtext2', style: Ge.rule }, t.rule.name),
                   ),
@@ -9249,7 +9246,7 @@
             p.a.Fragment,
             null,
             p.a.createElement(
-              ze.a,
+              qe.a,
               {
                 contentStyle: Ge.popover,
                 onDismiss: function () {
@@ -9646,8 +9643,8 @@
         }),
         Ut = ['analytics', 'community'],
         Vt = ['community', 'createLocalApiErrorHandler', 'fetchCommunityIfNeeded', 'fetchStatus'],
-        qt = { viewType: 'community' }
-      function zt(e) {
+        zt = { viewType: 'community' }
+      function qt(e) {
         var t = p.a.useContext(g.a).featureSwitches,
           n = (e.analytics, e.community),
           a = d()(e, Ut),
@@ -9656,7 +9653,7 @@
         return Object(b.c)(n.role)
           ? p.a.createElement(
               f.a,
-              { behavioralEventContext: qt },
+              { behavioralEventContext: zt },
               p.a.createElement(
                 Se.d,
                 null,
@@ -9702,7 +9699,7 @@
             fetchStatus: l,
             onRequestRetry: c,
             render: function () {
-              return t ? p.a.createElement(zt, u()({}, r, { community: t })) : null
+              return t ? p.a.createElement(qt, u()({}, r, { community: t })) : null
             },
           })
         )
@@ -9881,10 +9878,10 @@
           D = l()(H, 2),
           U = D[0],
           V = D[1],
-          q = i.a.useState(!1),
-          z = l()(q, 2),
-          Q = z[0],
-          W = z[1],
+          z = i.a.useState(!1),
+          q = l()(z, 2),
+          Q = q[0],
+          W = q[1],
           J = i.a.useState(''),
           X = l()(J, 2),
           G = X[0],
@@ -10258,9 +10255,9 @@
           D = i.a.useState(''),
           U = l()(D, 2),
           V = U[0],
-          q = U[1],
-          z = i.a.useState(!1),
-          Q = l()(z, 2),
+          z = U[1],
+          q = i.a.useState(!1),
+          Q = l()(q, 2),
           W = Q[0],
           J = Q[1],
           X = i.a.useCallback(
@@ -10268,7 +10265,7 @@
               var t = e.description,
                 n = e.name,
                 a = e.valid
-              q(''), T(n), L(t), j(a)
+              z(''), T(n), L(t), j(a)
             },
             [T, L, j],
           ),
@@ -10279,7 +10276,7 @@
                 customErrorHandler: function (e) {
                   var t = l()(e.errors, 1)[0],
                     n = t.code === p.a.GenericBadRequest && t.message ? t.message : S
-                  return q(n), j(!1), []
+                  return z(n), j(!1), []
                 },
               })
               c(m, { name: b, description: R })
@@ -10691,6 +10688,21 @@
       }
       t.default = a
     },
+    's8G+': function (e, t, n) {
+      'use strict'
+      var a = n('ERkP'),
+        l = n.n(a),
+        r = n('v6aA')
+      t.a = function (e) {
+        var t = l.a.useContext(r.a).featureSwitches
+        return l.a.useMemo(
+          function () {
+            return t.isTrue(e)
+          },
+          [e, t],
+        )
+      }
+    },
     tFuX: function (e, t, n) {
       'use strict'
       n.r(t)
@@ -10933,137 +10945,142 @@
       'use strict'
       n.r(t),
         n.d(t, 'CommunityPeopleScreen', function () {
-          return K
+          return R
         })
-      n('vrRf')
-      var a = n('ERkP'),
+      var a = n('ddV6'),
         l = n.n(a),
-        r = n('+Kfv'),
-        i = n('es0u'),
-        o = n('LgBi'),
-        c = n('UZ0O'),
-        s = n('1Idg'),
-        u = n('eSoz'),
-        m = n('rxPX'),
-        d = n('0KEI'),
-        y = Object(m.a)()
+        r = (n('vrRf'), n('ERkP')),
+        i = n.n(r),
+        o = n('+Kfv'),
+        c = n('es0u'),
+        s = n('LgBi'),
+        u = n('UZ0O'),
+        m = n('1Idg'),
+        d = n('eSoz'),
+        y = n('rxPX'),
+        p = n('0KEI'),
+        g = Object(y.a)()
           .propsFromState(function () {
-            return { community: s.a, communityId: s.c, screenName: s.i }
+            return { community: m.a, communityId: m.c, screenName: m.i }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandler: Object(d.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandler: Object(p.createLocalApiErrorHandlerWithContextFactory)(
                 'COMMUNITIES_MEMBERS_SCREEN_CONTEXT',
               ),
-              fetchCommunityIfNeeded: u.c.fetchOneIfNeeded,
+              fetchCommunityIfNeeded: d.c.fetchOneIfNeeded,
             }
           })
           .withAnalytics({ page: 'community', section: 'people' }),
-        p = n('3XMw'),
-        g = n.n(p),
-        f = n('gDCe'),
-        b = n('yoO3'),
-        h = n('VS6U'),
-        _ = n('k/OQ'),
-        v = n('krnS'),
-        k = n('zCf4'),
-        E = g.a.h5245afa,
-        C = g.a.dc6ce7b4,
-        S = g.a.f8321d82,
-        F = g.a.ga2aa43c,
-        I = { viewType: 'community' },
-        w = { viewType: 'all' },
-        T = { viewType: 'moderators' },
-        K = l.a.memo(function (e) {
+        f = n('3XMw'),
+        b = n.n(f),
+        h = n('gDCe'),
+        _ = n('yoO3'),
+        v = n('VS6U'),
+        k = n('k/OQ'),
+        E = n('krnS'),
+        C = n('zCf4'),
+        S = b.a.h5245afa,
+        F = b.a.dc6ce7b4,
+        I = b.a.f8321d82,
+        w = b.a.ga2aa43c,
+        T = { viewType: 'community' },
+        K = { viewType: 'all' },
+        M = { viewType: 'moderators' },
+        R = i.a.memo(function (e) {
           var t = e.community,
             n = e.communityId,
             a = e.createLocalApiErrorHandler,
-            s = e.fetchCommunityIfNeeded,
-            u = e.history,
-            m = e.location
-          l.a.useEffect(
+            r = e.fetchCommunityIfNeeded,
+            m = e.history,
+            d = e.location
+          i.a.useEffect(
             function () {
-              n && s(n).catch(a())
+              n && r(n).catch(a())
             },
-            [n, a, s],
+            [n, a, r],
           )
-          var d = (null == m ? void 0 : m.pathname) && m.pathname.indexOf('members') > 0,
-            y = d ? C : F,
-            p = l.a.useMemo(
+          var y = i.a.useState(!1),
+            p = l()(y, 2),
+            g = p[0],
+            f = p[1],
+            b = (null == d ? void 0 : d.pathname) && d.pathname.indexOf('members') > 0,
+            R = b ? F : w,
+            L = i.a.useMemo(
               function () {
                 return n
                   ? [
-                      { to: { pathname: '/i/communities/'.concat(n, '/members'), state: m.state }, label: S, key: S },
+                      { to: { pathname: '/i/communities/'.concat(n, '/members'), state: d.state }, label: I, key: I },
                       {
-                        to: { pathname: '/i/communities/'.concat(n, '/moderators'), state: m.state },
-                        label: F,
-                        key: F,
+                        to: { pathname: '/i/communities/'.concat(n, '/moderators'), state: d.state },
+                        label: w,
+                        key: w,
                       },
                     ]
                   : []
               },
-              [n, m.state],
+              [n, d.state],
             ),
-            g = n
-              ? l.a.createElement(
-                  k.d,
+            x = n
+              ? i.a.createElement(
+                  C.d,
                   null,
-                  l.a.createElement(
-                    k.b,
+                  i.a.createElement(
+                    C.b,
                     { exact: !0, path: '/i/communities/'.concat(n, '/members') },
-                    l.a.createElement(
-                      r.a,
-                      { behavioralEventContext: w },
-                      l.a.createElement(v.b, {
+                    i.a.createElement(
+                      o.a,
+                      { behavioralEventContext: K },
+                      i.a.createElement(E.b, {
                         communityId: n,
-                        mode: v.a.Members,
+                        mode: E.a.Members,
                         userRole: null == t ? void 0 : t.role,
                       }),
                     ),
                   ),
-                  l.a.createElement(
-                    k.b,
+                  i.a.createElement(
+                    C.b,
                     { exact: !0, path: '/i/communities/'.concat(n, '/moderators') },
-                    l.a.createElement(
-                      r.a,
-                      { behavioralEventContext: T },
-                      l.a.createElement(f.a, { community: t }),
-                      l.a.createElement(v.b, {
+                    i.a.createElement(
+                      o.a,
+                      { behavioralEventContext: M },
+                      i.a.createElement(h.a, { community: t }),
+                      i.a.createElement(E.b, {
                         communityId: n,
-                        mode: v.a.Moderators,
+                        mode: E.a.Moderators,
                         userRole: null == t ? void 0 : t.role,
                       }),
                     ),
                   ),
                 )
               : null,
-            K = l.a.createElement(
-              l.a.Fragment,
+            O = i.a.createElement(
+              i.a.Fragment,
               null,
-              l.a.createElement(c.a, { community: t, communityId: n }),
-              l.a.createElement(_.a, { accessibilityLabel: y, links: p }),
+              i.a.createElement(u.a, { community: t, communityId: n, onIsSearchingChange: f }),
+              g ? null : i.a.createElement(k.a, { accessibilityLabel: R, links: L }),
             )
-          return l.a.createElement(
-            r.a,
-            { behavioralEventContext: I },
-            l.a.createElement(
-              b.a,
+          return i.a.createElement(
+            o.a,
+            { behavioralEventContext: T },
+            i.a.createElement(
+              _.a,
               { behavioralEventViewType: 'members' },
-              l.a.createElement(h.a, {
+              i.a.createElement(v.a, {
                 backLocation: n ? '/i/communities/'.concat(n, '/') : '/',
-                documentTitle: E,
-                history: u,
-                primaryContent: g,
-                rightControl: d && n ? l.a.createElement(o.a, { communityId: n }) : null,
-                secondaryBar: K,
-                sidebarContent: l.a.createElement(i.a, null),
-                title: C,
+                documentTitle: S,
+                history: m,
+                primaryContent: g ? null : x,
+                rightControl: b && n ? i.a.createElement(s.a, { communityId: n }) : null,
+                secondaryBar: O,
+                sidebarContent: i.a.createElement(c.a, null),
+                title: F,
               }),
             ),
           )
         }),
-        M = y(K)
-      t.default = M
+        L = g(R)
+      t.default = L
     },
     u0MR: function (e, t, n) {
       'use strict'
@@ -11143,10 +11160,10 @@
                 : t.create_community_action_result
           return n ? h.a.createElement(P, { createActionResult: n }) : null
         },
-        q = function (e) {
+        z = function (e) {
           return h.a.createElement(B.a, { errorConfig: D }, h.a.createElement(V, null))
         },
-        z = h.a.memo(q),
+        q = h.a.memo(z),
         Q = n('GOQE'),
         W = (n('z84I'), n('M+/F'), n('yiKp')),
         J = n.n(W),
@@ -11430,8 +11447,8 @@
         De = n('yoO3'),
         Ue = K.a.c63602d3,
         Ve = K.a.d7346631,
-        qe = K.a.hb01fe46,
-        ze = He(
+        ze = K.a.hb01fe46,
+        qe = He(
           (function (e) {
             d()(n, e)
             var t = p()(n)
@@ -11442,7 +11459,7 @@
               return (
                 (e = t.call.apply(t, [this].concat(l))),
                 f()(u()(e), '_renderEmptyState', function () {
-                  return e.props.isLoggedInUser ? h.a.createElement(Me.a, { header: Ve, message: qe }) : null
+                  return e.props.isLoggedInUser ? h.a.createElement(Me.a, { header: Ve, message: ze }) : null
                 }),
                 e
               )
@@ -11507,7 +11524,7 @@
                   h.a.createElement(
                     Xe.b,
                     { exact: !0, path: '/'.concat(We.J, '/communities/memberships') },
-                    h.a.createElement(ze, { isLoggedInUser: i, user: r }),
+                    h.a.createElement(qe, { isLoggedInUser: i, user: r }),
                   ),
                 )
               }),
@@ -11556,7 +11573,7 @@
                         backLocation: '/',
                         history: e,
                         primaryContent: this._renderPrimaryContent(),
-                        rightControl: h.a.createElement(z, null),
+                        rightControl: h.a.createElement(q, null),
                         sidebarContent: h.a.createElement(v.a, null),
                         title: t,
                       }),
@@ -12280,9 +12297,9 @@
             D = l.a.useState(!1),
             U = s()(D, 2),
             V = U[0],
-            q = U[1],
-            z = l.a.useState(!1),
-            Q = s()(z, 2),
+            z = U[1],
+            q = l.a.useState(!1),
+            Q = s()(q, 2),
             W = Q[0],
             J = Q[1],
             X = null == m ? void 0 : m.image,
@@ -12293,7 +12310,7 @@
               },
             }),
             Z = function (e) {
-              return q(!1), J(Boolean(e)), e ? t(n, e) : y(n)
+              return z(!1), J(Boolean(e)), e ? t(n, e) : y(n)
             },
             $ = X ? l.a.createElement(F.a, { accessibilityLabel: K, aspectMode: I.a.exact(G), image: X }) : null
           return l.a.createElement(
@@ -12334,7 +12351,7 @@
                   onCropDone: function (e) {
                     J(!1),
                       c
-                        ? (q(!0),
+                        ? (z(!0),
                           r(n, { mediaId: c, cropData: e }).catch(function (e) {
                             Z(), Object(u.a)(e) ? B(j) : Y(e)
                           }))
@@ -12370,8 +12387,8 @@
           })
           .withAnalytics({ page: 'communities', section: 'edit_access' }),
         V = n('yoO3'),
-        q = n('mWs5'),
-        z = n('3JAx'),
+        z = n('mWs5'),
+        q = n('3JAx'),
         Q = b.a.f713fbd1,
         W = [
           { label: b.a.fd00a769, value: 'Public', helpText: b.a.d0784408 },
@@ -12402,12 +12419,12 @@
             V.a,
             null,
             l.a.createElement(
-              q.a,
+              z.a,
               { communityId: i, onSubmit: d, submitDisabled: !y, title: Q },
               l.a.createElement(
                 C.a,
                 { style: X.root },
-                l.a.createElement(z.a, {
+                l.a.createElement(q.a, {
                   name: 'membershipSetting',
                   onChange: function (e, t) {
                     m(t)
@@ -12564,7 +12581,7 @@
               },
               [S, P, x, D, L],
             ),
-            z = l.a.useCallback(
+            q = l.a.useCallback(
               function () {
                 var e = (function (e, t) {
                   if (e.access === $.a.Restricted && t.access === $.a.Open) return b.a.daedd9fa
@@ -12589,8 +12606,8 @@
                 )
               : void 0
           return l.a.createElement(
-            q.a,
-            { communityId: S, onSubmit: z, submitDisabled: W, title: pe },
+            z.a,
+            { communityId: S, onSubmit: q, submitDisabled: W, title: pe },
             J,
             l.a.createElement($.d, { setters: U, state: D }),
             M &&
@@ -12687,7 +12704,7 @@
             V.a,
             null,
             l.a.createElement(
-              q.a,
+              z.a,
               { communityId: i, onSubmit: E, submitDisabled: g, title: Te },
               v
                 ? l.a.createElement(
@@ -12763,7 +12780,7 @@
             V.a,
             null,
             l.a.createElement(
-              q.a,
+              z.a,
               { communityId: o, onSubmit: E, submitDisabled: g, title: Ae },
               v
                 ? l.a.createElement(
@@ -12786,8 +12803,8 @@
         De = n('x0mb'),
         Ue = n('5FtR'),
         Ve = n('t62R'),
-        qe = n('X00g'),
-        ze = n('6vad'),
+        ze = n('X00g'),
+        qe = n('6vad'),
         Qe = n('csss'),
         We = n('0yYu'),
         Je = b.a.bb081ea1,
@@ -12830,8 +12847,8 @@
               [i, _, d.__typename],
             ),
             S = Object(He.e)(t),
-            F = qe.a.getCommunityThemeDisplayName(S),
-            I = qe.a.getCommunityBackgroundColor(p)
+            F = ze.a.getCommunityThemeDisplayName(S),
+            I = ze.a.getCommunityBackgroundColor(p)
           return l.a.createElement(
             ie.d,
             null,
@@ -12869,10 +12886,10 @@
                 V.a,
                 null,
                 l.a.createElement(
-                  q.a,
+                  z.a,
                   { communityId: s, screenType: 'primaryDetail', title: Je },
                   v ? l.a.createElement(D, { communityId: s, hasCustomMedia: c, localMediaId: u, media: m }) : null,
-                  l.a.createElement(ze.b, { text: et }),
+                  l.a.createElement(qe.b, { text: et }),
                   l.a.createElement(Qe.a, {
                     description: l.a.createElement(nt, null, y),
                     label: Xe,
@@ -12898,7 +12915,7 @@
                         l.a.Fragment,
                         null,
                         l.a.createElement(We.a, null),
-                        l.a.createElement(ze.b, { text: tt }),
+                        l.a.createElement(qe.b, { text: tt }),
                         l.a.createElement(Qe.a, {
                           description: l.a.createElement(nt, null, C),
                           label: Ge,
@@ -12920,85 +12937,134 @@
     },
     xvzJ: function (e, t, n) {
       'use strict'
-      var a,
-        l = n('97Jx'),
-        r = n.n(l),
-        i = n('yiKp'),
-        o = n.n(i),
-        c = n('ddV6'),
-        s = n.n(c),
-        u = (n('yH/f'), n('2G9S'), n('ERkP')),
-        m = n.n(u),
-        d = n('1YZw'),
-        y = n('v6aA'),
-        p = n('Ig1G'),
-        g = n('uDfI'),
-        f = n('CxAY'),
-        b = n('yrzJ'),
-        h = n('mjJ+'),
-        _ = n('IG7M'),
-        v = n('eb3s'),
-        k = (n('enFi'), n('9SqB')),
-        E = n.n(k),
-        C = n('3XMw'),
-        S = n.n(C),
-        F = n('Bg9b'),
-        I = n('boUI'),
-        w = Object.freeze({ PromoteModerator: 'PROMOTE_MODERATOR', DemoteModerator: 'DEMOTE_MODERATOR' }),
-        T = S.a.g30bc699,
-        K = S.a.e585d844,
-        M = S.a.cab7c6f8,
-        R = S.a.af40a8ef,
-        L = S.a.e96d5254,
-        x = S.a.f348a395,
-        O = S.a.c3a1aebd,
-        A = S.a.c273c8a6,
-        j = S.a.e68b09b4,
-        N = S.a.c0eb2a52,
-        P = S.a.a5808125,
-        B = {
-          confirmButtonLabel: R,
-          headline: M,
-          text: function (e) {
-            return m.a.createElement(
-              S.a.I18NFormatMessage,
-              { $i18n: 'd46c6e8f' },
-              m.a.createElement(b.a, { screenName: e }),
-            )
-          },
-        },
-        H = {
+      var a = n('97Jx'),
+        l = n.n(a),
+        r = n('yiKp'),
+        i = n.n(r),
+        o = n('ddV6'),
+        c = n.n(o),
+        s = (n('yH/f'), n('2G9S'), n('ERkP')),
+        u = n.n(s),
+        m = n('1YZw'),
+        d = n('v6aA'),
+        y = n('Ig1G'),
+        p = n('uDfI'),
+        g = n('CxAY'),
+        f = n('yrzJ'),
+        b = n('mjJ+'),
+        h = n('IG7M'),
+        _ = n('eb3s'),
+        v = (n('enFi'), n('9SqB')),
+        k = n.n(v),
+        E = n('3XMw'),
+        C = n.n(E),
+        S = n('Lsrn'),
+        F = n('k/Ka'),
+        I = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(F.a)(
+            'svg',
+            i()(
+              i()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [S.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            u.a.createElement(
+              'g',
+              null,
+              u.a.createElement('path', {
+                d: 'M21.248 10.242c-.098 0-.196.02-.287.057-.09.038-.173.094-.243.163-.07.07-.125.153-.162.244-.038.09-.057.189-.057.287v1.839c.012 1.1-.195 2.19-.608 3.21-.414 1.019-1.026 1.945-1.8 2.726-.698-.957-1.61-1.736-2.665-2.275-1.055-.538-2.22-.821-3.405-.825h-.04c-1.185.003-2.353.286-3.408.824-1.055.539-1.968 1.319-2.666 2.276-.774-.78-1.386-1.707-1.799-2.727-.413-1.018-.62-2.11-.608-3.209V4.705c3.213-1.64 6.832-2.318 10.421-1.949.098.011.198.003.293-.024.095-.028.183-.074.26-.136.077-.062.14-.139.187-.226.047-.087.076-.183.085-.281.02-.198-.038-.396-.163-.55-.125-.155-.306-.254-.504-.275-4.04-.414-8.113.397-11.686 2.329-.119.064-.218.16-.287.275-.07.116-.106.249-.106.384v8.58c-.009 1.431.296 2.848.893 4.149.597 1.3 1.472 2.455 2.563 3.382.062.085.142.156.234.208h.012c1.8 1.47 3.888 2.544 6.13 3.155.111.027.227.027.338 0 2.242-.609 4.33-1.682 6.13-3.151h.015c.092-.052.171-.123.233-.209 1.092-.927 1.966-2.082 2.563-3.384.596-1.302.9-2.719.89-4.151v-1.84c0-.099-.02-.196-.058-.287-.038-.091-.093-.174-.163-.244s-.153-.124-.244-.162c-.091-.037-.19-.056-.288-.056zM12 22.227c-1.793-.499-3.476-1.331-4.96-2.453.547-.806 1.285-1.465 2.147-1.92.863-.454 1.823-.69 2.798-.686h.036c.974-.003 1.934.232 2.795.687.862.454 1.599 1.113 2.146 1.918-1.485 1.123-3.168 1.955-4.962 2.454zM12 6C9.936 6 8.52 7.369 8.21 9.66c-.151.6-.172 1.226-.061 1.835.111.609.352 1.187.705 1.695.417.394.914.692 1.457.875.543.183 1.12.246 1.69.185.569.06 1.144-.002 1.687-.185.542-.183 1.039-.481 1.455-.874.354-.508.594-1.087.705-1.696.111-.609.09-1.235-.06-1.835C15.475 7.369 14.06 6 12 6zm2.014 6.2c-.282.22-.606.382-.952.477-.345.094-.706.119-1.062.073-.356.046-.717.022-1.063-.073-.347-.094-.67-.256-.954-.477-.388-.715-.49-1.552-.283-2.339.142-1.077.66-2.361 2.3-2.361 1.641 0 2.155 1.284 2.3 2.361.205.788.102 1.624-.288 2.339h.002zm8.836-9.915L21.136 4l1.714 1.715c.133.142.205.33.201.524-.003.195-.082.38-.22.518-.137.137-.322.216-.516.22-.195.003-.383-.07-.525-.202l-1.715-1.714-1.715 1.714c-.069.074-.151.133-.243.174-.092.04-.192.063-.292.065-.101.001-.201-.017-.294-.055-.094-.038-.179-.094-.25-.165-.071-.071-.127-.156-.165-.25-.038-.093-.056-.193-.054-.294.001-.1.023-.2.064-.292.041-.092.1-.174.174-.243L19.014 4 17.3 2.285c-.073-.069-.133-.151-.174-.243-.04-.092-.063-.192-.064-.292-.002-.101.016-.201.054-.295.038-.093.094-.178.165-.25.071-.07.156-.126.25-.164.093-.038.193-.056.294-.055.1.002.2.024.292.065.092.041.174.1.243.174l1.715 1.714 1.715-1.714c.142-.133.33-.205.525-.201.194.003.38.082.517.22.137.137.216.322.22.516.003.195-.07.383-.202.525z',
+              }),
+            ),
+          )
+        }
+      I.metadata = { width: 24, height: 24 }
+      var w = I,
+        T = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(F.a)(
+            'svg',
+            i()(
+              i()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [S.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            u.a.createElement(
+              'g',
+              null,
+              u.a.createElement('path', {
+                d: 'M21.248 10.242c-.098 0-.196.02-.287.057-.09.038-.173.094-.243.163-.07.07-.125.153-.162.244-.038.091-.057.189-.057.287v1.839c.012 1.1-.195 2.19-.608 3.21-.414 1.019-1.026 1.945-1.8 2.726-.698-.957-1.61-1.736-2.665-2.275-1.055-.538-2.22-.821-3.405-.825h-.04c-1.185.003-2.353.286-3.408.824-1.055.539-1.968 1.319-2.666 2.276-.774-.78-1.386-1.707-1.799-2.726-.413-1.02-.62-2.11-.608-3.21V4.705c3.213-1.64 6.832-2.318 10.421-1.949.098.012.198.004.293-.024.095-.027.183-.073.26-.136.077-.062.14-.139.188-.226.046-.087.075-.183.084-.281.02-.198-.038-.396-.163-.55-.125-.155-.306-.254-.504-.275-4.04-.414-8.113.397-11.686 2.329-.119.064-.218.16-.287.275-.07.116-.106.249-.106.384v8.58c-.009 1.431.296 2.848.893 4.149.597 1.3 1.472 2.455 2.563 3.382.062.085.142.156.234.208h.012c1.8 1.47 3.888 2.544 6.13 3.155.111.027.227.027.338 0 2.242-.609 4.33-1.682 6.13-3.151h.015c.092-.052.171-.123.233-.209 1.092-.927 1.966-2.082 2.563-3.384.596-1.302.9-2.719.89-4.151v-1.84c0-.099-.02-.196-.058-.287-.038-.091-.093-.174-.163-.244s-.153-.124-.244-.162c-.091-.037-.19-.056-.288-.056zM12 22.227c-1.793-.499-3.476-1.331-4.96-2.453.547-.806 1.285-1.465 2.147-1.92.863-.454 1.823-.69 2.798-.686h.036c.974-.003 1.934.233 2.795.687.862.454 1.599 1.113 2.146 1.918-1.485 1.123-3.168 1.955-4.962 2.454zM12 6C9.936 6 8.52 7.369 8.21 9.66c-.151.6-.172 1.226-.061 1.835.111.609.352 1.187.705 1.695.417.394.914.692 1.457.875.543.183 1.12.246 1.69.185.569.06 1.144-.002 1.687-.185.542-.183 1.039-.481 1.455-.874.354-.508.594-1.087.705-1.696.111-.609.09-1.235-.06-1.835C15.475 7.369 14.06 6 12 6zm2.014 6.2c-.282.22-.606.382-.952.477-.345.094-.706.119-1.062.073-.356.046-.717.022-1.063-.073-.347-.094-.67-.256-.954-.477-.388-.715-.49-1.552-.283-2.339.142-1.077.66-2.361 2.3-2.361 1.641 0 2.155 1.284 2.3 2.361.205.788.102 1.624-.288 2.339h.002zM24 4c0 .199-.079.39-.22.53-.14.141-.33.22-.53.22h-2.425v2.425c0 .199-.079.39-.22.53-.14.141-.33.22-.53.22-.199 0-.39-.079-.53-.22-.14-.14-.22-.331-.22-.53V4.75H16.9c-.199 0-.39-.079-.53-.22-.14-.14-.22-.331-.22-.53s.08-.39.22-.53c.14-.141.331-.22.53-.22h2.425V.825c0-.199.08-.39.22-.53.14-.141.331-.22.53-.22.2 0 .39.079.53.22.141.14.22.331.22.53V3.25h2.425c.2 0 .39.079.53.22.141.14.22.331.22.53z',
+              }),
+            ),
+          )
+        }
+      T.metadata = { width: 24, height: 24 }
+      var K,
+        M = T,
+        R = n('boUI'),
+        L = Object.freeze({ PromoteModerator: 'PROMOTE_MODERATOR', DemoteModerator: 'DEMOTE_MODERATOR' }),
+        x = C.a.g30bc699,
+        O = C.a.e585d844,
+        A = C.a.cab7c6f8,
+        j = C.a.af40a8ef,
+        N = C.a.e96d5254,
+        P = C.a.f348a395,
+        B = C.a.c3a1aebd,
+        H = C.a.c273c8a6,
+        D = C.a.e68b09b4,
+        U = C.a.c0eb2a52,
+        V = C.a.a5808125,
+        z = {
           confirmButtonLabel: j,
           headline: A,
           text: function (e) {
-            return m.a.createElement(
-              S.a.I18NFormatMessage,
-              { $i18n: 'c3a1f2be' },
-              m.a.createElement(b.a, { screenName: e }),
+            return u.a.createElement(
+              C.a.I18NFormatMessage,
+              { $i18n: 'd46c6e8f' },
+              u.a.createElement(f.a, { screenName: e }),
             )
           },
         },
-        D = void 0 !== a ? a : (a = n('7xtl'))
+        q = {
+          confirmButtonLabel: D,
+          headline: H,
+          text: function (e) {
+            return u.a.createElement(
+              C.a.I18NFormatMessage,
+              { $i18n: 'c3a1f2be' },
+              u.a.createElement(f.a, { screenName: e }),
+            )
+          },
+        },
+        Q = void 0 !== K ? K : (K = n('7xtl'))
       t.a = function (e) {
-        var t = m.a.useContext(y.a),
+        var t = u.a.useContext(d.a),
           n = t.featureSwitches,
           a = t.loggedInUserId,
-          l = n.isTrue('c9s_edit_moderators_enabled'),
-          i = e.communityId,
-          c = e.communityRole,
-          u = e.recordId,
-          b = e.screenName,
-          k = e.userId,
-          C = m.a.useState(null),
-          S = s()(C, 2),
-          M = S[0],
-          R = S[1],
-          A = Object(g.c)(),
-          j = E()(D),
-          U = s()(j, 2),
-          V = U[0],
-          q = U[1],
-          z = m.a.useCallback(
+          r = n.isTrue('c9s_edit_moderators_enabled'),
+          o = e.communityId,
+          s = e.communityRole,
+          f = e.recordId,
+          v = e.screenName,
+          E = e.userId,
+          C = u.a.useState(null),
+          S = c()(C, 2),
+          F = S[0],
+          I = S[1],
+          T = Object(p.c)(),
+          K = k()(Q),
+          A = c()(K, 2),
+          j = A[0],
+          H = A[1],
+          D = u.a.useCallback(
             function (e) {
               var t = e.communityId,
                 n = e.errorMessage,
@@ -13006,106 +13072,106 @@
                 l = e.role,
                 r = (e.screenName, e.successMessage),
                 i = e.userId
-              V({
+              j({
                 variables: { communityId: t, userId: i, role: l },
                 updater: function (e) {
                   var n = e.get(a)
                   null == n || n.setValue(l, 'community_role(community_id:"'.concat(t, '")')),
-                    A(f.b.updateOne(''.concat(t, '_').concat(i), { role: l }))
+                    T(g.b.updateOne(''.concat(t, '_').concat(i), { role: l }))
                 },
                 onCompleted: function () {
-                  A(Object(d.b)({ text: r }))
+                  T(Object(m.b)({ text: r }))
                 },
                 onError: function () {
-                  A(Object(d.b)({ text: n }))
+                  T(Object(m.b)({ text: n }))
                 },
               })
             },
-            [V, A],
+            [j, T],
           ),
-          Q = m.a.useCallback(
+          W = u.a.useCallback(
             function (e) {
               var t,
                 n,
                 a,
                 l,
                 r = e.communityId,
-                i = e.recordId,
+                o = e.recordId,
                 c = e.roleAction,
                 s = e.screenName,
                 u = e.userId
               switch (c) {
-                case w.PromoteModerator:
-                  ;(t = B), (a = p.a.Moderator), (l = L({ screenName: s })), (n = x({ screenName: s }))
+                case L.PromoteModerator:
+                  ;(t = z), (a = y.a.Moderator), (l = N({ screenName: s })), (n = P({ screenName: s }))
                   break
-                case w.DemoteModerator:
-                  ;(t = H), (a = p.a.Member), (l = N({ screenName: s })), (n = P({ screenName: s }))
+                case L.DemoteModerator:
+                  ;(t = q), (a = y.a.Member), (l = U({ screenName: s })), (n = V({ screenName: s }))
                   break
                 default:
                   return
               }
-              R(
-                o()(
-                  o()({}, t),
+              I(
+                i()(
+                  i()({}, t),
                   {},
                   {
                     text: t.text(s),
                     onConfirm: function () {
-                      z({
+                      D({
                         communityId: r,
                         errorMessage: n,
-                        recordId: i,
+                        recordId: o,
                         role: a,
                         screenName: s,
                         successMessage: l,
                         userId: u,
                       }),
-                        R(null)
+                        I(null)
                     },
                     onCancel: function () {
-                      R(null)
+                      I(null)
                     },
                   },
                 ),
               )
             },
-            [z],
+            [D],
           ),
-          W = m.a.useCallback(
+          J = u.a.useCallback(
             function (e) {
               var t = []
-              if (l)
-                switch (c) {
-                  case p.a.Moderator:
+              if (r)
+                switch (s) {
+                  case y.a.Moderator:
                     t.push({
                       behavioralEventContext: { viewType: 'remove_moderator' },
-                      disabled: q,
-                      text: O,
-                      Icon: F.a,
+                      disabled: H,
+                      text: B,
+                      Icon: w,
                       onClick: function () {
-                        return Q({
-                          communityId: i,
-                          recordId: u,
-                          roleAction: w.DemoteModerator,
-                          screenName: b,
-                          userId: k,
+                        return W({
+                          communityId: o,
+                          recordId: f,
+                          roleAction: L.DemoteModerator,
+                          screenName: v,
+                          userId: E,
                         })
                       },
                     })
                     break
-                  case p.a.Member:
+                  case y.a.Member:
                     t.push({
                       behavioralEventContext: { viewType: 'add_moderator' },
-                      disabled: q,
-                      text: K,
-                      Icon: F.a,
+                      disabled: H,
+                      text: O,
+                      Icon: M,
                       onClick: function () {
-                        return Q({
-                          communityId: i,
-                          recordId: u,
-                          roleAction: w.PromoteModerator,
-                          screenName: b,
-                          userId: k,
+                        return W({
+                          communityId: o,
+                          recordId: f,
+                          roleAction: L.PromoteModerator,
+                          screenName: v,
+                          userId: E,
                         })
                       },
                     })
@@ -13113,31 +13179,31 @@
               return (
                 t.push({
                   behavioralEventContext: { viewType: 'view_profile' },
-                  text: T({ screenName: b }),
-                  Icon: I.a,
-                  link: '/'.concat(b),
+                  text: x({ screenName: v }),
+                  Icon: R.a,
+                  link: '/'.concat(v),
                 }),
-                m.a.createElement(h.a, { items: t, onCloseRequested: e, shouldCloseOnClick: !0 })
+                u.a.createElement(b.a, { items: t, onCloseRequested: e, shouldCloseOnClick: !0 })
               )
             },
-            [i, Q, l, u, c, q, b, k],
+            [o, W, r, f, s, H, v, E],
           )
-        return k !== a
-          ? m.a.createElement(
-              m.a.Fragment,
+        return E !== a
+          ? u.a.createElement(
+              u.a.Fragment,
               null,
-              m.a.createElement(_.a, { renderActionMenu: W }),
-              M
-                ? m.a.createElement(
-                    v.a,
-                    r()(
+              u.a.createElement(h.a, { renderActionMenu: J }),
+              F
+                ? u.a.createElement(
+                    _.a,
+                    l()(
                       {
                         confirmButtonType: 'primary',
                         onCancel: function () {
-                          R(null)
+                          I(null)
                         },
                       },
-                      M,
+                      F,
                     ),
                   )
                 : null,
@@ -13241,14 +13307,14 @@
             },
             [o, K, a, r, n],
           ),
-          q = i.a.createElement(
+          z = i.a.createElement(
             b.a,
             { accessibilityLabel: E({ themeName: x }), disabled: !p, onPress: V, size: 'small', type: 'brandFilled' },
             k,
           )
         return i.a.createElement(
           m.b,
-          { behavioralEventViewType: 'edit_theme', history: r, rightControl: q, title: v },
+          { behavioralEventViewType: 'edit_theme', history: r, rightControl: z, title: v },
           i.a.createElement(
             g.a,
             { style: w.themePickerContainer },

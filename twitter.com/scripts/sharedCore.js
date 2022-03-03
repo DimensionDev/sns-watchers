@@ -23428,7 +23428,10 @@
             { style: xe.callout },
             E.a.createElement(le.a, {
               Icon: Ce.a,
-              action: { label: Te, link: 'https://help.twitter.com/using-twitter/mentions-and-replies' },
+              action: {
+                label: Te,
+                link: 'https://help.twitter.com/using-twitter/mentions-and-replies#mention-control',
+              },
               headline: ke,
               text: Se,
               type: 'primary',
@@ -53847,18 +53850,18 @@
     wqZ5: function (e, t, n) {
       'use strict'
       n.d(t, 'e', function () {
-        return b
+        return _
       }),
-        n.d(t, 'a', function () {
-          return E
+        n.d(t, 'f', function () {
+          return w
         }),
-        n.d(t, 'g', function () {
+        n.d(t, 'a', function () {
           return C
         }),
-        n.d(t, 'b', function () {
+        n.d(t, 'g', function () {
           return k
         }),
-        n.d(t, 'f', function () {
+        n.d(t, 'b', function () {
           return S
         }),
         n.d(t, 'c', function () {
@@ -53888,29 +53891,30 @@
         m = n('Ssj5'),
         v = n('f1iL'),
         g = 'pinnedLists',
-        y = Object.freeze({
+        y = Object.freeze([]),
+        b = Object.freeze({
           REQUEST: 'rweb/pinnedLists/FETCH_REMOTE_PINS_REQUEST',
           SUCCESS: 'rweb/pinnedLists/FETCH_REMOTE_PINS_SUCCESS',
           FAILURE: 'rweb/pinnedLists/FETCH_REMOTE_PINS_FAILURE',
         }),
-        b = function (e) {
+        _ = function (e) {
           return e.pinnedLists.count
         },
-        _ = function (e) {
-          return e.pinnedLists.remote
-        },
-        w = function () {
-          return p.c.getNumberValue('home_timeline_spheres_max_user_owned_or_subscribed_lists_count', 5)
+        w = function (e) {
+          return e.pinnedLists.remote || y
         },
         E = function () {
+          return p.c.getNumberValue('home_timeline_spheres_max_user_owned_or_subscribed_lists_count', 5)
+        },
+        C = function () {
           return function (e, t, n) {
             return n.userPersistence.delete('rweb.pinnedLists')
           }
         },
-        C = function () {
+        k = function () {
           return function (e, t) {
             var n = t(),
-              r = b(n)
+              r = _(n)
             if (null === r) {
               var i,
                 o = v.b.selectEntries(n).filter(function (e) {
@@ -53925,20 +53929,17 @@
             }
           }
         },
-        k = function (e) {
-          var t = w(),
-            n = b(e)
+        S = function (e) {
+          var t = E(),
+            n = _(e)
           return !n || n < t
         },
-        S = function (e) {
-          return _(e) || []
-        },
-        T = Object.freeze({ remote: void 0, count: null, fetchStatus: h.a.NONE })
+        T = Object.freeze({ remote: void 0, count: 0, fetchStatus: h.a.NONE })
       var x = function () {
           return function (e, t, n) {
             var r = n.api
             return l.b(e, { request: r.Lists.fetchPins })(
-              { actionTypes: y, context: 'FETCH_REMOTE_PINS' },
+              { actionTypes: b, context: 'FETCH_REMOTE_PINS' },
               function (e) {
                 return e
                   ? Object(d.a)([
@@ -53999,9 +54000,9 @@
                   return e.filter(function (e) {
                     return t !== e
                   })
-                })(_(n) || [], r),
+                })(w(n), r),
               },
-              a = b(n)
+              a = _(n)
             i.push(R(o)), i.push(Object(v.d)(v.a.pinnedListModule, r)), a && i.push(L(a - 1))
           }
           return i
@@ -54014,11 +54015,11 @@
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : T,
             t = arguments.length > 1 ? arguments[1] : void 0
           switch (t.type) {
-            case y.REQUEST:
+            case b.REQUEST:
               return a()(a()({}, e), {}, { fetchStatus: h.a.LOADING })
-            case y.FAILURE:
+            case b.FAILURE:
               return a()(a()({}, e), {}, { error: t.payload, fetchStatus: h.a.FAILED })
-            case y.SUCCESS:
+            case b.SUCCESS:
               return a()(a()({}, e), {}, { error: null, fetchStatus: h.a.LOADED })
             case O:
             case A:

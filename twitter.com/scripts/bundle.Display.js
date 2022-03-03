@@ -32,7 +32,7 @@
       'use strict'
       t.r(a),
         t.d(a, 'DisplayScreen', function () {
-          return A
+          return J
         })
       var n = t('VrFO'),
         r = t.n(n),
@@ -56,21 +56,21 @@
         T = t('vSJw'),
         M = t('KNZn'),
         v = t('MWbm'),
-        B = t('t62R'),
-        H = t('/yvb'),
-        x = t('7N4s'),
-        P = t('rHpw'),
-        _ = t('7JQg'),
+        B = t('Irs7'),
+        H = t('t62R'),
+        x = t('/yvb'),
+        P = t('7N4s'),
+        _ = t('rHpw'),
         z = h.a.b5b0afa4,
         F = h.a.b772cd65,
         C = h.a.a5ce82a4,
         S = h.a.babfa32c,
         W = h.a.a2a2f98d,
-        J = h.a.b4a361cf,
-        R = h.a.ce494bb3,
-        V = h.a.c783d45e,
-        j = h.a.h306a357,
-        A = (function (e) {
+        R = h.a.b4a361cf,
+        V = h.a.ce494bb3,
+        j = h.a.c783d45e,
+        A = h.a.h306a357,
+        J = (function (e) {
           p()(t, e)
           var a = m()(t)
           function t(e, n) {
@@ -84,7 +84,7 @@
                       v.a,
                       { style: L.header },
                       y.a.createElement(
-                        B.b,
+                        H.b,
                         { align: 'center', size: 'title4', weight: 'heavy' },
                         o._isWelcomeFlow ? S : z,
                       ),
@@ -112,20 +112,20 @@
                       v.a,
                       { style: L.root },
                       y.a.createElement(
-                        B.b,
+                        H.b,
                         { align: 'center', color: 'gray700', style: [L.description, !e && L.descriptionMarginTop] },
-                        this._isWelcomeFlow ? J : C,
+                        this._isWelcomeFlow ? R : C,
                       ),
                       y.a.createElement(
                         v.a,
                         { style: [L.tweetExample, e && L.tweetExampleMarginHorizontal] },
                         y.a.createElement(M.a, { withTweetBorder: !0 }),
                       ),
-                      y.a.createElement(B.b, { color: 'gray700', style: L.componentTitle, weight: 'bold' }, R),
+                      y.a.createElement(H.b, { color: 'gray700', style: L.componentTitle, weight: 'bold' }, V),
                       y.a.createElement(v.a, { style: L.component }, y.a.createElement(f.a, null)),
-                      y.a.createElement(B.b, { color: 'gray700', style: L.componentTitle, weight: 'bold' }, V),
+                      y.a.createElement(H.b, { color: 'gray700', style: L.componentTitle, weight: 'bold' }, j),
                       y.a.createElement(v.a, { style: [L.component, L.colorPicker] }, y.a.createElement(T.a, null)),
-                      y.a.createElement(B.b, { color: 'gray700', style: L.componentTitle, weight: 'bold' }, j),
+                      y.a.createElement(H.b, { color: 'gray700', style: L.componentTitle, weight: 'bold' }, A),
                       y.a.createElement(
                         v.a,
                         { style: [L.component, L.backgroundPicker] },
@@ -135,7 +135,7 @@
                         v.a,
                         { style: L.buttonContainer },
                         y.a.createElement(
-                          H.a,
+                          x.a,
                           { onPress: this._handleBackClick, type: 'brandFilled' },
                           this._isWelcomeFlow ? W : F,
                         ),
@@ -148,8 +148,8 @@
             t
           )
         })(y.a.Component)
-      g()(A, 'contextType', x.b), (a.default = Object(_.a)({ page: 'display' })(A))
-      var L = P.a.create(function (e) {
+      g()(J, 'contextType', P.b), (a.default = Object(B.a)(J, { page: 'display' }))
+      var L = _.a.create(function (e) {
         return {
           root: { paddingBottom: e.spaces.space32, paddingHorizontal: e.spaces.space32 },
           header: { marginBottom: e.spaces.space12, marginTop: e.spaces.space32 },
