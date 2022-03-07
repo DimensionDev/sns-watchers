@@ -1,22 +1,22 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [199],
+  [200],
   {
     '+93b': function (e, t, r) {
       'use strict'
       r.r(t)
       var a,
         n,
-        o,
-        i = r('yiKp'),
-        c = r.n(i),
+        i,
+        o = r('yiKp'),
+        c = r.n(o),
         s = r('ezF+'),
         l = r('ERkP'),
         d = r.n(l),
         u = r('Fmkq'),
-        m = r('VrFO'),
-        p = r.n(m),
-        b = r('Y9Ll'),
-        y = r.n(b),
+        b = r('VrFO'),
+        m = r.n(b),
+        p = r('Y9Ll'),
+        y = r.n(p),
         f = r('5Yy7'),
         h = r.n(f),
         C = r('2VqO'),
@@ -25,26 +25,26 @@
         R = r.n(E),
         T = r('rpbw'),
         g = (r('lTEL'), r('7x/C'), r('JtPf'), r('87if'), r('kYxP'), r('XBtf')),
-        P = {
+        A = {
           loader: function () {
-            return r.e(226).then(r.bind(null, 'kh1t'))
+            return r.e(227).then(r.bind(null, 'kh1t'))
           },
           loaderKey: 'feedbackItemLoader',
           strategy: g.a.Critical,
         },
-        A = r('TEXq'),
+        P = r('TEXq'),
         I = r('PlEh'),
         O = (r('yH/f'), Object.freeze({ PagedCarouselFeedbackItem: 'pagedCarouselFeedbackItem', Message: 'message' })),
         w = s.c({
           selectDisplayType: function (e) {
-            return Object(A.a)(e.content.content) || ''
+            return Object(P.a)(e.content.content) || ''
           },
           handlers:
-            ((a = {}), R()(a, O.PagedCarouselFeedbackItem, P), R()(a, O.Message, Object(I.a)({ withGaps: !1 })), a),
+            ((a = {}), R()(a, O.PagedCarouselFeedbackItem, A), R()(a, O.Message, Object(I.a)({ withGaps: !1 })), a),
         }),
         S = {
           loader: function () {
-            return r.e(233).then(r.bind(null, 'Itzz'))
+            return r.e(234).then(r.bind(null, 'Itzz'))
           },
           loaderKey: 'carouselTombstoneLoader',
           strategy: g.a.Critical,
@@ -58,35 +58,35 @@
         }),
         k = {
           loader: function () {
-            return r.e(239).then(r.bind(null, 'CdHO'))
+            return r.e(240).then(r.bind(null, 'CdHO'))
           },
           loaderKey: 'standardHandlerLoader',
           strategy: g.a.Critical,
         },
         M = {
           loader: function () {
-            return r.e(239).then(r.bind(null, 'vKPG'))
+            return r.e(240).then(r.bind(null, 'vKPG'))
           },
           loaderKey: 'broadcastLoader',
           strategy: g.a.Critical,
         },
         j = {
           loader: function () {
-            return r.e(239).then(r.bind(null, 'kthL'))
+            return r.e(240).then(r.bind(null, 'kthL'))
           },
           loaderKey: 'callToActionLoader',
           strategy: g.a.Critical,
         },
         K = {
           loader: function () {
-            return r.e(239).then(r.bind(null, 'FYbo'))
+            return r.e(240).then(r.bind(null, 'FYbo'))
           },
           loaderKey: 'scoreCardLoader',
           strategy: g.a.Critical,
         },
         L = s.c({
           selectDisplayType: function (e) {
-            return Object(A.a)(e.content.content) || ''
+            return Object(P.a)(e.content.content) || ''
           },
           handlers:
             ((n = {}),
@@ -99,13 +99,13 @@
         z = r('67iF'),
         x = r('8UdT'),
         B =
-          ((o = {}),
-          R()(o, x.b.PagedCarouselItem, w),
-          R()(o, x.b.Tile, L),
-          R()(o, x.b.Topic, Object(z.a)({})),
-          R()(o, x.b.TwitterList, Object(T.a)({})),
-          R()(o, x.a.Tombstone, F),
-          o),
+          ((i = {}),
+          R()(i, x.b.PagedCarouselItem, w),
+          R()(i, x.b.Tile, L),
+          R()(i, x.b.Topic, Object(z.a)({})),
+          R()(i, x.b.TwitterList, Object(T.a)({})),
+          R()(i, x.a.Tombstone, F),
+          i),
         V = r('FIs5'),
         H = r('MDbM'),
         N = r('eXtP'),
@@ -116,7 +116,7 @@
         q = r('RuTB'),
         U = Object(Y.a)({
           loader: function () {
-            return Promise.all([r.e(0), r.e(198)]).then(r.bind(null, 'DO1+'))
+            return Promise.all([r.e(0), r.e(199)]).then(r.bind(null, 'DO1+'))
           },
           renderPlaceholder: function (e, t) {
             return d.a.createElement(q.a, { hasError: e, onRetry: t })
@@ -128,7 +128,7 @@
         Q = r('JfS+'),
         $ = Object(Y.a)({
           loader: function () {
-            return Promise.all([r.e(0), r.e(198)]).then(r.bind(null, '0xZH'))
+            return Promise.all([r.e(0), r.e(199)]).then(r.bind(null, '0xZH'))
           },
           renderPlaceholder: function (e, t) {
             return d.a.createElement(q.a, { hasError: e, onRetry: t })
@@ -141,7 +141,7 @@
           h()(r, e)
           var t = v()(r)
           function r() {
-            return p()(this, r), t.apply(this, arguments)
+            return m()(this, r), t.apply(this, arguments)
           }
           return (
             y()(r, [
@@ -153,11 +153,12 @@
                     r = e.canRefresh,
                     a = e.dismissedEntries,
                     n = e.items,
-                    o = e.module,
-                    i = e.moduleEntryId,
+                    i = e.module,
+                    o = e.moduleEntryId,
                     s = e.numRowsFromMetadata,
                     l = e.renderEmptyState,
                     u = e.richScribeAction,
+                    b = e.scribe,
                     m = e.scribeNamespace,
                     p = e.scrollerDisplayType
                   return d.a.createElement(
@@ -166,7 +167,7 @@
                     d.a.createElement(N.a, { dismissedEntries: a, entries: n, entryConfiguration: B }, function (e, a) {
                       return d.a.createElement(
                         _.a,
-                        { identifier: i },
+                        { identifier: o },
                         d.a.createElement(Q.a, {
                           applyReactionInstructions: t,
                           canRefresh: r,
@@ -174,7 +175,7 @@
                           entries: a,
                           handlerRegistry: e,
                           initialFetchStatus: H.a.LOADED,
-                          module: o,
+                          module: i,
                           onAtTop: J.a,
                           onRef: J.a,
                           processCallback: te,
@@ -182,9 +183,10 @@
                           removeAlert: J.a,
                           renderEmptyState: l,
                           richScribeAction: u,
+                          scribeAction: b,
                           scribeNamespace: m,
                           scroller: p === Z.a.PagedCarousel ? U : $,
-                          timelineId: i,
+                          timelineId: o,
                           title: 'Carousel',
                           withKeyboardShortcuts: !1,
                         }),
@@ -205,8 +207,8 @@
           scrollerDisplayType: Z.a.Vertical,
         })
       var ne = ae,
-        oe = r('zh9S'),
-        ie = r('Rp9C'),
+        ie = r('zh9S'),
+        oe = r('Rp9C'),
         ce = r('X04g'),
         se = r('VPAj')
       t.default = function (e) {
@@ -216,7 +218,7 @@
             return {
               applyReactionInstructions: e.module.applyReactionInstructions,
               richScribeAction: u.richScribeAction,
-              scribe: oe.c,
+              scribe: ie.c,
             }
           },
           component: ne,
@@ -236,20 +238,21 @@
             var r,
               a = e.data,
               n = a.dismissedEntries,
-              o = void 0 === n ? {} : n,
-              i = a.canRefresh,
+              i = void 0 === n ? {} : n,
+              o = a.canRefresh,
               c = e.entry,
               s = c.content.items,
               l = c.entryId,
               d = c.itemMetadata.moduleMetadata,
               u = e.scribeNamespace,
-              m = e.actions,
-              p = m.applyReactionInstructions,
-              b = m.richScribeAction
+              b = e.actions,
+              m = b.applyReactionInstructions,
+              p = b.richScribeAction,
+              y = b.scribe
             return {
-              applyReactionInstructions: p,
-              canRefresh: i,
-              dismissedEntries: o,
+              applyReactionInstructions: m,
+              canRefresh: o,
+              dismissedEntries: i,
               items: s || [],
               module: e.module,
               moduleEntryId: l,
@@ -259,8 +262,9 @@
                     ? void 0
                     : r.numRows
                   : void 0,
-              richScribeAction: b,
+              richScribeAction: p,
               scribeNamespace: u,
+              scribe: y,
               scrollerDisplayType: t,
             }
           },
@@ -268,9 +272,9 @@
             var t = e.actions.scribe,
               r = e.entry.itemMetadata.clientEventInfo,
               a = e.scribeNamespace,
-              n = ie.a.getAllSurfaceDetails(r),
-              o = n ? { items: [c()({ item_type: ce.a.ItemType.CAROUSEL }, n)] } : void 0
-            t(c()(c()({}, a), {}, { action: 'impression' }), o)
+              n = oe.a.getAllSurfaceDetails(r),
+              i = n ? { items: [c()({ item_type: ce.a.ItemType.CAROUSEL }, n)] } : void 0
+            t(c()(c()({}, a), {}, { action: 'impression' }), i)
           },
           isFocusable: Object(se.a)(!0),
           getBehavioralEventContextOverride: J.a,
@@ -285,12 +289,12 @@
       r('FtHn')
       var a = r('ERkP'),
         n = r.n(a),
-        o = r('b1wW'),
-        i = r('v6aA'),
+        i = r('b1wW'),
+        o = r('v6aA'),
         c = n.a.createContext(
           Object.create(
-            i.c,
-            Object.getOwnPropertyDescriptors({ numRowsFromMetadata: void 0, scrollerDisplayType: o.a.Carousel }),
+            o.c,
+            Object.getOwnPropertyDescriptors({ numRowsFromMetadata: void 0, scrollerDisplayType: i.a.Carousel }),
           ),
         )
       t.b = c

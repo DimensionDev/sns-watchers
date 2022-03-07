@@ -4846,7 +4846,7 @@
         v = Object(m.a)({
           loader: function () {
             return f.a.emoji.then(function () {
-              return Promise.all([n.e(17), n.e(227)]).then(n.bind(null, '4AX5'))
+              return Promise.all([n.e(18), n.e(228)]).then(n.bind(null, '4AX5'))
             })
           },
           renderPlaceholder: function (e, t) {

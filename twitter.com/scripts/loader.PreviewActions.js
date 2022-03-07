@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [180],
+  [181],
   {
     WOwf: function (e, t, n) {
       'use strict'
@@ -77,15 +77,13 @@
                 void 0 === i
                   ? void 0
                   : i.id_str,
-              p = null == r ? void 0 : r.previewData.tweetType,
-              m = o.durationSecs || l.a
+              p = o.durationSecs || l.a
             return {
               timeToSend: u,
               inReplyToStatusId: null == d ? void 0 : d.id_str,
-              undoPeriod: m,
+              undoPeriod: p,
               communityIdValue: s,
               quotedStatusId: c,
-              tweetType: p,
             }
           })
           .propsFromActions(function () {
@@ -97,13 +95,13 @@
       var m = n('zCf4'),
         w = n('MWbm'),
         f = n('t62R'),
-        y = n('aRdY'),
-        b = n('/yvb'),
+        b = n('aRdY'),
+        y = n('/yvb'),
         v = n('rHpw'),
         S = p.a.bc2ceaf2,
-        T = p.a.gf5e9ea6,
-        g = p.a.j4c40da3,
-        h = p.a.b23688c7,
+        g = p.a.gf5e9ea6,
+        h = p.a.j4c40da3,
+        T = p.a.b23688c7,
         E = function (e) {
           var t = Object(m.f)(),
             n = e.analytics,
@@ -113,21 +111,20 @@
             s = e.quotedStatusId,
             l = e.sendNow,
             d = e.timeToSend,
-            c = e.tweetType,
-            p = e.undoPeriod,
-            v = e.undoTweet,
-            E = o.a.useState(),
-            _ = i()(E, 2),
-            W = _[0],
-            x = _[1],
-            C = o.a.useState(!1),
-            R = i()(C, 2),
-            D = R[0],
-            j = R[1],
-            k = o.a.useState(1e3 * parseInt(p, 10)),
-            q = i()(k, 1)[0],
-            F = o.a.useState(parseInt(d, 10) - q),
-            L = (function (e, t) {
+            c = e.undoPeriod,
+            p = e.undoTweet,
+            v = o.a.useState(),
+            E = i()(v, 2),
+            W = E[0],
+            x = E[1],
+            _ = o.a.useState(!1),
+            C = i()(_, 2),
+            R = C[0],
+            j = C[1],
+            k = o.a.useState(1e3 * parseInt(c, 10)),
+            D = i()(k, 1)[0],
+            q = o.a.useState(parseInt(d, 10) - D),
+            F = (function (e, t) {
               var n = o.a.useState(0),
                 a = i()(n, 2),
                 r = a[0],
@@ -150,8 +147,8 @@
                 ),
                 r
               )
-            })(q, i()(F, 1)[0])
-          if (L >= 1) return null
+            })(D, i()(q, 1)[0])
+          if (F >= 1) return null
           return 'number' != typeof d
             ? null
             : o.a.createElement(
@@ -177,7 +174,7 @@
                   o.a.createElement(
                     w.a,
                     { style: I.timerWrapper },
-                    o.a.createElement(y.a, { accessibilityLabel: h, count: L, maxCount: 1 }),
+                    o.a.createElement(b.a, { accessibilityLabel: T, count: F, maxCount: 1 }),
                   ),
                   !W || W < 470 ? null : o.a.createElement(f.b, { style: I.sendingLabel, weight: 'bold' }, S),
                 ),
@@ -185,34 +182,34 @@
                   w.a,
                   { style: I.buttonWrapper },
                   o.a.createElement(
-                    b.a,
+                    y.a,
                     {
-                      disabled: D,
+                      disabled: R,
                       onClick: function () {
                         l(u),
                           j(!0),
                           n.scribe({
                             element: 'send_now',
                             action: 'send_now',
-                            data: { subscription_details: { draft_id: u, undo_period: p, tweet_type: c } },
+                            data: { subscription_details: { draft_id: u, undo_period: c } },
                           })
                       },
                       size: 'xSmall',
                       style: { marginRight: 4 },
                       type: 'brandText',
                     },
-                    g,
+                    h,
                   ),
                   o.a.createElement(
-                    b.a,
+                    y.a,
                     {
                       onClick: function () {
                         n.scribe({
                           element: 'undo_tweet',
                           action: 'undo',
-                          data: { subscription_details: { draft_id: u, undo_period: p, tweet_type: c } },
+                          data: { subscription_details: { draft_id: u, undo_period: c } },
                         }),
-                          v(u),
+                          p(u),
                           t.push({
                             pathname: '/compose/tweet',
                             state: {
@@ -226,7 +223,7 @@
                       size: 'xSmall',
                       type: 'brandFilled',
                     },
-                    T,
+                    g,
                   ),
                 ),
               )
@@ -248,8 +245,8 @@
             buttonWrapper: { display: 'flex', flexDirection: 'row' },
           }
         }),
-        _ = d(E)
-      t.default = _
+        W = d(E)
+      t.default = W
     },
   },
 ])

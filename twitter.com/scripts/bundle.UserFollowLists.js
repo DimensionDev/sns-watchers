@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [109],
+  [110],
   {
     '88ay': function (e, o, t) {
       'use strict'
@@ -579,7 +579,7 @@
           fetchOneUserByScreenNameIfNeeded: I.e.fetchOneByScreenNameIfNeeded,
           fetchKnownFollowersIfNeeded: v.a,
         },
-        R = Object(k.f)(O, L),
+        R = Object(k.g)(O, L),
         N = t('yiKp'),
         T = t.n(N),
         P = t('QIgh'),

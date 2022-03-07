@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [235],
+  [236],
   {
     '+GrA': function (e, t, n) {
       'use strict'
@@ -1878,7 +1878,7 @@
             }
           },
         },
-        U = Object(w.f)(M, D),
+        U = Object(w.g)(M, D),
         H = n('v//M'),
         K = n('6ZHn'),
         j = n('TEoO'),
@@ -4503,7 +4503,7 @@
           deleteContacts: _.b,
           updateSettings: _.N,
         },
-        w = Object(y.f)(S, v),
+        w = Object(y.g)(S, v),
         C = n('3XMw'),
         T = n.n(C),
         A = n('yoO3'),
@@ -5297,7 +5297,7 @@
           ),
           fetchLoginVerificationSettings: _.e,
         },
-        C = Object(S.f)(v, w),
+        C = Object(S.g)(v, w),
         T = n('kGix'),
         A = n('jHSc'),
         k = n('bPFD'),
@@ -7420,13 +7420,13 @@
         P = '/settings/blocked/imported',
         R = { page: 'settings', section: 'blocked_accounts' },
         N = Object(y.a)(function () {
-          return Promise.all([n.e(0), n.e(14), n.e(24), n.e(235)]).then(n.bind(null, 'XFGu'))
+          return Promise.all([n.e(0), n.e(15), n.e(25), n.e(236)]).then(n.bind(null, 'XFGu'))
         }),
         x = Object(y.a)(function () {
-          return Promise.all([n.e(0), n.e(14), n.e(24), n.e(235)]).then(n.bind(null, 'tJyY'))
+          return Promise.all([n.e(0), n.e(15), n.e(25), n.e(236)]).then(n.bind(null, 'tJyY'))
         }),
         M = Object(y.a)(function () {
-          return Promise.all([n.e(0), n.e(14), n.e(24), n.e(235)]).then(n.bind(null, 'aaHS'))
+          return Promise.all([n.e(0), n.e(15), n.e(25), n.e(236)]).then(n.bind(null, 'aaHS'))
         }),
         D = (function (e) {
           u()(n, e)
@@ -7546,7 +7546,7 @@
           syncSettings: S.syncSettings,
           updateSettings: S.updateSettings,
         },
-        I = Object(A.f)(L, O),
+        I = Object(A.g)(L, O),
         F = n('xCYy'),
         P = n('v//M'),
         R = n('uD2z'),
@@ -8629,7 +8629,7 @@
           scribePageImpression: y.d,
           updatePushNotificationSettings: S.updatePushNotificationSettings,
         },
-        I = Object(k.f)(L, O),
+        I = Object(k.g)(L, O),
         F = n('kGix'),
         P = n('v//M'),
         R = n('3XMw'),

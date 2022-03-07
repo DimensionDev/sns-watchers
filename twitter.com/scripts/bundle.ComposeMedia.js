@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [45],
+  [46],
   {
     '07FG': function (e, t, a) {
       'use strict'
@@ -10,676 +10,6 @@
         r = function (e) {
           return e === n.B
         }
-    },
-    '0uGn': function (e, t, a) {
-      'use strict'
-      a.d(t, 'a', function () {
-        return Te
-      })
-      var n = a('yiKp'),
-        r = a.n(n),
-        i = a('RhWx'),
-        o = a.n(i),
-        s = a('VrFO'),
-        c = a.n(s),
-        l = a('Y9Ll'),
-        d = a.n(l),
-        u = a('1Pcy'),
-        m = a.n(u),
-        p = a('5Yy7'),
-        h = a.n(p),
-        v = a('2VqO'),
-        f = a.n(v),
-        g = a('KEM+'),
-        b = a.n(g),
-        y =
-          (a('hBpG'),
-          a('7x/C'),
-          a('vrRf'),
-          a('jwue'),
-          a('+oxZ'),
-          a('2G9S'),
-          a('z84I'),
-          a('JtPf'),
-          a('lTEL'),
-          a('87if'),
-          a('kYxP'),
-          a('LqLs'),
-          a('m9LP'),
-          a('ERkP')),
-        _ = a.n(y),
-        M = (a('TJCb'), a('DZ+c'), a('xZGM')),
-        T = a('GTeL'),
-        E = a('3XMw'),
-        C = a.n(E),
-        S = a('rHpw'),
-        w = S.a.create(function (e) {
-          return {
-            formTextInput: {
-              width: '100%',
-              backgroundColor: e.colors.navigationBackground,
-              paddingHorizontal: e.spaces.space12,
-              paddingBottom: 0,
-              borderTopWidth: e.spaces.space1,
-              borderTopStyle: 'solid',
-              borderTopColor: e.colors.borderColor,
-            },
-            attachmentContainer: { width: '100%', height: '100%', flexGrow: 1 },
-            root: { display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', height: '100%', flexGrow: 1 },
-          }
-        }),
-        I = 'altTextInput',
-        x = 'endEditingButton',
-        k = 'altTextEducationSheetPrimaryAction',
-        A = a('MWbm'),
-        R = a('t62R'),
-        P = a('p+r5'),
-        D = C.a.feabf2a0,
-        L = C.a.e36287c6,
-        O = C.a.cf565d08,
-        j = (function (e) {
-          h()(a, e)
-          var t = f()(a)
-          function a() {
-            var e
-            c()(this, a)
-            for (var n = arguments.length, r = new Array(n), i = 0; i < n; i++) r[i] = arguments[i]
-            return (
-              (e = t.call.apply(t, [this].concat(r))),
-              b()(m()(e), '_renderInputHelperText', function () {
-                var t = e.props.onShowEducation
-                return t ? _.a.createElement(R.b, { color: 'link', onPress: t, withInteractiveStyling: !0 }, O) : null
-              }),
-              b()(m()(e), '_handleChange', function (t) {
-                var a = e.props,
-                  n = a.currentMediaId,
-                  r = a.mediaItem,
-                  i = a.onChange,
-                  o = t.target.value
-                r ? i(o, r.id.toString()) : n && i(o, n)
-              }),
-              e
-            )
-          }
-          return (
-            d()(a, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.autofocus,
-                    a = e.maxLength,
-                    n = e.mediaItem,
-                    r = e.orientedImage,
-                    i = e.value
-                  return _.a.createElement(
-                    A.a,
-                    { style: w.root },
-                    _.a.createElement(
-                      A.a,
-                      { style: w.attachmentContainer },
-                      _.a.createElement(T.a, { mediaItem: n, orientedImage: r }),
-                      _.a.createElement(P.a, {
-                        accessibilityLabel: D,
-                        autoFocus: t,
-                        helperText: this._renderInputHelperText(),
-                        label: L,
-                        maxLength: a,
-                        maxNumberOfLines: 6,
-                        multiline: !0,
-                        name: 'altTextInput',
-                        numberOfLines: 2,
-                        onChange: this._handleChange,
-                        style: w.formTextInput,
-                        testID: I,
-                        value: i,
-                      }),
-                    ),
-                  )
-                },
-              },
-            ]),
-            a
-          )
-        })(_.a.Component),
-        U = a('rxPX'),
-        W = function (e, t) {
-          return Object(M.A)(e, M.a)
-        },
-        F = Object(U.a)()
-          .propsFromState(function () {
-            return { showEducationOnMount: W }
-          })
-          .propsFromActions(function () {
-            return { addFlag: M.w }
-          })
-          .withAnalytics(),
-        B = a('feu+'),
-        V = C.a.ffe9ec3a,
-        z = C.a.j063b261,
-        G = C.a.e57144f0,
-        K = C.a.f9f9210c,
-        H = (function (e) {
-          h()(a, e)
-          var t = f()(a)
-          function a() {
-            var e
-            c()(this, a)
-            for (var n = arguments.length, r = new Array(n), i = 0; i < n; i++) r[i] = arguments[i]
-            return (
-              (e = t.call.apply(t, [this].concat(r))),
-              b()(m()(e), 'state', { showAltTextEducationSheet: !1 }),
-              b()(m()(e), '_handleOpenEducationPrompt', function () {
-                var t = e.props.analytics
-                e.setState({ showAltTextEducationSheet: !0 }), t.scribe({ component: 'education', action: 'click' })
-              }),
-              b()(m()(e), '_handleCloseEducationPrompt', function () {
-                e.setState({ showAltTextEducationSheet: !1 })
-              }),
-              b()(m()(e), '_handleEducationPromptPrimaryAction', function () {
-                var t = e.props.analytics
-                e._handleCloseEducationPrompt(),
-                  t.scribe({ component: 'education', element: 'alt_text_button', action: 'click' })
-              }),
-              b()(m()(e), '_handleEducationPromptSecondaryAction', function () {
-                e.props.history.goBack()
-              }),
-              e
-            )
-          }
-          return (
-            d()(a, [
-              {
-                key: 'componentDidMount',
-                value: function () {
-                  var e = this.props,
-                    t = e.addFlag,
-                    a = e.analytics
-                  e.showEducationOnMount &&
-                    (this.setState({ showAltTextEducationSheet: !0 }),
-                    a.scribe({ component: 'education', action: 'open' }),
-                    t(M.a))
-                },
-              },
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.mediaItem,
-                    a = e.onAltTextChange,
-                    n = e.orientedImage,
-                    r = e.value,
-                    i = this.state.showAltTextEducationSheet,
-                    o = t && t.id.toString()
-                  return _.a.createElement(
-                    A.a,
-                    { style: N.root },
-                    i
-                      ? _.a.createElement(B.a, {
-                          actionLabel: G,
-                          headline: V,
-                          onAction: this._handleEducationPromptPrimaryAction,
-                          onClose: this._handleCloseEducationPrompt,
-                          onSecondaryAction: this._handleEducationPromptSecondaryAction,
-                          primaryButtonTestID: k,
-                          secondaryActionLabel: K,
-                          subtext: z,
-                        })
-                      : null,
-                    _.a.createElement(j, {
-                      autofocus: !0,
-                      currentMediaId: o,
-                      maxLength: 1e3,
-                      mediaItem: t,
-                      onChange: a,
-                      onShowEducation: this._handleOpenEducationPrompt,
-                      orientedImage: n,
-                      value: r,
-                    }),
-                  )
-                },
-              },
-            ]),
-            a
-          )
-        })(_.a.Component),
-        N = S.a.create(function (e) {
-          return { root: { flexGrow: 1 } }
-        }),
-        q = F(H),
-        Q = a('jHSc'),
-        X = a('EeFI'),
-        J = a('7JQg'),
-        Y = a('9Q4p'),
-        Z = a('PrL8'),
-        $ = a('k/OQ'),
-        ee = a('/yvb'),
-        te = a('oQhu'),
-        ae = a('ddV6'),
-        ne = a.n(ae),
-        re = function (e) {
-          var t = new Map()
-          return (
-            e.forEach(function (e) {
-              var a = ne()(e, 2),
-                n = a[0],
-                r = a[1]
-              t.set(n, r)
-            }),
-            t
-          )
-        },
-        ie = a('mN6z'),
-        oe = a('95Se'),
-        se = a('7Mjr'),
-        ce = a('Mbn/'),
-        le = a('zIWA'),
-        de = a('1auM'),
-        ue = a('eYns'),
-        me = { section: 'alt_text' },
-        pe = { section: 'crop' },
-        he = { section: 'sensitive_media' },
-        ve = C.a.e070024a,
-        fe = C.a.i2209530,
-        ge = C.a.i7d24b36,
-        be = C.a.f96a38a2,
-        ye = C.a.hac7c548,
-        _e = C.a.e3dbfba3,
-        Me = C.a.dd4a83a5,
-        Te = { crop: 'crop', altText: 'alt_text', sensitiveMedia: 'sensitive_media' },
-        Ee = (function (e) {
-          h()(a, e)
-          var t = f()(a)
-          function a(e) {
-            var n
-            c()(this, a),
-              (n = t.call(this, e)),
-              b()(m()(n), '_cropper', _.a.createRef()),
-              b()(
-                m()(n),
-                '_getMemoizedTabMetadata',
-                Object(te.a)(function (e, t) {
-                  return t && e === Te.sensitiveMedia
-                    ? { namespace: he, title: Me, renderer: n._renderSensitiveMediaTab }
-                    : e === Te.altText
-                    ? { namespace: me, title: _e, renderer: n._renderAltTextTab }
-                    : { namespace: pe, title: ye, renderer: n._renderCropTab }
-                }),
-              ),
-              b()(m()(n), '_renderTabContent', function (e) {
-                var t,
-                  a = n.props,
-                  r = a.location,
-                  i = a.sensitiveMediaTabEnabled,
-                  o = n._getMemoizedTabMetadata(e, i),
-                  s = !(null !== (t = r.state) && void 0 !== t && t.hideTabs),
-                  c = s ? n._getTabLinks(e) : [],
-                  l = o.renderer()
-                return s && c.length > 1
-                  ? _.a.createElement(
-                      _.a.Fragment,
-                      null,
-                      _.a.createElement($.a, { accessibilityLabel: ve, links: c }),
-                      _.a.createElement(A.a, { style: Z.a.segmentedControlChildren }, l),
-                    )
-                  : l
-              }),
-              b()(m()(n), '_renderAltTextTab', function () {
-                var e = n.props.history,
-                  t = n.state,
-                  a = t.currentMediaId,
-                  r = t.mediaMetadata,
-                  i = t.orientedImage,
-                  o = n._getCurrentMediaItem(),
-                  s = r[a] && r[a].altText
-                return _.a.createElement(q, {
-                  history: e,
-                  key: a,
-                  mediaItem: o,
-                  onAltTextChange: n._handleAltTextChange,
-                  orientedImage: i.get(a),
-                  value: s,
-                })
-              }),
-              b()(m()(n), '_renderCropTab', function () {
-                var e = n.state,
-                  t = e.cropData,
-                  a = e.currentMediaId,
-                  r = n._getCurrentMediaItem()
-                return _.a.createElement(X.a, {
-                  defaultCropData: t.get(a),
-                  key: a,
-                  media: r,
-                  ref: n._cropper,
-                  withAspectRatioOptions: !0,
-                })
-              }),
-              b()(m()(n), '_renderSensitiveMediaTab', function () {
-                var e = n.state,
-                  t = e.currentMediaId,
-                  a = e.mediaMetadata,
-                  r = e.orientedImage,
-                  i = n._getCurrentMediaItem(),
-                  o = a[t] && a[t].sensitiveMediaWarning
-                return _.a.createElement(Y.a, {
-                  currentWarnings: o,
-                  key: t,
-                  mediaItem: i,
-                  onWarningChange: n._handleSensitiveWarningChange,
-                  orientedImage: r.get(t),
-                })
-              }),
-              b()(m()(n), '_renderAppBarRightControl', function () {
-                var e = n.state.isProcessing,
-                  t = n._getNextMediaIndex(1),
-                  a = n._getNextMediaIndex(-1)
-                return _.a.createElement(
-                  A.a,
-                  { style: Z.a.rightControl },
-                  n._hasMediaAtIndex(a) || n._hasMediaAtIndex(t)
-                    ? _.a.createElement(
-                        A.a,
-                        { style: [Z.a.rightControl, Z.a.leftRightButtons] },
-                        _.a.createElement(ee.a, {
-                          accessibilityLabel: be,
-                          disabled: !n._hasMediaAtIndex(a),
-                          icon: _.a.createElement(oe.a, null),
-                          onPress: n._handleClickToMediaAtIndex(a),
-                          size: 'small',
-                          style: Z.a.prevButton,
-                          type: 'primaryOutlined',
-                        }),
-                        _.a.createElement(ee.a, {
-                          accessibilityLabel: ge,
-                          disabled: !n._hasMediaAtIndex(t),
-                          icon: _.a.createElement(se.a, null),
-                          onPress: n._handleClickToMediaAtIndex(t),
-                          size: 'small',
-                          type: 'primaryOutlined',
-                        }),
-                      )
-                    : null,
-                  _.a.createElement(
-                    ee.a,
-                    {
-                      disabled: e,
-                      onPress: n._handleEndEditingClick,
-                      size: 'small',
-                      style: Z.a.saveButton,
-                      testID: x,
-                      type: 'primaryFilled',
-                    },
-                    fe,
-                  ),
-                )
-              }),
-              b()(m()(n), '_handleCancelEditingClick', function (e) {
-                n._scribeWithNamespace({ action: 'cancel' }), e()
-              }),
-              b()(m()(n), '_handleClickTab', function (e) {
-                var t = n.props.analytics
-                n._handleSaveCropData(),
-                  n._scribeWithNamespace({ element: e, action: 'click' }),
-                  t.scribePageImpression()
-              }),
-              b()(m()(n), '_getCurrentMediaItem', function () {
-                var e = n.props.media,
-                  t = n.state.currentMediaId
-                return e.find(function (e) {
-                  return e.id === t
-                })
-              }),
-              b()(m()(n), '_getNextMediaIndex', function (e) {
-                var t = n.props.media,
-                  a = n._getCurrentMediaItem()
-                return t.indexOf(a) + e
-              }),
-              b()(m()(n), '_hasMediaAtIndex', function (e) {
-                var t = n.props.media
-                return e >= 0 && e < t.length
-              }),
-              b()(m()(n), '_handleClickToMediaAtIndex', function (e) {
-                return function () {
-                  var t = n.props.media
-                  if (n._hasMediaAtIndex(e)) {
-                    n._handleSaveCropData()
-                    var a = t[e].id
-                    n.setState({ currentMediaId: a })
-                  }
-                }
-              }),
-              b()(m()(n), '_saveMediaMetadata', function () {
-                var e = n.props,
-                  t = e.media,
-                  a = e.setMediaMetadata,
-                  r = n.state.mediaMetadata
-                t.forEach(function (e) {
-                  a(e.id, r[e.id])
-                })
-              }),
-              b()(m()(n), '_handleEndEditingClick', function () {
-                var e = n.props.history,
-                  t = n._cropper && n._cropper.current,
-                  a = n.state.cropData
-                if (t || a.size) {
-                  var r = n.props,
-                    i = r.media,
-                    s = r.processMedia,
-                    c = r.updateMediaUpload,
-                    l = n.state.currentMediaId
-                  n.setState({ isProcessing: !0 })
-                  var d = t ? re([].concat(o()(a), [[l, t.getCropData()]])) : a,
-                    u = i.map(function (e) {
-                      return d.get(e.id) ? (c({ id: e.id, cropData: d.get(e.id) }), s(e.id)) : Promise.resolve()
-                    })
-                  Promise.all(u).then(function () {
-                    n._scribeWithNamespace({ action: 'done' })
-                  })
-                }
-                n._saveMediaMetadata(), e.goBack()
-              }),
-              b()(m()(n), '_handleAltTextChange', function (e) {
-                n.setState(function (t) {
-                  return {
-                    mediaMetadata: r()(
-                      r()({}, t.mediaMetadata),
-                      {},
-                      b()({}, t.currentMediaId, r()(r()({}, t.mediaMetadata[t.currentMediaId]), {}, { altText: e })),
-                    ),
-                  }
-                })
-              }),
-              b()(m()(n), '_handleSensitiveWarningChange', function (e, t) {
-                n.setState(function (a) {
-                  var n =
-                    (a.mediaMetadata[a.currentMediaId] && a.mediaMetadata[a.currentMediaId].sensitiveMediaWarning) ||
-                    new Set()
-                  return (
-                    t ? n.add(e) : n.delete(e),
-                    {
-                      mediaMetadata: r()(
-                        r()({}, a.mediaMetadata),
-                        {},
-                        b()(
-                          {},
-                          a.currentMediaId,
-                          r()(r()({}, a.mediaMetadata[a.currentMediaId]), {}, { sensitiveMediaWarning: n }),
-                        ),
-                      ),
-                    }
-                  )
-                })
-              }),
-              b()(m()(n), '_handleSaveCropData', function () {
-                var e = n._cropper && n._cropper.current
-                if (e) {
-                  var t = n.state.currentMediaId,
-                    a = e.getCropData(),
-                    r = n._getCurrentMediaItem()
-                  if (
-                    r &&
-                    !Object(ie.a)(a, n.state.cropData.get(t)) &&
-                    (n.setState(function (e) {
-                      return { orientedImage: re([].concat(o()(e.orientedImage), [[t, null]])) }
-                    }),
-                    r.originalMediaFile && r.originalMediaFile instanceof de.a)
-                  ) {
-                    var i = r.cropData
-                    Object(ue.b)(r.originalMediaFile, { cropData: a || i })
-                      .then(function (e) {
-                        return new de.a(e).withDimensionsAndOrientation().then(function (e) {
-                          n.setState(function (n) {
-                            return {
-                              orientedImage: re([].concat(o()(n.orientedImage), [[t, e]])),
-                              cropData: re([].concat(o()(n.cropData), [[t, a]])),
-                            }
-                          })
-                        })
-                      })
-                      .catch(function () {
-                        n.setState(function (e) {
-                          return { orientedImage: re([].concat(o()(e.orientedImage), [[t, void 0]])) }
-                        })
-                      })
-                  }
-                  n.setState(function (e) {
-                    return { cropData: re([].concat(o()(e.cropData), [[t, a]])) }
-                  })
-                }
-              }),
-              b()(m()(n), '_scribeWithNamespace', function (e) {
-                var t = n.props,
-                  a = t.analytics,
-                  i = t.sensitiveMediaTabEnabled,
-                  o = n._getCurrentTab(),
-                  s = n._getMemoizedTabMetadata(o, i)
-                a.scribe(r()(r()({}, s.namespace), e))
-              }),
-              b()(m()(n), '_getMediaMetadata', function (e) {
-                var t = {}
-                return (
-                  e.forEach(function (e) {
-                    return (t[e.id] = e.mediaMetadata)
-                  }),
-                  t
-                )
-              })
-            var i = e.initialMediaId,
-              s = e.media,
-              l = n._getMediaMetadata(s)
-            return (
-              (n.state = {
-                cropData: new Map(),
-                isProcessing: !1,
-                mediaMetadata: l,
-                currentMediaId: i || -1,
-                orientedImage: new Map(),
-              }),
-              n
-            )
-          }
-          return (
-            d()(a, [
-              {
-                key: 'render',
-                value: function () {
-                  var e = this.props,
-                    t = e.history,
-                    a = e.sensitiveMediaTabEnabled,
-                    n = this._getCurrentTab(),
-                    r = this._getMemoizedTabMetadata(n, a)
-                  return _.a.createElement(
-                    J.c,
-                    { namespace: r.namespace },
-                    _.a.createElement(
-                      Q.b,
-                      {
-                        backButtonType: 'back',
-                        containerStyle: Z.a.root,
-                        documentTitle: r.title,
-                        history: t,
-                        onBackClick: this._handleCancelEditingClick,
-                        rightControl: this._renderAppBarRightControl(),
-                        title: r.title,
-                      },
-                      this._renderTabContent(n),
-                    ),
-                  )
-                },
-              },
-              {
-                key: '_getCurrentTab',
-                value: function () {
-                  var e,
-                    t = this.props,
-                    a = t.location,
-                    n = t.sensitiveMediaTabEnabled,
-                    r = null === (e = a.state) || void 0 === e ? void 0 : e.tab
-                  return n && r === Te.sensitiveMedia ? Te.sensitiveMedia : r === Te.altText ? Te.altText : Te.crop
-                },
-              },
-              {
-                key: '_getTabLinks',
-                value: function (e) {
-                  var t,
-                    a = this,
-                    n = this.props,
-                    i = n.analytics,
-                    o = n.location,
-                    s = n.sensitiveMediaTabEnabled,
-                    c = this._getCurrentMediaItem(),
-                    l = []
-                  return (
-                    null != c &&
-                      null !== (t = c.originalMediaFile) &&
-                      void 0 !== t &&
-                      t.isImage &&
-                      l.push({
-                        to: r()(r()({}, o), {}, { state: r()(r()({}, o.state), {}, { tab: Te.crop }) }),
-                        label: _.a.createElement(ce.a, null),
-                        key: Te.crop,
-                        accessibilityLabel: ye,
-                        isActive: function () {
-                          return e === Te.crop
-                        },
-                        onClick: function () {
-                          return i.scribePageImpression()
-                        },
-                      }),
-                    l.push({
-                      to: r()(r()({}, o), {}, { state: r()(r()({}, o.state), {}, { tab: Te.altText }) }),
-                      label: _.a.createElement(R.b, { weight: 'bold' }, 'ALT'),
-                      key: Te.altText,
-                      accessibilityLabel: _e,
-                      isActive: function () {
-                        return e === Te.altText
-                      },
-                      onClick: function () {
-                        return a._handleClickTab('alt_text_button')
-                      },
-                    }),
-                    s &&
-                      l.push({
-                        to: r()(r()({}, o), {}, { state: r()(r()({}, o.state), {}, { tab: Te.sensitiveMedia }) }),
-                        label: _.a.createElement(le.a, null),
-                        key: Te.sensitiveMedia,
-                        accessibilityLabel: Me,
-                        isActive: function () {
-                          return e === Te.sensitiveMedia
-                        },
-                        onClick: function () {
-                          return a._handleClickTab('sensitive_media_tab')
-                        },
-                      }),
-                    l
-                  )
-                },
-              },
-            ]),
-            a
-          )
-        })(_.a.Component)
-      t.b = Ee
     },
     '2prg': function (e, t, a) {
       var n = a('ZORK')
@@ -720,73 +50,6 @@
         }
       ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
     },
-    '9Q4p': function (e, t, a) {
-      'use strict'
-      a.d(t, 'a', function () {
-        return y
-      })
-      a('z84I')
-      var n = a('ERkP'),
-        r = a.n(n),
-        i = a('GTeL'),
-        o = a('3XMw'),
-        s = a.n(o),
-        c = a('MWbm'),
-        l = a('PbQQ'),
-        d = a('6vad'),
-        u = a('e0ey'),
-        m = a('rHpw'),
-        p = a('ZkMC'),
-        h = s.a.j9cf595f,
-        v = s.a.d69a782e,
-        f = s.a.faf745f9,
-        g = s.a.b96e6682,
-        b = s.a.h2437f25
-      function y(e) {
-        var t = e.currentWarnings,
-          a = e.mediaItem,
-          n = e.onWarningChange,
-          o = e.orientedImage,
-          s = [
-            { label: f, value: 'adult_content' },
-            { label: g, value: 'graphic_violence' },
-            { label: b, value: 'other' },
-          ],
-          m = l.b.useOpaqueIdentifier(),
-          y = r.a.createElement(i.a, { mediaItem: a, orientedImage: o })
-        return r.a.createElement(
-          c.a,
-          { style: _.root },
-          r.a.createElement(
-            c.a,
-            { style: _.modalContainer },
-            null != t && t.size
-              ? r.a.createElement(
-                  p.a,
-                  { revealableTombstoneConfig: p.c, sensitiveMediaWarnings: t, withRoundedCorners: !1 },
-                  y,
-                )
-              : y,
-            r.a.createElement(d.b, { nativeID: m, subtext: v, text: h }),
-            r.a.createElement(
-              c.a,
-              { accessibilityLabelledBy: m, accessibilityRole: 'group' },
-              s.map(function (e) {
-                var a = e.label,
-                  i = e.value
-                return r.a.createElement(u.a, { checked: t && t.has(i), key: i, label: a, name: i, onChange: n })
-              }),
-            ),
-          ),
-        )
-      }
-      var _ = m.a.create(function (e) {
-        return {
-          modalContainer: { width: '100%', height: '100%', flexGrow: 1 },
-          root: { display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', height: '100%', flexGrow: 1 },
-        }
-      })
-    },
     CDB5: function (e, t, a) {
       'use strict'
       a.d(t, 'm', function () {
@@ -805,7 +68,7 @@
           return j
         }),
         a.d(t, 'e', function () {
-          return W
+          return F
         }),
         a.d(t, 'i', function () {
           return B
@@ -857,10 +120,10 @@
         b = a('07FG'),
         y = a('Ssj5'),
         _ = a('fEA7'),
-        M = a.n(_),
+        E = a.n(_),
         T = a('uKEd'),
-        E = a('lnti'),
-        C = a('/NU0'),
+        C = a('lnti'),
+        M = a('/NU0'),
         S = [
           'senderId',
           'cardUrl',
@@ -906,27 +169,27 @@
               _ = s.recipients,
               w = void 0 === _ ? [] : _,
               I = s.requestId,
-              k = void 0 === I ? M.a.v1() : I,
+              k = void 0 === I ? E.a.v1() : I,
               A = s.tweetAttachment,
               R = s.quickReply,
               P = c()(s, S)
-            t(Z(u))
+            t(Y(u))
             var D = a(),
-              L = y || F(a(), u),
+              L = y || W(a(), u),
               j = p.k(D, L),
               U = o()(j, 1)[0] || {},
-              W = U.mediaFile,
+              F = U.mediaFile,
               B = U.mediaMetadata,
               V = w.length > 0 && w.join(','),
               z = {}
-            W && W.isGif
+            F && F.isGif
               ? (z.extraInitParams = '&media_category=dm_gif')
-              : W && W.isVideo && (z.extraInitParams = '&media_category=dm_video')
+              : F && F.isVideo && (z.extraInitParams = '&media_category=dm_video')
             var K = p.p(L, z),
               H = [t(K)],
               N = (G(D, u) || {}).found_media_origin
             return (
-              W && W.isGif && H.push(Object(g.a)(W)),
+              F && F.isGif && H.push(Object(g.a)(F)),
               Promise.all(H).then(
                 function (a) {
                   var n = o()(a, 2),
@@ -964,7 +227,7 @@
                           sender_id: l,
                           text: e.text,
                         }),
-                        M = m()(
+                        E = m()(
                           m()(
                             m()(m()({}, P), Object(b.a)(d) && { card_uri: d }),
                             {},
@@ -975,9 +238,9 @@
                           { recipient_ids: V, request_id: k, tweet_id: a },
                         )
                       R &&
-                        ((M['quick_reply_response[options][id]'] = R.id),
-                        (M['quick_reply_response[options][selected_id]'] = R.selected_id))
-                      var S = Object(E.a)([
+                        ((E['quick_reply_response[options][id]'] = R.id),
+                        (E['quick_reply_response[options][selected_id]'] = R.selected_id))
+                      var S = Object(C.a)([
                         ee(u),
                         { type: f.c.REQUEST },
                         { type: 'rweb/dmComposer/SEND_MESSAGE_REQUEST' },
@@ -985,7 +248,7 @@
                       ])
                       return (
                         t(S),
-                        i.DirectMessages.sendMessage(M).then(
+                        i.DirectMessages.sendMessage(E).then(
                           function (a) {
                             var n = a.entities,
                               i = n.cards,
@@ -993,8 +256,8 @@
                               s = n.tweets,
                               c = n.users,
                               l = a.result.conversations
-                            Object(C.a)(L) && t(J(u, L))
-                            var d = Object(E.a)(
+                            Object(M.a)(L) && t(J(u, L))
+                            var d = Object(C.a)(
                               [{ type: f.c.SUCCESS }].concat(
                                 r()(Object(h.a)({ conversations: l, entries: o, users: c, tweets: s, cards: i })),
                                 [{ type: 'rweb/dmComposer/SEND_MESSAGE_SUCCESS' }, u && Object(T.j)(u, k, e), O(u)],
@@ -1013,7 +276,7 @@
                                 sender_id: l,
                                 text: e.text,
                               }),
-                              i = Object(E.a)([
+                              i = Object(C.a)([
                                 { type: f.c.SUCCESS },
                                 { type: 'rweb/dmComposer/SEND_MESSAGE_FAILURE' },
                                 u && Object(T.b)(u, k, r),
@@ -1029,7 +292,7 @@
                   )
                 },
                 function (e) {
-                  return t(Object(E.a)([Object(C.a)(L) && J(u, L), ae(u)])), Promise.reject(e)
+                  return t(Object(C.a)([Object(M.a)(L) && J(u, L), ae(u)])), Promise.reject(e)
                 },
               )
             )
@@ -1055,15 +318,15 @@
           return a ? a.cardUrl : null
         },
         U = 'rweb/dmComposer/SAVE_CARD_URL',
-        W = function (e, t) {
+        F = function (e, t) {
           return { type: U, conversationId: e, cardUrl: t }
         },
-        F = function (e, t) {
+        W = function (e, t) {
           var a = A(e, t)
           return a ? a.mediaId : null
         },
         B = function (e, t) {
-          var a = p.k(e, F(e, t))
+          var a = p.k(e, W(e, t))
           return a.length > 0 ? a[0] : null
         },
         V = function (e, t) {
@@ -1071,7 +334,7 @@
           return !!a && a.isUploading
         },
         z = function (e, t) {
-          return p.l(e, F(e, t))
+          return p.l(e, W(e, t))
         },
         G = function (e, t) {
           var a = A(e, t)
@@ -1094,9 +357,9 @@
             a(p.i(t)), a([q(e), X(e)])
           }
         },
-        Y = 'rweb/dmComposer/UPLOAD_REQUEST',
-        Z = function (e) {
-          return { type: Y, conversationId: e }
+        Z = 'rweb/dmComposer/UPLOAD_REQUEST',
+        Y = function (e) {
+          return { type: Z, conversationId: e }
         },
         $ = 'rweb/dmComposer/UPLOAD_SUCCESS',
         ee = function (e) {
@@ -1115,7 +378,7 @@
             case K:
               var n = e[a] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
               return m()(m()({}, e), {}, d()({}, a, m()(m()({}, n), t.payload)))
-            case Y:
+            case Z:
               var r = e[a] || { cardUrl: null, gifMetadata: null, isUploading: !1, mediaId: null, text: null }
               return m()(m()({}, e), {}, d()({}, a, m()(m()({}, r), {}, { isUploading: !0 })))
             case N:
@@ -1216,53 +479,6 @@
           }
         }
     },
-    GTeL: function (e, t, a) {
-      'use strict'
-      var n = a('ERkP'),
-        r = a.n(n),
-        i = a('3XMw'),
-        o = a.n(i),
-        s = a('pKoL'),
-        c = a('Qwev'),
-        l = a('rHpw'),
-        d = a('U+bB'),
-        u = a('MWbm'),
-        m = o.a.gff1f69e
-      var p = l.a.create(function (e) {
-        return {
-          activityIndicator: { height: '100%', width: '100%' },
-          image: { width: '100%', flexGrow: 1 },
-          mediaContainer: { overflow: 'hidden', flexGrow: 1, flexBasis: 0, width: '100%' },
-          mediaPreviewWrapper: {
-            flexDirection: 'column',
-            flexGrow: 1,
-            alignItems: 'center',
-            width: '100%',
-            paddingVertical: 25,
-            paddingHorizontal: 25,
-            backgroundColor: e.colors.gray0,
-          },
-        }
-      })
-      t.a = function (e) {
-        var t = e.mediaItem,
-          a = e.orientedImage
-        return r.a.createElement(
-          u.a,
-          { style: p.mediaPreviewWrapper },
-          void 0 === a && t
-            ? r.a.createElement(s.a, {
-                imageResizeMode: 'contain',
-                mediaItem: t,
-                style: p.mediaContainer,
-                withCloseButton: !1,
-              })
-            : a
-            ? r.a.createElement(d.a, { resizeMode: 'contain', source: a.url, style: p.image })
-            : r.a.createElement(c.a, { accessibilityLabel: m, style: p.activityIndicator }),
-        )
-      }
-    },
     Jhhs: function (e, t, a) {
       'use strict'
       var n = a('ax0f'),
@@ -1280,7 +496,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'TabbedMediaEditScreen', function () {
-          return k
+          return R
         })
       var n = a('97Jx'),
         r = a.n(n),
@@ -1300,7 +516,7 @@
         b = a.n(g),
         y = (a('KOtZ'), a('7x/C'), a('2G9S'), a('xVN5')),
         _ = a('rxPX'),
-        M = a('AspN'),
+        E = a('AspN'),
         T = function (e, t) {
           var a, n
           return (
@@ -1308,19 +524,19 @@
               ? void 0
               : n.showAllMedia
           )
-            ? E(e)
-            : C(e)
+            ? C(e)
+            : M(e)
         },
-        E = function (e) {
+        C = function (e) {
           var t = y.k(e).reduce(function (e, t) {
             return e.concat(t.mediaIds)
           }, [])
-          return Object(M.k)(e, t)
+          return Object(E.k)(e, t)
         },
-        C = function (e) {
+        M = function (e) {
           var t = y.i(e),
             a = y.k(e)[t]
-          return Object(M.k)(e, a.mediaIds)
+          return Object(E.k)(e, a.mediaIds)
         },
         S = function (e, t) {
           var a, n
@@ -1328,17 +544,29 @@
             ? void 0
             : n.mediaId
         },
-        w = Object(_.a)()
+        w = function (e, t) {
+          var a, n
+          return null === (a = t.location) || void 0 === a || null === (n = a.state) || void 0 === n
+            ? void 0
+            : n.altTextTabEnabled
+        },
+        I = function (e, t) {
+          var a, n
+          return null === (a = t.location) || void 0 === a || null === (n = a.state) || void 0 === n
+            ? void 0
+            : n.cropTabEnabled
+        },
+        x = Object(_.a)()
           .propsFromState(function () {
-            return { initialMediaId: S, media: T }
+            return { altTextTabEnabled: w, cropTabEnabled: I, initialMediaId: S, media: T }
           })
           .propsFromActions(function () {
-            return { setMediaMetadata: M.n, processMedia: M.f, updateMediaUpload: M.o }
+            return { setMediaMetadata: E.n, processMedia: E.f, updateMediaUpload: E.o }
           })
           .withAnalytics({ page: 'tabbed_media' }),
-        I = a('jFmo'),
-        x = a('v6aA'),
-        k = (function (e) {
+        k = a('jFmo'),
+        A = a('v6aA'),
+        R = (function (e) {
           m()(a, e)
           var t = h()(a)
           function a(e, n) {
@@ -1354,15 +582,15 @@
                 key: 'render',
                 value: function () {
                   var e = this.context.featureSwitches.isTrue('sensitive_tweet_warnings_enabled')
-                  return b.a.createElement(I.a, r()({}, this.props, { sensitiveMediaTabEnabled: e }))
+                  return b.a.createElement(k.a, r()({}, this.props, { sensitiveMediaTabEnabled: e }))
                 },
               },
             ]),
             a
           )
         })(b.a.Component)
-      f()(k, 'contextType', x.a)
-      t.default = w(k)
+      f()(R, 'contextType', A.a)
+      t.default = x(R)
     },
     'Mbn/': function (e, t, a) {
       'use strict'
@@ -1399,21 +627,6 @@
         }
       ;(l.metadata = { width: 24, height: 24 }), (t.a = l)
     },
-    PrL8: function (e, t, a) {
-      'use strict'
-      var n = a('rHpw').a.create(function (e) {
-        return {
-          root: { flexGrow: 1, flexShrink: 1, paddingBottom: e.spaces.space12 },
-          rightControl: { display: 'flex', flexDirection: 'row' },
-          prevButton: { marginEnd: e.spaces.space2 },
-          saveButton: { marginStart: e.spaces.space12 },
-          segmentedControlChildren: { flexGrow: 1 },
-          leftRightButtons: { alignItems: 'center' },
-          videoTrimmerWrapper: { flexGrow: 1, flexShrink: 1, marginBottom: e.spaces.space20 },
-        }
-      })
-      t.a = n
-    },
     R5K7: function (e, t, a) {
       'use strict'
       var n = a('yiKp'),
@@ -1434,10 +647,10 @@
         b = a.n(g),
         y = a('9Xij'),
         _ = a('Zl35'),
-        M = a('epkG'),
+        E = a('epkG'),
         T = a('I4+6'),
-        E = a('cm6r'),
-        C = a('ZvMt'),
+        C = a('cm6r'),
+        M = a('ZvMt'),
         S = a('rHpw'),
         w = a('97Jx'),
         I = a.n(w),
@@ -1521,7 +734,7 @@
             intervalStrings: { display: 'flex', justifyContent: 'center' },
           }
         }),
-        W = function (e) {
+        F = function (e) {
           var t = e.duration,
             a = e.trimmerWidth,
             n = R(t, a),
@@ -1564,7 +777,7 @@
             ),
           )
         },
-        F = a('Wms4'),
+        W = a('Wms4'),
         B = (a('jQ3i'), a('x4t0'), a('uFXj'), a('oLZl')),
         V = 'decrease',
         z = 'increase',
@@ -1631,12 +844,12 @@
                   a = O.a.getConstants().isRTL
                 return t === G
                   ? a
-                    ? Y.rightScrubberRadius
-                    : Y.leftScrubberRadius
+                    ? Z.rightScrubberRadius
+                    : Z.leftScrubberRadius
                   : t === K
                   ? a
-                    ? Y.leftScrubberRadius
-                    : Y.rightScrubberRadius
+                    ? Z.leftScrubberRadius
+                    : Z.rightScrubberRadius
                   : void 0
               }),
               e
@@ -1655,7 +868,7 @@
                     i = t.side,
                     o = t.style
                   return b.a.createElement(
-                    E.a,
+                    C.a,
                     I()(
                       {
                         accessibilityLabel: i === G ? Q : q,
@@ -1681,7 +894,7 @@
                         onKeyUp: function (t) {
                           return e._handleOnKeyUp(t)
                         },
-                        style: [Y.root, this._generateBorderStyles(), o],
+                        style: [Z.root, this._generateBorderStyles(), o],
                       },
                       this._panResponders.panHandlers,
                     ),
@@ -1693,10 +906,10 @@
                         b.a.Fragment,
                         null,
                         b.a.createElement(j.a, {
-                          style: [Y.trimmerScrubberGrips, (t || a || n) && Y.trimmerScrubberGripsOpacity],
+                          style: [Z.trimmerScrubberGrips, (t || a || n) && Z.trimmerScrubberGripsOpacity],
                         }),
                         b.a.createElement(j.a, {
-                          style: [Y.trimmerScrubberGrips, (t || a || n) && Y.trimmerScrubberGripsOpacity],
+                          style: [Z.trimmerScrubberGrips, (t || a || n) && Z.trimmerScrubberGripsOpacity],
                         }),
                       )
                     },
@@ -1707,7 +920,7 @@
             a
           )
         })(b.a.Component),
-        Y = S.a.create(function (e) {
+        Z = S.a.create(function (e) {
           return {
             root: {
               backgroundColor: e.colors.primary,
@@ -1736,7 +949,7 @@
             trimmerScrubberGripsOpacity: { opacity: 0.8 },
           }
         }),
-        Z = J,
+        Y = J,
         $ = D.a.af2a65d8,
         ee = D.a.d46781ae,
         te = D.a.e8733ed8,
@@ -1823,7 +1036,7 @@
                     ],
                   },
                   b.a.createElement(
-                    F.a,
+                    W.a,
                     { background: 'maskColor', style: [ie.label, !a && ie.visibilityHidden] },
                     $({ timestamp: e._generateTimestampLabelString() }),
                   ),
@@ -1900,7 +1113,7 @@
                       b.a.createElement(
                         j.a,
                         { style: ie.intervalsContainer },
-                        b.a.createElement(W, { duration: t, trimmerWidth: s }),
+                        b.a.createElement(F, { duration: t, trimmerWidth: s }),
                       ),
                       b.a.createElement(
                         b.a.Fragment,
@@ -1909,7 +1122,7 @@
                         b.a.createElement(
                           j.a,
                           { style: ie.keepArea },
-                          b.a.createElement(Z, {
+                          b.a.createElement(Y, {
                             currentValue: r,
                             maxValue: a,
                             minValue: 0,
@@ -1930,7 +1143,7 @@
                                   style: [ie.playBarArea, ie.transition, { width: ne(n, a - r) }],
                                 }),
                           ),
-                          b.a.createElement(Z, {
+                          b.a.createElement(Y, {
                             currentValue: a,
                             maxValue: t,
                             minValue: r,
@@ -2005,7 +1218,7 @@
         se = a('mXq/'),
         ce = a('/run'),
         le = a('KwSe'),
-        de = new M.a({}),
+        de = new E.a({}),
         ue = (function (e) {
           m()(a, e)
           var t = h()(a)
@@ -2050,7 +1263,7 @@
                   r = i.props.video,
                   o = r.height,
                   s = r.width / o,
-                  c = C.a.getContainDimensions({ height: a, width: n }, s),
+                  c = M.a.getContainDimensions({ height: a, width: n }, s),
                   l = c.height,
                   d = c.width
                 ;(l === i.state.adjustedVideoHeight && d === i.state.adjustedVideoWidth) ||
@@ -2129,7 +1342,7 @@
                               function (t) {
                                 var a = t.playerApi
                                 return b.a.createElement(
-                                  E.a,
+                                  C.a,
                                   {
                                     focusable: !0,
                                     interactiveStyles: T.a.generate({
@@ -2235,22 +1448,22 @@
           },
         ),
         g = { updateSingleComposer: d.w },
-        b = Object(v.f)(f, g),
+        b = Object(v.g)(f, g),
         y = a('jHSc'),
         _ = a('3XMw'),
-        M = a.n(_),
+        E = a.n(_),
         T = a('Oib4'),
-        E = a('mN6z'),
-        C = a('2dXj'),
+        C = a('mN6z'),
+        M = a('2dXj'),
         S = a('MWbm'),
         w = a('4zmP'),
         I = a('/yvb'),
         x = a('rHpw'),
         k = a('7JQg'),
-        A = M.a.b772cd65,
-        R = M.a.c20dc653,
-        P = M.a.d1175c78,
-        D = M.a.ae0831ab
+        A = E.a.b772cd65,
+        R = E.a.c20dc653,
+        P = E.a.d1175c78,
+        D = E.a.ae0831ab
       function L(e) {
         var t = e.history,
           a = e.injections,
@@ -2272,7 +1485,7 @@
               }),
             )
           },
-          M = function () {
+          E = function () {
             var e = m
                 .map(function (e) {
                   return e.data.id_str
@@ -2283,7 +1496,7 @@
                   return e.data.id_str
                 })
                 .sort(),
-              a = e.length === t.length && Object(E.a)(e, t)
+              a = e.length === t.length && Object(C.a)(e, t)
             return c.a.createElement(
               S.a,
               { style: O.rightColumn },
@@ -2306,12 +1519,12 @@
                 backButtonType: 'close',
                 history: t,
                 onBackClick: x,
-                rightControl: M(),
+                rightControl: E(),
                 title: P,
               })
             },
           },
-          c.a.createElement(C.d, {
+          c.a.createElement(M.d, {
             getItemDisabledMessage: function (e) {
               var t
               return e.type !== p.b.User || e.data.can_media_tag || (t = D({ screenName: e.data.screen_name })), t
@@ -2364,7 +1577,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'TabbedMediaEditScreen', function () {
-          return C
+          return M
         })
       var n = a('97Jx'),
         r = a.n(n),
@@ -2386,7 +1599,7 @@
         _ = function (e, t) {
           return t.location && t.location.state && t.location.state.mediaId
         },
-        M = function (e, t) {
+        E = function (e, t) {
           var a = (function (e, t) {
             var a, n
             return null === (a = t.location) || void 0 === a || null === (n = a.state) || void 0 === n
@@ -2397,7 +1610,7 @@
         },
         T = Object(b.a)()
           .propsFromState(function () {
-            return { media: M, initialMediaId: _ }
+            return { media: E, initialMediaId: _ }
           })
           .adjustStateProps(function (e) {
             var t = e.initialMediaId,
@@ -2408,8 +1621,8 @@
             return { setMediaMetadata: y.n, processMedia: y.f, updateMediaUpload: y.o }
           })
           .withAnalytics({ page: 'tabbed_media_dm' }),
-        E = a('jFmo'),
-        C = (function (e) {
+        C = a('jFmo'),
+        M = (function (e) {
           m()(a, e)
           var t = h()(a)
           function a(e) {
@@ -2424,126 +1637,872 @@
               {
                 key: 'render',
                 value: function () {
-                  return f.a.createElement(E.a, r()({}, this.props, { sensitiveMediaTabEnabled: !1 }))
+                  return f.a.createElement(C.a, r()({}, this.props, { sensitiveMediaTabEnabled: !1 }))
                 },
               },
             ]),
             a
           )
         })(f.a.Component)
-      t.default = T(C)
+      t.default = T(M)
     },
     jFmo: function (e, t, a) {
       'use strict'
       var n = a('97Jx'),
         r = a.n(n),
-        i = (a('KqXw'), a('MvUL'), a('ERkP')),
+        i = a('m3Bd'),
         o = a.n(i),
-        s = a('v6aA'),
-        c = a('0uGn'),
-        l = a('yiKp'),
-        d = a.n(l),
-        u = a('VrFO'),
-        m = a.n(u),
-        p = a('Y9Ll'),
-        h = a.n(p),
-        v = a('1Pcy'),
-        f = a.n(v),
-        g = a('5Yy7'),
-        b = a.n(g),
-        y = a('2VqO'),
-        _ = a.n(y),
+        s = (a('KqXw'), a('MvUL'), a('ERkP')),
+        c = a.n(s),
+        l = a('v6aA'),
+        d = a('yiKp'),
+        u = a.n(d),
+        m = a('RhWx'),
+        p = a.n(m),
+        h = a('VrFO'),
+        v = a.n(h),
+        f = a('Y9Ll'),
+        g = a.n(f),
+        b = a('1Pcy'),
+        y = a.n(b),
+        _ = a('5Yy7'),
+        E = a.n(_),
+        T = a('2VqO'),
+        C = a.n(T),
         M = a('KEM+'),
-        T = a.n(M),
-        E = (a('hBpG'), a('7x/C'), a('jwue'), a('+oxZ'), a('lTEL'), a('LqLs'), a('87if'), a('kYxP'), a('jHSc')),
-        C = a('3XMw'),
-        S = a.n(C),
-        w = a('oQhu'),
-        I = a('7JQg'),
-        x = a('9Q4p'),
-        k = a('PrL8'),
-        A = a('sjK1'),
-        R = (a('2G9S'), a('RqPI')),
-        P = a('AspN'),
-        D = a('rxPX'),
-        L = a('0KEI'),
-        O = a('FDFL'),
-        j = function (e) {
-          var t = Object(R.o)(e)
-          return t && Object(O.b)(e, t)
-        },
-        U = Object(D.a)()
-          .propsFromState(function () {
-            return { language: R.o, languageName: j }
-          })
-          .propsFromActions(function () {
-            return {
-              addMedia: P.b,
-              createLocalApiErrorHandler: Object(L.createLocalApiErrorHandlerWithContextFactory)(
-                'VIDEO_SUBTITLES_UPLOAD',
-              ),
-              fetchAvailableLanguagesIfNeeded: O.a,
-              removeMediaUpload: P.i,
-            }
-          })
-          .withAnalytics(),
-        W = a('eyty'),
-        F = a('m3Bd'),
-        B = a.n(F),
-        V = (a('7xRU'), a('pHub')),
-        z = a('62wY'),
-        G = 'fileInput',
-        K = a('MWbm'),
-        H = a('/Imo'),
-        N = a('rHpw'),
-        q = ['icon', 'style', 'withIcon'],
-        Q = o.a.createElement(V.a, null),
-        X = S.a.icbec4ae,
-        J = function (e) {
-          var t = e.icon,
-            a = e.style,
-            n = e.withIcon,
-            i = B()(e, q),
-            s = z.a.join(',')
-          return o.a.createElement(
-            K.a,
-            null,
-            o.a.createElement(
-              H.a,
-              r()({}, i, { accept: s, icon: n ? t : void 0, style: [Y.button, a], testID: G, type: 'primaryFilled' }),
-              X,
-            ),
-          )
-        }
-      J.defaultProps = { icon: Q, size: 'medium', withIcon: !0 }
-      var Y = N.a.create(function (e) {
-          return { button: { alignSelf: 'start' } }
+        S = a.n(M),
+        w =
+          (a('hBpG'),
+          a('7x/C'),
+          a('vrRf'),
+          a('jwue'),
+          a('+oxZ'),
+          a('2G9S'),
+          a('z84I'),
+          a('JtPf'),
+          a('lTEL'),
+          a('87if'),
+          a('kYxP'),
+          a('LqLs'),
+          a('m9LP'),
+          a('TJCb'),
+          a('DZ+c'),
+          a('xZGM')),
+        I = a('3XMw'),
+        x = a.n(I),
+        k = a('pKoL'),
+        A = a('Qwev'),
+        R = a('rHpw'),
+        P = a('U+bB'),
+        D = a('MWbm'),
+        L = x.a.gff1f69e
+      var O = R.a.create(function (e) {
+          return {
+            activityIndicator: { height: '100%', width: '100%' },
+            image: { width: '100%', flexGrow: 1 },
+            mediaContainer: { overflow: 'hidden', flexGrow: 1, flexBasis: 0, width: '100%' },
+            mediaPreviewWrapper: {
+              flexDirection: 'column',
+              flexGrow: 1,
+              alignItems: 'center',
+              width: '100%',
+              paddingVertical: 25,
+              paddingHorizontal: 25,
+              backgroundColor: e.colors.gray0,
+            },
+          }
         }),
-        Z = J,
-        $ = a('/yvb'),
-        ee = a('t62R'),
-        te = S.a.bf4e9d79,
-        ae = S.a.j435467e,
-        ne = S.a.a6b267f9,
-        re = (function (e) {
-          b()(a, e)
-          var t = _()(a)
+        j = function (e) {
+          var t = e.mediaItem,
+            a = e.orientedImage
+          return c.a.createElement(
+            D.a,
+            { style: O.mediaPreviewWrapper },
+            void 0 === a && t
+              ? c.a.createElement(k.a, {
+                  imageResizeMode: 'contain',
+                  mediaItem: t,
+                  style: O.mediaContainer,
+                  withCloseButton: !1,
+                })
+              : a
+              ? c.a.createElement(P.a, { resizeMode: 'contain', source: a.url, style: O.image })
+              : c.a.createElement(A.a, { accessibilityLabel: L, style: O.activityIndicator }),
+          )
+        },
+        U = R.a.create(function (e) {
+          return {
+            formTextInput: {
+              width: '100%',
+              backgroundColor: e.colors.navigationBackground,
+              paddingHorizontal: e.spaces.space12,
+              paddingBottom: 0,
+              borderTopWidth: e.spaces.space1,
+              borderTopStyle: 'solid',
+              borderTopColor: e.colors.borderColor,
+            },
+            attachmentContainer: { width: '100%', height: '100%', flexGrow: 1 },
+            root: { display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', height: '100%', flexGrow: 1 },
+          }
+        }),
+        F = 'altTextInput',
+        W = 'endEditingButton',
+        B = 'altTextEducationSheetPrimaryAction',
+        V = a('t62R'),
+        z = a('p+r5'),
+        G = x.a.feabf2a0,
+        K = x.a.e36287c6,
+        H = x.a.cf565d08,
+        N = (function (e) {
+          E()(a, e)
+          var t = C()(a)
           function a() {
             var e
-            m()(this, a)
+            v()(this, a)
             for (var n = arguments.length, r = new Array(n), i = 0; i < n; i++) r[i] = arguments[i]
             return (
               (e = t.call.apply(t, [this].concat(r))),
-              T()(f()(e), '_renderSubtitlesPickerButton', function () {
-                return o.a.createElement(Z, { onChange: e._handleAddMediaFiles, type: 'brandText' })
+              S()(y()(e), '_renderInputHelperText', function () {
+                var t = e.props.onShowEducation
+                return t ? c.a.createElement(V.b, { color: 'link', onPress: t, withInteractiveStyling: !0 }, H) : null
               }),
-              T()(f()(e), '_renderSubtitlesRemovalButton', function () {
-                return o.a.createElement($.a, { onPress: e._handleRemoveSubtitles, type: 'destructiveOutlined' }, ne)
+              S()(y()(e), '_handleChange', function (t) {
+                var a = e.props,
+                  n = a.currentMediaId,
+                  r = a.mediaItem,
+                  i = a.onChange,
+                  o = t.target.value
+                r ? i(o, r.id.toString()) : n && i(o, n)
               }),
-              T()(f()(e), '_handleRemoveSubtitles', function () {
+              e
+            )
+          }
+          return (
+            g()(a, [
+              {
+                key: 'render',
+                value: function () {
+                  var e = this.props,
+                    t = e.autofocus,
+                    a = e.maxLength,
+                    n = e.mediaItem,
+                    r = e.orientedImage,
+                    i = e.value
+                  return c.a.createElement(
+                    D.a,
+                    { style: U.root },
+                    c.a.createElement(
+                      D.a,
+                      { style: U.attachmentContainer },
+                      c.a.createElement(j, { mediaItem: n, orientedImage: r }),
+                      c.a.createElement(z.a, {
+                        accessibilityLabel: G,
+                        autoFocus: t,
+                        helperText: this._renderInputHelperText(),
+                        label: K,
+                        maxLength: a,
+                        maxNumberOfLines: 6,
+                        multiline: !0,
+                        name: 'altTextInput',
+                        numberOfLines: 2,
+                        onChange: this._handleChange,
+                        style: U.formTextInput,
+                        testID: F,
+                        value: i,
+                      }),
+                    ),
+                  )
+                },
+              },
+            ]),
+            a
+          )
+        })(c.a.Component),
+        q = a('rxPX'),
+        Q = function (e, t) {
+          return Object(w.A)(e, w.a)
+        },
+        X = Object(q.a)()
+          .propsFromState(function () {
+            return { showEducationOnMount: Q }
+          })
+          .propsFromActions(function () {
+            return { addFlag: w.w }
+          })
+          .withAnalytics(),
+        J = a('feu+'),
+        Z = x.a.ffe9ec3a,
+        Y = x.a.j063b261,
+        $ = x.a.e57144f0,
+        ee = x.a.f9f9210c,
+        te = (function (e) {
+          E()(a, e)
+          var t = C()(a)
+          function a() {
+            var e
+            v()(this, a)
+            for (var n = arguments.length, r = new Array(n), i = 0; i < n; i++) r[i] = arguments[i]
+            return (
+              (e = t.call.apply(t, [this].concat(r))),
+              S()(y()(e), 'state', { showAltTextEducationSheet: !1 }),
+              S()(y()(e), '_handleOpenEducationPrompt', function () {
+                var t = e.props.analytics
+                e.setState({ showAltTextEducationSheet: !0 }), t.scribe({ component: 'education', action: 'click' })
+              }),
+              S()(y()(e), '_handleCloseEducationPrompt', function () {
+                e.setState({ showAltTextEducationSheet: !1 })
+              }),
+              S()(y()(e), '_handleEducationPromptPrimaryAction', function () {
+                var t = e.props.analytics
+                e._handleCloseEducationPrompt(),
+                  t.scribe({ component: 'education', element: 'alt_text_button', action: 'click' })
+              }),
+              S()(y()(e), '_handleEducationPromptSecondaryAction', function () {
+                e.props.history.goBack()
+              }),
+              e
+            )
+          }
+          return (
+            g()(a, [
+              {
+                key: 'componentDidMount',
+                value: function () {
+                  var e = this.props,
+                    t = e.addFlag,
+                    a = e.analytics
+                  e.showEducationOnMount &&
+                    (this.setState({ showAltTextEducationSheet: !0 }),
+                    a.scribe({ component: 'education', action: 'open' }),
+                    t(w.a))
+                },
+              },
+              {
+                key: 'render',
+                value: function () {
+                  var e = this.props,
+                    t = e.mediaItem,
+                    a = e.onAltTextChange,
+                    n = e.orientedImage,
+                    r = e.value,
+                    i = this.state.showAltTextEducationSheet,
+                    o = t && t.id.toString()
+                  return c.a.createElement(
+                    D.a,
+                    { style: ae.root },
+                    i
+                      ? c.a.createElement(J.a, {
+                          actionLabel: $,
+                          headline: Z,
+                          onAction: this._handleEducationPromptPrimaryAction,
+                          onClose: this._handleCloseEducationPrompt,
+                          onSecondaryAction: this._handleEducationPromptSecondaryAction,
+                          primaryButtonTestID: B,
+                          secondaryActionLabel: ee,
+                          subtext: Y,
+                        })
+                      : null,
+                    c.a.createElement(N, {
+                      autofocus: !0,
+                      currentMediaId: o,
+                      maxLength: 1e3,
+                      mediaItem: t,
+                      onChange: a,
+                      onShowEducation: this._handleOpenEducationPrompt,
+                      orientedImage: n,
+                      value: r,
+                    }),
+                  )
+                },
+              },
+            ]),
+            a
+          )
+        })(c.a.Component),
+        ae = R.a.create(function (e) {
+          return { root: { flexGrow: 1 } }
+        }),
+        ne = X(te),
+        re = a('jHSc'),
+        ie = a('EeFI'),
+        oe = a('7JQg'),
+        se = a('PbQQ'),
+        ce = a('6vad'),
+        le = a('e0ey'),
+        de = a('ZkMC'),
+        ue = x.a.j9cf595f,
+        me = x.a.d69a782e,
+        pe = x.a.faf745f9,
+        he = x.a.b96e6682,
+        ve = x.a.h2437f25
+      function fe(e) {
+        var t = e.currentWarnings,
+          a = e.mediaItem,
+          n = e.onWarningChange,
+          r = e.orientedImage,
+          i = [
+            { label: pe, value: 'adult_content' },
+            { label: he, value: 'graphic_violence' },
+            { label: ve, value: 'other' },
+          ],
+          o = se.b.useOpaqueIdentifier(),
+          s = c.a.createElement(j, { mediaItem: a, orientedImage: r })
+        return c.a.createElement(
+          D.a,
+          { style: ge.root },
+          c.a.createElement(
+            D.a,
+            { style: ge.modalContainer },
+            null != t && t.size
+              ? c.a.createElement(
+                  de.a,
+                  { revealableTombstoneConfig: de.c, sensitiveMediaWarnings: t, withRoundedCorners: !1 },
+                  s,
+                )
+              : s,
+            c.a.createElement(ce.b, { nativeID: o, subtext: me, text: ue }),
+            c.a.createElement(
+              D.a,
+              { accessibilityLabelledBy: o, accessibilityRole: 'group' },
+              i.map(function (e) {
+                var a = e.label,
+                  r = e.value
+                return c.a.createElement(le.a, { checked: t && t.has(r), key: r, label: a, name: r, onChange: n })
+              }),
+            ),
+          ),
+        )
+      }
+      var ge = R.a.create(function (e) {
+          return {
+            modalContainer: { width: '100%', height: '100%', flexGrow: 1 },
+            root: { display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', height: '100%', flexGrow: 1 },
+          }
+        }),
+        be = R.a.create(function (e) {
+          return {
+            root: { flexGrow: 1, flexShrink: 1, paddingBottom: e.spaces.space12 },
+            rightControl: { display: 'flex', flexDirection: 'row' },
+            prevButton: { marginEnd: e.spaces.space2 },
+            saveButton: { marginStart: e.spaces.space12 },
+            segmentedControlChildren: { flexGrow: 1 },
+            leftRightButtons: { alignItems: 'center' },
+            videoTrimmerWrapper: { flexGrow: 1, flexShrink: 1, marginBottom: e.spaces.space20 },
+          }
+        }),
+        ye = a('k/OQ'),
+        _e = a('/yvb'),
+        Ee = a('oQhu'),
+        Te = a('ddV6'),
+        Ce = a.n(Te),
+        Me = function (e) {
+          var t = new Map()
+          return (
+            e.forEach(function (e) {
+              var a = Ce()(e, 2),
+                n = a[0],
+                r = a[1]
+              t.set(n, r)
+            }),
+            t
+          )
+        },
+        Se = a('mN6z'),
+        we = a('95Se'),
+        Ie = a('7Mjr'),
+        xe = a('Mbn/'),
+        ke = a('zIWA'),
+        Ae = a('1auM'),
+        Re = a('eYns'),
+        Pe = { section: 'alt_text' },
+        De = { section: 'crop' },
+        Le = { section: 'sensitive_media' },
+        Oe = x.a.e070024a,
+        je = x.a.i2209530,
+        Ue = x.a.i7d24b36,
+        Fe = x.a.f96a38a2,
+        We = x.a.hac7c548,
+        Be = x.a.e3dbfba3,
+        Ve = x.a.dd4a83a5,
+        ze = 'crop',
+        Ge = 'alt_text',
+        Ke = 'sensitive_media',
+        He = (function (e) {
+          E()(a, e)
+          var t = C()(a)
+          function a(e) {
+            var n
+            v()(this, a),
+              (n = t.call(this, e)),
+              S()(y()(n), '_cropper', c.a.createRef()),
+              S()(
+                y()(n),
+                '_getMemoizedCurrentTabMetadata',
+                Object(Ee.a)(function (e, t) {
+                  switch (e) {
+                    case Ge:
+                      return { namespace: Pe, title: Be, renderer: n._renderAltTextTab }
+                    case Ke:
+                      if (t) return { namespace: Le, title: Ve, renderer: n._renderSensitiveMediaTab }
+                    default:
+                      return { namespace: De, title: We, renderer: n._renderCropTab }
+                  }
+                }),
+              ),
+              S()(y()(n), '_renderSegmentedControl', function () {
+                var e = n.props.sensitiveMediaTabEnabled,
+                  t = n._getSegmentedControlLinks(),
+                  a = n._getCurrentTab(),
+                  r = n._getMemoizedCurrentTabMetadata(a, e)
+                return c.a.createElement(
+                  c.a.Fragment,
+                  null,
+                  t.length > 1 ? c.a.createElement(ye.a, { accessibilityLabel: Oe, links: t }) : null,
+                  c.a.createElement(D.a, { style: be.segmentedControlChildren }, r.renderer()),
+                )
+              }),
+              S()(y()(n), '_renderAltTextTab', function () {
+                var e = n.props.history,
+                  t = n.state,
+                  a = t.currentMediaId,
+                  r = t.mediaMetadata,
+                  i = t.orientedImage,
+                  o = n._getCurrentMediaItem(),
+                  s = r[a] && r[a].altText
+                return c.a.createElement(ne, {
+                  history: e,
+                  key: a,
+                  mediaItem: o,
+                  onAltTextChange: n._handleAltTextChange,
+                  orientedImage: i.get(a),
+                  value: s,
+                })
+              }),
+              S()(y()(n), '_renderCropTab', function () {
+                var e = n.state,
+                  t = e.cropData,
+                  a = e.currentMediaId,
+                  r = n._getCurrentMediaItem()
+                return c.a.createElement(ie.a, {
+                  defaultCropData: t.get(a),
+                  key: a,
+                  media: r,
+                  ref: n._cropper,
+                  withAspectRatioOptions: !0,
+                })
+              }),
+              S()(y()(n), '_renderSensitiveMediaTab', function () {
+                var e = n.state,
+                  t = e.currentMediaId,
+                  a = e.mediaMetadata,
+                  r = e.orientedImage,
+                  i = n._getCurrentMediaItem(),
+                  o = a[t] && a[t].sensitiveMediaWarning
+                return c.a.createElement(fe, {
+                  currentWarnings: o,
+                  key: t,
+                  mediaItem: i,
+                  onWarningChange: n._handleSensitiveWarningChange,
+                  orientedImage: r.get(t),
+                })
+              }),
+              S()(y()(n), '_renderAppBarRightControl', function () {
+                var e = n.state.isProcessing,
+                  t = n._getNextMediaIndex(1),
+                  a = n._getNextMediaIndex(-1)
+                return c.a.createElement(
+                  D.a,
+                  { style: be.rightControl },
+                  n._hasMediaAtIndex(a) || n._hasMediaAtIndex(t)
+                    ? c.a.createElement(
+                        D.a,
+                        { style: [be.rightControl, be.leftRightButtons] },
+                        c.a.createElement(_e.a, {
+                          accessibilityLabel: Fe,
+                          disabled: !n._hasMediaAtIndex(a),
+                          icon: c.a.createElement(we.a, null),
+                          onPress: n._handleClickToMediaAtIndex(a),
+                          size: 'small',
+                          style: be.prevButton,
+                          type: 'primaryOutlined',
+                        }),
+                        c.a.createElement(_e.a, {
+                          accessibilityLabel: Ue,
+                          disabled: !n._hasMediaAtIndex(t),
+                          icon: c.a.createElement(Ie.a, null),
+                          onPress: n._handleClickToMediaAtIndex(t),
+                          size: 'small',
+                          type: 'primaryOutlined',
+                        }),
+                      )
+                    : null,
+                  c.a.createElement(
+                    _e.a,
+                    {
+                      disabled: e,
+                      onPress: n._handleEndEditingClick,
+                      size: 'small',
+                      style: be.saveButton,
+                      testID: W,
+                      type: 'primaryFilled',
+                    },
+                    je,
+                  ),
+                )
+              }),
+              S()(y()(n), '_handleCancelEditingClick', function (e) {
+                n._scribeWithNamespace({ action: 'cancel' }), e()
+              }),
+              S()(y()(n), '_handleClickTab', function (e) {
+                var t = n.props.analytics
+                n._handleSaveCropData(),
+                  n._scribeWithNamespace({ element: e, action: 'click' }),
+                  t.scribePageImpression()
+              }),
+              S()(y()(n), '_getCurrentMediaItem', function () {
+                var e = n.props.media,
+                  t = n.state.currentMediaId
+                return e.find(function (e) {
+                  return e.id === t
+                })
+              }),
+              S()(y()(n), '_getNextMediaIndex', function (e) {
+                var t = n.props.media,
+                  a = n._getCurrentMediaItem()
+                return t.indexOf(a) + e
+              }),
+              S()(y()(n), '_hasMediaAtIndex', function (e) {
+                var t = n.props.media
+                return e >= 0 && e < t.length
+              }),
+              S()(y()(n), '_handleClickToMediaAtIndex', function (e) {
+                return function () {
+                  var t = n.props.media
+                  if (n._hasMediaAtIndex(e)) {
+                    n._handleSaveCropData()
+                    var a = t[e].id
+                    n.setState({ currentMediaId: a })
+                  }
+                }
+              }),
+              S()(y()(n), '_saveMediaMetadata', function () {
+                var e = n.props,
+                  t = e.media,
+                  a = e.setMediaMetadata,
+                  r = n.state.mediaMetadata
+                t.forEach(function (e) {
+                  a(e.id, r[e.id])
+                })
+              }),
+              S()(y()(n), '_handleEndEditingClick', function () {
+                var e = n.props.history,
+                  t = n._cropper && n._cropper.current,
+                  a = n.state.cropData
+                if (t || a.size) {
+                  var r = n.props,
+                    i = r.media,
+                    o = r.processMedia,
+                    s = r.updateMediaUpload,
+                    c = n.state.currentMediaId
+                  n.setState({ isProcessing: !0 })
+                  var l = t ? Me([].concat(p()(a), [[c, t.getCropData()]])) : a,
+                    d = i.map(function (e) {
+                      return l.get(e.id) ? (s({ id: e.id, cropData: l.get(e.id) }), o(e.id)) : Promise.resolve()
+                    })
+                  Promise.all(d).then(function () {
+                    n._scribeWithNamespace({ action: 'done' })
+                  })
+                }
+                n._saveMediaMetadata(), e.goBack()
+              }),
+              S()(y()(n), '_handleAltTextChange', function (e) {
+                n.setState(function (t) {
+                  return {
+                    mediaMetadata: u()(
+                      u()({}, t.mediaMetadata),
+                      {},
+                      S()({}, t.currentMediaId, u()(u()({}, t.mediaMetadata[t.currentMediaId]), {}, { altText: e })),
+                    ),
+                  }
+                })
+              }),
+              S()(y()(n), '_handleSensitiveWarningChange', function (e, t) {
+                n.setState(function (a) {
+                  var n =
+                    (a.mediaMetadata[a.currentMediaId] && a.mediaMetadata[a.currentMediaId].sensitiveMediaWarning) ||
+                    new Set()
+                  return (
+                    t ? n.add(e) : n.delete(e),
+                    {
+                      mediaMetadata: u()(
+                        u()({}, a.mediaMetadata),
+                        {},
+                        S()(
+                          {},
+                          a.currentMediaId,
+                          u()(u()({}, a.mediaMetadata[a.currentMediaId]), {}, { sensitiveMediaWarning: n }),
+                        ),
+                      ),
+                    }
+                  )
+                })
+              }),
+              S()(y()(n), '_handleSaveCropData', function () {
+                var e = n._cropper && n._cropper.current
+                if (e) {
+                  var t = n.state.currentMediaId,
+                    a = e.getCropData(),
+                    r = n._getCurrentMediaItem()
+                  if (
+                    r &&
+                    !Object(Se.a)(a, n.state.cropData.get(t)) &&
+                    (n.setState(function (e) {
+                      return { orientedImage: Me([].concat(p()(e.orientedImage), [[t, null]])) }
+                    }),
+                    r.originalMediaFile && r.originalMediaFile instanceof Ae.a)
+                  ) {
+                    var i = r.cropData
+                    Object(Re.b)(r.originalMediaFile, { cropData: a || i })
+                      .then(function (e) {
+                        return new Ae.a(e).withDimensionsAndOrientation().then(function (e) {
+                          n.setState(function (n) {
+                            return {
+                              orientedImage: Me([].concat(p()(n.orientedImage), [[t, e]])),
+                              cropData: Me([].concat(p()(n.cropData), [[t, a]])),
+                            }
+                          })
+                        })
+                      })
+                      .catch(function () {
+                        n.setState(function (e) {
+                          return { orientedImage: Me([].concat(p()(e.orientedImage), [[t, void 0]])) }
+                        })
+                      })
+                  }
+                  n.setState(function (e) {
+                    return { cropData: Me([].concat(p()(e.cropData), [[t, a]])) }
+                  })
+                }
+              }),
+              S()(y()(n), '_scribeWithNamespace', function (e) {
+                var t = n.props,
+                  a = t.analytics,
+                  r = t.sensitiveMediaTabEnabled,
+                  i = n._getCurrentTab(),
+                  o = n._getMemoizedCurrentTabMetadata(i, r)
+                a.scribe(u()(u()({}, o.namespace), e))
+              }),
+              S()(y()(n), '_getMediaMetadata', function (e) {
+                var t = {}
+                return (
+                  e.forEach(function (e) {
+                    return (t[e.id] = e.mediaMetadata)
+                  }),
+                  t
+                )
+              })
+            var r = e.initialMediaId,
+              i = e.media,
+              o = n._getMediaMetadata(i)
+            return (
+              (n.state = {
+                cropData: new Map(),
+                isProcessing: !1,
+                mediaMetadata: o,
+                currentMediaId: r || -1,
+                orientedImage: new Map(),
+              }),
+              n
+            )
+          }
+          return (
+            g()(a, [
+              {
+                key: 'render',
+                value: function () {
+                  var e = this.props,
+                    t = e.altTextTabEnabled,
+                    a = e.cropTabEnabled,
+                    n = e.history,
+                    r = e.sensitiveMediaTabEnabled,
+                    i = t ? a || r : a && r,
+                    o = this._getCurrentTab(),
+                    s = this._getMemoizedCurrentTabMetadata(o, r)
+                  return c.a.createElement(
+                    oe.c,
+                    { namespace: s.namespace },
+                    c.a.createElement(
+                      re.b,
+                      {
+                        backButtonType: 'back',
+                        containerStyle: be.root,
+                        documentTitle: s.title,
+                        history: n,
+                        onBackClick: this._handleCancelEditingClick,
+                        rightControl: this._renderAppBarRightControl(),
+                        title: s.title,
+                      },
+                      i ? this._renderSegmentedControl() : s.renderer(),
+                    ),
+                  )
+                },
+              },
+              {
+                key: '_getCurrentTab',
+                value: function () {
+                  var e,
+                    t,
+                    a = this.props,
+                    n = a.altTextTabEnabled,
+                    r = a.cropTabEnabled
+                  return null !== (e = this.props.location.state) && void 0 !== e && e.tab
+                    ? null === (t = this.props.location.state) || void 0 === t
+                      ? void 0
+                      : t.tab
+                    : r
+                    ? ze
+                    : n && Ge
+                },
+              },
+              {
+                key: '_getSegmentedControlLinks',
+                value: function () {
+                  var e = this,
+                    t = this.props,
+                    a = t.analytics,
+                    n = t.location,
+                    r = t.sensitiveMediaTabEnabled,
+                    i = this._getCurrentMediaItem(),
+                    o = []
+                  return (
+                    i &&
+                      i.originalMediaFile &&
+                      i.originalMediaFile.isImage &&
+                      o.push({
+                        to: u()(u()({}, n), {}, { state: u()(u()({}, n.state), {}, { tab: ze }) }),
+                        label: c.a.createElement(xe.a, null),
+                        key: ze,
+                        accessibilityLabel: We,
+                        isActive: function () {
+                          var e
+                          return (null === (e = n.state) || void 0 === e ? void 0 : e.tab) === ze
+                        },
+                        onClick: function () {
+                          return a.scribePageImpression()
+                        },
+                      }),
+                    o.push({
+                      to: u()(u()({}, n), {}, { state: u()(u()({}, n.state), {}, { tab: Ge }) }),
+                      label: c.a.createElement(V.b, { weight: 'bold' }, 'ALT'),
+                      key: Ge,
+                      accessibilityLabel: Be,
+                      isActive: function () {
+                        var e
+                        return (null === (e = n.state) || void 0 === e ? void 0 : e.tab) === Ge
+                      },
+                      onClick: function () {
+                        return e._handleClickTab('alt_text_button')
+                      },
+                    }),
+                    r &&
+                      o.push({
+                        to: u()(u()({}, n), {}, { state: u()(u()({}, n.state), {}, { tab: Ke }) }),
+                        label: c.a.createElement(ke.a, null),
+                        key: Ke,
+                        accessibilityLabel: Ve,
+                        isActive: function () {
+                          var e
+                          return (null === (e = n.state) || void 0 === e ? void 0 : e.tab) === Ke
+                        },
+                        onClick: function () {
+                          return e._handleClickTab('sensitive_media_tab')
+                        },
+                      }),
+                    o
+                  )
+                },
+              },
+            ]),
+            a
+          )
+        })(c.a.Component)
+      S()(He, 'defaultProps', { altTextTabEnabled: !0, cropTabEnabled: !0 })
+      var Ne = He,
+        qe = a('sjK1'),
+        Qe = a('RqPI'),
+        Xe = a('AspN'),
+        Je = a('0KEI'),
+        Ze = a('FDFL'),
+        Ye = function (e) {
+          var t = Object(Qe.o)(e)
+          return t && Object(Ze.b)(e, t)
+        },
+        $e = Object(q.a)()
+          .propsFromState(function () {
+            return { language: Qe.o, languageName: Ye }
+          })
+          .propsFromActions(function () {
+            return {
+              addMedia: Xe.b,
+              createLocalApiErrorHandler: Object(Je.createLocalApiErrorHandlerWithContextFactory)(
+                'VIDEO_SUBTITLES_UPLOAD',
+              ),
+              fetchAvailableLanguagesIfNeeded: Ze.a,
+              removeMediaUpload: Xe.i,
+            }
+          })
+          .withAnalytics(),
+        et = a('eyty'),
+        tt = (a('7xRU'), a('pHub')),
+        at = a('62wY'),
+        nt = 'fileInput',
+        rt = a('/Imo'),
+        it = ['icon', 'style', 'withIcon'],
+        ot = c.a.createElement(tt.a, null),
+        st = x.a.icbec4ae,
+        ct = function (e) {
+          var t = e.icon,
+            a = e.style,
+            n = e.withIcon,
+            i = o()(e, it),
+            s = at.a.join(',')
+          return c.a.createElement(
+            D.a,
+            null,
+            c.a.createElement(
+              rt.a,
+              r()({}, i, { accept: s, icon: n ? t : void 0, style: [lt.button, a], testID: nt, type: 'primaryFilled' }),
+              st,
+            ),
+          )
+        }
+      ct.defaultProps = { icon: ot, size: 'medium', withIcon: !0 }
+      var lt = R.a.create(function (e) {
+          return { button: { alignSelf: 'start' } }
+        }),
+        dt = ct,
+        ut = x.a.bf4e9d79,
+        mt = x.a.j435467e,
+        pt = x.a.a6b267f9,
+        ht = (function (e) {
+          E()(a, e)
+          var t = C()(a)
+          function a() {
+            var e
+            v()(this, a)
+            for (var n = arguments.length, r = new Array(n), i = 0; i < n; i++) r[i] = arguments[i]
+            return (
+              (e = t.call.apply(t, [this].concat(r))),
+              S()(y()(e), '_renderSubtitlesPickerButton', function () {
+                return c.a.createElement(dt, { onChange: e._handleAddMediaFiles, type: 'brandText' })
+              }),
+              S()(y()(e), '_renderSubtitlesRemovalButton', function () {
+                return c.a.createElement(_e.a, { onPress: e._handleRemoveSubtitles, type: 'destructiveOutlined' }, pt)
+              }),
+              S()(y()(e), '_handleRemoveSubtitles', function () {
                 ;(0, e.props.onRemove)()
               }),
-              T()(f()(e), '_handleAddMediaFiles', function (t) {
+              S()(y()(e), '_handleAddMediaFiles', function (t) {
                 var a = e.props,
                   n = a.addMedia,
                   r = a.analytics,
@@ -2551,7 +2510,7 @@
                   o = a.languageName,
                   s = a.onChange
                 r.scribe({ element: 'subtitles_upload', action: 'click' }),
-                  n(t, { location: W.d.Tweet }).then(function (e) {
+                  n(t, { location: et.d.Tweet }).then(function (e) {
                     s(e[0], i, o)
                   })
               }),
@@ -2559,7 +2518,7 @@
             )
           }
           return (
-            h()(a, [
+            g()(a, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -2572,17 +2531,17 @@
                 key: 'render',
                 value: function () {
                   var e = this.props.subtitles
-                  return o.a.createElement(
-                    K.a,
-                    { style: ie.root },
-                    o.a.createElement(
-                      K.a,
-                      { style: ie.attachmentContainer },
-                      o.a.createElement(ee.b, { size: 'title3', style: ie.header, weight: 'heavy' }, te),
-                      o.a.createElement(ee.b, { size: 'body', style: ie.body }, ae),
-                      o.a.createElement(
-                        K.a,
-                        { style: ie.buttonWrapper },
+                  return c.a.createElement(
+                    D.a,
+                    { style: vt.root },
+                    c.a.createElement(
+                      D.a,
+                      { style: vt.attachmentContainer },
+                      c.a.createElement(V.b, { size: 'title3', style: vt.header, weight: 'heavy' }, ut),
+                      c.a.createElement(V.b, { size: 'body', style: vt.body }, mt),
+                      c.a.createElement(
+                        D.a,
+                        { style: vt.buttonWrapper },
                         e ? this._renderSubtitlesRemovalButton() : this._renderSubtitlesPickerButton(),
                       ),
                     ),
@@ -2592,8 +2551,8 @@
             ]),
             a
           )
-        })(o.a.Component),
-        ie = N.a.create(function (e) {
+        })(c.a.Component),
+        vt = R.a.create(function (e) {
           return {
             root: { display: 'flex', flexDirection: 'column', flexWrap: 'nowrap', flex: 1 },
             attachmentContainer: { flex: 1, margin: e.spaces.space16, maxHeight: '100%' },
@@ -2602,67 +2561,65 @@
             header: { marginTop: e.spaces.space16, marginBottom: e.spaces.space8 },
           }
         }),
-        oe = U(re),
-        se = a('k/OQ'),
-        ce = a('R5K7'),
-        le = a('nV1z'),
-        de = a('8A5z'),
-        ue = a('zIWA'),
-        me = { section: 'subtitles' },
-        pe = { section: 'trimmer' },
-        he = { section: 'sensitive_media' },
-        ve = S.a.c91f83ae,
-        fe = S.a.icbec4ae,
-        ge = S.a.e0342f98,
-        be = S.a.i2209530,
-        ye = S.a.b772cd65,
-        _e = S.a.e0342f98,
-        Me = S.a.e7048e73,
-        Te = S.a.dd4a83a5,
-        Ee = 'subtitles',
-        Ce = 'trimmer',
-        Se = 'sensitive_media',
-        we = (function (e) {
-          b()(a, e)
-          var t = _()(a)
+        ft = $e(ht),
+        gt = a('R5K7'),
+        bt = a('nV1z'),
+        yt = a('8A5z'),
+        _t = { section: 'subtitles' },
+        Et = { section: 'trimmer' },
+        Tt = { section: 'sensitive_media' },
+        Ct = x.a.c91f83ae,
+        Mt = x.a.icbec4ae,
+        St = x.a.e0342f98,
+        wt = x.a.i2209530,
+        It = x.a.b772cd65,
+        xt = x.a.e0342f98,
+        kt = x.a.e7048e73,
+        At = x.a.dd4a83a5,
+        Rt = 'subtitles',
+        Pt = 'trimmer',
+        Dt = 'sensitive_media',
+        Lt = (function (e) {
+          E()(a, e)
+          var t = C()(a)
           function a(e) {
             var n
-            m()(this, a),
+            v()(this, a),
               (n = t.call(this, e)),
-              T()(f()(n), '_videoTrimmerRef', o.a.createRef()),
-              T()(
-                f()(n),
+              S()(y()(n), '_videoTrimmerRef', c.a.createRef()),
+              S()(
+                y()(n),
                 '_getMemoizedCurrentTabMetadata',
-                Object(w.a)(function (e, t, a) {
+                Object(Ee.a)(function (e, t, a) {
                   switch (e) {
-                    case Ce:
-                      if (t) return { namespace: pe, title: ve, renderer: n._renderTrimmerTab }
-                    case Se:
-                      if (a) return { namespace: he, title: Te, renderer: n._renderSensitiveMediaTab }
+                    case Pt:
+                      if (t) return { namespace: Et, title: Ct, renderer: n._renderTrimmerTab }
+                    case Dt:
+                      if (a) return { namespace: Tt, title: At, renderer: n._renderSensitiveMediaTab }
                     default:
-                      return { namespace: me, title: fe, renderer: n._renderSubtitlesTab }
+                      return { namespace: _t, title: Mt, renderer: n._renderSubtitlesTab }
                   }
                 }),
               ),
-              T()(f()(n), '_renderSegmentedControl', function () {
+              S()(y()(n), '_renderSegmentedControl', function () {
                 var e,
                   t = n.props,
                   a = t.isVideoTrimmerEnabled,
                   r = t.location,
                   i = t.sensitiveMediaTabEnabled,
-                  s = n._getSegmentedControlLinks(),
-                  c = n._getMemoizedCurrentTabMetadata(null === (e = r.state) || void 0 === e ? void 0 : e.tab, a, i)
-                return o.a.createElement(
-                  o.a.Fragment,
+                  o = n._getSegmentedControlLinks(),
+                  s = n._getMemoizedCurrentTabMetadata(null === (e = r.state) || void 0 === e ? void 0 : e.tab, a, i)
+                return c.a.createElement(
+                  c.a.Fragment,
                   null,
-                  s.length > 1 ? o.a.createElement(se.a, { accessibilityLabel: ve, links: s }) : null,
-                  o.a.createElement(K.a, { style: k.a.segmentedControlChildren }, c.renderer()),
+                  o.length > 1 ? c.a.createElement(ye.a, { accessibilityLabel: Ct, links: o }) : null,
+                  c.a.createElement(D.a, { style: be.segmentedControlChildren }, s.renderer()),
                 )
               }),
-              T()(f()(n), '_renderTrimmerTab', function () {
+              S()(y()(n), '_renderTrimmerTab', function () {
                 var e = n._getCurrentMediaItem(),
                   t = n.state.trimData
-                if (null != e && e.mediaFile && e.mediaFile instanceof A.c) {
+                if (null != e && e.mediaFile && e.mediaFile instanceof qe.c) {
                   var a = e.mediaFile,
                     r = {
                       duration: 1e3 * a.duration,
@@ -2670,14 +2627,14 @@
                       variants: [{ src: a.url, type: a.type }],
                       width: a.width,
                     }
-                  return o.a.createElement(
-                    K.a,
-                    { style: k.a.videoTrimmerWrapper },
-                    o.a.createElement(ce.a, { defaultTrimData: t, ref: n._videoTrimmerRef, video: r }),
+                  return c.a.createElement(
+                    D.a,
+                    { style: be.videoTrimmerWrapper },
+                    c.a.createElement(gt.a, { defaultTrimData: t, ref: n._videoTrimmerRef, video: r }),
                   )
                 }
               }),
-              T()(f()(n), '_addTrimDataToState', function () {
+              S()(y()(n), '_addTrimDataToState', function () {
                 var e,
                   t = null === (e = n._videoTrimmerRef.current) || void 0 === e ? void 0 : e.getTrimData()
                 null != t &&
@@ -2686,7 +2643,7 @@
                   t.startTime &&
                   n.setState({ trimData: { endTime: t.endTime, startTime: t.startTime } })
               }),
-              T()(f()(n), '_saveTrimData', function () {
+              S()(y()(n), '_saveTrimData', function () {
                 var e,
                   t = n.props,
                   a = t.processMedia,
@@ -2697,111 +2654,111 @@
                     n.state.trimData
                 o &&
                   i &&
-                  (r(d()(d()({}, i), {}, { trimData: { endTime: o.endTime / 1e3, startTime: o.startTime / 1e3 } })),
+                  (r(u()(u()({}, i), {}, { trimData: { endTime: o.endTime / 1e3, startTime: o.startTime / 1e3 } })),
                   a(i.id))
               }),
-              T()(f()(n), '_renderSubtitlesTab', function () {
+              S()(y()(n), '_renderSubtitlesTab', function () {
                 var e = n.props,
                   t = e.history,
                   a = e.initialMediaId,
                   r = n._getCurrentMediaItem(),
                   i = (null == r ? void 0 : r.mediaMetadata) || { subtitles: void 0 },
-                  s = null == i ? void 0 : i.subtitles
-                return o.a.createElement(oe, {
+                  o = null == i ? void 0 : i.subtitles
+                return c.a.createElement(ft, {
                   history: t,
                   key: a,
                   mediaItem: r,
                   onChange: n._handleSubtitlesChange,
                   onRemove: n._handleSubtitlesRemove,
-                  subtitles: s,
+                  subtitles: o,
                 })
               }),
-              T()(f()(n), '_renderSensitiveMediaTab', function () {
+              S()(y()(n), '_renderSensitiveMediaTab', function () {
                 var e = n.state.sensitiveMediaWarning,
                   t = n._getCurrentMediaItem()
-                return o.a.createElement(x.a, {
+                return c.a.createElement(fe, {
                   currentWarnings: e,
                   mediaItem: t,
                   onWarningChange: n._handleSensitiveWarningChange,
                 })
               }),
-              T()(f()(n), '_renderAppBarRightControl', function () {
+              S()(y()(n), '_renderAppBarRightControl', function () {
                 var e = n.props.isVideoTrimmerEnabled
-                return o.a.createElement(
-                  K.a,
-                  { style: k.a.rightControl },
-                  o.a.createElement(
-                    $.a,
-                    { onPress: n._handleEndEditingClick, size: 'small', style: k.a.saveButton, type: 'primaryFilled' },
-                    e ? be : ye,
+                return c.a.createElement(
+                  D.a,
+                  { style: be.rightControl },
+                  c.a.createElement(
+                    _e.a,
+                    { onPress: n._handleEndEditingClick, size: 'small', style: be.saveButton, type: 'primaryFilled' },
+                    e ? wt : It,
                   ),
                 )
               }),
-              T()(f()(n), '_getCurrentMediaItem', function () {
+              S()(y()(n), '_getCurrentMediaItem', function () {
                 var e = n.props,
                   t = e.initialMediaId
                 return e.media.find(function (e) {
                   return e.id === t
                 })
               }),
-              T()(f()(n), '_handleEndEditingClick', function () {
+              S()(y()(n), '_handleEndEditingClick', function () {
                 var e = n.props,
                   t = e.history,
                   a = e.isVideoTrimmerEnabled,
                   r = e.sensitiveMediaTabEnabled
                 a && n._saveTrimData(), r && n._saveSensitiveMediaWarning(), t.goBack()
               }),
-              T()(f()(n), '_saveSubtitles', function (e) {
+              S()(y()(n), '_saveSubtitles', function (e) {
                 var t = n.props,
                   a = t.media,
                   r = t.setMediaMetadata,
                   i = n._getCurrentMediaItem(),
                   o = (null == i ? void 0 : i.mediaMetadata) || { subtitles: void 0 }
                 a.forEach(function (t) {
-                  r(t.id, d()(d()({}, o), {}, { subtitles: e }))
+                  r(t.id, u()(u()({}, o), {}, { subtitles: e }))
                 })
               }),
-              T()(f()(n), '_handleSubtitlesChange', function (e, t, a) {
+              S()(y()(n), '_handleSubtitlesChange', function (e, t, a) {
                 n.props.analytics.scribe({ element: 'subtitles_upload', action: 'add' }),
-                  n._saveSubtitles({ lang: t, upload: e, displayName: a || _e })
+                  n._saveSubtitles({ lang: t, upload: e, displayName: a || xt })
               }),
-              T()(f()(n), '_handleSubtitlesRemove', function () {
+              S()(y()(n), '_handleSubtitlesRemove', function () {
                 n.props.analytics.scribe({ element: 'subtitles_upload', action: 'remove' }), n._saveSubtitles(void 0)
               }),
-              T()(f()(n), '_saveSensitiveMediaWarning', function () {
+              S()(y()(n), '_saveSensitiveMediaWarning', function () {
                 var e = n.props.setMediaMetadata,
                   t = n.state.sensitiveMediaWarning,
                   a = n._getCurrentMediaItem()
-                a && e(a.id, d()(d()({}, a.mediaMetadata), {}, { sensitiveMediaWarning: t }))
+                a && e(a.id, u()(u()({}, a.mediaMetadata), {}, { sensitiveMediaWarning: t }))
               }),
-              T()(f()(n), '_handleSensitiveWarningChange', function (e, t) {
+              S()(y()(n), '_handleSensitiveWarningChange', function (e, t) {
                 n.setState(function (a) {
                   var n = a.sensitiveMediaWarning
                   return t ? n.add(e) : n.delete(e), { sensitiveMediaWarning: n }
                 })
               }),
-              T()(f()(n), '_handleClickSensitiveMediaTab', function () {
+              S()(y()(n), '_handleClickSensitiveMediaTab', function () {
                 var e = n.props.analytics
                 n._addTrimDataToState(), e.scribePageImpression()
               })
             var r = n._getCurrentMediaItem()
-            if (null != r && r.mediaFile && r.mediaFile instanceof A.c) {
+            if (null != r && r.mediaFile && r.mediaFile instanceof qe.c) {
               var i = r.mediaFile,
-                s = r.mediaMetadata,
-                c = r.trimData,
+                o = r.mediaMetadata,
+                s = r.trimData,
                 l = {
-                  endTime: null != c && c.endTime ? 1e3 * c.endTime : 1e3 * i.duration,
-                  startTime: null != c && c.startTime ? 1e3 * c.startTime : 0,
+                  endTime: null != s && s.endTime ? 1e3 * s.endTime : 1e3 * i.duration,
+                  startTime: null != s && s.startTime ? 1e3 * s.startTime : 0,
                 }
               n.state = {
                 trimData: l,
-                sensitiveMediaWarning: (null == s ? void 0 : s.sensitiveMediaWarning) || new Set(),
+                sensitiveMediaWarning: (null == o ? void 0 : o.sensitiveMediaWarning) || new Set(),
               }
             } else n.props.history.replace('/')
             return n
           }
           return (
-            h()(a, [
+            g()(a, [
               {
                 key: 'render',
                 value: function () {
@@ -2811,23 +2768,23 @@
                     n = t.isVideoTrimmerEnabled,
                     r = t.location,
                     i = t.sensitiveMediaTabEnabled,
-                    s = this._getMemoizedCurrentTabMetadata(
+                    o = this._getMemoizedCurrentTabMetadata(
                       null === (e = r.state) || void 0 === e ? void 0 : e.tab,
                       n,
                       i,
                     )
-                  return o.a.createElement(
-                    I.c,
-                    { namespace: s.namespace },
-                    o.a.createElement(
-                      E.b,
+                  return c.a.createElement(
+                    oe.c,
+                    { namespace: o.namespace },
+                    c.a.createElement(
+                      re.b,
                       {
                         backButtonType: 'back',
-                        containerStyle: k.a.root,
-                        documentTitle: s.title,
+                        containerStyle: be.root,
+                        documentTitle: o.title,
                         history: a,
                         rightControl: this._renderAppBarRightControl(),
-                        title: s.title,
+                        title: o.title,
                       },
                       this._renderSegmentedControl(),
                     ),
@@ -2843,68 +2800,72 @@
                     n = a.isVideoTrimmerEnabled,
                     r = a.location,
                     i = a.sensitiveMediaTabEnabled,
-                    s = this._getCurrentMediaItem(),
-                    c = []
+                    o = this._getCurrentMediaItem(),
+                    s = []
                   return (
                     n &&
-                      (null == s || null === (e = s.originalMediaFile) || void 0 === e ? void 0 : e.isVideo) &&
-                      c.push({
-                        to: d()(d()({}, r), {}, { state: d()(d()({}, r.state), {}, { tab: Ce }) }),
-                        label: o.a.createElement(le.a, null),
-                        key: Ce,
-                        accessibilityLabel: Me,
+                      (null == o || null === (e = o.originalMediaFile) || void 0 === e ? void 0 : e.isVideo) &&
+                      s.push({
+                        to: u()(u()({}, r), {}, { state: u()(u()({}, r.state), {}, { tab: Pt }) }),
+                        label: c.a.createElement(bt.a, null),
+                        key: Pt,
+                        accessibilityLabel: kt,
                         isActive: function () {
                           var e
-                          return (null === (e = r.state) || void 0 === e ? void 0 : e.tab) === Ce
+                          return (null === (e = r.state) || void 0 === e ? void 0 : e.tab) === Pt
                         },
                       }),
-                    (null == s || null === (t = s.originalMediaFile) || void 0 === t ? void 0 : t.isVideo) &&
-                      c.push({
-                        to: d()(d()({}, r), {}, { state: d()(d()({}, r.state), {}, { tab: Ee }) }),
-                        label: o.a.createElement(de.a, null),
-                        key: Ee,
-                        accessibilityLabel: ge,
+                    (null == o || null === (t = o.originalMediaFile) || void 0 === t ? void 0 : t.isVideo) &&
+                      s.push({
+                        to: u()(u()({}, r), {}, { state: u()(u()({}, r.state), {}, { tab: Rt }) }),
+                        label: c.a.createElement(yt.a, null),
+                        key: Rt,
+                        accessibilityLabel: St,
                         isActive: function () {
                           var e
-                          return (null === (e = r.state) || void 0 === e ? void 0 : e.tab) === Ee
+                          return (null === (e = r.state) || void 0 === e ? void 0 : e.tab) === Rt
                         },
                         onClick: this._addTrimDataToState,
                       }),
                     i &&
-                      c.push({
-                        to: d()(d()({}, r), {}, { state: d()(d()({}, r.state), {}, { tab: Se }) }),
-                        label: o.a.createElement(ue.a, null),
-                        key: Se,
-                        accessibilityLabel: Te,
+                      s.push({
+                        to: u()(u()({}, r), {}, { state: u()(u()({}, r.state), {}, { tab: Dt }) }),
+                        label: c.a.createElement(ke.a, null),
+                        key: Dt,
+                        accessibilityLabel: At,
                         isActive: function () {
                           var e
-                          return (null === (e = r.state) || void 0 === e ? void 0 : e.tab) === Se
+                          return (null === (e = r.state) || void 0 === e ? void 0 : e.tab) === Dt
                         },
                         onClick: this._handleClickSensitiveMediaTab,
                       }),
-                    c
+                    s
                   )
                 },
               },
             ]),
             a
           )
-        })(o.a.Component)
+        })(c.a.Component),
+        Ot = ['altTextTabEnabled', 'cropTabEnabled']
       t.a = function (e) {
         var t,
           a,
-          n = e.history,
-          i = e.initialMediaId,
-          l = e.media,
-          d = o.a.useContext(s.a).featureSwitches,
-          u =
-            null === (t = e.media[0]) || void 0 === t || null === (a = t.mediaFile) || void 0 === a ? void 0 : a.isVideo
-        if (l.length <= 0 || !i) return n.replace('/'), null
-        if (u) {
-          var m = d.isTrue('responsive_web_video_trimmer_enabled')
-          return o.a.createElement(we, r()({}, e, { isVideoTrimmerEnabled: m }))
+          n = e.altTextTabEnabled,
+          i = e.cropTabEnabled,
+          s = o()(e, Ot),
+          d = s.history,
+          u = s.initialMediaId,
+          m = s.media,
+          p = c.a.useContext(l.a).featureSwitches,
+          h =
+            null === (t = s.media[0]) || void 0 === t || null === (a = t.mediaFile) || void 0 === a ? void 0 : a.isVideo
+        if (m.length <= 0 || !u) return d.replace('/'), null
+        if (h) {
+          var v = p.isTrue('responsive_web_video_trimmer_enabled')
+          return c.a.createElement(Lt, r()({}, s, { isVideoTrimmerEnabled: v }))
         }
-        return o.a.createElement(c.b, e)
+        return c.a.createElement(Ne, r()({}, s, { altTextTabEnabled: n, cropTabEnabled: i }))
       }
     },
     nV1z: function (e, t, a) {
