@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [39, 175],
+  [38, 174],
   {
     '/ZwF': function (e, t, a) {
       'use strict'
@@ -4422,51 +4422,52 @@
         xt = a('4zmP'),
         At = a('pjBI'),
         Lt = a('GBcw'),
-        Ot = a('htQn'),
-        kt = a('zIWA'),
-        Bt = a('/WPq'),
-        Rt = a('6s7X'),
-        Nt = a('sUoZ'),
-        Ft = a('x0mb'),
-        Dt = a('fBGZ'),
-        Mt = a('2Rcs'),
-        Ht = a('Nh1N'),
-        Pt = a('NPGn'),
-        zt = z.a.d96cf7cd,
-        jt = z.a.e272836c,
-        Ut = z.a.e4579709,
-        Wt = z.a.fa0d3ee3,
-        Vt = z.a.ccf2f24e,
-        Kt = z.a.df321fc3,
-        qt = y.a.createElement(R.b, { color: 'primary' }, Kt),
-        Xt = z.a.b9f18eec,
-        Gt = z.a.g2edfc1a,
-        Qt = z.a.d6db34cb,
-        Zt = z.a.j2c3f3cf,
-        Yt = z.a.ac39da02,
-        Jt = z.a.d1dd62ac,
-        $t = z.a.b664c554,
-        ea = z.a.ab66e1f2,
-        ta = z.a.b2792b8c,
-        aa = z.a.b74df918,
-        na = z.a.hfd2544f,
-        ra = z.a.b9e1cf02,
-        oa = z.a.cfd2f35d,
-        ia = z.a.i80c8a83,
-        la = z.a.i859a9d3,
-        ca = z.a.i97b83f6,
-        sa = 'CurrentlyRatedHelpful',
-        ua = 'CurrentlyRatedNotHelpful',
-        da = 'NeedsMoreRatings',
-        pa = function (e, t, a) {
+        Ot = a('855f'),
+        kt = a('htQn'),
+        Bt = a('zIWA'),
+        Rt = a('/WPq'),
+        Nt = a('6s7X'),
+        Ft = a('sUoZ'),
+        Dt = a('x0mb'),
+        Mt = a('fBGZ'),
+        Ht = a('2Rcs'),
+        Pt = a('Nh1N'),
+        zt = a('NPGn'),
+        jt = z.a.d96cf7cd,
+        Ut = z.a.e272836c,
+        Wt = z.a.e4579709,
+        Vt = z.a.fa0d3ee3,
+        Kt = z.a.ccf2f24e,
+        qt = z.a.df321fc3,
+        Xt = y.a.createElement(R.b, { color: 'primary' }, qt),
+        Gt = z.a.b9f18eec,
+        Qt = z.a.g2edfc1a,
+        Zt = z.a.d6db34cb,
+        Yt = z.a.j2c3f3cf,
+        Jt = z.a.ac39da02,
+        $t = z.a.d1dd62ac,
+        ea = z.a.b664c554,
+        ta = z.a.ab66e1f2,
+        aa = z.a.b2792b8c,
+        na = z.a.b74df918,
+        ra = z.a.hfd2544f,
+        oa = z.a.b9e1cf02,
+        ia = z.a.cfd2f35d,
+        la = z.a.i80c8a83,
+        ca = z.a.i859a9d3,
+        sa = z.a.i97b83f6,
+        ua = 'CurrentlyRatedHelpful',
+        da = 'CurrentlyRatedNotHelpful',
+        pa = 'NeedsMoreRatings',
+        ba = function (e, t, a) {
           return y.a.createElement(
             B.a,
-            { style: ma.ratingInfoItem, testID: Tt },
-            y.a.createElement(e, { style: [ma.icon, t] }),
+            { style: fa.ratingInfoItem, testID: Tt },
+            y.a.createElement(e, { style: [fa.icon, t] }),
             y.a.createElement(R.b, { size: 'subtext2', weight: 'bold' }, a),
           )
         },
-        ba = (function (e) {
+        ma = (function (e) {
           p()(a, e)
           var t = m()(a)
           function a(e, n) {
@@ -4518,19 +4519,19 @@
                     t.alias &&
                     r._isOwner() &&
                     n.push({
-                      confirmation: { label: zt, headline: jt, text: Wt, confirmButtonType: 'destructiveFilled' },
+                      confirmation: { label: jt, headline: Ut, text: Vt, confirmButtonType: 'destructiveFilled' },
                       isEmphasized: !0,
-                      text: zt,
+                      text: jt,
                       Icon: X.a,
                       onClick: r._handleDeleteConfirm,
                     }),
                   n.push({
-                    text: Vt,
-                    Icon: kt.a,
+                    text: Kt,
+                    Icon: Bt.a,
                     link: { pathname: 'https://help.twitter.com/en/forms/birdwatch?note_id='.concat(a) },
                     onClick: r._scribeOnClick('report'),
                   }),
-                  n.push({ text: Ut, Icon: Bt.a, onClick: r._onNoteDetailsClick }),
+                  n.push({ text: Wt, Icon: Rt.a, onClick: r._onNoteDetailsClick }),
                   n
                 )
               }),
@@ -4559,7 +4560,7 @@
                   .then(function () {
                     r.setState({ appealsRequestOpen: !1 }), r.setState({ appealRequested: !0 })
                   })
-                  .catch(a({ defaultToast: { text: ca, withAutoDismiss: !1, withClearButton: !0 }, showToast: !0 }))
+                  .catch(a({ defaultToast: { text: sa, withAutoDismiss: !1, withClearButton: !0 }, showToast: !0 }))
               }),
               h()(u()(r), '_handleOpenAppealsModal', function () {
                 r.setState({ appealsRequestOpen: !0 })
@@ -4568,15 +4569,15 @@
                 r.setState({ appealsRequestOpen: !1 })
               }),
               h()(u()(r), '_renderAppealsModal', function () {
-                var e = y.a.createElement(B.a, null, y.a.createElement(R.b, null, ea), y.a.createElement(Se.a, fa))
+                var e = y.a.createElement(B.a, null, y.a.createElement(R.b, null, ta), y.a.createElement(Se.a, ha))
                 return y.a.createElement(Ie.a, {
-                  actionLabel: ra,
+                  actionLabel: oa,
                   graphicDisplayMode: 'none',
-                  headline: $t,
+                  headline: ea,
                   isFullHeightOnMobile: !0,
                   onAction: r._handleRequestAppeal,
                   onSecondaryAction: r._handleCloseAppealsModal,
-                  secondaryActionLabel: oa,
+                  secondaryActionLabel: ia,
                   subtext: e,
                 })
               }),
@@ -4596,43 +4597,43 @@
                 return r.state.appealRequested
                   ? y.a.createElement(xt.a, {
                       Icon: Q.a,
-                      action: { label: la, link: 'https://twitter.github.io/birdwatch/additional-review' },
-                      headline: ia,
+                      action: { label: ca, link: 'https://twitter.github.io/birdwatch/additional-review' },
+                      headline: la,
                       type: 'success',
                     })
                   : t
-                  ? y.a.createElement(R.b, { color: 'gray700', size: 'subtext2', style: a && ma.noteWithQT }, n)
+                  ? y.a.createElement(R.b, { color: 'gray700', size: 'subtext2', style: a && fa.noteWithQT }, n)
                   : void 0
               }),
               h()(u()(r), '_isShownOnTwitter', function () {
                 var e = r.props.note,
                   t = e.data_v1
-                return e.rating_status === sa && (null == t ? void 0 : t.classification) === Pt.a
+                return e.rating_status === ua && (null == t ? void 0 : t.classification) === zt.a
               }),
               h()(u()(r), '_renderRatingStatus', function (e) {
                 switch (e) {
-                  case sa:
+                  case ua:
                     var t = y.a.createElement(
                         y.a.Fragment,
                         null,
                         y.a.createElement(
                           At.a,
                           null,
-                          y.a.createElement(R.b, null, Xt),
                           y.a.createElement(R.b, null, Gt),
+                          y.a.createElement(R.b, null, Qt),
                         ),
                         y.a.createElement(
                           R.b,
                           { color: 'text', link: 'https://twitter.github.io/birdwatch/notes-on-twitter' },
-                          y.a.createElement(Rt.a, { style: [ma.icon, ma.infoIcon] }),
+                          y.a.createElement(Nt.a, { style: [fa.icon, fa.infoIcon] }),
                         ),
                       ),
-                      a = r._isShownOnTwitter() ? t : Xt
-                    return pa(Nt.a, ma.iconStar, a)
-                  case ua:
-                    return pa(Ft.a, ma.iconRed, Zt)
+                      a = r._isShownOnTwitter() ? t : Gt
+                    return ba(Ft.a, fa.iconStar, a)
                   case da:
-                    return pa(Ft.a, ma.iconGray, Qt)
+                    return ba(Dt.a, fa.iconRed, Yt)
+                  case pa:
+                    return ba(Dt.a, fa.iconGray, Zt)
                   default:
                     return null
                 }
@@ -4709,49 +4710,49 @@
                       n = e.windowWidth
                     return y.a.createElement(
                       B.a,
-                      { key: f, style: ma.noteContainer },
+                      { key: f, style: fa.noteContainer },
                       P && a._renderAppealsModal(),
                       y.a.createElement(
                         B.a,
-                        { style: ma.noteTopContainer },
+                        { style: fa.noteTopContainer },
                         _ && S
                           ? y.a.createElement(
                               B.a,
-                              { style: ma.tweetContainer },
+                              { style: fa.tweetContainer },
                               y.a.createElement(wt.a, { isCondensed: !0, tweetId: S }),
                             )
                           : null,
                         y.a.createElement(
                           B.a,
-                          { style: [ma.noteTop, _ && ma.noteWithQT] },
+                          { style: [fa.noteTop, _ && fa.noteWithQT] },
                           y.a.createElement(
                             B.a,
-                            { style: ma.noteBody },
+                            { style: fa.noteBody },
                             y.a.createElement(
                               At.a,
-                              { style: ma.noteInfoMiddots },
+                              { style: fa.noteInfoMiddots },
                               a._renderRatingStatus(b),
                               o && n >= H.a.theme.breakpoints.medium
-                                ? y.a.createElement(Lt.a, { style: [ma.ratingInfoItem, ma.timestamp], timestamp: o })
+                                ? y.a.createElement(Lt.a, { style: [fa.ratingInfoItem, fa.timestamp], timestamp: o })
                                 : null,
                             ),
                             s && C.isTrue('responsive_web_birdwatch_impressions_enabled')
                               ? y.a.createElement(
                                   R.b,
-                                  { color: 'gray700', size: 'subtext2', style: ma.subtext },
-                                  ((t = s),
+                                  { color: 'gray700', size: 'subtext2', style: fa.subtext },
+                                  ((t = Ot.a.getTruncatedCount(s)),
                                   y.a.createElement(z.a.I18NFormatMessage, { $i18n: 'd9f77781', impressions: t })),
                                 )
                               : null,
-                            b === sa && (null == i ? void 0 : i.classification) === Pt.b
-                              ? y.a.createElement(R.b, { color: 'gray700', size: 'subtext2', style: ma.subtext }, Yt)
+                            b === ua && (null == i ? void 0 : i.classification) === zt.b
+                              ? y.a.createElement(R.b, { color: 'gray700', size: 'subtext2', style: fa.subtext }, Jt)
                               : null,
                             y.a.createElement(
                               At.a,
-                              { style: ma.noteInfoMiddots },
+                              { style: fa.noteInfoMiddots },
                               (function (e, t, a) {
                                 switch (e) {
-                                  case sa:
+                                  case ua:
                                     if (2 === t.length) {
                                       var n = v()(t, 2),
                                         r = n[0],
@@ -4766,7 +4767,7 @@
                                         : null
                                     }
                                     return null
-                                  case ua:
+                                  case da:
                                     if (2 === a.length) {
                                       var d = v()(a, 2),
                                         p = d[0],
@@ -4786,7 +4787,7 @@
                             ),
                             y.a.createElement(
                               B.a,
-                              { style: ma.noteTextSection },
+                              { style: fa.noteTextSection },
                               y.a.createElement(_t.a, {
                                 entities: T,
                                 onEntityClick: a._scribeOnClick('link'),
@@ -4794,12 +4795,12 @@
                               }),
                             ),
                           ),
-                          y.a.createElement(M.a, { renderActionMenu: a._renderCurationActionMenu, style: ma.caret }),
+                          y.a.createElement(M.a, { renderActionMenu: a._renderCurationActionMenu, style: fa.caret }),
                         ),
                         D
                           ? y.a.createElement(
                               B.a,
-                              { style: ma.ratingContainer },
+                              { style: fa.ratingContainer },
                               F
                                 ? y.a.createElement(nt, { noteId: f, rating: A, ratingSurvey: m })
                                 : y.a.createElement(Ee, { noteId: f, rating: x }),
@@ -4811,17 +4812,17 @@
                         S &&
                         C.isTrue('responsive_web_birdwatch_rating_participant_enabled') &&
                         y.a.createElement(
-                          Ot.a,
+                          kt.a,
                           null,
                           y.a.createElement(
                             R.b,
                             {
                               link: '/i/birdwatch/t/'.concat(S),
                               onPress: a._scribeOnClick('pivot'),
-                              style: [ma.pivot, _ && ma.pivotWithQT],
+                              style: [fa.pivot, _ && fa.pivotWithQT],
                               withInteractiveStyling: !1,
                             },
-                            qt,
+                            Xt,
                           ),
                         ),
                       a.state.noteDetailsOpen &&
@@ -4840,8 +4841,8 @@
             a
           )
         })(y.a.Component)
-      h()(ba, 'defaultProps', { showPivot: !1, showRating: !0, showTweet: !1 }), h()(ba, 'contextType', I.a)
-      var ma = H.a.create(function (e) {
+      h()(ma, 'defaultProps', { showPivot: !1, showRating: !0, showTweet: !1 }), h()(ma, 'contextType', I.a)
+      var fa = H.a.create(function (e) {
           return {
             caret: { display: 'flex', alignSelf: 'flex-start', flex: 1, flexBasis: '0%', flexDirection: 'row-reverse' },
             classification: { paddingRight: e.spaces.space4 },
@@ -4897,17 +4898,17 @@
             tweetContainer: { marginBottom: e.spaces.space12 },
           }
         }),
-        fa = {
-          accessibilityLabel: Jt,
-          containerStyle: ma.infoItemContainer,
+        ha = {
+          accessibilityLabel: $t,
+          containerStyle: fa.infoItemContainer,
           items: [
-            { label: '', decoration: y.a.createElement(Dt.a, { style: ma.iconAppeals }), description: ta },
-            { label: '', decoration: y.a.createElement(Mt.a, { style: ma.iconAppeals }), description: aa },
-            { label: '', decoration: y.a.createElement(Ht.a, { style: ma.iconAppeals }), description: na },
+            { label: '', decoration: y.a.createElement(Mt.a, { style: fa.iconAppeals }), description: aa },
+            { label: '', decoration: y.a.createElement(Ht.a, { style: fa.iconAppeals }), description: na },
+            { label: '', decoration: y.a.createElement(Pt.a, { style: fa.iconAppeals }), description: ra },
           ],
         },
-        ha = lt(ba)
-      t.a = ha
+        ga = lt(ma)
+      t.a = ga
     },
     b5s6: function (e, t, a) {
       'use strict'
@@ -6710,7 +6711,7 @@
           a('kYxP'),
           {
             loader: function () {
-              return a.e(229).then(a.bind(null, 'SdtT'))
+              return a.e(228).then(a.bind(null, 'SdtT'))
             },
             loaderKey: 'pivotLabelLoader',
             strategy: a('XBtf').a.Critical,

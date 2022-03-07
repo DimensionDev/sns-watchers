@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [51, 233],
+  [50, 232],
   {
     '+0pD': function (e, t) {
       var n =
@@ -810,7 +810,7 @@
             return { user: Re(e), displaySensitiveMedia: t, isDmNsfwMediaFilterEnabled: n }
           },
         ),
-        Ae = Object(Ee.g)(xe, Te),
+        Ae = Object(Ee.f)(xe, Te),
         Ie = (n('0zG9'), n('jwue'), n('+oxZ'), n('KqXw'), n('MvUL'), n('1YZw')),
         Oe = n('rxPX'),
         Me = n('0KEI'),
@@ -875,7 +875,7 @@
           fetchUpdatesIfNeeded: We.d,
           removeReaction: Ve.k,
         },
-        Ge = Object(Ee.g)(Ke, qe),
+        Ge = Object(Ee.f)(Ke, qe),
         Xe = n('RhWx'),
         Ye = n.n(Xe),
         Qe = n('33Kz'),
@@ -944,7 +944,7 @@
                   data: {
                     conversation_id: i.conversation_id,
                     conversation_participant_count: s,
-                    conversation_type: o ? et.h.GROUP : et.h.ONE_TO_ONE,
+                    conversation_type: o ? et.i.GROUP : et.i.ONE_TO_ONE,
                     message_type: c,
                     reaction_emotion: t,
                   },
@@ -1271,7 +1271,7 @@
                   action: 'delete',
                   data: {
                     conversation_id: r.conversation_id,
-                    conversation_type: s ? et.h.GROUP : et.h.ONE_TO_ONE,
+                    conversation_type: s ? et.i.GROUP : et.i.ONE_TO_ONE,
                     conversation_participant_count: l,
                     message_type: c,
                     inbox_type: Object(T.i)(o),
@@ -5797,7 +5797,9 @@
               h()(
                 l()(i),
                 '_shouldUseNewScroller',
-                i.context.featureSwitches.isTrue('responsive_web_dm_new_scroller_enabled'),
+                i.context.featureSwitches.isTrue('responsive_web_dm_new_scroller_enabled') ||
+                  (i.context.featureSwitches.isTrue('dm_inbox_search_message_results_enabled') &&
+                    i.context.featureSwitches.isTrue('direct_messages_incremental_holdback_2022h1')),
               ),
               h()(l()(i), '_handleScrollEnd', function () {
                 i.setState({ didRenderMessageSearchEntry: !0 })
@@ -5860,138 +5862,131 @@
               {
                 key: 'render',
                 value: function () {
-                  var e,
-                    t = this,
-                    n = this.props,
-                    a = n.conversation,
-                    r = n.drawerHeader,
-                    i = n.isWide,
-                    o = n.messageSearchEntryId,
-                    s = n.onForwardRequest,
-                    l = n.onHistoryRequest,
-                    c = n.shouldScrollToCenter,
-                    u = n.style,
-                    d = this.state.activeEntryId,
-                    p = (function (e) {
-                      var t,
-                        n,
-                        a = e.activeEntryId,
-                        r = e.canInjectConversationProfileInfoHeader,
-                        i = e.conversation,
-                        o = e.footer,
-                        s = e.messageSearchEntryId,
-                        l = e.readOnlyEntry,
-                        c = (i && i.entries) || [],
-                        u = null == i || null === (t = i.searchCursors) || void 0 === t ? void 0 : t.max_entry_id,
-                        d = null == i || null === (n = i.searchCursors) || void 0 === n ? void 0 : n.min_entry_id,
-                        p = u ? Object(T.d)(c, u) : c.length - 1,
-                        m = d ? Object(T.d)(c, d) : 0,
-                        h = c.slice(m, p + 1),
-                        f = (s ? h : c).reduce(function (e, t, n) {
-                          r && 0 === n && e.push(w.b)
-                          var o = Object(I.a)(e),
-                            l = n === c.length - 1
+                  var e = this,
+                    t = this.props,
+                    n = t.conversation,
+                    a = t.drawerHeader,
+                    r = t.isWide,
+                    i = t.messageSearchEntryId,
+                    o = t.onForwardRequest,
+                    s = t.onHistoryRequest,
+                    l = t.shouldScrollToCenter,
+                    c = t.style,
+                    u = this.state.activeEntryId,
+                    d = (function (e) {
+                      var t = e.activeEntryId,
+                        n = e.canInjectConversationProfileInfoHeader,
+                        a = e.conversation,
+                        r = e.footer,
+                        i = e.messageSearchEntryId,
+                        o = e.readOnlyEntry,
+                        s = (a && a.entries) || [],
+                        l = null == a ? void 0 : a.max_search_entry_id,
+                        c = null == a ? void 0 : a.min_search_entry_id,
+                        u = l ? Object(T.d)(s, l) : s.length - 1,
+                        d = c ? Object(T.d)(s, c) : -1,
+                        p = i && -1 === d ? Object(T.d)(s, i) : d,
+                        m = s.slice(p, u + 1),
+                        h = (i ? m : s).reduce(function (e, r, o) {
+                          n && 0 === o && e.push(w.b)
+                          var l = Object(I.a)(e),
+                            c = o === s.length - 1
                           if (
                             (e.push({
                               isRapidFire: !1,
                               isFirstRapidFire: !1,
                               isLastRapidFire: !1,
-                              entry: t,
-                              isActive: s === t.id || a === t.id,
-                              isTrusted: !(null == i || !i.trusted),
+                              entry: r,
+                              isActive: i === r.id || t === r.id,
+                              isTrusted: !(null == a || !a.trusted),
+                              messageSearchEntryId: i,
                             }),
-                            o)
+                            l)
                           ) {
-                            var u = A(o.entry, t),
+                            var u = A(l.entry, r),
                               d = e[e.length - 2]
                             u
                               ? ((e[e.length - 1].isRapidFire = !0),
                                 d.isRapidFire || ((d.isFirstRapidFire = !0), (d.isRapidFire = !0)),
-                                l && (e[e.length - 1].isLastRapidFire = !0))
+                                c && (e[e.length - 1].isLastRapidFire = !0))
                               : d.isRapidFire && (d.isLastRapidFire = !0)
                           }
                           return e
                         }, [])
-                      return o && !s && f.push(o), i.read_only && l && !s && f.push(l), f
+                      return r && !i && h.push(r), a.read_only && o && !i && h.push(o), h
                     })({
-                      conversation: a,
+                      conversation: n,
                       footer: w.d,
                       readOnlyEntry: w.c,
-                      canInjectConversationProfileInfoHeader: a.status === Y.c.AT_END && a.type === Y.a.ONE_TO_ONE,
-                      activeEntryId: d,
-                      messageSearchEntryId: o,
+                      canInjectConversationProfileInfoHeader: n.status === Y.c.AT_END && n.type === Y.a.ONE_TO_ONE,
+                      activeEntryId: u,
+                      messageSearchEntryId: i,
                     }),
-                    m = a.conversation_id,
-                    h = function (e) {
+                    p = n.conversation_id,
+                    m = function (e) {
                       return e[e.length - 1]
                     },
-                    v = function (e) {
+                    h = function (e) {
                       for (var t = e.length - 1; t >= 0; t--) {
                         var n = e[t]
                         if (n && Oo(n)) return n
                       }
-                      return h(e)
+                      return m(e)
                     },
-                    y = o ? 'dm-activity-'.concat(m, '-').concat(o) : 'dm-activity-'.concat(m),
-                    _ =
-                      this.state.didRenderMessageSearchEntry &&
-                      (null === (e = a.searchCursors) || void 0 === e ? void 0 : e.min_entry_id)
-                  return g.a.createElement(z.a.Consumer, null, function (e) {
-                    var n,
-                      d = e.isDrawer ? K.b.drawerHeaderRadius : Fo.scrollSpace
+                    v = i ? 'dm-activity-'.concat(p, '-').concat(i) : 'dm-activity-'.concat(p),
+                    y = this.state.didRenderMessageSearchEntry && (null == n ? void 0 : n.min_search_entry_id)
+                  return g.a.createElement(z.a.Consumer, null, function (t) {
+                    var u = t.isDrawer ? K.b.drawerHeaderRadius : Fo.scrollSpace
                     return g.a.createElement(
                       J.a,
-                      { style: [Fo.scrollContainer, d] },
+                      { style: [Fo.scrollContainer, u] },
                       g.a.createElement(
                         Ui.a,
-                        { style: [Fo.scrollContainer, i && Fo.conversationsPadding, d, u] },
-                        r || null,
-                        (a.status && a.status !== Y.c.AT_END && !o) || _ ? g.a.createElement(Ni.a, null) : null,
+                        { style: [Fo.scrollContainer, r && Fo.conversationsPadding, u, c] },
+                        a || null,
+                        (n.status && n.status !== Y.c.AT_END && !i) || y ? g.a.createElement(Ni.a, null) : null,
                         g.a.createElement(
                           To.a,
                           { style: [Fo.content, Fo.alignTop], withGutter: !0 },
-                          t._shouldUseNewScroller && !t.props.isLoadingSnapshot
+                          e._shouldUseNewScroller
                             ? g.a.createElement(Bi.b, {
                                 anchoring: Di.a,
                                 assumedItemHeight: 50,
-                                cacheKey: y,
+                                cacheKey: v,
                                 canBeAnchorFunction: Oo,
-                                centerInitialAnchor: c,
+                                centerInitialAnchor: l,
                                 hasNewContentAtBottom: !0,
                                 identityFunction: Io,
-                                initialAnchor: p.length > 0 ? f.a(o && c ? o : Io(v(p))) : void 0,
-                                items: p,
+                                initialAnchor: d.length > 0 ? f.a(i && l ? i : Io(h(d))) : void 0,
+                                items: d,
                                 nearStartProximityRatio: 2,
-                                onAtEnd: o && t.state.didRenderMessageSearchEntry ? s : void 0,
-                                onAtStart: o && t.state.didRenderMessageSearchEntry ? l : void 0,
-                                onNearStart: o ? void 0 : l,
-                                onScrollEnd: o && !t.state.didRenderMessageSearchEntry ? t._handleScrollEnd : void 0,
-                                renderer: t._renderItem,
-                                withoutHeadroom: c,
+                                onAtEnd: i && e.state.didRenderMessageSearchEntry ? o : void 0,
+                                onAtStart: i && e.state.didRenderMessageSearchEntry ? s : void 0,
+                                onNearStart: i ? void 0 : s,
+                                onScrollEnd: i && !e.state.didRenderMessageSearchEntry ? e._handleScrollEnd : void 0,
+                                renderer: e._renderItem,
+                                withoutHeadroom: !1,
                               })
                             : g.a.createElement(
                                 ji.a,
-                                { identifier: y },
+                                { identifier: v },
                                 g.a.createElement(wo, {
-                                  anchoring: t._anchoring,
+                                  anchoring: e._anchoring,
                                   assumedItemHeight: 50,
-                                  cacheKey: y,
+                                  cacheKey: v,
                                   centerInitialAnchor: !1,
                                   hasNewContentAtBottom: !1,
                                   identityFunction: Io,
-                                  initialAnchor: p.length > 0 ? f.a(Io(h(p))) : void 0,
-                                  items: p,
+                                  initialAnchor: d.length > 0 ? f.a(Io(m(d))) : void 0,
+                                  items: d,
                                   nearStartProximityRatio: 2,
-                                  onNearStart: l,
-                                  renderer: t._renderItem,
+                                  onNearStart: s,
+                                  renderer: e._renderItem,
                                   withoutHeadroom: !0,
                                 }),
                               ),
                         ),
-                        t.state.didRenderMessageSearchEntry &&
-                          null !== (n = a.searchCursors) &&
-                          void 0 !== n &&
-                          n.max_entry_id
+                        e.state.didRenderMessageSearchEntry && n.max_search_entry_id
                           ? g.a.createElement(Ni.a, null)
                           : null,
                       ),
@@ -6145,7 +6140,7 @@
       var a = n('zb92')
       t.a = Object(a.a)({
         loader: function () {
-          return Promise.all([n.e(0), n.e(24), n.e(171)])
+          return Promise.all([n.e(0), n.e(23), n.e(170)])
             .then(n.bind(null, 'u2Vg'))
             .then(function (e) {
               return { default: e.__DANGEROUS_IMPORT__ }
@@ -8092,7 +8087,7 @@
               v = y.a.useCallback(
                 function () {
                   return {
-                    items: [{ conversation_type: t.type === S.CONVERSATION_TYPE.GROUP ? Z.h.GROUP : Z.h.ONE_TO_ONE }],
+                    items: [{ conversation_type: t.type === S.CONVERSATION_TYPE.GROUP ? Z.i.GROUP : Z.i.ONE_TO_ONE }],
                   }
                 },
                 [t.type],
@@ -8132,12 +8127,12 @@
                   c = (null == s || null === (n = s.state) || void 0 === n ? void 0 : n.position) || 0,
                   u = {
                     conversation_type:
-                      (null == t ? void 0 : t.type) === S.CONVERSATION_TYPE.GROUP ? Z.h.GROUP : Z.h.ONE_TO_ONE,
+                      (null == t ? void 0 : t.type) === S.CONVERSATION_TYPE.GROUP ? Z.i.GROUP : Z.i.ONE_TO_ONE,
                     conversation_id: a,
                     conversation_participant_count: l,
                     position: c,
                     inbox_type: Object(M.i)(r),
-                    entry_point: Z.b.REQUEST_ACTION_SHEET,
+                    entry_point: Z.c.REQUEST_ACTION_SHEET,
                   }
                 d(!1), i({ conversationId: a }), g(o, u), x()
               },
@@ -8159,9 +8154,9 @@
                     (a(i),
                     l(r()(r()({}, c), {}, { action: 'accept' }), {
                       conversation_id: i,
-                      conversation_type: t.type === S.CONVERSATION_TYPE.GROUP ? Z.h.GROUP : Z.h.ONE_TO_ONE,
+                      conversation_type: t.type === S.CONVERSATION_TYPE.GROUP ? Z.i.GROUP : Z.i.ONE_TO_ONE,
                       conversation_participant_count: u,
-                      entry_point: Z.b.REQUEST_ACTION_SHEET,
+                      entry_point: Z.c.REQUEST_ACTION_SHEET,
                       inbox_type: Object(M.i)(o),
                       position: d,
                     }))
@@ -8369,48 +8364,54 @@
               v()(u()(i), '_render', function () {
                 var e,
                   t,
-                  n = i.props,
-                  a = n.conversation,
-                  r = n.conversationId,
-                  o = n.drawerHeader,
-                  s = n.inboxType,
-                  l = n.isWide,
-                  c = n.location,
-                  u = n.perspective,
-                  d = n.scribeNamespace,
-                  p = i.state,
-                  m = p.attachment,
-                  h = p.composerHeight
+                  n,
+                  a = i.props,
+                  r = a.conversation,
+                  o = a.conversationId,
+                  s = a.drawerHeader,
+                  l = a.inboxType,
+                  c = a.isWide,
+                  u = a.location,
+                  d = a.perspective,
+                  p = a.scribeNamespace,
+                  m = i.state,
+                  h = m.attachment,
+                  f = m.composerHeight
                 return y.a.createElement(
                   V.b,
-                  { key: r },
+                  { key: o },
                   y.a.createElement(
                     He.a,
-                    { allowDragDrop: !Je(m), onFilesAdded: i._handleDragDrop, style: re.a.dragDrop },
+                    { allowDragDrop: !Je(h), onFilesAdded: i._handleDragDrop, style: re.a.dragDrop },
                     y.a.createElement(
                       Ue.a,
                       {
                         style: [
                           re.a.scrollView,
-                          !Object(ne.a)() && !i._isUntrustedConversation(a) && { paddingBottom: h },
+                          !Object(ne.a)() && !i._isUntrustedConversation(r) && { paddingBottom: f },
                         ],
                       },
-                      u && a
+                      d &&
+                        r &&
+                        (null == u ||
+                          null === (e = u.state) ||
+                          void 0 === e ||
+                          !e.entryPoint ||
+                          i.state.hasLoadedSnapshot)
                         ? y.a.createElement(H.a, {
-                            conversation: a,
-                            drawerHeader: o,
-                            inboxType: s,
-                            isLoadingSnapshot: i.state.isLoadingSnapshot,
-                            isWide: l,
+                            conversation: r,
+                            drawerHeader: s,
+                            inboxType: l,
+                            isWide: c,
                             messageSearchEntryId:
-                              null == c || null === (e = c.state) || void 0 === e ? void 0 : e.entryPoint,
+                              null == u || null === (t = u.state) || void 0 === t ? void 0 : t.entryPoint,
                             onForwardRequest: i._handleForwardRequest,
                             onHistoryRequest:
-                              null != c && null !== (t = c.state) && void 0 !== t && t.entryPoint
+                              null != u && null !== (n = u.state) && void 0 !== n && n.entryPoint
                                 ? i._handleRelativeHistoryRequest
                                 : i._handleHistoryRequest,
-                            perspective: u,
-                            scribeNamespace: d,
+                            perspective: d,
+                            scribeNamespace: p,
                             shouldScrollToCenter: i.state.shouldScrollToCenter,
                             style: re.a.activity,
                           })
@@ -8456,19 +8457,13 @@
                 i._currentComposer && i._currentComposer.handleAddMediaFiles(e)
               }),
               v()(u()(i), '_handleForwardRequest', function () {
-                var e,
-                  t = i.props,
-                  n = t.conversation,
-                  a = t.conversationId,
-                  r = t.createLocalApiErrorHandler,
-                  o = t.fetchConversationFuture
+                var e = i.props,
+                  t = e.conversation,
+                  n = e.conversationId,
+                  a = e.createLocalApiErrorHandler,
+                  r = e.fetchConversationFuture
                 i.setState({ shouldScrollToCenter: !1 }),
-                  null != n &&
-                    null !== (e = n.searchCursors) &&
-                    void 0 !== e &&
-                    e.max_entry_id &&
-                    !i.state.isLoadingSnapshot &&
-                    o({ conversationId: a }).catch(r())
+                  null != t && t.max_search_entry_id && r({ conversationId: n }).catch(a())
               }),
               v()(u()(i), '_handleHistoryRequest', function () {
                 var e = i.props,
@@ -8527,7 +8522,7 @@
                     g(r()(r()({}, y), {}, { element: w, action: 'send_dm' }), {
                       conversation_id: u,
                       conversation_participant_count: R,
-                      conversation_type: k ? Z.h.GROUP : Z.h.ONE_TO_ONE,
+                      conversation_type: k ? Z.i.GROUP : Z.i.ONE_TO_ONE,
                     }),
                   i.setState({ isSending: !0 }),
                   u
@@ -8571,7 +8566,7 @@
                         g(r()(r()({}, y), {}, { element: w, action: 'send_dm' }), {
                           conversation_id: e,
                           conversation_participant_count: f ? f.length + 1 : 0,
-                          conversation_type: Z.h.GROUP,
+                          conversation_type: Z.i.GROUP,
                         }),
                           i.setState({ attachment: null, isSending: !1 }),
                           m.replace('/messages/'.concat(e))
@@ -8602,7 +8597,7 @@
               (i.state = {
                 attachment: Ze(e),
                 composerHeight: Ce.a.theme.componentDimensions.appBarHeight,
-                isLoadingSnapshot: !1,
+                hasLoadedSnapshot: !1,
                 isSending: !1,
                 shouldScrollToCenter: !1,
               }),
@@ -8742,7 +8737,7 @@
                     We.a,
                     { style: [re.a.root, we.b.isKaiOS() && re.a.kaiOSFix] },
                     y.a.createElement(z.a, {
-                      fetchStatus: this.state.isLoadingSnapshot ? w.a.LOADING : e,
+                      fetchStatus: e,
                       onRequestRetry: this._handleInitialFetch,
                       render: this._render,
                     }),
@@ -8813,37 +8808,30 @@
                 value: function (e) {
                   var t,
                     n,
-                    a,
-                    r,
-                    i = this,
-                    o = this.props,
-                    s = o.createLocalApiErrorHandler,
-                    l = o.fetchConversationHistoricalSnapshot,
-                    c = o.fetchConversationIfNeeded,
-                    u = o.location,
-                    d = o.updateConversationReadState
-                  return null != u && null !== (t = u.state) && void 0 !== t && t.entryPoint
-                    ? (this.setState({ isLoadingSnapshot: !0 }),
-                      l({
+                    a = this,
+                    r = this.props,
+                    i = r.createLocalApiErrorHandler,
+                    o = r.fetchConversationHistoricalSnapshot,
+                    s = r.fetchConversationIfNeeded,
+                    l = r.location,
+                    c = r.updateConversationReadState
+                  return null != l && null !== (t = l.state) && void 0 !== t && t.entryPoint
+                    ? (this.setState({ hasLoadedSnapshot: !1 }),
+                      o({
                         conversationId: e,
-                        entryId: null == u || null === (a = u.state) || void 0 === a ? void 0 : a.entryPoint,
+                        entryId: null == l || null === (n = l.state) || void 0 === n ? void 0 : n.entryPoint,
                       })
                         .then(function () {
-                          i.setState({ isLoadingSnapshot: !1, shouldScrollToCenter: !0 })
+                          a.setState({ hasLoadedSnapshot: !0, shouldScrollToCenter: !0 })
                         })
                         .catch(function (e) {
-                          return i.setState({ isLoadingSnapshot: !1 }), s(e)
+                          return a.setState({ hasLoadedSnapshot: !0 }), i(e)
                         }))
-                    : null != u && null !== (n = u.state) && void 0 !== n && n.isMessageItem
-                    ? l({
-                        conversationId: e,
-                        entryId: null == u || null === (r = u.state) || void 0 === r ? void 0 : r.entryPoint,
-                      })
-                    : c({ conversationId: e })
+                    : s({ conversationId: e })
                         .then(function () {
-                          return d(e)
+                          return c(e)
                         })
-                        .catch(s(Object(U.a)(e)))
+                        .catch(i(Object(U.a)(e)))
                 },
               },
               {
@@ -8977,20 +8965,20 @@
         },
         d = function (e) {
           var t = e.message_data,
-            n = s.d.UNKNOWN,
+            n = s.e.UNKNOWN,
             a = (t && t.attachment) || {}
           return (
             a.tweet
-              ? (n = s.d.TWEET)
+              ? (n = s.e.TWEET)
               : a.photo
-              ? (n = s.d.PHOTO)
+              ? (n = s.e.PHOTO)
               : a.animated_gif
-              ? (n = s.d.GIF)
+              ? (n = s.e.GIF)
               : a.video
-              ? (n = a.video.audio_only ? s.d.VOICE : s.d.VIDEO)
+              ? (n = a.video.audio_only ? s.e.VOICE : s.e.VIDEO)
               : a.card
-              ? (n = s.d.CARD)
-              : null != t && t.text && (n = s.d.TEXT),
+              ? (n = s.e.CARD)
+              : null != t && t.text && (n = s.e.TEXT),
             n
           )
         }
@@ -9000,7 +8988,7 @@
         })
       }
       function m(e) {
-        return e === o.d.SECONDARY ? s.c.REQUESTS : e === o.d.TERTIARY ? s.c.LOW_QUALITY : s.c.PRIMARY
+        return e === o.d.SECONDARY ? s.d.REQUESTS : e === o.d.TERTIARY ? s.d.LOW_QUALITY : s.d.PRIMARY
       }
       function h(e) {
         return e.isTrue('dm_voice_rendering_enabled')

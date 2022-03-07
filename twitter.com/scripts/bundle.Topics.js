@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [100],
+  [99],
   {
     '7mm0': function (e, t, n) {
       'use strict'
@@ -486,7 +486,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'TopicsPicker', function () {
-          return P
+          return O
         })
       n('jQ3i'), n('x4t0')
       var a = n('ERkP'),
@@ -542,16 +542,17 @@
         v = n('3XMw'),
         b = n.n(v),
         E = n('UZjl'),
-        T = b.a.d094c720,
-        _ = { page: 'topics_picker', section: 'main' },
-        y = function (e) {
+        T = n('FGLp'),
+        _ = b.a.d094c720,
+        y = { page: 'topics_picker', section: 'main' },
+        I = function (e) {
           return e ? 'twitter://topics/picker/'.concat(e) : 'twitter://topics/picker'
         },
-        I = function (e) {
+        N = function (e) {
           return { pathname: '/i/topics/picker/'.concat(e) }
         },
-        N = i.a.createElement(o.a, { withTopicsToFollow: !1 }),
-        P = function (e) {
+        P = i.a.createElement(o.a, { withTopicsToFollow: !1 }),
+        O = function (e) {
           var t = e.clearTimelineCache,
             n = e.history,
             a = e.isForwardNavigation,
@@ -559,29 +560,29 @@
             c = e.previousPath,
             s = e.selectedTabId
           return (
-            i.a.useEffect(function () {
+            Object(T.a)(function () {
               !a || (null != c && c.includes('/i/topics/picker')) || t(o)
             }),
             i.a.createElement(
               i.a.Fragment,
               null,
-              i.a.createElement(r.a, { deepLink: y(s) }),
+              i.a.createElement(r.a, { deepLink: I(s) }),
               i.a.createElement(E.a, {
                 backLocation: '/home',
-                getTabLink: I,
+                getTabLink: N,
                 history: n,
-                initialPageNamespace: _,
+                initialPageNamespace: y,
                 module: o,
                 selectedTabId: s,
-                sidebarContent: N,
+                sidebarContent: P,
                 timelinePrefix: 'topics-picker-',
-                title: T,
+                title: _,
               }),
             )
           )
         },
-        O = g(P)
-      t.default = O
+        w = g(O)
+      t.default = w
     },
     XsZp: function (e, t, n) {
       'use strict'

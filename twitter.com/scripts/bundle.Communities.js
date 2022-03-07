@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [44],
+  [43],
   {
     '0ULw': function (e, t, n) {
       'use strict'
@@ -3097,7 +3097,7 @@
           n('kYxP'),
           {
             loader: function () {
-              return n.e(201).then(n.bind(null, 'V5fj'))
+              return n.e(200).then(n.bind(null, 'V5fj'))
             },
             loaderKey: 'communityDefaultLoader',
             strategy: n('XBtf').a.Critical,
@@ -6190,7 +6190,7 @@
     UZ0O: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return E
+        return F
       })
       var a = n('KEM+'),
         l = n.n(a),
@@ -6201,15 +6201,17 @@
         s = n('ERkP'),
         u = n.n(s),
         m = n('v6aA'),
-        d = n('rHpw'),
-        y = n('xvzJ'),
-        p = (n('2G9S'), n('CxAY')),
-        g = n('rxPX'),
-        f = function (e, t) {
-          return t.communityId && t.userId ? p.b.select(e, ''.concat(t.communityId, '_').concat(t.userId)) : void 0
+        d = n('3XMw'),
+        y = n.n(d),
+        p = n('rHpw'),
+        g = n('xvzJ'),
+        f = (n('2G9S'), n('CxAY')),
+        b = n('rxPX'),
+        h = function (e, t) {
+          return t.communityId && t.userId ? f.b.select(e, ''.concat(t.communityId, '_').concat(t.userId)) : void 0
         }
-      var b = Object(g.a)().propsFromState(function () {
-          return { userCommunityRoleRelationship: f }
+      var _ = Object(b.a)().propsFromState(function () {
+          return { userCommunityRoleRelationship: h }
         })(function (e) {
           var t = e.communityId,
             n = e.onCommunityRoleChange,
@@ -6229,88 +6231,89 @@
             i = a.user,
             o = i.id,
             c = i.screen_name
-          return u.a.createElement(y.a, { communityId: t, communityRole: r, recordId: o, screenName: c, userId: l })
+          return u.a.createElement(g.a, { communityId: t, communityRole: r, recordId: o, screenName: c, userId: l })
         }),
-        h = n('4e/K'),
-        _ = n('Ig1G'),
-        v = n('GZwR'),
-        k = [v.a.CommunityMembers]
-      function E(e) {
+        v = n('4e/K'),
+        k = n('Ig1G'),
+        E = n('GZwR'),
+        C = y.a.cf4898a0,
+        S = [E.a.CommunityMembers]
+      function F(e) {
         var t = u.a.useContext(m.a).featureSwitches.isTrue('c9s_members_list_search_enabled'),
           n = e.community,
           a = e.communityId,
           r = e.onIsSearchingChange,
-          o = (null == n ? void 0 : n.role) === _.a.Admin,
+          o = (null == n ? void 0 : n.role) === k.a.Admin,
           s = u.a.useState(!1),
           d = c()(s, 2),
           y = d[0],
           p = d[1],
           g = u.a.useState(''),
           f = c()(g, 2),
-          E = f[0],
-          S = f[1],
+          b = f[0],
+          h = f[1],
           F = u.a.useState({}),
-          I = c()(F, 2),
-          w = I[0],
-          T = I[1],
-          K = u.a.useCallback(
+          w = c()(F, 2),
+          T = w[0],
+          K = w[1],
+          M = u.a.useCallback(
             function (e, t) {
-              T(function (n) {
+              K(function (n) {
                 return i()(i()({}, n), {}, l()({}, e, t))
               })
             },
-            [T],
+            [K],
           ),
-          M = u.a.useCallback(
+          R = u.a.useCallback(
             function () {
               p(!0), r(!0)
             },
             [r],
           ),
-          R = u.a.useCallback(
+          L = u.a.useCallback(
             function (e) {
-              S(e)
+              h(e)
               var t = !!e
               r(t), p(t)
             },
             [r],
           ),
-          L = u.a.useCallback(
+          x = u.a.useCallback(
             function () {
-              E || (r(!1), p(!1))
+              b || (r(!1), p(!1))
             },
-            [r, E],
+            [r, b],
           )
         if (!a) return null
         return t && o
-          ? u.a.createElement(h.default, {
+          ? u.a.createElement(v.default, {
               alwaysOpen: y,
               communityId: a,
-              filter: k,
+              filter: S,
               getUserDisplayNameLabel: function (e) {
                 if ('user' === e.type) {
                   var t = e.data.id_str,
-                    n = w[t]
-                  if (n) return Object(_.d)(n.role)
+                    n = T[t]
+                  if (n) return Object(k.d)(n.role)
                 }
               },
-              inputStyle: C.textInput,
+              inputStyle: I.textInput,
               isModal: !0,
-              onDismiss: L,
-              onFocus: M,
-              onQueryChange: R,
-              placeholder: 'Search for members',
+              onDismiss: x,
+              onFocus: R,
+              onQueryChange: L,
+              placeholder: C,
               renderUserDecoration: function (e) {
                 var t = e.userId
-                return u.a.createElement(b, { communityId: a, onCommunityRoleChange: K, userId: t })
+                return u.a.createElement(_, { communityId: a, onCommunityRoleChange: M, userId: t })
               },
               rounded: !0,
-              source: v.d.CommunityMemberSearch,
-              style: C.input,
+              source: E.d.CommunityMemberSearch,
+              style: I.input,
             })
           : null
       }
-      var C = d.a.create(function (e) {
+      var I = p.a.create(function (e) {
         return {
           input: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space8 },
           textInput: { marginBottom: e.spaces.space8 },
@@ -12251,7 +12254,7 @@
         v = (n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('zb92')),
         k = Object(v.a)({
           loader: function () {
-            return Promise.all([n.e(0), n.e(3), n.e(4), n.e(178)]).then(n.bind(null, 'P68U'))
+            return Promise.all([n.e(0), n.e(3), n.e(4), n.e(177)]).then(n.bind(null, 'P68U'))
           },
         }),
         E = n('eyty'),

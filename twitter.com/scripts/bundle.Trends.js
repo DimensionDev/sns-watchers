@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [101],
+  [100],
   {
     '+Bsv': function (t, e, n) {
       'use strict'
@@ -53,10 +53,10 @@
           return v
         }),
         n.d(e, 'e', function () {
-          return g
+          return m
         }),
         n.d(e, 'g', function () {
-          return m
+          return g
         })
       var r = n('yiKp'),
         a = n.n(r),
@@ -166,10 +166,10 @@
         v = Object(o.a)(function (t) {
           return b({ featureSwitches: t, contentType: s.Trends })
         }),
-        g = Object(o.a)(function (t) {
+        m = Object(o.a)(function (t) {
           return b({ featureSwitches: t, displayLocation: l.WebSidebar })
         }),
-        m = function () {
+        g = function () {
           return function (t, e) {
             return t(
               Object(u.t)(e())
@@ -193,7 +193,7 @@
           o = void 0 !== i && i
         return r.e({
           loader: function () {
-            return n.e(244).then(n.bind(null, '+92Z'))
+            return n.e(243).then(n.bind(null, '+92Z'))
           },
           loaderKey: 'trendDefaultLoader',
           loaderOptions: { withThirdPartyCards: o, errorContext: e },
@@ -225,8 +225,8 @@
           d()(r, b.b.TimelineCursor, Object(f.a)({})),
           d()(r, b.b.Trend, Object(E.a)({ withThirdPartyCards: !0, errorContext: 'TRENDS_SCREEN' })),
           r),
-        g = s()(s()({}, Object(p.a)({})), v),
-        m = n('BxsD'),
+        m = s()(s()({}, Object(p.a)({})), v),
+        g = n('BxsD'),
         y = n('dwig'),
         h = n('0+qk'),
         w = n('3XMw'),
@@ -236,16 +236,16 @@
         O = n('fTQJ'),
         x = n('+Bsv'),
         P = n('VS6U'),
-        j = n('FIs5'),
-        R = n('mw9i'),
-        S = n('7JQg'),
+        j = n('Irs7'),
+        R = n('FIs5'),
+        S = n('mw9i'),
         k = T.a.c5f4befa,
         I = T.a.ae05f268,
         L = function () {
           return i.a.createElement(C.a, null)
         },
         B = function () {
-          return i.a.createElement(j.a, { message: I })
+          return i.a.createElement(R.a, { message: I })
         },
         X = function (t) {
           var e = t.history,
@@ -260,10 +260,10 @@
               history: e,
               primaryContent: i.a.createElement(
                 y.a,
-                { component: R.a, fab: r },
+                { component: S.a, fab: r },
                 i.a.createElement(O.a, {
-                  entryConfiguration: g,
-                  module: Object(m.f)(n),
+                  entryConfiguration: m,
+                  module: Object(g.f)(n),
                   renderEmptyState: L,
                   renderUnavailable: B,
                   title: k,
@@ -275,7 +275,7 @@
             }),
           )
         }
-      e.default = Object(S.a)({ page: 'guide', section: 'all_trends' })(X)
+      e.default = Object(j.a)(X, { page: 'guide', section: 'all_trends' })
     },
   },
 ])

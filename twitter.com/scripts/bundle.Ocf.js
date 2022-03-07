@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [77, 178],
+  [76, 177],
   {
     '0ULw': function (e, t, a) {
       'use strict'
@@ -1495,7 +1495,7 @@
           return { email: e, identifier: t, phone: a, pinCode: n }
         }),
         x = { verificationLink: f.A },
-        S = Object(k.g)(I, x),
+        S = Object(k.f)(I, x),
         T = a('kGix'),
         F = a('v//M'),
         O = a('3XMw'),
@@ -4427,7 +4427,7 @@
           scribeAction: ht.c,
           syncContacts: mt.y,
         },
-        jt = Object(ft.g)(Vt, Mt),
+        jt = Object(ft.f)(Vt, Mt),
         Ut = a('3XMw'),
         zt = a.n(Ut),
         Ht = a('lUZE'),
@@ -4630,7 +4630,7 @@
           getVerificationStatus: mt.f,
           verifyIdentifier: mt.B,
         },
-        Qt = Object(ft.g)(Jt, Zt),
+        Qt = Object(ft.f)(Jt, Zt),
         $t = a('p+r5'),
         ea = a('k49u'),
         ta = a('OIs+'),
@@ -7102,7 +7102,7 @@
           return { loggedInUser: e, navigationContext: a, isUsernameValid: t.valid, validationError: t.desc }
         }),
         Un = { fetchUsernameAvailability: Mn.b },
-        zn = Object(ft.g)(jn, Un),
+        zn = Object(ft.f)(jn, Un),
         Hn = a('EweD'),
         Wn = zt.a.d1f6d336,
         Gn = (function (e) {
@@ -8004,7 +8004,7 @@
           loadPushPromptSettingsIfNeeded: Dr.loadPushPromptSettingsIfNeeded,
           pushSubscribe: Dr.pushSubscribe,
         },
-        Lr = Object(ft.g)(Br, Rr),
+        Lr = Object(ft.f)(Br, Rr),
         Vr = a('5pef')
       function Mr(e, t) {
         e.granted_link.label ||
@@ -8177,7 +8177,7 @@
           ),
           verifyIdentifier: mt.B,
         },
-        qr = Object(ft.g)(Wr, Gr),
+        qr = Object(ft.f)(Wr, Gr),
         Kr = 'normalized_phone',
         Yr = (function (e) {
           m()(a, e)
@@ -8702,7 +8702,7 @@
           },
         ),
         ci = { addAvatarMedia: si.a, removeAvatarMedia: si.d },
-        ui = Object(ft.g)(li, ci),
+        ui = Object(ft.f)(li, ci),
         di = a('fS8x'),
         pi = a('P68U'),
         hi = a('eyty'),
@@ -8886,7 +8886,7 @@
           },
         ),
         yi = { addBannerMedia: si.b, removeBannerMedia: si.e },
-        wi = Object(ft.g)(ki, yi),
+        wi = Object(ft.f)(ki, yi),
         Ci = 'ocfSelectBannerSkipForNowButton',
         Ei = a('9Xij'),
         Ii = a('U+bB'),
@@ -9579,7 +9579,7 @@
           }
         }),
         Wi = function () {
-          return a.e(354).then(a.t.bind(null, 'OHEV', 7))
+          return a.e(353).then(a.t.bind(null, 'OHEV', 7))
         }
       function Gi(e) {
         var t = e.errorDialog,
@@ -9669,7 +9669,7 @@
           scribeAction: ht.c,
           syncPersonalizationSettings: Ki.syncSettings,
         },
-        Ji = Object(ft.g)(Yi, Xi),
+        Ji = Object(ft.f)(Yi, Xi),
         Zi = ['callback', 'defaultValue', 'label'],
         Qi = zt.a.d44efc66,
         $i = zt.a.b4867a17,

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [60],
+  [59],
   {
     EP6G: function (e, t, a) {
       'use strict'
@@ -678,7 +678,7 @@
           ),
           updateSettings: p.N,
         },
-        _ = Object(S.g)(function () {
+        _ = Object(S.f)(function () {
           return {}
         }, b),
         E = a('3XMw'),

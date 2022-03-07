@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [125],
+    [124],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -23,7 +23,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(307).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(306).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -673,10 +673,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g2fd3205', 'People'),
           a('fb3c8e74', 'Recent searches'),
           a('ffd9cfe6', 'See more'),
+          a('i9028824', 'Loading'),
           a('e5b0063d', function (e) {
             return 'Timeline: ' + e.title
           }),
-          a('i9028824', 'Loading'),
           a('cb367657', 'Conversation failed to pin. Try again.'),
           a('ie9a7e48', 'Conversation failed to pin. Check your connection and try again.'),
           a('hd3927c6', 'Conversation failed to unpin. Try again.'),
@@ -1353,6 +1353,34 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b2e94283', function (e) {
             return 'via @' + e.viaScreenName
           }),
+          a('e070024a', 'Edit photo'),
+          a('i7d24b36', 'Next image'),
+          a('f96a38a2', 'Previous image'),
+          a('hac7c548', 'Crop media'),
+          a('e3dbfba3', 'Edit image description'),
+          a('dd4a83a5', 'Content warning'),
+          a('ffe9ec3a', 'Add descriptions'),
+          a(
+            'j063b261',
+            'You can add a description, sometimes called alt-text, to your photos so they’re accessible to even more people, including people who are blind or have low vision. Good descriptions are concise, but present what’s in your photos accurately enough to understand their context.',
+          ),
+          a('e57144f0', 'Sure'),
+          a('feabf2a0', 'Alt text'),
+          a('e36287c6', 'Description'),
+          a('cf565d08', 'What is alt text?'),
+          a('j9cf595f', 'Put a content warning on this Tweet'),
+          a(
+            'd69a782e',
+            'Select a category, and we’ll put a content warning on this Tweet. This helps people avoid content they don’t want to see.',
+          ),
+          a('faf745f9', 'Nudity'),
+          a('h2437f25', 'Sensitive'),
+          a('cd5cba97', function (e) {
+            return 'Content warning: ' + e.formattedWarningList
+          }),
+          a('ceabed1a', 'The Tweet author flagged this Tweet as showing sensitive content.'),
+          a('a0e81a2e', 'Show'),
+          a('f1d9930c', 'Hide'),
           a('cb7c0987', 'Why did you get this?'),
           a(
             'de3bcf27',
@@ -1964,6 +1992,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j538604d', 'Tweet your Community'),
           a('dc6ce7b4', 'Members'),
           a('ga2aa43c', 'Moderators'),
+          a('cf4898a0', 'Search for people'),
           a('g30bc699', function (e) {
             return 'View @' + e.screenName + ' profile'
           }),
@@ -2118,7 +2147,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c8677445', 'Delete rule'),
           a('c3a0d44e', 'Cancel and edit rule instead'),
           a('dfddd842', 'Sent via Direct Message'),
-          a('cf4898a0', 'Search for people'),
           a('a3b3939a', function (e) {
             return '@' + e.screen_name + ' has already been invited'
           }),
@@ -2167,7 +2195,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ic7db4ea', 'System gremlins won’t allow that right now. Please try again later.'),
           a('dffb0774', 'Nothing to review right now'),
           a('cbb2a93c', 'Moderators have taken care of all reported Tweets.'),
-          a('f1d9930c', 'Hide'),
           a('fa524057', 'Keep'),
           a('f0306107', 'Report Tweet to Twitter'),
           a('ff0f7429', function (e) {
@@ -2233,33 +2260,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f842d5d4', 'Discard unsent Tweet'),
           a('b3a7362d', 'This can’t be undone and you’ll lose your draft Tweet.'),
           a('g3472106', 'Something went wrong, and the unsent Tweet wasn’t deleted.'),
-          a('e070024a', 'Edit photo'),
-          a('i7d24b36', 'Next image'),
-          a('f96a38a2', 'Previous image'),
-          a('hac7c548', 'Crop media'),
-          a('e3dbfba3', 'Edit image description'),
-          a('dd4a83a5', 'Content warning'),
-          a('ffe9ec3a', 'Add descriptions'),
-          a(
-            'j063b261',
-            'You can add a description, sometimes called alt-text, to your photos so they’re accessible to even more people, including people who are blind or have low vision. Good descriptions are concise, but present what’s in your photos accurately enough to understand their context.',
-          ),
-          a('e57144f0', 'Sure'),
-          a('feabf2a0', 'Alt text'),
-          a('e36287c6', 'Description'),
-          a('cf565d08', 'What is alt text?'),
-          a('j9cf595f', 'Put a content warning on this Tweet'),
-          a(
-            'd69a782e',
-            'Select a category, and we’ll put a content warning on this Tweet. This helps people avoid content they don’t want to see.',
-          ),
-          a('faf745f9', 'Nudity'),
-          a('h2437f25', 'Sensitive'),
-          a('cd5cba97', function (e) {
-            return 'Content warning: ' + e.formattedWarningList
-          }),
-          a('ceabed1a', 'The Tweet author flagged this Tweet as showing sensitive content.'),
-          a('a0e81a2e', 'Show'),
           a('c91f83ae', 'Edit video'),
           a('icbec4ae', 'Upload captions'),
           a('e7048e73', 'Trim media'),
@@ -2325,6 +2325,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h1abfbcd', 'Connected accounts'),
           a('cad53943', 'Privacy and safety'),
           a('e908903a', 'Audience and tagging'),
+          a('f5e59e90', 'Protect your Tweets'),
           a('f56d108e', 'Photo tagging'),
           a('b38d81ae', 'Your Tweets'),
           a('f2bd9c47', 'Content you see'),
@@ -2346,6 +2347,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('gaac7109', 'Report Center'),
           a('bcd81cab', 'Preferences'),
           a('i647fb03', 'Filters'),
+          a('e75f25a8', 'Email notifications'),
           a('cf9b1669', 'Accessibility, display, and languages'),
           a('a776eed7', 'Autoplay'),
           a('d495680d', 'Languages'),
@@ -3366,7 +3368,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'When you turn on Tweet notifications from people you follow, you’ll get push notifications about their Tweets or live videos.',
           ),
           a('b68050dc', 'View users'),
-          a('e75f25a8', 'Email notifications'),
           a('b2c4ab0a', 'Related to you and your Tweets'),
           a('ic2ea6b5', 'From Twitter'),
           a('f823bbbe', 'For Verified Accounts only'),
@@ -3522,9 +3523,9 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'fbf0e61d',
             'If you haven’t already specified a gender, this is the one associated with your account based on your profile and activity. This information won’t be displayed publicly.',
           ),
-          a('de32365f', 'Female'),
-          a('b6ab31bd', 'Male')
-        a('b4568a3a', 'Add your gender'),
+          a('de32365f', 'Female')
+        a('b6ab31bd', 'Male'),
+          a('b4568a3a', 'Add your gender'),
           a('c0be743d', 'Gender updated'),
           a('b7cb74e0', 'This is the gender that Twitter has most strongly associated with you.'),
           a('cdb0d3e6', 'Do not use this gender for personalization.'),
@@ -3878,7 +3879,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ddcd3d26', 'Loading session data'),
           a('d2f0f3fd', 'We can not find this session'),
           a('bab1f8b0', 'Tweets'),
-          a('f5e59e90', 'Protect your Tweets'),
           a(
             'i0310b4e',
             'Only show your Tweets to people who follow you. If selected, you will need to approve each new follower.',

@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [114],
+  [113],
   {
     '+wNI': function (e, t, a) {
       'use strict'
@@ -900,7 +900,7 @@
           fetchTwitterArticlesIfNeeded: d.a.fetchIfNeeded,
           scribeAction: u.c,
         },
-        w = Object(p.g)(y, v),
+        w = Object(p.f)(y, v),
         E = a('txMZ'),
         k = a('yiKp'),
         S = a.n(k),
@@ -1221,8 +1221,8 @@
                       data: {
                         conversation_id: e,
                         conversation_participant_count: 2,
-                        conversation_type: Le.h.ONE_TO_ONE,
-                        inbox_type: Le.c.NOT_AVAILABLE,
+                        conversation_type: Le.i.ONE_TO_ONE,
+                        inbox_type: Le.d.NOT_AVAILABLE,
                       },
                     }),
                       t.push('/messages/'.concat(e))
@@ -2879,16 +2879,16 @@
         yr = X.a.d834ab9c,
         vr = { section: 'profile_interstitial' },
         wr = Object(In.a)(function () {
-          return Promise.all([a.e(0), a.e(114)]).then(a.bind(null, '8KtR'))
+          return Promise.all([a.e(0), a.e(113)]).then(a.bind(null, '8KtR'))
         }),
         Er = Object(In.a)(function () {
-          return Promise.all([a.e(0), a.e(114)]).then(a.bind(null, 'cFl3'))
+          return Promise.all([a.e(0), a.e(113)]).then(a.bind(null, 'cFl3'))
         }),
         kr = Object(In.a)(function () {
-          return Promise.all([a.e(0), a.e(114)]).then(a.bind(null, 'ivpD'))
+          return Promise.all([a.e(0), a.e(113)]).then(a.bind(null, 'ivpD'))
         }),
         Sr = Object(In.a)(function () {
-          return Promise.all([a.e(0), a.e(114)]).then(a.bind(null, 'ylAD'))
+          return Promise.all([a.e(0), a.e(113)]).then(a.bind(null, 'ylAD'))
         }),
         Fr = 'about',
         Cr = 'likes',

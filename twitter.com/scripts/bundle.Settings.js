@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [88],
+  [87],
   {
     '3JAx': function (e, t, n) {
       'use strict'
@@ -258,7 +258,7 @@
           scribePageImpression: v.d,
           updateVideoAutoplay: C.i,
         },
-        I = Object(_.g)(k, x),
+        I = Object(_.f)(k, x),
         A = n('45mF'),
         O = n('3XMw'),
         D = n.n(O),
@@ -2765,7 +2765,7 @@
           patchUser: S.e.patchUser,
           updateSettings: y.N,
         },
-        I = Object(C.g)(k, x),
+        I = Object(C.f)(k, x),
         A = n('v//M'),
         O = n('3XMw'),
         D = n.n(O),
