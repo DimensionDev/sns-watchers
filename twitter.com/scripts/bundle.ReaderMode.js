@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [82, 207],
+  [84, 209],
   {
     HQ0t: function (e, t, n) {
       'use strict'
@@ -154,10 +154,10 @@
         x = n('yiKp'),
         H = n.n(x),
         R = n('Lsrn'),
-        T = n('k/Ka'),
-        S = function () {
+        S = n('k/Ka'),
+        T = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(T.a)(
+          return Object(S.a)(
             'svg',
             H()(
               H()({}, e),
@@ -177,15 +177,15 @@
             ),
           )
         }
-      S.metadata = { width: 24, height: 24 }
-      var L = S,
+      T.metadata = { width: 24, height: 24 }
+      var L = T,
         I = n('hACr'),
         M = n('lOQR'),
         B = n('yoO3'),
-        A = n('wiP2'),
-        N = n('MWbm'),
-        D = n('rHpw'),
-        F = n('I4+6'),
+        F = n('wiP2'),
+        A = n('MWbm'),
+        N = n('rHpw'),
+        D = n('I4+6'),
         z = n('fyKl'),
         j = n('CKsB'),
         U = n('cm6r'),
@@ -199,7 +199,7 @@
         J = n('2lds'),
         X = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
-          return Object(T.a)(
+          return Object(S.a)(
             'svg',
             H()(
               H()({}, e),
@@ -231,13 +231,13 @@
         re = O.a.f1252ac7,
         ie = O.a.daa0da04,
         ce = O.a.ba5256b1,
-        le = D.a.isDarkMode() ? D.a.theme.colors.gray50 : D.a.theme.colors.gray0,
+        le = N.a.isDarkMode() ? N.a.theme.colors.gray50 : N.a.theme.colors.gray0,
         se = 'body',
         de = 'headline1',
         ue = 'title3',
-        me = F.a.generate({
-          backgroundColor: D.a.theme.colors.primary,
-          color: D.a.theme.colors.cellBackground,
+        me = D.a.generate({
+          backgroundColor: N.a.theme.colors.primary,
+          color: N.a.theme.colors.cellBackground,
           customFocusBackgroundColor: le,
           customHoverBackgroundColor: le,
           customPressedBackgroundColor: le,
@@ -300,10 +300,10 @@
             R = function (e) {
               return e === u
             },
-            T = function () {
-              return i.a.createElement(N.a, { style: he.emptyIconSpacer })
-            },
             S = function () {
+              return i.a.createElement(A.a, { style: he.emptyIconSpacer })
+            },
+            T = function () {
               return v
                 ? i.a.createElement(
                     z.default,
@@ -313,9 +313,9 @@
                       preferredHorizontalOrientation: 'right',
                       preferredVerticalOrientation: 'up',
                     },
-                    i.a.createElement(j.a, { Icon: R(se) ? Q.a : T, actionText: ie, onClick: x(se) }),
-                    i.a.createElement(j.a, { Icon: R(de) ? Q.a : T, actionText: re, onClick: x(de) }),
-                    i.a.createElement(j.a, { Icon: R(ue) ? Q.a : T, actionText: oe, onClick: x(ue) }),
+                    i.a.createElement(j.a, { Icon: R(se) ? Q.a : S, actionText: ie, onClick: x(se) }),
+                    i.a.createElement(j.a, { Icon: R(de) ? Q.a : S, actionText: re, onClick: x(de) }),
+                    i.a.createElement(j.a, { Icon: R(ue) ? Q.a : S, actionText: oe, onClick: x(ue) }),
                   )
                 : null
             },
@@ -325,10 +325,10 @@
                 : i.a.createElement(J.a, { style: n ? he.iconMobile : he.icon })
             }
           return i.a.createElement(
-            N.a,
+            A.a,
             { style: [he.actionBarWrapper, n ? he.actionBarWrapperMobile : void 0] },
             i.a.createElement(
-              N.a,
+              A.a,
               {
                 onClick: function (e) {
                   e.stopPropagation()
@@ -336,7 +336,7 @@
                 style: n ? he.outerContainer : void 0,
               },
               i.a.createElement(
-                N.a,
+                A.a,
                 { style: n ? (m ? he.actionBarMobile : void 0) : he.actionBar },
                 n
                   ? m
@@ -359,14 +359,14 @@
                           { accessibilityLabel: ce, interactiveStyles: me, onPress: k, style: he.actionItem },
                           i.a.createElement(Z, { style: n ? he.iconMobile : he.icon }),
                         ),
-                        S(),
+                        T(),
                       )
                     : null
                   : i.a.createElement(
                       i.a.Fragment,
                       null,
                       i.a.createElement(
-                        N.a,
+                        A.a,
                         { style: he.buttonContainer },
                         i.a.createElement(W.a, {
                           icon: i.a.createElement(Y.a, { style: n ? he.iconMobile : he.icon }),
@@ -379,20 +379,20 @@
                             i.a.Fragment,
                             null,
                             i.a.createElement(
-                              N.a,
+                              A.a,
                               { style: he.buttonContainer },
                               i.a.createElement(W.a, { icon: L(), onClick: E, type: 'brandText' }),
                               H(),
                             ),
                             i.a.createElement(
-                              N.a,
+                              A.a,
                               null,
                               i.a.createElement(W.a, {
                                 icon: i.a.createElement(Z, { style: n ? he.iconMobile : he.icon }),
                                 onClick: k,
                                 type: 'brandText',
                               }),
-                              S(),
+                              T(),
                             ),
                           )
                         : null,
@@ -401,7 +401,7 @@
             ),
           )
         },
-        he = D.a.create(function (e) {
+        he = N.a.create(function (e) {
           return {
             actionBarWrapper: { backfaceVisibility: 'hidden', height: '100%', width: '100%', left: 0, bottom: 0 },
             actionBarWrapperMobile: { height: 0, position: 'fixed' },
@@ -475,7 +475,7 @@
             return t && t.content && !!t.content.id && t.content.id === e
           }
         },
-        Te = we(function (e) {
+        Se = we(function (e) {
           var t = e.focalTweetId,
             n = e.module,
             a = e.moduleInitialFetchStatus,
@@ -514,15 +514,15 @@
             title: He,
           })
         }),
-        Se = n('Rp9C'),
+        Te = n('Rp9C'),
         Le = n('7JQg'),
         Ie = n('N5qz'),
         Me = n('Es6L'),
         Be = n('HQ0t'),
-        Ae = n('k89r'),
-        Ne = n('aITJ'),
-        De = n('cHvH'),
-        Fe = n('oQhu'),
+        Fe = n('k89r'),
+        Ae = n('aITJ'),
+        Ne = n('cHvH'),
+        De = n('oQhu'),
         ze = n('fs1G'),
         je = O.a.b59d8d10,
         Ue = O.a.h5d6c720,
@@ -530,13 +530,13 @@
         We = O.a.c299a6cf,
         Ke = O.a.i9a4ca8a,
         Ve = { page: 'thread', section: 'reader_mode' },
-        qe = Object(Fe.a)(function (e, t, n) {
+        qe = Object(De.a)(function (e, t, n) {
           return Object(k.a)({ focalTweetId: e, fetchOptions: t, featureSwitches: n, timelineIdPrefix: 'reader' })
         }),
-        Qe = Object(Fe.a)(function (e, t) {
-          var n = (t ? Se.a.getUserItem(t) : {}).is_viewer_follows_user,
+        Qe = Object(De.a)(function (e, t) {
+          var n = (t ? Te.a.getUserItem(t) : {}).is_viewer_follows_user,
             a = void 0 !== n && n
-          return { items: [Se.a.forThread(e, a)], tweet_id: e }
+          return { items: [Te.a.forThread(e, a)], tweet_id: e }
         }),
         Ge = function (e) {
           var t = e.addToast,
@@ -553,7 +553,7 @@
             b = e.unbookmark,
             g = e.user,
             w = i.a.useContext(c.a).featureSwitches,
-            v = Object(Ae.a)(),
+            v = Object(Fe.a)(),
             y = i.a.useState('headline1'),
             E = o()(y, 2),
             k = E[0],
@@ -600,13 +600,13 @@
             R = function (e) {
               e.stopPropagation()
             },
-            T = i.a.useCallback(
+            S = i.a.useCallback(
               function () {
                 return !(!h || !n) && h.toLowerCase() !== n.toLowerCase()
               },
               [n, h],
             ),
-            S = i.a.useCallback(
+            T = i.a.useCallback(
               function () {
                 var e = n && s ? '/'.concat(n, '/thread/').concat(s) : '/'
                 d.replace({ pathname: e, query: m.query, state: m.state })
@@ -620,18 +620,18 @@
                 page: 'thread',
                 section: 'reader_mode',
               }),
-                d.push({ pathname: D(), query: m.query, state: m.state })
+                d.push({ pathname: N(), query: m.query, state: m.state })
             },
-            D = function () {
+            N = function () {
               return n && s ? '/'.concat(n, '/status/').concat(s) : '/'
             }
           i.a.useEffect(
             function () {
-              s && n && T() && S()
+              s && n && S() && T()
             },
-            [n, s, S, T],
+            [n, s, T, S],
           )
-          var F = function () {
+          var D = function () {
               d.push({ pathname: '/i/bookmarks/add/', state: { tweet_id: s } })
             },
             z = function () {
@@ -659,7 +659,7 @@
                 isBookmarked: u,
                 isMobileLayout: e,
                 onAddBookmark: z,
-                onAddBookmarkFolder: F,
+                onAddBookmarkFolder: D,
                 onClose: H,
                 onFontSizeChange: _,
                 onRemoveBookmark: j,
@@ -673,7 +673,7 @@
               return i.a.createElement(
                 i.a.Fragment,
                 null,
-                i.a.createElement(A.a.Configure, {
+                i.a.createElement(F.a.Configure, {
                   onBackClick: H,
                   rightControl: V(),
                   sideNav: U(n),
@@ -692,15 +692,15 @@
                       return (
                         e && a ? (n = Je.containerOneCol) : e && (n = Je.containerOneColSmall),
                         i.a.createElement(
-                          N.a,
+                          A.a,
                           { style: [Je.root, e ? Je.rootMobile : void 0] },
                           i.a.createElement(
-                            N.a,
+                            A.a,
                             { onClick: R, style: [Je.container, n] },
                             i.a.createElement(
-                              N.a,
+                              A.a,
                               { style: Je.innerWrapper },
-                              i.a.createElement(Te, {
+                              i.a.createElement(Se, {
                                 focalTweetId: s,
                                 module: qe(s, { isReaderMode: !0 }, w),
                                 rootTweetId: p,
@@ -727,20 +727,20 @@
               return M.a.openApp('twitter://thread/'.concat(s))
             },
             V = function () {
-              var e = Ne.b.isMobileOS()
+              var e = Ae.b.isMobileOS()
               return i.a.createElement(
-                N.a,
+                A.a,
                 { style: Je.mobileAppBarRightControl },
                 e ? i.a.createElement(W.a, { onClick: K }, Pe) : null,
                 i.a.createElement(W.a, { accessibilityLabel: Ke, icon: Xe, onClick: L, type: 'brandText' }),
               )
             }
-          return i.a.createElement(De.a, null, function (e) {
+          return i.a.createElement(Ne.a, null, function (e) {
             var t = e.windowWidth
             return P(t)
           })
         },
-        Je = D.a.create(function (e) {
+        Je = N.a.create(function (e) {
           return {
             actionItem: {
               alignItems: 'center',
@@ -782,7 +782,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'default', function () {
-          return N
+          return A
         })
       var a = n('97Jx'),
         o = n.n(a),
@@ -810,13 +810,13 @@
         x = n('lHOd'),
         H = n('Oe3h'),
         R = n('0FVZ'),
-        T = n('7N4s'),
-        S = n('cHvH'),
+        S = n('7N4s'),
+        T = n('cHvH'),
         L = n('rHpw'),
         I = n('i4Oy'),
         M = n('shC7'),
         B = n('MWbm'),
-        A = L.a.create(function (e) {
+        F = L.a.create(function (e) {
           return {
             rootNarrow: { maxWidth: '75%' },
             rootWide: { maxWidth: 'calc('.concat(e.spaces.space64, ' * 6)') },
@@ -834,7 +834,7 @@
             contentFixed: { position: 'fixed', overflowY: 'auto', overscrollBehavior: 'contain' },
           }
         }),
-        N = (function (e) {
+        A = (function (e) {
           m()(n, e)
           var t = h()(n)
           function n(e, a) {
@@ -920,10 +920,10 @@
                         return !t || ('left' !== a && n) ? 'right' : 'left'
                       })({ horizontalPreference: O, canOrientLeft: y, canOrientRight: k }),
                     R = o.props.isFixed ? p : g,
-                    T = o.props.isFixed ? h : v,
-                    S = 'up' === x ? T + m - e : T,
+                    S = o.props.isFixed ? h : v,
+                    T = 'up' === x ? S + m - e : S,
                     L = 'left' === H ? s - R - f - b : s - R - t - b
-                  o.setState({ top: Math.max(S, 0), right: L, verticalOrientation: x, horizontalOrientation: H })
+                  o.setState({ top: Math.max(T, 0), right: L, verticalOrientation: x, horizontalOrientation: H })
                 }
               }),
               (o.state = Object.freeze({})),
@@ -956,75 +956,77 @@
                     r = t.children,
                     i = t.isFixed,
                     c = t.onDismiss,
-                    l = t.withKeyboardNavigation,
-                    s = this.state,
-                    d = s.right,
-                    u = s.top,
-                    m = s.verticalOrientation,
-                    p = void 0 === u,
-                    h = 'calc(100vh - '.concat(u || 0, 'px)'),
-                    f = [
-                      A.content,
-                      p && A.contentInitialRender,
-                      i && [A.contentFixed, { maxHeight: h }],
+                    l = t.preventFocusShift,
+                    s = t.withKeyboardNavigation,
+                    d = this.state,
+                    u = d.right,
+                    m = d.top,
+                    p = d.verticalOrientation,
+                    h = void 0 === m,
+                    f = 'calc(100vh - '.concat(m || 0, 'px)'),
+                    b = [
+                      F.content,
+                      h && F.contentInitialRender,
+                      i && [F.contentFixed, { maxHeight: f }],
                       {
-                        top: u,
-                        right: M.a.getConstants().isRTL ? void 0 : d,
-                        left: M.a.getConstants().isRTL ? d : void 0,
+                        top: m,
+                        right: M.a.getConstants().isRTL ? void 0 : u,
+                        left: M.a.getConstants().isRTL ? u : void 0,
                       },
-                    ]
+                    ],
+                    g = y.a.createElement(
+                      y.a.Fragment,
+                      null,
+                      y.a.createElement(B.a, { onClick: c, style: F.mask }),
+                      y.a.createElement(B.a, { ref: this._receiveBodyRectHelperRef, style: F.bodyRectHelper }),
+                      y.a.createElement(T.a, null, function (t) {
+                        var i = t.windowWidth
+                        return y.a.createElement(
+                          B.a,
+                          {
+                            accessibilityRole: 'menu',
+                            onKeyUp: e._handleEsc,
+                            ref: e._receiveContentRef,
+                            style: [i < L.a.theme.breakpoints.medium ? F.rootNarrow : F.rootWide, b],
+                          },
+                          h && 'slide' === a
+                            ? r
+                            : y.a.createElement(
+                                E.b,
+                                {
+                                  animateMount: 'up' !== p,
+                                  duration: n,
+                                  onAnimateComplete: e._handleAnimateComplete,
+                                  show: !0,
+                                  type: a,
+                                },
+                                function (e) {
+                                  var t = e.isAnimating
+                                  return y.a.createElement(
+                                    H.a,
+                                    { id: 'Dropdown', minimizeReporting: t },
+                                    function (e, t) {
+                                      return y.a.createElement(B.a, o()({ ref: e() }, t({})), r)
+                                    },
+                                  )
+                                },
+                              ),
+                        )
+                      }),
+                    )
                   return y.a.createElement(
                     B.a,
-                    { ref: this._receiveAnchorRef, style: A.anchor },
+                    { ref: this._receiveAnchorRef, style: F.anchor },
                     y.a.createElement(
                       R.a.Dropdown,
                       null,
-                      y.a.createElement(x.a.Consumer, null, function (t) {
-                        return y.a.createElement(T.b.Consumer, null, function (i) {
-                          var s = i.isModal
+                      y.a.createElement(x.a.Consumer, null, function (e) {
+                        return y.a.createElement(S.b.Consumer, null, function (t) {
+                          var n = t.isModal
                           return y.a.createElement(
                             O.a,
-                            { history: t, isModal: s, onDismiss: c },
-                            y.a.createElement(
-                              _.a,
-                              { withKeyboardNavigation: l },
-                              y.a.createElement(B.a, { onClick: c, style: A.mask }),
-                              y.a.createElement(B.a, { ref: e._receiveBodyRectHelperRef, style: A.bodyRectHelper }),
-                              y.a.createElement(S.a, null, function (t) {
-                                var i = t.windowWidth
-                                return y.a.createElement(
-                                  B.a,
-                                  {
-                                    accessibilityRole: 'menu',
-                                    onKeyUp: e._handleEsc,
-                                    ref: e._receiveContentRef,
-                                    style: [i < L.a.theme.breakpoints.medium ? A.rootNarrow : A.rootWide, f],
-                                  },
-                                  p && 'slide' === a
-                                    ? r
-                                    : y.a.createElement(
-                                        E.b,
-                                        {
-                                          animateMount: 'up' !== m,
-                                          duration: n,
-                                          onAnimateComplete: e._handleAnimateComplete,
-                                          show: !0,
-                                          type: a,
-                                        },
-                                        function (e) {
-                                          var t = e.isAnimating
-                                          return y.a.createElement(
-                                            H.a,
-                                            { id: 'Dropdown', minimizeReporting: t },
-                                            function (e, t) {
-                                              return y.a.createElement(B.a, o()({ ref: e() }, t({})), r)
-                                            },
-                                          )
-                                        },
-                                      ),
-                                )
-                              }),
-                            ),
+                            { history: e, isModal: n, onDismiss: c },
+                            l ? g : y.a.createElement(_.a, { withKeyboardNavigation: s }, g),
                           )
                         })
                       }),
@@ -1036,7 +1038,7 @@
             n
           )
         })(y.a.Component)
-      b()(N, 'defaultProps', {
+      b()(A, 'defaultProps', {
         preferredHorizontalOrientation: 'left',
         preferredVerticalOrientation: 'down',
         animateType: 'slide',

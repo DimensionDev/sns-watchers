@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [186],
+  [188],
   {
     VeNJ: function (e, t, n) {
       'use strict'
@@ -50,12 +50,12 @@
         L = (n('yH/f'), Object.freeze({ Icon: 'Icon', IconSmall: 'IconSmall', FullWidth: 'FullWidth' })),
         S = n('caTy'),
         R = n('rcen'),
-        A = n('TnY3'),
-        x = n('TIdA'),
-        O = n('A91F'),
-        M = n('feu+'),
-        N = n('tI3i'),
-        D = n.n(N),
+        O = n('TnY3'),
+        A = n('TIdA'),
+        x = n('A91F'),
+        N = n('feu+'),
+        M = n('tI3i'),
+        D = n.n(M),
         P = C.canUseDOM ? window.location.href : '',
         F = (function () {
           function e() {
@@ -110,8 +110,8 @@
           }
         },
         B = new F(),
-        V = n('MWbm'),
-        H = n('oQhu'),
+        H = n('MWbm'),
+        V = n('oQhu'),
         j = n('fs1G'),
         W = (function (e) {
           p()(n, e)
@@ -125,16 +125,16 @@
               f()(
                 d()(e),
                 '_getGraphicProps',
-                Object(H.a)(function (e, t) {
+                Object(V.a)(function (e, t) {
                   var n = e
                       ? function (t) {
                           var n = t.style
                           return g.a.createElement(
-                            V.a,
+                            H.a,
                             { style: n },
-                            g.a.createElement(x.a, {
+                            g.a.createElement(A.a, {
                               accessibilityLabel: '',
-                              aspectMode: O.a.exact(e.width / e.height),
+                              aspectMode: x.a.exact(e.width / e.height),
                               image: e,
                             }),
                           )
@@ -226,7 +226,7 @@
                       v = this._getGraphicProps(i, a),
                       m = v.graphic,
                       f = v.graphicDisplayMode
-                    return g.a.createElement(M.a, {
+                    return g.a.createElement(N.a, {
                       actionLabel: o.text,
                       footer: h,
                       graphic: m,
@@ -241,7 +241,7 @@
                       withCloseButton: !!n,
                     })
                   }
-                  return g.a.createElement(M.a, {
+                  return g.a.createElement(N.a, {
                     actionLabel: o.text,
                     graphicDisplayMode: 'none',
                     headline: u,
@@ -259,16 +259,16 @@
           )
         })(g.a.PureComponent)
       f()(W, 'defaultProps', { imageDisplayType: L.Icon })
-      var K = Object(A.a)(k(W)),
-        z = { component: 'cover', action: 'impression' },
-        G = function (e) {
+      var K = Object(O.a)(k(W)),
+        z = n('Irs7'),
+        G = { component: 'cover', action: 'impression' },
+        q = function (e) {
           var t,
             n = e.activeCover,
             r = e.clearActiveCover,
             a = e.processCallback,
-            o = e.scribeAction,
-            s = (function (e, t) {
-              var n = i()(i()({}, e), z)
+            o = (function (e, t) {
+              var n = i()(i()({}, e), G)
               return (
                 t &&
                   (n = i()(
@@ -283,13 +283,14 @@
                 n
               )
             })(e.scribeNamespace, n.clientEventInfo),
+            s = Object(z.b)(),
             c = function () {
               var e = n.cover.impressionCallbacks
               e &&
                 e.forEach(function (e) {
                   return a(e)
                 }),
-                o(s)
+                s.scribe(i()({}, o))
             }
           return 'full' === n.type
             ? ((t = n.cover),
@@ -327,9 +328,9 @@
               })(n.cover)
             : null
         },
-        q = n('MDbM'),
-        Y = (n('+KXO'), n('Qyxo')),
-        Z = (function () {
+        Y = n('MDbM'),
+        Z = (n('+KXO'), n('Qyxo')),
+        J = (function () {
           function e() {
             o()(this, e), (this._lingerScribed = {}), (this._appearance = {})
           }
@@ -339,9 +340,9 @@
                 key: 'processPositioningUpdate',
                 value: function (e, t) {
                   var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : Date.now(),
-                    r = J(e, t),
+                    r = X(e, t),
                     i = this._lingerTransition(r, n),
-                    a = X(e, t)
+                    a = Q(e, t)
                   return { lingers: i, impressions: a }
                 },
               },
@@ -405,30 +406,30 @@
             e
           )
         })(),
-        J = function (e, t) {
-          return Object(Y.a)(e, function (e) {
-            var n = e.id,
-              r = e.rectangle
-            return Q(r, t) >= 0.5 * r.getHeight() ? n : void 0
-          })
-        },
         X = function (e, t) {
-          return Object(Y.a)(e, function (e) {
+          return Object(Z.a)(e, function (e) {
             var n = e.id,
               r = e.rectangle
-            return Q(r, t) >= 0.99 ? { id: n, relativeElementHeight: $(r.getHeight(), t.getHeight()) } : void 0
+            return $(r, t) >= 0.5 * r.getHeight() ? n : void 0
           })
         },
         Q = function (e, t) {
-          return Math.max(0, Math.min(e.getBottom(), t.getBottom()) - Math.max(e.getTop(), t.getTop()))
+          return Object(Z.a)(e, function (e) {
+            var n = e.id,
+              r = e.rectangle
+            return $(r, t) >= 0.99 ? { id: n, relativeElementHeight: ee(r.getHeight(), t.getHeight()) } : void 0
+          })
         },
         $ = function (e, t) {
+          return Math.max(0, Math.min(e.getBottom(), t.getBottom()) - Math.max(e.getTop(), t.getTop()))
+        },
+        ee = function (e, t) {
           return Math.floor((e / t) * 1e5)
         },
-        ee = n('ddV6'),
-        te = n.n(ee),
-        ne = (n('hCOa'), n('LW0h'), n('z84I'), n('ZVkB'), { threshold: [0.01, 0.5] }),
-        re = (function () {
+        te = n('ddV6'),
+        ne = n.n(te),
+        re = (n('hCOa'), n('LW0h'), n('z84I'), n('ZVkB'), { threshold: [0.01, 0.5] }),
+        ie = (function () {
           function e(t) {
             var n = this
             o()(this, e),
@@ -466,7 +467,7 @@
                 var t = Date.now()
                 e.forEach(function (e) {
                   var r = Object.entries(n._itemsUnderObservation).find(function (t) {
-                    var n = te()(t, 2)
+                    var n = ne()(t, 2)
                     n[0]
                     return n[1] === e.target
                   })
@@ -477,7 +478,7 @@
                       s = e.rootBounds
                     if (o >= 0.01) {
                       var c = null != a && null != s
-                      n._createImpressionCandidate(i, c ? $(a.height, s.height) : void 0)
+                      n._createImpressionCandidate(i, c ? ee(a.height, s.height) : void 0)
                     }
                     o >= 0.5
                       ? (n._createLingerCandidate(i, t), n._createReactivityCandidate(i, t))
@@ -510,7 +511,7 @@
                 window.clearTimeout(n._reactivityCandidates.get(e)), n._reactivityCandidates.delete(e)
               }),
               null != t && t.root && t.root === window.document && (t.root = null)
-            var r = i()(i()({}, ne), t)
+            var r = i()(i()({}, re), t)
             ;(this._observer = new IntersectionObserver(this._processIntersectionEntries, r)),
               (this._reactivityCallback = (t && t.reactivityCallback) || j.a)
           }
@@ -541,7 +542,7 @@
                 key: 'getImpressionEvents',
                 value: function () {
                   var e = Array.from(this._impressionEvents, function (e) {
-                    var t = te()(e, 2)
+                    var t = ne()(e, 2)
                     return { id: t[0], relativeElementHeight: t[1].relativeElementHeight }
                   })
                   return this._impressionEvents.clear(), e
@@ -560,55 +561,55 @@
             e
           )
         })(),
-        ie = n('LFzM'),
-        ae = function (e) {
+        ae = n('LFzM'),
+        oe = function (e) {
           var t = e.children,
             n = e.impressionTracker
-          return n ? g.a.createElement(ie.a.Provider, { value: { impressionTracker: n } }, t) : t
+          return n ? g.a.createElement(ae.a.Provider, { value: { impressionTracker: n } }, t) : t
         },
-        oe = n('3GUV'),
-        se = n('v//M'),
-        ce = n('rHpw'),
-        le = n('VPAj'),
-        de = n('0zXz'),
-        ue = Object(le.a)(g.a.createElement(oe.a, null)),
-        pe = function (e) {
+        se = n('3GUV'),
+        ce = n('v//M'),
+        le = n('rHpw'),
+        de = n('VPAj'),
+        ue = n('0zXz'),
+        pe = Object(de.a)(g.a.createElement(se.a, null)),
+        he = function (e) {
           var t = e.bottomFetchStatus,
             n = e.onBottomRetry,
             r = e.withEndOfContent
           return g.a.createElement(
-            V.a,
-            { style: r && he.footer },
-            g.a.createElement(se.a, { fetchStatus: t, onRequestRetry: n, render: r ? ue : de.a }),
+            H.a,
+            { style: r && ve.footer },
+            g.a.createElement(ce.a, { fetchStatus: t, onRequestRetry: n, render: r ? pe : ue.a }),
           )
         },
-        he = ce.a.create(function (e) {
+        ve = le.a.create(function (e) {
           return { footer: { height: 5 * e.lineHeightsPx.body } }
         }),
-        ve = g.a.memo(pe),
-        me = n('xjVt'),
-        fe = n('EUHl'),
-        _e = n('IG4P'),
-        ye = n('iBK2'),
-        ge = n('pbku'),
-        be = n('aITJ'),
-        Ce = n('aWzz'),
-        we = n('iChn'),
-        Ee = n('8UdT'),
-        ke = n('cFgU'),
-        Ie = n('WA1W'),
-        Te = function (e) {
+        me = g.a.memo(he),
+        fe = n('xjVt'),
+        _e = n('EUHl'),
+        ye = n('IG4P'),
+        ge = n('iBK2'),
+        be = n('pbku'),
+        Ce = n('aITJ'),
+        we = n('aWzz'),
+        Ee = n('iChn'),
+        ke = n('8UdT'),
+        Ie = n('cFgU'),
+        Te = n('WA1W'),
+        Le = function (e) {
           return e.entryId
         },
-        Le = function (e) {
+        Se = function (e) {
           return e.sortIndex
         }
-      var Se = new Map(),
-        Re = function (e) {
+      var Re = new Map(),
+        Oe = function (e) {
           switch (e) {
-            case Ee.b.Tweet:
-              return be.b.isDesktopOS() ? 250 : 400
-            case Ee.a.ModuleImpressionPlaceholder:
+            case ke.b.Tweet:
+              return Ce.b.isDesktopOS() ? 250 : 400
+            case ke.a.ModuleImpressionPlaceholder:
               return 0
             default:
               return 100
@@ -633,7 +634,7 @@
                   ? g.a.createElement(
                       g.a.Fragment,
                       null,
-                      g.a.createElement(ve, { bottomFetchStatus: t, onBottomRetry: i, withEndOfContent: !r }),
+                      g.a.createElement(me, { bottomFetchStatus: t, onBottomRetry: i, withEndOfContent: !r }),
                       r,
                     )
                   : r
@@ -644,12 +645,12 @@
                   r = t.onRefresh,
                   i = t.refreshControl,
                   o = t.topFetchStatus
-                return i ? g.a.createElement(i, { canRefresh: n, isRefreshing: o === q.a.LOADING, onRefresh: r }, e) : e
+                return i ? g.a.createElement(i, { canRefresh: n, isRefreshing: o === Y.a.LOADING, onRefresh: r }, e) : e
               }),
               f()(
                 d()(a),
                 '_getCellRenderer',
-                Object(H.a)(function (e, t) {
+                Object(V.a)(function (e, t) {
                   var n,
                     r = {
                       module: t,
@@ -667,15 +668,15 @@
               f()(
                 d()(a),
                 '_getInitialFocusedEntry',
-                Object(H.a)(function (e, t) {
+                Object(V.a)(function (e, t) {
                   return t && e.find(t)
                 }),
               ),
               f()(
                 d()(a),
                 '_createEntryIndex',
-                Object(H.a)(function (e) {
-                  return Object(we.a)(e, function (e) {
+                Object(V.a)(function (e) {
+                  return Object(Ee.a)(e, function (e) {
                     return e.entryId
                   })
                 }),
@@ -750,7 +751,7 @@
                     null === (t = a.context.featureSwitches) || void 0 === t
                       ? void 0
                       : t.isTrue('responsive_web_element_size_impression_scribe_enabled'),
-                  i = Object(Y.a)(e, function (e) {
+                  i = Object(Z.a)(e, function (e) {
                     var t = n[e.id]
                     return null != t ? { entry: t, relativeElementHeight: r ? e.relativeElementHeight : void 0 } : null
                   })
@@ -774,7 +775,7 @@
               f()(d()(a), '_handleOnLingerEvent', function (e) {
                 var t = a.props.applyReactionInstructions,
                   n = a._getEntryIndex()[e]
-                n && t({ entry: n, triggerName: ge.a.ON_LINGER })
+                n && t({ entry: n, triggerName: be.a.ON_LINGER })
               }),
               f()(d()(a), '_handlePositionRestored', function () {
                 a._positionedRestored = !0
@@ -825,14 +826,14 @@
               }),
               f()(d()(a), '_newImpressionTrackerV2', function () {
                 return a._V2ImpressionsEnabled() && window.IntersectionObserver
-                  ? new re({
+                  ? new ie({
                       root: a.context.viewport.getViewport(),
                       rootMargin: a.context.viewport.getRootMargin(),
                       reactivityCallback: a._handleOnLingerEvent,
                     })
                   : void 0
               }),
-              (a._impressionTracker = new Z()),
+              (a._impressionTracker = new J()),
               (a._streamScribeCancelCallbacks = []),
               (a._impressionTrackerV2 = a._newImpressionTrackerV2()),
               a
@@ -845,7 +846,7 @@
                 value: function (e) {
                   this.props.timelineId !== e.timelineId &&
                     (this._flushLingerScribes(),
-                    (this._impressionTracker = new Z()),
+                    (this._impressionTracker = new J()),
                     this._impressionTrackerV2 && this._impressionTrackerV2.disconnect(),
                     (this._impressionTrackerV2 = this._newImpressionTrackerV2()))
                 },
@@ -909,7 +910,7 @@
                     this._shouldRenderEmptyState(r)
                       ? l()
                       : g.a.createElement(
-                          ae,
+                          oe,
                           { impressionTracker: this._impressionTrackerV2 },
                           g.a.createElement(
                             b.a,
@@ -918,7 +919,7 @@
                             this._renderPill(),
                             g.a.createElement(v, {
                               anchoring: n,
-                              assumedItemHeight: Re,
+                              assumedItemHeight: Oe,
                               cacheKey: d,
                               footer: this._renderFooter(),
                               hasNewContentAtBottom:
@@ -926,8 +927,8 @@
                                   ? void 0
                                   : e.isTrue('responsive_web_do_not_launch_me_reverse_home_timeline_enabled'),
                               header: a,
-                              identityFunction: Te,
-                              initialAnchor: m && _.b(Te(m)),
+                              identityFunction: Le,
+                              initialAnchor: m && _.b(Le(m)),
                               items: r,
                               nearStartProximityRatio: c,
                               onAtEnd: this._handleAtBottom,
@@ -939,7 +940,7 @@
                               onPositionRestored: this._handlePositionRestored,
                               ref: this._setScroller,
                               renderer: this._getCellRenderer(i, s),
-                              sortIndexFunction: Le,
+                              sortIndexFunction: Se,
                               withKeyboardShortcuts: p,
                               withoutHeadroom: h,
                             }),
@@ -962,8 +963,8 @@
                     c = t.timelineId,
                     l = t.topUnseenCount
                   return a
-                    ? a === fe.a.URT
-                      ? g.a.createElement(me.a.Configure, {
+                    ? a === _e.a.URT
+                      ? g.a.createElement(fe.a.Configure, {
                           alert: n,
                           applyNewTweetsBarInstructions: r,
                           isAtNewest: null === (e = this._scroller) || void 0 === e ? void 0 : e.isAtNewest,
@@ -972,8 +973,8 @@
                           scribeNamespace: s,
                           timelineId: c,
                         })
-                      : a === fe.a.CLIENT && l && l > 0
-                      ? g.a.createElement(me.a.Configure, {
+                      : a === _e.a.CLIENT && l && l > 0
+                      ? g.a.createElement(fe.a.Configure, {
                           applyNewTweetsBarInstructions: r,
                           removeAlert: o,
                           scribeNamespace: s,
@@ -991,16 +992,14 @@
                     t = e.activeCover,
                     n = e.clearActiveCover,
                     r = e.processCallback,
-                    i = e.scribeAction,
-                    a = e.scribeNamespace,
-                    o = t && t.cover
-                  return t && o
-                    ? g.a.createElement(G, {
+                    i = e.scribeNamespace,
+                    a = t && t.cover
+                  return t && a
+                    ? g.a.createElement(q, {
                         activeCover: t,
                         clearActiveCover: n,
                         processCallback: r,
-                        scribeAction: i,
-                        scribeNamespace: a,
+                        scribeNamespace: i,
                       })
                     : null
                 },
@@ -1010,7 +1009,7 @@
                 value: function (e) {
                   var t = this.props,
                     n = t.activeCover,
-                    r = t.initialFetchStatus === q.a.LOADED,
+                    r = t.initialFetchStatus === Y.a.LOADED,
                     i = 0 === e.length
                   return r && i && !n
                 },
@@ -1121,8 +1120,8 @@
                     n = t.seenIds,
                     r = t.seenIdsLatest,
                     i = t.timelineId
-                  ;(i !== Ie.d && i !== Ie.b) || !n
-                    ? (i !== Ie.c && i !== Ie.a) || !r || r.addNewTweets(e)
+                  ;(i !== Te.d && i !== Te.b) || !n
+                    ? (i !== Te.c && i !== Te.a) || !r || r.addNewTweets(e)
                     : n.addNewTweets(e)
                 },
               },
@@ -1147,11 +1146,11 @@
                             var p = { visibility_start: l, visibility_end: s }
                             a.push(i()(i()({}, u), {}, { impression_details: p }))
                           }
-                          if (d.type === Ee.b.Tweet) {
+                          if (d.type === ke.b.Tweet) {
                             var h = d
                             o.push(h.content.id)
                           }
-                          if (d.type === Ee.b.PagedCarouselItem) {
+                          if (d.type === ke.b.PagedCarouselItem) {
                             var v = d,
                               m =
                                 v.content.content &&
@@ -1193,17 +1192,17 @@
             n
           )
         })(g.a.PureComponent)
-      f()(Ae, 'contextTypes', { viewport: Ce.object, featureSwitches: Ce.any }),
+      f()(Ae, 'contextTypes', { viewport: we.object, featureSwitches: we.any }),
         f()(Ae, 'defaultProps', {
           onBottomRetry: j.a,
           onNearBottom: j.a,
           onNearTop: j.a,
           onRefresh: j.a,
-          refreshControl: _e.a,
-          scribeCache: Se,
-          scroller: ye.b,
-          seenIds: Object(ke.b)(),
-          seenIdsLatest: Object(ke.a)(),
+          refreshControl: ye.a,
+          scribeCache: Re,
+          scroller: ge.b,
+          seenIds: Object(Ie.b)(),
+          seenIdsLatest: Object(Ie.a)(),
           withoutHeadroom: !1,
           showLoadingFooter: !0,
           withKeyboardShortcuts: !0,
@@ -1224,6 +1223,19 @@
         i = function (e) {
           return { id: e, distanceToViewportBottom: 0 }
         }
+    },
+    pbku: function (e, t, n) {
+      'use strict'
+      n.d(t, 'a', function () {
+        return r
+      })
+      n('yH/f')
+      var r = Object.freeze({
+        ON_LINGER: 'onLinger',
+        ON_IS_RELEVANT: 'onIsRelevant',
+        ON_SHOW_MORE: 'onShowMore',
+        ON_LIKE: 'onLike',
+      })
     },
   },
 ])

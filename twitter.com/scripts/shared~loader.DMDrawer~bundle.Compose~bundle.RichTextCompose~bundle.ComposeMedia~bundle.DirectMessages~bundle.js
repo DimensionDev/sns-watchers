@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [3],
+  [5],
   {
     '+/sI': function (e, t, i) {
       'use strict'
@@ -352,7 +352,7 @@
         I = i('RuTB'),
         M = Object(_.a)({
           loader: function () {
-            return Promise.all([i.e(0), i.e(5), i.e(179)])
+            return Promise.all([i.e(0), i.e(7), i.e(181)])
               .then(i.bind(null, 'EOJ2'))
               .then(function (e) {
                 return { default: e.__DANGEROUS_IMPORT_VIDEOPLAYER__ }

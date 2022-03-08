@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [184],
+  [186],
   {
     '0kTQ': function (e, t, n) {
       'use strict'
@@ -37,23 +37,23 @@
         g = (n('2G9S'), n('z84I'), n('hBvt'), n('LW0h'), n('7x/C'), n('ho0z'), n('ERkP')),
         f = n.n(g),
         _ = n('k49u'),
-        w = n('3XMw'),
-        E = n.n(w),
-        y = n('IMYl'),
-        b = n('fs1G'),
-        v = n('MWbm'),
+        E = n('3XMw'),
+        w = n.n(E),
+        b = n('IMYl'),
+        v = n('fs1G'),
+        y = n('MWbm'),
         A = n('Irs7'),
         C = n('OOKO'),
         S = n('CKsB'),
         I = n('t62R'),
-        M = n('IMA+'),
-        k = n('Znyr'),
+        k = n('IMA+'),
+        M = n('Znyr'),
         T = n('G1WX'),
         U = n('rHpw'),
-        x = E.a.d86bbf0f,
-        L = E.a.h6beb5fa,
-        B = E.a.b7dc3884,
-        H = (function (e) {
+        x = w.a.d86bbf0f,
+        L = w.a.h6beb5fa,
+        B = w.a.b7dc3884,
+        O = (function (e) {
           u()(n, e)
           var t = p()(n)
           function n() {
@@ -82,7 +82,7 @@
               }),
               m()(s()(e), '_renderTitle', function () {
                 var t = e.props.title
-                return t ? f.a.createElement(I.b, { size: 'headline1', style: O.title, weight: 'bold' }, t) : null
+                return t ? f.a.createElement(I.b, { size: 'headline1', style: H.title, weight: 'bold' }, t) : null
               }),
               m()(s()(e), '_renderUserAccounts', function () {
                 var t = e.props,
@@ -99,7 +99,7 @@
                       n.map(function (t) {
                         var n = t.user_id === a.id_str,
                           r = t.badgeCount
-                        return f.a.createElement(M.a, {
+                        return f.a.createElement(k.a, {
                           accessibilityLabel: n ? void 0 : B({ screenName: t.screen_name }),
                           avatarUri: t.avatar_image_url,
                           decoration: e._renderUserDecoration({ badgeCount: r, withBadges: c, isActiveUser: n }),
@@ -121,7 +121,7 @@
                         })
                       }),
                     )
-                  : f.a.createElement(M.a, {
+                  : f.a.createElement(k.a, {
                       avatarUri: a.profile_image_url_https,
                       decoration: e._renderUserDecoration({ withBadges: c, isActiveUser: !0 }),
                       displayMode: 'UserCompact',
@@ -138,12 +138,12 @@
                   n = e.isActiveUser,
                   a = e.withBadges
                 return n
-                  ? f.a.createElement(y.a, { style: [O.iconCheckMark, O.userDecoration] })
+                  ? f.a.createElement(b.a, { style: [H.iconCheckMark, H.userDecoration] })
                   : t && a
-                  ? f.a.createElement(k.a, {
+                  ? f.a.createElement(M.a, {
                       count: t,
                       standalone: !0,
-                      style: O.userDecoration,
+                      style: H.userDecoration,
                       truncatedCountFormatter: L,
                       unreadCountLabel: x,
                     })
@@ -163,7 +163,7 @@
               m()(s()(e), '_handleFetch', function () {
                 var t = e.props,
                   n = t.createLocalApiErrorHandlerAccountsFetch
-                ;(0, t.fetchAccounts)().catch(n(m()({}, _.a.AppInReadOnlyMode, { customAction: b.a })))
+                ;(0, t.fetchAccounts)().catch(n(m()({}, _.a.AppInReadOnlyMode, { customAction: v.a })))
               }),
               m()(s()(e), '_handleMenuItemClick', function (t, n) {
                 return function () {
@@ -185,8 +185,8 @@
                     t = e.fetchStatus,
                     n = e.shouldDisplayFetchRenderer
                   return f.a.createElement(
-                    v.a,
-                    { style: O.menuContainer },
+                    y.a,
+                    { style: H.menuContainer },
                     this._renderTitle(),
                     n
                       ? f.a.createElement(T.a, {
@@ -203,7 +203,7 @@
             n
           )
         })(f.a.Component),
-        O = U.a.create(function (e) {
+        H = U.a.create(function (e) {
           return {
             iconCheckMark: { color: e.colors.primary, flexShrink: 0 },
             menuContainer: { paddingVertical: e.spaces.space12 },
@@ -214,7 +214,7 @@
             },
           }
         })
-      t.a = Object(A.a)(H)
+      t.a = Object(A.a)(O)
     },
     LzTg: function (e, t, n) {
       'use strict'
@@ -237,29 +237,29 @@
         g = n('1Pcy'),
         f = n.n(g),
         _ = (n('2G9S'), n('qtu+')),
-        w = n('G6rE'),
-        E = n('rxPX'),
-        y = n('0KEI'),
-        b = n('auX9'),
-        v = n('kGix'),
-        A = Object(E.a)()
+        E = n('G6rE'),
+        w = n('rxPX'),
+        b = n('0KEI'),
+        v = n('auX9'),
+        y = n('kGix'),
+        A = Object(w.a)()
           .propsFromState(function () {
             return {
-              fetchStatus: b.g,
-              loggedInUser: w.e.selectLoggedInUser,
-              multiAccountUsers: b.j,
-              hasMultiAccountBadges: b.h,
+              fetchStatus: v.g,
+              loggedInUser: E.e.selectLoggedInUser,
+              multiAccountUsers: v.j,
+              hasMultiAccountBadges: v.h,
             }
           })
           .propsFromActions(function () {
             return {
-              createLocalApiErrorHandlerAccountSwitch: Object(y.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandlerAccountSwitch: Object(b.createLocalApiErrorHandlerWithContextFactory)(
                 'ACCOUNT_SWITCHER_ACCOUNT_SWITCH',
               ),
-              createLocalApiErrorHandlerMultiListFetch: Object(y.createLocalApiErrorHandlerWithContextFactory)(
+              createLocalApiErrorHandlerMultiListFetch: Object(b.createLocalApiErrorHandlerWithContextFactory)(
                 'ACCOUNT_SWITCHER_MULTI_LIST_FETCH',
               ),
-              fetchMultiAccountList: b.c,
+              fetchMultiAccountList: v.c,
               switchAccount: _.a,
             }
           })
@@ -269,7 +269,7 @@
               a = e.loggedInUser,
               r = e.multiAccountUsers
             return {
-              fetchStatus: t === v.a.NONE ? v.a.LOADING : t,
+              fetchStatus: t === y.a.NONE ? y.a.LOADING : t,
               hasMultiAccountBadges: !!a && n,
               loggedInUser: a,
               multiAccountUsers: r,
@@ -279,25 +279,25 @@
         C = n('3Wr5'),
         S = n('55jz'),
         I = n('0kTQ'),
-        M = 'SideNav_AccountSwitcher_Button',
-        k = 'AccountSwitcher_AddAccount_Button',
+        k = 'SideNav_AccountSwitcher_Button',
+        M = 'AccountSwitcher_AddAccount_Button',
         T = 'AccountSwitcher_Logout_Button',
         U = 'AccountSwitcher_ManageAccounts_Button',
         x = n('yrzJ'),
         L = n('y8wG'),
         B = n('v6aA'),
-        H = n('3XMw'),
-        O = n.n(H),
-        F = O.a.j0a8da6e,
-        N = O.a.c6f2bf00,
-        P = function (e) {
+        O = n('3XMw'),
+        H = n.n(O),
+        F = H.a.j0a8da6e,
+        P = H.a.c6f2bf00,
+        N = function (e) {
           return m.a.createElement(
-            O.a.I18NFormatMessage,
+            H.a.I18NFormatMessage,
             { $i18n: 'i9bec47a' },
             m.a.createElement(x.a, { color: 'normal', screenName: e }),
           )
         },
-        D = (function (e) {
+        R = (function (e) {
           s()(n, e)
           var t = u()(n)
           function n() {
@@ -357,10 +357,10 @@
                         ? '/i/flow/login'
                         : '/account/add',
                       scribeElement: 'add_existing_account',
-                      testID: k,
+                      testID: M,
                     }),
-                  r && c.push({ actionText: N, link: '/account/switch', scribeElement: 'manage_accounts', testID: U }),
-                  n && c.push({ actionText: P(n.screen_name), link: '/logout', scribeElement: 'log_out', testID: T }),
+                  r && c.push({ actionText: P, link: '/account/switch', scribeElement: 'manage_accounts', testID: U }),
+                  n && c.push({ actionText: N(n.screen_name), link: '/logout', scribeElement: 'log_out', testID: T }),
                   c
                 )
               }),
@@ -387,7 +387,7 @@
                     analytics: t,
                     currentUser: r,
                     hasMultiAccountBadges: n,
-                    interactiveViewTestId: M,
+                    interactiveViewTestId: k,
                     isExpanded: a,
                     renderMenuSheet: this._renderMenuSheet,
                   })
@@ -397,13 +397,13 @@
             n
           )
         })(m.a.Component)
-      p()(D, 'contextType', B.a)
-      var R = A(D),
-        W = n('1eTX'),
-        z = n('jwTb'),
-        V = n('Irs7'),
-        j = n('eqgg'),
-        G = O.a.g34f2c63({ verb: '' }),
+      p()(R, 'contextType', B.a)
+      var W = A(R),
+        D = n('1eTX'),
+        V = n('jwTb'),
+        j = n('Irs7'),
+        z = n('eqgg'),
+        G = H.a.g34f2c63({ verb: '' }),
         q = (function (e) {
           s()(n, e)
           var t = u()(n)
@@ -428,7 +428,7 @@
                     t = e.composeOptions,
                     n = e.isExpanded,
                     a = e.testID
-                  return m.a.createElement(j.a, {
+                  return m.a.createElement(z.a, {
                     icon: X,
                     isExpanded: n,
                     label: G,
@@ -442,9 +442,9 @@
             n
           )
         })(m.a.Component),
-        X = m.a.createElement(z.a, null),
-        Y = Object(V.a)(q),
-        K = n('N5qz'),
+        X = m.a.createElement(V.a, null),
+        K = Object(j.a)(q),
+        Y = n('N5qz'),
         Q = 'SideNav_NewTweet_Button',
         J = n('MWbm'),
         Z = n('cHvH'),
@@ -476,7 +476,7 @@
                     h = t.widthStyle,
                     g = t.withTweetButton,
                     f = [te.root, h, i ? te.rootPaddingSmall : te.rootPaddingNormal],
-                    _ = d || m.a.createElement(W.a, { onClick: p, pullLeft: !1, size: 'large' })
+                    _ = d || m.a.createElement(D.a, { onClick: p, pullLeft: !1, size: 'large' })
                   return m.a.createElement(Z.a, null, function (t) {
                     var i = t.windowHeight
                     return m.a.createElement(
@@ -505,7 +505,7 @@
                         ? m.a.createElement(
                             J.a,
                             { style: [te.footerContainer, !o && te.alignItemsCenter] },
-                            m.a.createElement(R, { isExpanded: o }),
+                            m.a.createElement(W, { isExpanded: o }),
                             r ? m.a.createElement(r, { isExpanded: o }) : null,
                           )
                         : null,
@@ -526,12 +526,12 @@
                       style: [
                         te.button,
                         !r && te.alignItemsCenter,
-                        'tall' === K.a.getHeightMode(e) && te.withTallHeight,
+                        'tall' === Y.a.getHeightMode(e) && te.withTallHeight,
                       ],
                     },
                     n
                       ? m.a.createElement(n, { isExpanded: r })
-                      : m.a.createElement(Y, { composeOptions: a, isExpanded: r, testID: Q }),
+                      : m.a.createElement(K, { composeOptions: a, isExpanded: r, testID: Q }),
                   )
                 },
               },
@@ -554,6 +554,27 @@
           settingsButton: { marginBottom: e.spaces.space20, marginHorizontal: e.spaces.space4 },
           footerContainer: { marginVertical: e.spaces.space12 },
         }
+      })
+    },
+    OOKO: function (e, t, n) {
+      'use strict'
+      n.d(t, 'a', function () {
+        return o
+      })
+      n('uFXj')
+      var a = n('ERkP'),
+        r = n.n(a),
+        c = n('rHpw'),
+        i = n('MWbm')
+      function o(e) {
+        var t = e.spacing
+        return r.a.createElement(i.a, {
+          accessibilityRole: 'separator',
+          style: [s.divider, { marginVertical: null != t ? c.a.theme.spaces[t] : void 0 }],
+        })
+      }
+      var s = c.a.create(function (e) {
+        return { divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }
       })
     },
     'qtu+': function (e, t, n) {
@@ -586,7 +607,7 @@
     y8wG: function (e, t, n) {
       'use strict'
       n.d(t, 'a', function () {
-        return H
+        return O
       })
       var a = n('VrFO'),
         r = n.n(a),
@@ -603,23 +624,23 @@
         g = (n('2G9S'), n('ho0z'), n('ERkP')),
         f = n.n(g),
         _ = n('ZUOq'),
-        w = n('3XMw'),
-        E = n.n(w),
-        y = n('ACHU'),
-        b = n('aWzz'),
-        v = n('MWbm'),
+        E = n('3XMw'),
+        w = n.n(E),
+        b = n('ACHU'),
+        v = n('aWzz'),
+        y = n('MWbm'),
         A = n('I4+6'),
         C = n('rHpw'),
         S = n('XP29'),
         I = n('jV+4'),
-        M = n('Znyr'),
-        k = n('OiMc'),
+        k = n('Znyr'),
+        M = n('OiMc'),
         T = n('cm6r'),
-        U = E.a.d86bbf0f,
-        x = E.a.h6beb5fa,
-        L = E.a.b8e1d524,
-        B = E.a.gef27c4c,
-        H = (function (e) {
+        U = w.a.d86bbf0f,
+        x = w.a.h6beb5fa,
+        L = w.a.b8e1d524,
+        B = w.a.gef27c4c,
+        O = (function (e) {
           u()(n, e)
           var t = p()(n)
           function n() {
@@ -639,7 +660,7 @@
                   f.a.Fragment,
                   null,
                   f.a.createElement(
-                    v.a,
+                    y.a,
                     null,
                     f.a.createElement(S.a, { accessibilityLabel: a, screenName: i, size: 'xLarge', uri: r }),
                     n ? null : e._renderBadge(),
@@ -653,13 +674,13 @@
                           isVerified: o,
                           name: a,
                           screenName: i,
-                          style: O.userName,
+                          style: H.userName,
                           withStackedLayout: !0,
                         }),
                         f.a.createElement(
-                          v.a,
-                          { style: O.iconContainer },
-                          f.a.createElement(y.a, { style: O.icon }),
+                          y.a,
+                          { style: H.iconContainer },
+                          f.a.createElement(b.a, { style: H.icon }),
                           n ? e._renderBadge() : null,
                         ),
                       )
@@ -668,16 +689,16 @@
               }),
               m()(s()(e), '_renderEmptyState', function () {
                 var t = e.props.renderEmptyState
-                return t ? f.a.createElement(v.a, { style: O.emptyStateWrapper }, t()) : null
+                return t ? f.a.createElement(y.a, { style: H.emptyStateWrapper }, t()) : null
               }),
               m()(s()(e), '_renderBadge', function () {
                 var t = e.props,
                   n = t.hasMultiAccountBadges,
                   a = t.isExpanded
                 return n
-                  ? f.a.createElement(M.a, {
+                  ? f.a.createElement(k.a, {
                       pip: !0,
-                      style: a && O.pip,
+                      style: a && H.pip,
                       truncatedCountFormatter: x,
                       unreadCountLabel: U,
                     })
@@ -704,9 +725,9 @@
                     o = e.renderMenuSheet
                   return n || i
                     ? f.a.createElement(
-                        k.a,
+                        M.a,
                         {
-                          contentStyle: O.menuContainer,
+                          contentStyle: H.menuContainer,
                           enableEnterKeyToggle: !0,
                           renderContent: o,
                           withArrow: !0,
@@ -723,7 +744,7 @@
                               color: C.a.theme.colors.text,
                             }),
                             onClick: this._handleAccountSwitcherClick,
-                            style: O.anchorContainer,
+                            style: H.anchorContainer,
                             testID: r,
                           },
                           n ? this._renderUser(n) : this._renderEmptyState(),
@@ -736,8 +757,8 @@
             n
           )
         })(f.a.Component)
-      m()(H, 'contextTypes', { featureSwitches: b.object })
-      var O = C.a.create(function (e) {
+      m()(O, 'contextTypes', { featureSwitches: v.object })
+      var H = C.a.create(function (e) {
         return {
           anchorContainer: {
             alignItems: 'center',

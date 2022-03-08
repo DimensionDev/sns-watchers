@@ -1,6 +1,6 @@
 window.__SCRIPTS_LOADED__['vendors~main'] &&
   ((window.webpackJsonp = window.webpackJsonp || []).push([
-    [125],
+    [127],
     {
       '9lJ4': function (e, t, o) {
         'use strict'
@@ -23,7 +23,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
         'use strict'
         var a = o('3XMw')._register('en', {
           get emoji() {
-            return o.e(307).then(o.t.bind(null, 'oFUs', 7))
+            return o.e(309).then(o.t.bind(null, 'oFUs', 7))
           },
         })
         function n(e, t, o) {
@@ -673,10 +673,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('g2fd3205', 'People'),
           a('fb3c8e74', 'Recent searches'),
           a('ffd9cfe6', 'See more'),
+          a('i9028824', 'Loading'),
           a('e5b0063d', function (e) {
             return 'Timeline: ' + e.title
           }),
-          a('i9028824', 'Loading'),
           a('cb367657', 'Conversation failed to pin. Try again.'),
           a('ie9a7e48', 'Conversation failed to pin. Check your connection and try again.'),
           a('hd3927c6', 'Conversation failed to unpin. Try again.'),
@@ -1353,6 +1353,34 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('b2e94283', function (e) {
             return 'via @' + e.viaScreenName
           }),
+          a('e070024a', 'Edit photo'),
+          a('i7d24b36', 'Next image'),
+          a('f96a38a2', 'Previous image'),
+          a('hac7c548', 'Crop media'),
+          a('e3dbfba3', 'Edit image description'),
+          a('dd4a83a5', 'Content warning'),
+          a('ffe9ec3a', 'Add descriptions'),
+          a(
+            'j063b261',
+            'You can add a description, sometimes called alt-text, to your photos so they’re accessible to even more people, including people who are blind or have low vision. Good descriptions are concise, but present what’s in your photos accurately enough to understand their context.',
+          ),
+          a('e57144f0', 'Sure'),
+          a('feabf2a0', 'Alt text'),
+          a('e36287c6', 'Description'),
+          a('cf565d08', 'What is alt text?'),
+          a('j9cf595f', 'Put a content warning on this Tweet'),
+          a(
+            'd69a782e',
+            'Select a category, and we’ll put a content warning on this Tweet. This helps people avoid content they don’t want to see.',
+          ),
+          a('faf745f9', 'Nudity'),
+          a('h2437f25', 'Sensitive'),
+          a('cd5cba97', function (e) {
+            return 'Content warning: ' + e.formattedWarningList
+          }),
+          a('ceabed1a', 'The Tweet author flagged this Tweet as showing sensitive content.'),
+          a('a0e81a2e', 'Show'),
+          a('f1d9930c', 'Hide'),
           a('cb7c0987', 'Why did you get this?'),
           a(
             'de3bcf27',
@@ -1390,6 +1418,12 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'People can’t mention you again in this conversation and you won’t receive further notifications.',
           ),
           a('g0b48670', 'This conversation has too many replies to show them all.'),
+          a('ddf0ba7e', 'Collection'),
+          a('e63ff1d5', 'Tweets I’ve liked'),
+          a('a42f33ba', 'Tweets by account'),
+          a('e8177e5d', 'Tweet search'),
+          a('dbaa0bee', 'Tweets from protected accounts can’t be used in Moments'),
+          a('e2c85754', 'Quote Tweets of a deleted Tweet can’t be used in Moments'),
           a('e25a0c3a', 'Promoted Tweet'),
           a('de128a2f', 'Turn on Tweet notifications'),
           a('aa6f3ca4', 'Turn off Tweet notifications'),
@@ -1867,7 +1901,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h0786685', 'Moment'),
           a('i0ed3f4d', 'Event image'),
           a('f8cafdc1', 'Collection Tweets'),
-          a('ddf0ba7e', 'Collection'),
           a('jb0429b1', function (e) {
             return 'By ' + e.name + ' @' + e.screenName
           }),
@@ -1964,6 +1997,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('j538604d', 'Tweet your Community'),
           a('dc6ce7b4', 'Members'),
           a('ga2aa43c', 'Moderators'),
+          a('cf4898a0', 'Search for people'),
           a('g30bc699', function (e) {
             return 'View @' + e.screenName + ' profile'
           }),
@@ -2018,11 +2052,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('a0a16d37', 'Anyone can join and/or be invited to the Community.'),
           a('ce0523a8', 'Restricted'),
-          a('f1b189f9', 'People must ask to join, and the mod team must approve those requests.'),
+          a(
+            'i1aad6eb',
+            'People must ask to join, and the mod team must approve those requests. People invited by the mod team are automatically approved.',
+          ),
           a('c85960a0', 'Allow members to issue invitations'),
           a('ca373cd2', 'People invited by existing members are automatically approved.'),
-          a('d42d9318', 'People invited by the mod team are automatically approved.'),
-          a('b1066579', 'Keep in mind all Communities are visible to everyone on Twitter.'),
+          a(
+            'j7f554f5',
+            'Control who can join your Community. Keep in mind all Communities are visible to everyone on Twitter.',
+          ),
           a('c8c7f9fc', 'Review needed'),
           a('c045c7b6', 'Reported Tweets'),
           a('a87df2ee', 'Community management'),
@@ -2118,7 +2157,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('c8677445', 'Delete rule'),
           a('c3a0d44e', 'Cancel and edit rule instead'),
           a('dfddd842', 'Sent via Direct Message'),
-          a('cf4898a0', 'Search for people'),
           a('a3b3939a', function (e) {
             return '@' + e.screen_name + ' has already been invited'
           }),
@@ -2167,7 +2205,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ic7db4ea', 'System gremlins won’t allow that right now. Please try again later.'),
           a('dffb0774', 'Nothing to review right now'),
           a('cbb2a93c', 'Moderators have taken care of all reported Tweets.'),
-          a('f1d9930c', 'Hide'),
           a('fa524057', 'Keep'),
           a('f0306107', 'Report Tweet to Twitter'),
           a('ff0f7429', function (e) {
@@ -2233,33 +2270,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('f842d5d4', 'Discard unsent Tweet'),
           a('b3a7362d', 'This can’t be undone and you’ll lose your draft Tweet.'),
           a('g3472106', 'Something went wrong, and the unsent Tweet wasn’t deleted.'),
-          a('e070024a', 'Edit photo'),
-          a('i7d24b36', 'Next image'),
-          a('f96a38a2', 'Previous image'),
-          a('hac7c548', 'Crop media'),
-          a('e3dbfba3', 'Edit image description'),
-          a('dd4a83a5', 'Content warning'),
-          a('ffe9ec3a', 'Add descriptions'),
-          a(
-            'j063b261',
-            'You can add a description, sometimes called alt-text, to your photos so they’re accessible to even more people, including people who are blind or have low vision. Good descriptions are concise, but present what’s in your photos accurately enough to understand their context.',
-          ),
-          a('e57144f0', 'Sure'),
-          a('feabf2a0', 'Alt text'),
-          a('e36287c6', 'Description'),
-          a('cf565d08', 'What is alt text?'),
-          a('j9cf595f', 'Put a content warning on this Tweet'),
-          a(
-            'd69a782e',
-            'Select a category, and we’ll put a content warning on this Tweet. This helps people avoid content they don’t want to see.',
-          ),
-          a('faf745f9', 'Nudity'),
-          a('h2437f25', 'Sensitive'),
-          a('cd5cba97', function (e) {
-            return 'Content warning: ' + e.formattedWarningList
-          }),
-          a('ceabed1a', 'The Tweet author flagged this Tweet as showing sensitive content.'),
-          a('a0e81a2e', 'Show'),
           a('c91f83ae', 'Edit video'),
           a('icbec4ae', 'Upload captions'),
           a('e7048e73', 'Trim media'),
@@ -2275,8 +2285,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('d963d1b6', 'No places were found'),
           a('a893d601', 'Ok'),
           a('be6cc44d', 'Search locations'),
-          a('d8ef3232', 'Failed to fetch locations'),
-          a('cce30dcc', 'Tag location'),
+          a('d8ef3232', 'Failed to fetch locations')
+        a('cce30dcc', 'Tag location'),
           a('b01ed2da', function (e) {
             return e.distance + ' mi'
           }),
@@ -2285,10 +2295,10 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('d4b7cff7', function (e) {
             return e.distance + ' km'
-          })
-        a('b211849e', function (e) {
-          return e.distance + ' m'
-        }),
+          }),
+          a('b211849e', function (e) {
+            return e.distance + ' m'
+          }),
           a('b25fe02d', 'You don’t have a message selected'),
           a('b81d9b9b', 'Choose one from your existing messages, or start a new one.'),
           a('hc73f03f', 'Your Account'),
@@ -2325,6 +2335,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('h1abfbcd', 'Connected accounts'),
           a('cad53943', 'Privacy and safety'),
           a('e908903a', 'Audience and tagging'),
+          a('f5e59e90', 'Protect your Tweets'),
           a('f56d108e', 'Photo tagging'),
           a('b38d81ae', 'Your Tweets'),
           a('f2bd9c47', 'Content you see'),
@@ -2346,6 +2357,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('gaac7109', 'Report Center'),
           a('bcd81cab', 'Preferences'),
           a('i647fb03', 'Filters'),
+          a('e75f25a8', 'Email notifications'),
           a('cf9b1669', 'Accessibility, display, and languages'),
           a('a776eed7', 'Autoplay'),
           a('d495680d', 'Languages'),
@@ -2368,7 +2380,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('dae57a41', 'Allow all'),
           a('i7cbc154', 'Allow some'),
           a('e3a761ee', 'Off'),
-          a('e435cdff', 'Try searching for password reset, notifications, etc'),
+          a('d94f12b5', 'Try searching for notifications, privacy, etc.'),
           a('c170a564', 'The term you entered did not bring up any results. Try a different search term.'),
           a('ba8f6f81', 'Search Settings'),
           a('cedbb01c', 'Legal'),
@@ -3332,6 +3344,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('db48309f', 'Switched to Personal account'),
           a('c701200b', 'Switched to Business account'),
           a('acd8da09', 'Switched to Creator account'),
+          a('e2760643', 'Currently not all modules are supported on all Twitter clients'),
           a('aaafffd9', 'Muted notifications'),
           a('j29ab12f', 'Mute notifications from people:'),
           a('jdfc82f6', 'You don’t follow'),
@@ -3366,7 +3379,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'When you turn on Tweet notifications from people you follow, you’ll get push notifications about their Tweets or live videos.',
           ),
           a('b68050dc', 'View users'),
-          a('e75f25a8', 'Email notifications'),
           a('b2c4ab0a', 'Related to you and your Tweets'),
           a('ic2ea6b5', 'From Twitter'),
           a('f823bbbe', 'For Verified Accounts only'),
@@ -3514,8 +3526,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('e440acda', 'Off-Twitter activity'),
           a('f6325f47', 'Off-Twitter activity'),
           a('j291883b', 'Personalization and data settings'),
-          a('id414293', 'Off-Twitter activity'),
-          a('b352177d', 'Personalization and data settings'),
+          a('id414293', 'Off-Twitter activity')
+        a('b352177d', 'Personalization and data settings'),
           a('b056d9dc', 'This is your account’s primary language setting.'),
           a('h68bc23c', 'These additional languages are used to personalize your experience.'),
           a(
@@ -3523,8 +3535,8 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'If you haven’t already specified a gender, this is the one associated with your account based on your profile and activity. This information won’t be displayed publicly.',
           ),
           a('de32365f', 'Female'),
-          a('b6ab31bd', 'Male')
-        a('b4568a3a', 'Add your gender'),
+          a('b6ab31bd', 'Male'),
+          a('b4568a3a', 'Add your gender'),
           a('c0be743d', 'Gender updated'),
           a('b7cb74e0', 'This is the gender that Twitter has most strongly associated with you.'),
           a('cdb0d3e6', 'Do not use this gender for personalization.'),
@@ -3878,7 +3890,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ddcd3d26', 'Loading session data'),
           a('d2f0f3fd', 'We can not find this session'),
           a('bab1f8b0', 'Tweets'),
-          a('f5e59e90', 'Protect your Tweets'),
           a(
             'i0310b4e',
             'Only show your Tweets to people who follow you. If selected, you will need to approve each new follower.',
@@ -4265,8 +4276,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
             'a9ee1ecc',
             'We’ve verified your Stripe account and you’re good to go. We’ll send you a notification as soon as Super Follows is enabled on your account.',
           ),
-          a('d6bfb60c', 'Looks like we still need some more information. To continue, please complete your account.'),
-          a('b9cbb370', 'Complete account'),
           a('ja884230', 'Set up your payout details'),
           a('af1b808d', 'Add a verified Stripe account before getting started with Super Follows.'),
           a('fe339750', 'Create Stripe account'),
@@ -4636,11 +4645,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('ffaf4649', 'Create anyway'),
           a('a0cc15fc', 'Create new Moment'),
           a('ja49bfd6', 'New Moment'),
-          a('e63ff1d5', 'Tweets I’ve liked'),
-          a('a42f33ba', 'Tweets by account'),
-          a('e8177e5d', 'Tweet search'),
-          a('dbaa0bee', 'Tweets from protected accounts can’t be used in Moments'),
-          a('e2c85754', 'Quote Tweets of a deleted Tweet can’t be used in Moments'),
           a('d8047cc7', 'Publish'),
           a('g57d6f17', 'Condensed view'),
           a('jd8462a5', 'Protected accounts can only create private Moments'),
@@ -4732,7 +4736,11 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           a('gb18f22f', 'Original'),
           a('f6326a45', 'Publish Moment to see added Tweets'),
           a('gce85231', 'Update Moment to see pending changes'),
-          a('ae7600c8', 'Moment is up to date')
+          a('ae7600c8', 'Moment is up to date'),
+          a('fea74b66', function (e) {
+            return '@' + e.screenName + '’s Moments'
+          }),
+          a('e14206c3', 'You haven’t created any Moments')
         function r(e, t) {
           for (var o = 0; o < t.length; o++) {
             var a = t[o]
@@ -4749,11 +4757,7 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
               return (e.__proto__ = t), e
             })(e, t)
         }
-        a('fea74b66', function (e) {
-          return '@' + e.screenName + '’s Moments'
-        }),
-          a('e14206c3', 'You haven’t created any Moments'),
-          a('d1e5e327', 'When you do, it’ll show up here.'),
+        a('d1e5e327', 'When you do, it’ll show up here.'),
           a('ee75768c', function (e) {
             return '@' + e.screenName + ' hasn’t created any Moments'
           }),
@@ -6017,16 +6021,16 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
           }),
           a('b140e3b1', 'Some conversations can get heavy'),
           a('icbb05dc', 'Don’t forget the human behind the screen.'),
-          a('g4d12383', 'Heads up')
-        a('fe5ab73c', 'Conversations like this can be intense. Don’t forget the human behind the screen.'),
+          a('g4d12383', 'Heads up'),
+          a('fe5ab73c', 'Conversations like this can be intense. Don’t forget the human behind the screen.'),
           a('fe0c6436', function (e) {
             return 'Only @' + e.screenName + '’s Twitter Circle can see this Tweet'
-          }),
-          a('h7a1a9de', function (e) {
-            return (
-              'You can see and reply to this Tweet because @' + e.screenName + ' has added you to their Twitter Circle.'
-            )
-          }),
+          })
+        a('h7a1a9de', function (e) {
+          return (
+            'You can see and reply to this Tweet because @' + e.screenName + ' has added you to their Twitter Circle.'
+          )
+        }),
           a('d7e50a66', 'Learn more'),
           a('e5e32275', function (e) {
             return 'Only people in @' + e.screenName + '’s Twitter Circle can see this Tweet'
@@ -7258,12 +7262,6 @@ window.__SCRIPTS_LOADED__['vendors~main'] &&
                 key: 'c3a1f2be',
                 get: function () {
                   return ['Are you sure you want to remove ', ' as a moderator?']
-                },
-              },
-              {
-                key: 'd35773be',
-                get: function () {
-                  return ['Control who can join your Community. ']
                 },
               },
               {

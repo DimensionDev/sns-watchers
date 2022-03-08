@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [107],
+  [109],
   {
     '0ULw': function (e, t, n) {
       'use strict'
@@ -60,7 +60,7 @@
       'use strict'
       n.r(t),
         n.d(t, 'sidebarLayoutScreenTitle', function () {
-          return _
+          return L
         }),
         n.d(t, 'TwitterArticleScreen', function () {
           return A
@@ -185,8 +185,8 @@
               : null,
           )
         }),
-        L = n('G1WX'),
-        _ = 'Twitter Article',
+        _ = n('G1WX'),
+        L = 'Twitter Article',
         A = function (e) {
           var t = e.fetchStatus,
             n = e.fetchTwitterArticle,
@@ -217,11 +217,11 @@
               return a.a.createElement(
                 C.a,
                 { style: B.container },
-                a.a.createElement(L.a, { fetchStatus: t, onRequestRetry: l, render: c }),
+                a.a.createElement(_.a, { fetchStatus: t, onRequestRetry: l, render: c }),
               )
             },
             sidebarContent: a.a.createElement(i.a, null),
-            title: _,
+            title: L,
           })
         },
         B = I.a.create(function (e) {
@@ -348,7 +348,7 @@
                 l.label,
               )
             : null,
-          L = o.a.createElement(s.a, { style: w.buttonContainer }, S, k)
+          _ = o.a.createElement(s.a, { style: w.buttonContainer }, S, k)
         return o.a.createElement(
           d.a,
           {
@@ -359,7 +359,7 @@
             withKeyboardNavigation: !0,
             withMask: !0,
           },
-          o.a.createElement(p.a, { leftControl: n ? x : I, rightControl: L, title: h }),
+          o.a.createElement(p.a, { leftControl: n ? x : I, rightControl: _, title: h }),
           o.a.createElement(s.a, { style: w.content }, t),
         )
       }
@@ -407,8 +407,8 @@
             }
           }),
         k = n('3XMw'),
-        L = n.n(k),
-        _ = n('x5Pi'),
+        _ = n.n(k),
+        L = n('x5Pi'),
         A = n('fs1G'),
         B = n('kXdP'),
         O = n('BLtI'),
@@ -421,7 +421,7 @@
         D = n('6Rrp'),
         V = n('0ULw'),
         j = n('pu5c'),
-        W = L.a.h6beb5fa,
+        W = _.a.h6beb5fa,
         K = function (e) {
           return e && e.preventDefault()
         },
@@ -454,7 +454,7 @@
                   a = t.withActions
                 if (r) {
                   var i,
-                    o = Object(_.f)(r, e.context.loggedInUserId)
+                    o = Object(L.f)(r, e.context.loggedInUserId)
                   return w.a.createElement(
                     M.a,
                     { style: G.tweet },
@@ -647,12 +647,13 @@
     },
     'Fcw+': function (e, t, n) {
       'use strict'
+      n.r(t)
       n('jQ3i'), n('x4t0')
       var r = n('ezF+'),
         a = n('VPAj'),
         i = n('kY28'),
         o = n('CUXw')
-      t.a = function (e) {
+      t.default = function (e) {
         var t = e.onClick,
           n = e.selectedTweetIds
         return r.g({
@@ -712,8 +713,8 @@
             },
           }
         }),
-        L = n('MWbm'),
-        _ = n('yw4N'),
+        _ = n('MWbm'),
+        L = n('yw4N'),
         A = n('TnY3'),
         B = n('cHvH'),
         O = n('3xLC'),
@@ -739,10 +740,10 @@
                 var t = e.props.children
                 return e.context.rootDetailPerColumnScroll
                   ? v.a.createElement(
-                      L.a,
+                      _.a,
                       { style: k.fill },
                       v.a.createElement(
-                        _.a,
+                        L.a,
                         { style: k.viewportView },
                         e._renderInlineNav({ isTwoColumnLayout: !0 }),
                         t,
@@ -825,7 +826,7 @@
                     x = n.title,
                     I = n.titleIconCell,
                     S = n.titleIconCellSize,
-                    _ = n.withDetailOpen,
+                    L = n.withDetailOpen,
                     A = n.withSearchBox,
                     B = n.withTweetButton,
                     O = 'root' === f,
@@ -835,7 +836,7 @@
                     z = O || (F && t),
                     P = O ? b.c : F ? b.a : void 0,
                     H = v.a.createElement(
-                      L.a,
+                      _.a,
                       { style: k.appBarContainer },
                       v.a.createElement(E.a, {
                         backLocation: o,
@@ -855,7 +856,7 @@
                       }),
                     ),
                     D =
-                      O || (M && _)
+                      O || (M && L)
                         ? null
                         : v.a.createElement(C.a.Configure, {
                             SideNavButton: r,
@@ -981,11 +982,11 @@
           return null
         },
         k = (n('z84I'), n('jQ3i'), n('x4t0'), n('LW0h'), n('2G9S'), n('G6rE')),
-        L = Object(c.a)().propsFromState(function () {
+        _ = Object(c.a)().propsFromState(function () {
           return { loggedInUser: k.e.selectLoggedInUser }
         }),
-        _ = n('KEM+'),
-        A = n.n(_),
+        L = n('KEM+'),
+        A = n.n(L),
         B = n('yiKp'),
         O = n.n(B),
         M = n('Fcw+'),
@@ -1015,7 +1016,7 @@
             },
           }
         }),
-        N = L(function (e) {
+        N = _(function (e) {
           var t,
             n = e.loggedInUser,
             r = e.onAddTweets,
@@ -1049,7 +1050,7 @@
                       O()(
                         O()({}, F.b[R.b.Tweet]),
                         {},
-                        { handlers: A()({}, z.a.Tweet, Object(M.a)({ onClick: t, selectedTweetIds: n })) },
+                        { handlers: A()({}, z.a.Tweet, Object(M.default)({ onClick: t, selectedTweetIds: n })) },
                       ),
                     ),
                   )
@@ -1270,8 +1271,8 @@
             I = T[1],
             S = o.a.useState(!1),
             k = a()(S, 2),
-            L = k[0],
-            _ = k[1]
+            _ = k[0],
+            L = k[1]
           o.a.useEffect(
             function () {
               c(u)
@@ -1302,7 +1303,7 @@
               [r, u, f],
             ),
             M = function () {
-              _(function (e) {
+              L(function (e) {
                 return !e
               })
             },
@@ -1345,7 +1346,7 @@
           return o.a.createElement(
             v.a,
             { rightControl: F, screenType: 'primaryDetail', title: 'Edit Twitter Article' },
-            L
+            _
               ? o.a.createElement(de.a, {
                   headline: 'Delete Twitter Article?',
                   onCancel: M,
@@ -1428,8 +1429,8 @@
         I = n('mjJ+'),
         S = n('t62R'),
         k = n('/yvb'),
-        L = n('FG+G'),
-        _ = n('IG7M'),
+        _ = n('FG+G'),
+        L = n('IG7M'),
         A = n('tn7R'),
         B = n('rHpw'),
         O = n('MWbm'),
@@ -1652,7 +1653,12 @@
                     onClick: e._handleTextSizeClick(t),
                   }
                 })
-                return x.a.createElement(I.a, { items: n, onCloseRequested: t, shouldCloseOnClick: !0 })
+                return x.a.createElement(I.a, {
+                  items: n,
+                  onCloseRequested: t,
+                  preventFocusShift: e._isEditorFocused(),
+                  shouldCloseOnClick: !0,
+                })
               }),
               C()(y()(e), '_setFieldTextInputRef', function (t) {
                 e.fieldTextInput = t
@@ -1700,8 +1706,8 @@
                         O.a,
                         { style: re.textSizeSelection },
                         x.a.createElement(S.b, { color: 'gray700', numberOfLines: 1 }, null == d ? void 0 : d.label),
-                        x.a.createElement(_.a, {
-                          Icon: L.a,
+                        x.a.createElement(L.a, {
+                          Icon: _.a,
                           iconSize: 'small',
                           preventFocusShift: this._isEditorFocused(),
                           renderActionMenu: this._renderActionMenu,
@@ -2068,8 +2074,8 @@
         I = n('3XMw'),
         S = n.n(I),
         k = n('tI3i'),
-        L = n.n(k),
-        _ = n('oQhu'),
+        _ = n.n(k),
+        L = n('oQhu'),
         A = n('rHpw'),
         B = n('aITJ'),
         O = n('MWbm'),
@@ -2127,7 +2133,7 @@
               g()(
                 p()(r),
                 '_getTextInputStyle',
-                Object(_.a)(function (e) {
+                Object(L.a)(function (e) {
                   return [U.root, !e && U.disabled]
                 }),
               ),
@@ -2237,12 +2243,12 @@
                   i = !!r,
                   o = 'string' == typeof e.value,
                   l = 'string' == typeof t
-                L()(
+                _()(
                   !(!l && o && !i),
                   'A controlled component, a component with a value prop, must have an onChange handler. The value prop cannot be undefined.',
                 ),
-                  L()(!(n && a && a > n), 'Max length should be equal or greater than valid length.'),
-                  L()(
+                  _()(!(n && a && a > n), 'Max length should be equal or greater than valid length.'),
+                  _()(
                     !((void 0 !== n && n <= 0) || (void 0 !== a && a <= 0)),
                     'Set editable to false instead of limiting the valid character count to 0.',
                   )

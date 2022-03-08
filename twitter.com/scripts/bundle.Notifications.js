@@ -1,26 +1,26 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [75],
+  [77],
   {
     '+Bsv': function (t, e, n) {
       'use strict'
       var a = n('ERkP'),
         i = n.n(a),
-        r = n('3XMw'),
-        o = n.n(r),
+        o = n('3XMw'),
+        r = n.n(o),
         s = n('M2x3'),
         c = 'settingsAppBar',
-        u = n('/yvb'),
-        l = n('rHpw'),
-        d = o.a.bb081ea1,
-        p = { viewType: 'settings_button' },
+        l = n('/yvb'),
+        u = n('rHpw'),
+        p = r.a.bb081ea1,
+        d = { viewType: 'settings_button' },
         f = i.a.memo(function (t) {
           var e = t.onPress,
             n = t.pullRight,
             a = t.to
-          return i.a.createElement(u.a, {
-            accessibilityLabel: d,
-            behavioralEventContext: p,
-            hoverLabel: { label: d },
+          return i.a.createElement(l.a, {
+            accessibilityLabel: p,
+            behavioralEventContext: d,
+            hoverLabel: { label: p },
             icon: i.a.createElement(s.a, null),
             link: a,
             onPress: e,
@@ -30,7 +30,7 @@
             type: 'primaryText',
           })
         }),
-        m = l.a.create(function (t) {
+        m = u.a.create(function (t) {
           return { button: { marginVertical: 'calc(-'.concat(t.spaces.space12, ')') } }
         })
       e.a = f
@@ -38,18 +38,18 @@
     QuZr: function (t, e, n) {
       'use strict'
       n.d(e, 'a', function () {
-        return gt
+        return yt
       })
       var a,
         i,
-        r,
         o,
+        r,
         s = n('97Jx'),
         c = n.n(s),
-        u = n('VrFO'),
-        l = n.n(u),
-        d = n('Y9Ll'),
-        p = n.n(d),
+        l = n('VrFO'),
+        u = n.n(l),
+        p = n('Y9Ll'),
+        d = n.n(p),
         f = n('1Pcy'),
         m = n.n(f),
         y = n('5Yy7'),
@@ -58,20 +58,20 @@
         g = n.n(b),
         v = n('KEM+'),
         _ = n.n(v),
-        w = (n('2G9S'), n('ERkP')),
-        T = n.n(w),
+        T = (n('2G9S'), n('ERkP')),
+        w = n.n(T),
         E = n('oQhu'),
-        I = n('z2Pn'),
-        A = n('rxPX'),
-        P = Object(E.a)(function (t, e) {
+        M = n('z2Pn'),
+        P = n('rxPX'),
+        A = Object(E.a)(function (t, e) {
           return e && e.notificationsModule(t)
         }),
-        C = n('FIs5'),
-        M = n('yiKp'),
-        O = n.n(M),
-        S = n('ezF+'),
+        k = n('FIs5'),
+        S = n('yiKp'),
+        I = n.n(S),
+        C = n('ezF+'),
         x = n('QIgh'),
-        k = n('8UdT'),
+        O = n('8UdT'),
         L = n('AP4B'),
         V =
           (n('lTEL'),
@@ -81,27 +81,22 @@
           n('kYxP'),
           {
             loader: function () {
-              return Promise.all([n.e(5), n.e(226)]).then(n.bind(null, 'RfPh'))
+              return Promise.all([n.e(0), n.e(3), n.e(4), n.e(7), n.e(228)]).then(n.bind(null, 'RfPh'))
             },
             loaderKey: 'defaultNotificationLoader',
             strategy: n('XBtf').a.Critical,
           }),
-        j = S.e(V),
-        R = n('meql'),
-        N = n('b5s6'),
-        U = function (t) {
-          return Object(R.a)(O()(O()({}, t), {}, { component: N.a }))
-        },
-        B = n('rHpw'),
-        D = n('VrCx'),
-        F = n('ReVx'),
-        Q =
+        j = C.e(V),
+        R = n('rHpw'),
+        U = n('VrCx'),
+        N = n('xWpm'),
+        B =
           ((i = {}),
-          _()(i, k.b.Notification, j),
+          _()(i, O.b.Notification, j),
           _()(
             i,
-            k.b.Tweet,
-            S.c({
+            O.b.Tweet,
+            C.c({
               selectDisplayType: function (t) {
                 return t.content.displayType
               },
@@ -109,8 +104,8 @@
                 ((a = {}),
                 _()(
                   a,
-                  D.a.Tweet,
-                  Object(F.a)({
+                  U.a.Tweet,
+                  Object(N.f)({
                     allowDownvote: !0,
                     createAdditionalProps: function (t, e) {
                       return { isUnread: e.isUnread }
@@ -129,10 +124,10 @@
                 ),
                 _()(
                   a,
-                  D.a.QuotedTweet,
-                  U({
+                  U.a.QuotedTweet,
+                  Object(N.c)({
                     createAdditionalProps: function (t) {
-                      return { isCondensed: !0, style: J.quotedTweet }
+                      return { isCondensed: !0, style: Q.quotedTweet }
                     },
                   }),
                 ),
@@ -140,8 +135,8 @@
             }),
           ),
           i),
-        H = O()(O()(O()({}, Object(x.a)({ tweetDismissable: !0, withMuteConversation: !0 })), Q), L.a),
-        J = B.a.create(function (t) {
+        D = I()(I()(I()({}, Object(x.a)({ tweetDismissable: !0, withMuteConversation: !0 })), B), L.a),
+        Q = R.a.create(function (t) {
           return {
             quotedTweet: {
               marginHorizontal: t.componentDimensions.gutterHorizontal,
@@ -150,16 +145,16 @@
             },
           }
         }),
-        G = n('3XMw'),
-        K = n.n(G),
-        X = n('f42t'),
-        q = n('EUHl'),
-        Y = n('5waQ'),
-        z = n('VE3M'),
-        W = n('yoO3'),
-        Z = n('fTQJ'),
-        $ = n('v6aA'),
-        tt =
+        F = n('3XMw'),
+        G = n.n(F),
+        H = n('f42t'),
+        J = n('EUHl'),
+        K = n('5waQ'),
+        q = n('VE3M'),
+        X = n('yoO3'),
+        Y = n('fTQJ'),
+        z = n('v6aA'),
+        W =
           (n('jQ3i'),
           {
             notifications_alt_a: [
@@ -197,58 +192,58 @@
               },
             ],
           }),
-        et = {
+        Z = {
           notifications_alt_a:
-            ((r = {}),
-            _()(r, Y.a.All, { headerMessage: K.a.b6a43e77, bodyMessage: K.a.f269c47d, buttonText: K.a.g6871092 }),
-            _()(r, Y.a.Mentions, { headerMessage: K.a.e577e1a1, bodyMessage: K.a.b91e5a3a }),
-            r),
-          notifications_alt_b:
             ((o = {}),
-            _()(o, Y.a.All, { headerMessage: K.a.g264f125, bodyMessage: K.a.a3420a9b, buttonText: K.a.g6871092 }),
-            _()(o, Y.a.Mentions, { headerMessage: K.a.ef0b8028, bodyMessage: K.a.b91e5a3a }),
+            _()(o, K.a.All, { headerMessage: G.a.b6a43e77, bodyMessage: G.a.f269c47d, buttonText: G.a.g6871092 }),
+            _()(o, K.a.Mentions, { headerMessage: G.a.e577e1a1, bodyMessage: G.a.b91e5a3a }),
             o),
+          notifications_alt_b:
+            ((r = {}),
+            _()(r, K.a.All, { headerMessage: G.a.g264f125, bodyMessage: G.a.a3420a9b, buttonText: G.a.g6871092 }),
+            _()(r, K.a.Mentions, { headerMessage: G.a.ef0b8028, bodyMessage: G.a.b91e5a3a }),
+            r),
         },
-        nt = function (t) {
+        $ = function (t) {
           return ['control', 'notifications_alt_a', 'notifications_alt_b'].includes(t)
         },
-        at = function (t) {
-          return tt[t]
+        tt = function (t) {
+          return W[t]
         },
-        it = function (t, e, n) {
+        et = function (t, e, n) {
           var a, i
-          return null === (a = et[e]) || void 0 === a || null === (i = a[n]) || void 0 === i ? void 0 : i[t]
+          return null === (a = Z[e]) || void 0 === a || null === (i = a[n]) || void 0 === i ? void 0 : i[t]
         },
-        rt = function (t, e) {
-          return it('headerMessage', t, e)
+        nt = function (t, e) {
+          return et('headerMessage', t, e)
         },
-        ot = function (t, e) {
-          return it('bodyMessage', t, e)
+        at = function (t, e) {
+          return et('bodyMessage', t, e)
         },
-        st = function (t, e) {
-          return it('buttonText', t, e)
+        it = function (t, e) {
+          return et('buttonText', t, e)
         },
-        ct = K.a.eb75875d,
-        ut = K.a.e9f1fbcb,
-        lt = K.a.f287bb3a,
-        dt = K.a.h994ec4f,
-        pt = K.a.c06d4305,
-        ft = K.a.bfdb3c12,
-        mt = K.a.h1d919eb,
-        yt = K.a.ib4510fd,
-        ht = (function (t) {
+        ot = G.a.eb75875d,
+        rt = G.a.e9f1fbcb,
+        st = G.a.f287bb3a,
+        ct = G.a.h994ec4f,
+        lt = G.a.c06d4305,
+        ut = G.a.bfdb3c12,
+        pt = G.a.h1d919eb,
+        dt = G.a.ib4510fd,
+        ft = (function (t) {
           h()(n, t)
           var e = g()(n)
           function n() {
             var t
-            l()(this, n)
-            for (var a = arguments.length, i = new Array(a), r = 0; r < a; r++) i[r] = arguments[r]
+            u()(this, n)
+            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
             return (
               (t = e.call.apply(e, [this].concat(i))),
               _()(m()(t), '_getNewItemsPillLabel', function () {
                 switch (t.props.notificationsType) {
-                  case Y.a.All:
-                    return yt
+                  case K.a.All:
+                    return dt
                   default:
                     return
                 }
@@ -256,45 +251,45 @@
               _()(m()(t), '_getEmptyMessageBody', function () {
                 var e = t.context.featureSwitches.isTrue('responsive_web_reactions_enabled')
                 switch (t.props.notificationsType) {
-                  case Y.a.Mentions:
-                    return nt(t._emptyStateVariant) && 'control' !== t._emptyStateVariant
-                      ? ot(t._emptyStateVariant, t.props.notificationsType)
-                      : pt
-                  case Y.a.Verified:
-                    return e ? mt : ft
-                  default:
-                    return nt(t._emptyStateVariant) && 'control' !== t._emptyStateVariant
-                      ? ot(t._emptyStateVariant, t.props.notificationsType)
-                      : e
-                      ? dt
+                  case K.a.Mentions:
+                    return $(t._emptyStateVariant) && 'control' !== t._emptyStateVariant
+                      ? at(t._emptyStateVariant, t.props.notificationsType)
                       : lt
+                  case K.a.Verified:
+                    return e ? pt : ut
+                  default:
+                    return $(t._emptyStateVariant) && 'control' !== t._emptyStateVariant
+                      ? at(t._emptyStateVariant, t.props.notificationsType)
+                      : e
+                      ? ct
+                      : st
                 }
               }),
               _()(m()(t), '_getEmptyMessageHeader', function () {
-                return nt(t._emptyStateVariant) && 'control' !== t._emptyStateVariant
-                  ? rt(t._emptyStateVariant, t.props.notificationsType)
-                  : ut
+                return $(t._emptyStateVariant) && 'control' !== t._emptyStateVariant
+                  ? nt(t._emptyStateVariant, t.props.notificationsType)
+                  : rt
               }),
               _()(m()(t), '_renderEmptyTimeline', function () {
                 if (
                   ((t._emptyStateVariant = t.context.featureSwitches.getStringValue(
                     'responsive_web_notifications_empty_state_redesign_variant',
                   )),
-                  nt(t._emptyStateVariant) && 'control' !== t._emptyStateVariant)
+                  $(t._emptyStateVariant) && 'control' !== t._emptyStateVariant)
                 ) {
-                  var e = st(t._emptyStateVariant, t.props.notificationsType)
-                  return T.a.createElement(
-                    C.a,
+                  var e = it(t._emptyStateVariant, t.props.notificationsType)
+                  return w.a.createElement(
+                    k.a,
                     c()({}, e && { buttonLink: '/i/connect_people', buttonText: e }, {
                       header: t._getEmptyMessageHeader(),
-                      imageVariants: at(t._emptyStateVariant),
+                      imageVariants: tt(t._emptyStateVariant),
                       message: t._getEmptyMessageBody(),
                       onButtonPress: t._handleEmptyTimelineButtonPress,
                       onImpression: t._handleEmptyTimelineImpression,
                     }),
                   )
                 }
-                return T.a.createElement(C.a, {
+                return w.a.createElement(k.a, {
                   header: t._getEmptyMessageHeader(),
                   message: t._getEmptyMessageBody(),
                   onImpression: t._handleEmptyTimelineImpression,
@@ -313,7 +308,7 @@
             )
           }
           return (
-            p()(n, [
+            d()(n, [
               {
                 key: 'componentDidMount',
                 value: function () {
@@ -328,7 +323,7 @@
                   var t = this.props,
                     e = t.markAllAsRead,
                     n = t.notificationsType
-                  this._updateLastReadIfNeeded(), n === Y.a.All && e()
+                  this._updateLastReadIfNeeded(), n === K.a.All && e()
                 },
               },
               {
@@ -336,18 +331,18 @@
                 value: function () {
                   var t = this.props.notificationsModule
                   return t
-                    ? T.a.createElement(
-                        W.a,
+                    ? w.a.createElement(
+                        X.a,
                         null,
-                        T.a.createElement(Z.a, {
-                          entryConfiguration: H,
+                        w.a.createElement(Y.a, {
+                          entryConfiguration: D,
                           key: 'notification-timeline',
                           module: t,
                           newTweetsPillLabel: this._getNewItemsPillLabel(),
-                          newTweetsPillMode: q.a.CLIENT,
+                          newTweetsPillMode: J.a.CLIENT,
                           onAtTop: this._handleAtTop,
                           renderEmptyState: this._renderEmptyTimeline,
-                          title: ct,
+                          title: ot,
                         }),
                       )
                     : null
@@ -366,59 +361,59 @@
             ]),
             n
           )
-        })(T.a.Component)
-      _()(ht, 'contextType', $.a)
-      var bt = function (t) {
-          return Object(X.a)(
+        })(w.a.Component)
+      _()(ft, 'contextType', z.a)
+      var mt = function (t) {
+          return Object(H.a)(
             (function (t) {
-              return Object(A.a)()
+              return Object(P.a)()
                 .propsFromState(function () {
                   return {
                     unreadCount: function (e, n) {
                       var a,
                         i = n.ntabData
-                      return null === (a = P(t, i)) || void 0 === a ? void 0 : a.selectUnreadEntriesCount(e)
+                      return null === (a = A(t, i)) || void 0 === a ? void 0 : a.selectUnreadEntriesCount(e)
                     },
                   }
                 })
                 .adjustStateProps(function (e, n) {
                   var a = e.unreadCount,
                     i = n.ntabData
-                  return { ntabData: null, notificationsModule: P(t, i), notificationsType: t, unreadCount: a }
+                  return { ntabData: null, notificationsModule: A(t, i), notificationsType: t, unreadCount: a }
                 })
                 .propsFromActions(function (e) {
                   var n,
                     a = e.ntabData
                   return {
-                    markAllAsRead: null === (n = P(t, a)) || void 0 === n ? void 0 : n.markAllAsRead,
+                    markAllAsRead: null === (n = A(t, a)) || void 0 === n ? void 0 : n.markAllAsRead,
                     updateLastRead: a && a.updateLastSeenCursor,
-                    setNotificationsType: I.j,
+                    setNotificationsType: M.j,
                   }
                 })
                 .withAnalytics({ page: 'ntab', section: t })
-            })(t)(ht),
-            { ntabData: z.a },
+            })(t)(ft),
+            { ntabData: q.a },
           )
         },
-        gt = function (t) {
+        yt = function (t) {
           var e = t.notificationsType
-          return bt(e)
+          return mt(e)
         }
     },
     WR6I: function (t, e, n) {
       'use strict'
       n.r(e),
         n.d(e, 'NotificationsScreen', function () {
-          return U
+          return N
         })
       n('lTEL'), n('7x/C'), n('JtPf'), n('87if'), n('kYxP'), n('2G9S')
       var a = n('ERkP'),
         i = n.n(a),
-        r = n('v6aA'),
-        o = n('es0u'),
+        o = n('v6aA'),
+        r = n('es0u'),
         s = n('G6rE'),
         c = n('rxPX'),
-        u = Object(c.a)()
+        l = Object(c.a)()
           .propsFromState(function () {
             return { loggedInUser: s.e.selectLoggedInUser }
           })
@@ -427,9 +422,9 @@
             return { isLoggedInUserVerified: !!e && e.verified }
           })
           .withAnalytics({ page: 'ntab' }),
-        l = n('pnqf'),
-        d = n('dwig'),
-        p = n('0+qk'),
+        u = n('pnqf'),
+        p = n('dwig'),
+        d = n('0+qk'),
         f = n('3XMw'),
         m = n.n(f),
         y = n('yoO3'),
@@ -438,56 +433,56 @@
         g = n('+Bsv'),
         v = n('VS6U'),
         _ = n('mw9i'),
-        w = n('k/OQ'),
-        T = n('zCf4'),
+        T = n('k/OQ'),
+        w = n('zCf4'),
         E = m.a.eb75875d,
-        I = m.a.f8321d82,
-        A = m.a.cdb53d79,
-        P = m.a.h3290871,
-        C = m.a.a98ba778,
-        M = '/notifications',
-        O = '/notifications/mentions',
-        S = '/notifications/verified',
+        M = m.a.f8321d82,
+        P = m.a.cdb53d79,
+        A = m.a.h3290871,
+        k = m.a.a98ba778,
+        S = '/notifications',
+        I = '/notifications/mentions',
+        C = '/notifications/verified',
         x = i.a.createElement(g.a, { pullRight: !0, to: '/settings/notifications' }),
-        k = m.a.eb75875d,
-        L = Object(l.a)(
+        O = m.a.eb75875d,
+        L = Object(u.a)(
           Object(b.a)(function () {
             return Promise.resolve().then(n.bind(null, 'hCg+'))
           }),
         ),
-        V = Object(l.a)(
+        V = Object(u.a)(
           Object(b.a)(function () {
             return Promise.resolve().then(n.bind(null, 'lGAB'))
           }),
         ),
-        j = Object(l.a)(
+        j = Object(u.a)(
           Object(b.a)(function () {
             return Promise.resolve().then(n.bind(null, 'srGC'))
           }),
         ),
         R = [
-          { to: M, key: I, label: I, retainScrollPosition: !1 },
-          { to: O, key: A, label: A, retainScrollPosition: !1 },
+          { to: S, key: M, label: M, retainScrollPosition: !1 },
+          { to: I, key: P, label: P, retainScrollPosition: !1 },
         ],
-        N = [].concat(R, [{ to: S, key: P, label: P, retainScrollPosition: !1 }]),
-        U = function (t) {
+        U = [].concat(R, [{ to: C, key: A, label: A, retainScrollPosition: !1 }]),
+        N = function (t) {
           var e,
             n,
             a = i.a
-              .useContext(r.a)
+              .useContext(o.a)
               .featureSwitches.isTrue('responsive_web_ntab_verified_mentions_vit_internal_dogfood'),
             s = t.history,
             c = t.isLoggedInUserVerified,
-            u = t.location,
-            l = c || a,
+            l = t.location,
+            u = c || a,
             f = i.a.createElement(
-              T.d,
+              w.d,
               null,
-              i.a.createElement(T.b, { component: L, exact: !0, path: M }),
-              i.a.createElement(T.b, { component: V, exact: !0, path: O }),
-              i.a.createElement(T.b, { component: j, exact: !0, path: S }),
+              i.a.createElement(w.b, { component: L, exact: !0, path: S }),
+              i.a.createElement(w.b, { component: V, exact: !0, path: I }),
+              i.a.createElement(w.b, { component: j, exact: !0, path: C }),
             )
-          return u.pathname !== S || l
+          return l.pathname !== C || u
             ? i.a.createElement(
                 y.a,
                 null,
@@ -495,87 +490,17 @@
                   documentTitle: E,
                   history: s,
                   primaryContent:
-                    ((n = i.a.createElement(p.a, { history: s })),
-                    i.a.createElement(d.a, { component: _.a, fab: n }, f)),
+                    ((n = i.a.createElement(d.a, { history: s })),
+                    i.a.createElement(p.a, { component: _.a, fab: n }, f)),
                   rightControl: x,
-                  secondaryBar: ((e = l ? N : R), i.a.createElement(w.a, { accessibilityLabel: C, links: e })),
-                  sidebarContent: i.a.createElement(o.a, null),
-                  title: k,
+                  secondaryBar: ((e = u ? U : R), i.a.createElement(T.a, { accessibilityLabel: k, links: e })),
+                  sidebarContent: i.a.createElement(r.a, null),
+                  title: O,
                 }),
               )
-            : i.a.createElement(h.a, { to: M })
+            : i.a.createElement(h.a, { to: S })
         }
-      e.default = u(U)
-    },
-    b5s6: function (t, e, n) {
-      'use strict'
-      var a = n('97Jx'),
-        i = n.n(a),
-        r = n('m3Bd'),
-        o = n.n(r),
-        s = n('ERkP'),
-        c = n.n(s),
-        u = n('v6aA'),
-        l = n('XOJV'),
-        d = n('eSoz'),
-        p = n('rxPX'),
-        f = n('0KEI'),
-        m = function (t, e) {
-          return e.tweetId
-        },
-        y = function (t, e) {
-          var n = e.tweetId,
-            a = n && l.a.select(t, n)
-          return a ? Object(d.g)(t, a) : void 0
-        },
-        h = Object(p.a)()
-          .propsFromState(function () {
-            return { community: y, hydratedTweet: l.a.createHydratedTweetSelector(m) }
-          })
-          .propsFromActions(function () {
-            return {
-              createLocalApiErrorHandler: Object(f.createLocalApiErrorHandlerWithContextFactory)(
-                'QUOTE_TWEET_CONTAINER',
-              ),
-              fetchCommunityIfNeeded: d.c.fetchOneIfNeeded,
-            }
-          }),
-        b = n('YeIG'),
-        g = n('uCxL'),
-        v = n('x5Pi'),
-        _ = ['community', 'createLocalApiErrorHandler', 'fetchCommunityIfNeeded', 'hydratedTweet', 'tweetId'],
-        w = h(function (t) {
-          var e = t.community,
-            n = t.createLocalApiErrorHandler,
-            a = t.fetchCommunityIfNeeded,
-            r = t.hydratedTweet,
-            s = (t.tweetId, o()(t, _)),
-            l = c.a.useContext(u.a),
-            d = l.featureSwitches,
-            p = l.loggedInUserId,
-            f = null == r ? void 0 : r.community_id_str
-          c.a.useEffect(
-            function () {
-              f && Object(b.a)(e) && a(f).catch(n())
-            },
-            [e, f, n, a],
-          )
-          var m = d.isTrue('responsive_web_alt_text_badge_enabled'),
-            y = r && Object(v.f)(r, p, e),
-            h = y && Object(v.e)(y),
-            w = d.isTrue('responsive_web_reactions_enabled')
-          return c.a.createElement(
-            g.a,
-            i()({}, s, {
-              loggedInUserId: p,
-              shouldShowAltLabelAlways: m,
-              socialContextProps: h,
-              tweet: r,
-              withReactions: w,
-            }),
-          )
-        })
-      e.a = w
+      e.default = l(N)
     },
     f42t: function (t, e, n) {
       'use strict'
@@ -584,14 +509,14 @@
       })
       var a = n('97Jx'),
         i = n.n(a),
-        r = n('VrFO'),
-        o = n.n(r),
+        o = n('VrFO'),
+        r = n.n(o),
         s = n('Y9Ll'),
         c = n.n(s),
-        u = n('1Pcy'),
-        l = n.n(u),
-        d = n('5Yy7'),
-        p = n.n(d),
+        l = n('1Pcy'),
+        u = n.n(l),
+        p = n('5Yy7'),
+        d = n.n(p),
         f = n('2VqO'),
         m = n.n(f),
         y = n('KEM+'),
@@ -609,13 +534,13 @@
           n('ERkP')),
         g = n.n(b),
         v = (function (t) {
-          p()(n, t)
+          d()(n, t)
           var e = m()(n)
           function n() {
             var t
-            o()(this, n)
-            for (var a = arguments.length, i = new Array(a), r = 0; r < a; r++) i[r] = arguments[r]
-            return (t = e.call.apply(e, [this].concat(i))), h()(l()(t), 'state', { isLoaded: !1 }), t
+            r()(this, n)
+            for (var a = arguments.length, i = new Array(a), o = 0; o < a; o++) i[o] = arguments[o]
+            return (t = e.call.apply(e, [this].concat(i))), h()(u()(t), 'state', { isLoaded: !1 }), t
           }
           return (
             c()(n, [
@@ -704,14 +629,14 @@
         })
       var a = n('KEM+'),
         i = n.n(a),
-        r = n('yiKp'),
-        o = n.n(r),
+        o = n('yiKp'),
+        r = n.n(o),
         s = n('m3Bd'),
         c = n.n(s),
-        u = n('vWJI'),
-        l = n('k49u'),
-        d = n('0KEI'),
-        p = n('UtAB'),
+        l = n('vWJI'),
+        u = n('k49u'),
+        p = n('0KEI'),
+        d = n('UtAB'),
         f = n('fs1G'),
         m = n('5waQ'),
         y = n('ZNT5'),
@@ -727,28 +652,28 @@
             getEndpointParams: function (e) {
               e.polling
               var n = c()(e, h)
-              return o()({ type: t }, n)
+              return r()({ type: t }, n)
             },
             context: 'FETCH_NOTIFICATIONS_TIMELINE',
             perfKey: 'notifications',
-            postFetchAction: p.a,
+            postFetchAction: d.a,
             staleIntervalMs: 5e3,
           })
         },
         v = function () {
           var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : m.a.All
           return function (e, n, a) {
-            var r = a.api,
-              o = g(t),
-              s = o && u.e(o.selectEntries(n()))
+            var o = a.api,
+              r = g(t),
+              s = r && l.e(r.selectEntries(n()))
             if (s) {
-              var c = { cursor: u.g(s), type: t },
-                p = e(
-                  Object(d.createLocalApiErrorHandlerWithContextFactory)(b)(
-                    i()({}, l.a.AppInReadOnlyMode, { customAction: f.a }),
+              var c = { cursor: l.g(s), type: t },
+                d = e(
+                  Object(p.createLocalApiErrorHandlerWithContextFactory)(b)(
+                    i()({}, u.a.AppInReadOnlyMode, { customAction: f.a }),
                   ),
                 )
-              r.URT.updateNotificationsLastSeenCursor(c).catch(p)
+              o.URT.updateNotificationsLastSeenCursor(c).catch(d)
             }
           }
         }

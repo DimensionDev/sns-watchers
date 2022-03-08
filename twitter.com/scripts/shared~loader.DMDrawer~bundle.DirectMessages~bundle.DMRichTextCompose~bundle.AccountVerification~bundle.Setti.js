@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [4],
+  [6],
   {
     '07FG': function (e, t, n) {
       'use strict'
@@ -1287,15 +1287,15 @@
         l = Object(c.a)({
           loader: function () {
             return d.a.emoji.then(function () {
-              return Promise.all([n.e(0), n.e(18), n.e(210)]).then(n.bind(null, '5RdJ'))
+              return Promise.all([n.e(0), n.e(18), n.e(212)]).then(n.bind(null, '5RdJ'))
             })
           },
           renderPlaceholder: function (e, t) {
             return o.a.createElement(s.a, { hasError: e, onRetry: t })
           },
         }),
-        p = n.p + 'twemoji_sprite.8d8021b5.png',
-        f = n.p + 'twemoji_sprite_high_res.709fdfa5.png',
+        p = n.p + 'twemoji_sprite.6d90d9d5.png',
+        f = n.p + 'twemoji_sprite_high_res.0b0faef5.png',
         m = n('rHpw'),
         v = n('U+bB'),
         h = n('kLqS'),

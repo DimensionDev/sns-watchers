@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [83],
+  [85],
   {
     '07FG': function (e, t, n) {
       'use strict'
@@ -1191,20 +1191,20 @@
         },
         l = function (e) {
           var t = e.message_data,
-            n = c.d.UNKNOWN,
+            n = c.e.UNKNOWN,
             r = (t && t.attachment) || {}
           return (
             r.tweet
-              ? (n = c.d.TWEET)
+              ? (n = c.e.TWEET)
               : r.photo
-              ? (n = c.d.PHOTO)
+              ? (n = c.e.PHOTO)
               : r.animated_gif
-              ? (n = c.d.GIF)
+              ? (n = c.e.GIF)
               : r.video
-              ? (n = r.video.audio_only ? c.d.VOICE : c.d.VIDEO)
+              ? (n = r.video.audio_only ? c.e.VOICE : c.e.VIDEO)
               : r.card
-              ? (n = c.d.CARD)
-              : null != t && t.text && (n = c.d.TEXT),
+              ? (n = c.e.CARD)
+              : null != t && t.text && (n = c.e.TEXT),
             n
           )
         }
@@ -1214,7 +1214,7 @@
         })
       }
       function m(e) {
-        return e === i.d.SECONDARY ? c.c.REQUESTS : e === i.d.TERTIARY ? c.c.LOW_QUALITY : c.c.PRIMARY
+        return e === i.d.SECONDARY ? c.d.REQUESTS : e === i.d.TERTIARY ? c.d.LOW_QUALITY : c.d.PRIMARY
       }
       function f(e) {
         return e.isTrue('dm_voice_rendering_enabled')

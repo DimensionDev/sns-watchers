@@ -1,5 +1,5 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [190, 207],
+  [192, 209],
   {
     '0af8': function (e, t, n) {
       'use strict'
@@ -113,14 +113,14 @@
                     n = e.position,
                     i = e.stickyThreshold,
                     o = e.stickyTop,
-                    r = R[n],
+                    r = E[n],
                     a = window.devicePixelRatio || 1,
                     s = k({ cssPixels: i, dpr: a }),
                     c = k({ cssPixels: t, dpr: a }),
                     l = { top: o ? ''.concat(s, 'px') : null, bottom: o ? null : ''.concat(s, 'px') }
                   return v.a.createElement(
                     O.a,
-                    { ref: this._setContainerRef, style: [R.container, { minHeight: this.state.contentHeight }] },
+                    { ref: this._setContainerRef, style: [E.container, { minHeight: this.state.contentHeight }] },
                     v.a.createElement(O.a, { style: { marginTop: ''.concat(c, 'px') } }),
                     v.a.createElement(
                       O.a,
@@ -209,7 +209,7 @@
           )
         })(v.a.PureComponent)
       f()(x, 'contextType', _.a), f()(x, 'defaultProps', { distanceFromBottom: 10 })
-      var R = w.a.create(function (e) {
+      var E = w.a.create(function (e) {
         return {
           container: { height: '100%' },
           sticky: { position: 'sticky' },
@@ -246,8 +246,8 @@
         O = n('3XMw'),
         k = n.n(O),
         x = n('Rp9C'),
-        R = n('rHpw'),
-        E = n('MWbm'),
+        E = n('rHpw'),
+        R = n('MWbm'),
         I = n('lP98'),
         H = n('RqPI'),
         P = n('rxPX'),
@@ -298,7 +298,7 @@
             r = i.length > 3,
             a = '/i/connect_people?user_id='.concat(n)
           return _.a.createElement(
-            E.a,
+            R.a,
             { accessibilityLabel: B, accessibilityRole: 'complementary' },
             _.a.createElement(j.b, { text: o ? Y : B }),
             _.a.createElement(A.a, { displayMode: U.a.UserCompact, userIds: i.slice(0, 3), withItemBorder: !0 }),
@@ -367,7 +367,7 @@
                   return t === w.a.FAILED || this._hasEmptySuggestionList()
                     ? null
                     : _.a.createElement(
-                        E.a,
+                        R.a,
                         { style: [G.root, n] },
                         _.a.createElement(b.a, {
                           accessibilityLabel: V,
@@ -401,7 +401,7 @@
             n
           )
         })(_.a.PureComponent),
-        G = R.a.create(function (e) {
+        G = E.a.create(function (e) {
           return { root: { minHeight: '15rem' } }
         }),
         Z = F(J)
@@ -448,8 +448,8 @@
         O = n('jHwr'),
         k = n('VY6S'),
         x = n('w9LO'),
-        R = n('//dC'),
-        E = n('lHOd'),
+        E = n('//dC'),
+        R = n('lHOd'),
         I = n('Oe3h'),
         H = n('0FVZ'),
         P = n('7N4s'),
@@ -542,10 +542,10 @@
                     O = l - p >= t,
                     k = c - f >= e,
                     x = o.props.preferredVerticalOrientation,
-                    R = (function (e) {
+                    E = (function (e) {
                       return N.a.getConstants().isRTL ? ('left' === e ? 'right' : 'left') : e
                     })(o.props.preferredHorizontalOrientation),
-                    E =
+                    R =
                       o.state.verticalOrientation ||
                       (function (e) {
                         var t = e.canOrientDown,
@@ -560,12 +560,12 @@
                           n = e.canOrientRight,
                           i = e.horizontalPreference
                         return !t || ('left' !== i && n) ? 'right' : 'left'
-                      })({ horizontalPreference: R, canOrientLeft: w, canOrientRight: O }),
+                      })({ horizontalPreference: E, canOrientLeft: w, canOrientRight: O }),
                     H = o.props.isFixed ? p : y,
                     P = o.props.isFixed ? f : g,
-                    L = 'up' === E ? P + h - e : P,
+                    L = 'up' === R ? P + h - e : P,
                     S = 'left' === I ? l - H - m - v : l - H - t - v
-                  o.setState({ top: Math.max(L, 0), right: S, verticalOrientation: E, horizontalOrientation: I })
+                  o.setState({ top: Math.max(L, 0), right: S, verticalOrientation: R, horizontalOrientation: I })
                 }
               }),
               (o.state = Object.freeze({})),
@@ -598,75 +598,77 @@
                     r = t.children,
                     a = t.isFixed,
                     s = t.onDismiss,
-                    c = t.withKeyboardNavigation,
-                    l = this.state,
-                    d = l.right,
-                    u = l.top,
-                    h = l.verticalOrientation,
-                    p = void 0 === u,
-                    f = 'calc(100vh - '.concat(u || 0, 'px)'),
-                    m = [
+                    c = t.preventFocusShift,
+                    l = t.withKeyboardNavigation,
+                    d = this.state,
+                    u = d.right,
+                    h = d.top,
+                    p = d.verticalOrientation,
+                    f = void 0 === h,
+                    m = 'calc(100vh - '.concat(h || 0, 'px)'),
+                    v = [
                       M.content,
-                      p && M.contentInitialRender,
-                      a && [M.contentFixed, { maxHeight: f }],
+                      f && M.contentInitialRender,
+                      a && [M.contentFixed, { maxHeight: m }],
                       {
-                        top: u,
-                        right: N.a.getConstants().isRTL ? void 0 : d,
-                        left: N.a.getConstants().isRTL ? d : void 0,
+                        top: h,
+                        right: N.a.getConstants().isRTL ? void 0 : u,
+                        left: N.a.getConstants().isRTL ? u : void 0,
                       },
-                    ]
+                    ],
+                    y = w.a.createElement(
+                      w.a.Fragment,
+                      null,
+                      w.a.createElement(C.a, { onClick: s, style: M.mask }),
+                      w.a.createElement(C.a, { ref: this._receiveBodyRectHelperRef, style: M.bodyRectHelper }),
+                      w.a.createElement(L.a, null, function (t) {
+                        var a = t.windowWidth
+                        return w.a.createElement(
+                          C.a,
+                          {
+                            accessibilityRole: 'menu',
+                            onKeyUp: e._handleEsc,
+                            ref: e._receiveContentRef,
+                            style: [a < S.a.theme.breakpoints.medium ? M.rootNarrow : M.rootWide, v],
+                          },
+                          f && 'slide' === i
+                            ? r
+                            : w.a.createElement(
+                                b.b,
+                                {
+                                  animateMount: 'up' !== p,
+                                  duration: n,
+                                  onAnimateComplete: e._handleAnimateComplete,
+                                  show: !0,
+                                  type: i,
+                                },
+                                function (e) {
+                                  var t = e.isAnimating
+                                  return w.a.createElement(
+                                    I.a,
+                                    { id: 'Dropdown', minimizeReporting: t },
+                                    function (e, t) {
+                                      return w.a.createElement(C.a, o()({ ref: e() }, t({})), r)
+                                    },
+                                  )
+                                },
+                              ),
+                        )
+                      }),
+                    )
                   return w.a.createElement(
                     C.a,
                     { ref: this._receiveAnchorRef, style: M.anchor },
                     w.a.createElement(
                       H.a.Dropdown,
                       null,
-                      w.a.createElement(E.a.Consumer, null, function (t) {
-                        return w.a.createElement(P.b.Consumer, null, function (a) {
-                          var l = a.isModal
+                      w.a.createElement(R.a.Consumer, null, function (e) {
+                        return w.a.createElement(P.b.Consumer, null, function (t) {
+                          var n = t.isModal
                           return w.a.createElement(
-                            R.a,
-                            { history: t, isModal: l, onDismiss: s },
-                            w.a.createElement(
-                              x.a,
-                              { withKeyboardNavigation: c },
-                              w.a.createElement(C.a, { onClick: s, style: M.mask }),
-                              w.a.createElement(C.a, { ref: e._receiveBodyRectHelperRef, style: M.bodyRectHelper }),
-                              w.a.createElement(L.a, null, function (t) {
-                                var a = t.windowWidth
-                                return w.a.createElement(
-                                  C.a,
-                                  {
-                                    accessibilityRole: 'menu',
-                                    onKeyUp: e._handleEsc,
-                                    ref: e._receiveContentRef,
-                                    style: [a < S.a.theme.breakpoints.medium ? M.rootNarrow : M.rootWide, m],
-                                  },
-                                  p && 'slide' === i
-                                    ? r
-                                    : w.a.createElement(
-                                        b.b,
-                                        {
-                                          animateMount: 'up' !== h,
-                                          duration: n,
-                                          onAnimateComplete: e._handleAnimateComplete,
-                                          show: !0,
-                                          type: i,
-                                        },
-                                        function (e) {
-                                          var t = e.isAnimating
-                                          return w.a.createElement(
-                                            I.a,
-                                            { id: 'Dropdown', minimizeReporting: t },
-                                            function (e, t) {
-                                              return w.a.createElement(C.a, o()({ ref: e() }, t({})), r)
-                                            },
-                                          )
-                                        },
-                                      ),
-                                )
-                              }),
-                            ),
+                            E.a,
+                            { history: e, isModal: n, onDismiss: s },
+                            c ? y : w.a.createElement(x.a, { withKeyboardNavigation: l }, y),
                           )
                         })
                       }),

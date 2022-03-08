@@ -1,11 +1,11 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [237],
+  [239],
   {
     '1Uii': function (e, t, a) {
       'use strict'
       a.r(t),
         a.d(t, 'OffTwitterActivity', function () {
-          return N
+          return j
         })
       var n = a('KEM+'),
         r = a.n(n),
@@ -54,16 +54,16 @@
         T = a('eb3s'),
         O = y.a.bcae496c,
         F = y.a.acc60551,
-        I = y.a.f80a33af,
+        L = y.a.f80a33af,
         R = y.a.b276596b,
-        A = y.a.c966aaf4,
-        L = y.a.e8313b32,
-        P = y.a.f1d46fd5,
+        I = y.a.c966aaf4,
+        P = y.a.e8313b32,
+        A = y.a.f1d46fd5,
         M = y.a.cfd2f35d,
         U = y.a.f6c8ccc7,
         x = y.a.f748b0fc,
         H = { page: 'settings', section: 'off_twitter_activity' }
-      function N(e) {
+      function j(e) {
         var t = e.allowDeviceAccess,
           a = e.createLocalApiErrorHandler,
           n = e.isEUUser,
@@ -110,8 +110,8 @@
               u.a.createElement(C.a, {
                 checked: d.enabled,
                 disabled: d.controlDisabled,
-                helpText: n ? A : R,
-                label: I,
+                helpText: n ? I : R,
+                label: L,
                 learnMoreLink: 'https://support.twitter.com/articles/20169421',
                 name: 'allowCookieUse',
                 onChange: d._handleChanged,
@@ -128,16 +128,16 @@
             d.showConfirmation &&
               u.a.createElement(T.a, {
                 cancelButtonLabel: M,
-                confirmButtonLabel: P,
+                confirmButtonLabel: A,
                 onCancel: d._handleConfirmationCancel,
                 onConfirm: d._handleConfirmationConfirm,
-                text: L,
+                text: P,
               }),
           ),
         )
       }
-      var j = E(N)
-      t.default = j
+      var N = E(j)
+      t.default = N
     },
     '21nk': function (e, t, a) {
       'use strict'
@@ -331,7 +331,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'monetizationSettingsQuery', function () {
-          return L
+          return P
         })
       var n = a('ERkP'),
         r = a.n(n),
@@ -381,14 +381,14 @@
         T = i.a.ibb5e1c8,
         O = i.a.b255df58,
         F = i.a.b3f834c7,
-        I = i.a.i724fb49,
+        L = i.a.i724fb49,
         R = i.a.f66d24be,
-        A = { Approved: C, NotStarted: null, Rejected: T, Submitted: O, Waitlisted: F },
-        L = void 0 !== f ? f : (f = a('jN9l')),
-        P = Object(E.b)(L, { errorConfig: { context: 'MONETIZATION_SETTINGS' } })
+        I = { Approved: C, NotStarted: null, Rejected: T, Submitted: O, Waitlisted: F },
+        P = void 0 !== f ? f : (f = a('jN9l')),
+        A = Object(E.b)(P, { errorConfig: { context: 'MONETIZATION_SETTINGS' } })
       t.default = function () {
         var e = Object(h.g)()
-        return r.a.createElement(P, {
+        return r.a.createElement(A, {
           render: function (t) {
             var a,
               n,
@@ -409,7 +409,7 @@
                     ? void 0
                     : i.super_follows_application_status)) ||
                 'NotStarted',
-              d = s ? k : A[u]
+              d = s ? k : I[u]
             return r.a.createElement(
               p.a,
               null,
@@ -419,7 +419,7 @@
                 r.a.createElement(g.b, { text: _ }),
                 r.a.createElement(v.b, { Icon: m, description: d, label: w, link: '/settings/superfollows' }),
                 r.a.createElement(y.a, null),
-                r.a.createElement(g.b, { text: I }),
+                r.a.createElement(g.b, { text: L }),
                 r.a.createElement(v.a, { label: R, link: 'https://help.twitter.com/forms/paid-features/superfollows' }),
               ),
             )
@@ -432,7 +432,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'Languages', function () {
-          return P
+          return A
         })
       var n = a('ERkP'),
         r = a.n(n),
@@ -473,11 +473,11 @@
         T = m.a.cab61d58,
         O = m.a.f0853ba6,
         F = m.a.bca1de49,
-        I = m.a.c3aa76c3,
+        L = m.a.c3aa76c3,
         R = m.a.b2a77838,
-        A = m.a.c3aa76c3,
-        L = { page: 'settings', section: 'languages' }
-      function P(e) {
+        I = m.a.c3aa76c3,
+        P = { page: 'settings', section: 'languages' }
+      function A(e) {
         var t = e.createLocalApiErrorHandler,
           a = e.fetchAvailableLanguagesIfNeeded,
           n = e.fetchCountryNamesIfNeeded,
@@ -493,7 +493,7 @@
           ),
           r.a.createElement(
             b.c,
-            { namespace: L },
+            { namespace: P },
             r.a.createElement(
               p.a,
               null,
@@ -509,15 +509,15 @@
                 r.a.createElement(E.a, { description: O }),
                 r.a.createElement(y.a, { label: F, link: '/i/flow/language_selector' }),
                 r.a.createElement(v.a, null),
-                r.a.createElement(g.b, { text: I }),
+                r.a.createElement(g.b, { text: L }),
                 r.a.createElement(E.a, { description: R }),
-                r.a.createElement(y.a, { label: A, link: '/settings/your_twitter_data/language' }),
+                r.a.createElement(y.a, { label: I, link: '/settings/your_twitter_data/language' }),
               ),
             ),
           )
         )
       }
-      var M = d(P)
+      var M = d(A)
       t.default = M
     },
     '6qBT': function (e, t, a) {
@@ -605,10 +605,10 @@
         T = 'settingsDetailSave',
         O = a('mw9i'),
         F = a('0yYu'),
-        I = a('/yvb'),
+        L = a('/yvb'),
         R = a('rHpw'),
-        A = k.a.i2209530,
-        L = (function (e) {
+        I = k.a.i2209530,
+        P = (function (e) {
           u()(a, e)
           var t = f()(a)
           function a() {
@@ -631,7 +631,7 @@
                   o = t.withMarginBottom
                 return h.a.createElement(
                   O.a,
-                  { style: [P.contentRoot, o && P.withMarginBottom] },
+                  { style: [A.contentRoot, o && A.withMarginBottom] },
                   a,
                   n
                     ? h.a.createElement(
@@ -640,8 +640,8 @@
                         h.a.createElement(F.a, null),
                         h.a.createElement(
                           O.a,
-                          { style: P.buttonContainer },
-                          h.a.createElement(I.a, { disabled: r, onPress: n, style: P.button, testID: T, type: i }, c),
+                          { style: A.buttonContainer },
+                          h.a.createElement(L.a, { disabled: r, onPress: n, style: A.button, testID: T, type: i }, c),
                         ),
                       )
                     : null,
@@ -706,8 +706,8 @@
             a
           )
         })(h.a.Component)
-      p()(L, 'defaultProps', { submitLabel: A, submitType: 'brandFilled', withMarginBottom: !0 })
-      var P = R.a.create(function (e) {
+      p()(P, 'defaultProps', { submitLabel: I, submitType: 'brandFilled', withMarginBottom: !0 })
+      var A = R.a.create(function (e) {
         return {
           contentRoot: {
             backgroundColor: e.colors.cellBackground,
@@ -729,7 +729,7 @@
           },
         }
       })
-      t.a = S(L)
+      t.a = S(P)
     },
     '899o': function (e, t, a) {
       'use strict'
@@ -770,12 +770,12 @@
         T = a('7FtF'),
         O = a('TnO6'),
         F = v.a.f154bd64,
-        I = { page: 'settings', component: 'autoblocked_account_tweets' },
+        L = { page: 'settings', component: 'autoblocked_account_tweets' },
         R = { context: 'safety_mode' },
-        A = v.a.e9f1fbcb,
-        L = v.a.de9b6641,
-        P = function () {
-          return c.a.createElement(o.a, { header: A, message: L })
+        I = v.a.e9f1fbcb,
+        P = v.a.de9b6641,
+        A = function () {
+          return c.a.createElement(o.a, { header: I, message: P })
         }
       t.default = function (e) {
         var t = e.history,
@@ -811,14 +811,14 @@
             : null
         return c.a.createElement(
           C.c,
-          { data: R, namespace: I },
+          { data: R, namespace: L },
           c.a.createElement(
             S.a,
             null,
             c.a.createElement(
               T.a,
               { screenType: 'secondaryDetail', title: F, withMarginBottom: !1 },
-              c.a.createElement(_.a, { entryConfiguration: g, footer: s, module: l, renderEmptyState: P, title: F }),
+              c.a.createElement(_.a, { entryConfiguration: g, footer: s, module: l, renderEmptyState: A, title: F }),
             ),
           ),
         )
@@ -921,11 +921,11 @@
         T = a('e0ey'),
         O = a('fyvP'),
         F = a('rHpw'),
-        I = g.a.de43eaf2,
+        L = g.a.de43eaf2,
         R = g.a.b6ab9962,
-        A = g.a.jdceda6f,
-        L = g.a.j45978a8,
-        P = g.a.be077e8b,
+        I = g.a.jdceda6f,
+        P = g.a.j45978a8,
+        A = g.a.be077e8b,
         M = g.a.i9028824,
         U = g.a.j905e6fe,
         x = g.a.e2c39a4c
@@ -943,18 +943,18 @@
           E = m.location,
           F = m.match,
           H = l.a.useContext(s.a),
-          j = H.featureSwitches,
+          N = H.featureSwitches,
           D = H.userClaims,
           z = (c || b.a).toString(),
           B = Object(_.useCreateLocalApiErrorHandler)('UNDO_TWEET_SCREEN_CONTEXT'),
           K = D.isTrueAndEnabled('subscriptions_feature_1003'),
-          Q = j.isTrue('subscriptions_undo_quote_tweets_enabled'),
-          W = j.isTrue('subscriptions_undo_thread_tweets_enabled'),
+          Q = N.isTrue('subscriptions_undo_quote_tweets_enabled'),
+          W = N.isTrue('subscriptions_undo_thread_tweets_enabled'),
           X = g.a.i3b7a017,
-          G = [5, 10, 20, 30, 60].map(function (e) {
+          V = [5, 10, 20, 30, 60].map(function (e) {
             return { label: X(e), value: e.toString() }
           })
-        function V(e, n) {
+        function G(e, n) {
           if ('period' !== e) {
             var c = { undoPreview: i()(i()({}, t), {}, r()({}, e, !t[e])) }
             a(c).catch(B({}))
@@ -970,16 +970,16 @@
                   null,
                   l.a.createElement(
                     S.a,
-                    { location: E, title: I },
+                    { location: E, title: L },
                     l.a.createElement(C.a, { description: x }),
-                    l.a.createElement(T.a, { checked: void 0 === o || o, label: R, name: 'original', onChange: V }),
-                    l.a.createElement(T.a, { checked: void 0 === d || d, label: A, name: 'reply', onChange: V }),
-                    Q && l.a.createElement(T.a, { checked: void 0 === u || u, label: L, name: 'quote', onChange: V }),
-                    W && l.a.createElement(T.a, { checked: void 0 === f || f, label: P, name: 'thread', onChange: V }),
+                    l.a.createElement(T.a, { checked: void 0 === o || o, label: R, name: 'original', onChange: G }),
+                    l.a.createElement(T.a, { checked: void 0 === d || d, label: I, name: 'reply', onChange: G }),
+                    Q && l.a.createElement(T.a, { checked: void 0 === u || u, label: P, name: 'quote', onChange: G }),
+                    W && l.a.createElement(T.a, { checked: void 0 === f || f, label: A, name: 'thread', onChange: G }),
                     l.a.createElement(
                       k.a,
-                      { style: N.radioGroup },
-                      l.a.createElement(O.a, { label: U, name: 'period', onChange: V, options: G, value: z }),
+                      { style: j.radioGroup },
+                      l.a.createElement(O.a, { label: U, name: 'period', onChange: G, options: V, value: z }),
                     ),
                   ),
                 )
@@ -987,7 +987,7 @@
           },
         })
       }
-      var N = F.a.create(function (e) {
+      var j = F.a.create(function (e) {
         return { radioGroup: { padding: e.spaces.space16 } }
       })
       t.default = p(H)
@@ -1126,9 +1126,9 @@
       T.metadata = { width: 24, height: 24 }
       var O = T,
         F = a('qz6Z'),
-        I = a('SOvA'),
+        L = a('SOvA'),
         R = a('qo8F'),
-        A = function () {
+        I = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(w.a)(
             'svg',
@@ -1153,9 +1153,9 @@
             ),
           )
         }
-      A.metadata = { width: 24, height: 24 }
-      var L = A,
-        P = a('4BrD'),
+      I.metadata = { width: 24, height: 24 }
+      var P = I,
+        A = a('4BrD'),
         M = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(w.a)(
@@ -1207,8 +1207,8 @@
         }
       x.metadata = { width: 24, height: 24 }
       var H = x,
-        N = a('aPcQ'),
-        j = a('KrGU'),
+        j = a('aPcQ'),
+        N = a('KrGU'),
         D = a('OySi'),
         z = s.a.cad53943,
         B = s.a.df5fa1d0,
@@ -1216,8 +1216,8 @@
         Q = s.a.e908903a,
         W = s.a.h7a0dfbe,
         X = s.a.b38d81ae,
-        G = s.a.f8d4746b,
-        V = s.a.f2bd9c47,
+        V = s.a.f8d4746b,
+        G = s.a.f2bd9c47,
         q = s.a.b2810ee7,
         Y = s.a.f01fd982,
         J = s.a.dcc5aa06,
@@ -1279,13 +1279,13 @@
                     n = e.includeSpacesSection
                   return [
                     { label: Q, description: W, link: '/settings/audience_and_tagging', Icon: g.a },
-                    { label: X, description: G, link: '/settings/your_tweets', Icon: y.a },
-                    { label: V, description: q, link: '/settings/content_you_see', Icon: C },
+                    { label: X, description: V, link: '/settings/your_tweets', Icon: y.a },
+                    { label: G, description: q, link: '/settings/content_you_see', Icon: C },
                     a ? { label: Y, description: J, link: '/settings/safety_mode', Icon: O } : void 0,
                     { label: Z, description: $, link: '/settings/mute_and_block', Icon: F.a },
-                    { label: ee, description: te, link: '/settings/direct_messages', Icon: I.a },
+                    { label: ee, description: te, link: '/settings/direct_messages', Icon: L.a },
                     n ? { label: ae, description: ne, link: '/settings/spaces', Icon: R.a } : void 0,
-                    { label: re, description: ce, link: '/settings/contacts', Icon: L },
+                    { label: re, description: ce, link: '/settings/contacts', Icon: P },
                   ].filter(Boolean)
                 })({ includeSafetyMode: s, includeSpacesSection: v }).map(function (e) {
                   return i.a.createElement(D.b, r()({}, e, { key: e.label }))
@@ -1296,11 +1296,11 @@
                 (a = t.includeCookiePreferences),
                 (n = void 0 !== a && a),
                 [
-                  { label: oe, description: le, link: '/settings/ads_preferences', Icon: P.a },
+                  { label: oe, description: le, link: '/settings/ads_preferences', Icon: A.a },
                   n ? { label: se, description: ue, link: '/settings/cookie_preferences', Icon: U } : void 0,
                   { label: de, description: fe, link: '/settings/off_twitter_activity', Icon: H },
-                  { label: me, description: pe, link: '/settings/data_sharing_with_business_partners', Icon: N.a },
-                  { label: be, description: he, link: '/settings/location_information', Icon: j.a },
+                  { label: me, description: pe, link: '/settings/data_sharing_with_business_partners', Icon: j.a },
+                  { label: be, description: he, link: '/settings/location_information', Icon: N.a },
                 ].filter(Boolean)).map(function (e) {
                   return i.a.createElement(D.b, r()({}, e, { key: e.label }))
                 }),
@@ -1376,17 +1376,17 @@
         T = l.a.jf907f5b,
         O = l.a.e3719c15,
         F = l.a.f371a361,
-        I = l.a.c4881c66,
+        L = l.a.c4881c66,
         R = l.a.a5ce82a4,
-        A = l.a.d495680d,
-        L = l.a.f9c98140,
-        P = l.a.eafe3287,
+        I = l.a.d495680d,
+        P = l.a.f9c98140,
+        A = l.a.eafe3287,
         M = l.a.d76fe4fc,
         U = [
           { label: O, description: F, link: '/settings/accessibility', Icon: S },
-          { label: I, description: R, link: '/settings/display', Icon: _.a },
-          { label: A, description: L, link: '/settings/languages', Icon: w.a },
-          { label: P, description: M, link: '/settings/data', Icon: k.a },
+          { label: L, description: R, link: '/settings/display', Icon: _.a },
+          { label: I, description: P, link: '/settings/languages', Icon: w.a },
+          { label: A, description: M, link: '/settings/data', Icon: k.a },
         ],
         x = { page: 'settings', section: 'accessibility_display_and_languages' }
       function H(e) {
@@ -1591,10 +1591,10 @@
           u = o.isTrueAndEnabled('subscriptions_long_video_upload'),
           d = o.isTrueAndEnabled('subscriptions_feature_1011'),
           F = i.isTrue('dm_conversation_labels_pinned_enabled'),
-          I = i.isTrue('subscriptions_long_video_rweb_new_copy_enabled'),
+          L = i.isTrue('subscriptions_long_video_rweb_new_copy_enabled'),
           R = [
             { label: S, subtext: _, shouldRender: l && !F },
-            { label: w, subtext: I ? C : k, shouldRender: u },
+            { label: w, subtext: L ? C : k, shouldRender: u },
             { label: T, subtext: O, shouldRender: d },
           ]
         return r.a.createElement(s.a, {
@@ -1734,11 +1734,11 @@
           }
         }),
         F = a('MWbm'),
-        I = a('yw4N'),
+        L = a('yw4N'),
         R = a('TnY3'),
-        A = a('cHvH'),
-        L = a('3xLC'),
-        P = [
+        I = a('cHvH'),
+        P = a('3xLC'),
+        A = [
           'children',
           'leftControl',
           'screenType',
@@ -1763,7 +1763,7 @@
                       F.a,
                       { style: O.fill },
                       y.a.createElement(
-                        I.a,
+                        L.a,
                         { style: O.viewportView },
                         e._renderInlineNav({ isTwoColumnLayout: !0 }),
                         t,
@@ -1780,7 +1780,7 @@
                 key: 'render',
                 value: function () {
                   var e = this
-                  return y.a.createElement(A.a, null, function (t) {
+                  return y.a.createElement(I.a, null, function (t) {
                     var a = t.windowWidth
                     return v.a.isTwoColumnLayout(a) ? e._renderForTwoColumnLayout() : e._renderForOneColumnLayout()
                   })
@@ -1798,7 +1798,7 @@
                       e.showSubtitleOnWideDetail,
                       e.withBottomBorder,
                       e.withDetailOpen,
-                      r()(e, P))
+                      r()(e, A))
                   return y.a.createElement(
                     y.a.Fragment,
                     null,
@@ -1846,16 +1846,16 @@
                     k = a.title,
                     C = a.titleIconCell,
                     T = a.titleIconCellSize,
-                    I = a.withDetailOpen,
+                    L = a.withDetailOpen,
                     R = a.withSearchBox,
-                    A = a.withTweetButton,
-                    L = 'root' === p,
-                    P = 'secondaryRoot' === p,
+                    I = a.withTweetButton,
+                    P = 'root' === p,
+                    A = 'secondaryRoot' === p,
                     M = 'primaryDetail' === p,
-                    U = (M && v) || (L && g),
-                    x = L || (M && t),
-                    H = L ? E.c : M ? E.a : void 0,
-                    N = y.a.createElement(
+                    U = (M && v) || (P && g),
+                    x = P || (M && t),
+                    H = P ? E.c : M ? E.a : void 0,
+                    j = y.a.createElement(
                       F.a,
                       { style: O.appBarContainer },
                       y.a.createElement(S.a, {
@@ -1875,8 +1875,8 @@
                         titleIconCellSize: T,
                       }),
                     ),
-                    j =
-                      L || (P && I)
+                    N =
+                      P || (A && L)
                         ? null
                         : y.a.createElement(_.a.Configure, {
                             SideNavButton: n,
@@ -1892,18 +1892,39 @@
                             subtitle: w,
                             title: k,
                             withSearchBox: R,
-                            withTweetButton: A,
+                            withTweetButton: I,
                           })
-                  return y.a.createElement(y.a.Fragment, null, j, N)
+                  return y.a.createElement(y.a.Fragment, null, N, j)
                 },
               },
             ]),
             a
           )
         })(y.a.Component)
-      h()(M, 'contextType', L.a),
+      h()(M, 'contextType', P.a),
         h()(M, 'defaultProps', { screenType: 'secondaryDetail', showSubtitleOnWideDetail: !0 })
       t.a = Object(R.a)(M)
+    },
+    OOKO: function (e, t, a) {
+      'use strict'
+      a.d(t, 'a', function () {
+        return o
+      })
+      a('uFXj')
+      var n = a('ERkP'),
+        r = a.n(n),
+        c = a('rHpw'),
+        i = a('MWbm')
+      function o(e) {
+        var t = e.spacing
+        return r.a.createElement(i.a, {
+          accessibilityRole: 'separator',
+          style: [l.divider, { marginVertical: null != t ? c.a.theme.spaces[t] : void 0 }],
+        })
+      }
+      var l = c.a.create(function (e) {
+        return { divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }
+      })
     },
     OsOl: function (e, t, a) {
       'use strict'
@@ -1960,7 +1981,7 @@
           { label: _, value: 'ThreeDays' },
           { label: w, value: 'SevenDays' },
         ]
-      var I = l(function (e) {
+      var L = l(function (e) {
           var t = e.createLocalApiErrorHandler,
             a = e.enabled,
             n = e.expiration,
@@ -2064,7 +2085,7 @@
           })
         }),
         R =
-          ((t.a = I),
+          ((t.a = L),
           g.a.create(function (e) {
             return {
               border: {
@@ -2146,11 +2167,11 @@
         T = E.a.e908903a,
         O = E.a.h7a0dfbe,
         F = E.a.f5e59e90,
-        I = E.a.e860ff84,
+        L = E.a.e860ff84,
         R = { headline: E.a.j8bf07ab, text: E.a.ca8034b3, confirmButtonLabel: E.a.c5d4192a },
-        A = { headline: E.a.gea6cc19, text: E.a.j7fc0afc, confirmButtonLabel: E.a.f527b322 },
-        L = E.a.f56d108e,
-        P = { all: E.a.d165c992, following: E.a.ea339390, none: E.a.e3a761ee },
+        I = { headline: E.a.gea6cc19, text: E.a.j7fc0afc, confirmButtonLabel: E.a.f527b322 },
+        P = E.a.f56d108e,
+        A = { all: E.a.d165c992, following: E.a.ea339390, none: E.a.e3a761ee },
         M = { page: 'settings', section: 'audience_and_tagging' }
       function U(e, t, a, n) {
         var c = l.a.useState(!1),
@@ -2192,8 +2213,8 @@
           c = e.patchUser,
           i = e.protectedEnabled,
           o = U(a, 0, c, e.updateSettings),
-          s = P[t],
-          u = n ? A : R
+          s = A[t],
+          u = n ? I : R
         return l.a.createElement(
           y.c,
           { namespace: M },
@@ -2206,13 +2227,13 @@
               l.a.createElement(_.a, { description: O }),
               l.a.createElement(w.a, {
                 checked: i,
-                helpText: I,
+                helpText: L,
                 label: F,
                 learnMoreLink: 'https://help.twitter.com/safety-and-security/public-and-protected-tweets',
                 name: 'protected',
                 onChange: o._handleChanged,
               }),
-              l.a.createElement(k.a, { description: s, label: L, link: '/settings/tagging' }),
+              l.a.createElement(k.a, { description: s, label: P, link: '/settings/tagging' }),
             ),
             o.showConfirmation
               ? l.a.createElement(C.a, {
@@ -2256,6 +2277,38 @@
               null,
               i.a.createElement('path', {
                 d: 'M15.09 9.07c-.25-1.83-1.43-2.98-3.1-2.98-1.66 0-2.85 1.15-3.09 2.98-.18 1.32 0 2.26.55 2.89.66.76 1.66.86 2.54.86.89 0 1.88-.1 2.54-.86.56-.63.74-1.57.56-2.89zm-1.68 1.9c-.21.24-.65.35-1.42.35-.76 0-1.2-.11-1.41-.35-.24-.28-.31-.86-.2-1.7.1-.76.47-1.68 1.61-1.68.58 0 .95.23 1.2.56.24.32.36.74.41 1.12.12.84.05 1.42-.19 1.7zm2.67 4.09c-.99-.99-2.4-1.52-4.07-1.52h-.03c-1.62 0-3.06.55-4.06 1.55-.87.87-1.34 2.02-1.34 3.25 0 .79.64 1.44 1.44 1.44h7.95c.79 0 1.44-.65 1.44-1.44 0-1.26-.47-2.43-1.33-3.28zm-7.44 3.276c-.318.002-.562-.288-.502-.6.116-.595.406-1.14.842-1.576.72-.72 1.78-1.12 3.01-1.12H12c1.27 0 2.32.37 3.02 1.08.432.432.715.962.83 1.564.06.308-.178.598-.492.6l-6.72.052zM21.75 6.97c-.22-1.7-1.32-2.75-2.86-2.75-1.53 0-2.64 1.05-2.87 2.75-.16 1.2.02 2.07.52 2.65.62.71 1.53.81 2.35.81.81 0 1.73-.1 2.34-.8.39-.45.59-1.07.59-1.85 0-.22-.02-.47-.07-.81zm-4.22.2c.13-.95.59-1.43 1.36-1.43.43 0 .77.15 1 .46.23.29.32.69.35.97.03.22.05.43.05.61 0 .4-.07.69-.21.84-.16.2-.54.28-1.19.28-.66 0-1.04-.08-1.2-.28-.2-.22-.25-.73-.16-1.45zm6.3 8.37c0 .74-.62 1.34-1.37 1.34h-3.75c-.41 0-.76-.34-.76-.76 0-.43.34-.76.76-.76h3.24c.1 0 .2-.05.26-.13.07-.09.1-.2.07-.3-.12-.53-.37-.99-.74-1.36-.61-.62-1.53-.94-2.64-.94-.73 0-1.39.15-1.93.44l-.5.32c-.36.21-.83.1-1.04-.25-.23-.36-.12-.82.24-1.05l.54-.34c.78-.42 1.71-.64 2.66-.64h.03c1.52 0 2.81.47 3.72 1.38.79.8 1.22 1.88 1.21 3.05zM2.18 7.78c0 .78.2 1.4.59 1.85.61.7 1.53.8 2.34.8.82 0 1.73-.1 2.35-.81.5-.58.68-1.45.52-2.65-.23-1.7-1.34-2.75-2.87-2.75-1.54 0-2.64 1.05-2.86 2.75-.05.34-.07.59-.07.81zm4.13.84c-.16.2-.54.28-1.2.28-.65 0-1.03-.08-1.19-.28-.14-.15-.21-.44-.21-.84 0-.18.02-.39.05-.61.03-.28.12-.68.35-.97.23-.31.57-.46 1-.46.77 0 1.23.48 1.36 1.43.09.72.04 1.23-.16 1.45zM.17 15.54c0 .74.62 1.34 1.37 1.34h3.75c.41 0 .76-.34.76-.76 0-.43-.34-.76-.76-.76H2.05c-.1 0-.2-.05-.26-.13-.07-.09-.1-.2-.07-.3.12-.53.37-.99.74-1.36.61-.62 1.53-.94 2.64-.94.73 0 1.39.15 1.93.44l.5.32c.36.21.83.1 1.04-.25.23-.36.12-.82-.24-1.05l-.54-.34c-.78-.42-1.71-.64-2.66-.64H5.1c-1.52 0-2.81.47-3.72 1.38-.79.8-1.22 1.88-1.21 3.05z',
+              }),
+            ),
+          )
+        }
+      ;(s.metadata = { width: 24, height: 24 }), (t.a = s)
+    },
+    TW8A: function (e, t, a) {
+      'use strict'
+      var n = a('yiKp'),
+        r = a.n(n),
+        c = a('ERkP'),
+        i = a.n(c),
+        o = a('Lsrn'),
+        l = a('k/Ka'),
+        s = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(l.a)(
+            'svg',
+            r()(
+              r()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [o.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            i.a.createElement(
+              'g',
+              null,
+              i.a.createElement('path', {
+                d: 'M22.132 7.653c0-.6-.234-1.166-.66-1.59l-3.535-3.536c-.85-.85-2.333-.85-3.182 0L3.417 13.865c-.323.323-.538.732-.63 1.25l-.534 5.816c-.02.223.06.442.217.6.14.142.332.22.53.22.023 0 .046 0 .068-.003l5.884-.544c.45-.082.86-.297 1.184-.62l11.337-11.34c.425-.424.66-.99.66-1.59zm-17.954 8.69l3.476 3.476-3.825.35.348-3.826zm5.628 2.447c-.282.283-.777.284-1.06 0L5.21 15.255c-.292-.292-.292-.77 0-1.06l8.398-8.398 4.596 4.596-8.398 8.397zM20.413 8.184l-1.15 1.15-4.595-4.597 1.15-1.15c.14-.14.33-.22.53-.22s.388.08.53.22l3.535 3.536c.142.142.22.33.22.53s-.08.39-.22.53z',
               }),
             ),
           )
@@ -2323,11 +2376,11 @@
         T = g.a.jcba15d2,
         O = g.a.e1f2f8bd,
         F = g.a.e68b09b4,
-        I = g.a.hc676c4a,
+        L = g.a.hc676c4a,
         R = g.a.badf3f34,
-        A = g.a.ca95bd23,
-        L = g.a.bbe47125,
-        P = '/settings/safety_mode/autoblocked',
+        I = g.a.ca95bd23,
+        P = g.a.bbe47125,
+        A = '/settings/safety_mode/autoblocked',
         M = '/i/safety_mode/flagged_accounts',
         U = Object.freeze({ ActionedTweets: 'actioned_tweets', PreviewFlaggedTweets: 'preview_flagged_tweets' }),
         x = Object.freeze({
@@ -2349,10 +2402,10 @@
           p = Object.freeze(
             ((t = {}),
             r()(t, U.ActionedTweets, {
-              backLocation: P,
+              backLocation: A,
               confirmationSheetHeadline: Object(_.e)({ screenName: f }),
               label: T,
-              toastLabel: A({ screenName: f }),
+              toastLabel: I({ screenName: f }),
             }),
             r()(t, U.PreviewFlaggedTweets, {
               backLocation: M,
@@ -2366,7 +2419,7 @@
           color: 'primary',
           confirmationSheetConfirmButtonLabel: F,
           confirmationSheetHeadline: p[u].confirmationSheetHeadline,
-          confirmationSheetText: L,
+          confirmationSheetText: P,
           label: p[u].label,
           onConfirmationSheetConfirm: function () {
             u === U.ActionedTweets
@@ -2384,7 +2437,7 @@
           withBottomBorder: !0,
         })
       }
-      function N(e) {
+      function j(e) {
         var t = e.analytics,
           a = e.violatorUserId,
           n = {
@@ -2400,7 +2453,7 @@
           },
         })
       }
-      function j(e) {
+      function N(e) {
         var t = e.addToast,
           a = e.analytics,
           n = e.block,
@@ -2410,7 +2463,7 @@
           u = e.unblock,
           d = e.violatorScreenName,
           f = e.violatorUserId,
-          m = s === U.ActionedTweets ? P : M,
+          m = s === U.ActionedTweets ? A : M,
           p = function () {
             u(f).catch(r(y.a)), a.scribe(x.unblock)
           }
@@ -2425,7 +2478,7 @@
             n(f)
               .then(function () {
                 a.scribe(x.block),
-                  t({ action: { label: _.l, onAction: p }, text: I({ screenName: d }) }),
+                  t({ action: { label: _.l, onAction: p }, text: L({ screenName: d }) }),
                   c.goBack({ backLocation: m })
               })
               .catch(r(o.a))
@@ -2451,9 +2504,9 @@
                 i.a.Fragment,
                 null,
                 i.a.createElement(v.a, null),
-                i.a.createElement(N, e),
-                i.a.createElement(H, e),
                 i.a.createElement(j, e),
+                i.a.createElement(H, e),
+                i.a.createElement(N, e),
               )
         )
       })
@@ -2462,7 +2515,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'LocationInformation', function () {
-          return A
+          return I
         })
       var n = a('KEM+'),
         r = a.n(n),
@@ -2504,9 +2557,9 @@
         T = b.a.cb2ed998,
         O = b.a.d9138165,
         F = b.a.eb029cab,
-        I = b.a.j018f2a1,
+        L = b.a.j018f2a1,
         R = { page: 'settings', section: 'location_information' }
-      function A(e) {
+      function I(e) {
         var t = e.allowLocationHistoryUseEnabled,
           a = e.createLocalApiErrorHandler,
           n = e.location,
@@ -2536,13 +2589,13 @@
                 }),
               l.a.createElement(_.a, { label: O, link: '/settings/your_twitter_data/locations' }),
               l.a.createElement(_.a, { label: F, link: '/settings/location' }),
-              l.a.createElement(_.a, { label: I, link: '/settings/explore' }),
+              l.a.createElement(_.a, { label: L, link: '/settings/explore' }),
             ),
           ),
         )
       }
-      var L = m(A)
-      t.default = L
+      var P = m(I)
+      t.default = P
     },
     VKnd: function (e, t, a) {
       'use strict'
@@ -2726,8 +2779,8 @@
           ),
         )
       }
-      var I = d(F)
-      t.default = I
+      var L = d(F)
+      t.default = L
     },
     aNjN: function (e, t, a) {
       'use strict'
@@ -2815,7 +2868,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'DirectMessages', function () {
-          return P
+          return A
         })
       var n = a('KEM+'),
         r = a.n(n),
@@ -2866,11 +2919,11 @@
         T = b.a.b3d8566e,
         O = b.a.cfda8c44,
         F = b.a.e6c411d7,
-        I = b.a.g558101a,
+        L = b.a.g558101a,
         R = b.a.d9172541,
-        A = b.a.bd557505,
-        L = { page: 'settings', section: 'direct_messages' }
-      function P(e) {
+        I = b.a.bd557505,
+        P = { page: 'settings', section: 'direct_messages' }
+      function A(e) {
         var t = e.allowDmsFrom,
           a = e.createLocalApiErrorHandler,
           n = e.dmQualityFilter,
@@ -2882,13 +2935,13 @@
           m = Object(y.a)()
         function p(t, n) {
           var c = '/messages/settings' === e.location.pathname ? 'dm_tab' : 'global_settings_menu'
-          m.scribe(i()(i()({}, L), {}, { element: t, data: { entry_point: c }, action: n })),
+          m.scribe(i()(i()({}, P), {}, { element: t, data: { entry_point: c }, action: n })),
             f(r()({}, t, n)).catch(a({ showToast: !0 }))
         }
         var b = l.a.useContext(s.a).featureSwitches.isTrue('dm_conversations_nsfw_media_filter_enabled')
         return l.a.createElement(
           E.c,
-          { namespace: L },
+          { namespace: P },
           l.a.createElement(
             h.a,
             null,
@@ -2919,13 +2972,13 @@
               b
                 ? l.a.createElement(S.a, {
                     checked: u,
-                    helpText: I,
+                    helpText: L,
                     label: F,
                     learnMoreLink: 'https://help.twitter.com/using-twitter/direct-messages#graphic-media',
                     name: 'ext_dm_nsfw_media_filter',
                     onChange: function (e, t) {
                       m.scribe(
-                        i()(i()({}, L), {}, { element: 'dm_nsfw_filter_setting', action: t ? 'enable' : 'disable' }),
+                        i()(i()({}, P), {}, { element: 'dm_nsfw_filter_setting', action: t ? 'enable' : 'disable' }),
                       ),
                         d(t)
                     },
@@ -2933,7 +2986,7 @@
                 : null,
               l.a.createElement(S.a, {
                 checked: 'all_enabled' === c,
-                helpText: A,
+                helpText: I,
                 label: R,
                 learnMoreLink: 'https://help.twitter.com/using-twitter/direct-messages#receipts',
                 name: 'dm_receipt_setting',
@@ -2945,7 +2998,7 @@
           ),
         )
       }
-      var M = m(P)
+      var M = m(A)
       t.default = M
     },
     bCEw: function (e, t, a) {
@@ -3117,7 +3170,7 @@
         T = p.a.b0b3ed8e,
         O = p.a.h1f01a24,
         F = p.a.da202f9a,
-        I = { page: 'settings', section: 'ads_preferences' }
+        L = { page: 'settings', section: 'ads_preferences' }
       function R(e) {
         var t,
           a = e.allowPersonalizationEnabled,
@@ -3135,7 +3188,7 @@
             t.current)
         return l.a.createElement(
           h.c,
-          { namespace: I },
+          { namespace: L },
           l.a.createElement(
             b.a,
             null,
@@ -3151,7 +3204,7 @@
                 learnMoreLink: 'https://support.twitter.com/articles/20170405',
                 name: 'allowPersonalization',
                 onChange: function (e, t) {
-                  s.scribe(i()(i()({}, I), {}, { element: e, action: t ? 'enable' : 'disable' })),
+                  s.scribe(i()(i()({}, L), {}, { element: e, action: t ? 'enable' : 'disable' })),
                     o(r()({}, e, t)).catch(n())
                 },
               }),
@@ -3161,8 +3214,8 @@
           ),
         )
       }
-      var A = f(R)
-      t.default = A
+      var I = f(R)
+      t.default = I
     },
     cQiO: function (e, t, a) {
       'use strict'
@@ -3207,18 +3260,18 @@
         T = a('7FtF'),
         O = a('RKmr'),
         F = a('t62R'),
-        I = a('FIs5'),
+        L = a('FIs5'),
         R = a('csss'),
-        A = a('rHpw'),
-        L = a('3XMw'),
-        P = a.n(L),
+        I = a('rHpw'),
+        P = a('3XMw'),
+        A = a.n(P),
         M = a('U+bB'),
         U = a('MWbm'),
-        x = P.a.jc02ae67,
-        H = P.a.e5e8a899,
-        N = P.a.ge06310e,
-        j = P.a.dd1b86f9,
-        D = P.a.ee4b16f8,
+        x = A.a.jc02ae67,
+        H = A.a.e5e8a899,
+        j = A.a.ge06310e,
+        N = A.a.dd1b86f9,
+        D = A.a.ee4b16f8,
         z = 'https://help.twitter.com/managing-your-account/connect-or-revoke-access-to-third-party-apps',
         B = { page: 'settings', section: 'connected_apps' },
         K = (function (e) {
@@ -3245,16 +3298,16 @@
                   null,
                   h.a.createElement(O.a, {
                     description: h.a.createElement(
-                      P.a.I18NFormatMessage,
+                      A.a.I18NFormatMessage,
                       { $i18n: 'hcecd237' },
-                      h.a.createElement(F.b, { link: z }, P.a.b63b0b1c),
+                      h.a.createElement(F.b, { link: z }, A.a.b63b0b1c),
                     ),
                   }),
-                  t.length ? null : h.a.createElement(I.a, { header: N, message: D }),
+                  t.length ? null : h.a.createElement(L.a, { header: j, message: D }),
                   t.map(function (e, t) {
                     var a = '/settings/applications/'.concat(e.app_id)
                     return h.a.createElement(R.a, {
-                      description: e.organization ? j({ name: e.organization }) : null,
+                      description: e.organization ? N({ name: e.organization }) : null,
                       key: e.app_id,
                       label: e.name,
                       link: a,
@@ -3305,7 +3358,7 @@
           )
         })(h.a.Component)
       p()(K, 'defaultProps', { applications: [] })
-      var Q = A.a.create(function (e) {
+      var Q = I.a.create(function (e) {
           return { avatar: { borderRadius: e.borderRadii.small, height: '100%', width: '100%' } }
         }),
         W = _(K)
@@ -3525,31 +3578,31 @@
         T = a('v//M'),
         O = a('yoO3'),
         F = a('VIKJ'),
-        I = a('7JQg'),
+        L = a('7JQg'),
         R = a('ZvNX'),
-        A = a('eM8g'),
-        L = a('7FtF'),
-        P = a('MWbm'),
+        I = a('eM8g'),
+        P = a('7FtF'),
+        A = a('MWbm'),
         M = a('RKmr'),
         U = a('6vad'),
         x = a('0yYu'),
         H = a('t62R'),
-        N = a('3XMw'),
-        j = a.n(N),
-        D = j.a.dd823129,
-        z = j.a.c2cb5560,
-        B = j.a.bca43fd0,
-        K = j.a.bef6fc56,
-        Q = j.a.bbe9579b,
-        W = j.a.b850cbd0,
-        X = j.a.ae1bbb26,
-        G = j.a.i859a9d3,
-        V = j.a.e5e8a899,
-        q = j.a.cf3e3164,
-        Y = j.a.f810f279,
-        J = j.a.a19f4b20,
-        Z = j.a.e25e40f0,
-        $ = j.a.d1baa458,
+        j = a('3XMw'),
+        N = a.n(j),
+        D = N.a.dd823129,
+        z = N.a.c2cb5560,
+        B = N.a.bca43fd0,
+        K = N.a.bef6fc56,
+        Q = N.a.bbe9579b,
+        W = N.a.b850cbd0,
+        X = N.a.ae1bbb26,
+        V = N.a.i859a9d3,
+        G = N.a.e5e8a899,
+        q = N.a.cf3e3164,
+        Y = N.a.f810f279,
+        J = N.a.a19f4b20,
+        Z = N.a.e25e40f0,
+        $ = N.a.d1baa458,
         ee = { page: 'settings', section: 'sessions' },
         te = (function (e) {
           f()(a, e)
@@ -3602,16 +3655,16 @@
                     a = t.fetchStatus,
                     n = t.location
                   return g.a.createElement(
-                    I.c,
+                    L.c,
                     { namespace: ee },
                     g.a.createElement(
                       O.a,
                       null,
                       g.a.createElement(
-                        L.a,
+                        P.a,
                         { location: n, title: D },
                         g.a.createElement(T.a, {
-                          accessibilityLabel: V,
+                          accessibilityLabel: G,
                           fetchStatus: a,
                           onRequestRetry: this._handleRetry,
                           render: function () {
@@ -3637,20 +3690,20 @@
                     o = c[1]
                   return a
                     ? g.a.createElement(
-                        P.a,
+                        A.a,
                         null,
                         g.a.createElement(M.a, { description: K }),
                         g.a.createElement(U.b, { text: z }),
-                        g.a.createElement(A.a, null, Q),
+                        g.a.createElement(I.a, null, Q),
                         i[0] ? this._renderSession(i[0], !1) : null,
                         g.a.createElement(x.a, null),
                         g.a.createElement(U.b, { text: B }),
-                        g.a.createElement(A.a, null, W),
+                        g.a.createElement(I.a, null, W),
                         g.a.createElement(
-                          A.a,
+                          I.a,
                           null,
                           g.a.createElement(
-                            j.a.I18NFormatMessage,
+                            N.a.I18NFormatMessage,
                             { $i18n: 'i34eeb36', infoText: a > 1 ? J({ num: a - 1 }) : Z },
                             g.a.createElement(
                               H.b,
@@ -3658,7 +3711,7 @@
                                 link: 'https://help.twitter.com/managing-your-account/connect-or-revoke-access-to-third-party-apps',
                                 withInteractiveStyling: !1,
                               },
-                              j.a.j3223a5b({ learnMoreLabel: G }),
+                              N.a.j3223a5b({ learnMoreLabel: V }),
                             ),
                           ),
                         ),
@@ -3720,11 +3773,11 @@
         T = a('lU4h'),
         O = a.n(T),
         F = a('21nk'),
-        I = a.n(F),
+        L = a.n(F),
         R = a('bCEw'),
-        A = a.n(R),
-        L = a('Ud88'),
-        P = a.n(L),
+        I = a.n(R),
+        P = a('Ud88'),
+        A = a.n(P),
         M = function (e) {
           return (0, e.render)({ fetchStatus: w.a.LOADING, data: null, error: null, retry: k.a })
         },
@@ -3771,7 +3824,7 @@
           var t = e.query,
             a = e.queryRef,
             n = e.render,
-            r = I()(t, a)
+            r = L()(t, a)
           return n({ fetchStatus: w.a.LOADED, data: r, error: null, retry: k.a })
         },
         H = function (e, t) {
@@ -3781,7 +3834,7 @@
                 c = void 0 === n ? 'store-or-network' : n,
                 i = a.render,
                 o = a.variables,
-                l = A()(e),
+                l = I()(e),
                 s = r()(l, 2),
                 u = s[0],
                 d = s[1],
@@ -3823,7 +3876,7 @@
             n.fetchPolicy
             var c = n.render,
               i = n.variables,
-              o = P()(),
+              o = A()(),
               l = Object(C.useCreateLocalApiErrorHandler)(t.errorConfig.context),
               s = O()(i),
               u = r()(s, 1)[0],
@@ -3919,9 +3972,9 @@
         T = a('g7Ra'),
         O = a('yiKp'),
         F = a.n(O),
-        I = a('Lsrn'),
+        L = a('Lsrn'),
         R = a('k/Ka'),
-        A = function () {
+        I = function () {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
           return Object(R.a)(
             'svg',
@@ -3930,7 +3983,7 @@
               {},
               {
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [I.a.root, e.style],
+                style: [L.a.root, e.style],
                 viewBox: '0 0 24 24',
               },
             ),
@@ -3943,15 +3996,15 @@
             ),
           )
         }
-      A.metadata = { width: 24, height: 24 }
-      var L = A,
-        P = a('5VjN'),
+      I.metadata = { width: 24, height: 24 }
+      var P = I,
+        A = a('5VjN'),
         M = a('vMn4'),
         U = a('tH6R'),
         x = a('OySi'),
         H = m.a.ed21f885,
-        N = m.a.je84decd,
-        j = m.a.de43eaf2,
+        j = m.a.je84decd,
+        N = m.a.de43eaf2,
         D = m.a.i65802df,
         z = m.a.a21b8ad2,
         B = m.a.hd885aef,
@@ -3959,8 +4012,8 @@
         Q = m.a.f6e88161,
         W = m.a.e4972a1a,
         X = m.a.b7fa0cfd,
-        G = m.a.adcaa213,
-        V = m.a.i9028824,
+        V = m.a.adcaa213,
+        G = m.a.i9028824,
         q = m.a.e5fff0c7,
         Y = m.a.ib35705d,
         J = m.a.ccfdbb86,
@@ -3987,14 +4040,14 @@
           k = f.userClaims,
           O = k.isTwitterBlueSubscriber(),
           F = k.isTrueAndEnabled('subscriptions_feature_1003'),
-          I = k.isTrueAndEnabled('subscriptions_feature_1009'),
+          L = k.isTrueAndEnabled('subscriptions_feature_1009'),
           R = k.isTrueAndEnabled('subscriptions_feature_1007'),
-          A = k.isTrueAndEnabled('subscriptions_feature_1006'),
+          I = k.isTrueAndEnabled('subscriptions_feature_1006'),
           oe = m.isTrue('subscriptions_management_enabled'),
           se = [
-            { label: j, description: J, link: '/settings/undo_tweet', Icon: T.a, shouldRender: F },
-            { label: Q, description: W, link: '/settings/t1_labs', Icon: L, shouldRender: I },
-            { label: X, description: G, link: '/i/articles', Icon: P.a, shouldRender: R },
+            { label: N, description: J, link: '/settings/undo_tweet', Icon: T.a, shouldRender: F },
+            { label: Q, description: W, link: '/settings/t1_labs', Icon: P, shouldRender: L },
+            { label: X, description: V, link: '/i/articles', Icon: A.a, shouldRender: R },
           ],
           ue = function () {
             fe(ie)
@@ -4006,7 +4059,7 @@
             t.scribe({ page: 'subscriptions', section: 'settings', element: e, action: 'click' })
           }
         return r.a.createElement(d.a, {
-          accessibilityLabel: V,
+          accessibilityLabel: G,
           fetchStatus: i,
           render: function () {
             return O
@@ -4023,7 +4076,7 @@
                       r.a.createElement(_.a, { description: q }),
                     ),
                     r.a.createElement(w.a, { spacing: 'space2' }),
-                    r.a.createElement(v.b, { text: N }),
+                    r.a.createElement(v.b, { text: j }),
                     se.map(function (e) {
                       var t = e.Icon,
                         a = e.description,
@@ -4033,7 +4086,7 @@
                         ? r.a.createElement(x.b, { Icon: t, description: a, key: n, label: n, link: c })
                         : null
                     }),
-                    A &&
+                    I &&
                       r.a.createElement(
                         r.a.Fragment,
                         null,
@@ -4091,7 +4144,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'ContentYouSee', function () {
-          return A
+          return I
         })
       var n = a('KEM+'),
         r = a.n(n),
@@ -4137,9 +4190,9 @@
         T = b.a.b8533bac,
         O = b.a.h1f01a24,
         F = b.a.j018f2a1,
-        I = b.a.h1ef00db,
+        L = b.a.h1ef00db,
         R = { page: 'settings', section: 'content_you_see' }
-      function A(e) {
+      function I(e) {
         var t = e.createLocalApiErrorHandler,
           a = e.displaySensitiveMediaEnabled,
           n = e.location,
@@ -4169,14 +4222,14 @@
                   l.a.createElement(_.a, { label: T, link: '/'.concat(c, '/topics') }),
                   l.a.createElement(_.a, { label: O, link: '/settings/your_twitter_data/twitter_interests' }),
                   l.a.createElement(_.a, { label: F, link: '/settings/explore' }),
-                  l.a.createElement(_.a, { label: I, link: '/settings/search' }),
+                  l.a.createElement(_.a, { label: L, link: '/settings/search' }),
                 ),
               ),
             )
           : null
       }
-      var L = m(A)
-      t.default = L
+      var P = m(I)
+      t.default = P
     },
     sZlh: function (e, t, a) {
       'use strict'
@@ -4651,7 +4704,7 @@
       'use strict'
       a.r(t),
         a.d(t, 'default', function () {
-          return N
+          return j
         })
       var n = a('97Jx'),
         r = a.n(n),
@@ -4729,23 +4782,23 @@
         T = a('wz7L'),
         O = s.a.f8645654,
         F = s.a.b02df747,
-        I = s.a.a2197725,
+        L = s.a.a2197725,
         R = s.a.j95edf76,
-        A = s.a.g2841de4,
-        L = s.a.ae72d4c4,
-        P = s.a.h1abfbcd,
+        I = s.a.g2841de4,
+        P = s.a.ae72d4c4,
+        A = s.a.h1abfbcd,
         M = s.a.j748604a,
         U = s.a.f280cc87,
         x = s.a.a310511c,
         H = { page: 'settings', section: 'security_and_account_access' }
-      function N(e) {
+      function j(e) {
         var t = e.location,
           a = (function (e) {
             return [
-              { label: R, description: I, link: '/settings/security', Icon: _ },
-              { label: L, description: A, link: '/settings/apps_and_sessions', Icon: k },
+              { label: R, description: L, link: '/settings/security', Icon: _ },
+              { label: P, description: I, link: '/settings/apps_and_sessions', Icon: k },
               e.isTrue('responsive_web_disconnect_third_party_sso_enabled')
-                ? { label: P, description: M, link: '/settings/connected_accounts', Icon: C.a }
+                ? { label: A, description: M, link: '/settings/connected_accounts', Icon: C.a }
                 : void 0,
               e.isTrue('responsive_web_delegate_enabled')
                 ? {
@@ -5078,11 +5131,11 @@
           T = d.a.e5fff0c7,
           O = d.a.baf97715,
           F = 'Expire' === (null == u ? void 0 : u.state) ? ''.concat(T, ' ').concat(O) : T,
-          I = d.a.fff413dc,
+          L = d.a.fff413dc,
           R = d.a.h201c4c1,
-          A = d.a.i8385a2c,
-          L = d.a.h80834de,
-          P = d.a.ib8ebf3b,
+          I = d.a.i8385a2c,
+          P = d.a.h80834de,
+          A = d.a.ib8ebf3b,
           M = function () {
             c()
           }
@@ -5121,8 +5174,8 @@
                 render: function () {
                   var e,
                     t = null == u ? void 0 : u.payment_source
-                  t && t !== p.Stripe && (e = t === p.AppleAppStore ? R : t === p.GooglePlay ? A : L)
-                  var a = P({ mobilePlatform: e })
+                  t && t !== p.Stripe && (e = t === p.AppleAppStore ? R : t === p.GooglePlay ? I : P)
+                  var a = A({ mobilePlatform: e })
                   return r.a.createElement(
                     r.a.Fragment,
                     null,
@@ -5136,7 +5189,7 @@
                             r.a.createElement(
                               g.a,
                               { style: k.manageSubscriptionSection },
-                              r.a.createElement(S.b, null, I),
+                              r.a.createElement(S.b, null, L),
                               r.a.createElement(f.a, { style: k.goToSubscriptionPortalIcon }),
                             ),
                           ),
@@ -5169,6 +5222,38 @@
         }),
         C = l(w)
       t.default = C
+    },
+    xrkw: function (e, t, a) {
+      'use strict'
+      var n = a('yiKp'),
+        r = a.n(n),
+        c = a('ERkP'),
+        i = a.n(c),
+        o = a('Lsrn'),
+        l = a('k/Ka'),
+        s = function () {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+          return Object(l.a)(
+            'svg',
+            r()(
+              r()({}, e),
+              {},
+              {
+                accessibilityHidden: void 0 === e.accessibilityLabel,
+                style: [o.a.root, e.style],
+                viewBox: '0 0 24 24',
+              },
+            ),
+            i.a.createElement(
+              'g',
+              null,
+              i.a.createElement('path', {
+                d: 'M12 22c-.414 0-.75-.336-.75-.75V2.75c0-.414.336-.75.75-.75s.75.336.75.75v18.5c0 .414-.336.75-.75.75zm5.14 0c-.415 0-.75-.336-.75-.75V7.89c0-.415.335-.75.75-.75s.75.335.75.75v13.36c0 .414-.337.75-.75.75zM6.86 22c-.413 0-.75-.336-.75-.75V10.973c0-.414.337-.75.75-.75s.75.336.75.75V21.25c0 .414-.335.75-.75.75z',
+              }),
+            ),
+          )
+        }
+      ;(s.metadata = { width: 24, height: 24 }), (t.a = s)
     },
   },
 ])
